@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Biquaternion Algebra as a Real Module over Itself — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-biquaternion-algebra-as-a-real-module-over-itself"><strong>The Biquaternion Algebra as a Real Module over Itself</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}$ acts on itself by left multiplication, and that action makes $\mathbb{B}$ a module over itself. Read over $\mathbb{C}$ the action is the left regular representation of the four-dimensional complex algebra, a $4 \times 4$ matrix representation; read over $\mathbb{R}$ the same action is a representation of the eight-dimensional real algebra, an $8 \times 8$ real matrix representation. This article treats the <strong>real</strong> module: the regular left module over the real algebra, its rank, its submodules and its endomorphism ring.</p>
+<p>The complex $4 \times 4$ regular matrix, its determinant $N(\tilde Q)^2$, its trace $4Q_0$, its characteristic polynomial and the decomposition $\mathbb{B} \cong V \oplus V$ into the simple module are <em>Biquaternion 4×4 Regular Matrix Element Representation</em>, and they are cited, not repeated. The real content is the realification: the $8 \times 8$ real matrix is the block matrix
+$$
+\rho_L^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}, \qquad \rho_L(\tilde Q) = A + iB ,
+$$
+in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and this is the form in which the real module is read. The rank over the algebra is one; the rank over the field is eight; the submodule lattice is the lattice of left ideals and is the same as over $\mathbb{C}$; and the endomorphism ring over $\mathbb{R}$ is the full matrix ring $M_8(\mathbb{R})$, with the $\mathbb{B}$-linear endomorphisms the right multiplications.</p>
+<p>The general theory is <em>Modules over an Algebra</em>, <em>Direct Sums, Free Modules and Rank</em> and <em>The Endomorphism Algebra of a Module</em>; the simple module and the module classification are <em>Modules over the Biquaternion Algebra</em>; the left ideals are <em>Biquaternion Ideals and Peirce Decomposition</em>; the invariance of the submodule lattice under the change of scalars is <em>Why the Ideals, the Idempotents and the Zero Divisors Do Not Change</em>; the $4 \times 4$ complex matrix is <em>Biquaternion 4×4 Regular Matrix Element Representation</em>; and the scalar field is <em>The Change of Scalars from $\mathbb{C}$ to $\mathbb{R}$</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, unit $e_0$, quaternion units $e_k^2 = -e_0$, central imaginary $i$ with $i^2 = -e_0$, and general element $\tilde Q = \sum_\mu Q_\mu e_\mu$, $Q_\mu = q_\mu + iq'_\mu$. The quaternion conjugation is $\natural$ and the norm is $N(\tilde Q) = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$. The module is a left module unless stated.</p>
+<h2 id="the-regular-module">The Regular Module</h2>
+<p><strong>Definition.</strong> The <strong>left regular module</strong> of the real algebra $\mathbb{B}$ is the real vector space $\mathbb{B}$ with the action
+$$
+\mathbb{B} \times \mathbb{B} \longrightarrow \mathbb{B}, \qquad (\tilde Q, \tilde R) \longmapsto \tilde Q\tilde R .
+$$
+The action satisfies the module axioms because the multiplication of $\mathbb{B}$ is associative and $\mathbb{R}$-bilinear and $e_0$ is the identity.</p>
+<p><strong>Theorem.</strong> The left regular module is free of rank one over $\mathbb{B}$ and free of rank eight over $\mathbb{R}$.</p>
+<p><strong>Proof.</strong> The element $e_0$ generates, since $\tilde Q e_0 = \tilde Q$ for every $\tilde Q$; a set consisting of a single generator is linearly independent over $\mathbb{B}$ because $x e_0 = 0$ forces $x = 0$, and the module is free of rank one over $\mathbb{B}$ by <em>Direct Sums, Free Modules and Rank</em>. Over $\mathbb{R}$ the same module is the vector space with basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and a free module over a field is a vector space; the rank is the dimension, eight. $\square$</p>
+<p><strong>Remark (the two ranks are one object).</strong> The rank over the algebra is a scalar-independent invariant: the regular module is generated by $e_0$ and by nothing smaller, in both readings. The rank over the field is not: the same module has $\mathbb{C}$-dimension four and $\mathbb{R}$-dimension eight, and the factor two is the restriction of scalars. The free $\mathbb{B}$-module of rank one and the free $\mathbb{R}$-module of rank eight are the same set with the same addition, differing only in which scalars are allowed.</p>
+<h2 id="the-left-regular-representation">The Left Regular Representation</h2>
+<p><strong>Definition.</strong> The <strong>left regular representation</strong> of the real algebra is the map
+$$
+\rho_L^{\mathbb{R}} : \mathbb{B} \longrightarrow \operatorname{End}_{\mathbb{R}}(\mathbb{B}), \qquad \rho_L^{\mathbb{R}}(\tilde Q)(\tilde R) = \tilde Q\tilde R .
+$$
+It is a unital $\mathbb{R}$-algebra homomorphism, and in the real basis its matrix is the $8 \times 8$ real matrix of the operator $\tilde R \mapsto \tilde Q\tilde R$.</p>
+<p><strong>Theorem (the real matrix is the realification of the complex one).</strong> Write $\rho_L(\tilde Q) = A + iB$ for the $4 \times 4$ complex Cayley matrix of $\tilde Q$, with $A$ and $B$ real $4 \times 4$ matrices. Then in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$,
+$$
+\rho_L^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}.
+$$</p>
+<p><strong>Proof.</strong> Multiplication by $i$ commutes with the product, so the operator $\rho_L^{\mathbb{R}}(\tilde Q)$ is complex-linear and the $4 \times 4$ complex matrix $\rho_L(\tilde Q)$ describes it. The real basis is the complex basis $e_0,e_1,e_2,e_3$ followed by its multiple by $i$; in that ordering an operator with complex matrix $A + iB$ acts on a real coordinate column by the block matrix $\begin{pmatrix} A & -B \\ B & A\end{pmatrix}$, because $i(x + iy) = -y + ix$. $\square$</p>
+<p><strong>Corollary.</strong> The map $\rho_L^{\mathbb{R}}$ is an injective unital $\mathbb{R}$-algebra homomorphism, $\rho_L^{\mathbb{R}}(\tilde P\tilde Q) = \rho_L^{\mathbb{R}}(\tilde P)\rho_L^{\mathbb{R}}(\tilde Q)$, and its image is an eight-dimensional real subalgebra of $M_8(\mathbb{R})$ isomorphic to $\mathbb{B}$.</p>
+<p><strong>Proof.</strong> Multiplicativity of $\rho_L^{\mathbb{R}}$ is associativity of the product; injectivity is $\rho_L^{\mathbb{R}}(\tilde Q) = 0 \Rightarrow \rho_L^{\mathbb{R}}(\tilde Q)(e_0) = \tilde Q = 0$; the image is a subalgebra because $\rho_L^{\mathbb{R}}$ is a homomorphism, and it has dimension eight because the map is injective on an eight-dimensional space. $\square$</p>
+<h2 id="the-determinant-and-the-trace">The Determinant and the Trace</h2>
+<p>The two invariants of the real regular matrix are the realification of the two invariants of the complex one.</p>
+<p><strong>Theorem.</strong> For every $\tilde Q \in \mathbb{B}$,
+$$
+\det \rho_L^{\mathbb{R}}(\tilde Q) = \bigl|N(\tilde Q)\bigr|^4, \qquad \operatorname{Tr} \rho_L^{\mathbb{R}}(\tilde Q) = 8\operatorname{Re}(Q_0).
+$$</p>
+<p><strong>Proof.</strong> The complex matrix has $\det \rho_L(\tilde Q) = N(\tilde Q)^2$ and $\operatorname{Tr}\rho_L(\tilde Q) = 4Q_0$ (<em>Introduction to the 4×4 Regular Matrix Representation of Biquaternions</em>, §<em>The Determinant and the Trace</em>), with characteristic polynomial $\bigl(\lambda^2 - 2Q_0\lambda + N(\tilde Q)\bigr)^2$. A complex-linear operator with eigenvalues $\lambda_1,\dots,\lambda_4$ has realification with eigenvalues $\lambda_1,\bar\lambda_1,\dots,\lambda_4,\bar\lambda_4$, so the determinant of the realification is $|\lambda_1\cdots\lambda_4|^2 = |N(\tilde Q)^2|^2 = |N(\tilde Q)|^4$ and its trace is $2\operatorname{Re}(\lambda_1+\cdots+\lambda_4) = 2\operatorname{Re}(4Q_0) = 8\operatorname{Re}(Q_0)$. $\square$</p>
+<p><strong>Remark (the real matrix is never singular off the zero divisors).</strong> The form $|N(\tilde Q)|^4$ is non-negative and vanishes exactly when $N(\tilde Q) = 0$; so the real regular matrix is singular exactly on the zero divisors, in agreement with the invertibility criterion $N(\tilde Q) \neq 0$ of <em>Biquaternion Norm and Invertibility</em>. Over $\mathbb{C}$ the same statement reads $\det \rho_L = N^2$, and the square root is taken by the realification.</p>
+<p><strong>Proposition (the trace form).</strong> For all $\tilde P, \tilde Q \in \mathbb{B}$,
+$$
+\operatorname{Tr}\!\bigl(\rho_L^{\mathbb{R}}(\tilde P)\,\rho_L^{\mathbb{R}}(\tilde Q)\bigr) = 8\operatorname{Re}\bigl((\tilde P\tilde Q)_0\bigr) ,
+$$
+a symmetric $\mathbb{R}$-bilinear form on the regular module, of signature $(4,4)$.</p>
+<p><strong>Proof.</strong> The product of the two matrices is $\rho_L^{\mathbb{R}}(\tilde P\tilde Q)$, so the trace is $8\operatorname{Re}((\tilde P\tilde Q)_0)$ by the theorem; symmetric because $\operatorname{Tr}(XY) = \operatorname{Tr}(YX)$ and $\operatorname{Re}((\tilde P\tilde Q)_0) = \operatorname{Re}((\tilde Q\tilde P)_0)$. Writing $Q_0 = a+bi$ and $Q_k = c_k + id_k$, the quadratic form $\operatorname{Re}\bigl((\tilde Q^2)_0\bigr) = (a^2-b^2) - \sum_k(c_k^2-d_k^2)$ has one positive and one negative scalar direction and three positive and three negative vector directions, hence signature $(4,4)$; the signatures of the bilinear forms of the biquaternion algebra are those of <em>Introduction to Topology on the Biquaternions</em>, §<em>The Four Forms</em>. $\square$</p>
+<h2 id="submodules-and-the-composition-series">Submodules and the Composition Series</h2>
+<p><strong>Theorem.</strong> The left $\mathbb{B}$-submodules of the regular module are exactly the left ideals of $\mathbb{B}$; they are the same sets over $\mathbb{R}$ and over $\mathbb{C}$, and the two submodule lattices coincide.</p>
+<p><strong>Proof.</strong> A submodule is an additive subgroup closed under left multiplication by every element of $\mathbb{B}$, which is a left ideal. The change-of-scalars statement is <em>Why the Ideals, the Idempotents and the Zero Divisors Do Not Change</em>, where it is shown that such a subgroup is automatically a complex subspace because $i \in \mathbb{B}$. $\square$</p>
+<p><strong>Corollary (the real lattice is not the real line).</strong> The minimal left ideals are parametrized by $\mathbb{P}^1(\mathbb{C})$ and not by $\mathbb{P}^1(\mathbb{R})$, even though the scalars are real (<em>Biquaternion Ideals and Peirce Decomposition</em>).</p>
+<p><strong>Theorem.</strong> The regular left module is semisimple and is the direct sum of two copies of the simple left module $V$:
+$$
+\mathbb{B} \cong V \oplus V, \qquad \dim_\mathbb{R} V = 4, \qquad \dim_\mathbb{C} V = 2 ,
+$$
+so it has composition length two and its socle is the whole module.</p>
+<p><strong>Proof.</strong> Choose the orthogonal idempotents $\tilde\Pi_1 = \tfrac12(e_0+ie_3)$ and $\tilde\Pi_2 = \tfrac12(e_0-ie_3)$; then $e_0 = \tilde\Pi_1 + \tilde\Pi_2$ and $\tilde\Pi_1\tilde\Pi_2 = 0$, so $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ as left modules, and each summand is a minimal left ideal, isomorphic to the simple module $V$ (<em>Biquaternion 4×4 Regular Matrix Element Representation</em>, §<em>The Module Structure and Reducibility</em>; <em>Biquaternion Ideals and Peirce Decomposition</em>). The simple module has complex dimension two, hence real dimension four, and the length is two. $\square$</p>
+<p><strong>Remark (the simple module over $\mathbb{R}$).</strong> The simple left module is the same set in the two readings: it is a complex vector space of dimension two and a real vector space of dimension four, and the endomorphism rings around it are those of <em>Modules over the Biquaternion Algebra</em>: Schur's lemma gives $\operatorname{End}_{\mathbb{B}}(V) = \mathbb{C}$, the double centralizer gives $\operatorname{End}_{\mathbb{C}}(V) = \mathbb{B} \cong M_2(\mathbb{C})$, and the full real endomorphism ring is $M_4(\mathbb{R})$. The regular module is the sum of two copies of $V$, which is the module-theoretic reason for the factor $N^2$ in the complex determinant and the factor $|N|^4$ in the real one.</p>
+<h2 id="the-endomorphism-ring">The Endomorphism Ring</h2>
+<p><strong>Theorem.</strong> The $\mathbb{B}$-linear endomorphisms of the regular left module are the right multiplications,
+$$
+\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \{\rho_R(\tilde Q) : \tilde R \mapsto \tilde R\tilde Q\} \cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B} ,
+$$
+an eight-dimensional real algebra, and it is the centralizer of $\rho_L^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> Let $f$ be $\mathbb{B}$-linear. Then $f(\tilde R) = f(\tilde R e_0) = \tilde R f(e_0)$, so $f = \rho_R(\tilde Q)$ with $\tilde Q = f(e_0)$; conversely right multiplications are module endomorphisms because the product associates. The map $\tilde Q \mapsto \rho_R(\tilde Q)$ is an anti-isomorphism onto its image, and $\mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$ by the anti-automorphism $\natural$. The centralizer statement is <em>The Endomorphism Algebra of a Module</em>, and holds over $\mathbb{R}$ because the centralizer of $\rho_L^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$ consists of the real-linear maps commuting with every left multiplication, which are exactly the right multiplications. $\square$</p>
+<p><strong>Theorem (the full endomorphism ring and the mutual centralizers).</strong> The $\mathbb{R}$-linear endomorphisms of the regular module are all $\mathbb{R}$-linear maps,
+$$
+\operatorname{End}_{\mathbb{R}}(\mathbb{B}) \cong M_8(\mathbb{R}) ,
+$$
+the centralizer of $\rho_L^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$ is $\rho_R(\mathbb{B})$, and the centralizer of that is $\rho_L^{\mathbb{R}}(\mathbb{B})$; the two copies are mutual centralizers, each of real dimension eight.</p>
+<p><strong>Proof.</strong> An $\mathbb{R}$-linear endomorphism of an eight-dimensional real space is an arbitrary $8 \times 8$ real matrix, and conversely. The centralizer computation is <em>The Endomorphism Algebra of a Module</em>, and its converse follows from the double centralizer theorem for a faithful semisimple module over a simple algebra: the algebra $\mathbb{B}$ is simple, the regular module is the direct sum of two copies of the simple module $V$, and the bimodule $\mathbb{B} \cong V \oplus V$ has the two one-sided copies as mutual commutants. $\square$</p>
+<p><strong>Remark (the comparison of the two endomorphism rings).</strong> Over $\mathbb{C}$, $\operatorname{End}_\mathbb{C}(\mathbb{B}) \cong M_4(\mathbb{C})$ and the $\mathbb{B}$-linear endomorphisms are the right copy of complex dimension four; over $\mathbb{R}$, the full ring is $M_8(\mathbb{R})$ and the $\mathbb{B}$-linear endomorphisms are the right copy of real dimension eight. The $\mathbb{B}$-linear part is unchanged as a set, by the change-of-scalars theorem, while the full endomorphism ring grows from $M_4(\mathbb{C})$ to $M_8(\mathbb{R})$, of real dimensions $32$ and $64$.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra acts on itself on the left, and over $\mathbb{R}$ that action is the $8 \times 8$ real left regular representation, the realification of the $4 \times 4$ complex Cayley matrix,
+$$
+\rho_L^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}, \qquad \rho_L(\tilde Q) = A + iB ,
+$$
+a unital $\mathbb{R}$-algebra homomorphism with image an eight-dimensional subalgebra of $M_8(\mathbb{R})$ isomorphic to $\mathbb{B}$.</p>
+<p>$$
+\boxed{\ \text{The real regular module is free of rank one over } \mathbb{B} \text{ and rank eight over } \mathbb{R};\ \det\rho_L^{\mathbb{R}}(\tilde Q) = |N(\tilde Q)|^4,\ \operatorname{Tr}\rho_L^{\mathbb{R}}(\tilde Q) = 8\operatorname{Re}(Q_0). }
+$$</p>
+<p>Its submodules are the left ideals, the same lattice as over $\mathbb{C}$, and the regular module is semisimple, $V \oplus V$, of composition length two and simple module of real dimension four; the $\mathbb{B}$-linear endomorphisms are the right multiplications, $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) \cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$, unchanged by the change of scalars, while the full endomorphism ring is $\operatorname{End}_{\mathbb{R}}(\mathbb{B}) \cong M_8(\mathbb{R})$, against $M_4(\mathbb{C})$ over $\mathbb{C}$. The determinant and trace of the real regular matrix are the absolute square and the doubled real part of those of the complex one; the trace form $\operatorname{Tr}(\rho_L^{\mathbb{R}}(\tilde P)\rho_L^{\mathbb{R}}(\tilde Q)) = 8\operatorname{Re}((\tilde P\tilde Q)_0)$ is a symmetric bilinear form of signature $(4,4)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_L^{\mathbb{R}}(\tilde Q)$</td>
+<td>the $8 \times 8$ real left regular matrix, $\tilde R \mapsto \tilde Q\tilde R$</td>
+</tr>
+<tr>
+<td>$\rho_L(\tilde Q) = A + iB$</td>
+<td>the $4 \times 4$ complex Cayley matrix of <em>Biquaternion 4×4 Regular Matrix Element Representation</em></td>
+</tr>
+<tr>
+<td>$\begin{pmatrix} A & -B \\ B & A\end{pmatrix}$</td>
+<td>the block form of the realification</td>
+</tr>
+<tr>
+<td>$N(\tilde Q) = \tilde Q\tilde Q^{\natural}$</td>
+<td>the norm; $\det\rho_L^{\mathbb{R}} = |N|^4$, $\operatorname{Tr}\rho_L^{\mathbb{R}} = 8\operatorname{Re}(Q_0)$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>the simple left module, $\dim_\mathbb{R} V = 4$, $\dim_\mathbb{C} V = 2$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_1, \tilde\Pi_2$</td>
+<td>$\tfrac12(e_0 \pm ie_3)$, the idempotents splitting $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2 \cong V\oplus V$</td>
+</tr>
+<tr>
+<td>$\rho_R(\tilde Q)$</td>
+<td>right multiplication, the $\mathbb{B}$-linear endomorphisms of the regular module</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{B}}(\mathbb{B})$</td>
+<td>$\cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$, real dimension eight, the centralizer of $\rho_L^{\mathbb{R}}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{R}}(\mathbb{B})$</td>
+<td>$\cong M_8(\mathbb{R})$, the full endomorphism ring</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}(\rho_L^{\mathbb{R}}(\tilde P)\rho_L^{\mathbb{R}}(\tilde Q))$</td>
+<td>$8\operatorname{Re}((\tilde P\tilde Q)_0)$, a form of signature $(4,4)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Biquaternion 4×4 Regular Matrix Element Representation</em> (<code>articles_maths/biquaternion-4x4-regular-matrix-element-representation.md</code>), for the complex regular matrix, its determinant and trace, and the decomposition $\mathbb{B} \cong V \oplus V$.</li>
+<li><em>Modules over an Algebra</em> (<code>articles_maths/modules-over-an-algebra.md</code>), for submodules, simplicity, semisimplicity and the composition series.</li>
+<li><em>Direct Sums, Free Modules and Rank</em> (<code>articles_maths/direct-sums-free-modules-and-rank.md</code>), for free modules and rank.</li>
+<li><em>The Endomorphism Algebra of a Module</em> (<code>articles_maths/the-endomorphism-algebra-of-a-module.md</code>), for endomorphism rings and the double centralizer.</li>
+<li><em>Modules over the Biquaternion Algebra</em> (<code>articles_maths/modules-over-the-biquaternion-algebra.md</code>), for the simple module and the module classification.</li>
+<li><em>Why the Ideals, the Idempotents and the Zero Divisors Do Not Change</em> (<code>articles_maths/why-the-ideals-the-idempotents-and-the-zero-divisors-do-not-change.md</code>), for the invariance of the submodule lattice under the change of scalars.</li>
+<li><em>The Change of Scalars from $\mathbb{C}$ to $\mathbb{R}$</em> (<code>articles_maths/the-change-of-scalars-from-c-to-r.md</code>), for the doubling of the field dimension.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

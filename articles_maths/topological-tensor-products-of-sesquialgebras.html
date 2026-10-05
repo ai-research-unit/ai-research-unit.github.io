@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topological Tensor Products of Sesquialgebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="topological-tensor-products-of-sesquialgebras"><strong>Topological Tensor Products of Sesquialgebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><em>Tensor Products of Sesquialgebras</em> is the Part I entry of the sesquilinear tensor product: the algebraic tensor product $A \otimes_R B$ of two sesquialgebras over the same datum $(R,\varsigma)$, with the product $(a\otimes b)(c\otimes d) = ac\otimes bd$, the tensor involution $\natural(a\otimes b) = a^{*}\otimes b^{*}$, the commuting images and the universal property. This article adds the topology: it puts the projective and the injective topologies of <em>Topological Tensor Products</em> on the algebraic tensor product, shows that the sesquilinear product and the tensor involution are continuous for them and extend to the completions, and proves that the completed projective tensor product of two Banach sesquialgebras over $(\mathbb{K},\varsigma)$ is a Banach sesquialgebra over the same datum. It is the sesquilinear counterpart of the section on tensor products of algebras of the bilinear layer.</p>
+<p>The one new ingredient with respect to the bilinear layer is the twist. The product of the tensor product is $\varsigma$-sesquilinear in the second overall slot because each factor is, and the two twists coming from the two factors are the same twist, so they do not cancel or double; the tensor involution is $\varsigma$-semilinear on the tensor product because the factor involutions are. Both properties are Part I's and are algebraic; the topological work is to see that they are continuous for the two topologies and pass to the completion. The projective norm is submultiplicative, $\lVert uv\rVert_\pi \leq \lVert u\rVert_\pi\lVert v\rVert_\pi$, which makes the completed projective tensor product of two Banach sesquialgebras a Banach sesquialgebra. The injective topology is the second natural topology; it agrees with the projective one exactly for nuclear factors, and there the projective structure is the one that is transported. The tensor involution is an isometry for the projective norm, and for the injective norm when the twist is trivial.</p>
+<p>Three facts organise the article. The product on $A \otimes B$ is a continuous bilinear map for the projective topology, by the universal property of <em>Topological Tensor Products</em>, §<em>The Projective Tensor Product</em>, so the completed projective tensor product $A\widehat{\otimes}_\pi B$ is a locally convex sesquialgebra, and a Banach sesquialgebra when the factors are Banach sesquialgebras; when a factor is nuclear the injective completion coincides with the projective one and carries the same structure, and without nuclearity the two completions differ. The tensor involution is a continuous $\varsigma$-semilinear isometry for the projective topology when the factor involutions are isometric, and for the injective topology when in addition the twist is trivial, so it extends to the completion and makes it an involutive sesquialgebra. And the universal property is the topological form of Part I's: continuous bilinear maps on $A \times B$ correspond to continuous linear maps on $A\widehat{\otimes}_\pi B$, the commuting images remain commuting after completion, and at $\varsigma = \mathrm{id}$ the construction is the tensor product of topological algebras of the bilinear layer.</p>
+<p>The article defines the two topologies on the tensor product, proves the continuity of the product and of the tensor involution, establishes the Banach and the locally convex cases, reads the universal property and the commuting images, and works the examples. It cites the topological prerequisites rather than proving them: the two topologies, the projective norm, the injective norm and the algebra case are <em>Topological Tensor Products</em>, the algebraic statements are <em>Tensor Products of Sesquialgebras</em>, and the completed objects are <em>Banach Sesquialgebras</em> and <em>Fréchet and Locally Convex Sesquialgebras</em>. Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ its continuous involution, and $A$ and $B$ are sesquialgebras over $(\mathbb{K},\varsigma)$ in the sense of <em>Banach Sesquialgebras</em> when a norm is used and in the sense of the layer when only a topology is.</p>
+<h2 id="the-topologies-on-the-tensor-product">The Topologies on the Tensor Product</h2>
+<h3 id="the-projective-topology">The Projective Topology</h3>
+<p><strong>Definition.</strong> Let $A$ and $B$ be locally convex sesquialgebras over $(\mathbb{K},\varsigma)$. The <strong>projective topology</strong> on the algebraic tensor product $A \otimes B$ is the finest locally convex topology for which the canonical bilinear map $\otimes : A \times B \to A \otimes B$ is continuous; the <strong>projective tensor product</strong> $A \widehat{\otimes}_\pi B$ is the completion. In the normed case the projective norm is</p>
+<p>$$
+\lVert u\rVert_\pi = \inf\Bigl\{\sum_{k=1}^{n}\lVert a_k\rVert\lVert b_k\rVert : u = \sum_{k=1}^{n}a_k \otimes b_k\Bigr\},
+$$</p>
+<p>the infimum over all finite representations of $u$.</p>
+<p><em>Proof.</em> This is the definition and the proposition of <em>Topological Tensor Products</em>, §<em>The Projective Tensor Product</em>; the topology is generated by the displayed norm in the normed case, and the completion is the projective tensor product. $\square$</p>
+<h3 id="the-injective-topology">The Injective Topology</h3>
+<p><strong>Definition.</strong> Let $A$ and $B$ be locally convex sesquialgebras over $(\mathbb{K},\varsigma)$ and let $A'$, $B'$ be their duals. The <strong>injective topology</strong> on $A \otimes B$ is the topology of uniform convergence on the equicontinuous subsets of $A' \times B'$, equivalently the topology generated in the normed case by</p>
+<p>$$
+\lVert u\rVert_\varepsilon = \sup\bigl\{\lvert (\xi \otimes \eta)(u)\rvert : \xi \in A', \ \eta \in B', \ \lVert\xi\rVert \leq 1, \ \lVert\eta\rVert \leq 1\bigr\} ,
+$$</p>
+<p>and the <strong>injective tensor product</strong> $A \widehat{\otimes}_\varepsilon B$ is the completion.</p>
+<p><em>Proof.</em> This is the definition and the proposition of <em>Topological Tensor Products</em>, §<em>The Injective Tensor Product</em>, where the displayed supremum is shown to define a norm generating the injective topology and satisfying $\lVert u\rVert_\varepsilon \leq \lVert u\rVert_\pi$. $\square$</p>
+<h3 id="the-two-topologies-compared">The Two Topologies Compared</h3>
+<p><strong>Proposition (the canonical map).</strong> The identity on $A \otimes B$ extends to a continuous linear map</p>
+<p>$$
+A \widehat{\otimes}_\pi B \longrightarrow A \widehat{\otimes}_\varepsilon B ,
+$$</p>
+<p>which is a topological isomorphism for all $B$ if and only if $A$ is nuclear; in finite dimension it is always an isomorphism.</p>
+<p><em>Proof.</em> This is the proposition of <em>Topological Tensor Products</em>, §<em>The Injective Tensor Product</em>: the inequality $\lVert\cdot\rVert_\varepsilon \leq \lVert\cdot\rVert_\pi$ gives the continuity, and the characterisation of the isomorphism by nuclearity is there; in finite dimension the two norms are equivalent because all norms are. $\square$</p>
+<p><strong>Remark (the sesquilinear product on the pair).</strong> For the sesquilinear structure the product is not a bilinear map of $A \otimes B$ with itself but a bilinear map of the pair $(A \otimes B, (A \otimes B)^{\varsigma})$; the two topologies above are vector-space topologies and do not see the twist, and the conjugate module of a tensor product is the tensor product of the conjugate modules, $(A \otimes B)^{\varsigma} = A^{\varsigma} \otimes B^{\varsigma}$, by the bookkeeping of <em>Banach Sesquialgebras</em>, §<em>The Isometric Involution</em> applied factorwise, so the topologies of the two slots are the same two.</p>
+<h2 id="the-sesquilinear-product-on-the-completion">The Sesquilinear Product on the Completion</h2>
+<h3 id="the-product-and-its-continuity">The Product and Its Continuity</h3>
+<p><strong>Theorem (the product is continuous).</strong> Let $A$ and $B$ be normed sesquialgebras over $(\mathbb{K},\varsigma)$. Then the product</p>
+<p>$$
+(a \otimes b)(c \otimes d) = ac \otimes bd
+$$</p>
+<p>of <em>Tensor Products of Sesquialgebras</em>, §<em>The Product on the Tensor Product</em>, extended by additivity, is a continuous product on $A \otimes B$ for the projective topology, additive in each variable, $\mathbb{K}$-linear in the first and $\varsigma$-semilinear in the second, and submultiplicative:</p>
+<p>$$
+\lVert uv\rVert_\pi \leq \lVert u\rVert_\pi\lVert v\rVert_\pi .
+$$</p>
+<p><em>Proof.</em> Let $u = \sum_k a_k \otimes b_k$ and $v = \sum_l c_l \otimes d_l$ be representations. Then</p>
+<p>$$
+\lVert uv\rVert_\pi \leq \sum_{k,l}\lVert a_kc_l\rVert\lVert b_ld_l\rVert \leq \sum_{k,l}\lVert a_k\rVert\lVert c_l\rVert\lVert b_k\rVert\lVert d_l\rVert = \Bigl(\sum_k\lVert a_k\rVert\lVert b_k\rVert\Bigr)\Bigl(\sum_l\lVert c_l\rVert\lVert d_l\rVert\Bigr),
+$$</p>
+<p>by the submultiplicativity of the factor norms and the triangle inequality for the projective norm; taking the infimum over the representations of $u$ and of $v$ gives the estimate. This is the proof of <em>Topological Tensor Products</em>, §<em>Tensor Products of Algebras</em>, and the two scalar rules are those of Part I, <em>Tensor Products of Sesquialgebras</em>, §<em>The Product on the Tensor Product</em>. $\square$</p>
+<p><strong>Corollary (the completed projective tensor product).</strong> Let $A$ and $B$ be Banach sesquialgebras over $(\mathbb{K},\varsigma)$. Then $A \widehat{\otimes}_\pi B$ with the extended product is a Banach sesquialgebra over $(\mathbb{K},\varsigma)$.</p>
+<p><em>Proof.</em> The projective tensor product of two Banach spaces is complete, and the product extends uniquely to the completion by <em>The Completion of a Sesquialgebra</em>, §<em>The Product on the Completion</em>, because it is continuous and submultiplicative on $A \otimes B$; the extended product is submultiplicative and satisfies the two scalar rules by continuity. For locally convex factors one takes the completed projective tensor product and the same argument with continuous instead of submultiplicative estimates, <em>Topological Tensor Products</em>, §<em>Tensor Products of Algebras</em>. $\square$</p>
+<p><strong>Theorem (the injective topology and the nuclear reduction).</strong> Let $A$ and $B$ be Banach sesquialgebras. If $A$ is nuclear, then $A \widehat{\otimes}_\pi B = A \widehat{\otimes}_\varepsilon B$ isometrically, and this completed tensor product is a Banach sesquialgebra over $(\mathbb{K},\varsigma)$. In particular this holds when $A$ or $B$ is finite-dimensional, and for the matrix sesquialgebras.</p>
+<p><em>Proof.</em> The two completions coincide for a nuclear factor by <em>Topological Tensor Products</em>, §<em>The Injective Tensor Product</em>, and a finite-dimensional normed space is nuclear by the same section. The completed tensor product is then the projective one and carries the algebra structure of the corollary above, with the sesquilinear structure transported by the identity. The submultiplicativity of the injective norm does not extend to an arbitrary pair of non-nuclear factors, since the natural proof would need $\xi(a_kc_l) = \xi(a_k)\xi(c_l)$, which fails for a linear functional, so the general injective completion is treated as a completion of the underlying involutive spaces and is a sesquialgebra when a factor is nuclear, which covers the examples below. $\square$</p>
+<p><strong>Remark (the general injective completion).</strong> Without nuclearity the two completions are different topological vector spaces on the same algebraic tensor product, and the sesquilinear product is taken with the projective topology. The last example exhibits the difference.</p>
+<h3 id="the-tensor-involution">The Tensor Involution</h3>
+<p><strong>Theorem (the tensor involution is continuous).</strong> Let $A$ and $B$ be normed sesquialgebras with isometric involutions $*$. Then the tensor involution</p>
+<p>$$
+\natural(a \otimes b) = a^{*} \otimes b^{*}
+$$</p>
+<p>of <em>Tensor Products of Sesquialgebras</em>, §<em>The Tensor Involution</em>, extended by additivity, is a continuous $\varsigma$-semilinear isometry of $A \otimes B$ for the projective topology, $\lVert\natural(u)\rVert_\pi = \lVert u\rVert_\pi$, and it extends uniquely to an isometric $\varsigma$-semilinear involution of the projective completion; for the injective norm the same holds when the twist is trivial, $\varsigma = \mathrm{id}$.</p>
+<p><em>Proof.</em> On an elementary tensor, $\natural(a \otimes b) = a^{*} \otimes b^{*}$ with $\lVert a^{*}\rVert = \lVert a\rVert$ and $\lVert b^{*}\rVert = \lVert b\rVert$, so the projective and the injective norms of $a \otimes b$ and of $a^{*} \otimes b^{*}$ agree; a general element is a sum, and the isometry follows for the projective norm because a representation of $u$ is turned into a representation of $\natural u$ of the same cost by replacing each $a_k$ by $a_k^{*}$; for the injective norm, $\Phi_{\natural u}(\xi,\eta) = \Phi_u(\xi\circ *,\eta\circ *)$, and when $\varsigma = \mathrm{id}$ the factor involutions are linear, so $\xi\circ *$ and $\eta\circ *$ are linear and the maps $\xi \mapsto \xi\circ *$, $\eta \mapsto \eta\circ *$ carry the unit ball of $A'$ and of $B'$ onto themselves because $*$ is isometric, so the supremum is unchanged; for $\varsigma \neq \mathrm{id}$ the composites $\xi\circ *$ and $\eta\circ *$ are semilinear and lie in the conjugate duals rather than in the ordinary duals, which is the pairing of the second slot, and no isometry of the ordinary injective norm is claimed. Semilinearity is Part I's, $\natural(\lambda u) = \varsigma(\lambda)\natural(u)$, and it is continuous; the extension is <em>The Completion of a Sesquialgebra</em>, §<em>The Extension of the Involution</em>. $\square$</p>
+<p><strong>Remark (the parity of the involution).</strong> The tensor involution is an anti-automorphism of the tensor product for the envelope and only a transposition for the derived operation, exactly as in <em>Tensor Products of Sesquialgebras</em>, §<em>The Tensor Involution</em>; the topology does not change the parity, and the two readings of the construction give the two topological involutive completions. In the associative case the completed tensor product of two involutive Banach algebras is an involutive Banach algebra for the isometric tensor involution, which is the bilinear reading.</p>
+<h2 id="the-universal-property-and-the-commuting-images">The Universal Property and the Commuting Images</h2>
+<h3 id="the-universal-property">The Universal Property</h3>
+<p><strong>Theorem (the universal property on the completion).</strong> Let $A$, $B$ be normed sesquialgebras over $(\mathbb{K},\varsigma)$ and let $G$ be a complete locally convex space. Then every continuous bilinear map $B_0 : A \times B \to G$ factors uniquely through a continuous linear map $\widetilde{B_0} : A \widehat{\otimes}_\pi B \to G$, $B_0(a,b) = \widetilde{B_0}(a \otimes b)$; the correspondence is a linear bijection.</p>
+<p><em>Proof.</em> This is the universal property of <em>Topological Tensor Products</em>, §<em>The Projective Tensor Product</em>, the extension to the completion being the universal property of completion. For the sesquilinear reading one applies it to $A \times B$ and to $A \times B^{\varsigma}$ according to the slot in which the twist is placed, using $(A \otimes B)^{\varsigma} = A^{\varsigma} \otimes B^{\varsigma}$; the algebraic form of the statement, with the commuting images, is <em>Tensor Products of Sesquialgebras</em>, §<em>The Pairs with Commuting Images</em>. $\square$</p>
+<h3 id="the-commuting-images">The Commuting Images</h3>
+<p><strong>Theorem (the completed commuting images).</strong> Let $A$ and $B$ be Banach sesquialgebras and let $\iota_A(a) = a \otimes 1$, $\iota_B(b) = 1 \otimes b$ be the canonical maps. Then $\iota_A$ and $\iota_B$ are isometric morphisms of sesquialgebras over $(\mathbb{K},\varsigma)$ with images that commute, $\iota_A(a)\iota_B(b) = a \otimes b = \iota_B(b)\iota_A(a)$; the same holds on the completions, where the closures of the two images are commuting closed sub-sesquialgebras and generate the completed tensor product.</p>
+<p><em>Proof.</em> The algebraic statement and the multiplicativity, additivity and compatibility with the involution are <em>Tensor Products of Sesquialgebras</em>, §<em>The Two Maps</em>; the isometry is the computation $\lVert a \otimes 1\rVert_\pi = \lVert a\rVert$ and the same for $\iota_B$, and continuity gives the extension to the closures. The generation and the commuting are preserved by continuity, the product being continuous. $\square$</p>
+<p><strong>Corollary (the coproduct in the commutative case).</strong> If $A$ and $B$ are commutative, the commuting condition is automatic and $A \widehat{\otimes}_\pi B$ with the two canonical maps is the coproduct of $A$ and $B$ in the category of commutative Banach sesquialgebras over $(\mathbb{K},\varsigma)$; it is not the product, whose factors annihilate as in <em>Direct Products of Sesquialgebras</em>.</p>
+<p><em>Proof.</em> The algebraic statement is the corollary of <em>Tensor Products of Sesquialgebras</em>, §<em>The Pairs with Commuting Images</em>; the completion preserves the universal property by the theorem above, and the product of the category is the direct product, whose factors annihilate. $\square$</p>
+<h2 id="the-collapse-at-the-trivial-involution">The Collapse at the Trivial Involution</h2>
+<h3 id="the-collapse">The Collapse</h3>
+<p><strong>Theorem (the collapse).</strong> Let $A$ and $B$ be normed sesquialgebras over $(\mathbb{K},\mathrm{id})$. Then the twist is trivial, the product on $A \otimes B$ is the ordinary tensor product of algebras, the tensor involution is an isometric algebra involution, and $A \widehat{\otimes}_\pi B$ and $A \widehat{\otimes}_\varepsilon B$ are the completed tensor products of the bilinear layer in the sense of <em>Topological Tensor Products</em>, §<em>Tensor Products of Algebras</em>; conversely the tensor product of two topological algebras is the sesquilinear tensor product over $(\mathbb{K},\mathrm{id})$.</p>
+<p><em>Proof.</em> With $\varsigma = \mathrm{id}$ the two scalar rules of the tensor product coincide, the tensor product is the algebra tensor product, and the tensor involution is the algebra involution $a \otimes b \mapsto a^{*} \otimes b^{*}$, which is an anti-automorphism of the algebra product; the completed objects are those of <em>Topological Tensor Products</em>, §<em>Tensor Products of Algebras</em>. The converse is the same identification. $\square$</p>
+<h3 id="full-type">Full Type</h3>
+<p><strong>Remark (full type).</strong> As in <em>Banach Sesquialgebras</em>, §<em>The Objects of Full Type</em>, a tensor product of two objects of full type with a nontrivial involution is neither associative nor commutative for the sesquilinear product, because the tensor product of two non-associative products is non-associative; the tensor product therefore does not repair the collapse, and it is a construction of the sesquilinear layer and not of the bilinear one.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-field-and-the-matrices">The Field and the Matrices</h3>
+<p><strong>Example (the field tensored with itself, verdict: the field).</strong> Let $A = B = \mathbb{C}$ with the modulus, the conjugation and the product $z \star w = z\bar w$. Then $A \widehat{\otimes}_\pi B \cong \mathbb{C}$, the canonical map $\mathbb{C} \otimes \mathbb{C} \to \mathbb{C}$ being an isomorphism in finite dimension, and the extended sesquilinear product is $z \star w = z\bar w$. The example is the smallest instance of the construction: the sesquilinear tensor product of the field with itself is the field.</p>
+<p><strong>Example (the matrices, verdict: $M_m \otimes M_n = M_{mn}$).</strong> Let $A = M_m(\mathbb{C})$ and $B = M_n(\mathbb{C})$ with the operator norms, the conjugation and the products $S \star T = ST^{*}$. Then $A \widehat{\otimes}_\pi B \cong M_{mn}(\mathbb{C})$ as algebras, because $M_m(\mathbb{C})$ and $M_n(\mathbb{C})$ are finite-dimensional and therefore nuclear, with the product $U \star V = UV^{*}$, the conjugation and the tensor involution $S \otimes T \mapsto S^{*} \otimes T^{*}$ corresponding to the conjugate transpose; the topology is the topology of the finite-dimensional space, in which all norms are equivalent, and the identification is that of <em>Tensor Products of Sesquialgebras</em>, §<em>The Complex Matrices</em>, read topologically. The projective tensor norm of the identification is not the operator norm of $M_{mn}$: the swap $u = \sum_{i,j}E_{ij} \otimes E_{ji}$ has operator norm $1$ and projective norm at least $2$, the bounded bilinear form $(X,Y) \mapsto \tfrac12\operatorname{tr}(XY)$ having norm $1$ and value $2$ at $u$.</p>
+<h3 id="the-sequences-and-the-functions">The Sequences and the Functions</h3>
+<p><strong>Example (the sequences, verdict: $\ell^{1} \otimes \ell^{1} = \ell^{1}$).</strong> Let $A = B = \ell^{1}$ with the $\ell^{1}$-norm, the termwise conjugation and the termwise sesquilinear product. The projective tensor product is $\ell^{1} \widehat{\otimes}_\pi \ell^{1} \cong \ell^{1}$ as a Banach space, by <em>Topological Tensor Products</em>, §<em>The Projective Tensor Product</em>, the identification sending $e_i \otimes e_j$ to a basis vector; the completed tensor product is a Banach sesquialgebra with the transported sesquilinear product, and it is the discrete infinite-dimensional model of the construction. The space $\ell^{1}$ is not nuclear, so the injective completion is a different space.</p>
+<p><strong>Example (the function algebras, verdict: $C(X) \otimes C(Y) = C(X \times Y)$).</strong> Let $X$ and $Y$ be compact Hausdorff spaces and let $A = C(X,\mathbb{C})$, $B = C(Y,\mathbb{C})$ with the supremum norms, the conjugation of the scalars and the products $f \star g = f\bar g$. A commutative $\mathrm{C}^{*}$-algebra is nuclear, so the two topologies coincide on $A \otimes B$ and there is a single completion,</p>
+<p>$$
+C(X) \widehat{\otimes}_\pi C(Y) \cong C(X \times Y)
+$$</p>
+<p>with the supremum norm, by <em>Topological Tensor Products</em>, §<em>The Injective Tensor Product</em>; the extended sesquilinear product is $(F \star G)(x,y) = F(x,y)\overline{G(x,y)}$, which is $F \cdot \natural(G)$ under the identification, and the tensor involution is the conjugation of the function. The example is the model of the construction built from commutative algebras.</p>
+<p><strong>Example (the non-nuclear boundary, verdict: the two completions differ).</strong> Let $A = B = \ell^{2}$ over $(\mathbb{C},\varsigma)$ with $\varsigma$ the conjugation, read as a sesquialgebra by the rank-one sesquilinear product $x \star y = \langle x, y\rangle e_0$ for a fixed unit vector $e_0$, which is $\varsigma$-semilinear in the second slot and submultiplicative, $\lVert x \star y\rVert \leq \lVert x\rVert\lVert y\rVert$. The projective and the injective tensor products of $\ell^{2}$ with itself are not isomorphic, by the failure of nuclearity of $\ell^{2}$ in the sense of <em>Topological Tensor Products</em>, §<em>The Injective Tensor Product</em>, so the two completions are different topological vector spaces on the same algebraic tensor product; the projective one is a Banach sesquialgebra, and the two completions are not topologically isomorphic. The example records that the selection of the topology is a genuine choice, and that the sesquilinear structure does not fix it.</p>
+<h2 id="summary">Summary</h2>
+<p>Let $A$ and $B$ be sesquialgebras over $(\mathbb{K},\varsigma)$ and let $A \otimes B$ be their sesquilinear tensor product, with the product $(a\otimes b)(c\otimes d) = ac \otimes bd$ and the tensor involution $\natural(a\otimes b) = a^{*}\otimes b^{*}$ of <em>Tensor Products of Sesquialgebras</em>. The <strong>projective topology</strong> is the finest locally convex topology making $\otimes$ continuous, with the projective norm $\lVert u\rVert_\pi = \inf\sum_k\lVert a_k\rVert\lVert b_k\rVert$, and the <strong>injective topology</strong> is that of uniform convergence on the equicontinuous subsets of the dual pair, with $\lVert u\rVert_\varepsilon \leq \lVert u\rVert_\pi$; the two coincide for all factors exactly when $A$ is nuclear. The <strong>product is continuous and submultiplicative</strong> for the projective topology, $\lVert uv\rVert_\pi \leq \lVert u\rVert_\pi\lVert v\rVert_\pi$ by the estimate on factorised representations, so the completed projective tensor product $A \widehat{\otimes}_\pi B$ is a Banach sesquialgebra over $(\mathbb{K},\varsigma)$ when the factors are, and a locally convex sesquialgebra in general; when a factor is nuclear the injective completion coincides with the projective one and carries the same structure. The <strong>tensor involution</strong> is a continuous $\varsigma$-semilinear isometry for the projective topology when the factor involutions are isometric, and for the injective topology when the twist is also trivial, so it extends to an isometric involution of the projective completion; it is an anti-automorphism for the envelope and a transposition for the derived operation. The <strong>universal property</strong> identifies continuous bilinear maps on $A \times B$ with continuous linear maps on $A \widehat{\otimes}_\pi B$, the commuting images and their closures generate commutatively, and the completed tensor product is the coproduct in the commutative case. At $\varsigma = \mathrm{id}$ the whole construction is the tensor product of the bilinear layer, and a tensor product of full-type objects with a nontrivial involution is not an algebra. The examples are the field, the matrices $M_{mn}$, the sequence space $\ell^{1}$, the function algebra $C(X \times Y)$, and the non-nuclear boundary on which the two completions differ.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A \otimes B$</td>
+<td>the algebraic sesquilinear tensor product over $(\mathbb{K},\varsigma)$</td>
+</tr>
+<tr>
+<td>$(a\otimes b)(c\otimes d) = ac\otimes bd$</td>
+<td>the product, $\varsigma$-sesquilinear in the second overall slot</td>
+</tr>
+<tr>
+<td>$\natural(a\otimes b) = a^{*}\otimes b^{*}$</td>
+<td>the tensor involution, a $\varsigma$-semilinear isometry for the projective norm</td>
+</tr>
+<tr>
+<td>$A \widehat{\otimes}_\pi B$</td>
+<td>the completed projective tensor product</td>
+</tr>
+<tr>
+<td>$A \widehat{\otimes}_\varepsilon B$</td>
+<td>the completed injective tensor product</td>
+</tr>
+<tr>
+<td>$\lVert u\rVert_\pi = \inf\sum_k\lVert a_k\rVert\lVert b_k\rVert$</td>
+<td>the projective norm, submultiplicative for the product</td>
+</tr>
+<tr>
+<td>$\lVert u\rVert_\varepsilon = \sup\lvert(\xi\otimes\eta)(u)\rvert$</td>
+<td>the injective norm; the product need not be submultiplicative for it</td>
+</tr>
+<tr>
+<td>$\lVert uv\rVert_\pi \leq \lVert u\rVert_\pi\lVert v\rVert_\pi$</td>
+<td>submultiplicativity of the projective product</td>
+</tr>
+<tr>
+<td>$A$ nuclear</td>
+<td>the two completions coincide and carry the same structure</td>
+</tr>
+<tr>
+<td>$A \widehat{\otimes}_\pi B \to A \widehat{\otimes}_\varepsilon B$</td>
+<td>the canonical continuous map, an isomorphism exactly when $A$ is nuclear</td>
+</tr>
+<tr>
+<td>$\iota_A$, $\iota_B$</td>
+<td>the canonical maps with commuting images</td>
+</tr>
+<tr>
+<td>$\varsigma = \mathrm{id}$</td>
+<td>the collapse: the tensor product of the bilinear layer</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>François Trèves, <em>Topological Vector Spaces, Distributions and Kernels</em> (Academic Press, 1967), for the projective and injective tensor topologies and the nuclearity criterion.</li>
+<li>A. Grothendieck, <em>Produits tensoriels topologiques et espaces nucléaires</em> (Memoirs of the American Mathematical Society, 1955), for the two topologies, the nuclear spaces and the problem of topologies.</li>
+<li>Albrecht Pietsch, <em>Nuclear Locally Convex Spaces</em> (Springer, 1972), for the projective and injective norms and the operator ideals that the matrix examples use.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the spatial and the maximal tensor products of operator algebras and the class of nuclear $\mathrm{C}^{*}$-algebras.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of *-Algebras, Volume I</em> (Cambridge University Press, 1994), for the tensor products of Banach algebras and the submultiplicativity of the projective and injective norms.</li>
+<li>Harald Upmeier, <em>Jordan Algebras in Analysis, Operator Theory, and Quantum Mechanics</em> (American Mathematical Society, 1987), for the tensor products of the ternary product and the $J^{*}$-algebra structures they define.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

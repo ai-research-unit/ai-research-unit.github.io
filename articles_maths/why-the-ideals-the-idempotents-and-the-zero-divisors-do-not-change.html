@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why the Ideals, the Idempotents and the Zero Divisors Do Not Change — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="why-the-ideals-the-idempotents-and-the-zero-divisors-do-not-change"><strong>Why the Ideals, the Idempotents and the Zero Divisors Do Not Change</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion ring is the same ring whether it is read over $\mathbb{C}$ or over $\mathbb{R}$. Its ideals, its idempotents and its zero divisors are defined by equations and closure conditions in the ring, and one expects them to be the same sets in the two readings. This article proves the expectation, identifies the one structural fact that makes it true — the centrality of the element $i$ and its membership in the ring — and marks the boundary where it fails.</p>
+<p>The boundary is sharp, and it is not the boundary between "algebraic" and "not algebraic". It is the boundary between conditions that involve only left multiplication by elements of $\mathbb{B}$ and conditions that involve only the real scalars. An ideal is closed under left multiplication by every element of $\mathbb{B}$, and among them is the central element $i$, so an ideal over $\mathbb{R}$ is automatically stable under $i$ and therefore a complex subspace. An idempotent, a zero divisor and a unit satisfy a polynomial equation with coefficients in the ring, and no scalar is mentioned. A subalgebra, by contrast, is closed only under the product with itself; the real line $\mathbb{R} e_0$ is a real subalgebra that is not a complex subspace, and the three-dimensional example $\mathbb{R}\{e_0, e_1+ie_2, ie_1-e_2\}$ is another. So the ideals, the idempotents and the zero divisors do not change, the subalgebras do.</p>
+<p>The three structures are treated in their own articles and are cited, not re-derived: the ideals in <em>Biquaternion Ideals and Peirce Decomposition</em>, the idempotents in <em>Biquaternion Idempotents and Projections</em>, the zero divisors in <em>Biquaternion Zero Divisors</em>, and the invertibility criterion they all use in <em>Biquaternion Norm and Invertibility</em>. The change of scalars in general is <em>The Change of Scalars from $\mathbb{C}$ to $\mathbb{R}$</em>; the subalgebras that do change are <em>The Real Subalgebras of the Biquaternion Algebra</em>; and the module-theoretic form of the statement is <em>The Biquaternion Algebra as a Real Module over Itself</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ and central imaginary $i = ie_0$, $i^2 = -e_0$. A <strong>left ideal over $\mathbb{R}$</strong> is an additive subgroup $I \subseteq \mathbb{B}$ with $\mathbb{B} I \subseteq I$; the definitions over $\mathbb{C}$ are the same with complex scalar multiplication allowed. The quaternion conjugation is $\natural$, the Hermitian conjugation is ${}^{*} = \bar{\cdot}\circ\natural$, and the norm is $N(\tilde Q) = \tilde Q\tilde Q^{\natural} \in \mathbb{C}$.</p>
+<h2 id="the-principle">The Principle</h2>
+<h3 id="the-scalars-act-through-an-element-of-the-ring">The Scalars Act Through an Element of the Ring</h3>
+<p>The complex reading of $\mathbb{B}$ differs from the real reading in one structural respect: the complex scalar $i$ is a scalar, whereas in the real reading it is an element of the algebra. Left multiplication by that element is the operator
+$$
+J(\tilde Q) = i\tilde Q ,
+$$
+and it is this operator that carries the entire complex action. The observation that the article turns on is the trivial one that $J$ is left multiplication by an element of the ring.</p>
+<p><strong>Proposition.</strong> The complex scalar action on $\mathbb{B}$ is generated by left multiplication with the element $i$:
+$$
+\lambda \tilde Q = a\tilde Q + b\,J(\tilde Q) \quad \text{for } \lambda = a+bi,\ a,b \in \mathbb{R}.
+$$</p>
+<p><strong>Proof.</strong> By $\mathbb{R}$-bilinearity of the product, $(a+bi)\tilde Q = a\tilde Q + b(i\tilde Q) = a\tilde Q + bJ(\tilde Q)$. $\square$</p>
+<p><strong>Corollary (the complex subspaces are the $i$-stable subspaces).</strong> A real subspace $V \subseteq \mathbb{B}$ is a complex subspace if and only if $J(V) \subseteq V$.</p>
+<p><strong>Proof.</strong> If $V$ is a complex subspace then $i\tilde Q \in V$ for $\tilde Q \in V$. Conversely if $J(V) \subseteq V$ then $a\tilde Q + bJ(\tilde Q) \in V$ for all real $a, b$ and all $\tilde Q \in V$, which is the closure under complex scalars. $\square$</p>
+<h3 id="the-key-lemma">The Key Lemma</h3>
+<p><strong>Lemma.</strong> Every additive subgroup $I \subseteq \mathbb{B}$ with $\mathbb{B} I \subseteq I$ is a complex subspace, and every complex subspace with $\mathbb{B} I \subseteq I$ is a left ideal over $\mathbb{R}$.</p>
+<p><strong>Proof.</strong> If $\mathbb{B} I \subseteq I$ then in particular $i\tilde Q = (ie_0)\tilde Q \in I$ for $\tilde Q \in I$, because $ie_0 \in \mathbb{B}$; thus $I$ is $i$-stable and, being an additive subgroup, contains $a\tilde Q + b\,i\tilde Q$ for all real $a,b$, so it is a complex subspace. The converse is immediate from the definitions. $\square$</p>
+<p><strong>Theorem.</strong> An additive subgroup of $\mathbb{B}$ is a left ideal over $\mathbb{R}$ if and only if it is a left ideal over $\mathbb{C}$. Consequently the left ideals of the two readings are the same sets, and the two lattices of left ideals are the same lattice. The same holds for right ideals, two-sided ideals and submodules.</p>
+<p><strong>Proof.</strong> A left ideal over $\mathbb{R}$ is closed under left multiplication by every element of $\mathbb{B}$, hence by $i$, hence is a complex subspace by the lemma, hence is closed under left multiplication by every complex multiple of every element of $\mathbb{B}$; so it is a left ideal over $\mathbb{C}$. The converse is immediate. The statements for right and two-sided ideals and for submodules are the same argument applied to left multiplication, right multiplication and the module action. $\square$</p>
+<p><strong>Remark (the module reading).</strong> The statement is the assertion that the left regular module of $\mathbb{B}$ over $\mathbb{R}$ has the same submodules as the left regular module over $\mathbb{C}$, even though the first is a real vector space of dimension eight and the second a complex vector space of dimension four. The reason is the one above: the complex action is the real action together with $J$, and every submodule is already $J$-stable because $J$ is part of the action. The module theory is <em>The Biquaternion Algebra as a Real Module over Itself</em> and <em>Modules over the Biquaternion Algebra</em>.</p>
+<h2 id="the-ideals">The Ideals</h2>
+<p><strong>Corollary (the ideal lattice is unchanged).</strong> The two-sided ideals of the real reading are exactly the two-sided ideals of the complex reading, and they are $0$ and $\mathbb{B}$; the algebra is simple in both readings.</p>
+<p>This is the content of <em>Biquaternion Ideals and Peirce Decomposition</em>, where the simplicity of $\mathbb{B}$ is proved from the centrality of $i$ and the conjugation by the basis units, both of which are ring operations. The Peirce decomposition with respect to an idempotent,
+$$
+\mathbb{B} = \mathbb{B}_{11} \oplus \mathbb{B}_{12} \oplus \mathbb{B}_{21} \oplus \mathbb{B}_{22} ,
+$$
+its refinement by the minimal left ideals, and the parametrization of the minimal left ideals by $\mathbb{P}^1(\mathbb{C})$ are all statements about the lattice of left ideals and are therefore identical in the two readings. The complex projective line is not replaced by the real one over $\mathbb{R}$, because the minimal left ideals are complex subspaces by the lemma.</p>
+<p><strong>Remark (the minimal left ideals are complex lines of the same algebra).</strong> It is worth stating the non-obvious conclusion in one line: although the scalar field has been reduced, and although the real reading contains more subspaces, the minimal left ideals of the real reading are in bijection with $\mathbb{P}^1(\mathbb{C})$ and not with $\mathbb{P}^1(\mathbb{R})$. The lemma forbids the smaller lattice that would otherwise appear.</p>
+<h2 id="the-idempotents">The Idempotents</h2>
+<p><strong>Theorem.</strong> The idempotents of the real reading and those of the complex reading are the same elements.</p>
+<p><strong>Proof.</strong> An idempotent is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$, an equation in the ring with no scalar in it. Its solution set in $\mathbb{B}$ is therefore unchanged by the change of scalars. $\square$</p>
+<p>The classification of the idempotents is likewise unchanged, because each step of it is a ring computation. The trivial idempotents are $0$ and $e_0$; the nontrivial idempotents are
+$$
+\tfrac12\bigl(e_0 + \xi i\bigr), \qquad \xi \text{ a root of } -1 ,
+$$
+and the trivial ones correspond to the degenerate roots $\pm i$ of $-1$; the bijection $\xi \mapsto \tfrac12(e_0+\xi i)$ from the roots of $-1$ onto the idempotents, the complementary pairs $\{\tilde\Pi, e_0-\tilde\Pi\}$ corresponding to the classes $\{\xi,-\xi\}$, the three families of the classification, and the conjugacy classes are all those of <em>Biquaternion Idempotents and Projections</em>. None of them names the field of scalars.</p>
+<p><strong>Remark (what does change around the idempotents).</strong> What changes is the <em>real linear</em> description of the sets attached to an idempotent, not the idempotents themselves: the real dimensions of the Peirce components are twice the complex dimensions, and a real subspace of the Peirce component that is merely real-linear is a structure the complex reading does not have. The sets of idempotents are equal; the sets of real subspaces they span are not.</p>
+<h2 id="the-zero-divisors">The Zero Divisors</h2>
+<p><strong>Theorem.</strong> The zero divisors of the real reading and those of the complex reading are the same elements.</p>
+<p><strong>Proof.</strong> By <em>Biquaternion Norm and Invertibility</em> an element $\tilde Q \in \mathbb{B}$ is a zero divisor exactly when $N(\tilde Q) = 0$, equivalently
+$$
+\tilde Q\tilde Q^{\natural} = 0 ,
+$$
+and this is an equation in the ring: $\natural$ is a ring anti-automorphism and $0$ is the zero of the ring. The cardinality and the dimension of the solution set as a <em>real</em> locus may be read from the real coordinates, but its <em>elements</em> depend only on the ring. $\square$</p>
+<p>The two families of the zero-divisor cone — the pure ones, with $(\mathbf{Q},\mathbf{Q}) = 0$, and the non-pure ones, with $(\mathbf{Q},\mathbf{Q}) = -Q_0^2$, which are exactly the nonzero complex multiples of the idempotents — are computed in <em>Biquaternion Zero Divisors</em>; the cone is a real algebraic cone of real dimension six, and its complex form has complex dimension three. The dimension is a scalar-level quantity and doubles with the change of scalars, while the cone as a set is unchanged: this is the sharpest instance of the article's thesis, a set that is the same while the dimension attached to it is not.</p>
+<p><strong>Remark (a second equation, the same conclusion).</strong> The criterion can also be written $N(\tilde Q) = 0$ with $N(\tilde Q) = \tilde Q\tilde Q^{\natural}$, a polynomial of degree two with coefficients among the basis elements. Every formulation is an equation in the ring, and the conclusion is the same for each.</p>
+<h2 id="where-the-principle-fails-the-subalgebras">Where the Principle Fails: the Subalgebras</h2>
+<p>The proof of the key lemma used closure under left multiplication by <em>every</em> element of $\mathbb{B}$, and in particular by $i$. A subalgebra is closed only under multiplication by its own elements, and $i$ need not be among them; there the principle fails, and the failure is not an accident.</p>
+<p><strong>Proposition.</strong> There is a real subalgebra of $\mathbb{B}$ that is not a complex subspace.</p>
+<p><strong>Proof.</strong> The line $\mathbb{R} e_0$ is closed under the product, but $i e_0 = i$ is not real, so $\mathbb{R} e_0$ is not stable under $J$ and is not a complex subspace. $\square$</p>
+<p><strong>Proposition.</strong> A real-linear algebra endomorphism of $\mathbb{B}$ need not be $\mathbb{C}$-linear.</p>
+<p><strong>Proof.</strong> The complex conjugation $\bar{\cdot}$ is an $\mathbb{R}$-algebra automorphism, and it anticommutes with $J$: $\bar{\cdot}(J\tilde Q) = \overline{i\tilde Q} = -i\bar{\tilde Q} = -J(\bar{\cdot}\tilde Q)$. Hence it is not $\mathbb{C}$-linear, by the criterion of <em>The Four Conjugations Are All $\mathbb{R}$-Linear</em>. $\square$</p>
+<p><strong>Remark (the general shape of the boundary).</strong> The structures that do not change are those whose defining condition mentions the whole of $\mathbb{B}$ acting by multiplication on the left, by multiplication on the right, or by a ring polynomial, as for the ideals, the idempotents, the zero divisors and the units. The structures that change are those whose defining condition mentions only the real scalars or only a proper part of the ring acting on itself, as for the subalgebras, the real-linear maps, and the real coordinates of any given set. The central element $i$ is the carrier: it is a ring element, so it travels with the ideals; it is a scalar over $\mathbb{C}$, so it is invisible in the complex reading; and it is neither, in a subalgebra that does not contain it.</p>
+<h2 id="summary">Summary</h2>
+<p>The complex scalar action of $\mathbb{B}$ is left multiplication by the ring element $i$, so every additive subgroup closed under left multiplication by $\mathbb{B}$ is automatically stable under $i$, hence a complex subspace. The immediate consequences are:
+$$
+\boxed{\ \text{The left, right and two-sided ideals, the idempotents, the zero divisors and the units are the same sets over } \mathbb{R} \text{ and over } \mathbb{C}. }
+$$</p>
+<p>The ideal lattice is the same lattice, of which the minimal left ideals are still parametrized by $\mathbb{P}^1(\mathbb{C})$; the idempotents are the same elements, classified by the same roots of $-1$; and the zero-divisor cone is the same set, of real dimension six and complex dimension three. The subalgebras and the real-linear maps are the exception: they mention only the real scalars or only part of the ring, the line $\mathbb{R} e_0$ is a real subalgebra and not a complex subspace, and the complex conjugation is a real algebra automorphism and not a complex one. The dividing line is the central element $i$, which belongs to the ring and therefore to every ideal, and need not belong to a subalgebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$I$</td>
+<td>an additive subgroup, a left ideal when $\mathbb{B} I \subseteq I$</td>
+</tr>
+<tr>
+<td>$J : \tilde Q \mapsto i\tilde Q$</td>
+<td>left multiplication by the central element $i$</td>
+</tr>
+<tr>
+<td>$i = ie_0$</td>
+<td>the central element, a ring element whose multiplication is the complex action</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{11}, \mathbb{B}_{12}, \mathbb{B}_{21}, \mathbb{B}_{22}$</td>
+<td>the Peirce components of an idempotent</td>
+</tr>
+<tr>
+<td>$\tilde\Pi = \tfrac12(e_0 + \xi i)$</td>
+<td>a nontrivial idempotent, $\xi$ a root of $-1$</td>
+</tr>
+<tr>
+<td>$N(\tilde Q) = \tilde Q\tilde Q^{\natural}$</td>
+<td>the norm; $N = 0$ is the zero-divisor condition</td>
+</tr>
+<tr>
+<td>$\mathbb{P}^1(\mathbb{C})$</td>
+<td>the parametrizing space of the minimal left ideals, unchanged over $\mathbb{R}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Biquaternion Ideals and Peirce Decomposition</em> (<code>articles_maths/biquaternion-ideals-and-peirce-decomposition.md</code>), for the ideal lattice, the Peirce decomposition and the parametrization of the minimal left ideals.</li>
+<li><em>Biquaternion Idempotents and Projections</em> (<code>articles_maths/biquaternion-idempotents-and-projections.md</code>), for the classification of the idempotents by the roots of $-1$.</li>
+<li><em>Biquaternion Zero Divisors</em> (<code>articles_maths/biquaternion-zero-divisors.md</code>), for the zero-divisor cone and its two families.</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the criterion $N(\tilde Q) = 0$ for the zero divisors.</li>
+<li><em>The Change of Scalars from $\mathbb{C}$ to $\mathbb{R}$</em> (<code>articles_maths/the-change-of-scalars-from-c-to-r.md</code>), for the general ring-level versus scalar-level distinction.</li>
+<li><em>The Biquaternion Algebra as a Real Module over Itself</em> (<code>articles_maths/the-biquaternion-algebra-as-a-real-module-over-itself.md</code>), for the module form of the same statement.</li>
+<li><em>Modules over an Algebra</em> (<code>articles_maths/modules-over-an-algebra.md</code>), for submodules, simplicity and the composition series.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

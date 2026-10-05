@@ -1,5 +1,12 @@
 :root {
-  --sidebar-width: 350px;
+  /* ── Fluid layout tokens ────────────────────────────────────────────────
+     Widths are percentages of the viewport, so every element keeps its
+     proportion of the screen from a small laptop to a 4K monitor. The only
+     guard is `max(...)`: below ~1200px a bare 20% sidebar would fall under
+     240px and the nav labels would wrap, so the sidebar stops shrinking
+     there. That floor is the minimum usable nav width, not a design cap. */
+  --sidebar-width: max(20%, 240px);
+  --page-pad-x:    3%;
   --color-bg: #f7f6f2;
   --color-surface: #ffffff;
   --color-text: #1a1a1a;

@@ -129,13 +129,13 @@ $$</p>
 <ol>
 <li><strong>It connects the algebra to the Clifford algebra of the underlying form.</strong> The biquaternion algebra is the even part of $\mathrm{Cl}_{1,3}$.</li>
 <li><strong>It makes the geometry explicit.</strong> The Clifford algebra is the natural algebraic structure on a vector space with a quadratic form. In the case of $\mathrm{Cl}_{1,3}$, that form has signature $(1,3)$: one generator squares to $+1$ and three to $-1$.</li>
-<li><strong>It generalizes.</strong> The Clifford algebra construction works in any dimension and any signature. The biquaternion algebra is the specific case of dimension $4$ and signature $(1,3)$ — the Hermitian form of the algebra, since the Clifford vectors correspond to the Hermitian subspace $\mathbb{M}_+$ — and the general theory places it in a broader context.</li>
+<li><strong>It generalizes.</strong> The Clifford algebra construction works in any dimension and any signature. The biquaternion algebra is the specific case of dimension $4$ and signature $(1,3)$ — the complex sesquilinear form of the algebra, since the Clifford vectors correspond to the Hermitian subspace $\mathbb{M}_+$ — and the general theory places it in a broader context.</li>
 </ol>
 <h2 id="the-conjugation-action">The Conjugation Action</h2>
 <h3 id="definition_1">Definition</h3>
 <p>The third two-sided action of a unit on the algebra replaces the Hermitian conjugate of the sandwich by the inverse:</p>
 <p>$$
-\operatorname{Ad}_{\tilde{Q}}(\tilde T) = \tilde{Q}\,\tilde T\,\tilde{Q}^{-1}, \qquad N(\tilde{Q}) \neq 0 .
+\operatorname{Ad}_{\tilde{Q}}(\tilde T) = \tilde{Q}\,\tilde T\,\tilde{Q}^{-1}, \qquad \langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0 .
 $$</p>
 <p>The two differ in what they require of the algebra. The inverse uses the product and the biquaternion norm alone, so $\operatorname{Ad}_{\tilde{Q}}$ is built from the algebra operations; the dagger needs the coefficient conjugation as well, and this is why $\operatorname{Ad}_{\lambda\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}}$ for every nonzero central $\lambda$ while the sandwich is not invariant under that rescaling. The name is the standard one: $\operatorname{Ad}_{\tilde{Q}}$ is the <strong>adjoint action</strong> of the group of units on the algebra.</p>
 <p>This is the realization that satisfies the technical definition of a representation in the strict sense: a homomorphism of the group of units into the automorphism group of $\mathbb{B}$, which is itself a group of linear maps of $\mathbb{B}$. It is the action the corpus calls the inner automorphisms, and it is the <em>reference and the contrast</em> of the dagger sandwich, which is placed beside it in <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
@@ -297,7 +297,7 @@ $$</p>
 <h2 id="the-role-of-choices">The Role of Choices</h2>
 <p>Each representation involves a choice, and different choices give equivalent but not identical representations.</p>
 <ul>
-<li><strong>Clifford algebra representation:</strong> the choice of the gamma matrices, which is determined by the choice of the bilinear form and the basis of the underlying vector space.</li>
+<li><strong>Clifford algebra representation:</strong> the choice of the gamma matrices, which is determined by the choice of the quaternion bilinear form and the basis of the underlying vector space.</li>
 <li><strong>Conjugation action:</strong> the choice of the unit $\tilde{Q}$, which is redundant, since $\operatorname{Ad}_{\lambda\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}}$ for every nonzero central $\lambda$; the action depends on $\tilde{Q}$ only through its class in $\mathbb{B}^{\times}/\mathbb{C}_{\mathbb{B}}^{\times}$.</li>
 </ul>
 <p>The choices belonging to the other realizations are recorded in their own articles. Different choices give representations that are related by conjugation, and the algebraic structure of the biquaternion algebra is the same in all of them. The choices are a matter of convention and convenience, not of content.</p>
@@ -361,7 +361,7 @@ $$</p>
 <td>Quaternion subspace and Hermitian subspace of $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
+<td>$\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>

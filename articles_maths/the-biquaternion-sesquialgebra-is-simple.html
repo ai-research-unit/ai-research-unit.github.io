@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Biquaternion Sesquialgebra Is Simple — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-biquaternion-sesquialgebra-is-simple"><strong>The Biquaternion Sesquialgebra Is Simple</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complex sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ makes $\mathbb{B}$ a sesquialgebra by <em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em>, and the two-sided ideals of that multiplication are the two trivial ones,</p>
+<p>$$
+0 \quad\text{and}\quad \mathbb{B} .
+$$</p>
+<p>This article proves the statement in full. The proof is a single computation: a two-sided ideal of the multiplication is a two-sided ideal of the algebra, because in a unital derived model the involution drags the conjugate of an element into every ideal it lies in; and the algebra $\mathbb{B}$ is a full matrix algebra over $\mathbb{C}$, which has no proper two-sided ideal. So one nonzero element of a two-sided ideal generates a nonzero two-sided ideal of the algebra, which is the whole algebra, and the ideal contains the unit.</p>
+<p>The article is the third of the structural batch: the element theory is <em>Projections of the Biquaternion Sesquialgebra</em>, the square theory is <em>The Squares and the Positive Cone of the Biquaternion Sesquialgebra</em>, and the structure theory of the ideals is here. The general theory that it reads is <em>Ideals and Quotients of a Sesquialgebra</em>, where the one-sided and two-sided ideals of a sesquialgebra are defined, and <em>Simple Sesquialgebras and Minimal Ideals</em>, where the two notions of simplicity are compared and the one-sided case is treated. On the biquaternion side the two-sided ideals of the algebra and the simplicity of the ring are <em>Biquaternion Ideals and Peirce Decomposition</em>, and the minimal one-sided ideals of the algebra and the idempotents that determine them are the same article.</p>
+<p>The setting is that of <em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em>: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ with ${}^{*}$ the conjugate-linear involution. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of <em>Hermitian and Skew-Hermitian Elements</em>, and the ideal theory of the general sesquialgebra is the one that is applied.</p>
+<h2 id="ideals-of-the-multiplication">Ideals of the Multiplication</h2>
+<h3 id="the-definitions">The Definitions</h3>
+<p><strong>Definition.</strong> A <strong>left ideal</strong> of the multiplication is an $R$-submodule $I\subseteq\mathbb{B}$ with $\mathbb{B}\star I\subseteq I$; a <strong>right ideal</strong> is an $R$-submodule with $I\star\mathbb{B}\subseteq I$; a <strong>two-sided ideal</strong> is an $R$-submodule with both. The <strong>conjugate image</strong> of a subset $I$ is $I^{*}=\{\tilde X^{*}:\tilde X\in I\}$, and a <strong>$\ast$-ideal</strong> is a two-sided ideal with $I^{*}\subseteq I$.</p>
+<p><strong>Remark.</strong> The definitions are those of <em>Ideals and Quotients of a Sesquialgebra</em>, §<em>Ideals</em>, read on $\mathbb{B}$ with the multiplication $\star$. The scalar-closure clause is automatic in the unital case, by the proposition of that article on the unital case, so the three notions are the plain product-closed ones here, the unit being $e_0$ on the right.</p>
+<h3 id="two-sided-math27-ideals-are-math28-ideals">Two-Sided $\star$-Ideals Are $\ast$-Ideals</h3>
+<p><strong>Theorem.</strong> A two-sided ideal of the multiplication is stable under the involution, so the two-sided $\star$-ideals of $\mathbb{B}$ and the $\ast$-ideals of $\mathbb{B}$ are the same class.</p>
+<p><strong>Proof.</strong> This is the theorem of <em>Simple Sesquialgebras and Minimal Ideals</em>, §<em>The Two Notions Coincide in the Derived Model</em>, applied to the derived model $\tilde X\star\tilde Y=\tilde X\tilde Y^{*}$ with the unit $e_0$. The one computation is $\tilde X^{*}=e_0\star\tilde X$ for an element of a two-sided ideal, which lies in $\mathbb{B}\star I\subseteq I$ and so drags the conjugate into the ideal; the involution is then of order two and gives equality. With stability in hand the $\star$-conditions read $\mathbb{B}I\subseteq I$ and $I\mathbb{B}\subseteq I$, so a two-sided $\star$-ideal is a two-sided algebra ideal as well, that is, a $\ast$-ideal; and conversely an $\ast$-ideal satisfies the $\star$-conditions because $\mathbb{B}\star I=\mathbb{B}I^{*}=\mathbb{B}I\subseteq I$. $\square$</p>
+<p><strong>Remark.</strong> The stability is what a general sesquialgebra need not have, and <em>Ideals and Quotients of a Sesquialgebra</em> records the example of the principal ideal that is not stable; the derived model with a unit is exactly the case in which the involution is strong enough to close the gap. On $\mathbb{B}$ the theorem says that the two-sided ideals of the multiplication are the $\ast$-stable two-sided algebra ideals, and the next section computes them.</p>
+<h2 id="the-simplicity-theorem">The Simplicity Theorem</h2>
+<h3 id="the-statement">The Statement</h3>
+<p><strong>Theorem.</strong> The two-sided ideals of the sesquilinear multiplication on $\mathbb{B}$ are $0$ and $\mathbb{B}$; in the terminology of <em>Simple Sesquialgebras and Minimal Ideals</em>, the sesquialgebra $(\mathbb{B},\star)$ is <strong>simple</strong> and invariant-simple.</p>
+<p><strong>Proof.</strong> A two-sided $\star$-ideal is an $\ast$-ideal by §<em>Ideals of the Multiplication</em>, hence a two-sided algebra ideal. The algebra ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$, by <em>Biquaternion Ideals and Peirce Decomposition</em>, §<em>The Two-Sided Ideals: Simplicity of $\mathbb{B}$</em>, because $\mathbb{B}$ is a full two-by-two matrix algebra over the field $\mathbb{C}$ and such an algebra has no proper two-sided ideal. So the two-sided $\star$-ideals are $0$ and $\mathbb{B}$. Simplicity is the definition, and invariant-simplicity follows from it. $\square$</p>
+<p><strong>Remark.</strong> The proof is a transport and not a new computation, and it is the transport that the article makes explicit. The direct form of the argument, which uses one element and the unit criterion, is the next two subsections.</p>
+<h3 id="the-proof-from-one-element-and-the-unit-criterion">The Proof from One Element and the Unit Criterion</h3>
+<p><strong>Proposition (the unit criterion).</strong> A two-sided ideal of an algebra with a unit that contains a unit is the whole algebra.</p>
+<p><strong>Proof.</strong> If $I$ contains the unit $e_0$ then for every $\tilde X$ one has $\tilde X=\tilde X e_0\in I\mathbb{B}\subseteq I$, so $I=\mathbb{B}$. The general-algebra form is the unit criterion for ideals. $\square$</p>
+<p><strong>Proposition (one element generates the algebra).</strong> Let $I$ be a two-sided $\star$-ideal of $\mathbb{B}$ and let $0\neq\tilde X\in I$. Then $I=\mathbb{B}$.</p>
+<p><strong>Proof.</strong> By stability, $I$ is a two-sided algebra ideal. The set
+$$
+\mathbb{B}\,\tilde X\,\mathbb{B}=\Bigl\{\sum_{i}\tilde A_i\tilde X\tilde B_i\Bigr\}
+$$
+is a two-sided algebra ideal, it contains $\tilde X$, and it is contained in $I$ because $I$ is two-sided. Since $\tilde X\neq0$, the ideal $\mathbb{B}\tilde X\mathbb{B}$ is nonzero, and the only nonzero two-sided ideal of $\mathbb{B}$ is $\mathbb{B}$ itself, by <em>Biquaternion Ideals and Peirce Decomposition</em>; hence $\mathbb{B}\tilde X\mathbb{B}=\mathbb{B}$. The unit criterion now gives $e_0\in I$ and $I=\mathbb{B}$. $\square$</p>
+<p><strong>Corollary.</strong> A nonzero two-sided $\star$-ideal contains the unit, and the two-sided $\star$-ideals are exactly $0$ and $\mathbb{B}$.</p>
+<p><strong>Proof.</strong> The proposition shows that every nonzero two-sided $\star$-ideal is $\mathbb{B}$, and the unit criterion is the mechanism. $\square$</p>
+<p><strong>Remark.</strong> The argument is the one the group article compresses: one element of an ideal, the algebra's simplicity, and the unit criterion. The element $\tilde X$ is used only through the nonzero two-sided ideal it generates, and the generation is the content of the algebra's simplicity; the involution is used only to pass from the multiplication to the algebra.</p>
+<h3 id="the-quotients">The Quotients</h3>
+<p><strong>Corollary.</strong> The only quotients of the sesquialgebra by two-sided ideals are the zero sesquialgebra and the sesquialgebra itself.</p>
+<p><strong>Proof.</strong> The two-sided ideals are $0$ and $\mathbb{B}$, and $\mathbb{B}/0=\mathbb{B}$ while $\mathbb{B}/\mathbb{B}=0$. $\square$</p>
+<p><strong>Remark.</strong> A sesquialgebra that is simple has no nontrivial quotient, so the whole of the representation theory of $\mathbb{B}$ is the theory of $\mathbb{B}$ itself. The corresponding statement for the algebra is the same, and it is the reason the four products of the corpus all live on one algebra and not on a family of quotients.</p>
+<h2 id="the-lattice-of-ideals">The Lattice of Ideals</h2>
+<h3 id="the-two-sided-lattice">The Two-Sided Lattice</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>ideal</th>
+<th>of the multiplication $\star$</th>
+<th>of the algebra $\tilde P\tilde Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zero</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>whole</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}$</td>
+</tr>
+<tr>
+<td>proper nonzero two-sided</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>proper nonzero $\ast$-ideal</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark.</strong> The two-sided lattice is the same for the two products, and it is the trivial lattice of two elements. The agreement is the coincidence theorem of the derived model; it is not automatic, and <em>Simple Sesquialgebras and Minimal Ideals</em> records an algebra over a finite field where the two-sided ideals of the derived product are strictly fewer than the two-sided algebra ideals.</p>
+<h3 id="the-involution-swaps-the-two-sides">The Involution Swaps the Two Sides</h3>
+<p><strong>Proposition.</strong> The conjugate image of a left $\star$-ideal is a right $\star$-ideal and conversely, and the conjugate image of a two-sided $\star$-ideal is two-sided.</p>
+<p><strong>Proof.</strong> The statement for the algebra ideals is <em>Ideals and Quotients of a Sesquialgebra</em>, §<em>The Involution Swaps the Two Sides</em>: for a left ideal $I$ one has $\tilde X^{*}\tilde A=(\tilde A^{*}\tilde X)^{*}\in I^{*}$, so $I^{*}$ is a right ideal. The $\star$-conditions are the algebra conditions on the conjugate, by the theorem of §<em>Ideals of the Multiplication</em>, so the statement carries over to the multiplication. $\square$</p>
+<p><strong>Remark.</strong> The involution is the map that identifies the two sides, so a one-sided $\star$-ideal and its conjugate image are a left and a right ideal of the same size. In $\mathbb{B}$ the two sides are exchanged by ${}^{*}$ between the left and right ideals generated by the projections of <em>Projections of the Biquaternion Sesquialgebra</em>.</p>
+<h3 id="the-one-sided-ideals">The One-Sided Ideals</h3>
+<p><strong>Theorem.</strong> A one-sided $\star$-ideal of a derived model with a unit is stable under the involution; consequently the one-sided $\star$-ideals of $\mathbb{B}$ are exactly the stable one-sided algebra ideals.</p>
+<p><strong>Proof.</strong> The stability is <em>Simple Sesquialgebras and Minimal Ideals</em>, §<em>The One-Sided Case</em>: for a left $\star$-ideal $I$ and $\tilde X\in I$ one has $\tilde X^{*}=e_0\star\tilde X\in\mathbb{B}\star I\subseteq I$; the right case is the same on the other side, and the two-sided case is the two together. With $I^{*}=I$ the $\star$-condition $\mathbb{B}\star I\subseteq I$ reads $\mathbb{B}I^{*}=\mathbb{B}I\subseteq I$, which is the left algebra condition; conversely a stable left algebra ideal satisfies $\mathbb{B}\star I=\mathbb{B}I^{*}=\mathbb{B}I\subseteq I$. $\square$</p>
+<p><strong>Proposition (no proper one-sided $\star$-ideal).</strong> The only left $\star$-ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$, and the same for the right ideals.</p>
+<p><strong>Proof.</strong> A left $\star$-ideal is a stable left algebra ideal by the theorem. A proper nonzero left ideal of the full matrix algebra $M_2(\mathbb{C})$, hence of $\mathbb{B}$, is the set of the matrices whose kernel contains a fixed line, by <em>Biquaternion Ideals and Peirce Decomposition</em>, §<em>The Lattice of Left Ideals</em>; its conjugate image is a right ideal of the same dimension, and it differs from the left ideal, because a set that is both a left and a right ideal is a two-sided ideal and the proper nonzero two-sided ideals do not exist in $\mathbb{B}$. Hence no proper nonzero left algebra ideal is stable and the only left $\star$-ideals are $0$ and $\mathbb{B}$. The right case is the same under the involution. $\square$</p>
+<p><strong>Corollary (a single element generates the sesquialgebra).</strong> For every $0\neq\tilde X$ the smallest left $\star$-ideal containing $\tilde X$ is $\mathbb{B}$, and the same on the right.</p>
+<p><strong>Proof.</strong> Let $I$ be the smallest left $\star$-ideal containing $\tilde X$. By the stability of one-sided $\star$-ideals, $I$ is stable and so contains $\tilde X^{*}$; hence it contains the left algebra ideal $\mathbb{B}\star\tilde X=\mathbb{B}\tilde X^{*}$, and, being stable, it also contains its conjugate image $\tilde X\mathbb{B}$. As a left ideal $I$ then contains $\mathbb{B}(\tilde X\mathbb{B})=\mathbb{B}\tilde X\mathbb{B}$, the two-sided algebra ideal generated by $\tilde X$, which is $\mathbb{B}$ because $\tilde X\neq0$ and the algebra is simple. Hence $I=\mathbb{B}$. The right case is the same. $\square$</p>
+<p><strong>Remark.</strong> The one-sided theory is therefore sharper than the two-sided one: not only are there no proper two-sided $\star$-ideals, there are no proper one-sided ones either, and every nonzero element is a one-sided generator. This is a property of the multiplication and not of the algebra, and the next section isolates the contrast.</p>
+<h3 id="the-algebras-minimal-one-sided-ideals">The Algebra's Minimal One-Sided Ideals</h3>
+<p><strong>Recall.</strong> The minimal left algebra ideals of $\mathbb{B}$ are the spaces $\mathbb{B}\tilde\Pi$ over the primitive idempotents $\tilde\Pi$, equivalently the spaces $\mathbb{B}\tilde X$ over the nonzero elements $\tilde X$ whose square vanishes, by <em>Biquaternion Ideals and Peirce Decomposition</em>, §<em>The Decomposition into Minimal Left and Right Ideals</em> and <em>Biquaternion Zero Divisors</em>.</p>
+<p><strong>Proposition.</strong> A minimal left algebra ideal of $\mathbb{B}$ is not a left $\star$-ideal.</p>
+<p><strong>Proof.</strong> A minimal left algebra ideal is $\mathbb{B}\tilde\Pi$ with $\tilde\Pi$ a primitive idempotent. Its conjugate image is $(\mathbb{B}\tilde\Pi)^{*}=\tilde\Pi^{*}\mathbb{B}$, a minimal right ideal, and it equals $\mathbb{B}\tilde\Pi$ only if $\tilde\Pi$ is central, which no primitive idempotent of $\mathbb{B}$ is, the centre being $\mathbb{C}e_0$ and the primitive idempotents the elements $\tilde\Pi(\xi)$ and the projections. So the ideal is not stable and, by the stability of one-sided $\star$-ideals, it is not a left $\star$-ideal. $\square$</p>
+<p><strong>Remark.</strong> The elements of the algebra therefore determine a rich lattice of minimal one-sided ideals, one for each primitive idempotent and one for each zero divisor, and the multiplication keeps none of them: the passage from the algebra to the sesquialgebra collapses the one-sided lattice to the two trivial elements. The contrast of the two lattices is the one-sided face of the simplicity of the sesquialgebra.</p>
+<h2 id="the-centre-and-the-field">The Centre and the Field</h2>
+<p><strong>Theorem.</strong> The centre of $\mathbb{B}$ is $\mathbb{C}e_0$, a field, and the only central idempotents are $0$ and $e_0$.</p>
+<p><strong>Proof.</strong> The centre of the full matrix algebra is the scalar multiples of the identity, transported to $\mathbb{C}e_0$ by <em>Biquaternion $2\times2$ Matrix Element Representation</em> and <em>Biquaternion Ideals and Peirce Decomposition</em>; the centre of a field is a field, and $\mathbb{C}e_0$ is identified with $\mathbb{C}$. A central idempotent $\tilde Z$ satisfies $\tilde Z(1-\tilde Z)=0$ and, being central, generates the two-sided ideal $\mathbb{B}\tilde Z$; since the only two-sided ideals are $0$ and $\mathbb{B}$, the idempotent is $0$ or $e_0$. $\square$</p>
+<p><strong>Remark.</strong> The centre is the field of scalars of the algebra, so $\mathbb{B}$ is a <strong>central</strong> simple algebra, in the sense of <em>Central Simple Algebras and the Brauer Group</em>; the two-sided simplicity and the trivial centre are the two halves of that notion.</p>
+<h2 id="summary">Summary</h2>
+<p>The two-sided ideals of the sesquilinear multiplication on $\mathbb{B}$ are $0$ and $\mathbb{B}$: in the unital derived model a two-sided $\star$-ideal is stable under the involution and hence a two-sided algebra ideal, and the algebra is a full matrix algebra with no proper two-sided ideal; directly, one nonzero element of a two-sided $\star$-ideal generates the nonzero two-sided algebra ideal $\mathbb{B}\tilde X\mathbb{B}=\mathbb{B}$, so the ideal contains the unit and is the whole algebra. The sesquialgebra is therefore simple and invariant-simple, its only quotients are itself and zero, and its one-sided theory is even sharper: a one-sided $\star$-ideal is stable, hence a stable one-sided algebra ideal, and $\mathbb{B}$ has no proper one-sided algebra ideal that is stable, so the only one-sided $\star$-ideals are $0$ and $\mathbb{B}$ and every nonzero element generates the whole sesquialgebra on either side. The algebra's own minimal one-sided ideals, determined by the primitive idempotents and the zero divisors, are not ideals of the multiplication, and the two-sided lattices of the two products coincide by the coincidence theorem of the derived model.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$</td>
+<td>the sesquilinear multiplication</td>
+</tr>
+<tr>
+<td>$I^{*}=\{\tilde X^{*}:\tilde X\in I\}$</td>
+<td>the conjugate image of a subset</td>
+</tr>
+<tr>
+<td>left, right, two-sided $\star$-ideal</td>
+<td>an $R$-submodule closed under $\mathbb{B}\star\cdot$, $\cdot\star\mathbb{B}$, or both</td>
+</tr>
+<tr>
+<td>$\ast$-ideal</td>
+<td>a two-sided algebra ideal with $I^{*}\subseteq I$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\tilde X\mathbb{B}$</td>
+<td>the two-sided algebra ideal generated by $\tilde X$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\tilde\Pi$</td>
+<td>a minimal left algebra ideal, $\tilde\Pi$ primitive</td>
+</tr>
+<tr>
+<td>$Z(\mathbb{B})=\mathbb{C}e_0$</td>
+<td>the centre, a field</td>
+</tr>
+<tr>
+<td>$e_0$</td>
+<td>the unit and the two-sided generator of the unit criterion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the two-sided ideals of an involutive ring and their stability under the involution.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society Colloquium Publications 37, 1956), for the simplicity of a full matrix ring, the lattice of one-sided ideals and the unit criterion.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the central simple algebras, their centres and their two-sided ideals.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the ideal lattice of a finite-dimensional algebra, the minimal one-sided ideals and the idempotents that determine them.</li>
+<li>Joseph J. Rotman, <em>Advanced Modern Algebra</em> (American Mathematical Society, 2015), for the module-theoretic treatment of the one-sided ideals of a matrix algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

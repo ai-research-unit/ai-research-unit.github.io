@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Completion of a Sesquialgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-completion-of-a-sesquialgebra"><strong>The Completion of a Sesquialgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><em>Banach Sesquialgebras</em> assumes the object complete, and <em>Fréchet and Locally Convex Sesquialgebras</em> extends the assumption to the locally convex case. This article removes it for the normed object: it takes a normed sesquialgebra over $(\mathbb{K},\varsigma)$, completes the underlying normed space, and shows that the product, the twisted scalar action and, when present, the algebra involution extend uniquely to the completion, so that the completion is a Banach sesquialgebra over the same datum. It is the sesquilinear counterpart of the completion paragraph of <em>Topological Algebras and Banach Algebras</em>, §<em>Normed Algebras</em> and of <em>The Completion Operator</em>, read for the twisted product.</p>
+<p>The one new ingredient with respect to the bilinear layer is the twisted slot. The product of a sesquialgebra is not bilinear on $A \times A$ but bilinear on the pair $(A,A^{\varsigma})$, and the extension has to be performed on that pair; this is harmless because the conjugate module is the same normed space with the same uniformity, so the completion of the conjugate module is the conjugate of the completion, $\widehat{A^{\varsigma}} = \widehat{A}^{\varsigma}$. The extension of the product is then the extension of a uniformly continuous bilinear map, and the submultiplicative estimate passes to the limit by continuity. The algebra involution, when the sesquilinear product is presented as a derived operation $x \star y = xy^{*}$, extends by <em>The Involution and the Completion of a Ring</em>, §<em>The Extension to the Completion</em>, and the derived operation of the completion is the extension of the product.</p>
+<p>Three facts organise the article. A normed sesquialgebra has a completion which is a Banach sesquialgebra over the same datum, and the canonical map $\iota : A \to \widehat{A}$ is an isometric morphism with dense image; the product extends by uniform continuity on bounded sets, the twisted action by the extension of the scalar action, and the extension is submultiplicative, associative when the object is, and unital with the same unit. The completion is the reflection of the normed sesquialgebras into the Banach ones: every continuous morphism into a complete Hausdorff sesquialgebra factors uniquely through $\iota$, so the completion is a functor and it is idempotent, $\widehat{\widehat{A}} \cong \widehat{A}$. And at $\varsigma = \mathrm{id}$ the theorem is the completion of a normed algebra, recovering the Banach algebra completion; the closure of zero is killed by the completion, exactly as for a topological ring, so the completion of a sesquialgebra is the completion of its Hausdorff quotient.</p>
+<p>The article completes the underlying space, extends the product and the twisted action, extends the involution and the derived operation, proves the universal property, functoriality and idempotence, and reads the examples. It cites the analytic prerequisites rather than proving them: the completion of a normed space and its universal property are <em>Normed and Banach Spaces</em>, §<em>Quotients, Direct Sums and Completion</em>, the general operator is <em>The Completion Operator</em> and <em>Topological Modules and Vector Spaces</em>, §<em>Completion</em>, the involution extension is <em>The Involution and the Completion of a Ring</em>, and the continuity of the algebra involution is <em>The Continuity of the Involution</em>. Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ its continuous involution, $A$ a normed sesquialgebra over $(\mathbb{K},\varsigma)$ in the sense of <em>Banach Sesquialgebras</em>, and $\widehat{A}$ the completion of the underlying normed space with canonical map $\iota$.</p>
+<h2 id="the-completion-of-the-underlying-space">The Completion of the Underlying Space</h2>
+<h3 id="the-completion">The Completion</h3>
+<p><strong>Proposition (the completion of the normed space).</strong> Let $A$ be a normed $\mathbb{K}$-space. Then there is a complete normed $\mathbb{K}$-space $\widehat{A}$ and a linear isometry $\iota : A \to \widehat{A}$ with dense image, unique up to isometric isomorphism; every uniformly continuous map from $A$ into a complete Hausdorff uniform space extends uniquely to $\widehat{A}$.</p>
+<p><em>Proof.</em> This is the construction of <em>Normed and Banach Spaces</em>, §<em>Quotients, Direct Sums and Completion</em>: the completion of the metric space $A$ with the extended vector operations, or equivalently the space of Cauchy sequences modulo the null sequences, and the universal property is that of a completion. $\square$</p>
+<p><strong>Proposition (the completion is blind to the closure of zero).</strong> Let $A$ be a topological sesquialgebra with the closure of zero $\overline{\{0\}}$ and let $q : A \to A/\overline{\{0\}}$ be the Hausdorff quotient. Then the completion of $A$ is the completion of $A/\overline{\{0\}}$, and $\iota$ factors as $q$ followed by the injective completion map of the Hausdorff quotient. In the normed case the space is already Hausdorff, $\overline{\{0\}} = \{0\}$, and the statement is the identity; it belongs to the general layer and is quoted here for completeness.</p>
+<p><em>Proof.</em> This is the proposition of <em>The Completion Operator</em>, §<em>The Completion</em> applied to the additive uniform structure, which the sesquialgebra carries unchanged, and to the definition of the completion of a uniform space; the quotient $A/\overline{\{0\}}$ is Hausdorff, by <em>Topological Sesquialgebras</em>, §<em>The Closure of Zero</em>. $\square$</p>
+<h3 id="the-extension-of-the-twisted-action">The Extension of the Twisted Action</h3>
+<p><strong>Theorem (the conjugate module commutes with completion).</strong> Let $A$ be a normed sesquialgebra over $(\mathbb{K},\varsigma)$. Then the completion of the conjugate module is the conjugate module of the completion,</p>
+<p>$$
+\widehat{A^{\varsigma}} \;=\; \widehat{A}^{\varsigma},
+$$</p>
+<p>and the twisted action of $\mathbb{K}$ on $\widehat{A}$ is the unique continuous extension of the twisted action on $A$.</p>
+<p><em>Proof.</em> The conjugate module is $A$ with the twisted action, and the twisted action is isometric, $\lVert\lambda \cdot x\rVert = \lvert\varsigma(\lambda)\rvert\lVert x\rVert = \lvert\lambda\rvert\lVert x\rVert$, by <em>Banach Sesquialgebras</em>, §<em>The Isometric Involution</em>; so $A$ and $A^{\varsigma}$ are the same normed space with the same uniformity and the same Cauchy filters, and their completions are the same complete normed space. The scalar action of a normed space extends to its completion, by <em>Normed and Banach Spaces</em>, §<em>Quotients, Direct Sums and Completion</em>; the extension of the twisted action is the twisted action of the extension, because both are scalar multiplication and the scalar field is unchanged. $\square$</p>
+<p><strong>Remark.</strong> The identity $\widehat{A^{\varsigma}} = \widehat{A}^{\varsigma}$ is the reason the twisted structure does not complicate the completion: there is one completion and two actions on it, as there is one normed space and two actions before completing. The failure of the identity would occur for a base ring whose involution is not isometric, where the two twisted modules would have different uniformities; over $\mathbb{R}$ and $\mathbb{C}$ it holds always.</p>
+<h2 id="the-extension-of-the-product">The Extension of the Product</h2>
+<h3 id="uniform-continuity-on-bounded-sets">Uniform Continuity on Bounded Sets</h3>
+<p><strong>Proposition (uniform continuity on bounded sets).</strong> Let $A$ be a normed sesquialgebra. Then the product $A \times A^{\varsigma} \to A$ is uniformly continuous on sets of the form $B_1 \times B_2$ with $B_1, B_2$ bounded.</p>
+<p><em>Proof.</em> On the product $A \times A^{\varsigma}$ put the norm $\lVert(x,y)\rVert = \max(\lVert x\rVert,\lVert y\rVert)$. The estimate</p>
+<p>$$
+\lVert x_1y_1 - x_0y_0\rVert \leq \lVert x_1 - x_0\rVert\lVert y_1\rVert + \lVert x_0\rVert\lVert y_1 - y_0\rVert
+$$</p>
+<p>of <em>Banach Sesquialgebras</em>, §<em>The Submultiplicative Estimate</em> bounds the difference by a multiple of $\lVert(x_1,y_1) - (x_0,y_0)\rVert$ as long as $\lVert x_0\rVert$ and $\lVert y_1\rVert$ are bounded, which on $B_1 \times B_2$ they are. $\square$</p>
+<h3 id="the-product-on-the-completion">The Product on the Completion</h3>
+<p><strong>Theorem (the extended product).</strong> Let $A$ be a normed sesquialgebra over $(\mathbb{K},\varsigma)$. Then the product extends to a unique continuous product</p>
+<p>$$
+\widehat{A} \times \widehat{A}^{\varsigma} \longrightarrow \widehat{A}
+$$</p>
+<p>making $\widehat{A}$ a normed sesquialgebra over $(\mathbb{K},\varsigma)$; the extension is submultiplicative, $\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$, additive in each variable, $\mathbb{K}$-linear in the first and $\varsigma$-semilinear in the second.</p>
+<p><em>Proof.</em> A uniformly continuous map into a complete Hausdorff space extends uniquely to the completion, by the universal property of §<em>The Completion</em>, applied on bounded sets and glued because the completion is the union of the closures of the bounded sets; the extension is additive and satisfies the two scalar rules because those identities hold on the dense image $\iota(A) \times \iota(A^{\varsigma})$ and the operations are continuous, exactly as in the extension of an involution of <em>The Involution and the Completion of a Ring</em>, §<em>The Extension to the Completion</em>. Submultiplicativity passes to the limit: for $x = \lim\iota(x_n)$ and $y = \lim\iota(y_n)$,</p>
+<p>$$
+\lVert xy\rVert = \lim_n\lVert x_ny_n\rVert \leq \lim_n\lVert x_n\rVert\lVert y_n\rVert = \lVert x\rVert\lVert y\rVert ,
+$$</p>
+<p>continuity of the norm and of the product and the isometry of $\iota$. $\square$</p>
+<p><strong>Corollary (the completion is a Banach sesquialgebra).</strong> $\widehat{A}$ with the extended product and the norm of the completion is a Banach sesquialgebra over $(\mathbb{K},\varsigma)$, and $\iota : A \to \widehat{A}$ is an isometric morphism with dense image.</p>
+<p><em>Proof.</em> Completeness is that of the completion, and the axioms of <em>Banach Sesquialgebras</em>, §<em>The Definition</em> are those verified in the theorem; $\iota$ preserves the norm, the product and the actions by construction. $\square$</p>
+<p><strong>Remark (the product is not assumed associative).</strong> The extension theorem uses only the continuity of the object and not its associativity, so it applies to every object of the layer, associative or not. When the object carries the envelope of a sesquilinear product, the extension is the envelope of the extended product, and the associativity of the envelope passes to the limit by the same density argument.</p>
+<h2 id="the-extension-of-the-involution">The Extension of the Involution</h2>
+<h3 id="the-algebra-involution">The Algebra Involution</h3>
+<p><strong>Theorem (the extension of the algebra involution).</strong> Let $A$ be a normed algebra over $\mathbb{K}$ with a continuous $\varsigma$-semilinear involution $*$, and let $\widehat{A}$ be the completion of the underlying normed space. Then $*$ extends to a unique continuous $\varsigma$-semilinear involution $\widehat{*}$ of $\widehat{A}$, and the completion is a normed algebra with a continuous involution.</p>
+<p><em>Proof.</em> A continuous involution of a normed algebra is uniformly continuous for the additive uniformity, being a continuous homomorphism of the additive topological group; it therefore extends uniquely to the completion by the universal property, and the extension is additive, of order two and reverses products on the dense image, hence everywhere by continuity. This is the theorem of <em>The Involution and the Completion of a Ring</em>, §<em>The Extension to the Completion</em>, read on the additive group of the normed space; when the involution is continuous but not isometric it is made isometric by the equivalent norm $\max(\lVert x\rVert,\lVert x^{*}\rVert)$ of <em>The Continuity of the Involution</em>, §<em>The Normal Form of a Continuous Involution</em>, and the normal form commutes with the completion. $\square$</p>
+<h3 id="the-derived-operation">The Derived Operation</h3>
+<p><strong>Theorem (the derived operation of the completion is the extension).</strong> Let $A$ be a normed involutive algebra with a continuous isometric involution $*$, and let $\star$ be its derived operation $x \star y = xy^{*}$, so that $A$ is a normed sesquialgebra over $(\mathbb{K},\varsigma)$ by <em>Banach Sesquialgebras</em>, §<em>The Derived Operation of an Involutive Banach Algebra</em>. Then $\widehat{A}$ with the algebra product, the extended involution $\widehat{*}$ and the derived operation $\widehat{x} \star \widehat{y} = \widehat{x}\,\widehat{y}^{\widehat{*}}$ is a Banach sesquialgebra, and the derived operation of the completion is the extension of the derived operation of $A$; the two descriptions of $\widehat{A}$ agree.</p>
+<p><em>Proof.</em> The completion of a normed algebra is a Banach algebra with the extended product, by the completion paragraph of <em>Topological Algebras and Banach Algebras</em>, §<em>Normed Algebras</em>, and the extended involution is isometric because it is the continuous extension of an isometry; so the derived operation of the completion is defined and is submultiplicative. The derived operation $\star$ of $A$ is a continuous product, so it extends by §<em>The Product on the Completion</em>, and the extension agrees with $\widehat{x}\,\widehat{y}^{\widehat{*}}$ on the dense image, hence everywhere. $\square$</p>
+<p><strong>Remark (the involution is not part of the layer datum).</strong> The base involution $\varsigma$ is fixed and its extension is the identity on $\mathbb{K}$; the algebra involution $*$ is an extra structure that some sesquialgebras carry, and it is the involution that the article extends. The distinction is the one of <em>Topological Sesquialgebras</em>, §<em>The Conjugate Module</em>: the twisted action uses $\varsigma$ and is not the algebra involution.</p>
+<h2 id="the-universal-property-and-functoriality">The Universal Property and Functoriality</h2>
+<h3 id="the-universal-property">The Universal Property</h3>
+<p><strong>Theorem (the universal property).</strong> Let $A$ be a normed sesquialgebra over $(\mathbb{K},\varsigma)$ and let $T$ be a complete Hausdorff topological sesquialgebra over $(\mathbb{K},\varsigma)$. Then for every continuous morphism $g : A \to T$ there is a unique continuous morphism $h : \widehat{A} \to T$ with $h \circ \iota = g$.</p>
+<p><em>Proof.</em> The map $g$ is uniformly continuous for the additive uniformities, so it carries the Cauchy filter of $A$ to a Cauchy filter of $T$, which converges because $T$ is complete; the limit $h(x)$ is independent of the approximating net, and it is continuous, additive and multiplicative because those operations are continuous and compatible with limits, exactly as in the universal property of <em>The Completion Operator</em>, §<em>The Universal Property</em>. The scalar rules pass to the limit by the same density argument, so $h$ is a morphism of sesquialgebras over $(\mathbb{K},\varsigma)$. Uniqueness is the density of $\iota(A)$. $\square$</p>
+<p><strong>Corollary (the completion is a reflection).</strong> The operator $A \mapsto \widehat{A}$ with the unit $\iota$ is the reflection of the category of normed sesquialgebras over $(\mathbb{K},\varsigma)$ into the full subcategory of Banach sesquialgebras: it is left adjoint to the inclusion, and the adjunction is the bijection of the theorem.</p>
+<p><em>Proof.</em> The universal property is the statement that $h \mapsto h \circ \iota$ is a bijection from the continuous morphisms $\widehat{A} \to T$ to those $A \to T$, which is the defining property of a reflection. $\square$</p>
+<h3 id="idempotence">Idempotence</h3>
+<p><strong>Theorem (idempotence).</strong> Let $A$ be a normed sesquialgebra. Then the canonical morphism $\iota : \widehat{A} \to \widehat{\widehat{A}}$ is an isomorphism of sesquialgebras over $(\mathbb{K},\varsigma)$.</p>
+<p><em>Proof.</em> The completion $\widehat{A}$ is complete, so its own completion is isomorphic to it by the universal property applied to the identity; the same argument as the idempotence of <em>The Completion Operator</em>, §<em>Idempotence</em>, with the product and the twist carried along because they are continuous. $\square$</p>
+<h2 id="the-collapse-at-the-trivial-involution">The Collapse at the Trivial Involution</h2>
+<h3 id="the-collapse">The Collapse</h3>
+<p><strong>Theorem (the collapse).</strong> Let $A$ be a normed sesquialgebra over $(\mathbb{K},\varsigma)$ with $\varsigma = \mathrm{id}$. Then the product is bilinear, $A$ is a normed algebra, and $\widehat{A}$ is its Banach algebra completion in the sense of <em>Topological Algebras and Banach Algebras</em>, §<em>Normed Algebras</em>; conversely the completion of a normed algebra is the completion of the corresponding sesquialgebra over $(\mathbb{K},\mathrm{id})$.</p>
+<p><em>Proof.</em> With $\varsigma = \mathrm{id}$ the second scalar rule is the first, and the construction is the completion paragraph of the bilinear layer; the twisted action is the scalar action, so §<em>The Extension of the Twisted Action</em> is the extension of the scalar action of a normed space, and the extended product is the extended algebra product. $\square$</p>
+<h3 id="full-type">Full Type</h3>
+<p><strong>Remark (full type).</strong> As in <em>Banach Sesquialgebras</em>, §<em>The Objects of Full Type</em>, a normed sesquialgebra of full type with a nontrivial involution is neither associative nor commutative, and its completion inherits the property, because the collapse is algebraic and passes to the completion by the density argument of §<em>The Product on the Completion</em>. The completion of a full-type object is never a Banach algebra.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-finite-rank-and-the-compact-operators">The Finite-Rank and the Compact Operators</h3>
+<p><strong>Example (from finite rank to compact operators, verdict: the model completion).</strong> Let $A$ be the space of finite-rank operators on the separable Hilbert space with the operator norm, the adjoint involution and the derived operation $S \star T = ST^{*}$. Then $A$ is a normed sesquialgebra which is not complete, and its completion is the Banach sesquialgebra of compact operators with the same product and the adjoint, by the theorem of §<em>The Derived Operation</em>: the completion of the finite-rank operators is the compact operators, the adjoint extends because it is isometric, and the derived operation extends because it is continuous. The example is the standard one, and it is the completion named in <em>Banach Sesquialgebras</em>, §<em>The Completeness of the Model</em>.</p>
+<h3 id="the-sequences">The Sequences</h3>
+<p><strong>Example (from finite support to $\ell^{1}$, verdict: the derived operation of a sequence algebra).</strong> Let $A = c_{00}$ be the space of finitely supported complex sequences with the $\ell^{1}$-norm, the termwise conjugation and the product $(x \star y)_k = x_k\bar y_k$. Then</p>
+<p>$$
+\lVert x \star y\rVert_{1} = \sum_k\lvert x_k\rvert\lvert y_k\rvert \leq \lVert x\rVert_{1}\lVert y\rVert_{\infty} \leq \lVert x\rVert_{1}\lVert y\rVert_{1},
+$$</p>
+<p>so $A$ is a normed sesquialgebra over $(\mathbb{C},\varsigma)$ which is not complete, and its completion is $\ell^{1}$ with the extended termwise product and the extended termwise conjugation. The example is the discrete model of the completion, and the extended product is submultiplicative by the passage to the limit of §<em>The Product on the Completion</em>.</p>
+<h3 id="the-functions">The Functions</h3>
+<p><strong>Example (from polynomials to entire functions, verdict: an incomplete metrisable object and its completion).</strong> Let $A = \mathbb{C}[X]$ with the topology of uniform convergence on compact subsets of $\mathbb{C}$ of <em>Fréchet and Locally Convex Sesquialgebras</em>, §<em>The Boundaries</em>, the coefficientwise conjugation and the product $f \star g = f\bar g$. The object is a metrisable locally m-convex sesquialgebra which is not complete, and its completion is the Fréchet m-sesquialgebra $\mathcal{O}(\mathbb{C})$ of entire functions with the product $f \star g = f\bar g$; the case is the locally convex analogue of the theorem, where the completion is taken in the locally convex uniformity rather than in a norm. The example shows that the extension argument is not special to the normed case, the continuity of the product being what is used and not the norm.</p>
+<h2 id="summary">Summary</h2>
+<p>Let $A$ be a normed sesquialgebra over $(\mathbb{K},\varsigma)$ and let $\widehat{A}$ be the completion of the underlying normed space with canonical map $\iota$. Then $\widehat{A}$ is a <strong>Banach sesquialgebra</strong> over $(\mathbb{K},\varsigma)$: the product extends uniquely by uniform continuity on bounded sets, the extension is submultiplicative, additive in each variable, linear in the first slot and $\varsigma$-semilinear in the second, associative when $A$ is, and unital with the same unit; the <strong>twisted action</strong> extends, and the conjugate module commutes with completion, $\widehat{A^{\varsigma}} = \widehat{A}^{\varsigma}$; a continuous algebra involution extends uniquely, and when the sesquilinear product is the <strong>derived operation</strong> $x \star y = xy^{*}$, the derived operation of the completion is the extension of the derived operation of $A$; a continuous but non-isometric involution is made isometric by the normal form $\max(\lVert x\rVert,\lVert x^{*}\rVert)$, which commutes with the completion. The completion has the <strong>universal property</strong>: every continuous morphism into a complete Hausdorff sesquialgebra factors uniquely through $\iota$, so the completion is a <strong>reflection</strong> of the normed sesquialgebras into the Banach ones, it is a functor, and it is <strong>idempotent</strong>, $\widehat{\widehat{A}} \cong \widehat{A}$; the closure of zero is killed, so the completion depends only on the Hausdorff quotient. At $\varsigma = \mathrm{id}$ the theorem is the completion of a normed algebra and $\widehat{A}$ is its Banach algebra completion, and the completion of a full-type object with a nontrivial involution is never a Banach algebra. The examples are the finite-rank operators completing to the compact operators, the finitely supported sequences completing to $\ell^{1}$, and the polynomials completing to the entire functions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\widehat{A}$</td>
+<td>the completion of the normed sesquialgebra $A$</td>
+</tr>
+<tr>
+<td>$\iota : A \to \widehat{A}$</td>
+<td>the canonical isometric morphism with dense image</td>
+</tr>
+<tr>
+<td>$\widehat{A^{\varsigma}} = \widehat{A}^{\varsigma}$</td>
+<td>the conjugate module commutes with completion</td>
+</tr>
+<tr>
+<td>$\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$</td>
+<td>the submultiplicative estimate, preserved by the extension</td>
+</tr>
+<tr>
+<td>$\widehat{*}$</td>
+<td>the extended algebra involution</td>
+</tr>
+<tr>
+<td>$\widehat{x} \star \widehat{y} = \widehat{x}\,\widehat{y}^{\widehat{*}}$</td>
+<td>the derived operation of the completion</td>
+</tr>
+<tr>
+<td>$\max(\lVert x\rVert,\lVert x^{*}\rVert)$</td>
+<td>the normal form making a continuous involution isometric, commuting with completion</td>
+</tr>
+<tr>
+<td>$h \circ \iota = g$</td>
+<td>the universal property: continuous morphisms into complete objects factor</td>
+</tr>
+<tr>
+<td>$\widehat{\widehat{A}} \cong \widehat{A}$</td>
+<td>idempotence</td>
+</tr>
+<tr>
+<td>$\varsigma = \mathrm{id}$</td>
+<td>the collapse: the completion of a normed algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, second edition, 1990), for the completion of a normed space, its universal property and the reflection into the complete spaces.</li>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for the completion of a normed algebra and the extension of the product and the involution.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of *-Algebras, Volume I</em> (Cambridge University Press, 1994), for the extension of an involution to the completion and the normal form of a continuous involution.</li>
+<li>Nicolas Bourbaki, <em>General Topology, Chapters 1–4</em> (Springer, 1989), for the completion of a uniform space and the universal property that the article reads for the sesquilinear structure.</li>
+<li>Maria Fragoulopoulou, <em>Topological Algebras with Involution</em> (North-Holland, 2005), for the completion of locally convex and locally m-convex algebras with involution.</li>
+<li>Harald Upmeier, <em>Jordan Algebras in Analysis, Operator Theory, and Quantum Mechanics</em> (American Mathematical Society, 1987), for the completion of the ternary product and the $J^{*}$-algebra structures it defines.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Norm Defined by a Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-norm-defined-by-a-form"><strong>The Norm Defined by a Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A positive definite Hermitian form on a sesquialgebra is a length. The diagonal $h(x,x)$ of such a form lies in the fixed field $k = R^{\varsigma}$ of the base involution, it is positive for $x \neq 0$, and its square root is a <strong>norm</strong> on the module,</p>
+<p>$$
+\|x\| = h(x,x)^{1/2} .
+$$</p>
+<p>The norm is read from the diagonal alone, and with it the pair $(A,h)$ becomes a normed space on which the form is bounded: the <strong>Cauchy–Schwarz inequality</strong> $\lvert h(x,y)\rvert \leq \|x\|\|y\|$ is a consequence of the definiteness and not a hypothesis, the triangle inequality follows from it, and the form is continuous for the topology the norm defines. When in addition the norm is submultiplicative the object is a <strong>normed sesquialgebra with a form</strong>, complete exactly when it is a <strong>Banach sesquialgebra with a form</strong>, and the compatibility of <em>Topological Sesquialgebras with a Form</em>, §<em>The Compatibility</em>, then says that the one-sided multiplications come in adjoint pairs that the norm bounds.</p>
+<p>Three facts organise the article. <strong>The definite diagonal is a positive square.</strong> The diagonal takes its values in the fixed field $k$, and it is positive away from zero exactly when the form is positive definite; the square root exists there, and the first two norm axioms are read off the slot rules of the form, the scaling being $\|\lambda x\| = \lvert\lambda\rvert\|x\|$ with the <strong>modulus</strong> $\lvert\lambda\rvert = (\lambda\varsigma(\lambda))^{1/2}$ of the layer in place of the absolute value. <strong>The inequality is an equality for proportional elements.</strong> The Cauchy–Schwarz inequality is proved by translating one argument by a multiple of the other, with $\mu = h(x,y)/h(y,y)$, the translated diagonal being $\|x\|^{2} - \lvert h(x,y)\rvert^{2}/\|y\|^{2}$; the inequality is an equality exactly for proportional elements, and it is the sense in which a definite form is an inner product. <strong>The $\mathrm{C}^*$-condition is a further axiom.</strong> A norm that is already submultiplicative and satisfies $\|x^{*}x\| = \|x\|^{2}$ has an isometric involution, and at $\varsigma = \mathrm{id}$ the condition is the classical $\mathrm{C}^*$-identity; the condition is not automatic, the trace form on $M_{2}(\mathbb{C})$ with the Frobenius norm being submultiplicative and failing the identity at the identity matrix.</p>
+<p>The article defines the norm of a definite form and proves the norm axioms, proves the Cauchy–Schwarz inequality and its equality case, derives the triangle inequality and the boundedness of the form, treats the normed and the Banach sesquialgebra with the adjoint pairs and the $\mathrm{C}^*$-condition, and works the examples. Positivity is <em>Positivity and the Positive Cone of a Hermitian Form</em>, and the indefinite case, where no norm exists, is <em>The Indefinite Case and the Signature</em> and <em>The Fundamental Symmetry of the Form</em>. The general inequality for a continuous form that is not definite is <em>The Cauchy–Schwarz Inequality for Continuous Sesquilinear Maps</em>, the completion of the normed object <em>The Completion of a Sesquialgebra with a Form</em>, the adjoint of an operator <em>The Adjoint under a Hermitian Form</em>, the operators and their bounds <em>Bounded Operators on a Sesquialgebra</em> and <em>The Bounded Left and Right Multiplication Operators of a Sesquialgebra</em>, the normed object without a form <em>Topological Sesquialgebras</em>, <em>Normed and Banach Spaces</em> and <em>Banach Sesquialgebras</em>, the $\mathrm{C}^*$-identity and its consequences <em>The Involution and the Spectral Radius</em> and <em>Involutive Banach Algebras and the Gelfand–Naimark Theorem</em>, and the passage from an inner product to a Hilbert space and a representation the analysis layer, <em>Hilbert Spaces</em> and <em>Positive Definite Forms and the Order</em>.</p>
+<p>Throughout, the base is of one of the two classical kinds: either $R = k$ is an ordered field with $\varsigma = \mathrm{id}$ in which every nonnegative element is a square, or $R = k(i)$ with $i^{2} = -1$ and $\varsigma$ the conjugation over the ordered field $k$; in the second case every element is uniquely $a + ib$ with $a, b \in k$ and $\lambda\varsigma(\lambda) = a^{2} + b^{2} \geq 0$ with equality only for $\lambda = 0$. In either case $k$ is an ordered field in which every nonnegative element is a square, so the modulus $\lvert\lambda\rvert = (\lambda\varsigma(\lambda))^{1/2}$ and the norm below lie in $k$; the model is $R = \mathbb{R}$ with $\varsigma = \mathrm{id}$ and $R = \mathbb{C}$ with the conjugation, $k = \mathbb{R}$. The algebra $A$ is a topological sesquialgebra with a form in the sense of the entry, with continuous Hermitian form $h$ compatible with the product, involution $*$ and derived operation $x \star y = xy^{*}$, and $h$ is positive definite unless a statement says otherwise.</p>
+<h2 id="the-norm-of-a-definite-form">The Norm of a Definite Form</h2>
+<h3 id="the-definite-diagonal">The Definite Diagonal</h3>
+<p><strong>Definition.</strong> The form $h$ is <strong>positive definite</strong> when $h(x,x) > 0$ for every $x \neq 0$, and <strong>positive semi-definite</strong> when $h(x,x) \geq 0$ for every $x$; the definitions and the four kinds are <em>Positivity and the Positive Cone of a Hermitian Form</em>, §<em>The Four Kinds</em>. On a positive definite form the <strong>norm</strong> of an element is</p>
+<p>$$
+\|x\| = h(x,x)^{1/2} ,
+$$</p>
+<p>the square root being taken in the ordered field $k$ of the nonnegative diagonal.</p>
+<p><strong>Proposition (the diagonal is a fixed scalar and scales by the modulus square).</strong> For every $x$ the value $h(x,x)$ lies in $k = R^{\varsigma}$, and for every $\lambda \in R$,</p>
+<p>$$
+h(\lambda x, \lambda x) = \lambda\varsigma(\lambda)\,h(x,x) = \lvert\lambda\rvert^{2}\,h(x,x) .
+$$</p>
+<p><em>Proof.</em> The fixed field is the proposition (the diagonal) of the entry, §<em>The Definition</em>, and the scaling is the two slot rules, $h(\lambda x, \lambda x) = \lambda\varsigma(\lambda)h(x,x)$; the second form of the value is the definition of the modulus. $\square$</p>
+<p><strong>Remark.</strong> The scaling by $\lvert\lambda\rvert^{2}$ rather than by $\lambda^{2}$ is the place where the sesquilinear hypothesis enters the homogeneity of the norm, and at $\varsigma = \mathrm{id}$ the modulus of the layer is the absolute value of the ordered field $k$ and the two readings coincide. The fixed field is the natural field of scalars of the norm, since the norm is fixed by the base involution, and it is the field over which the norm's inequalities are read.</p>
+<h3 id="the-norm-and-its-axioms">The Norm and Its Axioms</h3>
+<p><strong>Theorem (the first two axioms).</strong> Let $h$ be positive definite. Then the map $\|\cdot\| : A \to k$ is nonnegative, it vanishes only at $0$, and it is absolutely homogeneous,</p>
+<p>$$
+\|x\| \geq 0, \qquad \|x\| = 0 \iff x = 0, \qquad \|\lambda x\| = \lvert\lambda\rvert\,\|x\| .
+$$</p>
+<p><em>Proof.</em> For the first two, $h(x,x) \geq 0$ with equality exactly for $x = 0$ is the definition of positive definiteness, and the square root is an order isomorphism of the nonnegative elements of $k$ onto themselves. For the third, the scaling proposition gives $\|\lambda x\|^{2} = \lvert\lambda\rvert^{2}\|x\|^{2}$, and both $\|\lambda x\|$ and $\lvert\lambda\rvert\|x\|$ are nonnegative elements of $k$ whose squares agree, so they agree. $\square$</p>
+<p><strong>Remark (the triangle inequality is the third axiom).</strong> It is proved in the next section from the Cauchy–Schwarz inequality, and it is the only axiom that uses the first slot's linearity against the second slot's semilinearity and not merely the diagonal.</p>
+<h3 id="the-definiteness-is-the-hypothesis">The Definiteness Is the Hypothesis</h3>
+<p><strong>Proposition.</strong> A positive semi-definite form that is not definite defines a <strong>seminorm</strong> and no norm: its null set $\{x : h(x,x) = 0\}$ is nonzero, and every element of it has norm zero.</p>
+<p><em>Proof.</em> The null set is the set where the norm vanishes, by the definition, and a positive semi-definite form is definite exactly when the null set is zero. $\square$</p>
+<p><strong>Example (a degenerate trace form).</strong> On $M_{2}(\mathbb{C})$ with the conjugate transpose and the form</p>
+<p>$$
+h(X,Y) = \operatorname{tr}(XE_{11}Y^{*}), \qquad E_{11} = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix},
+$$</p>
+<p>the diagonal is $h(X,X) = \lvert X_{11}\rvert^{2} + \lvert X_{21}\rvert^{2} \geq 0$, so the form is positive semi-definite, and it is not definite, since the radical of the entry, §<em>Full Type and Nondegeneracy</em>, is the nonzero left ideal of the matrices with first column zero. The element $E_{12}$ is nonzero and has norm zero: the norm of the form is a seminorm and not a norm, and after the descent to the quotient by the radical, which is <em>Positivity and the Positive Cone of a Hermitian Form</em>, §<em>The Definite Quotient</em>, it becomes the norm of the descended definite form.</p>
+<p><strong>Remark.</strong> The hypothesis of definiteness thus enters twice, and both times necessarily: it is what makes the norm vanish only at zero, and it is what makes the translated diagonal of the Cauchy–Schwarz proof vanish only for proportional elements, hence what makes the inequality sharp. An indefinite form has neither property, and its replacement for the norm is the fundamental symmetry of <em>The Fundamental Symmetry of the Form</em>.</p>
+<h2 id="the-cauchyschwarz-inequality">The Cauchy–Schwarz Inequality</h2>
+<h3 id="the-inequality">The Inequality</h3>
+<p><strong>Theorem (Cauchy–Schwarz).</strong> Let $h$ be positive definite. Then</p>
+<p>$$
+\lvert h(x,y)\rvert^{2} \leq \|x\|^{2}\|y\|^{2} \quad \text{in } k, \qquad \text{equivalently} \qquad \lvert h(x,y)\rvert \leq \|x\|\,\|y\| ,
+$$</p>
+<p>for all $x, y \in A$, with $\lvert\cdot\rvert$ the modulus of the base.</p>
+<p><em>Proof.</em> For $y = 0$ both sides vanish, since $h(x,0) = 0$ by the additivity in the second slot. Let $y \neq 0$, so that $h(y,y) > 0$, and put</p>
+<p>$$
+\mu = \frac{h(x,y)}{h(y,y)} \in R .
+$$</p>
+<p>The diagonal of the translated element is expanded by the two slot rules: $h(x - \mu y, x - \mu y) = h(x,x) - \mu\,h(y,x) - \varsigma(\mu)\,h(x,y) + \mu\varsigma(\mu)\,h(y,y)$. Now $h(y,x) = \varsigma(h(x,y))$ by the Hermitian property, and $h(y,y) \in k$ is fixed by $\varsigma$, so that the three terms $\mu\,h(y,x)$, $\varsigma(\mu)\,h(x,y)$ and $\mu\varsigma(\mu)\,h(y,y)$ all equal $h(x,y)\varsigma(h(x,y))/h(y,y)$, the first two entering with the sign $-$ and the third with the sign $+$; the three sum to $-h(x,y)\varsigma(h(x,y))/h(y,y)$, so that the translated diagonal is</p>
+<p>$$
+h(x - \mu y, x - \mu y) = h(x,x) - \frac{h(x,y)\,\varsigma(h(x,y))}{h(y,y)} = \|x\|^{2} - \frac{\lvert h(x,y)\rvert^{2}}{\|y\|^{2}} .
+$$</p>
+<p>The form is positive definite, so the left side is $\geq 0$, and multiplying the inequality by $\|y\|^{2} > 0$ in the ordered field $k$ gives the claim. $\square$</p>
+<p><strong>Remark (the shape of the proof).</strong> The proof is the two-variable form of the discriminant argument for a quadratic form of one variable: the diagonal of the translated element is a nonnegative quadratic in $\mu$ with the leading coefficient $\|y\|^{2}$, and the inequality says that its discriminant is $\leq 0$. The discriminant argument is available because the leading coefficient is a fixed positive scalar, that is because the diagonal lies in $k$; on a general sesquialgebra over a general involutive ring the argument is replaced by the continuous version of <em>The Cauchy–Schwarz Inequality for Continuous Sesquilinear Maps</em>, and here the definite case is the sharp one.</p>
+<h3 id="the-equality-case">The Equality Case</h3>
+<p><strong>Theorem.</strong> Let $h$ be positive definite. Then the Cauchy–Schwarz inequality is an equality exactly when $x$ and $y$ are linearly dependent.</p>
+<p><em>Proof.</em> If $y \neq 0$ the proof above shows that the equality holds exactly when $h(x - \mu y, x - \mu y) = 0$, which by definiteness is $x = \mu y$. If $y = 0$ both sides vanish and $x, y$ are dependent. Conversely, if $x = \mu y$ then $h(x,y) = \mu h(y,y)$ with $h(y,y) \in k$, so $\lvert h(x,y)\rvert = \lvert\mu\rvert h(y,y)$ and $\|x\| = \lvert\mu\rvert\|y\|$, and the product of the two is $\lvert h(x,y)\rvert$. $\square$</p>
+<p><strong>Corollary (the definite form is an inner product).</strong> The inequality says that the Hermitian form is an inner product in the norm it defines: it is definite, Hermitian and bounded with constant one, so it is a definite Hermitian pairing of the normed module with itself, and the equality case of the inequality is the degenerate case of two proportional vectors, which is the classical form of the equality of an inner product. The passage from that inner product to the Hilbert space and to the representation of the algebra is <em>Positive Definite Forms and the Order</em> and <em>Hilbert Spaces</em>.</p>
+<h3 id="the-boundedness-of-the-form">The Boundedness of the Form</h3>
+<p><strong>Corollary (the form is continuous).</strong> Let $h$ be positive definite. Then $\lvert h(x,y)\rvert \leq \|x\|\|y\|$, so $h$ is continuous for the norm topology, with the operator norm at most one; consequently the form of the layer is automatically continuous when it is definite and the topology is that of its norm.</p>
+<p><em>Proof.</em> The inequality is Cauchy–Schwarz, and it says that $h$ maps the product of the unit balls into the set of elements of modulus at most one, which is bounded; bilinearity then gives continuity. $\square$</p>
+<p><strong>Remark.</strong> The corollary is the reason the continuity that the layer imposes on its forms is not an extra hypothesis in the definite case: the norm of the form supplies it. It also shows that the form is a bounded pairing of the normed module with itself, which is the hypothesis under which the adjoint of an operator is defined in <em>The Adjoint under a Hermitian Form</em> and in <em>Bounded Operators on a Sesquialgebra</em>.</p>
+<h3 id="the-triangle-inequality">The Triangle Inequality</h3>
+<p><strong>Lemma (the real part is at most the modulus).</strong> For every $t \in R$ the inequality $t + \varsigma(t) \leq 2\lvert t\rvert$ holds in $k$.</p>
+<p><em>Proof.</em> In the base $k(i)$ write $t = a + ib$ with $a, b \in k$; then $t + \varsigma(t) = 2a$ and $\lvert t\rvert = (a^{2} + b^{2})^{1/2} \geq \lvert a\rvert \geq a$, since $b^{2} \geq 0$. In the base $k$ with $\varsigma = \mathrm{id}$ the inequality is $2t \leq 2\lvert t\rvert$, which is the definition of the absolute value of the ordered field. $\square$</p>
+<p><strong>Theorem (the triangle inequality).</strong> Let $h$ be positive definite. Then</p>
+<p>$$
+\|x + y\| \leq \|x\| + \|y\| .
+$$</p>
+<p><em>Proof.</em> Expanding the diagonal of a sum by the two slot rules,</p>
+<p>$$
+\|x+y\|^{2} = h(x,x) + h(x,y) + h(y,x) + h(y,y) = \|x\|^{2} + \bigl(h(x,y) + \varsigma(h(x,y))\bigr) + \|y\|^{2} ,
+$$</p>
+<p>the middle term is in $k$ because it is fixed by $\varsigma$, and the lemma bounds it by $2\lvert h(x,y)\rvert$, which Cauchy–Schwarz bounds by $2\|x\|\|y\|$. Hence $\|x+y\|^{2} \leq (\|x\| + \|y\|)^{2}$, and both sides are nonnegative elements of the ordered field $k$, so the square roots are ordered as claimed. $\square$</p>
+<p><strong>Corollary (the norm of the form).</strong> The three axioms together say that $\|\cdot\|$ is a norm on the module $A$: it is nonnegative and definite, absolutely homogeneous with the modulus of the base as the absolute value, and subadditive. The pair $(A,\|\cdot\|)$ is therefore a normed $R$-module in the sense of <em>Normed and Banach Spaces</em>, and its norm is determined by the diagonal of the form alone.</p>
+<h2 id="the-normed-and-the-banach-sesquialgebra">The Normed and the Banach Sesquialgebra</h2>
+<h3 id="the-submultiplicative-norm">The Submultiplicative Norm</h3>
+<p><strong>Definition.</strong> A topological sesquialgebra with a form is <strong>normed by its form</strong> when the form is positive definite, the topology is that of its norm, and the norm is <strong>submultiplicative</strong>,</p>
+<p>$$
+\|xy\| \leq \|x\|\,\|y\| \qquad \text{for all } x, y \in A .
+$$</p>
+<p>It is a <strong>Banach sesquialgebra with a form</strong> when in addition the normed module is complete.</p>
+<p><strong>Remark (submultiplicativity is an axiom).</strong> The inequality is not a consequence of the definiteness, and it is the one condition that ties the norm of the form to the product; it is the analogue for a form of the submultiplicativity that defines a normed algebra, and a form norm that satisfies it is an algebra norm. The object without the form, whose norm is submultiplicative by definition, is <em>Banach Sesquialgebras</em> and <em>Topological Algebras and Banach Algebras</em>; the completion of the normed object here is <em>The Completion of a Sesquialgebra with a Form</em>.</p>
+<h3 id="the-adjoint-pairs-and-the-operator-norm">The Adjoint Pairs and the Operator Norm</h3>
+<p><strong>Theorem (the multiplications are bounded and adjoint).</strong> Let the object be normed by its form. Then for every $x$ the left multiplications $m_{x} : z \mapsto xz$ and $m_{x^{*}} : z \mapsto x^{*}z$ are bounded operators of norm at most $\|x\|$ and $\|x^{*}\|$, and they are adjoint to one another for $h$:</p>
+<p>$$
+h(m_{x}z, w) = h(z, m_{x^{*}}w) \qquad \text{for all } z, w \in A .
+$$</p>
+<p><em>Proof.</em> The bound $\|m_{x}z\| = \|xz\| \leq \|x\|\|z\|$ is submultiplicativity, which gives the boundedness and the estimate on the operator norm; the adjointness is the compatibility $h(xz,w) = h(z,x^{*}w)$ of the entry, §<em>The Compatibility</em>. $\square$</p>
+<p><strong>Remark (the two norms need not agree).</strong> The operator norm of $m_{x}$ is at most $\|x\|$, and the two need not be equal: on $M_{2}(\mathbb{C})$ with the trace form the norm is the Frobenius norm of the example below, and for the identity matrix $m_{1}$ is the identity operator, of operator norm $1$, while $\|1\| = \sqrt{2}$. The agreement of the two norms is the statement that the left regular representation is isometric, and it is a further condition on the object, treated for the multiplications by <em>The Bounded Left and Right Multiplication Operators of a Sesquialgebra</em>.</p>
+<h3 id="the-math169-condition">The $\mathrm{C}^*$-Condition</h3>
+<p><strong>Definition.</strong> Say that the norm of the form satisfies the <strong>$\mathrm{C}^*$-condition</strong> when</p>
+<p>$$
+\|x^{*}x\| = \|x\|^{2} \qquad \text{for every } x \in A ,
+$$</p>
+<p>where $x^{*}x$ is the Hermitian element $\Psi(x,x)$ of <em>Hermitian Forms on a Sesquialgebra</em>, §<em>The Diagonal</em>, that is, the diagonal value at $(x,x)$ of the $A$-valued form $\Psi$ of the involution.</p>
+<p><strong>Theorem (the involution is isometric).</strong> Let the object be normed by its form and let the $\mathrm{C}^*$-condition hold. Then</p>
+<p>$$
+\|x^{*}\| = \|x\| \qquad \text{for every } x \in A ,
+$$</p>
+<p>so the involution is an isometry of the normed module and is continuous.</p>
+<p><em>Proof.</em> The $\mathrm{C}^*$-condition and submultiplicativity give $\|x\|^{2} = \|x^{*}x\| \leq \|x^{*}\|\|x\|$, hence $\|x\| \leq \|x^{*}\|$ when $x \neq 0$ and trivially otherwise; the same argument with $x^{*}$ in place of $x$ gives $\|x^{*}\| \leq \|x\|$, because $(x^{*})^{*} = x$. $\square$</p>
+<p><strong>Theorem (the diagonal computes the norm).</strong> Under the same hypotheses the norm is determined by the Hermitian squares,</p>
+<p>$$
+\|x\|^{2} = \|x^{*}x\| ,
+$$</p>
+<p>and the scalar reading of the same element is the diagonal of the form, $h(x,x) = \varphi(x^{*}x)$ for the functional $\varphi$ of <em>The Sesquilinear Form and the Conjugation</em>, §<em>The Reconstruction</em>, so that the form's diagonal, the Hermitian square and the norm are three readings of one datum.</p>
+<p><em>Proof.</em> The first identity is the condition, and the second is the reconstruction of the form from its functional at the pair $(x,x)$. $\square$</p>
+<p><strong>Remark (the condition is a restriction).</strong> The $\mathrm{C}^*$-condition is not automatic and not implied by submultiplicativity: on $M_{n}(\mathbb{C})$ with the trace form the norm is the Frobenius norm of the examples below, which is submultiplicative, and at the identity matrix</p>
+<p>$$
+\|1\|^{2} = n, \qquad \|1^{*}1\| = \|1\| = \sqrt{n} ,
+$$</p>
+<p>so the condition fails for $n \geq 2$; the equality holds at $1$ exactly when $n = 1$. The condition holds for the norm of the field example and, in general, it is the hypothesis under which the norm of the form is an algebra norm compatible with the involution, its classical instance being the $\mathrm{C}^*$-identity of <em>The Involution and the Spectral Radius</em> and <em>Involutive Banach Algebras and the Gelfand–Naimark Theorem</em>.</p>
+<h2 id="the-collapse-at-the-trivial-involution">The Collapse at the Trivial Involution</h2>
+<h3 id="the-bilinear-reading">The Bilinear Reading</h3>
+<p><strong>Theorem (the collapse).</strong> Let $\varsigma = \mathrm{id}$, so that $R = k$ and the form is symmetric and $k$-bilinear. Then the norm of the form is the norm of the symmetric positive definite form, $\|x\| = h(x,x)^{1/2}$, the scaling reads $\|\lambda x\| = \lvert\lambda\rvert\|x\|$ with the absolute value of the ordered field, the compatibility is the invariance $h(xy,z) = h(y,xz)$ whose left multiplications are self-adjoint, and the $\mathrm{C}^*$-condition is the classical $\mathrm{C}^*$-identity $\|x^{*}x\| = \|x\|^{2}$ of an involutive normed algebra.</p>
+<p><em>Proof.</em> Each statement is the corresponding statement above read at $\varsigma = \mathrm{id}$: the modulus is the absolute value, the form of the layer is bilinear by the collapse of <em>Topological Sesquialgebras with a Form</em>, §<em>The Collapse at the Trivial Involution</em>, and the identity is the one of the cited article on the $\mathrm{C}^*$-identity. $\square$</p>
+<p><strong>Remark (which statements are sesquilinear).</strong> The norm axioms and the inequality are the same in the two categories and are therefore not sesquilinear statements; the sesquilinear content of the article lies in the scaling $\|\lambda x\| = \lvert\lambda\rvert\|x\|$ with $\lvert\lambda\rvert^{2} = \lambda\varsigma(\lambda)$ rather than $\lambda^{2}$, and in the fact that the norm is read from the diagonal of a form that is Hermitian and not symmetric. At the collapse the object is a normed involutive algebra with a symmetric definite form, whose completed theory is <em>Involutive Banach Algebras and the Gelfand–Naimark Theorem</em>, and the bilinear model of the whole article is the Hilbert algebra of <em>Hilbert Algebras</em>, where the same form axiom is read with $\varsigma = \mathrm{id}$.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-field">The Field</h3>
+<p><strong>Example (the complex field).</strong> Let $R = k(i) = \mathbb{C}$, let $A = \mathbb{C}$ with the algebra product, $* = \varsigma$ the conjugation and $h(z,w) = z\varsigma(w) = z\overline{w}$, the form of <em>Topological Sesquialgebras with a Form</em>, §<em>The Examples of the Layer</em>. The form is Hermitian, compatible and positive definite, and the norm is $\|z\| = (z\overline{z})^{1/2} = \lvert z\rvert$, the modulus of the field: the norm of the form is the Euclidean norm of the plane, the Cauchy–Schwarz inequality is the identity $\lvert z\overline{w}\rvert = \lvert z\rvert\lvert w\rvert$, an equality for every pair because the two elements of a one-dimensional space are always proportional. The example is the collapsed case read at the level of the norm as well: with $k$ in place of $\mathbb{C}$ the same computation is the norm of the field and <em>Quadratic Forms over Algebras and Norms</em> records the norm of $\mathbb{C}$ among those of the number systems.</p>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p><strong>Example (the Frobenius norm).</strong> Let $A = M_{n}(\mathbb{C})$ with the conjugate transpose and the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, the model of the layer. The norm is</p>
+<p>$$
+\|X\| = \operatorname{tr}(XX^{*})^{1/2} = \Bigl(\sum_{i,j}\lvert X_{ij}\rvert^{2}\Bigr)^{1/2} ,
+$$</p>
+<p>the <strong>Frobenius norm</strong>, which is the Euclidean norm of the $n^{2}$ entries: it is submultiplicative, and the Gram matrix of the form in the basis of the matrix units is the identity, so the form is nondegenerate with $\|E_{ij}\| = 1$ on the units. Cauchy–Schwarz is the inequality $\lvert\operatorname{tr}(XY^{*})\rvert \leq \|X\|\|Y\|$, the equality case being proportionality, and the form is bounded with constant one. The norm is not the $\mathrm{C}^*$-norm: $\|1\|^{2} = n$ while $\|1^{*}1\| = \sqrt{n}$, so the $\mathrm{C}^*$-condition fails for $n \geq 2$, and for $n = 2$ the operator norm of $m_{1}$ is $1$ while $\|1\| = \sqrt{2}$. The example is the model of the article and the witness that the $\mathrm{C}^*$-condition is a restriction on the object and not a consequence of the definiteness.</p>
+<h3 id="the-biquaternion-trace-form">The Biquaternion Trace Form</h3>
+<p><strong>Example (the biquaternion algebra).</strong> On the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the Hermitian conjugation $* = {}^{\natural} \circ \bar{\cdot}$ the <strong>complex sesquilinear</strong> form of <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Four Pairings</em>,</p>
+<p>$$
+h(P,Q) = \operatorname{Sc}(PQ^{*}) = \sum_{\mu} P_{\mu}\,\varsigma(Q_{\mu}),
+$$</p>
+<p>is Hermitian, compatible, nondegenerate and positive definite, of signature $(8,0)$ over $\mathbb{R}$, and the norm it defines is the Euclidean norm of the eight real coordinates, the one of <em>The Euclidean Topology of the Biquaternion Algebra</em>: $\|Q\| = \operatorname{Sc}(QQ^{*})^{1/2} = (\sum_\mu \lvert Q_\mu\rvert^{2})^{1/2}$. The diagonal is the sum of the four squared moduli of the coefficients, and the compatibility is the adjoint rule $(L_{Q})^{\langle\cdot,\cdot\rangle_{*}} = L_{Q^{*}}$ of <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Forms in Comparison</em>; the other three pairings of that article — the two bilinear ones, of signature $(4,4)$, and the quaternion sesquilinear one, of signature $(2,6)$ — are not positive definite and define no norm of this article, and the last of them is not even compatible with the product. The example is the finite-dimensional instance in which the four pairings of the biquaternion algebra are compared, and the definite one among them is the norm.</p>
+<h3 id="the-collapsed-field">The Collapsed Field</h3>
+<p><strong>Example (the collapsed field).</strong> Let $R = k$ be an ordered field with $\varsigma = \mathrm{id}$, let $A = k$ with the algebra product and $h(x,y) = xy$. The form is symmetric, bilinear and positive definite, the norm is $\|x\| = \lvert x\rvert$ and the series of statements of the article is the classical one of the ordered field: the collapse of the section above, with the sesquilinear reading of the scaling reduced to the absolute value.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>positive definite</strong> Hermitian form is a <strong>norm</strong>: on the diagonal, $h(x,x) \in k = R^{\varsigma}$ and $h(x,x) > 0$ for $x \neq 0$, so the square root $\|x\| = h(x,x)^{1/2}$ lies in the ordered field of scalars, and the norm axioms hold — nondegeneracy and positivity from the definiteness, absolute homogeneity $\|\lambda x\| = \lvert\lambda\rvert\|x\|$ from the slot rules with the modulus $\lvert\lambda\rvert = (\lambda\varsigma(\lambda))^{1/2}$, and the triangle inequality from the Cauchy–Schwarz inequality. The <strong>Cauchy–Schwarz inequality</strong> $\lvert h(x,y)\rvert^{2} \leq \|x\|^{2}\|y\|^{2}$ is proved by the translated diagonal $h(x - \mu y, x - \mu y) = \|x\|^{2} - \lvert h(x,y)\rvert^{2}/\|y\|^{2}$ with $\mu = h(x,y)/h(y,y)$, and it is an equality exactly for linearly dependent elements; it makes the form a bounded pairing, continuous with constant one, and with the lemma $h(x,y) + \varsigma(h(x,y)) \leq 2\lvert h(x,y)\rvert$ it gives the <strong>triangle inequality</strong> $\|x+y\| \leq \|x\| + \|y\|$. The definite form is therefore an inner product on a normed module, and the two facts that the norm is submultiplicative and that it satisfies the <strong>$\mathrm{C}^*$-condition</strong> $\|x^{*}x\| = \|x\|^{2}$ are the axioms that make the object a <strong>normed</strong>, and when complete a <strong>Banach</strong>, sesquialgebra with a form: the first ties the norm to the product, the second ties it to the involution, and together they give the isometric involution $\|x^{*}\| = \|x\|$. Neither is automatic: the trace form on $M_{n}(\mathbb{C})$ has the submultiplicative Frobenius norm for which $\|1\|^{2} = n$ and $\|1^{*}1\| = \sqrt{n}$ differ for $n \geq 2$, and a semi-definite form that is not definite defines a seminorm whose null set is the radical, such as $\operatorname{tr}(XE_{11}Y^{*})$ on $M_{n}(\mathbb{C})$. At $\varsigma = \mathrm{id}$ the modulus is the absolute value, the form is symmetric and bilinear, the left multiplications are self-adjoint, and the $\mathrm{C}^*$-condition is the classical $\mathrm{C}^*$-identity: the article collapses to the normed involutive algebra of the bilinear layer, whose model is the Hilbert algebra. The examples are the complex field with the modulus, the matrix algebra with the Frobenius norm, the biquaternion algebra with its complex sesquilinear form and the Euclidean norm, and the collapsed field.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h(x,x)$</td>
+<td>the diagonal, in $k = R^{\varsigma}$; $> 0$ for $x \neq 0$ exactly when the form is positive definite</td>
+</tr>
+<tr>
+<td>$\|x\| = h(x,x)^{1/2}$</td>
+<td>the norm defined by a positive definite form, with values in the ordered field $k$</td>
+</tr>
+<tr>
+<td>$\lvert\lambda\rvert = (\lambda\varsigma(\lambda))^{1/2}$</td>
+<td>the modulus of the base, in $k$; the absolute value at $\varsigma = \mathrm{id}$</td>
+</tr>
+<tr>
+<td>$\|\lambda x\| = \lvert\lambda\rvert\|x\|$</td>
+<td>absolute homogeneity, the sesquilinear reading of the scaling</td>
+</tr>
+<tr>
+<td>$\lvert h(x,y)\rvert^{2} \leq \|x\|^{2}\|y\|^{2}$</td>
+<td>the Cauchy–Schwarz inequality, an equality exactly for dependent elements</td>
+</tr>
+<tr>
+<td>$h(x-\mu y, x-\mu y) = \|x\|^{2} - \lvert h(x,y)\rvert^{2}/\|y\|^{2}$</td>
+<td>the translated diagonal, $\mu = h(x,y)/h(y,y)$, with which the inequality is proved</td>
+</tr>
+<tr>
+<td>$\lvert h(x,y)\rvert \leq \|x\|\|y\|$</td>
+<td>the boundedness of the form, hence its continuity for the norm topology</td>
+</tr>
+<tr>
+<td>$\|x+y\| \leq \|x\| + \|y\|$</td>
+<td>the triangle inequality, from the inequality and $t + \varsigma(t) \leq 2\lvert t\rvert$</td>
+</tr>
+<tr>
+<td>$\|xy\| \leq \|x\|\|y\|$</td>
+<td>submultiplicativity, the axiom that makes the norm an algebra norm</td>
+</tr>
+<tr>
+<td>$h(xz,w) = h(z,x^{*}w)$</td>
+<td>the adjoint pair $m_{x}$, $m_{x^{*}}$, with operator norm at most $\|x\|$, $\|x^{*}\|$</td>
+</tr>
+<tr>
+<td>$\|x^{*}x\| = \|x\|^{2}$</td>
+<td>the $\mathrm{C}^*$-condition, which gives the isometric involution $\|x^{*}\| = \|x\|$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(XX^{*})^{1/2}$</td>
+<td>the Frobenius norm on $M_{n}(\mathbb{C})$, submultiplicative and not a $\mathrm{C}^*$-norm for $n \geq 2$</td>
+</tr>
+<tr>
+<td>$\varsigma = \mathrm{id}$</td>
+<td>the collapse: symmetric bilinear form, self-adjoint left multiplications, classical $\mathrm{C}^*$-identity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (2nd ed., Springer, 1990), for the Cauchy–Schwarz inequality, the triangle inequality and the passage from an inner product to a norm.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em> (Academic Press, 1983), for the $\mathrm{C}^*$-identity and its consequences for the norm.</li>
+<li>Gerard J. Murphy, <em>$\mathrm{C}^*$-Algebras and Operator Theory</em> (Academic Press, 1990), for the $\mathrm{C}^*$-condition, submultiplicativity and isometric involutions.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the positive involution of the base and the modulus of a field with involution.</li>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for the definite Hermitian forms over a field with an involution and their Gram matrices.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em>, 2nd ed. (Cambridge University Press, 2013), for the Frobenius norm, its submultiplicativity and the failure of the $\mathrm{C}^*$-identity for it.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

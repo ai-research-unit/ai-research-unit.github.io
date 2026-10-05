@@ -531,8 +531,8 @@ $$</p>
 <p>A difference at this level would <strong>not</strong> be an error at level 1 or level 2, and half the reason for separating the levels is to stop it being read as one: the biquaternion norm, the $ict$ metric and the sector structure are the same for either sign. The sign decides only which <em>real</em> Clifford form the generators generate — $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$ for $(+,-,-,-)$, $\mathrm{Cl}_{3,1} \cong M_4(\mathbb{R})$ for $(-,+,+,+)$ — and the even subalgebra, which is $\mathbb{B}$ itself, is the same for both, so no dictionary entry and no biquaternion identity depends on it.</p>
 <p>The order of authority is therefore one-way. The algebra and its level-1 and level-2 conventions are the framework; the gamma matrices and their metric are a translation of it, adopted per article for whatever the article is doing. The tool serves the framework and not the reverse: a Clifford computation is never a reason to change a biquaternion convention, and where the two appear to disagree, the disagreement is in the translation and is resolved by adjusting the generators, the adjoint, or the explicit factors of $i$ — never by altering the biquaternion norm, the $ict$ assignment, or the sector split.</p>
 <p>One consequence does reach the physics, and it is the only place where a level-3 choice is not free. The Dirac adjoint is $\bar{\psi} = \psi^\dagger\gamma^0$, so it carries $\gamma^0$ and changes with the convention. With the mostly-minus generators $\bar{\psi}\gamma^0\psi = +\psi^\dagger\psi$, the positive number density; with the mostly-plus generators the same expression gives $-\psi^\dagger\psi$. A spinor bilinear written as $\bar{\psi}\Gamma\psi$ therefore requires the adjoint to be defined consistently with the generators in use. No article in the series currently writes a spinor bilinear in the mostly-plus convention, so no statement in the series is in error on this count; the point is recorded so that one is not introduced. This sign is not part of the freedom that $\gamma^\mu \mapsto i\gamma^\mu$ leaves behind.</p>
-<h3 id="the-involutions-and-the-three-forms">The Involutions and the Three Forms</h3>
-<p>The algebra carries four conjugations, and on it there are three forms — not two, and not four. One rule ties the two lists together, and that rule is what lets the series say which form is the metric and which is the inner product without having to choose.</p>
+<h3 id="the-involutions-and-the-four-forms">The Involutions and the Four Forms</h3>
+<p>The algebra carries four conjugations, and on it there are four forms, one for each of them. One rule ties the two lists together, and that rule is what lets the series say which form is the metric and which is the inner product without having to choose.</p>
 <p><strong>The setting.</strong> $\mathbb{B}$ is a $\mathbb{C}$-algebra whose centre is $\mathbb{C}$, so every complex scalar is central, $\lambda\tilde{Q} = \tilde{Q}\lambda$ for all $\lambda \in \mathbb{C}$, which is the property that makes "$\mathbb{C}$-bilinear" well defined on $\mathbb{B}$; the scalar part $\mathrm{Sc}(\tilde{Q}) = \tilde{Q}_0$ is $\mathbb{C}$-linear. The centre is treated in <em>The Center Subspace $\mathbb{C}_{\mathbb{B}}$ as the Complex Time Sector</em>, and the forms of the algebra in <em>Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint</em> and its mathematical twin <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>, and, on the side of positivity, in <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
 <p><strong>The rule.</strong> For a conjugation $a$, put</p>
 <p>$$
@@ -593,9 +593,9 @@ $$</p>
 </tbody>
 </table></div>
 <p>The fourth column is what the two questions separate, and it is worth stating plainly because the two are easy to conflate. The bar multiplies and reverses nothing, $\overline{\tilde{P}\tilde{Q}} = \bar{\tilde{P}}\bar{\tilde{Q}}$, since it acts on the scalars and on nothing else: it is an order-two automorphism of the algebra over $\mathbb{R}$, $\mathbb{C}$-antilinear, and <strong>not</strong> an anti-automorphism. The natural sign and the star are the two genuine <strong>involutions of the ring</strong> in the strict sense, $(\tilde{P}\tilde{Q})^a = \tilde{Q}^a\tilde{P}^a$. Which of the four multiplies and which reverses is decided by which factor of the tensor product the map touches, the quaternion conjugation being the reversing one. The anti-Hermitian sign is neither: it reverses with a twist, $(\tilde{P}\tilde{Q})^{\flat} = -\tilde{Q}^{\flat}\tilde{P}^{\flat}$, so it is an involution of the underlying real vector space and nothing more. The four maps and the sign, their fixed and anti-fixed spaces, and the lattice they form are the subject of <em>The Biquaternion Involution Lattice: Hermitian, Anti-Hermitian and Reversal</em>.</p>
-<p><strong>The three forms.</strong> Reading the rule off the table gives exactly three forms,</p>
+<p><strong>The four forms.</strong> Reading the rule off the table gives exactly four forms,</p>
 <p>$$
-B(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural}) = \sum_\mu P_\mu Q_\mu, \qquad (\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}^{*}\tilde{Q}) = \sum_\mu \bar{P}_\mu Q_\mu, \qquad K(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\bar{\tilde{P}}\tilde{Q}) = \bar{P}_0Q_0 - \bar{P}_1Q_1 - \bar{P}_2Q_2 - \bar{P}_3Q_3,
+C(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}) = \sum_\mu \varepsilon_\mu P_\mu Q_\mu, \qquad B(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural}) = \sum_\mu P_\mu Q_\mu, \qquad (\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}^{*}\tilde{Q}) = \sum_\mu \bar{P}_\mu Q_\mu, \qquad K(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\bar{\tilde{P}}\tilde{Q}) = \bar{P}_0Q_0 - \bar{P}_1Q_1 - \bar{P}_2Q_2 - \bar{P}_3Q_3,
 $$</p>
 <p>each being the trace form of its own involution up to the factor of the trace convention, $2h_a(\tilde{P},\tilde{Q}) = \mathrm{Tr}(\tilde{P}^a\tilde{Q})$. Their types and their readings on the algebra and on the material sector are then:</p>
 <div class="table-scroll"><table>
@@ -609,6 +609,13 @@ $$</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>$C$, the complex bilinear form</td>
+<td>$\mathrm{id}$</td>
+<td>$\mathbb{C}$-<strong>bilinear</strong></td>
+<td>complex, Gram $\mathrm{E}$</td>
+<td>$-c^2t^2-x^2-y^2-z^2$, signature $(0,4)$</td>
+</tr>
 <tr>
 <td>$B$, the bilinear form</td>
 <td>${}^{\natural}$</td>
@@ -632,14 +639,19 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Three readings follow, and the names of the involutions must not be allowed to settle them in advance.</p>
+<p>Four readings follow, and the names of the involutions must not be allowed to settle them in advance.</p>
+<p><strong>The complex bilinear form, from the identity.</strong> $C(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}) = \sum_\mu \varepsilon_\mu P_\mu Q_\mu$ is the scalar part of the plain product, the form of the identity conjugation, and it is the fourth form that the older count of three passed over. Its Gram matrix in the complex basis is $\mathrm{E} = \operatorname{diag}(1,-1,-1,-1)$, its signature on $\mathbb{B}$ is $(4,4)$, and on the material sector it is the <strong>negative</strong> Euclidean square,</p>
+<p>$$
+C(\tilde{T},\tilde{T}) = -(c^2t^2+x^2+y^2+z^2), \qquad \tilde{T} = ict\,e_0 + \mathbf{x},
+$$</p>
+<p>of signature $(0,4)$. It is the form of the plain product, and it differs from the bilinear form $B$ by the sign of the vector part alone, $C(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q})$ against $B(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$.</p>
 <p><strong>The bilinear form, from the natural sign.</strong> $B$ is the bilinear form over $\mathbb{C}$ associated with the biquaternion norm, $B(\tilde{Q},\tilde{Q}) = N(\tilde{Q}) = \sum_\mu Q_\mu^2$ (<em>Biquaternion Norm and Invertibility</em>); it is level 1 of the metric above, and its Gram matrix in the complex basis $e_0,e_1,e_2,e_3$ is the identity. Its diagonal is generally complex, so it carries no positivity and is no analytic norm; its unit group is the set of elements of norm one, $\{\tilde{\Lambda} : B(\tilde{\Lambda},\tilde{\Lambda}) = 1\}$, which is $\mathrm{SL}(2,\mathbb{C})$ — the norm is the determinant of the matrix realization — the group the notation table calls the Lorentz group on $\mathbb{M}_-$. It is the form of symmetry and duality.</p>
 <p><strong>The Hermitian form, from the star.</strong> $(\tilde{P},\tilde{Q}) = \sum_\mu \bar{P}_\mu Q_\mu$ is the form the series calls the Hermitian form, the <em>different</em> object of the level-1 caution above. It is genuinely positive definite, real with $(\tilde{Q},\tilde{Q}) = \sum_\mu |Q_\mu|^2$ strictly positive for $\tilde{Q} \neq 0$, and it is the internal Hilbert-space structure that the Born rule and the unitary evolution use; its isometry group is $\{\tilde{U} : \tilde{U}^{*}\tilde{U} = e_0\} = U(2)$, the unitary slice of <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>. On the material sector it is the <strong>Euclidean</strong> square, $(\tilde{T},\tilde{T}) = c^2t^2+x^2+y^2+z^2$.</p>
 <p><strong>The Krein form, from the bar.</strong> $K(\tilde{P},\tilde{Q}) = \bar{P}_0Q_0 - \bar{P}_1Q_1 - \bar{P}_2Q_2 - \bar{P}_3Q_3$ is real on the diagonal and indefinite, of signature $(2,6)$ on $\mathbb{B}$. On the material sector it is the negative of the biquaternion norm,</p>
 <p>$$
 K(\tilde{T},\tilde{T}) = c^2t^2 - x^2 - y^2 - z^2 = -N(\tilde{T}), \qquad \tilde{T} = ict\,e_0 + \mathbf{x},
 $$</p>
-<p>so the three forms read on the material sector are the interval $N$ of level 2, its negative, and the Euclidean square. A space carrying a definite form and the form $K$ in this relation is a <strong>Krein space</strong>, and $K$ is accordingly the <strong>Krein form</strong> of the algebra: the definite form is the Hilbert structure, the Krein form the physical metric, and the passage between them is the fundamental symmetry below. The name is Mark Grigorievich Krein's (1907–1989), not Felix Klein's. The framework's own indefinite object at levels 1 and 2 is $N$; the third form is recorded here because it completes the classification, and because it is what the bar, and not the star, produces. Its isometry group is the Pin group, the companion of the unitary slice that is the group of the star form. The Witt classes of the three forms, their isometry groups, and their reading as Hermitian forms over the algebra with respect to their own involutions are <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>.</p>
+<p>so the four forms read on the material sector are the interval $N$ of level 2, its negative, the Euclidean square and its negative. A space carrying a definite form and the form $K$ in this relation is a <strong>Krein space</strong>, and $K$ is accordingly the <strong>Krein form</strong> of the algebra: the definite form is the Hilbert structure, the Krein form the physical metric, and the passage between them is the fundamental symmetry below. The name is Mark Grigorievich Krein's (1907–1989), not Felix Klein's. The framework's own indefinite object at levels 1 and 2 is $N$; the last two forms are recorded here because they complete the classification, and because they are what the plain product and the bar, and not the star, produce. Its isometry group is the Pin group, the companion of the unitary slice that is the group of the star form. The Witt classes of the four forms, their isometry groups, and their reading as Hermitian forms over the algebra with respect to their own involutions are <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>.</p>
 <p><strong>The fundamental symmetry.</strong> The two sesquilinear forms are related by the natural sign:</p>
 <p>$$
 K(\tilde{P},\tilde{Q}) = (\tilde{P}^{\natural},\tilde{Q}), \qquad J = {}^{\natural}, \qquad J^2 = \mathrm{id}, \qquad J \ \ \mathbb{C}\text{-linear}, \qquad (J\tilde{P},\tilde{Q}) = (\tilde{P},J\tilde{Q}),
@@ -718,8 +730,8 @@ $$</p>
 <li><strong>The axial current is what the mass breaks</strong>, with $\partial_\mu j_5^\mu = 2im\bar{\Psi}\gamma_5\Psi$, and it is checked on a superposition.</li>
 <li><strong>The mass is the off-diagonal coupling between the two central ideals</strong> of $\mathbb{B} \cong M_2(\mathbb{C})$ — the two chiralities, that is, the algebra's central splitting. It breaks exactly the symmetry that rotates those two ideals, and <em>not</em> the central $U(1)$ the algebra canonically carries.</li>
 </ol>
-<h2 id="the-real-structure-math609">The Real Structure $\flat$</h2>
-<h3 id="what-math610-is">What $\flat$ Is</h3>
+<h2 id="the-real-structure-math624">The Real Structure $\flat$</h2>
+<h3 id="what-math625-is">What $\flat$ Is</h3>
 <p>The map</p>
 <p>$$
 \tilde{\Psi}^\flat = -\tilde{\Psi}^{*} = -\overline{\tilde{\Psi}^{\natural}}
@@ -736,7 +748,7 @@ $$</li>
 <li>consequently its <strong>fixed space is the anti-Hermitian sector $\mathbb{M}_-$</strong>.</li>
 </ul>
 <p>The map $\flat$ is the algebra's <strong>real structure</strong>, and its shape is that of a charge-conjugation (Majorana) pairing: it relates a field to its own conjugate. The sign convention on the two sectors is what makes $\mathbb{M}_-$ the fixed space, and hence what makes $\mathbb{M}_-$ the material sector — the two conventions are the same convention seen twice.</p>
-<h3 id="what-math621-is-for">What $\flat$ Is For</h3>
+<h3 id="what-math636-is-for">What $\flat$ Is For</h3>
 <p>$\flat$ is retained in the framework for what it is genuinely for:</p>
 <ul>
 <li>conjugation, and the definition of the $\mathbb{M}_\pm$ split itself;</li>
@@ -744,7 +756,7 @@ $$</li>
 <li>the real-form question of Dirac versus Majorana fermions, which the companion articles on chirality, the neutrino and the CPT theorem develop.</li>
 </ul>
 <p>In every case the coupling built on $\flat$ pairs $\tilde{\Psi}$ with $\tilde{\Psi}^\flat$. Because $\flat$ is antilinear, such a coupling is <strong>not invariant under the continuous central phase</strong> — which is precisely the difference between a Majorana-type pairing and an ordinary Dirac mass, and precisely why $\flat$ cannot serve as the mass term of the Dirac equation.</p>
-<h3 id="what-math629-is-not">What $\flat$ Is Not</h3>
+<h3 id="what-math644-is-not">What $\flat$ Is Not</h3>
 <p>$\flat$ is <strong>not</strong> the mass. The two roles were conflated in the retired form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$, and separating them is the content of the mass-term convention above. A reader who finds $\flat$ in an article should expect conjugation, a Majorana pairing, a bilinear, or the sector split — never a Dirac mass.</p>
 <h2 id="summary">Summary</h2>
 <p>The conventions of the series fall into two groups.</p>

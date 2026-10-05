@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gram Matrix of the Complex Bilinear Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-gram-matrix-of-the-complex-bilinear-form"><strong>The Gram Matrix of the Complex Bilinear Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complex bilinear form</p>
+<p>$$
+\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu,\qquad \varepsilon=(1,-1,-1,-1),
+$$</p>
+<p>of <em>The Complex Bilinear Form on the Biquaternion Algebra</em> is read from a single matrix once a basis is fixed. In the coefficient basis $(e_0,e_1,e_2,e_3)$ its Gram matrix is the <strong>sign matrix</strong></p>
+<p>$$
+D=\operatorname{diag}(1,-1,-1,-1),
+$$</p>
+<p>of determinant $-1$; on the eight real basis elements $(e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3)$ the realified matrix is the block-diagonal $\operatorname{diag}(D,-D)$, of signature $(4,4)$. This article records the two matrices, the six restriction matrices, and the comparison with the quaternion bilinear form, whose matrix is $\mathrm{I}_4$.</p>
+<h2 id="the-gram-matrix-in-the-coefficient-basis">The Gram Matrix in the Coefficient Basis</h2>
+<p><strong>Definition.</strong> The Gram matrix of the form in the coefficient basis is</p>
+<p>$$
+G_{ij}=\langle e_i,e_j\rangle=\varepsilon_i\,\delta_{ij},
+\qquad
+G=\operatorname{diag}(1,-1,-1,-1)=D.
+$$</p>
+<p>Its properties are read off at once. It is symmetric, $D^{\mathsf T}=D$, as a bilinear form must be; it is non-degenerate, $\det D=-1\neq0$; and its inertia is $(1,3)$, so the form is indefinite. The diagonal of the form is the quadratic form</p>
+<p>$$
+\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^2=Q_0^2-Q_1^2-Q_2^2-Q_3^2,
+$$</p>
+<p>and the form is its polarisation. The centre spans the positive direction and the vector subspace the negative one, which is the whole of the inertia.</p>
+<h2 id="the-realified-gram-matrix">The Realified Gram Matrix</h2>
+<p>Write a biquaternion on the eight real basis elements as $\tilde Q=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$, with $q_\mu,q'_\mu\in\mathbb R$. Because the form is $\mathbb C$-bilinear, its values on the real basis are</p>
+<p>$$
+\langle e_\mu,e_\nu\rangle=\varepsilon_\mu\delta_{\mu\nu},\qquad
+\langle e_\mu,ie_\nu\rangle=i\,\varepsilon_\mu\delta_{\mu\nu},\qquad
+\langle ie_\mu,ie_\nu\rangle=-\varepsilon_\mu\delta_{\mu\nu}.
+$$</p>
+<p>The middle entries are purely imaginary, so they do not contribute to the realified symmetric form, whose Gram matrix is therefore block-diagonal,</p>
+<p>$$
+\operatorname{diag}(D,-D)=\operatorname{diag}(1,-1,-1,-1,\,-1,1,1,1),
+$$</p>
+<p>of signature $(4,4)$. The sign flip between the two blocks is the signature of the complex structure: a complex bilinear form reads $+1$ on a real direction and $-1$ on the same direction multiplied by $i$.</p>
+<h2 id="the-restriction-matrices">The Restriction Matrices</h2>
+<p>On each of the six distinguished real subspaces the form restricts to a real symmetric bilinear form, and its Gram matrix in the natural real basis of the subspace is again diagonal:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Real basis</th>
+<th>Gram matrix</th>
+<th>Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Centre $\mathbb C_{\mathbb B}$</td>
+<td>$e_0,\,ie_0$</td>
+<td>$\operatorname{diag}(1,-1)$</td>
+<td>$(1,1)$</td>
+</tr>
+<tr>
+<td>Vector $\mathrm{Vect}(\mathbb B)$</td>
+<td>$e_k,\,ie_k$</td>
+<td>$\operatorname{diag}(-1,-1,-1,1,1,1)$</td>
+<td>$(3,3)$</td>
+</tr>
+<tr>
+<td>Quaternion $\mathbb H_{\mathbb B}$</td>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>$\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>Anti-quaternion $i\mathbb H_{\mathbb B}$</td>
+<td>$ie_0,ie_1,ie_2,ie_3$</td>
+<td>$\operatorname{diag}(-1,1,1,1)$</td>
+<td>$(3,1)$</td>
+</tr>
+<tr>
+<td>Hermitian $\mathbb M_+$</td>
+<td>$e_0,ie_1,ie_2,ie_3$</td>
+<td>$\operatorname{diag}(1,1,1,1)$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>Anti-Hermitian $\mathbb M_-$</td>
+<td>$ie_0,e_1,e_2,e_3$</td>
+<td>$\operatorname{diag}(-1,-1,-1,-1)$</td>
+<td>$(0,4)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two complex subspaces carry the indefinite pair $(1,1)$ and $(3,3)$; the four real forms carry $(1,3)$, $(3,1)$, $(4,0)$ and $(0,4)$. The Hermitian subspace is the positive definite one and the anti-Hermitian the negative definite one, so no subspace of dimension greater than four is definite. The table is recomputed in <em>The Six Subspaces under the Complex Bilinear Form</em>, where the same numbers are read subspace by subspace.</p>
+<h2 id="comparison-with-the-quaternion-bilinear-form">Comparison with the Quaternion Bilinear Form</h2>
+<p>The quaternion bilinear form $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$ has Gram matrix $\mathrm I_4$ in the same coefficient basis, so the two bilinear forms differ by the sign vector $\varepsilon$ and by nothing else,</p>
+<p>$$
+\langle\tilde P,\tilde Q\rangle=\sum_\mu\varepsilon_\mu P_\mu Q_\mu,\qquad
+\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu .
+$$</p>
+<p>Both realify to signature $(4,4)$, but on the six subspaces they disagree wherever the sign matters: the quaternion subspace carries $(1,3)$ for the plain form against $(4,0)$ for the $\natural$-form, and the Hermitian subspace carries $(4,0)$ against $(1,3)$. The two matrices $D$ and $\mathrm I_4$ are the whole of the distinction, and the tabulation of the four forms together is <em>The Gram Matrices of the Four Forms</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The complex bilinear form has Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$, of determinant $-1$ and inertia $(1,3)$, and realified Gram matrix $\operatorname{diag}(D,-D)$, of signature $(4,4)$. Its restrictions carry signatures $(1,1)$, $(3,3)$, $(1,3)$, $(3,1)$, $(4,0)$ and $(0,4)$ on the centre, the vector, the quaternion, the anti-quaternion, the Hermitian and the anti-Hermitian subspaces. It differs from the quaternion bilinear form by the sign vector $\varepsilon$ alone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>Gram matrix of the complex bilinear form in the coefficient basis</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(D,-D)$</td>
+<td>its realified Gram matrix, of signature $(4,4)$</td>
+</tr>
+<tr>
+<td>$\varepsilon=(1,-1,-1,-1)$</td>
+<td>the sign vector, the whole difference from the $\natural$-bilinear form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Complex Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-complex-bilinear-form-on-the-biquaternion-algebra.md</code>), for the form itself</li>
+<li><em>The Gram Matrices of the Four Forms</em> (<code>articles_maths/the-gram-matrices-of-the-four-forms.md</code>), for the four matrices together</li>
+<li><em>The Quaternion Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md</code>), for the companion matrix $\mathrm I_4$</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

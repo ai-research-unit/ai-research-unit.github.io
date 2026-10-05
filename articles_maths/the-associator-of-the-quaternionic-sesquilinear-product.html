@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Associator of the Quaternionic Sesquilinear Product — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-associator-of-the-quaternionic-sesquilinear-product"><strong>The Associator of the Quaternionic Sesquilinear Product</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four products on its underlying $\mathbb{C}$-vector space (<em>The Four Biquaternion Complex Products</em>), and the fourth of them,</p>
+<p>$$
+\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
+$$</p>
+<p>is the subject of this group. The rule and the scalar–vector form are <em>The Four Biquaternion Complex Products</em> §<em>The Complex Quaternionic Sesquilinear Product</em>; the sesquialgebra it defines, its multiplication table and its axioms are <em>Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$</em>. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, and $N(\tilde P) = \tilde P\tilde P^{\natural} = \sum_\mu P_\mu^{2}$ is the norm form.</p>
+<p>The subject of this article is the <strong>associator</strong> of the multiplication,</p>
+<p>$$
+[\tilde P,\tilde Q,\tilde R] = (\tilde P \star \tilde Q) \star \tilde R - \tilde P \star (\tilde Q \star \tilde R) ,
+$$</p>
+<p>the obstruction to associativity and the residue of the group's first negative statement. The associator of the fourth product is not the associator of an algebra, and it is not the associator of the derived operation either: it is the difference of two <em>plain</em> products of three factors, one for each grouping, and each grouping carries one of the conjugations in a different slot. The article establishes three things. First, the closed form</p>
+<p>$$
+[\tilde P,\tilde Q,\tilde R] = \overline{\tilde Q}\,\tilde P\,\tilde R^{*} - \tilde P^{\natural}\,\tilde R\,\overline{\tilde Q} ,
+$$</p>
+<p>the two terms being the two groupings in the notation of the plain product. Second, the <strong>parities</strong>: the associator is $\mathbb{C}$-linear in the first variable, $\varsigma$-semilinear in the second, and neither in the third, so the associator is not a trilinear form on $\mathbb{B}^{3}$ but a trilinear form on two different mixed modules, in the sense of <em>The Sesquilinear Associator and the Ternary Product</em>. Third, the failure of the product is total: it is not associative, not flexible and not power-associative, and the degree-three identity fails as well, so the product sits at the bottom of the property ladder of <em>Non-Associative Algebras and the Property Ladder</em> and not at some intermediate rung.</p>
+<p>The article owns the associator, its parities and the failure of the weaker laws. It cites the general associator formula and the parity theorem to <em>The Sesquilinear Associator and the Ternary Product</em>; it cites the two propositions for the fourth product to <em>Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$</em> §<em>The Associator</em> and §<em>The Flexibility and the Degree-Three Identity</em>; and it does not treat the ternary product, which is <em>The Ternary Product and the Failure of the Jordan Triple Identity</em>, nor the operators, which are <em>The Left and Right Multiplications of the Quaternionic Sesquilinear Product</em>.</p>
+<h2 id="the-associator">The Associator</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> The <strong>associator</strong> of the multiplication is the three-variable map</p>
+<p>$$
+[\tilde P,\tilde Q,\tilde R] = (\tilde P \star \tilde Q) \star \tilde R - \tilde P \star (\tilde Q \star \tilde R) .
+$$</p>
+<p>The product is <strong>associative</strong> when the associator vanishes identically; the multiplication of this group is not.</p>
+<p>The defining difference is additivity in the three variables and nothing else, so the associator is additive in each variable; its parity in each variable is the subject of the section after next.</p>
+<h3 id="the-formula">The Formula</h3>
+<p><strong>Theorem (the closed form).</strong> For all biquaternions $\tilde P, \tilde Q, \tilde R$,</p>
+<p>$$
+[\tilde P,\tilde Q,\tilde R] = \overline{\tilde Q}\,\tilde P\,\tilde R^{*} - \tilde P^{\natural}\,\tilde R\,\overline{\tilde Q} ,
+$$</p>
+<p>where the products on the right are the plain products of the algebra.</p>
+<p><strong>Proof.</strong> For the left grouping, expanding the rule twice and using the anti-multiplicativity of ${}^{\natural}$ and $*$, together with $(\tilde X^{*})^{\natural} = \overline{\tilde X}$ and $(\tilde X^{\natural})^{*} = \overline{\tilde X}$ read on the coordinates,</p>
+<p>$$
+(\tilde P \star \tilde Q) \star \tilde R = (\tilde P^{\natural}\tilde Q^{*})^{\natural}\tilde R^{*} = (\tilde Q^{*})^{\natural}(\tilde P^{\natural})^{\natural}\tilde R^{*} = \overline{\tilde Q}\,\tilde P\,\tilde R^{*} .
+$$</p>
+<p>For the right grouping, $(\tilde Q^{\natural}\tilde R^{*})^{*} = (\tilde R^{*})^{*}(\tilde Q^{\natural})^{*} = \tilde R\,\overline{\tilde Q}$, so</p>
+<p>$$
+\tilde P \star (\tilde Q \star \tilde R) = \tilde P^{\natural}(\tilde Q \star \tilde R)^{*} = \tilde P^{\natural}\tilde R\,\overline{\tilde Q} .
+$$</p>
+<p>Subtracting the second display from the first gives the formula. $\square$</p>
+<p><strong>Remark.</strong> The formula is the exact analogue of the associator of the derived operation, and it is not the same formula: the derived operation $x \star y = xy^{*}$ has associator $x((zy)^{*} - zy^{*})$, with the first factor untouched, while the formula above carries ${}^{\natural}$ on $\tilde P$ in the second term and the plain products $\tilde P\tilde R^{*}$ and $\tilde R\overline{\tilde Q}$ in the two terms. The two terms are the two groupings, and the difference of groupings is the whole content of non-associativity.</p>
+<h3 id="the-two-groupings-and-their-modules">The Two Groupings and Their Modules</h3>
+<p>Each term of the associator is a plain product of three factors, and each factor is one of the element, its two conjugations and its plain form; the two terms are the two <strong>groupings</strong>, and the two groupings are sesquilinear in different slots.</p>
+<p><strong>Proposition (the modules).</strong> Write $\mathbb{B}^{\varsigma}$ for the module $\mathbb{B}$ with the scalars twisted by the conjugation $\varsigma(z) = \bar z$; a map is $\mathbb{C}$-linear on $\mathbb{B}^{\varsigma}$ when it is conjugate-linear on $\mathbb{B}$.</p>
+<p>(i) The left grouping $(\tilde P,\tilde Q,\tilde R) \mapsto (\tilde P \star \tilde Q) \star \tilde R = \overline{\tilde Q}\,\tilde P\,\tilde R^{*}$ is $\mathbb{C}$-linear on $\mathbb{B} \times \mathbb{B}^{\varsigma} \times \mathbb{B}^{\varsigma}$.</p>
+<p>(ii) The right grouping $(\tilde P,\tilde Q,\tilde R) \mapsto \tilde P \star (\tilde Q \star \tilde R) = \tilde P^{\natural}\,\tilde R\,\overline{\tilde Q}$ is $\mathbb{C}$-linear on $\mathbb{B} \times \mathbb{B}^{\varsigma} \times \mathbb{B}$.</p>
+<p><strong>Proof.</strong> The products on the right are plain products, which are $\mathbb{C}$-bilinear; the parities come from the conjugations in the factors. In the left grouping the factor $\overline{\tilde Q}$ is conjugate-linear in $\tilde Q$ and the factor $\tilde R^{*}$ is conjugate-linear in $\tilde R$; in the right grouping the factor $\overline{\tilde Q}$ is conjugate-linear in $\tilde Q$ and the factor $\tilde R$ is linear in $\tilde R$. The first factor is $\tilde P$ in the left grouping and $\tilde P^{\natural}$ in the right, $\mathbb{C}$-linear in $\tilde P$ in both cases. $\square$</p>
+<p><strong>Remark.</strong> The two groupings are therefore sesquilinear in the second slot and differ in the third: the left grouping is conjugate-linear and the right grouping linear there. This is the reason the associator is not homogeneous in the third variable, and it is the general situation of <em>The Sesquilinear Associator and the Ternary Product</em> specialized to the fourth product.</p>
+<h2 id="the-parities">The Parities</h2>
+<h3 id="the-first-variable">The First Variable</h3>
+<p><strong>Proposition.</strong> The associator is $\mathbb{C}$-linear in the first variable,</p>
+<p>$$
+[\lambda\tilde P,\tilde Q,\tilde R] = \lambda[\tilde P,\tilde Q,\tilde R] .
+$$</p>
+<p><strong>Proof.</strong> Both groupings are $\mathbb{C}$-linear in the first variable by the proposition above, and a difference of two linear maps is linear. $\square$</p>
+<h3 id="the-second-variable">The Second Variable</h3>
+<p><strong>Proposition.</strong> The associator is conjugate-linear in the second variable,</p>
+<p>$$
+[\tilde P,\lambda\tilde Q,\tilde R] = \bar\lambda\,[\tilde P,\tilde Q,\tilde R] .
+$$</p>
+<p><strong>Proof.</strong> The plain product is $\mathbb{C}$-bilinear and the conjugation $\overline{\cdot}$ is conjugate-linear, so $\overline{\lambda\tilde Q} = \bar\lambda\,\overline{\tilde Q}$ and both groupings are conjugate-linear in the second variable. $\square$</p>
+<h3 id="the-third-variable-neither">The Third Variable: Neither</h3>
+<p><strong>Proposition.</strong> The associator is neither $\mathbb{C}$-linear nor conjugate-linear in the third variable. For a non-real $\lambda$,</p>
+<p>$$
+[\tilde P,\tilde Q,\lambda\tilde R] \notin \lambda[\tilde P,\tilde Q,\tilde R] \cup \bar\lambda[\tilde P,\tilde Q,\tilde R]
+$$</p>
+<p>for a generic triple.</p>
+<p><strong>Proof.</strong> The two groupings have opposite parities in the third variable: the left grouping is conjugate-linear, $(\lambda\tilde R)^{*} = \bar\lambda\tilde R^{*}$, and the right grouping is linear, since its third factor is $\tilde R$ itself, $\tilde P^{\natural}(\lambda\tilde R)\overline{\tilde Q} = \lambda\,\tilde P^{\natural}\tilde R\overline{\tilde Q}$. The associator is the difference of a conjugate-linear function and a linear one, which is homothetic to neither, and the generic failure is read on a worked example. $\square$</p>
+<p><strong>Example.</strong> For $\tilde P = \tilde Q = e_0$ the associator is the difference of the two groupings $\tilde R^{*}$ and $\tilde R$, that is $[\tilde P,\tilde Q,\tilde R] = \tilde R^{*} - \tilde R$. At $\tilde R = e_1 + ie_2$, whose star is $-e_1 + ie_2$, the value is $-2e_1$. At $\tilde R$ replaced by $i\tilde R = ie_1 - e_2$, whose star is $ie_1 + e_2$, the value is $2e_2$. The number $2e_2$ is neither $i(-2e_1) = -2ie_1$ nor $-i(-2e_1) = 2ie_1$, so the associator at this triple is homothetic to the first value by neither $\lambda$ nor $\bar\lambda$ for $\lambda = i$, which is the generic inhomogeneity in the third variable.</p>
+<h3 id="additivity">Additivity</h3>
+<p><strong>Proposition.</strong> The associator is additive in each variable.</p>
+<p><strong>Proof.</strong> Both groupings are additive in each variable, being compositions of the additive multiplications and conjugations, and the difference of two additive maps is additive. $\square$</p>
+<p><strong>Remark.</strong> Linearity in the first variable, conjugate-linearity in the second, additivity in the third and inhomogeneity in the third: these are the four statements that locate the associator in the general theory. They are the parity theorem of <em>The Sesquilinear Associator and the Ternary Product</em>, read for the fourth product, and they are what the later article <em>The Ternary Product and the Failure of the Jordan Triple Identity</em> builds on.</p>
+<h2 id="the-failure-of-the-weaker-laws">The Failure of the Weaker Laws</h2>
+<h3 id="the-product-is-not-associative">The Product Is Not Associative</h3>
+<p><strong>Theorem.</strong> The multiplication is not associative.</p>
+<p><strong>Proof.</strong> The associator is nonzero at some triple. At $(\tilde P,\tilde Q,\tilde R) = (e_0,e_0,e_1)$ the two groupings are</p>
+<p>$$
+(e_0 \star e_0) \star e_1 = e_0 \star e_1 = -e_1 , \qquad e_0 \star (e_0 \star e_1) = e_0 \star (-e_1) = e_1 ,
+$$</p>
+<p>so $[e_0,e_0,e_1] = -e_1 - e_1 = -2e_1 \neq 0$. $\square$</p>
+<p><strong>Remark.</strong> The witness uses only basis elements, and it is the smallest possible in the basis: the associator is nonzero as soon as the two groupings are told apart, and here the second argument is $e_0$, so that $\overline{\tilde Q} = e_0$ and the plain products are $e_1$ and $-e_1$.</p>
+<h3 id="the-product-is-not-flexible">The Product Is Not Flexible</h3>
+<p><strong>Definition.</strong> The product is <strong>flexible</strong> when $(\tilde P \star \tilde Q) \star \tilde P = \tilde P \star (\tilde Q \star \tilde P)$ for all $\tilde P, \tilde Q$. From the associator this is the identity $[\tilde P,\tilde Q,\tilde P] = 0$.</p>
+<p><strong>Theorem.</strong> The multiplication is not flexible.</p>
+<p><strong>Proof.</strong> At $\tilde P = ie_0$ and $\tilde Q = e_0$ the two sides are</p>
+<p>$$
+(ie_0 \star e_0) \star ie_0 = ie_0 \star ie_0 = (ie_0)^{\natural}(ie_0)^{*} = (ie_0)(-ie_0) = e_0 ,
+$$</p>
+<p>$$
+ie_0 \star (e_0 \star ie_0) = ie_0 \star (-ie_0) = (ie_0)^{\natural}(-ie_0)^{*} = (ie_0)(ie_0)^{\natural} = (ie_0)(ie_0) = -e_0 ,
+$$</p>
+<p>so $[ie_0,e_0,ie_0] = 2e_0 \neq 0$. $\square$</p>
+<p><strong>Remark.</strong> The flexibility law is the weakest of the classical laws of a non-associative algebra and the one that would be needed to make the powers of an element well defined; it fails here, and it fails on a central element, which is the smallest possible failure. The witness is the one the group article records.</p>
+<h3 id="the-product-is-not-power-associative">The Product Is Not Power-Associative</h3>
+<p><strong>Definition.</strong> The product is <strong>power-associative</strong> when every element generates an associative subalgebra, equivalently when $x^{p}x^{q} = x^{p+q}$ for all $p, q$; the weakest identity of the family is <strong>third-power associativity</strong>, $(\tilde P \star \tilde P) \star \tilde P = \tilde P \star (\tilde P \star \tilde P)$, which says that the third power is well defined.</p>
+<p><strong>Theorem.</strong> The multiplication is not power-associative, and the third-power identity fails.</p>
+<p><strong>Proof.</strong> At $\tilde P = ie_3$ the square is $\tilde P \star \tilde P = (ie_3)^{\natural}(ie_3)^{*} = (-ie_3)(ie_3) = -e_0$, so the two groupings of the third power are</p>
+<p>$$
+(\tilde P \star \tilde P) \star \tilde P = (-e_0) \star ie_3 = (-e_0)^{\natural}(ie_3)^{*} = (-e_0)(ie_3) = -ie_3 ,
+$$</p>
+<p>$$
+\tilde P \star (\tilde P \star \tilde P) = ie_3 \star (-e_0) = (ie_3)^{\natural}(-e_0)^{*} = (-ie_3)(-e_0) = ie_3 .
+$$</p>
+<p>The two sides are $-ie_3$ and $ie_3$, so the third-power identity fails; equivalently the associator at the triple $(ie_3,ie_3,ie_3)$ is $-ie_3 - ie_3 = -2ie_3 \neq 0$. Since a power-associative algebra satisfies third-power associativity, the product is not power-associative. $\square$</p>
+<p><strong>Remark.</strong> The failure of third-power associativity is the strongest of the failures in the sense that it is the weakest law, so a failure there is not implied by the failures above it; the product fails at the bottom rung directly. The group article records the two failures as <em>The Flexibility and the Degree-Three Identity</em>.</p>
+<h3 id="the-ladder">The Ladder</h3>
+<p><strong>Theorem (the rungs the product misses).</strong> The property ladder of <em>Non-Associative Algebras and the Property Ladder</em> has the implications</p>
+<p>$$
+\text{associative} \implies \text{alternative} \implies \text{flexible} , \qquad \text{alternative} \implies \text{power-associative} ,
+$$</p>
+<p>and the complex quaternionic sesquilinear product satisfies none of the four properties.</p>
+<p><strong>Proof.</strong> The product is not flexible by the second theorem above; since alternative implies flexible, and associative implies alternative, the product is not alternative and not associative. The product fails third-power associativity by the third theorem, and since power-associative implies third-power associativity, the product is not power-associative. The four failures all follow from the failure at the last of the three computations, together with the separate witness of non-flexibility. $\square$</p>
+<p><strong>Remark.</strong> An algebra that fails flexibility can still be non-power-associative for a different reason; here the failure of the degree-three identity at a single central element settles power-associativity, and the failure of flexibility at another settles alternativity and associativity. The two witnesses are $ie_3$ and $(ie_0,e_0)$, both as small as possible, and the ladder's strictness is not used: the product lies below every rung.</p>
+<h2 id="the-associator-read-on-the-plain-product">The Associator Read on the Plain Product</h2>
+<h3 id="the-difference-of-the-two-plain-products">The Difference of the Two Plain Products</h3>
+<p>The formula $[\tilde P,\tilde Q,\tilde R] = \overline{\tilde Q}\,\tilde P\,\tilde R^{*} - \tilde P^{\natural}\,\tilde R\,\overline{\tilde Q}$ exhibits the associator as the difference of two plain products of three factors, and it is worth reading the two terms separately.</p>
+<p><strong>Definition.</strong> The <strong>left term</strong> and the <strong>right term</strong> of the associator are</p>
+<p>$$
+L(\tilde P,\tilde Q,\tilde R) = \overline{\tilde Q}\,\tilde P\,\tilde R^{*} , \qquad R(\tilde P,\tilde Q,\tilde R) = \tilde P^{\natural}\,\tilde R\,\overline{\tilde Q} ,
+$$</p>
+<p>so that $[\tilde P,\tilde Q,\tilde R] = L - R$ by the formula.</p>
+<p><strong>Proposition.</strong> The left term is the left grouping and the right term is the right grouping; the left term carries the conjugations $\overline{\cdot}$ in the middle and ${}^{*}$ in the last factor, and the right term carries the conjugation ${}^{\natural}$ in the first factor and $\overline{\cdot}$ in the last.</p>
+<p><strong>Proof.</strong> The two groupings were computed in the theorem proving the formula. The first term is $(\tilde P \star \tilde Q) \star \tilde R$ and the second is $\tilde P \star (\tilde Q \star \tilde R)$. $\square$</p>
+<h3 id="examples-and-the-vanishing-set">Examples and the Vanishing Set</h3>
+<p><strong>Examples.</strong> The associator vanishes at some triples and not at others.</p>
+<ul>
+<li>$[e_0,e_0,e_1] = -2e_1$, nonzero: the two groupings are $(e_0 \star e_0) \star e_1 = -e_1$ and $e_0 \star (e_0 \star e_1) = e_1$.</li>
+<li>$[e_0,e_1,e_1] = 2e_0$, nonzero: the two groupings are $(e_0 \star e_1) \star e_1 = e_0$ and $e_0 \star (e_1 \star e_1) = -e_0$.</li>
+<li>$[e_1,e_1,e_1] = 0$, zero: the two groupings are $(e_1 \star e_1) \star e_1 = (-e_0) \star e_1 = e_1$ and $e_1 \star (e_1 \star e_1) = e_1 \star (-e_0) = e_1$.</li>
+<li>$[e_1,e_2,e_0] = 0$, zero: the two groupings are $(e_1 \star e_2) \star e_0 = e_3 \star e_0 = -e_3$ and $e_1 \star (e_2 \star e_0) = e_1 \star (-e_2) = -e_3$.</li>
+</ul>
+<p><strong>Remark.</strong> The vanishing set is the set of triples for which the two terms agree, $\overline{\tilde Q}\tilde P\tilde R^{*} = \tilde P^{\natural}\tilde R\overline{\tilde Q}$; it is a proper algebraic subset of $\mathbb{B}^{3}$ and it contains all triples with a vanishing factor and every triple of real scalar elements, but it is not the whole space. Of the $64$ triples of basis elements, $40$ make the associator vanish and $24$ do not, so the vanishing is the common case on the basis and the non-vanishing is the one that decides the laws. The group article states the same examples.</p>
+<h2 id="the-comparison-with-the-sibling-associators">The Comparison with the Sibling Associators</h2>
+<p><strong>Theorem (the sibling associators).</strong> The associators of the four products have the following forms:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>associator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\tilde Q$</td>
+<td>$\tilde P(\tilde Q\tilde R) - (\tilde P\tilde Q)\tilde R = 0$, the product is associative</td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q$</td>
+<td>$(\tilde P^{\natural}\tilde Q)^{\natural}\tilde R - \tilde P^{\natural}(\tilde Q^{\natural}\tilde R)$</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde Q^{*}$</td>
+<td>$\tilde P\bigl((\tilde R\tilde Q)^{*} - \tilde R\tilde Q^{*}\bigr)$</td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>$\overline{\tilde Q}\tilde P\tilde R^{*} - \tilde P^{\natural}\tilde R\overline{\tilde Q}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The plain product is associative. The sibling bilinear product has the associator obtained by inserting ${}^{\natural}$ in each first slot; it is the same kind of difference of two groupings, with the conjugations ${}^{\natural}$ and the plain form. The sibling sesquilinear associator is the general formula of <em>The Sesquilinear Associator and the Ternary Product</em> for the derived operation, $\tilde P((\tilde R\tilde Q)^{*} - \tilde R\tilde Q^{*})$, with the first factor untouched. The fourth row is the formula of this article. $\square$</p>
+<p><strong>Remark.</strong> The three non-associative associators are all differences of two groupings with opposite third-slot parities, and the parity structure is the same for all three: $\mathbb{C}$-linear in the first variable, conjugate-linear in the second, neither in the third. What distinguishes the fourth row from the sibling sesquilinear row is the factor $\overline{\tilde Q}$ in front and the ${}^{\natural}$ on $\tilde P$ in the second term; the sibling's associator has the first factor $\tilde P$ untouched, and the fourth product's associator carries the extra $\natural$ that makes it the isotope of the derived operation. This is the associator-level form of the isotope reading of <em>Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$</em> §<em>The Isotope Reading</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The associator of the complex quaternionic sesquilinear multiplication is</p>
+<p>$$
+[\tilde P,\tilde Q,\tilde R] = \overline{\tilde Q}\,\tilde P\,\tilde R^{*} - \tilde P^{\natural}\,\tilde R\,\overline{\tilde Q} ,
+$$</p>
+<p>the difference of the two groupings of the product, each grouping being a plain product of three factors. The associator is $\mathbb{C}$-linear in the first variable, conjugate-linear in the second, and neither linear nor conjugate-linear in the third, so it is a trilinear form on two different mixed modules rather than on $\mathbb{B}^{3}$; it is additive in all three variables. The product is not associative, with witness $[e_0,e_0,e_1] = -2e_1$; it is not flexible, with witness $[ie_0,e_0,ie_0] = 2e_0$; and it is not power-associative, third-power associativity failing at $\tilde P = ie_3$ with the two sides $-ie_3$ and $ie_3$. The product therefore satisfies none of the four rungs of the property ladder, and each failure is read on a single basis element. The associator vanishes at some triples, the vanishing set being the proper algebraic subset $\overline{\tilde Q}\tilde P\tilde R^{*} = \tilde P^{\natural}\tilde R\overline{\tilde Q}$ of $\mathbb{B}^{3}$. The sibling sesquilinear associator is $\tilde P((\tilde R\tilde Q)^{*} - \tilde R\tilde Q^{*})$, and the associator of the fourth product is its isotope by ${}^{\natural}$, carrying the extra factor $\overline{\tilde Q}$ and the extra conjugation on the first factor.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$[\tilde P,\tilde Q,\tilde R]$</td>
+<td>the associator $(\tilde P\star\tilde Q)\star\tilde R - \tilde P\star(\tilde Q\star\tilde R)$</td>
+</tr>
+<tr>
+<td>$\overline{\tilde Q}\tilde P\tilde R^{*} - \tilde P^{\natural}\tilde R\overline{\tilde Q}$</td>
+<td>the closed form of the associator</td>
+</tr>
+<tr>
+<td>$L(\tilde P,\tilde Q,\tilde R) = \overline{\tilde Q}\tilde P\tilde R^{*}$</td>
+<td>the left term, the left grouping</td>
+</tr>
+<tr>
+<td>$R(\tilde P,\tilde Q,\tilde R) = \tilde P^{\natural}\tilde R\overline{\tilde Q}$</td>
+<td>the right term, the right grouping</td>
+</tr>
+<tr>
+<td>$\mathbb{B} \times \mathbb{B}^{\varsigma} \times \mathbb{B}^{\varsigma}$</td>
+<td>the module of the left grouping</td>
+</tr>
+<tr>
+<td>$\mathbb{B} \times \mathbb{B}^{\varsigma} \times \mathbb{B}$</td>
+<td>the module of the right grouping</td>
+</tr>
+<tr>
+<td>$[e_0,e_0,e_1] = -2e_1$</td>
+<td>a witness of non-associativity</td>
+</tr>
+<tr>
+<td>$[ie_0,e_0,ie_0] = 2e_0$</td>
+<td>a witness of non-flexibility</td>
+</tr>
+<tr>
+<td>$[ie_3,ie_3,ie_3] = -2ie_3$</td>
+<td>a witness of the failure of third-power associativity</td>
+</tr>
+<tr>
+<td>$\{ \overline{\tilde Q}\tilde P\tilde R^{*} = \tilde P^{\natural}\tilde R\overline{\tilde Q} \}$</td>
+<td>the vanishing set of the associator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the associator, the flexible law and power-associativity.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the degree-three identity and the algebra of the associator.</li>
+<li>Nicolas Bourbaki, <em>Algebra I, Chapters 1–3</em> (Springer, 1998), for the associator of a multiplication on a module and its linearity properties.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the associator of a product with an involution inserted in a slot.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

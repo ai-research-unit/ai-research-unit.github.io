@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Six Subspaces under the Complex Bilinear Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-six-subspaces-under-the-complex-bilinear-form"><strong>The Six Subspaces under the Complex Bilinear Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complex bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ is read on each of the six distinguished real subspaces of <em>Introduction to the Six Subspaces</em> — the centre, the vector subspace, the quaternion subspace, the anti-quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace. On each, the realified form is real symmetric, and this article records the six signatures, the definite and indefinite rows, the orthogonalities, and the comparison with the $\natural$-bilinear reading of the same six subspaces.</p>
+<h2 id="the-six-signatures">The Six Signatures</h2>
+<p>With $\tilde Q=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$, the form on the six subspaces is diagonal and the signatures are read at once:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Real dimension</th>
+<th>Restricted form</th>
+<th>Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Centre $\mathbb C_{\mathbb B}$</td>
+<td>$2$</td>
+<td>$q_0^2-(q'_0)^2$</td>
+<td>$(1,1)$</td>
+</tr>
+<tr>
+<td>Vector $\mathrm{Vect}(\mathbb B)$</td>
+<td>$6$</td>
+<td>$\sum_k\bigl((q'_k)^2-q_k^2\bigr)$</td>
+<td>$(3,3)$</td>
+</tr>
+<tr>
+<td>Quaternion $\mathbb H_{\mathbb B}$</td>
+<td>$4$</td>
+<td>$q_0^2-q_1^2-q_2^2-q_3^2$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>Anti-quaternion $i\mathbb H_{\mathbb B}$</td>
+<td>$4$</td>
+<td>$-(q'_0)^2+(q'_1)^2+(q'_2)^2+(q'_3)^2$</td>
+<td>$(3,1)$</td>
+</tr>
+<tr>
+<td>Hermitian $\mathbb M_+$</td>
+<td>$4$</td>
+<td>$q_0^2+(q'_1)^2+(q'_2)^2+(q'_3)^2$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>Anti-Hermitian $\mathbb M_-$</td>
+<td>$4$</td>
+<td>$-\bigl((q'_0)^2+q_1^2+q_2^2+q_3^2\bigr)$</td>
+<td>$(0,4)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>(The coordinates are the real coordinates of the subspace; the anti-quaternion row is written in the primed coordinates $q'_\mu$.)</p>
+<h2 id="the-definite-and-the-indefinite-rows">The Definite and the Indefinite Rows</h2>
+<p>Two rows are definite. On the <strong>Hermitian subspace</strong> the form is positive definite, of signature $(4,0)$, the maximal positive definite dimension of the algebra; on the <strong>anti-Hermitian subspace</strong> it is negative definite, of signature $(0,4)$. The two are exchanged by multiplication by $i$, under which the form changes sign,</p>
+<p>$$
+\langle i\tilde P,i\tilde Q\rangle=-\langle\tilde P,\tilde Q\rangle,
+$$</p>
+<p>which is why $(4,0)$ and $(0,4)$ come as a pair.</p>
+<p>The four remaining rows are indefinite. The <strong>quaternion</strong> and <strong>anti-quaternion</strong> subspaces carry the sign-mirror pair $(1,3)$ and $(3,1)$, again exchanged by multiplication by $i$. The <strong>centre</strong> and the <strong>vector subspace</strong> carry $(1,1)$ and $(3,3)$: on the centre the real direction $e_0$ is positive and the imaginary direction $ie_0$ negative, and on the vector subspace each of the three quaternion directions is negative while its imaginary companion is positive.</p>
+<p>No subspace is totally isotropic. The form is non-degenerate everywhere, and each row has both signs except the two definite rows, so the isotropic set of the restriction is a cone of codimension one in the subspace whenever the row is indefinite, and is $\{0\}$ on the two definite rows.</p>
+<h2 id="orthogonality-and-the-pairings">Orthogonality and the Pairings</h2>
+<p>The form pairs the six subspaces in a pattern read from its diagonal. Since the restricted form is diagonal in the natural bases, the <strong>centre</strong> and the <strong>vector subspace</strong> are orthogonal to each other and together fill the algebra: $\mathbb C_{\mathbb B}\perp\mathrm{Vect}(\mathbb B)$ and $\mathbb C_{\mathbb B}\oplus\mathrm{Vect}(\mathbb B)=\mathbb B$ is an orthogonal decomposition of the whole algebra. On the four real forms the restriction of the form is the pairing already visible in the matrix model, and the quaternion and Hermitian rows differ in sign: $\langle\tilde Q,\tilde R\rangle=q_0r_0-\mathbf q\cdot\mathbf r$ on the quaternion subspace, against $q_0r_0+\mathbf q'\cdot\mathbf r'$ on the Hermitian one, where $\mathbf q'$ collects the imaginary spatial coordinates.</p>
+<h2 id="comparison-with-the-quaternion-bilinear-form">Comparison with the Quaternion Bilinear Form</h2>
+<p>The $\natural$-bilinear form $\sum_\mu P_\mu Q_\mu$ reads the same six subspaces with the table $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$, $(3,1)$. The two tables are the transpose of one another on the four real forms — the complex bilinear form puts the definite sign on the Hermitian subspace, the $\natural$-form puts it on the quaternion subspace — and they agree on the centre and the vector subspace. The comparison is tabulated in <em>The Six Subspaces under the Quaternion Bilinear Form</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>On the six distinguished real subspaces the complex bilinear form carries the signatures $(1,1)$, $(3,3)$, $(1,3)$, $(3,1)$, $(4,0)$ and $(0,4)$. The Hermitian subspace is the positive definite one and the anti-Hermitian the negative definite one, the quaternion and anti-quaternion rows are the sign-mirror pair $(1,3)$, $(3,1)$, and the centre and vector rows are $(1,1)$, $(3,3)$. No subspace is totally isotropic, and the centre and the vector subspace are orthogonal complements in the algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$</td>
+<td>the signatures on the six subspaces</td>
+</tr>
+<tr>
+<td>$\mathbb C_{\mathbb B}\perp\mathrm{Vect}(\mathbb B)$</td>
+<td>the orthogonal splitting of the algebra</td>
+</tr>
+<tr>
+<td>$\langle i\tilde P,i\tilde Q\rangle=-\langle\tilde P,\tilde Q\rangle$</td>
+<td>the sign change that pairs $(1,3)$ with $(3,1)$ and $(4,0)$ with $(0,4)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Gram Matrix of the Complex Bilinear Form</em> (<code>articles_maths/the-gram-matrix-of-the-complex-bilinear-form.md</code>), for the matrices behind the table</li>
+<li><em>The Complex Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-complex-bilinear-form-on-the-biquaternion-algebra.md</code>), for the form</li>
+<li><em>The Six Subspaces under the Quaternion Bilinear Form</em> (<code>articles_maths/the-six-subspaces-under-the-quaternion-bilinear-form.md</code>), for the companion table</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

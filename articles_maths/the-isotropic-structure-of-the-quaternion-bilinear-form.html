@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Isotropic Structure of the Quaternion Bilinear Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-isotropic-structure-of-the-quaternion-bilinear-form"><strong>The Isotropic Structure of the Quaternion Bilinear Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion bilinear form</p>
+<p>$$
+\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu
+$$</p>
+<p>has for its null set the zero-divisor cone of the algebra. This article records the cone, its dimension, its ruling, its real dimension on each of the six distinguished subspaces, and the comparison with the null cone of the complex bilinear form.</p>
+<h2 id="the-null-cone">The Null Cone</h2>
+<p><strong>Definition.</strong> The <strong>null cone</strong> of the quaternion bilinear form is</p>
+<p>$$
+\mathcal N_{\natural}=\{\tilde Q:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}=\Bigl\{\tilde Q:\sum_\mu Q_\mu^2=0\Bigr\}.
+$$</p>
+<p>On $\mathbb C^4\cong\mathbb B$ it is the complex quadric $\sum_\mu Q_\mu^2=0$, a complex hypersurface through the origin: of complex dimension $3$ and <strong>real dimension $6$</strong>. It is a cone, invariant under $\tilde Q\mapsto\lambda\tilde Q$ for $\lambda\in\mathbb C$; it is smooth off the apex, since the gradient $2(Q_0,Q_1,Q_2,Q_3)$ vanishes only at the origin. Its link is the complex quadric surface $Q^2$ of <em>Biquaternion Topology</em>.</p>
+<p>The cone is exactly the zero-divisor set. An element is a zero divisor precisely when it is null, so $\mathcal N_{\natural}\setminus\{0\}$ is the union of the two families of zero divisors classified in <em>Biquaternion Zero Divisors</em>; the algebra fails to be a division algebra along it, and nowhere else. The projective picture of the cone, its two rulings, the Klein quadric and the Plücker embedding are <em>Biquaternion Topology</em>.</p>
+<h2 id="the-dimension-on-the-six-subspaces">The Dimension on the Six Subspaces</h2>
+<p>Intersected with the six distinguished real subspaces, the cone has the following real dimensions, read from the signatures of the restriction:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Restricted norm</th>
+<th>Null set</th>
+<th>Real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Centre $\mathbb C_{\mathbb B}$</td>
+<td>$Q_0^2$</td>
+<td>$Q_0=0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>Vector $\mathrm{Vect}(\mathbb B)$</td>
+<td>$Q_1^2+Q_2^2+Q_3^2$</td>
+<td>the complex cone $\sum_kQ_k^2=0$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Quaternion $\mathbb H_{\mathbb B}$</td>
+<td>$\sum_\mu q_\mu^2$, signature $(4,0)$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>Anti-quaternion $i\mathbb H_{\mathbb B}$</td>
+<td>$-\sum_\mu(q'_\mu)^2$, signature $(0,4)$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>Hermitian $\mathbb M_+$</td>
+<td>$q_0^2-\sum_k(q'_k)^2$, signature $(1,3)$</td>
+<td>the real light cone</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Anti-Hermitian $\mathbb M_-$</td>
+<td>$\sum_kq_k^2-(q'_0)^2$, signature $(3,1)$</td>
+<td>the real light cone</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two features stand out. The restriction to the <strong>quaternion subspace</strong> is positive definite and to the <strong>anti-quaternion subspace</strong> negative definite, so neither contains a non-zero null element: these are the two subspaces on which the norm has a definite sign, and they are the reason the classical quaternion algebra is a division algebra. On the <strong>vector subspace</strong> the restricted form is the complex quadratic $\sum_kQ_k^2$, whose null set carries the <em>pure</em> zero divisors; on the two <strong>real forms</strong> it is the real light cone, whose null set carries the non-pure zero divisors. The centre carries none, being a field.</p>
+<h2 id="comparison-with-the-complex-bilinear-form">Comparison with the Complex Bilinear Form</h2>
+<p>The complex bilinear form has null set</p>
+<p>$$
+\Bigl\{\tilde Q:\sum_\mu\varepsilon_\mu Q_\mu^2=0\Bigr\}=\{Q_0^2=Q_1^2+Q_2^2+Q_3^2\},
+$$</p>
+<p>also a smooth complex cone of real dimension $6$. As complex quadrics the two are equivalent, each being non-degenerate; their defining quadrics are in general position, so the two complex cones meet only at the origin. They differ as real forms, and their restrictions to the six subspaces differ accordingly. The $\natural$-cone meets the Krein null set in the doubly null lines $\mathbb C(e_0\pm ie_1)$ recorded in <em>The Isotropic Structure of the Krein Form</em>, and the comparison of the four null cones is the tabulated <em>The Real Isotropic Structure</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The null cone of the quaternion bilinear form is $\sum_\mu Q_\mu^2=0$, the zero-divisor cone of the algebra, of real dimension $6$ and smooth off the apex. On the six subspaces it has real dimension $0$, $4$, $0$, $0$, $3$, $3$; it is empty off the origin on the two definite subspaces, it is exactly the pure zero-divisor cone on the vector subspace, and it consists of non-pure zero divisors on the two real forms. As a complex quadric it is equivalent to the null cone of the complex bilinear form, which is also a smooth complex cone of real dimension $6$; the two differ as real forms.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal N_{\natural}=\{\tilde Q:\sum_\mu Q_\mu^2=0\}$</td>
+<td>the null cone of the quaternion bilinear form</td>
+</tr>
+<tr>
+<td>real dimension $6$</td>
+<td>its dimension in $\mathbb B$</td>
+</tr>
+<tr>
+<td>$\mathcal N_{\natural}\setminus\{0\}$</td>
+<td>the zero-divisor set of the algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Quaternion Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md</code>), for the form</li>
+<li><em>Biquaternion Zero Divisors</em> (<code>articles_maths/biquaternion-zero-divisors.md</code>), for the classification of the isotropic elements</li>
+<li><em>The Isotropic Structure of the Complex Bilinear Form</em> (<code>articles_maths/the-isotropic-structure-of-the-complex-bilinear-form.md</code>), for the companion cone</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

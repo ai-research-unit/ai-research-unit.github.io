@@ -1,4 +1,13 @@
-body { display: flex; min-height: 100vh; }
+/* The sidebar is `position: fixed`, so it is out of flow and the body has a
+   single in-flow child, `.page-wrap`. `display: flex` here therefore bought
+   nothing, but it did real damage: it made `.page-wrap` a flex item, so
+   `flex: 1` sized it to the *whole* viewport width, and its
+   `margin-left: var(--sidebar-width)` then pushed it past the right edge by
+   exactly the sidebar width. Every page carried a 350px horizontal scrollbar
+   (measured: document scrollWidth 1735 against a 1385 viewport). Plain block
+   flow gives the wanted result for free — the auto width of a block box
+   already shrinks by its own left margin. */
+body { display: block; min-height: 100vh; }
 
 .sidebar {
   width: var(--sidebar-width);
@@ -44,16 +53,15 @@ body { display: flex; min-height: 100vh; }
 
 .page-wrap {
   margin-left: var(--sidebar-width);
-  flex: 1;
-  /* FIX: Changed from "2.5rem 3rem" to "1rem 3rem 2rem 3rem" to remove the huge top gap */
-  padding: 1rem 3rem 2rem 3rem; 
-  max-width: 100%;
+  padding: 1rem var(--page-pad-x) 2rem var(--page-pad-x);
 }
 
 /* ── MOBILE FIXES ─────────────────────────────────────── */
 @media (max-width: 768px) {
-  body { flex-direction: column; }
-  
+  /* The sidebar returns to the flow here (position: relative below), and block
+     flow already stacks it above `.page-wrap`, so no column direction is
+     needed — the old `flex-direction: column` went inert with body's flex. */
+
   .sidebar { 
     position: relative; 
     width: 100%; 

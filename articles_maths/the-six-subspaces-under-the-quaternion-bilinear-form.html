@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Six Subspaces under the Quaternion Bilinear Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-six-subspaces-under-the-quaternion-bilinear-form"><strong>The Six Subspaces under the Quaternion Bilinear Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion bilinear form $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$, whose diagonal is the biquaternion norm, is read here on the six distinguished real subspaces. This article records the six signatures, the two definite rows, the maximal definite subspaces, and the comparison with the complex bilinear form.</p>
+<h2 id="the-six-signatures">The Six Signatures</h2>
+<p>With $\tilde Q=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$, the norm on each subspace is diagonal and its signature is read at once:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Real dimension</th>
+<th>Restricted norm</th>
+<th>Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Centre $\mathbb C_{\mathbb B}$</td>
+<td>$2$</td>
+<td>$q_0^2-(q'_0)^2$</td>
+<td>$(1,1)$</td>
+</tr>
+<tr>
+<td>Vector $\mathrm{Vect}(\mathbb B)$</td>
+<td>$6$</td>
+<td>$\sum_k\bigl(q_k^2-(q'_k)^2\bigr)$</td>
+<td>$(3,3)$</td>
+</tr>
+<tr>
+<td>Quaternion $\mathbb H_{\mathbb B}$</td>
+<td>$4$</td>
+<td>$\sum_\mu q_\mu^2$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>Anti-quaternion $i\mathbb H_{\mathbb B}$</td>
+<td>$4$</td>
+<td>$-\sum_\mu(q'_\mu)^2$</td>
+<td>$(0,4)$</td>
+</tr>
+<tr>
+<td>Hermitian $\mathbb M_+$</td>
+<td>$4$</td>
+<td>$q_0^2-\sum_k(q'_k)^2$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>Anti-Hermitian $\mathbb M_-$</td>
+<td>$4$</td>
+<td>$\sum_kq_k^2-(q'_0)^2$</td>
+<td>$(3,1)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-definite-rows-and-the-maximal-definite-subspaces">The Definite Rows and the Maximal Definite Subspaces</h2>
+<p>The <strong>quaternion subspace</strong> carries signature $(4,0)$ and the <strong>anti-quaternion subspace</strong> signature $(0,4)$: these are the definite rows, exchanged by multiplication by $i$, under which the norm changes sign,</p>
+<p>$$
+\langle i\tilde P,i\tilde Q\rangle_{\natural}=-\langle\tilde P,\tilde Q\rangle_{\natural}.
+$$</p>
+<p>The quaternion subspace is thus a maximal positive definite subspace of the norm, of dimension $4$, and the anti-quaternion subspace a maximal negative definite one; they are orthogonal complements, $\mathbb H_{\mathbb B}\oplus i\mathbb H_{\mathbb B}=\mathbb B$, and the norm is the positive form on the first and its negative on the second. This splitting is the polarisation the norm uses to decide invertibility, and it is the reason the two subspaces carry no zero divisor.</p>
+<p>The remaining four rows are indefinite. The <strong>centre</strong> and the <strong>vector subspace</strong> carry $(1,1)$ and $(3,3)$; the two <strong>real forms</strong> carry the sign-mirror pair $(1,3)$ and $(3,1)$.</p>
+<h2 id="orthogonality-and-the-isotropic-elements">Orthogonality and the Isotropic Elements</h2>
+<p>The six subspaces are pairwise orthogonal for this form exactly when their bases are orthogonal in the coefficient basis, and the diagonal table shows the splitting: the centre and the vector subspace are orthogonal complements, and so are the quaternion and anti-quaternion subspaces. On the <strong>vector subspace</strong> the norm is the complex quadratic $\sum_kQ_k^2$, whose isotropic set is the pure zero-divisor cone, of real dimension $4$; on the two <strong>real forms</strong> it is the real light cone of the Minkowski signature, of real dimension $3$, carrying the non-pure zero divisors; and on the two definite rows it vanishes only at the origin.</p>
+<h2 id="comparison-with-the-complex-bilinear-form">Comparison with the Complex Bilinear Form</h2>
+<p>The complex bilinear form records the same six subspaces with the signatures $(1,1)$, $(3,3)$, $(1,3)$, $(3,1)$, $(4,0)$, $(0,4)$. The two tables agree on the centre and the vector subspace and are swapped on the four real forms: the definite sign of the plain form falls on the Hermitian subspace, of the $\natural$-form on the quaternion subspace. The comparison is carried in <em>The Six Subspaces under the Complex Bilinear Form</em>, and the four tables together are <em>The Real Reading of the Six Subspaces</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>On the six distinguished real subspaces the quaternion bilinear form carries the signatures $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$. The quaternion and anti-quaternion subspaces are the two definite rows, of dimension $4$ and maximal, and they are orthogonal complements; the centre and the vector subspace carry $(1,1)$ and $(3,3)$; the two real forms carry $(1,3)$ and $(3,1)$. The isotropic elements are the zero divisors on the vector subspace and the two real forms, and only the origin on the two definite subspaces.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$</td>
+<td>the six signatures of the norm</td>
+</tr>
+<tr>
+<td>$\mathbb H_{\mathbb B}\oplus i\mathbb H_{\mathbb B}$</td>
+<td>the maximal definite splitting of the algebra</td>
+</tr>
+<tr>
+<td>$\langle i\tilde P,i\tilde Q\rangle_{\natural}=-\langle\tilde P,\tilde Q\rangle_{\natural}$</td>
+<td>the sign change pairing the definite rows</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Quaternion Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md</code>), for the form and its restrictions</li>
+<li><em>The Six Subspaces under the Complex Bilinear Form</em> (<code>articles_maths/the-six-subspaces-under-the-complex-bilinear-form.md</code>), for the companion table</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the norm and its real forms</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

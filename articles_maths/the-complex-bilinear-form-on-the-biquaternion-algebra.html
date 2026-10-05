@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Complex Bilinear Form on the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-complex-bilinear-form-on-the-biquaternion-algebra"><strong>The Complex Bilinear Form on the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Provisional.</strong> This article is a placeholder of the topology region, created in the dispatch that gives the four forms their own reading groups. It records its scope, its home and its sources; the content is to be written.</p>
+<p>The biquaternion algebra carries four scalar forms, one to each of the four products of <em>The Four Biquaternion Complex Products</em>. This article treats the form of the plain product, the <strong>complex bilinear form</strong></p>
+<p>$$
+\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu,\qquad \varepsilon=(1,-1,-1,-1).
+$$</p>
+<p>It is $\mathbb{C}$-bilinear, symmetric and non-degenerate, and it is indefinite: its Gram matrix in the coefficient basis is $D=\operatorname{diag}(1,-1,-1,-1)$, and on the real vector space of dimension eight its realification is the split form of signature $(4,4)$. Its diagonal $\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^2$ is the quadratic form it polarises.</p>
+<p>The form is the last of the four to receive its own article. Its theory stood as §<em>The Scalar Bilinear Form</em> of <em>Association and the Transpose on the Biquaternion Algebra</em>, where it serves as the pairing that makes a linear map transposable. Beside it stands the quaternion bilinear form $N=\mathrm{Sc}(\tilde P\tilde Q^{\natural})$ of <em>The Quaternion Bilinear Form on the Biquaternion Algebra</em>, of Gram matrix $\mathrm{I}_4$; the two must not be confused, and the distinction of $D$ and $\mathrm{I}_4$ is the whole of it.</p>
+<h2 id="outline">Outline</h2>
+<ul>
+<li>the definition, the polarisation and the diagonal</li>
+<li>the Gram matrix $D$ and the realified signature $(4,4)$</li>
+<li>the null cone, deferred to <em>The Isotropic Structure of the Complex Bilinear Form</em></li>
+<li>the level sets and the isometry group $O_4(\mathbb{C})$, deferred to <em>The Level Sets and the Isometry Group of the Complex Bilinear Form</em></li>
+<li>the comparison with the three other forms</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>To be written. The form is the scalar part of the plain product, of Gram matrix $D$ and realified signature $(4,4)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$</td>
+<td>the complex bilinear form</td>
+</tr>
+<tr>
+<td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>its Gram matrix in the coefficient basis</td>
+</tr>
+<tr>
+<td>$(4,4)$</td>
+<td>its realified signature</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001).</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge, 1995).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

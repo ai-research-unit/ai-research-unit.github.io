@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Real Isotropic Structure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-real-isotropic-structure"><strong>The Real Isotropic Structure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Read on the eight-dimensional real vector space, the four forms of the algebra give four real symmetric forms, and each indefinite one has a null cone. This article records the four cones, their dimensions, the totally isotropic subspaces, and the distinction between the realified cone and the complex null cone of the same form.</p>
+<h2 id="the-four-realified-forms-and-their-cones">The Four Realified Forms and Their Cones</h2>
+<p>With $\tilde Q=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$, the four realified forms and their null sets are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Signature</th>
+<th>Realified form</th>
+<th>Null set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Complex bilinear</td>
+<td>$(4,4)$</td>
+<td>$q_0^2-q_1^2-q_2^2-q_3^2-q_0'^2+q_1'^2+q_2'^2+q_3'^2$</td>
+<td>hypersurface, real dim $7$</td>
+</tr>
+<tr>
+<td>Quaternion bilinear</td>
+<td>$(4,4)$</td>
+<td>$q_0^2-q_0'^2+q_1^2-q_1'^2+q_2^2-q_2'^2+q_3^2-q_3'^2$</td>
+<td>hypersurface, real dim $7$</td>
+</tr>
+<tr>
+<td>Hermitian</td>
+<td>$(8,0)$</td>
+<td>$\sum_\mu\bigl(q_\mu^2+q_\mu'^2\bigr)$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>Krein</td>
+<td>$(2,6)$</td>
+<td>$q_0^2+q_0'^2-\sum_k\bigl(q_k^2+q_k'^2\bigr)$</td>
+<td>hypersurface, real dim $7$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The <strong>Hermitian</strong> form is positive definite and has no non-zero isotropic element. The other three are indefinite, and each null set is a real hypersurface of dimension $7$ through the origin, smooth off the apex. The <strong>Krein</strong> cone is the real light cone of signature $(2,6)$; the two <strong>bilinear</strong> cones are the split cones of signature $(4,4)$, and they are different cones because their signs fall on different coordinates.</p>
+<h2 id="the-totally-isotropic-subspaces">The Totally Isotropic Subspaces</h2>
+<p>A real form of signature $(p,q)$ has maximal totally isotropic subspaces of dimension $\min(p,q)$. The values for the four forms are:</p>
+<ul>
+<li>the <strong>complex bilinear</strong> and the <strong>quaternion bilinear</strong> forms, of signature $(4,4)$: totally isotropic subspaces of real dimension $4$;</li>
+<li>the <strong>Krein</strong> form, of signature $(2,6)$: totally isotropic subspaces of real dimension $2$;</li>
+<li>the <strong>Hermitian</strong> form: no isotropic element but $0$.</li>
+</ul>
+<p>The realifications of the two rulings of its complex cone give maximal totally isotropic subspaces of the complex bilinear form, of real dimension $4$; the maximal totally isotropic subspaces of the Krein form, of real dimension $2$, are the real planes recorded in <em>The Witt Index and the Maximal Isotropic Subspaces of the Krein Form</em>.</p>
+<h2 id="the-realified-cone-and-the-complex-cone">The Realified Cone and the Complex Cone</h2>
+<p>The realified cone is not the complex null cone of the same form, and the two must be distinguished. The <strong>complex</strong> null cone of the complex bilinear form, $\{\tilde Q:\sum_\mu\varepsilon_\mu Q_\mu^2=0\}$, is a complex cone of real dimension $6$ inside the eight-dimensional space; the realified cone computed here is the hypersurface $\{\mathrm{Re}\sum_\mu\varepsilon_\mu Q_\mu^2=0\}$ of real dimension $7$, which is one real equation and not two. The complex cone is the common zero set of the real and the imaginary parts, and so sits inside the realified cone as a real codimension-one subcone,</p>
+<p>$$
+\{\mathrm{Re}=0\}\cap\{\mathrm{Im}=0\}\ \subsetneq\ \{\mathrm{Re}=0\}.
+$$</p>
+<p>The same distinction holds for the quaternion bilinear form: its complex cone $\sum_\mu Q_\mu^2=0$ is of real dimension $6$, its realified cone of real dimension $7$. The complex cones are the isotropic structures of the complex forms, recorded in <em>The Isotropic Structure of the Complex Bilinear Form</em> and <em>The Isotropic Structure of the Quaternion Bilinear Form</em>; the realified cones are the real isotropic structures of the present article, and the four together are the isotropic counterpart of <em>The Real Reading of the Six Subspaces</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hermitian form is definite and has no non-zero isotropic element; the complex bilinear, the quaternion bilinear and the Krein forms have null cones that are real hypersurfaces of dimension $7$ in $\mathbb R^8$, of signatures $(4,4)$, $(4,4)$ and $(2,6)$. Their maximal totally isotropic subspaces have real dimensions $4$, $4$ and $2$. The realified cones are strictly larger than the complex null cones of the same forms, which are of real dimension $6$ and sit inside them as real codimension-one subcones.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real dim $7$</td>
+<td>the dimension of each indefinite realified null cone</td>
+</tr>
+<tr>
+<td>$4$, $4$, $2$, $0$</td>
+<td>the maximal totally isotropic dimensions of the four forms</td>
+</tr>
+<tr>
+<td>$\{\mathrm{Re}=0\}\supsetneq\{\mathrm{Re}=0\}\cap\{\mathrm{Im}=0\}$</td>
+<td>the realified cone and the complex cone inside it</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Realification of the Four Forms</em> (<code>articles_maths/the-realification-of-the-four-forms.md</code>), for the four signatures</li>
+<li><em>The Isotropic Structure of the Complex Bilinear Form</em> (<code>articles_maths/the-isotropic-structure-of-the-complex-bilinear-form.md</code>) and <em>The Isotropic Structure of the Quaternion Bilinear Form</em>, for the complex cones</li>
+<li><em>The Real Reading of the Six Subspaces</em> (<code>articles_maths/the-real-reading-of-the-six-subspaces.md</code>), for the companion tables</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

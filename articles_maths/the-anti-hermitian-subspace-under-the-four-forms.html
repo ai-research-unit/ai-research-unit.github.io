@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Anti-Hermitian Subspace under the Four Forms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-anti-hermitian-subspace-under-the-four-forms"><strong>The Anti-Hermitian Subspace under the Four Forms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The anti-Hermitian subspace $\mathbb{M}_-$ is one of the six distinguished subspaces of the biquaternion algebra $\mathbb{B}$, defined and developed in <em>Introduction to the Six Subspaces</em> in the Algebra group. It reads the subspace for its basis, its defining involution, its algebra and module structure and its elements; this one reads it for its <strong>topology</strong>, and it does so four times.</p>
+<p>The algebra carries four pairings of its elements — the <strong>complex bilinear form</strong> $\langle\cdot,\cdot\rangle$, the <strong>quaternion bilinear form</strong> $\langle\cdot,\cdot\rangle_{\natural}$, the <strong>complex sesquilinear form</strong> $\langle\cdot,\cdot\rangle_{*}$ and the <strong>quaternion sesquilinear form</strong> $\langle\cdot,\cdot\rangle_{\natural*}$ of <em>The Four Pairings of the Biquaternion Algebra</em>, built on the natural conjugation ${}^{\natural}$, the Hermitian conjugation ${}^{*}$ and the complex conjugation $\bar{\cdot}$. Each pairing restricts to the subspace, and each restriction is a form in its own right, with its own signature, its own definiteness, its own null set and its own group of isometries; each therefore induces its own topology on the subspace. The four are kept apart in four separate sections below, and they are compared in the table at the end.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the element $\tilde{Q}=\sum_{\mu}Q_{\mu}e_{\mu}$ with $Q_{\mu}=q_{\mu}+iq'_{\mu}$, units $e_0=1$ and $e_k^2=-e_0$, central scalar imaginary $i$, scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$ and $E=\mathrm{diag}(1,-1,-1,-1)$.</p>
+<h2 id="the-subspace">The Subspace</h2>
+<p><strong>Definition.</strong> The <strong>anti-Hermitian subspace</strong> is the anti-fixed space of Hermitian conjugation, equivalently the fixed space of the reversal $\flat$, $\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}$. It is the set of elements with imaginary scalar part and real vector part.</p>
+<p>It is $\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$, of real dimension $4$; it is not a subalgebra, and it is a Lie algebra for the commutator.</p>
+<h2 id="the-restriction-of-the-complex-bilinear-form">The Restriction of the Complex Bilinear Form</h2>
+<p><strong>Theorem (the restriction of the complex bilinear form).</strong> On $\mathbb{M}_-$ the complex bilinear form is</p>
+<p>$$
+\langle\tilde{Q},\tilde{Q}\rangle = -(q'_0)^2-q_1^2-q_2^2-q_3^2 ,
+$$</p>
+<p>of signature $(0,4)$.</p>
+<p><strong>Proof.</strong> On the subspace $\tilde{Q}^{*}=-\tilde{Q}$, so $Q_0=iq'_0$ and $Q_k=q_k$ with real coordinates; $\langle\tilde{Q},\tilde{Q}\rangle=Q_0^2-\sum_kQ_k^2=-(q'_0)^2-\sum_kq_k^2$, negative in every direction.</p>
+<p>The restriction is negative definite of signature $(0,4)$, the exact negative of the complex sesquilinear restriction on the same subspace; the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ are exchanged by multiplication by $i$, which reverses the sign of the complex bilinear form.</p>
+<p><strong>The null set.</strong> The form is negative definite, so the origin is its only isotropic point.</p>
+<p><strong>The isometry group.</strong> The restriction is a real form of signature $(0,4)$, so its group of <strong>real-linear</strong> isometries on $\mathbb{M}_-$ is $O(0,4)$; inside the ambient group $O_4(\mathbb{C})$ of <em>The Four Pairings of the Biquaternion Algebra</em> the elements that preserve $\mathbb{M}_-$ form the corresponding subgroup.</p>
+<h2 id="the-restriction-of-the-quaternion-bilinear-form">The Restriction of the Quaternion Bilinear Form</h2>
+<p><strong>Theorem (the restriction of the quaternion bilinear form).</strong> On $\mathbb{M}_-$ the quaternion bilinear form is</p>
+<p>$$
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = (q_1^2+q_2^2+q_3^2)-(q'_0)^2 ,
+$$</p>
+<p>a real form of signature $(3,1)$ on the 4 real dimensions of the subspace.</p>
+<p><strong>Proof.</strong> On the subspace $Q_0=iq'_0$ and $Q_k=q_k$, so $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=(q_1^2+q_2^2+q_3^2)-(q'_0)^2$, three positive and one negative direction.</p>
+<p>The restriction is the negative of the complex sesquilinear restriction, of signature $(3,1)$ rather than $(1,3)$; the two sectors are exchanged by multiplication by $i$.</p>
+<p><strong>The null set.</strong> the cone $\sum_kq_k^2=(q'_0)^2$, of real dimension $3$, the zero divisors of the subspace, none of which is nilpotent.</p>
+<p><strong>The isometry group.</strong> The restriction is a real form of signature $(3,1)$, so its group of <strong>real-linear</strong> isometries on $\mathbb{M}_-$ is the orthogonal group $O(3,1)$; inside the ambient isometry group $O_4(\mathbb{C})$ of <em>The Four Pairings of the Biquaternion Algebra</em> the elements that preserve $\mathbb{M}_-$ form the corresponding subgroup.</p>
+<h2 id="the-restriction-of-the-complex-sesquilinear-form">The Restriction of the Complex Sesquilinear Form</h2>
+<p><strong>Theorem (the restriction of the complex sesquilinear form).</strong> On $\mathbb{M}_-$ the complex sesquilinear form is</p>
+<p>$$
+\langle\tilde{Q},\tilde{Q}\rangle_{*} = (q'_0)^2+q_1^2+q_2^2+q_3^2 ,
+$$</p>
+<p>of signature $(4,0)$.</p>
+<p><strong>Proof.</strong> $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu|Q_\mu|^2=|iq'_0|^2+\sum_kq_k^2$.</p>
+<p>The restriction is the Euclidean square on the four real coordinates, positive definite, exactly as on the Hermitian sector.</p>
+<p><strong>The Euclidean topology.</strong> The restriction is positive definite, so it is a Euclidean inner product on the 4 real dimensions of the subspace. It defines the Euclidean norm $\lVert\tilde{Q}\rVert_E$, the distance and the balls, and hence the Euclidean topology of the subspace; on the algebra as a whole this is the topology of <em>The Euclidean Topology of the Biquaternion Algebra</em>. Its group of <strong>real-linear</strong> isometries on $\mathbb{M}_-$ is the compact orthogonal group $O(4)$, contained in the ambient unitary group $U(4)$ of <em>The Unitary Group of the Biquaternion Algebra</em>.</p>
+<p><strong>The null set.</strong> The form is positive definite, so $\langle\tilde{Q},\tilde{Q}\rangle_{*}=0$ holds only at $\tilde{Q}=0$: the subspace carries no isotropic vector for the complex sesquilinear form.</p>
+<h2 id="the-restriction-of-the-quaternion-sesquilinear-form">The Restriction of the Quaternion Sesquilinear Form</h2>
+<p><strong>Theorem (the restriction of the quaternion sesquilinear form).</strong> On $\mathbb{M}_-$ the quaternion sesquilinear form is</p>
+<p>$$
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural*} = (q'_0)^2-q_1^2-q_2^2-q_3^2 ,
+$$</p>
+<p>of signature $(1,3)$.</p>
+<p><strong>Proof.</strong> $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_\mu\varepsilon_\mu|Q_\mu|^2=(q'_0)^2-\sum_kq_k^2$, the signs $\varepsilon_k=-1$ falling on the real vector directions.</p>
+<p>The quaternion sesquilinear restriction is the negative of the quaternion bilinear restriction, of signature $(1,3)$ rather than $(3,1)$; the passage between them is again the sign vector $\varepsilon$.</p>
+<p><strong>The null set.</strong> the cone $(q'_0)^2=\sum_kq_k^2$, of real dimension $3$, the light cone of the Lorentzian form on the subspace.</p>
+<p><strong>The isometry group.</strong> The restriction is a real form of signature $(1,3)$, so its group of <strong>real-linear</strong> isometries on $\mathbb{M}_-$ is $O(1,3)$; inside the ambient group $U(1,3)$ of <em>The Krein Isometry Group and Its $J$-Contractions</em> the elements preserving $\mathbb{M}_-$ form the corresponding subgroup.</p>
+<h2 id="the-four-forms-compared">The Four Forms Compared</h2>
+<p>The four restrictions are collected in one table; each entry is a form on the same real vector space $\mathbb{M}_-$, and the signatures are those of the underlying real form.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>expression</th>
+<th>restriction on $\mathbb{M}_-$</th>
+<th>signature</th>
+<th>definiteness</th>
+<th>null set</th>
+<th>isometry group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>complex bilinear</td>
+<td>$\langle\tilde{Q},\tilde{Q}\rangle=\mathrm{Sc}(\tilde{Q}\tilde{Q})$</td>
+<td>$-(q'_0)^2-\sum_kq_k^2$</td>
+<td>$(0,4)$</td>
+<td>negative definite</td>
+<td>$\{0\}$</td>
+<td>$O(0,4)$</td>
+</tr>
+<tr>
+<td>quaternion bilinear</td>
+<td>$\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}^{\natural}\tilde{Q})$</td>
+<td>$\sum_kq_k^2-(q'_0)^2$</td>
+<td>$(3,1)$</td>
+<td>indefinite (Lorentzian)</td>
+<td>$\sum_kq_k^2=(q'_0)^2$</td>
+<td>$O(3,1)$</td>
+</tr>
+<tr>
+<td>complex sesquilinear</td>
+<td>$\langle\tilde{Q},\tilde{Q}\rangle_{*}=\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})$</td>
+<td>$(q'_0)^2+\sum_kq_k^2$</td>
+<td>$(4,0)$</td>
+<td>positive definite</td>
+<td>$\{0\}$</td>
+<td>$O(4)$</td>
+</tr>
+<tr>
+<td>quaternion sesquilinear</td>
+<td>$\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}^{\natural}\tilde{Q}^{*})$</td>
+<td>$(q'_0)^2-\sum_kq_k^2$</td>
+<td>$(1,3)$</td>
+<td>indefinite (Lorentzian)</td>
+<td>$(q'_0)^2=\sum_kq_k^2$</td>
+<td>$O(1,3)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four restrictions are: the complex bilinear form, negative definite of signature $(0,4)$; the quaternion bilinear form and the quaternion sesquilinear form, both Lorentzian, of signatures $(3,1)$ and $(1,3)$ respectively and negatives of one another; and the complex sesquilinear form, positive definite of signature $(4,0)$. The subspace is the anti-fixed space of the dagger; the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ are exchanged by multiplication by $i$, which reverses the sign of every one of the four forms.</p>
+<h2 id="summary">Summary</h2>
+<p>On the anti-Hermitian subspace the four forms give: the complex bilinear form $-(q'_0)^2-\sum_kq_k^2$ of signature $(0,4)$, negative definite; the quaternion bilinear form $\sum_kq_k^2-(q'_0)^2$ of signature $(3,1)$, with the cone $\sum_kq_k^2=(q'_0)^2$ as null set; the complex sesquilinear form $(q'_0)^2+\sum_kq_k^2$ of signature $(4,0)$, positive definite, the negative of the complex bilinear form; and the quaternion sesquilinear form $(q'_0)^2-\sum_kq_k^2$ of signature $(1,3)$, the negative of the quaternion bilinear form. The isometry groups are $O(0,4)$, $O(3,1)$, $O(4)$ and $O(1,3)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>the anti-Hermitian subspace, of real dimension $4$</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$</td>
+<td>the complex bilinear, quaternion bilinear, complex sesquilinear and quaternion sesquilinear forms of <em>The Four Pairings of the Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$(0,4)$</td>
+<td>the signature of the complex bilinear form on $\mathbb{M}_-$, negative definite</td>
+</tr>
+<tr>
+<td>$(3,1)$</td>
+<td>the signature of the quaternion bilinear form on $\mathbb{M}_-$, indefinite (Lorentzian)</td>
+</tr>
+<tr>
+<td>$(4,0)$</td>
+<td>the signature of the complex sesquilinear form on $\mathbb{M}_-$, the negative of the complex bilinear form</td>
+</tr>
+<tr>
+<td>$(1,3)$</td>
+<td>the signature of the quaternion sesquilinear form on $\mathbb{M}_-$, indefinite (Lorentzian)</td>
+</tr>
+<tr>
+<td>$O(0,4)$, $O(3,1)$, $O(4)$, $O(1,3)$</td>
+<td>the isometry groups of the four restrictions</td>
+</tr>
+<tr>
+<td>## Further Reading</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><em>Introduction to the Six Subspaces</em> (<code>articles_maths/introduction-to-the-six-subspaces.md</code>), for the subspace itself in the Algebra group</li>
+<li><em>The Four Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the four forms and the four Gram matrices</li>
+<li><em>The Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md</code>), for the quaternion bilinear pairing and its restrictions</li>
+<li><em>The Hermitian Form on the Biquaternion Algebra</em> (<code>articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md</code>), for the complex sesquilinear pairing and the Euclidean norm it defines</li>
+<li><em>The Complex Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-complex-bilinear-form-on-the-biquaternion-algebra.md</code>), for the complex bilinear pairing and its isotropic structure</li>
+<li><em>The Krein Gram Matrix and the Restrictions of the Form</em> (<code>articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md</code>), for the quaternion sesquilinear pairing and the same six restrictions</li>
+<li><em>Comparison of the Six Subspaces</em> (<code>articles_maths/comparison-of-the-six-subspaces.md</code>), for the six subspaces together and their intersections</li>
+<li><em>J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra</em> (<code>articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-biquaternion-algebra.md</code>), for the operators attached to the third topology</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

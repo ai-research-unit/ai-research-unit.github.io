@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Idempotents of the Four Products — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-idempotents-of-the-four-products"><strong>The Idempotents of the Four Products</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>idempotent</strong> of one of the four products of the biquaternion algebra is an element $\tilde\Pi$ with $\tilde\Pi\star\tilde\Pi = \tilde\Pi$, the equation read in that product. The equation is the algebraic form of a projection, and each of the four groups of the chapter solves it for its own multiplication: the complex bilinear product in <em>Biquaternion Idempotents and Projections</em>, the complex quaternionic bilinear product in <em>Idempotents of the Quaternionic Product</em>, the complex sesquilinear product in <em>Projections of the Biquaternion Sesquialgebra</em>, and the complex quaternionic sesquilinear product in <em>Idempotents of the Quaternionic Sesquilinear Product</em>. This article sets the four solution sets side by side and reads their invariants together, the four sets themselves having been tabulated in <em>Comparison Between the Four Biquaternion Products</em> §<em>The Squares, the Idempotents and the Roots</em>.</p>
+<p>The four sets are of four different kinds, and the difference is not in the size of the sets alone but in the place they occupy in the algebra. The plain product's idempotents are the idempotents of the algebra: the trivial pair, the two-sphere of the Hermitian idempotents that the sesquilinear product singles out, and a four-parameter family of non-trivial idempotents lying in no distinguished subspace, every member of the family outside the trivial pair being a zero divisor. The natural product keeps only the trivial pair. The complex sesquilinear product keeps the Hermitian two-sphere, and the complex quaternionic sesquilinear product replaces it by the two-sphere $-\tfrac12e_0+\mu$, whose members are the only nontrivial idempotents of the four multiplications that are <strong>units</strong>. The article owns the comparison of the four sets, the effect of the central square on each, the reading of each in the six distinguished subspaces and the complementation that pairs the members of the plain family.</p>
+<p><strong>Conventions.</strong> The notation is that of <em>The Four Biquaternion Complex Products</em> and of the introduction to this group, with the natural conjugation $\tilde Q^{\natural} = Q_0-\mathbf Q$, the star $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$ and the <strong>central square</strong> $\tilde Q^{\natural}\tilde Q = \tilde Q\tilde Q^{\natural}$, a central element. The four products are written $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, and the six distinguished subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$.</p>
+<h2 id="the-four-sets">The Four Sets</h2>
+<p><strong>Theorem (the four idempotent sets, quoted).</strong> The idempotents of the four products are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>idempotents</th>
+<th>owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\tilde Q$</td>
+<td>$0$, $e_0$, and $\tfrac12(e_0+\xi i)$ for a root $\xi$ of $-e_0$</td>
+<td><em>Biquaternion Idempotents and Projections</em></td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q$</td>
+<td>$0$ and $e_0$ alone</td>
+<td><em>Idempotents of the Quaternionic Product</em></td>
+</tr>
+<tr>
+<td>$\tilde P\tilde Q^{*}$</td>
+<td>$0$, $e_0$, and $\tfrac12(e_0+i\hat\mu)$ for a real unit vector $\hat\mu$</td>
+<td><em>Projections of the Biquaternion Sesquialgebra</em></td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>$0$, $e_0$, and $-\tfrac12e_0+\mu$ for a real vector $\mu$ with $(\mu,\mu) = \tfrac34$</td>
+<td><em>Idempotents of the Quaternionic Sesquilinear Product</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Everything the four columns share is the trivial pair; everything else separates them. The comparison below reads the four sets through the central square, the unit structure and the distinguished subspaces, and it begins with the plain family, because the other three are described in its terms.</p>
+<h2 id="the-plain-family-and-the-roots-of-minus-one">The Plain Family and the Roots of Minus One</h2>
+<p>The plain product is the one associative multiplication with a unit, and its idempotents are the idempotents of the algebra.</p>
+<p><strong>Theorem (the plain family, quoted).</strong> The idempotents of $\mathbb{B}$ are $0$, $e_0$, and the elements $\tilde\Pi = \tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-e_0$. The map $\xi\mapsto\tfrac12(e_0+\xi i)$ is a bijection from the roots of $-e_0$ onto the idempotents, and the complementary pair is $\{\tfrac12(e_0+\xi i),\ \tfrac12(e_0-\xi i)\}$.</p>
+<p><strong>Proof.</strong> The proof is in <em>Biquaternion Idempotents and Projections</em>; it reduces the equation $\tilde\Pi^2 = \tilde\Pi$ to the classification of the roots of $-e_0$, which is <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em>. $\square$</p>
+<p>The classification of the roots organises the family in three parts, and each part has its own geometry. The <strong>trivial</strong> roots $\xi = \pm i$ give the trivial idempotents, $0$ and $e_0$. The <strong>real</strong> roots $\xi = \hat\mu$, the unit real vectors, form the two-sphere of $\mathbb{R}^{3}$, and give the two-sphere $\tfrac12(e_0+i\hat\mu)$ of <strong>Hermitian</strong> idempotents, the family the complex sesquilinear product keeps. The <strong>non-trivial</strong> roots $\xi = \mathbf p+i\mathbf p'$, with $\mathbf p,\mathbf p'$ real vectors, $\mathbf p'\neq0$, satisfying $\sum_k p_k^{2}-\sum_k p'_k^{2} = 1$ and $\sum_k p_kp'_k = 0$, form a four-parameter family, and give the <strong>non-trivial</strong> idempotents, a four-parameter family that lies in none of the four four-dimensional subspaces of the algebra.</p>
+<p>The second and the third parts are related by the same formula and are not the same: the Hermitian idempotents have a real scalar part and a purely imaginary vector part, while a non-trivial idempotent $\tilde\Pi = \tfrac12(e_0+\xi i)$ with $\xi = \mathbf p+i\mathbf p'$ is</p>
+<p>$$
+\tilde\Pi = \tfrac12\bigl(e_0-\mathbf p'\bigr) + \tfrac12\mathbf p\,i ,
+$$</p>
+<p>whose vector part $\tfrac12(-\mathbf p'+i\mathbf p)$ carries both a real and an imaginary term, so that the element is neither Hermitian nor anti-Hermitian and has no other distinguished subspace to lie in. The four-parameter family is the largest part of the plain idempotent set, and it is the one the other three products discard.</p>
+<h2 id="the-two-spheres">The Two Spheres</h2>
+<p>Two of the other three sets are two-spheres, and only the second of them is a sphere of units of the algebra.</p>
+<p><strong>Proposition (the two spheres).</strong> The idempotents of the complex sesquilinear product beyond the trivial pair are the Hermitian idempotents $\tilde\Pi_+(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ over the real vectors $\hat\mu$ with $\sum_k\hat\mu_k^{2} = 1$, a two-sphere lying in $\mathbb{M}_+$; the idempotents of the complex quaternionic sesquilinear product beyond the trivial pair are the elements $\tilde\Pi(\mu) = -\tfrac12e_0+\mu$ over the real vectors $\mu$ with $(\mu,\mu) = \tfrac34$, a two-sphere lying in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$.</p>
+<p><strong>Proof.</strong> The first is <em>Projections of the Biquaternion Sesquialgebra</em>: applying ${}^{*}$ to $\tilde Q\tilde Q^{*} = \tilde Q$ shows $\tilde Q$ Hermitian, so the equation is $\tilde Q^{2} = \tilde Q$, and the Hermitian roots of that equation are the displayed ones. The second is <em>Idempotents of the Quaternionic Sesquilinear Product</em>: inside the quaternion subspace, where a real element has $\tilde Q^{*} = \tilde Q^{\natural}$, the equation $\tilde Q^{\natural}\tilde Q^{*} = \tilde Q$ becomes $(\tilde Q^{\natural})^{2} = \tilde Q$, and its solutions are the displayed ones. $\square$</p>
+<p>The two families are both two-spheres of the algebra, read off the real directions, and the two products place them differently. A real vector $\mu$ with $\sum_k\mu_k^{2} = \tfrac34$ is $\tfrac{\sqrt3}{2}\hat\mu$ for a real $\hat\mu$ with $\sum_k\hat\mu_k^{2} = 1$, so the fourth family is the sphere of radius $\tfrac{\sqrt3}{2}$ about the point $-\tfrac12e_0$, while the Hermitian family is the sphere $\tfrac12e_0+\tfrac i2\hat\mu$ of radius $\tfrac12$ about the point $\tfrac12e_0$: two spheres of different radius and different centre. On the Hermitian sphere the antipode $\hat\mu\mapsto-\hat\mu$ is the complementation $\tilde\Pi_+\mapsto e_0-\tilde\Pi_+$; on the fourth sphere it is the reflection $\mu\mapsto-\mu$, which sends $-\tfrac12e_0+\mu$ to $\tfrac12e_0-\mu$, an element that is <strong>not</strong> a member of the family. The passage from the one sphere to the other is the visible difference between the two sesquilinear products.</p>
+<h2 id="the-central-square-of-an-idempotent">The Central Square of an Idempotent</h2>
+<p>The central square of an idempotent is the invariant that separates the four sets, because it is the second-order invariant of the plain product and every idempotent satisfies a quadratic equation there.</p>
+<p><strong>Theorem (the central square of an idempotent).</strong> On the four idempotent sets the central square takes the values:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>idempotent</th>
+<th>central square</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_0$</td>
+<td>$e_0$</td>
+</tr>
+<tr>
+<td>$\tfrac12(e_0+\xi i)$, $\xi$ a real or a non-trivial root of $-e_0$ (the Hermitian $\tfrac12(e_0+i\hat\mu)$ for a real root $\xi = \hat\mu$)</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-\tfrac12e_0+\mu$, $(\mu,\mu) = \tfrac34$</td>
+<td>$e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> For the plain family, $\bigl(\tfrac12(e_0+\xi i)\bigr)^{\natural}\bigl(\tfrac12(e_0+\xi i)\bigr) = \tfrac14\bigl(e_0-\xi i\bigr)\bigl(e_0+\xi i\bigr) = \tfrac14\bigl(e_0-(\xi i)^{2}\bigr)$, and $(\xi i)^{2} = \xi^{2}i^{2} = e_0$ for a root $\xi$ of $-e_0$, so the central square is $0$; the Hermitian idempotents are the members of that family with a real root, and the computation is the same. For the fourth family the idempotent is real, so $\tilde\Pi^{\natural} = -\tfrac12e_0-\mu$, and $\tilde\Pi^{\natural}\tilde\Pi = \bigl(-\tfrac12e_0-\mu\bigr)\bigl(-\tfrac12e_0+\mu\bigr) = \tfrac14e_0-\mu^{2} = \tfrac14e_0+(\mu,\mu)e_0 = \bigl(\tfrac14+\tfrac34\bigr)e_0 = e_0$, so the central square is $e_0$; the product $\overline{\tilde\Pi}\tilde\Pi$ computed in <em>Idempotents of the Quaternionic Sesquilinear Product</em> is $\tilde\Pi^{\natural}$, which is the same central value. $\square$</p>
+<p>Zero for the two families of zero divisors, $e_0$ for the two units: the central square is the invariant that decides which idempotents are units of the algebra and which are not, and it decides it in opposite directions for the plain family and for the fourth family. The Hermitian idempotents are therefore <strong>null</strong> for the algebra's central square although they are the pure states of the sesquialgebra (<em>Projections of the Biquaternion Sesquialgebra</em>), a coincidence of language worth noticing: the algebraic positivity of the sesquialgebra and the central square of the algebra are different objects, and the idempotents lie in its zero set.</p>
+<h2 id="units-zero-divisors-and-the-antipode">Units, Zero Divisors and the Antipode</h2>
+<p><strong>Theorem (units and zero divisors among the idempotents).</strong> Among the idempotents of the four products, the units of the algebra are $e_0$ and the two-sphere $-\tfrac12e_0+\mu$ of the fourth product; the zero divisors of the algebra are the members of the plain family $\tfrac12(e_0+\xi i)$ with $\xi$ non-trivial or real, and no other idempotent; and $0$ is neither.</p>
+<p><strong>Proof.</strong> The values of the central square are the previous theorem, and the criterion of invertibility is that the central square not vanish (<em>Biquaternion Norm and Invertibility</em>). $\square$</p>
+<p>The theorem is the sharpest separation of the four sets. The natural product's idempotents are both units, so the smallest set is the one with no zero divisors at all. The plain product and the complex sesquilinear product have nontrivial idempotents and every one of them is a zero divisor; the plain product's non-trivial family is a part of the zero-divisor cone that no other product's idempotents reach. The fourth product is the only one whose nontrivial idempotents are units, and they are its own: neither $\tfrac12(e_0+i\hat\mu)$ nor $\tfrac12(e_0+\xi i)$ is an idempotent of the complex quaternionic sesquilinear product, and neither $-\tfrac12e_0+\mu$ nor $\tfrac12(e_0+\xi i)$ is an idempotent of the natural product, whose only idempotents are $0$ and $e_0$.</p>
+<p>The complementation pairs the members of the two families of the algebra's own product.</p>
+<p><strong>Proposition (the antipodal idempotent).</strong> Let $\tilde\Pi$ be an idempotent of the plain product. Then $e_0-\tilde\Pi$ is an idempotent of the plain product, the two are orthogonal in the plain product, $\tilde\Pi(e_0-\tilde\Pi) = 0$, and they sum to $e_0$. The map is the antipode of the parameter set: $\xi\mapsto-\xi$ for the plain family, and $\hat\mu\mapsto-\hat\mu$ for the Hermitian subfamily.</p>
+<p><strong>Proof.</strong> $(e_0-\tilde\Pi)^{2} = e_0-2\tilde\Pi+\tilde\Pi^{2} = e_0-\tilde\Pi$ and $\tilde\Pi(e_0-\tilde\Pi) = \tilde\Pi-\tilde\Pi^{2} = 0$. The parametrisation gives $\tfrac12(e_0+\xi i)$ to $\tfrac12(e_0-\xi i)$. $\square$</p>
+<p>The complementation exists for the plain product alone, because it uses the associativity and the unit of that product; the two-sphere of the fourth product carries no complementation inside itself, and the natural product, having only the trivial pair, has the complementation only on it.</p>
+<h2 id="the-position-in-the-six-subspaces">The Position in the Six Subspaces</h2>
+<p>Each family lives in a specific place, and the places are read off the coefficient conditions of the six subspaces.</p>
+<p><strong>Theorem (the position of the families).</strong> The trivial pair lies in the centre $\mathbb{C}_{\mathbb{B}}$. The Hermitian family lies in $\mathbb{M}_+$ and in no other four-dimensional subspace. The family $-\tfrac12e_0+\mu$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and in no other four-dimensional subspace. The non-trivial family of the plain product lies in none of the four four-dimensional subspaces.</p>
+<p><strong>Proof.</strong> $0$ and $e_0$ are complex multiples of $e_0$, hence central. For $\tfrac12(e_0+i\hat\mu)$ the scalar part is real and the vector part is purely imaginary, which is the definition of $\mathbb{M}_+$; the element is not pure, so it is not in $\mathrm{Vect}(\mathbb{B})$, its scalar part is not purely imaginary, so it is not in $\mathbb{M}_-$, and its vector part is not real, so it is not in $\mathbb{H}_{\mathbb{B}}$ or in $i\mathbb{H}_{\mathbb{B}}$. For $-\tfrac12e_0+\mu$ the coefficients are real, so the element is in $\mathbb{H}_{\mathbb{B}}$; its scalar part is real and nonzero, so it is not anti-Hermitian, and its vector part is real and nonzero, so it is not Hermitian. For the non-trivial $\tilde\Pi = \tfrac12(e_0-\mathbf p')+\tfrac12\mathbf p\,i$ the vector part carries both a real term $-\tfrac12\mathbf p'$ and an imaginary term $\tfrac12\mathbf p\,i$, and the scalar part is real; the element is neither Hermitian, nor anti-Hermitian, nor pure, nor real. $\square$</p>
+<p>The four sets therefore occupy four different regions: the centre for the trivial pair, $\mathbb{M}_+$ for the Hermitian family, $\mathbb{H}_{\mathbb{B}}$ for the fourth family, and no distinguished region at all for the non-trivial family, which is the whole point of its name. The restrictions of the products themselves to these subspaces are <em>The Six Subspaces and the Four Complex Products</em>.</p>
+<h2 id="the-peirce-data">The Peirce Data</h2>
+<p>Of the four products, only the plain one supports the Peirce theory, and the reason is associativity.</p>
+<p><strong>Theorem (the Peirce decomposition is the plain product's own).</strong> For an idempotent $\tilde\Pi$ of the plain product the algebra splits as $\mathbb{B} = \tilde\Pi\mathbb{B}\oplus(e_0-\tilde\Pi)\mathbb{B}$, and the two summands are left ideals; for the idempotents of the other three products no such decomposition is available, because the products are not associative and the multiplication by an idempotent is not a projection.</p>
+<p><strong>Proof.</strong> The decomposition and the ideal structure are <em>Biquaternion Ideals and Peirce Decomposition</em>; the display $\tilde\Pi(e_0-\tilde\Pi) = 0$ of the previous section is the orthogonality the decomposition needs, and it uses associativity, which the three other products fail. $\square$</p>
+<p>The comparison is the last separation of the article, and it is the reason the plain product's idempotents are the idempotents of the algebra. The Hermitian idempotents of the complex sesquilinear product act as projections on the positive cone and on the Hermitian module (<em>Projections of the Biquaternion Sesquialgebra</em>), the two-sphere of the fourth product is the family of idempotents of that product with central square $e_0$, and the natural product has neither, having only the trivial pair; the projector of the algebra's Hilbert structure is the Hermitian one, and it is a projector of the sesquilinear product while being an idempotent of the plain product.</p>
+<h2 id="summary">Summary</h2>
+<p>The four products of <em>The Four Biquaternion Complex Products</em> have four idempotent sets, all containing the trivial pair. The plain product, whose idempotents are the idempotents of the algebra, has the elements $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-e_0$: the trivial pair, the two-sphere $\tfrac12(e_0+i\hat\mu)$ of the Hermitian idempotents, and a four-parameter family lying in none of the four four-dimensional subspaces; the natural product has the trivial pair alone; the complex sesquilinear product has the trivial pair and the Hermitian two-sphere; and the complex quaternionic sesquilinear product has the trivial pair and the two-sphere $-\tfrac12e_0+\mu$ with $(\mu,\mu) = \tfrac34$.</p>
+<p>The central square separates the sets: it is $e_0$ on $e_0$, $0$ on every nontrivial idempotent of the plain product and of the complex sesquilinear product, and $e_0$ on the two-sphere of the fourth product. The idempotents of the four sets that are units of the algebra are therefore $e_0$ and the fourth product's sphere; the idempotents that are zero divisors are the nontrivial ones of the plain product and the Hermitian ones of the complex sesquilinear product; and the natural product's set consists of the two units alone.</p>
+<p>The families occupy the centre, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and no distinguished subspace, and the complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$ pairs the members of the plain family and is available for the plain product alone. The Peirce decomposition is the plain product's, because it needs associativity, and the comparison in one sentence is this: the plain product is the only one of the four whose idempotents build the algebra, the fourth product is the only one whose nontrivial idempotents are units, and the natural product is the only one with no nontrivial idempotent at all. The four sets themselves are tabulated in <em>Comparison Between the Four Biquaternion Products</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Pi$</td>
+<td>an idempotent, $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ in the product at hand</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>a root of $-e_0$, $\xi^{2} = -e_0$; trivial $\pm i$, real $\hat\mu$, or non-trivial $\mathbf p+i\mathbf p'$</td>
+</tr>
+<tr>
+<td>$\hat\mu$</td>
+<td>a real unit vector, $\hat\mu^{2} = -e_0$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_+(\hat\mu) = \tfrac12(e_0+i\hat\mu)$</td>
+<td>the Hermitian idempotents of the complex sesquilinear product</td>
+</tr>
+<tr>
+<td>$-\tfrac12e_0+\mu$</td>
+<td>the idempotents of the complex quaternionic sesquilinear product, $(\mu,\mu) = \tfrac34$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Comparison Between the Four Biquaternion Products</em> (<code>articles_maths/comparison-between-the-four-biquaternion-products.md</code>), for the tabulation of the four idempotent sets and the four square-root problems.</li>
+<li><em>Biquaternion Idempotents and Projections</em> (<code>articles_maths/biquaternion-idempotents-and-projections.md</code>), for the idempotents of the algebra, their bijection with the roots of $-e_0$ and their role in the Peirce decomposition.</li>
+<li><em>Biquaternion Square Roots of Minus One, Zero and Plus One</em> (<code>articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md</code>), for the three families of roots of $-e_0$.</li>
+<li><em>Idempotents of the Quaternionic Product</em> (<code>articles_maths/idempotents-of-the-quaternionic-product.md</code>), for the trivial pair of the natural product.</li>
+<li><em>Projections of the Biquaternion Sesquialgebra</em> (<code>articles_maths/projections-of-the-biquaternion-sesquialgebra.md</code>), for the Hermitian two-sphere and its projections.</li>
+<li><em>Idempotents of the Quaternionic Sesquilinear Product</em> (<code>articles_maths/idempotents-of-the-quaternionic-sesquilinear-product.md</code>), for the two-sphere of units.</li>
+<li><em>Biquaternion Ideals and Peirce Decomposition</em> (<code>articles_maths/biquaternion-ideals-and-peirce-decomposition.md</code>), for the decomposition the plain idempotents carry.</li>
+<li><em>The Squares and the Positive Cone of the Biquaternion Sesquialgebra</em> (<code>articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesquialgebra.md</code>), for the positive cone on whose boundary the Hermitian idempotents lie.</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the criterion that the central square not vanish, which the table applies.</li>
+<li><em>The Six Subspaces and the Four Complex Products</em> (<code>articles_maths/the-six-subspaces-and-the-four-complex-products.md</code>), for the six subspaces and the products on them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

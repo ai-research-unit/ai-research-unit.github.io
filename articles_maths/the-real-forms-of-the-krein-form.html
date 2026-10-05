@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Real Forms of the Krein Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-real-forms-of-the-krein-form"><strong>The Real Forms of the Krein Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Krein form $[\tilde P,\tilde Q]=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ is a Hermitian form on the biquaternion algebra; on the four real slices of the algebra it becomes a real symmetric form, and the four readings together are its real forms. This article records the real basis, the sign matrix $\operatorname{diag}(1,-1,-1,-1,1,-1,-1,-1)$, the signatures on the four slices, and the relation to the fundamental symmetry $J={}^{\natural}$.</p>
+<h2 id="the-real-basis-and-the-sign-matrix">The Real Basis and the Sign Matrix</h2>
+<p>Write $\tilde Q=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$ with $q_\mu,q'_\mu\in\mathbb R$. Because the Krein form is sesquilinear with the complex conjugation, its values on the real basis are</p>
+<p>$$
+[e_\mu,e_\nu]=\varepsilon_\mu\delta_{\mu\nu},\qquad
+[e_\mu,ie_\nu]=-i\,\varepsilon_\mu\delta_{\mu\nu},\qquad
+[ie_\mu,ie_\nu]=\varepsilon_\mu\delta_{\mu\nu}.
+$$</p>
+<p>The mixed entries are purely imaginary, so they do not contribute to the real symmetric form read on the real basis, and the sesquilinear form is real on each of the four real forms below. Its realified Gram matrix is therefore</p>
+<p>$$
+\operatorname{diag}(1,-1,-1,-1,\,1,-1,-1,-1),
+$$</p>
+<p>of <strong>signature $(2,6)$</strong>: positive on the two real directions $e_0$ and $ie_0$, negative on the six remaining real directions. This is the sign matrix of <em>The Krein Gram Matrix and the Restrictions of the Form</em>, read in the eight-dimensional real basis.</p>
+<h2 id="the-four-real-forms">The Four Real Forms</h2>
+<p>The <strong>four real forms</strong> of the algebra are the four real subspaces on which the Krein form is real-valued and symmetric: the quaternion subspace $\mathbb H_{\mathbb B}$, the anti-quaternion subspace $i\mathbb H_{\mathbb B}$, the Hermitian subspace $\mathbb M_+$ and the anti-Hermitian subspace $\mathbb M_-$. On each the restricted form is the one already found in <em>The Six Subspaces under the Krein Form</em>, and each carries signature $(1,3)$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Real form</th>
+<th>Restricted form</th>
+<th>Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quaternion $\mathbb H_{\mathbb B}$</td>
+<td>$q_0^2-q_1^2-q_2^2-q_3^2$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>Anti-quaternion $i\mathbb H_{\mathbb B}$</td>
+<td>$(q'_0)^2-q_1^2-q_2^2-q_3^2$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>Hermitian $\mathbb M_+$</td>
+<td>$q_0^2-(q'_1)^2-(q'_2)^2-(q'_3)^2$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>Anti-Hermitian $\mathbb M_-$</td>
+<td>$(q'_0)^2-q_1^2-q_2^2-q_3^2$</td>
+<td>$(1,3)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each real form is thus a four-dimensional Minkowski-type slice, with one positive and three negative directions. The four are exchanged in pairs by multiplication by $i$, and each contains isotropic elements but admits no totally isotropic subspace of dimension greater than one; the maximal totally isotropic subspaces of the algebra are cut across two of them, as <em>The Witt Index and the Maximal Isotropic Subspaces of the Krein Form</em> records.</p>
+<h2 id="the-complex-subspaces">The Complex Subspaces</h2>
+<p>The two remaining distinguished subspaces are not real forms: the <strong>centre</strong> carries signature $(2,0)$, positive definite, and the <strong>vector subspace</strong> signature $(0,6)$, negative definite. They are the definite rows of the fundamental decomposition, and their pair of signs is the inertia $(2,6)$ of the form. Over the complex subspaces the Krein form is not a real pairing but a Hermitian one, and it is these two that close the algebra as $\mathbb C_{\mathbb B}\oplus\mathrm{Vect}(\mathbb B)$.</p>
+<h2 id="the-relation-to-the-fundamental-symmetry">The Relation to the Fundamental Symmetry</h2>
+<p>The real basis in which the form reads $\operatorname{diag}(1,-1,-1,-1,1,-1,-1,-1)$ is also the basis in which the <strong>fundamental symmetry</strong> $J={}^{\natural}$ is diagonal: $J$ fixes the centre and reverses the vector subspace, and the Krein form is the definite form twisted by $J$,</p>
+<p>$$
+[\tilde P,\tilde Q]=\langle\tilde P,J\tilde Q\rangle_* ,
+$$</p>
+<p>with $\langle\cdot,\cdot\rangle_*$ the positive definite Hermitian form. The four real forms are the slices on which this twisted form is real, and their common signature $(1,3)$ is the real shadow of the signature $(2,6)$.</p>
+<h2 id="summary">Summary</h2>
+<p>In the eight-dimensional real basis the Krein form has sign matrix $\operatorname{diag}(1,-1,-1,-1,1,-1,-1,-1)$, of signature $(2,6)$. Its real forms are the four real four-dimensional slices $\mathbb H_{\mathbb B}$, $i\mathbb H_{\mathbb B}$, $\mathbb M_+$ and $\mathbb M_-$, each of signature $(1,3)$; the centre is positive definite of signature $(2,0)$ and the vector subspace negative definite of signature $(0,6)$. The form is the definite Hermitian form twisted by the fundamental symmetry $J={}^{\natural}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{diag}(1,-1,-1,-1,1,-1,-1,-1)$</td>
+<td>the sign matrix of the Krein form in the real basis</td>
+</tr>
+<tr>
+<td>$(2,6)$</td>
+<td>its signature, the inertia of the form</td>
+</tr>
+<tr>
+<td>$(1,3)$</td>
+<td>the signature of each of the four real forms</td>
+</tr>
+<tr>
+<td>$[\tilde P,\tilde Q]=\langle\tilde P,J\tilde Q\rangle_*$</td>
+<td>the form as the definite form twisted by $J={}^{\natural}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Biquaternion Krein Form and Its Signature</em> (<code>articles_maths/the-biquaternion-krein-form-and-its-signature.md</code>), for the form</li>
+<li><em>The Six Subspaces under the Krein Form</em> (<code>articles_maths/the-six-subspaces-under-the-krein-form.md</code>), for the restriction table</li>
+<li><em>The Fundamental Symmetry of the Biquaternion Algebra</em> (<code>articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md</code>), for $J={}^{\natural}$</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

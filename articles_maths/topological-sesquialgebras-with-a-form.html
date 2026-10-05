@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topological Sesquialgebras with a Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="topological-sesquialgebras-with-a-form"><strong>Topological Sesquialgebras with a Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The layer of <em>Topological Sesquialgebras</em> names no form: it is the topological counterpart of the sesquialgebras of Part I, and the two scalar rules are the only constraints on the product. This article adds the second layer, in which a topological sesquialgebra carries a continuous Hermitian form tied to the product. It is the entry of the category <em>Topology on Sesquialgebras with a degree-2 form</em>, and it stands to <em>Topology on Algebras with a degree-2 form</em> as <em>Topological Sesquialgebras</em> stands to <em>Topological Algebras and Banach Algebras</em>: the same topological object, with a form of degree two, and the same two questions, of the radical and of the collapse.</p>
+<p>The object of the layer is an associative topological $R$-algebra $A$ with a continuous $\varsigma$-semilinear involution $*$ and a continuous Hermitian form $h$, the sesquialgebra being the <strong>derived operation</strong> $x \star y = xy^{*}$ of <em>Sesquialgebras</em>, §<em>The Derived Operation of an Involutive Algebra</em>. The form is tied to the product by the <strong>compatibility</strong></p>
+<p>$$
+h(xy, z) = h(y, x^{*}z)
+$$</p>
+<p>for all $x, y, z \in A$, an identity of the algebra product read through the form. It pairs the left multiplication by $x$ with the left multiplication by $x^{*}$, and read on the ternary product $xy^{*}z$ that the failure of associativity forces it says that the left multiplication by $xy^{*}$ has for adjoint the left multiplication by $yx^{*}$: the identity is $h(xy^{*}z, w) = h(z, yx^{*}w)$ on four variables.</p>
+<p>Two facts organise the article. The compatibility is equivalent, through the Hermitian property, to the second identity $h(x, yz) = h(y^{*}x, z)$; with either form it makes the <strong>radical</strong> of the form a left ideal of the algebra, its image under $*$ a right ideal, and the form nondegenerate exactly when the radical vanishes. And at the trivial involution of the base the form is $R$-bilinear and symmetric, while at the trivial involution of the algebra the compatibility says that the left multiplications are self-adjoint for that symmetric form: the category collapses to the bilinear degree-2 form layer, whose objects are the topological algebras with such a form and whose theory is <em>Bilinear Forms</em>. The two hypotheses of the layer, that the object be of full type and that the form be nondegenerate, are independent, and the examples separate them.</p>
+<p>The article defines the form, its Hermitian property and its radical, proves the two identities of the compatibility and the ideal property of the radical, treats the nondegenerate case and the collapse, separates the objects of full type from those with a nondegenerate form, and works the examples, with the matrix algebra as the model. The positivity and the norm of the form are <em>Positivity and the Positive Cone of a Hermitian Form</em> and <em>The Norm Defined by a Form</em>, the adjoint of an operator is <em>The Adjoint under a Hermitian Form</em>, the conjugation and the field case are <em>The Sesquilinear Form and the Conjugation</em>, the algebraic theory of the form is <em>Hermitian Forms on a Sesquialgebra</em>, the ternary product that the compatibility pairs is <em>Algebraic J*-Algebras</em> and, topologically, <em>The Topological J*-Algebra</em>, and the layer without a form is <em>Topological Sesquialgebras</em>. Throughout, $(R,\varsigma)$ is a commutative involutive topological ring with $1$, $A$ is an associative topological $R$-algebra with a continuous $\varsigma$-semilinear involution $*$, and $h : A \times A \to R$ is a continuous Hermitian form.</p>
+<h2 id="the-form">The Form</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> Let $A$ be a topological $R$-module. A <strong>sesquilinear form</strong> on $A$ is a biadditive map $h : A \times A \to R$ with</p>
+<p>$$
+h(\lambda x, y) = \lambda\,h(x,y), \qquad h(x, \lambda y) = \varsigma(\lambda)\,h(x,y)
+$$</p>
+<p>for all $\lambda \in R$ and all $x, y \in A$. The form is <strong>Hermitian</strong> when $h(y,x) = \varsigma(h(x,y))$ for all $x, y$, and <strong>skew-Hermitian</strong> when $h(y,x) = -\varsigma(h(x,y))$. It is <strong>continuous</strong> when it is continuous as a map $A \times A \to R$ for the product topology, and <strong>nondegenerate</strong> when its <strong>radical</strong></p>
+<p>$$
+A^{\perp} = \{x \in A : h(x,y) = 0 \text{ for all } y \in A\}
+$$</p>
+<p>is zero. A <strong>topological sesquialgebra with a form</strong> is an associative topological $R$-algebra with a continuous $\varsigma$-semilinear involution $*$, together with a continuous Hermitian form $h$ that is compatible with the product in the sense of the next section; its sesquialgebra is the derived operation $x \star y = xy^{*}$.</p>
+<p>The conventions are those of the sesquialgebra block, the pairing $\varphi(x,y) = \tau(xy^{*})$ of <em>The Sesquilinear Adjoint Operator</em>, §<em>The Two Parities</em>: $R$-linear in the first slot and $\varsigma$-semilinear in the second, with the values in $R$ rather than in an algebra, and with $\varepsilon = 1$ in the sense of <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>, §<em>Hermitian Forms over a Ring with Involution</em>, where it is the first slot that carries the twist; the bilinear forms that return at the collapse are those of <em>Bilinear Forms</em>, §<em>Definition</em>.</p>
+<p><strong>Proposition (the diagonal).</strong> Let $h$ be Hermitian. Then $h(x,x) = \varsigma(h(x,x))$ for every $x$, so the diagonal takes its values in the fixed ring $R^{\varsigma}$ of the base involution. If $h$ is skew-Hermitian then $h(x,x) = -\varsigma(h(x,x))$, so the diagonal vanishes when $2$ is invertible and $\varsigma = \mathrm{id}$.</p>
+<p><em>Proof.</em> $h(x,x) = \varsigma(h(x,x))$ is the Hermitian condition on the pair $(x,x)$, and the skew case is the other condition on the same pair. For the last statement, $h(x,x) = -h(x,x)$ gives $2h(x,x) = 0$. $\square$</p>
+<p><strong>Proposition (the radical of a continuous form is closed).</strong> Let $h$ be continuous. Then its radical is a closed submodule of $A$.</p>
+<p><em>Proof.</em> For each $y$ the map $\varphi_y : x \mapsto h(x,y)$ is continuous, being the restriction of $h$ to $A \times \{y\}$, and its kernel is closed because $\{0\}$ is closed in $R$. The radical is $\bigcap_y \ker\varphi_y$, an intersection of closed sets, hence closed; it is a subgroup and stable under the scalars because each $\varphi_y$ is additive and $R$-linear. $\square$</p>
+<p><strong>Remark (the radical is two-sided).</strong> The definition of the radical is not one-sided: because $h$ is Hermitian, the elements annihilated on the right are the same as those annihilated on the left, since $h(x,y) = 0$ for all $y$ gives $h(y,x) = \varsigma(h(x,y)) = 0$ for all $y$, which is the same condition read with the variables renamed. The radical is therefore the two-sided orthogonal of $A$, and the nondegeneracy of the definition above is symmetric in the two slots.</p>
+<h3 id="the-model">The Model</h3>
+<p><strong>Example (the matrix algebra).</strong> Let $A = M_n(\mathbb{C})$ with the conjugate transpose $X^{*} = \overline{X}^{T}$ and the form</p>
+<p>$$
+h(X,Y) = \operatorname{tr}(XY^{*}).
+$$</p>
+<p>The form is continuous for the entrywise topology, linear in the first slot and $\varsigma$-semilinear in the second, since $h(X, \lambda Y) = \operatorname{tr}(X \overline{\lambda} Y^{*}) = \varsigma(\lambda)h(X,Y)$ with $\varsigma$ the conjugation. It is Hermitian:</p>
+<p>$$
+h(Y,X) = \operatorname{tr}(YX^{*}) = \sum_{i,j} Y_{ij}\overline{X_{ij}} = \varsigma\Bigl(\sum_{i,j} X_{ij}\overline{Y_{ij}}\Bigr) = \varsigma\bigl(h(X,Y)\bigr),
+$$</p>
+<p>and it is nondegenerate, its Gram matrix in the unit basis being the identity: if $\operatorname{tr}(XY^{*}) = 0$ for every $Y$ then $X = 0$, taking $Y$ with a single nonzero entry. This is the form of the layer, and every statement below is read on it. It is the pairing $\varphi(x,y) = \tau(xy^{*})$ of <em>The Sesquilinear Adjoint Operator</em>, §<em>The Two Parities</em>, with $\tau = \operatorname{tr}$; for a central linear functional, $\tau(uv) = \tau(vu)$, the compatibility is automatic, since $h(xy,z) = \tau(xyz^{*})$ and $h(y,x^{*}z) = \tau\bigl(y(x^{*}z)^{*}\bigr) = \tau(yz^{*}x)$ agree.</p>
+<h2 id="the-compatibility">The Compatibility</h2>
+<h3 id="the-identity-and-its-equivalent">The Identity and Its Equivalent</h3>
+<p><strong>Definition.</strong> Let $h$ be a Hermitian form on $A$. The form is <strong>compatible with the product</strong> when</p>
+<p>$$
+h(xy, z) = h(y, x^{*}z) \qquad \text{for all } x, y, z \in A,
+$$</p>
+<p>that is, when the left multiplication by $x$ and the left multiplication by $x^{*}$ are paired by $h$.</p>
+<p><strong>Theorem (the equivalent form).</strong> A Hermitian form $h$ is compatible if and only if</p>
+<p>$$
+h(x, yz) = h(y^{*}x, z)
+$$</p>
+<p>for all $x, y, z \in A$.</p>
+<p><em>Proof.</em> Let $h(xy,z) = h(y,x^{*}z)$. Then $h(x, yz) = \varsigma(h(yz, x)) = \varsigma(h(z, y^{*}x)) = h(y^{*}x, z)$, where the first and last equalities are the Hermitian property and the middle is the compatibility on the pair $(y, z, x)$. The converse is the same chain read backwards. $\square$</p>
+<p><strong>Theorem (the ternary identity).</strong> Let $h$ be compatible. Then</p>
+<p>$$
+h(xy^{*}z, w) = h(z, yx^{*}w)
+$$</p>
+<p>for all $x, y, z, w \in A$.</p>
+<p><em>Proof.</em> The compatibility applied to the element $c = xy^{*}$ in the place of the first variable reads $h(cz, w) = h(z, c^{*}w)$, and $c^{*} = (xy^{*})^{*} = yx^{*}$, because $*$ is an anti-automorphism of order two. $\square$</p>
+<p><strong>Remark (the reading).</strong> The identity is the compatibility at the element $xy^{*}$, and it says that the one-sided multiplications come in adjoint pairs: the left multiplication $z \mapsto xy^{*}z$ has for adjoint the left multiplication $w \mapsto yx^{*}w$. This is the form-level version of $L_a^{\dagger} = L_{\sigma(a)}$ of <em>Adjoints in a Commutative Involutive Algebra</em>, §<em>The Adjoint of a Multiplication</em>, where the identity $B(ax,y) = B(x,\sigma(a)y)$ plays the same role. The ternary product $xy^{*}z$ that carries it is the triple product of <em>Sesquialgebras</em>, §<em>The Triple Product</em>, studied algebraically in <em>The Sesquilinear Associator and the Ternary Product</em>, with the axioms of <em>Algebraic J*-Algebras</em> and the topological development of <em>The Topological J*-Algebra</em>.</p>
+<p><strong>Example (the matrix algebra, continued).</strong> On $M_n(\mathbb{C})$ the form $h(X,Y) = \operatorname{tr}(XY^{*})$ is compatible:</p>
+<p>$$
+h(XY, Z) = \operatorname{tr}(XYZ^{*}), \qquad h(Y, X^{*}Z) = \operatorname{tr}\bigl(Y(X^{*}Z)^{*}\bigr) = \operatorname{tr}(YZ^{*}X) = \operatorname{tr}(XYZ^{*}),
+$$</p>
+<p>the middle equality by the definition of the conjugate transpose and the last by the cyclicity of the trace. The ternary identity reads</p>
+<p>$$
+\operatorname{tr}(XY^{*}ZW^{*}) = \operatorname{tr}\bigl(Z(YX^{*}W)^{*}\bigr) = \operatorname{tr}(ZW^{*}XY^{*}),
+$$</p>
+<p>which is the same computation on the four variables.</p>
+<h3 id="the-radical-is-an-ideal">The Radical Is an Ideal</h3>
+<p><strong>Theorem.</strong> Let $h$ be compatible. Then the radical $A^{\perp}$ is a left ideal of $A$, and its image $*(A^{\perp})$ is a right ideal.</p>
+<p><em>Proof.</em> Let $r \in A^{\perp}$ and $a \in A$. By the equivalent form, $h(r, yz) = h(y^{*}r, z)$ for all $y, z$, and the left side vanishes because $r$ is in the radical; hence $h(y^{*}r, z) = 0$ for all $y, z$. As $y$ runs over $A$ so does $y^{*}$, so $h(ar, z) = 0$ for all $a$ and all $z$, that is $ar \in A^{\perp}$. The radical is therefore a left ideal, and the image of a left ideal under the anti-automorphism $*$ is a right ideal. $\square$</p>
+<p><strong>Remark (the radical is not stable under the involution in general).</strong> The theorem gives a left ideal and, through $*$, a right ideal, and the two agree only when $*(A^{\perp}) = A^{\perp}$, which is not automatic: on $M_n(\mathbb{C})$ with the form $h(X,Y) = \operatorname{tr}(XE_{11}Y^{*})$ of the examples below the radical is the set of matrices whose first column is zero, a left ideal that the conjugate transpose carries onto the set of matrices whose first row is zero. The asymmetry is that of the compatibility identity itself, which puts the involution on one factor and the product on the other, and it is the reason the quotient theory of the form belongs to <em>Hermitian Forms on a Sesquialgebra</em> and not to this entry.</p>
+<p><strong>Proposition (nondegeneracy and the Gram matrix).</strong> Let $A$ be a free module of finite rank with basis $e_1, \dots, e_m$ and let $H$ be the Gram matrix, $H_{ij} = h(e_i, e_j)$. Then $H$ is Hermitian, $\varsigma(H_{ij}) = H_{ji}$, and the radical is the image of the kernel of the multiplication by $H$ under the involution of the base,</p>
+<p>$$
+A^{\perp} = \varsigma\bigl(\ker H\bigr) = \ker H^{T},
+$$</p>
+<p>so $h$ is nondegenerate exactly when the multiplication by $H$ is injective. If $R$ is a field then the multiplication by $H$ is injective exactly when $H$ is invertible, so over a field the form is nondegenerate exactly when the Gram matrix is invertible.</p>
+<p><em>Proof.</em> The Hermitian property of $h$ gives $H_{ji} = h(e_j,e_i) = \varsigma(h(e_i,e_j)) = \varsigma(H_{ij})$, which is the assertion that $H$ is Hermitian for the involution $\varsigma$ read entrywise. In the basis</p>
+<p>$$
+h(x, y) = \sum_{i,j} x_i\,H_{ij}\,\varsigma(y_j) = x^{T}H\,\varsigma(y) = (H^{T}x)^{T}\varsigma(y),
+$$</p>
+<p>so $h(x,y) = 0$ for all $y$ exactly when $H^{T}x = 0$, because $\varsigma(y)$ ranges over the whole module as $y$ does, and that is $x \in \ker H^{T}$. The involutions of the base and of the matrix are related by $\varsigma(H) = H^{T}$, and therefore $H^{T}\varsigma(x) = \varsigma(Hx)$ and $\varsigma(H^{T}x) = H\varsigma(x)$; the first identity gives $\varsigma(\ker H) \subseteq \ker H^{T}$ and the second gives the reverse inclusion, so $\ker H^{T} = \varsigma(\ker H)$, and the radical vanishes exactly when the multiplication by $H$ is injective. Over a field an injective square matrix is invertible. $\square$</p>
+<p><strong>Remark (nondegeneracy and nonsingularity).</strong> The nondegeneracy used here is the vanishing of the radical, the notion of <em>Bilinear Forms</em>, §<em>Non-Degenerate Forms</em> in the field case and of <em>Unitary Geometry over a Field with Involution</em>, §<em>Definition and Matrices</em>; over a general ring it is weaker than the isomorphism condition that <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>, §<em>Hermitian Forms over a Ring with Involution</em> calls <strong>nonsingularity</strong>, and that condition for a free module of finite rank is the invertibility of the Gram matrix. The trace form of the model is nonsingular, its Gram matrix in the unit basis being the identity, and the two notions coincide over a field, which is the case in which the criterion above is stated as the invertibility of $H$.</p>
+<h2 id="the-collapse-at-the-trivial-involution">The Collapse at the Trivial Involution</h2>
+<p><strong>Theorem (the collapse of the layer).</strong> Let $(A,h)$ be a topological sesquialgebra with a form and suppose $\varsigma = \mathrm{id}$. Then $h$ is $R$-bilinear and symmetric, $*$ is $R$-linear, and the derived operation $x \star y = xy^{*}$ is $R$-bilinear. If moreover $* = \mathrm{id}$ the compatibility reads</p>
+<p>$$
+h(xy, z) = h(y, xz),
+$$</p>
+<p>and $(A,h)$ is an object of the bilinear degree-2 form layer: a topological $R$-algebra with a continuous symmetric bilinear form satisfying the pairing condition $h(ax,y) = h(x,ay)$, that is, one for which every left multiplication is self-adjoint. Conversely every such algebra with such a form is a topological sesquialgebra with a form over $(R,\mathrm{id})$.</p>
+<p><em>Proof.</em> With $\varsigma = \mathrm{id}$ the involution of the base is trivial, so the form satisfies $h(\lambda x, y) = \lambda h(x,y) = h(x, \lambda y)$, which is $R$-bilinearity, and the Hermitian condition reads $h(y,x) = h(x,y)$, which is symmetry. The involution $*$ is then $R$-linear by its semilinearity, and the derived operation is bilinear. The compatibility with $* = \mathrm{id}$ is the displayed identity, which says that $h(xy,z) = h(y,xz)$ for all $x, y, z$, that is that the left multiplication by $x$ is self-adjoint for the symmetric form; the converse is the same reading. $\square$</p>
+<p><strong>Remark (the commutative case).</strong> The collapsed identity $h(xy,z) = h(y,xz)$ is the pairing condition $B(ax,y) = B(x,\sigma(a)y)$ of <em>Adjoints in a Commutative Involutive Algebra</em>, §<em>The Pairing and the Adjoint</em>, with $\sigma = \mathrm{id}$ and $a = x$, for which the adjoint of a left multiplication is again a left multiplication. When in addition the algebra is commutative it is the classical invariance of a bilinear form under an associative product, $h(xy,z) = h(x,yz)$: by commutativity and symmetry,</p>
+<p>$$
+h(xy,z) = h(y,xz) = h(y,zx) = h(zx,y) = h(x,zy) = h(x,yz),
+$$</p>
+<p>the fourth equality being the compatibility on the triple $(z,x,y)$ and the rest the commutativity of the product and the symmetry of the form. The model is $h(x,y) = \tau(xy^{*})$ for a central linear functional $\tau$, the pairing of <em>The Sesquilinear Adjoint Operator</em>, for which both identities read $\tau(xyz^{*})$.</p>
+<p><strong>Theorem (objects of full type).</strong> Let $(A,h)$ be a topological sesquialgebra with a form whose derived operation $x \star y = xy^{*}$ is of <strong>full type</strong> in the sense of <em>Sesquialgebras</em>, §<em>The Collapse at the Identity</em>. If $\varsigma \neq \mathrm{id}$ then $\star$ is neither associative nor commutative.</p>
+<p><em>Proof.</em> The derived operation is a sesquialgebra over $(R,\varsigma)$ whose hypotheses are those of the collapse theorem of <em>Sesquialgebras</em>, §<em>The Collapse at the Identity</em>, which is a statement about the scalars and the product. The form is not used in it, and the topology is not used in it. $\square$</p>
+<p>The theorem is the sense in which the form does not bilinearize the product: a compatible Hermitian form is a structure on the object, and it leaves the failure of associativity of the sesquilinear product exactly where the collapse theorem puts it. The form repairs nothing; what it supplies is the pairing in which the adjoint of an operator is defined, which is the subject of <em>The Adjoint under a Hermitian Form</em>.</p>
+<h3 id="full-type-and-nondegeneracy">Full Type and Nondegeneracy</h3>
+<p><strong>Proposition (the two conditions are independent).</strong> The condition that the derived operation be of full type and the condition that the form be nondegenerate are independent: neither implies the other.</p>
+<p><em>Proof.</em> The form $h(X,Y) = \operatorname{tr}(XE_{11}Y^{*})$ on $M_n(\mathbb{C})$ is compatible, since</p>
+<p>$$
+h(XY,Z) = \operatorname{tr}(XYE_{11}Z^{*}), \qquad h(Y, X^{*}Z) = \operatorname{tr}\bigl(Y(X^{*}Z)^{*}E_{11}\bigr) = \operatorname{tr}(YZ^{*}XE_{11}) = \operatorname{tr}(XYE_{11}Z^{*}),
+$$</p>
+<p>and its radical is the set of matrices whose first column is zero, which is nonzero, so the form is degenerate; while the derived operation on $M_n(\mathbb{C})$ is of full type, because the algebra is unital and faithful over $\mathbb{C}$, and for a unital algebra the generation and annihilation conditions are automatic. In the other direction let $A = \mathbb{C}$ with the zero product, with $*$ the conjugation and $h(z,w) = z\,\varsigma(w)$; the form is nondegenerate, since $z \neq 0$ gives $h(z,1) = z \neq 0$, and it is compatible because $xy = 0$ and $x^{*}z = 0$ make both sides of the identity vanish, while the derived operation is the zero product, whose products generate the zero submodule and not $A$. $\square$</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-examples-of-the-layer">The Examples of the Layer</h3>
+<p><strong>Example (the complex numbers).</strong> Let $A = \mathbb{C}$ over $(\mathbb{C},\varsigma)$ with the conjugation, with $* = \varsigma$ and $h(z,w) = z\,\varsigma(w) = z\overline{w}$. The form is Hermitian and nondegenerate, and it is compatible:</p>
+<p>$$
+h(xy, z) = xy\overline{z}, \qquad h(y, x^{*}z) = y\,\varsigma(x^{*}z) = y\overline{z}\,\varsigma(x^{*}) = y\overline{z}x,
+$$</p>
+<p>where $\varsigma(x^{*}) = \varsigma(\varsigma(x)) = x$; the two agree. The form is the trace form on $\mathbb{C}$ itself, $h(z,w) = z\overline{w}$, of <em>Unitary Geometry over a Field with Involution</em>, §<em>Definition and Matrices</em>. The derived operation is the sesquilinear product $x \star y = x\overline{y}$ of <em>Sesquialgebras</em>, §<em>Examples</em>, and it is of full type; since the base involution is the conjugation and not the identity, the theorem on objects of full type gives that it is neither associative nor commutative, and the collapse does not apply to it.</p>
+<p><strong>Example (the matrix algebra).</strong> On $M_n(\mathbb{C})$ the form $h(X,Y) = \operatorname{tr}(XY^{*})$ is a compatible nondegenerate Hermitian form, the model of the layer, and the derived operation is of full type, as in <em>Matrix Sesquialgebras</em>. The ternary identity reads</p>
+<p>$$
+\operatorname{tr}(XY^{*}ZW^{*}) = \operatorname{tr}\bigl(Z(YX^{*}W)^{*}\bigr) = \operatorname{tr}(ZW^{*}XY^{*}),
+$$</p>
+<p>and the algebraic theory of the ternary product that the identity pairs is <em>Algebraic J*-Algebras</em>, whose topological development is <em>The Topological J*-Algebra</em>.</p>
+<p><strong>Example (a degenerate form on a full type object).</strong> On $M_n(\mathbb{C})$ the form $h(X,Y) = \operatorname{tr}(XE_{11}Y^{*})$ is compatible, and its radical is the nonzero left ideal of the matrices whose first column is zero; the derived operation is nevertheless of full type. The example is the witness that full type does not force nondegeneracy.</p>
+<p><strong>Example (a nondegenerate form on an object that is not of full type).</strong> On $\mathbb{C}$ with the zero product, the conjugation and $h(z,w) = z\varsigma(w)$ the form is nondegenerate and compatible, and the derived operation is the zero product, which is not of full type. The example is the witness in the other direction, and it is the zero product of <em>Examples of Sesquialgebras</em>, §<em>The Zero Product</em>.</p>
+<p><strong>Example (the collapsed model).</strong> Let $R$ be a field with $\varsigma = \mathrm{id}$ and let $A = R$ with the algebra product and $h(x,y) = xy$. The form is bilinear, symmetric and nondegenerate, with $h(xy,z) = xyz = h(y,xz)$, so the pair is an object of the bilinear degree-2 form layer; the derived operation coincides with the algebra product, and the collapse is the one of the theorem.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>topological sesquialgebra with a form</strong> is an associative topological $R$-algebra $A$ with a continuous $\varsigma$-semilinear involution $*$ and a continuous <strong>Hermitian form</strong> $h$, linear in the first slot and $\varsigma$-semilinear in the second, with $h(y,x) = \varsigma(h(x,y))$, that is <strong>compatible with the product</strong> in the identity $h(xy,z) = h(y,x^{*}z)$; the sesquialgebra of the layer is the derived operation $x \star y = xy^{*}$, and the identity pairs the left multiplication by $x$ with the left multiplication by $x^{*}$ through the form. The equivalent form is $h(x,yz) = h(y^{*}x,z)$, and the four-variable consequence $h(xy^{*}z, w) = h(z, yx^{*}w)$ says that the left multiplication by $xy^{*}$ has for adjoint the left multiplication by $yx^{*}$, so the one-sided multiplications come in adjoint pairs. The <strong>radical</strong> $A^{\perp} = \{x : h(x,y) = 0 \text{ for all } y\}$ is a left ideal, its image $*(A^{\perp})$ is a right ideal, and the two need not agree; the form is <strong>nondegenerate</strong> exactly when the radical vanishes, and the radical of a continuous form is closed. On a free module of finite rank the <strong>Gram matrix</strong> $H_{ij} = h(e_i,e_j)$ is Hermitian for $\varsigma$ and the radical is the image under $\varsigma$ of the kernel of the multiplication by $H$; over a field the form is nondegenerate exactly when $H$ is invertible, and nonsingularity, which is the isomorphism condition of the bilinear layer, is the invertibility of $H$ over any ring.</p>
+<p>At $\varsigma = \mathrm{id}$ the form is $R$-bilinear and symmetric and the layer <strong>collapses</strong> to the topological algebras with a continuous symmetric form whose left multiplications are self-adjoint, the compatibility being $h(xy,z) = h(y,xz)$ when the algebra involution is also trivial, which is the classical invariance $h(xy,z) = h(x,yz)$ when in addition the algebra is commutative; the theory of those bilinear forms is <em>Bilinear Forms</em> and <em>Topology on Algebras with a degree-2 form</em>. The collapse is not available with a nontrivial involution: the derived operation <strong>of full type</strong> is neither associative nor commutative, so a compatible Hermitian form does not bilinearize the product, and the two hypotheses of the layer, full type and nondegeneracy, are independent, the matrix algebra with the form $\operatorname{tr}(XE_{11}Y^{*})$ separating them one way and the complex numbers with the zero product the other. The examples are the complex field with $z\varsigma(w)$, the matrix algebra with the trace form, the degenerate form on the matrix algebra, the zero product with a nondegenerate form, and the collapsed field.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h(x,y)$</td>
+<td>a sesquilinear form, $R$-linear in $x$ and $\varsigma$-semilinear in $y$</td>
+</tr>
+<tr>
+<td>$h(y,x) = \varsigma(h(x,y))$</td>
+<td>the Hermitian condition; the skew-Hermitian one has $-\varsigma$ in its place</td>
+</tr>
+<tr>
+<td>$A^{\perp}$</td>
+<td>the radical $\{x : h(x,y) = 0 \text{ for all } y\}$; the form is nondegenerate when it is zero</td>
+</tr>
+<tr>
+<td>$h(xy,z) = h(y,x^{*}z)$</td>
+<td>the compatibility of the form with the product</td>
+</tr>
+<tr>
+<td>$h(x,yz) = h(y^{*}x,z)$</td>
+<td>the equivalent form of the compatibility</td>
+</tr>
+<tr>
+<td>$h(xy^{*}z, w) = h(z, yx^{*}w)$</td>
+<td>the ternary identity: the left multiplication by $xy^{*}$ has adjoint the left multiplication by $yx^{*}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(XY^{*})$</td>
+<td>the model form on $M_n(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$H_{ij} = h(e_i,e_j)$</td>
+<td>the Gram matrix, Hermitian for $\varsigma$; the radical is $\varsigma(\ker H)$, so over a field the form is nondegenerate exactly when $H$ is invertible</td>
+</tr>
+<tr>
+<td>$x \star y = xy^{*}$</td>
+<td>the derived operation, the sesquialgebra of the layer</td>
+</tr>
+<tr>
+<td>$\varsigma = \mathrm{id}$</td>
+<td>the collapse: the form is bilinear and symmetric, and with $* = \mathrm{id}$ the object is a topological algebra whose left multiplications are self-adjoint</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for Hermitian forms over a ring with involution, their radicals and their Gram matrices.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the algebras with involution on which the forms of the layer are built.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Frobenius algebras with an associative bilinear form, the commutative case of the collapse.</li>
+<li>Seth Warner, <em>Topological Rings</em> (North-Holland, 1993), for the continuity of the form and of the involution of the base.</li>
+<li>Harald Upmeier, <em>Jordan Algebras in Analysis, Operator Theory, and Quantum Mechanics</em> (American Mathematical Society, 1987), for the $\mathrm{J}^*$-triples and the ternary identity of the product $xy^{*}z$ that the compatibility pairs.</li>
+<li>Cho-Ho Chu, <em>Jordan Structures in Geometry and Analysis</em> (Cambridge University Press, 2012), for the Hermitian structures of an algebra read algebraically.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

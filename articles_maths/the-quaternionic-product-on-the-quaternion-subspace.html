@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Quaternionic Product on the Quaternion Subspace — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-quaternionic-product-on-the-quaternion-subspace"><strong>The Quaternionic Product on the Quaternion Subspace</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The product of this group is the <strong>complex quaternionic bilinear product</strong></p>
+<p>$$
+\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
+$$</p>
+<p>the second of the four products of the biquaternion algebra $\mathbb{B}$ (<em>The Four Biquaternion Complex Products</em> §<em>The Complex Quaternionic Bilinear Product</em>), whose algebra is <em>Biquaternions as a Quaternionic Algebra over $\mathbb{C}$</em>. The previous five articles read the product over the whole algebra; this one reads it on the four-dimensional real subspace on which the whole batch becomes classical,</p>
+<p>$$
+\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3 ,
+$$</p>
+<p>the <strong>quaternion subspace</strong> (<em>Introduction to the Six Subspaces</em> §<em>The Quaternion Subspace</em>). Its elements are the real quaternions: the four coefficients are real, and the subspace is the fixed space of complex conjugation, $\bar{\tilde P} = \tilde P$ if and only if $\tilde P \in \mathbb{H}_{\mathbb{B}}$. On it the natural conjugation acts as the quaternion conjugate, $h^{\natural} = \bar h$, which fixes the real line alone; the fixed set of ${}^{\natural}$ on the whole algebra is the centre, not the subspace.</p>
+<p>The article establishes four things. First, the subspace is closed under the product, and the restriction is the familiar operation of putting the first factor into its quaternion conjugate,</p>
+<p>$$
+h\star g = \bar h\,g ,
+$$</p>
+<p>which is the isotope of the quaternion algebra by its conjugation. Second, the restricted product is <strong>not associative</strong>, the triple $(i,i,j)$ of units witnessing it, so it is neither the quaternion algebra nor the opposite quaternion algebra: it is the isotope. Third, its left multiplications are the plain left multiplications by the conjugates and form a monoid isomorphic to the <strong>opposite</strong> of the quaternion algebra, which is the precise sense in which the opposite algebra appears on this subspace. Fourth, the whole batch restricts classically on the subspace: the square is the reduced norm $|h|^2e_0$, the reduced norm of a real quaternion is a sum of four real squares and vanishes only at the origin, so the cone of the second article meets the subspace at the origin alone and every nonzero element is a unit, and the symmetrisation is the Euclidean inner product placed on the real line.</p>
+<h2 id="the-restriction-of-the-product">The Restriction of the Product</h2>
+<p><strong>Theorem (the subspace is closed).</strong> For $h,g \in \mathbb{H}_{\mathbb{B}}$ the product $h\star g$ lies in $\mathbb{H}_{\mathbb{B}}$, and on real quaternions</p>
+<p>$$
+h\star g = h^{\natural}g = \bar h\,g ,
+$$</p>
+<p>where $\bar h$ is the quaternion conjugate of $h$.</p>
+<p><strong>Proof.</strong> For a real quaternion $h = h_0+h_1e_1+h_2e_2+h_3e_3$ the natural conjugation is $h^{\natural} = h_0-h_1e_1-h_2e_2-h_3e_3$, the quaternion conjugate; the conjugation is an anti-automorphism of the plain product, so $\bar h g$ is again a real quaternion, and the coefficients of $\bar h g$ are sums of products of real numbers and of the structure constants of the quaternion algebra, hence real. $\square$</p>
+<p><strong>Corollary (the subspace is a real algebra with a left unit only).</strong> $\mathbb{H}_{\mathbb{B}}$ is a four-dimensional real algebra under $\star$, with $e_0$ as a left unit, $e_0\star g = g$, and no right unit, $h\star e_0 = \bar h$, which differs from $h$ as soon as the vector part of $h$ is nonzero. In particular the subspace is closed under $\star$ but is not the quaternion algebra: the element $h = i$ gives $i\star e_0 = -i$ whereas $i e_0 = i$.</p>
+<p><strong>Remark (the source of the restriction).</strong> All four products of the chapter restrict to the quaternion subspace (<em>The Six Subspaces and the Four Complex Products</em>): on real quaternions they read $hg$, $\bar hg$, $h\bar g$ and $\bar h\bar g = \overline{gh}$. The three non-associative ones are the three isotopes of the quaternion algebra by the three nontrivial maps among the identity and the two conjugations, and only the first is associative. The product of this group is the one with the conjugation in the first slot, and its restriction $\bar hg$ is the isotope by the quaternion conjugation. The isotope reading was introduced for the whole algebra in <em>Biquaternions as a Quaternionic Algebra over $\mathbb{C}$</em> and used in the first three articles of this group; here it is the only reading, the twisting map being an involution of the algebra.</p>
+<h2 id="the-two-smaller-real-subspaces">The Two Smaller Real Subspaces</h2>
+<p>Inside $\mathbb{H}_{\mathbb{B}}$ sit two smaller real subspaces, the real vector subspace $\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ and the real line $\mathbb{R}e_0$, and the product restricts to each in a way worth recording, because the restriction along the chain $\mathbb{R}e_0\subset\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3\subset\mathbb{H}_{\mathbb{B}}$ is what the vector part of the whole algebra sees.</p>
+<p><strong>The real vector subspace.</strong> For real pure quaternions $\mathbf u,\mathbf v$, the natural conjugation is the negation, $\mathbf u^{\natural} = -\mathbf u$, so</p>
+<p>$$
+\mathbf u\star\mathbf v = \mathbf u^{\natural}\mathbf v = -\mathbf u\mathbf v = -(\mathbf u,\mathbf v)e_0+\mathbf u\times\mathbf v .
+$$</p>
+<p>With the plain product written $\mathbf u\mathbf v = -(\mathbf u,\mathbf v)+\mathbf u\times\mathbf v$, this is the <strong>negative of the plain product</strong> of the two pure quaternions, and the two terms change sign together:</p>
+<p>$$
+\mathbf u\star\mathbf v = (\mathbf u,\mathbf v)e_0-\mathbf u\times\mathbf v .
+$$</p>
+<p>The value is the Euclidean dot product of the pair placed on the real line, minus the cross product; it is a real quaternion, so it stays inside $\mathbb{H}_{\mathbb{B}}$, but it does not stay inside the real vector subspace, because its scalar part $(\mathbf u,\mathbf v)$ is nonzero as soon as the two vectors are not orthogonal. The restriction is thus a map into the whole quaternion subspace, and the part of the value that returns to the real vector subspace is the pure part alone.</p>
+<p><strong>The real line.</strong> On $\mathbb{R}e_0$ the product is</p>
+<p>$$
+(ae_0)\star(be_0) = ab\,e_0 ,
+$$</p>
+<p>the ordinary product of the real coordinates, and the real line is a two-sided subalgebra of the restricted algebra, with $e_0$ as its unit.</p>
+<p><strong>Remark (the sign contrast).</strong> The middle restriction is the one that explains the sign contrasts of the batch: the plain product of two pure vectors is $-(\mathbf u,\mathbf v)+\mathbf u\times\mathbf v$, and reading the first slot through ${}^{\natural}$ multiplies by $-1$, so the restricted product is $+(\mathbf u,\mathbf v)e_0-\mathbf u\times\mathbf v$, with both terms negated. On the real line the sign is invisible, the two products agreeing there; on the real vector subspace it is visible in both terms.</p>
+<h2 id="the-failure-of-associativity-on-the-subspace">The Failure of Associativity on the Subspace</h2>
+<p><strong>Theorem (the restriction is not associative).</strong> The product on $\mathbb{H}_{\mathbb{B}}$ is not associative; the triple $(h,g,k) = (i,i,j)$ of units witnesses it. With $i\star i = \bar\imath\,i = e_0$ and $i\star j = \bar\imath\, j = -ij = -k$,</p>
+<p>$$
+(i\star i)\star j = e_0\star j = j , \qquad i\star(i\star j) = i\star(-k) = \bar\imath(-k) = ik = -j ,
+$$</p>
+<p>so the two bracketings are $j$ and $-j$.</p>
+<p><strong>Proof.</strong> The computations use the multiplication table $ij = k$ and $ik = -j$ of the quaternion units and the left unit $e_0\star j = j$. $\square$</p>
+<p><strong>Corollary (what the subspace is not).</strong> The restricted product is neither the quaternion algebra nor its opposite: both are associative, and the restricted product is not. The witness $h = i$, $g = e_0$ separates it from the quaternion algebra, $i\star e_0 = -i$ against $i e_0 = i$, and the same pair separates it from the opposite algebra, whose product is $e_0 i = i$ against $-i$.</p>
+<p><strong>Remark.</strong> The failure of associativity is not visible on the triple $(i,j,k)$ of distinct units: there both bracketings give $-e_0$, since $(i\star j)\star k = (\bar\imath j)\star k = (-k)\star k = k^2 = -e_0$ and $i\star(j\star k) = i\star(\bar\jmath k) = i\star(-i) = i^2 = -e_0$, and the two agree. It is visible as soon as the first factor is repeated, and the triple $(i,i,j)$ above is the witness. The subspace thus carries a non-associative product in the same way the whole algebra does, and the associativity of the quaternion algebra is lost on restriction.</p>
+<h2 id="the-norm-the-units-and-the-cone">The Norm, the Units and the Cone</h2>
+<p><strong>Theorem (the square is the reduced norm).</strong> For $h \in \mathbb{H}_{\mathbb{B}}$,</p>
+<p>$$
+h\star h = \bar h h = N(h)e_0 = |h|^2e_0 ,
+$$</p>
+<p>the reduced norm of the real quaternion $h$, a non-negative real number that vanishes only at $h = 0$.</p>
+<p><strong>Proof.</strong> The square lemma of <em>Idempotents of the Quaternionic Product</em> gives $h\star h = N(h)e_0$, and on real quaternions $N(h) = \bar h h$ is the sum of the four real squares $h_0^2+h_1^2+h_2^2+h_3^2$, which is real, non-negative and zero only at the origin. $\square$</p>
+<p><strong>Corollary (the element theory of the subspace is classical).</strong> On $\mathbb{H}_{\mathbb{B}}$: the only idempotents are $0$ and $e_0$; the only square-zero element is $0$; every nonzero element is a unit, the inverse of $h$ being $\bar h/|h|^2$. In particular the nilpotent cone of the second article meets the subspace at the origin alone, and the zero-divisor theory of the algebra has no content on the real quaternions.</p>
+<p><strong>Proof.</strong> An idempotent satisfies $|h|^2e_0 = h$, so $h$ lies in the real line and $h_0^2 = h_0$, giving $0$ and $1$; a square-zero element has $|h|^2 = 0$, giving $h = 0$; the inverse formula is checked directly, $\bar h h = h\bar h = |h|^2\neq0$. $\square$</p>
+<p><strong>Remark.</strong> This is the classical contrast of the batch. On the real quaternion subspace the product is a non-associative operation with a left unit only, and its element theory is as good as it can be: no nontrivial idempotent, no nilpotent, and every element invertible. On the whole algebra the same product has a nonzero cone of zero divisors, of real dimension six. The two statements are the same statement read on different subspaces: the norm form is positive definite on $\mathbb{H}_{\mathbb{B}}$ and indefinite on $\mathbb{B}$, and the cone $\{N = 0\}$ is the origin on the former and a six-dimensional cone on the latter.</p>
+<h2 id="the-left-multiplications-on-the-subspace">The Left Multiplications on the Subspace</h2>
+<p><strong>Theorem (the restricted left multiplications).</strong> For $h \in \mathbb{H}_{\mathbb{B}}$ the left multiplication $L_h$ of the product preserves $\mathbb{H}_{\mathbb{B}}$, and it is the plain left multiplication by the conjugate,</p>
+<p>$$
+L_h = L^{\mathrm{plain}}_{\bar h} , \qquad L_h(g) = \bar h g .
+$$</p>
+<p><strong>Theorem (the monoid of the subspace is the opposite quaternion algebra).</strong> For $h,g \in \mathbb{H}_{\mathbb{B}}$,</p>
+<p>$$
+L_h\circ L_g = L_{gh} ,
+$$</p>
+<p>and the monoid $\{L_h : h \in \mathbb{H}_{\mathbb{B}}\}$ is isomorphic to the <strong>opposite</strong> of the quaternion algebra, $\mathbb{H}^{\mathrm{op}}$.</p>
+<p><strong>Proof.</strong> $L_h(L_g(k)) = \bar h(\bar g k) = (\bar h\bar g)k = \overline{gh}\,k = L_{gh}(k)$ by the associativity of the quaternion product and the anti-automorphism property $\bar h\bar g = \overline{gh}$. The monoid is therefore the quaternion algebra with its product reversed, and $\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$ as an abstract algebra because the conjugation is an isomorphism onto the opposite. $\square$</p>
+<p><strong>Remark (the precise sense in which the opposite algebra appears).</strong> The restricted product <strong>is not</strong> the opposite quaternion algebra — the opposite of the quaternion algebra is associative, and the restricted product is not. What coincides with the opposite quaternion algebra is its family of left multiplications: the monoid they form is $\mathbb{H}^{\mathrm{op}}$, by the theorem just proved and by the general theorem of the previous article, $M_L\cong\mathbb{B}^{\mathrm{op}}$, restricted to the real quaternions. Equivalently, the restricted product $\bar hg$ is the isotope of the quaternion algebra by the conjugation; the conjugation is an isomorphism of the quaternion algebra onto its opposite, since $\bar h\bar g = \overline{gh}$, so the isotope sits in the isotopy class of the opposite algebra. Isotopy and not isomorphism is the exact relation: an isomorphism with the opposite quaternion algebra would carry its associativity back to the restricted product, and the restricted product is not associative (<em>A Taste of Jordan Algebras</em> §<em>Isotopes and Homotopes</em>).</p>
+<h2 id="the-algebra-it-is-not">The Algebra It Is Not</h2>
+<p>The restricted product is a four-dimensional real algebra. Three other four-dimensional real algebra structures live on the same space, and the article closes by separating them.</p>
+<p><strong>Not the quaternion algebra, and not its opposite.</strong> Both are associative, and the restricted product is not; the witnesses are in the section above.</p>
+<p><strong>Not the symmetric bilinear form.</strong> The symmetrisation of the restricted product is</p>
+<p>$$
+h\circ g = \tfrac12\bigl(\bar h g + \bar g h\bigr) = \langle h,g\rangle\,e_0 ,
+$$</p>
+<p>the Euclidean inner product placed on the real line, a commutative operation with no vector part. It is not a Jordan algebra: at $h = g = e_1$ its two sides in the Jordan identity are $e_0$ and $0$, which is the failure computed for the whole algebra in <em>The Symmetrised Quaternionic Product and the Hermitian Subspace</em> and recorded for the subspace in <em>The Six Subspaces and the Four Complex Products</em>.</p>
+<p><strong>Not a Lie algebra.</strong> The antisymmetrisation $[h,g]_{\star} = \bar hg-\bar gh$ stays inside the subspace, but it fails the Jacobi identity; at the triple $(e_0,e_1,e_2)$ the cyclic sum of the three brackets is a nonzero multiple of $e_3$ (<em>The Six Subspaces and the Four Complex Products</em>, and <em>Biquaternion Lie Algebras</em> for the whole algebra).</p>
+<p><strong>What it is.</strong> The restricted product is the isotope of the quaternion division algebra by its conjugation: closed, with a left unit and no right one, non-associative, with the classical positive element theory of the division algebra, and with the opposite quaternion algebra as the monoid of its left multiplications. It is the classical picture of the batch, and the article that follows reads the same product in the matrix model.</p>
+<h2 id="summary">Summary</h2>
+<p>The quaternion subspace $\mathbb{H}_{\mathbb{B}}$, of real dimension four, is the fixed space of complex conjugation, and it is closed under the quaternionic product: on real quaternions the product reads $h\star g = \bar hg$, the isotope of the quaternion algebra by its conjugation. The restriction is not associative, the triple $(i,i,j)$ of units being a witness, so it is neither the quaternion algebra nor the opposite quaternion algebra; the opposite appears instead as the monoid of left multiplications, $L_h\circ L_g = L_{gh}$, and as the isotopy class of the isotope. The square of a real quaternion is its reduced norm $|h|^2e_0$, a sum of four real squares, so the only idempotents are $0$ and $e_0$, the only square-zero element is $0$, every nonzero element is a unit, and the nilpotent cone of the whole algebra meets the subspace at the origin alone. The symmetrisation restricts to the Euclidean inner product on the real line and fails the Jordan identity; the antisymmetrisation stays inside the subspace and fails Jacobi. The subspace is thus the classical picture of the batch: the same product, with the element theory of a division algebra, on the four-dimensional real form on which the norm is positive definite.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>the basis, $e_0$ the identity, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>the quaternion subspace $\mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$</td>
+</tr>
+<tr>
+<td>$h = h_0+h_1e_1+h_2e_2+h_3e_3$</td>
+<td>a real quaternion, all four coefficients real</td>
+</tr>
+<tr>
+<td>$\bar h = h_0-h_1e_1-h_2e_2-h_3e_3$</td>
+<td>the quaternion conjugate, the restriction of ${}^{\natural}$</td>
+</tr>
+<tr>
+<td>${}^{\natural}$</td>
+<td>the natural conjugation $\tilde P^{\natural} = P_0-\mathbf P$</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$</td>
+<td>the complex quaternionic bilinear product, the multiplication of this group</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde Q$</td>
+<td>the plain (associative) product of the algebra</td>
+</tr>
+<tr>
+<td>$N(h) = \bar hh = |h|^2$</td>
+<td>the reduced norm of a real quaternion</td>
+</tr>
+<tr>
+<td>$L_h$</td>
+<td>the left multiplication of the product, $L_h(g) = \bar hg$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^{\mathrm{op}}$</td>
+<td>the opposite quaternion algebra, the monoid of the left multiplications</td>
+</tr>
+<tr>
+<td>$\langle h,g\rangle$</td>
+<td>the Euclidean inner product of the four real coordinates</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for isotopes and homotopes, the equivalence that survives a change of product, and the isotope by an anti-automorphism.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the restriction of a product to a subalgebra and the failure of associativity on a subalgebra of an associative algebra.</li>
+<li>John Voight, <em>Quaternion Algebras</em> (Springer, 2021), for the quaternion division algebra, the reduced norm and the positivity of its norm form.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the quaternion conjugation, the inner product and the multiplication table of the units.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the conjugation as an anti-automorphism of order two and the opposite algebra it defines.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

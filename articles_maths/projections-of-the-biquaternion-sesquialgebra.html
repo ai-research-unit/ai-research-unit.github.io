@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projections of the Biquaternion Sesquialgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="projections-of-the-biquaternion-sesquialgebra"><strong>Projections of the Biquaternion Sesquialgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complex sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ of <em>The Four Biquaternion Complex Products</em> is the multiplication of the sesquialgebra $(\mathbb{B},\star)$ of <em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em>, and its idempotents are the solutions of the equation $\tilde Q\star\tilde Q=\tilde Q$. This article solves that equation. The answer is exact: <strong>an element is idempotent for the sesquilinear multiplication if and only if it is a Hermitian idempotent of the algebra</strong>, so the idempotents of the multiplication are the trivial pair $0,e_0$ together with the continuum of the elements</p>
+<p>$$
+\tilde\Pi_+(\hat\mu)=\tfrac12\bigl(e_0+i\hat\mu\bigr) ,
+$$</p>
+<p>indexed by the real unit vectors $\hat\mu$ of the vector subspace. The whole of the article is the move that makes the equation collapse to that family: applying the involution ${}^{*}$ to the equation shows that an idempotent of $\star$ is its own conjugate, and a Hermitian element whose $\star$-square is itself is an idempotent of the ordinary product.</p>
+<p>The result is the element theory of the batch, and it is the sharpest of the three ways in which the sesquilinear multiplication separates the elements. The algebra's own idempotents, classified in <em>Biquaternion Idempotents and Projections</em>, are the elements $\tfrac12(e_0+\xi i)$ over all roots $\xi$ of $-e_0$, and the root $\xi$ may be trivial, real or mixed; apart from the trivial pair, the Hermitian ones are exactly those with a real root, and they are the projections above. The others are not idempotent for the multiplication, and the failure is computed here rather than quoted. The same separation is read in the comparison of the four products, <em>Comparison Between the Four Biquaternion Products</em>, §<em>The Squares, the Idempotents and the Roots</em>, where the four idempotent sets are tabulated and the sesquilinear column is the family of the projections.</p>
+<p>The setting is that of <em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em> and <em>Sesquialgebras</em>: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit and $e_k^{2}=-e_0$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu=Q_0e_0+\mathbf Q$ with $Q_\mu\in\mathbb{C}$; the conjugations are the natural one ${}^{\natural}$, $\tilde Q^{\natural}=Q_0-\mathbf Q$, and the star, $\tilde Q^{*}=\overline{Q_0}-\overline{\mathbf Q}$, the conjugate-linear involution of the algebra, with ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; and the multiplication is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The two halves of the involution are the distinguished subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of <em>Hermitian and Skew-Hermitian Elements</em>. The idempotents of the algebra, the roots of $-e_0$ and the zero divisors that the nontrivial ones determine are <em>Biquaternion Idempotents and Projections</em>, <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em> and <em>Biquaternion Zero Divisors</em>.</p>
+<h2 id="the-idempotent-equation">The Idempotent Equation</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> An element $\tilde Q$ is <strong>idempotent for the multiplication</strong> $\star$, or a <strong>$\star$-idempotent</strong>, when</p>
+<p>$$
+\tilde Q\star\tilde Q=\tilde Q .
+$$</p>
+<p>The idempotents of the associative product $\tilde P\tilde Q$ are called the <strong>idempotents of the algebra</strong>, and they are written $\tilde\Pi$ with $\tilde\Pi^{2}=\tilde\Pi$.</p>
+<p><strong>Remark.</strong> The two equations differ only in the second factor, $\tilde Q\tilde Q^{*}=\tilde Q$ against $\tilde Q\tilde Q=\tilde Q$, and the whole of the article is the consequence of that one difference. The $\star$-equation is the algebra equation with the conjugate read on the second factor, so its solutions are the algebra idempotents on which the involution makes no difference.</p>
+<h3 id="every-math39-idempotent-is-hermitian">Every $\star$-Idempotent Is Hermitian</h3>
+<p><strong>Theorem.</strong> Let $\tilde Q$ satisfy $\tilde Q\star\tilde Q=\tilde Q$. Then $\tilde Q$ is Hermitian,</p>
+<p>$$
+\tilde Q^{*}=\tilde Q .
+$$</p>
+<p><strong>Proof.</strong> The equation reads $\tilde Q\tilde Q^{*}=\tilde Q$. The square $\tilde Q\tilde Q^{*}$ is fixed by the involution for every $\tilde Q$, by <em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em>, §<em>The Squares and the Positive Cone</em>: $(\tilde Q\tilde Q^{*})^{*}=\tilde Q\tilde Q^{*}$. Applying ${}^{*}$ to the equation therefore gives</p>
+<p>$$
+\tilde Q\tilde Q^{*}=\tilde Q^{*} .
+$$</p>
+<p>The left-hand sides of the equation and of its conjugate are the same, so the right-hand sides are equal, $\tilde Q=\tilde Q^{*}$. $\square$</p>
+<p><strong>Remark.</strong> The proof uses two things and no more: the square is Hermitian, and the involution is injective. The self-adjointness is therefore forced on every solution of the $\star$-equation, and it is the reason the equation reduces to the algebra's: a Hermitian element has $\tilde Q^{*}=\tilde Q$, hence $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}=\tilde Q\tilde Q=\tilde Q^{2}$, and the two squares coincide.</p>
+<h3 id="the-reduction">The Reduction</h3>
+<p><strong>Corollary.</strong> An element is idempotent for the multiplication $\star$ if and only if it is a Hermitian idempotent of the algebra:</p>
+<p>$$
+\tilde Q\star\tilde Q=\tilde Q \quad\Longleftrightarrow\quad \tilde Q=\tilde Q^{*}\ \text{ and }\ \tilde Q^{2}=\tilde Q .
+$$</p>
+<p><strong>Proof.</strong> If $\tilde Q\star\tilde Q=\tilde Q$ then $\tilde Q$ is Hermitian by the theorem, and $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}=\tilde Q^{2}$, so $\tilde Q^{2}=\tilde Q$. Conversely a Hermitian idempotent has $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}=\tilde Q\tilde Q=\tilde Q^{2}=\tilde Q$. $\square$</p>
+<p><strong>Remark.</strong> The reduction is the whole content of the element theory: the $\star$-idempotents are cut out of the algebra's idempotents by the single condition of Hermitianness. The three families of the algebra's idempotents of <em>Biquaternion Idempotents and Projections</em> are then separated by that condition, and the next sections carry out the separation.</p>
+<p><strong>Proposition (the scalar part of the equation).</strong> Let $\tilde Q$ satisfy $\tilde Q\star\tilde Q=\tilde Q$. Then the scalar part of $\tilde Q$ is the sum of the modulus squares of its coordinates,</p>
+<p>$$
+Q_0=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu=0}^{3}Q_\mu\overline{Q_\mu}=\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2} ,
+$$</p>
+<p>a real number, and it is nonzero unless $\tilde Q=0$.</p>
+<p><strong>Proof.</strong> The scalar part of the square is $\sum_\mu\lvert Q_\mu\rvert^{2}$ by <em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em>, §<em>The Squares and the Positive Cone</em>; taking the scalar part of $\tilde Q\star\tilde Q=\tilde Q$ gives $Q_0=\sum_\mu\lvert Q_\mu\rvert^{2}$. The sum of the modulus squares is a nonnegative real number, and it vanishes only when every coordinate vanishes. $\square$</p>
+<p><strong>Remark.</strong> The display is a constraint and not a definition: it rules out at once the algebra idempotents with a non-real scalar part, and it is the first appearance of the nonnegativity of the sesquilinear square that <em>The Squares and the Positive Cone of the Biquaternion Sesquialgebra</em> develops.</p>
+<h2 id="the-projections">The Projections</h2>
+<h3 id="the-classification">The Classification</h3>
+<p><strong>Theorem (the idempotents of the multiplication).</strong> The idempotents of the sesquilinear multiplication $\star$ are $0$, $e_0$ and the elements</p>
+<p>$$
+\tilde\Pi_+(\hat\mu)=\tfrac12\bigl(e_0+i\hat\mu\bigr) , \qquad \hat\mu\in\mathbb{R}^{3},\ (\hat\mu,\hat\mu)=1 ,
+$$</p>
+<p>where $\hat\mu=\sum_{k=1}^{3}\hat\mu_k e_k$ ranges over the real vectors of the vector subspace with $(\hat\mu,\hat\mu)=\sum_k\hat\mu_k^{2}=1$. There are no others.</p>
+<p><strong>Proof.</strong> By the corollary, the $\star$-idempotents are the Hermitian idempotents of the algebra. The idempotents of the algebra are classified in <em>Biquaternion Idempotents and Projections</em>: every idempotent is either trivial or of the form $\tfrac12(e_0+\xi i)$ with $\xi$ a root of $-e_0$, and every root falls into one of the three families of <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em>. The idempotent is Hermitian exactly when $\xi^{*}=-\xi$: indeed $\tilde\Pi(\xi)^{*}=\tfrac12(e_0+\xi^{*}i^{*})=\tfrac12(e_0-\xi^{*}i)$, which is $\tilde\Pi(\xi)$ exactly when $-\xi^{*}=\xi$. The roots with $\xi^{*}=-\xi$ are the trivial roots $\pm i$, whose idempotents are the trivial pair $0$ and $e_0$, and the real roots $\xi=\pm\mu$ over the real vectors $\mu$ with $(\mu,\mu)=1$; a mixed root $\xi=\boldsymbol p+i\boldsymbol p'$ has $\boldsymbol p'\neq0$, so $\xi^{*}=-\boldsymbol p+i\boldsymbol p'\neq-\boldsymbol p-i\boldsymbol p'=-\xi$, and its idempotent is not Hermitian. Writing $\hat\mu=\pm\mu$ absorbs the sign, and $\tfrac12(e_0+\mu i)=\tfrac12(e_0+i\mu)=\tilde\Pi_+(\hat\mu)$ because $i$ is central, while the trivial roots give $0$ and $e_0$. $\square$</p>
+<p><strong>Remark.</strong> The word <strong>projection</strong> is used here for a Hermitian idempotent of the algebra and for nothing else, and the $\star$-idempotents are exactly the projections. The two families of <em>Biquaternion Idempotents and Projections</em> that are not Hermitian are the ones the multiplication discards, and they are treated in the next section.</p>
+<h3 id="the-coordinates">The Coordinates</h3>
+<p><strong>Proposition (the coordinate form).</strong> For a real vector $\hat\mu$ with $(\hat\mu,\hat\mu)=1$ and coordinates $\hat\mu_k\in\mathbb{R}$,</p>
+<p>$$
+\tilde\Pi_+(\hat\mu)=\tfrac12 e_0+\tfrac{i}{2}\sum_{k=1}^{3}\hat\mu_k e_k ,
+$$</p>
+<p>so its scalar part is $\tfrac12$, its vector part is $\tfrac{i}{2}\hat\mu$, and its four coordinates are $\bigl(\tfrac12,\tfrac{i}{2}\hat\mu_1,\tfrac{i}{2}\hat\mu_2,\tfrac{i}{2}\hat\mu_3\bigr)$. Its scalar part is the sum of the modulus squares of its coordinates,</p>
+<p>$$
+\tfrac12=\tfrac14+\tfrac14\sum_k\hat\mu_k^{2} ,
+$$</p>
+<p>which is the scalar-part identity of the previous section read on this family.</p>
+<p><strong>Proof.</strong> The coordinates are read from the display, and $\sum_k\hat\mu_k^{2}=1$ gives the scalar-part identity $Q_0=\sum_\mu\lvert Q_\mu\rvert^{2}$. $\square$</p>
+<p><strong>Remark.</strong> The scalar part $\tfrac12$ is fixed by $(\hat\mu,\hat\mu)=1$ and is the same for the whole family; the square of the scalar part is $\tfrac14$, the sum of the squares of the vector coordinates is $\tfrac14$, and the two add to the scalar part. The scalar part is therefore not an extra datum: it is forced by the normalisation of the direction, and the family is the whole set of the projections and not a proper subfamily of it.</p>
+<h3 id="the-complement-and-the-pairing-of-the-directions">The Complement and the Pairing of the Directions</h3>
+<p><strong>Proposition (the complement is the antipode).</strong> For every real vector $\hat\mu$ with $(\hat\mu,\hat\mu)=1$,</p>
+<p>$$
+e_0-\tilde\Pi_+(\hat\mu)=\tilde\Pi_+(-\hat\mu),
+$$</p>
+<p>and the two are idempotents orthogonal in the algebra and summing to the unit,</p>
+<p>$$
+\tilde\Pi_+(\hat\mu)\tilde\Pi_+(-\hat\mu)=0 , \qquad \tilde\Pi_+(\hat\mu)+\tilde\Pi_+(-\hat\mu)=e_0 .
+$$</p>
+<p><strong>Proof.</strong> The first identity is $e_0-\tfrac12(e_0+i\hat\mu)=\tfrac12(e_0-i\hat\mu)=\tilde\Pi_+(-\hat\mu)$. For the orthogonality, multiply out, using $\hat\mu^{2}=-(\hat\mu,\hat\mu)e_0=-e_0$:</p>
+<p>$$
+\tilde\Pi_+(\hat\mu)\tilde\Pi_+(-\hat\mu)=\tfrac14\bigl(e_0+i\hat\mu\bigr)\bigl(e_0-i\hat\mu\bigr)=\tfrac14\bigl(e_0-\hat\mu^{2}\bigr)=\tfrac14\bigl(e_0+e_0\bigr)=0 ,
+$$</p>
+<p>and the sum is immediate. $\square$</p>
+<p><strong>Remark.</strong> The complementary pair of a projection is the projection at the antipodal direction, exactly as in the classification of <em>Biquaternion Idempotents and Projections</em>, where the pair is indexed by the class $\{\xi,-\xi\}$ of the root.</p>
+<p><strong>Proposition (when two projections are orthogonal).</strong> For real vectors $\hat\mu,\hat\nu$ with $(\hat\mu,\hat\mu)=(\hat\nu,\hat\nu)=1$,</p>
+<p>$$
+\tilde\Pi_+(\hat\mu)\tilde\Pi_+(\hat\nu)=0 \quad\Longleftrightarrow\quad \hat\nu=-\hat\mu .
+$$</p>
+<p><strong>Proof.</strong> Multiplying out and using $\hat\mu\hat\nu=-(\hat\mu,\hat\nu)e_0+\hat\mu\times\hat\nu$ for the product of two pure real vectors gives</p>
+<p>$$
+\tilde\Pi_+(\hat\mu)\tilde\Pi_+(\hat\nu)=\tfrac14\Bigl(\bigl(1+(\hat\mu,\hat\nu)\bigr)e_0-\hat\mu\times\hat\nu+i\bigl(\hat\mu+\hat\nu\bigr)\Bigr) .
+$$</p>
+<p>The scalar part vanishes when $(\hat\mu,\hat\nu)=-1$, and for two real vectors with $(\hat\mu,\hat\mu)=(\hat\nu,\hat\nu)=1$ this forces $\hat\nu=-\hat\mu$, because then $(\hat\mu+\hat\nu,\hat\mu+\hat\nu)=(\hat\mu,\hat\mu)+2(\hat\mu,\hat\nu)+(\hat\nu,\hat\nu)=0$, and a real vector whose square vanishes is zero. With $\hat\nu=-\hat\mu$ the vector part is $-\hat\mu\times(-\hat\mu)+i(\hat\mu-\hat\mu)=0$ as well. Conversely $\hat\nu=-\hat\mu$ gives $0$ by the previous proposition. $\square$</p>
+<p><strong>Remark.</strong> Orthogonality is therefore as sparse as it can be: a projection is orthogonal, as an algebra idempotent, to one other projection of the family and to no third one, so the family is not an orthogonal set but a family of complementary pairs. The Peirce decomposition of the algebra relative to the standard pair is <em>Biquaternion Ideals and Peirce Decomposition</em>.</p>
+<h3 id="the-standard-pair">The Standard Pair</h3>
+<p><strong>Example.</strong> The two projections at the directions $\pm e_3$ are the standard idempotents of the algebra of <em>Biquaternion Idempotents and Projections</em>,</p>
+<p>$$
+\tilde\Pi_+(\hat e_3)=\tfrac12(e_0+ie_3)=\tilde\Pi_1 , \qquad \tilde\Pi_+(-\hat e_3)=\tfrac12(e_0-ie_3)=\tilde\Pi_2 ,
+$$</p>
+<p>and they are the images under $\Phi$ of the two diagonal matrix units of the matrix model: $\tilde\Pi_+(\hat e_3)$ corresponds to $E_{11}$ and $\tilde\Pi_+(-\hat e_3)$ to $E_{22}$, as the transport of <em>Biquaternion $2\times2$ Matrix Element Representation</em> records. Since the equalities are equalities in the algebra, they hold for the multiplication $\star$ as well, a Hermitian element having the same square in the two products.</p>
+<h2 id="the-contrast-with-the-algebra">The Contrast with the Algebra</h2>
+<h3 id="the-idempotents-of-the-algebra">The Idempotents of the Algebra</h3>
+<p>The classification of the algebra's idempotents is <em>Biquaternion Idempotents and Projections</em>: every idempotent is either trivial or of the form</p>
+<p>$$
+\tilde\Pi(\xi)=\tfrac12\bigl(e_0+\xi i\bigr) , \qquad \xi^{2}=-e_0 ,
+$$</p>
+<p>and the map $\xi\mapsto\tilde\Pi(\xi)$ is a bijection from the roots of $-e_0$ onto the idempotents of $\mathbb{B}$. The roots fall into three families, by <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em>: the trivial roots $\pm i$, whose idempotents are $0$ and $e_0$; the real roots $\pm\mu$ over the real vectors $\mu$ with $(\mu,\mu)=1$, whose idempotents are the projections $\tilde\Pi_+(\pm\mu)$ of the previous section; and the mixed roots $\xi=\boldsymbol p+i\boldsymbol p'$, whose idempotents are Hermitian for no value of the pair of real vectors.</p>
+<h3 id="the-non-hermitian-idempotents-are-not-idempotent-for-the-multiplication">The Non-Hermitian Idempotents Are Not Idempotent for the Multiplication</h3>
+<p><strong>Proposition (the contrapositive).</strong> Let $\tilde\Pi$ be an idempotent of the algebra. If $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ then $\tilde\Pi$ is Hermitian; equivalently, an idempotent of the algebra that is not Hermitian is not idempotent for the multiplication.</p>
+<p><strong>Proof.</strong> A solution of $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ satisfies $\tilde\Pi^{*}=\tilde\Pi$ by the theorem of §<em>The Idempotent Equation</em>, applied to an element that is already idempotent for the algebra. Conversely a Hermitian idempotent has $\tilde\Pi\star\tilde\Pi=\tilde\Pi\tilde\Pi^{*}=\tilde\Pi^{2}=\tilde\Pi$, so the $\star$-idempotents among the idempotents of the algebra are exactly the Hermitian ones. $\square$</p>
+<p><strong>Example (the simplest non-Hermitian idempotent).</strong> Take the real orthonormal pair $(\mu,\nu)=(e_1,e_2)$ and the real pair $(b,d)=(\sqrt2,1)$, so that $b^{2}-d^{2}=1$ and</p>
+<p>$$
+\xi=b\mu+d\nu i=\sqrt2\,e_1+ie_2
+$$</p>
+<p>is a mixed root of $-e_0$ of <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em>, the two conditions of that classification being $b^{2}-d^{2}=1$ and $\mu\perp\nu$. Then</p>
+<p>$$
+\tilde\Pi(\xi)=\tfrac12(e_0+\xi i)=\tfrac12 e_0+\tfrac12\bigl(\sqrt2\,ie_1-e_2\bigr)
+$$</p>
+<p>is an idempotent of the algebra, and it is not Hermitian. Its square in the multiplication is</p>
+<p>$$
+\tilde\Pi(\xi)\star\tilde\Pi(\xi)=\tilde\Pi(\xi)\tilde\Pi(\xi)^{*}=e_0+\tfrac{\sqrt2}{2}\,ie_1+\tfrac{\sqrt2}{2}\,ie_3\neq\tilde\Pi(\xi) .
+$$</p>
+<p><strong>Proof.</strong> The idempotence for the algebra is that of <em>Biquaternion Idempotents and Projections</em>, and the failure of Hermitianness is read from $\tilde\Pi(\xi)^{*}=\tfrac12(e_0-\xi^{*}i)$ with $\xi^{*}=-\sqrt2 e_1+ie_2\neq\xi$, where ${}^{*}$ acts on the central $i$ as $i^{*}=-i$ because $i$ sits among the coefficients. For the square, multiply out,</p>
+<p>$$
+\tilde\Pi(\xi)\tilde\Pi(\xi)^{*}=\tfrac14\bigl(e_0+\xi i\bigr)\bigl(e_0-\xi^{*}i\bigr)=\tfrac14\bigl(e_0+(\xi-\xi^{*})i+\xi\xi^{*}\bigr) ,
+$$</p>
+<p>using $i^{*}=-i$ and $i^{2}=-1$. Here $\xi-\xi^{*}=2\sqrt2\,e_1$, and</p>
+<p>$$
+\xi\xi^{*}=\bigl(\sqrt2 e_1+ie_2\bigr)\bigl(-\sqrt2 e_1+ie_2\bigr)=3e_0+2\sqrt2\,ie_3 ,
+$$</p>
+<p>by the multiplication of the basis, so the sum is $\tfrac14(4e_0+2\sqrt2\,ie_1+2\sqrt2\,ie_3)=e_0+\tfrac{\sqrt2}{2}ie_1+\tfrac{\sqrt2}{2}ie_3$, which differs from $\tilde\Pi(\xi)$. $\square$</p>
+<p><strong>Remark.</strong> The element is the one recorded in <em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em> as the distinguishing case of the proposition: it is idempotent for the bilinear product and not for the sesquilinear one. Its scalar part is $\tfrac12$, but $\mathrm{Sc}(\tilde\Pi\star\tilde\Pi)=1$, so the scalar-part identity of §<em>The Idempotent Equation</em> fails at the same element, which is a second reading of the same failure.</p>
+<h3 id="the-two-sets-compared">The Two Sets Compared</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>idempotent set</th>
+<th>description</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>of the associative multiplication $\tilde P\tilde Q$</td>
+<td>the elements $\tilde\Pi(\xi)=\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-e_0$</td>
+<td>a real four-dimensional family together with two isolated points</td>
+</tr>
+<tr>
+<td>of the sesquilinear multiplication $\star$</td>
+<td>the trivial pair and the projections $\tilde\Pi_+(\hat\mu)$ over the real vectors with $(\hat\mu,\hat\mu)=1$</td>
+<td>a real two-dimensional family together with two isolated points</td>
+</tr>
+<tr>
+<td>in common</td>
+<td>the trivial pair $0,e_0$ and the projections</td>
+<td>the sesquilinear set</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem.</strong> The idempotents of the two multiplications agree exactly on the trivial pair and the projections, so the common set is the sesquilinear set, and every idempotent of the algebra that is not Hermitian is dropped in the passage to $\star$.</p>
+<p><strong>Proof.</strong> The idempotents of the algebra are the elements $\tilde\Pi(\xi)$ over the roots $\xi$ of $-e_0$; those that are Hermitian are the trivial pair together with the real-root family, by the classification theorem of §<em>The Projections</em>; and the idempotents of $\star$ are the trivial pair together with the Hermitian idempotents, by the same theorem. The two sets therefore meet in the trivial pair and the projections, which is the whole of the $\star$ set. $\square$</p>
+<p><strong>Remark.</strong> The passage from the algebra to the sesquialgebra keeps one half of the idempotents and loses the other, and it keeps the half that the algebra's own element theory singles out as the projections. The two sets agree on $0$ and $e_0$ because the trivial idempotents are Hermitian and central; they disagree on every nontrivial non-Hermitian idempotent, of which the element of the example above is the one the group article records.</p>
+<h2 id="the-matrix-model">The Matrix Model</h2>
+<p><strong>Proposition.</strong> Under the isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of <em>Biquaternion $2\times2$ Matrix Element Representation</em>, which satisfies $\Phi(\tilde Q^{*})=\Phi(\tilde Q)^{\dagger}$ and $\Phi(\tilde P\tilde Q^{*})=\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}$, the projections are the rank-one Hermitian idempotents of the matrix algebra,</p>
+<p>$$
+\Phi\bigl(\tilde\Pi_+(\hat\mu)\bigr)=\tfrac12\bigl(I+i\Phi(\hat\mu)\bigr) ,
+$$</p>
+<p>and the family is the set of the rank-one Hermitian idempotents of $M_2(\mathbb{C})$.</p>
+<p><strong>Proof.</strong> The image of a Hermitian idempotent is Hermitian, $\Phi(\tilde\Pi)^{\dagger}=\Phi(\tilde\Pi^{*})=\Phi(\tilde\Pi)$, and idempotent, $\Phi(\tilde\Pi)^{2}=\Phi(\tilde\Pi^{2})=\Phi(\tilde\Pi)$. The image of $\tilde\Pi_+(\hat\mu)$ is computed from $\Phi(\tilde Q)=\sum_\mu Q_\mu\Phi(e_\mu)$ on the coordinates of §<em>The Projections</em>, and $\Phi(i\hat\mu)=i\Phi(\hat\mu)$ because $\Phi$ is $\mathbb{C}$-linear. The matrices $i\Phi(e_1),i\Phi(e_2),i\Phi(e_3)$ are Hermitian, traceless and $i\Phi(e_k)^{2}=I$, and they form a real basis of the traceless Hermitian matrices; hence $i\Phi(\hat\mu)=\sum_k\hat\mu_k\,i\Phi(e_k)$ is traceless Hermitian with square $(\hat\mu,\hat\mu)I$, and for $(\hat\mu,\hat\mu)=1$ the element $\tfrac12(I+i\Phi(\hat\mu))$ is a Hermitian idempotent of rank one because its trace is one. Conversely every rank-one Hermitian idempotent of $M_2(\mathbb{C})$ is $\tfrac12(I+H)$ with $H$ traceless Hermitian and $H^{2}=I$, and every such $H$ is $i\Phi(\hat\mu)$ for a real vector $\hat\mu$ with $(\hat\mu,\hat\mu)=1$. $\square$</p>
+<p><strong>Remark.</strong> The matrix image is the standard rank-one projection of a two-dimensional space, and the parametrisation by the real vectors $\hat\mu$ with $(\hat\mu,\hat\mu)=1$ is the parametrisation of those projections by the traceless Hermitian involutions. The standard pair is $\Phi(\tilde\Pi_1)=E_{11}$ and $\Phi(\tilde\Pi_2)=E_{22}$.</p>
+<h2 id="summary">Summary</h2>
+<p>An element is idempotent for the sesquilinear multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ exactly when it is a Hermitian idempotent of the algebra, because applying the involution ${}^{*}$ to the equation $\tilde Q\tilde Q^{*}=\tilde Q$ forces $\tilde Q^{*}=\tilde Q$, and a Hermitian element has the same square in the two products. The idempotents of the multiplication are therefore the trivial pair $0,e_0$ and the <strong>projections</strong></p>
+<p>$$
+\tilde\Pi_+(\hat\mu)=\tfrac12\bigl(e_0+i\hat\mu\bigr) , \qquad \hat\mu\in\mathbb{R}^{3},\ (\hat\mu,\hat\mu)=1 ,
+$$</p>
+<p>a continuum parametrised by the real unit vectors, whose scalar part is the sum of the modulus squares of its coordinates and whose complement is the antipodal projection $\tilde\Pi_+(-\hat\mu)$. Against the idempotents of the associative multiplication, which are the elements $\tilde\Pi(\xi)=\tfrac12(e_0+\xi i)$ over all roots $\xi$ of $-e_0$ and form a real four-dimensional family, the $\star$-idempotents are the same trivial pair together with the Hermitian idempotents, and every non-Hermitian idempotent of the algebra is not idempotent for the multiplication. The two sets agree exactly on the projections, which is the sense in which the multiplication picks out the half of the algebra's idempotent set that the algebra itself calls the projections.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>the basis, $e_0$ the unit, $e_k^{2}=-e_0$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_0e_0+\mathbf Q$</td>
+<td>an element, $Q_\mu\in\mathbb{C}$ complex coordinates</td>
+</tr>
+<tr>
+<td>$\mathbf Q=\sum_kQ_ke_k$</td>
+<td>the vector part</td>
+</tr>
+<tr>
+<td>${}^{*}=\bar{\cdot}\circ{}^{\natural}$</td>
+<td>the conjugate-linear involution, $\tilde Q^{*}=\overline{Q_0}-\overline{\mathbf Q}$</td>
+</tr>
+<tr>
+<td>${}^{\natural}$</td>
+<td>the natural conjugation, $\tilde Q^{\natural}=Q_0-\mathbf Q$</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$</td>
+<td>the sesquilinear multiplication</td>
+</tr>
+<tr>
+<td>$\tilde Q\star\tilde Q=\tilde Q$</td>
+<td>the idempotent equation of the multiplication</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_+(\hat\mu)=\tfrac12(e_0+i\hat\mu)$</td>
+<td>the projections, $\hat\mu$ a real vector with $(\hat\mu,\hat\mu)=1$</td>
+</tr>
+<tr>
+<td>$\hat\mu=\sum_k\hat\mu_ke_k$, $(\hat\mu,\hat\mu)=\sum_k\hat\mu_k^{2}=1$</td>
+<td>a real unit vector and its square</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+,\mathbb{M}_-$</td>
+<td>the Hermitian and anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$\tilde\Pi(\xi)=\tfrac12(e_0+\xi i)$, $\xi^{2}=-e_0$</td>
+<td>the idempotents of the algebra</td>
+</tr>
+<tr>
+<td>$0,\ e_0$</td>
+<td>the trivial idempotents, common to the two products</td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>the isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(\tilde Q^{*})=\Phi(\tilde Q)^{\dagger}$</td>
+</tr>
+<tr>
+<td>$E_{11},E_{22}$</td>
+<td>the diagonal matrix units, $\Phi(\tilde\Pi_1),\Phi(\tilde\Pi_2)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the involution of an algebra, the Hermitian elements and the projections of an involutive ring.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for idempotents, Peirce decompositions and the Hermitian idempotents of a Jordan algebra.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the involutions of a central simple algebra and their Hermitian elements.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the idempotents of a Jordan algebra and the projections of the Hermitian part.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the idempotents of a finite-dimensional algebra, the Peirce decomposition and the minimal one-sided ideals they determine.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -52,23 +52,23 @@
       <div class="article-body">
         <h1 id="the-bilinear-form-on-the-biquaternion-algebra"><strong>The Bilinear Form on the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The biquaternion algebra carries two scalar pairings, and this article treats the first of them. The <strong>bilinear form</strong> is</p>
+<p>The biquaternion algebra carries two scalar pairings, and this article treats the first of them. The <strong>quaternion bilinear form</strong> is</p>
 <p>$$
-N(\tilde{P}, \tilde{Q}) = \mathrm{Sc}\!\left(\tilde{P}\, \tilde{Q}^{\natural}\right) = \sum_{\mu=0}^{3} P_\mu Q_\mu ,
+\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}\!\left(\tilde{P}\, \tilde{Q}^{\natural}\right) = \sum_{\mu=0}^{3} P_\mu Q_\mu ,
 $$</p>
-<p>built on the <strong>natural</strong> conjugation ${}^{\natural}$, which is $\mathbb{C}$-linear, so that the form is $\mathbb{C}$-<strong>bilinear</strong>: scalars may be moved out of either argument. Its diagonal $N(\tilde{Q},\tilde{Q})$ is the biquaternion norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ of <em>Biquaternion Norm and Invertibility</em>, and the form is the polarisation of that quadratic form.</p>
+<p>built on the <strong>natural</strong> conjugation ${}^{\natural}$, which is $\mathbb{C}$-linear, so that the form is $\mathbb{C}$-<strong>bilinear</strong>: scalars may be moved out of either argument. Its diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ is the biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ of <em>Biquaternion Norm and Invertibility</em>, and the form is the polarisation of that quadratic form.</p>
 <p>This is the form the Algebra group does not use: the articles <em>Biquaternions as a Vector Space over $\mathbb{C}$</em> and the six subspace articles work with ${}^{\natural}$, without using the norm — its sign, its signature, its definiteness, its Euclidean part. The companion pairings are <em>The Hermitian Form on the Biquaternion Algebra</em>, built on the Hermitian conjugation ${}^{*}$, and <em>The Biquaternion Krein Form and Its Signature</em>, built on the complex conjugation $\bar{\cdot}$.</p>
 <h2 id="the-form-and-its-polarisation">The Form and Its Polarisation</h2>
 <p>Because ${}^{\natural}$ is $\mathbb{C}$-linear, the pairing</p>
 <p>$$
-N(\tilde{P}, \tilde{Q}) = \mathrm{Sc}\!\left(\tilde{P}\, \tilde{Q}^{\natural}\right)
+\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}\!\left(\tilde{P}\, \tilde{Q}^{\natural}\right)
 $$</p>
 <p>is $\mathbb{C}$-<strong>bilinear</strong>, symmetric, and non-degenerate; its diagonal is the biquaternion norm. It is the <strong>polar form</strong> of that norm,</p>
 <p>$$
-N(\tilde{P}, \tilde{Q}) = \tfrac{1}{2}\left(N(\tilde{P}+\tilde{Q}) - N(\tilde{P}) - N(\tilde{Q})\right),
+\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \tfrac{1}{2}\left(\langle\tilde{P}+\tilde{Q},\tilde{P}+\tilde{Q}\rangle_{\natural} - \langle\tilde{P},\tilde{P}\rangle_{\natural} - \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\right),
 $$</p>
-<p>and it is the $\mathbb{C}$-bilinear pairing built on ${}^{\natural}$, distinguished by the involution that twists it from the $\mathbb{C}$-sesquilinear ones built on ${}^{*}$ (<em>The Group of Involutions</em>; <em>The Hermitian Form on the Biquaternion Algebra</em>).</p>
-<p>The form is <strong>multiplicative</strong> in the following sense: for a quaternion $a \in \mathbb{H}_{\mathbb{B}}$ acting by left multiplication, $N(a\tilde{P}, a\tilde{Q}) = N(a)^2 N(\tilde{P},\tilde{Q})$, and likewise on the right, since $N$ is multiplicative and central. Over $\mathbb{C}$ the form is a non-degenerate complex quadratic form; it has no signature until a real form is chosen, and the signature is read from the real slices below.</p>
+<p>and it is the $\mathbb{C}$-quaternion bilinear pairing built on ${}^{\natural}$, distinguished by the involution that twists it from the $\mathbb{C}$-sesquilinear ones built on ${}^{*}$ (<em>The Group of Involutions</em>; <em>The Hermitian Form on the Biquaternion Algebra</em>).</p>
+<p>The form is <strong>multiplicative</strong> in the following sense: for a quaternion $a \in \mathbb{H}_{\mathbb{B}}$ acting by left multiplication, $\langle a\tilde{P},a\tilde{Q}\rangle_{\natural} = \langle a,a\rangle_{\natural}^2 \langle\tilde{P},\tilde{Q}\rangle_{\natural}$, and likewise on the right, since $N$ is multiplicative and central. Over $\mathbb{C}$ the form is a non-degenerate complex quadratic form; it has no signature until a real form is chosen, and the signature is read from the real slices below.</p>
 <h2 id="the-restriction-to-the-six-subspaces">The Restriction to the Six Subspaces</h2>
 <p>The form restricts to each of the six distinguished real subspaces, and the real signature of the restriction is the quantity the Algebra articles record only as a pointer. With $Q_\mu = q_\mu + i q'_\mu$ and $q_\mu, q'_\mu \in \mathbb{R}$,</p>
 <div class="table-scroll"><table>
@@ -115,21 +115,21 @@ $$</p>
 <p>The six rows are the content of the tables in <em>Biquaternion Norm and Invertibility</em>, §<em>The Real Forms and Their Signatures</em>, where the realification of $N$ on $\mathbb{R}^8$ is also computed: it is the split form of signature $(4,4)$. Four of the six subspaces give a real form on which $N$ is real-valued — the quaternion subspace, the anti-quaternion subspace and the two sectors — and the two that do not are the centre and the vector subspace, on which $N$ is complex.</p>
 <p>The <strong>polar form</strong> of the restriction is the corresponding symmetric bilinear form: on the Hermitian subspace</p>
 <p>$$
-B(\tilde{Q}, \tilde{R}) = q_0 r_0 - (\mathbf{q}', \mathbf{r}'),
+\langle\tilde{Q},\tilde{R}\rangle_{\natural} = q_0 r_0 - (\mathbf{q}', \mathbf{r}'),
 $$</p>
 <p>and on the anti-Hermitian subspace</p>
 <p>$$
-B(\tilde{Q}, \tilde{R}) = (\mathbf{q}, \mathbf{r}) - q'_0 r'_0 ,
+\langle\tilde{Q},\tilde{R}\rangle_{\natural} = (\mathbf{q}, \mathbf{r}) - q'_0 r'_0 ,
 $$</p>
 <p>the two differing by a sign, as their signatures $(1,3)$ and $(3,1)$ indicate.</p>
 <h2 id="the-null-cone">The Null Cone</h2>
 <p>The <strong>null cone</strong> is the zero set of the norm,</p>
 <p>$$
-\{\tilde{Q} : N(\tilde{Q}) = 0\}.
+\{\tilde{Q} : \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0\}.
 $$</p>
 <p>Over $\mathbb{C}$ it is a complex cone through the origin; on the vector subspace its real dimension is four, and on each of the two sectors its real dimension is three. The cone is the set on which the algebra fails to be a division algebra: a non-zero element is a zero divisor exactly when it is null, so the null cone is the union of the two families of zero divisors classified in <em>Biquaternion Zero Divisors</em>. The projective picture of the cone, its link, and the associated quadrics are <em>Biquaternion Topology</em> and <em>Biquaternion Lorentzian and Conformal Geometry</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The bilinear form of the biquaternion algebra is $N(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural}) = \sum_\mu P_\mu Q_\mu$, the polarisation of the biquaternion norm. It is $\mathbb{C}$-bilinear and non-degenerate, and its restriction to each of the six distinguished real subspaces carries the signature that this article records: $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(4,0)$ on the quaternion subspace, $(0,4)$ on the anti-quaternion subspace, $(1,3)$ on the Hermitian subspace and $(3,1)$ on the anti-Hermitian subspace. Its realification on $\mathbb{R}^8$ is the split form of signature $(4,4)$. Its null cone is the zero-divisor set of the algebra. The metric read from the norm is <em>Biquaternion Norm and Invertibility</em>; the sesquilinear companion is <em>The Hermitian Form on the Biquaternion Algebra</em>; and the transpose that the form defines on the linear operators is <em>Association and the Transpose on the Biquaternion Algebra</em>.</p>
+<p>The bilinear form of the biquaternion algebra is $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural}) = \sum_\mu P_\mu Q_\mu$, the polarisation of the biquaternion norm. It is $\mathbb{C}$-bilinear and non-degenerate, and its restriction to each of the six distinguished real subspaces carries the signature that this article records: $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(4,0)$ on the quaternion subspace, $(0,4)$ on the anti-quaternion subspace, $(1,3)$ on the Hermitian subspace and $(3,1)$ on the anti-Hermitian subspace. Its realification on $\mathbb{R}^8$ is the split form of signature $(4,4)$. Its null cone is the zero-divisor set of the algebra. The metric read from the norm is <em>Biquaternion Norm and Invertibility</em>; the sesquilinear companion is <em>The Hermitian Form on the Biquaternion Algebra</em>; and the transpose that the form defines on the linear operators is <em>Association and the Transpose on the Biquaternion Algebra</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -140,15 +140,15 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$N(\tilde{P}, \tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural}) = \sum_\mu P_\mu Q_\mu$</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural}) = \sum_\mu P_\mu Q_\mu$</td>
 <td>The bilinear form; $\mathbb{C}$-bilinear, symmetric, non-degenerate</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = N(\tilde{Q},\tilde{Q}) = \sum_\mu Q_\mu^2$</td>
+<td>$\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>The biquaternion norm, the diagonal of the form</td>
 </tr>
 <tr>
-<td>$\{\tilde{Q} : N(\tilde{Q}) = 0\}$</td>
+<td>$\{\tilde{Q} : \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0\}$</td>
 <td>The null cone; the zero-divisor set</td>
 </tr>
 <tr>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two One-Sided Actions and the Absence of a Unit — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-one-sided-actions-and-the-absence-of-a-unit"><strong>The Two One-Sided Actions and the Absence of a Unit</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four products on its underlying $\mathbb{C}$-vector space (<em>The Four Biquaternion Complex Products</em>), and the fourth of them,</p>
+<p>$$
+\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
+$$</p>
+<p>is the subject of this group. The rule, the scalar–vector form and the place of the product among the four are <em>The Four Biquaternion Complex Products</em> §<em>The Complex Quaternionic Sesquilinear Product</em>; the sesquialgebra it defines, its multiplication table and its two actions of the unit are <em>Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$</em>. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, and $\mathbf P = \sum_k P_k e_k$ is the vector part.</p>
+<p>The subject of this article is the pair of <strong>one-sided actions of the unit candidate</strong> $e_0$, and the fact that they are not the identity but the two conjugations of the algebra:</p>
+<p>$$
+e_0 \star \tilde Q = \tilde Q^{*} , \qquad \tilde Q \star e_0 = \tilde Q^{\natural} .
+$$</p>
+<p>Both hold for every $\tilde Q$, and both are then read on the six distinguished subspaces. Their consequence is the group's defining negative statement: the multiplication has <strong>no unit on either side</strong>. There is no element $\tilde E$ with $\tilde E \star \tilde Q = \tilde Q$ for all $\tilde Q$, and none with $\tilde Q \star \tilde E = \tilde Q$ for all $\tilde Q$. The third product of the four has a right unit and no left one, the second has a left unit and no right one, and the first has a unit; the fourth has neither, and this is what separates its structure theory from the other three.</p>
+<p>The article owns the two actions and the absence of a unit. It reads the actions off the rule, which is <em>The Four Biquaternion Complex Products</em>; it uses the two scalar rules of the category, which are <em>Sesquialgebras</em> §<em>The Definition</em>; it uses the derived-operation test with its two conditions, which is <em>Sesquialgebras</em> §<em>The Standard Example</em> as applied to $\mathbb{B}$ in <em>Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$</em> §<em>The Product Is Not the Derived Operation</em>; and it uses the reading of the two conjugations on the six subspaces, which is <em>Introduction to the Six Subspaces</em> and <em>Comparison of the Six Subspaces</em>. It does not treat the general operators of the multiplication, which are the later article of this group <em>The Left and Right Multiplications of the Quaternionic Sesquilinear Product</em>, nor the ternary product, which is <em>The Ternary Product and the Failure of the Jordan Triple Identity</em>.</p>
+<h2 id="the-two-actions-of-the-unit">The Two Actions of the Unit</h2>
+<h3 id="the-left-action-is-the-star">The Left Action Is the Star</h3>
+<p><strong>Proposition (the left action).</strong> For every biquaternion $\tilde Q$,</p>
+<p>$$
+e_0 \star \tilde Q = \tilde Q^{*} .
+$$</p>
+<p><strong>Proof.</strong> By the rule, $e_0 \star \tilde Q = e_0^{\natural}\tilde Q^{*}$. The natural conjugation fixes the identity, $e_0^{\natural} = e_0$, and $e_0$ is the unit of the plain product, so $e_0^{\natural}\tilde Q^{*} = \tilde Q^{*}$. $\square$</p>
+<p><strong>Remark.</strong> The left action of the unit candidate is therefore not the identity but the star conjugation, which is conjugate-linear: $e_0 \star (\lambda \tilde Q) = (\lambda\tilde Q)^{*} = \bar\lambda\,\tilde Q^{*} = \bar\lambda\,(e_0 \star \tilde Q)$. This one computation already rules out a left unit, and it is the operator-level form of the second scalar rule of the category applied at $e_0$.</p>
+<h3 id="the-right-action-is-the-natural-conjugation">The Right Action Is the Natural Conjugation</h3>
+<p><strong>Proposition (the right action).</strong> For every biquaternion $\tilde Q$,</p>
+<p>$$
+\tilde Q \star e_0 = \tilde Q^{\natural} .
+$$</p>
+<p><strong>Proof.</strong> By the rule, $\tilde Q \star e_0 = \tilde Q^{\natural} e_0^{*}$. The star conjugation fixes the identity, $e_0^{*} = e_0$, so $\tilde Q^{\natural}e_0^{*} = \tilde Q^{\natural}$. $\square$</p>
+<p><strong>Remark.</strong> The right action is the natural conjugation, which is $\mathbb{C}$-linear: $\tilde Q \star (\lambda e_0) = (\lambda e_0)^{\natural} = \lambda\,\tilde Q^{\natural} = \lambda\,(\tilde Q \star e_0)$. The two actions are thus a conjugate-linear one on the left and a linear one on the right, and they are the two conjugations of the group of involutions (<em>The Group of Involutions</em>, <em>The Involutions of a Sesquialgebra</em>).</p>
+<h3 id="both-actions-are-involutions">Both Actions Are Involutions</h3>
+<p><strong>Proposition.</strong> The maps $\tilde Q \mapsto e_0 \star \tilde Q$ and $\tilde Q \mapsto \tilde Q \star e_0$ are the involutions ${}^{*}$ and ${}^{\natural}$; they are bijections of order two, they commute, and together with the identity and their composite $\overline{\cdot}$ they form the <strong>group of involutions</strong> $\{ \mathrm{id}, {}^{\natural}, {}^{*}, \overline{\cdot} \}$, the Klein four-group $\mathbb{Z}_2 \times \mathbb{Z}_2$ of <em>The Group of Involutions</em>.</p>
+<p><strong>Proof.</strong> The two maps are ${}^{*}$ and ${}^{\natural}$ by the propositions above. Each is an involution by the definition of the conjugations, ${}^{*2} = \mathrm{id}$ and ${}^{\natural2} = \mathrm{id}$, and they commute, so their composite is the complex conjugation $\bar{\cdot} = {}^{\natural} \circ {}^{*}$, which is also of order two. The four maps are distinct and form a group isomorphic to $(\mathbb{Z}/2)^{2}$. $\square$</p>
+<p><strong>Remark.</strong> The element $e_0$ acts on the left by one involution and on the right by the other, and the composite of the two actions is the coefficientwise complex conjugation. This is the sense in which the unit candidate acts by the <em>whole</em> involution group and not by the identity: the failure to be a unit is the failure of the two actions to collapse to $\mathrm{id}$.</p>
+<h2 id="the-absence-of-a-unit">The Absence of a Unit</h2>
+<h3 id="no-left-unit">No Left Unit</h3>
+<p><strong>Theorem.</strong> There is no element $\tilde E$ with $\tilde E \star \tilde Q = \tilde Q$ for all $\tilde Q$.</p>
+<p><strong>Proof.</strong> Suppose $\tilde E$ is a left unit, so that $\tilde E \star \tilde Q = \tilde Q$ for every $\tilde Q$. Testing at $\tilde Q = e_0$ and using the right action of $e_0$ gives</p>
+<p>$$
+\tilde E \star e_0 = \tilde E^{\natural} = e_0 ,
+$$</p>
+<p>and applying the involution ${}^{\natural}$ gives $\tilde E = e_0$. With $\tilde E = e_0$ the left-unit equation would read $e_0 \star \tilde Q = \tilde Q^{*} = \tilde Q$ for every $\tilde Q$, which fails at $\tilde Q = e_1$, where $\tilde Q^{*} = -e_1$. Hence there is no left unit. $\square$</p>
+<p><strong>Remark.</strong> The first test at $\tilde Q = e_0$ uses the right action to force the candidate to $e_0$, and the second test at $\tilde Q = e_1$ uses the left action to reject it. The two actions are the two halves of the contradiction, and the same pair of tests settles the right-unit case with the roles of the two actions interchanged.</p>
+<h3 id="no-right-unit">No Right Unit</h3>
+<p><strong>Theorem.</strong> There is no element $\tilde E$ with $\tilde Q \star \tilde E = \tilde Q$ for all $\tilde Q$.</p>
+<p><strong>Proof.</strong> Suppose $\tilde E$ is a right unit, so that $\tilde Q \star \tilde E = \tilde Q$ for every $\tilde Q$. Testing at $\tilde Q = e_0$ and using the left action of $e_0$ gives</p>
+<p>$$
+e_0 \star \tilde E = \tilde E^{*} = e_0 ,
+$$</p>
+<p>and applying the involution ${}^{*}$ gives $\tilde E = e_0$. With $\tilde E = e_0$ the right-unit equation would read $\tilde Q \star e_0 = \tilde Q^{\natural} = \tilde Q$ for every $\tilde Q$, which fails at $\tilde Q = e_1$, where $\tilde Q^{\natural} = -e_1$. Hence there is no right unit. $\square$</p>
+<p><strong>Remark.</strong> The two proofs are the same computation with the two involutions exchanged, and this is why the absence of a unit holds on both sides and not only on one: each of the two conjugations obstructs one of the two sides. The pair of tests at $e_0$ and $e_1$ is the smallest possible, and it is the one the group article records.</p>
+<h3 id="no-unit-and-no-inverses">No Unit and No Inverses</h3>
+<p><strong>Corollary.</strong> The multiplication has no two-sided unit. Consequently no element has a left inverse or a right inverse, and the product defines no group of units.</p>
+<p><strong>Proof.</strong> A two-sided unit is a left unit and a right unit at once, and neither exists. An inverse of $\tilde A$ is an element $\tilde B$ with $\tilde A \star \tilde B = \tilde B \star \tilde A = \tilde U$ where $\tilde U$ is a unit of the multiplication; with no unit, the notion is empty. $\square$</p>
+<p><strong>Caution.</strong> The words <em>unit</em> and <em>inverse</em> must be used with the multiplication of this group and not with the plain product of the algebra. The algebra $\mathbb{B}$ has a group of units, the elements of nonzero norm $N(\tilde P) \neq 0$, and its unit group is $GL_2(\mathbb{C})$ through the matrix realization, with the norm-one subgroup $SL_2(\mathbb{C})$ (<em>Biquaternion 2×2 Matrix Element Representation</em>, <em>Biquaternion Ideals and Peirce Decomposition</em>); that group belongs to the plain product and to the algebra, not to $\star$. An element such as an idempotent $\tilde\Pi(\mu)$ of <em>Idempotents of the Quaternionic Sesquilinear Product</em> is a unit of the algebra and not a unit of the multiplication, and it satisfies $\tilde\Pi \star \tilde\Pi = \tilde\Pi$ all the same.</p>
+<h2 id="the-two-actions-and-the-derived-operation-test">The Two Actions and the Derived-Operation Test</h2>
+<h3 id="the-first-row-of-the-product">The First Row of the Product</h3>
+<p><strong>Definition.</strong> The <strong>first row</strong> of the multiplication is the map</p>
+<p>$$
+\sigma(\tilde Y) = e_0 \star \tilde Y = \tilde Y^{*} ,
+$$</p>
+<p>obtained by holding the first argument at $e_0$, in the notation of <em>Sesquialgebras</em> §<em>The Standard Example</em>.</p>
+<p>By the first proposition above, the first row of the multiplication is the star conjugation.</p>
+<h3 id="the-two-conditions">The Two Conditions</h3>
+<p>The general theory asks whether a sesquilinear product is the <strong>derived operation</strong> $x \star y = xy^{*}$ of an associative algebra with a conjugate-linear involution. It is exactly then that the first row is such an involution and rebuilds the product; stated as in <em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em> §<em>Which of the Four Is a Sesquilinear Multiplication</em> and in <em>Sesquialgebras</em> §<em>The Standard Example</em>, the two conditions are:</p>
+<p>(i) $\sigma$ is a conjugate-linear involution of the algebra: $\sigma(\lambda\tilde Y) = \bar\lambda\,\sigma(\tilde Y)$, $\sigma^{2} = \mathrm{id}$, $\sigma(\tilde X\tilde Y) = \sigma(\tilde Y)\sigma(\tilde X)$ and $\sigma(e_0) = e_0$;</p>
+<p>(ii) $\sigma$ rebuilds the product: $\tilde X \star \tilde Y = \tilde X\,\sigma(\tilde Y)$ for all $\tilde X, \tilde Y$.</p>
+<p><strong>Theorem (the first row passes one condition and fails the other).</strong> For the complex quaternionic sesquilinear product, $\sigma = {}^{*}$ satisfies condition (i) and fails condition (ii); consequently the product is not the derived operation of the algebra with any involution.</p>
+<p><strong>Proof.</strong> Condition (i): the star conjugation is conjugate-linear, involutive, anti-multiplicative and fixes $e_0$, which is the statement that it is the involution of the derived operation (<em>The Group of Involutions</em>, <em>Biquaternions as an Algebra over $\mathbb{C}$</em>). So (i) holds. Condition (ii) with $\sigma = {}^{*}$ would read $\tilde X^{\natural}\tilde Y^{*} = \tilde X\tilde Y^{*}$ for all $\tilde X, \tilde Y$; at $\tilde Y = e_0$ this is $\tilde X^{\natural} = \tilde X$ for every $\tilde X$, which fails at $\tilde X = e_1$, where the two sides are $-e_1$ and $e_1$. So (ii) fails. $\square$</p>
+<p><strong>Remark.</strong> The failure of (ii) is the absence of a right unit, read in the second slot: with $\tilde Y = e_0$, condition (ii) says $\tilde X \star e_0 = \tilde X\sigma(e_0) = \tilde X$, that is $\tilde X^{\natural} = \tilde X$ for every $\tilde X$, which is exactly the statement that $e_0$ is a right unit of the multiplication. The two forms of the same failure are the derived-operation test and the right-unit test, and the theorem is their equivalence for this product.</p>
+<h3 id="the-isotope-reading">The Isotope Reading</h3>
+<p><strong>Corollary.</strong> The product is the <strong>isotope</strong> of the derived operation by the natural conjugation,</p>
+<p>$$
+\tilde P \star \tilde Q = {}^{\natural}(\tilde P)\,\tilde Q^{*} = \tilde P^{\natural}\tilde Q^{*} ,
+$$</p>
+<p>the insertion being in the first slot and the derived operation being $\tilde P\tilde Q^{*}$ with its star involution.</p>
+<p><strong>Proof.</strong> The formula is the rule. The map ${}^{\natural}$ is a $\mathbb{C}$-linear anti-automorphism and a bijection of $\mathbb{B}$, and an isotope of an operation by a bijection $\varphi$ is the operation $(x,y) \mapsto \varphi(x)\,y$; here $\varphi = {}^{\natural}$. $\square$</p>
+<p><strong>Remark.</strong> The two sesquilinear products of the four are the derived operation and its ${}^{\natural}$-isotope, exactly as the two bilinear products of the four are the plain multiplication and its ${}^{\natural}$-isotope; in each pair the second is the first with the $\mathbb{C}$-linear insertion the derived-operation test rejects (<em>Comparison Between the Four Biquaternion Products</em> §<em>Which of the Four Is a Multiplication</em>, <em>Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$</em> §<em>The Isotope Reading</em>). The absence of a unit in the second member of each pair is the price of the insertion: the derived operation keeps the right unit $e_0$, and its isotope loses it in the first slot.</p>
+<h2 id="the-actions-on-the-six-subspaces">The Actions on the Six Subspaces</h2>
+<p>The six distinguished subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$ (<em>Introduction to the Six Subspaces</em>). Each of the two conjugations preserves each of the six (<em>The Six Subspaces and the Four Complex Products</em> §<em>The four products have the same value set</em>), so each action of $e_0$ restricts to each subspace, and the two restrictions are computed below.</p>
+<p><strong>Theorem (the two actions on the six subspaces).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>left action $e_0 \star \cdot = {}^{*}$</th>
+<th>right action $\cdot \star e_0 = {}^{\natural}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$A e_0 \mapsto \bar A e_0$</td>
+<td>identity</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathbf Q \mapsto -\overline{\mathbf Q}$</td>
+<td>$\mathbf Q \mapsto -\mathbf Q$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\tilde Q \mapsto \tilde Q^{\natural}$</td>
+<td>$\tilde Q \mapsto \tilde Q^{\natural}$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\tilde Q \mapsto -\tilde Q^{\natural}$</td>
+<td>$\tilde Q \mapsto \tilde Q^{\natural}$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{+}$</td>
+<td>identity</td>
+<td>$\tilde Q \mapsto \tilde Q^{\natural}$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{-}$</td>
+<td>$-\mathrm{id}$</td>
+<td>$\tilde Q \mapsto \tilde Q^{\natural}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The left column is the star conjugation, $Q^{*}_0 = \overline{Q_0}$ and $Q^{*}_k = -\overline{Q_k}$; the right column is the natural conjugation, $\tilde Q^{\natural} = Q_0 - \mathbf Q$.</p>
+<ul>
+<li>On the centre, $\mathbf Q = 0$, so ${}^{*}$ is the coefficientwise conjugation of the single coordinate and ${}^{\natural}$ fixes the element.</li>
+<li>On the vector subspace, $Q_0 = 0$, so ${}^{*}$ sends $\mathbf Q$ to $-\overline{\mathbf Q}$ and ${}^{\natural}$ sends it to $-\mathbf Q$.</li>
+<li>On the quaternion subspace the coordinates are real, so the coefficientwise conjugation is the identity and the two conjugations coincide, both negating the vector part: this is the quaternionic conjugation of the real quaternion subspace.</li>
+<li>On the anti-quaternion subspace write $\tilde Q = i\tilde K$ with $\tilde K$ in the quaternion subspace, so that $\tilde K^{*} = \tilde K^{\natural}$ there and the star is conjugate-linear while ${}^{\natural}$ is $\mathbb{C}$-linear: $\tilde Q^{*} = (i\tilde K)^{*} = -i\,\tilde K^{*} = -i\,\tilde K^{\natural} = -(i\tilde K)^{\natural} = -\tilde Q^{\natural}$, while the right action is $\tilde Q^{\natural}$.</li>
+<li>On the Hermitian subspace, ${}^{*}$ is the identity by definition, and ${}^{\natural}$ fixes the real scalar coordinate and negates the imaginary vector coordinate, $\tilde Q = a_0 + i\mathbf p \mapsto a_0 - i\mathbf p$, which stays in $\mathbb{M}_{+}$.</li>
+<li>On the anti-Hermitian subspace, ${}^{*}$ is $-\mathrm{id}$ by definition, and ${}^{\natural}$ fixes the imaginary scalar coordinate and negates the real vector coordinate, $\tilde Q = i b_0 + \mathbf q \mapsto i b_0 - \mathbf q$, which stays in $\mathbb{M}_{-}$. $\square$</li>
+</ul>
+<p><strong>Remark.</strong> Two entries are the identity, and each is instructive. The left action is the identity on the Hermitian subspace, because that is the fixed space of ${}^{*}$; the right action is the identity on the centre, because the natural conjugation does not touch a scalar element; and no action is the identity on all of $\mathbb{B}$, which is the absence of a unit in its subspace form. The table also shows where the two actions agree, on $\mathbb{H}_{\mathbb{B}}$, and where they differ by a sign, on $i\mathbb{H}_{\mathbb{B}}$ and on $\mathbb{M}_{\pm}$.</p>
+<h2 id="the-unit-candidate-as-an-idempotent">The Unit Candidate as an Idempotent</h2>
+<h3 id="the-element-math206-is-an-idempotent-of-the-multiplication">The Element $e_0$ Is an Idempotent of the Multiplication</h3>
+<p><strong>Proposition.</strong> The unit candidate is an idempotent of the multiplication, $e_0 \star e_0 = e_0$, and both actions fix it.</p>
+<p><strong>Proof.</strong> By the rule, $e_0 \star e_0 = e_0^{\natural}e_0^{*} = e_0e_0 = e_0$, the two conjugations fixing the identity and the identity being the unit of the plain product. The two actions fix $e_0$ by the same computation. $\square$</p>
+<p><strong>Remark.</strong> The element $e_0$ is the <strong>trivial</strong> idempotent of the multiplication, the one the nontrivial idempotents of <em>Idempotents of the Quaternionic Sesquilinear Product</em> are contrasted with; unlike them it is central, and it is the unit of the plain product. It is therefore the cleanest single witness that the two notions of unit differ: it is a unit of the algebra, and it is not a unit of $\star$ because it acts by the two conjugations.</p>
+<h3 id="the-two-actions-and-the-norm">The Two Actions and the Norm</h3>
+<p><strong>Proposition.</strong> For every biquaternion $\tilde Q$,</p>
+<p>$$
+N\bigl(e_0 \star \tilde Q\bigr) = N(\tilde Q^{*}) = \overline{N(\tilde Q)} , \qquad N\bigl(\tilde Q \star e_0\bigr) = N(\tilde Q^{\natural}) = N(\tilde Q) .
+$$</p>
+<p>The left action conjugates the norm and the right action preserves it; both preserve its modulus $\lvert N\rvert$ and hence the zero-divisor cone $\{N = 0\}$.</p>
+<p><strong>Proof.</strong> The norm is multiplicative for the plain product with $N(e_0) = 1$; it is invariant under the natural conjugation, $N(\tilde Q^{\natural}) = N(\tilde Q)$, because ${}^{\natural}$ negates an even number of coordinates with the square; and it transforms by the coefficientwise conjugation under ${}^{*}$, $N(\tilde Q^{*}) = \overline{N(\tilde Q)}$, because ${}^{*}$ conjugates each coordinate and $N$ is a quadratic form in the coordinates with real coefficients. The two actions are ${}^{*}$ and ${}^{\natural}$. $\square$</p>
+<p><strong>Remark.</strong> The two transforms are the numerical trace of the two parities of the actions: the conjugate-linear action conjugates the quadratic form and the linear action fixes it, and the composite, the coefficientwise conjugation, is the Galois action of $\mathbb{C}$ over $\mathbb{R}$ that distinguishes them. The preservation of the modulus is the reason the two actions are symmetries of the zero-divisor cone $N = 0$, the set on which the element theory of the product is read, and it is why an element and its two conjugates are zero divisors together.</p>
+<h2 id="the-consequences-of-the-absence">The Consequences of the Absence</h2>
+<h3 id="the-notions-that-have-to-be-replaced">The Notions That Have to Be Replaced</h3>
+<p>With no unit, the derived vocabulary of an algebra has to be replaced, and the group names the replacements as they are used.</p>
+<ul>
+<li><strong>The group of units</strong> does not exist for the multiplication; the algebra's group of units is a different group, belonging to the plain product, and is the subject of <em>Biquaternion Ideals and Peirce Decomposition</em>. The elements of the multiplication that are units of the algebra are distinguished by the norm, and for the idempotents this is <em>Idempotents of the Quaternionic Sesquilinear Product</em>.</li>
+<li><strong>The inverse</strong> is replaced by the involution: the closest substitute for an inverse, given that $\tilde P\tilde P^{\natural} = N(\tilde P)e_0$ and the product twists each slot by a conjugation, is the operation of the two conjugations themselves. Each nontrivial idempotent, for example, has inverse its own natural conjugate in the algebra, $\tilde\Pi^{-1} = \tilde\Pi^{\natural}$, although that inverse is not an inverse of the multiplication.</li>
+<li><strong>One-sided identities</strong> are not available, and the binary structure has to be replaced by the <strong>ternary product</strong>, which is the later article of this group <em>The Ternary Product and the Failure of the Jordan Triple Identity</em>. The definition of that ternary product, $\{ \tilde P,\tilde Q,\tilde R \} = (\tilde P \star \tilde Q) \star \tilde R^{*}$, itself uses the star conjugation in the third slot, so the involution that obstructs the unit is the involution that builds the ternary structure.</li>
+<li><strong>The left multiplications</strong> do not form a monoid, and the composition laws are the later article <em>The Left and Right Multiplications of the Quaternionic Sesquilinear Product</em>; the present article supplies the negative statement that makes those laws necessary.</li>
+</ul>
+<h3 id="the-comparison-with-the-sibling-products">The Comparison with the Sibling Products</h3>
+<p><strong>Theorem (the unit row of the four products).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>left unit</th>
+<th>right unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\tilde Q$</td>
+<td>$e_0$</td>
+<td>$e_0$</td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q$</td>
+<td>$e_0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde Q^{*}$</td>
+<td>none</td>
+<td>$e_0$</td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The plain product is the associative product of the algebra and has the two-sided unit $e_0$. For the sibling bilinear product, $e_0 \star \tilde Y = e_0^{\natural}\tilde Y = \tilde Y$ because ${}^{\natural}$ fixes $e_0$, so $e_0$ is a left unit, and there is no right one (<em>Biquaternions as a Quaternionic Algebra over $\mathbb{C}$</em> §<em>The Unit</em>). For the sibling sesquilinear product, $\tilde Y \star e_0 = \tilde Y\tilde e_0^{*} = \tilde Y$, so $e_0$ is a right unit, and there is no left one (<em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em> §<em>The Right Unit</em>). The fourth row is the two theorems of this article, in the form that both actions of $e_0$ are conjugations and neither is the identity. $\square$</p>
+<p><strong>Remark.</strong> The four rows are the sharpest reading of the two slots. Each of the four products makes one of the two slots the identity and the other slot the twist: the two bilinear products put the twist in the first slot and the identity in the second, one of them losing the right unit and the other the left; the sibling sesquilinear product has the twist in the second slot and the identity in the first, keeping the right unit; and this product puts a twist in both slots, keeping neither. The table is the unit row of the comparison of the four products, <em>Comparison Between the Four Biquaternion Products</em>, read with the two actions of this article.</p>
+<h2 id="summary">Summary</h2>
+<p>The two one-sided actions of $e_0$ under the complex quaternionic sesquilinear multiplication $\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*}$ are the two conjugations of the algebra: the left action is the star, $e_0 \star \tilde Q = \tilde Q^{*}$, and the right action is the natural conjugation, $\tilde Q \star e_0 = \tilde Q^{\natural}$. Both actions are involutions of $\mathbb{B}$, they commute, and together with the identity and their composite, the coefficientwise conjugation, they form the group of involutions, the Klein four-group. Their consequence is that the multiplication has no unit on either side: a left-unit candidate is forced by the right action to $e_0$ and then rejected by the left action at $e_1$, and a right-unit candidate is forced by the left action to $e_0$ and then rejected by the right action at $e_1$; hence there is no two-sided unit, no inverse and no group of units of the multiplication, and the group of units of the algebra is a different group belonging to the plain product. On the derived-operation test the first row of the multiplication is the star conjugation, which satisfies condition (i) and fails condition (ii), so the multiplication is the isotope of the derived operation by the natural conjugation and not the derived operation itself. On the six distinguished subspaces the two actions restrict to the coefficientwise conjugation, the negation with a conjugation, the quaternionic conjugation, a sign, the identity and a reflection, and no one of them is the identity on all of $\mathbb{B}$. The unit candidate is itself the trivial idempotent of the multiplication, $e_0 \star e_0 = e_0$, and its two actions transform the norm by the character of their parity, $N(e_0 \star \tilde Q) = \overline{N(\tilde Q)}$ and $N(\tilde Q \star e_0) = N(\tilde Q)$, so that both preserve the modulus and the zero-divisor cone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*}$</td>
+<td>the multiplication of this group</td>
+</tr>
+<tr>
+<td>$e_0 \star \tilde Q = \tilde Q^{*}$</td>
+<td>the left action of $e_0$, the star conjugation</td>
+</tr>
+<tr>
+<td>$\tilde Q \star e_0 = \tilde Q^{\natural}$</td>
+<td>the right action of $e_0$, the natural conjugation</td>
+</tr>
+<tr>
+<td>$\bar{\cdot} = {}^{\natural} \circ {}^{*}$</td>
+<td>the coefficientwise conjugation, the composite of the two actions</td>
+</tr>
+<tr>
+<td>$\{ \mathrm{id}, {}^{\natural}, {}^{*}, \bar{\cdot} \}$</td>
+<td>the group of involutions, the Klein four-group</td>
+</tr>
+<tr>
+<td>$\sigma(\tilde Y) = e_0 \star \tilde Y = \tilde Y^{*}$</td>
+<td>the first row of the multiplication</td>
+</tr>
+<tr>
+<td>(i)</td>
+<td>$\sigma$ is a conjugate-linear involution of the algebra</td>
+</tr>
+<tr>
+<td>(ii)</td>
+<td>$\tilde X \star \tilde Y = \tilde X\,\sigma(\tilde Y)$</td>
+</tr>
+<tr>
+<td>$\tilde P \star \tilde Q = {}^{\natural}(\tilde P)\,\tilde Q^{*}$</td>
+<td>the product as the isotope of the derived operation</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_{+}, \mathbb{M}_{-}$</td>
+<td>the six distinguished subspaces</td>
+</tr>
+<tr>
+<td>$e_0 \star e_0 = e_0$</td>
+<td>the unit candidate as the trivial idempotent of the multiplication</td>
+</tr>
+<tr>
+<td>$N(e_0 \star \tilde Q) = \overline{N(\tilde Q)}$</td>
+<td>the left action conjugates the norm</td>
+</tr>
+<tr>
+<td>$N(\tilde Q \star e_0) = N(\tilde Q)$</td>
+<td>the right action preserves the norm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I, Chapters 1–3</em> (Springer, 1998), for the one-sided identity, the units of an algebra and the regular actions.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the relation between an involution and the one-sided actions it defines.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society Colloquium Publications 37, 1956), for the isotopy of a multiplication by an anti-automorphism and the loss of the unit it entails.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the conjugate-linear involutions and the derived operation of an algebra with involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -204,12 +204,27 @@
   .article-body td { padding: 0.3rem 0.45rem; }
 }
 
-/* ===== KaTeX math rendering ===== */
+/* ===== KaTeX math rendering =====
+   A display formula cannot be broken across lines: KaTeX emits one nowrap
+   line box, and no CSS property can insert a break inside it. So a formula
+   wider than the column must scroll in its own box, exactly like a wide
+   table. `overflow-x: auto` does that; `max-width: 100%` keeps the box inside
+   the column whatever the formula's width; `overscroll-behavior-x: contain`
+   stops a horizontal flick inside a formula from chaining to the page.
+   Measured in Chromium: the box scrolls (scrollWidth 1354 against a 939
+   clientWidth for the longest coordinate rule) and the page itself stays at
+   exactly the viewport width. The left end is not clipped — scrollLeft 0
+   shows the start of the formula — so no `width: max-content` wrapper is
+   needed. */
 .article-body .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
   padding: 0.5rem 0;
   margin: 1.25rem 0;
+  scrollbar-width: thin;
 }
 .article-body .katex-display > .katex {
   font-size: 1.05em;
@@ -219,8 +234,4 @@
 }
 .article-body {
   overflow-wrap: break-word;
-}
-.article-body .katex-display {
-  /* background: var(--color-accent-soft); */
-  /* border-radius: 4px; */
 }

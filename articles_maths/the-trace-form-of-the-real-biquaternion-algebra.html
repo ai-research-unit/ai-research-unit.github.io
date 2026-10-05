@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Trace Form of the Real Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-trace-form-of-the-real-biquaternion-algebra"><strong>The Trace Form of the Real Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The real biquaternion algebra carries a canonical symmetric bilinear form, its <strong>trace form</strong>, obtained from the regular representation: the left multiplication $L_{\tilde P}$ is a real endomorphism of the eight-dimensional algebra, and</p>
+<p>$$
+\tau(\tilde P,\tilde Q)=\operatorname{Tr}\!\left(L_{\tilde P}L_{\tilde Q}\right)
+$$</p>
+<p>is a symmetric bilinear form on $\mathbb B$ over $\mathbb R$. This article records it, its Gram matrix, its signature $(4,4)$, and its identity with the realified complex bilinear form up to the factor $8$.</p>
+<h2 id="the-trace-form">The Trace Form</h2>
+<p><strong>Definition.</strong> For $\tilde P,\tilde Q\in\mathbb B$, the trace form is $\tau(\tilde P,\tilde Q)=\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})$, the trace read on the eight-dimensional real representation $\tilde P\mapsto L_{\tilde P}$, $L_{\tilde P}(\tilde X)=\tilde P\tilde X$.</p>
+<p>It is bilinear and symmetric, because $\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=\operatorname{Tr}(L_{\tilde Q}L_{\tilde P})$; it is invariant under the left and right multiplications by units in the following sense, that</p>
+<p>$$
+\tau(U\tilde P U^{-1},U\tilde Q U^{-1})=\tau(\tilde P,\tilde Q)\quad\text{for }U\in\mathbb B^\times,
+$$</p>
+<p>since conjugation of the representation does not change the trace; and it is non-degenerate.</p>
+<h2 id="the-gram-matrix-and-the-signature">The Gram Matrix and the Signature</h2>
+<p>Because $L_{\tilde P\tilde Q}=L_{\tilde P}L_{\tilde Q}$ and the trace of $L_{\tilde X}$ is $8$ for $\tilde X=e_0$ and $0$ for $\tilde X=e_k$ or $\tilde X=ie_k$, the values on the real basis are</p>
+<p>$$
+\tau(e_\mu,e_\nu)=8\,\varepsilon_\mu\delta_{\mu\nu},\qquad
+\tau(e_\mu,ie_\nu)=0,\qquad
+\tau(ie_\mu,ie_\nu)=-8\,\varepsilon_\mu\delta_{\mu\nu},
+$$</p>
+<p>so the Gram matrix is</p>
+<p>$$
+8\cdot\operatorname{diag}(1,-1,-1,-1,-1,1,1,1),
+$$</p>
+<p>of <strong>signature $(4,4)$</strong>. The four positive directions are $e_0$, $ie_1$, $ie_2$, $ie_3$ and the four negative directions are $e_1,e_2,e_3,ie_0$.</p>
+<h2 id="the-identity-with-the-realified-complex-bilinear-form">The Identity with the Realified Complex Bilinear Form</h2>
+<p>Comparing the two Gram matrices, the trace form is exactly <strong>eight times the realification of the complex bilinear form</strong>,</p>
+<p>$$
+\tau(\tilde P,\tilde Q)=8\,\mathrm{Re}\langle\tilde P,\tilde Q\rangle ,
+\qquad
+\langle\tilde P,\tilde Q\rangle=\sum_\mu\varepsilon_\mu P_\mu Q_\mu .
+$$</p>
+<p>This is the reason it is not an independent fifth form: read on the eight real dimensions it reproduces the realified complex bilinear form of <em>The Realification of the Four Forms</em>, up to the normalisation $8$ of the regular representation. The trace read on the complex four-dimensional module $\mathbb B\cong\mathbb C^4$ gives instead $4\,\mathrm{Re}\langle\tilde P,\tilde Q\rangle$, the same form with the factor $4$; the factor is the dimension of the carrier, and the form is the same.</p>
+<h2 id="the-place-among-the-forms">The Place among the Forms</h2>
+<p>The trace form is the natural form of the <strong>real</strong> algebra, and it is the one available before any of the four complex products is chosen: it uses only the regular representation and the trace, which are algebraic data. It is the real counterpart of the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\Phi(\tilde P)^{\dagger}\Phi(\tilde Q))$ of the matrix model, which is the positive definite form; the trace form is the split form obtained from the same trace by dropping the adjoint. Its signature $(4,4)$ is the signature of the complex bilinear realification, and its relation to the four forms is tabulated in <em>The Realification of the Four Forms</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The trace form of the real biquaternion algebra is $\tau(\tilde P,\tilde Q)=\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})$, symmetric, non-degenerate and invariant under conjugation by units. Its Gram matrix is $8\cdot\operatorname{diag}(1,-1,-1,-1,-1,1,1,1)$ and its signature is $(4,4)$. It is $8$ times the realification of the complex bilinear form, so it is not a new form but the same one read from the regular representation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tau(\tilde P,\tilde Q)=\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})$</td>
+<td>the trace form, read over $\mathbb R$</td>
+</tr>
+<tr>
+<td>$8\cdot\operatorname{diag}(1,-1,-1,-1,-1,1,1,1)$</td>
+<td>its Gram matrix</td>
+</tr>
+<tr>
+<td>$(4,4)$</td>
+<td>its signature</td>
+</tr>
+<tr>
+<td>$\tau=8\,\mathrm{Re}\langle\cdot,\cdot\rangle$</td>
+<td>its identity with the realified complex bilinear form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Realification of the Four Forms</em> (<code>articles_maths/the-realification-of-the-four-forms.md</code>), for the four realified forms</li>
+<li><em>The Gram Matrix of the Complex Bilinear Form</em> (<code>articles_maths/the-gram-matrix-of-the-complex-bilinear-form.md</code>), for the complex bilinear form it reproduces</li>
+<li><em>Biquaternions as a Module over Itself</em> (<code>articles_maths/biquaternions-as-a-module-over-itself.md</code>), for the regular representation</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
