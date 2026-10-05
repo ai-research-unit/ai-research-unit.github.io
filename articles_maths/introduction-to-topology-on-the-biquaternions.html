@@ -52,94 +52,120 @@
       <div class="article-body">
         <h1 id="introduction-to-topology-on-the-biquaternions"><strong>Introduction to Topology on the Biquaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is an eight-dimensional real space that carries a product, and the corpus reads it through three distinguished pairings of its elements. Each pairing is a non-degenerate form, and each form carries a layer of structure: a signature, a zero set, a family of level sets and a group of isometries. The three layers are the sub-categories <em>Topology Induced by the Bilinear Form</em>, <em>Topology Induced by the Hermitian Form</em> and <em>Topology Induced by the Krein Form</em>, and this article is their common entry point.</p>
-<p>It introduces no theorem. The three pairings are defined and compared, as forms, in <em>The Three Pairings of the Biquaternion Algebra</em>; every result quoted below is proved in the article that owns it, and each section names the articles of its layer. What this article states is the situation the three layers share — one algebra, three forms, three readings that do not coincide — and the sense in which each form induces a topology. It assumes the algebra and its conjugations from <em>Biquaternions as a Vector Space over $\mathbb{C}$</em> and <em>Biquaternion Involution Lattice</em>, the pairing map and the three forms from <em>The Three Pairings of the Biquaternion Algebra</em>, and the two functions $N$ and $\lVert\cdot\rVert_E$ from <em>Biquaternion Norm and Invertibility</em>. No physics is invoked.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, central scalar imaginary $i$, and a general element $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The conjugations are the natural conjugation ${}^{\natural}$, the complex conjugation $\bar{\cdot}$ and the Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; $\mathrm{Sc}$ is the scalar part; the sign vector is $\varepsilon=(1,-1,-1,-1)$ and $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ is its diagonal matrix. The biquaternion norm is $N(\tilde{Q})=\sum_\mu Q_\mu^{2}$ and the Euclidean norm is $\lVert\tilde{Q}\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$.</p>
-<h2 id="the-situation">The Situation</h2>
-<p>The algebra has one product and four conjugations, and the conjugations generate the pairings. They form the Klein four-group $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ of <em>Biquaternion Involution Lattice</em>, and to each involution $\sigma$ the <strong>pairing map</strong> assigns</p>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is an eight-dimensional real space that carries a product, and the corpus reads it through four distinguished forms. Each form is the scalar part of one of the four products of <em>The Four Biquaternion Complex Products</em>, each is a non-degenerate pairing of the algebra with itself, and each carries a layer of structure: a signature, a zero set, a family of level sets and a group of isometries. The topology region is divided into the sub-categories <em>Topology Induced by the Bilinear Form</em>, <em>Topology Induced by the Hermitian Form</em> and <em>Topology Induced by the Krein Form</em>; those three develop three of the four forms, and this article is their common entry point and presents the fourth beside them.</p>
+<p>It introduces no theorem. The four forms are defined and compared, as forms, in <em>The Four Biquaternion Complex Products</em>, <em>Relations Between the Four Biquaternion Products</em> and <em>The Three Pairings of the Biquaternion Algebra</em>; every result quoted below is proved in the article that owns it, and each section names the articles of its layer. What this article states is the situation the layers share — one algebra, four forms, four readings that do not coincide — and the sense in which each form induces a topology. It assumes the algebra and its conjugations from <em>Biquaternions as a Vector Space over $\mathbb{C}$</em> and the group they generate from <em>The Group of Involutions</em>, the four products from <em>The Four Biquaternion Complex Products</em>, and the two functions $N$ and $\lVert\cdot\rVert_E$ from <em>Biquaternion Norm and Invertibility</em>. No physics is invoked.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_0=1,e_1,e_2,e_3$ satisfying $e_k^{2}=-e_0$ and $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and with central scalar imaginary $i$, $i^{2}=-1$. A general element and its three conjugates are</p>
 <p>$$
-\Phi_{\sigma}(\tilde{P},\tilde{Q})=\mathrm{Sc}\bigl(\sigma(\tilde{P})\,\tilde{Q}\bigr).
+\tilde{Q}=Q_0+Q_1e_1+Q_2e_2+Q_3e_3,\qquad Q_0,Q_1,Q_2,Q_3\in\mathbb{C},
 $$</p>
-<p>The identity gives the unsymmetric product form $\mathrm{Sc}(\tilde{P}\tilde{Q})$ and the reversal $\flat=-{}^{*}$ gives the negative of the Hermitian pairing; the three non-identity involutions of the group give the three forms of the corpus,</p>
 <p>$$
-B(\tilde{P},\tilde{Q})=\sum_{\mu=0}^{3}P_\mu Q_\mu,\qquad
-\langle\tilde{P},\tilde{Q}\rangle=\sum_{\mu=0}^{3}\overline{P_\mu}\,Q_\mu,\qquad
-[\tilde{P},\tilde{Q}]=\sum_{\mu=0}^{3}\varepsilon_\mu\overline{P_\mu}\,Q_\mu .
+\tilde{Q}^{\natural}=Q_0-Q_1e_1-Q_2e_2-Q_3e_3,\qquad
+\tilde{Q}^{*}=\bar{Q}_0-\bar{Q}_1e_1-\bar{Q}_2e_2-\bar{Q}_3e_3,\qquad
+\bar{\tilde{Q}}=\bar{Q}_0+\bar{Q}_1e_1+\bar{Q}_2e_2+\bar{Q}_3e_3,
 $$</p>
-<p>They are the <strong>bilinear form</strong> $B$, built on the linear conjugation ${}^{\natural}$; the <strong>Hermitian form</strong> $\langle\cdot,\cdot\rangle$, built on the antilinear conjugation ${}^{*}$; and the <strong>Krein form</strong> $[\cdot,\cdot]$, built on the antilinear conjugation $\bar{\cdot}$. Their diagonals are the three real or complex quadratic functions of the algebra,</p>
+<p>so that ${}^{*}={}^{\natural}\circ\bar{\cdot}$, and $\mathrm{Sc}(\tilde{Q})=Q_0$ is the scalar part. The region reads <strong>four forms</strong>, the scalar parts of the four products of <em>The Four Biquaternion Complex Products</em>, and it writes them with <strong>one bracket</strong> $\langle\cdot,\cdot\rangle$ only. The subscript of the bracket records which conjugation enters each argument: the natural conjugation ${}^{\natural}$, when it appears, is applied to the first argument, and the complex conjugation $\bar{\cdot}$, when it appears, to the second argument.</p>
 <p>$$
-B(\tilde{Q},\tilde{Q})=N(\tilde{Q}),\qquad
-\langle\tilde{Q},\tilde{Q}\rangle=\lVert\tilde{Q}\rVert_E^{2},\qquad
-[\tilde{Q},\tilde{Q}]=\sum_{\mu=0}^{3}\varepsilon_\mu\lvert Q_\mu\rvert^{2},
+\langle\tilde{P},\tilde{Q}\rangle=\mathrm{Sc}(\tilde{P}\tilde{Q}),\qquad
+\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}),\qquad
+\langle\tilde{P},\tilde{Q}\rangle_{*}=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*}),\qquad
+\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*}).
 $$</p>
-<p>and the second is positive definite while the first and the third are not. The three are collected in the table with the data each layer is built from.</p>
+<p>They are the <strong>complex bilinear form</strong>, the <strong>quaternion bilinear form</strong>, the <strong>complex sesquilinear form</strong> and the <strong>quaternion sesquilinear form</strong>. In coordinates, with $\varepsilon=(1,-1,-1,-1)$,</p>
+<p>$$
+\langle\tilde{P},\tilde{Q}\rangle=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu Q_\mu,\qquad
+\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\sum_{\mu=0}^{3}P_\mu Q_\mu,\qquad
+\langle\tilde{P},\tilde{Q}\rangle_{*}=\sum_{\mu=0}^{3}P_\mu\overline{Q_\mu},\qquad
+\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu\overline{Q_\mu}.
+$$</p>
+<p>The two bilinear forms are linear in each argument; the two sesquilinear forms are linear in the first argument and conjugate-linear in the second. On the diagonal $\tilde{P}=\tilde{Q}$ they give the four quadratic readings</p>
+<p>$$
+\langle\tilde{Q},\tilde{Q}\rangle=Q_0^{2}-Q_1^{2}-Q_2^{2}-Q_3^{2},\qquad
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2},
+$$</p>
+<p>$$
+\langle\tilde{Q},\tilde{Q}\rangle_{*}=\lvert Q_0\rvert^{2}+\lvert Q_1\rvert^{2}+\lvert Q_2\rvert^{2}+\lvert Q_3\rvert^{2}=\lVert\tilde{Q}\rVert_E^{2},\qquad
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\lvert Q_0\rvert^{2}-\lvert Q_1\rvert^{2}-\lvert Q_2\rvert^{2}-\lvert Q_3\rvert^{2}.
+$$</p>
+<p>The prefixes name the conjugation the form is built from and not a signature or a base field: <em>complex</em> marks a form in which no natural conjugation enters and <em>quaternion</em> one in which it enters in the first argument, while <em>bilinear</em> marks linearity in both arguments and <em>sesquilinear</em> the entry of the complex conjugation in the second. This naming is the only one used in this region. The words <em>Minkowski</em>, <em>Hermitian</em> and <em>Krein</em> are not used as names here, the first because it is available only over the reals and the other two because they name a symmetry and a signature rather than the algebraic structure the form is built from.</p>
+<h2 id="the-four-forms">The Four Forms</h2>
+<p>The four forms are one family cut out by two independent choices: whether the natural conjugation ${}^{\natural}$ is inserted in the first argument, and whether the complex conjugation ${}^{*}$ is inserted in the second. The four products of <em>The Four Biquaternion Complex Products</em> are exactly the four products that result, and the four forms are their scalar parts. They are collected here with the data each is read from.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>form</th>
-<th>conjugation</th>
-<th>first argument</th>
-<th>Gram matrix</th>
-<th>signature over $\mathbb{R}$</th>
-<th>diagonal value</th>
+<th>product</th>
+<th>bracket</th>
+<th>in coordinates</th>
+<th>diagonal</th>
+<th>linearity</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>bilinear $B$</td>
-<td>${}^{\natural}$, linear</td>
-<td>linear</td>
-<td>$\mathrm{I}_4$</td>
-<td>$(4,4)$</td>
-<td>$N(\tilde{Q})$</td>
+<td>complex bilinear</td>
+<td>$\tilde{P}\tilde{Q}$</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>$\sum_\mu\varepsilon_\mu P_\mu Q_\mu$</td>
+<td>$\sum_\mu\varepsilon_\mu Q_\mu^{2}$</td>
+<td>linear in both arguments</td>
 </tr>
 <tr>
-<td>Hermitian $\langle\cdot,\cdot\rangle$</td>
-<td>${}^{*}$, antilinear</td>
-<td>conjugate-linear</td>
-<td>$\mathrm{I}_4$</td>
-<td>$(8,0)$</td>
-<td>$\lVert\tilde{Q}\rVert_E^{2}$</td>
+<td>quaternion bilinear</td>
+<td>$\tilde{P}^{\natural}\tilde{Q}$</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$</td>
+<td>$\sum_\mu P_\mu Q_\mu$</td>
+<td>$\sum_\mu Q_\mu^{2}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$</td>
+<td>linear in both arguments</td>
 </tr>
 <tr>
-<td>Krein $[\cdot,\cdot]$</td>
-<td>$\bar{\cdot}$, antilinear</td>
-<td>conjugate-linear</td>
-<td>$\mathrm{E}$</td>
-<td>$(2,6)$</td>
+<td>complex sesquilinear</td>
+<td>$\tilde{P}\tilde{Q}^{*}$</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
+<td>$\sum_\mu P_\mu\overline{Q_\mu}$</td>
+<td>$\sum_\mu\lvert Q_\mu\rvert^{2}=\lVert\tilde{Q}\rVert_E^{2}$</td>
+<td>linear in the first, conjugate-linear in the second</td>
+</tr>
+<tr>
+<td>quaternion sesquilinear</td>
+<td>$\tilde{P}^{\natural}\tilde{Q}^{*}$</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$</td>
+<td>$\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$</td>
 <td>$\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>linear in the first, conjugate-linear in the second</td>
 </tr>
 </tbody>
 </table></div>
-<p>The Gram matrices are $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$, and the signatures over the eight real coordinates are $(4,4)$, $(8,0)$ and $(2,6)$. The three forms are mutually non-degenerate and pairwise distinct, and they nevertheless determine one another by the identities</p>
+<p>The four are mutually determined, and the passage from the plain forms to the quaternion ones is the insertion of the natural conjugation in the first argument,</p>
 <p>$$
-[\tilde{P},\tilde{Q}]=\langle\tilde{P}^{\natural},\tilde{Q}\rangle,\qquad
-B(\bar{\tilde{P}},\tilde{Q})=\langle\tilde{P},\tilde{Q}\rangle,\qquad
-[\tilde{P},\tilde{Q}]=B\bigl(\overline{\tilde{P}^{\natural}},\tilde{Q}\bigr),
+\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\langle\tilde{P}^{\natural},\tilde{Q}\rangle,\qquad
+\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\langle\tilde{P}^{\natural},\tilde{Q}\rangle_{*},
 $$</p>
-<p>so the three readings are three coefficient expressions of one pairing map and not three independent structures. The natural conjugation ${}^{\natural}$ preserves all three, and it is the map that ties the layers together: it is an isometry of each form and, in the Krein layer, the fundamental symmetry (<em>The Fundamental Symmetry of the Biquaternion Algebra</em>).</p>
+<p>while the passage from a bilinear form to its sesquilinear companion is the insertion of the complex conjugation in the second, $\langle\tilde{P},\bar{\tilde{Q}}\rangle=\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$ and $\langle\tilde{P},\bar{\tilde{Q}}\rangle_{\natural}=\langle\tilde{P},\tilde{Q}\rangle_{*}$. Each form is symmetric or conjugate-symmetric in the two arguments, and each is non-degenerate; they are nevertheless pairwise distinct, and no one of them is a deformation of another.</p>
 <h2 id="what-a-pairing-induces">What a Pairing Induces</h2>
 <p>A non-degenerate pairing determines four objects, and they are the objects each layer of this region is built from.</p>
 <ul>
-<li>the <strong>real form on the diagonal</strong>, $\tilde{Q}\mapsto\Phi(\tilde{Q},\tilde{Q})$, together with its signature, which decides whether the pairing is definite or indefinite;</li>
+<li>the <strong>real form on the diagonal</strong>, $\tilde{Q}\mapsto\langle\tilde{Q},\tilde{Q}\rangle$ or its real part, together with its signature, which decides whether the pairing is definite or indefinite;</li>
 <li>the <strong>null set</strong> $\{\tilde{Q}:\Phi(\tilde{Q},\tilde{Q})=0\}$ and the <strong>level sets</strong> $\{\tilde{Q}:\Phi(\tilde{Q},\tilde{Q})=c\}$;</li>
 <li>the <strong>isometry group</strong>, of the linear maps preserving the pairing; and</li>
 <li>the <strong>subgroups cut out by the diagonal</strong>, wherever the level set of a multiplicative form is a group.</li>
 </ul>
 <p>Each layer reads these four objects from its own form, and the objects do not agree. The disagreement is the content of the region, and it begins with the meaning of the word <em>topology</em>.</p>
-<p><strong>Remark (every non-degenerate pairing yields a distance, and the three distances coincide).</strong> A real-valued form gives a norm through its diagonal only when the diagonal is positive definite, and among the three only the Hermitian form is. But no non-degenerate form is without a distance: a <strong>symmetry</strong> of the form $\Phi$ — an involution $J$ with $\Phi(J\tilde{P},J\tilde{Q})=\Phi(\tilde{P},\tilde{Q})$ and $\Phi(J\tilde{Q},\tilde{Q})>0$ off zero — makes $\mathrm{Re}\,\Phi(J\tilde{P},\tilde{Q})$ an inner product, and every non-degenerate form has one, by Sylvester. For the three pairings the symmetries are the complex conjugation and the natural conjugation, which give the identities of §<em>The Situation</em>: all three forms produce the <strong>same</strong> distance, the Euclidean one, and the Hermitian form is merely the one that needs no symmetry. The three sub-categories are named for the structure each form induces beyond that common distance — its signature, its null set, its level sets, its isometry group — and not for three inequivalent topologies on one set. The full argument is <em>The Three Topologies of the Biquaternion Algebra</em>; the bilinear norm $N$ decides the units and the Hermitian form the topology (<em>The Biquaternion Unit Group as a Topological Group</em>, §<em>The Topology of the Group</em>).</p>
-<h2 id="the-bilinear-layer">The Bilinear Layer</h2>
-<p>The bilinear form is the polarisation of the biquaternion norm, $B(\tilde{P},\tilde{Q})=\mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$. It is $\mathbb{C}$-bilinear, symmetric and non-degenerate, and it is the only one of the three that takes complex values; its realification is the split form of signature $(4,4)$. Its restriction to the six distinguished real subspaces carries the signatures $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(4,0)$ on the quaternion subspace, $(0,4)$ on the anti-quaternion subspace, and $(1,3)$ and $(3,1)$ on the Hermitian and anti-Hermitian subspaces.</p>
-<p>Its diagonal $N$ is complex-valued and multiplicative, so it is not itself a norm; the distance of this layer comes from the symmetry $c=\bar{\cdot}$, which returns the Hermitian form, $B(\bar{\tilde{P}},\tilde{Q})=\langle\tilde{P},\tilde{Q}\rangle$ (§<em>What a Pairing Induces</em>). It decides invertibility — an element is a unit exactly when $N(\tilde{Q})\neq0$ — and its vanishing defines the <strong>null cone</strong></p>
+<p><strong>Remark (every non-degenerate pairing yields a distance, and the four distances coincide).</strong> A real-valued form gives a norm through its diagonal only when the diagonal is positive definite, and among the four only the complex sesquilinear form is. But no non-degenerate form is without a distance: a <strong>symmetry</strong> of the form $\Phi$ — an involution $J$ with $\Phi(J\tilde{P},J\tilde{Q})=\Phi(\tilde{P},\tilde{Q})$ and $\Phi(\tilde{Q},J\tilde{Q})>0$ off zero — makes $\mathrm{Re}\,\Phi(\tilde{P},J\tilde{Q})$ an inner product, and every non-degenerate form has one, by Sylvester. For the four forms the symmetries are the four involutions $\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}$, and each returns the complex sesquilinear form: all four forms produce the <strong>same</strong> distance, the Euclidean one, and the complex sesquilinear form is merely the one that needs no symmetry. The three sub-categories are named for the structure each form induces beyond that common distance — its signature, its null set, its level sets, its isometry group — and not for three inequivalent topologies on one set. The full argument is <em>Four Forms but One Topology on the Biquaternion Algebra</em>; the quaternion bilinear norm $N$ decides the units and the complex sesquilinear form the topology (<em>The Biquaternion Unit Group as a Topological Group</em>, §<em>The Topology of the Group</em>).</p>
+<h2 id="the-complex-bilinear-form">The Complex Bilinear Form</h2>
+<p>The complex bilinear form $\langle\tilde{P},\tilde{Q}\rangle=\mathrm{Sc}(\tilde{P}\tilde{Q})=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ is the polarisation of the quadratic form $\sum_\mu\varepsilon_\mu Q_\mu^{2}$. It is $\mathbb{C}$-bilinear, symmetric and non-degenerate, and it is the one form of the four that carries no conjugation at all. Its Gram matrix is $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, of complex signature $(1,3)$, and its realification is the split form of signature $(4,4)$ — the signature of the quaternion bilinear form, which it shares. Its diagonal vanishes on the non-zero $\tilde{Q}=e_0+e_1$, so it is indefinite; its null set $\{\sum_\mu\varepsilon_\mu Q_\mu^{2}=0\}$ is a complex cone of real dimension $6$; and its isometry group is the complex orthogonal group $O_4(\mathbb{C})$, the same abstract group as that of the quaternion bilinear form, the two forms being equivalent over $\mathbb{C}$.</p>
+<p>The form has no sub-category of its own in the region. It is the second bilinear reading, the partner of the quaternion bilinear form in the pair of two, and it is the scalar bilinear form of <em>Association and the Transpose on the Biquaternion Algebra</em>, where its Gram matrix $\mathrm{E}$, its signature and its association law are developed. Its distance comes from the symmetry ${}^{*}$, which returns the complex sesquilinear form, $\langle\tilde{P},\tilde{Q}^{*}\rangle=\langle\tilde{P},\tilde{Q}\rangle_{*}$ (§<em>What a Pairing Induces</em>).</p>
+<h2 id="the-quaternion-bilinear-form">The Quaternion Bilinear Form</h2>
+<p>The quaternion bilinear form is the polarisation of the biquaternion norm, $\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})=\mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$. It is $\mathbb{C}$-bilinear, symmetric and non-degenerate, and it takes complex values, as does the complex bilinear form; its realification is the split form of signature $(4,4)$. Its restriction to the six distinguished real subspaces carries the signatures $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(4,0)$ on the quaternion subspace, $(0,4)$ on the anti-quaternion subspace, and $(1,3)$ and $(3,1)$ on the Hermitian and anti-Hermitian subspaces.</p>
+<p>Its diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ is complex-valued and multiplicative, so it is not itself a norm; the distance of this layer comes from the symmetry $c=\bar{\cdot}$, which returns the complex sesquilinear form, $\langle\tilde{P},\bar{\tilde{Q}}\rangle_{\natural}=\langle\tilde{P},\tilde{Q}\rangle_{*}$ (§<em>What a Pairing Induces</em>). It decides invertibility — an element is a unit exactly when $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$ — and its vanishing defines the <strong>null cone</strong></p>
 <p>$$
-\mathcal{N}=\{N(\tilde{Q})=0\}=\{0\}\cup\mathcal{Z},
+\mathcal{N}=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0\}=\{0\}\cup\mathcal{Z},
 $$</p>
-<p>where $\mathcal{Z}$ is the zero-divisor set. The cone is a complex hypersurface in $\mathbb{B}\cong\mathbb{C}^{4}$, of real dimension $6$, and the origin is its only singular point; away from the apex it is a smooth complex $3$-manifold, and it is the set on which the algebra fails to be a division algebra. Its complement is the group of units $\mathbb{B}^\times=\{N\neq0\}$, open and dense. The level set $N(\tilde{Q})=1$ is the <strong>norm-one group</strong> $\mathbb{B}^\times_1$, a closed non-compact subgroup of real dimension $6$: in this layer the <em>unit sphere</em> is a group, and it is not bounded.</p>
-<p>Three further structures belong to the layer. The <strong>Clifford algebra</strong> of the quadratic form $N$, with its spinors and its Fierz–Kofink identities. The <strong>projective geometry</strong> of the null cone: its link, the quadric $Q^{2}$ and the Klein–Plücker geometry of the lines of $\mathbb{P}^{3}$. And the <strong>isometry group</strong> $O_4(\mathbb{C})$, of real dimension $12$. The layer is developed in <em>Biquaternion Norm and Invertibility</em>, <em>The Clifford Structure of the Biquaternion Algebra</em>, <em>Biquaternion Topology</em>, <em>The Biquaternion Unit Group as a Topological Group</em> and <em>Biquaternion Orders and Finite Groups of Units</em>; the sub-category also gathers the coordinate realizations of the element — <em>Biquaternion Four-Vector Element Representation</em>, <em>Biquaternion Polar Element Representation</em> and <em>Biquaternion Partial Polar Element Representations</em> — whose content is algebraic and is not read here.</p>
-<h2 id="the-hermitian-layer">The Hermitian Layer</h2>
-<p>The Hermitian form is the one definite pairing, and it is the canonical source of the ambient topology: it is the one form that is already an inner product, so its distance needs no symmetry to be read (§<em>What a Pairing Induces</em>). Its scalar part is $\sum_\mu\lvert Q_\mu\rvert^{2}$, positive definite, and its real part</p>
+<p>where $\mathcal{Z}$ is the zero-divisor set. The cone is a complex hypersurface in $\mathbb{B}\cong\mathbb{C}^{4}$, of real dimension $6$, and the origin is its only singular point; away from the apex it is a smooth complex $3$-manifold, and it is the set on which the algebra fails to be a division algebra. Its complement is the group of units $\mathbb{B}^\times=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0\}$, open and dense. The level set $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=1$ is the <strong>norm-one group</strong> $\mathbb{B}^\times_1$, a closed non-compact subgroup of real dimension $6$: in this layer the <em>unit sphere</em> is a group, and it is not bounded.</p>
+<p>Three further structures belong to the layer. The <strong>Clifford algebra</strong> of the quadratic form $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, with its spinors and its Fierz–Kofink identities. The <strong>projective geometry</strong> of the null cone: its link, the quadric $Q^{2}$ and the Klein–Plücker geometry of the lines of $\mathbb{P}^{3}$. And the <strong>isometry group</strong> $O_4(\mathbb{C})$, of real dimension $12$. The layer is developed in <em>Biquaternion Norm and Invertibility</em>, <em>The Clifford Structure of the Biquaternion Algebra</em>, <em>Biquaternion Topology</em>, <em>The Biquaternion Unit Group as a Topological Group</em> and <em>Biquaternion Orders and Finite Groups of Units</em>; the sub-category also gathers the coordinate realizations of the element — <em>Biquaternion Four-Vector Element Representation</em>, <em>Biquaternion Polar Element Representation</em> and <em>Biquaternion Partial Polar Element Representations</em> — whose content is algebraic and is not read here.</p>
+<h2 id="the-complex-sesquilinear-form">The Complex Sesquilinear Form</h2>
+<p>The complex sesquilinear form is the one definite form of the four, and it is the canonical source of the ambient topology: it is the one form that is already an inner product in the bracket convention of this region, so its distance needs no symmetry to be read (§<em>What a Pairing Induces</em>). Its diagonal is $\sum_\mu\lvert Q_\mu\rvert^{2}$, positive definite, and its real part</p>
 <p>$$
-(\tilde{P},\tilde{Q})_{\mathbb{R}}=\mathrm{Re}\langle\tilde{P},\tilde{Q}\rangle=\sum_{\mu=0}^{3}\bigl(p_\mu q_\mu+p'_\mu q'_\mu\bigr)
+(\tilde{P},\tilde{Q})_{\mathbb{R}}=\mathrm{Re}\langle\tilde{P},\tilde{Q}\rangle_{*}=\sum_{\mu=0}^{3}\bigl(p_\mu q_\mu+p'_\mu q'_\mu\bigr)
 $$</p>
 <p>is a Euclidean inner product on $\mathbb{B}\cong\mathbb{R}^{8}$. The associated <strong>Euclidean norm</strong> $\lVert\cdot\rVert_E$ gives the metric, the balls, the completeness and the <strong>Euclidean topology</strong> in which every topological statement of the corpus is made; the coefficient map is a linear isometry onto $\mathbb{R}^{8}$.</p>
 <p>Two level sets of this layer are distinguished. The <strong>Euclidean unit sphere</strong> $S^{7}_{E}=\{\lVert\tilde{Q}\rVert_E=1\}$ is a genuine $S^{7}$, compact and connected, but it is not a group: $\lVert\cdot\rVert_E$ is not multiplicative, and $S^{7}_{E}$ contains zero divisors, its intersection with the null cone being the link of that cone. The other is the <strong>unitary group</strong></p>
@@ -148,21 +174,25 @@ U(\mathbb{B})=\{\tilde{Q}:\tilde{Q}^{*}\tilde{Q}=e_0\}\cong U(2)\cong S^{1}\time
 $$</p>
 <p>a compact Lie group, and it is the maximal compact subgroup onto which the group of units deformation retracts. Unlike the sphere $S^{7}_{E}$, it lies inside the units.</p>
 <p>The layer owns the Euclidean structure and the contractibility of the algebra and of the six distinguished subspaces; the unitary group and the polar decomposition; the retraction of the group of units and its homotopy, with $\pi_1\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$ and universal cover $\mathbb{R}\times S^{3}$; and the Hermitian modules, the positivity cone and the unitary Witt group. Its articles are <em>The Hermitian Form on the Biquaternion Algebra</em>, <em>The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra</em>, <em>The Euclidean Topology of the Biquaternion Algebra</em>, <em>The Unitary Group of the Biquaternion Algebra</em>, <em>Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint</em> and their companions.</p>
-<h2 id="the-krein-layer">The Krein Layer</h2>
-<p>The Krein form is Hermitian and indefinite, of signature $(2,6)$ over $\mathbb{R}$ and $(1,3)$ over $\mathbb{C}$. Its positive part is the centre $\mathbb{C}_{\mathbb{B}}$ and its negative part the vector subspace $\mathbb{V}_{\mathbb{B}}$; the two are orthogonal in the form and complementary,</p>
+<h2 id="the-quaternion-sesquilinear-form">The Quaternion Sesquilinear Form</h2>
+<p>The quaternion sesquilinear form $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ is conjugate-symmetric and indefinite, of signature $(2,6)$ over $\mathbb{R}$ and $(1,3)$ over $\mathbb{C}$. Its positive part is the centre $\mathbb{C}_{\mathbb{B}}$ and its negative part the vector subspace $\mathbb{V}_{\mathbb{B}}$; the two are orthogonal in the form and complementary,</p>
 <p>$$
 \mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{V}_{\mathbb{B}},
 $$</p>
-<p>the <strong>fundamental decomposition</strong>. The natural conjugation ${}^{\natural}$ is a self-adjoint involution of the form, and it plays the role of the <strong>fundamental symmetry</strong> $J$: it turns the Krein form into the positive definite Hermitian one by the bridge identity $[\tilde{P},\tilde{Q}]=\langle\tilde{P}^{\natural},\tilde{Q}\rangle$. The algebra is thereby a Krein space of complex dimension four and negative index three, a Pontryagin space $\Pi_6$ over $\mathbb{R}$.</p>
-<p>The <strong>null set</strong> $\{[\tilde{Q},\tilde{Q}]=0\}$ is a real cone of real dimension $7$, and it is a different object from the null cone: it contains $\tilde{Q}=e_0+e_1$, which is no zero divisor, and it omits $\tilde{Q}=e_1+ie_2$, which is one; the two cones cross on elements such as $\tilde{Q}=e_0+ie_1$. The level set $[\tilde{Q},\tilde{Q}]=1$ is a hyperboloid, and the maximal totally isotropic subspace has real dimension $2$, so the Witt index is $2$ over $\mathbb{R}$ and $1$ over $\mathbb{C}$.</p>
+<p>the <strong>fundamental decomposition</strong>. The natural conjugation ${}^{\natural}$ is a self-adjoint involution of the form, and it plays the role of the <strong>fundamental symmetry</strong> $J$: it turns the quaternion sesquilinear form into the positive definite complex sesquilinear one by the bridge identity</p>
+<p>$$
+\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\langle\tilde{P}^{\natural},\tilde{Q}\rangle_{*}.
+$$</p>
+<p>The algebra is thereby a Krein space of complex dimension four and negative index three, a Pontryagin space $\Pi_6$ over $\mathbb{R}$.</p>
+<p>The <strong>null set</strong> $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}$ is a real cone of real dimension $7$, and it is a different object from the null cone: it contains $\tilde{Q}=e_0+e_1$, which is no zero divisor, and it omits $\tilde{Q}=e_1+ie_2$, which is one; the two cones cross on elements such as $\tilde{Q}=e_0+ie_1$. The level set $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1$ is a hyperboloid, and the maximal totally isotropic subspace has real dimension $2$, so the Witt index is $2$ over $\mathbb{R}$ and $1$ over $\mathbb{C}$.</p>
 <p>The layer owns the signature and the fundamental decomposition; the isotropic and totally isotropic subspaces; the level sets and the hyperbolic structure; and the operators the form defines — the $J$-self-adjoint, the $J$-unitary and the $J$-normal operators and the indefinite spectral theorem. Its articles are <em>The Biquaternion Krein Form and Its Signature</em>, <em>The Fundamental Symmetry of the Biquaternion Algebra</em>, <em>The Three Pairings of the Biquaternion Algebra</em>, <em>The Krein Gram Matrix and the Restrictions of the Form</em>, <em>Krein Orthogonality and the Fundamental Decomposition</em>, <em>The Isotropic Structure of the Krein Form</em> and <em>The Krein Level Sets and the Hyperbolic Structure</em>, with their operator companions.</p>
-<h2 id="the-three-topologies-compared">The Three Topologies Compared</h2>
-<p>The three layers are collected in one table. Each row is a pairing; the entries are the objects of §<em>What a Pairing Induces</em>, read from that pairing; the signatures are those of the underlying real form.</p>
+<h2 id="the-four-forms-compared">The Four Forms Compared</h2>
+<p>The four forms are collected in one table. Each row is a pairing; the entries are the objects of §<em>What a Pairing Induces</em>, read from that pairing; the signatures are those of the underlying real form.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>topology</th>
 <th>form</th>
+<th>bracket</th>
 <th>Gram matrix</th>
 <th>signature over $\mathbb{R}$</th>
 <th>definiteness</th>
@@ -173,8 +203,18 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>bilinear</td>
-<td>$B(\tilde{P},\tilde{Q})=\sum_\mu P_\mu Q_\mu$</td>
+<td>complex bilinear</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$</td>
+<td>$\mathrm{E}$</td>
+<td>$(4,4)$</td>
+<td>indefinite</td>
+<td>$\{\sum_\mu\varepsilon_\mu Q_\mu^{2}=0\}$, real dimension $6$</td>
+<td>the complex quadric $\sum_\mu\varepsilon_\mu Q_\mu^{2}=1$</td>
+<td>$O_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>quaternion bilinear</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$</td>
 <td>$\mathrm{I}_4$</td>
 <td>$(4,4)$</td>
 <td>indefinite</td>
@@ -183,8 +223,8 @@ $$</p>
 <td>$O_4(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>Hermitian</td>
-<td>$\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu\overline{P_\mu}Q_\mu$</td>
+<td>complex sesquilinear</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$</td>
 <td>$\mathrm{I}_4$</td>
 <td>$(8,0)$</td>
 <td>positive definite</td>
@@ -193,29 +233,30 @@ $$</p>
 <td>$U(4)$</td>
 </tr>
 <tr>
-<td>Krein</td>
-<td>$[\tilde{P},\tilde{Q}]=\sum_\mu\varepsilon_\mu\overline{P_\mu}Q_\mu$</td>
+<td>quaternion sesquilinear</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$</td>
 <td>$\mathrm{E}$</td>
 <td>$(2,6)$</td>
 <td>indefinite</td>
-<td>the Krein null set, real dimension $7$</td>
+<td>the null set of the form, real dimension $7$</td>
 <td>a hyperboloid</td>
 <td>$U(1,3)$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Remark (the three are pairwise distinct and mutually determined).</strong> No two of the three forms agree: the bilinear form is not sesquilinear and is complex-valued, the Hermitian form is definite and the Krein form is not, and the Gram matrices $\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$ are not all equal. They are nevertheless one family, related by the identities of §<em>The Situation</em>, and they carry the same natural conjugation as a common isometry. <strong>The layers are three readings of one algebra, and none is a deformation of another.</strong></p>
-<p><strong>Remark (the three rows give one distance, three unit spheres).</strong> Each row yields a distance, and the three distances coincide, so the table carries one metric and not three; what differs from row to row is the <em>unit sphere</em> the diagonal singles out. The Hermitian row has a positive definite diagonal and its sphere is the genuine $S^{7}_{E}$; the other two rows have indefinite diagonals whose <em>unit spheres</em> are the group $\mathbb{B}^\times_1$ and a hyperboloid rather than a sphere. This is the table form of the caution of §<em>What a Pairing Induces</em>.</p>
+<p><strong>Remark (the four are pairwise distinct and mutually determined).</strong> No two of the four forms agree: the two bilinear forms are complex-valued while the two sesquilinear forms are conjugate-linear in the second argument, and the Gram matrices $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$ and the signatures $(4,4),(4,4),(8,0),(2,6)$ separate the rows. They are nevertheless one family, related by the identities of §<em>The Four Forms</em>, and they carry the four involutions $\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}$ as their symmetries. <strong>The layers are four readings of one algebra, and none is a deformation of another.</strong></p>
+<p><strong>Remark (the four rows give one distance, four level sets).</strong> Each row yields a distance, and the four distances coincide, so the table carries one metric and not four; what differs from row to row is the <em>level set</em> the diagonal singles out. The complex sesquilinear row has a positive definite diagonal and its level set is the genuine $S^{7}_{E}$; the other three rows have indefinite diagonals whose <em>level sets</em> are a complex quadric, the group $\mathbb{B}^\times_1$ and a hyperboloid rather than a sphere. This is the table form of the caution of §<em>What a Pairing Induces</em>.</p>
 <h2 id="the-matrix-picture">The Matrix Picture</h2>
-<p>The $2\times2$ realization $\Phi$ of <em>Biquaternion 2×2 Matrix Element Representation</em> carries the three pairings to three pairings of matrices, with the trace in place of the scalar part and adjugation and the conjugate transpose marking the two non-bilinear cases:</p>
+<p>The $2\times2$ realization $\Phi$ of <em>Biquaternion 2×2 Matrix Element Representation</em> carries the four forms to four pairings of matrices, with the trace in place of the scalar part and the adjugate and the conjugate transpose marking the two non-plain cases. Since $\Phi(\tilde{Q}^{\natural})=\operatorname{adj}\Phi(\tilde{Q})$ and $\Phi(\tilde{Q}^{*})=\Phi(\tilde{Q})^{\dagger}$, the four readings are the plain trace product with either matrix conjugation in the first slot and either in the second,</p>
 <p>$$
-\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde{P})\operatorname{adj}\Phi(\tilde{Q})\bigr),\qquad
-\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde{P})^{\dagger}\Phi(\tilde{Q})\bigr),\qquad
-\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\Phi(\tilde{P})^{\dagger}\Phi(\tilde{Q})\bigr),
+\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde{P})\Phi(\tilde{Q})\bigr),\qquad
+\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\Phi(\tilde{P})\,\Phi(\tilde{Q})\bigr),\qquad
+\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde{P})\,\Phi(\tilde{Q})^{\dagger}\bigr),\qquad
+\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\Phi(\tilde{P})\,\Phi(\tilde{Q})^{\dagger}\bigr),
 $$</p>
-<p>and they reproduce the bilinear, the Hermitian and the Krein form respectively. The realization converts the Euclidean norm into the Frobenius norm, $\lVert\Phi(\tilde{Q})\rVert_F=\sqrt2\,\lVert\tilde{Q}\rVert_E$, and converts the level set of the bilinear layer into the determinant locus: $\mathbb{B}^\times\cong GL_2(\mathbb{C})$ and $\mathbb{B}^\times_1=\{N=1\}\cong SL_2(\mathbb{C})$. The three readings of the six distinguished subspaces are <em>The Centre Subspace under the Three Topologies</em> and its five companions, and the three readings of the two realizations are <em>The 2×2 Matrix Representation under the Three Topologies</em> and <em>The 4×4 Regular Matrix Representation under the Three Topologies</em>; the matrix form of the three forms themselves is <em>The Forms in the Matrix Representation of the Biquaternion Algebra</em>.</p>
+<p>and they reproduce the complex bilinear, the quaternion bilinear, the complex sesquilinear and the quaternion sesquilinear form respectively. The realization converts the Euclidean norm into the Frobenius norm, $\lVert\Phi(\tilde{Q})\rVert_F=\sqrt2\,\lVert\tilde{Q}\rVert_E$, and converts the level set of the quaternion bilinear form into the determinant locus: $\mathbb{B}^\times\cong GL_2(\mathbb{C})$ and $\mathbb{B}^\times_1=\{N=1\}\cong SL_2(\mathbb{C})$. The four readings of the six distinguished subspaces are <em>The Centre Subspace under the Three Topologies</em> and its five companions, and the four readings of the two realizations are <em>The 2×2 Matrix Representation under the Three Topologies</em> and <em>The 4×4 Regular Matrix Representation under the Three Topologies</em>; the matrix form of the four forms themselves is <em>The Forms in the Matrix Representation of the Biquaternion Algebra</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion algebra is one algebra with three distinguished pairings, generated by the three non-identity involutions of the Klein four-group $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ through the pairing map $\Phi_{\sigma}$. The bilinear form $B=\sum_\mu P_\mu Q_\mu$ is $\mathbb{C}$-bilinear, with Gram matrix $\mathrm{I}_4$ and realification of signature $(4,4)$; its diagonal is the multiplicative complex norm $N$, its null set is the null cone, of real dimension $6$, whose punctured part is the zero-divisor set, and its <em>unit sphere</em> is the norm-one group. The Hermitian form $\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu\overline{P_\mu}Q_\mu$ is positive definite, with Gram matrix $\mathrm{I}_4$ and signature $(8,0)$; it supplies the Euclidean norm, the ambient topology, the sphere $S^{7}_{E}$, which is not a group, and the unitary group $U(\mathbb{B})\cong U(2)$. The Krein form $[\tilde{P},\tilde{Q}]=\sum_\mu\varepsilon_\mu\overline{P_\mu}Q_\mu$ is indefinite, with Gram matrix $\mathrm{E}$ and signature $(2,6)$; it carries the fundamental decomposition, the fundamental symmetry $J={}^{\natural}$, a null set of real dimension $7$ distinct from the null cone, and the isometry group $U(1,3)$. The three forms determine one another and $J$ is a common isometry. Each of the three gives a distance and the three distances coincide, so the algebra carries one topology; what the bilinear and the Krein layers add is the geometry their signatures single out, read in that topology. Each layer is developed by the articles named in its section.</p>
+<p>The biquaternion algebra is one algebra with four distinguished forms, the scalar parts of the four products of <em>The Four Biquaternion Complex Products</em>. The complex bilinear form $\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ carries no conjugation, with Gram matrix $\mathrm{E}$ and realification of signature $(4,4)$; its diagonal is the quadratic form $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, its null set is the complex cone $\{\sum_\mu\varepsilon_\mu Q_\mu^{2}=0\}$ of real dimension $6$, and its isometry group is $O_4(\mathbb{C})$. The quaternion bilinear form $\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$ is the polarisation of the norm $N$, with Gram matrix $\mathrm{I}_4$ and realification of signature $(4,4)$; its null set is the null cone, of real dimension $6$, whose punctured part is the zero-divisor set, and its <em>level set</em> $N=1$ is the norm-one group $\mathbb{B}^\times_1$. The complex sesquilinear form $\langle\tilde{P},\tilde{Q}\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$ is positive definite, with Gram matrix $\mathrm{I}_4$ and signature $(8,0)$; it supplies the Euclidean norm, the ambient topology, the sphere $S^{7}_{E}$, which is not a group, and the unitary group $U(\mathbb{B})\cong U(2)$. The quaternion sesquilinear form $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ is indefinite, with Gram matrix $\mathrm{E}$ and signature $(2,6)$; it carries the fundamental decomposition, the fundamental symmetry $J={}^{\natural}$, a null set of real dimension $7$ distinct from the null cone, and the isometry group $U(1,3)$. The four forms are mutually determined and their four symmetries $\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}$ return the complex sesquilinear form. Each of the four gives a distance and the four distances coincide, so the algebra carries one topology; what the three indefinite forms add is the geometry their signatures single out, read in that topology. Each layer is developed by the articles named in its section.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -226,32 +267,36 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\Phi_{\sigma}(\tilde{P},\tilde{Q})=\mathrm{Sc}(\sigma(\tilde{P})\tilde{Q})$</td>
-<td>the pairing map of the involution $\sigma$</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle=\mathrm{Sc}(\tilde{P}\tilde{Q})=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$</td>
+<td>the complex bilinear form; Gram $\mathrm{E}$; signature $(4,4)$</td>
 </tr>
 <tr>
-<td>$B(\tilde{P},\tilde{Q})=\sum_\mu P_\mu Q_\mu$</td>
-<td>the bilinear form; diagonal $N$; signature $(4,4)$</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})=\sum_\mu P_\mu Q_\mu$</td>
+<td>the quaternion bilinear form; diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$; signature $(4,4)$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu\overline{P_\mu}Q_\mu$</td>
-<td>the Hermitian form; diagonal $\lVert\tilde{Q}\rVert_E^{2}$; signature $(8,0)$</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})=\sum_\mu P_\mu\overline{Q_\mu}$</td>
+<td>the complex sesquilinear form; diagonal $\lVert\tilde{Q}\rVert_E^{2}$; signature $(8,0)$</td>
 </tr>
 <tr>
-<td>$[\tilde{P},\tilde{Q}]=\sum_\mu\varepsilon_\mu\overline{P_\mu}Q_\mu$</td>
-<td>the Krein form; signature $(2,6)$</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$</td>
+<td>the quaternion sesquilinear form; signature $(2,6)$</td>
 </tr>
 <tr>
-<td>$\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$</td>
-<td>the three Gram matrices</td>
+<td>$\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$</td>
+<td>the two Gram matrices</td>
 </tr>
 <tr>
-<td>$\mathcal{N}=\{N=0\}$</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\langle\tilde{P}^{\natural},\tilde{Q}\rangle$, $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\langle\tilde{P}^{\natural},\tilde{Q}\rangle_{*}$</td>
+<td>the quaternion forms vs the plain ones</td>
+</tr>
+<tr>
+<td>$\mathcal{N}=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0\}$</td>
 <td>the null cone; real dimension $6$; the zero-divisor set</td>
 </tr>
 <tr>
-<td>$\mathbb{B}^\times_1=\{N=1\}$</td>
-<td>the norm-one group; the bilinear unit sphere</td>
+<td>$\mathbb{B}^\times_1=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=1\}$</td>
+<td>the norm-one group; the quaternion bilinear level set</td>
 </tr>
 <tr>
 <td>$S^{7}_{E}=\{\lVert\tilde{Q}\rVert_E=1\}$</td>
@@ -259,15 +304,15 @@ $$</p>
 </tr>
 <tr>
 <td>$U(\mathbb{B})=\{\tilde{Q}^{*}\tilde{Q}=e_0\}\cong U(2)$</td>
-<td>the unitary group; the Hermitian unit sphere</td>
+<td>the unitary group; the complex sesquilinear level set</td>
 </tr>
 <tr>
-<td>$\{[\tilde{Q},\tilde{Q}]=0\}$</td>
-<td>the Krein null set; real dimension $7$</td>
+<td>$\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}$</td>
+<td>the null set of the quaternion sesquilinear form; real dimension $7$</td>
 </tr>
 <tr>
-<td>$J={}^{\natural}$, $[\tilde{P},\tilde{Q}]=\langle J\tilde{P},\tilde{Q}\rangle$</td>
-<td>the fundamental symmetry of the Krein form</td>
+<td>$J={}^{\natural}$, $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\langle J\tilde{P},\tilde{Q}\rangle_{*}$</td>
+<td>the fundamental symmetry of the quaternion sesquilinear form</td>
 </tr>
 <tr>
 <td>$O_4(\mathbb{C}),\ U(4),\ U(1,3)$</td>
@@ -277,14 +322,17 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><em>The Three Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-three-pairings-of-the-biquaternion-algebra.md</code>), for the three forms, their adjoints and their isometry groups</li>
-<li><em>The Three Topologies of the Biquaternion Algebra</em> (<code>articles_maths/the-three-topologies-of-the-biquaternion-algebra.md</code>), for the argument behind the caution of §<em>What a Pairing Induces</em></li>
-<li><em>The Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md</code>), <em>The Hermitian Form on the Biquaternion Algebra</em> (<code>articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md</code>) and <em>The Biquaternion Krein Form and Its Signature</em> (<code>articles_maths/the-biquaternion-krein-form-and-its-signature.md</code>), for the three forms in full</li>
+<li><em>The Four Biquaternion Complex Products</em> (<code>articles_maths/the-four-biquaternion-complex-products.md</code>), for the four products whose scalar parts are the four forms</li>
+<li><em>Relations Between the Four Biquaternion Products</em> (<code>articles_maths/relations-between-the-four-biquaternion-products.md</code>), for the identities that link the four products and the four forms</li>
+<li><em>The Three Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-three-pairings-of-the-biquaternion-algebra.md</code>), for three of the forms, their adjoints and their isometry groups</li>
+<li><em>Four Forms but One Topology on the Biquaternion Algebra</em> (<code>articles_maths/four-forms-but-one-topology-on-the-biquaternion-algebra.md</code>), for the argument behind the caution of §<em>What a Pairing Induces</em></li>
+<li><em>The Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md</code>), <em>The Hermitian Form on the Biquaternion Algebra</em> (<code>articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md</code>) and <em>The Biquaternion Krein Form and Its Signature</em> (<code>articles_maths/the-biquaternion-krein-form-and-its-signature.md</code>), for three of the forms in full</li>
+<li><em>Association and the Transpose on the Biquaternion Algebra</em> (<code>articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.md</code>), for the complex bilinear form, its Gram matrix $\mathrm{E}$ and its association law</li>
 <li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the norm, its polarisation and the real forms</li>
-<li><em>The Euclidean Topology of the Biquaternion Algebra</em> (<code>articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md</code>), for the ambient topology the Hermitian form induces</li>
-<li><em>The Fundamental Symmetry of the Biquaternion Algebra</em> (<code>articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md</code>), for the map that turns the Krein form into the Hermitian one</li>
-<li><em>The Forms in the Matrix Representation of the Biquaternion Algebra</em> (<code>articles_maths/the-forms-in-the-matrix-representation-of-the-biquaternion-algebra.md</code>), for the three forms in the $2\times2$ realization</li>
-<li><em>Biquaternion Involution Lattice</em> (<code>articles_maths/biquaternion-involution-lattice.md</code>), for the four conjugations and their group</li>
+<li><em>The Euclidean Topology of the Biquaternion Algebra</em> (<code>articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md</code>), for the ambient topology the complex sesquilinear form induces</li>
+<li><em>The Fundamental Symmetry of the Biquaternion Algebra</em> (<code>articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md</code>), for the map that turns the quaternion sesquilinear form into the complex sesquilinear one</li>
+<li><em>The Forms in the Matrix Representation of the Biquaternion Algebra</em> (<code>articles_maths/the-forms-in-the-matrix-representation-of-the-biquaternion-algebra.md</code>), for the forms in the $2\times2$ realization</li>
+<li><em>The Group of Involutions</em> (<code>articles_maths/the-group-of-involutions.md</code>), for the four conjugations and their group</li>
 </ul>
       </div>
     </main>

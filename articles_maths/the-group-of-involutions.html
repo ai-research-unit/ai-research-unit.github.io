@@ -52,12 +52,44 @@
       <div class="article-body">
         <h1 id="the-group-of-involutions"><strong>The Group of Involutions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The biquaternion algebra carries two distinguished involutive anti-automorphisms, the <strong>Hermitian conjugation</strong> ${}^{*}$ and the <strong>quaternion conjugation</strong> ${}^{\natural}$. They commute, and together with the identity and their composite, the complex conjugation $\bar{\cdot}$, they form a group of order four, the <strong>Klein four-group</strong> $V_{4}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$. This article treats the two maps and the group they generate: the two composition rules, the Cayley table, the subgroups, and the place of the fourth conjugation, the reversal, outside the group.</p>
-<p>The article reads the maps as involutions of the algebra and nothing else. The formulas of the four conjugations, the composition table that includes the reversal, and the lattice of fixed spaces they produce are <em>Biquaternion Involution Lattice</em>; the algebra, its basis and its four conjugations are <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>. Neither is repeated here.</p>
+<p>The biquaternion algebra carries two distinguished involutive anti-automorphisms, the <strong>Hermitian conjugation</strong> ${}^{*}$ and the <strong>quaternion conjugation</strong> ${}^{\natural}$. They commute, and together with the identity and their composite, the complex conjugation $\bar{\cdot}$, they form a group of order four, the <strong>Klein four-group</strong> $V_{4}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$. This article treats the two maps and the group they generate: the two composition rules, the Cayley table, the subgroups, the place of the fourth conjugation, the reversal, outside the group, the composition table that includes the reversal, and the orbits of the group on the algebra.</p>
+<p>The formulas of the four conjugations and the algebra itself are <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>; the lattice of the fixed spaces they produce is <em>Comparison of the Six Subspaces</em>; and the six subspaces, one to a section, are <em>Introduction to the Six Subspaces</em>. None of these is repeated here.</p>
 <p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$, the coefficients complex; units $e_0=1$ and $e_k^{2}=-e_0$; central scalar imaginary $i$; sign vector $\varepsilon=(1,-1,-1,-1)$. On the coefficients the four involutions act by</p>
 <p>$$
 ({\tilde Q}^{\mathrm{id}})_\mu=Q_\mu , \qquad (\tilde Q^{\natural})_\mu=\varepsilon_\mu Q_\mu , \qquad ({\tilde Q}^{*})_\mu=\varepsilon_\mu \bar Q_\mu , \qquad (\bar{\tilde Q})_\mu=\bar Q_\mu .
 $$</p>
+<p>An <strong>antilinear involution</strong> of $\mathbb{B}$ is a real-linear map $\sigma$ with $\sigma^{2}=\mathrm{id}$ and $\sigma(\lambda\tilde Q)=\bar\lambda\,\sigma(\tilde Q)$ for $\lambda\in\mathbb{C}$. On the eight real coordinates $q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3$ of $\tilde Q=\sum_\mu(q_\mu+iq'_\mu)e_\mu$ the four maps act by signed permutations:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>map</th>
+<th>$(q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3)\mapsto$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{id}$</td>
+<td>$(q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3)$</td>
+</tr>
+<tr>
+<td>${}^{\natural}$</td>
+<td>$(q_0,-q_1,-q_2,-q_3,q'_0,-q'_1,-q'_2,-q'_3)$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$(q_0,q_1,q_2,q_3,-q'_0,-q'_1,-q'_2,-q'_3)$</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>$(q_0,-q_1,-q_2,-q_3,-q'_0,q'_1,q'_2,q'_3)$</td>
+</tr>
+<tr>
+<td>$\flat$</td>
+<td>$(-q_0,q_1,q_2,q_3,q'_0,-q'_1,-q'_2,-q'_3)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Only ${}^{*}$, $\bar{\cdot}$ and $\flat$ are antilinear in this sense; ${}^{\natural}$ is $\mathbb{C}$-linear, and $\mathrm{id}$ is the identity. The first three rows are the maps of the group studied below; the last is the reversal, treated with them and outside the group.</p>
 <h2 id="the-extra-involution">The Extra Involution</h2>
 <p><strong>Definition.</strong> The <strong>Hermitian conjugation</strong> is the antilinear involution</p>
 <p>$$
@@ -130,7 +162,51 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>Remark (the group is abelian).</strong> Every square is the identity and the table is symmetric, so the four maps may be applied in any order, and the conjugation action of the group on itself is trivial. <strong>The group is abelian, and the four involutions commute pairwise.</strong></p>
-<p><strong>Remark (the reversal is outside).</strong> The fourth conjugation of the algebra, the reversal $\flat=-{}^{*}$, is not an element of $G$: its square is $\mathrm{id}$, but $\flat\circ{}^{*}=-\mathrm{id}$ is not one of the four, so the set $\{{}^{*},{}^{\natural},\bar{\cdot},\flat\}$ is not closed. The reversal is an anti-automorphism only up to the central sign, since $(\tilde Q\tilde R)^{\flat}=-\tilde R^{\flat}\tilde Q^{\flat}$, and its compositions are read in the composition table of <em>Biquaternion Involution Lattice</em>.</p>
+<p><strong>Remark (the reversal is outside).</strong> The fourth conjugation of the algebra, the reversal $\flat=-{}^{*}$, is not an element of $G$: its square is $\mathrm{id}$, but $\flat\circ{}^{*}=-\mathrm{id}$ is not one of the four, so the set $\{{}^{*},{}^{\natural},\bar{\cdot},\flat\}$ is not closed. The reversal is an anti-automorphism only up to the central sign, since $(\tilde Q\tilde R)^{\flat}=-\tilde R^{\flat}\tilde Q^{\flat}$, and its compositions with the group are read in the next table, where the entries are the maps of $G$ and their negatives.</p>
+<h2 id="the-composition-table-with-the-reversal">The Composition Table with the Reversal</h2>
+<p>The four conjugations together, including the reversal, do not form a group, but their compositions are still read on the four maps up to the central sign $\pm1$. With the entry the map applied first in the row and then in the column,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\circ$</th>
+<th>${}^{\natural}$</th>
+<th>$\bar{\cdot}$</th>
+<th>${}^{*}$</th>
+<th>$\flat$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>${}^{\natural}$</td>
+<td>$\mathrm{id}$</td>
+<td>${}^{*}$</td>
+<td>$\bar{\cdot}$</td>
+<td>$-\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>${}^{*}$</td>
+<td>$\mathrm{id}$</td>
+<td>${}^{\natural}$</td>
+<td>$-{}^{\natural}$</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>$\bar{\cdot}$</td>
+<td>${}^{\natural}$</td>
+<td>$\mathrm{id}$</td>
+<td>$-\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$\flat$</td>
+<td>$-\bar{\cdot}$</td>
+<td>$-{}^{\natural}$</td>
+<td>$-\mathrm{id}$</td>
+<td>$\mathrm{id}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The entry $-\bar{\cdot}$ denotes the map $\tilde Q\mapsto-\bar{\tilde Q}$, and similarly for $-{}^{\natural}$ and $-\mathrm{id}$. The table contains the two composition rules of §<em>The Group of Involutions</em> and shows where the group structure stops: the composite of two maps of $G$ is the third, while a composite involving the reversal is the negative of a map of $G$. The negative of the identity appears in the two entries $({}^{*},\flat)$ and $(\flat,{}^{*})$, and it is this central sign that keeps the reversal outside $G$ and makes the set $\{\natural,\bar{\cdot},{}^{*},\flat\}$ closed only up to $\pm1$.</p>
 <h2 id="the-structure-of-the-group">The Structure of the Group</h2>
 <p><strong>Proposition (the subgroups).</strong> The group has exactly three subgroups of order two, one for each non-identity element,</p>
 <p>$$
@@ -140,15 +216,38 @@ $$</p>
 <p><strong>Proof.</strong> A subgroup order divides the order of the group, so the orders available are one, two and four; an element of order two generates a subgroup of order two, and each of the three non-identity elements is its own inverse, so each generates one. No two of them generate the same subgroup, since the elements are distinct, and a subgroup of order two contains the identity and one further element. A subgroup of order three would have an element of order three by Lagrange applied to the prime $3$, and the group has none.</p>
 <p><strong>Proposition (two generate the group).</strong> Any two distinct non-identity elements of the group generate it. In particular the pair ${}^{\natural}$, ${}^{*}$ presented in the two Propositions of §<em>The Extra Involution</em> generates $G$, the third element being their composite $\bar{\cdot}$.</p>
 <p><strong>Proof.</strong> Each non-identity element has order two, and the composite of two distinct ones is the third, which is contained in the subgroup they generate; the subgroup therefore contains three non-identity elements and the identity, and is $G$.</p>
-<p><strong>Remark (two choices of generators).</strong> <em>Biquaternions as a Vector Space over $\mathbb{C}$</em> and <em>Biquaternion Involution Lattice</em> write the two generators as ${}^{\natural}$ and $\bar{\cdot}$; this article writes them as ${}^{\natural}$ and ${}^{*}$. The two choices describe the same group, since ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ and $\bar{\cdot}={}^{*}\circ{}^{\natural}$, and either pair generates the third element. The pair is a choice of presentation and not a property of the group.</p>
+<p><strong>Remark (two choices of generators).</strong> <em>Biquaternions as a Vector Space over $\mathbb{C}$</em> writes the two generators as ${}^{\natural}$ and $\bar{\cdot}$; this article writes them as ${}^{\natural}$ and ${}^{*}$. The two choices describe the same group, since ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ and $\bar{\cdot}={}^{*}\circ{}^{\natural}$, and either pair generates the third element. The pair is a choice of presentation and not a property of the group.</p>
 <p><strong>Remark (the group is elementary abelian).</strong> The group is the direct product of the two subgroups $\{\mathrm{id},{}^{*}\}$ and $\{\mathrm{id},{}^{\natural}\}$, whose intersection is $\{\mathrm{id}\}$, so</p>
 <p>$$
 G=\{\mathrm{id},{}^{*}\}\times\{\mathrm{id},{}^{\natural}\}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2} ,
 $$</p>
 <p>with the third order-two subgroup the diagonal $\{\mathrm{id},\bar{\cdot}\}$. Every element has order two, so the exponent of the group is two and the group is generated by its involutions, which is the reason the group is called the group of involutions. <strong>The group is elementary abelian of order four, and its three involutions together with the identity are the four maps of the table.</strong></p>
 <p><strong>Proof.</strong> The two subgroups are normal, being index two and of order two, their intersection is trivial and their product contains four elements; the diagonal subgroup is generated by their composites, which are all equal to $\bar{\cdot}$.</p>
+<h2 id="the-orbits-of-the-group">The Orbits of the Group</h2>
+<p>The group acts on the algebra through its four maps, and the orbit of an element is the set of its four images.</p>
+<p><strong>Theorem.</strong> The orbit of $\tilde Q$ under $G=\{\mathrm{id},{}^{*},{}^{\natural},\bar{\cdot}\}$ has size</p>
+<p>$$
+1 \quad\text{or}\quad 2 \quad\text{or}\quad 4 ,
+$$</p>
+<p>the size being $1$ on the real line $\langle e_0\rangle$; $2$ on the elements that lie in the centre $\mathbb{C}_{\mathbb{B}}$, in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ or in the Hermitian subspace $\mathbb{M}_+$ but not on that line; and $4$ otherwise.</p>
+<p><strong>Proof.</strong> An element is fixed by the whole group exactly when it is fixed by ${}^{\natural}$ and by $\bar{\cdot}$, since ${}^{*}$ is their composite; that intersection is $\mathbb{C}_{\mathbb{B}}\cap\mathbb{H}_{\mathbb{B}}=\langle e_0\rangle$, which gives orbit size $1$. The stabilizer has order two exactly when the element is fixed by one of ${}^{\natural},\bar{\cdot},{}^{*}$ and by no second one — fixed by two it is fixed by the third and lies on the real line — and the three fixed spaces are $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$, whose pairwise intersections are all $\langle e_0\rangle$; this gives orbit size $2$ exactly on the stated set, and orbit size $4$ on its complement.</p>
+<p><strong>Example (an element of each orbit size).</strong> For $\tilde Q=e_0+2e_1+3ie_1+4ie_2$ the images are</p>
+<p>$$
+\tilde Q^{\natural}=e_0-2e_1-3ie_1-4ie_2,\quad \bar{\tilde Q}=e_0+2e_1-3ie_1-4ie_2,\quad \tilde Q^{*}=e_0-2e_1+3ie_1+4ie_2,
+$$</p>
+<p>and $\tilde Q^{\flat}=-e_0+2e_1-3ie_1-4ie_2$; the four points are pairwise distinct, so the orbit has size $4$, the element lying in none of $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$. For the central but non-real element $\tilde Q=(1+3i)e_0$ the images are $(1+3i)e_0$ under $\mathrm{id}$ and ${}^{\natural}$, and $(1-3i)e_0$ under $\bar{\cdot}$ and ${}^{*}$, so the orbit is $\{(1+3i)e_0,(1-3i)e_0\}$ of size $2$. For $\tilde Q=2e_0$ every image is $2e_0$, so the orbit has size $1$.</p>
+<p><strong>Example (the stabilizer of a vector).</strong> For $\tilde Q=e_1$ the maps ${}^{\natural}$ and ${}^{*}$ negate it, while $\bar{\cdot}$ fixes it, the coefficient being real:</p>
+<p>$$
+{}^{\natural}(e_1)=-e_1,\qquad \bar{\cdot}(e_1)=e_1,\qquad {}^{*}(e_1)=-e_1,\qquad \flat(e_1)=e_1,
+$$</p>
+<p>so the orbit is $\{e_1,-e_1\}$ of size two and the stabilizer of $e_1$ is $\{\mathrm{id},\bar{\cdot}\}$, the subgroup that fixes $\mathbb{H}_{\mathbb{B}}$ pointwise.</p>
+<p><strong>Example (a Hermitian element).</strong> For $\tilde Q=e_0+ie_1$ the images are</p>
+<p>$$
+\tilde Q^{\natural}=e_0-ie_1,\qquad \bar{\tilde Q}=e_0-ie_1,\qquad \tilde Q^{*}=e_0+ie_1=\tilde Q,\qquad \tilde Q^{\flat}=-e_0-ie_1,
+$$</p>
+<p>so the orbit is $\{e_0+ie_1,\,e_0-ie_1,\,-e_0-ie_1,\,-e_0+ie_1\}$ of size four.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion algebra carries two commuting involutive anti-automorphisms of order two, the Hermitian conjugation ${}^{*}$ and the quaternion conjugation ${}^{\natural}$; the first is the C*-involution, conjugate-linear, and the second is the extra involution, linear, both reversing the order of every product. With the identity and their composite, the complex conjugation $\bar{\cdot}$, they form the Klein four-group $G=\{\mathrm{id},{}^{*},{}^{\natural},\bar{\cdot}\}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$, in which every element is its own inverse, the composite of two distinct non-identity elements is the third, and the table is symmetric. The group has exactly three proper subgroups, the order-two subgroups generated by the three non-identity elements, any two of which generate the group; it is elementary abelian, the direct product of the subgroups of ${}^{*}$ and of ${}^{\natural}$, and its exponent is two. The reversal $\flat=-{}^{*}$ lies outside the group, being an anti-automorphism only up to the central sign.</p>
+<p>The biquaternion algebra carries two commuting involutive anti-automorphisms of order two, the Hermitian conjugation ${}^{*}$ and the quaternion conjugation ${}^{\natural}$; the first is the C*-involution, conjugate-linear, and the second is the extra involution, linear, both reversing the order of every product. With the identity and their composite, the complex conjugation $\bar{\cdot}$, they form the Klein four-group $G=\{\mathrm{id},{}^{*},{}^{\natural},\bar{\cdot}\}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$, in which every element is its own inverse, the composite of two distinct non-identity elements is the third, and the table is symmetric. The group has exactly three proper subgroups, the order-two subgroups generated by the three non-identity elements, any two of which generate the group; it is elementary abelian, the direct product of the subgroups of ${}^{*}$ and of ${}^{\natural}$, and its exponent is two. The reversal $\flat=-{}^{*}$ lies outside the group, being an anti-automorphism only up to the central sign; its compositions with the group are read, up to that sign, in the composition table with the reversal, in which every entry is a map of the group or its negative. The group acts on the algebra with orbits of size one, two or four, according as the element lies on the real line, in the centre, the quaternion subspace or the Hermitian subspace but off that line, or nowhere in particular; the orbit–stabilizer count reads these sizes from the fixed spaces of the three non-identity maps.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -186,12 +285,25 @@ $$</p>
 <td>$\varepsilon=(1,-1,-1,-1)$</td>
 <td>the sign vector of the natural conjugation</td>
 </tr>
+<tr>
+<td>orbit</td>
+<td>the set of the four conjugated images of an element, of size $1$, $2$ or $4$</td>
+</tr>
+<tr>
+<td>stabilizer</td>
+<td>the subgroup of the group fixing an element</td>
+</tr>
+<tr>
+<td>composition table with the reversal</td>
+<td>the $4\times4$ table over $\{\natural,\bar{\cdot},{}^{*},\flat\}$, with entries the maps of $G$ and their negatives</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><em>Biquaternions as a Vector Space over $\mathbb{C}$</em> (<code>articles_maths/biquaternions-as-a-vector-space-over-c.md</code>), for the algebra, its basis and its four conjugations</li>
-<li><em>Biquaternion Involution Lattice</em> (<code>articles_maths/biquaternion-involution-lattice.md</code>), for the formulas of the conjugations, the composition table and the lattice of fixed spaces</li>
+<li><em>Introduction to the Six Subspaces</em> (<code>articles_maths/introduction-to-the-six-subspaces.md</code>), for the six fixed spaces of the four involutions, one to a section</li>
+<li><em>Comparison of the Six Subspaces</em> (<code>articles_maths/comparison-of-the-six-subspaces.md</code>), for the relations between the six fixed spaces and the lattice they form</li>
 <li><em>Biquaternion 2×2 Matrix Element Representation</em> (<code>articles_maths/biquaternion-2x2-matrix-element-representation.md</code>), for the matrix picture in which the extra involution is the coefficient conjugation composed with the conjugate transpose</li>
 </ul>
       </div>

@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>Each conjugation of $\mathbb{B}$ is an involution, so each divides the real space into the elements it fixes and the elements it reverses, and each division is a direct-sum decomposition of that space. Three of the four conjugations give decompositions distinct in the sense that no one reproduces another, and each of the three pairs two of the six distinguished real subspaces of $\mathbb{B}$: the halves have real dimensions $2+6$, $4+4$ and $4+4$. The article takes them in that order, from the one with halves of unequal dimension to the two symmetric halves.</p>
 <p>This article establishes the three decompositions, gives the two projection formulas for each — the halved sum and the halved difference against the conjugation — and closes with the reason there are exactly three and not four. The decompositions are vector-space decompositions: they are read off the conjugations, and no product is needed.</p>
-<p>The six subspaces, one to a section, are <em>Introduction to the Six Subspaces</em>; the four conjugations as formulas, the group they form and the lattice of their fixed spaces are <em>The Group of Involutions</em> and <em>Biquaternion Involution Lattice</em>. The elements, the basis, the coordinate systems and the fact that the conjugations are linear and antilinear are assumed from <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>. The coordinate blocks, the fifteen pairwise intersections, the sums and the sign patterns of the conjugations on the six subspaces are <em>Comparison of the Six Subspaces</em>.</p>
+<p>The six subspaces, one to a section, are <em>Introduction to the Six Subspaces</em>; the four conjugations as formulas, the group they form and the lattice of their fixed spaces are <em>The Group of Involutions</em> and <em>Comparison of the Six Subspaces</em>. The elements, the basis and the coordinate systems are assumed from <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>, and the fact that the conjugations are linear and antilinear from <em>Biquaternions as a Vector Space over $\mathbb{R}$</em>. The coordinate blocks, the fifteen pairwise intersections, the sums and the sign patterns of the conjugations on the six subspaces are <em>Comparison of the Six Subspaces</em>.</p>
 <h2 id="the-center-and-vector-decomposition">The Center and Vector Decomposition</h2>
 <p>The quaternion conjugation ${}^{\natural}$ is one of the three commuting involutions. Its eigenspaces are the center $\mathbb{C}_{\mathbb{B}}$ (eigenvalue $+1$) and the vector subspace $\mathrm{Vect}(\mathbb{B})$ (eigenvalue $-1$), of real dimensions 2 and 6. Every biquaternion therefore decomposes uniquely as a scalar plus a pure vector part:</p>
 <p>$$
@@ -113,6 +113,22 @@ $$</p>
 $$</p>
 <p>are the eigenspace decompositions of the three pairwise commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$, and they are the only decompositions of this kind: $\flat = -{}^{*}$ reproduces the eigenspaces of ${}^{*}$ with the signs exchanged and gives nothing new, so there are exactly three decompositions and six subspaces.</p>
 <p>The three are the three ways of splitting the four coordinate blocks into two complementary pairs, they are the only pairs of distinct subspaces whose intersection is trivial, and they are the only pairs that sum to the whole algebra. The blocks, the pairings, the full table of the fifteen pairwise intersections, the sums and the action of the four conjugations on the six subspaces are in <em>Comparison of the Six Subspaces</em>.</p>
+<h2 id="a-worked-element-in-the-three-decompositions">A Worked Element in the Three Decompositions</h2>
+<p>Take the element</p>
+<p>$$
+\tilde{Q} = (2+i)e_0 + 3e_1 + ie_2 - 4e_3 .
+$$</p>
+<p>Its three readings, one per decomposition, follow from the projection formulas above:</p>
+<p>$$
+\tilde{Q} = \underbrace{(2+i)e_0}_{\mathbb{C}_{\mathbb{B}}} + \underbrace{3e_1 + ie_2 - 4e_3}_{\mathrm{Vect}(\mathbb{B})},
+$$</p>
+<p>$$
+\tilde{Q} = \underbrace{2e_0 + 3e_1 - 4e_3}_{\mathbb{H}_{\mathbb{B}}} + \underbrace{ie_0 + ie_2}_{i\mathbb{H}_{\mathbb{B}}},
+$$</p>
+<p>$$
+\tilde{Q} = \underbrace{2e_0 + ie_2}_{\mathbb{M}_+} + \underbrace{ie_0 + 3e_1 - 4e_3}_{\mathbb{M}_-}.
+$$</p>
+<p>The three lines add up to the same element, as they must, since each is a direct sum decomposition of the same eight real coordinates $(2, 3, 0, -4, 1, 0, 1, 0)$. The scalar–vector reading takes the whole scalar coefficient $2+i$ against the whole vector part $3e_1 + ie_2 - 4e_3$. The quaternion reading splits each coefficient into its real and imaginary parts and puts the real parts $2e_0 + 3e_1 - 4e_3$ in $\mathbb{H}_{\mathbb{B}}$ and the imaginary parts $ie_0 + ie_2$ in $i\mathbb{H}_{\mathbb{B}}$. The Hermitian reading pairs the real scalar part and the imaginary vector part, $2e_0 + ie_2$, against the imaginary scalar part and the real vector part, $ie_0 + 3e_1 - 4e_3$. No one of the three readings can be recovered from another: the same eight coordinates are cut along three different planes.</p>
 <h2 id="summary">Summary</h2>
 <p>The six distinguished real subspaces of $\mathbb{B}$ come in three pairs, one pair to each of the three commuting conjugations, and each pair sums directly to the whole space:</p>
 <p>$$

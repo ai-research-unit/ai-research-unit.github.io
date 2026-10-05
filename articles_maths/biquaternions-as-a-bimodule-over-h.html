@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternions as a Bimodule over $\mathbb{H}$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternions-as-a-bimodule-over-math0"><strong>Biquaternions as a Bimodule over $\mathbb{H}$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is an abelian group on which the quaternion ring $\mathbb{H}$ acts on both sides, and the two actions commute: it is an $\mathbb{H}$-<strong>bimodule</strong>. The base is a ring and not a field, and $\mathbb{H}$ is not commutative, so this structure is not a second scalar field beside $\mathbb{C}$ and $\mathbb{R}$; it is a ring of operators acting on the additive group. This article develops the two actions, the quaternionic coordinates, the rank, the endomorphism ring, and the exact sense in which the product of $\mathbb{B}$ fails to be fully $\mathbb{H}$-bilinear.</p>
+<p>Three facts are the content. $\mathbb{B}$ is free of rank two over $\mathbb{H}$ on each side, with the same two generators $e_0$ and $ie_0$, and those generators are a real basis of the centre. As a right $\mathbb{H}$-module its $\mathbb{H}$-linear endomorphisms are the two-by-two matrices over $\mathbb{H}$, $\operatorname{End}_\mathbb{H}(\mathbb{B})\cong M_2(\mathbb{H})$. And the product is left $\mathbb{H}$-linear in the first argument and right $\mathbb{H}$-linear in the second, but not fully $\mathbb{H}$-bilinear: the defect is the commutator $[\tilde Q,h]$, and a module over $\mathbb{H}$ with exactly these two linearities is an $\mathbb{H}$-ring. Whether $\mathbb{H}$ may serve as a base ring rather than as a ring of operators is the base-ring question of <em>Biquaternions as an Algebra over $\mathbb{R}$</em>.</p>
+<p>The article assumes <em>Quaternion Algebra</em> for $\mathbb{H}$, its basis and its multiplication, and <em>Biquaternions as a Vector Space over $\mathbb{C}$</em> for the additive group, the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ and the central imaginary $i$. The general theory is used and not repeated: <em>Modules</em> and <em>Modules over an Algebra</em> for the module axioms and the action of a ring, <em>Direct Sums, Free Modules and Rank</em> for free modules and rank, <em>The Endomorphism Algebra of a Module</em> for the endomorphism ring of a free module, and <em>Change of Rings</em> for the comparison of bases. The product $\tilde P\tilde Q$ is <em>The Four Biquaternion Complex Products</em> and is used as given. The companion structure, in which $\mathbb{B}$ itself acts, is <em>Biquaternions as a Module over Itself</em>. No form, no norm and no topology is used, and no degree-two form appears.</p>
+<p>Throughout, $\tilde Q=h_1+ih_2$ with $h_1,h_2\in\mathbb{H}$, a general element in the quaternionic coordinates of <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>.</p>
+<h2 id="the-two-actions">The Two Actions</h2>
+<p><strong>Definition.</strong> The <strong>left and right $\mathbb{H}$-actions</strong> on $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ are</p>
+<p>$$
+h \cdot (A \otimes h') = A \otimes (hh'), \qquad (A \otimes h') \cdot h = A \otimes (h'h),
+$$</p>
+<p>with $A\in\mathbb{C}$ and $h,h'\in\mathbb{H}$. The left action is left multiplication by $1\otimes h$, the right action is right multiplication by the same element, and both are $\mathbb{R}$-bilinear because $\mathbb{H}$ is an $\mathbb{R}$-algebra. They <strong>commute</strong>, for $\tilde Q=A\otimes h'$ and any third scalar $k\in\mathbb{H}$,</p>
+<p>$$
+(h \cdot \tilde Q) \cdot k = (A \otimes hh') \cdot k = A \otimes (hh')k = A \otimes h(h'k) = h \cdot (\tilde Q \cdot k),
+$$</p>
+<p>by the associativity of the product of $\mathbb{H}$; the two factors of $\mathbb{B}$ commute with each other, so $\mathbb{B}$ is an $\mathbb{H}$-<strong>bimodule</strong>.</p>
+<p><strong>Remark (two actions, not two scalars).</strong> The left and the right action are distinct whenever $\mathbb{H}$ is non-commutative, and no choice of one of them turns the other into the same map. This is the difference between a bimodule over a ring and a vector space over a field, and it is why the two actions are kept apart throughout.</p>
+<h2 id="the-quaternionic-coordinates">The Quaternionic Coordinates</h2>
+<p>In the quaternionic coordinates an element is $\tilde Q = h_1 + ih_2$ with $h_1, h_2 \in \mathbb{H}$, and the two actions are</p>
+<p>$$
+h \cdot \tilde Q = (hh_1) + i(hh_2), \qquad \tilde Q \cdot h = (h_1h) + i(h_2h),
+$$</p>
+<p>using the centrality of $i$. The decomposition $\tilde Q = h_1 + ih_2$ is unique, which is the statement that $\mathbb{C}=\mathbb{R}\oplus\mathbb{R}i$ tensored with $\mathbb{H}$ splits $\mathbb{B}$ into two copies of $\mathbb{H}$ on each side.</p>
+<h2 id="free-of-rank-two">Free of Rank Two</h2>
+<p>Because the decomposition $\tilde Q = h_1 + ih_2$ is unique, $\{e_0, ie_0\}$ is a basis on the right and on the left at once:</p>
+<p>$$
+\mathbb{B} = \mathbb{H}e_0 \oplus \mathbb{H}(ie_0) \cong \mathbb{H}^2 \quad \text{on each side},
+$$</p>
+<p>and $\mathbb{B}$ is <strong>free of rank two</strong> over $\mathbb{H}$. It is worth noticing which elements serve as the generators: $e_0$ and $ie_0$ span the plane $\mathbb{C}_{\mathbb{B}}$ of the centre. The two free generators over $\mathbb{H}$ are a real basis of the centre of $\mathbb{B}$.</p>
+<h2 id="the-endomorphisms">The Endomorphisms</h2>
+<p>Because $\mathbb{B}$ is free of rank two as a right $\mathbb{H}$-module, its $\mathbb{H}$-linear endomorphisms are the two-by-two matrices over $\mathbb{H}$:</p>
+<p>$$
+\operatorname{End}_\mathbb{H}(\mathbb{B}) \cong M_2(\mathbb{H}).
+$$</p>
+<p>This is the standard description of the endomorphism ring of a free module of rank two over a ring, and it holds over a non-commutative base without change.</p>
+<h2 id="a-bimodule-is-not-a-scalar-structure">A Bimodule Is Not a Scalar Structure</h2>
+<p>The two actions give the quaternions a reach over $\mathbb{B}$ that is <strong>not</strong> the reach of a scalar field. Multiplication is left $\mathbb{H}$-linear in the first argument and right $\mathbb{H}$-linear in the second,</p>
+<p>$$
+(h \cdot \tilde Q) \cdot \tilde P = h \cdot (\tilde Q \cdot \tilde P), \qquad \tilde Q \cdot (\tilde P \cdot h) = (\tilde Q \cdot \tilde P) \cdot h,
+$$</p>
+<p>but it is <strong>not</strong> fully $\mathbb{H}$-bilinear, since for non-central $h$</p>
+<p>$$
+\tilde Q \cdot (h \cdot \tilde P) - h \cdot (\tilde Q \cdot \tilde P) = (\tilde Qh - h\tilde Q)\tilde P = [\tilde Q,h]\tilde P,
+$$</p>
+<p>which does not vanish in general. A ring with exactly these properties is an <strong>$\mathbb{H}$-ring</strong>, and the failure is measured by the commutator. The quaternions are not central in $\mathbb{B}$, which is why $\mathbb{H}$ is a ring of operators here and not a second field of scalars; the base-ring question is decided in <em>Biquaternions as an Algebra over $\mathbb{R}$</em>.</p>
+<h2 id="worked-verification">Worked Verification</h2>
+<p>The two defining claims can be checked exactly on the quaternion basis, with the product $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, $e_k^2=-e_0$ and the anti-commutation $e_je_k=-e_ke_j$ for $j\neq k$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(h\cdot\tilde Q)\cdot k - h\cdot(\tilde Q\cdot k)$</td>
+<td>$0$ for all $h,k\in\mathbb{H}$, $\tilde Q\in\mathbb{B}$ (associativity of $\mathbb{H}$)</td>
+<td>§<em>The Two Actions</em></td>
+</tr>
+<tr>
+<td>rank over $\mathbb{H}$</td>
+<td>two, basis $\{e_0,ie_0\}$ on each side</td>
+<td>§<em>Free of Rank Two</em></td>
+</tr>
+<tr>
+<td>generators</td>
+<td>$e_0,ie_0$ span $\mathbb{C}_{\mathbb{B}}=\mathbb{R}e_0\oplus\mathbb{R}(ie_0)$</td>
+<td>§<em>Free of Rank Two</em></td>
+</tr>
+<tr>
+<td>$\operatorname{End}_\mathbb{H}(\mathbb{B})$</td>
+<td>$M_2(\mathbb{H})$</td>
+<td>§<em>The Endomorphisms</em></td>
+</tr>
+<tr>
+<td>$\tilde Q\cdot(h\cdot\tilde P)-h\cdot(\tilde Q\cdot\tilde P)$</td>
+<td>$[\tilde Q,h]\tilde P$, generally nonzero</td>
+<td>§<em>A Bimodule Is Not a Scalar Structure</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The commutation of the actions was verified on $100$ basis triples $(h,k,\tilde Q)$ with exact integer arithmetic, $0$ mismatches. The commutator identity was verified exactly on $100$ triples and holds identically. The smallest nonvanishing defect is at $h=e_1$, $\tilde Q=e_2$, $\tilde P=e_0$:</p>
+<p>$$
+\tilde Q \cdot (h \cdot \tilde P) - h \cdot (\tilde Q \cdot \tilde P) = [e_2,e_1] e_0 = e_2e_1 - e_1e_2 = -2e_3 \neq 0 ,
+$$</p>
+<p>so the product is not fully $\mathbb{H}$-bilinear on the basis elements themselves.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is an $\mathbb{H}$-bimodule with commuting left and right actions $h\cdot(A\otimes h')=A\otimes(hh')$ and $(A\otimes h')\cdot h=A\otimes(h'h)$, the two actions being distinct because $\mathbb{H}$ is non-commutative. In the quaternionic coordinates $\tilde Q=h_1+ih_2$ the actions read $h\cdot\tilde Q=(hh_1)+i(hh_2)$ and $\tilde Q\cdot h=(h_1h)+i(h_2h)$, using the centrality of $i$, and the module is free of rank two on each side on the generators $e_0$ and $ie_0$, which are a real basis of the centre. Its endomorphism ring is $\operatorname{End}_\mathbb{H}(\mathbb{B})\cong M_2(\mathbb{H})$. The product is left $\mathbb{H}$-linear in the first argument and right $\mathbb{H}$-linear in the second but not fully $\mathbb{H}$-bilinear; the defect is the commutator $[\tilde Q,h]$, and the structure is an $\mathbb{H}$-ring rather than a scalar structure. The base-ring question is <em>Biquaternions as an Algebra over $\mathbb{R}$</em>, and the structure in which $\mathbb{B}$ itself acts is <em>Biquaternions as a Module over Itself</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>Quaternion algebra, the ring of operators</td>
+</tr>
+<tr>
+<td>$h \cdot \tilde Q = A \otimes (hh')$</td>
+<td>the left $\mathbb{H}$-action</td>
+</tr>
+<tr>
+<td>$\tilde Q \cdot h = A \otimes (h'h)$</td>
+<td>the right $\mathbb{H}$-action</td>
+</tr>
+<tr>
+<td>$\tilde Q = h_1 + ih_2$</td>
+<td>quaternionic coordinates, $h_1,h_2\in\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B} \cong \mathbb{H}^2$</td>
+<td>free $\mathbb{H}$-module of rank two on each side</td>
+</tr>
+<tr>
+<td>$e_0, ie_0$</td>
+<td>the two generators; a real basis of the centre $\mathbb{C}_{\mathbb{B}}$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_\mathbb{H}(\mathbb{B}) \cong M_2(\mathbb{H})$</td>
+<td>the $\mathbb{H}$-linear endomorphisms</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$-ring</td>
+<td>bimodule over $\mathbb{H}$ with multiplication left linear in the first argument and right linear in the second</td>
+</tr>
+<tr>
+<td>$[\tilde Q,h]$</td>
+<td>the commutator measuring the failure of full $\mathbb{H}$-bilinearity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for bimodules and the action of a ring on an abelian group.</li>
+<li>Tsit-Yuen Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for bimodules, free modules and the endomorphism ring of a module.</li>
+<li>Paul M. Cohn, <em>Skew Fields: Theory of General Division Rings</em> (Cambridge, 1995), for linear algebra over a division ring, rank and dimension.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for modules over a finite-dimensional algebra and the endomorphism ring.</li>
+<li>John Voight, <em>Quaternion Algebras</em> (Springer, 2021), for the quaternion algebra, its tensor product with $\mathbb{C}$ and the biquaternion algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

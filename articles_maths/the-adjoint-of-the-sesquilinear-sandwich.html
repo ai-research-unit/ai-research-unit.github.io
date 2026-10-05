@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Sesquilinear Sandwich — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-sesquilinear-sandwich"><strong>The Adjoint of the Sesquilinear Sandwich</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The sesquilinear sandwich $S_{a,b}(x)=ax^{*}b$ is the two-sided operator of a sesquialgebra, the smallest operator that uses the whole structure: one slot carries the involution, two carry the multiplication, and the result is $\varsigma$-semilinear of the same kind as the conjugate left multiplication. Its adjoint for the pairing $\varphi(x,y)=\tau(xy^{*})$ is taken by the twisted rule, and it is the sandwich with the two parameters interchanged,</p>
+<p>$$
+S_{a,b}^{\dagger}=S_{b,a} .
+$$</p>
+<p>So the adjoint acts on the pair $(a,b)$ by the transposition and not by the involution in each factor. That single identity carries the article: from it come the self-adjoint sandwiches, which for units are the pairs with $b=ap$ for a central unit $p$, and in particular the Hermitian sandwiches $S_{a,a}$; the unitarity condition, under which the sandwiches with unitary parameters are unitary operators, $S_{a,b}^{\dagger}=S_{a,b}^{-1}=S_{b,a}$; and the comparison with the bilinear and the graded cases, where the adjoint keeps the order of the pair and conjugates its entries instead.</p>
+<p>The subject belongs to the operator theory of the sesquialgebras and completes the adjoint theory of the operators: the one-sided case is <em>The Adjoint of the Conjugate Left Multiplication</em>, the ternary case is <em>The Adjoint of the Ternary Product</em>, and the present article is the two-sided case, from which the other two are read off.</p>
+<p><strong>The boundaries.</strong> The sandwich, its composition table, its invertibility and the kernel of its parametrisation are <em>The Sesquilinear Sandwich Operator</em>; the pairing, the parity obstruction, the twisted rule and the model table of the adjoints are <em>The Sesquilinear Adjoint Operator</em>; the one-sided cases are <em>The Adjoint of the Conjugate Left Multiplication</em> and <em>The Adjoint of the Ternary Product</em>; the operators that preserve the product are <em>The Unitary Operators of a Sesquialgebra</em>; and the two-sided family in general, of which the sandwich is the twisted half, is <em>The Adjoint of the Two-Sided Multiplication Operator</em>. In the bilinear layer the same computation is the unsigned case of <em>The Adjoint of the Sandwich</em>, in the layer of <em>Algebras: A General Introduction</em>, and its graded companion, where a sign enters the involution, is <em>The Adjoint of the Sandwich with the Signed Product</em>. This article stays inside Part I: no distance, no limit, no completeness.</p>
+<p>Throughout, $R$ is a commutative ring with $1$ without zero divisors, $\varsigma$ is an involution of $R$, and $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that $A$ is a sesquialgebra in the sense of <em>Sesquialgebras</em>; the unit satisfies $1^{*}=1$. The function $\tau:A\to R$ is $R$-linear, central, $\tau(ab)=\tau(ba)$, and compatible with the involution, $\tau(x^{*})=\varsigma(\tau(x))$, and the pairing $\varphi(x,y)=\tau(xy^{*})$ is $R$-linear in its first variable, $\varsigma$-semilinear in its second and perfect. The derived product is $x\star y=xy^{*}$, and the operators are</p>
+<p>$$
+S_{a,b}(x)=ax^{*}b,\qquad T_{p,q}(x)=pxq,\qquad L_{a}=S_{a,1},\qquad R_{b}=T_{1,\,b^{*}} .
+$$</p>
+<p>The adjoint of a $\varsigma$-semilinear operator $S$ is the operator $S^{\dagger}$ with $\varphi(Sx,y)=\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)$, and the adjoint of an $R$-linear operator $T$ is the operator $T^{\dagger}$ with $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$; both exist and are unique, and every sandwich is $\varsigma$-semilinear, so its adjoint is taken by the twisted rule.</p>
+<h2 id="the-adjoint-of-the-sandwich">The Adjoint of the Sandwich</h2>
+<h3 id="the-computation">The Computation</h3>
+<p><strong>Definition.</strong> For $a,b\in A$ the <strong>sesquilinear sandwich</strong> is the operator</p>
+<p>$$
+S_{a,b}:A\longrightarrow A,\qquad S_{a,b}(x)=ax^{*}b ;
+$$</p>
+<p>it is additive and $\varsigma$-semilinear, $S_{a,b}(\lambda x)=\varsigma(\lambda)S_{a,b}(x)$, by <em>The Sesquilinear Sandwich Operator</em>.</p>
+<p><strong>Theorem.</strong> For all $a,b\in A$ the adjoint of the sandwich is the sandwich with the parameters interchanged,</p>
+<p>$$
+S_{a,b}^{\dagger}=S_{b,a} .
+$$</p>
+<p><strong>Proof.</strong> By the twisted rule it suffices to verify $\varsigma\bigl(\varphi(x,S_{b,a}y)\bigr)=\varphi(S_{a,b}x,y)$ for all $x,y$. The left-hand side is $\varsigma\bigl(\tau\bigl(x(by^{*}a)^{*}\bigr)\bigr)$, and $(by^{*}a)^{*}=a^{*}yb^{*}$, so it is $\varsigma\bigl(\tau(xa^{*}yb^{*})\bigr)=\tau\bigl((xa^{*}yb^{*})^{*}\bigr)=\tau(by^{*}ax^{*})$, using $\varsigma\circ\tau=\tau\circ{}^{*}$. By the centrality of $\tau$ this is $\tau(ax^{*}by^{*})$, which is $\varphi(S_{a,b}x,y)$. $\square$</p>
+<p><strong>Corollary.</strong> The adjoint is an involution of the sandwich family, $\bigl(S_{a,b}^{\dagger}\bigr)^{\dagger}=S_{a,b}$, so the family is carried to itself and the adjoint acts on it as the involution $S_{a,b}\mapsto S_{b,a}$. On the monoid of the two families of <em>The Sesquilinear Sandwich Operator</em>, generated by the sandwiches and the two-sided multiplications, the adjoint is an anti-automorphism of order two.</p>
+<p><strong>Proof.</strong> The theorem applied twice gives $S_{b,a}^{\dagger}=S_{a,b}$, which is the first statement, and the family is stable because $S_{b,a}$ is again a sandwich. On the monoid the adjoint reverses products, $(XY)^{\dagger}=Y^{\dagger}X^{\dagger}$, it is of order two, and by the theorem and the linear rule it carries each family to itself, $S_{a,b}^{\dagger}=S_{b,a}$ and $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$; so it is an anti-automorphism of the monoid of order two. $\square$</p>
+<p><strong>Remark (the dependence on the conjugate of $b$).</strong> Read through the two families of <em>The Sesquilinear Sandwich Operator</em>, where ${}^{*}\circ T_{p,q}=S_{q^{*},p^{*}}$, the adjoint is</p>
+<p>$$
+S_{a,b}^{\dagger}=S_{b,a}={}^{*}\circ T_{a^{*},\,b^{*}} ,
+$$</p>
+<p>so the adjoint carries the pair $(a,b)$ to the ordinary two-sided multiplication by the conjugate parameters in the reverse order, composed with the involution. The dependence is on $a^{*}$ and $b^{*}$ together, and the transposition of the parameters is the record of the single involution that the sandwich already carries in its middle slot.</p>
+<h3 id="the-reading-through-the-factors">The Reading through the Factors</h3>
+<p><strong>Remark (a second proof).</strong> The sandwich is the composite $S_{a,b}=T_{a,b}\circ{}^{*}$ of the two-sided multiplication with the involution, and the adjoint of a composite is the composite of the adjoints in the reverse order, $(XY)^{\dagger}=Y^{\dagger}X^{\dagger}$. The involution is self-adjoint, $\bigl({}^{*}\bigr)^{\dagger}={}^{*}$, and the two-sided multiplication has adjoint $T_{a,b}^{\dagger}=T_{a^{*},b^{*}}$ by the linear rule, since it is $R$-linear. Hence</p>
+<p>$$
+S_{a,b}^{\dagger}=\bigl(T_{a,b}\circ{}^{*}\bigr)^{\dagger}=\bigl({}^{*}\bigr)^{\dagger}\circ T_{a,b}^{\dagger}={}^{*}\circ T_{a^{*},b^{*}}=S_{b,a} ,
+$$</p>
+<p>which is the theorem again, read factor by factor.</p>
+<p><strong>Remark (contrast with the linear family).</strong> The two-sided multiplication therefore obeys $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$, the adjoint acting on the two parameters by the involution in each factor and preserving the order, while the sandwich obeys $S_{a,b}^{\dagger}=S_{b,a}$, the adjoint exchanging them. The two rules are the two halves of the table of <em>The Sesquilinear Sandwich Operator</em>: on the linear family the adjoint acts on the pair without transposing it, and on the sesquilinear family it transposes the pair and puts the conjugates inside the linear factor.</p>
+<h2 id="the-self-adjoint-sandwiches">The Self-Adjoint Sandwiches</h2>
+<p><strong>Theorem.</strong> Let $a,b$ be units. Then $S_{a,b}$ is self-adjoint if and only if $b=ap$ for a central unit $p$; in particular $S_{a,a}$ is self-adjoint for every $a$.</p>
+<p><strong>Proof.</strong> Self-adjointness is $S_{b,a}=S_{a,b}$ by the theorem. By the proposition on the kernel of the parametrisation of <em>The Sesquilinear Sandwich Operator</em>, two sandwiches with units satisfy $S_{c,d}=S_{a',b'}$ exactly when $c=a'p$ and $d=p^{-1}b'$ for a central unit $p$. Read with $S_{c,d}=S_{b,a}$ and $S_{a',b'}=S_{a,b}$, this is $b=ap$ and $a=p^{-1}b$ for a central unit $p$. The second relation is $b=pa$, which is the same as the first because $p$ is central, so the condition is $b=ap$ with $p$ a central unit. The case $a=b$ is $p=1$. $\square$</p>
+<p><strong>Corollary.</strong> If $b=ap$ for a central unit $p$, then $S_{a,b}$ is self-adjoint for every $a$, unit or not; and on a commutative algebra every invertible sandwich is self-adjoint.</p>
+<p><strong>Proof.</strong> With $p$ central and $b=ap$ one has $S_{a,b}(x)=a x^{*}a p$ and $S_{b,a}(x)=a p x^{*}a=a(x^{*}p)a=a x^{*}p a=a x^{*}a p$, the middle steps moving $p$ past $x^{*}$ and past $a$ by its centrality; the two operators are equal for every $a$, unit or not. On a commutative $A$ the element $a^{-1}b$ is central, and it is a unit when $a$ and $b$ are. $\square$</p>
+<p><strong>Remark (the inner involution).</strong> The sandwich $S_{u,u^{*}}=\sigma_{u}$ of a unitary $u$ is the inner involution of <em>The Involutions of a Sesquialgebra</em>, and the criterion reads $u^{*}=up$ for a central unit $p$, that is $u^{-2}=p$; so the inner involution is self-adjoint exactly when $u^{2}$ is central, which is exactly the condition under which it is an involution. The two conditions of the family therefore meet at the same elements, $u^{2}\in Z(A)$.</p>
+<h2 id="the-unitary-sandwiches">The Unitary Sandwiches</h2>
+<p><strong>Theorem (the unitary parameters).</strong> Let $a$ and $b$ be unitary elements of $A$. Then the sandwich is a unitary operator, with</p>
+<p>$$
+S_{a,b}^{\dagger}=S_{b,a}=S_{a,b}^{-1} .
+$$</p>
+<p><strong>Proof.</strong> The inverse of a sandwich is $S_{a,b}^{-1}=S_{(b^{-1})^{*},\,(a^{-1})^{*}}$, by <em>The Sesquilinear Sandwich Operator</em>. For a unitary $b$ one has $(b^{-1})^{*}=(b^{*})^{*}=b$, and likewise $(a^{-1})^{*}=a$, so the inverse is $S_{b,a}$, which is the adjoint by the theorem. $\square$</p>
+<p><strong>Corollary.</strong> For all $a,b$ the composites of the sandwich with its adjoint are the ordinary two-sided multiplications</p>
+<p>$$
+S_{a,b}^{\dagger}S_{a,b}=T_{b b^{*},\,a^{*}a},\qquad S_{a,b}S_{a,b}^{\dagger}=T_{a a^{*},\,b^{*}b},
+$$</p>
+<p>so the sandwich is unitary exactly when both composites are the identity, that is when $b b^{*}$ and $a a^{*}$ are central units with $a^{*}a=(b b^{*})^{-1}$ and $b^{*}b=(a a^{*})^{-1}$. The two conditions are not redundant over a general ring; for units $a,b$ the single condition $S_{b,a}S_{a,b}=\mathrm{id}$ suffices, because $S_{a,b}$ is then invertible and a one-sided inverse is the inverse. The case of unitary parameters is $b b^{*}=a^{*}a=a a^{*}=b^{*}b=1$.</p>
+<p><strong>Proof.</strong> The composites are the multiplication table of <em>The Sesquilinear Sandwich Operator</em>, $S_{c,d}S_{a,b}=T_{cb^{*},\,a^{*}d}$, read with $(c,d)=(b,a)$ for the first and $(c,d)=(a,b)$ for the second; and $T_{p,q}=\mathrm{id}$ exactly when $p$ is a central unit with $q=p^{-1}$, since at $x=1$ it forces $pq=1$ and then $p$ must be central. If $a,b$ are units then $S_{a,b}$ is invertible, so $S_{b,a}S_{a,b}=\mathrm{id}$ already makes $S_{b,a}$ the two-sided inverse and gives the second identity. $\square$</p>
+<p><strong>Remark (the kernel of the parametrisation and a wider family).</strong> The invertible sandwiches are the quotient of $A^{\times}\times A^{\times}$ by the action of the central units, $S_{ap,p^{-1}b}=S_{a,b}$, so a sandwich with unitary parameters depends on the pair only through the central unitary elements. The criterion of the corollary is wider than the unitary parameters: for $a=pV$ and $b=p^{-1}U$ with $U,V$ unitary and $p$ a central unit one has $a^{*}a=p^{*}p$ and $b b^{*}=(p^{*}p)^{-1}$, central units inverse to each other, and $a$ and $b$ are units, so the single condition suffices and $S_{a,b}$ is unitary although neither parameter need be, the case $p=1$ being the unitary pair.</p>
+<h2 id="the-comparison-with-the-bilinear-and-the-signed-cases">The Comparison with the Bilinear and the Signed Cases</h2>
+<p><strong>Remark.</strong> In the bilinear theory the sandwich is $T_{a,b}(x)=axb$ and its adjoint is $T_{\hat a,\hat b}$, where $\hat a=\alpha(\tilde a)$ is the conjugation of <em>The Adjoint of the Sandwich</em>: the adjoint acts on the pair by the involution in each factor and keeps the order. Here the pair is transposed and the conjugates are absorbed into the linear factor, $S_{a,b}^{\dagger}={}^{*}\circ T_{a^{*},b^{*}}$. The difference is the involution that the sesquilinear sandwich already carries in its middle slot: it leaves the adjoint nothing to conjugate in the pair, and the adjoint trades the two slots instead. The graded companion, <em>The Adjoint of the Sandwich with the Signed Product</em>, keeps the order as well: its adjoint is $R_{\hat b}\,\alpha\,L_{\hat a}$, so it carries the pair $(\hat a,\hat b)$ to $(\alpha(\hat a),\alpha(\hat b))$ through the involution $\alpha$. In the bilinear and the signed cases alike the adjoint therefore conjugates the two parameters and preserves their order, and it is the single involution carried by the middle slot of the sesquilinear sandwich that makes its adjoint exchange them instead; the transposition of the parameters is exactly the trace of the semilinearity of the sandwich.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-complex-matrices">The Complex Matrices</h3>
+<p>Let $A=M_{n}(\mathbb{C})$ with the conjugate transpose, $\varsigma$ the complex conjugation, $\tau=\operatorname{tr}$ and $\varphi(X,Y)=\operatorname{tr}(XY^{*})$. The sandwich is $S_{A,B}(X)=AX^{*}B$ and the theorem reads $S_{A,B}^{\dagger}=S_{B,A}$, so $S_{A,A}$ is self-adjoint for every matrix $A$, and for a unitary $U$ the reflection $S_{U,U}$ is self-adjoint with $S_{U,U}^{2}=\mathrm{id}$. A sandwich with unitary parameters is unitary, $S_{U,V}^{\dagger}=S_{V,U}=S_{U,V}^{-1}$, while the inner involution $S_{U,U^{*}}=\sigma_{U}$ is self-adjoint exactly when $U^{2}$ is a scalar matrix, so the witness $U=\operatorname{diag}(i,1)$ of <em>The Involutions of a Sesquialgebra</em> has $U^{2}=\operatorname{diag}(-1,1)$ noncentral and $S_{U,U^{*}}$ not self-adjoint.</p>
+<h3 id="the-field">The Field</h3>
+<p>Let $A=\mathbb{C}$ over $R=\mathbb{C}$ with $\varsigma$ the conjugation, $\tau$ the identity and $\varphi(x,y)=x\overline{y}$. The sandwich is $S_{a,b}(x)=a\overline{x}b=ab\,\overline{x}$, and since the algebra is commutative $S_{a,b}=S_{b,a}$, so every sandwich is self-adjoint, in agreement with the corollary. The inverse is $S_{a,b}^{-1}=S_{1/\overline{b},\,1/\overline{a}}$, the map $x\mapsto\overline{x}/(\overline{a}\,\overline{b})$, and the unitary condition is $|ab|=1$, where the adjoint and the inverse agree, $S_{a,b}^{\dagger}=S_{b,a}=S_{a,b}^{-1}$; the parameters of unit length are the case $|a|=|b|=1$.</p>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p>Let $A=\mathbb{H}$ over $R=\mathbb{R}$ with $\varsigma=\mathrm{id}$, $*$ the quaternion conjugation, $\tau$ the real part and $\varphi(u,v)=\operatorname{Re}(u\overline{v})$. The sandwich $S_{a,b}(q)=a\overline{q}b$ is $\mathbb{R}$-linear, so the twisted rule is the linear rule, and $S_{a,b}^{\dagger}=S_{b,a}$. The centre of $\mathbb{H}$ is $\mathbb{R}$, so the central units are the nonzero reals, the criterion of self-adjointness reads $a^{-1}b\in\mathbb{R}$, and the parameters of unit length give unitary sandwiches. Since $\mathbb{H}$ is noncommutative the transposition is visible: for $a=i$ and $b=k$ one has $a^{-1}b=-ik=j$, whose imaginary part is not zero, so $S_{i,k}$ is not self-adjoint.</p>
+<h2 id="summary">Summary</h2>
+<p>The sandwich $S_{a,b}(x)=ax^{*}b$ is the two-sided operator of the standard example, $\varsigma$-semilinear in its variable, and its adjoint for the pairing $\varphi(x,y)=\tau(xy^{*})$ is the sandwich with the parameters exchanged,</p>
+<p>$$
+S_{a,b}^{\dagger}=S_{b,a}={}^{*}\circ T_{a^{*},b^{*}} .
+$$</p>
+<p>The adjoint is an involution of the family; it transposes the pair, against the two-sided multiplication, whose adjoint $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$ conjugates the pair and keeps the order. The self-adjoint sandwiches with units are the pairs $b=ap$, $p$ a central unit, and every diagonal sandwich $S_{a,a}$ is self-adjoint; on a commutative algebra every invertible sandwich is self-adjoint.</p>
+<p>The invertible sandwiches have $S_{a,b}^{-1}=S_{(b^{-1})^{*},(a^{-1})^{*}}$, and the sandwich is unitary exactly when $S_{b,a}=S_{(b^{-1})^{*},(a^{-1})^{*}}$; the composites with the adjoint are $S_{a,b}^{\dagger}S_{a,b}=T_{bb^{*},a^{*}a}$ and $S_{a,b}S_{a,b}^{\dagger}=T_{aa^{*},b^{*}b}$, so the unitary sandwiches are those with $bb^{*}$ and $aa^{*}$ central units and $a^{*}a=(bb^{*})^{-1}$, $b^{*}b=(aa^{*})^{-1}$, the first condition sufficing when $a,b$ are units. In particular a sandwich with unitary parameters is a unitary operator, $S_{a,b}^{\dagger}=S_{a,b}^{-1}=S_{b,a}$, and the inner involution $S_{u,u^{*}}$ is self-adjoint exactly when $u^{2}$ is central. The family of the sandwiches is thus closed under the adjoint, with the adjoint acting inside it as the transposition of the parameters.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_{a,b}(x)=ax^{*}b$</td>
+<td>the sesquilinear sandwich, $\varsigma$-semilinear</td>
+</tr>
+<tr>
+<td>$T_{p,q}(x)=pxq$</td>
+<td>the ordinary two-sided multiplication, $R$-linear</td>
+</tr>
+<tr>
+<td>$S_{a,b}^{\dagger}=S_{b,a}$</td>
+<td>the adjoint of the sandwich, the parameters transposed</td>
+</tr>
+<tr>
+<td>$S_{a,b}^{\dagger}={}^{*}\circ T_{a^{*},b^{*}}$</td>
+<td>the adjoint read through the two families</td>
+</tr>
+<tr>
+<td>$T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$</td>
+<td>the adjoint of the two-sided multiplication, for contrast</td>
+</tr>
+<tr>
+<td>$S_{a,a}^{\dagger}=S_{a,a}$</td>
+<td>the Hermitian sandwiches are self-adjoint</td>
+</tr>
+<tr>
+<td>$S_{a,b}^{\dagger}=S_{a,b}\iff b=ap$, $p\in Z(A)^{\times}$</td>
+<td>the criterion of self-adjointness, units $a,b$</td>
+</tr>
+<tr>
+<td>$S_{a,b}^{-1}=S_{(b^{-1})^{*},(a^{-1})^{*}}$</td>
+<td>the inverse of the sandwich</td>
+</tr>
+<tr>
+<td>$S_{a,b}^{\dagger}S_{a,b}=T_{bb^{*},a^{*}a}$</td>
+<td>the right square, a two-sided multiplication</td>
+</tr>
+<tr>
+<td>$S_{a,b}S_{a,b}^{\dagger}=T_{aa^{*},b^{*}b}$</td>
+<td>the left square, a two-sided multiplication</td>
+</tr>
+<tr>
+<td>$a,b$ unitary $\Rightarrow$ $S_{a,b}^{\dagger}=S_{a,b}^{-1}=S_{b,a}$</td>
+<td>the unitary case</td>
+</tr>
+<tr>
+<td>$S_{u,u^{*}}=\sigma_{u}$ self-adjoint $\iff$ $u^{2}\in Z(A)$</td>
+<td>the inner involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the sandwich operators of a ring with an involution, the conjugate-linear maps attached to them, and the adjoint of a two-sided operator.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society Colloquium Publications 37, 1956), for the triple products of a ring with an involution and the operators they induce, among which the sandwich is the two-parameter family.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the inner automorphisms, the central units and the indeterminacy of the two-sided representation that the criterion of self-adjointness reads.</li>
+<li>Sterling K. Berberian, <em>Baer $\ast$-Rings</em> (Springer, 1972), for the adjoint operation in a ring with an involution and the trace pairing against which it is taken, the setting of the whole article.</li>
+<li>The companion articles of this series: <em>The Sesquilinear Sandwich Operator</em>, <em>The Sesquilinear Adjoint Operator</em>, <em>The Adjoint of the Conjugate Left Multiplication</em>, <em>The Adjoint of the Ternary Product</em>, <em>The Adjoint of the Two-Sided Multiplication Operator</em>, <em>The Involutions of a Sesquialgebra</em>, <em>Units and the Unitary Elements</em> and <em>The Unitary Operators of a Sesquialgebra</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
