@@ -33,7 +33,7 @@ $$
 Ae_0 \cdot Be_0 = ABe_0 , \qquad \mathbb{C}_{\mathbb{B}} \cdot \mathbb{C}_{\mathbb{B}} = \mathbb{C}_{\mathbb{B}} .
 $$
 
-Multiplication by a central element stabilizes a subspace $U$ exactly when $U$ is stable under multiplication by the central imaginary unit, that is, when $iU = U$. This is so for the centre and the vector subspace, and for neither of the other four: if $U$ is one of $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ or $\mathbb{M}_-$, then multiplication by $ie_0$ carries $U$ onto the other member of its decomposition, by *Comparison of the Six Subspaces*, §*Multiplication by the Central Imaginary Unit*. Hence
+Multiplication by a central element stabilizes a subspace $U$ exactly when $U$ is stable under multiplication by the central imaginary unit, that is, when $iU = U$. This is so for the centre and the vector subspace, and for neither of the other four: if $U$ is one of $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ or $\mathbb{M}_-$, then multiplication by $ie_0$ carries $U$ onto the other member of its decomposition, by *Comparison of the Six Subspaces*, §*The Complex Structure and the Six Subspaces*. Hence
 
 $$
 \mathbb{C}_{\mathbb{B}} \cdot \mathbb{C}_{\mathbb{B}} = \mathbb{C}_{\mathbb{B}} , \qquad \mathbb{C}_{\mathbb{B}} \cdot \mathrm{Vect}(\mathbb{B}) = \mathrm{Vect}(\mathbb{B}) , \qquad \mathbb{C}_{\mathbb{B}} \cdot U = \mathbb{B} \quad \text{for the other four } U .
@@ -144,6 +144,7 @@ The product of two elements of the six distinguished subspaces is tabulated abov
 
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
 - *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the blocks, the intersections, the sums and the action of the central imaginary unit
-- *Biquaternion Multiplication* (`articles_maths/biquaternion-multiplication.md`), for the product, the scalar–vector formula and the two halves
+- *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product and the scalar–vector formula
+- *Decomposition of the Multiplication* (`articles_maths/decomposition-of-the-multiplication.md`), for the two halves
 - *Biquaternion Jordan Algebra* (`articles_maths/biquaternion-jordan-algebra.md`), for the symmetrized product and the Jordan structure of the whole algebra
 - *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the commutator and the Lie structure of the whole algebra

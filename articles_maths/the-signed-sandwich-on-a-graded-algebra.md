@@ -87,7 +87,7 @@ is an involution, a **signed reflection**; more generally $\Sigma^{\alpha}_{a,b}
 
 **Proof.** By the composition law $\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}$; with $a\alpha(a)=1$ the first factor is $1$, and the second is $\alpha(a^{-1})a^{-1}=(a\alpha(a))^{-1}=1$. The general condition is the same computation with two pairs; the fixed-point statement is $a\alpha(x)a^{-1}=x$. $\square$
 
-**Corollary.** In a Clifford algebra the signed sandwich $x\mapsto u\alpha(x)u^{-1}$ with $u\alpha(u)=1$ is the reflection in the direction of $u$ on the space of vectors, since $\alpha(v)=-v$ there; this is the algebraic mechanism by which a signed sandwich realises a reflection, and it is developed in *Reflections as Signed Two-Sided Operators on a Graded Algebra*. The Clifford algebra itself, its quadratic form and its orthogonal group belong to the symmetric linear algebras and are named here only as the model; nothing of them is used.
+**Corollary.** In a Clifford algebra the signed sandwich $x\mapsto u\alpha(x)u^{-1}$ with $u\alpha(u)=1$ is the reflection in the direction of $u$ on the space of vectors, since $\alpha(v)=-v$ there; this is the algebraic mechanism by which a signed sandwich realises a reflection, and it is developed in *Reflections as Signed Two-Sided Operators on a Graded Algebra*. The Clifford algebra itself, its quadratic form and its orthogonal group belong to the symmetric bilinear algebras and are named here only as the model; nothing of them is used.
 
 ## Worked Case: The Exterior Algebra
 

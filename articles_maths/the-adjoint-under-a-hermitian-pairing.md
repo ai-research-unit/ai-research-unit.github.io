@@ -67,7 +67,7 @@ $$
 
 the Hermitian part and the skew-Hermitian part; the Hermitian operators form a $K_0$-vector space of the dimension $n^2$ over $K_0$ in the quadratic case, and the skew-Hermitian operators form the complement; the trace of a self-adjoint operator lies in the fixed field $K_0$, and the trace of a skew-adjoint operator lies in the trace-zero part of $K$ over $K_0$.
 
-**Proof.** The two summands are the eigenspaces of the adjoint involution for the eigenvalues $+1$ and $-1$, and an involution of order two over a field in which $2$ is invertible decomposes the algebra as the direct sum of its fixed parts; the dimensions are the number of the independent entries of a Hermitian matrix and its complement. The statement is the elementary decomposition of an algebra with involution, in *Hilbert Algebras* and *Involutive Linear Algebras*.
+**Proof.** The two summands are the eigenspaces of the adjoint involution for the eigenvalues $+1$ and $-1$, and an involution of order two over a field in which $2$ is invertible decomposes the algebra as the direct sum of its fixed parts; the dimensions are the number of the independent entries of a Hermitian matrix and its complement. The statement is the elementary decomposition of an algebra with involution, in *Hilbert Algebras* and *Involutive Bilinear Algebras*.
 
 **Proposition.** The Hermitian operators of a Hermitian space over the real or the complex field have real eigenvalues, and the skew-Hermitian operators have purely imaginary eigenvalues; the Hermitian operators are diagonalisable in an orthonormal basis, and the eigenvalues of a Hermitian form are the eigenvalues of its matrix with respect to the standard pairing. The spectral theory is *Self-Adjoint Operators and the Spectral Theorem*.
 

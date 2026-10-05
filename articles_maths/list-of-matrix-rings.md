@@ -80,7 +80,7 @@ A matrix ring over a division ring is the general simple finite-dimensional alge
 | Wedderburn–Artin, the simple case | a ring is a matrix ring over a division ring exactly when it is simple Artinian; this is a theorem, not a definition | *Simple and Semisimple Modules* |
 | The division rings as the boundary case | the case $r = n_1 = 1$ of Wedderburn–Artin: a ring is a division ring exactly when it is semisimple with one factor, of size one | *Simple and Semisimple Modules* |
 | $\mathbb{H}$ as a matrix ring | a division ring, so the case of a single factor of size one; a matrix ring over a division ring | *Quaternion Algebra*; *Simple and Semisimple Modules* |
-| The biquaternions $\mathbb{B} \cong M_2(\mathbb{C})$ | an eight-dimensional real algebra that is a matrix ring over the division ring $\mathbb{C}$ | *Biquaternion Algebra* |
+| The biquaternions $\mathbb{B} \cong M_2(\mathbb{C})$ | an eight-dimensional real algebra that is a matrix ring over the division ring $\mathbb{C}$ | *Biquaternions as a Vector Space over $\mathbb{C}$* |
 | $M_2(\mathbb{R})$ | the four-dimensional real matrix algebra, simple Artinian | *Matrix Algebras* |
 
 The phrase "a matrix ring over a division ring" names the conclusion of Wedderburn–Artin rather than a definition, and by the theorem the class is exactly the simple Artinian rings; the division rings themselves are the case of a single factor of size one, which is the boundary the list records.

@@ -18,7 +18,7 @@ A **domain** is a commutative ring with $1 \neq 0$ and no zero divisors; the obj
 | $\mathbb{Z}/4\mathbb{Z}$ | not reduced: the class of $2$ is a nonzero nilpotent | *Reduced Rings and the Nilradical* |
 | The exterior algebra $\Lambda(V)$, $\dim V \geq 1$ | not a domain: $v \wedge v = 0$ for $v \in V$ | *The Exterior Algebra* |
 | Split biquaternions $\mathbb{H}_{\mathbb{D}}$ | not a domain: they are $\mathbb{H}\oplus\mathbb{H}$, and have zero divisors | *Split-Biquaternion Algebra* |
-| Biquaternions $\mathbb{B}$ | not a domain: $\mathbb{B} \cong M_2(\mathbb{C})$ has zero divisors | *Biquaternion Algebra* |
+| Biquaternions $\mathbb{B}$ | not a domain: $\mathbb{B} \cong M_2(\mathbb{C})$ has zero divisors | *Biquaternions as a Vector Space over $\mathbb{C}$* |
 | Sedenions $\mathbb{S}$ | not a domain: the norm is not multiplicative and there are zero divisors | *Octonion Algebra* |
 | The ring $\mathbb{Z}[\sqrt{-5}]$ as a counter-example | it is nevertheless a domain: it is the failure of unique factorisation, not of the domain axiom | *Unique Factorisation Domains* |
 
@@ -80,7 +80,7 @@ A **division ring** is a ring in which every nonzero element is a unit; a **divi
 |---|---|---|
 | $M_2(\mathbb{R})$ | a simple algebra but not a division ring: the matrix with one nonzero entry is a nonzero zero divisor | *Examples of Algebras* |
 | Split biquaternions $\mathbb{H}_{\mathbb{D}}$ | not a division algebra: $\cong \mathbb{H}\oplus\mathbb{H}$, with zero divisors and no nonzero nilpotents | *Split-Biquaternion Algebra* |
-| Biquaternions $\mathbb{B}$ | not a division ring: $\cong M_2(\mathbb{C})$ | *Biquaternion Algebra* |
+| Biquaternions $\mathbb{B}$ | not a division ring: $\cong M_2(\mathbb{C})$ | *Biquaternions as a Vector Space over $\mathbb{C}$* |
 | $\mathbb{Z}$ | a domain but not a division ring: only $\pm 1$ are units | *The Integers* |
 | The free algebra $k\langle x_1,\dots,x_n\rangle$ | a domain but not a division ring, and not commutative | *Tensor Powers and the Free Algebra* |
 | The Weyl algebra $A_1$ | a domain but not a division ring; it embeds in a division ring of fractions | *Quotients of the Tensor Algebra* |

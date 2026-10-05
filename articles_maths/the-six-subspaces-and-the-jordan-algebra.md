@@ -149,6 +149,6 @@ The symmetrized product $\tilde{P} \circ \tilde{Q} = \tfrac{1}{2}(\tilde{P}\tild
 
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
 - *The Six Subspaces and the Products* (`articles_maths/the-six-subspaces-and-the-products.md`), for the full product and the two halves into which it splits
-- *Biquaternion Multiplication* (`articles_maths/biquaternion-multiplication.md`), for the product and the symmetrized product in their original setting
+- *Decomposition of the Multiplication* (`articles_maths/decomposition-of-the-multiplication.md`), for the symmetrized product in its original setting
 - *Biquaternion Jordan Algebra* (`articles_maths/biquaternion-jordan-algebra.md`), for the Jordan identity, the trace form and the Jordan structure of the whole algebra
 - *The Six Subspaces and the Idempotents and Projections* (`articles_maths/the-six-subspaces-and-the-idempotents-and-projections.md`), for the idempotents, which occur in exactly the Hermitian subspace and are the reason it is the nontrivial Jordan subalgebra among the six

@@ -45,7 +45,7 @@ $$
 \int_\Omega\operatorname{Sc}(Df) = \sum_i\int_{\partial\Omega}\operatorname{Sc}(e_ifn_i) = \sum_i\int_{\partial\Omega}\operatorname{Sc}(fn_ie_i) = \int_{\partial\Omega}\operatorname{Sc}\Big(f\sum_i n_ie_i\Big) = \int_{\partial\Omega}\operatorname{Sc}(fn),
 $$
 
-because $\sum_in_ie_i = n$. If $N(n) = 0$ then $n$ is a zero divisor by *Split-Quaternion Zero Divisors*, §*The Null Cone and the Maximal Isotropic Subspaces*, so there is a nonzero $\tilde p$ with $n\tilde p = 0$ and $\operatorname{Sc}(\tilde p n) = \operatorname{Sc}(n\tilde p) = 0$; a boundary layer with constant values $\tilde p$ therefore contributes nothing to the boundary term.
+because $\sum_in_ie_i = n$. If $N(n) = 0$ then $n$ is a zero divisor by *Split-Quaternion Zero Divisors*, §*Definition and Criterion*, so there is a nonzero $\tilde p$ with $n\tilde p = 0$ and $\operatorname{Sc}(\tilde p n) = \operatorname{Sc}(n\tilde p) = 0$; a boundary layer with constant values $\tilde p$ therefore contributes nothing to the boundary term.
 
 ## Integration by Parts and Green's Formulas
 
@@ -150,7 +150,7 @@ and the Stokes theorem holds for the three-form of the vector subspace with the 
 
 **Corollary (The Role of the Null Boundary).** On a hypersurface containing a characteristic direction, the boundary term of Green's formula degenerates along that direction: the normal vector is a zero divisor, its product with the boundary values annihilates a part of the algebra, and the boundary integral loses information.
 
-**Proof.** If $n$ is null then $n^2 = 0$ and $n$ is a zero divisor by *Split-Quaternion Zero Divisors*, §*The Null Cone and the Maximal Isotropic Subspaces*; the products $fng$ depend on $f$ and $g$ only through the components that do not annihilate $n$.
+**Proof.** If $n$ is null then $n^2 = 0$ and $n$ is a zero divisor by *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*; the products $fng$ depend on $f$ and $g$ only through the components that do not annihilate $n$.
 
 ## The Fundamental Solution
 

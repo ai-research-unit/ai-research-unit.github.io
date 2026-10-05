@@ -174,7 +174,7 @@ makes $\mathcal{H}^\infty$ a module over the universal enveloping algebra of $\m
 The representation-theoretic objects above are the input to the analytic theory, and the analytic conclusions are Part III.
 
 - The **regular representation** $\lambda$ of $G$ on $L^2(G)$, defined by $\lambda(g)f(x) = f(g^{-1}x)$, requires the construction of $L^2(G)$, the completeness of which is Part III; the **left and right regular representations** and their relation to the group algebra are treated in *Analysis on Groups*.
-- The **convolution algebra** $L^1(G)$ and the **group $C^*$-algebra** $C^*(G)$, with the correspondence between nondegenerate representations of $C^*(G)$ and unitary representations of $G$, are Part III and the operator-algebra articles of *Topology on Linear Algebras*; the group von Neumann algebra is treated.
+- The **convolution algebra** $L^1(G)$ and the **group $C^*$-algebra** $C^*(G)$, with the correspondence between nondegenerate representations of $C^*(G)$ and unitary representations of $G$, are Part III and the operator-algebra articles of *Topology on Bilinear Algebras*; the group von Neumann algebra is treated.
 - The **Peter–Weyl theorem** and the **Plancherel theorem**, the decomposition of a unitary representation into a direct integral of irreducibles over $\operatorname{Irr}(G)$, and the notion of a **tempered** representation are Part III.
 - What is *not* deferred: the representation theory as such — equivalence, irreducibility, intertwiners, Schur's lemma, tensor products, contragredients, restrictions, and the classification statements in the compact and abelian cases — is developed here and in the next three articles, and is used throughout the corpus.
 

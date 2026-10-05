@@ -87,7 +87,7 @@ A product of two nonzero rings is never an integral domain, never local and neve
 | Object | Why it is not a commutative ring | Introduced in |
 |---|---|---|
 | $\mathbb{H}$ | a division ring, but not commutative | *Quaternion Algebra* |
-| $\mathbb{B}$ | the biquaternions, not commutative and with zero divisors | *Biquaternion Algebra* |
+| $\mathbb{B}$ | the biquaternions, not commutative and with zero divisors | *Biquaternions as a Vector Space over $\mathbb{C}$* |
 | $\mathbb{H}_{\mathbb{D}}$ | the split-biquaternions, not commutative and with zero divisors | *Split-Biquaternion Algebra* |
 | $M_n(R)$, $n \geq 2$ | the matrix ring, not commutative | *Matrix Algebras* |
 | $M_n(D)$ over a division ring $D$ | not commutative in general | *Matrix Algebras* |

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_j e_k = -e_k e_j$ for $j \neq k$, and with a central scalar imaginary $i$ satisfying $i^2 = -1$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. The algebra, its conjugations, its six distinguished subspaces and its determinant $N$ are those of *Biquaternion Algebra*.
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_j e_k = -e_k e_j$ for $j \neq k$, and with a central scalar imaginary $i$ satisfying $i^2 = -1$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. The algebra, its conjugations, its six distinguished subspaces and its determinant $N$ are those of *Biquaternions as a Vector Space over $\mathbb{C}$*.
 
 This article presents the **matrix realization** of $\mathbb{B}$ together with the module on which the matrices act. It is deeper than the coefficient realization of *Biquaternion Four-Vector Element Representation* by exactly one level of structure: the four-vector article lists the four coefficients, while the matrix realization exhibits an **action**. The word *representation* is therefore used here in both of its senses at once, the concrete realization and the technical representation of an algebra on a vector space, and the module $V = \mathbb{C}^2$ is introduced as the object on which the action is defined. The two realizations agree on the four parameters: they are related by an explicit $\mathbb{C}$-linear isomorphism, stated below.
 
@@ -91,7 +91,7 @@ $$
 = (Q_0^2 + Q_3^2) - \bigl( (-iQ_1)^2 - Q_2^2 \bigr) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2,
 $$
 
-since $(-i Q_1)^2 = -Q_1^2$ and the cross terms of each product cancel within that product. The result is the determinant of *Biquaternion Algebra* and of *Biquaternion Four-Vector Element Representation*.
+since $(-i Q_1)^2 = -Q_1^2$ and the cross terms of each product cancel within that product. The result is the determinant of *Biquaternions as a Vector Space over $\mathbb{C}$* and of *Biquaternion Four-Vector Element Representation*.
 
 **Corollary (invertibility).** A biquaternion $\tilde{Q}$ is invertible if and only if $\det\Phi(\tilde{Q}) = N(\tilde{Q}) \neq 0$, and then $\Phi(\tilde{Q}^{-1}) = \Phi(\tilde{Q})^{-1}$. The zero divisors of $\mathbb{B}$ are exactly the nonzero elements whose matrix is singular.
 

@@ -177,7 +177,7 @@ so $1$ is a root of unity of every order, while $e_2 = \tilde\pi_+ - \tilde\pi_-
 
 **Corollary (Roots of Unity of Order Two and the Power Functions).** The solutions of $\tilde p^2 = 1$ are $\tilde p = \pm 1$ together with the elements $\tilde p = 2p - 1$ for $p$ a nontrivial idempotent; equivalently they are the roots of $+1$ in the vector subspace, the reflections, a two-dimensional family. The power functions inherit the ambiguity of the logarithm: $\tilde q^{1/n}$ is generally multiple-valued, and two values differ by a root of unity.
 
-**Proof.** $\tilde p^2 = 1$ is $(\tilde p-1)(\tilde p+1) = 0$; the minimal polynomial of $\tilde p$ divides $(t-1)(t+1)$, so $\tilde p$ is semisimple with roots in $\{\pm1\}$; if $\tilde p \neq \pm1$ it has both roots and $p = (\tilde p+1)/2$ is a nontrivial idempotent, whose family is two-dimensional as computed in *Split-Quaternion Zero Divisors*, §*The Null Cone and the Maximal Isotropic Subspaces*. The multivaluedness of the power is the multivaluedness of the logarithm of the preceding section.
+**Proof.** $\tilde p^2 = 1$ is $(\tilde p-1)(\tilde p+1) = 0$; the minimal polynomial of $\tilde p$ divides $(t-1)(t+1)$, so $\tilde p$ is semisimple with roots in $\{\pm1\}$; if $\tilde p \neq \pm1$ it has both roots and $p = (\tilde p+1)/2$ is a nontrivial idempotent, whose family is two-dimensional as computed in *Split-Quaternion Zero Divisors*, §*Distribution of the Zero Divisors*. The multivaluedness of the power is the multivaluedness of the logarithm of the preceding section.
 
 ## Non-Commutativity and the One-Variable Case
 

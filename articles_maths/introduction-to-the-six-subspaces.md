@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}$ carries four conjugations, and each of them is an involution. Each one splits $\mathbb{B}$ into a fixed space and an anti-fixed space, and the eight spaces so obtained reduce to six distinct subspaces, the **six distinguished subspaces** of $\mathbb{B}$. The conjugations themselves are not the subject of this article: their definitions, the group they form and the two spaces each defines are in *Biquaternion Algebra* and *Biquaternion Involution Lattice*.
+The biquaternion algebra $\mathbb{B}$ carries four conjugations, and each of them is an involution. Each one splits $\mathbb{B}$ into a fixed space and an anti-fixed space, and the eight spaces so obtained reduce to six distinct subspaces, the **six distinguished subspaces** of $\mathbb{B}$. The conjugations themselves are not the subject of this article: their definitions, the group they form and the two spaces each defines are in *Biquaternions as a Vector Space over $\mathbb{C}$* and *Biquaternion Involution Lattice*.
 
 This article treats the six subspaces themselves, one to a section. Each section gives the defining condition of the subspace, the coordinate condition it amounts to, the real basis that exhibits it and its real dimension, and closes with the part it plays. The table is the summary; the sections are the detail.
 
@@ -154,9 +154,11 @@ The biquaternion algebra carries four conjugations whose fixed and anti-fixed sp
 - *The Six Subspaces and the Two Matrix Representations* (`articles_maths/the-six-subspaces-and-the-two-matrix-representations.md`), for the six in the $2 \times 2$ model of the simple module and in the $4 \times 4$ regular model, and for the two invariants, trace and determinant
 - *The Six Subspaces and the Forms* (`articles_maths/the-six-subspaces-and-the-forms.md`), for the bilinear, Hermitian and Krein pairings restricted to the six, the only orthogonal pair, and the isotropic lines and the minimal ideals
 - *The Six Subspaces and the Analysis* (`articles_maths/the-six-subspaces-and-the-analysis.md`), for the variables and the operators on each of the six, the second-order operator as the operator of the norm, and the ellipticity dichotomy
-- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the algebra, its basis, its conjugations and the three decompositions in their original setting
+- *Decompositions Along the Six Subspaces* (`articles_maths/decompositions-along-the-six-subspaces.md`), for the three eigenspace decompositions the conjugations cut out, one pair of subspaces to each
+- *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, its basis, its conjugations and its coordinate systems
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four conjugations, the group they generate and the two spaces each defines
-- *Biquaternion Multiplication* (`articles_maths/biquaternion-multiplication.md`), for the product and the two halves into which it splits
+- *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product and its scalar–vector form
+- *Decomposition of the Multiplication* (`articles_maths/decomposition-of-the-multiplication.md`), for the two halves into which the product splits
 - *Biquaternion Jordan Algebra* (`articles_maths/biquaternion-jordan-algebra.md`), for the symmetrized product and the trace form
 - *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the commutator, the derived subalgebra and the adjoint maps
 - *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the idempotents, the projections and the Peirce corners

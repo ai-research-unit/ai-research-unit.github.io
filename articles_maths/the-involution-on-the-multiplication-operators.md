@@ -6,7 +6,7 @@ The multiplication operators of a commutative involutive algebra carry the invol
 
 The article collects the properties of the restricted involution: it is the unique algebra involution of $\operatorname{Mult}(A)$ that corresponds to $\sigma$ under the isomorphism $a\mapsto L_a$; it is compatible with the inclusion $\operatorname{Mult}(A)\hookrightarrow\operatorname{End}_R(A)$, so the multiplication algebra is an involutive subalgebra of the endomorphism algebra; the fixed algebra $L_{A^\sigma}$ is the multiplication algebra of the fixed subalgebra and is a Jordan subalgebra of the self-adjoint operators; and the involution is compatible with the descent and with the quotients. The closed forms are the multiplication algebra of the polynomial ring with the negation, where the fixed algebra is the multiplication by the even polynomials, and of the coordinate algebra, where it is the multiplication by the fixed coordinates.
 
-The article assumes *Involutions of the Multiplication Operators* for $L_a$ and the induced involution, *Adjoints in a Commutative Involutive Algebra* for the pairing, the adjoint ${}^{\dagger}$ and the identity $L_a^{\dagger} = L_{\sigma(a)}$, *Commutative Algebras with an Involution* for the fixed subalgebra and the descent, *Involutive Linear Algebras* for the involution of the endomorphism algebra and the fixed algebra of an involution, and *Jordan Algebras* for the symmetrised product. No form, norm, distance or order occurs.
+The article assumes *Involutions of the Multiplication Operators* for $L_a$ and the induced involution, *Adjoints in a Commutative Involutive Algebra* for the pairing, the adjoint ${}^{\dagger}$ and the identity $L_a^{\dagger} = L_{\sigma(a)}$, *Commutative Algebras with an Involution* for the fixed subalgebra and the descent, *Involutive Bilinear Algebras* for the involution of the endomorphism algebra and the fixed algebra of an involution, and *Jordan Algebras* for the symmetrised product. No form, norm, distance or order occurs.
 
 ## The Restricted Involution
 
@@ -45,7 +45,7 @@ $$
 
 and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^{*}\oplus\operatorname{Mult}(A)^{-}$ when $2$ is invertible.
 
-*Proof.* $L_a^{\dagger} = L_a$ iff $\sigma(a) = a$; the injectivity of $a\mapsto L_a$ gives the isomorphisms; the direct sum is the involution decomposition of *Involutive Linear Algebras*. $\square$
+*Proof.* $L_a^{\dagger} = L_a$ iff $\sigma(a) = a$; the injectivity of $a\mapsto L_a$ gives the isomorphisms; the direct sum is the involution decomposition of *Involutive Bilinear Algebras*. $\square$
 
 **Corollary.** The fixed algebra of the involution on the multiplication operators is the multiplication algebra of the fixed subalgebra; it is $\operatorname{Mult}(A^\sigma)$, it is closed under the symmetrised product, and it is a Jordan subalgebra of the self-adjoint operators $E^+$ of $\operatorname{End}_R(A)$.
 
@@ -53,7 +53,7 @@ and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^{*}\oplus\operatorname{Mult
 
 **Proposition.** With the symmetrised product $F\bullet G = \tfrac12(FG+GF)$ the fixed algebra $\operatorname{Mult}(A)^{*}$ is a Jordan algebra, isomorphic to $(A^\sigma)^+$; the skew part is a Lie algebra under the commutator, isomorphic to the Lie algebra of $A^-$ under the commutator.
 
-*Proof.* The fixed algebra of an involution is closed under the symmetrised product and the anti-fixed part under the commutator, by *Involutive Linear Algebras*; the isomorphism with $A^\sigma$ and $A^-$ is $a\mapsto L_a$, which carries the products to the products. $\square$
+*Proof.* The fixed algebra of an involution is closed under the symmetrised product and the anti-fixed part under the commutator, by *Involutive Bilinear Algebras*; the isomorphism with $A^\sigma$ and $A^-$ is $a\mapsto L_a$, which carries the products to the products. $\square$
 
 ## Descent and Quotients
 

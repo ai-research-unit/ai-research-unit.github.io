@@ -74,7 +74,7 @@ $$
 
 Hence $\mathbb{B}^{\times}\simeq U(\mathbb{B})$, and $\pi_n(\mathbb{B}^{\times})\cong\pi_n(U(\mathbb{B}))$ for all $n$.
 
-**Proof.** The eigenvalues of $\tilde{P}_t$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{P}_t$ is positive definite and $\tilde{U}\tilde{P}_t\in\mathbb{B}^{\times}$; the positive definite square root depends continuously on $\tilde{A}$ (*The Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, §*The Operator of an Element*), so $\tilde{H}$ is continuous; the three identities are immediate from $\tilde{P}_0=\tilde{P}$, $\tilde{P}_1=e_0$ and the fact that a unitary element has $\tilde{P}=e_0$.
+**Proof.** The eigenvalues of $\tilde{P}_t$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{P}_t$ is positive definite and $\tilde{U}\tilde{P}_t\in\mathbb{B}^{\times}$; the positive definite square root depends continuously on $\tilde{A}$ (*Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, §*The Operator of an Element*), so $\tilde{H}$ is continuous; the three identities are immediate from $\tilde{P}_0=\tilde{P}$, $\tilde{P}_1=e_0$ and the fact that a unitary element has $\tilde{P}=e_0$.
 
 **Corollary (connectedness).** $\mathbb{B}^{\times}$ is connected, and $U(\mathbb{B})$ is connected.
 

@@ -4,7 +4,7 @@
 
 A non-degenerate reflexive pairing $B$ on a commutative involutive algebra $(A,\sigma)$ turns each $R$-linear operator $F : A\to A$ into a second operator $F^{\dagger}$, the **adjoint**, defined by moving $F$ from one side of the pairing to the other, $B(Fx,y) = B(x,F^{\dagger}y)$; the assignment $F\mapsto F^{\dagger}$ is an involution of the endomorphism algebra $\operatorname{End}_R(A)$, and it is the operator-level companion of the involution $\sigma$ of the elements. This article develops the adjoint for the commutative involutive algebras of *Commutative Algebras with an Involution*: it proves the existence and uniqueness of $F^{\dagger}$, establishes that ${}^{\dagger}$ is an anti-automorphism of order two, describes the **self-adjoint part** and the **unitary operators**, and computes the adjoint of a multiplication, $L_a^{\dagger} = L_{\sigma(a)}$. The last computation identifies the abstract involution of the multiplication operators of *Involutions of the Multiplication Operators* with the adjoint involution restricted to $\operatorname{Mult}(A)$, and it shows that every multiplication operator is **normal**, $L_aL_a^{\dagger} = L_a^{\dagger}L_a$, because of the commutativity of the algebra.
 
-The article assumes *Commutative Algebras with an Involution* for $\sigma$, *Involutions of the Multiplication Operators* for $L_a$ and the induced involution, *The Operators on an Algebra* and *The Adjoint of an Endomorphism* for the adjoint of an endomorphism and the pairing, *Modules over a Ring* for the modules, and *Involutive Linear Algebras* for the involution of the endomorphism algebra. The forms, the Hilbert structure and the operator spectrum belong to Part II; the signed variants are *The Signed Adjoint Sandwich*, *The Signed Adjoint of the Reflection* and *The Signed Adjoint of the Left Multiplication*, later in this group. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, $(A,\sigma)$ is a commutative involutive $R$-algebra, $B$ is a non-degenerate reflexive $\sigma$-sesquilinear pairing on $A$ with $B(ax,y) = B(x,\sigma(a)y)$, and ${}^{\dagger}$ is the adjoint involution of $\operatorname{End}_R(A)$; no norm, distance, positivity or operator spectrum occurs.
+The article assumes *Commutative Algebras with an Involution* for $\sigma$, *Involutions of the Multiplication Operators* for $L_a$ and the induced involution, *The Operators on an Algebra* and *The Adjoint of an Endomorphism* for the adjoint of an endomorphism and the pairing, *Modules over a Ring* for the modules, and *Involutive Bilinear Algebras* for the involution of the endomorphism algebra. The forms, the Hilbert structure and the operator spectrum belong to Part II; the signed variants are *The Signed Adjoint Sandwich*, *The Signed Adjoint of the Reflection* and *The Signed Adjoint of the Left Multiplication*, later in this group. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, $(A,\sigma)$ is a commutative involutive $R$-algebra, $B$ is a non-degenerate reflexive $\sigma$-sesquilinear pairing on $A$ with $B(ax,y) = B(x,\sigma(a)y)$, and ${}^{\dagger}$ is the adjoint involution of $\operatorname{End}_R(A)$; no norm, distance, positivity or operator spectrum occurs.
 
 ## The Pairing and the Adjoint
 
@@ -28,7 +28,7 @@ $$
 (F+G)^{\dagger} = F^{\dagger}+G^{\dagger}, \qquad (\lambda F)^{\dagger} = \lambda F^{\dagger}, \qquad (FG)^{\dagger} = G^{\dagger}F^{\dagger}, \qquad (F^\dagger)^\dagger = F .
 $$
 
-Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{End}_R(A)$, in the sense of *Involutive Linear Algebras*.
+Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{End}_R(A)$, in the sense of *Involutive Bilinear Algebras*.
 
 *Proof.* Additivity and $R$-linearity are the bilinearity of $B$; the order two is the reflexivity: $B(Fx,y) = B(x,F^{\dagger}y) = B((F^\dagger)^\dagger x,y)$ gives $(F^\dagger)^\dagger = F$ by non-degeneracy; the anti-multiplicativity is $B(FGx,y) = B(Gx,F^{\dagger}y) = B(x,G^{\dagger}F^{\dagger}y)$. $\square$
 
@@ -40,7 +40,7 @@ Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{
 
 **Proposition.** The self-adjoint operators form a Jordan algebra under $F\bullet G = \tfrac12(FG+GF)$ and the skew-adjoint operators form a Lie algebra under the commutator; $E = E^+\oplus E^-$ when $2$ is invertible, and the unitary operators form a group.
 
-*Proof.* This is *Involutive Linear Algebras* applied to the involution ${}^{\dagger}$ of $E$: the fixed set is closed under the symmetrised product, the anti-fixed under the commutator, and the units fixed up to the inverse form the unitary group. $\square$
+*Proof.* This is *Involutive Bilinear Algebras* applied to the involution ${}^{\dagger}$ of $E$: the fixed set is closed under the symmetrised product, the anti-fixed under the commutator, and the units fixed up to the inverse form the unitary group. $\square$
 
 ### The Adjoint of a Multiplication
 

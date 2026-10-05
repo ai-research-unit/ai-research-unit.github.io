@@ -62,7 +62,7 @@ The source of the realization tabulates the images of several distinguished real
 | the unit-norm biquaternions | the proper Lorentz group $SO^+(1,3)$ |
 | the traceless part | the electromagnetic energy-momentum tensors |
 
-The third row is the same group that the two-sided action of *Biquaternion 4×4 Regular Matrix Element Representation*, §*The Two-Sided Action*, reaches by another route, and the fourth row is a reading of physics, whose corpus home is *Exercise: The Electromagnetic Energy–Momentum Tensor*.
+The third row is the same group that the two-sided action of *The 4×4 Regular Matrix Representation under the Three Topologies*, §*The Topology Induced by the Hermitian Form*, reaches by another route, and the fourth row is a reading of physics, whose corpus home is *Exercise: The Electromagnetic Energy–Momentum Tensor*.
 
 **Proof of the three checks.** Reality, multiplicativity and the orthogonality of the image of a unit real quaternion were verified on the realization, at $4.4 \times 10^{-16}$, $4.3 \times 10^{-14}$ and $8.9 \times 10^{-16}$ over $100$ random elements; nothing beyond these three was checked. $\square$
 

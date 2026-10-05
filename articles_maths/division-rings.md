@@ -96,7 +96,7 @@ The basis elements multiply as follows, the table being read with the row elemen
 
 **Example (subfields of $\mathbb{H}$).** The real span of $1$ and $i$ is a subfield of $\mathbb{H}$ isomorphic to $\mathbb{C}$, and it is a maximal commutative subring; the real span of $1$ is a subfield isomorphic to $\mathbb{R}$, the centre. Every nonzero imaginary unit $u$ with $u^2 = -1$ spans a copy of $\mathbb{C}$ with $1$, so $\mathbb{H}$ contains infinitely many subfields isomorphic to $\mathbb{C}$, and none of them is the centre. In particular the centre of a subring of a division ring need not lie in the centre of the division ring: $\mathbb{C} \subseteq \mathbb{H}$ has centre $\mathbb{C}$, while $Z(\mathbb{H}) = \mathbb{R}$.
 
-**Remark.** The centre of $\mathbb{H}$ is $\mathbb{R}$, and $\mathbb{H}$ is four-dimensional over it; that a division ring finite-dimensional over its centre is a division algebra is the language of *Division Algebras*, in *Linear Algebras*, a later category of this Part, and the multiplication table above is the whole of what this chain needs from the quaternions.
+**Remark.** The centre of $\mathbb{H}$ is $\mathbb{R}$, and $\mathbb{H}$ is four-dimensional over it; that a division ring finite-dimensional over its centre is a division algebra is the language of *Division Algebras*, in *Bilinear Algebras*, a later category of this Part, and the multiplication table above is the whole of what this chain needs from the quaternions.
 
 ### Infinite-Dimensional over the Centre
 
@@ -108,7 +108,7 @@ The basis elements multiply as follows, the table being read with the row elemen
 
 **Proof.** An isomorphism of division rings carries the centre to the centre, and it carries a finite generating list over the centre to a finite generating list, so the property of being finite-dimensional over the centre is preserved.
 
-**Example.** The quaternion division ring and the first Weyl field are the two kinds of example that the corpus uses, and they stand at the two ends of the range of possibilities: a division ring can be finite-dimensional over its centre, like $\mathbb{H}$, or infinite-dimensional over its centre, like $D_1(k)$. The finite-dimensional ones are the division algebras of $k$-theory, treated in *Division Algebras*, in *Linear Algebras*, a later category of this Part, and the theory of both kinds together is the structure theory of simple rings of *Simple and Semisimple Modules*, also later.
+**Example.** The quaternion division ring and the first Weyl field are the two kinds of example that the corpus uses, and they stand at the two ends of the range of possibilities: a division ring can be finite-dimensional over its centre, like $\mathbb{H}$, or infinite-dimensional over its centre, like $D_1(k)$. The finite-dimensional ones are the division algebras of $k$-theory, treated in *Division Algebras*, in *Bilinear Algebras*, a later category of this Part, and the theory of both kinds together is the structure theory of simple rings of *Simple and Semisimple Modules*, also later.
 
 ### An Infinite Division Ring of Characteristic $p$
 

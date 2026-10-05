@@ -47,7 +47,7 @@ $$
 
 where $\mathbb{P}(P)$ denotes the projective line of the plane $P$. Every point of $Q$ lies in exactly one plane of each family; the two families are each parametrised by a projective line and are exchanged by the anti-automorphism $\tau$.
 
-**Proof.** An isotropic line lies in a maximal totally isotropic plane by *Split-Quaternion Zero Divisors*, §*The Null Cone and the Maximal Isotropic Subspaces*, and in exactly one plane of each family by the corollary of the theorem on the two families there. Each $\mathbb{P}(P)$ is a projective line contained in $Q$, since $P$ is totally isotropic; and the union of these lines is $Q$, because every isotropic line lies in some plane of the family.
+**Proof.** An isotropic line lies in a maximal totally isotropic plane by *Split-Quaternion Zero Divisors*, §*The Two Families*, and in exactly one plane of each family by the corollary of the theorem on the two families there. Each $\mathbb{P}(P)$ is a projective line contained in $Q$, since $P$ is totally isotropic; and the union of these lines is $Q$, because every isotropic line lies in some plane of the family.
 
 **Corollary (The Quadric Is a Torus).** The quadric $Q$ is homeomorphic to a two-dimensional torus: $Q \cong S^1 \times S^1$.
 

@@ -67,7 +67,7 @@ $$
 
 and its fixed elements are the Möbius operators with a real representative matrix; the map is the action of the conjugation of the sphere on the group by the conjugation, and it is the Möbius instance of an involution on the operator layer.
 
-**Proof.** The composition is $\iota M N \iota = (\iota M \iota)(\iota N \iota)$ because $\iota^2 = \mathrm{id}$, so $\sigma$ is multiplicative; the square is the identity, and the matrices fixed up to a scalar are those with a real representative. The statement is the standard conjugation of the matrix group, in *Involutive Linear Algebras* and *Real Forms and the Descent of an Algebra*.
+**Proof.** The composition is $\iota M N \iota = (\iota M \iota)(\iota N \iota)$ because $\iota^2 = \mathrm{id}$, so $\sigma$ is multiplicative; the square is the identity, and the matrices fixed up to a scalar are those with a real representative. The statement is the standard conjugation of the matrix group, in *Involutive Bilinear Algebras* and *Real Forms and the Descent of an Algebra*.
 
 ### The Fixed Subgroup
 

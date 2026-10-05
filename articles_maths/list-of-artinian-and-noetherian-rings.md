@@ -67,10 +67,10 @@ A ring is **semisimple** when its regular module is a direct sum of simples, equ
 | Wedderburn–Artin decomposition | a semisimple ring is $\prod_i M_{n_i}(D_i)$, the factors determined up to permutation | *Simple and Semisimple Modules* |
 | $\mathbb{H}$ | a division ring; simple Artinian and Noetherian, of Krull dimension $0$, semisimple | *Division Algebras* |
 | $M_2(\mathbb{R})$ | simple Artinian and Noetherian; the matrix ring $M_2(\mathbb{R})$, of length $2$ over $\mathbb{R}$ | *Examples of Algebras* |
-| Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | isomorphic to $M_2(\mathbb{C})$ over $\mathbb{C}$; simple Artinian and Noetherian | *Biquaternion Algebra* |
+| Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | isomorphic to $M_2(\mathbb{C})$ over $\mathbb{C}$; simple Artinian and Noetherian | *Biquaternions as a Vector Space over $\mathbb{C}$* |
 | Split-complex numbers $\mathbb{D} = \mathbb{R}[t]/(t^2-1)$ | isomorphic to $\mathbb{R}\times\mathbb{R}$; reduced Artinian of dimension $0$, not a field | *Split-Complex Algebra* |
 | Dual numbers $\mathbb{D}'$ | local Artinian, non-reduced; the smallest non-semisimple Artinian ring | *Dual Numbers Algebra* |
-| Non-example: $\mathbb{B}$ treated as a field | fails: it has zero divisors, so it is not a division ring, though it is Artinian | *Biquaternion Algebra* |
+| Non-example: $\mathbb{B}$ treated as a field | fails: it has zero divisors, so it is not a division ring, though it is Artinian | *Biquaternions as a Vector Space over $\mathbb{C}$* |
 | Non-example: $M_2(\mathbb{R})$ treated as a division ring | fails: a nonzero nilpotent matrix has no inverse | *Examples of Algebras* |
 
 ## The Two Conditions Compared

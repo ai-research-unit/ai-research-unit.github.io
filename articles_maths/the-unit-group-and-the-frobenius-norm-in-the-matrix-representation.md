@@ -39,7 +39,7 @@ $$
 
 **Proof.** The realization is an algebra isomorphism, so it carries invertible elements to invertible matrices, giving the first statement; and it carries the biquaternion norm to the determinant, $N(\tilde{Q}) = \det\Phi(\tilde{Q})$, so the locus $N = 1$ is the determinant-one locus, giving the second. $\square$
 
-The unit-norm group is the group that acts on the Hermitian subspace in the two-sided action of *Biquaternion 4×4 Regular Matrix Element Representation*, §*The Two-Sided Action*; in the matrix picture it is $SL_2(\mathbb{C})$ acting by $*$-congruence on the Hermitian matrices.
+The unit-norm group is the group that acts on the Hermitian subspace in the two-sided action of *The 4×4 Regular Matrix Representation under the Three Topologies*, §*The Topology Induced by the Hermitian Form*; in the matrix picture it is $SL_2(\mathbb{C})$ acting by $*$-congruence on the Hermitian matrices.
 
 ## The Maximal Compact Slice
 
@@ -78,7 +78,7 @@ $$
 
 has image in the identity component $SO^+(1,3)$ of the orthogonal group of the form, because $SL_2(\mathbb{C})$ is connected and the action is continuous.
 
-**Proof.** The action is continuous in $\tilde{A}$, the group $SL_2(\mathbb{C})$ is connected as a complex algebraic group, and the continuous image of a connected set is connected; the image therefore lies in the identity component of the orthogonal group. The double cover itself, with its central kernel of order two, is *Biquaternion 4×4 Regular Matrix Element Representation*, §*The Two-Sided Action*; the group and its geometry are *Biquaternion Rotations and Lorentz Transformations*. $\square$
+**Proof.** The action is continuous in $\tilde{A}$, the group $SL_2(\mathbb{C})$ is connected as a complex algebraic group, and the continuous image of a connected set is connected; the image therefore lies in the identity component of the orthogonal group. The double cover itself, with its central kernel of order two, is *The 4×4 Regular Matrix Representation under the Three Topologies*, §*The Topology Induced by the Hermitian Form*; the group and its geometry are *Biquaternion Rotations and Lorentz Transformations*. $\square$
 
 ## Summary
 

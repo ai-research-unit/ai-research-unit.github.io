@@ -40,7 +40,7 @@ The examples are the algebras whose identity is part of the construction, and in
 | $B(H)$, the bounded operators | the identity operator $1$, so $B(H)$ is a unital $\mathrm{C}^*$-algebra | *Operator Algebras* |
 | $C(X)$, continuous functions on a compact space $X$ | the constant function $1$; the commutative Gelfand–Naimark theorem identifies the unital commutative $\mathrm{C}^*$-algebras as the $C(X)$ with $X$ compact | *Operator Algebras* |
 | $\mathbb{H}$, the quaternions | $\mathbb{H}^\times = \mathbb{H}\setminus\{0\}$; a unital division ring | *Quaternion Algebra* |
-| $\mathbb{B} \cong M_2(\mathbb{C})$, the biquaternions | the identity of $M_2(\mathbb{C})$; $\mathbb{B}^\times = \mathrm{GL}_2(\mathbb{C})$ | *Biquaternion Algebra* |
+| $\mathbb{B} \cong M_2(\mathbb{C})$, the biquaternions | the identity of $M_2(\mathbb{C})$; $\mathbb{B}^\times = \mathrm{GL}_2(\mathbb{C})$ | *Biquaternions as a Vector Space over $\mathbb{C}$* |
 | The augmentation ideal $I(G) \subseteq R[G]$ for $G = \mathbb{Z}/2$ | carries the identity $(1-g)/2$ when the characteristic is not $2$, an idempotent of $R[G]$ different from $1$ | *Unital Algebras* |
 
 The matrix algebra and the group algebra are unital by construction, and their unit groups are the general linear group and the group of units of the group ring; the enveloping algebra inherits its identity from the tensor algebra, of which it is a quotient. The division algebras are the unital algebras in which the unit group is as large as possible, and their unit group is the punctured algebra.

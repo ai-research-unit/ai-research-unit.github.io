@@ -4,7 +4,7 @@
 
 The second scalar pairing of the biquaternion algebra is built on the **Hermitian conjugation** ${}^{*} = {}^{\natural}\circ\bar{\cdot}$, which is $\mathbb{C}$-antilinear, so that the pairing is $\mathbb{C}$-**sesquilinear** rather than bilinear. This article defines that form and the inner product it induces, and gathers the metric readings that the Algebra group does not carry.
 
-The form and the inner product are extracted here from *Biquaternion Algebra*, where they stood as §*The Hermitian Form* and §*The Inner Product*. They are forms: they are built from the conjugation ${}^{*}$, they are read for length and for sign, and their home is the Topology group. The Algebra articles keep the conjugation ${}^{*}$ itself and the Hermitian subspace $\mathbb{M}_+$ as its fixed space — those are involution-theoretic and need no form to exist.
+The form and the inner product are extracted here from *Biquaternions as a Vector Space over $\mathbb{C}$*, where they stood as §*The Hermitian Form* and §*The Inner Product*. They are forms: they are built from the conjugation ${}^{*}$, they are read for length and for sign, and their home is the Topology group. The Algebra articles keep the conjugation ${}^{*}$ itself and the Hermitian subspace $\mathbb{M}_+$ as its fixed space — those are involution-theoretic and need no form to exist.
 
 ## The Hermitian Form
 
@@ -79,7 +79,7 @@ The comparison of this form with the bilinear one is the table of *Biquaternion 
 
 ## Summary
 
-The Hermitian form of the biquaternion algebra is $\tilde{Q}\tilde{Q}^{*}$, built on the antilinear conjugation ${}^{*}$; its scalar part is $\sum_\mu |Q_\mu|^2$, non-negative and vanishing only at the origin, and its vector part need not vanish. It induces the sesquilinear **inner product** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_{\bar\mu}Q_\mu$, conjugate-linear in the first argument, Hermitian and non-degenerate. The diagonal of the inner product is a positive definite real form on $\mathbb{B}\cong\mathbb{R}^8$, and it defines the Euclidean norm, hence the Hilbert-space and topological structure of the algebra. Positive definiteness is carried by the quaternion subspace and its negative by the anti-quaternion subspace. This article holds the form and the inner product that *Biquaternion Algebra* formerly carried as §*The Hermitian Form* and §*The Inner Product*; the sesquilinear companion of the bilinear form is *The Bilinear Form on the Biquaternion Algebra*, and the indefinite variant is *The Biquaternion Krein Form and Its Signature*.
+The Hermitian form of the biquaternion algebra is $\tilde{Q}\tilde{Q}^{*}$, built on the antilinear conjugation ${}^{*}$; its scalar part is $\sum_\mu |Q_\mu|^2$, non-negative and vanishing only at the origin, and its vector part need not vanish. It induces the sesquilinear **inner product** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_{\bar\mu}Q_\mu$, conjugate-linear in the first argument, Hermitian and non-degenerate. The diagonal of the inner product is a positive definite real form on $\mathbb{B}\cong\mathbb{R}^8$, and it defines the Euclidean norm, hence the Hilbert-space and topological structure of the algebra. Positive definiteness is carried by the quaternion subspace and its negative by the anti-quaternion subspace. This article holds the form and the inner product that *Biquaternions as a Vector Space over $\mathbb{C}$* formerly carried as §*The Hermitian Form* and §*The Inner Product*; the sesquilinear companion of the bilinear form is *The Bilinear Form on the Biquaternion Algebra*, and the indefinite variant is *The Biquaternion Krein Form and Its Signature*.
 
 ## Summary of Notation
 
@@ -94,6 +94,6 @@ The Hermitian form of the biquaternion algebra is $\tilde{Q}\tilde{Q}^{*}$, buil
 
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the Euclidean norm, the real forms and the comparison of the two forms
 - *The Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md`), for the $\mathbb{C}$-bilinear companion
-- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the conjugation ${}^{*}$ and the Hermitian subspace $\mathbb{M}_+$
+- *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the conjugation ${}^{*}$ and the Hermitian subspace $\mathbb{M}_+$
 - *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the topology this form induces
 - *The Unitary Group of the Biquaternion Algebra* (`articles_maths/the-unitary-group-of-the-biquaternion-algebra.md`), for the compact group this form singles out

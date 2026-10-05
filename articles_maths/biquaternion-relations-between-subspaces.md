@@ -195,5 +195,7 @@ The six distinguished subspaces of $\mathbb{B}$ are organized by three decomposi
 
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions, their group structure and the two spaces each defines
-- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the algebra and its three decompositions in their original setting
-- *Biquaternion Multiplication* (`articles_maths/biquaternion-multiplication.md`), for the product, the commutator and the symmetrized product in their original setting
+- *Decompositions Along the Six Subspaces* (`articles_maths/decompositions-along-the-six-subspaces.md`), for the three decompositions in their original setting
+- *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, its basis and its conjugations in their original setting
+- *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product and its scalar–vector form in their original setting
+- *Decomposition of the Multiplication* (`articles_maths/decomposition-of-the-multiplication.md`), for the two halves, the commutativity criterion and the symmetrized product

@@ -544,7 +544,7 @@ $$
 B = b_0 + b_1e_1+b_2e_2+b_3e_3 + b_{12}e_{12}+b_{13}e_{13}+b_{23}e_{23} + b_{123}\,\omega
 $$
 
-gives four equations, one for each grade. The vector and bivector parts are linear in the unknowns and couple \(v\) to \(V\); the scalar and trivector parts are the scalar equations. To write them compactly, read the bivector coefficients through the duality (§*Duality and the Hodge Star*, §*The Volume Element*): put
+gives four equations, one for each grade. The vector and bivector parts are linear in the unknowns and couple \(v\) to \(V\); the scalar and trivector parts are the scalar equations. To write them compactly, read the bivector coefficients through the duality of §*The Volume Element* (the general theory is *The Volume Element, Duality and the Hodge Star*): put
 
 $$
 c_1 = b_{23}, \qquad c_2 = -b_{13}, \qquad c_3 = b_{12},

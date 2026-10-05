@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ with the Hermitian conjugation ${}^{*}$; this article is the biquaternion instance of *Completely Positive Maps of a Clifford Algebra with Hermitian Adjoint*. The subject is the **positive maps** of the algebra, that is, the linear maps carrying the positive cone into itself, and the **completely positive** ones, which carry not only the cone but every cone of every matrix amplification. The result is complete and, in the biquaternion case, strikingly simple:
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ with the Hermitian conjugation ${}^{*}$; this article is the biquaternion instance of *Completely Positive Maps of a Hilbert Algebra with Hermitian Adjoint*. The subject is the **positive maps** of the algebra, that is, the linear maps carrying the positive cone into itself, and the **completely positive** ones, which carry not only the cone but every cone of every matrix amplification. The result is complete and, in the biquaternion case, strikingly simple:
 
 > **A linear map of the biquaternion algebra is completely positive if and only if it is a sum of two-sided operators of the corpus:**
 > $$
@@ -125,11 +125,11 @@ The completely positive maps of the biquaternion algebra are exactly the sums of
 
 ## Further Reading
 
-- *Completely Positive Maps of a Clifford Algebra with Hermitian Adjoint* (`articles_maths/completely-positive-maps-of-a-clifford-algebra-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
+- *Completely Positive Maps of a Hilbert Algebra with Hermitian Adjoint* (`articles_maths/completely-positive-maps-of-a-hilbert-algebra-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
 - *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the sandwich as an operator, its positivity and its cone.
 - *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positivity criteria in terms of the spectrum of the sandwich.
-- *Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-a-clifford-algebra-with-hermitian-adjoint.md`), for the cone and the positive involution.
+- *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-a-hilbert-algebra-with-hermitian-adjoint.md`), for the cone and the positive involution.
 - *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), for the fixed-point operator of a completely positive map.
-- *Bilinear Operators on a Clifford Module with Hermitian Adjoint* (`articles_maths/bilinear-operators-on-a-clifford-module-with-hermitian-adjoint.md`), for the operators built from two spinors, which are the rank-one elements behind the Kraus sums.
-- *Hermitian Clifford Modules with Hermitian Adjoint* (`articles_maths/hermitian-clifford-modules-with-hermitian-adjoint.md`), for the module picture of the positive cone.
+- *Bilinear Operators on a Hermitian Module with Hermitian Adjoint* (`articles_maths/bilinear-operators-on-a-hermitian-module-with-hermitian-adjoint.md`), for the operators built from two spinors, which are the rank-one elements behind the Kraus sums.
+- *Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint* (`articles_maths/hermitian-modules-over-a-hilbert-algebra-with-hermitian-adjoint.md`), for the module picture of the positive cone.
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for $\mathbb{M}_+$ itself, and *The Six Subspaces and the Idempotents and Projections* (`articles_maths/the-six-subspaces-and-the-idempotents-and-projections.md`), for the Hermitian idempotents.

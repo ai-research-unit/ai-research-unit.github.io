@@ -145,4 +145,4 @@ the entries being real dimensions; so the minimal ideals meet exactly the three 
 - *The Six Subspaces and the Roots of Minus One* (`articles_maths/the-six-subspaces-and-the-roots-of-minus-one.md`), for the pure roots, which are the units of the vector subspace
 - *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for simplicity, the length, the minimal ideals and the Peirce decomposition in the whole algebra
 - *The Six Subspaces and the Forms* (`articles_maths/the-six-subspaces-and-the-forms.md`), for the theorem that the minimal one-sided ideals are the maximal totally isotropic one-sided ideals of the bilinear form, and for the Peirce basis in which that form is hyperbolic
-- *Biquaternion Multiplication* (`articles_maths/biquaternion-multiplication.md`), for the product formula
+- *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product formula

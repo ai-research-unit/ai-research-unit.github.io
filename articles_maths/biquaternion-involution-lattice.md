@@ -187,4 +187,5 @@ The biquaternion algebra carries four antilinear involutions: quaternion conjuga
 
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
 - *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the intersections, the sums and the coordinate blocks of the six
-- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the conjugations and the structure of the algebra
+- *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the conjugations and the structure of the algebra
+- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the two maps and the group they generate, its subgroups and its exclusion of the reversal

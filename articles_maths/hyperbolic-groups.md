@@ -188,7 +188,7 @@ The isometry $\gamma$ is **elliptic** if some orbit is bounded (equivalently, if
 - The **Patterson–Sullivan measures** and the **quasi-conformal measures** on the boundary, the **Hausdorff dimension** of the limit set of a Kleinian group and the **critical exponent** of a hyperbolic group are *Analysis on Groups*, where the measure is available.
 - The **ergodicity of the geodesic flow** on a negatively curved quotient, the **spectral theory of the Laplacian**, the **resonances** and the **prime geodesic theorem** are Part III.
 - The **harmonic analysis of the boundary**, the **Martin boundary** and the **random walks** on hyperbolic groups are Part III.
-- The **classifying spaces** and the **Baum–Connes conjecture** for hyperbolic groups are the operator-algebraic topics in *Topology on Linear Algebras*.
+- The **classifying spaces** and the **Baum–Connes conjecture** for hyperbolic groups are the operator-algebraic topics in *Topology on Bilinear Algebras*.
 - What is *not* deferred: the definition of hyperbolicity and its equivalences, the Morse lemma, the boundary at infinity as a topological space, the visual metrics and quasi-symmetry, the classification of isometries, the Rips complex and the finiteness properties, Dehn's algorithm, and the rigidity statements.
 
 ## Summary

@@ -10,7 +10,7 @@ $$
 
 built on the **natural** conjugation ${}^{\natural}$, which is $\mathbb{C}$-linear, so that the form is $\mathbb{C}$-**bilinear**: scalars may be moved out of either argument. Its diagonal $N(\tilde{Q},\tilde{Q})$ is the biquaternion norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ of *Biquaternion Norm and Invertibility*, and the form is the polarisation of that quadratic form.
 
-This is the form the Algebra group does not use: the articles *Biquaternion Algebra* and the six subspace articles work with ${}^{\natural}$, without using the norm — its sign, its signature, its definiteness, its Euclidean part. The companion pairings are *The Hermitian Form on the Biquaternion Algebra*, built on the Hermitian conjugation ${}^{*}$, and *The Biquaternion Krein Form and Its Signature*, built on the complex conjugation $\bar{\cdot}$.
+This is the form the Algebra group does not use: the articles *Biquaternions as a Vector Space over $\mathbb{C}$* and the six subspace articles work with ${}^{\natural}$, without using the norm — its sign, its signature, its definiteness, its Euclidean part. The companion pairings are *The Hermitian Form on the Biquaternion Algebra*, built on the Hermitian conjugation ${}^{*}$, and *The Biquaternion Krein Form and Its Signature*, built on the complex conjugation $\bar{\cdot}$.
 
 ## The Form and Its Polarisation
 
@@ -26,7 +26,7 @@ $$
 N(\tilde{P}, \tilde{Q}) = \tfrac{1}{2}\left(N(\tilde{P}+\tilde{Q}) - N(\tilde{P}) - N(\tilde{Q})\right),
 $$
 
-and it is the pairing that *Different Ways to Consider Biquaternions* uses when it separates the $\mathbb{C}$-bilinear pairings built on ${}^{\natural}$ from the $\mathbb{C}$-sesquilinear ones built on ${}^{*}$.
+and it is the $\mathbb{C}$-bilinear pairing built on ${}^{\natural}$, distinguished by the involution that twists it from the $\mathbb{C}$-sesquilinear ones built on ${}^{*}$ (*The Group of Involutions*; *The Hermitian Form on the Biquaternion Algebra*).
 
 The form is **multiplicative** in the following sense: for a quaternion $a \in \mathbb{H}_{\mathbb{B}}$ acting by left multiplication, $N(a\tilde{P}, a\tilde{Q}) = N(a)^2 N(\tilde{P},\tilde{Q})$, and likewise on the right, since $N$ is multiplicative and central. Over $\mathbb{C}$ the form is a non-degenerate complex quadratic form; it has no signature until a real form is chosen, and the signature is read from the real slices below.
 
@@ -86,6 +86,6 @@ The bilinear form of the biquaternion algebra is $N(\tilde{P},\tilde{Q}) = \math
 
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm, its polarisation and the real forms with their signatures
 - *The Hermitian Form on the Biquaternion Algebra* (`articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md`), for the sesquilinear companion
-- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the conjugations and the norm as an algebraic operation
+- *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the conjugations and the norm as an algebraic operation
 - *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the six subspaces
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the null cone as the zero-divisor set

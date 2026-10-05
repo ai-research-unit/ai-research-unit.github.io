@@ -9,7 +9,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3 = \sum_{\mu = 0}^{3} Q_\mu e_\mu, \qquad Q_\mu \in \mathbb{C}.
 $$
 
-The algebra, its four conjugations, its six distinguished subspaces and its biquaternion norm are those of the companion article *Biquaternion Algebra*, and nothing of that structure is re-derived here except where the coordinate realization requires it.
+The algebra, its four conjugations, its six distinguished subspaces and its biquaternion norm are those of the companion article *Biquaternions as a Vector Space over $\mathbb{C}$*, and nothing of that structure is re-derived here except where the coordinate realization requires it.
 
 This article presents the **four-vector realization** of $\mathbb{B}$: the biquaternion read off as its list of four complex coefficients. The word *representation* is used here in the sense of a concrete realization of the algebra as computable objects, the sense in which the companion article *Biquaternion Other Algebraic Element Representations* uses it, and not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The technical sense is the subject of *Modules over the Biquaternion Algebra*. The distinction matters for the articles of this group: the present article is a realization only, because it supplies a space and no action, while the companion articles *Biquaternion 2×2 Matrix Element Representation* and *Biquaternion 4×4 Regular Matrix Element Representation*, below this article, are realizations and representations at once, because each comes with an action on a vector space. This article supplies the coordinate space on which the operator of the third article is written.
 
@@ -132,7 +132,7 @@ $$
 
 **Proof.** Quaternion conjugation fixes $e_0$ and sends $e_k$ to $-e_k$, while leaving every coefficient untouched, so it acts on the coefficients by $(Q^0, Q^1, Q^2, Q^3) \mapsto (Q^0, -Q^1, -Q^2, -Q^3)$. Complex conjugation fixes every basis element $e_\mu$ and conjugates the central scalar $i$, hence conjugates each coefficient and acts componentwise by $\bar{\cdot}$. Hermitian conjugation is their composite, and $\flat$ is its negative.
 
-**Remark.** The three involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ commute and generate a Klein four-group with the identity; the fourth involution $\flat$ is not independent, since $\flat = -{}^{*}$ and ${}^{*}\flat = -1$ on each component. This is the coordinate form of the Klein group of conjugations of *Biquaternion Algebra*, and it is the reason the fixed-point subspaces below come in three pairs and not four.
+**Remark.** The three involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ commute and generate a Klein four-group with the identity; the fourth involution $\flat$ is not independent, since $\flat = -{}^{*}$ and ${}^{*}\flat = -1$ on each component. This is the coordinate form of the Klein group of conjugations of *The Group of Involutions*, and it is the reason the fixed-point subspaces below come in three pairs and not four.
 
 **Example.** For the element
 
@@ -185,7 +185,7 @@ The scalar subspace $\mathbb{C}_{\mathbb{B}}$ is the centre, $\mathrm{Vect}(\mat
 
 **Proof.** The conditions are the componentwise reading of the four displayed conjugation rules of the previous section. For $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$, quaternion conjugation fixes the scalar component and negates each vector component. For $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, complex conjugation fixes or negates each coefficient according to whether it is real or purely imaginary. For $\mathbb{M}_+$ and $\mathbb{M}_-$, Hermitian conjugation conjugates and then negates the vector components, so the fixed vectors have a real scalar component and purely imaginary vector components, and the anti-fixed vectors have a purely imaginary scalar component and real vector components.
 
-The table shows that the three decompositions of $\mathbb{B}$ recorded in *Biquaternion Algebra* read in coordinates as the splitting of a quadruple into its real and imaginary parts in each of three ways:
+The table shows that the three decompositions of $\mathbb{B}$ recorded in *Decompositions Along the Six Subspaces* read in coordinates as the splitting of a quadruple into its real and imaginary parts in each of three ways:
 
 $$
 \mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}) = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}} = \mathbb{M}_+ \oplus \mathbb{M}_- .

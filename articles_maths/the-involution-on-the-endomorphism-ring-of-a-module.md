@@ -5,7 +5,7 @@
 
 A non-degenerate reflexive pairing on a module turns the adjoint of a homomorphism into an operation on the endomorphism ring: the map $f \mapsto f^{*}$ is additive, reverses products and has order two, so it is an **involution** of the ring. This article constructs that involution, identifies the endomorphisms it fixes — the **self-adjoint** ones — and the units it preserves — the **unitary** ones, which are exactly the isometries of the pairing.
 
-The article is the third of the `* Theory` group of this category. It assumes the pairing and the adjoint of *The Adjoint of a Module Homomorphism*, the endomorphism ring of *Module Endomorphisms* and *The Endomorphism Algebra of a Module*, and the involution concept of *Involutive Linear Algebras*. It is the module-level counterpart of *Involutions of the Endomorphism Algebra* in the linear-space category, with the same conventions; the operator-level counterparts, in which the adjoint of a specific operator is computed, are the `* Operator Theory` articles that follow. The article stays inside Part I: no distance, norm, form with a norm, topology or limit. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, $M$ is a left $A$-module with a non-degenerate reflexive $\sigma$-sesquilinear pairing $\langle\cdot,\cdot\rangle$, and $E=\operatorname{End}_A(M)$.
+The article is the third of the `* Theory` group of this category. It assumes the pairing and the adjoint of *The Adjoint of a Module Homomorphism*, the endomorphism ring of *Module Endomorphisms* and *The Endomorphism Algebra of a Module*, and the involution concept of *Involutive Bilinear Algebras*. It is the module-level counterpart of *Involutions of the Endomorphism Algebra* in the linear-space category, with the same conventions; the operator-level counterparts, in which the adjoint of a specific operator is computed, are the `* Operator Theory` articles that follow. The article stays inside Part I: no distance, norm, form with a norm, topology or limit. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, $M$ is a left $A$-module with a non-degenerate reflexive $\sigma$-sesquilinear pairing $\langle\cdot,\cdot\rangle$, and $E=\operatorname{End}_A(M)$.
 
 ## The Involution Induced by a Pairing
 
@@ -25,7 +25,7 @@ $$
 
 Hence $(E,{}^{*})$ is an involutive $R$-algebra: ${}^{*}$ is an involution of $E$ whose fixed part is the set of self-adjoint endomorphisms.
 
-*Proof.* Well-definedness, existence and $A$-linearity of $f^{*}$ are *The Adjoint of a Module Homomorphism*, and the four laws are proved there. An involution of a ring is an anti-automorphism of order two; ${}^{*}$ is additive and $R$-linear, so it is an involution of the $R$-algebra $E$, in the sense of *Involutive Linear Algebras*. $\square$
+*Proof.* Well-definedness, existence and $A$-linearity of $f^{*}$ are *The Adjoint of a Module Homomorphism*, and the four laws are proved there. An involution of a ring is an anti-automorphism of order two; ${}^{*}$ is additive and $R$-linear, so it is an involution of the $R$-algebra $E$, in the sense of *Involutive Bilinear Algebras*. $\square$
 
 The involution is not an auxiliary structure: it is the pairing, transported to the operators. Two pairings that are equivalent give the same involution, as the last section shows, and a pairing that is not reflexive fails to give an involution because $(f^{*})^{*}=f$ may fail.
 
@@ -77,7 +77,7 @@ and under the square $f \mapsto f^{2}$; it contains the identity. Hence $\operat
 
 *Proof.* If $f^{*}=f$ and $g^{*}=g$ then $(fg+gf)^{*}=g^{*}f^{*}+f^{*}g^{*}=gf+fg=fg+gf$, so $(f\bullet g)^{*}=f\bullet g$; taking $g=f$ gives $f^{2}$ self-adjoint; the identity is self-adjoint. $\square$
 
-The symmetric part of an involutive algebra with this Jordan product is treated in *Involutive Linear Algebras*, which owns the general theory of the involutions and their symmetric elements.
+The symmetric part of an involutive algebra with this Jordan product is treated in *Involutive Bilinear Algebras*, which owns the general theory of the involutions and their symmetric elements.
 
 ### The matrix description
 

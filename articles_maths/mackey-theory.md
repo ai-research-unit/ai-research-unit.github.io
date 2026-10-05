@@ -185,7 +185,7 @@ to split over the stabiliser in the relevant sense, and it is invariant under co
 
 - The **completion** of the induced spaces, the **direct-integral decomposition** over a coadjoint orbit or over a double coset space, and the identification of the little-group induction with a space of $L^2$ sections of a line bundle are Part III; the article states the constructions on the dense algebraic subspaces.
 - The **orbit method for solvable groups** and the **Kirillov character formula**, which expresses the character of $\pi_\mathcal{O}$ as the Fourier transform of the orbit measure, require the distribution theory of Part III.
-- The **operator-algebraic form** of the imprimitivity theorem — the Morita equivalence of $C_0(G/H)\rtimes G$ with $C^*(H)$ — is developed with the operator algebras of *Topology on Linear Algebras*.
+- The **operator-algebraic form** of the imprimitivity theorem — the Morita equivalence of $C_0(G/H)\rtimes G$ with $C^*(H)$ — is developed with the operator algebras of *Topology on Bilinear Algebras*.
 - What is *not* deferred: the imprimitivity theorem, the intertwining number theorem, the irreducibility criterion, the restriction and tensor-product formulas, the Mackey machine, the little-group method for semidirect products, the orbit correspondence for nilpotent Lie groups and the obstruction class are developed here.
 
 ## Summary

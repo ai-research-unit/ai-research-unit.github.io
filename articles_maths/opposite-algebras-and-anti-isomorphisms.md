@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Every algebra has a mirror image, the **opposite algebra** $A^{\mathrm{op}}$, obtained by keeping the additive group and the scalars and reversing the order of every product. The mirror is not a curiosity: it is the algebra in which the right modules of $A$ become left modules, and it is the algebra that a right action secretly uses. The maps that compare an algebra with its mirror are the **anti-isomorphisms**, the bijections that reverse products, and the involutions of *Involutive Linear Algebras* are exactly the anti-isomorphisms of order two from an algebra to itself.
+Every algebra has a mirror image, the **opposite algebra** $A^{\mathrm{op}}$, obtained by keeping the additive group and the scalars and reversing the order of every product. The mirror is not a curiosity: it is the algebra in which the right modules of $A$ become left modules, and it is the algebra that a right action secretly uses. The maps that compare an algebra with its mirror are the **anti-isomorphisms**, the bijections that reverse products, and the involutions of *Involutive Bilinear Algebras* are exactly the anti-isomorphisms of order two from an algebra to itself.
 
-This article develops the opposite algebra as a construction, with its functoriality and its behaviour under the tensor product, the group algebra and the matrix algebra; the anti-isomorphisms onto it, with the calculus of composition that turns two anti-maps into a map; and the place of the involution as the special anti-isomorphism of order two. The notion of an involution, the symmetric and the skew elements and their Lie and Jordan structures are the subject of *Involutive Linear Algebras*, and they are cited rather than restated.
+This article develops the opposite algebra as a construction, with its functoriality and its behaviour under the tensor product, the group algebra and the matrix algebra; the anti-isomorphisms onto it, with the calculus of composition that turns two anti-maps into a map; and the place of the involution as the special anti-isomorphism of order two. The notion of an involution, the symmetric and the skew elements and their Lie and Jordan structures are the subject of *Involutive Bilinear Algebras*, and they are cited rather than restated.
 
 Throughout, $k$ is a field, $A$ and $B$ are unital associative $k$-algebras, and the unit is $1$; the opposite algebra is written $A^{\mathrm{op}}$, and the element $a$ of $A$, viewed in $A^{\mathrm{op}}$, is written $a^{\mathrm{op}}$ when the two algebras are being compared. The tensor products are over $k$, and $\operatorname{End}$ means $\operatorname{End}_k$. The algebras, the ideals and the centre are those of *Algebras*, *Ideals and Quotients of Algebras* and *Centre, Units, Zero Divisors and Division Algebras*; the modules are those of *Modules over an Algebra* and the tensor products those of *Tensor Products of Algebras*.
 
@@ -68,7 +68,7 @@ $$
 
 **(1)** For a finite-dimensional $k$-linear space $V$, the transpose is an isomorphism $\operatorname{End}_k(V)^{\mathrm{op}} \cong \operatorname{End}_k(V)$: a matrix acts on the opposite algebra by acting on the transposed matrix, $(X^{\mathsf{T}})^{\mathrm{op}} = X^{\mathsf{T}}$.
 
-**(2)** The matrix algebra is isomorphic to its opposite, $M_n(k)^{\mathrm{op}} \cong M_n(k)$, by the transpose; the isomorphism is an anti-automorphism of $M_n(k)$ of order two, hence an involution, and it is the canonical example of *Involutive Linear Algebras*.
+**(2)** The matrix algebra is isomorphic to its opposite, $M_n(k)^{\mathrm{op}} \cong M_n(k)$, by the transpose; the isomorphism is an anti-automorphism of $M_n(k)$ of order two, hence an involution, and it is the canonical example of *Involutive Bilinear Algebras*.
 
 **(3)** For a group $G$, the inversion $g \mapsto g^{-1}$ is an isomorphism $k[G]^{\mathrm{op}} \cong k[G]$, because it reverses products; the group algebra is therefore isomorphic to its opposite for every group.
 
@@ -100,7 +100,7 @@ $$
 \operatorname{Anti}(A, B) \longrightarrow \operatorname{Hom}_k(A, B^{\mathrm{op}}), \qquad f \longmapsto \iota_B \circ f,
 $$
 
-and it restricts to a bijection $\operatorname{AntiIso}(A,B) \to \operatorname{Iso}_k(A, B^{\mathrm{op}})$. Under the dictionary the anti-automorphisms of $A$ correspond to the isomorphisms $A \to A^{\mathrm{op}}$, and the involutions of $A$ to those isomorphisms of *Involutive Linear Algebras* whose square is the identity.
+and it restricts to a bijection $\operatorname{AntiIso}(A,B) \to \operatorname{Iso}_k(A, B^{\mathrm{op}})$. Under the dictionary the anti-automorphisms of $A$ correspond to the isomorphisms $A \to A^{\mathrm{op}}$, and the involutions of $A$ to those isomorphisms of *Involutive Bilinear Algebras* whose square is the identity.
 
 *Proof.* The composite $\iota_B f$ preserves products, because $f$ reverses them and $\iota_B$ reverses them back; the correspondence is inverted by $\rho \mapsto \iota_B \rho$, since $\iota_B^2 = \mathrm{id}$. The statements about anti-automorphisms and involutions are the dictionary read with $B = A$.
 
@@ -118,7 +118,7 @@ and the anti-automorphisms of $A$ form a coset of the automorphism group in the 
 
 *Proof.* For an automorphism $\alpha$ the composite $\rho_0\alpha$ reverses products, so the map lands in the anti-automorphisms; it is inverted by $\rho \mapsto \rho_0^{-1}\rho$, which is the composite of two anti-automorphisms and hence an automorphism, and the two composites are the identity by the associativity of composition and $\rho_0^{-1}\rho_0 = \mathrm{id} = \rho_0\rho_0^{-1}$. The statement that the anti-automorphisms form a coset is the definition of a coset under composition with the fixed element $\rho_0$.
 
-**Remark.** When $A$ carries an involution the coset theorem is that of *Involutive Linear Algebras*, and the present article adds the case in which the fixed anti-automorphism $\rho_0$ is not of order two; the coset structure is the same and only the inverse map changes. The reason the coset is the right language is that the anti-automorphisms are never a group under composition, because the product of two of them leaves the coset.
+**Remark.** When $A$ carries an involution the coset theorem is that of *Involutive Bilinear Algebras*, and the present article adds the case in which the fixed anti-automorphism $\rho_0$ is not of order two; the coset structure is the same and only the inverse map changes. The reason the coset is the right language is that the anti-automorphisms are never a group under composition, because the product of two of them leaves the coset.
 
 ## Involutions as Isomorphisms to the Opposite
 
@@ -126,7 +126,7 @@ and the anti-automorphisms of $A$ form a coset of the automorphism group in the 
 
 **Definition.** An **involution** of $A$ is an isomorphism $\sigma : A \to A^{\mathrm{op}}$ with $\sigma^2 = \mathrm{id}$, equivalently a $k$-linear map with $\sigma(ab) = \sigma(b)\sigma(a)$, $\sigma(1) = 1$ and $\sigma \circ \sigma = \mathrm{id}$.
 
-The definition is the one of *Involutive Linear Algebras*, where the involution, its symmetric and skew elements, the Lie algebra of the skew elements and the Jordan algebra of the symmetric ones are developed; the present article records only the place of the involution in the calculus of the opposite algebra.
+The definition is the one of *Involutive Bilinear Algebras*, where the involution, its symmetric and skew elements, the Lie algebra of the skew elements and the Jordan algebra of the symmetric ones are developed; the present article records only the place of the involution in the calculus of the opposite algebra.
 
 **Proposition.** A $k$-linear map $\sigma : A \to A$ is an involution exactly when $\iota_A \circ \sigma : A \to A^{\mathrm{op}}$ is an isomorphism of algebras and $\sigma \circ \sigma = \mathrm{id}_A$. Under the dictionary the involutions of $A$ correspond bijectively to the anti-automorphisms of $A$ of order two, that is, to the elements of order two in the coset $\operatorname{Anti}(A,A)$.
 
@@ -150,7 +150,7 @@ The corollary is the reason the opposite algebra is a construction of the theory
 
 The **opposite algebra** $A^{\mathrm{op}}$ is $A$ with the product reversed, $a^{\mathrm{op}}b^{\mathrm{op}} = (ba)^{\mathrm{op}}$, the opposite map $\iota_A : A \to A^{\mathrm{op}}$ being an anti-isomorphism; $(A^{\mathrm{op}})^{\mathrm{op}} = A$, $A^{\mathrm{op}}$ has the same centre, unit, units, radical and lattice of two-sided ideals as $A$, and $A^{\mathrm{op}} = A$ exactly when $A$ is commutative. The construction is functorial, it commutes with the tensor product by the swap, $(A \otimes B)^{\mathrm{op}} \cong A^{\mathrm{op}} \otimes B^{\mathrm{op}}$, and it is realised by the transpose for $\operatorname{End}_k(V)$ and for $M_n(k)$, by the inversion for a group algebra, and by the arrow reversal for a path algebra.
 
-An **anti-homomorphism** $f : A \to B$ satisfies $f(ab) = f(b)f(a)$; the composite of two anti-maps is a map, and the dictionary $f \mapsto \iota_B f$ is a bijection $\operatorname{Anti}(A,B) \cong \operatorname{Hom}_k(A,B^{\mathrm{op}})$ restricting to $\operatorname{AntiIso}(A,B) \cong \operatorname{Iso}_k(A,B^{\mathrm{op}})$. The anti-automorphisms of $A$ form the coset $\rho_0\operatorname{Aut}_k(A)$ for any fixed anti-automorphism $\rho_0$, and they are a group only when empty or when $A$ is commutative. An **involution** is an isomorphism $\sigma : A \to A^{\mathrm{op}}$ of order two, that is an anti-automorphism of order two; the involutions, their symmetric and skew elements and the Lie and Jordan structures they carry are the subject of *Involutive Linear Algebras*, the involutions of the tensor algebra, the free algebra, the graded algebras and the path algebra are the subject of *Involutions of the Tensor Algebra*, *Involutions of a Free Algebra*, *Involutive Graded Algebras* and *Involutions of a Path Algebra*, and the adjoints built from an involution are the subject of the group `- * Operator Theory` of this category.
+An **anti-homomorphism** $f : A \to B$ satisfies $f(ab) = f(b)f(a)$; the composite of two anti-maps is a map, and the dictionary $f \mapsto \iota_B f$ is a bijection $\operatorname{Anti}(A,B) \cong \operatorname{Hom}_k(A,B^{\mathrm{op}})$ restricting to $\operatorname{AntiIso}(A,B) \cong \operatorname{Iso}_k(A,B^{\mathrm{op}})$. The anti-automorphisms of $A$ form the coset $\rho_0\operatorname{Aut}_k(A)$ for any fixed anti-automorphism $\rho_0$, and they are a group only when empty or when $A$ is commutative. An **involution** is an isomorphism $\sigma : A \to A^{\mathrm{op}}$ of order two, that is an anti-automorphism of order two; the involutions, their symmetric and skew elements and the Lie and Jordan structures they carry are the subject of *Involutive Bilinear Algebras*, the involutions of the tensor algebra, the free algebra, the graded algebras and the path algebra are the subject of *Involutions of the Tensor Algebra*, *Involutions of a Free Algebra*, *Involutive Graded Algebras* and *Involutions of a Path Algebra*, and the adjoints built from an involution are the subject of the group `- * Operator Theory` of this category.
 
 ## Summary of Notation
 

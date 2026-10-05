@@ -14,7 +14,7 @@ $$
 h(\tilde P,\tilde R) = h(\tilde R,\tilde P)^{\dagger}.
 $$
 
-The form is **non-degenerate** if $h(\tilde R,\tilde P)=0$ for all $\tilde P$ implies $\tilde R=0$, and **positive definite** if $h(\tilde R,\tilde R)\in\mathbb{M}_+$ for $\tilde R\neq0$, that is, if its values are positive in the sense of the Hermitian cone (*Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint*).
+The form is **non-degenerate** if $h(\tilde R,\tilde P)=0$ for all $\tilde P$ implies $\tilde R=0$, and **positive definite** if $h(\tilde R,\tilde R)\in\mathbb{M}_+$ for $\tilde R\neq0$, that is, if its values are positive in the sense of the Hermitian cone (*Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint*).
 
 **Proposition (the forms of the rank-one module).** Let $M=\mathbb{B}$ with the right action of the algebra on itself. Every Hermitian form on $M$ is
 
@@ -148,11 +148,11 @@ A Hermitian form on the rank-one module over the biquaternion algebra is a Hermi
 ## Further Reading
 
 - *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint* (`articles_maths/hermitian-forms-over-an-involution-ring-and-the-unitary-witt-group-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
-- *Hermitian Forms on a Clifford Algebra with Hermitian Adjoint* (`articles_maths/hermitian-forms-on-a-clifford-algebra-with-hermitian-adjoint.md`), for the forms of an anti-involution and the canonical Hermitian form.
+- *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint* (`articles_maths/hermitian-forms-on-a-hilbert-algebra-with-hermitian-adjoint.md`), for the forms of an anti-involution and the canonical Hermitian form.
 - *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the same objects in coordinates: the forms, positivity, the cone and the slice.
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the Hermitian elements and the real form.
 - *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the congruence as an operator, its invariants and its degenerate cases.
-- *Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-a-clifford-algebra-with-hermitian-adjoint.md`), for the positive cone in which the signature lives.
+- *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-a-hilbert-algebra-with-hermitian-adjoint.md`), for the positive cone in which the signature lives.
 - *The Unitary Slice and the Compact Real Form with Hermitian Adjoint* (`articles_maths/the-unitary-slice-and-the-compact-real-form-with-hermitian-adjoint.md`), for the isometry group of the unit form.
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm, its isotropy and the group of units.
 - *Biquaternion Versors and the Orthogonal Group* (`articles_maths/biquaternion-versors-and-the-orthogonal-group.md`), for the isometry group of the norm and the contrast with the slice.

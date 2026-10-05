@@ -36,7 +36,7 @@ extended linearly to the combinations of the $L_a$.
 
 *Proof.* Well definedness is the linearity of the assignment over the span of the $L_a$. Multiplicativity: $(L_aL_b)^* = L_{ab}^* = L_{\sigma(ab)} = L_{\sigma(a)\sigma(b)} = L_{\sigma(a)}L_{\sigma(b)} = L_a^*L_b^*$. Order two: $(L_a^*)^* = L_{\sigma^2(a)} = L_a$. The identification with $\sigma$ is the definition. $\square$
 
-**Corollary.** The multiplication algebra is an **involutive commutative algebra** in the sense of *Involutive Linear Algebras*, with the involution ${}^{*}$; its fixed subalgebra is $\operatorname{Mult}(A)^*\cong A^\sigma$ and its skew part is $L_{A^-}$.
+**Corollary.** The multiplication algebra is an **involutive commutative algebra** in the sense of *Involutive Bilinear Algebras*, with the involution ${}^{*}$; its fixed subalgebra is $\operatorname{Mult}(A)^*\cong A^\sigma$ and its skew part is $L_{A^-}$.
 
 *Proof.* The involution is an automorphism of order two; the fixed elements are the $L_a$ with $\sigma(a) = a$, giving the first identification; the skew elements are the $L_a$ with $\sigma(a) = -a$. $\square$
 

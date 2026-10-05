@@ -3,7 +3,7 @@
 
 ## Introduction
 
-*Biquaternion Algebra ($\mathbb{B}$)* developed the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, its six distinguished real subspaces, its three decompositions, and the product whose table is written out below is the one of *Biquaternion Multiplication*. This article works the computations out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the six subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the subject of *Biquaternion Idempotents and Projections*, which owns the general construction.
+*Biquaternion Algebra ($\mathbb{B}$)* developed the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, its six distinguished real subspaces, its three decompositions, and the product whose table is written out below is the one of *The Four Biquaternion Complex Products*. This article works the computations out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the six subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the subject of *Biquaternion Idempotents and Projections*, which owns the general construction.
 
 Notation follows *Biquaternion Algebra ($\mathbb{B}$)*. A biquaternion is written in developed form
 

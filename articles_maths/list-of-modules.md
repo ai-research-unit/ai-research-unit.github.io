@@ -80,7 +80,7 @@ Over a division ring every module is free, and the rank theory is that of vector
 | The defining module $S$ of $\mathbb{B}$ | the unique simple $\mathbb{B}$-module; not free over $\mathbb{B}$ in the vector-space sense | *Modules over the Biquaternion Algebra* |
 | $\mathbb{H}$-module structure | complex structure $I$ and quaternionic structure $\mathcal{J}$; $J(\mathbb{H}) = 0$ | *Quaternion Ideals and Simplicity* |
 | Lipschitz order $\mathbb{Z}\{e_0,e_1,e_2,e_3\}$ | a torsion-free $\mathbb{Z}$-module of rank $4$, not free over a non-commutative order | *Lattices and the Quaternion Lattice* |
-| Non-example: a $\mathbb{B}$-module treated as a vector space | fails to have a basis over $\mathbb{B}$: the ring has zero divisors | *Biquaternion Algebra* |
+| Non-example: a $\mathbb{B}$-module treated as a vector space | fails to have a basis over $\mathbb{B}$: the ring has zero divisors | *Biquaternions as a Vector Space over $\mathbb{C}$* |
 | Non-example: a torsion element of an $\mathbb{H}$-module | does not occur: $\mathbb{H}$ is a division ring, so every nonzero module is torsion-free | *Quaternion Ideals and Simplicity* |
 
 ## Homomorphisms, Duals and Tensor Products

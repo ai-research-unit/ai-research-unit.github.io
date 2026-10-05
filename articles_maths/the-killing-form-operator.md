@@ -55,7 +55,7 @@ $$
 
 **Corollary.** The adjoint representation lands in the operators preserving the form: the image of $\operatorname{ad}:\mathrm{G}\to\operatorname{End}_K(\mathrm{G})$ lies in the Lie subalgebra of the operators $T$ with $\kappa(Ty,z)+\kappa(y,Tz)=0$. When $\kappa$ is nondegenerate and written in a basis, the matrices of the $\operatorname{ad}_x$ are antisymmetric with respect to the coefficient matrix of $\kappa$.
 
-**Remark.** The corollary names the orthogonal algebra of the form; the orthogonal Lie algebras, their classification and their representation theory belong to the symmetric linear algebras of this Part and are not used here. Only the operator statement above is used, and no metric reading is taken.
+**Remark.** The corollary names the orthogonal algebra of the form; the orthogonal Lie algebras, their classification and their representation theory belong to the symmetric bilinear algebras of this Part and are not used here. Only the operator statement above is used, and no metric reading is taken.
 
 ## The Semisimplicity Criterion as an Operator Statement
 

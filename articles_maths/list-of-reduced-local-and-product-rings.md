@@ -89,7 +89,7 @@ The contrast between $\mathbb{D}$ and $\mathbb{D}'$ is the whole content of the 
 |---|---|---|
 | $M_n(\mathbb{R})$, $n \geq 2$ | semisimple and simple as a ring, but not commutative and not a product of fields | *Matrix Algebras* |
 | $\mathbb{H}$ | a division ring, finite-dimensional over $\mathbb{R}$, but not commutative | *Quaternion Algebra* |
-| $\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$ | not commutative, and with zero divisors; not in the commutative Artinian split | *Biquaternion Algebra*, *Split-Biquaternion Algebra* |
+| $\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$ | not commutative, and with zero divisors; not in the commutative Artinian split | *Biquaternions as a Vector Space over $\mathbb{C}$*, *Split-Biquaternion Algebra* |
 | $\mathbb{O}$ | not a ring | *Octonion Algebra* |
 | $\mathbb{Z}$, $\mathbb{Z}[x]$, $k[x]$ | commutative and reduced, but not Artinian, so the structure theorem does not apply | *The Integers*, *Polynomial Rings and Rational Functions* |
 | $\mathbb{Z}_{(p)}$, $k[[x]]$ | local and reduced, but not Artinian: a discrete valuation ring has dimension $1$ | *Localization and the Fraction Field*, *Examples of Rings and Fields* |

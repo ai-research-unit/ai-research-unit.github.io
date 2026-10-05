@@ -183,7 +183,7 @@ so the left side is $\geq \|v_0\|^2$ only if $\alpha_g(v_0) = v_0$. Hence $v_0$ 
 
 - The **strong ergodicity** of an action of a (T) group on a probability space, the **spectral gap** of the Laplacian on a homogeneous space, and the mixing, equidistribution and counting theorems that follow are those of *Analysis on Groups* in Part III, where the measure, the limit and the $L^2$ spaces are available.
 - The **construction of expander families**, the Cheeger inequalities and the combinatorial applications belong to the analytic and ergodic theory of Part III.
-- The **operator-algebraic consequences** — the type of the group von Neumann algebra, the structure of the group $C^*$-algebra and the property of the reduced group $C^*$-algebra — are developed in *Topology on Linear Algebras* , and are quoted from the literature where used.
+- The **operator-algebraic consequences** — the type of the group von Neumann algebra, the structure of the group $C^*$-algebra and the property of the reduced group $C^*$-algebra — are developed in *Topology on Bilinear Algebras* , and are quoted from the literature where used.
 - What is *not* deferred: the Kazhdan pair, the equivalent formulations of (T), the fixed-point and cohomological characterisations, the classification of the examples and non-examples at the level of the groups, the heredity, the finite-generation and abelianisation consequences, and the spectral-gap formulation.
 
 ## Summary

@@ -8,7 +8,7 @@ Everything in the article is a consequence of one formula. A rotation is $\tilde
 
 The isoclinic rotations form two three-dimensional spheres inside $SO(4)$. The two spheres commute elementwise, each is a normal subgroup, and no rotation conjugates one of them into the other; the reflection $\tilde r\mapsto\tilde{r}^{\natural}$ does exchange them. This is the exceptional position of dimension four among the rotation groups, and it is the reason $SO(4)$ is not simple. The last section reads the two angles in the Hopf coordinates of the unit sphere, where the rotation becomes a translation on a family of tori with the Clifford torus in the middle.
 
-The parametrisation is not derived here. The two-sided action $\Phi_{(q_1,q_2)}(\tilde r) = q_1\tilde rq_2^{-1}$, its kernel $\{\pm(1,1)\}$ and the covering $Sp(1)\times Sp(1)\to SO(4)$ are *Quaternion Rotations and Reflections*, §*The Two-Sided Action and $SO(4)$*, and the group-theoretic statement $SO(4)\cong(SU(2)\times SU(2))/\{\pm1\}$ is *Matrix Groups and Classical Groups*. The normal form of an orthogonal map of a definite space is *The Rotation Group and Orientation*, §*The Normal Form of a Rotation*; only its reading in four dimensions is used here. The Hopf fibration of the unit sphere is *Quaternion Geometry*, the topology of the unit sphere and of the rotation group is *Quaternion Topology*, and the indefinite analogue of the classification, in which the circular blocks are replaced by hyperbolic ones, is *Biquaternion Rotations and Lorentz Transformations*.
+The parametrisation is not derived here. The two-sided action $\Phi_{(q_1,q_2)}(\tilde r) = q_1\tilde rq_2^{-1}$, its kernel $\{\pm(1,1)\}$ and the covering $Sp(1)\times Sp(1)\to SO(4)$ are *Quaternion Rotations and Reflections*, §*The Two-Sided Action and SO(4)*, and the group-theoretic statement $SO(4)\cong(SU(2)\times SU(2))/\{\pm1\}$ is *Matrix Groups and Classical Groups*. The normal form of an orthogonal map of a definite space is *The Rotation Group and Orientation*, §*The Normal Form of a Rotation*; only its reading in four dimensions is used here. The Hopf fibration of the unit sphere is *Quaternion Geometry*, the topology of the unit sphere and of the rotation group is *Quaternion Topology*, and the indefinite analogue of the classification, in which the circular blocks are replaced by hyperbolic ones, is *Biquaternion Rotations and Lorentz Transformations*.
 
 The treatment is mathematical throughout: a rotation is an element of $SO(4)$ and no physical object is introduced. The three names are the classical ones of the geometry of four dimensions; what is added here is their quaternion content.
 
@@ -70,7 +70,7 @@ $$
 
 **Theorem.** Every element of $SO(4)$ is $\Phi_{(\tilde q,\tilde p)}$ for some pair of unit quaternions, and the pair is determined up to the simultaneous change of sign $(\tilde q,\tilde p)\mapsto(-\tilde q,-\tilde p)$.
 
-*Proof.* This is the two-sided action and its kernel $\{\pm(1,1)\}$ of *Quaternion Rotations and Reflections*, §*The Two-Sided Action and $SO(4)$*.
+*Proof.* This is the two-sided action and its kernel $\{\pm(1,1)\}$ of *Quaternion Rotations and Reflections*, §*The Two-Sided Action and SO(4)*.
 
 Thus a rotation is exactly a pair $(\tilde q,\tilde p)$ of unit quaternions modulo the simultaneous sign, and the geometry of the rotation is the arithmetic of the pair. The rest of the article computes quantities of the rotation from the pair.
 

@@ -28,7 +28,7 @@ These are the closed subgroups of the general linear groups defined by polynomia
 | $S^1 = U(1) = SO(2)$ | $1$ | compact connected abelian; $\pi_1 = \mathbb{Z}$ | *Lie Groups* |
 | $S^3 = SU(2) = Sp(1)$ | $3$ | compact, connected and simply connected; the unit quaternions | *Lie Groups* |
 | $\operatorname{Spin}(n)$, $n \geq 3$ | $n(n-1)/2$ | compact, connected and simply connected; the double cover of $SO(n)$ | *Lie Groups*; *List of Clifford Algebras and Spin Groups* |
-| $\mathbb{B}^\times \cong GL_2(\mathbb{C})$ | $8$ | the units of the biquaternion algebra, a real Lie group | *Lie Groups*; *Biquaternion Algebra* |
+| $\mathbb{B}^\times \cong GL_2(\mathbb{C})$ | $8$ | the units of the biquaternion algebra, a real Lie group | *Lie Groups*; *Biquaternions as a Vector Space over $\mathbb{C}$* |
 
 ## The Abelian, Nilpotent and Semidirect Examples
 

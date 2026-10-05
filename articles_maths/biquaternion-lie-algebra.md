@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries a natural bracket, the commutator, and with it the structure of a Lie algebra. This article reads that structure: the algebra as $\mathrm{GL}(2,\mathbb{C})$ over $\mathbb{C}$ with its centre, the trace-free part as $\mathrm{SL}(2,\mathbb{C})$, the derived subalgebra and its identity with the vector subspace, the bracket of two vectors as twice their outer product, equivalently twice the cross product, the action of the bracket on the six distinguished subspaces, and the real form of the trace-free part with its two three-dimensional real summands. The adjoint maps close the account.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries a natural bracket, the commutator, and with it the structure of a Lie algebra. This article reads that structure: the algebra as $\mathrm{GL}(2,\mathbb{C})$ over $\mathbb{C}$ with its centre, the trace-free part as $\mathrm{SL}(2,\mathbb{C})$, the derived subalgebra and its identity with the vector subspace, the bracket of two vectors as twice their outer product, equivalently twice the cross product, the action of the bracket on the six distinguished subspaces, and the real form of the trace-free part with its two three-dimensional real summands. The adjoint maps close the account. The commutator is the antisymmetrisation of the complex bilinear product, and the same antisymmetrisation is carried out for the three other products of *The Four Biquaternion Complex Products* in §*The Brackets of the Four Products*, where it is shown that the commutator is the only one of the four that is a Lie bracket.
 
-The bracket is the infinitesimal counterpart of the group. The group of units, the exponential and its parametrisation are in *Biquaternion Lie Group and Exponential Structure*; the topology of the group is in *The Biquaternion Unit Group as a Topological Group*; and the motions the bracket generates are in *Biquaternion Rotations and Lorentz Transformations*. The algebra, its basis and its six subspaces are from *Biquaternion Algebra*, and the behaviour of the product and the bracket on each subspace is tabulated in *Biquaternion Relations Between Subspaces*, cited below.
+The bracket is the infinitesimal counterpart of the group. The group of units, the exponential and its parametrisation are in *Biquaternion Lie Group and Exponential Structure*; the topology of the group is in *The Biquaternion Unit Group as a Topological Group*; and the motions the bracket generates are in *Biquaternion Rotations and Lorentz Transformations*. The algebra, its basis and its six subspaces are from *Biquaternions as a Vector Space over $\mathbb{C}$*, the two halves of the complex bilinear product are *Decomposition of the Multiplication*, and the behaviour of the product and the bracket on each subspace is tabulated in *Biquaternion Relations Between Subspaces*, cited below.
 
 **Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.
 
@@ -72,13 +72,13 @@ In the fixed-point subspaces of the basic algebra article the first summand is g
 
 ## The Outer Product and the Cross Product
 
-The product of two biquaternions splits into the two halves of *Biquaternion Multiplication*,
+The product of two biquaternions splits into the two halves of *Decomposition of the Multiplication*,
 
 $$
 \tilde{P}\tilde{Q} = \tilde{P}\bullet\tilde{Q} + \tilde{P}\wedge\tilde{Q},
 $$
 
-the **symmetrized product** $\tilde{P}\bullet\tilde{Q}=\tfrac{1}{2}(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P})$ and the **outer product** $\tilde{P}\wedge\tilde{Q}=\tfrac{1}{2}(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P})$. The commutator is twice the outer product,
+the **symmetrised product** $\tilde{P}\bullet\tilde{Q}=\tfrac{1}{2}(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P})$ and the **outer product** $\tilde{P}\wedge\tilde{Q}=\tfrac{1}{2}(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P})$. The commutator is twice the outer product,
 
 $$
 [\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q}-\tilde{Q}\tilde{P} = 2\,\tilde{P}\wedge\tilde{Q},
@@ -108,9 +108,68 @@ Hence the **derived subalgebra** is the complex span of the vector units,
 $$
 [\mathrm{G},\mathrm{G}] = \mathrm{B}_0 = \mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\} = \mathrm{Vect}(\mathbb{B}),
 $$
-of complex dimension $3$ and real dimension $6$: the derived subalgebra is exactly the vector subspace of *Biquaternion Algebra*, and the quotient $\mathrm{G}/[\mathrm{G},\mathrm{G}]$ is the centre $\mathbb{C}e_0$ of dimension $1$ over $\mathbb{C}$.
+of complex dimension $3$ and real dimension $6$: the derived subalgebra is exactly the vector subspace of *Biquaternions as a Vector Space over $\mathbb{C}$*, and the quotient $\mathrm{G}/[\mathrm{G},\mathrm{G}]$ is the centre $\mathbb{C}e_0$ of dimension $1$ over $\mathbb{C}$.
 
-The action of the bracket on each of the six distinguished subspaces — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ — is the commutator row of the tables of *Biquaternion Relations Between Subspaces*, read there along with the product and the symmetrized product. In brief, the centre is central, $\mathrm{Vect}(\mathbb{B})$ is closed and the bracket on it is the cross product above, $\mathbb{H}_{\mathbb{B}}$ is closed with the bracket of the imaginary quaternions, the bracket carries $\mathbb{M}_+$ to $\mathbb{M}_-$ and $\mathbb{M}_-$ to itself, and the bracket of $\mathbb{M}_+$ with $\mathbb{M}_-$ carries the second back to the first; the exact signs are those tables'.
+The action of the bracket on each of the six distinguished subspaces — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ — is the commutator row of the tables of *Biquaternion Relations Between Subspaces*, read there along with the product and the symmetrised product. In brief, the centre is central, $\mathrm{Vect}(\mathbb{B})$ is closed and the bracket on it is the cross product above, $\mathbb{H}_{\mathbb{B}}$ is closed with the bracket of the imaginary quaternions, the bracket carries $\mathbb{M}_+$ to $\mathbb{M}_-$ and $\mathbb{M}_-$ to itself, and the bracket of $\mathbb{M}_+$ with $\mathbb{M}_-$ carries the second back to the first; the exact signs are those tables'.
+
+## The Brackets of the Four Products
+
+The commutator is the antisymmetrisation of the complex bilinear product,
+
+$$
+[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q}-\tilde{Q}\tilde{P} = 2\,\mathcal{A}^{\mathrm{a}}(\tilde{P},\tilde{Q}),
+$$
+
+and the antisymmetrisation is defined for any binary operation. For each of the four products of *The Four Biquaternion Complex Products* put
+
+$$
+[\tilde{P},\tilde{Q}]_f := f(\tilde{P},\tilde{Q})-f(\tilde{Q},\tilde{P}) = 2\,f^{\mathrm{a}}(\tilde{P},\tilde{Q}),
+$$
+
+so that $[\cdot,\cdot]_{\mathcal{A}}$ is the commutator of the sections above, and write $\mathcal{A},\mathcal{B},\mathcal{C},\mathcal{D}$ for the four products as in *Decomposition of the Multiplication*. Each of the four brackets is antisymmetric, $[\tilde{P},\tilde{Q}]_f=-[\tilde{Q},\tilde{P}]_f$, by construction; the four scalar–vector forms are the doubled antisymmetric halves tabulated in that article.
+
+**Theorem.** Among the four brackets exactly the commutator $[\cdot,\cdot]_{\mathcal{A}}$ satisfies the Jacobi identity.
+
+**Proof.** The commutator of an associative algebra satisfies the Jacobi identity, and the skew-symmetry was noted. For each of the other three a single triple witnesses the failure; the two sesquilinear brackets being only $\mathbb{R}$-bilinear, the identity is tested over $\mathbb{R}$ for them. The Jacobi sum
+
+$$
+J_f(\tilde{P},\tilde{Q},\tilde{R}) := \bigl[[\tilde{P},\tilde{Q}]_f,\tilde{R}\bigr]_f + \bigl[[\tilde{Q},\tilde{R}]_f,\tilde{P}\bigr]_f + \bigl[[\tilde{R},\tilde{P}]_f,\tilde{Q}\bigr]_f
+$$
+
+takes the following values.
+
+| bracket | $\tilde{P},\tilde{Q},\tilde{R}$ | $J_f$ |
+|---|---|---|
+| $[\cdot,\cdot]_{\mathcal{B}}$ | $e_0,\ e_1,\ e_2$ | $-4e_3$ |
+| $[\cdot,\cdot]_{\mathcal{C}}$ | $e_0,\ e_1,\ e_2$ | $4e_3$ |
+| $[\cdot,\cdot]_{\mathcal{D}}$ | $e_1,\ e_2,\ ie_3$ | $4ie_0$ |
+
+### The $\natural$-Bracket and the Vector Subspace
+
+The first of the three failures is the one worth stating in coordinates, because it is a failure of the extension of a bracket that is good on the vector subspace. The $\natural$-bracket is twice the vector part of the $\natural$-product,
+
+$$
+[\tilde{P},\tilde{Q}]_{\mathcal{B}} = 2\,\mathrm{Vec}\bigl(\tilde{P}^{\natural}\tilde{Q}\bigr)
+= 2\bigl(P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}\bigr),
+$$
+
+the three terms of which are the two mixed terms and the cross term. On the vector subspace the mixed terms drop and
+
+$$
+[\mathbf{P},\mathbf{Q}]_{\mathcal{B}} = -2\,\mathbf{P}\times\mathbf{Q} = -\,[\mathbf{P},\mathbf{Q}]_{\mathcal{A}} ,
+$$
+
+so on $\mathrm{Vect}(\mathbb{B})$ the two bilinear brackets are the two signs of the same cross product, and each of them is a Lie bracket there. The failure of the Jacobi identity on the whole algebra is carried by the two mixed terms, which are exactly the two terms that the commutator loses because it depends on the vector parts alone.
+
+### The Two Sesquilinear Brackets
+
+The two sesquilinear brackets are not Lie brackets twice over: they are not even $\mathbb{C}$-bilinear, since the antisymmetrisation of a sesquilinear product is linear in one slot and conjugate-linear in the other, so no complex Lie algebra can be read from them. Their values are also confined. The $\mathcal{C}$-bracket is the difference of the two values of the star-product, hence twice the skew-Hermitian part of either of them, and it takes its values in the anti-Hermitian subspace $\mathbb{M}_-$:
+
+$$
+[\tilde{P},\tilde{Q}]_{\mathcal{C}} = \mathcal{C}(\tilde{P},\tilde{Q})-\mathcal{C}(\tilde{Q},\tilde{P}) \in \mathbb{M}_- .
+$$
+
+The $\mathcal{D}$-bracket takes its values in neither $\mathbb{M}_+$ nor $\mathbb{M}_-$. Of the four brackets only the commutator is a bracket on the whole algebra, its derived subalgebra being the vector subspace of the sections above; the $\natural$-bracket agrees with it up to sign on that subspace and nowhere else, and the two sesquilinear brackets lie outside the complex bilinear world altogether.
 
 ## The Real Structure and the Adjoint Maps
 
@@ -128,11 +187,15 @@ Under the commutator $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P
 
 The derived subalgebra is the vector subspace itself, $[\mathrm{G},\mathrm{G}]=\mathrm{Vect}(\mathbb{B})$, so the algebra is not solvable; the bracket of two pure vectors is twice their outer product, equivalently twice their cross product, $[\mathbf{P},\mathbf{Q}]=2\,\mathbf{P}\wedge\mathbf{Q}=2\,\mathbf{P}\times\mathbf{Q}$. Over $\mathbb{R}$ the trace-free part is the sum of the two three-dimensional real summands $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ and $\mathrm{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$, and on the first the bracket is twice the cross product.
 
+The commutator is the antisymmetrisation of the complex bilinear product, and the antisymmetrisation of the three other products of *The Four Biquaternion Complex Products* gives three further antisymmetric brackets $[\tilde{P},\tilde{Q}]_f=f(\tilde{P},\tilde{Q})-f(\tilde{Q},\tilde{P})=2f^{\mathrm{a}}(\tilde{P},\tilde{Q})$. Exactly the commutator satisfies the Jacobi identity; the other three fail it, at $(e_0,e_1,e_2)$ with $-4e_3$ for the $\natural$-product, at $(e_0,e_1,e_2)$ with $4e_3$ for the star-product, and at $(e_1,e_2,ie_3)$ with $4ie_0$ for the quaternionic sesquilinear product. The $\natural$-bracket is twice the vector part of the $\natural$-product and agrees with the commutator up to sign on the vector subspace, $-2\,\mathbf{P}\times\mathbf{Q}$, and nowhere else; the two sesquilinear brackets are not even $\mathbb{C}$-bilinear, and the star one takes its values in $\mathbb{M}_-$.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$ | Commutator bracket; $\mathbb{B}$ is a complex Lie algebra under it |
+| $[\tilde{P},\tilde{Q}]_f=f(\tilde{P},\tilde{Q})-f(\tilde{Q},\tilde{P})$ | the bracket of a product $f$; only the commutator is a Lie bracket |
+| $\mathcal{A},\mathcal{B},\mathcal{C},\mathcal{D}$ | the four products as binary operations, $\tilde{P}\tilde{Q}$, $\tilde{P}^{\natural}\tilde{Q}$, $\tilde{P}\tilde{Q}^{*}$, $\tilde{P}^{\natural}\tilde{Q}^{*}$ |
 | $\mathrm{G}=\mathbb{B}$ | The algebra as a Lie algebra; complex dimension $4$, real dimension $8$ |
 | $\mathrm{Tr}(\tilde{Q})=2Q_0$ | Trace functional |
 | $\mathrm{B}_0=\{Q_0=0\}$ | Trace-free subalgebra; $\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$; $\mathrm{SL}(2,\mathbb{C})$ |
@@ -151,3 +214,4 @@ The derived subalgebra is the vector subspace itself, $[\mathrm{G},\mathrm{G}]=\
 - John Stillwell, *Naive Lie Theory* (Springer, 2008).
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997).
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001).
+- The companion articles of this series: *The Four Biquaternion Complex Products*, *Decomposition of the Multiplication*, *Biquaternion Jordan Algebra*, and *Biquaternion Relations Between Subspaces*, for the four products, the four antisymmetric halves, the symmetrisation on the other side, and the subspace table.
