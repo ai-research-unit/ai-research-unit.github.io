@@ -56,13 +56,13 @@
 <p>The distinction the whole tabulation is built on is the collapse of <em>Sesquialgebras</em>, §<em>The Collapse at the Identity</em>: a sesquialgebra with $\varsigma = \mathrm{id}$ <strong>is</strong> an ordinary algebra, and every ordinary algebra is a sesquialgebra for the trivial involution. An example is therefore genuinely sesquilinear exactly when its datum has $\varsigma \neq \mathrm{id}$, and an example read over the trivial involution is a bilinear example, however sesquilinear the product looks in coordinates. The same algebra appears twice in the list when it carries both readings, and the two entries are different objects of the category, because the involution is part of the datum. The collapse also supplies the sharp test of the list: by the theorem of that section an object of full type with $\varsigma \neq \mathrm{id}$ is <strong>neither associative nor commutative</strong>, so every associative entry of the table below is either a collapsed one or fails full type.</p>
 <p>Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and an involution of an algebra is written ${}^{*}$; the product of a sesquialgebra is the <strong>derived operation</strong> $x\star y = xy^{*}$ of an associative algebra with an involution wherever the example is of that standard form, and the product by juxtaposition is the algebra product. The number systems are those of the shared conventions: $\mathbb{C}$ over $\mathbb{R}$ with the conjugation, the split complex numbers $\mathbb{D}$ with unit $j$, $j^2 = +1$, the dual numbers $\mathbb{D}'$ with unit $\varepsilon$, $\varepsilon^2 = 0$ the quaternions $\mathbb{H}$ with conjugation ${}^{\natural}$, and the biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the star ${}^{*} = \bar{\cdot}\circ{}^{\natural}$. The definition and the collapse are <em>Sesquialgebras</em>; the derived operation and its parities are <em>The Sesquilinear Product</em>; the involutions of the object are <em>The Involutions of a Sesquialgebra</em>; the matrix example is <em>Matrix Sesquialgebras</em>; the biquaternion example is <em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em>; the endomorphism example is <em>The Sesquilinear Structure of the Endomorphism Algebra</em>; and the products are <em>Tensor Products of Sesquialgebras</em> and <em>Direct Products of Sesquialgebras</em>. The article stays inside the algebra: no distance and no continuity occurs.</p>
 <h2 id="the-data-table">The Data Table</h2>
-<p>The table is the summary; each row is justified in the sections below. In the last two columns "right" means that $1$ is a right unit and not a left one, and "no" means that there is no unit of either kind.</p>
+<p>The table is the summary; each row is justified in the sections below.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Example</th>
 <th>datum $(R,\varsigma)$</th>
-<th>involution</th>
+<th>involution / twist</th>
 <th>product $\star$</th>
 <th>associative</th>
 <th>commutative</th>
@@ -74,7 +74,7 @@
 <tr>
 <td>a field $K$</td>
 <td>$(K,\varsigma)$</td>
-<td>the datum only</td>
+<td>second slot $\varsigma$</td>
 <td>$x\,\varsigma(y)$</td>
 <td>iff $\varsigma = \mathrm{id}$</td>
 <td>iff $\varsigma = \mathrm{id}$</td>
@@ -84,7 +84,7 @@
 <tr>
 <td>$\mathbb{C}$</td>
 <td>$(\mathbb{C},\text{conj})$</td>
-<td>conjugation</td>
+<td>second slot conjugation</td>
 <td>$x\bar y$</td>
 <td>no</td>
 <td>no</td>
@@ -94,7 +94,7 @@
 <tr>
 <td>$\mathbb{C}$</td>
 <td>$(\mathbb{R},\mathrm{id})$</td>
-<td>conjugation</td>
+<td>second slot conjugation</td>
 <td>$x\bar y$</td>
 <td>no</td>
 <td>no</td>
@@ -104,7 +104,7 @@
 <tr>
 <td>$\mathbb{D}$, $\mathbb{D}'$</td>
 <td>$(\mathbb{R},\mathrm{id})$</td>
-<td>an $\mathbb{R}$-linear one</td>
+<td>second slot ${}^{*}$</td>
 <td>$xy^{*}$</td>
 <td>iff $* = \mathrm{id}$</td>
 <td>iff $* = \mathrm{id}$</td>
@@ -114,7 +114,7 @@
 <tr>
 <td>$\mathbb{H}$</td>
 <td>$(\mathbb{R},\mathrm{id})$</td>
-<td>${}^{\natural}$</td>
+<td>second slot ${}^{\natural}$</td>
 <td>$x\,{}^{\natural}y$</td>
 <td>no</td>
 <td>no</td>
@@ -124,7 +124,7 @@
 <tr>
 <td>$M_n(\mathbb{C})$, $n \geq 2$</td>
 <td>$(\mathbb{C},\text{conj})$</td>
-<td>conjugate transpose</td>
+<td>second slot ${}^{*} = \overline{X}^{T}$</td>
 <td>$ST^{*}$</td>
 <td>no</td>
 <td>no</td>
@@ -134,7 +134,7 @@
 <tr>
 <td>$\mathbb{B}$</td>
 <td>$(\mathbb{C},\text{conj})$</td>
-<td>$*$</td>
+<td>second slot $*$</td>
 <td>$PQ^{*}$</td>
 <td>no</td>
 <td>no</td>
@@ -144,7 +144,7 @@
 <tr>
 <td>$\mathbb{B}$</td>
 <td>$(\mathbb{C},\mathrm{id})$</td>
-<td>$\mathrm{id}$</td>
+<td>trivial</td>
 <td>$PQ$</td>
 <td>yes</td>
 <td>no</td>
@@ -154,18 +154,18 @@
 <tr>
 <td>$\mathbb{B}$</td>
 <td>$(\mathbb{C},\mathrm{id})$</td>
-<td>${}^{\natural}$</td>
-<td>$P\,{}^{\natural}Q$</td>
+<td>first slot ${}^{\natural}$</td>
+<td>${}^{\natural}PQ$</td>
 <td>no</td>
 <td>no</td>
-<td>none</td>
+<td>left</td>
 <td>yes</td>
 </tr>
 <tr>
 <td>$\mathbb{B}$</td>
 <td>$(\mathbb{C},\text{conj})$</td>
-<td>$*$</td>
-<td>$P\,{}^{\natural}Q^{*}$</td>
+<td>first slot ${}^{\natural}$, second slot $*$</td>
+<td>${}^{\natural}PQ^{*}$</td>
 <td>no</td>
 <td>no</td>
 <td>none</td>
@@ -174,7 +174,7 @@
 <tr>
 <td>$R[G]$</td>
 <td>$(R,\varsigma)$</td>
-<td>$g \mapsto g^{-1}$</td>
+<td>second slot $g \mapsto g^{-1}$</td>
 <td>$xy^{*}$</td>
 <td>only $\varsigma = \mathrm{id}$, $G$ of exponent two</td>
 <td>same</td>
@@ -193,16 +193,17 @@
 </tr>
 </tbody>
 </table></div>
+<p>In the column <strong>involution / twist</strong> the involution named is the one carried by the second slot in the derived form $x\star y = xy^{*}$, and "first slot ${}^{\natural}$" records that the product is not of the derived form but twists its first slot by the $\mathbb{C}$-linear ${}^{\natural}$, as the biquaternion entries below explain. In the column <strong>unit</strong>, "right" means that $e_0$ is a right unit and not a left one, "left" means that $e_0$ is a left unit and not a right one, and "none" means that there is no unit of either kind.</p>
 <h2 id="the-field-with-its-involution">The Field with Its Involution</h2>
 <p><strong>Example.</strong> Let $K$ be a field with an involution $\varsigma$ and let $A = K$ with the product $x\star y = x\,\varsigma(y)$. The product is $K$-linear in the first slot and $\varsigma$-semilinear in the second, so $K$ is a sesquialgebra over $(K,\varsigma)$, and its associator is</p>
 <p>$$
 (x\star y)\star z - x\star(y\star z) = x\bigl(\varsigma(zy) - z\,\varsigma(y)\bigr) = x\,\varsigma(y)\bigl(\varsigma(z) - z\bigr) .
 $$</p>
 <p>The associator vanishes for all $x, y, z$ exactly when $\varsigma = \mathrm{id}$ (take $y = 1$), and the same test with the commutator shows that the product is commutative on the same condition. The element $1$ is a right unit, $z\star1 = z$, and it is not a left unit when $\varsigma \neq \mathrm{id}$, since $1\star z = \varsigma(z)$. This is the smallest genuinely sesquilinear example, and it is the one the collapse theorem is read on: the field is faithful over itself with generating products, so it is of full type, and it is neither associative nor commutative as soon as the involution is nontrivial.</p>
-<p><strong>Example (the complex numbers).</strong> With $K = \mathbb{C}$ and $\varsigma$ the conjugation the product is $x\star y = x\bar y$, the standard sesquilinear product on the plane, not associative and not commutative, with $1$ a right unit and no two-sided one. This is the case $n = 1$ of the matrix example below, and the simplest instance of the collapse: read over $(\mathbb{C},\varsigma)$ it is genuinely sesquilinear, while read over $(\mathbb{R},\mathrm{id})$ the same product is $\mathbb{R}$-bilinear and the object is an ordinary, non-associative real algebra on two generators. The two readings are <em>Real Forms of a Sesquialgebra</em>.</p>
+<p><strong>Example (the complex numbers).</strong> With $K = \mathbb{C}$ and $\varsigma$ the conjugation the product is $x\star y = x\bar y$, the standard sesquilinear product on the plane, not associative and not commutative, with $1$ a right unit and no two-sided one. This is the case $n = 1$ of the matrix example below, and the simplest instance of the collapse: read over $(\mathbb{C},\varsigma)$ it is genuinely sesquilinear, while read over $(\mathbb{R},\mathrm{id})$ the same product is $\mathbb{R}$-bilinear and the object is an ordinary, non-associative real algebra of rank two. The two readings are <em>Real Forms of a Sesquialgebra</em>.</p>
 <h2 id="the-real-algebras-and-the-collapse">The Real Algebras and the Collapse</h2>
 <h3 id="the-split-complex-and-the-dual-numbers">The Split Complex and the Dual Numbers</h3>
-<p><strong>Example.</strong> Let $A$ be $\mathbb{D}$, $\mathbb{D}'$ or any real algebra, with an $\mathbb{R}$-linear involution ${}^{*}$ and the derived product $x\star y = xy^{*}$. The datum is $(\mathbb{R},\mathrm{id})$, the second scalar rule is the first, the product is $\mathbb{R}$-bilinear, and the object is an ordinary real algebra: this is the collapse of the category, and every statement about it is a statement about algebras. The derived operation is associative exactly when $xy^{*}$ is the algebra product, that is exactly when ${}^{*} = \mathrm{id}$; for the involution $j\mapsto -j$ of $\mathbb{D}$ it is not, and the failure is the same one as over the complex numbers. The products of the split complex numbers are the prototypes of the two-dimensional entries, and the idempotents $e_{\pm} = \tfrac12(1\pm j)$ are Hermitian for $j\mapsto -j$, since the involution fixes $j$ and $1$.</p>
+<p><strong>Example.</strong> Let $A$ be $\mathbb{D}$, $\mathbb{D}'$ or any real algebra, with an $\mathbb{R}$-linear involution ${}^{*}$ and the derived product $x\star y = xy^{*}$. The datum is $(\mathbb{R},\mathrm{id})$, the second scalar rule is the first, the product is $\mathbb{R}$-bilinear, and the object is an ordinary real algebra: this is the collapse of the category, and every statement about it is a statement about algebras. The derived operation is associative exactly when $xy^{*}$ is the algebra product, that is exactly when ${}^{*} = \mathrm{id}$; for the involution $j\mapsto -j$ of $\mathbb{D}$ it is not, and the failure is the same one as over the complex numbers. The products of the split complex numbers are the prototypes of the rank-two entries, and the idempotents $e_{\pm} = \tfrac12(1\pm j)$ are Hermitian for $j\mapsto -j$, since the involution fixes $j$ and $1$.</p>
 <h3 id="the-quaternions">The Quaternions</h3>
 <p><strong>Example.</strong> Let $A = \mathbb{H}$ with the quaternion conjugation ${}^{\natural}$ over $(\mathbb{R},\mathrm{id})$ and the derived product $x\star y = x\,{}^{\natural}y$. The involution is $\mathbb{R}$-linear and anti-multiplicative, the product is $\mathbb{R}$-bilinear, and the object is the collapsed one: an ordinary, non-associative real algebra. It is not associative, because $x\,{}^{\natural}y$ is not the quaternion product, and it is not commutative, since $1\star e_1 = -e_1$ while $e_1\star1 = e_1$. The Hermitian elements are the real line, $H(\mathbb{H}) = \mathbb{R}\cdot1$, and $\mathbb{H}$ is a division algebra for its own product, so this is also the division example of the list: an object of full type whose underlying algebra is a division algebra, in contrast with the matrix example below, whose underlying algebra has zero divisors.</p>
 <h2 id="the-matrix-algebra">The Matrix Algebra</h2>
@@ -218,11 +219,11 @@ $$</p>
 <h3 id="the-star-and-the-derived-operation">The Star and the Derived Operation</h3>
 <p><strong>Example.</strong> Let $A = \mathbb{B}$ over $(\mathbb{C},\varsigma)$ with the star ${}^{*} = \bar{\cdot}\circ{}^{\natural}$, the conjugate-linear involution that conjugates the coefficients and negates the quaternion units, and the derived product $P\star Q = PQ^{*}$. The product is conjugate-linear in the second slot, not associative and not commutative, with $e_0$ a right unit and no two-sided one, and the object is of full type. It is the corpus's own algebra, and through the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ of <em>Matrix Sesquialgebras</em> it is the case $n = 2$ of the matrix example, the star being the conjugate transpose: so it is simple, it has zero divisors, and its Hermitian elements are the matrices that the model sends to the Hermitian ones.</p>
 <h3 id="the-linear-conjugation-and-the-bilinear-twist">The Linear Conjugation and the Bilinear Twist</h3>
-<p><strong>Example.</strong> Let $A = \mathbb{B}$ over $(\mathbb{C},\mathrm{id})$ with the quaternion conjugation ${}^{\natural}$ and the product $P\,{}^{\natural}Q$. This is the caution of <em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em> read as an entry of the table: ${}^{\natural}$ is $\mathbb{C}$-<strong>linear</strong>, since it fixes the complex scalars, so a slot twisted by it is still $\mathbb{C}$-linear, the product is $\mathbb{C}$-bilinear, and the datum is $(\mathbb{C},\mathrm{id})$. The product is not associative and has no unit at all, since $P\,{}^{\natural}Q$ with $Q = e_0$ gives ${}^{\natural}P$. The entry is in the list because it is the example that decides the shape of the definition: a product whose <strong>second</strong> slot carries the star is sesquilinear for the conjugation whatever the first slot carries, while a product whose second slot carries ${}^{\natural}$ is bilinear, and the two are told apart by the datum and not by the coordinates.</p>
+<p><strong>Example.</strong> Let $A = \mathbb{B}$ over $(\mathbb{C},\mathrm{id})$ with the quaternion conjugation ${}^{\natural}$ carried by the <strong>first</strong> slot, and the product ${}^{\natural}PQ$. This is the caution of <em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em> read as an entry of the table: ${}^{\natural}$ is $\mathbb{C}$-<strong>linear</strong>, since it fixes the complex scalars, so a slot read through it is still $\mathbb{C}$-linear, the product is $\mathbb{C}$-bilinear, and the datum is $(\mathbb{C},\mathrm{id})$. The product is not associative, and it has a left unit and no right one: the product with $P = e_0$ is $Q$, while the product with $Q = e_0$ is ${}^{\natural}P$, so $e_0$ acts on the left and not on the right. The entry is in the list because it fixes the shape of the definition: the conjugation that makes a product sesquilinear is the conjugate-linear ${}^{*}$, a product whose <strong>second</strong> slot carried ${}^{\natural}$ in its place would be bilinear, and a product whose second slot carries ${}^{*}$ is sesquilinear whatever its first slot carries.</p>
 <h3 id="the-four-products">The Four Products</h3>
-<p><strong>Example.</strong> The four products of <em>The Four Biquaternion Complex Products</em> are read in the table as four entries on one algebra: the algebra product $PQ$, the linear twist $P\,{}^{\natural}Q$, the derived operation $PQ^{*}$, and the mixed product $P\,{}^{\natural}Q^{*}$. The first two are $\mathbb{C}$-bilinear and belong to $(\mathbb{C},\mathrm{id})$, the second two are conjugate-linear in the second slot and belong to $(\mathbb{C},\varsigma)$. Each of the four makes $\mathbb{B}$ a sesquialgebra for its own datum — associativity is not one of the axioms, and the two scalar rules alone do not separate the four — and exactly one of them, $PQ^{*}$, is the derived operation of the algebra with a conjugate-linear involution, the criterion being the two conditions (i) and (ii) of the article named. This is the sharpest warning of the list against identifying an object with its product: the algebra is one, the products are four, and the datum and the derived form are the data that tell them apart.</p>
+<p><strong>Example.</strong> The four products of <em>The Four Biquaternion Complex Products</em> are read in the table as four entries on one algebra: the algebra product $PQ$, the linear twist ${}^{\natural}PQ$, the derived operation $PQ^{*}$, and the mixed product ${}^{\natural}PQ^{*}$. The first two are $\mathbb{C}$-bilinear and belong to $(\mathbb{C},\mathrm{id})$, the second two are conjugate-linear in the second slot and belong to $(\mathbb{C},\varsigma)$. Each of the four makes $\mathbb{B}$ a sesquialgebra for its own datum — associativity is not one of the axioms, and the two scalar rules alone do not separate the four — and exactly one of them, $PQ^{*}$, is the derived operation of the algebra with a conjugate-linear involution; the two conditions that single it out are those of <em>Biquaternions as a Sesquialgebra over $\mathbb{C}$</em>. This is the sharpest warning of the list against identifying an object with its product: the algebra is one, the products are four, and the datum and the derived form are the data that tell them apart.</p>
 <h2 id="the-group-algebra">The Group Algebra</h2>
-<h3 id="the-involution-math182">The Involution $g \mapsto g^{-1}$</h3>
+<h3 id="the-involution-math194">The Involution $g \mapsto g^{-1}$</h3>
 <p><strong>Example.</strong> Let $A = R[G]$ be the group algebra of a group $G$ over $R$, with the involution</p>
 <p>$$
 \Bigl(\sum_g a_g\,g\Bigr)^{*} = \sum_g \varsigma(a_g)\,g^{-1} ,
@@ -302,7 +303,7 @@ $$</p>
 <ul>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the classification and the examples of the algebras that the collapsed entries are read on.</li>
 <li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the involutions of the classical algebras and their semilinear counterparts.</li>
-<li>Kenneth R. Goodearl and Robert B. Warfield, Jr., <em>An Introduction to Noncommutative Noetherian Rings</em> (Cambridge University Press, second edition, 2004), for the group algebras, their involutions and their units.</li>
+<li>Donald S. Passman, <em>The Algebraic Structure of Group Rings</em> (Wiley, 1977), for the group algebras, their units and their zero divisors.</li>
 </ul>
       </div>
     </main>
