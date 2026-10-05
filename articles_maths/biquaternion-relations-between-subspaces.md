@@ -198,4 +198,4 @@ The six distinguished subspaces of $\mathbb{B}$ are organized by three decomposi
 - *Decompositions Along the Six Subspaces* (`articles_maths/decompositions-along-the-six-subspaces.md`), for the three decompositions in their original setting
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, its basis and its conjugations in their original setting
 - *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product and its scalar–vector form in their original setting
-- *Decomposition of the Multiplication* (`articles_maths/decomposition-of-the-multiplication.md`), for the two halves, the commutativity criterion and the symmetrized product
+- *Decomposition of the Biquaternion Complex Products* (`articles_maths/decomposition-of-the-biquaternion-complex-products.md`), for the two parts, the commutativity criterion and the symmetrized product

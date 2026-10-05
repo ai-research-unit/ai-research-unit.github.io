@@ -126,7 +126,7 @@ $$
 
 **Theorem (Skolem–Noether, quoted).** If $A$ is a finite-dimensional central simple algebra over a field $F$, then every $F$-algebra automorphism of $A$ is inner: $\operatorname{Aut}_F(A) = \operatorname{Inn}(A)$ and $\operatorname{Out}(A) = 1$.
 
-**Remark.** This is the sharpest calibration of the inner automorphism group: it says that for the central simple algebras the outer automorphism group vanishes and the whole automorphism group is accounted for by conjugation. Its statement and proof belong to *Automorphisms and Derivations of Algebras*, in the category *Bilinear Algebras*, where the Skolem–Noether theorem is established; it is quoted here only to mark the boundary of the ring-level theory. For a general ring the outer automorphisms can be large, and the quotients of the number-system algebras are computed in that article.
+**Remark.** This is the sharpest calibration of the inner automorphism group: it says that for the central simple algebras the outer automorphism group vanishes and the whole automorphism group is accounted for by conjugation. Its statement and proof belong to *Automorphisms and Derivations of Algebras*, in the category *Algebras*, where the Skolem–Noether theorem is established; it is quoted here only to mark the boundary of the ring-level theory. For a general ring the outer automorphisms can be large, and the quotients of the number-system algebras are computed in that article.
 
 ## Examples
 

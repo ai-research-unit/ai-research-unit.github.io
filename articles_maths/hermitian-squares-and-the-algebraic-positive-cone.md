@@ -4,7 +4,7 @@
 
 An element of the form $x^{*}x$ is Hermitian, and the sums of such elements form the smallest set that contains all of them and is closed under addition. That set is the **algebraic positive cone** of the algebra, and it is the part of the algebra whose elements are the sums of Hermitian squares.
 
-Throughout, $A$ is an associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that the derived operation $x \star y = xy^{*}$ of *Sesquilinear Algebras* makes $(A,\star)$ a sesquilinear algebra. The underlying associative product is written by juxtaposition, and it is the product for which $*$ is anti-multiplicative, $(xy)^{*} = y^{*}x^{*}$. The squares $x^{*}x$ and $xx^{*}$ are Hermitian by *Hermitian and Skew-Hermitian Elements*, and $xx^{*} = x \star x$ is the square of $x$ in the derived operation, so the cone can be read either from the involution or from the sesquilinear product.
+Throughout, $A$ is an associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that the derived operation $x \star y = xy^{*}$ of *Sesquialgebras* makes $(A,\star)$ a sesquialgebra. The underlying associative product is written by juxtaposition, and it is the product for which $*$ is anti-multiplicative, $(xy)^{*} = y^{*}x^{*}$. The squares $x^{*}x$ and $xx^{*}$ are Hermitian by *Hermitian and Skew-Hermitian Elements*, and $xx^{*} = x \star x$ is the square of $x$ in the derived operation, so the cone can be read either from the involution or from the sesquilinear product.
 
 What is added here: the definition of the cone and its elementary closures, the scalars that preserve it, its invariance under the congruence $c \mapsto x^{*}cx$, the preorder that it defines together with the properness that makes the preorder partial, and the matrix model, which is proper, against two non-proper examples.
 
@@ -88,7 +88,7 @@ because $(yx)^{*} = x^{*}y^{*}$. The left side is a Hermitian square, hence an e
 
 **Proof.** Let $c = \sum_{i=1}^{n} x_i^{*}x_i \in C(A)$ be nonzero. Some $x_i$ is nonzero, so $f(x_i^{*}x_i) > 0$, and $f(c) = \sum_{i} f(x_i^{*}x_i) \geq f(x_i^{*}x_i) > 0$. Now if $c \in C(A) \cap (-C(A))$ then $f(c) \geq 0$ because $c \in C(A)$, and $f(c) \leq 0$ because $-c \in C(A)$ and $f$ is additive with $f(0) = 0$; hence $f(c) = 0$, which by the first part forces $c = 0$. $\square$
 
-**Remark.** The criterion reduces properness to a single additive map that is strictly positive on the nonzero squares. There is no such map for free: the existence of one is exactly what the non-proper examples below lack, and the maps of the criterion are the positive functionals of the algebra that are strict on the nonzero squares, of which one instance is computed below. This is the precise sense in which no order and no inequality are available at this layer: the cone and the preorder it defines are supplied by the algebra alone, but properness is a condition on the cone and not a theorem about it, so a genuine order is present only when an additional positivity is supplied, and the general sesquilinear algebra carries none.
+**Remark.** The criterion reduces properness to a single additive map that is strictly positive on the nonzero squares. There is no such map for free: the existence of one is exactly what the non-proper examples below lack, and the maps of the criterion are the positive functionals of the algebra that are strict on the nonzero squares, of which one instance is computed below. This is the precise sense in which no order and no inequality are available at this layer: the cone and the preorder it defines are supplied by the algebra alone, but properness is a condition on the cone and not a theorem about it, so a genuine order is present only when an additional positivity is supplied, and the general sesquialgebra carries none.
 
 ## The Matrix Model and Two Non-Proper Examples
 
@@ -104,7 +104,7 @@ $$
 
 a sum of squares of moduli, hence a nonnegative real number, and it is $0$ only when every entry of $x$ vanishes, that is only for $x = 0$. The criterion above applies with $K = \mathbb{R}$, so the cone is proper. $\square$
 
-**Remark.** The computation is the standard one and is carried out for all the matrix algebras of the category in *Matrix Sesquilinear Algebras*; the real part of the trace is the additive map that the criterion requires, and it is strictly positive on the nonzero squares because the entries of $x$ appear in it squared.
+**Remark.** The computation is the standard one and is carried out for all the matrix algebras of the category in *Matrix Sesquialgebras*; the real part of the trace is the additive map that the criterion requires, and it is strictly positive on the nonzero squares because the entries of $x$ appear in it squared.
 
 ### Two Non-Proper Cones
 

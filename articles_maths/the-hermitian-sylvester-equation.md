@@ -142,4 +142,4 @@ The Sylvester equation $\tilde A\tilde P+\tilde P\tilde B=c$ on the biquaternion
 - *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the sandwich, its invariants and the congruence.
 - *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the derivations, the roots and the exponential.
 - *Self-Adjoint and Skew Operators with Hermitian Adjoint* (`articles_maths/self-adjoint-and-skew-operators-with-hermitian-adjoint.md`), for the general theory of the adjoint on an operator algebra.
-- *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the commutator, the roots and the Lie structure of the algebra.
+- *Biquaternion Lie Algebras* (`articles_maths/biquaternion-lie-algebras.md`), for the commutator, the roots and the Lie structure of the algebra.

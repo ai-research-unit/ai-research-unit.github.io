@@ -21,7 +21,7 @@ Each layer of the object ladder carries its own category, whose objects are the 
 | $\mathbf{Mod}\text{-}R$, $R\text{-}\mathbf{mod}$ | right modules; finitely generated left modules | *Module Categories* |
 | $\mathbf{Vect}_F$ | vector spaces over a field and linear maps | *Vector Spaces* |
 | $R\text{-}\mathbf{Alg}$ | $R$-algebras and algebra homomorphisms | *Algebras* |
-| $\mathsf{CAlg}_R$ | commutative unital $R$-algebras | *The Symmetric Algebra* |
+| $\mathsf{CAlg}_R$ | commutative unital $R$-algebras | *The Symmetric Algebra of a Module* |
 
 ## Functors and Natural Transformations
 

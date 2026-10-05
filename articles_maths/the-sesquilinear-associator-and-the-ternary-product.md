@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The product of a $\varsigma$-sesquilinear algebra is linear in the first slot and $\varsigma$-semilinear in the second, and this asymmetry makes associativity an unstable condition: for an algebra of full type with a nontrivial involution the product is **never** associative, by the collapse of *Sesquilinear Algebras*. What measures the failure is the **associator** $[x,y,z] = (x \star y) \star z - x \star (y \star z)$, and what the failure forces is the **ternary product**, the three-variable operation on which the identities that the binary product cannot carry are read.
+The product of a sesquialgebra is linear in the first slot and $\varsigma$-semilinear in the second, and this asymmetry makes associativity an unstable condition: for an algebra of full type with a nontrivial involution the product is **never** associative, by the collapse of *Sesquialgebras*. What measures the failure is the **associator** $[x,y,z] = (x \star y) \star z - x \star (y \star z)$, and what the failure forces is the **ternary product**, the three-variable operation on which the identities that the binary product cannot carry are read.
 
-This article computes the associator of a general sesquilinear product and records the **twist** it carries: the two groupings of the variables are trilinear on two **different** modules, so the associator is a difference of two trilinear maps and not a trilinear map itself. It then describes the passage to the ternary product, whose parity is the ternary form of the binary one and which determines the binary product in return. The associator of the derived operation $x \star y = xy^{*}$, its value $x\bigl((zy)^{*} - zy^{*}\bigr)$ and the associativity criterion are proved in *Sesquilinear Algebras* and are recalled here in the associator notation; the ternary product and its Jordan triple identity are in the same article, and what is added here is the parity of the associator, the twisted-trilinear form of the two groupings, and the recovery of the binary product from the ternary one.
+This article computes the associator of a general sesquilinear product and records the **twist** it carries: the two groupings of the variables are trilinear on two **different** modules, so the associator is a difference of two trilinear maps and not a trilinear map itself. It then describes the passage to the ternary product, whose parity is the ternary form of the binary one and which determines the binary product in return. The associator of the derived operation $x \star y = xy^{*}$, its value $x\bigl((zy)^{*} - zy^{*}\bigr)$ and the associativity criterion are proved in *Sesquialgebras* and are recalled here in the associator notation; the ternary product and its Jordan triple identity are in the same article, and what is added here is the parity of the associator, the twisted-trilinear form of the two groupings, and the recovery of the binary product from the ternary one.
 
-Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and $A$ is an $R$-module with a $\varsigma$-sesquilinear product $\star$; the conjugate module $A^{\varsigma}$ and the convention that the product is the bilinear map $A \times A^{\varsigma} \to A$ are those of *Sesquilinear Algebras* and *The Sesquilinear Product*.
+Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and $A$ is an $R$-module with a $\varsigma$-sesquilinear product $\star$; the conjugate module $A^{\varsigma}$ and the convention that the product is the bilinear map $A \times A^{\varsigma} \to A$ are those of *Sesquialgebras* and *The Sesquilinear Product*.
 
 ## The Associator
 
@@ -46,7 +46,7 @@ which is neither $\lambda [x,y,z]$ nor $\varsigma(\lambda)[x,y,z]$ unless $[x,y,
 
 **Corollary.** An algebra of full type with a nontrivial involution is not associative; its associator is not identically zero, and the two trilinear groupings $A$ and $B$, which live on two different modules, are distinct maps.
 
-**Proof.** The collapse theorem of *Sesquilinear Algebras*: associativity forces $\varsigma = \mathrm{id}$ for an algebra of full type. So with $\varsigma \neq \mathrm{id}$ the product is not associative, and by the proposition above the associator does not vanish identically, which is $A \neq B$ somewhere. $\square$
+**Proof.** The collapse theorem of *Sesquialgebras*: associativity forces $\varsigma = \mathrm{id}$ for an algebra of full type. So with $\varsigma \neq \mathrm{id}$ the product is not associative, and by the proposition above the associator does not vanish identically, which is $A \neq B$ somewhere. $\square$
 
 ### The Associator of the Derived Product
 
@@ -58,9 +58,9 @@ $$
 
 which is $R$-linear in $x$ and $\varsigma$-semilinear in $y$, in agreement with the general theorem.
 
-**Proof.** This is the associator proposition of *Sesquilinear Algebras*, read in the present notation: $(x \star y) \star z = xy^{*}z^{*}$ and $x \star (y \star z) = xz y^{*}$, whose difference is $x(y^{*}z^{*} - zy^{*}) = x((zy)^{*} - zy^{*})$. $\square$
+**Proof.** This is the associator proposition of *Sesquialgebras*, read in the present notation: $(x \star y) \star z = xy^{*}z^{*}$ and $x \star (y \star z) = xz y^{*}$, whose difference is $x(y^{*}z^{*} - zy^{*}) = x((zy)^{*} - zy^{*})$. $\square$
 
-**Corollary.** The derived operation is associative if and only if $x\bigl((zy)^{*} - zy^{*}\bigr) = 0$ for all $x, y, z$. For an $A$ with zero left annihilator this is the condition $(zy)^{*} = zy^{*}$ for all $y, z$, and for a unital $A$ it holds if and only if the involution is the identity; the proof is in *Sesquilinear Algebras*.
+**Corollary.** The derived operation is associative if and only if $x\bigl((zy)^{*} - zy^{*}\bigr) = 0$ for all $x, y, z$. For an $A$ with zero left annihilator this is the condition $(zy)^{*} = zy^{*}$ for all $y, z$, and for a unital $A$ it holds if and only if the involution is the identity; the proof is in *Sesquialgebras*.
 
 **Remark.** Two readings of the same proposition: the derived operation of a unital algebra with a nontrivial involution is never associative, and its associator is $R$-linear in the first variable, $\varsigma$-semilinear in the second and of mixed parity in the third, exactly as the general theorem prescribes.
 
@@ -104,7 +104,7 @@ so the ternary product determines the binary derived operation and the involutio
 
 **Proof.** $\{x,y,1\} = (x \star y) \star 1^{*} = (x \star y) \star 1 = xy^{*}1 = xy^{*} = x \star y$, and $\{1,y,1\} = (1 \star y) \star 1^{*} = y^{*} \star 1 = y^{*}$. The original product is then $xy = x \star y^{*}$, because $(y^{*})^{*} = y$. $\square$
 
-**Remark.** The ternary product carries strictly more than the binary one: from $\{x,y,1\}$ one recovers the derived operation, and from $\{1,y,1\}$ the involution, while the derived operation alone does not determine the involution, which is part of the datum by *Sesquilinear Algebras*. This is the precise sense in which the binary product is read as the **shadow** of the ternary one: the binary operation is the ternary operation with the unit in the third slot, and the whole ternary operation is what the failure of associativity forces one to consider.
+**Remark.** The ternary product carries strictly more than the binary one: from $\{x,y,1\}$ one recovers the derived operation, and from $\{1,y,1\}$ the involution, while the derived operation alone does not determine the involution, which is part of the datum by *Sesquialgebras*. This is the precise sense in which the binary product is read as the **shadow** of the ternary one: the binary operation is the ternary operation with the unit in the third slot, and the whole ternary operation is what the failure of associativity forces one to consider.
 
 **Remark (the passage in one line).** The binary product has an uncontrolled associator and carries no associativity identity, and the ternary product has a controlled associator — the Jordan triple identity — and it determines the binary product; the passage from the binary to the ternary operation is therefore the passage from a product whose associator is a defect to a triple product whose identity is a structure. The operator theory of the ternary product, its quadratic representation $z \mapsto \{x,y,z\}$ and the adjoint it carries, is *The Adjoint of the Ternary Product*.
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article lists the associative algebras that the corpus meets, together with the weaker identities — alternativity, flexibility, power-associativity and the Moufang identities — that survive the failure of associativity. Associativity is the rung on which most of the corpus is built: an algebra is associative when its associator vanishes identically, and the constructions of the category *Bilinear Algebras* are stated for the associative case. Every entry points to the article that introduces the object.
+This article lists the associative algebras that the corpus meets, together with the weaker identities — alternativity, flexibility, power-associativity and the Moufang identities — that survive the failure of associativity. Associativity is the rung on which most of the corpus is built: an algebra is associative when its associator vanishes identically, and the constructions of the category *Algebras* are stated for the associative case. Every entry points to the article that introduces the object.
 
 The list is a proper subclass of *List of Algebras*: that article carries the algebras over a field of the corpus with their dimension, their centre and their ideals, and this one carries the associative algebras, over a field or over a commutative ring, with the identity that fixes them, and beside them the algebras that fail associativity.
 
@@ -44,7 +44,7 @@ The symmetric, exterior and Clifford algebras are quotients of $T(V)$ by homogen
 | Algebra | The property it has | Introduced in |
 |---|---|---|
 | $R[x_1,\dots,x_n]$, the polynomial algebra | commutative and associative | *Polynomial Algebras* |
-| $\operatorname{Sym}(V)$, the symmetric algebra | the commutative associative quotient of $T(V)$ by the commutators | *The Symmetric Algebra* |
+| $\operatorname{Sym}(V)$, the symmetric algebra | the commutative associative quotient of $T(V)$ by the commutators | *The Symmetric Algebra of a Module* |
 | $\Lambda(V)$, the exterior algebra | the graded-commutative associative quotient by $v \otimes v$ | *The Exterior Algebra* |
 | $\mathrm{Cl}(V,q)$, the Clifford algebra | the associative quotient by $v \otimes v - q(v)$ | *Clifford Algebras* |
 | $A_1(k) = k\langle x,y\rangle/(xy - yx - 1)$, the Weyl algebra | associative, a domain, and not a quotient by homogeneous relations | *Non-Commutative Domains*, §The Weyl Algebra |

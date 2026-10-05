@@ -59,7 +59,7 @@ $$
 \mathrm{Vect}(\mathbb{B}) \circ \mathrm{Vect}(\mathbb{B}) = \mathbb{C}_{\mathbb{B}} .
 $$
 
-This is the sharpest contrast between the two halves of the product in the whole table: the same two elements that span the algebra under the product have their symmetrized product confined to the two-dimensional centre. The vector subspace is not a Jordan subalgebra, and the vanishing of $\mathbf{P} \circ \mathbf{P}$ is the algebraic fact behind the square-zero elements of the vector subspace, which are exactly its nonzero non-units in *The Six Subspaces and the Units*.
+This is the sharpest contrast between the two parts of the product in the whole table: the same two elements that span the algebra under the product have their symmetrized product confined to the two-dimensional centre. The vector subspace is not a Jordan subalgebra, and the vanishing of $\mathbf{P} \circ \mathbf{P}$ is the algebraic fact behind the square-zero elements of the vector subspace, which are exactly its nonzero non-units in *The Six Subspaces and the Units*.
 
 The symmetrized product with a central element stays in the vector subspace, and with each of the other four spans the algebra.
 
@@ -71,7 +71,7 @@ $$
 \mathbb{H}_{\mathbb{B}} \circ \mathbb{H}_{\mathbb{B}} = \mathbb{H}_{\mathbb{B}} .
 $$
 
-It is a Jordan subalgebra, and the second of the three. Its symmetrized product is not its product: the quaternion subspace is not commutative, so $\tilde{P} \circ \tilde{Q}$ and $\tilde{P}\tilde{Q}$ differ by the commutator whenever the two elements do not commute. The Jordan structure obtained is the symmetrization of the real quaternion algebra, whose properties are those of *Biquaternion Jordan Algebra* restricted to real coefficients.
+It is a Jordan subalgebra, and the second of the three. Its symmetrized product is not its product: the quaternion subspace is not commutative, so $\tilde{P} \circ \tilde{Q}$ and $\tilde{P}\tilde{Q}$ differ by the commutator whenever the two elements do not commute. The Jordan structure obtained is the symmetrization of the real quaternion algebra, whose properties are those of *Biquaternion Jordan Algebras* restricted to real coefficients.
 
 With the anti-quaternion subspace the symmetrized product stays in the anti-quaternion subspace, and with the centre, the vector subspace and the two Hermitian subspaces it spans the algebra.
 
@@ -131,7 +131,7 @@ The anti-Hermitian subspace is therefore not a Jordan subalgebra, and the symmet
 
 ## Summary
 
-The symmetrized product $\tilde{P} \circ \tilde{Q} = \tfrac{1}{2}(\tilde{P}\tilde{Q} + \tilde{Q}\tilde{P})$ restricted to the six subspaces is tabulated above, and it is tighter than the product. Exactly three of the six are closed under it and are therefore Jordan subalgebras: the centre, the quaternion subspace and the Hermitian subspace; the three witnesses of failure are $\mathrm{Vect}(\mathbb{B}) \circ \mathrm{Vect}(\mathbb{B}) = \mathbb{C}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}} \circ i\mathbb{H}_{\mathbb{B}} = \mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_- \circ \mathbb{M}_- = \mathbb{M}_+$. The symmetrized product of two pure vectors is always a scalar, the cross product of the product formula cancelling by antisymmetry, so the same two elements that span the algebra under the product have their symmetrized product confined to the centre. The Hermitian subspace is the natural home of the product, and its symmetrized product is the Jordan product, with scalar part the restriction of the scalar pairing of the algebra; the anti-Hermitian subspace is not closed, and the symmetrized product of two of its elements is Hermitian. The symmetrized product is $\mathbb{Z}/2$-graded by the Hermitian decomposition, with even part $\mathbb{M}_+$. The Jordan structure of the whole algebra, the Jordan identity, the trace form and the Peirce decomposition are *Biquaternion Jordan Algebra*; the antisymmetric half of the product is the subject of *The Six Subspaces and the Lie Algebra*.
+The symmetrized product $\tilde{P} \circ \tilde{Q} = \tfrac{1}{2}(\tilde{P}\tilde{Q} + \tilde{Q}\tilde{P})$ restricted to the six subspaces is tabulated above, and it is tighter than the product. Exactly three of the six are closed under it and are therefore Jordan subalgebras: the centre, the quaternion subspace and the Hermitian subspace; the three witnesses of failure are $\mathrm{Vect}(\mathbb{B}) \circ \mathrm{Vect}(\mathbb{B}) = \mathbb{C}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}} \circ i\mathbb{H}_{\mathbb{B}} = \mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_- \circ \mathbb{M}_- = \mathbb{M}_+$. The symmetrized product of two pure vectors is always a scalar, the cross product of the product formula cancelling by antisymmetry, so the same two elements that span the algebra under the product have their symmetrized product confined to the centre. The Hermitian subspace is the natural home of the product, and its symmetrized product is the Jordan product, with scalar part the restriction of the scalar pairing of the algebra; the anti-Hermitian subspace is not closed, and the symmetrized product of two of its elements is Hermitian. The symmetrized product is $\mathbb{Z}/2$-graded by the Hermitian decomposition, with even part $\mathbb{M}_+$. The Jordan structure of the whole algebra, the Jordan identity, the trace form and the Peirce decomposition are *Biquaternion Jordan Algebras*; the antisymmetric half of the product is the subject of *The Six Subspaces and the Lie Algebra*.
 
 ## Summary of Notation
 
@@ -148,7 +148,7 @@ The symmetrized product $\tilde{P} \circ \tilde{Q} = \tfrac{1}{2}(\tilde{P}\tild
 ## Further Reading
 
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
-- *The Six Subspaces and the Products* (`articles_maths/the-six-subspaces-and-the-products.md`), for the full product and the two halves into which it splits
-- *Decomposition of the Multiplication* (`articles_maths/decomposition-of-the-multiplication.md`), for the symmetrized product in its original setting
-- *Biquaternion Jordan Algebra* (`articles_maths/biquaternion-jordan-algebra.md`), for the Jordan identity, the trace form and the Jordan structure of the whole algebra
+- *The Six Subspaces and the Products* (`articles_maths/the-six-subspaces-and-the-products.md`), for the full product and the two parts into which it splits
+- *Decomposition of the Biquaternion Complex Products* (`articles_maths/decomposition-of-the-biquaternion-complex-products.md`), for the symmetrized product in its original setting
+- *Biquaternion Jordan Algebras* (`articles_maths/biquaternion-jordan-algebras.md`), for the Jordan identity, the trace form and the Jordan structure of the whole algebra
 - *The Six Subspaces and the Idempotents and Projections* (`articles_maths/the-six-subspaces-and-the-idempotents-and-projections.md`), for the idempotents, which occur in exactly the Hermitian subspace and are the reason it is the nontrivial Jordan subalgebra among the six

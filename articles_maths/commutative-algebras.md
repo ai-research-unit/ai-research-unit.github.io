@@ -4,7 +4,7 @@
 
 A **commutative algebra** is an associative algebra whose product is commutative. The base structure is a **commutative ring** $R$ with identity $1 \neq 0$, and algebras are $R$-algebras, associative and unital unless stated; the broad sense of "algebra" of *Algebras*, a module with a bilinear product not assumed associative, applies here with both extra hypotheses imposed. This article treats the commutative case as a category: the free objects, the tensor product that serves as coproduct, and the contravariant functor to spectra that makes the algebra geometric.
 
-The commutative algebras over $R$ are the algebras that arise from the symmetric algebra of *The Symmetric Algebra*, since the symmetric algebra is the free commutative algebra on a module. The category is closed under tensor product, and this closure is the structural fact that distinguishes it: for commutative algebras the tensor product is a coproduct, so it is both a construction inside the category and the way to combine two algebras freely. For non-commutative algebras the tensor product is still defined but is not a coproduct, and that failure is exactly the asymmetry that the symmetric algebra removes.
+The commutative algebras over $R$ are the algebras that arise from the symmetric algebra of *The Symmetric Algebra of a Module*, since the symmetric algebra is the free commutative algebra on a module. The category is closed under tensor product, and this closure is the structural fact that distinguishes it: for commutative algebras the tensor product is a coproduct, so it is both a construction inside the category and the way to combine two algebras freely. For non-commutative algebras the tensor product is still defined but is not a coproduct, and that failure is exactly the asymmetry that the symmetric algebra removes.
 
 The article defines commutative algebras, identifies the free ones with polynomial algebras, proves that the tensor product is the coproduct, and then passes to the prime spectrum, its topology and its functoriality. The exterior and antisymmetric analogues belong to category 07 and are not used here.
 
@@ -34,7 +34,7 @@ A commutative $R$-algebra $A$ is **free on a set $X$** if there is a map $\iota 
 
 *Proof.* Given $\phi : X \to B$, define the homomorphism on monomials by $x_{i_1}^{a_1}\cdots x_{i_k}^{a_k} \mapsto \phi(x_{i_1})^{a_1}\cdots \phi(x_{i_k})^{a_k}$ and extend $R$-linearly. This is well defined because the commutative law makes monomials a basis indexed by finitely supported families of exponents and the order of factors irrelevant; it is a homomorphism because $B$ is commutative and associative; and it is unique because $X$ generates $R[X]$ as an algebra.
 
-By *The Symmetric Algebra*, the symmetric algebra of a free module of rank $n$ is $R[x_1, \ldots, x_n]$; more generally $\operatorname{Sym}(M) = \bigoplus_{n\geq0}\operatorname{Sym}^n(M)$ is the free commutative algebra on a basis of $M$ when $M$ is free. The free commutative algebra is therefore not a new object but the symmetric algebra.
+By *The Symmetric Algebra of a Module*, the symmetric algebra of a free module of rank $n$ is $R[x_1, \ldots, x_n]$; more generally $\operatorname{Sym}(M) = \bigoplus_{n\geq0}\operatorname{Sym}^n(M)$ is the free commutative algebra on a basis of $M$ when $M$ is free. The free commutative algebra is therefore not a new object but the symmetric algebra.
 
 **Proposition.** Every commutative $R$-algebra is a quotient of a polynomial algebra; that is, $A \cong R[x_s : s \in X]/\mathrm{A}$ for some set $X$ and some ideal $\mathrm{A}$.
 
@@ -80,7 +80,7 @@ $$
 \operatorname{Sym}(M) \otimes_R \operatorname{Sym}(N) \cong \operatorname{Sym}(M \oplus N),
 $$
 
-which is the compatibility of the symmetric algebra with direct sums noted in *The Symmetric Algebra*, now read as the statement that $\operatorname{Sym}$ takes direct sums to coproducts.
+which is the compatibility of the symmetric algebra with direct sums noted in *The Symmetric Algebra of a Module*, now read as the statement that $\operatorname{Sym}$ takes direct sums to coproducts.
 
 ## The Polynomial Algebra Revisited
 

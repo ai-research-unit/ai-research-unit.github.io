@@ -4,7 +4,7 @@
 
 This article introduces the **divided power algebra**, the refinement of the symmetric algebra that remains well behaved when factorials are not invertible. The treatment is introductory and purely mathematical.
 
-The base structure is a **commutative ring** $R$ with identity $1 \neq 0$. The reader should have *Symmetric Powers* and *The Symmetric Algebra* at hand: the divided power algebra is a second algebra with the same degree-one part as the symmetric algebra, differing from it by binomial and factorial coefficients, and coinciding with it exactly when every factorial is a unit. The anti-symmetric analogue, the divided or shuffle treatment of the exterior algebra, is not needed here; the exterior algebra belongs to category 07.
+The base structure is a **commutative ring** $R$ with identity $1 \neq 0$. The reader should have *Symmetric Powers* and *The Symmetric Algebra of a Module* at hand: the divided power algebra is a second algebra with the same degree-one part as the symmetric algebra, differing from it by binomial and factorial coefficients, and coinciding with it exactly when every factorial is a unit. The anti-symmetric analogue, the divided or shuffle treatment of the exterior algebra, is not needed here; the exterior algebra belongs to category 07.
 
 The problem the divided power algebra solves is easy to state. In the symmetric algebra the $n$-th power of a degree-one element is again a legitimate element, but the divided $n$-th power $x^n/n!$ is not available once $n!$ fails to be invertible, and in characteristic $p$ the $p$-th power map $x \mapsto x^p$ reaches only the pure monomials $x_i^p$ of the degree-$p$ part, not a monomial such as $x_1 x_2^{p-1}$. The divided power $\gamma_n(x)$ is designed to play the role of $x^n/n!$, and it exists as an operation even when $n!$ does not.
 
@@ -197,7 +197,7 @@ so the divided power axioms are the binomial and multinomial theorems in their i
 
 ### Comparison with the Symmetric Algebra
 
-The degree-one part of $\Gamma(M)$ is $M$, and $\Gamma(M)$ is a commutative $R$-algebra, so by the universal property of the symmetric algebra (*The Symmetric Algebra*) there is a unique algebra homomorphism
+The degree-one part of $\Gamma(M)$ is $M$, and $\Gamma(M)$ is a commutative $R$-algebra, so by the universal property of the symmetric algebra (*The Symmetric Algebra of a Module*) there is a unique algebra homomorphism
 
 $$
 c : \operatorname{Sym}(M) \longrightarrow \Gamma(M), \qquad x \longmapsto \gamma_1(x),

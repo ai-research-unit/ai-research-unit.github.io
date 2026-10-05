@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A single bilinear product on a vector space carries two structures at once. Its symmetrisation $x \bullet y = \tfrac12(xy + yx)$ is commutative, and its antisymmetrisation $[x,y] = \tfrac12(xy - yx)$ is anticommutative. The corpus treats the two separately: the symmetric product is the subject of *Jordan Algebras* and of the *Symmetric Bilinear Algebras* of this part, and the antisymmetric bracket is the subject of *Lie Algebras* and of the *Anti-symmetric Bilinear Algebras*. This article records the observation — Liu Yu-Fen's, in the source of the biquaternion dirac construction — that for the specific product built from the Dirac matrices the two structures are *both* present and *compatible*, and that the ternary product they generate is a Jordan triple system.
+A single bilinear product on a vector space carries two structures at once. Its symmetrisation $x \bullet y = \tfrac12(xy + yx)$ is commutative, and its antisymmetrisation $[x,y] = \tfrac12(xy - yx)$ is anticommutative. The corpus treats the two separately: the symmetric product is the subject of *Jordan Algebras* and of the *Symmetric Algebras* of this part, and the antisymmetric bracket is the subject of *Lie Algebras* and of the *Anti-symmetric Algebras*. This article records the observation — Liu Yu-Fen's, in the source of the biquaternion dirac construction — that for the specific product built from the Dirac matrices the two structures are *both* present and *compatible*, and that the ternary product they generate is a Jordan triple system.
 
 The setting is the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, read as a complex four-dimensional vector space $V = \mathbb{C}^4$ with a bilinear composition whose structure constants are the source's
 
@@ -159,4 +159,4 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 - K. McCrimmon, *A Taste of Jordan Algebras* (Universitext, Springer, New York, 2004), for the Jordan triple identities and the classification of special and exceptional Jordan algebras.
 - O. Loos, *Jordan Pairs* (Lecture Notes in Mathematics 460, Springer, Berlin, 1975), for Jordan triples, Jordan pairs and the Kantor–Koecher construction.
 - M. Koecher, "Imbedding of Jordan algebras into Lie algebras I, II," *American Journal of Mathematics* **89** (1967) 787–816 and **90** (1968) 476–510, for the Kantor–Koecher construction.
-- The companion corpus articles: *Jordan Algebras*, *Special and Exceptional Jordan Algebras*, *Lie Algebras*, *Automorphisms and Derivations of Algebras*, *Superalgebras and Graded Structures*, and *Biquaternion Lie Algebra*.
+- The companion corpus articles: *Jordan Algebras*, *Special and Exceptional Jordan Algebras*, *Lie Algebras*, *Automorphisms and Derivations of Algebras*, *Superalgebras and Graded Structures*, and *Biquaternion Lie Algebras*.

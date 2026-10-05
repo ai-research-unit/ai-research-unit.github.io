@@ -10,19 +10,19 @@ $$
 
 This article collects the identities that link the four. They are not four unrelated rules: the first factor is read plain in the first two and through ${}^{\natural}$ in the last two, the second factor plain in the first and the third and through ${}^{*}$ in the second and the fourth, the two choices being made independently. Every link below is a consequence of that single distinction, read on the coordinates: the four scalar parts are related to one another by the two identities that split a factor into its scalar and its vector part; the four vector parts obey the same pair of identities; the left multiplications of the four are the complex bilinear ones read through the two conjugations, and that reading decides which of them form a monoid. Finally, on the real quaternion subspace, where the complex conjugation is the identity and the star is the natural sign, the four scalar parts collapse onto two, the two sesquilinear ones becoming the two bilinear ones.
 
-Which of the four is a multiplication in the sense of algebra is *Comparison Between the Four Biquaternion Products*, and the properties of each are tabulated there. The behaviour of the complex bilinear product on the six distinguished subspaces is *The Six Subspaces and the Products*, and its split into a symmetric and an antisymmetric half is *Decomposition of the Multiplication*.
+Which of the four is a multiplication in the sense of algebra is *Comparison Between the Four Biquaternion Products*, and the properties of each are tabulated there. The behaviour of the complex bilinear product on the six distinguished subspaces is *The Six Subspaces and the Products*, and its split into a symmetric and an antisymmetric half is *Decomposition of the Biquaternion Complex Products*.
 
 The article assumes the four products and their scalar–vector forms from *The Four Biquaternion Complex Products*, and the conjugations from *Biquaternions as a Vector Space over $\mathbb{C}$* and *The Group of Involutions*. Throughout, $\tilde P=P_0+\mathbf P$ and $\tilde Q=Q_0+\mathbf Q$ separate the complex scalar part from the complex vector part, $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and $\mathbf P\times\mathbf Q$ are the complex bilinear dot and cross products, and $\overline{\mathbf Q}$ is the coefficientwise conjugate of the vector part.
 
 ## The Two Choices, and the Four Products
 
-Write $\mathcal A$ for the complex bilinear product and ${}^{\natural}$, ${}^{*}$ for the two conjugations. The four rules are read on one and the same pair $(\tilde P,\tilde Q)$, and each of them is the product $\mathcal A$ applied to that pair with either element replaced by its conjugate:
+Write ${}^{\natural}$, ${}^{*}$ for the two conjugations. The four rules are read on one and the same pair $(\tilde P,\tilde Q)$, and the three after the first are obtained from the complex bilinear product $\tilde P\tilde Q$ by replacing the first element, the second element, or both, by its conjugate:
 
 $$
-\tilde P\tilde Q=\mathcal A(\tilde P,\tilde Q) , \qquad
-\tilde P^{\natural}\tilde Q=\mathcal A(\tilde P^{\natural},\tilde Q) , \qquad
-\tilde P\tilde Q^{*}=\mathcal A(\tilde P,\tilde Q^{*}) , \qquad
-\tilde P^{\natural}\tilde Q^{*}=\mathcal A(\tilde P^{\natural},\tilde Q^{*}) .
+\tilde P\tilde Q , \qquad
+\tilde P^{\natural}\tilde Q , \qquad
+\tilde P\tilde Q^{*} , \qquad
+\tilde P^{\natural}\tilde Q^{*} .
 $$
 
 Conjugating the first element of the pair and conjugating the second are two involutions of the pair, and they commute, ${}^{\natural}$ and ${}^{*}$ being involutions of the element that commute with each other. The two choices made independently are exactly what produces four rules, and the four are pairwise distinct: no two of the four agree on every pair of elements.
@@ -232,7 +232,7 @@ and the fourth restricts to the first. The four scalar parts therefore come in t
 
 ## Summary
 
-The four products of *The Four Biquaternion Complex Products* are read on one and the same pair $\mathcal A(\tilde P,\tilde Q)$, with either element replaced by its conjugate, the two choices being independent, and they are pairwise distinct. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde P}\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde P^{*})$ and $\mathrm{Sc}(\tilde P\bar{\tilde Q})=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$.
+The four products of *The Four Biquaternion Complex Products* are read on one and the same pair $(\tilde P,\tilde Q)$, each with either element replaced by its conjugate, the two choices being independent, and they are pairwise distinct. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde P}\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde P^{*})$ and $\mathrm{Sc}(\tilde P\bar{\tilde Q})=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$.
 
 The two conjugations in the slots separate the scalar part of a factor from its vector part,
 
@@ -252,7 +252,6 @@ The left multiplications of the four are the complex bilinear ones read through 
 | symbol | meaning |
 |---|---|
 | $\tilde P\tilde Q, \tilde P^{\natural}\tilde Q, \tilde P\tilde Q^{*}, \tilde P^{\natural}\tilde Q^{*}$ | the four products, defined in *The Four Biquaternion Complex Products* |
-| $\mathcal A$ | the complex bilinear product as a binary operation |
 | $\mathbf P$ | the vector part of $\tilde P$, $P_1e_1+P_2e_2+P_3e_3$, read as an element where it multiplies |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector, the signs of the first and of the fourth scalar parts |
 | $L_{\tilde P}$, $R_{\tilde P}$ | the left and right multiplications of the complex bilinear product by $\tilde P$ |

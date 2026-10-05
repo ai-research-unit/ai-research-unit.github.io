@@ -137,7 +137,7 @@ An element of the biquaternion algebra is a unit exactly when the central norm $
 
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
 - *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product formula
-- *Decomposition of the Multiplication* (`articles_maths/decomposition-of-the-multiplication.md`), for the square of a pure vector
+- *Decomposition of the Biquaternion Complex Products* (`articles_maths/decomposition-of-the-biquaternion-complex-products.md`), for the square of a pure vector
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm, the inverse formula and the unit group of the whole algebra
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the elements of vanishing norm in the whole algebra
 - *The Six Subspaces and the Zero Divisors* (`articles_maths/the-six-subspaces-and-the-zero-divisors.md`), for the zero divisors themselves subspace by subspace, the pure and the non-pure family and the identification of the non-pure ones with the idempotents

@@ -7,7 +7,7 @@ Every projection $P$ (an idempotent, the one-sided operator of *The Projection O
 
 The article develops the involution associated to a projection with the bijection between the projections and the involutions, the involution of the set of the projections given by the complement, the compatibility of the involution with the adjoint and the resulting characterisation of the orthogonal projections, the central projections and the perspectivities of the projective space with the harmonic homology, and the projective involutions with their fixed loci and the theorem of Baer. The article owns the involutions built from the projections.
 
-The article assumes *The Projection Operator* for the idempotents, the centre of projection and the perspectivity; *Hermitian Structures and the Projection Operator* and *The Adjoint under a Hermitian Pairing* for the orthogonal projections and the adjoint; *Operators on a Projective Space* and *Projective Geometry* for the projectivities, the correlations and the frames; and *Involutive Bilinear Algebras* of Part I for the involutions and the decomposition of an algebra with an involution. No distance and no physics is invoked.
+The article assumes *The Projection Operator* for the idempotents, the centre of projection and the perspectivity; *Hermitian Structures and the Projection Operator* and *The Adjoint under a Hermitian Pairing* for the orthogonal projections and the adjoint; *Operators on a Projective Space* and *Projective Geometry* for the projectivities, the correlations and the frames; and *Involutive Algebras* of Part I for the involutions and the decomposition of an algebra with an involution. No distance and no physics is invoked.
 
 ## The Involution Associated to a Projection
 
@@ -37,7 +37,7 @@ $$
 V = \operatorname{im} P \oplus \ker P , \qquad \sigma_P|_{\operatorname{im} P} = \mathrm{id}, \qquad \sigma_P|_{\ker P} = -\mathrm{id} .
 $$
 
-**Proof.** The square is $(2P - \mathrm{id})^2 = 4P^2 - 4P + \mathrm{id} = \mathrm{id}$ using $P^2 = P$; the map $\sigma \mapsto \tfrac12(\sigma+\mathrm{id})$ is inverse to $P \mapsto 2P - \mathrm{id}$ because $P \mapsto 2P-\mathrm{id} \mapsto \tfrac12(2P-\mathrm{id}+\mathrm{id}) = P$ and conversely; the eigenspace statement is the definition of the two eigenspaces of an involution and the decomposition of the space. The statement is in *Involutive Bilinear Algebras* and *The Projection Operator*.
+**Proof.** The square is $(2P - \mathrm{id})^2 = 4P^2 - 4P + \mathrm{id} = \mathrm{id}$ using $P^2 = P$; the map $\sigma \mapsto \tfrac12(\sigma+\mathrm{id})$ is inverse to $P \mapsto 2P - \mathrm{id}$ because $P \mapsto 2P-\mathrm{id} \mapsto \tfrac12(2P-\mathrm{id}+\mathrm{id}) = P$ and conversely; the eigenspace statement is the definition of the two eigenspaces of an involution and the decomposition of the space. The statement is in *Involutive Algebras* and *The Projection Operator*.
 
 **Corollary (the reflection).** A projection with a kernel of dimension one determines the reflection in the hyperplane of its image, and the reflections of the geometry are the involutions $\sigma_P$ of the projections with a one-dimensional kernel; the orthogonal reflection with respect to a form is the involution of the orthogonal projection $P_W$ of *Hermitian Structures and the Projection Operator*. The Cartan–Dieudonné theorem for the orthogonal group, in *Geodesic Reflection as an Operator*, is the statement that the orthogonal projections with the one-dimensional kernels generate the group.
 
@@ -77,7 +77,7 @@ so the map $P \mapsto \sigma_P$ intertwines the adjoint on the projections with 
 
 **Proof.** The adjoint is conjugate-linear and additive and it reverses the products, so $(2P - \mathrm{id})^\dagger = 2P^\dagger - \mathrm{id} = \sigma_{P^\dagger}$; the self-adjointness is the equivalence $P^\dagger = P \iff \sigma_P^\dagger = \sigma_P$, which is the characterisation of the orthogonal projection of *Hermitian Structures and the Projection Operator*. The statement is in *The Adjoint under a Hermitian Pairing* and *Hermitian Structures and the Projection Operator*.
 
-**Remark (the involutions of the adjoint layer).** The article is the intersection of three structures: the projections of *The Projection Operator*, the adjoint of *The Adjoint under a Hermitian Pairing* and the involutions of *Involutive Bilinear Algebras*; the associated involution $\sigma_P$ is the one-sided operator built from the projection, the adjoint is the structure built from the involution on the elements, and their compatibility is the theorem above, proved and not assumed.
+**Remark (the involutions of the adjoint layer).** The article is the intersection of three structures: the projections of *The Projection Operator*, the adjoint of *The Adjoint under a Hermitian Pairing* and the involutions of *Involutive Algebras*; the associated involution $\sigma_P$ is the one-sided operator built from the projection, the adjoint is the structure built from the involution on the elements, and their compatibility is the theorem above, proved and not assumed.
 
 ## The Central Projection and the Perspectivity
 

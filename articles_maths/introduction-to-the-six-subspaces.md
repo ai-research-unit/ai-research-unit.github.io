@@ -158,9 +158,9 @@ The biquaternion algebra carries four conjugations whose fixed and anti-fixed sp
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, its basis, its conjugations and its coordinate systems
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four conjugations, the group they generate and the two spaces each defines
 - *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product and its scalar–vector form
-- *Decomposition of the Multiplication* (`articles_maths/decomposition-of-the-multiplication.md`), for the two halves into which the product splits
-- *Biquaternion Jordan Algebra* (`articles_maths/biquaternion-jordan-algebra.md`), for the symmetrized product and the trace form
-- *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the commutator, the derived subalgebra and the adjoint maps
+- *Decomposition of the Biquaternion Complex Products* (`articles_maths/decomposition-of-the-biquaternion-complex-products.md`), for the two parts into which the product splits
+- *Biquaternion Jordan Algebras* (`articles_maths/biquaternion-jordan-algebras.md`), for the symmetrized product and the trace form
+- *Biquaternion Lie Algebras* (`articles_maths/biquaternion-lie-algebras.md`), for the commutator, the derived subalgebra and the adjoint maps
 - *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the idempotents, the projections and the Peirce corners
 - *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the one-sided ideals and the minimal left ideals
 - *Modules over the Biquaternion Algebra* (`articles_maths/modules-over-the-biquaternion-algebra.md`), for the simple module $S$ and the Morita equivalence

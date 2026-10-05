@@ -1,10 +1,10 @@
-# __Ideals and Quotients of a Sesquilinear Algebra__
+# __Ideals and Quotients of a Sesquialgebra__
 
 ## Introduction
 
-A quotient of an algebra is formed by an ideal, and in a sesquilinear algebra an ideal has to respect one structure more than an ordinary algebra does: the two scalar rules. The two sides are not interchangeable here, because the product is $R$-linear in the first variable and $\varsigma$-semilinear in the second, so a left ideal and a right ideal are genuinely different sets, and the involution is the map that exchanges them. The involution descends to the quotient only when the ideal is carried to itself by it, and that is the second condition the algebra imposes.
+A quotient of an algebra is formed by an ideal, and in a sesquialgebra an ideal has to respect one structure more than an ordinary algebra does: the two scalar rules. The two sides are not interchangeable here, because the product is $R$-linear in the first variable and $\varsigma$-semilinear in the second, so a left ideal and a right ideal are genuinely different sets, and the involution is the map that exchanges them. The involution descends to the quotient only when the ideal is carried to itself by it, and that is the second condition the algebra imposes.
 
-Throughout, $A$ is a $\varsigma$-sesquilinear algebra with a $\varsigma$-semilinear involution $*$, in the sense of *Sesquilinear Algebras*, with the product of that article: additive in each variable, $R$-linear in the first slot and $\varsigma$-semilinear in the second. The product need not be associative; where an argument uses associativity it is said so.
+Throughout, $A$ is a sesquialgebra with a $\varsigma$-semilinear involution $*$, in the sense of *Sesquialgebras*, with the product of that article: additive in each variable, $R$-linear in the first slot and $\varsigma$-semilinear in the second. The product need not be associative; where an argument uses associativity it is said so.
 
 What is added here: the three kinds of ideal and the $*$-ideal, the closure of the ideals under intersection and sum, the fact that the involution exchanges the two sides, the conjugate image $I^{*}$ and the smallest $*$-ideal through it, the quotient by a two-sided ideal together with the exact condition for the involution to descend, the first and third isomorphism theorems, and the three worked quotients $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{B}$.
 
@@ -68,13 +68,13 @@ because $*$ is anti-multiplicative and $*^{2} = \mathrm{id}$. Now $a^{*}x \in AI
 
 ### The Product Descends
 
-**Theorem (the quotient of a sesquilinear algebra).** Let $I$ be a two-sided ideal of $A$. Then the rule
+**Theorem (the quotient of a sesquialgebra).** Let $I$ be a two-sided ideal of $A$. Then the rule
 
 $$
 (x + I)(y + I) = xy + I
 $$
 
-is well defined, and with it $A/I$ is a $\varsigma$-sesquilinear algebra with the same base involution $\varsigma$; the quotient map $\pi : A \to A/I$ is a surjective homomorphism with kernel $I$.
+is well defined, and with it $A/I$ is a sesquialgebra with the same base involution $\varsigma$; the quotient map $\pi : A \to A/I$ is a surjective homomorphism with kernel $I$.
 
 **Proof.** Let $x' = x + i$ and $y' = y + j$ with $i, j \in I$. Then
 
@@ -84,7 +84,7 @@ $$
 
 where $xj \in AI \subseteq I$ and $iy \in IA \subseteq I$ because $I$ is two-sided, and $ij \in II \subseteq AI \subseteq I$ because $i \in I \subseteq A$ and $I$ is a left ideal. Hence $x'y' \in xy + I$ and the product is well defined. It is additive in each variable because the product of $A$ is, and it inherits the scalar rules: $((\lambda x) + I)(y + I) = (\lambda x)y + I = \lambda(xy) + I = \lambda((x+I)(y+I))$ and $(x + I)((\lambda y) + I) = x(\lambda y) + I = \varsigma(\lambda)xy + I = \varsigma(\lambda)((x+I)(y+I))$. The quotient map is additive and multiplicative by construction, it is surjective because every class is the image of a representative, and its kernel is the class of $0$, which is $I$. $\square$
 
-**Remark.** No associativity is used. The three inclusions $AI \subseteq I$, $IA \subseteq I$ and $II \subseteq I$ are what the well-definedness requires, and the third follows from the first because $I \subseteq A$. The quotient inherits the base involution $\varsigma$ unchanged, because the base ring is not touched by the quotient; what descends is the algebra, and it descends as a sesquilinear algebra over the same datum $(R, \varsigma)$.
+**Remark.** No associativity is used. The three inclusions $AI \subseteq I$, $IA \subseteq I$ and $II \subseteq I$ are what the well-definedness requires, and the third follows from the first because $I \subseteq A$. The quotient inherits the base involution $\varsigma$ unchanged, because the base ring is not touched by the quotient; what descends is the algebra, and it descends as a sesquialgebra over the same datum $(R, \varsigma)$.
 
 ### The Involution Descends
 
@@ -104,7 +104,7 @@ defines a map on $A/I$ if and only if $I$ is a $*$-ideal, and in that case $A/I$
 
 ### Kernels and Images
 
-**Definition.** A **homomorphism** of $\varsigma$-sesquilinear algebras $f : A \to B$ is an $R$-linear map with $f(xy) = f(x)f(y)$; it is a **$*$-homomorphism** if in addition $f(x^{*}) = f(x)^{*}$.
+**Definition.** A **homomorphism** of sesquialgebras $f : A \to B$ is an $R$-linear map with $f(xy) = f(x)f(y)$; it is a **$*$-homomorphism** if in addition $f(x^{*}) = f(x)^{*}$.
 
 **Remark.** Only the first scalar rule is imposed, and the second is then a consequence: $f(x(\lambda y)) = f(\varsigma(\lambda) xy) = \varsigma(\lambda) f(x)f(y) = f(x)(\lambda f(y))$. The $\varsigma$-semilinearity of the product in the second slot is carried by the $R$-linearity of $f$ together with the sesquilinearity of the two products, so the definition does not need to name it.
 
@@ -126,7 +126,7 @@ $$
 \frac{A/I}{J/I} \; \cong \; A/J
 $$
 
-as $\varsigma$-sesquilinear algebras. If in addition $I$ and $J$ are $*$-ideals, then the involution descends to each of them and the isomorphism is a $*$-isomorphism.
+as sesquialgebras. If in addition $I$ and $J$ are $*$-ideals, then the involution descends to each of them and the isomorphism is a $*$-isomorphism.
 
 **Proof.** The map $A \to A/J$ is a homomorphism with kernel $J$, and it factors through $A/I$ because $I \subseteq J$: if $x' - x \in I \subseteq J$ then $x'$ and $x$ have the same class modulo $J$, so $x + I \mapsto x + J$ is well defined. It is $R$-linear and multiplicative as a composite of homomorphisms, it is onto because both quotient maps are, and its kernel is the set of the classes $x + I$ with $x \in J$, which is $J/I$; this is therefore a two-sided ideal of $A/I$, and the first isomorphism theorem applied to the map gives the isomorphism. When $I$ and $J$ are $*$-ideals, an $x + I \in J/I$ has $x \in J$ and $(x+I)^{*} = x^{*} + I$ with $x^{*} \in J$, so $J/I$ is $*$-stable, and the map is induced by the quotient maps, which are $*$-homomorphisms, hence is a $*$-isomorphism. $\square$
 
@@ -150,11 +150,11 @@ as $\varsigma$-sesquilinear algebras. If in addition $I$ and $J$ are $*$-ideals,
 
 **Proof.** The three generators are still $*$-fixed, because the coefficients in $x^{2}+1$ and $y^{2}+1$ are the fixed scalars $1$, and $xy + yx$ is again fixed as above; an ideal generated by fixed elements is a $*$-ideal. The quotient is the complexification of the algebra of the previous proposition, that is $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, and the descended involution is the tensor product of the conjugation of $\mathbb{C}$ with the negation of the three units, which is what the acting of $*$ gives on the generators and hence on all of $\mathbb{B}$. $\square$
 
-**Remark.** The three examples are the same construction over an increasing base: the quotient of a free or polynomial algebra by the ideal of the defining relations, which is $*$-stable because the relations are, and the descended involution is the standard one of the algebra obtained. The obstruction of the previous section does not arise here. The complex and the biquaternion algebras are among the standard examples of the category in *Sesquilinear Algebras*, where they appear with these involutions, the quaternions being the real algebra whose complexification is $\mathbb{B}$.
+**Remark.** The three examples are the same construction over an increasing base: the quotient of a free or polynomial algebra by the ideal of the defining relations, which is $*$-stable because the relations are, and the descended involution is the standard one of the algebra obtained. The obstruction of the previous section does not arise here. The complex and the biquaternion algebras are among the standard examples of the category in *Sesquialgebras*, where they appear with these involutions, the quaternions being the real algebra whose complexification is $\mathbb{B}$.
 
 ## Summary
 
-A left ideal of a sesquilinear algebra is an $R$-submodule $I$ with $AI \subseteq I$, a right ideal one with $IA \subseteq I$, and a two-sided ideal one with both; a $*$-ideal is a two-sided ideal with $I^{*} \subseteq I$, where $I^{*}$ is the conjugate image. The ideals are closed under intersection and sum, the involution exchanges the left and the right ideals by $x^{*}a = (a^{*}x)^{*}$, and the smallest $*$-ideal containing a two-sided ideal $I$ is $I + I^{*}$, which equals $I$ exactly when $I$ is a $*$-ideal. The quotient $A/I$ by a two-sided ideal is a sesquilinear algebra over the same datum $(R, \varsigma)$, with the product $(x+I)(y+I) = xy + I$, and the involution descends to it exactly when $I$ is a $*$-ideal, as in $\mathbb{C}[x]/(x - i)$ it does not. The kernel of a homomorphism is a two-sided ideal, the kernel of a $*$-homomorphism is a $*$-ideal, and $A/\ker f$ is isomorphic to the image of $f$, as algebras with involution when $f$ is a $*$-homomorphism; for two-sided ideals $I \subseteq J$ one has $(A/I)/(J/I) \cong A/J$, a $*$-isomorphism when both ideals are $*$-ideals. The quotients of the free algebras by the defining relations of the classical algebras give $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{B}$ with their standard involutions.
+A left ideal of a sesquialgebra is an $R$-submodule $I$ with $AI \subseteq I$, a right ideal one with $IA \subseteq I$, and a two-sided ideal one with both; a $*$-ideal is a two-sided ideal with $I^{*} \subseteq I$, where $I^{*}$ is the conjugate image. The ideals are closed under intersection and sum, the involution exchanges the left and the right ideals by $x^{*}a = (a^{*}x)^{*}$, and the smallest $*$-ideal containing a two-sided ideal $I$ is $I + I^{*}$, which equals $I$ exactly when $I$ is a $*$-ideal. The quotient $A/I$ by a two-sided ideal is a sesquialgebra over the same datum $(R, \varsigma)$, with the product $(x+I)(y+I) = xy + I$, and the involution descends to it exactly when $I$ is a $*$-ideal, as in $\mathbb{C}[x]/(x - i)$ it does not. The kernel of a homomorphism is a two-sided ideal, the kernel of a $*$-homomorphism is a $*$-ideal, and $A/\ker f$ is isomorphic to the image of $f$, as algebras with involution when $f$ is a $*$-homomorphism; for two-sided ideals $I \subseteq J$ one has $(A/I)/(J/I) \cong A/J$, a $*$-isomorphism when both ideals are $*$-ideals. The quotients of the free algebras by the defining relations of the classical algebras give $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{B}$ with their standard involutions.
 
 ## Summary of Notation
 

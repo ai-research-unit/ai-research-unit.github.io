@@ -4,7 +4,7 @@
 
 An involution of an algebra carries an element $u$ to its **adjoint** $u^* = \sigma(u)$, and the elements whose adjoint is their inverse, $u^*u = uu^* = 1$, are the **unitary elements**. They form a group under multiplication, they sit inside the group of units, and they are the algebraic group that an involution produces: the solutions of the quadratic equation $u^*u = 1$. Two companion objects live beside them — the **self-adjoint** elements, with $h^* = h$, and the **skew** elements, with $k^* = -k$ — and the three are tied together by the identities $u + u^* = 2h$ and $u - u^* = 2k$ for every unitary $u$.
 
-This article develops the unitary elements, the group they form as the fixed subgroup of an order-two automorphism of the units, the skew elements as the algebraic tangent space at the identity and as a Lie algebra under the commutator, and the relation between the unitary and the self-adjoint parts. The involution on the elements, the decomposition $A = A^+\oplus A^-$, the Lie algebra of the skew elements and the Jordan algebra of the symmetric ones are the subject of *Involutive Bilinear Algebras*; the self-adjoint part is developed in *The Self-Adjoint Part of an Algebra*; and the forms, the adjoint involution that a form defines and the orthogonal and unitary groups of a form are Part II and *Hilbert Algebras*, which own them.
+This article develops the unitary elements, the group they form as the fixed subgroup of an order-two automorphism of the units, the skew elements as the algebraic tangent space at the identity and as a Lie algebra under the commutator, and the relation between the unitary and the self-adjoint parts. The involution on the elements, the decomposition $A = A^+\oplus A^-$, the Lie algebra of the skew elements and the Jordan algebra of the symmetric ones are the subject of *Involutive Algebras*; the self-adjoint part is developed in *The Self-Adjoint Part of an Algebra*; and the forms, the adjoint involution that a form defines and the orthogonal and unitary groups of a form are Part II and *Hilbert Algebras*, which own them.
 
 Throughout, $k$ is a field of characteristic not two, $A$ is a unital associative $k$-algebra, and $\sigma$ is an involution of $A$; the image of an element is written $u^* = \sigma(u)$, so that $(uv)^* = v^*u^*$ and $(u^*)^* = u$. The fixed elements $A^+ = \{h : h^* = h\}$ are **self-adjoint** and the negated elements $A^- = \{k : k^* = -k\}$ are **skew**; the group of units is $A^\times$, and the group of unitary elements is written $U(A) = U(A,\sigma)$.
 
@@ -54,7 +54,7 @@ $$
 [A^-, A^-] \subseteq A^-, \qquad [A^-, A^+] \subseteq A^+, \qquad [A^+, A^+] \subseteq A^-,
 $$
 
-so that $A^-$ is a Lie algebra under $[x,y] = xy - yx$, that $A^+$ is a module over it, and that $A^- \oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra with the grading-compatible bracket of *Graded Lie Algebras and Lie Superalgebras* — the Koszul sign would give the anticommutator on two skew elements, which is self-adjoint, so the signed convention is not the one here; and since $[A^+,A^+]\subseteq A^-$ and $[A^-,A^+]\subseteq A^+$, the self-adjoint part is also a Lie triple system under $\{h_1,h_2,h_3\} = [h_1,[h_2,h_3]]$. The first statement is that of *Involutive Bilinear Algebras*.
+so that $A^-$ is a Lie algebra under $[x,y] = xy - yx$, that $A^+$ is a module over it, and that $A^- \oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra with the grading-compatible bracket of *Graded Lie Algebras and Lie Superalgebras* — the Koszul sign would give the anticommutator on two skew elements, which is self-adjoint, so the signed convention is not the one here; and since $[A^+,A^+]\subseteq A^-$ and $[A^-,A^+]\subseteq A^+$, the self-adjoint part is also a Lie triple system under $\{h_1,h_2,h_3\} = [h_1,[h_2,h_3]]$. The first statement is that of *Involutive Algebras*.
 
 *Proof.* For $x$ skew and $y$ skew, $(xy)^* = y^*x^* = (-y)(-x) = yx$, so $[x,y]^* = (xy-yx)^* = yx - xy = -[x,y]$ and $[x,y]$ is skew. The two mixed cases are the same computation with one sign, and the even-even case is the first with the signs cancelled.
 
@@ -92,7 +92,7 @@ $$
 
 ### The Symmetrised Product
 
-**Definition.** The **symmetrised product** of two elements is $x \bullet y = \tfrac12(xy + yx)$, and the self-adjoint part $H(A) = A^+$ is a **Jordan algebra** under it, in the sense of *Involutive Bilinear Algebras*.
+**Definition.** The **symmetrised product** of two elements is $x \bullet y = \tfrac12(xy + yx)$, and the self-adjoint part $H(A) = A^+$ is a **Jordan algebra** under it, in the sense of *Involutive Algebras*.
 
 **Proposition.** The symmetrised product of two skew elements and of two self-adjoint elements is self-adjoint, while the symmetrised product of a self-adjoint and a skew element is skew:
 
@@ -132,7 +132,7 @@ Let $\sigma = \mathrm{id}_A$. Then $u^* = u$, the group $U(A,\mathrm{id})$ is th
 
 ### The Transpose on a Matrix Algebra
 
-Let $A = M_n(k)$ with the transpose, $X^* = X^{\mathsf{T}}$, and $2 \neq 0$. Then $U(A) = \{X \in GL_n(k) : X^{\mathsf{T}}X = 1\} = O_n(k)$ is the orthogonal group of the standard symmetric form; the skew part is the space of the alternating matrices, the self-adjoint part the space of the symmetric matrices, and the decomposition $M_n = \mathrm{Sym}\oplus \mathrm{Alt}$ is the one of *Involutive Bilinear Algebras*. The form that makes $O_n(k)$ the orthogonal group, and its classification among the symmetric and the alternating forms, belong to *Hilbert Algebras*.
+Let $A = M_n(k)$ with the transpose, $X^* = X^{\mathsf{T}}$, and $2 \neq 0$. Then $U(A) = \{X \in GL_n(k) : X^{\mathsf{T}}X = 1\} = O_n(k)$ is the orthogonal group of the standard symmetric form; the skew part is the space of the alternating matrices, the self-adjoint part the space of the symmetric matrices, and the decomposition $M_n = \mathrm{Sym}\oplus \mathrm{Alt}$ is the one of *Involutive Algebras*. The form that makes $O_n(k)$ the orthogonal group, and its classification among the symmetric and the alternating forms, belong to *Hilbert Algebras*.
 
 ### The Inversion on a Group Algebra
 
@@ -140,7 +140,7 @@ Let $A = k[G]$ with the involution $\sigma(g) = g^{-1}$; then $(uv)^* = v^*u^*$ 
 
 ### The Exchange Involution
 
-Let $A = B \times B^{\mathrm{op}}$ with the exchange involution $(b, c)^* = (c, b)$, as in *Involutive Bilinear Algebras*. An element $(b,c)$ is unitary exactly when $(c,b)(b,c) = 1$, that is when $cb = 1$ and $bc = 1$, so $c = b^{-1}$; hence
+Let $A = B \times B^{\mathrm{op}}$ with the exchange involution $(b, c)^* = (c, b)$, as in *Involutive Algebras*. An element $(b,c)$ is unitary exactly when $(c,b)(b,c) = 1$, that is when $cb = 1$ and $bc = 1$, so $c = b^{-1}$; hence
 
 $$
 U(B \times B^{\mathrm{op}}) = \{(b, b^{-1}) : b \in B^\times\} \cong B^\times ,
@@ -154,7 +154,7 @@ Let $A = M_n(\mathbb{C})$ with the $\varsigma$-semilinear conjugate transpose $X
 
 ## Summary
 
-For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the **unitary elements** are those with $u^*u = uu^* = 1$, equivalently the units with $u^* = u^{-1}$. They form the subgroup $U(A) \leq A^\times$, which is the fixed subgroup of the order-two automorphism $\theta(g) = (g^*)^{-1}$ of $A^\times$; this is the passage from the involutive algebra to the involutive group of units of *Involutive Groups*. The **skew** elements $A^- = \{k : k^* = -k\}$ are closed under the commutator, so they form a Lie algebra, and they are the algebraic tangent space of $U(A)$ at the identity: the elements $x$ with $1 + tx$ unitary to first order are exactly the skew elements. The **self-adjoint** elements $A^+ = H(A)$ form the Jordan algebra under the symmetrised product, and $A^-$ is a Jordan module over it; every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and a skew part. The examples are the orthogonal group for the transpose, the image of $G$ for the inversion of a group algebra, the group of units for the exchange involution, and the unitary group for the conjugate transpose. The involution on the elements is *Involutive Bilinear Algebras*, the self-adjoint part is *The Self-Adjoint Part of an Algebra*, the forms and the linear groups belong to *Hilbert Algebras* and to Part II.
+For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the **unitary elements** are those with $u^*u = uu^* = 1$, equivalently the units with $u^* = u^{-1}$. They form the subgroup $U(A) \leq A^\times$, which is the fixed subgroup of the order-two automorphism $\theta(g) = (g^*)^{-1}$ of $A^\times$; this is the passage from the involutive algebra to the involutive group of units of *Involutive Groups*. The **skew** elements $A^- = \{k : k^* = -k\}$ are closed under the commutator, so they form a Lie algebra, and they are the algebraic tangent space of $U(A)$ at the identity: the elements $x$ with $1 + tx$ unitary to first order are exactly the skew elements. The **self-adjoint** elements $A^+ = H(A)$ form the Jordan algebra under the symmetrised product, and $A^-$ is a Jordan module over it; every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and a skew part. The examples are the orthogonal group for the transpose, the image of $G$ for the inversion of a group algebra, the group of units for the exchange involution, and the unitary group for the conjugate transpose. The involution on the elements is *Involutive Algebras*, the self-adjoint part is *The Self-Adjoint Part of an Algebra*, the forms and the linear groups belong to *Hilbert Algebras* and to Part II.
 
 ## Summary of Notation
 

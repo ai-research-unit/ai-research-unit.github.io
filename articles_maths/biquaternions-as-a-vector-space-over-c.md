@@ -4,7 +4,7 @@
 
 This article treats the biquaternions as a **complex vector space**: the set of elements, its addition, the scalar action of $\mathbb{C}$ it carries, the real structure beneath it, its coordinates, and the conjugations as linear and antilinear maps. Three further readings are added at the end as alternative views: the same set over the real scalars, then the bimodule over $\mathbb{H}$ and the module over $\mathbb{B}$ itself, the last two with bases that are rings of operators rather than fields of scalars. The goal is to lay out this linear structure precisely and to name the **six** distinguished real subspaces that arise from the conjugations: four of dimension four, together with the two-dimensional centre and the six-dimensional vector subspace. The six are not developed here: they are defined one to a section in *Introduction to the Six Subspaces*, and the three decompositions into pairs of them are *Decompositions Along the Six Subspaces*.
 
-$\mathbb{B}$ carries its product as well, and the product makes it an algebra. That reading, with the product taken as the multiplication, is *Biquaternions as a Bilinear Algebra over $\mathbb{C}$*; with the real scalars it is *Biquaternions as a Bilinear Algebra over $\mathbb{R}$*; here the product is used only to say that the scalar actions are compatible with it. The four conjugations and the group they generate are *The Group of Involutions*.
+$\mathbb{B}$ carries its product as well, and the product makes it an algebra. That reading, with the product taken as the multiplication, is *Biquaternions as an Algebra over $\mathbb{C}$*; with the real scalars it is *Biquaternions as an Algebra over $\mathbb{R}$*; here the product is used only to say that the scalar actions are compatible with it. The four conjugations and the group they generate are *The Group of Involutions*.
 
 The treatment is elementary and self-contained: every claim is either proved or stated as a definition, and no physics is invoked. The anti-Hermitian subspace is defined algebraically. No form appears in this article; the Hermitian form, the inner product and everything measured with them belong to the Topology group. The product of the algebra — its definition, its two scalar–vector parts, and the dot and cross products they are built from — is *The Four Biquaternion Complex Products*, and it is used here as given.
 
@@ -20,7 +20,7 @@ $$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H},
 $$
 
-read here as a $\mathbb{C}$-vector space: an additive group with a scalar multiplication by the complex numbers. It is therefore **four-dimensional** over $\mathbb{C}$, with complex basis $\{e_0, e_1, e_2, e_3\}$. It also carries its product, the one defined and studied in *The Four Biquaternion Complex Products*; the product is $\mathbb{C}$-bilinear, so the scalars may be moved through it, and it makes $\mathbb{B}$ an algebra over $\mathbb{C}$, a reading developed in *Biquaternions as a Bilinear Algebra over $\mathbb{C}$*. Its centre is the scalar line $\mathbb{C}e_0$, spanned over $\mathbb{R}$ by $e_0$ and $ie_0$, and it is one of the six distinguished real subspaces of the group. The underlying real space, in which those six are cut out, is **eight-dimensional**, with real basis $\{e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3\}$.
+read here as a $\mathbb{C}$-vector space: an additive group with a scalar multiplication by the complex numbers. It is therefore **four-dimensional** over $\mathbb{C}$, with complex basis $\{e_0, e_1, e_2, e_3\}$. It also carries its product, the one defined and studied in *The Four Biquaternion Complex Products*; the product is $\mathbb{C}$-bilinear, so the scalars may be moved through it, and it makes $\mathbb{B}$ an algebra over $\mathbb{C}$, a reading developed in *Biquaternions as an Algebra over $\mathbb{C}$*. Its centre is the scalar line $\mathbb{C}e_0$, spanned over $\mathbb{R}$ by $e_0$ and $ie_0$, and it is one of the six distinguished real subspaces of the group. The underlying real space, in which those six are cut out, is **eight-dimensional**, with real basis $\{e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3\}$.
 
 The complex dimension four and the real dimension eight are related by
 
@@ -182,7 +182,7 @@ A real subspace of $\mathbb{B}$ of real dimension four need not be closed under 
 
 **Example.** The elements with real coefficients, spanned by $e_0, e_1, e_2, e_3$, form a real form; its image under $J$ is the subspace of elements with purely imaginary coefficients, the two meet at zero and their sum is $\mathbb{B}$. Real forms are not unique, and the choice of one is data beyond the real reading.
 
-**Remark (the two real spaces, of dimensions eight and four).** The two dimensions must not be confused. The restriction of scalars of the complex reading is the eight-dimensional space above, whose extension of scalars back to $\mathbb{C}$ has complex dimension eight; the extension of scalars of a real form is the four-dimensional complex space $\mathbb{B}$ itself. What returns the complex reading from the eight-dimensional space is the operator $J$, not a scalar extension. The version of this caution for the algebra and its base rings, where $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$, is *Biquaternions as a Bilinear Algebra over $\mathbb{R}$*.
+**Remark (the two real spaces, of dimensions eight and four).** The two dimensions must not be confused. The restriction of scalars of the complex reading is the eight-dimensional space above, whose extension of scalars back to $\mathbb{C}$ has complex dimension eight; the extension of scalars of a real form is the four-dimensional complex space $\mathbb{B}$ itself. What returns the complex reading from the eight-dimensional space is the operator $J$, not a scalar extension. The version of this caution for the algebra and its base rings, where $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$, is *Biquaternions as an Algebra over $\mathbb{R}$*.
 
 **Remark (the six subspaces in the real reading).** The six distinguished subspaces are real subspaces, and the complex structure sorts them: the centre and the vector subspace are carried to themselves by $J$ and are the only two that are complex subspaces, of complex dimensions one and three, while the other four are real forms, exchanged in two pairs by $J$. The six are defined in *Introduction to the Six Subspaces*, and the action of the central imaginary unit upon them is *Comparison of the Six Subspaces*.
 
@@ -248,7 +248,7 @@ $$
 \tilde Q \cdot (h \cdot \tilde P) - h \cdot (\tilde Q \cdot \tilde P) = (\tilde Qh - h\tilde Q)\tilde P = [\tilde Q,h]\tilde P,
 $$
 
-which does not vanish in general. A ring with exactly these properties is an **$\mathbb{H}$-ring**, and the failure is measured by the commutator. The quaternions are not central in $\mathbb{B}$, which is why $\mathbb{H}$ is a ring of operators here and not a second field of scalars; the base-ring question is decided in *Biquaternions as a Bilinear Algebra over $\mathbb{R}$*.
+which does not vanish in general. A ring with exactly these properties is an **$\mathbb{H}$-ring**, and the failure is measured by the commutator. The quaternions are not central in $\mathbb{B}$, which is why $\mathbb{H}$ is a ring of operators here and not a second field of scalars; the base-ring question is decided in *Biquaternions as an Algebra over $\mathbb{R}$*.
 
 ## Alternative View: Biquaternions as a Module over Itself
 
@@ -272,7 +272,7 @@ It carries four natural conjugations, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ a
 
 Beyond the scalar fields it carries two structures whose base is not a field. Over $\mathbb{H}$ it is a bimodule with commuting left and right actions, free of rank two on each side on the generators $e_0$ and $ie_0$, with endomorphism ring $\operatorname{End}_\mathbb{H}(\mathbb{B})\cong M_2(\mathbb{H})$, and its product is not fully $\mathbb{H}$-bilinear. Over itself it is the regular module, in the three readings ${}_{\mathbb{B}}\mathbb{B}$, $\mathbb{B}_{\mathbb{B}}$ and ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$.
 
-The product read as the multiplication of an algebra is *Biquaternions as a Bilinear Algebra over $\mathbb{C}$*, and with the real scalars it is *Biquaternions as a Bilinear Algebra over $\mathbb{R}$*.
+The product read as the multiplication of an algebra is *Biquaternions as an Algebra over $\mathbb{C}$*, and with the real scalars it is *Biquaternions as an Algebra over $\mathbb{R}$*.
 
 ## Summary of Notation
 

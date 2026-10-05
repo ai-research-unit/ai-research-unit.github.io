@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is the second application of the category, and it identifies the symmetric powers of *Symmetric Powers* with the harmonic layers of the polynomial algebra. The symmetric-tensor statements hold over a field $F$ of characteristic $0$, so that all factorials are invertible and the symmetric power is the module of invariants; the polynomial algebra is that of *The Symmetric Algebra*, and the symmetric powers are its graded pieces $\operatorname{Sym}^k$.
+This article is the second application of the category, and it identifies the symmetric powers of *Symmetric Powers* with the harmonic layers of the polynomial algebra. The symmetric-tensor statements hold over a field $F$ of characteristic $0$, so that all factorials are invertible and the symmetric power is the module of invariants; the polynomial algebra is that of *The Symmetric Algebra of a Module*, and the symmetric powers are its graded pieces $\operatorname{Sym}^k$.
 
 Let $V = \mathbb{R}^n$ with its standard inner product and let $P_k$ be the space of homogeneous polynomials of degree $k$ in $x_1, \ldots, x_n$. The **Laplacian** $\Delta = \sum_i \partial_i^2$ maps $P_k$ to $P_{k-2}$, and the **harmonic polynomials** of degree $k$ are
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article completes the polynomial algebra at its augmentation ideal and identifies the result with the algebra of formal power series. The base structure is a **commutative ring** $R$ with identity $1 \neq 0$, and the algebra conventions are those of *Commutative Algebras*: the category $\mathsf{CAlg}_R$, free objects, tensor products and spectra. The symmetric algebra of *The Symmetric Algebra* and its graded pieces, the symmetric powers of *Symmetric Powers*, supply the associated graded object that the completion forgets.
+This article completes the polynomial algebra at its augmentation ideal and identifies the result with the algebra of formal power series. The base structure is a **commutative ring** $R$ with identity $1 \neq 0$, and the algebra conventions are those of *Commutative Algebras*: the category $\mathsf{CAlg}_R$, free objects, tensor products and spectra. The symmetric algebra of *The Symmetric Algebra of a Module* and its graded pieces, the symmetric powers of *Symmetric Powers*, supply the associated graded object that the completion forgets.
 
 The construction is the $I$-adic completion
 

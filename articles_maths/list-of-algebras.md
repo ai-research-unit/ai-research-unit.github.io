@@ -65,7 +65,7 @@ The tensor algebra $T(V)$ is the free associative algebra on a vector space, and
 |---|---|---|
 | Tensor algebra $T(V)$ | infinite-dimensional; the free associative algebra on $V$ | *Tensor Powers and the Free Algebra* |
 | Free algebra | infinite-dimensional for $\dim V \geq 1$; the non-commutative polynomial algebra | *Tensor Powers and the Free Algebra* |
-| Symmetric algebra $\operatorname{Sym}(V)$ | the polynomial algebra on $\dim V$ generators; centre the whole algebra | *The Symmetric Algebra* |
+| Symmetric algebra $\operatorname{Sym}(V)$ | the polynomial algebra on $\dim V$ generators; centre the whole algebra | *The Symmetric Algebra of a Module* |
 | Exterior algebra $\Lambda(V)$ | dimension $2^{\dim V}$; graded-commutative; not commutative for $\dim V \geq 2$ | *The Exterior Algebra* |
 | Clifford algebra $\mathrm{Cl}(V,q)$ | dimension $2^{\dim V}$; centre computed from the volume element; a $\mathbb{Z}/2$-grading | *Clifford Algebras* |
 | Universal enveloping algebra $U(\mathrm{G})$ | infinite-dimensional; centre the Casimir-type elements; by PBW a filtered deformation of $\operatorname{Sym}(\mathrm{G})$ | *Representations of Lie Algebras* |

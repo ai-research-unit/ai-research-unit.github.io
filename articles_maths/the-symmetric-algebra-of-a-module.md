@@ -1,4 +1,4 @@
-# __The Symmetric Algebra__
+# __The Symmetric Algebra of a Module__
 
 ## Introduction
 
@@ -100,7 +100,7 @@ $$
 
 naturally in $M$ and $A$. The natural transformation $M \to U(\operatorname{Sym}(M))$ is the inclusion of the degree-one part.
 
-## The Symmetric Algebra as a Quotient of the Tensor Algebra
+## The Symmetric Algebra of a Module as a Quotient of the Tensor Algebra
 
 ### The Tensor Algebra
 
@@ -205,7 +205,7 @@ $$
 
 The construction is functorial: $\operatorname{Sym}(\operatorname{id}_M) = \operatorname{id}_{\operatorname{Sym}(M)}$ and $\operatorname{Sym}(v \circ u) = \operatorname{Sym}(v) \circ \operatorname{Sym}(u)$. On free modules, $\operatorname{Sym}(u)$ is the substitution homomorphism determined by $e_i \mapsto u(e_i)$.
 
-### The Symmetric Algebra of a Direct Sum
+### The Symmetric Algebra of a Module of a Direct Sum
 
 **Theorem.** For all $R$-modules $M, N$ there is a natural isomorphism of graded algebras
 

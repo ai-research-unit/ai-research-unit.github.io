@@ -1,4 +1,4 @@
-# __Biquaternions as a Bilinear Algebra over $\mathbb{C}$__
+# __Biquaternions as an Algebra over $\mathbb{C}$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}
 
 The construction is short and the consequences long. The product is $\mathbb{C}$-bilinear, associative and unital, so the space becomes an associative unital $\mathbb{C}$-algebra; a bilinear product is determined by its values on a basis, so the four basis elements carry all of it; and once the algebra is in place, its scalar structure, its centre, its generators and its presentation by relations are read off in turn.
 
-Two boundaries are stated at once. The product is not defined here: the coordinate rule and the four names are *The Four Biquaternion Complex Products*, and what the four rules are to one another is *Relations Between the Four Biquaternion Products* and *Comparison Between the Four Biquaternion Products*. And the question of which base rings $\mathbb{B}$ admits, together with the reading of the same product with the real scalars, is *Biquaternions as a Bilinear Algebra over $\mathbb{R}$*, where the two admissible bases and the failure of the quaternions are treated; the centre of $\mathbb{B}$ and the centrality criterion are §*The Scalars Are the Centre* below. What this article adds is the algebra as the product makes it.
+Two boundaries are stated at once. The product is not defined here: the coordinate rule and the four names are *The Four Biquaternion Complex Products*, and what the four rules are to one another is *Relations Between the Four Biquaternion Products* and *Comparison Between the Four Biquaternion Products*. And the question of which base rings $\mathbb{B}$ admits, together with the reading of the same product with the real scalars, is *Biquaternions as an Algebra over $\mathbb{R}$*, where the two admissible bases and the failure of the quaternions are treated; the centre of $\mathbb{B}$ and the centrality criterion are §*The Scalars Are the Centre* below. What this article adds is the algebra as the product makes it.
 
 The elements, the basis and the conjugations are *Biquaternions as a Vector Space over $\mathbb{C}$*. The general theory is *Algebras: A General Introduction*, associativity is *Associative Algebras*, the identity is *Unital Algebras*, the tensor product is *Tensor Products of Algebras*, the presentation of an algebra by generators and relations is *Quotients of the Tensor Algebra*, and the anti-automorphism as an isomorphism onto the opposite algebra is *Opposite Algebras and Anti-Isomorphisms*. On the biquaternion side, the two-sided ideals and the simplicity of $\mathbb{B}$ are *Biquaternion Ideals and Peirce Decomposition*, the units and the invertibility criterion are *The Six Subspaces and the Units*, the zero divisors are *Biquaternion Zero Divisors*, the square of one element is *Biquaternion Square Roots of a General Element*, and the matrix model of the algebra is *Biquaternion 2×2 Matrix Element Representation*.
 
@@ -132,7 +132,7 @@ $$
 
 are unital algebra homomorphisms over $\mathbb{R}$ and have commuting images (*Tensor Products of Algebras*); the commuting of the images is the statement that the scalars are central, which is the centrality used in the next section. The second image is the real quaternion subspace $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 + \mathbb{R}e_1 + \mathbb{R}e_2 + \mathbb{R}e_3$, and on it the multiplication is the quaternion product of *Quaternion Algebra*.
 
-The multiplication is thus the $\mathbb{C}$-bilinear extension of the quaternion product, and $\mathbb{B}$ is the **complexification** of $\mathbb{H}$: one quaternion algebra, read with the complex scalars. This is the sense in which the name is exact. The real algebra of *Biquaternions as a Bilinear Algebra over $\mathbb{R}$* carries the same multiplication as the complex algebra here; only the scalar system changes, and with it the dimension, which doubles.
+The multiplication is thus the $\mathbb{C}$-bilinear extension of the quaternion product, and $\mathbb{B}$ is the **complexification** of $\mathbb{H}$: one quaternion algebra, read with the complex scalars. This is the sense in which the name is exact. The real algebra of *Biquaternions as an Algebra over $\mathbb{R}$* carries the same multiplication as the complex algebra here; only the scalar system changes, and with it the dimension, which doubles.
 
 ## The Scalars, the Centre and the Structure Map
 
@@ -172,7 +172,7 @@ $$
 
 **Proof.** The centre of a tensor product of algebras over a field is the tensor product of their centres, and $Z(\mathbb{C}) = \mathbb{C}$ while $Z(\mathbb{H}) = \mathbb{R}$. In coordinates, $[\tilde Q,e_1] = 2Q_3e_2 - 2Q_2e_3$ vanishes exactly when $Q_2 = Q_3 = 0$, and $[\tilde Q,e_2]$ vanishes exactly when $Q_1 = Q_3 = 0$, so centrality forces $Q_1 = Q_2 = Q_3 = 0$; conversely every $Q_0e_0$ is central because $i$ commutes with the units.
 
-The scalars cannot be enlarged further, because there is no room in the centre for more; which base rings are admissible, and why the quaternion factor cannot serve, is *Biquaternions as a Bilinear Algebra over $\mathbb{R}$*, §*The Admissible Bases: $\mathbb{R}$, $\mathbb{C}$ and Not $\mathbb{H}$*.
+The scalars cannot be enlarged further, because there is no room in the centre for more; which base rings are admissible, and why the quaternion factor cannot serve, is *Biquaternions as an Algebra over $\mathbb{R}$*, §*The Admissible Bases: $\mathbb{R}$, $\mathbb{C}$ and Not $\mathbb{H}$*.
 
 **Corollary.** The algebra is **central** over $\mathbb{C}$: the image of the structure map is the whole centre, so no scalar is lost and no non-scalar is admitted as a scalar. The centre is a subalgebra isomorphic to the field $\mathbb{C}$, and it is proper, the algebra being non-commutative.
 

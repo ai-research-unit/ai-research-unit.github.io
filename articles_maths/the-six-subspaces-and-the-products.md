@@ -21,7 +21,7 @@ Each entry is exact: it is the real span of the products, not merely a subspace 
 
 The table is symmetric although the product is not. The reason is that quaternion conjugation is an anti-automorphism, $(\tilde{P}\tilde{Q})^{\natural} = \tilde{Q}^{\natural}\tilde{P}^{\natural}$, and it maps each of the six subspaces to itself; it therefore carries the span of $U \cdot V$ onto the span of $V \cdot U$, and each entry of the table is invariant under it, so the two spans coincide.
 
-The product splits into its two halves, the symmetrized product $\tilde{P} \circ \tilde{Q} = \tfrac{1}{2}(\tilde{P}\tilde{Q} + \tilde{Q}\tilde{P})$ and the commutator $[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q} - \tilde{Q}\tilde{P}$. The restriction of each half to the six is a separate theme, treated in *The Six Subspaces and the Jordan Algebra* and in *The Six Subspaces and the Lie Algebra*; only the full product is tabulated here.
+The product splits into its two parts, the symmetrized product $\tilde{P} \circ \tilde{Q} = \tfrac{1}{2}(\tilde{P}\tilde{Q} + \tilde{Q}\tilde{P})$ and the commutator $[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q} - \tilde{Q}\tilde{P}$. The restriction of each half to the six is a separate theme, treated in *The Six Subspaces and the Jordan Algebra* and in *The Six Subspaces and the Lie Algebra*; only the full product is tabulated here.
 
 Throughout, an element of the vector subspace is written $\mathbf{P}$ and its complex dot and cross products are $(\mathbf{P},\mathbf{Q})$ and $\mathbf{P} \times \mathbf{Q}$, so that $\mathbf{P}\mathbf{Q} = -(\mathbf{P},\mathbf{Q})e_0 + \mathbf{P} \times \mathbf{Q}$.
 
@@ -145,6 +145,6 @@ The product of two elements of the six distinguished subspaces is tabulated abov
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
 - *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the blocks, the intersections, the sums and the action of the central imaginary unit
 - *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product and the scalar–vector formula
-- *Decomposition of the Multiplication* (`articles_maths/decomposition-of-the-multiplication.md`), for the two halves
-- *Biquaternion Jordan Algebra* (`articles_maths/biquaternion-jordan-algebra.md`), for the symmetrized product and the Jordan structure of the whole algebra
-- *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the commutator and the Lie structure of the whole algebra
+- *Decomposition of the Biquaternion Complex Products* (`articles_maths/decomposition-of-the-biquaternion-complex-products.md`), for the two parts
+- *Biquaternion Jordan Algebras* (`articles_maths/biquaternion-jordan-algebras.md`), for the symmetrized product and the Jordan structure of the whole algebra
+- *Biquaternion Lie Algebras* (`articles_maths/biquaternion-lie-algebras.md`), for the commutator and the Lie structure of the whole algebra

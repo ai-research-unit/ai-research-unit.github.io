@@ -168,6 +168,6 @@ The commutator of two biquaternions is twice the complex cross product of their 
 
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
 - *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the blocks and the intersections
-- *The Six Subspaces and the Products* (`articles_maths/the-six-subspaces-and-the-products.md`), for the full product and the two halves into which it splits
-- *The Six Subspaces and the Jordan Algebra* (`articles_maths/the-six-subspaces-and-the-jordan-algebra.md`), for the symmetric half of the product
-- *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the Jacobi identity, the derived series and the Lie structure of the whole algebra
+- *The Six Subspaces and the Products* (`articles_maths/the-six-subspaces-and-the-products.md`), for the full product and the two parts into which it splits
+- *The Six Subspaces and the Jordan Algebra* (`articles_maths/the-six-subspaces-and-the-jordan-algebra.md`), for the symmetric part of the product
+- *Biquaternion Lie Algebras* (`articles_maths/biquaternion-lie-algebras.md`), for the Jacobi identity, the derived series and the Lie structure of the whole algebra
