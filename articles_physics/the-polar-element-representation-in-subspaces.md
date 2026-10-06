@@ -65,6 +65,31 @@ In the matrix picture the criterion reads $\Phi(\tilde{Q})\Phi(\tilde{Q})^\dagge
 
 The rotor is thus the part of the element that obstructs its being a complex multiple of a Hermitian element, and the central sign $\pm e_0$ is the discrete residue of that obstruction, which is the kernel of the two-to-one cover of the Lorentz group.
 
+### The Two Classes the Criteria Single Out
+
+Each criterion is one condition, and each condition cuts a class out of the nonzero elements of the algebra: those whose product with their star is a positive real multiple of the unit, and those whose quotient by the modulus is Hermitian.
+
+| class | defining condition | factorization | real dimension |
+|---|---|---|---|
+| $\mathcal{U}$, the boost-free elements | $B = e_0$ | $\tilde{Q} = r\,e^{i\alpha}\hat{q}$ | $1+1+3 = 5$ |
+| $\mathcal{H}$, the rotor-free elements | $\hat{q} = \pm e_0$ | $\tilde{Q} = \pm\rho B$ | $2+3 = 5$ |
+
+The two counts are the ones the section *Where the Dimensions Go* distributes over the four factors, read the other way round: an element of $\mathcal{U}$ spends its real dimensions on a scale, a phase and a rotor, and an element of $\mathcal{H}$ on a complex modulus and a boost.
+
+The two classes are not the same kind of object. $\mathcal{U}$ is closed under multiplication and under inversion, since a product of two positive multiples of unitary elements is again one, so it is a group — $\mathbb{R}_{>0}\times U(2)$, with the central phase as its circle and the rotor group as its three-sphere. $\mathcal{H}$ is not closed: $\Phi(\tilde{Q}_1\tilde{Q}_2)$ is a product of two Hermitian positive definite matrices, and such a product is Hermitian exactly when the two factors commute, so two boosts about different axes leave the class as soon as they are composed, and only co-axial ones stay in it.
+
+Read on the six subspaces, the membership follows from the same two products. The center lies in both classes. The quaternion and antiquaternion subspaces lie inside $\mathcal{U}$ and meet $\mathcal{H}$ only in the center, since every element of those halves has a real biquaternion norm and hence a trivial boost factor, and a nontrivial rotor. The vector subspace lies inside $\mathcal{U}$ exactly on the parallel pairs $\mathbf{v}\parallel\mathbf{w}$ and never inside $\mathcal{H}$ away from the center. And a sector lies inside $\mathcal{H}$ exactly on its definite branch, the branch on which the rotor is the discrete sign, and inside $\mathcal{U}$ only on the center and on the line $a = 0$, the line on which its Hermitian product degenerates to a scalar.
+
+### The Two Classes Meet in the Center
+
+An element of both classes has $B = e_0$ and $\hat{q} = \pm e_0$, hence $\tilde{Q} = \pm\rho e_0 = \pm re^{i\alpha}e_0$, so the intersection is the nonzero part of the center,
+
+$$
+\mathcal{U}\cap\mathcal{H} = \mathbb{C}_{\mathbb{B}}\setminus\{0\} , \qquad \dim_{\mathbb{R}}\left(\mathcal{U}\cap\mathcal{H}\right) = 2 .
+$$
+
+The count closes against the group of units, whose real dimension is $8$: $5+5-8 = 2$. The two conditions are therefore as independent as the ambient group allows, and the two five-dimensional families meet on the complex line and nowhere else. On the unit-norm slice the classes become the two factors of the Cartan decomposition — $\mathcal{U}\cap\{N = 1\}$ is the rotor group $\mathrm{Sp}(1)$ and $\mathcal{H}\cap\{N = 1\}$ is the boosts with a discrete sign — and their intersection there is the two-element group $\{\pm e_0\}$, the kernel of the double cover. The slice is thus the one place where the two criteria can be read against each other: the rotor and the boost factor are its two halves, and the only element of the slice on which both halves are trivial is the discrete unit $\pm e_0$.
+
 ### The Matrix Image of Each Subspace
 
 The matrix representative makes the criteria computable at a glance. With $\Phi(e_k) = -i\sigma_k$,
@@ -447,7 +472,7 @@ Every entry satisfies the restrictions of each subspace that contains it. On $T_
 
 ## Summary
 
-Restricted to the six distinguished subspaces, the polar representation $\tilde{Q} = re^{i\alpha}B\hat{q}$ loses one or more of its factors, and the loss is computable from the involution that defines the subspace. The scale is always the square root of the absolute value of the determinant, and it never degenerates except on the null cones. The phase is half the argument of the biquaternion norm: it is a free coordinate on the center and on the vector subspace, where the biquaternion norm is complex; it is frozen at $0$ on the real quaternion subspace and at $\pi/2$ on the antiquaternion subspace, where the biquaternion norm is definite; and it is a two-valued label of the causal character of the element on the two sectors, where the biquaternion norm is real indefinite. The boost factor is trivial exactly on the subspaces and on the elements for which $\tilde{Q}\tilde{Q}^{*}$ is a positive scalar: that is every element of the center, every parallel pair $\mathbf{v}\parallel\mathbf{w}$ in the vector subspace, and every element of the two halves; it is the exceptional case of a vanishing time coordinate, $a = 0$, or a vanishing vector part, in the sectors. The rotor is a central sign exactly when $\tilde{Q}/\rho$ is Hermitian: that is the center, and one branch of each sector — the definite branch of the informational sector and the timelike branch of the material sector — while on the other branch it is a pure unit vector, the direction of the element. The vector subspace exhibits the rotor relative to the boost, with the scalar part vanishing exactly when the two axes are orthogonal; on the two halves the rotor is free and the boost is absent, so the halves exhibit the rotor alone; and the sectors exhibit the boost alone and reduce the rotor to a sign or to a direction. The six restrictions together exhaust the ways in which the four factors can depend on one another, and the biquaternion norm — positive definite, negative definite, real indefinite, complex anisotropic, complex indefinite — is what decides which way each subspace goes.
+Restricted to the six distinguished subspaces, the polar representation $\tilde{Q} = re^{i\alpha}B\hat{q}$ loses one or more of its factors, and the loss is computable from the involution that defines the subspace. The scale is always the square root of the absolute value of the determinant, and it never degenerates except on the null cones. The phase is half the argument of the biquaternion norm: it is a free coordinate on the center and on the vector subspace, where the biquaternion norm is complex; it is frozen at $0$ on the real quaternion subspace and at $\pi/2$ on the antiquaternion subspace, where the biquaternion norm is definite; and it is a two-valued label of the causal character of the element on the two sectors, where the biquaternion norm is real indefinite. The boost factor is trivial exactly on the subspaces and on the elements for which $\tilde{Q}\tilde{Q}^{*}$ is a positive scalar: that is every element of the center, every parallel pair $\mathbf{v}\parallel\mathbf{w}$ in the vector subspace, and every element of the two halves; it is the exceptional case of a vanishing time coordinate, $a = 0$, or a vanishing vector part, in the sectors. The rotor is a central sign exactly when $\tilde{Q}/\rho$ is Hermitian: that is the center, and one branch of each sector — the definite branch of the informational sector and the timelike branch of the material sector — while on the other branch it is a pure unit vector, the direction of the element. The vector subspace exhibits the rotor relative to the boost, with the scalar part vanishing exactly when the two axes are orthogonal; on the two halves the rotor is free and the boost is absent, so the halves exhibit the rotor alone; and the sectors exhibit the boost alone and reduce the rotor to a sign or to a direction. The six restrictions together exhaust the ways in which the four factors can depend on one another, and the biquaternion norm — positive definite, negative definite, real indefinite, complex anisotropic, complex indefinite — is what decides which way each subspace goes. Read over the whole algebra rather than on one subspace, the two criteria cut two classes out of the nonzero elements: the boost-free elements, which are the positive multiples of the unitary elements and form a group, and the rotor-free elements, which are the complex multiples of the Hermitian definite ones and do not. Each class has five real dimensions, and they meet exactly in the center, the count $5+5-8 = 2$ closing against the eight real dimensions of the group of units; on the unit-norm slice they become the rotor group and the boosts with a discrete sign, the two halves of the Cartan decomposition.
 
 ## Summary of Notation
 
@@ -460,6 +485,7 @@ Restricted to the six distinguished subspaces, the polar representation $\tilde{
 | $\hat{q} = B^{-1}\tilde{Q}/\rho$ | the rotor, a unit real quaternion |
 | $\hat{q} = \pm e_0 \iff \tilde{Q}/\rho$ Hermitian | the criterion for a trivial rotor |
 | $B = e_0 \iff \tilde{Q}\tilde{Q}^{*}\in\mathbb{R}_{>0}e_0$ | the criterion for a trivial boost |
+| $\mathcal{U}$, $\mathcal{H}$ | the boost-free and the rotor-free classes, $B=e_0$ and $\hat{q}=\pm e_0$; five real dimensions each, meeting exactly in $\mathbb{C}_{\mathbb{B}}\setminus\{0\}$ |
 | $\mathbb{C}_{\mathbb{B}}$ | the center |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, $\operatorname{Sc}(\tilde{Q}) = 0$ |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | real quaternion subspace, antiquaternion subspace |

@@ -44,7 +44,13 @@ $$
 \{i\,e_0,\; e_1,\; e_2,\; e_3\}.
 $$
 
-As a real vector space, $\mathbb{M}_-$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: the product of two elements of $\mathbb{M}_-$ need not lie in $\mathbb{M}_-$ — for example $(ie_0)(ie_0) = -e_0$, whose scalar part is real, so the product lies outside. It **is** closed under the commutator $[\tilde{Q},\tilde{Y}] = \tilde{Q}\tilde{Y} - \tilde{Y}\tilde{Q}$, so with that bracket $\mathbb{M}_-$ is a Lie algebra of dimension $4$. This is the structural reason the four-vectors have a Lie-algebraic life alongside their vector-space life.
+As a real vector space, $\mathbb{M}_-$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: the product of two elements of $\mathbb{M}_-$ need not lie in $\mathbb{M}_-$ — for example $(ie_0)(ie_0) = -e_0$, whose scalar part is real, so the product lies outside. It **is** closed under the commutator, and the bracket is read directly off the coordinates: for $\tilde{Q} = iq'_0e_0 + \mathbf{q}$ and $\tilde{Y} = ir'_0e_0 + \mathbf{r}$,
+
+$$
+[\tilde{Q},\tilde{Y}] = \tilde{Q}\tilde{Y} - \tilde{Y}\tilde{Q} = 2\,\mathbf{q}\times\mathbf{r},
+$$
+
+a pure real vector, so the bracket image is the three-dimensional real vector part and the temporal direction $ie_0$ is central for the bracket. With that bracket $\mathbb{M}_-$ is a Lie algebra of dimension $4$, the direct sum of the central line and that three-dimensional bracket algebra. The symmetrised product, by contrast, always lies in the Hermitian subspace, $\tilde{Q}\tilde{Y} + \tilde{Y}\tilde{Q} \in \mathbb{M}_+$, so the product of two elements of $\mathbb{M}_-$ lies in $\mathbb{M}_+$ exactly when the two commute. This is the structural reason the four-vectors have a Lie-algebraic life alongside their vector-space life; the bracket, the $\mathbb{Z}/2$-grading it puts on the two sectors and the compact real form are the subject of the companion article *Biquaternion Lie Algebras*.
 
 ### The Defining Involution
 
@@ -178,6 +184,40 @@ The full development of the Lorentz transformation, including the boost biquater
 
 This is the biquaternion expression of the statement that the Lorentz group acts on the four-vector space and leaves it invariant. The rotor $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$, Hermitian for pure boosts and real for pure rotations; the space on which the rotor acts is $\mathbb{M}_-$.
 
+### The Bracket Algebra
+
+The material sector is a Lie algebra, and the bracket is written out in §*Definition and Basis*: for $\tilde{Q} = iq'_0e_0 + \mathbf{q}$ and $\tilde{Y} = ir'_0e_0 + \mathbf{r}$,
+
+$$
+[\tilde{Q},\tilde{Y}] = 2\,\mathbf{q}\times\mathbf{r},
+$$
+
+twice the vector product of the two spatial parts. Three structural facts follow at once.
+
+**The time coordinates never enter.** The bracket depends only on $\mathbf{q}$ and $\mathbf{r}$; the imaginary scalars $q'_0$ and $r'_0$ cancel identically. The temporal direction $ie_0$ is therefore **central for the bracket**, and the four-dimensional Lie algebra is the direct sum of the central line and a three-dimensional algebra,
+
+$$
+\mathbb{M}_- = \langle ie_0\rangle \oplus \langle e_1,e_2,e_3\rangle,
+$$
+
+with the second summand carrying the whole bracket. This is the algebraic root of the fact that the four-vectors have both a "time component" and a "spatial part" and that the transformations mix them, while the bracket itself does not.
+
+**The derived algebra is the compact real form.** On $\mathbf{q},\mathbf{r}$ the bracket is twice the ordinary vector product of $\mathbb{R}^3$, so the derived algebra is the real span $\mathrm{K} = \langle e_1,e_2,e_3\rangle$ of the three real vector units — the compact real form $\mathfrak{su}(2)$, the same three-dimensional space that $\mathbb{M}_-$ shares with the quaternion subspace, $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} = \mathrm{K}$. The explicit bracket in that basis is $[e_j,e_k] = 2\sum_l\epsilon_{jkl}e_l$. Taken whole, $\mathbb{M}_-$ with this bracket is the real Lie algebra $\mathfrak{u}(2) = \mathbb{R}ie_0 \oplus \mathfrak{su}(2)$: a compact Lie algebra of dimension $4$, with a one-dimensional centre and a simple part. The Lie-algebraic life of the four-vectors is therefore an $\mathfrak{su}(2)$ acting on the spatial part, with the time direction as an inert central direction; the full algebra, its $\mathbb{Z}/2$-grading by the involution and its fellow brackets are the subject of *Biquaternion Lie Algebras*.
+
+**The symmetrised product goes to the other sector.** The commutator stays in $\mathbb{M}_-$; the anticommutator goes to the opposite sector,
+
+$$
+\{\tilde{Q},\tilde{Y}\} = \tilde{Q}\tilde{Y} + \tilde{Y}\tilde{Q} \in \mathbb{M}_+,
+$$
+
+for any two elements of $\mathbb{M}_-$. In particular the **square** of every element of $\mathbb{M}_-$ lies in $\mathbb{M}_+$,
+
+$$
+\tilde{Q}^2 = -\left((q'_0)^2 + |\mathbf{q}|^2\right)e_0 + 2iq'_0\mathbf{q},
+$$
+
+with a real scalar part and an imaginary vector part. The product of two elements of $\mathbb{M}_-$ lands in $\mathbb{M}_+$ exactly in the commuting case, so the bracket $2\,\mathbf{q}\times\mathbf{r}$ is the exact obstruction: it vanishes precisely when $\mathbf{q}$ and $\mathbf{r}$ are parallel, which is the condition for the product $\tilde{Q}\tilde{Y}$ to stay Hermitian. This alternation is a general rule of the algebra — commutator to the opposite sector, anticommutator to the same one — and is tabulated in the companion article *The Hermitian Subspace M+ as the Informational Sector*, §*The Bracket Table of the Two Sectors*.
+
 ## Examples
 
 The reason $\mathbb{M}_-$ is the "material subspace" is that the physical four-vectors of relativistic physics all lie in it. This is a structural fact: the four-vectors are elements of the same four-dimensional real vector space, with the same quadratic form, and the same transformation law under the Lorentz group.
@@ -236,6 +276,8 @@ The **light cone** of Minkowski space is the zero divisor cone of $\mathbb{M}_-$
 
 The subspace $\mathbb{M}_-$ is specifically the **representation** of the Lorentz group.
 
+With the commutator, $\mathbb{M}_-$ is also a Lie algebra: the bracket is twice the vector product of the spatial parts, $[\tilde{Q},\tilde{Y}] = 2\,\mathbf{q}\times\mathbf{r}$, so the time direction is central and the algebra is $\mathfrak{u}(2) = \mathbb{R}ie_0 \oplus \mathfrak{su}(2)$. The commutator stays in $\mathbb{M}_-$ and the anticommutator goes to $\mathbb{M}_+$, so the **square** of every element of $\mathbb{M}_-$ lies in the Hermitian subspace, and a product of two elements of $\mathbb{M}_-$ is Hermitian exactly when the two commute. The two sectors are thus interlocked: the antisymmetric part of a product of four-vectors carries the Lie-algebraic, material structure, and the symmetric part carries the Jordan-theoretic, informational one.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -251,6 +293,8 @@ The subspace $\mathbb{M}_-$ is specifically the **representation** of the Lorent
 | $s^2 = N(d\tilde{Q}) = d\tilde{Q}\,\overline{d\tilde{Q}}$ | Invariant interval |
 | $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
 | $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation |
+| $[\tilde{Q},\tilde{Y}] = 2\,\mathbf{q}\times\mathbf{r}$ | Commutator on $\mathbb{M}_-$: twice the vector product, lands in $\mathbb{M}_-$ |
+| $\{\tilde{Q},\tilde{Y}\} \in \mathbb{M}_+$ | Anticommutator on $\mathbb{M}_-$: lands in the informational sector |
 
 ## Further Reading
 
@@ -262,4 +306,5 @@ The subspace $\mathbb{M}_-$ is specifically the **representation** of the Lorent
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric algebra formulation of special relativity.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the original formulation of spacetime algebra.
 - *Conventions in the Biquaternion Universe* and *Relations Between Subspaces*, the companion articles, for the notation and for the place of $\mathbb{M}_-$ among the six subspaces.
+- Within the corpus, the Lie-algebra structure of the sector is developed in *Biquaternion Lie Algebras* and *The Unitary Lie Algebra*, the symmetrised product in *Biquaternion Jordan Algebras*, and the product rule of the six subspaces in *The Six Subspaces and the Four Complex Products*; the informational partner is *The Hermitian Subspace M+ as the Informational Sector*.
 

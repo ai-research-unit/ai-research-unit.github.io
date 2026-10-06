@@ -1946,7 +1946,7 @@
 ### <a href="articles_maths/states-and-positive-functionals-on-a-topological-sesquialgebra.html">States and Positive Functionals on a Topological Sesquialgebra</a>
 <!-- the continuous positive functionals and the sesquilinear pairing $h_f(x,y)=f(x^{*}y)$ they induce; the Cauchy–Schwarz inequality; the GNS construction and the representation; the passage to the GNS construction of the degree-2 form category, named and deferred. -->
 
-### + <a href="articles_maths/the-continuous-involution-and-the-spectral-radius.html">The Continuous Involution and the Spectral Radius</a>
+### <a href="articles_maths/the-continuous-involution-and-the-spectral-radius.html">The Continuous Involution and the Spectral Radius</a>
 <!-- the continuity of the involution of a $C^*$-algebra and the identity $\|x^{*}x\|=\|x\|^{2}$; the invariance of the spectrum under the involution; the spectral radius of a self-adjoint element and its relation to the norm; the comparison with *The Involution and the Spectral Radius* of the bilinear layer. -->
 
 ### * Operator Theory
@@ -1965,7 +1965,7 @@
 
 ### Applications
 
-### + <a href="articles_maths/the-cauchy-schwarz-inequality-for-continuous-sesquilinear-maps.html">The Cauchy–Schwarz Inequality for Continuous Sesquilinear Maps</a>
+### <a href="articles_maths/the-cauchy-schwarz-inequality-for-continuous-sesquilinear-maps.html">The Cauchy–Schwarz Inequality for Continuous Sesquilinear Maps</a>
 <!-- the inequality for a positive sesquilinear map; the seminorm it defines; the passage from positive to continuous; the equality case. -->
 
 ### <a href="articles_maths/examples-of-topological-sesquialgebras.html">Examples of Topological Sesquialgebras</a>
@@ -2361,31 +2361,46 @@
 ### <a href="articles_maths/the-norm-defined-by-a-form.html">The Norm Defined by a Form</a>
 <!-- the norm $\|x\|^{2}=h(x,x)$ on a sesquialgebra with a positive definite form; the Cauchy–Schwarz inequality; the triangle inequality and the passage to a normed and then a Banach sesquialgebra; the $C^*$-condition and its relation to the involution. -->
 
-### + <a href="articles_maths/the-completion-of-a-sesquialgebra-with-a-form.html">The Completion of a Sesquialgebra with a Form</a>
+### <a href="articles_maths/the-completion-of-a-sesquialgebra-with-a-form.html">The Completion of a Sesquialgebra with a Form</a>
 <!-- the completion with respect to the norm of the form; the extension of the product, of the involution and of the form; the universal property; the recovery of the form and the collapse at $\varsigma=\mathrm{id}$. -->
 
-### + <a href="articles_maths/the-fundamental-symmetry-of-the-form.html">The Fundamental Symmetry of the Form</a>
+### <a href="articles_maths/the-fundamental-symmetry-of-the-form.html">The Fundamental Symmetry of the Form</a>
 <!-- the symmetry $J$ that splits an indefinite form into its positive and its negative parts; the Gram operator; the equivalence of the indefinite and the definite pairings; the passage to the Krein space of the bilinear degree-2 form category, named and deferred. -->
 
 ### Operator Theory
 
-### + <a href="articles_maths/the-adjoint-under-a-hermitian-form.html">The Adjoint under a Hermitian Form</a>
+### <a href="articles_maths/the-adjoint-under-a-hermitian-form.html">The Adjoint under a Hermitian Form</a>
 <!-- the adjoint of a bounded operator with respect to the Hermitian form $h$; the anti-automorphism $T\mapsto T^{\dagger}$; the two-slot adjoint of a conjugate-linear operator; the self-adjoint and the normal operators; the relation to *Hermitian Adjoints on a Hilbert Algebra* of the bilinear layer. -->
 
-### + <a href="articles_maths/unitary-and-isometric-operators-of-the-form.html">Unitary and Isometric Operators of the Form</a>
+### <a href="articles_maths/unitary-and-isometric-operators-of-the-form.html">Unitary and Isometric Operators of the Form</a>
 <!-- the operators preserving the form, $h(Tx,Ty)=h(x,y)$; the unitary group and the isometry group; the indefinite case and the Krein isometries; the relation to the unitary group of the elements. -->
+
+### <a href="articles_maths/self-adjoint-and-skew-operators-of-the-form.html">Self-Adjoint and Skew Operators of the Form</a>
+<!-- the splitting of the operator algebra into the self-adjoint and the skew-adjoint part of the adjoint, $T=\tfrac12(T+T^{\dagger})+\tfrac12(T-T^{\dagger})$; the sign rule and the three product relations; the skew part as the Lie algebra of the unitary group and the self-adjoint part as a special Jordan algebra; the exponential and the Cayley transform; the regular representation and the indefinite transport $T^{\dagger}=JT^{*}J$. -->
+
+### <a href="articles_maths/the-spectra-of-self-adjoint-operators-of-the-form.html">The Spectra of Self-Adjoint Operators of the Form</a>
+<!-- the finite-dimensional spectral theorem in the definite case: the $h$-orthonormal diagonalisation, the real spectrum, the spectral decomposition and the functional calculus; the min-max principle and the Rayleigh quotient; the norm identity $\|T\|=\rho(T)$; the positivity criterion $T$ positive $\iff$ the spectrum in $[0,\infty)$ and the positive square root; the imaginary spectrum of the skew-adjoint operators and the unit circle of the unitary ones; the invariance under the unitary group; the failure in the indefinite case with the hyperbolic witness. -->
+
+### <a href="articles_maths/the-polar-decomposition-of-an-operator-of-the-form.html">The Polar Decomposition of an Operator of the Form</a>
+<!-- the modulus $|T|=(T^{\dagger}T)^{1/2}$ and the phase $U$ with $U(|T|x)=Tx$; the decomposition $T=U|T|$ with the partial-isometry projections, the unitary case and the uniqueness; the obstruction in the indefinite case, the hyperbolic operator whose modulus would be $\mathrm{i}$ times the identity. -->
+
+### <a href="articles_maths/unitary-equivalence-and-congruence-of-operators-of-the-form.html">Unitary Equivalence and Congruence of Operators of the Form</a>
+<!-- the conjugation $T\mapsto UTU^{\dagger}$ with its invariant the spectrum and the congruence $h\mapsto h\circ(C\times C)$ with its invariant the inertia; the Gram matrix transformation $H\mapsto C^{T}H\varsigma(C)$ and Sylvester's law; the unitary group as the stabiliser of the form; the transport $T\mapsto C^{-1}TC$ of the operator theory, and the failure of compatibility under a general congruence, preserved only by a $*$-automorphism. -->
+
+### <a href="articles_maths/completely-positive-maps-of-a-sesquialgebra-with-a-form.html">Completely Positive Maps of a Sesquialgebra with a Form</a>
+<!-- the positive maps of the cone of the Hermitian squares and the amplification by the form on $M_n(A)$; the Hermitian sandwich $\Theta_a(x)=axa^{*}$ as the completely positive map of Kraus rank one; Choi's theorem and the Kraus form in the matrix model; the transpose as the positive and not completely positive witness; the unital and the unitary channels as the inner automorphisms. -->
 
 ### * Theory
 
 ### <a href="articles_maths/the-indefinite-case-and-the-signature.html">The Indefinite Case and the Signature</a>
 <!-- the signature and the inertia of a Hermitian form; the Pontryagin index and the decomposition into the positive and the negative parts; the indefinite inner product; the boundary with the Krein space, which belongs to *Topology on Algebras with a degree-2 form* and is named rather than developed. -->
 
-### + <a href="articles_maths/the-form-on-the-biquaternion-algebra-as-a-sesquilinear-form.html">The Form on the Biquaternion Algebra as a Sesquilinear Form</a>
+### <a href="articles_maths/the-form-on-the-biquaternion-algebra-as-a-sesquilinear-form.html">The Form on the Biquaternion Algebra as a Sesquilinear Form</a>
 <!-- the form $\mathrm{Sc}(Q^{*}Q')$ on $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; its positive definiteness; the indefinite form $\mathrm{Sc}(\bar Q Q')$ and its signature $(2,6)$ over $\mathbb{R}$; the unitary slice; the caution that quaternion conjugation ${}^{\natural}$ is $\mathbb{C}$-linear, so the form it gives is bilinear and belongs to the bilinear layer. -->
 
 ### Applications
 
-### + <a href="articles_maths/examples-of-topological-sesquialgebras-with-a-form.html">Examples of Topological Sesquialgebras with a Form</a>
+### <a href="articles_maths/examples-of-topological-sesquialgebras-with-a-form.html">Examples of Topological Sesquialgebras with a Form</a>
 <!-- $\mathbb{C}$ with the form $h(z,w)=z\bar w$; $M_n(\mathbb{C})$ with the trace form $\operatorname{tr}(S^{*}T)$; the group algebra with the $L^2$ form; the biquaternion trace form; the tabulation of which forms are positive definite, which indefinite, and which collapse to bilinear. -->
 
 ## Algebraic Topology
@@ -5637,18 +5652,16 @@ ho_L=(\det\Phi)^2$, and the remark that only the $2	imes2$ determinant sees the 
 ### <a href="articles_maths/the-six-subspaces-under-the-complex-bilinear-form.html">The Six Subspaces under the Complex Bilinear Form</a>
 <!-- the restriction theory of the entry point's form on the six distinguished real subspaces: the six restriction matrices in the natural real bases, of signatures $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(1,3)$ on the quaternion subspace, $(3,1)$ on the anti-quaternion subspace, $(4,0)$ on the Hermitian subspace and $(0,4)$ on the anti-Hermitian subspace; the two definite rows and the maximal definite subspaces of the realified $(4,4)$; the isotropic lines of the four indefinite rows, with one null element each and the null-cone dimensions; the isometry groups of the restrictions, $O(1,1)$, $O(3,3)$, $O(1,3)$, $O(3,1)$, $O(4)$ and $O(4)$; the orthogonal splitting $\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B})$; and the comparison with the quaternion bilinear table. It does not re-derive the form. -->
 
-##### Operators
-
-### <a href="articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.html">Association and the Transpose on the Biquaternion Algebra</a>
-<!-- the transpose and adjoint calculus of the entry point's form: association $F^{\approx}$ defined by $\mathrm{Sc}(F\tilde R\,\tilde S)=\mathrm{Sc}(\tilde R\,F^{\approx}\tilde S)$ as the transpose for the indefinite form; the algebra identities $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$, $L_a^{\approx}=R_a$ and $R_b^{\approx}=L_b$, with $(FG)^{\approx}=G^{\approx}F^{\approx}$; the matrix formula $F^{\approx}=DF^{\mathsf T}D$, the plain transpose exactly for the operators fixing $e_0$ and preserving the vector part; and the identity $\bar F^{\approx}=DF^{*}D$ against the Hermitian adjoint, collapsing to $\bar F^{\approx}=F^{*}=F^{-1}$ on the vector-preserving unitaries. It cites the general transpose of a bilinear form and is kept apart from the dagger. It was purged from *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*. -->
-
-##### In the Matrix Representation
-
 ### <a href="articles_maths/the-biquaternion-algebra-in-the-2x2-matrix-representation.html">The Biquaternion Algebra in the $2\times2$ Matrix Representation</a>
 <!-- the complex bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ and the plain product read on the $2\times2$ realization $\Phi(e_0)=I$, $\Phi(e_k)=-i\sigma_k$: the product is the matrix product, $\Phi(\tilde P)\Phi(\tilde Q)=\Phi(\tilde P\tilde Q)$; the form is the plain trace pairing $\tfrac12\operatorname{Tr}(\Phi(\tilde P)\Phi(\tilde Q))$, with diagonal $\sum_\mu\varepsilon_\mu Q_\mu^2$, coefficient Gram matrix the sign matrix $E$, real signature $(4,4)$, isotropic cone of real dimension $6$ and isometry group $O_4(\mathbb{C})$; the units $GL_2(\mathbb{C})$, the zero divisors the singular matrices, the invariants $\operatorname{Tr}\Phi=2Q_0$ and $\det\Phi=\sum_\mu Q_\mu^2$; the inner automorphisms and the transpose as isometries. -->
 
 ### <a href="articles_maths/the-biquaternion-algebra-in-the-4x4-regular-matrix-representation.html">The Biquaternion Algebra in the $4\times4$ Regular Matrix Representation</a>
 <!-- the same group on the left regular representation $\rho_L(\tilde Q)(\tilde R)=\tilde Q\tilde R$: the product is the product of the regular matrices, the form is $\tfrac12\operatorname{Tr}(\rho_L(\tilde P)\rho_L(\tilde Q))=2\langle\tilde P,\tilde Q\rangle$ with the same coefficient Gram matrix $E$ and signature $(4,4)$; the two commuting copies $\rho_L(\mathbb{B})$ and $\rho_R(\mathbb{B})$ with $\rho_R(\tilde Q)=E\rho_L(\tilde Q)^{\mathsf T}E$ and $\rho_L(\tilde Q^{\natural})=\rho_L(\tilde Q)^{\mathsf T}$; the invariants $\operatorname{Tr}\rho_L=4Q_0$ and $\det\rho_L=\langle\tilde Q,\tilde Q\rangle_{\natural}^2$; the double centralizer structure and the two minimal left ideals. -->
+
+##### Operators
+
+### <a href="articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.html">Association and the Transpose on the Biquaternion Algebra</a>
+<!-- the transpose and adjoint calculus of the entry point's form: association $F^{\approx}$ defined by $\mathrm{Sc}(F\tilde R\,\tilde S)=\mathrm{Sc}(\tilde R\,F^{\approx}\tilde S)$ as the transpose for the indefinite form; the algebra identities $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$, $L_a^{\approx}=R_a$ and $R_b^{\approx}=L_b$, with $(FG)^{\approx}=G^{\approx}F^{\approx}$; the matrix formula $F^{\approx}=DF^{\mathsf T}D$, the plain transpose exactly for the operators fixing $e_0$ and preserving the vector part; and the identity $\bar F^{\approx}=DF^{*}D$ against the Hermitian adjoint, collapsing to $\bar F^{\approx}=F^{*}=F^{-1}$ on the vector-preserving unitaries. It cites the general transpose of a bilinear form and is kept apart from the dagger. It was purged from *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*. -->
 
 #### Topology on the Biquaternions as a Quaternionic Algebra over $\mathbb{C}$
 
@@ -5678,6 +5691,12 @@ ho_L=(\det\Phi)^2$, and the remark that only the $2	imes2$ determinant sees the 
 ### <a href="articles_maths/the-six-subspaces-under-the-quaternion-bilinear-form.html">The Six Subspaces under the Quaternion Bilinear Form</a>
 <!-- the quaternion bilinear form $N$ on the six distinguished real subspaces: signatures $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(4,0)$ on the quaternion subspace, $(0,4)$ on the anti-quaternion subspace, $(1,3)$ on the Hermitian subspace and $(3,1)$ on the anti-Hermitian subspace; the definite rows, the maximal definite subspaces and the comparison with the complex bilinear form. -->
 
+### <a href="articles_maths/the-biquaternion-quaternionic-algebra-in-the-2x2-matrix-representation.html">The Biquaternion Quaternionic Algebra in the $2\times2$ Matrix Representation</a>
+<!-- the quaternion bilinear form $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$ and the quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ read on the $2\times2$ realization: the natural conjugation is the adjugate $\Phi(\tilde Q^{\natural})=\operatorname{adj}\Phi(\tilde Q)=\varepsilon\Phi(\tilde Q)^{\mathsf T}\varepsilon^{-1}$ with $\varepsilon=\Phi(-e_2)$, the product is $\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)$, its square is the scalar matrix $N(\tilde Q)I$; the form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(\Phi(\tilde P)\operatorname{adj}\Phi(\tilde Q))$, with diagonal the determinant $N(\tilde Q)$, coefficient Gram matrix the identity $I_4$, real signature $(4,4)$ split, null set the singular matrices of real dimension $6$ and isometry group $O_4(\mathbb{C})$; the units $GL_2(\mathbb{C})$, the norm-one group $SL_2(\mathbb{C})$, the idempotents $0$ and $e_0$. -->
+
+### <a href="articles_maths/the-biquaternion-quaternionic-algebra-in-the-4x4-regular-matrix-representation.html">The Biquaternion Quaternionic Algebra in the $4\times4$ Regular Matrix Representation</a>
+<!-- the same group on the left regular representation: the natural conjugation is the transposition $\rho_L(\tilde Q^{\natural})=\rho_L(\tilde Q)^{\mathsf T}$, the product is $\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)$, the form is $\tfrac12\operatorname{Tr}(\rho_L(\tilde P)\rho_L(\tilde Q)^{\mathsf T})=2\langle\tilde P,\tilde Q\rangle_{\natural}$, with diagonal twice the norm, coefficient Gram matrix the identity $I_4$ of split real signature $(4,4)$, null set the singular regular matrices of rank two and real dimension $6$; the invariants $\operatorname{Tr}\rho_L=4Q_0$ and $\det\rho_L=N(\tilde Q)^2$. -->
+
 ##### Operators
 
 ### <a href="articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-signed-inner-conjugation.html">Two-Sided Operators on the Biquaternion Algebra with Signed Inner Conjugation</a>
@@ -5688,14 +5707,6 @@ ho_L=(\det\Phi)^2$, and the remark that only the $2	imes2$ determinant sees the 
 
 ### <a href="articles_maths/the-pin-and-spin-groups-of-the-biquaternion-algebra-with-signed-inner-conjugation.html">The Pin and Spin Groups of the Biquaternion Algebra with Signed Inner Conjugation</a>
 <!-- the pin group $\mathrm{Pin}=\{\tilde A:N(\tilde A)=\pm1\}$ and the spin group $\mathrm{Spin}=\{N=1\}=\ker N$, normal of index two with quotient $\{\pm1\}$ through the norm, in the matrix picture $\{\det^{2}=1\}$ and $SL_2(\mathbb{C})$, connected of real dimension $6$; the action $\Theta$ as a group homomorphism with kernel $\{\pm e_0\}$, a two-to-one cover of its image in the orthogonal group of the form; on $\mathrm{Spin}$ the twisted operator is the inner automorphism, with image $\mathrm{Inn}(\mathbb{B})\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C})$ fixing the centre and rotating the vector subspace, the classical two-to-one cover of the rotation group by $SL_2(\mathbb{C})$; the norm-minus-one coset of isometries that are multiplicative only up to the sign; the reflection $\Theta_{\tilde V}|_V=-N(\tilde V)\rho_{\tilde V}$ carried by a vector, with the minus of the odd part, and the generation of the rotations by the reflections, the pin group by the vectors. The general theory is *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. -->
-
-##### In the Matrix Representation
-
-### <a href="articles_maths/the-biquaternion-quaternionic-algebra-in-the-2x2-matrix-representation.html">The Biquaternion Quaternionic Algebra in the $2\times2$ Matrix Representation</a>
-<!-- the quaternion bilinear form $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$ and the quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ read on the $2\times2$ realization: the natural conjugation is the adjugate $\Phi(\tilde Q^{\natural})=\operatorname{adj}\Phi(\tilde Q)=\varepsilon\Phi(\tilde Q)^{\mathsf T}\varepsilon^{-1}$ with $\varepsilon=\Phi(-e_2)$, the product is $\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)$, its square is the scalar matrix $N(\tilde Q)I$; the form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(\Phi(\tilde P)\operatorname{adj}\Phi(\tilde Q))$, with diagonal the determinant $N(\tilde Q)$, coefficient Gram matrix the identity $I_4$, real signature $(4,4)$ split, null set the singular matrices of real dimension $6$ and isometry group $O_4(\mathbb{C})$; the units $GL_2(\mathbb{C})$, the norm-one group $SL_2(\mathbb{C})$, the idempotents $0$ and $e_0$. -->
-
-### <a href="articles_maths/the-biquaternion-quaternionic-algebra-in-the-4x4-regular-matrix-representation.html">The Biquaternion Quaternionic Algebra in the $4\times4$ Regular Matrix Representation</a>
-<!-- the same group on the left regular representation: the natural conjugation is the transposition $\rho_L(\tilde Q^{\natural})=\rho_L(\tilde Q)^{\mathsf T}$, the product is $\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)$, the form is $\tfrac12\operatorname{Tr}(\rho_L(\tilde P)\rho_L(\tilde Q)^{\mathsf T})=2\langle\tilde P,\tilde Q\rangle_{\natural}$, with diagonal twice the norm, coefficient Gram matrix the identity $I_4$ of split real signature $(4,4)$, null set the singular regular matrices of rank two and real dimension $6$; the invariants $\operatorname{Tr}\rho_L=4Q_0$ and $\det\rho_L=N(\tilde Q)^2$. -->
 
 #### Topology on the Biquaternions as a Sesquialgebra over $\mathbb{C}$
 
@@ -5773,6 +5784,12 @@ ho_L=(\det\Phi)^2$, and the remark that only the $2	imes2$ determinant sees the 
 ### <a href="articles_maths/the-six-subspaces-under-the-quaternion-sesquilinear-form.html">The Six Subspaces under the Quaternion Sesquilinear Form</a>
 <!-- the quaternion sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ of signature $(2,6)$ restricted to the six distinguished subspaces: positive definite on the centre $(2,0)$ and negative definite on the vector subspace $(0,6)$, which are the fundamental decomposition of the Krein space, and indefinite of signature $(1,3)$ on the quaternion, anti-quaternion and two Hermitian subspaces; the restriction matrices $\operatorname{diag}(1,1)$, $-\mathrm{I}_6$ and $\mathrm{E}$; the four real light cones of dimension $3$ and their isotropic lines; the coincidences with the complex sesquilinear form, the complex bilinear form and the quaternion bilinear form; the isometry groups $O(2)$, $O(6)$ and four copies of $O(1,3)$ -->
 
+### <a href="articles_maths/the-biquaternion-quaternionic-sesquialgebra-in-the-2x2-matrix-representation.html">The Biquaternion Quaternionic Sesquialgebra in the $2\times2$ Matrix Representation</a>
+<!-- the quaternion sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural*}\tilde Q)=\sum_\mu\varepsilon_\mu\overline{P_\mu}Q_\mu$ and the product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ read on the $2\times2$ realization, where the two conjugations are the adjugate and the conjugate transpose and the product is $\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}$; the form is $\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde P)^{\dagger}\Phi(\tilde Q))$, with diagonal $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^2$, positive on the centre and negative on the vector subspace, complex inertia $(1,3)$, real signature $(2,6)$, Krein null set the real cone of real dimension $7$, isometry group $U(1,3)$ of realification $O(2,6)$; the natural conjugation $J={}^{\natural}$ is the fundamental symmetry and the adjugation. -->
+
+### <a href="articles_maths/the-biquaternion-quaternionic-sesquialgebra-in-the-4x4-regular-matrix-representation.html">The Biquaternion Quaternionic Sesquialgebra in the $4\times4$ Regular Matrix Representation</a>
+<!-- the same group on the left regular representation, where the two conjugations are the transposition and the conjugate transpose: the product is $\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)^{\dagger}$, the form is $\tfrac12\operatorname{Tr}(\operatorname{adj}\rho_L(\tilde P)^{\dagger}\rho_L(\tilde Q))=2\overline{N(\tilde P)}\langle\tilde P,\tilde Q\rangle_{\natural*}$, exactly twice the form on the norm-one slice, of complex inertia $(1,3)$ and real signature $(2,6)$, Krein null set the real cone of real dimension $7$, isometry group $U(1,3)$ of realification $O(2,6)$; the fundamental symmetry is the plain transposition. -->
+
 ##### Operators
 
 ### <a href="articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-biquaternion-algebra.html">J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra</a>
@@ -5783,14 +5800,6 @@ ho_L=(\det\Phi)^2$, and the remark that only the $2	imes2$ determinant sees the 
 
 ### <a href="articles_maths/the-indefinite-hermitian-sandwich-on-the-biquaternion-algebra.html">The Indefinite Hermitian Sandwich on the Biquaternion Algebra</a>
 <!-- the dagger sandwich $H_{Q}(T)=QTQ^{\dagger}$ for the Krein form on $\mathrm{End}_\mathbb{C}(\mathbb{B})\cong M_4(\mathbb{C})$, with $Q^{\dagger}=JQ^{*}J$ and $J={}^{\natural}$ of matrix $E=\mathrm{diag}(1,-1,-1,-1)$: the laws $H_Q(T^{\dagger})=H_Q(T)^{\dagger}$, $H_Q(H_S(T))=H_{QS}(T)$, multiplicativity exactly for $Q^{\dagger}Q=\mathrm{id}$, and the parameter rule $H_{\alpha Q}=\lvert\alpha\rvert^{2}H_Q$; the preservation for $J$-unitary $Q$ of the Krein form in the twisted sense $[H_Q(T)\tilde X,\tilde Y]=[TQ^{\dagger}\tilde X,Q^{\dagger}\tilde Y]$ and $[H_Q(T)\tilde X,\tilde X]=[TQ^{\dagger}\tilde X,Q^{\dagger}\tilde X]$, of $J$-self-adjointness, $J$-positivity and $J$-unitarity, and the transport $\ker H_Q(T)=(Q^{\dagger})^{-1}\ker T$, $\mathrm{im}\,H_Q(T)=Q\,\mathrm{im}\,T$; the parameters from the algebra with $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$ and $(R_{\tilde Q})^{\dagger}=L_{\bar{\tilde Q}}$, the $J$-unitarity criteria — central phases for the one-sided families and the norm-one slice $\lvert N(\tilde Q)\rvert=1$ for the two-sided family — the identity $(\Theta_{\tilde Q})^{\dagger}=\Theta_{\tilde Q^{-1}}$ on that slice, and the trivial sandwich of the phases, the kernel of $Q\mapsto H_Q$ being $S^1e_0$; the dictionary $H_J(T)=JTJ$ with $H_J(T)=T^{*}$ for $J$-self-adjoint $T$; and the contrast with the definite sandwich $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, the indefinite sandwich preserving the form and not the metric. -->
-
-##### In the Matrix Representation
-
-### <a href="articles_maths/the-biquaternion-quaternionic-sesquialgebra-in-the-2x2-matrix-representation.html">The Biquaternion Quaternionic Sesquialgebra in the $2\times2$ Matrix Representation</a>
-<!-- the quaternion sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural*}\tilde Q)=\sum_\mu\varepsilon_\mu\overline{P_\mu}Q_\mu$ and the product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ read on the $2\times2$ realization, where the two conjugations are the adjugate and the conjugate transpose and the product is $\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}$; the form is $\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde P)^{\dagger}\Phi(\tilde Q))$, with diagonal $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^2$, positive on the centre and negative on the vector subspace, complex inertia $(1,3)$, real signature $(2,6)$, Krein null set the real cone of real dimension $7$, isometry group $U(1,3)$ of realification $O(2,6)$; the natural conjugation $J={}^{\natural}$ is the fundamental symmetry and the adjugation. -->
-
-### <a href="articles_maths/the-biquaternion-quaternionic-sesquialgebra-in-the-4x4-regular-matrix-representation.html">The Biquaternion Quaternionic Sesquialgebra in the $4\times4$ Regular Matrix Representation</a>
-<!-- the same group on the left regular representation, where the two conjugations are the transposition and the conjugate transpose: the product is $\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)^{\dagger}$, the form is $\tfrac12\operatorname{Tr}(\operatorname{adj}\rho_L(\tilde P)^{\dagger}\rho_L(\tilde Q))=2\overline{N(\tilde P)}\langle\tilde P,\tilde Q\rangle_{\natural*}$, exactly twice the form on the norm-one slice, of complex inertia $(1,3)$ and real signature $(2,6)$, Krein null set the real cone of real dimension $7$, isometry group $U(1,3)$ of realification $O(2,6)$; the fundamental symmetry is the plain transposition. -->
 
 #### Topology on the Biquaternions as an Algebra over $\mathbb{R}$
 
@@ -5805,18 +5814,16 @@ ho_L=(\det\Phi)^2$, and the remark that only the $2	imes2$ determinant sees the 
 ### <a href="articles_maths/the-six-subspaces-under-the-trace-form.html">The Six Subspaces under the Trace Form</a>
 <!-- the trace form $\tau(\tilde P,\tilde Q)=\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=8\,\mathrm{Re}\langle\tilde P,\tilde Q\rangle$ of signature $(4,4)$ restricted to the six distinguished subspaces, the real-algebra reading of the same table as the complex bilinear form rescaled by $8$: $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(1,3)$ on the quaternion subspace, $(3,1)$ on the anti-quaternion subspace, positive definite $(4,0)$ on the Hermitian subspace and negative definite $(0,4)$ on the anti-Hermitian one, the last two the orthogonal splitting of the algebra and its four positive and four negative directions; the null cones of the indefinite rows; the isometry groups $O(1,1)$, $O(3,3)$, $O(1,3)$, $O(3,1)$ and $O(4)$; the automorphisms of the algebra inside $O(4,4)$ -->
 
-##### Operators
-
-### <a href="articles_maths/operators-of-the-real-biquaternion-algebra.html">Operators of the Real Biquaternion Algebra</a>
-<!-- the operators of the real biquaternion algebra: the left and right multiplications and the two-sided sandwich as real endomorphisms of $\mathbb{R}^8$, their composition laws, the four adjoints $(L_{\tilde Q})^{\langle,\rangle}=R_{\tilde Q}$, $(L_{\tilde Q})^{\langle,\rangle_{\natural}}=L_{\tilde Q^{\natural}}$, $(L_{\tilde Q})^{\langle,\rangle_{*}}=L_{\tilde Q^{*}}$ and $(L_{\tilde Q})^{\langle,\rangle_{\natural*}}=R_{\bar{\tilde Q}}$ for the four realified forms, the type criteria on the Hermitian, anti-Hermitian and unitary slices, the real Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ with $\mathbb{B}^\times=U(2)\cdot\exp(\mathbb{M}_+)$, and the real groups $O(4)$, $U(2)$, $O(1,3)$ that the realified forms single out. -->
-
-##### In the Matrix Representation
-
 ### <a href="articles_maths/the-biquaternion-algebra-over-r-in-the-2x2-matrix-representation.html">The Biquaternion Algebra over $\mathbb{R}$ in the $2\times2$ Matrix Representation</a>
 <!-- the realification $M_2(\mathbb{C})\cong\mathbb{R}^8$ with complex structure $iI$ and coefficient conjugation the conjugation of the matrix; the trace form $\tau(\tilde P,\tilde Q)=4\operatorname{Re}\operatorname{Tr}(\Phi(\tilde P)\Phi(\tilde Q))=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle$, of diagonal $8\sum_\mu\varepsilon_\mu(q_\mu^2-q'_\mu{}^2)$, real signature $(4,4)$, Gram matrix the block matrix of the realified complex bilinear form rescaled by $8$, invariant under the automorphisms of the algebra; the four realified forms as the real parts of the four pairings, with signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$; the Minkowski form of signature $(1,3)$ belongs to the Lorentzian slice. -->
 
 ### <a href="articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-regular-matrix-representation.html">The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Regular Matrix Representation</a>
 <!-- the same group on the real regular representation $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$: the trace form is literally the matrix trace $\tau(\tilde P,\tilde Q)=\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle=2\operatorname{Re}\operatorname{Tr}(\rho_L(\tilde P)\rho_L(\tilde Q))$, with $\operatorname{Tr}L_{\tilde Q}=8\operatorname{Re}Q_0$ and $\det L_{\tilde Q}=\lvert N(\tilde Q)\rvert^4$; diagonal $8\sum_\mu\varepsilon_\mu(q_\mu^2-q'_\mu{}^2)$ of signature $(4,4)$, invariant under the automorphisms of the algebra; the four realified forms with the signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$; the zero divisors are the singular real regular matrices, of real rank four, and the Minkowski form and the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ belong to the Lorentzian slice and the sesquialgebra group. -->
+
+##### Operators
+
+### <a href="articles_maths/operators-of-the-real-biquaternion-algebra.html">Operators of the Real Biquaternion Algebra</a>
+<!-- the operators of the real biquaternion algebra: the left and right multiplications and the two-sided sandwich as real endomorphisms of $\mathbb{R}^8$, their composition laws, the four adjoints $(L_{\tilde Q})^{\langle,\rangle}=R_{\tilde Q}$, $(L_{\tilde Q})^{\langle,\rangle_{\natural}}=L_{\tilde Q^{\natural}}$, $(L_{\tilde Q})^{\langle,\rangle_{*}}=L_{\tilde Q^{*}}$ and $(L_{\tilde Q})^{\langle,\rangle_{\natural*}}=R_{\bar{\tilde Q}}$ for the four realified forms, the type criteria on the Hermitian, anti-Hermitian and unitary slices, the real Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ with $\mathbb{B}^\times=U(2)\cdot\exp(\mathbb{M}_+)$, and the real groups $O(4)$, $U(2)$, $O(1,3)$ that the realified forms single out. -->
 
 #### Synthesis and Relations Between the Four Forms
 

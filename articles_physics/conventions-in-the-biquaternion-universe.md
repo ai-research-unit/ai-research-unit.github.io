@@ -404,21 +404,21 @@ $$
 
 each being the trace form of its own involution up to the factor of the trace convention, $2h_a(\tilde{P},\tilde{Q}) = \mathrm{Tr}(\tilde{P}^a\tilde{Q})$. Their types and their readings on the algebra and on the material sector are then:
 
-| Form | Involution | Type over $\mathbb{C}$ | On $\mathbb{B}$ | On $\mathbb{M}_-$ |
-|---|---|---|---|---|
-| $\langle\tilde{P},\tilde{Q}\rangle$, the bilinear form | $\mathrm{id}$ | $\mathbb{C}$-**bilinear** | complex, Gram $\mathrm{E}$ | $-c^2t^2-x^2-y^2-z^2$, signature $(0,4)$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$, the quaternionic bilinear form | ${}^{\natural}$ | $\mathbb{C}$-**bilinear** | complex, Gram $I_4$ | $-c^2t^2+x^2+y^2+z^2$, signature $(3,1)$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$, the sesquilinear form | ${}^{*}$ | $\mathbb{C}$-**sesquilinear**, positive definite | signature $(8,0)$ | $c^2t^2+x^2+y^2+z^2$, signature $(4,0)$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$, the quaternionic sesquilinear form | $\bar{\cdot}$ | $\mathbb{C}$-**sesquilinear**, indefinite | signature $(2,6)$ | $c^2t^2-x^2-y^2-z^2$, signature $(1,3)$ |
+| Form | Definition | Involution | Type over $\mathbb{C}$ | On $\mathbb{B}$ | On $\mathbb{M}_-$ |
+|---|---|---|---|---|---|
+| $\langle\tilde{P},\tilde{Q}\rangle$, the bilinear form | $\mathrm{Sc}(\tilde{P}\tilde{Q})$ | $\mathrm{id}$ | $\mathbb{C}$-**bilinear** | complex, Gram $\mathrm{E}$ | $-c^2t^2-x^2-y^2-z^2$, signature $(0,4)$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$, the quaternionic bilinear form | $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$ | ${}^{\natural}$ | $\mathbb{C}$-**bilinear** | complex, Gram $I_4$ | $-c^2t^2+x^2+y^2+z^2$, signature $(3,1)$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$, the sesquilinear form | $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ | ${}^{*}$ | $\mathbb{C}$-**sesquilinear**, positive definite | signature $(8,0)$ | $c^2t^2+x^2+y^2+z^2$, signature $(4,0)$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$, the quaternionic sesquilinear form | $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})$ | $\bar{\cdot}$ | $\mathbb{C}$-**sesquilinear**, indefinite | signature $(2,6)$ | $c^2t^2-x^2-y^2-z^2$, signature $(1,3)$ |
 
 Each pairing has its quadratic form on the diagonal, and the four norms are then:
 
-| Norm | Value |
-|---|---|
-| $\langle\tilde{Q},\tilde{Q}\rangle$, the bilinear norm | $Q_0^2 - Q_1^2 - Q_2^2 - Q_3^2$ |
-| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, the quaternionic bilinear norm | $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$ |
-| $\langle\tilde{Q},\tilde{Q}\rangle_{*}$, the sesquilinear norm | $\lvert Q_0\rvert^2 + \lvert Q_1\rvert^2 + \lvert Q_2\rvert^2 + \lvert Q_3\rvert^2$ |
-| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}$, the quaternionic sesquilinear norm | $\lvert Q_0\rvert^2 - \lvert Q_1\rvert^2 - \lvert Q_2\rvert^2 - \lvert Q_3\rvert^2$ |
+| Norm | Definition | Value |
+|---|---|---|
+| $\langle\tilde{Q},\tilde{Q}\rangle$, the bilinear norm | $\mathrm{Sc}(\tilde{Q}\tilde{Q})$ | $Q_0^2 - Q_1^2 - Q_2^2 - Q_3^2$ |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, the quaternionic bilinear norm | $\mathrm{Sc}(\tilde{Q}^{\natural}\tilde{Q})$ | $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$ |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{*}$, the sesquilinear norm | $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})$ | $\lvert Q_0\rvert^2 + \lvert Q_1\rvert^2 + \lvert Q_2\rvert^2 + \lvert Q_3\rvert^2$ |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}$, the quaternionic sesquilinear norm | $\mathrm{Sc}(\tilde{Q}^{\natural}\tilde{Q}^{*})$ | $\lvert Q_0\rvert^2 - \lvert Q_1\rvert^2 - \lvert Q_2\rvert^2 - \lvert Q_3\rvert^2$ |
 
 Four readings follow, and the names of the involutions must not be allowed to settle them in advance.
 

@@ -44,7 +44,19 @@ $$
 \{e_0,\; i\,e_1,\; i\,e_2,\; i\,e_3\}.
 $$
 
-As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: for example, $(ie_1)(ie_2) = -e_3$, whose vector coefficient is real, so the product lies outside the subspace. (The square of a single element, by contrast, stays in the subspace: for $\tilde{Q} = q_0e_0 + i\mathbf{q}'$ one has $\tilde{Q}^2 = q_0^2 + |\mathbf{q}'|^2 + 2iq_0\mathbf{q}'$.)
+As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: for example, $(ie_1)(ie_2) = -e_3$, whose vector coefficient is real, so the product lies outside the subspace. The obstruction is the antisymmetric part of the product. For $\tilde{Q} = q_0e_0 + i\mathbf{u}$ and $\tilde{R} = r_0e_0 + i\mathbf{v}$ with $q_0, r_0$ real and $\mathbf{u}, \mathbf{v}$ real vectors,
+
+$$
+\tilde{Q}\tilde{R} = \left(q_0r_0 + (\mathbf{u},\mathbf{v})\right)e_0 + i\left(q_0\mathbf{v} + r_0\mathbf{u}\right) - \mathbf{u}\times\mathbf{v},
+$$
+
+so the product stays in the sector exactly when the real vector $\mathbf{u}\times\mathbf{v}$ vanishes, that is when the two elements commute; the antisymmetric part alone leaves, and it leaves as the commutator
+
+$$
+\tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} = -2\,\mathbf{u}\times\mathbf{v} \in \mathbb{M}_- .
+$$
+
+The symmetrised product therefore always stays in the sector, while the commutator leaves it whenever it is not zero, and the square is the commuting case $\tilde{R} = \tilde{Q}$: it is the one product of an element with an element that can never witness the failure of closure, and for $\tilde{Q} = q_0e_0 + i\mathbf{q}'$ it is $\tilde{Q}^2 = q_0^2 + |\mathbf{q}'|^2 + 2iq_0\mathbf{q}'$. The product rule in its four complex forms, one for each pair of the six subspaces, is computed in *The Six Subspaces and the Four Complex Products*.
 
 ### The Defining Involution
 
@@ -254,6 +266,71 @@ $$
 
 which is the standard spin-1/2 expectation value along the direction $\hat{\boldsymbol\mu}$. The trace formula is the biquaternion expression of the Born rule.
 
+### The Spectral Decomposition
+
+Every Hermitian element has a spectrum read off in closed form. Write $\tilde{Q} = h_0e_0 + i\mathbf{h}$ with $h_0$ real and $\mathbf{h}$ a real vector, and let $\hat{\mathbf{h}} = \mathbf{h}/|\mathbf{h}|$ for $\mathbf{h}\neq0$. Then
+
+$$
+\tilde{Q} = \left(h_0 + |\mathbf{h}|\right)\tilde\Pi_+(\hat{\mathbf{h}}) + \left(h_0 - |\mathbf{h}|\right)\tilde\Pi_-(\hat{\mathbf{h}}),
+$$
+
+with the two idempotents of §*The Idempotents* along the axis $\hat{\mathbf{h}}$. The two coefficients are the **eigenvalues**,
+
+$$
+\lambda_\pm = h_0 \pm |\mathbf{h}|,
+$$
+
+real, and the two idempotents are the **eigenprojectors**, $\tilde{Q}\tilde\Pi_\pm = \lambda_\pm\tilde\Pi_\pm$. Because $\tilde\Pi_+ + \tilde\Pi_- = e_0$ and $\tilde\Pi_+\tilde\Pi_- = 0$, the pair is a resolution of the identity, and the formula is a genuine spectral decomposition: every Hermitian element of $\mathbb{M}_+$ is a real combination of two orthogonal idempotents, and the decomposition degenerates to $h_0$ alone exactly when $\mathbf{h} = 0$. The trace and the biquaternion norm read
+
+$$
+\mathrm{Tr}(\tilde{Q}) = 2h_0 = \lambda_+ + \lambda_-, \qquad N(\tilde{Q}) = h_0^2 - |\mathbf{h}|^2 = \lambda_+\lambda_-,
+$$
+
+so the norm is **indefinite**: it is negative exactly when the two eigenvalues have opposite signs. This is the difference from the ordinary Hermitian matrix case, where the analogous form $\mathrm{Tr}(H^2)$ is a sum of squares. Here positivity is a statement about the **eigenvalues** $h_0 \pm |\mathbf{h}|$, not about the biquaternion norm.
+
+### The Positive Cone and the Bloch Ball
+
+An element $\tilde{Q} \in \mathbb{M}_+$ is **positive** when it is $\tilde{R}^{*}\tilde{R}$ for some $\tilde{R}$, equivalently when its spectrum lies in $[0,\infty)$, equivalently, by the decomposition above, when $h_0 \geq |\mathbf{h}|$. The positive elements form a cone with apex at the origin, and its interior is the set of Hermitian elements with strictly positive spectrum. The one-parameter family through the identity is the **trace-one slice**: with $\tilde\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$ one has $\mathrm{Tr}(\tilde\rho) = 1$, and writing $\mathbf{r} = r\hat{\boldsymbol\mu}$ the spectral decomposition gives
+
+$$
+\tilde\rho = \frac{1+r}{2}\,\tilde\Pi_+(\hat{\boldsymbol\mu}) + \frac{1-r}{2}\,\tilde\Pi_-(\hat{\boldsymbol\mu}),
+$$
+
+so **$\tilde\rho$ is positive exactly when $|\mathbf{r}| \leq 1$**. This is an iff, and its two ends are the two ends of the ball:
+
+- $|\mathbf{r}| = 1$: one eigenvalue is $1$ and the other $0$, the element is an idempotent $\tilde\Pi_\pm(\hat{\boldsymbol\mu})$, a **pure state**; these points are the two-sphere of §*The Idempotents*.
+- $|\mathbf{r}| = 0$: $\tilde\rho = \tfrac{1}{2}e_0$, the **maximally mixed** state.
+
+The intermediate values $0 < |\mathbf{r}| < 1$ are the **mixed states**, and the whole set is the **Bloch ball**, the unit ball of the three-dimensional real vector part. The convexity is manifest in the formula: $\tilde\rho$ is a convex combination of two orthogonal idempotents with weights $(1\pm r)/2$, which sum to $1$. The pure states form the boundary sphere and the mixed states the interior, so that a state is pure exactly when it is idempotent — the two notions coincide in the sector and nowhere else. Because $\mathbb{M}_+$ is a real vector space of dimension $4$ and the trace-one condition is one real equation, the state space is three-dimensional, as it must be for a two-state system.
+
+Positivity is not preserved by the biquaternion norm: the mixed state $\tilde\rho$ has $N(\tilde\rho) = \tfrac{1}{4}(1 - r^2) \geq 0$, which vanishes on the whole boundary sphere rather than at a point. Every pure state is therefore a **zero divisor**, in agreement with §*Properties*.
+
+### The Bracket Table of the Two Sectors
+
+The two sectors are not closed under the product in a haphazard way; the antisymmetric and the symmetric parts go to opposite sectors, and the rule is uniform. Write $[\tilde{Q},\tilde{R}] = \tilde{Q}\tilde{R} - \tilde{R}\tilde{Q}$ and $\{\tilde{Q},\tilde{R}\} = \tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}$. Then the sector of the result is determined by the sectors of the two arguments:
+
+| bracket | $\mathbb{M}_+,\mathbb{M}_+$ | $\mathbb{M}_+,\mathbb{M}_-$ | $\mathbb{M}_-,\mathbb{M}_-$ |
+|---|---|---|---|
+| commutator $[\tilde{Q},\tilde{R}]$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
+| anticommutator $\{\tilde{Q},\tilde{R}\}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ |
+
+In coordinates the rule is transparent. For two Hermitian elements $\tilde{Q} = q_0e_0 + i\mathbf{u}$ and $\tilde{R} = r_0e_0 + i\mathbf{v}$ the product rule of §*Definition and Basis* gives
+
+$$
+[\tilde{Q},\tilde{R}] = -2\,\mathbf{u}\times\mathbf{v} \in \mathbb{M}_-, \qquad \{\tilde{Q},\tilde{R}\} = 2\left(q_0r_0 + (\mathbf{u},\mathbf{v})\right)e_0 + 2i\left(q_0\mathbf{v} + r_0\mathbf{u}\right) \in \mathbb{M}_+,
+$$
+
+and for two anti-Hermitian elements $\tilde{Q} = iq'_0e_0 + \mathbf{q}$, $\tilde{R} = ir'_0e_0 + \mathbf{r}$ the same computation gives
+
+$$
+[\tilde{Q},\tilde{R}] = 2\,\mathbf{q}\times\mathbf{r} \in \mathbb{M}_-, \qquad \{\tilde{Q},\tilde{R}\} \in \mathbb{M}_+.
+$$
+
+The reason for the alternation is that ${}^{*}$ is an **anti**-automorphism: $(\tilde{Q}\tilde{R})^{*} = \tilde{R}^{*}\tilde{Q}^{*}$, so the sign of the involution on a product is the product of the two signs, and the antisymmetric part collects the difference while the symmetric part collects the sum. The commutator therefore always lands in the opposite sector and the anticommutator always in the same sector. Two consequences:
+
+- Each sector is a **Jordan algebra** under the anticommutator, so the square of an element of either sector lies in $\mathbb{M}_+$; this is the structural fact behind the square formula of §*Definition and Basis*, and it is the reason a square can never witness the failure of closure.
+- The material sector is a **Lie algebra** under the commutator; the informational sector is not, its bracket landing in the other sector. The asymmetry between "the sector that carries the brackets" and "the sector that carries the states" is algebraic, not interpretive, and it is the precise sense in which the two sectors have different characters.
+
 ### The Algebraic Identification with Quantum Information
 
 The mathematics of $\mathbb{M}_+$ and its action on $\mathbb{M}_-$ is **structurally identical** to the mathematics of quantum information theory for a single qubit. This is an algebraic fact, established in detail in the companion article *Quantum Physics in Biquaternionic Form*.
@@ -327,6 +404,36 @@ lie in $\mathbb{M}_+$: their scalar part $\tfrac{1}{2}$ is real, and their vecto
 
 These are the biquaternion analogues of **pure-state density matrices** of quantum physics. They are the natural "states" of the informational sector.
 
+**Why they are idempotent.** The single fact behind the whole family is the sign
+
+$$
+(i\hat{\boldsymbol\mu})^2 = i^2\,\hat{\boldsymbol\mu}^2 = (-1)(-e_0) = +e_0,
+$$
+
+which is the opposite of the material sector's $\mathbf{q}^2 = -|\mathbf{q}|^2e_0$ for a real vector $\mathbf{q}$. With it,
+
+$$
+\tilde\Pi_\pm^2 = \tfrac{1}{4}\left(e_0 \pm 2i\hat{\boldsymbol\mu} + (i\hat{\boldsymbol\mu})^2\right) = \tfrac{1}{4}\left(e_0 \pm 2i\hat{\boldsymbol\mu} + e_0\right) = \tilde\Pi_\pm .
+$$
+
+The two minus signs cancel: the minus from $i^2$ and the minus from the square of a real vector. In the material sector there is only the second of them, so the corresponding combination is not idempotent — $\tfrac{1}{2}(e_0 + \mathbf{q})$ fails, and indeed $\mathbb{M}_-$ contains no nontrivial idempotent at all. This one sign is why the idempotents, the positive cone and the spectral decomposition all live in $\mathbb{M}_+$ and not in $\mathbb{M}_-$.
+
+**Orthogonality and completeness.** The two idempotents along one axis are complementary and orthogonal,
+
+$$
+\tilde\Pi_+(\hat{\boldsymbol\mu}) + \tilde\Pi_-(\hat{\boldsymbol\mu}) = e_0, \qquad \tilde\Pi_+(\hat{\boldsymbol\mu})\,\tilde\Pi_-(\hat{\boldsymbol\mu}) = \tilde\Pi_-\tilde\Pi_+ = 0,
+$$
+
+because $\tfrac{1}{4}\left(e_0 + i\hat{\boldsymbol\mu}\right)\left(e_0 - i\hat{\boldsymbol\mu}\right) = \tfrac{1}{4}\left(e_0 - (i\hat{\boldsymbol\mu})^2\right) = 0$. The pair is a **complete orthogonal pair**, a frame of the algebra, and it is what the spectral decomposition of §*The Spectral Decomposition* is written in.
+
+**Every pure state is a zero divisor.** The biquaternion norm of the idempotent vanishes identically on the sphere,
+
+$$
+N\!\left(\tilde\Pi_\pm(\hat{\boldsymbol\mu})\right) = \tfrac{1}{4}\left(e_0 - (i\hat{\boldsymbol\mu})^2\right) = \tfrac{1}{4}\left(e_0 - e_0\right) = 0,
+$$
+
+as the product $\tilde\Pi_+\tilde\Pi_- = 0$ already witnesses with both factors nonzero. So the pure states sit on the zero-divisor cone, while a general mixed state does not: the norm is $N(\tilde\rho) = \tfrac{1}{4}(1 - r^2)$ for $\tilde\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$.
+
 ### The Hermitian Forms
 
 For any biquaternion $\tilde{Q} \in \mathbb{B}$, the **Hermitian form**
@@ -349,6 +456,8 @@ The identity $e_0$ is trivially in $\mathbb{M}_+$. It corresponds to the trivial
 | Identity $e_0$ | Real scalar | Identity operator |
 | Boost biquaternion $\tilde{\Lambda}$ | Hermitian, unit norm | Lorentz boost rotor |
 | Idempotent $\tilde\Pi_\pm(\hat{\boldsymbol\mu})$ | Hermitian, idempotent, trace 1 | Pure state / projector |
+| Mixed state $\tilde\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$, $|\mathbf{r}| \leq 1$ | Hermitian, positive, trace 1 | Density matrix (Bloch ball) |
+| Observable $\tilde{Q} = h_0e_0 + i\mathbf{h}$ | Hermitian, eigenvalues $h_0 \pm |\mathbf{h}|$ | Observable with spectral decomposition |
 | Hermitian form $\tilde{Q}\tilde{Q}^{*}$ | Hermitian, positive scalar part | Weight of a state |
 
 The common feature of these objects is that they are **Hermitian** (fixed under ${}^{*}$). This is what defines membership in $\mathbb{M}_+$.
@@ -358,6 +467,10 @@ The common feature of these objects is that they are **Hermitian** (fixed under 
 The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its biquaternion norm has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$, and the Hermitian forms $\tilde{Q}\tilde{Q}^{*}$.
 
 The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^{*}$. The action is linear, preserves $\mathbb{M}_-$, and preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm. The natural dichotomy between unit-norm and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement.
+
+Two further structures are carried by the sector and are developed above. Every Hermitian element has a **spectral decomposition** $\tilde{Q} = (h_0 + |\mathbf{h}|)\tilde\Pi_+(\hat{\mathbf{h}}) + (h_0 - |\mathbf{h}|)\tilde\Pi_-(\hat{\mathbf{h}})$ into two orthogonal idempotents, with real eigenvalues $h_0 \pm |\mathbf{h}|$, and the **positive elements** are those with $h_0 \geq |\mathbf{h}|$. On the trace-one slice the positive elements are exactly the $\tilde\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, the **Bloch ball**: the boundary sphere is the pure states, the interior the mixed states, and the centre the maximally mixed state. The whole family rests on one sign, $(i\hat{\boldsymbol\mu})^2 = +e_0$, which is what makes a Hermitian vector square to $+1$ and the corresponding combination idempotent.
+
+The product of two elements of one sector is governed by a single rule: the **commutator** lands in the opposite sector and the **anticommutator** in the same one, since ${}^{*}$ is an anti-automorphism. Each sector is therefore a Jordan algebra for the anticommutator, while only $\mathbb{M}_-$ is a Lie algebra for the commutator. The square of an element of either sector always lies in $\mathbb{M}_+$, which is why a square can never witness the failure of closure.
 
 The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of quantum information theory for a two-state system. The idempotents are pure-state density matrices, the Hermitian elements are observables, the unitary elements are gates, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\mathrm{Sc}(\tilde{P}\tilde{Q}) = 2\langle\tilde{P},\tilde{Q}\rangle$ is the Born rule. The structural correspondence is not an analogy: it is the same mathematics, expressed in the biquaternion algebra.
 
@@ -375,6 +488,9 @@ The **physical hypothesis** is that this mathematics reflects physics: that $\ma
 | $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
 | $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$ | Idempotent (pure-state projector) of unit trace |
+| $\tilde\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$, $|\mathbf{r}| \leq 1$ | Density matrix (Bloch ball); $\mathbf{r}$ the Bloch vector |
+| $\lambda_\pm = h_0 \pm |\mathbf{h}|$ | Eigenvalues of the Hermitian element $h_0e_0 + i\mathbf{h}$ |
+| $[\tilde{Q},\tilde{R}]$, $\{\tilde{Q},\tilde{R}\}$ | Commutator and anticommutator; the first lands in the opposite sector, the second in the same one |
 | $\tilde{Q}$ | General Hermitian element (observable) |
 | $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^{*}$ | Conjugation action of $\mathbb{M}_+$ on $\mathbb{M}_-$ |
 | $\tilde{Q}_+$, $\tilde{Q}_-$ | Hermitian element of $\mathbb{M}_+$ (operator) and anti-Hermitian element of $\mathbb{M}_-$ (acted upon); written $\tilde{Q}$ when only one element is in play |
@@ -393,4 +509,5 @@ The **physical hypothesis** is that this mathematics reflects physics: that $\ma
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the algebraic structure of the Clifford algebra $\mathrm{Cl}_{1,3}$.
 - Asher Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1993), for the operational reading of states, observables, and measurements used here.
 - *Conventions in the Biquaternion Universe* and *Relations Between Subspaces*, the companion articles, for the notation and for the place of $\mathbb{M}_+$ among the six subspaces.
+- Within the corpus, the structures used above are developed for their own sake in *Biquaternion Spectral Theory* (the spectral decomposition and the eigenvalues $Q_0 \pm iB$), *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (the positive cone and the trace-one slice), *Hermitian Idempotents and the Peirce Decomposition* (the idempotents), *Biquaternion Lie Algebras* (the bracket table and the $\mathbb{Z}/2$-grading of the two sectors) and *Biquaternion Jordan Algebras* (the symmetrised product), and the product rule of the six subspaces is *The Six Subspaces and the Four Complex Products*.
 

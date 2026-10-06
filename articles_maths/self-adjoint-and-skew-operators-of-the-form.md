@@ -6,7 +6,7 @@ The adjoint $T \mapsto T^{\dagger}$ of *The Adjoint under a Hermitian Form* turn
 
 Three facts organise the article. The **decomposition** $T = \tfrac{1}{2}(T + T^{\dagger}) + \tfrac{1}{2}(T - T^{\dagger})$ is orthogonal for the involution, and the two parts obey a **sign rule**: if $S$ and $T$ have adjoint-signs $\epsilon$ and $\delta$ — the sign $+1$ for a self-adjoint operator and $-1$ for a skew-adjoint one — then the anticommutator $ST + TS$ has sign $\epsilon\delta$ and the commutator $ST - TS$ has sign $-\epsilon\delta$. The three familiar product relations are the three specialisations of that rule, and they are the reason the self-adjoint part is a Jordan algebra and the skew-adjoint part a Lie algebra. The **exponential and the Cayley transform** connect the two halves: the exponential of a skew-adjoint operator is unitary, so the Lie algebra integrates to the unitary group, which is the one-parameter form of the statement that the skew-adjoint operators are the infinitesimal unitaries; the Cayley transform $U = (1 - S)(1 + S)^{-1}$ is the algebraic form of the same statement, defined without a topology.
 
-The article defines the adjoint-sign and the two parts, proves the sign rule and the two structures, develops the exponential and the Cayley transform, records the regular representation in which self-adjointness of the operator is self-adjointness of the element, and treats the indefinite case and three worked cases. The adjoint is *The Adjoint under a Hermitian Form*; the unitary group is *Unitary and Isometric Operators of the Form*; the conjugation by the fundamental symmetry is *The Fundamental Symmetry of the Form*; the positivity of an operator of the form is *Positivity and the Positive Cone of a Hermitian Form*; the spectra are *The Spectra of Self-Adjoint Operators of the Form*; the bilinear counterparts are *Self-Adjoint and Skew Operators with Hermitian Adjoint* and *The Unitary Operators of a Sesquialgebra*. Throughout, $A$ is a sesquialgebra with a form in the sense of *Topological Sesquialgebras with a Form* over a base $(R,\varsigma)$ of one of the two classical kinds of *The Norm Defined by a Form*, with fixed field $k = R^{\varsigma}$ and $R$ complete, $h$ is Hermitian, compatible and **nonsingular**, the operators are the bounded $R$-linear maps of $A$, written $B(A)$, and **$2$ is invertible in $k$**, so that $\tfrac{1}{2}$ lies in the fixed field.
+The article defines the adjoint-sign and the two parts, proves the sign rule and the two structures, develops the exponential and the Cayley transform, records the regular representation in which self-adjointness of the operator is self-adjointness of the element, and treats the indefinite case and three worked cases. The adjoint is *The Adjoint under a Hermitian Form*; the unitary group is *Unitary and Isometric Operators of the Form*; the conjugation by the fundamental symmetry is *The Fundamental Symmetry of the Form*; the positivity of the form is *Positivity and the Positive Cone of a Hermitian Form* and the positivity criterion for the operators is *The Spectra of Self-Adjoint Operators of the Form*, §*The Positivity Criterion*; the spectra are *The Spectra of Self-Adjoint Operators of the Form*; the bilinear counterparts are *Self-Adjoint and Skew Operators with Hermitian Adjoint* and *The Unitary Operators of a Sesquialgebra*. Throughout, $A$ is a sesquialgebra with a form in the sense of *Topological Sesquialgebras with a Form* over a base $(R,\varsigma)$ of one of the two classical kinds of *The Norm Defined by a Form*, with fixed field $k = R^{\varsigma}$ and $R$ complete, $h$ is Hermitian, compatible and **nonsingular**, the operators are the bounded $R$-linear maps of $A$, written $B(A)$, and **$2$ is invertible in $k$**, so that $\tfrac{1}{2}$ lies in the fixed field.
 
 ## The Adjoint Involution on the Operators
 
@@ -36,15 +36,15 @@ of a self-adjoint and a skew-adjoint operator, and the two summands are the only
 
 *Proof.* The scalar $\tfrac{1}{2}$ lies in the fixed field $k = R^{\varsigma}$, so $\varsigma(\tfrac{1}{2}) = \tfrac{1}{2}$ and $(\tfrac{1}{2}T)^{\dagger} = \tfrac{1}{2}T^{\dagger}$; the adjoint of $\tfrac{1}{2}(T + T^{\dagger})$ is $\tfrac{1}{2}(T^{\dagger} + T)$, which is itself, and the adjoint of $\tfrac{1}{2}(T - T^{\dagger})$ is $\tfrac{1}{2}(T^{\dagger} - T)$, which is its negative. If $T = S + K$ with $S$ self-adjoint and $K$ skew-adjoint, then $T^{\dagger} = S - K$, so $S = \tfrac{1}{2}(T + T^{\dagger})$ and $K = \tfrac{1}{2}(T - T^{\dagger})$, which is the uniqueness. $\square$
 
-**Remark (the decomposition is an involution splitting, and it is not a direct sum in general).** The theorem writes $B(A)$ as the sum of the two eigenspaces of the operator $T \mapsto T^{\dagger}$, for the eigenvalues $+1$ and $-1$. The summands are subspaces and not ideals, and the splitting is $R$-linear and not $\varsigma$-linear; the whole difficulty of the subject is that the self-adjoint part is not closed under the product and the skew part is not either.
+**Remark (the decomposition is an involution splitting, and the summands are not ideals).** The theorem writes $B(A)$ as the sum of the two eigenspaces of the operator $T \mapsto T^{\dagger}$, for the eigenvalues $+1$ and $-1$, a direct sum because $2$ is invertible; but the summands are $k$-submodules and not ideals, and the projection $T \mapsto \tfrac{1}{2}(T \pm T^{\dagger})$ is $k$-linear but only $\varsigma$-semilinear over $R$; the whole difficulty of the subject is that the self-adjoint part is not closed under the product and the skew part is not either.
 
 ### Normal Operators
 
 **Proposition (the normal operators).** For $T \in B(A)$ the following are equivalent: $T$ is normal; the two parts of $T$ commute, $[T + T^{\dagger}, T - T^{\dagger}] = 0$; and $h(Tx,Ty) = h(T^{\dagger}x,T^{\dagger}y)$ for all $x, y$.
 
-*Proof.* The equality $TT^{\dagger} = T^{\dagger}T$ is equivalent, by the decomposition, to the commutativity of the sum and the difference $T \pm T^{\dagger}$, which expands to $[T+T^{\dagger}, T-T^{\dagger}] = 2[T,T^{\dagger}]$. The last clause is $h(T^{\dagger}Tx,y) = h(TT^{\dagger}x,y)$, and by the nonsingularity of $h$ this is $T^{\dagger}T = TT^{\dagger}$. $\square$
+*Proof.* The equality $TT^{\dagger} = T^{\dagger}T$ is equivalent, by the decomposition, to the commutativity of the sum and the difference $T \pm T^{\dagger}$, which expands to $[T+T^{\dagger}, T-T^{\dagger}] = -2[T,T^{\dagger}]$. The last clause is $h(T^{\dagger}Tx,y) = h(TT^{\dagger}x,y)$, and by the nonsingularity of $h$ this is $T^{\dagger}T = TT^{\dagger}$. $\square$
 
-The proposition is the form-layer reason the spectral theorem is stated for normal operators: the operator and its adjoint then act as one commuting family, and a commuting family of self-adjoint operators is what the definite spectral theorem diagonalises.
+The proposition is the form-layer reason the spectral theorem is stated for normal operators: a normal operator is $A + \mathrm{i}B$ with $A, B$ commuting self-adjoint operators, and a commuting family of self-adjoint operators is what the definite spectral theorem diagonalises.
 
 ## The Two Structures
 
@@ -64,11 +64,11 @@ $$
 
 ### The Skew-Adjoint Part is a Lie Algebra
 
-**Theorem (the Lie algebra).** The skew-adjoint operators form a real Lie algebra under the commutator $[S,T] = ST - TS$, and this Lie algebra is the Lie algebra of the unitary group $U(A,h)$.
+**Theorem (the Lie algebra).** The skew-adjoint operators form a real Lie algebra under the commutator $[S,T] = ST - TS$, and in the definite complete case this Lie algebra is the Lie algebra of the unitary group $U(A,h)$.
 
 *Proof.* The commutator of two skew-adjoint operators is skew-adjoint by the sign rule at $\epsilon = \delta = -1$; the commutator is bilinear and alternating, and the Jacobi identity is the associativity of the product. For the second clause, in the definite complete case the exponential $e^{tS}$ of a skew-adjoint operator is unitary for every real $t$ by the next section, so the Lie algebra exponentiates into $U(A,h)$; conversely a unitary one-parameter group has skew-adjoint generator, obtained by differentiating $h(e^{tS}x, e^{tS}y) = h(x,y)$ at $t = 0$. $\square$
 
-**Remark (what the Lie algebra is not).** The Lie algebra is real: multiplying a skew-adjoint operator by a scalar $\lambda$ gives a skew-adjoint operator only when $\varsigma(\lambda) = \lambda$, that is when $\lambda \in k$. The complexification is the whole operator algebra, and the passage from the Lie algebra to the unitary group is the passage from $k$ to the circle of the scalars of modulus one, exactly as for the scalar field.
+**Remark (what the Lie algebra is not).** The Lie algebra is real: multiplying a skew-adjoint operator by a scalar $\lambda$ gives a skew-adjoint operator only when $\varsigma(\lambda) = \lambda$, that is when $\lambda \in k$, so the Lie algebra is a Lie algebra over the fixed field $k$ and not an $R$-module of operators closed under scalars. Over the sesquilinear base every operator is $A + \mathrm{i}B$ with $A$ and $B$ self-adjoint, so the complexification of the skew-adjoint operators is the whole operator algebra; over the collapsed base the complexification is only the part they span, the difference between the two bases being the difference between $\mathfrak{u}(n)$ and $\mathfrak{so}(n)$ at the level of the scalar field. In both cases the passage from the Lie algebra to the unitary group is the passage from $k$ to the circle of the scalars of modulus one, exactly as for the scalar field.
 
 ### The Self-Adjoint Part is a Jordan Algebra
 
@@ -118,7 +118,7 @@ is unitary, and it is the unique operator with $1 + U$ invertible and $S = (1 - 
 
 ### The Left and the Right Multiplications
 
-**Theorem (the multiplications).** Let $h$ be compatible and nonsingular, and let $m_{x}(z) = xz$ and $R_{b}(z) = zb$. Then
+**Theorem (the multiplications).** Let $h$ be compatible and nonsingular, and let $m_{x}(z) = xz$ and $R_{b}(z) = zb^{*}$, the left multiplication and the right multiplication of *The Adjoint under a Hermitian Form*, §*The Multiplications*. Then
 
 $$
 m_{x}^{\dagger} = m_{x^{*}} , \qquad R_{b}^{\dagger} = R_{b^{*}} ,
@@ -140,7 +140,7 @@ of a **Hermitian** element and a **skew** element, $m_{x}$ is the sum of the cor
 
 *Proof.* The involution $*$ is an involution of the algebra, so the decomposition is the algebraic case of the decomposition of an operator and its two parts are invariant under $*$; the second clause is the additivity of $x \mapsto m_{x}$. For the last, $m_{x}$ is normal when $m_{x}m_{x^{*}} = m_{x^{*}}m_{x}$, which by the injectivity of $m$ is $xx^{*} = x^{*}x$; expanding $x$ in its Hermitian and skew parts gives $[\tfrac{1}{2}(x+x^{*}), \tfrac{1}{2}(x-x^{*})] = 0$. $\square$
 
-**Remark (the element and the operator).** The proposition is the exact point where the involution of the algebra and the involution of the operators meet: on a unital object the Hermitian elements exponentiate to the unitary elements, $u = e^{i\theta}$-shaped, while the Hermitian operators exponentiate to the unitary operators, and the two exponentials agree on the left multiplications, $e^{m_{x}} = m_{e^{x}}$.
+**Remark (the element and the operator).** The proposition is the exact point where the involution of the algebra and the involution of the operators meet: for a Hermitian element $x$ the element $e^{\mathrm{i}x}$ is unitary when $\mathrm{i}$ lies in the base, while by the theorem $e^{m_{x}}$ is a unitary operator exactly when $m_{x}$ is skew-adjoint, that is when $x$ is skew; and the two exponentials agree on the left multiplications, $e^{m_{x}} = m_{e^{x}}$.
 
 ## The Indefinite Case
 
@@ -170,7 +170,7 @@ $$
 T_{\lambda} \text{ is self-adjoint} \iff \lambda \in \mathbb{R} , \qquad T_{\lambda} \text{ is skew-adjoint} \iff \lambda \in \mathrm{i}\mathbb{R} .
 $$
 
-The skew-adjoint operators are the line $\mathrm{i}\mathbb{R}$, which is the Lie algebra of the circle $U(1)$, and the self-adjoint operators are the line $\mathbb{R}$; the exponential of $\mathrm{i}\theta$ is the point $e^{\mathrm{i}\theta}$ of the circle, and the Cayley transform of $\mathrm{i}t$ is the point $(\mathrm{i}+t)^{-1}(\mathrm{i}-t)$ of the same circle. The example is the smallest in which the Lie algebra, the group and both transforms are visible at once, and it has no skew-adjoint operator with a nonzero real part, which is the definiteness.
+The skew-adjoint operators are the line $\mathrm{i}\mathbb{R}$, which is the Lie algebra of the circle $U(1)$, and the self-adjoint operators are the line $\mathbb{R}$; the exponential of $\mathrm{i}\theta$ is the point $e^{\mathrm{i}\theta}$ of the circle, and the Cayley transform of $\mathrm{i}t$ is the point $(1-\mathrm{i}t)(1+\mathrm{i}t)^{-1} = (\mathrm{i}+t)/(\mathrm{i}-t)$ of the same circle. The example is the smallest in which the Lie algebra, the group and both transforms are visible at once, and its skew-adjoint operators are the purely imaginary scalars, which carry no real part.
 
 ### The Matrices
 
