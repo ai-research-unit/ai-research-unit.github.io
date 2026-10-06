@@ -2,6 +2,8 @@
 
 ## Introduction
 
+Physically this is the realization in which the Lorentz transformation of a four-vector is the congruence of the Hermitian matrix that represents it, which is the standard matrix form of the transformation written elsewhere in the corpus with rotors.
+
 The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$, with $\Phi(e_k) = -i\sigma_k$, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ and $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$, is that of *The 2×2 Matrix Element Representation of Biquaternions*, together with the simple module $V = \mathbb{C}^2$ on which the matrices act and which carries the two chiralities of the framework.
 
 The element article answers *what is* $\tilde{Q}$ by displaying its matrix. This article answers *what does* $\tilde{Q}$ *do*, and it answers it in the smallest space that carries an action at all: the algebra is $M_2(\mathbb{C})$, and the Hermitian sandwich of *Biquaternion Rotations and Lorentz Transformations* acts on it by the **congruence**
@@ -10,7 +12,7 @@ $$
 X \longmapsto M X M^{\dagger}, \qquad M = \Phi(\tilde{Q}) .
 $$
 
-This is the realization in which the operator is a single familiar operation of matrix algebra, and in which the two regimes of the operator — invertible congruence, or collapse — become the two cases of the rank of one matrix. Physically it is the realization in which the Lorentz transformation of a four-vector is the congruence of the Hermitian matrix that represents it, which is the standard matrix form of the transformation written elsewhere in the corpus with rotors.
+This is the realization in which the operator is a single familiar operation of matrix algebra, and in which the two regimes of the operator — invertible congruence, or collapse — become the two cases of the rank of one matrix.
 
 The article owns the identification of the sandwich with the congruence, the fact that $\Phi$ carries the dagger to the conjugate transpose, the preservation of rank, the scaling of the determinant, the preservation of the two Hermitian sectors, the positive Hermitian form attached to the identity, and the separation of the two regimes at the level of $\Phi(\tilde{Q})$, including the collapse of a null congruence onto one Hermitian line. The component computation of the same operator is *The Four-Vector Operator Representation of Biquaternions*; its matrix on the coefficient space, with the determinant $\lvert N\rvert^{4}$ and the trace $4\lvert Q_0\rvert^{2}$, is *The 4×4 Regular Matrix Operator Representation of Biquaternions*; the module side belongs to another coordinate system and is not repeated here. The module $V$ and the left action of the algebra on it are cited from the element article and not re-derived.
 

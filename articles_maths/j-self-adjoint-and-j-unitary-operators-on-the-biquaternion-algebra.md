@@ -119,7 +119,7 @@ The general indefinite polar decomposition replaces the positive definite root o
 
 **Proof.** $T^{*}=JTJ$ is similar to $T$, so the spectra coincide; but $\mathrm{spec}(T^{*})=\overline{\mathrm{spec}(T)}$ for every operator, and this is the symmetry; multiplicities agree because the algebraic multiplicities are invariant under similarity.
 
-**Remark.** Unlike the Hermitian case, the spectrum of a $J$-self-adjoint operator is in general **not real**: the left multiplication $L_{e_1}$ is not $J$-self-adjoint, but the sandwich $\Theta_{e_1}$ is, and its spectrum is not real. The exact spectra of the three families under the $J$-adjoint are computed in *The Indefinite Spectra of the Operators on the Biquaternion Algebra*.
+**Remark.** Unlike the Hermitian case, the spectrum of a $J$-self-adjoint operator is in general **not real**. On the three families it is real with signs: the $J$-self-adjoint left and right multiplications are the real scalars, and the $J$-self-adjoint sandwiches have the spectrum $\{|\zeta|^{2}\}$ with multiplicity four for a central parameter, the real pair $\pm|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|$ with multiplicity two each for a vector parameter of nonzero norm, and the nilpotent value $0$ for a null vector. A genuinely non-real spectrum needs a mixed sum: the operator $L_{e_1}+R_{e_1}$ is $J$-self-adjoint with spectrum $\{2i,-2i,0\}$, non-real and symmetric about the real axis. The exact spectra of the three families under the $J$-adjoint are computed in *The Indefinite Spectra of the Operators on the Biquaternion Algebra*.
 
 ## Worked Examples
 

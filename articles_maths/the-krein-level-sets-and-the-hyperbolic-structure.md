@@ -22,9 +22,9 @@ $$
 
 all three of real dimension $7$; the first is homotopy equivalent to $S^{1}$, the second to $S^{5}$, the third to $S^{1}\times S^{5}$.
 
-**Proof.** For the first, a pair $(c,v)$ satisfies the equation exactly when $c$ lies on the circle of radius $\sqrt{1+\|v\|_E^{2}}$ in the centre, so the map $(c,v)\mapsto(\|v\|_E/c\cdot c,\ v)$ identifies the set with $S^{1}\times\mathbb{R}^{6}$: the pair $(v,c/\|c\|_E)$ is free and determines $c$. For the second, in the same way $\|v\|_E=\sqrt{1+\|c\|_E^{2}}>0$, so $v$ is determined by its direction in the five-sphere and by $c$, which is free in $\mathbb{C}$; the set is $S^{5}\times\mathbb{R}^{2}$. For the third, both norms are equal to some $t>0$, and the set is $S^{1}\times S^{5}\times\mathbb{R}_{>0}$ by the two directions and the radius.
+**Proof.** For the first, a pair $(c,v)$ satisfies the equation exactly when $c$ lies on the circle of radius $\sqrt{1+\|v\|_E^{2}}$ in the centre, so the map $(c,v)\mapsto(c/\|c\|_E,\ v)$ identifies the set with $S^{1}\times\mathbb{R}^{6}$: the pair $(v,c/\|c\|_E)$ is free and determines $c$. For the second, in the same way $\|v\|_E=\sqrt{1+\|c\|_E^{2}}>0$, so $v$ is determined by its direction in the five-sphere and by $c$, which is free in $\mathbb{C}$; the set is $S^{5}\times\mathbb{R}^{2}$. For the third, both norms are equal to some $t>0$, and the set is $S^{1}\times S^{5}\times\mathbb{R}_{>0}$ by the two directions and the radius.
 
-**Remark (what is lost and what is kept).** Compared with the Euclidean sphere, the positive level set loses compactness and the sphere: it is the product of a circle with a seven-dimensional Euclidean space, a hyperboloid of revolution. All three sets are connected and non-compact, as the signature $(2,6)$ over $\mathbb{R}$ requires, and the negative set has the homotopy type of $S^{5}$ alone because its vector part is forced away from the origin while its scalar part is free.
+**Remark (what is lost and what is kept).** Compared with the Euclidean sphere, the positive level set loses compactness and the sphere: it is the product of a circle with a six-dimensional Euclidean space, a hyperboloid of revolution. All three sets are connected and non-compact, as the signature $(2,6)$ over $\mathbb{R}$ requires, and the negative set has the homotopy type of $S^{5}$ alone because its vector part is forced away from the origin while its scalar part is free.
 
 ## The Positive Region and the Ball of Positive Lines
 
@@ -46,6 +46,32 @@ the **complex hyperbolic space** $\mathbb{CH}^{3}$, and the isometry group $U(1,
 
 **Remark (the boundary).** By *The Isotropic Structure of the Krein Form* the closure of the ball adds the isotropic lines, $\|\tilde{V}\|_E=1$, a copy of $S^{5}$: it is the boundary sphere of the complex hyperbolic ball, of real dimension $5$, while the ball itself has real dimension $6$.
 
+## The Scaling and the Phase Action
+
+**Theorem (the level sets as orbits).** The phase circle $S^{1}$ acts on $\mathbb{B}$ by $\tilde{Q}\mapsto\lambda\tilde{Q}$, $|\lambda|=1$, preserving the quaternion sesquilinear form and each level set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=t\}$, $t\in\mathbb{R}$. The action is free on $\mathbb{B}\setminus\{0\}$, and its quotient on the positive level set is the complex hyperbolic space $\mathbb{CH}^{3}$ of positive lines; more generally the scaling by $s>0$ relates the level sets $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=t\}$ and $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=s^{2}t\}$, so the positive region is the union of the positive levels over $t>0$. The positive level set is therefore a principal $S^{1}$-bundle over $\mathbb{CH}^{3}\cong\mathbb{R}^{6}$, and it is diffeomorphic to $S^{1}\times\mathbb{R}^{6}$.
+
+**Proof.** $|\lambda|^{2}=1$ makes the value invariant, so the phase preserves every level set; the action is free because $\lambda\tilde{Q}=\tilde{Q}$ with $\tilde{Q}\neq0$ forces $\lambda=1$. The quotient of the positive level set by the phase circle is the set of positive lines, which is $\mathbb{CH}^{3}$ by §*The Positive Region and the Ball of Positive Lines*; the bundle is trivial because the projection onto the direction of $c$ is a section up to homotopy, and $S^{1}\times\mathbb{R}^{6}$ is the diffeomorphism of §*The Three Level Sets*. Real scaling acts by $t\mapsto s^{2}t$ because $\langle s\tilde{Q},s\tilde{Q}\rangle_{\natural*}=s^{2}\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}$ for real $s>0$.
+
+## The Metric of the Ball and Its Geodesics
+
+**Theorem (the Bergman metric).** The ball $\mathbb{B}^{3}\subset\mathbb{V}_{\mathbb{B}}=\mathbb{C}^{3}$ carries the **Bergman metric**
+
+$$
+ds^{2}=\frac{(1-\|\tilde{V}\|_E^{2})\,\|d\tilde{V}\|_E^{2}+\lvert\langle d\tilde{V},\tilde{V}\rangle_{*}\rvert^{2}}{(1-\|\tilde{V}\|_E^{2})^{2}},
+$$
+
+which is Kähler, complete, of constant negative holomorphic sectional curvature, and invariant under the isometries of the form acting on the ball; the boundary $S^{5}$ is at infinite distance.
+
+**Proof.** The metric is the Bergman metric of the unit ball of $\mathbb{C}^{3}$, invariant under the biholomorphisms of the ball, and the isometry group of the quaternion sesquilinear form is the group of these biholomorphisms (*The Krein Isometry Group and Its $J$-Contractions*); completeness and the constant curvature are the standard properties of the ball, and the boundary is at infinite distance because the metric blows up at $\|\tilde{V}\|_E=1$.
+
+**Theorem (the complex geodesics).** The intersection of the ball with a complex line is a copy of the unit disc, totally geodesic in $\mathbb{CH}^{3}$ and isometric to $\mathbb{CH}^{1}$; the geodesic through the origin and a point $\tilde{V}\neq0$ is the disc $\{z\,\tilde{V}/\|\tilde{V}\|_E:|z|<1\}$. The real geodesics are the curves that solve the geodesic equation; the complex ones are the images of these discs under $U(1,3)$.
+
+**Proof.** A complex line $\mathbb{C}w$ meets the ball in the disc $\{z\,w/\|w\|_E:|z|<1\}$, which contains $0$ and the boundary point $w/\|w\|_E$; the restriction of the Bergman metric to a complex line is a multiple of the Poincaré metric of the disc, so the disc is totally geodesic, and every complex line is the image of $\mathbb{C}\tilde{V}$ under an isometry because $U(1,3)$ is transitive on the complex lines that carry positive vectors.
+
+**Theorem (the totally real slices).** The Minkowski slice $\mathbb{H}_{\mathbb{B}}$ meets the ball in the real unit ball of $\mathbb{R}^{3}$, and the Bergman metric restricts to the Poincaré metric of the real hyperbolic space $H^{3}$; the slice is totally geodesic and totally real in $\mathbb{CH}^{3}$.
+
+**Proof.** On the slice the form is the interval form, and the ball $\{\|\tilde{V}\|_E<1\}$ meets $\mathbb{R}^{3}$ in the real unit ball, on which the Bergman metric is the hyperbolic metric of the disc model; a real subspace of maximal dimension on which the form is real is totally real, and the standard totally geodesic submanifolds of $\mathbb{CH}^{3}$ are the complex lines and the real hyperbolic spaces.
+
 ## The Minkowski Slices
 
 **Theorem (the real hyperboloids).** On the Hermitian subspace $\mathbb{M}_{+}$ and on the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the quaternion sesquilinear form is the interval form of Minkowski space, and with the real coordinates $q$,
@@ -58,7 +84,42 @@ The positive level set is the two-sheeted hyperboloid, whose sheet $q_0>0$ is gi
 
 **Proof.** The restricted form is $\sum_{\mu}\varepsilon_{\mu}q_{\mu}^{2}$ in the four real coordinates of the slice (*The Krein Gram Matrix and the Restrictions of the Form*). Solving $q_0^{2}-\|\mathbf{q}\|^{2}=1$ for $q_0$ gives the two sheets, each parametrised by $\mathbf{q}\in\mathbb{R}^{3}$. Solving $q_0^{2}-\|\mathbf{q}\|^{2}=-1$ gives $\|\mathbf{q}\|\ge1$ with $q_0$ free, so the set is $\mathbb{R}\times S^{2}$ by the direction of $\mathbf{q}$. The null equation factors as $(q_0-\|\mathbf{q}\|)(q_0+\|\mathbf{q}\|)=0$, giving the two nappes of the light cone.
 
-**Corollary (the hyperboloid model of $H^{3}$).** The sheet $q_0=\sqrt{1+\|\mathbf{q}\|^{2}} $ carries the Riemannian metric induced by the Lorentz form and is the **hyperboloid model of the real hyperbolic space** $H^{3}$; the Lorentz boosts of *Biquaternion Rotations and Lorentz Transformations* act on it by its isometries. The complex hyperbolic ball of the preceeding section is the complexification of this picture: dimension $6$ instead of $3$, the sphere $S^{5}$ instead of $S^{2}$, and the group $U(1,3)$ instead of the Lorentz group.
+**Corollary (the hyperboloid model of $H^{3}$).** The sheet $q_0=\sqrt{1+\|\mathbf{q}\|^{2}} $ carries the Riemannian metric induced by the Lorentz form and is the **hyperboloid model of the real hyperbolic space** $H^{3}$; the Lorentz boosts of *Biquaternion Rotations and Lorentz Transformations* act on it by its isometries. The complex hyperbolic ball of the preceding section is the complexification of this picture: dimension $6$ instead of $3$, the sphere $S^{5}$ instead of $S^{2}$, and the group $U(1,3)$ instead of the Lorentz group.
+
+## The Krein Cone and the Level Sets
+
+**Definition.** The **Krein cone** is
+$$
+P_K=\bigl\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\ge0\bigr\}
+=\bigl\{\tilde{Q}:\|c\|_E\ge\|v\|_E\bigr\},
+$$
+the closed cone of *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*.
+
+**Theorem (the cone, its interior and its boundary).** The Krein cone is the union of the origin, the positive region and the null set; its interior is the positive region $\{\|c\|_E>\|v\|_E\}$, its boundary is the null set, and it contains the whole positive axis and no negative element. On a Minkowski slice its intersection is the full light cone, whose future nappe is the Hermitian cone $P$ of the slice.
+
+**Proof.** The sign of an element is the sign of $\|c\|_E^{2}-\|v\|_E^{2}$ (*The Biquaternion Krein Form and Its Signature*), so the cone is exactly the set displayed, with interior the strict inequality and boundary the equality; on the slice the same form is the interval form, and the inequality $\|c\|_E\ge\|v\|_E$ becomes the light-cone condition.
+
+**Remark (the level sets inside the cone).** The unit positive level set $\{\langle\tilde Q,\tilde Q\rangle_{\natural*}=1\}$ is a hyperboloid sheet inside the interior of $P_K$, the negative level set lies outside, and the null set is the boundary; the cone is the union of the positive level sets of all $t\ge0$, rescaled to $t=1$ by the real scaling of §*The Scaling and the Phase Action*.
+
+## The Norm Hypersurfaces
+
+**Theorem (the levels of the norm).** For $\lambda\neq0$ the level set $\{N(\tilde Q)=\lambda\}$ of the norm $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}$ is a complex hypersurface of $\mathbb{B}=\mathbb{C}^{4}$, of real dimension $6$, invariant under $\tilde Q\mapsto\pm\tilde Q$; the zero set $\{N=0\}$ is a complex cone, the zero-divisor cone of *Biquaternion Topology*. The level sets of the quaternion sesquilinear form are, by contrast, the real hypersurfaces of real dimension $7$ that this article describes.
+
+**Proof.** $N$ is a complex polynomial of degree two, so a nonzero level is a complex hypersurface and the zero set is a cone; the quaternion sesquilinear form is real on the diagonal and its defining polynomial $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ is not holomorphic, so its levels are real hypersurfaces — the same distinction as in *The Biquaternion Krein Form and Its Signature*.
+
+**Corollary (the two pairings and the two geometries).** The two pairings of the algebra give two families of level sets: the complex hypersurfaces of the norm, whose geometry is the projective geometry of the zero-divisor cone, and the real hyperboloids of the quaternion sesquilinear form, whose geometry is the hyperbolic geometry of the ball. Their intersection is treated in *The Isotropic Structure of the Krein Form*, where it is the union of the doubly null lines.
+
+## The Definite Companion and the Twisted Sphere
+
+**Definition.** The **definite companion** of the quaternion sesquilinear form is the positive definite Hermitian form $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|_E^{2}$ of *The Hermitian Form on the Biquaternion Algebra*.
+
+**Theorem (the definite levels are spheres).** The level sets of the definite companion are the Euclidean spheres $\{\|\tilde{Q}\|_E=r\}$, of real dimension $7$ and compact; the unit sphere $S^{7}$ is the boundary of the Euclidean unit ball, the only compact member of the comparison table of §*The Level Sets Compared*, and the definite form is complete and positive definite.
+
+**Proof.** In the coefficient basis the definite form is the standard Hermitian form of $\mathbb{C}^{4}$, so its levels are spheres; compactness and completeness are those of the Euclidean norm.
+
+**Theorem (the indefinite levels as a twisted sphere).** The bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},J\tilde{Q}\rangle_{*}$ of *The Fundamental Symmetry of the Biquaternion Algebra* writes the indefinite level set of level $t$ as the set of $\tilde{Q}$ with $\langle\tilde{Q},J\tilde{Q}\rangle_{*}=t$: it is the Euclidean sphere twisted by the involution $J={}^{\natural}$, and it is diffeomorphic to $S^{1}\times\mathbb{R}^{6}$ for $t>0$ and to $S^{5}\times\mathbb{R}^{2}$ for $t<0$, with the null set $t=0$ as their common boundary.
+
+**Proof.** The bridge is the identity of the fundamental-symmetry article, and the three diffeomorphism types are those of §*The Three Level Sets*; the twist by $J$ replaces the positive definite form by the indefinite one, which is the only change from the sphere.
 
 ## The Level Sets Compared
 
@@ -79,15 +140,25 @@ The positive level set is the two-sheeted hyperboloid, whose sheet $q_0>0$ is gi
 
 **Two points of the null set.** $e_0+e_1$ and $(e_0+e_1)/\sqrt2$: the first has square $0$ and norm $2$, the second square $0$ and Euclidean norm $1$; the second is on the link, and both are on the boundary of the ball.
 
-**A line inside the ball.** $\mathbb{C}(e_0+0.5e_1)$: $\|\tilde{V}\|_E=0.5<1$, a positive line, a point of the complex hyperbolic ball.
+**A line inside the ball.** $\mathbb{C}(e_0+\tfrac12e_1)$: $\|\tilde{V}\|_E=\tfrac12<1$, a positive line, a point of the complex hyperbolic ball.
 
 **A line on the boundary.** $\mathbb{C}(e_0+e_1)$: $\|\tilde{V}\|_E=1$, an isotropic line, a point of the boundary sphere $S^{5}$.
 
-**A real timelike line.** $\tilde{Q}=e_0+0.5e_1$ in $\mathbb{H}_{\mathbb{B}}$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0.75>0$, a point of the Minkowski hyperboloid sheet.
+**A real timelike line.** $\tilde{Q}=e_0+\tfrac12e_1$ in $\mathbb{H}_{\mathbb{B}}$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\tfrac34>0$, a point of the Minkowski hyperboloid sheet.
+
+**A point of a higher positive level.** $\tilde{Q}=2e_0$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=4$, in the interior of the Krein cone, on the level $t=4$; the real scaling by $s=2$ carries $e_0$ to it.
+
+**The antipode.** $\tilde{Q}=-e_0$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1$, the same positive level as $e_0$; the two are the same positive line, and the phase by $-1$ identifies them.
+
+**A negative element and the cone.** $\tilde{Q}=e_1$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1<0$, so it lies outside the Krein cone, on the negative level set.
+
+**A phase orbit.** $e_0$ and $ie_0$: both on the unit positive level set, both positive, the same positive line; the phase circle acts on the level set and the orbit is the fibre of the bundle over $\mathbb{CH}^{3}$.
+
+**A nonzero norm level.** $\{N(\tilde{Q})=1\}$ is a complex hypersurface of real dimension $6$ through the four units $e_0,e_1,e_2,e_3$, each with $N=1$; it is not a real hyperboloid, and its real points include the sphere $\sum_\mu q_\mu^{2}=1$ of the real slice.
 
 ## Summary
 
-The sign level sets of the quaternion sesquilinear form are the hyperboloids $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}\cong S^{1}\times\mathbb{R}^{6}\simeq S^{1}$ and $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}\cong S^{5}\times\mathbb{R}^{2}\simeq S^{5}$, and the null set $S^{1}\times S^{5}\times\mathbb{R}_{>0}\simeq S^{1}\times S^{5}$; all are non-compact of real dimension $7$, in contrast with the compact Euclidean sphere $S^{7}$. The positive region $\{\|c\|_E>\|v\|_E\}$ retracts onto the circle of phases and the negative region onto $S^{5}$. The positive lines are the lines $\mathbb{C}(e_0+\tilde{V})$ with $\|\tilde{V}\|_E<1$, so they form the open unit ball of $\mathbb{C}^{3}$, of real dimension $6$, which is the complex hyperbolic space $\mathbb{CH}^{3}=U(1,3)/(U(1)\times U(3))$ with boundary the isotropic sphere $S^{5}$. On a Minkowski slice the same picture degenerates to the sheet $q_0=\sqrt{1+\|\mathbf{q}\|^{2}}$ of the real hyperboloid, the hyperboloid model of the real hyperbolic space $H^{3}$, the one-sheeted hyperboloid $S^{2}\times\mathbb{R}$, and the two nappes of the light cone.
+The sign level sets of the quaternion sesquilinear form are the hyperboloids $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}\cong S^{1}\times\mathbb{R}^{6}\simeq S^{1}$ and $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}\cong S^{5}\times\mathbb{R}^{2}\simeq S^{5}$, and the null set $S^{1}\times S^{5}\times\mathbb{R}_{>0}\simeq S^{1}\times S^{5}$; all are non-compact of real dimension $7$, in contrast with the compact Euclidean sphere $S^{7}$. The positive region $\{\|c\|_E>\|v\|_E\}$ retracts onto the circle of phases and the negative region onto $S^{5}$. The positive lines are the lines $\mathbb{C}(e_0+\tilde{V})$ with $\|\tilde{V}\|_E<1$, so they form the open unit ball of $\mathbb{C}^{3}$, of real dimension $6$, which is the complex hyperbolic space $\mathbb{CH}^{3}=U(1,3)/(U(1)\times U(3))$ with boundary the isotropic sphere $S^{5}$. On a Minkowski slice the same picture degenerates to the sheet $q_0=\sqrt{1+\|\mathbf{q}\|^{2}}$ of the real hyperboloid, the hyperboloid model of the real hyperbolic space $H^{3}$, the one-sheeted hyperboloid $S^{2}\times\mathbb{R}$, and the two nappes of the light cone. The phase circle acts freely on the positive level set with quotient $\mathbb{CH}^{3}$, and real scaling relates the positive levels; the ball carries the Bergman metric, complete and of constant negative holomorphic curvature, whose complex geodesics are the intersections with the complex lines and whose totally geodesic real slices are the Minkowski hyperboloids. The Krein cone is the union of the non-negative levels, its interior the positive region and its boundary the null set; the norm's nonzero levels, by contrast, are complex hypersurfaces of real dimension $6$, and only its zero set is a cone.
 
 ## Summary of Notation
 
@@ -101,6 +172,11 @@ The sign level sets of the quaternion sesquilinear form are the hyperboloids $\{
 | $\mathbb{CH}^{3}=U(1,3)/(U(1)\times U(3))$ | The complex hyperbolic space of positive lines |
 | $q_0^{2}-\lVert\mathbf{q}\rVert^{2}=\pm1$ | The real hyperboloids in a Minkowski slice |
 | $q_0=\sqrt{1+\lVert\mathbf{q}\rVert^{2}}$ | The hyperboloid model of $H^{3}$ |
+| $S^{1}$ phase and $\mathbb{R}_{>0}$ scaling | The actions on the level sets; the positive level is an $S^{1}$-bundle over $\mathbb{CH}^{3}$ |
+| $ds^{2}$ of §*The Metric of the Ball and Its Geodesics* | The Bergman metric of the ball; complete, constant negative curvature |
+| $P_K=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\ge0\}$ | The Krein cone: origin, positive region, null set |
+| $\{N(\tilde{Q})=\lambda\}$, $\lambda\neq0$ | The norm hypersurfaces; complex, real dimension $6$ |
+| $\{\lVert\tilde{Q}\rVert_E=r\}$, $\langle\tilde{Q},J\tilde{Q}\rangle_{*}=t$ | The definite spheres and their $J$-twist |
 
 ## Further Reading
 
@@ -110,3 +186,5 @@ The sign level sets of the quaternion sesquilinear form are the hyperboloids $\{
 - *The Krein Cartan Decomposition of the Operator Algebra* (`articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.md`), for the symmetric space $U(1,3)/(U(1)\times U(3))$
 - *Biquaternion Rotations and Lorentz Transformations* (`articles_maths/biquaternion-rotations-and-lorentz-transformations.md`), for the boosts acting on the Minkowski hyperboloid
 - *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the compact sphere used here for contrast
+- *The Hermitian Form on the Biquaternion Algebra* (`articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md`), for the definite companion and its spheres
+- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for the bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},J\tilde{Q}\rangle_{*}$

@@ -63,6 +63,26 @@ of complex dimensions $(1,3)$ and real dimensions $(2,6)$, in agreement with the
 
 **Proof.** The statement is the theorem together with the identification of the fixed and anti-fixed spaces of ${}^{\natural}$ in *Comparison of the Six Subspaces*.
 
+## The Krein Space Structure and the Pontryagin Index
+
+The general theory attaches three numbers to an indefinite inner product (*Krein Spaces*, *Pontryagin Spaces*): the **positive index** $p$ and the **negative index** $q$, the dimensions of the positive and the negative definite parts of any fundamental decomposition, and the **Pontryagin index**, the smaller of the two. This section reads the three on the quaternion sesquilinear form and places the algebra in the general categories.
+
+**Definition.** Let $p$ and $q$ be the dimensions of the positive and of the negative definite part of a fundamental decomposition of the quaternion sesquilinear form. The pair $(p,q)$ is the **signature** of the form, $q$ is the **negative index**, and $\min(p,q)$ is the **Pontryagin index**.
+
+**Theorem (the algebra is a Pontryagin space).** Over $\mathbb{C}$, $(p,q)=(1,3)$, the negative index is $3$ and the Pontryagin index is $1$; over $\mathbb{R}$, $(p,q)=(2,6)$, the negative index is $6$ and the Pontryagin index is $2$. With the quaternion sesquilinear form the algebra is a **Krein space** of complex dimension four and finite negative index, hence a **Pontryagin space** $\Pi_{6}$ over $\mathbb{R}$; every fundamental symmetry makes it a Hilbert space, and it is complete in the norm of any one of them.
+
+**Proof.** The eigenspace splitting of $J={}^{\natural}$ is a fundamental decomposition whose positive part is the centre $\mathbb{C}_{\mathbb{B}}$ and whose negative part is the vector subspace $\mathbb{V}_{\mathbb{B}}$ (§*The Eigenspaces and the Fundamental Decomposition*), of complex dimensions $1$ and $3$ and therefore of real dimensions $2$ and $6$; the smaller of the two is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$. A Krein space is a complex vector space with a non-degenerate Hermitian form carrying a fundamental decomposition of finite negative index, and a Pontryagin space is a Krein space of finite negative index, of index denoted by the subscript (*Krein Spaces*, *Pontryagin Spaces*). The space is finite-dimensional, so it is complete in the norm $\langle\tilde{Q},J\tilde{Q}\rangle_{\natural*}$ of an appropriate definite form, and the form produced by a fundamental symmetry is a Hilbert inner product by the second identity of §*The Eigenspaces and the Fundamental Decomposition*.
+
+**Corollary (the Pontryagin index is the positive index).** Because the positive index is the smaller of the two, the Pontryagin index is $p$ itself, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; it is the dimension of the centre and of every maximal positive definite subspace, and its value is unchanged by the two readings of the algebra as a complex and as a real space, since multiplication by $i$ preserves the definite parts.
+
+**Proof.** The positive part is the centre, of complex dimension $1$ and real dimension $2$, and $1<3$ over $\mathbb{C}$ while $2<6$ over $\mathbb{R}$; the maximal positive definite subspaces all have dimension $p$ (§*The Uniqueness of the Symmetry, and the Others*).
+
+**Remark (two indices, two names, and a single subscript).** The **negative index** is the dimension of the negative definite part, $3$ over $\mathbb{C}$ and $6$ over $\mathbb{R}$; the **Pontryagin index** is the rank of the smaller part, here the positive one, $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$. The two are different numbers attached to one signature, and the name $\Pi_{6}$ of the space over $\mathbb{R}$ carries the negative index in its subscript. Read on the abstract data of *Indefinite Inner Product Spaces*, the algebra is the finite-dimensional model of the pair of invariants $(p,q)$, and the operator theory of the next article is the operator theory of that pair.
+
+**Corollary (the sign of the index).** The form is indefinite, $pq=3$ over $\mathbb{C}$ and $pq=12$ over $\mathbb{R}$, and it is neither positive nor negative definite; the two real quaternion slices of signature $(1,3)$ cut the fundamental decomposition across its two parts, so the signature of the whole is not the sum of the slices' signatures.
+
+**Proof.** Indefiniteness is $p,q>0$; the slices $\mathbb{B}_{\mathbb{R}}$ and $i\mathbb{B}_{\mathbb{R}}$ each meet both the centre and the vector subspace nontrivially and each carries signature $(1,3)$ (*The Biquaternion Krein Form and Its Signature*).
+
 ## The Natural Conjugation as an Anti-Automorphism
 
 **Proposition.** ${}^{\natural}$ is a $\mathbb{C}$-linear algebra **anti-automorphism** of order two: ${}^{\natural}(e_0)=e_0$ and
@@ -137,9 +157,13 @@ $$
 
 **A non-admissible parameter.** $\tilde V=2e_1$: $\langle e_0+2e_1,e_0+2e_1\rangle_{\natural*}=1-4<0$, the line is negative, and no fundamental symmetry with that positive part exists.
 
+**The two indices.** For the algebra, $(p,q)=(2,6)$ over $\mathbb{R}$, so the negative index is $6$, the Pontryagin index is $2$, and the space is $\Pi_{6}$; over $\mathbb{C}$ the pair is $(1,3)$ and the two indices are $3$ and $1$. The Pontryagin index is the dimension of the positive part, the centre.
+
+**The same space read over the two fields.** Over $\mathbb{R}$ the space is $\Pi_{6}$ and its Pontryagin index is $2$; read as a complex space it is $\Pi_{3}$ with Pontryagin index $1$. The subscript follows the negative index, and the Pontryagin index follows the positive part.
+
 ## Summary
 
-The **fundamental symmetry** of the quaternion sesquilinear form is the natural conjugation $J={}^{\natural}$: a $\mathbb{C}$-linear involution, self-adjoint for $\langle\cdot,\cdot\rangle_{\natural*}$, positive on $e_0$-lines, with the bridge $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q}',\tilde{Q}^{\natural}\rangle_{*}$. Its eigenspaces are the centre (positive, complex dimension one) and the vector subspace (negative, complex dimension three), so the fundamental decomposition of the Krein space is precisely the eigenspace splitting of one of the algebra's four involutions. ${}^{\natural}$ is a $\mathbb{C}$-algebra anti-automorphism (quaternion conjugation, the adjugate in the matrix model) and commutes with the complex conjugation and the dagger; it exchanges left and right multiplications. All the other fundamental symmetries are the involutions with positive part a positive definite line $\mathbb{C}(e_0+\tilde V)$, $\|\tilde V\|_E<1$, a family parametrised by the open unit ball of the vector subspace; among them ${}^{\natural}$ is the unique one that is an anti-automorphism, equivalently the unique one fixing $e_0$. The $J$-adjoint $T^{\dagger}=JT^{*}J$ makes the indefinite operator theory the definite theory conjugated by $J$, and the $J$-positive cone contains $J$ itself.
+The **fundamental symmetry** of the quaternion sesquilinear form is the natural conjugation $J={}^{\natural}$: a $\mathbb{C}$-linear involution, self-adjoint for $\langle\cdot,\cdot\rangle_{\natural*}$, positive on $e_0$-lines, with the bridge $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q}',\tilde{Q}^{\natural}\rangle_{*}$. Its eigenspaces are the centre (positive, complex dimension one) and the vector subspace (negative, complex dimension three), so the fundamental decomposition of the Krein space is precisely the eigenspace splitting of one of the algebra's four involutions. ${}^{\natural}$ is a $\mathbb{C}$-algebra anti-automorphism (quaternion conjugation, the adjugate in the matrix model) and commutes with the complex conjugation and the dagger; it exchanges left and right multiplications. All the other fundamental symmetries are the involutions with positive part a positive definite line $\mathbb{C}(e_0+\tilde V)$, $\|\tilde V\|_E<1$, a family parametrised by the open unit ball of the vector subspace; among them ${}^{\natural}$ is the unique one that is an anti-automorphism, equivalently the unique one fixing $e_0$. The $J$-adjoint $T^{\dagger}=JT^{*}J$ makes the indefinite operator theory the definite theory conjugated by $J$, and the $J$-positive cone contains $J$ itself. Read on the general theory of *Krein Spaces* and *Pontryagin Spaces*, the algebra is a Krein space of complex dimension four, a Pontryagin space $\Pi_{6}$ over $\mathbb{R}$, with negative index $6$ over $\mathbb{R}$ and $3$ over $\mathbb{C}$ and Pontryagin index $2$ over $\mathbb{R}$ and $1$ over $\mathbb{C}$; the fundamental symmetry $J$ exhibits one fundamental decomposition, and every other one is obtained from a maximal positive definite line.
 
 ## Summary of Notation
 
@@ -152,6 +176,8 @@ The **fundamental symmetry** of the quaternion sesquilinear form is the natural 
 | ${}^{\natural}L_{\tilde{Q}}{}^{\natural}=R_{\tilde{Q}^{\natural}}$ | Exchange of the sides |
 | $\ell_{\tilde V}=\mathbb{C}(e_0+\tilde V)$, $\|\tilde V\|_E<1$ | General fundamental symmetry |
 | $T^{\dagger}=JT^{*}J$ | The $J$-adjoint |
+| $(p,q)=(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$ | The signature; $q$ the negative index, $\min(p,q)$ the Pontryagin index |
+| $\Pi_{6}$ | The Pontryagin space over $\mathbb{R}$; negative index $6$, Pontryagin index $2$ |
 | $\{+1,-1\}$, multiplicities $(2,6)$ | The spectrum of $J$ |
 
 ## Further Reading
@@ -161,4 +187,5 @@ The **fundamental symmetry** of the quaternion sesquilinear form is the natural 
 - *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-biquaternion-algebra.md`), for the operators the symmetry defines
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`) and *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the involutions and their fixed spaces
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the two eigenspaces, the centre and the vector subspace, as algebras
+- *Krein Spaces* (`articles_maths/krein-spaces.md`), *Pontryagin Spaces* (`articles_maths/pontryagin-spaces.md`) and *Indefinite Inner Product Spaces* (`articles_maths/indefinite-inner-product-spaces.md`), for the general theory of the fundamental symmetry, the two indices and the Pontryagin space
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for the fundamental symmetry and the parametrisation of the fundamental decompositions

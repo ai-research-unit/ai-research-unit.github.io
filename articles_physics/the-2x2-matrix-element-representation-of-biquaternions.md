@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic, as a complex algebra, to the algebra of $2 \times 2$ complex matrices,
+The **2×2 matrix realization** is the form in which a biquaternion is a $2\times2$ complex matrix; it is the form that carries the spin, the qubit, the Bell states, the Dirac equation and the Fock space of the corpus. Algebraically, the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic, as a complex algebra, to the algebra of $2 \times 2$ complex matrices,
 
 $$
 \mathbb{B} \cong M_2(\mathbb{C}),

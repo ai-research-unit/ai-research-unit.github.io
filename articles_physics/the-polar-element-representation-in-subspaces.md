@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The polar representation of a biquaternion,
+Each of the six distinguished subspaces is a physical sector of the framework, and the polar representation behaves differently on each. The polar representation of a biquaternion,
 
 $$
 \tilde{Q} = r\,e^{i\alpha}\,B\,\hat{q} , \qquad r\in\mathbb{R}_{>0}, \quad \alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right], \quad B\in\mathbb{M}_+, \quad \hat{q}\in\mathrm{Sp}(1) ,
@@ -475,10 +475,7 @@ Restricted to the six distinguished subspaces, the polar representation $\tilde{
 
 - *The Polar Element Representation of Biquaternions* (`articles_physics/the-polar-element-representation-of-biquaternions.md`), for the theorem, the four factors, the algorithm and the uniqueness, the determinant, the interval and the light cone.
 - *Relations Between Subspaces* (`articles_physics/relations-between-subspaces.md`), for the six subspaces, the involutions, the four blocks, the intersections and the biquaternion norm of each subspace.
-- *The Center Subspace C_B as the Complex Time Sector* (`articles_physics/the-center-subspace-c-b-as-the-complex-time-sector.md`), for the center on its own terms.
-- *The Vector Subspace Vect(B) as the Complex Space Sector* (`articles_physics/the-vector-subspace-vect-b-as-the-complex-space-sector.md`), for the complex null cone and the derived subspace.
-- *The Quaternion Subspace H_B as the Real Sector* (`articles_physics/the-quaternion-subspace-hb-as-the-real-sector.md`), for the real quaternions and their polar form.
-- *The Anti-Quaternion Subspace iH_B as the Imaginary Sector* (`articles_physics/the-anti-quaternion-subspace-ihb-as-the-imaginary-sector.md`), for the antiquaternions.
+- *The Four Other Remarkable Subspaces* (`articles_physics/the-four-other-remarkable-subspaces.md`), for the center, the vector subspace, the quaternion and the anti-quaternion subspace: their dimensions over the reals and over the complex numbers and the coordinates each carries.
 - *The Hermitian Subspace M+ as the Informational Sector* (`articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md`), for the boosts and the information reading.
 - *The Anti-Hermitian Subspace M- as the Material Sector* (`articles_physics/the-anti-hermitian-subspace-m-as-the-material-sector.md`), for the four-vectors and the light cone.
 - *The 2×2 Matrix Element Representation of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-of-biquaternions.md`), for the matrix classes of the six subspaces and $\det\Phi(\tilde{Q}) = N(\tilde{Q})$.

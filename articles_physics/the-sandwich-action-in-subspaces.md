@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The article *Biquaternion Rotations and Lorentz Transformations* makes a single element of the algebra act on the algebra by the sandwich
+The Lorentz transformation of the corpus is the sandwich of a rotor, and the boosts live in the informational sector; the six distinguished subspaces each produce their own kind of transformation, and this article answers, for each subspace in turn, what operator an element of it produces. The article *Biquaternion Rotations and Lorentz Transformations* makes a single element of the algebra act on the algebra by the sandwich
 
 $$
 \tilde S \longmapsto \tilde{Q}\,\tilde S\,\tilde{Q}^{*} ,
@@ -375,10 +375,7 @@ The type of the operator is therefore decided by the class of the acting element
 - *The Lorentz Transformation as a Biquaternionic Rotation* (`articles_physics/the-lorentz-transformation-as-a-biquaternionic-rotation.md`), for the boost biquaternion in the informational sector and the sandwich with the element on both sides
 - *The Lorentz Group as Biquaternion Norm Automorphisms* (`articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.md`), for the unit-norm rotors, the homomorphism onto the Lorentz group and its kernel
 - *The Lorentz Group in Biquaternionic Form — Structure and Representations* (`articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md`), for the boosts, the rotations and the Thomas–Wigner rotation the composition lemma produces
-- *The Center Subspace C_B as the Complex Time Sector* (`articles_physics/the-center-subspace-c-b-as-the-complex-time-sector.md`), for the centre on its own terms
-- *The Vector Subspace Vect(B) as the Complex Space Sector* (`articles_physics/the-vector-subspace-vect-b-as-the-complex-space-sector.md`), for the vector subspace, its biquaternion norm and its polar phase
-- *The Quaternion Subspace H_B as the Real Sector* (`articles_physics/the-quaternion-subspace-hb-as-the-real-sector.md`), for the real quaternions and the rotations
-- *The Anti-Quaternion Subspace iH_B as the Imaginary Sector* (`articles_physics/the-anti-quaternion-subspace-ihb-as-the-imaginary-sector.md`), for the antiquaternions and the frozen phase
+- *The Four Other Remarkable Subspaces* (`articles_physics/the-four-other-remarkable-subspaces.md`), for the center, the vector subspace, the quaternion and the anti-quaternion subspace: their dimensions over the reals and over the complex numbers and the coordinates each carries
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (`articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md`), for the sector that carries the boosts and the Hermitian forms
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* (`articles_physics/the-anti-hermitian-subspace-m-as-the-material-sector.md`), for the sector that carries the four-vectors
 - *The 2×2 Matrix Element Representation of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-of-biquaternions.md`), for the matrix image of the sandwich as a similarity

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is eight-dimensional over the reals, and it is cut into six distinguished real subspaces: the two-dimensional center subspace $\mathbb{C}_{\mathbb{B}}$, the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$, and four four-dimensional ones — the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian sector $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$. Each has its own article. This article is about how they fit together.
+The six distinguished subspaces of the biquaternion algebra are where the physical objects of the framework live — the two times, the two spaces, the informational states, the material four-vectors — and how those subspaces cross decides how the objects combine. The algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is eight-dimensional over the reals, and it is cut into six distinguished real subspaces: the two-dimensional center subspace $\mathbb{C}_{\mathbb{B}}$, the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$, and four four-dimensional ones — the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian sector $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$. Each has its own article. This article is about how they fit together.
 
 The organising fact is that the eight real dimensions decompose in **three** different ways into two complementary halves:
 

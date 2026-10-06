@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is about the **anti-Hermitian subspace** $\mathbb{M}_-$, the fixed space of the anti-Hermitian conjugation: its definition and basis, its algebraic properties, the physical reading of its quadratic form and light cone, its Lorentz action, and the four-vectors of relativistic physics that live in it.
+This article is about the **material sector** $\mathbb{M}_-$: the sector that carries the four-vectors of relativistic physics — the four-position, four-velocity, four-momentum, four-force, four-potential and four-current of a relativistic system all lie in it — together with the Minkowski interval and its light cone and the Lorentz action on them. Algebraically it is the anti-Hermitian subspace, the fixed space of the anti-Hermitian conjugation, and the article treats its definition and basis, its algebraic properties, the physical reading of its quadratic form and light cone, its Lorentz action and the four-vectors that live in it.
 
 The mathematical content of this article is standard: $\mathbb{M}_-$ is, as a real vector space with a quadratic form, isomorphic to Minkowski space $\mathbb{R}^{3,1}$ (three space-like directions and one time-like one), and it is the natural home of the four-vectors of relativistic physics. The physical content is also standard: the four-position, four-velocity, four-momentum, four-force, four-potential, and four-current of a relativistic system all lie in $\mathbb{M}_-$.
 

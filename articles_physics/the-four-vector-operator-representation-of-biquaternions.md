@@ -2,6 +2,8 @@
 
 ## Introduction
 
+Physically this is the arithmetic of a frame change written in the coordinates of a four-vector: the operand is the rotor, the argument is the four-vector being moved, and the two-step rule below is the transformation written out.
+
 The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and with a central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, written in the four-vector realization as the quadruple $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ of *The Four-Vector Element Representation of Biquaternions*, with the physical dictionary of that article and of *Conventions in the Biquaternion Universe*.
 
 That article answers the question *what is* $\tilde{Q}$: it is a quadruple of complex coefficients, with a product rule, four conjugations, six distinguished subspaces, a biquaternion norm and a reading as a material four-vector plus an informational four-vector. This article answers the question *what does* $\tilde{Q}$ *do*: the element is used as an operator through the Hermitian sandwich of *Biquaternion Rotations and Lorentz Transformations*,
@@ -10,7 +12,7 @@ $$
 \operatorname{H}_{\tilde{Q}}(\tilde U) = \tilde{Q}\,\tilde U\,\tilde{Q}^{*},
 $$
 
-and the whole article is the coefficient reading of that one formula. Everything is computed from the product rule of the four-vector realization and from the coordinate form of the dagger; the operator's matrix, its determinant and its trace belong to other coordinate systems and are not repeated here, and neither is its reading on the matrix algebra. Physically this is the arithmetic of a frame change written in the coordinates of a four-vector: the operand is the rotor, the argument is the four-vector being moved, and the two-step rule below is the transformation written out.
+and the whole article is the coefficient reading of that one formula. Everything is computed from the product rule of the four-vector realization and from the coordinate form of the dagger; the operator's matrix, its determinant and its trace belong to other coordinate systems and are not repeated here, and neither is its reading on the matrix algebra.
 
 The article owns the two-step component rule, the image of the basis elements, the reading of the operator on the scalar and the vector part, the coordinate form of the two regimes, and the worked collapse of a null operator on the basis. The purpose of that material is the one the component realization always serves in this corpus: it turns a structural statement into arithmetic that can be checked on a chosen element.
 

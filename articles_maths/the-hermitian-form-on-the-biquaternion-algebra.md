@@ -1,99 +1,194 @@
+
 # __The Hermitian Form on the Biquaternion Algebra__
 
 ## Introduction
 
-The second scalar pairing of the biquaternion algebra is built on the **Hermitian conjugation** ${}^{*} = {}^{\natural}\circ\bar{\cdot}$, which is $\mathbb{C}$-antilinear, so that the pairing is $\mathbb{C}$-**sesquilinear** rather than bilinear. This article defines that form and the inner product it induces, and gathers the metric readings that the Algebra group does not carry.
-
-The form and the inner product are extracted here from *Biquaternions as a Vector Space over $\mathbb{C}$*, where they stood as §*The Hermitian Form* and §*The Inner Product*. They are forms: they are built from the conjugation ${}^{*}$, they are read for length and for sign, and their home is the Topology group. The Algebra articles keep the conjugation ${}^{*}$ itself and the Hermitian subspace $\mathbb{M}_+$ as its fixed space — those are involution-theoretic and need no form to exist.
-
-## The Hermitian Form
-
-The **complex sesquilinear form** of a biquaternion $\tilde{Q}$ is the biquaternion
+The biquaternion algebra carries two scalar pairings of degree two, and this article treats the second of them. The **Hermitian form** is built on the Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$,
 
 $$
-\tilde{Q} \tilde{Q}^{*},
+\langle\tilde{Q},\tilde{P}\rangle_{*}=\mathrm{Sc}\!\left(\tilde{Q}\tilde{P}^{*}\right)=\sum_{\mu=0}^{3}P_{\bar\mu}Q_\mu ,
 $$
 
-where $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ is the Hermitian conjugate.
+with the conjugation in the second argument, so that the pairing is $\mathbb{C}$-**sesquilinear** rather than bilinear. Its diagonal is a genuine positive definite quadratic form, and it is this form, not the quaternion bilinear one, that supplies the algebra with its Euclidean and Hilbert structure.
 
-- $\tilde{Q} \tilde{Q}^{*}$ is a **biquaternion**, not a real scalar in general. Its **scalar part** is
+The article owns four objects. It owns the form $\tilde{Q}\tilde{Q}^{*}$ of a single element and its scalar part, the vector part included. It owns the sesquilinear inner product, its sesquilinearity, its Hermitian symmetry and its non-degeneracy, and the Gram matrix and signature of the form. It owns the real form of signature $(8,0)$ on $\mathbb{B}\cong\mathbb{R}^{8}$ that the inner product defines, the completeness and the coefficient model $\mathbb{C}^{4}$, and the Euclidean unit sphere. And it owns the comparison of the form with the quaternion bilinear form. It assumes the four conjugations of the algebra with their fixed spaces (*The Group of Involutions*; *Biquaternions as a Vector Space over $\mathbb{C}$*) and the biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ (*Biquaternion Norm and Invertibility*); it assumes no topology.
+
+The readings collected here were carried by *Biquaternions as a Vector Space over $\mathbb{C}$* as §*The Hermitian Form* and §*The Inner Product*. They are forms, their home is the Topology region, and the Algebra articles keep the conjugation ${}^{*}$ itself and the Hermitian subspace $\mathbb{M}_+$ as its fixed space, those being involution-theoretic and needing no form to exist. Four deferrals are stated once and are not repeated. The topology that the form induces — the linear isometry onto $\mathbb{R}^{8}$, the sharp inequality of the normed algebra, the contractibility of the algebra, the three spherical level sets and the Riesz duality — is *The Euclidean Topology of the Biquaternion Algebra*. The compact group formed by the unitary elements is *The Unitary Group of the Biquaternion Algebra*. The form of the regular module, whose scalar part is the pairing of this article, is *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*. And the operator theory built on the form is *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* and *Mixed Inner Conjugation on the Biquaternion Algebra with Hermitian Adjoint*, the positivity of the form being *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
+
+**Conventions.** Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra with basis $e_0,e_1,e_2,e_3$, where $e_0$ is the identity and $e_k^{2}=-e_0$ for $k=1,2,3$. A generic element is $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$, and the scalar part is written $\mathrm{Sc}$. The Hermitian conjugation is ${}^{*}={}^{\natural}\circ\bar{\cdot}$, the composite of the coefficient conjugation $\bar{\cdot}$ and the natural conjugation ${}^{\natural}$; it is conjugate-linear, and ${}^{*}{}^{*}=\mathrm{id}$.
+
+## The Hermitian Form of an Element
+
+**Definition (the form of an element).** The **Hermitian form** of a biquaternion is the biquaternion
 
 $$
-\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^{*}\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} \left(q_\mu^2 + (q'_\mu)^2\right),
+\tilde{Q}\tilde{Q}^{*},\qquad \tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}} .
 $$
 
-with $Q_\mu = q_\mu + i q'_\mu$. This scalar part is non-negative and vanishes if and only if $\tilde{Q} = 0$. The vector part of $\tilde{Q} \tilde{Q}^{*}$ does not in general vanish: for example, for $\tilde{Q} = e_0 + ie_1$, one has $\tilde{Q}^{*} = e_0 + ie_1$ and
+**Proposition (the scalar part).** The scalar part of the form is
 
 $$
-\tilde{Q} \tilde{Q}^{*} = (e_0 + ie_1)^2 = 2e_0 + 2ie_1,
+\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^{*}\right)=\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}=\sum_{\mu=0}^{3}\left(q_\mu^{2}+q'_\mu{}^{2}\right),
 $$
 
-which has a nonzero vector part $2ie_1$.
+a real number, non-negative, and zero only at $\tilde{Q}=0$.
 
-- The complex sesquilinear form is **not** multiplicative with respect to the biquaternion product, and its scalar part does not in general equal the biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$.
-- The complex sesquilinear form is **Hermitian** in the sense that $(\tilde{Q} \tilde{Q}^{*})^{\dagger} = \tilde{Q} \tilde{Q}^{*}$: the complex sesquilinear form of any biquaternion is a Hermitian element of $\mathbb{B}$, that is, an element of $\mathbb{M}_+$.
+**Proof.** The conjugation acts on the basis by $e_0^{*}=e_0$ and $e_k^{*}=-e_k$, so that $\tilde{Q}^{*}=\sum_{\nu}\eta_\nu\bar{Q}_\nu e_\nu$ with $\eta_0=+1$ and $\eta_k=-1$; hence
+
+$$
+\tilde{Q}\tilde{Q}^{*}=\sum_{\mu,\nu}Q_\mu\bar{Q}_\nu\,\eta_\nu\,e_\mu e_\nu .
+$$
+
+Among the products $e_\mu e_\nu$ only those with $\mu=\nu$ are scalars, and there $e_0^{2}=e_0$ and $e_k^{2}=-e_0$. The scalar part is therefore $\sum_\mu Q_\mu\bar{Q}_\mu\,\eta_\mu\,(\pm1)=\sum_\mu\lvert Q_\mu\rvert^{2}$, the two signs contributed by the terms $\mu=k$ cancelling. A sum of squares of real numbers vanishes only when every $q_\mu$ and every $q'_\mu$ vanishes.
+
+**Example (a form with a non-zero vector part).** The element $\tilde{Q}=e_0+ie_1$ is Hermitian, $\tilde{Q}^{*}=\tilde{Q}$, and
+
+$$
+\tilde{Q}\tilde{Q}^{*}=(e_0+ie_1)^{2}=e_0+2ie_1+(ie_1)^{2}=2e_0+2ie_1 ,
+$$
+
+because $(ie_1)^{2}=i^{2}e_1^{2}=e_0$. The scalar part is $2$ and the vector part is $2ie_1$. The form of an element is thus a biquaternion and not a real number, and its vector part need not vanish.
+
+**Proposition (Hermitian character).** The form of an element is a Hermitian element, $(\tilde{Q}\tilde{Q}^{*})^{*}=\tilde{Q}\tilde{Q}^{*}$; that is, $\tilde{Q}\tilde{Q}^{*}\in\mathbb{M}_+$.
+
+**Proof.** The conjugation reverses the product and has order two, so $(\tilde{Q}\tilde{Q}^{*})^{*}=(\tilde{Q}^{*})^{*}\tilde{Q}^{*}=\tilde{Q}\tilde{Q}^{*}$.
+
+**Remark (the form is not multiplicative, and it is not the norm).** The assignment $\tilde{Q}\mapsto\tilde{Q}\tilde{Q}^{*}$ is not multiplicative. The element $\tilde{Q}=e_1+ie_2$ is a zero divisor, $\tilde{Q}^{2}=0$, while $\tilde{Q}\tilde{Q}^{*}=2e_0+2ie_3$ is not zero; were the assignment multiplicative, $(\tilde{Q}^{2})(\tilde{Q}^{2})^{*}$ would be $(\tilde{Q}\tilde{Q}^{*})^{2}=8e_0+8ie_3$, whereas it is $0$. The quadratic function $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ is a different function of the element, complex-valued and indefinite; the two are compared in §*The Comparison with the Quaternion Bilinear Form*.
 
 ## The Inner Product
 
-The **inner product** of two biquaternions is the complex scalar
+**Definition (the inner product).** The **inner product** of two biquaternions is the complex scalar
 
 $$
-\langle\tilde{Q},\tilde{P}\rangle_{*} = \sum_{\mu=0}^{3} P_{\bar{\mu}} Q_\mu
-= \sum_{\mu=0}^{3} \left(p_\mu q_\mu + p'_\mu q'_\mu\right) + i \sum_{\mu=0}^{3} \left(p_\mu q'_\mu - p'_\mu q_\mu\right),
+\langle\tilde{Q},\tilde{P}\rangle_{*}=\mathrm{Sc}\!\left(\tilde{Q}\tilde{P}^{*}\right)=\sum_{\mu=0}^{3}P_{\bar\mu}Q_\mu
+=\sum_{\mu=0}^{3}\left(p_\mu q_\mu+p'_\mu q'_\mu\right)+i\sum_{\mu=0}^{3}\left(p_\mu q'_\mu-p'_\mu q_\mu\right),
 $$
 
-with $Q_\mu = q_\mu + i q'_\mu$. It is **sesquilinear**, linear in the first argument and conjugate-linear in the second,
+the scalar part of the form of the pair.
+
+**Proposition (sesquilinearity).** For every $\lambda\in\mathbb{C}$,
 
 $$
-\langle\tilde{Q},\lambda \tilde{P}\rangle_{*} = \bar{\lambda} \langle\tilde{Q},\tilde{P}\rangle_{*}, \qquad
-\langle\lambda \tilde{Q},\tilde{P}\rangle_{*} = \lambda \langle\tilde{Q},\tilde{P}\rangle_{*}, \qquad \lambda \in \mathbb{C},
+\langle\lambda\tilde{Q},\tilde{P}\rangle_{*}=\lambda\langle\tilde{Q},\tilde{P}\rangle_{*},\qquad
+\langle\tilde{Q},\lambda\tilde{P}\rangle_{*}=\bar{\lambda}\langle\tilde{Q},\tilde{P}\rangle_{*} ,
 $$
 
-and **Hermitian**, $\langle\tilde{Q},\tilde{P}\rangle_{*}^* = \langle\tilde{P},\tilde{Q}\rangle_{*}$. It is **non-degenerate**: if $\langle\tilde{Q},\tilde{P}\rangle_{*} = 0$ for every $\tilde{Q}$, then $\tilde{P} = 0$, since testing against the units gives $P_{\bar{\mu}} = 0$.
+so the pairing is linear in the first argument and conjugate-linear in the second.
 
-The inner product pairs the algebra with its conjugate and is complex-valued in general. Its diagonal value
+**Proof.** The scalar part is linear over $\mathbb{C}$ and satisfies $\mathrm{Sc}(XY)=\mathrm{Sc}(YX)$. In the first slot this gives $\mathrm{Sc}((\lambda\tilde{Q})\tilde{P}^{*})=\lambda\,\mathrm{Sc}(\tilde{Q}\tilde{P}^{*})$. In the second slot, $(\lambda\tilde{P})^{*}=\bar{\lambda}\tilde{P}^{*}$ because $\lambda$ is central, and $\bar{\lambda}\,\mathrm{Sc}(\tilde{Q}\tilde{P}^{*})=\mathrm{Sc}(\tilde{Q}\,\bar{\lambda}\tilde{P}^{*})$.
+
+**Proposition (Hermitian symmetry).** $\langle\tilde{Q},\tilde{P}\rangle_{*}^{*}=\langle\tilde{P},\tilde{Q}\rangle_{*}$.
+
+**Proof.** The conjugate of a scalar is the scalar part of the conjugate biquaternion, $\overline{\mathrm{Sc}(X)}=\mathrm{Sc}(X^{*})$, so $\langle\tilde{Q},\tilde{P}\rangle_{*}^{*}=\mathrm{Sc}\bigl((\tilde{Q}\tilde{P}^{*})^{*}\bigr)=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})=\langle\tilde{P},\tilde{Q}\rangle_{*}$.
+
+**Proposition (non-degeneracy).** If $\langle\tilde{Q},\tilde{P}\rangle_{*}=0$ for every $\tilde{Q}$, then $\tilde{P}=0$; if $\langle\tilde{Q},\tilde{P}\rangle_{*}=0$ for every $\tilde{P}$, then $\tilde{Q}=0$.
+
+**Proof.** Testing the first statement at the four basis elements $\tilde{Q}=e_\mu$ gives $P_{\bar\mu}=0$ for every $\mu$, hence $\tilde{P}=0$; testing the second at $\tilde{P}=e_\mu$ gives $Q_\mu=0$ for every $\mu$, hence $\tilde{Q}=0$.
+
+**Proposition (the Gram matrix and the signature).** In the basis $e_0,e_1,e_2,e_3$ the Gram matrix of the inner product is the identity,
 
 $$
-\langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_{\mu=0}^{3} |Q_\mu|^2 = \mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^{*}\right)
+\langle e_\mu,e_\nu\rangle_{*}=\delta_{\mu\nu},
 $$
 
-is the scalar part of the complex sesquilinear form and vanishes only at $\tilde{Q} = 0$.
+and the form is positive definite, of signature $(8,0)$ on the real space $\mathbb{B}\cong\mathbb{R}^{8}$.
 
-## The Euclidean Structure
+**Proof.** Since $e_0^{*}=e_0$ and $e_k^{*}=-e_k$, the diagonal values are $\langle e_0,e_0\rangle_{*}=\mathrm{Sc}(e_0^{2})=1$ and $\langle e_k,e_k\rangle_{*}=\mathrm{Sc}(-e_k^{2})=1$, while for $\mu\neq\nu$ the product $e_\mu e_\nu$ has vanishing scalar part, so the off-diagonal values are zero. On the diagonal the form is $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$, positive off zero by the proposition on the scalar part, so the form is positive definite; a positive definite real form on a space of real dimension eight has signature $(8,0)$.
 
-The diagonal of the inner product is a positive definite real quadratic form on $\mathbb{B} \cong \mathbb{R}^8$, and it defines the **Euclidean norm**
+## The Hilbert Structure
+
+The inner product is positive definite, and the structure it places on the algebra is read in four steps.
+
+**The real inner product.** The real part of the inner product, with the two arguments in the symmetric order,
 
 $$
-\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^{*}\right)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2}.
+(\tilde{P},\tilde{Q})_{\mathbb{R}}=\mathrm{Re}\,\langle\tilde{Q},\tilde{P}\rangle_{*}=\sum_{\mu=0}^{3}\left(p_\mu q_\mu+p'_\mu q'_\mu\right),
 $$
 
-It is a genuine norm: positive definite, subadditive, homogeneous of degree one, and **not** multiplicative with respect to the biquaternion product. The complex sesquilinear form therefore equips the algebra with its Hilbert-space structure, and it is this form, not the quaternion bilinear one, that the topological statements about $\mathbb{B}$ use.
+is a positive definite real inner product on the underlying real space of dimension eight, by the Gram matrix and the diagonal of the preceding section.
 
-Three consequences are read from it and are developed in their own articles.
+**Completeness.** An inner product space of finite dimension over $\mathbb{R}$ or over $\mathbb{C}$ is complete, its unit ball being compact in the norm it defines. The algebra is therefore a complex Hilbert space of dimension four, with orthonormal basis $e_0,e_1,e_2,e_3$, and the coefficient map
 
-- **The positive definiteness of the quaternion subspace.** On $\mathbb{H}_{\mathbb{B}}$ the norm $N$ is the sum of four real squares, hence positive definite, whereas on $i\mathbb{H}_{\mathbb{B}}$ it is the negative of such a sum; the pair is the real-and-imaginary coefficient splitting of the algebra. The positivity is the content that the Algebra article *Introduction to the Six Subspaces* now records only as the algebraic fact that every non-zero element is a unit.
-- **The Euclidean topology.** The linear isometry onto $\mathbb{R}^8$, the contractibility of $\mathbb{B}$ and the Euclidean unit sphere $S^7$ are *The Euclidean Topology of the Biquaternion Algebra*.
-- **The unitary group.** The maximal compact subgroup $U(2)$ of the unit group, onto which $\mathbb{B}^\times$ retracts, is *The Unitary Group of the Biquaternion Algebra*.
+$$
+\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu\longmapsto (Q_0,Q_1,Q_2,Q_3)
+$$
 
-The comparison of this form with the quaternion bilinear one is the table of *Biquaternion Norm and Invertibility*, §*Relation Between the Biquaternion Norm and the Hermitian Form*: the two coincide exactly on the quaternion subspace, and on the anti-quaternion subspace they differ by a sign.
+is an isomorphism of $\mathbb{B}$ onto $\mathbb{C}^{4}$ with its ordinary Hermitian inner product.
+
+**The Euclidean norm.** The norm of the form is
+
+$$
+\lVert\tilde{Q}\rVert_E=\sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{*}}=\left(\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}\right)^{1/2}=\sqrt{\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^{*}\right)} ,
+$$
+
+which is positive definite, homogeneous of degree one and subadditive.
+
+**The Euclidean unit sphere.** The level set of the norm is the Euclidean unit sphere of the underlying real space,
+
+$$
+S^{7}=\{\tilde{Q}\in\mathbb{B}:\lVert\tilde{Q}\rVert_E=1\},
+$$
+
+a sphere of dimension seven. Its topology, the fact that it is not a group and its meeting with the null cone are *The Euclidean Topology of the Biquaternion Algebra*, and the operator theory that the norm makes possible is the pair of operator articles named in the introduction.
+
+**Remark (the norm is not multiplicative).** The norm of the form is not multiplicative with respect to the biquaternion product, the witness being the zero divisor of the preceding section: $\tilde{Q}=e_1+ie_2$ has $\lVert\tilde{Q}\rVert_E^{2}=2$ and $\tilde{Q}^{2}=0$, so the multiplicative inequality fails. The sharp inequality that does hold, and the constant in it, are *The Euclidean Topology of the Biquaternion Algebra*.
+
+## The Comparison with the Quaternion Bilinear Form
+
+**Definition (the quaternion bilinear form).** The **quaternion bilinear form** is
+
+$$
+\langle\tilde{Q},\tilde{P}\rangle_{\natural}=\mathrm{Sc}\!\left(\tilde{Q}\tilde{P}^{\natural}\right)=\sum_{\mu=0}^{3}Q_\mu P_\mu ,
+$$
+
+built on the natural conjugation ${}^{\natural}$, which is $\mathbb{C}$-linear; it is $\mathbb{C}$-bilinear and symmetric, and its diagonal $\sum_\mu Q_\mu^{2}$ is the biquaternion norm. It is *The Bilinear Form on the Biquaternion Algebra*, and the two pairings here are the two readings of one construction, taken with the two involutions of the algebra.
+
+**Proposition (coincidence and sign).** The diagonal of the Hermitian form and the diagonal of the bilinear form coincide on the quaternion subspace and differ by a sign on the anti-quaternion subspace:
+
+$$
+\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^{*}\right)=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\quad\text{for } \tilde{Q}\in\mathbb{H}_{\mathbb{B}},\qquad
+\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^{*}\right)=-\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\quad\text{for } \tilde{Q}\in i\mathbb{H}_{\mathbb{B}} .
+$$
+
+**Proof.** Writing $Q_\mu=q_\mu+iq'_\mu$ gives $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})=\sum_\mu(q_\mu^{2}+q'_\mu{}^{2})$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu(q_\mu+iq'_\mu)^{2}=\sum_\mu(q_\mu^{2}-q'_\mu{}^{2})$, whose imaginary part vanishes in the sum by the symmetry of the product. The two expressions agree when every $q'_\mu$ is zero, that is on the quaternion subspace, and are negatives of one another when every $q_\mu$ is zero, that is on the anti-quaternion subspace.
+
+**Table (the two diagonals on the four sectors).** On the vectors of the four real subspaces of the Hermitian layer, with real parameters,
+
+| Element | $\mathrm{Re}$ of the bilinear diagonal | Hermitian diagonal | Bilinear diagonal |
+|---|---|---|---|
+| $ae_0$, $a\in\mathbb{R}$ | $a^{2}$ | $a^{2}$ | $a^{2}$ |
+| $\tilde{Q}=\sum_\mu q_\mu e_\mu$ | $\sum_\mu q_\mu^{2}$ | $\sum_\mu q_\mu^{2}$ | $\sum_\mu q_\mu^{2}$ |
+| $\tilde{Q}=\sum_\mu q'_\mu e_\mu$, vector part | $-\sum_\mu q'_\mu{}^{2}$ | $\sum_\mu q'_\mu{}^{2}$ | $-\sum_\mu q'_\mu{}^{2}$ |
+| $ae_0+i\sum_k b_ke_k$, $a,b_k\in\mathbb{R}$ | $a^{2}-\sum_k b_k^{2}$ | $a^{2}+\sum_k b_k^{2}$ | $a^{2}-\sum_k b_k^{2}$ |
+| $ic_0e_0+\sum_k c_ke_k$, $c_0,c_k\in\mathbb{R}$ | $-c_0^{2}+\sum_k c_k^{2}$ | $c_0^{2}+\sum_k c_k^{2}$ | $-c_0^{2}+\sum_k c_k^{2}$ |
+
+The Hermitian diagonal is positive in every row, and the bilinear diagonal is the indefinite one; its restrictions to the six distinguished subspaces, with the signatures $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$, are *Biquaternion Norm and Invertibility*, §*The Real Forms and Their Signatures*, and the two readings of a subspace are set side by side in *Comparison of the Six Subspaces*.
+
+**Remark (one construction, two involutions).** The Hermitian form is conjugate-linear in the second argument and positive definite on its diagonal; the bilinear form is linear in both arguments and indefinite. The difference is carried entirely by the involution: the scalar part of $\tilde{Q}\tilde{Q}^{\theta}$ is positive definite for $\theta={}^{*}$ and indefinite for $\theta={}^{\natural}$. The indefinite variant built on the coefficient conjugation, the third pairing of the algebra, is *The Biquaternion Krein Form and Its Signature*.
 
 ## Summary
 
-The complex sesquilinear form of the biquaternion algebra is $\tilde{Q}\tilde{Q}^{*}$, built on the antilinear conjugation ${}^{*}$; its scalar part is $\sum_\mu |Q_\mu|^2$, non-negative and vanishing only at the origin, and its vector part need not vanish. It induces the sesquilinear **inner product** $\langle\tilde{Q},\tilde{P}\rangle_{*} = \sum_\mu P_{\bar\mu}Q_\mu$, conjugate-linear in the first argument, Hermitian and non-degenerate. The diagonal of the inner product is a positive definite real form on $\mathbb{B}\cong\mathbb{R}^8$, and it defines the Euclidean norm, hence the Hilbert-space and topological structure of the algebra. Positive definiteness is carried by the quaternion subspace and its negative by the anti-quaternion subspace. This article holds the form and the inner product that *Biquaternions as a Vector Space over $\mathbb{C}$* formerly carried as §*The Hermitian Form* and §*The Inner Product*; the sesquilinear companion of the quaternion bilinear form is *The Bilinear Form on the Biquaternion Algebra*, and the indefinite variant is *The Biquaternion Krein Form and Its Signature*.
+The second scalar pairing of the biquaternion algebra is the Hermitian form $\langle\tilde{Q},\tilde{P}\rangle_{*}=\mathrm{Sc}(\tilde{Q}\tilde{P}^{*})=\sum_\mu P_{\bar\mu}Q_\mu$, built on the conjugate-linear Hermitian conjugation ${}^{*}$ and therefore sesquilinear, linear in the first argument and conjugate-linear in the second. Its diagonal is the positive definite real form $\sum_\mu\lvert Q_\mu\rvert^{2}$ of signature $(8,0)$ on $\mathbb{B}\cong\mathbb{R}^{8}$, and its Gram matrix in the basis $e_\mu$ is the identity; it is Hermitian by symmetry and non-degenerate. The form of a single element $\tilde{Q}\tilde{Q}^{*}$ is a Hermitian biquaternion, its scalar part being the diagonal of the pairing and its vector part not in general vanishing, as the example $(e_0+ie_1)^{2}=2e_0+2ie_1$ shows; the assignment is not multiplicative. The real part of the pairing is a positive definite real inner product, so the algebra is a complete complex Hilbert space of dimension four with orthonormal basis $e_0,e_1,e_2,e_3$, and the level set of its norm is the Euclidean unit sphere $S^{7}$. On the quaternion subspace the diagonal of the Hermitian form coincides with the diagonal of the quaternion bilinear form and on the anti-quaternion subspace it is its negative. The topology that the form induces is *The Euclidean Topology of the Biquaternion Algebra*, the compact group it singles out is *The Unitary Group of the Biquaternion Algebra*, and the module-level origin of the scalar form is *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{Q} \tilde{Q}^{*}$ | The complex sesquilinear form; a Hermitian biquaternion |
-| $\mathrm{Sc}(\tilde{Q} \tilde{Q}^{*}) = \sum_\mu \lvert Q_\mu\rvert^2$ | Scalar part of the complex sesquilinear form; positive definite |
-| $\langle\tilde{Q},\tilde{P}\rangle_{*} = \sum_\mu P_{\bar\mu} Q_\mu$ | The inner product; a complex scalar, sesquilinear and non-degenerate |
-| $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})}$ | The Euclidean norm |
+| ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | The Hermitian conjugation; conjugate-linear, of order two |
+| $\tilde{Q}\tilde{Q}^{*}$ | The Hermitian form of an element; a Hermitian biquaternion |
+| $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}$ | Its scalar part; positive definite, zero only at $\tilde{Q}=0$ |
+| $\langle\tilde{Q},\tilde{P}\rangle_{*}=\mathrm{Sc}(\tilde{Q}\tilde{P}^{*})=\sum_\mu P_{\bar\mu}Q_\mu$ | The inner product; sesquilinear and Hermitian |
+| $\langle\lambda\tilde{Q},\tilde{P}\rangle_{*}=\lambda\langle\tilde{Q},\tilde{P}\rangle_{*}$, $\langle\tilde{Q},\lambda\tilde{P}\rangle_{*}=\bar{\lambda}\langle\tilde{Q},\tilde{P}\rangle_{*}$ | Sesquilinearity of the inner product |
+| $\langle\tilde{Q},\tilde{P}\rangle_{*}^{*}=\langle\tilde{P},\tilde{Q}\rangle_{*}$ | Hermitian symmetry |
+| $\langle e_\mu,e_\nu\rangle_{*}=\delta_{\mu\nu}$ | Gram matrix; signature $(8,0)$, positive definite |
+| $(\tilde{P},\tilde{Q})_{\mathbb{R}}=\mathrm{Re}\,\langle\tilde{Q},\tilde{P}\rangle_{*}$ | The real inner product of the underlying real space |
+| $\lVert\tilde{Q}\rVert_E=\sqrt{\sum_\mu\lvert Q_\mu\rvert^{2}}$ | The Euclidean norm of the form |
+| $S^{7}=\{\lVert\tilde{Q}\rVert_E=1\}$ | The Euclidean unit sphere |
+| $\langle\tilde{Q},\tilde{P}\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}\tilde{P}^{\natural})=\sum_\mu Q_\mu P_\mu$ | The quaternion bilinear form, the companion pairing |
 
 ## Further Reading
 
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the Euclidean norm, the real forms and the comparison of the two forms
-- *The Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md`), for the $\mathbb{C}$-bilinear companion
-- *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the conjugation ${}^{*}$ and the Hermitian subspace $\mathbb{M}_+$
-- *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the topology this form induces
-- *The Unitary Group of the Biquaternion Algebra* (`articles_maths/the-unitary-group-of-the-biquaternion-algebra.md`), for the compact group this form singles out
+- Paul R. Halmos, *A Hilbert Space Problem Book*, 2nd edition (Springer, 1982), for the reading of a finite-dimensional inner product space as a Hilbert space.
+- John B. Conway, *A Course in Functional Analysis*, 2nd edition (Springer, 1990), for completeness, the orthonormal basis and the finite-dimensional Hilbert-space facts used here.
+- Nicolas Bourbaki, *Algebra I: Chapters 1–3* (Springer, 1998), for sesquilinear and Hermitian forms over a ring with an involution.
+- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the Hermitian forms attached to the involutions of an algebra.

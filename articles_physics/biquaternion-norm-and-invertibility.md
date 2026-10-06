@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article studies the biquaternion norm of the biquaternion algebra and the invertibility of its elements, and it reads both physically. It follows the physics algebra article, which defined the algebra, its conjugations, its six distinguished subspaces and the coordinate dictionary, and it uses the same notation throughout.
+The biquaternion norm fixes the interval of the framework, the light cone on which it vanishes and the group of the transformations that preserve it; this article studies it and the invertibility of the elements it decides, and reads both physically. It follows the physics algebra article, which defined the algebra, its conjugations, its six distinguished subspaces and the coordinate dictionary, and it uses the same notation throughout.
 
 The biquaternion norm is the object the series calls the **level-1 form**, and it is the reason the framework is written the way it is. It is multiplicative, it is complex-valued in general, and it vanishes on a set of nonzero elements. Multiplicativity is what makes a unit-norm element a transformation that preserves an interval; the complex value is what lets one algebraic object carry the metric of the material sector and the opposite signature on the informational sector; and the vanishing set is the light cone. Invertibility is then the algebraic counterpart of being off the cone, and the group of units is the group of the transformations of the series.
 

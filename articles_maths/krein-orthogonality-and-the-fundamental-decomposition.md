@@ -74,7 +74,7 @@ The canonical fundamental decomposition is $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\p
 
 **Proof.** The operator is well defined because $\mathbb{B}=\mathbb{W}\oplus\mathbb{W}^{\perp_{K}}$, and it is an involution by construction. For the first identity, split $\tilde{Q}=\tilde{W}+\tilde{S}$ and $\tilde{Q}'=\tilde{W}'+\tilde{S}'$: $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\langle\tilde{W}',\tilde{W}\rangle_{\natural*}+\langle\tilde{S}',\tilde{S}\rangle_{\natural*}$ and $\langle\tilde{Q}',J_{\mathbb{W}}\tilde{Q}\rangle_{*}=\langle\tilde{W}',\tilde{W}\rangle_{*}-\langle\tilde{S}',\tilde{S}\rangle_{*}$; on the positive definite $\mathbb{W}$ the two forms agree and on the negative definite $\mathbb{W}^{\perp_{K}}$ they agree up to the sign $-$ because $\langle\tilde{S}',\tilde{S}\rangle_{\natural*}=-\langle\tilde{S}',\tilde{S}\rangle_{*}$ there. The second identity is the first with $J_{\mathbb{W}}^{2}=\mathrm{id}$ and $\langle\tilde{Q}',J_{\mathbb{W}}\tilde{Q}\rangle_{*}=\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}$. The signature is that of the form, and the canonical pair is the sign comparison of the two conjugations.
 
-**Corollary (the family of symmetries).** The fundamental symmetries of $\mathbb{B}$ are the involutions whose $+1$-eigenspace is positive definite of dimension $p$; through the parametrisation of the maximal positive definite subspaces they are indexed by the open unit ball of $\mathbb{V}_{\mathbb{B}}$, the canonical one $-1$ of them being $J$ itself. Any two fundamental symmetries are congruent by an isometry of the quaternion sesquilinear form.
+**Corollary (the family of symmetries).** The fundamental symmetries of $\mathbb{B}$ are the involutions whose $+1$-eigenspace is positive definite of dimension $p$; through the parametrisation of the maximal positive definite subspaces they are indexed by the open unit ball of $\mathbb{V}_{\mathbb{B}}$, the canonical member being $J$ itself. Any two fundamental symmetries are congruent by an isometry of the quaternion sesquilinear form.
 
 ## The Krein Projections
 
@@ -100,7 +100,7 @@ The canonical fundamental decomposition is $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\p
 
 **A degenerate subspace.** $\mathbb{W}=\mathbb{C}(e_0+e_1)$: $\langle e_0+e_1,e_0+e_1\rangle_{\natural*}=0$, so $\mathbb{W}\subseteq\mathbb{W}^{\perp_{K}}$ and the restriction vanishes; $\dim\mathbb{W}+\dim\mathbb{W}^{\perp_{K}}=1+3=4$ reads the complement.
 
-**A positive definite subspace.** $\mathbb{W}=\mathbb{C}(e_0+0.5e_1)$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1-0.25=0.75>0$, non-degenerate, maximal, with fundamental symmetry different from $J$.
+**A positive definite subspace.** $\mathbb{W}=\mathbb{C}(e_0+\tfrac12e_1)$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1-\tfrac14=\tfrac34>0$, non-degenerate, maximal, with fundamental symmetry different from $J$.
 
 **A neutral non-degenerate subspace.** $\mathrm{span}_{\mathbb{R}}\{e_0+e_1,\,e_0-e_1\}$, of Gram matrix $\begin{pmatrix}0&2\\2&0\end{pmatrix}$.
 

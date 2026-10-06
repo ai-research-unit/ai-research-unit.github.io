@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **four-vector representation** of a biquaternion is the reading of an element of the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as its four complex coefficients,
+The **four-vector representation** is the coordinate form of a biquaternion, and the form that carries the physical dictionary: the element read as four complex coefficients, holding a material four-vector and an informational four-vector. Algebraically it is the reading of an element of the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as its four complex coefficients,
 
 $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3 = \sum_{\mu = 0}^{3} Q_\mu e_\mu, \qquad Q_\mu \in \mathbb{C},

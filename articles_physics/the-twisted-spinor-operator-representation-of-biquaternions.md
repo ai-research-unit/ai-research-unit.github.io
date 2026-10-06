@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The polar representation of a biquaternion describes an **object**: every element of non-vanishing norm is the product of four factors,
+The spinor of the corpus is a module of the biquaternion algebra, and this article is about the operator that acts on it — the twisted spinor representation, the operator form of the polar word. The polar representation of a biquaternion describes an **object**: every element of non-vanishing norm is the product of four factors,
 
 $$
 \tilde{Q} = r\,e^{i\alpha}\,B\,\hat{q} ,

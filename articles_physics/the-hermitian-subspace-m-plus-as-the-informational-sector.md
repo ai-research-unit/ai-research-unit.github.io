@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is about the **Hermitian subspace** $\mathbb{M}_+$, the fixed space of the Hermitian conjugation: its definition and basis, its algebraic properties, its action by conjugation, and the quantum-information structure it carries.
+This article is about the **informational sector** $\mathbb{M}_+$, the Hermitian subspace: the sector of the boost biquaternions, of the Hermitian forms and of the quantum-information structure. It is the fixed space of the Hermitian conjugation, and the article treats its definition and basis, its algebraic properties and its action by conjugation.
 
 The mathematics of $\mathbb{M}_+$ is standard: it is a four-dimensional real subspace consisting of elements with real scalar part and imaginary vector part. It contains the boost biquaternions, the Hermitian forms, the idempotents, and the identity. It acts on $\mathbb{M}_-$ by rotor conjugation, and its elements satisfy a natural trace formula. All of this is established mathematics.
 
