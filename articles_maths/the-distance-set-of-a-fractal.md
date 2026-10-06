@@ -1,0 +1,119 @@
+# __The Distance Set of a Fractal__
+
+## Introduction
+
+The **distance set** of a set $E \subseteq \mathbb{R}^d$ is the set of the distances realised by its pairs,
+
+$$
+\Delta(E) = \bigl\{|x-y| : x, y \in E\bigr\} ,
+$$
+
+a subset of $[0,\infty)$ that records the metric pattern of $E$ and nothing else: two sets with the same distance set are isometric in respect of their pairwise distances, though not necessarily congruent. The question of the theory is how large $\Delta(E)$ must be when $E$ is a fractal of a given dimension. The **Falconer distance conjecture** states that a compact set of Hausdorff dimension strictly greater than $d/2$ has a distance set of positive Lebesgue measure; Falconer proved the result for dimension exceeding $(d+1)/2$, and the problem is open in general. In the plane the best known threshold is $5/4$, by the theorem of Guth, Iosevich, Ou and Wang, and the conjecture in the plane is that the threshold is one. The problem is the exact analogue, for the distance function, of the projection theorem of *Projections of a Fractal and the Dimension*: both ask how much of a fractal survives a nonlinear or a linear observation, and both are decided by the same spherical average of the Fourier transform of the measure.
+
+This article defines the distance set and the difference set, states the conjecture and the Steinhaus theorem that motivates it, records the history of the thresholds with the partial results, states the method of the spherical average and its reduction to the projection theorem, treats the **arithmetic** of the distance set — the distinct-distances theorem of Guth and Katz and the arithmetic of the grid — and works the computed examples: the grid, the Cantor set and the product of two Cantor sets.
+
+The article assumes *Metric Geometry* for the distance and the diameter; *Fractal Geometry* for the dimension and the covering content; *Projections of a Fractal and the Dimension* for the projection theorem and the difference set; *Real Harmonic Analysis* for the Fourier transform, the spherical average and the decay estimates; *Measure Theory and Integration* for the Lebesgue measure and the Fubini theorem; and *Analytic Number Theory* for the sums of two squares and the counting of the representable integers, which govern the distance set of the grid. The distance function here is the Euclidean one; the failure of the theory for the polygonal norms is stated. No physics is invoked.
+
+## The Distance Set and the Conjecture
+
+**Definition.** The **distance set** is $\Delta(E) = \{|x-y| : x,y \in E\}$, and the **difference set** is $E - E = \{x - y : x,y \in E\}$; the distance set is the image of the difference set under the radial map $z \mapsto |z|$.
+
+**Theorem (Steinhaus).** If $E \subseteq \mathbb{R}^d$ has positive Lebesgue measure, then $\Delta(E)$ contains an interval $[0,r)$ for some $r > 0$.
+
+**Proof sketch.** The difference set $E - E$ contains a neighbourhood of the origin: the convolution $\chi_E * \chi_{-E}$ is continuous and positive at the origin, so the set where it is positive is an open neighbourhood of $0$; the radial image of the neighbourhood contains $[0,r)$.
+
+**Conjecture (Falconer).** If $E \subseteq \mathbb{R}^d$ is compact and $\dim_H E > d/2$, then $\Delta(E)$ has positive Lebesgue measure.
+
+**Remark (the threshold as a dimensional count).** A set of dimension $s$ has, by the Frostman lemma, about $\epsilon^{-s}$ points at the scale $\epsilon$ up to the multiplicative constants; the difference set therefore has about $\epsilon^{-2s}$ points at that scale, spread over the $\epsilon$-cells of $\mathbb{R}^d$, of which there are about $\epsilon^{-d}$. If the differences were spread independently, each cell would carry about $\epsilon^{-2s}/\epsilon^{-d} = \epsilon^{d-2s}$ of them, and the radial image would fill the $\epsilon$-cells of the line of the distances as soon as $d-2s < 0$, that is $s > d/2$. The heuristic is the source of the exponent $d/2$ and of the difficulty: the pairs are not independent, and the whole problem is to replace the heuristic count by a theorem.
+
+**Theorem (Falconer, 1985).** If $E \subseteq \mathbb{R}^d$ is Borel and $\dim_H E > (d+1)/2$, then $\Delta(E)$ has positive Lebesgue measure.
+
+**Proof sketch.** The proof averages the squared Fourier transform of a measure $\mu$ of finite $s$-energy supported on $E$ over the sphere of radius $r$,
+
+$$
+\sigma(\mu)(r) = \int_{S^{d-1}} \bigl|\widehat{\mu}(r\xi)\bigr|^2\,d\sigma(\xi) ,
+$$
+
+and integrates $r^{d-1}\,dr$ against a cutoff; the decay of $\widehat\mu$ makes the truncated integral bounded exactly when $\dim_H E > (d+1)/2$, and the distance measure is then positive. The computation is the one of *Real Harmonic Analysis*; the dimension hypothesis enters through the decay of $\widehat\mu$.
+
+## The Thresholds and the Partial Results
+
+**Theorem (the known thresholds).** Let $E \subseteq \mathbb{R}^d$ be compact. The distance set $\Delta(E)$ has positive Lebesgue measure provided that
+
+**(a)** $\dim_H E > d/2 + 1/3$ (Erdoğan, 2005);
+
+**(b)** $d = 2$ and $\dim_H E > 5/4$ (Guth, Iosevich, Ou and Wang, 2018); moreover in this case there is a point $x \in E$ such that the set of distances $\{|x-y| : y \in E\}$ from that point has positive Lebesgue measure;
+
+**(c)** $d > 3$ and $\dim_H E > d/2 + 1/4 - 1/(8d+4)$ (Du, Ou, Ren and Zhang, recent).
+
+For $d = 2$ the conjecture is the statement $\dim_H E > 1$, and is open; the bound $5/4$ is the best known. For $d = 3$ the intermediate bounds are not stated here. The results of (a) and (b) are proved by the spherical-average method of Falconer, refined by the restriction estimates of Erdoğan and the decoupling of Guth, Iosevich, Ou and Wang; the estimate is quoted from the survey literature.
+
+**Theorem (the dimension of the distance set).** A compact planar set of Hausdorff dimension at least one has a distance set of Hausdorff dimension at least $1/2$. The variant of the Falconer conjecture stating that such a set has a distance set of Hausdorff dimension exactly one is open; the case $\dim_H E > 5/4$ follows from the positive-measure result of (b).
+
+**Remark (the failure for the polygonal norms).** The conjecture is specific to the Euclidean distance. For a norm in the plane defined by a polygon, the analogue is false: there are sets of Hausdorff dimension two whose distance set has Lebesgue measure zero. The Euclidean structure enters through the curvature of the sphere — the Fourier transform of the surface measure on $S^{d-1}$ decays — and a polygon has no such decay. This is the reason the argument is a harmonic-analytic one and not a purely metric one.
+
+**Remark (the reduction to the projection theorem).** The exact identity behind all the thresholds is the energy identity of *Projections of a Fractal and the Dimension*,
+
+$$
+\int_{S^{d-1}} \mathcal{I}_{d-1}(\pi_{\xi\#}\mu)\,d\sigma(\xi) = c_d\, \mathcal{I}_{d-1}(\mu) ,
+$$
+
+which says that the average over the directions of the energy of the projection of the measure equals the energy of the measure; in the Fourier form the energy is
+$\mathcal{I}_{s}(\mu) = c_{d,s}\int|\widehat{\mu}(\zeta)|^{2}|\zeta|^{s-d}\,d\zeta$, and the curvature of the sphere is what makes the average converge. The distance set is the radial image of the difference set, and the projection theorem of *Projections of a Fractal and the Dimension* is the geometric statement of the same average. Marstrand's theorem gives the dimension of the projections, while Falconer's problem asks for the **measure** of the set of the projected lengths, which is strictly stronger; this is why the projection theorem alone does not settle the conjecture.
+
+## The Arithmetic of the Distance Set
+
+**Theorem (Guth and Katz, 2015).** Every set of $n$ points in the plane determines at least $c\,n/\log n$ distinct distances, for a universal constant $c > 0$.
+
+**Remark (the grid is extremal).** The $m \times m$ grid of $m^2 = n$ points realises the distances $\sqrt{a^2+b^2}$ with $0 \leq a,b \leq m-1$, so the number of distinct distances is the number of the sums of two squares representable with the digits bounded, which by the theorem of Landau and Ramanujan is asymptotic to $c\,m^2/\sqrt{\log m} = c\,n/\sqrt{\log n}$. The grid therefore attains the bound of Guth and Katz up to the power of the logarithm, and the distinct-distances problem is the arithmetic statement that no configuration can do substantially better.
+
+**Example (the small grids, computed).** The number of distinct distances of the $m\times m$ grid, computed directly on the integer lattice for the first values, is $14$ for $m = 5$ (25 points), $26$ for $m = 7$ (49 points) and $50$ for $m = 10$ (100 points). The leading term $m^2/\sqrt{\log(m^2)}$ of the Landau–Ramanujan count, with the multiplicative constant suppressed, gives $13.9$, $24.8$ and $46.6$ for the same three values, in agreement with the computation at this scale; the comparison is the numerical form of the Landau–Ramanujan count of *Analytic Number Theory*.
+
+**Remark (the arithmetic nature of the distance set).** The distance set of an arithmetic set is itself arithmetic: the distances of the grid are the square roots of the sums of two squares, a set with an explicit multiplicative description, and the distance set of an algebraic set lies in the algebraic numbers of bounded degree. The **ring conjecture** of Erdős, on the Hausdorff dimension of the Borel subrings of $\mathbb{R}$, is equivalent, by the results of Bourgain, to a bound strictly greater than $1/2$ on the dimension of the distance set of a planar set of dimension one; this is the sense in which the distance set is an arithmetic object as much as a metric one. The arithmetic questions are treated in *Analytic Number Theory* and the additive-combinatorial questions in *Additive Combinatorics*; the metric distance set is the object here.
+
+## The Computed Examples
+
+**Example (the Cantor set).** Let $C \subseteq [0,1]$ be the middle-thirds Cantor set. The sumset $C + C$ is the whole interval $[0,2]$, a classical fact, and $C$ is symmetric about $\frac12$, so $-C = C - 1$ and the difference set is $C - C = (C+C) - 1 = [-1,1]$; the distance set is the whole interval
+
+$$
+\Delta(C) = [0,1] .
+$$
+
+The set $C$ has dimension $\log2/\log3 = 0.6309\ldots$, far below the threshold $d/2 = 1/2$ of the conjecture in one dimension, so the conjecture makes no prediction; the computation shows that a set of small dimension can have the largest possible distance set. At the level $k$ the set $C_k$ is the union of $2^k$ intervals, whose $2^{k+1}$ endpoints give a growing number of distinct distances: $27$ for $k = 3$ (16 endpoints), $81$ for $k = 4$ (32 endpoints) and $243$ for $k = 5$ (64 endpoints), the minimal distance $3^{-k}$ and the maximal distance one; the distances fill the interval increasingly.
+
+**Example (the product of two Cantor sets).** For $E = C\times C \subseteq \mathbb{R}^2$ the dimension is $2\log2/\log3 = 1.2619\ldots > 5/4$, so the theorem of Guth, Iosevich, Ou and Wang applies and $\Delta(E)$ has positive Lebesgue measure. The positivity can also be seen directly, because the difference set is the whole square: with $C - C = [-1,1]$ as above,
+$$
+E - E = (C-C)\times(C-C) = [-1,1]^2 , \qquad \Delta(E) = [0,\sqrt2] .
+$$
+The example is the case in which the difference set is maximal, and it shows that the difficulty of the conjecture lies in the sets whose difference set is a null set of full dimension, not in the product sets.
+
+**Example (the four-corner set).** The four-corner Cantor set of *Geometric Measure Theory* has dimension one exactly, the borderline value $d/2 = 1$ of the conjecture in the plane; the conjecture does not apply, and the distance set of the set — which is purely unrectifiable, of finite linear measure — is a question at the boundary of the theory. The four corner squares of the first level have $16$ corners realising $14$ distinct squared distances; the limiting distance set is not computed here and is not asserted.
+
+## Summary
+
+The distance set of a fractal is the radial image of its difference set, and the Falconer conjecture states that a compact set of dimension exceeding $d/2$ has a distance set of positive measure. Falconer proved the threshold $(d+1)/2$, the refinements of Erdoğan and of Guth, Iosevich, Ou and Wang bring the planar threshold to $5/4$, the conjecture in the plane is that it is one, and the problem is open; the method is the spherical average of the Fourier transform of a measure on the set, the same average that appears in the projection theorem, but the distance problem asks for the measure of the distance set and not only for its dimension. The arithmetic side is the distinct-distances theorem of Guth and Katz, that $n$ points determine at least $c\,n/\log n$ distances, attained up to the logarithm by the grid, whose distances are the sums of two squares; the ring conjecture of Erdős is equivalent to a bound on the dimension of the distance set of a planar set of dimension one. The Cantor set has the full interval as its distance set although its dimension is below the threshold, the product $C\times C$ has positive-measure distance set by the planar theorem, and the four-corner set sits exactly on the borderline. The projection theorem is *Projections of a Fractal and the Dimension*'s, the Fourier analysis is *Real Harmonic Analysis*'s, the arithmetic is *Analytic Number Theory*'s, and the dimension is *Fractal Geometry*'s.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\Delta(E)$, $E-E$ | Distance set; difference set, $\Delta$ is the radial image of $E-E$ |
+| $d$, $s$ | Ambient dimension; $\dim_H E$ |
+| $d/2$ | Falconer threshold of the conjecture |
+| $(d+1)/2$ | Falconer's proven threshold (1985) |
+| $5/4$ | Best known planar threshold (Guth–Iosevich–Ou–Wang) |
+| $\widehat\mu$, $\sigma$ | Fourier transform of the measure; surface measure on the sphere |
+| $\mathcal{I}_{d-1}(\pi_{\xi\#}\mu)$ | Energy of the projection of the measure onto the direction $\xi$ |
+| $c\,n/\log n$ | Distinct distances of $n$ planar points (Guth–Katz) |
+| $m^2/\sqrt{\log m}$ | Distinct distances of the $m\times m$ grid (Landau–Ramanujan) |
+
+## Further Reading
+
+- Kenneth J. Falconer, "On the Hausdorff dimension of distances for sums of Cantor sets", *Mathematika* 32 (1985), 1–9, and "On the Hausdorff dimensions of distance sets", *Mathematika* 32 (1985), 206–212, for the threshold $(d+1)/2$ and the origin of the problem.
+- Alex Iosevich, "What is ... Falconer's conjecture?", *Notices of the American Mathematical Society* 66 (2019), 552–555, for the formulation and the history.
+- M. Burak Erdoğan, *International Mathematics Research Notices* 2005, 391–419, for the threshold $d/2 + 1/3$.
+- Larry Guth, Alex Iosevich, Kevin Ou and Hong Wang, "On Falconer's distance set problem in the plane", *Inventiones Mathematicae* 219 (2020), 779–830, for the planar threshold $5/4$.
+- Xiumin Du, Yumeng Ou, Kevin Ren and Ruixiang Zhang, "New improvement to Falconer distance set problem in higher dimensions", preprint (2023), for the threshold $d/2 + 1/4 - 1/(8d+4)$.
+- Larry Guth and Nets Hawk Katz, "On the Erdős distinct distances problem in the plane", *Annals of Mathematics* 181 (2015), 155–190, for the distinct-distances theorem.
+- Pertti Mattila, *Geometry of Sets and Measures in Euclidean Spaces* (Cambridge University Press, 1995), for the spherical average, the energy and the projection method.
+- Jean Bourgain, "On the Erdős–Volkmann and Katz–Tao ring conjectures", *Geometric and Functional Analysis* 13 (2003), 334–365, for the ring conjecture and its equivalence to the distance-set bound.

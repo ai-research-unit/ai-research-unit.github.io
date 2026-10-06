@@ -11,7 +11,7 @@ The biquaternion algebra contributes two things to the discussion.
 1. **The action is central-valued.** For a real-quaternion configuration the Lagrangian is central, so the action is a complex scalar and its phase is unambiguous. There is no ordering question in the exponent, and the stationary-phase construction applies directly.
 2. **The rotor action and its geodesic principle.** For a rotor-valued configuration — a path in the group of unit real quaternions — the action built from the biquaternion norm of the velocity is the energy of a geodesic on the group, and the classical path is a one-parameter subgroup. This is the first place where the algebra's noncommutativity produces the classical equations rather than merely expressing them, and it is the bridge to the rigid-body article.
 
-The conventions are those of the read list, unchanged from the preceding article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$; $i$ is central with $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The configuration is a real quaternion $\tilde q$, its conjugate momentum is $\tilde p=\partial L/\partial\dot{\tilde q}$, the phase-space biquaternion is $\tilde Z=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\tilde a^{\natural}\tilde b)=\sum_\mu a_\mu b_\mu$. The rotor is $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R)=\tilde R\tilde R^{\natural}=e_0$, and it acts by conjugation $\tilde{Q}\mapsto\tilde R\tilde{Q}\tilde R^{*}$.
+The conventions are those of the read list, unchanged from the preceding article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$; $i$ is central with $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The configuration is a real quaternion $\tilde q$, its conjugate momentum is $\tilde p=\partial L/\partial\dot{\tilde q}$, the phase-space biquaternion is $\tilde Z=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\tilde a^{\natural}\tilde b)=\sum_\mu a_\mu b_\mu$. The rotor is $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R) = \langle\tilde R,\tilde R\rangle_{\natural}=\tilde R\tilde R^{\natural}=e_0$, and it acts by conjugation $\tilde{Q}\mapsto\tilde R\tilde{Q}\tilde R^{*}$.
 
 The companion articles used below are:
 - Companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the action, the Euler–Lagrange equation, the Legendre transform, and the phase-space biquaternion.
@@ -249,7 +249,7 @@ $$
 \mathrm{Ve}\!\left(\tilde R^{\natural}\,\ddot{\tilde R}\right)=0 ,
 $$
 
-the **geodesic equation on the group**. Writing $\tilde\eta=\tilde R^{\natural}\dot{\tilde R}$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dt}N(\tilde R)=0$ — one has $\tilde R^{\natural}\ddot{\tilde R}=\dot{\tilde\eta}+\tilde\eta^2$ with $\tilde\eta^2$ a real scalar; the equation therefore says that the vector part of $\dot{\tilde\eta}$ vanishes, and since $\tilde\eta$ is pure real for all $t$ this is $\dot{\tilde\eta}=0$. Equivalently, the equation with the constraint is $\frac{d}{dt}(\tilde R^{\natural}\dot{\tilde R})=0$: the **body angular velocity is constant**. Its solutions are the one-parameter subgroups, and the **classical rotor path is**
+the **geodesic equation on the group**. Writing $\tilde\eta=\tilde R^{\natural}\dot{\tilde R}$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dt}N(\tilde R) = \langle\tilde R,\tilde R\rangle_{\natural}=0$ — one has $\tilde R^{\natural}\ddot{\tilde R}=\dot{\tilde\eta}+\tilde\eta^2$ with $\tilde\eta^2$ a real scalar; the equation therefore says that the vector part of $\dot{\tilde\eta}$ vanishes, and since $\tilde\eta$ is pure real for all $t$ this is $\dot{\tilde\eta}=0$. Equivalently, the equation with the constraint is $\frac{d}{dt}(\tilde R^{\natural}\dot{\tilde R})=0$: the **body angular velocity is constant**. Its solutions are the one-parameter subgroups, and the **classical rotor path is**
 
 $$
 \boxed{\;\tilde R(t)=\tilde R(0)\,\exp\!\left(+\tfrac{1}{2}\tilde\omega_b t\right),\qquad \tilde\omega_b\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-,\;}
@@ -373,12 +373,13 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | $\delta^2S$ | Second variation |
 | $\mathcal{J}$ | Jacobi (fluctuation) operator |
 | $\xi$ | Deviation field; $\mathcal{J}\xi=0$ is the Jacobi/geodesic-deviation equation |
-| $N(\tilde q)=\tilde q\tilde q^{\natural}$ | Biquaternion norm |
+| $N(\tilde q) = \langle\tilde q,\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | Biquaternion norm |
 | $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R)=e_0$ | Rotor configuration |
 | $\tilde\omega_b,\tilde\omega_s$ | Body- and space-frame angular velocities |
 | $W(\tilde q,t)$ | Hamilton's principal function |
 | $\hbar$ | Phase scale of the oscillatory integral; asymptotic parameter only |
 | $A[\tilde q_c]$ | Fluctuation (van Vleck) prefactor |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

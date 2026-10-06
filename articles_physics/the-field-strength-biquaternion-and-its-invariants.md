@@ -138,7 +138,7 @@ because the conjugate negates the vector part of each coefficient and the electr
 The biquaternion norm on $\mathbb{B}$ is
 
 $$
-N(\tilde{Q}) = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 .
+N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 .
 $$
 
 For a pure-vector biquaternion the quaternion conjugate is $\tilde{F}^{\natural} = -\mathbf{F}$, and the quaternion product of two pure vectors is $\mathbf{F}\mathbf{G} = -\mathbf{F}\cdot\mathbf{G} + \mathbf{F}\times\mathbf{G}$. Hence
@@ -150,13 +150,13 @@ $$
 because $\mathbf{F}\times\mathbf{F} = 0$. The cross term drops out for the biquaternion norm of a vector, and one is left with the **complex bilinear form**
 
 $$
-N(\tilde{F}) = \sum_{k=1}^{3} F_k^2,
+N(\tilde{F}) = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \sum_{k=1}^{3} F_k^2,
 $$
 
 which is a complex scalar. Substituting $F_k = i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k$ and expanding,
 
 $$
-N(\tilde{F}) = \sum_{k=1}^{3}\left(i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k\right)^2
+N(\tilde{F}) = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \sum_{k=1}^{3}\left(i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k\right)^2
 = -\epsilon\,\mathbf{E}^2 + \mu\,\mathbf{H}^2 - 2i\sqrt{\epsilon\mu}\,\mathbf{E}\cdot\mathbf{H}.
 $$
 
@@ -448,7 +448,7 @@ The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqr
 The biquaternion norm of the field strength is the complex scalar
 
 $$
-N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural} = \sum_{k=1}^{3} F_k^2
+N(\tilde{F}) = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = \sum_{k=1}^{3} F_k^2
 = -\epsilon\left(I_1 + 2ic\,I_2\right),
 \qquad
 I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2,
@@ -479,7 +479,7 @@ Duality is the rotation $\mathbf{V}\mapsto e^{-i\theta}\mathbf{V}$; at $\theta =
 | $\epsilon, \mu$ | Permittivity and permeability of the medium |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
-| $N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm (complex scalar) |
+| $N(\tilde{F}) = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm (complex scalar) |
 | $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ | First Lorentz invariant (scalar) |
 | $I_2 = \mathbf{E}\cdot\mathbf{B}$ | Second Lorentz invariant (pseudoscalar) |
 | $\mathbf{V} = \mathbf{E} + ic\mathbf{B}$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{V}$ |
@@ -488,6 +488,8 @@ Duality is the rotation $\mathbf{V}\mapsto e^{-i\theta}\mathbf{V}$; at $\theta =
 | $\mathbf{S} = \mathbf{E}\times\mathbf{H}$ | Poynting vector |
 | $\tilde{\Xi} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W e_0 + \tfrac{i}{c}\mathbf{S}$ | Energy–momentum biquaternion (Hermitian); $N(\tilde{\Xi}) = W^2 - \|\mathbf{S}\|^2/c^2$ |
 | $\mathbf{v}$ | Boost (frame) velocity |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

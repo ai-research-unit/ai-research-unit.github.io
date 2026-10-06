@@ -20,9 +20,9 @@ $$
 
 extended to $\hat{\mathbb{C}}$ by $f(\infty) = \infty$. The **iterates** are $f^0 = \mathrm{id}$ and $f^{n+1} = f \circ f^n$; the **orbit** of $z$ is the sequence $(f^n(z))_{n \geq 0}$.
 
-**Proposition.** The extension is holomorphic at $\infty$ and $\infty$ is a fixed point of multiplicity $d$; writing $w = 1/z$ near $\infty$, the map reads $w \mapsto w^d/\bigl(a_d + a_{d-1}w + \cdots\bigr)$, so $\infty$ is a **superattracting** fixed point and $f$ has degree $d$ as a map of the sphere onto itself.
+**Proposition.** The extension is holomorphic at $\infty$, which is a fixed point of multiplier $0$; writing $w = 1/z$ near $\infty$, the map reads $w \mapsto w^d/\bigl(a_d + a_{d-1}w + \cdots\bigr)$, so $\infty$ is a **superattracting** fixed point of local degree $d$, and $f$ has degree $d$ as a map of the sphere onto itself.
 
-**Proof.** Clearing denominators in $f(1/w)^{-1}$ gives the displayed expression, which is holomorphic and vanishes to order $d$ at $w = 0$; a zero of order $d$ is a critical point of multiplicity $d-1$, and a fixed point at which the derivative vanishes is superattracting. Every point of $\hat{\mathbb{C}}$ has $d$ preimages counted with multiplicity, by the fundamental theorem of algebra, so the map has degree $d$.
+**Proof.** Clearing denominators in $f(1/w)^{-1}$ gives the displayed expression, which is holomorphic and vanishes to order $d$ at $w = 0$; its derivative vanishes there, so the fixed point is superattracting, and a point of local degree $d$ is a critical point of multiplicity $d-1$. Every point of $\hat{\mathbb{C}}$ has $d$ preimages counted with multiplicity, by the fundamental theorem of algebra, so the map has degree $d$. Since the map $w \mapsto w^d/(a_d+\cdots)$ is tangent to $w \mapsto w^d/a_d$ and fixes $w = 0$ simply, the fixed point $\infty$ itself has **multiplicity one** in the sense of the fixed-point count: a degree-$d$ rational map has $d+1$ fixed points with multiplicity, and the $d$ finite ones given by $f(z) = z$ leave a single one at $\infty$.
 
 ### Periodic Points and Their Multipliers
 
@@ -138,7 +138,7 @@ $$
 \dim_H J(f) = \frac{h_{\mu_s}}{\chi_{\mu_s}}, \qquad \chi_{\mu_s} = \int \log|f'| \, d\mu_s ,
 $$
 
-of Ledrappier and Young, where $h$ is the measure-theoretic entropy. The measure of maximal entropy has dimension $\log d / \chi_{\mu}$, which is at most $\dim_H J(f)$ and equal to it in the case $J(f) = \hat{\mathbb{C}}$.
+of Ledrappier and Young, where $h$ is the measure-theoretic entropy. For a polynomial the measure of maximal entropy has dimension $\log d / \chi_{\mu} < \dim_H J(f)$ whenever the Julia set is not a rectifiable curve, and the two coincide only in the exceptional cases such as $J(f) = \hat{\mathbb{C}}$ of a rational map.
 
 **Proof sketch.** The equilibrium state of $-s\log|f'|$ exists by the Ruelle–Perron–Frobenius theorem, because the map is expanding on the Julia set; the Bowen equation $P(-s\log|f'|) = 0$ has a unique root, its equilibrium state has dimension $s$ by the Shannon–McMillan–Breiman theorem applied to the potential, and the root equals the Hausdorff dimension by the Bowen formula of *The Hausdorff Dimension of the Julia Sets*. The theorem is the measure-theoretic part of the dimension theory, and it is stated here only for completeness; the thermodynamic formalism is Part III's.
 
@@ -150,7 +150,11 @@ of Ledrappier and Young, where $h$ is the measure-theoretic entropy. The measure
 
 **Proof sketch.** If the Julia set is expanding then the iterates of a neighbourhood of it are controlled and the critical orbits cannot accumulate on $J$, so they fall into attracting basins, which is hyperbolicity; conversely hyperbolicity makes the critical orbits avoid $J$ and the expanding inequality follows from the compactness of $J$ and the absence of critical points on it. The statement is the Koebe-distortion argument of the doubling theory of *The Geometry of the Julia Sets*.
 
-**Example (the quadratic cases).** For $f_c(z) = z^2+c$ the parameter $c = 0$ gives the superattracting fixed point at $0$ and the Julia set the unit circle; $c = -1$ gives the superattracting period-two cycle $0 \mapsto -1 \mapsto 0$ and the "basilica" Julia set; $c = i$ gives the superattracting cycle $-1+i \leftrightarrow -i$ and the "dendrite" of *Iterated Function Systems in the Complex Plane*'s sibling examples. All three are hyperbolic. The parameter $c = 1/4$ gives a parabolic fixed point: the point $z = 1/2$ satisfies $f_c(1/2) = 1/2$ and $f_c'(1/2) = 1$, so the multiplier is a root of unity and the critical orbit $0 \mapsto 1/4 \mapsto 5/16 \mapsto \cdots$ converges to $1/2$ without reaching it, the orbit of $0$ being $0, 1/4, 5/16, \ldots$ with the successive values approaching $1/2$. The multiplier is exactly $1$ and the Julia set is a **parabolic** one, of the type treated in *The Fatou Components and the Classification of the Dynamics*.
+**Example (the quadratic cases).** For $f_c(z) = z^2+c$ the parameter $c = 0$ gives the superattracting fixed point at $0$ and the Julia set the unit circle; $c = -1$ gives the superattracting period-two cycle $0 \mapsto -1 \mapsto 0$ and the "basilica" Julia set. Both are hyperbolic. The parameter $c = i$ is different: the critical orbit is preperiodic,
+$$
+0 \mapsto i \mapsto -1+i \mapsto -i \mapsto -1+i,\qquad (f_i^2)'(-i) = 2(-i)\cdot 2(-1+i) = 4+4i ,
+$$
+of modulus $4\sqrt2 = 5.656854\ldots > 1$, so the critical point lands on a **repelling** two-cycle: $f_i$ is **not hyperbolic**, it is a **Misiurewicz** parameter, and its Julia set is a dendrite, of the tree-like type of *Fractal Trees and Dendrites*. The parameter $c = 1/4$ gives a parabolic fixed point: the point $z = 1/2$ satisfies $f_c(1/2) = 1/2$ and $f_c'(1/2) = 1$, so the multiplier is a root of unity and the critical orbit $0 \mapsto 1/4 \mapsto 5/16 \mapsto \cdots$ converges to $1/2$ without reaching it. The multiplier is exactly $1$ and the Julia set is a **parabolic** one, of the type treated in *The Fatou Components and the Classification of the Dynamics*. The values of the orbit and of the multiplier were recomputed.
 
 ## Summary
 

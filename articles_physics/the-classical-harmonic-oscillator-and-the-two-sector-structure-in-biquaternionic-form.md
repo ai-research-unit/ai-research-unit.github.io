@@ -22,7 +22,7 @@ This is a genuinely classical statement and it is deliberately different from th
 
 The article is organized as follows. The oscillator is first written in the material sector, where its trajectory and its restoring force live. The complex amplitude is then constructed and decomposed into its two sector parts. The phase advance is identified with the sector exchange, and its generator with the timelike direction of the material sector. The energy is identified with the Hermitian form, and its positivity is contrasted with the signature of the biquaternion norm. The article closes by asking the quantum companion's question — whether the complexification makes the two sectors two oscillators — and answering it in the classical case.
 
-**Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector, the Hermitian subspace $\mathbb{M}_+$ the informational sector, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ with $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real-quaternion subalgebra is $\mathbb{H}_{\mathbb{B}}$ and the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$. The trace is normalized so that $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ for $\tilde{P}, \tilde{H} \in \mathbb{M}_+$, and the real part of a biquaternion is written $\mathrm{Sc}$. The classical phase-space bracket is the Poisson bracket of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*; the quantum treatment of the same system, which is not used here, is that of *The Harmonic Oscillator in Biquaternionic Form*.
+**Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector, the Hermitian subspace $\mathbb{M}_+$ the informational sector, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ with $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real-quaternion subalgebra is $\mathbb{H}_{\mathbb{B}}$ and the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$. The trace is normalized so that $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ for $\tilde{P}, \tilde{H} \in \mathbb{M}_+$, and the real part of a biquaternion is written $\mathrm{Sc}$. The classical phase-space bracket is the Poisson bracket of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*; the quantum treatment of the same system, which is not used here, is that of *The Harmonic Oscillator in Biquaternionic Form*.
 
 <!-- CONVENTION — classical quadrature placement: the assignment of $x$ to the Hermitian central direction $e_0$ and $\varpi$ to the anti-Hermitian central direction $ie_0$ is an embedding of $\mathbb{C}$ into the centre, chosen so that the phase advance is a rotation. It is not a claim about observables, and it is not in conflict with the quantum treatment, in which both quadratures are Hermitian and lie in $\mathbb{M}_+$. A reviewer must not align the two placements by moving a classical quadrature across the sector boundary. -->
 
@@ -207,12 +207,12 @@ The energy is therefore the **Hermitian form** of the amplitude, and it is posit
 The contrast with the **biquaternion norm** is instructive. The biquaternion norm of the central element is not the squared modulus but the complex square,
 
 $$
-N(\tilde{A}) = \tilde{A}\,\overline{\tilde{A}} = a^2\,e_0 = \left(x^2 - \varpi^2\right)e_0 + 2ix\varpi\,e_0 ,
+N(\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\,\overline{\tilde{A}} = a^2\,e_0 = \left(x^2 - \varpi^2\right)e_0 + 2ix\varpi\,e_0 ,
 $$
 
 which is indefinite: it vanishes on the pair of lines $x = \pm\varpi$ and is negative for $|\varpi| > |x|$. A "energy" built from the biquaternion norm would be unbounded below on the centre, and the orbit would be a hyperbola rather than a circle. The oscillator's stability is precisely the statement that its energy is the Hermitian form and not the biquaternion norm. This is the same distinction that separates the two sectors: $N$ restricted to $\mathbb{M}_-$ has the Lorentzian signature $(3,1)$ and restricted to $\mathbb{M}_+$ has the signature $(1,3)$, while the Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is positive definite on the centre.
 
-The two forms coincide only on the real axis: for $\tilde{A} = x\,e_0$, $N(\tilde{A}) = \tilde{A}\tilde{A}^{*} = x^2e_0$. The discrepancy grows with the imaginary (momentum) quadrature, which is exactly the quadrature that the sector decomposition places in $\mathbb{M}_-$.
+The two forms coincide only on the real axis: for $\tilde{A} = x\,e_0$, $N(\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\tilde{A}^{*} = x^2e_0$. The discrepancy grows with the imaginary (momentum) quadrature, which is exactly the quadrature that the sector decomposition places in $\mathbb{M}_-$.
 
 ## The Flow as a Bracket Derivation
 
@@ -291,6 +291,9 @@ positive definite and bounded below, whereas the biquaternion norm $N(\tilde{A})
 | $N(\tilde{A}) = a^2e_0$ | Biquaternion norm (indefinite) |
 | $J = i|_{\mathbb{C}_{\mathbb{B}}}$ | Complex structure of the phase plane; swaps the two sectors |
 | $\{x, p\} = 1$ | Poisson bracket; bracket conventions of the companion article |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

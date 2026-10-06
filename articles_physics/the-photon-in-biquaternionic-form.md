@@ -29,7 +29,7 @@ $$
 \mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{e_0, ie_1, ie_2, ie_3\},
 $$
 
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\Phi(e_k)=-i\sigma_k$, $\Phi(ie_k)=\sigma_k$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\mathbf{E}-\mathbf{H}$. The Riemann–Silberstein vector is $\mathbf{V}=\mathbf{E}+ic\mathbf{B}$ with $\mathbf{B}=\mu\mathbf{H}$, so that $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{V}$. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$.
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\Phi(e_k)=-i\sigma_k$, $\Phi(ie_k)=\sigma_k$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\mathbf{E}-\mathbf{H}$. The Riemann–Silberstein vector is $\mathbf{V}=\mathbf{E}+ic\mathbf{B}$ with $\mathbf{B}=\mu\mathbf{H}$, so that $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{V}$. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$.
 
 ## The Photon as the Quantum of the Biquaternion Maxwell Field
 
@@ -200,7 +200,7 @@ The gaps are of three kinds, and none is closed by better notation.
 
 **Represented quantities.** Masslessness is the sharpest. The photon is defined by $m=0$, and $m=0$ is what makes helicity Lorentz invariant and what removes the helicity-zero state; the framework represents $m=0$ and $m\neq0$ on the same footing and does not prefer either. The neutrality that makes the photon its own antiparticle is likewise an input. The unit $\hbar$ and the identification of the one-particle states as photons are inputs.
 
-**Representation-theoretic caveats.** The spin-one representation appears as the adjoint action on the imaginary quaternions, not as a module over $\mathbb{B}$; the consequent separation of the photon's state space (material-sector vector part) from its observable space ($\mathbb{M}_+$) is a real structural feature, but whether the state/observable pairing of the adjoint representation can be given a probability interpretation analogous to $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is not settled here. The transverse polarization states are not idempotents, so the Born rule of the informational sector does not apply to them directly.
+**Representation-theoretic caveats.** The spin-one representation appears as the adjoint action on the imaginary quaternions, not as a module over $\mathbb{B}$; the consequent separation of the photon's state space (material-sector vector part) from its observable space ($\mathbb{M}_+$) is a real structural feature, but whether the state/observable pairing of the adjoint representation can be given a probability interpretation analogous to $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ is not settled here. The transverse polarization states are not idempotents, so the Born rule of the informational sector does not apply to them directly.
 
 **Empirical gap.** As with every article in this series, none of the framework's statements distinguishes it from standard electrodynamics. The photon is represented, not explained.
 
@@ -238,8 +238,11 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $g_k=-\tfrac12 e_k$ | Rotation generators in the angular-momentum article; this article writes the same generators as $e_k$ |
 | $\epsilon^{(r)}_\mu$, $\hat a_r,\hat a_r^\dagger$ | Polarization vectors and mode operators (imported) |
 | $\hat N_\gamma=\sum_{r=1}^{2}\int\hat a_r^\dagger\hat a_r$ | Photon number (transverse sum), not in $\mathbb{B}$ |
-| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
+| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

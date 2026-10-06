@@ -12,7 +12,7 @@ The residue is stated below as the algebraic form of the problem. The companion 
 
 The article proceeds as follows: the problem in standard terms; the algebraic vocabulary of acting elements; the problem stated in algebraic form; what decoherence supplies; the selection step; the preferred basis and the cut; what the restatement changes, and what it does not.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; $\mathbb{M}_+$ is the Hermitian subspace of states and observables, $\mathbb{M}_-$ the anti-Hermitian subspace of generators, and $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the central scalar imaginary. Traces are the matrix-representation traces, with $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$ and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; $\mathbb{M}_+$ is the Hermitian subspace of states and observables, $\mathbb{M}_-$ the anti-Hermitian subspace of generators, and $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the central scalar imaginary. Traces are the matrix-representation traces, with $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$ and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$.
 
 ## The Problem in Standard Terms
 
@@ -208,7 +208,7 @@ The honest summary is a division of labour. The algebraic form makes the *struct
 
 ## Summary
 
-The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $\tilde{Q} \mapsto \tilde{A}\tilde{Q}\tilde{A}^{*}$, with the acting element either unitary ($\tilde{U}\tilde{U}^{*} = e_0$, reversible evolution) or Hermitian idempotent ($\tilde{P}^2 = \tilde{P} = \tilde{P}^{*}$, the projective sandwich). The Born rule is the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The unitary evolution produces no definite outcome; the idempotent sandwich produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the unitary case.
+The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $\tilde{Q} \mapsto \tilde{A}\tilde{Q}\tilde{A}^{*}$, with the acting element either unitary ($\tilde{U}\tilde{U}^{*} = e_0$, reversible evolution) or Hermitian idempotent ($\tilde{P}^2 = \tilde{P} = \tilde{P}^{*}$, the projective sandwich). The Born rule is the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. The unitary evolution produces no definite outcome; the idempotent sandwich produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the unitary case.
 
 Decoherence, in the framework's worked dephasing model, is the channel $\Phi^{\mathrm{deph}}_p$ of *Decoherence as Idempotent Projection*. At full strength it is the trace-preserving conditional expectation onto the pointer subalgebra, and it is the unique coherence-free assignment that reproduces the Born statistics: its output is the mixture $\tilde{\rho}_d = p_+\tilde\Pi_+ + p_-\tilde\Pi_-$, which, for a state $\tilde{\rho}$, is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The mixture is an interior point of the pointer diameter; the outcomes are its endpoints. Decoherence supplies the statistics and the segment, not the endpoint and not the index.
 
@@ -227,7 +227,7 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ | State, $\|\mathbf{r}\| \leq 1$ (Bloch ball) |
 | $\tilde{H} = h_0e_0 + i\mathbf{h}$ | Hermitian observable |
 | $\tilde\Pi_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ | Idempotent (pure state, projective outcome) |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $p_\pm = \mathrm{Tr}(\tilde\Pi_\pm(\hat{\mathbf{h}})\tilde{\rho})$ | Outcome probabilities |
 | $\hat{\mathbf{h}} = \mathbf{h}/\|\mathbf{h}\|$, $\hat{\mathbf{n}}$ | Measurement and pointer directions |
 | $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$ | Conjugation; unitary evolution ($\tilde{A} = \tilde{U}$) or projective sandwich ($\tilde{A} = \tilde\Pi_\pm$) |
@@ -239,6 +239,8 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $A = \mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\tilde\Pi_-$ | Pointer (commutative) subalgebra |
 | $\mathrm{Tr}(\tilde{\rho}^2)$ | Purity; $= \tfrac{1}{2}(1 + \|\mathbf{r}\|^2)$ |
 | $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(\|\mathbf{r}\|^2 - 1)e_0$ | Deviation from idempotency (mixedness) |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

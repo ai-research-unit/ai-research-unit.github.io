@@ -1,0 +1,126 @@
+# __The Self-Adjointness of the Laplacian on a Fractal__
+
+## Introduction
+
+The Laplacian of *The Laplacian on a Self-Similar Set* is defined as the generator of the Dirichlet form, and a generator is only as good as the operator it generates: the operator must be self-adjoint, its domain must be explicit, and its powers must be computable. None of these is automatic on a fractal. The form is closed and Markovian, but the domain on which the pointwise formula $\Delta u=\tfrac32\lim5^n\Delta_nu$ makes sense is a set of functions of a subtle class, and the question of whether the operator defined on the small domain of the "locally harmonic" functions has a **unique self-adjoint extension** — the question of **essential self-adjointness** — is a theorem, not a definition. Kigami proved it for the Sierpiński gasket: the Laplacian, initially defined on the functions that are harmonic off a finite set, is essentially self-adjoint, the closure is the Friedrichs extension of the form, and the boundary conditions are exactly the Dirichlet and Neumann conditions of the smooth theory. This is the article that makes the Laplacian of the category a genuine operator.
+
+The article sets up the **energy space** as the closure of the functions of finite energy vanishing on the boundary, proves that the Dirichlet form is closed, symmetric and Markovian, and defines the Laplacian as the operator associated with the form by the representation theorem, with the explicit domain of the functions $u$ for which $v\mapsto\mathcal{E}(u,v)$ is bounded in $L^2(\mu)$. It states the theorem of **essential self-adjointness** of Kigami: the Laplacian on the core of the functions harmonic off a finite set has deficiency indices zero, hence a unique self-adjoint extension, and the extension is the Friedrichs extension of the closed form. It treats the two boundary conditions: the **Dirichlet** Laplacian, with the functions vanishing on $V_0$, whose spectrum is the pure point spectrum of the spectral decimation, and the **Neumann** Laplacian, whose constant eigenfunction has the eigenvalue zero; and it identifies the boundary operator and the normal derivative that separate them, as the smooth theory does. It closes with the comparison with *Smooth Manifolds and Differential Geometry*: on a compact manifold the Laplace–Beltrami operator is essentially self-adjoint on the compactly supported smooth functions, the boundary conditions produce the self-adjoint extensions, and the Friedrichs extension is the energy one; on the gasket the same three statements hold with the energy space replacing the Sobolev space and the finitely harmonic functions replacing the smooth functions.
+
+The Dirichlet form, the weak Laplacian, the spectral decimation and the spectral dimension are *The Laplacian on a Self-Similar Set*; the smooth Laplacian, the Laplace–Beltrami operator and the boundary conditions are *Smooth Manifolds and Differential Geometry*; the closed forms, the representation theorem, the Friedrichs extension and the deficiency indices are the functional analysis of Part III; the heat kernel and the semigroup are *The Laplacian on the Orbital Graphs*, and the measure with respect to which the form is closed is *The Self-Similar Measure and the Invariant Measure*. No physics is invoked.
+
+## The Dirichlet Form and Its Domain
+
+### The Energy Space
+
+**Definition.** Let $\mathcal{E}$ be the Dirichlet form of the Sierpiński gasket of *The Laplacian on a Self-Similar Set*, with $V_0=\{q_0,q_1,q_2\}$ the boundary and $\mu$ the self-similar measure. The **energy space** with Dirichlet condition is
+$$
+H_0=\overline{\{u : \mathcal{E}(u)<\infty,\ u|_{V_0}=0\}},
+$$
+the closure in the norm $\|u\|_{\mathcal{E}}^2=\mathcal{E}(u)+\|u\|_{L^2(\mu)}^2$, and the **Neumann energy space** $H$ is the closure of all the functions of finite energy. The form is **closed**, **symmetric** and **Markovian**: $\mathcal{E}(u,u)\ge0$, the form is symmetric by construction, and $u\in H$ with $0\le u\le1$ implies $\min(u,1)\in H$ with $\mathcal{E}(\min(u,1))\le\mathcal{E}(u)$.
+
+*Proof.* The closedness is the completeness of the energy norm, which is the theorem on the limit of the renormalised energies of *The Laplacian on a Self-Similar Set*; the Markovian property is the inequality $\mathcal{E}(|u|)\le\mathcal{E}(u)$ at the level graphs, which passes to the limit, with the contractions $\Phi(u)=\min(u,1)$ and $1-\min(u,1)$. The Markovian property is the statement that the form is a Dirichlet form in the sense of Fukushima, and it is what makes the associated semigroup a diffusion.
+
+**Theorem (the energy space is a Hilbert space and the form is coercive).** With the inner product $\mathcal{E}(u,v)+\langle u,v\rangle_{L^2(\mu)}$ the space $H_0$ is a Hilbert space; the form $\mathcal{E}$ is coercive on $H_0$, and $\mathcal{E}(u)=0$ implies $u=0$ on $H_0$.
+
+*Proof.* The $L^2$ term dominates the constant part of $u$ on the boundary, and the energy dominates the oscillation; the combination is equivalent to the energy norm, in which the space is closed by definition; coercivity is the same inequality, and the vanishing of the energy forces $u$ to be constant on the connected gasket, hence zero under the boundary condition.
+
+### The Dirichlet and Neumann Conditions
+
+**Definition.** The **Dirichlet Laplacian** $\Delta_D$ is associated with the form on $H_0$; the **Neumann Laplacian** $\Delta_N$ is associated with the form on $H$. The boundary data are connected by the **boundary operator** $\Lambda$ and the **normal derivative** $\partial_n$, defined by the Gauss–Green identity
+$$
+\mathcal{E}(u,v)=-\int(\Delta u)\,v\,d\mu+\langle\partial_nu,v|_{\partial}\rangle
+$$
+for $u$ of the appropriate class, with $\partial=V_0$ the boundary and $\langle\,,\rangle$ the pairing of the boundary values.
+
+**Proposition (the two Laplacians).** The Neumann Laplacian has the constant function as eigenfunction with the eigenvalue $0$, and its restriction to the functions of zero mean is a positive operator; the Dirichlet Laplacian is positive with the spectrum bounded away from $0$ by the first Dirichlet eigenvalue $2$ of the level-1 problem (normalised). The two agree on the interior and differ exactly by the boundary condition.
+
+*Proof.* The constant function has zero energy and is in $H$, so $\mathcal{E}(1,v)=0$ for all $v$ and $\Delta_N1=0$; on the orthogonal complement of the constants the form is positive because the energy vanishes only on the constants. The Dirichlet first eigenvalue is the value $\lambda_1=2$ of the level-1 problem of *The Laplacian on a Self-Similar Set*, the spectral decimation beginning at the seeds $2$ and $5$. The decomposition of a function into the harmonic part and the zero-boundary part is the Gauss–Green identity.
+
+## The Generator and the Friedrichs Extension
+
+### The Representation Theorem
+
+**Theorem (the Laplacian is the generator of the form).** The operator
+$$
+-\Delta u=v\in L^2(\mu)\quad\text{defined by}\quad \mathcal{E}(u,w)=\langle v,w\rangle_{L^2(\mu)}\ \text{ for all } w \text{ of finite energy},
+$$
+with the domain
+$$
+\mathrm{dom}\,\Delta=\Bigl\{u\in H_0 : w\mapsto\mathcal{E}(u,w)\ \text{ is continuous in }L^2(\mu)\Bigr\},
+$$
+is a non-negative self-adjoint operator on $L^2(\mu)$, it is the **Friedrichs extension** of the form, and its associated semigroup is $e^{t\Delta}$.
+
+*Proof.* This is the first representation theorem of Kato for a densely defined, closed, coercive and symmetric sesquilinear form: there is a unique self-adjoint operator $A$ with $\mathcal{E}(u,v)=\langle Au,v\rangle$ for $u\in\mathrm{dom}\,A$ and $v$ in the form domain, and the domain is the stated one. The non-negativity is the positivity of the energy, and the Friedrichs extension is the construction of the theorem; the semigroup statement is the spectral theorem. The details are the functional analysis of Part III, applied to the closed form of the previous section.
+
+### The Core of the Finitely Harmonic Functions
+
+**Definition.** A function is **harmonic off a finite set** if it is harmonic at every point of $V_*$ outside a finite set; the set $\mathcal{H}$ of such functions is the **finitely harmonic** class. It is contained in the domain of the levelwise Laplacian and dense in the energy space with the Dirichlet condition.
+
+**Theorem (the finitely harmonic functions are a core).** The finitely harmonic functions are dense in $H_0$ in the energy norm, and for the associated operator they form a **core**: the closure of the operator defined on $\mathcal{H}$ by the levelwise formula is the Friedrichs extension of the form.
+
+*Proof sketch.* A function of finite energy is approximated in the energy norm by its level-$n$ harmonic extensions, which are finitely harmonic; the approximation is the definition of the energy and the harmonic extension of *The Laplacian on a Self-Similar Set*. The core statement is the density together with the fact that the closure of a symmetric operator containing a form-core is the Friedrichs extension; the details are in the analysis of the p.c.f. sets.
+
+## The Essential Self-Adjointness
+
+### The Theorem of Kigami
+
+**Theorem (essential self-adjointness).** On the Sierpiński gasket the Laplacian $\Delta$, initially defined on the finitely harmonic functions by the levelwise formula $\Delta u=\tfrac32\lim5^n\Delta_nu$, is **essentially self-adjoint**: it is symmetric on its initial domain, its deficiency indices are zero, and it has a unique self-adjoint extension, which is the Friedrichs extension of the Dirichlet form.
+
+*Proof sketch.* The symmetry on the initial domain is the Gauss–Green identity with the boundary term vanishing; the deficiency indices vanish because the eigenvalue equations $(\Delta^*\pm i)u=0$ have no solution of finite energy, which is shown by the energy estimate of the level-$n$ approximations and the positivity of the harmonic extension matrices; uniqueness follows because a symmetric operator with equal deficiency indices has a unique self-adjoint extension only when the indices are zero. The theorem is that of Kigami for the p.c.f. self-similar sets, of which the gasket is the model case; the essential self-adjointness of the "locally harmonic" Laplacian and the identification of the closure with the Friedrichs extension are the content of his harmonic calculus.
+
+**Corollary (the uniqueness of the Laplacian).** There is exactly one self-adjoint operator on $L^2(\mu)$ with the Dirichlet form $\mathcal{E}$ on $H_0$ as its quadratic form, and it is the closure of the finitely harmonic Laplacian. In particular the "weak Laplacian" of *The Laplacian on a Self-Similar Set*, the "generator of the form" of this article and the "closure of the levelwise Laplacian" are the same operator.
+
+*Proof.* The Friedrichs extension is unique by the representation theorem, and the essential self-adjointness identifies the closure of the initial operator with it; hence the three descriptions coincide. The verification of the symmetry on the finitely harmonic functions is exact on the first levels: the boundary term of the Gauss–Green identity vanishes for the functions in $H_0$.
+
+### The Deficiency Indices and the Boundary
+
+**Remark (the boundary is the deficiency).** The deficiency indices of the initial Laplacian are governed by the boundary $V_0$: the solutions of $(\Delta^*\pm i)u=0$ in the energy space are the harmonic functions of exponential growth, and the vanishing of the deficiency indices is the statement that no such solution is of finite energy. The boundary conditions are then the self-adjoint extensions of the initial operator, and the Dirichlet and Neumann Laplacians are the two extreme ones; the general self-adjoint extension is parametrised by a self-adjoint operator on the boundary, the **boundary triple** of the theory. This is the discrete analogue of the boundary triple of the smooth theory, with $V_0$ the boundary and the normal derivative the boundary operator.
+
+**Theorem (the spectrum and the resolvent).** The Dirichlet Laplacian has a compact resolvent, hence a discrete spectrum of finite multiplicity accumulating at infinity, and the counting function obeys the Weyl law $N(\lambda)\asymp\lambda^{d_s/2}$; the Neumann Laplacian has the same, with the eigenvalue $0$ simple and the rest positive.
+
+*Proof.* The compactness of the resolvent is the compactness of the embedding of the energy space in $L^2(\mu)$, which is the finiteness of the spectral dimension; the discreteness and the counting are *The Laplacian on a Self-Similar Set*; the Neumann statement is the same with the constants removed. The eigenvalues $2,5,5$ at the first level and the dihedral generations of *The Laplacian on a Self-Similar Set* are the beginning of the discrete spectrum.
+
+## The Comparison with the Smooth Case
+
+### Manifolds and Boundary Conditions
+
+**Remark (the dictionary).** On a compact Riemannian manifold the Laplace–Beltrami operator of *Smooth Manifolds and Differential Geometry* is obtained from the Dirichlet form $\int\langle\nabla u,\nabla v\rangle$ by integration by parts; it is essentially self-adjoint on the compactly supported smooth functions in the interior and its self-adjoint extensions on a domain with boundary are the boundary conditions, with the Friedrichs extension being the energy one. The gasket reproduces the dictionary with the replacements: the Sobolev space $H^1$ by the energy space $H_0$, the compactly supported smooth functions by the finitely harmonic functions, the boundary $\partial$ by $V_0$ and the normal derivative by the boundary operator $\partial_n$. The self-adjointness, the discreteness of the spectrum and the Friedrichs extension are the same theorems in the two settings; the difference is that the smooth functions are dense in the Sobolev space, while the finitely harmonic functions are dense in the energy space by a different argument, the harmonic extension of the levels.
+
+### The Spectral Consequences
+
+**Remark (the unitary group and the graph adjoint).** The self-adjointness gives both the unitary group $e^{it\Delta}$ generated by the Laplacian — the Schrödinger evolution of the fractal — and the contraction semigroup $e^{t\Delta}$ of the diffusion; the graph Laplacians $\Delta_n$ of *The Laplacian on the Orbital Graphs* and *The Spectrum of the Schreier Graphs* are symmetric finite matrices, and their resolvents converge to the resolvent of the limit operator, so the self-adjointness of the limit Laplacian is the limit of the symmetry of the finite graph Laplacians, and the adjoint of the limit is the limit of the adjoints.
+
+**Theorem (the spectral theorem for the fractal Laplacian).** The heat semigroup of the Laplacian is
+$$
+e^{t\Delta}=\int_{[0,\infty)}e^{-t\lambda}\,dE(\lambda) ,
+$$
+where $E$ is the spectral resolution of the unique self-adjoint extension; the semigroup is a contraction on $L^2(\mu)$ and a positivity-preserving, mass-preserving Markov semigroup, and its kernel is the $p_t(x,y)$ of *The Laplacian on the Orbital Graphs*, with the spectral dimension $d_s$ and the sub-Gaussian bounds.
+
+*Proof.* The spectral theorem for a self-adjoint operator, applied to the operator of the representation theorem; the Markovian property of the form is the positivity of the semigroup by the Beurling–Deny criterion, and the conservation of mass is the invariance of $\mu$; the kernel is the density of the semigroup and its bounds are those quoted from Barlow–Perkins and Kigami.
+
+## Summary
+
+The Dirichlet form of the gasket is closed, symmetric and Markovian on the **energy space** $H_0$ of the functions of finite energy vanishing on the boundary $V_0$; the Laplacian is the non-negative self-adjoint operator of the representation theorem, $\mathcal{E}(u,w)=\langle-\Delta u,w\rangle$, with the explicit domain of the functions for which the form is continuous in $L^2(\mu)$, and it is the **Friedrichs extension** of the form. The **finitely harmonic** functions are a core, and Kigami's theorem of **essential self-adjointness** states that the Laplacian on that core has deficiency indices zero and a unique self-adjoint extension: the weak Laplacian, the generator of the form and the closure of the levelwise Laplacian are the same operator. The **Dirichlet** and **Neumann** conditions are the two extreme self-adjoint extensions, separated by the boundary operator $\partial_n$ and the boundary $V_0$; the Neumann Laplacian has the eigenvalue $0$ with the constants, the Dirichlet Laplacian has a compact resolvent, a discrete spectrum of finite multiplicity and the Weyl law $N(\lambda)\asymp\lambda^{d_s/2}$. The comparison with *Smooth Manifolds and Differential Geometry* is the dictionary $H^1\leftrightarrow H_0$, $C_c^\infty\leftrightarrow\mathcal{H}$, $\partial\leftrightarrow V_0$, $\partial_\nu\leftrightarrow\partial_n$, under which the three theorems — essential self-adjointness, the Friedrichs extension and the discreteness of the spectrum — are the same. The symmetry of the initial operator and the vanishing of the boundary term were verified exactly on the first levels; the essential self-adjointness, the deficiency indices and the boundary triple are quoted from Kigami and the functional analysis of Part III.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $H_0$, $H$ | Energy space, Dirichlet and Neumann |
+| $\|u\|_{\mathcal{E}}^2=\mathcal{E}(u)+\|u\|_{L^2(\mu)}^2$ | The energy norm |
+| $\mathcal{E}(u,w)=\langle-\Delta u,w\rangle$ | The representation of the form by the generator |
+| $\mathrm{dom}\,\Delta$ | The domain of the generator |
+| $\mathcal{H}$ | The finitely harmonic functions (a core) |
+| $\partial_n$, $\Lambda$, $\partial=V_0$ | Normal derivative, boundary operator, the boundary |
+| $\Delta_D$, $\Delta_N$ | Dirichlet and Neumann Laplacians |
+| $e^{t\Delta}=\int e^{-t\lambda}dE(\lambda)$ | The spectral theorem and the semigroup |
+| $N(\lambda)\asymp\lambda^{d_s/2}$ | The Weyl law of the Dirichlet Laplacian |
+
+## Further Reading
+
+- Jun Kigami, *Analysis on Fractals* (Cambridge University Press, 2001), for the Dirichlet forms, the generators, the harmonic calculus and the essential self-adjointness.
+- Jun Kigami, "Harmonic calculus on p.c.f. self-similar sets", *Transactions of the American Mathematical Society* **335** (1993), 721–755, for the construction of the Laplacian and its essential self-adjointness.
+- Masatoshi Fukushima, Yoichi Oshima and Masayoshi Takeda, *Dirichlet Forms and Symmetric Markov Processes* (De Gruyter, 2nd ed. 2011), for the closed forms, the generators, the Beurling–Deny criterion and the Markov semigroups.
+- Michael Reed and Barry Simon, *Methods of Modern Mathematical Physics, II: Fourier Analysis, Self-Adjointness* (Academic Press, 1975), for the representation theorem, the Friedrichs extension and the deficiency indices.
+- Robert S. Strichartz, *Differential Equations on Fractals: A Primer* (Princeton University Press, 2006), for the Laplacians, the boundary conditions and the eigenvalue problems on the gasket.
+- Tosio Kato, *Perturbation Theory for Linear Operators* (Springer, 2nd ed. 1976), for the representation theorem, the closed forms and the generators.

@@ -22,7 +22,7 @@ The catalogue is not a list of defects of the framework. It is the map of the bo
 
 Each item below is given in the form **statement — proof — consequence — remedy**, and each is verified either by explicit computation or by a standard theorem cited as standard.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, with $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; pure states are $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, with $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; pure states are $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$.
 
 ## How an Obstruction Is Certified
 
@@ -88,7 +88,7 @@ so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $
 
 **Statement.** Neither the biquaternion norm nor its negative is positive definite on the Hermitian subspace $\mathbb{M}_+$, and on the full algebra the form is complex-valued, so definiteness is not defined there at all. The biquaternion norm is therefore not a norm and cannot be used to define probabilities.
 
-**Proof.** On $\mathbb{M}_+$ the biquaternion norm is $N(h_0e_0+i\mathbf{h})=(h_0^2-|\mathbf{h}|^2)e_0$, of signature $(1,3)$; on the algebra it is $N(\tilde{Q})=(x_0^2+x_1^2+x_2^2+x_3^2)e_0$, which is complex-valued for complex coefficients. The form is already indefinite on the Hermitian subspace: the Hermitian element $\tilde{H}=e_0+ie_1$ has $N(\tilde{H})=(1-1)e_0=0$ while $\tilde{H}\neq0$, and $\tilde{H}=ie_1$ has $N(ie_1)=-e_0$, so neither sign is definite there.
+**Proof.** On $\mathbb{M}_+$ the biquaternion norm is $N(h_0e_0+i\mathbf{h})=(h_0^2-|\mathbf{h}|^2)e_0$, of signature $(1,3)$; on the algebra it is $N(\tilde{Q})=(x_0^2+x_1^2+x_2^2+x_3^2)e_0$, which is complex-valued for complex coefficients. The form is already indefinite on the Hermitian subspace: the Hermitian element $\tilde{H}=e_0+ie_1$ has $N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural}=(1-1)e_0=0$ while $\tilde{H}\neq0$, and $\tilde{H}=ie_1$ has $N(ie_1)=-e_0$, so neither sign is definite there.
 
 **Consequence.** The biquaternion norm cannot certify that an element is non-zero, cannot define a topology, and cannot supply the positive quantity that Born probabilities require. Its physical role is the determinant — the Minkowski form on the Hermitian sector and the null cone of the pure states — not a metre.
 
@@ -112,7 +112,7 @@ for every $\hat{\mu}$ while $\tilde\Pi(\hat{\mu})\neq0$; indeed the defining pro
 
 **Statement.** There is no quadratic form on $\mathbb{B}$ that is simultaneously positive definite and independent of an arbitrary normalization. The Hermitian form is positive definite but depends on the trace normalization; the biquaternion norm is canonical but indefinite.
 
-**Proof.** The Hermitian form is determined by the trace, and the trace is normalised by $\mathrm{Tr}(e_0)=2$, a convention fixed by the degree of the matrix model; replacing $\mathrm{Tr}$ by $c\,\mathrm{Tr}$ for positive $c$ gives another positive definite form, so the positivity is canonical but the scale is not. The biquaternion norm is determined by the algebra's product alone, $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$, and is therefore canonical, but it is indefinite by O5. A form that were both would have to be intrinsic and positive simultaneously, and no such form exists on an algebra with a null cone.
+**Proof.** The Hermitian form is determined by the trace, and the trace is normalised by $\mathrm{Tr}(e_0)=2$, a convention fixed by the degree of the matrix model; replacing $\mathrm{Tr}$ by $c\,\mathrm{Tr}$ for positive $c$ gives another positive definite form, so the positivity is canonical but the scale is not. The biquaternion norm is determined by the algebra's product alone, $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and is therefore canonical, but it is indefinite by O5. A form that were both would have to be intrinsic and positive simultaneously, and no such form exists on an algebra with a null cone.
 
 **Consequence.** All probabilities, distances and normalizations in the framework are trace-relative. The trace normalization is a posit, and the numerical factors of the Fubini–Study metric are statements in the normalization $\mathrm{Tr}(e_0)=2$.
 
@@ -367,7 +367,7 @@ Each obstruction is proved from the defining relations and is stated with its co
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $\mathbb{B}^{\times}=\{N\neq0\}$ |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $\mathbb{B}^{\times}=\{N\neq0\}$ |
 | $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$ | Hermitian form |
 | $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$ | Pure state, null under $N$ |
 | $\mathbb{A}_{\hat{n}}$ | Maximal commutative subalgebra |
@@ -376,6 +376,8 @@ Each obstruction is proved from the defining relations and is stated with its co
 | $U(2)$ | Norm-preserving (unitary) group |
 | $G_N=U(1)\cdot SL(2,\mathbb{C})$ | Biquaternion-norm-preserving group, $\dim_\mathbb{R}=7$ |
 | $\mathrm{ad}_{\tilde{Q}}$ | Inner derivation $[\tilde{Q},\cdot]$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

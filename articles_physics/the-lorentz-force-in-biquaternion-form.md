@@ -382,7 +382,7 @@ $$
 They are the real and imaginary parts of the biquaternion norm of the field,
 
 $$
-N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural} = -\epsilon\left(I_1 + 2ic\,I_2\right),
+N(\tilde{F}) = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = -\epsilon\left(I_1 + 2ic\,I_2\right),
 $$
 
 and they are invariant under the proper orthochronous Lorentz group. It is natural to ask what these field invariants imply for the *motion* of a charged particle. The answer has two parts, and it is worth separating them carefully.
@@ -402,7 +402,7 @@ which, as shown above, is preserved by the Lorentz force because the force is or
 The biquaternion norm of the four-force itself,
 
 $$
-N(\tilde{K}) = \tilde{K}\tilde{K}^{\natural} = -\left(K^0\right)^2 + \left|\mathbf{K}\right|^2,
+N(\tilde{K}) = \langle\tilde{K},\tilde{K}\rangle_{\natural} = \tilde{K}\tilde{K}^{\natural} = -\left(K^0\right)^2 + \left|\mathbf{K}\right|^2,
 $$
 
 is a Lorentz scalar; it is not conserved along the motion. Substituting the component form,
@@ -670,6 +670,9 @@ At the level of densities the companion programme replaces the per-particle forc
 | $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ | First field invariant |
 | $I_2 = \mathbf{E}\cdot\mathbf{B}$ | Second field invariant |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ | Boost biquaternion (Hermitian, unit norm) |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

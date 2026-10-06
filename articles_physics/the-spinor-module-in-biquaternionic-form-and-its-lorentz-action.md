@@ -525,7 +525,7 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix realization, $\Phi(e_k)=-i\sigma_k$ |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \det\Phi(\tilde{Q})$ | Biquaternion norm |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \det\Phi(\tilde{Q})$ | Biquaternion norm |
 | $S = \mathbb{C}^2$ | Spinor module (unique simple module), $\dim_{\mathbb{C}}S=2$ |
 | $V_1 = (\tfrac12,0)$ | Left-handed Weyl (defining) representation |
 | $\bar{S} = \overline{V_1} = (0,\tfrac12)$ | Right-handed Weyl (conjugate) representation |
@@ -546,6 +546,8 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 | $\varsigma=(\sigma_3,i\sigma_2,-i\sigma_1)$ | Hermitian triple; $\varsigma^i\varsigma^j=\eta^{ij}-i\varepsilon^{ijk}\eta_{kl}\varsigma^l$ |
 | $S^2$, $H^\pm$, $H^{sl}$ | Sphere and the two hyperboloids modelled on the module |
 | $\omega=i\sigma_3^{ij}dz_i\wedge dz_j$ | Symplectic form on the doubled spinor space; $\{v^i,v^j\}=-\varepsilon^{ijk}\eta_{kl}v^l$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

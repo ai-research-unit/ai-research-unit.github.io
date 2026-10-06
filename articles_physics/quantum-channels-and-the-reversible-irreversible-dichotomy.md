@@ -58,7 +58,7 @@ $$
 \mathrm{Tr}\bigl(\Phi(\tilde{\rho})\,\tilde{H}\bigr) = \mathrm{Tr}\bigl(\tilde{\rho}\,\Phi^{*}(\tilde{H})\bigr) \qquad \text{for all } \tilde{\rho}, \tilde{H}.
 $$
 
-Trace preservation of $\Phi$ is equivalent to **unitality** of the dual, $\Phi^{*}(e_0) = e_0$: setting $\tilde{H} = e_0$ gives $\mathrm{Tr}(\Phi(\tilde{\rho})) = \mathrm{Tr}(\tilde{\rho}\,\Phi^{*}(e_0))$, which equals $\mathrm{Tr}(\tilde{\rho})$ for every $\tilde{\rho}$ precisely when $\Phi^{*}(e_0) = e_0$. The duality is mediated throughout by the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ that gives the Born rule.
+Trace preservation of $\Phi$ is equivalent to **unitality** of the dual, $\Phi^{*}(e_0) = e_0$: setting $\tilde{H} = e_0$ gives $\mathrm{Tr}(\Phi(\tilde{\rho})) = \mathrm{Tr}(\tilde{\rho}\,\Phi^{*}(e_0))$, which equals $\mathrm{Tr}(\tilde{\rho})$ for every $\tilde{\rho}$ precisely when $\Phi^{*}(e_0) = e_0$. The duality is mediated throughout by the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ that gives the Born rule.
 
 ### The Kraus Representation
 
@@ -234,7 +234,7 @@ strictly increases, since $S$ is a decreasing function of $|\mathbf{r}|$. A pure
 
 Collecting the results, the dichotomy has the following exact algebraic form.
 
-- **States and observables live in $\mathbb{M}_+$**, the Hermitian subspace, and are paired by $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, the Born rule.
+- **States and observables live in $\mathbb{M}_+$**, the Hermitian subspace, and are paired by $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$, the Born rule.
 - **Reversible processes are the inner automorphisms** $\tilde{\rho} \mapsto \tilde{U}\tilde{\rho}\tilde{U}^{*}$ by matrix-unitary biquaternions $\tilde{U} \in U(2)$. They are exactly the channels of Kraus rank one, and they preserve purity. Their one-parameter subgroups have generators $-i\tilde{H}/\hbar$ lying in the complementary subspace $\mathbb{M}_-$: the states live in $\mathbb{M}_+$, but their reversible motion is generated from $\mathbb{M}_-$.
 - **Irreversible processes are the remaining channels**: completely positive, trace-preserving maps of Kraus rank at least two. Their Kraus operators are arbitrary elements of $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, and their generators contain, besides a derivation by an $\mathbb{M}_-$ element, completely positive dissipators that are not derivations.
 
@@ -248,7 +248,7 @@ In this reading, reversibility is the regime in which the informational sector i
 
 ### What the Reformulation Does and Does Not Claim
 
-The framework **does** provide a natural algebraic home for the standard theory of quantum operations. Complete positivity is a property of maps on $\mathbb{B} \cong M_2(\mathbb{C})$; trace preservation is the statement that the dual fixes $e_0$; the Kraus operators are elements of $\mathbb{B}$; and the reversible/irreversible split is the split between Kraus rank one and higher rank, equivalently between inner automorphisms and general completely positive maps. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ makes the state/observable duality and the Schrödinger/Heisenberg duality of channels the same operation.
+The framework **does** provide a natural algebraic home for the standard theory of quantum operations. Complete positivity is a property of maps on $\mathbb{B} \cong M_2(\mathbb{C})$; trace preservation is the statement that the dual fixes $e_0$; the Kraus operators are elements of $\mathbb{B}$; and the reversible/irreversible split is the split between Kraus rank one and higher rank, equivalently between inner automorphisms and general completely positive maps. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ makes the state/observable duality and the Schrödinger/Heisenberg duality of channels the same operation.
 
 The framework **does not** claim to explain why a given physical process is irreversible, to derive the environment a channel traces over, or to resolve the measurement problem. The reformulation changes the vocabulary of the dichotomy, not its physics; the selection problem — why one outcome, or one channel, rather than another — is untouched.
 
@@ -288,7 +288,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ | State of the informational sector |
 | $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | Observable / Hamiltonian |
 | $\tilde\Pi_\pm(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 \pm i\hat{\mathbf{n}})$ | Idempotents (pure states) |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $\Phi(\tilde{\rho}) = \sum_l \tilde{K}_l\tilde{\rho}\tilde{K}_l^{*}$ | Kraus representation of a channel |
 | $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_0$ | Trace-preservation condition |
 | $\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*}\tilde{H}\tilde{K}_l$ | Dual (Heisenberg-picture) map |
@@ -297,6 +297,9 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\hat{\mathbf{n}}$ |
 | $\mathbf{r} \mapsto (1-p)\mathbf{r} + p(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$ | Dephasing action on the Bloch vector |
 | $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J(\Phi)$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

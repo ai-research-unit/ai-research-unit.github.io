@@ -10,7 +10,7 @@ The consequence is a **structural identification**:
 
 > The biquaternion algebra $\mathbb{B}$ contains the complete algebraic structure of a spin-1/2 quantum-mechanical system.
 
-This is not an analogy. It is an identity of algebras. Every idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state projector. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule for spin-1/2. The unitary biquaternions of $SU(2)$ are the spin rotation operators.
+This is not an analogy. It is an identity of algebras. Every idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state projector. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ is the Born rule for spin-1/2. The unitary biquaternions of $SU(2)$ are the spin rotation operators.
 
 This article develops the identification in detail. It is not an article about new physics: the physics it describes (spin-1/2 quantum physics) is standard and well established. The article is about **where** this standard physics lives within the biquaternion algebra, and what structural features of the biquaternion framework it reveals.
 
@@ -418,6 +418,9 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,\ \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternionic Dirac equation (linear chiral pair) |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

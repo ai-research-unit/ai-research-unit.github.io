@@ -217,6 +217,8 @@ The paper and the framework are complementary. The paper tells us what to look f
 | $W_{ij} = \langle E_i^* E_j\rangle$ | Coherence matrix (derived element) |
 | Fundamental element | Joint state of $\mathbb{M}_+^{\otimes n}$ (quantum) |
 | Derived element | Coherence matrix from a classical field configuration (classical) |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

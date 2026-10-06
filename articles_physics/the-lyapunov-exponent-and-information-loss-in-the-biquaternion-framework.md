@@ -24,7 +24,7 @@ The article also states what the framework does **not** produce: positive Lyapun
 
 The treatment is classical and non-relativistic. The exponents are those of a classical flow on a state space, measured with the algebra's biquaternion norm. The tools imported are the standard ones of smooth dynamical systems: the multiplicative ergodic theorem, the contraction of completely positive trace-preserving maps, Pesin's formula, and the integrability of two-dimensional Hamiltonian flows. The connexion to the notion of information used elsewhere in the subcategory is direct: the entropy functional of the companion article *Coarse-Graining and the Biquaternion Entropy Functional* is a function of the biquaternion norm, and the Lyapunov exponent is the rate of decay of the logarithm of the biquaternion norm of a tangent vector; the two are the same quantity read at a point and along a flow.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; the scalar imaginary $i$ is central; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and a state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; the scalar imaginary $i$ is central; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and a state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$.
 
 ## Lyapunov Exponents: The Standard Setting
 
@@ -273,7 +273,7 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $N$. Since $N(\d
 | $i$ | Central scalar imaginary |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0+i\mathbf{r})$ | State, Bloch vector $\mathbf{r}$, $|\mathbf{r}|\le1$ |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\delta\tilde{\rho} = \tfrac{i}{2}\delta\mathbf{r}$ | Tangent vector (traceless element of $\mathbb{M}_+$) |
 | $N(\delta\tilde{\rho}) = -\tfrac{1}{4}|\delta\mathbf{r}|^2 e_0$ | Biquaternion norm of a tangent vector (negative definite) |
 | $\lambda(v) = \lim_t \tfrac{1}{2t}\log|N(\delta\tilde{\rho}(t))/N(\delta\tilde{\rho}(0))|$ | Lyapunov exponent in the biquaternion norm |
@@ -292,6 +292,8 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $N$. Since $N(\d
 | $\dot{\mathcal{S}} = \Gamma(r_\perp(t)^2/r(t))\,\mathrm{artanh}\,r(t)$ | Entropy production rate (instantaneous $r_\perp$) |
 | $h_{\rm KS} = \sum_{\lambda_k>0}\lambda_k$ | Pesin's formula (standard) |
 | $|\mathbf{S}| = \text{const}$ | Coadjoint orbit (Bloch sphere); Hamiltonian flows integrable |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

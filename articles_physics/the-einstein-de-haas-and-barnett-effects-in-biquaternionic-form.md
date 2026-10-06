@@ -91,7 +91,7 @@ $$
 = \cos\frac{\omega t}{2}\,e_0 + \sin\frac{\omega t}{2}\,\hat{n}_ke_k ,
 $$
 
-and it rotates every body vector through the angle $\omega t$ about $\hat{\mathbf{n}}$ in the right-handed sense. The rotor is normalized, $N(\tilde{R}) = \tilde{R}\tilde{R}^{\natural} = e_0$, and it is a **double cover** of the rotation: $\tilde{R}(\theta + 2\pi,\hat{\mathbf{n}}) = -\tilde{R}(\theta,\hat{\mathbf{n}})$, so that $\pm\tilde{R}$ describe the same orientation and the group of orientations is $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\} = SO(3)$.
+and it rotates every body vector through the angle $\omega t$ about $\hat{\mathbf{n}}$ in the right-handed sense. The rotor is normalized, $N(\tilde{R}) = \langle\tilde{R},\tilde{R}\rangle_{\natural} = \tilde{R}\tilde{R}^{\natural} = e_0$, and it is a **double cover** of the rotation: $\tilde{R}(\theta + 2\pi,\hat{\mathbf{n}}) = -\tilde{R}(\theta,\hat{\mathbf{n}})$, so that $\pm\tilde{R}$ describe the same orientation and the group of orientations is $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\} = SO(3)$.
 
 ### The Angular Velocity
 
@@ -305,6 +305,9 @@ The two effects are **reciprocal**, being the two derivatives of the single spin
 | $\boldsymbol{\Omega}$ | Rotation in the spin-rotation coupling: $+\gamma\mathbf{B}$ mimics a field, $-\gamma\mathbf{B}$ cancels it |
 | $U_{\rm rot} = -\boldsymbol{\mu}\cdot\boldsymbol{\Omega}/\gamma$ | Spin-rotation coupling |
 | $\chi$ | Magnetic susceptibility |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

@@ -31,7 +31,7 @@ The article is organised as follows. The next section defines the eigenspinor an
 The four-momentum of a particle of rest mass $m$ is $\tilde{P} = m\tilde{U}$, with $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ the four-velocity. It lies in the material sector $\mathbb{M}_-$ and its biquaternion norm is fixed,
 
 $$
-\tilde{P} \in \mathbb{M}_-, \qquad N(\tilde{P}) = \tilde{P}\tilde{P}^{\natural} = -m^2c^2 .
+\tilde{P} \in \mathbb{M}_-, \qquad N(\tilde{P}) = \langle\tilde{P},\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -m^2c^2 .
 $$
 
 **Definition.** The **eigenspinor** of the worldline is the rotor $\tilde{\Lambda}(\tau)$ that carries the rest four-momentum $imc\,e_0$ to the lab four-momentum,
@@ -252,6 +252,9 @@ The eigenspinor does not remove the obstruction recorded in *The Lorentz Force i
 | $\tilde{E}_{(\mu)} = \tilde{\Lambda}\mathcal{E}_\mu\tilde{\Lambda}^{*}$ | Eigenframe (tetrad) along the worldline |
 | $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ | Four-velocity |
 | $\tilde{K}$ | Lorentz four-force, $d\tilde{P}/d\tau$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

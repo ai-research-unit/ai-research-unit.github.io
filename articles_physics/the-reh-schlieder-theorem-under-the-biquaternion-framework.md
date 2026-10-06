@@ -14,7 +14,7 @@ This article asks what the Reeh–Schlieder theorem is in the biquaternion frame
 
 The article proceeds as follows. The theorem is stated with its hypotheses and its two halves, and the role of the spectrum condition is explained. Cyclicity and separating are then characterized in the GNS construction, where cyclicity is automatic and separating is faithfulness. The biquaternion vacuum is examined and its failure to be separating is exhibited with an explicit algebra element. The infinite-dimensional field algebra on the biquaternion module is described, and the theorem is located there. The article closes with the established/interpretation/open split. The Bisognano–Wichmann theorem is referred to rather than re-derived: it is the statement that the modular flow the Reeh–Schlieder property makes possible is, for a wedge, the boost.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$. The states are $\tilde\rho\in\mathbb{M}_+$ with $\tilde\rho\ge0$, $\mathrm{Tr}\tilde\rho=1$; the vacuum idempotent is $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and the single-mode ladder is $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger=\tfrac12(ie_1+e_2)$, as in *The Biquaternion Vacuum as a Minimal Idempotent* and *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The modular operator, modular conjugation and modular flow are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, with $\mathrm{Tr}(e_0)=2$. The states are $\tilde\rho\in\mathbb{M}_+$ with $\tilde\rho\ge0$, $\mathrm{Tr}\tilde\rho=1$; the vacuum idempotent is $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and the single-mode ladder is $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger=\tfrac12(ie_1+e_2)$, as in *The Biquaternion Vacuum as a Minimal Idempotent* and *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The modular operator, modular conjugation and modular flow are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*.
 
 ## The Reeh–Schlieder Theorem
 
@@ -249,7 +249,7 @@ The separating property is recovered where the theorem actually lives: on the in
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_0)=2$ |
+| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ | Trace pairing; $\mathrm{Tr}(e_0)=2$ |
 | $\mathcal A(O)$ | Local algebra of the region $O$ |
 | $\Omega$ | Vacuum vector; cyclic and separating |
 | $\mathcal H_{\tilde\rho},\pi_{\tilde\rho},\Omega_{\tilde\rho}$ | GNS Hilbert space, representation, cyclic vector |
@@ -262,6 +262,9 @@ The separating property is recovered where the theorem actually lives: on the in
 | $\{\tilde a(f),\tilde a^\dagger(g)\}=\langle f,g\rangle e_0$ | CAR relations |
 | $\Delta,J,\sigma_t$ | Modular operator, conjugation, flow |
 | $U(x)$ | Translation operator; $\tilde A(x)=U(x)\tilde A U(x)^{-1}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

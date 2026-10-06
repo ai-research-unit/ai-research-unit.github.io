@@ -14,7 +14,7 @@ The findings are stated here in advance, so that the reader can hold them agains
 4. **The measurement destroys the transverse coherence.** The Stern–Gerlach apparatus entangles the spin with the centre-of-mass coordinate; tracing the position out leaves the spin state with its off-diagonal (transverse) Bloch components erased, $\mathbf{r} = (0,0,r_3)$. The coherence that survives is exactly the component along the field, and the lost components are the ones the apparatus cannot read.
 5. **A rotated apparatus gives the $\cos^2(\theta/2)$ law**, and the rotation that carries one analyser direction into another is a rotor in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ acting by conjugation.
 
-The article uses the read-list notation throughout. Throughout, the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$, the scalar imaginary is $i$, the Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+$ and $\mathbb{M}_-$, the observables are $\tilde{H} = h_0 e_0 + i\mathbf{h} \in \mathbb{M}_+$, the pure states are the idempotents $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ for a unit pure real quaternion $\hat{\mu}$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ with $\mathrm{Tr}(e_0) = 2$.
+The article uses the read-list notation throughout. Throughout, the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$, the scalar imaginary is $i$, the Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+$ and $\mathbb{M}_-$, the observables are $\tilde{H} = h_0 e_0 + i\mathbf{h} \in \mathbb{M}_+$, the pure states are the idempotents $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ for a unit pure real quaternion $\hat{\mu}$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ with $\mathrm{Tr}(e_0) = 2$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators, the idempotents and the Born rule.
@@ -320,11 +320,13 @@ A rotated analyser measures $\tilde{S}(\hat{n}) = \tfrac{\hbar}{2}i\hat{n}$ for 
 | $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ | Pure-state idempotent |
 | $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ | General (mixed) spin state; $\mathbf{r}$ the Bloch vector |
 | $p_\pm = \mathrm{Tr}(\tilde\Pi_\pm(\hat{z})\tilde{\rho}) = \tfrac12(1\pm r_3)$ | Beam intensities (Born rule) |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
+| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula |
 | $\hat{n} = \sin\theta\,e_1 + \cos\theta\,e_3$ | Rotated analyser direction |
 | $\tilde{R}(\theta) = \exp(\tfrac{\theta}{2}e_2)$ | Rotor carrying $\hat{z}$ to $\hat{n}$ |
 | $\Delta z_\pm = \pm\hbar\gamma B'L^2/(4mv^2)$ | Deflections of the two beams |
 | $\cos^2(\theta/2)$ | Probability of "up" at the rotated analyser |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

@@ -35,12 +35,14 @@ $$
 is the least escape radius; it is the positive root of $x^2 - x - |c| = 0$, and
 
 $$
-|z| > R(c) \implies |f_c(z)| \geq |z|(|z| - 1) > |c| \ \text{and} \ |f_c(z)| > |z| .
+|z| > R(c) \implies |f_c(z)| \geq |z|^2-|c| > |z|, \qquad \frac{|f_c(z)|}{R(c)} \geq \Bigl(\frac{|z|}{R(c)}\Bigr)^{2} ,
 $$
+
+using $R(c)^2 = R(c)+|c|$; so the moduli increase and their ratios to $R(c)$ at least square at each step, whence the orbit diverges.
 
 In particular $R(c) \leq 2$ exactly when $|c| \leq 2$, so the round number $2$ is an escape radius for every parameter in the closed disk of radius $2$, which is the disk containing $M$.
 
-**Proof.** $|z^2+c| \geq |z|^2 - |c|$; this exceeds $|z|$ exactly when $|z|^2 - |z| - |c| > 0$, that is when $|z| > R(c)$. The least escape radius is the positive root, because for $|z|$ just below it the inequality fails for suitable $c$.
+**Proof.** $|z^2+c| \geq |z|^2 - |c|$; this exceeds $|z|$ exactly when $|z|^2 - |z| - |c| > 0$, that is when $|z| > R(c)$. The radius is the least one valid for all the parameters of modulus $|c|$: for the real parameter $c = -|c|$ the filled Julia set is the real interval ending at the repelling fixed point $R(c)$, so for every $R' < R(c)$ there are non-escaping points of modulus greater than $R'$.
 
 **Example.** $R(0) = 1$, the escape radius of $z^2$; $R(-1) = R(i) = (1+\sqrt5)/2 = 1.618034\ldots$; $R(-2) = R(2) = 2$. The values were recomputed from the formula.
 
@@ -90,7 +92,15 @@ $$
 \frac{1}{2^n}\log|f_c^n(z)| = \log|z| + \sum_{k=0}^{n-1}\frac{1}{2^{k+1}}\log\left|1 + \frac{c}{f_c^k(z)^2}\right| .
 $$
 
-Letting $n \to \infty$ gives the display; the remainder $2^{-n}\log|f_c^n(z)| \to 0$ because $f_c^n(z)$ grows doubly exponentially.
+Letting $n \to \infty$ gives the display: the left-hand side tends to $G(z)$, by the definition of $G$ as the limit $\lim_n 2^{-n}\log|f_c^n(z)|$, and the series on the right converges because $|f_c^n(z)| \to \infty$ makes its terms decay geometrically.
+
+**Remark (the binomial expansion).** The series is the normalised sum of the binomial expansions of the squaring steps: each step factors as $w^2+c = w^2(1+c/w^2)$, so that $f_c^{k+1}(z) = f_c^k(z)^2\bigl(1+c/f_c^k(z)^2\bigr)$, and taking logarithms gives the recurrence
+
+$$
+\log\bigl|f_c^{k+1}(z)\bigr| - 2\log\bigl|f_c^k(z)\bigr| = \log\left|1+\frac{c}{f_c^k(z)^2}\right| ,
+$$
+
+whose weighted sum $2^{-(k+1)}$ over $k$ and normalisation by $2^n$ produce the displayed series. It is the asymptotic development of $G$ at infinity, $G(z) = \log|z| + O(1/|z|^2)$.
 
 **Example (numerical check).** The series and the normalised-logarithm definition agree to double precision. For $c = 0$ and $z = 3$ both give $G = \log 3 = 1.0986122887$; for $c = -1$ and $z = 3$ both give $G = 1.0357521796$; for $c = 0.3+0.5i$ and $z = 3$ both give $G = 1.1167511353$. On the filled Julia set, $G = 0$ at the tested points, for instance $G = 0$ at $z = 0.5$ for $c = 0$, at $z = 0$ for $c = -1$, at $z = 0.5$ for $c = 1/4$, and at $z = 0$ for $c = -2$.
 

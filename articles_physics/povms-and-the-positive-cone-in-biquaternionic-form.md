@@ -28,7 +28,7 @@ $$
 and the biquaternion norm is
 
 $$
-N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H}),
+N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H}),
 $$
 
 a real scalar. The two conditions $N(\tilde{H})\geq0$ and $h_0\geq0$ are together equivalent to $h_0\geq|\mathbf{h}|$, so the set of positive elements is the future light cone of the biquaternion norm:
@@ -258,7 +258,7 @@ and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde
 | $\mathbb{M}_+$ | Hermitian subspace (states and effects) |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $C_+ = \{h_0e_0+i\mathbf{h}: h_0\ge|\mathbf{h}|\}$ | Positive cone (future light cone of $N$) |
 | $C_+^{*} = C_+$ | Self-duality under the trace pairing |
 | $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_0a_0+\mathbf{h}\cdot\mathbf{a})$ | Trace pairing |
@@ -271,6 +271,7 @@ and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde
 | $\tilde{\rho}_y = \tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}/p_y$ | Post-measurement state |
 | $\tilde{E}_y = V^\dagger\tilde{F}_yV$ | Naimark dilation |
 | $\tilde{E}_k = \tfrac23\tilde\Pi_+(\hat{n}_k)$ | Trine POVM |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

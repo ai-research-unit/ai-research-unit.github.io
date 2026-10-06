@@ -26,7 +26,7 @@ $$
 
 the entropy is a function of the single scalar by which the state fails to be idempotent. Pure states are the zero divisors of the biquaternion norm, maximally mixed is its maximum on the state space, and entropy measures the position of the state between them.
 
-This is the informational reading of a geometric fact. The article does not claim that entropy is *derived* from the biquaternion norm in the sense of being forced by it — the function $h$ is the standard one, and its form is a theorem of information theory, not of the algebra — but it makes precise which algebraic invariant the entropy sees. The biquaternion norm supplies the number; information theory supplies the function. Two invariants of the algebra are in play throughout the framework and must not be conflated: the **trace pairing** $\mathrm{Tr}(\tilde{P}\tilde{H})$, which is positive definite and gives the Born rule, and the **biquaternion norm** $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, which is indefinite of signature $(1,3)$ and gives the cone. Entropy belongs to the second.
+This is the informational reading of a geometric fact. The article does not claim that entropy is *derived* from the biquaternion norm in the sense of being forced by it — the function $h$ is the standard one, and its form is a theorem of information theory, not of the algebra — but it makes precise which algebraic invariant the entropy sees. The biquaternion norm supplies the number; information theory supplies the function. Two invariants of the algebra are in play throughout the framework and must not be conflated: the **trace pairing** $\mathrm{Tr}(\tilde{P}\tilde{H})$, which is positive definite and gives the Born rule, and the **biquaternion norm** $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, which is indefinite of signature $(1,3)$ and gives the cone. Entropy belongs to the second.
 
 The article proceeds as follows. The state, its purity, and the biquaternion norm are recalled and the identities connecting them are derived. Then the spectral decomposition is used to compute the entropy and to write it as a function of the biquaternion norm, and the logarithm is exhibited as an element of the algebra. Then the consequences are collected: monotonicity, bounds, concavity, unitary invariance, and the behaviour at the two ends of the cone slice. Then the relation to the standard matrix formula is stated, and a section separates what the biquaternion-norm description adds from what it merely restates. Open questions and the usual closing sections follow.
 
@@ -73,7 +73,7 @@ The state is pure, $\tilde{\rho}^2 = \tilde{\rho}$, exactly when $|\mathbf{r}|=1
 
 ### The biquaternion norm on $\mathbb{M}_+$
 
-The biquaternion norm of the algebra is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On a Hermitian element $\tilde{H} = h_0e_0 + i\mathbf{h}$ with real coefficients it is the real scalar
+The biquaternion norm of the algebra is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On a Hermitian element $\tilde{H} = h_0e_0 + i\mathbf{h}$ with real coefficients it is the real scalar
 
 $$
 N(\tilde{H}) = h_0^2 - |\mathbf{h}|^2 ,
@@ -82,7 +82,7 @@ $$
 so it has signature $(1,3)$; the cone $N(\tilde{H})\geq0$ with $h_0\geq0$ is the positive cone of the Hermitian subspace, and positivity of the operator is exactly $N(\tilde{H})\geq0$ together with $h_0\geq0$. Equivalently, the biquaternion norm is the determinant of the matrix image,
 
 $$
-N(\tilde{H}) = \det M(\tilde{H}) ,
+N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \det M(\tilde{H}) ,
 $$
 
 which is why it is the natural scalar for the cone: a Hermitian matrix is positive semidefinite precisely when its trace and determinant are both non-negative.
@@ -254,7 +254,7 @@ None of this is available in the same form for a general $d$-level system, where
 The state space of the qubit is the trace-one slice of the positive cone of the Hermitian subspace $\mathbb{M}_+$, and the cone is defined by the algebra's biquaternion norm
 
 $$
-N(\tilde{H}) = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H}), \qquad
+N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H}), \qquad
 N(\tilde{\rho}) = \tfrac{1}{4}\bigl(1-|\mathbf{r}|^2\bigr)e_0 .
 $$
 
@@ -280,8 +280,8 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 | $\tilde\Pi_\pm(\hat{\mathbf{r}}) = \tfrac12(e_0\pm i\hat{\mathbf{r}})$ | Spectral idempotents of the state |
 | $\lambda_\pm = \tfrac12(1\pm|\mathbf{r}|)$ | Eigenvalues |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $N(\tilde{H}) = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H})$ | Biquaternion norm of a Hermitian element |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H})$ | Biquaternion norm of a Hermitian element |
 | $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ | Biquaternion norm of a state |
 | $\tilde{\rho}^2 - \tilde{\rho} = -N(\tilde{\rho})e_0$ | Deviation from idempotency |
 | $\mathrm{Tr}(\tilde{\rho}^2) = 1-2N(\tilde{\rho})$ | Purity |
@@ -289,6 +289,8 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 | $S(\tilde{\rho}) = -\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho})$ | Von Neumann entropy |
 | $S = H(N) = h\!\left(\tfrac{1+\sqrt{1-4N}}{2}\right)$ | Entropy as a function of the biquaternion norm |
 | $0 \le S \le \log 2$ | Entropy bounds |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

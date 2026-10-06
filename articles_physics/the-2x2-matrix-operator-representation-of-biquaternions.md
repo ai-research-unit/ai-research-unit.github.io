@@ -55,7 +55,7 @@ $$
 $$
 
 $$
-\det\Phi(\tilde T) = \lvert\det M\rvert^{2}\det\Phi(\tilde R), \qquad\text{that is}\qquad N(\tilde T) = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R) .
+\det\Phi(\tilde T) = \lvert\det M\rvert^{2}\det\Phi(\tilde R), \qquad\text{that is}\qquad N(\tilde T) = \langle\tilde T,\tilde T\rangle_{\natural} = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R) .
 $$
 
 **Proof.** Left and right multiplication by any matrices cannot increase rank, and multiplication by invertible matrices on either side preserves it; that gives the rank statement off the light cone. For the determinant, $\det(MXM^{\dagger}) = \det M\cdot\det X\cdot\det M^{\dagger} = \lvert\det M\rvert^{2}\det X$ by multiplicativity, and $\det\Phi = N$ by the element article.
@@ -98,7 +98,7 @@ On the unit-norm slice the congruence by $M \in SL(2,\mathbb{C})$ is the action 
 
 On the light cone the matrix $M$ has rank one, and a congruence by a rank-one matrix annihilates everything except one line.
 
-**Theorem (the collapse of a null congruence).** Let $N(\tilde{Q}) = 0$ and $\tilde{Q} \neq 0$, so that $\operatorname{rank}M = 1$. Write $M = uv^{\dagger}$ with nonzero column vectors $u, v \in \mathbb{C}^{2}$. Then for every $X$,
+**Theorem (the collapse of a null congruence).** Let $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q} \neq 0$, so that $\operatorname{rank}M = 1$. Write $M = uv^{\dagger}$ with nonzero column vectors $u, v \in \mathbb{C}^{2}$. Then for every $X$,
 
 $$
 M X M^{\dagger} = \bigl(v^{\dagger}Xv\bigr)\, u\,u^{\dagger} .
@@ -146,7 +146,7 @@ $$
 X \longmapsto M X M^{\dagger}, \qquad M = \Phi(\tilde{Q}) \in M_2(\mathbb{C}),
 $$
 
-a single familiar operation, linear in the argument and quadratic in the operand, and a similarity exactly when $M$ is unitary, that is, for the rotations. It preserves the two Hermitian sectors, because $(MXM^{\dagger})^{\dagger} = MXM^{\dagger}$ or its negative according to the sector of $X$, and it scales the determinant by $\lvert\det M\rvert^{2}$, which is the interval identity $N(\tilde T) = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R)$. The image of the identity is the Gram matrix $MM^{\dagger}$, positive semidefinite of rank $\operatorname{rank}M$.
+a single familiar operation, linear in the argument and quadratic in the operand, and a similarity exactly when $M$ is unitary, that is, for the rotations. It preserves the two Hermitian sectors, because $(MXM^{\dagger})^{\dagger} = MXM^{\dagger}$ or its negative according to the sector of $X$, and it scales the determinant by $\lvert\det M\rvert^{2}$, which is the interval identity $N(\tilde T) = \langle\tilde T,\tilde T\rangle_{\natural} = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R)$. The image of the identity is the Gram matrix $MM^{\dagger}$, positive semidefinite of rank $\operatorname{rank}M$.
 
 The two regimes are the two ranks of $M$. Off the light cone $M$ is invertible, the congruence is a bijection preserving the four ranks of the two-by-two matrices, and the operator has rank $4$, determinant $\lvert N(\tilde{Q})\rvert^{4}$ and trace $4\lvert Q_0\rvert^{2}$, with the spectrum $\lambda_i\bar{\lambda}_j$ read from the eigenvalues of $M$. On the light cone $M = uv^{\dagger}$ has rank one and the congruence collapses the whole matrix algebra onto the single Hermitian line $\mathbb{C}uu^{\dagger}$, the line of a minimal idempotent: the operator has rank one, its square is $4\lvert Q_0\rvert^{2}$ times itself, and it is nilpotent for $Q_0 = 0$ and a scaled projection otherwise. The worked null operands $e_1 + ie_2$, $\tilde\Pi_2$ and $e_2 + ie_3$ show the three cases of the collapse, with images the lines of $\tilde\Pi_1$, $\tilde\Pi_2$ and $\tfrac12(e_0 + ie_1)$. The boost rotor $\tfrac53e_0 + \tfrac43ie_3$ shows the invertible case, with the half-rapidity of the operand appearing as the doubled rapidity of the congruence.
 
@@ -159,11 +159,13 @@ The two regimes are the two ranks of $M$. Off the light cone $M$ is invertible, 
 | $X \mapsto MXM^{\dagger}$ | the sandwich as a congruence |
 | $MM^{\dagger} = \Phi(\tilde{Q}\tilde{Q}^{*})$ | the image of the identity; the Gram matrix of $M$ |
 | $\operatorname{rank}\Phi(\tilde{Q}\tilde R\tilde{Q}^{*}) \leq \operatorname{rank}\Phi(\tilde R)$ | rank never increases; preserved off the cone |
-| $\det(MXM^{\dagger}) = \lvert\det M\rvert^{2}\det X$ | the determinant scales; $N(\tilde T) = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R)$ |
+| $\det(MXM^{\dagger}) = \lvert\det M\rvert^{2}\det X$ | the determinant scales; $N(\tilde T) = \langle\tilde T,\tilde T\rangle_{\natural} = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R)$ |
 | $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = (\operatorname{rank}M)^{2}$ | $4$ off the cone, $1$ on it, $0$ only at $\tilde{Q} = 0$ |
 | $M = uv^{\dagger} \Rightarrow MXM^{\dagger} = (v^{\dagger}Xv)uu^{\dagger}$ | the collapse of a null congruence onto one Hermitian line |
 | $uu^{\dagger} \leftrightarrow \tfrac12(e_0 + i\mathbf{n}\cdot\mathbf{e})$ | the generator of the image line is a minimal idempotent |
 | $4\lvert Q_0\rvert^{2}$ | trace of the operator; vanishes exactly for the nilpotent case |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

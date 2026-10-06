@@ -5,7 +5,7 @@
 The companion article *Quantum Physics in Biquaternionic Form* identifies the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as the common home of the states and observables of a two-state system, and states the Born rule there as the trace formula
 
 $$
-\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}).
+\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle.
 $$
 
 Earlier articles use the formula; this article develops it and, as the title promises, separates what the framework **derives** from what it merely **restates**.
@@ -41,7 +41,7 @@ Three properties single it out. **Invariance:** under unitary conjugation $\tild
 The other natural quadratic form on $\mathbb{M}_+$ is the **biquaternion norm**
 
 $$
-N(\tilde{H})=\tilde{H}\tilde{H}^{\natural}=(h_0^2-|\mathbf{h}|^2)e_0,
+N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural}=\tilde{H}\tilde{H}^{\natural}=(h_0^2-|\mathbf{h}|^2)e_0,
 $$
 
 of signature $(1,3)$, whose future light cone is the positivity cone. The state space is the trace-one slice of that cone; the Born rule is a statement about the trace pairing. Positivity of a state is a biquaternion-norm condition, while Born probabilities are trace-pairing quantities. The Born rule therefore does not follow from the light-cone structure of $\mathbb{M}_+$; it follows from the Euclidean trace pairing, a different form on the same space.
@@ -221,7 +221,7 @@ There is a further uniqueness question: is the trace form the only probability m
 
 ## Summary
 
-The Born rule in the biquaternion framework is the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. On $\mathbb{M}_+$ the trace pairing $\mathrm{Tr}(\tilde{H}\tilde{K})=2(h_0k_0+\mathbf{h}\cdot\mathbf{k})$ is the Euclidean positive-definite pairing of signature $(4,0)$, distinct from the Lorentzian biquaternion norm $N(\tilde{H})=h_0^2-|\mathbf{h}|^2$ whose future cone cuts out the state space. It is natural because it is the product's trace: among symmetric invariant positive pairings it is the tracial one.
+The Born rule in the biquaternion framework is the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. On $\mathbb{M}_+$ the trace pairing $\mathrm{Tr}(\tilde{H}\tilde{K})=2(h_0k_0+\mathbf{h}\cdot\mathbf{k})$ is the Euclidean positive-definite pairing of signature $(4,0)$, distinct from the Lorentzian biquaternion norm $N(\tilde{H})=h_0^2-|\mathbf{h}|^2$ whose future cone cuts out the state space. It is natural because it is the product's trace: among symmetric invariant positive pairings it is the tracial one.
 
 Under $\varphi:\mathbb{B}\to M_2(\mathbb{C})$ the idempotents map to rank-one projectors, states to density matrices, and $\mathrm{tr}\circ\varphi=\mathrm{Tr}$. The probability $p_+=\mathrm{Tr}(\tilde\Pi_+(\hat{\mathbf{h}})\tilde{\rho})=\tfrac12(1+\hat{\mathbf{h}}\cdot\mathbf{r})$ is real, in $[0,1]$, and normalized, all as consequences of the algebra. General measurements are effects $\tilde{E}=ae_0+i\mathbf{w}$ with $|\mathbf{w}|\leq\min(a,1-a)$; POVMs are families of effects summing to $e_0$; the probabilities are $a_i+\mathbf{w}_i\cdot\mathbf{r}$, as the unsharp and trine examples show.
 
@@ -239,17 +239,19 @@ The comparison with the standard statement is exact, because $\mathbb{B}\cong M_
 | $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | General Hermitian element |
 | $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H}) = 2h_0$ | Trace |
 | $\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0k_0 + \mathbf{h}\cdot\mathbf{k})$ | Trace pairing, signature $(4,0)$ |
-| $N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\mathbf{h}|^2)e_0$ | Biquaternion norm, signature $(1,3)$ |
+| $N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\mathbf{h}|^2)e_0$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$, $|\mathbf{r}|\leq 1$ | State; Bloch vector $\mathbf{r}$ |
 | $\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$, $|\hat{\boldsymbol{\mu}}|=1$ | Idempotent (pure state, rank-one projector) |
 | $\tilde{E} = a e_0 + i\mathbf{w}$, $|\mathbf{w}|\leq\min(a,1-a)$ | Effect |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $\mathrm{Tr}(\tilde\Pi_+(\hat{\mathbf{h}})\tilde{\rho}) = \tfrac{1}{2}(1+\hat{\mathbf{h}}\cdot\mathbf{r})$ | Born probability, projective |
 | $\mathrm{Tr}(\tilde{E}_i\tilde{\rho}) = a_i + \mathbf{w}_i\cdot\mathbf{r}$ | Born probability, POVM |
 | $\mathrm{Tr}(\tilde\Pi(\hat{\boldsymbol{\mu}})\tilde\Pi(\hat{\boldsymbol{\nu}})) = \tfrac{1}{2}(1+\hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\nu}}) = \cos^2(\theta/2)$ | Transition probability |
 | $\varphi: e_0\mapsto I_2$, $e_j\mapsto -i\sigma_j$ | Isomorphism $\mathbb{B}\to M_2(\mathbb{C})$ |
 | $\mathrm{tr}\circ\varphi = \mathrm{Tr}$ | Trace correspondence |
 | $\tilde{K}_i$, $\sum_i\tilde{K}_i^{*}\tilde{K}_i = e_0$ | Kraus operators (measurement update) |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

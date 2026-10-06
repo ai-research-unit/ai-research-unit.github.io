@@ -204,7 +204,7 @@ and the two terms have definite reality types. Because $\tilde{\rho}$ and $\tild
 $$
 \mathrm{Re}\,\mathrm{Tr}\bigl(\tilde{\rho}\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{\rho}\,\mathrm{Re}_{\mathbb{B}}\,\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{\rho}\tilde{Q}_+\bigr).
 $$
-The material component contributes only to the imaginary part, which no Hermitian observable reads out. The material component is invisible to every expectation value, exactly as a superselection charge is invisible to every observable that commutes with it. This is a statement about the pairing and not about the physical importance of the material sector: the material sector enters the theory through invariants — the interval $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, the four-velocity norm, the mass shell — and not through expectation values.
+The material component contributes only to the imaginary part, which no Hermitian observable reads out. The material component is invisible to every expectation value, exactly as a superselection charge is invisible to every observable that commutes with it. This is a statement about the pairing and not about the physical importance of the material sector: the material sector enters the theory through invariants — the interval $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the four-velocity norm, the mass shell — and not through expectation values.
 
 **Summary of the test.** Against the two conditions of a superselection structure: the operations preserve the sectors (verified by the conjugation identity), and the relative phase is unobservable (verified by the centre acting as a scalar on rays and by the reality type of the pairing). Against the standard algebraic realization: there is no central projection, and the module is irreducible, so the sectors are not the summands of a central decomposition. The split therefore satisfies the operational conditions of a superselection structure while violating its standard realization, and the charge that carries it is the antilinear real structure $\flat$.
 
@@ -294,6 +294,9 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $\mathbb{M}_\pm^{0}$ | Traceless parts, $\mathrm{SL}(2,\mathbb{C}) = \mathbb{M}_+^{0}\oplus\mathbb{M}_-^{0}$ |
 | $\mathbb{M}_-^{0}\cong\mathrm{SU}(2)$ | Material traceless part, compact rotations |
 | $\mathbb{M}_+^{0}$ | Informational traceless part, non-compact boosts |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

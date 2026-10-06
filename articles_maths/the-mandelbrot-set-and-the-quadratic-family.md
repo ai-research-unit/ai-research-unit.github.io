@@ -34,9 +34,9 @@ $$
 c = a\left(a\beta^2 + b\beta + d - \beta\right) = ad - \frac{b^2}{4} + \frac{b}{2} = \frac{4ad - b^2 + 2b}{4} .
 $$
 
-So $f$ is conjugate to $f_c$ with $c = ad - b^2/4 + b/2$, the conjugating map being $h(z) = (z - b/2)/a$. The choice is unique up to the involution $z \mapsto -z$, which commutes with every $f_c$ and is the only affine automorphism of $f_c$, and the two choices give the same parameter. Affine conjugation carries orbits to orbits, hence preserves boundedness, the Julia set and the filled Julia set up to the conjugacy.
+So $f$ is conjugate to $f_c$ with $c = ad - b^2/4 + b/2$, the conjugating map being $h(z) = (z - b/2)/a$. The conjugating affine map is unique, because the only affine automorphism of $f_c$ is the identity; the map $f_c$ is even, $f_c(-z) = f_c(z)$, so $z \mapsto -z$ leaves the two sets invariant although it is not a conjugacy of $f_c$ with itself. Affine conjugation carries orbits to orbits, hence preserves boundedness, the Julia set and the filled Julia set up to the conjugacy.
 
-**Corollary.** The Mandelbrot set classifies the degree-two polynomials up to affine conjugacy: two quadratic polynomials have homeomorphic (indeed conformally conjugate on a neighbourhood of their Julia sets) dynamics exactly when their normalised parameters coincide, and the classification of the parameters by the dynamics is the classification of the set $M$ into its subsets.
+**Corollary.** The Mandelbrot set classifies the degree-two polynomials up to affine conjugacy: the normalised parameter of a quadratic polynomial is a complete invariant of its affine conjugacy class, the conjugacy preserving boundedness, the Julia set and the filled Julia set up to the transport of the conjugating map, and the classification of the parameters into the subsets of $M$ is the classification of the degree-two dynamics.
 
 ## The Mandelbrot Set
 
@@ -132,7 +132,7 @@ $$
 
 which is independent of which of the two roots is chosen. The cycle is attracting exactly when $|4(c+1)| < 1$, that is $|c+1| < 1/4$; the multiplier is $1$ at $c = -3/4$ and $0$ at $c = -1$.
 
-**Example.** At $c = -1$ the cycle is $\{0, -1\}$ and the parameter is superattracting; at $c = -5/4$ the multiplier is $-1$, the right-hand endpoint of the bulb, where the cycle becomes parabolic and a period-four cycle is born.
+**Example.** At $c = -1$ the cycle is $\{0, -1\}$ and the parameter is superattracting; at $c = -5/4$ the multiplier is $-1$, the left-hand endpoint of the bulb, where the cycle becomes parabolic and a period-four cycle is born.
 
 ### Hyperbolic Components and Their Classification
 

@@ -12,7 +12,7 @@ is the central object of equilibrium statistical mechanics. It normalizes the th
 
 The answer has two parts, and they should be kept apart from the outset.
 
-The first part is that, for a **Hermitian** Hamiltonian — an element $\tilde H$ of the informational sector $\mathbb{M}_+$ — the partition function is exactly the ordinary one, and the algebra contributes a *reading* rather than a new object. The thermal operator $e^{-\beta\tilde H}$ is itself an element of $\mathbb{M}_+$; the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ identifies the trace with twice the scalar part; and $Z$ is therefore that scalar part, doubled. What the trace discards is the **imaginary vector part** of $e^{-\beta\tilde H}$. The material sector $\mathbb{M}_-$ does not appear in the thermal operator at all in this case; it appears in the **imaginary-time direction** along which $\beta$ is measured. So the honest finding is negative in the sense the subject demands: the algebra does not produce a second, rival partition function, and a "biquaternionic partition function" distinct from $Z$ is not needed.
+The first part is that, for a **Hermitian** Hamiltonian — an element $\tilde H$ of the informational sector $\mathbb{M}_+$ — the partition function is exactly the ordinary one, and the algebra contributes a *reading* rather than a new object. The thermal operator $e^{-\beta\tilde H}$ is itself an element of $\mathbb{M}_+$; the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ identifies the trace with twice the scalar part; and $Z$ is therefore that scalar part, doubled. What the trace discards is the **imaginary vector part** of $e^{-\beta\tilde H}$. The material sector $\mathbb{M}_-$ does not appear in the thermal operator at all in this case; it appears in the **imaginary-time direction** along which $\beta$ is measured. So the honest finding is negative in the sense the subject demands: the algebra does not produce a second, rival partition function, and a "biquaternionic partition function" distinct from $Z$ is not needed.
 
 The second part is the only place where the sector split changes the answer. If the generator is permitted an $\mathbb{M}_-$ component — that is, if $\tilde H$ is allowed to be **non-Hermitian** — then $Z$ can cease to be real and become complex, and the free energy can acquire an imaginary part. This extension is not forced by the framework, because observables are defined to be Hermitian elements of $\mathbb{M}_+$. It is recorded here as a boundary of the reading, not as a result.
 
@@ -79,7 +79,7 @@ $$
 
 The derivation of this formula and its role in the Born rule are the subject of the companion article *The Born Rule as a Trace Formula*; here we only use it. Two features matter for the partition function. The formula is **bilinear and symmetric**, and it is **real** when both factors lie in $\mathbb{M}_+$. Note also that the product $\tilde P\tilde H$ need not itself lie in $\mathbb{M}_+$ — it acquires a real vector part $-\mathbf p\times\mathbf h$ in the quaternion product — and yet its scalar part, and therefore the trace, is still given by the formula above. The trace does not require the product to remain in $\mathbb{M}_+$; it requires only the factors to.
 
-A remark on the alternative. The trace is not the only natural scalar that can be extracted from an element of $\mathbb{M}_+$; the **biquaternion norm** $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ is another. On $\tilde H=h_0e_0+i\mathbf h$ it gives $N(\tilde H)=h_0^2-|\mathbf h|^2$, of signature $(1,3)$, and it is the form whose future cone defines the state space. A later section shows that the biquaternion norm of the thermal operator is blind to the level splitting and so cannot serve as a partition function. The trace, not the norm, is the scalar that thermodynamics uses; the companion article *The Born Rule as a Trace Formula* makes the general case for why.
+A remark on the alternative. The trace is not the only natural scalar that can be extracted from an element of $\mathbb{M}_+$; the **biquaternion norm** $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ is another. On $\tilde H=h_0e_0+i\mathbf h$ it gives $N(\tilde H)=h_0^2-|\mathbf h|^2$, of signature $(1,3)$, and it is the form whose future cone defines the state space. A later section shows that the biquaternion norm of the thermal operator is blind to the level splitting and so cannot serve as a partition function. The trace, not the norm, is the scalar that thermodynamics uses; the companion article *The Born Rule as a Trace Formula* makes the general case for why.
 
 ## The Thermal Operator and the Partition Function
 
@@ -248,8 +248,10 @@ The algebra does not force a modification. A genuine modification appears only i
 | $\mathbf r=-\tanh(\beta|\mathbf h|)\hat{\mathbf h}$ | Bloch vector of the thermal state |
 | $F=-\beta^{-1}\log Z$, $U=-\partial_\beta\log Z$ | Free energy, internal energy |
 | $K=-\log\tilde\rho=\beta\tilde H+(\log Z)e_0$ | Modular Hamiltonian (in $\mathbb{M}_+$) |
-| $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm |
+| $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm |
 | $\beta=1/(k_BT)$ ($\hbar=1$) | Inverse temperature |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

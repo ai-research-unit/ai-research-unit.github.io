@@ -29,7 +29,7 @@ $$
 \qquad
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\},
 $$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_0e_0+i\mathbf{h}$,
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_0e_0+i\mathbf{h}$,
 $$
 N(\tilde{H})=\bigl(h_0^2-|\mathbf{h}|^2\bigr)e_0 .
 $$
@@ -54,7 +54,7 @@ is positive definite, of signature $(4,0)$; it is the Euclidean pairing on $\mat
 
 **The biquaternion norm and its polarization.**
 $$
-N(\tilde{H})=\tilde{H}\tilde{H}^{\natural}=\bigl(h_0^2-|\mathbf{h}|^2\bigr)e_0,
+N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural}=\tilde{H}\tilde{H}^{\natural}=\bigl(h_0^2-|\mathbf{h}|^2\bigr)e_0,
 \qquad
 B(\tilde{H},\tilde{K})=\tfrac12\bigl(\tilde{H}\tilde{K}^{\natural}+\tilde{K}\tilde{H}^{\natural}\bigr)=\bigl(h_0k_0-\mathbf{h}\cdot\mathbf{k}\bigr)e_0,
 $$
@@ -349,7 +349,7 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 | $\mathbb{M}_+$ | Hermitian subspace, $\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace, $\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ | State, $|\mathbf{r}|\leq1$ |
 | $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$ | Pure state (idempotent), $|\hat{\mu}|=1$ |
 | $\mathbb{B}p$, $p=\tfrac12(e_0+ie_3)$ | State module, $\cong\mathbb{C}^2$ |
@@ -364,6 +364,8 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 | $K=\log(1+|w|^2)$ | Kähler potential; $ds^2=g_{w\bar{w}}\,dw\,d\bar{w}$, $g_{w\bar{w}}=1/(1+|w|^2)^2$ |
 | $D=\sin(\theta/2)$ | Trace distance of two pure states |
 | $ds^2_{\mathrm{Bures}}$ | Bures metric of the ball (standard import) |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

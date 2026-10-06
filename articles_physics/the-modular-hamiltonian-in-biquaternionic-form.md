@@ -26,7 +26,7 @@ Three features organize what follows.
 
 The article proceeds as follows. The modular Hamiltonian is defined from $\Delta$, the hypotheses are checked, and the sign convention is fixed. The finite-dimensional realization in $\mathbb{B}$ is recalled from the parents and completed with $\tilde K$'s spectral form. $\tilde K$ is then verified to generate the same flow as $\Delta^{it}$. The trace formula is used to show that the Gibbs form is a scalar extraction. The locality question is separated into its generic nonlocal answer and the wedge exception, with the boost generator recomputed in biquaternion form. A closing section separates what is established from what is a gap.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The modular flow is $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=e^{-\tilde K}$, so that $\tilde K=-\log\Delta$ and $\Delta^{it}=e^{-i\tilde Kt}$. In the finite-dimensional model of the parents, $\tilde K=-\log\tilde\rho$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_0+i\mathbf h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The modular flow is $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=e^{-\tilde K}$, so that $\tilde K=-\log\Delta$ and $\Delta^{it}=e^{-i\tilde Kt}$. In the finite-dimensional model of the parents, $\tilde K=-\log\tilde\rho$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_0+i\mathbf h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.
 
 ## The Generator of the Modular Flow
 
@@ -216,7 +216,7 @@ The verification was run on the state that was chosen for its genericity and on 
 
 The trace formula inherited from the read list,
 $$
-\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H),
+\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle,
 \qquad
 \mathrm{Tr}(e_0)=2,
 $$
@@ -374,7 +374,7 @@ a_0=-\tfrac12\log\det\tilde\rho,
 \qquad
 \mathbf a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\hat{\mathbf r},
 $$
-so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde K$ generates the same flow as $\Delta^{it}$, that $\mathrm{Tr}(e^{-\tilde K})=1$, and that the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde K)=\beta h_0+\log Z$ and $\mathbf a=\beta\mathbf h$.
+so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde K$ generates the same flow as $\Delta^{it}$, that $\mathrm{Tr}(e^{-\tilde K})=1$, and that the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde K)=\beta h_0+\log Z$ and $\mathbf a=\beta\mathbf h$.
 
 The one structural question the finite-dimensional model cannot settle is locality. For a general spacetime region the modular Hamiltonian of the vacuum is nonlocal, and the modular flow is not geometric; it is local exactly in the exceptional cases where the flow is a symmetry flow — the Bisognano–Wichmann wedge, where $\tilde K_W=2\pi G_1$ with $G_1=ie_1\in\mathbb{M}_+$ and the flow is the boost by rapidity $2\pi s$, and the conformal ball, which the framework cannot fully express because the special conformal generators are not elements of $\mathbb{B}$. In the wedge the flow is outer and the action is the two-sided rotor conjugation, not the commutator $[\tilde K_W,\cdot\,]$; in the finite-dimensional model the flow is inner and the commutator is correct. Both cases have $\tilde K\in\mathbb{M}_+$, by different mechanisms, and the gap between them is the type gap of the modular-theory parent.
 
@@ -387,7 +387,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | ${}^{*}$ | Hermitian conjugation; the Tomita involution $A^*$ |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula; $\mathrm{Tr}(e_0)=2$ |
+| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ | Trace formula; $\mathrm{Tr}(e_0)=2$ |
 | $S=J\Delta^{1/2}$ | Tomita operator and its polar decomposition |
 | $\Delta=S^*S\ge0$ | Modular operator; $\Delta>0$ iff the state is faithful |
 | $\tilde K=-\log\Delta$ | Modular Hamiltonian; $\Delta=e^{-\tilde K}$ |
@@ -402,6 +402,9 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $G_1=ie_1\in\mathbb{M}_+$ | Boost generator ($=K_1$ in the Lorentz-group companion) |
 | $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde K_W=2\pi G_1$ | Wedge modular Hamiltonian (Bisognano–Wichmann) |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

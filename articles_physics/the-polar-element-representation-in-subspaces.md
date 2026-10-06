@@ -21,7 +21,7 @@ The restriction is not a cosmetic exercise, because each subspace is the fixed s
 | $\mathbb{M}_+$ — informational sector | 4 | real, indefinite | $0$ or $\pi/2$ | the boost, explicit | $\pm e_0$ or a direction |
 | $\mathbb{M}_-$ — material sector | 4 | real, indefinite | $0$ or $\pi/2$ | the boost, explicit | $\pm e_0$ or a direction |
 
-The conventions are those of *Conventions in the Biquaternion Universe*: $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ with $\Phi(e_0) = I$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI$; $\mathbb{C}_{\mathbb{B}}$ is the center; $\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar part; $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the home of the rotations; $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation, its imaginary half; $\mathbb{M}_+$ is the fixed space of Hermitian conjugation, the home of the boosts; and $\mathbb{M}_-$ is the anti-fixed space of Hermitian conjugation, with $Q_0 = iq'_0$ and $Q_k$ real, the home of the four-vectors. Every numerical value below was recomputed in double precision; the residuals of the identities quoted are below $2\times10^{-12}$.
+The conventions are those of *Conventions in the Biquaternion Universe*: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ with $\Phi(e_0) = I$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI$; $\mathbb{C}_{\mathbb{B}}$ is the center; $\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar part; $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the home of the rotations; $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation, its imaginary half; $\mathbb{M}_+$ is the fixed space of Hermitian conjugation, the home of the boosts; and $\mathbb{M}_-$ is the anti-fixed space of Hermitian conjugation, with $Q_0 = iq'_0$ and $Q_k$ real, the home of the four-vectors. Every numerical value below was recomputed in double precision; the residuals of the identities quoted are below $2\times10^{-12}$.
 
 The six restrictions are taken one at a time in the sections that follow, in the order in which the framework names the subspaces — center, vector, quaternion, antiquaternion, informational, material — and each part is built the same way: it opens with the element and its biquaternion norm, states which of the four factors survive, gives the surviving factors explicitly, and closes with worked examples. Where a subspace's defining condition needs a computation of its own — the boost axis and the orthogonality of the rotor in the vector subspace, the two branches of each sector — that computation is a subsection of the part. Three further sections close the article, each a comparison across all six: the biquaternion norm as the single object that decides the phase, the count of the dimensions each factor accounts for, and the four coordinate blocks, on which the six restrictions have to agree element by element.
 
@@ -197,7 +197,7 @@ In the first row $\mathbf{v}\times\mathbf{w} = e_3-e_2$, the boost axis is $(e_3
 Let $\tilde{Q}\in\mathbb{H}_{\mathbb{B}}$, that is $\tilde{Q}^* = \tilde{Q}$, so that $\tilde{Q} = \sum_\mu q_\mu e_\mu$ with all four coefficients real. The subspace is the image of the real quaternion algebra inside $\mathbb{B}$, of real dimension four, and its biquaternion norm is the sum of four squares,
 
 $$
-N(\tilde{Q}) = \sum_\mu q_\mu^2 > 0 \quad (\tilde{Q}\neq0), \qquad r = |\tilde{Q}| , \qquad \alpha = 0 ,
+N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2 > 0 \quad (\tilde{Q}\neq0), \qquad r = |\tilde{Q}| , \qquad \alpha = 0 ,
 $$
 
 positive definite, so its only zero is the origin and the representation is defined on the whole subspace except $0$. In the matrix picture it is the quaternionic class, $\Phi(\tilde{Q}) = q_0I - iq_k\sigma_k$.
@@ -242,7 +242,7 @@ Both rows have the trivial boost and the phase $0$, and the rotor is free: the f
 Let $\tilde{Q}\in i\mathbb{H}_{\mathbb{B}}$, that is $\tilde{Q}^* = -\tilde{Q}$ and $\tilde{Q} = iq$ with $q$ a real quaternion. The subspace is the imaginary half of the coefficient split $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, of real dimension four, and its biquaternion norm is the negative of a sum of four squares,
 
 $$
-N(\tilde{Q}) = -\sum_\mu q_\mu^2 < 0 \quad (\tilde{Q}\neq0), \qquad r = |q| > 0 , \qquad \alpha = \frac{\pi}{2} ,
+N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = -\sum_\mu q_\mu^2 < 0 \quad (\tilde{Q}\neq0), \qquad r = |q| > 0 , \qquad \alpha = \frac{\pi}{2} ,
 $$
 
 negative definite, so again the only zero is the origin and the representation is defined on $i\mathbb{H}_{\mathbb{B}}\setminus\{0\}$. The principal square root of a negative real is positive imaginary, which is what freezes the phase at $\pi/2$.
@@ -454,7 +454,7 @@ Restricted to the six distinguished subspaces, the polar representation $\tilde{
 | symbol | meaning |
 |---|---|
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | a biquaternion, $Q_\mu\in\mathbb{C}$ |
-| $N(\tilde{Q}) = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ | the biquaternion norm and the determinant of the $2\times2$ representative |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ | the biquaternion norm and the determinant of the $2\times2$ representative |
 | $\rho = re^{i\alpha} = \sqrt{N(\tilde{Q})}$ | the complex modulus, in the principal branch $\alpha\in(-\pi/2,\pi/2]$ |
 | $B = \sqrt{\tilde{Q}\tilde{Q}^{*}}/r$ | the boost factor, Hermitian positive of biquaternion norm one |
 | $\hat{q} = B^{-1}\tilde{Q}/\rho$ | the rotor, a unit real quaternion |
@@ -470,6 +470,8 @@ Restricted to the six distinguished subspaces, the polar representation $\tilde{
 | $\varphi$ | the half-rapidity of $B$: $B = \cosh\varphi\,e_0 + i\sinh\varphi\,\hat{\mathbf{u}}$, rapidity $2\varphi$ |
 | $M = \max(|a|,s)$, $m = \min(|a|,s)$ | the two numbers that fix the rapidity of the sector boost |
 | $T_{\mathrm{m}}, T_{\mathrm{i}}, X_{\mathrm{m}}, X_{\mathrm{i}}$ | the four coordinate blocks |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

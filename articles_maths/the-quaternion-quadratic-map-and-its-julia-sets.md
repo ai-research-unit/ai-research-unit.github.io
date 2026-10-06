@@ -38,15 +38,25 @@ $$
 \mathrm{d}(f_c)_{\tilde q}\,\tilde h = \tilde q\tilde h + \tilde h\tilde q ,
 $$
 
-and it is singular exactly at $\tilde q = 0$. Thus $0$ is the unique critical point of $f_c$. Here the algebra is identified with $\mathbb{R}^4$ and the differential is taken in the real sense; no complex structure is used.
-
-*Proof.* The product is bilinear, so the differential of $\tilde q \mapsto \tilde q^2$ at $\tilde q$ in the direction $\tilde h$ is $\tilde q\tilde h+\tilde h\tilde q$, and the constant $c$ contributes nothing. If $\tilde q \neq 0$ then $\mathrm{d}(f_c)_{\tilde q}\tilde q = 2\tilde q^2 \neq 0$ and, since $\tilde q \neq 0$ is invertible, the map $\tilde h \mapsto \tilde q\tilde h$ is bijective, so the differential is surjective, hence invertible. At $\tilde q=0$ the differential vanishes. $\square$
-
-**Definition.** The **critical orbit** of the parameter $c$ is the orbit of the critical point,
+and its determinant, in the real coordinates $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$, is
 
 $$
-0, \quad c, \quad c^2+c, \quad (c^2+c)^2+c, \quad \ldots .
+\det \mathrm{d}(f_c)_{\tilde q} = 16\,q_0^2\,N(\tilde q) = 16\,q_0^2\,|\tilde q|^2 .
 $$
+
+Hence the differential is invertible exactly for $q_0\neq0$, and it is singular on the hyperplane $\{q_0=0\}$ of the pure vectors, a three-dimensional set; the point $0$ is one of the critical points but not the only one. Here the algebra is identified with $\mathbb{R}^4$ and the differential is taken in the real sense; no complex structure is used.
+
+*Proof.* The product is bilinear, so the differential of $\tilde q \mapsto \tilde q^2$ at $\tilde q$ in the direction $\tilde h$ is $\tilde q\tilde h+\tilde h\tilde q$, and the constant $c$ contributes nothing. The map is the sum $L_{\tilde q}+R_{\tilde q}$ of the left and the right multiplication, and passing through the matrix model $M_2(\mathbb{C})$ the sum $L_{\tilde q}+R_{\tilde q}$ acts on a matrix $X=\Phi(\tilde h)$ by $X\mapsto \Phi(\tilde q)X+X\Phi(\tilde q)$, whose eigenvalues are the four sums $\mu_i+\mu_j$ of the two eigenvalues $\mu_{1,2}=q_0\pm i|\mathbf q|$ of $\Phi(\tilde q)$; the product of the four sums is $4\mu_1\mu_2(\mu_1+\mu_2)^2=4N(\tilde q)(2q_0)^2$, the displayed determinant. It vanishes exactly when $q_0=0$, since $N(\tilde q)=|\tilde q|^2=0$ forces $\tilde q=0$. $\square$
+
+**Remark (the critical set is larger than the point $0$).** The singular set is the hyperplane of the pure vectors, not a point, and the escape theory below is unaffected because it uses only the multiplicativity of the norm. What the connectedness theory uses is the orbit of the *single* point $0$: the point $0$ lies in the plane $\mathbb{R}[c]$ of the parameter, on which $f_c$ restricts to the complex quadratic map $z\mapsto z^2+\kappa(c)$, and it is the critical point of that planar restriction. The orbit of $0$ is therefore the critical orbit of the invariant complex slice, and it is the orbit that governs the locus.
+
+**Definition.** The **critical orbit** of the parameter $c$ is the orbit of the point $0$,
+
+$$
+0, \quad c, \quad c^2+c, \quad (c^2+c)^2+c, \quad \ldots ,
+$$
+
+the orbit of the critical point of the invariant complex slice $\mathbb{R}[c]$.
 
 The critical orbit is the simplest orbit of the family and, by the critical slice theorem of the next article, the one that decides the connectedness locus.
 
@@ -96,7 +106,7 @@ $$
 
 with $p=0$ for $d=0$; the identity $p^2=d$ is checked by squaring the decomposition $d=d_0+\mathbf d$ with $|\mathbf d|^2=|d|^2-d_0^2$. A fixed point lies in $K_c$ because its orbit is constant. Forward-invariance is the definition, and the critical orbit lies in $K_c$ exactly when it is bounded. Finally $K_c$ is nonempty and compact with nonempty complement — it is bounded and $\mathbb{H}$ is unbounded — so its boundary is nonempty and compact. $\square$
 
-**Remark (the dichotomy).** The complement of $K_c$ is the **escape set**, the set of points whose orbit leaves every ball, and the plane of parameters splits into those $c$ for which $K_c$ is connected and those for which it is a Cantor set. In the complex case the dichotomy is governed by the critical orbit, and in the quaternion case the same critical orbit governs the connectedness locus, by the critical slice theorem of *The Quaternion Mandelbrot Set*; **the connectedness locus of the quaternion family is the rotational hull of the complex Mandelbrot set**, and that article owns the statement. The general theory of the partition of the phase space into a Fatou set and a Julia set, of the normal family of the iterates and of the repelling periodic points is Part IV's, in *The Geometry of the Julia Sets* and *The Julia Sets of a Complex Polynomial*, and is not repeated here.
+**Remark (the dichotomy).** The complement of $K_c$ is the **escape set**, the set of points whose orbit leaves every ball, and in the complex plane the parameter space splits into those parameters for which $K_c$ is connected and those for which it is a Cantor set, the critical orbit deciding the case. In the quaternion algebra the critical orbit governs the **connectedness locus**, by the critical slice theorem of *The Quaternion Mandelbrot Set*; **the connectedness locus of the quaternion family is the rotational hull of the complex Mandelbrot set**, and that article owns the statement. The dichotomy of the connected and the Cantor case is a classical complex statement, quoted per slice and not claimed in four dimensions; what four dimensions define is the set of parameters with a bounded critical orbit. The general theory of the partition of the phase space into a Fatou set and a Julia set, of the normal family of the iterates and of the repelling periodic points is Part IV's, in *The Geometry of the Julia Sets* and *The Julia Sets of a Complex Polynomial*, and is not repeated here.
 
 ## The Symmetries
 
@@ -128,9 +138,11 @@ $$
 
 *Proof.* An inner automorphism fixes $c$ exactly when $u$ commutes with $c$. The centraliser of a real number is the whole algebra, giving $SO(3)$. If $\mathbf c\neq0$ then $c$ generates, with $e_0$, a two-dimensional subalgebra whose commutant is the two-dimensional plane spanned by $e_0$ and $\mathbf c$; the unit quaternions in that commutant form the circle $\{u=\cos t + (\mathbf c/|\mathbf c|)\sin t\}$, whose image in $SO(3)$ is the circle of rotations about the axis $\mathbf c$. $\square$
 
-**Corollary.** For a real parameter $c$ the map $f_c$ commutes with every automorphism; **the filled Julia set $K_c$ and the Julia set $J_c$ are then fully rotationally symmetric about the real axis**, and they are invariant under the conjugation ${}^{\natural}$.
+**Corollary.** For a real parameter $c$ the map $f_c$ commutes with every inner automorphism and with the conjugation; **the filled Julia set $K_c$ and the Julia set $J_c$ are then fully symmetric about the real axis**, their symmetry group acting on the vector subspace being generated by the rotations and the conjugation and equal to the full orthogonal group $O(3)$.
 
 *Proof.* The commutation with all inner automorphisms is the proposition at $\mathbf c=0$. The conjugation is an anti-automorphism and fixes every real number, so $f_c(\tilde q^{\natural})=(f_c(\tilde q))^{\natural}$; an anti-automorphism is a Euclidean isometry of $\mathbb{H}$, so it too carries $K_c$ to itself. $\square$
+
+**Remark (the orthogonal group).** An anti-automorphism $\rho$ of $\mathbb{H}$ reverses products, $\rho(\tilde a\tilde b)=\rho(\tilde b)\rho(\tilde a)$, and therefore still satisfies $\rho(\tilde q^2)=\rho(\tilde q)^2$; hence it commutes with $f_c$ whenever it fixes $c$, exactly as an automorphism does. The full symmetry of $K_c$ is thus generated by the automorphisms and the anti-automorphisms that fix $c$, and it is $O(3)$ for a real parameter and $O(2)$ for a non-real one, the rotations of the proposition being the identity component. The article uses the automorphism group for the equivariance because it acts on the parameter, and it records the reflections here because they are used in the slice theory of *The Slices of the Quaternion Julia Sets*.
 
 **Remark (the sphere of the imaginary units).** The unit imaginary quaternions form the sphere $S^2$, and conjugation by the unit sphere $S^3$ acts on it by the rotation group, with kernel $\{\pm1\}$. **The symmetry group of the family is therefore the group $SO(3)$ of the sphere of the imaginary units**, realised by the double cover $S^3 \to SO(3)$; for a general parameter the effective symmetry of one member is the stabiliser $G_c$, and only the real parameters enjoy the full group. The phrase "the sphere of the imaginary units" records the double cover and not a three-sphere of symmetries: the acting object is $S^3$, and it acts on $S^2$ through its quotient.
 
@@ -194,7 +206,7 @@ so it enters the two-cycle $\{-e_0+e_1,-e_1\}$ and $c=e_1$ lies in the connected
 
 ## Summary
 
-The quaternion quadratic map is $f_c(\tilde q)=\tilde q^2+c$, a degree-two polynomial map of $\mathbb{R}^4$ whose differential at $\tilde q$ is the sum of the left and right multiplications and whose unique critical point is $0$. Its critical orbit is the orbit of $0$. A point whose modulus reaches $R(c)=1+|c|$ escapes, by the multiplicativity of the quaternion norm and the triangle inequality, so the filled Julia set $K_c$ is the compact set of points whose orbit never leaves the closed ball of radius $R(c)$, and the Julia set is $J_c=\partial K_c$. Both are nonempty and compact, and $J_c=K_c$ when $K_c$ has empty interior.
+The quaternion quadratic map is $f_c(\tilde q)=\tilde q^2+c$, a degree-two polynomial map of $\mathbb{R}^4$ whose differential at $\tilde q$ is the sum of the left and right multiplications, singular exactly on the hyperplane of the pure vectors and with determinant $16q_0^2|\tilde q|^2$, and whose critical orbit is the orbit of the point $0$. A point whose modulus reaches $R(c)=1+|c|$ escapes, by the multiplicativity of the quaternion norm and the triangle inequality, so the filled Julia set $K_c$ is the compact set of points whose orbit never leaves the closed ball of radius $R(c)$, and the Julia set is $J_c=\partial K_c$. Both are nonempty and compact, and $J_c=K_c$ when $K_c$ has empty interior.
 
 The automorphism group of $\mathbb{H}$ is the inner automorphism group $SO(3)=S^3/\{\pm1\}$, and the family is equivariant, $f_{\operatorname{Ad}_u c}\circ\operatorname{Ad}_u=\operatorname{Ad}_u\circ f_c$, so the Julia set depends on $c$ only through its rotational orbit. The stabiliser of $c$ is the whole group for a real parameter and the circle of rotations about the axis $\mathbf c$ otherwise; for a real parameter the map commutes with every automorphism and with the conjugation, and $J_c$ is fully rotationally symmetric. Every unit imaginary quaternion $\nu$ spans with $e_0$ a plane $\mathbb{C}_\nu$ isomorphic to $\mathbb{C}$; the plane $\mathbb{C}_c$ of the parameter is invariant and carries the whole critical orbit; and for a real parameter the quaternion Julia set is the rotational hull of the ordinary complex Julia set, the general recovery from a slice being the theorem of *The Slices of the Quaternion Julia Sets*. The escape radius and the Green's function are the subject of *The Escape Radius and the Green's Function for Quaternions*; the connectedness locus is that of *The Quaternion Mandelbrot Set*; and the dimension is that of *The Dimension of the Quaternion Julia Sets*. The general theory of the Fatou and Julia sets is Part IV's, in *The Geometry of the Julia Sets*.
 

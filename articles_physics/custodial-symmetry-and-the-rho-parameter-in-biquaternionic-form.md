@@ -119,7 +119,7 @@ $$
 \tilde H\tilde H^{\natural} = \left(h_0^2+h_1^2+h_2^2+h_3^2\right)e_0 ,
 $$
 
-or equivalently $\mathrm{Sc}(\tilde H^{*}\tilde H)$, which the two-sided action preserves because $\mathrm{Sc}(g_L\tilde H g_R^{-1}\overline{g_L\tilde H g_R^{-1}}) = \mathrm{Sc}(\tilde H\tilde H^{\natural})$: the scalar part of a product is invariant under a similarity, and the two outer factors cancel.
+or equivalently $\mathrm{Sc}(\tilde H^{*}\tilde H)$, which the two-sided action preserves because $\mathrm{Sc}(g_L\tilde H g_R^{-1}\overline{g_L\tilde H g_R^{-1}}) = \mathrm{Sc}(\tilde H\tilde H^{\natural}) = \langle\tilde H,\tilde H\rangle_{\natural}$: the scalar part of a product is invariant under a similarity, and the two outer factors cancel.
 
 **The left action and the sector structure.** The left multiplication by $g_L$ and the right multiplication by $g_R^{-1}$ act on the four components of $\tilde H$ as a pair of independent rotations. The left action is the framework's non-abelian gauge action of the companion articles, and the right action is the one that the framework's four-component objects have always carried: it is the same two-sided multiplication that the rotor conjugation of the Lorentz and gauge articles uses. The **diagonal** $g_L = g_R = g$ is the conjugation
 
@@ -274,6 +274,9 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $T, T_3, Y$ | Isospin, third component, hypercharge (standard; not framework objects) |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric for index contractions |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

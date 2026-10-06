@@ -14,7 +14,7 @@ That much is already recorded, in one line, by the companion article *The Empiri
 
 The article is a **limitation statement**, of the same species as the companion articles *Conventions in the Biquaternion Universe* and *The Empirical Status of the Biquaternion Framework*: its content is what the algebra supplies and what it does not. It adds no physics, and it derives no constant. It is written because the corpus makes the dimensional remarks piecemeal — the Stern–Gerlach article records that $\hbar$ is supplied from outside, the electron article that the mass and the charge are inserted, the $g-2$ article that the algebra fixes the ratio and not the scale — and those remarks have no common home. The home is here.
 
-The conventions are those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; the scalar imaginary is $i$, central, with $i^2=-1$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$ (imaginary scalar, real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$ (real scalar, imaginary vector), the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, the trace is normalized by $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The material coordinate is $\tilde{Q}=ict\,e_0+\mathbf{x}$, the biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, and the series d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; $\hbar=h/2\pi$ is the reduced Planck constant, $h$ the Planck constant, and $k_B$ the Boltzmann constant.
+The conventions are those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; the scalar imaginary is $i$, central, with $i^2=-1$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$ (imaginary scalar, real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$ (real scalar, imaginary vector), the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, the trace is normalized by $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. The material coordinate is $\tilde{Q}=ict\,e_0+\mathbf{x}$, the biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, and the series d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; $\hbar=h/2\pi$ is the reduced Planck constant, $h$ the Planck constant, and $k_B$ the Boltzmann constant.
 
 The companion articles used below are:
 
@@ -60,7 +60,7 @@ There is an exception worth noting, because it is the only place where the algeb
 The biquaternion norm of a general element is
 
 $$
-N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=Q_0^2+Q_1^2+Q_2^2+Q_3^2 .
+N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=Q_0^2+Q_1^2+Q_2^2+Q_3^2 .
 $$
 
 This is a sum of four squares. It is a single scalar, and it is meaningful as a sum only if its four terms carry the same unit. It follows that **the four coefficients of a single element of $\mathbb{B}$ must share one unit**, whatever that unit is. The constraint is not imposed from outside and it is not a convention of the series; it is a property of the algebra's quadratic form. It applies to every element of the algebra that carries a physical interpretation, and it applies in both sectors.
@@ -343,7 +343,7 @@ The framework's guideline follows from the dichotomy: a dimensionful constant is
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational (real scalar, imaginary vector) and material (imaginary scalar, real vector) sectors |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ | Center; real-quaternion subspace |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; a sum of four commensurable squares |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; a sum of four commensurable squares |
 | $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Material coordinate; the temporal coefficient is a length |
 | $\tilde{\nabla}=e_0\partial_{ict}+\nabla$ | Biquaternionic gradient; coefficients of inverse length |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ | d'Alembertian |
@@ -359,12 +359,13 @@ The framework's guideline follows from the dichotomy: a dimensionful constant is
 | $\tilde{S}_3=\tfrac{\hbar}{2}ie_3$ | Spin observable; algebra supplies $ie_3$ and $\tfrac12$, not $\hbar$ |
 | $S/\hbar$ | Dimensionless phase; the classical-limit parameter |
 | $\beta=\hbar/(k_BT)$ | Thermal strip width; thermal circle circumference $\hbar c/(k_BT)$ |
-| $\mathrm{Tr}(e_0)=2$, $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace normalization and trace formula; the factor $2$ is a pure number |
+| $\mathrm{Tr}(e_0)=2$, $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace normalization and trace formula; the factor $2$ is a pure number |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium and vacuum speeds of light; $c$ is a defining constant of the SI |
 | $\hbar=h/2\pi$ | Reduced Planck constant; the unit that makes the phase $S/\hbar$ dimensionless |
 | $h=2\pi\hbar$ | Planck constant; the quantum of action, where $\hbar$ is the quantum of angular momentum |
 | $m$, $e$, $\alpha=e^2/(4\pi\epsilon_0\hbar c)$ | Imported mass, charge and dimensionless coupling; $e$ is a defining constant of the SI, $m$ and $\alpha$ are measured |
 | $k_B$, $G$ | Imported: energy–temperature, and stress–energy–curvature; $k_B$ is a defining constant of the SI, $G$ is measured |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

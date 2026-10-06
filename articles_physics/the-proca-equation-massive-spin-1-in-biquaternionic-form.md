@@ -357,6 +357,9 @@ The plane-wave solutions carry a real spatial amplitude and a time component fix
 | $\omega^2 = c^2\mathbf{k}^2 + m^2c^4/\hbar^2$ | Massive dispersion relation |
 | $\mathbf{a}$, $A_0$ | Spatial amplitude (three real components) and time component fixed by Lorenz |
 | $\star\tilde{F} = -i\tilde{F}$ | Hodge dual on the field strength (companion article) |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

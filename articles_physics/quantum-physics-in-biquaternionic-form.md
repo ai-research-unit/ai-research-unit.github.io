@@ -43,7 +43,7 @@ $$
 **Biquaternion norm.** The biquaternion norm of $\mathbb{B}$ restricts to a real quadratic form of signature $(1,3)$ on $\mathbb{M}_+$:
 
 $$
-N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\mathbf{h}|^2) e_0.
+N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\mathbf{h}|^2) e_0.
 $$
 
 This is the form whose vanishing defines the light cone in $\mathbb{M}_+$; the nonzero elements on the cone are the zero divisors of $\mathbb{B}$ that lie in $\mathbb{M}_+$.
@@ -66,7 +66,7 @@ $$
 N(\tilde{H}) = h_0^2 - |\mathbf{h}|^2,
 $$
 
-of signature $(1,3)$. It is the Lorentzian quadratic form whose future light cone defines the state space, and it is the diagonal of the bilinear form $B$ below, $N(\tilde{H}) = B(\tilde{H},\tilde{H})$. It is a quadratic form; it is not a third bilinear form.
+of signature $(1,3)$. It is the Lorentzian quadratic form whose future light cone defines the state space, and it is the diagonal of the bilinear form $B$ below, $N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = B(\tilde{H},\tilde{H})$. It is a quadratic form; it is not a third bilinear form.
 
 **The polarization of the biquaternion norm.** The bilinear form associated with the biquaternion norm is obtained by symmetrizing the product $\tilde{H}\tilde{K}^{\natural}$:
 
@@ -542,7 +542,7 @@ $$
 
 since the left-hand side is $\mathrm{Tr}\big((\tilde{\Lambda}^{*}\tilde{\Lambda})\tilde{K}(\tilde{\Lambda}^{*}\tilde{\Lambda})\tilde{H}\big)$, and the condition on $\tilde{\Lambda}^{*}\tilde{\Lambda}$ is the unitarity condition. A boost fails it.
 
-The **biquaternion norm** $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, and with it the interval on $\mathbb{M}_-$, is invariant under the whole rotor group, by multiplicativity of the biquaternion norm together with $N(\tilde{\Lambda}^{*}) = \overline{N(\tilde{\Lambda})} = 1$:
+The **biquaternion norm** $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and with it the interval on $\mathbb{M}_-$, is invariant under the whole rotor group, by multiplicativity of the biquaternion norm together with $N(\tilde{\Lambda}^{*}) = \overline{N(\tilde{\Lambda})} = 1$:
 
 $$
 N\!\left(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\right) = N(\tilde{\Lambda})\,N(\tilde{Q})\,N(\tilde{\Lambda}^{*}) = N(\tilde{Q}), \qquad \tilde{\Lambda} \in SL(2,\mathbb{C}).
@@ -646,7 +646,7 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\tilde\Pi_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ | Idempotent (pure state) |
 | $\mathrm{Tr}(\tilde{H}) = 2 h_0$ | Trace |
 | $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$ | Born rule |
-| $N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\mathbf{h}|^2$ | Biquaternion norm, signature $(1,3)$ |
+| $N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\mathbf{h}|^2$ | Biquaternion norm, signature $(1,3)$ |
 | $B(\tilde{H}, \tilde{K}) = h_0 k_0 - \mathbf{h}\cdot\mathbf{k}$ | Polarization of the biquaternion norm |
 | $[\tilde{H}, \tilde{K}] = -2(\mathbf{h}\times\mathbf{k})$ | Commutator |
 | $\tilde{\rho}\mapsto\tilde{P}\tilde{\rho}\tilde{P}$ | Projective measurement |
@@ -655,6 +655,8 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, $\tilde{\Lambda}$ invertible | Conjugation; quantum if $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_0$ (group $U(2)$), Lorentz if $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ (group $SL(2,\mathbb{C})$) |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\mathbf{r}|^2)$ | Purity |
 | $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(|\mathbf{r}|^2-1)e_0$ | Deviation from idempotency |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

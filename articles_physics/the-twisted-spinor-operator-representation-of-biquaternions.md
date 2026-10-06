@@ -27,7 +27,7 @@ which is the action on the **material sector** $\mathbb{M}_-$, where the four-ve
 
 Three claims organize the article. First, the general operator's module is the spinor module of the norm-one group **twisted** by a one-dimensional representation of the scaling: the scale and the phase do not change the module, they change its **weight**, and the four polar factors map onto the operator data term by term. Second, the correspondence fails on exactly one set — the null cone — and this is the condition of existence: the twisted spinor representation is an operator description of the polar word, so it is available precisely where the polar word is, that is, for $N(\tilde{Q})\neq0$ and nowhere else. Third, the norm-one slice, where $r=1$ and $\alpha=0$, is the Lorentz group: it is the untwisted case, and it is the only case in which the sandwich is an isometry.
 
-**Conventions.** The conventions of *Conventions in the Biquaternion Universe* are used throughout. The quaternion basis is $e_0=1,e_1,e_2,e_3$, with $e_k^2=-e_0$ and $e_1e_2=e_3$; the scalar imaginary is $i$, commuting with the quaternion units. The algebra isomorphism is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $\Phi(e_k)=-i\sigma_k$ and $\Phi(i)=iI_2$, and the biquaternion norm is the determinant, $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\det\Phi(\tilde{Q})$. The **material sector** is the anti-Hermitian subspace $\mathbb{M}_-$ and the **informational sector** is the Hermitian subspace $\mathbb{M}_+$ (*The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*); the group of units is $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$ and the group of unit-norm elements is $\mathbb{B}^{\times}_1=\{N=1\}\cong SL(2,\mathbb{C})$ (*Biquaternion Norm and Invertibility*, *Biquaternion Lie Algebra*, *Biquaternion Lie Group and Exponential Structure*). The polar form and its four factors are *The Polar Element Representation of Biquaternions* and *The Polar Element Representation in Subspaces*, and are used here without repetition; the module is *The 2×2 Matrix Element Representation of Biquaternions* and *Modules over the Biquaternion Algebra*; the realizations of the algebra are *The 4×4 Regular Matrix Element Representation of Biquaternions* and *The Four-Vector Element Representation of Biquaternions*; and the operator on the algebra, with its laws and its invariants, is *Biquaternion Rotations and Lorentz Transformations* and *The Sandwich Action in Subspaces*.
+**Conventions.** The conventions of *Conventions in the Biquaternion Universe* are used throughout. The quaternion basis is $e_0=1,e_1,e_2,e_3$, with $e_k^2=-e_0$ and $e_1e_2=e_3$; the scalar imaginary is $i$, commuting with the quaternion units. The algebra isomorphism is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $\Phi(e_k)=-i\sigma_k$ and $\Phi(i)=iI_2$, and the biquaternion norm is the determinant, $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\Phi(\tilde{Q})$. The **material sector** is the anti-Hermitian subspace $\mathbb{M}_-$ and the **informational sector** is the Hermitian subspace $\mathbb{M}_+$ (*The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*); the group of units is $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$ and the group of unit-norm elements is $\mathbb{B}^{\times}_1=\{N=1\}\cong SL(2,\mathbb{C})$ (*Biquaternion Norm and Invertibility*, *Biquaternion Lie Algebra*, *Biquaternion Lie Group and Exponential Structure*). The polar form and its four factors are *The Polar Element Representation of Biquaternions* and *The Polar Element Representation in Subspaces*, and are used here without repetition; the module is *The 2×2 Matrix Element Representation of Biquaternions* and *Modules over the Biquaternion Algebra*; the realizations of the algebra are *The 4×4 Regular Matrix Element Representation of Biquaternions* and *The Four-Vector Element Representation of Biquaternions*; and the operator on the algebra, with its laws and its invariants, is *Biquaternion Rotations and Lorentz Transformations* and *The Sandwich Action in Subspaces*.
 
 ## The Operator Version of the Polar Element Representation
 
@@ -135,7 +135,7 @@ $$
 The scale enters **twice**, once from $\tilde{Q}$ and once from $\tilde{Q}^{*}$, and the two copies multiply because the scale is central: the sandwich carries $r^{2}$ where the operator carries $r$. The effect is graded: on lengths the factor is $r^{2}$, on the biquaternion norm it is $r^{4}$, since the norm is quadratic. The polar statement is the same one read backwards,
 
 $$
-N\bigl(H_{\tilde{Q}}(\tilde R)\bigr)=\lvert N(\tilde{Q})\rvert^{2}N(\tilde R)=\bigl(r^{2}\bigr)^{2}N(\tilde R),
+N\bigl(H_{\tilde{Q}}(\tilde R)\bigr)=\lvert N(\tilde{Q})\rvert^{2}N(\tilde R) = \langle\tilde R,\tilde R\rangle_{\natural}=\bigl(r^{2}\bigr)^{2}N(\tilde R),
 $$
 
 which is the scaling already recorded in the polar article: the interval of the material sector is dilated by the square of the scale, and the length by the scale. And the phase, which is the other central factor, does the opposite of the scale: it appears once on the module and **never** in the sandwich, since $e^{i\alpha}$ and $e^{-i\alpha}$ are inverse and commute past everything. A central phase therefore changes the module and leaves the material sector untouched.
@@ -278,7 +278,7 @@ The twisted labels are $(j,j')_{(a,b)}$, with the character $\chi_{a,b}(z)=z^{a}
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $\tilde{Q}=r e^{i\alpha}B\hat{q}$ | Polar form: scale, phase, boost, rotor |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\det\Phi(\tilde{Q})$ | Biquaternion norm |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\Phi(\tilde{Q})$ | Biquaternion norm |
 | $r$, $e^{i\alpha}$ | Scale and central phase, both central |
 | $B$, $\hat{q}$ | Hermitian positive boost, unit real quaternion rotor |
 | $\rho=\sqrt{N(\tilde{Q})}=re^{i\alpha}$ | Complex modulus; the twist parameter |
@@ -292,12 +292,14 @@ The twisted labels are $(j,j')_{(a,b)}$, with the character $\chi_{a,b}(z)=z^{a}
 | $(j,j')_{(a,b)}$ | Twisted label; exists when $a-b\equiv 2j+2j'\pmod 2$ |
 | $H_{\tilde{Q}}(\tilde R)=\tilde{Q}\tilde R\tilde{Q}^{*}$ | Hermitian sandwich, the operator on the material sector |
 | $H_{\tilde{Q}}=r^{2}\tilde{\Lambda}\tilde R\tilde{\Lambda}^{*}$ | Factorization: dilatation times Lorentz |
-| $N(H_{\tilde{Q}}(\tilde R))=\lvert N(\tilde{Q})\rvert^{2}N(\tilde R)=r^{4}N(\tilde R)$ | Interval dilated by the square of the scale |
+| $N(H_{\tilde{Q}}(\tilde R))=\lvert N(\tilde{Q})\rvert^{2}N(\tilde R) = \langle\tilde R,\tilde R\rangle_{\natural}=r^{4}N(\tilde R)$ | Interval dilated by the square of the scale |
 | $\mathrm{diag}(e^{\psi/2},e^{-\psi/2})\mapsto\mathrm{diag}(e^{\psi},e^{-\psi})$ | The doubled rapidity on the boost axis |
 | $\mathbb{R}_{>0}\times SO^{+}(1,3)$ | Image of the sandwich: dilatations and Lorentz |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material sector (anti-Hermitian) and informational sector (Hermitian) |
 | $C_{\pm}=\sum_k(N_k^{\pm})^2$ | Chiral Casimirs, $(0,-3)$ vs $(-3,0)$ |
 | $\operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j'}(\bar{S})$ | Carrier of the higher twisted modules |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

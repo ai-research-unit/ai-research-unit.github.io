@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Unitarity is the statement that the norm of a state does not change in time. In the biquaternion framework there are two norms on the algebra, and they behave differently: the **Hermitian norm** $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$, which is positive definite and is the norm that Born probabilities are built from, and the **biquaternion norm** $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$, which is central-valued and indefinite. This article asks, for each of them, under exactly which elements of $\mathbb{B}$ the conjugation action
+Unitarity is the statement that the norm of a state does not change in time. In the biquaternion framework there are two norms on the algebra, and they behave differently: the **Hermitian norm** $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$, which is positive definite and is the norm that Born probabilities are built from, and the **biquaternion norm** $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, which is central-valued and indefinite. This article asks, for each of them, under exactly which elements of $\mathbb{B}$ the conjugation action
 $$
 \Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}
 $$
@@ -32,7 +32,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}\cong\mathbb{C}$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$, the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$, and on $\mathbb{M}_+$ with $\tilde{H}=h_0e_0+i\mathbf{h}$ one has $N(\tilde{H})=(h_0^2-|\mathbf{h}|^2)e_0$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A root of $-e_0$ is an element $\xi$ with $\xi^2=-e_0$. The roots that can serve as the unit of a norm-preserving dynamics are the **anti-Hermitian** ones, $\xi^{*}=-\xi$; among these the central roots are $\pm i$ and the rest are the unit pure real quaternions. A general root of $-e_0$ need not be anti-Hermitian, as $\xi=e_1+ie_2-e_3$ shows, and the condition of norm preservation at $\tilde{H}=e_0$ is what forces $\xi^{*}=-\xi$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
+The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}\cong\mathbb{C}$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$, the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and on $\mathbb{M}_+$ with $\tilde{H}=h_0e_0+i\mathbf{h}$ one has $N(\tilde{H})=(h_0^2-|\mathbf{h}|^2)e_0$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A root of $-e_0$ is an element $\xi$ with $\xi^2=-e_0$. The roots that can serve as the unit of a norm-preserving dynamics are the **anti-Hermitian** ones, $\xi^{*}=-\xi$; among these the central roots are $\pm i$ and the rest are the unit pure real quaternions. A general root of $-e_0$ need not be anti-Hermitian, as $\xi=e_1+ie_2-e_3$ shows, and the condition of norm preservation at $\tilde{H}=e_0$ is what forces $\xi^{*}=-\xi$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
 
 ## The Two Norms
 
@@ -53,7 +53,7 @@ This form is positive definite of signature $(8,0)$ on the real eight-dimensiona
 
 **The biquaternion norm.** The second object is
 $$
-N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\bigl(x_0^2+x_1^2+x_2^2+x_3^2\bigr)e_0\in\mathbb{C}_{\mathbb{B}},
+N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\bigl(x_0^2+x_1^2+x_2^2+x_3^2\bigr)e_0\in\mathbb{C}_{\mathbb{B}},
 $$
 a quadratic form with values in the **centre**, not in $\mathbb{R}$. Its coefficient is the determinant of the matrix model, $N(\tilde{Q})e_0=\det M(\tilde{Q})\,e_0$, so $N$ is multiplicative,
 $$
@@ -185,7 +185,7 @@ By Theorem 1 these are exactly the elements for which $\Gamma_{\tilde{U}}$ prese
 
 **The unit-norm elements.** Define
 $$
-SL(2,\mathbb{C})=\bigl\{\tilde{U}\in\mathbb{B}:\ N(\tilde{U})=e_0\bigr\}=\bigl\{\tilde{U}:\ \det M(\tilde{U})=1\bigr\},
+SL(2,\mathbb{C})=\bigl\{\tilde{U}\in\mathbb{B}:\ N(\tilde{U}) = \langle\tilde{U},\tilde{U}\rangle_{\natural}=e_0\bigr\}=\bigl\{\tilde{U}:\ \det M(\tilde{U})=1\bigr\},
 $$
 the elements of unit norm. By Theorem 2 these preserve the biquaternion norm, with the scaling factor exactly $1$; they need not be unitary, and they need not be norm-preserving for the Hermitian norm. This is the group that acts on the biquaternion norm, and it is the group that the companion articles on the algebra's real structure identify with the determinant-preserving transformations.
 
@@ -225,7 +225,7 @@ $$
 \qquad
 \Gamma_{\tilde{U}}(\tilde{Q})=\lambda_0^2\tilde{Q}.
 $$
-The biquaternion norm scales as $N(\Gamma_{\tilde{U}}\tilde{Q})=\lambda_0^4N(\tilde{Q})=\bigl|\lambda_0^2\bigr|^2N(\tilde{Q})$, in agreement with Theorem 2 with $|N(\tilde{U})|=|\lambda_0^2|=\lambda_0^2$. The Hermitian norm scales by $\lambda_0^4$ and is not preserved. This example shows that *centrality of the defect is not enough for unitarity*: it removes the operator-valued part of the anomaly and leaves a scalar, and the scalar must be normalized to one. It is the precise counterpart, in the multiplicative direction, of the statement that a central root of $-e_0$ must be normalized to be $\pm i$.
+The biquaternion norm scales as $N(\Gamma_{\tilde{U}}\tilde{Q})=\lambda_0^4N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\bigl|\lambda_0^2\bigr|^2N(\tilde{Q})$, in agreement with Theorem 2 with $|N(\tilde{U})|=|\lambda_0^2|=\lambda_0^2$. The Hermitian norm scales by $\lambda_0^4$ and is not preserved. This example shows that *centrality of the defect is not enough for unitarity*: it removes the operator-valued part of the anomaly and leaves a scalar, and the scalar must be normalized to one. It is the precise counterpart, in the multiplicative direction, of the statement that a central root of $-e_0$ must be normalized to be $\pm i$.
 
 **Example 3: a non-central root of $-e_0$.** Take $J=e_3$, so $J^2=-e_0$, and take the Hermitian generator $\tilde{H}=i e_1$ (i.e. $\mathbf{h}=(1,0,0)$). Then, with the flow generator $G=-\hbar^{-1}J\tilde{H}$,
 $$
@@ -303,7 +303,7 @@ Third, the **forced centrality of the unit in the dynamics** is algebraic in a w
 
 ## Summary
 
-The biquaternion algebra carries two quadratic forms, and unambiguity about which one is being preserved is the whole content of the norm-preservation theorem. The Hermitian norm $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$ is real, positive definite, and preserved by the conjugation action $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ exactly when $\tilde{U}$ is unitary; that is Theorem 1, and it is the framework's statement of unitarity. The biquaternion norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ is central-valued and indefinite, and under the same action it scales by a **central** scalar,
+The biquaternion algebra carries two quadratic forms, and unambiguity about which one is being preserved is the whole content of the norm-preservation theorem. The Hermitian norm $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$ is real, positive definite, and preserved by the conjugation action $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ exactly when $\tilde{U}$ is unitary; that is Theorem 1, and it is the framework's statement of unitarity. The biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ is central-valued and indefinite, and under the same action it scales by a **central** scalar,
 
 $$
 N\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)=\bigl|N(\tilde{U})\bigr|^2N(\tilde{Q}),
@@ -324,7 +324,7 @@ The centrality theme is carried by the defect $\tilde{Z}=\tilde{U}^{*}\tilde{U}$
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $\mathbb{C}_{\mathbb{B}}=Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, centre-valued |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, centre-valued |
 | $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$ | Hermitian (Hilbert–Schmidt) pairing |
 | $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Conjugation action |
 | $\tilde{Z}=\tilde{U}^{*}\tilde{U}$ | Defect of the action |
@@ -334,6 +334,8 @@ The centrality theme is carried by the defect $\tilde{Z}=\tilde{U}^{*}\tilde{U}$
 | $J$ | Root of $-e_0$, $J^2=-e_0$ |
 | $G=-\hbar^{-1}J\tilde{H}$ | Generator of the state-vector flow |
 | $M(\tilde{Q})$ | $2\times2$ matrix model, $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, $\mathbb{C}$-linear |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

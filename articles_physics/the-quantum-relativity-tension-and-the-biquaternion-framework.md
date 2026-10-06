@@ -1,0 +1,255 @@
+# __The Quantum–Relativity Tension and the Biquaternion Framework__
+
+## Introduction
+
+Quantum mechanics and relativity are the two foundational theories of the twentieth century, and they do not sit comfortably together. Each is extraordinarily successful in its own domain. Neither, in its standard formulation, contains the other. The difficulties that appear when the two are combined are not technical details of calculation; they are structural, and they concern what the basic objects of the two theories are.
+
+This article states the tension and then asks what the biquaternion framework brings to it. It is written as a list of **ideas**, not a list of results. For each difficulty set out in the tension, it gives the framework's idea where there is one, the algebraic mechanism that carries it, and the edge at which the idea stops short of a resolution.
+
+The claim is not that the tension is resolved. The claim is that the framework offers **one common language** for the two theories, and that in that one language several of the difficulties turn from compromises between two formalisms into properties of a single algebraic object. That is a smaller claim than a solution and a larger one than a restatement, and the article tries to keep the two apart throughout.
+
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and scalar imaginary $i$ with $i^2=-1$ commuting with every $e_k$. It splits into the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The material sector carries the coordinates $(ict,x,y,z)$, and the informational sector carries $(ct',ix',iy',iz')$. The trace is $\mathrm{Tr}(\tilde{H})=2\,\mathrm{Sc}(\tilde{H})$. The speed of light is the local $c=1/\sqrt{\epsilon\mu}$, with $c_0$ its vacuum value. The conventions are those of *Conventions in the Biquaternion Universe*; the two sectors are developed in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
+
+## The Tension
+
+Seven structural difficulties are usually distinguished. They are stated here in their own terms, with the framework out of view, each followed by what an answer would have to deliver.
+
+**1. Time is a parameter in quantum mechanics and a coordinate in relativity.** In the Schrödinger equation the time $t$ is an external parameter: the state evolves as a function of it, and it has no spectral decomposition. In relativity the time is one coordinate among four, mixed with the space coordinates by the Lorentz transformation and read from the interval. *An answer must deliver a structure in which the time is not an external parameter.*
+
+**2. The Born rule is an axiom.** The probability interpretation of the wave function is postulated, not derived. The rule $p=|\psi|^2$ sits inside the formalism as an independent ingredient; nothing in the structure of a Hilbert space singles it out. *An answer must deliver the probability pairing from the structure rather than beside it.*
+
+**3. Spin–statistics is a theorem that needs quantum field theory.** The connection between spin and statistics cannot be derived in non-relativistic quantum mechanics. It requires the relativistic framework, together with locality and the positivity of energy, and it is proved as a theorem of quantum field theory. *An answer must deliver one framework that contains the relativistic field and the spin representation at once.*
+
+**4. Measurement lies outside the formalism.** The unitary evolution is smooth and deterministic; the collapse is discontinuous and probabilistic. No single equation contains both, and no rule inside the formalism says when each applies. *An answer must deliver one operation that contains the reversible and the irreversible process.*
+
+**5. Quantisation is a recipe, not a derivation.** There is no unique passage from a classical theory to its quantum version. Canonical quantisation, path-integral quantisation and deformation quantisation differ in their starting points, and the choice among them is not derived from first principles. *An answer must deliver a canonical passage, or show that none exists.*
+
+**6. The oscillatory path integral needs a trick.** The integral over histories with the weight $e^{iS/\hbar}$ does not converge. The standard device that makes it manageable is the Wick rotation, the analytic continuation to imaginary time, which is an additional step rather than a consequence of the sum over paths. *An answer must deliver a weight or a measure that is natural to the framework.*
+
+**7. Non-locality and causality are in tension.** Entanglement correlations appear non-local, while relativistic causality forbids superluminal signalling. Reconciling the two requires care, and the reconciliation is a statement about what the theory may and may not be read as saying. *An answer must deliver a common structure for the light cone and for the correlation.*
+
+Each of these has been addressed in various ways. None is settled. The list is the measure against which the framework's ideas are to be read below.
+
+## One Algebra for Two Theories
+
+The reason the framework can speak to both theories at once is a structural property of one algebra, and it is worth stating before the ideas, because each idea is an instance of it.
+
+The algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries a small lattice of conjugations, and the reason it can hold both theories is that the maps in it are genuinely different maps, each with its own fixed space and its own form. Two of them are the genuine involutions of the ring: the Hermitian conjugation ${}^{*}$, with $e_k^{*}=-e_k$ and $i^{*}=-i$, and the quaternion conjugation ${\natural}$, with $e_k^{\natural}=-e_k$ and $i^{\natural}=i$. They commute, and their composition is the coefficient conjugation $\bar{\cdot}=\natural\,{}^{*}$, which negates $i$ and fixes the quaternions. A third order-two map, the anti-Hermitian conjugation $\flat=-{}^{*}$, is not an involution of the ring but an order-two map of the underlying real space, and it is the one that singles out the material sector: $\mathbb{M}_-$ is its fixed space and $\mathbb{M}_+$ its anti-fixed space, so $\flat$ fixes the spacetime-carrying sector. From ${}^{*}$ and ${\natural}$ come two forms on the same complex space: the sesquilinear form $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_{\mu}|\tilde{Q}_\mu|^{2}$, real and positive definite, which is the Hilbert structure the Born pairing and the unitary evolution use; and the quaternionic bilinear form $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^{2}$, complex in general and indefinite, whose zero set is the zero-divisor cone and whose value on the material sector is the interval $-c^2t^2+\mathbf{x}^2$. One algebra therefore carries a Lorentzian signature and a positive-definite state space at the same time, and it carries them as the Hermitian and the quaternion faces of the same element.
+
+There is a further structural point, which the complex coefficients buy and which a real signature cannot: because a coefficient is complex, it **carries its own sign**. No direction of the basis has to be labelled timelike or spacelike in advance; the signature appears only when the form is read on a real form. This is why the framework can offer one arena to a theory of an indefinite metric and a theory of a positive-definite state space without choosing between them at the start.
+
+The second half of the structural reason is that **one action form serves both groups**:
+
+$$
+\Gamma_{\tilde{A}}(\tilde{Q})=\tilde{A}\,\tilde{Q}\,\tilde{A}^{*}.
+$$
+
+The relativistic transformations are the unit-norm biquaternions, $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$, the group $SL(2,\mathbb{C})$; the quantum operations are the unitary biquaternions, $\tilde{A}\tilde{A}^{*}=e_0$; the measurement update is the same form with $\tilde{A}$ a Hermitian idempotent. The three cases differ only in which class of element acts. The symmetry group and the operator algebra are therefore not two structures in correspondence; they are two subsets of the invertible elements of one algebra acting by one formula, and their intersection is the rotation group $SU(2)$.
+
+| Object | Relativistic face | Quantum face |
+|---|---|---|
+| Involution | ${}^{\natural}$ (quaternion): the metric | ${}^{*}$ (Hermitian): the Hilbert structure |
+| Form on an element | Quaternionic bilinear $\sum_\mu Q_\mu^{2}$, indefinite | Sesquilinear $\sum_\mu|Q_\mu|^{2}$, positive definite |
+| Distinguished group | Unit norm $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$: $SL(2,\mathbb{C})$ | Unitary $\tilde{A}\tilde{A}^{*}=e_0$: the quantum operations |
+| Distinguished real form | $\mathbb{M}_-$: the four-vectors, interval $-c^2t^2+\mathbf{x}^2$ | $\mathbb{M}_+$: the Bloch ball, $\mathrm{Tr}\tilde{\rho}=1$, $\tilde{\rho}\geq0$ |
+| Action | $\Gamma_{\tilde{\Lambda}}$ on $\mathbb{M}_-$ | $\Gamma_{\tilde{A}}$ on $\mathbb{M}_+$, and $\tilde{A}$ on the spinor module |
+
+This is the common ground, and it is established: it is the content of the foundational articles rather than a proposal. The ideas below are what the common ground buys, and each is stated with the part of it that is a result and the part that is a hope.
+
+## Ideas the Framework Brings
+
+Seven ideas. Six are numbered against one difficulty each — ideas 3 and 4 both against difficulty 1, from its two sides. Idea 2 is ground for the relativistic side of several difficulties rather than an answer to one. Difficulties 5 (quantisation) and 6 (the path-integral weight) have no numbered idea of their own: the framework's relation to them is recorded in the programmes below. The table at the end of the section records the correspondence. Each idea is given as the idea, the mechanism, and the edge.
+
+### 1. Put states and observables in one subspace
+
+**The idea.** Make the objects of the quantum description elements of one four-dimensional real space instead of two different kinds of object.
+
+**The mechanism.** In standard quantum mechanics a state is a positive trace-one operator and an observable is a Hermitian operator; they are different kinds of object, paired by the Born rule. In the framework both are elements of the Hermitian subspace $\mathbb{M}_+$: a state is a positive trace-one element $\tilde{\rho}$, an observable a general Hermitian element $\tilde{H}$, and the pairing is the trace form $\mathrm{Tr}(\tilde{\rho}\tilde{H})=2\,\mathrm{Sc}(\tilde{\rho}\tilde{H})$. A pure state is an idempotent $\tilde\Pi_\pm(\hat{\mathbf{n}})=\tfrac12(e_0\pm i\hat{\mathbf{n}})$ along a unit axis $\hat{\mathbf{n}}$, and a mixed state is a general positive trace-one element $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$; within the positive trace-one class, the two are distinguished by idempotence, and the mixed states fill the interior of the Bloch ball.
+
+**The edge.** What the trace form gives is the probability **formula**: for an idempotent and a state the pairing is $p_\pm=\mathrm{Tr}(\tilde{\Pi}_\pm\tilde{\rho})=\tfrac12(1\pm\hat{\mathbf{n}}\cdot\mathbf{r})$. What it does not give is the identification of those numbers with physical frequencies. The framework relocates the Born rule from a postulate to a property of the pairing; it does not remove the interpretive step. The idea answers difficulty 2 in the structural sense and not in the operational sense, and the separation is stated in *The Born Rule as a Trace Formula — Derivation and Comparison*.
+
+### 2. Let the symmetries and the operators be the same algebra
+
+**The idea.** Do not build a quantum theory and then extend it relativistically. Start from an algebra whose own transformations already are the relativistic ones.
+
+**The mechanism.** The Lorentz group is realised **inside** the algebra, as the unit-norm biquaternions with $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$; the biquaternionic Dirac equation is the classical relativistic spinor equation; and the quantum operations act by the same conjugation with the other normalisation. A relativistic transformation and a quantum operation are the same formula applied with different normalisation conditions, and the spinor module on which the Dirac field lives is the module on which the spin of the qubit lives.
+
+**The edge.** The algebra is relativistic from the start, but the single-qubit formalism is not: its state space is a fixed Bloch ball at $|\mathbf{r}|\leq1$, and a boost moves a state off the trace-one slice. Making the **state space** relativistic, and not only the transformation group, is the open work, and it is the content of *The Relativistic Qubit in Biquaternionic Form* and of the companion quantisation articles.
+
+### 3. Derive the signature from the imaginary unit
+
+**The idea.** Make the Lorentzian signature a consequence of the algebra rather than a postulate about a metric.
+
+**The mechanism.** In the material sector the time coordinate is $ict$. The interval is the quaternion norm of a material element, $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ with $Q_0=ict$, and the single relation $i^2=-1$ turns $\sum_\mu Q_\mu^2$ into $-c^2t^2+\mathbf{x}^2$. The sign that distinguishes time from space is the sign of the square of the algebra's own central imaginary, not an independent assumption about a metric.
+
+**The edge.** The derived signature fixes the arena. It does not by itself settle the problem of time, which is a statement about dynamics and constraints: the Hamiltonian constraint of canonical quantum gravity and the absence of a preferred time are not addressed by making the time coordinate algebraic. Ideas 3 and 4 share difficulty 1 and each answers a different part of it.
+
+### 4. Make the time a coordinate of the algebra
+
+**The idea.** Treat the imaginary character of the time as a structural fact, so that the asymmetry between a parameter and a coordinate has no room to arise.
+
+**The mechanism.** The two sectors are exchanged by multiplication by the central $i$: $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The time is therefore not an external label attached to a state; it is one of the four coordinates of the material sector on the same footing as the three space coordinates, and the same central element that generates the exchange is the one that generates the sign of the interval. This is the sense in which the framework **has no external parameter**: every quantity that transforms is a coordinate of an element, and there is no slot outside the algebra for a parametric time to occupy.
+
+**The edge.** This is a statement about the kinematic structure, and it is not yet a dynamics. What is missing is the same object that difficulty 1 names: a formulation in which the constraint structure carries the content, and in which the Schrödinger equation is recovered as a sector equation rather than assumed. *The Schrödinger Equation in Biquaternionic Form* and *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form* give the kinematic pieces; the constraint analysis is not written.
+
+### 5. Read the two evolutions as two classes of acting element
+
+**The idea.** Stop treating the unitary evolution and the measurement update as two different kinds of process, and treat them as one process with two kinds of actor.
+
+**The mechanism.** Both are the operation form $\Gamma_{\tilde{A}}(\tilde{Q})=\tilde{A}\tilde{Q}\tilde{A}^{*}$. For the reversible evolution $\tilde{A}$ is unitary, $\tilde{A}\tilde{A}^{*}=e_0$; for the measurement update $\tilde{A}$ is a Hermitian idempotent, $\tilde{A}^2=\tilde{A}=\tilde{A}^{*}$. The two classes are distinguished algebraically — a unitary element preserves the biquaternion norm, since $N(\tilde{A}\tilde{Q}\tilde{A}^{*})=|N(\tilde{A})|^{2}N(\tilde{Q})$ and $|N(\tilde{A})|=1$, while an idempotent projection does not, since $\tilde{\Pi}\tilde{\Pi}^{\natural}=0$ gives $N(\tilde{\Pi}\tilde{Q}\tilde{\Pi})=\tilde{\Pi}\tilde{Q}\,\tilde{\Pi}\tilde{\Pi}^{\natural}\,\tilde{Q}^{\natural}\tilde{\Pi}^{\natural}=0$ — so the reversible–irreversible distinction is a distinction between elements of one algebra rather than between two postulates. A third element of the same reading is available from the norm: for a Hermitian idempotent the quaternion conjugation returns the complementary idempotent, $\tilde\Pi^{\natural}=e_0-\tilde\Pi$, so the biquaternion norm vanishes,
+
+$$
+N(\tilde\Pi)=\tilde\Pi\tilde\Pi^{\natural}=\tilde\Pi\,(e_0-\tilde\Pi)=0,
+$$
+
+and the idempotents lie on the algebra's **zero-divisor cone**, whose geometry Idea 7 develops.
+
+**The edge.** The algebra supplies the operation and the classes; it does not say which element acts. The selection of the idempotent is the measurement problem restated exactly, not solved, and the restatement is stated in *The Measurement Problem in Algebraic Form*. What the reading does supply is a place to look: the trigger, if there is one, must be a rule that promotes an idempotent out of the class of acting elements, and it must be a rule about the algebra rather than about an observer.
+
+### 6. Read the two statistics from the two classes of representation
+
+**The idea.** Look for spin–statistics in the representation theory of the one algebra rather than in the axioms of a field theory.
+
+**The mechanism.** The spin half is exact and algebraic: the rotor through $2\pi$ about any axis is $-e_0$, the half-integer-spin representations live on the spinor module, where $-e_0$ acts as $-\mathrm{id}$, and the integer-spin representations live on the material sector, where it acts as $+\mathrm{id}$. Single-valuedness and double-valuedness are therefore properties of which module an object inhabits, decided by the algebra. In the single-mode truncation the algebra carries exactly **one** fermionic mode, whose ladder operators are the spin ladder operators, and it carries no bosonic mode, because a canonical commutator would have to be central, and a central traceless element of $\mathbb{B}$ is zero: the trace of a commutator vanishes while $\mathrm{Tr}(e_0)=2$.
+
+**The edge.** The spin half is algebraic; the **statistics** half — which bracket is imposed, the anticommutator or the commutator — is transcribed from field theory and not forced by the algebra. The one-mode statement is finite-dimensional, and the field algebra is infinite-dimensional, where both the exterior and the symmetric algebra are available; that the algebra's finite content is exactly the fermionic one is suggestive and not a derivation. *The Spin–Statistics Theorem in Biquaternionic Form* exhibits the theorem in biquaternionic form and states the gap. The idea is the most promising place for a genuinely new result, precisely because it is where the algebra might do work that the field-theoretic axioms do.
+
+### 7. Let the correlation and the light cone share one cone
+
+**The idea.** Give entanglement and causality one algebraic home instead of treating one as a correlation and the other as a constraint.
+
+**The mechanism.** The light cone is the zero-divisor cone of the algebra: the elements $\tilde{Q}\neq0$ with $\tilde{Q}\tilde{Q}^{\natural}=0$ are exactly the null directions of the quaternionic bilinear form, and they form a complex cone that is closed under the multiplication of the algebra and invariant under the Lorentz rotors. Its material real slice is the light cone; the trace-one slice of its informational real slice is the Bloch sphere. Causality, the null structure and the quantum state therefore live on one algebraic locus rather than on three separate ones, and the same cone is the one whose holonomy is the Pancharatnam phase of the polarization sphere. A second and independent idea of the framework bears on the same difficulty: the material–informational split is a **superselection structure of a real form**, so the relative phase between the two sectors is not observable, and the framework says algebraically which coherences a change of frame can and cannot carry.
+
+**The edge.** Sharing a cone is not the same as deriving the bound. The framework gives the light cone and the correlation one locus but does not, so far, give the Tsirelson bound or a principle that fixes where quantum correlations stop; and the superselection structure of a real form is weaker than a superselection structure of the standard central kind, because the algebra is central simple and has no nontrivial central idempotent. *The Light Cone as the Biquaternion Zero-Divisor Cone*, *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*, *The Material-Informational Split as a Superselection Structure in Biquaternionic Form* and *Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form* carry the pieces; *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* carries the two-qubit idempotent structure, which is a separate question from the cone of a single algebra.
+
+The ideas, collected by difficulty.
+
+| Difficulty | Idea | The mechanism |
+|---|---|---|
+| 1 Time a parameter | 3, the signature from $i^2=-1$ | $N(\tilde{Q})=\sum_\mu Q_\mu^2$ with $Q_0=ict$ |
+| 1 Problem of time | 4, the time as a coordinate | $i\mathbb{M}_\pm=\mathbb{M}_\mp$ |
+| 2 Born rule an axiom | 1, states and observables in one subspace | $\mathrm{Tr}(\tilde{\Pi}\tilde{\rho})=\tfrac12(1+\hat{\mathbf{n}}\cdot\mathbf{r})$ |
+| 3 Spin–statistics | 6, two classes of representation | $-e_0$ acts as $\pm\mathrm{id}$ by module |
+| 4 Two evolutions | 5, two classes of acting element | Unitary and idempotent elements of one algebra |
+| 5 Quantisation a recipe | no numbered idea; see Programme 3 | $\mathfrak{sl}(2,\mathbb{C})$ as the natural bracket algebra |
+| 6 Path-integral weight | no numbered idea; see Programme 5 | $iS/\hbar$ in the material sector; the Wick rotation as the bridge |
+| 7 Non-locality against causality | 7, one cone | $N=0$: the light cone and the pure states |
+| (ground: the relativistic side of several) | 2, symmetries and operators in one algebra | $\Gamma_{\tilde{\Lambda}}$ and $\Gamma_{\tilde{A}}$ are one formula |
+
+## The Programmes: What Is Built and What Blocks It
+
+The ideas above open programmes as much as they state positions, and it is useful to say for each programme what the framework has already built and what blocks it. The seven programmes are the seven directions of the framework, taken together with the ideas that open them; the numbering of the two lists is not the same, and the table below gives the programme's own accounting.
+
+**1. The idempotent formalism.** Built for one qubit: *Quantum Physics in Biquaternionic Form* gives the state space, the observables, the Born pairing, the dynamics and the measurement rule, and assesses them against the ten structural requirements of *Quantum Physics: Foundations and Structure*. The geometry is in *The Bloch Ball as the Trace-One Slice of the Future Light Cone* and *The Fubini–Study Geometry and the Biquaternion Norm*; the unitarity criterion in *Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem*. **Blocking object:** the tensor product and the composition rule that separate a one-qubit reformulation from a quantum theory.
+
+**2. Spin–statistics from the algebra.** The gap is exactly located: *The Spin–Statistics Theorem in Biquaternionic Form* proves the spin half algebraically, computes the anticommutator as local and the commutator as a nonzero Bessel kernel at spacelike separation, and records the pairing as imported. What would resolve it is a structure of the algebra — a graded extension, a crossed product, or the full tensor algebra of the module — that forces the bracket pairing rather than admitting both. **Blocking object:** that structure.
+
+**3. Quantisation from the algebra.** The Lie algebra $\mathfrak{sl}(2,\mathbb{C})$ is the natural bracket algebra of the framework, and the idea is that it selects the quantisation. The canonical quantisation of the Klein–Gordon, Dirac, Maxwell, Proca, Rarita–Schwinger and graviton fields has been transcribed into biquaternionic form, and the honest reading of the transcriptions is that the algebra supplied the objects and not the brackets: the conjugate momenta, the constraints and the Fock space were imported. In the Maxwell case the natural variable $\tilde{F}$ has no canonical partner, so the framework cannot fix the gauge from its own structure. **Blocking object:** an algebraically preferred bracket, gauge, or measure; the gravitational case in *Quantum Gravity under the Biquaternion Framework — A Research Agenda* shows the blockage in its sharpest form, the canonical chain having no first link.
+
+**4. Tensor products and entanglement.** The two-qubit algebra is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$; *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* shows that the four Bell states form a canonical idempotent basis, orthogonal, of trace one and summing to the identity; *Entangled Subsystems in the Biquaternion Framework* and *Exercise: The Correlation Function of the Bell States* carry the partial traces and the singlet. **Blocking object:** the question whether the framework enriches the standard tensor product or only re-expresses it — and with it, whether the shared zero cone of Idea 7 can do work, for instance in fixing the correlation strength rather than merely locating it.
+
+**5. The path integral.** The exponent $iS/\hbar$ has its place in the material sector, the central element supplies the unitary phase, and the Wick rotation appears as the bridge to the Euclidean weight. **Blocking object:** the measure, the action, and the space of paths — none of which the algebra supplies. *The Path Integral in Biquaternionic Form* says so plainly.
+
+**6. Measurement.** The restatement is exact and the classification is algebraic: *The Measurement Problem in Algebraic Form* gives the projection form and its limit, *Decoherence as Idempotent Projection* the loss of phase relations, and *The Center of the Biquaternion Algebra as the Classical Sector* the classical reading of the centre. **Blocking object:** the selection rule, plus the classical limit: the centre of the algebra is the classical sector, and how a state leaves the quantum sector is the open question.
+
+**7. Time in quantum mechanics.** The kinematic pieces exist: *The Schrödinger Equation in Biquaternionic Form* recovers the sector equation, and *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form* the clock structure. **Blocking object:** the constraint structure, which is not addressed; the deepest and least developed of the programmes.
+
+| Programme | What exists | Blocking object |
+|---|---|---|
+| 1 Idempotent formalism | The single-qubit formalism, end to end | Tensor product and composition rule |
+| 2 Spin–statistics | The spin half, algebraically exact | A structure forcing the bracket pairing |
+| 3 Quantisation | Faithful transcriptions of six fields | An algebraically preferred bracket or measure |
+| 4 Tensor products | The two-qubit algebra and the Bell basis | Whether the framework adds to the standard product |
+| 5 Path integral | The phase and the Wick rotation | The measure, the action, the space of paths |
+| 6 Measurement | The exact restatement | The selection rule and the classical limit |
+| 7 Time | Kinematic pieces | The constraint structure |
+
+## What Is Not Claimed
+
+Four cautions belong with the ideas, because the failure mode of a programme of this kind is to read a structural feature as a result.
+
+**First, the framework is not yet a complete quantum theory.** For one qubit it is a reformulation, and for two qubits it is partly so. The many-body structure, the general dynamics of open systems and the measurement theory are not complete. Where it reproduces the standard formalism, its value is structural and conceptual.
+
+**Second, it does not yet give a new prediction.** If the framework reproduces standard quantum mechanics, no experiment distinguishes it. If it gives a new prediction, that prediction must be reconciled with the empirical success of the standard theory at every scale where the standard theory has been tested. *The Empirical Status of the Biquaternion Framework* records what would count as a signature and why agreement is not confirmation.
+
+**Third, the developed relativistic parts are largely classical or transcribed.** *The Dirac Equation in Biquaternionic Form* and *Relativistic Mechanics in Biquaternionic Form* treat the classical theory; the canonical quantisation of the spinor field is a transcription. The framework's relativistic quantum theory is not yet built from its own algebra.
+
+**Fourth, the framework sits in a crowded space.** Reformulations of quantum mechanics already exist: geometric algebra (Hestenes, Doran and Lasenby), algebraic quantum field theory (Haag and Kastler), operational quantum mechanics (Hardy, Chiribella), quantum information (Hardy, Barrett) and twistor theory. The framework has to say what it adds. Its own catalogue of what the algebra cannot do, *What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions*, is where the boundary is drawn; *Twistor Theory and Biquaternions* compares it with the nearest complex-geometric programme.
+
+## Summary
+
+Quantum mechanics and relativity do not sit comfortably together, and the difficulties are structural: the time is a parameter in one theory and a coordinate in the other; the Born rule is an axiom; spin–statistics needs field theory; the measurement lies outside the formalism; quantisation is a recipe; the path integral needs the Wick rotation; and non-locality is in tension with causality.
+
+The biquaternion framework brings one common ground and seven ideas. The common ground is that one algebra carries both an indefinite Lorentzian form and a positive-definite Hilbert form, with a lattice of conjugations that assigns each its role, and with one action form $\Gamma_{\tilde{A}}(\tilde{Q})=\tilde{A}\tilde{Q}\tilde{A}^{*}$ serving the Lorentz rotors, the quantum operations and the measurement update. The ideas are: put the states and the observables in one subspace, so the Born rule is a trace pairing; let the symmetries and the operators be one algebra, so the relativistic structure is present from the start; derive the signature from $i^2=-1$; make the time a coordinate of the algebra, so there is no external parameter; read the reversible and the irreversible evolutions as two classes of acting element; read the two statistics from two classes of representation; and give the light cone and the quantum correlation one zero cone.
+
+Each idea is stated with its edge. The Born rule is relocated rather than removed; the relativistic state space is not yet built; the signature is derived but the problem of time is not settled; the selection rule of measurement is not supplied; the spin half is algebraic while the statistics half is transcribed; and sharing a cone is not deriving the bound. The programmes that follow from the ideas are mapped with what exists and with the object that blocks each: for the idempotent formalism the tensor product and the composition rule; for the tensor products whether the framework adds to the standard product; for spin–statistics a structure that forces the bracket; for quantisation an algebraically preferred bracket and measure; for the path integral the measure, the action and the space of paths; for measurement the selection rule and the classical limit; and for time the constraint structure. What is not claimed is completeness, a new prediction, a relativistic quantum theory built from the framework's own algebra, or a unique place among the existing reformulations.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
+| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $i$ | Scalar imaginary, $i^2=-1$, central |
+| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| ${}^{*}$ | Hermitian conjugation ($e_k^{*}=-e_k$, $i^{*}=-i$) |
+| ${\natural}$ | Quaternion conjugation ($e_k^{\natural}=-e_k$, $i^{\natural}=i$) |
+| $\bar{\cdot}$ | Coefficient conjugation, $\bar{\cdot}=\natural\,{}^{*}$ (negates $i$, fixes $e_k$) |
+| $\flat=-{}^{*}$ | Real structure with fixed space $\mathbb{M}_-$; not an involution of the ring |
+| $i\mathbb{M}_\pm=\mathbb{M}_\mp$ | The central element exchanges the sectors |
+| $\mathrm{Tr}(\tilde{H})=2\,\mathrm{Sc}(\tilde{H})$ | Trace; $\mathrm{Tr}(e_0)=2$ |
+| $\tilde{H}=h_0e_0+i\mathbf{h}$ | Hermitian element (observable), vector part $\mathbf{h}$ |
+| $\hat{\mathbf{n}}$ | Unit vector, the axis of an idempotent |
+| $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$ | State (Bloch ball), Bloch vector $\mathbf{r}$ |
+| $\tilde\Pi_\pm(\hat{\mathbf{n}})=\tfrac12(e_0\pm i\hat{\mathbf{n}})$ | Idempotent (pure state) |
+| $\mathrm{Tr}(\tilde{\Pi}_\pm\tilde{\rho})=\tfrac12(1\pm\hat{\mathbf{n}}\cdot\mathbf{r})$ | Born rule as a trace formula |
+| $N(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^{2}$ | Biquaternion norm; indefinite, complex in general; $-c^2t^2+\mathbf{x}^2$ on $\mathbb{M}_-$ |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu|Q_\mu|^{2}$ | Sesquilinear form; real, positive definite; the Hilbert structure |
+| $N(\tilde{H})=h_0^2-|\mathbf{h}|^2$ | Biquaternion norm on a Hermitian element $\tilde{H}=h_0e_0+i\mathbf{h}$ |
+| $N(\tilde{Q})=0$ | Zero-divisor cone; its material real slice is the light cone, and the trace-one slice of its informational real slice is the Bloch sphere |
+| $\tilde\Pi^{\natural}=e_0-\tilde\Pi$, $N(\tilde\Pi)=0$ | On a Hermitian idempotent: conjugation returns the complement, and the norm vanishes |
+| $\Gamma_{\tilde{A}}(\tilde{Q})=\tilde{A}\tilde{Q}\tilde{A}^{*}$ | One action form; Lorentz, unitary and idempotent cases |
+| $\tilde{A}\tilde{A}^{*}=e_0$ | Unitary element (reversible evolution); $N(\tilde{A}\tilde{Q}\tilde{A}^{*})=N(\tilde{Q})$ |
+| $\tilde{A}^2=\tilde{A}=\tilde{A}^{*}$ | Idempotent element (measurement update) |
+| $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$ | Lorentz rotor (unit-norm biquaternion), group $SL(2,\mathbb{C})$; the unitary and unit-norm classes meet in $SU(2)$ |
+| $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$ | Electromagnetic field-strength bivector, in $\mathrm{span}_\mathbb{R}\{e_k,ie_k\}$, in neither sector |
+| $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra of Programme 4 |
+| $c$, $c_0$ | Speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and its vacuum value |
+| $\hbar$ | Reduced Planck constant (in the path-integral weight $e^{iS/\hbar}$) |
+| $ict$ | Material time coordinate (local $c=1/\sqrt{\epsilon\mu}$) |
+
+## Further Reading
+
+- P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the foundational treatment against which the tension is stated.
+- John von Neumann, *Mathematical Foundations of Quantum Mechanics* (Princeton, 1932), for the Hilbert-space formalism, the two evolutions and the measurement chain.
+- R. P. Feynman, "Space-Time Approach to Non-Relativistic Quantum Mechanics," *Reviews of Modern Physics* **20** (1948) 367–387, and R. P. Feynman and A. R. Hibbs, *Quantum Mechanics and Path Integrals* (McGraw–Hill, 1965), for the sum over paths and its oscillatory weight.
+- J. Zinn-Justin, *Quantum Field Theory and Critical Phenomena* (Oxford, 4th ed. 2002), for the Wick rotation as an analytic continuation rather than a change of coordinates.
+- W. Pauli, "The Connection Between Spin and Statistics," *Physical Review* **58** (1940) 716–722, and R. F. Streater and A. S. Wightman, *PCT, Spin and Statistics, and All That* (Benjamin, 1964), for the theorem and its hypotheses.
+- R. Haag, *Local Quantum Physics* (2nd ed., Springer, 1996), for the algebraic formulation of quantum field theory and for the notion of superselection.
+- C. Rovelli, *Quantum Gravity* (Cambridge, 2004), for the problem of time and the Hamiltonian constraint against which the time ideas are measured.
+- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), and D. Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the nearest reformulation through geometric algebra.
+- L. Hardy, "Quantum theory from five reasonable axioms," arXiv:quant-ph/0101012 (2001); G. Chiribella, G. M. D'Ariano and P. Perinotti, "Informational derivation of quantum theory," *Physical Review A* **84** (2011) 012311; and J. Barrett, "Information processing in generalized probabilistic theories," *Physical Review A* **75** (2007) 032304, for operational and quantum-informational reconstructions.
+- Companion article *Why Complexify Spacetime?*, developed next, for the complexified arena and the local complex structure of the programme.
+- Companion article *Conventions in the Biquaternion Universe*, for the algebraic and spacetime conventions used throughout.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, the interval, the zero-divisor cone and the algebraic time.
+- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the informational sector and the trace pairing.
+- Companion article *Quantum Physics: Foundations and Structure*, for the standard formalism and the ten structural requirements of a comprehensive quantum theory.
+- Companion article *Quantum Physics in Biquaternionic Form*, for the idempotent formalism of Programme 1.
+- Companion article *The Born Rule as a Trace Formula — Derivation and Comparison*, for what the trace pairing derives and what it restates.
+- Companion article *The Measurement Problem in Algebraic Form*, for Programme 6 and the selection problem.
+- Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for Programme 2.
+- Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the shared cone of Idea 7.
+- Companion article *The Schrödinger Equation in Biquaternionic Form*, for the sector equation of Programme 7.
+- Companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, *The Fubini–Study Geometry and the Biquaternion Norm* and *Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem*, for the geometry and the unitarity criterion of Programme 1.
+- Companion article *The Relativistic Qubit in Biquaternionic Form*, for the relativistic state space of Idea 2.
+- Companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, *Entangled Subsystems in the Biquaternion Framework* and *Exercise: The Correlation Function of the Bell States*, for the two-qubit structure of Programme 4.
+- Companion article *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*, *The Material-Informational Split as a Superselection Structure in Biquaternionic Form* and *Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form*, for the second half of Idea 7.
+- Companion article *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form*, for the clock structure of Programme 7.
+- Companion article *The Dirac Equation in Biquaternionic Form* and *Relativistic Mechanics in Biquaternionic Form*, for the classical relativistic parts.
+- Companion article *Decoherence as Idempotent Projection*, for Programme 6.
+- Companion article *The Center of the Biquaternion Algebra as the Classical Sector*, for the classical limit of Programme 6.
+- Companion article *The Path Integral in Biquaternionic Form*, for Programme 5 and the missing measure.
+- Companion article *Quantum Gravity under the Biquaternion Framework — A Research Agenda*, for the gravitational case of Programme 3.
+- Companion article *The Empirical Status of the Biquaternion Framework*, for what would count as a signature.
+- Companion article *What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions*, for the boundary of the algebra drawn in full.
+- Companion article *Twistor Theory and Biquaternions*, for the comparison with the nearest complex-geometric programme.

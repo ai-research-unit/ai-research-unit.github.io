@@ -18,7 +18,7 @@ holds as an identity in $\mathbb{B}$, not merely in expectation.
 
 The article proceeds as follows. The next section states the standard theorem and its fermionic sign. A section defines normal ordering and contraction. A section exhibits the one-mode subalgebra and computes its products. A section proves and verifies the one-mode Wick identity, with a table of all low-order contractions. Sections then identify the contraction with the propagator and the sign with the grading, and state the field case and its gap. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\varepsilon_{jkl}e_l$ for distinct $j,k,l$, and central scalar imaginary $i$, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector) and $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ is the center. The isomorphism is $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ with $\mathrm{Tr}(e_0)=2$. The single-mode ladder and number operator are
+**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\varepsilon_{jkl}e_l$ for distinct $j,k,l$, and central scalar imaginary $i$, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector) and $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ is the center. The isomorphism is $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Tr}(e_0)=2$. The single-mode ladder and number operator are
 $$
 \tilde a_{\mathrm{tr}} = \tfrac12\big(ie_1-e_2\big),
 \qquad
@@ -282,6 +282,8 @@ For a field the theorem is standard and transcribed: time-ordered products equal
 | $\tilde k=iEe_0+\mathbf{p}$, $\tilde k\tilde k^{\natural}=-m^2$ | Wave biquaternion; mass shell |
 | $\mathrm{sgn}(\pi)$ | Fermionic sign of a complete pairing |
 | $\mathcal{H}_I$, $S=T\exp(-i\int\mathcal{H}_I)$ | Interaction Hamiltonian; Dyson series |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
 
 ## Further Reading
 

@@ -68,7 +68,7 @@ More generally, if $x$ is normal, $xx^{*} = x^{*}x$, then $\exp x$ is normal.
 
 **Definition.** An element $x \in A$ is **skew-Hermitian** when $x^{*} = -x$; the set of them is the skew-Hermitian part $S(A)$ of *Hermitian and Skew-Hermitian Elements*, and it is the real Lie algebra of the unitary group under the commutator, by *The Unitary Lie Algebra*.
 
-**Remark (over $\mathbb{R}$ there is no imaginary unit).** Over $\mathbb{C}$ the Hermitian and the skew-Hermitian elements are exchanged by the multiplication by $i$, and every element is a sum $h + s$ of a Hermitian and a skew-Hermitian part, $h = \tfrac12(x + x^{*})$ and $s = \tfrac12(x - x^{*})$; over $\mathbb{R}$ the two parts are the symmetric and the antisymmetric parts relative to the involution, and the decomposition is not available. The exponential of the skew-Hermitian part is the bridge from the Lie algebra to the group, and it is a map over the reals in both cases.
+**Remark (over $\mathbb{R}$ there is no imaginary unit).** Over $\mathbb{C}$ the Hermitian and the skew-Hermitian elements are exchanged by the multiplication by $i$, and every element is a sum $h + s$ of a Hermitian and a skew-Hermitian part, $h = \tfrac12(x + x^{*})$ and $s = \tfrac12(x - x^{*})$; over $\mathbb{R}$ the two parts are the symmetric and the antisymmetric parts relative to the involution, the decomposition $x = h + s$ is available there as well because $2$ is invertible, and what is missing over $\mathbb{R}$ is only the exchange of the two parts by the multiplication by $i$. The exponential of the skew-Hermitian part is the bridge from the Lie algebra to the group, and it is a map over the reals in both cases.
 
 ### The Exponential into the Unitary Group
 

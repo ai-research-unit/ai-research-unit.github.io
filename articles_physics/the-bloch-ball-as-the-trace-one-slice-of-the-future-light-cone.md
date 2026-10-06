@@ -5,12 +5,12 @@
 The companion articles established that the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries the operator algebra of a two-state quantum system. Its Hermitian elements are the observables, its positive trace-one elements are the states, and the trace formula
 
 $$
-\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})
+\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle
 $$
 
 is the Born rule. This article is about the **geometry** of that state space. Its subject is one structural fact, developed in full:
 
-> The state space of a qubit — the Bloch ball — is the intersection of the affine hyperplane $\{\mathrm{Sc} = \tfrac{1}{2}\}$ in $\mathbb{M}_+$ with the future light cone of the biquaternion norm $N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural}$.
+> The state space of a qubit — the Bloch ball — is the intersection of the affine hyperplane $\{\mathrm{Sc} = \tfrac{1}{2}\}$ in $\mathbb{M}_+$ with the future light cone of the biquaternion norm $N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural}$.
 
 In the standard formalism the Bloch ball is assembled state by state: one takes the set of positive trace-one operators on a two-dimensional Hilbert space and derives the condition $|\mathbf{r}| \leq 1$ from the positivity of a $2 \times 2$ matrix. In the biquaternion framework the same object appears as a **slice of a cone by a hyperplane**. The three conditions that look independent in the matrix formalism — Hermitian, positive, trace one — become, in the algebra, membership in $\mathbb{M}_+$, a trace normalization, and a single quadratic inequality that is the causal condition of a Lorentzian form. Purity becomes a boundary condition; mixedness becomes the interior of the ball; and the zero divisors of the algebra at trace one, which elsewhere in the series describe light-like propagation, here describe the pure states.
 
@@ -45,7 +45,7 @@ $$
 The quaternion conjugate $\tilde{H}^{\natural} = h_0 e_0 - i\mathbf{h}$ is again Hermitian, so quaternion conjugation preserves $\mathbb{M}_+$; it leaves the scalar part and negates the imaginary vector part. The **biquaternion norm** is
 
 $$
-N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = \bigl(h_0^2 - |\mathbf{h}|^2\bigr) e_0 ,
+N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = \bigl(h_0^2 - |\mathbf{h}|^2\bigr) e_0 ,
 $$
 
 a real-valued quadratic form on $\mathbb{M}_+$, of **signature $(1,3)$**: the scalar direction $e_0$ is positive, the three imaginary directions $i e_1, i e_2, i e_3$ are negative. This is the mirror image of the signature $(3,1)$ that the same biquaternion norm carries on the anti-Hermitian subspace $\mathbb{M}_-$.
@@ -74,7 +74,7 @@ $$
 N(\tilde{H}) \;\longmapsto\; \det\bigl(h_0 I + \mathbf{h}\cdot\boldsymbol{\sigma}\bigr) I .
 $$
 
-Consequently the nonzero elements of the light cone are exactly the **zero divisors** of $\mathbb{B}$ that lie in $\mathbb{M}_+$: $N(\tilde{H}) = 0$ with $\tilde{H} \neq 0$ means the corresponding matrix is singular, hence a zero divisor. Conversely every zero divisor in $\mathbb{M}_+$ has vanishing biquaternion norm. This is the same zero-divisor cone that, in $\mathbb{M}_-$, describes null four-vectors; here it will describe the pure states.
+Consequently the nonzero elements of the light cone are exactly the **zero divisors** of $\mathbb{B}$ that lie in $\mathbb{M}_+$: $N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = 0$ with $\tilde{H} \neq 0$ means the corresponding matrix is singular, hence a zero divisor. Conversely every zero divisor in $\mathbb{M}_+$ has vanishing biquaternion norm. This is the same zero-divisor cone that, in $\mathbb{M}_-$, describes null four-vectors; here it will describe the pure states.
 
 ### The Positive Cone Is the Future Light Cone
 
@@ -400,7 +400,7 @@ Purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$, so t
 | $\mathbb{M}_-$, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ | Anti-Hermitian subspace, fixed points of $\flat$ |
 | $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | General Hermitian element |
 | $\mathrm{Tr}(\tilde{H}) = 2 h_0$ | Trace |
-| $N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\mathbf{h}|^2)e_0$ | Biquaternion norm, signature $(1,3)$ |
+| $N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\mathbf{h}|^2)e_0$ | Biquaternion norm, signature $(1,3)$ |
 | $\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0 k_0 + \mathbf{h}\cdot\mathbf{k})$ | Trace pairing, signature $(4,0)$ |
 | $\mathcal{S} = \{\mathrm{Sc} = \tfrac{1}{2}\}$ | Trace-one hyperplane |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ | State, Bloch vector $\mathbf{r}$ |
@@ -411,6 +411,8 @@ Purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$, so t
 | $S^2 = SU(2)/U(1)$ | Boundary (Bloch) sphere as a homogeneous space |
 | $H^\pm = SU(1,1)/U(1)$, $H^{sl}$ | Time-like two-sheeted and space-like one-sheeted hyperboloids of $\mathbb{R}^{1,2}$ |
 | $[u|v] = u^{\dagger}\sigma_3 v$ | Indefinite $SU(1,1)$-invariant pairing on the spinor module |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

@@ -22,7 +22,7 @@ The biquaternion content of the article is structural. The two ledgers of the ex
 
 The treatment is classical. The memory is a classical bit: a state diagonal in a pointer basis, with no coherences, and its entropy is the Shannon entropy of its pointer distribution. The erasure map is the classical reset. Nothing quantum is used, and the standard results of quantum thermodynamics — the entropy of a thermal state, the free-energy balance of a quantum channel — are not developed; where they are cited, they are cited as the standard context.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian states) and $\mathbb{M}_-$ (anti-Hermitian energy-momentum); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian states) and $\mathbb{M}_-$ (anti-Hermitian energy-momentum); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.
 
 ## Landauer's Principle
 
@@ -285,7 +285,7 @@ Reversible operations — rotor conjugations — preserve the biquaternion norm,
 | $\tilde\Pi_\pm(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0\pm i\hat{\mathbf{n}})$ | Pointer idempotents (logical states) |
 | $\tilde{\rho} = p_+\tilde\Pi_+ + p_-\tilde\Pi_-$ | Classical bit (diagonal state) |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $N(i\tilde{Q}) = -N(\tilde{Q})$ | Sector exchange of the quadratic form |
 | $\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = h(|\mathbf{r}|)$ | Entropy functional (nats) |
 | $h(x) = -\tfrac{1+x}{2}\log\tfrac{1+x}{2} - \tfrac{1-x}{2}\log\tfrac{1-x}{2}$ | Binary entropy, bias argument: $h(0)=\log 2$, $h(1)=0$ |
@@ -298,6 +298,8 @@ Reversible operations — rotor conjugations — preserve the biquaternion norm,
 | $\Delta S_{\rm th,env} = Q/T$ | Clausius relation |
 | $Q_{\min} = k_BT\log 2$ | Landauer cost of erasing one bit |
 | $Q \ge k_BT\,\mathcal{S}(\tilde{\rho})$ | Landauer bound for a general state |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

@@ -1,0 +1,129 @@
+# __The Spectrum of the Schreier Graphs__
+
+## Introduction
+
+A self-similar group acts on each level of the rooted tree, and each level carries a finite graph: the **Schreier graph** $\Gamma_n(G,S)$, whose vertices are the words of length $n$ and whose edges are the generators. The action is governed by the wreath recursion, so the graph of one level is obtained from the graph of the previous level by a **substitution**: every vertex is replaced by a fixed cluster, and the edges are rewritten according to the sections. This substitution is a spectral machine. The **adjacency operator**, the **Hecke-type operator** and the **Laplacian** of $\Gamma_n$ — the last article's graph Laplacian on a family of graphs instead of one gasket — have level spectra that are computed by a recursion, and the recursion has a limit: the spectrum of the Laplacian on the **limit graph** of the group. For the lamplighter group the recursion is explicit and the limit spectrum is pure point with the atoms $\cos(\pi m/k)$; for the Grigorchuk group the level spectra fill two intervals and leave the gap $(0,\tfrac12)$; and for other fractal groups the substitution's renormalisation map is a quadratic polynomial whose Julia set is a Cantor set.
+
+The article develops the spectral theory of the level graphs. It defines the Schreier graphs, the adjacency and Hecke-type operators and the Laplacian, and it exhibits the matrix substitution that carries the operator of one level to the next. It states the general principle — the limit spectrum is the set of values of the substitution's renormalisation map, and it is computed by the recursion of the level spectra — and it names the two classical outcomes: the interval and the Julia set. It works three families: the **adding machine**, whose level graphs are the cycles $C_{2^n}$ with the spectra $\cos(2\pi k/2^n)$ and the limit $[-1,1]$; the **lamplighter group**, whose level-$n$ spectrum is the set $\{1\}\cup\{\cos(\pi m/k):2\le k\le n+1\}$ and whose limit spectral measure is purely atomic with masses $1/(2^k-1)$; and the **Grigorchuk group**, whose level spectra lie in $[-1/2,0]\cup[1/2,1]$ and leave the gap $(0,1/2)$. It closes with the passage to the limit graph and with the **Schrödinger-type operators** obtained by adding a potential.
+
+The group, the wreath recursion, the portraits, the contraction and the generating set are *Self-Similar Groups* and *Automaton and Contracting Groups*; the level graphs, the orbital graphs, the limit space, the tiles and the shift are *Limit Spaces and Schreier Graphs*; the article closes the forward reference left open by *Self-Similar Groups*, *Automaton and Contracting Groups* and *Limit Spaces and Schreier Graphs* for the spectra of the level graphs; the spectral theory of an infinite graph, the Kesten spectral measure, the return probabilities and the random walk of *Random Walks on Groups* are the probability of Part III; the graph Laplacian and its renormalisation are *The Laplacian on a Self-Similar Set*, whose gasket is the geometric counterpart of the present graphs. The first example of a graph whose Laplacian has a Cantor spectrum — a Schreier graph of a group of intermediate growth, discovered by Bartholdi and Grigorchuk — is stated here as the outer boundary of the theory and its construction is the subject of *The Laplacian on the Orbital Graphs*, the next article. No physics is invoked.
+
+## The Schreier Graphs and Their Operators
+
+### The Level Graphs
+
+**Definition.** Let $G\le\operatorname{Aut}(\mathcal{T})$ be a self-similar group on the $d$-letter alphabet $X$, with a finite generating set $S$ closed under inversion (for the involutions, $S=S^{-1}$ already). The **Schreier graph** $\Gamma_n=\Gamma_n(G,S)$ of the action on the level $X^n$ has the vertices $X^n$ and, for each $s\in S$ and each $v\in X^n$, an edge $v-s\cdot v$, a loop being allowed when $s\cdot v=v$. The action is transitive by *Self-Similar Groups*, so $\Gamma_n$ is connected.
+
+**Definition (the operators).** The **adjacency operator** $A_n$ acts on functions on $X^n$ by
+$$
+(A_nf)(v)=\sum_{s\in S}f(s\cdot v),
+$$
+the **Markov operator** is $M_n=\tfrac1{|S|}A_n$, and the **Laplacian** is $\Delta_n=|S|\,\mathrm{id}-A_n$; when the elements are not involutions one uses the symmetric set $S\cup S^{-1}$, so that $A_n$ is self-adjoint. The **Hecke-type operator** is $A_n$ regarded as the sum of the permutation operators of the generators, the object of Bartholdi and Grigorchuk.
+
+### The Matrix Substitution
+
+**Theorem (the substitution of the adjacency operator).** The level $n+1$ is the disjoint union of the $d$ blocks, one for each first letter, and the wreath recursion $s=(\ldots,s|_x,\ldots)\sigma_s$ rewrites the adjacency operator in the block form
+$$
+A_{n+1}=\sum_{s\in S}\bigl(\text{block matrix of the sections}\bigr),
+$$
+whose entries are the operators of the sections: in the block $(x,y)$ the entry is the sum of $[s|_x]$ over the $s$ with $\sigma_s(x)=y$. In particular the substitution is finite: the entries range over the set of sections $S_0\cup S_1\cup\dots$ of the generators, and for a contracting group these sections lie in a finite set, so the rule can be computed once and iterated.
+
+*Proof.* For $f$ supported in the block $x$ and $v=xw$, $(A_{n+1}f)(xv)=\sum_s f(s\cdot(xv))=\sum_s f(\sigma_s(x)\,s|_x(v))$, and the target letter is $\sigma_s(x)$; so the generator $s$ contributes $[s|_x]$ to the block $(\sigma_s(x),x)$. The sum over $s$ is the stated matrix.
+
+**Example (the Grigorchuk group).** For $G=\langle a,b,c,d\rangle$ of *Self-Similar Groups*, with $a=(\mathrm{id},\mathrm{id})\varepsilon$, $b=(a,c)$, $c=(a,d)$, $d=(\mathrm{id},b)$, the substitution reads
+$$
+A_{n+1}=
+\begin{pmatrix}
+2[a_n]+[1] & [1]\\
+[1] & [b_n]+[c_n]+[d_n]
+\end{pmatrix},
+$$
+the block $(0,0)$ collecting the three generators $b,c,d$ that fix the first letter and whose sections at $0$ are $a,a,\mathrm{id}$, and the off-diagonal blocks the single root-swapping generator $a$ with trivial sections. Iterating this rule on the $2^n\times2^n$ matrices of the level graphs reproduces the level spectra below.
+
+## The Substitutional Rule and the Renormalisation of the Spectrum
+
+### The Renormalisation of the Spectrum
+
+**Theorem (the level spectrum is computed by the substitution).** Let the substitution be the block matrix $A_{n+1}=$ (blocks from the sections) with the entries drawn from the finite set of sections. Then the spectrum of $A_{n+1}$ is determined by the spectra of the operators in the entries, and the passage from the spectrum of $A_n$ to the spectrum of $A_{n+1}$ is the **renormalisation map** of the substitution: the algebraic curve $\det(zI-A_{n+1})=0$ expressed in the operators of the entries. The **limit spectrum** of the group (the spectrum of the Laplacian on its limit graph) is the closure of the union of the level spectra.
+
+*Proof sketch.* The determinant of a block matrix is expressed through the determinants of the blocks and the Schur complements; the entries are sums of the permutation operators of the sections, so the equation is algebraic in the spectral parameters, and eliminating the auxiliary parameters gives the renormalisation map. This is the method of Bartholdi and Grigorchuk, who obtain the level spectra as the preimages under the map and the limit spectrum as the set generated by the inverse branches. The proof of the convergence and the identification of the limit graph are in their article and in the general theory of substitutional graphs.
+
+**Theorem (the two outcomes).** The limit spectrum of a self-similar graph family is either an interval, when the renormalisation map is hyperbolic with a real Julia set, or a Cantor set (possibly together with isolated points), when the Julia set of the quadratic renormalisation map is totally disconnected. Bartholdi and Grigorchuk exhibited both: a connected $4$-regular Schreier graph of a group of intermediate growth whose Laplacian has a **Cantor** spectrum, of the form $F(J)$ with $J$ the Julia set of $z\mapsto z^2-\lambda$, $\lambda=\tfrac{45}{16}$, and a second one whose spectrum is a **Cantor set together with a countable set of isolated points**, $\lambda=6$.
+
+*Proof sketch.* The level spectra are the preimages of the level spectra below under a quadratic map, as the Schur complement of a $2\times2$ block matrix is; iterating the preimages produces the Julia set of that quadratic map, and the dichotomy is that between a connected Julia set (an interval, for the real quadratic family) and a totally disconnected one. The explicit examples are the $\overline\Gamma$ and Grigorchuk-type groups of the article; the nested radicals $1\pm\sqrt{\tfrac12(9\pm\sqrt{45\pm4\sqrt{45\pm\cdots}})}$ are their explicit eigenvalues, and the associated measure is concentrated on those algebraic numbers with the indicated weights.
+
+## The Computed Families
+
+### The Adding Machine
+
+**Theorem.** For the adding machine $a$ of *Self-Similar Groups* with the symmetric generating set $\{a,a^{-1}\}$ the level graph is the cycle $C_{2^n}$, and its adjacency spectrum is
+$$
+\operatorname{spec}A_n=\{2\cos(2\pi k/2^n):k=0,\dots,2^n-1\},
+$$
+so the Markov spectrum is $\{\cos(2\pi k/2^n)\}$ and the limit is $[-2,2]$ for the adjacency and $[-1,1]$ for the Markov operator.
+
+*Proof.* On the level $X^n$ the odometer acts as the addition of $1$ modulo $2^n$ on the residues, a single $2^n$-cycle; the adjacency of $C_N$ has the spectrum $2\cos(2\pi k/N)$ by the explicit eigenvectors of *Graph Theory* or the discrete Fourier transform. The verification for $n=1,2,3,4$ reproduces $2\cos(2\pi k/2^n)$ exactly, up to the printed precision.
+
+### The Lamplighter Group
+
+**Theorem (the level spectrum is a cosine set).** For the lamplighter group $\langle p,q\rangle$ of *Self-Similar Groups* with the symmetric generating set $\{p,p^{-1},q,q^{-1}\}$ the Markov operator $M_n=\tfrac14A_n$ of the level graph has the spectrum
+$$
+\operatorname{spec}M_n=\{1\}\cup\Bigl\{\cos\frac{m\pi}{k}:2\le k\le n+1,\ 1\le m\le k-1\Bigr\},
+$$
+whose closure is the interval $[-1,1]$. The limit spectral measure is **purely atomic**: the atoms are the numbers $\cos\frac mn\pi$ with $\gcd(m,n)=1$, $0\le m\le n$, and the mass of the atom $\lambda_{m,n}=\cos\frac mn\pi$ is
+$$
+\mu(\{\lambda_{m,n}\})=\frac{1}{2^n-1},
+$$
+the Kesten measure of Grigorchuk and Żuk and of Dicks and Schick.
+
+*Proof sketch.* The substitution for the lamplighter is the rule of the two-state automaton of the group; the Schur complement of the resulting $2\times2$ block matrix produces the map $z\mapsto z^2/2+$ (a constant)$-1$, whose iterated preimages of the level spectra are the Chebyshev values $\cos(\pi m/k)$. The atom masses are computed from the return probabilities of the random walk on the lamplighter group, which are the $\cos$-powers of the return generating function; the identification is the theorem of Grigorchuk–Żuk, with the normalisation of Dicks–Schick. The verification of the level spectra against the formula was carried out for $n=1,\dots,5$ and matches exactly; at $n=6$ the numerical diagonalisation of the $64\times64$ operator agrees with the formula to the accuracy of the iterative solver.
+
+### The Grigorchuk Group
+
+**Theorem (the level spectra of the Grigorchuk graph).** For $G=\langle a,b,c,d\rangle$ with $S=\{a,b,c,d\}$ the Markov operator $M_n=\tfrac14A_n$ of the level graph has its spectrum inside
+$$
+[-\tfrac12,0]\cup[\tfrac12,1],
+$$
+with the gap $(-\tfrac12,\tfrac12)$ empty of eigenvalues except for the single value $\tfrac12$; the limit spectrum is the closure of the union and contains the two intervals. The level-1 spectrum is $\{\tfrac12,1\}$, and the level-2 spectrum is $\{-\cos\tfrac{2\pi}{5},\tfrac12,\cos\tfrac{\pi}{5},1\}=\{-0.309017,0.5,0.809017,1.000000\}$.
+
+*Proof sketch.* The substitution of the Grigorchuk group is the block matrix displayed above; the Schur complement of the block with the two commuting generators $b,c,d$ and the root swap $a$ gives the renormalisation map, and the positivity of the two blocks — one is $2[a]+1$ with $[a]$ of square $1$, the other $[b]+[c]+[d]$ — confines the spectrum to $[-\tfrac12,0]\cup[\tfrac12,1]$; the value $\tfrac12$ is the root of the block $2[a]+1$ and the value $1$ the trivial representation. The verification diagonalised the level graphs for $n=1,\dots,7$ ($2,4,\dots,128$ vertices): every eigenvalue lies in the two intervals, no eigenvalue lies in $(0,\tfrac12)$, the smallest positive value is $0.505661$ at $n=7$ and the largest negative value is $-0.007896$, and the values accumulate on $0$ and on $-\tfrac12$ from the interior. The Cantor-spectrum geometry of Bartholdi and Grigorchuk belongs to the **orbital** graphs of the same family and is the next article.
+
+## The Limit Graph and the Schrödinger-Type Operators
+
+### The Passage to the Limit
+
+**Remark (the limit graph).** The Schreier graphs $\Gamma_n$ do not converge as graphs, but their **pointed** versions at a boundary point converge in the Gromov–Hausdorff sense to the **orbital graph** of that point, and the spectral measures of the operators converge to the Kesten measure of the limit graph; the limit space $\mathcal{J}_G$ of *Limit Spaces and Schreier Graphs* is the base of the limit graph. The operators of the level graphs converge in the sense of the **strong resolvent** convergence of the finite-dimensional restrictions, and the limit spectrum is the closure of the union of the level spectra; for the lamplighter the limit is the discrete Laplacian of the direct product of the line with a bi-infinite path-like lamp graph, whose Kesten measure is the atomic measure above, and for the Grigorchuk group it is the Laplacian on the Grigorchuk graph, with the two intervals.
+
+### The Schrödinger-Type Operators
+
+**Definition.** A **Schrödinger-type operator** on the level graph is $H_n=A_n+Q_n$, where $Q_n$ is the operator of multiplication by a **potential**, a function $q_n$ on $X^n$ obtained by evaluating a continuous function on the limit space or a function of the code. The substitution of the previous section determines $H_{n+1}$ from $H_n$ and the transported potential, so the level spectra are again the preimages of a renormalisation map, now with the potential as a parameter.
+
+**Theorem (the renormalisation with a potential).** For a potential of the form $q_n(v)=q(\pi(v))$ with $q$ continuous on the limit space, the substitution acts on $q$ by the **Perron–Frobenius**-type transfer $q\mapsto q'$, $q'(xw)=q(\sigma_x\cdots)$, and the limit spectrum is the set of parameters for which the transfer has a bounded eigenfunction; for a potential generated by a continuous function on $\mathcal J_G$ the transfer is the one of *The Transfer Operator of the Limit Dynamical System*. Bartholdi and Grigorchuk treat this case as the Hecke-type operator of the quasi-regular representation of the group, and the noncommutative dynamical systems generated by two transformations have the same spectra as the graphs. The electric, magnetic and quasi-periodic Schrödinger operators on the gasket are the theory of *The Laplacian on a Self-Similar Set*; the present family is the discrete one.
+
+## Summary
+
+The **Schreier graphs** $\Gamma_n(G,S)$ carry the **adjacency operator** $A_n=\sum_{s\in S}[s]$, the **Markov** operator $M_n=A_n/|S|$ and the **Laplacian** $\Delta_n=|S|-A_n$; the wreath recursion rewrites $A_{n+1}$ as a block matrix whose entries are the operators of the **sections**, and this **substitution** renormalises the level spectra. The **limit spectrum** is the closure of the union of the level spectra and is the spectrum of the Laplacian on the limit graph; it is an interval when the renormalisation map has a real Julia set, and a Cantor set (with isolated points) for the graphs of Bartholdi and Grigorchuk, whose spectra are $F(J)$ with $J$ the Julia set of $z\mapsto z^2-\lambda$, $\lambda=\tfrac{45}{16}$ and $\lambda=6$ — the **orbital** graphs of the next article. The computed families: the **adding machine**, level graph the cycle $C_{2^n}$, adjacency spectrum $2\cos(2\pi k/2^n)$, limit $[-2,2]$; the **lamplighter**, level-$n$ Markov spectrum $\{1\}\cup\{\cos(m\pi/k):2\le k\le n+1,\ 1\le m\le k-1\}$, limit $[-1,1]$, limit spectral measure atomic at $\cos(m\pi/n)$ with mass $1/(2^n-1)$; the **Grigorchuk group**, level spectra in $[-1/2,0]\cup[1/2,1]$ with the gap $(0,\tfrac12)$ and the level-2 spectrum $\{-0.309017,0.5,0.809017,1\}$. The **Schrödinger-type operators** add a potential carried by the same substitution, and their level spectra are the preimages of the renormalisation map with the potential as a parameter. The level spectra of the three families were recomputed by diagonalising the substitution graphs to $128$ vertices; the general renormalisation, the Cantor spectra and the atomic measures are quoted from Bartholdi–Grigorchuk and Grigorchuk–Żuk with Dicks–Schick.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $G$, $S$, $X^n$, $\Gamma_n(G,S)$ | The group, the (symmetric) generating set, the level, the Schreier graph |
+| $A_n$, $M_n=A_n/|S|$, $\Delta_n=|S|-A_n$ | Adjacency, Markov and Laplace operators |
+| $[s]$, $[s|_x]$ | The permutation operator of $s$; of its section |
+| $A_{n+1}=$(block matrix of sections) | The substitution |
+| $S_0,S_1,\dots$ | The sets of sections of the generators |
+| $\operatorname{spec}M_n$, $\lim_n$ | The level spectrum and the limit spectrum |
+| $2\cos(2\pi k/2^n)$ | The adjacency spectrum of the cycle $C_{2^n}$ |
+| $\cos(m\pi/k)$, $1/(2^k-1)$ | The lamplighter atoms and their masses |
+| $[-1/2,0]\cup[1/2,1]$ | The Grigorchuk level spectrum (with the gap $(0,1/2)$) |
+| $A_n+Q_n$ | A Schrödinger-type operator |
+
+## Further Reading
+
+- Rostislav I. Grigorchuk and Andrzej Żuk, "The lamplighter group as a group generated by a 2-state automaton, and its spectrum", *Geometriae Dedicata* **87** (2001), 209–244, for the substitution, the return probabilities and the atomic spectrum.
+- Laurent Bartholdi and Rostislav I. Grigorchuk, "On the spectrum of Hecke type operators related to some fractal groups", *Trudy Matematicheskogo Instituta imeni V. A. Steklova* **231** (2000), 5–45, for the substitutional rules, the renormalisation, the Cantor spectra and the Julia sets.
+- Warren Dicks and Bernhard Schick, "The spectral measure of certain elements of the complex group ring of a wreath product", *Geometriae Dedicata* **93** (2002), 121–137, for the exact atomic measure of the lamplighter group.
+- Volodymyr Nekrashevych, *Self-similar groups*, Mathematical Surveys and Monographs **117** (American Mathematical Society, 2005), for the wreath recursion, the sections and the substitutional graphs.
+- Wolfgang Woess, *Random Walks on Infinite Graphs and Groups* (Cambridge University Press, 2000), for the Kesten measure, the spectral radius and the return probabilities.
+- Laurent Bartholdi, Rostislav Grigorchuk and Volodymyr Nekrashevych, "From fractal groups to fractal sets", in *Fractals in Graz 2001* (Birkhäuser, 2003), 25–118, for the limit space, the orbital graphs and the dynamical systems of the family.

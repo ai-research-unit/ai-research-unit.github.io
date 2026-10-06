@@ -24,7 +24,7 @@ $$
 \qquad
 \mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_1, ie_2, ie_3\},
 $$
-with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center. The isomorphism is $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, the **biquaternion norm** is $N(\tilde Q) = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The single-mode ladder is $\tilde a_{\mathrm{tr}} = \tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger = \tfrac12(ie_1+e_2)$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
+with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center. The isomorphism is $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, the **biquaternion norm** is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The single-mode ladder is $\tilde a_{\mathrm{tr}} = \tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger = \tfrac12(ie_1+e_2)$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
 
 ## The Vacuum as a State
 
@@ -80,7 +80,7 @@ The reason minimality matters physically is the third face of the definition in 
 $$
 \omega_{\tilde P}(\tilde A) \;=\; \mathrm{Tr}\big(\tilde P\tilde A\big),
 $$
-which on an **observable** $\tilde A\in\mathbb{M}_+$ takes the real value $2\,\mathrm{Sc}(\tilde P\tilde A)$. A pure state is exactly what a vacuum is. A rank-two projector with $\mathrm{Tr}=1$ would be the maximally mixed state $\tfrac12 e_0$, and a general element of the Bloch ball is neither.
+which on an **observable** $\tilde A\in\mathbb{M}_+$ takes the real value $2\,\mathrm{Sc}(\tilde P\tilde A) = 2\langle\tilde P,\tilde A\rangle$. A pure state is exactly what a vacuum is. A rank-two projector with $\mathrm{Tr}=1$ would be the maximally mixed state $\tfrac12 e_0$, and a general element of the Bloch ball is neither.
 
 ## The One-Mode Vacuum
 
@@ -272,8 +272,8 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}},\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; center $\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ |
-| $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q)$ | Biquaternion norm |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, $\mathrm{Tr}(e_0)=2$ | Trace pairing |
+| $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q)$ | Biquaternion norm |
+| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, $\mathrm{Tr}(e_0)=2$ | Trace pairing |
 | $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$ | Matrix isomorphism |
 | $\tilde\Pi(\pm\hat{\boldsymbol\mu})=\tfrac12(e_0\pm i\hat{\boldsymbol\mu})$, $\hat{\boldsymbol\mu}\in S^2$ | Minimal idempotents; vacuum projectors |
 | $|0\rangle\langle 0|=\tilde\Pi_1$ | One-mode vacuum projector |
@@ -283,6 +283,8 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 | $\mathbb{B}\tilde\Pi(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$ | Minimal left ideal; one-particle (spinor) module |
 | $\mathcal{M}_{\text{vac}}\cong S^2$ | Vacuum manifold |
 | $\omega_{\tilde P}(\tilde A)=\mathrm{Tr}(\tilde P\tilde A)$ | Pure state defined by a minimal idempotent |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

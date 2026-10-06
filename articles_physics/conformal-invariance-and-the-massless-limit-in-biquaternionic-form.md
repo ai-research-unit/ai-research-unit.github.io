@@ -288,7 +288,7 @@ $$
 $$
 the identity verified on a superposition of two Gaussians to a relative accuracy of $10^{-16}$ at the correct weight and failing at the wrong one; the dilation covariance was verified to $2\times10^{-8}$ and the harmonicity of $1/N(\tilde{Q})$ to $1.5\times10^{-7}$. The massless invariant kernel is the conformal two-point function of weight one, $G_{\mathrm{inv}} = 1/(4\pi^2N(\tilde{Q}))$, and it is the inversion image of the constant.
 
-The massless limit is the limit in which the on-shell symbol becomes a zero divisor: left multiplication by the on-shell momentum has complex rank four for $N(\tilde{K}) = -\mu^2\neq0$ and rank two for $N(\tilde{K}) = 0$, as computed on two on-shell momenta. The limit of the massive invariant kernel is the conformal two-point function, $\frac{\mu}{4\pi^2\rho}K_1(\mu\rho)\to1/(4\pi^2\rho^2)$, non-uniformly because the massive support is inside the cone and the massless support on it.
+The massless limit is the limit in which the on-shell symbol becomes a zero divisor: left multiplication by the on-shell momentum has complex rank four for $N(\tilde{K}) = \langle\tilde{K},\tilde{K}\rangle_{\natural} = -\mu^2\neq0$ and rank two for $N(\tilde{K}) = 0$, as computed on two on-shell momenta. The limit of the massive invariant kernel is the conformal two-point function, $\frac{\mu}{4\pi^2\rho}K_1(\mu\rho)\to1/(4\pi^2\rho^2)$, non-uniformly because the massive support is inside the cone and the massless support on it.
 
 The improved stress tensor has trace $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell in the framework's normalisation, verified on an off-shell test field and on an on-shell one in the $ict$ coordinates; the trace is proportional to the mass squared and vanishes in the massless limit, which is the local statement of the symmetry. The Maxwell field is conformally invariant with no limit to take and has $\Theta^\mu{}_\mu = 0$; the Proca field is broken by its mass as the scalar is. The Thomson limit of photon–electron scattering is the physical instance of the massless limit treated here, and the polarisation algebra of that limit is the subject of the article that follows.
 
@@ -311,6 +311,7 @@ The improved stress tensor has trace $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell 
 | $\Theta_{\mu\nu} = T_{\mu\nu} + \xi(\delta_{\mu\nu}\Box - \partial_\mu\partial_\nu)\phi^2$ | Improved stress tensor; $\xi = -\frac13$ in the framework normalisation, $\frac16$ in the standard one |
 | $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ | Trace on shell (framework normalisation); proportional to the mass term |
 | $\Theta^\mu{}_\mu = 0$ (Maxwell) | Trace-free conformally invariant vector field |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
 
 ## Further Reading
 

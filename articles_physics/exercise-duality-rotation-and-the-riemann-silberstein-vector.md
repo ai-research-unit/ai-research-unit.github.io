@@ -19,7 +19,7 @@ $$
 W = \tfrac12\left(\epsilon\,\mathbf E^2 + \mu\,\mathbf H^2\right),
 \qquad \mathbf S = \mathbf E\times\mathbf H,
 $$
-with $\tilde F\tilde F^{*} = 2W e_0 + \tfrac{2i}{c}\mathbf S$; and the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ of the informational sector. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\mathbf v$ (and $\mathbf u$) denotes a frame velocity.
+with $\tilde F\tilde F^{*} = 2W e_0 + \tfrac{2i}{c}\mathbf S$; and the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ of the informational sector. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\mathbf v$ (and $\mathbf u$) denotes a frame velocity.
 
 **What is to be shown.** (1) The duality rotation, in its three-vector form, is exactly the phase rotation $\mathbf V\mapsto e^{-i\theta}\mathbf V$, hence $\tilde F\mapsto e^{-i\theta}\tilde F$, and it preserves the physical reality condition on the fields. (2) Duality preserves the Hermitian form — the energy density $W$ and the Poynting vector $\mathbf S$ — while it rotates the biquaternion norm by $e^{-2i\theta}$, rotating the pair $(I_1,2cI_2)$ by the doubled angle $2\theta$ and leaving $I_1^2 + 4c^2I_2^2$ invariant. (3) Duality is a symmetry of the source-free equations; with electric sources alone it is not a symmetry, and its sourced completion rotates electric charge into magnetic charge. (4) The parent's self-dual/anti-self-dual paragraph contains a notation defect: the object paired with $\mathbf V$ is the complex conjugate $\mathbf V^*$, not the quaternion conjugate $\bar{\mathbf V}$. (5) The parent's claim that the two pieces transform independently under the Lorentz group is not backed by a biquaternion transformation law, and the natural guess — the four-vector rotor conjugation — fails on a boost.
 
@@ -95,7 +95,7 @@ by construction, so the transformed object is again a physical field strength of
 
 ## Problem 2: Duality and the Quadratic Objects
 
-**Statement.** (a) Compute $\mathbf V\cdot\mathbf V$ in terms of the invariants and derive the transformation of $I_1$ and $I_2$ under duality. (b) Derive the transformation of the biquaternion norm $N(\tilde F)=\tilde F\tilde F^{\natural}$ and identify the combination of invariants that duality leaves fixed. (c) Show that the Hermitian form $\tilde F\tilde F^{*}$, equivalently the energy density $W$ and the Poynting vector $\mathbf S$, is invariant. (d) Check all of this on two explicit fields: a generic field with nonzero $\mathbf E$ and $\mathbf B$, and a free plane wave (a null field).
+**Statement.** (a) Compute $\mathbf V\cdot\mathbf V$ in terms of the invariants and derive the transformation of $I_1$ and $I_2$ under duality. (b) Derive the transformation of the biquaternion norm $N(\tilde F) = \langle\tilde F,\tilde F\rangle_{\natural}=\tilde F\tilde F^{\natural}$ and identify the combination of invariants that duality leaves fixed. (c) Show that the Hermitian form $\tilde F\tilde F^{*}$, equivalently the energy density $W$ and the Poynting vector $\mathbf S$, is invariant. (d) Check all of this on two explicit fields: a generic field with nonzero $\mathbf E$ and $\mathbf B$, and a free plane wave (a null field).
 
 **Solution (a).** Expanding the complex dot product,
 $$
@@ -117,7 +117,7 @@ $$
 
 **Solution (b).** Since $\tilde F = i\sqrt{\epsilon}\mathbf V$ and $\tilde F^{\natural} = -\tilde F$ for a pure vector,
 $$
-N(\tilde F) = \tilde F\tilde F^{\natural} = \mathbf F\cdot\mathbf F = \left(i\sqrt{\epsilon}\right)^2\mathbf V\cdot\mathbf V
+N(\tilde F) = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural} = \mathbf F\cdot\mathbf F = \left(i\sqrt{\epsilon}\right)^2\mathbf V\cdot\mathbf V
 = -\epsilon\left(I_1 + 2ic\,I_2\right).
 $$
 Under $\tilde F\mapsto e^{-i\theta}\tilde F$, and because the central scalar $e^{-i\theta}$ is fixed by quaternion conjugation,
@@ -376,7 +376,7 @@ Two defects in the parent are recorded. First, the parent's equation $\bar{\math
 | $\mathbf V = \mathbf E + ic\mathbf B$ | Riemann–Silberstein vector, $\tilde F = i\sqrt{\epsilon}\mathbf V$ |
 | $\mathbf V^* = \mathbf E - ic\mathbf B$ | Complex conjugate of $\mathbf V$ |
 | $\theta$ | Duality angle |
-| $N(\tilde F) = \tilde F\tilde F^{\natural} = -\epsilon(I_1 + 2icI_2)$ | Biquaternion norm (complex scalar) |
+| $N(\tilde F) = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural} = -\epsilon(I_1 + 2icI_2)$ | Biquaternion norm (complex scalar) |
 | $I_1 = \mathbf E^2 - c^2\mathbf B^2$, $I_2 = \mathbf E\cdot\mathbf B$ | Lorentz invariants (scalar, pseudoscalar) |
 | $W = \tfrac12(\epsilon\mathbf E^2 + \mu\mathbf H^2)$, $\mathbf S = \mathbf E\times\mathbf H$ | Energy density, Poynting vector |
 | $\tilde F\tilde F^{*} = 2We_0 + \frac{2i}{c}\mathbf S$ | Hermitian form (in $\mathbb{M}_+$) |
@@ -385,7 +385,9 @@ Two defects in the parent are recorded. First, the parent's equation $\bar{\math
 | $\tilde{\mathcal R} = \tilde R + i\tilde R_m$ | Combined source, duality covariant |
 | $\mathcal{A} = \sqrt{\epsilon}\,\mathbf E + i\sqrt{\mu}\,\mathbf H = -i\tilde F$ | Alexeyeva's A-field (the dual field strength) |
 | $\tilde\nabla\tilde F = -\tilde R$ | Biquaternionic Maxwell equation |
-| $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ | Trace formula (Born rule) |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

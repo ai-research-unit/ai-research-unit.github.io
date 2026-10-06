@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is studied in depth in the mathematics corpus, and every result the physics uses is explained there. This article is the physics-side entry point to that mathematical study. It carries the direct links to all one hundred and sixty-nine entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them. Every entry without a leading `+` opens a mathematics article directly; the twelve entries marked `+` are registered in the mathematics menu as planned and their articles are not yet written.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is studied in depth in the mathematics corpus, and every result the physics uses is explained there. This article is the physics-side entry point to that mathematical study. It carries the direct links to all one hundred and sixty-five entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them. Every entry opens a mathematics article directly.
 
 ## Algebra
 
@@ -217,24 +217,24 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 ### Fractal Geometry
 
-- + [The Biquaternion Quadratic Map and Its Julia Sets](../articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.html)
-- + [The Biquaternion Mandelbrot Set and the Connectedness Locus](../articles_maths/the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html)
-- + [The Slices of the Biquaternion Julia Sets](../articles_maths/the-slices-of-the-biquaternion-julia-sets.html)
-- + [The Escape Radius and the Green's Function for the Biquaternions](../articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.html)
-- + [The Zero Divisors and the Singular Julia Sets](../articles_maths/the-zero-divisors-and-the-singular-julia-sets.html)
-- + [The Three Conjugations and the Symmetric Biquaternion Fractals](../articles_maths/the-three-conjugations-and-the-symmetric-biquaternion-fractals.html)
-- + [The Matrix Representation and the Biquaternion Dynamics](../articles_maths/the-matrix-representation-and-the-biquaternion-dynamics.html)
-- + [The Idempotent Decomposition and the Split Fractal](../articles_maths/the-idempotent-decomposition-and-the-split-fractal.html)
-- + [The Biquaternion Iterated Function Systems](../articles_maths/the-biquaternion-iterated-function-systems.html)
-- + [The Hausdorff Dimension of the Biquaternion Julia Sets](../articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.html)
-- + [The Pluripotential Theory of the Biquaternion Dynamics](../articles_maths/the-pluripotential-theory-of-the-biquaternion-dynamics.html)
-- + [The Biquaternion Holomorphic Dynamics and the Jacobian](../articles_maths/the-biquaternion-holomorphic-dynamics-and-the-jacobian.html)
+- [The Biquaternion Quadratic Map and Its Julia Sets](../articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.html)
+- [The Biquaternion Mandelbrot Set and the Connectedness Locus](../articles_maths/the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html)
+- [The Slices of the Biquaternion Julia Sets](../articles_maths/the-slices-of-the-biquaternion-julia-sets.html)
+- [The Escape Radius and the Green's Function for the Biquaternions](../articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.html)
+- [The Zero Divisors and the Singular Julia Sets](../articles_maths/the-zero-divisors-and-the-singular-julia-sets.html)
+- [The Three Conjugations and the Symmetric Biquaternion Fractals](../articles_maths/the-three-conjugations-and-the-symmetric-biquaternion-fractals.html)
+- [The Matrix Representation and the Biquaternion Dynamics](../articles_maths/the-matrix-representation-and-the-biquaternion-dynamics.html)
+- [The Idempotent Decomposition and the Split Fractal](../articles_maths/the-idempotent-decomposition-and-the-split-fractal.html)
+- [The Biquaternion Iterated Function Systems](../articles_maths/the-biquaternion-iterated-function-systems.html)
+- [The Hausdorff Dimension of the Biquaternion Julia Sets](../articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.html)
+- [The Pluripotential Theory of the Biquaternion Dynamics](../articles_maths/the-pluripotential-theory-of-the-biquaternion-dynamics.html)
+- [The Biquaternion Holomorphic Dynamics and the Jacobian](../articles_maths/the-biquaternion-holomorphic-dynamics-and-the-jacobian.html)
 
 ## Summary
 
 - The biquaternion algebra is studied in depth in the mathematics corpus; this article is the physics-side sub-menu of that study and owns no result of its own.
 - The mathematical study is organised in four blocks: *Algebra*, *Topology*, *Analysis* and *Geometry*, and each block carries a part of the physics.
-- The article carries the direct links to all one hundred and sixty-nine entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them; of these, the twelve entries of the group *Fractal Geometry* are planned in the mathematics menu and not yet written, and they carry the same `+` marker here.
+- The article carries the direct links to all one hundred and sixty-five entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them.
 - The neighbouring mathematical systems, the split-biquaternions and the structural comparison around the biquaternions, are outside this index.
 
 ## Summary of Notation
@@ -248,6 +248,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 | $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}$, $\flat$ | the four conjugations: quaternion, complex, Hermitian and reversal |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ | the six distinguished subspaces |
 | $N(\tilde{Q})=\sum_\mu Q_\mu^2$ | the biquaternion norm, the form that carries the interval |
+| $\langle\cdot,\cdot\rangle$ | the bracket of the four forms of the study, the subscript recording the conjugation entering each argument |
 | $\Phi$ | the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $M_n(k)$, $\mathrm{Cl}_{p,q}$ | the matrix algebras and the Clifford algebras that appear in the titles below |
 

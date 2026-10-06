@@ -429,7 +429,7 @@ which is $ict\,e_0 + \mathbf{x}$ with $ct = ct'$ and $\mathbf{x} = -\mathbf{x}'$
 The **biquaternion norm** of a biquaternion is
 
 $$
-N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
+N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
 $$
 
 a complex number in general, central, **multiplicative**,
@@ -537,7 +537,7 @@ vanishing only for $\tilde{Q} = 0$.
 The four quadratic objects are distinct and each is used for a different job:
 
 - **Complex bilinear form:** $\mathrm{Sc}(\tilde{Q}\tilde{Q}) = \sum_\mu \varepsilon_\mu Q_\mu^2$ with $\varepsilon=(1,-1,-1,-1)$, the scalar part of the plain product and the diagonal of the complex bilinear pairing. Complex-bilinear and symmetric; on the material and informational sectors it is the Euclidean square with the sign of the sector, $-(c^2t^2+\mathbf{x}^2)$ on $\mathbb{M}_-$ and $+(c^2t'^2+\mathbf{x}'^2)$ on $\mathbb{M}_+$. It is the fourth form, the one the older count omitted.
-- **Biquaternion norm:** $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. Complex in general, central, multiplicative, capable of vanishing for nonzero $\tilde{Q}$. It controls the multiplicative structure: the rotors are its unit elements, and it carries the metric of the material sector.
+- **Biquaternion norm:** $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. Complex in general, central, multiplicative, capable of vanishing for nonzero $\tilde{Q}$. It controls the multiplicative structure: the rotors are its unit elements, and it carries the metric of the material sector.
 - **Hermitian form:** $\tilde{Q}\tilde{Q}^{*}$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$ and whose vector part is generally nonzero. Not multiplicative. It carries the positive-definite norm used by the operator and informational side of the series.
 - **Inner product:** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, complex in general, Hermitian, linear in the second argument. Its diagonal value equals the scalar part of the Hermitian form, and its imaginary part carries the relative phase of a pair.
 
@@ -562,7 +562,7 @@ The two **sectors** are where the form becomes indefinite, and they are the two 
 | $\mathbb{M}_-$ (material) | $ie_0, e_1, e_2, e_3$ | $-c^2t^2 + \mathbf{x}^2$ | $(-,+,+,+)$ |
 | $\mathbb{M}_+$ (informational) | $e_0, ie_1, ie_2, ie_3$ | $c^2(t')^2 - (\mathbf{x}')^2$ | $(+,-,-,-)$ |
 
-The material signature is the $ict$ metric of the series, $-c^2t^2 + \mathbf{x}^2$, and it is the signature of spacetime. The informational signature is its negative, which is not a second spacetime but the same form read on the other end of the dictionary. The two are exchanged by multiplication by $i$, exactly as the two sectors are. Only the two indefinite subspaces carry null elements, $N(\tilde{Q}) = 0$ with $\tilde{Q} \neq 0$; the light cone is the null cone of the material restriction.
+The material signature is the $ict$ metric of the series, $-c^2t^2 + \mathbf{x}^2$, and it is the signature of spacetime. The informational signature is its negative, which is not a second spacetime but the same form read on the other end of the dictionary. The two are exchanged by multiplication by $i$, exactly as the two sectors are. Only the two indefinite subspaces carry null elements, $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ with $\tilde{Q} \neq 0$; the light cone is the null cone of the material restriction.
 
 ## Summary
 
@@ -579,7 +579,7 @@ It carries four natural conjugations, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ a
 
 The three involutions give three direct-sum decompositions, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$, which are the three pairings of the four coordinate blocks $\mathbb{R}e_0$, $\mathbb{R}(ie_0)$, $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $\operatorname{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$; there is no fourth. Each of the four four-dimensional subspaces is one scalar block plus one vector block, and two distinct subspaces meet in dimension $0$, $1$ or $3$, the dimension $0$ occurring exactly for the three complementary pairs. Multiplication by the central $i$ swaps the two sectors and preserves the centre and the vector subspace.
 
-On the algebra sit four quadratic objects, kept apart throughout: the **complex bilinear form** $\mathrm{Sc}(\tilde{Q}\tilde{Q}) = \sum_\mu \varepsilon_\mu Q_\mu^2$, the scalar part of the plain product, indefinite and negative definite on the material sector; the **biquaternion norm** $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, multiplicative and capable of vanishing for nonzero $\tilde{Q}$, which is the level-1 form and reproduces the Minkowski interval on the material coordinate and the opposite signature on the informational one; the **Hermitian form** $\tilde{Q}\tilde{Q}^{*}$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$; and the complex **inner product** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, whose diagonal value is that scalar part and whose imaginary part carries the relative phase of a pair.
+On the algebra sit four quadratic objects, kept apart throughout: the **complex bilinear form** $\mathrm{Sc}(\tilde{Q}\tilde{Q}) = \sum_\mu \varepsilon_\mu Q_\mu^2$, the scalar part of the plain product, indefinite and negative definite on the material sector; the **biquaternion norm** $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, multiplicative and capable of vanishing for nonzero $\tilde{Q}$, which is the level-1 form and reproduces the Minkowski interval on the material coordinate and the opposite signature on the informational one; the **Hermitian form** $\tilde{Q}\tilde{Q}^{*}$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$; and the complex **inner product** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, whose diagonal value is that scalar part and whose imaginary part carries the relative phase of a pair.
 
 ## Summary of Notation
 
@@ -604,7 +604,7 @@ On the algebra sit four quadratic objects, kept apart throughout: the **complex 
 | $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$ | Complex conjugate |
 | $\tilde{Q}^{*} = Q_0^* e_0 - \mathbf{Q}^*$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, the level-1 form |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, the level-1 form |
 | $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*}) = \sum_\mu |Q_\mu|^2$ | Scalar part of the Hermitian form |
 | $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$ | Inner product |
 | $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})}$ | Euclidean norm |
@@ -615,6 +615,8 @@ On the algebra sit four quadratic objects, kept apart throughout: the **complex 
 | $\mathbb{M}_+$ | Hermitian subspace: informational sector, basis $e_0,ie_1,ie_2,ie_3$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace: material sector, basis $ie_0,e_1,e_2,e_3$ |
 | $A_1,A_2,B_1,B_2$ | The four coordinate blocks $\mathbb{R}e_0$ ($ct'$), $\mathbb{R}(ie_0)$ ($ict$), $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$ ($x,y,z$), $\operatorname{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$ ($ix',iy',iz'$) |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

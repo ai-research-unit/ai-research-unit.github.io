@@ -15,7 +15,7 @@ The position is stated at the outset, and the article defends it section by sect
 
 The article is organised as follows. The next section sets up the mass as a field, from the Lanczos feedback through the Einstein–Mayer mass biquaternion to the eigenvalues that read as two masses. A section states Petiau's closure of the system and checks its reduction to Lanczos. Two sections give the double-periodic waves and the quartic Hamiltonian. A section gives Barut's empirical formula and the moduli ratio, with its status. A closing section separates what is supplied, transcribed, and missing.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_1e_2=e_3$ and cyclic, central scalar imaginary $i$, $i^2=-1$, and $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde{\nabla}=e_0\,\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_0\,\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial_{ict}^2+\Delta$ is the series' d'Alembertian. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, whose vanishing defines the **singular** (null) biquaternions; the conjugations are ${}^{\natural}$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}={}^{\natural}\circ\bar{\cdot}$ and the anti-Hermitian $\flat=-{}^{*}$. The trace is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Standard-model quantities — Yukawa couplings, the charged-lepton and quark masses in $\mathrm{MeV}/c^2$, the fine-structure constant $\alpha$ — are used where standard physics is named and are not framework structure.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_1e_2=e_3$ and cyclic, central scalar imaginary $i$, $i^2=-1$, and $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde{\nabla}=e_0\,\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_0\,\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial_{ict}^2+\Delta$ is the series' d'Alembertian. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, whose vanishing defines the **singular** (null) biquaternions; the conjugations are ${}^{\natural}$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}={}^{\natural}\circ\bar{\cdot}$ and the anti-Hermitian $\flat=-{}^{*}$. The trace is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. Standard-model quantities — Yukawa couplings, the charged-lepton and quark masses in $\mathrm{MeV}/c^2$, the fine-structure constant $\alpha$ — are used where standard physics is named and are not framework structure.
 
 The framework results used here are those of the companion articles:
 
@@ -81,7 +81,7 @@ The two eigenvalues of $\tilde{E}\tilde{E}^{*}$ are the two mass-squareds, and e
 
 **A Hermitian idempotent, $\tilde{E}=\tilde{\Pi}$.** Then $\tilde{E}^{*}=\tilde{E}$ and $\tilde{E}^2=\tilde{E}$, so $\tilde{E}\tilde{E}^{*}=\tilde{E}$, which is a rank-one projection: its eigenvalues are $1$ and $0$. The doublet is **split**, one mode massive and one massless. This is the case the source reads as the **electron–neutrino** doublet — the charged fermion and its massless partner.
 
-**A singular biquaternion, $N(\tilde{E})=0$.** Then $\det\Phi(\tilde{E}\tilde{E}^{*})=|N(\tilde{E})|^2=0$, so at least one eigenvalue vanishes: **a singular mass field always leaves a massless mode**, whatever else it does. The identity $\det\Phi(\tilde{E}\tilde{E}^{*})=|N(\tilde{E})|^2$ is the determinant of the matrix of the mass operator, and it is verified here; the vanishing of the norm is exactly the condition the idempotent case realises. The corpus's example $\tilde{E}=e_1+ie_2$ is singular, $N(e_1+ie_2)=1+i^2=0$, and its two mass-squareds are $4$ and $0$ — one massive mode and the electron–neutrino skeleton, checked directly.
+**A singular biquaternion, $N(\tilde{E}) = \langle\tilde{E},\tilde{E}\rangle_{\natural}=0$.** Then $\det\Phi(\tilde{E}\tilde{E}^{*})=|N(\tilde{E})|^2=0$, so at least one eigenvalue vanishes: **a singular mass field always leaves a massless mode**, whatever else it does. The identity $\det\Phi(\tilde{E}\tilde{E}^{*})=|N(\tilde{E})|^2$ is the determinant of the matrix of the mass operator, and it is verified here; the vanishing of the norm is exactly the condition the idempotent case realises. The corpus's example $\tilde{E}=e_1+ie_2$ is singular, $N(e_1+ie_2)=1+i^2=0$, and its two mass-squareds are $4$ and $0$ — one massive mode and the electron–neutrino skeleton, checked directly.
 
 The three cases are collected in one table.
 
@@ -239,7 +239,7 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $m=mc/\hbar$ | Scalar mass parameter, inverse-length units |
 | $\tilde{E}$ | Einstein–Mayer mass biquaternion |
 | $\tilde{C}$ | Petiau spin-0 field, closing the system |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; $N=0$ defines the singular elements |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; $N=0$ defines the singular elements |
 | $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ | Hermitian conjugation (the source's biconjugation) |
 | $\tilde{E}\tilde{E}^{*},\ \tilde{E}^{*}\tilde{E}$ | Mass-squared operators of $\tilde{A}$ and $\tilde{B}$ |
 | $\det\Phi(\tilde{E}\tilde{E}^{*})=|N(\tilde{E})|^2$ | Determinant identity; vanishing forces a massless mode |
@@ -253,6 +253,8 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $M(N)=M_e(1+\tfrac{3}{2}\alpha^{-1}\sum_{n=0}^{N}n^4)$ | Barut's empirical leptonic formula |
 | $\alpha\approx1/137$ | Fine-structure constant |
 | $[\sin(\pi/4)/\sin(\pi/12)]^2=7.464$ | Harmonic-to-equianharmonic moduli ratio (source) |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

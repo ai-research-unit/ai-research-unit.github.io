@@ -18,7 +18,7 @@ $$
 \tilde R=\exp\!\left(+\tfrac{\alpha}{2}\hat{\mathbf n}\right)=\cos\tfrac{\alpha}{2}\,e_0+\sin\tfrac{\alpha}{2}\,\hat{\mathbf n},
 $$
 
-acting by conjugation. The biquaternion norm is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$. Inertia tensors are written in the principal (body) frame with principal moments $I_1,I_2,I_3$, and $\mathbf L=I\boldsymbol\omega$ is the angular momentum.
+acting by conjugation. The biquaternion norm is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. Inertia tensors are written in the principal (body) frame with principal moments $I_1,I_2,I_3$, and $\mathbf L=I\boldsymbol\omega$ is the angular momentum.
 
 The companion articles used are:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the generators of rotations and the rotor algebra.
@@ -67,7 +67,7 @@ Two integrals are immediate for a torque-free body: the energy $T$ and the squar
 
 ### The Double Cover
 
-A unit real quaternion $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R)=\tilde R\tilde R^{\natural}=e_0$, defines a rotation by conjugation,
+A unit real quaternion $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R) = \langle\tilde R,\tilde R\rangle_{\natural}=\tilde R\tilde R^{\natural}=e_0$, defines a rotation by conjugation,
 
 $$
 \tilde{Q}\longmapsto\tilde R\,\tilde{Q}\,\tilde R^{*}=\tilde R\,\tilde{Q}\,\tilde R^{\natural},
@@ -354,6 +354,9 @@ The rigid body is described in the biquaternion algebra as follows.
 | $N(\tilde L)=\mathbf L^2$ | Squared angular momentum (biquaternion norm) |
 | $\Omega=(I_3-I_\perp)\omega_3/I_\perp$ | Body-frame precession rate of the symmetric top |
 | $(\phi,\theta,\psi)$ | Euler angles ($z$–$y$–$z$ sequence) |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

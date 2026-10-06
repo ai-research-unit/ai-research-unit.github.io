@@ -476,7 +476,7 @@ The formulation is a transcription, exact for configurations that fit in a real 
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\tilde q=q_0e_0+\mathbf q$ | Configuration quaternion (real) |
 | $\dot{\tilde q}$ | Configuration velocity |
-| $N(\tilde q)=\tilde q\tilde q^{\natural}$ | Biquaternion norm |
+| $N(\tilde q) = \langle\tilde q,\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | Biquaternion norm |
 | $L(\tilde q,\dot{\tilde q},t)$ | Lagrangian |
 | $F(\tilde q,t)$, $L'=L+dF/dt$ | Arbitrary function and the total-derivative ambiguity of the Lagrangian |
 | $S[\tilde q]=\int L\,dt$ | Action; ambiguous by the endpoint term $F(t_2)-F(t_1)$ |
@@ -493,6 +493,7 @@ The formulation is a transcription, exact for configurations that fit in a real 
 | $\tilde L=\tilde q\tilde p$ | Angular momentum (vector part $\mathbf q\times\mathbf p$) |
 | $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R)=e_0$ | Rotation rotor |
 | $\mathrm{Tr}(e_0)=2$ | Trace normalization |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

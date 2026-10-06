@@ -133,7 +133,7 @@ The trace and the determinant are real, in agreement with the theorem; the matri
 
 On the light cone the two factors of the product are singular, and the operator collapses.
 
-**Theorem (the singular case).** Let $N(\tilde{Q}) = 0$ and $\tilde{Q} \neq 0$. Then $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = 1$, and
+**Theorem (the singular case).** Let $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q} \neq 0$. Then $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = 1$, and
 
 $$
 \operatorname{H}_{\tilde{Q}} \circ \operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\,\operatorname{H}_{\tilde{Q}} .
@@ -213,6 +213,9 @@ The two regimes are separated by the vanishing of those invariants. Off the ligh
 | $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = 4$ or $1$ | off the light cone, and on it |
 | $\operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\operatorname{H}_{\tilde{Q}}$, $N = 0$ | nilpotent if $Q_0 = 0$, projection up to scale otherwise |
 | $\det_{\mathbb{R}} = \lvert N\rvert^{8}$, $\operatorname{Tr}_{\mathbb{R}} = 8\lvert Q_0\rvert^{2}$ | the real $8\times8$ form |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

@@ -14,7 +14,7 @@ The question is a physical one, and it has a physical answer. The Lorentz transf
 
 Three results organise the answer. The first is a **central invariance**: multiplying the acting element by a central scalar multiplies the sandwich by the squared modulus of that scalar. Because the scalar imaginary $i$ is central, the six subspaces collapse to four **operator classes**: the centre, the vector subspace, the two halves together, and the two sectors together; an antiquaternion acts exactly as its real quaternion, and an element of the material sector acts exactly as the corresponding informational element. The second is that the operator's **type** is decided by the subspace in a sharp way: the centre gives the dilations, the vector subspace gives the similarities, the rotations by $\pi$ among them, the two halves give the rotations, and the two sectors give the similarities, which on the unit-norm slice are the Lorentz transformations: the boosts, and the boosts composed with a rotation by $\pi$ on the negative-norm branch. The third is the answer to the question the series puts to the Hermitian subspace: **the Lorentz transformation of the corpus is the sandwich of a unit-norm element of $\mathbb{M}_+$**, so the informational sector is the home of the boosts, and the material sector reaches the same family through the central imaginary.
 
-The conventions are those of *Conventions in the Biquaternion Universe*, and the notation is that of *Biquaternion Rotations and Lorentz Transformations*: $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$; $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{*}$ is the sandwich, which is the map the series calls rotor conjugation when $\tilde{Q}$ has unit norm; a **rotor** is an element of unit norm, so that $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ and $\tilde{\Lambda}^{*} = \overline{\tilde{\Lambda}^{\natural}}$; $\hat{q}$ is a unit real quaternion; and the six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the informational and material sectors $\mathbb{M}_+$ and $\mathbb{M}_-$. Every identity quoted below was recomputed in double precision on random elements, and the residuals are below $10^{-10}$.
+The conventions are those of *Conventions in the Biquaternion Universe*, and the notation is that of *Biquaternion Rotations and Lorentz Transformations*: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$; $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{*}$ is the sandwich, which is the map the series calls rotor conjugation when $\tilde{Q}$ has unit norm; a **rotor** is an element of unit norm, so that $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ and $\tilde{\Lambda}^{*} = \overline{\tilde{\Lambda}^{\natural}}$; $\hat{q}$ is a unit real quaternion; and the six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the informational and material sectors $\mathbb{M}_+$ and $\mathbb{M}_-$. Every identity quoted below was recomputed in double precision on random elements, and the residuals are below $10^{-10}$.
 
 ## The Central Factor Leaves the Operator Alone
 
@@ -87,7 +87,7 @@ The centre therefore contributes to the operator nothing but a dilation of the w
 
 The result is the operator form of a fact about the polar representation: the two factors of a polar element that lie in the centre are the scale $r$ and the phase $e^{i\alpha}$, and a dilation by $r^2$ is the only trace of them that an operator can carry. The sandwich carries the modulus but not the argument, since $|z|^2$ distinguishes $z$ from $\bar{z}$, from $-z$ and from $e^{i\alpha}z$. In the four-factor polar language the centre is the class in which the boost factor and the rotor are both trivial, and the operator statement is that the surviving datum is the modulus, once, squared.
 
-**Example.** Take $z = 3 + 2i$, of modulus $\sqrt{13}$ and biquaternion norm $N = (3+2i)^2 = 5 + 12i$ of modulus $13$. Then $\operatorname{H}_{ze_0}(\tilde S) = 13\tilde S$ on every element, so $N\!\left(\operatorname{H}_{ze_0}(\tilde S)\right) = 169N(\tilde S) = |N(\tilde{Q})|^2N(\tilde S)$, in agreement with the scaling of the biquaternion norm.
+**Example.** Take $z = 3 + 2i$, of modulus $\sqrt{13}$ and biquaternion norm $N = (3+2i)^2 = 5 + 12i$ of modulus $13$. Then $\operatorname{H}_{ze_0}(\tilde S) = 13\tilde S$ on every element, so $N\!\left(\operatorname{H}_{ze_0}(\tilde S)\right) = 169N(\tilde S) = \langle\tilde S,\tilde S\rangle_{\natural} = |N(\tilde{Q})|^2N(\tilde S)$, in agreement with the scaling of the biquaternion norm.
 
 ## The Vector Subspace: the Similarities
 
@@ -169,7 +169,7 @@ For $\mathbf{v}$ in the vector subspace the element $i\mathbf{v}$ is again in th
 
 ### The Quaternion Subspace
 
-Let $\tilde{R}$ be a real quaternion, $\tilde{R} = a_0e_0 + a_1e_1+a_2e_2+a_3e_3$ with real coefficients. Its Hermitian conjugate is its quaternion conjugate, $\tilde{R}^{*} = \tilde{R}^{\natural} = |\tilde{R}|^2\tilde{R}^{-1}$, with $N(\tilde{R}) = |\tilde{R}|^2$ a positive real, so the central rule gives
+Let $\tilde{R}$ be a real quaternion, $\tilde{R} = a_0e_0 + a_1e_1+a_2e_2+a_3e_3$ with real coefficients. Its Hermitian conjugate is its quaternion conjugate, $\tilde{R}^{*} = \tilde{R}^{\natural} = |\tilde{R}|^2\tilde{R}^{-1}$, with $N(\tilde{R}) = \langle\tilde{R},\tilde{R}\rangle_{\natural} = |\tilde{R}|^2$ a positive real, so the central rule gives
 
 $$
 \operatorname{H}_{\tilde{R}}(\tilde S) = \tilde{R}\,\tilde S\,\tilde{R}^{\natural} = |\tilde{R}|^2\,\operatorname{H}_{\hat{R}}(\tilde S) , \qquad \hat{R} = \tilde{R}/|\tilde{R}| .
@@ -366,6 +366,9 @@ The type of the operator is therefore decided by the class of the acting element
 | $\hat{q} = \cos\theta+\sin\theta\,\hat{\mathbf{u}}$ | the rotation rotor, a unit real quaternion |
 | $\tilde{Q} = \sinh\varphi\,e_0 + i\cosh\varphi\,\hat{\mathbf{u}}$, $N = -1$ | the negative-norm branch of the informational sector, $= i\tilde{\Lambda}\hat{\mathbf{u}}$ |
 | $SO^+(1,3)$, $SO(3)$ | the Lorentz group and the rotation group reached by the sandwich |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

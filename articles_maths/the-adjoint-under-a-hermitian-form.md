@@ -1,0 +1,233 @@
+# __The Adjoint under a Hermitian Form__
+
+## Introduction
+
+A Hermitian form of the layer pairs two elements and returns a scalar, and an operator acting on the first slot is carried by the pairing to an operator acting on the second: the **adjoint** of $T$ for $h$ is the operator $T^{\dagger}$ with $h(Tx,y) = h(x,T^{\dagger}y)$. Part I constructed this adjoint for the scalar pairing $\varphi(x,y) = \tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*, and *Adjoints of Bounded Sesquilinear Operators* constructed it for the canonical $A$-valued pairing $h(x,y) = x^{*}y$, where the adjoint need not exist. This article constructs it for an arbitrary Hermitian form of the layer, the form of *Topological Sesquialgebras with a Form*, and shows that the theory is the one of a nondegenerate pairing together with the two facts that the form is Hermitian and that it is compatible with the product: the first makes the adjoint an anti-automorphism of order two, the second makes the one-sided multiplications adjoint in pairs. The indefinite case is included, and the conjugation by the fundamental symmetry of *The Fundamental Symmetry of the Form* identifies its adjoint with the definite one.
+
+Three facts organise the article. The **adjoint exists and is unique** as soon as the form is nonsingular — the Riesz map $y \mapsto h(\cdot,y)$ an isomorphism — and the assignment $T \mapsto T^{\dagger}$ is a $\varsigma$-semilinear anti-automorphism of order two of the algebra of operators, not an $R$-linear one, because the form carries the twist in its second slot; it preserves self-adjointness, normality and unitarity in the evident senses, and the unitary operators are exactly the invertible isometries. For a **semilinear** operator the linear rule has no solution and the adjoint is taken by the twisted rule $h(Sx,y) = \varsigma(h(x,S^{\dagger}y))$, which preserves the parity; the two adjoints that a semilinear operator admits — the adjoint against $h$ and the left adjoint against the transposed form — coincide, because the form is Hermitian, and this is the same pair of adjoints as in Part I. And the **compatibility** with the product is exactly the adjointness of the left multiplications: $h(xz,y) = h(z,x^{*}y)$ says $m_{x}^{\dagger} = m_{x^{*}}$, so the multiplication by an element and the multiplication by its image under the involution are adjoint, and the conjugate left multiplication $z \mapsto xz^{*}$ has for adjoint the operator $y \mapsto y^{*}x$, a sandwich and not a one-sided multiplication.
+
+The article defines the adjoint and proves its existence, develops the anti-automorphism and the self-adjoint and unitary criteria, treats the semilinear operator and its two adjoints, records the one-sided multiplications and the inner automorphisms, and works the field, the matrices and the indefinite biquaternion form. The definite case is *The Norm Defined by a Form*; the twist and the two adjoints of Part I are *The Sesquilinear Adjoint Operator*; the $A$-valued pairing is *Adjoints of Bounded Sesquilinear Operators*; the conjugation by the fundamental symmetry is *The Fundamental Symmetry of the Form*; the bilinear counterpart is *Hermitian Adjoints on a Hilbert Algebra*. Throughout, $A$ is a sesquialgebra with a form over a base $(R,\varsigma)$ of one of the two classical kinds of *The Norm Defined by a Form*, with fixed field $k = R^{\varsigma}$ and $R$ complete, $h$ is Hermitian, compatible and **nonsingular**, and the operators are the bounded $R$-linear maps of $A$, written $B(A)$, and the bounded $\varsigma$-semilinear maps, written $B^{\varsigma}(A)$.
+
+## The Adjoint of a Linear Operator
+
+### Existence and Uniqueness
+
+**Definition.** Let $T \in B(A)$. A **right adjoint** of $T$ for $h$ is an operator $T^{\dagger} \in B(A)$ with
+
+$$
+h(Tx,y) = h(x,T^{\dagger}y) \qquad \text{for all } x, y \in A .
+$$
+
+The form is **nonsingular** when the **Riesz map** $\flat : A \to A^{*}$, $\flat(y) = h(\cdot,y)$, into the continuous dual is a bijection; it is **nondegenerate** when $\flat$ is injective. The Riesz map is $\varsigma$-semilinear, $\flat(\lambda y) = \varsigma(\lambda)\flat(y)$, because the form reads a scalar in its second slot through $\varsigma$.
+
+**Theorem (existence and uniqueness).** Let $h$ be nonsingular. Then every $T \in B(A)$ has exactly one right adjoint $T^{\dagger}$, given by
+
+$$
+T^{\dagger} = \flat^{-1}\circ T^{\flat}\circ\flat , \qquad T^{\flat}(\varphi) = \varphi\circ T ,
+$$
+
+it is bounded, and $\lVert T^{\dagger}\rVert \leq \lVert \flat\rVert\lVert \flat^{-1}\rVert\lVert T\rVert$.
+
+*Proof.* For a continuous functional $\varphi \in A^{*}$ the pullback $\varphi\circ T$ is continuous, so $T^{\flat}$ is defined on $A^{*}$. For fixed $y$, the map $x \mapsto h(Tx,y)$ is continuous and $R$-linear in the first slot, hence an element of $A^{*}$, and by the surjectivity of $\flat$ it is $x \mapsto h(x,z)$ for exactly one $z$, which is $T^{\dagger}y$; the uniqueness is the triviality of the left radical, which nonsingularity contains. The formula and the bound are the composition $\flat^{-1}\circ T^{\flat}\circ\flat$ of the bounded isomorphism $\flat$ with the bounded map $T^{\flat}$, and the additive and scalar laws are those of a pullback. $\square$
+
+**Remark (the hypothesis, and the failure without it).** Nonsingularity is the Riesz representation property of the form; it holds for a nondegenerate form on a reflexive module and, in the normed case, for a Hilbert space with its inner product, so the whole definite theory is covered. Without it the adjoint may fail to exist, exactly as for the $A$-valued pairing of *Adjoints of Bounded Sesquilinear Operators*: the form $\operatorname{tr}(XE_{11}Y^{*})$ of *Topological Sesquialgebras with a Form*, §*The Radical Is an Ideal* has a proper radical, no element $z$ represents a functional that is nonzero on the radical, and the operator with $Tx$ constant on a complement of the radical has no adjoint. The examples of the article are all nonsingular.
+
+### The Anti-Automorphism
+
+**Theorem (the adjoint operation).** Let $h$ be nonsingular. Then $T \mapsto T^{\dagger}$ is a bijection of $B(A)$ of order two, and for $S, T \in B(A)$ and $\lambda \in R$,
+
+$$
+(S+T)^{\dagger} = S^{\dagger}+T^{\dagger} , \qquad (\lambda T)^{\dagger} = \varsigma(\lambda)T^{\dagger} , \qquad (ST)^{\dagger} = T^{\dagger}S^{\dagger} , \qquad (T^{\dagger})^{\dagger} = T , \qquad 1^{\dagger} = 1 .
+$$
+
+It is therefore a $\varsigma$-semilinear anti-automorphism of order two of the algebra $B(A)$.
+
+*Proof.* Each identity is read off the defining relation. Additivity is the additivity of $h$ in the first slot; the scalar law is $h(\lambda Tx,y) = \lambda h(Tx,y) = \lambda h(x,T^{\dagger}y) = h(x,\varsigma(\lambda)T^{\dagger}y)$, the last step because $h$ reads a scalar in its second slot through $\varsigma$, so $(\lambda T)^{\dagger} = \varsigma(\lambda)T^{\dagger}$; the composites are $h(STx,y) = h(Tx,S^{\dagger}y) = h(x,T^{\dagger}S^{\dagger}y)$; the order two law is the definition read backwards, $T$ representing $\varphi \mapsto h(x,T^{\dagger}y)$; and $1^{\dagger}=1$ is $h(x,y) = h(x,y)$. Uniqueness of the adjoint makes each identity an equality of operators. $\square$
+
+**Remark (the semilinearity is the twist).** The operation is additive and $\varsigma$-semilinear, not $R$-linear: the twist $\varsigma(\lambda)$ is exactly the twist of the form's second slot, and it is absent when $\varsigma = \mathrm{id}$. This is the same defect, in the same place, as in the product of the layer, whose second slot is $\varsigma$-semilinear, and it is the reason the adjoint operation belongs to the graded algebra $B(A)\oplus B^{\varsigma}(A)$ of *Bounded Operators on a Sesquialgebra* rather than to $B(A)$ alone.
+
+### Self-Adjoint, Normal and Unitary
+
+**Definition.** Let $T \in B(A)$. Then $T$ is **self-adjoint** when $T^{\dagger} = T$, **skew-adjoint** when $T^{\dagger} = -T$, **normal** when $TT^{\dagger} = T^{\dagger}T$, **an isometry** when $T^{\dagger}T = 1$, and **unitary** when $T^{\dagger}T = TT^{\dagger} = 1$.
+
+**Theorem (the criteria).** Let $h$ be nonsingular. Then $T$ is an isometry exactly when $h(Tx,Ty) = h(x,y)$ for all $x,y$; $T$ is unitary exactly when it is an invertible isometry, equivalently when $T^{\dagger} = T^{-1}$; and the adjoint of an invertible operator is invertible with $(T^{-1})^{\dagger} = (T^{\dagger})^{-1}$.
+
+*Proof.* If $T^{\dagger}T = 1$ then $h(Tx,Ty) = h(x,T^{\dagger}Ty) = h(x,y)$; conversely if $h(Tx,Ty) = h(x,y)$ for all $x,y$ then $h(x,T^{\dagger}Ty) = h(x,y)$, so $T^{\dagger}T = 1$ by the nondegeneracy. If $T$ is invertible and isometric then $T^{\dagger} = T^{\dagger}TT^{-1} = T^{-1}$, whence $TT^{\dagger} = 1$; the converse is the same computation. The inverse formula is $(T^{-1})^{\dagger}T^{\dagger} = (TT^{-1})^{\dagger} = 1$ and $T^{\dagger}(T^{-1})^{\dagger} = 1$. $\square$
+
+## The Two Adjoints of a Semilinear Operator
+
+### The Twisted Rule
+
+**Proposition (no linear adjoint for a semilinear operator).** Let $\varsigma \neq \mathrm{id}$, let $R$ have no zero divisors, and let $S$ be a nonzero $\varsigma$-semilinear operator. Then there is no operator $U$ with $h(Sx,y) = h(x,Uy)$ for all $x,y$.
+
+*Proof.* Replacing $x$ by $\lambda x$, the left side gains $\varsigma(\lambda)$ and the right side gains $\lambda$, so $(\varsigma(\lambda)-\lambda)h(Sx,y) = 0$; choosing $\lambda$ with $\varsigma(\lambda) \neq \lambda$ and using the absence of zero divisors gives $h(Sx,y)=0$ for all $x,y$, hence $S = 0$ by the nondegeneracy, a contradiction. This is the proposition of *The Sesquilinear Adjoint Operator*, §*The Parity Obstruction* read for the general Hermitian form. $\square$
+
+**Definition.** Let $S \in B^{\varsigma}(A)$. The **adjoint** of $S$ is the operator $S^{\dagger} \in B^{\varsigma}(A)$ with
+
+$$
+h(Sx,y) = \varsigma\bigl(h(x,S^{\dagger}y)\bigr) \qquad \text{for all } x, y \in A .
+$$
+
+**Theorem (existence and parity preservation).** Let $h$ be nonsingular. Then every $S \in B^{\varsigma}(A)$ has exactly one adjoint $S^{\dagger}$, and it is $\varsigma$-semilinear, so the adjoint operation preserves the parity. For $S, U \in B^{\varsigma}(A)$, $T \in B(A)$ and $\lambda \in R$,
+
+$$
+(S+U)^{\dagger} = S^{\dagger}+U^{\dagger} , \quad (\lambda S)^{\dagger} = \lambda S^{\dagger} , \quad (SU)^{\dagger} = U^{\dagger}S^{\dagger} , \quad (ST)^{\dagger} = T^{\dagger}S^{\dagger} , \quad (TS)^{\dagger} = S^{\dagger}T^{\dagger} , \quad (S^{\dagger})^{\dagger} = S .
+$$
+
+*Proof.* The proof is that of *The Sesquilinear Adjoint Operator*, §*The Twisted Rule* with $\varphi$ replaced by $h$: for fixed $y$ the map $x \mapsto \varsigma(h(Sx,y))$ is $R$-linear because $S$ is semilinear and $\varsigma^{2} = \mathrm{id}$, hence it is $x \mapsto h(x,z)$ for a unique $z$ by nonsingularity, and $S^{\dagger}y = z$. The parity is $S^{\dagger}(\lambda y) = \varsigma(\lambda)S^{\dagger}y$, computed from the definition; the additive and scalar laws are the definition; and the composites carry as many twists as their semilinear factors, so the twists cancel in pairs for the composite $SU$ of two semilinear operators, which is linear and has $U^{\dagger}S^{\dagger}$ for adjoint, while the mixed composites $ST$ and $TS$ are semilinear and obey the twisted rule with the adjoints $T^{\dagger}S^{\dagger}$ and $S^{\dagger}T^{\dagger}$. $\square$
+
+**Remark (the two scalar laws).** The operation is $\varsigma$-semilinear on $B(A)$ and $R$-linear on $B^{\varsigma}(A)$: $(\lambda T)^{\dagger} = \varsigma(\lambda)T^{\dagger}$ against $(\lambda S)^{\dagger} = \lambda S^{\dagger}$. The reason is the same as in Part I: the twisted rule of a semilinear operator carries a $\varsigma$ that cancels the one with which the form reads a scalar in its second slot, while the rule of a linear operator carries none.
+
+### The Two Adjoints
+
+**Definition.** The **left adjoint** of $S \in B^{\varsigma}(A)$ for $h$ is the operator ${}^{\dagger}S$ with
+
+$$
+h(y,Sx) = \varsigma\bigl(h({}^{\dagger}Sy,x)\bigr) \qquad \text{for all } x, y \in A ,
+$$
+
+that is, the adjoint of $S$ against the transposed form $h^{t}(x,y) = h(y,x)$, read with the two arguments in the other order.
+
+**Theorem (the two adjoints coincide).** Let $h$ be Hermitian and nonsingular. Then for every $S \in B^{\varsigma}(A)$ the left adjoint exists, is unique, and equals the adjoint,
+
+$$
+{}^{\dagger}S = S^{\dagger} .
+$$
+
+*Proof.* The left adjoint is the adjoint against $h^{t}$ read with the arguments exchanged, so it exists and is unique by the theorem of §*The Twisted Rule*. For the coincidence, the Hermitian property turns the defining relation of $S^{\dagger}$ into $h(Sx,y) = \varsigma(h(x,S^{\dagger}y))$, that is $h(y,Sx) = h(x,S^{\dagger}y)$ after applying $\varsigma$; and the defining relation of ${}^{\dagger}S$, read through the Hermitian property as $h({}^{\dagger}Sy,x) = \varsigma(h(x,{}^{\dagger}Sy))$, is the same identity $h(y,Sx) = h(x,{}^{\dagger}Sy)$. Hence $h(x,S^{\dagger}y) = h(x,{}^{\dagger}Sy)$ for all $x,y$, and the nondegeneracy of $h$ gives ${}^{\dagger}S = S^{\dagger}$. $\square$
+
+**Remark (why a semilinear operator has two adjoints).** The two adjoints are the two pairings $h$ and $h^{t}$ and not one pairing seen twice; the Hermitian property $h^{t} = \varsigma\circ h$ is what makes them agree, and for a general sesquilinear form their difference is the defect of the form, the sesquilinear analogue of the defect separating the adjoint from the left adjoint in the bilinear case. The statement is the one of *The Sesquilinear Adjoint Operator*, §*The Two Adjoints*, and the $A$-valued analogue with the opposite slot parities is *Adjoints of Bounded Sesquilinear Operators*, §*The Existence Criterion and the Obstruction*.
+
+## The Adjoints under a Companion Form
+
+**Theorem (the indefinite case).** Let $A = A^{+}\oplus A^{-}$ be a fundamental decomposition of $h$ with symmetry $J$ and companion form $\langle\cdot,\cdot\rangle = h(J\cdot,\cdot)$, both nonsingular, and let $T^{\dagger}$ be the $h$-adjoint of $T$ and $T^{*}$ its companion adjoint. Then
+
+$$
+T^{\dagger} = J\,T^{*}\,J ,
+$$
+
+so $T$ is $h$-self-adjoint exactly when $JT$ is companion-self-adjoint, and $T$ is $h$-unitary exactly when $T^{*}JT = J$, that is when $T$ is $J$-unitary.
+
+*Proof.* This is the theorem of *The Fundamental Symmetry of the Form*, §*The Adjoints under the Two Forms*; the derivation uses the bridge $h(x,y) = \langle Jx,y\rangle$ and the self-adjointness of $J$ for the companion. $\square$
+
+**Remark (the definite case).** For a positive definite form $J = \mathrm{id}$ and the theorem reduces to $T^{\dagger} = T^{*}$: the adjoint under a definite Hermitian form is the adjoint under the inner product it defines. The definite case is the one of *The Norm Defined by a Form* and of the Hilbert-space operator theory, and the indefinite case is the same with $J$ inserted at every adjoint.
+
+## The One-Sided Multiplications and the Inner Automorphisms
+
+### The Multiplications
+
+**Theorem (the left multiplication).** Let $h$ be compatible and nonsingular, and let $m_{x}(z) = xz$. Then $m_{x}$ is $R$-linear and
+
+$$
+m_{x}^{\dagger} = m_{x^{*}} .
+$$
+
+*Proof.* The compatibility is exactly $h(xz,y) = h(z,x^{*}y) = h(z,m_{x^{*}}y)$, and $m_{x^{*}}$ is $R$-linear because the product is linear in its first slot. $\square$
+
+**Theorem (the conjugate sandwich).** Let $h$ be compatible and nonsingular, and let $S_{a,b}(z) = az^{*}b$. Then $S_{a,b}$ is $\varsigma$-semilinear and
+
+$$
+S_{a,b}^{\dagger} = S_{b,a} .
+$$
+
+*Proof.* Iterating the two forms of the compatibility, $h(xy,z) = h(y,x^{*}z)$ and $h(x,yz) = h(y^{*}x,z)$, together with the Hermitian property, gives $h(az^{*}b,y) = \varsigma\bigl(h(z,by^{*}a)\bigr) = \varsigma\bigl(h(z,S_{b,a}y)\bigr)$; this is the computation of *The Sesquilinear Adjoint Operator*, §*The One-Sided Multiplications* read for the general form $h$. The semilinearity in $z$ is that of the involution. $\square$
+
+**Corollary (the conjugate left multiplication).** Let $\Lambda_{x}(z) = x\star z = xz^{*} = S_{x,1}(z)$ be the multiplication by the derived product. Then
+
+$$
+\Lambda_{x}^{\dagger}(y) = S_{1,x}(y) = y^{*}x ,
+$$
+
+so the adjoint of a one-sided multiplication in the derived product is a conjugate **sandwich** and not another one-sided multiplication: the family of the one-sided multiplications is not stable under the adjoint.
+
+**Corollary (the right multiplication).** Let $R_{b}(z) = zb^{*}$, so that $R_{b} = (*)\circ S_{b,1}$ and $R_{b^{*}} = S_{1,b}\circ (*)$. The involution is self-adjoint, $(*)^{\dagger} = *$, so
+
+$$
+R_{b}^{\dagger} = S_{b,1}^{\dagger}\circ (*)^{\dagger} = S_{1,b}\circ * = R_{b^{*}} ,
+$$
+
+and the right multiplication is adjoint to the right multiplication by the image of the parameter under the involution.
+
+**Remark (the asymmetry of the two slots).** In the layer of the form, the two multiplications are adjoint in pairs, $m_{x} \leftrightarrow m_{x^{*}}$, but the multiplication by the derived product, $z \mapsto xz^{*}$, is conjugate-linear and its adjoint is the sandwich $z \mapsto z^{*}x$, not a one-sided multiplication in any product of the layer. This is the form-level image of the failure of the family of one-sided multiplications to close under the adjoint, and it is the reason the operator theory of the layer is stated for the sandwiches and not only for the multiplications, as in *The Bounded Sesquilinear Sandwich*.
+
+### The Inner Automorphisms
+
+**Theorem (the inner automorphisms are isometries).** Let $u \in A$ be unitary, $uu^{*} = u^{*}u = 1$, and let $\alpha_{u}(x) = uxu^{*}$. Then $\alpha_{u}$ is an $R$-linear automorphism, it is an isometry of the form, $h(\alpha_{u}x,\alpha_{u}y) = h(x,y)$, and
+
+$$
+\alpha_{u}^{\dagger} = \alpha_{u^{*}} = \alpha_{u}^{-1} .
+$$
+
+In particular $\alpha_{u}^{\dagger}\alpha_{u} = \alpha_{u}\alpha_{u}^{\dagger} = \mathrm{id}$, so the inner automorphisms sit in the unitary group of the form.
+
+*Proof.* Multiplicativity is the associativity of $A$ and the law $(xy)^{*} = y^{*}x^{*}$, and $\alpha_{u}^{-1} = \alpha_{u^{*}}$ because $u^{*}u = uu^{*} = 1$. For the adjoint, write $\alpha_{u} = m_{u}\circ R_{u}$, with $R_{u}(z) = zu^{*}$; the two multiplications are adjoint in pairs, $m_{a}^{\dagger} = m_{a^{*}}$ and $R_{b}^{\dagger} = R_{b^{*}}$, so $\alpha_{u}^{\dagger} = R_{u}^{\dagger}\circ m_{u}^{\dagger} = R_{u^{*}}\circ m_{u^{*}} = \alpha_{u^{*}}$. Hence $\alpha_{u}^{\dagger}\alpha_{u} = \alpha_{u^{*}}\alpha_{u} = \mathrm{id}$ and $\alpha_{u}\alpha_{u}^{\dagger} = \mathrm{id}$, because $u^{*}u = uu^{*} = 1$, and the isometry criterion gives $h(\alpha_{u}x,\alpha_{u}y) = h(x,y)$. The same adjointness read on the pair $(\alpha_{u}x,y)$ gives $h(uxu^{*},y) = h(x,u^{*}yu) = h(x,\alpha_{u^{*}}y)$. $\square$
+
+**Remark (the group of the form and the group of the elements).** The theorem is the beginning of the relation between the **unitary group of the elements** $U(A)$ and the **unitary operators of the form**, which is *Unitary and Isometric Operators of the Form*: the inner automorphisms are unitary operators, their kernel is the group of the central unitaries, and their image is the group of the inner $\ast$-automorphisms of *Units and the Unitary Elements*. The left multiplications $m_{u}$ by unitary elements are isometries as well, by the theorem on the multiplications, and are unitary operators when $u$ is unitary.
+
+## Worked Cases
+
+### The Field
+
+**Example (the field).** Let $A = k = \mathbb{C}$ with $h(z,w) = z\overline{w}$. The bounded operators are the multiplications $T_{\lambda}(z) = \lambda z$, the Riesz map is the conjugation $z \mapsto \overline{z}$, and
+
+$$
+T_{\lambda}^{\dagger} = T_{\varsigma(\lambda)} = T_{\overline{\lambda}} ,
+$$
+
+because $h(\lambda z,w) = \lambda z\overline{w}$ is $h(z,\overline{\lambda}w) = z\overline{\overline{\lambda}w} = z\lambda\overline{w}$. So the adjoint conjugates the scalar: $T_{\lambda}$ is self-adjoint exactly when $\lambda \in \mathbb{R}$, skew-adjoint exactly when $\lambda$ is purely imaginary, unitary exactly when $\lvert\lambda\rvert = 1$, and every operator is normal. The example is the one-dimensional case in which the adjoint operation is the base involution read on the operators, and it is the model of the scalar rule $(\lambda T)^{\dagger} = \varsigma(\lambda)T^{\dagger}$.
+
+### The Matrices
+
+**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with $h(X,Y) = \operatorname{tr}(XY^{*})$. The form is nonsingular, its Riesz map is $Y \mapsto Y^{*}$, and the adjoints of the elementary operators are
+
+$$
+(AZB)^{\dagger} = A^{*}ZB^{*} , \qquad m_{X}^{\dagger} = m_{X^{*}} , \qquad R_{b}^{\dagger} = R_{b^{*}} , \qquad \bigl(Z \mapsto Z^{*}\bigr)^{\dagger} = \bigl(Z \mapsto Z^{*}\bigr) ,
+$$
+
+by the theorems above, read with the cyclicity of the trace, which is the compatibility. The conjugate left multiplication $\Lambda_{X}(Z) = XZ^{*}$ has $\Lambda_{X}^{\dagger}(Y) = Y^{*}X$, a conjugate sandwich; the inner automorphism $\alpha_{U}$ by a unitary matrix is a unitary operator; and the operator $Z \mapsto Z^{*}$ is self-adjoint. The example is the matrix model of the whole article, and it is the one in which every formula is read on the entries.
+
+### The Indefinite Biquaternion Form
+
+**Example (the indefinite biquaternion form).** On $\mathbb{B}$ with the quaternion sesquilinear form $h_{\natural*}$ of signature $(2,6)$ and the fundamental symmetry $J = \operatorname{diag}(1,-1,-1,-1)$ of *The Fundamental Symmetry of the Form*, §*The Biquaternion Algebra*, the adjoints are related by
+
+$$
+T^{\dagger} = J\,T^{*}\,J ,
+$$
+
+where $T^{*}$ is the adjoint for the definite complex sesquilinear form $h_{*}$. The operators with $T^{\dagger} = T$ are the $J$-self-adjoint ones, and the unitary ones are the $J$-unitary ones, the operators of *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*, whose spectra lie on the real axis and on the unit circle of the indefinite geometry. The example is the finite-dimensional instance in which the definite adjoint and the indefinite one are compared through $J$.
+
+## The Collapse at the Trivial Involution
+
+**Theorem (the collapse).** Let $\varsigma = \mathrm{id}$. Then the form is symmetric and bilinear, the adjoint operation is $R$-linear as well as additive, $(\lambda T)^{\dagger} = \lambda T^{\dagger}$, the adjoint of a linear operator is its adjoint for the symmetric form, and the semilinear operators coincide with the linear ones, so a single adjoint suffices and the two adjoints of the semilinear case are one. At $* = \mathrm{id}$ as well the left multiplication is self-adjoint, $m_{x}^{\dagger} = m_{x}$, and the theory is that of *Hermitian Adjoints on a Hilbert Algebra*.
+
+*Proof.* At $\varsigma = \mathrm{id}$ the twist vanishes, so the form is symmetric, the scalar law of the adjoint is $\lambda$, and the parity distinction disappears; the self-adjointness of the left multiplication is $m_{x}^{\dagger} = m_{x^{*}} = m_{x}$ at $*=\mathrm{id}$. The identification with the bilinear adjoint theory is *The Sesquilinear Adjoint Operator*, §*The Comparison with the Bilinear Case* and *Hermitian Adjoints on a Hilbert Algebra*. $\square$
+
+## Summary
+
+The **adjoint** of a bounded linear operator under a Hermitian form is the unique $T^{\dagger}$ with $h(Tx,y) = h(x,T^{\dagger}y)$, and the assignment $T \mapsto T^{\dagger}$ is a **$\varsigma$-semilinear anti-automorphism of order two**, $(\lambda T)^{\dagger} = \varsigma(\lambda)T^{\dagger}$ and $(ST)^{\dagger} = T^{\dagger}S^{\dagger}$, the twist being the twist of the form's second slot. It exists and is unique as soon as the form is **nonsingular**; it preserves the self-adjoint, skew-adjoint, normal and unitary properties, and the **unitary operators** are exactly the invertible isometries, with $T^{\dagger} = T^{-1}$. For a **semilinear** operator the linear rule has no solution and the adjoint is taken by the **twisted rule** $h(Sx,y) = \varsigma(h(x,S^{\dagger}y))$, which preserves the parity; the adjoint and the **left adjoint** of a semilinear operator coincide because the form is Hermitian. The **compatibility** with the product is exactly the adjointness of the multiplications, $m_{x}^{\dagger} = m_{x^{*}}$ and $R_{b}^{\dagger} = R_{b^{*}}$, while the multiplication by the derived product has for adjoint the **conjugate sandwich** $\Lambda_{x}^{\dagger}(y) = y^{*}x$, so the one-sided multiplications do not close under the adjoint; and the **inner automorphisms** by unitary elements are unitary operators with $\alpha_{u}^{\dagger} = \alpha_{u}^{-1}$. In the indefinite case the adjoint is the definite one conjugated by the **fundamental symmetry**, $T^{\dagger} = JT^{*}J$; at $\varsigma = \mathrm{id}$ the operation is linear, the two adjoints become one, and the theory is the bilinear one.
+
+## Summary of Notation
+
+| symbol | meaning |
+|---|---|
+| $h(Tx,y) = h(x,T^{\dagger}y)$ | the defining relation of the adjoint of a linear operator |
+| $\flat(y) = h(\cdot,y)$ | the Riesz map, a bijection exactly when $h$ is nonsingular |
+| $T^{\dagger} = \flat^{-1}\circ T^{\flat}\circ\flat$ | the adjoint as a pullback conjugated by the Riesz map |
+| $(\lambda T)^{\dagger} = \varsigma(\lambda)T^{\dagger}$ | the semilinearity of the adjoint operation |
+| $(ST)^{\dagger} = T^{\dagger}S^{\dagger}$ | the anti-multiplicativity |
+| $T^{\dagger}T = 1$, $TT^{\dagger} = 1$ | isometry and co-isometry; both together give the unitary operators |
+| $h(Sx,y) = \varsigma(h(x,S^{\dagger}y))$ | the twisted rule for a semilinear operator |
+| ${}^{\dagger}S = S^{\dagger}$ | the left adjoint coincides with the adjoint |
+| $m_{x}^{\dagger} = m_{x^{*}}$, $R_{b}^{\dagger} = R_{b^{*}}$ | the multiplications are adjoint in pairs |
+| $\Lambda_{x}^{\dagger}(y) = y^{*}x$ | the conjugate left multiplication has a sandwich for adjoint |
+| $\alpha_{u}^{\dagger} = \alpha_{u}^{-1}$ | the inner automorphisms by unitaries are unitary operators |
+| $T^{\dagger} = JT^{*}J$ | the adjoint in the indefinite case, $T^{*}$ being the companion adjoint |
+
+## Further Reading
+
+- John B. Conway, *A Course in Functional Analysis* (2nd ed., Springer, 1990), for the Hilbert-space adjoint, the Riesz representation theorem and the self-adjoint, normal and unitary operators.
+- Richard V. Kadison and John R. Ringrose, *Fundamentals of the Theory of Operator Algebras I* (Academic Press, 1983), for the adjoint operation as an anti-automorphism and its semilinearity for an antilinear map.
+- Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the $J$-self-adjoint and $J$-unitary operators and the relation between the definite and indefinite adjoints.
+- János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for the fundamental symmetry and the adjoint with respect to an indefinite inner product.
+- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society Colloquium Publications 44, 1998), for the semilinear maps, the two duals and the transposed pairing of a form with involution.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis*, 2nd ed. (Cambridge University Press, 2013), for the conjugates transposes, the trace pairing and the adjoint of a matrix operator.

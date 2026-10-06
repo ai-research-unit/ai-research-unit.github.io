@@ -18,7 +18,7 @@ $$
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
 \mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
 $$
-the anti-Hermitian (material) and Hermitian (informational) sectors, with $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\mu}Q_\mu^2$, and the trace pairing on the Hermitian sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The metric on $\mathbb{M}_-$ is used in the $(ict,x,y,z)$ convention, so that $N(ict\,e_0+\mathbf{x})=-c^2t^2+|\mathbf{x}|^2$, with $\eta=\mathrm{diag}(-1,1,1,1)$ below.
+the anti-Hermitian (material) and Hermitian (informational) sectors, with $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\mu}Q_\mu^2$, and the trace pairing on the Hermitian sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The metric on $\mathbb{M}_-$ is used in the $(ict,x,y,z)$ convention, so that $N(ict\,e_0+\mathbf{x})=-c^2t^2+|\mathbf{x}|^2$, with $\eta=\mathrm{diag}(-1,1,1,1)$ below.
 
 ## The Conformal Group and Its Generators
 
@@ -75,7 +75,7 @@ The fifteen-parameter group did not enter physics as the conformal group. In 190
 
 The conformal group is the group that preserves null directions, and in this framework "null" is already algebraic. A displacement $\tilde{Q}\in\mathbb{M}_-$ is null exactly when
 $$
-N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=0,
+N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=0,
 $$
 and the nonzero null elements are exactly the zero divisors of $\mathbb{B}$. The light cone of Minkowski space is therefore the **zero-divisor cone** of the algebra, whose geometry is the subject of the companion article on the null quadric and projective geometry; here only its invariance is needed. The algebra contains the *object* that the conformal group preserves, even though, as the later sections show, it does not contain the group.
 
@@ -229,20 +229,22 @@ What it does not carry: the group. The algebra is eight real dimensions and its 
 | $i$ | Scalar imaginary, $i^2=-1$, commuting with $e_k$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion and scalar subspaces |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; its zero set is the null cone |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; its zero set is the null cone |
 | $B(\tilde{P},\tilde{Q})=\sum_\mu P_\mu Q_\mu$ | Polar form of $N$; Minkowski inner product on $\mathbb{M}_-$ |
 | $\tilde{\Lambda}$, $J_k=e_k$, $K_k=ie_k$ | Lorentz rotor and its rotation/boost generators (in $\mathbb{B}$) |
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation (four-vector action) |
 | $SL(2,\mathbb{C})\cong\{N=e_0\}$ | Unit-norm biquaternions, Lorentz double cover, real dimension $6$ |
 | $M_{\mu\nu}$, $P_\mu$, $D$, $\mathcal{K}_\mu$ | Conformal generators: Lorentz (6), translations (4), dilation (1), special conformal (4) |
 | $I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}=\tilde{Q}/N(\tilde{Q})$ | Inversion; $I^2=\mathrm{id}$, $N(I(\tilde{Q}))=1/N(\tilde{Q})$ |
-| $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/N(\tilde{Q})=P(I(\tilde{Q}))$ | Algebra inverse = inversion followed by parity |
+| $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=P(I(\tilde{Q}))$ | Algebra inverse = inversion followed by parity |
 | $I\circ T_{\tilde{A}}\circ I$ | Special conformal transformation |
 | $SO^+(2,4)$, $SU(2,2)$ | Conformal group (dim $15$) and its double cover |
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^+_{1,3}\oplus\mathrm{Cl}^-_{1,3}$, $\mathbb{B}=\mathrm{Cl}^+_{1,3}$ | Clifford algebra of Minkowski space, real dimension $16$ |
 | $\mathrm{Cl}_{2,4}$ | Conformal embedding Clifford algebra; bivectors $\cong\mathrm{SO}(2,4)$, even part real dimension $32$ |
-| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing on the Hermitian sector |
+| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace pairing on the Hermitian sector |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

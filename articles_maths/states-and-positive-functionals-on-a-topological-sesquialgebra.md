@@ -4,10 +4,10 @@
 
 A positive functional on an involutive algebra is one that is non-negatively valued on the elements of the form $x^{*}x$, and a state is a positive functional of norm one. The positivity is the functional's way of respecting the involution, and on a sesquialgebra it does one thing more: the formula $h_{f}(x,y) = f(x^{*}y)$ is a **sesquilinear pairing**, and it is the reduction of the canonical $A$-valued Hermitian form $h(x,y) = x^{*}y$ by the functional. The pairing is positive semi-definite, it satisfies the Cauchy–Schwarz inequality, and its null space is a left ideal; on the quotient the construction of Gelfand, Naimark and Segal produces a Hilbert space and a representation in which the pairing becomes an honest inner product and the involution of the sesquialgebra becomes the Hilbert adjoint.
 
-Three facts organise the article. The pairing $h_{f}$ attached to a positive functional is a **sesquilinear form**, conjugate-linear in the first slot and linear in the second, Hermitian, positive semi-definite, and it is the scalar reduction $h_{\varphi}$ of the form layer with $\varphi = f$, so the scalar theory of the sesquialgebra is contained in the functional theory. The **Cauchy–Schwarz inequality** $|h_{f}(x,y)|^{2} \leq h_{f}(x,x)h_{f}(y,y)$ holds, its null space $N_{f} = \{x : f(x^{*}x) = 0\}$ is the radical of the pairing and a left ideal, and on the quotient the pairing is an inner product. And the **GNS construction** produces a Hilbert space $H_{f}$, a cyclic vector $\xi_{f}$ and a representation $\pi_{f}$ with $\pi_{f}(x^{*}) = \pi_{f}(x)^{*}$ and
+Three facts organise the article. The pairing $h_{f}$ attached to a positive functional is a **sesquilinear form**, conjugate-linear in the first slot and linear in the second, Hermitian, positive semi-definite, and it is the scalar reduction $h_{\varphi}$ of the form layer at the conjugate functional $\varphi = \varsigma\circ f$, so the scalar theory of the sesquialgebra is contained in the functional theory. The **Cauchy–Schwarz inequality** $|h_{f}(x,y)|^{2} \leq h_{f}(x,x)h_{f}(y,y)$ holds, its null space $N_{f} = \{x : f(x^{*}x) = 0\}$ is the radical of the pairing and a left ideal, and on the quotient the pairing is an inner product. And the **GNS construction** produces a Hilbert space $H_{f}$, a cyclic vector $\xi_{f}$ and a representation $\pi_{f}$ with $\pi_{f}(x^{*}) = \pi_{f}(x)^{*}$ and
 
 $$
-\pi_{f}(x \star y) = \pi_{f}(x)\pi_{f}(y)^{*} , \qquad f(x) = \langle \pi_{f}(x)\xi_{f}, \xi_{f}\rangle ,
+\pi_{f}(x \star y) = \pi_{f}(x)\pi_{f}(y)^{*} , \qquad f(x) = \langle \xi_{f}, \pi_{f}(x)\xi_{f}\rangle ,
 $$
 
 so the representation turns the sesquilinear structure into operators: the derived product of the sesquialgebra becomes the product-with-adjoint, and the pairing $h_{f}(x,y) = f(x^{*}y)$ becomes the inner product of the vectors $\pi_{f}(x)\xi_{f}$ and $\pi_{f}(y)\xi_{f}$.
@@ -50,7 +50,7 @@ $$
 
 with equality if and only if $x$ and $y$ are linearly dependent modulo $N_{f}$.
 
-*Proof.* For complex $\lambda$ the element $x - \lambda y$ satisfies $h_{f}(x - \lambda y, x - \lambda y) = f((x - \lambda y)^{*}(x - \lambda y)) \geq 0$; expanding with the two parities gives $h_{f}(x,x) - \bar\lambda h_{f}(x,y) - \lambda h_{f}(y,x) + \lvert\lambda\rvert^{2}h_{f}(y,y) \geq 0$. When $h_{f}(y,y) \neq 0$ the choice $\lambda = h_{f}(x,y)/h_{f}(y,y)$ and the Hermitian property reduce it to $h_{f}(x,x) - \lvert h_{f}(x,y)\rvert^{2}/h_{f}(y,y) \geq 0$, which is the inequality; when $h_{f}(y,y) = 0$ the same quadratic in real $\lambda$ forces $h_{f}(x,y) = 0$. The equality case is the degenerate case of a positive semi-definite form, by *The Norm Defined by a Form*, §*The Cauchy–Schwarz Inequality*. $\square$
+*Proof.* For complex $\lambda$ the element $x - \lambda y$ satisfies $h_{f}(x - \lambda y, x - \lambda y) = f((x - \lambda y)^{*}(x - \lambda y)) \geq 0$; expanding with the two parities gives $h_{f}(x,x) - \lambda h_{f}(x,y) - \bar\lambda h_{f}(y,x) + \lvert\lambda\rvert^{2}h_{f}(y,y) \geq 0$. When $h_{f}(y,y) \neq 0$ the choice $\lambda = h_{f}(y,x)/h_{f}(y,y)$ and the Hermitian property reduce it to $h_{f}(x,x) - \lvert h_{f}(x,y)\rvert^{2}/h_{f}(y,y) \geq 0$, which is the inequality; when $h_{f}(y,y) = 0$ the same quadratic in real $\lambda$ forces $h_{f}(x,y) = 0$. The equality case is the degenerate case of a positive semi-definite form, by *The Norm Defined by a Form*, §*The Cauchy–Schwarz Inequality*. $\square$
 
 **Corollary (the radical is the null space).** For a positive $f$ the null space is the radical of the pairing,
 
@@ -109,7 +109,7 @@ and $\pi_{f}$ is a $*$-representation, $\pi_{f}(a)^{*} = \pi_{f}(a^{*})$, so $\p
 *Proof.* Left multiplication preserves $N_{f}$ because the null space is a left ideal, by the corollary above, so the formula is well defined on classes. Boundedness follows from the inequality $h_{f}(ax,ax) = f(x^{*}a^{*}ax) \leq \lVert a\rVert^{2}f(x^{*}x) = \lVert a\rVert^{2}h_{f}(x,x)$, which is the positivity of the functional $z \mapsto f(x^{*}zx)$ on the positive cone of the $\mathrm{C}^{*}$-algebra, with $a^{*}a \leq \lVert a\rVert^{2}1$; the operator is thus bounded with $\lVert\pi_{f}(a)\rVert \leq \lVert a\rVert$ and extends to the completion. The adjoint computation is
 
 $$
-\langle \pi_{f}(a)x, y\rangle_{f} = f(y^{*}ax) = f((a^{*}y)^{*}x) = \langle x, \pi_{f}(a^{*})y\rangle_{f} ,
+\langle \pi_{f}(a)x, y\rangle_{f} = f(x^{*}a^{*}y) = f(x^{*}(a^{*}y)) = \langle x, \pi_{f}(a^{*})y\rangle_{f} ,
 $$
 
 which exhibits $\pi_{f}(a^{*}) = \pi_{f}(a)^{*}$ and, in particular, that $\pi_{f}$ is a $*$-representation. $\square$
@@ -119,12 +119,12 @@ which exhibits $\pi_{f}(a^{*}) = \pi_{f}(a)^{*}$ and, in particular, that $\pi_{
 **Proposition (the state is a vector state).** Let $f$ be positive and put $\xi_{f} = 1 + N_{f}$. Then $\xi_{f}$ is **cyclic**, $\overline{\pi_{f}(A)\xi_{f}} = H_{f}$, and
 
 $$
-f(a) = \langle \pi_{f}(a)\xi_{f}, \xi_{f}\rangle_{f} , \qquad \lVert\xi_{f}\rVert^{2} = f(1) .
+f(a) = \langle \xi_{f}, \pi_{f}(a)\xi_{f}\rangle_{f} , \qquad \lVert\xi_{f}\rVert^{2} = f(1) .
 $$
 
 In particular $f$ is a state exactly when $f(1) = 1$, that is exactly when $\xi_{f}$ is a unit vector.
 
-*Proof.* The computation is $\langle\pi_{f}(a)\xi_{f}, \xi_{f}\rangle = \langle a + N_{f}, 1 + N_{f}\rangle = f(1^{*}a) = f(a)$, and $\lVert\xi_{f}\rVert^{2} = \langle 1 + N_{f}, 1 + N_{f}\rangle = f(1)$. The cyclic property is the definition of $H_{f}$ as the completion of the image of $A/N_{f}$. $\square$
+*Proof.* The computation is $\langle\xi_{f}, \pi_{f}(a)\xi_{f}\rangle = \langle 1 + N_{f}, a + N_{f}\rangle = f(1^{*}a) = f(a)$, and $\lVert\xi_{f}\rVert^{2} = \langle 1 + N_{f}, 1 + N_{f}\rangle = f(1)$; the inner product is conjugate-linear in the first slot, so the state is $\langle\xi_{f}, \pi_{f}(a)\xi_{f}\rangle$ and the reverse order gives $\overline{f(a)}$. The cyclic property is the definition of $H_{f}$ as the completion of the image of $A/N_{f}$. $\square$
 
 ## The Representation of the Sesquilinear Structure
 
@@ -168,9 +168,9 @@ so the pairing $h_{f}$ is the pullback of the inner product of $H_{f}$ by the ma
 
 ### The Collapse at the Trivial Involution
 
-**Proposition (the collapse).** Let $\varsigma = \mathrm{id}$. Then the sesquialgebra has collapsed to the algebra, the pairing reads $h_{f}(x,y) = f(xy)$, the involution is $R$-linear, and the GNS construction is that of *States and Positive Functionals on an Involutive Algebra* applied to the algebra $A$; the positive functionals are the positive linear functionals of the bilinear layer.
+**Proposition (the collapse).** Let $\varsigma = \mathrm{id}$. Then the sesquialgebra has collapsed to the algebra: the involution $*$ is $\mathbb{C}$-linear, the two scalar rules of the product coincide, the pairing $h_{f}(x,y) = f(x^{*}y)$ is $\mathbb{C}$-bilinear rather than sesquilinear, and the GNS construction is that of *States and Positive Functionals on an Involutive Algebra* applied to the $\mathbb{C}$-linear involution $*$ of $A$; the positive functionals are the positive linear functionals of the bilinear layer, and the pairing reads $h_{f}(x,y) = f(xy)$ when in addition $* = \mathrm{id}$.
 
-*Proof.* At $\varsigma = \mathrm{id}$ the involution is the identity on the scalars and the product is bilinear, so $h_{f}(x,y) = f(xy)$ is the bilinear form of the bilinear layer, by the collapse theorem of *Topological Sesquialgebras*, §*The Collapse*; the positivity condition is then the classical one on the cone $\{\sum x_{i}^{*}x_{i}\}$. $\square$
+*Proof.* At $\varsigma = \mathrm{id}$ the scalar rule $(\lambda x)^{*} = \varsigma(\lambda)x^{*}$ becomes $(\lambda x)^{*} = \lambda x^{*}$, so $*$ is $\mathbb{C}$-linear and $h_{f}(\lambda x, y) = f(\lambda x^{*}y) = \lambda h_{f}(x,y)$: the pairing is linear, not merely conjugate-linear, in the first slot. The product is $\mathbb{K}$-bilinear, by the collapse theorem of *Topological Sesquialgebras*, §*The Collapse*, and the positivity is the classical condition on the cone $\{\sum x_{i}^{*}x_{i}\}$. The reduction $f(x^{*}y)$ equals $f(xy)$ for all $x,y$ exactly when $x^{*} = x$ for every $x$, that is when $* = \mathrm{id}$. $\square$
 
 ## Examples
 
@@ -186,7 +186,7 @@ so the pairing $h_{f}$ is the pullback of the inner product of $H_{f}$ by the ma
 
 ## Summary
 
-A **positive functional** on a unital sesquialgebra is a linear $f$ with $f(x^{*}x) \geq 0$; it is self-adjoint, and it induces the **sesquilinear pairing** $h_{f}(x,y) = f(x^{*}y)$, conjugate-linear in the first slot and linear in the second, Hermitian and positive semi-definite, which is the scalar reduction $h_{\varphi}$ of *The Sesquilinear Form and the Conjugation* by $\varphi = f$ and the reduction of the canonical $A$-valued form $h(x,y) = x^{*}y$ by the functional. The **Cauchy–Schwarz inequality** $\lvert h_{f}(x,y)\rvert^{2} \leq h_{f}(x,x)h_{f}(y,y)$ holds, the **null space** $N_{f} = \{x : f(x^{*}x) = 0\}$ is the radical of the pairing and a left ideal, and on $A/N_{f}$ the pairing is an inner product whose completion $H_{f}$ carries the **GNS representation** $\pi_{f}$, a $*$-representation with $\pi_{f}(x^{*}) = \pi_{f}(x)^{*}$ and a cyclic vector $\xi_{f} = 1 + N_{f}$ such that $f(a) = \langle\pi_{f}(a)\xi_{f}, \xi_{f}\rangle$. The representation turns the **sesquilinear structure into operators**, $\pi_{f}(x \star y) = \pi_{f}(x)\pi_{f}(y)^{*}$ and $\pi_{f}(\{x,y,z\}) = \pi_{f}(x)\pi_{f}(y)^{*}\pi_{f}(z)$, and realises the pairing as the inner product of the images, $h_{f}(x,y) = \langle\pi_{f}(x)\xi_{f}, \pi_{f}(y)\xi_{f}\rangle$, so that $h_{f}$ is definite exactly when $f$ is faithful. The construction is the specialisation of the GNS construction of the degree-two form category to the forms that are reductions of the canonical one, and it is the scalar reading of the operator theory of the layer.
+A **positive functional** on a unital sesquialgebra is a linear $f$ with $f(x^{*}x) \geq 0$; it is self-adjoint, and it induces the **sesquilinear pairing** $h_{f}(x,y) = f(x^{*}y)$, conjugate-linear in the first slot and linear in the second, Hermitian and positive semi-definite, which is the scalar reduction $h_{\varphi}$ of *The Sesquilinear Form and the Conjugation* at the conjugate functional $\varphi = \varsigma\circ f$ and the reduction of the canonical $A$-valued form $h(x,y) = x^{*}y$ by the functional. The **Cauchy–Schwarz inequality** $\lvert h_{f}(x,y)\rvert^{2} \leq h_{f}(x,x)h_{f}(y,y)$ holds, the **null space** $N_{f} = \{x : f(x^{*}x) = 0\}$ is the radical of the pairing and a left ideal, and on $A/N_{f}$ the pairing is an inner product whose completion $H_{f}$ carries the **GNS representation** $\pi_{f}$, a $*$-representation with $\pi_{f}(x^{*}) = \pi_{f}(x)^{*}$ and a cyclic vector $\xi_{f} = 1 + N_{f}$ such that $f(a) = \langle\xi_{f}, \pi_{f}(a)\xi_{f}\rangle$. The representation turns the **sesquilinear structure into operators**, $\pi_{f}(x \star y) = \pi_{f}(x)\pi_{f}(y)^{*}$ and $\pi_{f}(\{x,y,z\}) = \pi_{f}(x)\pi_{f}(y)^{*}\pi_{f}(z)$, and realises the pairing as the inner product of the images, $h_{f}(x,y) = \langle\pi_{f}(x)\xi_{f}, \pi_{f}(y)\xi_{f}\rangle$, so that $h_{f}$ is definite exactly when $f$ is faithful. The construction is the specialisation of the GNS construction of the degree-two form category to the forms that are reductions of the canonical one, and it is the scalar reading of the operator theory of the layer.
 
 ## Summary of Notation
 
