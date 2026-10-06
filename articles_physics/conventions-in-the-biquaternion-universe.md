@@ -277,7 +277,7 @@ The upper-case tilde is therefore **split between two roles**, and the split is 
 | $\tilde{\Pi}$ | an idempotent, a projector or a pure state, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates |
 | $\tilde{P}$ | a four-momentum or four-vector, $\tilde{P} = m\tilde{U}$, and a *generic* element wherever a statement holds for every element |
 
-The generic element keeps its $\tilde{P}$ in the statements that hold for all elements: the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{Q})$, the commutator bracket $[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q} - \tilde{Q}\tilde{P}$, the bilinear form $B(\tilde{P},\tilde{Q})$ and the multiplicativity $N(\tilde{P}\tilde{Q}) = N(\tilde{P})N(\tilde{Q})$. The same letter is the four-momentum. Both roles are inherited from the mathematical corpus, where *Biquaternion Idempotents and Projections* writes the idempotent $\tilde{\Pi}$ and the generic element $\tilde{P}$ side by side.
+The generic element keeps its $\tilde{P}$ in the statements that hold for all elements: the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{Q})$, the commutator bracket $[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q} - \tilde{Q}\tilde{P}$, the bilinear form $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ and the multiplicativity $\langle\tilde{P}\tilde{Q},\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P},\tilde{P}\rangle_{\natural}\,\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. The same letter is the four-momentum. Both roles are inherited from the mathematical corpus, where *Biquaternion Idempotents and Projections* writes the idempotent $\tilde{\Pi}$ and the generic element $\tilde{P}$ side by side.
 
 The convention is one of **notation, not of substance**: an element written $\tilde{\Pi}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be idempotent, and the glyph records that knowledge at the point of use. Where a passage needs a generic idempotent variable it may write $\tilde{\Pi}$, and where it needs a generic element it writes $\tilde{P}$ or $\tilde{Q}$.
 
@@ -357,68 +357,7 @@ On the units $\operatorname{Tr}(e_0) = 2$ and $\operatorname{Tr}(e_k) = 0$, so o
 
 ## The Spacetime Conventions
 
-What remains are the conventions of the forms the physics is written with, once the coordinate dictionary of *The Six Subspaces* above has fixed which parameters carry $ict$ and $\mathbf{x}$ and which carry $ct'$ and $i\mathbf{x}'$. The basis $e_0, e_1, e_2, e_3$ and the $ict$ assignment are the conventions on which every relativistic article depends; the metric, the d'Alembertian and the mass term are the conventions built on them.
-
-### The Metric: Three Levels
-
-The word "metric" appears at three distinct levels in the series, and most of the disagreements below are the result of the levels being conflated. They are separated here in order of priority, because the first is the convention of the framework and the third is only a convention of translation.
-
-**Level 1 — the biquaternion norm on $\mathbb{B}$.** The algebra carries the complex-linear biquaternion norm
-
-$$
-N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
-$$
-
-and with all four coefficients $Q_\mu$ complex its Gram matrix is the **identity**:
-
-$$
-\mathrm{diag}(+1,+1,+1,+1).
-$$
-
-This is the metric of the biquaternion universe, and it is the framework's primary convention. It is a metric **on $\mathbb{C}$** — a complex bilinear form — and read that way every one of its four entries is positive: on $\mathbb{B}$ there is no minus sign in the form itself, and none is needed. That is precisely what the complex coefficients buy. A *real* direction has to be labelled positive or negative in advance, and that labelling becomes a convention that can be chosen wrongly; a complex coefficient carries its own sign in the coefficient, so all four directions can start out on an equal footing and no such commitment is required. Two cautions about reading it. It is not positive definite and it is not a norm in the analytic sense — it vanishes on the nonzero zero divisors, which is why $\mathbb{B}$ is not a normed division algebra. And the Hermitian form $\sum_\mu |Q_\mu|^2$ is a *different* object: real-valued, positive definite, and $\mathbb{C}$-antilinear in its first argument. It is used only where a positive-definite inner product on a complex vector space is needed, and it is not the biquaternion norm of the algebra. The forms of the algebra, with the involution that produces each, are classified in *The Involutions and the Three Forms* below.
-
-**Level 2 — the real sectors.** A minus appears only once a *real* coordinate is placed on a direction whose coefficient carries a factor of $i$. The two four-dimensional real sectors are exactly such choices, and the same level-1 form reads off differently on each:
-
-| Sector | Basis | $N$ on the basis | Signature |
-|---|---|---|---|
-| $\mathbb{M}_-$ (material) | $ie_0,\ e_1,\ e_2,\ e_3$ | $-1,+1,+1,+1$ | $(-,+,+,+)$ |
-| $\mathbb{M}_+$ (informational) | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $+1,-1,-1,-1$ | $(+,-,-,-)$ |
-
-Read as a statement about **objects** rather than directions: an element of $\mathbb{M}_-$ carries the metric $(-,+,+,+)$, and an element of $\mathbb{M}_+$ carries $(+,-,-,-)$. This is not a separate choice made sector by sector — it is the one level-1 form read on two different real bases, and the two readings are mirror images of one another through the identity below.
-
-The Minkowski interval is not postulated at this level either. It is the level-1 form read on the material sector with the time coordinate written $ict$: the four-position is $\tilde{Q} = ict\,e_0 + \mathbf{x}$, whose scalar coefficient $ict$ is imaginary, and
-
-$$
-N(\tilde{Q}) = (ict)^2 + x^2 + y^2 + z^2 = -c^2t^2 + \mathbf{x}^2 ,
-$$
-
-with the minus arising from $i^2 = -1$ alone. Multiplication by $i$ exchanges the sectors, $i\mathbb{M}_+ = \mathbb{M}_-$, and reverses the sign of the form, $N(i\tilde{Q}) = -N(\tilde{Q})$; the mirror relation between the two signatures is that identity. The Lorentzian signature is therefore an *output* of the biquaternion conventions, not an input to them.
-
-For contractions of four-vectors in the $ict$ coordinate the series writes this level-2 form as
-
-$$
-\eta = \mathrm{diag}(-1,+1,+1,+1),
-$$
-
-and at this level the series is uniform: the $ict$ metric is $(-,+,+,+)$ throughout. The two articles outside the relativistic core that carry a symbol $g = \mathrm{diag}(-1,+1,+1,+1)$ — the companion articles on the Higgs mechanism and on the Newman–Penrose formalism — mean **this** object, the $ict$-coordinate metric for index contractions, and not a Clifford metric, as their own notation tables state. They are not part of the level-3 disagreement below.
-
-**Level 3 — the Clifford metric of the $\gamma^\mu$.** When the series writes gamma matrices it needs a further symbol $g$, defined by $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$. This is a property of the chosen generators and not of the biquaternion algebra, and it is best regarded as a **tool** rather than a convention: it can be used or not, depending on the situation, and where it is used it should not dictate any convention of the framework. The biquaternion formulation requires no gamma matrices; they are a translation into the language of the standard Dirac literature, convenient when comparing with that literature or borrowing a standard result, and dispensable otherwise. The freedom this level carries is exactly the freedom the framework treats as presentation: replacing every generator by $i\gamma^\mu$ takes $g$ to $-g$ and leaves the biquaternion algebra, the biquaternion norm, the sector split, the chirality operator and the whole of levels 1 and 2 invariant.
-
-The value the series now uses is the standard **mostly-minus**
-
-$$
-g = \mathrm{diag}(+1,-1,-1,-1),
-$$
-
-so that $(\gamma^0)^2 = +I_4$ and $(\gamma^k)^2 = -I_4$. Two reasons fix it. First, **it is the form of the objects the tool represents**: the Clifford vectors correspond to the *Hermitian* subspace $\mathbb{M}_+$ — the dictionary's own identification is $x_\mu\gamma^\mu = \gamma^0\Phi(w)$ with $w \in \mathbb{M}_+$ — and $(+,-,-,-)$ is the $\mathbb{M}_+$ form, so the square of a Clifford vector agrees with the biquaternion norm of the biquaternion it represents with **no relative sign**. Second, it is the standard particle-physics convention, so articles transcribing standard results inherit the standard sign without adjustment, and the name $\mathrm{Cl}_{1,3}$ is correct in the usual counting, $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$.
-
-The opposite sign, $g = \mathrm{diag}(-1,+1,+1,+1)$, is **not in use**. It pairs the generators with the material sector, which is a real form they do not belong to; the price is a relative minus sign between the square of a Clifford vector and the biquaternion norm of the biquaternion it represents, a mixed sign pattern in the timelike bivectors, and a non-standard naming of the algebra. It is recorded here only because the series used it previously, in the article that defines the gamma matrices and the Dirac equation, in the Dirac-algebra dictionary, and in the mathematics article now titled *Biquaternion Other Algebraic Element Representations*; those three have been aligned to the value above.
-
-A difference at this level would **not** be an error at level 1 or level 2, and half the reason for separating the levels is to stop it being read as one: the biquaternion norm, the $ict$ metric and the sector structure are the same for either sign. The sign decides only which *real* Clifford form the generators generate — $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$ for $(+,-,-,-)$, $\mathrm{Cl}_{3,1} \cong M_4(\mathbb{R})$ for $(-,+,+,+)$ — and the even subalgebra, which is $\mathbb{B}$ itself, is the same for both, so no dictionary entry and no biquaternion identity depends on it.
-
-The order of authority is therefore one-way. The algebra and its level-1 and level-2 conventions are the framework; the gamma matrices and their metric are a translation of it, adopted per article for whatever the article is doing. The tool serves the framework and not the reverse: a Clifford computation is never a reason to change a biquaternion convention, and where the two appear to disagree, the disagreement is in the translation and is resolved by adjusting the generators, the adjoint, or the explicit factors of $i$ — never by altering the biquaternion norm, the $ict$ assignment, or the sector split.
-
-One consequence does reach the physics, and it is the only place where a level-3 choice is not free. The Dirac adjoint is $\bar{\psi} = \psi^\dagger\gamma^0$, so it carries $\gamma^0$ and changes with the convention. With the mostly-minus generators $\bar{\psi}\gamma^0\psi = +\psi^\dagger\psi$, the positive number density; with the mostly-plus generators the same expression gives $-\psi^\dagger\psi$. A spinor bilinear written as $\bar{\psi}\Gamma\psi$ therefore requires the adjoint to be defined consistently with the generators in use. No article in the series currently writes a spinor bilinear in the mostly-plus convention, so no statement in the series is in error on this count; the point is recorded so that one is not introduced. This sign is not part of the freedom that $\gamma^\mu \mapsto i\gamma^\mu$ leaves behind.
+What remains are the conventions of the forms the physics is written with, once the coordinate dictionary of *The Six Subspaces* above has fixed which parameters carry $ict$ and $\mathbf{x}$ and which carry $ct'$ and $i\mathbf{x}'$. The basis $e_0, e_1, e_2, e_3$ and the $ict$ assignment are the conventions on which every relativistic article depends; the forms, the metric levels, the d'Alembertian and the mass term are the conventions built on them.
 
 ### The Involutions and the Four Forms
 
@@ -452,64 +391,139 @@ A $\mathbb{C}$-linear $a$ carries a scalar out of both slots without conjugating
 
 The fourth column is what the two questions separate, and it is worth stating plainly because the two are easy to conflate. The bar multiplies and reverses nothing, $\overline{\tilde{P}\tilde{Q}} = \bar{\tilde{P}}\bar{\tilde{Q}}$, since it acts on the scalars and on nothing else: it is an order-two automorphism of the algebra over $\mathbb{R}$, $\mathbb{C}$-antilinear, and **not** an anti-automorphism. The natural sign and the star are the two genuine **involutions of the ring** in the strict sense, $(\tilde{P}\tilde{Q})^a = \tilde{Q}^a\tilde{P}^a$. Which of the four multiplies and which reverses is decided by which factor of the tensor product the map touches, the quaternion conjugation being the reversing one. The anti-Hermitian sign is neither: it reverses with a twist, $(\tilde{P}\tilde{Q})^{\flat} = -\tilde{Q}^{\flat}\tilde{P}^{\flat}$, so it is an involution of the underlying real vector space and nothing more. The four maps and the sign, their fixed and anti-fixed spaces, and the lattice they form are the subject of *The Biquaternion Involution Lattice: Hermitian, Anti-Hermitian and Reversal*.
 
-**The four forms.** Reading the rule off the table gives exactly four forms,
+**The four forms.** Reading the rule off the table gives exactly four forms, written in the mathematics articles with one bracket $\langle\cdot,\cdot\rangle$ whose subscript records the conjugation entering each argument, the natural conjugation ${}^{\natural}$ on the first and the complex conjugation $\bar{\cdot}$ on the second,
 
 $$
-C(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}) = \sum_\mu \varepsilon_\mu P_\mu Q_\mu, \qquad B(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural}) = \sum_\mu P_\mu Q_\mu, \qquad (\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}^{*}\tilde{Q}) = \sum_\mu \bar{P}_\mu Q_\mu, \qquad K(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\bar{\tilde{P}}\tilde{Q}) = \bar{P}_0Q_0 - \bar{P}_1Q_1 - \bar{P}_2Q_2 - \bar{P}_3Q_3,
+\begin{aligned}
+\langle\tilde{P},\tilde{Q}\rangle &= \mathrm{Sc}(\tilde{P}\tilde{Q}) = P_0Q_0 - P_1Q_1 - P_2Q_2 - P_3Q_3,\\
+\langle\tilde{P},\tilde{Q}\rangle_{\natural} &= \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}) = P_0Q_0 + P_1Q_1 + P_2Q_2 + P_3Q_3,\\
+\langle\tilde{P},\tilde{Q}\rangle_{*} &= \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = P_0\bar{Q}_0 + P_1\bar{Q}_1 + P_2\bar{Q}_2 + P_3\bar{Q}_3,\\
+\langle\tilde{P},\tilde{Q}\rangle_{\natural*} &= \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*}) = P_0\bar{Q}_0 - P_1\bar{Q}_1 - P_2\bar{Q}_2 - P_3\bar{Q}_3.
+\end{aligned}
 $$
 
 each being the trace form of its own involution up to the factor of the trace convention, $2h_a(\tilde{P},\tilde{Q}) = \mathrm{Tr}(\tilde{P}^a\tilde{Q})$. Their types and their readings on the algebra and on the material sector are then:
 
 | Form | Involution | Type over $\mathbb{C}$ | On $\mathbb{B}$ | On $\mathbb{M}_-$ |
 |---|---|---|---|---|
-| $C$, the complex bilinear form | $\mathrm{id}$ | $\mathbb{C}$-**bilinear** | complex, Gram $\mathrm{E}$ | $-c^2t^2-x^2-y^2-z^2$, signature $(0,4)$ |
-| $B$, the bilinear form | ${}^{\natural}$ | $\mathbb{C}$-**bilinear** | complex, Gram $I_4$ | $-c^2t^2+x^2+y^2+z^2$, signature $(3,1)$ |
-| $(\cdot,\cdot)$, the Hermitian form | ${}^{*}$ | $\mathbb{C}$-**sesquilinear**, positive definite | signature $(8,0)$ | $c^2t^2+x^2+y^2+z^2$, signature $(4,0)$ |
-| $K$, the Krein form | $\bar{\cdot}$ | $\mathbb{C}$-**sesquilinear**, indefinite | signature $(2,6)$ | $c^2t^2-x^2-y^2-z^2$, signature $(1,3)$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$, the bilinear form | $\mathrm{id}$ | $\mathbb{C}$-**bilinear** | complex, Gram $\mathrm{E}$ | $-c^2t^2-x^2-y^2-z^2$, signature $(0,4)$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$, the quaternionic bilinear form | ${}^{\natural}$ | $\mathbb{C}$-**bilinear** | complex, Gram $I_4$ | $-c^2t^2+x^2+y^2+z^2$, signature $(3,1)$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$, the sesquilinear form | ${}^{*}$ | $\mathbb{C}$-**sesquilinear**, positive definite | signature $(8,0)$ | $c^2t^2+x^2+y^2+z^2$, signature $(4,0)$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$, the quaternionic sesquilinear form | $\bar{\cdot}$ | $\mathbb{C}$-**sesquilinear**, indefinite | signature $(2,6)$ | $c^2t^2-x^2-y^2-z^2$, signature $(1,3)$ |
+
+Each pairing has its quadratic form on the diagonal, and the four norms are then:
+
+| Norm | Value |
+|---|---|
+| $\langle\tilde{Q},\tilde{Q}\rangle$, the bilinear norm | $Q_0^2 - Q_1^2 - Q_2^2 - Q_3^2$ |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, the quaternionic bilinear norm | $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$ |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{*}$, the sesquilinear norm | $\lvert Q_0\rvert^2 + \lvert Q_1\rvert^2 + \lvert Q_2\rvert^2 + \lvert Q_3\rvert^2$ |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}$, the quaternionic sesquilinear norm | $\lvert Q_0\rvert^2 - \lvert Q_1\rvert^2 - \lvert Q_2\rvert^2 - \lvert Q_3\rvert^2$ |
 
 Four readings follow, and the names of the involutions must not be allowed to settle them in advance.
 
-**The complex bilinear form, from the identity.** $C(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}) = \sum_\mu \varepsilon_\mu P_\mu Q_\mu$ is the scalar part of the plain product, the form of the identity conjugation, and it is the fourth form that the older count of three passed over. Its Gram matrix in the complex basis is $\mathrm{E} = \operatorname{diag}(1,-1,-1,-1)$, its signature on $\mathbb{B}$ is $(4,4)$, and on the material sector it is the **negative** Euclidean square,
+**The bilinear form, from the identity.** $\langle\tilde{P},\tilde{Q}\rangle = \mathrm{Sc}(\tilde{P}\tilde{Q}) = P_0Q_0 - P_1Q_1 - P_2Q_2 - P_3Q_3$ is the scalar part of the plain product, the form of the identity conjugation, and it is the fourth form that the older count of three passed over. Its Gram matrix in the complex basis is $\mathrm{E} = \operatorname{diag}(1,-1,-1,-1)$, its signature on $\mathbb{B}$ is $(4,4)$, and on the material sector it is the **negative** Euclidean square,
 
 $$
-C(\tilde{T},\tilde{T}) = -(c^2t^2+x^2+y^2+z^2), \qquad \tilde{T} = ict\,e_0 + \mathbf{x},
+\langle\tilde{T},\tilde{T}\rangle = -(c^2t^2+x^2+y^2+z^2), \qquad \tilde{T} = ict\,e_0 + \mathbf{x},
 $$
 
-of signature $(0,4)$. It is the form of the plain product, and it differs from the bilinear form $B$ by the sign of the vector part alone, $C(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q})$ against $B(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$.
+of signature $(0,4)$. It is the form of the plain product, and it differs from the quaternionic bilinear form by the sign of the vector part alone, $\langle\tilde{P},\tilde{Q}\rangle = \mathrm{Sc}(\tilde{P}\tilde{Q})$ against $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$.
 
-**The bilinear form, from the natural sign.** $B$ is the bilinear form over $\mathbb{C}$ associated with the biquaternion norm, $B(\tilde{Q},\tilde{Q}) = N(\tilde{Q}) = \sum_\mu Q_\mu^2$ (*Biquaternion Norm and Invertibility*); it is level 1 of the metric above, and its Gram matrix in the complex basis $e_0,e_1,e_2,e_3$ is the identity. Its diagonal is generally complex, so it carries no positivity and is no analytic norm; its unit group is the set of elements of norm one, $\{\tilde{\Lambda} : B(\tilde{\Lambda},\tilde{\Lambda}) = 1\}$, which is $\mathrm{SL}(2,\mathbb{C})$ — the norm is the determinant of the matrix realization — the group the notation table calls the Lorentz group on $\mathbb{M}_-$. It is the form of symmetry and duality.
+**The quaternionic bilinear form, from the natural sign.** $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ is the bilinear form over $\mathbb{C}$ associated with the biquaternion norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$ (*Biquaternion Norm and Invertibility*); it is level 1 of the metric below, and its Gram matrix in the complex basis $e_0,e_1,e_2,e_3$ is the identity. Its diagonal is generally complex, so it carries no positivity and is no analytic norm; its unit group is the set of elements of norm one, $\{\tilde{\Lambda} : \langle\tilde{\Lambda},\tilde{\Lambda}\rangle_{\natural} = 1\}$, which is $\mathrm{SL}(2,\mathbb{C})$ — the norm is the determinant of the matrix realization — the group the notation table calls the Lorentz group on $\mathbb{M}_-$. It is the form of symmetry and duality.
 
-**The Hermitian form, from the star.** $(\tilde{P},\tilde{Q}) = \sum_\mu \bar{P}_\mu Q_\mu$ is the form the series calls the Hermitian form, the *different* object of the level-1 caution above. It is genuinely positive definite, real with $(\tilde{Q},\tilde{Q}) = \sum_\mu |Q_\mu|^2$ strictly positive for $\tilde{Q} \neq 0$, and it is the internal Hilbert-space structure that the Born rule and the unitary evolution use; its isometry group is $\{\tilde{U} : \tilde{U}^{*}\tilde{U} = e_0\} = U(2)$, the unitary slice of *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*. On the material sector it is the **Euclidean** square, $(\tilde{T},\tilde{T}) = c^2t^2+x^2+y^2+z^2$.
+**The sesquilinear form, from the star.** $\langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = P_0\bar{Q}_0 + P_1\bar{Q}_1 + P_2\bar{Q}_2 + P_3\bar{Q}_3$ is the form the series calls the Hermitian form, the *different* object of the level-1 caution below. It is genuinely positive definite, real with $\langle\tilde{Q},\tilde{Q}\rangle_{*} = \lvert Q_0\rvert^2 + \lvert Q_1\rvert^2 + \lvert Q_2\rvert^2 + \lvert Q_3\rvert^2$ strictly positive for $\tilde{Q} \neq 0$, and it is the internal Hilbert-space structure that the Born rule and the unitary evolution use; its isometry group is $\{\tilde{U} : \tilde{U}^{*}\tilde{U} = e_0\} = U(2)$, the unitary slice of *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*. On the material sector it is the **Euclidean** square, $\langle\tilde{T},\tilde{T}\rangle_{*} = c^2t^2+x^2+y^2+z^2$.
 
-**The Krein form, from the bar.** $K(\tilde{P},\tilde{Q}) = \bar{P}_0Q_0 - \bar{P}_1Q_1 - \bar{P}_2Q_2 - \bar{P}_3Q_3$ is real on the diagonal and indefinite, of signature $(2,6)$ on $\mathbb{B}$. On the material sector it is the negative of the biquaternion norm,
+**The quaternionic sesquilinear form, from the bar.** $\langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*}) = P_0\bar{Q}_0 - P_1\bar{Q}_1 - P_2\bar{Q}_2 - P_3\bar{Q}_3$ is real on the diagonal and indefinite, of signature $(2,6)$ on $\mathbb{B}$. On the material sector it is the negative of the biquaternion norm,
 
 $$
-K(\tilde{T},\tilde{T}) = c^2t^2 - x^2 - y^2 - z^2 = -N(\tilde{T}), \qquad \tilde{T} = ict\,e_0 + \mathbf{x},
+\langle\tilde{T},\tilde{T}\rangle_{\natural*} = c^2t^2 - x^2 - y^2 - z^2 = -\langle\tilde{T},\tilde{T}\rangle_{\natural}, \qquad \tilde{T} = ict\,e_0 + \mathbf{x},
 $$
 
-so the four forms read on the material sector are the interval $N$ of level 2, its negative, the Euclidean square and its negative. A space carrying a definite form and the form $K$ in this relation is a **Krein space**, and $K$ is accordingly the **Krein form** of the algebra: the definite form is the Hilbert structure, the Krein form the physical metric, and the passage between them is the fundamental symmetry below. The name is Mark Grigorievich Krein's (1907–1989), not Felix Klein's. The framework's own indefinite object at levels 1 and 2 is $N$; the last two forms are recorded here because they complete the classification, and because they are what the plain product and the bar, and not the star, produce. Its isometry group is the Pin group, the companion of the unitary slice that is the group of the star form. The Witt classes of the four forms, their isometry groups, and their reading as Hermitian forms over the algebra with respect to their own involutions are *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*.
+so the four forms read on the material sector are the interval $\langle\tilde{T},\tilde{T}\rangle_{\natural}$ of level 2, its negative, the Euclidean square and its negative. A space carrying a definite form and the form $\langle\cdot,\cdot\rangle_{\natural*}$ in this relation is a **Krein space**, and this form is accordingly the **Krein form** of the algebra: the definite form is the Hilbert structure, the Krein form the physical metric, and the passage between them is the fundamental symmetry below. The name is Mark Grigorievich Krein's (1907–1989), not Felix Klein's. The framework's own indefinite object at levels 1 and 2 is the biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$; the last two forms are recorded here because they complete the classification, and because they are what the plain product and the bar, and not the star, produce. Its isometry group is the Pin group, the companion of the unitary slice that is the group of the star form. The Witt classes of the four forms, their isometry groups, and their reading as Hermitian forms over the algebra with respect to their own involutions are *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*.
 
 **The fundamental symmetry.** The two sesquilinear forms are related by the natural sign:
 
 $$
-K(\tilde{P},\tilde{Q}) = (\tilde{P}^{\natural},\tilde{Q}), \qquad J = {}^{\natural}, \qquad J^2 = \mathrm{id}, \qquad J \ \ \mathbb{C}\text{-linear}, \qquad (J\tilde{P},\tilde{Q}) = (\tilde{P},J\tilde{Q}),
+\langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \langle\tilde{P}^{\natural},\tilde{Q}\rangle_{*}, \qquad J = {}^{\natural}, \qquad J^2 = \mathrm{id}, \qquad J \ \ \mathbb{C}\text{-linear}, \qquad \langle J\tilde{P},\tilde{Q}\rangle_{*} = \langle\tilde{P},J\tilde{Q}\rangle_{*},
 $$
 
-so $J$ is a $\mathbb{C}$-linear involution and is self-adjoint for the positive form. That is exactly the **fundamental symmetry** of a Krein space, the data of an indefinite-metric space with a definite form attached: the Krein form is the definite one with the sign twisted by $J$, the two are simultaneously diagonal in the basis adapted to the sectors, and the pair $((\cdot,\cdot), J)$ is equivalent to the pair $((\cdot,\cdot), K)$. On the material sector $J$ is the spatial reflection, $J = \mathrm{diag}(+1,-1,-1,-1)$ in the basis $ie_0, e_1, e_2, e_3$, which is the sign pattern of the $ict$ metric $\eta$ read with the opposite overall sign.
+so $J$ is a $\mathbb{C}$-linear involution and is self-adjoint for the positive form. That is exactly the **fundamental symmetry** of a Krein space, the data of an indefinite-metric space with a definite form attached: the Krein form is the definite one with the sign twisted by $J$, the two are simultaneously diagonal in the basis adapted to the sectors, and the pair $(\langle\cdot,\cdot\rangle_{*}, J)$ is equivalent to the pair $(\langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\natural*})$. On the material sector $J$ is the spatial reflection, $J = \mathrm{diag}(+1,-1,-1,-1)$ in the basis $ie_0, e_1, e_2, e_3$, which is the sign pattern of the $ict$ metric $\eta$ read with the opposite overall sign.
 
-**Why $B$ is bilinear, computed.** Three ingredients are used in each slot, and all three are $\mathbb{C}$-linear: the natural sign, $(\lambda\tilde{R})^{\natural} = \lambda\tilde{R}^{\natural}$; the centrality of $\mathbb{C}$ in $\mathbb{B}$, $\lambda\tilde{X} = \tilde{X}\lambda$; and the scalar part, $\mathrm{Sc}(\lambda\tilde{X}) = \lambda\,\mathrm{Sc}(\tilde{X})$. In the first slot,
+**Why the quaternionic bilinear form is bilinear, computed.** Three ingredients are used in each slot, and all three are $\mathbb{C}$-linear: the natural sign, $(\lambda\tilde{R})^{\natural} = \lambda\tilde{R}^{\natural}$; the centrality of $\mathbb{C}$ in $\mathbb{B}$, $\lambda\tilde{X} = \tilde{X}\lambda$; and the scalar part, $\mathrm{Sc}(\lambda\tilde{X}) = \lambda\,\mathrm{Sc}(\tilde{X})$. In the first slot,
 
 $$
-B(\lambda\tilde{P},\tilde{Q}) = \mathrm{Sc}\bigl(\lambda\tilde{P}\tilde{Q}^{\natural}\bigr) = \lambda\,\mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{\natural}\bigr) = \lambda B(\tilde{P},\tilde{Q}),
+\langle\lambda\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}\bigl(\lambda\tilde{P}\tilde{Q}^{\natural}\bigr) = \lambda\,\mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{\natural}\bigr) = \lambda\,\langle\tilde{P},\tilde{Q}\rangle_{\natural},
 $$
 
 and in the second,
 
 $$
-B(\tilde{P},\lambda\tilde{Q}) = \mathrm{Sc}\bigl(\tilde{P}(\lambda\tilde{Q})^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde{P}\lambda\tilde{Q}^{\natural}\bigr) = \lambda\,\mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{\natural}\bigr) = \lambda B(\tilde{P},\tilde{Q}),
+\langle\tilde{P},\lambda\tilde{Q}\rangle_{\natural} = \mathrm{Sc}\bigl(\tilde{P}(\lambda\tilde{Q})^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde{P}\lambda\tilde{Q}^{\natural}\bigr) = \lambda\,\mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{\natural}\bigr) = \lambda\,\langle\tilde{P},\tilde{Q}\rangle_{\natural},
 $$
 
-so a scalar pulls out of both slots without conjugation and $B$ is $\mathbb{C}$-bilinear. For $(\cdot,\cdot)$ and $K$ the same computation conjugates $\lambda$, $(\lambda\tilde{P},\tilde{Q}) = \mathrm{Sc}\bigl(\bar\lambda\tilde{P}^{*}\tilde{Q}\bigr) = \bar\lambda(\tilde{P},\tilde{Q})$, so those two are sesquilinear in the first slot and linear in the second. The bilinearity of $B$ is therefore not a convention that could have been made differently: it is the exact consequence of the $\mathbb{C}$-linearity of the natural sign together with the centrality of $\mathbb{C}$ in $\mathbb{B}$, which is the point the Krein form makes from the other side.
+so a scalar pulls out of both slots without conjugation and the quaternionic bilinear form is $\mathbb{C}$-bilinear. For the two sesquilinear forms the same computation conjugates $\lambda$ in the second slot, $\langle\tilde{P},\lambda\tilde{Q}\rangle_{*} = \mathrm{Sc}\bigl(\tilde{P}\bar\lambda\tilde{Q}^{*}\bigr) = \bar\lambda\,\langle\tilde{P},\tilde{Q}\rangle_{*}$, so those two are linear in the first slot and sesquilinear in the second. The bilinearity of the quaternionic bilinear form is therefore not a convention that could have been made differently: it is the exact consequence of the $\mathbb{C}$-linearity of the natural sign together with the centrality of $\mathbb{C}$ in $\mathbb{B}$, which is the point the Krein form makes from the other side.
+
+### The Metric: Three Levels
+
+The word "metric" appears at three distinct levels in the series, and most of the disagreements below are the result of the levels being conflated. They are separated here in order of priority, because the first is the convention of the framework and the third is only a convention of translation.
+
+**Level 1 — the biquaternion norm on $\mathbb{B}$.** The algebra carries the complex-linear biquaternion norm
+
+$$
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
+$$
+
+and with all four coefficients $Q_\mu$ complex its Gram matrix is the **identity**:
+
+$$
+\mathrm{diag}(+1,+1,+1,+1).
+$$
+
+This is the metric of the biquaternion universe, and it is the framework's primary convention. It is a metric **on $\mathbb{C}$** — a $\mathbb{C}$-bilinear form — and read that way every one of its four entries is positive: on $\mathbb{B}$ there is no minus sign in the form itself, and none is needed. That is precisely what the complex coefficients buy. A *real* direction has to be labelled positive or negative in advance, and that labelling becomes a convention that can be chosen wrongly; a complex coefficient carries its own sign in the coefficient, so all four directions can start out on an equal footing and no such commitment is required. Two cautions about reading it. It is not positive definite and it is not a norm in the analytic sense — it vanishes on the nonzero zero divisors, which is why $\mathbb{B}$ is not a normed division algebra. And the Hermitian form $\lvert Q_0\rvert^2 + \lvert Q_1\rvert^2 + \lvert Q_2\rvert^2 + \lvert Q_3\rvert^2$ is a *different* object: real-valued, positive definite, and $\mathbb{C}$-antilinear in its first argument. It is used only where a positive-definite inner product on a complex vector space is needed, and it is not the biquaternion norm of the algebra. The forms of the algebra, with the involution that produces each, are classified in *The Involutions and the Four Forms* above.
+
+**Level 2 — the real sectors.** A minus appears only once a *real* coordinate is placed on a direction whose coefficient carries a factor of $i$. The two four-dimensional real sectors are exactly such choices, and the same level-1 form reads off differently on each:
+
+| Sector | Basis | The norm on the basis | Signature |
+|---|---|---|---|
+| $\mathbb{M}_-$ (material) | $ie_0,\ e_1,\ e_2,\ e_3$ | $-1,+1,+1,+1$ | $(-,+,+,+)$ |
+| $\mathbb{M}_+$ (informational) | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $+1,-1,-1,-1$ | $(+,-,-,-)$ |
+
+Read as a statement about **objects** rather than directions: an element of $\mathbb{M}_-$ carries the metric $(-,+,+,+)$, and an element of $\mathbb{M}_+$ carries $(+,-,-,-)$. This is not a separate choice made sector by sector — it is the one level-1 form read on two different real bases, and the two readings are mirror images of one another through the identity below.
+
+The Minkowski interval is not postulated at this level either. It is the level-1 form read on the material sector with the time coordinate written $ict$: the four-position is $\tilde{Q} = ict\,e_0 + \mathbf{x}$, whose scalar coefficient $ict$ is imaginary, and
+
+$$
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = (ict)^2 + x^2 + y^2 + z^2 = -c^2t^2 + \mathbf{x}^2 ,
+$$
+
+with the minus arising from $i^2 = -1$ alone. Multiplication by $i$ exchanges the sectors, $i\mathbb{M}_+ = \mathbb{M}_-$, and reverses the sign of the form, $\langle i\tilde{Q},i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$; the mirror relation between the two signatures is that identity. The Lorentzian signature is therefore an *output* of the biquaternion conventions, not an input to them.
+
+For contractions of four-vectors in the $ict$ coordinate the series writes this level-2 form as
+
+$$
+\eta = \mathrm{diag}(-1,+1,+1,+1),
+$$
+
+and at this level the series is uniform: the $ict$ metric is $(-,+,+,+)$ throughout. The two articles outside the relativistic core that carry a symbol $g = \mathrm{diag}(-1,+1,+1,+1)$ — the companion articles on the Higgs mechanism and on the Newman–Penrose formalism — mean **this** object, the $ict$-coordinate metric for index contractions, and not a Clifford metric, as their own notation tables state. They are not part of the level-3 disagreement below.
+
+**Level 3 — the Clifford metric of the $\gamma^\mu$.** When the series writes gamma matrices it needs a further symbol $g$, defined by $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$. This is a property of the chosen generators and not of the biquaternion algebra, and it is best regarded as a **tool** rather than a convention: it can be used or not, depending on the situation, and where it is used it should not dictate any convention of the framework. The biquaternion formulation requires no gamma matrices; they are a translation into the language of the standard Dirac literature, convenient when comparing with that literature or borrowing a standard result, and dispensable otherwise. The freedom this level carries is exactly the freedom the framework treats as presentation: replacing every generator by $i\gamma^\mu$ takes $g$ to $-g$ and leaves the biquaternion algebra, the biquaternion norm, the sector split, the chirality operator and the whole of levels 1 and 2 invariant.
+
+The value the series now uses is the standard **mostly-minus**
+
+$$
+g = \mathrm{diag}(+1,-1,-1,-1),
+$$
+
+so that $(\gamma^0)^2 = +I_4$ and $(\gamma^k)^2 = -I_4$. Two reasons fix it. First, **it is the form of the objects the tool represents**: the Clifford vectors correspond to the *Hermitian* subspace $\mathbb{M}_+$ — the dictionary's own identification is $x_\mu\gamma^\mu = \gamma^0\Phi(w)$ with $w \in \mathbb{M}_+$ — and $(+,-,-,-)$ is the $\mathbb{M}_+$ form, so the square of a Clifford vector agrees with the biquaternion norm of the biquaternion it represents with **no relative sign**. Second, it is the standard particle-physics convention, so articles transcribing standard results inherit the standard sign without adjustment, and the name $\mathrm{Cl}_{1,3}$ is correct in the usual counting, $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$.
+
+The opposite sign, $g = \mathrm{diag}(-1,+1,+1,+1)$, is **not in use**. It pairs the generators with the material sector, which is a real form they do not belong to; the price is a relative minus sign between the square of a Clifford vector and the biquaternion norm of the biquaternion it represents, a mixed sign pattern in the timelike bivectors, and a non-standard naming of the algebra. It is recorded here only because the series used it previously, in the article that defines the gamma matrices and the Dirac equation, in the Dirac-algebra dictionary, and in the mathematics article now titled *Biquaternion Other Algebraic Element Representations*; those three have been aligned to the value above.
+
+A difference at this level would **not** be an error at level 1 or level 2, and half the reason for separating the levels is to stop it being read as one: the biquaternion norm, the $ict$ metric and the sector structure are the same for either sign. The sign decides only which *real* Clifford form the generators generate — $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$ for $(+,-,-,-)$, $\mathrm{Cl}_{3,1} \cong M_4(\mathbb{R})$ for $(-,+,+,+)$ — and the even subalgebra, which is $\mathbb{B}$ itself, is the same for both, so no dictionary entry and no biquaternion identity depends on it.
+
+The order of authority is therefore one-way. The algebra and its level-1 and level-2 conventions are the framework; the gamma matrices and their metric are a translation of it, adopted per article for whatever the article is doing. The tool serves the framework and not the reverse: a Clifford computation is never a reason to change a biquaternion convention, and where the two appear to disagree, the disagreement is in the translation and is resolved by adjusting the generators, the adjoint, or the explicit factors of $i$ — never by altering the biquaternion norm, the $ict$ assignment, or the sector split.
+
+One consequence does reach the physics, and it is the only place where a level-3 choice is not free. The Dirac adjoint is $\bar{\psi} = \psi^\dagger\gamma^0$, so it carries $\gamma^0$ and changes with the convention. With the mostly-minus generators $\bar{\psi}\gamma^0\psi = +\psi^\dagger\psi$, the positive number density; with the mostly-plus generators the same expression gives $-\psi^\dagger\psi$. A spinor bilinear written as $\bar{\psi}\Gamma\psi$ therefore requires the adjoint to be defined consistently with the generators in use. No article in the series currently writes a spinor bilinear in the mostly-plus convention, so no statement in the series is in error on this count; the point is recorded so that one is not introduced. This sign is not part of the freedom that $\gamma^\mu \mapsto i\gamma^\mu$ leaves behind.
 
 ### The d'Alembertian
 
@@ -531,7 +545,7 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \frac{\partial^2}{\partial Q_0^2} + \Delta_Q ,
 $$
 
-the whole of it **scalar**: it multiplies by $e_0$ and acts coefficient by coefficient, $\Box\tilde{F} = \sum_\mu(\Box F_\mu)e_\mu$, and it is the norm of the gradient, $\Box = N(\tilde{\nabla})$ (*Biquaternion Norm and Invertibility*). That formal expression is a **Euclidean** Laplacian in the coordinates $Q_\mu$; its signature is not a property of the operator but of the **slice** it is read on, since on a named subspace some of the $Q_\mu$ are purely imaginary. On the material sector $\mathbb{M}_-$, where $Q_0 = ict$ and $Q_k = q_k$, the derivative $\partial^2/\partial Q_0^2 = -c^{-2}\partial_t^2$ and the same operator reads
+the whole of it **scalar**: it multiplies by $e_0$ and acts coefficient by coefficient, $\Box\tilde{F} = \sum_\mu(\Box F_\mu)e_\mu$, and it is the norm of the gradient, $\Box = \langle\tilde{\nabla},\tilde{\nabla}\rangle_{\natural}$ (*Biquaternion Norm and Invertibility*). That formal expression is a **Euclidean** Laplacian in the coordinates $Q_\mu$; its signature is not a property of the operator but of the **slice** it is read on, since on a named subspace some of the $Q_\mu$ are purely imaginary. On the material sector $\mathbb{M}_-$, where $Q_0 = ict$ and $Q_k = q_k$, the derivative $\partial^2/\partial Q_0^2 = -c^{-2}\partial_t^2$ and the same operator reads
 
 $$
 \Box\big|_{\mathbb{M}_-} = \Delta - c^{-2}\partial_t^2 = \partial_{ict}^2 + \Delta ,
@@ -654,7 +668,7 @@ $\flat$ is **not** the mass. The two roles were conflated in the retired form $\
 
 The conventions of the series fall into two groups.
 
-**Algebraic.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry. The conjugations cut the algebra into six real subspaces: the two-dimensional center subspace $\mathbb{C}_{\mathbb{B}}$; the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$; and four distinguished four-dimensional ones, named $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. Each carries its own real parameters and its own slice of the coordinate dictionary, with $q'_0 = ct$, $q_0 = ct'$, $(q_1,q_2,q_3) = (x,y,z)$ and $(q'_1,q'_2,q'_3) = (x',y',z')$. With complex coefficients the biquaternion norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is the identity matrix on $\mathbb{B}$; its Minkowski signature appears only on the real sectors, and the $i$ is what supplies the minus. The algebra carries three forms, not two: the $\mathbb{C}$-bilinear polar form of the norm, from the $\mathbb{C}$-linear natural sign; the positive-definite Hermitian form, from the star; and the Krein form, from the bar, each classified by the $\mathbb{C}$-linearity of the involution that produces it. The matrix representation $\Phi$ is fixed by its four basis images, with the Hermitian units following as $\Phi(ie_k) = i\,\Phi(e_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it. The algebra has three representations — the coefficient quadruple, the regular matrix, and the matrix image $\Phi$ — each developed in its own article, and it is the trace of $\Phi$ that the series calls the trace.
+**Algebraic.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry. The conjugations cut the algebra into six real subspaces: the two-dimensional center subspace $\mathbb{C}_{\mathbb{B}}$; the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$; and four distinguished four-dimensional ones, named $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. Each carries its own real parameters and its own slice of the coordinate dictionary, with $q'_0 = ct$, $q_0 = ct'$, $(q_1,q_2,q_3) = (x,y,z)$ and $(q'_1,q'_2,q'_3) = (x',y',z')$. With complex coefficients the biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$ is the identity matrix on $\mathbb{B}$; its Minkowski signature appears only on the real sectors, and the $i$ is what supplies the minus. The algebra carries four forms, not two: the complex bilinear form, from the identity; the $\mathbb{C}$-bilinear polar form of the norm, from the $\mathbb{C}$-linear natural sign; the positive-definite Hermitian form, from the star; and the Krein form, from the bar, each classified by the $\mathbb{C}$-linearity of the involution that produces it. The matrix representation $\Phi$ is fixed by its four basis images, with the Hermitian units following as $\Phi(ie_k) = i\,\Phi(e_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it. The algebra has three representations — the coefficient quadruple, the regular matrix, and the matrix image $\Phi$ — each developed in its own article, and it is the trace of $\Phi$ that the series calls the trace.
 
 **Spacetime and fields.** The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$, using the $ict$ convention so that the Minkowski interval is the biquaternion norm, of signature $(3,1)$, vanishing on the zero-divisor cone. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The series d'Alembertian is $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_0^2 + \Delta_Q$, read on the material sector as $\partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2$, and written by the Weyl-spinor exercise in real time as $-\partial_0^2 + \nabla^2$; every article uses this one operator, with the mass equation $\left(\Box - m^2c^2/\hbar^2\right)\psi = 0$. The Clifford metric $g$ is a level-3 tool rather than a convention, adopted where an article translates into gamma matrices, and its value is the standard mostly-minus $\mathrm{diag}(+1,-1,-1,-1)$ throughout the series — the $\mathbb{M}_+$ form, since the Clifford vectors correspond to the Hermitian subspace, so that the square of a Clifford vector agrees with the biquaternion norm of the biquaternion it represents with no relative sign. The opposite sign is not in use. Either way the biquaternion norm, the $ict$ metric and the sector structure are unchanged, and the tool never dictates them. The Dirac mass term is **linear and chirality-off-diagonal**, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$; it conserves the vector $U(1)$ and breaks the axial symmetry. The retired antilinear form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ was retired for its spacelike dispersion, and $\flat = -{}^{*}$ is retained as the algebra's real structure.
 
@@ -681,11 +695,12 @@ The theme is single. In a framework whose algebra and sector assignment are non-
 | $\mathbb{M}_- = \{ \tilde{Q} : \tilde{Q}^\flat = \tilde{Q} \}$ | Anti-Hermitian subspace, the material sector; basis $ie_0, e_1, e_2, e_3$, parameters $q'_0, q_1, q_2, q_3$ (real), with $q'_0 = ct$ |
 | $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | The material coordinate, $\mathbf{x} = x e_1 + y e_2 + z e_3$ |
 | $(ct')\,e_0 + i\mathbf{x}'$ | The informational coordinate, $\mathbf{x}' = x' e_1 + y' e_2 + z' e_3$; the temporal coefficient $ct'$ is real and the spatial ones imaginary, the mirror of the material coordinate |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$ (level 1), signature $(3,1)$ on $\mathbb{M}_-$ (level 2) and $(1,3)$ on $\mathbb{M}_+$ |
-| $B(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural}) = \sum_\mu P_\mu Q_\mu$ | The bilinear form over $\mathbb{C}$, the form of the norm, $B(\tilde{Q},\tilde{Q}) = N(\tilde{Q})$; unit group $\mathrm{SL}(2,\mathbb{C})$ |
-| $(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}^{*}\tilde{Q}) = \sum_\mu \bar{P}_\mu Q_\mu$ | The positive-definite Hermitian form, $\mathbb{C}$-sesquilinear, signature $(8,0)$ on $\mathbb{B}$ and $(4,0)$ on $\mathbb{M}_-$; unit group $U(2)$; the internal Hilbert-space structure |
-| $K(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\bar{\tilde{P}}\tilde{Q}) = \bar{P}_0Q_0 - \bar{P}_1Q_1 - \bar{P}_2Q_2 - \bar{P}_3Q_3$ | The Krein form, the indefinite sesquilinear form of the bar; signature $(2,6)$ on $\mathbb{B}$ and $(1,3)$ on $\mathbb{M}_-$; $K = -N$ on $\mathbb{M}_-$ |
-| $J = {}^{\natural}$ | The fundamental symmetry, $K(\tilde{P},\tilde{Q}) = (\tilde{P}^{\natural},\tilde{Q})$, $J^2 = \mathrm{id}$, $\mathbb{C}$-linear and self-adjoint for $(\cdot,\cdot)$ |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$ | Biquaternion norm; identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$ (level 1), signature $(3,1)$ on $\mathbb{M}_-$ (level 2) and $(1,3)$ on $\mathbb{M}_+$ |
+| $\langle\tilde{P},\tilde{Q}\rangle = \mathrm{Sc}(\tilde{P}\tilde{Q}) = P_0Q_0 - P_1Q_1 - P_2Q_2 - P_3Q_3$ | The bilinear form, the form of the plain product and of the identity conjugation; Gram matrix $\mathrm{E}$; signature $(4,4)$ on $\mathbb{B}$ and $(0,4)$ on $\mathbb{M}_-$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}) = P_0Q_0 + P_1Q_1 + P_2Q_2 + P_3Q_3$ | The quaternionic bilinear form, the form of the norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$; unit group $\mathrm{SL}(2,\mathbb{C})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = P_0\bar{Q}_0 + P_1\bar{Q}_1 + P_2\bar{Q}_2 + P_3\bar{Q}_3$ | The sesquilinear form, the positive-definite Hermitian form of the star, signature $(8,0)$ on $\mathbb{B}$ and $(4,0)$ on $\mathbb{M}_-$; unit group $U(2)$; the internal Hilbert-space structure |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*}) = P_0\bar{Q}_0 - P_1\bar{Q}_1 - P_2\bar{Q}_2 - P_3\bar{Q}_3$ | The quaternionic sesquilinear form, the indefinite Krein form of the bar; signature $(2,6)$ on $\mathbb{B}$ and $(1,3)$ on $\mathbb{M}_-$; $\langle\tilde{T},\tilde{T}\rangle_{\natural*} = -\langle\tilde{T},\tilde{T}\rangle_{\natural}$ on $\mathbb{M}_-$ |
+| $J = {}^{\natural}$ | The fundamental symmetry, $\langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \langle\tilde{P}^{\natural},\tilde{Q}\rangle_{*}$, $J^2 = \mathrm{id}$, $\mathbb{C}$-linear and self-adjoint for $\langle\cdot,\cdot\rangle_{*}$ |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric, signature $(-,+,+,+)$ (level 2) |
 | $g$ | Clifford metric of the $\gamma^\mu$ (level 3); an optional tool, not a framework convention. $\mathrm{diag}(+1,-1,-1,-1)$ throughout — the $\mathbb{M}_+$ form, matching the objects the tool represents |
 | $\tilde{\nabla} = \sum_{\mu=0}^{3} e_\mu\partial/\partial Q_\mu$, $\tilde{\nabla}^{\natural} = e_0\partial/\partial Q_0 - e_k\partial/\partial Q_k$ | Biquaternionic gradient and its quaternion conjugate, the two factors of the d'Alembertian |

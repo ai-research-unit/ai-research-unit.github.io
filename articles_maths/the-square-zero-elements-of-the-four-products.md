@@ -117,4 +117,4 @@ The sets are ordered by inclusion through the cone, $Z_3 = \{0\}\subsetneq Z_1\s
 - *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the roots of $0$ of the plain product.
 - *The Square Roots of a Central Value in the Four Products* (`articles_maths/the-square-roots-of-a-central-value-in-the-four-products.md`), for the criterion that places every square-zero set inside the zero-divisor set.
 - *The Idempotents of the Four Products* (`articles_maths/the-idempotents-of-the-four-products.md`), for the non-pure elements of the cone.
-- *The Quaternionic Sesquilinear Product in the $2\times2$ Matrix Model* (`articles_maths/the-quaternionic-sesquilinear-product-in-the-2x2-matrix-model.md`), for the square-zero equation in the matrix model.
+- *The Biquaternion Quaternionic Sesquialgebra in the $2\times2$ Matrix Representation* (`articles_maths/the-biquaternion-quaternionic-sesquialgebra-in-the-2x2-matrix-representation.md`), for the square-zero equation in the matrix model.

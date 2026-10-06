@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An indefinite complex sesquilinear form has a **null set** beyond the origin, and the shape of that set and of the totally isotropic subspaces it carries is the geometry of the form. For the quaternion sesquilinear form $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ the null set is the real quadric $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$ of dimension $7$, it is smooth away from the origin, its link is the product $S^{1}\times S^{5}$, and its maximal totally isotropic subspaces have dimension the **Witt index** $\min(p,q)$, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$. This article treats that structure: the isotropic elements, the totally isotropic subspaces, the isotropic lines and their boundary sphere, and the comparison with the *other* null set of the algebra, the zero-divisor cone of the norm $N$. The orthogonality and the subspaces are in *Krein Orthogonality and the Fundamental Decomposition*; the level sets of positive and negative sign are in *The Krein Level Sets and the Hyperbolic Structure*; and the projective geometry of the norm's cone is in *Biquaternion Topology*.
+An indefinite complex sesquilinear form has a **null set** beyond the origin, and the shape of that set and of the totally isotropic subspaces it carries is the geometry of the form. For the quaternion sesquilinear form $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ the null set is the real quadric $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$ of dimension $7$, it is smooth away from the origin, its link is the product $S^{1}\times S^{5}$, and its maximal totally isotropic subspaces have dimension the **Witt index** $\min(p,q)$, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$. This article treats that structure: the isotropic elements, the totally isotropic subspaces, and the isotropic lines and their boundary sphere. The comparison with the *other* null set of the algebra, the zero-divisor cone of the norm $N$, is *The Four Pairings of the Biquaternion Algebra*, §*The Null Sets Compared*. The orthogonality and the subspaces are in *Krein Orthogonality and the Fundamental Decomposition*; the level sets of positive and negative sign are in *The Krein Level Sets and the Hyperbolic Structure*; and the projective geometry of the norm's cone is in *Biquaternion Topology*.
 
 **Conventions.** $e_0=1$, $e_k^{2}=-e_0$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part; the quaternion sesquilinear form is $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ with $\varepsilon=(1,-1,-1,-1)$, the complex sesquilinear form is $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_{\mu}\bar Q_{\mu}Q'_{\mu}$ with $\|\tilde{Q}\|_E^{2}=\langle\tilde{Q},\tilde{Q}\rangle_{*}$, and the norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu}Q_{\mu}^{2}$.
 
@@ -29,24 +29,6 @@ it is a closed real algebraic cone of apex the origin, homogeneous of degree two
 **Proof.** On the unit sphere $\|c\|_E^{2}+\|v\|_E^{2}=1$ together with $\|c\|_E=\|v\|_E$ forces $\|c\|_E=\|v\|_E=1/\sqrt2$, so the link is $S^{1}\times S^{5}$ with the radii $1/\sqrt2$; the retraction is $\tilde{Q}\mapsto\tilde{Q}/\|\tilde{Q}\|_E$.
 
 **Example.** $e_0+e_1$ has $\langle e_0+e_1,e_0+e_1\rangle_{\natural*}=1-1=0$ and $N=2$, so it is isotropic for the quaternion sesquilinear form and not for the norm. The element $e_1+ie_2$ has $N=1+i^{2}=0$ and $\langle e_1+ie_2,e_1+ie_2\rangle_{\natural*}=-2$, the reverse situation.
-
-## The Comparison with the Norm Cone
-
-**Definition.** The **norm cone** of the algebra is the zero set $\mathcal{N}=\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0\}$ of the norm, the union of the origin and the zero-divisor set of *Biquaternion Zero Divisors*; it is a complex cone of real dimension $6$.
-
-**Theorem (the two cones are different).** The Krein null set and the norm cone are distinct: neither is contained in the other. Their intersection $\mathcal{K}\cap\mathcal{N}$ is the union of the doubly null lines $\mathbb{C}(e_0+i\hat\mu)$, $\hat\mu$ a real unit vector, a real algebraic cone of real dimension $4$; in particular it contains the two complex lines $\mathbb{C}(e_0+ie_1)$ and $\mathbb{C}(e_0-ie_1)$.
-
-**Proof.** $e_0+e_1$ is in the Krein null set and not in the norm cone, $e_1+ie_2$ in the norm cone and not in the Krein null set, so neither inclusion holds. For the intersection, $\mathcal{K}\cap\mathcal{N}$ is invariant under complex scaling, so compute it in the affine chart $Q_0=1$: writing the vector part as $v=U+iW$ with $U,W$ real, the two conditions $\|v\|_E=1$ and $N(v)=-1$ read
-
-$$
-\|U\|_E^{2}+\|W\|_E^{2}=1,\qquad
-\|U\|_E^{2}-\|W\|_E^{2}=-1,\qquad
-\langle U,W\rangle=0,
-$$
-
-which force $U=0$ and $W=\hat\mu$ a real unit vector. The chart therefore meets the intersection in the copy $\{1\}\times iS^{2}$ of $S^{2}$, of real dimension $2$, and the cone over it has real dimension $4$: the intersection is the union of the doubly null lines $\mathbb{C}(e_0+i\hat\mu)$. The two displayed lines are isotropic for both forms: $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural}=1+(i)^{2}=0$ and $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural*}=1-1=0$.
-
-**Remark (the two cones agree on a real slice).** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the quaternion sesquilinear form is the interval form and the norm is the Euclidean form, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_0^{2}-\sum_kq_k^{2}$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu}q_{\mu}^{2}$; the Krein null set is the light cone of the slice, the norm cone meets the real slice only at the origin, and the two agree nowhere except at $0$.
 
 ## Totally Isotropic Subspaces
 
@@ -89,7 +71,7 @@ $$
 \tilde\Pi_{\pm}(\hat\mu)=\tfrac12\bigl(e_0\pm i\hat\mu\bigr)
 $$
 
-is a rank-one Hermitian idempotent, $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, with $N(\tilde\Pi_\pm)=0$ and $\langle\tilde\Pi_\pm,\tilde\Pi_\pm\rangle_{\natural*}=0$. The line $\mathbb{C}\tilde\Pi_\pm(\hat\mu)$ is therefore a maximal totally isotropic complex subspace and a doubly null line; it is a **Peirce line** of the algebra, generating the minimal left ideal $\mathbb{B}\tilde\Pi_\pm(\hat\mu)$ and the minimal right ideal $\tilde\Pi_\pm(\hat\mu)\mathbb{B}$, of complex dimension two, every element of which is a zero divisor. The two diagonal members $\hat\mu=e_1$ give the lines $\mathbb{C}(e_0\pm ie_1)$ of the comparison with the norm cone.
+is a rank-one Hermitian idempotent, $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, with $N(\tilde\Pi_\pm)=0$ and $\langle\tilde\Pi_\pm,\tilde\Pi_\pm\rangle_{\natural*}=0$. The line $\mathbb{C}\tilde\Pi_\pm(\hat\mu)$ is therefore a maximal totally isotropic complex subspace and a doubly null line; it is a **Peirce line** of the algebra, generating the minimal left ideal $\mathbb{B}\tilde\Pi_\pm(\hat\mu)$ and the minimal right ideal $\tilde\Pi_\pm(\hat\mu)\mathbb{B}$, of complex dimension two, every element of which is a zero divisor. The two diagonal members $\hat\mu=e_1$ give the lines $\mathbb{C}(e_0\pm ie_1)$, the two distinguished doubly null lines.
 
 **Proof.** A real unit vector has $\hat\mu^2=-e_0$, so $(i\hat\mu)^2=e_0$ and $(e_0\pm i\hat\mu)^2=1\pm2i\hat\mu+(i\hat\mu)^2=2(e_0\pm i\hat\mu)$, whence $\tilde\Pi_\pm^2=\tilde\Pi_\pm$; $\tilde\Pi_\pm$ is Hermitian because $(i\hat\mu)^{*}=i\hat\mu$. For the two squares, $N(e_0\pm i\hat\mu)=1+N(i\hat\mu)=1-\|\hat\mu\|_E^2=0$ and $\langle e_0\pm i\hat\mu,e_0\pm i\hat\mu\rangle_{\natural*}=1-\|i\hat\mu\|_E^2=0$. The minimal ideals are the standard ones of the algebra, of complex dimension two, and their elements $X\tilde\Pi_\pm$ satisfy $N(X\tilde\Pi_\pm)=N(X)N(\tilde\Pi_\pm)=0$.
 
@@ -135,7 +117,7 @@ which force $\tilde U=0$ and $\|\tilde W\|_E=1$: the doubly null lines are exact
 
 ## Summary
 
-The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone of dimension $7$, smooth away from its apex, connected, with link and punctured homotopy type $S^{1}\times S^{5}$. It is distinct from the complex norm cone of the zero divisors: neither contains the other, and the two meet in the union of the doubly null lines, a cone of real dimension $4$ that contains $\mathbb{C}(e_0\pm ie_1)$. A totally isotropic subspace is one contained in its own Krein-orthogonal complement; the Witt index is $\min(p,q)$, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; a maximal isotropic complex subspace is the line $\mathbb{C}(e_0+e_1)$, a maximal isotropic real subspace is the plane it spans with $i(e_0+e_1)$; every isotropic subspace extends to a maximal one and the isometry group acts transitively on the maximal ones. The isotropic complex lines are the points of $S^{5}$, the boundary sphere of the positive half of the ball; the centre $S^{1}$ is the difference between the punctured cone and the space of isotropic lines. The index is computed twice: bounded by the two definite parts, a totally isotropic subspace injecting into the quotient by either, and exhibited by the **Peirce lines** generated by the rank-one Hermitian idempotents $\tilde\Pi_\pm(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$; these are exactly the doubly null lines, the isotropic lines that lie in the norm cone, while the maximal isotropic real plane is not a Peirce line, its generator being a non-zero-divisor.
+The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone of dimension $7$, smooth away from its apex, connected, with link and punctured homotopy type $S^{1}\times S^{5}$. It meets the complex norm cone of the zero divisors in the union of the doubly null lines, a cone of real dimension $4$ that contains $\mathbb{C}(e_0\pm ie_1)$; the comparison of the two cones is *The Four Pairings of the Biquaternion Algebra*, §*The Null Sets Compared*. A totally isotropic subspace is one contained in its own Krein-orthogonal complement; the Witt index is $\min(p,q)$, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; a maximal isotropic complex subspace is the line $\mathbb{C}(e_0+e_1)$, a maximal isotropic real subspace is the plane it spans with $i(e_0+e_1)$; every isotropic subspace extends to a maximal one and the isometry group acts transitively on the maximal ones. The isotropic complex lines are the points of $S^{5}$, the boundary sphere of the positive half of the ball; the centre $S^{1}$ is the difference between the punctured cone and the space of isotropic lines. The index is computed twice: bounded by the two definite parts, a totally isotropic subspace injecting into the quotient by either, and exhibited by the **Peirce lines** generated by the rank-one Hermitian idempotents $\tilde\Pi_\pm(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$; these are exactly the doubly null lines, the isotropic lines that lie in the norm cone, while the maximal isotropic real plane is not a Peirce line, its generator being a non-zero-divisor.
 
 ## Summary of Notation
 
@@ -155,7 +137,8 @@ The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone o
 
 ## Further Reading
 
-- *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the norm cone that the Krein null set is compared with
+- *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the norm cone of the zero divisors, whose intersection with the Krein null set is the doubly null lines
+- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the comparison of the null sets and of the level sets of the four forms
 - *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the idempotents $\tilde\Pi_\pm(\hat\mu)$ and the minimal left and right ideals they generate
 - *The Complex Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-complex-bilinear-form-on-the-biquaternion-algebra.md`), for the null quadric of the complex bilinear form and its isotropic planes
 - *The Six Subspaces and the Four Complex Products* (`articles_maths/the-six-subspaces-and-the-four-complex-products.md`), for the same description for the quaternion bilinear form

@@ -10,9 +10,6 @@ biquaternion-null-quadric-and-projective-geometry
 
 
 
-biquaternion-rotations-and-lorentz-transformations
-
-
 M2C
 
 
@@ -24,8 +21,11 @@ VECTOR PART ?
 RESTRUCTURE THE INITIAL 2 OPERATORS to Hilbert 
 
 
-In the math introduction, you removed the explanation about the split  Theory, Operator Theory, * Theory, † Operator Theory (involution on the operator)
-
+Twistors and the Biquaternion Incidence Relation	twistor theory is a physics construction
+The Biquaternion Conformal Group of Space-Time	"space-time" in the name
+The Celestial Sphere and the Spinor Sky	the sky and the spinor are observational
+Anti-de Sitter Space as a Biquaternion Model	AdS is a physics model
+The de Sitter Space and the Biquaternion Fibration	de Sitter is a physics model
 
 
 
@@ -6790,6 +6790,7 @@ In the twistor correspondence, the vector part of products of biquaternions enco
 The vector part of PQ is the non-commutative part of the algebra. The scalar part alone would give a commutative form; the vector part carries the non-commutativity.
 
 So yes: the vector parts have meaning and use. They are not redundant with the scalar parts. The four scalar forms give four numbers; the four vector forms give four vectors, and together they reconstruct the full products PQ, P^\natural Q, P Q^*, and P^\natural Q^*.
+
 
 
 

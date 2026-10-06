@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is studied in depth in the mathematics corpus, and every result the physics uses is explained there. This article is the physics-side entry point to that mathematical study. It carries the direct links to all articles of the mathematics *Biquaternions* category. Every link below opens a mathematics article directly.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is studied in depth in the mathematics corpus, and every result the physics uses is explained there. This article is the physics-side entry point to that mathematical study. It carries the direct links to all one hundred and sixty-nine entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them. Every entry without a leading `+` opens a mathematics article directly; the twelve entries marked `+` are registered in the mathematics menu as planned and their articles are not yet written.
 
 ## Algebra
 
@@ -14,6 +14,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Introduction to the Six Subspaces](../articles_maths/introduction-to-the-six-subspaces.html)
 - [Decompositions Along the Six Subspaces](../articles_maths/decompositions-along-the-six-subspaces.html)
 - [Comparison of the Six Subspaces](../articles_maths/comparison-of-the-six-subspaces.html)
+- [Introduction to the Biquaternion Four-Vector Representation](../articles_maths/biquaternion-four-vector-element-representation.html)
 - [Introduction to the 2×2 Matrix Representation of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.html)
 - [Introduction to the 4×4 Regular Matrix Representation of Biquaternions](../articles_maths/introduction-to-the-4x4-regular-matrix-representation-of-biquaternions.html)
 
@@ -83,6 +84,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Why the Ideals, the Idempotents and the Zero Divisors Do Not Change](../articles_maths/why-the-ideals-the-idempotents-and-the-zero-divisors-do-not-change.html)
 - [The Automorphisms and Derivations of the Real Biquaternion Algebra](../articles_maths/the-automorphisms-and-derivations-of-the-real-biquaternion-algebra.html)
 - [The Biquaternion Algebra as a Real Module over Itself](../articles_maths/the-biquaternion-algebra-as-a-real-module-over-itself.html)
+- [The Clifford Algebra Representation](../articles_maths/the-clifford-algebra-representation.html)
 
 ### Synthesis of the Four Products
 
@@ -106,23 +108,26 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 ### Topology on the Biquaternions as an Algebra over $\mathbb{C}$
 
 - [The Complex Bilinear Form on the Biquaternion Algebra](../articles_maths/the-complex-bilinear-form-on-the-biquaternion-algebra.html)
-- [The Isotropic Structure of the Complex Bilinear Form](../articles_maths/the-isotropic-structure-of-the-complex-bilinear-form.html)
-- [The Level Sets and the Isometry Group of the Complex Bilinear Form](../articles_maths/the-level-sets-and-the-isometry-group-of-the-complex-bilinear-form.html)
-- [The Gram Matrix of the Complex Bilinear Form](../articles_maths/the-gram-matrix-of-the-complex-bilinear-form.html)
 - [The Six Subspaces under the Complex Bilinear Form](../articles_maths/the-six-subspaces-under-the-complex-bilinear-form.html)
 - [Association and the Transpose on the Biquaternion Algebra](../articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.html)
+- [The Biquaternion Algebra in the $2\times2$ Matrix Representation](../articles_maths/the-biquaternion-algebra-in-the-2x2-matrix-representation.html)
+- [The Biquaternion Algebra in the $4\times4$ Regular Matrix Representation](../articles_maths/the-biquaternion-algebra-in-the-4x4-regular-matrix-representation.html)
 
 ### Topology on the Biquaternions as a Quaternionic Algebra over $\mathbb{C}$
 
-- [The Quaternion Bilinear Form on the Biquaternion Algebra](../articles_maths/the-bilinear-form-on-the-biquaternion-algebra.html)
+- [The Quaternion Bilinear Form on the Biquaternion Algebra](../articles_maths/the-quaternion-bilinear-form-on-the-biquaternion-algebra.html)
 - [Biquaternion Norm and Invertibility](../articles_maths/biquaternion-norm-and-invertibility.html)
 - [The Clifford Structure of the Biquaternion Algebra](../articles_maths/biquaternion-clifford-structure.html)
 - [Biquaternion Topology](../articles_maths/biquaternion-topology.html)
 - [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html)
 - [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html)
-- [The Real Forms of the Bilinear Form](../articles_maths/the-real-forms-of-the-bilinear-form.html)
 - [The Isotropic Structure of the Quaternion Bilinear Form](../articles_maths/the-isotropic-structure-of-the-quaternion-bilinear-form.html)
 - [The Six Subspaces under the Quaternion Bilinear Form](../articles_maths/the-six-subspaces-under-the-quaternion-bilinear-form.html)
+- [Two-Sided Operators on the Biquaternion Algebra with Signed Inner Conjugation](../articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-signed-inner-conjugation.html)
+- [One-Sided Operators on the Biquaternion Algebra with Signed Inner Conjugation](../articles_maths/one-sided-operators-on-the-biquaternion-algebra-with-signed-inner-conjugation.html)
+- [The Pin and Spin Groups of the Biquaternion Algebra with Signed Inner Conjugation](../articles_maths/the-pin-and-spin-groups-of-the-biquaternion-algebra-with-signed-inner-conjugation.html)
+- [The Biquaternion Quaternionic Algebra in the $2\times2$ Matrix Representation](../articles_maths/the-biquaternion-quaternionic-algebra-in-the-2x2-matrix-representation.html)
+- [The Biquaternion Quaternionic Algebra in the $4\times4$ Regular Matrix Representation](../articles_maths/the-biquaternion-quaternionic-algebra-in-the-4x4-regular-matrix-representation.html)
 
 ### Topology on the Biquaternions as a Sesquialgebra over $\mathbb{C}$
 
@@ -132,7 +137,9 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/hermitian-modules-over-the-biquaternion-algebra-with-hermitian-adjoint.html)
 - [Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint](../articles_maths/hermitian-forms-over-the-biquaternion-algebra-and-the-unitary-witt-group-with-hermitian-adjoint.html)
 - [Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html)
-- [The Hermitian Form and the Hilbert Structure of the Biquaternion Algebra](../articles_maths/the-hermitian-form-and-the-hilbert-structure-of-the-biquaternion-algebra.html)
+- [The Six Subspaces under the Complex Sesquilinear Form](../articles_maths/the-six-subspaces-under-the-complex-sesquilinear-form.html)
+- [The Biquaternion Sesquialgebra in the $2\times2$ Matrix Representation](../articles_maths/the-biquaternion-sesquialgebra-in-the-2x2-matrix-representation.html)
+- [The Biquaternion Sesquialgebra in the $4\times4$ Regular Matrix Representation](../articles_maths/the-biquaternion-sesquialgebra-in-the-4x4-regular-matrix-representation.html)
 - [Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html)
 - [One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/one-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html)
 - [Mixed Inner Conjugation on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/mixed-inner-conjugation-on-the-biquaternion-algebra-with-hermitian-adjoint.html)
@@ -148,47 +155,25 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Krein Orthogonality and the Fundamental Decomposition](../articles_maths/krein-orthogonality-and-the-fundamental-decomposition.html)
 - [The Isotropic Structure of the Krein Form](../articles_maths/the-isotropic-structure-of-the-krein-form.html)
 - [The Krein Level Sets and the Hyperbolic Structure](../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html)
-- [The Krein Space Structure and the Pontryagin Index](../articles_maths/the-krein-space-structure-and-the-pontryagin-index.html)
-- [The Witt Index and the Maximal Isotropic Subspaces of the Krein Form](../articles_maths/the-witt-index-and-the-maximal-isotropic-subspaces-of-the-krein-form.html)
-- [The Six Subspaces under the Krein Form](../articles_maths/the-six-subspaces-under-the-krein-form.html)
-- [The Real Forms of the Krein Form](../articles_maths/the-real-forms-of-the-krein-form.html)
+- [The Six Subspaces under the Quaternion Sesquilinear Form](../articles_maths/the-six-subspaces-under-the-quaternion-sesquilinear-form.html)
 - [J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra](../articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-biquaternion-algebra.html)
 - [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](../articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html)
 - [The Indefinite Hermitian Sandwich on the Biquaternion Algebra](../articles_maths/the-indefinite-hermitian-sandwich-on-the-biquaternion-algebra.html)
+- [The Biquaternion Quaternionic Sesquialgebra in the $2\times2$ Matrix Representation](../articles_maths/the-biquaternion-quaternionic-sesquialgebra-in-the-2x2-matrix-representation.html)
+- [The Biquaternion Quaternionic Sesquialgebra in the $4\times4$ Regular Matrix Representation](../articles_maths/the-biquaternion-quaternionic-sesquialgebra-in-the-4x4-regular-matrix-representation.html)
 
 ### Topology on the Biquaternions as an Algebra over $\mathbb{R}$
 
 - [The Realification of the Four Forms](../articles_maths/the-realification-of-the-four-forms.html)
 - [The Trace Form of the Real Biquaternion Algebra](../articles_maths/the-trace-form-of-the-real-biquaternion-algebra.html)
-- [The Real Reading of the Six Subspaces](../articles_maths/the-real-reading-of-the-six-subspaces.html)
-- [The Real Norm and the Units](../articles_maths/the-real-norm-and-the-units.html)
-- [The Real Isotropic Structure](../articles_maths/the-real-isotropic-structure.html)
-- [The Real Topology of the Biquaternion Algebra](../articles_maths/the-real-topology-of-the-biquaternion-algebra.html)
+- [The Six Subspaces under the Trace Form](../articles_maths/the-six-subspaces-under-the-trace-form.html)
+- [Operators of the Real Biquaternion Algebra](../articles_maths/operators-of-the-real-biquaternion-algebra.html)
+- [The Biquaternion Algebra over $\mathbb{R}$ in the $2\times2$ Matrix Representation](../articles_maths/the-biquaternion-algebra-over-r-in-the-2x2-matrix-representation.html)
+- [The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Regular Matrix Representation](../articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-regular-matrix-representation.html)
 
 ### Synthesis and Relations Between the Four Forms
 
 - [The Four Pairings of the Biquaternion Algebra](../articles_maths/the-four-pairings-of-the-biquaternion-algebra.html)
-- [The Forms in the Matrix Representation of the Biquaternion Algebra](../articles_maths/the-forms-in-the-matrix-representation-of-the-biquaternion-algebra.html)
-- [The Gram Matrices of the Four Forms](../articles_maths/the-gram-matrices-of-the-four-forms.html)
-- [The Six Subspaces and the Four Forms](../articles_maths/the-six-subspaces-and-the-four-forms.html)
-- [The Centre Subspace under the Four Forms](../articles_maths/the-centre-subspace-under-the-four-forms.html)
-- [The Vector Subspace under the Four Forms](../articles_maths/the-vector-subspace-under-the-four-forms.html)
-- [The Quaternion Subspace under the Four Forms](../articles_maths/the-quaternion-subspace-under-the-four-forms.html)
-- [The Anti-Quaternion Subspace under the Four Forms](../articles_maths/the-anti-quaternion-subspace-under-the-four-forms.html)
-- [The Hermitian Subspace under the Four Forms](../articles_maths/the-hermitian-subspace-under-the-four-forms.html)
-- [The Anti-Hermitian Subspace under the Four Forms](../articles_maths/the-anti-hermitian-subspace-under-the-four-forms.html)
-- [The 2×2 Matrix Representation under the Four Forms](../articles_maths/the-2x2-matrix-representation-under-the-four-forms.html)
-- [The 4×4 Regular Matrix Representation under the Four Forms](../articles_maths/the-4x4-regular-matrix-representation-under-the-four-forms.html)
-- [Biquaternion Four-Vector Element Representation](../articles_maths/biquaternion-four-vector-element-representation.html)
-- [Biquaternion Other Algebraic Element Representations](../articles_maths/biquaternion-other-algebraic-element-representations.html)
-- [Biquaternion 2×2 Matrix Operator Representation](../articles_maths/biquaternion-2x2-matrix-operator-representation.html)
-- [Biquaternion 4×4 Regular Matrix Operator Representation](../articles_maths/biquaternion-4x4-regular-matrix-operator-representation.html)
-- [Biquaternion Four-Vector Operator Representation](../articles_maths/biquaternion-four-vector-operator-representation.html)
-- [The Minkowski Form and the Modulus-Squared Map in the Matrix Representation](../articles_maths/the-minkowski-form-and-the-modulus-squared-map-in-the-matrix-representation.html)
-- [The Unit Group and the Frobenius Norm in the Matrix Representation](../articles_maths/the-unit-group-and-the-frobenius-norm-in-the-matrix-representation.html)
-- [The Quaternionic Product in the $2\times2$ Matrix Model](../articles_maths/the-quaternionic-product-in-the-2x2-matrix-model.html)
-- [The Biquaternion Sesquialgebra in the $2\times2$ Matrix Model](../articles_maths/the-biquaternion-sesquialgebra-in-the-2x2-matrix-model.html)
-- [The Quaternionic Sesquilinear Product in the $2\times2$ Matrix Model](../articles_maths/the-quaternionic-sesquilinear-product-in-the-2x2-matrix-model.html)
 
 ## Analysis
 
@@ -206,6 +191,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html)
 - [Biquaternion Polar Element Representation](../articles_maths/biquaternion-polar-element-representation.html)
 - [Biquaternion Partial Polar Element Representations](../articles_maths/biquaternion-partial-polar-element-representations.html)
+- [Biquaternion Four-Vector Operator Representation](../articles_maths/biquaternion-four-vector-operator-representation.html)
 - [Biquaternion Twisted Spinor Operator Representation](../articles_maths/biquaternion-twisted-spinor-operator-representation.html)
 - [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html)
 - [Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.html)
@@ -229,11 +215,26 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [The Krein Cartan Decomposition of the Operator Algebra](../articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.html)
 - [The Finite Subgroups of the Unit Sphere and the McKay Correspondence](../articles_maths/the-finite-subgroups-of-the-unit-sphere-and-the-mckay-correspondence.html)
 
+### Fractal Geometry
+
+- + [The Biquaternion Quadratic Map and Its Julia Sets](../articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.html)
+- + [The Biquaternion Mandelbrot Set and the Connectedness Locus](../articles_maths/the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html)
+- + [The Slices of the Biquaternion Julia Sets](../articles_maths/the-slices-of-the-biquaternion-julia-sets.html)
+- + [The Escape Radius and the Green's Function for the Biquaternions](../articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.html)
+- + [The Zero Divisors and the Singular Julia Sets](../articles_maths/the-zero-divisors-and-the-singular-julia-sets.html)
+- + [The Three Conjugations and the Symmetric Biquaternion Fractals](../articles_maths/the-three-conjugations-and-the-symmetric-biquaternion-fractals.html)
+- + [The Matrix Representation and the Biquaternion Dynamics](../articles_maths/the-matrix-representation-and-the-biquaternion-dynamics.html)
+- + [The Idempotent Decomposition and the Split Fractal](../articles_maths/the-idempotent-decomposition-and-the-split-fractal.html)
+- + [The Biquaternion Iterated Function Systems](../articles_maths/the-biquaternion-iterated-function-systems.html)
+- + [The Hausdorff Dimension of the Biquaternion Julia Sets](../articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.html)
+- + [The Pluripotential Theory of the Biquaternion Dynamics](../articles_maths/the-pluripotential-theory-of-the-biquaternion-dynamics.html)
+- + [The Biquaternion Holomorphic Dynamics and the Jacobian](../articles_maths/the-biquaternion-holomorphic-dynamics-and-the-jacobian.html)
+
 ## Summary
 
 - The biquaternion algebra is studied in depth in the mathematics corpus; this article is the physics-side sub-menu of that study and owns no result of its own.
 - The mathematical study is organised in four blocks: *Algebra*, *Topology*, *Analysis* and *Geometry*, and each block carries a part of the physics.
-- The article carries the direct links to all one hundred and sixty-seven articles of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them.
+- The article carries the direct links to all one hundred and sixty-nine entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them; of these, the twelve entries of the group *Fractal Geometry* are planned in the mathematics menu and not yet written, and they carry the same `+` marker here.
 - The neighbouring mathematical systems, the split-biquaternions and the structural comparison around the biquaternions, are outside this index.
 
 ## Summary of Notation

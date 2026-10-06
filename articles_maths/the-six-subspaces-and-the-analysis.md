@@ -194,7 +194,7 @@ The contour theory follows the same division: on the centre it is the classical 
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
 - *Biquaternion Analysis* (`articles_maths/biquaternion-analysis.md`), for the gradient, the d'Alembertian and the operators on a four-dimensional subspace
 - *Biquaternion Integration* (`articles_maths/biquaternion-integration.md`), for the Cauchy integral formula, its consequences and the fundamental solutions on the quaternion subspace
-- *The Six Subspaces and the Four Forms* (`articles_maths/the-six-subspaces-and-the-four-forms.md`), for the signatures of the norm on the six, which are the types of the second-order operator
+- *The Six Subspaces under the Quaternion Bilinear Form* (`articles_maths/the-six-subspaces-under-the-quaternion-bilinear-form.md`), for the signatures of the norm on the six, which are the types of the second-order operator
 - *The Six Subspaces and the Elements* (`articles_maths/the-six-subspaces-and-the-elements.md`), for the null elements on which the analysis degenerates
 - *Quaternion Analysis* (`articles_maths/quaternion-analysis.md`), for the real quaternion case of the same operators
 - R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the quaternion-valued analysis of four real variables.

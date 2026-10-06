@@ -17,7 +17,7 @@ $$
 \langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*}),
 $$
 
-the plain product, the product with the natural conjugation on the first argument, the product with the Hermitian conjugation on the second, and the product with both. This article sets them side by side: their conjugation, their linearity, their symmetry, their Gram matrix in the coefficient basis, their signature and the isometry group each one defines. The comparison is the natural entry into the category, because it shows exactly what each pairing shares with the other three and where it differs.
+the plain product, the product with the natural conjugation on the first argument, the product with the Hermitian conjugation on the second, and the product with both. This article sets them side by side: their conjugation, their linearity, their symmetry, their Gram matrix in the coefficient basis, their signature and the isometry group each one defines. The comparison is the natural entry into the category, because it shows exactly what each pairing shares with the other three and where it differs. Their null sets, their level sets and their restrictions to the six distinguished real subspaces belong to the comparison too, since those are the objects the four layers differ in most visibly; the subspace comparison is §*The Six Subspaces in Comparison* and §*The Two Readings*.
 
 The four conjugations of the algebra generate the Klein four-group $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$; they index the four pairings, the identity and the natural conjugation on the first argument and the identity and the Hermitian conjugation on the second. The fifth involution, the reversal $\flat=-{}^{*}$, gives the negative of the complex sesquilinear form and is the only other pairing the four conjugations produce.
 
@@ -165,6 +165,112 @@ The transpose $R_{\tilde Q}$ belongs to the complex bilinear form, the two anti-
 
 **Proof.** Each identity is checked on the units and extended by $\mathbb{R}$-linearity; equivalently, each is $\mathrm{Sc}$-cyclicity applied to the product. $\square$
 
+## The Six Subspaces in Comparison
+
+The comparison extends from the algebra to the six distinguished real subspaces of *Introduction to the Six Subspaces*, and the six are where the four forms differ most visibly. Because all four are diagonal in the coefficient basis, each restriction is read off the real sign strings, and the signatures on the six are
+
+| subspace | $\dim_{\mathbb{R}}$ | $\langle\cdot,\cdot\rangle$ | $\langle\cdot,\cdot\rangle_{\natural}$ | $\langle\cdot,\cdot\rangle_{*}$ | $\langle\cdot,\cdot\rangle_{\natural*}$ |
+|---|---|---|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}$ | $2$ | $(1,1)$ | $(1,1)$ | $(2,0)$ | $(2,0)$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $6$ | $(3,3)$ | $(3,3)$ | $(6,0)$ | $(0,6)$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $4$ | $(1,3)$ | $(4,0)$ | $(4,0)$ | $(1,3)$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $4$ | $(3,1)$ | $(0,4)$ | $(4,0)$ | $(1,3)$ |
+| $\mathbb{M}_+$ | $4$ | $(4,0)$ | $(1,3)$ | $(4,0)$ | $(1,3)$ |
+| $\mathbb{M}_-$ | $4$ | $(0,4)$ | $(3,1)$ | $(4,0)$ | $(1,3)$ |
+
+Four features of the table are worth naming. The complex sesquilinear form is **positive definite on every one of the six**, so it distinguishes nothing among them. The complex bilinear and the quaternion bilinear form **agree in signature on the centre and the vector subspace** and part company on the four four-dimensional subspaces, where the complex bilinear form is indefinite and the quaternion bilinear form is definite or anti-definite. The quaternion sesquilinear form has the **same** signature $(1,3)$ on each of the four four-dimensional subspaces, which is the form statement of their common real dimension. And each of the two indefinite bilinear forms is **definite on exactly one pair** of the four-dimensional subspaces: the quaternion bilinear form is positive definite on $\mathbb{H}_{\mathbb{B}}$ and negative definite on $i\mathbb{H}_{\mathbb{B}}$, while the complex bilinear form is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$.
+
+The four diagonal values are read in the same way, and they locate each subspace in the four layers.
+
+| subspace | element | $\langle\tilde Q,\tilde Q\rangle$ | $\langle\tilde Q,\tilde Q\rangle_{\natural}$ | $\langle\tilde Q,\tilde Q\rangle_{*}$ | $\langle\tilde Q,\tilde Q\rangle_{\natural*}$ |
+|---|---|---|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}$ | $\tilde Q=Ae_0$, $A=q_0+iq'_0$ | $A^{2}$ | $A^{2}$ | $\lvert A\rvert^{2}$ | $\lvert A\rvert^{2}$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $\tilde Q=\mathbf{P}=\sum_kP_ke_k$ | $-\sum_kP_k^{2}$ | $\sum_kP_k^{2}$ | $\sum_k\lvert P_k\rvert^{2}$ | $-\sum_k\lvert P_k\rvert^{2}$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $\tilde Q=h=\sum_\mu h_\mu e_\mu$, $h_\mu\in\mathbb{R}$ | $h_0^{2}-\sum_kh_k^{2}$ | $\sum_\mu h_\mu^{2}$ | $\sum_\mu h_\mu^{2}$ | $h_0^{2}-\sum_kh_k^{2}$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $\tilde Q=ih$ | $h_0^{2}-\sum_kh_k^{2}$ | $-\sum_\mu h_\mu^{2}$ | $\sum_\mu h_\mu^{2}$ | $h_0^{2}-\sum_kh_k^{2}$ |
+| $\mathbb{M}_+$ | $\tilde Q=a_0e_0+i\mathbf{p}$, $a_0\in\mathbb{R}$ | $a_0^{2}+(\mathbf{p},\mathbf{p})$ | $a_0^{2}-(\mathbf{p},\mathbf{p})$ | $a_0^{2}+(\mathbf{p},\mathbf{p})$ | $a_0^{2}-(\mathbf{p},\mathbf{p})$ |
+| $\mathbb{M}_-$ | $\tilde Q=ib_0e_0+\mathbf{q}$, $b_0\in\mathbb{R}$ | $-b_0^{2}-(\mathbf{q},\mathbf{q})$ | $-b_0^{2}+(\mathbf{q},\mathbf{q})$ | $b_0^{2}+(\mathbf{q},\mathbf{q})$ | $b_0^{2}-(\mathbf{q},\mathbf{q})$ |
+
+The two bilinear forms are **complex-valued** on the centre and the vector subspace, and it is their real parts that carry the signatures $(1,1)$ and $(3,3)$; the two sesquilinear forms are positive definite there. On the four real subspaces all four forms are real-valued, and the identities of the table organise the layer: on the quaternion and anti-quaternion subspaces the complex sesquilinear form, the quaternion bilinear form and the quaternion sesquilinear form pair off against the complex bilinear form; on the two Hermitian subspaces the quaternion sesquilinear form is the quaternion bilinear form up to the sign $+$ on $\mathbb{M}_+$ and $-$ on $\mathbb{M}_-$, while the complex bilinear form is definite with the opposite signs on the two. The two exchanges, "$i$ swaps the definite rows of the norm" and "$i$ swaps the definite rows of the complex bilinear form", are the two readings of one substitution, and the six subspaces are the fixed points of the four conjugations that generate them.
+
+The null sets are read from the same diagonals. On the centre all four vanish only at $0$. On the vector subspace the complex and the quaternion bilinear forms share the **complex null cone** $\sum_kP_k^{2}=0$ of real dimension $4$ – the cone whose projective geometry is *Biquaternion Topology* – while both sesquilinear forms are definite there and vanish only at $0$. On the quaternion and anti-quaternion subspaces the complex bilinear form and the quaternion sesquilinear form share the **real cone** $h_0^{2}=h_1^{2}+h_2^{2}+h_3^{2}$ of real dimension $3$, while the quaternion bilinear form is definite there. On the two Hermitian subspaces the quaternion bilinear form and the quaternion sesquilinear form coincide up to sign and share the same cone of real dimension $3$, $a_0^{2}=(\mathbf{p},\mathbf{p})$ on $\mathbb{M}_+$ and $b_0^{2}=(\mathbf{q},\mathbf{q})$ on $\mathbb{M}_-$, while the complex bilinear form is definite there.
+
+**Proposition (the two complex cones of the vector subspace).** On the vector subspace the complex bilinear and the quaternion bilinear forms share the complex cone $\sum_kP_k^{2}=0$ of real dimension $4$: an element lies on both $\sum_\mu Q_\mu^{2}=0$ and $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$ only when $Q_0=0$ and $\sum_kQ_k^{2}=0$.
+
+*Proof.* Adding the two equations gives $2Q_0^{2}=0$, so $Q_0=0$, and either equation then gives $\sum_kQ_k^{2}=0$. $\square$
+
+The three cones are separated by explicit elements: $e_1+ie_2$ lies on both complex bilinear cones, $e_0+ie_1$ on the $\natural$-cone alone, and $e_0+e_1$ on the complex bilinear cone alone.
+
+The **orthogonal pairs** are the same for all four forms: because each form is diagonal in the coefficient basis, two subspaces are orthogonal exactly when their coefficient supports are disjoint, the supports are $\{0\}$ for the centre, $\{1,2,3\}$ for the vector subspace and $\{0,1,2,3\}$ for the other four, and therefore **the centre and the vector subspace are orthogonal for all four pairings, and they are the only pair of the six that is**. Every other pair shares a coefficient, and the corresponding entry of the pairing does not vanish identically; since each diagonal entry is nonzero, the decomposition is one of non-degenerate summands and the signatures add:
+
+$$
+(1,1)+(3,3)=(4,4),\qquad (1,1)+(3,3)=(4,4),\qquad (2,0)+(6,0)=(8,0),\qquad (2,0)+(0,6)=(2,6),
+$$
+
+the last being the fundamental decomposition of the Krein space of *The Biquaternion Krein Form and Its Signature*.
+
+No **isotropic subspace beyond a line** lies inside a single one of the six, since each restriction is non-degenerate. A complex line is totally isotropic for a bilinear form exactly when it is spanned by a null element; the two complex subspaces are the centre, of complex dimension $1$, and the vector subspace, of complex dimension $3$, and by non-degeneracy a totally isotropic complex subspace of a non-degenerate form on a complex space of dimension $d$ has dimension at most $d/2$, so at most $0$ in the centre and at most $1$ in the vector subspace; the four four-dimensional subspaces are **totally real**, in the sense that $i\tilde Q$ lies in none of them when $\tilde Q\ne0$ is in one, so they contain no complex subspace at all. Each of the vector subspace, the quaternion subspace, the anti-quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace therefore contains isotropic lines for some of the forms and no isotropic plane, and the remaining restrictions are anisotropic. The isotropic lines of the quaternion bilinear form inside the six are its zero-divisor lines, and the ideals it carries are *The Isotropic Structure of the Quaternion Bilinear Form*, §*The Minimal Ideals and the Hyperbolic Peirce Basis*.
+
+The restrictions themselves, subspace by subspace and form by form, are the subject of the five companion articles: *The Six Subspaces under the Complex Bilinear Form*, *The Six Subspaces under the Quaternion Bilinear Form*, *The Six Subspaces under the Complex Sesquilinear Form*, *The Six Subspaces under the Quaternion Sesquilinear Form* and *The Six Subspaces under the Trace Form*, one for each reading group.
+
+## The Two Readings
+
+The six subspaces are one set of subspaces carrying two metric readings, and the comparison of the readings is the point of this section. The **algebra reading** is the complex sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *The Hermitian Form on the Biquaternion Algebra*, positive definite on all of $\mathbb{B}$; the **form reading** is the quaternion sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ of *The Biquaternion Krein Form and Its Signature*, of signature $(2,6)$.
+
+**Theorem (the comparison of the readings).** The complex sesquilinear form restricts to every one of the six subspaces as a positive definite form, of signature the real dimension of the subspace, because it is positive definite on all of $\mathbb{B}$. The quaternion sesquilinear form restricts to the same six subspaces with the patterns of the table above: it is positive definite on the centre $(2,0)$, negative definite on the vector subspace $(0,6)$, and indefinite of signature $(1,3)$ on each of the quaternion subspace, the anti-quaternion subspace and the two sectors. A subspace definite for one form need not be definite for the other, and the two readings share the six subspaces while they differ on four of them.
+
+**Proof.** $\langle\tilde P,\tilde P\rangle_{*}=\sum_\mu|P_\mu|^{2}>0$ off zero, so the restriction to a real subspace is positive definite of signature its real dimension. The columns of the table above give the quaternion-sesquilinear patterns; the divergence is explicit on $\mathbb{H}_{\mathbb{B}}$, where $\langle e_1,e_1\rangle_{*}=1$ while $\langle e_1,e_1\rangle_{\natural*}=-1$. $\square$
+
+**Remark (the two readings do not change the orthogonal pairs).** The six subspaces have the same orthogonal pairs under every pairing, namely the centre with the vector subspace, as §*The Six Subspaces in Comparison* records; the reading is a change of metric on one common set of subspaces, not a change of the lattice.
+
+## The Null Sets Compared
+
+The forms share one space and one basis, and the comparison is not complete with the table of §*The Forms in Comparison*: the set on which each diagonal vanishes, and the level set each diagonal singles out, are also objects of the comparison, and they are the objects the four layers differ in. The definite form has no null element beyond the origin; the three indefinite ones have cones, of two different dimensions and of two different kinds.
+
+**Definition.** The **null set** of a form $\Phi$ is the set $\{\tilde Q:\Phi(\tilde Q,\tilde Q)=0\}$.
+
+**Theorem (the four null sets).** In the coefficient basis,
+
+| form | null set | real dimension | shape |
+|---|---|---|---|
+| complex bilinear $\langle\cdot,\cdot\rangle$ | $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$ | $6$ | complex cone, smooth off the origin |
+| quaternion bilinear $\langle\cdot,\cdot\rangle_{\natural}$ | $\sum_\mu Q_\mu^{2}=0$ | $6$ | the complex norm cone $\mathcal{N}$, the zero-divisor cone |
+| complex sesquilinear $\langle\cdot,\cdot\rangle_{*}$ | $\{0\}$ | $0$ | the origin alone |
+| quaternion sesquilinear $\langle\cdot,\cdot\rangle_{\natural*}$ | $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}=0$ | $7$ | the real cone $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, link $S^{1}\times S^{5}$ |
+
+The three indefinite null sets are cones; only the complex sesquilinear form has no null element beyond the origin.
+
+**Theorem (the Krein null set and the norm cone).** The **Krein null set** $\mathcal{K}$, the null set of the quaternion sesquilinear form, and the **norm cone** $\mathcal{N}$, the null set of the quaternion bilinear form, are distinct: neither is contained in the other. Their intersection $\mathcal{K}\cap\mathcal{N}$ is the union of the **doubly null lines** $\mathbb{C}(e_0+i\hat\mu)$, $\hat\mu$ a real unit vector, a real algebraic cone of real dimension $4$; in particular it contains the two complex lines $\mathbb{C}(e_0\pm ie_1)$.
+
+**Proof.** $e_0+e_1$ lies in $\mathcal{K}$ and not in $\mathcal{N}$, since $\langle e_0+e_1,e_0+e_1\rangle_{\natural*}=1-1=0$ while $\langle e_0+e_1,e_0+e_1\rangle_{\natural}=2$; $e_1+ie_2$ lies in $\mathcal{N}$ and not in $\mathcal{K}$, since $\langle e_1+ie_2,e_1+ie_2\rangle_{\natural}=1+i^{2}=0$ while $\langle e_1+ie_2,e_1+ie_2\rangle_{\natural*}=-2$. Neither inclusion holds. For the intersection, $\mathcal{K}\cap\mathcal{N}$ is invariant under complex scaling, so compute it in the affine chart $Q_0=1$: writing the vector part as $v=U+iW$ with $U,W$ real, the two conditions $\|v\|_E=1$ and $\langle v,v\rangle_{\natural}=-1$ read
+
+$$
+\|U\|_E^{2}+\|W\|_E^{2}=1,\qquad
+\|U\|_E^{2}-\|W\|_E^{2}=-1,\qquad
+\langle U,W\rangle=0,
+$$
+
+which force $U=0$ and $W=\hat\mu$ a real unit vector. The chart therefore meets the intersection in the copy $\{1\}\times iS^{2}$ of $S^{2}$, of real dimension $2$, and the cone over it has real dimension $4$: the intersection is the union of the doubly null lines $\mathbb{C}(e_0+i\hat\mu)$. The two lines of the statement are null for both forms, $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural}=1+(i)^{2}=0$ and $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural*}=1-1=0$. The doubly null lines are also the **Peirce lines** $\mathbb{C}\tilde\Pi_\pm(\hat\mu)$ of the rank-one Hermitian idempotents $\tilde\Pi_\pm(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$, which is the description of *The Isotropic Structure of the Krein Form*, §*The Index in Two Ways*. $\square$
+
+**Remark (the two cones agree on a real slice).** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the quaternion sesquilinear form is the interval form and the norm is the Euclidean form, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_0^{2}-\sum_kq_k^{2}$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu}q_{\mu}^{2}$; the Krein null set is the light cone of the slice, the norm cone meets the real slice only at the origin, and the two agree nowhere except at $0$.
+
+## The Level Sets Compared
+
+Each form singles out the level set of its diagonal, and the level sets are the objects the layers differ in: the three indefinite ones are non-compact, and only the complex sesquilinear form gives a sphere. The sign levels of the quaternion sesquilinear form are read in the splitting $\tilde Q=c+v$ of the algebra into its centre part $c\in\mathbb{C}_{\mathbb{B}}$ and its vector part $v\in\mathbb{V}_{\mathbb{B}}$. The three sign levels are the **positive level set** $\{\langle\tilde Q,\tilde Q\rangle_{\natural*}=1\}$, the **negative level set** $\{\langle\tilde Q,\tilde Q\rangle_{\natural*}=-1\}$ and the **null set** $\{\langle\tilde Q,\tilde Q\rangle_{\natural*}=0\}$.
+
+**Theorem (the level sets of the quaternion sesquilinear form and the sphere of the definite companion).**
+
+| level set | equation in $(c,v)$ | diffeomorphism | homotopy type | compactness |
+|---|---|---|---|---|
+| positive | $\|c\|_E^{2}=1+\|v\|_E^{2}$ | $S^{1}\times\mathbb{R}^{6}$ | $S^{1}$ | no |
+| negative | $\|v\|_E^{2}=1+\|c\|_E^{2}$ | $S^{5}\times\mathbb{R}^{2}$ | $S^{5}$ | no |
+| null | $\|c\|_E=\|v\|_E$ | $S^{1}\times S^{5}\times\mathbb{R}_{>0}$ | $S^{1}\times S^{5}$ | no |
+| Euclidean sphere $\|\tilde Q\|_E=1$ | $\|c\|_E^{2}+\|v\|_E^{2}=1$ | $S^{7}$ | $S^{7}$ | yes |
+
+**Proof.** For the positive level a pair $(c,v)$ satisfies the equation exactly when $c$ lies on the circle of radius $\sqrt{1+\|v\|_E^{2}}$ in the centre, so $(c,v)\mapsto(c/\|c\|_E,v)$ identifies the set with $S^{1}\times\mathbb{R}^{6}$; for the negative level $\|v\|_E=\sqrt{1+\|c\|_E^{2}}>0$, so $v$ is determined by its direction in $S^{5}$ and by the free $c\in\mathbb{C}$, and the set is $S^{5}\times\mathbb{R}^{2}$; for the null level both norms equal some $t>0$, giving the two directions and the radius. The last row is the level set of the complex sesquilinear form, the sphere of *The Euclidean Topology of the Biquaternion Algebra*, quoted for contrast. $\square$
+
+**Remark.** The three indefinite levels are hyperboloids, all of real dimension $7$ and non-compact, while the sphere is compact and of real dimension $7$; the definite level is the only compact member of the table, and the reason the indefinite levels carry hyperbolic rather than elliptic geometry. The derivation and the hyperbolic geometry of the indefinite levels are in *The Krein Level Sets and the Hyperbolic Structure*; the level sets of the two bilinear forms, the complex quadric of the first and the norm-one group $\mathbb{B}^\times_1$ of the second, are in *Introduction to Topology on the Biquaternions*, §*The Four Forms Compared*.
+
 ## Worked Examples
 
 **The units.** $\langle e_0,e_0\rangle=\langle e_0,e_0\rangle_{\natural}=\langle e_0,e_0\rangle_{*}=\langle e_0,e_0\rangle_{\natural*}=1$: the identity is positive for all four pairings.
@@ -183,6 +289,8 @@ The transpose $R_{\tilde Q}$ belongs to the complex bilinear form, the two anti-
 
 The biquaternion algebra carries four pairings, the scalar parts of the four products of *The Four Biquaternion Complex Products*. In the author's convention $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$, $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\sum_\mu P_\mu Q_\mu$, $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$. Their Gram matrices are $\mathrm{E}$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$, and their signatures over $\mathbb{R}$ are $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$. The four forms determine one another by $\langle\tilde P,\tilde Q\rangle_{\natural}=\langle\tilde P^{\natural},\tilde Q\rangle$, $\langle\tilde P,\tilde Q\rangle_{*}=\langle\tilde P,\bar{\tilde Q}\rangle_{\natural}$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,\bar{\tilde Q}\rangle$, and the natural conjugation $J={}^{\natural}$ is an isometry of all four. The adjoint of a left multiplication is a left multiplication for the two anti-automorphic involutions and a right multiplication for the identity and the automorphic conjugation, so $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle}=R_{\tilde Q}$, $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{\natural}}=L_{\tilde Q^{\natural}}$, $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{*}}=L_{\tilde Q^{*}}$ and $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{\natural*}}=R_{\bar{\tilde Q}}$. The isometry groups are $O_4(\mathbb{C})$, $O_4(\mathbb{C})$, $U(4)$ and $U(1,3)$.
 
+Their null sets separate them as sharply as their signatures. The complex sesquilinear form has no null element beyond the origin. The complex bilinear form has the complex cone $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$, of real dimension $6$, and the quaternion bilinear form the complex norm cone $\mathcal{N}=\{\sum_\mu Q_\mu^{2}=0\}$, of real dimension $6$, the zero-divisor cone. The quaternion sesquilinear form has the real cone $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, of real dimension $7$ and link $S^{1}\times S^{5}$; the two cones $\mathcal{K}$ and $\mathcal{N}$ are distinct, and their intersection is the union of the doubly null lines $\mathbb{C}(e_0+i\hat\mu)$, a cone of real dimension $4$. The sign level sets of the quaternion sesquilinear form are the hyperboloids $S^{1}\times\mathbb{R}^{6}$ and $S^{5}\times\mathbb{R}^{2}$ and the null set $S^{1}\times S^{5}\times\mathbb{R}_{>0}$, all non-compact of real dimension $7$, against the compact sphere $S^{7}$ of the complex sesquilinear form; their restrictions to the six distinguished real subspaces are the signatures $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$ of the companion articles, and the centre and the vector subspace are the only pair of the six orthogonal for all four forms.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -195,16 +303,25 @@ The biquaternion algebra carries four pairings, the scalar parts of the four pro
 | $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ | the four signatures over $\mathbb{R}$ |
 | $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle}=R_{\tilde Q}$, $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{\natural}}=L_{\tilde Q^{\natural}}$, $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{*}}=L_{\tilde Q^{*}}$, $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{\natural*}}=R_{\bar{\tilde Q}}$ | the four adjoints |
 | $O_4(\mathbb{C})$, $O_4(\mathbb{C})$, $U(4)$, $U(1,3)$ | the four isometry groups |
+| $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$ | the Krein null set, the null set of the quaternion sesquilinear form |
+| $\mathcal{N}=\{\sum_\mu Q_\mu^{2}=0\}$ | the norm cone, the null set of the quaternion bilinear form, the zero divisors |
+| $\mathbb{C}(e_0\pm i\hat\mu)$ | the doubly null lines, $\mathcal{K}\cap\mathcal{N}$, the Peirce lines |
+| $S^{1}\times\mathbb{R}^{6}$, $S^{5}\times\mathbb{R}^{2}$, $S^{7}$ | the level sets of the quaternion sesquilinear form and of the complex sesquilinear form |
+| $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$, $(3,1)$ | the signatures of the four forms on the six subspaces |
 
 ## Further Reading
 
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations and their group
 - *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the four products whose scalar parts are the four pairings
 - *The Complex Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-complex-bilinear-form-on-the-biquaternion-algebra.md`), for the first pairing in full
-- *The Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md`), for the quaternion bilinear form and the norm
+- *The Quaternion Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-quaternion-bilinear-form-on-the-biquaternion-algebra.md`), for the quaternion bilinear form and the norm
 - *The Hermitian Form on the Biquaternion Algebra* (`articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md`), for the complex sesquilinear form and its inner product
 - *The Biquaternion Krein Form and Its Signature* (`articles_maths/the-biquaternion-krein-form-and-its-signature.md`), for the quaternion sesquilinear form and its signature
-- *The Gram Matrices of the Four Forms* (`articles_maths/the-gram-matrices-of-the-four-forms.md`), for the four Gram matrices in one place
-- *The Forms in the Matrix Representation of the Biquaternion Algebra* (`articles_maths/the-forms-in-the-matrix-representation-of-the-biquaternion-algebra.md`), for the same four forms in the $2\times2$ matrix model
+- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six distinguished real subspaces and their bases
+- *The Six Subspaces under the Complex Bilinear Form* (`articles_maths/the-six-subspaces-under-the-complex-bilinear-form.md`), *The Six Subspaces under the Quaternion Bilinear Form* (`articles_maths/the-six-subspaces-under-the-quaternion-bilinear-form.md`), *The Six Subspaces under the Complex Sesquilinear Form* (`articles_maths/the-six-subspaces-under-the-complex-sesquilinear-form.md`), *The Six Subspaces under the Quaternion Sesquilinear Form* (`articles_maths/the-six-subspaces-under-the-quaternion-sesquilinear-form.md`) and *The Six Subspaces under the Trace Form* (`articles_maths/the-six-subspaces-under-the-trace-form.md`), for the restrictions, subspace by subspace and form by form
+- *The Isotropic Structure of the Krein Form* (`articles_maths/the-isotropic-structure-of-the-krein-form.md`), for the null set of the quaternion sesquilinear form and the doubly null lines
+- *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the sign levels and the hyperbolic geometry
+- *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the sphere $S^{7}$ used here for contrast
+- *The Biquaternion Algebra in the $2\times2$ Matrix Representation* (`articles_maths/the-biquaternion-algebra-in-the-2x2-matrix-representation.md`), for the same four forms read in the two matrix representations
 - *Association and the Transpose on the Biquaternion Algebra* (`articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.md`), for the transpose that belongs to the complex bilinear pairing
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for bilinear and sesquilinear forms, their Gram matrices and their isometry groups

@@ -59,6 +59,12 @@ where $T^*M$ is identified with $TM$ by the metric. When $E$ is $\mathbb{Z}/2$-g
 
 **Example (the classical cases).** For $M=\mathbb{R}^2$ with the complex structure and $W$ trivial, the operator $D=\partial_0+i\partial_1$ is the classical Cauchy–Riemann operator, and its kernel is the holomorphic functions; for $M=\mathbb{R}^n$ with trivial twisting it is the generalised Cauchy–Riemann operator. The construction of this article is thus the co-ordinate-free and twisted form of those operators.
 
+**Example (the spinor-bundle twist).** In even dimension $n=2m$ the twisting space may be taken to be the spinor module itself, $W=S$, and the standard identification of complexified Clifford modules
+$$
+S\otimes S\;\cong\;\Lambda^\bullet T^*M\otimes\mathbb{C}
+$$
+carries the twisted Cauchy–Riemann operator $D_S$ to the operator $d+d^{*}$ of the de Rham complex, so that the harmonic sections of $D_S$ are the harmonic forms; the dimension count $\dim(S\otimes S)=2^{2m}=2^{n}=\dim\Lambda^\bullet\mathbb{C}^{n}$ is the numerical shadow of the isomorphism. The identification is one of Clifford modules and not a canonical isomorphism of bundles, and the operator $d+d^{*}$ on the exterior Clifford bundle $\Lambda^\bullet T^*M$ is the one of *Spin Geometry*.
+
 ## The Weitzenböck Formula
 
 The square of the twisted Cauchy–Riemann operator is a Laplace-type operator, and the difference from the raw Laplacian is a curvature term.
@@ -186,6 +192,7 @@ On a compact Riemann surface this reduces to the degree of the twisting line bun
 | $\mathrm{Cl}(V,q)$, $c(v)$ | Clifford algebra and Clifford multiplication, $c(v)^2=q(v)$ |
 | $S$ | Spinor module or spinor bundle |
 | $E=S\otimes W$ | Twisted Clifford module, $W$ the twisting bundle |
+| $S\otimes S\cong\Lambda^\bullet T^*M\otimes\mathbb{C}$ | Spinor-bundle twist; $D_S=d+d^{*}$ |
 | $E_\pm$ | Half-modules, eigenspaces of the chirality operator |
 | $\nabla^S,\nabla^W,\nabla^E$ | Spin, twisting and tensor connections |
 | $D_E=\sum_ic(e_i)\nabla^E_{e_i}$ | Twisted Cauchy–Riemann operator |

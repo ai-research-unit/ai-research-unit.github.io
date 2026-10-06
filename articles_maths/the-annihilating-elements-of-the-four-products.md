@@ -202,5 +202,5 @@ The set $\{c = 0\}$ is not the isotropic cone of the complex bilinear form $B(\t
 - *The Squares and the Positive Cone of the Biquaternion Sesquialgebra* (`articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesquialgebra.md`), for the square of the complex sesquilinear product and the cone it generates.
 - *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the three central values of the plain product.
 - *The Six Subspaces and the Elements* (`articles_maths/the-six-subspaces-and-the-elements.md`), for the elements of the six subspaces, the pure cone and the non-pure families.
-- *The Six Subspaces and the Four Forms* (`articles_maths/the-six-subspaces-and-the-four-forms.md`), for the restriction of the forms to the six subspaces.
-- *The Isotropic Structure of the Complex Bilinear Form* (`articles_maths/the-isotropic-structure-of-the-complex-bilinear-form.md`), for the isotropic cone of the complex bilinear form, which is not the vanishing set of the central square.
+- *The Six Subspaces under the Complex Bilinear Form* (`articles_maths/the-six-subspaces-under-the-complex-bilinear-form.md`), for the restriction of the forms to the six subspaces.
+- *The Isotropic Structure of the Quaternion Bilinear Form* (`articles_maths/the-isotropic-structure-of-the-quaternion-bilinear-form.md`), for the isotropic cones of the two bilinear forms, which are not the vanishing set of the central square.

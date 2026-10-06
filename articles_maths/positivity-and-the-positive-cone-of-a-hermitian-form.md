@@ -187,7 +187,7 @@ $$
 h(Q,Q) = \mathrm{Sc}(Q^{*}Q) = \sum_{\mu=0}^{3} \lvert Q_{\mu}\rvert^{2} ,
 $$
 
-the sum of the modulus squares of the coordinates, positive definite by *The Hermitian Form on the Biquaternion Algebra*; the verdict is the positive definiteness of the form $\mathrm{Sc}(Q^{*}Q')$ of *The Form on the Biquaternion Algebra as a Sesquilinear Form*, and its companion $\mathrm{Sc}(\bar QQ') = \sum_{\mu}\varepsilon_{\mu}\bar{Q_{\mu}}Q'_{\mu}$ is indefinite, of signature $(2,6)$ over $\mathbb{R}$, the quaternion sesquilinear form of *The Four Pairings of the Biquaternion Algebra*.
+the sum of the modulus squares of the coordinates, positive definite by *The Hermitian Form on the Biquaternion Algebra*; the verdict is the positive definiteness of the form $\mathrm{Sc}(Q^{*}Q')$ of *The Form on the Biquaternion Algebra as a Sesquilinear Form*, and its companion $\mathrm{Sc}(\bar QQ') = \sum_{\mu}\varepsilon_{\mu}\bar{Q_{\mu}}Q'_{\mu}$ is indefinite, of signature $(2,6)$ over $\mathbb{R}$, the quaternion sesquilinear form of *The Four Pairings of the Biquaternion Algebra*; here $\varepsilon=(1,-1,-1,-1)$ is the sign vector of the coefficient basis, so that the sum is the four terms $\bar Q_0Q'_0-\bar Q_1Q'_1-\bar Q_2Q'_2-\bar Q_3Q'_3$.
 
 ### The Split Algebra
 

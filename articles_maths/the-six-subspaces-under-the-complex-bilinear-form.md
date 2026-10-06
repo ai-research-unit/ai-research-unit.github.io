@@ -5,7 +5,7 @@
 
 The complex bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ of *The Complex Bilinear Form on the Biquaternion Algebra* meets the six distinguished real subspaces of *Introduction to the Six Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. On each of the six the realified form is a real symmetric form, and this article reads its matrix, its signature, its definite or indefinite character, its isotropic lines, its isometry group, and the orthogonality that relates the six.
 
-The form is used, not re-derived. Its definition, its coefficient Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$, its realified signature $(4,4)$ and its general theory are the matter of *The Complex Bilinear Form on the Biquaternion Algebra*; the six subspaces and their bases are the matter of *Introduction to the Six Subspaces*; and the companion reading of the same six subspaces by the quaternion bilinear form is *The Six Subspaces under the Quaternion Bilinear Form*. This article owns the restrictions themselves and the structure of each one.
+The form is used, not re-derived. Its definition, its coefficient Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$, its realified signature $(4,4)$ and its general theory are the matter of *The Complex Bilinear Form on the Biquaternion Algebra*; the six subspaces and their bases are the matter of *Introduction to the Six Subspaces*; and the companion reading of the same six subspaces by the quaternion bilinear form is *The Six Subspaces under the Quaternion Bilinear Form*. The four forms together on the six subspaces are *The Six Subspaces and the Four Forms*. This article owns the restrictions themselves and the structure of each one.
 
 ## The Six Restriction Matrices
 
@@ -91,21 +91,6 @@ where $\tilde Q_0,\tilde R_0$ are the centre parts and $\tilde Q_1,\tilde R_1$ t
 
 **Remark (three orthogonal splittings).** The realified form is diagonal on three pairs of complementary subspaces, and each pair gives an orthogonal decomposition of the algebra: $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\perp i\mathbb{H}_{\mathbb{B}}$, of signatures $(1,3)\perp(3,1)$; $\mathbb{B}=\mathbb{M}_+\perp\mathbb{M}_-$, of signatures $(4,0)\perp(0,4)$; and $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B})$, of signatures $(1,1)\perp(3,3)$. The three decompositions add to the same $(4,4)$ and are the three readings of the one split form.
 
-## Comparison with the Quaternion Bilinear Form
-
-The quaternion bilinear form $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$ of *The Quaternion Bilinear Form on the Biquaternion Algebra* reads the same six subspaces with the signatures $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$. The comparison with the table of this article is the following.
-
-| Subspace | Complex bilinear form | Quaternion bilinear form |
-|---|---|---|
-| Centre | $(1,1)$ | $(1,1)$ |
-| Vector | $(3,3)$ | $(3,3)$ |
-| Quaternion | $(1,3)$ | $(4,0)$ |
-| Anti-quaternion | $(3,1)$ | $(0,4)$ |
-| Hermitian | $(4,0)$ | $(1,3)$ |
-| Anti-Hermitian | $(0,4)$ | $(3,1)$ |
-
-The two tables agree on the centre and the vector subspace and are the transpose of each other on the four real subspaces: the complex bilinear form puts the definite sign on the Hermitian subspace and the indefinite sign $(1,3)$ on the quaternion subspace, while the quaternion bilinear form does the reverse. The mechanism is the relation $\langle\tilde P^{\natural},\tilde Q\rangle=\langle\tilde P,\tilde Q\rangle_{\natural}$ of *The Complex Bilinear Form on the Biquaternion Algebra*: substituting $\tilde P^{\natural}$ for $\tilde P$, the diagonal sign change $\varepsilon$ of the natural conjugation turns the complex bilinear form on a subspace into the quaternion bilinear form on it, and on the four real $4$-dimensional subspaces it converts the indefinite row $(1,3)$ into the definite row $(4,0)$ and the row $(3,1)$ into the row $(0,4)$, while leaving the centre and the vector rows $(1,1)$ and $(3,3)$ unchanged. The companion table is developed in *The Six Subspaces under the Quaternion Bilinear Form*. The two tables share the property that no one of the six rows is totally isotropic, since both forms are non-degenerate on each subspace, and they differ only in where the definite sign is placed.
-
 ## Worked Examples
 
 **The quaternion row in coordinates.** On the quaternion subspace with $\tilde Q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$ and $\tilde R$ likewise, the restriction is $\langle\tilde Q,\tilde R\rangle=q_0r_0-q_1r_1-q_2r_2-q_3r_3$, the scalar product of signature $(1,3)$: the real scalar direction is positive and the three vector directions are negative.
@@ -126,7 +111,7 @@ The two tables agree on the centre and the vector subspace and are the transpose
 
 ## Summary
 
-On the six distinguished real subspaces the complex bilinear form carries the restrictions $\begin{pmatrix}1&0\\0&-1\end{pmatrix}$ on the centre, $\operatorname{diag}(-1,-1,-1,1,1,1)$ on the vector subspace, $D$ on the quaternion subspace, $-D$ on the anti-quaternion subspace, $\mathrm{I}_4$ on the Hermitian subspace and $-\mathrm{I}_4$ on the anti-Hermitian subspace, of signatures $(1,1)$, $(3,3)$, $(1,3)$, $(3,1)$, $(4,0)$ and $(0,4)$. The Hermitian subspace is the maximal positive definite one and the anti-Hermitian the maximal negative definite one, both of dimension $4$, the two definite rows of the realified signature $(4,4)$. The four indefinite rows have isotropic cones of real dimensions $1$, $5$, $3$ and $3$, with the null elements $e_0+ie_0$, $e_1+ie_1$, $e_0+e_1$ and $ie_0+ie_1$. The isometry groups are $O(1,1)$, $O(3,3)$, $O(1,3)$, $O(3,1)$, $O(4)$ and $O(4)$, of real dimensions $1$, $15$, $6$, $6$, $6$ and $6$. The centre and the vector subspace are orthogonal complements, and the table is the transpose of the quaternion bilinear table on the four real subspaces.
+On the six distinguished real subspaces the complex bilinear form carries the restrictions $\begin{pmatrix}1&0\\0&-1\end{pmatrix}$ on the centre, $\operatorname{diag}(-1,-1,-1,1,1,1)$ on the vector subspace, $D$ on the quaternion subspace, $-D$ on the anti-quaternion subspace, $\mathrm{I}_4$ on the Hermitian subspace and $-\mathrm{I}_4$ on the anti-Hermitian subspace, of signatures $(1,1)$, $(3,3)$, $(1,3)$, $(3,1)$, $(4,0)$ and $(0,4)$. The Hermitian subspace is the maximal positive definite one and the anti-Hermitian the maximal negative definite one, both of dimension $4$, the two definite rows of the realified signature $(4,4)$. The four indefinite rows have isotropic cones of real dimensions $1$, $5$, $3$ and $3$, with the null elements $e_0+ie_0$, $e_1+ie_1$, $e_0+e_1$ and $ie_0+ie_1$. The isometry groups are $O(1,1)$, $O(3,3)$, $O(1,3)$, $O(3,1)$, $O(4)$ and $O(4)$, of real dimensions $1$, $15$, $6$, $6$, $6$ and $6$. The centre and the vector subspace are orthogonal complements. The same six subspaces under the other three pairings, and the transposition of this table with the quaternion bilinear one on the four real forms, are *The Six Subspaces and the Four Forms*.
 
 ## Summary of Notation
 
@@ -145,7 +130,8 @@ On the six distinguished real subspaces the complex bilinear form carries the re
 
 - *The Complex Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-complex-bilinear-form-on-the-biquaternion-algebra.md`), for the form, its Gram matrix $D$ and its realified signature $(4,4)$
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six distinguished real subspaces and their bases
-- *The Six Subspaces under the Quaternion Bilinear Form* (`articles_maths/the-six-subspaces-under-the-quaternion-bilinear-form.md`), for the companion table
-- *The Gram Matrices of the Four Forms* (`articles_maths/the-gram-matrices-of-the-four-forms.md`), for the four Gram matrices side by side
+- *The Six Subspaces under the Quaternion Bilinear Form* (`articles_maths/the-six-subspaces-under-the-quaternion-bilinear-form.md`), for the companion table of the same six subspaces
+- *The Six Subspaces under the Complex Sesquilinear Form* (`articles_maths/the-six-subspaces-under-the-complex-sesquilinear-form.md`), *The Six Subspaces under the Quaternion Sesquilinear Form* (`articles_maths/the-six-subspaces-under-the-quaternion-sesquilinear-form.md`) and *The Six Subspaces under the Trace Form* (`articles_maths/the-six-subspaces-under-the-trace-form.md`), for the same six subspaces under the other readings
+- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms on the six subspaces, side by side
 - *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the four realified tables side by side
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms and their signatures

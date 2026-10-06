@@ -107,30 +107,19 @@ the closed cone of *Indefinite Positivity and the Krein Cone of the Biquaternion
 
 **Proof.** $N$ is a complex polynomial of degree two, so a nonzero level is a complex hypersurface and the zero set is a cone; the quaternion sesquilinear form is real on the diagonal and its defining polynomial $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ is not holomorphic, so its levels are real hypersurfaces — the same distinction as in *The Biquaternion Krein Form and Its Signature*.
 
-**Corollary (the two pairings and the two geometries).** The two pairings of the algebra give two families of level sets: the complex hypersurfaces of the norm, whose geometry is the projective geometry of the zero-divisor cone, and the real hyperboloids of the quaternion sesquilinear form, whose geometry is the hyperbolic geometry of the ball. Their intersection is treated in *The Isotropic Structure of the Krein Form*, where it is the union of the doubly null lines.
+**Corollary (the two pairings and the two geometries).** The two pairings of the algebra give two families of level sets: the complex hypersurfaces of the norm, whose geometry is the projective geometry of the zero-divisor cone, and the real hyperboloids of the quaternion sesquilinear form, whose geometry is the hyperbolic geometry of the ball. Their intersection is the union of the doubly null lines, treated in *The Isotropic Structure of the Krein Form* and compared in *The Four Pairings of the Biquaternion Algebra*, §*The Null Sets Compared*.
 
 ## The Definite Companion and the Twisted Sphere
 
 **Definition.** The **definite companion** of the quaternion sesquilinear form is the positive definite Hermitian form $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|_E^{2}$ of *The Hermitian Form on the Biquaternion Algebra*.
 
-**Theorem (the definite levels are spheres).** The level sets of the definite companion are the Euclidean spheres $\{\|\tilde{Q}\|_E=r\}$, of real dimension $7$ and compact; the unit sphere $S^{7}$ is the boundary of the Euclidean unit ball, the only compact member of the comparison table of §*The Level Sets Compared*, and the definite form is complete and positive definite.
+**Theorem (the definite levels are spheres).** The level sets of the definite companion are the Euclidean spheres $\{\|\tilde{Q}\|_E=r\}$, of real dimension $7$ and compact; the unit sphere $S^{7}$ is the boundary of the Euclidean unit ball, the only compact level set among those compared in *The Four Pairings of the Biquaternion Algebra*, §*The Level Sets Compared*, and the definite form is complete and positive definite.
 
 **Proof.** In the coefficient basis the definite form is the standard Hermitian form of $\mathbb{C}^{4}$, so its levels are spheres; compactness and completeness are those of the Euclidean norm.
 
 **Theorem (the indefinite levels as a twisted sphere).** The bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},J\tilde{Q}\rangle_{*}$ of *The Fundamental Symmetry of the Biquaternion Algebra* writes the indefinite level set of level $t$ as the set of $\tilde{Q}$ with $\langle\tilde{Q},J\tilde{Q}\rangle_{*}=t$: it is the Euclidean sphere twisted by the involution $J={}^{\natural}$, and it is diffeomorphic to $S^{1}\times\mathbb{R}^{6}$ for $t>0$ and to $S^{5}\times\mathbb{R}^{2}$ for $t<0$, with the null set $t=0$ as their common boundary.
 
 **Proof.** The bridge is the identity of the fundamental-symmetry article, and the three diffeomorphism types are those of §*The Three Level Sets*; the twist by $J$ replaces the positive definite form by the indefinite one, which is the only change from the sphere.
-
-## The Level Sets Compared
-
-| level set | equation in $(c,v)$ | diffeomorphism | homotopy type | compactness |
-|---|---|---|---|---|
-| positive | $\lVert c\rVert_E^{2}=1+\lVert v\rVert_E^{2}$ | $S^{1}\times\mathbb{R}^{6}$ | $S^{1}$ | no |
-| negative | $\lVert v\rVert_E^{2}=1+\lVert c\rVert_E^{2}$ | $S^{5}\times\mathbb{R}^{2}$ | $S^{5}$ | no |
-| null | $\lVert c\rVert_E=\lVert v\rVert_E$ | $S^{1}\times S^{5}\times\mathbb{R}_{>0}$ | $S^{1}\times S^{5}$ | no |
-| Euclidean sphere | $\lVert c\rVert_E^{2}+\lVert v\rVert_E^{2}=1$ | $S^{7}$ | $S^{7}$ | yes |
-
-**Remark.** The last row belongs to the definite complex sesquilinear form and is quoted for contrast: it is the sphere of *The Euclidean Topology of the Biquaternion Algebra*, the only compact member of the table, and the reason the indefinite level sets carry hyperbolic rather than elliptic geometry.
 
 ## Worked Examples
 
@@ -188,3 +177,4 @@ The sign level sets of the quaternion sesquilinear form are the hyperboloids $\{
 - *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the compact sphere used here for contrast
 - *The Hermitian Form on the Biquaternion Algebra* (`articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md`), for the definite companion and its spheres
 - *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for the bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},J\tilde{Q}\rangle_{*}$
+- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the comparison of the level sets and of the null sets of the four forms

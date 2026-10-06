@@ -139,5 +139,5 @@ The **associate** $F^{\approx}$ of a $\mathbb{C}$-linear map of the biquaternion
 - *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positive definite adjoint the dagger names
 - *The Hermitian Form on the Biquaternion Algebra* (`articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md`), for the positive definite form the adjoint uses
 - *Bilinear Forms* (`articles_maths/bilinear-forms.md`), §*Isometries*, and *Quadratic Forms and Polarisation* (`articles_maths/quadratic-forms-and-polarisation.md`), §*Isometry of Forms*, for the general transpose of a bilinear form
-- *The Gram Matrices of the Four Forms* (`articles_maths/the-gram-matrices-of-the-four-forms.md`), for the four Gram matrices of the algebra
+- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four Gram matrices of the algebra and the adjoints of the four left multiplications
 - *Biquaternion Lie Group and Exponential Structure* (`articles_maths/biquaternion-lie-group-and-exponential-structure.md`), for the unitary elements on which the source's three involutions agree.

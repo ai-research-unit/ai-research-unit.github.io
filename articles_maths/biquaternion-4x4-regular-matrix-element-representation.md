@@ -6,9 +6,9 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ a
 
 The **left regular representation** $\rho_L(\tilde Q)(\tilde R)=\tilde Q\tilde R$, its matrix in the basis $e_0,e_1,e_2,e_3$, its multiplicativity and injectivity, the trace $\operatorname{Tr}\rho_L(\tilde Q)=4Q_0$ and the determinant $\det\rho_L(\tilde Q)=N(\tilde Q)^2$, and the six distinguished subspaces in the regular model are *Introduction to the 4×4 Regular Matrix Representation of Biquaternions*; they are used here and not restated.
 
-This article is the further development of that representation. It owns the right multiplication and the relation between the two representations, the module structure and the decomposition $\mathbb{B}=I_1\oplus I_2\cong V\oplus V$, the double centralizer, the $8\times8$ real form, and a second $4\times4$ realization with the sixteen products of the biparavectors. It is the first reducible realization met in this subcategory. It does not treat the eigenvalues, the Cayley–Hamilton identity or the eigenspace dimensions of the regular matrix, which belong to *Biquaternion Spectral Theory*; and it does not treat the idempotents and the Peirce decomposition, which belong to *Biquaternion Idempotents and Projections* and *Biquaternion Ideals and Peirce Decomposition*, except to cite the idempotents that split the algebra into its two minimal left ideals. No physical vocabulary is used: the two-sided action of the group of elements of $N=1$ on the Hermitian subspace is a statement of algebra, not a spinor, a chirality or a handedness of a physical particle.
+This article is the further development of that representation. It owns the right multiplication and the relation between the two representations, the module structure and the decomposition $\mathbb{B}=I_1\oplus I_2\cong V\oplus V$, the double centralizer, the $8\times8$ real form, the sandwich read in the regular basis, and a second $4\times4$ realization with the sixteen products of the biparavectors. It is the first reducible realization met in this subcategory. It does not treat the eigenvalues, the Cayley–Hamilton identity or the eigenspace dimensions of the regular matrix, which belong to *Biquaternion Spectral Theory*; and it does not treat the idempotents and the Peirce decomposition, which belong to *Biquaternion Idempotents and Projections* and *Biquaternion Ideals and Peirce Decomposition*, except to cite the idempotents that split the algebra into its two minimal left ideals. No physical vocabulary is used: the two-sided action of the group of elements of $N=1$ on the Hermitian subspace is a statement of algebra, not a spinor, a chirality or a handedness of a physical particle.
 
-One comparative item is added beyond the representation itself: a second $4 \times 4$ realization of $\mathbb{B}$ taken from the literature on eigenvector bundles, recorded with the multiplicative quadratic map it carries, because it is the natural contrast with both the regular realization and the congruence-shaped operator of *Biquaternion 4×4 Regular Matrix Operator Representation*.
+One comparative item is added beyond the representation itself: a second $4 \times 4$ realization of $\mathbb{B}$ taken from the literature on eigenvector bundles, recorded with the multiplicative quadratic map it carries, because it is the natural contrast with both the regular realization and the congruence-shaped operator of *Biquaternion 2×2 Matrix Element Representation*.
 
 ## The Right Regular Representation
 
@@ -199,6 +199,50 @@ $$
 
 **Remark (why the dimension doubles).** The real dimension doubles because $\mathbb{B}$ is a complex vector space and is regarded as a real vector space by restriction of scalars: the correspondence $\operatorname{Res}_{\mathbb{C}/\mathbb{R}} \mathbb{C}^4 = \mathbb{R}^8$ replaces each complex coordinate by its real and imaginary parts. The same doubling applies to the module $V$, whose realification $S$ has real dimension $4$, so over $\mathbb{R}$ the regular representation is $\rho_L^{\mathbb{R}} \cong \operatorname{Res}_{\mathbb{C}/\mathbb{R}}(V \oplus V)$, and the decomposition of the complex case survives with each part doubled in size. Restricted to the real subalgebra $\mathbb{H}_{\mathbb{B}}$, and read on $\mathbb{H}_{\mathbb{B}}$ itself, the same construction is the $4 \times 4$ real regular representation of the quaternions, which is the subject of *Quaternion Element Representations*; complexifying the algebra doubles both its real dimension and the size of the regular matrix.
 
+## The Sandwich in the Regular Basis
+
+The Hermitian sandwich $\mathrm{H}_{\tilde{Q}}(\tilde{R}) = \tilde{Q}\tilde{R}\tilde{Q}^{*}$ is defined abstractly in *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* and computed in the coordinate realizations elsewhere; read in the regular basis it has three properties that no other realization shows.
+
+**Lemma (the regular matrix respects the dagger).** For every $\tilde{Q}$,
+
+$$
+\rho_L(\tilde{Q}^{*}) = \rho_L(\tilde{Q})^{\dagger} ,
+$$
+
+the conjugate transpose of the regular matrix.
+
+**Proof.** Both sides are conjugate-linear in $\tilde{Q}$ and additive, so it suffices to check the eight real basis elements. On $e_0$ both sides are $I$ and on $ie_0$ both are $-iI$. On $e_k$ the left side is $-\rho_L(e_k)$, and the right side is $\rho_L(e_k)^{\dagger} = \rho_L(e_k)^{\mathsf{T}} = -\rho_L(e_k)$, because left multiplication by the vector unit $e_k$ is given by the products $e_ke_j$, whose four matrices are real and skew-symmetric. On $ie_k$ the left side is $i\rho_L(e_k)$ and the right side is $(i\rho_L(e_k))^{\dagger} = -i\rho_L(e_k)^{\mathsf{T}} = i\rho_L(e_k)$, the same skew-symmetry applied once more.
+
+**Theorem (the sandwich is a product of the two regular maps).** For every $\tilde{Q}$,
+
+$$
+\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{*}) = \rho_L(\tilde{Q})\,\rho_R(\tilde{Q}^{*}) ,
+$$
+
+the left regular matrix of the operand composed with the right regular matrix of its Hermitian conjugate.
+
+**Proof.** For every $\tilde{R}$, $\bigl(\rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{*})\bigr)(\tilde{R}) = \rho_L(\tilde{Q})\bigl(\tilde{R}\tilde{Q}^{*}\bigr) = \tilde{Q}\bigl(\tilde{R}\tilde{Q}^{*}\bigr) = \tilde{Q}\tilde{R}\tilde{Q}^{*} = \mathrm{H}_{\tilde{Q}}(\tilde{R})$, the middle step being the definitions of the two regular maps and the last the associativity of the multiplication.
+
+The identity is the regular-module reading of the double centralizer above: the two factors come from the two commuting copies $\rho_L(\mathbb{B})$ and $\rho_R(\mathbb{B})$, and their order is immaterial because the copies commute. It also says that the sandwich is a **congruence** and not a similarity: a similarity would pair $\tilde{Q}$ with $\tilde{Q}^{-1}$, whereas here the second factor is $\tilde{Q}^{*}$, equal to the inverse only on the unitary slice.
+
+**Corollary (closed form in the coefficient basis).** For every $\tilde{Q}$,
+
+$$
+\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q})\,D\,\rho_L(\tilde{Q})^{*}\,D , \qquad D = \operatorname{diag}(-1,1,1,1) ,
+$$
+
+the star being the entrywise complex conjugate.
+
+**Proof.** By the transposition theorem, $\rho_R(\tilde{Q}^{*}) = D\,\rho_L(\tilde{Q}^{*})^{\mathsf{T}}\,D$; by the lemma above, $\rho_L(\tilde{Q}^{*}) = \rho_L(\tilde{Q})^{\dagger}$, and the conjugate transpose is $(\rho_L(\tilde{Q})^{*})^{\mathsf{T}}$. Substituting into the theorem gives the display. Every entry of $\mathrm{H}_{\tilde{Q}}$ is therefore sesquilinear in the four coefficients of $\tilde{Q}$, so the operator is quadratic in the operand and linear in the argument.
+
+**Proposition (the real $8 \times 8$ invariants).** Write $\mathrm{H}^{\mathbb{R}}_{\tilde{Q}}$ for the realification of the sandwich in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$. Then
+
+$$
+\det\bigl(\mathrm{H}^{\mathbb{R}}_{\tilde{Q}}\bigr) = |N(\tilde{Q})|^{8}, \qquad \operatorname{Tr}\bigl(\mathrm{H}^{\mathbb{R}}_{\tilde{Q}}\bigr) = 8\,|Q_0|^{2} .
+$$
+
+**Proof.** Realification replaces each complex eigenvalue of a complex-linear endomorphism by the pair formed with its conjugate, so the determinant is the squared modulus of the complex determinant and the trace is twice the real part of the complex trace. The sandwich has the four complex eigenvalues $\lambda_i\overline{\lambda_j}$, of product $\lvert\lambda_1\lambda_2\rvert^{4} = \lvert N(\tilde{Q})\rvert^{4}$ and of sum $\lvert\operatorname{tr}\Phi(\tilde{Q})\rvert^{2} = 4\lvert Q_0\rvert^{2}$ (*The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*); the realification therefore gives $(\lvert N\rvert^{4})^{2} = \lvert N\rvert^{8}$ for the determinant and $2\cdot 4\lvert Q_0\rvert^{2} = 8\lvert Q_0\rvert^{2}$ for the trace. The two agree with the real form of the element above to the same exponents: the element $\rho_L(\tilde{Q})$ has $\lvert N\rvert^{4}$ and $8\operatorname{Re}Q_0$, the operator has $\lvert N\rvert^{8}$ and $8\lvert Q_0\rvert^{2}$, and the second invariant of each is a modulus rather than a real part because the operator has lost the phase.
+
 ## A Second $4 \times 4$ Realization, and the Multiplicative Map
 
 The regular matrix is not the only $4 \times 4$ realization of $\mathbb{B}$ in use, and the second one worth recording comes from a question with no algebra in it: the eigenvectors of a parameterised family of matrices. Its shape is different enough that the difference is instructive, and the object it is built for — a multiplicative quadratic map into the real matrices, with no counterpart in the regular realization — is the reason for recording it here rather than in a dedicated article.
@@ -219,13 +263,13 @@ is a representation of $\mathbb{B}$. Its first row and column coincide, since $\
 
 **The realization is equivalent to the regular one.** Both are faithful four-dimensional linear realizations of $\mathbb{B} \cong M_2(\mathbb{C})$, and by the module structure of the section above every such realization is two copies of the simple module, $V \oplus V$; so an invertible intertwining matrix exists, and one was exhibited and checked on $100$ random elements, with maximum residual $1.9 \times 10^{-15}$. Nothing in the representation theory of the two distinguishes them, and everything the corpus says about $\rho_L$ as a module carries over.
 
-**What the realization brings.** Each of $ie_1, ie_2, ie_3$ is skew-symmetric, and the products of the basis elements give a second Hermitian basis of $M_4(\mathbb{C})$: the sixteen matrices
+**What the realization brings.** Each of $ie_1, ie_2, ie_3$ is skew **for the Minkowski form** $D$ of the remark below, $M^{\mathsf T} = -DMD$, and not in the plain sense: it is the form's matrix, not the identity, that makes them skew. The products of the basis elements give a second Hermitian basis of $M_4(\mathbb{C})$: the sixteen matrices
 
 $$
 I,\; ie_1K_1,\; ie_2K_2,\; ie_3K_3,\quad ie_1,\; K_1,\; ie_2K_3,\; ie_3K_2,\quad ie_2,\; K_2,\; ie_1K_3,\; ie_3K_1,\quad ie_3,\; K_3,\; ie_1K_2,\; ie_2K_1 ,
 $$
 
-with $K_1, K_2, K_3$ the coefficient conjugates of $ie_1, ie_2, ie_3$, each squaring to $I$ and each Hermitian, so that real linear combinations of them are exactly the Hermitian $4 \times 4$ matrices; every one but $I$ is traceless. This was checked entry by entry. The same basis contains generators of the complex Clifford algebra $\mathbb{C}\ell(4)$, namely $ie_1, ie_2, ie_3K_1, ie_3K_2$, which anticommute pairwise to $\delta_{ij}I$ up to the conventional factor, so the realization also places $\mathbb{B}$ inside $M_4(\mathbb{C})$ in the Clifford manner of *Biquaternion Other Algebraic Element Representations*.
+with $K_1, K_2, K_3$ the coefficient conjugates of $ie_1, ie_2, ie_3$, each squaring to $I$ and each Hermitian, so that real linear combinations of them are exactly the Hermitian $4 \times 4$ matrices; every one but $I$ is traceless. This was checked entry by entry. The same basis contains generators of the complex Clifford algebra $\mathbb{C}\ell(4)$, namely $ie_1, ie_2, ie_3K_1, ie_3K_2$, which anticommute pairwise to $\delta_{ij}I$ up to the conventional factor, so the realization also places $\mathbb{B}$ inside $M_4(\mathbb{C})$ in the Clifford manner of *The Clifford Algebra Representation*.
 
 **The transposition identity is exact in this basis, and these are the matrices of the Maxwell literature.** The realization is the one in which the two $D$'s of the theorem of the transposition section disappear, and this is worth stating because it separates two things that the first basis runs together. Write the left regular matrix of the element $\tilde{Q} = A_0 e_0 + A_1 ie_1 + A_2 ie_2 + A_3 ie_3$ as
 
@@ -248,7 +292,33 @@ $$
 m(A) = A A^{\natural}, \qquad A \in I + \mathbb{B},
 $$
 
-the **multiplicative map** $m(A) = A A^{\natural}$, named after the complex absolute value. Its image consists of real matrices, and $m$ is multiplicative, $m(AB) = m(A)m(B)$. The reality is the point: for the matrices of the realization, $A^{\natural}$ commutes with $A$, so the product is real, and the read-off of the map is a quadratic map with no complex-linear analogue. What the corpus takes from the map is the existence of a *multiplicative* quadratic real map of this kind at all, next to the one it already owns: the operator of *Biquaternion 4×4 Regular Matrix Operator Representation* is the quadratic map of the same algebra that is **not** multiplicative, being a congruence rather than a product, and the two together show that the algebra carries a multiplicative and a non-multiplicative quadratic map.
+the **multiplicative map** $m(A) = A A^{\natural}$, named after the complex absolute value. Since $A^{\natural}$ commutes with $A$, the product is central, and in this realization it is the **scalar** matrix
+
+$$
+m(A) = \bigl(A_0^2 - A_1^2 - A_2^2 - A_3^2\bigr) I \;=\; \Delta(A)\, I ,
+$$
+
+checked exactly (all four entries equal, the off-diagonal ones vanishing). The image is therefore a real matrix exactly when the four coefficients $A_\mu$ are real, and $\Delta$ is then the Lorentzian square of the coefficient vector; for a genuinely complex element $\Delta$ need not be real — at $A = (1+i)e_0$ it is $2i$ — so it is the *centrality* that the commutation with $A^{\natural}$ delivers, and the reality of the image is a separate property of the real coefficient set. Multiplicativity follows from the centrality, $m(AB) = ABB^{\natural}A^{\natural} = A\cdot\Delta(B)\cdot A^{\natural} = \Delta(A)\Delta(B)I = m(A)m(B)$, and it was checked exactly as well. The read-off of the map is a quadratic map with no complex-linear analogue. What the corpus takes from the map is the existence of a *multiplicative* quadratic real map of this kind at all, next to the one it already owns: the operator of *Biquaternion 2×2 Matrix Element Representation* — its congruence $Y\mapsto MYM^{\dagger}$ with $M=\Phi(\tilde{Q})$ — is the quadratic map of the same algebra that is **not** multiplicative, being a congruence rather than a product, and the two together show that the algebra carries a multiplicative and a non-multiplicative quadratic map.
+
+**The Minkowski form of the realization.** The real span of $e_0, ie_1, ie_2, ie_3$ carries a real form of signature $(1,3)$, whose matrix in the coefficient order $(e_0, ie_1, ie_2, ie_3)$ is
+
+$$
+D = \operatorname{diag}(-1, 1, 1, 1)
+$$
+
+— the same sign matrix as in the transposition theorem above, one negative square on the scalar slot and three positive ones on the vector slots.
+
+**Proposition (the generators are the infinitesimal generators of $O(1,3)$).** Each of the three generators satisfies
+
+$$
+M^{\mathsf T} = -DMD, \qquad \text{equivalently} \qquad M^{\mathsf T}D + DM = 0,
+$$
+
+that is, $DM$ is skew-symmetric; the second form is the defining condition for an element of the Lie algebra $\mathfrak{o}(1,3)$ of $O(1,3)$.
+
+**Proof.** Direct verification on the three matrices $ie_1, ie_2, ie_3$ of the realization, entry by entry and exactly, in each of the three equivalent forms. $\square$
+
+The relation is a statement about the form and its orthogonal group, and the difference between it and the plain statement "$M$ is skew-symmetric" is the whole content: the three matrices are not skew in the plain sense, and it is $D$, not $I$, that makes them skew. Two real forms live here and they are different objects. The **quaternion bilinear form** $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \operatorname{Sc}(\tilde{P}\tilde{Q}^{\natural})$ is $\mathbb{C}$-bilinear and indefinite of signature $(4,4)$ on the eight-dimensional $\mathbb{B}_{\mathbb{R}}$, and it vanishes on the null elements; it is the form *of the algebra*, and it is owned by *The Quaternion Bilinear Form on the Biquaternion Algebra*. The **Minkowski form** above is a real form of signature $(1,3)$ on the four-dimensional real slice spanned by $e_0, ie_1, ie_2, ie_3$, and it is the form *of the realization's real slice*, with orthogonal group $O(1,3)$; it is not a form of the eight-dimensional realification, whose four realified forms have signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$ (*The Realification of the Four Forms*).
 
 ## The Sixteen Products and the Biparavectors
 
@@ -329,9 +399,9 @@ The left regular representation $\rho_L$ of *Introduction to the 4×4 Regular Ma
 
 The right regular representation $\rho_R(\tilde{Q})(\tilde{R}) = \tilde{R}\tilde{Q}$ is an anti-homomorphism and the regular representation of the opposite algebra. The naive identity $\rho_R(\tilde{Q}) = \rho_L(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\tilde{Q}^{\natural}$ is the same statement, since $\rho_L(\tilde{Q}^{\natural})^{\mathsf{T}} = \rho_L(\tilde{Q})$ — while what holds is $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf{T}}D = D\rho_L(\tilde{Q}^{\natural})D$ with $D = \operatorname{diag}(-1,1,1,1)$. The difference $\rho_L - \rho_R$ vanishes exactly on the centre $\mathbb{C}_{\mathbb{B}}$, which is the precise sense in which left and right differ because the algebra is non-commutative.
 
-The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}\tilde\Pi_1$, $I_2 = \mathbb{B}\tilde\Pi_2$ and $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac12(e_0 - ie_3)$; in the adapted basis $\tilde\Pi_1, e_1\tilde\Pi_1, \tilde\Pi_2, e_1\tilde\Pi_2$ the regular matrix is diagonal over the two invariant subspaces $I_1$, $I_2$, each a copy of the simple module $V$. So $\rho_L \cong V \oplus V$, the regular representation is reducible, and it is the first reducible realization of this subcategory. The centralizer of $\rho_L(\mathbb{B})$ is $\rho_R(\mathbb{B})$, the right copy, of complex dimension $4$. Over $\mathbb{R}$ the regular representation is $8 \times 8$ real with $\det = |N|^4$ and trace $8\operatorname{Re}(Q_0)$, the dimension doubling by restriction of scalars.
+The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}\tilde\Pi_1$, $I_2 = \mathbb{B}\tilde\Pi_2$ and $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac12(e_0 - ie_3)$; in the adapted basis $\tilde\Pi_1, e_1\tilde\Pi_1, \tilde\Pi_2, e_1\tilde\Pi_2$ the regular matrix is diagonal over the two invariant subspaces $I_1$, $I_2$, each a copy of the simple module $V$. So $\rho_L \cong V \oplus V$, the regular representation is reducible, and it is the first reducible realization of this subcategory. The centralizer of $\rho_L(\mathbb{B})$ is $\rho_R(\mathbb{B})$, the right copy, of complex dimension $4$. Over $\mathbb{R}$ the regular representation is $8 \times 8$ real with $\det = |N|^4$ and trace $8\operatorname{Re}(Q_0)$, the dimension doubling by restriction of scalars. The Hermitian sandwich $\mathrm{H}_{\tilde{Q}}(\tilde{R}) = \tilde{Q}\tilde{R}\tilde{Q}^{*}$ is the product $\rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{*}) = \rho_L(\tilde{Q})\,D\,\rho_L(\tilde{Q})^{*}\,D$ of one element of each commuting copy, a congruence and not a similarity; its realification has $\det = |N|^{8}$ and trace $8|Q_0|^{2}$.
 
-A second $4 \times 4$ realization, the one used in the literature on eigenvector bundles, is equivalent to $\rho_L$ as a module — every faithful four-dimensional complex realization is $V \oplus V$ — and it carries a multiplicative quadratic map $m(A) = A A^{\natural}$ to the real matrices which the regular realization does not have, in contrast with the congruence-shaped quadratic operator of *Biquaternion 4×4 Regular Matrix Operator Representation*. In that realization the sixteen products $\rho_L(e_i)\rho_R(e_j)$ are the Hermitian outer products $E_iE_j^{\mathsf T}$ and form a basis of $\mathbb{M}_4(\mathbb{C})$ orthogonal for the trace, $\operatorname{tr}(P_{ij}P_{kl}) = 4\delta_{ik}\delta_{jl}$; the expansion it gives is the tensor-square reading of the double centralizer, and it says that every complex-linear transformation of the algebra is a biparavector, the two-sided multiplication $\tilde P \mapsto \sum a_{ij}\,e_i\tilde P e_j$.
+A second $4 \times 4$ realization, the one used in the literature on eigenvector bundles, is equivalent to $\rho_L$ as a module — every faithful four-dimensional complex realization is $V \oplus V$ — and it carries a multiplicative quadratic map $m(A) = A A^{\natural} = \Delta(A) I$ of the algebra into the scalar matrices, $\Delta = A_0^2 - A_1^2 - A_2^2 - A_3^2$, which is a real quadratic map on the real coefficients and which the regular realization does not have, in contrast with the congruence-shaped quadratic operator of *Biquaternion 2×2 Matrix Element Representation*. Its real slice $e_0, ie_1, ie_2, ie_3$ carries the Minkowski form $D = \operatorname{diag}(-1,1,1,1)$, of signature $(1,3)$, for which the three generators are the infinitesimal generators of $O(1,3)$, $M^{\mathsf T} = -DMD$; this is the form of the realization's real slice and must be distinguished from the quaternion bilinear form of signature $(4,4)$, which is the form of the eight-dimensional algebra. In that realization the sixteen products $\rho_L(e_i)\rho_R(e_j)$ are the Hermitian outer products $E_iE_j^{\mathsf T}$ and form a basis of $\mathbb{M}_4(\mathbb{C})$ orthogonal for the trace, $\operatorname{tr}(P_{ij}P_{kl}) = 4\delta_{ik}\delta_{jl}$; the expansion it gives is the tensor-square reading of the double centralizer, and it says that every complex-linear transformation of the algebra is a biparavector, the two-sided multiplication $\tilde P \mapsto \sum a_{ij}\,e_i\tilde P e_j$.
 
 ## Summary of Notation
 
@@ -344,7 +414,7 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 | $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ | Four-vector; $Q^0 = Q_0$, $(Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3)$ |
 | $\rho_L(\tilde{Q})$ | Matrix of left multiplication, the Cayley matrix of *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* |
 | $\rho_R(\tilde{Q})$ | Matrix of right multiplication |
-| $D = \operatorname{diag}(-1,1,1,1)$ | Fixed sign matrix, $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf{T}}D$ |
+| $D = \operatorname{diag}(-1,1,1,1)$ | Fixed sign matrix of the transposition theorem, $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf{T}}D$, and matrix of the Minkowski form of the second realization, $M^{\mathsf T} = -DMD$ |
 | $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ | The norm; $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugations |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, the scalar subspace $\mathbb{C} e_0$ |
@@ -357,9 +427,11 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 | $\operatorname{Res}_{\mathbb{C}/\mathbb{R}}$ | Restriction of scalars |
 | $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \rho_R(\mathbb{B})$ | Endomorphism algebra of the regular module |
 | $\rho_L^{\mathbb{R}}(\tilde{Q})$ | Real $8 \times 8$ regular matrix |
+| $\mathrm{H}_{\tilde{Q}}(\tilde{R}) = \tilde{Q}\tilde{R}\tilde{Q}^{*}$ | Hermitian sandwich; in the regular basis $\rho_L(\tilde{Q})\rho_R(\tilde{Q}^{*}) = \rho_L(\tilde{Q})D\rho_L(\tilde{Q})^{*}D$, realification with $\det = \lvert N\rvert^{8}$ and trace $8\lvert Q_0\rvert^{2}$ |
 | $\Phi'(A_0, A_1, A_2, A_3)$ | Second $4 \times 4$ realization, on the generators $ie_1, ie_2, ie_3$ with $(ie_1)^2 = (ie_2)^2 = (ie_3)^2 = e_0$ |
 | $K_1, K_2, K_3$ | Coefficient conjugates of $ie_1, ie_2, ie_3$, used in the Hermitian basis of that realization |
-| $m(A) = A A^{\natural}$ | The multiplicative map, $I + \mathbb{B} \to M_4(\mathbb{R})$; real and multiplicative |
+| $m(A) = A A^{\natural} = \Delta(A)I$ | The multiplicative map, $I + \mathbb{B} \to M_4(\mathbb{C})$; $\Delta = A_0^2 - A_1^2 - A_2^2 - A_3^2$, a real matrix for real coefficients, multiplicative |
+| $\mathfrak{o}(1,3)$ | Lie algebra of $O(1,3)$, $\{M : M^{\mathsf T}D + DM = 0\}$, to which the generators $ie_k$ belong |
 | $P_{ij} = \rho_L(e_i)\rho_R(e_j) = E_iE_j^{\mathsf T}$ | The sixteen products; an orthogonal basis of $\mathbb{M}_4(\mathbb{C})$, $\operatorname{tr}(P_{ij}P_{kl}) = 4\delta_{ik}\delta_{jl}$ |
 | $\sum a_{ij}\,e_i \otimes e_j$ | Biparavector, the two-sided transformation $\tilde P \mapsto \sum a_{ij}\,e_i\tilde P e_j$ |
 | $\mathbb{M}_+$ | Hermitian subspace of real dimension $4$ |
@@ -374,7 +446,7 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 - William Fulton and Joe Harris, *Representation Theory: A First Course*, Graduate Texts in Mathematics 129 (Springer, 1991), for the regular representation as the direct sum of the simple modules with multiplicity equal to their dimensions.
 - John Voight, *Quaternion Algebras*, Graduate Texts in Mathematics 288 (Springer, 2021), for the regular representation of a quaternion algebra and its complexification.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the Cayley matrix of quaternion multiplication and its transpose.
-- *The 4×4 Regular Matrix Representation under the Three Topologies* (`articles_maths/the-4x4-regular-matrix-representation-under-the-three-topologies.md`), for the matrix reading of the three forms and the structure attached to each.
+- *The Biquaternion Algebra in the $4\times4$ Regular Matrix Representation* (`articles_maths/the-biquaternion-algebra-in-the-4x4-regular-matrix-representation.md`), the first of the four articles reading the four forms on the regular matrix, each with the structure attached to its form.
 - *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-4x4-regular-matrix-representation-of-biquaternions.md`), for the regular matrix block diagonal in the basis of the two minimal left ideals, with the $2 \times 2$ matrix of the same element in each block, and for the six distinguished subspaces read in both models at once
 - D. H. Gottlieb, "Eigenbundles, Quaternions, and Berry's Phase," arXiv:math/0304281 [math.AT] (2003), for the second $4 \times 4$ realization and the map $m(A) = A A^{\natural}$ of the section above; the paper's $4 \times 4$ matrices are Example 5 and the map $m(A) = A A^{\natural}$ is its section 5.
 - D. H. Gottlieb, "Maxwell's equations" (1 August 2004, 12 pp.), for the matrix formulation of Maxwell's equations in which the field matrix is $A_0 I + cF$ of the realization above, the dual form in which the operators stand in the matrix and the field in the column, and the identity $\rho_R = \rho_L^{\mathsf{T}}$ which holds there without a sign matrix; cited for the identification of the second realization with the matrices of the Maxwell literature and for the transposition remark of that section. Its section 5 is the source of the sixteen-product basis and the biparavectors of the section above: the coefficient formula $a_{ij} = \tfrac14\operatorname{tr}(ME_iE_j^{\mathsf{T}})$, the orthogonality of the basis for the trace, and the reading of the products as the tensor square of the algebra acting on itself on both sides. The paper's potential-level equations (13) and (14) are recorded in *Maxwell's Equations in Biquaternionic Form* with their vector parts corrected.

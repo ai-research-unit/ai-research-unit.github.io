@@ -12,7 +12,7 @@ which is the dagger sandwich $\mathrm{H}_{\tilde{Q}}$ of the corpus. This articl
 
 The result that organises the article is that **the operator is quadratic in the parameter, while the adjoint is linear in it**. Composition reads $\Theta_{\tilde{Q}\tilde{R}}=\Theta_{\tilde{Q}}\circ\Theta_{\tilde{R}}$ on the nose, but $\Theta_{A\tilde{Q}}=\lvert A\rvert^{2}\Theta_{\tilde{Q}}$ for a central $A$: the map $\tilde{Q}\mapsto\Theta_{\tilde{Q}}$ is multiplicative and not additive, and it is blind to the central phase. Two consequences are worked out. The Hermitian and the anti-Hermitian elements **give the same operators**, because $\Theta_{-\tilde{Q}}=\Theta_{\tilde{Q}}$ and $\Theta_{i\tilde{Q}}=\Theta_{\tilde{Q}}$; and a two-sided operator is **never skew-adjoint** unless it vanishes, because the sandwich cannot change the sign of the quadratic form it carries. Both contrast with the one-sided case of the companion article, where the parameter enters linearly and the two sectors give skew and self-adjoint operators respectively.
 
-The article is pure algebra. The algebra, the dagger and the six subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*; the operator read in coordinates is *Biquaternion Four-Vector Operator Representation*, *Biquaternion 2×2 Matrix Operator Representation* and *Biquaternion 4×4 Regular Matrix Operator Representation*, which compute the same map $\Theta_{\tilde{Q}}$ in a chosen element representation; the general operator on a Clifford algebra is *Two-Sided Operators on a Clifford Algebra with Hermitian Adjoint*, whose instance this article is.
+The article is pure algebra. The algebra, the dagger and the six subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*; the operator read in coordinates or on the spinor module is *Biquaternion Four-Vector Operator Representation* and *Biquaternion Twisted Spinor Operator Representation*, and the sandwich in the regular basis is *Biquaternion 4×4 Regular Matrix Element Representation*; the general operator on a Clifford algebra is *Two-Sided Operators on a Clifford Algebra with Hermitian Adjoint*, whose instance this article is.
 
 ## The Scalar Form and the Hilbert Structure of the Algebra
 
@@ -188,7 +188,7 @@ $$
 \Theta_{\tilde{Q}}(e_{0}) = e_{0} \iff \tilde{Q}\in U .
 $$
 
-In the matrix model $\Phi(\Theta_{\tilde{Q}}(e_{0})) = M M^{\dagger}$ is the Gram matrix of the columns of $M=\Phi(\tilde{Q})$ (*Biquaternion 2×2 Matrix Operator Representation*).
+In the matrix model $\Phi(\Theta_{\tilde{Q}}(e_{0})) = M M^{\dagger}$ is the Gram matrix of the columns of $M=\Phi(\tilde{Q})$ (*Biquaternion 2×2 Matrix Element Representation*).
 
 *Proof.* The first display is the definition; $\tilde{Q}\tilde{Q}^{*}$ is Hermitian because $(\tilde{Q}\tilde{Q}^{*})^{\dagger}=\tilde{Q}\tilde{Q}^{*}$; positivity is the positivity of the Gram matrix; and $\tilde{Q}\tilde{Q}^{*}=e_{0}$ is the defining condition of the slice.
 

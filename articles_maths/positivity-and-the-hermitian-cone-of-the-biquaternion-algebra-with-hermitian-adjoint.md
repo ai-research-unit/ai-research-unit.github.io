@@ -236,7 +236,7 @@ Every element has a **polar decomposition** $\tilde{Q}=U\lvert\tilde{Q}\rvert$ w
 
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra and the four conjugations
 - *The Hermitian Form on the Biquaternion Algebra* (`articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md`), for the complex sesquilinear form and the inner product
-- *The Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md`), for the quaternion bilinear form
+- *The Quaternion Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-quaternion-bilinear-form-on-the-biquaternion-algebra.md`), for the quaternion bilinear form
 - *Association and the Transpose on the Biquaternion Algebra* (`articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.md`), for the scalar form
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four involutions, and *Introduction to the Six Subspaces* for their fixed spaces.
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for $\mathbb{M}_+$, its norm and its isotropic cone, and *The Six Subspaces and the Four Complex Products* (`articles_maths/the-six-subspaces-and-the-four-complex-products.md`), for its Jordan structure.
