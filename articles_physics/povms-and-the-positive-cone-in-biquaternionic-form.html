@@ -68,7 +68,7 @@ $$</p>
 $$</p>
 <p>and the biquaternion norm is</p>
 <p>$$
-N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H}),
+N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H}),
 $$</p>
 <p>a real scalar. The two conditions $N(\tilde{H})\geq0$ and $h_0\geq0$ are together equivalent to $h_0\geq|\mathbf{h}|$, so the set of positive elements is the future light cone of the biquaternion norm:</p>
 <p>$$
@@ -239,7 +239,7 @@ $$</p>
 <td>Central scalar imaginary</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
+<td>$N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
@@ -289,6 +289,10 @@ $$</p>
 <tr>
 <td>$\tilde{E}_k = \tfrac23\tilde\Pi_+(\hat{n}_k)$</td>
 <td>Trine POVM</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
 </tr>
 </tbody>
 </table></div>

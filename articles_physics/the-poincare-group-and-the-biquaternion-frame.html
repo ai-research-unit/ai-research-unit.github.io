@@ -75,7 +75,7 @@ $$
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
 \mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
 $$
-and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point set of complex conjugation. The trace formula of the informational sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c=1/\sqrt{\epsilon\mu}$ denotes the speed of light in the medium and $c_0$ the vacuum speed of light.</p>
+and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point set of complex conjugation. The trace formula of the informational sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ denotes the speed of light in the medium and $c_0$ the vacuum speed of light.</p>
 <h2 id="the-homogeneous-part-recalled">The Homogeneous Part, Recalled</h2>
 <p>Rotor conjugation restricted to $\mathbb{M}_-$ is linear in $\tilde{Q}$, it preserves the subspace $\mathbb{M}_-$, and it preserves the biquaternion norm, $\tilde{Q}'\tilde{Q}'^{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; it is an inner automorphism of $\mathbb{B}$ in the unitary sector, where $\tilde{R}^{*}=\tilde{R}^{-1}$ and the map is conjugation, but a boost rotor is Hermitian, $\tilde{B}^{*}=\tilde{B}$, and acts by the twisted map $\tilde{Q}\mapsto\tilde{B}\tilde{Q}\tilde{B}$, which is linear but not multiplicative and so is not an algebra automorphism. The map
 $$
@@ -140,7 +140,7 @@ $$
 \mathrm{P}=\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\ \ltimes\ \mathbb{R}^4,
 \qquad [P_\mu,P_\nu]=0,
 $$
-with the Lorentz generators acting on $P_\mu$ through the vector representation and the boosts not closing among themselves. On fields, the finite translation is the Taylor operator $\exp(a^\mu\partial_\mu)$, and on a plane wave of four-wavevector $\tilde{K}\in\mathbb{M}_-$ it is multiplication by the central phase $\exp\!\bigl(i\,\mathrm{Sc}(\tilde{K}\tilde{a})\bigr)$ — a unit-modulus scalar in the algebra, not a biquaternion factor multiplying the field. With the series' plane-wave convention $\tilde{\Phi}=\tilde{\Phi}_0\exp\!\bigl(i\,\mathrm{Sc}(\tilde{K}\tilde{Q})\bigr)$ and shift $\tilde{Q}\mapsto\tilde{Q}+\tilde{a}$, the multiplier is $e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{a})}$; the shift in the opposite direction gives its conjugate. The pairing is $\mathrm{Sc}(\tilde{K}\tilde{a})$, not $\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural})$: for $\tilde{K},\tilde{a}\in\mathbb{M}_-$ the latter equals $-(k_0a_0)+\mathbf{k}\cdot\mathbf{a}$, which is real, so the factor $\exp(\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}))$ is a positive real number rather than a unit-modulus phase, and a translation multiplier must have unit modulus. So the translation is present in the infinitesimal algebra and acts finitely on field space, but it is not an element of the finite-dimensional rotor group.</p>
+with the Lorentz generators acting on $P_\mu$ through the vector representation and the boosts not closing among themselves. On fields, the finite translation is the Taylor operator $\exp(a^\mu\partial_\mu)$, and on a plane wave of four-wavevector $\tilde{K}\in\mathbb{M}_-$ it is multiplication by the central phase $\exp\!\bigl(i\,\mathrm{Sc}(\tilde{K}\tilde{a})\bigr)$ — a unit-modulus scalar in the algebra, not a biquaternion factor multiplying the field. With the series' plane-wave convention $\tilde{\Phi}=\tilde{\Phi}_0\exp\!\bigl(i\,\mathrm{Sc}(\tilde{K}\tilde{Q})\bigr)$ and shift $\tilde{Q}\mapsto\tilde{Q}+\tilde{a}$, the multiplier is $e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{a})}$; the shift in the opposite direction gives its conjugate. The pairing is $\mathrm{Sc}(\tilde{K}\tilde{a}) = \langle\tilde{K},\tilde{a}\rangle$, not $\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}) = \langle\tilde{K},\tilde{a}\rangle_{\natural}$: for $\tilde{K},\tilde{a}\in\mathbb{M}_-$ the latter equals $-(k_0a_0)+\mathbf{k}\cdot\mathbf{a}$, which is real, so the factor $\exp(\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}))$ is a positive real number rather than a unit-modulus phase, and a translation multiplier must have unit modulus. So the translation is present in the infinitesimal algebra and acts finitely on field space, but it is not an element of the finite-dimensional rotor group.</p>
 <h2 id="the-semidirect-structure">The Semidirect Structure</h2>
 <p>Write $N$ for the set of pure translations,
 $$
@@ -200,7 +200,7 @@ the square root being multivalued by sign, with the branch selected by $\mathrm{
 <h2 id="what-the-frame-captures-and-what-it-does-not">What the Frame Captures, and What It Does Not</h2>
 <p><strong>Captured exactly.</strong> The biquaternion algebra contains the connected, restricted Lorentz group: its unit-norm elements are $SL(2,\mathbb{C})$, its conjugation action on $\mathbb{M}_-$ is the vector representation, and the covering homomorphism onto $SO^+(1,3)$ is two-to-one with kernel $\{\pm e_0\}$. The material sector $\mathbb{M}_-$ carries the four-vectors, their interval, and the light cone as the zero-divisor set. Because the semidirect product is determined by $SL(2,\mathbb{C})$ together with the representation $\mathrm{Ad}$ on $\mathbb{M}_-$, the biquaternion frame determines the full restricted Poincaré group once the translation factor is supplied; in that precise sense the group is a property of the algebra even though its elements are pairs rather than rotors.</p>
 <p><strong>Not captured as rotors.</strong> The translation is additive. It is not a conjugation and not a product of rotors, and no faithful homomorphism of the Poincaré group into $\mathbb{B}^\times$ exists at all; the dimension count settles this. The discrete inversions are also outside the connected rotor group: the spatial inversion $t\mapsto t$, $\mathbf{x}\mapsto-\mathbf{x}$ is implemented on $\mathbb{M}_-$ by quaternion conjugation $\tilde{Q}\mapsto\tilde{Q}^{\natural}$, which is an algebra <strong>anti</strong>-automorphism, not an inner automorphism, and it is this that places spatial inversion outside $SL(2,\mathbb{C})$. The cover of the Lorentz group is therefore a cover of its connected part, and an extension of the group by spatial inversion requires that anti-automorphism as well.</p>
-<p><strong>Beyond the finite-dimensional frame.</strong> The biquaternion algebra is finite-dimensional, and its representations are the finite-dimensional ones; the biquaternion algebra itself carries the four-vector representation $(\tfrac12,\tfrac12)$. The physically realized unitary representations of the Poincaré group — Wigner's classification by mass and spin — are infinite-dimensional, and the finite-dimensional frame does not contain them. The informational sector uses the same algebra, with states in $\mathbb{M}_+$ and expectation values $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, but that operator algebra is finite-dimensional too: it is the algebra of a single qubit, not of a field. The Poincaré action on the material sector and the Born rule of the informational sector are two uses of one algebra, and both stop at the finite-dimensional objects it contains.</p>
+<p><strong>Beyond the finite-dimensional frame.</strong> The biquaternion algebra is finite-dimensional, and its representations are the finite-dimensional ones; the biquaternion algebra itself carries the four-vector representation $(\tfrac12,\tfrac12)$. The physically realized unitary representations of the Poincaré group — Wigner's classification by mass and spin — are infinite-dimensional, and the finite-dimensional frame does not contain them. The informational sector uses the same algebra, with states in $\mathbb{M}_+$ and expectation values $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$, but that operator algebra is finite-dimensional too: it is the algebra of a single qubit, not of a field. The Poincaré action on the material sector and the Born rule of the informational sector are two uses of one algebra, and both stop at the finite-dimensional objects it contains.</p>
 <h2 id="translation-as-a-rotation-the-open-question">Translation as a Rotation: The Open Question</h2>
 <p>The remaining question is whether the translation can be made multiplicative after all, by changing the algebra or the reading. Several routes are visible, and none is decided here.</p>
 <p><strong>The additive reading inside $\mathbb{B}$.</strong> The plainest reading is the one used throughout: the displacement is an element of $\mathbb{M}_-$, translations are addition, and the algebra supplies not the translation but the action by which the homogeneous part drags it. This is complete and internally consistent. Its cost is that the Poincaré group then does not embed as a Lie subgroup of $\mathbb{B}^\times$, so none of the rotor machinery — composition by multiplication, the double cover, the trace and biquaternion norms — applies to translations.</p>
@@ -264,7 +264,7 @@ The pure translations form a normal abelian subgroup, and conjugation by a homog
 <td>Real-quaternion subspace, home of rotation rotors</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$</td>
+<td>$N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
@@ -308,7 +308,7 @@ The pure translations form a normal abelian subgroup, and conjugation by a homog
 <td>Semidirect structure of the (covering) restricted Poincaré group</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$</td>
+<td>$\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$</td>
 <td>Trace formula (informational sector)</td>
 </tr>
 <tr>
@@ -326,6 +326,14 @@ The pure translations form a normal abelian subgroup, and conjugation by a homog
 <tr>
 <td>$c=1/\sqrt{\epsilon\mu}$, $c_0$</td>
 <td>Speed of light in the medium; in vacuum</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
+<td>the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

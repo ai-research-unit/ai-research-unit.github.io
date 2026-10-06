@@ -80,12 +80,12 @@ N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\mathbf{h}|^2) e_0.
 $$</p>
 <p>This is the form whose vanishing defines the light cone in $\mathbb{M}_+$; the nonzero elements on the cone are the zero divisors of $\mathbb{B}$ that lie in $\mathbb{M}_+$.</p>
 <h3 id="the-forms-on-math37">The Forms on $\mathbb{M}_+$</h3>
-<p>The algebra carries four forms, the scalar parts of the four products of <em>The Four Biquaternion Complex Products</em>; on $\mathbb{M}_+$ they pair off and coincide, so two remain. They are the <strong>Hermitian form</strong>, which here equals the <strong>complex bilinear form</strong>, and the <strong>bilinear form</strong> $B$ (the quaternion bilinear form), which here equals the <strong>quaternion sesquilinear form</strong> $K$ because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a separate bilinear form but the <em>quadratic</em> form of $B$.</p>
+<p>The algebra carries four forms, the scalar parts of the four products of <em>The Four Biquaternion Complex Products</em>, written with one bracket $\langle\cdot,\cdot\rangle$ whose subscript records the conjugation entering each argument: the <strong>complex bilinear</strong> form $\langle\tilde{P},\tilde{Q}\rangle=\mathrm{Sc}(\tilde{P}\tilde{Q})$, the <strong>quaternion bilinear</strong> form $\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$, the <strong>complex sesquilinear</strong> form $\langle\tilde{P},\tilde{Q}\rangle_{*}=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ and the <strong>quaternion sesquilinear</strong> form $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})$. On $\mathbb{M}_+$ they pair off and coincide, so two remain: the <strong>Hermitian form</strong>, which is the complex bilinear form and, on $\mathbb{M}_+$, the complex sesquilinear form as well, $\langle\tilde{H},\tilde{K}\rangle=\langle\tilde{H},\tilde{K}\rangle_{*}$; and the <strong>bilinear form</strong> $B$, which is the quaternion bilinear form and, on $\mathbb{M}_+$, the quaternion sesquilinear form $K$ as well, $\langle\tilde{H},\tilde{K}\rangle_{\natural}=\langle\tilde{H},\tilde{K}\rangle_{\natural*}$, because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a separate bilinear form but the <em>quadratic</em> form of $B$.</p>
 <p><strong>The trace pairing.</strong> The trace defines a symmetric bilinear form on $\mathbb{M}_+\times\mathbb{M}_+$:</p>
 <p>$$
 \mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0 k_0 + \mathbf{h}\cdot\mathbf{k}).
 $$</p>
-<p>This is the <strong>Euclidean</strong> pairing on $\mathbb{R}^4$, up to a factor of 2. It is positive-definite, of signature $(4,0)$. It is the analogue of the Hilbert–Schmidt inner product on the space of operators, and it is the canonical <strong>Hermitian form</strong> of the algebra in real coordinates, $(\tilde{H}, \tilde{K}) = \mathrm{Sc}(\tilde{H}^{*}\tilde{K}) = h_0 k_0 + \mathbf{h}\cdot\mathbf{k}$, up to the factor of $2$ carried by the trace convention.</p>
+<p>This is the <strong>Euclidean</strong> pairing on $\mathbb{R}^4$, up to a factor of 2. It is positive-definite, of signature $(4,0)$. It is the analogue of the Hilbert–Schmidt inner product on the space of operators, and it is the canonical <strong>Hermitian form</strong> of the algebra in real coordinates, $\langle\tilde{H},\tilde{K}\rangle = \mathrm{Sc}(\tilde{H}^{*}\tilde{K}) = h_0 k_0 + \mathbf{h}\cdot\mathbf{k}$, up to the factor of $2$ carried by the trace convention.</p>
 <p><strong>The biquaternion norm.</strong> The biquaternion norm is the quadratic form</p>
 <p>$$
 N(\tilde{H}) = h_0^2 - |\mathbf{h}|^2,
@@ -106,7 +106,7 @@ $$</p>
 <p>$$
 \boxed{\;B(\tilde{H}, \tilde{K}) = (h_0 k_0 - \mathbf{h}\cdot\mathbf{k})\,e_0.\;}
 $$</p>
-<p>This is the <strong>Lorentzian</strong> bilinear form, of signature $(1,3)$, and the biquaternion norm is its diagonal, $B(\tilde{H}, \tilde{H}) = N(\tilde{H})$. On $\mathbb{M}_+$ it is also the <strong>Krein form</strong> $K(\tilde{H}, \tilde{K}) = \mathrm{Sc}(\bar{\tilde{H}}\tilde{K})$ of the companion article: for a Hermitian element the coefficient conjugation $\bar{\cdot}$ acts as the quaternion conjugation ${}^{\natural}$, so $K$ and $B$ agree on $\mathbb{M}_+$ even though they differ on the full algebra. That is why $\mathbb{M}_+$ carries two forms and not three.</p>
+<p>This is the <strong>Lorentzian</strong> bilinear form, of signature $(1,3)$, and the biquaternion norm is its diagonal, $B(\tilde{H}, \tilde{H}) = N(\tilde{H})$. On $\mathbb{M}_+$ it is also the <strong>Krein form</strong> $K = \langle\tilde{H},\tilde{K}\rangle_{\natural*} = \mathrm{Sc}(\bar{\tilde{H}}\tilde{K})$ of the companion article: for a Hermitian element the coefficient conjugation $\bar{\cdot}$ acts as the quaternion conjugation ${}^{\natural}$, so $K$ and $B$ agree on $\mathbb{M}_+$ even though they differ on the full algebra. That is why $\mathbb{M}_+$ carries two forms and not three.</p>
 <p>The antisymmetric combination contains the vector part:</p>
 <p>$$
 \tfrac{1}{2}\left(\tilde{H}\tilde{K}^{\natural} - \tilde{K}\tilde{H}^{\natural}\right) = i(k_0\mathbf{h} - h_0\mathbf{k}) + \mathbf{h}\times\mathbf{k}.
@@ -123,12 +123,12 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>Hermitian form (trace pairing $/2$)</td>
+<td>Hermitian form (complex bilinear, $\langle\tilde{H},\tilde{K}\rangle$; trace pairing $/2$)</td>
 <td>$\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0 k_0 + \mathbf{h}\cdot\mathbf{k}) = 2\,\mathrm{Sc}(\tilde{H}^{*}\tilde{K})$</td>
 <td>$(4,0)$, Euclidean</td>
 </tr>
 <tr>
-<td>Bilinear form $B$ (the Krein form on $\mathbb{M}_+$)</td>
+<td>Bilinear form $B$ (quaternion bilinear, $\langle\tilde{H},\tilde{K}\rangle_{\natural}$; the Krein form $K$ on $\mathbb{M}_+$)</td>
 <td>$B(\tilde{H}, \tilde{K}) = h_0 k_0 - \mathbf{h}\cdot\mathbf{k}$</td>
 <td>$(1,3)$, Lorentzian</td>
 </tr>
@@ -517,8 +517,12 @@ $$</p>
 <td>Born rule</td>
 </tr>
 <tr>
-<td>$N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\mathbf{h}|^2$</td>
+<td>$N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = h_0^2 - |\mathbf{h}|^2$</td>
 <td>Biquaternion norm, signature $(1,3)$</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$</td>
+<td>The bracket of the four forms of the algebra, the subscript recording the conjugation entering each argument</td>
 </tr>
 <tr>
 <td>$B(\tilde{H}, \tilde{K}) = h_0 k_0 - \mathbf{h}\cdot\mathbf{k}$</td>

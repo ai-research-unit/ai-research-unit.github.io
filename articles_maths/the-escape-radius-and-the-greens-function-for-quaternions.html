@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Escape Radius and the Green's Function for Quaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-escape-radius-and-the-greens-function-for-quaternions"><strong>The Escape Radius and the Green's Function for Quaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The escape-time algorithm of the quaternion quadratic family needs two analytic inputs: a radius beyond which every orbit is known to diverge, and a function that measures how fast it diverges. The radius is $R(c)=1+|c|$, and the function is the <strong>Green's function</strong></p>
+<p>$$
+G_c(\tilde q) = \lim_{n\to\infty} \frac{1}{2^n}\log|\tilde q_n| , \qquad \tilde q_n = f_c^{\,n}(\tilde q) .
+$$</p>
+<p>The limit exists off the filled Julia set, it is positive there and zero on $K_c$, it satisfies $G_c \circ f_c = 2G_c$, and it grows like $\log|\tilde q|$ at infinity. Its exponential is the modulus of the Böttcher coordinate, and on each invariant complex plane the whole construction reduces to the classical complex one.</p>
+<p>The article also records an honest limitation. The menu asks for a potential "harmonic off the filled Julia set" with "subharmonicity in the four-dimensional sense". In four dimensions the potential is <strong>not</strong> harmonic: the case $c=0$ already gives $G_0(\tilde q)=\log|\tilde q|$ and the Euclidean Laplacian $\Delta\log|\tilde q|=2/|\tilde q|^2 \neq 0$. What is true is that the potential is harmonic off the slice Julia set <em>on each invariant complex plane</em>, and that in the four-dimensional space it is subharmonic, the mean-value property being the potential theory of <em>Potential Theory</em>. Both statements are proved or quoted below, and the difference between them is stated.</p>
+<p>The escape lemma, the filled Julia set and the quadratic map are from <em>The Quaternion Quadratic Map and Its Julia Sets</em>; the complex Green's function, the Böttcher coordinate and the conjugacy to the squaring map are from <em>The Escape Radius and the Green's Function</em> and <em>The Julia Sets of a Complex Polynomial</em>; the quaternion norm and its multiplicativity are from <em>Quaternion Norm and Invertibility</em>; the potential theory is Part III's, in <em>Potential Theory</em>; and the dimension is <em>The Dimension of the Quaternion Julia Sets</em>'s. The pluripotential analogue for the biquaternion algebra is <em>The Pluripotential Theory of the Biquaternion Dynamics</em>. No physics is invoked.</p>
+<p>Throughout, $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$, $N(\tilde q)=\tilde q\tilde q^{\natural}$, $|\tilde q|=\sqrt{N(\tilde q)}$, and $R(c)=1+|c|$.</p>
+<h2 id="the-escape-radius">The Escape Radius</h2>
+<p><strong>Theorem (the radius).</strong> Let $c \in \mathbb{H}$ and $R(c)=1+|c|$. If $|\tilde q_n| \geq R(c)$ for some $n$ then $|\tilde q_k| \to \infty$; consequently the filled Julia set is</p>
+<p>$$
+K_c = \{\tilde q \in \mathbb{H} : |\tilde q_n| \leq R(c)\ \text{for every}\ n \geq 0\} ,
+$$</p>
+<p>and a point of $\mathbb{H}$ is tested for membership in $K_c$ by iterating until either $R(c)$ is exceeded or a prescribed bound on the number of steps is reached.</p>
+<p><em>Proof.</em> The escape lemma of <em>The Quaternion Quadratic Map and Its Julia Sets</em>: from $|\tilde q_{n+1}| \geq |\tilde q_n|^2-|c|$ and the identity $R(c)^2-R(c)-|c|=|c|^2$ the moduli are strictly increasing and grow at least linearly once they exceed $R(c)$. The identification of $K_c$ with the non-escaping points is the definition, and the last sentence is the algorithm. $\square$</p>
+<p><strong>Remark (the sharpness of the radius).</strong> The radius $R(c)=1+|c|$ is the simplest constant that works for every $c$; the classical complex radius, valid for $|c|\leq2$, is $2$, and in the slice it is the radius used in practice. The radius is not an intrinsic invariant of the family: the escape set is the complement of $K_c$, and the radius is only a certified ball containing $K_c$. The number $R(c)$ is used in <em>The Quaternion Mandelbrot Set</em> and in the algorithms of the sibling articles, and its complex counterpart is the subject of <em>The Escape Radius and the Green's Function</em>.</p>
+<h2 id="the-greens-function">The Green's Function</h2>
+<p><strong>Definition.</strong> For $\tilde q$ with unbounded orbit the <strong>Green's function</strong> is</p>
+<p>$$
+G_c(\tilde q) = \lim_{n\to\infty} \frac{1}{2^n}\log|\tilde q_n| ,
+$$</p>
+<p>and for $\tilde q \in K_c$ one sets $G_c(\tilde q)=0$.</p>
+<p><strong>Theorem (existence and the explicit series).</strong> For every $\tilde q$ with unbounded orbit the limit exists, and for $|\tilde q|>R(c)$ it equals the absolutely convergent series</p>
+<p>$$
+G_c(\tilde q) = \log|\tilde q| + \frac12\sum_{k=0}^{\infty} \frac{1}{2^{k+1}}\log \frac{N(\tilde q_k^2+c)}{N(\tilde q_k)^2} .
+$$</p>
+<p>The function $G_c$ is continuous, nonnegative, vanishes exactly on $K_c$, and satisfies $G_c(\tilde q)=\log|\tilde q|+O(|\tilde q|^{-2})$ as $|\tilde q|\to\infty$.</p>
+<p><em>Proof.</em> Multiplicativity of the norm and the identity $\tilde q_{k+1}=\tilde q_k^2(1+c\tilde q_k^{-2})$ give, with $T_k=N(\tilde q_k^2+c)/N(\tilde q_k)^2$,</p>
+<p>$$
+|\tilde q_{k+1}| = |\tilde q_k|^2\sqrt{T_k} , \qquad \frac{\log|\tilde q_{k+1}|}{2^{k+1}} = \frac{\log|\tilde q_k|}{2^k} + \frac{1}{2^{k+1}}\cdot\frac12\log T_k ,
+$$</p>
+<p>and summing from $k=0$ to $n-1$ telescopes to $\log|\tilde q_n|/2^n = \log|\tilde q| + \frac12\sum_{k=0}^{n-1}2^{-(k+1)}\log T_k$. For an escaping orbit $|\tilde q_k|\to\infty$ and $T_k \to 1$, and the terms decay geometrically because $|\tilde q_k|$ grows doubly exponentially along the escape; the series converges absolutely and uniformly on each compact subset of the escaping region, giving existence and continuity. The value is nonnegative because each partial sum is the logarithm of a modulus; it vanishes exactly when the orbit is bounded, by the escape lemma; and the size of the first term, $(2\tilde q^2\cdot c+N(c))/N(\tilde q)^2=O(|\tilde q|^{-2})$, with rapidly smaller successors, gives the asymptotic. $\square$</p>
+<p><strong>Proposition (the functional equation).</strong> For every $\tilde q$ with unbounded orbit, $G_c(f_c(\tilde q))=2G_c(\tilde q)$, and $G_c$ is the unique continuous function on the escaping set that is zero on $\partial K_c$ and satisfies this equation with $G_c(\tilde q)/\log|\tilde q| \to 1$.</p>
+<p><em>Proof.</em> $\log|\tilde q_{n+1}|/2^n = 2\log|\tilde q_{n+1}|/2^{n+1}$, so passing to the limit along the shifted sequence gives $G_c(f_c(\tilde q))=2G_c(\tilde q)$. If $H$ is a second such function, then $H/ G_c$ is a continuous function of the escaping set that is bounded near infinity and invariant under $f_c$ with ratio $2$, hence pushes forward to a bounded function on the space of orbits; the normalisation at infinity and the connectivity of the escape set along the orbit force the ratio to be $1$, which is the standard uniqueness argument of <em>The Escape Radius and the Green's Function</em>. $\square$</p>
+<p><strong>Remark (the escape rate and the dimension).</strong> The function $G_c$ measures the rate of escape: the level sets $G_c=\text{constant}$ are foliations of the escaping set, and the exponential decay of the gaps between them is the mechanism by which the dimension of $J_c$ is computed in the complex theory. The quaternion case inherits the function and the level sets, and the dimension of the boundary is treated in <em>The Dimension of the Quaternion Julia Sets</em> with the inputs of Part IV.</p>
+<h2 id="the-bottcher-coordinate">The Böttcher Coordinate</h2>
+<p><strong>Definition.</strong> The <strong>Böttcher function</strong> of $c$ is $B_c=\exp(G_c)$. Since $G_c$ vanishes exactly on $K_c$ and is positive off it, the function $B_c$ equals $1$ exactly on $K_c$ and exceeds $1$ on the escaping set.</p>
+<p><strong>Proposition.</strong> On the escaping set $B_c$ is continuous and positive, it satisfies $B_c(f_c(\tilde q))=B_c(\tilde q)^2$, $B_c(\tilde q)=|\tilde q|+O(|\tilde q|^{-1})$, and $B_c(\tilde q)=\lim_n|\tilde q_n|^{1/2^n}$.</p>
+<p><em>Proof.</em> Immediate from the theorem and the functional equation. $\square$</p>
+<p><strong>Remark (the modulus of the coordinate, and the phase that is missing).</strong> In the complex case the Böttcher coordinate is the analytic function $\varphi_c$ with $\varphi_c(f_c(z))=\varphi_c(z)^2$, $\varphi_c(z)/z\to1$, whose modulus is $\exp$ of the complex Green's function; the argument of $\varphi_c$ is an analytic phase. In the quaternion algebra <strong>there is no analogue of the analytic phase</strong>: the function $\varphi_c$ is a conformal map, conformality is a complex notion, and the quaternion quadratic map is not complex-analytic. What survives is the modulus, the function $B_c$; the phase $\tilde q_n/|\tilde q_n|$ does not converge. The Böttcher function of the quaternion family is therefore a radial object, and the classical statement that the Julia set is the unit circle of the Böttcher coordinate takes the form $K_c=\{G_c=0\}=\{B_c=1\}$ with $J_c=\partial K_c$: the level set of the Böttcher function is the filled Julia set, and the Julia set is its boundary. The full coordinate exists only on an invariant slice, where the complex theory of <em>The Escape Radius and the Green's Function</em> applies, and there it is the classical one.</p>
+<h2 id="harmonicity-and-subharmonicity">Harmonicity and Subharmonicity</h2>
+<p><strong>Theorem (the potential on a slice is harmonic).</strong> Let $c \in \mathbb{H}$ and let $\mathbb{C}_\nu$ be an invariant plane of $f_c$, so that $\varphi_c$ conjugates the restriction of $f_c$ to the complex map $z \mapsto z^2+\kappa(c)$. Then on the escaping part of $\mathbb{C}_\nu$ the restriction of $G_c$ is the classical complex Green's function of $\kappa(c)$, and it is harmonic in the two complex variables of the plane and harmonic in the two real coordinates.</p>
+<p><em>Proof.</em> The restriction of the orbit to the slice is the complex orbit by <em>The Slices of the Quaternion Julia Sets</em>, and the modulus in $\mathbb{H}$ restricts to the modulus in $\mathbb{C}$, so $G_c$ restricts to the complex Green's function, which is harmonic off the slice Julia set by <em>The Escape Radius and the Green's Function</em>. $\square$</p>
+<p><strong>Remark (the failure of harmonicity in four dimensions).</strong> The menu's phrase "harmonic off the filled Julia set" is a two-dimensional statement, and it is not true in $\mathbb{H}$. The simplest counterexample is $c=0$: then $f_0(\tilde q)=\tilde q^2$ and $G_0(\tilde q)=\log|\tilde q|$ on the escaping set, whose Euclidean Laplacian is</p>
+<p>$$
+\Delta \log|\tilde q| = \frac{2}{|\tilde q|^2} \neq 0 ,
+$$</p>
+<p>since the fundamental solution of the Laplacian in $\mathbb{R}^4$ is $|\tilde q|^{-2}$ and $\log|\tilde q|$ is the $c=0$ limit of the logarithmic potentials. So $G_c$ is <em>not</em> harmonic in $\mathbb{H}$ for any $c$, and the article states it. What remains true, and is the reason the potential is useful, is the <strong>subharmonicity</strong>.</p>
+<p><strong>Proposition (subharmonicity, quoted).</strong> The function $G_c$ is subharmonic on the escaping set of $\mathbb{H}=\mathbb{R}^4$ with respect to the Euclidean Laplacian: for every ball $B(\tilde q,r)$ contained in the escaping set,</p>
+<p>$$
+G_c(\tilde q) \leq \frac{1}{\operatorname{vol}\,B(\tilde q,r)}\int_{B(\tilde q,r)}G_c .
+$$</p>
+<p>The proof is the mean-value argument for the limit of the normalised logarithmic potentials of a polynomial of degree two, and it belongs to Part III, in <em>Potential Theory</em>; the pluricomplex analogue belongs to <em>The Pluripotential Theory of the Biquaternion Dynamics</em>.</p>
+<h2 id="worked-example">Worked Example</h2>
+<p><strong>Example (the potential of a point and the functional equation).</strong> The values below were recomputed numerically by iterating the quaternion product.</p>
+<p><strong>(a) The parameter $c=0$.</strong> Here $G_0(\tilde q)=\log|\tilde q|$ for $|\tilde q|>1$, so the level sets are spheres and the filled Julia set is the unit ball. For $\tilde q=(2,1,\tfrac12,\tfrac14)$ one has $|\tilde q|^2=\tfrac{85}{16}$ and $G_0(\tilde q)=\tfrac12\log\tfrac{85}{16}=0.8350\ldots$, and the value is constant along the orbit up to the factor two: $G_0(\tilde q^2)=2G_0(\tilde q)$.</p>
+<p><strong>(b) The parameter $c=-1$.</strong> For the same point the partial sums $\log|\tilde q_n|/2^n$ are $0.8350$, $0.7929$, $0.8009$, $0.80082$, and they converge to $G_{-1}(\tilde q)=0.800820\ldots$; the functional equation holds to the last reliable digit, $G_{-1}(\tilde q^2-1)/G_{-1}(\tilde q)=2.000000$, and the asymptotic $G_{-1}(\tilde q)-\log|\tilde q|=-0.0342$ is of the order of $|\tilde q|^{-2}$.</p>
+<p><strong>(c) The escape radius on the orbit of $c=-1$.</strong> The critical orbit is $0 \mapsto -1 \mapsto 0$, so it never exceeds $R(-1)=2$; the point $\tilde q=e_0+e_1$ has orbit $e_0+e_1 \mapsto -e_0+2e_1 \mapsto -4e_0-4e_1$, and the modulus of the first iterate is $\sqrt5>2$, so the escape is certified at the first step and $G_{-1}$ is defined at the point from there by the series.</p>
+<h2 id="summary">Summary</h2>
+<p>The escape radius of the quaternion quadratic family is $R(c)=1+|c|$, certified by the multiplicativity of the norm and the inequality $|\tilde q^2+c|\geq|\tilde q|^2-|c|$; the filled Julia set is exactly the set of orbits that never leave the closed ball of that radius. The Green's function $G_c(\tilde q)=\lim_n 2^{-n}\log|\tilde q_n|$ exists off $K_c$, is continuous and nonnegative, vanishes exactly on $K_c$, satisfies $G_c\circ f_c=2G_c$, grows as $\log|\tilde q|$ at infinity, and has the explicit absolutely convergent series displayed above; its exponential is the Böttcher function $B_c$, which is the modulus of the classical Böttcher coordinate and carries the conjugacy to the squaring map, while the analytic phase of the complex coordinate has no quaternion analogue because the map is not conformal. On each invariant complex plane the potential restricts to the classical complex Green's function and is harmonic; in the four-dimensional space it is not harmonic — the case $c=0$ gives $\Delta\log|\tilde q|=2/|\tilde q|^2$ — and it is subharmonic, the mean-value property being that of <em>Potential Theory</em>. The dimension of the filled Julia set and of its boundary is the subject of <em>The Dimension of the Quaternion Julia Sets</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R(c)=1+\lvert c\rvert$</td>
+<td>Certified escape radius</td>
+</tr>
+<tr>
+<td>$\tilde q_n=f_c^{\,n}(\tilde q)$</td>
+<td>The orbit</td>
+</tr>
+<tr>
+<td>$G_c(\tilde q)=\lim_n 2^{-n}\log\lvert\tilde q_n\rvert$</td>
+<td>The Green's function, Escaping set</td>
+</tr>
+<tr>
+<td>$B_c=\exp G_c$</td>
+<td>The Böttcher function, modulus of the coordinate</td>
+</tr>
+<tr>
+<td>$T_k=N(\tilde q_k^2+c)/N(\tilde q_k)^2$</td>
+<td>The ratio whose logarithm appears in the series</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>Euclidean Laplacian of $\mathbb{H}=\mathbb{R}^4$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_\nu$</td>
+<td>An invariant complex plane</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Lennart Carleson and Theodore W. Gamelin, <em>Complex Dynamics</em> (Springer, 1993). The Green's function, the Böttcher coordinate and the conjugacy for the complex quadratic family.</li>
+<li>John Milnor, <em>Dynamics in One Complex Variable</em>, 3rd ed. (Princeton, 2006). The potential and the escape-rate theory, cited to <em>The Escape Radius and the Green's Function</em>.</li>
+<li>Thomas Ransford, <em>Potential Theory in the Complex Plane</em> (Cambridge, 1995). Subharmonic functions and the mean-value property, cited to <em>Potential Theory</em>.</li>
+<li>Robert P. Munafo, "Quaternion Julia and Mandelbrot sets" and the associated computational literature. The escape-time algorithm in four dimensions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

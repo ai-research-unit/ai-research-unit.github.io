@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hausdorff Dimension of the Biquaternion Julia Sets — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hausdorff-dimension-of-the-biquaternion-julia-sets"><strong>The Hausdorff Dimension of the Biquaternion Julia Sets</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Hausdorff dimension of a biquaternion Julia set is a number attached to a subset of an eight-real-dimensional space, and the category can report three things about it: the exact values for the parameter zero and for the parameters whose spectral set is a variety, the reduction of the dimension of a slice to the dimension of the corresponding classical fractal, and an upper bound for a central parameter in terms of the dimension of the complex Julia set. What the category cannot report is a formula for a general non-central parameter, and the article says so. The singular part of the fractal — the part lying on the critical set — requires separate treatment, and it is not negligible: it contains a real four-dimensional surface at the parameter zero.</p>
+<p>The fractal and the critical set are <em>The Biquaternion Quadratic Map and Its Julia Sets</em>; the slices and their dimensions are classical, and the slice identification is <em>The Slices of the Biquaternion Julia Sets</em>; the zero divisors and the idempotent surface are <em>The Zero Divisors and the Singular Julia Sets</em>; the idempotent plane and its product structure are <em>The Idempotent Decomposition and the Split Fractal</em>; the system and the similarity dimension are <em>The Biquaternion Iterated Function Systems</em>. The dimension itself is defined in <em>Fractal Geometry</em> of Part IV, and its measure-theoretic refinements are in <em>Fractal Analysis</em> of Part III.</p>
+<p>The article owns the dimension of the slices, the exact values at the parameter zero, the upper bound for a central parameter, the lower bound from the singular surface, and the statement of the open problem. It does not attempt a general dimension formula.</p>
+<p><strong>Standing convention.</strong> $\dim_H$ is the Hausdorff dimension, $\mathcal K_{\tilde C}$ and $J_{\tilde C}$ are the filled Julia set and the Julia set, and a <strong>slice</strong> of a fractal is its intersection with a real or complex subspace in the sense of <em>The Slices of the Biquaternion Julia Sets</em>.</p>
+<h2 id="the-dimension-of-a-slice">The Dimension of a Slice</h2>
+<p><strong>Proposition (the classical slices).</strong> Let $\tilde C=Ce_0$ be central. Then</p>
+<p>$$
+\dim_H\bigl(J_{Ce_0}\cap\mathbb{C}e_0\bigr)=\dim_H J_C,\qquad \dim_H\bigl(\mathcal K_{Ce_0}\cap\mathbb{C}e_0\bigr)=\dim_H K_C,
+$$</p>
+<p>and for a real central parameter the same with the real quaternion subspace and the quaternion Julia set in place of the complex one.</p>
+<p><strong>Proof.</strong> The central slice is the image of the classical sets under the isometry $A\mapsto Ae_0$ of the Euclidean plane onto the centre (<em>The Slices of the Biquaternion Julia Sets</em>), and the quaternion slice is the classical quaternion picture; Hausdorff dimension is invariant under isometries.</p>
+<p><strong>Theorem (the dimension of a product slice).</strong> Let $\tilde\Pi$ be a primitive idempotent and $\tilde C=C_1\tilde\Pi+C_2\tilde\Pi'$ a parameter in the idempotent plane $W_{\tilde\Pi}$. Then</p>
+<p>$$
+\dim_H\bigl(J_{\tilde C}\cap W_{\tilde\Pi}\bigr)=\max\bigl(\dim_H J_{C_1}+\dim_H K_{C_2},\ \dim_H K_{C_1}+\dim_H J_{C_2}\bigr),
+$$</p>
+<p>the maximum of the two products of a boundary and a filled Julia set; when a factor has empty interior its boundary and its filled set coincide and the corresponding terms agree.</p>
+<p><strong>Proof.</strong> The slice is the boundary of the product, $J_{\tilde C}\cap W_{\tilde\Pi}=\partial(K_{C_1}\times K_{C_2})=(J_{C_1}\times K_{C_2})\cup(K_{C_1}\times J_{C_2})$ (<em>The Idempotent Decomposition and the Split Fractal</em>). For a product of two sets in Euclidean spaces the Hausdorff dimension satisfies $\dim_H(A\times B)=\dim_H A+\dim_H B$ when one of the factors is sufficiently regular, in particular for the Julia sets and the filled Julia sets of the quadratic family (<em>Fractal Geometry</em>, §<em>Products and the Dimension Formula</em>); applying it to the two products of the displayed union and taking the maximum gives the value.</p>
+<p><strong>Remark (the slice need not have the dimension of the complex fractal).</strong> A slice lies in the four-real-dimensional plane $W_{\tilde\Pi}$, so its dimension is at most four, and it can exceed the dimension of a single complex Julia set by the dimension of the other filled factor: at $C_1=C_2=0$ the two complex filled Julia sets are discs of dimension two and the slice, the boundary of the bidisc, has real dimension three. <strong>The dimension of the biquaternion fractal is a statement about the whole eight-dimensional set, and a slice exhibits only the part of it carried by the plane.</strong></p>
+<h2 id="the-parameter-zero">The Parameter Zero</h2>
+<p><strong>Theorem (the dimension at the parameter zero).</strong> For $\tilde C=0$,</p>
+<p>$$
+\dim_H\mathcal K_0=8, \qquad \dim_H J_0=7 .
+$$</p>
+<p>Moreover $J_0$ contains the idempotent surface, a real four-dimensional smooth manifold, so $\dim_H\bigl(J_0\cap\mathscr{Z}\bigr)\ge4$.</p>
+<p><strong>Proof.</strong> $\mathcal K_0$ contains the open set $\{\rho(\Phi(\tilde Q))<1\}$, because the orbit of a matrix of spectral radius below one tends to zero (<em>The Biquaternion Quadratic Map and Its Julia Sets</em>, §<em>The Central Parameter and the Eigenvalue Reduction</em>), so $\dim_H\mathcal K_0=8$. The Julia set is $J_0=\{\rho(\Phi(\tilde Q))=1\}$: the filled set $\mathcal K_0$ has closure $\{\rho\le1\}$ and interior $\{\rho<1\}$ — the matrices of spectral radius one that are not diagonalisable lie outside $\mathcal K_0$ but are limits of diagonalisable ones — so its boundary is the level set $\{\rho=1\}$. That level set is a semialgebraic set of real dimension seven: on the open dense set where exactly one eigenvalue has modulus one (or the two are distinct), $\rho$ is real-analytic with non-vanishing differential and the level set is a real hypersurface, and a semialgebraic set has Hausdorff dimension equal to its real dimension. The idempotent surface is contained in $J_0$ and has real dimension four (<em>The Zero Divisors and the Singular Julia Sets</em>).</p>
+<p><strong>Remark (why the dimension drops from eight to seven).</strong> The filled Julia set is full-dimensional because it contains a neighbourhood of the origin in the model, and the Julia set is the boundary of the region it fills, of one real dimension less. <strong>The whole-dimensional non-escaping set and the codimension-one fractal of its boundary are the two objects of the parameter zero, and the singular surface is a distinguished part of the boundary.</strong> The same picture holds at every central parameter for which the complex filled Julia set has interior.</p>
+<h2 id="the-central-parameter">The Central Parameter</h2>
+<p><strong>Theorem (the central parameter bound).</strong> Let $\tilde C=Ce_0$ be central and let $\mathcal K_c$ be the complex filled Julia set of $\zeta\mapsto\zeta^2+C$.</p>
+<ol>
+<li>If $C$ lies in the interior of the Mandelbrot set, then $\dim_H\mathcal K_{Ce_0}=8$.</li>
+<li>If the complex filled Julia set has dimension $\alpha$, then</li>
+</ol>
+<p>$$
+\dim_H\mathcal K_{Ce_0}\le4+2\alpha .
+$$</p>
+<p><strong>Proof.</strong> (1) For $C$ in the interior of the Mandelbrot set the origin is in the interior of the complex filled Julia set, and the set of matrices whose eigenvalues lie in a disc about the origin contained in $K_C$ is an open neighbourhood of $0$ in $\mathcal K_{Ce_0}$; hence the set is full-dimensional. (2) A matrix in $\mathcal K_{Ce_0}$ with distinct eigenvalues $\lambda_1\neq\lambda_2$ is $S\operatorname{diag}(\lambda_1,\lambda_2)S^{-1}$. Fix the unordered pair of eigenvalues in $K_C$: the conjugates of the diagonal matrix form the conjugacy class, the quotient of $GL_2(\mathbb{C})$, of real dimension eight, by the centraliser of a diagonal matrix with distinct eigenvalues, which is the torus of diagonal matrices, of real dimension four; the class therefore has real dimension four, and near a matrix with distinct eigenvalues the conjugacy class and the eigenvalue pair are local coordinates on $\mathcal K_{Ce_0}$, four real dimensions from the class and at most $2\dim_HK_C$ from the pair, since the pair ranges over $K_C\times K_C$ and the product formula holds for these sets. The matrices with repeated eigenvalues form a set of lower dimension and do not affect the bound. Hence $\dim_H\mathcal K_{Ce_0}\le4+2\dim_HK_C$.</p>
+<p><strong>Remark (the expectation and the evidence).</strong> The bound is expected to be an equality, the four dimensions coming from the conjugacy class of a matrix and the $2\alpha$ from the pair of eigenvalues; the equality holds at $C=0$, where $\alpha=2$ and $4+2\alpha=8$. <strong>The exact dimension of the biquaternion Julia set at a central parameter is the dimension of the complex Julia set, doubled and shifted by four, and this is the only clean formula the category has.</strong> No such formula exists for a non-central parameter, because the orbit is not a polynomial in one element and the spectrum does not separate.</p>
+<h2 id="the-non-central-parameter-and-the-open-problem">The Non-Central Parameter and the Open Problem</h2>
+<p><strong>Remark (what is open).</strong> For a non-central parameter the fractal is the Julia set of a polynomial map of $\mathbb{C}^4$ whose leading part is not proper, the pluripotential theory of the general case is not available (<em>The Pluripotential Theory of the Biquaternion Dynamics</em>), the singular set is a hypersurface with two components (<em>The Zero Divisors and the Singular Julia Sets</em>), and no dimension formula is known. <strong>The dimension of the biquaternion Julia set for a general parameter is an open problem of the category</strong>, and the honest report is that only the level sets of the Green's function on the regular part have controlled dimension.</p>
+<p><strong>Remark (the singular part is not negligible).</strong> At the parameter zero the singular part of the Julia set contains the real four-dimensional idempotent surface; for other parameters the intersection of the Julia set with the critical hypersurface is not known to be small, and no argument that it is of measure zero in the fractal is available. <strong>Any dimension theory of the biquaternion fractals must handle the singular part separately, and the singular part can carry dimension</strong>, which is the reason the article treats it before the general theory rather than after it.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hausdorff dimension of a biquaternion Julia set is known in three situations. On a slice it is the dimension of the corresponding classical fractal: the complex dimension on the central slice, the quaternion dimension on the quaternion slice, and on an idempotent plane the maximum of the two products of one boundary and one filled complex Julia set, by the product formula. At the parameter zero the filled Julia set is full-dimensional, of dimension eight, the Julia set is the spectral hypersurface of dimension seven, and the idempotent surface gives the singular part dimension at least four. At a central parameter whose complex filled Julia set has interior the filled set is again full-dimensional, and in general the dimension is at most four plus twice the dimension of the complex Julia set, with equality expected and proved at the parameter zero. For a non-central parameter no formula is known and the singular part of the fractal is not known to be negligible; the general dimension problem is open.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dim_H$</td>
+<td>Hausdorff dimension</td>
+</tr>
+<tr>
+<td>$\mathcal K_{\tilde C}$, $J_{\tilde C}$</td>
+<td>the filled Julia set and the Julia set</td>
+</tr>
+<tr>
+<td>$K_C$, $J_C$</td>
+<td>the complex filled Julia set and Julia set</td>
+</tr>
+<tr>
+<td>$\rho(\Phi(\tilde Q))$</td>
+<td>the spectral radius of the matrix model</td>
+</tr>
+<tr>
+<td>$W_{\tilde\Pi}$</td>
+<td>the idempotent plane $\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$</td>
+</tr>
+<tr>
+<td>$\mathscr{Z}$</td>
+<td>the zero-divisor cone</td>
+</tr>
+<tr>
+<td>$\alpha=\dim_HK_C$</td>
+<td>the dimension of the complex filled Julia set</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Fractal Geometry</em> (<code>articles_maths/fractal-geometry.md</code>), for the definition of the dimension and the product formula.</li>
+<li><em>The Slices of the Biquaternion Julia Sets</em> (<code>articles_maths/the-slices-of-the-biquaternion-julia-sets.md</code>), for the slices whose dimensions are computed here.</li>
+<li><em>The Idempotent Decomposition and the Split Fractal</em> (<code>articles_maths/the-idempotent-decomposition-and-the-split-fractal.md</code>), for the product structure of the idempotent slice.</li>
+<li><em>The Zero Divisors and the Singular Julia Sets</em> (<code>articles_maths/the-zero-divisors-and-the-singular-julia-sets.md</code>), for the idempotent surface and the singular part.</li>
+<li><em>The Biquaternion Iterated Function Systems</em> (<code>articles_maths/the-biquaternion-iterated-function-systems.md</code>), for the similarity dimension of a system, which is the constructive counterpart.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

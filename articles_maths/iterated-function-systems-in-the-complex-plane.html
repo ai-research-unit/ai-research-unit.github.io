@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iterated Function Systems in the Complex Plane — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="iterated-function-systems-in-the-complex-plane"><strong>Iterated Function Systems in the Complex Plane</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>iterated function system</strong> on the plane is a finite family of contractions, and its attractor is the compact set invariant under the family; when the contractions are <strong>similarities</strong> of $\mathbb{C}$, that is maps $z \mapsto u z + v$ with $u \neq 0$, the attractor is the self-similar set of the classical theory. This article works the complex case: it fixes the similarities of $\mathbb{C}$ and their rotation content, records the attractor theorem and the similarity dimension that the lead article <em>Fractal Geometry</em> supplies, and then turns to the geometric source of the systems, which is the theory of the <strong>Kleinian groups</strong>. A Kleinian group is a discrete group of Möbius transformations of the Riemann sphere, its <strong>limit set</strong> is the smallest closed invariant set of the action, and for the groups of the Schottky type the limit set is precisely the attractor of a system of inverse branches; the Apollonian gasket is the same construction at the tangent circles. The coding of the attractor by the shift space closes the article.</p>
+<p>The article is the $\mathbb{C}$ instance of the self-similar theory. The general definition of an iterated function system, the attractor theorem, the open set condition, the similarity dimension, the Hausdorff dimension of a self-similar set and the standard examples (the Cantor set, the Sierpiński gasket, the Koch curve) are those of <em>Fractal Geometry</em>, the lead article of the subcategory, and are cited rather than restated; the self-similar <strong>measure</strong> and its dimension are those of <em>The Self-Similar Measure and the Invariant Measure</em> of Part III's <em>Fractal Analysis</em>; the Hutchinson operator and its adjoint are those of <em>The Hutchinson Operator and Its Adjoint</em> of Part IV; the Kleinian groups, their limit sets and their quotient manifolds are those of <em>Hyperbolic Geometry</em> and <em>Low-Dimensional Topology</em>, and the discretisation and the arithmetic of the groups are catalogued in <em>List of Discrete Geometric Groups</em>; the coding is that of <em>Symbolic Dynamics</em>. The Julia set as the attractor of the system of inverse branches is the subject of <em>The Julia Sets of a Complex Polynomial</em> and of <em>The Geometry of the Julia Sets</em>. No physics is invoked.</p>
+<h2 id="similarities-of-the-complex-plane">Similarities of the Complex Plane</h2>
+<h3 id="the-group-of-similarities">The Group of Similarities</h3>
+<p><strong>Definition.</strong> A <strong>similarity</strong> of $\mathbb{C}$ is a map</p>
+<p>$$
+S(z) = u z + v, \qquad u, v \in \mathbb{C},\ u \neq 0 ,
+$$</p>
+<p>and the <strong>ratio</strong> (or linear contraction factor) of $S$ is $|u|$. The similarity is a <strong>contraction</strong> if $|u| < 1$, and it is <strong>direct</strong> if it preserves the orientation, that is if $S$ is holomorphic; the map $z \mapsto u\bar z + v$ is the orientation-reversing similarity of ratio $|u|$.</p>
+<p><strong>Proposition.</strong> The similarities of $\mathbb{C}$ form a group, the semidirect product $\mathbb{C} \rtimes \mathbb{C}^\times$ of the translations with the multiplications, of real dimension four; the direct similarities with $|u| = 1$ form the group of the Euclidean isometries fixing the origin, which is $U(1)$ acting by rotations, and every similarity is the composition of a rotation, a homothety and a translation.</p>
+<p><strong>Proof.</strong> The composite of $z \mapsto u z+v$ and $z \mapsto u'z+v'$ is $z \mapsto u'u z + (u'v+v')$, again of the form; and every similarity with $u \neq 0$ is invertible with inverse $z \mapsto u^{-1}z - u^{-1}v$. The multiplication $z \mapsto uz$ is the rotation by $\arg u$ composed with the homothety of ratio $|u|$, since $uz = |u|e^{i\arg u}z$.</p>
+<p><strong>Remark (the rotation content).</strong> This is the point at which the complex systems differ from the real ones. A similarity of $\mathbb{R}$ is $x \mapsto ax+b$ and carries no rotation; a similarity of $\mathbb{C}$ carries the angle $\arg u$, and the group of contractive similarities is the group $U(1) \times (0,1) \times \mathbb{C}$ of a rotation, a homothety and a translation. Two complex systems with the same ratios and the same translations but different rotation angles have different attractors.</p>
+<h3 id="the-attractor-theorem-and-the-similarity-dimension">The Attractor Theorem and the Similarity Dimension</h3>
+<p><strong>Definition.</strong> An <strong>iterated function system</strong> (IFS) of similarities of $\mathbb{C}$ is a finite family $\mathcal{S} = \{S_1, \ldots, S_m\}$, $m \geq 2$, of similarities $S_i(z) = u_i z + v_i$ with $|u_i| < 1$.</p>
+<p><strong>Theorem (the attractor, Hutchinson).</strong> For every such family there is a unique nonempty compact set $\Lambda \subseteq \mathbb{C}$ with</p>
+<p>$$
+\Lambda = \bigcup_{i=1}^{m} S_i(\Lambda) ,
+$$</p>
+<p>the <strong>attractor</strong> of the system; it is the fixed point of the Hutchinson operator $E \mapsto \bigcup_i S_i(E)$ on the complete metric space of nonempty compact sets with the Hausdorff metric, and for every starting compact set the iterated union converges to $\Lambda$ in the Hausdorff metric.</p>
+<p><strong>Proof sketch.</strong> The operator is a contraction of the hyperspace, because each $S_i$ is a contraction of $\mathbb{C}$ and the Hausdorff metric contracts correspondingly; the Banach fixed-point theorem gives the unique fixed point and the convergence. The construction is the attractor theorem of <em>Fractal Geometry</em>; the operator and its spectral theory are those of <em>The Hutchinson Operator and Its Adjoint</em>.</p>
+<p><strong>Definition.</strong> The <strong>similarity dimension</strong> of $\mathcal{S}$ is the unique real $s \geq 0$ with</p>
+<p>$$
+\sum_{i=1}^{m} |u_i|^s = 1 .
+$$</p>
+<p>It exists and is unique when $m \geq 2$ and every $|u_i| < 1$, because the left-hand side is strictly decreasing in $s$, greater than $1$ at $s = 0$ and tending to $0$ at infinity.</p>
+<p><strong>Theorem (the dimension under the open set condition).</strong> If the system satisfies the <strong>open set condition</strong> — there is a nonempty open set $O$ with $\bigcup_i S_i(O) \subseteq O$, the union disjoint — then</p>
+<p>$$
+0 < \mathcal{H}^s(\Lambda) < \infty, \qquad \dim_H \Lambda = s ,
+$$</p>
+<p>where $s$ is the similarity dimension; likewise the box dimension of $\Lambda$ is $s$. Without the open set condition the attractor may have dimension strictly less than the similarity dimension, because the pieces may overlap.</p>
+<p><strong>Proof sketch.</strong> The open set condition lets the pieces of the $n$-th level be separated by the images of $O$, so the covering sum $\sum |(S_{i_1}\circ\cdots\circ S_{i_n})'|^s = \left(\sum|u_i|^s\right)^n = 1$ is uniformly controlled; the upper bound for the $s$-dimensional measure and the lower bound for the mass distribution both follow. The open set condition, the similarity dimension and this theorem are those of <em>Fractal Geometry</em>, and they are not reproved here.</p>
+<p><strong>Example (a complex Cantor set).</strong> Let $S_1(z) = u z$ and $S_2(z) = u z + (1-u)$ with $u$ a real number in $(0,1/2)$. The attractor is the real middle-third-type Cantor set on the segment $[0,1]$, of dimension $s$ with $|u|^s = 1/2$, that is $s = \log 2/\log(1/|u|)$; for $u = 1/3$ this is the middle-third set of dimension $\log 2/\log 3 = 0.6309297535\ldots$, the value recorded in <em>Fractal Geometry</em>. If instead $u = \tfrac13 e^{i\pi/3}$, the two pieces are rotated relative to one another and the attractor is a complex Cantor set of the same dimension, not contained in any line.</p>
+<h2 id="the-kleinian-groups-and-their-limit-sets">The Kleinian Groups and Their Limit Sets</h2>
+<h3 id="kleinian-groups">Kleinian Groups</h3>
+<p><strong>Definition.</strong> A <strong>Kleinian group</strong> is a discrete subgroup $\Gamma \leq PSL(2,\mathbb{C})$, acting on the Riemann sphere $\hat{\mathbb{C}}$ by Möbius transformations; a <strong>Fuchsian group</strong> is a discrete subgroup of $PSL(2,\mathbb{R})$, acting on the circle $\hat{\mathbb{R}} = \mathbb{R} \cup \{\infty\}$ and on the hyperbolic plane. The definitions, the classification of the elements into the elliptic, parabolic and hyperbolic (loxodromic) classes, the discreteness and the construction of the quotient manifolds are those of <em>Hyperbolic Geometry</em>, and the groups are catalogued in <em>List of Discrete Geometric Groups</em>.</p>
+<p><strong>Example (the Hecke groups).</strong> The <strong>Hecke group</strong> $H(\lambda)$ is generated by the two Möbius transformations $z \mapsto -1/z$ and $z \mapsto z+\lambda$; it is discrete for $\lambda = 2\cos(\pi/q)$ with $q \geq 3$ and for $\lambda \geq 2$. Its limit set illustrates the two sides of the theory that concern the systems below: for $\lambda = 2\cos(\pi/q)$ the group is Fuchsian of the first kind and its limit set is the whole circle $\hat{\mathbb{R}}$, a non-fractal curve, while for $\lambda \geq 2$ it is Fuchsian of the second kind and its limit set is a Cantor subset of $\hat{\mathbb{R}}$ — the simplest explicit limit set that is the attractor of a system of inverse branches. Whether a group is of the first or the second kind is therefore what decides whether its limit set carries fractal structure, and the Schottky construction below is the case in which the group is of the second kind by construction.</p>
+<p><strong>Definition.</strong> The <strong>limit set</strong> $\Lambda(\Gamma)$ is the set of accumulation points in $\hat{\mathbb{C}}$ of the orbit $\Gamma z$ of a point $z$ whose orbit is infinite; it is independent of the chosen $z$, it is the smallest nonempty closed $\Gamma$-invariant subset of $\hat{\mathbb{C}}$, and it is the complement of the domain of discontinuity on which $\Gamma$ acts properly discontinuously.</p>
+<p><strong>Theorem.</strong> The limit set of a Kleinian group is either empty, a single point, two points, or a perfect set; for a non-elementary group it is perfect and uncountable, and for a <strong>quasi-Fuchsian</strong> group it is a Jordan curve. If the group is conjugate into $PSL(2,\mathbb{R})$ and is non-elementary, its limit set is contained in the circle $\hat{\mathbb{R}}$.</p>
+<p><strong>Proof sketch.</strong> If the limit set has three points, the Möbius transformations sending three arbitrary points to three fixed points accumulate, and the group is non-discrete unless the limit set is a perfect set; the alternatives exhaust the cases. The Jordan-curve case is the quasi-Fuchsian theorem, and the statements are those of <em>Hyperbolic Geometry</em>.</p>
+<h3 id="the-schottky-systems">The Schottky Systems</h3>
+<p><strong>Definition.</strong> A <strong>Schottky group</strong> on $m$ generators is a group generated by $m$ Möbius transformations $T_1, \ldots, T_m$ for which there are $2m$ pairwise disjoint closed disks $D_1, \ldots, D_{2m}$ in $\hat{\mathbb{C}}$ with</p>
+<p>$$
+T_i\bigl(\hat{\mathbb{C}} \setminus D_{m+i}\bigr) = D_i , \qquad i = 1, \ldots, m ,
+$$</p>
+<p>the disks being paired; the group is classical when the disks are bounded by circles, and the region $\hat{\mathbb{C}} \setminus \bigcup_{j} D_j$ is a fundamental domain.</p>
+<p><strong>Theorem.</strong> The limit set of a Schottky group is the attractor of the iterated function system formed by the inverses $T_1^{-1}, \ldots, T_m^{-1}$ restricted to the disks $D_1, \ldots, D_m$: each $T_i^{-1}$ is a contraction of $D_i$ onto a disk contained in $D_{m+i}$, the system satisfies the open set condition with $O$ the exterior region of the fundamental domain, and the attractor is a Cantor set.</p>
+<p><strong>Proof sketch.</strong> The disks $D_{m+i}$ are disjoint from the disks $D_j$, so $T_i^{-1}(D_i) \subseteq D_{m+i}$ and the restricted maps are contractions by the Schwarz–Pick lemma; the family is a contraction system, its attractor is the limit set because the limit set is the smallest closed invariant set and the attractor is invariant under the inverses, hence under the group; the open set condition holds with the exterior of the fundamental domain. The classical theory is that of <em>Hyperbolic Geometry</em>.</p>
+<p><strong>Remark.</strong> The limit sets of the Schottky groups are the Cantor sets of the Kleinian theory, and their Hausdorff dimension is the exponent $\delta$ of the group: the exponent of convergence of the Poincaré series, equivalently the critical exponent of the group, which also gives the dimension of the Patterson–Sullivan measure. The equality $\dim_H \Lambda = \delta$ and the ergodic theory of the measure are Part III's, cited to <em>Ergodic Theory of Group Actions</em>, and the measure itself is constructed there.</p>
+<h3 id="the-apollonian-gasket">The Apollonian Gasket</h3>
+<p><strong>Definition.</strong> Four mutually tangent circles in $\hat{\mathbb{C}}$ determine the <strong>Apollonian gasket</strong>: the closure of the union of the circles obtained from the four by the repeated action of the inversions in the four circles.</p>
+<p><strong>Theorem.</strong> The Apollonian gasket is the limit set of the Kleinian group $\Gamma_A$ generated by the four inversions in the mutually tangent circles, and equivalently it is the closure of the orbit of the four circles under $\Gamma_A$. The group is geometrically finite and non-elementary, and the gasket is the minimal closed invariant set of the group on the sphere.</p>
+<p><strong>Proof sketch.</strong> The inversions are Möbius transformations and the group generated by them is discrete, because the four circles bound a fundamental domain of a rank-two group (or, for the Apollonian packing, because the inversions are in a "Schottky-like" configuration); its orbit on the four circles is countable, its accumulation set is the gasket, and the gasket is invariant and minimal, hence the limit set. The statement is that of the Kleinian theory of <em>Hyperbolic Geometry</em>; the dimension of the gasket is given by the critical exponent $\delta$ of the group, a quantity known rigorously and cited in the literature rather than recomputed here.</p>
+<p><strong>Remark (the Hecke groups).</strong> The Fuchsian analogue, the <strong>Hecke group</strong> $H(\lambda)$ generated by $z \mapsto -1/z$ and $z \mapsto z+\lambda$, is the linear source of the two-dimensional systems: the modular group $PSL(2,\mathbb{Z})$ is $H(1)$, the arithmetic values $\lambda = 2\cos(\pi/q)$ give the triangle groups, and the continued-fraction coding of the orbit of $0$ is the coding of the geodesic flow. For these arithmetic groups the limit set is the whole circle $\hat{\mathbb{R}}$, of dimension one, so the fractal constructions begin with the strictly Kleinian and Schottky groups and with the Apollonian group, not with the Hecke groups themselves.</p>
+<h2 id="the-coding-of-the-attractor">The Coding of the Attractor</h2>
+<p><strong>Theorem (the coding map).</strong> Let $\mathcal{S} = \{S_1, \ldots, S_m\}$ be an iterated function system of similarities with attractor $\Lambda$, and let $\Sigma = \{1, \ldots, m\}^{\mathbb{N}}$ be the full shift on $m$ symbols. For each $\omega = (\omega_1, \omega_2, \ldots) \in \Sigma$ the intersections</p>
+<p>$$
+\bigcap_{n \geq 1} S_{\omega_1}\circ\cdots\circ S_{\omega_n}(\Lambda)
+$$</p>
+<p>are nested compact sets of diameter tending to $0$, so their intersection is a single point $\pi(\omega) \in \Lambda$; the map $\pi : \Sigma \to \Lambda$ is continuous and surjective, it satisfies $S_i \circ \pi = \pi \circ \sigma_i$ with $\sigma_i$ the $i$-th branch of the inverse of the shift, and it is injective exactly when the sets $S_i(\Lambda)$ are pairwise disjoint.</p>
+<p><strong>Proof.</strong> The diameter of $S_{\omega_1}\circ\cdots\circ S_{\omega_n}(\Lambda)$ is at most $|u_{\omega_1}\cdots u_{\omega_n}|\operatorname{diam}\Lambda \leq (\max_i |u_i|)^n \operatorname{diam}\Lambda \to 0$, so the nested intersection is a point; the continuity follows from the uniform contraction, the surjectivity from the invariance of $\Lambda$, and the injectivity statement from the overlap of the pieces. The coding, the shift and the subshift are those of <em>Symbolic Dynamics</em> and <em>Limit Spaces and Schreier Graphs</em>; the combinatorics of the address map is the same as for the real systems of <em>Fractal Geometry</em>.</p>
+<p><strong>Example (the Cantor set as a shift space).</strong> For the two-map system $S_1(z) = z/3$, $S_2(z) = z/3 + 2/3$ on the real segment, the coding map is a bijection $\{1,2\}^{\mathbb{N}} \to \Lambda$ onto the middle-third Cantor set, and the shift corresponds to the discarding of the first ternary digit. This is the middle-third set of <em>Fractal Geometry</em>, seen through its address map.</p>
+<h2 id="summary">Summary</h2>
+<p>An iterated function system of similarities of the complex plane is a finite family $S_i(z) = u_i z + v_i$ with $|u_i| < 1$; its attractor is the unique compact set invariant under the family, obtained as the fixed point of the Hutchinson operator. The similarities of $\mathbb{C}$ carry a rotation in addition to the homothety, which the real systems do not, and the group of contractive similarities is $U(1) \times (0,1) \times \mathbb{C}$. When the open set condition holds, the attractor has Hausdorff and box dimension equal to the similarity dimension, the root of $\sum|u_i|^s = 1$; this theorem and the definition of the dimension are those of <em>Fractal Geometry</em>.</p>
+<p>The geometric source of the complex systems is the theory of the Kleinian groups. A Kleinian group is a discrete subgroup of $PSL(2,\mathbb{C})$, and its limit set is the smallest closed invariant set; for a Schottky group the limit set is the attractor of the system of inverse branches of the generators, a Cantor set, and the Apollonian gasket is the limit set of the group generated by four inversions in mutually tangent circles. The Hausdorff dimension of a limit set is the critical exponent of the group, and the measure is the Patterson–Sullivan measure of Part III. Every attractor is coded by the full shift through the address map, which is a bijection exactly when the pieces are disjoint. The Kleinian groups and their quotients are those of <em>Hyperbolic Geometry</em> and <em>Low-Dimensional Topology</em>; the conformal self-similarity of the Julia sets, which are the attractors of the systems of inverse branches of a rational map, is the subject of <em>The Julia Sets of a Complex Polynomial</em> and of Part IV.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_i(z) = u_i z + v_i$</td>
+<td>Similarity of $\mathbb{C}$ of ratio $\lvert u_i\rvert$; contraction if $\lvert u_i\rvert < 1$</td>
+</tr>
+<tr>
+<td>$\mathcal{S} = \{S_1,\ldots,S_m\}$</td>
+<td>Iterated function system of similarities</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>Attractor, the unique compact set $\Lambda = \bigcup_i S_i(\Lambda)$</td>
+</tr>
+<tr>
+<td>$s$, similarity dimension</td>
+<td>Root of $\sum_i\lvert u_i\rvert^s = 1$</td>
+</tr>
+<tr>
+<td>open set condition</td>
+<td>Disjoint images of an open set $O$ inside $O$</td>
+</tr>
+<tr>
+<td>$\Gamma$, $\Lambda(\Gamma)$</td>
+<td>Kleinian group, its limit set</td>
+</tr>
+<tr>
+<td>$D_1,\ldots,D_{2m}$, $T_1,\ldots,T_m$</td>
+<td>Schottky disks and generators</td>
+</tr>
+<tr>
+<td>$\Gamma_A$, Apollonian gasket</td>
+<td>The group of four inversions and its limit set</td>
+</tr>
+<tr>
+<td>$H(\lambda)$</td>
+<td>Hecke group generated by $z\mapsto-1/z$, $z\mapsto z+\lambda$</td>
+</tr>
+<tr>
+<td>$\Sigma = \{1,\ldots,m\}^{\mathbb{N}}$, $\pi$</td>
+<td>Shift space and the address map</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>Critical exponent of a Kleinian group; $\dim_H\Lambda(\Gamma)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John E. Hutchinson, "Fractals and self-similarity", <em>Indiana University Mathematics Journal</em> 30 (1981), 713–747, for the attractor theorem and the open set condition.</li>
+<li>Kenneth Falconer, <em>Fractal Geometry: Mathematical Foundations and Applications</em>, 3rd edition (Wiley, 2014), for the similarity dimension and the self-similar sets.</li>
+<li>Alan F. Beardon, <em>The Geometry of Discrete Groups</em> (Springer, 1983), for the Möbius transformations, the Fuchsian and the Kleinian groups and the limit sets.</li>
+<li>David Mumford, Caroline Series and David Wright, <em>Indra's Pearls: The Vision of Felix Klein</em> (Cambridge University Press, 2002), for the Schottky groups and their limit sets.</li>
+<li>Dennis P. Sullivan, "The density at infinity of a discrete group of hyperbolic motions", <em>Publications Mathématiques de l'IHÉS</em> 50 (1979), 171–202, for the critical exponent and the Patterson–Sullivan measure.</li>
+<li>Curtis T. McMullen, "Hausdorff dimension and conformal dynamics II: Geometrically finite rational maps", <em>Commentarii Mathematici Helvetici</em> 75 (2000), 535–593, for the dimension of the Apollonian gasket and of the geometrically finite limit sets.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

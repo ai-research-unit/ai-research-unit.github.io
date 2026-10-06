@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Infinitesimal Dynamics of the Dual Numbers — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-infinitesimal-dynamics-of-the-dual-numbers"><strong>The Infinitesimal Dynamics of the Dual Numbers</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The infinitesimal coordinate of a dual number is not a second dynamical variable; it is the carrier of the <strong>derivative</strong>. For the dual quadratic map $f_c(x+\varepsilon y) = (x^2+\gamma)+\varepsilon(2xy+\delta)$ of <em>The Dual-Number Quadratic Family</em>, the infinitesimal part evolves by the affine map $y \mapsto 2xy+\delta$, so the product of the coefficients along an orbit is the derivative of the corresponding real iterate, and the infinitesimal dynamics <strong>is</strong> the derivative cocycle of the real quadratic map $x \mapsto x^2+\gamma$. This article makes that identification, reads the multiplier and the Lyapunov exponent from it, shows that there is no genuinely infinitesimal Julia set — the Fatou and the Julia sets of the dual map are the vertical cylinders over the real ones — and compares the real cocycle with the complex one, where the multiplier carries a rotation that the dual case cannot see.</p>
+<p>The article spends the tools of <em>The Dual-Number Quadratic Family</em> and of <em>The Fatou Components and the Classification of the Dynamics</em>; the algebra of the dual numbers and their parabolic interpretation are those of <em>Dual-Numbers Algebra</em> and <em>Shears and Parabolic Rotations</em>; the real quadratic dynamics is cited to the real theory of Part III; and the complex derivative cocycle and the multiplier of a hyperbolic component are those of <em>The Fatou Components and the Classification of the Dynamics</em> and <em>The Hyperbolic Geometry of the Split-Complex Julia Sets</em>. No physics is invoked, and every numerical value displayed was recomputed.</p>
+<h2 id="the-derivative-cocycle">The Derivative Cocycle</h2>
+<h3 id="the-fibre-map-is-the-derivative">The Fibre Map Is the Derivative</h3>
+<p><strong>Theorem (the cocycle).</strong> Let $x_n = g_\gamma^n(x_0)$ and $y_{n+1} = 2x_ny_n+\delta$ be the two coordinates of the orbit. Then the homogeneous solution is the derivative of the real iterate,</p>
+<p>$$
+\prod_{k=0}^{n-1} 2x_k = (g_\gamma^n)'(x_0) ,
+$$</p>
+<p>and the general solution is</p>
+<p>$$
+y_n = (g_\gamma^n)'(x_0)\,y_0 + \delta \sum_{k=0}^{n-1} \prod_{j=k+1}^{n-1} 2x_j .
+$$</p>
+<p><strong>Proof.</strong> The chain rule gives $(g^n)'(x_0) = \prod_{k=0}^{n-1} g'(x_k) = \prod_{k=0}^{n-1} 2x_k$. The affine recursion has the homogeneous solution $\prod 2x_k$ and the particular solution obtained by the variation of constants, which is the displayed sum.</p>
+<p><strong>Remark (what the dual direction records).</strong> The infinitesimal coordinate records two things, and only two: the derivative $(g^n)'(x_0)$ of the real iterate through the homogeneous part, and the accumulated affine term $\delta\sum\prod 2x_j$ through the parameter $\delta$. There is no nonlinearity, no rotation and no second dimension: the entire infinitesimal dynamics is the derivative cocycle of a one-dimensional real map.</p>
+<p><strong>Definition.</strong> The <strong>multiplier</strong> of a periodic orbit $x_0, \ldots, x_{p-1}$ of period $p$ of $g_\gamma$ is</p>
+<p>$$
+\lambda = (g_\gamma^p)'(x_0) = \prod_{k=0}^{p-1} 2x_k ,
+$$</p>
+<p>and the <strong>Lyapunov exponent</strong> of an orbit with respect to an invariant measure $\mu$ is</p>
+<p>$$
+\chi = \lim_{n \to \infty} \frac{1}{n}\log|(g_\gamma^n)'(x_0)| = \frac{1}{p}\log|\lambda| \ \text{ for a periodic orbit} = \int \log|2x|\,d\mu \ \text{ in general} .
+$$</p>
+<p><strong>Theorem (what the infinitesimal dynamics reports).</strong> On a periodic orbit of period $p$ the infinitesimal coordinate is multiplied by the multiplier in one period,</p>
+<p>$$
+y_{n+p} = \lambda\,y_n + (\text{an affine term depending on } \delta) ,
+$$</p>
+<p>so the cycle is attracting for $|\lambda| < 1$, parabolic for $|\lambda| = 1$ and repelling for $|\lambda| > 1$, exactly as in the real dynamics; and along a typical orbit the infinitesimal coordinate grows at the exponential rate $\chi$, with the growth dominated by the Lyapunov exponent.</p>
+<p><strong>Proof.</strong> Composing the fibre map over one period multiplies the homogeneous part by $\prod_{k=0}^{p-1} 2x_k = \lambda$; the affine term is the finite sum over one period. The classification by $|\lambda|$ is the real multiplier classification, and the exponential rate is the definition of $\chi$ by the ergodic theorem.</p>
+<p><strong>Example.</strong> For $\gamma = 0$ and the fixed point $x = 1$ the multiplier is $\lambda = 2$, so the fixed point is repelling and the infinitesimal coordinate grows like $2^n$; for the fixed point $x = 0$ the multiplier is $\lambda = 0$, superattracting, and the infinitesimal coordinate is constant after the first step, as in the computation of the previous article; for $\gamma = -1$ the two-cycle $\{0,-1\}$ has multiplier $0\cdot(-2) = 0$, superattracting, and $y_n$ is bounded. The values were recomputed.</p>
+<h2 id="the-failure-of-an-infinitesimal-julia-set">The Failure of an Infinitesimal Julia Set</h2>
+<p><strong>Definition.</strong> The <strong>Fatou set</strong> of $f_c$ is the set of points of $\mathbb{D}'$ at which the family of iterates is equicontinuous on some neighbourhood, the plane being given the Euclidean metric and its one-point compactification, and the <strong>Julia set</strong> is the complement. The map $f_c$ being triangular, the projection $\pi(z) = x$ carries the dynamics to the real quadratic map $g_\gamma$.</p>
+<p><strong>Theorem (the collapse of the two sets).</strong> For every $c = \gamma+\varepsilon\delta$,</p>
+<p>$$
+F(f_c) = \pi^{-1}\bigl(F(g_\gamma)\bigr), \qquad J(f_c) = \pi^{-1}\bigl(J(g_\gamma)\bigr) = J(g_\gamma)\times\mathbb{R}\varepsilon ,
+$$</p>
+<p>so the Fatou and the Julia sets of the dual map are the vertical cylinders over the real Fatou and Julia sets: the dual Julia set is a union of vertical lines, and it has no structure in the infinitesimal direction beyond the factor $\mathbb{R}$.</p>
+<p><strong>Proof.</strong> If $x \in J(g_\gamma)$ then the iterates are not equicontinuous near $x$ already in the real direction, so no point of $x+\mathbb{R}\varepsilon$ is in the Fatou set. If $x \in F(g_\gamma)$ then on a neighbourhood the real orbit is either attracted to an attracting cycle, where $(g^n)'$ is bounded and tends to $0$ on the cycle, or it escapes, where the whole iterates collapse to the point at infinity of the compactified dual plane; in both cases the affine fibre family $\{y \mapsto (g^n)'(x)y+\ldots\}$ is equicontinuous, jointly with the real family, on a neighbourhood of the fibre. Hence the Fatou set is the full preimage of the real one, and the complement is the preimage of the real Julia set.</p>
+<p><strong>Corollary (the failure of a second dimension).</strong> The dual Julia set is fractal exactly to the extent that the real Julia set is: its Hausdorff dimension in the Euclidean metric is $\dim_H J(g_\gamma)+1$ when $J(g_\gamma)$ is nonempty, the addend one being the non-fractal line factor of the infinitesimal direction; and read infinitesimally, with $\varepsilon$ a nilpotent and the set the first-order thickening of $J(g_\gamma)$, the dimension is that of $J(g_\gamma)$. There is no "infinitesimal Julia set" in the sense of a second fractal dimension generated by the dual coordinate; the only fractal data are the real ones.</p>
+<p><strong>Example.</strong> For $\gamma = -2$ the real Julia set is the interval $[-2,2]$, so the dual Julia set is the strip $[-2,2]\times\mathbb{R}\varepsilon$ of Hausdorff dimension $2$, and for $\gamma = 0$ the real Julia set is the two points $\{\pm1\}$, so the dual Julia set is the two vertical lines $x = \pm1$ of dimension $1$. In both cases the fractal content is the real one; the dual coordinate contributes the straight factor.</p>
+<p><strong>Remark (the comparison with the complex derivative cocycle).</strong> In the complex quadratic family the derivative cocycle is the sequence of complex numbers $f_c'(z_n) = 2z_n$, whose product over a cycle is the complex multiplier $\lambda = (f_c^p)'(z_0)$, a rotation together with a scale. The dual cocycle is the real sequence $2x_n$, and its product is the real multiplier: the dual numbers see the modulus of the multiplier and not its argument. This is why the dual theory knows nothing of the rotational structure of <em>The Fatou Components and the Classification of the Dynamics</em>: the hyperbolic components, their multipliers and the rotation numbers are invisible without the imaginary direction, and the dual analogue of the multiplier is only the real contraction rate. The infinitesimal dynamics of the shears and the parabolic rotations, where the dual numbers are the linearisation of a rotation, is the subject of <em>Shears and Parabolic Rotations</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The infinitesimal coordinate of the dual quadratic map evolves by $y \mapsto 2xy+\delta$, and the homogeneous part of its $n$-th iterate is the derivative $(g_\gamma^n)'(x_0)$ of the real iterate: the infinitesimal dynamics <strong>is</strong> the derivative cocycle. Within one period it multiplies the coordinate by the real multiplier $\lambda = (g_\gamma^p)'(x_0)$, so the attracting, parabolic and repelling characters of the real cycles are read on the dual coordinate, and along a typical orbit the growth rate is the Lyapunov exponent $\chi = \int\log|2x|\,d\mu$. The Fatou and Julia sets of the dual map are the vertical cylinders over the real ones, $F(f_c) = \pi^{-1}(F(g_\gamma))$ and $J(f_c) = J(g_\gamma)\times\mathbb{R}\varepsilon$: the dual Julia set is a union of vertical lines, of Hausdorff dimension $\dim_H J(g_\gamma)+1$ in the Euclidean metric and of dimension $\dim_H J(g_\gamma)$ in the infinitesimal reading. There is therefore no genuinely infinitesimal Julia set and no second fractal dimension from the dual coordinate. The complex derivative cocycle, whose multiplier carries a rotation that the real cocycle cannot see, is that of <em>The Fatou Components and the Classification of the Dynamics</em>, and the parabolic and shear interpretation of the dual numbers is that of <em>Shears and Parabolic Rotations</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x_n = g_\gamma^n(x_0)$</td>
+<td>Real part of the orbit, the base dynamics</td>
+</tr>
+<tr>
+<td>$y_{n+1} = 2x_ny_n+\delta$</td>
+<td>Infinitesimal coordinate, the fibre recursion</td>
+</tr>
+<tr>
+<td>$\prod_{k=0}^{n-1}2x_k = (g_\gamma^n)'(x_0)$</td>
+<td>The derivative cocycle</td>
+</tr>
+<tr>
+<td>$\lambda = (g_\gamma^p)'(x_0)$</td>
+<td>Multiplier of a periodic orbit (real)</td>
+</tr>
+<tr>
+<td>$\chi = \int\log\lvert 2x\rvert\,d\mu$</td>
+<td>Lyapunov exponent</td>
+</tr>
+<tr>
+<td>$F(f_c) = \pi^{-1}(F(g_\gamma))$</td>
+<td>Fatou set, the vertical cylinder over the real one</td>
+</tr>
+<tr>
+<td>$J(f_c) = J(g_\gamma)\times\mathbb{R}\varepsilon$</td>
+<td>Julia set, the vertical cylinder over the real one</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\varepsilon$</td>
+<td>The infinitesimal direction, a non-fractal line factor</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. M. Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the dual numbers and the infinitesimal interpretation of $\varepsilon$.</li>
+<li>Robert L. Devaney, <em>An Introduction to Chaotic Dynamical Systems</em>, 2nd edition (Addison-Wesley, 1989), for the derivative cocycle, the multiplier and the Lyapunov exponent of the real quadratic family.</li>
+<li>Ricardo Mañé, <em>Ergodic Theory and Differentiable Dynamics</em> (Springer, 1987), for the multiplicative ergodic theorem and the Lyapunov exponents of a cocycle.</li>
+<li>John Milnor, <em>Dynamics in One Complex Variable</em>, 3rd edition (Princeton University Press, 2006), for the complex multiplier and its role in the hyperbolic components.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

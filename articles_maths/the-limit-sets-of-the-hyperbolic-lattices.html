@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Limit Sets of the Hyperbolic Lattices — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-limit-sets-of-the-hyperbolic-lattices"><strong>The Limit Sets of the Hyperbolic Lattices</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The units of the split-quaternion algebra act on the three-dimensional vector subspace $V$ by the adjoint action, preserving the indefinite form $N$ of signature $(2,1)$ of <em>Split-Quaternion Rotations and the Lorentz Group</em>; the norm-one timelike locus is a sheet of a <strong>hyperboloid</strong> in $V$, and that sheet is the <strong>hyperbolic plane</strong>, with the metric $-B$ of constant curvature $-1$ and the isometry group $\operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$, by <em>Split-Quaternions and Hyperbolic Geometry</em>. A discrete subgroup $\Gamma$ of the isometry group then acts on the sheet and on its boundary, the <strong>isotropic lines</strong> of the form, which form the <strong>circle at infinity</strong>. The <strong>limit set</strong> $\Lambda(\Gamma)$ is the set of the accumulation points of the $\Gamma$-orbit of a point, and it is a fractal on that circle: the whole circle for a lattice, a Cantor set of dimension strictly between $0$ and $1$ for a convex-cocompact group of the second kind. Its Hausdorff dimension is the <strong>critical exponent</strong> of the group, the Patterson–Sullivan exponent, and its measure is the Patterson–Sullivan measure; these are the objects of the article.</p>
+<p>The article is careful about one thing from the outset. The hyperboloid lives in the three-dimensional space $V$, but the hyperbolic space it models is <strong>two-dimensional</strong>, and its boundary is the <strong>circle</strong> at infinity and not a two-sphere. The limit sets on the two-sphere, and the Kleinian groups that produce them, require the faithful linear action lost by the split-quaternion adjoint map, and they belong to the definite quaternion and to the biquaternion algebras, where the boundary of the hyperbolic three-space is a sphere; the comparison is drawn at the end and the difference is stated. The Apollonian gasket, which is the standard example on the sphere, is the Kleinian sibling of the Fuchsian objects of this article, and is cited rather than reproduced.</p>
+<p>The model, the hyperboloid, the sheet and the boundary are from <em>Split-Quaternions and Hyperbolic Geometry</em>; the units, the adjoint action and the Lorentz group are from <em>Split-Quaternion Rotations and the Lorentz Group</em>; the group theory of the discrete groups, the limit set and the critical exponent are from <em>Kleinian and Fuchsian Groups</em>; the hyperbolic geometry of Part IV is <em>Hyperbolic Geometry</em>; the dimension of the limit set of a hyperbolic group is <em>The Dimension of the Boundary of a Hyperbolic Group</em>; the Apollonian gasket and the inversions are from <em>Möbius and Lie Sphere Geometry</em>; and the dimension itself is <em>Fractal Geometry</em>'s. No physics is invoked.</p>
+<p>Throughout, $V=\operatorname{span}\{e_1,e_2,e_3\}$, $N$ is the form of signature $(2,1)$ on $V$, $B$ its polar form, $\mathbb{H}^{+}$ the timelike sheet $\{v\in V: N(v)=1\}$ of <em>Split-Quaternions and Hyperbolic Geometry</em>, and $\partial\mathbb{H}^{+}$ is the boundary, the set of isotropic directions. The group is $\Gamma\subset\operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$.</p>
+<h2 id="the-hyperboloid-and-the-boundary">The Hyperboloid and the Boundary</h2>
+<p><strong>Theorem (the model and the boundary).</strong> The norm-one timelike sheet $\mathbb{H}^{+}=\{v\in V:N(v)=1\}$ with the metric $-B$ is a complete simply connected Riemannian surface of constant curvature $-1$, that is the hyperbolic plane; the isometry group is $\operatorname{PSL}_2(\mathbb{R})$, acting by the adjoint action; and the boundary is the set of the isotropic lines of $N$, which is the circle at infinity.</p>
+<p><em>Proof.</em> This is the content of <em>Split-Quaternions and Hyperbolic Geometry</em>: the sheet is the homogeneous space $\operatorname{PSL}_2(\mathbb{R})/SO(2)$, the metric $-B$ restricted to the tangent planes is positive definite and of constant curvature $-1$, the geodesics are the central sections of the sheet by the planes through the origin of $V$, and the ideal points are the isotropic lines, that is the points of the null cone modulo the positive scalars, which form a circle. The statements are quoted and not reproved. $\square$</p>
+<p><strong>Remark (the word "hyperbolic three-space").</strong> The menu says that the model is the hyperbolic three-space, where the unit sphere is a hyperboloid. The correct reading, and the one used here, is that the hyperboloid is a <strong>surface in the three-dimensional space $V$</strong> and the hyperbolic space it carries is two-dimensional. Its boundary is therefore a <strong>circle</strong>, and the "sphere at infinity" of the menu is the circle at infinity. The genuinely three-dimensional hyperbolic space, with the two-sphere at infinity and the Kleinian groups acting on it, is not realised by the split-quaternion adjoint action: the adjoint map $\operatorname{PSL}_2(\mathbb{R})\to\operatorname{SO}^{+}(2,1)$ is the isometry group of a surface, and a group of isometries of a three-dimensional hyperbolic space needs the four-dimensional quaternion unit group or the biquaternion group of the sibling categories. The article states the difference and does not confuse the two.</p>
+<h2 id="the-discrete-groups-and-their-limit-sets">The Discrete Groups and Their Limit Sets</h2>
+<p><strong>Definition.</strong> Let $\Gamma\subset\operatorname{PSL}_2(\mathbb{R})$ be discrete and let $\xi\in\mathbb{H}^{+}$. The <strong>limit set</strong> is</p>
+<p>$$
+\Lambda(\Gamma)=\overline{\Gamma\xi}\cap\partial\mathbb{H}^{+} ,
+$$</p>
+<p>the set of the accumulation points on the circle at infinity of the orbit; the complement $\Omega(\Gamma)=\partial\mathbb{H}^{+}\setminus\Lambda(\Gamma)$ is the <strong>discontinuity domain</strong>, on which $\Gamma$ acts properly discontinuously.</p>
+<p><strong>Proposition (the limit set is independent of the point).</strong> For a nonelementary discrete group the set $\Lambda(\Gamma)$ does not depend on the choice of $\xi$, it is the smallest nonempty closed $\Gamma$-invariant subset of the circle, and the quotient $(\mathbb{H}^{+}\cup\Omega)/\Gamma$ is a hyperbolic surface.</p>
+<p><em>Proof.</em> If $\xi,\eta\in\mathbb{H}^{+}$ then the hyperbolic distance is $\Gamma$-invariant and the orbit of $\eta$ stays within a bounded distance of the orbit of $\xi$ along the geodesic joining them, so the two sets of accumulation points agree; invariance and minimality are standard, and the quotient statement is the definition of the discontinuity domain. The propositions are <em>Kleinian and Fuchsian Groups</em>'s and are quoted. $\square$</p>
+<p><strong>Remark (the elementary case).</strong> If $\Gamma$ is elementary — cyclic, or generated by a hyperbolic element and an elliptic one — the limit set has at most two points and is not a fractal; the definition still applies, and the article restricts the fractal statements to the nonelementary case.</p>
+<h2 id="the-limit-set-as-a-fractal">The Limit Set as a Fractal</h2>
+<p><strong>Theorem (two regimes).</strong> Let $\Gamma$ be a nonelementary discrete subgroup of $\operatorname{PSL}_2(\mathbb{R})$ acting on the hyperbolic plane.</p>
+<ol>
+<li>If $\Gamma$ is of the <strong>first kind</strong>, that is if $\Lambda(\Gamma)=\partial\mathbb{H}^{+}$, the limit set is the whole circle and its dimension is $1$.</li>
+<li>If $\Gamma$ is of the <strong>second kind</strong>, the limit set is a perfect, totally disconnected, uncountable compact subset of the circle — a <strong>Cantor set</strong> — and its dimension lies strictly between $0$ and $1$; the discontinuity domain is nonempty, and the quotient is a hyperbolic surface with boundary.</li>
+</ol>
+<p><em>Proof.</em> The dichotomy is the standard one of the Fuchsian groups: a nonelementary discrete group of the first kind acts ergodically on the circle and its limit set is the whole circle; a group of the second kind has a nonempty discontinuity domain, and its limit set, being closed, invariant, perfect and not the whole circle, is a Cantor set. The dimension statements are the Patterson–Sullivan theory of the next section; the group theory is <em>Kleinian and Fuchsian Groups</em>'s. $\square$</p>
+<p><strong>Remark (the lattices).</strong> A <strong>lattice</strong> is a discrete subgroup of finite covolume, and a lattice of $\operatorname{PSL}_2(\mathbb{R})$ is of the first kind: its limit set is the whole circle. The limit set of a lattice is therefore <strong>not a fractal</strong>, and the fractal limit sets of the article are those of the convex-cocompact groups of the second kind, the Schottky groups and their relatives. This is the honest limit of the comparison with the Apollonian gasket, which is a fractal and a Kleinian and not a Fuchsian object.</p>
+<h2 id="the-dimension-and-the-measure">The Dimension and the Measure</h2>
+<p><strong>Definition.</strong> The <strong>Poincaré series</strong> of $\Gamma$ is $\sum_{\gamma\in\Gamma}e^{-s\,d(\xi,\gamma\xi)}$, and its abscissa of convergence $\delta(\Gamma)$ is the <strong>critical exponent</strong>. The <strong>Patterson–Sullivan measure</strong> is the $\Gamma$-invariant conformal measure on $\Lambda(\Gamma)$ of dimension $\delta$ whose existence and uniqueness come from the divergence of the Poincaré series at $s=\delta$.</p>
+<p><strong>Theorem (the dimension is the critical exponent, quoted).</strong> For a nonelementary discrete group $\Gamma$ the Hausdorff dimension of the limit set is the critical exponent,</p>
+<p>$$
+\dim_H\Lambda(\Gamma)=\delta(\Gamma) ,
+$$</p>
+<p>the Patterson–Sullivan exponent; for a convex-cocompact group $\delta\in(0,1)$ and the limit set has Lebesgue measure zero on the circle, while for a lattice of finite covolume $\delta=1$ and the limit set is the whole circle with the Patterson–Sullivan measure proportional to the circle measure. The dimension of the limit set of a hyperbolic group in the general theory is the subject of <em>The Dimension of the Boundary of a Hyperbolic Group</em>, and the dimension itself is <em>Fractal Geometry</em>'s.</p>
+<p><em>Proof (quoted).</em> The equality of the Hausdorff dimension and the critical exponent is the Patterson–Sullivan theorem, and the dichotomy of the measure is the standard consequence of the divergence of the Poincaré series at the exponent; both belong to <em>Kleinian and Fuchsian Groups</em> and are cited rather than reproved. $\square$</p>
+<p><strong>Remark (the measure).</strong> For a group of the second kind the limit set is a Cantor set of vanishing Lebesgue measure, and the Patterson–Sullivan measure is supported on it, is finite, and is the natural self-similar-like measure of dimension $\delta$; for a lattice the limit set is the circle and the measure is the circle measure. <strong>The dimension and the measure are the two invariants of the limit set</strong>, and the pair of the dimension and the measure is the content of the article.</p>
+<h2 id="the-apollonian-gasket-and-the-comparison">The Apollonian Gasket and the Comparison</h2>
+<p><strong>Remark (the Apollonian gasket is one dimension higher).</strong> The <strong>Apollonian gasket</strong> is the residual set of the iterative removal of the interstices between three mutually tangent circles of the plane; it is the limit set of the <strong>Kleinian group</strong> generated by the inversions in the circles, acting on the boundary sphere of the hyperbolic three-space, and its dimension is the critical exponent of that group. The Apollonian gasket is thus the Kleinian sibling of the limit sets of this article, and not their instance: the split-quaternion model gives the hyperbolic <strong>plane</strong> and the <strong>circle</strong> at infinity, its limit sets are the Fuchsian ones, and the gasket lives on the <strong>sphere</strong> at infinity of the hyperbolic three-space. The construction, the inversions and the group are <em>Möbius and Lie Sphere Geometry</em>'s and <em>Hyperbolic Geometry</em>'s, and the comparison of the two kinds of limit sets is the comparison of the Fuchsian groups of this article with the Kleinian groups of <em>Kleinian and Fuchsian Groups</em>. <strong>The two are compared and not identified</strong>, and the article records the difference.</p>
+<p><strong>Remark (the role of the Lorentz group).</strong> The isometry group $\operatorname{SO}^{+}(2,1)$ of the Lorentz form $N$ is the group that acts on the sheet and on the circle at infinity, and the limit set is invariant under it in the sense that it is a limit set of the subgroup: the conjugation of $\Gamma$ by an element of $\operatorname{SO}^{+}(2,1)$ carries the limit set to the limit set of the conjugate group, and the critical exponent is unchanged because the hyperbolic distance is invariant. The Lorentz group of <em>Split-Quaternion Rotations and the Lorentz Group</em> is therefore the ambient group of the construction, and the discrete subgroups are its lattices and their convex-cocompact relatives. The hyperbolic three-space of the neighbouring quaternion and biquaternion categories has the larger group, and the split-quaternion one has this group.</p>
+<h2 id="worked-example">Worked Example</h2>
+<p><strong>Example (two groups).</strong></p>
+<p><strong>(a) A lattice.</strong> The modular group $\operatorname{PSL}_2(\mathbb{Z})$ is a lattice of $\operatorname{PSL}_2(\mathbb{R})$; it is of the first kind, its limit set is the whole circle at infinity, $\delta=1$, and the Patterson–Sullivan measure is the circle measure. The split-quaternion sheet with this group is the modular hyperbolic surface, and the limit set is not a fractal: the example fixes the boundary of the fractal regime.</p>
+<p><strong>(b) A Schottky group.</strong> Choose four disjoint closed discs in the circle's interior and the two Möbius transformations pairing the boundary circles of the first disc with the second and of the third with the fourth; the group they generate is free, discrete, convex-cocompact of the second kind, and its limit set is a Cantor set on the circle, with $\delta(\Gamma)\in(0,1)$ and vanishing Lebesgue measure. The limit set is the fractal of the article, the Cantor set is constructed by the same pairing as the Schottky groups of <em>Kleinian and Fuchsian Groups</em>, and the dimension is the Patterson–Sullivan exponent; the specific numerical value of $\delta$ is <strong>not</strong> asserted here, since it is not recomputed in this pass.</p>
+<h2 id="summary">Summary</h2>
+<p>The split-quaternion units act on the hyperboloid of the three-dimensional vector subspace $V$ and realise the hyperbolic <strong>plane</strong> with the circle at infinity, the isometry group being $\operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$. The limit set of a discrete group is the set of the accumulation points on the circle, independent of the base point and the smallest nonempty closed invariant subset. For a lattice of finite covolume the limit set is the whole circle, of dimension $1$, with the circle measure; for a convex-cocompact group of the second kind it is a Cantor set of dimension the critical exponent $\delta\in(0,1)$ and of vanishing Lebesgue measure, carrying the Patterson–Sullivan measure. The dimension is the Patterson–Sullivan exponent, quoted from <em>Kleinian and Fuchsian Groups</em> and comparable to the general theory of <em>The Dimension of the Boundary of a Hyperbolic Group</em>; the dimension itself is <em>Fractal Geometry</em>'s. The Apollonian gasket is the Kleinian sibling one dimension higher, on the sphere at infinity of the hyperbolic three-space, and is compared with these Fuchsian limit sets and not identified with them; the hyperbolic three-space with its sphere belongs to the quaternion and biquaternion categories. The model is <em>Split-Quaternions and Hyperbolic Geometry</em>'s and the group is <em>Split-Quaternion Rotations and the Lorentz Group</em>'s.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V=\operatorname{span}\{e_1,e_2,e_3\}$</td>
+<td>The three-dimensional vector subspace</td>
+</tr>
+<tr>
+<td>$N$, $B$</td>
+<td>The form of signature $(2,1)$ and its polar form</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^{+}=\{v\in V:N(v)=1\}$</td>
+<td>The timelike sheet, the hyperbolic plane</td>
+</tr>
+<tr>
+<td>$\partial\mathbb{H}^{+}$</td>
+<td>The circle at infinity, the isotropic directions</td>
+</tr>
+<tr>
+<td>$\Gamma\subset\operatorname{PSL}_2(\mathbb{R})$</td>
+<td>The discrete group, a Fuchsian group</td>
+</tr>
+<tr>
+<td>$\Lambda(\Gamma)$, $\Omega(\Gamma)$</td>
+<td>The limit set; the discontinuity domain</td>
+</tr>
+<tr>
+<td>$\delta(\Gamma)$</td>
+<td>The critical exponent; $\dim_H\Lambda=\delta$</td>
+</tr>
+<tr>
+<td>Patterson–Sullivan measure</td>
+<td>The conformal measure on $\Lambda$ of dimension $\delta$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>S. J. Patterson, "The limit set of a Fuchsian group", <em>Acta Mathematica</em> 136 (1976), 241–273. The critical exponent and the conformal measure.</li>
+<li>Dennis Sullivan, "The density at infinity of a discrete group of hyperbolic motions", <em>Publications Mathématiques de l'IHÉS</em> 50 (1979), 171–202. The Patterson–Sullivan theory and the dimension, cited to <em>Kleinian and Fuchsian Groups</em>.</li>
+<li>David Mumford, Caroline Series and David Wright, <em>Indra's Pearls: The Vision of Felix Klein</em> (Cambridge, 2002). The limit sets of the Schottky groups and the Kleinian constructions.</li>
+<li>Alan F. Beardon, <em>The Geometry of Discrete Groups</em> (Springer, 1983). The Fuchsian groups, the limit set and the dichotomy of the kinds.</li>
+<li>Kenneth Falconer, <em>Fractal Geometry: Mathematical Foundations and Applications</em>, 3rd ed. (Wiley, 2014). The Hausdorff dimension and its computation, cited to <em>Fractal Geometry</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

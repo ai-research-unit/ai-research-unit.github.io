@@ -58,7 +58,7 @@ Z = \mathrm{Tr}\big(e^{-\beta \tilde H}\big)
 $$</p>
 <p>is the central object of equilibrium statistical mechanics. It normalizes the thermal state, generates the free energy, and encodes the spectrum of the Hamiltonian. The question this article addresses is narrow and concrete: does $Z$ have a <strong>biquaternion reading</strong>, and does the split of the biquaternion algebra into the material and informational sectors force any modification of it?</p>
 <p>The answer has two parts, and they should be kept apart from the outset.</p>
-<p>The first part is that, for a <strong>Hermitian</strong> Hamiltonian — an element $\tilde H$ of the informational sector $\mathbb{M}_+$ — the partition function is exactly the ordinary one, and the algebra contributes a <em>reading</em> rather than a new object. The thermal operator $e^{-\beta\tilde H}$ is itself an element of $\mathbb{M}_+$; the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ identifies the trace with twice the scalar part; and $Z$ is therefore that scalar part, doubled. What the trace discards is the <strong>imaginary vector part</strong> of $e^{-\beta\tilde H}$. The material sector $\mathbb{M}_-$ does not appear in the thermal operator at all in this case; it appears in the <strong>imaginary-time direction</strong> along which $\beta$ is measured. So the honest finding is negative in the sense the subject demands: the algebra does not produce a second, rival partition function, and a "biquaternionic partition function" distinct from $Z$ is not needed.</p>
+<p>The first part is that, for a <strong>Hermitian</strong> Hamiltonian — an element $\tilde H$ of the informational sector $\mathbb{M}_+$ — the partition function is exactly the ordinary one, and the algebra contributes a <em>reading</em> rather than a new object. The thermal operator $e^{-\beta\tilde H}$ is itself an element of $\mathbb{M}_+$; the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ identifies the trace with twice the scalar part; and $Z$ is therefore that scalar part, doubled. What the trace discards is the <strong>imaginary vector part</strong> of $e^{-\beta\tilde H}$. The material sector $\mathbb{M}_-$ does not appear in the thermal operator at all in this case; it appears in the <strong>imaginary-time direction</strong> along which $\beta$ is measured. So the honest finding is negative in the sense the subject demands: the algebra does not produce a second, rival partition function, and a "biquaternionic partition function" distinct from $Z$ is not needed.</p>
 <p>The second part is the only place where the sector split changes the answer. If the generator is permitted an $\mathbb{M}_-$ component — that is, if $\tilde H$ is allowed to be <strong>non-Hermitian</strong> — then $Z$ can cease to be real and become complex, and the free energy can acquire an imaginary part. This extension is not forced by the framework, because observables are defined to be Hermitian elements of $\mathbb{M}_+$. It is recorded here as a boundary of the reading, not as a result.</p>
 <p>The article proceeds as follows: the standard partition function and thermal state are recalled; the trace is identified with the scalar part; the thermal operator and the partition function are computed explicitly; the part the trace discards is examined; the place where the material sector genuinely enters — imaginary time — is made precise against the companion article on the KMS condition; and the non-Hermitian extension is computed.</p>
 <p><strong>Conventions.</strong> Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, and scalar imaginary $i$ with $i^2=-1$. The Hermitian subspace $\mathbb{M}_+$ is the fixed-point set of the Hermitian conjugation ${}^{*}$; its elements have real scalar part and imaginary vector part. The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed-point set of the anti-Hermitian conjugation $\flat=-{}^{*}$; its elements have imaginary scalar part and real vector part. The real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation. We work in units with $\hbar=1$, so that $\beta=1/(k_BT)$ coincides with the KMS article's $\beta=\hbar/(k_BT)$; restoring $\hbar$ multiplies $\tilde H$ in the exponent by $1/\hbar$.</p>
@@ -100,7 +100,7 @@ $$</p>
 \mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)=2\,(p_0h_0+\mathbf p\cdot\mathbf h).
 $$</p>
 <p>The derivation of this formula and its role in the Born rule are the subject of the companion article <em>The Born Rule as a Trace Formula</em>; here we only use it. Two features matter for the partition function. The formula is <strong>bilinear and symmetric</strong>, and it is <strong>real</strong> when both factors lie in $\mathbb{M}_+$. Note also that the product $\tilde P\tilde H$ need not itself lie in $\mathbb{M}_+$ — it acquires a real vector part $-\mathbf p\times\mathbf h$ in the quaternion product — and yet its scalar part, and therefore the trace, is still given by the formula above. The trace does not require the product to remain in $\mathbb{M}_+$; it requires only the factors to.</p>
-<p>A remark on the alternative. The trace is not the only natural scalar that can be extracted from an element of $\mathbb{M}_+$; the <strong>biquaternion norm</strong> $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ is another. On $\tilde H=h_0e_0+i\mathbf h$ it gives $N(\tilde H)=h_0^2-|\mathbf h|^2$, of signature $(1,3)$, and it is the form whose future cone defines the state space. A later section shows that the biquaternion norm of the thermal operator is blind to the level splitting and so cannot serve as a partition function. The trace, not the norm, is the scalar that thermodynamics uses; the companion article <em>The Born Rule as a Trace Formula</em> makes the general case for why.</p>
+<p>A remark on the alternative. The trace is not the only natural scalar that can be extracted from an element of $\mathbb{M}_+$; the <strong>biquaternion norm</strong> $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ is another. On $\tilde H=h_0e_0+i\mathbf h$ it gives $N(\tilde H)=h_0^2-|\mathbf h|^2$, of signature $(1,3)$, and it is the form whose future cone defines the state space. A later section shows that the biquaternion norm of the thermal operator is blind to the level splitting and so cannot serve as a partition function. The trace, not the norm, is the scalar that thermodynamics uses; the companion article <em>The Born Rule as a Trace Formula</em> makes the general case for why.</p>
 <h2 id="the-thermal-operator-and-the-partition-function">The Thermal Operator and the Partition Function</h2>
 <p>Let the Hamiltonian be a Hermitian element of the informational sector,</p>
 <p>$$
@@ -262,12 +262,20 @@ $$</p>
 <td>Modular Hamiltonian (in $\mathbb{M}_+$)</td>
 </tr>
 <tr>
-<td>$N(\tilde Q)=\tilde Q\tilde Q^{\natural}$</td>
+<td>$N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
 <td>$\beta=1/(k_BT)$ ($\hbar=1$)</td>
 <td>Inverse temperature</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
+<td>the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

@@ -65,7 +65,7 @@ $$</p>
 <p>Two functionals appear below and must be kept apart, because the whole subject turns on the difference. The <strong>spectral</strong> value $\mathcal{S}(\tilde{\rho})$ is a property of the state and is invariant under reversible rotor flow; it is the fine-grained reference. The <strong>coarse-grained</strong> value $\mathcal{S}(\Phi(\tilde{\rho}))$ is the entropy of the image of the state under a coarse-graining $\Phi$, and it is this second number that increases under a coarse-graining. The second law, in this language, is the statement that a coarse-graining is a contraction of the Bloch ball, so that the entropy of the image is never less than the entropy of the state. The two are reconciled by the fact that the fine-grained value is the <em>minimum</em> over all preparations of the state, and hence the least coarse description the state admits.</p>
 <p>The treatment is <strong>classical</strong>. The entropy here is the Shannon entropy of a coarse description, and the functional is the classical one throughout. The functional $\mathcal{S}$ coincides numerically, on the matrix representative of $\tilde{\rho}$, with the von Neumann entropy of that $2\times 2$ density matrix, and the reader should not be misled by the coincidence: the von Neumann entropy as such, and the entropies attached to POVMs and to entanglement, belong to the informational subcategory of the sibling quantum category, where the companion article <em>Von Neumann Entropy and the Biquaternion Norm</em> develops them, and they are not developed here. Where the quantum reading is used, it is used as a bound, and it is identified as such.</p>
 <p>The probabilities the functional is built from are themselves trace pairings. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm = \mathrm{Tr}(\tilde\Pi_\pm(\hat{\mathbf{r}})\tilde{\rho})$, and the companion article <em>The Born Rule as a Trace Formula — Derivation and Comparison</em> derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, normalised by $\mathrm{Tr}(e_0) = 2$; and the trace formula for a state and an observable is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, normalised by $\mathrm{Tr}(e_0) = 2$; and the trace formula for a state and an observable is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$.</p>
 <h2 id="the-state-space-of-the-informational-sector">The State Space of the Informational Sector</h2>
 <p>A state of the informational sector is an element</p>
 <p>$$
@@ -85,7 +85,7 @@ $$</p>
 $$</p>
 <p>and conversely every idempotent of $\mathbb{M}_+$ has this form. The complementary idempotents are orthogonal and complete, $\tilde\Pi_+\tilde\Pi_- = 0$ and $\tilde\Pi_+ + \tilde\Pi_- = e_0$.</p>
 <h3 id="the-biquaternion-norm-of-a-state">The Biquaternion Norm of a State</h3>
-<p>The biquaternion norm of the algebra is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On the state it evaluates to a scalar multiple of the identity:</p>
+<p>The biquaternion norm of the algebra is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On the state it evaluates to a scalar multiple of the identity:</p>
 <p>$$
 N(\tilde{\rho}) = \tilde{\rho}\tilde{\rho}^{\natural} = \left(\tfrac{1}{2}\right)^2 + \left(\tfrac{i r_1}{2}\right)^2 + \left(\tfrac{i r_2}{2}\right)^2 + \left(\tfrac{i r_3}{2}\right)^2 = \tfrac{1}{4}\left(1 - |\mathbf{r}|^2\right)e_0 .
 $$</p>
@@ -353,7 +353,7 @@ $$</p>
 <td>Trace</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
@@ -423,6 +423,14 @@ $$</p>
 <tr>
 <td>$H(w) = -\sum_a w_a\log w_a$</td>
 <td>Preparation entropy</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
+<td>the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

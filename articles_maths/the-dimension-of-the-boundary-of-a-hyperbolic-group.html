@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dimension of the Boundary of a Hyperbolic Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-dimension-of-the-boundary-of-a-hyperbolic-group"><strong>The Dimension of the Boundary of a Hyperbolic Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A finitely generated group that is <strong>hyperbolic</strong> in the sense of Gromov carries a boundary at infinity: the <strong>Gromov boundary</strong> $\partial G$, the set of the geodesic rays of the Cayley graph up to the relation of staying at finite distance, with the topology that makes the union $G \cup \partial G$ compact. The boundary is a fractal in the sense of <em>Fractal Geometry</em>: it is a compact metric space with a distance, the <strong>visual metric</strong>, which depends on a parameter, and its Hausdorff dimension measures the way the group grows. For the free group on $r$ generators the boundary is a Cantor set, for a surface group it is a circle, and for a Kleinian group it is the limit set; in every case the dimension is governed by a single number, the <strong>critical exponent</strong> $\delta$ of the Poincaré series of the group.</p>
+<p>The theory is the meeting point of the category with the group theory of Part II. The group, its hyperbolicity, its boundary as a topological space and the quasi-isometries are the subject of <em>Hyperbolic Groups</em> and <em>Geometric Group Theory</em>; the <strong>Patterson–Sullivan measure</strong> on the boundary and the dynamics of the geodesic flow are the subject of <em>Analysis on Groups</em> and <em>Ergodic Theory of Group Actions</em>; the measure-theoretic construction is therefore cited and not repeated. What belongs here is the <strong>dimension</strong>: the visual metric, the critical exponent, the theorem that the two are equal in the cocompact case, the computation for the free group and the surface group, the behaviour of the dimension under quasi-isometry, and the conformal dimension, which is the genuine quasi-isometry invariant of the boundary.</p>
+<p>The article defines the boundary and the visual metric, states the dimension formula $\dim_H(\partial G, d_\varepsilon) = \delta/\varepsilon$ and its normalisation $\dim_H \partial G = \delta$, defines the critical exponent by the Poincaré series and proves it finite and equal to the exponential growth rate, computes $\delta = \log(2r-1)$ for the free group and the boundary dimension in two normalisations, states the Patterson–Sullivan measure as an Ahlfors-regular measure of exponent $\delta$ and the equality of the dimensions in the cocompact case, treats the surface group and the Kleinian groups, and closes with the quasi-isometry invariance, the conformal dimension of Pansu and Cannon's conjecture. The end spaces of <em>Fractal Trees and Dendrites</em> are the same objects seen topologically, and the dimension used throughout is that of the lead article <em>Fractal Geometry</em>.</p>
+<p>The article assumes <em>Hyperbolic Groups</em> and <em>Geometric Group Theory</em> for the hyperbolicity, the Cayley graph, the Gromov boundary, the visual metric, the geodesic rays and the quasi-isometries; <em>Metric, Uniform and Complete Spaces</em> for the distance, the diameter and completeness; <em>Metric Geometry</em> for the four-point condition and the real trees; and <em>Fractal Geometry</em> for the covering numbers, the Hausdorff content and the dimension. The Patterson–Sullivan measure, its construction by the Patterson–Sullivan series and its ergodic properties are <em>Analysis on Groups</em>' and <em>Ergodic Theory of Group Actions</em>', and only its dimension is used here. No physics is invoked.</p>
+<h2 id="the-gromov-boundary-and-the-visual-metric">The Gromov Boundary and the Visual Metric</h2>
+<p><strong>Definition.</strong> Let $G$ be a finitely generated group with the word metric $|\cdot|$ of <em>Hyperbolic Groups</em>, and let $X$ be the Cayley graph, a proper geodesic hyperbolic space. Two geodesic rays are <strong>equivalent</strong> when they stay at bounded distance, and the <strong>Gromov boundary</strong> $\partial G$ is the set of the equivalence classes, topologised by the neighbourhood base of the sets of rays that stay close to a given ray on a long initial segment. The union $G \cup \partial G$ is compact, and $\partial G$ is a compact metrisable space, nonempty when $G$ is non-elementary; the boundary is a quasi-isometry invariant of $G$.</p>
+<p><strong>Definition (the visual metric).</strong> Fix a base point $o \in X$. For $\xi, \eta \in \partial X$ let $(\xi|\eta) \in (0,\infty]$ be the <strong>Gromov product</strong>, the length of the common initial segment of two rays to $\xi$ and $\eta$; for $\varepsilon > 0$ the <strong>visual metric</strong> is</p>
+<p>$$
+d_\varepsilon(\xi,\eta) = e^{-\varepsilon (\xi|\eta)} .
+$$</p>
+<p>The distance $d_\varepsilon$ is compatible with the topology, and there is $\varepsilon_0 > 0$, depending on the hyperbolicity constant, such that $d_\varepsilon$ is a metric for $0 < \varepsilon \leq \varepsilon_0$; when $X$ is a tree the space is $0$-hyperbolic and $d_\varepsilon$ is an ultrametric for every $\varepsilon > 0$. The metrics $d_\varepsilon$ for different $\varepsilon$ are Hölder equivalent and are the members of the <strong>conformal gauge</strong> of the boundary.</p>
+<p><strong>Example (the standard boundaries).</strong> The boundary of the free group $F_r$ on $r \geq 2$ generators is a Cantor set, being the end space of the $2r$-regular tree, which is computed in <em>Fractal Trees and Dendrites</em>. The boundary of a surface group is a circle. The boundary of a cocompact Kleinian group acting on hyperbolic three-space is the sphere $S^2$, and the limit set of a general Kleinian group is a closed subset of the sphere. The boundary of a hyperbolic group can also be a Sierpiński carpet or a Menger curve, by the theorem of Kapovich and Kleiner; the boundary with its quasi-Möbius structure, and not its topology alone, is what determines the group up to quasi-isometry.</p>
+<h2 id="the-critical-exponent">The Critical Exponent</h2>
+<p><strong>Definition.</strong> The <strong>Poincaré series</strong> of $G$ at $s \in \mathbb{R}$ is</p>
+<p>$$
+\sum_{g \in G} e^{-s\,|g|} ,
+$$</p>
+<p>and its <strong>critical exponent</strong> is</p>
+<p>$$
+\delta = \inf\left\{s > 0 : \sum_{g \in G} e^{-s|g|} < \infty\right\} .
+$$</p>
+<p><strong>Theorem (finiteness and the growth rate).</strong> Let $G$ be a non-elementary hyperbolic group. Then $0 < \delta < \infty$, and $\delta$ equals the <strong>exponential growth rate</strong> of the group:</p>
+<p>$$
+\delta = \lim_{n \to \infty} \frac{1}{n}\log \#\{g \in G : |g| \leq n\} .
+$$</p>
+<p>In particular $\delta$ is a quasi-isometry invariant of $G$, since the growth rate of the balls is.</p>
+<p><strong>Proof sketch.</strong> Writing the series by the spheres $\#\{|g| = n\}$, the comparison of a series with the exponential growth of its coefficients gives that the abscissa of convergence is exactly the growth rate, provided the coefficients grow exponentially; for a non-elementary hyperbolic group they do, and the growth rate is finite and positive because the group has at least two generators of infinite order and at most exponential growth. A quasi-isometry distorts the balls by bounded multiplicative and additive constants, so the growth rate is unchanged; this is the argument of <em>Geometric Group Theory</em>.</p>
+<p><strong>Example (the free group).</strong> For $F_r$ the number of reduced words of length $n \geq 1$ is</p>
+<p>$$
+\#\{g : |g| = n\} = 2r\,(2r-1)^{\,n-1} ,
+$$</p>
+<p>so the series is dominated by the ratio $2r-1$ and</p>
+<p>$$
+\delta(F_r) = \log(2r-1) .
+$$</p>
+<p>For $r = 2$ this is $\log 3 = 1.0986\ldots$, for $r = 3$ it is $\log 5 = 1.6094\ldots$, and the value grows logarithmically in the rank.</p>
+<p><strong>Example (the surface group).</strong> For a cocompact Fuchsian group, acting on the hyperbolic plane, the growth rate of the balls of the hyperbolic plane is one, and the critical exponent is $\delta = 1$; for a cocompact Kleinian group acting on hyperbolic three-space, the growth rate is two and $\delta = 2$. For a convex-cocompact Kleinian group that is not cocompact, the exponent $\delta$ is strictly less than two, and it is the exponent relevant to the limit set below.</p>
+<h2 id="the-dimension-of-the-boundary">The Dimension of the Boundary</h2>
+<p><strong>Theorem (the dimension in the visual metric).</strong> Let $X$ be a proper geodesic hyperbolic space with critical exponent $\delta$ and visual metrics $d_\varepsilon$. Then for every $0 < \varepsilon \leq \varepsilon_0$</p>
+<p>$$
+\dim_H(\partial X, d_\varepsilon) = \frac{\delta}{\varepsilon} ,
+$$</p>
+<p>so that the product $\varepsilon \cdot \dim_H(\partial X, d_\varepsilon) = \delta$ is independent of the choice of the visual metric within the conformal gauge. In the normalisation $\varepsilon = 1$, when $d_1$ is a metric, the boundary has Hausdorff dimension exactly $\delta$, and this is the equality $\dim_H \partial G = \delta$ of the cocompact case.</p>
+<p><strong>Proof sketch.</strong> The covering number of the boundary at scale $r = e^{-\varepsilon n}$ is the number of the shadow sets at distance $n$ from the base point, which grows like $e^{\delta n}$; the covering dimension is the exponent of the growth, $\delta n / \varepsilon n = \delta/\varepsilon$. The shadow of a geodesic ray at distance $n$ is a ball of the visual metric of radius comparable to $e^{-\varepsilon n}$, and the counting of the shadows is the counting of the elements of $G$ at length $n$. The identity is the dimension formula of the Patterson–Sullivan theory, and the independence of $\varepsilon$ is the invariance of the product under the Hölder equivalence.</p>
+<p><strong>Theorem (the Patterson–Sullivan measure).</strong> For a non-elementary hyperbolic group there is a Borel probability measure $\mu$ on $\partial G$, the <strong>Patterson–Sullivan measure</strong>, supported on the whole boundary, that is Ahlfors $\delta$-regular in the normalised visual metric:</p>
+<p>$$
+\mu\bigl(B(\xi,r)\bigr) \asymp r^{\delta} \qquad (0 < r \leq 1) ,
+$$</p>
+<p>for every $\xi \in \partial G$. Consequently the Hausdorff dimension of $\mu$ is $\delta$, and in the cocompact case the dimension of the boundary equals the critical exponent,</p>
+<p>$$
+\dim_H \partial G = \delta = \dim_H \mu .
+$$</p>
+<p><strong>Proof sketch.</strong> The measure is constructed as the weak limit of the normalised atomic measures $\sum_{g}e^{-s|g|}\delta_g / \sum_g e^{-s|g|}$ as $s \downarrow \delta$, a construction carried out in <em>Analysis on Groups</em>; the limit is a conformal measure and its Ahlfors regularity of exponent $\delta$ is the standard statement of the Patterson–Sullivan theory. The dimension of an Ahlfors $\delta$-regular measure is $\delta$ by the mass distribution principle of <em>Fractal Geometry</em>, and the Hausdorff dimension of the boundary is at least $\dim_H\mu$; the reverse inequality is the covering estimate above. The equality $\dim_H \partial G = \delta$ is the content of the cocompact case.</p>
+<p><strong>Remark (the metric dependence and the conformal dimension).</strong> The number $\dim_H \partial G$ is not an invariant of the group: it depends on the visual metric through the parameter $\varepsilon$, the product $\varepsilon \dim_H$ being the invariant. What is a genuine quasi-isometry invariant is the <strong>conformal dimension</strong>, the infimum of the Hausdorff dimensions of the boundary over the metrics of the conformal gauge,</p>
+<p>$$
+\dim_C \partial G = \inf\{\dim_H(\partial G, d) : d \ \text{in the conformal gauge}\} ,
+$$</p>
+<p>introduced by Pansu. It is a quasi-isometry invariant of the boundary, and by the theorem of Paulin and Bourdon the conformal gauge of the boundary, up to quasi-Möbius equivalence, determines the group up to quasi-isometry. For the free group the conformal dimension is zero, the boundary being a Cantor set quasisymmetrically equivalent to the standard middle-thirds Cantor set; for a surface group it is one, the boundary being a circle; and for a cocompact Kleinian group acting on hyperbolic three-space it is two.</p>
+<h2 id="the-free-group-and-the-surface-group">The Free Group and the Surface Group</h2>
+<p><strong>Theorem (the free group).</strong> Let $F_r$ be the free group of rank $r \geq 2$, with the Cayley graph the $2r$-regular tree and the edge length one.</p>
+<p><strong>(a)</strong> The critical exponent is $\delta = \log(2r-1)$.</p>
+<p><strong>(b)</strong> With the visual metric $d(\xi,\eta) = e^{-(\xi|\eta)}$ of the tree, which is an ultrametric, the boundary has Hausdorff dimension</p>
+<p>$$
+\dim_H(\partial F_r, d) = \log(2r-1) .
+$$</p>
+<p><strong>(c)</strong> With the visual metric normalised so that the child cylinders at each vertex have ratio $1/(2r)$, that is $d_{(2r)}(\xi,\eta) = (2r)^{-(\xi|\eta)}$, the dimension is</p>
+<p>$$
+\dim_H(\partial F_r, d_{(2r)}) = \frac{\log(2r-1)}{\log(2r)} ,
+$$</p>
+<p>which is $\log 3/\log 4 = 0.7925\ldots$ for $r = 2$ and $\log 5/\log 6 = 0.8982\ldots$ for $r = 3$.</p>
+<p><strong>(d)</strong> The Patterson–Sullivan measure is the Bernoulli measure that gives each of the $2r$ edges at the root the weight $1/(2r)$ and each of the $2r-1$ forward edges elsewhere the weight $1/(2r-1)$; it is Ahlfors $\delta$-regular with $\delta = \log(2r-1)$ in the normalisation (b).</p>
+<p><strong>Proof sketch.</strong> (a) is the count of the reduced words: the spheres have sizes $2r(2r-1)^{n-1}$ and the abscissa of the convergence of the Poincaré series is the logarithm of the branching, $\log(2r-1)$. (b) the covering number at the scale $e^{-n}$ is the number of the level-$n$ cylinders, comparable to $(2r-1)^n$, so the exponent is $\log(2r-1)$. (c) at the scale $(2r)^{-n}$ the covering number is again comparable to $(2r-1)^n$ and the exponent is $\log(2r-1)/\log(2r)$. (d) the weight of a cylinder of a reduced word of length $n$ is $(2r)^{-1}(2r-1)^{-(n-1)}$, which is comparable to $(e^{-n})^{\log(2r-1)}$ in the metric (b), so the measure is Ahlfors regular of exponent $\log(2r-1)$.</p>
+<p><strong>Remark (the two normalisations).</strong> The two values of (b) and (c) are the same object measured in two metrics of the conformal gauge: the ratio of the dimensions is the ratio of the parameters $\varepsilon$, and the product $\varepsilon\dim_H = \delta$ is the same. This is the phenomenon of the previous section made explicit, and it is the reason the invariants are the critical exponent and the conformal dimension, and not the unnormalised Hausdorff dimension.</p>
+<p><strong>Theorem (the surface group).</strong> Let $G$ be the fundamental group of a closed hyperbolic surface. Then $\partial G$ is a circle, $\delta = 1$, and the boundary in the visual metric of the hyperbolic plane is bi-Lipschitz to the Euclidean circle, so $\dim_H \partial G = 1$. More generally, for a cocompact Kleinian group acting on hyperbolic three-space the boundary is the sphere, $\delta = 2$ and the dimension is two; for a convex-cocompact group that is not cocompact the limit set is a proper closed subset of the sphere and its dimension is the critical exponent, strictly between one and two for a quasifuchsian group whose limit set is not a round circle.</p>
+<p><strong>Proof sketch.</strong> The boundary of the hyperbolic plane is its circle at infinity, and the visual metric of the hyperbolic plane is bi-Lipschitz to the Euclidean metric, so the dimension is one; the critical exponent is the growth rate, which is one. For hyperbolic three-space the same argument gives the sphere and the dimension two. For a quasifuchsian group that is not Fuchsian the limit set is a Jordan curve that is not a round circle, and its dimension is strictly greater than one and strictly less than two by the theorem of Bowen and the rigidity results; the exact value depends on the group.</p>
+<h2 id="summary">Summary</h2>
+<p>A hyperbolic group has a Gromov boundary, a compact metric space under the visual metrics $d_\varepsilon(\xi,\eta) = e^{-\varepsilon(\xi|\eta)}$, which form the conformal gauge, and its Hausdorff dimension is governed by the critical exponent $\delta$ of the Poincaré series. The exponent is finite, positive, equal to the exponential growth rate and hence a quasi-isometry invariant, and the dimension formula is $\dim_H(\partial G, d_\varepsilon) = \delta/\varepsilon$, with the value $\delta$ in the normalisation $\varepsilon = 1$; this is the equality $\dim_H \partial G = \delta$ of the cocompact case. The Patterson–Sullivan measure is the Ahlfors $\delta$-regular probability measure on the boundary, so the boundary and the measure have the same dimension in the normalised metric. For the free group $F_r$ the boundary is a Cantor set and $\delta = \log(2r-1)$, giving the dimension $\log(2r-1)$ in the canonical visual metric and $\log(2r-1)/\log(2r)$ in the metric with child ratio $1/(2r)$; for a surface group the boundary is a circle and the dimension is one; for a cocompact Kleinian group acting on hyperbolic three-space the boundary is the sphere and the dimension is two. The unnormalised dimension is not an invariant; the invariants are the critical exponent and the conformal dimension of Pansu, and by the theorem of Paulin and Bourdon the boundary up to quasi-Möbius determines the group up to quasi-isometry. The group theory is that of <em>Hyperbolic Groups</em> and <em>Geometric Group Theory</em>, the measure is <em>Analysis on Groups</em>', the end spaces are those of <em>Fractal Trees and Dendrites</em>, and the dimension is that of <em>Fractal Geometry</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\partial G$, $\partial X$</td>
+<td>Gromov boundary of the group, of the hyperbolic space</td>
+</tr>
+<tr>
+<td>$(\xi\lvert\eta)$, $o$</td>
+<td>Gromov product with respect to the base point; the base point</td>
+</tr>
+<tr>
+<td>$d_\varepsilon$, conformal gauge</td>
+<td>$e^{-\varepsilon(\xi\lvert\eta)}$; the family of the Hölder-equivalent visual metrics</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>Critical exponent of the Poincaré series; exponential growth rate</td>
+</tr>
+<tr>
+<td>$\sum_g e^{-s\lvert g\rvert}$</td>
+<td>Poincaré series; its abscissa of convergence is $\delta$</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>Patterson–Sullivan measure; Ahlfors $\delta$-regular</td>
+</tr>
+<tr>
+<td>$\dim_H(\partial G, d_\varepsilon)$</td>
+<td>$\delta/\varepsilon$; equals $\delta$ in the normalisation $\varepsilon=1$</td>
+</tr>
+<tr>
+<td>$\dim_C \partial G$</td>
+<td>Conformal dimension of Pansu; quasi-isometry invariant</td>
+</tr>
+<tr>
+<td>$\log(2r-1)$, $\log(2r-1)/\log(2r)$</td>
+<td>Boundary dimension of the free group in the two normalisations</td>
+</tr>
+<tr>
+<td>$2r(2r-1)^{n-1}$</td>
+<td>Number of words of length $n \geq 1$ in the free group of rank $r$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Mikhael Gromov, "Hyperbolic groups", in <em>Essays in Group Theory</em> (Mathematical Sciences Research Institute Publications 8, 1987), 75–263, for the hyperbolicity, the boundary and the growth.</li>
+<li>Michel Coornaert, Thomas Delzant and Athanase Papadopoulos, <em>Géométrie et théorie des groupes</em> (Springer Lecture Notes in Mathematics 1441, 1990), for the boundary, the visual metric and the critical exponent.</li>
+<li>Michel Coornaert, "Mesures de Patterson–Sullivan sur le bord d'un espace hyperbolique au sens de Gromov", <em>Pacific Journal of Mathematics</em> 159 (1993), 241–270, for the Patterson–Sullivan measure and its regularity.</li>
+<li>Samuel J. Patterson, "The limit set of a Fuchsian group", <em>Acta Mathematica</em> 136 (1976), 241–273, and Dennis Sullivan, "The density at infinity of a discrete group of hyperbolic motions", <em>Publications Mathématiques de l'IHÉS</em> 50 (1979), 171–202, for the measure and the critical exponent.</li>
+<li>Pierre Pansu, "Dimension conforme et sphère à l'infini des variétés hyperboliques", <em>Annales de l'Institut Fourier</em> 39 (1989), 177–212, for the conformal dimension and its quasi-isometry invariance.</li>
+<li>Marc Bourdon, "Structure quasi-conformes des bords de groupes hyperboliques", <em>Annales de l'Institut Fourier</em> 46 (1996), 1245–1254, for the boundary, the quasi-Möbius structure and the quasi-isometry.</li>
+<li>Frédéric Paulin, "Un groupe hyperbolique est déterminé par son bord", <em>Journal of the London Mathematical Society</em> 54 (1996), 50–74, for the boundary as a quasi-isometry invariant.</li>
+<li>James W. Cannon, "The combinatorial Riemann mapping theorem", <em>Acta Mathematica</em> 173 (1994), 155–234, for the boundary and the conjecture that a hyperbolic group with the sphere as boundary acts on hyperbolic space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

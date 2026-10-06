@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pluripotential Theory of the Biquaternion Dynamics — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-pluripotential-theory-of-the-biquaternion-dynamics"><strong>The Pluripotential Theory of the Biquaternion Dynamics</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The pluripotential theory of a polynomial map of $\mathbb{C}^k$ builds an equilibrium measure from the Green's function, and the measure is the bridge between the dynamics and the geometry: it is the harmonic measure of the fractal, the maximal-entropy measure, the limit of the distribution of the preimages of a point, and the source of the ergodic and the dimension statements of the modern theory. The biquaternion passage enlarges the dimension to $k=4$ and makes the map holomorphic, so the framework is available; the same passage breaks the properness of the leading part, so the theory is available only off the zero-divisor cone and its conclusions must be stated conditionally. This article assembles the framework, states the invariance of the equilibrium measure and its product form on the split subalgebra, and records precisely what the non-properness costs.</p>
+<p>The Green's function and its conditional existence are <em>The Escape Radius and the Green's Function for the Biquaternions</em>; the quadratic family and its critical set are <em>The Biquaternion Quadratic Map and Its Julia Sets</em>; the zero divisors are <em>The Zero Divisors and the Singular Julia Sets</em>; the matrix model and the two-variable reading are <em>The Matrix Representation and the Biquaternion Dynamics</em>; the idempotent plane and its product structure are <em>The Idempotent Decomposition and the Split Fractal</em>. The general theory is <em>Plurisubharmonic Functions</em>, <em>Several Complex Variables</em> and <em>Several Complex Variables</em>, and the measure-theoretic background is <em>Fractal Analysis</em> of Part III.</p>
+<p>The article owns the Monge–Ampère current of the biquaternion map, the invariance of the equilibrium measure under the map, the product form on the idempotent plane, the mass-loss phenomenon at the cone, and the statement of the open questions.</p>
+<p><strong>Standing convention.</strong> $F=F_{\tilde C}$ is the quadratic family in the complex bilinear product, $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, $F^*$ the pullback on functions and currents, $d$ the algebraic degree $2$, and $k=4$ the complex dimension of the model.</p>
+<h2 id="the-classical-framework">The Classical Framework</h2>
+<p><strong>Theorem (the equilibrium measure of a polynomial map).</strong> Let $P:\mathbb{C}^k\to\mathbb{C}^k$ be a polynomial map of algebraic degree $d$ whose leading homogeneous part is proper, and let $G_P=\lim_{n\to\infty}d^{-n}\log^+\|P^n\|$ be its Green's function. Then $G_P$ is plurisubharmonic on $\mathbb{C}^k$ or identically $-\infty$, $P^*G_P=d\,G_P$, and</p>
+<p>$$
+\mu_P=(dd^cG_P)^k
+$$</p>
+<p>is a probability measure with $P^*\mu_P=d^k\mu_P$, supported on the Julia set of $P$, of maximal entropy $k\log d$, satisfying the equidistribution of preimages.</p>
+<p><strong>Proof.</strong> This is the theorem of Fornæss–Sibony and Bedford–Jonsson, presented in <em>Several Complex Variables</em> and <em>Plurisubharmonic Functions</em>; the invariance of the measure is the chain rule $P^*dd^cG=dd^c(P^*G)=d\,dd^cG$ raised to the power $k$, and the normalisation to a probability is the definition of $\mu_P$.</p>
+<p><strong>Remark (what the properness of the leading part buys).</strong> The properness of the leading homogeneous part is what makes the pullback of $dd^cG$ a current of the right mass, equivalently what makes the map regular in the sense that the pullback of the class of the hyperplane has the expected degree. <strong>The biquaternion map fails exactly this hypothesis, and the failure is measurable: the leading part $\tilde Q\mapsto\tilde Q^2$ has the square-zero cone as its fibre over $0$, so some of the pullback mass is lost on the cone.</strong></p>
+<h2 id="the-greens-function-and-the-current">The Green's Function and the Current</h2>
+<p><strong>Proposition (the current and its invariance).</strong> Let $\tilde C=Ce_0$ be central and let $G_{\tilde C}$ be the Green's function, defined on the regular part of the escaping set. On the open set where $G_{\tilde C}$ is plurisubharmonic and smooth, the current</p>
+<p>$$
+\gamma_{\tilde C}=(dd^cG_{\tilde C})^4
+$$</p>
+<p>is positive and satisfies $F^*\gamma_{\tilde C}=16\,\gamma_{\tilde C}$.</p>
+<p><strong>Proof.</strong> $F^*G_{\tilde C}=2G_{\tilde C}$ (<em>The Escape Radius and the Green's Function for the Biquaternions</em>), the pullback commutes with $dd^c$, and $dd^c(2G)=2\,dd^cG$; raising to the fourth power multiplies the current by $2^4=16$.</p>
+<p><strong>Remark (the degree and the exponent).</strong> The base of the invariance is the algebraic degree $2$ and the exponent is the complex dimension $4$, so the multiplier is $16$ and the entropy of the measure is $4\log2$. <strong>The biquaternion map has a four-dimensional equilibrium measure with the entropy of four complex degrees of freedom, one for each eigenvalue of the model.</strong> On the central slice the entropy reduces to the two $(\log2)$-contributions of the two eigenvalues and the measure is the product of two one-variable equilibrium measures.</p>
+<p><strong>Theorem (the product form on the idempotent plane).</strong> Let $\tilde\Pi$ be a primitive idempotent and let $\tilde C=C_1\tilde\Pi+C_2\tilde\Pi'$ be in the idempotent plane. Then the equilibrium measure of the restriction is the product</p>
+<p>$$
+\mu_{\tilde C}\big|_{W_{\tilde\Pi}}=\mu_{C_1}\otimes\mu_{C_2},
+$$</p>
+<p>the product of the two one-variable equilibrium measures of $\zeta\mapsto\zeta^2+C_j$, and its entropy is $2\log2$.</p>
+<p><strong>Proof.</strong> On the plane the map is the pair of complex quadratic maps (<em>The Idempotent Decomposition and the Split Fractal</em>), the Green's function is the maximum of the two complex Green's functions (<em>The Escape Radius and the Green's Function for the Biquaternions</em>), and the Monge–Ampère current of a function of two independent complex variables is the product of the one-variable currents.</p>
+<h2 id="the-mass-loss-at-the-cone">The Mass Loss at the Cone</h2>
+<p><strong>Proposition (the pullback loses mass on the cone).</strong> The equation $\tilde Q^2=\tilde W$ has four solutions for a generic regular value $\tilde W$ (<em>Biquaternion Square Roots of a General Element</em>), so the generic fibre of the square map has four points; at $\tilde W=0$ the equation is $\tilde Q^2=0$ and its solution set is the square-zero cone, of complex dimension two. The topological degree of the square map is therefore not locally constant at $0$: the fibre over $0$ has complex dimension two while the generic fibre has dimension zero.</p>
+<p><strong>Proof.</strong> The generic count is the corollary on the number of roots of <em>Biquaternion Square Roots of a General Element</em>: four roots when $(\boldsymbol{Q},\boldsymbol{Q})\neq0$ and $n\neq0$, since the reduced quadratic then has two distinct non-zero solutions and each contributes two scalar parts; the fibre over $0$ is the set of nilpotent elements, the cone $\{Q_0=0,\ (\mathbf Q,\mathbf Q)=0\}$ of complex dimension two. The derivative of the square map at $\tilde Q$ is $\tilde P\mapsto\tilde Q\tilde P+\tilde P\tilde Q$, singular exactly on the critical set; at a square-zero point it is nilpotent with image of complex dimension two, so the map is not locally finite there.</p>
+<p><strong>Remark (the consequence for the measure).</strong> A polynomial map whose leading part is proper pulls back a generic point to exactly $d^k$ preimages, counted with multiplicity, so the preimage measure equidistributes; the biquaternion map pulls back $0$ to a positive-dimensional cone, and the preimages of a point outside the cone may have limit points in the cone. <strong>The equidistribution of preimages holds away from the cone and gains a correction term from the cone; the correction is not known in closed form, and this is the technical core of the open problem of the category.</strong></p>
+<h2 id="the-exceptional-set-and-the-small-fractal">The Exceptional Set and the Small Fractal</h2>
+<p><strong>Definition.</strong> The <strong>exceptional set</strong> of the biquaternion map is the set of the points $\tilde Q$ whose orbit fails to have the generic local behaviour: the critical set $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$, together with the set where the Green's function fails to be plurisubharmonic.</p>
+<p><strong>Remark (the small Julia set).</strong> In the several-variable theory the support of the equilibrium measure is the <em>small Julia set</em>, contained in the Julia set and possibly strictly smaller, and it is the closure of the union of the backward images of the critical set. For the biquaternion map the critical set is the union of the cone and the vector subspace, so the small Julia set is the closure of the union of the backward images of that union; whether it equals the Julia set is a question with no answer at present, because the equidistribution it rests on is the one obstructed by the cone. <strong>The article states the small Julia set as the support of the measure and does not identify it with the Julia set.</strong></p>
+<p><strong>Remark (the ergodic properties expected).</strong> The measure, where it exists, is expected to be mixing, of maximal entropy $4\log2$, and to satisfy the central limit theorem and the large-deviation principle of the one-variable theory; on the idempotent plane all of these hold because the theory factors, and off the plane each of them is conditional on the regularity that the cone obstructs.</p>
+<h2 id="summary">Summary</h2>
+<p>The pluripotential framework of a polynomial map of $\mathbb{C}^4$ applies to the biquaternion map wherever the Green's function is defined and plurisubharmonic, and there the current $(dd^cG)^4$ is positive and invariant with multiplier $16$, the square of the algebraic degree raised to the complex dimension, so the equilibrium measure has maximal entropy $4\log2$. On an idempotent plane the theory factors exactly: the Green's function is the maximum of the two complex ones and the equilibrium measure is the product of the two one-variable equilibrium measures with entropy $2\log2$. The leading part of the map is not proper, its fibre over $0$ is the real four-dimensional square-zero cone, the topological degree is not locally constant there, and the pullback loses mass on the cone; the equidistribution of preimages and with it the identification of the small Julia set with the Julia set are therefore open, and the article states them as such. The exceptional set is the critical set of the map, the union of the cone and the vector subspace.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G_{\tilde C}$</td>
+<td>the Green's function of the biquaternion map</td>
+</tr>
+<tr>
+<td>$d$</td>
+<td>the algebraic degree, $2$</td>
+</tr>
+<tr>
+<td>$k$</td>
+<td>the complex dimension of the model, $4$</td>
+</tr>
+<tr>
+<td>$dd^c$</td>
+<td>the Monge–Ampère operator</td>
+</tr>
+<tr>
+<td>$\gamma_{\tilde C}=(dd^cG_{\tilde C})^4$</td>
+<td>the Monge–Ampère current</td>
+</tr>
+<tr>
+<td>$\mu_{\tilde C}$</td>
+<td>the equilibrium measure</td>
+</tr>
+<tr>
+<td>$\mu_{C}$</td>
+<td>the one-variable equilibrium measure of $\zeta\mapsto\zeta^2+C$</td>
+</tr>
+<tr>
+<td>$\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$</td>
+<td>the critical set</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Escape Radius and the Green's Function for the Biquaternions</em> (<code>articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.md</code>), for the Green's function and the conditional existence used here.</li>
+<li><em>The Idempotent Decomposition and the Split Fractal</em> (<code>articles_maths/the-idempotent-decomposition-and-the-split-fractal.md</code>), for the factoring of the dynamics on the idempotent plane.</li>
+<li><em>The Zero Divisors and the Singular Julia Sets</em> (<code>articles_maths/the-zero-divisors-and-the-singular-julia-sets.md</code>), for the cone that is the exceptional set of the map.</li>
+<li><em>Several Complex Variables</em> (<code>articles_maths/several-complex-variables.md</code>), for the plurisubharmonic tools and the several-variable dynamics the article adapts.</li>
+<li><em>The Self-Similar Measure and the Invariant Measure</em> (<code>articles_maths/the-self-similar-measure-and-the-invariant-measure.md</code>) and <em>Multifractal Analysis and the Legendre Transform</em> (<code>articles_maths/multifractal-analysis-and-the-legendre-transform.md</code>), for the measure-theoretic statements of the category.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

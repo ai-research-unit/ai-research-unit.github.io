@@ -72,8 +72,8 @@ $$</p>
 <p>$$
 c = a\left(a\beta^2 + b\beta + d - \beta\right) = ad - \frac{b^2}{4} + \frac{b}{2} = \frac{4ad - b^2 + 2b}{4} .
 $$</p>
-<p>So $f$ is conjugate to $f_c$ with $c = ad - b^2/4 + b/2$, the conjugating map being $h(z) = (z - b/2)/a$. The choice is unique up to the involution $z \mapsto -z$, which commutes with every $f_c$ and is the only affine automorphism of $f_c$, and the two choices give the same parameter. Affine conjugation carries orbits to orbits, hence preserves boundedness, the Julia set and the filled Julia set up to the conjugacy.</p>
-<p><strong>Corollary.</strong> The Mandelbrot set classifies the degree-two polynomials up to affine conjugacy: two quadratic polynomials have homeomorphic (indeed conformally conjugate on a neighbourhood of their Julia sets) dynamics exactly when their normalised parameters coincide, and the classification of the parameters by the dynamics is the classification of the set $M$ into its subsets.</p>
+<p>So $f$ is conjugate to $f_c$ with $c = ad - b^2/4 + b/2$, the conjugating map being $h(z) = (z - b/2)/a$. The conjugating affine map is unique, because the only affine automorphism of $f_c$ is the identity; the map $f_c$ is even, $f_c(-z) = f_c(z)$, so $z \mapsto -z$ leaves the two sets invariant although it is not a conjugacy of $f_c$ with itself. Affine conjugation carries orbits to orbits, hence preserves boundedness, the Julia set and the filled Julia set up to the conjugacy.</p>
+<p><strong>Corollary.</strong> The Mandelbrot set classifies the degree-two polynomials up to affine conjugacy: the normalised parameter of a quadratic polynomial is a complete invariant of its affine conjugacy class, the conjugacy preserving boundedness, the Julia set and the filled Julia set up to the transport of the conjugating map, and the classification of the parameters into the subsets of $M$ is the classification of the degree-two dynamics.</p>
 <h2 id="the-mandelbrot-set">The Mandelbrot Set</h2>
 <h3 id="definition-and-first-properties">Definition and First Properties</h3>
 <p><strong>Definition.</strong> The <strong>Mandelbrot set</strong> is</p>
@@ -128,7 +128,7 @@ $$</p>
 (f_c^2)'(z_1) = (2z_1)(2z_2) = 4z_1z_2 = 4(c+1),
 $$</p>
 <p>which is independent of which of the two roots is chosen. The cycle is attracting exactly when $|4(c+1)| < 1$, that is $|c+1| < 1/4$; the multiplier is $1$ at $c = -3/4$ and $0$ at $c = -1$.</p>
-<p><strong>Example.</strong> At $c = -1$ the cycle is $\{0, -1\}$ and the parameter is superattracting; at $c = -5/4$ the multiplier is $-1$, the right-hand endpoint of the bulb, where the cycle becomes parabolic and a period-four cycle is born.</p>
+<p><strong>Example.</strong> At $c = -1$ the cycle is $\{0, -1\}$ and the parameter is superattracting; at $c = -5/4$ the multiplier is $-1$, the left-hand endpoint of the bulb, where the cycle becomes parabolic and a period-four cycle is born.</p>
 <h3 id="hyperbolic-components-and-their-classification">Hyperbolic Components and Their Classification</h3>
 <p><strong>Definition.</strong> A <strong>hyperbolic component</strong> of $M$ is a connected component of the interior of $M$; it is <strong>of period $p$</strong> if the corresponding map $f_c$ has an attracting cycle of exact period $p$.</p>
 <p><strong>Theorem (the multiplier map).</strong> Let $H$ be a hyperbolic component of period $p$. The <strong>multiplier map</strong> $\lambda : H \to \mathbb{D}$, sending $c$ to the multiplier of the attracting cycle of period $p$, is a biholomorphism onto the unit disk; in particular $H$ contains exactly one parameter at which the cycle is superattracting, the <strong>centre</strong>, and exactly one parameter of each multiplier, and the closure of $H$ meets the rest of $M$ in finitely many points, the <strong>roots</strong>, at which the cycle is parabolic with multiplier a root of unity.</p>

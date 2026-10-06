@@ -65,7 +65,7 @@ $$
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
 \mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
 $$
-the anti-Hermitian (material) and Hermitian (informational) sectors, with $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\mu}Q_\mu^2$, and the trace pairing on the Hermitian sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The metric on $\mathbb{M}_-$ is used in the $(ict,x,y,z)$ convention, so that $N(ict\,e_0+\mathbf{x})=-c^2t^2+|\mathbf{x}|^2$, with $\eta=\mathrm{diag}(-1,1,1,1)$ below.</p>
+the anti-Hermitian (material) and Hermitian (informational) sectors, with $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\mu}Q_\mu^2$, and the trace pairing on the Hermitian sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The metric on $\mathbb{M}_-$ is used in the $(ict,x,y,z)$ convention, so that $N(ict\,e_0+\mathbf{x})=-c^2t^2+|\mathbf{x}|^2$, with $\eta=\mathrm{diag}(-1,1,1,1)$ below.</p>
 <h2 id="the-conformal-group-and-its-generators">The Conformal Group and Its Generators</h2>
 <p>A <strong>conformal transformation</strong> of a pseudo-Riemannian manifold is a diffeomorphism whose pullback of the metric is a positive multiple of the metric,
 $$
@@ -141,7 +141,7 @@ together with the standard Lorentz brackets for $[M_{\mu\nu},M_{\rho\sigma}]$. T
 <h2 id="the-null-cone-conformal-structure-the-algebra-already-has">The Null Cone: Conformal Structure the Algebra Already Has</h2>
 <p>The conformal group is the group that preserves null directions, and in this framework "null" is already algebraic. A displacement $\tilde{Q}\in\mathbb{M}_-$ is null exactly when
 $$
-N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=0,
+N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=0,
 $$
 and the nonzero null elements are exactly the zero divisors of $\mathbb{B}$. The light cone of Minkowski space is therefore the <strong>zero-divisor cone</strong> of the algebra, whose geometry is the subject of the companion article on the null quadric and projective geometry; here only its invariance is needed. The algebra contains the <em>object</em> that the conformal group preserves, even though, as the later sections show, it does not contain the group.</p>
 <p>The four families of generators act on the zero set of $N$ as follows; each statement is an elementary consequence of the multiplicativity of the biquaternion norm, and each was checked on explicit elements.</p>
@@ -292,7 +292,7 @@ which reproduces $x'^\mu=(x^\mu+a^\mu x^2)/(1+2a\cdot x+a^2x^2)$.</p>
 <td>Real-quaternion and scalar subspaces</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm; its zero set is the null cone</td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ which reproduces $x'^\mu=(x^\mu+a^\mu x^2)/(1+2a\cdot x+a^2x^2)$.</p>
 <td>Inversion; $I^2=\mathrm{id}$, $N(I(\tilde{Q}))=1/N(\tilde{Q})$</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^{-1}=\tilde{Q}^{\natural}/N(\tilde{Q})=P(I(\tilde{Q}))$</td>
+<td>$\tilde{Q}^{-1}=\tilde{Q}^{\natural}/N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=P(I(\tilde{Q}))$</td>
 <td>Algebra inverse = inversion followed by parity</td>
 </tr>
 <tr>
@@ -340,12 +340,20 @@ which reproduces $x'^\mu=(x^\mu+a^\mu x^2)/(1+2a\cdot x+a^2x^2)$.</p>
 <td>Conformal embedding Clifford algebra; bivectors $\cong\mathrm{SO}(2,4)$, even part real dimension $32$</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$</td>
+<td>$\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$</td>
 <td>Trace pairing on the Hermitian sector</td>
 </tr>
 <tr>
 <td>$c=1/\sqrt{\epsilon\mu}$, $c_0$</td>
 <td>Speed of light in the medium; in vacuum</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
+<td>the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

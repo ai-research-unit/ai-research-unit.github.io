@@ -61,7 +61,7 @@ $$</p>
 <p>where $H(D)$ is the entropy of the demon's memory and $I$ is its mutual information with the gas; since $I \le H(D)$, the bracket is never positive.</p>
 <p>The framework's contribution is the localisation of each step. The correlation and feedback steps belong to the algebra's <strong>reversible class</strong>: a permutation of the joint classical states in the first case, an entropy-neutral quasistatic process in the second, whose single-sector representative is the rotor conjugation that preserves the biquaternion norm and has a vanishing Lyapunov spectrum. The erasure step is a non-unital contraction, which lowers the memory's entropy and exports the difference to the material sector as heat. The second law is restored at the erasure, and it is the framework's reversible/irreversible dichotomy that says where to look. One further framework object, the <strong>idempotent projection</strong> of the companion article <em>Decoherence as Idempotent Projection</em>, appears when the record is required to be definite; whether the irreversibility is charged to that projection or to the erasure is a bookkeeping choice, and the two accounts agree that the cycle gains nothing.</p>
 <p>The treatment is classical. The gas is a classical one-particle gas, the record is a classical bit, and the mutual information is Shannon's. The demon does not need entanglement, and none is used; the quantum demon, whose memory is entangled with the gas, belongs to the informational subcategory of the sibling quantum category, and is cited there rather than developed here.</p>
-<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; a state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}|\le1$; and entropies are measured in nats.</p>
+<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; a state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}|\le1$; and entropies are measured in nats.</p>
 <h2 id="the-demons-cycle-in-two-sectors">The Demon's Cycle in Two Sectors</h2>
 <h3 id="the-device">The Device</h3>
 <p>The standard realisation is Szilard's engine. A single particle is confined to a box of volume $V$ in contact with a heat bath at temperature $T$, and a removable partition divides the box into two halves. The demon's cycle has four steps.</p>
@@ -337,7 +337,7 @@ $$</p>
 <td>Trace, $\mathrm{Tr}(e_0)=2$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
@@ -395,6 +395,14 @@ $$</p>
 <tr>
 <td>$W_{\rm net} \le k_BT(I - H(D)) \le 0$</td>
 <td>Demon's net work (second law restored)</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
+<td>the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
 </tr>
 </tbody>
 </table></div>

@@ -60,7 +60,7 @@
 <li><strong>Transcribed, not derived.</strong> The force of the theorem — that among the four pairings of spin class with bracket only two survive — is imported from relativistic quantum field theory. What the biquaternion presentation adds is that the two surviving pairings are the two <em>inequivalent structures the algebra actually carries</em>: the double-valued module for half-integer spin and the single-valued vector/adjoint representation for integer spin, together with the trace identity that decides which bracket the finite algebra can host.</li>
 <li><strong>Gap, left visible.</strong> The article does not <em>derive</em> spin–statistics from the biquaternion algebra. The one-mode coincidence is exact but finite-dimensional, and it does not lift to the field. This gap is stated in the sections where it arises and collected in the open questions.</li>
 </ul>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\ne k$, and $i$ is the scalar imaginary with $i^2=-1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, home of the rotation rotors, and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ is the complex scalar subspace, the center of the algebra. The isomorphism with $M_2(\mathbb{C})$ is $\Phi(e_k)=-i\sigma_k$, so that $\Phi(ie_k)=\sigma_k$, and the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged. In the field-theoretic sections we work in natural units $\hbar=c=1$ and use the gamma-matrix convention of the parents, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, $\bar\psi=\psi^\dagger\gamma^0$, and $\not p=\gamma^0 E_{\mathbf p}-\boldsymbol\gamma\cdot\mathbf p$; the relative sign of this Clifford metric with the $ict$ gradient of the Maxwell articles is the convention the parents flag, and is not used here.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\ne k$, and $i$ is the scalar imaginary with $i^2=-1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, home of the rotation rotors, and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ is the complex scalar subspace, the center of the algebra. The isomorphism with $M_2(\mathbb{C})$ is $\Phi(e_k)=-i\sigma_k$, so that $\Phi(ie_k)=\sigma_k$, and the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ is inherited unchanged. In the field-theoretic sections we work in natural units $\hbar=c=1$ and use the gamma-matrix convention of the parents, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, $\bar\psi=\psi^\dagger\gamma^0$, and $\not p=\gamma^0 E_{\mathbf p}-\boldsymbol\gamma\cdot\mathbf p$; the relative sign of this Clifford metric with the $ict$ gradient of the Maxwell articles is the convention the parents flag, and is not used here.</p>
 <h2 id="the-theorem-and-its-ingredients">The Theorem and Its Ingredients</h2>
 <p>The theorem has three independent inputs, and it is useful to record which of them the biquaternion framework supplies.</p>
 <ol>
@@ -335,7 +335,7 @@ $$</p>
 <td>Isomorphism with $M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$</td>
+<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$</td>
 <td>Trace pairing of the informational sector</td>
 </tr>
 <tr>
@@ -405,6 +405,14 @@ $$</p>
 <tr>
 <td>$\hat H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r)+E_0$</td>
 <td>Normal-ordered Hamiltonian (Fermi choice)</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
+<td>the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

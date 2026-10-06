@@ -65,7 +65,7 @@ $$</p>
 <p>with the zero along the pointer axis and the two negative exponents in the plane transverse to it. Information is lost at the rate $\Gamma$ in each transverse direction. Because the biquaternion norm is quadratic, the scalar $|N(\delta\tilde{\rho}(t))|$ decays at twice that rate, $e^{-2\Gamma t}$; the Lyapunov exponent defined above carries the compensating factor $\tfrac{1}{2}$, so it is the decay rate of the length $\sqrt{|N|}$ and equals the vector exponent $-\Gamma$. The factor of two is a property of the quadratic form, not of the exponent.</p>
 <p>The article also states what the framework does <strong>not</strong> produce: positive Lyapunov exponents. A positive exponent from linear dynamics would require an expansion, and an expansion carries states out of the Bloch ball, so the linear dynamics of the sector — an isometry in the reversible class, a contraction in the irreversible one — has a non-positive spectrum. The remaining dynamics of the framework is nonlinear, and it lives on a phase space too small to host chaos. The compact coadjoint orbit of the framework is the two-sphere $|\mathbf{S}| = \text{const}$ — the Bloch sphere at the spin-$\tfrac{1}{2}$ radius — a two-dimensional symplectic manifold, and every Hamiltonian flow on a two-dimensional symplectic manifold is integrable, so its exponents vanish; for a Hamiltonian flow a positive exponent first becomes possible at four phase-space dimensions, which the material sector supplies and the informational sector does not. The information loss of the framework is therefore <strong>contraction, not chaos</strong>: the entropy produced in a coarse-graining is the deficit of the contracting directions, and the Kolmogorov–Sinai entropy of the framework's linear flows is zero.</p>
 <p>The treatment is classical and non-relativistic. The exponents are those of a classical flow on a state space, measured with the algebra's biquaternion norm. The tools imported are the standard ones of smooth dynamical systems: the multiplicative ergodic theorem, the contraction of completely positive trace-preserving maps, Pesin's formula, and the integrability of two-dimensional Hamiltonian flows. The connexion to the notion of information used elsewhere in the subcategory is direct: the entropy functional of the companion article <em>Coarse-Graining and the Biquaternion Entropy Functional</em> is a function of the biquaternion norm, and the Lyapunov exponent is the rate of decay of the logarithm of the biquaternion norm of a tangent vector; the two are the same quantity read at a point and along a flow.</p>
-<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; the scalar imaginary $i$ is central; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and a state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$.</p>
+<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; the scalar imaginary $i$ is central; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and a state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$.</p>
 <h2 id="lyapunov-exponents-the-standard-setting">Lyapunov Exponents: The Standard Setting</h2>
 <h3 id="definition-for-a-flow">Definition for a Flow</h3>
 <p>Let $\phi_t$ be a smooth flow on a manifold $M$ and let $x(t) = \phi_t(x_0)$ be a trajectory. The linearisation of the flow about the trajectory is the family of tangent maps</p>
@@ -249,7 +249,7 @@ $$</p>
 <td>Trace, $\mathrm{Tr}(e_0)=2$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
+<td>$N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
@@ -323,6 +323,14 @@ $$</p>
 <tr>
 <td>$|\mathbf{S}| = \text{const}$</td>
 <td>Coadjoint orbit (Bloch sphere); Hamiltonian flows integrable</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
+<td>the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
 </tr>
 </tbody>
 </table></div>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Split-Biquaternion Iterated Function Systems — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-split-biquaternion-iterated-function-systems"><strong>The Split-Biquaternion Iterated Function Systems</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An iterated function system on the split-biquaternion algebra is a finite family of contractions, and because the algebra is the product of two quaternion algebras the system, its attractor and its dimension all reduce to the quaternion case on two factors: the operator norm of a left multiplication is the maximum of the moduli of the two components, the attractor of a system with diagonal generators is the product of the two quaternion attractors, and the similarity dimension is the sum of the two quaternion dimensions. The algebra is also the Clifford algebra $\mathrm{Cl}(0,3)$, so a system has a parity structure: an even generator preserves the even and the odd parts, an odd generator exchanges them. The article states the contraction criterion, the product attractor and its dimension, the parity structure of the systems and the role of the zero-divisor generators, and compares the theory with the biquaternion systems, where the idempotents are not central and the attractor of a diagonal system is only a slice.</p>
+<p>The split-biquaternion algebra, its idempotents and its norm are <em>Split-Biquaternion Algebra</em>, <em>Split-Biquaternion Idempotents and Projections</em> and <em>Split-Biquaternion Norm and Invertibility</em>; the product decomposition of the family is <em>The Split-Biquaternion Quadratic Family</em>; the parity grading and the volume element are <em>The Clifford Decomposition of the Split-Biquaternion Fractals</em>; the quaternion systems and their dimension are <em>The Quaternion Iterated Function Systems</em>; and the classical theory, the open set condition and the similarity dimension are <em>Fractal Geometry</em> of Part IV.</p>
+<p>The article owns the operator norm of a split-biquaternion generator, the contraction criterion, the product attractor and the sum of the dimensions, the parity structure of the generator list, and the zero-divisor generators. It does not re-derive the classical theory or the quaternion systems.</p>
+<p><strong>Standing convention.</strong> $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_++\tilde Q_-\tilde\Pi_-$, and a left-affine generator is $f_i(\tilde Q)=\tilde A_i\tilde Q+\tilde B_i$ with $\tilde A_i=\tilde A_i^+\tilde\Pi_++\tilde A_i^-\tilde\Pi_-$; $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{R}^8$ and $|\cdot|$ the quaternion modulus.</p>
+<h2 id="the-operator-norm-and-the-contraction-criterion">The Operator Norm and the Contraction Criterion</h2>
+<p><strong>Proposition (the operator norm).</strong> For $\tilde A=\tilde A_+\tilde\Pi_++\tilde A_-\tilde\Pi_-$ the operator norm of left multiplication is</p>
+<p>$$
+\|L_{\tilde A}\|=\max\bigl(|\tilde A_+|,\ |\tilde A_-|\bigr) ,
+$$</p>
+<p>and the generator $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is a contraction exactly when $\max(|\tilde A_+|,|\tilde A_-|)<1$.</p>
+<p><strong>Proof.</strong> In the idempotent coordinates $L_{\tilde A}$ acts by $(\tilde Q_+,\tilde Q_-)\mapsto(\tilde A_+\tilde Q_+,\tilde A_-\tilde Q_-)$, so</p>
+<p>$$
+\|L_{\tilde A}\tilde Q\|_E^2=\tfrac12\bigl(|\tilde A_+|^2|\tilde Q_+|^2+|\tilde A_-|^2|\tilde Q_-|^2\bigr)\le\max(|\tilde A_+|,|\tilde A_-|)^2\cdot\tfrac12\bigl(|\tilde Q_+|^2+|\tilde Q_-|^2\bigr) ,
+$$</p>
+<p>using the norm identity $\|\tilde Q\|_E^2=\tfrac12(|\tilde Q_+|^2+|\tilde Q_-|^2)$; the bound is attained on a vector supported on the factor of the maximum, so the norm is the maximum. The Lipschitz constant of the generator is the operator norm of $\tilde A$, whence the criterion.</p>
+<p><strong>Remark (the diagonal multipliers).</strong> If $\tilde A=\tilde A_+=\tilde A_-$ is one quaternion, the generator multiplies both factors by the same quaternion and is a similarity of ratio $|\tilde A|$; if only one component is non-zero, the generator maps the algebra into one ideal and its restriction to that ideal is a quaternion similarity. <strong>The general split-biquaternion generator is a pair of quaternion generators acting independently on the two factors.</strong></p>
+<h2 id="the-product-attractor-and-its-dimension">The Product Attractor and Its Dimension</h2>
+<p><strong>Theorem (the attractor is a product).</strong> Let $f_i(\tilde Q)=\tilde A_i\tilde Q+\tilde B_i$, $i=1,\dots,m$, be a system of contractions. Then the attractor is the product</p>
+<p>$$
+K=K^+\times K^-,
+$$</p>
+<p>where $K^\pm$ are the attractors of the two quaternion systems $\{(\tilde A_i^\pm,\tilde B_i^\pm)\}_i$, and for the dimension, if both quaternion systems are systems of similarities satisfying the open set condition with ratios $r_i^\pm=|\tilde A_i^\pm|$, then</p>
+<p>$$
+\dim_HK=s_++s_-\ , \qquad \sum_{i=1}^m(r_i^+)^{s_+}=1,\qquad \sum_{i=1}^m(r_i^-)^{s_-}=1 .
+$$</p>
+<p><strong>Proof.</strong> The Hutchinson operator of the system is the product of the Hutchinson operators of the two quaternion systems in the idempotent coordinates, so its fixed point is the product of the two quaternion attractors (<em>The Quaternion Iterated Function Systems</em>). The dimension is the product formula $\dim_H(A\times B)=\dim_H A+\dim_HB$ together with the similarity dimension of each factor (<em>Fractal Geometry</em>).</p>
+<p><strong>Corollary (the dimension of a split-biquaternion system).</strong> The Hausdorff dimension of the attractor of a split-biquaternion system of similarities with the open set condition is the sum of the two quaternion similarity dimensions, one for each idempotent factor, and it is at most $2\cdot 4=8$ and equals $8$ only in the degenerate case of ratios summing to full dimension in both factors.</p>
+<p><strong>Remark (the system is the pair of its factor systems).</strong> Every question about a split-biquaternion system that is a product question — the dimension, the connectivity, the local structure, the measure — is answered by the two quaternion systems. <strong>The split-biquaternion systems are the quaternion systems with an extra bookkeeping factor, and the article states the reduction rather than a separate theory.</strong></p>
+<h2 id="zero-divisor-generators">Zero-Divisor Generators</h2>
+<p><strong>Proposition (a zero divisor can multiply a contraction).</strong> Let $\tilde A=\tilde A_+\tilde\Pi_+$ be a zero divisor, so $\tilde A_-=0$. Then $\|L_{\tilde A}\|=|\tilde A_+|$ and the generator $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is a contraction whenever $|\tilde A_+|<1$, with image contained in the ideal $\mathbb{H}\tilde\Pi_+$.</p>
+<p><strong>Proof.</strong> The operator norm formula with $\tilde A_-=0$; the image of $L_{\tilde A}$ is contained in $\mathbb{H}\tilde\Pi_+$ because $\tilde A_-\tilde Q_-=0$ kills the second component. No invertibility of $\tilde A$ is required for the attractor theorem, which needs only the contraction.</p>
+<p><strong>Remark (the contrast with the biquaternion systems).</strong> In the biquaternion algebra a zero-divisor multiplier is a contraction whose image avoids a direction, and the image subspace can be a proper complex subspace; here a zero-divisor multiplier kills one whole idempotent factor, so the attractor of the system is contained in the corresponding ideal and is a copy of a quaternion attractor. <strong>The zero divisors of the split-biquaternion algebra act coordinatewise, and their effect on a system is the loss of one factor, not a collapse of the norm.</strong></p>
+<p><strong>Remark (the open set condition at the zero divisors).</strong> A generator whose multiplier vanishes on one factor is constant on that factor: two points that differ only in the killed component have the same image, so the pieces of the attractor are not separated on the corresponding ideal and the open set condition can fail there. A system whose attractor meets an ideal in a set of positive dimension has no strictly separated pieces over the ideal, and its dimension must be computed inside the two factors, by the product formula, rather than by a single similarity equation for the whole system. <strong>In the biquaternion case the same failure occurs at the zero-divisor cone (<em>The Biquaternion Iterated Function Systems</em>), and in the split-quaternion case of signature $(2,2)$ at the null cone of the indefinite norm (<em>The Split-Quaternion Quadratic Map and Its Julia Sets</em>); the split-biquaternion failure is the coordinatewise one of the two ideals.</strong></p>
+<h2 id="the-parity-structure-of-the-systems">The Parity Structure of the Systems</h2>
+<p><strong>Proposition (even and odd generators).</strong> Let $\tilde A\in\mathbb{H}_{\mathbb{D}}$ be written $\tilde A=\tilde A^0+j\tilde A^1$ with $\tilde A^0$ even and $j\tilde A^1$ odd. Then</p>
+<ol>
+<li>if $\tilde A$ is even ($\tilde A^1=0$), left multiplication by $\tilde A$ preserves the even part and the odd part;</li>
+<li>if $\tilde A$ is odd ($\tilde A^0=0$), left multiplication by $\tilde A$ exchanges the even part and the odd part.</li>
+</ol>
+<p><strong>Proof.</strong> $\tilde A(\tilde C+j\tilde D)=\tilde A\tilde C+j\tilde A\tilde D$ in the even case, so the parity of the two terms is preserved; in the odd case $\tilde A=j\tilde A^1$ gives $j\tilde A^1\tilde C+\tilde A^1\tilde D$, whose first term is odd and second even, so the parities are exchanged.</p>
+<p><strong>Corollary (parity-preserving systems).</strong> A system whose generators all have even multipliers preserves the parity decomposition, and its attractor is the union of an even attractor and an odd attractor exchanged by the volume-element symmetry; a system with an odd multiplier moves mass between the two chiral sides and has an attractor that is not parity-split.</p>
+<p><strong>Remark (the two gradings of a system).</strong> A split-biquaternion system has the idempotent (product) structure and the parity (Clifford) structure, and the two are different: the first splits the attractor into two independent factors and is available for every system, the second constrains the generator list and describes how the system respects the division subalgebra of the even part. <strong>The Clifford grading of the algebra is a constraint on the systems, and the product structure of the algebra is a reduction of the systems; the article states both.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The split-biquaternion iterated function systems reduce to quaternion systems on the two idempotent factors: the operator norm of a left multiplication is the maximum of the moduli of the two quaternion components, so a generator is a contraction exactly when both component multipliers have modulus below one; the attractor of a diagonal system is the product of the two quaternion attractors, and the similarity dimension is the sum of the two quaternion dimensions, by the product formula. A zero-divisor multiplier kills one factor, is a legitimate contraction and produces an attractor in the corresponding ideal. The Clifford parity grading constrains the systems: an even generator preserves the even and the odd parts, an odd generator exchanges them, and a parity-preserving system has its attractor split by the parity decomposition. The split-biquaternion systems are the quaternion systems read on two factors with the parity bookkeeping added, and the comparison with the biquaternion systems is the comparison of a product theory with a coupled one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f_i(\tilde Q)=\tilde A_i\tilde Q+\tilde B_i$</td>
+<td>a generator</td>
+</tr>
+<tr>
+<td>$\tilde A_i^\pm$</td>
+<td>the two quaternion components of the multiplier</td>
+</tr>
+<tr>
+<td>$\|L_{\tilde A}\|=\max(|\tilde A_+|,|\tilde A_-|)$</td>
+<td>the operator norm</td>
+</tr>
+<tr>
+<td>$K=K^+\times K^-$</td>
+<td>the attractor</td>
+</tr>
+<tr>
+<td>$s_\pm$</td>
+<td>the two quaternion similarity dimensions</td>
+</tr>
+<tr>
+<td>$s_++s_-$</td>
+<td>the dimension of the split-biquaternion attractor</td>
+</tr>
+<tr>
+<td>$\mathbb{H}\tilde\Pi_\pm$</td>
+<td>the ideals reached by zero-divisor generators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Quaternion Iterated Function Systems</em> (<code>articles_maths/the-quaternion-iterated-function-systems.md</code>), for the two factor theories.</li>
+<li><em>The Split-Biquaternion Quadratic Family</em> (<code>articles_maths/the-split-biquaternion-quadratic-family.md</code>), for the norm identity and the product decomposition used in the operator-norm computation.</li>
+<li><em>The Clifford Decomposition of the Split-Biquaternion Fractals</em> (<code>articles_maths/the-clifford-decomposition-of-the-split-biquaternion-fractals.md</code>), for the parity grading of the generators.</li>
+<li><em>Split-Biquaternion Zero Divisors</em> (<code>articles_maths/split-biquaternion-zero-divisors.md</code>), for the ideals of the zero-divisor generators.</li>
+<li><em>Fractal Geometry</em> (<code>articles_maths/fractal-geometry.md</code>) and <em>Iterated Function Systems in the Complex Plane</em> (<code>articles_maths/iterated-function-systems-in-the-complex-plane.md</code>), for the attractor theorem, the similarity dimension and the product formula.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Split-Complex Julia Sets — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-split-complex-julia-sets"><strong>The Split-Complex Julia Sets</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-complex quadratic family $f_c(z) = z^2+c$ of <em>The Split-Complex Quadratic Family</em> is a map of the plane that is, in the idempotent coordinates $\varphi(z) = (z_+,z_-)$, the pair of one-dimensional maps $g_+(u) = u^2+c_+$ and $g_-(v) = v^2+c_-$. This article defines the Fatou and the Julia sets of such a map and proves the structure that the product decomposition forces: the Fatou set is the product $F_c = \varphi^{-1}(F_+ \times F_-)$ of the real Fatou sets, and the Julia set is the union of the two products $J_c = \varphi^{-1}\bigl((J_+ \times \mathbb{R}) \cup (\mathbb{R} \times J_-)\bigr)$ of the real Julia sets, one for each idempotent coordinate. The filled Julia set is the compact product $K_c = \varphi^{-1}(K_+ \times K_-)$ of the real filled Julia sets. The two forms of the norm, $N(z) = a^2-a'^2 = z_+z_-$, and their level sets — the hyperbolas that replace the circles of the complex case — are described, together with the degeneration of the polar decomposition on the null cone and the splitting of the Newton method.</p>
+<p>The point of the article is honesty about what is transferred and what is new. The definition of the Fatou and Julia sets, the completeness of the invariant sets and the coding are transferred from the one-dimensional theory, applied to the two real maps; the genuinely new phenomenon is that the Julia set of the plane map is a <strong>union of two products</strong> and is in general unbounded, whereas the Julia set of a polynomial in $\mathbb{C}$ is compact. The complex case that the comparison uses is <em>The Julia Sets of a Complex Polynomial</em> and <em>The Mandelbrot Set and the Quadratic Family</em>; the algebra, the idempotents and the null cone are those of <em>Split-Complex Algebra</em>, <em>Split-Complex Idempotents and Projections</em> and <em>Split-Complex Null Quadric and Projective Geometry</em>; the hyperbolic geometry of the sets is the subject of <em>The Hyperbolic Geometry of the Split-Complex Julia Sets</em>; and the general theory of the real dynamics is cited to the real quadratic family. No physics is invoked.</p>
+<h2 id="the-two-sets">The Two Sets</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> Let $f_c(z) = z^2+c$ with $c \in \mathbb{D}$. The <strong>Fatou set</strong> $F_c$ is the set of points $z$ for which the family of iterates $\{f_c^n\}$ is <strong>equicontinuous</strong> on some neighbourhood of $z$, the plane being given the Euclidean metric and its one-point compactification; the <strong>Julia set</strong> is the complement</p>
+<p>$$
+J_c = \mathbb{D} \setminus F_c .
+$$</p>
+<p>That is, $z \in F_c$ when there is a neighbourhood $U$ of $z$ on which, for every $\varepsilon > 0$, there is $\delta > 0$ with $|f_c^n(z') - f_c^n(z'')| < \varepsilon$ for all $n$ whenever $z', z'' \in U$ with $|z'-z''| < \delta$; the distance in the compactification is the spherical one.</p>
+<p><strong>Remark (why the definition is the metric one).</strong> A split-complex polynomial is not holomorphic in the sense of <em>Complex Analysis</em>, and the theory of normal families of holomorphic maps does not apply. The definition above is the real two-dimensional analogue: a family is normal exactly when it is equicontinuous in the spherical metric, and the Fatou set is the locus of normality. This is the definition used for the real dynamics of Part III, and it reduces to the holomorphic definition when the map is complex.</p>
+<p><strong>Theorem (the two sets are completely invariant).</strong> $f_c(F_c) \subseteq F_c$, $f_c^{-1}(F_c) = F_c$, and $f_c(J_c) = J_c = f_c^{-1}(J_c)$; also $J(f_c) = J(f_c^n)$ for every $n \geq 1$.</p>
+<p><strong>Proof.</strong> A polynomial is proper of degree two, hence open and finite-to-one; composing an equicontinuous family with the continuous map $f_c$ and pulling it back preserve equicontinuity locally, which gives the invariance. The invariance under the iterate follows because the subfamily $\{f_c^{kn}\}$ controls the family $\{f_c^n\}$ in the same way as in the complex case.</p>
+<h3 id="the-product-structure">The Product Structure</h3>
+<p><strong>Theorem (the Fatou set is a product).</strong> For every $c \in \mathbb{D}$ the Fatou set is the preimage under the isomorphism $\varphi$ of the product of the real Fatou sets,</p>
+<p>$$
+F_c = \varphi^{-1}\bigl(F_+ \times F_-\bigr) ,
+$$</p>
+<p>where $F_\pm$ is the Fatou set of the real quadratic map $g_\pm(x) = x^2 + c_\pm$ on $\mathbb{R}$.</p>
+<p><strong>Proof.</strong> The iterates satisfy $f_c^n = \varphi^{-1}\circ(g_+^n,g_-^n)\circ\varphi$. A family of maps into the product $\mathbb{R}^2$ is equicontinuous at a point if and only if each coordinate family is equicontinuous at the corresponding coordinate of the point: if one coordinate fails, a small perturbation produces a large change in that coordinate, hence in the pair; if both hold, the product estimate controls the pair. Applying this to $f_c^n$ and using that $\varphi$ is a bi-Lipschitz linear isomorphism gives the statement.</p>
+<p><strong>Corollary (the Julia set is a union of two products).</strong> The Julia set is</p>
+<p>$$
+J_c = \varphi^{-1}\Bigl(\bigl(J_+ \times \mathbb{R}\bigr) \cup \bigl(\mathbb{R} \times J_-\bigr)\Bigr) ,
+$$</p>
+<p>since the complement of $F_+ \times F_-$ in $\mathbb{R}^2$ is $(J_+ \times \mathbb{R}) \cup (\mathbb{R} \times J_-)$. In the coordinates $z = a+ja'$ the two pieces are the vertical and the horizontal product sets $\{z_+ \in J_+\}$ and $\{z_- \in J_-\}$, each a union of lines in the idempotent coordinates.</p>
+<p><strong>Remark (transferred and new).</strong> The structure of each factor — the compactness of $J_\pm$, its perfectness when nonempty, the density of the repelling periodic points — is the one-dimensional theory, transferred. What is new in the plane is that the Julia set is the union of two products, hence <strong>unbounded</strong> as soon as $J_+$ or $J_-$ is nonempty, and that $J_c$ is not contained in the filled Julia set in general. In the complex case the analogous statement is simply $J = J$, the product being absent.</p>
+<h3 id="the-filled-julia-set">The Filled Julia Set</h3>
+<p><strong>Definition.</strong> The <strong>filled Julia set</strong> of $f_c$ is</p>
+<p>$$
+K_c = \{z \in \mathbb{D} : \text{the orbit } (f_c^n(z)) \text{ is bounded}\} ,
+$$</p>
+<p>the compactness locus of the three sets; it is compact and contains $c$ exactly when $c \in M_{\mathbb{D}}$.</p>
+<p><strong>Theorem (the filled Julia set is a compact product).</strong> For every $c \in \mathbb{D}$,</p>
+<p>$$
+K_c = \varphi^{-1}\bigl(K_+ \times K_-\bigr) ,
+$$</p>
+<p>where $K_\pm$ is the real filled Julia set of $g_\pm$, the set of real $x$ with bounded orbit.</p>
+<p><strong>Proof.</strong> Boundedness of a sequence in $\mathbb{R}^2$ is boundedness of both coordinates, and the orbit in the coordinates is the pair of real orbits.</p>
+<p><strong>Theorem (the relation between the three sets).</strong> The real Julia set contains the boundary of the real filled Julia set, $\partial K_\pm \subseteq J_\pm$; hence
+$$
+\partial K_c \subseteq J_c \subseteq \varphi^{-1}\bigl(K_+\times\mathbb{R}\bigr)\cup\varphi^{-1}\bigl(\mathbb{R}\times K_-\bigr) ,
+$$
+and the second set is strictly larger than $K_c$ in general. The Julia set is <strong>never</strong> the boundary of the filled Julia set: $J_c$ is unbounded whenever $J_+$ or $J_-$ is nonempty, while $\partial K_c$, being a subset of the compact $K_c$, is compact. In the plane the two sets therefore never coincide, and the boundary of the filled Julia set is a proper part of the Julia set.</p>
+<p><strong>Proof.</strong> For the one-dimensional real map, a point of $\partial K_\pm$ has a bounded orbit and is not in the interior of $K_\pm$. If it were in the real Fatou set, its component would be either an interval of escaping points, which is impossible because the orbit is bounded and the iterates near it are not equicontinuous with it, or an interval of an attracting basin, which would be contained in $K_\pm$ and make the point interior to $K_\pm$; both are contradictions, so $\partial K_\pm \subseteq J_\pm$. Transporting through $\varphi$ and using the product formula for $J_c$ gives $\partial K_c \subseteq J_c$. The unboundedness of $J_c$ is the remark above, and $\partial K_c$ is compact because $K_c$ is.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example ($c = 0$, the four lines).</strong> The real map $g(x) = x^2$ has the filled Julia set $K = [-1,1]$ and the real Julia set $J = \{-1,+1\}$: the points of modulus less than one converge to the attracting fixed point $0$, the points of modulus greater than one escape, and at $\pm 1$ the derivatives $2x$ have modulus $2$, so the family is not equicontinuous. Hence</p>
+<p>$$
+J_0 = \varphi^{-1}\bigl(\{z_+ = \pm 1\} \cup \{z_- = \pm 1\}\bigr) = \{a+a' = \pm 1\} \cup \{a-a' = \pm 1\} ,
+$$</p>
+<p>the four lines bounding the square $K_0 = \{|a+a'| \leq 1,\ |a-a'| \leq 1\}$. So $J_0$ is the union of the four <strong>lines</strong>, unbounded, of Hausdorff dimension one, and it strictly contains $\partial K_0$, which is the union of the four <strong>sides</strong> of the square, each side lying on one of the lines: the identification of the Julia set with the boundary of the filled Julia set is exactly the statement of the complex case that fails here, and it fails because the two real Julia sets are the two-point boundaries of the real intervals and the products of the points with the line are unbounded.</p>
+<p><strong>Example ($c = -2$, the two strips).</strong> The real map $g(x) = x^2-2$ is conjugate to the doubling map through $x = 2\cos(\pi \theta)$, hence is chaotic on the whole interval $[-2,2]$, and its real Julia set and filled Julia set coincide: $J = K = [-2,2]$. Hence</p>
+<p>$$
+J_{-2} = \varphi^{-1}\bigl([-2,2] \times \mathbb{R} \cup \mathbb{R} \times [-2,2]\bigr) = \{|a+a'| \leq 2\} \cup \{|a-a'| \leq 2\} ,
+$$</p>
+<p>the union of two closed strips of width four crossing at forty-five degrees; it is unbounded, has two-dimensional Lebesgue measure, and strictly contains the square filled Julia set $K_{-2} = \{|a+a'| \leq 2,\ |a-a'| \leq 2\}$. So in this case $J_{-2} \neq \partial K_{-2}$ and the split-complex Julia set is not compact.</p>
+<p><strong>Example (a real parameter with an attracting cycle).</strong> Let $c = -1$, so $c_+ = c_- = -1$ and $g_\pm(x) = x^2-1$ has the attracting two-cycle $\{0,-1\}$. The real filled Julia set $K_\pm \subseteq [-2,2]$ is the closure of the union of the basin intervals, the real Julia set $J_\pm = \partial K_\pm$ is a closed set with empty interior, and the split Julia set is the union $J_{-1} = \varphi^{-1}((J\times\mathbb{R})\cup(\mathbb{R}\times J))$ of two products of $J$ with a line. The numerical orbit of the critical point, $0 \mapsto -1 \mapsto 0$, confirms the attracting cycle. No value of the dimension of $J_\pm$ is asserted; the dimension, when it is needed, is that of the geometric measure theory of <em>The Hyperbolic Geometry of the Split-Complex Julia Sets</em>.</p>
+<h2 id="the-norm-the-null-cone-and-the-two-forms">The Norm, the Null Cone and the Two Forms</h2>
+<p><strong>Theorem (the two forms).</strong> The norm of $\mathbb{D}$ has the two equivalent forms</p>
+<p>$$
+N(z) = a^2 - a'^2 = z_+ z_- ,
+$$</p>
+<p>indefinite of signature $(1,1)$; its zero set is the <strong>null cone</strong> $\mathcal{N} = \mathbb{R}\Pi_+ \cup \mathbb{R}\Pi_-$, the two null lines $z_+ = 0$ and $z_- = 0$, whose nonzero elements are the zero divisors.</p>
+<p><strong>Definition.</strong> The <strong>level sets of the norm</strong> are the sets $N(z) = t$: for $t > 0$ the two branches of a hyperbola crossing the real axis at $\pm\sqrt{t}$; for $t < 0$ the two branches crossing the imaginary axis at $\pm\sqrt{|t|}j$; for $t = 0$ the two null lines. In the idempotent coordinates each level set is the hyperbola $z_+z_- = t$.</p>
+<p><strong>Remark (the hyperbolas replacing the circles).</strong> In the complex case the level sets of the modulus, $|z|^2 = $ const, are circles, and they are the equipotentials of the quadratic family. In the split case the level sets of the norm are hyperbolas with the null lines as the degenerate members; they are the natural equipotentials of the split-complex plane, and their asymptotes are the null directions. The Julia set, however, is assembled from the level sets of the <strong>coordinate functionals</strong> $z_+$ and $z_-$, which are the two families of lines parallel to the null lines, and not from the level sets of the norm: the product formula above can be read as saying that the Julia set is a union of two families of such lines, indexed by the real Julia sets.</p>
+<p><strong>Remark (the polar decomposition degenerates on the null cone).</strong> A nonzero element admits the polar decomposition $z = |N(z)|^{1/2}u$ with $u$ a unit only off the null cone; on the null lines the norm vanishes and the decomposition is undefined. This is why the definition and the study of the two sets are carried out in the idempotent coordinates and not in the polar coordinates of <em>Hyperbolic Rotations</em>: the polar form is available exactly on the units $\mathbb{D} \setminus \mathcal{N}$, and the coordinate form everywhere.</p>
+<h2 id="the-newton-method">The Newton Method</h2>
+<p><strong>Theorem (the Newton map splits).</strong> Let $p(z) = \sum_{k=0}^{d} a_k z^k$ be a polynomial with coefficients $a_k \in \mathbb{D}$, and let $N_p(z) = z - p(z)/p'(z)$ be the Newton map of $p$, defined where $p'(z)$ is a unit. Then $N_p$ commutes with the idempotent decomposition: in the coordinates,</p>
+<p>$$
+\varphi\bigl(N_p(z)\bigr) = \bigl(N_{p_+}(z_+),\ N_{p_-}(z_-)\bigr) ,
+$$</p>
+<p>where $p_\pm(x) = \sum_k a_{k\pm} x^k$ is the real polynomial obtained from the coefficients of $p$ and $N_{p_\pm}$ is its real Newton map.</p>
+<p><strong>Proof.</strong> A polynomial with coefficients in $\mathbb{D}$ splits, $\varphi(p(z)) = (p_+(z_+), p_-(z_-))$, because $\varphi$ is a ring homomorphism and $\varphi(a_k) = (a_{k+},a_{k-})$; the same holds for the derivative. The quotient of two split-complex numbers with nonzero coordinates is componentwise in the coordinates, since $\Pi_\pm$ are orthogonal idempotents; hence the Newton quotient splits, and the formula follows.</p>
+<p><strong>Corollary.</strong> The Fatou set of the Newton map is $\varphi^{-1}(F_{p_+} \times F_{p_-})$ and its Julia set is $\varphi^{-1}((J_{p_+}\times\mathbb{R})\cup(\mathbb{R}\times J_{p_-}))$, with the real Newton basins of the two factor polynomials as the factors. In particular the fractal Newton basins of a real polynomial with distinct real roots are the products of the real basins and their boundaries, and the "Newton fractal" of the split-complex plane is a union of two products of one-dimensional basins.</p>
+<p><strong>Example.</strong> Let $p(z) = z^2-1$, so that $p_\pm(x) = x^2-1$ and the Newton map is $N(z) = \tfrac12(z + z^{-1})$ on the units. The real Newton map $N(x) = \tfrac12(x + x^{-1})$ is defined for $x \neq 0$, has the two superattracting fixed points $\pm 1$, and its real Julia set on the projective line $\mathbb{R}\cup\{\infty\}$ is $\{0,\infty\}$; the two real basins are the half-lines $(0,\infty)$ and $(-\infty,0)$. The split-complex equation $z^2-1 = 0$ has the four roots $\pm1$ and $\pm j$, which are the preimages under $\varphi$ of the four sign pairs; the basin of the root with sign pair $(\epsilon,\eta)$ is $\varphi^{-1}\bigl(B_{\epsilon}\times B_{\eta}\bigr)$, the region where $z_+$ has the sign $\epsilon$ and $z_-$ the sign $\eta$, that is, one of the four quadrants of the idempotent plane. The Newton Julia set is the common boundary, the union of the two null lines and the line at infinity. The example shows that the Newton fractal of a real polynomial splits, and that its pieces are the four products of the one-dimensional basins.</p>
+<h2 id="summary">Summary</h2>
+<p>The Fatou set of a split-complex quadratic map $f_c(z) = z^2+c$ is the locus of equicontinuity of the iterates, and the Julia set is its complement. In the idempotent coordinates $\varphi(z) = (z_+,z_-)$ the map is the pair of real quadratic maps $u \mapsto u^2+c_+$, $v \mapsto v^2+c_-$, and the two sets factor: $F_c = \varphi^{-1}(F_+ \times F_-)$ is a product, while $J_c = \varphi^{-1}((J_+ \times \mathbb{R}) \cup (\mathbb{R} \times J_-))$ is the union of two products and is unbounded in general. The filled Julia set is the compact product $K_c = \varphi^{-1}(K_+ \times K_-)$ of the real filled Julia sets, and the two sets never coincide: $J_c$ contains $\partial K_c$ and is unbounded, so it is never equal to the compact $\partial K_c$. For $c = 0$ the Julia set is the four lines $a \pm a' = \pm 1$, containing the four sides of the square; for $c = -2$ it is the union of two crossing strips while the filled Julia set is their intersection.</p>
+<p>The norm is indefinite, with the two forms $N = a^2-a'^2 = z_+z_-$; its level sets are the hyperbolas and the two null lines, replacing the circles of the complex case, and its vanishing locus is the null cone of the zero divisors, on which the polar decomposition is undefined. The two sets are nevertheless defined everywhere, in the idempotent coordinates, and the Newton map of a split-complex polynomial splits in the same way. The general one-dimensional theory is cited to the real quadratic family; the geometry of the sets with the hyperbolic rotations is the subject of <em>The Hyperbolic Geometry of the Split-Complex Julia Sets</em>, and the complex case that the comparison uses is <em>The Julia Sets of a Complex Polynomial</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f_c(z) = z^2+c$</td>
+<td>Split-complex quadratic map</td>
+</tr>
+<tr>
+<td>$\varphi(z) = (z_+,z_-) = (a+a',a-a')$</td>
+<td>Idempotent coordinates</td>
+</tr>
+<tr>
+<td>$g_\pm(x) = x^2+c_\pm$</td>
+<td>The pair of real quadratic maps</td>
+</tr>
+<tr>
+<td>$F_c$, $J_c$</td>
+<td>Fatou set, Julia set of $f_c$</td>
+</tr>
+<tr>
+<td>$F_\pm$, $J_\pm$</td>
+<td>Fatou and Julia sets of the real maps</td>
+</tr>
+<tr>
+<td>$K_c = \varphi^{-1}(K_+\times K_-)$</td>
+<td>Filled Julia set, the compact product</td>
+</tr>
+<tr>
+<td>$N(z) = a^2-a'^2 = z_+z_-$</td>
+<td>Norm, indefinite</td>
+</tr>
+<tr>
+<td>$\mathcal{N} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$</td>
+<td>Null cone, the two null lines</td>
+</tr>
+<tr>
+<td>$N_p$</td>
+<td>Newton map, splitting as $N_{p_\pm}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Robert L. Devaney, <em>An Introduction to Chaotic Dynamical Systems</em>, 2nd edition (Addison-Wesley, 1989), for the real quadratic dynamics and the Julia set of a real map.</li>
+<li>Pierre Fatou, "Sur les équations fonctionnelles", <em>Bulletin de la Société Mathématique de France</em> 47 (1919), 161–271; 48 (1920), 33–94, for the original equicontinuity definition of the two sets.</li>
+<li>I. M. Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the split-complex (hyperbolic) plane and its idempotent structure.</li>
+<li>John Milnor, <em>Dynamics in One Complex Variable</em>, 3rd edition (Princeton University Press, 2006), for the complex case used for comparison.</li>
+<li>John W. Milnor, "Remarks on iterated cubic maps", <em>Experimental Mathematics</em> 1 (1992), 5–24, for the real dynamics and the one-dimensional Julia sets.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

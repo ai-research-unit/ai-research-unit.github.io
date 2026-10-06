@@ -60,7 +60,7 @@
 </ul>
 <p>The reason the two statements do not contradict each other is the subject of the companion article on gauge redundancy. The phase of the scalar is a <strong>pure gauge direction</strong>: a rotation of the phase is a gauge transformation, so two vacua differing by a phase are two descriptions of one configuration. What the Higgs mechanism erases is therefore a redundant label, not a physical degree of freedom. The erasure is of the description; the physics is re-encoded, reversibly, and leaves a record. This is what distinguishes the Higgs mechanism from confinement, the subject of the other companion: confinement removes partonic labels from the asymptotic algebra and leaves no gauge choice that recovers them, whereas the Higgs mechanism removes a gauge coordinate and records its effect in a mass.</p>
 <p>The article proceeds as follows. The symmetric phase is set up with its circle of degenerate vacua, and the informational status of the phase is fixed. The erasure is then shown to be the elimination of a gauge direction, with the invariant content of the vacuum isolated. The relocation of the information into the longitudinal mode and the mass is then derived, with the mass coefficient recomputed on a generic connection. The symmetry-breaking map is read as a channel — unitary on the full degrees of freedom and many-to-one only on the gauge-invariant ones — and compared with the loss of confinement and with the redundancy of the gauge orbit. The vacuum is then read as a stable record, in the structure of einselection, and the Landauer comparison is drawn. A ledger separates the framework's own construction from the imports.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$, and central scalar imaginary $i$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$. The gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The connection is $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A}\in\mathbb{M}_-$; it transforms as $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$; the coupling is $\kappa = q/\hbar$ with $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The scalar is the <strong>complex central field</strong> $\tilde{\Phi} = \varphi\,e_0$, $\varphi\in\mathbb{C}$. The amplitude symbol $\varphi$ is kept distinct from the connection's scalar potential $\phi$. The scalar part is $\mathrm{Sc}$, the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. The $ict$ coordinates are $x_\mu = (ict,x,y,z)$, so $\partial_0 = \partial_{ict} = -i\partial_t/c$, and the Lorentz-invariant contraction of two four-vectors is $g^{\mu\nu}U_\mu^*V_\nu$ with</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$, and central scalar imaginary $i$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$. The gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The connection is $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A}\in\mathbb{M}_-$; it transforms as $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$; the coupling is $\kappa = q/\hbar$ with $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The scalar is the <strong>complex central field</strong> $\tilde{\Phi} = \varphi\,e_0$, $\varphi\in\mathbb{C}$. The amplitude symbol $\varphi$ is kept distinct from the connection's scalar potential $\phi$. The scalar part is $\mathrm{Sc}$, the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ is inherited unchanged. The $ict$ coordinates are $x_\mu = (ict,x,y,z)$, so $\partial_0 = \partial_{ict} = -i\partial_t/c$, and the Lorentz-invariant contraction of two four-vectors is $g^{\mu\nu}U_\mu^*V_\nu$ with</p>
 <p>$$
 g = \mathrm{diag}(-1,+1,+1,+1)
 $$</p>
@@ -176,13 +176,13 @@ $$</p>
 = -\,\frac{q^2v^2}{2\hbar^2}\,g^{\mu\nu}A_\mu^*A_\nu
 = -\,\frac{q^2v^2}{2\hbar^2}\,\mathrm{Sc}\!\left(\tilde{A}^{\natural}\tilde{A}\right),
 $$</p>
-<p>the last step using the material-sector reality condition $\tilde{A}\in\mathbb{M}_-$, which makes $g^{\mu\nu}A_\mu^*A_\nu = A_0^2+\mathbf{A}^2 = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})$ — the two sides differ for a connection with four unconstrained complex components, so the reality condition is what lets the covariant-derivative form and the biquaternion form be identified. Comparing with the Proca normalization $-\tfrac12 M_A^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})$ gives the mass</p>
+<p>the last step using the material-sector reality condition $\tilde{A}\in\mathbb{M}_-$, which makes $g^{\mu\nu}A_\mu^*A_\nu = A_0^2+\mathbf{A}^2 = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural}$ — the two sides differ for a connection with four unconstrained complex components, so the reality condition is what lets the covariant-derivative form and the biquaternion form be identified. Comparing with the Proca normalization $-\tfrac12 M_A^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$ gives the mass</p>
 <p>$$
 M_A^2 = \frac{q^2v^2}{\hbar^2},
 \qquad
 M_A = \frac{qv}{\hbar}.
 $$</p>
-<p>This was recomputed by two independent routes on an explicit non-axis-aligned connection, $A_0 = 0.37i$, $A_1 = 0.82$, $A_2 = -0.51$, $A_3 = 0.29$ — with $A_0$ imaginary and $A_1,A_2,A_3$ real, as $\tilde{A}\in\mathbb{M}_-$ requires — at the generic parameter values $\kappa = q/\hbar = 0.7$ and $v = 1.3$. Directly from $-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ at the vacuum the kinetic density was $-0.3642397850$; independently, the biquaternion prediction $-\tfrac12\kappa^2v^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})$ was $-0.3642397850$ as well. The two routes agree to all digits and confirm $M_A^2 = q^2v^2/\hbar^2$, with $qv/\hbar = 0.910000$. The mass is gauge invariant, because it is read from a gauge-invariant term; the phase is invisible in it, because it depends only on $v$.</p>
+<p>This was recomputed by two independent routes on an explicit non-axis-aligned connection, $A_0 = 0.37i$, $A_1 = 0.82$, $A_2 = -0.51$, $A_3 = 0.29$ — with $A_0$ imaginary and $A_1,A_2,A_3$ real, as $\tilde{A}\in\mathbb{M}_-$ requires — at the generic parameter values $\kappa = q/\hbar = 0.7$ and $v = 1.3$. Directly from $-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ at the vacuum the kinetic density was $-0.3642397850$; independently, the biquaternion prediction $-\tfrac12\kappa^2v^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$ was $-0.3642397850$ as well. The two routes agree to all digits and confirm $M_A^2 = q^2v^2/\hbar^2$, with $qv/\hbar = 0.910000$. The mass is gauge invariant, because it is read from a gauge-invariant term; the phase is invisible in it, because it depends only on $v$.</p>
 <p>The informational reading is that the mass is the <strong>record</strong> of the breaking. The vacuum family is a circle, but every member yields the same $v$, hence the same mass. The information that survives is a single gauge-invariant number; the phase information that the erasure removed was never physical, and the physical information that the breaking produced is $v$, recorded in $M_A$ and in $m_h$. This is a compression of the description, not a loss of physics.</p>
 <h2 id="the-symmetry-breaking-map-as-a-channel">The Symmetry-Breaking Map as a Channel</h2>
 <h3 id="unitary-on-the-full-degrees-of-freedom">Unitary on the Full Degrees of Freedom</h3>
@@ -334,7 +334,7 @@ $$</p>
 <td>Gauge-field (Proca) mass; the record</td>
 </tr>
 <tr>
-<td>$-\tfrac12 M_A^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})$</td>
+<td>$-\tfrac12 M_A^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$</td>
 <td>Proca mass term</td>
 </tr>
 <tr>
@@ -354,12 +354,20 @@ $$</p>
 <td>Landauer cost of erasing a physical bit (not incurred here)</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$</td>
+<td>$\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$</td>
 <td>Trace pairing; $\mathrm{Tr}(e_0) = 2$</td>
 </tr>
 <tr>
 <td>$c = 1/\sqrt{\epsilon\mu}$, $c_0$</td>
 <td>Speed of light in the medium; in vacuum</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$</td>
+<td>the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$</td>
 </tr>
 </tbody>
 </table></div>

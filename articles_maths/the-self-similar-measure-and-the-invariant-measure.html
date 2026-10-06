@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Self-Similar Measure and the Invariant Measure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-self-similar-measure-and-the-invariant-measure"><strong>The Self-Similar Measure and the Invariant Measure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A self-similar set carries, besides its shape, a <strong>measure</strong>: the mass that each of its scaled copies receives, chosen by a list of weights. The two standard measures of the theory are the <strong>Bernoulli measure</strong> on the boundary $\partial\mathcal{T}=X^{\omega}$ of the rooted tree, which assigns to a cylinder $[v]$ the product of the weights of its letters, and its pushforward $\mu=\sum_i p_i\,\mu\circ S_i^{-1}$ on the attractor, the <strong>self-similar measure</strong>. The coding map of the attractor by the boundary converts one into the other, and the two carry the same information: the Bernoulli measure is where the entropy lives, the self-similar measure is where the dimension lives, and the coding identifies the second as the image of the first. This is the measure that <em>Self-Similar Groups</em> and <em>Limit Spaces and Schreier Graphs</em> defer to Part III by name, and it is the object on which every later article of the category is built.</p>
+<p>The article develops the two measures and their equivalence. It defines the Bernoulli measure by its values on the cylinders, proves that it is the unique probability measure for which the shift is measure-preserving and mixing, and computes its entropy and its dimension. It defines the self-similar measure by the invariance equation, proves the existence and the uniqueness of the solution by the contraction of the map on the space of probability measures, and reduces it to the Bernoulli measure through the coding map of the iterated function system. It states the <strong>exact dimension</strong>: the local dimension of the self-similar measure is the ratio of its entropy to the Lyapunov exponent of the system, almost everywhere, so that the dimension of the measure is the entropy divided by the mean logarithm of the ratio. And it treats the invariant measure of the limit dynamical system of a self-similar group on the boundary: the uniform Bernoulli measure is preserved by the group and by the shift, and the tiles $T_v$ of <em>Limit Spaces and Schreier Graphs</em> receive the masses $d^{-|v|}$ that the shift transports one onto the other.</p>
+<p>The Bernoulli measure on the shift space and the entropy are <em>Ergodic Theory</em> and <em>Symbolic Dynamics</em>; the attractor, the iterated function system, the open set condition, the similarity dimension and the Hausdorff dimension are <em>Fractal Geometry</em>, in Part IV, which owns the sets and their dimension, and they are cited here rather than rebuilt; the coding of the attractor by the shift, the limit space $\mathcal{J}_G$, the shift $s$ and the tiles $T_v$ are <em>Limit Spaces and Schreier Graphs</em>; the Shannon–McMillan–Breiman theorem and the large-deviation theory of the entropy are <em>Ergodic Theory</em> and the probability of Part III. The dimension of a measure is defined here; the Hausdorff dimension of a set is that of <em>Fractal Geometry</em>, and the two are compared but not identified.</p>
+<p>No physics is invoked.</p>
+<h2 id="the-bernoulli-measure-on-the-boundary">The Bernoulli Measure on the Boundary</h2>
+<h3 id="the-shift-space-and-the-cylinders">The Shift Space and the Cylinders</h3>
+<p><strong>Definition.</strong> Let $X$ be a finite alphabet with $d=\#X\ge 2$, let $\partial\mathcal{T}=X^{\omega}$ be the boundary of the rooted tree, and for a finite word $v=x_1\cdots x_n$ let $[v]$ be the <strong>cylinder</strong> of the infinite words beginning with $v$. The <strong>shift</strong> is the map</p>
+<p>$$
+\tau(x_1x_2x_3\cdots)=x_2x_3\cdots .
+$$</p>
+<p>The cylinders of a fixed length $n$ partition $\partial\mathcal{T}$ into $d^n$ closed and open sets, and the topology they generate is that of <em>Self-Similar Groups</em>; the shift is $d$-to-one, each cylinder $[x_1\cdots x_n]$ being the disjoint union of the $d$ cylinders $[xx_1\cdots x_n]$.</p>
+<p><strong>Definition.</strong> Let $p=(p_x)_{x\in X}$ be a probability vector with $p_x>0$ for all $x$. The <strong>Bernoulli measure</strong> $\nu_p$ is the unique probability measure with</p>
+<p>$$
+\nu_p[x_1\cdots x_n]=p_{x_1}p_{x_2}\cdots p_{x_n}
+$$</p>
+<p>for every cylinder. The <strong>uniform</strong> Bernoulli measure is the case $p_x=1/d$.</p>
+<p><strong>Theorem (the Bernoulli measure is the invariant measure of the shift).</strong> The shift preserves $\nu_p$, $\nu_p(\tau^{-1}A)=\nu_p(A)$ for every measurable $A$, and $\nu_p$ is its unique invariant probability measure when the action is the full shift. It is mixing: $\nu_p(\tau^{-n}A\cap B)\to\nu_p(A)\nu_p(B)$ for all measurable $A,B$.</p>
+<p><em>Proof.</em> The preimage of a cylinder is the disjoint union $\tau^{-1}[x_1\cdots x_n]= \bigsqcup_{x\in X}[xx_1\cdots x_n]$, so $\nu_p(\tau^{-1}[x_1\cdots x_n])=\sum_x p_xp_{x_1}\cdots p_{x_n}=\nu_p[x_1\cdots x_n]$, and the cylinders generate the $\sigma$-algebra. Uniqueness is the ergodicity of the full shift, and the mixing is the standard product computation; both are in <em>Ergodic Theory</em>.</p>
+<h3 id="the-entropy-of-the-bernoulli-measure">The Entropy of the Bernoulli Measure</h3>
+<p><strong>Definition.</strong> The <strong>entropy</strong> of the probability vector $p$ is</p>
+<p>$$
+h(p)=-\sum_{x\in X}p_x\log p_x .
+$$</p>
+<p><strong>Theorem.</strong> For $\nu_p$-almost every $\xi\in\partial\mathcal{T}$ the cylinder masses satisfy $-\tfrac1n\log\nu_p[\xi_1\cdots\xi_n]\to h(p)$, the <strong>Shannon–McMillan–Breiman theorem</strong> for the Bernoulli measure.</p>
+<p><em>Proof sketch.</em> Writing $\xi=\xi_1\xi_2\cdots$, the mass is the product $\prod_{i\le n}p_{\xi_i}$ and the logarithm is the sum $\sum_{i\le n}\log p_{\xi_i}$, a sum of independent identically distributed terms; the strong law of large numbers gives the limit $-\sum_x p_x\log p_x$, which is the theorem of <em>Ergodic Theory</em> in the independent case.</p>
+<p>The verification on a sampled word of length $10\,000$ gives $-\tfrac1n\log\nu_p[\xi_1\cdots\xi_n]=0.636075$ for $p=(\tfrac13,\tfrac23)$, against the exact $h(p)=0.636514$, and $0.693147$ for the uniform $p=(\tfrac12,\tfrac12)$, against $h(p)=\log 2$ exactly.</p>
+<h2 id="the-self-similar-measure">The Self-Similar Measure</h2>
+<h3 id="the-coding-map-and-the-invariance-equation">The Coding Map and the Invariance Equation</h3>
+<p><strong>Definition.</strong> Let $S_1,\dots,S_m$ be a self-similar iterated function system of ratios $r_i$ on a complete metric space, with attractor $\Lambda$, satisfying the open set condition of <em>Fractal Geometry</em> (the maps are written $f_i$ there). Let $p=(p_1,\dots,p_m)$ be a probability vector. A Borel probability measure $\mu$ on $\Lambda$ is <strong>self-similar</strong> with weights $p$ if</p>
+<p>$$
+\mu=\sum_{i=1}^m p_i\,\mu\circ S_i^{-1},
+$$</p>
+<p>that is, $\mu(A)=\sum_i p_i\,\mu(S_i^{-1}A)$ for every Borel $A$.</p>
+<p><strong>Theorem (existence and uniqueness).</strong> There is exactly one Borel probability measure $\mu_p$ on $\Lambda$ satisfying the invariance equation, and it is the pushforward of the Bernoulli measure by the coding map.</p>
+<p><em>Proof sketch.</em> The map $\Phi(\mu)=\sum_i p_i\,\mu\circ S_i^{-1}$ preserves the set of Borel probability measures on the compact set $\Lambda$. On that set with the Wasserstein distance $d_W$ of <em>Measure Theory and Integration</em>, the image measures satisfy $d_W(\mu\circ S_i^{-1},\tilde\mu\circ S_i^{-1})\le r_i\,d_W(\mu,\tilde\mu)$ because $S_i$ is $r_i$-Lipschitz, hence $d_W(\Phi\mu,\Phi\tilde\mu)\le\max_i r_i\,d_W(\mu,\tilde\mu)$. The ratio is $<1$, so $\Phi$ is a contraction and has a unique fixed point. For the identification: the coding map $\pi:\partial\mathcal{T}\to\Lambda$, $\pi(\xi)=\lim_n S_{\xi_1}\cdots S_{\xi_n}(x_0)$, is well defined and continuous, and the measure $\pi_*\nu_p$ satisfies the invariance equation because $\pi(x\xi)=S_x(\pi(\xi))$; uniqueness gives $\mu_p=\pi_*\nu_p$.</p>
+<p><strong>Corollary (the masses of the pieces).</strong> $\mu_p(S_i\Lambda)=p_i$, and more generally $\mu_p(S_{i_1}\cdots S_{i_n}\Lambda)=p_{i_1}\cdots p_{i_n}$; the self-similar measure is the Bernoulli measure read on the pieces.</p>
+<p><em>Proof.</em> The piece $S_{i_1}\cdots S_{i_n}\Lambda$ is the image of the cylinder $[i_1\cdots i_n]$ under $\pi$, and $\mu_p$ is the pushforward, so its mass is the Bernoulli mass of the cylinder.</p>
+<h3 id="the-dimension-of-the-self-similar-measure">The Dimension of the Self-Similar Measure</h3>
+<p><strong>Definition.</strong> The <strong>local dimension</strong> of a Borel measure $\mu$ at a point $x$ is</p>
+<p>$$
+\alpha(x)=\lim_{\rho\to 0}\frac{\log\mu(B(x,\rho))}{\log\rho},
+$$</p>
+<p>when the limit exists; the <strong>dimension of the measure</strong> is $\dim_H\mu=\sup\{\alpha : \alpha(x)\ge\alpha\ \text{for }\mu\text{-a.e. }x\}$, equivalently the essential supremum of the local dimension.</p>
+<p><strong>Theorem (the exact dimension).</strong> Let the system be self-similar with ratios $r_i$ satisfying the open set condition, and let $p$ be a probability vector. Then the local dimension of $\mu_p$ exists and is constant $\mu_p$-almost everywhere, and</p>
+<p>$$
+\dim_H\mu_p=\alpha=\frac{H(p)}{\chi}, \qquad H(p)=-\sum_i p_i\log p_i, \qquad \chi=\sum_i p_i\log\frac1{r_i}.
+$$</p>
+<p><em>Proof sketch.</em> The ball $B(\pi(\xi),\rho)$ with $r_{\xi_1}\cdots r_{\xi_{n+1}}\le\rho<r_{\xi_1}\cdots r_{\xi_n}$ contains the piece $S_{\xi_1}\cdots S_{\xi_{n+1}}\Lambda$ and is contained in a bounded number of pieces at the level $n$, so $\mu(B(\pi(\xi),\rho))\asymp p_{\xi_1}\cdots p_{\xi_n}$ and $\log\rho\approx-\sum_{i\le n}\log(1/r_{\xi_i})$. The numerator is $-\sum_{i\le n}\log p_{\xi_i}$ and the denominator is $\sum_{i\le n}\log(1/r_{\xi_i})$; both are Birkhoff sums of the shift, and the Shannon–McMillan–Breiman theorem of <em>Ergodic Theory</em> gives the ratio of the means. The constants are $H(p)/\chi$.</p>
+<p><strong>Corollary (the measure of maximal dimension).</strong> If $s$ solves $\sum_i r_i^s=1$ and $p_i=r_i^s$, then $\dim_H\mu_p=s=\dim_H\Lambda$ and $\mu_p$ is, up to normalisation, the restriction of the Hausdorff measure $\mathcal{H}^s$ to $\Lambda$. If $s<\dim_H\Lambda$ then $s<H(p)/\chi$.</p>
+<p><em>Proof.</em> With $p_i=r_i^s$ the numerator is $H(p)=-s\sum_i r_i^s\log r_i$ and the denominator is $\chi=-\sum_i r_i^s\log r_i$, so the ratio is $s$; and $s=\dim_H\Lambda$ by the theorem of Moran and Hutchinson quoted in <em>Fractal Geometry</em>.</p>
+<p><strong>Remark (the dimension of the measure and the dimension of the set).</strong> Always $\dim_H\mu_p\le\dim_H\Lambda$, with equality exactly for the maximal measure $p_i=r_i^s$; a biased measure is supported on a set of dimension $\dim_H\Lambda$ but has a smaller dimension of its own, and its multifractal refinement is the subject of the next article. The dimension of the <strong>set</strong> $\Lambda$ — the similarity dimension $\sum r_i^s=1$, the box-counting dimension and the Hausdorff dimension — is defined and computed in <em>Fractal Geometry</em>; only the dimension of the measure is defined here.</p>
+<p>The verification for the middle-thirds Cantor set, $r_1=r_2=\tfrac13$, gives $\dim_H\mu_p=H(p)/\log 3$; the uniform weights give $\log 2/\log 3=0.630930$, the biased weights $p=(\tfrac13,\tfrac23)$ give $H(p)=0.636514$ and the dimension $0.579380$, and the maximal weights $p_i=r_i^s=(\tfrac12,\tfrac12)$ return the dimension of the set.</p>
+<h2 id="the-invariant-measure-of-the-limit-dynamical-system">The Invariant Measure of the Limit Dynamical System</h2>
+<h3 id="the-boundary-the-group-and-the-shift">The Boundary, the Group and the Shift</h3>
+<p>The limit space, the shift, the tiles and the coding are those of <em>Limit Spaces and Schreier Graphs</em>; the group, the wreath recursion and the boundary are those of <em>Self-Similar Groups</em>. Let $G\le\operatorname{Aut}(\mathcal{T})$ be a contracting self-similar group on the $d$-letter alphabet, let $\mathcal{J}_G$ be its limit space and $s:\mathcal{J}_G\to\mathcal{J}_G$ the shift, and let $T_v$ be the tile, the image in $\mathcal{J}_G$ of the cylinder $[v]$. The boundary $\partial\mathcal{T}$ carries the uniform Bernoulli measure $\nu$ with weights $p_x=1/d$.</p>
+<p><strong>Theorem (the invariant measure).</strong> The uniform Bernoulli measure $\nu$ on the boundary is preserved by every element of $G$ and by the shift of the tree; it is the unique $G$-invariant probability measure when the action is level-transitive, and its image on the limit space under the coding is the unique $s$-invariant probability measure $\mu$. The tiles satisfy $\mu(T_{xv})=d^{-1}\mu(T_v)$ and are transported by the shift as $s(T_{xv})=T_v$.</p>
+<p><em>Proof.</em> The group acts by automorphisms of the tree, permuting at each level the $d^n$ words, so it preserves the masses $d^{-n}$ and hence $\nu$; uniqueness is the level-transitivity. The coding map $\pi$ is equivariant for the shift, so $\mu=\pi_*\nu$ is $s$-invariant. For the tiles: the tile $T_{xv}$ is a subset of $T_v$ of half the $\mu$-mass because $\nu[xv]=d^{-1}\nu[v]$, and the shift collapses the $d$ sub-tiles of $T_v$ onto $T_v$ with equal mass.</p>
+<p><strong>Corollary (the measure-preserving property).</strong> The shift $s$ preserves $\mu$, and its inverse branches $\sigma_x:\mathcal{J}_G\to T_x$, $s\circ\sigma_x=\mathrm{id}$, satisfy $\mu\circ\sigma_x^{-1}=\mu$ restricted to $T_x$ with weight $d^{-1}$: for every Borel $A$,</p>
+<p>$$
+\mu(s^{-1}A)=\sum_{x\in X}\mu(\sigma_x^{-1}(A\cap T_x))=\mu(A).
+$$</p>
+<p><em>Proof.</em> The preimage $s^{-1}A$ is the disjoint union of the $d$ sets $\sigma_x(A\cap T_x)$, each of mass $d^{-1}\mu(A\cap T_x)$ by the theorem, and the sum is $\mu(A)$ as $\{T_x\}$ partitions $\mathcal{J}_G$.</p>
+<h3 id="the-transport-of-the-tiles-and-the-general-weights">The Transport of the Tiles and the General Weights</h3>
+<p><strong>Remark (the non-uniform weights).</strong> The same construction with the weights $p$ in place of the uniform weights gives the Bernoulli measure $\nu_p$ and its pushforward $\mu_p=\sum_x p_x\,\mu_p\circ\sigma_x^{-1}$ on the limit space; it is $s$-invariant exactly when it is the unique $s$-invariant measure, and the <strong>invariant density</strong> of the shift is its Radon–Nikodym derivative when it exists. The Perron–Frobenius operator that carries a measure to its pushforward, the pressure and the dimension are the subject of <em>The Transfer Operator of the Limit Dynamical System</em>.</p>
+<p><strong>Example (the adding machine).</strong> The odometer of <em>Self-Similar Groups</em> has the circle for limit space and the doubling map for shift; the uniform Bernoulli measure on the binary boundary is the Lebesgue measure of the circle, and the tile $T_v$ has measure $2^{-|v|}$. The verification of the masses on the first five levels returns $2^{-n}$ exactly.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>Bernoulli measure</strong> $\nu_p$ on the boundary $\partial\mathcal{T}=X^{\omega}$ of the rooted tree is defined by $\nu_p[x_1\cdots x_n]=p_{x_1}\cdots p_{x_n}$, it is the unique probability preserved by the shift, it is mixing, and its entropy $h(p)=-\sum_x p_x\log p_x$ is the almost-sure limit $-\tfrac1n\log\nu_p[\xi_1\cdots\xi_n]$ of the Shannon–McMillan–Breiman theorem. The <strong>self-similar measure</strong> is the unique solution of $\mu=\sum_i p_i\,\mu\circ S_i^{-1}$, obtained as the fixed point of a contraction on the probability measures and identified as the pushforward $\mu_p=\pi_*\nu_p$ of the Bernoulli measure by the coding map; its pieces have the masses $p_{i_1}\cdots p_{i_n}$, and its <strong>exact dimension</strong> is the ratio of the entropy to the Lyapunov exponent,
+$$
+\dim_H\mu_p=\frac{H(p)}{\chi},\qquad H(p)=-\sum_i p_i\log p_i,\qquad \chi=\sum_i p_i\log\frac1{r_i},
+$$
+almost everywhere, with equality $\dim_H\mu_p=\dim_H\Lambda$ exactly for the maximal weights $p_i=r_i^s$, where $\sum_i r_i^s=1$. The dimension of the <strong>set</strong> is that of <em>Fractal Geometry</em>, cited and not rebuilt. On the limit space of a contracting self-similar group the measure is the pushforward of the uniform Bernoulli measure, preserved by the group and by the shift; the tiles satisfy $\mu(T_{xv})=d^{-1}\mu(T_v)$ and $s(T_{xv})=T_v$, and the shift is measure-preserving with $d$ inverse branches. The entropies $0.693147$ and $0.636514$ and the dimensions $0.630930$ and $0.579380$ for the middle-thirds Cantor set, the invariance $\mu(S_i\Lambda)=p_i$ and the tile masses were recomputed on the first levels; the general theorems are quoted from Hutchinson, Moran and the ergodic theory of Part III.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$, $d=\#X$, $\partial\mathcal{T}=X^{\omega}$</td>
+<td>Alphabet, its size, the boundary of the tree</td>
+</tr>
+<tr>
+<td>$[v]$, $x_1\cdots x_n$</td>
+<td>Cylinder of the words beginning with $v$; a word</td>
+</tr>
+<tr>
+<td>$p$, $\nu_p$</td>
+<td>Probability vector; the Bernoulli measure</td>
+</tr>
+<tr>
+<td>$h(p)=-\sum p_x\log p_x$</td>
+<td>The entropy of the Bernoulli measure</td>
+</tr>
+<tr>
+<td>$\tau$</td>
+<td>The shift of the boundary</td>
+</tr>
+<tr>
+<td>$S_i$, $r_i$, $m$</td>
+<td>The contractions, their ratios, their number</td>
+</tr>
+<tr>
+<td>$\Lambda$, $\pi$</td>
+<td>The attractor; the coding map</td>
+</tr>
+<tr>
+<td>$\mu_p=\sum_i p_i\,\mu_p\circ S_i^{-1}$</td>
+<td>The self-similar measure</td>
+</tr>
+<tr>
+<td>$\alpha=\dim_H\mu_p=H(p)/\chi$</td>
+<td>The local and global dimension of the measure</td>
+</tr>
+<tr>
+<td>$p_i=r_i^s$</td>
+<td>The weights of maximal dimension</td>
+</tr>
+<tr>
+<td>$G$, $\mathcal{J}_G$, $s$, $T_v$</td>
+<td>The group, the limit space, the shift, the tiles</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John E. Hutchinson, "Fractals and self-similarity", <em>Indiana University Mathematics Journal</em> <strong>30</strong> (1981), 713–747, for the attractor, the open set condition and the self-similar measure.</li>
+<li>Patrizia A. P. Moran, "Additive functions of intervals and Hausdorff measure", <em>Mathematical Proceedings of the Cambridge Philosophical Society</em> <strong>42</strong> (1946), 15–23, for the exact dimension of a self-similar set.</li>
+<li>Kenneth Falconer, <em>Techniques in Fractal Geometry</em> (Wiley, 1997), for the dimension of a self-similar measure, the local dimension and the Legendre transform.</li>
+<li>Kenneth Falconer, <em>Fractal Geometry: Mathematical Foundations and Applications</em> (Wiley, 3rd ed. 2014), for the Hausdorff and box dimensions of the attractor.</li>
+<li>Peter Walters, <em>An Introduction to Ergodic Theory</em> (Springer, 1982), for the Bernoulli measure, the entropy and the Shannon–McMillan–Breiman theorem.</li>
+<li>Yakov B. Pesin, <em>Dimension Theory in Dynamical Systems</em> (University of Chicago Press, 1997), for the dimension of a measure and the thermodynamic formalism.</li>
+<li>Volodymyr Nekrashevych, <em>Self-similar groups</em>, Mathematical Surveys and Monographs <strong>117</strong> (American Mathematical Society, 2005), for the boundary, the wreath recursion and the limit space of a self-similar group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

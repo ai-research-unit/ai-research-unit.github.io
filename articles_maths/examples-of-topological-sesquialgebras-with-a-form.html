@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examples of Topological Sesquialgebras with a Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="examples-of-topological-sesquialgebras-with-a-form"><strong>Examples of Topological Sesquialgebras with a Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The layer with a form has two definitions, the topological object with a continuous compatible Hermitian form and the normed or complete object in which the form is definite and its diagonal is a submultiplicative norm of <em>The Norm Defined by a Form</em>, and the examples are what separate them. The examples below are the sesquialgebras of <em>Examples of Topological Sesquialgebras</em> — associative algebras with an involution, read through the derived product $x \star y = xy^{*}$ — each with a Hermitian form $h$ compatible with the product, $h(xy,z) = h(y,x^{*}z)$, and the ring of dual numbers $\mathbb{C}[t]/(t^{2})$ is adjoined as the smallest algebra carrying an indefinite compatible form; what distinguishes them is whether the form is <strong>definite</strong> or <strong>indefinite</strong>, whether it is <strong>compatible</strong> or merely Hermitian, whether the norm it defines is <strong>submultiplicative</strong> and whether it satisfies the $\mathrm{C}^{*}$-condition, and whether the object is <strong>complete</strong>. The four standard models are definite and compatible and differ in the last three; the biquaternion algebra carries two forms, one definite and compatible and one indefinite and <strong>not</strong> compatible, so definiteness and compatibility are independent; the dual numbers carry two forms, one indefinite and compatible and one semi-definite with a nonzero radical, so definiteness is a genuine restriction; and the degenerate zero form is the witness that nondegeneracy is a hypothesis and not a consequence.</p>
+<p>Three facts organise the article. The <strong>four standard models</strong> — the field, the matrices with the trace form, the group algebra with the $L^{2}$ form, and the function algebra with the $L^{2}$ form — are the definite and compatible examples of the layer, and they separate the properties that the definitions do not: the field is complete with a submultiplicative norm satisfying the $\mathrm{C}^{*}$-condition, the matrices are complete with a submultiplicative norm that fails the $\mathrm{C}^{*}$-condition, the group algebra is complete with a norm that is not submultiplicative at all, and the function algebra is not even complete, its norm being neither submultiplicative nor complete. The <strong>indefinite examples</strong> show that an indefinite Hermitian form on an algebra can be compatible — the dual numbers with $h(a+bt,c+dt) = a\overline{d}+b\overline{c}$, of signature $(1,1)$ — or not, the biquaternion quaternion sesquilinear form $h_{\natural*}$ of signature $(2,6)$ being the standard witness, and the second supplies the input of <em>The Fundamental Symmetry of the Form</em> while the first is the caution that indefiniteness and compatibility are separate hypotheses. And the <strong>semi-definite and degenerate</strong> examples, the form $h_{0}(a+bt,c+dt) = a\overline{c}$ with the radical $tA$ and the zero form with radical $A$, are the witnesses that the radical of a form of the layer can be a proper ideal and that the definiteness of the normed object is exactly the vanishing of the radical, the statement of the completion theorems of <em>The Completion of a Sesquialgebra with a Form</em>.</p>
+<p>The article presents the four standard models, the indefinite models and the degenerate ones, tabulates the invariants of each, and records the collapse. The layer without a form is <em>Examples of Topological Sesquialgebras</em>; the norm and its axioms are <em>The Norm Defined by a Form</em>; the compatibility and the radical are <em>Topological Sesquialgebras with a Form</em>; the biquaternion pairings are <em>The Four Pairings of the Biquaternion Algebra</em> and <em>The Biquaternion Krein Form and Its Signature</em>. Throughout, $A$ is a topological sesquialgebra over a base $(R,\varsigma)$ of one of the two classical kinds of <em>The Norm Defined by a Form</em>, with fixed field $k = R^{\varsigma}$, $*$ its continuous $\varsigma$-semilinear involution, $h$ a continuous Hermitian form, linear in the first slot and $\varsigma$-semilinear in the second, and the derived product is $x \star y = xy^{*}$.</p>
+<h2 id="the-four-standard-models">The Four Standard Models</h2>
+<h3 id="the-field">The Field</h3>
+<p><strong>Example (the field, verdict: complete, submultiplicative, $\mathrm{C}^{*}$).</strong> Let $A = \mathbb{C}$ with its product, $* = \varsigma$ the conjugation and $h(z,w) = z\overline{w}$, the form of <em>The Norm Defined by a Form</em>, §<em>The Field</em>. The form is Hermitian, compatible, positive definite and nondegenerate, of signature $(2,0)$ over $\mathbb{R}$; the norm is the modulus, $\lVert z\rVert = \lvert z\rvert$; Cauchy–Schwarz is an equality for every pair because a one-dimensional space has proportional vectors; the norm is submultiplicative, $\lvert zw\rvert = \lvert z\rvert\lvert w\rvert$, and satisfies the $\mathrm{C}^{*}$-condition, $\lvert z^{*}z\rvert = \lvert z\rvert^{2}$. The radical is zero, the derived product is $z\star w = z\overline{w}$, of norm one, and the object is the smallest of the layer in which every property holds.</p>
+<h3 id="the-matrices">The Matrices</h3>
+<p><strong>Example (the matrices, verdict: complete, submultiplicative, no $\mathrm{C}^{*}$).</strong> Let $A = M_{n}(\mathbb{C})$ with the conjugate transpose and the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, the model of the layer. The form is Hermitian, compatible, positive definite, nondegenerate and of signature $(2n^{2},0)$ over $\mathbb{R}$; the norm is the <strong>Frobenius norm</strong>, the Euclidean norm of the $n^{2}$ entries, submultiplicative by Cauchy–Schwarz on the entries and with $\lVert E_{ij}\rVert = 1$ on the matrix units. The norm is <strong>not</strong> the $\mathrm{C}^{*}$-norm: $\lVert 1\rVert^{2} = n$ while $\lVert 1^{*}1\rVert = \sqrt{n}$, so the $\mathrm{C}^{*}$-condition fails for $n \geq 2$, and correspondingly the operator norm of $m_{1}$ is $1$ while $\lVert 1\rVert = \sqrt{n}$. The radical is zero, the involution is isometric, and the example is the model of the article and the first witness that the $\mathrm{C}^{*}$-condition is a restriction on the object and not a consequence of definiteness.</p>
+<h3 id="the-group-algebra">The Group Algebra</h3>
+<p><strong>Example (the group algebra, verdict: complete, not submultiplicative).</strong> Let $G$ be a finite group, let $A = \mathbb{C}[G]$ with the convolution product, the involution $f^{*}(x) = \overline{f(x^{-1})}$ and the $L^{2}$ form</p>
+<p>$$
+h(f,g) = \sum_{x\in G} f(x)\overline{g(x)} ,
+$$</p>
+<p>the form of the Hilbert algebra of <em>Hilbert Algebras</em>. The form is Hermitian, compatible and positive definite, of signature $(2\lvert G\rvert,0)$ over $\mathbb{R}$, and the object is complete because it is finite dimensional; but the norm is <strong>not submultiplicative</strong>: at the constant function $\mathbf{1}$ one has $(\mathbf{1}*\mathbf{1})(x) = \lvert G\rvert$, so $\lVert\mathbf{1}*\mathbf{1}\rVert = \lvert G\rvert^{3/2}$ while $\lVert\mathbf{1}\rVert^{2} = \lvert G\rvert$, which is smaller as soon as $\lvert G\rvert \geq 2$. The example is therefore a <em>topological</em> sesquialgebra with a form that is <strong>not normed by its form</strong>: it satisfies every hypothesis of the layer except the submultiplicativity of <em>The Norm Defined by a Form</em>, §<em>The Submultiplicative Norm</em>, and it is the witness that the submultiplicativity must be assumed. Its derived product is $f\star g = f*g^{*}$, of norm $\lvert G\rvert^{1/2}$.</p>
+<h3 id="the-function-algebra">The Function Algebra</h3>
+<p><strong>Example (the function algebra, verdict: incomplete and not submultiplicative).</strong> Let $X$ be a compact space with a finite measure $\mu$ of full support, let $A = C(X,\mathbb{C})$ with the pointwise product, the involution $f^{*} = \overline{f}$ and the $L^{2}$ form</p>
+<p>$$
+h(f,g) = \int_{X} f\,\overline{g}\,d\mu .
+$$</p>
+<p>The form is Hermitian, compatible and positive definite, of infinite signature over $\mathbb{R}$, and the object is <strong>not complete</strong> in the norm it defines, which is the $L^{2}$ norm: the completion is the Hilbert space $L^{2}(X,\mu)$, in which the algebra is dense but in which the product does not extend, since the product of two $L^{2}$ functions need not be in $L^{2}$. The norm is also <strong>not submultiplicative</strong>: for the indicator $f$ of a half of a space of measure $1$ one has $\lVert f^{2}\rVert = 2^{-1/2}$ while $\lVert f\rVert^{2} = 2^{-1}$, so the inequality fails. The example is the witness that neither completeness nor submultiplicativity follows from definiteness, and it is the boundary of <em>The Completion of a Sesquialgebra with a Form</em>: the completion exists as a Hilbert space, but the object of the layer is not recovered on it.</p>
+<h2 id="the-indefinite-and-the-semi-definite-models">The Indefinite and the Semi-Definite Models</h2>
+<h3 id="the-biquaternion-algebra">The Biquaternion Algebra</h3>
+<p><strong>Example (the biquaternion algebra, the two sesquilinear forms).</strong> On the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the Hermitian conjugation $*$, the <strong>complex sesquilinear form</strong></p>
+<p>$$
+h_{*}(P,Q) = \operatorname{Sc}(PQ^{*}) = \sum_{\mu} P_{\mu}\overline{Q_{\mu}}
+$$</p>
+<p>is Hermitian, compatible, positive definite, nondegenerate and of signature $(8,0)$ over $\mathbb{R}$, and its norm is the Euclidean norm of the eight real coordinates, the one of <em>The Euclidean Topology of the Biquaternion Algebra</em>; it is the definite model of <em>The Norm Defined by a Form</em>, §<em>The Biquaternion Trace Form</em>, and neither submultiplicativity nor the $\mathrm{C}^{*}$-condition holds for it: at the zero divisor $P = Q = 1 + \mathrm{i}e_{1}$, with $\mathrm{i} \in \mathbb{C}$ the scalar and $e_{1}$ the quaternion unit, one has $\lVert PQ^{*}\rVert = 2\sqrt{2}$ against $\lVert P\rVert\lVert Q\rVert = 2$ and $\lVert P^{*}P\rVert = 2\sqrt{2}$ against $\lVert P\rVert^{2} = 2$, while at the unit both hold, $\lVert 1\rVert^{2} = \lVert 1^{*}1\rVert = 1$. The <strong>quaternion sesquilinear form</strong></p>
+<p>$$
+h_{\natural*}(P,Q) = \operatorname{Sc}(P^{\natural}Q^{*}) = \sum_{\mu}\varepsilon_{\mu}P_{\mu}\overline{Q_{\mu}} , \qquad \varepsilon = (1,-1,-1,-1) ,
+$$</p>
+<p>is Hermitian, nondegenerate and <strong>indefinite</strong>, of signature $(2,6)$ over $\mathbb{R}$ and $(1,3)$ over $\mathbb{C}$; it is <strong>not compatible</strong> with the product, and the witness is the element $e_{1}$: with $P = Q = e_{1}$ and $R = 1$ one has $h_{\natural*}(PQ,R) = -1$ while $h_{\natural*}(Q,P^{*}R) = 1$, so the identity of the compatibility fails. The pair of forms is the finite-dimensional witness that definiteness and compatibility are independent conditions on a Hermitian form, and the second is the input of the indefinite theory of <em>The Fundamental Symmetry of the Form</em> and <em>The Biquaternion Krein Form and Its Signature</em>, whose isometry group is $U(1,3)$.</p>
+<h3 id="the-dual-numbers">The Dual Numbers</h3>
+<p><strong>Example (the dual numbers, an indefinite compatible form).</strong> Let $A = \mathbb{C}[t]/(t^{2})$ with the involution $*$ acting by the conjugation on the coefficients and fixing $t$, so that $(a+bt)^{*} = \overline{a}+\overline{b}t$; the algebra is the ring of dual numbers over $\mathbb{C}$, a local algebra in which $t$ is a nilpotent of square zero. For real $\alpha,\beta$ with $\beta \neq 0$, put</p>
+<p>$$
+h(a+bt, c+dt) = \alpha\, a\overline{c} + \beta\bigl(a\overline{d}+b\overline{c}\bigr) .
+$$</p>
+<p>Then $h$ is Hermitian, nondegenerate, of Gram matrix $\begin{pmatrix}\alpha&\beta\\\beta&0\end{pmatrix}$ of determinant $-\beta^{2}$, hence <strong>indefinite</strong>, and it is <strong>compatible</strong>: the identity $h(xy,z) = h(y,x^{*}z)$ holds, as the remark below records. At $\alpha = 0$, $\beta = 1$ the diagonal values are $h(1+t,1+t) = 2$ and $h(1-t,1-t) = -2$, so the signature is $(1,1)$; the companion form and the fundamental symmetry of <em>The Fundamental Symmetry of the Form</em> are those of the example there. The example is the smallest <strong>compatible indefinite</strong> object of the layer, and it is the witness that an indefinite form on an algebra need not fail the compatibility.</p>
+<p><strong>Remark (the compatible forms of the dual numbers).</strong> The compatibility $h(xy,z) = h(y,x^{*}z)$, read entrywise on the basis products, is two real equations on the Hermitian Gram matrix $G$; its solutions are $g_{22} = 0$ and $g_{12}\in\mathbb{R}$, that is the two-parameter family above. Every compatible form on the dual numbers is therefore indefinite, of Gram determinant $-\beta^{2}$, and the definite Hermitian forms are exactly those the compatibility excludes.</p>
+<h3 id="the-semi-definite-form-with-radical">The Semi-Definite Form with Radical</h3>
+<p><strong>Example (the dual numbers, a semi-definite form).</strong> On the same algebra take $\alpha = 1$, $\beta = 0$,</p>
+<p>$$
+h_{0}(a+bt, c+dt) = a\overline{c} .
+$$</p>
+<p>The form is Hermitian, compatible, positive <strong>semi-definite</strong> and not definite: $h_{0}(t,t) = 0$, and the radical is the ideal $tA = \{bt : b\in\mathbb{C}\}$, of complex dimension one. The diagonal is a seminorm, degenerate exactly on the radical, and the object is the input of <em>The Completion of a Sesquialgebra with a Form</em>, §<em>The Semi-Definite Case and the Radical</em>: its completion is the definite object $A/tA \cong \mathbb{C}$, the quotient by the closed radical. The example is the witness that the radical of a form of the layer can be a proper nonzero ideal, and that the definiteness asked of the normed object is exactly the vanishing of the radical.</p>
+<h3 id="the-degenerate-form">The Degenerate Form</h3>
+<p><strong>Example (the zero form).</strong> Let $A$ be any Banach algebra with a continuous involution and let $h \equiv 0$. The form is Hermitian, compatible and of no definiteness; its radical is the whole of $A$; the diagonal is the zero seminorm; and every operator is self-adjoint and isometric for $h$, so the operator theory of <em>The Adjoint under a Hermitian Form</em> is degenerate. The example is the analogue for the form of the degenerate zero product of <em>Examples of Topological Sesquialgebras</em>, §<em>The Degenerate Product</em>, and it is the witness that nondegeneracy is a hypothesis and not a consequence of the compatibility: nothing in the definition of a sesquialgebra with a form excludes the zero form.</p>
+<h2 id="the-tabulation">The Tabulation</h2>
+<h3 id="the-table">The Table</h3>
+<p><strong>Remark (the invariants of the examples).</strong> The tabulation records, for each model, the completeness, the signature or the definiteness class, the compatibility, whether the norm of the form is submultiplicative (a question that arises only for a definite form), the $\mathrm{C}^{*}$-condition (likewise), and the radical. The symbol $\checkmark$ is a yes, $\times$ a no, and $\varnothing$ a question that does not arise, the form defining no norm: an indefinite form, or one whose diagonal is only a seminorm (the semi-definite and zero rows, where the two norm columns do not apply; on the quotient by the radical the induced form is a norm and both conditions hold there).</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>form</th>
+<th>complete</th>
+<th>signature</th>
+<th>compatible</th>
+<th>submult. norm</th>
+<th>$\mathrm{C}^{*}$</th>
+<th>radical</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$z\overline{w}$</td>
+<td>$\checkmark$</td>
+<td>$(2,0)$</td>
+<td>$\checkmark$</td>
+<td>$\checkmark$</td>
+<td>$\checkmark$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$M_{n}(\mathbb{C})$</td>
+<td>$\operatorname{tr}(XY^{*})$</td>
+<td>$\checkmark$</td>
+<td>$(2n^{2},0)$</td>
+<td>$\checkmark$</td>
+<td>$\checkmark$</td>
+<td>$\times$, $n\geq2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}[G]$, $G$ finite</td>
+<td>$\sum f\overline{g}$</td>
+<td>$\checkmark$</td>
+<td>$(2\lvert G\rvert,0)$</td>
+<td>$\checkmark$</td>
+<td>$\times$</td>
+<td>$\times$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$C(X,\mathbb{C})$</td>
+<td>$\int f\overline{g}\,d\mu$</td>
+<td>$\times$</td>
+<td>$(\infty,0)$</td>
+<td>$\checkmark$</td>
+<td>$\times$</td>
+<td>$\times$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$h_{*}$</td>
+<td>$\checkmark$</td>
+<td>$(8,0)$</td>
+<td>$\checkmark$</td>
+<td>$\times$</td>
+<td>$\times$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$h_{\natural*}$</td>
+<td>$\checkmark$</td>
+<td>$(2,6)$</td>
+<td>$\times$</td>
+<td>$\varnothing$</td>
+<td>$\varnothing$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}[t]/(t^{2})$</td>
+<td>$a\overline{d}+b\overline{c}$</td>
+<td>$\checkmark$</td>
+<td>$(1,1)$</td>
+<td>$\checkmark$</td>
+<td>$\varnothing$</td>
+<td>$\varnothing$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}[t]/(t^{2})$</td>
+<td>$a\overline{c}$</td>
+<td>$\checkmark$</td>
+<td>semi-definite</td>
+<td>$\checkmark$</td>
+<td>$\varnothing$</td>
+<td>$\varnothing$</td>
+<td>$tA$</td>
+</tr>
+<tr>
+<td>Banach algebra</td>
+<td>$0$</td>
+<td>$\checkmark$</td>
+<td>degenerate</td>
+<td>$\checkmark$</td>
+<td>$\varnothing$</td>
+<td>$\varnothing$</td>
+<td>$A$</td>
+</tr>
+<tr>
+<td>Banach algebra, $*=\mathrm{id}$</td>
+<td>symmetric definite</td>
+<td>$\checkmark$</td>
+<td>$(n,0)$</td>
+<td>$\checkmark$</td>
+<td>$\checkmark$</td>
+<td>depends</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the reading of the table).</strong> The four standard models and the definite biquaternion form are the definite and compatible examples, and the table separates their properties one by one: the $\mathrm{C}^{*}$-condition holds for the field alone among the infinite families and fails for the matrices, the group algebra, the function algebra and the biquaternion trace form, submultiplicativity holds for the field and the matrices and fails for the group algebra, the function algebra and the biquaternion trace form, and completeness fails only for the function algebra. The indefinite rows show the two directions of the independence of definiteness and compatibility: $h_{\natural*}$ is indefinite and not compatible, and the dual-number form is indefinite and compatible. The semi-definite and degenerate rows show the first way in which a form can fail to define a norm of the layer: by a nonzero radical, as for $h_{0}$ and the zero form, and by being indefinite, as for the dual-number form and $h_{\natural*}$. In every nondegenerate definite example the norm of the form is the Euclidean norm of the coordinates in an orthogonal basis; the $\mathrm{C}^{*}$-condition fails at the unit for the matrix trace form, $\lVert 1\rVert^{2} = n$ against $\lVert 1^{*}1\rVert = \sqrt{n}$ for $n \geq 2$, and at the zero divisor $1 + \mathrm{i}e_{1}$ for the biquaternion trace form, $\lVert P^{*}P\rVert = 2\sqrt{2}$ against $\lVert P\rVert^{2} = 2$.</p>
+<h3 id="the-collapse-at-the-identity">The Collapse at the Identity</h3>
+<p><strong>Theorem (the collapse of the layer with a form).</strong> Let $A$ be an example with $\varsigma = \mathrm{id}$. Then the form is symmetric and $R$-bilinear, the compatibility is the identity $h(xy,z) = h(y,xz)$, the diagonal is a quadratic form and the norm of the form is the norm of a symmetric positive definite form; the examples are those of <em>Topological Algebras and Banach Algebras</em> with a symmetric definite form, the bilinear counterpart of the table being the Hilbert algebras of <em>Hilbert Algebras</em> and the symmetric forms of <em>Isometries and Orthogonal Transformations</em>. If in addition $* = \mathrm{id}$ then the derived product is the algebra product, the left multiplications are self-adjoint, and the object is a normed or Banach algebra with a symmetric definite form.</p>
+<p><em>Proof.</em> At $\varsigma = \mathrm{id}$ the semilinear slots are linear, the twists vanish, and each row of the table is the corresponding statement of the bilinear layer; the identification is the collapse theorem of <em>Topological Sesquialgebras with a Form</em>, §<em>The Collapse at the Trivial Involution</em>, and the norm statements are those of <em>The Norm Defined by a Form</em>, §<em>The Collapse at the Trivial Involution</em>. $\square$</p>
+<p><strong>Remark (the collapse in the table).</strong> The rows whose base involution is the conjugation — the complex field, the matrices, the complex group and function algebras, the two biquaternion forms and the dual numbers — do not collapse: their forms are sesquilinear, their norms scale by the modulus, and their derived products are the nontrivial ones of the layer. The rows with a trivial involution collapse: a Banach algebra with $* = \mathrm{id}$ and a symmetric definite form is an object of <em>Topological Algebras and Banach Algebras</em> with a symmetric form, of the kind studied in <em>Hilbert Algebras</em> and <em>Bilinear Forms</em>. The intermediate case of the layer, the base collapsed with $\varsigma = \mathrm{id}$ and $*$ nontrivial, is not among the rows: its examples are the real matrices with the transpose and the quaternions with the conjugation of <em>Examples of Topological Sesquialgebras</em>, whose forms are the symmetric ones of the bilinear layer.</p>
+<h2 id="summary">Summary</h2>
+<p>The examples of the layer with a form are the associative algebras with an involution of <em>Examples of Topological Sesquialgebras</em>, each with a compatible Hermitian form, and the tabulation separates the hypotheses that the definitions do not. The <strong>four standard models</strong> — the field $\mathbb{C}$ with $h(z,w) = z\overline{w}$, the matrices with the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, the group algebra with the $L^{2}$ form $\sum f\overline{g}$, and the function algebra with the $L^{2}$ form $\int f\overline{g}$ — are definite and compatible, and they separate <strong>completeness</strong> (failing only for the function algebra), <strong>submultiplicativity</strong> (failing for the group algebra and the function algebra) and the <strong>$\mathrm{C}^{*}$-condition</strong> (holding only for the field among them). The <strong>biquaternion algebra</strong> carries a definite compatible form $h_{*}$ of signature $(8,0)$ and an indefinite form $h_{\natural*}$ of signature $(2,6)$ that is <strong>not</strong> compatible, so definiteness and compatibility are independent; the <strong>dual numbers</strong> carry an indefinite compatible form of signature $(1,1)$ and a semi-definite form with radical $tA$, so a compatible form can be indefinite and a definite-looking diagonal can have a radical; and the <strong>zero form</strong> has radical the whole algebra and is the witness that nondegeneracy is assumed and not derived. In every definite nondegenerate example the norm of the form is the Euclidean norm in an orthogonal basis, the $\mathrm{C}^{*}$-condition fails at the unit for the matrix trace form and at the zero divisor $1 + \mathrm{i}e_{1}$ for the biquaternion trace form, and the radical vanishes exactly for the nondegenerate forms, which is the hypothesis under which the completion of <em>The Completion of a Sesquialgebra with a Form</em> is a completion in the layer.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h(xy,z) = h(y,x^{*}z)$</td>
+<td>the compatibility, the condition the forms of the layer satisfy</td>
+</tr>
+<tr>
+<td>$h(z,w) = z\overline{w}$ on $\mathbb{C}$</td>
+<td>the field, definite, submultiplicative, $\mathrm{C}^{*}$</td>
+</tr>
+<tr>
+<td>$h(X,Y) = \operatorname{tr}(XY^{*})$</td>
+<td>the trace form, Frobenius norm, no $\mathrm{C}^{*}$-condition</td>
+</tr>
+<tr>
+<td>$h(f,g) = \sum f\overline{g}$</td>
+<td>the $L^{2}$ form of the group algebra, complete, not submultiplicative</td>
+</tr>
+<tr>
+<td>$h(f,g) = \int f\overline{g}\,d\mu$</td>
+<td>the $L^{2}$ form of the function algebra, incomplete</td>
+</tr>
+<tr>
+<td>$h_{*}(P,Q) = \operatorname{Sc}(PQ^{*})$</td>
+<td>the biquaternion definite form, signature $(8,0)$</td>
+</tr>
+<tr>
+<td>$h_{\natural*}(P,Q) = \operatorname{Sc}(P^{\natural}Q^{*})$</td>
+<td>the biquaternion indefinite form, signature $(2,6)$, not compatible</td>
+</tr>
+<tr>
+<td>$h(a+bt,c+dt) = \alpha a\overline{c}+\beta(a\overline{d}+b\overline{c})$</td>
+<td>the dual-number family, indefinite and compatible</td>
+</tr>
+<tr>
+<td>$h_{0}(a+bt,c+dt) = a\overline{c}$</td>
+<td>the semi-definite form, radical $tA$</td>
+</tr>
+<tr>
+<td>$h \equiv 0$</td>
+<td>the degenerate form, radical $A$</td>
+</tr>
+<tr>
+<td>$\varnothing$</td>
+<td>a question that does not arise for an indefinite or degenerate form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frank F. Bonsall and John Duncan, <em>Complete Normed Algebras</em> (Springer, 1973), for the Banach algebras, their involutions and the submultiplicative norms of the examples.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of *-Algebras, Volume I</em> (Cambridge University Press, 1994), for the group algebras, the $\mathrm{C}^{*}$-algebras and the distinction between the $\mathrm{C}^{*}$-norm and the other algebra norms.</li>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the Hilbert algebras, the $L^{2}$ forms of the group algebra and the function algebra, and the boundedness of the multiplications.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the trace form, the Frobenius norm and the $\mathrm{C}^{*}$-identity of the matrix algebras.</li>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em> (Springer, 1974), for the indefinite forms, the signatures and the fundamental symmetry of the dual-number example.</li>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for the Hermitian forms over a field with involution, their Gram matrices, their radicals and their quotients.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the Hermitian forms on an algebra with involution and the compatibility with the product.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

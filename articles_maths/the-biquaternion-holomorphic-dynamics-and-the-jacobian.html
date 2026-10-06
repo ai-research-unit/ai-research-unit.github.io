@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Biquaternion Holomorphic Dynamics and the Jacobian — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-biquaternion-holomorphic-dynamics-and-the-jacobian"><strong>The Biquaternion Holomorphic Dynamics and the Jacobian</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion quadratic map is holomorphic for the complex structure of the algebra, so it has a complex derivative, a Jacobian, a critical set and a local inverse, and the local theory of holomorphic dynamics begins there. The article computes the Jacobian, identifies the critical set and the critical values, defines the Fatou set and the Julia set for the biquaternion map, proves that for a central parameter the two definitions of the Julia set coincide through the eigenvalues, and describes the local picture at the critical set. The several-variable theory differs from the one-variable theory in that the Fatou set and the Julia set can be defined in several inequivalent ways, and the article keeps the definitions apart and states which equivalences are proved.</p>
+<p>The quadratic family, its critical set and its derivative are <em>The Biquaternion Quadratic Map and Its Julia Sets</em>; the matrix model and the operator reading of the derivative are <em>The Matrix Representation and the Biquaternion Dynamics</em>; the cone and the singular Julia set are <em>The Zero Divisors and the Singular Julia Sets</em>; the Green's function and the equilibrium measure are <em>The Escape Radius and the Green's Function for the Biquaternions</em> and <em>The Pluripotential Theory of the Biquaternion Dynamics</em>. The general theory is <em>The Fatou Components and the Classification of the Dynamics</em> and <em>Several Complex Variables</em>.</p>
+<p>The article owns the Jacobian and its determinant, the local biholomorphism off the critical set, the definition of the Fatou and Julia sets, the central-parameter theorem identifying the two Julia sets, the fixed-point multiplier computation, and the local picture at the cone. It does not re-derive the derivative.</p>
+<p><strong>Standing convention.</strong> $F=F_{\tilde C}$ is the quadratic family in the complex bilinear product, $dF|_{\tilde Q}(\tilde P)=\tilde Q\tilde P+\tilde P\tilde Q$ is its complex derivative, and $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ is the critical set.</p>
+<h2 id="holomorphy-and-the-jacobian">Holomorphy and the Jacobian</h2>
+<p><strong>Proposition (holomorphy).</strong> The map $F$ is holomorphic for the complex structure of the algebra: in the four complex coordinates of the model it is a polynomial map with no conjugated coordinate. Its derivative at $\tilde Q$ is the complex-linear map</p>
+<p>$$
+dF|_{\tilde Q}:\tilde P\longmapsto\tilde Q\tilde P+\tilde P\tilde Q ,
+$$</p>
+<p>whose determinant, in the coordinates of the model, is $4\,N(\tilde Q)\,(2Q_0)^2$.</p>
+<p><strong>Proof.</strong> The complex bilinear product is complex-bilinear and the map is a polynomial in it; the derivative is the product rule, and the determinant is the critical-set proposition of <em>The Biquaternion Quadratic Map and Its Julia Sets</em>, where the matrix model gives the explicit form $I\otimes M+M^{\mathsf{T}}\otimes I$ and the determinant $\det(M)\operatorname{tr}(M)^2\cdot4$.</p>
+<p><strong>Corollary (the local inverse).</strong> Off the critical set $\Sigma(\mathbb{B})$ the map $F$ is a local biholomorphism: every $\tilde Q\notin\Sigma(\mathbb{B})$ has a neighbourhood $U$ with $F:U\to F(U)$ biholomorphic and $F^{-1}$ holomorphic on $F(U)$.</p>
+<p><strong>Proof.</strong> $\det dF|_{\tilde Q}\neq0$ exactly off $\Sigma(\mathbb{B})$, and the inverse function theorem for holomorphic maps of several variables applies.</p>
+<p><strong>Remark (the derivative is an operator and the Jacobian is its determinant).</strong> The derivative is the sum of two multiplication operators and not a multiplication; this is why the critical set is read from the pair of eigenvalues of the model and not from the element alone (<em>The Matrix Representation and the Biquaternion Dynamics</em>, §<em>The Warning: Elements and Operators</em>). <strong>The Jacobian vanishes on the union of the zero-divisor cone and the vector subspace, and nowhere else.</strong></p>
+<h2 id="the-critical-set-the-critical-values-and-the-local-picture">The Critical Set, the Critical Values and the Local Picture</h2>
+<p><strong>Proposition (the critical values).</strong> The critical set $\Sigma(\mathbb{B})$ is the union of the cone $\mathscr{Z}$ and the vector subspace $\mathrm{Vect}(\mathbb{B})$, both of complex dimension three. The image of the cone is the translate of the cone, $F(\mathscr{Z})=\mathscr{Z}+\tilde C$, and the image of the vector subspace is the complex line through the parameter in the scalar direction, $F(\mathrm{Vect}(\mathbb{B}))=\tilde C+\mathbb{C}e_0$; hence the set of critical values is $(\mathscr{Z}+\tilde C)\cup(\tilde C+\mathbb{C}e_0)$.</p>
+<p><strong>Proof.</strong> On the cone $F(\tilde Q)=\tilde Q^2+\tilde C=2Q_0\tilde Q+\tilde C$ with $\tilde Q^2=2Q_0\tilde Q$ by Cayley–Hamilton, and $2Q_0\tilde Q$ ranges over the cone as $\tilde Q$ does, so the image is the cone translated by $\tilde C$. On the vector subspace, $\mathbf P^2=-(\mathbf P,\mathbf P)e_0$ is central, and $-(\mathbf P,\mathbf P)$ ranges over all of $\mathbb{C}$ as $\mathbf P$ ranges over the pure vectors, so the image is the scalar line through $\tilde C$.</p>
+<p><strong>Remark (the derivative is nilpotent at the square-zero points).</strong> At a square-zero $\tilde Q$ the derivative is $\tilde P\mapsto\tilde P\tilde Q+\tilde Q\tilde P$, of image of complex dimension two, so the map is not a local biholomorphism there and the local degree is degenerate; <strong>on the cone the map is not finite, and this is the local form of the obstruction of the category.</strong></p>
+<h2 id="the-fatou-set-and-the-julia-set">The Fatou Set and the Julia Set</h2>
+<p><strong>Definition.</strong> The <strong>Fatou set</strong> $\mathcal{F}_{\tilde C}$ is the set of the points $\tilde Q$ having a neighbourhood on which the sequence of iterates $(F^n)$ is equicontinuous, equivalently a neighbourhood on which the family is normal; the <strong>Julia set</strong> $\mathcal{J}_{\tilde C}$ is its complement in $\mathbb{B}$. This is the <strong>dynamical Julia set</strong>, to be distinguished from the <strong>set-theoretic Julia set</strong> $J_{\tilde C}=\partial\mathcal K_{\tilde C}$ of the previous articles and from the support of the equilibrium measure, the <strong>small Julia set</strong> of <em>The Pluripotential Theory of the Biquaternion Dynamics</em>.</p>
+<p><strong>Remark (the three definitions).</strong> In one variable the Fatou set, the complement of the boundary of the filled Julia set and the complement of the support of the equilibrium measure all coincide after the extension to the Riemann sphere, and the three objects are one. In several variables the definitions are inequivalent in general: the equicontinuity definition uses the normalisation at infinity, the boundary of the filled Julia set uses the escape dichotomy, and the small Julia set uses the equilibrium measure. <strong>The article proves the identification for a central parameter and states the general equivalence as open.</strong></p>
+<p><strong>Proposition (the small Julia set is contained in the dynamical one).</strong> The support of the equilibrium measure is contained in the dynamical Julia set, and the dynamical Julia set is contained in the complement of the interior of the filled Julia set.</p>
+<p><strong>Proof.</strong> On a neighbourhood where the iterates are equicontinuous the dynamics is stable and the equilibrium measure, if it exists, is invariant and cannot charge an open set of stability by the classical argument of the one-variable theory transported to the model; the second inclusion is that the interior of the filled Julia set is a region of stable bounded dynamics.</p>
+<h2 id="the-central-parameter-and-the-eigenvalue-reduction">The Central Parameter and the Eigenvalue Reduction</h2>
+<p><strong>Theorem (the central-parameter identification).</strong> Let $\tilde C=Ce_0$ be central and let $\mathcal{F}_C$, $\mathcal{J}_C$ be the Fatou set and the Julia set of $\zeta\mapsto\zeta^2+C$ in the complex plane. Then for a diagonalisable $\Phi(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$,</p>
+<p>$$
+\tilde Q\in\mathcal{J}_{\tilde C}\iff \mathrm{spec}\,\Phi(\tilde Q)\cap\mathcal{J}_C\neq\emptyset ,
+$$</p>
+<p>and</p>
+<p>$$
+\mathcal{J}_{\tilde C}=\partial\mathcal K_{\tilde C}=\{\tilde Q : \mathrm{spec}\,\Phi(\tilde Q)\subset K_C \text{ and } \mathrm{spec}\,\Phi(\tilde Q)\cap J_C\neq\emptyset\}.
+$$</p>
+<p>So for a central parameter the dynamical Julia set, the boundary of the filled Julia set and the set of the matrices with an eigenvalue on the complex Julia set are one and the same set.</p>
+<p><strong>Proof.</strong> For a central parameter the orbit is the polynomial in one element and the spectrum iterates by the complex map, so the stability of the biquaternion orbit at a diagonalisable point is the stability of the two eigenvalue orbits: if an eigenvalue lies on the complex Julia set, an arbitrarily small perturbation of the eigenvalue produces an arbitrarily large change in the iterates and the family is not equicontinuous; if both eigenvalues lie in the complex Fatou set, the orbits are stable and the diagonaliser contributes a bounded, harmless factor, so the family is equicontinuous. The three sets on the right are equal by the eigenvalue reduction and the spectral description of the boundary of <em>The Hausdorff Dimension of the Biquaternion Julia Sets</em>.</p>
+<p><strong>Remark (the normalisation at infinity).</strong> In the complex plane the Fatou set includes the basin of infinity because the constant limit $\infty$ is normal on the sphere; in the model the same holds after the compactification of $\mathbb{C}^4$ by the hyperplane at infinity, on which the map is the squaring of the highest-degree part and the hyperplane is (super)attracting. <strong>The identification of the theorem uses this normalisation and is not available without it.</strong></p>
+<h2 id="fixed-points-and-their-multipliers">Fixed Points and Their Multipliers</h2>
+<p><strong>Proposition (the fixed points).</strong> For a central parameter $C$, the fixed points of $F$ are the solutions of $\tilde Q^2-\tilde Q+Ce_0=0$. They are the scalar solutions $\lambda e_0$ with $\lambda^2-\lambda+C=0$, and the non-scalar solutions $\tilde Q=\tfrac12e_0+\mathbf Q$ with $(\mathbf Q,\mathbf Q)=C-\tfrac14$, one for each complex isotropic vector of the quadratic form $\mathbf Q\cdot\mathbf Q$ with that value. The multiplier spectrum of a fixed point is</p>
+<p>$$
+\{2\lambda_1,\ 2\lambda_2,\ 2Q_0,\ 2Q_0\} ,
+$$</p>
+<p>the eigenvalues of the differential $L_{\tilde Q}+R_{\tilde Q}$, and the fixed point is attracting exactly when $\rho(\Phi(\tilde Q))<1/2$.</p>
+<p><strong>Proof.</strong> Insert $\tilde Q^2=2Q_0\tilde Q-N(\tilde Q)e_0$ (Cayley–Hamilton) into $\tilde Q^2+\tilde C=\tilde Q$: $(2Q_0-1)\tilde Q+(C-N)e_0=0$. If $\tilde Q$ is not central the two terms are independent and give $Q_0=\tfrac12$ and $N=C$, that is $(\mathbf Q,\mathbf Q)=C-\tfrac14$. The differential of the family is $L+R$, whose eigenvalues are the sums $\lambda_i+\lambda_j$ of the eigenvalues of the model, that is $\{2\lambda_1,\ \lambda_1+\lambda_2,\ \lambda_2+\lambda_1,\ 2\lambda_2\}=\{2\lambda_1,\ 2\lambda_2,\ 2Q_0,\ 2Q_0\}$; the attracting condition is that all four have modulus below one, and since $2Q_0=\lambda_1+\lambda_2$ is dominated by the two doubled eigenvalues, the condition is $|\lambda_i|<1/2$ for both, that is $\rho(\Phi(\tilde Q))<1/2$.</p>
+<p><strong>Corollary (the neutral fixed points).</strong> The non-scalar fixed points have $2Q_0=1$ among their multipliers, so they are never attracting; the ones with $\operatorname{tr}\Phi(\tilde Q)=1$ are neutral in the trace direction and repelling or neutral in the other, and they carry the parabolic local dynamics at the singular set.</p>
+<h2 id="the-local-dynamics-at-the-singular-set">The Local Dynamics at the Singular Set</h2>
+<p><strong>Remark (the local model at the square-zero cone).</strong> At a square-zero $\tilde Q$ the derivative has image of complex dimension two and kernel of complex dimension two, so the local map is not finite; the first non-linear term is the square itself, and on the cone the local picture is the familiar one of a map with a positive-dimensional fibre, the petals of the parabolic case being replaced by the cone directions. <strong>The local dynamics at the cone is the only part of the Fatou–Julia theory of the category that is not inherited from the one-variable theory</strong>, and it is where the local classification must be built if it is built at all.</p>
+<p><strong>Remark (what is open).</strong> The classification of the Fatou components of a biquaternion map, the equivalence of the three definitions of the Julia set for a non-central parameter, the structure of the Fatou set at the cone and the existence of a local normal form there are all open. <strong>The article reports the central-parameter theory, which is complete because it is the one-variable theory read on the eigenvalues, and states the non-central theory as the research problem it is.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion quadratic map is holomorphic, its derivative at a point is the sum of the left and the right multiplications by the point, and its Jacobian determinant is proportional to $N(\tilde Q)Q_0^2$, so the map is a local biholomorphism exactly off the critical set, the union of the zero-divisor cone and the vector subspace. The Fatou set is defined by the equicontinuity of the iterates and the dynamical Julia set is its complement; the set-theoretic Julia set of the escape dichotomy and the small Julia set of the equilibrium measure are two other objects, and the three coincide in one variable and are not known to coincide in general here. For a central parameter the three do coincide: the dynamical Julia set, the boundary of the filled Julia set, and the set of the matrices with an eigenvalue on the complex Julia set are one set, and the Fatou set is its complement. The fixed points are the scalar solutions of $\lambda^2-\lambda+C=0$ and the non-scalar elements $\tfrac12e_0+\mathbf Q$ with $(\mathbf Q,\mathbf Q)=C-\tfrac14$; the multiplier spectrum is $\{2\lambda_1,2\lambda_2,2Q_0,2Q_0\}$, the attracting condition is $\rho(\Phi(\tilde Q))<1/2$, and the non-scalar fixed points are neutral in the trace direction. The local dynamics at the cone, the classification of the Fatou components and the general equivalence of the definitions are open.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$dF|_{\tilde Q}(\tilde P)=\tilde Q\tilde P+\tilde P\tilde Q$</td>
+<td>the complex derivative</td>
+</tr>
+<tr>
+<td>$\det dF=4N(\tilde Q)(2Q_0)^2$</td>
+<td>the Jacobian determinant</td>
+</tr>
+<tr>
+<td>$\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$</td>
+<td>the critical set</td>
+</tr>
+<tr>
+<td>$\mathcal{F}_{\tilde C}$, $\mathcal{J}_{\tilde C}$</td>
+<td>the Fatou set and the dynamical Julia set</td>
+</tr>
+<tr>
+<td>$\mathcal K_{\tilde C}$, $J_{\tilde C}=\partial\mathcal K_{\tilde C}$</td>
+<td>the filled Julia set and the set-theoretic Julia set</td>
+</tr>
+<tr>
+<td>$\mathcal{F}_C$, $\mathcal{J}_C$, $K_C$, $J_C$</td>
+<td>the one-variable Fatou, Julia, filled and boundary sets</td>
+</tr>
+<tr>
+<td>$\{\lambda_1,\lambda_2\}$</td>
+<td>the spectrum of $\Phi(\tilde Q)$</td>
+</tr>
+<tr>
+<td>$\rho(\Phi(\tilde Q))$</td>
+<td>the spectral radius, the attracting condition $\rho<1/2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Biquaternion Quadratic Map and Its Julia Sets</em> (<code>articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.md</code>), for the family and the critical set.</li>
+<li><em>The Matrix Representation and the Biquaternion Dynamics</em> (<code>articles_maths/the-matrix-representation-and-the-biquaternion-dynamics.md</code>), for the operator reading of the derivative.</li>
+<li><em>The Zero Divisors and the Singular Julia Sets</em> (<code>articles_maths/the-zero-divisors-and-the-singular-julia-sets.md</code>), for the cone and the singular part of the fractal.</li>
+<li><em>The Fatou Components and the Classification of the Dynamics</em> (<code>articles_maths/the-fatou-components-and-the-classification-of-the-dynamics.md</code>), for the one-variable classification the central-parameter theorem reproduces.</li>
+<li><em>Several Complex Variables</em> (<code>articles_maths/several-complex-variables.md</code>), for the several-variable definitions kept apart here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -53,7 +53,7 @@
         <h1 id="exercise-the-electromagnetic-energymomentum-tensor"><strong>Exercise: The Electromagnetic Energy–Momentum Tensor</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This is an exercise in the electromagnetism series. It constructs the <strong>electromagnetic energy–momentum tensor</strong> from the field-strength biquaternion $\tilde F$, and it uses the framework and the notation of the companion article <em>The Field-Strength Biquaternion and Its Invariants</em> together with its parent, <em>Maxwell's Equations in the Biquaternionic Formulation</em>. Those two articles are the parents of this exercise: they fix the field strength, the medium conventions, and the Hermitian form. What follows applies them. The three universal articles — <em>Introduction to the Biquaternion Universe</em>, <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, and <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> — supply the algebra and the fixed-point subspace names, which are inherited without change.</p>
-<p><strong>What is assumed.</strong> The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and the product rule $e_j e_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$; the scalar imaginary $i$ with $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{M}_-$ with basis $\mathcal{E}_\mu \in \{ie_0, e_1, e_2, e_3\}$ and the Hermitian subspace $\mathbb{M}_+$; the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, and the Hermitian conjugate ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ with $\Box = \tilde\nabla\tilde\nabla^{\natural}$; the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$; the field-strength biquaternion $\tilde F = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$; the energy density $W$; the Poynting vector $\mathbf{S} = \mathbf{E}\times\mathbf{H}$; and the medium speed of light $c = 1/\sqrt{\epsilon\mu}$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\mathbf{v}$ is reserved for particle and frame velocities.</p>
+<p><strong>What is assumed.</strong> The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and the product rule $e_j e_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$; the scalar imaginary $i$ with $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{M}_-$ with basis $\mathcal{E}_\mu \in \{ie_0, e_1, e_2, e_3\}$ and the Hermitian subspace $\mathbb{M}_+$; the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, and the Hermitian conjugate ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ with $\Box = \tilde\nabla\tilde\nabla^{\natural}$; the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$; the field-strength biquaternion $\tilde F = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$; the energy density $W$; the Poynting vector $\mathbf{S} = \mathbf{E}\times\mathbf{H}$; and the medium speed of light $c = 1/\sqrt{\epsilon\mu}$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\mathbf{v}$ is reserved for particle and frame velocities.</p>
 <p><strong>What is to be shown.</strong> (1) Why the four-component biquaternionic energy–momentum cannot be the energy–momentum <em>tensor</em>, and why the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ fails the conservation test that the Hermitian form $\frac{1}{2}\tilde F\tilde F^{*}$ passes. (2) The bilinear construction of the rank-two tensor from $\tilde F$ and the basis of $\mathbb{M}_-$. (3) The tracelessness of $T^{\mu\nu}$. (4) The conservation law $\partial_\mu T^{\mu\nu} = -f^\nu$. (5) The rank-one form of $T^{\mu\nu}$ for a plane wave. Each problem is stated and solved in full; the value of an exercise is in the solutions.</p>
 <p><strong>The result.</strong> The tensor is the scalar part of a bilinear in the field strength,
 $$
@@ -379,12 +379,20 @@ with $W = \frac{1}{2}(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2)$ the energy densit
 <td>Four-force density (source)</td>
 </tr>
 <tr>
-<td>$N(\tilde F) = \tilde F\tilde F^{\natural}$</td>
+<td>$N(\tilde F) = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural}$</td>
 <td>Biquaternion norm (vanishes for a null field)</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$</td>
+<td>$\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$</td>
 <td>Trace formula</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
+<td>the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

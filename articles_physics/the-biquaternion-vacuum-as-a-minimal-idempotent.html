@@ -72,7 +72,7 @@ $$
 \qquad
 \mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_1, ie_2, ie_3\},
 $$
-with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center. The isomorphism is $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, the <strong>biquaternion norm</strong> is $N(\tilde Q) = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The single-mode ladder is $\tilde a_{\mathrm{tr}} = \tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger = \tfrac12(ie_1+e_2)$, as established by <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>.</p>
+with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center. The isomorphism is $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, the <strong>biquaternion norm</strong> is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The single-mode ladder is $\tilde a_{\mathrm{tr}} = \tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger = \tfrac12(ie_1+e_2)$, as established by <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>.</p>
 <h2 id="the-vacuum-as-a-state">The Vacuum as a State</h2>
 <p>In the standard formulation the vacuum is characterized in two equivalent ways, and it is worth keeping both in view because the biquaternion reading uses one and not the other.</p>
 <p><strong>As a vector.</strong> The one-particle space $\mathcal{H}_1$ generates the Fock space
@@ -119,7 +119,7 @@ The corner $\tilde P\mathbb{B}\tilde P$ is one-complex-dimensional exactly when 
 $$
 \omega_{\tilde P}(\tilde A) \;=\; \mathrm{Tr}\big(\tilde P\tilde A\big),
 $$
-which on an <strong>observable</strong> $\tilde A\in\mathbb{M}_+$ takes the real value $2\,\mathrm{Sc}(\tilde P\tilde A)$. A pure state is exactly what a vacuum is. A rank-two projector with $\mathrm{Tr}=1$ would be the maximally mixed state $\tfrac12 e_0$, and a general element of the Bloch ball is neither.</p>
+which on an <strong>observable</strong> $\tilde A\in\mathbb{M}_+$ takes the real value $2\,\mathrm{Sc}(\tilde P\tilde A) = 2\langle\tilde P,\tilde A\rangle$. A pure state is exactly what a vacuum is. A rank-two projector with $\mathrm{Tr}=1$ would be the maximally mixed state $\tfrac12 e_0$, and a general element of the Bloch ball is neither.</p>
 <h2 id="the-one-mode-vacuum">The One-Mode Vacuum</h2>
 <p>For a single fermionic mode the algebra contains the whole ladder. With
 $$
@@ -301,11 +301,11 @@ with $\tilde\Pi_1+\tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2=0$, and $(-1)^F = 
 <td>Real-quaternion subspace; center $\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$</td>
 </tr>
 <tr>
-<td>$N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q)$</td>
+<td>$N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q)$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, $\mathrm{Tr}(e_0)=2$</td>
+<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, $\mathrm{Tr}(e_0)=2$</td>
 <td>Trace pairing</td>
 </tr>
 <tr>
@@ -343,6 +343,14 @@ with $\tilde\Pi_1+\tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2=0$, and $(-1)^F = 
 <tr>
 <td>$\omega_{\tilde P}(\tilde A)=\mathrm{Tr}(\tilde P\tilde A)$</td>
 <td>Pure state defined by a minimal idempotent</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
+<td>the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

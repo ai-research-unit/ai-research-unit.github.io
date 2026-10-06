@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Split-Quaternion Iterated Function Systems — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-split-quaternion-iterated-function-systems"><strong>The Split-Quaternion Iterated Function Systems</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The iterated function systems of the split-quaternion algebra are the systems of the definite algebra of <em>The Quaternion Iterated Function Systems</em> read in an algebra whose norm is indefinite. The similarities are again $S(\tilde q)=\tilde a\tilde q\tilde b+\tilde c$, of Euclidean ratio $|\tilde a||\tilde b|$, and the Hutchinson theory of <em>Fractal Geometry</em> again gives a compact attractor and the similarity dimension when the open set condition holds. What changes is the indefinite geometry: the multiplicative part of a similarity preserves the <strong>null cone</strong>, and it scales the form $N$ by the factor $N(\tilde a)N(\tilde b)$, so a multiplicative map with $|N(\tilde a)N(\tilde b)|<1$ contracts the indefinite metric; an attractor lying on the null cone has vanishing form and degenerate indefinite length, while an attractor meeting the hyperboloid carries a genuine hyperbolic Cantor set. The open set condition is the delicate point: in the null cone the pieces can be tangent, because a null displacement puts the two images in contact along the cone, and the condition must be stated with an open set adapted to the null direction; whether it can always be so adapted is recorded as an open point.</p>
+<p>The article defines the systems, proves the contraction and the invariance of the null cone, computes the elementary Cantor sets and the null example, identifies the <strong>hyperbolic Cantor sets</strong> with the limit sets of the Schottky groups of <em>The Limit Sets of the Hyperbolic Lattices</em> through the inverse branches, states the Bowen pressure formula for their dimension as quoted, presents the hyperbolic gasket, and compares the systems with the definite quaternion and the split-complex ones.</p>
+<p>The similarities and the group work as in <em>The Quaternion Iterated Function Systems</em>; the algebra, the norm and the zero divisors are from <em>Split-Quaternion Algebra</em>, <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Ideals and Peirce Decomposition</em>; the hyperboloid, the hyperbolic plane and the boundary are from <em>Split-Quaternions and Hyperbolic Geometry</em>; the limit sets, the Schottky groups and the critical exponent are from <em>The Limit Sets of the Hyperbolic Lattices</em> and <em>Kleinian and Fuchsian Groups</em>; the iterated function systems, the attractor, the open set condition and the similarity dimension are <em>Fractal Geometry</em>'s; and the comparison with the definite system is <em>The Quaternion Iterated Function Systems</em> and <em>The Split-Complex Iterated Function Systems</em>. No physics is invoked.</p>
+<p>Throughout, $N$ is the indefinite norm of signature $(2,2)$ and $|\cdot|$ the Euclidean norm of $\mathbb{R}^4$; a similarity is $S(\tilde q)=\tilde a\tilde q\tilde b+\tilde c$ with ratio $\lambda=|\tilde a||\tilde b|$; the null cone is $\{N=0\}$; and $\mathbb{H}^{+}$ is the timelike sheet of the hyperboloid of <em>Split-Quaternions and Hyperbolic Geometry</em>.</p>
+<h2 id="contractions-in-the-indefinite-metric">Contractions in the Indefinite Metric</h2>
+<p><strong>Proposition (the multiplicative part preserves the form up to a factor).</strong> For $\tilde a,\tilde b\in\mathbb{H}_{\mathrm{s}}$ and $M(\tilde q)=\tilde a\tilde q\tilde b$, one has $N(M(\tilde q))=N(\tilde a)N(\tilde b)N(\tilde q)$. Hence $M$ preserves the null cone and the two open cones $N>0$ and $N<0$, and it contracts the form when $|N(\tilde a)N(\tilde b)|<1$.</p>
+<p><em>Proof.</em> The norm is multiplicative, $N(\tilde a\tilde q\tilde b)=N(\tilde a)N(\tilde q)N(\tilde b)$, by <em>Split-Quaternion Norm and Invertibility</em>; the sets on which $N$ is positive, negative or zero are therefore permuted among themselves according as the sign of the factor, and the factor is $N(\tilde a\tilde b)=N(\tilde a)N(\tilde b)$. $\square$</p>
+<p><strong>Definition.</strong> A <strong>split-quaternion iterated function system</strong> is a finite family $\{S_1,\dots,S_k\}$ of similarities with Euclidean ratios $\lambda_i=|\tilde a_i||\tilde b_i|<1$; its <strong>attractor</strong> is the unique compact set $\Lambda$ with $\Lambda=\bigcup_iS_i(\Lambda)$. The system is <strong>multiplicative</strong> when every $\tilde c_i=0$, and <strong>null</strong> when its seed lies on the null cone.</p>
+<p><strong>Theorem (existence, and the dimension, quoted).</strong> Every split-quaternion iterated function system has a unique nonempty compact attractor, the limit of the Hutchinson operator from any nonempty compact seed, and it is contained in a ball of the radius $\max_i|\tilde c_i|/(1-\max_i\lambda_i)$ in the Euclidean norm. If the open set condition holds — an open set $U$ with the $S_i(U)$ pairwise disjoint and contained in $U$ — then the Hausdorff and box dimensions of the attractor are the similarity dimension $s$ solving $\sum_i\lambda_i^{\,s}=1$. This is the theory of <em>Fractal Geometry</em>, quoted as in <em>The Quaternion Iterated Function Systems</em>.</p>
+<p><strong>Corollary (the null attractor).</strong> If the system is multiplicative and the seed lies on the null cone, the attractor lies on the null cone and $N$ vanishes on it.</p>
+<p><em>Proof.</em> The multiplicative maps preserve the null cone by the proposition, and the attractor is the closure of the union of the images of the seed. $\square$</p>
+<h2 id="the-elementary-systems">The Elementary Systems</h2>
+<p><strong>Example (the Cantor set in a complex plane).</strong> The two maps $S_0(\tilde q)=\tfrac13\tilde q$ and $S_1(\tilde q)=\tfrac13\tilde q+\tfrac23e_1$ form a system of ratio $\tfrac13$; the open set condition holds with the open unit ball; the attractor is a Cantor set of dimension $\log2/\log3$, lying in the plane $\mathbb{C}_{e_1}=\operatorname{span}\{e_0,e_1\}$ because the maps preserve it. The system is the split-quaternion reading of the system of <em>The Quaternion Iterated Function Systems</em>, and it is the complex, positive-definite elementary case.</p>
+<p><strong>Example (the null segment and the degeneracy of the metric).</strong> Let $n$ be a null vector of $V$, for instance $n=e_1+e_2$, and let $S_0(\tilde q)=\tfrac12\tilde q$, $S_1(\tilde q)=\tfrac12\tilde q+\tfrac12n$. The attractor is the Euclidean segment $[0,n]$ with the address map $\omega\mapsto\sum_k\epsilon_k2^{-k}n$, and every point of it is null, because $tn$ is null for every real $t$. The Euclidean dimension of the attractor is $1$, the similarity dimension of the two maps of ratio $\tfrac12$; the <strong>indefinite length is zero</strong>, because the form vanishes on every point of it, and the hyperbolic metric of the sheet sees the whole segment as one ideal boundary point. The fixed point of $S_1$ is the endpoint $n$, which is null, and it lies on the cone; the two pieces $S_0(\Lambda)=[0,n/2]$ and $S_1(\Lambda)=[n/2,n]$ meet at the point $n/2$, which is itself null. <strong>This is the null-cone phenomenon of the systems</strong>: the pieces of the attractor touch along the cone, the indefinite metric degenerates on the whole attractor, and a dimension computed with the indefinite form is not the Euclidean one.</p>
+<p><strong>Remark (the open set condition in the null cone).</strong> The elementary null system above still satisfies the open set condition, with the open set $\{tn+\epsilon w:0<t<1,\ |\epsilon|<\eta\}$ and $w$ a direction transverse to the cone: the two images have the $n$-coordinate in $(0,\tfrac12)$ and $(\tfrac12,1)$ and are disjoint, and both lie in the set. <strong>The naive failure of the condition therefore does not occur</strong>, and the honest statement is narrower: the condition holds when the system admits an open set adapted to the null direction, the pieces being tangent along the cone when it does not, and whether every null displacement system admits such a set is recorded as an <strong>open point</strong> in the companion file. The article does not claim that the condition fails in general.</p>
+<h2 id="hyperbolic-cantor-sets-and-gaskets">Hyperbolic Cantor Sets and Gaskets</h2>
+<p><strong>Proposition (the Schottky limit sets are the attractors of the inverse branches).</strong> Let $\Gamma$ be a Schottky group of $\operatorname{PSL}_2(\mathbb{R})$ with generators $\gamma_1^{\pm1},\dots,\gamma_g^{\pm1}$ pairing the boundary circles of $2g$ disjoint discs, and let $S_i$ be the inverse branches, restricted to the limit set. Then the $S_i$ contract the hyperbolic metric by a factor $\theta_i<1$ on the appropriate region, the limit set $\Lambda(\Gamma)$ is their attractor, and the open set condition holds with the union of the discs as the open set.</p>
+<p><em>Proof.</em> The inverse branch of a Möbius pairing of two disjoint discs carries the exterior disc into the interior disc and is a hyperbolic contraction there, with the derivative controlled by the discs; the invariance $\Lambda=\bigcup_iS_i(\Lambda)$ is the defining property of the limit set of a Schottky group, and the disjointness of the discs gives the open set condition. This is the standard dictionary between the Schottky groups and the conformal iterated function systems, and it belongs to <em>Kleinian and Fuchsian Groups</em>, cited with <em>The Limit Sets of the Hyperbolic Lattices</em>. $\square$</p>
+<p><strong>Theorem (the dimension is the pressure exponent, quoted).</strong> For the conformal system of the inverse branches of a Schottky group the similarity dimension is replaced by the <strong>Bowen pressure exponent</strong>: the Hausdorff dimension of the limit set is the unique $s$ with</p>
+<p>$$
+P(s)=\lim_{n\to\infty}\frac1n\log\sum_{|\omega|=n}\|DS_\omega\|_\infty^{\,s}=0 ,
+$$</p>
+<p>where $S_\omega$ is the composition of the branches of the word $\omega$ and $DS_\omega$ its derivative; when the branches have locally constant derivatives this reduces to $\sum_i\theta_i^{\,s}=1$, and the exponent equals the Patterson–Sullivan exponent $\delta(\Gamma)$ of <em>The Limit Sets of the Hyperbolic Lattices</em>. The statement is quoted from <em>Kleinian and Fuchsian Groups</em>, and it is the reason the hyperbolic Cantor set of this article is the same object as the limit set of the previous one.</p>
+<p><strong>Definition (the hyperbolic gasket).</strong> A <strong>hyperbolic gasket</strong> is the limit set of a discrete group generated by the inversions in the sides of a hyperbolic polygon whose translates are pairwise tangent in the manner of the gasket groups; it is the hyperbolic counterpart of the Euclidean Sierpinski gasket of <em>The Quaternion Iterated Function Systems</em>, its pieces meeting along the sides in the pattern of a gasket, and its dimension is the critical exponent of the group. The example of the Euclidean gasket of article 6 is the four-halves system; the hyperbolic gasket is the same combinatorial pattern in which the four pieces are the translates of a hyperbolic polygon and the contractions are the hyperbolic similarities taking the polygon into its sub-polygons.</p>
+<h2 id="comparison-with-the-definite-and-the-split-complex-systems">Comparison with the Definite and the Split-Complex Systems</h2>
+<p><strong>Remark.</strong> The definite quaternion systems of <em>The Quaternion Iterated Function Systems</em> are the positive-definite case: the metric is Euclidean, the similarity dimension is available throughout, the Apollonian packing is the Kleinian example, and the null-cone degenerate phenomena do not occur. The split-complex systems are the two-dimensional case: the idempotent decomposition reduces a system in $\mathbb{D}$ to a pair of real systems, the attractor is a product of the two real attractors, and the dimension is the sum, with the same interval structure as in the split-complex Julia sets. The split-quaternion systems sit between the two: they contain the definite systems in the complex planes and the split-complex systems in the split-complex planes, they add the null attractors and the hyperbolic Cantor sets, and they lose the escape radius and the uniformity of the dimension that the definite case has. <strong>The systems of the null cone are the genuinely new ones</strong>, and they are the ones for which the open set condition is delicate.</p>
+<h2 id="worked-example">Worked Example</h2>
+<p><strong>Example (three systems).</strong> The dimensions were recomputed from the ratios.</p>
+<p><strong>(a) The Cantor set of ratio $\tfrac13$.</strong> Two maps: $2(1/3)^s=1$ gives $s=\log2/\log3=0.6309\ldots$; the attractor lies in the plane $\mathbb{C}_{e_1}$ and the open set condition holds.</p>
+<p><strong>(b) The null segment.</strong> Two maps of ratio $\tfrac12$ with the null displacement $\tfrac12(e_1+e_2)$: the similarity dimension is the solution of $2(1/2)^s=1$, that is $s=1$, and it is the Euclidean dimension of the segment $[0,e_1+e_2]$; every point is null, so the indefinite length is zero and the hyperbolic dimension of the attractor as a hyperbolic set is zero. The two pieces meet at the null midpoint $n/2$.</p>
+<p><strong>(c) The hyperbolic Cantor set.</strong> The limit set of a two-generator Schottky group is the attractor of the two inverse branches; its dimension is the pressure exponent, strictly between $0$ and $1$ by <em>The Limit Sets of the Hyperbolic Lattices</em>, and no numerical value is asserted here, since none is recomputed in this pass.</p>
+<h2 id="summary">Summary</h2>
+<p>A split-quaternion iterated function system is a finite family of similarities $S(\tilde q)=\tilde a\tilde q\tilde b+\tilde c$ of Euclidean ratio $|\tilde a||\tilde b|<1$; it has a compact attractor, and when the open set condition holds its dimension is the similarity dimension $\sum\lambda_i^s=1$, quoted from <em>Fractal Geometry</em> as in the definite article. The indefinite geometry adds three features. The multiplicative part preserves the null cone and scales the form by $N(\tilde a)N(\tilde b)$, so an attractor on the null cone has vanishing indefinite length: the null segment generated by a null displacement has Euclidean dimension $1$ and indefinite length zero, and its pieces touch at the null midpoint. The hyperbolic Cantor sets are the limit sets of the Schottky groups, realised as the attractors of the inverse branches, with the Bowen pressure dimension equal to the Patterson–Sullivan exponent of <em>The Limit Sets of the Hyperbolic Lattices</em>; the hyperbolic gasket is the analogous gasket pattern in the hyperbolic plane. The open set condition in the null cone holds when an open set adapted to the null direction exists, and whether it always does is recorded as an open point rather than asserted. The comparison with the definite systems is <em>The Quaternion Iterated Function Systems</em>'s and with the two-dimensional systems <em>The Split-Complex Iterated Function Systems</em>'s.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S(\tilde q)=\tilde a\tilde q\tilde b+\tilde c$</td>
+<td>Split-quaternion similarity</td>
+</tr>
+<tr>
+<td>$\lambda=\lvert\tilde a\rvert\lvert\tilde b\rvert$</td>
+<td>Euclidean ratio</td>
+</tr>
+<tr>
+<td>$N(\tilde a)N(\tilde b)$</td>
+<td>Factor by which the multiplicative part scales the form</td>
+</tr>
+<tr>
+<td>Null cone $\{N=0\}$</td>
+<td>Invariant cone of the multiplicative maps; the degenerate metric locus</td>
+</tr>
+<tr>
+<td>$[0,n]$ with $n$ null</td>
+<td>The null segment attractor</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>Attractor; limit set of a Schottky group</td>
+</tr>
+<tr>
+<td>$\theta_i$, $s$, $\delta$</td>
+<td>Contraction factors; dimension; Patterson–Sullivan exponent</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^{+}$</td>
+<td>The hyperbolic plane of <em>Split-Quaternions and Hyperbolic Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John E. Hutchinson, "Fractals and self-similarity", <em>Indiana University Mathematics Journal</em> 30 (1981), 713–747. The attractor and the open set condition, cited to <em>Fractal Geometry</em>.</li>
+<li>Kenneth Falconer, <em>Fractal Geometry: Mathematical Foundations and Applications</em>, 3rd ed. (Wiley, 2014). The similarity dimension and the box dimension, cited to <em>Fractal Geometry</em>.</li>
+<li>Rufus Bowen, "Hausdorff dimension of quasi-circles", <em>Publications Mathématiques de l'IHÉS</em> 50 (1979), 11–25. The pressure formula for the dimension of the limit set of a quasi-Fuchsian group, cited to <em>Kleinian and Fuchsian Groups</em>.</li>
+<li>David Mumford, Caroline Series and David Wright, <em>Indra's Pearls: The Vision of Felix Klein</em> (Cambridge, 2002). The Schottky groups, the gasket groups and their limit sets.</li>
+<li>Garret Sobczyk, "The hyperbolic number plane", <em>The College Mathematics Journal</em> 26 (1995), 268–280. The split-complex systems and the idempotent decomposition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

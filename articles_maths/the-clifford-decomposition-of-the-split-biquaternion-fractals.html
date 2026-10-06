@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Clifford Decomposition of the Split-Biquaternion Fractals — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-clifford-decomposition-of-the-split-biquaternion-fractals"><strong>The Clifford Decomposition of the Split-Biquaternion Fractals</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-biquaternion algebra is the real Clifford algebra $\mathrm{Cl}(0,3)$, and the two structures of that algebra — the parity grading and the volume element — organise its quadratic dynamics into two decompositions. The parity grading splits the algebra into the even part, which is a copy of the quaternion algebra and a division algebra, and the odd part, which is the module $j\mathbb{H}$; the volume element is central and takes the values $\pm1$ on the two idempotent halves, which are therefore the chiral halves of the algebra. The fractal is the product of two quaternion fractals in the idempotent decomposition and it contains the quaternion fractal as its diagonal in the parity decomposition, and the two pictures are related by the Hadamard change of variables. The article states the grading, the even–odd formula of the map, the two decompositions and their relation, and the symmetry that the parity structure adds.</p>
+<p>The Clifford description of the algebra and of $\mathrm{Cl}(3)$ is <em>Complex Split-Biquaternions and the Clifford Algebra Cl(3)</em> and <em>Split-Biquaternion Algebra</em>; the idempotents and the product decomposition are <em>Split-Biquaternion Idempotents and Projections</em>, <em>Split-Biquaternion Ideals and Peirce Decomposition</em> and <em>The Split-Biquaternion Quadratic Family</em>; the quaternion factorial theory is <em>The Quaternion Quadratic Map and Its Julia Sets</em>; the product fractal is <em>The Split-Biquaternion Julia Sets</em>. The biquaternion counterpart is <em>The Clifford Structure of the Biquaternion Algebra</em>. No physics is invoked.</p>
+<p>The article owns the parity grading of the algebra, the even–odd formula of the quadratic family, the invariance of the even part, the two decompositions and their Hadamard relation, the identification of the quaternion fractal with the diagonal slice, and the symmetry by the volume element.</p>
+<p><strong>Standing convention.</strong> $\mathbb{H}_{\mathbb{D}}=\mathrm{Cl}(0,3)$ with generators $E_i=je_i$ satisfying $E_i^2=-1$ and $E_iE_j=-E_jE_i$; the scalar is $e_0$, the bivectors are $e_1,e_2,e_3$ and the trivector is $\omega=E_1E_2E_3=-j$. The even part is $\mathrm{Cl}^0=\operatorname{span}\{e_0,e_1,e_2,e_3\}\cong\mathbb{H}$ and the odd part is $\mathrm{Cl}^1=\operatorname{span}\{je_0,je_1,je_2,je_3\}=j\mathbb{H}$. A split biquaternion is written $\tilde Q=\tilde A+j\tilde B$ with $\tilde A,\tilde B\in\mathbb{H}$, so that $\tilde A$ is the even part and $j\tilde B$ the odd part.</p>
+<h2 id="the-parity-grading-and-the-even-part">The Parity Grading and the Even Part</h2>
+<p><strong>Proposition (the graded decomposition).</strong> The algebra is the direct sum of its even and odd parts,</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1=\mathbb{H}\oplus j\mathbb{H},
+$$</p>
+<p>and the even part is a subalgebra isomorphic to the quaternion algebra, hence a division algebra; the odd part is a module over the even part. The product of two even elements is even, of an even and an odd element is odd, and of two odd elements is even.</p>
+<p><strong>Proof.</strong> This is the $\mathbb{Z}/2$-grading of a Clifford algebra: the products of generators have the degree of the number of generators modulo two, and the parity of a product is the sum of the parities. The even part is generated by the bivectors $e_i$, which satisfy the quaternion relations $e_1^2=e_2^2=e_3^2=-1$ and $e_1e_2=e_3$ (<em>Split-Biquaternion Algebra</em>).</p>
+<h2 id="the-evenodd-formula-of-the-quadratic-family">The Even–Odd Formula of the Quadratic Family</h2>
+<p><strong>Proposition (the even–odd formula).</strong> Write $\tilde Q=\tilde A+j\tilde B$ and $\tilde C=\tilde C_A+j\tilde C_B$ with $\tilde A,\tilde B,\tilde C_A,\tilde C_B\in\mathbb{H}$. Then</p>
+<p>$$
+F_{\tilde C}(\tilde Q)=\bigl(\tilde A^2+\tilde B^2+\tilde C_A\bigr)+j\bigl(\tilde A\tilde B+\tilde B\tilde A+\tilde C_B\bigr) ,
+$$</p>
+<p>so the even part of the image is $\tilde A^2+\tilde B^2+\tilde C_A$ and the odd part is $j$ times the anticommutator $\{\tilde A,\tilde B\}$ plus $\tilde C_B$. In particular the even part $\mathrm{Cl}^0=\{\tilde B=0\}$ is invariant if and only if $\tilde C$ is even, and then the restriction of the family to it is the quaternion quadratic family,</p>
+<p>$$
+F_{\tilde C}\big|_{\mathrm{Cl}^0}:\tilde A\longmapsto\tilde A^2+\tilde C_A .
+$$</p>
+<p><strong>Proof.</strong> Expand $(\tilde A+j\tilde B)^2=\tilde A^2+\tilde B^2+j(\tilde A\tilde B+\tilde B\tilde A)$ using the centrality of $j$ and $j^2=e_0$; the split of the result into the even part and $j$ times a quaternion is the difference of the two components of the Hadamard transform. The invariance of $\{\tilde B=0\}$ under the map is the vanishing of the odd part $j\{\tilde A,0\}+\tilde C_B$, which happens for all $\tilde A$ exactly when $\tilde C_B=0$.</p>
+<p><strong>Remark (the anticommutator is the Clifford product).</strong> The odd part of the image is governed by the anticommutator of the two quaternion components, which is the Clifford product of an even and an odd element written in the quaternion language; <strong>the family is the square in the Clifford algebra and the even–odd formula is the explicit form of the square of a graded element.</strong></p>
+<h2 id="the-quaternion-fractal-as-the-diagonal">The Quaternion Fractal as the Diagonal</h2>
+<p><strong>Theorem (the diagonal slice).</strong> Under the idempotent identification $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$, the even part $\mathrm{Cl}^0=\{\tilde B=0\}$ is the diagonal $\{(\tilde A,\tilde A)\}$, and the slice of the fractal is</p>
+<p>$$
+K_{\tilde C}\cap\mathrm{Cl}^0=\bigl\{\tilde A\in\mathbb{H} : \tilde A\in K_{\tilde C_+}\cap K_{\tilde C_-}\bigr\} .
+$$</p>
+<p>For an even parameter $\tilde C\in\mathrm{Cl}^0$ one has $\tilde C_+=\tilde C_-=\tilde C$, and the slice is the quaternion filled Julia set $K_{\tilde C}$; the same holds for the Julia set.</p>
+<p><strong>Proof.</strong> The Hadamard change of variables $\tilde Q_\pm=\tilde A\pm\tilde B$ carries $\tilde B=0$ to $\tilde Q_+=\tilde Q_-=\tilde A$, the diagonal; the slice of the product $K_{\tilde C_+}\times K_{\tilde C_-}$ with the diagonal is the intersection. For an even parameter $j\tilde B=0$ gives $\tilde C_+=\tilde C_-=\tilde C$.</p>
+<p><strong>Corollary (the even slice is not the whole fractal).</strong> For an even parameter the quaternion fractal appears twice in a picture of the split-biquaternion fractal, once in the even slice and once in the odd slice, and the two slices are exchanged by the symmetry of the volume element below; for a general parameter the even slice is the intersection $K_{\tilde C_+}\cap K_{\tilde C_-}$ of the two quaternion filled Julia sets.</p>
+<h2 id="the-two-decompositions-and-their-relation">The Two Decompositions and Their Relation</h2>
+<p><strong>Proposition (Hadamard relation).</strong> The idempotent decomposition $\tilde Q=\tilde Q_+\tilde\Pi_++\tilde Q_-\tilde\Pi_-$ and the parity decomposition $\tilde Q=\tilde A+j\tilde B$ are related by the Hadamard transform $\tilde Q_\pm=\tilde A\pm\tilde B$, an orthogonal change of coordinates with the matrix $\tfrac1{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}$.</p>
+<p><strong>Proof.</strong> Direct computation from $\tilde\Pi_\pm=\tfrac12(e_0\pm j)$ and the centrality of $j$: $\tilde Q\tilde\Pi_+=(\tilde A+j\tilde B)\tilde\Pi_+=(\tilde A+\tilde B)\tilde\Pi_+$.</p>
+<p><strong>Remark (the two decompositions split different things).</strong> The idempotent decomposition splits the algebra into two isomorphic ideals $\mathbb{H}\tilde\Pi_\pm$, and it is the decomposition that makes the quadratic family a product of two quaternion families. The parity decomposition splits the algebra into the even subalgebra and the odd module, and it is the decomposition that makes the quaternion algebra appear as a subalgebra. <strong>The first decomposes the dynamics, the second locates a division algebra inside it, and the two are Hadamard-equivalent as decompositions of the underlying real space and very different as decompositions of the dynamics.</strong></p>
+<h2 id="the-volume-element-and-the-chiral-halves">The Volume Element and the Chiral Halves</h2>
+<p><strong>Proposition (the eigenvalues of the volume element).</strong> The volume element $\omega=E_1E_2E_3=-j$ is central with $\omega^2=e_0$, and it acts on the two idempotents by</p>
+<p>$$
+\omega\tilde\Pi_+=-\tilde\Pi_+, \qquad \omega\tilde\Pi_-=+\tilde\Pi_- .
+$$</p>
+<p>So the two ideals $\mathbb{H}\tilde\Pi_\pm$ are the eigenspaces of the volume element with the eigenvalues $\mp1$, and they are the two chiral halves of the algebra.</p>
+<p><strong>Proof.</strong> $j$ is central and $j^2=e_0$, so $\omega=-j$ is central with $\omega^2=e_0$; the action on the idempotents is $-j\tilde\Pi_+ = -\tfrac12(j+j^2)=-\tfrac12(j+1)=-\tilde\Pi_+$ and $-j\tilde\Pi_-=-\tfrac12(j-1)=+\tilde\Pi_-$.</p>
+<p><strong>Corollary (the complexification and the two chiral summands).</strong> The complexified algebra splits as $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}\cong\mathbb{B}\oplus\mathbb{B}$, the two summands being the two chiral halves, each isomorphic to the biquaternion algebra; the parity and the chirality together are the two gradings of the complexification.</p>
+<p><strong>Theorem (the symmetry by the volume element).</strong> Multiplication by $j$ is an isometry of the Euclidean norm and satisfies</p>
+<p>$$
+F_{\tilde C}(j\tilde Q)=F_{\tilde C}(\tilde Q) \quad\text{for every } \tilde Q ,
+$$</p>
+<p>so the orbit of $j\tilde Q$ agrees with the orbit of $\tilde Q$ from the first step, and $j$ maps the filled Julia set and the Julia set to themselves for every parameter, exchanging the even part and the odd part.</p>
+<p><strong>Proof.</strong> $(j\tilde Q)^2=j^2\tilde Q^2=\tilde Q^2$ because $j$ is central with $j^2=e_0$; the isometry is the norm identity of <em>The Split-Biquaternion Quadratic Family</em>. Applying the identity to the iterates gives $F^n(j\tilde Q)=F^n(\tilde Q)$ for $n\ge1$, hence the invariance of the two sets.</p>
+<p><strong>Remark (reconstruction from the two chiral components).</strong> The fractal is reconstructed from its two chiral components as their product: $K_{\tilde C}=K_{\tilde C_+}\times K_{\tilde C_-}$ is the set of the pairs, one from each eigenspace of the volume element, and the two components are the two quaternion fractals of the two parameters. The volume element selects the components by the sign of its eigenvalue, so <strong>the two chiral fractals are the two eigenvalues $\mp1$ of $\omega$ read as dynamics, and the split-biquaternion fractal is recovered from them by the product, with no coupling.</strong> The complexification replaces each component by a biquaternion fractal, and the reconstruction is the same product.</p>
+<p><strong>Remark (the added symmetry and its meaning).</strong> Besides the antipodal symmetry $F(-\tilde Q)=F(\tilde Q)$ of every quadratic family, the split-biquaternion family has the symmetry $j$, which the biquaternion family does not have: the biquaternion algebra has no non-trivial central element of square $+1$ (its centre is $\mathbb{C}$, whose only central elements of square $+1$ are $\pm e_0$) and no parity grading of its square. <strong>The volume-element symmetry is the geometric content of the parity grading: it is an isometry of the fractal that exchanges the two decompositions, and it is the reason the quaternion fractal appears twice, once on each chiral side.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The split-biquaternion algebra is the Clifford algebra $\mathrm{Cl}(0,3)$, graded by parity into the even part, a copy of the quaternion division algebra generated by the bivectors, and the odd part $j\mathbb{H}$. The quadratic family in even–odd form has even part $\tilde A^2+\tilde B^2+\tilde C_A$ and odd part $j(\{\tilde A,\tilde B\}+\tilde C_B)$, so the even part is invariant exactly for an even parameter and then carries the quaternion quadratic family. Under the idempotent identification the even part is the diagonal of the product, and its slice of the fractal is the intersection $K_{\tilde C_+}\cap K_{\tilde C_-}$, the whole quaternion filled Julia set for an even parameter. The idempotent and parity decompositions are Hadamard-equivalent as decompositions of the real space and serve different purposes: the first makes the dynamics a product, the second exhibits the quaternion subalgebra. The volume element $\omega=-j$ is central with $\omega^2=e_0$ and acts by $\mp1$ on the two ideals, which are the chiral halves and the two $\mathbb{B}$ summands of the complexification; multiplication by $j$ is an isometric symmetry of the fractal for every parameter, exchanging the even and the odd parts.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Cl}(0,3)=\mathbb{H}_{\mathbb{D}}$</td>
+<td>the Clifford description of the algebra</td>
+</tr>
+<tr>
+<td>$E_i=je_i$, $E_i^2=-1$</td>
+<td>the Clifford vectors</td>
+</tr>
+<tr>
+<td>$e_1,e_2,e_3$</td>
+<td>the bivectors, generating the even part</td>
+</tr>
+<tr>
+<td>$\omega=E_1E_2E_3=-j$</td>
+<td>the volume element</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}^0=\mathbb{H}$, $\mathrm{Cl}^1=j\mathbb{H}$</td>
+<td>the even part and the odd part</td>
+</tr>
+<tr>
+<td>$\tilde Q=\tilde A+j\tilde B$</td>
+<td>the parity decomposition</td>
+</tr>
+<tr>
+<td>$\tilde Q_\pm=\tilde A\pm\tilde B$</td>
+<td>the Hadamard transform</td>
+</tr>
+<tr>
+<td>$\mathbb{H}\tilde\Pi_\pm$</td>
+<td>the two chiral halves, of volume eigenvalue $\mp1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Complex Split-Biquaternions and the Clifford Algebra Cl(3)</em> (<code>articles_maths/complex-split-biquaternions-and-the-clifford-algebra-cl3.md</code>), for the Clifford description of the algebra and the two chiral summands.</li>
+<li><em>Split-Biquaternion Algebra</em> (<code>articles_maths/split-biquaternion-algebra.md</code>) and <em>Split-Biquaternion Idempotents and Projections</em> (<code>articles_maths/split-biquaternion-idempotents-and-projections.md</code>), for the generators, the idempotents and the volume element.</li>
+<li><em>The Split-Biquaternion Quadratic Family</em> (<code>articles_maths/the-split-biquaternion-quadratic-family.md</code>), for the product decomposition and the Hadamard identification.</li>
+<li><em>The Split-Biquaternion Julia Sets</em> (<code>articles_maths/the-split-biquaternion-julia-sets.md</code>), for the product fractal whose diagonal is described here.</li>
+<li><em>The Clifford Structure of the Biquaternion Algebra</em> (<code>articles_maths/biquaternion-clifford-structure.md</code>), for the biquaternion counterpart.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

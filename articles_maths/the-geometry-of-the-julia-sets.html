@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Geometry of the Julia Sets — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-geometry-of-the-julia-sets"><strong>The Geometry of the Julia Sets</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $R : \hat{\mathbb{C}} \to \hat{\mathbb{C}}$ be a rational map of degree $d \geq 2$ of the Riemann sphere. The iterates of $R$ partition the sphere into the <strong>Fatou set</strong> $F(R)$, the set on which the family $\{R^n\}$ is equicontinuous, and the <strong>Julia set</strong> $J(R) = \hat{\mathbb{C}} \setminus F(R)$, the set on which the dynamics is chaotic. The Julia set is compact, perfect, uncountable, completely invariant, and equal to the closure of the repelling periodic points; it is the boundary of every Fatou component, and for a polynomial it is the boundary of the filled Julia set. The Julia sets are the standard fractals of the plane: the circle for $z \mapsto z^d$, the segment $[-2,2]$ for $z \mapsto z^2 - 2$, the basilica, the rabbit, the dendrite and the Cantor sets of the parameters outside the Mandelbrot set.</p>
+<p>This article is the <strong>geometry</strong> of these sets and of their parameter space. It states the Fatou–Julia partition for a rational map, the local connectivity of a connected filled Julia set together with the Carathéodory criterion, the <strong>Böttcher coordinate</strong>, the <strong>external rays</strong> and the <strong>landing theorem</strong> of Douady and Hubbard, the <strong>Mandelbrot set</strong> as parameter space with its connectedness — proved by the theory of polynomial-like mappings — its external rays and the open local-connectivity question, and the <strong>dimension and the measure</strong> of a Julia set in the hyperbolic and the parabolic cases. The tree-like and dendrite-like Julia sets are the examples of <em>Fractal Trees and Dendrites</em>, and the dimension used throughout is that of the lead article <em>Fractal Geometry</em>.</p>
+<p>The scope is fixed by the corpus's split. The <strong>dynamics</strong> of the map — the partition as a topological system, the bifurcations, the ergodic theory and the pressure — is that of Part III, cited to <em>Topological Dynamics</em>, <em>Smooth Dynamical Systems</em> and <em>Ergodic Theory</em>, and the invariant measure is constructed there and in <em>Fractal Analysis</em>'s <em>The Self-Similar Measure and the Invariant Measure</em>. The <strong>polynomial instance</strong> — the partition for polynomials, the repelling periodic points, the filled Julia set, the invariance and the existence of the invariant measure — is that of <em>The Julia Sets of a Complex Polynomial</em>, the classification of the Fatou components is that of <em>The Fatou Components and the Classification of the Dynamics</em>, and the explicit quadratic formulas are those of <em>The Mandelbrot Set and the Quadratic Family</em>; all three are in the complex-number part of the corpus and are cited, not repeated. The <strong>dimension computations for polynomials</strong> — the two exact cases of the circle and the segment, the Bowen equation for hyperbolic parameters, the real-analyticity of Ruelle and the theorem of Shishikura — are the subject of <em>The Hausdorff Dimension of the Julia Sets</em>, and only the general rational statements are made here. The limit space of the <strong>iterated monodromy group</strong> of a subhyperbolic map is treated in <em>Limit Spaces and Schreier Graphs</em>.</p>
+<p>The article assumes <em>Complex Analysis</em> for the normal families and Montel's theorem, the Riemann mapping theorem, the Carathéodory extension theorem, the holomorphic motions and the Böttcher construction; <em>Topological Spaces</em> for compactness, connectedness, local connectedness and the continua; <em>Metric Geometry</em> for the distance and the Lipschitz conditions; and <em>Fractal Geometry</em> for the covering numbers, the Hausdorff content and the dimension. No physics is invoked.</p>
+<h2 id="the-fatou-and-julia-sets">The Fatou and Julia Sets</h2>
+<p><strong>Definition.</strong> For a rational map $R$ of degree $d \geq 2$, a point $z$ belongs to the <strong>Fatou set</strong> $F(R)$ when there is a neighbourhood $U$ of $z$ on which the family $\{R^n\}$ of iterates is normal in the sense of <em>Complex Analysis</em>, that is, equicontinuous with respect to the spherical metric; the <strong>Julia set</strong> is the complement $J(R)$.</p>
+<p><strong>Theorem (the Fatou–Julia properties).</strong> For a rational map of degree $d \geq 2$:</p>
+<p><strong>(a)</strong> $F(R)$ is open and completely invariant, $R(F) = F$ and $R^{-1}(F) = F$, and $J(R)$ is compact, nonempty, perfect, uncountable and completely invariant;</p>
+<p><strong>(b)</strong> $J(R) = \overline{\{\text{repelling periodic points}\}}$, and the preimages of any point of $J(R)$ are dense in $J(R)$;</p>
+<p><strong>(c)</strong> $J(R)$ is the boundary of every Fatou component, and $J(R^n) = J(R)$ for every $n \geq 1$;</p>
+<p><strong>(d)</strong> a point of $J(R)$ has no neighbourhood on which the iterates are uniformly bounded; if in addition $R$ is <strong>hyperbolic</strong>, meaning every critical point is attracted to an attracting cycle, then there are $C > 0$ and $\lambda > 1$ with $|(R^n)'(z)| \geq C \lambda^n$ for every $z \in J(R)$ and every $n$.</p>
+<p><strong>Proof sketch.</strong> (a) normality is a local property, so $F$ is open, and it is preserved by $R$ and by the branches of $R^{-1}$ because postcomposition and precomposition with a holomorphic map preserve normality. (b) is the theorem of Fatou and Julia: the repelling periodic points exist by the theory of the multiplier and the fixed-point formula, they lie in $J$ because the derivative grows, and their closure is forward and backward invariant; the complementary open set carries a normal family and is contained in $F$ by Montel's theorem. (c) the invariance of (a) makes the boundary of a Fatou component invariant and contained in $J$, and every point of $J$ is a limit of points whose orbits have different behaviour, hence of boundaries. (d) a neighbourhood with bounded iterates is normal; for a hyperbolic map the spherical derivative of $R^n$ grows exponentially on $J$ because the postcritical set stays away from $J$, which is a compact set carrying a repelling metric (the arguments of <em>Complex Analysis</em> and <em>Smooth Dynamical Systems</em>).</p>
+<p><strong>Example (the elementary Julia sets).</strong> For $R(z) = z^d$ the Fatou set is the unit disk and its exterior and $J$ is the unit circle, of dimension and topological dimension one. For $R(z) = z^2 - 2$ the Chebyshev conjugacy $w + w^{-1}$ identifies $R$ with $w \mapsto w^2$ and $J = [-2,2]$, a segment. For $R(z) = z^2 - 1$ the critical orbit $0 \mapsto -1 \mapsto 0$ is a superattracting cycle, the map is hyperbolic, and $J$ is the <strong>basilica</strong>, a Cantor set of circles. For $R(z) = z^2 + i$ the critical orbit is preperiodic to a repelling cycle, $J$ is a dendrite, and the topological structure is that of <em>Fractal Trees and Dendrites</em>. These four cases are the ones the article uses as computations, and the general polynomial theory is that of <em>The Julia Sets of a Complex Polynomial</em>.</p>
+<p><strong>Remark (the two readings of the same set).</strong> The Julia set is simultaneously a dynamical object and a metric object. As a dynamical object it is the repeller of $R$, with the shift coding of <em>Symbolic Dynamics</em> and the invariant measure of <em>Ergodic Theory</em>; as a metric object it is a compact subset of the sphere with a Hausdorff dimension, a local connectedness question and an external geometry. This article is the second reading; the first belongs to Part III.</p>
+<h2 id="local-connectivity-and-the-connected-filled-julia-set">Local Connectivity and the Connected Filled Julia Set</h2>
+<p><strong>Definition (the filled Julia set).</strong> For a polynomial $P$ of degree $d \geq 2$, the <strong>filled Julia set</strong> is $K(P) = \{z : \{P^n(z)\}$ is bounded$\}$, a compact set with $J(P) = \partial K(P)$, and the <strong>basin of infinity</strong> is the Fatou component $A(\infty) = \mathbb{C} \setminus K(P)$, which is simply connected exactly when $K(P)$ is connected.</p>
+<p><strong>Theorem (connectedness and local connectivity).</strong> Let $P$ be a polynomial of degree $d \geq 2$.</p>
+<p><strong>(a)</strong> $K(P)$ is connected if and only if the orbit of the critical point is bounded.</p>
+<p><strong>(b)</strong> $J(P)$ is locally connected if and only if the conformal map from the exterior of the disk onto $A(\infty)$ extends continuously to the boundary; when this holds, the boundary circle maps continuously onto $J(P)$ and $J(P)$ is a quotient of the circle.</p>
+<p><strong>(c)</strong> If $P$ is hyperbolic then $J(P)$ is locally connected.</p>
+<p><strong>Proof sketch.</strong> (a) is the theorem of Douady–Hubbard for the polynomial-like restriction of $P$ to a neighbourhood of $K(P)$: the map is a polynomial-like map of degree $d$, its filled Julia set is connected exactly when all the critical points lie in the domain of definition of the straightening, and the critical points are the $d-1$ preimages of the critical point, so the criterion is the boundedness of the critical orbit. (b) is the Carathéodory extension theorem applied to the conformal isomorphism $\mathbb{C} \setminus \overline{\mathbb{D}} \to A(\infty)$: the inverse extends continuously to the boundary circle exactly when the boundary of $A(\infty)$, which is $J(P)$, is locally connected, and the extension is then a continuous surjection of the circle. (c) for a hyperbolic polynomial the Julia set carries the repelling metric of the previous section, and the expansion gives the local connectedness by the theorem of Douady–Hubbard; the case of a rational map is subtler and there are non-locally-connected Julia sets, so the hyperbolicity is not removable.</p>
+<p><strong>Remark (why local connectivity is the combinatorial question).</strong> A connected and locally connected Julia set is a <strong>topological model</strong> of the polynomial: it is the quotient of the circle by the equivalence that identifies the angles landing at the same point, and the equivalence is described by the kneading data. Without local connectivity the external rays still land at the rational angles, by the theorem below, but the coding is only measurable and not continuous. The open question of whether the Mandelbrot set is locally connected, stated below, is the same question for the parameter space.</p>
+<h2 id="the-bottcher-coordinate-and-the-external-rays">The Böttcher Coordinate and the External Rays</h2>
+<p><strong>Theorem (Böttcher).</strong> Let $P$ be a monic polynomial of degree $d \geq 2$. There is a conformal map $\varphi$ of a neighbourhood of $\infty$ onto a neighbourhood of $\infty$ with</p>
+<p>$$
+\varphi(P(z)) = \varphi(z)^d, \qquad \varphi(z) = z + O(1)
+$$</p>
+<p>near infinity, unique up to multiplication by a $(d-1)$-th root of unity. The function $G = \log|\varphi|$ extends to a continuous <strong>Green's function</strong> $G : \mathbb{C} \to [0,\infty)$ that is harmonic on $A(\infty)$, vanishes exactly on $K(P)$, and satisfies $G(P(z)) = d\,G(z)$.</p>
+<p><strong>Definition (equipotentials and external rays).</strong> For $t > 0$ the <strong>equipotential</strong> is the level set $\{G = t\}$, a Jordan curve for $t$ small; the <strong>external ray</strong> of angle $\theta$ is</p>
+<p>$$
+\gamma_\theta = \{z \in A(\infty) : G(z) > 0, \ \arg \varphi(z) = 2\pi\theta\} ,
+$$</p>
+<p>and the ray <strong>lands</strong> at the limit $\lim_{t \to 0^+} \gamma_\theta(t)$, where $\gamma_\theta(t)$ is the point of the ray with $G = t$, when the limit exists.</p>
+<p><strong>Theorem (the landing theorem).</strong> Let $P$ be a polynomial of degree $d \geq 2$ with connected filled Julia set.</p>
+<p><strong>(a)</strong> For every rational $\theta \in \mathbb{Q}/\mathbb{Z}$ the external ray $\gamma_\theta$ lands at a point of $J(P)$.</p>
+<p><strong>(b)</strong> If $J(P)$ is locally connected then every ray lands, the map $\theta \mapsto \lim_{t\to0}\gamma_\theta(t)$ is continuous from the circle onto $J(P)$, and the landing angles of a point form a finite set.</p>
+<p><strong>(c)</strong> The map of (b) semiconjugates the doubling map $\theta \mapsto d\theta$ on the circle to $P$ on $J(P)$.</p>
+<p><strong>Proof sketch.</strong> (a) is the theorem of Douady and Hubbard: a rational ray cannot accumulate on a continuum of points of $J$ without crossing the equipotentials, and the landing angle is constrained by the critical orbits; the argument uses the count of the rays in each annulus and the theory of the polynomial-like restrictions. (b) the continuous extension is the Carathéodory criterion of the previous section, and the local connectedness makes the extension onto $J$ a quotient map; the landing angles are finite because the equivalence is semiconjugate to the doubling map. (c) the identity $\varphi(P(z)) = \varphi(z)^d$ says that $P$ sends the ray of angle $\theta$ to the ray of angle $d\theta$, and the landing points respect the identification.</p>
+<p><strong>Example (the ray landings, computed).</strong> For $z \mapsto z^2$ one has $\varphi(z) = z$ and the ray of angle $\theta$ is the radial line, landing at $e^{2\pi i\theta}$. For $z \mapsto z^2 - 2$ the Chebyshev conjugacy $z = w + w^{-1}$ gives $\varphi(z) = w$ for the branch at infinity, so the ray of angle $\theta$ lands at</p>
+<p>$$
+z(\theta) = 2\cos(2\pi\theta) .
+$$</p>
+<p>At the low periods this is $z(0) = 2$, the repelling fixed point; $z(1/2) = -2$, the preimage of $2$; $z(1/3) = z(2/3) = -1$, the other fixed point, at which two rays land; $z(1/4) = 0$, the preimage of $-2$; and $z(1/6) = 1$, which maps to $-1$. The computation reproduces the fixed points and the preperiodic points of the polynomial, so the landing theorem is visible at the first levels.</p>
+<h2 id="the-mandelbrot-set-as-a-parameter-space">The Mandelbrot Set as a Parameter Space</h2>
+<p><strong>Definition.</strong> The <strong>Mandelbrot set</strong> is $M = \{c \in \mathbb{C} : \text{the orbit of } 0 \text{ under } z \mapsto z^2+c \text{ is bounded}\}$, the <strong>connectedness locus</strong> of the quadratic family.</p>
+<p><strong>Theorem (Douady–Hubbard).</strong> <strong>(a)</strong> $M$ is compact and connected, and its complement is conformally isomorphic to the complement of the closed unit disk; the isomorphism sends $M$ to the disk and is normalised at infinity. <strong>(b)</strong> $c \in M$ if and only if $J_c$ is connected; for $c \notin M$ the Julia set is a Cantor set. <strong>(c)</strong> The interior of $M$ is the set of hyperbolic parameters, whose maps have an attracting cycle, and the <strong>bifurcation locus</strong> — the parameters where the dynamics is not stable under perturbation — is the boundary $\partial M$.</p>
+<p><strong>Proof sketch.</strong> (a) the critical point $0$ is the only critical point and the map $c \mapsto \varphi_c(c)$ (the value at the critical point of the Böttcher coordinate of the polynomial, defined for $c \notin M$) is the conformal isomorphism of the complement; the theory of the polynomial-like mappings shows that it extends to a homeomorphism and that $M$ is connected, the proof being the one indicated in <em>The Mandelbrot Set and the Quadratic Family</em>. (b) the connectedness of $K_c$ is the critical-orbit criterion of the previous section, and the alternative is the Cantor case. (c) the attracting cycle exists exactly for the interior parameters by the theorem of Douady–Hubbard, and the stability fails exactly on the boundary by the definition of the bifurcation locus, which is the subject of <em>The Fatou Components and the Classification of the Dynamics</em>.</p>
+<p><strong>Definition (parameter rays and the combinatorial model).</strong> The <strong>parameter ray</strong> of angle $\theta$ is the image under the conformal isomorphism of the radial line of angle $\theta$ in the complement of the disk, and it <strong>lands</strong> at a point of $\partial M$ when the image extends to the boundary point.</p>
+<p><strong>Theorem (the parameter rays).</strong> For every rational $\theta$ the parameter ray of angle $\theta$ lands at a point of $\partial M$. The rays of angles $0$ and $1/2$ land at $c = 1/4$ and $c = -2$; the rays of angles $1/3$ and $2/3$ land at $c = -3/4$, the root of the period-two component; and the rays of angles $1/7$ and $2/7$ land at the root of the period-three <strong>rabbit</strong> component. The set of the landing angles of a point of $\partial M$ is finite and the landing is the combinatorial model of the boundary.</p>
+<p><strong>Proof sketch.</strong> The landing of the rational rays is the theorem of Douady and Hubbard for the parameter plane, the analogue of the landing theorem above with the critical orbit replaced by the critical value; the explicit angles are the characteristic angles of the hyperbolic components, computed from the multiplier: the period-two component has multiplier $-1$ at its root $c = -3/4$, and the two rays bounding the component land there. The finiteness of the landing angles is the combinatorial statement of the model. The local connectivity of $\partial M$ is <strong>open</strong>: it is the <strong>MLC conjecture</strong>, and it is equivalent to the landing of every parameter ray, rational or not, with the continuity of the landing.</p>
+<p><strong>Remark (the dimension of the boundary).</strong> The boundary $\partial M$ has Hausdorff dimension two, and for a generic $c \in \partial M$ the Julia set $J_c$ also has Hausdorff dimension two; this is the theorem of Shishikura, quoted here and stated with its polygonal approximation in <em>The Hausdorff Dimension of the Julia Sets</em>. The result shows that the metric complexity of the parameter space is as large as the plane: the boundary of $M$ is a fractal of maximal dimension, although it is not known whether it is locally connected.</p>
+<p><strong>Remark (the iterated monodromy group).</strong> For a subhyperbolic rational map the <strong>iterated monodromy group</strong> is contracting and its limit space is homeomorphic to the Julia set; this is the theorem of Nekrashevych, stated in <em>Limit Spaces and Schreier Graphs</em>, where the group, the action on the tree and the Schreier graphs are constructed. The two objects — the limit space of the group and the Julia set of the map — are the same fractal through two constructions, the group-theoretic one and the dynamical one, and the dimension is the invariant they share.</p>
+<h2 id="the-dimension-and-the-measure-of-a-julia-set">The Dimension and the Measure of a Julia Set</h2>
+<p><strong>Theorem (the general dimension).</strong> Let $R$ be a rational map of degree $d \geq 2$.</p>
+<p><strong>(a)</strong> $J(R)$ is a compact subset of the sphere and $0 \leq \dim_H J(R) \leq 2$; if $J(R)$ is connected and not a point then $\dim_H J(R) \geq 1$.</p>
+<p><strong>(b)</strong> If $R$ is hyperbolic, with the expansion $|(R^n)'| \geq C\lambda^n$ on $J$, then $\dim_H J = \dim_B J = s$, where $s$ is the unique root of the <strong>Bowen equation</strong> $P(-s\log|R'|) = 0$; the pressure is that of <em>Ergodic Theory</em>.</p>
+<p><strong>(c)</strong> If $R$ is parabolic, with a parabolic cycle of multiplier a root of unity, the expansion fails at the cycle and the Bowen equation must be modified; the dimension is still bounded below by one when $J$ is connected, and the parabolic parameters are the delicate boundary points of the hyperbolic components.</p>
+<p><strong>(d)</strong> The measure of maximal entropy of $R$ has dimension $\log d/\chi$, where $\chi$ is its Lyapunov exponent; this is at most $\dim_H J$, with equality exactly for the exceptional maps whose Julia set is a circle ($z \mapsto z^d$ and its conjugates) or the whole sphere (the Lattès maps).</p>
+<p><strong>Proof sketch.</strong> (a) a subset of the sphere has dimension at most two, and a connected set containing an arc has dimension at least one. (b) for a hyperbolic map the pressure function $t \mapsto P(-t\log|R'|)$ is strictly decreasing from $P(0) = \log d > 0$ to $-\infty$, so it has a unique root; the root is the dimension by the Bowen–Ruelle theorem for conformal repellers, and the box and Hausdorff dimensions agree for the expanding map. (c) at a parabolic cycle the derivative tends to one along the cycle, the potential $-\log|R'|$ is not bounded below by a positive constant, and the root of the pressure is replaced by the dimension of the repeller with the parabolic point removed; the arguments are those of <em>Ergodic Theory</em> and <em>The Hausdorff Dimension of the Julia Sets</em>. (d) is the theorem of Manning and Zdunik: the entropy is $\log d$, the Lyapunov exponent is $\chi$, the dimension of the measure is $\log d/\chi$ by the Shannon–McMillan–Breiman theorem, and it is strictly smaller than the dimension of the set unless the measure is the area, which forces the exceptional cases.</p>
+<p><strong>Remark (what is quoted and what is computed).</strong> The exact cases for the quadratic family are the circle at $c = 0$ and the segment at $c = -2$, both of dimension one; the Bowen equation is the instrument for the hyperbolic parameters; the real-analyticity of the dimension on a hyperbolic component is the theorem of Ruelle; and the dimension two on the boundary is the theorem of Shishikura. All of these are computed or stated in <em>The Hausdorff Dimension of the Julia Sets</em>, and the article here states only the general rational form of the statements and the parabolic caveat. For the <strong>parabolic</strong> parameter $c = 1/4$ the Julia set is connected and its dimension is strictly between one and two; the exact dimension is not given by the Bowen equation, and the numerical value is computed in <em>The Hausdorff Dimension of the Julia Sets</em>. The <strong>multifractal</strong> refinement of the dimension — the spectrum of the local exponents of the invariant measure — is the subject of <em>Multifractal Analysis and the Legendre Transform</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>For a rational map of degree at least two the sphere splits into the Fatou set, where the iterates are equicontinuous, and the Julia set, which is compact, perfect, uncountable, completely invariant, the closure of the repelling periodic points and the boundary of every Fatou component. The Julia set is the standard fractal of the plane: a circle, a segment, a basilica, a dendrite or a Cantor set according to the parameter. The connected filled Julia set has a Böttcher coordinate at infinity, a Green's function and an external ray for every angle; the rational rays land at the points of the Julia set, and the local connectivity of the Julia set is exactly the continuity of the landing from the circle. The Mandelbrot set is compact and connected, its complement is conformally the complement of the disk, its interior is the hyperbolic parameters, its boundary is the bifurcation locus and carries the parameter rays, and the local connectivity of that boundary is the open MLC conjecture. The dimension of a hyperbolic Julia set is the root of the Bowen equation and the dimension of the maximal-entropy measure is $\log d/\chi \leq \dim_H J$; the parabolic case is the delicate one and the boundary of the Mandelbrot set has dimension two by the theorem of Shishikura. The dynamics and the ergodic theory belong to Part III, the polynomial instance and the classification of the Fatou components to the complex articles of the corpus, the dimension computations to <em>The Hausdorff Dimension of the Julia Sets</em>, and the limit space of the iterated monodromy group to <em>Limit Spaces and Schreier Graphs</em>; the topological shape of the tree-like cases is that of <em>Fractal Trees and Dendrites</em>, and the dimension used throughout is that of the lead article <em>Fractal Geometry</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $d$, $F(R)$, $J(R)$</td>
+<td>Rational map of degree $d \geq 2$; Fatou set; Julia set</td>
+</tr>
+<tr>
+<td>$P$, $K(P)$, $A(\infty)$</td>
+<td>Polynomial; filled Julia set, $J(P)=\partial K(P)$; basin of infinity</td>
+</tr>
+<tr>
+<td>$\varphi$, $G$</td>
+<td>Böttcher coordinate; Green's function $\log\lvert\varphi\rvert$</td>
+</tr>
+<tr>
+<td>$\gamma_\theta$, landing</td>
+<td>External ray of angle $\theta$; the limit at $G\to0$</td>
+</tr>
+<tr>
+<td>$2\cos(2\pi\theta)$</td>
+<td>Landing point of the ray of $z\mapsto z^2-2$</td>
+</tr>
+<tr>
+<td>$M$, $\partial M$, MLC</td>
+<td>Mandelbrot set; its boundary; the local-connectivity conjecture</td>
+</tr>
+<tr>
+<td>Hyperbolic, parabolic</td>
+<td>All critical points attracted; a periodic cycle of multiplier a root of unity</td>
+</tr>
+<tr>
+<td>$P(-s\log\lvert R'\rvert)=0$</td>
+<td>Bowen equation for the dimension of a hyperbolic Julia set</td>
+</tr>
+<tr>
+<td>$\log d/\chi$</td>
+<td>Dimension of the measure of maximal entropy; $\chi$ its Lyapunov exponent</td>
+</tr>
+<tr>
+<td>$\dim_H$, $\dim_B$</td>
+<td>Hausdorff and box dimensions, as in <em>Fractal Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John Milnor, <em>Dynamics in One Complex Variable</em> (Princeton University Press, 3rd edition, 2006), for the Fatou–Julia theory, the external rays and the landing theorems.</li>
+<li>Lennart Carleson and Theodore W. Gamelin, <em>Complex Dynamics</em> (Springer, 1993), for the polynomial-like mappings, the Mandelbrot set and the dimension theory.</li>
+<li>Adrien Douady and John H. Hubbard, "Étude dynamique des polynômes complexes", <em>Publications Mathématiques d'Orsay</em> 84-02 and 85-04 (1984–1985), for the Böttcher coordinate, the landing theorem and the connectedness of the Mandelbrot set.</li>
+<li>Curtis T. McMullen, <em>Complex Dynamics and Renormalization</em> (Princeton University Press, 1994), for the local connectivity, the rigidity and the parameter theory.</li>
+<li>Mitsuhiro Shishikura, "The Hausdorff dimension of the boundary of the Mandelbrot set and Julia sets", <em>Annals of Mathematics</em> 147 (1998), 225–267, for the dimension two results.</li>
+<li>Feliks Przytycki and Mariusz Urbański, <em>Conformal Fractals: Ergodic Theory Methods</em> (Cambridge University Press, 2010), for the Bowen equation, the pressure and the dimension of the invariant measures.</li>
+<li>Mariusz Urbański and Anna Zdunik, "Real analyticity of Hausdorff dimension of Julia sets", <em>Ergodic Theory and Dynamical Systems</em> 10 (1990), 605–631, for the analytic dependence of the dimension.</li>
+<li>Volodymyr Nekrashevych, <em>Self-Similar Groups</em> (American Mathematical Society, 2005), for the iterated monodromy groups and their limit spaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

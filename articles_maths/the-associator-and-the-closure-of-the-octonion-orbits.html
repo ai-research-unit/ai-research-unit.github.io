@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Associator and the Closure of the Octonion Orbits — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-associator-and-the-closure-of-the-octonion-orbits"><strong>The Associator and the Closure of the Octonion Orbits</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The octonion quadratic map has a single critical orbit and a single filled Julia set, because a map is a function and its iterates are compositions; the bracketing problem of the non-associative algebra enters one level earlier, in the <strong>choice of the map</strong>. A quadratic word over the octonions contains the variable more than once and the constants in a prescribed order, and two bracketings of the same word are two different maps, whose orbits are in general different. This article studies the <strong>spread</strong> of an orbit over the several bracketings of a word: the set of points reached at depth $n$ when each application of the word may be read with any one of its bracketings, and the closure of that set. The two readings of the first ambiguous word differ by the associator, so the spread is measured by associators; for a homogeneous word the whole spread at depth $n$ lies on a sphere, of a radius that grows doubly exponentially; and the size of the spread — the number of distinct points — grows like $2^n$ for the quadratic word and collapses to $2$ for the linear one. The closure of the normalized spread is a compact subset of the unit sphere, the <strong>octonion limit set</strong> of the word, and its structure and Hausdorff dimension are the open questions of the subcategory.</p>
+<p>The algebra is that of <em>Octonion Algebra</em>, <em>Octonion Norm and Invertibility</em> and <em>Octonion Geometry</em>; the associator, its alternation and Artin's theorem are used throughout, and the octonion quadratic map, its orbit and its filled Julia set are those of <em>The Octonion Quadratic Map and the Non-Associative Julia Sets</em>. The connectedness locus in the background is <em>The Octonion Mandelbrot Set</em>'s, and the linear systems whose limit sets are genuinely computable are <em>The Octonion Iterated Function Systems</em>'s. The classical Julia sets with which the octonion limit sets are compared are those of <em>The Julia Sets of a Complex Polynomial</em> and <em>The Mandelbrot Set and the Quadratic Family</em>.</p>
+<p>Throughout, $\hat o$ is the indeterminate of a word, $\tilde o_0\in\mathbb{O}$ is the starting point, $\tilde a,\tilde b,\dots$ are the constants (taken of norm one where a norm is computed), $[\tilde o,\tilde p,\tilde r]=(\tilde o\tilde p)\tilde r-\tilde o(\tilde p\tilde r)$ is the associator, and a <strong>word</strong> $W(\hat o)$ is a non-associative polynomial in $\hat o$ and the constants in which $\hat o$ occurs at least twice.</p>
+<h2 id="the-two-readings-and-the-associator">The Two Readings and the Associator</h2>
+<p><strong>Definition.</strong> Let $W$ be a word in which the variable occurs twice, so that $W$ contains a product of three consecutive factors at least once. A <strong>bracketing</strong> of $W$ is a choice of parenthesisation of all its products; the <strong>readings</strong> of $W$ are the maps $\hat o\mapsto V(\hat o)$ obtained from the bracketings $V$. For the word $\hat o\,\tilde a\,\tilde b$ the two extreme readings are</p>
+<p>$$
+f_L(\hat o)=(\hat o\tilde a)\tilde b, \qquad f_R(\hat o)=\hat o(\tilde a\tilde b),
+$$</p>
+<p>and their difference is the associator,</p>
+<p>$$
+f_L(\hat o)-f_R(\hat o) = [\hat o,\tilde a,\tilde b].
+$$</p>
+<p><strong>Lemma (when the readings agree).</strong> If all the letters of the word, together with its constants, lie in a subalgebra of $\mathbb{O}$ generated by two octonions, then all its readings agree. In particular $(x\,x)c=x(x\,c)$ and $(x\,a)x=x(a\,x)$ for all $x,a,c\in\mathbb{O}$.</p>
+<p><em>Proof.</em> That subalgebra is associative by Artin's theorem, and in an associative algebra all bracketings agree. The displayed identities are the cases in which one of the three arguments is repeated, which is where the associator vanishes by alternation. $\square$</p>
+<p><strong>Remark (flexibility).</strong> The case $(x\,a)x=x(a\,x)$ is the flexible law and holds in every alternative algebra; it is the reason that the word $\hat o\,\tilde a\,\hat o$ has a single reading, and it shows that the first genuine ambiguity needs <strong>three</strong> independent letters, as in $\hat o\,\tilde a\,\tilde b$.</p>
+<p><strong>Example.</strong> For $\hat o=e_1$, $\tilde a=e_2$, $\tilde b=e_4$ the two readings of $\hat o\,\tilde a\,\tilde b$ are $e_7$ and $-e_7$, with gap $[e_1,e_2,e_4]=2e_7$ of norm $2$; for the Fano triple $e_1,e_2,e_3$ the readings agree and the gap is zero. Reversing two arguments changes the sign of the gap.</p>
+<h2 id="the-spread-of-a-word-and-the-norm-of-its-points">The Spread of a Word and the Norm of Its Points</h2>
+<p><strong>Definition (the spread).</strong> Let $W$ be a word with the readings $f_1,\dots,f_r$. The <strong>orbit set</strong> of a starting point $\tilde o_0$ at depth $n$ is</p>
+<p>$$
+W^{[n]}(\tilde o_0) = \{\, f_{c_1}\circ f_{c_2}\circ\cdots\circ f_{c_n}(\tilde o_0) : c_i\in\{1,\dots,r\} \,\},
+$$</p>
+<p>the set of the $r^n$ values of the compositions of $n$ readings, and the <strong>spread</strong> is the union of the $W^{[n]}(\tilde o_0)$ over $n\geq0$. The <strong>limit set</strong> is the closure of the spread when the spread is bounded, and, for a homogeneous word, the <strong>normalized limit set</strong> is the closure of $\{\tilde o/\lvert\tilde o\rvert : \tilde o\in\text{spread}\}$ in the unit sphere $S^7$.</p>
+<p><strong>Theorem (the sphere theorem).</strong> Suppose that $W$ is homogeneous of weight $k$, that is, every monomial of $W$ contains exactly $k$ occurrences of the variable, and that every constant has norm one. Then every point of $W^{[n]}(\tilde o_0)$ has norm</p>
+<p>$$
+\bigl\lvert\tilde o_0\bigr\rvert^{k^{\,n}},
+$$</p>
+<p>and the whole spread at depth $n$ lies on the sphere of that radius.</p>
+<p><em>Proof.</em> For a monomial containing $k$ occurrences of the variable and any number of constants of norm one, the norm of its value is $\lvert\tilde o\rvert^k$, because the norm is multiplicative on $\mathbb{O}$ by <em>Octonion Norm and Invertibility</em>. This is independent of the bracketing, since the norm is multiplicative for every association. Substituting the word into itself replaces each occurrence of the variable by a subword whose value has norm $\lvert\tilde o\rvert^k$, so the value of the substituted word has norm $\bigl(\lvert\tilde o\rvert^k\bigr)^k=\lvert\tilde o\rvert^{k^2}$, and induction gives $\lvert\tilde o_0\rvert^{k^n}$ at depth $n$. $\square$</p>
+<p><strong>Corollary.</strong> For a homogeneous word the spread is never bounded unless $\lvert\tilde o_0\rvert\leq1$; for $\lvert\tilde o_0\rvert>1$ the interesting object is the normalized spread on $S^7$, a compact set whenever the radii are well defined.</p>
+<p><strong>Remark (why the norm is insensitive to the bracketing).</strong> The norm of a product of octonions is the product of the norms, for <strong>every</strong> parenthesisation, because the norm is multiplicative and the multiplicativity is a statement about the product, not about the order of the multiplications. The bracketing therefore moves the point <strong>along</strong> the sphere and not across it, and the geometry of the word is entirely in the directions.</p>
+<h2 id="the-growth-of-the-complexity">The Growth of the Complexity</h2>
+<p><strong>Definition.</strong> The <strong>complexity</strong> of a word at depth $n$ is the number of distinct points in $W^{[n]}(\tilde o_0)$. It is at most $r^n$, the number of compositions, and it is at most the number of bracketings of the substituted word, which is a Catalan number and much larger.</p>
+<p><strong>Example (exponential growth: the quadratic word).</strong> Let $W(\hat o)=((\hat o\,\tilde a)\tilde b)\,\hat o$ with $\tilde a=e_1$, $\tilde b=e_2$, so the two readings are $f_L(\tilde o)=((\tilde o e_1)e_2)\tilde o$ and $f_R(\tilde o)=(\tilde o(e_1e_2))\tilde o$, and let $\tilde o_0=e_0+2e_1+3e_2+\cdots+8e_7$. Then the complexity at depth $n$ is exactly $2^n$ for $1\leq n\leq10$, with the computed values $2,4,8,16,32,64,128,256,512,1024$; the two readings never collide along the orbit tree, and the tree is a full binary tree. By the sphere theorem the points of $W^{[n]}(\tilde o_0)$ all have norm $\lvert\tilde o_0\rvert^{2^n}$, so the spread is a doubly exponentially expanding cloud on spheres, of $2^n$ points each.</p>
+<p><strong>Example (collapse: the linear word).</strong> Let $W(\hat o)=(\hat o\,\tilde a)\tilde b$ with $\tilde a=e_1$, $\tilde b=e_2$, so the readings are $f_L(\tilde o)=(\tilde o e_1)e_2$ and $f_R(\tilde o)=\tilde o(e_1e_2)$. Then the complexity at every depth is exactly $2$, for every starting point tested, including a generic one: the readings send the cloud into a single two-point set at each depth. For the unit starting point $\tilde o_0=e_4$ the spread over the depths is the four-point set $\{\pm e_4,\pm e_7\}$; for a generic starting point the two points at each depth vary with the depth and lie on the single sphere of radius $\lvert\tilde o_0\rvert$ by the sphere theorem with $k=1$. Thus the naive count $r^n$ is far from the truth in the linear case and exact in the quadratic case, and the complexity is a genuine dynamical invariant.</p>
+<p><strong>Remark (the full bracketing set).</strong> If all bracketings of the substituted word are allowed, not just the $r$ readings, the set is larger but can collapse even more: for the word $((\hat o\tilde a)\tilde b)\hat o$ with $\tilde a=e_1,\tilde b=e_2$ and the starting point $\tilde o_0=e_4$, the word itself has $4$ letters and $5$ bracketings, the first substitute has $10$ letters and $4862$ bracketings, and the fourth has $94$ letters and more than fifty digits' worth of bracketings; yet in every case computed (up to the fourth) the set of distinct values has exactly $2$ elements. The collapse is a consequence of the alternative laws: many bracketings are equal in every alternative algebra. The spread over the readings is the object that survives.</p>
+<h2 id="the-limit-set-and-the-complex-comparison">The Limit Set and the Complex Comparison</h2>
+<p><strong>Theorem (compactness).</strong> For a homogeneous word and a starting point with $\lvert\tilde o_0\rvert>0$, the normalized spread is a nonempty subset of $S^7$, and its closure, the normalized limit set $\Lambda_W(\tilde o_0)\subseteq S^7$, is compact and invariant under the induced maps $\tilde o\mapsto f_i(\tilde o)/\lvert f_i(\tilde o)\rvert$ on the sphere.</p>
+<p><em>Proof.</em> The normalized spread is nonempty and lies in the compact sphere, so its closure is compact; the induced maps are continuous on the sphere, and they carry the normalized spread into itself, so they carry its closure into itself. $\square$</p>
+<p><strong>Remark (the dimension is open).</strong> The Hausdorff dimension of $\Lambda_W(\tilde o_0)$ is the natural quantitative question about the octonion limit sets. For the quadratic word of the example the limit set is the closure of a binary tree of directions, and it is plausible that its dimension lies strictly between $0$ and $7$; the value, and even the existence of a formula in terms of the word and the constants, is open. No proof of a dimension statement for an octonion limit set is offered here, and the matter is recorded as an open problem in the <code>.context</code> and the report.</p>
+<p><strong>Theorem (the complex case is the degenerate one).</strong> Over $\mathbb{C}$ every word has a single reading, the spread is a single point at each depth, and the limit set is the classical Julia set of the corresponding polynomial, of the classical theory; the octonion spread is therefore a phenomenon of the three independent directions, and it vanishes if the constants and the variable are constrained to a complex plane.</p>
+<p><em>Proof.</em> $\mathbb{C}$ is commutative and associative, so all bracketings coincide; the orbit of a complex point under the single polynomial is the classical orbit, and the closure of the bounded orbits is the filled Julia set of <em>The Julia Sets of a Complex Polynomial</em>. $\square$</p>
+<p><strong>Remark (the literature, and the transition points).</strong> The octonionic Julia and Mandelbrot sets computed by Griffin and Joshi are the pictures of a fixed reading; their <strong>transition points</strong> are the parameter values at which the topology of those pictures changes. The transition points are the empirical counterpart of the limit set of the present article, and the question of what they are, in terms of the associator, is open. The linear systems of <em>The Octonion Iterated Function Systems</em> are the case in which the limit set is the attractor of a contracting system and its dimension can be estimated; they are the next article.</p>
+<h2 id="summary">Summary</h2>
+<p>A quadratic word over the octonions has several readings, one for each bracketing, and the first ambiguous word $\hat o\tilde a\tilde b$ has two readings whose difference is the associator $[\hat o,\tilde a,\tilde b]$. Words whose letters and constants lie in a subalgebra generated by two octonions, and words in which one of the three arguments is repeated, have a single reading by Artin's theorem and the flexible law, so the first genuine ambiguity needs three independent directions. The spread of an orbit over the readings is the set of values of the compositions of the readings at each depth; for a homogeneous word of weight $k$ every point of the spread at depth $n$ has norm $\lvert\tilde o_0\rvert^{k^n}$, so the spread lies on spheres and the geometry is in the directions; the number of distinct points is exactly $r^n$ for the quadratic word $((\hat o\tilde a)\tilde b)\hat o$ (computed $2^n$ for $n\leq10$) and collapses to $2$ for the linear word $(\hat o\tilde a)\tilde b$, while the set of all bracketings can collapse even further by the alternative laws. The normalized spread is a compact subset of $S^7$, the octonion limit set of the word, and the question of its Hausdorff dimension, and of the meaning of Griffin and Joshi's transition points in terms of the associator, is open. Over the complex numbers the spread degenerates to a single orbit and to the classical Julia set, so the spread is a phenomenon of the three independent directions of the octonions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$W(\hat o)$</td>
+<td>A word in the indeterminate $\hat o$ and the constants</td>
+</tr>
+<tr>
+<td>$f_L=(\hat o\tilde a)\tilde b$, $f_R=\hat o(\tilde a\tilde b)$</td>
+<td>The two readings of $\hat o\tilde a\tilde b$; $f_L-f_R=[\hat o,\tilde a,\tilde b]$</td>
+</tr>
+<tr>
+<td>$[\tilde o,\tilde p,\tilde r]$</td>
+<td>The associator, alternating and multilinear</td>
+</tr>
+<tr>
+<td>$W^{[n]}(\tilde o_0)$</td>
+<td>The orbit set at depth $n$, at most $r^n$ points</td>
+</tr>
+<tr>
+<td>Spread</td>
+<td>The union of the $W^{[n]}(\tilde o_0)$ over $n$</td>
+</tr>
+<tr>
+<td>$W$ homogeneous of weight $k$</td>
+<td>Every monomial has $k$ occurrences of the variable</td>
+</tr>
+<tr>
+<td>$\lvert\tilde o_0\rvert^{k^n}$</td>
+<td>The common norm of the points of $W^{[n]}(\tilde o_0)$</td>
+</tr>
+<tr>
+<td>$\Lambda_W(\tilde o_0)\subseteq S^7$</td>
+<td>The normalized limit set; its dimension is open</td>
+</tr>
+<tr>
+<td>Complexity at depth $n$</td>
+<td>The number of distinct points of $W^{[n]}(\tilde o_0)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John C. Baez, "The Octonions", <em>Bulletin of the American Mathematical Society</em> <strong>39</strong> (2002), 145–205, for Artin's theorem, the alternative laws and the associator.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the alternative laws and the free alternative algebra.</li>
+<li>C. J. Griffin and G. C. Joshi, "Associators in generalized octonionic maps", <em>Chaos, Solitons &amp; Fractals</em> <strong>3</strong> (1993), no. 3, 307–319, for the role of the associator in the octonionic dynamics.</li>
+<li>C. J. Griffin and G. C. Joshi, "Transition points in octonionic Julia sets", <em>Chaos, Solitons &amp; Fractals</em> <strong>3</strong> (1993), no. 1, 67–88, for the empirical transition points.</li>
+<li>Kenneth Falconer, <em>Fractal Geometry: Mathematical Foundations and Applications</em>, 3rd edition (Wiley, 2014), for the dimension theory that the open questions of this article would use.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

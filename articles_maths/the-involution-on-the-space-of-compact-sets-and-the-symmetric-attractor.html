@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Space of Compact Sets and the Symmetric Attractor — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-space-of-compact-sets-and-the-symmetric-attractor"><strong>The Involution on the Space of Compact Sets and the Symmetric Attractor</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An isometric involution $\sigma$ of a metric space $X$ acts on the <strong>space of the nonempty compact subsets</strong> $\mathcal{K}(X)$ by the image,</p>
+<p>$$
+\Sigma(A) = \sigma(A) , \qquad A \in \mathcal{K}(X) ,
+$$</p>
+<p>and because $\sigma$ is an isometry and $\sigma^2 = \operatorname{id}$, the map $\Sigma$ is again an involutive isometry, now of the Hausdorff metric space $(\mathcal{K}(X), d_H)$. The fixed points of $\Sigma$ are the <strong>compact sets invariant under $\sigma$</strong>, and the closed set $\operatorname{Fix}\Sigma$ of them is the symmetric part of the space of the compact sets. When an iterated function system is reversible by $\sigma$, the Hutchinson operator $F$ commutes with $\Sigma$, and the commutation produces the central statement of the article: the attractor — the unique fixed point of $F$ — is automatically a fixed point of the involution, so the attractor of a reversible system is <strong>symmetric</strong>. The same involution acts on the measures, through the pushforward, and the self-similar measure of the compatible weights is symmetric in the same sense; the pair of the symmetric attractor and the symmetric measure is the operator form of the symmetry.</p>
+<p>This article is the operator side of the involution and closes the category. It defines the induced involution $\Sigma$ on $\mathcal{K}(X)$, proves that it is an isometry, identifies its fixed set, proves that the commutation of $\Sigma$ with the Hutchinson operator forces the attractor to be symmetric and gives an alternative existence proof by the restriction to $\operatorname{Fix}\Sigma$, and treats the adjoint action on the measures with the symmetric self-similar measure. The geometry of the symmetric fractals, the fixed set and the quotient is <em>Symmetric Fractals and the Involution</em>; the Hutchinson operator and its adjoint on the measures are <em>The Hutchinson Operator and Its Adjoint</em>; and the reversible systems and the symmetric measure of <em>Fractal Analysis</em> are <em>Reversible Iterated Function Systems and the Involution</em> and <em>The Self-Similar Measure and the Involution</em>.</p>
+<p>The article assumes <em>Metric Geometry</em> for the Hausdorff metric, the isometries and the compactness; <em>Metric, Uniform and Complete Spaces</em> for the completeness and the theorem of Banach; <em>Topological Spaces</em> for the closed sets and the compactness; <em>Fractal Geometry</em> for the attractor and the dimension; and the two articles of the category just cited. No physics is invoked.</p>
+<h2 id="the-involution-on-the-space-of-compact-sets">The Involution on the Space of Compact Sets</h2>
+<p><strong>Definition.</strong> Let $\sigma$ be an isometric involution of a complete metric space $X$. The <strong>induced involution</strong> on $\mathcal{K}(X)$ is</p>
+<p>$$
+\Sigma : \mathcal{K}(X) \to \mathcal{K}(X), \qquad \Sigma(A) = \sigma(A) = \{\sigma a : a \in A\} .
+$$</p>
+<p><strong>Theorem (the induced involution is an isometric involution).</strong> <strong>(a)</strong> $\Sigma$ maps $\mathcal{K}(X)$ into itself, because the image of a compact set under a continuous map is compact. <strong>(b)</strong> $\Sigma^2 = \operatorname{id}_{\mathcal{K}(X)}$, because $\sigma^2 = \operatorname{id}_X$. <strong>(c)</strong> $\Sigma$ is an isometry of the Hausdorff metric:</p>
+<p>$$
+d_H\bigl(\Sigma(A), \Sigma(B)\bigr) = d_H(A,B) \qquad (A, B \in \mathcal{K}(X)) .
+$$</p>
+<p><strong>(d)</strong> The fixed set $\operatorname{Fix}\Sigma = \{A : \sigma(A) = A\}$ is closed in $\mathcal{K}(X)$ and consists exactly of the compact sets invariant under $\sigma$.</p>
+<p><strong>Proof sketch.</strong> (a) is the continuity of $\sigma$ and the compactness. (b) is the functoriality of the image. (c) the identity $d(\sigma a, \sigma b) = d(a,b)$ gives $\sup_{a \in A} d(\sigma a, \sigma B) = \sup_{a\in A} d(a,B)$ for each of the two terms of the Hausdorff distance, and the two supprema are exchanged by the symmetry of the definition. (d) $\Sigma$ is continuous and involutive, so its fixed set is closed, and $\Sigma(A)=A$ is the definition of the invariance. The statements are those of <em>Metric Geometry</em>.</p>
+<p><strong>Example (the fixed compact sets of the standard involutions).</strong> For the reflection $\sigma(x) = -x$ of the line, the fixed compact sets are the compact sets symmetric about the origin, among them the singleton $\{0\}$ and the symmetric Cantor sets. For the reflection of the plane in a line, the fixed compact sets are the compact sets invariant under the reflection, among them the sets contained in the axis and the sets symmetric about it. The fixed set of $\Sigma$ is never empty: a singleton $\{p\}$ for a point $p$ of $\operatorname{Fix}\sigma$ is invariant, and when $\operatorname{Fix}\sigma$ is empty, as for the antipodal map, any two-point orbit $\{x,\sigma x\}$ is an invariant compact set.</p>
+<h2 id="the-commutation-and-the-symmetric-attractor">The Commutation and the Symmetric Attractor</h2>
+<p><strong>Theorem (the commutation).</strong> Let $f_1,\dots,f_N$ be an iterated function system on $X$ and let $\sigma$ reverse the system, with the involutive permutation $\tau$:</p>
+<p>$$
+\sigma \circ f_i = f_{\tau(i)} \circ \sigma \qquad (i = 1,\dots,N) .
+$$</p>
+<p>Then the Hutchinson operator and the induced involution commute,</p>
+<p>$$
+F \circ \Sigma = \Sigma \circ F ,
+$$</p>
+<p>and the attractor $K$ is a fixed point of the involution, $\sigma(K) = K$.</p>
+<p><strong>Proof sketch.</strong> The commutation is the computation of <em>Symmetric Fractals and the Involution</em>, $\Sigma(F(A)) = \bigcup_i f_{\tau(i)}(\Sigma(A)) = F(\Sigma(A))$. Then $\Sigma(K) = \Sigma(F(K)) = F(\Sigma(K))$, so $\Sigma(K)$ is a fixed point of the Hutchinson operator and, by the uniqueness of the attractor of the lead article <em>Fractal Geometry</em>, $\Sigma(K) = K$.</p>
+<p><strong>Theorem (the existence of the symmetric fixed point).</strong> The restriction of $F$ to the closed set $\operatorname{Fix}\Sigma$ maps it into itself and is a contraction of the same ratio $r$; hence $F$ has a unique fixed point in $\operatorname{Fix}\Sigma$, and that fixed point is the attractor $K$.</p>
+<p><strong>Proof sketch.</strong> If $\sigma(A)=A$ then $\sigma(F(A)) = F(\sigma(A)) = F(A)$ by the commutation, so $F$ preserves $\operatorname{Fix}\Sigma$; the fixed set is closed in the complete $\mathcal{K}(X)$, hence complete, and the contraction of <em>The Hutchinson Operator and Its Adjoint</em> restricts to it; the Banach theorem gives the unique fixed point in $\operatorname{Fix}\Sigma$, and it is $K$ because $K \in \operatorname{Fix}\Sigma$ by the previous theorem. The statement is the operator form of the symmetry: the symmetric attractor is the fixed point of the operator not only of $F$ but of the restricted operator on the symmetric compact sets, and the two characterisations agree.</p>
+<p><strong>Example (the symmetric Cantor set, on the operator level).</strong> For $f_1(x)=x/3$, $f_2(x)=x/3+2/3$ and $\sigma(x)=1-x$ on $[0,1]$, the induced involution sends a compact set $A$ to $\{1-a : a \in A\}$ and the Hutchinson operator satisfies $F\circ\Sigma=\Sigma\circ F$. The iteration of $F$ from $[0,1]$ gives the approximants $C_n$, each of which is symmetric, and the limit $C$ is symmetric; the fixed set $\operatorname{Fix}\Sigma$ contains the whole sequence $C_n$ and the limit, so the restricted contraction has the same orbit and the same fixed point. The reader sees that the symmetry of the attractor is not an accident of the example but the commutation of the two operators.</p>
+<h2 id="the-adjoint-action-on-the-measures-and-the-symmetric-measure">The Adjoint Action on the Measures and the Symmetric Measure</h2>
+<p><strong>Definition.</strong> The <strong>Koopman operator</strong> of the involution acts on the functions by $U_\sigma\varphi = \varphi\circ\sigma$; it is an involutive isometry of the bounded continuous functions in the supremum norm, and a unitary involution of $L^2(\mu)$ when $\mu$ is invariant. Its <strong>adjoint</strong> acts on the measures by the pushforward,</p>
+<p>$$
+\sigma_\# \mu = \mu \circ \sigma^{-1} = \mu\circ\sigma , \qquad \int \varphi\, d(\sigma_\#\mu) = \int (\varphi\circ\sigma)\, d\mu ,
+$$</p>
+<p>and $\sigma_\#$ is again an involution of the probability measures, and an isometry for the Wasserstein metric because $\sigma$ is an isometry.</p>
+<p><strong>Theorem (the symmetric self-similar measure).</strong> Let the weights satisfy $p_i = p_{\tau(i)}$ for every $i$. Then the pushforward operator $L$ of the self-similar system commutes with the involution,</p>
+<p>$$
+\sigma_\# \circ L = L \circ \sigma_\# ,
+$$</p>
+<p>and the self-similar measure $\mu$ is invariant under the involution,</p>
+<p>$$
+\sigma_\# \mu = \mu .
+$$</p>
+<p><strong>Proof sketch.</strong> The computation is a reindexing: $\sigma_\#(L\mu) = \sum_i p_i (\sigma\circ f_i)_\#\mu = \sum_i p_i (f_{\tau(i)}\circ\sigma)_\#\mu = \sum_j p_{\tau(j)}(f_j)_\#(\sigma_\#\mu) = L(\sigma_\#\mu)$, using $p_j = p_{\tau(j)}$ in the last step. Then $\sigma_\#\mu$ is a fixed point of $L$ and, by the uniqueness of the self-similar measure of <em>The Hutchinson Operator and Its Adjoint</em>, $\sigma_\#\mu = \mu$. The measure-theoretic construction of the symmetric measure, its invariance and the dimension of its quotient are those of <em>Fractal Analysis</em>'s <em>The Self-Similar Measure and the Involution</em>; the operator relation is what is stated here.</p>
+<p><strong>Remark (the intertwining of the two levels).</strong> The support map links the two involutions: $\operatorname{supp}(\sigma_\#\mu) = \sigma(\operatorname{supp}\mu)$, so a symmetric measure has a symmetric support, and the symmetric attractor is the support of the symmetric self-similar measure. The pair $(\Sigma, \sigma_\#)$ — the involution on the compact sets and the adjoint involution on the measures — is the operator form of the geometry of <em>Symmetric Fractals and the Involution</em>: the fixed point of $\Sigma$ is the symmetric attractor, the fixed point of $\sigma_\#$ is the symmetric measure, and the two are linked by the support.</p>
+<p><strong>Remark (the decomposition of a measure).</strong> Every finite measure $\mu$ decomposes into its symmetric and antisymmetric parts,</p>
+<p>$$
+\mu = \tfrac12(\mu + \sigma_\#\mu) + \tfrac12(\mu - \sigma_\#\mu) ,
+$$</p>
+<p>the first term invariant under the involution and the second changing sign; the self-similar measure of the compatible weights is purely symmetric, and the antisymmetric part vanishes. The decomposition is the measure-theoretic form of the splitting of a function into its even and odd parts, and it is the reason the involution is a symmetry of the system and not merely a symmetry of the attractor.</p>
+<h2 id="summary">Summary</h2>
+<p>An isometric involution $\sigma$ of $X$ induces an involutive isometry $\Sigma$ of the space of the nonempty compact sets with the Hausdorff metric, and the fixed points of $\Sigma$ are the compact sets invariant under $\sigma$. When an iterated function system is reversible by $\sigma$, the Hutchinson operator commutes with $\Sigma$, so the attractor — the unique fixed point of $F$ — is invariant under the involution; equivalently, the restriction of $F$ to the closed set of the symmetric compact sets is a contraction with the same unique fixed point, the symmetric attractor. On the measures, the adjoint of the Koopman operator is the pushforward $\sigma_\#$, which is an involution of the probability measures and commutes with the pushforward operator $L$ of the self-similar system when the weights are compatible with the permutation of the maps; the self-similar measure is then symmetric, its support is the symmetric attractor, and every measure splits into its symmetric and antisymmetric parts. The geometry of the symmetric fractals is <em>Symmetric Fractals and the Involution</em>, the operator and its adjoint on the measures are <em>The Hutchinson Operator and Its Adjoint</em>, the reversible systems and the symmetric measure are <em>Fractal Analysis</em>'s, the Hausdorff metric and the completeness are <em>Metric Geometry</em>'s, and the attractor and the dimension are <em>Fractal Geometry</em>'s.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$, $\Sigma$</td>
+<td>Isometric involution of $X$; the induced involution $\Sigma(A)=\sigma(A)$ on $\mathcal{K}(X)$</td>
+</tr>
+<tr>
+<td>$U_\sigma$</td>
+<td>Koopman operator $U_\sigma\varphi=\varphi\circ\sigma$; unitary involution of the functions</td>
+</tr>
+<tr>
+<td>$\sigma_\#$</td>
+<td>Pushforward, the adjoint of $U_\sigma$; an involution of the measures</td>
+</tr>
+<tr>
+<td>$\operatorname{Fix}\Sigma$</td>
+<td>The $\sigma$-invariant compact sets, closed in $\mathcal{K}(X)$</td>
+</tr>
+<tr>
+<td>$F\circ\Sigma=\Sigma\circ F$</td>
+<td>The commutation, equivalent to the reversibility of the system</td>
+</tr>
+<tr>
+<td>$\tau$, $p_i=p_{\tau(i)}$</td>
+<td>The permutation of the maps; the compatible weights</td>
+</tr>
+<tr>
+<td>$K$, $\mu$</td>
+<td>Symmetric attractor and symmetric self-similar measure; $\sigma(K)=K$, $\sigma_\#\mu=\mu$</td>
+</tr>
+<tr>
+<td>$\operatorname{supp}\mu=K$</td>
+<td>The support of the symmetric measure is the symmetric attractor</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John E. Hutchinson, "Fractals and self-similarity", <em>Indiana University Mathematics Journal</em> 30 (1981), 713–747, for the Hutchinson operator, the attractor and the invariant measure.</li>
+<li>Michael F. Barnsley, <em>Fractals Everywhere</em> (Academic Press, 2nd edition, 1993), for the operator on the compact sets, the collage theorem and the symmetric constructions.</li>
+<li>Kenneth Falconer, <em>Fractal Geometry: Mathematical Foundations and Applications</em> (Wiley, 3rd edition, 2014), for the self-similar sets, the open set condition and the dimension.</li>
+<li>Andrzej Lasota and Michael C. Mackey, <em>Chaos, Fractals, and Noise: Stochastic Aspects of Dynamics</em> (Springer, 2nd edition, 1994), for the transfer and Koopman operators, their adjoints and the invariant measures.</li>
+<li>Cédric Villani, <em>Optimal Transport: Old and New</em> (Springer, 2009), for the pushforward of the measures, the Wasserstein metric and the contraction.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

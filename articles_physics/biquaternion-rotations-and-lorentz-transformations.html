@@ -56,7 +56,7 @@
 <p>The article is the Geometry slot of the Lie-theoretic block: the algebra is <em>Biquaternion Lie Algebra</em>, the group and its exponential are <em>Biquaternion Lie Group and Exponential Structure</em>, and the topology of the group is <em>The Biquaternion Unit Group as a Topological Group</em>. The reflections and the Cartan–Dieudonné theorem are stated generally in <em>Versors, Rotors and the Sandwich Action with Signed Inner Conjugation</em> and <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> of Part II, and their biquaternion case is worked here; the Clifford reading of the algebra is <em>The Clifford Structure of the Biquaternion Algebra</em>; the transformation group in full is in <em>Biquaternion Automorphisms and Derivations</em>; and the finite groups of units, together with the figures they determine, are <em>Biquaternion Orders and Finite Groups of Units</em>.</p>
 <p>The article also owns the <strong>dagger sandwich</strong> $\operatorname{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$, the action of an arbitrary unit of the algebra on the algebra regarded as an eight-dimensional real vector space. Its carrier, its kernel, its invariants, its action on the six distinguished subspaces and the operators of a boost and of a rotation are read below. The inner automorphism $\tilde T\mapsto\tilde{Q}\tilde T\tilde{Q}^{-1}$ and its contrast with the sandwich are in <em>Biquaternion Automorphisms and Derivations</em>, the matrix congruence in <em>The 2×2 Matrix Element Representation of Biquaternions</em>, and the four factors of a single element in <em>The Polar Element Representation of Biquaternions</em>.</p>
 <p>Physically the sandwich $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ is the Lorentz transformation of the material sector: the boost is the change of inertial frame and the rotor is the spatial rotation, so that a four-vector of <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em> is carried from one frame to another by a biquaternion multiplication. The doubling of the half-angle is the geometric origin of the spinor double cover: the same motion is realised twice in $\mathbb{B}^{\times}_1$, once as $\tilde{\Lambda}$ and once as $-\tilde{\Lambda}$, which is why the carrier of the state of <em>Biquaternion Quantum Fields</em> is a spinor and not a vector.</p>
-<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (<em>Biquaternion Norm and Invertibility</em>). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.</p>
+<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (<em>Biquaternion Norm and Invertibility</em>). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.</p>
 <hr />
 <h2 id="the-double-covers-and-the-lorentz-group">The Double Covers and the Lorentz Group</h2>
 <p>The relevant subgroups are: $\mathbb{B}^\times$, the nonzero-norm elements (complex dimension $4$, real dimension $8$); $\mathbb{B}^\times_1$, the unit-norm elements (complex dimension $3$, real dimension $6$); the rotation group $S^3$, the unit-norm real quaternions (real dimension $3$); and the center $\mathbb{C}^\times e_0$ of nonzero scalars (complex dimension $1$, real dimension $2$).</p>
@@ -144,7 +144,7 @@ $$</p>
 <h2 id="the-sandwich-is-the-lorentz-action">The Sandwich Is the Lorentz Action</h2>
 <h3 id="on-the-material-sector">On the Material Sector</h3>
 <p>Rotor conjugation is the four-vector action of the series, and the identification is established in <em>The Lorentz Group as Biquaternion Norm Automorphisms</em> and <em>The Lorentz Group in Biquaternionic Form</em>; what is needed here are the three properties, each of which transfers a fact about the biquaternion norm to the operator language.</p>
-<p><strong>Proposition.</strong> For every rotor $\tilde{\Lambda}$, $\operatorname{H}_{\tilde{\Lambda}}$ maps $\mathbb{M}_-$ to itself, maps $\mathbb{M}_+$ to itself, and satisfies $N\big(\operatorname{H}_{\tilde{\Lambda}}(\tilde T)\big) = |N(\tilde{\Lambda})|^2N(\tilde T) = N(\tilde T)$.</p>
+<p><strong>Proposition.</strong> For every rotor $\tilde{\Lambda}$, $\operatorname{H}_{\tilde{\Lambda}}$ maps $\mathbb{M}_-$ to itself, maps $\mathbb{M}_+$ to itself, and satisfies $N\big(\operatorname{H}_{\tilde{\Lambda}}(\tilde T)\big) = |N(\tilde{\Lambda})|^2N(\tilde T) = \langle\tilde T,\tilde T\rangle_{\natural} = N(\tilde T)$.</p>
 <p><strong>Proof.</strong> For $\tilde T^{*} = \pm \tilde T$, the image satisfies $\left(\tilde{\Lambda}\tilde T\tilde{\Lambda}^{*}\right)^\dagger = \tilde{\Lambda}\tilde T^{*}\tilde{\Lambda}^{*} = \pm\tilde{\Lambda}\tilde T\tilde{\Lambda}^{*}$, which gives both sector statements. For the biquaternion norm, multiplicativity gives $N(\operatorname{H}_{\tilde{\Lambda}}\tilde T) = N(\tilde{\Lambda})N(\tilde T)N(\tilde{\Lambda}^{*})$, and $N(\tilde{\Lambda}^{*}) = \overline{N(\tilde{\Lambda})}$ because ${}^{*}$ is the composite of $\bar{\phantom{Q}}$, which fixes $N$, with $\bar{\cdot}$, which conjugates it; with $N(\tilde{\Lambda}) = 1$ the factor is one.</p>
 <p>The proposition is the mathematical content of the statement that a rotor is a Lorentz transformation of the material sector, and of the Hermitian sector as well: the informational sector is carried to itself by the same action, which is the operator form of the statement that a Lorentz transformation acts on Hermitian forms exactly as it acts on four-vectors.</p>
 <h3 id="the-biquaternion-norm-as-a-scaled-invariant">The Biquaternion Norm as a Scaled Invariant</h3>
@@ -507,6 +507,18 @@ $$</p>
 <tr>
 <td>$\theta_W$</td>
 <td>The Wigner angle of two successive boosts</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$</td>
+<td>the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
+<td>the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
 </tr>
 </tbody>
 </table></div>
