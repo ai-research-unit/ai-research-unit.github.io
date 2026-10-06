@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Escape Radius and the Green's Function — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-escape-radius-and-the-greens-function"><strong>The Escape Radius and the Green's Function</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The basin of infinity of a polynomial is the set of points whose iterates tend to $\infty$, and on it the dynamics is linearised by a single harmonic function: the <strong>Green's function</strong>, the function $G$ that measures the rate of escape. This article defines $G$, proves its existence as the limit of the normalised logarithms of the iterates, records the functional equation $G(f(z)) = d\,G(z)$ that makes it the eigenfunction of the pull-back by $f$, computes the explicit series for the quadratic family, and identifies the Laplacian of $G$ with the invariant measure of the Julia set. The <strong>escape radius</strong> is the companion object: the radius beyond which the escape is certain, so that the escape-time algorithm of <em>The Mandelbrot Set and the Quadratic Family</em> terminates. The article closes with the potential-theoretic reading of $G$, in which it is the equilibrium potential of the filled Julia set.</p>
+<p>The article depends on <em>The Julia Sets of a Complex Polynomial</em> for the partition and the filled Julia set, and on <em>The Mandelbrot Set and the Quadratic Family</em> for the escape-time algorithm. The Böttcher coordinate, the external rays and the landing theorems are Part IV's, and are named here only where the Green's function is their modulus; the equilibrium measure and the logarithmic potential are those of <em>Potential Theory</em> of Part III, and the invariant measure of the Julia set is that of <em>The Julia Sets of a Complex Polynomial</em>. The dimension of the Julia set is the following article's. No physics is invoked.</p>
+<h2 id="the-escape-radius">The Escape Radius</h2>
+<p><strong>Definition.</strong> Let $f(z) = a_d z^d + \cdots + a_0$ be a polynomial of degree $d \geq 2$. A number $R$ is an <strong>escape radius</strong> for $f$ if $|z| > R$ implies $|f(z)| > |z|$; the <strong>escape locus</strong> is then $\{z : |z| > R\}$, and a point of the escape locus has an orbit diverging to $\infty$.</p>
+<p><strong>Theorem (the crude radius).</strong> Let</p>
+<p>$$
+R = 1 + |a_{d-1}| + \cdots + |a_0| .
+$$</p>
+<p>Then $R$ is an escape radius for $f$: for $|z| > R$ one has $|f(z)| > |z|$, and consequently $f^n(z) \to \infty$. In particular the filled Julia set and the Julia set are contained in the closed disk of radius $R$.</p>
+<p><strong>Proof.</strong> For $|z| > R > 1$,</p>
+<p>$$
+|f(z)| \geq |z|^d - \sum_{k=0}^{d-1}|a_k|\,|z|^k \geq |z|^d - \Bigl(\sum_{k=0}^{d-1}|a_k|\Bigr)|z|^{d-1} = |z|^{d-1}\bigl(|z| - (R-1)\bigr) > |z|^{d-1} \geq |z| ,
+$$</p>
+<p>since $|z| - (R-1) > 1$ and $|z|^{d-1} \geq |z|$ for $|z| > 1$ and $d \geq 2$. Hence the moduli increase and diverge.</p>
+<p><strong>Theorem (the optimal radius for the quadratic family).</strong> For $f_c(z) = z^2+c$ the number</p>
+<p>$$
+R(c) = \frac{1 + \sqrt{1+4|c|}}{2}
+$$</p>
+<p>is the least escape radius; it is the positive root of $x^2 - x - |c| = 0$, and</p>
+<p>$$
+|z| > R(c) \implies |f_c(z)| \geq |z|(|z| - 1) > |c| \ \text{and} \ |f_c(z)| > |z| .
+$$</p>
+<p>In particular $R(c) \leq 2$ exactly when $|c| \leq 2$, so the round number $2$ is an escape radius for every parameter in the closed disk of radius $2$, which is the disk containing $M$.</p>
+<p><strong>Proof.</strong> $|z^2+c| \geq |z|^2 - |c|$; this exceeds $|z|$ exactly when $|z|^2 - |z| - |c| > 0$, that is when $|z| > R(c)$. The least escape radius is the positive root, because for $|z|$ just below it the inequality fails for suitable $c$.</p>
+<p><strong>Example.</strong> $R(0) = 1$, the escape radius of $z^2$; $R(-1) = R(i) = (1+\sqrt5)/2 = 1.618034\ldots$; $R(-2) = R(2) = 2$. The values were recomputed from the formula.</p>
+<p><strong>Corollary (termination of the algorithm).</strong> The escape-time algorithm of <em>The Mandelbrot Set and the Quadratic Family</em> may stop at the first $n$ with $|f_c^n(0)| > 2$: once the orbit leaves the disk of radius $2$, it escapes, so the escape time $n(c)$ is finite for every $c \notin M$, and it is bounded by the escape time of the initial value when $|c| > 2$.</p>
+<h2 id="the-greens-function">The Green's Function</h2>
+<h3 id="definition-and-existence">Definition and Existence</h3>
+<p><strong>Theorem (existence).</strong> Let $f$ be a polynomial of degree $d \geq 2$. For every $z$ the limit</p>
+<p>$$
+G(z) = \lim_{n \to \infty} \frac{1}{d^n} \log^+\bigl|f^n(z)\bigr| , \qquad \log^+ t = \max(\log t, 0),
+$$</p>
+<p>exists and is finite. The function $G$ so defined is the <strong>Green's function of the basin of infinity</strong>.</p>
+<p><strong>Proof sketch.</strong> Choose an escape radius $R$. If $|z| > R$ then $|f^n(z)|$ increases without bound, and the difference $\log|f^{n+1}(z)| - d\log|f^n(z)|$ tends to $0$ at a geometric rate, because $f$ is asymptotically $z \mapsto a_d z^d$ at infinity: the sequence $\log|f^n(z)|/d^n$ is Cauchy. For a general $z$ one chooses $N$ with $|f^N(z)| > R$, which exists for $z$ outside $K$ and is impossible for $z \in K$; the tail of the sequence is controlled by the first estimate, and the contribution before $N$ is killed by the factor $d^{-n}$. For $z \in K$ the iterates are bounded, so $\log^+|f^n(z)| = 0$ for large $n$ and $G(z) = 0$. The uniform convergence on compact subsets off $K$ gives the continuity and the harmonicity proved below.</p>
+<p><strong>Theorem (basic properties).</strong> The Green's function has the following properties.</p>
+<p><strong>(a)</strong> $G \geq 0$, and $G(z) = 0$ exactly on the filled Julia set $K(f)$.</p>
+<p><strong>(b)</strong> $G$ is continuous on $\mathbb{C}$ and harmonic on the basin of infinity $A(\infty) = \mathbb{C} \setminus K(f)$.</p>
+<p><strong>(c)</strong> $G(f(z)) = d\, G(z)$ for every $z$.</p>
+<p><strong>(d)</strong> $G(z) = \log|z| + o(1)$ as $z \to \infty$; more precisely $G - \log|z|$ is harmonic near $\infty$ and bounded, so it extends harmonically across $\infty$ and has limit $0$ there.</p>
+<p><strong>Proof.</strong> (a) is clear from the definition and the escape criterion. (c) follows from $\log^+|f^{n+1}(z)| = \log^+|f^n(f(z))|$ and the definition applied to $f(z)$. (b) and (d): the limit is locally uniform off $K$, and each $\log^+|f^n|/d^n$ is harmonic where $f^n \neq 0$; since $d^{-n}\log|f^n(z)| = \log|z| + O(1/|z|^d)$ for large $z$, the normalisation makes the limit tangent to $\log|z|$.</p>
+<p><strong>Corollary.</strong> The Böttcher coordinate of <em>The Fatou Components and the Classification of the Dynamics</em> is $\varphi = \exp(G + iH)$, where $H$ is a harmonic conjugate of $G$ on the basin; it satisfies $\varphi(f(z)) = \varphi(z)^d$ and $\varphi(z) = z + O(1)$ at infinity, and $|\varphi| = e^{G}$. The level curves of $G$ are the <strong>equipotentials</strong> of the basin and the level curves of $H$ are the <strong>external rays</strong>; the rays and their landing are Part IV's.</p>
+<h3 id="the-explicit-series-for-the-quadratic-family">The Explicit Series for the Quadratic Family</h3>
+<p><strong>Theorem.</strong> For $f_c(z) = z^2+c$ and $z$ outside the filled Julia set,</p>
+<p>$$
+G(z) = \log|z| + \sum_{n=0}^{\infty} \frac{1}{2^{n+1}} \log\left| 1 + \frac{c}{f_c^n(z)^2} \right| ,
+$$</p>
+<p>the series converging because $|f_c^n(z)| \to \infty$.</p>
+<p><strong>Proof.</strong> Write $\log|f_c(w)| = 2\log|w| + \log|1 + c/w^2|$ and iterate: after $n$ steps,</p>
+<p>$$
+\frac{1}{2^n}\log|f_c^n(z)| = \log|z| + \sum_{k=0}^{n-1}\frac{1}{2^{k+1}}\log\left|1 + \frac{c}{f_c^k(z)^2}\right| .
+$$</p>
+<p>Letting $n \to \infty$ gives the display; the remainder $2^{-n}\log|f_c^n(z)| \to 0$ because $f_c^n(z)$ grows doubly exponentially.</p>
+<p><strong>Example (numerical check).</strong> The series and the normalised-logarithm definition agree to double precision. For $c = 0$ and $z = 3$ both give $G = \log 3 = 1.0986122887$; for $c = -1$ and $z = 3$ both give $G = 1.0357521796$; for $c = 0.3+0.5i$ and $z = 3$ both give $G = 1.1167511353$. On the filled Julia set, $G = 0$ at the tested points, for instance $G = 0$ at $z = 0.5$ for $c = 0$, at $z = 0$ for $c = -1$, at $z = 0.5$ for $c = 1/4$, and at $z = 0$ for $c = -2$.</p>
+<p><strong>Example (capacity one).</strong> The difference $G(z) - \log|z|$ decays like $|z|^{-2}$ along the positive real axis: it is $-5.051 \times 10^{-3}$ at $|z| = 10$, $-5.001 \times 10^{-5}$ at $|z| = 100$, and $-5.000 \times 10^{-9}$ at $|z| = 10^4$ for $c = -1$. The limit of $G - \log|z|$ at infinity is therefore $0$, which says that the filled Julia set has <strong>logarithmic capacity</strong> one.</p>
+<h2 id="the-laplacian-and-the-invariant-measure">The Laplacian and the Invariant Measure</h2>
+<p><strong>Theorem.</strong> Let $\mu$ be the equilibrium measure of the filled Julia set, that is, the unique probability measure of minimal energy in the logarithmic kernel of <em>Potential Theory</em>. Then</p>
+<p>$$
+G(z) = \int \log|z - w| \, d\mu(w) , \qquad z \in \mathbb{C},
+$$</p>
+<p>the logarithmic potential of $\mu$; the function $G$ is the unique harmonic function on $A(\infty)$ that vanishes on $\partial A(\infty) = J(f)$ and is tangent to $\log|z|$ at infinity; and</p>
+<p>$$
+\mu = \frac{1}{2\pi}\,\Delta G
+$$</p>
+<p>in the sense of distributions, where $\Delta$ is the Laplace operator. The measure $\mu$ is exactly the Brolin measure of maximal entropy of <em>The Julia Sets of a Complex Polynomial</em>, supported on $J(f)$ and invariant under $f$.</p>
+<p><strong>Proof sketch.</strong> The equilibrium measure of a compact set of capacity $1$ minimises the energy $\iint \log\frac{1}{|z-w|}d\nu(z)d\nu(w)$; its potential $U^\nu(z) = \int\log|z-w|d\nu$ equals the Robin constant $0$ on the set and is the largest harmonic minorant of $\log|z|$ type, which is the defining property of the Green's function. Hence $G = U^\mu$ and $\Delta G/2\pi = \mu$, because the distributional Laplacian of the logarithmic kernel is $2\pi$ times the Dirac mass. The identification with the Brolin measure follows because both are the equilibrium measure of the Julia set, and the invariance $f_*\mu = \mu$ is the invariance $G \circ f = dG$ together with the uniqueness of the equilibrium measure. The energy and the equilibrium measure are those of <em>Potential Theory</em>; the invariance and the identification with the maximal-entropy measure are those of <em>The Julia Sets of a Complex Polynomial</em>.</p>
+<p><strong>Corollary.</strong> The escape rate of a point is the logarithmic potential of the equilibrium measure at that point, and the capacity of the filled Julia set is $1$ for every monic polynomial, since the Green's function is tangent to $\log|z|$ at infinity.</p>
+<p><strong>Remark.</strong> The measure $\mu$ is the harmonic measure of the basin of infinity evaluated on the Julia set, and it is the measure obtained as the weak limit of the normalised counting measures of the preimages of any non-exceptional point; the two descriptions are the same equilibrium measure, seen from the basin and from the dynamics. The equilibrium measure of the whole Julia set is thus computed by the single harmonic function $G$, and the fractal theory of the Julia set begins from this function and its level curves.</p>
+<h2 id="summary">Summary</h2>
+<p>The escape radius of a polynomial of degree $d \geq 2$ is any $R$ with $|z| > R \Rightarrow |f(z)| > |z|$; the value $R = 1 + \sum|a_k|$ always works, and for the quadratic family the least value is $R(c) = \tfrac12(1+\sqrt{1+4|c|})$, which is at most $2$ exactly for $|c| \leq 2$. The escape radius makes the escape-time algorithm of the parameter theory terminate.</p>
+<p>The Green's function $G(z) = \lim d^{-n}\log^+|f^n(z)|$ exists, is continuous, vanishes exactly on the filled Julia set, is harmonic on the basin of infinity, satisfies $G \circ f = dG$, and is tangent to $\log|z|$ at infinity. For the quadratic family it has the explicit series $\log|z| + \sum 2^{-(n+1)}\log|1+c/f^n(z)^2|$. Its modulus is the Böttcher coordinate and its level curves are the equipotentials; its Laplacian, normalised by $2\pi$, is the equilibrium measure of the filled Julia set, which is the Brolin measure of maximal entropy, and the capacity of the filled Julia set is $1$. The potential theory is that of <em>Potential Theory</em> of Part III; the external rays and the landing theorems are Part IV's; the dimension of the Julia set is the subject of the next article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $R(c)$</td>
+<td>Escape radius; least escape radius $\tfrac12(1+\sqrt{1+4\lvert c\rvert})$ of the quadratic family</td>
+</tr>
+<tr>
+<td>$n(c)$</td>
+<td>Escape time of the parameter $c$, from <em>The Mandelbrot Set and the Quadratic Family</em></td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>Green's function of the basin of infinity</td>
+</tr>
+<tr>
+<td>$\log^+ t$</td>
+<td>$\max(\log t, 0)$</td>
+</tr>
+<tr>
+<td>$\varphi = e^{G+iH}$</td>
+<td>Böttcher coordinate, $\lvert\varphi\rvert = e^{G}$</td>
+</tr>
+<tr>
+<td>equipotential, external ray</td>
+<td>Level curve of $G$; level curve of the harmonic conjugate $H$</td>
+</tr>
+<tr>
+<td>$\mu = \Delta G/2\pi$</td>
+<td>Equilibrium measure of $K$, the Brolin measure</td>
+</tr>
+<tr>
+<td>capacity</td>
+<td>$\exp(\lim(G-\log\lvert z\rvert)) = 1$ for a monic polynomial</td>
+</tr>
+<tr>
+<td>$U^\mu(z) = \int\log\lvert z-w\rvert d\mu(w)$</td>
+<td>Logarithmic potential, equal to $G$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ludwig Bieberbach, <em>Lehrbuch der Funktionentheorie</em>, volume 2 (Teubner, 1927), for the escape radius and the first use of the Green's function in iteration.</li>
+<li>Hans Brolin, "Invariant sets under iteration of rational functions", <em>Arkiv för Matematik</em> 6 (1965), 103–144, for the equilibrium measure and the Green's function.</li>
+<li>Thomas Ransford, <em>Potential Theory in the Complex Plane</em> (Cambridge University Press, 1995), for the logarithmic kernel, the capacity and the equilibrium measure.</li>
+<li>Norbert Steinmetz, <em>Rational Iteration</em> (de Gruyter, 1993), for the Green's function, the explicit expansions and the Böttcher coordinate.</li>
+<li>John Milnor, <em>Dynamics in One Complex Variable</em>, 3rd edition (Princeton University Press, 2006), for the equipotentials, the external rays and the Böttcher coordinate.</li>
+<li>Lennart Carleson and Theodore W. Gamelin, <em>Complex Dynamics</em> (Springer, 1993), for the escape radius and the landing of the rays.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

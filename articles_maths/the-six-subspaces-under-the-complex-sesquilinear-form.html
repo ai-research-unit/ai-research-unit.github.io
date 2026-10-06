@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Six Subspaces under the Complex Sesquilinear Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-six-subspaces-under-the-complex-sesquilinear-form"><strong>The Six Subspaces under the Complex Sesquilinear Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complex sesquilinear form $\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu|Q_\mu|^{2}$, positive definite on the algebra, is read here on the six distinguished real subspaces of <em>Introduction to the Six Subspaces</em> — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.</p>
+<p>The form is used, not re-derived. Its definition, its Hermitian symmetry, its Gram matrix $\mathrm{I}_4$ in the coefficient basis and its unitary isometry group $U(4)$ are the matter of <em>The Hermitian Form on the Biquaternion Algebra</em>; the Euclidean norm and the Euclidean topology it defines on the algebra are <em>The Euclidean Topology of the Biquaternion Algebra</em>; the six subspaces and their bases are <em>Introduction to the Six Subspaces</em>; and the companion readings of the same six subspaces by the other three pairings are <em>The Six Subspaces under the Complex Bilinear Form</em>, <em>The Six Subspaces under the Quaternion Bilinear Form</em> and <em>The Six Subspaces under the Quaternion Sesquilinear Form</em>. This article owns the restrictions themselves and the structure of each one.</p>
+<h2 id="the-six-restriction-matrices">The Six Restriction Matrices</h2>
+<p>The form is positive definite on the whole algebra, so <strong>every restriction is positive definite</strong> and the only question for each subspace is its real dimension. The restriction is the Euclidean square of the coefficients, and because the form is diagonal in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ with every entry $1$, each restriction is the identity matrix in the natural real basis of the subspace.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Natural real basis</th>
+<th>Restricted form</th>
+<th>Restriction matrix</th>
+<th>Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Centre $\mathbb{C}_{\mathbb{B}}$</td>
+<td>$e_0,\,ie_0$</td>
+<td>$\lvert Q_0\rvert^{2}=q_0^{2}+(q'_0)^{2}$</td>
+<td>$\mathrm{I}_2$</td>
+<td>$(2,0)$</td>
+</tr>
+<tr>
+<td>Vector $\mathrm{Vect}(\mathbb{B})$</td>
+<td>$e_1,e_2,e_3,\,ie_1,ie_2,ie_3$</td>
+<td>$\sum_k\lvert Q_k\rvert^{2}$</td>
+<td>$\mathrm{I}_6$</td>
+<td>$(6,0)$</td>
+</tr>
+<tr>
+<td>Quaternion $\mathbb{H}_{\mathbb{B}}$</td>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>$\sum_\mu q_\mu^{2}$</td>
+<td>$\mathrm{I}_4$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$ie_0,ie_1,ie_2,ie_3$</td>
+<td>$\sum_\mu(q'_\mu)^{2}$</td>
+<td>$\mathrm{I}_4$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>Hermitian $\mathbb{M}_+$</td>
+<td>$e_0,ie_1,ie_2,ie_3$</td>
+<td>$q_0^{2}+\sum_k(q'_k)^{2}$</td>
+<td>$\mathrm{I}_4$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>Anti-Hermitian $\mathbb{M}_-$</td>
+<td>$ie_0,e_1,e_2,e_3$</td>
+<td>$(q'_0)^{2}+\sum_kq_k^{2}$</td>
+<td>$\mathrm{I}_4$</td>
+<td>$(4,0)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition (the matrices).</strong> In the natural real basis displayed the restriction of the form is the identity matrix of the stated size; in particular every restriction is non-degenerate, with Gram determinant $1$.</p>
+<p><em>Proof.</em> In the real basis of the algebra the form is $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu|Q_\mu|^{2}$, and on $e_\mu$ and $ie_\mu$ its values are $\delta_{\mu\nu}$ and $\langle ie_\mu,ie_\nu\rangle_{*}=|i|^{2}\delta_{\mu\nu}=\delta_{\mu\nu}$, while the mixed entries $\langle e_\mu,ie_\nu\rangle_{*}$ are the real parts of purely imaginary numbers and vanish. The natural real basis of each subspace is a subset of the algebra's real basis, in a different order, so the restriction is the corresponding principal submatrix, which is the identity. The diagonal values of the table follow by substituting the real coordinates of each subspace.</p>
+<p><strong>Remark (the form distinguishes nothing among the six).</strong> The complex sesquilinear form is positive definite on all six subspaces, so it gives no intrinsic distinction among them: unlike the complex bilinear, the quaternion bilinear and the quaternion sesquilinear forms, which are definite on some rows and indefinite on others, it equips all six with the same Euclidean structure and differs from one row to the next only by the dimension. It is the <strong>definite companion</strong> of the quaternion sesquilinear form, and the comparison of the two readings of the six subspaces is <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Two Readings</em>.</p>
+<h2 id="the-definite-character-and-the-maximal-definite-subspaces">The Definite Character and the Maximal Definite Subspaces</h2>
+<p>The form is positive definite on the algebra, of signature $(8,0)$, so the algebra itself is a maximal positive definite subspace, of real dimension $8$, and every subspace of the six is positive definite, hence a positive definite subspace of dimension its real dimension. The six dimensions are $2$, $6$, $4$, $4$, $4$ and $4$.</p>
+<p><strong>Proposition (the maximal definite dimensions).</strong> The maximal dimension of a positive definite subspace of the algebra is $8$, attained by the algebra; among the six subspaces the positive definite dimensions are $2$ on the centre, $6$ on the vector subspace and $4$ on each of the four-dimensional subspaces.</p>
+<p><em>Proof.</em> A subspace is positive definite exactly when the restriction is positive definite, which here holds for all six by the table; the dimension of a positive definite subspace is bounded by the positive index $8$ of the ambient form, and the bound is attained by the algebra.</p>
+<p><strong>Remark (the definite reading of the six).</strong> Because the form is definite, no subspace of the six is totally isotropic, no nonzero element of any of them is null, and the six carry the ordinary Euclidean geometry of $\mathbb{R}^{2}$, $\mathbb{R}^{6}$ and four copies of $\mathbb{R}^{4}$. The form is the <strong>algebra reading</strong> of the six subspaces: it is the one pairing whose restrictions are all positive definite, and the comparison with the indefinite reading by the quaternion sesquilinear form is <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Two Readings</em>.</p>
+<h2 id="the-euclidean-structure-and-the-isometry-groups">The Euclidean Structure and the Isometry Groups</h2>
+<p><strong>Definition.</strong> For each subspace $V$ of the six, the <strong>isometry group of the restriction</strong> is the group of real-linear maps of $V$ preserving the restriction,</p>
+<p>$$
+\mathrm{Isom}\bigl(V,\langle\cdot,\cdot\rangle_{*}\bigr)=\{S\in GL_{\mathbb{R}}(V):\langle Sv,Sw\rangle_{*}=\langle v,w\rangle_{*}\ \text{for all }v,w\in V\}.
+$$</p>
+<p>It is the real orthogonal group of the dimension of $V$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Signature</th>
+<th>Real-linear isometry group</th>
+<th>Real dimension</th>
+<th>Complex-linear subgroup</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Centre $\mathbb{C}_{\mathbb{B}}$</td>
+<td>$(2,0)$</td>
+<td>$O(2)$</td>
+<td>$1$</td>
+<td>$U(1)$</td>
+</tr>
+<tr>
+<td>Vector $\mathrm{Vect}(\mathbb{B})$</td>
+<td>$(6,0)$</td>
+<td>$O(6)$</td>
+<td>$15$</td>
+<td>$U(3)$</td>
+</tr>
+<tr>
+<td>Quaternion $\mathbb{H}_{\mathbb{B}}$</td>
+<td>$(4,0)$</td>
+<td>$O(4)$</td>
+<td>$6$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$(4,0)$</td>
+<td>$O(4)$</td>
+<td>$6$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Hermitian $\mathbb{M}_+$</td>
+<td>$(4,0)$</td>
+<td>$O(4)$</td>
+<td>$6$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Anti-Hermitian $\mathbb{M}_-$</td>
+<td>$(4,0)$</td>
+<td>$O(4)$</td>
+<td>$6$</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The restriction is the standard positive definite form of $\mathbb{R}^{n}$, whose isometry group is $O(n)$ of real dimension $n(n-1)/2$, giving $1$, $15$ and $6$ for $n=2,6,4$. The complexes of the centre and the vector subspace are preserved by the complex structure $i$, and the complex-linear isometries of $\lvert Q\rvert^{2}$ on $\mathbb{C}^{1}$ and $\mathbb{C}^{3}$ are $U(1)$ and $U(3)$; on the four real subspaces a complex-linear map need not preserve the real subspace, so no complex-linear subgroup is singled out.</p>
+<p>The Euclidean norm of the algebra is $\lVert\tilde Q\rVert_—$, of <em>The Euclidean Topology of the Biquaternion Algebra</em>, and the restriction of the form is the square of the restriction of the norm; the six rows are therefore the six Euclidean subspaces of the ambient Euclidean space, of dimensions $2$, $6$ and $4$, and the Euclidean topology of each is the subspace topology of the ambient one.</p>
+<p><strong>Remark (the ambient unitary group and the restriction groups).</strong> The complex-linear isometry group of the whole form is the unitary group $U(4)$ of <em>The Hermitian Form on the Biquaternion Algebra</em>, of real dimension $16$. The real-linear isometry group of the realified form is the larger $O(8)$, and the complex-linear isometries of a subspace restriction need not extend to the algebra, nor an isometry of the algebra preserve the subspace; the groups of the table are the largest groups preserving the restriction.</p>
+<p><strong>Remark (the orthogonality of the six).</strong> The form is diagonal in the coefficient basis $e_0,e_1,e_2,e_3$, so two of the six are orthogonal exactly when their coefficient supports are disjoint. The centre has support $\{0\}$ and the vector subspace support $\{1,2,3\}$, while the quaternion, anti-quaternion and Hermitian subspaces have full support; the centre and the vector subspace are therefore orthogonal complements, and they are the only orthogonal pair among the six, exactly as for the other three pairings. The common orthogonal pair of the four pairings is <em>The Four Pairings of the Biquaternion Algebra</em>.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>The standard basis is orthonormal.</strong> On the whole algebra the eight real basis elements $e_\mu$, $ie_\mu$ are orthonormal for the form, so the eight are an orthonormal basis and the Gram matrix is $\mathrm{I}_8$ in that basis.</p>
+<p><strong>The centre in coordinates.</strong> With $\tilde Q=Ae_0$, $A=q_0+iq'_0$, the restriction is $q_0^{2}+(q'_0)^{2}=\lvert A\rvert^{2}$, the square of the modulus of $A$; the element $e_0+ie_0$ has norm squared $2$, and no nonzero element of the centre is null.</p>
+<p><strong>The quaternion row.</strong> For $\tilde Q=h=h_0e_0+\dots+h_3e_3$ the restriction is $\sum_\mu h_\mu^{2}$, the Euclidean square of $\mathbb{R}^{4}$; it coincides with the quaternion bilinear restriction of the same row, which is positive definite there, so on the quaternion subspace the two forms agree.</p>
+<p><strong>The anti-quaternion row.</strong> For $\tilde Q=ih$ the restriction is $\sum_\mu h_\mu^{2}$, again the Euclidean square; it is the negative of the quaternion bilinear restriction, which is $(0,4)$ on this row, and the two differ by the sign $i^{2}=-1$.</p>
+<p><strong>The two Hermitian rows.</strong> On $\mathbb{M}_+$ the restriction is $q_0^{2}+(q'_1)^{2}+(q'_2)^{2}+(q'_3)^{2}$ and on $\mathbb{M}_-$ it is $(q'_0)^{2}+q_1^{2}+q_2^{2}+q_3^{2}$, the standard inner products of $\mathbb{R}^{4}$ in the two orders of the coordinates; each is the square of the Euclidean norm of the subspace, and neither has a null direction.</p>
+<p><strong>The vector row and the vanishing of the cross terms.</strong> On the vector subspace the restriction is $\sum_k(q_k^{2}+(q'_k)^{2})$, the Euclidean square of the six real coordinates: a real vector direction $e_k$ and its imaginary companion $ie_k$ are orthogonal, since the mixed value $\langle e_k,ie_l\rangle_{*}$ has real part zero.</p>
+<p><strong>Every restriction is definite.</strong> No element of any of the six subspaces is isotropic: for $\tilde Q$ in any of them the value $\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu|Q_\mu|^{2}$ is a sum of squares of real numbers, which vanishes only when every coefficient vanishes. The four indefinite restrictions of the other three pairings, by contrast, have the cones of the companion articles.</p>
+<h2 id="summary">Summary</h2>
+<p>On the six distinguished real subspaces the complex sesquilinear form carries the restrictions $\mathrm{I}_2$, $\mathrm{I}_6$ and four copies of $\mathrm{I}_4$ in the natural real bases, of signatures $(2,0)$, $(6,0)$ and $(4,0)$, so that <strong>every restriction is positive definite</strong> and the form distinguishes nothing among the six. The six are therefore Euclidean subspaces of dimensions $2$, $6$ and $4$, and the form is the definite companion of the quaternion sesquilinear form, which is indefinite on four of the same six. The real-linear isometry groups are $O(2)$, $O(6)$ and four copies of $O(4)$, with the complex-linear subgroups $U(1)$ on the centre and $U(3)$ on the vector subspace; the centre and the vector subspace are the only orthogonal pair among the six, as for every pairing. The comparison with the indefinite reading of the same six subspaces is <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Two Readings</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$</td>
+<td>the complex sesquilinear form</td>
+</tr>
+<tr>
+<td>$\mathrm{I}_2,\mathrm{I}_6,\mathrm{I}_4$</td>
+<td>the restriction matrices on the centre, the vector subspace and each four-dimensional subspace</td>
+</tr>
+<tr>
+<td>$(2,0),(6,0),(4,0)$</td>
+<td>the signatures of the six restrictions</td>
+</tr>
+<tr>
+<td>$\lVert\tilde Q\rVert_—^{2}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>the Euclidean norm the form defines</td>
+</tr>
+<tr>
+<td>$O(2),O(6),O(4)$</td>
+<td>the real-linear isometry groups of the restrictions</td>
+</tr>
+<tr>
+<td>$U(1),U(3)$</td>
+<td>the complex-linear isometry groups of the centre and the vector subspace</td>
+</tr>
+<tr>
+<td>$U(4)$</td>
+<td>the complex-linear isometry group of the form on the algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Hermitian Form on the Biquaternion Algebra</em> (<code>articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md</code>), for the form, its Hermitian symmetry and its unitary group</li>
+<li><em>The Euclidean Topology of the Biquaternion Algebra</em> (<code>articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md</code>), for the Euclidean norm and the topology it defines</li>
+<li><em>Introduction to the Six Subspaces</em> (<code>articles_maths/introduction-to-the-six-subspaces.md</code>), for the six distinguished real subspaces and their bases</li>
+<li><em>The Six Subspaces under the Complex Bilinear Form</em> (<code>articles_maths/the-six-subspaces-under-the-complex-bilinear-form.md</code>), for the indefinite reading of the same six by the complex bilinear form</li>
+<li><em>The Six Subspaces under the Quaternion Bilinear Form</em> (<code>articles_maths/the-six-subspaces-under-the-quaternion-bilinear-form.md</code>), for the quaternion bilinear reading of the same six</li>
+<li><em>The Six Subspaces under the Quaternion Sesquilinear Form</em> (<code>articles_maths/the-six-subspaces-under-the-quaternion-sesquilinear-form.md</code>), for the indefinite sesquilinear reading of the same six</li>
+<li><em>The Four Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the four forms on the six subspaces side by side</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

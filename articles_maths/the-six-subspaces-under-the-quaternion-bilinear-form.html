@@ -52,8 +52,8 @@
       <div class="article-body">
         <h1 id="the-six-subspaces-under-the-quaternion-bilinear-form"><strong>The Six Subspaces under the Quaternion Bilinear Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The quaternion bilinear form $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$, whose diagonal is the biquaternion norm, is read here on the six distinguished real subspaces of <em>Introduction to the Six Subspaces</em> – the centre, the vector subspace, the quaternion subspace, the anti-quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace. On each, separating the real and imaginary parts of the coefficients turns the restriction into a real symmetric form, and this article records the six signatures, the restriction Gram matrices, the two definite rows and the maximal definite subspaces, the isotropic lines of each indefinite restriction, the isometry group of each restriction, and the comparison with the complex bilinear form.</p>
-<p>This article is the development of the restriction table stated in <em>The Quaternion Bilinear Form on the Biquaternion Algebra</em>; the form itself, its polarisation and its quadratic space are there. The signatures are the ones recorded in <em>Biquaternion Norm and Invertibility</em>, §<em>The Real Forms and Their Signatures</em>; the six subspaces are <em>Introduction to the Six Subspaces</em>; the comparison of the four forms is <em>The Four Pairings of the Biquaternion Algebra</em>; and the null structure of the form on the subspaces is <em>The Isotropic Structure of the Quaternion Bilinear Form</em>.</p>
+<p>The quaternion bilinear form $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$, whose diagonal is the biquaternion norm, is read here on the six distinguished real subspaces of <em>Introduction to the Six Subspaces</em> – the centre, the vector subspace, the quaternion subspace, the anti-quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace. On each, separating the real and imaginary parts of the coefficients turns the restriction into a real symmetric form, and this article records the six signatures, the restriction Gram matrices, the two definite rows and the maximal definite subspaces, the isotropic lines of each indefinite restriction, and the isometry group of each restriction.</p>
+<p>This article is the development of the restriction table stated in <em>The Quaternion Bilinear Form on the Biquaternion Algebra</em>; the form itself, its polarisation and its quadratic space are there. The signatures are the ones recorded in <em>Biquaternion Norm and Invertibility</em>, §<em>The Real Forms and Their Signatures</em>; the six subspaces are <em>Introduction to the Six Subspaces</em>; the comparison of the four forms on the six subspaces is <em>The Six Subspaces and the Four Forms</em>; and the null structure of the form on the subspaces is <em>The Isotropic Structure of the Quaternion Bilinear Form</em>.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$, so that $\tilde Q=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$ on the eight real basis elements. The norm is $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$. The six subspaces are $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{e_1,e_2,e_3\}$, $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_0,e_1,e_2,e_3\}$, $i\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{ie_0,ie_1,ie_2,ie_3\}$, $\mathbb{M}_+=\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathbb{R}\{ie_0,e_1,e_2,e_3\}$.</p>
 <h2 id="the-six-signatures-and-the-restriction-matrices">The Six Signatures and the Restriction Matrices</h2>
 <p>The restriction of the form to a subspace is the real symmetric form obtained by taking the real part on the real span; because the form is $\mathbb{C}$-bilinear and $i$ is central, the cross terms between a real direction and its imaginary companion are purely imaginary and drop out, so the restricted form is diagonal in the natural real basis.</p>
@@ -114,6 +114,7 @@
 </table></div>
 <p><strong>Proposition (the matrices).</strong> In the natural real basis displayed, the Gram matrix of the restricted form is the one tabulated; each restriction is non-degenerate, and its determinant is $\pm1$.</p>
 <p><em>Proof.</em> The entries are $\langle u,v\rangle_{\natural}=\mathrm{Sc}(uv^{\natural})$ for $u,v$ among the real basis of the subspace; a real basis element is $e_\mu$ or $ie_\mu$, and $\mathrm{Sc}(e_\mu e_\nu^{\natural})=\delta_{\mu\nu}$, $\mathrm{Sc}(e_\mu(ie_\nu)^{\natural})=-i\delta_{\mu\nu}$, $\mathrm{Sc}(ie_\mu e_\nu^{\natural})=i\delta_{\mu\nu}$ and $\mathrm{Sc}(ie_\mu(ie_\nu)^{\natural})=-\delta_{\mu\nu}$. The cross entries are purely imaginary, hence zero in the real part, and the two within-block entries give the displayed diagonal. Each matrix is invertible, of determinant $\pm1$. Verified on the six real Gram matrices: their diagonals are as displayed and their eigenvalues are the stated signs.</p>
+<p><strong>Remark (the index and the defect of each restriction).</strong> The <strong>index</strong> of a restriction is the number of negative entries of its signature, and the <strong>defect</strong> or radical is the subspace orthogonal to the whole restriction. The six restrictions are non-degenerate, their Gram matrices having determinant $\pm1$, so every defect is trivial; the six indexes are $1$, $3$, $0$, $4$, $3$ and $1$, read from the signatures $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$. The index of the whole realified form on $\mathbb{R}^8$ is $4$, of signature $(4,4)$, and its defect is trivial too; that whole-form reading is in <em>The Isotropic Structure of the Quaternion Bilinear Form</em>.</p>
 <p><strong>Remark (why the cross terms drop).</strong> The vanishing of the cross block is not a numerical accident: it is the statement that a real direction and its imaginary companion are orthogonal for the realified form, while the form takes the value $i$ between them before the real part is taken. The same computation gives the realification of the whole form, $\operatorname{diag}(I_4,-I_4)$ of signature $(4,4)$, of which the six tables are the restrictions to the displayed subspaces.</p>
 <p><strong>Remark (the realified matrix in the two orderings).</strong> The realification is worth displaying once in each of its two natural orderings. In the grouped basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, the four real directions first, the matrix is the block diagonal $\operatorname{diag}(I_4,-I_4)$; in the interleaved basis $e_0,ie_0,e_1,ie_1,e_2,ie_2,e_3,ie_3$, each complex direction kept beside its companion, it is $\operatorname{diag}(1,-1,1,-1,1,-1,1,-1)$, and the two differ only by the permutation that carries one ordering to the other. The four blocks of the interleaved reading are the centre and the three vector directions, and the six subspaces of this article are cut from them in three ways: one block at a time, which gives the centre; all four blocks together, which gives the vector subspace; and the real or the imaginary half of all four, which gives the quaternion and anti-quaternion subspaces, with the two Hermitian subspaces obtained by exchanging the half of the centre block alone. Every restriction Gram matrix of the table is a submatrix of this diagonal matrix, in the order of signs displayed. Verified: the interleaved diagonal is as stated, and the grouped and interleaved matrices differ by the permutation of the four real directions.</p>
 <h2 id="the-definite-rows-and-the-maximal-definite-subspaces">The Definite Rows and the Maximal Definite Subspaces</h2>
@@ -129,12 +130,13 @@ $$</p>
 <p><strong>The vector subspace.</strong> The restriction is the complex quadratic $\sum_kQ_k^2$ on $\mathbb{C}\{e_1,e_2,e_3\}$, the pure zero-divisor cone of <em>Biquaternion Zero Divisors</em>. Its isotropic <strong>complex</strong> lines are the points of the conic $\{[Q]\in\mathbb{P}^2:\sum_kQ_k^2=0\}$, a rational curve; the line $\mathbb{C}(e_1+ie_2)$ is one of them, and the maximal totally isotropic dimension is $1$ over $\mathbb{C}$ and $3$ over $\mathbb{R}$, the realification having signature $(3,3)$ and the real $3$-space $\mathbb{R}\{e_1+ie_1,e_2+ie_2,e_3+ie_3\}$ being totally isotropic. The cone has real dimension $4$.</p>
 <p><strong>The Hermitian and anti-Hermitian subspaces.</strong> The restrictions are the two real forms of the interval, of signatures $(1,3)$ and $(3,1)$; their null sets are the two real light cones, of real dimension $3$, and the isotropic <strong>real</strong> lines of a light cone form the sphere $S^2$ of null directions. The maximal totally isotropic dimension is $1$ in each, a null line; the non-pure zero divisors are the elements of these two cones.</p>
 <p><strong>The centre.</strong> The restriction is the hyperbolic plane $q_0^2-(q'_0)^2$, so the realified restriction vanishes on the two real lines $\mathbb{R}(e_0+ie_0)$ and $\mathbb{R}(e_0-ie_0)$; the complex bilinear form $N$ itself, however, reads $Q_0R_0$ on the complex line $\mathbb{C}e_0$, which is anisotropic, so the centre has no isotropic line for $N$ and its null set is $\{0\}$. The two statements are the two readings of the same restriction, the realified one and the complex one, and they must not be confused.</p>
-<p><strong>The isotropic-line count.</strong></p>
+<p><strong>The isotropic-line count.</strong> Intersected with the six subspaces, the null cone has the real dimensions $0$, $4$, $0$, $0$, $3$ and $3$ in the order of the table, being empty off the origin on the two definite rows.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Subspace</th>
-<th>Null set</th>
+<th>Null set of the restriction</th>
+<th>Real dimension</th>
 <th>Isotropic lines</th>
 <th>Max totally isotropic</th>
 </tr>
@@ -143,36 +145,42 @@ $$</p>
 <tr>
 <td>Centre $\mathbb{C}_{\mathbb B}$</td>
 <td>$\{0\}$ for $N$; two lines for the realified form</td>
+<td>$0$</td>
 <td>none for $N$</td>
 <td>$0$</td>
 </tr>
 <tr>
 <td>Vector $\mathrm{Vect}(\mathbb B)$</td>
-<td>complex cone, real dimension $4$</td>
+<td>the complex cone $\sum_kQ_k^2=0$</td>
+<td>$4$</td>
 <td>the conic in $\mathbb{P}^2$</td>
 <td>$1$ over $\mathbb{C}$, $3$ over $\mathbb{R}$</td>
 </tr>
 <tr>
 <td>Quaternion $\mathbb H_{\mathbb B}$</td>
 <td>$\{0\}$</td>
+<td>$0$</td>
 <td>none</td>
 <td>$0$</td>
 </tr>
 <tr>
 <td>Anti-quaternion $i\mathbb H_{\mathbb B}$</td>
 <td>$\{0\}$</td>
+<td>$0$</td>
 <td>none</td>
 <td>$0$</td>
 </tr>
 <tr>
 <td>Hermitian $\mathbb M_+$</td>
-<td>real light cone, real dimension $3$</td>
+<td>the real light cone</td>
+<td>$3$</td>
 <td>$S^2$ of null directions</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>Anti-Hermitian $\mathbb M_-$</td>
-<td>real light cone, real dimension $3$</td>
+<td>the real light cone</td>
+<td>$3$</td>
 <td>$S^2$ of null directions</td>
 <td>$1$</td>
 </tr>
@@ -241,53 +249,6 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>Remark (the restriction group is not induced by the ambient group).</strong> The isometry groups of the table are the largest groups preserving the restricted form, and they are not the restrictions of the isometry group of the ambient form: an isometry of a subspace need not extend to the algebra, and conversely an isometry of the whole form need not preserve a subspace. The ambient group is the complex orthogonal group $O_4(\mathbb{C})$, of complex dimension $6$ and real dimension $12$ (<em>The Quaternion Bilinear Form on the Biquaternion Algebra</em>, §<em>The Form and its Polarisation</em>); the group of real-linear isometries of the realified form is the larger $O(4,4)$, of real dimension $28$, and is not the subject of this article. The two compact rows of the table are the two definite ones, and the four rows that carry an isotropic cone have non-compact isometry groups, as an indefinite real orthogonal group always is.</p>
-<h2 id="comparison-with-the-complex-bilinear-form">Comparison with the Complex Bilinear Form</h2>
-<p>The complex bilinear form records the same six subspaces with the signatures $(1,1)$, $(3,3)$, $(1,3)$, $(3,1)$, $(4,0)$, $(0,4)$. The two tables agree on the centre and the vector subspace and are <strong>swapped on the four real forms</strong>: the definite sign of the plain form falls on the Hermitian subspace and that of the $\natural$-form on the quaternion subspace. The swap is the action of the sign vector $\varepsilon=(1,-1,-1,-1)$, which reverses the sign of the three quaternion directions; it exchanges the roles of $e_k$ and $ie_k$, hence of the quaternion and Hermitian rows and of the anti-quaternion and anti-Hermitian rows.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Subspace</th>
-<th>$\natural$-form</th>
-<th>complex bilinear form</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Centre $\mathbb{C}_{\mathbb B}$</td>
-<td>$(1,1)$</td>
-<td>$(1,1)$</td>
-</tr>
-<tr>
-<td>Vector $\mathrm{Vect}(\mathbb B)$</td>
-<td>$(3,3)$</td>
-<td>$(3,3)$</td>
-</tr>
-<tr>
-<td>Quaternion $\mathbb H_{\mathbb B}$</td>
-<td>$(4,0)$</td>
-<td>$(1,3)$</td>
-</tr>
-<tr>
-<td>Anti-quaternion $i\mathbb H_{\mathbb B}$</td>
-<td>$(0,4)$</td>
-<td>$(3,1)$</td>
-</tr>
-<tr>
-<td>Hermitian $\mathbb M_+$</td>
-<td>$(1,3)$</td>
-<td>$(4,0)$</td>
-</tr>
-<tr>
-<td>Anti-Hermitian $\mathbb M_-$</td>
-<td>$(3,1)$</td>
-<td>$(0,4)$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The comparison is carried in <em>The Six Subspaces under the Complex Bilinear Form</em>, and the four tables together are <em>The Realification of the Four Forms</em>.</p>
-<p><strong>Remark (the two forms are $\varepsilon$-twists of one another).</strong> The complex bilinear form is the quaternion bilinear form with the sign vector inserted, $\langle\tilde P,\tilde Q\rangle_{\varepsilon}=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$, since $\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$. Inserting $\varepsilon$ reverses the sign on the three quaternion directions, and with them exchanges $e_k$ with the companion direction $ie_k$; that is exactly why the swap of the two tables falls on the four real forms and leaves the centre and the vector subspace in agreement. Verified: the $\varepsilon$-twisted form has the second table of signatures on the same six real bases.</p>
-<p><strong>Remark (the twist on the definite rows).</strong> Inserting the sign vector turns the quaternion subspace from positive definite into a form of signature $(1,3)$, and the Hermitian subspace from signature $(1,3)$ into a positive definite form: explicitly the twisted restriction is $\operatorname{diag}(1,-1,-1,-1)$ on the quaternion subspace and $I_4$ on the Hermitian subspace, with the signs reversed on their two companions. The definite rows of one table are therefore not the definite rows of the other, which is the whole content of the swap, and the maximal definite dimension falls from $4$ to $1$ on the quaternion subspace and rises from $1$ to $4$ on the Hermitian one.</p>
-<p><strong>Remark (the smallest instance of the two readings).</strong> The centre is the smallest case where the complex and the realified readings come apart. For the complex form the centre is anisotropic: $N(Q_0e_0)=Q_0^{2}$ vanishes only at the origin, so the centre contributes nothing to the null cone, as the isotropic-structure companion records. For the realified form the same two real dimensions carry the hyperbolic plane $\operatorname{diag}(1,-1)$ with the two null lines $\mathbb{R}(e_0\pm ie_0)$; on those two elements the complex norm takes the values $N(e_0\pm ie_0)=(1\pm i)^{2}=\pm2i$, neither of them zero. The element $e_0+ie_0$ is therefore null for the realified restriction of the centre and a unit of the algebra at the same time.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <p><strong>A null element of the realified centre.</strong> For $\tilde Q=e_0+ie_0$ the realified restriction of the centre gives $1^{2}-1^{2}=0$, while the complex form gives $N(\tilde Q)=(1+i)^{2}=2i\neq0$: the element is null for the realified form and is not a zero divisor, which is the pair of readings the centre section records.</p>
 <p><strong>A pure zero divisor.</strong> For $\tilde Q=e_1+ie_2$ the norm is $N=1+i^{2}=0$, and the element lies on the isotropic cone of the vector subspace, on the conic $\sum_kQ_k^{2}=0$ in $\mathbb{P}^{2}$; it is the line of the vector-subspace table.</p>
@@ -299,7 +260,7 @@ $$</p>
 <p><strong>The definite rows are not the real forms.</strong> The two definite rows are $\mathbb{H}_{\mathbb B}$, on which the form is $\sum_\mu q_\mu^{2}$, all signs $+1$, and $i\mathbb{H}_{\mathbb B}$, on which it is $-\sum_\mu q_\mu^{2}$, all signs $-1$; the Hermitian and anti-Hermitian subspaces, by contrast, are indefinite of signatures $(1,3)$ and $(3,1)$. The reason is that the Hermitian subspace $\mathbb{M}_+=\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ collects the single positive direction $e_0$ with the three negative directions $ie_k$, while the anti-Hermitian subspace $\mathbb{M}_-=\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ collects the single negative direction $ie_0$ with the three positive directions $e_k$; neither is spanned by directions of a single sign, which is what definiteness requires.</p>
 <p><strong>A null element of the anti-Hermitian subspace.</strong> For $\tilde Q=ie_0+e_1$ the norm is $N=i^{2}+1=0$, on the real light cone of $\mathbb{M}_-$, of signature $(3,1)$; the sign of the null direction is the one the swapped table prescribes.</p>
 <h2 id="summary">Summary</h2>
-<p>On the six distinguished real subspaces the quaternion bilinear form carries the signatures $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$, with the restriction Gram matrices $\operatorname{diag}(1,-1)$, $\operatorname{diag}(I_3,-I_3)$, $I_4$, $-I_4$, $\operatorname{diag}(1,-1,-1,-1)$ and $\operatorname{diag}(-1,1,1,1)$ in the natural real bases. The quaternion and anti-quaternion subspaces are the two definite rows, of dimension $4$ and maximal, and they are orthogonal complements for the realified form and exchanged by multiplication by $i$, which reverses the sign of the pairing; the centre and the vector subspace carry $(1,1)$ and $(3,3)$; the two real forms carry $(1,3)$ and $(3,1)$. The isotropic elements are the pure zero divisors on the vector subspace – the complex cone $\sum_kQ_k^2=0$, whose isotropic complex lines form a conic – and the non-pure zero divisors on the two real forms, whose isotropic real lines form the sphere $S^2$ of null directions; the centre is indefinite but anisotropic over $\mathbb{C}$, and the two definite subspaces contain no isotropic element. The isometry group of each restriction is the real orthogonal group of its signature, $O(1,1)$, $O(3,3)$, $O(4)$, $O(4)$, $O(1,3)$ and $O(3,1)$, and the two tables of the two bilinear forms are the transpose of one another on the four real forms.</p>
+<p>On the six distinguished real subspaces the quaternion bilinear form carries the signatures $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$, with the restriction Gram matrices $\operatorname{diag}(1,-1)$, $\operatorname{diag}(I_3,-I_3)$, $I_4$, $-I_4$, $\operatorname{diag}(1,-1,-1,-1)$ and $\operatorname{diag}(-1,1,1,1)$ in the natural real bases. The quaternion and anti-quaternion subspaces are the two definite rows, of dimension $4$ and maximal, and they are orthogonal complements for the realified form and exchanged by multiplication by $i$, which reverses the sign of the pairing; the centre and the vector subspace carry $(1,1)$ and $(3,3)$; the two real forms carry $(1,3)$ and $(3,1)$. The isotropic elements are the pure zero divisors on the vector subspace – the complex cone $\sum_kQ_k^2=0$, whose isotropic complex lines form a conic – and the non-pure zero divisors on the two real forms, whose isotropic real lines form the sphere $S^2$ of null directions; the centre is indefinite but anisotropic over $\mathbb{C}$, and the two definite subspaces contain no isotropic element. The isometry group of each restriction is the real orthogonal group of its signature, $O(1,1)$, $O(3,3)$, $O(4)$, $O(4)$, $O(1,3)$ and $O(3,1)$. The other three pairings on the same six subspaces, and the transposition of this table with the complex bilinear one on the four real forms, are <em>The Six Subspaces and the Four Forms</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -342,7 +303,9 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><em>The Quaternion Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-quaternion-bilinear-form-on-the-biquaternion-algebra.md</code>), for the form and its restrictions</li>
-<li><em>The Six Subspaces under the Complex Bilinear Form</em> (<code>articles_maths/the-six-subspaces-under-the-complex-bilinear-form.md</code>), for the companion table</li>
+<li><em>The Six Subspaces under the Complex Bilinear Form</em> (<code>articles_maths/the-six-subspaces-under-the-complex-bilinear-form.md</code>), for the companion table of the same six subspaces</li>
+<li><em>The Six Subspaces under the Complex Sesquilinear Form</em> (<code>articles_maths/the-six-subspaces-under-the-complex-sesquilinear-form.md</code>), <em>The Six Subspaces under the Quaternion Sesquilinear Form</em> (<code>articles_maths/the-six-subspaces-under-the-quaternion-sesquilinear-form.md</code>) and <em>The Six Subspaces under the Trace Form</em> (<code>articles_maths/the-six-subspaces-under-the-trace-form.md</code>), for the same six subspaces under the other readings</li>
+<li><em>The Four Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the four forms on the six subspaces, side by side</li>
 <li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the norm and its real forms</li>
 <li><em>The Isotropic Structure of the Quaternion Bilinear Form</em> (<code>articles_maths/the-isotropic-structure-of-the-quaternion-bilinear-form.md</code>), for the null cone on the subspaces</li>
 <li><em>Two-Sided Operators on the Biquaternion Algebra with Signed Inner Conjugation</em> (<code>articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-signed-inner-conjugation.md</code>), for the operators that preserve the form</li>

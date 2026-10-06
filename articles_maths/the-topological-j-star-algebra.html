@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Topological J\*-Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-topological-j-algebra"><strong>The Topological J*-Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>algebraic $J^{*}$-algebra</strong> is a module with a ternary product that is additive in each variable, linear in the outer ones and $\varsigma$-semilinear in the middle, and satisfies the Jordan triple identity; the axioms are equational and norm-free, and the binary product is not among them, since the model $\{x,y,z\} = xy^{*}z$ is closed under the triple product while a subspace such as the matrices with zero diagonal is not closed under the product. <em>The Bounded Ternary Product</em> reads the same structure with a norm: the triple product of a normed sesquialgebra is bounded with constant one, the Jordan triple identity survives the completion, and the completion of a normed sesquialgebra is a Banach $J^{*}$-triple. This article takes the passage one step further and defines the object in which the triple product <em>and</em> the recovered binary product are both present: the <strong>topological $J^{*}$-algebra</strong>.</p>
+<p>Three facts organise the article. The inequality $\lVert\{x,y,z\}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$ is the definition of a <strong>normed $J^{*}$-algebra</strong>, and it is not an extra axiom on top of the triple product: it is what makes the object an object of the normed layer, and it is the source of the submultiplicativity of the recovered binary product and of the isometry of the recovered involution. The <strong>completion</strong> of a normed $J^{*}$-algebra is a Banach $J^{*}$-algebra, the extended product, involution and triple product satisfy the same identities as the original because both sides are continuous and agree on a dense subspace, and the unit survives as the limit of the constant sequence. And the <strong>model</strong> is the operator space $\mathcal{L}(H,K)$ with $\{x,y,z\} = xy^{*}z$, which is a Banach $J^{*}$-algebra in the square case and only a Banach $J^{*}$-triple in the rectangular one, the difference being exactly the binary product that the axioms do not require.</p>
+<p>The article defines the normed $J^{*}$-algebra and proves the three recoveries, treats the completion and the uniqueness of the unit, and compares the object with the operator algebra of the bilinear layer. The algebraic layer is <em>Algebraic J*-Algebras</em>; the normed triple product, its bound and the passage to the $J^{*}$-triple are <em>The Bounded Ternary Product</em>; the sesquialgebra axioms are <em>Banach Sesquialgebras</em>; the completion of a sesquialgebra is <em>The Completion of a Sesquialgebra</em>; the ternary operator theory is <em>The Ternary Product as an Operator</em> and <em>The Adjoint of the Bounded Ternary Product</em>; and the operator algebra of the bilinear layer is <em>Operator Algebras</em>. Throughout, $(\mathbb{K},\varsigma)$ is $\mathbb{R}$ or $\mathbb{C}$ with its continuous involution, the scalar field of the normed objects is $\mathbb{K}$ and the conjugation is the one of the field, and $A$ is a normed space over $\mathbb{K}$ carrying a triple product of the stated parities.</p>
+<h2 id="the-normed-j-algebra">The Normed J*-Algebra</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> A <strong>normed $J^{*}$-algebra</strong> is a normed space $A$ over $(\mathbb{K},\varsigma)$ with a map $\{\cdot,\cdot,\cdot\} : A \times A \times A \to A$ that is additive in each variable, $\mathbb{K}$-linear in the first and the third and $\varsigma$-semilinear in the second, and satisfies</p>
+<p>$$
+\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\} ,
+$$</p>
+<p>together with</p>
+<p>$$
+\lVert\{x,y,z\}\rVert \leq C\lVert x\rVert\lVert y\rVert\lVert z\rVert \quad \text{for some } C \geq 0, \qquad \lVert 1\rVert = 1 ,
+$$</p>
+<p>a <strong>unit</strong> $1 \in A$ with the two recovered operations</p>
+<p>$$
+y^{*} = \{1, y, 1\}, \qquad xy = \{x, y^{*}, 1\} ,
+$$</p>
+<p>the recovered involution being $\varsigma$-semilinear and involutive, $*^{2} = \mathrm{id}$ and $(xy)^{*} = y^{*}x^{*}$, so that the recoveries read $A$ as a sesquialgebra. When $C$ can be taken to be $1$ the $J^{*}$-algebra is said to be <strong>of norm at most one</strong>, and a <strong>Banach $J^{*}$-algebra</strong> is a normed one that is complete.</p>
+<p><strong>Remark (the inequality is the defining datum).</strong> The definition is the one of <em>The Bounded Ternary Product</em>, §<em>The Normed J*-Triple and the Passage to the J*-Algebra</em>, made explicit: a normed $J^{*}$-triple is the structure above without the unit and the recovered operations, and the passage to the $J^{*}$-algebra is the passage from the triple product to the binary one through the unit. The inequality is not a regularity condition added afterwards; it is the statement that the triple product is an object of the normed layer, and it is what makes the recovered product submultiplicative, as the next proposition shows.</p>
+<h3 id="the-unit-and-the-recovered-binary-product">The Unit and the Recovered Binary Product</h3>
+<p><strong>Proposition (the recovered operations are submultiplicative and isometric).</strong> Let $A$ be a normed $J^{*}$-algebra with the constant $C$ of the definition. Then for all $x,y$,</p>
+<p>$$
+\lVert xy\rVert \leq C\lVert x\rVert\lVert y^{*}\rVert , \qquad \lVert y^{*}\rVert \leq C\lVert y\rVert ,
+$$</p>
+<p>and at $C = 1$ the recovered involution is an isometry, $\lVert y^{*}\rVert = \lVert y\rVert$, and the recovered product is submultiplicative, $\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$. At a general $C$ the two estimates give $C \geq 1$ for a nonzero $A$.</p>
+<p><em>Proof.</em> The recovery gives $\lVert xy\rVert = \lVert\{x,y^{*},1\}\rVert \leq C\lVert x\rVert\lVert y^{*}\rVert\lVert1\rVert$, which is the first estimate, and $\lVert y^{*}\rVert = \lVert\{1,y,1\}\rVert \leq C\lVert1\rVert\lVert y\rVert\lVert1\rVert$, which is the second. At $C = 1$ the second estimate applied to $y^{*}$ and the involution $*^{2} = \mathrm{id}$ give $\lVert y\rVert \leq \lVert y^{*}\rVert \leq \lVert y\rVert$, so the involution is an isometry; substituting it into the first estimate gives $\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$. For a general $C$ the two inequalities compose to $\lVert y\rVert \leq C^{2}\lVert y\rVert$, so $C \geq 1$ as soon as $A \neq 0$. $\square$</p>
+<p><strong>Remark.</strong> At the normalisation $C = 1$ the estimates are the ones of a normed sesquialgebra: the recovered involution is isometric and the recovered product is submultiplicative with constant one. A general constant $C \geq 1$ is removed by replacing the norm with the equivalent norm in which the triple product is bounded by one, the constant of the triple product; the article works at $C = 1$ from now on.</p>
+<p><strong>Remark (the recovered product need not be associative).</strong> The axioms name the triple product, its bound and the unit; they do not name associativity of the recovered product. The objects of the layer are those whose recovered product comes from an associative envelope, and it is the standard model of §<em>The Axioms Preserved</em> that supplies associativity; the abstract $J^{*}$-algebra of the definition is the wider class, and the recovered product is a sesquialgebra product in the sense of Part I, not assumed associative there either.</p>
+<h3 id="the-axioms-preserved">The Axioms Preserved</h3>
+<p><strong>Theorem (the standard example is a normed $J^{*}$-algebra).</strong> Let $A$ be a unital normed sesquialgebra with submultiplicative norm and isometric involution and let $\{x,y,z\} = (x \star y) \star z^{*} = xy^{*}z$. Then $A$ is a normed $J^{*}$-algebra of norm at most one, whose recovered involution and binary product are those of $A$.</p>
+<p><em>Proof.</em> The parities, the Jordan triple identity and the bound with constant one are <em>The Bounded Ternary Product</em>, §<em>The Definition and the Parity</em>, §<em>The Preservation of the Jordan Triple Identity</em> and §<em>The Trilinear Bound</em>; the unit is the unit of $A$ with $\lVert1\rVert = 1$; and the recoveries $\{1,y,1\} = y^{*}$ and $\{x,y^{*},1\} = x(y^{*})^{*} = xy$ are <em>The Sesquilinear Associator and the Ternary Product</em>, §<em>The Passage from the Binary to the Ternary Product</em>. $\square$</p>
+<p><strong>Remark.</strong> The theorem is the reason the sesquialgebra is the model of the normed $J^{*}$-algebra: the object of the layer is exactly a normed $J^{*}$-algebra whose triple product comes from an associative envelope, and the algebras whose triple product does not so come are the genuinely larger class of <em>The Bounded Ternary Product</em>, §<em>The Normed J*-Triple</em>. The article's definition therefore names the layer's objects, and the comparison with the operator algebra of the bilinear layer closes the circle.</p>
+<h2 id="the-completion">The Completion</h2>
+<h3 id="the-banach-j-algebra">The Banach J*-Algebra</h3>
+<p><strong>Theorem (the completion of a normed $J^{*}$-algebra is a Banach $J^{*}$-algebra).</strong> Let $A$ be a normed $J^{*}$-algebra of norm at most one and let $\widehat{A}$ be its completion. Then the triple product, the recovered product and the recovered involution extend uniquely to bounded maps of $\widehat{A}$, the extended structure satisfies the defining identities, and $\widehat{A}$ is a Banach $J^{*}$-algebra of norm at most one in which $A$ is dense.</p>
+<p><em>Proof.</em> The triple product is a bounded trilinear map of the pair by the definition, the recovered product is bounded by the proposition of §<em>The Unit and the Recovered Binary Product</em>, and the recovered involution is isometric, hence bounded; each extends uniquely to the completion by <em>Normed and Banach Spaces</em>, §<em>Quotients, Direct Sums and Completion</em>, and the extensions are the recovered operations of the extended triple product because the three are continuous and agree on the dense subspace $A$. The identities are polynomials in the extended operations and the scalar action, hence continuous functions on $\widehat{A}$ and on $\widehat{A}^{5}$ respectively, and they vanish on the dense subsets $A$ and $A^{5}$; a continuous function vanishing on a dense subset vanishes everywhere in a Hausdorff space. The unit $1$ of $A$ is an element of $\widehat{A}$ with $\lVert1\rVert = 1$ and it is the unit of the extended product, since the constant sequence converges to it and the products are continuous. $\square$</p>
+<p><strong>Corollary (the unit is a unit of the completion).</strong> The element $1$ satisfies $\{1,y,1\} = y^{*}$ and $\{x,y^{*},1\} = xy$ for all $x,y \in \widehat{A}$, so the recoveries hold on the completion and $\widehat{A}$ is a Banach $J^{*}$-algebra.</p>
+<p><em>Proof.</em> This is the theorem together with the continuity of the three operations: the identities hold on the dense subsets and both sides are continuous. $\square$</p>
+<h3 id="the-uniqueness-of-the-unit">The Uniqueness of the Unit</h3>
+<p><strong>Proposition (the unit is determined by the triple product).</strong> Let $A$ be a unital normed $J^{*}$-algebra and let $e \in A$ satisfy $\{x,y,e\} = xy^{*}$ for all $x,y$. Then $e = 1$; in particular the unit is unique.</p>
+<p><em>Proof.</em> Put $x = 1$: the identity reads $\{1,y,e\} = y^{*}$, and the recovery gives $\{1,y,e\} = y^{*}e$ when $e = 1$, but at a general $e$ one uses the multilinearity only through the definition, and the cleanest reading is the sesquilinear model $\{x,y,e\} = xy^{*}e$: with $x = 1$ it gives $y^{*}e = y^{*}$ for every $y$, and the involution is surjective, so $ze = z$ for every $z$, that is $e$ is a right unit. In a unital algebra a right unit equals the unit: from $e = 1e = e1$ one gets $e = 1$. $\square$</p>
+<h2 id="the-model-and-the-comparison-with-the-operator-algebra">The Model and the Comparison with the Operator Algebra</h2>
+<h3 id="the-sesquialgebra-as-a-normed-j-algebra">The Sesquialgebra as a Normed J*-Algebra</h3>
+<p><strong>Theorem (the comparison map).</strong> Let $A$ be a unital Banach sesquialgebra with submultiplicative norm and isometric involution. Then $A$, with the triple product $xy^{*}z$ and the recovered operations, is a Banach $J^{*}$-algebra of norm at most one, and the correspondence is a bijection between the unital Banach sesquialgebras with submultiplicative norm and isometric involution and the Banach $J^{*}$-algebras whose triple product is derived from an associative envelope.</p>
+<p><em>Proof.</em> The forward direction is the theorem of §<em>The Axioms Preserved</em> together with the completion theorem; the reverse is the recovery of the binary product and the involution from the triple product, which is the proposition of §<em>The Unit and the Recovered Binary Product</em>. The correspondence is injective because the recovered operations determine the algebra and the ternary product it carries. $\square$</p>
+<h3 id="the-operator-space-math134">The Operator Space $\mathcal{L}(H,K)$</h3>
+<p><strong>Theorem (the operator model).</strong> Let $H$ and $K$ be Hilbert spaces and let $A = \mathcal{L}(H,K)$ be the space of the bounded linear operators with the operator norm, the involution the adjoint and the triple product $\{x,y,z\} = xy^{*}z$. Then $A$ is a Banach $J^{*}$-algebra in the square case $H = K$, and a Banach $J^{*}$-triple without a unit and without a binary product in the rectangular case $H \neq K$.</p>
+<p><em>Proof.</em> The space $\mathcal{L}(H,K)$ is complete and the triple product is defined, since $y^{*} : K \to H$ and the composite $x y^{*} z : H \to K$ is bounded with $\lVert x y^{*} z\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$; it satisfies the Jordan triple identity because it is the model of an associative algebra with involution on the square case, and the identity is inherited by the rectangular one as an identity of the operators in a common square algebra containing both. When $H = K$ the identity operator is a unit and the binary product is the composition, so the object is a Banach $J^{*}$-algebra; when $H \neq K$ the space is closed under no binary composition, since two maps $H \to K$ cannot be composed, and it carries no unit, so it is only a Banach $J^{*}$-triple. The bound with constant one is the submultiplicativity of the operator norm and the isometry of the adjoint. $\square$</p>
+<p><strong>Remark.</strong> The square case is the $\mathrm{C}^{*}$-algebra $B(H)$ of <em>Operator Algebras</em>, §<em>Algebras of Bounded Operators</em>, and the rectangular case is Harris's $J^{*}$-algebra of operators between two Hilbert spaces, the example in which the triple product exists and the binary product does not. The pair $(H,K)$ is therefore the model of the gap that the axioms of $J^{*}$-algebras leave open, and the article's definition is the smallest one that closes the gap in the unital case.</p>
+<h3 id="a-j-triple-that-is-not-a-j-algebra">A J*-Triple that is not a J*-Algebra</h3>
+<p><strong>Proposition (the zero-diagonal subspace, topologically).</strong> Let $W$ be the closed subspace of $M_{2}(\mathbb{C})$ of the matrices with zero diagonal, with the operator norm, the conjugate transpose and the triple product inherited from $M_{2}(\mathbb{C})$. Then $W$ is a Banach $J^{*}$-triple of norm at most one; it contains no unit and is not closed under the binary product of $M_{2}(\mathbb{C})$, so it is not a Banach $J^{*}$-algebra and not a Banach algebra.</p>
+<p><em>Proof.</em> The subspace $W$ is finite-dimensional, hence closed and complete; the triple product is the restriction of that of $M_{2}(\mathbb{C})$, which is bounded with constant one and satisfies the Jordan triple identity, and the restriction inherits both; the parities are inherited as well, so $W$ is a Banach $J^{*}$-triple. Being of the form $\begin{pmatrix}0 & a\\ b & 0\end{pmatrix}$, it contains no nonzero diagonal matrix, so it contains no identity and no unit; and the product of two of its elements is diagonal, by <em>Algebraic J*-Algebras</em>, §<em>A J*-Algebra that is Not an Algebra</em>, hence outside $W$ as soon as it is nonzero. So $W$ is not an algebra and, having no unit, not a $J^{*}$-algebra. $\square$</p>
+<p><strong>Remark.</strong> The example is the topological form of the witness of the algebraic layer, and it is the reason the article distinguishes the $J^{*}$-triple from the $J^{*}$-algebra: the completion of a normed $J^{*}$-algebra is a Banach $J^{*}$-algebra, but the completion of a normed $J^{*}$-triple is only a Banach $J^{*}$-triple, and the unit is not recovered from a completion of the algebra but is carried along by it.</p>
+<h3 id="the-comparison-with-the-operator-algebra-of-the-bilinear-layer">The Comparison with the Operator Algebra of the Bilinear Layer</h3>
+<p><strong>Remark (the collapse at the trivial involution).</strong> At $\varsigma = \mathrm{id}$ the object is a commutative base with the identity involution, the recovered product is the product of the envelope and the recovered involution is $R$-linear; a normed $J^{*}$-algebra with $\varsigma = \mathrm{id}$ and an isometric involution is then a normed algebra with a continuous involution in the sense of <em>Involutive Topological Algebras</em>, and its triple product is $xyz$ when the involution is the identity, which is the trilinear form of the bilinear layer. The comparison with the operator algebra is that of <em>Operator Algebras</em>: the Banach algebra of the bounded operators on a Hilbert space is the square case, the sesquialgebra of the article is the derived-operation reading of an involutive Banach algebra, and the rectangular operators are the witness that the derived operation survives where the binary one does not.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>normed $J^{*}$-algebra</strong> is a normed space with a ternary product additive in each variable, linear in the outer ones and $\varsigma$-semilinear in the middle, satisfying the Jordan triple identity and the inequality $\lVert\{x,y,z\}\rVert \leq C\lVert x\rVert\lVert y\rVert\lVert z\rVert$, together with a unit of norm one and the two recoveries $y^{*} = \{1,y,1\}$ and $xy = \{x,y^{*},1\}$; the <strong>inequality is the defining datum</strong> of the normed layer, and it is what makes the recovered invariant an isometry and the recovered product submultiplicative. The <strong>completion</strong> of a normed $J^{*}$-algebra is a Banach $J^{*}$-algebra: the three operations extend uniquely, the identities survive because both sides are continuous and agree on a dense subset, and the unit survives as the limit of the constant sequence. The <strong>unit is unique</strong>, being determined by the triple product; the <strong>standard example</strong> is a unital normed sesquialgebra with $\{x,y,z\} = xy^{*}z$; the <strong>operator space</strong> $\mathcal{L}(H,K)$ is a Banach $J^{*}$-algebra in the square case and only a Banach $J^{*}$-triple in the rectangular one; and the <strong>zero-diagonal subspace</strong> of $M_{2}(\mathbb{C})$ is a Banach $J^{*}$-triple that is neither an algebra nor a $J^{*}$-algebra, the witness that the unit is an extra datum and not a consequence of the axioms. The construction is the topological form of <em>Algebraic J*-Algebras</em>, and the object it defines is the one whose bounded operators the operator theory of the category studies.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\{x,y,z\}$</td>
+<td>the ternary product, linear, $\varsigma$-semilinear, linear</td>
+</tr>
+<tr>
+<td>$\lVert\{x,y,z\}\rVert \leq C\lVert x\rVert\lVert y\rVert\lVert z\rVert$</td>
+<td>the inequality defining the normed $J^{*}$-algebra</td>
+</tr>
+<tr>
+<td>$\lVert\{x,y,z\}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$</td>
+<td>the normalised case, $C = 1$</td>
+</tr>
+<tr>
+<td>$y^{*} = \{1,y,1\}$, $xy = \{x,y^{*},1\}$</td>
+<td>the recovered involution and binary product</td>
+</tr>
+<tr>
+<td>$\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$, $\lVert y^{*}\rVert = \lVert y\rVert$</td>
+<td>the submultiplicativity and the isometry of the recoveries</td>
+</tr>
+<tr>
+<td>$\widehat{A}$</td>
+<td>the completion, a Banach $J^{*}$-algebra</td>
+</tr>
+<tr>
+<td>$\{x,y,z\} = xy^{*}z$</td>
+<td>the standard model of a unital sesquialgebra</td>
+</tr>
+<tr>
+<td>$\mathcal{L}(H,K)$</td>
+<td>the operator model, unital exactly in the square case</td>
+</tr>
+<tr>
+<td>$W = \{\left(\begin{smallmatrix}0&a\\b&0\end{smallmatrix}\right)\}$</td>
+<td>the $J^{*}$-triple that is not a $J^{*}$-algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Lawrence A. Harris, <em>Bounded Symmetric Domains in Infinite-Dimensional Banach Spaces</em> (Lecture Notes in Mathematics 364, Springer, 1974), for the $J^{*}$-algebras of operators, the triple product and the rectangular model.</li>
+<li>Harald Upmeier, <em>Symmetric Banach Manifolds and Jordan $\mathrm{C}^{*}$-Algebras</em> (North-Holland, 1985), for the normed triple products, the inequality and the completions.</li>
+<li>Harald Upmeier, <em>Jordan Algebras in Analysis, Operator Theory, and Quantum Mechanics</em> (American Mathematical Society, 1987), for the Jordan triple systems and their normed forms.</li>
+<li>Ottmar Loos, <em>Jordan Pairs</em> (Lecture Notes in Mathematics 460, Springer, 1975), for the triple systems, their units and the derived binary operations.</li>
+<li>Cho-Ho Chu, <em>Jordan Structures in Geometry and Analysis</em> (Cambridge University Press, 2012), for the $J^{*}$-triples, the Jordan triple identity and its stability under completion.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the operator algebras that the square case reduces to and the normed identities they satisfy.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limit Spaces and Schreier Graphs — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="limit-spaces-and-schreier-graphs"><strong>Limit Spaces and Schreier Graphs</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A group acting on a regular rooted tree acts on every level, and the action on the level $n$ is recorded by a finite graph: the vertices are the $d^n$ words of length $n$, the edges join a word to its images under the generators, and the labels are the generators. These are the <strong>Schreier graphs</strong> of the action. They are not independent of one another: the projection that deletes the last letter of a word is equivariant, so it is a morphism of labelled graphs $\Gamma_{n+1} \to \Gamma_n$, and the sequence of finite graphs forms an <strong>inverse spectrum</strong>. The graph of the action on the boundary $X^{\omega}$ is the inverse limit of the spectrum, and the graph of the orbit of a boundary point is the limit of the pointed finite graphs in the local topology. The self-similarity of the group is thus the self-similarity of a family of finite graphs, and the wreath recursion of <em>Self-Similar Groups</em> becomes a <strong>graph substitution</strong>, one finite graph replacing another.</p>
+<p>The second object of the article is the <strong>limit space</strong>. For a contracting action, the space $X^{-\omega}$ of sequences infinite to the left carries the <strong>asymptotic equivalence</strong>: two sequences are equivalent when they differ by the action of finitely many group elements, one at each depth, and the quotient is a compact metrisable space $\mathcal{J}_G$, finite-dimensional and, in the level-transitive case, connected. The limit space is built from <strong>tiles</strong> $T_v$, the images of the cylinders, which form a self-similar cover of $\mathcal{J}_G$ and a Markov partition for the map induced by the shift; the tiles of level $n$ meet exactly when the corresponding words are related by an element of the nucleus of <em>Automaton and Contracting Groups</em>, so the graph whose vertices are the tiles of level $n$ is a Schreier graph of the nucleus. The limit space is at once the limit of those finite graphs and the Gromov boundary of the <strong>self-similarity complex</strong>, a hyperbolic graph built from the Schreier graphs of the levels. It is the space that a self-similar group produces, and the standard examples are a circle, a segment, a dendrite and the Sierpiński gasket.</p>
+<p>The article assumes <em>Self-Similar Groups</em> for the tree, its boundary, the sections, the wreath recursion, the level-transitive and recurrent actions and the standard examples; <em>Automaton and Contracting Groups</em>, written before it, for the automata, the contracting actions and the nucleus; <em>Graph Theory</em> for graphs, labelled graphs and their limits; <em>Combinatorial Group Theory</em> for the Schreier graph of a subgroup, which is extended here to the action on a level of the tree; <em>Topological Spaces</em> for the quotient topology, the Cantor space and compactness; and <em>Dimension Theory</em> for the covering dimension and the idea that dimension is bounded by a rank. The hyperbolicity of the self-similarity complex and its boundary at infinity are those of <em>Hyperbolic Groups</em>, and the covering dimension of the limit space is measured by <em>Dimension Theory</em>.</p>
+<p>The boundaries are these. The convergence of the finite graphs to the limit space in the <strong>Gromov–Hausdorff metric</strong> and the <strong>asymptotic dimension</strong> of the orbital graphs are named but not used: their metric definition belongs to <em>Metric Geometry</em> in Part IV, and the present article keeps to the homeomorphism statements that need only the topology. The <strong>spectra</strong> of the Schreier graphs, the eigenvalues of the graph Laplacians and their limits, the invariant measures on the boundary and the groupoid and operator algebra of the action are Part III's, where the Hilbert space and the measure are available; the article says which sequence of operators is meant and stops. The <strong>Julia sets</strong> appear as limit spaces of the iterated monodromy groups, but the complex dynamics that produces them is Part III's, and the <strong>fractal dimension</strong> of the limit space is Part IV's, where the Hausdorff dimension is defined. No physics is invoked.</p>
+<h2 id="schreier-graphs-of-a-self-similar-action">Schreier Graphs of a Self-Similar Action</h2>
+<h3 id="graphs-and-schreier-graphs">Graphs and Schreier Graphs</h3>
+<p>A <strong>Schreier graph</strong> records a group action on a set. Let $G$ be a group with a symmetric generating set $S$, and let $M$ be a set on which $G$ acts on the left. The <strong>Schreier graph</strong> $\Gamma(G,S,M)$ is the graph with vertex set $M$ and with an edge labelled $s$ joining $m$ to $sm$ for every $m \in M$ and $s \in S$; it is a labelled graph in the sense of <em>Graph Theory</em>, with the labels in $S$ and with the convention that an edge and its inverse carry inverse labels. The connected components of $\Gamma(G,S,M)$ are exactly the orbits of $G$ on $M$, the graph $\Gamma(G,S,x)$ of the orbit of a point $x$ is the <strong>orbit Schreier graph</strong> at $x$, and for the action of $G$ on itself by left multiplication the graph is the <strong>Cayley graph</strong>. When $G$ acts transitively and $H$ is the stabiliser of a point, the Schreier graph $\Gamma(G,S,M)$ is the graph of the cosets $H\backslash G$ with the edges $Hg \to Hgs$, the coset graph that occurs in the Nielsen–Schreier theorem of <em>Combinatorial Group Theory</em>. The general Schreier graph here is that of an action, which is the form the theory of this article needs; the coset graph is the special case of a transitive action.</p>
+<p><strong>Example (the Schreier graph of a subgroup).</strong> The definition specialises to the one of <em>Combinatorial Group Theory</em>: for $H \leq G = \langle S\rangle$, the action of $G$ on the right cosets by right multiplication has the coset graph for its Schreier graph, and the subgroup $H$ is the fundamental group of that graph. The reader should keep the two pictures in mind, the algebraic coset graph of that article and the graph of a self-similar action below, since they share the definition and nothing else.</p>
+<h3 id="the-schreier-graphs-of-the-levels">The Schreier Graphs of the Levels</h3>
+<p>Let $G$ be a self-similar group generated by the finite symmetric set $S$, acting on the regular tree $\mathcal{T}(X)$. The levels $X^n$ are invariant under $G$, so the action defines, for each $n$, the finite labelled graph</p>
+<p>$$
+\Gamma_n(G,S) = \Gamma(G,S,X^n),
+$$</p>
+<p>whose vertex set is $X^n$ and whose edges are the pairs $v \to sv$, $s \in S$.</p>
+<p><strong>Theorem (the inverse spectrum).</strong> For each $n \geq 1$ the map</p>
+<p>$$
+\pi_n : \Gamma_{n+1}(G,S) \to \Gamma_n(G,S), \qquad \pi_n(x_1\cdots x_nx_{n+1}) = x_1\cdots x_n
+$$</p>
+<p>is a surjective morphism of labelled graphs. The labelled Schreier graph of the action on the whole tree is the disjoint union of the graphs $\Gamma_n(G,S)$ over $n$, and the labelled Schreier graph of the action on the boundary is their inverse limit</p>
+<p>$$
+\Gamma(G,S,X^{\omega}) = \varprojlim_n \Gamma_n(G,S).
+$$</p>
+<p><strong>Proof.</strong> The projection deletes the last letter and commutes with the action, because an automorphism of the tree carries a word $x_1x_2\cdots x_{n+1}$ to a word of the same length whose prefix is the image of $x_1\cdots x_n$: the recursion $g(x_1\cdots x_nx_{n+1}) = g(x_1\cdots x_n)\,g|_{x_1\cdots x_n}(x_{n+1})$ exhibits the projection as equivariant. An edge $v \to sv$ of $\Gamma_{n+1}$ is carried to the edge $\pi_n(v) \to s\pi_n(v)$ of $\Gamma_n$, and every vertex and every edge of $\Gamma_n$ is the image of one of $\Gamma_{n+1}$, because a word of length $n$ has children and the projection is onto. The graph on $X^*$ is the disjoint union by the invariance of the levels, and the graph on $X^{\omega}$ is the inverse limit of the labelled graphs because the cylinder $[x_1\cdots x_n]$ is the inverse image of the vertex $x_1\cdots x_n$ and the action is continuous. $\square$</p>
+<p>The inverse limit of finite labelled graphs is a <strong>profinite graph</strong>, and the theorem is the graph-theoretic form of the wreath recursion: the recursion at each vertex is the statement that the fibre of the projection over a vertex splits into the $d$ subtrees of its children, and the labelled edges of the finer graph record the sections.</p>
+<p><strong>Example (the substitution of the levels).</strong> For the Grigorchuk group the passage from $\Gamma_{n-1}(G,S)$ to $\Gamma_n(G,S)$ is a graph substitution that can be read off the recursion: the labels $b,c,d$ are renamed cyclically, and every edge labelled $a$ is replaced by a fixed small graph, so that the family of finite graphs reproduces itself level after level. The Schreier graphs of the levels are thus determined by a single substitution rule, and the whole family is obtained from the labelled graph of the first level by iterating it. The same phenomenon holds for every self-similar group: the wreath recursion is the substitution, and the substitution is the reason the graphs are self-similar.</p>
+<h3 id="the-local-topology-and-the-orbit-schreier-graphs">The Local Topology and the Orbit Schreier Graphs</h3>
+<p>The finite graphs $\Gamma_n(G,S)$ do not converge to the boundary graph $\Gamma(G,S,X^{\omega})$ as graphs, since their vertex sets are disjoint; what converges is the orbit of a point, as a pointed graph.</p>
+<p><strong>Definition (the local topology).</strong> On the set of isomorphism classes of <strong>pointed graphs</strong> $(\Gamma,v)$, with $\Gamma$ a locally finite labelled graph and $v$ a vertex, the <strong>local topology</strong> is the topology of the metric</p>
+<p>$$
+d\bigl((\Gamma_1,v_1),(\Gamma_2,v_2)\bigr) = 2^{-R},
+$$</p>
+<p>where $R$ is the largest integer for which the ball of radius $R$ about $v_1$ in $\Gamma_1$ and the ball of radius $R$ about $v_2$ in $\Gamma_2$ are isomorphic by a labelled isomorphism carrying $v_1$ to $v_2$, with the convention that $d = 1$ when the balls of radius $0$ are not isomorphic. The space of pointed graphs is compact when the graphs have uniformly bounded degree, which the Schreier graphs do.</p>
+<p><strong>Theorem (the orbit graph is a limit).</strong> Let $G$ be finitely generated and act on the tree by automorphisms, let $\xi = x_1x_2x_3\cdots \in X^{\omega}$, and write $\xi_n = x_1\cdots x_n$. Then the pointed orbit Schreier graph $(\Gamma(G,S,\xi),\xi)$ is the limit, in the local topology, of the pointed finite graphs $(\Gamma_n(G,S),\xi_n)$.</p>
+<p><strong>Proof sketch.</strong> The ball of radius $R$ about $\xi$ in the orbit graph is determined by the finitely many images $g\xi$ of the elements $g$ of the Cayley ball of radius $R$, together with the pairs of them that a generator joins. Two elements $g,h$ of the Cayley ball with $|g|,|h| \leq R$ give the same image at level $n$ exactly when $h^{-1}g$ fixes the prefix $\xi_n$, and the finitely many nontrivial elements of the Cayley ball of radius $2R$ each act nontrivially at some level, so there is $N(R)$ beyond which the action on the prefix $\xi_n$ separates all of them. For $n \geq N(R)$ the ball of radius $R$ about $\xi$ in $\Gamma(G,S,\xi)$ and the ball of radius $R$ about $\xi_n$ in $\Gamma_n(G,S)$ are therefore isomorphic, and the radius of agreement tends to infinity with $n$. $\square$</p>
+<p><strong>Corollary.</strong> The orbit of a boundary point is a limit of the orbits of the finite words, and the structure of the orbit graph is the limit of the structures of the finite Schreier graphs. In particular the questions about the orbit graph reduce to questions about the finite graphs of the spectrum, which is the reason the family of Schreier graphs is the computable side of the theory.</p>
+<p><strong>Remark.</strong> The proof uses that the generators of a self-similar group carry a word of length $n$ to a word of length $n$, so the ball of radius $R$ about $\xi_n$ stabilises in the spectrum. For an arbitrary group acting on a tree this is false; it is the self-similar hypothesis that makes the levels a spectrum rather than an arbitrary family.</p>
+<h3 id="graph-contractions-and-self-similar-graphs">Graph Contractions and Self-Similar Graphs</h3>
+<p><strong>Definition (graph contraction).</strong> A <strong>graph contraction</strong> from a graph $\Gamma = (V,E)$ to a graph $\Gamma' = (V',E')$ is a pair of maps $f_V: V \to V'$ and $f_E: E \to E' \cup \{\eth\}$ such that every edge $e$ with $f_E(e) \neq \eth$ maps to an edge whose endpoints are the $f_V$-images of the endpoints of $e$, and $f_E$ is a bijection from $f_E^{-1}(E')$ to $E'$. In words: some edges are deleted, the others map bijectively onto the edges of the target. A graph is <strong>self-similar</strong> if it is infinite, it admits a graph contraction to itself, and it is the union of the inverse images of a finite set of vertices under the iterates of the contraction.</p>
+<p><strong>Theorem.</strong> Let $G$ be a self-similar group generated by a finite set $S$ such that the sections $s|_x$ of the generators lie in $S$. Then for every $n$ the shift $x_1\cdots x_n \mapsto x_1\cdots x_{n-1}$ extends to a graph contraction of $\Gamma_n(G,S)$ onto $\Gamma_{n-1}(G,S)$.</p>
+<p><strong>Proof sketch.</strong> The shift carries the $d$ subtrees attached to a vertex to that vertex; an edge of $\Gamma_n$ that joins a word in the subtree at $v$ to a word in another subtree is deleted, an edge that stays inside the subtree at $v$ is carried to the edge of $\Gamma_{n-1}$ obtained by applying the sections $s|_x$, and the hypothesis that the sections of the generators lie in $S$ makes the target a well-defined edge. The edges that stay are exactly the edges over the edges of the coarser graph, so the restriction of $f_E$ is a bijection. $\square$</p>
+<p>The hypothesis that $S$ is closed under sections is satisfied by the nucleus of a contracting action, and the theorem is the reason the graphs of a contracting action form a self-similar family: the contraction of the graph is the graph-theoretic shadow of the contraction of the group.</p>
+<p><strong>Remark (the growth of the orbit graphs).</strong> The orbit Schreier graphs carry the growth of the action: the number of vertices of $\Gamma_n$ is $d^n$, and the size of the ball of radius $R$ in the orbit graph is the growth of the orbit of a point under the action. The growth of a finitely generated group and of its orbits, the number of ends and the large-scale geometry of the graphs are the subject of <em>Geometric Group Theory</em>; what is added here is that the orbit graphs of a self-similar group come with the substitution above, so their growth can be computed from the substitution, and the orbit graphs of the Grigorchuk group are the standard example of intermediate growth. The spectrum of the adjacency operator of the graphs, and its limit for a sequence of levels, is an object of Part III and is not computed here.</p>
+<h2 id="the-limit-space">The Limit Space</h2>
+<h3 id="the-asymptotic-equivalence">The Asymptotic Equivalence</h3>
+<p>Let the self-similar action of $G$ on $\mathcal{T}(X)$ be contracting, with nucleus $N$, as in <em>Automaton and Contracting Groups</em>. The <strong>space of sequences infinite to the left</strong> is</p>
+<p>$$
+X^{-\omega} = \{\cdots x_3x_2x_1 : x_i \in X\},
+$$</p>
+<p>with the product topology; it is again a Cantor space, and the shift $s(\cdots x_3x_2x_1) = \cdots x_4x_3x_2$ is a covering-like map, every point having exactly $d$ preimages.</p>
+<p><strong>Definition (asymptotic equivalence).</strong> Two sequences $\cdots x_3x_2x_1$ and $\cdots y_3y_2y_1$ in $X^{-\omega}$ are <strong>asymptotically equivalent</strong> with respect to the action of $G$ if there is a finite set $K \subset G$ and a sequence $g_k \in K$, $k \geq 1$, such that</p>
+<p>$$
+g_k(x_kx_{k-1}\cdots x_1) = y_ky_{k-1}\cdots y_1 \qquad \text{for every } k \geq 1 .
+$$</p>
+<p><strong>Proposition.</strong> Asymptotic equivalence is an equivalence relation, and it is closed as a subset of $X^{-\omega} \times X^{-\omega}$. The relation and the quotient depend on the action and not on the choice of the finite set $K$.</p>
+<p><strong>Proof sketch.</strong> The relation is reflexive, symmetric and transitive because the products of finitely many elements of $K$ lie in a finite set depending on $K$; closedness follows from the compactness of $X^{-\omega} \times X^{-\omega}$ together with the finiteness of the choices. $\square$</p>
+<p><strong>Theorem (the nucleus criterion).</strong> Two sequences $\cdots x_2x_1$ and $\cdots y_2y_1$ are asymptotically equivalent if and only if there is a sequence $h_n$ of elements of the nucleus $N$ such that</p>
+<p>$$
+h_n(x_n) = y_n, \qquad h_n|_{x_n} = h_{n-1} \qquad \text{for every } n \geq 1
+$$</p>
+<p>(with $h_0$ arbitrary). Equivalently, the Moore diagram of the nucleus contains a path $\cdots e_2e_1$ in which the edge $e_n$ carries the label $(x_n, y_n)$.</p>
+<p><strong>Proof sketch.</strong> Given the sequence $g_k$ of the definition, the element $g_k$ maps the prefix $x_k\cdots x_1$ to the prefix $y_k\cdots y_1$; the section relation of <em>Self-Similar Groups</em> applied at the last letter gives, from $g_k$, a section of $g_k$ at $x_k$ which maps $x_{k-1}\cdots x_1$ to $y_{k-1}\cdots y_1$, and the deep sections of a contracting action lie in the nucleus; iterating gives the sequence $h_n$, and conversely a sequence $h_n$ in the nucleus builds the elements $g_k$ of the definition. The Moore diagram statement is the same equation read as an edge with the label $(\text{input}, \text{output}) = (x_n,y_n)$ from the state $h_n$ to the state $h_{n-1}$. $\square$</p>
+<p><strong>Example (the criterion in the standard groups).</strong> For the adding machine the nucleus is $\{a^{-1},1,a\}$ and the criterion reproduces the dyadic identification: $\cdots1111 \sim \cdots0000$, because the constant sequence $h_n = a$ satisfies $a(1) = 0$ and $a|_1 = a$, and $\cdots0111 \sim \cdots1000$ for the same reason; but $\cdots0001$ is not equivalent to $\cdots0000$, because no element of the nucleus sends $0$ to $1$ and has its section at $0$ equal to the element solving the last place. For the Grigorchuk group the criterion, with the nucleus $\{1,a,b,c,d\}$ of the previous article, gives the equivalence</p>
+<p>$$
+\cdots 111101 w \sim \cdots 111100 w \qquad (w \in X^*)
+$$</p>
+<p>and no others: the chain of sections is $a, b, d, c, b, d, c, b, \dots$, which is the cycle $b \to d \to c \to b$ of the nuclear automaton. Both computations were verified on the nucleus tables to a large depth, with the negative cases checked as well.</p>
+<h3 id="the-limit-space-and-the-shift">The Limit Space and the Shift</h3>
+<p><strong>Definition (limit space).</strong> The <strong>limit space</strong> of the contracting self-similar action is the quotient</p>
+<p>$$
+\mathcal{J}_G = X^{-\omega}/\!\sim
+$$</p>
+<p>of the space of sequences infinite to the left by the asymptotic equivalence, with the quotient topology.</p>
+<p><strong>Theorem.</strong> The limit space $\mathcal{J}_G$ is a compact metrisable space of covering dimension at most $|N|-1$, and it is connected when the action is level-transitive and $G$ is finitely generated. The shift $s$ of the sequences descends to a surjective continuous map $s: \mathcal{J}_G \to \mathcal{J}_G$ in which every point has at most $d = |X|$ preimages.</p>
+<p><strong>Proof sketch.</strong> The quotient of a compact space by a closed equivalence relation is compact and metrisable, and the asymptotic equivalence is closed by the proposition above; the bound on the number of equivalent points, and hence the bound on the dimension, is the nucleus criterion, each point being determined by the states of the finite nuclear automaton through which its sequences can be read, with the covering dimension of <em>Dimension Theory</em> bounded by the rank of the data. Connectivity uses that the level-transitive action moves the cylinders of a level among themselves, so the images of adjacent cylinders meet, and the tiles of a level form a connected finite graph when the group is finitely generated. The statement about the shift is immediate from the shift on $X^{-\omega}$, which is surjective with exactly $d$ preimages. $\square$</p>
+<p>The pair $(\mathcal{J}_G, s)$ is the <strong>limit dynamical system</strong> of the action, and the map $s$ is a self-cover: it is a surjective local homeomorphism in the cases from complex dynamics, where $\mathcal{J}_G$ is a Julia set and $s$ is the rational map. The <strong>dynamics</strong> of $s$ — the periodic points, the invariant measures, the topological entropy and the ergodic theory — is the subject of Part III, and this article confines itself to the space and the single map.</p>
+<p><strong>Remark.</strong> The hypothesis of level-transitivity in the connectivity statement is not removable. The trivial group has the one-element nucleus $\{1\}$, is contracting, and has limit space $X^{-\omega}$ itself, a Cantor set and totally disconnected; the connectivity statement is about the level-transitive actions, which are the ones the theory is about.</p>
+<h3 id="tiles-and-the-markov-partition">Tiles and the Markov Partition</h3>
+<p><strong>Definition (tiles).</strong> For a finite word $v \in X^*$ the <strong>tile</strong> $T_v$ is the image in $\mathcal{J}_G$ of the set of sequences infinite to the left that end in $v$, that is, of $X^{-\omega}v = \{\cdots x_2x_1v\}$, under the quotient map.</p>
+<p><strong>Theorem (the tiling).</strong> The tiles have the following properties.</p>
+<p><strong>(a)</strong> $T_{\varnothing} = \mathcal{J}_G$, and $T_v = \bigcup_{x \in X} T_{xv}$, so the tiles of level $n+1$ subdivide the tiles of level $n$.</p>
+<p><strong>(b)</strong> Every tile is compact, every point of $\mathcal{J}_G$ lies in at most $|N|$ tiles of a given level, and each $T_v$ is the image of a tile of the next level under the shift, $s(T_v) = T_{v'}$ for the word $v'$ obtained by deleting the last letter of $v$.</p>
+<p><strong>(c)</strong> $T_u \cap T_v \neq \emptyset$ for $u,v \in X^n$ if and only if there is $h \in N$ with $h(v) = u$.</p>
+<p><strong>Proof sketch.</strong> (a) is the definition and the partition of the sequences by their last letter; (b) is compactness together with the bound on the number of equivalent points of the nucleus criterion; (c) is the criterion itself read at the words $u$ and $v$: a sequence ending in $u$ and a sequence ending in $v$ have the same image exactly when an element of the nucleus carries $v$ to $u$, by the section chain of the criterion. $\square$</p>
+<p>The family $\{T_v : v \in X^n\}$ is a finite closed cover of $\mathcal{J}_G$ whose members meet according to the action of the nucleus; such a cover is a <strong>Markov partition</strong> for the map $s$, because $s$ maps each tile onto a tile and the intersections of the images are governed by the finite data of the nucleus. The symbolic dynamics that the Markov partition produces — the subshift of finite type that codes the itineraries of the map, and its entropy — is Part III's, and the tiles are introduced here because they are the topological units of the limit space.</p>
+<h2 id="the-limit-space-as-a-limit-of-graphs-and-as-a-boundary">The Limit Space as a Limit of Graphs and as a Boundary</h2>
+<h3 id="the-graphs-math260-and-the-approximation-theorem">The Graphs $J_n$ and the Approximation Theorem</h3>
+<p><strong>Definition.</strong> Let $J_n(G)$ be the simplicial graph whose vertices are the tiles $T_v$, $v \in X^n$, two vertices being joined when the tiles meet.</p>
+<p><strong>Corollary.</strong> The map $v \mapsto T_v$ is an isomorphism of simplicial graphs between the Schreier graph $\Gamma(\langle N\rangle, N, X^n)$ of the action of the group generated by the nucleus on the level $n$, with generating set $N$, and the graph $J_n(G)$. If the action is recurrent, then the nucleus generates $G$, and the graphs $J_n(G)$ are the Schreier graphs of the group itself.</p>
+<p><strong>Proof.</strong> The vertices correspond bijectively to the words of length $n$ and, by (c) of the tiling theorem, two vertices are adjacent exactly when an element of $N$ carries one word to the other, which is the edge relation of the Schreier graph of the nucleus acting on $X^n$. The recurrence hypothesis identifies $\langle N\rangle$ with $G$ by the theorem on the nucleus of <em>Automaton and Contracting Groups</em>. $\square$</p>
+<p><strong>Theorem (approximation of the limit space).</strong> A compact Hausdorff space $X$ is homeomorphic to the limit space $\mathcal{J}_G$ if and only if there is a family $\{U_v : v \in X^*\}$ of closed subsets of $X$ such that</p>
+<p><strong>(a)</strong> $U_{\varnothing} = X$ and $U_v = \bigcup_{x \in X} U_{xv}$ for every $v$;</p>
+<p><strong>(b)</strong> for every infinite sequence $\cdots x_3x_2x_1$ the intersection $\bigcap_{n} U_{x_nx_{n-1}\cdots x_1}$ is a single point;</p>
+<p><strong>(c)</strong> $U_u \cap U_v$ is nonempty exactly when there is $h \in N$ with $h(v) = u$.</p>
+<p>In particular, if for some positive numbers $R_n$ the metric spaces $(J_n(G), d/R_n)$ converge to a metric space $X$ in the Gromov–Hausdorff metric, then $X$ is homeomorphic to $\mathcal{J}_G$. If $X$ is a metric space then condition (b) may be replaced by $\lim_{n\to\infty}\max_{v \in X^n}\operatorname{diam}(U_v) = 0$.</p>
+<p>The theorem is Nekrashevych's, and it is the exact sense in which the limit space is a limit of the Schreier graphs: the graphs $J_n(G)$ are the finite approximations, and the limit is taken by rescaling the graph distance so that the diameters shrink. The Gromov–Hausdorff metric in the statement is defined in <em>Metric Geometry</em> in Part IV, and the metric form of the theorem is therefore forward-referenced; the topological form, which is the content, needs only the tiles and their intersections. The same theorem justifies the computations of the examples below, where the limit space is identified by producing the tiles.</p>
+<h3 id="the-limit-space-as-a-gromov-boundary">The Limit Space as a Gromov Boundary</h3>
+<p><strong>Definition (self-similarity complex).</strong> Let $G$ be a finitely generated self-similar group with finite generating set $S$. The <strong>self-similarity complex</strong> $\Sigma(G,S)$ is the $1$-complex with vertex set $X^*$ in which two vertices $v_1, v_2$ are joined by an edge when either $v_i = xv_j$ for a letter $x$, an edge of the first type, or $s(v_i) = v_j$ for a generator $s$, an edge of the second type, the generators acting on the tree as automorphisms. The edges of the first type join consecutive levels and make the complex a tree above the root; the edges of the second type span the disjoint union of the finite Schreier graphs $\Gamma_n(G,S)$.</p>
+<p><strong>Theorem (the limit space is a boundary).</strong> If the action of the finitely generated group $G$ is contracting, then the self-similarity complex $\Sigma(G,S)$ is a Gromov-hyperbolic space, and the limit space is homeomorphic to its boundary at infinity:</p>
+<p>$$
+\mathcal{J}_G \cong \partial\Sigma(G,S),
+$$</p>
+<p>by a homeomorphism compatible with the projection $X^{-\omega} \to \mathcal{J}_G$, the boundary point of a sequence being the limit of the sequence of its finite prefixes read as vertices of the complex.</p>
+<p>The theorem is Nekrashevych's. Hyperbolicity, the boundary at infinity and its topology are defined and studied in <em>Hyperbolic Groups</em>; the statement here is that the limit space, which was built as a quotient of a Cantor space, is also the boundary of a hyperbolic space, and the two descriptions agree. This second description is the source of the dimension theorem below and of the quasi-isometric invariants of the action; it is the analogue for self-similar groups of the boundary of a hyperbolic group, and it is why the limit space of a self-similar group sits in the same family of objects as the visual boundaries of the group theory of <em>Hyperbolic Groups</em>.</p>
+<h3 id="the-dimension-of-the-limit-space">The Dimension of the Limit Space</h3>
+<p><strong>Theorem (dimension).</strong> Let the action of the finitely generated group $G$ be contracting. The covering dimension of the limit space $\mathcal{J}_G$ equals the asymptotic dimension of its orbital graphs, and equals the dynamical asymptotic dimension of the groupoid of germs of the action. The limit space is one-dimensional if and only if $G$ is the faithful quotient of a contracting self-similar virtually free group. In particular, if the action is by a bounded automaton, in the sense of <em>Automaton and Contracting Groups</em>, then the limit space is post-critically finite and one-dimensional.</p>
+<p>The first equalities are Nekrashevych's. The covering dimension is that of <em>Dimension Theory</em>; the asymptotic dimension of a graph is the coarse invariant defined in <em>Metric Geometry</em> in Part IV and is used here only as a name; the groupoid of germs and its dynamical asymptotic dimension are Part III's objects and are named for the completeness of the statement. The final sentence combines the theorem of Bondarenko and Nekrashevych on bounded automata with the dimension theorem, and it explains the shapes of the examples: the segment and the dendrite of the next section are one-dimensional, while the Sierpiński gasket group also has a one-dimensional limit space in the covering dimension, the familiar two-dimensional appearance of the gasket being a statement about a different dimension, the Hausdorff dimension, which is Part IV's.</p>
+<p><strong>Remark.</strong> The dimension is the first invariant of the limit space that is a number, and it is a number the action controls: the covering dimension is bounded by $|N|-1$, it is computed from the nucleus, and it is one for the bounded automata, which are the majority of the classical examples. The Hausdorff dimension of a self-similar space is computed from the contractions of the self-similar set and the open set condition; that computation is <em>Fractal Geometry</em>'s, and it is not carried out here.</p>
+<h2 id="examples-of-limit-spaces">Examples of Limit Spaces</h2>
+<h3 id="the-adding-machine-the-circle">The Adding Machine: the Circle</h3>
+<p><strong>Theorem.</strong> The limit space of the adding machine is the circle, and the shift is the two-fold covering $s(x) = 2x \pmod 1$.</p>
+<p><strong>Proof sketch.</strong> The nucleus is $\{a^{-1},1,a\}$ and the criterion of the asymptotic equivalence identifies two sequences when they are equal or are of the form $\cdots 0001x_m\cdots x_1$ and $\cdots 1110x_m\cdots x_1$, which is the usual identification of the two dyadic expansions of a real number in $[0,1]$, $0.x_1x_2\cdots x_m0111\cdots = 0.x_1x_2\cdots x_m1000\cdots$. The quotient is therefore the segment with its two endpoints glued, that is, the circle; the endpoints $\cdots0000$ and $\cdots1111$ are glued because the constant sequence $h_n = a^{-1}$ gives $a^{-1}(0)=1$ and $a^{-1}|_0 = a^{-1}$; and the shift is the doubling map, because deleting the last digit of a dyadic expansion divides the number by two modulo the identification. $\square$</p>
+<p>The example is the first and the smallest: the limit space of the odometer is the circle, the shift is the doubling map, and the limit dynamical system is the doubling map on the circle of the dynamical systems of Part III. The orbit Schreier graphs of the adding machine on the levels are the cyclic graphs of length $2^n$, and their limit in the local topology is the orbit graph of a boundary point, which for the circle is an infinite line whose balls grow linearly.</p>
+<h3 id="the-grigorchuk-group-the-segment">The Grigorchuk Group: the Segment</h3>
+<p><strong>Theorem.</strong> The limit space of the Grigorchuk group is homeomorphic to the real segment $[0,1]$, and the shift is the tent map $s(x) = 1 - |2x-1|$ folding the interval.</p>
+<p><strong>Proof sketch.</strong> The nucleus is $\{1,a,b,c,d\}$ and the criterion gives the equivalence $\cdots 111101w \sim \cdots 111100w$ for $w \in X^*$ and no others; this is the relation of the adding machine transported by the homeomorphism $F$ of $X^{-\omega}$ that sends $\cdots x_3x_2x_1$ to $\cdots y_3y_2y_1$ with $y_i = (1+x_1)+\cdots+(1+x_i) \pmod 2$, except that the two points $\cdots1111$ and $\cdots11110$ are not equivalent while their images are, so that the identification of the endpoints of the circle is undone and the quotient is the segment rather than the circle. The shift on the segment is the folding map, which is the map induced by the shift on the circle under the quotient. $\square$</p>
+<p>The limit space of the Grigorchuk group is the object that replaces the Julia set: the group has no complex dynamical model, and the segment, with its tiling by the images of the dyadic intervals and the folding map, is the self-similar space the group produces. The finite Schreier graphs $\Gamma_n$ of the levels, with their substitution, approximate the segment by the theorem of approximation, and the tiles are the dyadic subintervals; the covering dimension is one, as the dimension theorem requires, since the Grigorchuk group is generated by a bounded automaton, and the limit space is post-critically finite.</p>
+<h3 id="the-infinite-dihedral-group-the-segment">The Infinite Dihedral Group: the Segment</h3>
+<p><strong>Theorem.</strong> The limit space of the infinite dihedral group of <em>Self-Similar Groups</em> is a segment, and the asymptotic equivalence relation is the same as that of the Grigorchuk group.</p>
+<p>The group $\mathrm{IMG}(z^2-2)$ is the infinite dihedral group and its Julia set is the segment $[-2,2]$; the limit space is that segment, and the same computation as for the Grigorchuk group identifies it, because the two equivalence relations coincide. The example separates two phenomena: the dihedral group is virtually free and has a tree as its Cayley graph, while the Grigorchuk group is a branch group of intermediate growth, and the two share a limit space. The limit space is therefore an invariant of the action and not of the coarse geometry of the group, and it does not determine the group.</p>
+<h3 id="the-fabrykowskigupta-group-the-dendrite">The Fabrykowski–Gupta Group: the Dendrite</h3>
+<p><strong>Theorem.</strong> The limit space of the Fabrykowski–Gupta group is the dendrite fractal: a compact connected, locally connected, one-dimensional space that is a union of arcs with branching, pictured by the tiles of its Schreier graphs.</p>
+<p>The group is generated by a finite automaton of the classical family, and its Schreier graphs are planar graphs built from triangles; the tiling theorem identifies their limit with the dendrite. The example is the first in which the limit space is not a manifold but a tree-like fractal, and it is post-critically finite because the group is generated by a bounded automaton, so its dimension is one by the dimension theorem. The dendrite is one of the tree-like Julia sets of the quadratic family of the next example, and the two computations agree.</p>
+<h3 id="the-group-of-the-sierpinski-gasket-the-gasket">The Group of the Sierpiński Gasket: the Gasket</h3>
+<p><strong>Theorem.</strong> The limit space of the group $G_{\triangle} = \langle b_0,b_1,b_2\rangle$ of <em>Self-Similar Groups</em> is the Sierpiński gasket.</p>
+<p><strong>Proof sketch.</strong> The nucleus is the generating set, and the tiles of level $n$ are the three pieces of the gasket at scale $n$: the tile $T_v$ meets the tile $T_u$ exactly when $u$ and $v$ are related by a generator, which is the incidence rule of the gasket, and the approximation theorem then identifies the limit with the standard self-similar set with the three contractions of ratio one half at the vertices of a triangle. $\square$</p>
+<p>The Sierpiński gasket is the example that shows the difference between the covering dimension and the Hausdorff dimension: the covering dimension of the gasket is one, by the dimension theorem, while its Hausdorff dimension is $\log 3/\log 2$, a number which is Part IV's and which is computed from the three contractions; the two dimensions are different and both are invariants of the space, at different levels of structure. The orbit Schreier graphs of the gasket group are the prefractal graphs of the gasket, and the limit in the local topology is the orbit graph of a boundary point, as in the general theorem.</p>
+<h3 id="the-julia-sets-of-rational-maps">The Julia Sets of Rational Maps</h3>
+<p><strong>Theorem.</strong> Let $f$ be a sub-hyperbolic rational map, in particular a post-critically finite one, of degree $d$, and let $\mathrm{IMG}(f)$ be its iterated monodromy group on the $d$-ary tree. Then $\mathrm{IMG}(f)$ is contracting, and its limit space is homeomorphic to the Julia set of $f$; under the homeomorphism the shift is the map $f$ itself on the Julia set, up to conjugation.</p>
+<p>The theorem is Nekrashevych's, and the examples are the circle for $z^2$, whose group is the adding machine; the segment $[-2,2]$ for $z^2-2$, whose group is the infinite dihedral group; the Julia set of $z^2-1$, whose group has exponential growth and solvable word and conjugacy problems, as <em>Automaton and Contracting Groups</em> records; the dendrite of $z^2+i$ for the Misiurewicz parameters, whose Schreier graphs are trees; and the Julia sets of $z^2+c$ for the parameters of the airplane and the rabbit. The complex dynamics that produces the map $f$, the Julia set and its properties are Part III's; the fractal dimension of the Julia set is Part IV's. The contribution of this article to the family is the group-theoretic construction of the space: the limit space of a self-similar group is defined without any rational map, and a rational map with a post-critically finite critical orbit supplies a self-similar group whose limit space is its Julia set. The dictionary is not a bijection: the same limit space can arise from different actions and different groups, and the classification of the contracting self-similar groups by their limit spaces is not known.</p>
+<h2 id="summary">Summary</h2>
+<p>The action of a self-similar group on the level $n$ is recorded by the finite labelled Schreier graph $\Gamma_n(G,S)$, and the projections $\Gamma_{n+1} \to \Gamma_n$ make the levels an inverse spectrum; the graph of the action on the boundary is the inverse limit, a profinite graph, and the pointed orbit Schreier graph of a boundary point is the limit of the pointed finite graphs in the local topology, with $d((\Gamma_1,v_1),(\Gamma_2,v_2)) = 2^{-R}$ for the largest radius of agreement. A graph contraction deletes some edges and maps the others bijectively, and the shift of the tree extends to a contraction of $\Gamma_n$ onto $\Gamma_{n-1}$ when the generating set is closed under sections; the family of Schreier graphs is thus self-similar, and the wreath recursion is the substitution rule that generates it.</p>
+<p>For a contracting action the space $X^{-\omega}$ of sequences infinite to the left carries the asymptotic equivalence, defined by a finite set of group elements one at each depth and computed by the nucleus: two sequences are equivalent exactly when there are $h_n \in N$ with $h_n(x_n) = y_n$ and $h_n|_{x_n} = h_{n-1}$, equivalently a path of the nuclear Moore diagram with labels $(x_n,y_n)$. The quotient $\mathcal{J}_G$ is the <strong>limit space</strong>: compact, metrisable, of covering dimension at most $|N|-1$, connected for a level-transitive action of a finitely generated group, and carrying the shift $s$ with at most $|X|$ preimages, the limit dynamical system. The <strong>tiles</strong> $T_v$ are the images of the cylinders; they satisfy $T_v = \bigcup_x T_{xv}$, $s(T_v) = T_{v'}$, every point lies in at most $|N|$ of them, and $T_u \cap T_v \neq \emptyset$ exactly when $h(v) = u$ for some $h \in N$. The graph $J_n(G)$ on the tiles of level $n$ is the Schreier graph of the nucleus, and the limit space is the limit of the graphs $J_n(G)$ rescaled, in the sense of the approximation theorem; it is also the Gromov boundary of the self-similarity complex, a hyperbolic space built from the Schreier graphs of the levels. Its covering dimension equals the asymptotic dimension of the orbital graphs, and it is one exactly when the group is the faithful quotient of a contracting self-similar virtually free group; in particular the limit space of a bounded automaton group is post-critically finite and one-dimensional.</p>
+<p>The examples are the circle, for the adding machine, with shift the doubling map; the segment, for the Grigorchuk group, with the equivalence $\cdots111101w \sim \cdots111100w$ and shift the tent map; the segment, for the infinite dihedral group, with the same equivalence relation; the dendrite, for the Fabrykowski–Gupta group; the Sierpiński gasket, whose covering dimension is one and whose Hausdorff dimension is $\log 3/\log 2$; and the Julia sets of the sub-hyperbolic rational maps, whose self-similar groups are the iterated monodromy groups. The spectra of the Schreier graphs and the measures on the boundary are Part III's; the Gromov–Hausdorff convergence and the asymptotic dimension are Part IV's, and the fractal dimension of the limit space is Part IV's as well.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Gamma(G,S,M)$</td>
+<td>The Schreier graph of the action of $G = \langle S\rangle$ on $M$</td>
+</tr>
+<tr>
+<td>$\Gamma(G,S,x)$</td>
+<td>The orbit Schreier graph at $x$</td>
+</tr>
+<tr>
+<td>$\Gamma_n(G,S) = \Gamma(G,S,X^n)$</td>
+<td>The Schreier graph of the action on the level $n$</td>
+</tr>
+<tr>
+<td>$\pi_n : \Gamma_{n+1} \to \Gamma_n$</td>
+<td>The projection deleting the last letter; a surjective morphism</td>
+</tr>
+<tr>
+<td>$\Gamma(G,S,X^{\omega}) = \varprojlim \Gamma_n$</td>
+<td>The profinite graph of the action on the boundary</td>
+</tr>
+<tr>
+<td>$d((\Gamma_1,v_1),(\Gamma_2,v_2)) = 2^{-R}$</td>
+<td>The metric of the local topology on pointed graphs</td>
+</tr>
+<tr>
+<td>graph contraction, self-similar graph</td>
+<td>Edge deletion plus a bijection on the surviving edges; an infinite graph contracted to itself</td>
+</tr>
+<tr>
+<td>$X^{-\omega}$</td>
+<td>The space of sequences infinite to the left, a Cantor space</td>
+</tr>
+<tr>
+<td>$\sim$</td>
+<td>The asymptotic equivalence, given by a finite set one element at each depth</td>
+</tr>
+<tr>
+<td>$h_n(x_n) = y_n$, $h_n\|_{x_n} = h_{n-1}$, $h_n \in N$</td>
+<td>The nucleus criterion for the equivalence</td>
+</tr>
+<tr>
+<td>$\mathcal{J}_G = X^{-\omega}/\!\sim$</td>
+<td>The limit space of the contracting action</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>The shift on $\mathcal{J}_G$; the limit dynamical system $(\mathcal{J}_G,s)$</td>
+</tr>
+<tr>
+<td>$T_v$</td>
+<td>The tile at the word $v$, the image of the sequences ending in $v$</td>
+</tr>
+<tr>
+<td>$T_u \cap T_v \neq \emptyset$</td>
+<td>Exactly when $h(v) = u$ for some $h$ in the nucleus</td>
+</tr>
+<tr>
+<td>$J_n(G)$</td>
+<td>The graph on the tiles of level $n$, isomorphic to $\Gamma(\langle N\rangle,N,X^n)$</td>
+</tr>
+<tr>
+<td>$\Sigma(G,S)$</td>
+<td>The self-similarity complex; its boundary is $\mathcal{J}_G$</td>
+</tr>
+<tr>
+<td>$\dim$</td>
+<td>The covering dimension of <em>Dimension Theory</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Volodymyr Nekrashevych, <em>Self-similar groups</em>, Mathematical Surveys and Monographs <strong>117</strong> (American Mathematical Society, 2005), for the Schreier graphs of the levels, the asymptotic equivalence, the limit space, the tiles, the approximation theorem by the graphs $J_n(G)$ and the boundary of the self-similarity complex.</li>
+<li>Rostislav Grigorchuk, Volodymyr Nekrashevych and Vitaly Sushchansky, <em>From fractal groups to fractal sets</em>, in <em>Fractals in Graz 2001</em> (Birkhäuser, 2003), 25–118, for the survey treatment of the limit spaces, the substitution rules of the Schreier graphs and the tables of the limit spaces of the classical groups.</li>
+<li>Laurent Bartholdi and Rostislav Grigorchuk, <em>On the spectrum of Hecke type operators related to some fractal groups</em>, Trudy Matematicheskogo Instituta imeni V. A. Steklova <strong>231</strong> (2000), 5–45, for the Schreier graphs of the Grigorchuk group and of the other examples, with their substitution rules and their spectra, which are Part III's subject.</li>
+<li>Rostislav Grigorchuk and Andrzej Żuk, <em>The lamplighter group as a group generated by a 2-state automaton, and its spectrum</em>, Geometriae Dedicata <strong>87</strong> (2001), 209–244, for the level Schreier graphs of the lamplighter group and the spectral problem attached to them.</li>
+<li>Volodymyr Nekrashevych, <em>Self-similar groups and topological dimension</em>, Transactions of the American Mathematical Society <strong>358</strong> (2006), 2751–2777, for the equality of the covering dimension of the limit space with the asymptotic dimension of the orbital graphs and the one-dimensionality criterion.</li>
+<li>Ievgen Bondarenko and Volodymyr Nekrashevych, <em>Post-critically finite self-similar groups</em>, Algebra and Discrete Mathematics (2003), 21–32, for the identification of the post-critically finite limit spaces with the bounded automata and the one-dimensionality of the post-critically finite limit space.</li>
+<li>Jacek Fabrykowski and Narain Gupta, <em>On groups with sub-exponential growth functions</em>, Journal of the Indian Mathematical Society <strong>54</strong> (1989), 249–256, for the group whose limit space is the dendrite.</li>
+<li>Volodymyr Nekrashevych, <em>Iterated monodromy groups</em>, in <em>Groups and Dynamics</em> (London Mathematical Society Lecture Note Series <strong>387</strong>, 2011), 1–46, for the construction of the iterated monodromy groups and the theorem that the limit space of a sub-hyperbolic rational map is its Julia set.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Julia Sets of a Complex Polynomial — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-julia-sets-of-a-complex-polynomial"><strong>The Julia Sets of a Complex Polynomial</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $f$ be a complex polynomial of degree $d \geq 2$, read as a self-map of the Riemann sphere $\hat{\mathbb{C}} = \mathbb{C} \cup \{\infty\}$ by $f(\infty) = \infty$, and let $f^n$ be its $n$-th iterate. The points of the sphere are separated into two sets by the behaviour of the sequence $(f^n)$: the <strong>Fatou set</strong> $F(f)$, where the iterates form a normal family and the dynamics is stable under small perturbations of the starting point, and the <strong>Julia set</strong> $J(f)$, its complement, where the iterates are chaotic in the precise sense that they are not normal on any neighbourhood. This article defines the two sets, identifies the Julia set as the closure of the repelling periodic points and as the boundary of every Fatou component, records the invariance and the self-similarity that make the Julia set the object of the whole subcategory, and states the existence of an invariant measure carried by it. The quadratic and higher-degree examples are worked in the following articles of the subcategory.</p>
+<p>The article is the $\mathbb{C}$ instance of the general theory, and the boundary is stated once here. The <strong>general</strong> theory of the Fatou and Julia sets of a rational map, the classification of the periodic components, the local connectivity, the external rays and the geometric measure theory of the Julia sets belong to <em>The Geometry of the Julia Sets</em>, written in Part IV; the dynamics of the map as a topological and a smooth dynamical system belong to <em>Topological Dynamics</em> and <em>Smooth Dynamical Systems</em> of Part III, and the coding of the dynamics by the shift to <em>Symbolic Dynamics</em>. This article uses the partition and the polynomial theorems that the corpus's complex analysis makes available, and it defers everything general to those articles rather than restating them. The escape criterion, the Green's function and the dimension of the Julia set are the subjects of <em>The Escape Radius and the Green's Function</em> and <em>The Hausdorff Dimension of the Julia Sets</em> of this subcategory, and are quoted here only where the dynamical picture needs them.</p>
+<p>The complex analysis used is that of <em>Complex Analysis</em>: the Riemann sphere, the modulus and the spherical metric, holomorphic functions, and Montel's theorem on normal families. No physics is invoked.</p>
+<h2 id="the-polynomial-and-its-iterates">The Polynomial and Its Iterates</h2>
+<h3 id="the-map">The Map</h3>
+<p><strong>Definition.</strong> A <strong>complex polynomial of degree $d \geq 2$</strong> is a map</p>
+<p>$$
+f(z) = a_d z^d + a_{d-1}z^{d-1} + \cdots + a_1 z + a_0, \qquad a_d \neq 0,\ d \geq 2,
+$$</p>
+<p>extended to $\hat{\mathbb{C}}$ by $f(\infty) = \infty$. The <strong>iterates</strong> are $f^0 = \mathrm{id}$ and $f^{n+1} = f \circ f^n$; the <strong>orbit</strong> of $z$ is the sequence $(f^n(z))_{n \geq 0}$.</p>
+<p><strong>Proposition.</strong> The extension is holomorphic at $\infty$ and $\infty$ is a fixed point of multiplicity $d$; writing $w = 1/z$ near $\infty$, the map reads $w \mapsto w^d/\bigl(a_d + a_{d-1}w + \cdots\bigr)$, so $\infty$ is a <strong>superattracting</strong> fixed point and $f$ has degree $d$ as a map of the sphere onto itself.</p>
+<p><strong>Proof.</strong> Clearing denominators in $f(1/w)^{-1}$ gives the displayed expression, which is holomorphic and vanishes to order $d$ at $w = 0$; a zero of order $d$ is a critical point of multiplicity $d-1$, and a fixed point at which the derivative vanishes is superattracting. Every point of $\hat{\mathbb{C}}$ has $d$ preimages counted with multiplicity, by the fundamental theorem of algebra, so the map has degree $d$.</p>
+<h3 id="periodic-points-and-their-multipliers">Periodic Points and Their Multipliers</h3>
+<p><strong>Definition.</strong> A point $z$ is <strong>periodic</strong> of period $p \geq 1$ if $f^p(z) = z$ and $p$ is the least such integer; it is <strong>fixed</strong> if $p = 1$. The <strong>multiplier</strong> of the cycle is $\lambda = (f^p)'(z)$. The cycle is <strong>attracting</strong> if $|\lambda| < 1$, <strong>superattracting</strong> if $\lambda = 0$, <strong>repelling</strong> if $|\lambda| > 1$, and <strong>indifferent</strong> if $|\lambda| = 1$, the indifferent case being <strong>rationally indifferent</strong> when $\lambda$ is a root of unity and <strong>irrationally indifferent</strong> otherwise. A point is <strong>preperiodic</strong> if some iterate of it is periodic.</p>
+<p><strong>Proposition.</strong> The multiplier is the same at every point of the cycle, and it is independent of the point chosen on the cycle; the chain rule gives $(f^p)'(z) = \prod_{k=0}^{p-1} f'(f^k(z))$, a product invariant under cyclic permutation.</p>
+<p><strong>Definition.</strong> A <strong>critical point</strong> of $f$ is a point at which $f'$ vanishes; the finite critical points are the $d-1$ roots of $f'$ counted with multiplicity, and $\infty$ is a critical point of multiplicity $d-1$. The <strong>critical orbit</strong> is the orbit of the critical points, and $f$ is <strong>post-critically finite</strong> if every critical orbit is finite.</p>
+<p><strong>Example.</strong> For the quadratic family $f_c(z) = z^2 + c$ the only finite critical point is $0$, the critical orbit is $0 \mapsto c \mapsto c^2+c \mapsto \cdots$, and $f_c$ is post-critically finite exactly when this orbit is finite; $c = 0$ and $c = -2$ are the first examples, and $c = i$ gives the finite orbit $0 \mapsto i \mapsto -1+i \mapsto -i \mapsto -1+i$, of preperiod $1$ and period $2$.</p>
+<h2 id="the-fatou-and-julia-sets">The Fatou and Julia Sets</h2>
+<h3 id="normal-families">Normal Families</h3>
+<p><strong>Definition.</strong> Let $U \subseteq \hat{\mathbb{C}}$ be open and let $\mathcal{F}$ be a family of holomorphic maps $U \to \hat{\mathbb{C}}$. The family is <strong>normal</strong> if every sequence in it has a subsequence converging locally uniformly on $U$, in the spherical metric, to a holomorphic map $U \to \hat{\mathbb{C}}$. Equivalently, by <em>Complex Analysis</em>, the family is <strong>equicontinuous</strong> on compact subsets of $U$ with respect to the spherical metric.</p>
+<p><strong>Theorem (Montel).</strong> A family of holomorphic maps on a domain that omits three fixed values of $\hat{\mathbb{C}}$ is normal.</p>
+<p><strong>Proof sketch.</strong> Three omitted values may be moved to $0, 1, \infty$ by a Möbius transformation; the classical Montel theorem states that the family of holomorphic maps into $\hat{\mathbb{C}} \setminus \{0,1,\infty\}$ is normal, and conjugating by the Möbius map returns the statement. This is the normal-family theorem of <em>Complex Analysis</em>.</p>
+<h3 id="the-two-sets">The Two Sets</h3>
+<p><strong>Definition.</strong> The <strong>Fatou set</strong> of $f$ is</p>
+<p>$$
+F(f) = \{z \in \hat{\mathbb{C}} : \text{the family } \{f^n\}_{n \geq 0} \text{ is normal on some neighbourhood of } z\},
+$$</p>
+<p>and the <strong>Julia set</strong> is its complement, $J(f) = \hat{\mathbb{C}} \setminus F(f)$.</p>
+<p><strong>Theorem (basic properties).</strong></p>
+<p><strong>(a)</strong> $F(f)$ is open and $J(f)$ is closed and nonempty.</p>
+<p><strong>(b)</strong> Both sets are <strong>completely invariant</strong>: $f(F) \subseteq F$, $f^{-1}(F) = F$, and $f(J) = J = f^{-1}(J)$.</p>
+<p><strong>(c)</strong> $J(f) = J(f^n)$ for every $n \geq 1$, and $J(f)$ contains infinitely many points.</p>
+<p><strong>(d)</strong> If $z$ is an attracting, superattracting or rationally indifferent periodic point then $z \in F(f)$; if $z$ is a repelling periodic point then $z \in J(f)$.</p>
+<p><strong>Proof sketch.</strong> (a) Normality is a local property of the family, so its set of points is open; $J(f)$ is nonempty because otherwise the iterates would be normal on the whole sphere, hence equicontinuous, and the degrees of $f^n$ would be bounded, whereas $\deg f^n = d^n \to \infty$. (b) The composition of a normal family with a holomorphic map is normal, and $f$ is open, which gives the invariance of $F$, hence of $J$. (c) The family $\{f^{kn}\}$ is a subfamily of $\{f^n\}$ and normality of the whole family is equivalent to normality of the $n$-th powers, by a standard subfamily argument. (d) Near an attracting cycle the iterates contract towards it and form a normal family; near a repelling cycle the images of a small disk spread out and the family is not normal. The complete proof of (c) and (d) and the rational-map form of all four are in <em>The Geometry of the Julia Sets</em>.</p>
+<h2 id="the-julia-set-as-the-repelling-periodic-points">The Julia Set as the Repelling Periodic Points</h2>
+<p><strong>Theorem (Fatou, Julia).</strong> For a polynomial of degree $d \geq 2$,</p>
+<p>$$
+J(f) = \overline{\{\text{repelling periodic points of } f\}} .
+$$</p>
+<p><strong>Proof sketch.</strong> A repelling periodic point lies in $J$, since at it the iterates are not equicontinuous. For the converse, one shows that the backward orbit of a repelling periodic point is dense in $J$: the set of repelling periodic points is nonempty and infinite, its limit points lie in $J$ by (d), and a counting argument over the $d^n$ preimages of a small disk shows that the backward orbit accumulates at every point of $J$. The argument uses Montel's theorem and the Julia set's complete invariance, and it is the Fatou–Julia theorem of <em>The Geometry of the Julia Sets</em>.</p>
+<p><strong>Corollary.</strong> $J(f)$ is the smallest closed completely invariant set with at least three points; equivalently, if a closed set $E$ satisfies $f^{-1}(E) = E$ and contains no critical point of $f$, then $J(f) \subseteq E$.</p>
+<p><strong>Proof sketch.</strong> A closed completely invariant set avoiding the critical points can be pulled back without ramification, which gives a normal family on its complement; hence its complement lies in $F(f)$.</p>
+<p><strong>Corollary (the preimages of a generic point).</strong> For every $z$ outside a set of at most two <strong>exceptional</strong> points,</p>
+<p>$$
+J(f) = \overline{\bigcup_{n \geq 0} f^{-n}(z)} .
+$$</p>
+<p><strong>Proof sketch.</strong> The exceptional set is the set of points whose backward orbit is finite, and it has at most two points for a rational map of degree $d \geq 2$; for a polynomial it is contained in $\{\infty\}$. For a non-exceptional $z$ the backward orbit is infinite and its closure is completely invariant and not a finite set, so by the corollary above it contains $J$, and it is contained in $J$ by the invariance of $J$. The exceptional dichotomy is proved in <em>The Geometry of the Julia Sets</em>.</p>
+<h2 id="the-boundary-of-the-fatou-components">The Boundary of the Fatou Components</h2>
+<p><strong>Definition.</strong> The <strong>filled Julia set</strong> is</p>
+<p>$$
+K(f) = \{z \in \mathbb{C} : \text{the orbit } (f^n(z)) \text{ is bounded}\} ,
+$$</p>
+<p>a compact subset of $\mathbb{C}$; the <strong>basin of infinity</strong> is $A(\infty) = \hat{\mathbb{C}} \setminus K(f)$, the set of points escaping to $\infty$.</p>
+<p><strong>Theorem.</strong> For a polynomial of degree $d \geq 2$:</p>
+<p><strong>(a)</strong> $J(f) = \partial K(f) = \partial A(\infty)$;</p>
+<p><strong>(b)</strong> $F(f) = \mathring{K}(f) \cup A(\infty)$, the union of the interior of the filled Julia set and the basin of infinity;</p>
+<p><strong>(c)</strong> $A(\infty)$ is connected and simply connected, and $K(f)$ is connected if and only if $A(\infty)$ is simply connected;</p>
+<p><strong>(d)</strong> $J(f)$ is the boundary of <strong>every</strong> Fatou component: if $U$ is a component of $F(f)$, then $\partial U = J(f)$;</p>
+<p><strong>(e)</strong> $K(f)$ is connected if and only if every critical point of $f$ lies in $K(f)$; for the quadratic family this reads $K(f_c)$ connected $\iff 0 \in K(f_c) \iff c \in M$, where $M$ is the Mandelbrot set of <em>The Mandelbrot Set and the Quadratic Family</em>.</p>
+<p><strong>Proof sketch.</strong> (a) A point of $\partial K$ is not in the basin and cannot have a neighbourhood on which the iterates are normal and bounded, so it lies in $J$; conversely the iterates near a point of $A(\infty)$ converge locally uniformly to $\infty$, so $A(\infty) \subseteq F$, and near a point of $\mathring K$ the iterates are bounded and hence normal, so $F = \mathring K \cup A(\infty)$ and $J = \partial K = \partial A(\infty)$. (c) $A(\infty)$ is the domain of the Böttcher coordinate, whose construction is the subject of <em>The Escape Radius and the Green's Function</em>; a Riemann-map argument shows that $K$ is connected exactly when $A(\infty)$ is simply connected. (d) Each Fatou component is mapped eventually into a periodic component, and the boundary of every component is carried onto the boundary of its image by the open map $f$; the common boundary is therefore a closed completely invariant set with more than two points, hence $J$ by the corollary above. (e) If a critical point lies in $A(\infty)$ then its image and the whole critical orbit escape, and the preimages of a neighbourhood of $\infty$ disconnect $K$; conversely the escape of the critical orbit forces $K$ disconnected. The detailed arguments are in <em>The Geometry of the Julia Sets</em> and in the local-connectivity theory cited there.</p>
+<h2 id="self-similarity-and-coding">Self-Similarity and Coding</h2>
+<p><strong>Theorem (the inverse branches).</strong> Let $z$ be a point of $J(f)$ at which $(f^n)'(z) \neq 0$ for all $n$. Then for every neighbourhood $V$ of $z$ and every sufficiently large $n$ there is a branch $g_n$ of $f^{-n}$ defined on a disk about $f^n(z)$ with $g_n(f^n(z)) = z$; the branches are contractions by the factor $|(f^n)'(z)|^{-1}$, and the Julia set is the attractor of the resulting system of inverse branches on the repelling side.</p>
+<p><strong>Proof sketch.</strong> The inverse function theorem gives a local branch of $f^{-n}$ near $f^n(z)$, and its derivative at $f^n(z)$ is $1/(f^n)'(z)$; since $|(f^n)'(z)|$ grows exponentially along the repelling directions, the branch contracts. The branch maps a neighbourhood of $f^n(z)$ into a neighbourhood of $z$, and the union of the branches over $n$ generates $J$, by the density of the backward orbit stated above.</p>
+<p><strong>Remark (the sense of self-similarity).</strong> The Julia set is <strong>invariant</strong>, $J = f^{-1}(J)$, and it is covered by the $d^n$ preimages of any of its neighbourhoods; exact self-similarity, in the sense of the iterated function systems of <em>Fractal Geometry</em> with finitely many contracting similarities, holds only in the special cases of $z \mapsto z^d$, whose Julia set is the unit circle with $d$ rotational symmetries, and of the Chebyshev and Lattès examples constructed from a group action. For a general polynomial the self-similarity is <strong>conformal</strong>: the inverse branches are conformal contractions whose ratios vary, and it is the invariant measure, not a finite system of similitudes, that records the balance of the pieces. The iterated function systems proper are the subject of <em>Iterated Function Systems in the Complex Plane</em>, and the general self-similar construction is the subject of <em>Fractal Geometry</em>.</p>
+<h2 id="the-invariant-measure">The Invariant Measure</h2>
+<p><strong>Theorem (Brolin).</strong> For a polynomial $f$ of degree $d \geq 2$ there is a unique probability measure $\mu$ on $\hat{\mathbb{C}}$ satisfying</p>
+<p>$$
+\int \varphi \, d\mu = \frac{1}{d^n}\sum_{f^n(w) = z} \varphi(w)
+$$</p>
+<p>for every continuous $\varphi$ and every $z$ outside the exceptional set, the sum being over the $d^n$ preimages of $z$ counted with multiplicity. The measure is $f$-invariant, $f_*\mu = \mu$; it is supported on $J(f)$; it is the measure of maximal entropy $\log d$; and it is the <strong>equilibrium measure</strong> of the basin, obtained as the weak limit of the normalised counting measures of the preimages of any non-exceptional point.</p>
+<p><strong>Proof sketch.</strong> The displayed average over the $d^n$ preimages converges weakly to a probability measure, by the Banach–Alaoglu theorem and the choice of a limit point of the sequence of averaged counting measures; the averaging identity makes the limit $f$-invariant and independent of $z$, and its entropy is $\log d$, the topological entropy of $f$. The identification of the maximal entropy measure with the equilibrium measure is the theory of <em>Ergodic Theory</em> and <em>The Geometry of the Julia Sets</em>. The computation of the entropy and the Lyapunov exponent as averages is the thermodynamic formalism, cited there.</p>
+<p><strong>Theorem (the measure of full dimension).</strong> If $J(f)$ is a hyperbolic Julia set in the sense below, then there is an $f$-invariant ergodic measure $\mu_s$ of Hausdorff dimension exactly $\dim_H J(f)$: it is the equilibrium state of the potential $-s\log|f'|$ at the value $s$ solving the pressure equation of <em>The Hausdorff Dimension of the Julia Sets</em>, and it satisfies the dimension formula</p>
+<p>$$
+\dim_H J(f) = \frac{h_{\mu_s}}{\chi_{\mu_s}}, \qquad \chi_{\mu_s} = \int \log|f'| \, d\mu_s ,
+$$</p>
+<p>of Ledrappier and Young, where $h$ is the measure-theoretic entropy. The measure of maximal entropy has dimension $\log d / \chi_{\mu}$, which is at most $\dim_H J(f)$ and equal to it in the case $J(f) = \hat{\mathbb{C}}$.</p>
+<p><strong>Proof sketch.</strong> The equilibrium state of $-s\log|f'|$ exists by the Ruelle–Perron–Frobenius theorem, because the map is expanding on the Julia set; the Bowen equation $P(-s\log|f'|) = 0$ has a unique root, its equilibrium state has dimension $s$ by the Shannon–McMillan–Breiman theorem applied to the potential, and the root equals the Hausdorff dimension by the Bowen formula of <em>The Hausdorff Dimension of the Julia Sets</em>. The theorem is the measure-theoretic part of the dimension theory, and it is stated here only for completeness; the thermodynamic formalism is Part III's.</p>
+<h2 id="the-hyperbolic-and-the-parabolic-cases">The Hyperbolic and the Parabolic Cases</h2>
+<p><strong>Definition.</strong> A polynomial $f$ is <strong>hyperbolic</strong> if every critical point lies in the basin of an attracting (or superattracting) cycle; it is <strong>parabolic</strong> if it has a rationally indifferent periodic point, so that a cycle of multiplier a root of unity attracts some critical orbit; and it is <strong>subhyperbolic</strong> if every critical orbit either converges to an attracting cycle or is eventually repelled, with no critical orbit in the Julia set.</p>
+<p><strong>Theorem (the expanding characterisation).</strong> A polynomial is hyperbolic if and only if its Julia set is <strong>expanding</strong>: there are constants $C > 0$ and $\rho > 1$ with $|(f^n)'(z)| \geq C\rho^n$ for every $z \in J(f)$ and every $n \geq 1$. Equivalently, a hyperbolic Julia set contains no critical point and the critical orbits stay a positive distance from it.</p>
+<p><strong>Proof sketch.</strong> If the Julia set is expanding then the iterates of a neighbourhood of it are controlled and the critical orbits cannot accumulate on $J$, so they fall into attracting basins, which is hyperbolicity; conversely hyperbolicity makes the critical orbits avoid $J$ and the expanding inequality follows from the compactness of $J$ and the absence of critical points on it. The statement is the Koebe-distortion argument of the doubling theory of <em>The Geometry of the Julia Sets</em>.</p>
+<p><strong>Example (the quadratic cases).</strong> For $f_c(z) = z^2+c$ the parameter $c = 0$ gives the superattracting fixed point at $0$ and the Julia set the unit circle; $c = -1$ gives the superattracting period-two cycle $0 \mapsto -1 \mapsto 0$ and the "basilica" Julia set; $c = i$ gives the superattracting cycle $-1+i \leftrightarrow -i$ and the "dendrite" of <em>Iterated Function Systems in the Complex Plane</em>'s sibling examples. All three are hyperbolic. The parameter $c = 1/4$ gives a parabolic fixed point: the point $z = 1/2$ satisfies $f_c(1/2) = 1/2$ and $f_c'(1/2) = 1$, so the multiplier is a root of unity and the critical orbit $0 \mapsto 1/4 \mapsto 5/16 \mapsto \cdots$ converges to $1/2$ without reaching it, the orbit of $0$ being $0, 1/4, 5/16, \ldots$ with the successive values approaching $1/2$. The multiplier is exactly $1$ and the Julia set is a <strong>parabolic</strong> one, of the type treated in <em>The Fatou Components and the Classification of the Dynamics</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A complex polynomial of degree $d \geq 2$ is a holomorphic self-map of the Riemann sphere with a superattracting fixed point at $\infty$. Its iterates partition the sphere into the Fatou set, where the family of iterates is normal, and the Julia set, its complement; both are completely invariant, $J(f) = J(f^n)$, and $J(f)$ is nonempty, closed and infinite. The Julia set is the closure of the repelling periodic points, it is contained in the closure of the backward orbit of every non-exceptional point, and it is the common boundary of all the Fatou components and of the filled Julia set. The filled Julia set is compact, and it is connected exactly when every critical point lies in it; for the quadratic family this is the criterion that the parameter lies in the Mandelbrot set.</p>
+<p>The Julia set is invariant under the inverse branches of $f$, which are conformal contractions on the repelling side; exact self-similarity holds only in the circle and Chebyshev cases, and the general self-similarity is conformal, recorded by the invariant measure. There is a unique $f$-invariant probability measure of maximal entropy $\log d$, supported on the Julia set; for a hyperbolic Julia set there is an ergodic invariant measure of Hausdorff dimension exactly $\dim_H J(f)$, the equilibrium state of $-s\log|f'|$ at the Bowen value, and the dimension formula expresses it as entropy over Lyapunov exponent.</p>
+<p>The dynamics is hyperbolic when every critical point lies in an attracting basin, and then the Julia set is expanding; it is parabolic when a rationally indifferent cycle attracts a critical orbit, the parameter $c = 1/4$ of the quadratic family being the model case. The general theory of the Fatou and Julia sets of a rational map, the classification of the components, the local connectivity and the geometric measure theory belong to <em>The Geometry of the Julia Sets</em> of Part IV; the escape criterion and the Green's function are the subject of <em>The Escape Radius and the Green's Function</em>, and the dimension is the subject of <em>The Hausdorff Dimension of the Julia Sets</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f$, $d$</td>
+<td>Complex polynomial of degree $d \geq 2$, read on $\hat{\mathbb{C}}$</td>
+</tr>
+<tr>
+<td>$f^n$</td>
+<td>$n$-th iterate, $f^0 = \mathrm{id}$</td>
+</tr>
+<tr>
+<td>$F(f)$, $J(f)$</td>
+<td>Fatou set, Julia set; $J(f) = \hat{\mathbb{C}} \setminus F(f)$</td>
+</tr>
+<tr>
+<td>$K(f)$</td>
+<td>Filled Julia set, the points with bounded orbit</td>
+</tr>
+<tr>
+<td>$A(\infty)$</td>
+<td>Basin of infinity, $\hat{\mathbb{C}} \setminus K(f)$</td>
+</tr>
+<tr>
+<td>$\lambda = (f^p)'(z)$</td>
+<td>Multiplier of a $p$-periodic cycle</td>
+</tr>
+<tr>
+<td>attracting, repelling, indifferent</td>
+<td>$|\lambda| < 1$, $|\lambda| > 1$, $|\lambda| = 1$</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>Brolin measure, $f$-invariant of maximal entropy $\log d$</td>
+</tr>
+<tr>
+<td>$\mu_s$, $s = \dim_H J(f)$</td>
+<td>Equilibrium state of $-s\log|f'|$, measure of full dimension</td>
+</tr>
+<tr>
+<td>$\chi = \int \log|f'| \, d\mu$</td>
+<td>Lyapunov exponent</td>
+</tr>
+<tr>
+<td>hyperbolic, parabolic, subhyperbolic</td>
+<td>Critical orbits in attracting basins; a rationally indifferent cycle; critical orbits off $J$</td>
+</tr>
+<tr>
+<td>$f_c(z) = z^2 + c$</td>
+<td>The quadratic family of <em>The Mandelbrot Set and the Quadratic Family</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pierre Fatou, "Sur les équations fonctionnelles", <em>Bulletin de la Société Mathématique de France</em> 47 (1919), 161–271; 48 (1920), 33–94 and 208–314, for the original partition into the two sets.</li>
+<li>Gaston Julia, "Mémoire sur l'itération des fonctions rationnelles", <em>Journal de Mathématiques Pures et Appliquées</em> 8 (1918), 47–245, for the repelling periodic points and the Julia set.</li>
+<li>Paul Montel, <em>Leçons sur les familles normales de fonctions analytiques et leurs applications</em> (Gauthier-Villars, 1927), for the normal families.</li>
+<li>Hans Brolin, "Invariant sets under iteration of rational functions", <em>Arkiv för Matematik</em> 6 (1965), 103–144, for the invariant measure.</li>
+<li>John Milnor, <em>Dynamics in One Complex Variable</em>, 3rd edition (Princeton University Press, 2006), for the general theory and the quadratic examples.</li>
+<li>Lennart Carleson and Theodore W. Gamelin, <em>Complex Dynamics</em> (Springer, 1993), for the polynomial case and the external rays.</li>
+<li>Feliks Przytycki and Mariusz Urbański, <em>Conformal Fractals: Ergodic Theory Methods</em> (Cambridge University Press, 2010), for the invariant measures and the dimension formula.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

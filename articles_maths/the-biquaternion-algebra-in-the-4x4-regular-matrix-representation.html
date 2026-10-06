@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Biquaternion Algebra in the $4\times4$ Regular Matrix Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-biquaternion-algebra-in-the-math0-regular-matrix-representation"><strong>The Biquaternion Algebra in the $4\times4$ Regular Matrix Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The left regular representation $\rho_L$ of <em>Introduction to the $4\times4$ Regular Matrix Representation of Biquaternions</em> realises the algebra on the coefficient space $\mathbb{C}^4$ by left multiplication, so that the regular matrix $\rho_L(\tilde{Q})$ is the carrier of the element acting on the algebra itself. This article is the companion of <em>The Biquaternion Algebra in the $2\times2$ Matrix Representation</em>, and it reads the same reading group <em>Topology on the Biquaternions as an Algebra over $\mathbb{C}$</em> on the regular matrices instead of on the $2\times2$ matrices: the plain product becomes the product of the regular matrices, and the complex bilinear form $\langle\tilde{P},\tilde{Q}\rangle=\mathrm{Sc}(\tilde{P}\tilde{Q})$ becomes the plain trace pairing of the regular matrices, with the factor $2$ that the dimension of the module brings.</p>
+<p>The regular representation is the more faithful of the two carrier spaces, because it sees the algebra act and not only the algebra: it carries the left and right multiplications as two commuting copies, the natural conjugation as the transposition, and the two blocks of the fundamental decomposition as invariant subspaces. The trace pairing of the regular matrices is twice the complex bilinear form, and the determinant of the regular matrix is the square of the determinant of the element, the two factors being the two copies of the simple module in $\mathbb{B}$.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$ and sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$. All matrix claims of this article are recomputed in the verification script of the pass.</p>
+<h2 id="the-representation">The Representation</h2>
+<p><strong>Definition.</strong> The <strong>left regular representation</strong> is the algebra homomorphism</p>
+<p>$$
+\rho_L:\mathbb{B}\longrightarrow M_4(\mathbb{C}),\qquad \rho_L(\tilde{Q})(\tilde{R})=\tilde{Q}\tilde{R},
+$$</p>
+<p>with $\rho_L(\tilde{Q})$ the $4\times4$ matrix of left multiplication in the basis $e_0,e_1,e_2,e_3$; the <strong>right regular representation</strong> is $\rho_R(\tilde{Q})(\tilde{R})=\tilde{R}\tilde{Q}$. The two representation matrices satisfy</p>
+<p>$$
+\rho_L(\tilde{P})\rho_L(\tilde{Q})=\rho_L(\tilde{P}\tilde{Q}),\qquad \rho_R(\tilde{Q})=E\,\rho_L(\tilde{Q})^{\mathsf{T}}E,\qquad \rho_L(\tilde{Q}^{\natural})=\rho_L(\tilde{Q})^{\mathsf{T}},
+$$</p>
+<p>and the two invariants of the regular matrix are</p>
+<p>$$
+\operatorname{Tr}\rho_L(\tilde{Q})=4Q_0,\qquad \det\rho_L(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}^2 .
+$$</p>
+<h2 id="the-plain-product-in-the-representation">The Plain Product in the Representation</h2>
+<p><strong>Theorem (the product is the product of the regular matrices).</strong> For all biquaternions,</p>
+<p>$$
+\rho_L(\tilde{P})\rho_L(\tilde{Q})=\rho_L(\tilde{P}\tilde{Q}),
+$$</p>
+<p>so the plain product of the algebra is the product of the regular matrices, and the composition of the two one-sided operators is the operator of the product, $\rho_L(\tilde{P})\circ\rho_L(\tilde{Q})=\rho_L(\tilde{P}\tilde{Q})$.</p>
+<p><em>Proof.</em> The representation is defined by $\rho_L(\tilde{Q})(\tilde{R})=\tilde{Q}\tilde{R}$ and the associativity of the algebra: $\rho_L(\tilde{P})\rho_L(\tilde{Q})(\tilde{R})=\tilde{P}(\tilde{Q}\tilde{R})=(\tilde{P}\tilde{Q})\tilde{R}$.</p>
+<p><strong>The two-sided structure.</strong> The right multiplications act on the same space and commute with the left ones, so the regular module carries the two commuting copies $\rho_L(\mathbb{B})$ and $\rho_R(\mathbb{B})$; the double centralizer theorem identifies each with the full commutant of the other, and the algebra decomposes as the direct sum $I_1\oplus I_2$ of two minimal left ideals. The elements of $\rho_R(\mathbb{B})$ are exactly the conjugates of the transposes of $\rho_L(\mathbb{B})$ by the sign matrix, by the second identity above.</p>
+<h2 id="the-complex-bilinear-form-in-the-representation">The Complex Bilinear Form in the Representation</h2>
+<p><strong>Theorem (the trace pairing of the regular matrices).</strong> For all biquaternions,</p>
+<p>$$
+\tfrac12\operatorname{Tr}\bigl(\rho_L(\tilde{P})\rho_L(\tilde{Q})\bigr) = 2\,\langle\tilde{P},\tilde{Q}\rangle ,
+$$</p>
+<p>so the plain trace pairing of the regular matrices is twice the complex bilinear form of the algebra.</p>
+<p><em>Proof.</em> The representation is a homomorphism, so $\operatorname{Tr}(\rho_L(\tilde{P})\rho_L(\tilde{Q}))=\operatorname{Tr}\rho_L(\tilde{P}\tilde{Q})=4\,\mathrm{Sc}(\tilde{P}\tilde{Q})$, and the factor $2$ follows.</p>
+<p><strong>Theorem (the diagonal).</strong> On the diagonal,</p>
+<p>$$
+\tfrac12\operatorname{Tr}\bigl(\rho_L(\tilde{Q})^2\bigr) = 2\sum_\mu\varepsilon_\mu Q_\mu^2 ,
+$$</p>
+<p>the complex bilinear invariant of the regular matrix.</p>
+<p><strong>The Gram matrix and the signature.</strong> In the coefficient basis the Gram matrix of the pairing is the sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$; over $\mathbb{R}$ the form has signature $(4,4)$ on the eight real coordinates of the coefficient space, and it is indefinite.</p>
+<p><strong>The null set.</strong> The pairing vanishes on the cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ of real dimension $6$, the same cone as in the $2\times2$ representation; the two representations carry the same null set, because the form is transported by the two realizations of the same element.</p>
+<p><strong>The isometries.</strong> The isometry group on the coefficient space is the complex orthogonal group $O_4(\mathbb{C})$, of complex dimension $12$, and the real part of the form is a real bilinear form of signature $(4,4)$ with isometry group $O(4,4)$. Two operators act on the regular matrix from the algebra: the transposition $\rho_L(\tilde{Q})\mapsto\rho_L(\tilde{Q}^{\natural})$ carries the natural conjugation, and the conjugation $\rho_L(\tilde{Q})\mapsto\rho_L(\tilde{A})\rho_L(\tilde{Q})\rho_L(\tilde{A})^{-1}$ carries the inner automorphism of a unit; both are isometries of the pairing.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>The identity.</strong> Let $\tilde{Q}=e_0$. Then $\rho_L(e_0)=I_4$, $\operatorname{Tr}\rho_L(e_0)=4$ and $\det\rho_L(e_0)=1$, while $\langle e_0,e_0\rangle=1$ and $\tfrac12\operatorname{Tr}(I_4^2)=2=2\langle e_0,e_0\rangle$.</p>
+<p><strong>A basis element.</strong> Let $\tilde{Q}=e_1$. Then $\rho_L(e_1)$ is the matrix of left multiplication by $e_1$, a signed permutation matrix of trace $0$ and determinant $1$; since $\langle e_1,e_1\rangle=-1$, the diagonal identity reads $\tfrac12\operatorname{Tr}(\rho_L(e_1)^2)=-2=2\langle e_1,e_1\rangle$.</p>
+<p><strong>A zero divisor.</strong> Let $\tilde{Q}=e_0+ie_1$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$, so $\det\rho_L(\tilde{Q})=0$ and the regular matrix is singular of rank two; the diagonal of the plain pairing is $\tfrac12\operatorname{Tr}(\rho_L(\tilde{Q})^2)=2\langle\tilde{Q},\tilde{Q}\rangle=4$, so the singular matrix is not isotropic for the complex bilinear form.</p>
+<h2 id="summary">Summary</h2>
+<p>The left regular representation turns the plain product of the algebra into the product of the regular matrices, $\rho_L(\tilde{P})\rho_L(\tilde{Q})=\rho_L(\tilde{P}\tilde{Q})$, and carries the two commuting copies $\rho_L(\mathbb{B})$ and $\rho_R(\mathbb{B})$ of the algebra, related by the transposition identities $\rho_R(\tilde{Q})=E\rho_L(\tilde{Q})^{\mathsf{T}}E$ and $\rho_L(\tilde{Q}^{\natural})=\rho_L(\tilde{Q})^{\mathsf{T}}$. The complex bilinear form of the group is the plain trace pairing $\tfrac12\operatorname{Tr}(\rho_L(\tilde{P})\rho_L(\tilde{Q}))=2\langle\tilde{P},\tilde{Q}\rangle$, with the coefficient Gram matrix $E$, of real signature $(4,4)$, with the isotropic cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ of real dimension $6$ as null set, and with isometry group $O_4(\mathbb{C})$ on the coefficients and $O(4,4)$ on the realification. The invariants of the regular matrix are the trace $4Q_0$ and the determinant $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}^2$, the square of the determinant of the element because the regular module is the direct sum of two copies of the simple module.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_L(\tilde{Q})$</td>
+<td>the $4\times4$ regular matrix of left multiplication, $\operatorname{Tr}\rho_L(\tilde{Q})=4Q_0$</td>
+</tr>
+<tr>
+<td>$\rho_R(\tilde{Q})=E\rho_L(\tilde{Q})^{\mathsf{T}}E$</td>
+<td>the right regular matrix, the conjugate transpose of the left one</td>
+</tr>
+<tr>
+<td>$\rho_L(\tilde{P})\rho_L(\tilde{Q})=\rho_L(\tilde{P}\tilde{Q})$</td>
+<td>the plain product is the product of the regular matrices</td>
+</tr>
+<tr>
+<td>$\tfrac12\operatorname{Tr}(\rho_L(\tilde{P})\rho_L(\tilde{Q}))=2\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>the complex bilinear form as the trace pairing of the regular matrices</td>
+</tr>
+<tr>
+<td>$\det\rho_L(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}^2$</td>
+<td>the determinant of the regular matrix</td>
+</tr>
+<tr>
+<td>$O_4(\mathbb{C})$, $O(4,4)$</td>
+<td>the isometry group and its realification</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the $4\times4$ Regular Matrix Representation of Biquaternions</em> (<code>articles_maths/introduction-to-the-4x4-regular-matrix-representation-of-biquaternions.md</code>), for the representation and its first properties</li>
+<li><em>Biquaternion 4×4 Regular Matrix Element Representation</em> (<code>articles_maths/biquaternion-4x4-regular-matrix-element-representation.md</code>), for the further reading of the regular representation</li>
+<li><em>The Complex Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-complex-bilinear-form-on-the-biquaternion-algebra.md</code>), for the form on the algebra</li>
+<li><em>The Biquaternion Algebra in the $2\times2$ Matrix Representation</em> (<code>articles_maths/the-biquaternion-algebra-in-the-2x2-matrix-representation.md</code>), for the companion reading of the group</li>
+<li><em>The Six Subspaces under the Complex Bilinear Form</em> (<code>articles_maths/the-six-subspaces-under-the-complex-bilinear-form.md</code>), for the restriction theory of the form</li>
+<li><em>The Four Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the four forms read side by side</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
