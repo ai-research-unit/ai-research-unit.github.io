@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is studied in depth in the mathematics corpus, and every result the physics of this menu uses is explained there. This article is the physics-side entry point to that study. It owns no result. It states how the mathematical study is organised, and it carries the direct links to all one hundred and sixty-seven articles of the mathematics *Biquaternions* category. Every link below opens a mathematics article directly, and its text is the title that the mathematics menu uses for it.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is studied in depth in the mathematics corpus, and every result the physics of this menu uses is explained there. This article is the physics-side entry point to that study. It owns no result. It states how the mathematical study is organised, and it carries the direct links to all articles of the mathematics *Biquaternions* category. Every link below opens a mathematics article directly, and its text is the title that the mathematics menu uses for it.
 
 ## Algebra
 
