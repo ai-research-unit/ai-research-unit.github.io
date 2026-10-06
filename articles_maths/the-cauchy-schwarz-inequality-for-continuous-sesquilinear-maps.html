@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cauchy–Schwarz Inequality for Continuous Sesquilinear Maps — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cauchyschwarz-inequality-for-continuous-sesquilinear-maps"><strong>The Cauchy–Schwarz Inequality for Continuous Sesquilinear Maps</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Cauchy–Schwarz inequality of the definite theory, $\lvert h(x,y)\rvert^{2} \leq \lVert x\rVert^{2}\lVert y\rVert^{2}$, is proved in <em>The Norm Defined by a Form</em> by dividing by $h(y,y)$ and using that the translated diagonal is nonnegative. Definiteness enters twice there: it makes $h(y,y) > 0$ for $y \neq 0$, and it makes the translated diagonal vanish only at proportional elements, hence the inequality sharp. Neither use is necessary for the inequality itself. <strong>Positivity alone suffices</strong>: if $h$ is Hermitian with $h(x,x) \geq 0$ for every $x$, then</p>
+<p>$$
+\varsigma(h(x,y))\,h(x,y) \leq h(x,x)\,h(y,y) \quad \text{in } R^{\varsigma},
+$$</p>
+<p>and the degenerate case $h(y,y) = 0$ is not an exception but the case in which the translated quadratic in a real parameter forces $h(x,y) = 0$. This article proves that inequality for a <strong>sesquilinear map</strong> whose values may lie in the base $R$ or in an algebra $A$ or a $\mathrm{C}^{*}$-algebra $B$, and reads from it the seminorm that the positive semi-definite form defines, the reduction of continuity to a single scalar function, and the equality case.</p>
+<p>Three facts organise the article. <strong>The inequality is proved by translating one argument.</strong> With $\mu = h(x,y)/h(y,y)$ the diagonal of $x - \mu y$ is $h(x,x) - \lvert h(x,y)\rvert^{2}/h(y,y)$, and its nonnegativity is the inequality; the proof of the definite case is the same computation and the difference is only that the division by $h(y,y)$ is now allowed exactly when $h(y,y) \neq 0$, the degenerate case being settled by a real-parameter argument that forces $h(x,y) = 0$ before the division is attempted. <strong>The diagonal is a seminorm, and the positive maps are determined by it.</strong> The function $p(x) = h(x,x)^{1/2}$ is a seminorm on the module, its triangle inequality being the inequality itself; the null set $\{x : h(x,x) = 0\}$ is the radical of the form, so $p$ is a norm exactly on the definite quotient and the completion is a Hilbert space; and for a positive map the whole continuity is the boundedness of $p^{2}$ on the unit ball, $\lVert h\rVert = \sup_{\lVert x\rVert \leq 1}h(x,x)$, so the passage from positivity to continuity is the boundedness of one scalar function. <strong>That boundedness is not free.</strong> Positivity does not bound the diagonal on a non-complete module, the rank-one map of an unbounded functional being the witness, and the article records the hypothesis rather than claiming the automatic continuity that the layer does not have; on the objects of the layer the form is continuous by hypothesis, and in the definite case the norm of the form supplies the bound with constant one.</p>
+<p>The article defines the positive sesquilinear maps and their two kinds of values, proves the Cauchy–Schwarz inequality, its degenerate case and its equality case, reads the seminorm, the radical and the definite quotient, proves the reduction of continuity to the diagonal and gives the witness that positivity alone does not bound it, treats the $\mathrm{C}^{*}$-valued maps and the norm inequality that reduces to the scalar case, records the collapse at the trivial involution, and works the examples. The definite case, its norm and its sharp constant are <em>The Norm Defined by a Form</em>; the four kinds of form and the identification of the null set with the radical are <em>Positivity and the Positive Cone of a Hermitian Form</em>; the failure of the inequality for an indefinite form is <em>The Indefinite Case and the Signature</em>; the functional pairing $s(x,y) = f(y^{*}x)$ of a positive functional, its inequality and the continuity of positive functionals are <em>States and Positive Functionals on a Topological Sesquialgebra</em>; the universal $A$-valued form $\Psi(x,y) = y^{*}x$, the module inequality and its sharp algebraic form are <em>Hermitian Forms on a Sesquialgebra</em>, <em>Adjoints of Bounded Sesquilinear Operators</em> and <em>Hilbert and $\mathrm{C}^{*}$-Modules</em>; the sesquilinear form of the layer, the radical and the compatibility are <em>Topological Sesquialgebras with a Form</em>; the complete objects are <em>Banach Sesquialgebras</em>; and the completion of an inner product space is <em>Hilbert Spaces</em>.</p>
+<p><strong>Conventions.</strong> The base is $(R,\varsigma)$ with $R$ a field, $\varsigma$ an involution of it and $k = R^{\varsigma}$ an ordered field in which every nonnegative element is a square, the model being $R = \mathbb{R}$ with $\varsigma = \mathrm{id}$ and $R = \mathbb{C}$ with the conjugation; the <strong>modulus</strong> of a scalar is $\lvert\lambda\rvert = (\lambda\varsigma(\lambda))^{1/2} \in k$. A <strong>sesquilinear map</strong> is a biadditive $s : A \times A \to B$ with</p>
+<p>$$
+s(\lambda x,y) = \lambda\,s(x,y), \qquad s(x,\lambda y) = \varsigma(\lambda)\,s(x,y),
+$$</p>
+<p>$R$-linear in the first slot and $\varsigma$-semilinear in the second, the convention of <em>Topological Sesquialgebras with a Form</em>, §<em>The Definition</em>; it is <strong>Hermitian</strong> when $s(y,x) = \varsigma(s(x,y))$ for $B = R$ and $s(y,x) = s(x,y)^{*}$ for $B$ an algebra with involution, and <strong>positive</strong> when $s(x,x) \geq 0$ for every $x$, in the orders of $k$ and of $B$ respectively. The values are either in the base $R$ — a <strong>sesquilinear form</strong> — or in $A$ itself or in a $\mathrm{C}^{*}$-algebra $B$ — the <strong>sesquilinear maps</strong> of the operator layers. The module carries a norm $\lVert\cdot\rVert$, the bound of $s$ is $\lVert s\rVert = \sup\{\lVert s(x,y)\rVert : \lVert x\rVert \leq 1, \lVert y\rVert \leq 1\}$, and $s$ is continuous exactly when the bound is finite.</p>
+<h2 id="the-positive-sesquilinear-maps">The Positive Sesquilinear Maps</h2>
+<h3 id="the-two-kinds-of-value">The Two Kinds of Value</h3>
+<p><strong>Definition.</strong> A sesquilinear map $s$ with values in $R$ is a <strong>form</strong>; with values in an involutive $R$-algebra $B$ it is an <strong>algebra-valued map</strong>. In both cases $s$ is <strong>Hermitian</strong> when the exchange of the arguments conjugates the value, and <strong>positive</strong> when the diagonal is nonnegative, $s(x,x) \geq 0$ in $k$ in the first case and $s(x,x) \geq 0$ in $B$ in the second. The form is <strong>positive definite</strong> when $s(x,x) > 0$ for $x \neq 0$ and <strong>positive semi-definite</strong> when $s(x,x) \geq 0$; the four kinds and their signs are <em>Positivity and the Positive Cone of a Hermitian Form</em>, §<em>The Four Kinds</em>.</p>
+<p><strong>Proposition (the diagonal is a fixed scalar).</strong> Let $s$ be Hermitian with values in $R$. Then $s(x,x) = \varsigma(s(x,x))$ for every $x$, so the diagonal takes its values in the fixed field $k$; and for $\lambda \in R$ the diagonal scales as</p>
+<p>$$
+s(\lambda x,\lambda x) = \lambda\varsigma(\lambda)\,s(x,x) = \lvert\lambda\rvert^{2}s(x,x) .
+$$</p>
+<p><em>Proof.</em> The first is the Hermitian property at the pair $(x,x)$; the second is the two slot rules applied in sequence, $s(\lambda x,\lambda y) = \lambda\varsigma(\lambda)s(x,y)$. $\square$</p>
+<p><strong>Remark (the model).</strong> The canonical example of the article is the pairing of a positive functional, $s(x,y) = f(y^{*}x)$, whose values lie in $\mathbb{C}$, and the canonical example with values in $A$ is $\Psi(x,y) = y^{*}x$ itself, the universal $A$-valued form of <em>Hermitian Forms on a Sesquialgebra</em>, §<em>The Reduction to the Scalars</em>; the two are related by the reduction of the second along $f$, and the scalar theory of the article is the common part of the two. The scalar reductions $\varphi \circ s$ of a $B$-valued map along the functionals of $B$ are the device by which the algebra-valued statements below are reduced to the scalar ones.</p>
+<h3 id="positivity">Positivity</h3>
+<p><strong>Proposition (the scalar reductions of a positive map are positive).</strong> Let $s : A \times A \to B$ be a sesquilinear map with values in a $\mathrm{C}^{*}$-algebra $B$. Then $s$ is positive iff every positive functional $\varphi$ of $B$ has $\varphi \circ s$ positive; and a positive map is Hermitian automatically, since its scalar reductions are Hermitian forms and the states separate $B$.</p>
+<p><em>Proof.</em> If $s$ is positive then $\varphi(s(x,x)) \geq 0$ for every positive functional $\varphi$, so $\varphi \circ s$ is positive; conversely $s(x,x) \geq 0$ in $B$ iff $\varphi(s(x,x)) \geq 0$ for every state $\varphi$ of $B$, by the representation of the order of a $\mathrm{C}^{*}$-algebra through its states. For the Hermitian clause, let $s$ be positive and let $\varphi$ be a state; the scalar form $\varphi \circ s$ is positive, and a scalar-valued positive sesquilinear form is Hermitian, so $\varphi(s(x,y)) = \varsigma(\varphi(s(y,x))) = \varphi(s(y,x)^{*})$ for every state $\varphi$; the states separate the elements of $B$, whence $s(x,y) = s(y,x)^{*}$, the Hermitian property. $\square$</p>
+<h2 id="the-inequality">The Inequality</h2>
+<h3 id="the-statement">The Statement</h3>
+<p><strong>Theorem (Cauchy–Schwarz).</strong> Let $s$ be Hermitian and positive semi-definite with values in $R$. Then for all $x, y \in A$,</p>
+<p>$$
+\varsigma(s(x,y))\,s(x,y) \leq s(x,x)\,s(y,y) \quad \text{in } k, \qquad \text{equivalently} \qquad \lvert s(x,y)\rvert^{2} \leq s(x,x)\,s(y,y) ,
+$$</p>
+<p>with $\lvert\cdot\rvert$ the modulus of the base. Definiteness is not assumed, and when $s(y,y) = 0$ the inequality reads $s(x,y) = 0$.</p>
+<p><em>Proof.</em> For $y = 0$ both sides vanish. Let $s(y,y) \neq 0$. It lies in $k$ and is positive, so it is invertible in $k$ and $\mu = s(x,y)/s(y,y) \in R$. Expand the diagonal of $x - \mu y$ by the two slot rules:</p>
+<p>$$
+s(x-\mu y,x-\mu y) = s(x,x) - \mu\,s(y,x) - \varsigma(\mu)\,s(x,y) + \mu\varsigma(\mu)\,s(y,y) .
+$$</p>
+<p>By the Hermitian property $s(y,x) = \varsigma(s(x,y))$, and $s(y,y) \in k$ is fixed by $\varsigma$, so the three terms $\mu\,s(y,x)$, $\varsigma(\mu)\,s(x,y)$ and $\mu\varsigma(\mu)\,s(y,y)$ each equal $s(x,y)\varsigma(s(x,y))/s(y,y) = \lvert s(x,y)\rvert^{2}/s(y,y)$, the first two with the sign $-$ and the third with the sign $+$; the translated diagonal is therefore</p>
+<p>$$
+s(x-\mu y,x-\mu y) = s(x,x) - \frac{\lvert s(x,y)\rvert^{2}}{s(y,y)} .
+$$</p>
+<p>The form is positive, so the left side is $\geq 0$, and multiplying the inequality by $s(y,y) > 0$ in the ordered field $k$ gives the claim. $\square$</p>
+<h3 id="the-degenerate-case">The Degenerate Case</h3>
+<p><strong>Proposition (the neutral argument).</strong> Let $s$ be Hermitian and positive semi-definite and let $s(y,y) = 0$. Then $s(x,y) = 0$ for every $x$, and consequently $y$ lies in the radical of $s$ and the inequality holds with both sides zero.</p>
+<p><em>Proof.</em> For $\lambda \in k$, which is fixed by $\varsigma$, the diagonal of $x - \lambda y$ is $s(x,x) - \lambda s(y,x) - \lambda s(x,y) = s(x,x) - 2\lambda\,\mathrm{Re}\,s(x,y)$, where $\mathrm{Re}\,t = \tfrac12(t + \varsigma(t))$ is the fixed part; the form is positive, so $s(x,x) \geq 2\lambda\,\mathrm{Re}\,s(x,y)$ for every $\lambda \in k$, which forces $\mathrm{Re}\,s(x,y) = 0$. In the bilinear kind $s$ is already fixed and $s(x,y) = 0$; in the sesquilinear kind apply the same argument at the pair $(ix,y)$, whose fixed part is $\mathrm{Re}\,s(ix,y) = \mathrm{Re}(i\,s(x,y)) = -\mathrm{Im}\,s(x,y)$, and get $\mathrm{Im}\,s(x,y) = 0$ as well. Hence $s(x,y) = 0$ for every $x$, so $y$ is in the radical, $\mathrm{rad}(s) = \{x : s(x,y) = 0 \text{ for all } y\}$; and the inequality reads $0 \leq s(x,x)\cdot 0$. $\square$</p>
+<p><strong>Remark (the proof is the same as the definite one).</strong> The definite proof of <em>The Norm Defined by a Form</em>, §<em>The Inequality</em>, is the computation above with the division available; the degenerate case is not a pathology of the inequality but the case in which the translated diagonal has the leading coefficient $s(y,y) = 0$ and the quadratic in the real parameter forces the vanishing of the value instead of bounding its square. The indefinite case lies in the other direction and is excluded: for an indefinite form $s(y,y)$ may be negative, the translation by $\mu$ is not available and the inequality fails, with the neutral pair $e_{1} + e_{2}$, $e_{1} - e_{2}$ of the hyperbolic plane as the witness of <em>The Indefinite Case and the Signature</em>, §<em>The Cauchy–Schwarz Inequality Fails</em>.</p>
+<h3 id="the-equality-case">The Equality Case</h3>
+<p><strong>Theorem (the equality case).</strong> Let $s$ be Hermitian and positive semi-definite with values in $R$. Then the inequality is an equality exactly for the pairs that are linearly dependent modulo the radical: $\lvert s(x,y)\rvert^{2} = s(x,x)s(y,y)$ iff there is $\mu \in R$ with $x - \mu y \in \mathrm{rad}(s)$, or $y \in \mathrm{rad}(s)$.</p>
+<p><em>Proof.</em> If $s(y,y) = 0$ then $s(y,x) = 0$ for every $x$ and $y \in \mathrm{rad}(s)$, and both sides of the inequality vanish for every $x$, so the equality holds on the whole class of $y$ modulo the radical and the statement is the case $y \in \mathrm{rad}(s)$. Let $s(y,y) > 0$ and put $\mu = s(x,y)/s(y,y)$. The proof of the inequality shows that the equality holds exactly when $s(x-\mu y,x-\mu y) = 0$; by the proposition above the null set of a positive semi-definite form is its radical, so this is $x - \mu y \in \mathrm{rad}(s)$. Conversely if $x = \mu y + z$ with $z \in \mathrm{rad}(s)$ then $s(x,x) = \lvert\mu\rvert^{2}s(y,y)$ and $s(x,y) = \mu\,s(y,y)$, so $\lvert s(x,y)\rvert^{2} = \lvert\mu\rvert^{2}s(y,y)^{2} = s(x,x)s(y,y)$. $\square$</p>
+<p><strong>Corollary (the definite case is the sharp one).</strong> When $s$ is positive definite its radical is zero and the equality case is the proportionality of <em>The Norm Defined by a Form</em>, §<em>The Equality Case</em>: the inequality is an equality exactly for linearly dependent elements. The general statement is the same statement read modulo the radical, and the definite case is the case in which the radical has been divided out.</p>
+<h2 id="the-seminorm-the-radical-and-the-quotient">The Seminorm, the Radical and the Quotient</h2>
+<h3 id="the-seminorm">The Seminorm</h3>
+<p><strong>Theorem (the diagonal is a seminorm).</strong> Let $s$ be Hermitian and positive semi-definite with values in $R$. Then $p(x) = s(x,x)^{1/2}$ is a seminorm on $A$,</p>
+<p>$$
+p(x) \geq 0, \qquad p(\lambda x) = \lvert\lambda\rvert\,p(x), \qquad p(x+y) \leq p(x) + p(y),
+$$</p>
+<p>and $\lvert s(x,y)\rvert \leq p(x)p(y)$; the null set $\{x : p(x) = 0\} = \{x : s(x,x) = 0\}$ is the radical of $s$.</p>
+<p><em>Proof.</em> The first two are the proposition on the diagonal and the square root in $k$. For the third, the expansion of the diagonal of a sum gives $s(x+y,x+y) = s(x,x) + s(x,y) + \varsigma(s(x,y)) + s(y,y) = p(x)^{2} + 2\,\mathrm{Re}\,s(x,y) + p(y)^{2} \leq p(x)^{2} + 2p(x)p(y) + p(y)^{2}$, using $\mathrm{Re}\,t \leq \lvert t\rvert$ and the inequality; the square roots in $k$ are ordered, so $p(x+y) \leq p(x)+p(y)$. The inequality for $\lvert s(x,y)\rvert$ is Cauchy–Schwarz. The null set is the radical by the proposition of the degenerate case, which shows both inclusions. $\square$</p>
+<p><strong>Remark (the null set is the radical, and the norm is the definite case).</strong> The identity $\{s(x,x) = 0\} = \mathrm{rad}(s)$ for a positive semi-definite form is the statement that <em>Positivity and the Positive Cone of a Hermitian Form</em>, §<em>The Null Set and the Radical</em>, proves from the inequality and its equality case and that this article supplies; the seminorm is a norm exactly when the form is definite, which is the case of <em>The Norm Defined by a Form</em>.</p>
+<h3 id="the-definite-quotient-and-the-completion">The Definite Quotient and the Completion</h3>
+<p><strong>Theorem (the quotient).</strong> Let $s$ be Hermitian and positive semi-definite with radical $N = \mathrm{rad}(s)$, a subspace of $A$ on which $s$ vanishes in both arguments. Then $s$ descends to the quotient $A/N$ as a positive definite Hermitian form</p>
+<p>$$
+\bar{s}(x + N, y + N) = s(x,y),
+$$</p>
+<p>which is well defined, and the seminorm $p$ descends to the norm $\lVert x + N\rVert = p(x)$ of the completed inner product space.</p>
+<p><em>Proof.</em> The form vanishes on $N$ in both arguments, so the value depends only on the classes; it is Hermitian and positive because $s$ is, and it is definite because a class with $\bar{s}(\xi,\xi) = 0$ is represented by an element of the null set, that is of $N$. The completion of the resulting inner product space is a Hilbert space, <em>Hilbert Spaces</em>, §<em>Completeness and the Projection Theorem</em>, and the seminorm descends to the norm of the quotient. $\square$</p>
+<p><strong>Remark (the construction is the GNS construction).</strong> The quotient, the completion and the representation that the completed inner product carries are the construction of <em>States and Positive Functionals on a Topological Sesquialgebra</em>, §<em>The GNS Construction</em>, in the case in which the map is the pairing of a functional; the abstract form of the quotient is <em>Positivity and the Positive Cone of a Hermitian Form</em>, §<em>The Definite Quotient</em>, and the article states it here only to record that it uses no definiteness assumption beyond the positivity.</p>
+<h2 id="the-passage-from-positivity-to-continuity">The Passage from Positivity to Continuity</h2>
+<h3 id="the-continuity-is-the-boundedness-of-the-diagonal">The Continuity Is the Boundedness of the Diagonal</h3>
+<p><strong>Theorem (the reduction to the diagonal).</strong> Let $s$ be Hermitian and positive semi-definite on a normed module, with values in $R$. Then $s$ is continuous iff its diagonal is bounded on the unit ball, and in that case</p>
+<p>$$
+\lVert s\rVert = \sup\{\lvert s(x,y)\rvert : \lVert x\rVert \leq 1, \lVert y\rVert \leq 1\} = \sup\{s(x,x) : \lVert x\rVert \leq 1\} .
+$$</p>
+<p><em>Proof.</em> If $s(x,x) \leq M\lVert x\rVert^{2}$ for every $x$, then the inequality gives $\lvert s(x,y)\rvert^{2} \leq s(x,x)s(y,y) \leq M^{2}\lVert x\rVert^{2}\lVert y\rVert^{2}$, hence $\lvert s(x,y)\rvert \leq M\lVert x\rVert\lVert y\rVert$ and $\lVert s\rVert \leq M$; conversely $\lvert s(x,x)\rvert \leq \lVert s\rVert\lVert x\rVert^{2}$ by the definition of the bound, and $s(x,x) \geq 0$. The two suprema therefore agree at $M = \sup_{\lVert x\rVert \leq 1}s(x,x)$. $\square$</p>
+<p><strong>Corollary (the continuity of the layer's forms is one scalar condition).</strong> On the objects of the layer the form is continuous by hypothesis, <em>Topological Sesquialgebras with a Form</em>, §<em>The Definition</em>, so the diagonal is bounded and the inequality holds with the constant $\lVert s\rVert$; in the <strong>definite</strong> case the bound is free of the hypothesis, since the norm of the form gives $\lvert s(x,y)\rvert \leq \lVert x\rVert\lVert y\rVert$ with constant one, <em>The Norm Defined by a Form</em>, §<em>The Boundedness of the Form</em>; and for the <strong>canonical pairing</strong> $s(x,y) = y^{*}x$ of a $\mathrm{C}^{*}$-sesquialgebra the diagonal has $s(x,x) = x^{*}x$ of norm $\lVert x\rVert^{2}$, so the bound is the $\mathrm{C}^{*}$-identity and is free. The passage from positivity to continuity is thus the passage from the pointwise inequality $s(x,x) \geq 0$ to the global one $s(x,x) \leq M\lVert x\rVert^{2}$.</p>
+<h3 id="the-boundedness-is-not-free">The Boundedness Is Not Free</h3>
+<p><strong>Example (a positive form that is not continuous).</strong> Let $A = \mathbb{C}[x]$ with the supremum norm on $[0,1]$ and let $\varphi$ be the linear functional with $\varphi(x^{n}) = n!$, well defined and everywhere finite on the polynomials since every element is a finite combination of the monomials. Then</p>
+<p>$$
+s(p,q) = \varphi(p)\,\varsigma(\varphi(q))
+$$</p>
+<p>is Hermitian and positive semi-definite — the diagonal is $s(p,p) = \lvert\varphi(p)\rvert^{2} \geq 0$ — and it is not continuous: $\lVert x^{n}\rVert = 1$ while $s(x^{n},x^{n}) = (n!)^{2}$, so the diagonal is unbounded on the unit ball and the inequality of the preceding theorem has no finite constant. The example is the witness that positivity alone does not bound the diagonal, hence does not give continuity, and it is the reason the article states the boundedness of the diagonal as the hypothesis and does not claim the automatic continuity that the layer does not have.</p>
+<p><strong>Remark (where the continuity is free).</strong> On a unital $\mathrm{C}^{*}$-algebra the boundedness of a positive functional is free and the bound is $\lVert f\rVert = f(1)$, <em>States and Positive Functionals on a Topological Sesquialgebra</em>, §<em>The Cauchy–Schwarz Inequality and the Null Space</em>; on an arbitrary unital Banach sesquialgebra it is not, as that article's remark records, and the layer accordingly restricts to the continuous maps. The example above is the corresponding witness for a general positive map, and the two together are the reason the article's hypotheses are the continuity of the map and its positivity, neither implying the other.</p>
+<h2 id="the-math259-valued-maps">The $\mathrm{C}^{*}$-Valued Maps</h2>
+<h3 id="the-norm-inequality">The Norm Inequality</h3>
+<p><strong>Theorem (the $\mathrm{C}^{*}$-valued norm inequality).</strong> Let $s : A \times A \to B$ be Hermitian and positive semi-definite with values in a $\mathrm{C}^{*}$-algebra $B$, and let the module carry a norm. Then</p>
+<p>$$
+\lVert s(x,y)\rVert^{2} \leq \lVert s(x,x)\rVert\,\lVert s(y,y)\rVert \qquad \text{for all } x, y .
+$$</p>
+<p><em>Proof.</em> For a state $\omega$ of $B$ the composite $\omega \circ s$ is a Hermitian positive semi-definite form with values in $\mathbb{C}$, by the proposition on the scalar reductions, so Cauchy–Schwarz applies to it: $\lvert\omega(s(x,y))\rvert^{2} \leq \omega(s(x,x))\,\omega(s(y,y)) \leq \lVert s(x,x)\rVert\lVert s(y,y)\rVert$. A state is a positive functional of norm one, and $\lVert b\rVert = \sup\{\lvert\omega(b)\rvert : \omega \text{ a state}\}$ for a $\mathrm{C}^{*}$-algebra element $b$, so taking the supremum over the states gives the claim. $\square$</p>
+<p><strong>Remark (the sharp algebraic form is the module case).</strong> The inequality of the theorem is the norm form; the sharper algebraic form</p>
+<p>$$
+s(y,x)\,s(x,y) \leq \lVert s(x,x)\rVert\,s(y,y),
+$$</p>
+<p>in which the product in $B$ replaces the product of the norms, holds when $s$ is an inner product in the module sense, $s(x,ya) = s(x,y)a$; it is the Cauchy–Schwarz inequality of a Hilbert $\mathrm{C}^{*}$-module, <em>Hilbert and $\mathrm{C}^{*}$-Modules</em>, §<em>The $A$-valued norm</em>, and its proof uses the $A$-linearity of the second slot in the choice of the parameter. For a general positive sesquilinear map, which has no module structure, the norm form above is what the scalar reductions give, and it is the form that the operator layers use.</p>
+<h3 id="the-canonical-pairing">The Canonical Pairing</h3>
+<p><strong>Theorem (the canonical pairing).</strong> Let $A$ be a $\mathrm{C}^{*}$-sesquialgebra over $(\mathbb{C},\varsigma)$ and let $s(x,y) = y^{*}x$, the universal $A$-valued form $\Psi$ of <em>Hermitian Forms on a Sesquialgebra</em>, §<em>The Reduction to the Scalars</em>. Then $s$ is a Hermitian positive semi-definite $A$-valued sesquilinear map in the layer's convention, with</p>
+<p>$$
+s(x,x) = x^{*}x, \qquad \lVert s(x,x)\rVert = \lVert x\rVert^{2}, \qquad \lVert s(x,y)\rVert \leq \lVert x\rVert\lVert y\rVert ,
+$$</p>
+<p>its radical is zero, because $y^{*}x = 0$ at $y = x$ gives $x^{*}x = 0$ and hence $x = 0$, and its scalar reductions along the positive functionals are the conjugates of their pairings, $f(y^{*}x) = \overline{f(x^{*}y)} = \varsigma(h_{f}(x,y))$.</p>
+<p><em>Proof.</em> The two slot rules are $s(\lambda x,y) = y^{*}(\lambda x) = \lambda\,s(x,y)$ and $s(x,\lambda y) = (\lambda y)^{*}x = \varsigma(\lambda)s(x,y)$, which is the layer's convention; the map is Hermitian, $s(y,x) = x^{*}y = (y^{*}x)^{*} = s(x,y)^{*}$; it is positive, $s(x,x) = x^{*}x \geq 0$ in the $\mathrm{C}^{*}$-order; its diagonal has $\lVert s(x,x)\rVert = \lVert x^{*}x\rVert = \lVert x\rVert^{2}$ by the $\mathrm{C}^{*}$-identity, so the bound of the theorem above is the constant one; and the radical vanishes because $y^{*}x = 0$ for $y = x$ is $x^{*}x = 0$, which forces $x = 0$ in a $\mathrm{C}^{*}$-algebra. The pairing $h_{f}$ of <em>States and Positive Functionals on a Topological Sesquialgebra</em>, §<em>The Sesquilinear Pairing</em>, reads the same form in the Hilbert convention, conjugate-linear in the first slot, $h_{f}(x,y) = f(x^{*}y) = \varsigma(f(y^{*}x))$. $\square$</p>
+<p><strong>Remark (the scalar theory of the layer is the reducible part of the operator theory).</strong> The theorem is the sense in which the scalar forms of the layer, which are the reductions $h_{\varphi}(x,y) = \varphi(y^{*}x)$ of <em>The Sesquilinear Form and the Conjugation</em>, are the scalar readings of the one $A$-valued form $\Psi(x,y) = y^{*}x$; the inequality of this article is the common inequality of the two readings, and the operator theory of the two forms is <em>Adjoints of Bounded Sesquilinear Operators</em> and <em>The Adjoint of the Bounded Conjugate Left Multiplication</em>.</p>
+<h2 id="the-collapse-at-the-trivial-involution">The Collapse at the Trivial Involution</h2>
+<p><strong>Theorem (the collapse).</strong> Let $\varsigma = \mathrm{id}$, so that $R = k$ is an ordered field and the sesquilinear maps are $k$-bilinear. Then the Cauchy–Schwarz inequality reads</p>
+<p>$$
+s(x,y)^{2} \leq s(x,x)\,s(y,y)
+$$</p>
+<p>for a positive semi-definite symmetric bilinear form, the modulus is the absolute value, the seminorm is the square root of the diagonal, the null set is the radical, and the equality case is proportionality modulo the radical. The article is then the classical Cauchy–Schwarz inequality of a positive semi-definite symmetric bilinear form, and its instance on a Euclidean space is the scalar theory of <em>Bilinear Forms</em> and <em>Quadratic Forms and Polarisation</em>.</p>
+<p><em>Proof.</em> Each statement is the corresponding statement above read at $\varsigma = \mathrm{id}$: the Hermitian property is the symmetry, the modulus square is the square, and the two slots carry the same scalars. $\square$</p>
+<p><strong>Remark (which statements are sesquilinear).</strong> The inequality, the seminorm, the quotient and the equality case hold in both kinds and are not sesquilinear statements; the sesquilinear content is the presence of two slots with different scalar rules, which is what makes the inequality read $\varsigma(s(x,y))s(x,y)$ rather than $s(x,y)^{2}$, the degenerate case require the vanishing of both the real and the imaginary part of $s(x,y)$, and the modulus $\lvert s(x,y)\rvert = (s(x,y)\varsigma(s(x,y)))^{1/2}$ appear in the bound.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-pairing-of-a-positive-functional">The Pairing of a Positive Functional</h3>
+<p><strong>Example (the functional pairing).</strong> Let $f$ be a positive functional on a unital $\mathrm{C}^{*}$-sesquialgebra and let $s(x,y) = f(y^{*}x)$. The form is Hermitian and positive semi-definite, its diagonal is $f(x^{*}x)$, the inequality is $\lvert f(y^{*}x)\rvert^{2} \leq f(x^{*}x)f(y^{*}y)$, the seminorm is $p(x) = f(x^{*}x)^{1/2}$, its null set is the left ideal $N_{f}$ of the functional, and the quotient is the inner product space whose completion carries the GNS representation. The example is the model of the article and is developed as <em>States and Positive Functionals on a Topological Sesquialgebra</em>, §<em>The Cauchy–Schwarz Inequality and the Null Space</em>; the continuity there is free with $\lVert f\rVert = f(1)$.</p>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p><strong>Example (the Frobenius form).</strong> On $A = M_{n}(\mathbb{C})$ with the trace form $s(X,Y) = \operatorname{tr}(XY^{*})$ the form is Hermitian, positive definite and nondegenerate, the inequality is $\lvert\operatorname{tr}(XY^{*})\rvert^{2} \leq \operatorname{tr}(XX^{*})\operatorname{tr}(YY^{*})$, which is the Cauchy–Schwarz inequality for the Frobenius inner product, and the seminorm is the Frobenius norm whose boundedness is the continuity of the form with constant one, <em>The Norm Defined by a Form</em>, §<em>The Matrix Algebra</em>. The example is the definite model in which the inequality is sharp and the continuity is free.</p>
+<h3 id="the-biquaternion-algebra">The Biquaternion Algebra</h3>
+<p><strong>Example (the definite and the indefinite forms).</strong> On the biquaternion algebra $\mathbb{B}$ the complex sesquilinear form</p>
+<p>$$
+h(\tilde{P},\tilde{Q}) = \operatorname{Sc}(\tilde{P}\tilde{Q}^{*}) = \sum_\mu P_\mu\,\varsigma(Q_\mu)
+$$</p>
+<p>is Hermitian, compatible, nondegenerate and positive definite, so the inequality holds for it with the diagonal $\sum_\mu\lvert Q_\mu\rvert^{2}$ and the constant one, the seminorm being the Euclidean norm of <em>The Norm Defined by a Form</em>, §<em>The Biquaternion Trace Form</em>. The quaternion sesquilinear pairing $\operatorname{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})$, of signature $(2,6)$, is indefinite, and for it the inequality <strong>fails</strong>: it is the caution of <em>The Indefinite Case and the Signature</em>, §<em>The Biquaternion Caution</em>, and the example separates the positive semi-definite hypothesis of the article from the Hermitian one. The two forms are the forms of <em>The Four Pairings of the Biquaternion Algebra</em> and <em>The Form on the Biquaternion Algebra as a Sesquilinear Form</em>.</p>
+<h3 id="the-unbounded-positive-form">The Unbounded Positive Form</h3>
+<p><strong>Example (positivity without continuity).</strong> The rank-one form $s(p,q) = \varphi(p)\varsigma(\varphi(q))$ of the unbounded functional $\varphi(x^{n}) = n!$ on $\mathbb{C}[x]$ with the supremum norm is the witness of the article: it is positive semi-definite and Hermitian with the diagonal $s(p,p) = \lvert\varphi(p)\rvert^{2}$, and the diagonal is unbounded on the unit ball, so the form is not continuous and the article's inequality has no constant. The example is the counterpart, for a general positive sesquilinear map, of the remark that the boundedness of a positive functional on a Banach sesquialgebra is not automatic.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian <strong>positive</strong> sesquilinear map satisfies the Cauchy–Schwarz inequality without any definiteness assumption: with values in the base it reads $\varsigma(s(x,y))s(x,y) \leq s(x,x)s(y,y)$ in the fixed field, equivalently $\lvert s(x,y)\rvert^{2} \leq s(x,x)s(y,y)$, and it is proved by translating one argument by $\mu = s(x,y)/s(y,y)$ and using that the translated diagonal $s(x,x) - \lvert s(x,y)\rvert^{2}/s(y,y)$ is $\geq 0$; the case $s(y,y) = 0$ is not exceptional, the translated quadratic in a real parameter forcing $s(x,y) = 0$, so the neutral element lies in the radical. The inequality is an equality exactly for the pairs dependent modulo the radical, so the definite case of <em>The Norm Defined by a Form</em> is the sharp case of the general one. The <strong>seminorm</strong> $p(x) = s(x,x)^{1/2}$ has the triangle inequality from the inequality itself, $\lvert s(x,y)\rvert \leq p(x)p(y)$, and its null set is the <strong>radical</strong>, which is why the positive semi-definite form that is not definite defines a seminorm and the definite quotient is an inner product whose completion is a Hilbert space; the identification of the null set with the radical is <em>Positivity and the Positive Cone of a Hermitian Form</em>, §<em>The Null Set and the Radical</em>, and it uses the inequality of this article. The <strong>passage from positivity to continuity</strong> is the reduction of the continuity of the map to the boundedness of the single function $s(x,x)$ on the unit ball, with $\lVert s\rVert = \sup_{\lVert x\rVert \leq 1}s(x,x)$; that boundedness is free in the definite case with constant one, free for the canonical pairing $s(x,y) = y^{*}x$ of a $\mathrm{C}^{*}$-sesquialgebra where $\lVert s(x,x)\rVert = \lVert x\rVert^{2}$, free for a positive functional on a unital $\mathrm{C}^{*}$-algebra where the bound is $f(1)$, and <strong>not</strong> free in general, the rank-one form of an unbounded functional on $\mathbb{C}[x]$ with the supremum norm being the witness that positivity alone does not bound the diagonal. For values in a $\mathrm{C}^{*}$-algebra the scalar reductions along the states reduce the inequality to the scalar case and give $\lVert s(x,y)\rVert^{2} \leq \lVert s(x,x)\rVert\lVert s(y,y)\rVert$, with the sharper algebraic form $s(y,x)s(x,y) \leq \lVert s(x,x)\rVert s(y,y)$ in the module case of <em>Hilbert and $\mathrm{C}^{*}$-Modules</em>. At $\varsigma = \mathrm{id}$ the inequality is the classical one for a positive semi-definite symmetric bilinear form, and the sesquilinear content is the two slot rules, the degenerate case and the modulus. The examples are the pairing of a positive functional, the Frobenius form, the definite and the indefinite forms on the biquaternion algebra, and the unbounded positive form.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$s(x,y)$, $s(y,x) = \varsigma(s(x,y))$</td>
+<td>a Hermitian sesquilinear map with values in the base; the exchange conjugates the value</td>
+</tr>
+<tr>
+<td>$s(\lambda x,y) = \lambda s(x,y)$, $s(x,\lambda y) = \varsigma(\lambda)s(x,y)$</td>
+<td>the two slot rules; linear in the first, semilinear in the second</td>
+</tr>
+<tr>
+<td>$s(x,x) \in k$</td>
+<td>the diagonal, in the fixed field; $\geq 0$ for a positive map</td>
+</tr>
+<tr>
+<td>$\varsigma(s(x,y))s(x,y) \leq s(x,x)s(y,y)$</td>
+<td>the Cauchy–Schwarz inequality, no definiteness assumed</td>
+</tr>
+<tr>
+<td>$s(x-\mu y,x-\mu y) = s(x,x) - \lvert s(x,y)\rvert^{2}/s(y,y)$, $\mu = s(x,y)/s(y,y)$</td>
+<td>the translated diagonal with which the inequality is proved</td>
+</tr>
+<tr>
+<td>$s(y,y) = 0 \Rightarrow s(x,y) = 0$</td>
+<td>the degenerate case, and the containment of the neutral element in the radical</td>
+</tr>
+<tr>
+<td>equality $\iff$ dependent modulo the radical</td>
+<td>the equality case; proportionality in the definite case</td>
+</tr>
+<tr>
+<td>$p(x) = s(x,x)^{1/2}$, $\lvert s(x,y)\rvert \leq p(x)p(y)$</td>
+<td>the seminorm of the form and the inequality as its triangle inequality</td>
+</tr>
+<tr>
+<td>$\{s(x,x) = 0\} = \mathrm{rad}(s)$</td>
+<td>the null set is the radical; the seminorm is a norm exactly on the definite quotient</td>
+</tr>
+<tr>
+<td>$\lVert s\rVert = \sup_{\lVert x\rVert \leq 1}s(x,x)$</td>
+<td>continuity is the boundedness of the diagonal, for a positive map</td>
+</tr>
+<tr>
+<td>$\lVert s(x,y)\rVert^{2} \leq \lVert s(x,x)\rVert\lVert s(y,y)\rVert$</td>
+<td>the $\mathrm{C}^{*}$-valued inequality, by reduction along the states</td>
+</tr>
+<tr>
+<td>$s(y,x)s(x,y) \leq \lVert s(x,x)\rVert s(y,y)$</td>
+<td>the sharp algebraic form, in the module case</td>
+</tr>
+<tr>
+<td>$s(x,y) = y^{*}x$, $\lVert s(x,x)\rVert = \lVert x\rVert^{2}$</td>
+<td>the canonical $A$-valued pairing, continuous by the $\mathrm{C}^{*}$-identity</td>
+</tr>
+<tr>
+<td>$s(p,q) = \varphi(p)\varsigma(\varphi(q))$, $\varphi(x^{n}) = n!$</td>
+<td>the unbounded positive form: positivity without continuity</td>
+</tr>
+<tr>
+<td>$\varsigma = \mathrm{id}$</td>
+<td>the collapse: $s(x,y)^{2} \leq s(x,x)s(y,y)$, the classical symmetric case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Gérard J. Murphy, <em>$\mathrm{C}^{*}$-Algebras and Operator Theory</em> (Academic Press, 1990), for the positivity, the Cauchy–Schwarz inequality of a positive functional and the GNS construction.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the positive forms on a normed space and the boundedness questions.</li>
+<li>E. Christopher Lance, <em>Hilbert $\mathrm{C}^{*}$-Modules: A Toolkit for Operator Algebraists</em> (Cambridge University Press, 1995), for the $\mathrm{C}^{*}$-valued inner products and their Cauchy–Schwarz inequality.</li>
+<li>William L. Paschke, <em>Inner product modules over $B^{*}$-algebras</em> (Transactions of the American Mathematical Society 182, 1973), for the $\mathrm{C}^{*}$-valued Cauchy–Schwarz inequality and the module case.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em>, 2nd edition (Springer, 1990), for the scalar Cauchy–Schwarz inequality, its equality case and the completion of an inner product space.</li>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for the positive semi-definite forms over an ordered field with involution and their radical.</li>
+<li>Konrad Schmüdgen, <em>Unbounded Self-Adjoint Operators on Hilbert Space</em> (Springer, 2012), for the positive forms that are not bounded and the operator theory they support.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
