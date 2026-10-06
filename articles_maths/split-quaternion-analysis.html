@@ -113,9 +113,9 @@ $$</p>
 <p><strong>Proof.</strong> The generators of $\mathbb{H}_{\mathrm{s}}$ have the sign pattern $(-,+,+)$ and span a three-dimensional subspace, so they generate the Clifford algebra of the restricted form, not of the form on the algebra; the operator of the (2,2) form requires four anticommuting generators.</p>
 <p><strong>Remark (One Variable and Several Variables).</strong> In the one-variable tradition of <em>Quaternion Analysis</em> the derivative is taken with respect to the full variable and the operator is the Cauchy–Riemann operator of the ambient form; in the several-variable tradition of the Part III articles the operator is a fixed first-order system. On this algebra the second reading is the only one available: the first leads to the wave operator above, whose theory is hyperbolic.</p>
 <h2 id="power-series-and-analytic-functions">Power Series and Analytic Functions</h2>
-<p><strong>Definition.</strong> A <strong>power series</strong> with coefficients in the algebra is a series $\sum_{n \geq 0} q_2_n \tilde q^n$ with $q_2_n \in \mathbb{H}_{\mathrm{s}}$; it is <strong>absolutely convergent</strong> at $\tilde q$ when $\sum |q_2_n|\,|\tilde q|^n$ converges.</p>
-<p><strong>Theorem (Convergence of Power Series).</strong> A power series converges absolutely on the open ball of radius $R = 1/\limsup |q_2_n|^{1/n}$ and defines a continuous function there; the series converges if and only if its four coordinate series converge, and the value is the corresponding coordinate limit. In particular the exponential, the logarithm and the elementary series of <em>Split-Quaternion Elementary Functions</em> are defined on their balls of convergence in the coordinate sense.</p>
-<p><strong>Proof.</strong> Absolute convergence follows from the bound $|q_2_n \tilde q^n| \leq (\sqrt{2})^n|q_2_n||\tilde q|^n$, which reduces to the real majorant series; continuity follows from the continuity of the algebraic operations, and the coordinate statement from the convergence of the four coordinate series.</p>
+<p><strong>Definition.</strong> A <strong>power series</strong> with coefficients in the algebra is a series $\sum_{n \geq 0} q_n \tilde q^n$ with $q_n \in \mathbb{H}_{\mathrm{s}}$; it is <strong>absolutely convergent</strong> at $\tilde q$ when $\sum |q_n|\,|\tilde q|^n$ converges.</p>
+<p><strong>Theorem (Convergence of Power Series).</strong> A power series converges absolutely on the open ball of radius $R = 1/\limsup |q_n|^{1/n}$ and defines a continuous function there; the series converges if and only if its four coordinate series converge, and the value is the corresponding coordinate limit. In particular the exponential, the logarithm and the elementary series of <em>Split-Quaternion Elementary Functions</em> are defined on their balls of convergence in the coordinate sense.</p>
+<p><strong>Proof.</strong> Absolute convergence follows from the bound $|q_n \tilde q^n| \leq (\sqrt{2})^n|q_n||\tilde q|^n$, which reduces to the real majorant series; continuity follows from the continuity of the algebraic operations, and the coordinate statement from the convergence of the four coordinate series.</p>
 <p><strong>Corollary (No Identity Theorem).</strong> Two convergent power series that agree on an open set need not agree on their common domain; the identity theorem fails.</p>
 <p><strong>Proof.</strong> The algebra has zero divisors, so a nonzero element can act as zero on a factor: if $\tilde r \neq 0$ has $\tilde r^2 = 0$, then the function $\tilde q \mapsto \tilde r(\tilde q - q_0)$ vanishes on the set $\tilde q - q_0 \in \tilde r\mathbb{H}_{\mathrm{s}}$, which contains a point but not an open set, while $\tilde q \mapsto \tilde r(\tilde q-q_0)^2$ vanishes on a larger set; the standard connectedness argument of the identity theorem requires a product ring with no nilpotents. The failure is the nilpotent phenomenon of <em>Split-Quaternion Zero Divisors</em>, §<em>Nonzero Nilpotents</em>.</p>
 <h2 id="singularities">Singularities</h2>
@@ -255,7 +255,7 @@ $$</p>
 <td><em>Split-Quaternion Algebra</em></td>
 </tr>
 <tr>
-<td>power series $\sum q_2_n \tilde q^n$</td>
+<td>power series $\sum q_n \tilde q^n$</td>
 <td>convergence on a ball, evaluation coordinatewise</td>
 <td>this article</td>
 </tr>

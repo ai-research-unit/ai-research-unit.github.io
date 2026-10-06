@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unitary Operators of a Banach Sesquialgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unitary-operators-of-a-banach-sesquialgebra"><strong>Unitary Operators of a Banach Sesquialgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The operators of a sesquialgebra that preserve its product form the group of the structure, and the present article is the entry of the topological layer that develops it. The menu names them the unitary operators of the Banach sesquialgebra; the article fixes the class and shows that the name is a historical one, distinct from the unitary operators of the algebraic layer, which are the operators whose adjoint is their inverse. The product-preserving operators are the bounded operators $T$ with</p>
+<p>$$
+T(x\star y)=Tx\star Ty,
+$$</p>
+<p>of one of the two parities, and the class is a group under composition once the operators are inverted, carrying the norm topology of <em>Bounded Operators on a Sesquialgebra</em>. The article proves the structure theorem that identifies them with the unital $*$-endomorphisms of the algebra, splits the group by parity, shows that it is a topological group with the norm topology, and reads its relation to the unitary group $U(A)$ of the elements through the inner $*$-automorphisms $\alpha_{u}(x)=uxu^{*}$.</p>
+<p>Two facts organise the article. First, a bounded operator of one of the two parities preserving the derived product and fixing the unit is exactly a unital $*$-endomorphism of the algebra — multiplicativity plus the commutation with the involution — and this holds for the conjugate-linear operators as well, where the scalar action is carried through $\varsigma$; the identification is the topological form of the proposition of <em>The Unitary Operators of a Sesquialgebra</em>. Second, the invertible ones form a group $G$, closed in the group of invertible bounded operators, with the norm topology a topological group; the linear ones are a subgroup $G_{0}$ of index at most two, the conjugate-linear ones being the second coset, and the inner $*$-automorphisms of the unitary elements form a closed subgroup of $G_{0}$ under the map $u\mapsto\alpha_{u}$. The product-preserving condition and the unitary condition of the algebraic layer are independent: the left multiplication by a unitary element is antiunitary and not product-preserving, and a product-preserving operator is unitary exactly when it preserves the trace of the reduced form.</p>
+<p><strong>The boundaries.</strong> The unitary condition $T^{\dagger}=T^{-1}$, the product-preserving condition and their separation are <em>The Unitary Operators of a Sesquialgebra</em>; the unitary elements and their inner $*$-automorphisms are <em>Units and the Unitary Elements</em>; the bounded operators, the two parities and the graded algebra are <em>Bounded Operators on a Sesquialgebra</em>; the one-sided operators are <em>The Bounded Left and Right Multiplication Operators of a Sesquialgebra</em>; the adjoint and the reduction that makes it exist are <em>Adjoints of Bounded Sesquilinear Operators</em>; and the analytic structure of the group, its connectedness and its homotopy, is <em>The Topological J*-Algebra</em> and the later spectral entries. This article stops before the spectral theory.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ with the continuous involution $\varsigma$, and $A$ is a <strong>normed sesquialgebra</strong> of <em>Banach Sesquialgebras</em>: the standard example $x\star y=xy^{*}$, submultiplicative norm, isometric involution $\lVert x^{*}\rVert=\lVert x\rVert$ and $\lVert1\rVert=1$. The bounded $\mathbb{K}$-linear operators are $B(A)$ and the bounded $\varsigma$-semilinear ones $B^{\varsigma}(A)$, of <em>Bounded Operators on a Sesquialgebra</em>; the invertible elements of $A$ are $A^{\times}$ and the <strong>unitary elements</strong> are $U(A)=\{u:uu^{*}=u^{*}u=1\}$, of <em>Units and the Unitary Elements</em>; the inner $*$-automorphism of a unitary $u$ is $\alpha_{u}(x)=uxu^{*}$. The derived product is $x\star y=xy^{*}$ and the left multiplication is $L_{a}(x)=ax$.</p>
+<h2 id="the-operators-that-preserve-the-product">The Operators that Preserve the Product</h2>
+<h3 id="the-structure-theorem">The Structure Theorem</h3>
+<p><strong>Definition.</strong> A bounded operator $T$ of one of the two parities (so $T\in B(A)$ or $T\in B^{\varsigma}(A)$) <strong>preserves the product</strong> when</p>
+<p>$$
+T(x\star y)=Tx\star Ty\qquad\text{for all }x,y\in A,
+$$</p>
+<p>and is <strong>multiplicative</strong> when moreover $T(1)=1$.</p>
+<p><strong>Theorem (the identification with the unital $*$-maps).</strong> Let $T$ be a bounded operator of one of the two parities with $T(1)=1$. Then $T$ preserves the product if and only if $T$ is a unital $*$-endomorphism of the corresponding parity:</p>
+<p>$$
+T(xy)=Tx\,Ty,\qquad T(y^{*})=(Ty)^{*} .
+$$</p>
+<p>For a $\mathbb{K}$-linear $T$ these are the ordinary unital $*$-endomorphisms, and for a $\varsigma$-semilinear $T$ they are the $\varsigma$-semilinear ones, with $T(\lambda y)=\varsigma(\lambda)Ty$.</p>
+<p><strong>Proof.</strong> If $T$ is a unital $*$-map then $T(xy^{*})=Tx\,T(y^{*})=Tx\,(Ty)^{*}=Tx\star Ty$. Conversely the identity is $T(xy^{*})=Tx(Ty)^{*}$. At $y=1$ it reads $T(x)=Tx(T1)^{*}=Tx$, and at $x=1$ it reads $T(y^{*})=T1\,(Ty)^{*}=(Ty)^{*}$, which is the commutation with the involution; then $T(xy)=T\bigl(x(y^{*})^{*}\bigr)=Tx\,(T(y^{*}))^{*}=Tx\,Ty$, which is the multiplicativity. The parity statements are the scalar rules, which are part of the definition of the two classes. $\square$</p>
+<p><strong>Remark.</strong> The theorem is the topological form of the proposition of <em>The Unitary Operators of a Sesquialgebra</em>, §<em>The Operators that Preserve the Product</em>, and the boundedness hypothesis is the only addition: a unital $*$-endomorphism of a normed algebra is not bounded in general, and the article restricts to the bounded ones, which are the operators of the layer. The derived product and the associative product carry the same structure, by the identity $x\star y=xy^{*}$, so the two readings of the theorem are the same statement.</p>
+<h3 id="the-parities">The Parities</h3>
+<p><strong>Proposition (the product of two).</strong> The composite of two multiplicative operators is multiplicative, and the parity is multiplicative: the composite of two linear ones or of two conjugate-linear ones is linear, and of a linear and a conjugate-linear one is conjugate-linear. Consequently the multiplicative operators of one of the two parities form a $\mathbb{Z}/2$-graded monoid, in which the linear part is a submonoid and the conjugate-linear part a coset.</p>
+<p><strong>Proof.</strong> For the product, $ST(x\star y)=S(Tx\star Ty)=S(Tx)\star S(Ty)$ and $ST(1)=S(1)=1$; the parity is the parity of the composite of two maps, even for equal parities and odd for different ones. $\square$</p>
+<p><strong>Remark.</strong> The conjugate-linear multiplicative operators are the $\varsigma$-semilinear unital $*$-endomorphisms, and their existence is a genuine datum of the layer: over $\mathbb{R}$ with $\varsigma=\mathrm{id}$ every operator is linear and the coset is empty, while over $\mathbb{C}$ the conjugation of the matrix model provides one, as the worked case below shows.</p>
+<h2 id="the-group-of-the-product-preserving-operators">The Group of the Product-Preserving Operators</h2>
+<h3 id="the-group-and-its-topology">The Group and its Topology</h3>
+<p><strong>Theorem (the group).</strong> The invertible multiplicative bounded operators form a group $G$; $G$ is closed in the group $GL(B(A))$ of the invertible bounded operators, and with the topology induced by the operator norm it is a topological group. The linear operators form a subgroup $G_{0}$ of index at most two, which is a normal subgroup and is the kernel of the parity homomorphism $G\to\mathbb{Z}/2$; the conjugate-linear operators are the second coset when it is nonempty.</p>
+<p><strong>Proof.</strong> The multiplicative operators are closed under composition and contain the identity, and the inverse of an invertible one is multiplicative: from $T(x\star y)=Tx\star Ty$ and the invertibility, applying $T^{-1}$ gives $x\star y=T^{-1}(Tx\star Ty)$, and writing $Tx=u$, $Ty=v$ gives $T^{-1}(u\star v)=T^{-1}u\star T^{-1}v$, which is the product-preservation of $T^{-1}$. The set of product-preserving operators is closed in $B(A)$, being the intersection of the closed sets $\{T:T(x\star y)=Tx\star Ty\}$ for $x,y$ varying over a generating set, and $GL(B(A))$ is open in the Banach algebra $B(A)$ with inversion continuous by the Neumann series, <em>Bounded Operators on a Sesquialgebra</em>; a closed subgroup of a topological group is a topological group with the subspace topology. The parity is a homomorphism onto a subgroup of the two-element group with kernel $G_{0}$, by the proposition above, whence the index and the normality. $\square$</p>
+<p><strong>Remark.</strong> The group $G_{0}$ is the group of the <strong>bounded unital $*$-automorphisms</strong> of the sesquialgebra. Its elements are isometries only under an additional hypothesis on the norm: a bounded automorphism has $\lVert T\rVert\ge1$ and $\lVert T^{-1}\rVert\ge1$, and it is isometric exactly when both are one. The article proves the topological group structure and not the metric geometry, which is the subject of the form category.</p>
+<h3 id="the-relation-to-the-unitary-group-of-the-elements">The Relation to the Unitary Group of the Elements</h3>
+<p><strong>Theorem (the inner automorphisms).</strong> For $u\in U(A)$ the map $\alpha_{u}(x)=uxu^{*}$ is a bounded unital $*$-automorphism, hence an element of $G_{0}$, and it is isometric with $\alpha_{u}^{-1}=\alpha_{u^{*}}$. The assignment $u\mapsto\alpha_{u}$ is a continuous homomorphism of topological groups</p>
+<p>$$
+U(A)\longrightarrow G_{0},\qquad \alpha_{u}\alpha_{v}=\alpha_{uv},
+$$</p>
+<p>whose kernel is the group $U(A)\cap Z(A)$ of the central unitary elements; its image is the normal subgroup $\operatorname{Inn}(A)$ of the inner $*$-automorphisms, and $G_{0}/\operatorname{Inn}(A)$ is the group of the outer $*$-automorphisms.</p>
+<p><strong>Proof.</strong> The multiplicativity of $\alpha_{u}$ is $u(xy)u^{*}=(uxu^{*})(uyu^{*})$, and its commutation with the involution is $(uxu^{*})^{*}=u x^{*}u^{*}$ because $u^{*}u=uu^{*}=1$; the unit is fixed. The bound is $\lVert uxu^{*}\rVert\le\lVert x\rVert$ and the inverse is $\alpha_{u^{*}}$, so $\alpha_{u}$ is isometric. The homomorphism law is $\alpha_{u}\alpha_{v}(x)=uvxv^{*}u^{*}=\alpha_{uv}(x)$, the kernel is the set of $u$ with $uxu^{*}=x$ for all $x$, that is the central unitaries, and the continuity is the continuity of the product and of the involution in the norm. The normality of the image is the conjugation law $\alpha_{v}\alpha_{u}\alpha_{v}^{-1}=\alpha_{vuv^{*}}$, and $uvu^{*}\in U(A)$ for unitary $u,v$. $\square$</p>
+<p><strong>Remark.</strong> The image of $u\mapsto\alpha_{u}$ is the group of the inner automorphisms of the monoid of units, and it is the part of $G_{0}$ that the algebra supplies without an additional hypothesis. Over a field the unitary group is the group of the elements of modulus one with the circle topology, and $\alpha_{u}$ is nontrivial on a noncentral $u$; for the complex matrices the map is the quotient $U(n)\to U(n)/U(1)=\mathrm{PU}(n)$, and the Skolem–Noether theorem of <em>Inner Automorphisms of a Ring</em> makes every $*$-automorphism inner, so $G_{0}=\mathrm{PU}(n)$ there.</p>
+<h2 id="the-relation-to-the-unitary-operators">The Relation to the Unitary Operators</h2>
+<p><strong>Theorem (the two classes are different).</strong> A multiplicative operator $T$ is unitary in the sense of <em>The Unitary Operators of a Sesquialgebra</em>, $T^{\dagger}=T^{-1}$, exactly when it also preserves the reduction of the pairing by a continuous central functional $\tau$,</p>
+<p>$$
+\tau\circ T=\tau ,
+$$</p>
+<p>the adjoint being taken for the reduced form $h_{\tau}$ of <em>Adjoints of Bounded Sesquilinear Operators</em>. In particular every inner $*$-automorphism $\alpha_{u}$ of a unitary element is unitary, and the left multiplication $L_{u}$ of a unitary element is antiunitary and is <strong>not</strong> product-preserving.</p>
+<p><strong>Proof.</strong> For a multiplicative $T$ one has $\varphi(Tx,Ty)=\tau\bigl(Tx\,(Ty)^{*}\bigr)=\tau\bigl(T(xy^{*})\bigr)=(\tau\circ T)(xy^{*})$, which equals $\varphi(x,y)$ for all $x,y$ exactly when $\tau\circ T=\tau$, by the nondegeneracy of the reduced form; this is the proposition of <em>The Unitary Operators of a Sesquialgebra</em>, §<em>The Operators that Preserve the Product</em>. For the inner automorphism, $\tau\alpha_{u}(x)=\tau(uxu^{*})=\tau(xu^{*}u)=\tau(x)$ by the cyclicity of $\tau$ and $u^{*}u=1$. The left multiplication $L_{u}$ satisfies $L_{u}^{\dagger}=S_{1,u}=L_{u}^{-1}$ for unitary $u$, by <em>The Adjoint of the Bounded Conjugate Left Multiplication</em>, so it is antiunitary; it is not product-preserving, because $L_{u}(x\star y)=u\,y\,x^{*}$ while $L_{u}x\star L_{u}y=u\,x^{*}\,y\,u^{*}$, which differ unless $x$, $y$ and $u$ commute suitably. $\square$</p>
+<p><strong>Remark (the two groups).</strong> The group $G_{0}$ of the bounded $*$-automorphisms and the group of the unitary operators of the algebraic layer are therefore different subgroups of $GL(B(A))$, meeting in the $*$-automorphisms that preserve the functional $\tau$: the first preserves the product, the second preserves the reduced form, and an operator of the second kind need not be multiplicative. The left multiplication by a unitary element is the witness: antiunitary, hence in the second group, and not multiplicative, hence outside the first.</p>
+<h2 id="the-collapse-and-the-worked-cases">The Collapse and the Worked Cases</h2>
+<p><strong>Theorem (the bilinear collapse).</strong> Put $\varsigma=\mathrm{id}$ and $*=\mathrm{id}$, so that $A$ is a commutative normed algebra and the derived product is the ordinary product. Then the conjugate-linear coset is empty, the group is $G=G_{0}=\operatorname{Aut}(A)$ of the bounded unital automorphisms of the algebra, and the article reduces to the automorphism group of a commutative Banach algebra.</p>
+<p><strong>Proof.</strong> With $\varsigma=\mathrm{id}$ every bounded operator is $\mathbb{K}$-linear, so the parity coset is empty and $G=G_{0}$; with $*=\mathrm{id}$ the product is the ordinary one and the $*$-endomorphisms are the automorphisms. The topological group statement is that of the bounded automorphism group, and the inner automorphisms of the unitary elements are the inner automorphisms of the unit group. $\square$</p>
+<h3 id="the-complex-matrices">The Complex Matrices</h3>
+<p>Let $A=M_{n}(\mathbb{C})$ with the conjugate transpose and the operator norm. The multiplicative operators are the unital $*$-endomorphisms; by the Skolem–Noether theorem every $*$-automorphism is inner, $\alpha_{U}(X)=UXU^{*}$, so $G_{0}=\mathrm{PU}(n)=U(n)/U(1)$, a compact connected Lie group, and the inner map is the quotient of $U(n)$ by its centre. The conjugate-linear coset is nonempty: the entrywise conjugation $X\mapsto\overline{X}$ is a conjugate-linear unital $*$-endomorphism of order two, multiplicative and commuting with the conjugate transpose. (The transpose $X\mapsto X^{\mathsf{T}}$ is a $\mathbb{C}$-linear $*$-anti-automorphism — anti-multiplicative, hence not product-preserving — and it belongs to the algebraic layer and not to $G$.) The left multiplication by a unitary matrix is antiunitary and not multiplicative, the witness of the separation of the two classes.</p>
+<h3 id="the-finite-product-and-the-field">The Finite Product and the Field</h3>
+<p>For $A=\mathbb{K}^{n}$ with the termwise product, the involution $\varsigma$ acting on each coordinate and the norm $\max_{i}|x_{i}|$: a unital multiplicative operator sends a minimal idempotent $e_{i}$ to a minimal idempotent, so the multiplicative operators are the coordinate permutations and $G_{0}=S_{n}$, while for $\mathbb{K}=\mathbb{C}$ the entrywise conjugation is a conjugate-linear multiplicative operator adding the second coset, so $G=S_{n}\times\mathbb{Z}/2$ (over $\mathbb{R}$ the coset is empty and $G=S_{n}$). (A termwise product on a space of sequences is not unital, so the structure theorem is stated for the finite product and for the Banach sesquialgebras of the base entries.) For $A=\mathbb{C}$ the multiplicative operators are the identity and the conjugation, $G=\mathbb{Z}/2$ with $G_{0}$ trivial, the example of the smallest nontrivial parity coset.</p>
+<h2 id="summary">Summary</h2>
+<p>A bounded operator of one of the two parities preserving the derived product and fixing the unit is exactly a unital $*$-endomorphism of the corresponding parity, $T(xy)=Tx\,Ty$ and $T(y^{*})=(Ty)^{*}$; this holds for the conjugate-linear operators as well, where the scalar action is carried through $\varsigma$. The invertible ones form a group $G$, closed in the invertible bounded operators and, with the norm topology, a topological group; the linear ones form a normal subgroup $G_{0}$ of index at most two, the bounded unital $*$-automorphisms, with the conjugate-linear operators as the second coset. The unitary elements map continuously into $G_{0}$ by $u\mapsto\alpha_{u}$, $uxu^{*}$, with kernel the central unitaries and image the inner $*$-automorphisms, and for the complex matrices this is the quotient $U(n)\to\mathrm{PU}(n)$ with $G_{0}=\mathrm{PU}(n)$. The product-preserving condition and the unitary condition of the algebraic layer are independent: a product-preserving operator is unitary for the reduced form exactly when it preserves the central functional, and the left multiplication by a unitary element is antiunitary and not product-preserving. In the bilinear case the conjugate-linear coset is empty and the group is the bounded automorphism group of the commutative algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T(x\star y)=Tx\star Ty$</td>
+<td>the product-preserving condition</td>
+</tr>
+<tr>
+<td>$T(1)=1$</td>
+<td>the multiplicative condition</td>
+</tr>
+<tr>
+<td>$T(xy)=Tx\,Ty$, $T(y^{*})=(Ty)^{*}$</td>
+<td>the equivalent unital $*$-endomorphism form</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>the group of the invertible multiplicative bounded operators</td>
+</tr>
+<tr>
+<td>$G_{0}$</td>
+<td>the linear subgroup, the bounded unital $*$-automorphisms, of index at most two</td>
+</tr>
+<tr>
+<td>$\alpha_{u}(x)=uxu^{*}$</td>
+<td>the inner $*$-automorphism of a unitary element</td>
+</tr>
+<tr>
+<td>$U(A)\to G_{0}$, $u\mapsto\alpha_{u}$</td>
+<td>the continuous homomorphism with kernel $U(A)\cap Z(A)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Inn}(A)$</td>
+<td>the inner $*$-automorphisms, a normal subgroup of $G_{0}$</td>
+</tr>
+<tr>
+<td>$\tau\circ T=\tau$</td>
+<td>the condition that a multiplicative operator be unitary for the reduced form</td>
+</tr>
+<tr>
+<td>$L_{u}$</td>
+<td>antiunitary and not product-preserving, the witness of the separation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, volume 1 (Academic Press, 1983), for the group of invertible bounded operators, the Neumann series and the topological group structure.</li>
+<li>Jacques Dixmier, <em>C*-Algebras</em> (North-Holland, 1977), for the automorphism group of a $C^{*}$-algebra, the inner automorphisms and the group of the unitary elements.</li>
+<li>N. E. Wegge-Olsen, <em>K-Theory and C*-Algebras</em> (Oxford University Press, 1993), for the unitary group of a $C^{*}$-algebra and the quotient by the inner automorphisms, the model of the relation to $U(A)$.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the $*$-automorphisms and the $*$-anti-automorphisms of a ring with involution, the algebraic form of the structure theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

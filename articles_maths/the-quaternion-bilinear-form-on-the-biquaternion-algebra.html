@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Quaternion Bilinear Form on the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-quaternion-bilinear-form-on-the-biquaternion-algebra"><strong>The Quaternion Bilinear Form on the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra carries four scalar pairings, one to each of its four conjugations, and the <strong>quaternion bilinear form</strong> is the one built on the <em>natural</em> conjugation ${}^{\natural}$,</p>
+<p>$$
+\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}\!\left(\tilde P\,\tilde Q^{\natural}\right)=\sum_{\mu=0}^{3}P_\mu Q_\mu .
+$$</p>
+<p>Because ${}^{\natural}$ is $\mathbb{C}$-linear, the form is $\mathbb{C}$-<strong>bilinear</strong>: a scalar may be moved out of either argument, and no conjugation of a coefficient occurs. It is symmetric and non-degenerate, its diagonal is the biquaternion norm $N(\tilde Q)=\sum_\mu Q_\mu^2$ of <em>Biquaternion Norm and Invertibility</em>, and it is the polarisation of that quadratic form. This article is the entry point of the reading group <em>Topology on the Biquaternions as a Quaternionic Algebra over $\mathbb{C}$</em>; it defines the form, fixes its matrix and its quadratic space, records the multiplicativity that the norm inherits, and states the restriction to the six distinguished real subspaces once, in one table, whose development is <em>The Six Subspaces under the Quaternion Bilinear Form</em>.</p>
+<p>The metric development of the form is <em>Biquaternion Norm and Invertibility</em>, which owns the polarisation, the real forms with their signatures and the norm from the halves; the isotropic structure of the form is <em>The Isotropic Structure of the Quaternion Bilinear Form</em>; the projective picture of its null cone is <em>Biquaternion Topology</em>; and the Clifford reading of the quadratic space is <em>The Clifford Structure of the Biquaternion Algebra</em>. Nothing owned by those entries is re-derived here.</p>
+<p>Two warnings fix the boundary. First, this form is not the <strong>complex bilinear form</strong> $\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ of <em>The Complex Bilinear Form on the Biquaternion Algebra</em>: the two differ by the sign vector $\varepsilon=(1,-1,-1,-1)$ alone, they share the isometry group $O_4(\mathbb{C})$ and the realified signature $(4,4)$, and they are nevertheless different pairings, of Gram matrices $I_4$ and $D=\operatorname{diag}(1,-1,-1,-1)$. Second, the form must not be confused with the sesquilinear pairings built on ${}^{*}$ and on $\bar{\cdot}$, the <strong>Hermitian form</strong> <em>The Hermitian Form on the Biquaternion Algebra</em> and the <strong>Krein form</strong> <em>The Biquaternion Krein Form and Its Signature</em>, which are conjugate-linear in one argument and non-degenerate of other signatures; the four together are <em>The Four Pairings of the Biquaternion Algebra</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, and its natural conjugation is $\tilde Q^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$. The products are $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$. The real and imaginary parts of a coefficient are written $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, so that $\tilde Q=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$ on the eight real basis elements.</p>
+<h2 id="the-form-and-its-polarisation">The Form and its Polarisation</h2>
+<p><strong>Definition.</strong> The <strong>quaternion bilinear form</strong> is</p>
+<p>$$
+\langle\cdot,\cdot\rangle_{\natural}:\mathbb{B}\times\mathbb{B}\longrightarrow\mathbb{C},\qquad
+\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}\!\left(\tilde P\,\tilde Q^{\natural}\right)=\sum_{\mu=0}^{3}P_\mu Q_\mu .
+$$</p>
+<p><strong>Proposition (bilinearity, symmetry, non-degeneracy).</strong> The form is $\mathbb{C}$-bilinear, symmetric and non-degenerate; its Gram matrix in the coefficient basis is the identity $I_4$, of determinant $1$, so the coefficient basis is orthonormal.</p>
+<p><em>Proof.</em> The natural conjugation is $\mathbb{C}$-linear, $(\lambda\tilde P)^{\natural}=\lambda\tilde P^{\natural}$, so $\mathrm{Sc}(\tilde P\tilde Q^{\natural})$ is $\mathbb{C}$-linear in each argument. Symmetry is the identity $\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\mathrm{Sc}(\tilde Q\tilde P^{\natural})$, which holds because the scalar part is invariant under a cyclic permutation of a product. The Gram entries are $\langle e_\mu,e_\nu\rangle_{\natural}=\mathrm{Sc}(e_\mu e_\nu^{\natural})$: the diagonal entries are $\mathrm{Sc}(e_0e_0)=\mathrm{Sc}(e_k(-e_k))=\mathrm{Sc}(e_0)=1$, and an off-diagonal entry with $\mu\neq\nu$ is $\pm\mathrm{Sc}(e_\rho)$ for the third unit $\rho$, hence $0$. So $G=I_4$, invertible, and the form is non-degenerate. Verified on the four basis elements.</p>
+<p><strong>Proposition (the polarisation).</strong> The diagonal of the form is the biquaternion norm, $\langle\tilde Q,\tilde Q\rangle_{\natural}=N(\tilde Q)$, and the form is its polarisation,</p>
+<p>$$
+\langle\tilde P,\tilde Q\rangle_{\natural}=\tfrac{1}{2}\Bigl(N(\tilde P+\tilde Q)-N(\tilde P)-N(\tilde Q)\Bigr).
+$$</p>
+<p><em>Proof.</em> The diagonal is $\mathrm{Sc}(\tilde Q\tilde Q^{\natural})=\sum_\mu Q_\mu^2=N(\tilde Q)$ by the definition of the norm and the centrality of $\tilde Q\tilde Q^{\natural}$. The polarisation identity is the standard one for a symmetric bilinear form, and it is the identity displayed in <em>Biquaternion Norm and Invertibility</em>, §<em>The Polarisation and the Complex Quadratic Space</em>, where the complex quadratic space is developed. Verified on $100$ random pairs: the two sides agree.</p>
+<p><strong>Remark (the quadratic space).</strong> The form makes $\mathbb{B}$ a non-degenerate complex quadratic space $\mathbb{B}\cong\mathbb{C}^4$: its Witt index is $2$, since the totally isotropic plane $\mathbb{C}\{e_0+ie_2,\;e_1+ie_3\}$ is maximal, and its isometry group is $O_4(\mathbb{C})$, of complex dimension $6$ and real dimension $12$ – the same group as for the complex bilinear form, as the congruent coefficient matrices force. The development of the quadratic space, with the Clifford algebra it defines, is <em>Biquaternion Norm and Invertibility</em>; the Clifford reading is <em>The Clifford Structure of the Biquaternion Algebra</em>.</p>
+<h2 id="multiplicativity">Multiplicativity</h2>
+<p>The form inherits the multiplicativity of the norm, and the precise statement is worth fixing because the scalar that appears is the norm of the multiplier, once.</p>
+<p><strong>Proposition (the norm is multiplicative).</strong> For all $\tilde P,\tilde Q\in\mathbb{B}$,</p>
+<p>$$
+N(\tilde P\tilde Q)=N(\tilde P)\,N(\tilde Q),\qquad\text{equivalently}\qquad \langle\tilde P\tilde Q,\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P,\tilde P\rangle_{\natural}\,\langle\tilde Q,\tilde Q\rangle_{\natural}.
+$$</p>
+<p><em>Proof.</em> The natural conjugation is an anti-automorphism, $(\tilde P\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural}$, so $N(\tilde P\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q\tilde Q^{\natural}\tilde P^{\natural})$. The middle factor $\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0$ is a central scalar, so it may be moved out of the scalar part, giving $N(\tilde P\tilde Q)=N(\tilde Q)\,\mathrm{Sc}(\tilde P\tilde P^{\natural})=N(\tilde Q)N(\tilde P)$. Verified on $100$ random pairs.</p>
+<p><strong>Proposition (the scaling of the form).</strong> For every $a\in\mathbb{B}$ and all $\tilde P,\tilde Q$,</p>
+<p>$$
+\langle a\tilde P,a\tilde Q\rangle_{\natural}=N(a)\,\langle\tilde P,\tilde Q\rangle_{\natural},
+\qquad
+\langle\tilde P a,\tilde Q a\rangle_{\natural}=N(a)\,\langle\tilde P,\tilde Q\rangle_{\natural}.
+$$</p>
+<p>In particular left multiplication by $a$ is an isometry of the form exactly when $N(a)=1$, and so is right multiplication.</p>
+<p><em>Proof.</em> The first identity is the polarisation of the multiplicativity of the norm applied to $a\tilde P$ and $a\tilde Q$; the second is the first with the factors in the other order, using $\mathrm{Sc}(\tilde P a\tilde Q^{\natural}a^{\natural})=\mathrm{Sc}(a^{\natural}\tilde P a\tilde Q^{\natural})$ and the centrality of $a^{\natural}a=N(a)$. Verified on $100$ random triples. The scalar $N(a)$ is central, so it is the same on the left and on the right; the identity is the one stated in <em>Biquaternion Norm and Invertibility</em>, §<em>Multiplicativity</em>.</p>
+<p><strong>Corollary (the isometry slice of the multiplications).</strong> The elements whose multiplication preserves the form are exactly the elements of norm one; they form the non-compact complex $6$-manifold $N=1$, a subgroup of the full isometry group $O_4(\mathbb{C})$.</p>
+<p><em>Proof.</em> If $N(a)=1$ the proposition gives the isometry; conversely an isometry forces $N(a)\langle\tilde P,\tilde Q\rangle_{\natural}=\langle\tilde P,\tilde Q\rangle_{\natural}$ for all pairs, and the form is non-degenerate and not identically zero, so $N(a)=1$. The level set $N=1$ is a smooth complex hypersurface of complex dimension $3$, hence real dimension $6$, and it is unbounded, for instance along the curve $\tilde Q(t)=\cosh t\,e_0+i\sinh t\,e_1$, which satisfies $N(\tilde Q(t))=\cosh^{2}t-\sinh^{2}t=1$ and is unbounded as $t\to\infty$; it is closed under multiplication because $N$ is multiplicative. It is a proper subgroup of $O_4(\mathbb{C})$, since a complex linear isometry of a quadratic space need not be a multiplication. Verified: the scaling identity holds on $100$ random triples, and multiplication by $e_0+ie_1$ is not an isometry because its norm is $0$.</p>
+<h2 id="the-two-bilinear-forms-compared">The Two Bilinear Forms Compared</h2>
+<p>The quaternion bilinear form and the complex bilinear form are the two bilinear pairings of the algebra, and they differ by the sign vector alone:</p>
+<p>$$
+\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu,\qquad
+\langle\tilde P,\tilde Q\rangle=\sum_\mu \varepsilon_\mu P_\mu Q_\mu,\qquad \varepsilon=(1,-1,-1,-1).
+$$</p>
+<p><strong>Proposition (the invariants they share).</strong> The two forms have the same realified signature $(4,4)$, the same isometry group $O_4(\mathbb{C})$, and the same Witt index; consequently every complex quadratic invariant of one is an invariant of the other.</p>
+<p><em>Proof.</em> The two coefficient matrices $I_4$ and $D=\operatorname{diag}(1,-1,-1,-1)$ are congruent over $\mathbb{C}$, since $-1$ is a square: $\operatorname{diag}(1,i,i,i)^{\mathsf T}D\operatorname{diag}(1,i,i,i)=I_4$. Congruent matrices define isometric forms, so over $\mathbb{C}$ the two are the same quadratic form; the realifications have the same real part, of Gram matrix $\operatorname{diag}(I_4,-I_4)$, by the computation of the next section; and the isometry groups of a form and its congruent images are conjugate, hence isomorphic. Verified: the two $8\times8$ realified Gram matrices have the same eigenvalues, four $+1$ and four $-1$.</p>
+<p><strong>Remark (the invariants they do not share).</strong> The two forms are not the same pairing over $\mathbb{R}$, because the congruence above uses the complex scalar $i$. Their restrictions to the six distinguished real subspaces are read off the sign vector, and they are <strong>swapped on the four real forms</strong>: the $\natural$-form puts the definite sign on the quaternion subspace and the sign-mirror on the Hermitian one, while the plain form does the opposite. The comparison is tabulated in <em>The Six Subspaces under the Quaternion Bilinear Form</em> and in <em>The Four Pairings of the Biquaternion Algebra</em>.</p>
+<h2 id="the-restriction-to-the-six-subspaces">The Restriction to the Six Subspaces</h2>
+<p>The restriction of the form to each of the six distinguished real subspaces of <em>Introduction to the Six Subspaces</em> is a real symmetric form once the real and imaginary parts of the coefficients are separated, because the purely imaginary cross terms do not contribute to the real part. Here $\tilde Q=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Real subspace</th>
+<th>Restricted norm</th>
+<th>Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Centre $\mathbb{C}_{\mathbb{B}}$</td>
+<td>$q_0^2-(q'_0)^2$</td>
+<td>$(1,1)$</td>
+</tr>
+<tr>
+<td>Vector $\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\sum_kq_k^2-\sum_k(q'_k)^2$</td>
+<td>$(3,3)$</td>
+</tr>
+<tr>
+<td>Quaternion $\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\sum_\mu q_\mu^2$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$-\sum_\mu (q'_\mu)^2$</td>
+<td>$(0,4)$</td>
+</tr>
+<tr>
+<td>Hermitian $\mathbb{M}_+$</td>
+<td>$q_0^2-\sum_k(q'_k)^2$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>Anti-Hermitian $\mathbb{M}_-$</td>
+<td>$\sum_kq_k^2-(q'_0)^2$</td>
+<td>$(3,1)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition (the realification).</strong> On the eight real basis elements $(e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3)$ the realified form is the real symmetric form of Gram matrix $\operatorname{diag}(I_4,-I_4)$, of signature $(4,4)$.</p>
+<p><em>Proof.</em> Because the form is $\mathbb{C}$-bilinear and $i$ is central, the values on the real basis are $\langle e_\mu,e_\nu\rangle_{\natural}=\delta_{\mu\nu}$, $\langle e_\mu,ie_\nu\rangle_{\natural}=i\delta_{\mu\nu}$ and $\langle ie_\mu,ie_\nu\rangle_{\natural}=-\delta_{\mu\nu}$; the middle entries are purely imaginary and do not contribute to the realified form, leaving the two opposite blocks $\pm I_4$, of four signs each. Signature $(4,4)$. Verified on the $8\times8$ real Gram matrix, whose eigenvalues are four $+1$ and four $-1$.</p>
+<p>The six rows are the content of the tables of <em>Biquaternion Norm and Invertibility</em>, §<em>The Real Forms and Their Signatures</em>, and are developed, with the restriction Gram matrices, the definite rows, the isotropic lines and the isometry group of each restriction, in <em>The Six Subspaces under the Quaternion Bilinear Form</em>. The four subspaces on which the restricted form is real-valued are the quaternion subspace, the anti-quaternion subspace and the two real forms; the two on which it is complex-valued are the centre and the vector subspace.</p>
+<h2 id="the-null-cone">The Null Cone</h2>
+<p><strong>Definition.</strong> The <strong>null cone</strong> of the form is its zero set,</p>
+<p>$$
+\mathcal N_{\natural}=\{\tilde Q:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}=\Bigl\{\tilde Q:\sum_{\mu=0}^{3}Q_\mu^2=0\Bigr\}.
+$$</p>
+<p><strong>Proposition (dimension and smoothness).</strong> The null cone is a complex quadric hypersurface of complex dimension $3$ and real dimension $6$, smooth away from the apex, which is its only singular point.</p>
+<p><em>Proof.</em> On $\mathbb{B}\cong\mathbb{C}^4$ the condition is the vanishing of $\sum_\mu Q_\mu^2$, whose complex gradient is $2(Q_0,Q_1,Q_2,Q_3)$; the gradient vanishes only at the apex, so the quadric is smooth of complex dimension $3$, hence real dimension $6$, off it. Equivalently, writing the condition as the two real equations $\mathrm{Re}\sum_\mu Q_\mu^2=0$ and $\mathrm{Im}\sum_\mu Q_\mu^2=0$, the real Jacobian has rank $2$ exactly off the apex. Verified on the explicit cone points $e_0+ie_1$, $e_0+ie_2$ and $ie_0+e_1$: the rank is $2$ at each, so the real dimension is $8-2=6$.</p>
+<p><strong>Proposition (the cone is the zero-divisor set).</strong> A nonzero element is a zero divisor exactly when it is null, so $\mathcal N_{\natural}\setminus\{0\}$ is the zero-divisor set of the algebra, and the algebra is a division algebra away from the cone.</p>
+<p><em>Proof.</em> The criterion for invertibility is $N(\tilde Q)\neq0$ (<em>Biquaternion Norm and Invertibility</em>, §<em>Criterion for Invertibility</em>): an element is a unit exactly when its norm is nonzero, and a nonzero non-unit is a zero divisor. Both statements are the vanishing of the diagonal of the form, which is the norm. The two families of zero divisors are classified in <em>Biquaternion Zero Divisors</em>. Verified on the corpus's representatives: $N(e_1+ie_2)=1+i^2=0$, so $e_1+ie_2$ is null and a zero divisor, while $N(e_0+e_1)=2\neq0$.</p>
+<p>On the six subspaces the cone has real dimension $0$, $4$, $0$, $0$, $3$, $3$; it is the complex cone $\sum_kQ_k^2=0$ on the vector subspace, the real light cone on the two real forms, and only the origin on the two definite quaternion rows. The development is <em>The Isotropic Structure of the Quaternion Bilinear Form</em>, and the projective picture of the cone, its link and its rulings are <em>Biquaternion Topology</em>.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>A null element and its conjugate.</strong> For $\tilde Q=e_0+ie_1$ the coefficients are $(1,i,0,0)$ and $N(\tilde Q)=1+i^{2}=0$, so the element is null and a zero divisor; its image under the natural conjugation is $e_0-ie_1$, also null, since $N$ is invariant under ${}^{\natural}$,</p>
+<p>$$
+N(\tilde Q^{\natural})=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=N(\tilde Q).
+$$</p>
+<p><strong>Two null elements with a nonzero pairing.</strong> For $\tilde P=e_0+ie_1$ and $\tilde Q=e_0-ie_1$ one has $\langle\tilde P,\tilde Q\rangle_{\natural}=1+i(-i)=2$; the two elements are null but not orthogonal, so the null cone of an indefinite form is not totally isotropic.</p>
+<p><strong>A unit of negative norm.</strong> For $\tilde Q=ie_0$ one has $N(\tilde Q)=i^{2}=-1\neq0$; the element is a unit, of norm $-1$, and the norm of a unit is not a modulus but an arbitrary nonzero complex number.</p>
+<p><strong>A definite slice.</strong> On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the restriction is the positive definite $\sum_\mu q_\mu^2$, so no nonzero real quaternion is null; the classical quaternion algebra is a division algebra, and it is the vanishing of the norm on the rest of $\mathbb{B}$ that makes the biquaternion algebra not one.</p>
+<p><strong>The scaling by a non-unit.</strong> For $a=e_0+ie_1$ one has $N(a)=0$, and the proposition on scaling gives $\langle a\tilde P,a\tilde Q\rangle_{\natural}=0$ for all pairs; the multiplication by a null element is not merely non-isometric, it collapses the form.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>quaternion bilinear form</strong> of the biquaternion algebra is $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$, built on the natural conjugation; it is $\mathbb{C}$-bilinear, symmetric and non-degenerate, of Gram matrix $I_4$ in the coefficient basis, and it is the polarisation of the biquaternion norm. As a complex quadratic space $\mathbb{B}$ is non-degenerate of Witt index $2$ and isometry group $O_4(\mathbb{C})$, shared with the complex bilinear form, from which it differs by the sign vector alone; the two are congruent over $\mathbb{C}$ and distinct over $\mathbb{R}$. The norm is multiplicative, $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)$, and the form scales by the norm of the multiplier, $\langle a\tilde P,a\tilde Q\rangle_{\natural}=N(a)\langle\tilde P,\tilde Q\rangle_{\natural}$, so that left and right multiplication by $a$ are isometries exactly on the unit sphere $N=1$. The restriction to the six distinguished real subspaces carries the signatures $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$, and the realification of the whole form on $\mathbb{R}^8$ is the split form of signature $(4,4)$. The null cone $\sum_\mu Q_\mu^2=0$ is a complex quadric of real dimension $6$, smooth off the apex, and it is exactly the zero-divisor set of the algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$</td>
+<td>The quaternion bilinear form; $\mathbb{C}$-bilinear, symmetric, non-degenerate</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=N(\tilde Q)$</td>
+<td>The diagonal; the biquaternion norm</td>
+</tr>
+<tr>
+<td>$G=I_4$, $\det G=1$</td>
+<td>The Gram matrix in the coefficient basis; orthonormal basis</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(I_4,-I_4)$</td>
+<td>The realified Gram matrix on the eight real basis elements; signature $(4,4)$</td>
+</tr>
+<tr>
+<td>$O_4(\mathbb{C})$, complex dimension $6$</td>
+<td>The isometry group of the form; shared with the complex bilinear form</td>
+</tr>
+<tr>
+<td>$(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$</td>
+<td>The signatures on the six subspaces</td>
+</tr>
+<tr>
+<td>$\mathcal N_{\natural}=\{\sum_\mu Q_\mu^2=0\}$</td>
+<td>The null cone; the zero-divisor set; real dimension $6$, smooth off the apex</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the norm, the polarisation, the real forms with their signatures and the invertibility criterion</li>
+<li><em>The Six Subspaces under the Quaternion Bilinear Form</em> (<code>articles_maths/the-six-subspaces-under-the-quaternion-bilinear-form.md</code>), for the restrictions, the definite rows and the isometry group of each restriction</li>
+<li><em>The Isotropic Structure of the Quaternion Bilinear Form</em> (<code>articles_maths/the-isotropic-structure-of-the-quaternion-bilinear-form.md</code>), for the null cone and its dimension on the six subspaces</li>
+<li><em>The Complex Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-complex-bilinear-form-on-the-biquaternion-algebra.md</code>), for the sibling pairing and the Gram matrix $D$</li>
+<li><em>The Hermitian Form on the Biquaternion Algebra</em> (<code>articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md</code>), for the sesquilinear companion</li>
+<li><em>The Clifford Structure of the Biquaternion Algebra</em> (<code>articles_maths/biquaternion-clifford-structure.md</code>), for the quadratic space read as a Clifford algebra</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

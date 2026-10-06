@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Other Remarkable Subspaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-other-remarkable-subspaces"><strong>The Four Other Remarkable Subspaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two of the six distinguished subspaces of the biquaternion algebra are the two sectors of the physics: the Hermitian subspace $\mathbb{M}_+$, the informational sector, and the anti-Hermitian subspace $\mathbb{M}_-$, the material sector. This article is about the four others:</p>
+<ul>
+<li>the <strong>complex time sector</strong> $\mathbb{C}_{\mathbb{B}}$, which carries the two temporal directions of the physical dictionary;</li>
+<li>the <strong>complex space sector</strong> $\mathrm{Vect}(\mathbb{B})$, which carries the two spatial blocks;</li>
+<li>the <strong>real sector</strong> $\mathbb{H}_{\mathbb{B}}$, which carries the informational time with the material space;</li>
+<li>the <strong>imaginary sector</strong> $i\mathbb{H}_{\mathbb{B}}$, which carries the material time with the informational space.</li>
+</ul>
+<p>Each of the four is a physical object before it is an algebraic one. The complex time sector is where the two times and the global phase live; the complex space sector is where the electromagnetic field strength and the generators of the Lorentz transformations live; the real sector is the Euclidean, or Wick-rotated, reading of the four-vector space, and it is the home of the rotation rotors; the imaginary sector is the sector every coefficient of which carries the central imaginary, the sector of the boost generators.</p>
+<p>Two facts are fixed for each of the four. The first is <strong>how its dimension is written</strong>: as a real dimension always, and as a complex dimension in the two cases where that second writing exists. The second is <strong>which physics it carries</strong>: the two time coordinates $ict$ and $ct'$ for the first, the two space blocks $\mathbf{x}$ and $i\mathbf{x}'$ for the second, the mixed assignments for the last two. Together the four account for the whole of the physical dictionary of a biquaternion, since the two sectors account for the rest.</p>
+<p>The definitions, the involution that cuts out each subspace and the parameter dictionary are fixed in <em>Conventions in the Biquaternion Universe</em>; the place of the four among the six is in <em>Relations Between Subspaces</em>. This article counts the dimensions and places the physics.</p>
+<h2 id="the-four-sectors-and-their-physics">The Four Sectors and Their Physics</h2>
+<h3 id="the-complex-time-sector-math10">The Complex Time Sector $\mathbb{C}_{\mathbb{B}}$</h3>
+<p>This is the set of elements that commute with every element of the algebra; physically it is the <strong>sector of scalars</strong>, the part of the algebra available as a number rather than as an operator. Its elements are the complex scalars $z e_0$, with $z = q_0 + i q'_0$.</p>
+<p>It carries <strong>both temporal directions and no spatial one</strong>. The real direction, $e_0$, carries the informational time $ct'$; the imaginary direction, $ie_0$, carries the material time $ict$. The single complex coordinate $z = ct' + ict$ is the complex time: the two times of the framework on one complex axis.</p>
+<p>Its physics is the physics of a number. A quantity that can take a definite value at the same time as every other is a central quantity, and the sector is exactly that: the complex time, the energy as a global scalar, and the global phase. The Hermitian element $h_0 e_0$ generates the phase $\exp(-i h_0 t/\hbar)e_0$, which acts on every object of the algebra in the same way, which no measurement can detect by interference, and which is nevertheless indispensable to the dynamics. This is the c-number sector, the classical part of the algebra.</p>
+<h3 id="the-complex-space-sector-math20">The Complex Space Sector $\mathrm{Vect}(\mathbb{B})$</h3>
+<p>This is the set of elements with vanishing scalar part, the traceless part of the algebra; it is also the derived subspace $[\mathbb{B}, \mathbb{B}]$, spanned by all commutators, and it is a Lie algebra. Its elements are the complex vectors $z_1 e_1 + z_2 e_2 + z_3 e_3$.</p>
+<p>It carries <strong>both spatial blocks and no temporal one</strong>. The three real directions carry the material space $\mathbf{x}$, the three imaginary ones the informational space $i\mathbf{x}'$, and the three complex coordinates are the three complex spatial directions $x + ix'$, $y + iy'$, $z + iz'$.</p>
+<p>Its physics is the physics of a complex three-vector. The central imaginary acts on this sector as an internal rotation — the electric–magnetic duality rotation — and the three complex coordinates are the complex combination of the electromagnetic field strength, so that the electric and the magnetic parts are the real and the imaginary parts of one complex object and the two classical field invariants are the real and imaginary parts of one complex form. The same six real directions carry the six generators of the Lorentz group: the three real vector units generate the rotations and the three imaginary ones the boosts, so a single complex three-vector is at once a field configuration and a generator of the transformations that act on it. That is the role the sector plays in the physics of spin one.</p>
+<h3 id="the-real-sector-math28">The Real Sector $\mathbb{H}_{\mathbb{B}}$</h3>
+<p>This is the set of elements with no coefficient carrying the central imaginary: the copy of the quaternion algebra inside $\mathbb{B}$, a subalgebra and a division algebra. Its elements are $\tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with four <strong>real</strong> coefficients, and it is the home of the rotation rotors.</p>
+<p>It carries the <strong>informational time with the material space</strong>,</p>
+<p>$$
+\tilde{Q} = (ct')\,e_0 + \mathbf{x} = ct'\,e_0 + x e_1 + y e_2 + z e_3 .
+$$</p>
+<p>Its physics is the Euclidean four-dimensional geometry. Because no coefficient carries the $i$, the $ict$ writing is unavailable inside the sector: the temporal coefficient is real, the four-dimensional form is positive definite of signature $(4,0)$, there is no null direction and no light cone, and no direction is singled out as time. This is exactly what the Wick rotation produces, and it is why the sector is called real. The unit elements are the rotation rotors, and their action is the rotation of the material space, with the two-to-one cover of the rotation group.</p>
+<h3 id="the-imaginary-sector-math35">The Imaginary Sector $i\mathbb{H}_{\mathbb{B}}$</h3>
+<p>This is the image of the real sector under multiplication by the central imaginary: the set of elements every coefficient of which is purely imaginary, with basis $ie_0, ie_1, ie_2, ie_3$. It is not a subalgebra — the product of two of its elements is real — only a module over the real sector.</p>
+<p>It carries the <strong>material time with the informational space</strong>,</p>
+<p>$$
+\tilde{Q} = ict\,e_0 + i\mathbf{x}' = i\bigl(ct\,e_0 + \mathbf{x}'\bigr) .
+$$</p>
+<p>Its physics is the sector of the imaginary coefficients and of the boost generators. The material time $ict$ is here, with the informational space $i\mathbf{x}'$, the reverse assignment to the real sector. It is also where the infinitesimal generators of the boosts lie, the three imaginary vector units $ie_1, ie_2, ie_3$; a finite boost does not lie in the sector, since its scalar part is real, so the sector holds the generators and the boosts themselves are obtained by leaving it. It is the negative-definite counterpart of the real sector, with no null direction and no light cone.</p>
+<h2 id="how-the-dimensions-are-written">How the Dimensions Are Written</h2>
+<p>The dimension of each of the four is written twice over: as a <strong>real</strong> dimension, the number of real coordinates, and — where it exists — as a <strong>complex</strong> dimension, the number of complex coordinates once the sector is read over the complex numbers. The second writing exists exactly when the sector is closed under multiplication by the central imaginary, since a complex vector space is a real space carrying the complex structure $i$. Physically, the two sectors that admit it are the two on which multiplication by $i$ acts as an internal symmetry: the exchange of the two times in the complex time sector, and the electric–magnetic duality rotation in the complex space sector.</p>
+<h3 id="the-real-dimension">The Real Dimension</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>real basis</th>
+<th>real parameters</th>
+<th>$\dim_\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>complex time $\mathbb{C}_{\mathbb{B}}$</td>
+<td>$e_0,\ ie_0$</td>
+<td>$q_0,\ q'_0$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>complex space $\mathrm{Vect}(\mathbb{B})$</td>
+<td>$e_1,\ e_2,\ e_3,\ ie_1,\ ie_2,\ ie_3$</td>
+<td>$q_1,\ q_2,\ q_3,\ q'_1,\ q'_2,\ q'_3$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>real $\mathbb{H}_{\mathbb{B}}$</td>
+<td>$e_0,\ e_1,\ e_2,\ e_3$</td>
+<td>$q_0,\ q_1,\ q_2,\ q_3$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>imaginary $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$ie_0,\ ie_1,\ ie_2,\ ie_3$</td>
+<td>$q'_0,\ q'_1,\ q'_2,\ q'_3$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first two are the temporal and the spatial writings: the complex time sector collects the two scalar coordinates of the dictionary, the complex space sector the six vector ones. The last two are the real and the imaginary coefficient halves, both of real dimension four. Each pair splits the eight real dimensions of the algebra, $2 + 6 = 8$ and $4 + 4 = 8$, and the two decompositions are</p>
+<p>$$
+\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}) = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}} .
+$$</p>
+<h3 id="the-complex-dimension-the-mathematical-dimension">The Complex Dimension: the Mathematical Dimension</h3>
+<p>The central imaginary sends $e_k \mapsto ie_k$ and $ie_k \mapsto -e_k$. It <strong>preserves</strong> the complex time sector, whose two directions it exchanges, and it <strong>preserves</strong> the complex space sector, whose two blocks it exchanges. These two therefore have a dimension over $\mathbb{C}$ as well, equal to half the real one:</p>
+<ul>
+<li>the <strong>complex time sector</strong> is a complex line, of complex dimension $1$, with complex basis $\{e_0\}$; its single complex coordinate is the complex time $z = ct' + ict$;</li>
+<li>the <strong>complex space sector</strong> is a three-dimensional complex space, of complex dimension $3$, with complex basis $\{e_1, e_2, e_3\}$; its three complex coordinates are the three complex spatial directions.</li>
+</ul>
+<p>The same map $i$ <strong>exchanges</strong> the other two, $i\,\mathbb{H}_{\mathbb{B}} = i\mathbb{H}_{\mathbb{B}}$ and $i\,(i\mathbb{H}_{\mathbb{B}}) = \mathbb{H}_{\mathbb{B}}$; physically it is the Wick rotation between the real and the imaginary sector. Neither of the two is a complex space, and for neither is there a complex dimension to write: each is a real four-dimensional space, with real coefficients in the one case and purely imaginary coefficients in the other, and multiplication by $i$ carries it out of itself.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>closed under $i$?</th>
+<th>$\dim_\mathbb{R}$</th>
+<th>$\dim_\mathbb{C}$</th>
+<th>complex basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>complex time $\mathbb{C}_{\mathbb{B}}$</td>
+<td>yes</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$e_0$</td>
+</tr>
+<tr>
+<td>complex space $\mathrm{Vect}(\mathbb{B})$</td>
+<td>yes</td>
+<td>$6$</td>
+<td>$3$</td>
+<td>$e_1,\ e_2,\ e_3$</td>
+</tr>
+<tr>
+<td>real $\mathbb{H}_{\mathbb{B}}$</td>
+<td>no, $i\,\mathbb{H}_{\mathbb{B}} = i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$4$</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>imaginary $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>no, $i\,(i\mathbb{H}_{\mathbb{B}}) = \mathbb{H}_{\mathbb{B}}$</td>
+<td>$4$</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-physical-coordinates">The Physical Coordinates</h2>
+<p>The dictionary assigns one real parameter to each real coordinate: $q_0 = ct'$ and $q'_0 = ct$ for the two times, and $q_k = (x, y, z)$, $q'_k = (x', y', z')$ for the two spaces, with $\mathbf{x} = x e_1 + y e_2 + z e_3$ the material space and $i\mathbf{x}' = i(x' e_1 + y' e_2 + z' e_3)$ the informational space. The two temporal writings are the informational $ct'$ and the material $ict$; the two spatial writings are the material $\mathbf{x}$ and the informational $i\mathbf{x}'$. The four sectors take them as follows.</p>
+<h3 id="the-two-times-on-one-complex-axis">The Two Times on One Complex Axis</h3>
+<p>The complex time sector takes both temporal writings and neither spatial one,</p>
+<p>$$
+\tilde{Q} = q_0 e_0 + q'_0 (ie_0) = ct'\,e_0 + ict\,e_0 = (ct' + ict)\,e_0 .
+$$</p>
+<p>The informational time stands on the real direction $e_0$, the material time on the imaginary direction $ie_0$, and the complex time $z = ct' + ict$ is the two of them on one complex axis. The sector is the complex time sector precisely because both of its coordinates are times.</p>
+<h3 id="the-two-spaces-in-one-complex-vector">The Two Spaces in One Complex Vector</h3>
+<p>The complex space sector takes both spatial writings and neither temporal one,</p>
+<p>$$
+\tilde{Q} = \mathbf{x} + i\mathbf{x}' = (x e_1 + y e_2 + z e_3) + i(x' e_1 + y' e_2 + z' e_3) .
+$$</p>
+<p>The material space stands on the real directions, the informational space on the imaginary ones, and the three complex coordinates $x + ix'$, $y + iy'$, $z + iz'$ are the complex space. The sector is the complex space sector precisely because both of its blocks are spaces, and multiplication by $i$ on it is the duality rotation of the complex three-vector.</p>
+<h3 id="the-informational-time-with-the-material-space">The Informational Time with the Material Space</h3>
+<p>The real sector takes the informational writing of time with the material writing of space,</p>
+<p>$$
+\tilde{Q} = (ct')\,e_0 + \mathbf{x} = ct'\,e_0 + x e_1 + y e_2 + z e_3 .
+$$</p>
+<p>Both parts appear with real coefficients, and the four-vector it carries is the Euclidean four-vector of the Wick-rotated reading. The material time $ict$ is not available here: the $ict$ writing needs the central imaginary, and the sector is defined by the absence of it.</p>
+<h3 id="the-material-time-with-the-informational-space">The Material Time with the Informational Space</h3>
+<p>The imaginary sector takes the reverse mixed assignment, the material writing of time with the informational writing of space,</p>
+<p>$$
+\tilde{Q} = ict\,e_0 + i\mathbf{x}' = i\,(ct)\,e_0 + i\,(x' e_1 + y' e_2 + z' e_3) = i\bigl(ct\,e_0 + \mathbf{x}'\bigr) .
+$$</p>
+<p>Every coefficient carries the central imaginary, and the sector is the image of the real one under multiplication by $i$.</p>
+<h3 id="the-four-mixed-assignments">The Four Mixed Assignments</h3>
+<p>There are two times and two spaces, hence four ways to take one of each; each belongs to exactly one four-dimensional subspace of the algebra. The two sectors complete the table:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>temporal writing</th>
+<th>spatial writing</th>
+<th>element</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real $\mathbb{H}_{\mathbb{B}}$</td>
+<td>$ct'$</td>
+<td>$\mathbf{x}$</td>
+<td>$ct'\,e_0 + \mathbf{x}$</td>
+</tr>
+<tr>
+<td>informational $\mathbb{M}_+$</td>
+<td>$ct'$</td>
+<td>$i\mathbf{x}'$</td>
+<td>$ct'\,e_0 + i\mathbf{x}'$</td>
+</tr>
+<tr>
+<td>imaginary $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$ict$</td>
+<td>$i\mathbf{x}'$</td>
+<td>$ict\,e_0 + i\mathbf{x}'$</td>
+</tr>
+<tr>
+<td>material $\mathbb{M}_-$</td>
+<td>$ict$</td>
+<td>$\mathbf{x}$</td>
+<td>$ict\,e_0 + \mathbf{x}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The complex time and the complex space sector stand outside the table because each takes two coordinates of the same kind at once: the complex time sector both times and no space, the complex space sector both spaces and no time. In this sense the four other subspaces are the two homogeneous sectors and the two mixed ones, and the six subspaces of the algebra are exhausted by them together with the two sectors.</p>
+<h2 id="how-the-four-fit-together">How the Four Fit Together</h2>
+<p>The two pairs each span the algebra: the complex time and the complex space sector give the split into scalar and traceless part, and the real and the imaginary sector give the split into real and imaginary coefficients. The four also overlap, and the overlap is the reason a single coordinate can be read in two sectors. Computing the intersections of the basis spans,</p>
+<p>$$
+\mathbb{C}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B}) = \{0\}, \qquad \mathbb{H}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} = \{0\},
+$$</p>
+<p>$$
+\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} = \mathbb{R} e_0, \qquad \mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} = \mathbb{R}(ie_0),
+$$</p>
+<p>$$
+\mathrm{Vect}(\mathbb{B}) \cap \mathbb{H}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_1, e_2, e_3\}, \qquad \mathrm{Vect}(\mathbb{B}) \cap i\mathbb{H}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{ie_1, ie_2, ie_3\} .
+$$</p>
+<p>The real direction of the complex time sector is the one time direction it shares with the real sector, its imaginary direction the one it shares with the imaginary sector, and the complex space sector meets each of them in the corresponding three-dimensional spatial block. Multiplication by $i$ fixes the complex time and the complex space sector and exchanges the real and the imaginary one, which is the Wick rotation; quaternion conjugation fixes the complex time sector and negates the complex space sector; complex conjugation fixes the real sector and negates the imaginary one.</p>
+<h2 id="summary">Summary</h2>
+<p>Besides the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$, the algebra has four distinguished subspaces: the complex time sector $\mathbb{C}_{\mathbb{B}}$, the complex space sector $\mathrm{Vect}(\mathbb{B})$, the real sector $\mathbb{H}_{\mathbb{B}}$ and the imaginary sector $i\mathbb{H}_{\mathbb{B}}$. The first two are the two homogeneous sectors of the physical dictionary, the temporal one and the spatial one; the last two are the two mixed ones, each carrying one time and one space in the real and in the imaginary coefficient half.</p>
+<p>Their dimensions are written as follows. Over the reals they are $2$, $6$, $4$ and $4$, the two pairs splitting the eight real dimensions of the algebra. Over the complex numbers only two of them have a dimension to write: the complex time sector is a complex line, of complex dimension $1$, and the complex space sector a complex three-space, of complex dimension $3$, these being exactly the two sectors that multiplication by the central imaginary preserves — the Wick exchange of the times and the duality rotation of the complex field. The real and the imaginary sector are exchanged by that multiplication and have no complex dimension.</p>
+<p>Physically the complex time sector carries both times and the global phase; the complex space sector carries both spaces, the electromagnetic field strength and the Lorentz generators; the real sector carries the informational time with the material space, the Euclidean four-vector and the rotation rotors; the imaginary sector carries the material time with the informational space and the boost generators.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>Complex time sector: $\mathrm{span}_\mathbb{R}\{e_0, ie_0\}$, real dimension $2$, complex dimension $1$; both times, no space</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>Complex space sector: $\mathrm{span}_\mathbb{R}\{e_1, e_2, e_3, ie_1, ie_2, ie_3\}$, real dimension $6$, complex dimension $3$; both spaces, no time</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Real sector: $\mathrm{span}_\mathbb{R}\{e_0, e_1, e_2, e_3\}$, real dimension $4$, no complex dimension; informational time with material space</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>Imaginary sector: $\mathrm{span}_\mathbb{R}\{ie_0, ie_1, ie_2, ie_3\}$, real dimension $4$, no complex dimension; material time with informational space</td>
+</tr>
+<tr>
+<td>$z = q_0 + iq'_0 = ct' + ict$</td>
+<td>The complex time of the complex time sector</td>
+</tr>
+<tr>
+<td>$\natural$</td>
+<td>Quaternion conjugation; fixed sector the complex time, anti-fixed the complex space</td>
+</tr>
+<tr>
+<td>bar</td>
+<td>Complex conjugation; fixed sector the real, anti-fixed the imaginary</td>
+</tr>
+<tr>
+<td>$i\,\mathbb{H}_{\mathbb{B}} = i\mathbb{H}_{\mathbb{B}}$</td>
+<td>The scalar imaginary exchanges the real and the imaginary sector (the Wick rotation)</td>
+</tr>
+<tr>
+<td>$q_0 = ct'$, $q'_0 = ct$</td>
+<td>Informational time $ct'$ and material time $ict$</td>
+</tr>
+<tr>
+<td>$\mathbf{x} = x e_1 + y e_2 + z e_3$</td>
+<td>Material space</td>
+</tr>
+<tr>
+<td>$i\mathbf{x}' = i(x' e_1 + y' e_2 + z' e_3)$</td>
+<td>Informational space</td>
+</tr>
+<tr>
+<td>$ct'\,e_0 + ict\,e_0$</td>
+<td>The complex time sector: both times on one complex axis</td>
+</tr>
+<tr>
+<td>$\mathbf{x} + i\mathbf{x}'$</td>
+<td>The complex space sector: both spaces in one complex vector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Conventions in the Biquaternion Universe</em>, for the six subspaces, the involution that defines each, the physical names and the parameter-to-coordinate dictionary.</li>
+<li><em>Relations Between Subspaces</em>, for the containment lattice of the six subspaces and the decompositions they induce.</li>
+<li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> and <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, for the two sectors kept out of this article.</li>
+<li><em>Biquaternion Rotations and Lorentz Transformations</em> and <em>The Lorentz Group as Biquaternion Norm Automorphisms</em>, for the rotors and the boosts whose generators live in the real and the imaginary sector.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the centre, the traceless part and the coefficient split of the biquaternion algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

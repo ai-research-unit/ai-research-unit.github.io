@@ -70,8 +70,14 @@ $$</p>
 <p><strong>Example.</strong> $e_0+e_1$ has $\langle e_0+e_1,e_0+e_1\rangle_{\natural*}=1-1=0$ and $N=2$, so it is isotropic for the quaternion sesquilinear form and not for the norm. The element $e_1+ie_2$ has $N=1+i^{2}=0$ and $\langle e_1+ie_2,e_1+ie_2\rangle_{\natural*}=-2$, the reverse situation.</p>
 <h2 id="the-comparison-with-the-norm-cone">The Comparison with the Norm Cone</h2>
 <p><strong>Definition.</strong> The <strong>norm cone</strong> of the algebra is the zero set $\mathcal{N}=\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0\}$ of the norm, the union of the origin and the zero-divisor set of <em>Biquaternion Zero Divisors</em>; it is a complex cone of real dimension $6$.</p>
-<p><strong>Theorem (the two cones are different).</strong> The Krein null set and the norm cone are distinct: neither is contained in the other. Their intersection $\mathcal{K}\cap\mathcal{N}$ is a real algebraic cone of dimension $5$, and it contains the two complex lines $\mathbb{C}(e_0+ie_1)$ and $\mathbb{C}(e_0-ie_1)$.</p>
-<p><strong>Proof.</strong> $e_0+e_1$ is in the Krein null set and not in the norm cone, $e_1+ie_2$ in the norm cone and not in the Krein null set, so neither inclusion holds. For the dimension, in the affine chart $Q_0=1$ the equations $N=0$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$ are one complex and one real equation on the six real coordinates $Q_1,Q_2,Q_3$, that is three real equations in six unknowns, so the projective intersection has real dimension $3$ and the cone over it has real dimension $5$. The two displayed lines are isotropic for both forms: $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural}=1+(i)^{2}=0$ and $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural*}=1-1=0$.</p>
+<p><strong>Theorem (the two cones are different).</strong> The Krein null set and the norm cone are distinct: neither is contained in the other. Their intersection $\mathcal{K}\cap\mathcal{N}$ is the union of the doubly null lines $\mathbb{C}(e_0+i\hat\mu)$, $\hat\mu$ a real unit vector, a real algebraic cone of real dimension $4$; in particular it contains the two complex lines $\mathbb{C}(e_0+ie_1)$ and $\mathbb{C}(e_0-ie_1)$.</p>
+<p><strong>Proof.</strong> $e_0+e_1$ is in the Krein null set and not in the norm cone, $e_1+ie_2$ in the norm cone and not in the Krein null set, so neither inclusion holds. For the intersection, $\mathcal{K}\cap\mathcal{N}$ is invariant under complex scaling, so compute it in the affine chart $Q_0=1$: writing the vector part as $v=U+iW$ with $U,W$ real, the two conditions $\|v\|_E=1$ and $N(v)=-1$ read</p>
+<p>$$
+\|U\|_E^{2}+\|W\|_E^{2}=1,\qquad
+\|U\|_E^{2}-\|W\|_E^{2}=-1,\qquad
+\langle U,W\rangle=0,
+$$</p>
+<p>which force $U=0$ and $W=\hat\mu$ a real unit vector. The chart therefore meets the intersection in the copy $\{1\}\times iS^{2}$ of $S^{2}$, of real dimension $2$, and the cone over it has real dimension $4$: the intersection is the union of the doubly null lines $\mathbb{C}(e_0+i\hat\mu)$. The two displayed lines are isotropic for both forms: $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural}=1+(i)^{2}=0$ and $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural*}=1-1=0$.</p>
 <p><strong>Remark (the two cones agree on a real slice).</strong> On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the quaternion sesquilinear form is the interval form and the norm is the Euclidean form, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_0^{2}-\sum_kq_k^{2}$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu}q_{\mu}^{2}$; the Krein null set is the light cone of the slice, the norm cone meets the real slice only at the origin, and the two agree nowhere except at $0$.</p>
 <h2 id="totally-isotropic-subspaces">Totally Isotropic Subspaces</h2>
 <p><strong>Definition.</strong> A subspace $\mathbb{W}$ is <strong>totally isotropic</strong> when $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=0$ for all $\tilde{Q},\tilde{Q}'\in\mathbb{W}$, equivalently when $\mathbb{W}\subseteq\mathbb{W}^{\perp_{K}}$; it is <strong>maximal</strong> when it is contained in no larger one. The <strong>Witt index</strong> of the quaternion sesquilinear form is the common dimension of the maximal totally isotropic subspaces.</p>
@@ -84,6 +90,30 @@ $$</p>
 <p>Every totally isotropic subspace is contained in a maximal one, and the isometry group $U(1,3)$ acts transitively on the maximal ones.</p>
 <p><strong>Proof.</strong> If $\mathbb{W}$ is totally isotropic then it is orthogonal to itself, so $\mathbb{W}\subseteq\mathbb{W}^{\perp_{K}}$, and the restriction of the form to $\mathbb{W}+\mathbb{W}^{\perp_{K}}/\mathbb{W}^{\perp_{K}}$ makes the dimension of $\mathbb{W}$ at most $\min(p,q)$: an isotropic subspace meets the maximal positive definite subspaces and the maximal negative definite subspaces only at $0$. The two displayed spaces attain $\min(p,q)=1$ over $\mathbb{C}$ and $\min(p,q)=2$ over $\mathbb{R}$, since $\langle e_0+e_1,e_0+e_1\rangle_{\natural*}=0$, $\langle i(e_0+e_1),e_0+e_1\rangle_{\natural*}=i-i=0$ and the plane is $2$-dimensional over $\mathbb{R}$. The extension and transitivity are Witt's extension theorem for complex sesquilinear forms (<em>Witt's Theorems</em>).</p>
 <p><strong>Remark (the isotropic and the null elements).</strong> An element $\tilde{Q}$ is isotropic exactly when the line $\mathbb{C}\tilde{Q}$ is totally isotropic (over $\mathbb{R}$, the real plane $\mathrm{span}_{\mathbb{R}}\{\tilde{Q},i\tilde{Q}\}$ is); the null set of the first section is the union of the totally isotropic complex lines, and the totally isotropic subspaces are the subspaces all of whose elements are isotropic.</p>
+<h2 id="the-index-in-two-ways">The Index in Two Ways</h2>
+<p>The index is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$, and it can be computed twice: bounded by the two definite parts, and exhibited by the isotropic lines that are also norm-null.</p>
+<p><strong>Theorem (the index by a maximal definite subspace).</strong> A definite subspace meets a totally isotropic subspace only at the origin. Hence a totally isotropic subspace $\mathbb{W}$ maps injectively into the two quotients $\mathbb{B}/\mathbb{W}_{-}$ and $\mathbb{B}/\mathbb{W}_{+}$, for every maximal negative definite subspace $\mathbb{W}_{-}$ and every maximal positive definite subspace $\mathbb{W}_{+}$, and</p>
+<p>$$
+\dim_{\mathbb{C}}\mathbb{W}\leq\dim_{\mathbb{C}}\bigl(\mathbb{B}/\mathbb{W}_{-}\bigr)=p,\qquad
+\dim_{\mathbb{C}}\mathbb{W}\leq\dim_{\mathbb{C}}\bigl(\mathbb{B}/\mathbb{W}_{+}\bigr)=q .
+$$</p>
+<p>Therefore the Witt index is at most $\min(p,q)$, and the bound is attained.</p>
+<p><strong>Proof.</strong> A nonzero element of a definite subspace has a nonzero square, so it is not isotropic and cannot lie in the totally isotropic $\mathbb{W}$; the projection is therefore injective. The dimensions are $\dim\mathbb{B}-\dim\mathbb{W}_{-}=4-3=1=p$ and $\dim\mathbb{B}-\dim\mathbb{W}_{+}=4-1=3=q$. The bound $\min(p,q)=1$ over $\mathbb{C}$ is attained by the line $\mathbb{C}(e_0+e_1)$, and over $\mathbb{R}$, where the bound is $2$, by the plane $\mathrm{span}_{\mathbb{R}}\{e_0+e_1,i(e_0+e_1)\}$.</p>
+<p><strong>Definition.</strong> A <strong>doubly null line</strong> is an isotropic line that lies in the norm cone as well: a complex line $\mathbb{C}\tilde{Q}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$.</p>
+<p><strong>Theorem (the Peirce lines).</strong> For every real unit vector $\hat\mu\in\mathbb{V}_{\mathbb{B}}$ the element</p>
+<p>$$
+\tilde\Pi_{\pm}(\hat\mu)=\tfrac12\bigl(e_0\pm i\hat\mu\bigr)
+$$</p>
+<p>is a rank-one Hermitian idempotent, $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, with $N(\tilde\Pi_\pm)=0$ and $\langle\tilde\Pi_\pm,\tilde\Pi_\pm\rangle_{\natural*}=0$. The line $\mathbb{C}\tilde\Pi_\pm(\hat\mu)$ is therefore a maximal totally isotropic complex subspace and a doubly null line; it is a <strong>Peirce line</strong> of the algebra, generating the minimal left ideal $\mathbb{B}\tilde\Pi_\pm(\hat\mu)$ and the minimal right ideal $\tilde\Pi_\pm(\hat\mu)\mathbb{B}$, of complex dimension two, every element of which is a zero divisor. The two diagonal members $\hat\mu=e_1$ give the lines $\mathbb{C}(e_0\pm ie_1)$ of the comparison with the norm cone.</p>
+<p><strong>Proof.</strong> A real unit vector has $\hat\mu^2=-e_0$, so $(i\hat\mu)^2=e_0$ and $(e_0\pm i\hat\mu)^2=1\pm2i\hat\mu+(i\hat\mu)^2=2(e_0\pm i\hat\mu)$, whence $\tilde\Pi_\pm^2=\tilde\Pi_\pm$; $\tilde\Pi_\pm$ is Hermitian because $(i\hat\mu)^{*}=i\hat\mu$. For the two squares, $N(e_0\pm i\hat\mu)=1+N(i\hat\mu)=1-\|\hat\mu\|_E^2=0$ and $\langle e_0\pm i\hat\mu,e_0\pm i\hat\mu\rangle_{\natural*}=1-\|i\hat\mu\|_E^2=0$. The minimal ideals are the standard ones of the algebra, of complex dimension two, and their elements $X\tilde\Pi_\pm$ satisfy $N(X\tilde\Pi_\pm)=N(X)N(\tilde\Pi_\pm)=0$.</p>
+<p><strong>Corollary (the two descriptions agree on the norm cone).</strong> The Peirce lines are exactly the doubly null lines. Writing $\tilde V=\tilde U+i\tilde W$ with $\tilde U,\tilde W\in\mathbb{V}_{\mathbb{B}}$ real, the conditions $\|\tilde V\|_E=1$ and $N(\tilde V)=-1$ read</p>
+<p>$$
+\|\tilde U\|_E^{2}+\|\tilde W\|_E^{2}=1,\qquad
+\|\tilde U\|_E^{2}-\|\tilde W\|_E^{2}=-1,\qquad
+\langle\tilde U,\tilde W\rangle=0,
+$$</p>
+<p>which force $\tilde U=0$ and $\|\tilde W\|_E=1$: the doubly null lines are exactly the lines $\mathbb{C}(e_0\pm i\hat\mu)$, parametrised by the unit sphere $S^2$ of directions with the two signs, and the Peirce description is complete on the norm cone. The maximal totally isotropic <em>real</em> subspace is, by contrast, the plane $\mathrm{span}_{\mathbb{R}}\{e_0+e_1,i(e_0+e_1)\}$, whose generator has $N=2$ and is not a zero divisor, so it is not a Peirce line; within the real form $\mathbb{H}_{\mathbb{B}}$, whose form is the interval form in the basis $e_0,e_1,e_2,e_3$, the maximal totally isotropic subspace is the diagonal light line $\mathrm{span}_{\mathbb{R}}\{e_0+e_1\}$, and the Peirce lines are the complementary, norm-null part of the isotropic lines.</p>
+<p><strong>Proof.</strong> The three equations are the real and imaginary parts of $N(\tilde V)=-1$ together with $\|\tilde V\|_E=1$, using $N(\tilde U+i\tilde W)=\|\tilde U\|_E^{2}-\|\tilde W\|_E^{2}+2i\langle\tilde U,\tilde W\rangle$ and $\|\tilde U+i\tilde W\|_E^{2}=\|\tilde U\|_E^{2}+\|\tilde W\|_E^{2}$; adding and subtracting the first two give $\|\tilde U\|_E^{2}=0$ and $\|\tilde W\|_E^{2}=1$. The remaining statements are the previous definition and corollary.</p>
 <h2 id="the-isotropic-lines-and-the-boundary-sphere">The Isotropic Lines and the Boundary Sphere</h2>
 <p><strong>Definition.</strong> The <strong>isotropic lines</strong> of $\mathbb{C}^{4}$ for the quaternion sesquilinear form are the complex lines $\mathbb{C}\tilde{Q}$ spanned by nonzero isotropic elements.</p>
 <p><strong>Theorem (the isotropic lines form $S^{5}$).</strong> The isotropic complex lines are exactly the lines $\mathbb{C}(e_0+\tilde{V})$ with $\|\tilde{V}\|_E=1$, so the assignment $\tilde{V}\mapsto\mathbb{C}(e_0+\tilde{V})$ is a bijection from the unit sphere of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ — a copy of $S^{5}$ — onto the set of isotropic lines.</p>
@@ -93,11 +123,13 @@ $$</p>
 <p><strong>An isotropic element of the centre–vector type.</strong> $\tilde{Q}=e_0+e_1$: isotropic, norm $2$, in the light cone of the real quaternion slice at the boundary.</p>
 <p><strong>A zero divisor that is isotropic.</strong> $\tilde{Q}=e_0+ie_1$: both $N=0$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$; the line it spans is a doubly null line.</p>
 <p><strong>A zero divisor that is not isotropic.</strong> $\tilde{Q}=e_1+ie_2$: $N=0$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-2$, a strictly negative element.</p>
-<p><strong>A timelike element.</strong> $\tilde{Q}=e_0+0.5e_1$: $\langle\tilde{Q},\,\tilde{Q}\rangle_{\natural*}=0.75>0$, so it lies inside the positive region and spans a maximal positive definite line.</p>
+<p><strong>A timelike element.</strong> $\tilde{Q}=e_0+\tfrac12e_1$: $\langle\tilde{Q},\,\tilde{Q}\rangle_{\natural*}=\tfrac34>0$, so it lies inside the positive region and spans a maximal positive definite line.</p>
 <p><strong>A maximal isotropic plane.</strong> $\mathbb{W}_{\mathrm{iso}}=\mathrm{span}_{\mathbb{R}}\{e_0+e_1,\ i(e_0+e_1)\}$: real dimension $2$, over $\mathbb{C}$ it is the single line $\mathbb{C}(e_0+e_1)$, and it is maximal because the Witt index over $\mathbb{R}$ is $2$.</p>
 <p><strong>The link at a point.</strong> For $\tilde{Q}=(e_0+e_1)/\sqrt2$ one has $\|\tilde{Q}\|_E=1$ and $\langle\tilde{Q},\,\tilde{Q}\rangle_{\natural*}=0$: the point $S^{1}\times S^{5}$ of the link is reached by normalising, and the circle is the phase of the complex coefficient.</p>
+<p><strong>A Peirce line.</strong> $\hat\mu=e_2$: $\tilde\Pi_+=\tfrac12(e_0+ie_2)$ is a rank-one Hermitian idempotent with $N=0$ and $\langle\tilde\Pi_+,\tilde\Pi_+\rangle_{\natural*}=0$, so the line $\mathbb{C}(e_0+ie_2)=\mathbb{C}\tilde\Pi_+$ is a doubly null maximal isotropic line, a Peirce line.</p>
+<p><strong>A maximal isotropic line that is not Peirce.</strong> $\mathbb{C}(e_0+e_1)$: the generator has $N=2$, so the line is isotropic and not doubly null; it is the complexification of the diagonal light line of the real form $\mathbb{H}_{\mathbb{B}}$, and it exhausts the index over $\mathbb{C}$ without lying in the norm cone.</p>
 <h2 id="summary">Summary</h2>
-<p>The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone of dimension $7$, smooth away from its apex, connected, with link and punctured homotopy type $S^{1}\times S^{5}$. It is distinct from the complex norm cone of the zero divisors: neither contains the other, the two meet in a cone of real dimension $5$, and the lines $\mathbb{C}(e_0\pm ie_1)$ are null for both forms. A totally isotropic subspace is one contained in its own Krein-orthogonal complement; the Witt index is $\min(p,q)$, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; a maximal isotropic complex subspace is the line $\mathbb{C}(e_0+e_1)$, a maximal isotropic real subspace is the plane it spans with $i(e_0+e_1)$; every isotropic subspace extends to a maximal one and the isometry group acts transitively on the maximal ones. The isotropic complex lines are the points of $S^{5}$, the boundary sphere of the positive half of the ball; the centre $S^{1}$ is the difference between the punctured cone and the space of isotropic lines.</p>
+<p>The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone of dimension $7$, smooth away from its apex, connected, with link and punctured homotopy type $S^{1}\times S^{5}$. It is distinct from the complex norm cone of the zero divisors: neither contains the other, and the two meet in the union of the doubly null lines, a cone of real dimension $4$ that contains $\mathbb{C}(e_0\pm ie_1)$. A totally isotropic subspace is one contained in its own Krein-orthogonal complement; the Witt index is $\min(p,q)$, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; a maximal isotropic complex subspace is the line $\mathbb{C}(e_0+e_1)$, a maximal isotropic real subspace is the plane it spans with $i(e_0+e_1)$; every isotropic subspace extends to a maximal one and the isometry group acts transitively on the maximal ones. The isotropic complex lines are the points of $S^{5}$, the boundary sphere of the positive half of the ball; the centre $S^{1}$ is the difference between the punctured cone and the space of isotropic lines. The index is computed twice: bounded by the two definite parts, a totally isotropic subspace injecting into the quotient by either, and exhibited by the <strong>Peirce lines</strong> generated by the rank-one Hermitian idempotents $\tilde\Pi_\pm(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$; these are exactly the doubly null lines, the isotropic lines that lie in the norm cone, while the maximal isotropic real plane is not a Peirce line, its generator being a non-zero-divisor.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -136,6 +168,18 @@ $$</p>
 <td>Totally isotropic subspace</td>
 </tr>
 <tr>
+<td>$\dim_{\mathbb{C}}\mathbb{W}\le\min(p,q)$</td>
+<td>The index bound by the two definite parts</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$</td>
+<td>The rank-one Hermitian idempotents spanning the Peirce lines</td>
+</tr>
+<tr>
+<td>$\mathbb{C}(e_0\pm i\hat\mu)$</td>
+<td>The doubly null lines, exactly the Peirce lines</td>
+</tr>
+<tr>
 <td>$S^{5}$</td>
 <td>The space of isotropic complex lines</td>
 </tr>
@@ -144,6 +188,9 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><em>Biquaternion Zero Divisors</em> (<code>articles_maths/biquaternion-zero-divisors.md</code>), for the norm cone that the Krein null set is compared with</li>
+<li><em>Biquaternion Idempotents and Projections</em> (<code>articles_maths/biquaternion-idempotents-and-projections.md</code>), for the idempotents $\tilde\Pi_\pm(\hat\mu)$ and the minimal left and right ideals they generate</li>
+<li><em>The Complex Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-complex-bilinear-form-on-the-biquaternion-algebra.md</code>), for the null quadric of the complex bilinear form and its isotropic planes</li>
+<li><em>The Six Subspaces and the Four Complex Products</em> (<code>articles_maths/the-six-subspaces-and-the-four-complex-products.md</code>), for the same description for the quaternion bilinear form</li>
 <li><em>Krein Orthogonality and the Fundamental Decomposition</em> (<code>articles_maths/krein-orthogonality-and-the-fundamental-decomposition.md</code>), for the complements used here</li>
 <li><em>The Krein Level Sets and the Hyperbolic Structure</em> (<code>articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md</code>), for the ball whose boundary is the isotropic sphere</li>
 <li><em>Biquaternion Topology</em> (<code>articles_maths/biquaternion-topology.md</code>), for the projective geometry of the norm's null cone</li>

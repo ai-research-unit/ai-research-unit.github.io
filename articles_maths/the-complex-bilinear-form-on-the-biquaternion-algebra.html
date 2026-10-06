@@ -52,23 +52,185 @@
       <div class="article-body">
         <h1 id="the-complex-bilinear-form-on-the-biquaternion-algebra"><strong>The Complex Bilinear Form on the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>Provisional.</strong> This article is a placeholder of the topology region, created in the dispatch that gives the four forms their own reading groups. It records its scope, its home and its sources; the content is to be written.</p>
-<p>The biquaternion algebra carries four scalar forms, one to each of the four products of <em>The Four Biquaternion Complex Products</em>. This article treats the form of the plain product, the <strong>complex bilinear form</strong></p>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four scalar forms, one to each of the four products of <em>The Four Biquaternion Complex Products</em>, and this article is the entry point of the reading group that develops the first of them. The <strong>complex bilinear form</strong> is the scalar part of the plain product,</p>
 <p>$$
-\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu,\qquad \varepsilon=(1,-1,-1,-1).
+\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu Q_\mu,\qquad \varepsilon=(1,-1,-1,-1).
 $$</p>
-<p>It is $\mathbb{C}$-bilinear, symmetric and non-degenerate, and it is indefinite: its Gram matrix in the coefficient basis is $D=\operatorname{diag}(1,-1,-1,-1)$, and on the real vector space of dimension eight its realification is the split form of signature $(4,4)$. Its diagonal $\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^2$ is the quadratic form it polarises.</p>
-<p>The form is the last of the four to receive its own article. Its theory stood as §<em>The Scalar Bilinear Form</em> of <em>Association and the Transpose on the Biquaternion Algebra</em>, where it serves as the pairing that makes a linear map transposable. Beside it stands the quaternion bilinear form $N=\mathrm{Sc}(\tilde P\tilde Q^{\natural})$ of <em>The Quaternion Bilinear Form on the Biquaternion Algebra</em>, of Gram matrix $\mathrm{I}_4$; the two must not be confused, and the distinction of $D$ and $\mathrm{I}_4$ is the whole of it.</p>
-<h2 id="outline">Outline</h2>
-<ul>
-<li>the definition, the polarisation and the diagonal</li>
-<li>the Gram matrix $D$ and the realified signature $(4,4)$</li>
-<li>the null cone, deferred to <em>The Isotropic Structure of the Complex Bilinear Form</em></li>
-<li>the level sets and the isometry group $O_4(\mathbb{C})$, deferred to <em>The Level Sets and the Isometry Group of the Complex Bilinear Form</em></li>
-<li>the comparison with the three other forms</li>
-</ul>
+<p>No conjugation enters either argument, so the form is $\mathbb{C}$-linear in each of them; it is symmetric, non-degenerate and indefinite, with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ in the coefficient basis. Its diagonal $\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^2$ is the quadratic form it polarises, and the diagonal singles out the two subsets this group develops — the null quadric and the level set — together with the group of complex-linear maps that preserve the form.</p>
+<p>The article is the entry point of the group. It defines the form and fixes its matrices; it develops the null quadric, the level set and the isometry group $O_4(\mathbb{C})$; and it states the restriction of the form to the six distinguished real subspaces once, in one table, whose development is <em>The Six Subspaces under the Complex Bilinear Form</em>. The transpose the form defines on the linear operators is <em>Association and the Transpose on the Biquaternion Algebra</em>, and the comparison with the three other forms of the algebra is <em>The Four Pairings of the Biquaternion Algebra</em>.</p>
+<p>Two warnings fix the boundary of the group. First, the form must not be confused with the <strong>quaternion bilinear form</strong> $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$ of <em>The Quaternion Bilinear Form on the Biquaternion Algebra</em>: the two differ by the sign vector $\varepsilon$ alone, they share the isometry group $O_4(\mathbb{C})$ and the realified signature $(4,4)$, and they are nevertheless different pairings, of Gram matrices $D$ and $\mathrm{I}_4$. The whole of the resemblance and the whole of the distinction are in those two matrices. Second, the null quadric of the complex bilinear form is not the null cone of the zero divisors: the latter is the zero set of the quaternion bilinear diagonal $\sum_\mu Q_\mu^2$, and the two complex cones must not be identified.</p>
+<p>The article assumes the algebra, its basis and its conjugations from <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>, the four products from <em>The Four Biquaternion Complex Products</em>, the six subspaces from <em>Introduction to the Six Subspaces</em>, and the general theory of bilinear and quadratic forms from <em>Bilinear Forms</em> and <em>Quadratic Forms and Polarisation</em>.</p>
+<h2 id="the-form-and-its-polarisation">The Form and Its Polarisation</h2>
+<p><strong>Definition.</strong> The <strong>complex bilinear form</strong> is the scalar part of the plain product,</p>
+<p>$$
+\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q),\qquad \tilde P,\tilde Q\in\mathbb{B}.
+$$</p>
+<p>On the coordinates $\tilde P=\sum_\mu P_\mu e_\mu$ and $\tilde Q=\sum_\mu Q_\mu e_\mu$ the scalar part of the product is read from $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, so that</p>
+<p>$$
+\langle\tilde P,\tilde Q\rangle=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu Q_\mu=P_0Q_0-P_1Q_1-P_2Q_2-P_3Q_3.
+$$</p>
+<p><strong>Proposition (bilinearity, symmetry, non-degeneracy).</strong> The form is $\mathbb{C}$-bilinear, symmetric and non-degenerate.</p>
+<p><em>Proof.</em> Bilinearity is the bilinearity of the product in each factor together with the linearity of the scalar part; symmetry is the symmetry of the coefficient expression; and non-degeneracy is the invertibility of the Gram matrix $D$, whose determinant is $-1$, computed in the next section.</p>
+<p><strong>Proposition (the diagonal and the polarisation).</strong> The quadratic form of the form is</p>
+<p>$$
+\langle\tilde Q,\tilde Q\rangle=\sum_{\mu=0}^{3}\varepsilon_\mu Q_\mu^2=Q_0^2-Q_1^2-Q_2^2-Q_3^2,
+$$</p>
+<p>and the form is its polar form,</p>
+<p>$$
+\langle\tilde P,\tilde Q\rangle=\tfrac{1}{2}\Bigl(\langle\tilde P+\tilde Q,\tilde P+\tilde Q\rangle-\langle\tilde P,\tilde P\rangle-\langle\tilde Q,\tilde Q\rangle\Bigr).
+$$</p>
+<p><em>Proof.</em> Substituting $\tilde P=\tilde Q$ gives the first display, and the polarisation identity is the standard recovery of a symmetric bilinear form from its diagonal over a field of characteristic different from two (<em>Quadratic Forms and Polarisation</em>, §<em>The Polar Form</em>).</p>
+<p><strong>Remark (the diagonal is not a norm).</strong> The diagonal takes both signs, $\langle e_0,e_0\rangle=1$ against $\langle e_1,e_1\rangle=-1$, so the form is indefinite and its diagonal is not a norm; the length it can supply comes from a symmetry of the form and not from the diagonal, by the argument of <em>Four Forms but One Topology on the Biquaternion Algebra</em>. The same warning separates the two bilinear forms: the diagonal of the complex bilinear form is $\sum_\mu\varepsilon_\mu Q_\mu^2$, the diagonal of the quaternion bilinear form is the norm $\sum_\mu Q_\mu^2$.</p>
+<h2 id="the-gram-matrix-and-the-realification">The Gram Matrix and the Realification</h2>
+<p><strong>Definition.</strong> The <strong>Gram matrix</strong> of the form in the coefficient basis is the sign matrix</p>
+<p>$$
+G_{ij}=\langle e_i,e_j\rangle=\varepsilon_i\,\delta_{ij},\qquad G=\operatorname{diag}(1,-1,-1,-1)=D.
+$$</p>
+<p>It is symmetric, as a bilinear form must be; it is invertible, of determinant $\det D=-1$, so the form is non-degenerate; and its inertia over the reals is $(1,3)$, the positive direction being $e_0$ and the negative directions $e_1,e_2,e_3$. This is the whole of the inertia of the coefficient basis.</p>
+<p><strong>Proposition (congruence and uniqueness over $\mathbb{C}$).</strong> Under a change of basis with matrix $S$ the Gram matrix becomes $S^{\mathsf T}DS$. Two forms are isometric exactly when their Gram matrices are congruent, so the rank and the discriminant are invariants of the isometry class. Over $\mathbb{C}$ every non-degenerate symmetric form of rank $4$ is congruent to $D$, and the complex bilinear form is therefore the unique non-degenerate symmetric form on $\mathbb{C}^4$ up to linear isometry.</p>
+<p><em>Proof.</em> The Gram matrix in the new basis is $S^{\mathsf T}DS$ by bilinearity; congruence preserves the rank and multiplies the determinant by $(\det S)^2$, so the rank and the discriminant, the determinant modulo squares, are the invariants of the isometry class (<em>Bilinear Forms</em>, §<em>Congruence and the Discriminant</em>). Over $\mathbb{C}$, where every non-zero scalar is a square, the discriminant is trivial and the classification of non-degenerate symmetric forms is by the rank alone; the determinant of a rank-$4$ form can be normalised to $1$. Verified: the diagonal change of basis $\operatorname{diag}(1,i,i,i)$ carries $D$ to the orthogonal form $\mathrm{I}_4$, so the two are isometric over $\mathbb{C}$; their isometry groups are conjugate, which is why the two bilinear forms of the algebra share $O_4(\mathbb{C})$.</p>
+<p><strong>Proposition (the realification).</strong> Write a biquaternion on the eight real basis elements $(e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3)$ as $\tilde Q=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$. The realified form is the real symmetric form of Gram matrix</p>
+<p>$$
+\operatorname{diag}(D,-D)=\operatorname{diag}(1,-1,-1,-1,-1,1,1,1),
+$$</p>
+<p>of signature $(4,4)$.</p>
+<p><em>Proof.</em> Because the form is $\mathbb{C}$-bilinear, its values on the real basis are read from $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and the centrality of $i$,</p>
+<p>$$
+\langle e_\mu,e_\nu\rangle=\varepsilon_\mu\delta_{\mu\nu},\qquad
+\langle e_\mu,ie_\nu\rangle=i\,\varepsilon_\mu\delta_{\mu\nu},\qquad
+\langle ie_\mu,ie_\nu\rangle=-\varepsilon_\mu\delta_{\mu\nu}.
+$$</p>
+<p>The middle entries are purely imaginary, so they do not contribute to the real part of the form, which is the realified symmetric form; the remaining entries are $\varepsilon_\mu\delta_{\mu\nu}$ on the first four basis elements and $-\varepsilon_\mu\delta_{\mu\nu}$ on the last four. The two blocks have opposite sign and four entries each, giving the signature $(4,4)$. Verified on the $8\times8$ real Gram matrix, whose eigenvalues are four $+1$ and four $-1$.</p>
+<p><strong>Remark (the sign flip is the complex structure).</strong> The passage from the block $D$ to the block $-D$ is the realification of the central scalar: a complex bilinear form reads $+1$ on a real direction and $-1$ on the same direction multiplied by $i$, since $\langle i\tilde P,i\tilde Q\rangle=-\langle\tilde P,\tilde Q\rangle$. The realified form is therefore split, of signature $(4,4)$, although the diagonal $\sum_\mu\varepsilon_\mu Q_\mu^2$ is a complex quadratic form and has no signature until a real form is chosen.</p>
+<p><strong>Remark (the central scalar is an anti-isometry).</strong> Multiplication by $i$ reverses the form, $\langle i\tilde P,i\tilde Q\rangle=-\langle\tilde P,\tilde Q\rangle$, so the central scalar is an anti-isometry and not an isometry; it exchanges the block $D$ with the block $-D$ in the realified matrix, hence the split signature, and it exchanges the positive definite Hermitian subspace with the negative definite anti-Hermitian one.</p>
+<h2 id="the-null-quadric">The Null Quadric</h2>
+<p><strong>Definition.</strong> The <strong>null quadric</strong> of the form is its zero set,</p>
+<p>$$
+\mathcal{Q}=\Bigl\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle=\sum_{\mu=0}^{3}\varepsilon_\mu Q_\mu^2=0\Bigr\}.
+$$</p>
+<p><strong>Proposition (dimension and smoothness).</strong> The null quadric is a complex quadric hypersurface of complex dimension $3$ and real dimension $6$. It is smooth of real dimension $6$ away from the apex $\tilde Q=0$, and the apex is its only singular point.</p>
+<p><em>Proof.</em> On $\mathbb{B}\cong\mathbb{C}^4$ the condition is the vanishing of the polynomial $f(Q_0,\dots,Q_3)=\sum_\mu\varepsilon_\mu Q_\mu^2$, whose gradient is $\nabla f=2(\varepsilon_0 Q_0,\dots,\varepsilon_3 Q_3)$; the gradient is non-zero exactly off the apex, so the complex hypersurface is smooth there, of complex dimension $3$ and real dimension $6$. At the apex all four complex partial derivatives vanish, so the apex is singular. Equivalently, $f$ gives the two real equations $\mathrm{Re}\,f=0$ and $\mathrm{Im}\,f=0$, whose real Jacobian has rank $2$ exactly off the apex. Verified on random points of $\mathcal{Q}$ and at the apex: the rank is $2$ off the apex and $0$ at it.</p>
+<p><strong>Proposition (rulings and isotropic planes).</strong> The null quadric is ruled. It carries two families of <strong>isotropic planes</strong>, each of complex dimension $2$ and real dimension $4$, on which the form vanishes identically; through each smooth point of the quadric pass two such planes, one from each family. For example</p>
+<p>$$
+W_{+}=\mathrm{span}_{\mathbb{C}}\{e_0+e_1,\;e_2+ie_3\},\qquad
+W_{-}=\mathrm{span}_{\mathbb{C}}\{e_0-e_1,\;e_2-ie_3\}
+$$</p>
+<p>are totally isotropic, and the maximal dimension of a totally isotropic subspace of the complex bilinear form is $2$ over $\mathbb{C}$, that is $4$ over $\mathbb{R}$.</p>
+<p><em>Proof.</em> On the generators of $W_{+}$ the form vanishes, $\langle e_0+e_1,e_0+e_1\rangle=1-1=0$, $\langle e_2+ie_3,e_2+ie_3\rangle=-1+i^2(-1)=-1+1=0$ and $\langle e_0+e_1,e_2+ie_3\rangle=0$, and the same computation holds for $W_{-}$; a $\mathbb{C}$-bilinear form vanishing on a generating set vanishes on the span, so both planes are totally isotropic. The upper bound is the Witt index: over $\mathbb{C}$ every non-degenerate symmetric form of rank $4$ is equivalent to the hyperbolic form, whose maximal totally isotropic dimension is $2$, and the two planes above attain it. The realified form, of signature $(4,4)$, has maximal totally isotropic real dimension $\min(4,4)=4$ over $\mathbb{R}$, attained for instance by $\operatorname{span}_{\mathbb{R}}\{e_0+e_1,\;ie_1+e_2,\;ie_2+e_3,\;ie_3+ie_0\}$. Verified: the form vanishes on $W_+$ and on $W_-$, and on the four real generators of the last span.</p>
+<p><strong>Proposition (the form is hyperbolic over $\mathbb{C}$).</strong> The form is an orthogonal sum of two hyperbolic planes. The four elements</p>
+<p>$$
+h_1=e_0+e_1,\qquad h_2=\tfrac{1}{2}(e_0-e_1),\qquad h_3=e_2+ie_3,\qquad h_4=\tfrac{1}{2}(ie_3-e_2)
+$$</p>
+<p>are isotropic, $\langle h_i,h_i\rangle=0$; the only non-zero pairings among them are $\langle h_1,h_2\rangle=1$ and $\langle h_3,h_4\rangle=1$; and the Gram matrix in this basis is</p>
+<p>$$
+\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.
+$$</p>
+<p><em>Proof.</em> Direct substitution using $\langle e_i,e_j\rangle=\varepsilon_i\delta_{ij}$: $\langle h_1,h_1\rangle=\varepsilon_0+\varepsilon_1=0$, $\langle h_2,h_2\rangle=\tfrac14(\varepsilon_0+\varepsilon_1)=0$ and $\langle h_1,h_2\rangle=\tfrac12(\varepsilon_0-\varepsilon_1)=1$; similarly $\langle h_3,h_3\rangle=\varepsilon_2-\varepsilon_3=0$, $\langle h_4,h_4\rangle=\tfrac14(\varepsilon_2-\varepsilon_3)=0$ and $\langle h_3,h_4\rangle=\tfrac12(-\varepsilon_2-\varepsilon_3)=1$; the pairings between the plane of $\{h_1,h_2\}$ and the plane of $\{h_3,h_4\}$ vanish because the two planes are spanned by disjoint units. Verified numerically on all sixteen pairings.</p>
+<p><strong>Remark (the hyperbolic splitting and the Witt index).</strong> The two hyperbolic planes of the basis are $\mathrm{span}\{h_1,h_2\}=\mathrm{span}\{e_0,e_1\}$ and $\mathrm{span}\{h_3,h_4\}=\mathrm{span}\{e_2,e_3\}$; each is non-degenerate of signature $(1,1)$ over the reals, the two are orthogonal to each other, and each contains exactly its two isotropic lines. The maximal totally isotropic dimension of a hyperbolic plane is $1$, and the index is additive over orthogonal sums, so the index of the form is $1+1=2$, in agreement with the Witt-index computation above.</p>
+<p><strong>Remark (the quadric is an affine cone over a smooth projective quadric).</strong> The defining polynomial is homogeneous, $f(t\tilde Q)=t^2f(\tilde Q)$ for $t\in\mathbb{C}$, so the null quadric is a complex cone with apex the origin: it is the affine cone over the projective quadric surface</p>
+<p>$$
+\bigl\{[Q_0:Q_1:Q_2:Q_3]\in\mathbb{P}^3:\textstyle\sum_\mu\varepsilon_\mu Q_\mu^2=0\bigr\}.
+$$</p>
+<p>The projective quadric is smooth, because the form is non-degenerate, and it is the ruled quadric surface whose two families of projective lines are the rulings of the previous proposition. The apex of the affine cone is the singularity recorded above, and every point of the quadric lies on a complex line through the apex.</p>
+<p><strong>Remark (the quadric is not the zero-divisor cone).</strong> The null quadric $\mathcal{Q}$ is the zero set of $\sum_\mu\varepsilon_\mu Q_\mu^2$, whereas the <strong>null cone</strong> of the algebra is the zero set of the quaternion bilinear diagonal $\sum_\mu Q_\mu^2$, whose non-zero elements are the zero divisors. The two complex cones are distinct. The element $e_0+e_1$ lies on $\mathcal{Q}$ and not on the zero-divisor cone, since $1-1=0$ while $1+1=2$; the element $e_0+ie_1$ lies on the zero-divisor cone and not on $\mathcal{Q}$, since $1+i^2=0$ while $1-i^2=2$; and the element $e_1+ie_2$ lies on both, since $1+i^2=0$ and $-1-(-1)=0$. The companion cone is <em>The Isotropic Structure of the Quaternion Bilinear Form</em>.</p>
+<h2 id="the-level-set">The Level Set</h2>
+<p><strong>Definition.</strong> The <strong>level set</strong> of the form at one is</p>
+<p>$$
+\mathcal{L}=\Bigl\{\tilde Q\in\mathbb{B}:\sum_{\mu=0}^{3}\varepsilon_\mu Q_\mu^2=1\Bigr\}.
+$$</p>
+<p><strong>Proposition (a non-compact complex quadric of real dimension $6$).</strong> The level set is a smooth affine complex quadric of complex dimension $3$ and real dimension $6$, and it is non-compact.</p>
+<p><em>Proof.</em> The defining polynomial $f-1$ has the same gradient as $f$, non-zero at every point of $\mathcal{L}$ since $\mathcal{L}$ avoids the apex, so $\mathcal{L}$ is a smooth complex hypersurface of complex dimension $3$ and real dimension $6$. At $\tilde Q=e_0$ the real Jacobian of $(\mathrm{Re}\,f,\mathrm{Im}\,f)$ has rank $2$, confirming the dimension by the implicit function theorem. For non-compactness, the real curve $\tilde Q(t)=\cosh t\,e_0+\sinh t\,e_1$, $t\in\mathbb{R}$, satisfies $\cosh^2 t-\sinh^2 t=1$ and is unbounded. Verified: the rank at $e_0$ is $2$ and the curve lies on $\mathcal{L}$.</p>
+<p><strong>Remark (the level set is not a group).</strong> Multiplicativity fails: with $\tilde Q(t)=\cosh t\,e_0+\sinh t\,e_1$ one has $\langle\tilde Q(t),\tilde Q(t)\rangle=1$ while $\tilde Q(t)^2=e_0+\sinh 2t\,e_1$, of diagonal value $1-\sinh^2 2t$, which differs from $1$ for $t\neq0$. The level set is therefore not closed under the product and is not a group. This separates it from the level set of the quaternion bilinear form, which is the norm-one group $G_1$ of <em>Biquaternion Norm and Invertibility</em>.</p>
+<p><strong>Remark (the level set is a complex quadric).</strong> Over $\mathbb{C}$ all non-degenerate quadratic forms of rank $4$ are equivalent, so the affine quadric $\mathcal{L}$ is the standard complex quadric of real dimension $6$, the complex analogue of the hyperboloid of a real form of signature $(1,3)$. Its place among the four level sets of the algebra is the table of <em>Introduction to Topology on the Biquaternions</em>, §<em>The Four Forms Compared</em>.</p>
+<h2 id="the-isometry-group">The Isometry Group</h2>
+<p><strong>Definition.</strong> An <strong>isometry</strong> of the form is a $\mathbb{C}$-linear map $T$ of $\mathbb{B}$ preserving it,</p>
+<p>$$
+\langle T\tilde P,T\tilde Q\rangle=\langle\tilde P,\tilde Q\rangle\qquad\text{for all }\tilde P,\tilde Q\in\mathbb{B}.
+$$</p>
+<p><strong>Theorem (the isometry group).</strong> In the coefficient basis the isometry group is</p>
+<p>$$
+\mathrm{Isom}\bigl(\langle\cdot,\cdot\rangle\bigr)=\{T\in GL_4(\mathbb{C}):T^{\mathsf T}DT=D\}=O_4(\mathbb{C}),
+$$</p>
+<p>of complex dimension $6$ and real dimension $12$, and it is non-compact. It is the same group as the isometry group of the quaternion bilinear form.</p>
+<p><em>Proof.</em> A $\mathbb{C}$-linear $T$ preserves the form exactly when $T^{\mathsf T}DT=D$, since the Gram matrix of the form on the two images is $T^{\mathsf T}DT$; the group so defined is the complex orthogonal group of the sign matrix. Its Lie algebra is $\{X:X^{\mathsf T}D+DX=0\}$, which is the space of antisymmetric complex $4\times4$ matrices under $X\mapsto DX$, of complex dimension $6$, hence real dimension $12$. The group is non-compact because it contains the hyperbolic rotation of the plane $\mathbb{R}\{e_0,e_1\}$, $e_0\mapsto\cosh u\,e_0+\sinh u\,e_1$ and $e_1\mapsto\sinh u\,e_0+\cosh u\,e_1$ with $e_2,e_3$ fixed, for every $u$. The same computation with Gram matrix $\mathrm{I}_4$ gives the isometry group of the quaternion bilinear form, $\{T:T^{\mathsf T}T=\mathrm{I}_4\}$, which is $O_4(\mathbb{C})$ as well. Verified: the real linear system $X^{\mathsf T}D+DX=0$ has $32$ unknowns and rank $20$, so its solution space has real dimension $12$.</p>
+<p><strong>Proposition (the real forms).</strong> The real structures of the algebra exhibit the real forms of $O_4(\mathbb{C})$. The Hermitian conjugation ${}^{*}$ is an antilinear isometry, $\langle\tilde P^{*},\tilde Q^{*}\rangle=\overline{\langle\tilde P,\tilde Q\rangle}$, with fixed space the Hermitian subspace $\mathbb{M}_+$, of restriction signature $(4,0)$; the $\mathbb{C}$-linear isometries commuting with ${}^{*}$ form the compact real orthogonal group $O(4)$, of real dimension $6$. The complex conjugation is an antilinear isometry of the same kind, with fixed space the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, of restriction signature $(1,3)$; the $\mathbb{C}$-linear isometries commuting with it form the real orthogonal group $O(1,3)$, of real dimension $6$. The conjugate real structure, with fixed space the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ of signature $(3,1)$, exhibits the isomorphic group $O(3,1)$.</p>
+<p><em>Proof.</em> In coordinates $(\tilde P^{*})_\mu=\varepsilon_\mu\overline{P_\mu}$ and $(\bar{\tilde P})_\mu=\overline{P_\mu}$. The outer sign of the form then gives $\langle\tilde P^{*},\tilde Q^{*}\rangle=\sum_\mu\varepsilon_\mu\,(\varepsilon_\mu\overline{P_\mu})(\varepsilon_\mu\overline{Q_\mu})=\sum_\mu\varepsilon_\mu^3\overline{P_\mu Q_\mu}=\sum_\mu\varepsilon_\mu\overline{P_\mu Q_\mu}$, since $\varepsilon_\mu^3=\varepsilon_\mu$ for $\varepsilon_\mu\in\{1,-1\}$, and $\langle\bar{\tilde P},\bar{\tilde Q}\rangle=\sum_\mu\varepsilon_\mu\overline{P_\mu Q_\mu}$ as well; both sums are $\overline{\langle\tilde P,\tilde Q\rangle}$. The fixed space of ${}^{*}$ is the Hermitian subspace and that of the complex conjugation is the quaternion subspace, of restriction signatures $(4,0)$ and $(1,3)$ from the restriction table below; a $\mathbb{C}$-linear map commuting with an antilinear involution is the complexification of a real map on the fixed space, and it preserves the form exactly when the real map does. Both real groups have real dimension $n(n-1)/2=6$. Verified on the realified restriction Gram matrices.</p>
+<p><strong>Remark (which subspace exhibits which real form).</strong> The Hermitian subspace is positive definite of signature $(4,0)$, so the real form of the isometry group it exhibits is the compact $O(4)$; the quaternion subspace is of signature $(1,3)$, so the real form it exhibits is $O(1,3)$, and the anti-quaternion subspace exhibits the isomorphic $O(3,1)$. The two are the two real forms of the same complex group $O_4(\mathbb{C})$, and they are separated by the choice of real structure, the Hermitian conjugation ${}^{*}$ against the complex conjugation. The natural conjugation ${}^{\natural}$ is a $\mathbb{C}$-linear isometry and is not a real structure: it fixes only the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, and it is the map that transports the complex bilinear form to the quaternion bilinear form, as the comparison below records.</p>
+<p><strong>Remark (the complex isometry group is not the real one).</strong> The isometry group here is the group of $\mathbb{C}$-linear isometries. The group of <em>real-linear</em> isometries of the realified form is the larger $O(4,4)$, of real dimension $28$, and it is not the subject of this article; the group $O_4(\mathbb{C})$ is the group the form defines over $\mathbb{C}$, and it is the one shared with the quaternion bilinear form.</p>
+<h2 id="the-restrictions-to-the-six-subspaces">The Restrictions to the Six Subspaces</h2>
+<p>The form restricts to each of the six distinguished real subspaces of <em>Introduction to the Six Subspaces</em>, giving a real symmetric form on a real space. Its Gram matrix in the natural basis of each subspace is diagonal, and the six signatures are the following table. The table is stated once, here; the restriction matrices, the definite rows, the isotropic lines of the indefinite rows and the isometry group of each restriction are developed in <em>The Six Subspaces under the Complex Bilinear Form</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Real basis</th>
+<th>Restricted form</th>
+<th>Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Centre $\mathbb{C}_{\mathbb{B}}$</td>
+<td>$e_0,\,ie_0$</td>
+<td>$q_0^2-(q'_0)^2$</td>
+<td>$(1,1)$</td>
+</tr>
+<tr>
+<td>Vector $\mathrm{Vect}(\mathbb{B})$</td>
+<td>$e_k,\,ie_k$</td>
+<td>$\sum_k\bigl((q'_k)^2-q_k^2\bigr)$</td>
+<td>$(3,3)$</td>
+</tr>
+<tr>
+<td>Quaternion $\mathbb{H}_{\mathbb{B}}$</td>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>$q_0^2-q_1^2-q_2^2-q_3^2$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$ie_0,ie_1,ie_2,ie_3$</td>
+<td>$-(q'_0)^2+(q'_1)^2+(q'_2)^2+(q'_3)^2$</td>
+<td>$(3,1)$</td>
+</tr>
+<tr>
+<td>Hermitian $\mathbb{M}_+$</td>
+<td>$e_0,ie_1,ie_2,ie_3$</td>
+<td>$q_0^2+(q'_1)^2+(q'_2)^2+(q'_3)^2$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>Anti-Hermitian $\mathbb{M}_-$</td>
+<td>$ie_0,e_1,e_2,e_3$</td>
+<td>$-\bigl((q'_0)^2+q_1^2+q_2^2+q_3^2\bigr)$</td>
+<td>$(0,4)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two rows are definite: the Hermitian subspace is positive definite of signature $(4,0)$ and the anti-Hermitian subspace negative definite of signature $(0,4)$, and the two are exchanged by multiplication by $i$, under which the form changes sign. The four remaining rows are indefinite, and they split into the sign-mirror pairs $(1,3),(3,1)$ on the quaternion and anti-quaternion subspaces and $(1,1),(3,3)$ on the centre and the vector subspace, again exchanged by $i$. Every entry is the inertia of the realified restriction in the natural real basis of the subspace, and the verification is the diagonal of the restricted form.</p>
+<p><strong>Remark (the centre and the vector subspace are orthogonal complements).</strong> The restricted form is diagonal in the natural bases, so the centre $\mathbb{C}_{\mathbb{B}}$ and the vector subspace $\mathrm{Vect}(\mathbb{B})$ are mutually orthogonal and together fill the algebra,</p>
+<p>$$
+\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B}),
+$$</p>
+<p>an orthogonal decomposition of the whole algebra. This is the real shadow of the coefficient splitting of an element into its scalar part and its vector part.</p>
+<h2 id="comparison-with-the-other-three-forms">Comparison with the Other Three Forms</h2>
+<p>The complex bilinear form is the first of the four forms of the algebra. It is nearest to the <strong>quaternion bilinear form</strong> $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$, which it meets in the Gram matrix test: the two have Gram matrices $D$ and $\mathrm{I}_4$, they realify to the same signature $(4,4)$, they share the isometry group $O_4(\mathbb{C})$, and they differ on the six subspaces exactly where the sign vector $\varepsilon$ acts. The comparison with the complex sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$ and the quaternion sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ is the four-row table of <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Forms in Comparison</em>: the two sesquilinear forms are conjugate-linear in the second argument, and of the four only the complex sesquilinear form is definite. The four Gram matrices together are <em>The Gram Matrices of the Four Forms</em>, the four realified tables side by side are <em>The Realification of the Four Forms</em>, and the comparison of the two bilinear forms on the six subspaces is <em>The Six Subspaces under the Quaternion Bilinear Form</em>.</p>
+<p><strong>Remark (the natural conjugation turns one bilinear form into the other).</strong> The two bilinear forms are isometric by an explicit $\mathbb{C}$-linear map of the algebra, the natural conjugation:</p>
+<p>$$
+\langle\tilde P^{\natural},\tilde Q\rangle=\sum_\mu\varepsilon_\mu^2 P_\mu Q_\mu=\sum_\mu P_\mu Q_\mu=\langle\tilde P,\tilde Q\rangle_{\natural}.
+$$</p>
+<p>The natural conjugation carries the complex bilinear form to the quaternion bilinear form, and the whole difference of the two forms is the sign vector $\varepsilon$ that it absorbs in the first argument.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p>The form is evaluated on a few elements that recur in the group.</p>
+<p><strong>The units.</strong> The form is diagonal on the coefficient basis, $\langle e_0,e_0\rangle=1$ and $\langle e_k,e_k\rangle=-1$ for $k=1,2,3$, with every cross entry zero. Two mixed elements follow from the diagonal: $\langle e_0+e_1,e_0+e_1\rangle=1-1=0$ and $\langle e_0+ie_1,e_0+ie_1\rangle=1-i^2=2$.</p>
+<p><strong>The two cones crossed.</strong> The element $e_1+ie_2$ is null, $\langle e_1+ie_2,e_1+ie_2\rangle=-1-(-1)=0$, and it is a zero divisor as well; the element $e_0+e_1$ is null and is not a zero divisor; and the element $e_0+ie_1$ is a zero divisor and is not null. The three together mark the two complex cones of the previous section.</p>
+<p><strong>The Hermitian sector is positive definite.</strong> For real $a,b$ the element $a e_0+b\,ie_1$ has diagonal value $a^2+b^2$, positive off zero, and the computation generalises to the whole Hermitian subspace: the restriction there is positive definite of signature $(4,0)$, and the anti-Hermitian subspace is negative definite because the form changes sign under multiplication by $i$.</p>
+<p><strong>The polarisation on an orthogonal pair.</strong> For the pair $e_0,e_1$ the polarisation identity gives $\langle e_0,e_1\rangle=\tfrac12(\langle e_0+e_1,e_0+e_1\rangle-\langle e_0,e_0\rangle-\langle e_1,e_1\rangle)=\tfrac12(0-1+1)=0$, the diagonal expression of the vanishing off-diagonal entry.</p>
+<p><strong>An isometry.</strong> The hyperbolic rotation of the plane $\mathbb{R}\{e_0,e_1\}$, with $T e_0=\cosh u\,e_0+\sinh u\,e_1$, $T e_1=\sinh u\,e_0+\cosh u\,e_1$ and $T e_2=e_2$, $T e_3=e_3$, preserves the form for every real $u$; it is the element of $O_4(\mathbb{C})$ that makes the isometry group non-compact.</p>
+<p><strong>The centre and its null lines.</strong> On the centre the restriction is $q_0^2-(q'_0)^2$, null exactly on the two real lines $\mathbb{R}(e_0\pm ie_0)$; the centre is the hyperbolic plane of signature $(1,1)$ in the restriction table, and its two null directions are the two isotropic lines of that plane.</p>
+<p><strong>The isotropic plane $W_+$.</strong> The elements $\tilde Q=a(e_0+e_1)+b(e_2+ie_3)$ with $a,b\in\mathbb{C}$ are all null, and they are the isotropic plane $W_+$ of the null-quadric section. A plane of the other ruling is $\mathrm{span}\{e_0+e_1,e_2-ie_3\}$, which meets $W_+$ in the line $\mathbb{C}(e_0+e_1)$ and is totally isotropic, since $\langle e_0+e_1,e_2-ie_3\rangle=0$ and $\langle e_2-ie_3,e_2-ie_3\rangle=-1-(-1)=0$.</p>
 <h2 id="summary">Summary</h2>
-<p>To be written. The form is the scalar part of the plain product, of Gram matrix $D$ and realified signature $(4,4)$.</p>
+<p>The <strong>complex bilinear form</strong> of the biquaternion algebra is $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$; it is $\mathbb{C}$-bilinear, symmetric and non-degenerate, of Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$, of determinant $-1$ and inertia $(1,3)$, and of realified Gram matrix $\operatorname{diag}(D,-D)$ of signature $(4,4)$. Its diagonal is the quadratic form $\sum_\mu\varepsilon_\mu Q_\mu^2$, which it polarises. Its null quadric $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ is a complex quadric of real dimension $6$, smooth away from the apex, ruled by two families of totally isotropic planes of complex dimension $2$; the maximal totally isotropic dimension is $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$, and the quadric is not the zero-divisor cone. Its level set $\sum_\mu\varepsilon_\mu Q_\mu^2=1$ is a non-compact complex quadric of real dimension $6$, and it is not a group. Its isometry group is $O_4(\mathbb{C})$, of complex dimension $6$ and real dimension $12$, shared with the quaternion bilinear form, with real forms $O(1,3)$ on the quaternion subspace and the compact $O(4)$ on the Hermitian subspace. Its restrictions to the six distinguished real subspaces carry the signatures $(1,1)$, $(3,3)$, $(1,3)$, $(3,1)$, $(4,0)$ and $(0,4)$. The form differs from the quaternion bilinear form by the sign vector $\varepsilon$ alone.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -83,19 +245,50 @@ $$</p>
 <td>the complex bilinear form</td>
 </tr>
 <tr>
-<td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>
-<td>its Gram matrix in the coefficient basis</td>
+<td>$\varepsilon=(1,-1,-1,-1)$</td>
+<td>the sign vector</td>
 </tr>
 <tr>
-<td>$(4,4)$</td>
-<td>its realified signature</td>
+<td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>its Gram matrix in the coefficient basis; determinant $-1$; inertia $(1,3)$</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(D,-D)$</td>
+<td>its realified Gram matrix; signature $(4,4)$</td>
+</tr>
+<tr>
+<td>$\sum_\mu\varepsilon_\mu Q_\mu^2=0$</td>
+<td>the null quadric; real dimension $6$; the isotropic planes of real dimension $4$</td>
+</tr>
+<tr>
+<td>$\sum_\mu\varepsilon_\mu Q_\mu^2=1$</td>
+<td>the level set; a non-compact complex quadric of real dimension $6$</td>
+</tr>
+<tr>
+<td>$O_4(\mathbb{C})$</td>
+<td>the isometry group; real dimension $12$</td>
+</tr>
+<tr>
+<td>$O(1,3)$, $O(4)$</td>
+<td>its real forms on the quaternion and the Hermitian subspace</td>
+</tr>
+<tr>
+<td>$(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$</td>
+<td>the signatures of the six restrictions</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001).</li>
-<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge, 1995).</li>
+<li><em>The Six Subspaces under the Complex Bilinear Form</em> (<code>articles_maths/the-six-subspaces-under-the-complex-bilinear-form.md</code>), for the restriction matrices, the definite rows and the isometry groups of the restrictions</li>
+<li><em>Association and the Transpose on the Biquaternion Algebra</em> (<code>articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.md</code>), for the transpose the form defines on the operators</li>
+<li><em>The Four Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the four forms, their Gram matrices, their signatures and their isometry groups</li>
+<li><em>The Quaternion Bilinear Form on the Biquaternion Algebra</em> (<code>articles_maths/the-quaternion-bilinear-form-on-the-biquaternion-algebra.md</code>), for the quaternion bilinear companion of Gram matrix $\mathrm{I}_4$</li>
+<li><em>The Four Biquaternion Complex Products</em> (<code>articles_maths/the-four-biquaternion-complex-products.md</code>), for the plain product whose scalar part is the form</li>
+<li><em>Introduction to the Six Subspaces</em> (<code>articles_maths/introduction-to-the-six-subspaces.md</code>), for the six distinguished real subspaces</li>
+<li><em>Bilinear Forms</em> (<code>articles_maths/bilinear-forms.md</code>) and <em>Quadratic Forms and Polarisation</em> (<code>articles_maths/quadratic-forms-and-polarisation.md</code>), for the general theory of bilinear forms, their Gram matrices, non-degeneracy and Sylvester's law</li>
+<li><em>The Isotropic Structure of the Quaternion Bilinear Form</em> (<code>articles_maths/the-isotropic-structure-of-the-quaternion-bilinear-form.md</code>), for the companion cone the quadric must not be identified with</li>
+<li>Werner Greub, <em>Linear Algebra</em>, 4th edition (Springer, 1981), for the complex orthogonal groups and their real forms.</li>
 </ul>
       </div>
     </main>
