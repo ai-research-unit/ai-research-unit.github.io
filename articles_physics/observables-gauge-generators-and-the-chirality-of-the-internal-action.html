@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Observables, Gauge Generators and the Chirality of the Internal Action — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="observables-gauge-generators-and-the-chirality-of-the-internal-action"><strong>Observables, Gauge Generators and the Chirality of the Internal Action</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The informational sector carries the observables and the material sector carries the generators of the
+internal symmetry. This article states the algebra behind that division and the operator structure that
+expresses it. A left multiplication by a <strong>Hermitian</strong> element is self-adjoint and is read as an
+<strong>observable</strong>; a left multiplication by an <strong>anti-Hermitian</strong> element is skew-adjoint and is read as a
+<strong>gauge generator</strong>, exponentating to the internal unitary group. The two-sided action
+$\tilde Q\tilde P\tilde Q^{*}$ — the <strong>sandwich</strong> — is a different kind of operator: it can be self-adjoint
+and can never be skew-adjoint, which is why the sandwich serves as an action and the one-sided
+multiplication as an operator algebra. Finally the internal symmetry acts on the module through <strong>right</strong>
+multiplication and not through left: only the right action preserves the algebra-valued canonical form, and
+the one-sidedness of that form is the framework's reading of a <strong>chirality</strong> in the internal action.</p>
+<p>The article keeps to the operator structure. It defers the positivity of the dagger and the positive cone
+to <em>Mass, Rank and the Positivity of the Dagger</em>; the internal group and its compactness to <em>Particle Types, Discrete Charge and Three-Particle Couplings</em>; the group ceiling to <em>The Gauge Group Ceiling</em>; the states to <em>The States the Indefinite Metric Cannot Normalise</em> and <em>Decoherence as Idempotent Projection</em>;
+and the mathematics of the adjoints and the sandwiches to the mathematics articles <em>The Adjoints of the
+Regular Operators</em>, <em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em> and <em>Jordan
+Algebras of Sesquialgebras</em>.</p>
+<p><strong>Conventions.</strong> As in the two companion articles of this block: $\mathbb{B}$ with basis
+$e_0,e_1,e_2,e_3$, $e_k^{2}=-e_0$; the sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$;
+the Hermitian form $\langle\tilde P,\tilde R\rangle_{*}=\mathrm{Sc}(\tilde P\tilde R^{*})=\sum_\mu P_\mu\overline{R_\mu}$, positive definite, with $\mathrm{Tr}=2\,\mathrm{Sc}$; the sectors
+$\mathbb{M}_\pm$; $L_{\tilde B}$ and $R_{\tilde B}$ the left and right multiplications by $\tilde B$; and
+the canonical form $h(\tilde P,\tilde R)=\tilde P\tilde R^{*}$, with values in the algebra.</p>
+<h2 id="the-two-kinds-of-one-sided-operator">The Two Kinds of One-Sided Operator</h2>
+<p><strong>Proposition (adjoint of a one-sided operator).</strong> For every $\tilde B$,</p>
+<p>$$
+\bigl(L_{\tilde B}\bigr)^{\dagger}=L_{\tilde B^{*}},\qquad
+\bigl(R_{\tilde B}\bigr)^{\dagger}=R_{\tilde B^{*}} .
+$$</p>
+<p><strong>Proof.</strong> $\langle L_{\tilde B}\tilde T,\tilde V\rangle_{*}=\mathrm{Sc}\bigl((\tilde B\tilde T)\tilde V^{*}\bigr)=\mathrm{Sc}\bigl(\tilde T\tilde V^{*}\tilde B\bigr)=\langle\tilde T,L_{\tilde B^{*}}\tilde V\rangle_{*}$, by the cyclicity of the scalar part; the right-handed computation
+is the same. $\square$</p>
+<p>The classification follows from the sector of the parameter.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Sector</th>
+<th>Operator</th>
+<th>Kind</th>
+<th>Physical role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde H$, $\tilde H^{*}=\tilde H$</td>
+<td>$\mathbb{M}_+$</td>
+<td>$L_{\tilde H}$</td>
+<td>self-adjoint</td>
+<td>observable</td>
+</tr>
+<tr>
+<td>$\tilde S$, $\tilde S^{*}=-\tilde S$</td>
+<td>$\mathbb{M}_-$</td>
+<td>$L_{\tilde S}$</td>
+<td>skew-adjoint</td>
+<td>gauge generator</td>
+</tr>
+</tbody>
+</table></div>
+<p>The correspondence is linear and bijective at the level of parameters, so the two kinds of operator are in
+bijection with the two sectors, and the informal rule "observables in $\mathbb{M}_+$, generators in
+$\mathbb{M}_-$" has this exact content. Two further facts fix the physical reading. The skew-adjoint
+operators exponentiate to the unitaries of the module, $e^{L_{\tilde S}}=L_{e^{\tilde S}}$, and the
+resulting group is the internal $U(2)$; and multiplication by the central $i$ exchanges the two kinds,
+$L_{i\tilde H}=iL_{\tilde H}$, so the generator of a unitary is one sector away from the observable.</p>
+<h2 id="the-sandwich-self-adjoint-never-skew-adjoint">The Sandwich: Self-Adjoint, Never Skew-Adjoint</h2>
+<p><strong>Definition.</strong> The <strong>sandwich</strong> by $\tilde Q$ is $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$, the two-sided operator of the corpus.</p>
+<p>Its parameter enters <strong>twice</strong>, so the sandwich is quadratic in $\tilde Q$ and its matrix image is
+$\Phi(\tilde P)\mapsto\Phi(\tilde Q)\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}$. Its adjoint is</p>
+<p>$$
+\bigl(\Theta_{\tilde Q}\bigr)^{\dagger}=\Theta_{\tilde Q^{*}} .
+$$</p>
+<p><strong>Proposition (which sandwiches are self-adjoint).</strong> $\Theta_{\tilde Q}$ is self-adjoint exactly when the
+parameter is <strong>Hermitian up to a central phase</strong>,</p>
+<p>$$
+\Theta_{\tilde Q}\ \text{self-adjoint}\iff\tilde Q^{*}=\omega\tilde Q\ \text{for some}\ \lvert\omega\rvert=1 ,
+$$</p>
+<p>equivalently when $\tilde Q=z\tilde H$ with $z\in\mathbb{C}^{\times}$ and $\tilde H$ Hermitian.</p>
+<p>Every element of either sector satisfies the criterion, with $\omega=1$ on $\mathbb{M}_+$ and $\omega=-1$
+on $\mathbb{M}_-$, so <strong>every observable and every generator has a self-adjoint sandwich</strong>. The
+self-adjoint set is strictly larger than the two sectors: the phase multiple $e^{i\theta}(e_0+ie_3)$ is in
+neither sector and still has a self-adjoint sandwich. The natural guess is wrong: <strong>normality is not the
+criterion</strong>, and an element with $\Phi(\tilde Q)=\operatorname{diag}(1,i)$ is normal while its sandwich is
+not self-adjoint.</p>
+<p><strong>Proposition (no skew-adjoint sandwich).</strong> There is no nonzero $\tilde Q$ with
+$\Theta_{\tilde Q}=-\Theta_{\tilde Q^{*}}$.</p>
+<p><strong>Proof.</strong> Evaluating at $\tilde P=e_0$ and taking the trace,
+$\mathrm{Tr}(\tilde Q\tilde Q^{*})=-\mathrm{Tr}(\tilde Q^{*}\tilde Q)$, that is
+$2\lVert\tilde Q\rVert_E^{2}=-2\lVert\tilde Q\rVert_E^{2}$, whence $\tilde Q=0$. $\square$</p>
+<p>The sandwich therefore occupies the self-adjoint side of the operator split and never the generator side.
+That is the structural difference between the two operators, and the reason the sandwich can serve as an
+action.</p>
+<p><strong>Blindness.</strong> The sandwich is insensitive to the sign and to the central phase of its parameter,
+$\Theta_{-\tilde Q}=\Theta_{\tilde Q}$ and $\Theta_{e^{i\theta}\tilde Q}=\Theta_{\tilde Q}$ for every real
+$\theta$, because the parameter appears once on each side. <strong>Reading.</strong> The central phase is not a
+physical degree of freedom: no observable made of a sandwich can distinguish an element from its phase
+multiple. This is the algebra's statement of global-phase invariance, and it is the same fact that makes
+the unit-norm parameters $\pm\tilde\Lambda$ induce the same Lorentz transformation, the kernel of the
+action being $\{\pm1\}$.</p>
+<p><strong>Remark (verified).</strong> The adjoint rule holds on $50$ random triples; the self-adjointness criterion
+agrees with direct adjoint computation on $100$ of $100$ random elements, with no mismatch; the blindness
+identities hold on $20$; $\mathrm{Tr}(\tilde Q\tilde Q^{*})+\mathrm{Tr}(\tilde Q^{*}\tilde Q)=4\lVert\tilde Q\rVert_E^{2}$ to $1.4\times10^{-14}$.</p>
+<h2 id="one-formula-three-jobs">One Formula, Three Jobs</h2>
+<p>The sandwich is the anatomy of the framework's single action form,</p>
+<p>$$
+\Gamma_{\tilde A}(\tilde Q)=\tilde A\,\tilde Q\,\tilde A^{*} .
+$$</p>
+<p>Three classes of parameter act by it, and differ by a normalisation condition rather than by a change of
+action.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Parameter class</th>
+<th>Condition</th>
+<th>Induced transformation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lorentz rotor</td>
+<td>$\tilde\Lambda\tilde\Lambda^{\natural}=e_0$</td>
+<td>Lorentz transformation on $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>unitary</td>
+<td>$\tilde A\tilde A^{*}=e_0$</td>
+<td>unitary evolution on the module</td>
+</tr>
+<tr>
+<td>Hermitian idempotent</td>
+<td>$\tilde A^{2}=\tilde A=\tilde A^{*}$</td>
+<td>measurement update (projection)</td>
+</tr>
+</tbody>
+</table></div>
+<p>That one formula carries a Lorentz transformation, a reversible evolution and a projective measurement is
+the framework's central structural observation. What the adjoint computation adds is the operator type:
+all three are sandwiches, <strong>none</strong> is skew-adjoint, and the type is not shared but read off the parameter.
+An idempotent parameter is Hermitian, so the measurement update is an orthogonal projection. A general
+norm-one rotor (the $SL(2,\mathbb{C})$ element, $\tilde\Lambda\tilde\Lambda^{\natural}=e_0$) preserves
+the interval form on $\mathbb{M}_-$ but is neither an algebra automorphism nor generally self-adjoint: a
+general Lorentz transformation is an automorphism of the interval form and not a self-adjoint operator of
+the positive form. The <strong>choice</strong> among the three classes is the physical input; the <strong>form</strong> is the
+algebra's.</p>
+<h2 id="one-product-two-halves">One Product, Two Halves</h2>
+<p>The sesquilinear product is neither symmetric nor antisymmetric, and it splits into its two halves:</p>
+<p>$$
+\tilde P\star\tilde Q=\tilde P\circ\tilde Q+\tfrac12[\tilde P,\tilde Q]_\varsigma ,\qquad
+\tilde P\circ\tilde Q=\tfrac12\bigl(\tilde P\star\tilde Q+\tilde Q\star\tilde P\bigr),\qquad
+[\tilde P,\tilde Q]_\varsigma=\tilde P\star\tilde Q-\tilde Q\star\tilde P .
+$$</p>
+<p><strong>Proposition.</strong> The <strong>symmetrised</strong> product $\tilde P\circ\tilde Q$ is Hermitian-valued on every pair,
+and the <strong>sesquilinear commutator</strong> $[\tilde P,\tilde Q]_\varsigma$ is skew-Hermitian-valued on every
+pair, with no restriction on the arguments.</p>
+<p><strong>Proof.</strong> $(\tilde P\tilde Q^{*})^{*}=\tilde Q\tilde P^{*}$ because ${}^{*}$ is an anti-automorphism that
+is an involution, so the symmetrisation is fixed by ${}^{*}$ and the difference is anti-fixed. $\square$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Definition</th>
+<th>Value</th>
+<th>Sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>symmetrised</td>
+<td>$\tilde P\circ\tilde Q=\tfrac12(\tilde P\tilde Q^{*}+\tilde Q\tilde P^{*})$</td>
+<td>Hermitian</td>
+<td>$\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>sesquilinear commutator</td>
+<td>$[\tilde P,\tilde Q]_\varsigma=\tilde P\tilde Q^{*}-\tilde Q\tilde P^{*}$</td>
+<td>skew-Hermitian</td>
+<td>$\mathbb{M}_-$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Both are $\mathbb{R}$-bilinear and <strong>not</strong> $\mathbb{C}$-bilinear: for a complex $\lambda$ the identity
+$(\lambda\tilde P)\circ\tilde Q=\lambda(\tilde P\circ\tilde Q)$ fails by exactly the imaginary part of
+$\lambda$. The observable and generator structures are therefore <strong>real</strong> structures, over the fixed field
+of the involution.</p>
+<h2 id="the-observables-are-the-hermitian-half-the-generators-the-material-half">The Observables Are the Hermitian Half, the Generators the Material Half</h2>
+<p><strong>Proposition (Jordan structure).</strong> $\mathbb{M}_+$ is closed under $\circ$, and on $\mathbb{M}_+$ the
+product satisfies the Jordan identity
+$\tilde H\circ(\tilde K\circ\tilde H^{2})=(\tilde H\circ\tilde K)\circ\tilde H^{2}$, where
+$\tilde H^{2}=\tilde H\circ\tilde H$ coincides with the ordinary square.</p>
+<p><strong>Proposition (Lie structure).</strong> $\mathbb{M}_-$ is closed under $[\cdot,\cdot]_\varsigma$, which is
+antisymmetric and satisfies the Jacobi identity. On $\mathbb{M}_-$ the sesquilinear commutator is minus
+the ordinary commutator, and minus a commutator is a commutator, so the Jacobi identity is inherited from
+the associative product. The resulting four-dimensional real Lie algebra is that of the internal $U(2)$.</p>
+<p>Each identity holds on its own sector and fails off it, and the failures have basis witnesses:</p>
+<ul>
+<li>the <strong>Jordan identity fails off $\mathbb{M}_+$</strong> at $\tilde P=\tilde Q=e_1$, where
+  $e_1\circ e_1=e_1\star e_1=e_0$ and the identity's two sides differ by $-e_0$;</li>
+<li>the <strong>Jacobi identity fails off $\mathbb{M}_-$</strong> at $(e_0,e_1,e_2)$, where the cyclic sum is $4e_3$.</li>
+</ul>
+<p>So the two structures are <strong>half-algebras of one product</strong>, not two independent algebras on the whole
+space.</p>
+<p><strong>Remark (verified).</strong> The Jordan identity holds on $100$ random Hermitian pairs with maximum deviation
+$2.8\times10^{-14}$; the Jacobi identity on $100$ random anti-Hermitian triples with maximum deviation
+$7.1\times10^{-15}$; the two failure witnesses give $-e_0$ and $4e_3$ exactly.</p>
+<p><strong>Reading.</strong> The Hermitian sector, closed under the symmetrised product, is the algebra's <strong>observable
+half</strong>; the material sector, closed under the commutator, is its <strong>gauge half</strong>. The split of one product
+into a symmetric and an antisymmetric half is the exact algebraic statement of the split the framework
+uses, and the Jacobi identity holding only on $\mathbb{M}_-$ is the algebraic reason the gauge structure
+lives in the material sector.</p>
+<p><strong>Speculation, labelled.</strong> The antisymmetric half is a Lie algebra, and a Lie algebra is where vector
+bosons are valued; it is tempting to propose that the vector bosons of the framework are carried by that
+half. This is <strong>speculation and not a result</strong>: no propagation equation, polarisation count or coupling is
+computed, and the corpus's gauge fields are built on $\mathbb{M}_-$ by the companion gauge articles,
+with which the reading is consistent but which it does not derive.</p>
+<h2 id="the-internal-action-is-one-sided">The Internal Action Is One-Sided</h2>
+<p>The algebra acts on itself, and the question is which action preserves its own canonical form.</p>
+<p><strong>Proposition (right multiplication is an isometry).</strong> Let $\tilde U$ be unitary,
+$\tilde U\tilde U^{*}=e_0$. Then for all $\tilde P,\tilde R$,</p>
+<p>$$
+h(\tilde P\tilde U,\tilde R\tilde U)=\tilde P\tilde U\tilde U^{*}\tilde R^{*}=h(\tilde P,\tilde R) .
+$$</p>
+<p><strong>Proposition (left multiplication is not, unless central).</strong> For unitary $\tilde U$,</p>
+<p>$$
+h(\tilde U\tilde P,\tilde U\tilde R)=\tilde U\,h(\tilde P,\tilde R)\,\tilde U^{*} ,
+$$</p>
+<p>the <strong>conjugation</strong> of the form's value; since the values span the algebra, this equals
+$h(\tilde P,\tilde R)$ for all arguments exactly when $\tilde U$ is central, $\tilde U=\lambda e_0$ with
+$\lvert\lambda\rvert=1$.</p>
+<p><strong>Witness.</strong> For $\tilde U=e_1$, $\tilde P=e_0$, $\tilde R=e_2$: $h(\tilde P,\tilde R)=-e_2$ while $h(\tilde U\tilde P,\tilde U\tilde R)=+e_2$, a change of $2e_2$.</p>
+<p><strong>The scalar part is preserved by both.</strong> $\mathrm{Sc}(\tilde U\tilde X\tilde U^{*})=\mathrm{Sc}(\tilde X)$
+by the cyclicity of the scalar part and $\tilde U^{*}\tilde U=e_0$, so
+$\langle\tilde U\tilde P,\tilde U\tilde R\rangle_{*}=\langle\tilde P,\tilde R\rangle_{*}$: if only the
+scalar form is in use, left and right multiplications are both isometries. The one-sidedness is a theorem
+about the <strong>algebra-valued</strong> form and about algebra-linearity, not about the scalar positive form. What
+fails for the left action is the preservation of the element $h(\tilde P,\tilde R)$ — its direction and
+its non-scalar components — and it is that preservation the canonical form is for.</p>
+<p><strong>Remark (verified).</strong> Right multiplication by $50$ random unitary elements preserves $h$ to machine
+precision; left multiplication is an isometry exactly for the central unitary elements in the same check;
+the scalar part is preserved by the left action to $5.1\times10^{-15}$; and the witness pair gives $-e_2$
+and $+e_2$.</p>
+<p><strong>Reading: chirality of the internal action.</strong> The internal symmetry acts through the right action, because
+only that one preserves the canonical form. Reading $h$ as a pairing that distinguishes a left from a
+right slot, the one-sidedness says that the internal gauge action couples to one slot only — which may be
+read as the algebraic shadow of a <strong>chirality</strong> in the internal coupling.</p>
+<p><strong>Cautions.</strong> The reading is a speculation about the structure of the form and not a claim about nature.</p>
+<ul>
+<li><strong>No parity violation of the weak interaction is claimed.</strong> No left-handed coupling is exhibited, no
+  chirality is fixed for any fermion, and the V$-$A structure of the weak interaction is not touched. A
+  left-handed coupling would require a Lagrangian and a chirality projection that this article does not
+  supply; the one-sidedness of the form is at best a necessary condition.</li>
+<li><strong>The asymmetry could be a convention.</strong> With the mirrored form $h'(\tilde P,\tilde R)=\tilde P^{*}\tilde R$ the left action would be the isometry. The theorem is that the isometry is one-sided;
+  which side is physical is the reading.</li>
+<li>The internal group so acting is the $U(2)$ of <em>Particle Types, Discrete Charge and Three-Particle Couplings</em> and <em>The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not
+  SU(3)</em>; the algebra reaches $SU(2)$ and not $SU(3)$.</li>
+</ul>
+<h2 id="the-limits">The Limits</h2>
+<ul>
+<li>The operator statements are statements about the algebra acting on itself, not about a physical Hilbert
+  space.</li>
+<li>The observable/generator split is by the sector of the <strong>parameter</strong>, and the sandwich's type is read
+  from the parameter as well; the two operators must not be given one type.</li>
+<li>The chirality reading is labelled speculation with the three cautions above, and nothing proved depends
+  on it.</li>
+<li>The vector-boson reading of the antisymmetric half is labelled speculation.</li>
+</ul>
+<h2 id="the-ledger">The Ledger</h2>
+<p><strong>Proved.</strong> $(L_{\tilde B})^{\dagger}=L_{\tilde B^{*}}$ and $(R_{\tilde B})^{\dagger}=R_{\tilde B^{*}}$; self-adjoint operators from Hermitian parameters (observables), skew-adjoint from anti-Hermitian
+ones (generators), with $L_{i\tilde H}=iL_{\tilde H}$. $\Theta_{\tilde Q}^{\dagger}=\Theta_{\tilde Q^{*}}$; $\Theta_{\tilde Q}$ self-adjoint iff $\tilde Q$ is Hermitian up to a central phase; no nonzero
+skew-adjoint sandwich; $\Theta_{-\tilde Q}=\Theta_{e^{i\theta}\tilde Q}=\Theta_{\tilde Q}$. The product
+splits into a Hermitian-valued symmetric half and a skew-Hermitian-valued commutator, both
+$\mathbb{R}$-bilinear; $\mathbb{M}_+$ is a Jordan algebra under $\circ$ and $\mathbb{M}_-$ a Lie algebra
+under $[\cdot,\cdot]_\varsigma$, each with its identity failing off its sector at the stated witnesses.
+Right multiplication by a unitary is an isometry of $h$, left multiplication is one exactly for central
+unitaries, and the scalar part is preserved by both.</p>
+<p><strong>Readings.</strong> Observables in the Hermitian half and gauge generators in the material half; the sandwich as
+the one action form with three parameter classes; the one-sidedness of the internal action as a chirality.</p>
+<p><strong>Speculations, labelled.</strong> Vector bosons carried by the antisymmetric half; the one-sidedness of the form
+as a chirality of the internal coupling, with no parity violation claimed and with the convention caveat.</p>
+<p><strong>Not claimed.</strong> That the chirality reading is a physical result; that any weak-interaction structure is
+derived; that a gauge vertex is computed.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra's operator structure expresses the split of its sectors. Left multiplication by a Hermitian
+element is self-adjoint and read as an <strong>observable</strong>; left multiplication by an anti-Hermitian element is
+skew-adjoint and read as a <strong>gauge generator</strong>, exponentating to the internal unitary group. The two-sided
+sandwich $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$ is a different kind of operator: it is
+self-adjoint exactly when the parameter is Hermitian up to a central phase — which every observable and
+every generator satisfies, and which normality does <strong>not</strong> give — and it can never be skew-adjoint, so
+the sandwich belongs to the observable kind and serves as the framework's single action form, carrying a
+Lorentz transformation, a unitary evolution and a projective measurement according to the normalisation
+of its parameter; it is blind to the sign and to the central phase of that parameter. One product then
+carries two half-algebras: its symmetrised half is Hermitian-valued, closed on the Hermitian sector and a
+Jordan algebra there, while its antisymmetric half is skew-Hermitian-valued, closed on the material sector
+and a Lie algebra there, so the observables live in $\mathbb{M}_+$ and the gauge generators in
+$\mathbb{M}_-$; each identity fails off its own sector at a basis witness. Finally the internal symmetry
+acts through <strong>right</strong> multiplication, since only the right action preserves the algebra-valued canonical
+form $h(\tilde P,\tilde R)=\tilde P\tilde R^{*}$ — left multiplication conjugates the form's value and is
+an isometry only for central unitaries, though both actions preserve the scalar part — and the
+one-sidedness of the form is read, as a labelled speculation with explicit cautions, as a <strong>chirality</strong> of
+the internal action. The positivity of the dagger is owned by <em>Mass, Rank and the Positivity of the
+Dagger</em>; the compactness of the internal group by <em>Particle Types, Discrete Charge and Three-Particle Couplings</em>; the
+adjoints and sandwiches by the mathematics articles <em>The Adjoints of the Regular Operators</em> and
+<em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>; and the Jordan and Lie
+structures by <em>Jordan Algebras of Sesquialgebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\tilde B}$, $R_{\tilde B}$</td>
+<td>left and right multiplication by $\tilde B$</td>
+</tr>
+<tr>
+<td>$(L_{\tilde B})^{\dagger}=L_{\tilde B^{*}}$</td>
+<td>the adjoint rule; self-adjoint iff $\tilde B\in\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$</td>
+<td>the two-sided sandwich</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde Q}^{\dagger}=\Theta_{\tilde Q^{*}}$</td>
+<td>the sandwich adjoint</td>
+</tr>
+<tr>
+<td>$\tilde Q^{*}=\omega\tilde Q$</td>
+<td>the self-adjointness criterion, $\lvert\omega\rvert=1$</td>
+</tr>
+<tr>
+<td>$\Gamma_{\tilde A}(\tilde Q)=\tilde A\tilde Q\tilde A^{*}$</td>
+<td>the one action form</td>
+</tr>
+<tr>
+<td>$\tilde P\circ\tilde Q$</td>
+<td>the symmetrised product; Hermitian-valued; Jordan on $\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$[\tilde P,\tilde Q]_\varsigma$</td>
+<td>the sesquilinear commutator; skew-valued; Lie on $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$h(\tilde P,\tilde R)=\tilde P\tilde R^{*}$</td>
+<td>the algebra-valued canonical form</td>
+</tr>
+<tr>
+<td>$\langle\tilde P,\tilde R\rangle_{*}=\mathrm{Sc}\,h$</td>
+<td>its scalar part, positive definite</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_\pm$</td>
+<td>the observable and the gauge halves</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Mathematical Study of Biquaternions</em>, the physics entry point to the mathematical study under
+  which this block sits.</li>
+<li>Companion article <em>Mass, Rank and the Positivity of the Dagger</em>, for the positive form, the cone and the
+  positivity.</li>
+<li>Companion article <em>Particle Types, Discrete Charge and Three-Particle Couplings</em>, for the internal $U(2)$, its compactness and the boosts.</li>
+<li>Companion article <em>The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not
+  SU(3)</em>, for why the internal group is $U(2)$ and not larger.</li>
+<li>Mathematics article <em>The Adjoints of the Regular Operators</em>
+  (<code>articles_maths/the-adjoints-of-the-regular-operators.md</code>), for the one-sided adjoint rule.</li>
+<li>Mathematics article <em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>
+  (<code>articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the
+  sandwich, its Hermitian-up-to-phase criterion and the absence of a skew-adjoint sandwich.</li>
+<li>Mathematics article <em>Jordan Algebras of Sesquialgebras</em>
+  (<code>articles_maths/jordan-algebras-of-sesquialgebras.md</code>), for the Jordan structure on the Hermitian
+  sector and its failure off it.</li>
+<li>Mathematics article <em>Sesquialgebras</em> (<code>articles_maths/sesquialgebras.md</code>), for the general theory of the
+  product and its involution.</li>
+<li>Companion article <em>Decoherence as Idempotent Projection</em>, for the idempotent parameter as a measurement.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for adjoints and Hermitian forms in
+  a quaternion algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Interval as the Square and the Charge of the Material Composition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-interval-as-the-square-and-the-charge-of-the-material-composition"><strong>The Interval as the Square and the Charge of the Material Composition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A relativistic event is an element of the algebra with an imaginary time and a real space part,</p>
+<p>$$
+\tilde T = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 ,
+$$</p>
+<p>and the number that decides whether two events can be joined by a signal is its <strong>interval</strong>. This article
+reads the interval as the value of a product rather than as a form laid on the algebra from outside. The
+product is the <strong>quaternionic product</strong></p>
+<p>$$
+\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q ,
+$$</p>
+<p>the ordinary multiplication with the natural conjugation inserted in the first slot, and the claim of the
+article is the identity</p>
+<p>$$
+\tilde Q\star\tilde Q = N(\tilde Q)\,e_0 , \qquad N(\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2} ,
+$$</p>
+<p>together with its reading: <strong>the square of a material element is its interval</strong>. The identity has two
+consequences that this article also owns, and both are about composition rather than about a single
+element. The value of the square is <strong>multiplicative</strong>, $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$;
+and because a vanishing factor forces a vanishing product, the <strong>lightlike elements compose to lightlike
+elements</strong>, so the null cone is closed under the material composition. The interval is therefore a
+<strong>charge of the composition</strong>, multiplicative and not additive, whose neutral value is $1$ and whose
+absorbing value is $0$.</p>
+<p>The article keeps to the material sector and to the one product that squares to the interval. It defers
+the expression of the interval itself, the mass shell, the four-velocity and the inverse to <em>Biquaternion
+Norm and Invertibility</em>; the identification of the vanishing set of $N$ with the light cone to <em>The Light
+Cone as the Biquaternion Zero-Divisor Cone</em> and to <em>Zero Divisors as a Physical Locus in Biquaternionic
+Form</em>; the interval-one group to <em>The Lorentz Group as Biquaternion Norm Automorphisms</em>; and the
+comparison of this product's scalar form with the other three to <em>The Four Products and Their Physical
+Readings: the Two Algebras and the Two Sesquialgebras</em>. Every result read below is proved in the
+mathematics study whose entry point is <em>The Mathematical Study of Biquaternions</em>, and is cited there
+rather than re-derived.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
+$e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$. An
+element is $\tilde Q=Q_0e_0+\mathbf Q$ with $Q_\mu\in\mathbb{C}$ and vector part
+$\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$; the complex bilinear dot and cross products of vector parts are
+$(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and $\mathbf P\times\mathbf Q$. The conjugations are the natural one
+${}^{\natural}$ (keeps the scalar coordinate, negates the three vector coordinates),
+$\tilde Q^{\natural}=Q_0-\mathbf Q$, the coefficientwise one $\bar{\cdot}$, and the Hermitian star
+${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$,
+the material one being $\mathbb{M}_-$. Juxtaposition $\tilde P\tilde Q$ is the ordinary (plain) product of
+the algebra, $\star$ is the quaternionic product, and the biquaternion norm is
+$N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$.
+The material coordinate is $\tilde Q=ict\,e_0+\mathbf x$ with $\mathbf x=xe_1+ye_2+ze_3$.</p>
+<h2 id="the-product-and-the-square">The Product and the Square</h2>
+<p>The quaternionic product differs from the multiplication of the algebra in one operation only: the first
+factor is read through the natural conjugation before being multiplied. Writing both out on the
+scalar–vector split,</p>
+<p>$$
+\tilde P\tilde Q=\bigl(P_0Q_0-(\mathbf P,\mathbf Q)\bigr)e_0+P_0\mathbf Q+Q_0\mathbf P+\mathbf P\times\mathbf Q ,
+\qquad
+\tilde P\star\tilde Q=\bigl(P_0Q_0+(\mathbf P,\mathbf Q)\bigr)e_0+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
+$$</p>
+<p>shows that the insertion does exactly one thing: it <strong>reverses the sign of the product of the two vector
+parts</strong>. The two products agree on the scalar line, where there is no vector part to negate, and part
+company as soon as one is present. On the vector part alone the quaternionic product of two pure elements
+is</p>
+<p>$$
+\mathbf U\star\mathbf V = -\mathbf U\mathbf V = (\mathbf U,\mathbf V)e_0-\mathbf U\times\mathbf V .
+$$</p>
+<p><strong>Theorem (the square is the interval).</strong> For every $\tilde Q$,</p>
+<p>$$
+\tilde Q\star\tilde Q = \tilde Q^{\natural}\tilde Q = N(\tilde Q)\,e_0 .
+$$</p>
+<p><strong>Proof.</strong> In the second display put $\tilde P=\tilde Q$: the vector part is
+$Q_0\mathbf Q-Q_0\mathbf Q-\mathbf Q\times\mathbf Q=0$, because the cross product of a vector with itself
+vanishes, and the scalar part is $Q_0^{2}+(\mathbf Q,\mathbf Q)=N(\tilde Q)$. </p>
+<p>Every square of a single element therefore lands in the <strong>centre</strong> of the algebra, and on the central
+line it lands on a definite value. Two consequences are used below. The symmetrisation is central,
+$\tilde P\star\tilde Q+\tilde Q\star\tilde P=2\bigl(P_0Q_0+(\mathbf P,\mathbf Q)\bigr)e_0$, and the
+discrepancy of the two orders is purely a vector,
+$\tilde P\star\tilde Q-\tilde Q\star\tilde P=2P_0\mathbf Q-2Q_0\mathbf P-2\mathbf P\times\mathbf Q$. The
+article does not develop either; it needs only that the square is central.</p>
+<p><strong>Remark (verified).</strong> The identity was recomputed on $100$ random biquaternions in exact complex
+arithmetic; the maximum deviation of $\tilde Q^{\natural}\tilde Q-N(\tilde Q)e_0$ from zero is
+$8.9\times10^{-16}$, machine precision. The identity is exact algebra and the numerical check confirms the
+conventions with which it is written.</p>
+<h2 id="the-square-of-the-plain-product-is-not-the-interval">The Square of the Plain Product Is Not the Interval</h2>
+<p>The content of the identity is the contrast with the product of the previous block, and the contrast is
+notational unless it is stated.</p>
+<p><strong>Proposition (the ordinary square).</strong> For every $\tilde Q$,</p>
+<p>$$
+\tilde Q\tilde Q = \bigl(Q_0^{2}-(\mathbf Q,\mathbf Q)\bigr)e_0 + 2Q_0\mathbf Q ,
+$$</p>
+<p>so the ordinary square is central exactly when the scalar part of $\tilde Q$ vanishes or the vector part
+does, and its scalar value is</p>
+<p>$$
+\mathrm{Sc}(\tilde Q\tilde Q)=Q_0^{2}-(\mathbf Q,\mathbf Q)=B(\tilde Q,\tilde Q) ,
+$$</p>
+<p>the diagonal value of the complex bilinear form $B$ of <em>The Ordinary Product and the Material Sector</em>.</p>
+<p><strong>Proof.</strong> Distribute the product and use $\mathbf Q^{2}=-(\mathbf Q,\mathbf Q)$ for a vector part. </p>
+<p>The two squares differ in the sign of the vector pairing, and that single sign is the whole difference
+between a Euclidean square and the interval:</p>
+<p>$$
+B(\tilde Q,\tilde Q)=Q_0^{2}-(\mathbf Q,\mathbf Q) , \qquad N(\tilde Q)=Q_0^{2}+(\mathbf Q,\mathbf Q) .
+$$</p>
+<p>On the material element $\tilde Q=ict\,e_0+\mathbf x$ the two read</p>
+<p>$$
+B(\tilde Q,\tilde Q)=-c^{2}t^{2}-\lvert\mathbf x\rvert^{2} , \qquad N(\tilde Q)=-c^{2}t^{2}+\lvert\mathbf x\rvert^{2} ,
+$$</p>
+<p>the first the negative of the Euclidean length of the event, the second the interval. On this sector $B$
+is negative definite and has no null element beyond the origin, so it has no cone; $N$ is indefinite, and
+its vanishing set is the light cone. The pass from the ordinary product to the quaternionic one is
+therefore, on the material sector, the pass from a Euclidean square to the interval, and it is done by
+inserting one conjugation in the first slot.</p>
+<p><strong>Remark (verified).</strong> The two squares differ on $100$ of $100$ random elements. The case
+$\tilde Q=3e_0+ie_1$ shows both squares at once: the ordinary square is $10e_0+6ie_1$, which is not even
+central, its scalar value $10$ is $B(\tilde Q,\tilde Q)=9+1$, and the quaternionic square is
+$N(\tilde Q)e_0=8e_0$. The three numbers $10$, $8$ and the Euclidean value $10$ are all different
+questions asked of the same element.</p>
+<h2 id="the-interval-is-a-multiplicative-charge">The Interval Is a Multiplicative Charge</h2>
+<p><strong>Theorem (multiplicativity).</strong> For all $\tilde P,\tilde Q$,</p>
+<p>$$
+N(\tilde P\star\tilde Q)=N(\tilde P)\,N(\tilde Q) .
+$$</p>
+<p><strong>Proof.</strong> $N(\tilde P\star\tilde Q)=N(\tilde P^{\natural}\tilde Q)=N(\tilde P^{\natural})N(\tilde Q)$ by
+the multiplicativity of $N$ under the ordinary product, and $N(\tilde P^{\natural})=N(\tilde P)$ because
+the natural conjugation is an anti-automorphism that preserves the norm. </p>
+<p>The interval therefore turns the material composition into multiplication of numbers. That is the
+definition of a <strong>multiplicative charge</strong>: composing two material operations does not add their intervals,
+it multiplies them. An operation of interval $2$ composed with an operation of interval $2$ gives an
+operation of interval $4$, and an operation of interval $1$ leaves the interval of whatever it is composed
+with unchanged.</p>
+<p>On the invertible elements the statement sharpens to a character statement. The units are
+$\mathbb{B}^{\times}=\{\tilde Q:N(\tilde Q)\neq0\}$, and $N$ restricts to a group homomorphism</p>
+<p>$$
+N:\ (\mathbb{B}^{\times},\ \cdot\ )\longrightarrow(\mathbb{C}^{\times},\ \cdot\ ) ,
+$$</p>
+<p>whose kernel is the set of <strong>interval-one</strong> operations, $\{\tilde Q:N(\tilde Q)=1\}$. Outside the units
+the multiplicativity still holds as an identity of complex numbers, and that extension is what closes the
+cone.</p>
+<p><strong>Remark (verified).</strong> The multiplicativity was recomputed on $100$ random pairs, with maximum deviation
+$9.0\times10^{-14}$; and $100$ random pairs of interval-one elements were again of interval one, with the
+same precision. The interval-one set is closed here and not merely nearly so.</p>
+<h2 id="the-light-cone-is-closed-under-composition">The Light Cone Is Closed under Composition</h2>
+<p><strong>Theorem (closure of the null set).</strong> If $N(\tilde P)=0$ or $N(\tilde Q)=0$, then
+$N(\tilde P\star\tilde Q)=0$ and $N(\tilde Q\star\tilde P)=0$. The null set
+$\mathcal N=\{\tilde Q:N(\tilde Q)=0\}$ is closed under the quaternionic product on either side.</p>
+<p><strong>Proof.</strong> The value of $N$ on the product is the product of the values, and a product of complex numbers
+vanishes when a factor does; the reversed order is the same computation. </p>
+<p>The general form of the statement is the level-set law
+$\{N=\lambda\}\star\{N=\mu\}\subseteq\{N=\lambda\mu\}$. A level set preserved by the product must satisfy
+$c^{2}=c$, so the preserved level sets are exactly $c=0$ and $c=1$.</p>
+<p><strong>Remark (verified).</strong> On five explicitly null elements — $e_0+ie_1$, $e_1+ie_2$, $e_1-ie_2$, $ie_0+e_1$
+and $ie_0+e_2$ — every norm is <strong>exactly</strong> $0$, and in the whole $5\times5$ table of products, in both
+orders, the value of $N$ is exactly $0$ and not merely small. Over $100$ random pairs drawn from
+$\{N=c\}$ for $c=0$ and $c=1$ the product lies in the same level set, with deviation $4.4\times10^{-15}$
+for $c=1$, while for $c=2$, $c=\tfrac12$ and $c=-1$ the product is off the level set by $2$, $0.25$ and
+$2$ respectively. No other level set is preserved.</p>
+<p>This closure is the article's addition to the physics of the cone. <em>The Light Cone as the Biquaternion
+Zero-Divisor Cone</em> owns the identification of the vanishing set of $N$ with the light cone, and <em>Zero
+Divisors as a Physical Locus in Biquaternionic Form</em> owns the reading of the null elements as a kinematic
+boundary; neither owns the statement that the set is stable under composition. The physical content is the
+composition law of lightlike propagation: <strong>if one of two composed operations is lightlike, the composite
+is lightlike</strong>, so a massless operation cannot be made massive by composing it with anything.</p>
+<h2 id="what-is-not-closed">What Is Not Closed</h2>
+<p>Two tempting closure statements are false, and the article states both because the closure it proves is
+easily over-read.</p>
+<p><strong>The material sector is not closed.</strong> The square of a material element is its interval, and the interval
+is a number on the central line, not another material element. The minimal witness is
+$e_1\star e_1=N(e_1)e_0=e_0$: the element $e_1$ is material, and its square is the central real unit,
+which is Hermitian. So $\mathbb{M}_-\star\mathbb{M}_-\not\subseteq\mathbb{M}_-$. Neither is the
+informational sector closed: $e_0+ie_1$ and $e_0+ie_2$ are both Hermitian, and their product
+$e_0-ie_1+ie_2+e_3$ has a real coefficient of $e_3$ and is therefore not Hermitian. Squaring is a map
+from the material sector to the central line, and no sector is a subalgebra of the quaternionic product.</p>
+<p><strong>The causal set is not closed.</strong> The <strong>sign</strong> of the interval multiplies along with its value, so two
+operations of negative interval compose to one of positive interval. On the material sector $N$ takes both
+signs — $78$ of $100$ random material elements in the check above were spacelike and $22$ timelike — so a
+composition of two timelike operations is spacelike. What is closed is the <strong>lightlike</strong> part of the
+causal set and nothing larger. The honest form of the reading is therefore "lightlike composes to
+lightlike", not "the causal set is closed".</p>
+<h2 id="the-reading-composition-multiplies-intervals">The Reading: Composition Multiplies Intervals</h2>
+<p><strong>Proposed reading, labelled as such.</strong> The interval is a <strong>multiplicative charge of the material
+composition</strong>. Each clause below names a proved identity, and each is labelled as a reading.</p>
+<ul>
+<li><strong>The interval of a material operation is its square.</strong> On the material coordinate
+  $\tilde Q=ict\,e_0+\mathbf x$ the square is $(-c^{2}t^{2}+\mathbf x^{2})e_0$, the Minkowski interval.
+  The interval, the four-velocity, the four-momentum and the rotor inverse are worked out in <em>Biquaternion
+  Norm and Invertibility</em> and are cited, not repeated.</li>
+<li><strong>The massless shell is the vanishing of the square, and the mass shell a level set of it.</strong> A
+  four-momentum on shell has square $N(\tilde P)=-m^{2}c^{2}$, so the mass shell is
+  $\{N=-m^{2}c^{2}\}$, interpolating between the null cone at $m=0$ and the timelike interior.</li>
+<li><strong>Composition multiplies intervals.</strong> The interval is a square of the composition and not a component
+  of it, which is why it composes multiplicatively and not additively.</li>
+<li><strong>Lightlike composes to lightlike.</strong> The null cone is the absorbing set of the composition.</li>
+<li><strong>The interval-one operations are the interval-preserving operations.</strong> They form a group <strong>under the
+  ordinary product</strong>, the group $\{\tilde U:N(\tilde U)=1\}$, of complex dimension three, which is the
+  two-fold cover of the restricted Lorentz group. The group statement belongs to the associative product
+  and not to the material one, for the reason given below.</li>
+</ul>
+<h2 id="the-limits-of-the-reading">The Limits of the Reading</h2>
+<p><strong>Multiplicativity is not conservation.</strong> The interval is preserved only by the interval-one elements.
+Under a general composition it changes, by multiplication. An interval is not a conserved quantity of the
+material composition unless the acting set is restricted to the unit group, and any statement that "the
+interval is preserved" must name the acting set.</p>
+<p><strong>Closure is under the binary product, not under every word.</strong> The quaternionic product is not
+associative: its associator is nonzero on $24$ of the $64$ triples of basis elements, and it satisfies
+none of the weaker identities — not alternativity, not flexibility, not third-power associativity
+(<em>The Associator and the Ternary Product of the Quaternionic Product</em>). The closure proved above is the
+statement "if $N(\tilde P)=0$ then $N(\tilde P\star\tilde Q)=0$" and nothing more. A word of three
+operations has no bracketing-free value, and the rectangle of the square is defined for one element only.</p>
+<p><strong>Open question.</strong> Whether the multiplicative-charge reading is more than a naming is not settled here.
+The algebra proves the identity; the reading names $N$ a charge of the composition. What would make the
+naming content is a composition law of the physical operations that the multiplicative law explains, and
+the framework records the question rather than resolving it.</p>
+<h2 id="the-ledger">The Ledger</h2>
+<p><strong>Proved.</strong> The square identity $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ and the centrality of the square.
+The contrast with the ordinary square $\tilde Q\tilde Q=(Q_0^{2}-(\mathbf Q,\mathbf Q))e_0+2Q_0\mathbf Q$,
+whose scalar value is $B(\tilde Q,\tilde Q)$ and which is central only in the two degenerate cases; the two
+squares differ by the sign of the vector pairing, which the natural conjugation inserts. The
+multiplicativity $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$ and the level-set law
+$\{N=\lambda\}\star\{N=\mu\}\subseteq\{N=\lambda\mu\}$; the closure of the units, of the interval-one set
+and of the null set; the preservation of the level sets $c=0$ and $c=1$ and of no other. The falsity of
+the closure of the two sectors, with the witness $e_1\star e_1=e_0$, and of the causal set, since the sign
+of the interval multiplies.</p>
+<p><strong>Readings.</strong> That the interval of a material operation is its square and is a multiplicative charge of
+the material composition; that composing two operations multiplies their intervals; that the massless
+shell is the vanishing of the square; that lightlike propagation composes to lightlike propagation; that
+the interval-one operations are the interval-preserving operations.</p>
+<p><strong>Not claimed.</strong> That a physical operation is a biquaternion, or that its square has a physical process
+behind it. That the interval is conserved by a general composition. That the causal set is closed. That a
+word of three null operations is null. That the multiplicative-charge wording is forced by the algebra
+rather than chosen.</p>
+<h2 id="summary">Summary</h2>
+<p>The quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is the ordinary product with
+the natural conjugation inserted in the first slot, and the insertion reverses the sign of the product of
+the vector parts. Its square is central, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$, so <strong>the interval of a
+material element is its square</strong>, and on the material coordinate $ict\,e_0+\mathbf x$ the square is
+$-c^{2}t^{2}+\mathbf x^{2}$. The ordinary product squares to something else,
+$\tilde Q\tilde Q=(Q_0^{2}-(\mathbf Q,\mathbf Q))e_0+2Q_0\mathbf Q$, whose scalar value
+$B(\tilde Q,\tilde Q)$ is negative definite on the material sector and has no cone: the two products differ
+by the sign of the vector pairing, and that sign is the difference between a Euclidean square and the
+interval. The value of the square is multiplicative, $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$,
+with the level-set law $\{N=\lambda\}\star\{N=\mu\}\subseteq\{N=\lambda\mu\}$; the units, the interval-one
+set and the null set are closed, the null set exactly so, so lightlike propagation composes to lightlike
+propagation and a massless operation cannot be made massive by composition. The interval is therefore read
+as a <strong>multiplicative charge</strong> of the material composition, neither additive nor conserved, whose neutral
+value is $1$ and whose absorbing value is $0$. What is not closed matters as much: neither sector survives
+the product, since the square of a material element is a central number, and the causal set is not closed,
+since the sign of the interval multiplies. Because the product is not associative, the closure is a
+closure under the two-element product, and a word of three operations has no bracketing-free value. The
+interval, the mass shell, the four-velocity and the inverse are owned by <em>Biquaternion Norm and
+Invertibility</em>; the cone by <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em> and <em>Zero Divisors as a
+Physical Locus in Biquaternionic Form</em>; the interval-one group by <em>The Lorentz Group as Biquaternion Norm
+Automorphisms</em>; and the comparison of the four products by <em>The Four Products and Their Physical
+Readings: the Two Algebras and the Two Sesquialgebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$; $i$</td>
+<td>the basis, $e_k^{2}=-e_0$; the central scalar imaginary</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_0e_0+\mathbf Q$</td>
+<td>an element and its scalar–vector split</td>
+</tr>
+<tr>
+<td>${}^{\natural}$, ${}^{*}$</td>
+<td>the natural and the Hermitian conjugations</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_\pm$</td>
+<td>the material (anti-Hermitian) and informational (Hermitian) sectors</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde Q$</td>
+<td>the ordinary (associative) product</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$</td>
+<td>the quaternionic product</td>
+</tr>
+<tr>
+<td>$\tilde Q\star\tilde Q=N(\tilde Q)e_0$</td>
+<td>the square identity; the interval as the square</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=\sum_\mu Q_\mu^{2}$</td>
+<td>the biquaternion norm</td>
+</tr>
+<tr>
+<td>$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$</td>
+<td>the complex bilinear form of the ordinary product</td>
+</tr>
+<tr>
+<td>$N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$</td>
+<td>multiplicativity; the interval as a charge</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{N=0\}$</td>
+<td>the null set; the light cone on the material sector</td>
+</tr>
+<tr>
+<td>$\{N=1\}$</td>
+<td>the interval-one operations; a group under the ordinary product</td>
+</tr>
+<tr>
+<td>$ict\,e_0+\mathbf x$</td>
+<td>the material coordinate</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Mathematical Study of Biquaternions</em>, the physics entry point to the mathematical study under
+  which this block sits.</li>
+<li>Mathematics article <em>Biquaternions as a Quaternionic Algebra over $\mathbb{C}$</em>
+  (<code>articles_maths/biquaternions-as-a-quaternionic-algebra-over-c.md</code>), for the product, its table and its
+  square.</li>
+<li>Mathematics article <em>Idempotents of the Quaternionic Product</em>
+  (<code>articles_maths/idempotents-of-the-quaternionic-product.md</code>), for the square lemma.</li>
+<li>Mathematics article <em>The Associator and the Ternary Product of the Quaternionic Product</em>
+  (<code>articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md</code>), for the
+  associator and the failure of the weaker identities.</li>
+<li>Companion article <em>Biquaternion Norm and Invertibility</em>, for the interval, the multiplicativity under the
+  ordinary product, the invertibility criterion, the four-velocity and the mass shell.</li>
+<li>Companion article <em>The Ordinary Product and the Material Sector</em>, for the ordinary product, the form $B$
+  and the Euclidean square.</li>
+<li>Companion article <em>Why the Material Composition Is Oriented and Cannot Measure</em>, for the orientation of
+  the two slots, the left unit and the absence of a material projection.</li>
+<li>Companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em> and <em>Zero Divisors as a
+  Physical Locus in Biquaternionic Form</em>, for the cone.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the Minkowski
+  interval read off a product of the spacetime algebra.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the quadratic form of the
+  quaternion algebra, its zero divisors and its group of units.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

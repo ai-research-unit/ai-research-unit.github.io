@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why the Material Composition Is Oriented and Cannot Measure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="why-the-material-composition-is-oriented-and-cannot-measure"><strong>Why the Material Composition Is Oriented and Cannot Measure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two material operations can be composed, and the composite depends on their order and on which of the two
+slots each occupies. This article reads the two facts that fix what the material composition can and
+cannot do. <strong>First, the composition is oriented</strong>: the multiplication $\tilde P\star\tilde Q$ reads its
+first factor through the natural conjugation and its second factor as it stands, so the two slots are not
+interchangeable, and while the algebra has a left identity it has no right identity — multiplying by the
+identity from the right returns the conjugate of the element and not the element. <strong>Second, the
+composition cannot measure</strong>: the only elements that equal their own square under $\star$ are the zero
+element and the identity, so the material multiplication supplies no projection, and a projection is the
+algebraic form of a measurement. Where the framework does find its projections is the informational
+structure, and the two facts together are read as a division of labour: the material composition carries
+the interval, the informational structure carries the measurement.</p>
+<p>The article keeps to the one product. It defers the states themselves, their null character and the
+decoherence of a measurement to <em>The States the Indefinite Metric Cannot Normalise</em>
+and to <em>Decoherence as Idempotent Projection</em>; the two-sector superselection structure to <em>The
+Material-Informational Split as a Superselection Structure in Biquaternionic Form</em>; the non-associativity,
+the associator and the ternary product to <em>The Associator and the Ternary Product of the Quaternionic
+Product</em>; the left multiplications and their monoid to <em>The Left Multiplications of the Quaternionic
+Product and the Opposite Monoid</em>; and the two-sided operators with their Hermitian adjoints to <em>Two-Sided
+Operators on the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<p><strong>Conventions.</strong> As in the companion <em>The Interval as the Square and the Charge of the Material
+Composition</em>: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
+$e_k^{2}=-e_0$, $e_1e_2=e_3$; an element $\tilde Q=Q_0e_0+\mathbf Q$; the natural conjugation
+$\tilde Q^{\natural}=Q_0-\mathbf Q$, the Hermitian one $\tilde Q^{*}$, the coefficientwise bar; the
+sectors $\mathbb{M}_\pm$; the ordinary product $\tilde P\tilde Q$, the quaternionic product
+$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, the biquaternion norm $N(\tilde Q)=\sum_\mu Q_\mu^{2}$;
+the real quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$
+and its imaginary multiple $i\mathbb{H}_{\mathbb{B}}$; the material coordinate $ict\,e_0+\mathbf x$.</p>
+<h2 id="the-two-slots-are-not-the-same">The Two Slots Are Not the Same</h2>
+<p><strong>Proposition (one-sided identity).</strong> For every $\tilde Q$,</p>
+<p>$$
+e_0\star\tilde Q=\tilde Q , \qquad \tilde Q\star e_0=\tilde Q^{\natural} .
+$$</p>
+<p>There is no right identity for $\star$.</p>
+<p><strong>Proof.</strong> The first is $e_0^{\natural}\tilde Q=e_0\tilde Q=\tilde Q$; the second is
+$\tilde Q^{\natural}e_0=\tilde Q^{\natural}$. For the last statement, suppose $\tilde U$ satisfies
+$\tilde Q\star\tilde U=\tilde Q$ for all $\tilde Q$. At $\tilde Q=e_0$ this reads $\tilde U=e_0$; at
+$\tilde Q=e_1$ it reads $e_1\star e_0=e_1$, that is $-e_1=e_1$, which is false. $\square$</p>
+<p>The asymmetry is visible on a single element. Multiplying by the identity on the left changes nothing;
+multiplying by it on the right conjugates. The framework reads the first slot as the operation whose
+interval is read and the second as the one that acts, or the other way round according to the process; the
+algebra asserts only that the roles are distinct. The product is also non-commutative, with</p>
+<p>$$
+\tilde P\star\tilde Q-\tilde Q\star\tilde P=2P_0\mathbf Q-2Q_0\mathbf P-2\,\mathbf P\times\mathbf Q ,
+$$</p>
+<p>so the order matters, and it matters through the same conjugation that produces the interval.</p>
+<p>The operations themselves do not inherit the defect. Writing $L_{\tilde A}$ for the left multiplication
+$\tilde X\mapsto\tilde A\star\tilde X$, the composition of two of them is again a left multiplication,</p>
+<p>$$
+L_{\tilde A}\circ L_{\tilde B}=L_{\tilde B\tilde A} ,
+$$</p>
+<p>so a <strong>chain of material operations has a well-defined composite as a map</strong>, by the associativity of
+composition, while the chain of the corresponding elements has no bracketing-free product. The failure of
+associativity therefore lives on the elements and not on the operations.</p>
+<p><strong>Remark (verified).</strong> The two one-sided rules and the composition rule were checked on $100$ random
+triples in exact complex arithmetic, with deviations at machine precision. The failure of associativity is
+not a rounding effect: the associator is nonzero on $24$ of the $64$ triples of basis elements.</p>
+<h2 id="the-composite-splits-into-a-number-and-a-direction">The Composite Splits into a Number and a Direction</h2>
+<p>Composing two elements of the material sector, the result need not be material, and the way it fails is
+fixed.</p>
+<p><strong>Proposition (the two halves of a composite).</strong> For all $\tilde P,\tilde Q$,</p>
+<p>$$
+\tfrac12\bigl(\tilde P\star\tilde Q+\tilde Q\star\tilde P\bigr)
+=\bigl(P_0Q_0+(\mathbf P,\mathbf Q)\bigr)e_0 , \qquad
+\tfrac12\bigl(\tilde P\star\tilde Q-\tilde Q\star\tilde P\bigr)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q .
+$$</p>
+<p>The <strong>first half is a central number</strong> and the second half is a <strong>vector</strong>. The central half is the
+order-independent part of the composite, the vector half the order-dependent one.</p>
+<p><strong>Proof.</strong> Add and subtract the two expansions of the product. $\square$</p>
+<p>On the material sector this reads concretely. The square of a material element is its interval and lands
+on the central line, so the material sector is not closed under the composition: $e_1\star e_1=e_0$
+carries a material element to a central Hermitian one. The general statement is the proposition: a
+composite of two material operations is a <strong>number plus a direction</strong>, the number being the
+order-independent pairing of the two and the direction the order-dependent discrepancy. The numerical
+check confirms the first half on $100$ random material pairs and confirms that the second half is a
+general vector, with a real and an imaginary part, so it is neither material nor informational in general.</p>
+<h2 id="there-is-no-material-projection">There Is No Material Projection</h2>
+<p>A <strong>projection</strong> is an element equal to its own square. In the algebra the equation has two solutions, and
+both are trivial.</p>
+<p><strong>Proposition (the idempotents of $\star$).</strong> The equation $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ has for
+solutions exactly $\tilde\Pi=0$ and $\tilde\Pi=e_0$.</p>
+<p><strong>Proof.</strong> By the square identity the left side is $N(\tilde\Pi)e_0$, which is central, so
+$\tilde\Pi=N(\tilde\Pi)e_0$ is central and its vector part vanishes; writing $\tilde\Pi=\Pi_0e_0$ the
+equation becomes $\Pi_0^{2}=\Pi_0$, whence $\Pi_0\in\{0,1\}$. $\square$</p>
+<p>No material element is a projection, and no nontrivial element at all is one: the material composition
+therefore supplies no resolution of the algebra against a reference. The check on $100$ random unit
+elements with complex coefficients gives a least residual $\lvert\tilde Q\star\tilde Q-\tilde Q\rvert$ of
+$0.494$, and the exact zeros are exactly the two trivial solutions; the scalar line confirms the same
+reduction, with residuals $0$, $0$, $0.25$, $2$ and $\sqrt2$ at the scalars $0$, $1$, $\tfrac12$, $2$ and
+$i$.</p>
+<p><strong>Reading.</strong> The material composition has no measurement in it. Composing material operations is not where
+a quantum theory resolves a state; the algebra says so by having no projection beyond the two degenerate
+ones.</p>
+<h2 id="where-the-projections-are">Where the Projections Are</h2>
+<p>The projections the framework uses are elements of the informational sector, and they are not idempotent
+for $\star$ at all.</p>
+<p><strong>Proposition (the informational projectors).</strong> For every real unit vector $\hat{\boldsymbol\mu}$ the
+element</p>
+<p>$$
+\tilde\Pi=\tfrac12\bigl(e_0+i\hat{\boldsymbol\mu}\bigr)
+$$</p>
+<p>satisfies $\tilde\Pi^{2}=\tilde\Pi$ for the ordinary product, $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ for the
+sesquilinear pairing, $\mathrm{Tr}\,\tilde\Pi=1$, and</p>
+<p>$$
+N(\tilde\Pi)=0 , \qquad \tilde\Pi\star\tilde\Pi=N(\tilde\Pi)e_0=0 .
+$$</p>
+<p><strong>Proof.</strong> The first two are the standard projector identities for $\tfrac12(e_0+i\hat{\boldsymbol\mu})$
+with $\hat{\boldsymbol\mu}^{2}=-e_0$; the trace is the definition, and the last is the square identity of
+the companion article applied to $\tilde\Pi$, whose norm vanishes because
+$N(\tilde\Pi)=\tfrac14(1-1)=0$. $\square$</p>
+<p>The objects a quantum theory counts as pure states are therefore <strong>null for the material composition</strong>: the
+composition sends them to zero rather than holding them fixed. That is the sharpest form of the contrast
+between the two structures, and it is the subject of <em>The States the Indefinite Metric Cannot Normalise</em>, which owns the isotropy and its reading. The Bloch sphere of states, the trace-one
+slice and the decoherence of a measurement are owned by <em>The Bloch Ball as the Trace-One Slice of the
+Future Light Cone</em> and <em>Decoherence as Idempotent Projection</em>, and are cited here, not repeated.</p>
+<p><strong>Reading.</strong> <strong>Composition and measurement are separated by the algebra.</strong> The material multiplication
+carries the interval and has no projection; the informational structure supplies all the projections there
+are. The two jobs sit in different rows of the framework, and the idempotent count is the algebraic
+statement of the separation.</p>
+<h2 id="what-is-closed-in-the-material-composition">What Is Closed in the Material Composition</h2>
+<p>The composition does respect one internal split of the material sector, and the statement must be made
+carefully, because the first form of it is false.</p>
+<p><strong>Definition (the real–imaginary split).</strong> Write $\mathbb{H}_{\mathbb{B}}$ for the real quaternion subspace
+(spans of the basis with real coefficients) and $i\mathbb{H}_{\mathbb{B}}$ for its imaginary multiple. The
+algebra is their direct sum, and each element splits as a real quaternion part plus an imaginary one.</p>
+<p><strong>Proposition (the gradings).</strong> $\mathbb{H}_{\mathbb{B}}\star\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}}$
+and $i\mathbb{H}_{\mathbb{B}}\star i\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}}$, while
+$\mathbb{H}_{\mathbb{B}}\star i\mathbb{H}_{\mathbb{B}}\subseteq i\mathbb{H}_{\mathbb{B}}$ and
+$i\mathbb{H}_{\mathbb{B}}\star\mathbb{H}_{\mathbb{B}}\subseteq i\mathbb{H}_{\mathbb{B}}$.</p>
+<p>So the real quaternion subspace is <strong>closed</strong> under the material composition: a real-valued material field
+composes to a real-valued one, and a real value composed with an imaginary one stays imaginary. All four
+inclusions were checked on $100$ real and imaginary samples.</p>
+<p><strong>The correction.</strong> It does not follow that the even part of the material sector is closed. The material
+sector meets the real quaternion subspace in the three-dimensional <strong>spatial</strong> part
+$\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ — the unit $e_0$ is Hermitian and therefore not material — and
+that part is <strong>not</strong> closed: $e_1\star e_1=e_0$ leaves it for the central line. So a composition of two
+purely spatial material operations is not spatial; it picks up a central, informational part. The subspace
+that is genuinely closed is the full real quaternion space, which contains the unit and is <strong>not</strong> contained
+in the material sector. A reading of the split as "the spatial part is self-contained" is therefore wrong
+as it stands, and the correct statement is the one above.</p>
+<p><strong>Cautions.</strong> The imaginary half is not closed, since a product of two imaginary elements is real. And the
+restricted product on $\mathbb{H}_{\mathbb{B}}$ is not the quaternion product: it is the conjugation-inserted
+product, which is non-associative, the triple of units $(e_1,e_1,e_2)$ a witness, since
+$(e_1\star e_1)\star e_2=e_2$ against $e_1\star(e_1\star e_2)=-e_2$ (<em>verified</em>).</p>
+<p><strong>Reading.</strong> The real–imaginary split is an <strong>internal superselection structure</strong> of the material sector: a
+real-valued excitation and an imaginary-valued one are distinguished by the composition, which never mixes
+them, though it may carry a real pair to the central line. This is <strong>not</strong> the two-sector
+material/informational split of <em>The Material-Informational Split as a Superselection Structure in
+Biquaternionic Form</em>; that split is by the Hermitian conjugation and separates material from informational,
+while this one is by the coefficientwise conjugation and is internal to each sector. The two structures
+cross and must not be conflated.</p>
+<h2 id="the-reading-composition-is-not-measurement">The Reading: Composition Is Not Measurement</h2>
+<p><strong>Proposed reading, labelled as such.</strong> The material composition is <strong>oriented and mute</strong>.</p>
+<ul>
+<li><strong>The slots are not interchangeable.</strong> The first factor is read through the conjugation, the second is
+  not, and the identity acts as the identity from one side only. Composing an interval-one operation on the
+  left of an element returns the element; using the identity on the right returns the conjugate.</li>
+<li><strong>The composite is a number plus a direction.</strong> The order-independent half of a material composite is a
+  central number, the pairing of the two operations; the order-dependent half is a direction, with a real
+  and an imaginary part.</li>
+<li><strong>The composition cannot measure.</strong> Its only projections are $0$ and $e_0$; a measurement is supplied by
+  the informational structure, whose projectors are null for the composition.</li>
+<li><strong>Composition and measurement are done by different structures.</strong> The material row carries the interval
+  and the composition; the informational row carries the projection and the measurement.</li>
+</ul>
+<h2 id="the-limits">The Limits</h2>
+<p><strong>The orientation is not a time order.</strong> The algebra proves the one-sided identity and the
+anti-isomorphism of the left multiplications. It does not prove that the orientation is a
+before-and-after order: the product does not say which slot is earlier, and an arrow of time is not an
+algebraic datum. Reading the orientation as causal or temporal is a proposal, labelled as one; what would
+support it is a physical composition law that singles out a slot, and the framework does not yet have one.</p>
+<p><strong>No material projection of another structure.</strong> The idempotent count is a statement about $\star$ and
+nothing else. It says nothing against the ordinary idempotents of the material sector, which are a
+different theorem, nor against idempotent <strong>maps</strong> or channels, which are operations on a state space and
+not elements of the algebra; that distinction is drawn in <em>Decoherence as Idempotent Projection</em>.</p>
+<p><strong>A chain has no intrinsic value.</strong> Because the product is not associative, a word of three material
+operations has no bracketing-free value. Whether physical composition supplies a natural bracketing is
+recorded as an open question and not resolved.</p>
+<h2 id="the-ledger">The Ledger</h2>
+<p><strong>Proved.</strong> $e_0\star\tilde Q=\tilde Q$ and $\tilde Q\star e_0=\tilde Q^{\natural}$, hence a left identity
+and no right one; the non-commutativity; the rule $L_{\tilde A}\circ L_{\tilde B}=L_{\tilde B\tilde A}$,
+so that the operations compose associatively though the elements do not. The split of a composite into a
+central half and a vector half, with the central half the order-independent part. The idempotents of
+$\star$ are exactly $0$ and $e_0$. The informational projectors
+$\tfrac12(e_0+i\hat{\boldsymbol\mu})$ are idempotent for the ordinary and the sesquilinear products, have
+$N=0$, and are <strong>null</strong> for $\star$. The four inclusions of the real–imaginary split, and the non-closure
+of the spatial part of the material sector, with the witness $e_1\star e_1=e_0$.</p>
+<p><strong>Readings.</strong> That the material composition is oriented, the first slot read through the interval and the
+second as it stands; that the composite is a number plus a direction; that the composition supplies no
+measurement; that measurement and composition are done by different structures of the framework; that the
+real–imaginary split is an internal superselection structure, distinct from the material/informational one.</p>
+<p><strong>Not claimed.</strong> That the orientation is a time or causal order; that no material projection of some other
+structure is possible; that the trivial idempotents carry physical processes; that a chain of three
+operations has a natural bracketing.</p>
+<h2 id="summary">Summary</h2>
+<p>The material composition $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is <strong>oriented</strong>: its first
+slot is read through the natural conjugation and its second is not, the identity acts as the identity only
+from the left, $\tilde Q\star e_0=\tilde Q^{\natural}\neq\tilde Q$, so there is no right identity, and the
+order matters with commutator $2P_0\mathbf Q-2Q_0\mathbf P-2\mathbf P\times\mathbf Q$. The operations
+themselves still compose associatively, $L_{\tilde A}\circ L_{\tilde B}=L_{\tilde B\tilde A}$, so a chain
+of material operations is a well-defined map even though a chain of the corresponding elements is not. The
+composition <strong>cannot measure</strong>: its only idempotents are $0$ and $e_0$, since a projection must be central
+and satisfy $Q_0^{2}=Q_0$, so the material multiplication resolves no state against a reference. Every
+composite of two material operations splits into a central number — the order-independent pairing — and a
+direction; on the material sector the square is a number, so the sector is not closed, the witness being
+$e_1\star e_1=e_0$. The projections the framework uses belong to the informational sector, where
+$\tilde\Pi=\tfrac12(e_0+i\hat{\boldsymbol\mu})$ is idempotent for the ordinary and the sesquilinear products
+and is <strong>null</strong> for the material composition. The material composition therefore respects one internal
+split — the real quaternion subspace is closed, and a real value composes to a real value — but the even
+part of the material sector is not closed, since a product of two spatial elements may land on the unit.
+The reading is that the material composition carries the interval and the informational structure carries
+the measurement, and that the two jobs are separated by the algebra. The orientation is not proved to be a
+time order; the states and their isotropy are owned by <em>The States the Indefinite Metric Cannot Normalise</em>, the decoherence
+of a measurement by <em>Decoherence as Idempotent Projection</em>, the non-associativity and the ternary product
+by <em>The Associator and the Ternary Product of the Quaternionic Product</em>, and the left multiplications and
+their monoid by <em>The Left Multiplications of the Quaternionic Product and the Opposite Monoid</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$</td>
+<td>the quaternionic product</td>
+</tr>
+<tr>
+<td>$\tilde Q^{\natural}$</td>
+<td>the natural conjugation; the operation inserted in the first slot</td>
+</tr>
+<tr>
+<td>$e_0$; $0$</td>
+<td>the two idempotents of $\star$; the left identity and the zero element</td>
+</tr>
+<tr>
+<td>$L_{\tilde A}$</td>
+<td>the left multiplication $\tilde X\mapsto\tilde A\star\tilde X$</td>
+</tr>
+<tr>
+<td>$2P_0\mathbf Q-2Q_0\mathbf P-2\mathbf P\times\mathbf Q$</td>
+<td>the commutator of $\star$</td>
+</tr>
+<tr>
+<td>$P_0Q_0+(\mathbf P,\mathbf Q)$</td>
+<td>the central, order-independent half of a composite</td>
+</tr>
+<tr>
+<td>$\tilde\Pi=\tfrac12(e_0+i\hat{\boldsymbol\mu})$</td>
+<td>the informational projector; null for $\star$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>the real quaternion subspace and its imaginary multiple</td>
+</tr>
+<tr>
+<td>$\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$</td>
+<td>the spatial part of the material sector; not closed under $\star$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_\pm$</td>
+<td>the material and informational sectors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Mathematical Study of Biquaternions</em>, the physics entry point to the mathematical study under
+  which this block sits.</li>
+<li>Companion article <em>The Interval as the Square and the Charge of the Material Composition</em>, for the square
+  identity, the interval and the multiplicativity used throughout.</li>
+<li>Mathematics article <em>The Left Multiplications of the Quaternionic Product and the Opposite Monoid</em>
+  (<code>articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md</code>), for
+  the left multiplications and their anti-isomorphism.</li>
+<li>Mathematics article <em>Idempotents of the Quaternionic Product</em>
+  (<code>articles_maths/idempotents-of-the-quaternionic-product.md</code>), for the idempotent reduction.</li>
+<li>Mathematics article <em>The Associator and the Ternary Product of the Quaternionic Product</em>
+  (<code>articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md</code>), for the
+  associator and the failure of the weaker identities.</li>
+<li>Mathematics article <em>Biquaternions as a Quaternionic Algebra over $\mathbb{C}$</em>
+  (<code>articles_maths/biquaternions-as-a-quaternionic-algebra-over-c.md</code>), for the product and its table.</li>
+<li>Companion article <em>The States the Indefinite Metric Cannot Normalise</em> and
+  <em>Decoherence as Idempotent Projection</em>, for the states and for the measurement.</li>
+<li>Companion article <em>The Material-Informational Split as a Superselection Structure in Biquaternionic
+  Form</em>, for the two-sector split by the Hermitian conjugation.</li>
+<li>Companion article <em>Relations Between Subspaces</em>, for the six subspaces and the real–imaginary split.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the one-sided units and the
+  non-associativity of the conjugating products on a quaternion algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

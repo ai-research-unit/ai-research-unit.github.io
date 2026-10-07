@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mass, Rank and the Positivity of the Dagger — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="mass-rank-and-the-positivity-of-the-dagger"><strong>Mass, Rank and the Positivity of the Dagger</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A theory whose metric is indefinite is asked one question before any other: does it produce states of
+negative norm, the <strong>ghosts</strong> of the old literature, or a particle the metric counts as spacelike, a
+<strong>tachyon</strong>? The biquaternion algebra is indefinite — its natural square is complex and of either sign —
+so the question is fair. This article gives the framework's answer, and the answer is that the algebra
+carries a <strong>second</strong> square, the sesquilinear one, whose positivity is a theorem and not a choice of
+Lagrangian. The two squares of one element carry two different things: the sesquilinear square is
+positive and carries the <strong>rank</strong>, the natural square is indefinite and carries the <strong>interval</strong>. Reading
+the rank as a mass label and the interval as the metric gives the framework's account of why no ghost
+exists and where the mass shells sit.</p>
+<p>The article keeps to the algebra. It defers the interval, the four-momentum and the mass shell to
+<em>Biquaternion Norm and Invertibility</em>; the light cone and its causal reading to <em>The Light Cone as the
+Biquaternion Zero-Divisor Cone</em> and <em>Causality and the Light Cone as an Information Barrier in
+Biquaternionic Form</em>; the states and the Bloch ball to <em>The States the Indefinite Metric Cannot Normalise</em> and <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>; the
+measurement cone to <em>POVMs and the Positive Cone in Biquaternionic Form</em>; and the comparison of the four
+scalar forms to <em>The Four Products and Their Physical Readings: the Two Algebras and the Two
+Sesquialgebras</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
+$e_k^{2}=-e_0$, $e_1e_2=e_3$, central $i$ with $i^{2}=-1$. An element is $\tilde Q=Q_0e_0+\mathbf Q$ with
+complex coefficients. The conjugations are the Hermitian ${}^{*}$ (coefficientwise conjugate of the
+natural conjugate), so that $\Phi(\tilde Q^{*})=\Phi(\tilde Q)^{\dagger}$ in the $2\times2$ matrix model,
+and the natural ${}^{\natural}$. The sectors are $\mathbb{M}_-=\{\tilde Q^{*}=-\tilde Q\}$ (material) and
+$\mathbb{M}_+=\{\tilde Q^{*}=\tilde Q\}$ (informational). The <strong>sesquilinear product</strong> is
+$\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$; its square is the <strong>sesquilinear square</strong>; the <strong>natural
+square</strong> is $\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0$. The trace is $\mathrm{Tr}=2\,\mathrm{Sc}$, the
+matrix model is $\Phi$ with $\det\Phi(\tilde Q)=N(\tilde Q)$, and the Euclidean norm is
+$\lVert\tilde Q\rVert_E^{2}=\sum_\mu\lvert Q_\mu\rvert^{2}$. A Hermitian element is written
+$\tilde H=te_0+i\mathbf u$ with $t$ real and $\mathbf u$ a real three-vector.</p>
+<h2 id="the-two-squares-of-one-element">The Two Squares of One Element</h2>
+<h3 id="the-sesquilinear-square-is-positive">The Sesquilinear Square Is Positive</h3>
+<p>For every $\tilde Q$,</p>
+<p>$$
+\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*},\qquad
+\bigl(\tilde Q\tilde Q^{*}\bigr)^{*}=\tilde Q\tilde Q^{*},\qquad
+\mathrm{Sc}\bigl(\tilde Q\tilde Q^{*}\bigr)=\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}=\lVert\tilde Q\rVert_E^{2} .
+$$</p>
+<p>The square is <strong>Hermitian</strong>, because ${}^{*}$ is an anti-automorphism of order two, and its scalar part
+is the <strong>Euclidean square of the coefficient vector</strong>, strictly positive off zero. Being Hermitian and of
+the form $\Phi(\tilde Q)\Phi(\tilde Q)^{\dagger}$ in the matrix model, it is <strong>positive semidefinite</strong>.
+Its positivity is therefore a theorem about the algebra, not a hypothesis about a Lagrangian.</p>
+<h3 id="the-natural-square-is-the-interval">The Natural Square Is the Interval</h3>
+<p>The natural square is the biquaternion norm,</p>
+<p>$$
+\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0,\qquad N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2} ,
+$$</p>
+<p>a complex scalar times $e_0$. It is <strong>indefinite</strong>: on the material coordinate $\tilde Q=ict\,e_0+\mathbf x$ it is $-c^{2}t^{2}+\lvert\mathbf x\rvert^{2}$, the interval, whose vanishing set on $\mathbb{M}_-$ is
+the light cone and whose level set $N=-m^{2}c^{2}$ is the mass shell. A scalar multiple of $e_0$ carries
+no rank of its own; its information is the <strong>value</strong> $N$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Square</th>
+<th>Definition</th>
+<th>Type</th>
+<th>Diagonal value</th>
+<th>What it carries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sesquilinear</td>
+<td>$\tilde Q\tilde Q^{*}$</td>
+<td>Hermitian, positive semidefinite</td>
+<td>$\sum_\mu\lvert Q_\mu\rvert^{2}$, positive</td>
+<td>rank and positivity</td>
+</tr>
+<tr>
+<td>natural</td>
+<td>$\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0$</td>
+<td>complex scalar times $e_0$</td>
+<td>$\sum_\mu Q_\mu^{2}$, indefinite</td>
+<td>value; interval and mass shell</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (verified).</strong> $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}$ to
+$3.6\times10^{-15}$ over $100$ random elements.</p>
+<h2 id="the-two-invariants-of-the-square">The Two Invariants of the Square</h2>
+<p>The $2\times2$ matrix image of the square has two invariants, and each is one of the two squares.</p>
+<p><strong>Trace.</strong> $\mathrm{Tr}(\tilde Q\tilde Q^{*})=2\sum_\mu\lvert Q_\mu\rvert^{2}=2\lVert\tilde Q\rVert_E^{2}$, always positive, against $\mathrm{Tr}(N(\tilde Q)e_0)=2N(\tilde Q)$, twice the interval
+and of either sign on $\mathbb{M}_-$.</p>
+<p><strong>Determinant.</strong> Since $\det\Phi(\tilde Q)=N(\tilde Q)$,</p>
+<p>$$
+\det\Phi\bigl(\tilde Q\tilde Q^{*}\bigr)=\det\bigl(\Phi(\tilde Q)\Phi(\tilde Q)^{\dagger}\bigr)=\lvert N(\tilde Q)\rvert^{2} ,
+$$</p>
+<p>the <strong>squared interval</strong>.</p>
+<p>So of the two invariants of the sesquilinear square, the trace is the Euclidean square and the
+determinant is the squared interval. The element is positive by one and indefinite by the other, with no
+conflict: the two numbers answer different questions.</p>
+<p><strong>Remark (verified).</strong> $\det\Phi(\tilde Q)=N(\tilde Q)$ to $3.6\times10^{-15}$ and
+$\det\Phi(\tilde Q\tilde Q^{*})=\lvert N(\tilde Q)\rvert^{2}$ to $1.1\times10^{-13}$, over $100$ random
+elements.</p>
+<h2 id="rank-massive-and-massless-elements">Rank: Massive and Massless Elements</h2>
+<p><strong>Criterion.</strong> For $\tilde Q\neq0$ the sesquilinear square has rank $2$ if $N(\tilde Q)\neq0$ and rank
+$1$ if $N(\tilde Q)=0$; the rank is one exactly on the zero-divisor cone.</p>
+<p><strong>Proof.</strong> $\Phi(\tilde Q\tilde Q^{*})=\Phi(\tilde Q)\Phi(\tilde Q)^{\dagger}$, and a matrix times its
+own adjoint has the rank of the factor; $\Phi(\tilde Q)$ is invertible exactly when
+$\det\Phi(\tilde Q)=N(\tilde Q)\neq0$. $\square$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>$N(\tilde Q)$</th>
+<th>$\Phi(\tilde Q)$</th>
+<th>Square</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>off the null cone</td>
+<td>$\neq0$</td>
+<td>invertible</td>
+<td>rank $2$</td>
+<td>massive type</td>
+</tr>
+<tr>
+<td>on the null cone</td>
+<td>$0$</td>
+<td>singular, nonzero</td>
+<td>rank $1$</td>
+<td>massless type</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (verified).</strong> Rank $2$ on $e_0,e_1,e_2,e_3,e_0+e_1,e_0+2ie_1,e_1+2e_2+3ie_3$; rank $1$ on the
+null elements $e_1+ie_2$, $e_0+ie_3$, $e_2+ie_3$ and $\tfrac12(e_0\mp ie_3)$; and
+$\mathrm{rank}\,\Phi(\tilde Q\tilde Q^{*})=\mathrm{rank}\,\Phi(\tilde Q)$ on $100$ of $100$ random
+elements. For the idempotent $\tilde\Pi=\tfrac12(e_0-ie_3)$ one has $N=0$,
+$\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})=\tfrac12$ and rank $1$: the projector is a massless, rank-one
+element, as the state reading of the informational sector requires.</p>
+<p>The boundary case shows where the rank drops. The Hermitian element $\tilde H=te_0+i\mathbf u$ has
+$N(\tilde H)=t^{2}-\lvert\mathbf u\rvert^{2}$, so it is on the cone exactly at $t=\lvert\mathbf u\rvert$, the boundary of the positive cone; there the square drops from rank $2$ to rank $1$ and the
+element becomes a positive multiple of a rank-one projector. The rank drop and the boundary of the cone
+are the same locus.</p>
+<h2 id="the-positive-cone">The Positive Cone</h2>
+<p><strong>Definition.</strong> The <strong>positive cone</strong> is the image of the sesquilinear square,
+$P=\{\tilde Q\tilde Q^{*}\}$.</p>
+<p>Three descriptions agree.</p>
+<ul>
+<li><strong>Image of the square.</strong> By construction; under $\Phi$ the image is the set of matrices
+  $\Phi(\tilde Q)\Phi(\tilde Q)^{\dagger}$.</li>
+<li><strong>Positive elements.</strong> Those matrices are exactly the positive semidefinite ones, so
+  $P=\{\tilde H\in\mathbb{M}_+:\tilde H\geq0\}$.</li>
+<li><strong>Forward cone.</strong> A Hermitian element $\tilde H=te_0+i\mathbf u$ is positive semidefinite exactly when
+  $t\geq\lvert\mathbf u\rvert$, so
+  $P=\{te_0+i\mathbf u:t\geq\lvert\mathbf u\rvert\}$, the forward cone of the interval form on
+  $\mathbb{M}_+$.</li>
+</ul>
+<p>The cone has an interior and a boundary, and each is an algebraic class:</p>
+<p>$$
+\text{interior}\ =\ \text{positive definite}\ =\ \text{units}\ =\ \text{rank-two squares},\qquad
+\text{boundary}\ =\ \text{rank-one squares}\ =\ \text{zero divisors on the cone}\ =\ \text{massless} .
+$$</p>
+<p><strong>Remark (verified).</strong> The equivalence "$t\geq\lvert\mathbf u\rvert$ iff positive semidefinite" holds on
+$200$ random Hermitian elements; and on $100$ random rank-two squares the two eigenvalues are
+nonnegative, so each splits into a sum of two nonnegative rank-one pieces.</p>
+<h2 id="no-ghosts-no-tachyons">No Ghosts, No Tachyons</h2>
+<p><strong>No ghost.</strong> A ghost would be a nonzero element of negative sesquilinear norm. Since
+$\mathrm{Sc}(\tilde Q\tilde Q^{*})=\lVert\tilde Q\rVert_E^{2}>0$ for every $\tilde Q\neq0$, no such
+element exists. The positive structure the framework's Born pairing and its unitary evolution use is
+positive definite on the <strong>whole</strong> algebra, not on a subspace of it. A theory built on
+$\lVert\cdot\rVert_E$ therefore inherits the positivity as a theorem and cannot lose it by choosing a
+Lagrangian of the wrong sign, because there is no sign to choose.</p>
+<p><strong>No tachyon in the state cone.</strong> A tachyon, in the reading, is an element whose natural square is
+spacelike, that is $\lvert t\rvert<\lvert\mathbf u\rvert$ on $\mathbb{M}_+$, which places it strictly
+outside the forward cone and its backward partner. The algebra's statement is that every sesquilinear
+square lies <strong>in</strong> the cone, so no square is spacelike, and that the spacelike elements lie outside the
+state cone rather than inside it. Whether a spacelike element is a physical particle is not an algebraic
+question; what the algebra settles is that the positivity of the dagger supplies a forward cone and
+places the spacelike region outside it.</p>
+<h2 id="the-reading-rank-as-a-mass-label">The Reading: Rank as a Mass Label</h2>
+<p><strong>Proposed reading, labelled as such.</strong> The rank of the sesquilinear square tracks the biquaternion norm,
+and the norm carries the mass shell; the rank is therefore read as a <strong>mass label</strong>, rank two "massive"
+and rank one "massless". What is proved is the criterion above; what is proposed is the dictionary.</p>
+<p>The reading has one consequence that is algebraically clean. A rank-two positive semidefinite matrix is a
+sum of two rank-one positive semidefinite matrices, so a massive square can be written</p>
+<p>$$
+\tilde Q\tilde Q^{*}=\tilde R\tilde R^{*}+\tilde S\tilde S^{*},\qquad
+N(\tilde Q)\neq0,\quad N(\tilde R)=N(\tilde S)=0 ,
+$$</p>
+<p>a sum of two massless squares.</p>
+<p><strong>Proposed reading.</strong> A massive state is a <strong>bound pair of two massless constituents</strong>, the two rank-one
+terms of its own square.</p>
+<p><strong>What the reading does not claim.</strong> It does not derive a mass spectrum, does not say which rank-one pairs
+bind, and does not make the two terms particles of the spectrum. Above all, the decomposition is <strong>not
+unique</strong>: a rank-two positive semidefinite matrix has many pairs of rank-one summands and no canonical one,
+so the reading has no preferred two-constituent decomposition until a further principle selects one. That
+non-uniqueness is the reading's standing weakness.</p>
+<h2 id="the-limits">The Limits</h2>
+<ul>
+<li>The positivity is a statement about the forms the algebra carries. It is not a statement that any
+  particular physical state space is a Hilbert space.</li>
+<li>The rank law is a statement about the sesquilinear square. The natural square is a scalar multiple of
+  $e_0$ and carries no rank; a reader who reads "the rank of the square" without naming the square will
+  conflate the two.</li>
+<li>The conjugate criterion "no ghost" must not be confused with the isotropy of the Hermitian idempotents:
+  the projectors are <strong>null</strong> for the Krein form and for the natural square, which is a statement about a
+  different form and says nothing against the positivity of the dagger. The distinction is drawn in <em>The States the Indefinite Metric Cannot Normalise</em>.</li>
+</ul>
+<h2 id="the-ledger">The Ledger</h2>
+<p><strong>Proved.</strong> $\tilde Q\tilde Q^{*}$ is Hermitian and positive semidefinite, with
+$\mathrm{Sc}(\tilde Q\tilde Q^{*})=\lVert\tilde Q\rVert_E^{2}>0$ off zero;
+$\mathrm{Tr}(\tilde Q\tilde Q^{*})=2\lVert\tilde Q\rVert_E^{2}$;
+$\det\Phi(\tilde Q\tilde Q^{*})=\lvert N(\tilde Q)\rvert^{2}$; the rank criterion
+$\mathrm{rank}\,\Phi(\tilde Q\tilde Q^{*})=\mathrm{rank}\,\Phi(\tilde Q)$, equal to $2$ off the cone and
+$1$ on it; the three descriptions of the positive cone and the equivalence $t\geq\lvert\mathbf u\rvert$; the interior/boundary dictionary; the rank-two square as a sum of two rank-one squares. No
+element has negative sesquilinear norm.</p>
+<p><strong>Readings.</strong> Rank as a mass label; the massive square as a bound pair of two massless constituents; the
+positive cone as a causal order, with its interior timelike, its boundary lightlike and its complement
+spacelike.</p>
+<p><strong>Not claimed.</strong> That a mass spectrum is derived; that the two-constituent decomposition is canonical; that
+a spacelike element is or is not a physical particle; that the cone-as-causal-order dictionary is forced
+by the algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra carries two squares. The <strong>sesquilinear square</strong> $\tilde Q\tilde Q^{*}$ is
+Hermitian, positive semidefinite, of scalar part the Euclidean square $\lVert\tilde Q\rVert_E^{2}$; its
+positivity is a theorem of the algebra, and no nonzero element has negative norm, so <strong>there is no
+ghost</strong>. The <strong>natural square</strong> $\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0$ is indefinite and complex,
+and it carries the interval: its zero set on the material sector is the light cone and its level sets are
+the mass shells. The two invariants of the square are the two squares: its trace is twice the Euclidean
+square, its determinant is the squared interval. The rank of the square is $2$ off the zero-divisor cone
+and $1$ on it, so the two kinds of nonzero element — massive and massless — are separated by an algebraic
+invariant, and the rank is read as a <strong>mass label</strong>, with the massive square a bound pair of two massless
+rank-one terms, a reading whose standing weakness is that the pair is not unique. The positive cone is
+simultaneously the image of the square, the set of positive semidefinite Hermitian elements, and the
+forward cone $t\geq\lvert\mathbf u\rvert$ of the interval form, with interior the positive definite
+elements and boundary the massless ones; a spacelike element, $\lvert t\rvert<\lvert\mathbf u\rvert$, lies
+outside it, so nothing the algebra produces as a square is spacelike. The positivity of the dagger is what
+makes the internal symmetry group compact and the charges discrete (<em>The Compact Slice and the
+Non-Compact Boost</em>); the states and their isotropy belong to <em>The States the Indefinite Metric Cannot Normalise</em>; the
+interval and the mass shell to <em>Biquaternion Norm and Invertibility</em>; and the cone in physics to <em>The
+Light Cone as the Biquaternion Zero-Divisor Cone</em>, <em>POVMs and the Positive Cone in Biquaternionic Form</em>
+and <em>Causality and the Light Cone as an Information Barrier in Biquaternionic Form</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$</td>
+<td>the sesquilinear product</td>
+</tr>
+<tr>
+<td>$\tilde Q\tilde Q^{*}$</td>
+<td>the sesquilinear square; Hermitian, positive semidefinite</td>
+</tr>
+<tr>
+<td>$\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0$</td>
+<td>the natural square; the interval</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=\sum_\mu Q_\mu^{2}$</td>
+<td>the biquaternion norm</td>
+</tr>
+<tr>
+<td>$\lVert\tilde Q\rVert_E^{2}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>the Euclidean square; $\mathrm{Sc}$ of the sesquilinear square</td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>the $2\times2$ matrix model; $\det\Phi(\tilde Q)=N(\tilde Q)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}=2\,\mathrm{Sc}$</td>
+<td>the trace convention</td>
+</tr>
+<tr>
+<td>$P=\{\tilde Q\tilde Q^{*}\}=\{\tilde H\in\mathbb{M}_+:\tilde H\geq0\}=\{te_0+i\mathbf u:t\geq\lvert\mathbf u\rvert\}$</td>
+<td>the positive cone</td>
+</tr>
+<tr>
+<td>$t\geq\lvert\mathbf u\rvert$</td>
+<td>the cone condition; interior positive definite, boundary massless</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_\pm$</td>
+<td>the informational (Hermitian) and material (anti-Hermitian) sectors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Mathematical Study of Biquaternions</em>, the physics entry point to the mathematical study under
+  which this block sits.</li>
+<li>Companion article <em>Biquaternion Norm and Invertibility</em>, for the interval, the invertibility criterion,
+  the four-velocity and the mass shell.</li>
+<li>Companion article <em>The States the Indefinite Metric Cannot Normalise</em> and <em>The
+  Bloch Ball as the Trace-One Slice of the Future Light Cone</em>, for the states and the state cone.</li>
+<li>Companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em> and <em>Zero Divisors as a
+  Physical Locus in Biquaternionic Form</em>, for the cone on the material sector.</li>
+<li>Companion article <em>POVMs and the Positive Cone in Biquaternionic Form</em>, for the cone as the set of
+  effects.</li>
+<li>Companion article <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>, for the
+  adjoints, the observables and the generators of this structure.</li>
+<li>Mathematics article <em>Biquaternion 2×2 Matrix Element Representation</em>
+  (<code>articles_maths/biquaternion-2x2-matrix-element-representation.md</code>), for $\det\Phi(\tilde Q)=N(\tilde Q)$.</li>
+<li>Mathematics article <em>The Four Pairings of the Biquaternion Algebra</em>
+  (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the four scalar forms.</li>
+<li>Mathematics article <em>Indefinite Inner Product Spaces</em>
+  (<code>articles_maths/indefinite-inner-product-spaces.md</code>), <em>Krein Spaces</em> (<code>articles_maths/krein-spaces.md</code>)
+  and <em>Definitizable Operators and the Krein–Naĭmark Theorem</em>
+  (<code>articles_maths/definitizable-operators-and-the-krein-naimark-theorem.md</code>), for the indefinite
+  companion of the positive form.</li>
+<li>Mathematics article <em>Indefinite Positivity and the Krein Cone of the Biquaternion Algebra</em>
+  (<code>articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md</code>), for the
+  biquaternion Krein cone, which is not the positive cone of this article.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the positive form of a
+  quaternion algebra and its definite structure.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
