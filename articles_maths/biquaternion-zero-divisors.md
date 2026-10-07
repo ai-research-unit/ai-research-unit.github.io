@@ -251,7 +251,7 @@ The non-pure zero divisors are complex multiples of idempotents, and the idempot
 
 ## Distribution of the Zero Divisors
 
-A zero divisor is an element on which $\tilde{Q}\tilde{Q}^{\natural}$ vanishes, so which subspaces contain zero divisors is the algebraic question of where that polynomial vanishes. Algebraically: $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain none, since $\tilde{Q}\tilde{Q}^{\natural}$ is a sum of squares of real coefficients there and vanishes only at $\tilde{Q}=0$; $\mathrm{Vect}(\mathbb{B})$ and $i\mathbb{H}_{\mathbb{B}}$ contain the nilpotents, on which it vanishes for nonzero $\tilde{Q}$; and $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a null cone.
+A zero divisor is an element on which $\tilde{Q}\tilde{Q}^{\natural}$ vanishes, so which subspaces contain zero divisors is the algebraic question of where that polynomial vanishes. Algebraically: $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain none: on the centre $\tilde{Q}\tilde{Q}^{\natural}=Q_0^{2}$ vanishes only at $\tilde{Q}=0$, and on the two quaternion subspaces it is $\pm$ a sum of squares of real coefficients, which likewise vanishes only at zero; $\mathrm{Vect}(\mathbb{B})$ contains the nilpotents, on which it vanishes for nonzero $\tilde{Q}$; and $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a null cone.
 
 ## Structure of the Zero Divisors
 

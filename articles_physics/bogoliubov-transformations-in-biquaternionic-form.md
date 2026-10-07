@@ -173,7 +173,7 @@ Both branches act geometrically on the state space, and the action is the action
 $$
 \tilde U_\theta\,\tilde N_{\mathrm{tr}}\,\tilde U_\theta^{-1} = \tilde N_{\mathrm{tr}},
 \qquad
-\tilde U_\theta\,\tilde\Pi(\pme_3)\,\tilde U_\theta^{-1} = \tilde\Pi(\pme_3),
+\tilde U_\theta\,\tilde\Pi(\pm e_3)\,\tilde U_\theta^{-1} = \tilde\Pi(\pm e_3),
 \qquad
 \tilde U_\theta\,(ie_3)\,\tilde U_\theta^{-1} = ie_3 .
 $$
@@ -276,7 +276,7 @@ Fermionic squeezing requires at least two modes. For $n$ modes the Bogoliubov gr
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger=\tfrac12(ie_1+e_2)$ | Single-mode ladder |
 | $\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$ | Number operator |
-| $\tilde\Pi(\pme_3)=\tfrac12(e_0\pm ie_3)$ | Vacuum and occupied projectors |
+| $\tilde\Pi(\pm e_3)=\tfrac12(e_0\pm ie_3)$ | Vacuum and occupied projectors |
 | $\tilde b=\alpha\tilde a_{\mathrm{tr}}+\beta\tilde a_{\mathrm{tr}}^\dagger$ | One-mode Bogoliubov transformation |
 | $|\alpha|^2+|\beta|^2=1$, $\alpha\beta=0$ | One-mode canonical conditions |
 | $\{\tilde b,\tilde b^\dagger\}=(|\alpha|^2+|\beta|^2)e_0$ | First anticommutator (always normalized) |

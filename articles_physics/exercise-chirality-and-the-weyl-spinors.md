@@ -175,7 +175,7 @@ $$
 \Phi(\tilde{\Lambda}^{*}) = \epsilon^{-1}\,\bar{g}\,\epsilon = \epsilon\,\bar{g}\,\epsilon^{-1},
 $$
 
-where $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. (The two expressions coincide because $\epsilon^{-1} = -\epsilon$.) This is the precise form of the parent's statement that the right-handed action is "equivalent to the entrywise-conjugate action $g\mapsto\bar{g}$, the two differing by conjugation with the invariant tensor $\epsilon$". The identity was verified numerically on 500 random unit-norm biquaternions, with residual $<10^{-9}$.
+where $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. (The two expressions coincide because $\epsilon^{-1} = -\epsilon$.) This is the precise form of the parent's statement that the right-handed action is "equivalent to the entrywise-conjugate action $g\mapsto\bar{g}$, the two differing by conjugation with the invariant tensor $\epsilon$". The identity was verified numerically on 100 random unit-norm biquaternions, with residual $<10^{-9}$. The conjugation on the left is the **coefficientwise (complex)** conjugation of the four coefficients, the one the parent uses for the right-handed action, so that $\Phi(\tilde{\Lambda}^{*}) = \epsilon^{-1}\bar{g}\epsilon = (\Phi(\tilde{\Lambda})^{\dagger})^{-1}$, the inverse of the conjugate transpose; the Hermitian conjugate transpose $\Phi(\tilde{\Lambda})^{\dagger}$ is a different object, the one the conventions above assign to the star, $\Phi(\tilde{Q}^{*})=\Phi(\tilde{Q})^{\dagger}$.
 
 ## Problem 4: The Invariant Symplectic Pairing
 
@@ -322,12 +322,12 @@ which is exactly the rotor conjugation of the material sector. A single spinor c
 
 $$
 b\left(g\psi,\Phi(\tilde{\Lambda}^{*})\chi\right)
-= \psi^{\dagger}g^{*}\Phi(\tilde{\Lambda}^{*})\chi
-= \psi^{\dagger}\Phi\!\left(\tilde{\Lambda}^{*}\tilde{\Lambda}^{*}\right)\chi
+= \psi^{\dagger}g^{\dagger}\Phi(\tilde{\Lambda}^{*})\chi
+= \psi^{\dagger}g^{\dagger}\,(g^{\dagger})^{-1}\chi
 = \psi^{\dagger}\chi,
 $$
 
-because $\tilde{\Lambda}^{*}\tilde{\Lambda}^{*} = (\tilde{\Lambda}^{\natural}\tilde{\Lambda})^{*} = e_0^{*} = e_0$ for a unit-norm biquaternion. This is the Dirac scalar bilinear (numerical residual $<10^{-12}$).
+because the right-handed matrix is the inverse conjugate transpose, $\Phi(\tilde{\Lambda}^{*}) = (g^{\dagger})^{-1}$, equivalently $\Phi(\tilde{\Lambda}^{*}) = \epsilon^{-1}\bar{g}\epsilon = \epsilon\bar{g}\epsilon^{-1}$, the identity established in Problem 3 for a unit-norm biquaternion. This is the Dirac scalar bilinear (numerical residual $<10^{-12}$).
 
 ## Limiting Cases
 

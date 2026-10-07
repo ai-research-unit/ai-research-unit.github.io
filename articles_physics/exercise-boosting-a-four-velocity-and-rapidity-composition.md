@@ -331,7 +331,7 @@ At $\alpha\tau = 1$ this is exactly $1$. For $\alpha\tau > 1$ it exceeds $1$, re
 
 The following are left to the reader; they extend the same tools and use the same notation.
 
-1. **Boosting a four-momentum.** Starting from $\tilde{P} = m\tilde{U}$ and Problem 1, show that $\tilde{\Lambda}_{\mathbf{u}}\tilde{P}\tilde{\Lambda}_{\mathbf{u}}^{*} = iE'/c\,e_0 + \mathbf{p}'$ with $E' = \gamma_u(E-\mathbf{u}\cdot\mathbf{p})$ and $\mathbf{p}' = \mathbf{p} + (\gamma_u-1)\frac{\mathbf{u}\cdot\mathbf{p}}{u^2}\mathbf{u} - \gamma_u\frac{E}{c^2}\mathbf{u}$. Verify the mass shell $\tilde{P}'\tilde{P}^{\natural}' = -m^2c^2$ and recover the aberration of light by setting $m=0$.
+1. **Boosting a four-momentum.** Starting from $\tilde{P} = m\tilde{U}$ and Problem 1, show that $\tilde{\Lambda}_{\mathbf{u}}\tilde{P}\tilde{\Lambda}_{\mathbf{u}}^{*} = iE'/c\,e_0 + \mathbf{p}'$ with $E' = \gamma_u(E-\mathbf{u}\cdot\mathbf{p})$ and $\mathbf{p}' = \mathbf{p} + (\gamma_u-1)\frac{\mathbf{u}\cdot\mathbf{p}}{u^2}\mathbf{u} - \gamma_u\frac{E}{c^2}\mathbf{u}$. Verify the mass shell $\tilde{P}'{\tilde{P}^{\natural}}' = -m^2c^2$ and recover the aberration of light by setting $m=0$.
 
 2. **Antiparallel boosts.** For $\hat{\mathbf{n}}_2 = -\hat{\mathbf{n}}_1$, show that $\tilde{\Lambda}_2\tilde{\Lambda}_1$ is a pure boost of rapidity $|\psi_1-\psi_2|$ (with the sign determined by which rapidity is larger) and that the Wigner angle (10) vanishes. Deduce the subtraction formula $w = |u_1-u_2|/(1-u_1u_2/c^2)$ and compare with Problem 1(d).
 

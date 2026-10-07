@@ -17,15 +17,15 @@ M2C
 VECTOR PART ? 
 
 
+The Hermitian cone becomes the qubit state cone, and positivity becomes causality. 
 
-RESTRUCTURE THE INITIAL 2 OPERATORS to Hilbert 
+The sandwich operator becomes the one action shared by Lorentz transformations, unitary evolution, and measurement.
 
 
-Twistors and the Biquaternion Incidence Relation	twistor theory is a physics construction
-The Biquaternion Conformal Group of Space-Time	"space-time" in the name
-The Celestial Sphere and the Spinor Sky	the sky and the spinor are observational
-Anti-de Sitter Space as a Biquaternion Model	AdS is a physics model
-The de Sitter Space and the Biquaternion Fibration	de Sitter is a physics model
+
+
+
+
 
 
 
@@ -6482,7 +6482,25 @@ So yes: the vector parts have meaning and use. They are not redundant with the s
 
 
 
+The Hilbert structure is the state space. States are the positive Hermitian trace-one elements of M₊; observables are general Hermitian elements; expectation values are 2Sc(ρQ) (M+ as the Informational Sector). That pairing is the Hilbert–Schmidt pairing of the sesquialgebra section: Tr(Φ(ρ)Φ(Q)) = 2Sc(ρQ). The Hilbert-space topology, S⁷ and completeness are therefore not decoration — they are what makes the Born rule a trace.
 
+The cone is the physical state cone. Positivity and the Hermitian Cone gives P = {Q†Q}; the physics reads P as the states, its interior (N(Q) ≠ 0, the units) as the faithful states, and the forward light cone of the interval as its extreme rays. This is the point where the sesquialgebra form and the material metric meet.
+
+The three level sets of the topology table are the three groups of the physics.
+
+Q*Q = e_0 → U(B) ≅ U(2): the internal unitary group, used for evolution ρ ↦ ΛρΛ*.
+⟨Q,Q⟩_♮ = 1 → the non-compact norm-1 group: used for Lorentz rotors.
+S⁷ → not used, because φ is not multiplicative: e₁ + ie₂ has norm √2 and square 0 — the zero divisor that is the lightlike direction of the physics.
+The operator tables are the physics dictionaries.
+
+Observables = self-adjoint = M₊; generators = skew-adjoint = M₋; unitaries = the slice. That is why the whole series is titled "with Hermitian Adjoint".
+Evolution ρ ↦ ΛρΛ* and measurement ρ ↦ PρP are the dagger sandwich Θ_Q = L_Q R_{Q†} of Two-Sided Operators — one unitary parameter, one idempotent parameter. The "reversible/irreversible" split of the physics is the "unitary/self-adjoint" split of the operator theory.
+Measurement projections come from M₊ only, never M₋ (no nonzero idempotent in M₋) — The Peirce Decomposition and the Material Field.
+The indefinite companion is the other product. The Lorentz interval on M₋ is N = Sc(P^♮Q) (second slot without the star), of signature (−,+,+,+). The sesquialgebra section deliberately excludes N from the Witt theory because it is not Hermitian for the dagger. So the framework explains in one stroke why it needs two pairings: H for probability, N for the metric, related on a sector by H = ±B and K = ±N.
+
+Reality conditions. The maths lemma that the spinor module is of complex type (so a real structure must be chosen) is the physics topos of The Local Complex Structure and the Speed of Light and of Real Spinors and Reality Conditions: the complex structure is local, fixed by the medium.
+
+What the physics does not give. The physics side is a research programme, labelled as such: the informational sector is a hypothesis, has no dynamics of its own, and has no empirical signature. The maths side is proved. That asymmetry is stated in the physics articles themselves, and it is the honest status of the example.
 
 
 

@@ -124,7 +124,7 @@ $$
 $$
 which is the boost biquaternion of the same rapidity in the opposite direction. The COM daughter four-momenta are therefore carried to the laboratory by
 $$
-\tilde{P}_a = \tilde{\Lambda}^{\natural}_{\rm CM}\,\tilde{P}_a^*\,\tilde{\Lambda}^{\natural}_{\rm CM}^\dagger .
+\tilde{P}_a = \tilde{\Lambda}^{\natural}_{\rm CM}\,\tilde{P}_a^*\,\tilde{\Lambda}^{\natural}_{\rm CM}{}^\dagger .
 $$
 
 > **Remark on the parent's boost convention.** The parent writes the star-to-lab rotation as $\tilde{P}_a = \tilde{\Lambda}\tilde{P}_a^*\tilde{\Lambda}^{*}$ with $\tilde{\Lambda} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\hat{\mathbf{V}}$, the quaternion conjugate of the rotor that carries the laboratory frame to the parent rest frame - the sign of the vector part being opposite to that of the lab-to-rest rotor, as the parent states. That rotor produces $E_a = \gamma(E_a^* + \mathbf{V}\cdot\mathbf{p}_a^*)$, in agreement with the component formula quoted immediately below it in the parent; the biquaternion and component forms therefore agree. We work with the physical convention, in which a forward-emitted daughter ($\mathbf{V}\cdot\mathbf{p}_a^* > 0$) gains energy, and which corresponds to the inverse rotor above.
@@ -147,8 +147,8 @@ $$
 $$
 the upper end being forward emission and the lower end backward emission. The two lab four-momenta still sum to $\tilde{P}_A$, because the rotation is linear:
 $$
-\tilde{\Lambda}^{\natural}_{\rm CM}\left(\tilde{P}_1^* + \tilde{P}_2^*\right)\tilde{\Lambda}^{\natural}_{\rm CM}^\dagger
-= \tilde{\Lambda}^{\natural}_{\rm CM}\left(iMc\,e_0\right)\tilde{\Lambda}^{\natural}_{\rm CM}^\dagger
+\tilde{\Lambda}^{\natural}_{\rm CM}\left(\tilde{P}_1^* + \tilde{P}_2^*\right)\tilde{\Lambda}^{\natural}_{\rm CM}{}^\dagger
+= \tilde{\Lambda}^{\natural}_{\rm CM}\left(iMc\,e_0\right)\tilde{\Lambda}^{\natural}_{\rm CM}{}^\dagger
 = \tilde{P}_A .
 $$
 

@@ -290,7 +290,7 @@ $$
 
 so the term is Hermitian if and only if $\nabla\times\mathbf E=0$, its failure of Hermiticity being proportional to the curl. Since $\mathbf E=-\nabla\Phi$ for an electrostatic field, $\nabla\times\mathbf E=-\nabla\times\nabla\Phi=0$ identically, and the term is Hermitian. Writing it instead as $\boldsymbol\sigma\cdot(\nabla V\times\boldsymbol\pi)$ makes this manifest, because $\nabla V$ is a gradient. For a general time-dependent field, where $\mathbf E$ has a solenoidal part $-\partial_t\mathbf A$ and $\nabla\times\mathbf E=-\partial_t\mathbf B$, the antisymmetric part does not vanish and the non-relativistic reduction requires the symmetrized ordering; this is the only place in the reduction where the result is convention- and ordering-sensitive beyond the metric conventions already noted.
 
-*Step 2: the $\mathbb M_+$ representatives.* Under the isomorphism, a Hermitian $2\times2$ matrix $h_0I_2+\mathbf h\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $h_0e_0+i\mathbf h\in\mathbb M_+$; this was verified directly for 200 random Hermitian operators with maximum error $0$. Applying it term by term, with $\mathbf B=B_ke_k$ and $(\mathbf E\times\boldsymbol\pi)=(\mathbf E\times\boldsymbol\pi)_ke_k$,
+*Step 2: the $\mathbb M_+$ representatives.* Under the isomorphism, a Hermitian $2\times2$ matrix $h_0I_2+\mathbf h\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $h_0e_0+i\mathbf h\in\mathbb M_+$; this was verified directly for 100 random Hermitian operators with maximum error $0$. Applying it term by term, with $\mathbf B=B_ke_k$ and $(\mathbf E\times\boldsymbol\pi)=(\mathbf E\times\boldsymbol\pi)_ke_k$,
 
 | Term of $\hat H$ | Biquaternion representative | Sector |
 |---|---|---|

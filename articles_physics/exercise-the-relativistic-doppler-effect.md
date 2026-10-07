@@ -56,7 +56,7 @@ $$
 $$
 Let $\tilde{\Lambda}$ be any unit-norm biquaternion and let $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$, $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$. Then
 $$
-\tilde{K}'\tilde{Q}^{\natural}'
+\tilde{K}'{\tilde{Q}^{\natural}}'
 = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}\;\bigl(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\bigr)^{\natural}
 = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}\,\bigl(\tilde{\Lambda}^{*}\bigr)^{\natural}\,\tilde{Q}^{\natural}\,\tilde{\Lambda}^{\natural} .
 $$
@@ -64,7 +64,7 @@ Since $\tilde{\Lambda}^{*} = \overline{\tilde{\Lambda}^{\natural}}$ and quaterni
 $$
 \tilde{\Lambda}^{*}\bigl(\tilde{\Lambda}^{*}\bigr)^{\natural} = \overline{\tilde{\Lambda}^{\natural}}\,\bar{\tilde{\Lambda}} = \overline{\tilde{\Lambda}^{\natural}\tilde{\Lambda}} = \tilde{\Lambda}^{\natural}\tilde{\Lambda} = e_0 ,
 $$
-so $\tilde{K}'\tilde{Q}^{\natural}' = \tilde{\Lambda}(\tilde{K}\tilde{Q}^{\natural})\tilde{\Lambda}^{\natural}$. The scalar projection is cyclic, $\mathrm{Sc}(PAP) = \mathrm{Sc}(AP^2)$, and with $P\bar{P} = e_0$,
+so $\tilde{K}'{\tilde{Q}^{\natural}}' = \tilde{\Lambda}(\tilde{K}\tilde{Q}^{\natural})\tilde{\Lambda}^{\natural}$. The scalar projection is cyclic, $\mathrm{Sc}(PAP) = \mathrm{Sc}(AP^2)$, and with $P\bar{P} = e_0$,
 $$
 \mathrm{Sc}\!\left(\tilde{\Lambda}\,(\tilde{K}\tilde{Q}^{\natural})\,\tilde{\Lambda}^{\natural}\right)
 = \mathrm{Sc}\!\left((\tilde{K}\tilde{Q}^{\natural})\,\tilde{\Lambda}^{\natural}\tilde{\Lambda}\right)

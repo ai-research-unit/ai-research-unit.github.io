@@ -33,6 +33,8 @@ The menus of the articles are maths.md for maths articles and physics.md for phy
 
 The folders containing the articles are articles_maths for maths articles and articles_physics for physics articles.
 
+From time to time, update the article "The Mathematical Study of Biquaternions" with the links toward the new maths articles that may have been written category of biquaternions.
+
 ################################
 ### RULES DURING THE CHATTING PHASE
 ################################

@@ -81,7 +81,7 @@ $$
 
 **Remark (why two blocks, and why the sign repeats).** The two-block structure of the bilinear Gram matrices is the anti-isometry $J$: it exchanges the block $\mathrm{D}$ with the block $-\mathrm{D}$, hence the split signature $(4,4)$ of a form whose complex inertia is $(1,3)$. The repeated block of the sesquilinear Gram matrices is the isometry $J$ of the proposition above; the Krein form therefore repeats the sign string $\varepsilon$ where the complex bilinear form reverses it, and this is the only difference between the two matrices $\operatorname{diag}(\mathrm{D},-\mathrm{D})$ and $\operatorname{diag}(\varepsilon,\varepsilon)$.
 
-**Remark (the Hermitian realification is the Euclidean form).** The Hermitian realification is positive definite, $\langle\tilde Q,\tilde Q\rangle_{*\mathbb{R}}=\sum_\mu(q_\mu^{2}+q'_\mu^{2})$, and it is the ordinary inner product of $\mathbb{R}^{8}$ of *The Euclidean Topology of the Biquaternion Algebra*. It is the one form of the four with no null vector but $0$, and it is the form that supplies the topology of the next sections.
+**Remark (the Hermitian realification is the Euclidean form).** The Hermitian realification is positive definite, $\langle\tilde Q,\tilde Q\rangle_{*\mathbb{R}}=\sum_\mu(q_\mu^{2}+{q'_\mu}^{2})$, and it is the ordinary inner product of $\mathbb{R}^{8}$ of *The Euclidean Topology of the Biquaternion Algebra*. It is the one form of the four with no null vector but $0$, and it is the form that supplies the topology of the next sections.
 
 ## The Six Subspaces under the Four Realified Forms
 
