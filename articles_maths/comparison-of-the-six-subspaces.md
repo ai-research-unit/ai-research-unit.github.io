@@ -195,4 +195,4 @@ The six distinguished subspaces of $\mathbb{B}$ are organized by the four coordi
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, its basis, its conjugations and its coordinate systems
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations as an abstract group and the two spaces each defines
 - *The Six Subspaces and the Four Complex Products* (`articles_maths/the-six-subspaces-and-the-four-complex-products.md`), for what the six give when the product is brought in, which is not part of this article
-- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/biquaternion-clifford-structure.md`), for the grading of the algebra and the four grades
+- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/the-clifford-structure-of-the-biquaternion-algebra.md`), for the grading of the algebra and the four grades

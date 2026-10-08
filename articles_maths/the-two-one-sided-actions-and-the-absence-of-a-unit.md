@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
 $$
 
-is the subject of this group. The rule, the scalar–vector form and the place of the product among the four are *The Four Biquaternion Complex Products* §*The Complex Quaternionic Sesquilinear Product*; the sesquialgebra it defines, its multiplication table and its two actions of the unit are *Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, and $\mathbf P = \sum_k P_k e_k$ is the vector part.
+is the subject of this group. The rule, the scalar–vector form and the place of the product among the four are *The Four Biquaternion Complex Products* §*The Complex Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its two actions of the unit are *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, and $\mathbf P = \sum_k P_k e_k$ is the vector part.
 
 The subject of this article is the pair of **one-sided actions of the unit candidate** $e_0$, and the fact that they are not the identity but the two conjugations of the algebra:
 
@@ -19,7 +19,7 @@ $$
 
 Both hold for every $\tilde Q$, and both are then read on the six distinguished subspaces. Their consequence is the group's defining negative statement: the multiplication has **no unit on either side**. There is no element $\tilde E$ with $\tilde E \star \tilde Q = \tilde Q$ for all $\tilde Q$, and none with $\tilde Q \star \tilde E = \tilde Q$ for all $\tilde Q$. The third product of the four has a right unit and no left one, the second has a left unit and no right one, and the first has a unit; the fourth has neither, and this is what separates its structure theory from the other three.
 
-The article owns the two actions and the absence of a unit. It reads the actions off the rule, which is *The Four Biquaternion Complex Products*; it uses the two scalar rules of the category, which are *Sesquialgebras* §*The Definition*; it uses the derived-operation test with its two conditions, which is *Sesquialgebras* §*The Standard Example* as applied to $\mathbb{B}$ in *Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$* §*The Product Is Not the Derived Operation*; and it uses the reading of the two conjugations on the six subspaces, which is *Introduction to the Six Subspaces* and *Comparison of the Six Subspaces*. It does not treat the general operators of the multiplication, which are the later article of this group *The Left and Right Multiplications of the Quaternionic Sesquilinear Product*, nor the ternary product, which is *The Ternary Product and the Failure of the Jordan Triple Identity*.
+The article owns the two actions and the absence of a unit. It reads the actions off the rule, which is *The Four Biquaternion Complex Products*; it uses the two scalar rules of the category, which are *Sesqualgebras* §*The Definition*; it uses the derived-operation test with its two conditions, which is *Sesqualgebras* §*The Standard Example* as applied to $\mathbb{B}$ in *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$* §*The Product Is Not the Derived Operation*; and it uses the reading of the two conjugations on the six subspaces, which is *Introduction to the Six Subspaces* and *Comparison of the Six Subspaces*. It does not treat the general operators of the multiplication, which are the later article of this group *The Left and Right Multiplications of the Quaternionic Sesquilinear Product*, nor the ternary product, which is *The Ternary Product and the Failure of the Jordan Triple Identity*.
 
 ## The Two Actions of the Unit
 
@@ -45,7 +45,7 @@ $$
 
 **Proof.** By the rule, $\tilde Q \star e_0 = \tilde Q^{\natural} e_0^{*}$. The star conjugation fixes the identity, $e_0^{*} = e_0$, so $\tilde Q^{\natural}e_0^{*} = \tilde Q^{\natural}$. $\square$
 
-**Remark.** The right action is the natural conjugation, which is $\mathbb{C}$-linear: $\tilde Q \star (\lambda e_0) = (\lambda e_0)^{\natural} = \lambda\,\tilde Q^{\natural} = \lambda\,(\tilde Q \star e_0)$. The two actions are thus a conjugate-linear one on the left and a linear one on the right, and they are the two conjugations of the group of involutions (*The Group of Involutions*, *The Involutions of a Sesquialgebra*).
+**Remark.** The right action is the natural conjugation, which is $\mathbb{C}$-linear: $\tilde Q \star (\lambda e_0) = (\lambda e_0)^{\natural} = \lambda\,\tilde Q^{\natural} = \lambda\,(\tilde Q \star e_0)$. The two actions are thus a conjugate-linear one on the left and a linear one on the right, and they are the two conjugations of the group of involutions (*The Group of Involutions*, *The Involutions of a Sesqualgebra*).
 
 ### Both Actions Are Involutions
 
@@ -103,13 +103,13 @@ $$
 \sigma(\tilde Y) = e_0 \star \tilde Y = \tilde Y^{*} ,
 $$
 
-obtained by holding the first argument at $e_0$, in the notation of *Sesquialgebras* §*The Standard Example*.
+obtained by holding the first argument at $e_0$, in the notation of *Sesqualgebras* §*The Standard Example*.
 
 By the first proposition above, the first row of the multiplication is the star conjugation.
 
 ### The Two Conditions
 
-The general theory asks whether a sesquilinear product is the **derived operation** $x \star y = xy^{*}$ of an associative algebra with a conjugate-linear involution. It is exactly then that the first row is such an involution and rebuilds the product; stated as in *Biquaternions as a Sesquialgebra over $\mathbb{C}$* §*Which of the Four Is a Sesquilinear Multiplication* and in *Sesquialgebras* §*The Standard Example*, the two conditions are:
+The general theory asks whether a sesquilinear product is the **derived operation** $x \star y = xy^{*}$ of an associative algebra with a conjugate-linear involution. It is exactly then that the first row is such an involution and rebuilds the product; stated as in *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* §*Which of the Four Is a Sesquilinear Multiplication* and in *Sesqualgebras* §*The Standard Example*, the two conditions are:
 
 (i) $\sigma$ is a conjugate-linear involution of the algebra: $\sigma(\lambda\tilde Y) = \bar\lambda\,\sigma(\tilde Y)$, $\sigma^{2} = \mathrm{id}$, $\sigma(\tilde X\tilde Y) = \sigma(\tilde Y)\sigma(\tilde X)$ and $\sigma(e_0) = e_0$;
 
@@ -117,7 +117,7 @@ The general theory asks whether a sesquilinear product is the **derived operatio
 
 **Theorem (the first row passes one condition and fails the other).** For the complex quaternionic sesquilinear product, $\sigma = {}^{*}$ satisfies condition (i) and fails condition (ii); consequently the product is not the derived operation of the algebra with any involution.
 
-**Proof.** Condition (i): the star conjugation is conjugate-linear, involutive, anti-multiplicative and fixes $e_0$, which is the statement that it is the involution of the derived operation (*The Group of Involutions*, *Biquaternions as an Algebra over $\mathbb{C}$*). So (i) holds. Condition (ii) with $\sigma = {}^{*}$ would read $\tilde X^{\natural}\tilde Y^{*} = \tilde X\tilde Y^{*}$ for all $\tilde X, \tilde Y$; at $\tilde Y = e_0$ this is $\tilde X^{\natural} = \tilde X$ for every $\tilde X$, which fails at $\tilde X = e_1$, where the two sides are $-e_1$ and $e_1$. So (ii) fails. $\square$
+**Proof.** Condition (i): the star conjugation is conjugate-linear, involutive, anti-multiplicative and fixes $e_0$, which is the statement that it is the involution of the derived operation (*The Group of Involutions*, *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*). So (i) holds. Condition (ii) with $\sigma = {}^{*}$ would read $\tilde X^{\natural}\tilde Y^{*} = \tilde X\tilde Y^{*}$ for all $\tilde X, \tilde Y$; at $\tilde Y = e_0$ this is $\tilde X^{\natural} = \tilde X$ for every $\tilde X$, which fails at $\tilde X = e_1$, where the two sides are $-e_1$ and $e_1$. So (ii) fails. $\square$
 
 **Remark.** The failure of (ii) is the absence of a right unit, read in the second slot: with $\tilde Y = e_0$, condition (ii) says $\tilde X \star e_0 = \tilde X\sigma(e_0) = \tilde X$, that is $\tilde X^{\natural} = \tilde X$ for every $\tilde X$, which is exactly the statement that $e_0$ is a right unit of the multiplication. The two forms of the same failure are the derived-operation test and the right-unit test, and the theorem is their equivalence for this product.
 
@@ -133,7 +133,7 @@ the insertion being in the first slot and the derived operation being $\tilde P\
 
 **Proof.** The formula is the rule. The map ${}^{\natural}$ is a $\mathbb{C}$-linear anti-automorphism and a bijection of $\mathbb{B}$, and an isotope of an operation by a bijection $\varphi$ is the operation $(x,y) \mapsto \varphi(x)\,y$; here $\varphi = {}^{\natural}$. $\square$
 
-**Remark.** The two sesquilinear products of the four are the derived operation and its ${}^{\natural}$-isotope, exactly as the two bilinear products of the four are the plain multiplication and its ${}^{\natural}$-isotope; in each pair the second is the first with the $\mathbb{C}$-linear insertion the derived-operation test rejects (*Comparison Between the Four Biquaternion Products* §*Which of the Four Is a Multiplication*, *Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$* §*The Isotope Reading*). The absence of a unit in the second member of each pair is the price of the insertion: the derived operation keeps the right unit $e_0$, and its isotope loses it in the first slot.
+**Remark.** The two sesquilinear products of the four are the derived operation and its ${}^{\natural}$-isotope, exactly as the two bilinear products of the four are the plain multiplication and its ${}^{\natural}$-isotope; in each pair the second is the first with the $\mathbb{C}$-linear insertion the derived-operation test rejects (*Comparison Between the Four Biquaternion Products* §*Which of the Four Is a Multiplication*, *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$* §*The Isotope Reading*). The absence of a unit in the second member of each pair is the price of the insertion: the derived operation keeps the right unit $e_0$, and its isotope loses it in the first slot.
 
 ## The Actions on the Six Subspaces
 
@@ -207,7 +207,7 @@ With no unit, the derived vocabulary of an algebra has to be replaced, and the g
 | $\tilde P\tilde Q^{*}$ | none | $e_0$ |
 | $\tilde P^{\natural}\tilde Q^{*}$ | none | none |
 
-**Proof.** The plain product is the associative product of the algebra and has the two-sided unit $e_0$. For the sibling bilinear product, $e_0 \star \tilde Y = e_0^{\natural}\tilde Y = \tilde Y$ because ${}^{\natural}$ fixes $e_0$, so $e_0$ is a left unit, and there is no right one (*Biquaternions as a Quaternionic Algebra over $\mathbb{C}$* §*The Unit*). For the sibling sesquilinear product, $\tilde Y \star e_0 = \tilde Y\tilde e_0^{*} = \tilde Y$, so $e_0$ is a right unit, and there is no left one (*Biquaternions as a Sesquialgebra over $\mathbb{C}$* §*The Right Unit*). The fourth row is the two theorems of this article, in the form that both actions of $e_0$ are conjugations and neither is the identity. $\square$
+**Proof.** The plain product is the associative product of the algebra and has the two-sided unit $e_0$. For the sibling bilinear product, $e_0 \star \tilde Y = e_0^{\natural}\tilde Y = \tilde Y$ because ${}^{\natural}$ fixes $e_0$, so $e_0$ is a left unit, and there is no right one (*Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$* §*The Unit*). For the sibling sesquilinear product, $\tilde Y \star e_0 = \tilde Y\tilde e_0^{*} = \tilde Y$, so $e_0$ is a right unit, and there is no left one (*Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* §*The Right Unit*). The fourth row is the two theorems of this article, in the form that both actions of $e_0$ are conjugations and neither is the identity. $\square$
 
 **Remark.** The four rows are the sharpest reading of the two slots. Each of the four products makes one of the two slots the identity and the other slot the twist: the two bilinear products put the twist in the first slot and the identity in the second, one of them losing the right unit and the other the left; the sibling sesquilinear product has the twist in the second slot and the identity in the first, keeping the right unit; and this product puts a twist in both slots, keeping neither. The table is the unit row of the comparison of the four products, *Comparison Between the Four Biquaternion Products*, read with the two actions of this article.
 

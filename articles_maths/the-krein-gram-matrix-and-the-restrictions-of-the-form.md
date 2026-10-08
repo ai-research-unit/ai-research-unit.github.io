@@ -183,7 +183,7 @@ In the coefficient basis the quaternion sesquilinear form has the Gram matrix $G
 
 - *The Biquaternion Krein Form and Its Signature* (`articles_maths/the-biquaternion-krein-form-and-its-signature.md`), for the form itself and its inertia
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the three Gram matrices compared
-- *The Biquaternion Quaternionic Sesquialgebra in the $2\times2$ Matrix Representation* (`articles_maths/the-biquaternion-quaternionic-sesquialgebra-in-the-2x2-matrix-representation.md`), for the adjugated trace identities used here
+- *The Biquaternion Quaternionic Sesqualgebra in the $2\times2$ Matrix Representation* (`articles_maths/the-biquaternion-quaternionic-sesqualgebra-in-the-2x2-matrix-representation.md`), for the adjugated trace identities used here
 - *The Quaternion Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-quaternion-bilinear-form-on-the-biquaternion-algebra.md`), for the restriction of the norm to the same six subspaces
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the definitions and dimensions of the six subspaces
 - *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the definitions and the coordinate blocks of the six subspaces

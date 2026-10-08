@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The left regular representation $\rho_L$ of *Introduction to the $4\times4$ Regular Matrix Representation of Biquaternions* carries the algebra acting on itself, and it makes the natural conjugation ${}^{\natural}$ visible as the **transposition** of the regular matrix, $\rho_L(\tilde{Q}^{\natural})=\rho_L(\tilde{Q})^{\mathsf{T}}$. This article is the companion of *The Biquaternion Quaternionic Algebra in the $2\times2$ Matrix Representation*, and it reads the group *Topology on the Biquaternions as a Quaternionic Algebra over $\mathbb{C}$* on the regular matrices: the quaternionic product becomes the product of the transposed regular matrix with the second factor, and the quaternion bilinear form becomes the trace pairing with the transposed second factor, with the factor $2$ that the dimension of the module brings.
+The left regular representation $\rho_L$ of *Introduction to the $4\times4$ Regular Matrix Representation of Biquaternions* carries the algebra acting on itself, and it makes the natural conjugation ${}^{\natural}$ visible as the **transposition** of the regular matrix, $\rho_L(\tilde{Q}^{\natural})=\rho_L(\tilde{Q})^{\mathsf{T}}$. This article is the companion of *The Biquaternion Quaternionic Algebra in the $2\times2$ Matrix Representation*, and it reads the group *Topology on the Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$* on the regular matrices: the quaternionic product becomes the product of the transposed regular matrix with the second factor, and the quaternion bilinear form becomes the trace pairing with the transposed second factor, with the factor $2$ that the dimension of the module brings.
 
 The regular representation has one advantage over the $2\times2$ realization in this group: the characteristic operation ${}^{\natural}$ is a transposition, and the transposition is the operation that the regular matrix already carries. The quaternion bilinear form therefore needs no adjugate, and the determinant of the regular matrix is the square of the norm, the two factors being the two copies of the simple module.
 
@@ -98,7 +98,7 @@ The left regular representation reads the natural conjugation as the transpositi
 
 - *Introduction to the $4\times4$ Regular Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-4x4-regular-matrix-representation-of-biquaternions.md`), for the representation and its first properties
 - *Biquaternion 4×4 Regular Matrix Element Representation* (`articles_maths/biquaternion-4x4-regular-matrix-element-representation.md`), for the further reading of the regular representation
-- *Biquaternions as a Quaternionic Algebra over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-quaternionic-algebra-over-c.md`), for the quaternionic product on the algebra
+- *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-general-quaternionic-algebra-gqa-over-c.md`), for the quaternionic product on the algebra
 - *The Quaternion Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-quaternion-bilinear-form-on-the-biquaternion-algebra.md`), for the form on the algebra
 - *The Biquaternion Quaternionic Algebra in the $2\times2$ Matrix Representation* (`articles_maths/the-biquaternion-quaternionic-algebra-in-the-2x2-matrix-representation.md`), for the companion reading of the group
 - *The Six Subspaces under the Quaternion Bilinear Form* (`articles_maths/the-six-subspaces-under-the-quaternion-bilinear-form.md`), for the restriction theory of the form

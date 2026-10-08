@@ -18,7 +18,7 @@ Biquaternion Zero-Divisor Cone* and *Causality and the Light Cone as an Informat
 Biquaternionic Form*; the states and the Bloch ball to *The States the Indefinite Metric Cannot Normalise* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; the
 measurement cone to *POVMs and the Positive Cone in Biquaternionic Form*; and the comparison of the four
 scalar forms to *The Four Products and Their Physical Readings: the Two Algebras and the Two
-Sesquialgebras*.
+Sesqualgebras*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
 $e_k^{2}=-e_0$, $e_1e_2=e_3$, central $i$ with $i^{2}=-1$. An element is $\tilde Q=Q_0e_0+\mathbf Q$ with
@@ -48,6 +48,14 @@ The square is **Hermitian**, because ${}^{*}$ is an anti-automorphism of order t
 is the **Euclidean square of the coefficient vector**, strictly positive off zero. Being Hermitian and of
 the form $\Phi(\tilde Q)\Phi(\tilde Q)^{\dagger}$ in the matrix model, it is **positive semidefinite**.
 Its positivity is therefore a theorem about the algebra, not a hypothesis about a Lagrangian.
+
+The form whose diagonal this is has a name in the general theory: $\mathrm{Sc}(\tilde R^{*}\tilde Q)$ is
+the **canonical Hermitian form of the regular module**, the form the algebra carries on itself once the
+involution is read on the regular bimodule, where it produces three structures at once — the twist that
+turns the left module into the right one, the symmetry of the bimodule, and the sesquilinear form. Its
+positivity is what the whole argument above descends from, and it is the mother of the Born pairing on
+every submodule. The construction is *The Canonical Hermitian Form on the Regular Module of the
+Biquaternion Algebra*.
 
 ### The Natural Square Is the Interval
 
@@ -232,8 +240,8 @@ simultaneously the image of the square, the set of positive semidefinite Hermiti
 forward cone $t\geq\lvert\mathbf u\rvert$ of the interval form, with interior the positive definite
 elements and boundary the massless ones; a spacelike element, $\lvert t\rvert<\lvert\mathbf u\rvert$, lies
 outside it, so nothing the algebra produces as a square is spacelike. The positivity of the dagger is what
-makes the internal symmetry group compact and the charges discrete (*The Compact Slice and the
-Non-Compact Boost*); the states and their isotropy belong to *The States the Indefinite Metric Cannot Normalise*; the
+makes the internal symmetry group compact and the charges discrete (*Particle Types, Discrete Charge and
+Three-Particle Couplings*); the states and their isotropy belong to *The States the Indefinite Metric Cannot Normalise*; the
 interval and the mass shell to *Biquaternion Norm and Invertibility*; and the cone in physics to *The
 Light Cone as the Biquaternion Zero-Divisor Cone*, *POVMs and the Positive Cone in Biquaternionic Form*
 and *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*.

@@ -15,9 +15,9 @@ the **symmetrised product** and the **sesquilinear commutator**, or **difference
 
 Neither half is an algebra in the naive sense over $\mathbb{C}$. The two operations are only $\mathbb{R}$-bilinear, because each slot receives one linear and one conjugate-linear contribution from the two scalar rules, and the surviving scalars are the fixed field $\mathbb{R}$; and the two classical identities fail off the Hermitian half. The sesquilinear commutator is a Lie bracket on the skew-Hermitian half alone, and the symmetrised product is a Jordan product on the Hermitian half alone: off those halves the Jacobi identity and the Jordan identity fail, with the witnesses below computed on $\mathbb{B}$.
 
-The article is the eighth of the batch and reads the two general articles *The Sesquilinear Commutator* and *The Sesquilinear Symmetrised Product*, whose antisymmetry, scalar theorems, half-theorems and failure witnesses are quoted; the two bilinear operations that the sesquilinear ones are compared with are *Biquaternion Lie Algebras* and *Biquaternion Jordan Algebras*, and the Lie and the Jordan structures of the sesquialgebra are *Lie Algebras of Sesquialgebras* and *Jordan Algebras of Sesquialgebras*. The ternary product that repairs the associativity is *The Ternary Product and the Associator of the Biquaternion Sesquialgebra*, and the operator forms of the two halves are *The Left and Right Multiplications of the Biquaternion Sesquialgebra*.
+The article is the eighth of the batch and reads the two general articles *The Sesquilinear Commutator* and *The Sesquilinear Symmetrised Product*, whose antisymmetry, scalar theorems, half-theorems and failure witnesses are quoted; the two bilinear operations that the sesquilinear ones are compared with are *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the Lie and the Jordan structures of the sesqualgebra are *Lie Algebras of Sesqualgebras* and *Jordan Algebras of Sesqualgebras*. The ternary product that repairs the associativity is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*, and the operator forms of the two halves are *The Left and Right Multiplications of the Biquaternion Sesqualgebra*.
 
-The setting is that of *Biquaternions as a Sesquialgebra over $\mathbb{C}$*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are $\tilde Q=Q_0e_0+\mathbf Q$, and the Hermitian form is $\langle\tilde P,\tilde Q\rangle_*=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *The Hermitian Form on the Biquaternion Algebra*.
+The setting is that of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are $\tilde Q=Q_0e_0+\mathbf Q$, and the Hermitian form is $\langle\tilde P,\tilde Q\rangle_*=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *The Hermitian Form on the Biquaternion Algebra*.
 
 ## The Split of the Multiplication
 
@@ -51,7 +51,27 @@ and the same display with the two slots exchanged; the operations are therefore 
 
 **Proof.** This is the scalar theorem of *The Sesquilinear Symmetrised Product*, §*The Scalar Rules*, and of *The Sesquilinear Commutator*, §*The Scalars and the Correction Term*, with $\varsigma$ the complex conjugation and the fixed ring $\mathbb{R}$; the correction carries the transposed product $\tilde Q\star\tilde P$ because the scalar sits in the second slot of the transposed factor. $\square$
 
-**Remark.** The correction term vanishes exactly on the real scalars, and it is the whole content of the semilinearity of the two operations: a genuinely sesquilinear product gives a bracket and a symmetrisation over $\mathbb{R}$ and not over $\mathbb{C}$. For the bilinear product $\tilde P\tilde Q$ of *Biquaternion Lie Algebras* and *Biquaternion Jordan Algebras* the correction is absent and the two operations are $\mathbb{C}$-bilinear, which is the first of the two differences between the two readings.
+**Remark.** The correction term vanishes exactly on the real scalars, and it is the whole content of the semilinearity of the two operations: a genuinely sesquilinear product gives a bracket and a symmetrisation over $\mathbb{R}$ and not over $\mathbb{C}$. For the bilinear product $\tilde P\tilde Q$ of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* the correction is absent and the two operations are $\mathbb{C}$-bilinear, which is the first of the two differences between the two readings.
+
+### The Other Exchange, and the Two Sesquilinear Halves
+
+The split above is taken under the **plain** exchange of the two arguments, and the correction term is what the plain exchange costs. The exchange by a conjugation $c$, $f^{c}(\tilde P,\tilde Q)=c(f(\tilde Q,\tilde P))$, keeps the class of the two sesquilinear products, and its two halves $f^{c}_{\pm}=\tfrac12(f\pm f^{c})$ are sesquilinear over $\mathbb{C}$; the construction is *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*.
+
+With $c=\overline{\cdot}$ the four halves on the two products of this article are these: for $\tilde P\tilde Q^{*}$,
+
+$$
+\tfrac12\bigl(\tilde P\tilde Q^{*}+(\tilde P\tilde Q^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}}),\qquad
+\tfrac12\bigl(\tilde P\tilde Q^{*}-(\tilde P\tilde Q^{*})^{\natural}\bigr)=\mathrm{Vect}(\tilde P\tilde Q^{*}),
+$$
+
+the scalar part, central, and the vector part of the value; and for $\tilde P^{\natural}\tilde Q^{*}$, since $\overline{\tilde Q^{\natural}}=\tilde Q^{*}$,
+
+$$
+\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr),\qquad
+\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr),
+$$
+
+the symmetrisation of $\tilde P^{\natural}$ with $\tilde Q^{*}$ and half their commutator in the plain product. So each sesquilinear product carries **two** pairs of halves, one under each exchange, and the pair above is the one that stays in the class: the symmetrised product and the sesquilinear commutator of this article are the plain pair, and the scalar and the vector part of the value are the adapted pair of the first product.
 
 ## The Sesquilinear Commutator
 
@@ -95,7 +115,7 @@ where the brackets on the right are the ordinary commutator of the algebra.
 
 **Proof.** For Hermitian $\tilde h$ the derived operation is the algebra product in both slots, $\tilde h\star\tilde h'=\tilde h\tilde h'$, so the bracket is the ordinary commutator; for skew-Hermitian $\tilde s$ the involution contributes a sign, $\tilde s^{*}=-\tilde s$, so $[\tilde s,\tilde s']_\varsigma=-(\tilde s\tilde s'-\tilde s'\tilde s)$; and for the mixed pair $[\tilde s,\tilde h]_\varsigma=\tilde s\tilde h^{*}-\tilde h\tilde s^{*}=\tilde s\tilde h+\tilde h\tilde s$. This is the theorem of *The Sesquilinear Commutator*, §*The Two Halves*. $\square$
 
-**Corollary (the Lie algebra of the skew-Hermitian half).** On the skew-Hermitian half the sesquilinear bracket is $\mathbb{R}$-bilinear, antisymmetric and satisfies the Jacobi identity, being the negative of the commutator of the associative envelope; the sesquilinear bracket and the ordinary commutator make $\mathbb{M}_-$ one and the same Lie algebra over $\mathbb{R}$, up to the sign of the bracket. That Lie algebra is the unitary Lie algebra of *The Unitary Group of the Biquaternion Algebra* and *Lie Algebras of Sesquialgebras*.
+**Corollary (the Lie algebra of the skew-Hermitian half).** On the skew-Hermitian half the sesquilinear bracket is $\mathbb{R}$-bilinear, antisymmetric and satisfies the Jacobi identity, being the negative of the commutator of the associative envelope; the sesquilinear bracket and the ordinary commutator make $\mathbb{M}_-$ one and the same Lie algebra over $\mathbb{R}$, up to the sign of the bracket. That Lie algebra is the unitary Lie algebra of *The Unitary Group of the Biquaternion Algebra* and *Lie Algebras of Sesqualgebras*.
 
 **Proof.** The theorem gives $[\tilde s,\tilde s']_\varsigma=-[\tilde s,\tilde s']$ on $\mathbb{M}_-$, and the commutator of an associative algebra is a Lie bracket; the sign carries through the three terms of the Jacobi identity. $\square$
 
@@ -113,14 +133,14 @@ $$
 [[\tilde P,\tilde Q]_\varsigma,\tilde H]_\varsigma+[[\tilde Q,\tilde H]_\varsigma,\tilde P]_\varsigma+[[\tilde H,\tilde P]_\varsigma,\tilde Q]_\varsigma=2e_2\neq0 .
 $$
 
-**Proof.** The three elements are Hermitian: the two projections by *Projections of the Biquaternion Sesquialgebra*, and $\tilde H=ie_1$ because $e_1^{*}=-e_1$. The inner brackets are ordinary commutators by the half-theorem. The first vanishes, $[\tilde P,\tilde Q]_\varsigma=\tilde P\tilde Q-\tilde Q\tilde P=0$, because $\tilde P\tilde Q=\tfrac14(e_0+ie_3)(e_0-ie_3)=\tfrac14(e_0-e_0)=0$ and likewise in the other order. The other two are
+**Proof.** The three elements are Hermitian: the two projections by *Projections of the Biquaternion Sesqualgebra*, and $\tilde H=ie_1$ because $e_1^{*}=-e_1$. The inner brackets are ordinary commutators by the half-theorem. The first vanishes, $[\tilde P,\tilde Q]_\varsigma=\tilde P\tilde Q-\tilde Q\tilde P=0$, because $\tilde P\tilde Q=\tfrac14(e_0+ie_3)(e_0-ie_3)=\tfrac14(e_0-e_0)=0$ and likewise in the other order. The other two are
 
 $$
 [\tilde Q,\tilde H]_\varsigma=\tilde Q\tilde H-\tilde H\tilde Q=\tfrac12\bigl(e_2+ie_1\bigr)-\tfrac12\bigl(ie_1-e_2\bigr)=e_2 , \qquad
 [\tilde H,\tilde P]_\varsigma=\tilde H\tilde P-\tilde P\tilde H=\tfrac12\bigl(e_2+ie_1\bigr)-\tfrac12\bigl(ie_1-e_2\bigr)=e_2 ,
 $$
 
-where the basis products of *Biquaternions as a Sesquialgebra over $\mathbb{C}$* give the two expansions. Both inner values are the skew-Hermitian $e_2$, and the outer brackets read a skew-Hermitian element with a Hermitian one by the mixed rule $[\tilde s,\tilde h]_\varsigma=\tilde s\tilde h+\tilde h\tilde s$:
+where the basis products of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* give the two expansions. Both inner values are the skew-Hermitian $e_2$, and the outer brackets read a skew-Hermitian element with a Hermitian one by the mixed rule $[\tilde s,\tilde h]_\varsigma=\tilde s\tilde h+\tilde h\tilde s$:
 
 $$
 [e_2,\tilde P]_\varsigma=e_2\tilde P+\tilde Pe_2=\tfrac12\bigl(e_2+ie_1\bigr)+\tfrac12\bigl(e_2-ie_1\bigr)=e_2 , \qquad
@@ -165,7 +185,7 @@ so the squares determine the symmetrised product.
 
 **Proof.** This is the polarisation of *The Sesquilinear Symmetrised Product*, §*The Polarisation of the Square*, using the additivity of the multiplication in each variable; the two forms differ by the coefficient that the expansion requires, and each is the standard polarisation of a quadratic map. $\square$
 
-**Remark.** The square $\tilde P\mapsto\tilde P\star\tilde P=\tilde P\tilde P^{*}$ therefore determines the symmetric half, and the antisymmetric half is exactly what the square cannot see: the bracket takes opposite values on the two products and cancels in every square. On the diagonal the symmetrised product is the square of *The Squares and the Positive Cone of the Biquaternion Sesquialgebra*, and the polarisation is the reason the square theory and the symmetrised product are the same subject off the diagonal.
+**Remark.** The square $\tilde P\mapsto\tilde P\star\tilde P=\tilde P\tilde P^{*}$ therefore determines the symmetric half, and the antisymmetric half is exactly what the square cannot see: the bracket takes opposite values on the two products and cancels in every square. On the diagonal the symmetrised product is the square of *The Squares and the Positive Cone of the Biquaternion Sesqualgebra*, and the polarisation is the reason the square theory and the symmetrised product are the same subject off the diagonal.
 
 ### The Hermitian Value
 
@@ -201,7 +221,7 @@ $$
 
 **Proof.** For Hermitian $\tilde h$ the derived operation is the algebra product, $\tilde h\star\tilde h'=\tilde h\tilde h'$ and $\tilde h'\star\tilde h=\tilde h'\tilde h$; the two symmetrisations therefore agree on the half, and the symmetrisation of an associative product satisfies the Jordan identity, by *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*. This is the theorem of *The Sesquilinear Symmetrised Product*, §*On the Hermitian Part*. $\square$
 
-**Remark.** The Jordan algebra is the Hermitian Jordan algebra of *The Hermitian Jordan Algebra* and *Biquaternion Jordan Algebras*, and it is the positive cone theory of *The Squares and the Positive Cone of the Biquaternion Sesquialgebra*. The sesquilinear symmetrisation is therefore a Jordan product exactly on the Hermitian half, and there it is the same product as the one the algebra symmetrisation of *Biquaternion Jordan Algebras* carries on that half.
+**Remark.** The Jordan algebra is the Hermitian Jordan algebra of *The Hermitian Jordan Algebra* and of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and it is the positive cone theory of *The Squares and the Positive Cone of the Biquaternion Sesqualgebra*. The sesquilinear symmetrisation is therefore a Jordan product exactly on the Hermitian half, and there it is the same product as the one the algebra symmetrisation of the same article carries on that half.
 
 ### The Failure of the Jordan Identity
 
@@ -233,7 +253,7 @@ $$
 
 the last because $\tilde Y\tilde X\tilde X^{*}=0$; the two sides of the identity are then $\tfrac{i}{4}e_1$ and $0$, as the transport of $\tfrac14(E_{12}+E_{21})$ and $0$ along the inverse of the model. $\square$
 
-**Remark.** One of the two elements is Hermitian, $\tilde Y$, and one is not, $\tilde X$; a single element off the Hermitian half is enough to break the identity, and the perturbation is exactly the failure of $\tilde X$ to be Hermitian. The value $\tilde X\circ\tilde X=\tilde X\tilde X^{*}=\tfrac12(e_0+ie_3)$ is Hermitian, as the Hermitian-value theorem promises, but the symmetry of the derived product with one slot off the half is the wrong one to carry the identity. The failure is the reason the Jordan structure of the sesquialgebra lives on the Hermitian half alone, and it is *Jordan Algebras of Sesquialgebras*, §*The Hermitian Part*, that locates it there.
+**Remark.** One of the two elements is Hermitian, $\tilde Y$, and one is not, $\tilde X$; a single element off the Hermitian half is enough to break the identity, and the perturbation is exactly the failure of $\tilde X$ to be Hermitian. The value $\tilde X\circ\tilde X=\tilde X\tilde X^{*}=\tfrac12(e_0+ie_3)$ is Hermitian, as the Hermitian-value theorem promises, but the symmetry of the derived product with one slot off the half is the wrong one to carry the identity. The failure is the reason the Jordan structure of the sesqualgebra lives on the Hermitian half alone, and it is *Jordan Algebras of Sesqualgebras*, §*The Hermitian Part*, that locates it there.
 
 ## The Biquaternion Reading
 
@@ -263,7 +283,7 @@ the second for the vector indices, so on the vector part the bracket is $-2$ tim
 
 ### The Comparison with the Two Bilinear Operations
 
-The bilinear commutator $\tilde P\tilde Q-\tilde Q\tilde P$ of *Biquaternion Lie Algebras* and the bilinear symmetrisation $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Biquaternion Jordan Algebras* are $\mathbb{C}$-bilinear and satisfy their identities on the whole algebra. The sesquilinear operations agree with them on the Hermitian half and fail off it.
+The bilinear commutator $\tilde P\tilde Q-\tilde Q\tilde P$ and the bilinear symmetrisation $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* are $\mathbb{C}$-bilinear and satisfy their identities on the whole algebra. The sesquilinear operations agree with them on the Hermitian half and fail off it.
 
 | operation | bilinear or sesquilinear | Jacobi identity | Jordan identity |
 |---|---|---|---|
@@ -278,7 +298,7 @@ The bilinear commutator $\tilde P\tilde Q-\tilde Q\tilde P$ of *Biquaternion Lie
 
 The sesquilinear multiplication splits as $\tilde P\star\tilde Q=\tilde P\circ\tilde Q+\tfrac12[\tilde P,\tilde Q]_\varsigma$ into the symmetrised product and the sesquilinear commutator, both $\mathbb{R}$-bilinear and no more, $\mathbb{R}$ being the fixed field of the conjugation. The commutator is antisymmetric, takes its values in the skew-Hermitian half, and is the negative of the ordinary commutator on that half, so the skew-Hermitian half is a Lie algebra over $\mathbb{R}$, the unitary Lie algebra; its Jacobi identity fails on the whole algebra, with the three-Hermitian-element witness $\tilde\Pi_+(\hat e_3),\tilde\Pi_+(-\hat e_3),ie_1$ giving $2e_2$, because the outer brackets obey the symmetrised rule on the skew-Hermitian values.
 
-The symmetrised product is the polarisation of the square, takes its values in the Hermitian half, has scalar part the real part of the Hermitian form, and agrees with the plain symmetrisation on the Hermitian half, where it is a Jordan algebra; off the half the Jordan identity fails, with the witness $\tilde X=\tfrac12(ie_1-e_2)$, $\tilde Y=\tfrac12(e_0-ie_3)$ giving $\tfrac{i}{4}e_1$ against $0$. On the basis the symmetrised product is $\delta_{\mu\nu}e_0$ and the commutator of two vector basis elements is $-2$ times their cross product. The two bilinear operations of *Biquaternion Lie Algebras* and *Biquaternion Jordan Algebras* are the $\mathbb{C}$-bilinear case, with their identities everywhere; the sesquilinear operations carry them on the two halves alone.
+The symmetrised product is the polarisation of the square, takes its values in the Hermitian half, has scalar part the real part of the Hermitian form, and agrees with the plain symmetrisation on the Hermitian half, where it is a Jordan algebra; off the half the Jordan identity fails, with the witness $\tilde X=\tfrac12(ie_1-e_2)$, $\tilde Y=\tfrac12(e_0-ie_3)$ giving $\tfrac{i}{4}e_1$ against $0$. On the basis the symmetrised product is $\delta_{\mu\nu}e_0$ and the commutator of two vector basis elements is $-2$ times their cross product. The two bilinear operations of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* are the $\mathbb{C}$-bilinear case, with their identities everywhere; the sesquilinear operations carry them on the two halves alone.
 
 ## Summary of Notation
 

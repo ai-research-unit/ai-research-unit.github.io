@@ -363,7 +363,7 @@ reality conditions of *Antilinear Structure and the Two Kinds of Mass in Biquate
 
 ## Further Reading
 
-- A. Acus and A. Dargys, *Square roots of complexified quaternions*, arXiv:2601.08391 (2026), for the
+- A. Dargys and A. Acus, *Square roots of complexified quaternions*, arXiv:2601.08391 (2026), for the
   general square-root problem of complexified quaternions.
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford
   Algebras* **16** (2006) 63–68, for the central case of the roots of $-1$.

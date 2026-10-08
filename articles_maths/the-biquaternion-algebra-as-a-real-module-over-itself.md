@@ -66,7 +66,7 @@ $$
 $$
 a symmetric $\mathbb{R}$-bilinear form on the regular module, of signature $(4,4)$.
 
-**Proof.** The product of the two matrices is $\rho_L^{\mathbb{R}}(\tilde P\tilde Q)$, so the trace is $8\operatorname{Re}((\tilde P\tilde Q)_0)$ by the theorem; symmetric because $\operatorname{Tr}(XY) = \operatorname{Tr}(YX)$ and $\operatorname{Re}((\tilde P\tilde Q)_0) = \operatorname{Re}((\tilde Q\tilde P)_0)$. Writing $Q_0 = a+bi$ and $Q_k = c_k + id_k$, the quadratic form $\operatorname{Re}\bigl((\tilde Q^2)_0\bigr) = (a^2-b^2) - \sum_k(c_k^2-d_k^2)$ has one positive and one negative scalar direction and three positive and three negative vector directions, hence signature $(4,4)$; the signatures of the bilinear forms of the biquaternion algebra are those of *Introduction to Topology on the Biquaternions*, §*The Four Forms*. $\square$
+**Proof.** The product of the two matrices is $\rho_L^{\mathbb{R}}(\tilde P\tilde Q)$, so the trace is $8\operatorname{Re}((\tilde P\tilde Q)_0)$ by the theorem; symmetric because $\operatorname{Tr}(XY) = \operatorname{Tr}(YX)$ and $\operatorname{Re}((\tilde P\tilde Q)_0) = \operatorname{Re}((\tilde Q\tilde P)_0)$. Writing $Q_0 = a+bi$ and $Q_k = c_k + id_k$, the quadratic form $\operatorname{Re}\bigl((\tilde Q^2)_0\bigr) = (a^2-b^2) - \sum_k(c_k^2-d_k^2)$ has one positive and one negative scalar direction and three positive and three negative vector directions, hence signature $(4,4)$. $\square$
 
 ## Submodules and the Composition Series
 

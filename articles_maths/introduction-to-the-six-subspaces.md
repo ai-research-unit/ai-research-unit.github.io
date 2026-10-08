@@ -155,9 +155,9 @@ The biquaternion algebra carries four conjugations whose fixed and anti-fixed sp
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the group the four conjugations generate
 - *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the relations between the six and the lattice of the fixed spaces
 - *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product and its scalar–vector form
-- *Decomposition of the Biquaternion Complex Products* (`articles_maths/decomposition-of-the-biquaternion-complex-products.md`), for the two parts into which the product splits
-- *Biquaternion Jordan Algebras* (`articles_maths/biquaternion-jordan-algebras.md`), for the symmetrized product and the trace form
-- *Biquaternion Lie Algebras* (`articles_maths/biquaternion-lie-algebras.md`), for the commutator, the derived subalgebra and the adjoint maps
+- *Scalar / Vector decomposition of the Biquaternion Complex Products* (`articles_maths/scalar-over-vector-decomposition-of-the-biquaternion-complex-products.md`), for the two parts into which the product splits
+- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the symmetrized product and the trace form
+- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the commutator, the derived subalgebra and the adjoint maps
 - *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the idempotents, the projections and the Peirce corners
 - *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the one-sided ideals and the minimal left ideals
 - *Modules over the Biquaternion Algebra* (`articles_maths/modules-over-the-biquaternion-algebra.md`), for the simple module $S$ and the Morita equivalence

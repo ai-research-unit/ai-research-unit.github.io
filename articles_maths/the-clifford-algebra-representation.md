@@ -173,7 +173,7 @@ so that all six bivectors correspond to the quaternion units with the positive s
 - S. J. Sangwine, T. A. Ell, N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* 21 (2011) 607–636, for the coordinate and matrix readings of the same algebra.
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra and its conjugations
 - *Biquaternions as an Algebra over $\mathbb{R}$* (`articles_maths/biquaternions-as-an-algebra-over-r.md`), for the algebra read over the real field
-- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/biquaternion-clifford-structure.md`), for the dedicated reading of the Clifford identification
+- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/the-clifford-structure-of-the-biquaternion-algebra.md`), for the dedicated reading of the Clifford identification
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm and the real subspaces it restricts to
 - *Biquaternion 2×2 Matrix Element Representation* (`articles_maths/biquaternion-2x2-matrix-element-representation.md`), for the matrix realization and the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$
 - *Biquaternion Spin Geometry* (`articles_maths/biquaternion-spin-geometry.md`), for the action of the algebra on spinors

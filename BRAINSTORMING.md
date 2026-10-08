@@ -8,13 +8,38 @@ biquaternion-topology
 biquaternion-null-quadric-and-projective-geometry
 
 
+STRUCTURES ALGEBRIQUES QUADRATIQUES SCINDE DANS ALGEBRE
 
 
 M2C
 
+The algebra case has no antisymmetric diagonal, the sesqualgebra case has one and it is not zero in general.
 
 
-VECTOR PART ? 
+
+
+Physical interpretation of 
+
+
+
+DANS CHACUN DES 12
+
+Introduction (the product, vector expression, scalar and vector part, algebraic norm)
+
+
+
+representation 4x4
+representation 2x2
+6 subspaces
+
+
+
+
+The one caveat. The topological article still needs two things that are not forms: the space B as a real vector space of dimension 8, and the product, so it can say the product is continuous. Neither is a form and neither is an algebraic norm. I kept both and removed every form, every conjugation and N. If you want the product out as well, say so and it becomes a pure linear-space article.
+
+
+
+The Vector Part 
 
 
 The Hermitian cone becomes the qubit state cone, and positivity becomes causality. 
@@ -6482,25 +6507,284 @@ So yes: the vector parts have meaning and use. They are not redundant with the s
 
 
 
-The Hilbert structure is the state space. States are the positive Hermitian trace-one elements of M₊; observables are general Hermitian elements; expectation values are 2Sc(ρQ) (M+ as the Informational Sector). That pairing is the Hilbert–Schmidt pairing of the sesquialgebra section: Tr(Φ(ρ)Φ(Q)) = 2Sc(ρQ). The Hilbert-space topology, S⁷ and completeness are therefore not decoration — they are what makes the Born rule a trace.
 
-The cone is the physical state cone. Positivity and the Hermitian Cone gives P = {Q†Q}; the physics reads P as the states, its interior (N(Q) ≠ 0, the units) as the faithful states, and the forward light cone of the interval as its extreme rays. This is the point where the sesquialgebra form and the material metric meet.
+Mathematically the vector parts are what turn the four forms into the four products:
+they carry the Lie structure, the adjoint representation, and a cubic invariant the
+scalar parts cannot see. Physically, each scalar part is a charge-like quantity
+(an invariant, a density) and its vector part is the matching current-like quantity
+(a flux, a generator). I checked the key identities numerically.
 
-The three level sets of the topology table are the three groups of the physics.
+──────────────────────────────────────────────────────────────────────
+1. WHAT THE VECTOR PARTS ARE, MATHEMATICALLY
+──────────────────────────────────────────────────────────────────────
 
-Q*Q = e_0 → U(B) ≅ U(2): the internal unitary group, used for evolution ρ ↦ ΛρΛ*.
-⟨Q,Q⟩_♮ = 1 → the non-compact norm-1 group: used for Lorentz rotors.
-S⁷ → not used, because φ is not multiplicative: e₁ + ie₂ has norm √2 and square 0 — the zero divisor that is the lightlike direction of the physics.
-The operator tables are the physics dictionaries.
+Fix the split
 
-Observables = self-adjoint = M₊; generators = skew-adjoint = M₋; unitaries = the slice. That is why the whole series is titled "with Hermitian Adjoint".
-Evolution ρ ↦ ΛρΛ* and measurement ρ ↦ PρP are the dagger sandwich Θ_Q = L_Q R_{Q†} of Two-Sided Operators — one unitary parameter, one idempotent parameter. The "reversible/irreversible" split of the physics is the "unitary/self-adjoint" split of the operator theory.
-Measurement projections come from M₊ only, never M₋ (no nonzero idempotent in M₋) — The Peirce Decomposition and the Material Field.
-The indefinite companion is the other product. The Lorentz interval on M₋ is N = Sc(P^♮Q) (second slot without the star), of signature (−,+,+,+). The sesquialgebra section deliberately excludes N from the Witt theory because it is not Hermitian for the dagger. So the framework explains in one stroke why it needs two pairings: H for probability, N for the metric, related on a sector by H = ±B and K = ±N.
+    P̃ = P₀ + P,    P ∈ V = span_C{e₁, e₂, e₃} ≅ C³.
 
-Reality conditions. The maths lemma that the spinor module is of complex type (so a real structure must be chosen) is the physics topos of The Local Complex Structure and the Speed of Light and of Real Spinors and Reality Conditions: the complex structure is local, fixed by the medium.
+Each product gives a scalar pairing s_ε(P̃, Q̃) ∈ C and a vector map
+v_ε(P̃, Q̃) ∈ V:
 
-What the physics does not give. The physics side is a research programme, labelled as such: the informational sector is a hypothesis, has no dynamics of its own, and has no empirical signature. The maths side is proved. That asymmetry is stated in the physics articles themselves, and it is the honest status of the example.
+    product          scalar part                     vector part
+    ───────────────  ──────────────────────────────  ──────────────────────────────
+    P̃ Q̃             P₀ Q₀ − (P, Q)                 P₀ Q + Q₀ P + P × Q
+
+    P̃♮ Q̃            P₀ Q₀ + (P, Q)                 P₀ Q − Q₀ P − P × Q
+
+    P̃ Q̃*            P₀ Q̄₀ + (P, Q̄)                 −P₀ Q̄ + Q̄₀ P − P × Q̄
+
+    P̃♮ Q̃*           P₀ Q̄₀ − (P, Q̄)                 −P₀ Q̄ − Q̄₀ P + P × Q̄
+
+The scalar parts are forms (symmetric or Hermitian). The vector parts are three
+things at once:
+
+  A bracket.
+      P̃ Q̃ − Q̃ P̃ = 2 P × Q,
+  a pure vector. The commutator of the plain product sees only the vector parts,
+  and equals the cross product. Verified, 200/200.
+
+  A degeneracy.
+      P̃♮ Q̃ + Q̃♮ P̃ = 2 (P₀ Q₀ + (P, Q)) e₀,
+  purely central. So the quaternionic product's anticommutator carries no vector
+  part; its vector part is entirely antisymmetric. Verified, 200/200. This is why
+  the quaternionic split is the scalar–vector split.
+
+  A Lie algebra.
+  On V the cross product makes V ≅ sl(2, C), whose compact real form
+      span_R{e₁, e₂, e₃} ≅ so(3) ≅ su(2)
+  is the angular-momentum algebra. So the vector part of a product is naturally a
+  rotation/boost generator, i.e. an element of the adjoint representation.
+
+Two further facts live in the vector part and not in the forms:
+
+  The Clifford relation.
+      p̃ q̃ = −(p, q) + p × q.
+  The scalar part is the metric, the vector part is the cross product; together
+  they are one Clifford product. The forms are only half of it. Verified, 300/300.
+
+  A cubic invariant.
+      det(p, q, r) = (p, q × r)
+  is alternating and SO(3, C)-invariant. The scalar parts exhaust the degree-two
+  invariants; the vector part introduces the degree-three one. This is the same
+  object as the triality/Ding cubic form the corpus already notes elsewhere, and
+  the same shape as the anomaly coefficient (a cubic form on generators).
+
+Norms: the Lagrange identity
+    (p × q, p × q) = (p, p)(q, q) − (p, q)²
+holds, and
+    N(P̃ Q̃) = N(P̃) N(Q̃).
+Diagonal vector parts are degenerate in a specific way:
+    Vec(P̃²) = 2 P₀ P    and    Vec(P̃♮ P̃) = 0
+(the norm is central), so a "self-current" needs two distinct elements.
+
+──────────────────────────────────────────────────────────────────────
+2. PHYSICAL MEANING, TIED TO EACH SCALAR PART
+──────────────────────────────────────────────────────────────────────
+
+The key structural point: a biquaternion is itself a four-vector — scalar part =
+time component, vector part = space components. So
+
+    Sc(product) + Vec(product)
+
+is one four-vector: the scalar part is the invariant pairing, the vector part is
+the companion current. Each sector then gets a charge and a current:
+
+  Composition (plain, B).
+      Sc = the Minkowski-like pairing;
+      Vec = P₀ Q + Q₀ P + P × Q = the spatial composition of two four-vectors.
+      Reading: the energy–momentum flux of the composed material system.
+
+  Causality (quaternionic, N).
+      Sc = interval/mass shell;
+      Vec ∝ the antisymmetric part = the rotor exponent, i.e. rapidity/angular
+      momentum.
+      Reading: the Lorentz generator (spin and boost).
+
+  Probability (sesquilinear, H).
+      Sc = Born density;
+      Vec = probability current.
+      This is exactly the Dirac current j^μ = ψ̄ γ^μ ψ split into density plus
+      current, and for a single state it is the Bloch/polarization vector. The
+      corpus already has The Gordon Decomposition of the Dirac Current as the
+      natural anchor.
+
+  Gauge (quaternionic sesquilinear, K).
+      Sc = the indefinite (Klein–Gordon-like) charge;
+      Vec = the gauge current / field-strength vector.
+      The Riemann–Silberstein field E + iB is already a vector object of this
+      kind.
+
+So the pattern is uniform: form = charge, vector part = current, one pair per
+product. The natural theorem to aim for is a continuity equation per sector: the
+divergence of the vector part vanishes when the scalar part is conserved.
+
+A second cross-link worth noting: I flagged O22 (multiplication is chirality-blind)
+in the catalogue review. The ε-tensor inside the cross product is the only
+parity-odd primitive the algebra supplies. So the vector part is also where
+parity/antisymmetry can enter — the one place the algebra is not simply
+vector-like.
+
+
+
+
+
+
+Focus on the Composition Algebra of Biquaternions
+Focus on the Causality Algebra of Biquaternions
+Focus on the Probability Sesqualgebra of Biquaternions
+Focus on the Gauge Sesqualgebra of Biquaternions
+
+
+
+
+
+
+
+The scalar part is the Jordan trace form
+
+The symmetric part of the plain product is the Jordan product
+P̃ ∙ Q̃, and
+
+    Sc(P̃ ∙ Q̃) = Sc(P̃ Q̃).
+
+──────────────────────────────────────────────────────────────────────
+WHAT THIS SAYS
+──────────────────────────────────────────────────────────────────────
+
+The plain product P̃ Q̃ is not symmetric: in general P̃ Q̃ ≠ Q̃ P̃.
+Its symmetric part is the Jordan product
+
+    P̃ ∙ Q̃ = ½ (P̃ Q̃ + Q̃ P̃).
+
+The claim is that the scalar part of the Jordan product equals the scalar part
+of the plain product:
+
+    Sc(P̃ ∙ Q̃) = Sc(P̃ Q̃).
+
+Why: the scalar part is invariant under the reversal of the product, because
+the scalar part of the plain product is the symmetric bilinear form
+
+    Sc(P̃ Q̃) = P₀ Q₀ − (P, Q) = Σ_μ ε_μ P_μ Q_μ,
+
+which is symmetric in P̃ and Q̃. So
+
+    Sc(P̃ Q̃) = Sc(Q̃ P̃),
+
+and therefore
+
+    Sc(P̃ ∙ Q̃) = ½ (Sc(P̃ Q̃) + Sc(Q̃ P̃)) = Sc(P̃ Q̃).
+
+──────────────────────────────────────────────────────────────────────
+WHY IT MATTERS
+──────────────────────────────────────────────────────────────────────
+
+1. The scalar part is a trace form.
+
+   The scalar part Sc is the Jordan trace form of the algebra: it is the
+   symmetric bilinear form that the Jordan product ∙ induces, and it coincides
+   with the scalar part of the associative product. So the "charge-like"
+   pairing of the four-products article is exactly the Jordan trace form, not
+   an extra structure layered on top.
+
+2. The vector part is where the antisymmetry lives.
+
+   Since Sc(P̃ ∙ Q̃) = Sc(P̃ Q̃), the difference between the plain product and
+   its symmetrisation is entirely in the vector part:
+
+       P̃ Q̃ − P̃ ∙ Q̃ = ½ (P̃ Q̃ − Q̃ P̃) = P × Q,
+
+   a pure vector, by the bracket identity of the vector-parts article. So:
+
+       scalar part   = Jordan trace form (symmetric, charge-like)
+       vector part   = antisymmetric bracket (the commutator, current-like)
+
+   This is the clean algebraic statement of the charge/current split: the
+   symmetric part of the plain product is the Jordan product, whose trace is
+   the form; the antisymmetric part is the Lie bracket, which lives entirely in
+   the vector part.
+
+3. It ties the four-products article to the Jordan-algebraic reading.
+
+   The scalar parts of the four products are the four forms (symmetric or
+   Hermitian). The plain product's scalar part is in particular the Jordan
+   trace form of the Jordan product ∙. So the "form = charge" row of the
+   physics reading is not an analogy: it is the statement that the charge
+   pairing is the trace form of the Jordan structure carried by the symmetric
+   part of the algebra.
+
+──────────────────────────────────────────────────────────────────────
+ONE-LINE SUMMARY
+──────────────────────────────────────────────────────────────────────
+
+The symmetric part of the plain product is the Jordan product; its scalar
+part is the Jordan trace form and equals the scalar part of the plain product,
+so the charge-like pairing is exactly the Jordan trace form, and the entire
+antisymmetric remainder sits in the vector part as the cross-product bracket.
+
+
+
+
+
+The 8 new, and what they could mean
+
+op	what it is	physics guess
+S1	Jordan product, scalar part = B (interval)	the observable algebra of the material sector; unit e₀ = the identity observable
+A1	cross product	so(3): spin, angular momentum. Established
+S2	the form N as a product	the interval itself read as composition on the material event; being scalar, it compares but cannot compose
+A2	antisymmetric companion	orientation / chirality of the material composition
+S3	the form H, positive	the Born rule as a product: probability linkage, positivity
+A3	skew companion of the probability	phase / interference / probability current — density is the symmetric half, current the antisymmetric
+S4	the Krein form K + vector	the indefinite gauge metric (Gupta–Bleuler), the fourth product's metric
+A4	cross with conjugate	internal (gauge) rotation; a copy of A1, so internal rotations have the same shape as spacetime ones
+
+How far to trust the count. All 12 are distinct operations, so "12 products" is fair. But they are not 12 independent structures: P = S + A within each row, and rows 3–4 are rows 1–2 with one slot conjugated. Up to conjugation there are about 5 genuinely different laws. Structures, not numbers: 2 named (S1 Jordan, A1 Lie), 6 unnamed.
+
+
+
+
+
+
+GPA
+GQA
+SPA
+SQA
+APA
+AQA
+
+
+GPS
+GQS
+SPS
+SQS
+APS
+AQS
+
+
+The 12 Algebraic structures over the Biquaternion C space 
+
+what about naming the 12 structures : 
+
+
+GPA General Plain Algebra
+SPA Symmetric Plain Algebra
+APA Antisymmetric Plain Algebra
+
+GQA General Quaternionic Algebra
+SQA Symmetric Quaternionic Algebra
+AQA Antisymmetric Quaternionic Algebra
+
+
+GPS General Plain Sesqualgebra
+SPS Symmetric Plain Sesqualgebra
+APS Antisymmetric Plain Sesqualgebra
+
+
+GQS General Quaternionic Sesqualgebra
+SQS Symmetric Quaternionic Sesqualgebra
+AQS Antisymmetric Quaternionic Sesqualgebra
+
+
+
 
 
 

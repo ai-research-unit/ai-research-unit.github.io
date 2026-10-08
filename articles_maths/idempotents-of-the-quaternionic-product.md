@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3}\varepsilon_\mu P_\mu Q_\nu\, e_\mu e_\nu , \qquad \varepsilon = (1,-1,-1,-1) ,
 $$
 
-the **complex quaternionic bilinear product**, in which ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$. The coordinate rule and the scalar–vector form are *The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product*; the algebra the product defines, its failure of associativity and its left unit are *Biquaternions as a Quaternionic Algebra over $\mathbb{C}$*; its place among the four products is the property table of *Comparison Between the Four Biquaternion Products*.
+the **complex quaternionic bilinear product**, in which ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$. The coordinate rule and the scalar–vector form are *The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product*; the algebra the product defines, its failure of associativity and its left unit are *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*; its place among the four products is the property table of *Comparison Between the Four Biquaternion Products*.
 
 An **idempotent** of a multiplication is an element with $\tilde\Pi\star\tilde\Pi = \tilde\Pi$. The two **trivial** idempotents are $0$ and $e_0$, and an idempotent different from both is **nontrivial**. The idempotents are the first of the element-theoretic data of a multiplication: for an associative unital algebra they are the projectors, and they carry the Peirce decompositions and the minimal ideals of the algebra, which for the multiplication $\tilde P\tilde Q$ of $\mathbb{B}$ are *Biquaternion Idempotents and Projections* and *Biquaternion Ideals and Peirce Decomposition*. This article asks the same question of the product $\star$.
 
@@ -51,7 +51,7 @@ The lemma is the reason the idempotent equation is trivial here and nontrivial f
 
 ## The Isotope Reading
 
-The product $\star$ is not an arbitrary second multiplication on $\mathbb{B}$; it is the **isotope** of the associative product $\tilde P\tilde Q$ by the $\mathbb{C}$-linear map ${}^{\natural}$, that is $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ (*Biquaternions as a Quaternionic Algebra over $\mathbb{C}$*). The idempotents of an isotope are governed by the twisting map, and the general statement explains in advance why the family of projectors of the algebra cannot survive.
+The product $\star$ is not an arbitrary second multiplication on $\mathbb{B}$; it is the **isotope** of the associative product $\tilde P\tilde Q$ by the $\mathbb{C}$-linear map ${}^{\natural}$, that is $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ (*Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*). The idempotents of an isotope are governed by the twisting map, and the general statement explains in advance why the family of projectors of the algebra cannot survive.
 
 **Proposition (idempotents of an isotope).** Let $A$ be an algebra with a linear map $\sigma$ and the product $x\star_\sigma y = \sigma(x)y$. Then $e$ satisfies $e\star_\sigma e = e$ if and only if $\sigma(e)e = e$. In particular an element fixed by $\sigma$, $\sigma(e) = e$, is idempotent for $\star_\sigma$ exactly when it is idempotent for the original product.
 

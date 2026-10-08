@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
 $$
 
-whose rule, scalar–vector form and place among the four are the subject of *The Four Biquaternion Complex Products*, and whose multiplication table and sesquialgebra axioms are in *Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$*. The symbolism is that article's: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, $\mathbf P = \sum_{k=1}^{3} P_k e_k$ is the vector part, and $N(\tilde P) = \tilde P\tilde P^{\natural} = \sum_{\mu} P_\mu^{2}$ is the norm form.
+whose rule, scalar–vector form and place among the four are the subject of *The Four Biquaternion Complex Products*, and whose multiplication table and sesqualgebra axioms are in *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*. The symbolism is that article's: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, $\mathbf P = \sum_{k=1}^{3} P_k e_k$ is the vector part, and $N(\tilde P) = \tilde P\tilde P^{\natural} = \sum_{\mu} P_\mu^{2}$ is the norm form.
 
 The question of the article is the **idempotent problem** for this multiplication: which elements satisfy $\tilde Q \star \tilde Q = \tilde Q$. The answer is the batch's one positive surprise. The equation has the two obvious solutions $0$ and $e_0$, and beyond them a **two-sphere** of solutions,
 
@@ -91,7 +91,7 @@ Suppose first that $\mathbf a \neq 0$. The relation $(2u+1)\mathbf a = 0$ forces
 
 Suppose next that $\mathbf a = 0$. The relation $(2u+1)\mathbf a = 0$ is vacuous, and the relation $\mathbf a\times\mathbf b = -\tfrac12\mathbf b$ reads $\mathbf b = 0$. Then $\mathbf Q = 0$ and the coordinate equation gives $u = u^{2}$, that is $u = 0$ or $u = 1$. These are the two trivial idempotents. $\square$
 
-**Remark.** The theorem classifies the idempotents of the whole algebra. The group article *Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$* states the classification on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real and the criterion reads $\tilde Q^{2} = \tilde Q^{\natural}$; the two statements agree, and every nontrivial idempotent lies in that subspace, since the sphere has real coordinates. No idempotent has a nonzero imaginary part of the scalar coordinate and none has a non-real component in the vector coordinates.
+**Remark.** The theorem classifies the idempotents of the whole algebra. The group article *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$* states the classification on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real and the criterion reads $\tilde Q^{2} = \tilde Q^{\natural}$; the two statements agree, and every nontrivial idempotent lies in that subspace, since the sphere has real coordinates. No idempotent has a nonzero imaginary part of the scalar coordinate and none has a non-real component in the vector coordinates.
 
 ### The Norm of an Idempotent
 
@@ -127,7 +127,7 @@ since $\xi$ is a unit pure quaternion and $(\xi,\xi) = 1$. The element is nonzer
 
 ### The Idempotents of the Sibling Sesquilinear Product
 
-The sibling complex sesquilinear product $\tilde P\tilde Q^{*}$ is the derived operation of the algebra with its star conjugation (*Biquaternions as a Sesquialgebra over $\mathbb{C}$*). Its idempotents are exactly the Hermitian idempotents of the algebra,
+The sibling complex sesquilinear product $\tilde P\tilde Q^{*}$ is the derived operation of the algebra with its star conjugation (*Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*). Its idempotents are exactly the Hermitian idempotents of the algebra,
 
 $$
 \tilde\Pi_+(\hat\mu) = \tfrac12\bigl(e_0 + i\hat\mu\bigr) , \qquad \hat\mu \in \mathbb{R}^{3} , \quad \lvert\hat\mu\rvert = 1 ,
@@ -141,7 +141,7 @@ $$
 \tilde\Pi_+(\hat\mu) \star \tilde\Pi_+(\hat\mu) = 0 .
 $$
 
-**Proof.** Let $\tilde H = \tfrac12(e_0 + i\hat\mu)$ with $\hat\mu$ a real unit vector; it is Hermitian, $\tilde H^{*} = \tilde H$, and its coordinates are $H_0 = \tfrac12$, $H_k = \tfrac{i}{2}\hat\mu_k$. Its norm is $N(\tilde H) = \tfrac14 - \tfrac14\sum_k\hat\mu_k^{2} = 0$, as for the plain product. For a Hermitian element $\overline{\tilde H} = \tilde H^{\natural}$, and the square of the multiplication is $(\overline{\tilde H}\tilde H)^{\natural}$ up to the identity of the next article of this group, *The Square of the Quaternionic Sesquilinear Product and the Two Halves*; here the direct computation is closed: $\tilde H \star \tilde H = \tilde H^{\natural}\tilde H^{*} = \tilde H^{\natural}\tilde H = N(\tilde H)e_0 = 0$, the $\natural$-product of an element with its conjugate being the central scalar $N(\tilde H)e_0$ (*Biquaternions as a Quaternionic Algebra over $\mathbb{C}$* §*The Square and the Elements It Distinguishes*). $\square$
+**Proof.** Let $\tilde H = \tfrac12(e_0 + i\hat\mu)$ with $\hat\mu$ a real unit vector; it is Hermitian, $\tilde H^{*} = \tilde H$, and its coordinates are $H_0 = \tfrac12$, $H_k = \tfrac{i}{2}\hat\mu_k$. Its norm is $N(\tilde H) = \tfrac14 - \tfrac14\sum_k\hat\mu_k^{2} = 0$, as for the plain product. For a Hermitian element $\overline{\tilde H} = \tilde H^{\natural}$, and the square of the multiplication is $(\overline{\tilde H}\tilde H)^{\natural}$ up to the identity of the next article of this group, *The Square of the Quaternionic Sesquilinear Product and the Two Halves*; here the direct computation is closed: $\tilde H \star \tilde H = \tilde H^{\natural}\tilde H^{*} = \tilde H^{\natural}\tilde H = N(\tilde H)e_0 = 0$, the $\natural$-product of an element with its conjugate being the central scalar $N(\tilde H)e_0$ (*Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$* §*The Square and the Elements It Distinguishes*). $\square$
 
 **Remark.** The sibling's idempotents are therefore not idempotents here, and they fail in the strongest possible way: their square in the multiplication vanishes. The two families of idempotents are the two fixed points of the same involution rule read in the two sesquilinear products, and the insertion of the natural conjugation in the first slot transposes them into square-zero elements.
 
@@ -153,7 +153,7 @@ $$
 \tilde Q \star \tilde Q = \tilde Q \iff \tilde Q = 0 \ \text{or}\ \tilde Q = e_0 ,
 $$
 
-because its square is the central scalar $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ (*Biquaternions as a Quaternionic Algebra over $\mathbb{C}$* §*The Square and the Elements It Distinguishes*). This is the smallest idempotent set of the four, and it is the one that agrees with the second row of the comparison table.
+because its square is the central scalar $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ (*Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$* §*The Square and the Elements It Distinguishes*). This is the smallest idempotent set of the four, and it is the one that agrees with the second row of the comparison table.
 
 ### The Comparison
 

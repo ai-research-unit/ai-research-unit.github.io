@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
 $$
 
-the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product*), whose algebra is *Biquaternions as a Quaternionic Algebra over $\mathbb{C}$*. The four articles before this one are negative in their outcome: the product has no nontrivial idempotent, its square-zero set is the whole zero-divisor cone, it is associative at no rung of the ladder, and its symmetrisation is no Jordan algebra. This article is the batch's one positive structure theorem, and it is about the **operators** that the product defines rather than about the elements of the algebra.
+the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product*), whose algebra is *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*. The four articles before this one are negative in their outcome: the product has no nontrivial idempotent, its square-zero set is the whole zero-divisor cone, it is associative at no rung of the ladder, and its symmetrisation is no Jordan algebra. This article is the batch's one positive structure theorem, and it is about the **operators** that the product defines rather than about the elements of the algebra.
 
 For an element $\tilde P$ the **left multiplication** is the map on $\mathbb{B}$ obtained by fixing $\tilde P$ in the first slot,
 

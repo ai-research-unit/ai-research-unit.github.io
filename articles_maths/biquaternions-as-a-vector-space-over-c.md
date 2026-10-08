@@ -4,7 +4,7 @@
 
 This article treats the biquaternions as a **complex vector space**: the set of elements, its addition, the scalar action of $\mathbb{C}$ it carries, its coordinates, and the conjugations as complex-linear and complex-antilinear maps. The same set read over the real scalars, the complex structure that reading needs and the real forms it produces, is *Biquaternions as a Vector Space over $\mathbb{R}$*; that reading is the restriction of scalars of this one and adds no element. The two readings whose base is a ring of operators rather than a field of scalars — the bimodule over $\mathbb{H}$ and the module over $\mathbb{B}$ itself — are separate articles, *Biquaternions as a Bimodule over $\mathbb{H}$* and *Biquaternions as a Module over Itself*. The goal is to lay out the complex linear structure precisely and to name the **six** distinguished real subspaces that arise from the conjugations: four of dimension four, together with the two-dimensional centre and the six-dimensional vector subspace. The six are not developed here: they are defined one to a section in *Introduction to the Six Subspaces*, and the three decompositions into pairs of them are *Decompositions Along the Six Subspaces*.
 
-$\mathbb{B}$ carries its product as well, and the product makes it an algebra. That reading, with the product taken as the multiplication, is *Biquaternions as an Algebra over $\mathbb{C}$*; here the product is used only to say that the scalar action is compatible with it. The four conjugations and the group they generate are *The Group of Involutions*.
+$\mathbb{B}$ carries its product as well, and the product makes it an algebra. That reading, with the product taken as the multiplication, is *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*; here the product is used only to say that the scalar action is compatible with it. The four conjugations and the group they generate are *The Group of Involutions*.
 
 The treatment is elementary and self-contained: every claim is either proved or stated as a definition, and no physics is invoked. The anti-Hermitian subspace is defined algebraically. No form appears in this article; the Hermitian form, the inner product and everything measured with them belong to the Topology group. The product of the algebra — its definition, its two scalar–vector parts, and the dot and cross products they are built from — is *The Four Biquaternion Complex Products*, and it is used here as given.
 
@@ -20,7 +20,7 @@ $$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H},
 $$
 
-read here as a $\mathbb{C}$-vector space: an additive group with a scalar multiplication by the complex numbers. It is therefore **four-dimensional** over $\mathbb{C}$, with complex basis $\{e_0, e_1, e_2, e_3\}$. It also carries its product, the one defined and studied in *The Four Biquaternion Complex Products*; the product is $\mathbb{C}$-bilinear, so the scalars may be moved through it, and it makes $\mathbb{B}$ an algebra over $\mathbb{C}$, a reading developed in *Biquaternions as an Algebra over $\mathbb{C}$*. Its centre is the scalar line $\mathbb{C}e_0$, spanned over $\mathbb{R}$ by $e_0$ and $ie_0$, and it is one of the six distinguished real subspaces of the group.
+read here as a $\mathbb{C}$-vector space: an additive group with a scalar multiplication by the complex numbers. It is therefore **four-dimensional** over $\mathbb{C}$, with complex basis $\{e_0, e_1, e_2, e_3\}$. It also carries its product, the one defined and studied in *The Four Biquaternion Complex Products*; the product is $\mathbb{C}$-bilinear, so the scalars may be moved through it, and it makes $\mathbb{B}$ an algebra over $\mathbb{C}$, a reading developed in *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*. Its centre is the scalar line $\mathbb{C}e_0$, spanned over $\mathbb{R}$ by $e_0$ and $ie_0$, and it is one of the six distinguished real subspaces of the group.
 
 ### Developed Form
 
@@ -124,7 +124,7 @@ It carries four natural conjugations, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ a
 
 Beyond the scalar fields the same set carries two structures whose base is a ring and not a field: the $\mathbb{H}$-bimodule, developed in *Biquaternions as a Bimodule over $\mathbb{H}$*, and the module over $\mathbb{B}$ itself, developed in *Biquaternions as a Module over Itself*.
 
-The product read as the multiplication of an algebra is *Biquaternions as an Algebra over $\mathbb{C}$*.
+The product read as the multiplication of an algebra is *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*.
 
 ## Summary of Notation
 

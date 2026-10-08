@@ -23,9 +23,9 @@ $$
 
 The adjoint exchanges the two parameters and conjugates them; it is an involution on the sandwich family, and the **self-adjoint** sandwiches are those whose two parameters are a conjugate pair, $S_{\tilde P,\tilde P^{*}}$, the conjugate pair being the self-adjoint pairs up to the scalar ambiguity of the parametrisation. The quadratic representation of the ternary product, which is the sandwich $\tilde Z\tilde Y^{*}\tilde Z=S_{\tilde Z,\tilde Z^{*}}$, is therefore self-adjoint, and this is the operator form of the Hermitian symmetry of the ternary product.
 
-The article is the seventh of the batch and reads the general article *The Sesquilinear Adjoint Operator*, whose definition for a conjugate-linear operator, twisted rule and computation for the standard model are quoted; the operator whose adjoint is taken is *The Sesquilinear Sandwich on the Biquaternions*, above in this group, and its relation to the ternary product is *The Ternary Product and the Associator of the Biquaternion Sesquialgebra*. The ternary forms of the adjoint are *The Adjoint of the Ternary Product* and *The Ternary Product as an Operator*, and the model in which the form becomes the trace is *The Biquaternion Sesquialgebra in the $2\times2$ Matrix Model*. The two one-sided operators whose adjoints are computed below are those of *The Left and Right Multiplications of the Biquaternion Sesquialgebra*.
+The article is the seventh of the batch and reads the general article *The Sesquilinear Adjoint Operator*, whose definition for a conjugate-linear operator, twisted rule and computation for the standard model are quoted; the operator whose adjoint is taken is *The Sesquilinear Sandwich on the Biquaternions*, above in this group, and its relation to the ternary product is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*. The ternary forms of the adjoint are *The Adjoint of the Ternary Product* and *The Ternary Product as an Operator*, and the model in which the form becomes the trace is *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model*. The two one-sided operators whose adjoints are computed below are those of *The Left and Right Multiplications of the Biquaternion Sesqualgebra*.
 
-The setting is that of *Biquaternions as a Sesquialgebra over $\mathbb{C}$*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The sandwich is $S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X^{*}\tilde Q^{*}$ and the ordinary two-sided multiplication is $T_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q$.
+The setting is that of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The sandwich is $S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X^{*}\tilde Q^{*}$ and the ordinary two-sided multiplication is $T_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q$.
 
 ## The Hermitian Form and the Adjoint
 
@@ -37,13 +37,13 @@ $$
 \varphi(\tilde X,\tilde Y)=\mathrm{Sc}\bigl(\tilde X\tilde Y^{*}\bigr)=\sum_{\mu=0}^{3}X_\mu\overline{Y_\mu} ,
 $$
 
-with the scalar part $\mathrm{Sc}$ of *Biquaternions as a Sesquialgebra over $\mathbb{C}$*; it is $\mathbb{C}$-linear in the first argument, conjugate-linear in the second, sesqui-symmetric, $\varphi(\tilde Y,\tilde X)=\overline{\varphi(\tilde X,\tilde Y)}$, and nondegenerate.
+with the scalar part $\mathrm{Sc}$ of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*; it is $\mathbb{C}$-linear in the first argument, conjugate-linear in the second, sesqui-symmetric, $\varphi(\tilde Y,\tilde X)=\overline{\varphi(\tilde X,\tilde Y)}$, and nondegenerate.
 
 **Proposition (the form is perfect).** If $\varphi(\tilde X,\tilde Y)=0$ for every $\tilde Y$ then $\tilde X=0$, and the same in the other argument; hence every conjugate-linear operator has a unique adjoint.
 
 **Proof.** Taking $\tilde Y=e_\mu$ gives $\varphi(\tilde X,e_\mu)=X_\mu$, so the vanishing for every $\mu$ gives the vanishing of $\tilde X$; the other argument is the sesqui-symmetry. Uniqueness of the adjoint is the standard consequence of nondegeneracy. $\square$
 
-**Remark.** The form is the pairing that the model renders as the trace pairing of *The Biquaternion Sesquialgebra in the $2\times2$ Matrix Model*, $\varphi(\tilde X,\tilde Y)=\tfrac12\mathrm{tr}(\Phi(\tilde X)\Phi(\tilde Y)^{\dagger})$, and it is the form with respect to which the involution is the Hermitian conjugation. Its scalar part is the real part of the symmetrised product, by *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternions*.
+**Remark.** The form is the pairing that the model renders as the trace pairing of *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model*, $\varphi(\tilde X,\tilde Y)=\tfrac12\mathrm{tr}(\Phi(\tilde X)\Phi(\tilde Y)^{\dagger})$, and it is the form with respect to which the involution is the Hermitian conjugation. Its scalar part is the real part of the symmetrised product, by *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternions*.
 
 ### The Twisted Adjoint Rule
 
@@ -57,9 +57,9 @@ for all $\tilde X,\tilde Y$. For a linear operator $T$ the adjoint is defined by
 
 **Proposition.** The adjoint is well defined, conjugate-linear in the operator, and involutive: $S^{\dagger\dagger}=S$; a conjugate-linear operator is **self-adjoint** when $S^{\dagger}=S$.
 
-**Proof.** The definitions are those of *The Sesquilinear Adjoint Operator*, §*The Definition*, on the sesquialgebra $\mathbb{B}$ with the form $\varphi$; the existence and the uniqueness are the perfection of §*The Form*, and the involution follows by applying the definition twice and using the sesqui-symmetry. $\square$
+**Proof.** The definitions are those of *The Sesquilinear Adjoint Operator*, §*The Definition*, on the sesqualgebra $\mathbb{B}$ with the form $\varphi$; the existence and the uniqueness are the perfection of §*The Form*, and the involution follows by applying the definition twice and using the sesqui-symmetry. $\square$
 
-**Remark.** The twist is not a convention but a necessity: a conjugate-linear operator cannot be self-adjoint under the linear rule unless it vanishes, exactly as a nonzero left multiplication cannot be $\mathbb{C}$-linear, by *The Left and Right Multiplications of the Biquaternion Sesquialgebra*, §*The Obstruction to a Single Linear Representation*. The two rules are the two parities of the operator theory read through the form.
+**Remark.** The twist is not a convention but a necessity: a conjugate-linear operator cannot be self-adjoint under the linear rule unless it vanishes, exactly as a nonzero left multiplication cannot be $\mathbb{C}$-linear, by *The Left and Right Multiplications of the Biquaternion Sesqualgebra*, §*The Obstruction to a Single Linear Representation*. The two rules are the two parities of the operator theory read through the form.
 
 ### The General Theorem
 
@@ -129,7 +129,7 @@ $$
 
 **Proof.** The involution is the sandwich $S_{e_0,e_0}$, and $S_{e_0,e_0}^{\dagger}=S_{e_0^{*},e_0^{*}}=S_{e_0,e_0}$ by the main identity. $\square$
 
-**Remark.** The involution is the unique sandwich that is also a two-sided multiplication with the identity parameters, and its self-adjointness is the starting case of the criterion. In the model it is the Hermitian transpose, which is self-adjoint for the trace form, by *The Biquaternion Sesquialgebra in the $2\times2$ Matrix Model*.
+**Remark.** The involution is the unique sandwich that is also a two-sided multiplication with the identity parameters, and its self-adjointness is the starting case of the criterion. In the model it is the Hermitian transpose, which is self-adjoint for the trace form, by *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model*.
 
 ### The One-Sided and the Two-Sided Multiplications
 
@@ -141,11 +141,11 @@ $$
 
 **Proof.** The left multiplication is the sandwich $S_{\tilde P,e_0}$, so the main identity gives $L_{\tilde P}^{\dagger}=S_{e_0,\tilde P^{*}}$. The right multiplication is linear and equals $T_{e_0,\tilde Q^{*}}$, so the second display is the general theorem for the two-sided multiplication; the third display is the same theorem. $\square$
 
-**Remark.** The left multiplication is conjugate-linear and its adjoint is a sandwich with a unit in the first slot; the operator $S_{e_0,\tilde P^{*}}$ is the map $\tilde X\mapsto\tilde X^{*}\tilde P$, which is neither a left nor a right multiplication, by *The Left and Right Multiplications of the Biquaternion Sesquialgebra*, §*The Mixed Composites*, and it is the mixed composite $R_{\tilde P^{*}}L_{e_0}$. The right multiplication is linear and its adjoint is again an ordinary multiplication on the other side. This is the operator form of the asymmetry of the two sides that the one-sided unit produces.
+**Remark.** The left multiplication is conjugate-linear and its adjoint is a sandwich with a unit in the first slot; the operator $S_{e_0,\tilde P^{*}}$ is the map $\tilde X\mapsto\tilde X^{*}\tilde P$, which is neither a left nor a right multiplication, by *The Left and Right Multiplications of the Biquaternion Sesqualgebra*, §*The Mixed Composites*, and it is the mixed composite $R_{\tilde P^{*}}L_{e_0}$. The right multiplication is linear and its adjoint is again an ordinary multiplication on the other side. This is the operator form of the asymmetry of the two sides that the one-sided unit produces.
 
 ### The Quadratic Representation
 
-**Corollary.** The quadratic representation of *The Ternary Product and the Associator of the Biquaternion Sesquialgebra*,
+**Corollary.** The quadratic representation of *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*,
 
 $$
 \tilde Y\longmapsto\tilde Z\tilde Y^{*}\tilde Z=S_{\tilde Z,\tilde Z^{*}}(\tilde Y) ,
@@ -159,7 +159,7 @@ is self-adjoint for every $\tilde Z$.
 
 ## The Matrix Model Reading
 
-**Proposition.** In the model of *The Biquaternion Sesquialgebra in the $2\times2$ Matrix Model* the sandwich is $S_{P,Q}(X)=PX^{\dagger}Q^{\dagger}$ and the form is $\varphi(X,Y)=\tfrac12\mathrm{tr}(XY^{\dagger})$, with $P=\Phi(\tilde P)$ and $Q=\Phi(\tilde Q)$ the matrices of the two parameters; the adjoint of the sandwich is
+**Proposition.** In the model of *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model* the sandwich is $S_{P,Q}(X)=PX^{\dagger}Q^{\dagger}$ and the form is $\varphi(X,Y)=\tfrac12\mathrm{tr}(XY^{\dagger})$, with $P=\Phi(\tilde P)$ and $Q=\Phi(\tilde Q)$ the matrices of the two parameters; the adjoint of the sandwich is
 
 $$
 S_{P,Q}^{\dagger}(X)=Q^{\dagger}X^{\dagger}P ,

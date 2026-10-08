@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
 $$
 
-the second of the four products of the biquaternion algebra $\mathbb{B}$, whose rule is *The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product* and whose algebra is *Biquaternions as a Quaternionic Algebra over $\mathbb{C}$*. The product is $\mathbb{C}$-bilinear and has $e_0$ as a left unit and no right one; the previous two articles read its square, its idempotents and its zero divisors. This article reads its **associativity defect**.
+the second of the four products of the biquaternion algebra $\mathbb{B}$, whose rule is *The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product* and whose algebra is *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*. The product is $\mathbb{C}$-bilinear and has $e_0$ as a left unit and no right one; the previous two articles read its square, its idempotents and its zero divisors. This article reads its **associativity defect**.
 
 For a bilinear product the defect is the **associator**
 

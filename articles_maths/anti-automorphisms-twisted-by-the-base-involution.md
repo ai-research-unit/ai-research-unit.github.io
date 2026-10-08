@@ -2,11 +2,11 @@
 
 ## Introduction
 
-An anti-automorphism of an algebra reverses the order of a product. When the algebra is defined over a ring carrying an involution $\varsigma$, a second kind of map appears: the anti-automorphisms that are $\varsigma$-semilinear, $f(\lambda x) = \varsigma(\lambda)f(x)$, the same twist that the sesquialgebra product carries in its second variable. This article reads the calculus of those maps at any order. Two twisted anti-automorphisms compose to a linear automorphism; a twisted one and a linear one compose to a twisted one; the twist is multiplicative under composition; and the two bits of the twist and of the orientation place every semilinear map of the algebra in one of four classes, which form the Klein group over the linear automorphisms. The order of a twisted map is the second subject: its $n$-th power has twist $\varsigma^{n}$, so a twisted map of finite order has even order, and the order-two case is the involutions of *The Involutions of a Sesquialgebra*.
+An anti-automorphism of an algebra reverses the order of a product. When the algebra is defined over a ring carrying an involution $\varsigma$, a second kind of map appears: the anti-automorphisms that are $\varsigma$-semilinear, $f(\lambda x) = \varsigma(\lambda)f(x)$, the same twist that the sesqualgebra product carries in its second variable. This article reads the calculus of those maps at any order. Two twisted anti-automorphisms compose to a linear automorphism; a twisted one and a linear one compose to a twisted one; the twist is multiplicative under composition; and the two bits of the twist and of the orientation place every semilinear map of the algebra in one of four classes, which form the Klein group over the linear automorphisms. The order of a twisted map is the second subject: its $n$-th power has twist $\varsigma^{n}$, so a twisted map of finite order has even order, and the order-two case is the involutions of *The Involutions of a Sesqualgebra*.
 
-The article is the companion of *The Involutions of a Sesquialgebra*, which keeps only the order-two case; here the maps are taken at any order and the parity of that order is the point. The coset of the anti-automorphisms is *Opposite Algebras and Anti-Isomorphisms*, §*The Coset of the Anti-Automorphisms*, for the layer $\varsigma = \mathrm{id}$; the present article adds the twist, which turns the two classes of that theorem into four and the quotient $\mathbb{Z}/2$ into the Klein group. The relation to the involutions of a central simple algebra, the two kinds and the inner reduction, is *Involutions of a Central Simple Algebra*.
+The article is the companion of *The Involutions of a Sesqualgebra*, which keeps only the order-two case; here the maps are taken at any order and the parity of that order is the point. The coset of the anti-automorphisms is *Opposite Algebras and Anti-Isomorphisms*, §*The Coset of the Anti-Automorphisms*, for the layer $\varsigma = \mathrm{id}$; the present article adds the twist, which turns the two classes of that theorem into four and the quotient $\mathbb{Z}/2$ into the Klein group. The relation to the involutions of a central simple algebra, the two kinds and the inner reduction, is *Involutions of a Central Simple Algebra*.
 
-The setting is that of *Sesquialgebras*: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and $A$ is an associative unital $R$-algebra with a $\varsigma$-semilinear involution $*$, the datum. The datum is itself one of the maps studied here, of order two. The inner automorphisms of a unitary element and the unitary group are *Units and the Unitary Elements*; the linear automorphisms of a central simple algebra and the inner ones are *Central Simple Algebras and the Brauer Group*; the opposite algebra is *Opposite Algebras and Anti-Isomorphisms*; and the case $\varsigma = \mathrm{id}$, where the twist disappears, is *Algebras: A General Introduction*.
+The setting is that of *Sesqualgebras*: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and $A$ is an associative unital $R$-algebra with a $\varsigma$-semilinear involution $*$, the datum. The datum is itself one of the maps studied here, of order two. The inner automorphisms of a unitary element and the unitary group are *Units and the Unitary Elements*; the linear automorphisms of a central simple algebra and the inner ones are *Central Simple Algebras and the Brauer Group*; the opposite algebra is *Opposite Algebras and Anti-Isomorphisms*; and the case $\varsigma = \mathrm{id}$, where the twist disappears, is *Algebras: A General Introduction*.
 
 ---
 
@@ -56,7 +56,7 @@ $$
 
 **Proof.** Two anti-automorphisms give an automorphism, and their twists multiply to $\varsigma^{2} = \mathrm{id}$, so the composite is $R$-linear. A linear automorphism has twist $\mathrm{id}$, so the twist of the composite is $\varsigma$ and the orientation is the one of the anti-automorphism. $\square$
 
-**Remark.** The corollary is the reason the set of the twisted anti-automorphisms is a coset and not a group: the composite of two of its elements leaves the set, and only the composites with the linear automorphisms keep it. It is also the reason the datum composed with a unitary inner automorphism stays in the set, which is the family $\sigma_{u} = \alpha_{u} \circ *$ of *The Involutions of a Sesquialgebra*.
+**Remark.** The corollary is the reason the set of the twisted anti-automorphisms is a coset and not a group: the composite of two of its elements leaves the set, and only the composites with the linear automorphisms keep it. It is also the reason the datum composed with a unitary inner automorphism stays in the set, which is the family $\sigma_{u} = \alpha_{u} \circ *$ of *The Involutions of a Sesqualgebra*.
 
 ### The Four Classes and the Klein Group
 
@@ -118,7 +118,7 @@ so that $\operatorname{Tw}_{\varsigma}(A) = f_{0}\operatorname{Aut}_{R}(A)$ is a
 
 **Proof.** A bijective anti-multiplicative map $A \to A$ is a multiplicative map $A \to A^{\mathrm{op}}$, by the definition of the product of the opposite algebra; the additivity and the $\varsigma$-semilinearity are the same on the two sides. $\square$
 
-**Remark.** The reading identifies the twisted anti-automorphisms with the isomorphisms of $A$ with its own opposite, and it makes the order-two case the statement that an involution is an isomorphism of $A$ with $A^{\mathrm{op}}$ whose composite with itself is the identity; that case is *The Involutions of a Sesquialgebra*. The proposition is the reason the symbols $\operatorname{Tw}(A,A^{\mathrm{op}})$ and $\operatorname{Tw}_{\varsigma}(A)$ name the same set.
+**Remark.** The reading identifies the twisted anti-automorphisms with the isomorphisms of $A$ with its own opposite, and it makes the order-two case the statement that an involution is an isomorphism of $A$ with $A^{\mathrm{op}}$ whose composite with itself is the identity; that case is *The Involutions of a Sesqualgebra*. The proposition is the reason the symbols $\operatorname{Tw}(A,A^{\mathrm{op}})$ and $\operatorname{Tw}_{\varsigma}(A)$ name the same set.
 
 ## The Classical Case
 
@@ -132,11 +132,11 @@ so that $\operatorname{Tw}_{\varsigma}(A) = f_{0}\operatorname{Aut}_{R}(A)$ is a
 
 ### The Order-Two Case
 
-**Proposition.** The $\varsigma$-twisted anti-automorphisms of order two are the involutions $\operatorname{Inv}(A)$ of *The Involutions of a Sesquialgebra*, and the datum $*$ is one of them.
+**Proposition.** The $\varsigma$-twisted anti-automorphisms of order two are the involutions $\operatorname{Inv}(A)$ of *The Involutions of a Sesqualgebra*, and the datum $*$ is one of them.
 
 **Proof.** An order-two $\varsigma$-twisted anti-automorphism is a $\varsigma$-semilinear anti-automorphism with $f^{2} = \mathrm{id}$, which is the definition of an element of $\operatorname{Inv}(A)$. $\square$
 
-**Remark.** The order-two case is the case of the parity theorem that is always available: the twist forbids the odd orders and allows the even ones, and the first even order is two. The inner conjugates of the datum, $f = \alpha_{u} \circ *$ with $u$ unitary, are of order two exactly when $u^{2}$ is central, which is the criterion of *The Involutions of a Sesquialgebra*, §*The Family of a Unitary Element*; the linear counterpart, the inner reduction for two involutions of a central simple algebra, is *Involutions of a Central Simple Algebra*, §*Comparing Two Involutions*.
+**Remark.** The order-two case is the case of the parity theorem that is always available: the twist forbids the odd orders and allows the even ones, and the first even order is two. The inner conjugates of the datum, $f = \alpha_{u} \circ *$ with $u$ unitary, are of order two exactly when $u^{2}$ is central, which is the criterion of *The Involutions of a Sesqualgebra*, §*The Family of a Unitary Element*; the linear counterpart, the inner reduction for two involutions of a central simple algebra, is *Involutions of a Central Simple Algebra*, §*Comparing Two Involutions*.
 
 ## Worked Cases
 
@@ -150,7 +150,7 @@ $$
 
 which is the concrete form of the composition rule, and the three involutions $x \mapsto x^{\mathsf{T}}$, $x \mapsto x^{*}$ and $x \mapsto \bar{x}$ generate the Klein group of the four classes. The algebra is noncommutative, so the four classes are distinct and the quotient of the theorem is $\mathbb{Z}/2 \times \mathbb{Z}/2$. For an example of the admissible order four, let $\zeta$ be a primitive eighth root of unity, let $w = \mathrm{diag}(\zeta, \zeta^{3})$, so that $w^{4} = -I$ is central while $w^{2}$ is not, and let $f = \alpha_{w} \circ *$; then $f^{2} = \alpha_{w^{2}}$ is not the identity and $f^{4} = \alpha_{w^{4}} = \mathrm{id}$, so $f$ has order four, and no odd power of $f$ is the identity, which is the parity theorem on the nose. The smallest cases are the order two of the datum and the order four of $f$, and the order three is impossible.
 
-**Remark.** The computation of the order of $f$ uses the identity $\sigma_{u}^{2} = \alpha_{u^{2}}$ of *The Involutions of a Sesquialgebra*, §*The Family of a Unitary Element*, and it is the reason that identity is stated there in full: the parity theorem is visible on the matrix algebra through the square of the inner conjugates.
+**Remark.** The computation of the order of $f$ uses the identity $\sigma_{u}^{2} = \alpha_{u^{2}}$ of *The Involutions of a Sesqualgebra*, §*The Family of a Unitary Element*, and it is the reason that identity is stated there in full: the parity theorem is visible on the matrix algebra through the square of the inner conjugates.
 
 ### The Field
 
@@ -160,7 +160,7 @@ Let $A = \mathbb{C}$ with $\varsigma = \mathrm{id}$, over $R = \mathbb{R}$. The 
 
 A $\varsigma$-twisted anti-automorphism is a bijective map with $f(\lambda x) = \varsigma(\lambda)f(x)$ and $f(xy) = f(y)f(x)$, and a twisted automorphism is the same map without the reversal in the second rule. The twist is unique over a domain and multiplicative under composition; two anti-automorphisms compose to a linear automorphism; and the twist and the orientation place the semilinear maps of a noncommutative algebra in four classes, which form a group with $\operatorname{Aut}_{R}(A)$ as the kernel of the pair of labels and the Klein group as the quotient when the four classes are nonempty.
 
-The $k$-th power of a twisted map has twist $\varsigma^{k}$, so a twisted map of finite order has even order, and the even powers are linear while the odd powers are twisted; a twisted anti-automorphism is a square root of a linear automorphism. The twisted anti-automorphisms form a coset of $\operatorname{Aut}_{R}(A)$, the twisted form of the coset of *Opposite Algebras and Anti-Isomorphisms*, and they are the isomorphisms of $A$ with its opposite. For a central simple algebra the twist is the second kind, and the order-two case is the involutions of *The Involutions of a Sesquialgebra*.
+The $k$-th power of a twisted map has twist $\varsigma^{k}$, so a twisted map of finite order has even order, and the even powers are linear while the odd powers are twisted; a twisted anti-automorphism is a square root of a linear automorphism. The twisted anti-automorphisms form a coset of $\operatorname{Aut}_{R}(A)$, the twisted form of the coset of *Opposite Algebras and Anti-Isomorphisms*, and they are the isomorphisms of $A$ with its opposite. For a central simple algebra the twist is the second kind, and the order-two case is the involutions of *The Involutions of a Sesqualgebra*.
 
 ## Summary of Notation
 
@@ -186,4 +186,4 @@ The $k$-th power of a twisted map has twist $\varsigma^{k}$, so a twisted map of
 - I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the anti-automorphisms and the involutions as anti-automorphisms of order two.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society Colloquium Publications 44, 1998), for the first and the second kind of an anti-automorphism of a central simple algebra and the inner reduction.
 - Paul K. Draxl, *Skew Fields* (Cambridge University Press, 1983), for the anti-automorphisms of a division algebra and the quadratic extension of the centre that a second-kind map produces.
-- The companion articles of this series: *Sesquialgebras*, *Algebras: A General Introduction*, *Opposite Algebras and Anti-Isomorphisms*, *Involutions of a Central Simple Algebra*, *Central Simple Algebras and the Brauer Group*, *Units and the Unitary Elements*, *The Involutions of a Sesquialgebra* and *Hermitian and Skew-Hermitian Elements*.
+- The companion articles of this series: *Sesqualgebras*, *Algebras: A General Introduction*, *Opposite Algebras and Anti-Isomorphisms*, *Involutions of a Central Simple Algebra*, *Central Simple Algebras and the Brauer Group*, *Units and the Unitary Elements*, *The Involutions of a Sesqualgebra* and *Hermitian and Skew-Hermitian Elements*.

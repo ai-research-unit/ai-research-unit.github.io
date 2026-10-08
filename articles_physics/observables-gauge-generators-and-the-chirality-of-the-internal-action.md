@@ -17,7 +17,7 @@ The article keeps to the operator structure. It defers the positivity of the dag
 to *Mass, Rank and the Positivity of the Dagger*; the internal group and its compactness to *Particle Types, Discrete Charge and Three-Particle Couplings*; the group ceiling to *The Gauge Group Ceiling*; the states to *The States the Indefinite Metric Cannot Normalise* and *Decoherence as Idempotent Projection*;
 and the mathematics of the adjoints and the sandwiches to the mathematics articles *The Adjoints of the
 Regular Operators*, *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* and *Jordan
-Algebras of Sesquialgebras*.
+Algebras of Sesqualgebras*.
 
 **Conventions.** As in the two companion articles of this block: $\mathbb{B}$ with basis
 $e_0,e_1,e_2,e_3$, $e_k^{2}=-e_0$; the sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$;
@@ -297,7 +297,7 @@ the internal action. The positivity of the dagger is owned by *Mass, Rank and th
 Dagger*; the compactness of the internal group by *Particle Types, Discrete Charge and Three-Particle Couplings*; the
 adjoints and sandwiches by the mathematics articles *The Adjoints of the Regular Operators* and
 *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*; and the Jordan and Lie
-structures by *Jordan Algebras of Sesquialgebras*.
+structures by *Jordan Algebras of Sesqualgebras*.
 
 ## Summary of Notation
 
@@ -329,10 +329,10 @@ structures by *Jordan Algebras of Sesquialgebras*.
 - Mathematics article *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*
   (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the
   sandwich, its Hermitian-up-to-phase criterion and the absence of a skew-adjoint sandwich.
-- Mathematics article *Jordan Algebras of Sesquialgebras*
-  (`articles_maths/jordan-algebras-of-sesquialgebras.md`), for the Jordan structure on the Hermitian
+- Mathematics article *Jordan Algebras of Sesqualgebras*
+  (`articles_maths/jordan-algebras-of-sesqualgebras.md`), for the Jordan structure on the Hermitian
   sector and its failure off it.
-- Mathematics article *Sesquialgebras* (`articles_maths/sesquialgebras.md`), for the general theory of the
+- Mathematics article *Sesqualgebras* (`articles_maths/sesqualgebras.md`), for the general theory of the
   product and its involution.
 - Companion article *Decoherence as Idempotent Projection*, for the idempotent parameter as a measurement.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for adjoints and Hermitian forms in

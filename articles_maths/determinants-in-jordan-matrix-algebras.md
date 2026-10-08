@@ -28,7 +28,7 @@ $$
 \lVert x\rVert^3 = \lVert U_x(x^*)\rVert , \qquad U_x(y) = 2\,x\bullet(x\bullet y) - (x\bullet x)\bullet y ,
 $$
 
-so that every C\*-algebra is a JB\*-algebra under the symmetrised product of *Jordan Algebras of Sesquialgebras*.
+so that every C\*-algebra is a JB\*-algebra under the symmetrised product of *Jordan Algebras of Sesqualgebras*.
 
 The self-adjoint part of a JB\*-algebra is a JB-algebra, and every JB-algebra is the self-adjoint part of a JB\*-algebra, which is the sense in which the JB\*-algebras of *JB\*-Algebras and the Gelfand–Naimark Theorem* and the algebras here are one class. Every C\*-algebra is a JB\*-algebra under its natural Jordan product, and every norm-closed subspace of a C\*-algebra stable under the involution and the Jordan product is a JB\*-algebra, called a **JC\*-algebra**. The algebras $H_n(\mathbb{B})$ below are JC\*-algebras.
 

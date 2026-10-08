@@ -176,7 +176,7 @@ The informational sector $\mathbb{M}_+$ is, exactly, the operator algebra of a t
 - The **unitary elements** of $\mathbb{B}$, and their conjugation action $\tilde{\rho} \mapsto \tilde{U}\tilde{\rho}\tilde{U}^{*}$, give the reversible evolution.
 - The distinction between **reversible evolution** and **irreversible measurement** is a property of the acting element (unitary vs. idempotent), not an additional postulate.
 
-The operator algebra of quantum physics, its state space, its Born rule, and its measurement rule are all **structural consequences** of the algebra of $\mathbb{M}_+$. They are not imposed from outside.
+The operator algebra of quantum physics, its state space, its Born rule, and its measurement rule are all **structural consequences** of the algebra of $\mathbb{M}_+$. They are not imposed from outside. The two-state formalism at large is *Quantum Physics in Biquaternionic Form*; the derivation of the Born rule, and its comparison with the postulate it replaces, are *The Born Rule as a Trace Formula — Derivation and Comparison*; the states that the indefinite fourth product cannot normalise are *The States the Indefinite Metric Cannot Normalise*; and the decoherence of a measurement is *Decoherence as Idempotent Projection*.
 
 ### The Shared Home
 

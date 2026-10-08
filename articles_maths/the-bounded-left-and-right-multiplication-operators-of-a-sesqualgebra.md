@@ -1,0 +1,201 @@
+# __The Bounded Left and Right Multiplication Operators of a Sesqualgebra__
+
+## Introduction
+
+Every element of a sesqualgebra determines two operators, the left multiplication $L_a(x) = a \star x$ and the right multiplication $R_a(x) = x \star a$, and the two scalar rules split them: $L_a$ is $\varsigma$-semilinear and $R_a$ is $\mathbb{K}$-linear. This article reads the two families with a topology on the module. It shows that the multiplications are continuous as soon as the product is separately continuous; that on a normed sesqualgebra they are bounded with the norm of the element and are equal to it on a unital object with a unit of norm one; that the two parameter maps $\lambda : a \mapsto L_a$ and $\rho : a \mapsto R_a$ are a bounded linear and a bounded conjugate-linear map into the two operator classes of *Bounded Operators on a Sesqualgebra*; and that the elements whose multiplications are bounded form a submodule which is a two-sided ideal in the associative case, its properness measuring the gap between the continuity of the multiplications and their boundedness on a neighbourhood of the origin.
+
+Three things organise the article. The multiplications are continuous for every element of a topological sesqualgebra, because separate continuity is exactly the continuity of the two maps $x \mapsto ax$ and $x \mapsto xa$; the topology therefore adds no hypothesis at the level of continuity and its work is to bound. In a normed sesqualgebra the bounds are the submultiplicative estimate, $\lVert L_a\rVert \leq \lVert a\rVert$ and $\lVert R_a\rVert \leq \lVert a\rVert$, and on a unital object with $\lVert 1\rVert = 1$ and an isometric involution both are equalities, so the element norm and the operator norm agree. And the composition laws separate the bilinear case from the sesquilinear one: when the product is associative the two families compose inside themselves, $L_aL_b = L_{a \star b}$ and $R_aR_b = R_{b \star a}$, and commute, while for the derived operation $x \star y = xy^{*}$ of an involutive algebra the composites leave the families and become the ordinary and the sesquilinear two-sided operators.
+
+The article defines the two operators and reads their parities topologically, proves the continuity and the bounds, treats the parameter maps and their kernels, then the composition and the commutator, then the bounded part and the centre, and compares the whole with the bilinear layer. The parities and the composition laws are *The Left and Right Multiplication Operators of a Sesqualgebra*; the continuity is *Topological Sesqualgebras*, §*The One-Sided Multiplications*; the submultiplicative estimate and the isometric involution are *Banach Sesqualgebras*, §*The Submultiplicative Estimate* and §*The Isometric Involution*; the operator classes and their norms are *Bounded Operators on a Sesqualgebra*; the bilinear model is *Left and Right Multiplication in a Banach Algebra*, §*The Two One-Sided Families*. Throughout $(\mathbb{K},\varsigma)$ is $\mathbb{R}$ or $\mathbb{C}$ with its continuous involution, $A$ is a normed sesqualgebra with submultiplicative norm and isometric involution when a norm is used and a topological sesqualgebra otherwise, and the product is written $\star$.
+
+## The Two Operators and their Bounds
+
+### The Definition and the Parities
+
+**Definition.** For $a \in A$ the **left multiplication** and the **right multiplication** by $a$ are the maps
+
+$$
+L_a : A \to A, \quad L_a(x) = a \star x , \qquad\qquad R_a : A \to A, \quad R_a(x) = x \star a .
+$$
+
+**Proposition (the parities, with continuity).** Let $A$ be a topological sesqualgebra. For every $a$ the left multiplication $L_a$ is continuous and $\varsigma$-semilinear and the right multiplication $R_a$ is continuous and $\mathbb{K}$-linear:
+
+$$
+L_a(\lambda x) = \varsigma(\lambda)L_a(x) , \qquad R_a(\lambda x) = \lambda R_a(x) .
+$$
+
+*Proof.* Continuity is separate continuity of the product, read with one variable fixed; the scalar rules are the two rules of the layer read at $x$, and they are the computation of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Parities*. $\square$
+
+**Remark.** The two operators lie in different classes of *Bounded Operators on a Sesqualgebra*: $R_a \in B(A)$ and $L_a \in B^{\varsigma}(A)$ whenever the norm is finite. The information is the same on the two sides, and the difference from the bilinear case is that the two operators cannot live in one algebra of $\mathbb{K}$-linear maps; they live in the graded algebra $\mathcal{B}(A)$ of that article, where $L_a$ is odd and $R_a$ is even, and the graded algebra is the smallest home of the two families. When $\varsigma = \mathrm{id}$ both are linear and the two families are two subfamilies of one operator algebra, which is the bilinear reading of *Left and Right Multiplication in a Banach Algebra*, §*The Two One-Sided Families*.
+
+### The Bounds
+
+**Theorem (the multiplications are bounded, with the norm of the element).** Let $A$ be a normed sesqualgebra with submultiplicative norm. For every $a$,
+
+$$
+\lVert L_a\rVert \leq \lVert a\rVert , \qquad \lVert R_a\rVert \leq \lVert a\rVert ,
+$$
+
+and if $A$ is unital with $\lVert 1\rVert = 1$ and an isometric involution then both are equalities:
+
+$$
+\lVert L_a\rVert = \lVert a\rVert = \lVert R_a\rVert .
+$$
+
+*Proof.* By the submultiplicative estimate of *Banach Sesqualgebras*, $\lVert a \star x\rVert \leq \lVert a\rVert\lVert x\rVert$, so $L_a$ is bounded with norm at most $\lVert a\rVert$, and likewise $\lVert x \star a\rVert \leq \lVert x\rVert\lVert a\rVert$ gives the bound for $R_a$. For the equality, $L_a(1) = a \star 1 = a$ and $R_a(1) = 1 \star a = a^{*}$ by the unit rules $x \star 1 = x$ and $1 \star x = x^{*}$ of *Sesqualgebras*, §*The Derived Operation of an Involutive Algebra*, so $\lVert L_a\rVert \geq \lVert a\rVert/\lVert 1\rVert = \lVert a\rVert$ and $\lVert R_a\rVert \geq \lVert a^{*}\rVert/\lVert 1\rVert = \lVert a\rVert$, the last equality by the isometry of the involution. $\square$
+
+**Corollary (the parameter maps are bounded).** The assignment $\lambda : A \to B^{\varsigma}(A)$, $a \mapsto L_a$, is $\mathbb{K}$-linear and bounded with $\lVert \lambda\rVert \leq 1$, and the assignment $\rho : A \to B(A)$, $a \mapsto R_a$, is conjugate-linear and bounded with $\lVert \rho\rVert \leq 1$; with a unit of norm one and an isometric involution both are isometries.
+
+*Proof.* The parameter rules are $L_{\lambda a} = \lambda L_a$ and $R_{\lambda a} = \varsigma(\lambda)R_a$ of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Parities*, so $\lambda$ is linear and $\rho$ is conjugate-linear. The bounds are the theorem read as an estimate on the operator norms, and the isometry is the equality case. $\square$
+
+**Corollary (the product of the two).** For all $a,b$ one has $\lVert L_aR_b\rVert \leq \lVert a\rVert\lVert b\rVert$ and $\lVert R_bL_a\rVert \leq \lVert a\rVert\lVert b\rVert$, both composites lying in the bounded conjugate-linear operators $B^{\varsigma}(A)$.
+
+*Proof.* $\lVert L_aR_bx\rVert \leq \lVert a\rVert\lVert R_bx\rVert \leq \lVert a\rVert\lVert b\rVert\lVert x\rVert$, and the other composite is the same estimate in the other order; the composite of an odd and an even operator is odd, by *Bounded Operators on a Sesqualgebra*, §*The Parity of a Composite*. $\square$
+
+### The Kernels and the Annihilators
+
+**Proposition (the kernels).** The kernel of $\lambda$ is the **left annihilator**
+
+$$
+\operatorname{Ann}_l(A) = \{a \in A : a \star x = 0 \ \text{for all } x\} ,
+$$
+
+and the kernel of $\rho$ is the **right annihilator** $\operatorname{Ann}_r(A) = \{a : x \star a = 0 \ \text{for all } x\}$. Both are closed submodules of $A$, and both are two-sided ideals when the product is associative; on a unital object both vanish, and then $\lambda$ and $\rho$ are injective.
+
+*Proof.* The kernels are the sets displayed by the definitions. They are closed because $a \mapsto a \star x$ and $a \mapsto x \star a$ are continuous for every $x$ and the intersection of closed sets is closed, and they are submodules because the product is additive and satisfies the two scalar rules. In the associative case, if $a \star x = 0$ for all $x$ then $(b \star a) \star x = b \star (a \star x) = 0$ and $(a \star b) \star x = a \star (b \star x) = 0$ for all $x$, so the left annihilator is a two-sided ideal, and similarly on the right. If $A$ is unital then $a = a \star 1 = 0$ for $a \in \operatorname{Ann}_l(A)$, and likewise on the right. $\square$
+
+## The Composition and the Commutator
+
+### The Associative Case
+
+**Proposition (the composition laws).** Suppose the product of $A$ is associative. Then
+
+$$
+L_aL_b = L_{a \star b} , \qquad R_aR_b = R_{b \star a} , \qquad L_aR_b = R_bL_a ,
+$$
+
+and all three composites are bounded with norm at most $\lVert a\rVert\lVert b\rVert$.
+
+*Proof.* The three identities are the associative law read in the three orders, and they are those of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Associative Case*: $L_aL_b(x) = a \star (b \star x) = (a \star b) \star x = L_{a \star b}(x)$, and the other two are the same computation. The bounds follow from $\lVert L_aL_b\rVert \leq \lVert L_a\rVert\lVert L_b\rVert$ and the theorem above. $\square$
+
+**Remark (the ambient ring and the parity conflict of the graded algebra).** Part I records the first two laws in the ambient ring of the additive maps, $\lambda$ as an algebra homomorphism $A \to \operatorname{End}_{\mathbb{R}^{\varsigma}}(A)$ and $\rho$ as an anti-homomorphism $A \to \operatorname{End}_{\mathbb{K}}(A)$: the composite of two conjugate-linear maps is $\mathbb{R}^{\varsigma}$-linear, so no inconsistency arises there. The graded algebra of *Bounded Operators on a Sesqualgebra* is a finer bookkeeping, and it detects one: $L_a$ is odd, the composite $L_aL_b$ is even, and $L_{a \star b}$ is odd, so the identity $L_aL_b = L_{a \star b}$ puts a single operator in both homogeneous components. Since $B(A) \cap B^{\varsigma}(A) = \{0\}$ for $\varsigma \neq \mathrm{id}$, the identity then forces $L_{a \star b} = 0$ for all $a,b$: an associative product with a nontrivial twist and faithful scalars has vanishing left multiplications. For a sesqualgebra of full type the collapse of *Sesqualgebras*, §*The Collapse at the Identity* forbids associativity outright, so the laws of this section have content in the bilinear case.
+
+**Corollary (the regular representations, bilinear case).** Let $\varsigma = \mathrm{id}$, so that the two classes coincide with $B(A)$. Then $\lambda$ is a bounded algebra homomorphism $A \to B(A)$ and $\rho$ a bounded algebra anti-homomorphism $A \to B(A)$, and their images commute.
+
+*Proof.* The composition laws say that $\lambda$ respects products and that $\rho$ reverses them, and the third says that every left multiplication commutes with every right one; with $\varsigma = \mathrm{id}$ both classes are $B(A)$, which is an algebra, and the bounds are those of §*The Bounds*. $\square$
+
+### The Standard Example
+
+**Proposition (the composition for the derived operation).** Let $A$ be a unital involutive algebra with the derived operation $x \star y = xy^{*}$, let $T_{p,q}(x) = pxq$ be the ordinary two-sided multiplication and $S_{a,b}(x) = ax^{*}b$ the sesquilinear sandwich. Then
+
+$$
+L_aL_b = T_{a,\,b^{*}} , \qquad R_aR_b = T_{1,\,(ab)^{*}} , \qquad L_aR_b = S_{ab,\,1} , \qquad R_bL_a = S_{a,\,b^{*}} .
+$$
+
+In particular the composites leave the two families, and the commutator of the two families is the difference of two sandwiches,
+
+$$
+[L_a, R_b] = L_aR_b - R_bL_a = S_{ab,\,1} - S_{a,\,b^{*}} .
+$$
+
+*Proof.* $L_aL_b(x) = a(bx^{*})^{*} = axb^{*} = T_{a,b^{*}}(x)$ and $R_aR_b(x) = (xb^{*})a^{*} = x(ab)^{*} = T_{1,(ab)^{*}}(x)$ are the computations of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Standard Example*; the two mixed composites are $L_aR_b(x) = a(xb^{*})^{*} = ab\,x^{*} = S_{ab,1}(x)$ and $R_bL_a(x) = (ax^{*})b^{*} = ax^{*}b^{*} = S_{a,b^{*}}(x)$, the same reference. The difference is the displayed commutator. $\square$
+
+**Remark.** The commutator is the measure of the failure of the two families to commute, and it is a bounded operator of norm at most $2\lVert a\rVert\lVert b\rVert$. It vanishes for all pairs whenever the product is associative, by the proposition of §*The Associative Case*; for the derived operation it vanishes for all $a$ exactly when $b = b^{*}$ and $b$ is central, since $L_aR_b = R_bL_a$ read at $a = 1$ gives $b\,x^{*} = x^{*}b^{*}$ for all $x$, which at $x = 1$ forces $b = b^{*}$ and then forces $b$ to commute with every $x$; and it vanishes for all $a$ and $b$ exactly when the involution is trivial and $A$ is commutative. This is the point at which the sesquilinear layer differs most sharply from the bilinear one, where $L_aR_b = R_bL_a$ holds by associativity of the composition and not by any property of the product.
+
+### The Adjoint Action
+
+**Proposition (the bracket with a fixed element).** For every $a$ the additive map
+
+$$
+\operatorname{ad}_a = L_a - R_a , \qquad \operatorname{ad}_a(x) = a \star x - x \star a = [a,x]_{\varsigma} ,
+$$
+
+is bounded with $\lVert \operatorname{ad}_a\rVert \leq 2\lVert a\rVert$, and it is an element of the graded algebra $\mathcal{B}(A)$ realised as the sum of an even and an odd part, namely $\operatorname{ad}_a = (-R_a, L_a)$. In the associative case it is the ordinary inner derivation $\operatorname{ad}_a(x) = a \star x - x \star a$ of the associative product; in the standard example it is neither linear nor conjugate-linear, being the difference of an odd and an even operator.
+
+*Proof.* The two summands are bounded by the theorem, so the difference is bounded and the estimate is the triangle inequality. The decomposition into parity is the identification $L_a - R_a = (-R_a) + L_a$ with $-R_a$ even and $L_a$ odd, and the map $\mathcal{B}(A) \to \operatorname{End}(A)$, $(T_0,T_1) \mapsto T_0 + T_1$, is injective by *Bounded Operators on a Sesqualgebra*, §*The Graded Algebra*. In the associative case $a \star x = L_a(x)$ and $x \star a = R_a(x)$ are the two orders of the one associative product, so $\operatorname{ad}_a$ is the ordinary inner derivation; in the standard example the two formulas of the preceding proposition give $\operatorname{ad}_a = S_{a,1} - T_{1,\,a^{*}}$, which is the difference of a conjugate-linear and a linear operator. $\square$
+
+## The Bounded Part and the Centre
+
+### The Bounded Part
+
+**Definition.** Let $A$ be a topological sesqualgebra. An element $a$ has **bounded multiplication** if there is a neighbourhood $U$ of $0$ in $A$ such that $L_a(U)$ and $R_a(U)$ are bounded, and the **bounded part** is
+
+$$
+A_b = \{a \in A : L_a \text{ and } R_a \text{ are bounded on a neighbourhood of } 0\} .
+$$
+
+**Proposition (the bounded part of a normed object).** Let $A$ be a normed sesqualgebra with submultiplicative norm. Then every element has bounded multiplication, $A_b = A$, and the maps $\lambda$ and $\rho$ are bounded with norm at most one. In a general topological sesqualgebra $A_b$ is a submodule containing $0$.
+
+*Proof.* In the normed case the unit ball is a neighbourhood of $0$ and the estimate $\lVert L_ax\rVert \leq \lVert a\rVert\lVert x\rVert$ makes its image under $L_a$ bounded, and likewise on the right, so every $a$ lies in $A_b$; the statement on the norms is the corollary on the parameter maps. In the general case $A_b$ is a submodule because $L_{a+c} = L_a + L_c$ and $L_{\lambda a} = \lambda L_a$, so on the intersection of the two witnessing neighbourhoods the sum and the scalar multiple have bounded image, and likewise on the right; and $A_b$ contains $0$ because the zero operator has bounded image. $\square$
+
+**Theorem (the bounded part is a two-sided ideal in the associative case).** If the product of $A$ is associative then $A_b$ is a two-sided ideal of $A$.
+
+*Proof.* Already a submodule by the proposition. Let $a \in A_b$, witnessed by $U$, and let $b \in A$. The operators $L_b$ and $R_b$ are continuous, hence carry bounded sets to bounded sets by *Bounded Operators on a Topological Vector Space*, §*Boundedness on a General Topological Vector Space*. For $a \star b$ take $V = U \cap L_b^{-1}(U)$: then $L_{a \star b}(V) = L_a(L_b(V)) \subseteq L_a(U)$ is bounded, and $R_{a \star b}(V) = R_b(R_a(V)) \subseteq R_b(R_a(U))$ is bounded because $R_a(U)$ is bounded and $R_b$ carries bounded sets to bounded sets. For $b \star a$ take $W = U \cap R_b^{-1}(U)$: then $R_{b \star a}(W) = R_a(R_b(W)) \subseteq R_a(U)$ is bounded, and $L_{b \star a}(W) = L_b(L_a(W)) \subseteq L_b(L_a(U))$ is bounded because $L_a(U)$ is bounded. So $a \star b$ and $b \star a$ lie in $A_b$, and $A_b$ is a two-sided ideal. $\square$
+
+**Remark (the gap the bounded part measures).** Separate continuity of the product gives the continuity of $L_a$ and $R_a$ for every element, and every continuous operator carries bounded sets to bounded sets by *Bounded Operators on a Topological Vector Space*, §*Boundedness on a General Topological Vector Space*: the bornological reading of "bounded multiplication" would therefore give $A_b = A$ and no information. The definition above asks for the stronger property that a single neighbourhood be mapped into a bounded set, which is what makes an element behave as an element of a normed sesqualgebra and which can fail on a general topological sesqualgebra. On a normed object the unit ball is such a neighbourhood and there is no gap and $A_b = A$, so the bounded part is the part of the object on which the topological layer and the normed layer agree.
+
+### The Topological Centre
+
+**Proposition (the centre is closed).** The set of elements whose two multiplications agree,
+
+$$
+Z_t(A) = \{a \in A : L_a = R_a\} = \{a \in A : a \star x = x \star a \ \text{for all } x\} = Z(A) ,
+$$
+
+is the centre of the sesqualgebra, it is closed in $A$, and when $A$ is the completion of a normed sesqualgebra it is the centre of the completion, $Z_t(A) = Z_t(\widehat{A})$.
+
+*Proof.* The three descriptions are the same set: $L_a = R_a$ as maps means $a \star x = x \star a$ for every $x$, which is the definition of the centre. For the closedness, $Z_t(A)$ is the intersection over $x$ of $\{a : a \star x = x \star a\}$, each of which is closed because $a \mapsto a \star x$ and $a \mapsto x \star a$ are continuous and $A$ is Hausdorff; an intersection of closed sets is closed. The centre of the completion contains the image of the centre because an element of $Z_t(A)$ is central in $A$ and remains central in the completion by continuity of the product and the density of $A$; conversely an element of $Z_t(\widehat{A})$ is the limit of a sequence of elements of $\widehat{A}$ which are not known to lie in $A$, so the identification is asserted in the inclusion form that the argument gives, and the two-sided inclusion is the statement that the centre of the completion is the closure of the centre, which holds because the centre is closed and $A$ is dense. $\square$
+
+**Remark.** The centre is the part of the object that is blind to the two slots, and its closedness is the reason the topological centre is a genuine invariant of the topological object and not only of the algebraic one. In the bilinear layer the same statement is the closedness of the centre of a Banach algebra, and the further notions of the centraliser and of the double centraliser of *Left and Right Multiplication in a Banach Algebra*, §*The Centraliser and the Double Centraliser* are the module-theoretic refinements of it.
+
+## The Comparison with the Bilinear Layer
+
+**Proposition (the collapse of the present article).** Let $A$ be a topological sesqualgebra over $(\mathbb{K},\mathrm{id})$. Then the two families coincide as operator families, $L_a = R_a$ for the commutative object and $L_a \in B(A)$ in every case, the operator layer of this article is the operator layer of *The Left and Right Multiplication Operators on a Banach Algebra*, and the elements with bounded multiplication are all the elements by the submultiplicative estimate.
+
+*Proof.* With $\varsigma = \mathrm{id}$ the two scalar rules coincide and both multiplications are $\mathbb{K}$-linear, so $L_a, R_a \in B(A)$; the composition laws of §*The Associative Case* are the classical ones and the bounded part is everything. $\square$
+
+**Remark.** The difference between the two layers is therefore carried by a single element, the parity: the sesquilinear layer has two classes of operators where the bilinear one has one, and the two parameter maps differ by the involution, $R_a = {}^{*} \circ L_a$ as operators on the standard example, since $(*\circ L_a)(x) = (ax^{*})^{*} = xa^{*} = R_a(x)$. This is the reason the category has two operator-theoretic groups and the bilinear layer one, and it is the reading that *The Bounded Sesquilinear Sandwich* extends to the two-sided operators.
+
+## Examples
+
+### The Matrices
+
+**Example (the matrices, verdict: the multiplications are bounded and the commutator is a sandwich).** Let $A = M_n(\mathbb{C})$ with the operator norm, the conjugation and the product $X \star Y = XY^{*}$. The left multiplication $L_X(Y) = XY^{*}$ is conjugate-linear with $\lVert L_X\rVert = \lVert X\rVert$, and the right multiplication $R_Y(X) = XY^{*}$ has the same norm. The two families do not commute: $L_XR_Y = S_{XY,1}$ while $R_YL_X = S_{X,Y^{*}}$, so $[L_X,R_Y] = 0$ for all $X$ exactly when $Y$ is Hermitian and central, that is a real scalar, and the commutator is the bounded difference $S_{XY,1} - S_{X,Y^{*}}$ of two sandwiches.
+
+### The Field
+
+**Example (the field, verdict: the left multiplication is the conjugation up to a scalar).** Let $A = \mathbb{C}$ with the modulus and $\varsigma$ the conjugation. Then $L_a(z) = a\bar z$ and $R_b(z) = \bar b z$, so $L_a$ is the conjugation followed by the scalar $a$ and $R_b$ is the scalar multiplication by $\bar b$; $\lVert L_a\rVert = \lVert R_b\rVert = \lvert a\rvert$ and $\lvert b\rvert$, the parameter map $\lambda$ is an isometry into $B^{\varsigma}(\mathbb{C})$ and $\rho$ an isometry into $B(\mathbb{C})$. The commutator is $[L_a,R_b](z) = a\bar z(b - \bar b)$, so it vanishes for all $a$ exactly when $b$ is real, and it vanishes for all $a$ and $b$ exactly when the involution is trivial.
+
+### The Sequences
+
+**Example (the sequences, verdict: a bounded part equal to the whole).** Let $A = \ell^{1}$ with the norm, the termwise conjugation and the termwise product, which is submultiplicative. The multiplications are bounded with $\lVert L_x\rVert \leq \lVert x\rVert_{1}$ and $\lVert R_y\rVert \leq \lVert y\rVert_{1}$, and the adjoint action $\operatorname{ad}_x = L_x - R_x$ is bounded with norm at most $2\lVert x\rVert_{1}$; the commutator $[L_x,R_y]$ vanishes for all $x$ exactly when every term of $y$ is real. The bounded part is all of $\ell^{1}$, so the ideal statement is vacuous, as it is on every normed object.
+
+## Summary
+
+The two multiplications of a sesqualgebra are $L_a(x) = a \star x$ and $R_a(x) = x \star a$; the first is $\varsigma$-semilinear and the second $\mathbb{K}$-linear, and both are continuous as soon as the product is separately continuous, so the topological layer adds no hypothesis to their continuity. On a normed sesqualgebra with submultiplicative norm they are bounded with $\lVert L_a\rVert \leq \lVert a\rVert$ and $\lVert R_a\rVert \leq \lVert a\rVert$, and equalities on a unital object with a unit of norm one and an isometric involution; the parameter maps $a \mapsto L_a$ and $a \mapsto R_a$ are then a bounded linear and a bounded conjugate-linear map into $B^{\varsigma}(A)$ and $B(A)$, isometric in the unital case, with kernels the left and the right annihilators, closed submodules and two-sided ideals in the associative case.
+
+When the product is associative the families compose inside themselves and commute, $L_aL_b = L_{a \star b}$, $R_aR_b = R_{b \star a}$ and $L_aR_b = R_bL_a$ (in the graded algebra the first law compares an even composite with an odd operator, so with a nontrivial twist it forces the left multiplications to vanish); for the derived operation $x \star y = xy^{*}$ of an involutive algebra the composites leave the families, $L_aL_b = T_{a,b^{*}}$, $R_aR_b = T_{1,(ab)^{*}}$, $L_aR_b = S_{ab,1}$, and the commutator of the two families is the difference $S_{ab,1} - S_{a,b^{*}}$ of two sandwiches, vanishing for all $a$ exactly when $b$ is Hermitian and central. The adjoint action $\operatorname{ad}_a = L_a - R_a$, which is the sesquilinear bracket with $a$ fixed, is bounded with norm at most $2\lVert a\rVert$ and is an element of the graded operator algebra realised as the sum of its even and its odd part. The elements whose multiplications are bounded on a neighbourhood of the origin form the bounded part $A_b$, a submodule which is a two-sided ideal in the associative case and which is all of $A$ on a normed object, its properness measuring the gap between the continuity of the multiplications and their boundedness on a neighbourhood; the centre $\{a : L_a = R_a\}$ is closed and central, and it is the topological centre of the object.
+
+## Summary of Notation
+
+| symbol | meaning |
+|---|---|
+| $L_a(x) = a \star x$ | the left multiplication, $\varsigma$-semilinear and continuous |
+| $R_a(x) = x \star a$ | the right multiplication, $\mathbb{K}$-linear and continuous |
+| $\lVert L_a\rVert \leq \lVert a\rVert$, $\lVert R_a\rVert \leq \lVert a\rVert$ | the bounds, equalities on a unital object with $\lVert 1\rVert = 1$ |
+| $\lambda : a \mapsto L_a$, $\rho : a \mapsto R_a$ | the parameter maps, linear and conjugate-linear, bounded |
+| $\operatorname{Ann}_l(A)$, $\operatorname{Ann}_r(A)$ | the kernels of $\lambda$ and $\rho$, the annihilators |
+| $L_aL_b = L_{a \star b}$, $R_aR_b = R_{b \star a}$ | the composition in the associative case |
+| $L_aR_b = S_{ab,1}$, $R_bL_a = S_{a,b^{*}}$ | the mixed composites in the standard example |
+| $[L_a,R_b] = S_{ab,1} - S_{a,b^{*}}$ | the commutator of the two families |
+| $\operatorname{ad}_a = L_a - R_a$ | the adjoint action, the bracket with $a$ fixed |
+| $A_b$ | the bounded part, a two-sided ideal in the associative case |
+| $Z_t(A) = \{a : L_a = R_a\}$ | the centre, closed |
+
+## Further Reading
+
+- Richard V. Kadison and John R. Ringrose, *Fundamentals of the Theory of Operator Algebras, Volume I* (Academic Press, 1983), for the one-sided multiplications of an involutive algebra and the operator norms they carry.
+- Theodore W. Palmer, *Banach Algebras and the General Theory of ${}^*$-Algebras, Volume I* (Cambridge University Press, 1994), for the multiplication operators, the regular representations and the bounded part of a topological algebra.
+- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the operators attached to a ring with involution and the conjugate-linear multiplications they produce.
+- Ronald Larsen, *An Introduction to the Theory of Multipliers* (Springer, 1971), for the module endomorphisms of a Banach algebra and the centraliser method used here in the sesquilinear setting.
+- The companion articles of this series: *Bounded Operators on a Sesqualgebra*, *The Bounded Sesquilinear Sandwich*, *The Bounded Sesquilinear Commutator*, *The Left and Right Multiplication Operators of a Sesqualgebra* and *Left and Right Multiplication in a Banach Algebra*.

@@ -227,6 +227,6 @@ charge is **labelled speculation**, requiring a dynamical argument this article 
 - Companion article *The Four Other Remarkable Subspaces*, for the sign patterns of the involutions on
   the form.
 - Companion article *The Mathematical Study of Biquaternions*, the physics entry point to the
-  mathematical study under which this block sits; its *Biquaternions as a Sesquialgebra over
+  mathematical study under which this block sits; its *Biquaternions as a Sesqualgebra over
   $\mathbb{C}$* sub-menu is the menu of the mathematics articles cited here.
 - Companion article *Conventions in the Biquaternion Universe*, for the conjugations and the forms.

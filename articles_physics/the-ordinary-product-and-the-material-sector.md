@@ -30,7 +30,7 @@ is the sign that separates the material sector from the informational one, and t
 its physical content.
 
 The algebra carries three other products, each read in its own block and compared in *The Four Products
-and Their Physical Readings: the Two Algebras and the Two Sesquialgebras*; this article needs the
+and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*; this article needs the
 ordinary one alone. The properties of $B$ — its symmetry, its non-degeneracy, its Gram matrix and its
 restriction to the six distinguished subspaces — are the mathematics of *The Four Pairings of the
 Biquaternion Algebra* and *The Six Subspaces under the Complex Bilinear Form*, and are cited rather than
@@ -269,9 +269,10 @@ Read row by row, the case displays the whole distinction at once. $B$ changes si
 elements, $-5$ material and $+10$ informational, so it is $B$ that carries the sector sign, and the
 values are the negative squares $-1^{2}-2^{2}$ and $3^{2}+1^{2}$ of the coordinate dictionary. The
 interval is positive on both, $+3$ and $+8$, so it does not separate the sectors. And $B$ and the interval differ by twice the complex square of the vector part,
-$B(\tilde Q,\tilde Q)=N(\tilde Q,\tilde Q)-2(\mathbf Q,\mathbf Q)$, which on the two elements reads
+$B(\tilde Q,\tilde Q)=N(\tilde Q,\tilde Q)-2\,\mathbf Q\!\cdot\!\mathbf Q$ with the coefficient square
+$\mathbf Q\!\cdot\!\mathbf Q=Q_1^{2}+Q_2^{2}+Q_3^{2}$, which on the two elements reads
 $-5=+3-2(4)$ and $+10=+8-2(-1)$: the two forms agree only when the vector part vanishes, that is on the
-scalar line, and the difference $-2(\mathbf Q,\mathbf Q)$ is real of a fixed sign on each sector,
+scalar line, and the difference $-2\,\mathbf Q\!\cdot\!\mathbf Q$ is real of a fixed sign on each sector,
 negative on $\mathbb{M}_-$ and positive on $\mathbb{M}_+$.
 
 ## The Bound
@@ -284,7 +285,7 @@ The article states one cell of the grid of four, and the boundary of the cell is
   level data of the quaternion bilinear form, owned by *Biquaternion Norm and Invertibility*; the worked
   case shows the two forms giving different numbers on the same element.
 - **$B$ is not positivity.** The positive definite form of the state space and of the Born pairing is the
-  Hermitian form of the sesquialgebra block, which is $+B$ on $\mathbb{M}_+$ and $-B$ on $\mathbb{M}_-$;
+  Hermitian form of the sesqualgebra block, which is $+B$ on $\mathbb{M}_+$ and $-B$ on $\mathbb{M}_-$;
   positivity is blind to the sector.
 - **$B$ is not the Krein form.** The indefinite metric of the fourth corner restricts to $(1,3)$ on all
   four four-dimensional subspaces and so does not separate them.
@@ -307,7 +308,7 @@ anticommutator and a material commutator and is material exactly when the two an
 left and right multiplications commute, so the sandwich is their composition.
 
 **Readings.** That $B$ carries the **sector sign** and the interval carries the metric; that the material
-geometry belongs to this block and to its quaternionic companion and not to the sesquialgebra; that the
+geometry belongs to this block and to its quaternionic companion and not to the sesqualgebra; that the
 ordinary product is the **composition of material operations** and the sandwich the composition on both
 sides; and that a material field is split against a **reference state** rather than a material
 background. Each is the framework's naming of a proved algebraic fact and is labelled as such.
@@ -377,6 +378,6 @@ distinctions are labelled throughout: what is proved is the algebra, what is pro
 - Companion article *Biquaternion Norm and Invertibility*, for the interval, the light cone and the mass
   shell.
 - Companion article *The Four Products and Their Physical Readings: the Two Algebras and the Two
-  Sesquialgebras*, for the comparison of the four products and the full restriction table.
+  Sesqualgebras*, for the comparison of the four products and the full restriction table.
 - Companion article *The Interval as the Square and the Charge of the Material Composition*, for the interval read as the
   square of a product.

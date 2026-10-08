@@ -2,13 +2,13 @@
 
 ## Introduction
 
-A **sesquilinear product** on an $R$-module $A$ is a two-variable map $\star : A \times A \to A$ that is additive in each variable, $R$-linear in the first variable and $\varsigma$-semilinear in the second, where $\varsigma$ is an involution of $R$ (an additive map with $\varsigma(1) = 1$, $\varsigma(ab) = \varsigma(b)\varsigma(a)$ and $\varsigma^{2} = \mathrm{id}$, as in *Sesquialgebras*). Beyond additivity the whole definition is the pair of scalar rules
+A **sesquilinear product** on an $R$-module $A$ is a two-variable map $\star : A \times A \to A$ that is additive in each variable, $R$-linear in the first variable and $\varsigma$-semilinear in the second, where $\varsigma$ is an involution of $R$ (an additive map with $\varsigma(1) = 1$, $\varsigma(ab) = \varsigma(b)\varsigma(a)$ and $\varsigma^{2} = \mathrm{id}$, as in *Sesqualgebras*). Beyond additivity the whole definition is the pair of scalar rules
 
 $$
 (\lambda x) \star y = \lambda (x \star y), \qquad x \star (\lambda y) = \varsigma(\lambda) (x \star y) .
 $$
 
-This article is the calculus of the product itself: what the two rules force for a product of combinations, how the product becomes an ordinary bilinear map once one copy of the module is conjugated, what the conjugate of a product is, how the transposed product $y \star x$ compares with $x \star y$, and how the one-sided products $a \star x$ and $x \star a$ move the scalars. The module carrying the product, its ideals, its units and its examples are the subject of *Sesquialgebras*; here the module is fixed and only the product is computed with.
+This article is the calculus of the product itself: what the two rules force for a product of combinations, how the product becomes an ordinary bilinear map once one copy of the module is conjugated, what the conjugate of a product is, how the transposed product $y \star x$ compares with $x \star y$, and how the one-sided products $a \star x$ and $x \star a$ move the scalars. The module carrying the product, its ideals, its units and its examples are the subject of *Sesqualgebras*; here the module is fixed and only the product is computed with.
 
 Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and the product is written $\star$. When the product is the **derived operation** $x \star y = xy^{*}$ of an associative algebra with a $\varsigma$-semilinear involution $*$, the algebra's own product is written by juxtaposition, $xy$, so that the two products are told apart; that case is the standard one and supplies the examples.
 
@@ -60,7 +60,7 @@ Conversely, for any family of scalars $c_{ij}^{k}$ the last formula defines a $\
 
 ### The Product as a Bilinear Map on the Pair
 
-**Definition.** The **conjugate module** $A^{\varsigma}$ is the additive group $A$ with the twisted scalar action $\lambda \cdot x = \varsigma(\lambda) x$; the definition and its properties are in *Sesquialgebras*.
+**Definition.** The **conjugate module** $A^{\varsigma}$ is the additive group $A$ with the twisted scalar action $\lambda \cdot x = \varsigma(\lambda) x$; the definition and its properties are in *Sesqualgebras*.
 
 **Theorem (the product is bilinear on the pair).** The product, read as a map $A \times A^{\varsigma} \to A$, is $R$-bilinear in the two variables.
 
@@ -102,11 +102,11 @@ $$
 [x, y]_{\varsigma} = x \star y - y \star x .
 $$
 
-**Proposition (the transposed product has the opposite parity).** The map $(x, y) \mapsto y \star x$ is $\varsigma$-semilinear in the first variable and $R$-linear in the second, so it is $R$-bilinear as a map $A^{\varsigma} \times A \to A$, with the conjugate module in the first factor. It is a $\varsigma$-sesquilinear product of the original parity only when the twist is invisible, that is when $\varsigma = \mathrm{id}$ or $\bigl(\varsigma(\lambda) - \lambda\bigr)(y \star x) = 0$ for all $\lambda, y, x$, the degenerate case of *Sesquialgebras* again.
+**Proposition (the transposed product has the opposite parity).** The map $(x, y) \mapsto y \star x$ is $\varsigma$-semilinear in the first variable and $R$-linear in the second, so it is $R$-bilinear as a map $A^{\varsigma} \times A \to A$, with the conjugate module in the first factor. It is a $\varsigma$-sesquilinear product of the original parity only when the twist is invisible, that is when $\varsigma = \mathrm{id}$ or $\bigl(\varsigma(\lambda) - \lambda\bigr)(y \star x) = 0$ for all $\lambda, y, x$, the degenerate case of *Sesqualgebras* again.
 
 **Proof.** In the first slot, $y \star (\lambda x) = \varsigma(\lambda)(y \star x)$, which is semilinearity; in the second slot, $(\lambda y) \star x = \lambda(y \star x)$, which is linearity. Reading the first slot with the twisted action of $A^{\varsigma}$ makes the map $R$-bilinear, exactly as the theorem that the product is bilinear on the pair. Semilinearity and linearity in the first slot agree only when $\varsigma = \mathrm{id}$. $\square$
 
-**Remark.** The parity of the transposed product is the reverse of the parity of the product: the product is the bilinear map $A \times A^{\varsigma} \to A$, the transposed product the bilinear map $A^{\varsigma} \times A \to A$. The reversal is the product-level form of the asymmetry of the opposite algebra of *Sesquialgebras*, where the conjugate module comes into the first factor rather than the second.
+**Remark.** The parity of the transposed product is the reverse of the parity of the product: the product is the bilinear map $A \times A^{\varsigma} \to A$, the transposed product the bilinear map $A^{\varsigma} \times A \to A$. The reversal is the product-level form of the asymmetry of the opposite algebra of *Sesqualgebras*, where the conjugate module comes into the first factor rather than the second.
 
 **Proposition.** $[x, y]_{\varsigma} = -[y, x]_{\varsigma}$ and $[x, x]_{\varsigma} = 0$.
 
@@ -148,7 +148,7 @@ $$
 
 **Proof.** $L_{a}(\lambda x) = a \star (\lambda x) = \varsigma(\lambda)(a \star x) = \varsigma(\lambda) L_{a}(x)$, so $L_{a}$ is $\varsigma$-semilinear; then $L_{a}(\lambda \cdot x) = L_{a}(\varsigma(\lambda) x) = \varsigma(\varsigma(\lambda)) L_{a}(x) = \lambda L_{a}(x)$, so $L_{a}$ is linear on the conjugate module. For $R_{a}$, $R_{a}(\lambda x) = (\lambda x) \star a = \lambda (x \star a) = \lambda R_{a}(x)$ by the first rule, and the same computation with $\lambda \cdot x$ shows that $R_{a}$ is linear for the twisted action as well. $\square$
 
-**Remark.** The two one-sided products are two families of operators of opposite parity: the left products are conjugate-linear on $A$ and linear on $A^{\varsigma}$, the right products are linear on both. When the product is associative the left products turn $A$ into a left $A$-module and the right products into a right $A$-module, and these are the two module structures that the asymmetry of the slots produces; without associativity the two families are only families of operators, since $L_{a} \circ L_{b} = L_{a \star b}$ is the associative law. The operator theory is in *The Left and Right Multiplication Operators of a Sesquialgebra*.
+**Remark.** The two one-sided products are two families of operators of opposite parity: the left products are conjugate-linear on $A$ and linear on $A^{\varsigma}$, the right products are linear on both. When the product is associative the left products turn $A$ into a left $A$-module and the right products into a right $A$-module, and these are the two module structures that the asymmetry of the slots produces; without associativity the two families are only families of operators, since $L_{a} \circ L_{b} = L_{a \star b}$ is the associative law. The operator theory is in *The Left and Right Multiplication Operators of a Sesqualgebra*.
 
 ### The Twisted Composition
 
@@ -156,7 +156,7 @@ $$
 
 **Proof.** For the composites, apply the parity twice: $\varsigma^{2} = \mathrm{id}$ returns a linear map from a composite of two conjugate-linear ones, and a composite of two linear ones is linear. The commutation of the two families is the associative law $(a \star x) \star b = a \star (x \star b)$, which is exactly the equality of $L_{a}R_{b}$ and $R_{b}L_{a}$ at every $x$. $\square$
 
-**Remark.** A composite of two left products is linear while a single left product is conjugate-linear, so the left products form a representation of $A$ by linear operators only when the twist is invisible: $L_{a}$ is $R$-linear exactly when $\varsigma = \mathrm{id}$ or $(\lambda - \varsigma(\lambda)) a \star x = 0$ for all $\lambda$ and $x$, the condition of *Sesquialgebras*. The composition laws and the representation are read in *The Left and Right Multiplication Operators of a Sesquialgebra*, to which the present parity statement is the first input.
+**Remark.** A composite of two left products is linear while a single left product is conjugate-linear, so the left products form a representation of $A$ by linear operators only when the twist is invisible: $L_{a}$ is $R$-linear exactly when $\varsigma = \mathrm{id}$ or $(\lambda - \varsigma(\lambda)) a \star x = 0$ for all $\lambda$ and $x$, the condition of *Sesqualgebras*. The composition laws and the representation are read in *The Left and Right Multiplication Operators of a Sesqualgebra*, to which the present parity statement is the first input.
 
 ## Summary
 

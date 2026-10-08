@@ -19,9 +19,11 @@ decoherence of a measurement to *The States the Indefinite Metric Cannot Normali
 and to *Decoherence as Idempotent Projection*; the two-sector superselection structure to *The
 Material-Informational Split as a Superselection Structure in Biquaternionic Form*; the non-associativity,
 the associator and the ternary product to *The Associator and the Ternary Product of the Quaternionic
-Product*; the left multiplications and their monoid to *The Left Multiplications of the Quaternionic
-Product and the Opposite Monoid*; and the two-sided operators with their Hermitian adjoints to *Two-Sided
-Operators on the Biquaternion Algebra with Hermitian Adjoint*.
+Product*; the left multiplications and their monoid to the mathematics article *The Left Multiplications of
+the Quaternionic Product and the Opposite Monoid*; and the two-sided operators with their Hermitian
+adjoints to the mathematics article *Two-Sided Operators on the Biquaternion Algebra with Hermitian
+Adjoint*, whose physics reading is *Observables, Gauge Generators and the Chirality of the Internal
+Action*.
 
 **Conventions.** As in the companion *The Interval as the Square and the Charge of the Material
 Composition*: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
@@ -302,8 +304,11 @@ their monoid by *The Left Multiplications of the Quaternionic Product and the Op
 - Mathematics article *The Associator and the Ternary Product of the Quaternionic Product*
   (`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md`), for the
   associator and the failure of the weaker identities.
-- Mathematics article *Biquaternions as a Quaternionic Algebra over $\mathbb{C}$*
-  (`articles_maths/biquaternions-as-a-quaternionic-algebra-over-c.md`), for the product and its table.
+- Mathematics article *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*
+  (`articles_maths/biquaternions-as-a-general-quaternionic-algebra-gqa-over-c.md`), for the product and its table.
+- Mathematics article *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*
+  (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the
+  two-sided operators of the sandwich and their Hermitian adjoints.
 - Companion article *The States the Indefinite Metric Cannot Normalise* and
   *Decoherence as Idempotent Projection*, for the states and for the measurement.
 - Companion article *The Material-Informational Split as a Superselection Structure in Biquaternionic

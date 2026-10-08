@@ -13,8 +13,7 @@ algebra's own coefficient, $\tfrac12$ over the four-element basis and never $\tf
 natural three-linear object is its ternary product, which satisfies the Jordan triple identity, unlike the
 ternary product of the fourth form.
 
-The article keeps to the algebra. It defers the states to *The States the Indefinite Metric Cannot Normalise: Isotropy of
-the Hermitian Idempotents*; charge conjugation to *Charge Conjugation and the Division Ring in Biquaternionic Form*; the Majorana
+The article keeps to the algebra. It defers the states to *The States the Indefinite Metric Cannot Normalise*; charge conjugation to *Charge Conjugation and the Division Ring in Biquaternionic Form*; the Majorana
 and antilinear structures to *The Majorana Representation in Biquaternionic Form* and *Antilinear
 Structure and the Two Kinds of Mass in Biquaternionic Form*; the Lorentz group to *The Lorentz Group in
 Biquaternionic Form — Structure and Representations* and *The Two-Sheeted Cover and the Topology of Boosts
@@ -59,6 +58,17 @@ same space with the conjugate complex structure — is inequivalent to $S$ as a 
 because no $J$ exists, while it is isomorphic to $S$ as a **real** representation, since the two differ
 only by the sign of the complex structure. The pair $S,\bar S$ is read as the **particle–antiparticle
 pair**, and charge conjugation as the algebraic passage from one to the other.
+
+**Charge conjugation.** The passage is not the coefficient conjugation $\bar{\cdot}$, which is an
+automorphism of the algebra. Charge conjugation is the conjugate-linear **pseudoautomorphism**
+$\bar A=\Pi A^{*}\Pi^{-1}$ of the real Clifford algebra, with $\Pi\gamma_{\hat a}\Pi^{-1}=-\gamma_{\hat a}$,
+and on the spinor module it is $C[\psi]=i\gamma^{2}\psi^{*}$. Its square $C^{2}=\pm1$ is the
+division-ring invariant of the signature, and for the fundamental representation it is $+1$, so the
+operation is of order two. Which of the three charge states a particle carries — **charged, neutral or
+truly neutral** — is the division-ring trichotomy, and the one case in which a particle is its own
+antiparticle is the **Majorana** condition on the doubled module $\Delta=S\oplus\bar S$; these are
+*Charge Conjugation and the Division Ring in Biquaternionic Form* and *The Neutrino and Majorana
+Fermions in Biquaternionic Form*.
 
 **The three real forms on the same $\mathbb{C}^{2}$.** The trichotomy is concrete when three actions are
 placed on one space.
@@ -177,6 +187,37 @@ The **five types** of Dirac bilinear are scalar, vector, tensor, axial and pseud
 components summing to the sixteen of the Dirac algebra. The biquaternion bilinears sit inside that
 classification.
 
+**The module and its inner product.** The spinors $s,t$ above live in the minimal left ideal
+$S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde T\}$, the defining module of
+$\mathbb{B}\cong M_2(\mathbb{C})$, with $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and
+$\tilde T=\tfrac12(ie_1+e_2)$. Its spinor inner product is the restriction of the Born pairing of
+*Mass, Rank and the Positivity of the Dagger*, and in the basis $\{\tilde\Pi_1,\tilde T\}$ its Gram
+matrix is
+
+$$
+\begin{pmatrix}
+\langle\tilde\Pi_1,\tilde\Pi_1\rangle_{*} & \langle\tilde T,\tilde\Pi_1\rangle_{*}\\
+\langle\tilde\Pi_1,\tilde T\rangle_{*} & \langle\tilde T,\tilde T\rangle_{*}
+\end{pmatrix}
+=\tfrac12 I_2 .
+$$
+
+It is **positive definite**, so the module is a genuine two-dimensional Hilbert space. The basis is
+**one idempotent and one nilpotent** — $\tilde\Pi_1^{2}=\tilde\Pi_1$ while $\tilde T^{2}=0$, and
+$\tilde T^{*}=\tfrac12(ie_1-e_2)\neq\tilde T$ — so $\tilde T$ is not a state; a spinor is the pair
+$(s_1,s_2)$ of coefficients in $\psi=s_1\tilde\Pi_1+s_2\tilde T$, and
+$\langle\psi,\psi\rangle_{*}=\tfrac12(\lvert s_1\rvert^{2}+\lvert s_2\rvert^{2})$, so the two spin
+states are carried by the two **coefficients** and not by the two basis elements. The positivity is
+**inherited** rather than built: the scalar form of the dagger is positive definite on the whole algebra,
+$\mathrm{Sc}(\tilde R^{*}\tilde R)=\sum_\mu\lvert R_\mu\rvert^{2}$, so every subspace inherits a positive
+definite restriction. Two facts of the algebra then make the basis well behaved, one line each: the
+idempotent is self-adjoint, $\tilde\Pi_1^{*}=\tilde\Pi_1$, and $\tilde T^{*}\tilde T=\tilde\Pi_1$. In a
+general Clifford algebra the same restriction can be **totally isotropic** — the idempotent
+$\pi=\tfrac12(1+e_1)$ of $\mathrm{Cl}_{1,1}(\mathbb{R})$ has $\pi^{\dagger}\pi=0$ — and the reason there
+is that the ambient form is indefinite, $a^{2}-b^{2}$ on $a+be$, with both idempotents on the null line
+$a=b$. That failure has no instance in $\mathbb{B}$. The module, its form and the contrast are
+*Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*.
+
 **The completeness relation.** The identity behind every rearrangement is the completeness of the basis in
 $\mathrm{End}(S)$:
 
@@ -201,6 +242,37 @@ basis is unnormalised.
 generators are normalised so that $\mathrm{Tr}(\Gamma^A\Gamma_B)=4\delta^A_B$; confusing the two bases is
 the standard error this section exists to prevent.
 
+**The six classes (Lounesto).** The sixteen Dirac bilinears are not independent. They satisfy the
+**Fierz–Kofink identities**, of which the three scalar ones are
+
+$$
+J^{2}=\sigma^{2}+\omega^{2},\qquad J^{2}=-K^{2},\qquad J\cdot K=0 ,
+$$
+
+and these identities constrain the covariants so tightly that a nonzero spinor with $J\neq0$ has only
+**six** possible configurations: three **regular**, with $\sigma$ or $\omega$ nonzero, and three
+**singular**, with $\sigma=\omega=0$, separated by the vanishing or non-vanishing of the axial vector $K$
+and of the tensor $S$.
+
+| class | condition | name |
+|---|---|---|
+| $1$ | $\sigma\neq0$, $\omega\neq0$ | Dirac |
+| $2$ | $\sigma\neq0$, $\omega=0$ | regular, purely scalar |
+| $3$ | $\sigma=0$, $\omega\neq0$ | regular, purely pseudoscalar |
+| $4$ | $K\neq0$, $S\neq0$ | flag-dipole |
+| $5$ | $K=0$, $S\neq0$ | flagpole |
+| $6$ | $K\neq0$, $S=0$ | dipole |
+
+The names *flagpole* and *dipole* are exchanged in some of the literature, so the conditions are the safe
+identifier; the vector $J$ is null in the three singular classes, by $J^{2}=\sigma^{2}+\omega^{2}$. The
+**flag-dipole** is the type that the usual list of Dirac, real and chiral spinors does not exhaust. Two
+limits belong with the table: a general element of $\mathbb{B}$ is class $1$, and the corpus's
+two-component spinors are **not** in the six classes as written, because the classification applies to
+the four-component recombination. The identities, the proof that all six classes are non-empty, and the
+Fierz aggregate $Z=\sigma+J+iS+K\gamma_5-i\omega\gamma_5$ with $Z^{2}=4\sigma Z$ from which the spinor is
+recovered — the aggregate and the inversion **quoted from the literature**, not recomputed in the corpus —
+are *The Fierz–Kofink Identities and the Classification of Spinors*.
+
 **The physical reading (labelled).** In a scattering amplitude a bilinear at one vertex and a bilinear at
 another can be contracted with the spinors adjacent — an $s$-channel pairing — or crossed — a
 $t$-channel pairing. The rearrangement identity says the two pairings describe the **same exchange**, the
@@ -218,7 +290,7 @@ quadruples; and $e_1\star e_2=-e_3$, $e_2\star e_1=+e_3$, $e_1\star e_1=e_0$.
 **Non-associativity is forced.** The sesquilinear product is not associative:
 $(e_0\star e_1)\star e_1=-e_0$ while $e_0\star(e_1\star e_1)=e_0$, so the associator on the triple
 $(e_0,e_1,e_1)$ is $-2e_0\neq0$. The failure is not an accident of the example: the collapse theorem of
-the mathematics article *Sesquialgebras* shows that an associative or commutative such operation would
+the mathematics article *Sesqualgebras* shows that an associative or commutative such operation would
 force the involution to be trivial. The product is also non-commutative, with $e_1\star e_2=-e_3$ against
 $e_2\star e_1=+e_3$.
 
@@ -323,21 +395,29 @@ is derived; that any gauge vertex is computed.
 The particle content of the operator structure follows one pattern. The algebra's module carries a
 **reality condition**, and the internal module is of **complex type** — the volume element of
 $\mathrm{Cl}_{3,0}$ is $i\cdot1$ and no commuting antilinear map exists — so its particle is Dirac-like
-with a distinct antiparticle, housed in the conjugate module; the real and quaternionic types exist on
-the same $\mathbb{C}^{2}$ for other real forms, and which type a given particle carries is a labelled
-speculation. The internal symmetry is the **compact** slice $U\cong(SU(2)\times U(1))/\mathbb{Z}_2$,
+with a distinct antiparticle, housed in the conjugate module $S\mapsto\bar S$, with charge conjugation
+the conjugate-linear pseudoautomorphism $C[\psi]=i\gamma^{2}\psi^{*}$ of order two; the real and
+quaternionic types exist on the same $\mathbb{C}^{2}$ for other real forms, and which type a given
+particle carries is a labelled speculation. The spinors are elements of the minimal left ideal
+$S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde T\}$, whose inner product is positive definite
+with Gram matrix $\tfrac12 I_2$. The internal symmetry is the **compact** slice
+$U\cong(SU(2)\times U(1))/\mathbb{Z}_2$,
 compact because the dagger is positive, and compactness is read as **discrete charge**; the **boosts** are
 non-compact, with $N=1$, $\lVert\tilde B\rVert_E^{2}=\cosh2\varphi$ and rapidity $\varphi\in\mathbb{R}$,
 and non-compactness is read as **continuous rapidity with no boost quantum**, the units decomposing as
 $U\cdot\exp(\mathbb{M}_+)$. Fermion bilinears over the four-element basis rearrange with coefficient $1$
 or $\tfrac12$ — the completeness relation gives $\mathrm{Tr}(\Phi(\tilde X))e_0$, and the textbook
 $\tfrac14$ belongs to the sixteen-element Dirac basis — which is read as the identity of the
-$s$-channel and $t$-channel exchanges. Finally the algebra's non-associativity, with witness $-2e_0$,
+$s$-channel and $t$-channel exchanges. The four bilinears of the module sit inside the sixteen Dirac
+covariants, whose **Fierz–Kofink identities** force exactly **six classes**, three regular and three
+singular, the flag-dipole being the type the usual list of Dirac, real and chiral spinors does not
+exhaust. Finally the algebra's non-associativity, with witness $-2e_0$,
 forces a **ternary product** $\{\tilde P,\tilde Q,\tilde R\}=\tilde P\tilde Q^{*}\tilde R$, which
 satisfies the Jordan triple identity while the fourth form's ternary product fails it on $480$ of $1024$
 basis five-tuples; the ternary product is read, as a labelled speculation that excludes the three-gluon
-vertex, as the algebra's natural **three-particle coupling**. The states are owned by *The Pure States as
-Null Vectors*; charge conjugation by *Charge Conjugation and the Division Ring in Biquaternionic Form*; the Lorentz group by
+vertex, as the algebra's natural **three-particle coupling**. The states are owned by *The States the
+Indefinite Metric Cannot Normalise*; the charge-state trichotomy and the Majorana condition by *Charge Conjugation and the Division Ring in Biquaternionic Form*
+and *The Neutrino and Majorana Fermions in Biquaternionic Form*; the Lorentz group by
 *The Lorentz Group in Biquaternionic Form* and *The Two-Sheeted Cover and the Topology of Boosts*; the
 group ceiling by *The Gauge Group Ceiling*; the spin ceiling by *Higher Spin from Tensor Products*; and
 the operator structure on which all of this rests by the companion articles *Mass, Rank and the
@@ -355,6 +435,8 @@ Positivity of the Dagger* and *Observables, Gauge Generators and the Chirality o
 | $J(s)=X\bar s$ | the antilinear reality structure, $J^{2}=\pm1$ |
 | $\bar S$ | the conjugate module; the antiparticle space |
 | $\sum_\mu\tfrac12 e_\mu\tilde X e_\mu^{*}=\mathrm{Tr}(\Phi(\tilde X))e_0$ | the Fierz–Kofink completeness relation |
+| $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde T\}$, $G=\tfrac12 I_2$ | the spinor module and its positive definite inner product |
+| $\sigma,\omega,J,K,S$; six classes | the Dirac covariants and Lounesto's six classes |
 | $\{\tilde P,\tilde Q,\tilde R\}=\tilde P\tilde Q^{*}\tilde R$ | the ternary product |
 | $[\tilde P,\tilde Q,\tilde R]_\varsigma$ | the sesquilinear associator |
 | $\mathbb{M}_\pm$ | the informational and material sectors |
@@ -385,7 +467,10 @@ Positivity of the Dagger* and *Observables, Gauge Generators and the Chirality o
   the Failure of the Jordan Triple Identity*
   (`articles_maths/the-ternary-product-and-the-failure-of-the-jordan-triple-identity.md`), for the
   ternary structures.
-- Mathematics article *Sesquialgebras* (`articles_maths/sesquialgebras.md`), for the collapse theorem
+- Mathematics article *Sesqualgebras* (`articles_maths/sesqualgebras.md`), for the collapse theorem
   that forces non-associativity.
+- Mathematics article *The Fierz–Kofink Identities and the Classification of Spinors*
+  (`articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.md`), for the
+  four-dimensional FPK identities and the six classes.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for Clifford modules and their real
   forms.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The ternary product of a sesquialgebra is $\{x,y,z\}=xy^{*}z$, and its operator form is the **pair operator** $\Theta_{x,y}(z)=\{x,y,z\}$, bounded, linear in the variable and the ordinary left multiplication by the derived product, $\Theta_{x,y}=T_{x\star y,1}=L_{x\star y}$, as *The Bounded Ternary Product* records. The present article takes the adjoint of the pair operator for the canonical pairing $h(x,y)=x^{*}y$ of the layer, and the whole article turns on the single identity
+The ternary product of a sesqualgebra is $\{x,y,z\}=xy^{*}z$, and its operator form is the **pair operator** $\Theta_{x,y}(z)=\{x,y,z\}$, bounded, linear in the variable and the ordinary left multiplication by the derived product, $\Theta_{x,y}=T_{x\star y,1}=L_{x\star y}$, as *The Bounded Ternary Product* records. The present article takes the adjoint of the pair operator for the canonical pairing $h(x,y)=x^{*}y$ of the layer, and the whole article turns on the single identity
 
 $$
 \Theta_{x,y}^{\dagger}=\Theta_{y,x},
@@ -14,13 +14,13 @@ Three consequences are drawn, and they are the same three as in the algebraic la
 
 **The boundaries.** The ternary product, its bound, the pair operators and the completion as a Banach $J^{*}$-triple are *The Bounded Ternary Product*; the ternary operator, its three readings and its factorisation are *The Ternary Product as an Operator*; the algebraic adjoint and the reversibility are *The Adjoint of the Ternary Product*; the adjoint of the one-sided operators, the pairing and the anti-automorphism are *Adjoints of Bounded Sesquilinear Operators*; the sandwich is *The Bounded Sesquilinear Sandwich*; the Hermitian elements are *Hermitian and Skew-Hermitian Elements*; the normed $J^{*}$-triple and the $J^{*}$-algebra are *The Topological J\*-Algebra*. This article stops before the spectral theory of the later entries.
 
-Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ with the continuous involution $\varsigma$, and $A$ is a normed sesquialgebra of *Banach Sesquialgebras*: the standard example $x\star y=xy^{*}$, submultiplicative norm, isometric involution, $\lVert1\rVert=1$. The bounded linear operators are $B(A)$ and the bounded $\varsigma$-semilinear ones $B^{\varsigma}(A)$, of *Bounded Operators on a Sesquialgebra*; the canonical pairing is $h(x,y)=x^{*}y$, and the operator families are
+Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ with the continuous involution $\varsigma$, and $A$ is a normed sesqualgebra of *Banach Sesqualgebras*: the standard example $x\star y=xy^{*}$, submultiplicative norm, isometric involution, $\lVert1\rVert=1$. The bounded linear operators are $B(A)$ and the bounded $\varsigma$-semilinear ones $B^{\varsigma}(A)$, of *Bounded Operators on a Sesqualgebra*; the canonical pairing is $h(x,y)=x^{*}y$, and the operator families are
 
 $$
 \Theta_{x,y}(z)=xy^{*}z=\{x,y,z\},\qquad S_{a,b}(x)=ax^{*}b,\qquad L_{c}(x)=cx,\qquad T_{p,q}(x)=pxq .
 $$
 
-As in *Adjoints of Bounded Sesquilinear Operators*, the symbol $L_{c}$ is the **plain** left multiplication, the multiplication for the associative product; *The Bounded Left and Right Multiplication Operators of a Sesquialgebra* reserves $L_{c}$ for the multiplication $c\star x=cx^{*}$ by the derived product, which is $S_{c,1}$ here.
+As in *Adjoints of Bounded Sesquilinear Operators*, the symbol $L_{c}$ is the **plain** left multiplication, the multiplication for the associative product; *The Bounded Left and Right Multiplication Operators of a Sesqualgebra* reserves $L_{c}$ for the multiplication $c\star x=cx^{*}$ by the derived product, which is $S_{c,1}$ here.
 
 The adjoint of a bounded linear operator is defined by $h(Tx,y)=h(x,T^{\dagger}y)$ and that of a bounded conjugate-linear operator by the twisted rule $h(Sx,y)=h(x,S^{\dagger}y)^{*}$, both of *Adjoints of Bounded Sesquilinear Operators*, where the adjointable linear operators are characterised as the left multiplications.
 

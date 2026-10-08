@@ -37,7 +37,7 @@ Norm and Invertibility*; the identification of the vanishing set of $N$ with the
 Cone as the Biquaternion Zero-Divisor Cone* and to *Zero Divisors as a Physical Locus in Biquaternionic
 Form*; the interval-one group to *The Lorentz Group as Biquaternion Norm Automorphisms*; and the
 comparison of this product's scalar form with the other three to *The Four Products and Their Physical
-Readings: the Two Algebras and the Two Sesquialgebras*. Every result read below is proved in the
+Readings: the Two Algebras and the Two Sesqualgebras*. Every result read below is proved in the
 mathematics study whose entry point is *The Mathematical Study of Biquaternions*, and is cited there
 rather than re-derived.
 
@@ -141,8 +141,10 @@ inserting one conjugation in the first slot.
 **Remark (verified).** The two squares differ on $100$ of $100$ random elements. The case
 $\tilde Q=3e_0+ie_1$ shows both squares at once: the ordinary square is $10e_0+6ie_1$, which is not even
 central, its scalar value $10$ is $B(\tilde Q,\tilde Q)=9+1$, and the quaternionic square is
-$N(\tilde Q)e_0=8e_0$. The three numbers $10$, $8$ and the Euclidean value $10$ are all different
-questions asked of the same element.
+$N(\tilde Q)e_0=8e_0$. The three numbers are $10$, $8$ and the Euclidean value $10$: the first and
+the last coincide only because this vector coefficient is purely imaginary, where
+$-\mathbf Q\!\cdot\!\mathbf Q$ and $\lvert\mathbf Q\rvert^{2}$ agree, so only two of the three values
+differ — they remain three different questions asked of the same element.
 
 ## The Interval Is a Multiplicative Charge
 
@@ -219,7 +221,7 @@ from the material sector to the central line, and no sector is a subalgebra of t
 
 **The causal set is not closed.** The **sign** of the interval multiplies along with its value, so two
 operations of negative interval compose to one of positive interval. On the material sector $N$ takes both
-signs — $78$ of $100$ random material elements in the check above were spacelike and $22$ timelike — so a
+signs — in a randomised sample of $100$ material elements, $78$ were spacelike and $22$ timelike — so a
 composition of two timelike operations is spacelike. What is closed is the **lightlike** part of the
 causal set and nothing larger. The honest form of the reading is therefore "lightlike composes to
 lightlike", not "the causal set is closed".
@@ -308,7 +310,7 @@ interval, the mass shell, the four-velocity and the inverse are owned by *Biquat
 Invertibility*; the cone by *The Light Cone as the Biquaternion Zero-Divisor Cone* and *Zero Divisors as a
 Physical Locus in Biquaternionic Form*; the interval-one group by *The Lorentz Group as Biquaternion Norm
 Automorphisms*; and the comparison of the four products by *The Four Products and Their Physical
-Readings: the Two Algebras and the Two Sesquialgebras*.
+Readings: the Two Algebras and the Two Sesqualgebras*.
 
 ## Summary of Notation
 
@@ -333,8 +335,8 @@ Readings: the Two Algebras and the Two Sesquialgebras*.
 
 - *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
   which this block sits.
-- Mathematics article *Biquaternions as a Quaternionic Algebra over $\mathbb{C}$*
-  (`articles_maths/biquaternions-as-a-quaternionic-algebra-over-c.md`), for the product, its table and its
+- Mathematics article *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*
+  (`articles_maths/biquaternions-as-a-general-quaternionic-algebra-gqa-over-c.md`), for the product, its table and its
   square.
 - Mathematics article *Idempotents of the Quaternionic Product*
   (`articles_maths/idempotents-of-the-quaternionic-product.md`), for the square lemma.

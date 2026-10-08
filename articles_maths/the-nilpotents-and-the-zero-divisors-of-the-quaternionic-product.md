@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
 $$
 
-the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product*), whose algebra and whose left unit are *Biquaternions as a Quaternionic Algebra over $\mathbb{C}$*. Its square is central,
+the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product*), whose algebra and whose left unit are *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*. Its square is central,
 
 $$
 \tilde Q\star\tilde Q = N(\tilde Q)\,e_0 , \qquad N(\tilde Q) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 ,

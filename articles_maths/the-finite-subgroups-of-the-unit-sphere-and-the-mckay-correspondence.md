@@ -53,4 +53,4 @@ The finite subgroups of the unit sphere $S^3$ of the real slice are the cyclic g
 
 - *Biquaternion Orders and Finite Groups of Units* (`articles_maths/biquaternion-orders-and-finite-groups-of-units.md`), for the orders, the groups of units and the integral biquaternions
 - *Biquaternion Rotations and Lorentz Transformations* (`articles_maths/biquaternion-rotations-and-lorentz-transformations.md`), for the rotations of the real slice
-- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/biquaternion-clifford-structure.md`), for the Clifford and spinor lift
+- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/the-clifford-structure-of-the-biquaternion-algebra.md`), for the Clifford and spinor lift

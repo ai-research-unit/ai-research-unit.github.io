@@ -113,4 +113,4 @@ The split-biquaternion algebra is the Clifford algebra $\mathrm{Cl}(0,3)$, grade
 - *Split-Biquaternion Algebra* (`articles_maths/split-biquaternion-algebra.md`) and *Split-Biquaternion Idempotents and Projections* (`articles_maths/split-biquaternion-idempotents-and-projections.md`), for the generators, the idempotents and the volume element.
 - *The Split-Biquaternion Quadratic Family* (`articles_maths/the-split-biquaternion-quadratic-family.md`), for the product decomposition and the Hadamard identification.
 - *The Split-Biquaternion Julia Sets* (`articles_maths/the-split-biquaternion-julia-sets.md`), for the product fractal whose diagonal is described here.
-- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/biquaternion-clifford-structure.md`), for the biquaternion counterpart.
+- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/the-clifford-structure-of-the-biquaternion-algebra.md`), for the biquaternion counterpart.

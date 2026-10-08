@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four products, and the four preceding groups of the chapter read one product each: the complex bilinear product as the multiplication of an associative algebra with unit (*Biquaternions as an Algebra over $\mathbb{C}$*), the complex quaternionic bilinear product (*Biquaternions as a Quaternionic Algebra over $\mathbb{C}$*), the complex sesquilinear product as the multiplication of a sesquialgebra (*Biquaternions as a Sesquialgebra over $\mathbb{C}$*), and the complex quaternionic sesquilinear product (*Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$*). Each group developed the element theory of its own product: the square of an element, the idempotents, the square-zero elements and the units of the multiplication. This article reads the four element theories together, through the one algebraic invariant that governs all four and through the annihilators each product attaches to an element.
+The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four products, and the four preceding groups of the chapter read one product each: the complex bilinear product as the multiplication of an associative algebra with unit (*Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*), the complex quaternionic bilinear product (*Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*), the complex sesquilinear product as the multiplication of a sesqualgebra (*Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*), and the complex quaternionic sesquilinear product (*Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*). Each group developed the element theory of its own product: the square of an element, the idempotents, the square-zero elements and the units of the multiplication. This article reads the four element theories together, through the one algebraic invariant that governs all four and through the annihilators each product attaches to an element.
 
 The invariant is the **central square**
 
@@ -122,7 +122,7 @@ The square of an element, and with it the equation $\tilde Q\star\tilde Q = 0$, 
 |---|---|---|
 | $\tilde P\tilde Q$ | the pure isotropic cone $\{P_0 = 0,\ (\mathbf P,\mathbf P) = 0\}$ | *Biquaternion Square Roots of Minus One, Zero and Plus One* |
 | $\tilde P^{\natural}\tilde Q$ | the whole cone $\{c(\tilde P) = 0\}$ | *The Nilpotents and the Zero Divisors of the Quaternionic Product* |
-| $\tilde P\tilde Q^{*}$ | only $\tilde P = 0$ | *The Squares and the Positive Cone of the Biquaternion Sesquialgebra* |
+| $\tilde P\tilde Q^{*}$ | only $\tilde P = 0$ | *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* |
 | $\tilde P^{\natural}\tilde Q^{*}$ | a proper subfamily of $\{c(\tilde P) = 0\}$, the solutions of $\overline{\tilde P}\tilde P = 0$ | *The Square of the Quaternionic Sesquilinear Product and the Two Halves* |
 
 The four columns are the four ways the annihilated set meets the square: the plain product's square vanishes exactly on the pair $P_0 = 0$, $(\mathbf P,\mathbf P) = 0$, so its square-zero set is the four-dimensional pure subcone, strictly inside the six-dimensional cone; the natural product's square is the central element $c(\tilde P)e_0$, so its square-zero set is the whole cone, the largest of the four; the complex sesquilinear square has the non-negative scalar part $\sum_\mu\lvert P_\mu\rvert^{2}$, so its square-zero set is the smallest possible; and the complex quaternionic sesquilinear square has the indefinite Krein scalar part $\lvert P_0\rvert^{2}-\sum_k\lvert P_k\rvert^{2}$, so its square-zero set is a proper subfamily of the cone strictly larger than $\{0\}$ and incomparable with the pure cone. The four sets sit inside the cone as the two chains of the display, the plain set crossing the fourth instead of nesting inside it,
@@ -135,7 +135,7 @@ with the plain and the fourth of the four incomparable: $e_1+ie_2$ lies in the p
 
 ## The Four Idempotent Sets
 
-The idempotent equation $\tilde Q\star\tilde Q = \tilde Q$ is the other element equation the four products read differently, and its solutions separate more sharply than the square-zero sets. The table is the one of *Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*, and the four columns are owned by *Biquaternion Idempotents and Projections*, *Idempotents of the Quaternionic Product*, *Projections of the Biquaternion Sesquialgebra* and *Idempotents of the Quaternionic Sesquilinear Product*.
+The idempotent equation $\tilde Q\star\tilde Q = \tilde Q$ is the other element equation the four products read differently, and its solutions separate more sharply than the square-zero sets. The table is the one of *Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*, and the four columns are owned by *Biquaternion Idempotents and Projections*, *Idempotents of the Quaternionic Product*, *Projections of the Biquaternion Sesqualgebra* and *Idempotents of the Quaternionic Sesquilinear Product*.
 
 | product | idempotents |
 |---|---|
@@ -199,7 +199,7 @@ The set $\{c = 0\}$ is not the isotropic cone of the complex bilinear form $B(\t
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the two families, the cone and the classification.
 - *The Nilpotents and the Zero Divisors of the Quaternionic Product* (`articles_maths/the-nilpotents-and-the-zero-divisors-of-the-quaternionic-product.md`), for the square-zero set of the natural product and the coincidence of its two annihilators.
 - *The Square of the Quaternionic Sesquilinear Product and the Two Halves* (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the square-zero subfamily of the fourth product.
-- *The Squares and the Positive Cone of the Biquaternion Sesquialgebra* (`articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesquialgebra.md`), for the square of the complex sesquilinear product and the cone it generates.
+- *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (`articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.md`), for the square of the complex sesquilinear product and the cone it generates.
 - *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the three central values of the plain product.
 - *The Six Subspaces and the Elements* (`articles_maths/the-six-subspaces-and-the-elements.md`), for the elements of the six subspaces, the pure cone and the non-pure families.
 - *The Six Subspaces under the Complex Bilinear Form* (`articles_maths/the-six-subspaces-under-the-complex-bilinear-form.md`), for the restriction of the forms to the six subspaces.

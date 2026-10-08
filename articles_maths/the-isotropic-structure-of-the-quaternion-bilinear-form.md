@@ -93,11 +93,7 @@ an antidiagonal matrix: **the form is hyperbolic in the Peirce basis, and the fo
 
 ## The Link of the Cone
 
-**Proposition (the link).** The link of the cone, that is its intersection with the Euclidean unit sphere $S^7=\{\|\tilde Q\|_E=1\}$, is a compact real $5$-manifold, and it is an $S^1$-bundle over the quadric surface $Q^2\cong\mathbb{P}^1\times\mathbb{P}^1\cong S^2\times S^2$.
-
-*Proof.* The cone has real dimension $6$ and the sphere has real dimension $7$, and the cone is a real cone with apex at the origin, so its link is of real dimension $5$; the intersection is a transverse intersection away from the apex, since the real gradient of the two real equations defining the cone has rank $2$ there and the sphere contributes the radial direction. The projection $\mathbb{C}^4\setminus\{0\}\to\mathbb{P}^3$ carries the cone minus the apex onto the quadric surface $Q^2$ with fibres the complex lines, and the unit sphere selects in each fibre the circle of radius one, so the link is the circle bundle of the tautological line bundle over $Q^2$. The quadric surface is smooth, hence $\mathbb{P}^1\times\mathbb{P}^1$, and $\mathbb{P}^1\cong S^2$. Verified: the dimension count $3+2=5$ matches, the cone contributes a complex dimension $3$ and the projective quadric a real dimension $4$.
-
-The link, the rulings and the projective reading are *Biquaternion Topology*; the Euclidean sphere and its relation to the cone are *The Euclidean Topology of the Biquaternion Algebra*.
+The link of the cone — its dimension, its smooth structure away from the apex, its $S^1$-bundle over the projectivised cone and its homotopy — is *The Topology of the Zero-Divisor Cone*, and the quadric surface it fibres over, with its two rulings and its projective reading, is *The Null Quadric and Its Projective Geometry*. Neither is re-derived here; the affine reading of the form on the six subspaces is the business of this article.
 
 ## Worked Examples
 
@@ -130,4 +126,4 @@ The null cone of the quaternion bilinear form is $\sum_\mu Q_\mu^2=0$, the zero-
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the classification of the isotropic elements
 - *The Six Subspaces under the Quaternion Bilinear Form* (`articles_maths/the-six-subspaces-under-the-quaternion-bilinear-form.md`), for the restrictions of the form to the six subspaces, the indexes and the maximal totally isotropic dimensions of the restrictions
 - *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the realified null cones of the four forms and the comparison of the cones
-- *Biquaternion Topology* (`articles_maths/biquaternion-topology.md`), for the quadric surface and the rulings
+- *The Null Quadric and Its Projective Geometry* (`articles_maths/the-null-quadric-and-its-projective-geometry.md`), for the quadric surface and the rulings

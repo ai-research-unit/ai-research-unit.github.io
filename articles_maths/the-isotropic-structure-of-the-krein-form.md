@@ -144,6 +144,6 @@ The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone o
 - *The Six Subspaces and the Four Complex Products* (`articles_maths/the-six-subspaces-and-the-four-complex-products.md`), for the same description for the quaternion bilinear form
 - *Krein Orthogonality and the Fundamental Decomposition* (`articles_maths/krein-orthogonality-and-the-fundamental-decomposition.md`), for the complements used here
 - *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the ball whose boundary is the isotropic sphere
-- *Biquaternion Topology* (`articles_maths/biquaternion-topology.md`), for the projective geometry of the norm's null cone
+- *The Null Quadric and Its Projective Geometry* (`articles_maths/the-null-quadric-and-its-projective-geometry.md`), for the projective geometry of the form's null cone
 - *Witt's Theorems* (`articles_maths/witts-theorems.md`), for the extension and transitivity theorems for forms
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for isotropic subspaces, the Witt index and neutrality in a Krein space

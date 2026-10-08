@@ -8,11 +8,11 @@ $$
 x \circ y = \tfrac12\bigl(x \star y + y \star x\bigr),
 $$
 
-the companion of the symmetrised product of an algebra and the operation under which the Hermitian elements of a sesquialgebra close: the symmetrised product of a sesquialgebra is *The Sesquilinear Symmetrised Product*, and the bracket formed by the difference is *The Sesquilinear Commutator*.
+the companion of the symmetrised product of an algebra and the operation under which the Hermitian elements of a sesqualgebra close: the symmetrised product of a sesqualgebra is *The Sesquilinear Symmetrised Product*, and the bracket formed by the difference is *The Sesquilinear Commutator*.
 
 The interest of the operation is that it is almost, and not quite, a Jordan product, and the whole of this article is the location of the difference. Three facts are proved. The symmetrisation is an $R^{\varsigma}$-bilinear operation and not an $R$-bilinear one, the two scalar parities of the two slots collapsing to the fixed ring. In the derived case $x \star y = xy^{*}$ it lands in the Hermitian part for arbitrary arguments, not only for Hermitian ones, which is sharper than the corresponding statement for the plain symmetrisation. And the Jordan identity, which holds on the Hermitian part through the associativity of the underlying product, fails off that part, where the symmetrised sesquilinear product is no longer the symmetrisation of the underlying product; a two-line witness in $M_2(\mathbb{C})$ is given.
 
-The setting and the notation are those of *Sesquialgebras* and *The Sesquilinear Product*: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is an $R$-module with a $\varsigma$-sesquilinear product $\star$, and in the derived case $A$ is an associative $R$-algebra with a $\varsigma$-semilinear involution $*$ and $x \star y = xy^{*}$. The involution on $A$, the two halves $H(A)$ and $S(A)$ and the closure of $H(A)$ under the symmetrised product are *Hermitian and Skew-Hermitian Elements*; the Jordan algebra that $H(A)$ carries is *The Hermitian Jordan Algebra*; the triple product of the failure of associativity is *The Sesquilinear Associator and the Ternary Product* and *Algebraic J\*-Algebras*; and the general theory of the symmetrisation of an associative product is *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*. Throughout, $2$ is invertible in $R$, so that the halving inside $\circ$ is available.
+The setting and the notation are those of *Sesqualgebras* and *The Sesquilinear Product*: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is an $R$-module with a $\varsigma$-sesquilinear product $\star$, and in the derived case $A$ is an associative $R$-algebra with a $\varsigma$-semilinear involution $*$ and $x \star y = xy^{*}$. The involution on $A$, the two halves $H(A)$ and $S(A)$ and the closure of $H(A)$ under the symmetrised product are *Hermitian and Skew-Hermitian Elements*; the Jordan algebra that $H(A)$ carries is *The Hermitian Jordan Algebra*; the triple product of the failure of associativity is *The Sesquilinear Associator and the Ternary Product* and *Algebraic J\*-Algebras*; and the general theory of the symmetrisation of an associative product is *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*. Throughout, $2$ is invertible in $R$, so that the halving inside $\circ$ is available.
 
 ---
 
@@ -58,7 +58,7 @@ $$
 
 Consequently $\circ$ is linear in each variable over the fixed ring $R^{\varsigma} = \{\lambda : \varsigma(\lambda) = \lambda\}$, and it is linear in a variable over all of $R$ exactly in the degenerate case $(\varsigma(\lambda) - \lambda)A = 0$ for every $\lambda$, the case in which the product of $A$ is bilinear.
 
-**Proof.** In the first slot, $(\lambda x) \star y = \lambda (x \star y)$ by the first scalar rule of *Sesquialgebras* and $y \star (\lambda x) = \varsigma(\lambda)(y \star x)$ by the second, the scalar sitting in the second slot of the transposed product; the two terms give the first display, and the second is the same computation with the slots exchanged. For $\lambda \in R^{\varsigma}$ the two displayed right-hand sides both equal $\lambda (x \circ y)$, so $\circ$ is $R^{\varsigma}$-linear in each variable. Conversely, if $(\lambda x) \circ y = \lambda (x \circ y)$ for all $x, y$ then $\bigl(\varsigma(\lambda) - \lambda\bigr)(y \star x) = 0$ for all $x, y$, which is the degeneracy condition, and the same condition arises from the second variable. $\square$
+**Proof.** In the first slot, $(\lambda x) \star y = \lambda (x \star y)$ by the first scalar rule of *Sesqualgebras* and $y \star (\lambda x) = \varsigma(\lambda)(y \star x)$ by the second, the scalar sitting in the second slot of the transposed product; the two terms give the first display, and the second is the same computation with the slots exchanged. For $\lambda \in R^{\varsigma}$ the two displayed right-hand sides both equal $\lambda (x \circ y)$, so $\circ$ is $R^{\varsigma}$-linear in each variable. Conversely, if $(\lambda x) \circ y = \lambda (x \circ y)$ for all $x, y$ then $\bigl(\varsigma(\lambda) - \lambda\bigr)(y \star x) = 0$ for all $x, y$, which is the degeneracy condition, and the same condition arises from the second variable. $\square$
 
 **Remark.** The symmetrisation does not average the two parities, it destroys them: each slot of $\circ$ receives one linear and one conjugate-linear contribution, so the surviving scalars are exactly the fixed ones. This is the same ring that the two halves of the algebra are modules over, and the reason is the same, that $\varsigma(\lambda) = \lambda$ is what makes a conjugate-linear slot agree with a linear one. For $\varsigma = \mathrm{id}$ the fixed ring is $R$ and the statement is the familiar bilinearity, which is the case of *The Self-Adjoint Part of an Algebra*.
 
@@ -162,10 +162,10 @@ and the first is not zero.
 
 ### The Complex Matrices
 
-For $A = M_{n}(\mathbb{C})$ with the conjugate transpose $\dagger$, the derived operation is $x \star y = xy^{\dagger}$ and the symmetrised product is
+For $A = M_{n}(\mathbb{C})$ with the conjugate transpose $*=\overline{\cdot}^{\mathsf{T}}$, the derived operation is $x \star y = xy^{*}$ and the symmetrised product is
 
 $$
-x \circ y = \tfrac12\bigl(xy^{\dagger} + yx^{\dagger}\bigr),
+x \circ y = \tfrac12\bigl(xy^{*} + yx^{*}\bigr),
 $$
 
 an operation from all pairs of matrices into the Hermitian matrices. The Hermitian part is the real vector space of the Hermitian matrices, the fixed ring is $R^{\varsigma} = \mathbb{R}$, and on that space, by the theorem above, the symmetrised product is the ordinary symmetrisation $\tfrac12(xy+yx)$. Off it the identity fails, with the witness of the previous section.
@@ -178,7 +178,7 @@ $$
 x \circ y = \tfrac12\bigl(x\bar y + y\bar x\bigr) = \mathrm{Re}\bigl(x\bar y\bigr),
 $$
 
-a real number, and every element is Hermitian exactly when it is real. Here the image is all of the Hermitian part $H(A) = \mathbb{R}$, and on that copy of $\mathbb{R}$ the symmetrised product is the ordinary multiplication; the value is the real part of the product $x\bar y$ of *The Centre and the Zero Divisors of a Sesquialgebra*, §*The Sesquilinear Field*.
+a real number, and every element is Hermitian exactly when it is real. Here the image is all of the Hermitian part $H(A) = \mathbb{R}$, and on that copy of $\mathbb{R}$ the symmetrised product is the ordinary multiplication; the value is the real part of the product $x\bar y$ of *The Centre and the Zero Divisors of a Sesqualgebra*, §*The Sesquilinear Field*.
 
 ### The Quaternions
 
@@ -186,7 +186,19 @@ For $A = \mathbb{H}$ with the quaternion conjugation over the datum $(\mathbb{R}
 
 ### The Biquaternion Case
 
-For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the symmetrised star-product is the Jordan product of the biquaternion block, and the Hermitian part it fills is a Jordan algebra of degree two, read in *Biquaternion Jordan Algebras* and *The Six Subspaces and the Four Complex Products*. The biquaternion layer is the worked case in which all of the operations of this article, the product, the derived product, the symmetrisation and the difference bracket, are computed on a basis of eight elements.
+For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the symmetrised star-product is the Jordan product of the biquaternion block, and the Hermitian part it fills is a Jordan algebra of degree two, read in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The Six Subspaces and the Four Complex Products*. The biquaternion layer is the worked case in which all of the operations of this article, the product, the derived product, the symmetrisation and the difference bracket, are computed on a basis of eight elements.
+
+### The Other Exchange, and the Other Symmetric Half
+
+The symmetrised product is the symmetric half of the **plain** exchange, the swap of the two arguments, and it is $R^{\varsigma}$-bilinear and no more. The other exchange, by a conjugation $c$, $f^{c}(x,y)=c(f(y,x))$, keeps the class of the sesquilinear products, and its symmetric half is the **conjugate-symmetric part** $f^{c}_{+}=\tfrac12(f+f^{c})$ of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*. That part is sesquilinear over $R$, where the symmetrised product of this article is only $R^{\varsigma}$-bilinear, and it is another operation.
+
+On the biquaternion sesqualgebra over $(\mathbb{C},\bar{\cdot})$ with the derived operation $x \star y = xy^{*}$ and $c=\overline{\cdot}$ the conjugate-symmetric part is the **scalar part** of the product,
+
+$$
+\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\bigl(\tilde{P}\tilde{Q}^{*}\bigr)^{\natural}\bigr)=\mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{*}\bigr)=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}}),
+$$
+
+the Hermitian form of the sesqualgebra read as a central element, and its antisymmetric partner is the vector part $\mathrm{Vect}(\tilde{P}\tilde{Q}^{*})$. The symmetrised product and the conjugate-symmetric part are the two symmetric halves of the one product, taken under the two exchanges, and they are not the same operation: the symmetrisation here is Hermitian-valued in $\mathbb{M}_{+}$ and only $\mathbb{R}$-bilinear, while the conjugate-symmetric part is central and sesquilinear. The twelve names of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* belong to the reading that keeps the class, whose symmetric half for the derived operation is the conjugate-symmetric part just written, the operation $\mathrm{SPS}$.
 
 ## Summary
 
@@ -214,4 +226,4 @@ In the derived case $x \star y = xy^{*}$ of an associative algebra with a $\vars
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras* (American Mathematical Society, 1968), for the symmetrisation of an associative algebra and the Jordan identity it satisfies.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the special Jordan algebras, the symmetrisation and the envelope.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society Colloquium Publications 44, 1998), for the involutions of an algebra and the twisted products they carry.
-- The companion articles of this series: *Sesquialgebras*, *The Sesquilinear Product*, *Hermitian and Skew-Hermitian Elements*, *The Hermitian Jordan Algebra*, *The Sesquilinear Commutator*, *The Sesquilinear Associator and the Ternary Product*, and *Algebraic J\*-Algebras*.
+- The companion articles of this series: *Sesqualgebras*, *The Sesquilinear Product*, *Hermitian and Skew-Hermitian Elements*, *The Hermitian Jordan Algebra*, *The Sesquilinear Commutator*, *The Sesquilinear Associator and the Ternary Product*, and *Algebraic J\*-Algebras*.

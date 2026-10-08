@@ -32,6 +32,8 @@ $$
 
 Then $G \bullet H = H \bullet G$ and $[G,H] = -[H,G]$: the symmetrisation is commutative, the antisymmetrisation anticommutative. Both are bilinear, and either, together with the other, reconstructs the product: $G \star H = G \bullet H + [G, H]$. The two are therefore not two structures on $V$ but the two halves of one structure.
 
+**Conventions.** The bracket written here carries the factor $\tfrac12$, so that the two halves reconstruct the product with no further coefficient. The corpus's *The Commutator Operator* writes the same bracket without it, $[a,b] = ab - ba$, and writes the halved antisymmetrisation with a wedge, $x \wedge y = \tfrac12(xy - yx)$, as in *The Symmetric and Antisymmetric Parts of an Algebra Product*; the identities below are homogeneous in the bracket, so the two conventions differ only by the factor $2$.
+
 ### The Lie Half
 
 The antisymmetrisation satisfies the **Jacobi identity**
@@ -159,4 +161,4 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 - K. McCrimmon, *A Taste of Jordan Algebras* (Universitext, Springer, New York, 2004), for the Jordan triple identities and the classification of special and exceptional Jordan algebras.
 - O. Loos, *Jordan Pairs* (Lecture Notes in Mathematics 460, Springer, Berlin, 1975), for Jordan triples, Jordan pairs and the Kantor–Koecher construction.
 - M. Koecher, "Imbedding of Jordan algebras into Lie algebras I, II," *American Journal of Mathematics* **89** (1967) 787–816 and **90** (1968) 476–510, for the Kantor–Koecher construction.
-- The companion corpus articles: *Jordan Algebras*, *Special and Exceptional Jordan Algebras*, *Lie Algebras*, *Automorphisms and Derivations of Algebras*, *Superalgebras and Graded Structures*, and *Biquaternion Lie Algebras*.
+- The companion corpus articles: *Jordan Algebras*, *Special and Exceptional Jordan Algebras*, *Lie Algebras*, *Automorphisms and Derivations of Algebras*, *Superalgebras and Graded Structures*, and *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.

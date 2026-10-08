@@ -290,4 +290,4 @@ For the roots, a root of $-1$ is an element of square $-e_0$, of which the algeb
 - *The Isotropic Structure of the Quaternion Bilinear Form* (`articles_maths/the-isotropic-structure-of-the-quaternion-bilinear-form.md`), for the isotropic lines, which are exactly the lines spanned by the zero divisors of the vector, Hermitian and anti-Hermitian subspaces
 - *The Six Subspaces and the Analysis* (`articles_maths/the-six-subspaces-and-the-analysis.md`), for the null cone as the set on which the second-order operator of the subspace is not elliptic
 - *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product formula
-- *Decomposition of the Biquaternion Complex Products* (`articles_maths/decomposition-of-the-biquaternion-complex-products.md`), for the square of a pure vector
+- *Scalar / Vector decomposition of the Biquaternion Complex Products* (`articles_maths/scalar-over-vector-decomposition-of-the-biquaternion-complex-products.md`), for the square of a pure vector

@@ -250,6 +250,8 @@ The elements of $\mathbb{M}_+$ include two important classes.
 
 The **dichotomy between reversible and irreversible actions** is intrinsic to the structure of $\mathbb{M}_+$: it is the biquaternion version of the fundamental dichotomy of quantum information theory between unitary evolution and measurement.
 
+Both ends of the dichotomy have their physics names, and both are owned by later articles, but the statements belong here. The idempotent end is **decoherence**: the irreversible projection of a state onto an idempotent is the algebraic form of a measurement, and the projection onto a minimal left ideal is what a measurement completes. The distinguished projection of the sector is the **vacuum** of a single fermionic mode, the minimal idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, which is simultaneously a pure state, a rank-one projector and a zero divisor. The two are *Decoherence as Idempotent Projection* and *The Biquaternion Vacuum as a Minimal Idempotent*.
+
 ### The Trace Formula
 
 For $\tilde{P} \in \mathbb{M}_+$ idempotent (a state) and $\tilde{Q} \in \mathbb{M}_+$ Hermitian (an observable), the quantity
@@ -264,7 +266,27 @@ $$
 \langle \tilde{Q} \rangle_{\tilde{P}} = h_0 + \hat{\boldsymbol\mu}\cdot\mathbf{h},
 $$
 
-which is the standard spin-1/2 expectation value along the direction $\hat{\boldsymbol\mu}$. The trace formula is the biquaternion expression of the Born rule.
+which is the standard spin-1/2 expectation value along the direction $\hat{\boldsymbol\mu}$. For an idempotent and a state the same pairing is the **probability formula** $p_\pm=\mathrm{Tr}(\tilde\Pi_\pm(\hat{\mathbf{n}})\tilde\rho)=\tfrac12(1\pm\hat{\mathbf{n}}\cdot\mathbf{r})$; the derivation of the rule from the algebra, and its comparison with the postulate it replaces, are *The Born Rule as a Trace Formula — Derivation and Comparison*.
+
+What the trace form gives is the probability formula; what it does not give is the identification of those numbers with physical frequencies. The framework relocates the Born rule from a postulate to a property of the pairing; it does not remove the interpretive step. The idea answers the axiomatic status of the Born rule in the structural sense and not in the operational sense, and that separation is stated in the article just cited.
+
+### The Sesqualgebra Behind the Reading
+
+Seven statements of the sections above are not properties of the vector space $\mathbb{M}_+$ alone. Each names an object of a sesqualgebra structure on $\mathbb{B}$ — a product, a form, an involution and the operators they generate — and each is owned, for its own sake, by an article of the mathematical menu. They are collected here so that the physics reading carries the algebraic address of each of its claims.
+
+**1. The Born pairing is the Hilbert–Schmidt pairing.** In the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ the Hermitian conjugation is the conjugate transpose and the sesquilinear form is the Hilbert–Schmidt form of the matrices, $\langle\tilde Q,\tilde P\rangle_{*}=\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde P)^{\dagger}\Phi(\tilde Q)\bigr)$. With $\tilde\rho$ and $\tilde Q$ Hermitian this reads $\operatorname{Tr}(\Phi(\tilde\rho)\Phi(\tilde Q))=\operatorname{Tr}(\tilde\rho\tilde Q)=2\,\mathrm{Sc}(\tilde\rho\tilde Q)$, so the expectation value of §*The Trace Formula* is a matrix trace in the literal sense and not only in name. The pairing, its Cauchy–Schwarz inequality and the positive functionals it induces are *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Representation*.
+
+**2. The form makes the algebra a Hilbert space.** The form $\mathrm{Sc}(\tilde R^{*}\tilde S)$ of §*The Hermitian Forms* is positive definite, of signature $(8,0)$ on the real space $\mathbb{B}\cong\mathbb{R}^8$, so $\mathbb{B}$ is a finite-dimensional Hilbert space, the trace formula is continuous in its norm, and the topology the physics uses is the Euclidean one. The completion of the sesqualgebra with respect to that norm is a later and separate construction; nothing above needs it. *The Hermitian Form on the Biquaternion Algebra*; *The Completion of a Sesqualgebra with a Form*.
+
+**3. The level sets are the groups the physics uses.** Each of the four forms singles out a level set, and the physics reads three of them. The level set of the unit form, $Q^{*}Q=e_0$, is the unitary slice $U(\mathbb{B})\cong U(2)$, the internal unitary group of the evolution. The level set of the norm form, $\langle\tilde Q,\tilde Q\rangle_{\natural}=1$, is the norm-one group $\mathbb{B}^{\times}_{1}$, the Lorentz rotors. The Euclidean sphere $S^{7}$, the level set of the complex sesquilinear form, is **not** used, and the reason is that the complex bilinear form is not multiplicative: the witness is the element $e_1+ie_2$, whose Euclidean norm is $\sqrt2$ while $\sum_\mu Q_\mu^{2}=0$, so the sphere contains zero divisors and is not a group at all. *Biquaternion Forms and Algebraic Norms*; *The Euclidean Topology of the Biquaternion Algebra*.
+
+**4. The operator dictionary is the adjointness dictionary.** Observables are the self-adjoint elements, that is $\mathbb{M}_+$; generators are the skew-adjoint elements, that is $\mathbb{M}_-$; unitaries are the slice of the first item above. This is why the series of mathematical articles is titled "with Hermitian Adjoint": the physical roles are read from the adjoint of one element and nothing else. *Observables, Gauge Generators and the Chirality of the Internal Action*.
+
+**5. One operator carries both evolutions.** The evolution $\tilde\rho\mapsto\tilde\Lambda\tilde\rho\tilde\Lambda^{*}$ and the measurement $\tilde\rho\mapsto\tilde P\tilde\rho\tilde P$ of §*Reversible Versus Irreversible Actions* are the same two-sided operator $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\dagger}}$, the **dagger sandwich**, evaluated at a unitary parameter and at an idempotent one. The reversible–irreversible dichotomy of the physics is therefore the unitary–self-adjoint dichotomy of the operator theory, and no second operator is needed to hold the two. The operator is quadratic in its parameter and its adjoint is linear, which is why the two parameters read differently; *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*.
+
+**6. Projections come from one sector only.** A measurement projection is an idempotent, and no nonzero idempotent lies in $\mathbb{M}_-$: if $\tilde P^{2}=\tilde P$ and $\tilde P^{*}=-\tilde P$, then applying the anti-automorphism to the first relation gives $-\tilde P=(\tilde P^{*})^{2}=(-\tilde P)^{2}=\tilde P^{2}=\tilde P$, whence $\tilde P=0$. The material sector therefore owns no projector, and the Peirce decomposition of a measurement runs through $\mathbb{M}_+$ alone. *Hermitian Idempotents and the Peirce Decomposition*.
+
+**7. Two pairings, because one of them is not Hermitian.** The Lorentzian interval on $\mathbb{M}_-$ is the quaternion **bilinear** form $N=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ of *Mass, Rank and the Positivity of the Dagger*, the second slot without the star, of signature $(-,+,+,+)$ on the four real directions $ict\,e_0,\mathbf{x}$. It is excluded from the Witt classification of Hermitian forms for exactly one reason: it is not Hermitian for the dagger, being complex-valued, indefinite and isotropic on the null cone, and the two types of form must not be placed in the same classification. The framework therefore needs two pairings and not one — $H=\mathrm{Sc}(\tilde P\tilde Q^{*})$ for probability, $N$ for the metric — and on each sector the two agree up to sign, $\langle\tilde P,\tilde Q\rangle_{*}=\pm\langle\tilde P,\tilde Q\rangle$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\pm\langle\tilde P,\tilde Q\rangle_{\natural}$, with $+$ on $\mathbb{M}_+$ and $-$ on $\mathbb{M}_-$. The relation was checked on $200$ random elements of each sector and holds identically, the sign being the only difference. *The Four Pairings of the Biquaternion Algebra*; *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint*.
 
 ### The Spectral Decomposition
 
@@ -305,6 +327,8 @@ The intermediate values $0 < |\mathbf{r}| < 1$ are the **mixed states**, and the
 
 Positivity is not preserved by the biquaternion norm: the mixed state $\tilde\rho$ has $N(\tilde\rho) = \tfrac{1}{4}(1 - r^2) \geq 0$, which vanishes on the whole boundary sphere rather than at a point. Every pure state is therefore a **zero divisor**, in agreement with §*Properties*.
 
+One structural fact joins the ball to the material sector and is stated here rather than only in its own article: the ball is the intersection of the affine hyperplane $\{\mathrm{Sc}=\tfrac12\}$ of $\mathbb{M}_+$ with the **future light cone** of the biquaternion norm. The positivity of the probability form and the causal cone of the interval therefore have one and the same boundary, and the state space of the frame is a slice of the cone that carries its causality. The geometry is *The Bloch Ball as the Trace-One Slice of the Future Light Cone*.
+
 ### The Bracket Table of the Two Sectors
 
 The two sectors are not closed under the product in a haphazard way; the antisymmetric and the symmetric parts go to opposite sectors, and the rule is uniform. Write $[\tilde{Q},\tilde{R}] = \tilde{Q}\tilde{R} - \tilde{R}\tilde{Q}$ and $\{\tilde{Q},\tilde{R}\} = \tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}$. Then the sector of the result is determined by the sectors of the two arguments:
@@ -340,6 +364,7 @@ The mathematics of $\mathbb{M}_+$ and its action on $\mathbb{M}_-$ is **structur
 | Quantum information | Biquaternion framework |
 |---|---|
 | State space $\mathbb{C}^2$ | Spinor module of $\mathbb{B}$ |
+| Basis of the state space | $\{\tilde{\Pi}_1,\tilde{T}\}$: one idempotent and one nilpotent, Gram matrix $\tfrac{1}{2}I_2$ |
 | Density matrix $\rho$ (Hermitian, positive, trace 1) | Element $\tilde{\rho} \in \mathbb{M}_+$ (Hermitian, positive, trace 1) |
 | Pure state $\lvert\psi\rangle\langle\psi\rvert$ | Idempotent $\tfrac{1}{2}(e_0 + i\hat{\boldsymbol\mu})$ |
 | Observable (Hermitian operator) | Hermitian element $\tilde{Q} \in \mathbb{M}_+$ |
@@ -349,6 +374,8 @@ The mathematics of $\mathbb{M}_+$ and its action on $\mathbb{M}_-$ is **structur
 | Projective measurement $\rho \mapsto P\rho P$ | Idempotent projection $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}$ |
 
 The correspondence is not an analogy. **It is the same mathematics**, expressed in two different notations: the Hermitian elements of the algebra are the operators of a two-state system.
+
+The state space in the right-hand column is the spinor module $S=\mathbb{B}\tilde{\Pi}_1=\mathbb{C}\{\tilde{\Pi}_1,\tilde{T}\}$ of *Particle Types, Discrete Charge and Three-Particle Couplings*, spanned by the idempotent $\tilde{\Pi}_1=\tfrac12(e_0+ie_3)$ and the **nilpotent** $\tilde{T}=\tfrac12(ie_1+e_2)$. The distinction of the two is what the table means by a basis: $\tilde{\Pi}_1^{2}=\tilde{\Pi}_1$, while $\tilde{T}^{2}=0$ and $\tilde{T}^{*}=\tfrac12(ie_1-e_2)\neq\tilde{T}$, so $\tilde{T}$ is **not** a state — it is the off-diagonal half of the Peirce decomposition. A general spinor is the pair $s_1\tilde{\Pi}_1+s_2\tilde{T}$ of complex coefficients, the Born pairing restricted to the module has Gram matrix $\tfrac12 I_2$, and $\langle\psi,\psi\rangle_{*}=\tfrac12(\lvert s_1\rvert^{2}+\lvert s_2\rvert^{2})$ is positive definite. The two states of the two-state system are carried by the two **coefficients**, as in $\mathbb{C}^2$, and not by the two basis elements; the module is a genuine Hilbert space, and not the isotropic module that a general Clifford algebra can present.
 
 ### What the Correspondence Is and Is Not
 
@@ -371,6 +398,10 @@ The difference is:
 The compact/non-compact distinction reflects the difference between rotations in a spacelike plane (compact) and boosts in a timelike plane (non-compact). The biquaternion framework extends the spin-1/2 structure to the relativistic setting: the operators generate the Lorentz group rather than the rotation group, and the corresponding observables include boosts (Hermitian biquaternions with imaginary vector part) alongside rotations.
 
 The biquaternion framework can therefore be read as a **relativistic generalisation of the spin-1/2 formalism**, in which the state space is the spinor module of $\mathbb{B}$ and the symmetry group is the Lorentz group.
+
+The three operations of the correspondence are one formula. The conjugation $\Gamma_{\tilde A}(\tilde Q)=\tilde A\tilde Q\tilde A^{*}$ is the Lorentz rotor when $\tilde A$ has unit biquaternion norm, the reversible evolution when $\tilde A$ is a unitary element of the slice, and the measurement update when $\tilde A$ is an idempotent; the three cases differ in the normalisation condition imposed on the parameter and not in the operation performed.
+
+The formula is relativistic at its source, but the single-qubit formalism is not: its state space is a fixed Bloch ball $|\mathbf{r}|\leq1$, and a boost carries a trace-one element **off** the trace-one slice. Making the state space itself relativistic, and not only the transformation group, is open work and not a result of the framework. The relativistic state space is *The Relativistic Qubit in Biquaternionic Form*, and the difficulty is the second of the seven of *The Quantum–Relativity Tension and the Biquaternion Framework*.
 
 ## Examples
 
@@ -466,7 +497,7 @@ The common feature of these objects is that they are **Hermitian** (fixed under 
 
 The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its biquaternion norm has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$, and the Hermitian forms $\tilde{Q}\tilde{Q}^{*}$.
 
-The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^{*}$. The action is linear, preserves $\mathbb{M}_-$, and preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm. The natural dichotomy between unit-norm and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement.
+The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^{*}$. The action is linear, preserves $\mathbb{M}_-$, and preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm. The natural dichotomy between unit-norm and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement, the idempotent end being the decoherence of a measurement and the minimal idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ the vacuum of a single fermionic mode.
 
 Two further structures are carried by the sector and are developed above. Every Hermitian element has a **spectral decomposition** $\tilde{Q} = (h_0 + |\mathbf{h}|)\tilde\Pi_+(\hat{\mathbf{h}}) + (h_0 - |\mathbf{h}|)\tilde\Pi_-(\hat{\mathbf{h}})$ into two orthogonal idempotents, with real eigenvalues $h_0 \pm |\mathbf{h}|$, and the **positive elements** are those with $h_0 \geq |\mathbf{h}|$. On the trace-one slice the positive elements are exactly the $\tilde\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, the **Bloch ball**: the boundary sphere is the pure states, the interior the mixed states, and the centre the maximally mixed state. The whole family rests on one sign, $(i\hat{\boldsymbol\mu})^2 = +e_0$, which is what makes a Hermitian vector square to $+1$ and the corresponding combination idempotent.
 
@@ -509,5 +540,8 @@ The **physical hypothesis** is that this mathematics reflects physics: that $\ma
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the algebraic structure of the Clifford algebra $\mathrm{Cl}_{1,3}$.
 - Asher Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1993), for the operational reading of states, observables, and measurements used here.
 - *Conventions in the Biquaternion Universe* and *Relations Between Subspaces*, the companion articles, for the notation and for the place of $\mathbb{M}_+$ among the six subspaces.
-- Within the corpus, the structures used above are developed for their own sake in *Biquaternion Spectral Theory* (the spectral decomposition and the eigenvalues $Q_0 \pm iB$), *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (the positive cone and the trace-one slice), *Hermitian Idempotents and the Peirce Decomposition* (the idempotents), *Biquaternion Lie Algebras* (the bracket table and the $\mathbb{Z}/2$-grading of the two sectors) and *Biquaternion Jordan Algebras* (the symmetrised product), and the product rule of the six subspaces is *The Six Subspaces and the Four Complex Products*.
+- Within the corpus, the structures used above are developed for their own sake in *Biquaternion Spectral Theory* (the spectral decomposition and the eigenvalues $Q_0 \pm iB$), *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (the positive cone and the trace-one slice), *Hermitian Idempotents and the Peirce Decomposition* (the idempotents), *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (the bracket table, the $\mathbb{Z}/2$-grading of the two sectors and the symmetrised product), and the product rule of the six subspaces is *The Six Subspaces and the Four Complex Products*.
+- The sesqualgebra side of §*The Sesqualgebra Behind the Reading* is *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Representation* (the Hilbert–Schmidt pairing) and *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (the dagger sandwich of the evolution and the measurement).
+- The forms and the topology of the same section are *The Four Pairings of the Biquaternion Algebra* (the four forms, their Gram matrices and their signatures) and *Biquaternion Forms and Algebraic Norms* (the four level sets, the isometry groups and the zero divisors of $N$).
+- The two pairings and the exclusion of the norm form from the Witt theory are *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint*, and the analytic completion is *The Completion of a Sesqualgebra with a Form*.
 

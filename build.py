@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
 import re
 import shutil
+import subprocess
+import sys
 import markdown
+from datetime import datetime
 from pathlib import Path
 
 SRC        = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit")
 DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit-deploy")
+
+# One date for the whole site: the moment the last build started. build2.py
+# reads it to decide which pages to rebuild. It lives in the source folder,
+# never in the deploy folder.
+STATE_FILE = SRC / "build_state"
 
 TEMPLATE       = (SRC / "article_template.html").read_text()
 INDEX_TEMPLATE = (SRC / "index_template.html").read_text()
@@ -167,36 +175,84 @@ def article_sort_key(p):
         group = 2
     return (group, name)
 
-articles = []
-for coll in COLLECTIONS:
-    coll["articles"] = sorted(coll["src"].glob("*.md"), key=article_sort_key)
+def collect_articles():
+    for coll in COLLECTIONS:
+        coll["articles"] = sorted(coll["src"].glob("*.md"), key=article_sort_key)
 
-if not any(c["articles"] for c in COLLECTIONS):
-    print("No md files found in articles_maths/ or articles_physics/. Add some and re-run.")
-    exit(0)
 
-DEPLOY.mkdir(parents=True, exist_ok=True)
-for coll in COLLECTIONS:
-    coll["deploy"].mkdir(parents=True, exist_ok=True)
+def nav_pool():
+    # The {nav} placeholder renders the same four links on every page regardless
+    # of the current article, so the pool it is drawn from does not matter.
+    return [p for coll in COLLECTIONS for p in coll["articles"]
+            if "zexample" not in p.stem.lower()]
 
-src_assets = SRC / "assets"
-deploy_assets = DEPLOY / "assets"
-if src_assets.exists():
-    if deploy_assets.exists():
-        shutil.rmtree(deploy_assets)
-    shutil.copytree(src_assets, deploy_assets)
-    print("Copied assets/")
 
-for name in ("robots.txt", ".nojekyll", ".gitlab-ci.yml"):
-    if (SRC / name).exists():
-        shutil.copy(SRC / name, DEPLOY / name)
-        print(f"Copied {name}")
+def ensure_dirs():
+    DEPLOY.mkdir(parents=True, exist_ok=True)
+    for coll in COLLECTIONS:
+        coll["deploy"].mkdir(parents=True, exist_ok=True)
 
-# nav_articles is only used for the {nav} placeholder, which renders the same
-# four links on every page regardless of the current article, so the pool it is
-# drawn from does not matter.
-nav_articles = [p for coll in COLLECTIONS for p in coll["articles"]
-                if "zexample" not in p.stem.lower()]
+
+def newer_than(path, since):
+    """True when `path` exists and was modified after `since` (a datetime)."""
+    return path.exists() and path.stat().st_mtime > since.timestamp()
+
+
+def write_state(moment):
+    """Record when this build started, for build2.py.
+
+    The start, not the end: a source edited while the build runs then carries an
+    mtime past the record, so the next incremental build still sees it.
+    """
+    STATE_FILE.write_text(moment.isoformat(timespec="seconds") + "\n")
+
+
+def read_state():
+    """The moment recorded by the last build, or None when unusable."""
+    try:
+        text = STATE_FILE.read_text().strip()
+    except OSError:
+        return None
+    if not text:
+        return None
+    try:
+        return datetime.fromisoformat(text)
+    except ValueError:
+        return None
+
+
+def copy_static(since=None):
+    """Mirror the static files into the deploy folder.
+
+    A full build (since is None) replaces assets/ outright, which also drops
+    files deleted at the source. An incremental build copies only the files
+    whose source is newer than `since`.
+    """
+    src_assets = SRC / "assets"
+    deploy_assets = DEPLOY / "assets"
+    if src_assets.exists():
+        if since is None:
+            if deploy_assets.exists():
+                shutil.rmtree(deploy_assets)
+            shutil.copytree(src_assets, deploy_assets)
+            print("Copied assets/")
+        else:
+            for f in sorted(src_assets.rglob("*")):
+                if not f.is_file():
+                    continue
+                out = deploy_assets / f.relative_to(src_assets)
+                if newer_than(f, since) or not out.exists():
+                    out.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copy(f, out)
+                    print(f"Copied assets/{f.relative_to(src_assets)}")
+
+    for name in ("robots.txt", ".nojekyll", ".gitlab-ci.yml"):
+        src = SRC / name
+        if not src.exists():
+            continue
+        if since is None or newer_than(src, since) or not (DEPLOY / name).exists():
+            shutil.copy(src, DEPLOY / name)
+            print(f"Copied {name}")
 
 
 def build_root_page(md_path, out_name, articles):
@@ -216,78 +272,119 @@ def build_root_page(md_path, out_name, articles):
         print(f"Warning: {md_path.name} not found at {md_path}")
 
 
+def build_article(coll, f, articles):
+    raw = f.read_text()
+    meta, body_md = parse_frontmatter(raw)
+    # parse_frontmatter always defines "title" (default ""), so .get()'s
+    # default never fires — fall back explicitly.
+    title = meta.get("title") or heading_title(body_md) or label_from_stem(f.stem)
+
+    body_html = md_to_html(body_md)
+
+    html = (TEMPLATE
+        .replace("{title}",      title)
+        .replace("{coordinate}", meta.get("coordinate", ""))
+        .replace("{nav}",        build_nav_article(articles, current_stem=f.stem))
+        .replace("{body}",       body_html)
+    )
+    (coll["deploy"] / f"{f.stem}.html").write_text(html)
+    print(f"Built: {coll['src'].name}/{f.stem}.html")
+
+
 # Root pages first: the menus and the landing page are the site's entry points,
 # so they are written before the article corpus.
-build_root_page(SRC / "index.md",      "index.html",      nav_articles)
-build_root_page(SRC / "maths.md", "maths.html", nav_articles)
-build_root_page(SRC / "physics.md", "physics.html", nav_articles)
-build_root_page(SRC / "disclaimer.md", "disclaimer.html", nav_articles)
-build_root_page(SRC / "contact.md",    "contact.html",    nav_articles)
+ROOT_PAGES = [
+    ("index.md",      "index.html"),
+    ("maths.md",      "maths.html"),
+    ("physics.md",    "physics.html"),
+    ("disclaimer.md", "disclaimer.html"),
+    ("contact.md",    "contact.html"),
+]
 
-# Physics before maths. BUILD_ORDER only controls build sequence; COLLECTIONS
-# keeps its own order because the nav links are derived from it.
-BUILD_ORDER = ["physics", "maths", "reserve"]
-ordered_collections = sorted(COLLECTIONS,
-                            key=lambda c: BUILD_ORDER.index(c["name"]))
 
-for coll in ordered_collections:
-    if not coll["articles"]:
-        if not coll.get("optional"):
-            print(f"Warning: no md files in {coll['src'].name}/")
-        continue
-    for f in coll["articles"]:
-        raw = f.read_text()
-        meta, body_md = parse_frontmatter(raw)
-        # parse_frontmatter always defines "title" (default ""), so .get()'s
-        # default never fires — fall back explicitly.
-        title = meta.get("title") or heading_title(body_md) or label_from_stem(f.stem)
+def ordered_collections():
+    # Physics before maths. build_order only controls build sequence; COLLECTIONS
+    # keeps its own order because the nav links are derived from it.
+    build_order = ["physics", "maths", "reserve"]
+    return sorted(COLLECTIONS, key=lambda c: build_order.index(c["name"]))
 
-        body_html = md_to_html(body_md)
 
-        html = (TEMPLATE
-            .replace("{title}",      title)
-            .replace("{coordinate}", meta.get("coordinate", ""))
-            .replace("{nav}",        build_nav_article(nav_articles, current_stem=f.stem))
-            .replace("{body}",       body_html)
-        )
-        (coll["deploy"] / f"{f.stem}.html").write_text(html)
-        print(f"Built: {coll['src'].name}/{f.stem}.html")
+def prune_orphans():
+    # ── prune orphaned article HTML ───────────────────────────────────────
+    # We only ever write files into the deploy dir, never delete, so a renamed
+    # or removed source md leaves its old .html behind — still served, still
+    # indexable, and silently diverging from the current article. Drop any
+    # deployed article page that no longer has a matching source. This also
+    # removes pages left in a collection by a file that moved to the other one.
+    for coll in COLLECTIONS:
+        built = {f"{f.stem}.html" for f in coll["articles"]}
+        for stale in coll["deploy"].glob("*.html"):
+            if stale.name not in built:
+                stale.unlink()
+                print(f"Removed orphan: {coll['src'].name}/{stale.name}")
+    # ──────────────────────────────────────────────────────────────────────
 
-# ── prune orphaned article HTML ───────────────────────────────────────────
-# We only ever write files into the deploy dir, never delete, so a renamed
-# or removed source md leaves its old .html behind — still served, still
-# indexable, and silently diverging from the current article. Drop any
-# deployed article page that no longer has a matching source. This also
-# removes pages left in a collection by a file that moved to the other one.
-for coll in COLLECTIONS:
-    built = {f"{f.stem}.html" for f in coll["articles"]}
-    for stale in coll["deploy"].glob("*.html"):
-        if stale.name not in built:
-            stale.unlink()
-            print(f"Removed orphan: {coll['src'].name}/{stale.name}")
-# ──────────────────────────────────────────────────────────────────────────
 
-# ── prune the pre-split deploy directory ──────────────────────────────────
-# Before the split every page was written to <deploy>/articles/. Those pages
-# are now superseded by the two per-collection directories, and leaving them
-# would publish each article twice at the old URL.
-legacy_art = DEPLOY / "articles"
-if legacy_art.is_dir():
-    shutil.rmtree(legacy_art)
-    print("Removed legacy deploy directory: articles/")
-# ──────────────────────────────────────────────────────────────────────────
+def prune_legacy():
+    # ── prune the pre-split deploy directory ──────────────────────────────
+    # Before the split every page was written to <deploy>/articles/. Those pages
+    # are now superseded by the two per-collection directories, and leaving them
+    # would publish each article twice at the old URL.
+    legacy_art = DEPLOY / "articles"
+    if legacy_art.is_dir():
+        shutil.rmtree(legacy_art)
+        print("Removed legacy deploy directory: articles/")
+    # ──────────────────────────────────────────────────────────────────────
 
-# ── Convention check (non-fatal) ──────────────────────────────────────────────
-# Reports shared symbols given conflicting definitions across articles — the class of
-# defect the ordering rules cannot see. Never fails the build; the report is advisory.
-_conv = SRC / "_reserve" / "convention_check.py"
-if _conv.exists():
+
+def run_convention_check():
+    # ── Convention check (non-fatal) ──────────────────────────────────────
+    # Reports shared symbols given conflicting definitions across articles — the
+    # class of defect the ordering rules cannot see. Never fails the build; the
+    # report is advisory.
+    conv = SRC / "_reserve" / "convention_check.py"
+    if not conv.exists():
+        return
     try:
-        import subprocess, sys
-        _r = subprocess.run([sys.executable, str(_conv)], capture_output=True, text=True)
-        print(_r.stdout.strip() or _r.stderr.strip())
-    except Exception as _e:
-        print(f"convention check skipped: {_e}")
+        r = subprocess.run([sys.executable, str(conv)], capture_output=True, text=True)
+        print(r.stdout.strip() or r.stderr.strip())
+    except Exception as e:
+        print(f"convention check skipped: {e}")
+    # ──────────────────────────────────────────────────────────────────────
 
-print("Done.")
+
+def main():
+    started = datetime.now()
+
+    collect_articles()
+    if not any(c["articles"] for c in COLLECTIONS):
+        print("No md files found in articles_maths/ or articles_physics/. Add some and re-run.")
+        return
+
+    ensure_dirs()
+    copy_static()
+
+    articles = nav_pool()
+
+    for md_name, out_name in ROOT_PAGES:
+        build_root_page(SRC / md_name, out_name, articles)
+
+    for coll in ordered_collections():
+        if not coll["articles"]:
+            if not coll.get("optional"):
+                print(f"Warning: no md files in {coll['src'].name}/")
+            continue
+        for f in coll["articles"]:
+            build_article(coll, f, articles)
+
+    prune_orphans()
+    prune_legacy()
+    run_convention_check()
+    write_state(started)
+
+    print("Done.")
+
+
+if __name__ == "__main__":
+    main()
 

@@ -11,7 +11,7 @@ $$
 \tilde{P}\bullet_{f}\tilde{Q}:=\tfrac12\bigl(f(\tilde{P},\tilde{Q})+f(\tilde{Q},\tilde{P})\bigr),\qquad
 [\tilde{P},\tilde{Q}]_{f}:=f(\tilde{P},\tilde{Q})-f(\tilde{Q},\tilde{P}),
 $$
-so that $f(\tilde{P},\tilde{Q})=\tilde{P}\bullet_{f}\tilde{Q}+\tfrac12[\tilde{P},\tilde{Q}]_{f}$. For the complex bilinear product, the only associative one, the subscripts are dropped: $\bullet$ is the **symmetrised product** and $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$ is the **commutator**. The two halves themselves are the subject of *Decomposition of the Biquaternion Complex Products*; here they are used only as the two ways in which a subspace can be an algebra.
+so that $f(\tilde{P},\tilde{Q})=\tilde{P}\bullet_{f}\tilde{Q}+\tfrac12[\tilde{P},\tilde{Q}]_{f}$. For the complex bilinear product, the only associative one, the subscripts are dropped: $\bullet$ is the **symmetrised product** and $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$ is the **commutator**. The two halves themselves are the subject of *Scalar / Vector decomposition of the Biquaternion Complex Products*; here they are used only as the two ways in which a subspace can be an algebra.
 
 The criterion for each is the classical one. A subspace $U$ is a **Jordan algebra** for the symmetrisation $\bullet_{f}$ when $\tilde{P}\bullet_{f}\tilde{Q}$ lies in $U$ for all $\tilde{P},\tilde{Q}\in U$ and the Jordan identity holds on $U$; because $\mathbb{B}$ is associative, the symmetrisation of the complex bilinear product inherits the identity, so for that product closure is the only test, while for the three non-associative products the identity must be checked as well. A subspace $U$ is a **Lie algebra** for the bracket $[\cdot,\cdot]_{f}$ when the bracket lies in $U$ and the Jacobi identity holds on $U$; the commutator of an associative algebra always satisfies Jacobi, so closure decides the Lie case for the complex bilinear product, while for the other three products Jacobi must be tested, and on $\mathbb{B}$ it fails.
 
@@ -139,7 +139,7 @@ the bracket of two real quaternions being twice the real cross product of their 
 $$
 [\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}]_{\natural*}=[\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}],
 $$
-so the quaternion subspace is a Lie algebra for the complex bilinear product and for the quaternionic sesquilinear product. The quaternionic bilinear and complex sesquilinear brackets stay inside — their values are pure vectors — but **fail the Jacobi identity**, at the triple $(e_0,e_1,e_2)$, where the cyclic sum of *Biquaternion Lie Algebras* is $-4e_3$ for the quaternionic bilinear bracket and $+4e_3$ for the complex sesquilinear one. The quaternion subspace is thus, with the centre, one of the two subspaces that are at once closed under the product, a Jordan algebra and a Lie algebra; of the four products the complex bilinear one carries both structures, and the quaternionic sesquilinear one the Lie structure alone.
+so the quaternion subspace is a Lie algebra for the complex bilinear product and for the quaternionic sesquilinear product. The quaternionic bilinear and complex sesquilinear brackets stay inside — their values are pure vectors — but **fail the Jacobi identity**, at the triple $(e_0,e_1,e_2)$, where the cyclic sum of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* is $-4e_3$ for the quaternionic bilinear bracket and $+4e_3$ for the complex sesquilinear one. The quaternion subspace is thus, with the centre, one of the two subspaces that are at once closed under the product, a Jordan algebra and a Lie algebra; of the four products the complex bilinear one carries both structures, and the quaternionic sesquilinear one the Lie structure alone.
 
 ## The Anti-Quaternion Subspace
 
@@ -194,7 +194,7 @@ This is the **Jordan product**, and
 $$
 (\mathbb{M}_{+},\bullet)\cong H_{2}(\mathbb{C})=J(\mathbb{B})
 $$
-is the Hermitian Jordan algebra of degree two, with two orthogonal idempotents and Peirce dimensions $1+2+1$ (*Biquaternion Jordan Algebras*). The two quaternionic symmetrisations also stay inside but are central,
+is the Hermitian Jordan algebra of degree two, with two orthogonal idempotents and Peirce dimensions $1+2+1$ (*The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The two quaternionic symmetrisations also stay inside but are central,
 $$
 (a_0e_0+i\mathbf{p})\bullet_{\natural}(b_0e_0+i\mathbf{r})=(a_0e_0+i\mathbf{p})\bullet_{\natural*}(b_0e_0+i\mathbf{r})=\bigl(a_0b_0-(\mathbf{p},\mathbf{r})\bigr)e_0,
 $$
@@ -247,6 +247,14 @@ $$
 $$
 with the witness $[ie_0,e_1]_{\natural}=2ie_1\notin\mathbb{M}_{-}$. The anti-Hermitian subspace is therefore a **Lie algebra for exactly the two products** whose brackets reproduce the commutator up to sign, and a **Jordan algebra for none**.
 
+## The Two Splits and the Two Readings
+
+The six subspaces of this article are the homes of the parts of the four products under the **plain** exchange of the two arguments. The two parts of a bilinear product are read there directly, the antisymmetric parts of the two bilinear products spanning the vector subspace and the symmetric part of the quaternionic one collapsing to the centre; and the two parts of the plain sesquilinear product are the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$.
+
+The **exchange by the coefficientwise conjugation**, $f^{c}(\tilde{P},\tilde{Q})=\overline{f(\tilde{Q},\tilde{P})}$, keeps the class of the two sesquilinear products, and its two parts sit in two other subspaces of the same list. For $\tilde{P}\tilde{Q}^{*}$ they are the scalar part and the vector part of the value, so they lie in the **centre** $\mathbb{C}_{\mathbb{B}}$ and in the **vector subspace** $\mathrm{Vect}(\mathbb{B})$ — the two subspaces that carry the parts of the quaternionic bilinear product under the plain exchange. For $\tilde{P}^{\natural}\tilde{Q}^{*}$ the skew half is the cross product $\mathbf{P}\times\overline{\mathbf{Q}}$ of the two vectors, so it lies in the **vector subspace**, while the conjugate-symmetric half carries the form $K(\tilde{P},\tilde{Q})=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$ in its scalar part and is not central, so it lies in no subspace of the six.
+
+So three of the passages of the adapted reading land in the list — the centre and the vector subspace for the plain sesquilinear product, the vector subspace again for the quaternionic one — against the Hermitian and the anti-Hermitian subspace, where the plain reading of the same two products lands. The two readings are of one pair of products each and neither is the other; the twelve names of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* belong to the **adapted** reading and not to the plain one tabulated here, and the plain reading's own four halves are the operations of *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator* (*Scalar / Vector decomposition of the Biquaternion Complex Products*, §*The Other Exchange, and the Class It Keeps*).
+
 ## Summary
 
 **The four products** carried by the underlying $\mathbb{C}$-vector space of $\mathbb{B}$ take the same set of values on each of the six distinguished subspaces, because the two conjugations $\natural$ and $*$ preserve every subspace of the list; the common span is the subspace itself for the centre and the quaternion subspace, the whole algebra for the vector subspace, the quaternion subspace for the anti-quaternion subspace, and $\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{B})$ for the two Hermitian subspaces. The four products differ only in the structure they leave on those values. The product keeps a subspace inside itself for exactly two of the six, the centre and the quaternion subspace, both for all four products.
@@ -276,9 +284,9 @@ with the witness $[ie_0,e_1]_{\natural}=2ie_1\notin\mathbb{M}_{-}$. The anti-Her
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
 - *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the coordinate blocks, the intersections and the sums of the six
 - *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the definition of the four products and their scalar–vector forms
-- *Decomposition of the Biquaternion Complex Products* (`articles_maths/decomposition-of-the-biquaternion-complex-products.md`), for the symmetric and antisymmetric halves of each of the four
+- *Scalar / Vector decomposition of the Biquaternion Complex Products* (`articles_maths/scalar-over-vector-decomposition-of-the-biquaternion-complex-products.md`), for the symmetric and antisymmetric halves of each of the four
 - *Relations Between the Four Biquaternion Products* (`articles_maths/relations-between-the-four-biquaternion-products.md`), for the identities that link the four products
-- *Biquaternion Jordan Algebras* (`articles_maths/biquaternion-jordan-algebras.md`), for the Jordan algebra of the whole algebra, the Jordan identity, the trace form and the Peirce decomposition
-- *Biquaternion Lie Algebras* (`articles_maths/biquaternion-lie-algebras.md`), for the commutator of the whole algebra, the derived subalgebra and the adjoint maps
+- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the Jordan algebra of the whole algebra, the Jordan identity, the trace form and the Peirce decomposition
+- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the commutator of the whole algebra, the derived subalgebra and the adjoint maps
 - *The Six Subspaces and the Structure* (`articles_maths/the-six-subspaces-and-the-structure.md`), for the idempotents, which lie in the Hermitian subspace alone
 - *The Six Subspaces and the Elements* (`articles_maths/the-six-subspaces-and-the-elements.md`), for which elements of each of the six are units, for the square-zero elements of the vector subspace and for the zero divisors of each of the six

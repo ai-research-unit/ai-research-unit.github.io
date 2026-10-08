@@ -159,5 +159,5 @@ The pin group of the biquaternion bilinear form is $\mathrm{Pin}=\{\tilde A\in\m
 - *The Biquaternion Unit Group as a Topological Group* (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the ambient group and its topology
 - *The Quaternion Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-quaternion-bilinear-form-on-the-biquaternion-algebra.md`), for the form and its orthogonal group
 - *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* (`articles_maths/the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.md`), for the general theory
-- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/biquaternion-clifford-structure.md`), for the grade dictionary that separates the quaternion vector subspace from the geometric vectors
+- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/the-clifford-structure-of-the-biquaternion-algebra.md`), for the grade dictionary that separates the quaternion vector subspace from the geometric vectors
 - *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* (`articles_maths/versors-rotors-and-the-sandwich-action-with-signed-inner-conjugation.md`), for the general versor and sandwich theory that the versor section specialises

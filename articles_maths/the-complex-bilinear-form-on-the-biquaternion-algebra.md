@@ -49,7 +49,7 @@ $$
 
 *Proof.* Substituting $\tilde P=\tilde Q$ gives the first display, and the polarisation identity is the standard recovery of a symmetric bilinear form from its diagonal over a field of characteristic different from two (*Quadratic Forms and Polarisation*, §*The Polar Form*).
 
-**Remark (the diagonal is not a norm).** The diagonal takes both signs, $\langle e_0,e_0\rangle=1$ against $\langle e_1,e_1\rangle=-1$, so the form is indefinite and its diagonal is not a norm; the length it can supply comes from a symmetry of the form and not from the diagonal, by the argument of *Four Forms but One Topology on the Biquaternion Algebra*. The same warning separates the two bilinear forms: the diagonal of the complex bilinear form is $\sum_\mu\varepsilon_\mu Q_\mu^2$, the diagonal of the quaternion bilinear form is the norm $\sum_\mu Q_\mu^2$.
+**Remark (the diagonal is not a norm).** The diagonal takes both signs, $\langle e_0,e_0\rangle=1$ against $\langle e_1,e_1\rangle=-1$, so the form is indefinite and its diagonal is not a norm; the length it can supply comes from a symmetry of the form and not from the diagonal, by the argument of *Biquaternion Forms and Algebraic Norms*, §*Distances Read from the Forms*. The same warning separates the two bilinear forms: the diagonal of the complex bilinear form is $\sum_\mu\varepsilon_\mu Q_\mu^2$, the diagonal of the quaternion bilinear form is the norm $\sum_\mu Q_\mu^2$.
 
 ## The Gram Matrix and the Realification
 
@@ -150,7 +150,7 @@ $$
 
 **Remark (the level set is not a group).** Multiplicativity fails: with $\tilde Q(t)=\cosh t\,e_0+\sinh t\,e_1$ one has $\langle\tilde Q(t),\tilde Q(t)\rangle=1$ while $\tilde Q(t)^2=e_0+\sinh 2t\,e_1$, of diagonal value $1-\sinh^2 2t$, which differs from $1$ for $t\neq0$. The level set is therefore not closed under the product and is not a group. This separates it from the level set of the quaternion bilinear form, which is the norm-one group $G_1$ of *Biquaternion Norm and Invertibility*.
 
-**Remark (the level set is a complex quadric).** Over $\mathbb{C}$ all non-degenerate quadratic forms of rank $4$ are equivalent, so the affine quadric $\mathcal{L}$ is the standard complex quadric of real dimension $6$, the complex analogue of the hyperboloid of a real form of signature $(1,3)$. Its place among the four level sets of the algebra is the table of *Introduction to Topology on the Biquaternions*, §*The Four Forms Compared*.
+**Remark (the level set is a complex quadric).** Over $\mathbb{C}$ all non-degenerate quadratic forms of rank $4$ are equivalent, so the affine quadric $\mathcal{L}$ is the standard complex quadric of real dimension $6$, the complex analogue of the hyperboloid of a real form of signature $(1,3)$. Its place among the four level sets of the algebra is the table of *Biquaternion Forms and Algebraic Norms*, §*The Geometry: Null Sets, Level Sets and Isometry Groups*.
 
 ## The Isometry Group
 

@@ -5,9 +5,9 @@
 
 The biquaternion algebra carries integral structures, and the groups of units of those structures are the finite groups attached to the algebra. The real slice $\mathbb{H}_{\mathbb{B}}\cong\mathbb{H}$ contains the classical quaternion orders – the Lipschitz order and the Hurwitz order – whose groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four. The unit sphere of the real slice has for finite subgroups the cyclic groups, the binary dihedral groups and the three binary polyhedral groups of orders $24$, $48$ and $120$, and those groups draw the figures of the theory: the regular $24$-cell with the Hurwitz units as its vertices, and the McKay correspondence. The complex order, the integral biquaternions, behaves differently: its group of units is infinite, generated along a nilpotent direction, so the finite unit groups are the real ones.
 
-This article is the integral and finite-group entry of the Topology group. The lattice-theoretic treatment of the quaternion orders – rank, index, covolume, duality, base change – is *Lattices and the Quaternion Lattice*; the order theory of the quaternion algebra over $\mathbb{Q}$, with maximality and the arithmetic of the norm, is *Division Algebras*; the Clifford lift of the finite reflection groups and the McKay correspondence are *Reflection Groups and Clifford Algebras with Signed Inner Conjugation* and *Root Systems and Classification*. Those results are cited, not re-derived, and the present article owns their biquaternion statement: the orders inside $\mathbb{B}$, their finite unit groups as abstract groups, the figures those groups determine in the real slice, and the infinite unit group of the complex order. The quotient $Sp(1)/\{\pm e_0\}\cong SO(3)$, the rotor and the rotation $\rho_v(\tilde R)=-v\tilde Rv^{-1}$ are *Biquaternion Rotations and Lorentz Transformations*, cited.
+This article is the integral and finite-group entry of the Topology group. The lattice-theoretic treatment of the quaternion orders – rank, index, covolume, duality, base change – is *Lattices and the Quaternion Lattice*; the order theory of the quaternion algebra over $\mathbb{Q}$, with maximality and the arithmetic of the order, is *Division Algebras*; the Clifford lift of the finite reflection groups and the McKay correspondence are *Reflection Groups and Clifford Algebras with Signed Inner Conjugation* and *Root Systems and Classification*. Those results are cited, not re-derived, and the present article owns their biquaternion statement: the orders inside $\mathbb{B}$, their finite unit groups as abstract groups, the figures those groups determine in the real slice, and the infinite unit group of the complex order. The quotient $Sp(1)/\{\pm e_0\}\cong SO(3)$, the rotor and the rotation $\rho_v(\tilde R)=-v\tilde Rv^{-1}$ are *Biquaternion Rotations and Lorentz Transformations*, cited.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, central scalar imaginary $i$, products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$, so that $e_1e_2e_3=-e_0$. The quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_0,e_1,e_2,e_3\}$ is the real slice (*Introduction to the Six Subspaces*). The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$, and on the real slice it is the positive definite form $\sum_\mu q_\mu^2$.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, central scalar imaginary $i$, products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$, so that $e_1e_2e_3=-e_0$. The quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_0,e_1,e_2,e_3\}$ is the real slice (*Introduction to the Six Subspaces*). The unit criterion is invertibility inside the order; on the real slice it is read from the product of an element with its quaternion conjugate, as below.
 
 ---
 
@@ -41,7 +41,7 @@ $$
 (\mathcal{L}')^{\times}=\mathcal{L}^{\times}\cup\{\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)\}\cong 2T .
 $$
 
-**Proof.** On real quaternion coordinates the norm is $\langle\tilde q,\tilde q\rangle_{\natural}=\sum_\mu q_\mu^2\geq0$, an integer for $\tilde q$ in either order; the inverse is $\tilde q^{-1}=\tilde q^*/\langle\tilde q,\tilde q\rangle_{\natural}$ with $\tilde q^*$ the quaternion conjugate, and $\tilde q^*$ lies in the order whenever $\tilde q$ does, so $\tilde q$ is a unit exactly when $\langle\tilde q,\tilde q\rangle_{\natural}=1$. The norm-one elements with integer coordinates are the eight signed units $\pm e_\mu$, and with half-integer coordinates they are those together with the sixteen elements $\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)$, of norm one. The resulting groups are closed under multiplication, have the stated orders, and are the quaternion group and the binary tetrahedral group respectively.
+**Proof.** On real quaternion coordinates the product of $\tilde q$ with its quaternion conjugate $\tilde q^*$ is $\tilde q\tilde q^*=\sum_\mu q_\mu^2\geq0$, an integer for $\tilde q$ in either order; the inverse is $\tilde q^{-1}=\tilde q^{*}/(\tilde q\tilde q^{*})$, and $\tilde q^{*}$ lies in the order whenever $\tilde q$ does, so $\tilde q$ is a unit exactly when $\tilde q\tilde q^{*}=1$. The elements with integer coordinates satisfying that condition are the eight signed units $\pm e_\mu$, and with half-integer coordinates they are those together with the sixteen elements $\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)$. The resulting groups are closed under multiplication, have the stated orders, and are the quaternion group and the binary tetrahedral group respectively.
 
 **Remark (the two indices).** The lattices have index $2$, but the unit groups have index $24/8=3$: the Lipschitz units are a proper subgroup of index three in the Hurwitz units, so the two notions of index do not agree.
 
@@ -53,13 +53,13 @@ The Lipschitz unit group is a $2$-group and the Hurwitz unit group is not, and o
 $$
 Q=\tfrac12(e_0-e_1-e_2+e_3).
 $$
-This is a Hurwitz unit, being one of the sixteen half-integral norm-one elements of $(\mathcal{L}')^{\times}\setminus\mathcal{L}^{\times}$ listed above. Its square is the negative of its conjugate,
+This is a Hurwitz unit, being one of the sixteen half-integral units of $(\mathcal{L}')^{\times}\setminus\mathcal{L}^{\times}$ listed above. Its square is the negative of its conjugate,
 $$
 Q^2=-Q^*,
 $$
 and therefore
 $$
-Q^3=Q\,Q^2=-QQ^*=-\langle Q,Q\rangle_{\natural}e_0=-e_0,\qquad Q^6=e_0 ,
+Q^3=Q\,Q^2=-QQ^*=-e_0,\qquad Q^6=e_0 ,
 $$
 so $Q$ has order six and generates a cyclic subgroup $\langle Q\rangle\cong C_6$ of the unit group.
 
@@ -67,7 +67,7 @@ so $Q$ has order six and generates a cyclic subgroup $\langle Q\rangle\cong C_6$
 $$
 Q=\tfrac12(s_0e_0+s_1e_1+s_2e_2+s_3e_3),\qquad s_\mu=\pm1,
 $$
-the real part is $\tfrac12s_0$ and the vector part has norm $\tfrac34$, so $Q^2=-Q^*$ when $s_0=+1$, which gives $Q^3=-e_0$ and order six, while $Q^2=+Q^*$ when $s_0=-1$, which gives $Q^3=e_0$ and order three. There are eight units of each kind, and the element orders of the two orders of units are as follows.
+the real part is $\tfrac12s_0$, so $Q^2=-Q^*$ when $s_0=+1$, which gives $Q^3=-e_0$ and order six, while $Q^2=+Q^*$ when $s_0=-1$, which gives $Q^3=e_0$ and order three. There are eight units of each kind, and the element orders of the two orders of units are as follows.
 
 | Unit group | Order $1$ | Order $2$ | Order $3$ | Order $4$ | Order $6$ |
 |---|---|---|---|---|---|
@@ -137,7 +137,7 @@ They form an order in $\mathbb{B}$ over $\mathbb{Z}[i]$, and the larger $\Lambda
 $$
 (e_0+n)^k=e_0+kn .
 $$
-Each of these elements has norm $\langle e_0+kn,e_0+kn\rangle_{\natural}=1+k^2+(ik)^2=1$, since the coefficients of $e_0+kn$ are $Q_0=1$, $Q_1=k$, $Q_2=ik$, $Q_3=0$; a norm-one element has inverse its conjugate and so is a unit. Hence $\Lambda^{\times}$ contains the infinite family $\{e_0+kn:k\in\mathbb{Z}\}$.
+Each of these elements satisfies $(e_0+kn)(e_0+kn)^{\natural}=(1+k^2+(ik)^2)e_0=e_0$, since the coefficients of $e_0+kn$ are $Q_0=1$, $Q_1=k$, $Q_2=ik$, $Q_3=0$; an element whose product with its conjugate is $e_0$ has inverse its conjugate and so is a unit. Hence $\Lambda^{\times}$ contains the infinite family $\{e_0+kn:k\in\mathbb{Z}\}$.
 
 **Remark.** The finite unit groups are therefore those of the *real* order, not of the complex one. The presence of nilpotent directions in the complex order is the same phenomenon as the presence of zero divisors in the algebra at large: $\mathbb{B}\cong M_2(\mathbb{C})$ is not a division algebra, and its integral order inherits unipotent units.
 
@@ -147,7 +147,7 @@ The quaternion orders inside the biquaternion algebra are the Lipschitz order $\
 
 The unit sphere $Sp(1)=S^3$ has for finite subgroups the twofold preimages of the finite rotation groups of the plane and the three Platonic figures: the cyclic groups, the binary dihedral groups and the binary polyhedral groups $2T$, $2O$, $2I$ of orders twenty-four, forty-eight and one hundred twenty. The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^4$, whose symmetry group is the Weyl group $F_4$ of order $1152$, containing the hyperoctahedral $B_4$ of order $384$; both are strictly larger than the unit group $2T$. The units act on the real slice by the rotations $\rho_v(\tilde R)=-v\tilde Rv^{-1}$, of determinant $+1$, and the twenty-four units give twelve distinct rotations generating a group of order $24$ with $2T/\{\pm e_0\}\cong A_4$. The five families of finite subgroups are the five families of simply laced Dynkin diagrams, the McKay correspondence.
 
-The integral biquaternions, with coefficients in the Gaussian integers, form an order in $\mathbb{B}$ whose group of units is infinite: the nilpotent element $e_1+ie_2$ generates the unipotent family $e_0+k(e_1+ie_2)$ of norm one. The finite unit groups of the theory are thus the groups of the real quaternion orders.
+The integral biquaternions, with coefficients in the Gaussian integers, form an order in $\mathbb{B}$ whose group of units is infinite: the nilpotent element $e_1+ie_2$ generates the unipotent family $e_0+k(e_1+ie_2)$ of units. The finite unit groups of the theory are thus the groups of the real quaternion orders.
 
 ## Summary of Notation
 
@@ -170,7 +170,7 @@ The integral biquaternions, with coefficients in the Gaussian integers, form an 
 | $\tilde A,\tilde D,\tilde E_{6,7,8}$ | Simply laced Dynkin types of the five families; the McKay correspondence |
 | $\Lambda=\mathcal{L}\otimes_{\mathbb{Z}}\mathbb{Z}[i]$ | Integral biquaternions; infinite group of units |
 | $n=e_1+ie_2$, $n^2=0$ | Nilpotent generator of the unipotent family |
-| $e_0+kn$, $N=1$ | Unipotent family of norm-one units, $k\in\mathbb{Z}$ |
+| $e_0+kn$ | Unipotent family of units, $k\in\mathbb{Z}$ |
 
 ## Further Reading
 
@@ -179,4 +179,4 @@ The integral biquaternions, with coefficients in the Gaussian integers, form an 
 - H. S. M. Coxeter, *Regular Polytopes* (Dover, 3rd ed. 1973), for the $24$-cell, its symmetry group and the regular polytopes of four-dimensional space.
 - Harold S. M. Coxeter and William O. J. Moser, *Generators and Relations for Discrete Groups* (Springer, 4th ed. 1980), for the finite rotation groups and their binary preimages.
 - John McKay, *Graphs, singularities and finite groups* (Proceedings of Symposia in Pure Mathematics 37, 1980), for the correspondence between the finite subgroups of $SU(2)$ and the simply laced root systems.
-- Marie-France Vignéras, *Arithmétique des algèbres de quaternions* (Springer Lecture Notes in Mathematics 800, 1980), for the order theory of the quaternion algebra, maximality and the arithmetic of the norm.
+- Marie-France Vignéras, *Arithmétique des algèbres de quaternions* (Springer Lecture Notes in Mathematics 800, 1980), for the order theory of the quaternion algebra, maximality and the arithmetic of the order.
