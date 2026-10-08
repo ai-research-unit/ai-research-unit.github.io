@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Modular Structure of a Hermitian Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-modular-structure-of-a-hermitian-algebra"><strong>The Modular Structure of a Hermitian Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hermitian algebra carries an involution and a form, and the algebraic theory of that layer is in Part I. This article is its topological companion: it owns the completion-level operator theory, where the involution, the adjoint and the two-sided operators are read as operators on a Hilbert space.</p>
+<p>Three things happen at the completion that cannot happen on the algebra alone. The involution is a bounded adjoint operation on the algebra but only a closable antilinear operator on the completion, and the operator recording the difference is the modular operator. The sandwich is bounded for the form and for the completion at once, and the comparison of its two adjoints is again the modular operator. And the intertwiners of the left representation form the commutant, on which the modular conjugation turns the adjoint into the involution of the algebra.</p>
+<p>The material below was moved here from the Part I articles, whose algebraic statements remain there: <em>Hermitian Adjoints on a Hermitian Algebra</em>, <em>The Adjoint of the Left and the Right Multiplication</em>, <em>The Adjoint of the Sandwich on a Hermitian Algebra</em>, <em>The Two-Sided Operators on a Hermitian Algebra</em>, <em>The Adjoint of the Left Multiplication on a Hermitian Algebra</em> and <em>Adjoints of the Intertwiners of a Hermitian Algebra</em>. The adjoint of an operator under a Hermitian form is <em>The Adjoint under a Hermitian Form</em>, the polar decomposition of an operator of the form is <em>The Polar Decomposition of an Operator of the Form</em>, and the adjoint on a module is <em>The Hermitian Adjoint on a Hermitian Module</em>; none of those is re-derived here. The conventions are those of <em>Hermitian Algebras</em>: the algebra is $A$ with involution $\dagger$ and form $\langle\cdot,\cdot\rangle$, the completion is $H$ with cyclic vector $\xi=\iota(1)$, and $\jmath$ is the modular conjugation.</p>
+<h2 id="the-involution-on-the-completion">The Involution on the Completion</h2>
+<p><strong>Proposition (the involution is an isometry exactly for a tracial form).</strong> The involution is isometric for the form, $\langle x^{\dagger},y^{\dagger}\rangle = \langle y,x\rangle$, but it is bounded on the completion exactly when the form is tracial, $\langle xy,z\rangle = \langle y,xz\rangle$-symmetric; otherwise it is closable and unbounded.</p>
+<p><strong>Proof.</strong> $\langle x^{\dagger},y^{\dagger}\rangle = \langle y^{\dagger\dagger},x^{\dagger\dagger}\rangle$ by the adjoint axiom with the two sides exchanged, giving the isometry; the boundedness fails when the standard form has $\Delta\neq\mathrm{id}$, since the involution on $H$ is then the unbounded antilinear operator $S$.</p>
+<h3 id="a-non-tracial-example">A Non-Tracial Example</h3>
+<p>For the Hermitian algebra of the group von Neumann algebra of a non-abelian infinite group with a non-tracial vector state, the involution is closable but unbounded on the completion, and its polar decomposition has a nontrivial modular operator: the involution is still the adjoint on the algebra and is no longer a bounded operator on the completion.</p>
+<h2 id="the-modular-conjugation-and-the-exchange">The Modular Conjugation and the Exchange</h2>
+<p><strong>Theorem (the exchange).</strong> Let $\jmath$ be the modular conjugation of the completion. Then</p>
+<p>$$
+\jmath\,\bar L_x\,\jmath = \bar R_{x^{\dagger}} , \qquad \jmath\,\bar R_x\,\jmath = \bar L_{x^{\dagger}} ,
+$$</p>
+<p>and consequently $\jmath\bar L_x^{*}\jmath = \bar R_x$: the modular conjugation turns the adjoint of a left multiplication into the right multiplication by the same element.</p>
+<p><strong>Proof.</strong> The modular conjugation satisfies $\jmath\mathcal{M}\jmath = \mathcal{M}^{c}$ and reverses products, by <em>The Modular Operator and Tomita-Takesaki Theory</em>; on the left multiplications this gives $\jmath\bar L_x\jmath = \bar R_{x^{\dagger}}$ as in <em>The Left and the Right Regular Representation</em>; applying the involution gives the second identity, and combining with the adjoint formula gives the third.</p>
+<p><strong>Corollary (adjunction is the exchange of side).</strong> For every $x$ the operator $\jmath\bar L_x^{*}\jmath$ is $\bar R_x$; so the Hermitian adjoint followed by the modular conjugation is the passage from the left representation to the right representation, and the two operations together generate the symmetry between an algebra and its commutant.</p>
+<p><strong>Proof.</strong> Substitute $\bar L_x^{*} = \bar L_{x^{\dagger}}$ into the theorem.</p>
+<p><strong>Remark (three operations, one symmetry).</strong> The involution reverses products; the Hermitian adjoint reverses the arrow; the modular conjugation exchanges the algebra with its commutant. On the left multiplications the three compose into the single symmetry between the left and the right regular representations, and this is why the modular conjugation is the natural home of the adjoint operation in a standard form.</p>
+<h2 id="the-modular-operator">The Modular Operator</h2>
+<p><strong>Proposition (the sandwich commutes with the modular conjugation).</strong> For every $x$ the sandwich is invariant under the modular conjugation of the standard form,</p>
+<p>$$
+\jmath\,\bar\Theta_x\,\jmath = \bar\Theta_x .
+$$</p>
+<p>So the two-sided operator is unchanged by the modular conjugation, which exchanges its two factors: $\jmath\bar L_x\jmath = \bar R_{x^{\dagger}}$ and $\jmath\bar R_{x^{\dagger}}\jmath = \bar L_x$.</p>
+<p><strong>Proof.</strong> Compose the two exchange identities established above.</p>
+<p><strong>Corollary (the sandwich is an inner automorphism exactly for invertible parameters).</strong> A sandwich $\Theta_x$ with $x$ invertible is the inner automorphism $\mathrm{Ad}_x$ of the algebra, and it preserves the form exactly when $x$ is unitary, in which case $x^{-1} = x^{\dagger}$; the correspondence $x\mapsto\Theta_x$ is a homomorphism of the unitary group onto the group of inner automorphisms of the form-preserving kind.</p>
+<p><strong>Proof.</strong> Multiplicativity is associativity of the product; preservation of the form is the unitarity condition; the inverse of a unitary element is its involution.</p>
+<p><strong>Proposition (the modular flow).</strong> The modular automorphism group $\sigma_t(a) = \Delta^{it}a\Delta^{-it}$ is implemented by the powers of the modular operator, and the modular conjugation inverts it, $\jmath\Delta^{it}\jmath = \Delta^{-it}$. The flow is generally <strong>outer</strong>: a sandwich realises an automorphism of the algebra only through an element of the algebra, and $\Delta^{it}$ is not such an element unless the algebra contains it.</p>
+<p><strong>Proof.</strong> The inversion is the modular conjugation theorem of <em>The Modular Operator and Tomita-Takesaki Theory</em>; the outerness is that $\Delta^{it}$ is defined through the modular operator and not through an element of the algebra.</p>
+<p><strong>Remark (where the two theories of operators meet).</strong> The sandwiches are the two-sided operators implemented by elements, that is, the inner automorphisms; the modular flow is implemented by the modular operator and is generally outer. The two theories meet at the invariance of the sandwich under the modular conjugation, which is the operator form of the exchange between the algebra and its commutant, and they separate at the outerness of the flow.</p>
+<h2 id="the-modular-conjugation">The Modular Conjugation</h2>
+<p><strong>Theorem (the invariance).</strong> Let $\jmath$ be the modular conjugation of the standard form. Then for every $x$</p>
+<p>$$
+\jmath\,\bar L_x\,\jmath = \bar R_{x^{\dagger}} , \qquad \jmath\,\bar R_{x^{\dagger}}\,\jmath = \bar L_x , \qquad \jmath\,\bar\Theta_x\,\jmath = \bar\Theta_x .
+$$</p>
+<p>So the modular conjugation exchanges the two factors of a two-sided operator and leaves the operator itself unchanged.</p>
+<p><strong>Proof.</strong> The first two identities are the exchange theorem established above; multiplying them gives $\jmath\bar L_x\bar R_{x^{\dagger}}\jmath = \bar R_{x^{\dagger}}\bar L_x = \bar\Theta_x$.</p>
+<p><strong>Corollary (the fixed algebra of the conjugation).</strong> The operators fixed by $T\mapsto\jmath T\jmath$ form the commutant of the pair, and the two-sided operators lie in it: so $\Theta_x$ belongs to the commutant of the algebra generated by the modular conjugation and the conjugation-invariant elements.</p>
+<p><strong>Proof.</strong> The fixed set of an involution is a subalgebra; the sandwiches lie in it by the theorem.</p>
+<p><strong>Remark (why the invariance is structural).</strong> The invariance is the operator statement that a two-sided object depends on an element and its involution only through the pair, and it is the reason the modular conjugation is the natural symmetry of the theory of two-sided operators: the sandwiches are exactly the operators whose left and right parts are exchanged by the conjugation without changing the operator.</p>
+<h2 id="the-standard-form-and-the-self-duality">The Standard Form and the Self-Duality</h2>
+<p><strong>Definition.</strong> The <strong>standard form</strong> of the algebra is the quadruple $(\mathcal{M}, H, \jmath, P)$ where $\mathcal{M}$ is the von Neumann algebra generated by the left multiplications, $\jmath$ the modular conjugation, and</p>
+<p>$$
+P = \overline{\{\Theta_x\xi : x\in\mathcal{M}\}} = \overline{\mathcal{M}_{+}\xi}
+$$</p>
+<p>the closure of the image of the positive cone under the cyclic vector.</p>
+<p><strong>Theorem (self-duality).</strong> The cone $P$ is <strong>self-dual</strong>:</p>
+<p>$$
+P = P^{\natural} := \{u\in H : [u,v]\geq0 \text{ for every } v\in P\} ,
+$$</p>
+<p>the modular conjugation fixes $P$ pointwise in the sense $\jmath P = P$, and $\Theta_xP\subseteq P$ for every $x\in\mathcal{M}$.</p>
+<p><strong>Proof.</strong> The self-duality is the cone theorem of the modular theory: $P^{\natural}\subseteq P$ because a vector in the dual cone is a limit of positive elements applied to $\xi$, and $P\subseteq P^{\natural}$ by the positivity of the sandwiches; the invariance $\jmath P = P$ follows from the matrix-valued version of $\jmath\Theta_x\jmath = \Theta_x$, which is $\jmath x\jmath = x^{*}$ acting on the cone; and the invariance of the cone under the sandwiches is the stabilisation of the positive cone under inner conjugation.</p>
+<p><strong>Proposition (two-sided operators preserve the cone).</strong> Every two-sided operator maps $P$ into $P$, and every operator preserving $P$ and commuting with the modular conjugation is a limit of two-sided operators.</p>
+<p><strong>Proof.</strong> The first statement is the last identity of the theorem; the second is the identification of the cone-preserving operators with the positive sandwiches.</p>
+<p><strong>Remark (three equivalent structures).</strong> In the standard form the algebra, the commutant and the self-dual cone are three aspects of one structure: the left multiplications generate the algebra, the modular conjugation exchanges it with the commutant, and the cone encodes the positivity that the modular theory needs to replace the missing Cauchy–Schwarz inequality. The two-sided operators are the maps that respect all three, which is why they are the natural morphisms of the standard form.</p>
+<h2 id="the-tomita-operator">The Tomita Operator</h2>
+<p><strong>Definition.</strong> The <strong>Tomita operator</strong> of the Hermitian algebra is the antilinear map</p>
+<p>$$
+S : A\xi\longrightarrow A\xi , \qquad S(x\xi) = x^{\dagger}\xi ,
+$$</p>
+<p>with domain the dense subspace $A\xi$; its closure, when needed, is written $\bar S$.</p>
+<p><strong>Proposition (elementary properties).</strong> $S$ is antilinear, $S^{2} = \mathrm{id}$ on its domain, $S$ is isometric exactly when the form is tracial, and $S$ satisfies</p>
+<p>$$
+L_x^{*} = S\,R_x\,S \qquad \text{and} \qquad S\,L_x\,S = R_{x^{\dagger}} .
+$$</p>
+<p><strong>Proof.</strong> Antilinearity is that of the involution; $S^{2}(x\xi) = S(x^{\dagger}\xi) = x\xi$; the identities are computed on $A\xi$: $SR_xS(y\xi) = SR_x(y^{\dagger}\xi) = S(y^{\dagger}x\xi) = (y^{\dagger}x)^{\dagger}\xi = x^{\dagger}y\xi = L_{x^{\dagger}}(y\xi)$, which is $L_x^{*}$ by the theorem, and $SL_xS(y\xi) = S(xy^{\dagger}\xi) = (xy^{\dagger})^{\dagger}\xi = yx^{\dagger}\xi = R_{x^{\dagger}}(y\xi)$.</p>
+<p><strong>Corollary (the adjoint is a conjugation of the other side).</strong> The adjoint of the left multiplication by $x$ is the right multiplication by $x$ conjugated by the Tomita operator, and the Tomita operator exchanges the two sides.</p>
+<p><strong>Proof.</strong> The first identity of the proposition.</p>
+<p><strong>Remark (why the adjoint carries the modular operator).</strong> The identity $L_x^{*} = SR_xS$ shows that the adjoint of a one-sided operator is obtained by conjugating the <em>other</em> one-sided operator with $S$, an operator that is not bounded unless the form is tracial. So the adjoint of the left multiplication, read through the cyclic vector, is exactly the involution, and read on the completion it is the modular operator in disguise; the two readings are reconciled by the polar decomposition of the next section.</p>
+<h2 id="the-polar-decomposition">The Polar Decomposition</h2>
+<p><strong>Theorem (Tomita–Takesaki).</strong> The closure of $S$ has a polar decomposition</p>
+<p>$$
+\bar S = J\,\Delta^{1/2} ,
+$$</p>
+<p>where $J$ is an antiunitary involution, $J^{2} = \mathrm{id}$, and $\Delta = \bar S^{*}\bar S$ is a positive self-adjoint operator, generally unbounded; equivalently $\bar S = J\Delta^{1/2}$, $\bar S^{*} = J\Delta^{-1/2}$ and $\Delta = \bar S^{*}\bar S$.</p>
+<p><strong>Proof.</strong> The operator $\bar S$ is closed and densely defined, so it has a polar decomposition $\bar S = U|\bar S|$, by the polar decomposition of <em>The Polar Decomposition of an Operator of the Form</em> read for the closed operator $S$, with $|\bar S| = (\bar S^{*}\bar S)^{1/2} = \Delta^{1/2}$ and $U$ a partial isometry with kernel $\ker\bar S$ and range $\overline{\mathrm{ran}\,\bar S}$; the involutivity $S^{2} = 1$ forces $\ker\bar S = \{0\}$, because $\bar Sy = 0$ with $0\in\mathrm{dom}\,\bar S$ gives $y = \bar S^{2}y = \bar S0 = 0$; hence $\overline{\mathrm{ran}\,|\bar S|} = (\ker|\bar S|)^{\perp} = H$ and $U$ is an antiunitary operator with $U^{2} = \mathrm{id}$, written $J$.</p>
+<p><strong>Proposition (the identities carried by the decomposition).</strong> With $S = J\Delta^{1/2}$ one has</p>
+<p>$$
+\Delta = \bar S^{*}\bar S , \qquad J\Delta J = \Delta^{-1} , \qquad J\,\Delta^{it}\,J = \Delta^{-it} ,
+$$</p>
+<p>and the modular group $t\mapsto\Delta^{it}$ is a one-parameter group of unitaries.</p>
+<p><strong>Proof.</strong> The first identity is the definition of $|\bar S|$; from $\bar S^{2} = 1$ and $\bar S = J\Delta^{1/2}$ one gets $\mathrm{id} = J\Delta^{1/2}J\Delta^{1/2}$, whence $J\Delta^{1/2}J = \Delta^{-1/2}$ and $J\Delta J = \Delta^{-1}$; the third identity follows by functional calculus.</p>
+<p><strong>Corollary (the adjoint of the left multiplication recovered).</strong> The adjoint of the left multiplication satisfies</p>
+<p>$$
+\bar L_x^{*} = \bar L_{x^{\dagger}} = S\,\bar R_x\,S = J\Delta^{1/2}\,\bar R_x\,J\Delta^{1/2} , \qquad \jmath\,\bar L_x\,\jmath = \bar R_{x^{\dagger}} ,
+$$</p>
+<p>the first identity being the conjugation by the Tomita operator and the second its bounded version, valid without the modular operator.</p>
+<p><strong>Proof.</strong> Substituting $S = J\Delta^{1/2}$ into $S\bar R_xS = \bar L_{x^{\dagger}}$ gives the displayed product; the second identity is the exchange theorem established above, and it needs no domain condition because $\jmath$ is antiunitary and the right multiplication is bounded.</p>
+<p><strong>Remark (the deviation from a tracial form).</strong> The form is tracial exactly when $\Delta = \mathrm{id}$, in which case $S = J$ is a bounded antiunitary involution and the adjoint of the left multiplication is bounded on $A$; the modular operator is therefore the quantitative description of the failure of the involution to be a bounded adjoint operation, and it is obtained from the adjoint of the left multiplication and nothing else.</p>
+<h2 id="self-adjointness-and-unitarity">Self-Adjointness and Unitarity</h2>
+<p>The general criteria for an operator of a Hermitian form are <em>The Adjoint under a Hermitian Form</em>, §<em>Self-Adjoint, Normal and Unitary</em>; the following is their specialisation to the left multiplications.</p>
+<p><strong>Theorem (the criteria).</strong> For $x\in A$:</p>
+<ol>
+<li>$\bar L_x$ is self-adjoint exactly when $x = x^{\dagger}$;</li>
+<li>$\bar L_x$ is normal exactly when $xx^{\dagger} = x^{\dagger}x$;</li>
+<li>$\bar L_x$ is unitary exactly when $x^{\dagger}x = xx^{\dagger} = 1$, that is when $x$ is a unitary element of the algebra;</li>
+<li>$\bar L_x$ is positive exactly when $x$ lies in the positive cone of <em>Self-Adjoint Elements and the Positive Cone</em>.</li>
+</ol>
+<p><strong>Proof.</strong> Self-adjointness is $\bar L_x = \bar L_{x^{\dagger}}$ with the left representation faithful; normality is $\bar L_x\bar L_x^{*} = \bar L_{xx^{\dagger}}$ against $\bar L_x^{*}\bar L_x = \bar L_{x^{\dagger}x}$; unitarity adds the two equations of the normal case with the value $\mathrm{id}$; positivity is $\langle L_xy,y\rangle = \langle xy,y\rangle\geq0$ for all $y$, which is the definition of the positive cone.</p>
+<p><strong>Corollary (unitary left multiplications form a group).</strong> The unitary elements of $A$ form a group and the map $x\mapsto\bar L_x$ is a homomorphism of that group into the unitary group of $H$, with inverse $x\mapsto x^{\dagger}$.</p>
+<p><strong>Proof.</strong> $(xy)^{\dagger}(xy) = y^{\dagger}x^{\dagger}xy = 1$ for unitary $x,y$; multiplicativity of the left representation.</p>
+<p><strong>Proposition (the modular flow on the left multiplications).</strong> The modular group acts by</p>
+<p>$$
+\Delta^{it}\,\bar L_x\,\Delta^{-it} = \bar L_{\sigma_t(x)} , \qquad \sigma_t(x) = \Delta^{it}x\Delta^{-it} ,
+$$</p>
+<p>so the modular automorphism of the algebra is the conjugation of the left multiplication by the modular operator.</p>
+<p><strong>Proof.</strong> The modular group is implemented by unitaries of the standard form; the conjugation of a left multiplication is the left multiplication by the conjugated element, by <em>The Modular Operator and Tomita-Takesaki Theory</em>.</p>
+<p><strong>Remark (what the adjoint alone cannot see).</strong> The adjoint of the left multiplication sees the involution, hence the real form, and it sees the modular operator through $S$; it does not see the <em>boundedness</em> of the involution, which is a property of the form and is decided by whether $\Delta = \mathrm{id}$. The unbounded aspects of the modular operator, its domain and its spectral theory, are deferred with the modular operator itself to <em>The Modular Operator and Tomita-Takesaki Theory</em> and to the analysis of <em>Analysis on Linear Spaces</em> (Part III).</p>
+<h2 id="the-commutant-as-the-algebra-of-intertwiners">The Commutant as the Algebra of Intertwiners</h2>
+<p><strong>Definition.</strong> For a representation $\pi$ of $A$ on $H$ the <strong>commutant</strong> is</p>
+<p>$$
+\pi(A)' = \{\,T\in B(H) : T\pi(x) = \pi(x)T \text{ for every } x\,\} ,
+$$</p>
+<p>the set of intertwiners of the representation with itself.</p>
+<p><strong>Theorem (the commutant is a $\ast$-algebra of intertwiners).</strong> $\pi(A)'$ is a unital algebra closed in the weak operator topology and closed under adjunction; for the standard representation of a Hermitian algebra it is generated by the right multiplications, $\pi(A)' = \{\bar R_x : x\in A\}''$.</p>
+<p><strong>Proof.</strong> Closure under multiplication and adjunction is immediate from $T\pi(x) = \pi(x)T$ by taking adjoints as in <em>Adjoints of the Intertwiners of a Hermitian Algebra</em>; the weak operator closure is the von Neumann bicommutant theorem of <em>Von Neumann Algebras and the Hilbert Algebra Completeness</em>; the generation by the right multiplications is the double commutant statement of <em>The Left and the Right Regular Representation</em>.</p>
+<p><strong>Corollary (the adjoint is the involution seen from the commutant).</strong> On the commutant the adjoint operation is the operation that the involution induces on the algebra, so the commutant of a Hermitian algebra is a Hermitian algebra in its own right, and the map $x\mapsto\bar R_x$ is a $\ast$-anti-isomorphism of $A$ onto the commutant's dense part.</p>
+<p><strong>Proof.</strong> $\bar R_x^{*} = \bar R_{x^{\dagger}}$ by <em>The Adjoint of the Left and the Right Multiplication</em>, so the anti-isomorphism carries the involution to the adjoint.</p>
+<h2 id="the-polar-decomposition-and-the-standard-form">The Polar Decomposition and the Standard Form</h2>
+<p><strong>Theorem (the polar decomposition stays in the class).</strong> Let $T$ be a closed intertwiner. Then $T^{*}T$ is a positive self-adjoint intertwiner, $|T| = (T^{*}T)^{1/2}$ is an intertwiner, and the partial isometry $U$ of the polar decomposition $T = U|T|$ is an intertwiner; so the class of intertwiners is closed under the polar decomposition.</p>
+<p><strong>Proof.</strong> $T^{*}T$ commutes with the representation because $T$ and $T^{*}$ do, whence $|T|$ and hence $U = T|T|^{-1}$ on the orthogonal complement of the kernel commute with it too.</p>
+<p><strong>Theorem (the modular transpose and the standard form).</strong> Let $\jmath$ be the modular conjugation of the standard form. Then</p>
+<p>$$
+T\ \longmapsto\ T^{\flat} = \jmath\,T^{*}\jmath
+$$</p>
+<p>is an antilinear involution of the operator algebra that maps the commutant onto the algebra, $\{\jmath T^{*}\jmath : T\in\pi(A)'\} = \pi(A)$, and it satisfies $(ST)^{\flat} = T^{\flat}S^{\flat}$; so the modular conjugation implements the self-duality of the standard form and turns the adjoint of an intertwiner into the involution of the algebra.</p>
+<p><strong>Proof.</strong> $\jmath\pi(A)\jmath = \pi(A)'$ and $\jmath\pi(A)'\jmath = \pi(A)$ by <em>The Modular Operator and Tomita-Takesaki Theory</em>, whence the map takes the commutant onto the algebra; it is antilinear, involutive because $\jmath^{2} = \mathrm{id}$, and anti-multiplicative, $(ST)^{\flat} = T^{\flat}S^{\flat}$, because the adjoint reverses products; on the dense part $\jmath\bar R_x\jmath = \bar L_{x^{\dagger}}$, which is the involution of the algebra.</p>
+<p><strong>Corollary (self-adjoint intertwiners are the fixed points of the transpose).</strong> An intertwiner of the standard representation is self-adjoint exactly when $T^{\flat} = \jmath T\jmath$; the self-adjoint intertwiners are the real form of the commutant, and the positive intertwiners are the positive elements of the commutant, with the cone of <em>Self-Adjoint Elements and the Positive Cone</em>.</p>
+<p><strong>Proof.</strong> $T = T^{*}$ is equivalent to $T^{\flat} = \jmath T^{*}\jmath = \jmath T\jmath$; the real-form and positivity statements are the corresponding statements of the quotient algebra transported by the $\ast$-anti-isomorphism.</p>
+<p><strong>Remark (what the adjoint of an intertwiner says).</strong> The adjoint of an intertwiner is an intertwiner because the involution of the algebra is exactly the adjoint of the multiplications; the modular conjugation then turns this algebraic fact into the self-duality of the standard form: the algebra and its commutant are exchanged by $\jmath$, and the adjoint on one side is the involution on the other. There is one adjoint operation in the theory, and the intertwiners, the commutant and the algebra are three of its faces.</p>
+<h2 id="self-adjoint-intertwiners">Self-Adjoint Intertwiners</h2>
+<p><strong>Definition.</strong> An intertwiner is <strong>self-adjoint</strong> when $T = T^{*}$, <strong>positive</strong> when $T$ is self-adjoint and $\langle T u,u\rangle\geq0$ for every $u$, and <strong>unitary</strong> when $T^{*}T = TT^{*} = \mathrm{id}$.</p>
+<p><strong>Proposition (the spectral data of a self-adjoint intertwiner).</strong> A self-adjoint intertwiner is a self-adjoint operator on $H$, and its spectral projections, its positive and negative parts and its modulus are intertwiners; the unitary intertwiners form a group.</p>
+<p><strong>Proof.</strong> The functional calculus of a self-adjoint operator is implemented by strong limits of polynomials in the operator, and a strong limit of intertwiners is an intertwiner; the unitary statement is $x\mapsto\bar L_x$ on the unitary group, or the corresponding statement in the commutant.</p>
+<p><strong>Proposition (the commutant of the standard form is a Hermitian algebra).</strong> With the involution $T\mapsto T^{*}$ and the form $(S,T) = \langle S\xi,T\xi\rangle$ the commutant is a Hermitian algebra whose completion is $H$, and its left regular representation is the right regular representation of $A$; the intertwiners of the commutant are the algebra itself.</p>
+<p><strong>Proof.</strong> The form is positive definite because $\xi$ is separating for the commutant; the involution is the adjoint $T\mapsto T^{*}$, which on the right multiplications is $\bar R_x\mapsto\bar R_{x^{\dagger}}$; the double commutant theorem gives $\pi(A)'' = \pi(A)'{}'$, whence the last statement.</p>
+<h2 id="summary">Summary</h2>
+<p>The involution of a Hermitian algebra is a bounded adjoint operation on the algebra and a closable antilinear operator on the completion, bounded exactly when the form is tracial; its closure is the <strong>Tomita operator</strong> $S(x\xi)=x^{\dagger}\xi$, whose polar decomposition $\bar S=J\Delta^{1/2}$ produces the modular conjugation and the modular operator. The <strong>modular conjugation</strong> exchanges the two sides, $\jmath\bar L_x\jmath=\bar R_{x^{\dagger}}$, fixes every two-sided operator, $\jmath\bar\Theta_x\jmath=\bar\Theta_x$, and realises the standard form $(\mathcal{M},H,\jmath,P)$ with its self-dual cone $P=P^{\natural}$. The <strong>commutant</strong> of the left representation is the algebra of intertwiners, generated by the right multiplications, and the modular transpose $T\mapsto T^{\flat}=\jmath T^{*}\jmath$ carries it onto the algebra; the polar decomposition of a closed intertwiner stays inside the class. The algebraic counterparts of all of these — the adjoint axiom, the sandwich and its adjoint, the intertwiners and their adjoints, the self-adjoint and unitary elements — are in the Part I articles named in the introduction.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $\dagger$, $\langle\cdot,\cdot\rangle$</td>
+<td>Hermitian algebra with involution and form</td>
+</tr>
+<tr>
+<td>$H$, $\xi = \iota(1)$</td>
+<td>Completion and cyclic vector</td>
+</tr>
+<tr>
+<td>$\bar L_x$, $\bar R_x$</td>
+<td>Left and right multiplication extended to $H$</td>
+</tr>
+<tr>
+<td>$S(x\xi) = x^{\dagger}\xi$</td>
+<td>Tomita operator, the closure of the involution</td>
+</tr>
+<tr>
+<td>$\bar S = J\Delta^{1/2}$</td>
+<td>Polar decomposition of the Tomita operator</td>
+</tr>
+<tr>
+<td>$\Delta = \bar S^{*}\bar S$</td>
+<td>Modular operator, $J\Delta J = \Delta^{-1}$</td>
+</tr>
+<tr>
+<td>$\jmath$</td>
+<td>Modular conjugation, $\jmath\bar L_x\jmath = \bar R_{x^{\dagger}}$</td>
+</tr>
+<tr>
+<td>$\Delta^{it}$</td>
+<td>Modular flow, $\sigma_t = \mathrm{Ad}\,\Delta^{it}$</td>
+</tr>
+<tr>
+<td>$(\mathcal{M},H,\jmath,P)$</td>
+<td>Standard form with self-dual cone $P = P^{\natural}$</td>
+</tr>
+<tr>
+<td>$\mathcal{M}^{c}$</td>
+<td>Commutant of the left representation</td>
+</tr>
+<tr>
+<td>$T^{\flat} = \jmath T^{*}\jmath$</td>
+<td>Modular transpose of an intertwiner</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for Hilbert algebras, the involution and the standard form.</li>
+<li>Serban Stratila and László Zsidó, <em>Lectures on von Neumann Algebras</em> (Abacus Press, 1979), for the Tomita operator and the self-dual cone.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 2 (Academic Press, 1986), for the modular operator and the polar decomposition of a closed operator.</li>
+<li>Masamichi Takesaki, <em>Tomita's Theory of Modular Hilbert Algebras and its Applications</em>, Lecture Notes in Mathematics 128 (Springer, 1970), for the modular conjugation and the standard form.</li>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em>, vol. 1 (Springer, 1987), for the standard form and the modular group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

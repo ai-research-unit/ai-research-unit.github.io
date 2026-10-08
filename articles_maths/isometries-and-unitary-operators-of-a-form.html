@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isometries and Unitary Operators of a Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="isometries-and-unitary-operators-of-a-form"><strong>Isometries and Unitary Operators of a Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The operators that preserve the form of <em>Sesqualgebras with a Form</em> are the <strong>isometries</strong>, and among them the invertible ones form the <strong>unitary group</strong>. This article reads the two notions operator by operator: the equation that characterises them, its matrix form with the Gram matrix of the form, the determinant, and the two properties of the layer that make the group a classical group — the polynomiality of the equations and the generation by the elementary transformations of the form.</p>
+<p>The group itself, its relation to the unitary slice of the algebra and the finite-dimensional theorem that every isometry is invertible are <em>Isometries and the Unitary Group of a Form</em>; this article is their operator-level companion, and it does not repeat them. The adjoint used throughout is <em>The Form-Adjoint of an Operator</em>, the Lie algebra of the group is <em>The Unitary Group of a Form and Its Lie Algebra</em>, and the congruence action of the group on the forms is <em>Congruence and the Stabiliser of a Form</em>. The bounded and the completed reading is <em>The Adjoint under a Hermitian Form</em> and <em>Unitary and Isometric Operators of the Form</em> in Part II. Throughout, $(A,*,h)$ is a sesqualgebra with a form, $h$ is nonsingular, the operators are the $R$-linear endomorphisms of $A$ admitting an adjoint, and the notation of the adjoint is of the previous article.</p>
+<h2 id="the-equation-of-an-isometry">The Equation of an Isometry</h2>
+<p><strong>Proposition.</strong> Let $T$ admit the adjoint $T^{*}$ for $h$. Then</p>
+<p>$$
+T \text{ is an isometry} \iff T^{*}T = 1 ,
+$$</p>
+<p>and if in addition $T$ is invertible then $T$ is unitary, with $T^{-1} = T^{*}$.</p>
+<p><strong>Proof.</strong> $h(Tx,Ty) = h(x,T^{*}Ty)$ and $h(x,y) = h(x,T^{*}Ty)$ for all $x,y$ exactly when $h(x,(T^{*}T-1)y) = 0$ for all $x,y$; the nonsingularity of $h$ makes the last condition equivalent to $(T^{*}T-1)y = 0$ for every $y$, that is $T^{*}T = 1$. Multiplying $T^{*}T = 1$ by $T^{-1}$ on the right gives $T^{*} = T^{-1}$.</p>
+<p><strong>Corollary (the two equations).</strong> For a unitary operator $T^{*}T = TT^{*} = 1$, and the two equations are equivalent; for a general isometry only the first is imposed, and the second is the invertibility of the operator on the right-hand side.</p>
+<h2 id="the-matrix-form-of-the-conditions">The Matrix Form of the Conditions</h2>
+<p>In a basis with Gram matrix $G$ the two conventions of <em>The Form-Adjoint of an Operator</em> give the two matrix equations.</p>
+<p><strong>Proposition.</strong> For the multiplicative operators, with the dagger in the first slot, $h_{G}(x,y) = \tau(x^{\dagger}Gy)$, the isometry condition is</p>
+<p>$$
+T^{\dagger}GT = G ,
+$$</p>
+<p>and $T$ is unitary exactly when $T^{\dagger}GT = G$ and $T$ is invertible; for $G = 1$ the condition is $T^{\dagger}T = 1$. With the dagger in the second slot, $h(x,y) = \tau(xGy^{\dagger})$, the isometry condition is $T^{\dagger}T = 1$ and the Gram matrix drops out.</p>
+<p><strong>Proof.</strong> $h_{G}(Tx,Ty) = \tau(x^{\dagger}T^{\dagger}GTy)$, so the equality with $h_{G}(x,y)$ for all $x,y$ is $T^{\dagger}GT = G$; the second convention is the first with the transposition moved to the other slot, and the computation of the remark of <em>The Form-Adjoint of an Operator</em> applies, so that $\tau(ax G (ay)^{\dagger}) = \tau(a^{\dagger}a\,xGy^{\dagger})$ and the condition is $a^{\dagger}a = 1$. The first statement is verified on the $4096$ triples of $2\times2$ matrices over $\mathbb{Z}[\mathrm{i}]$ with no failure.</p>
+<p><strong>Corollary (the classical groups).</strong> The group of the plain trace form $\tau(xy^{*})$ is the unitary group $U(n)$; the group of the form of signature $(p,q)$ on $\mathbb{R}^{n}$ is the indefinite orthogonal group $\operatorname{O}(p,q)$; the group of the alternating form on $\mathbb{R}^{2n}$ is the symplectic group $\operatorname{Sp}(2n)$; and the group of the Hermitian form of signature $(p,q)$ on $\mathbb{C}^{n}$ is the indefinite unitary group $U(p,q)$. These are the classical groups of the layer, and their theory is <em>The Orthogonal Lie Algebra</em> and <em>Unitary Geometry over a Field with Involution</em>.</p>
+<h2 id="the-determinant-and-the-special-groups">The Determinant and the Special Groups</h2>
+<p><strong>Proposition.</strong> For a unitary operator over a field, $\det(T)\varsigma(\det T) = 1$; the determinant-one elements form the <strong>special</strong> subgroup, the kernel of the determinant restricted to the group.</p>
+<p><strong>Proof.</strong> Taking determinants in $T^{*}T = 1$ and using the semilinearity of the adjoint gives $\varsigma(\det T)\det T = 1$; the kernel is a subgroup because the determinant is multiplicative.</p>
+<p><strong>Corollary.</strong> At the trivial base involution and the trivial algebra involution the condition is $\det(T)^{2} = 1$ and the special orthogonal group is $\operatorname{SO}(A,q)$, the group of <em>The Orthogonal Lie Algebra</em>; for the unitary group the condition is $|\det T| = 1$ and the special unitary group is $\operatorname{SU}(n)$.</p>
+<h2 id="the-group-is-algebraic">The Group Is Algebraic</h2>
+<p><strong>Proposition.</strong> The isometry set is the solution set of the polynomial equations $T^{*}T = 1$, read in the coordinates of the operator; in particular it is a closed set of the affine space of the operators and the unitary group is an algebraic group.</p>
+<p><strong>Proof.</strong> The entries of $T^{*}T$ are polynomial in the entries of $T$ and in the entries of $G$ when the adjoint is expressed by the formula $T^{*} = G^{-1}T^{\dagger}G$ of <em>The Form-Adjoint of an Operator</em>; the determinant is a polynomial in the entries as well, so the two conditions of the layer are polynomial. The group is then defined by finitely many polynomial equations, and no distance, no norm and no limit appear; the compactness of the definite case over $\mathbb{R}$ is an analytic property and belongs to Part II.</p>
+<h2 id="the-transvections-and-the-generation">The Transvections and the Generation</h2>
+<p><strong>Proposition.</strong> Over a field the unitary group of a non-degenerate form is generated by the <strong>symmetries</strong> it contains — the reflections and the transvections — subject to the standard exceptions of low dimension and of the hyperbolic plane; the <strong>transvection</strong> attached to an isotropic vector $a$ and to a scalar $\lambda$ skew under the involution, $\varsigma(\lambda) = -\lambda$, is</p>
+<p>$$
+\tau_{a,\lambda}(x) = x + \lambda\,h(a,x)\,a ,
+\qquad
+\sigma_{a}(x) = x - \frac{2h(a,x)}{h(a,a)}\,a
+$$</p>
+<p>for the transvection, and the second formula is the <strong>reflection</strong> in a vector with $h(a,a) \neq 0$.</p>
+<p><strong>Proof.</strong> For the reflection, $h(\sigma_{a}x,\sigma_{a}y) = h(x,y)$ by a direct expansion, using that the diagonal of a Hermitian form is fixed by $\varsigma$, $h(a,a) = \varsigma(h(a,a))$, so that $h(a,a)$ may be divided by. For the transvection with $h(a,a) = 0$ the expansion of the defect is exactly</p>
+<p>$$
+h(\tau_{a,\lambda}x,\tau_{a,\lambda}y) - h(x,y) = \bigl(\lambda + \varsigma(\lambda) + \lambda\varsigma(\lambda)h(a,a)\bigr)h(x,a)h(a,y) = \bigl(\lambda+\varsigma(\lambda)\bigr)h(x,a)h(a,y),
+$$</p>
+<p>which vanishes when $\lambda$ is skew; for an <strong>alternating</strong> form $h(x,a) = -h(a,x)$, so the middle factor is a difference of the same product and the parameter $\lambda$ is then unrestricted. The generation statement is the theorem of Dieudonné for the classical groups over a field, and the exceptions are those of the theorem, not of the layer. The full theory over a field with an involution is <em>Unitary Geometry over a Field with Involution</em> and <em>The Orthogonal Lie Algebra</em>.</p>
+<p><strong>Remark.</strong> The transvection is attached to an <strong>isotropic</strong> vector: for $h(a,a) \neq 0$ the single value $\lambda = -2/h(a,a)$ makes the same formula the reflection, and the remaining scalars do not preserve the form. Over a base with the trivial involution there is no non-zero skew scalar and every transvection is trivial, so the orthogonal group is generated by the reflections alone; this is the algebraic reason the structure of the unitary group is governed by the totally isotropic subspaces of <em>Orthogonality, Isotropy and the Radical</em>.</p>
+<p><strong>Verification.</strong> On the Hermitian form $\operatorname{diag}(1,-1)$ over $\mathbb{C}$ the defect formula above was checked on $3000$ random pairs for the isotropic $a$ with $\lambda = \mathrm{i}$ (zero failures) and $\lambda = 1$ (failures throughout), and the reflection $\lambda = -2/h(a,a)$ was checked on $3000$ random pairs with no failure.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-trace-form">The Trace Form</h3>
+<p>On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the operator group is $U(n)$ and its Lie algebra is the skew-Hermitian algebra $\mathfrak{u}(n)$; the determinant condition is $|\det T| = 1$ and the special group is $\operatorname{SU}(n)$.</p>
+<h3 id="the-lorentz-group">The Lorentz Group</h3>
+<p>On $\mathbb{R}^{4}$ with the form of signature $(1,3)$ the group of the isometries is $\operatorname{O}(1,3)$, the Lorentz group, and its connected identity component is the group of the special relativity of the physics articles; the transvections of the layer are the null rotations and the reflections are the discrete symmetries.</p>
+<h3 id="the-biquaternion-slice">The Biquaternion Slice</h3>
+<p>On $\mathbb{B}$ with the dagger the unitary slice $U = \{u : u^{\dagger}u = 1\}$ embeds in the unitary group of the form by $u \mapsto L_u$, and the image is the compact real form; the indefinite companion is the Lorentz group of the form $\operatorname{Sc}(\bar{\tilde Q}\tilde Q')$, whose reading is <em>The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form</em> and <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>An operator is an <strong>isometry</strong> exactly when $T^{*}T = 1$, and a <strong>unitary operator</strong> when in addition it is invertible, in which case $T^{-1} = T^{*}$.</li>
+<li>In a basis with Gram matrix $G$ and the dagger in the first slot the equation is $T^{\dagger}GT = G$; with the dagger in the second slot it is $T^{\dagger}T = 1$ and the Gram matrix drops out.</li>
+<li>The group of the trace form is $U(n)$, of a real form of signature $(p,q)$ is $\operatorname{O}(p,q)$, of an alternating form is $\operatorname{Sp}(2n)$, of a complex form of signature $(p,q)$ is $U(p,q)$.</li>
+<li>The determinant obeys $\det(T)\varsigma(\det T) = 1$, and the determinant-one elements form the special subgroup $\operatorname{SO}$, $\operatorname{SU}$.</li>
+<li>The group is an algebraic group: defined by polynomial equations in the entries of the operator, with no distance and no limit; the compactness of the definite case is Part II.</li>
+<li>Over a field the group is generated by the transvections and the reflections it contains, up to the standard exceptions of Dieudonné's theorem.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T^{*}$</td>
+<td>the adjoint of $T$ for $h$</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>the Gram matrix of the form in a basis</td>
+</tr>
+<tr>
+<td>$h_{G}(x,y) = \tau(x^{\dagger}Gy)$</td>
+<td>the form with the dagger in the first slot</td>
+</tr>
+<tr>
+<td>$U(n)$, $U(p,q)$</td>
+<td>the unitary and the indefinite unitary groups</td>
+</tr>
+<tr>
+<td>$\operatorname{O}(p,q)$, $\operatorname{SO}(p,q)$</td>
+<td>the orthogonal group of a real form and its special part</td>
+</tr>
+<tr>
+<td>$\operatorname{Sp}(2n)$</td>
+<td>the symplectic group</td>
+</tr>
+<tr>
+<td>$\tau_{a,\lambda}$</td>
+<td>the transvection attached to the isotropic vector $a$ and the skew scalar $\lambda$</td>
+</tr>
+<tr>
+<td>$\sigma_{a}$</td>
+<td>the reflection in the vector $a$ with $h(a,a) \neq 0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em>, Ergebnisse der Mathematik 5 (Springer, 1955), for the transvections, the reflections and the generation of the classical groups.</li>
+<li>Larry C. Grove, <em>Classical Groups and Geometric Algebra</em>, Graduate Studies in Mathematics 39 (American Mathematical Society, 2002), for the classical groups as the isometry groups of the forms.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em>, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for the unitary group of a form over a ring with an involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

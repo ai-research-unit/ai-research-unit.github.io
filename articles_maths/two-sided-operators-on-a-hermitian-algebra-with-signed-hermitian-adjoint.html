@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="two-sided-operators-on-a-hermitian-algebra-with-signed-hermitian-adjoint"><strong>Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The family of two-sided operators of <em>Two-Sided Operators on a Clifford Algebra</em> is indexed by an automorphism on the left factor and an anti-automorphism on the right, $y\mapsto\theta(x)\,y\,c(x)$. The members with the inverse to the right are the inner conjugation $x\,y\,x^{-1}$ and the signed inner conjugation $\alpha(x)\,y\,x^{-1}$; the members with an intrinsic anti-involution to the right are the reversion and conjugation sandwiches; and the last member has the <strong>dagger</strong> to the right,</p>
+<p>$$
+y\ \longmapsto\ x\,y\,x^{\dagger},\qquad x^{\dagger}=\sigma\bigl(\alpha(x^{r})\bigr),
+$$</p>
+<p>the <strong>Hermitian sandwich</strong> of <em>The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint</em>. It is the one member that needs an involution $\sigma$ of the base ring, and the one member that is defined on the whole algebra rather than on the unit group.</p>
+<p>This article treats the member that combines the two inputs,</p>
+<p>$$
+y\ \longmapsto\ \alpha(x)\,y\,x^{\dagger},
+$$</p>
+<p>the <strong>signed Hermitian sandwich</strong>, written $\Theta^{\alpha}_x$ below. It is the Hermitian analogue of the signed inner conjugation of <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>: the left factor carries the grade involution, the right factor carries the coefficient involution, and the member inherits from the first the parity sign and from the second the semilinearity and the wider domain. The name <em>signed</em> is the one the corpus uses for the twist by the grade involution; the general twist by an arbitrary automorphism $\theta$ is the graded operator, and it is not used here.</p>
+<p>Two facts decide the theory, and both are the Hermitian translation of facts of the inverse member. The first is that the sign is a scalar on the homogeneous part, $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ with $\varepsilon_x=(-1)^{|x|}$, so on the even part of the algebra the signed and the unsigned Hermitian sandwich agree and on the odd part they differ by the global sign. The second is that the composition of two such operators with odd parameters is an <strong>ordinary</strong> Hermitian sandwich, because the product of two odd elements is even; the two signs cancel, exactly as they do for the inverse member, and the composite is again a Hermitian sandwich, not a new kind of operator.</p>
+<p>The Clifford algebra, its parity grading and the three intrinsic involutions $\alpha$, $r$ and $x^{\natural}=\alpha(x^{r})$ are from <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>. The dagger, the involution $\sigma$ of the base and the correction of the semilinearity claims are from <em>Hilbert Algebras</em>. The general two-sided family, its five members and the composition law are <em>Two-Sided Operators on a Clifford Algebra</em>; the four-operator family with its horizontal and vertical defects is <em>Mixed Inner Conjugation and Hermitian Adjoint</em>; the unsigned member is <em>The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint</em>; the unitary slice is <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>. Nothing owned by those entries is re-derived; what is proved here is what the sign changes.</p>
+<p><strong>Conventions.</strong> The base $A$ is a commutative ring with involution $\sigma$, the module $V$ is free of finite rank $n$ with a non-degenerate quadratic form $q$, and $\mathrm{Cl}(V,q)$ is its Clifford algebra. The dagger is $x^{\dagger}=\sigma(\alpha(x^{r}))$, $\sigma$-semilinear over $A$ and of order two. The Clifford norm is $N(x)=x x^{\natural}=x^{\natural} x$ where it is a scalar, $\Gamma(V,q)$ is the Clifford group, and $U=\{x:x^{\dagger}x=1\}$ is the unitary slice. The grade involution $\alpha$ multiplies a homogeneous element of degree $k$ by $\varepsilon_x=(-1)^{k}$.</p>
+<h2 id="the-operator-and-the-parity-sign">The Operator and the Parity Sign</h2>
+<p><strong>Definition.</strong> The <strong>signed Hermitian sandwich</strong> of an element $x\in\mathrm{Cl}(V,q)$ is the map</p>
+<p>$$
+\Theta^{\alpha}_x:\mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q),\qquad
+\Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{\dagger}.
+$$</p>
+<p>It is the two-sided operator of the family attached to the pair $\theta=\alpha$, $c=(\ )^{\dagger}$, and in terms of the one-sided operators it reads</p>
+<p>$$
+\Theta^{\alpha}_x=\Lambda^{\alpha}_x\circ R_{x^{\dagger}}=R_{x^{\dagger}}\circ\Lambda^{\alpha}_x,
+\qquad
+\Lambda^{\alpha}_x(y)=\alpha(x)\,y,\quad R_{x^{\dagger}}(y)=y\,x^{\dagger},
+$$</p>
+<p>the two composites agreeing by associativity.</p>
+<p><strong>Proposition (the domain).</strong> The operator is defined for <strong>every</strong> $x\in\mathrm{Cl}(V,q)$, invertible or not, because the dagger is defined on the whole algebra. It requires the base to carry the involution $\sigma$, which the reversion and conjugation sandwiches do not.</p>
+<p><em>Proof.</em> The definition uses no inverse and no division; the dagger of every element is an element of the algebra. The dependence on $\sigma$ is in the dagger itself, and with the trivial involution $\sigma=\mathrm{id}$ the signed Hermitian sandwich reduces to the conjugation sandwich.</p>
+<p><strong>Proposition (the parity sign).</strong> Let $x$ be homogeneous of degree $k$ and let $\varepsilon_x=(-1)^{k}$, so that $\alpha(x)=\varepsilon_x\,x$. Then</p>
+<p>$$
+\Theta^{\alpha}_x=\varepsilon_x\,\Theta_x,
+$$</p>
+<p>where $\Theta_x(y)=x\,y\,x^{\dagger}$ is the Hermitian sandwich. In particular $\Theta^{\alpha}_x=\Theta_x$ when $x$ is even and $\Theta^{\alpha}_x=-\Theta_x$ when $x$ is odd.</p>
+<p><em>Proof.</em> The grade involution is the scalar $\varepsilon_x$ on the degree-$k$ part, so $\alpha(x)=\varepsilon_x x$; substituting into the definition and using that the scalar is central gives $\Theta^{\alpha}_x(y)=\varepsilon_x\,x\,y\,x^{\dagger}$. The last sentence is the two cases $\varepsilon_x=\pm1$.</p>
+<p><strong>Proposition (the value at the unit).</strong> For homogeneous $x$ of degree $k$,</p>
+<p>$$
+\Theta^{\alpha}_x(1)=\alpha(x)\,x^{\dagger}=\varepsilon_x\,x\,x^{\dagger},
+$$</p>
+<p>the parity sign times the squared Hermitian norm of $x$. On the unitary slice the value is $\varepsilon_x$, so the signed operator separates the unit by parity exactly as the signed inner conjugation does.</p>
+<p><em>Proof.</em> The first identity is the definition at $y=1$; the second is the parity-sign proposition. On $U$ one has $x^{\dagger}=x^{-1}$, hence $x\,x^{\dagger}=1$ and the value is $\varepsilon_x$.</p>
+<p><strong>Proposition (linearity and the parameter rule).</strong> For every central $a\in A$ the operator is $A$-linear in its argument, $\Theta^{\alpha}_x(ay)=a\,\Theta^{\alpha}_x(y)$, and in its parameter it obeys</p>
+<p>$$
+\Theta^{\alpha}_{ax}=a\,\sigma(a)\,\Theta^{\alpha}_x .
+$$</p>
+<p>It is <strong>not</strong> $\sigma$-semilinear in the argument, and the correction of that claim for the unsigned member applies verbatim here.</p>
+<p><em>Proof.</em> The argument is linear because $\Theta^{\alpha}_x$ is a composite of a left and a right multiplication. For the parameter, $(ax)^{\dagger}=\sigma(a)x^{\dagger}$ by $\sigma$-semilinearity of the dagger and centrality of $a$, and $\alpha(ax)=a\,\alpha(x)$ since a scalar is even; assembling, $\Theta^{\alpha}_{ax}(y)=a\,\alpha(x)\,y\,\sigma(a)\,x^{\dagger}=a\,\sigma(a)\,\Theta^{\alpha}_x(y)$. The non-semilinearity in $y$ is the counterexample of <em>The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint</em>, unchanged because the extra factor $\alpha(x)$ is independent of $y$.</p>
+<p><strong>Remark.</strong> The two inputs are visible in the two rules. The dagger contributes the involution $\sigma$, hence the factor $\sigma(a)$ in the parameter; the grade involution contributes the parity sign $\varepsilon_x$, which is a scalar and therefore does not disturb the linearity. This is why the signed member is a legitimate member of a family whose general theory is linear: its extra structure is a scalar on each homogeneous component.</p>
+<h2 id="multiplicativity-and-the-composition-table">Multiplicativity and the Composition Table</h2>
+<p><strong>Proposition (multiplicativity).</strong> For all $x,z$,</p>
+<p>$$
+\Theta^{\alpha}_{xz}=\Theta^{\alpha}_x\circ\Theta^{\alpha}_z .
+$$</p>
+<p>Hence $x\mapsto\Theta^{\alpha}_x$ is a homomorphism from the multiplicative monoid of the algebra to the monoid of $A$-linear endomorphisms, with $\Theta^{\alpha}_1=\mathrm{id}$.</p>
+<p><em>Proof.</em> The dagger is an anti-automorphism, $(xz)^{\dagger}=\bar{z}x^{\dagger}$, and $\alpha$ is an automorphism, $\alpha(xz)=\alpha(x)\alpha(z)$; then $\Theta^{\alpha}_{xz}(y)=\alpha(x)\alpha(z)\,y\,\bar{z}x^{\dagger}=\Theta^{\alpha}_x(\Theta^{\alpha}_z(y))$.</p>
+<p><strong>Proposition (the cancellation of two odd signs).</strong> For homogeneous $x,z$,</p>
+<p>$$
+\Theta^{\alpha}_x\circ\Theta^{\alpha}_z=\varepsilon_x\varepsilon_z\;\Theta_{xz},
+$$</p>
+<p>so the composite is the <strong>ordinary</strong> Hermitian sandwich exactly when the two parameters have the <strong>same</strong> parity, and in particular it is ordinary whenever both are odd:</p>
+<p>$$
+x,z\ \text{odd}\ \Longrightarrow\ \Theta^{\alpha}_x\circ\Theta^{\alpha}_z=\Theta_{xz}.
+$$</p>
+<p><em>Proof.</em> Multiply the two parity-sign identities: $\Theta^{\alpha}_x\Theta^{\alpha}_z=\varepsilon_x\varepsilon_z\,\Theta_x\Theta_z=\varepsilon_x\varepsilon_z\,\Theta_{xz}$, using the multiplicativity of the unsigned member and the convention that the unsigned operator is attached to the product of the parameters. If $x$ and $z$ are both odd then $xz$ is even, so $\varepsilon_x\varepsilon_z=\varepsilon_{xz}=+1$ and the composite is $\Theta_{xz}=\Theta^{\alpha}_{xz}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$x$</th>
+<th>$z$</th>
+<th>$xz$</th>
+<th>composite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>even</td>
+<td>even</td>
+<td>even</td>
+<td>ordinary Hermitian sandwich, $\Theta_{xz}$</td>
+</tr>
+<tr>
+<td>even</td>
+<td>odd</td>
+<td>odd</td>
+<td>signed, $-\,\Theta_{xz}$</td>
+</tr>
+<tr>
+<td>odd</td>
+<td>even</td>
+<td>odd</td>
+<td>signed, $-\,\Theta_{xz}$</td>
+</tr>
+<tr>
+<td>odd</td>
+<td>odd</td>
+<td>even</td>
+<td>ordinary Hermitian sandwich, $\Theta_{xz}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Corollary (the square of an odd step is ordinary).</strong> If $x$ is odd then $x^{2}$ is even and</p>
+<p>$$
+\bigl(\Theta^{\alpha}_x\bigr)^{2}=\Theta^{\alpha}_{x^{2}}=\Theta_{x^{2}} .
+$$</p>
+<p><strong>Corollary (one odd operator generates the odd part).</strong> Fix an odd element $u$. Every odd element is $x=us$ with $s=u^{-1}x$ even, hence</p>
+<p>$$
+\Theta^{\alpha}_x=\Theta^{\alpha}_u\circ\Theta^{\alpha}_s .
+$$</p>
+<p>So the odd part of the family is generated by the single signed Hermitian sandwich $\Theta^{\alpha}_u$ together with the ordinary Hermitian sandwiches: the sign is one generator, not a second family.</p>
+<p><strong>Proof.</strong> The decomposition of an odd element as (odd) $\times$ (even) is the module statement $\mathrm{Cl}^1=\mathrm{Cl}^0u$ of the next article; substituting into the multiplicativity gives the identity.</p>
+<p><strong>Remark.</strong> This is the Hermitian form of the statement that one graded structure suffices. The composition law is the same for both right factors, because the dagger is an anti-automorphism exactly as the inverse is; and the cancellation is the same, because it is a consequence of the parity grading and of nothing else. What is different in the Hermitian case is that the intermediate operator $\Theta^{\alpha}_s$ with $s$ even is the unsigned Hermitian sandwich, so the family generated is a family of Hermitian sandwiches and not of inverse sandwiches.</p>
+<h2 id="the-kernel-and-the-slice">The Kernel and the Slice</h2>
+<p><strong>Proposition (the kernel).</strong> The signed Hermitian sandwich is the identity exactly on</p>
+<p>$$
+\ker\Theta^{\alpha}=\bigl\{\,x : \alpha(x)\,x^{\dagger}=1\ \text{ and }\ x^{\dagger}\in Z\bigl(\mathrm{Cl}(V,q)\bigr)\,\bigr\},
+$$</p>
+<p>a set of invertible elements. In particular the kernel contains the even central elements of the unitary slice, and on the slice it is $\ker\Theta^{\alpha}\cap U=F^{\times}\cap U$.</p>
+<p><em>Proof.</em> The equation $\Theta^{\alpha}_x=\mathrm{id}$ at $y=1$ reads $\alpha(x)x^{\dagger}=1$, so $x^{\dagger}$ is invertible with inverse $\alpha(x)$, and $x$ is invertible too. Substituting $\alpha(x)=(x^{\dagger})^{-1}$ into $\Theta^{\alpha}_x(y)=y$ gives $(x^{\dagger})^{-1}y\,x^{\dagger}=y$ for all $y$, that is $y\,x^{\dagger}=x^{\dagger}y$ for all $y$: the dagger of $x$ is central. Conversely a central dagger with $\alpha(x)x^{\dagger}=1$ gives the identity. On the slice the operator is the signed inner conjugation, whose kernel is the group $F^{\times}$ of scalars, by <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>.</p>
+<p><strong>Corollary (the double cover on the slice).</strong> Let the involution be trivial, $\sigma=\mathrm{id}$, so that the dagger is Clifford conjugation, $\Gamma_{\dagger}=\mathrm{Pin}(V,q)$, and $U\cap\Gamma=\{x\in\Gamma:N(x)=1\}$, the two coinciding for a definite form. Then</p>
+<p>$$
+\ker\Theta^{\alpha}\cap\mathrm{Pin}=\{\pm1\}.
+$$</p>
+<p><em>Proof.</em> On $U$ the operator is the signed inner conjugation, whose kernel is $F^{\times}$; intersected with $U$ this is $\{\lambda\in F^{\times}:\bar{\lambda}\lambda=1\}$, and for a scalar $\lambda$ one has $\bar\lambda=\lambda$, so $\lambda^{2}=1$ and, over a field of characteristic not two, $\lambda=\pm1$.</p>
+<p><strong>Remark (why the slice needs the signed form).</strong> The corollary is the double cover of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> read in the Hermitian language. The unsigned Hermitian sandwich has the same kernel as the inner conjugation, which in odd dimension is larger than $\{\pm1\}$ because the volume element is central; the signed member removes that central element and leaves the two elements that the covering group requires. On the slice the Hermitian theory therefore does not merely agree with the inverse theory, it reproduces its exact sequences.</p>
+<p><strong>Proposition (the slice reduction).</strong> For $x\in U$ the dagger is the inverse, so</p>
+<p>$$
+\Theta^{\alpha}_x=\alpha(x)\,(\ )\,x^{-1}=\mathrm{Ad}^{\alpha}_x,
+$$</p>
+<p>the signed inner conjugation; and the horizontal defect between the two right factors is the right multiplication by $x\,x^{\dagger}$,</p>
+<p>$$
+\Theta^{\alpha}_x=\mathrm{Ad}^{\alpha}_x\circ R_{xx^{\dagger}},
+$$</p>
+<p>which is trivial exactly on $U$.</p>
+<p><em>Proof.</em> On $U$ one has $x^{\dagger}=x^{-1}$ by definition, giving the first identity; the second is the horizontal defect of <em>Mixed Inner Conjugation and Hermitian Adjoint</em>, $\Phi^{\theta,\bar{\cdot}}_x=R_{xx^{\dagger}}\circ\Phi^{\theta,\mathrm{inv}}_x$, applied to $\theta=\alpha$.</p>
+<p><strong>Remark.</strong> The slice is the locus where the Hermitian operator and the inverse operator coincide, and it is a slice of the <em>parameter</em> and not of the algebra: off it the operator is still defined, but it is no longer an automorphism of the algebra and no longer a function of the inverse. This is the structural difference between the two families: the signed inner conjugation is defined only where the inverse is, and is an automorphism of the algebra there; the signed Hermitian sandwich is defined everywhere, and is an automorphism only where the dagger happens to be the inverse.</p>
+<h2 id="the-action-on-the-quadratic-space">The Action on the Quadratic Space</h2>
+<p><strong>Proposition.</strong> Let $x\in\Gamma(V,q)$ be homogeneous. On the vector space $V$ the operator acts as the scalar $\varepsilon_x\sigma(N(x))$ times a twisted conjugation,</p>
+<p>$$
+\Theta^{\alpha}_x\bigr|_{V}=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\cdot\chi(x),
+\qquad
+\chi(x)\in O(V,q),
+$$</p>
+<p>so it maps $V$ to itself and is an isometry of $q$ exactly when $\sigma(N(x))^{2}=1$, and otherwise a similarity of ratio $\sigma(N(x))^{2}$.</p>
+<p><em>Proof.</em> For $x\in\Gamma$ the Hermitian sandwich acts on $V$ as $\sigma(N(x))$ times a twisted conjugation $\chi(x)\in O(V,q)$, by <em>The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint</em>; the signed operator is $\varepsilon_x$ times it by the parity-sign proposition, and a global scalar $\lambda$ multiplies $q$ by $\lambda^{2}$.</p>
+<p><strong>Proposition (the vectors and the reflection).</strong> Let $u\in V$ with $q(u)\neq0$. Then $u$ is odd and $u^{\dagger}=-\sigma(u)$, so</p>
+<p>$$
+\Theta^{\alpha}_u(v)=u\,v\,\sigma(u),\qquad v\in V,
+$$</p>
+<p>and with the trivial involution this is $-q(u)$ times the reflection in $u^{\perp}$,</p>
+<p>$$
+\Theta^{\alpha}_u(v)=-q(u)\,\rho_u(v),\qquad
+\Theta_u(v)=q(u)\,\rho_u(v).
+$$</p>
+<p>On a vector of square $-1$ the signed Hermitian sandwich <strong>is</strong> the reflection, $\Theta^{\alpha}_u=\rho_u$, while the unsigned Hermitian sandwich is $-\rho_u$.</p>
+<p><em>Proof.</em> For $u\in V$ one has $u^{r}=u$ and $\alpha(u)=-u$, so $u^{\dagger}=\sigma(\alpha(u))=-\sigma(u)$; then $\Theta^{\alpha}_u(v)=(-u)v(-\sigma(u))=u\,v\,\sigma(u)$ and $\Theta_u(v)=-u\,v\,\sigma(u)$. With $\sigma=\mathrm{id}$ and the fundamental relation $uvu=2B(u,v)u-q(u)v$ one has $u\,v\,u=q(u)\bigl(2B(u,v)q(u)^{-1}u-v\bigr)=-q(u)\rho_u(v)$; for $q(u)=-1$ this is $\rho_u(v)$.</p>
+<p><strong>Corollary (reflections on the slice).</strong> A vector $u$ of square $-1$ lies in the unitary slice, and on it the signed Hermitian sandwich is the signed inner conjugation and the reflection at once,</p>
+<p>$$
+u\in U,\qquad \Theta^{\alpha}_u=\mathrm{Ad}^{\alpha}_u=\rho_u .
+$$</p>
+<p><em>Proof.</em> For $\sigma=\mathrm{id}$ and $u^{2}=q(u)=-1$ one has $u^{\dagger}u=(-u)u=-u^{2}=1$, so $u\in U$; the slice reduction then gives $\Theta^{\alpha}_u=\mathrm{Ad}^{\alpha}_u$, and the reflection proposition gives $\rho_u$.</p>
+<p><strong>Remark (no new isometries).</strong> The Hermitian family produces no isometry of $V$ beyond the orthogonal group: every isometry it yields is a twisted conjugation of a $\Gamma$-element up to a scalar, by the first proposition, and the signed form only changes the scalar by the sign $\varepsilon_x$. What the signed Hermitian sandwich adds is the wider domain, the coefficient involution, and the exact sign that turns the image of an odd element into the reflection rather than its negative.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-definite-three-dimensional-algebra">The Definite Three-Dimensional Algebra</h3>
+<p>Let $\mathrm{Cl}_{0,3}(\mathbb{R})$, so $e_j^{2}=-1$ and $\sigma=\mathrm{id}$, and let $u=e_1$. Then $u$ is odd, $\alpha(u)=-u$, $u^{\dagger}=-u$, and</p>
+<p>$$
+\Theta^{\alpha}_{e_1}(v)=e_1\,v\,e_1 .
+$$</p>
+<p>On the generators,</p>
+<p>$$
+\Theta^{\alpha}_{e_1}(e_1)=e_1^{3}=-e_1,\qquad
+\Theta^{\alpha}_{e_1}(e_2)=e_1e_2e_1=-e_1^{2}e_2=e_2,\qquad
+\Theta^{\alpha}_{e_1}(e_3)=e_3 ,
+$$</p>
+<p>which is the reflection in the plane orthogonal to $e_1$, that is $\rho_{e_1}$, matching $\Theta^{\alpha}_u=\rho_u$ at $q(u)=-1$. The unsigned member gives the negative on the same vectors.</p>
+<h3 id="an-even-element-agreement">An Even Element: Agreement</h3>
+<p>In the same algebra let $R=e_1e_2$, an even element. Then $\alpha(R)=R$ and $\Theta^{\alpha}_R=\Theta_R$. With $R^{\dagger}=R^{-1}=e_2e_1$ (since $R^{2}=-1$),</p>
+<p>$$
+\Theta^{\alpha}_R(v)=R\,v\,R^{-1},
+$$</p>
+<p>the rotation of the plane $\mathrm{span}(e_1,e_2)$ through $\pi$: it sends $e_1\mapsto-e_1$, $e_2\mapsto-e_2$ and fixes $e_3$. The two members of the family agree on the even part, and the rotation is carried by either.</p>
+<h3 id="two-odd-steps-cancel">Two Odd Steps Cancel</h3>
+<p>With $u=e_1$ and $w=e_2$, both odd, the composite is</p>
+<p>$$
+\Theta^{\alpha}_{e_1}\circ\Theta^{\alpha}_{e_2}=\Theta^{\alpha}_{e_1e_2}=\Theta_{e_1e_2},
+$$</p>
+<p>an ordinary Hermitian sandwich, and it sends $e_1\mapsto-e_1$, $e_2\mapsto-e_2$, $e_3\mapsto e_3$: the same half-turn read as the product of two signed Hermitian sandwiches. The two signs have cancelled, and the composite operator is an automorphism of the algebra because its parameter $e_1e_2$ is even.</p>
+<h3 id="the-biquaternion-sandwich">The Biquaternion Sandwich</h3>
+<p>Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the Hermitian dagger of the physics corpus, $\bar{\tilde{Q}}=\sigma(\alpha(\tilde Q^{r}))$, complex conjugation composed with the Clifford conjugation. The corpus sandwich $\tilde Q\mapsto \tilde Q\,x\,\bar{\tilde{Q}}$ is the Hermitian sandwich $\Theta_{\tilde Q}$, and the signed member is the parity-signed version, $\Theta^{\alpha}_{\tilde Q}=\varepsilon_{\tilde Q}\Theta_{\tilde Q}$. On the unitary slice, where $\bar{\tilde{Q}}=\tilde Q^{-1}$, the signed member is the signed inner conjugation and produces the Lorentz transformations of the biquaternion algebra; off the slice it is a similarity of the biquaternion norm. The dictionary is <em>Biquaternion Versors and the Orthogonal Group</em> in the physics corpus.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>signed Hermitian sandwich</strong> is the two-sided operator</p>
+<p>$$
+\Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{\dagger},\qquad x^{\dagger}=\sigma\bigl(\alpha(x^{r})\bigr),
+$$</p>
+<p>the member of the family whose left factor carries the grade involution and whose right factor is the dagger. It needs an involution $\sigma$ of the base, like the Hermitian sandwich, and it is defined for <strong>every</strong> element of the algebra, unlike the two inverse members. By the parity sign it is the scalar multiple $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ of the Hermitian sandwich for homogeneous $x$: the two agree on the even part and differ by $-1$ on the odd part. It is $A$-linear in its argument and obeys the parameter rule $\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x$; it is not $\sigma$-semilinear in the argument.</p>
+<p>It is multiplicative, $\Theta^{\alpha}_{xz}=\Theta^{\alpha}_x\circ\Theta^{\alpha}_z$, and the composite of two operators with odd parameters is the <strong>ordinary</strong> Hermitian sandwich, $\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta_{xz}$ for $x,z$ odd, because the product of two odd elements is even: the two signs cancel. The square of an odd step is ordinary, and the odd part of the family is generated by one odd operator together with the ordinary Hermitian sandwiches. The kernel consists of the invertible elements with central dagger satisfying $\alpha(x)x^{\dagger}=1$; on the unitary slice it is $F^{\times}\cap U$, which for the trivial involution is the two elements $\{\pm1\}$ — the double cover.</p>
+<p>On the Clifford group the operator acts on $V$ as $\varepsilon_x\sigma(N(x))$ times a twisted conjugation, hence as an isometry exactly when $\sigma(N(x))^{2}=1$ and otherwise as a similarity; on a vector $u$ it is $\Theta^{\alpha}_u(v)=u\,v\,\sigma(u)$, which is $-q(u)\rho_u(v)$, so on a vector of square $-1$ the signed Hermitian sandwich <strong>is</strong> the reflection $\rho_u$ where the unsigned one is $-\rho_u$. On the unitary slice $U$ the dagger is the inverse, the horizontal defect trivialises, and the operator is exactly the signed inner conjugation, $\Theta^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$; the slice is the locus on which the involutive, the Hermitian and the signed theories agree.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x^{\dagger}=\sigma(\alpha(x^{r}))$</td>
+<td>The dagger, needs an involution $\sigma$ of the base</td>
+</tr>
+<tr>
+<td>$\Theta_x(y)=x\,y\,x^{\dagger}$</td>
+<td>Hermitian sandwich, the unsigned member</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{\dagger}$</td>
+<td>Signed Hermitian sandwich, the subject</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_x=\varepsilon_x\Theta_x$, $\varepsilon_x=(-1)^{|x|}$</td>
+<td>Parity sign, for homogeneous $x$</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x$</td>
+<td>Parameter rule; the argument is $A$-linear</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_{xz}=\Theta^{\alpha}_x\Theta^{\alpha}_z$</td>
+<td>Multiplicativity</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta_{xz}$ ($x,z$ odd)</td>
+<td>Two odd signs cancel</td>
+</tr>
+<tr>
+<td>$\ker\Theta^{\alpha}=\{x:\alpha(x)x^{\dagger}=1,\ x^{\dagger}\ \text{central}\}$</td>
+<td>Kernel</td>
+</tr>
+<tr>
+<td>$\ker\Theta^{\alpha}\cap\mathrm{Pin}=\{\pm1\}$</td>
+<td>Double cover on the slice, $\sigma=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ on $U$</td>
+<td>Slice reduction, $U=\{x:x^{\dagger}x=1\}$</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_x|_V=\varepsilon_x\sigma(N(x))\chi(x)$</td>
+<td>Action on $V$, $x\in\Gamma$, $\chi(x)\in O(V,q)$</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_u(v)=u\,v\,\sigma(u)=-q(u)\rho_u(v)$</td>
+<td>Vectors; $\Theta^{\alpha}_u=\rho_u$ for $q(u)=-1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the involution of the base, the dagger and the twisted adjoint.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the two involutions of a Clifford algebra, the grade involution and the two-sided operators.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the parity of an odd element, the reflection and the sandwich formulas.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, Colloquium Publications 37 (American Mathematical Society, 1956), for involutions, Hermitian forms and the unitary group of a ring with involution.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the Hermitian structure on a Clifford module and the adjoint of the Clifford action.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

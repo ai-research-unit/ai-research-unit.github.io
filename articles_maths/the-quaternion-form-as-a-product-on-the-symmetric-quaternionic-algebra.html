@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Quaternion Form as a Product on the Symmetric Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra"><strong>The Quaternion Form as a Product on the Symmetric Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The symmetric quaternionic multiplication is a form placed on the central line: the value of
+$\tilde P\star\tilde Q$ is the central element $B(\tilde P,\tilde Q)e_0$, and the whole content of the
+operation is the coefficient $B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$
+(<em>Introduction to the Symmetric Quaternionic Algebra of Biquaternions</em>). This article reads the coefficient
+as the <strong>form that the block carries</strong>: it identifies it, computes its Gram matrix and its rank, its
+realification and its signature, its invariance under the product and the failure of that invariance, its
+restriction to the six distinguished subspaces, and its relation to the Hermitian form $H$ of the algebra.</p>
+<p>The form $B$ is the quaternion form named in the catalogue <em>The 12 Algebraic Structures over the Biquaternion
+$\mathbb{C}$ Space</em>, and it is the general quaternionic bilinear one of the four pairings of <em>The Four
+Pairings of the Biquaternion Algebra</em>; its diagonal is the norm of <em>Biquaternion
+Norm and Invertibility</em>, and on the six subspaces its restrictions and their signatures are
+<em>The Six Subspaces under the General Quaternionic Algebra of Biquaternions</em>, whose table is quoted here and
+not recomputed. The article therefore owns the reading of the form <strong>as the form of the product</strong> — the Gram
+data, the invariance question and the coincidence with $H$ — and cites the norm article and the six-subspace
+article for the form itself. The Hermitian form $H$ is <em>Biquaternion Norm and Invertibility</em>; the invariance
+question for a symmetric product is <em>Jordan Algebras</em>; the matrix reading of the same form is
+<em>The Symmetric Quaternionic Algebra in the Matrix Representations</em>.</p>
+<p><strong>Conventions.</strong> The operation is $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$ with
+$B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$; the norm is $N(\tilde Q)=B(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$;
+the Hermitian form is $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$; the real basis
+of the algebra is $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ over $\mathbb{R}$; the six subspaces are
+$\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$,
+$\mathbb{M}_+$ and $\mathbb{M}_-$.</p>
+<h2 id="the-form-read-as-a-product">The Form Read as a Product</h2>
+<p><strong>Definition.</strong> The <strong>quaternion form</strong> of the block is the symmetric $\mathbb{C}$-bilinear form</p>
+<p>$$
+B(\tilde P,\tilde Q) = P_0Q_0 + (\mathbf P,\mathbf Q), \qquad
+(\mathbf P,\mathbf Q) = \sum_{k=1}^{3}P_kQ_k ,
+$$</p>
+<p>and it is the coefficient of the product, $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$.</p>
+<p><strong>Proposition (the form determines the product and is determined by it).</strong> The product $\star$ and the form
+$B$ determine one another: $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$, and
+$B(\tilde P,\tilde Q)=\operatorname{Sc}(\tilde P\star\tilde Q)$. Consequently the structural data of the
+block and of the form are the same data.</p>
+<p><em>Proof.</em> The two displays are the definition of the product and the reading of the scalar part of a central
+value. $\square$</p>
+<p><strong>Remark (the form is the scalar part of the parent product and the norm is its diagonal).</strong> The coefficient
+is the scalar part of the general quaternionic product, $B(\tilde P,\tilde Q)=\operatorname{Sc}(\tilde P^{\natural}\tilde Q)$,
+and its diagonal is the multiplicative norm, $N(\tilde Q)=B(\tilde Q,\tilde Q)=\operatorname{Sc}(\tilde Q^{\natural}\tilde Q)=\tilde Q\tilde Q^{\natural}$.
+The form is therefore not arbitrary on $\mathbb{B}$: it is the trace-form pairing of the quaternion factor,
+and its multiplicativity property belongs to $N$ and not to $B$. The distinction is the one the block repeats:
+$N$ is multiplicative and takes values whose reality depends on the elements, while $B$ is only bilinear.</p>
+<h2 id="the-gram-matrix-and-the-rank">The Gram Matrix and the Rank</h2>
+<p><strong>Proposition (the Gram matrix and the rank).</strong> In the basis $e_0,e_1,e_2,e_3$ the Gram matrix of $B$ is the
+unit matrix,</p>
+<p>$$
+G = I_4, \qquad B(e_\mu,e_\nu)=\delta_{\mu\nu},
+$$</p>
+<p>so $B$ is non-degenerate of rank $4$ over $\mathbb{C}$, and its radical — the set of elements paired to zero
+with the whole space — is $\{0\}$. The form is the standard symmetric form of $\mathbb{C}^4$ in the basis,
+and its index over $\mathbb{R}$ is computed from the realification.</p>
+<p><em>Proof.</em> $B(e_\mu,e_\nu)=\delta_{\mu\nu}$ is the basis table of <em>Introduction to the Symmetric Quaternionic
+Algebra of Biquaternions</em>, and an invertible Gram matrix is the non-degeneracy of the form. The radical is
+computed in <em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em>. $\square$</p>
+<p><strong>Remark (rank four and the centre of the algebra).</strong> The form has rank equal to the dimension of the whole
+space, and its image under the product is the central line, of complex dimension one. The rank of the form is
+therefore larger than the dimension of the line on which the product takes its values, and the two numbers
+must not be conflated: the form pairs all four complex directions, and the product collapses them onto one.</p>
+<h2 id="the-realification-and-the-signature">The Realification and the Signature</h2>
+<p><strong>Proposition (the realified form).</strong> In the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ the
+realification of $B$ is the diagonal form</p>
+<p>$$
+\operatorname{diag}(I_4,-I_4),
+$$</p>
+<p>of signature $(4,4)$ and index $4$; in the interleaved basis $e_0,ie_0,e_1,ie_1,e_2,ie_2,e_3,ie_3$ it is
+$\operatorname{diag}(1,-1,1,-1,1,-1,1,-1)$. The restriction to the quaternion subspace $\mathbb{H}_{\mathbb{B}}$
+is positive definite of signature $(4,0)$, and the restriction to the anti-quaternion subspace
+$i\mathbb{H}_{\mathbb{B}}$ is negative definite of signature $(0,4)$.</p>
+<p><em>Proof.</em> The form is $\mathbb{C}$-bilinear and $i$ is central, so the pairing of a real direction with its
+imaginary companion is purely imaginary and drops from the realification, while $B(ie_\mu,ie_\nu)=-B(e_\mu,e_\nu)$;
+the two blocks are $+I_4$ and $-I_4$ and the interleaved reading is the same matrix permuted. On
+$\mathbb{H}_{\mathbb{B}}$ the form is $\sum_\mu q_\mu^2$ with $q_\mu$ real, positive definite; on
+$i\mathbb{H}_{\mathbb{B}}$ it is the negative. The computation is the one of <em>The Six Subspaces under the
+General Quaternionic Algebra of Biquaternions</em>. $\square$</p>
+<p><strong>Remark (a complex form, read twice over the reals).</strong> The signature $(4,4)$ is that of a complex bilinear
+form of rank four on a complex space of dimension four, read as a real form on $\mathbb{R}^8$; the index $4$ is
+half the real dimension. The two definite rows are the two halves the realification separates, and their
+signatures sum to $(4,4)$. The reader is warned that the complex form is non-degenerate and has no
+signature in the real sense until the realification is taken; this is the reason the complex rank and the real
+signature are both recorded here.</p>
+<h2 id="the-trace-form-and-the-absence-of-a-second-form">The Trace Form and the Absence of a Second Form</h2>
+<p><strong>Proposition (the trace form).</strong> The form is the trace pairing of the parent product,</p>
+<p>$$
+B(\tilde P,\tilde Q) = \operatorname{Sc}\bigl(\tilde P^{\natural}\tilde Q\bigr)
+= \tfrac12\operatorname{Tr}\bigl(\tilde P^{\natural}\tilde Q\bigr),
+$$</p>
+<p>and the trace of the left multiplication is the scalar part of the argument,</p>
+<p>$$
+\operatorname{Tr}\bigl(L^{\star}_{\tilde A}\bigr) = B(\tilde A,e_0) = A_0 .
+$$</p>
+<p><em>Proof.</em> The first display is the remark of the first section together with the corpus identity
+$\operatorname{Tr}(\tilde P\tilde Q)=2\operatorname{Sc}(\tilde P\tilde Q)$ of <em>Biquaternion Norm and
+Invertibility</em>. For the second, $L^{\star}_{\tilde A}e_\nu=B(\tilde A,e_\nu)e_0=A_\nu e_0$, so the matrix of
+$L^{\star}_{\tilde A}$ in the basis has the entries $A_\nu$ at position $(0,\nu)$ and zero elsewhere; the only
+nonzero diagonal entry is the one at $(0,0)$, which is $A_0$. $\square$</p>
+<p><strong>Remark (there is one form and not a family).</strong> The block carries the single form $B$: the trace form, the
+coefficient of the product, the polarisation of the norm and the Gram data $I_4$ are four readings of the same
+object, and $B$ is the only form the product produces. The invariance of the next section does not select a
+smaller family of forms: a symmetric $\mathbb{C}$-bilinear form $\beta$ is invariant under $\star$ exactly when
+$\beta(e_0,\tilde R)=0$ for every $\tilde R$, so the invariant forms are the symmetric forms vanishing on the
+central line, of complex dimension $6$, and every one of them is degenerate. There is no non-degenerate
+symmetric form invariant under the product, and $B$ itself is not invariant. The operator article <em>The
+Multiplication Operators of the Symmetric Quaternionic Algebra</em> records the adjoint with respect to $B$ and
+the groups that preserve it.</p>
+<h2 id="the-invariance-and-its-failure">The Invariance, and Its Failure</h2>
+<p><strong>Definition.</strong> The form $B$ is <strong>invariant under the product</strong> when</p>
+<p>$$
+B(\tilde P\star\tilde Q,\tilde R) = B(\tilde P,\tilde Q\star\tilde R)
+$$</p>
+<p>for all $\tilde P,\tilde Q,\tilde R\in\mathbb{B}$; equivalently when
+$B\bigl(B(\tilde P,\tilde Q)e_0,\tilde R\bigr)=B\bigl(\tilde P,B(\tilde Q,\tilde R)e_0\bigr)$.</p>
+<p><strong>Theorem (the form is not invariant).</strong> The form $B$ is not invariant under $\star$. At
+$\tilde P=\tilde Q=e_1$ and $\tilde R=e_0$ the two sides are $1$ and $0$:</p>
+<p>$$
+B(\tilde P\star\tilde Q,\tilde R)=B(e_0,e_0)=1, \qquad
+B(\tilde P,\tilde Q\star\tilde R)=B(e_1,0)=0 .
+$$</p>
+<p><em>Proof.</em> $e_1\star e_1=e_0$ and $e_1\star e_0=0$; the two displayed forms are then $B(e_0,e_0)=1$ and
+$B(e_1,0)=0$. $\square$</p>
+<p><strong>Remark (why the failure is forced).</strong> The two sides of the invariance are
+$B(\tilde P,\tilde Q)R_0$ and $P_0B(\tilde Q,\tilde R)$, and they agree for all arguments only if the
+operation is associative in a way the block does not have. The failure is the same computation as the
+non-vanishing associator of <em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em>,
+because $B(\tilde P\star\tilde Q,\tilde R)$ is the scalar part of the first bracketing of the associator. A
+symmetric form that is invariant under a commutative product and has a unit is the coefficient form of a
+Jordan algebra; here there is no unit and the invariance fails, which is the form-theoretic face of the
+failure of the Jordan identity (<em>Jordan Algebras</em>).</p>
+<h2 id="the-restriction-to-the-six-subspaces">The Restriction to the Six Subspaces</h2>
+<p>The restrictions of $B$ to the six distinguished subspaces are the restrictions of the quaternion form
+computed in <em>The Six Subspaces under the General Quaternionic Algebra of Biquaternions</em>, whose table is
+quoted here; the present article adds only their reading through the product. Here $A,B\in\mathbb{C}$, $h,g$
+are real quaternions, $a_0,b_0\in\mathbb{R}$ and $\mathbf p,\mathbf q\in\mathbb{R}^3$ are real vectors.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>elements</th>
+<th>$B$</th>
+<th>dimension over $\mathbb{R}$</th>
+<th>signature</th>
+<th>isotropic elements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$Ae_0$, $Be_0$</td>
+<td>$AB$</td>
+<td>$2$</td>
+<td>$(1,1)$</td>
+<td>none (complex form)</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathbf P$, $\mathbf Q$</td>
+<td>$(\mathbf P,\mathbf Q)$</td>
+<td>$6$</td>
+<td>$(3,3)$</td>
+<td>the pure zero divisors</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$h$, $g$</td>
+<td>$h_0g_0+\cdots+h_3g_3$</td>
+<td>$4$</td>
+<td>$(4,0)$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$ih$, $ig$</td>
+<td>$-(h_0g_0+\cdots+h_3g_3)$</td>
+<td>$4$</td>
+<td>$(0,4)$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$a_0e_0+i\mathbf p$, $b_0e_0+i\mathbf q$</td>
+<td>$a_0b_0-(\mathbf p,\mathbf q)$</td>
+<td>$4$</td>
+<td>$(1,3)$</td>
+<td>the elements $a_0e_0+i\mathbf p$ with $a_0^2=(\mathbf p,\mathbf p)$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$ia_0e_0+\mathbf p$, $ib_0e_0+\mathbf q$</td>
+<td>$(\mathbf p,\mathbf q)-a_0b_0$</td>
+<td>$4$</td>
+<td>$(3,1)$</td>
+<td>the elements $\mathbf p+ia_0e_0$ with $(\mathbf p,\mathbf p)=a_0^2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the product on each restriction).</strong> On every one of the six the product of two elements is a
+multiple of $e_0$ read through the displayed coefficient, and the square of an element is the value of the
+restricted diagonal. The two definite rows have no isotropic element; the centre has none for the complex
+form although its realification has the two real isotropic lines; the vector subspace carries the pure
+zero-divisor cone; and the two Hermitian subspaces carry their real light cones. The product has no unit on
+any of the six, since it has none on the whole algebra.</p>
+<h2 id="the-coincidence-with-the-hermitian-form-on-the-real-part">The Coincidence with the Hermitian Form on the Real Part</h2>
+<p><strong>Proposition (the coincidence on the real elements).</strong> On two elements with real coefficients, drawn from
+the quaternion subspace, the form $B$ coincides with the Hermitian form of <em>Biquaternion Norm and
+Invertibility</em>,</p>
+<p>$$
+\tilde P,\tilde Q\in\mathbb{H}_{\mathbb{B}} \quad\Longrightarrow\quad
+B(\tilde P,\tilde Q) = H(\tilde P,\tilde Q).
+$$</p>
+<p>For general complex elements the two differ: writing
+$\tilde P=\tilde P'+i\tilde P''$ and $\tilde Q=\tilde Q'+i\tilde Q''$ with $\tilde P',\tilde P'',\tilde Q',\tilde Q''$ in
+$\mathbb{H}_{\mathbb{B}}$, the real part of $B$ is
+$\operatorname{Re}B(\tilde P,\tilde Q)=B(\tilde P',\tilde Q')-B(\tilde P'',\tilde Q'')$, which is $H$ on the real
+block and $-H$ on the imaginary block, the two cross blocks being purely imaginary. Taking $\tilde P=e_0$ and
+$\tilde Q=ie_0$ exhibits the difference of the two forms.</p>
+<p><em>Proof.</em> On real coefficients the conjugation acts trivially, $\overline{Q_0}=Q_0$ and
+$\overline{\mathbf Q}=\mathbf Q$, so $H(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)=B(\tilde P,\tilde Q)$.
+For $\tilde P=e_0$, $\tilde Q=ie_0$ one has $B=i$ and $H=1\cdot\overline{i}= -i$, which differ. $\square$</p>
+<p><strong>Remark (the collapse with the other central operation on the real part).</strong> The coincidence is the form-level
+statement that $\mathrm{SQA}=\mathrm{SPS}$ on the real part, which is one of the two collapses of the twelve
+to ten recorded in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. The symmetric part
+of the plain sesquilinear product has the coefficient $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$,
+which is $B$ precisely when the coefficients are real; over $\mathbb{C}$ the two operations differ, and
+$B$ is the $\mathbb{C}$-bilinear conjugate of $H$ in the second slot. The block accordingly reads the form
+$B$ as the plain form of the operation, and refers to the norm article for the Hermitian form and its
+positivity.</p>
+<h2 id="summary">Summary</h2>
+<p>The form carried by the symmetric quaternionic multiplication is the quaternion form
+$B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$, the coefficient of the product and the scalar part of the
+parent product $\tilde P^{\natural}\tilde Q$. Its Gram matrix in the basis is $I_4$, so it has rank $4$ over
+$\mathbb{C}$ and its radical is trivial; its realification is $\operatorname{diag}(I_4,-I_4)$ of signature
+$(4,4)$ and index $4$; its restrictions to the quaternion and anti-quaternion subspaces are the two definite
+rows of signatures $(4,0)$ and $(0,4)$; its restrictions to the other four subspaces have signatures
+$(1,1)$, $(3,3)$, $(1,3)$ and $(3,1)$ and carry the isotropic elements recorded in the table. The form is the
+trace form, $B=\operatorname{Sc}(\tilde P^{\natural}\tilde Q)=\tfrac12\operatorname{Tr}(\tilde P^{\natural}\tilde Q)$,
+and the trace of a left multiplication is the scalar part, $\operatorname{Tr}(L^{\star}_{\tilde A})=A_0$. The
+form is <strong>not</strong> invariant under the product, the two sides of $B(\tilde P\star\tilde Q,\tilde R)=B(\tilde P,\tilde Q\star\tilde R)$
+being $1$ and $0$ at $e_1,e_1,e_0$, which is the form-theoretic face of the failure of the Jordan identity.
+On the real elements the form coincides with the Hermitian form $H$, which is the form-level statement of the
+collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$</td>
+<td>the quaternion form of the block, the coefficient of the product</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=B(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$</td>
+<td>the norm form, the diagonal of $B$</td>
+</tr>
+<tr>
+<td>$H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$</td>
+<td>the Hermitian form of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$G=I_4$</td>
+<td>the Gram matrix of $B$ in the basis $e_0,e_1,e_2,e_3$</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(I_4,-I_4)$, signature $(4,4)$</td>
+<td>the realification of $B$</td>
+</tr>
+<tr>
+<td>$(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$</td>
+<td>the six signatures of the restrictions to the six subspaces</td>
+</tr>
+<tr>
+<td>$L^{\star}_{\tilde A}$, $\operatorname{Tr}(L^{\star}_{\tilde A})=A_0$</td>
+<td>the left multiplication and its trace</td>
+</tr>
+<tr>
+<td>$B(\tilde P\star\tilde Q,\tilde R)=B(\tilde P,\tilde Q\star\tilde R)$</td>
+<td>the invariance that fails</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Four Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the quaternion form among the four pairings</li>
+<li><em>Comparison Between the Four Biquaternion Products</em> (<code>articles_maths/comparison-between-the-four-biquaternion-products.md</code>), for the quaternion form beside the other three coefficients</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the norm, the polarisation and the Hermitian form</li>
+<li><em>The Six Subspaces under the General Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/the-six-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md</code>), for the restriction Gram matrices and the signatures</li>
+<li><em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md</code>), for the radical and the isotropic elements</li>
+<li><em>The Multiplication Operators of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md</code>), for the adjoint with respect to $B$ and the groups preserving it</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

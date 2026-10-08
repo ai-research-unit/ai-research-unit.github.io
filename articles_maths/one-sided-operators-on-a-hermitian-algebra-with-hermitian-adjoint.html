@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="one-sided-operators-on-a-hermitian-algebra-with-hermitian-adjoint"><strong>One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every two-sided operator of <em>Two-Sided Operators on a Clifford Algebra</em> is a product of two factors, one multiplying on the left and one on the right. This article treats the factors themselves. A <strong>one-sided operator</strong> is a left multiplication $y\mapsto a\,y$ or a right multiplication $y\mapsto y\,b$, together with the variants in which the multiplying element is replaced by its image under the grade involution or by its image under an anti-involution. The one-sided operators are the elementary operators out of which the two-sided family is built, and they are the operators for which the Hermitian adjoint has the cleanest form.</p>
+<p>Two facts organise the theory. The first is that the two one-sided families are separately multiplicative, with the same order of composition, even though the right factor carries an anti-automorphism; this is why a product of two elements gives the composites in both families and why the homogeneity of a two-sided operator follows from its two factors. The second is that the <strong>adjoint of a one-sided operator is the one-sided operator of the dagger</strong>: $L_a^{*} = L_{a^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$. From that identity the whole Hermitian theory of the one-sided operators follows in three lines: an operator is self-adjoint when its element is, it is skew-adjoint when its element is, and it is unitary exactly when its element lies in the unitary slice. The left and the right multiplications are mutual commutants, and the algebra they generate is the image of the enveloping algebra $\mathrm{Cl}(V,q)\otimes_F\mathrm{Cl}(V,q)^{\mathrm{op}}$, which is the whole endomorphism algebra exactly when the Clifford algebra is central simple over the base and a proper subalgebra otherwise; this is the double centraliser theorem read in this setting, and the failure of generation is worked out in <em>One-Sided Operators on a Clifford Algebra</em>.</p>
+<p>The algebra and the dagger are <em>Hermitian Algebras</em>; the two-sided family and the composition law are <em>Two-Sided Operators on a Clifford Algebra</em>; the scalar forms and the adjoints of left and right multiplication are <em>The Blade Form and the Hermitian Structure with Hermitian Adjoint</em>, from which the identity $L_x^{*} = L_{x^{\dagger}}$ is taken; the Hermitian structures on modules are <em>Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint</em>; the unitary slice is <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>; the left ideals and the spinor module are <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>; and the adjoint of the one-sided action on a module is <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>.</p>
+<h2 id="the-two-one-sided-families">The Two One-Sided Families</h2>
+<h3 id="definitions">Definitions</h3>
+<p><strong>Definition.</strong> Let $\theta$ be an automorphism of $\mathrm{Cl}(V,q)$ and let $c$ be an anti-automorphism, with $c(xz) = c(z)c(x)$ and $c(1) = 1$. For $x \in \mathrm{Cl}(V,q)$ the <strong>left one-sided operator</strong> and the <strong>right one-sided operator</strong> attached to $x$ are</p>
+<p>$$
+\Lambda^{\theta}_x(y) = \theta(x)\,y, \qquad \qquad \mathrm P^{c}_x(y) = y\,c(x).
+$$</p>
+<p>With $\theta = \mathrm{id}$ and $\theta = \alpha$ this gives the left multiplications $L_x$ and the signed left multiplication $L_{\alpha(x)}$; with $c = \mathrm{id}$, $c = r$, $c = \bar\cdot$ and $c = {}^{\dagger}$ it gives the right multiplications $R_x$, $R_{x^{r}}$, $R_{x^{\natural}}$ and $R_{x^{\dagger}}$. The inverse variants $y\mapsto y\,x^{-1}$ are defined on the units.</p>
+<p><strong>Proposition (composition laws).</strong> Both families are multiplicative with the same order:</p>
+<p>$$
+\Lambda^{\theta}_{xz} = \Lambda^{\theta}_x\circ\Lambda^{\theta}_z, \qquad \qquad \mathrm P^{c}_{xz} = \mathrm P^{c}_x\circ\mathrm P^{c}_z .
+$$</p>
+<p><strong>Proof.</strong> For the left family, $\Lambda^{\theta}_x(\Lambda^{\theta}_z(y)) = \theta(x)\theta(z)y = \theta(xz)y$, using that $\theta$ is an automorphism. For the right family, $\mathrm P^{c}_x(\mathrm P^{c}_z(y)) = \mathrm P^{c}_x(y\,c(z)) = y\,c(z)c(x) = y\,c(xz)$, using that $c$ is an anti-automorphism; the reversal in $c$ is compensated by the reversal of the order of composition, which is the reason both families compose in the same order.</p>
+<p><strong>Proposition (commutation, and the two-sided operator).</strong> Left and right one-sided operators commute,</p>
+<p>$$
+\Lambda^{\theta}_x\circ\mathrm P^{c}_z = \mathrm P^{c}_z\circ\Lambda^{\theta}_x ,
+$$</p>
+<p>and the two-sided operator of <em>Two-Sided Operators on a Clifford Algebra</em> is their product,</p>
+<p>$$
+\Phi^{\theta,c}_x = \Lambda^{\theta}_x\circ\mathrm P^{c}_x = L_{\theta(x)}\,R_{c(x)} .
+$$</p>
+<p><strong>Proof.</strong> $(\theta(x)y)c(z) = \theta(x)(yc(z))$ by associativity, and the two-sided operator is the product by its definition.</p>
+<p><strong>Corollary (composition of two-sided operators, again).</strong> The composition law $\Phi^{\theta,c}_{xz} = \Phi^{\theta,c}_x\circ\Phi^{\theta,c}_z$ follows from the two composition laws above and the commutation: $\Phi_x\Phi_z = \Lambda^{\theta}_x\mathrm P^{c}_x\Lambda^{\theta}_z\mathrm P^{c}_z = \Lambda^{\theta}_{xz}\mathrm P^{c}_{xz} = \Phi_{xz}$. So the multiplicativity of the two-sided family is a consequence of the multiplicativity of its two one-sided factors, and the order of the factors in the composite is immaterial.</p>
+<h2 id="the-hermitian-adjoint-of-a-one-sided-operator">The Hermitian Adjoint of a One-Sided Operator</h2>
+<h3 id="the-adjoint">The Adjoint</h3>
+<p><strong>Theorem.</strong> With respect to the form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$ of the regular module, the adjoint of a one-sided operator is the one-sided operator of the dagger:</p>
+<p>$$
+\bigl(\Lambda^{\theta}_x\bigr)^{*} = \Lambda^{\theta}_{x^{\dagger}} , \qquad \qquad \bigl(\mathrm P^{c}_x\bigr)^{*} = \mathrm P^{c}_{x^{\dagger}} .
+$$</p>
+<p>In particular $L_a^{*} = L_{a^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$.</p>
+<p><strong>Proof.</strong> For the left multiplication,</p>
+<p>$$
+(L_ax, y) = \mathrm{Sc}\bigl((ax)^{\dagger}y\bigr) = \mathrm{Sc}\bigl(x^{\dagger}a^{\dagger}y\bigr) = (x, a^{\dagger}y) = (x, L_{a^{\dagger}}y),
+$$</p>
+<p>using that the dagger is an anti-involution and that $\mathrm{Sc}(uv) = \mathrm{Sc}(vu)$. For the right multiplication,</p>
+<p>$$
+(R_bx, y) = \mathrm{Sc}\bigl((xb)^{\dagger}y\bigr) = \mathrm{Sc}\bigl(b^{\dagger}x^{\dagger}y\bigr) = \mathrm{Sc}\bigl(x^{\dagger}\,y\,b^{\dagger}\bigr) = (x, R_{b^{\dagger}}y),
+$$</p>
+<p>where the middle equality moves the factor $b^{\dagger}$ past the product by two applications of cyclicity of the scalar part. The statements for $\Lambda^{\theta}$ and $\mathrm P^{c}$ follow by substituting $a = \theta(x)$ and $b = c(x)$.</p>
+<p><strong>Remark (why the dagger and not the conjugate element).</strong> The adjoint is the one-sided operator of the <strong>dagger</strong> of the element, not of the element itself and not of the other anti-involution: reversion gives the adjoint for the blade form, the dagger gives the adjoint for the form of the dagger, and the two differ by the parity sign as in <em>The Blade Form and the Hermitian Structure with Hermitian Adjoint</em>. A sibling must use the dagger for the form $\mathrm{Sc}(x^{\dagger}y)$ and reversion for the form $\mathrm{Sc}(x^{r}y)$.</p>
+<h3 id="self-adjoint-skew-and-unitary-one-sided-operators">Self-Adjoint, Skew and Unitary One-Sided Operators</h3>
+<p><strong>Corollary.</strong> For $a \in \mathrm{Cl}(V,q)$,</p>
+<p>$$
+L_a \text{ is self-adjoint} \iff a^{\dagger} = a, \qquad
+L_a \text{ is skew-adjoint} \iff a^{\dagger} = -a, \qquad
+L_a \text{ is unitary} \iff a^{\dagger}a = 1,
+$$</p>
+<p>and the same with $R_a$ in place of $L_a$.</p>
+<p><strong>Proof.</strong> Immediate from the theorem; unitarity means $L_a^{*}L_a = \mathrm{id}$, that is $L_{a^{\dagger}a} = \mathrm{id}$, that is $a^{\dagger}a = 1$ by the injectivity of $a\mapsto L_a$ proved below.</p>
+<p><strong>Corollary (the slice and the vectors).</strong> The left multiplications by the elements of the unitary slice are the unitary one-sided operators, so $a\mapsto L_a$ restricts to a unitary representation $U\to \mathrm U(\mathrm{Cl}(V,q),(\cdot,\cdot))$ of the slice; and <strong>every vector acts by a skew-adjoint operator</strong>, $L_v^{*} = L_{v^{\dagger}} = -L_v$, because the dagger negates the vectors. When the involution is positive, a vector also satisfies $v^{\dagger}v = -v^{2} = q(v)\cdot(-1)$, so $L_v$ is unitary exactly on the norm-one vectors, and the left multiplications by an orthonormal frame are the <strong>complex structures</strong> of the algebra: each is skew-adjoint, unitary and of square $-1$.</p>
+<h3 id="the-generated-math66-algebra">The Generated $*$-Algebra</h3>
+<p><strong>Theorem (the commutants and the generated algebra).</strong> The two families are mutual commutants,</p>
+<p>$$
+\{L_a : a \in A\}' = \{R_b : b \in A\}, \qquad \{R_b : b \in A\}' = \{L_a : a \in A\},
+$$</p>
+<p>so the bicommutant of each family is itself, and the $F$-algebra generated by the two is the image of the enveloping algebra</p>
+<p>$$
+\langle L_a, R_b\rangle = \mathrm{Im}\bigl(A\otimes_FA^{\mathrm{op}}\to \mathrm{End}_F(A)\bigr), \qquad a\otimes b^{\mathrm{op}}\mapsto L_aR_b .
+$$</p>
+<p>That image is all of $\mathrm{End}_F(\mathrm{Cl}(V,q))$, of dimension $(\dim_F\mathrm{Cl})^{2}$, exactly when the Clifford algebra is <strong>central simple</strong> over $F$; otherwise it is a proper subalgebra, the endomorphisms over the centre $\mathrm{End}_{Z(A)}(A)$ of dimension $(\dim_F A)^{2}/[Z(A):F]$. For a non-degenerate form over a field of characteristic not two this is all of $\mathrm{End}_F$ exactly for even $n$, while for odd $n$ the volume element supplies a centre of degree two and only half of $\mathrm{End}_F$ is generated: on $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$ the products $L_aR_b$ span a space of dimension $32$, while $\mathrm{End}_F$ has dimension $64$. The left multiplications alone form a subalgebra isomorphic to the opposite algebra of the Clifford algebra, and the right multiplications alone its commutant.</p>
+<p><strong>Proof.</strong> The left and the right multiplications commute, and $L_aR_b(1) = ab$, so the image of $A\otimes_FA^{\mathrm{op}}$ in $\mathrm{End}_F(A)$ is exactly the algebra generated by the two families. The map is <strong>not</strong> injective in general: $\sum_ia_i\otimes b_i^{\mathrm{op}}$ is killed precisely when $\sum_i a_ixb_i = 0$ for every $x$, which is what the dimension count of the counterexample detects. When $A$ is central simple $A\otimes_FA^{\mathrm{op}}\cong\mathrm{End}_F(A)$, by the dimension count $\dim(A\otimes_FA^{\mathrm{op}}) = (\dim A)^{2} = \dim\mathrm{End}_F(A)$ and injectivity; the $*$-structure is $(L_aR_b)^{*} = R_{b^{\dagger}}L_{a^{\dagger}} = L_{a^{\dagger}}R_{b^{\dagger}}$ of the theorem above, so in the central simple case the generated algebra is closed under the adjoint.</p>
+<p><strong>Remark (the regular representation is a $*$-representation).</strong> The left multiplications alone give the <strong>regular representation</strong> $a\mapsto L_a$ of the Clifford algebra on itself, which by the theorem above is a $*$-representation in the sense of <em>Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint</em>, since $L_{a^{\dagger}} = L_a^{*}$. The right multiplications give the opposite representation, the commutant, corresponding to the bimodule structure; the two together generate the endomorphisms over the centre, the whole endomorphism algebra exactly in the central simple case.</p>
+<h2 id="images-kernels-and-ideals">Images, Kernels and Ideals</h2>
+<p><strong>Proposition.</strong> For every $a$,</p>
+<p>$$
+L_a(1) = a, \qquad R_a(1) = a,
+$$</p>
+<p>so $a\mapsto L_a$ and $a\mapsto R_a$ are injective $F$-linear maps; and</p>
+<p>$$
+\ker L_a = \{\, y : ay = 0 \,\}, \qquad \ker R_a = \{\, y : ya = 0 \,\}
+$$</p>
+<p>are the left and right annihilators of $a$.</p>
+<p><strong>Proposition (the images are ideals).</strong> The image of a right multiplication is a <strong>left</strong> ideal and the image of a left multiplication is a <strong>right</strong> ideal:</p>
+<p>$$
+R_a\bigl(\mathrm{Cl}\bigr) = \mathrm{Cl}\cdot a, \qquad L_a\bigl(\mathrm{Cl}\bigr) = a\cdot \mathrm{Cl} .
+$$</p>
+<p><strong>Proof.</strong> $R_a(y) = ya$ and $x(ya) = (xy)a$ is again of the form $y'a$, so $\mathrm{Cl}\cdot a$ is closed under left multiplication; $L_a(y) = ay$ and $(ay)x = a(yx)$ makes $a\cdot\mathrm{Cl}$ a right ideal.</p>
+<p><strong>Corollary (the spinor module as an image).</strong> If $\pi$ is a primitive idempotent then $R_\pi$ has image the minimal left ideal $\mathrm{Cl}\,\pi$ and kernel the complementary ideal, so the spinor module of <em>Spinors as Minimal Left Ideals with Inner Conjugation</em> is the image of the one-sided operator $R_\pi$, and the one-sided operator $L_\pi$ has image the complementary minimal right ideal. This is the reason the adjoint of the one-sided action is the operator-theoretic starting point of <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-positive-case-the-quaternion-algebra">The Positive Case: the Quaternion Algebra</h3>
+<p>Let $\mathrm{Cl}_{0,2}(\mathbb{R}) = \mathbb{H}$ with $e_1^{2} = e_2^{2} = -1$ and the dagger positive, so $v^{\dagger} = -v$ for every vector. For a vector $v$, $v^{\dagger}v = -v^{2} = 1$, so the left and right multiplications $L_v$ and $R_v$ are <strong>unitary</strong>; and $v^{\dagger} = -v$ makes them <strong>skew-adjoint</strong>, while $v^{2} = -1$ makes them of <strong>square $-1$</strong>:</p>
+<p>$$
+L_v^{*} = -L_v, \qquad L_v^{2} = L_{-1} = -\,\mathrm{id}, \qquad (L_vx, L_vy) = (x,y).
+$$</p>
+<p>So each of $L_{e_1}, L_{e_2}, L_{e_1e_2}$ is simultaneously skew-adjoint, unitary and a complex structure on the four-dimensional real space $\mathbb{H}$, and they satisfy the quaternion relations $L_{e_1}L_{e_2} = L_{e_1e_2}$. The vectors therefore give the three almost complex structures that make the quaternion algebra a module over the quaternions, all of them one-sided operators.</p>
+<h3 id="the-split-case-an-involution">The Split Case: an Involution</h3>
+<p>Let $\mathrm{Cl}_{1,1}(\mathbb{R})$ with $e_1^{2} = 1$, $e_2^{2} = -1$ and the dagger indefinite. Then $e_1^{\dagger} = -e_1$ and $e_1^{2} = 1$, so</p>
+<p>$$
+L_{e_1}^{*} = -L_{e_1}, \qquad L_{e_1}^{2} = \mathrm{id},
+$$</p>
+<p>a skew-adjoint involution; it is not unitary, and its action on the form reverses the sign, $(L_{e_1}x, L_{e_1}y) = -(x,y)$, because $e_1^{\dagger}e_1 = -e_1^{2} = -1$. The same vector is a unit of $\Gamma(V,q)$ with norm $1$ and gives an honest reflection on $V$, so the one-sided operator and the two-sided operator divide the labour: the two-sided signed inner conjugation by $e_1$ is the reflection, while the one-sided $L_{e_1}$ is a skew-adjoint involution of the whole algebra that reverses the sign of the Hermitian form.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>one-sided operator</strong> on a Clifford algebra is a left multiplication $\Lambda^{\theta}_x(y) = \theta(x)y$ or a right multiplication $\mathrm P^{c}_x(y) = y\,c(x)$ attached to an automorphism $\theta$ and an anti-automorphism $c$. Both families are <strong>multiplicative with the same order</strong>, $\Lambda^{\theta}_{xz} = \Lambda^{\theta}_x\Lambda^{\theta}_z$ and $\mathrm P^{c}_{xz} = \mathrm P^{c}_x\mathrm P^{c}_z$, because the reversal inside $c$ is cancelled by the reversal of the order of composition; left and right operators commute, and the two-sided operator is their product, $\Phi^{\theta,c}_x = \Lambda^{\theta}_x\mathrm P^{c}_x$, so the multiplicativity of the two-sided family is inherited from its factors.</p>
+<p>With respect to the form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$ the <strong>adjoint of a one-sided operator is the one-sided operator of the dagger</strong>, $L_a^{*} = L_{a^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$, whence a one-sided operator is self-adjoint, skew-adjoint or unitary exactly when its element is self-adjoint, skew-adjoint or in the unitary slice; every vector acts by a skew-adjoint operator, and in the positive case by a skew-adjoint unitary complex structure. The left multiplications give the <strong>regular $*$-representation</strong>, the right multiplications its commutant, and the two together generate the image of the enveloping algebra $\mathrm{Cl}\otimes_F\mathrm{Cl}^{\mathrm{op}}$, which is all of $\mathrm{End}_F(\mathrm{Cl}(V,q))$ exactly when the Clifford algebra is central simple and a proper subalgebra otherwise. Finally $L_a(1) = R_a(1) = a$, so both maps are injective; the kernel of a one-sided operator is an annihilator and its image an ideal, and the spinor module is the image of $R_\pi$ for a primitive idempotent $\pi$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda^{\theta}_x(y) = \theta(x)y$</td>
+<td>Left one-sided operator</td>
+</tr>
+<tr>
+<td>$\mathrm P^{c}_x(y) = y\,c(x)$</td>
+<td>Right one-sided operator</td>
+</tr>
+<tr>
+<td>$L_a$, $R_b$</td>
+<td>Ordinary left and right multiplication</td>
+</tr>
+<tr>
+<td>$\Lambda^{\theta}_{xz} = \Lambda^{\theta}_x\Lambda^{\theta}_z$, $\mathrm P^{c}_{xz} = \mathrm P^{c}_x\mathrm P^{c}_z$</td>
+<td>Composition laws</td>
+</tr>
+<tr>
+<td>$\Phi^{\theta,c}_x = \Lambda^{\theta}_x\mathrm P^{c}_x$</td>
+<td>Two-sided operator as a product of one-sided ones</td>
+</tr>
+<tr>
+<td>$L_a^{*} = L_{a^{\dagger}}$, $R_b^{*} = R_{b^{\dagger}}$</td>
+<td>Adjoints with respect to $\mathrm{Sc}(x^{\dagger}y)$</td>
+</tr>
+<tr>
+<td>$\langle L_a, R_b\rangle = \mathrm{Im}(\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{op}})$</td>
+<td>Generated algebra; $=\mathrm{End}_F$ iff central simple</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}\cdot a$, $a\cdot\mathrm{Cl}$</td>
+<td>Left and right ideals, images of $R_a$ and $L_a$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the left and right multiplications and the regular representations.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the Clifford action, its adjoint and the self-adjointness of the Dirac operator.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (American Mathematical Society, 1956), for the double centraliser theorem and the regular representations of a finite-dimensional algebra.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the left and right regular representations, annihilators and the Frobenius structure.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for algebras with involution acting on themselves and the adjoint of the regular representation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

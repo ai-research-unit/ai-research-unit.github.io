@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Unitary Group of a Form and Its Lie Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-unitary-group-of-a-form-and-its-lie-algebra"><strong>The Unitary Group of a Form and Its Lie Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The unitary group $U(A,h)$ of <em>Isometries and the Unitary Group of a Form</em> is an algebraic group, and every algebraic group has a Lie algebra: the tangent space at the identity, computed by the <strong>dual numbers</strong>. This article computes it, and the answer is the space of the skew-adjoint operators with the commutator:</p>
+<p>$$
+\mathfrak{u}(A,h) = \{T : T^{*} = -T\} = \operatorname{Lie}\,U(A,h) .
+$$</p>
+<p>The computation is algebraic and it uses no limit and no topology. The tangent space is the kernel of the map $U(R[\varepsilon]/\varepsilon^{2}) \to U(R)$, the infinitesimal isometries are the operators whose quadratic form $h(Tx,x)$ vanishes to first order, and the first-order condition is exactly the antisymmetry $T^{*} = -T$; this is the algebraic form of the classical statement that the Lie algebra of the isometry group of a form is the space of the skew operators of that form. The bracket is the commutator, and it closes on the skew operators by the sign rule of <em>Self-Adjoint and Skew Operators of a Form</em>.</p>
+<p>The corresponding structure on the other eigenspace of the involution is the Jordan algebra of <em>The Hermitian Jordan Algebra of a Form</em>; the bilinear original is <em>The Orthogonal Lie Algebra</em>, the completed reading is <em>The Lie Algebra and the Exponential Map</em> and <em>Unitary and Isometric Operators of the Form</em> of Part II, and the exponential map that joins the algebra to the group is <em>The Lie Algebra and the Exponential Map</em> in Part II. Throughout, $(A,*,h)$ is a sesqualgebra with a form over a base $(R,\varsigma)$ with $h$ nonsingular, $T^{*}$ is the adjoint of $T$ for $h$, and $R[\varepsilon] = R[\varepsilon]/\varepsilon^{2}$ is the ring of the dual numbers over the base.</p>
+<h2 id="the-lie-algebra-by-the-dual-numbers">The Lie Algebra by the Dual Numbers</h2>
+<p><strong>Definition.</strong> The <strong>Lie algebra</strong> of the unitary group is the set of the operators $T$ with</p>
+<p>$$
+1 + \varepsilon T \in U(A\otimes_{R}R[\varepsilon], h) ,
+$$</p>
+<p>that is, the set of the first-order deformations of the identity that remain isometries over the dual numbers.</p>
+<p><strong>Proposition.</strong> The Lie algebra is the space of the <strong>skew-adjoint</strong> operators:</p>
+<p>$$
+\mathfrak{u}(A,h) = \{T : T^{*} = -T\} .
+$$</p>
+<p><strong>Proof.</strong> Compute over the dual numbers with $\varepsilon^{2} = 0$:</p>
+<p>$$
+h\bigl((1+\varepsilon T)x, (1+\varepsilon T)y\bigr) = h(x,y) + \varepsilon\bigl(h(Tx,y) + h(x,Ty)\bigr) .
+$$</p>
+<p>The first-order condition for the isometry is therefore $h(Tx,y) + h(x,Ty) = 0$ for all $x, y$. Now $h(x,Ty) = h(T^{*}x, y)$ by the Hermitian property and the definition of the adjoint, so the condition reads $h\bigl((T + T^{*})x, y\bigr) = 0$ for all $x,y$, which the nonsingularity of $h$ converts into $T + T^{*} = 0$, that is $T^{*} = -T$.</p>
+<p><strong>Corollary.</strong> The Lie algebra is an $R^{\varsigma}$-submodule of the operators, and it is the kernel of the restriction of the isometry equation to the first order; it is cut out by the linear equations $T^{*} + T = 0$, so it is a module of the same nature as the operators and needs no completion.</p>
+<p><strong>Corollary (the quadratic reading).</strong> When $2$ is invertible and the diagonal determines the Hermitian form, the condition is equivalent to the vanishing of the trace part of the quadratic form, $h(Tx,x) + \varsigma(h(Tx,x)) = 0$ for every $x$; over the trivial base involution this is the vanishing of $h(Tx,x)$ itself, and then the infinitesimal isometries are exactly the operators whose quadratic form vanishes identically.</p>
+<p><strong>Proof.</strong> If $T^{*} = -T$ then $h(Tx,x) = -h(x,Tx) = -\varsigma(h(Tx,x))$, so $h(Tx,x) + \varsigma(h(Tx,x)) = 0$; over the trivial involution the fixed ring is the whole ring and $h(Tx,x) = 0$ as well. Conversely, the diagonal of the Hermitian form $B(x,y) = h(Tx,y) + h(x,Ty)$ is $h(Tx,x) + \varsigma(h(Tx,x))$, which vanishes under the hypothesis; a Hermitian form with vanishing diagonal vanishes when the diagonal determines the forms, so $B = 0$, which is the antisymmetry $T^{*} = -T$. The last clause is the case $\varsigma = \mathrm{id}$.</p>
+<h2 id="the-bracket">The Bracket</h2>
+<p><strong>Proposition.</strong> The space $\mathfrak{u}(A,h)$ closes under the commutator,</p>
+<p>$$
+S, T \in \mathfrak{u}(A,h) \implies [S,T] = ST - TS \in \mathfrak{u}(A,h) ,
+$$</p>
+<p>and the commutator makes it a Lie algebra over the fixed ring $R^{\varsigma}$.</p>
+<p><strong>Proof.</strong> The sign rule of <em>Self-Adjoint and Skew Operators of a Form</em> gives $(ST - TS)^{*} = -\varepsilon\delta(ST-TS)$ with $\varepsilon = \delta = -1$, hence $(ST-TS)^{*} = -(ST-TS)$, which is the closure. The bilinearity, the antisymmetry and the Jacobi identity of the commutator are the associativity of the product of the operators.</p>
+<p><strong>Corollary.</strong> The Lie algebra of the unitary group is the skew part of the algebra of the operators, the self-adjoint part is its complement under the involution of <em>The Form-Adjoint of an Operator</em>, and the product of two skew operators splits as</p>
+<p>$$
+ST = \tfrac{1}{2}[S,T] + \tfrac{1}{2}(ST + TS) ,
+$$</p>
+<p>with the commutator inside the Lie algebra and the anticommutator leaving it; the anticommutator is the Jordan structure of <em>The Hermitian Jordan Algebra of a Form</em>.</p>
+<h2 id="the-algebraic-nature-of-the-construction">The Algebraic Nature of the Construction</h2>
+<p><strong>Proposition.</strong> The tangent space is computed with the dual numbers and not with a limit: the map $U(R[\varepsilon]) \to U(R)$ is the reduction $\varepsilon \mapsto 0$, and its kernel is the Lie algebra. In particular the construction is defined over an arbitrary commutative base with an involution, with no ordered field, no norm and no completion.</p>
+<p><strong>Proof.</strong> The group over the dual numbers is the set of the operators $1 + \varepsilon T$ satisfying the isometry equation with the Gram matrix read over $R[\varepsilon]$; reducing modulo $\varepsilon$ gives the identity, so every element of the kernel is of the shape $1 + \varepsilon T$, and the first-order expansion of the previous section is the computation of the kernel. The reduction map is a homomorphism of groups by the functoriality of the construction of the group.</p>
+<p><strong>Remark (the exponential).</strong> Over $\mathbb{R}$ or $\mathbb{C}$ the exponential of a skew operator is unitary, and the differential of the exponential at $0$ is the identity, so the Lie algebra is the tangent space of the group in the analytic sense as well; the series is analytic, and the exponential and its image are <em>The Lie Algebra and the Exponential Map</em> in Part II. In the algebraic layer the Cayley transform of <em>Self-Adjoint and Skew Operators of a Form</em> plays the role of the exponential without the series.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-unitary-group">The Unitary Group</h3>
+<p>On $M_n(\mathbb{C})$ with the trace form the Lie algebra is the space of the skew-Hermitian matrices, $\mathfrak{u}(n) = \{T : T^{\dagger} = -T\}$, of real dimension $n^{2}$; its traceless part is $\mathfrak{su}(n)$ of dimension $n^{2}-1$, the Lie algebra of the special unitary group.</p>
+<h3 id="the-orthogonal-group">The Orthogonal Group</h3>
+<p>At the trivial base involution and $* = \mathrm{id}$ the Lie algebra is the space of the matrices with $T^{\mathrm{t}}G + GT = 0$, of dimension $n(n-1)/2$, the orthogonal Lie algebra $\mathfrak{so}(G)$ of <em>The Orthogonal Lie Algebra</em>; its structure and its root system are the subject of that article.</p>
+<h3 id="the-symplectic-group">The Symplectic Group</h3>
+<p>For an alternating form with Gram matrix $J$, the Lie algebra is $\{T : T^{\mathrm{t}}J + JT = 0\}$, the symplectic Lie algebra $\mathfrak{sp}(2n)$, of dimension $n(2n+1)$; the form is alternating and the algebra is the one of the classical groups of the layer.</p>
+<h3 id="the-biquaternion-algebra">The Biquaternion Algebra</h3>
+<p>On $\mathbb{B}$ with the dagger the Lie algebra of the unitary slice is the space of the anti-Hermitian biquaternions, and the Lie algebra of the Lorentzian form $\operatorname{Sc}(\bar{\tilde Q}\tilde Q')$ is $\mathfrak{so}(2,6)$; the computations are those of <em>The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form</em> and <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The <strong>Lie algebra</strong> of the unitary group is the space of the first-order isometries, computed by the dual numbers: $\mathfrak{u}(A,h) = \{T : T^{*} = -T\}$, the <strong>skew-adjoint operators</strong>.</li>
+<li>Equivalently, when $2$ is invertible and the diagonal determines the form, it is the set of the operators whose quadratic form $h(Tx,x)$ has vanishing trace part; over the trivial involution this is $h(Tx,x) = 0$ for every $x$.</li>
+<li>It closes under the commutator by the sign rule, and it is a Lie algebra over the fixed ring $R^{\varsigma}$.</li>
+<li>The construction is algebraic: the kernel of $U(R[\varepsilon]) \to U(R)$, with no limit, no norm and no completion; the analytic exponential is Part II and the Cayley transform is the algebraic substitute.</li>
+<li>The examples are $\mathfrak{u}(n)$, $\mathfrak{su}(n)$, $\mathfrak{so}(G)$, $\mathfrak{sp}(2n)$ and the Lorentzian $\mathfrak{so}(2,6)$ of the biquaternions.</li>
+<li>The complementary structure is the Jordan algebra of the self-adjoint operators, <em>The Hermitian Jordan Algebra of a Form</em>.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R[\varepsilon] = R[\varepsilon]/\varepsilon^{2}$</td>
+<td>the ring of the dual numbers over the base</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(A,h)$</td>
+<td>the Lie algebra of the skew-adjoint operators</td>
+</tr>
+<tr>
+<td>$[S,T] = ST - TS$</td>
+<td>the commutator of the operators</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(n)$, $\mathfrak{su}(n)$</td>
+<td>the unitary and special unitary Lie algebras</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(G)$, $\mathfrak{sp}(2n)$</td>
+<td>the orthogonal and the symplectic Lie algebras</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em>, Ergebnisse der Mathematik 5 (Springer, 1955), for the classical Lie algebras as the skew operators of a form.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Interscience, 1962; Dover reprint, 1979), for the Lie algebra of an algebraic group and the structure of the classical algebras.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em>, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for the Lie algebra of the unitary group of a form over a ring with an involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

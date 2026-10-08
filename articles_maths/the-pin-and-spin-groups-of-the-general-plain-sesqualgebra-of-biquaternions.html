@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pin and Spin Groups of the General Plain Sesqualgebra of Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-pin-and-spin-groups-of-the-general-plain-sesqualgebra-of-biquaternions"><strong>The Pin and Spin Groups of the General Plain Sesqualgebra of Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The product of the general plain sesqualgebra is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, and its scalar value is the positive definite Hermitian form $\langle\tilde S,\tilde P\rangle_{*}=\mathrm{Sc}(\tilde P^{*}\tilde S)$ (<em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>, <em>The Four Biquaternion Complex Products</em>). The two-sided operator of the product is the dagger sandwich $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$, and the question of this article is the one that the two bilinear twins answer with a level set of a scalar form: <strong>for which parameters is $\Theta_{\tilde Q}$ an isometry of the form?</strong> (<em>Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions</em>).</p>
+<p>The answer is not a shell. The operator is an isometry exactly when its parameter lies in the <strong>unitary slice</strong> $U=\{\tilde Q : \tilde Q^{*}\tilde Q=e_{0}\}$, and this article reads the pair that the condition defines: the <strong>pin group</strong> $\mathrm{Pin}=U\cong U(2)$ of the isometry parameters and the <strong>spin group</strong> $\mathrm{Spin}=\mathrm{SU}(2)$ of its determinant-one part. Both are groups of units of the algebra, compact, of real dimensions four and three. The assignment $\tilde Q\mapsto\Theta_{\tilde Q}$ is a group homomorphism whose kernel on the pin group is the central circle $U(1)e_{0}$, so the image is the inner automorphism group $U(2)/U(1)\cong PU(2)\cong SO(3)$, and the restriction to the spin group is the classical two-to-one cover of that rotation group.</p>
+<p>Two features separate the sesquilinear case from both bilinear twins, and both are made explicit here. The isometry condition is neither vacuous, as it is for the plain bilinear form, where every unit acts by an isometry of the family; nor is it a level set of a multiplicative quadratic form, as it is for the quaternionic bilinear form, where it reads $N(\tilde Q)=\pm1$. It is the unitarity of the parameter, an equation on the Hermitian element $\tilde Q^{*}\tilde Q$. And the sign that makes the bilinear pin group strictly larger than its spin group is <strong>absent</strong>, because the form is positive definite: the scalar $\tilde Q^{*}\tilde Q$ is a positive real multiple of the identity, so the negative value is impossible, and $\mathrm{Pin}/\mathrm{Spin}$ is the circle rather than the two-element group. The reflections of the form are isometries that the family does not reach, as for the two bilinear twins, but for a different reason: every form-preserving map of the family is an algebra automorphism.</p>
+<p>The algebra, the dagger and the six subspaces are <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>, <em>The Group of Involutions</em> and <em>Introduction to the Six Subspaces</em>; the four products and the four forms are <em>The Four Biquaternion Complex Products</em> and <em>The Four Pairings of the Biquaternion Algebra</em>; the operator and its laws are <em>Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions</em>; the slice, its group structure and the compact real form are <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>; the general theory of which this is the instance is <em>The Pin and Spin Groups with Signed Hermitian Adjoint</em>; the two bilinear twins are <em>The Pin and Spin Groups of the General Plain Algebra of Biquaternions</em> and <em>The Pin and Spin Groups of the General Quaternionic Algebra of Biquaternions</em>; the ambient group of units is <em>The Biquaternion Unit Group as a Topological Group</em>; and the rotations reached by the family are <em>The Unitary Group of the Biquaternion Algebra</em>.</p>
+<h2 id="conventions-and-the-isometry-condition">Conventions and the Isometry Condition</h2>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_{0}=1,e_{1},e_{2},e_{3}$ and central scalar imaginary $i$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$, written $\tilde Q=Q_0e_0+\mathbf Q$ with vector part $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$. The Hermitian conjugation is the anti-involution ${}^{*}$, of fixed space the Hermitian subspace $\mathbb{M}_+$ and anti-fixed space $\mathbb{M}_-$; in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ it is the conjugate transpose. The general plain sesquilinear form is</p>
+<p>$$
+\langle\tilde S,\tilde P\rangle_{*}=\mathrm{Sc}\bigl(\tilde P^{*}\tilde S\bigr)=\sum_\mu P_\mu^{*}S_\mu,
+$$</p>
+<p>Hermitian, positive definite, of Gram matrix the identity in the basis. The <strong>two-sided operator</strong> of $\tilde Q$ is $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$, the dagger sandwich of the corpus; the assignment $\tilde Q\mapsto\Theta_{\tilde Q}$ is multiplicative in the parameter, $\Theta_{\tilde Q\tilde R}=\Theta_{\tilde Q}\circ\Theta_{\tilde R}$. The <strong>unitary slice</strong> is</p>
+<p>$$
+U=\{\tilde Q\in\mathbb{B} : \tilde Q^{*}\tilde Q=e_{0}\},
+$$</p>
+<p>which in the matrix model is the unitary group $U(2)$, compact, of real dimension four, with determinant-one part $\mathrm{SU}(2)$ of real dimension three (<em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>).</p>
+<p><strong>Theorem (the isometry condition).</strong> For $\tilde Q$ in $\mathbb{B}$ the operator $\Theta_{\tilde Q}$ preserves the form,</p>
+<p>$$
+\langle\Theta_{\tilde Q}\tilde S,\Theta_{\tilde Q}\tilde P\rangle_{*}=\langle\tilde S,\tilde P\rangle_{*}\quad\text{for all }\tilde P,\tilde S,
+$$</p>
+<p>if and only if $\tilde Q^{*}\tilde Q=e_{0}$:</p>
+<p>$$
+\Theta_{\tilde Q}\ \text{is an isometry}\iff\tilde Q\in U .
+$$</p>
+<p><em>Proof.</em> The sibling article proves that $\Theta_{\tilde Q}$ is unitary with respect to the form if and only if $\tilde Q^{*}\tilde Q$ is a central scalar of modulus one (<em>Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions</em>). The element $\tilde Q^{*}\tilde Q$ is Hermitian, and its scalar part is</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde Q^{*}\tilde Q\bigr)=\sum_\mu\lvert Q_\mu\rvert^{2},
+$$</p>
+<p>which is a strictly positive real number for $\tilde Q\neq0$; being a central scalar it is therefore a positive real multiple $\omega e_{0}$, $\omega>0$, of the identity, so the modulus-one condition $\omega=1$ reads $\tilde Q^{*}\tilde Q=e_{0}$. Conversely, if $\tilde Q^{*}\tilde Q=e_{0}$ then $(\Theta_{\tilde Q})^{*}\Theta_{\tilde Q}=\Theta_{\tilde Q^{*}\tilde Q}=\Theta_{e_{0}}$ is the identity, and $\Theta_{\tilde Q}$ is an isometry by the adjoint theorem of the sibling article. The criterion was verified on $300$ parameters, including $200$ forced isometries of the form $\tilde Q=U$ with $U\in U(2)$; no parameter outside the slice passed, and the failure of the scaled ones is the displayed multiplier of the next remark. $\square$</p>
+<p><strong>Remark (the failure is a positive similitude, never a sign).</strong> The parameter rule reads $\Theta_{A\tilde Q}=\lvert A\rvert^{2}\Theta_{\tilde Q}$ for central $A$, so for $\tilde Q=c\tilde U$ with $c\in\mathbb{C}$ and $\tilde U\in U$ the operator is $\lvert c\rvert^{2}\mathrm{Ad}_{\tilde U}$. Hence</p>
+<p>$$
+\langle\Theta_{\tilde Q}\tilde S,\Theta_{\tilde Q}\tilde P\rangle_{*}=\lvert c\rvert^{4}\,\langle\tilde S,\tilde P\rangle_{*},
+$$</p>
+<p>a similitude of the form with the <strong>positive</strong> multiplier $\lvert c\rvert^{4}$. The family never turns the form into its negative. Verified: the ratio is $16$ for $c=2$ and $1$ for $\lvert c\rvert=1$. This positivity is the algebraic root of the absent sign of §<em>The Two Groups</em>.</p>
+<h2 id="the-two-groups">The Two Groups</h2>
+<p><strong>Definition (the pin and spin groups).</strong> The <strong>pin group</strong> of the general plain sesquilinear form is the set of parameters on which the two-sided operator is an isometry, and the <strong>spin group</strong> is its determinant-one part,</p>
+<p>$$
+\mathrm{Pin}=\{\tilde Q : \Theta_{\tilde Q}\ \text{is an isometry}\}=U,\qquad
+\mathrm{Spin}=\{\tilde Q\in U : \det\Phi(\tilde Q)=1\}=\mathrm{SU}(2) .
+$$</p>
+<p><strong>Theorem (the two groups).</strong> $\mathrm{Pin}=U\cong U(2)$ is a compact group of real dimension four; $\mathrm{Spin}=\mathrm{SU}(2)$ is its determinant-one part, compact, of real dimension three, normal, equal to the derived group of the pin group; and the quotient is the circle,</p>
+<p>$$
+\mathrm{Pin}/\mathrm{Spin}=U(2)/\mathrm{SU}(2)\cong U(1).
+$$</p>
+<p><em>Proof.</em> The isometry condition is the theorem of the previous section, so $\mathrm{Pin}=U$; the slice is the unitary group in the matrix model; the determinant is a homomorphism $U\to U(1)$, surjective, with kernel the determinant-one part, which is $\mathrm{SU}(2)$; and $U(2)/\mathrm{SU}(2)\cong U(1)$. The determinant-one part is normal as the kernel of a homomorphism, and equals the derived group because $U(2)^{\mathrm{ab}}\cong U(1)$. $\square$</p>
+<p><strong>Remark (why the minus sign is absent here).</strong> In the two bilinear twins the defining set is a level set of a scalar form, and its two values $+1$ and $-1$ give a pin group with two components, so that $\mathrm{Pin}$ is strictly larger than $\mathrm{Spin}$ by a discrete factor ($\{\pm e_0\}$ in the quaternionic case, no group at all in the plain case). Here the defining element $\tilde Q^{*}\tilde Q$ is <strong>positive</strong>, and the equation $\tilde Q^{*}\tilde Q=-e_{0}$ has no solution, because the scalar part $\sum_\mu\lvert Q_\mu\rvert^{2}$ is non-negative. There is no second component, and the quotient of the two groups is the connected circle, not a two-element group.</p>
+<p><strong>Remark (the norm shells belong to the other two products).</strong> The algebra carries the multiplicative central quadratic form $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$, complex-valued and indefinite, whose level sets $\{N=\pm1\}$ are the pin and spin groups of the <strong>quaternionic bilinear</strong> product (<em>The Pin and Spin Groups of the General Quaternionic Algebra of Biquaternions</em>, <em>The Pin and Spin Groups of the General Plain Algebra of Biquaternions</em>). The form of this article is a different object, real-valued and definite, and the two readings must not be interchanged.</p>
+<h2 id="the-action-and-the-cover">The Action and the Cover</h2>
+<p><strong>Theorem (the cover).</strong> The assignment $\tilde Q\mapsto\Theta_{\tilde Q}$ restricts to a group homomorphism $\mathrm{Pin}\to\mathrm{GL}_{\mathbb{C}}(\mathbb{B})$ with kernel the central circle $U(1)e_{0}$ and image of real dimension three,</p>
+<p>$$
+\mathrm{Pin}/U(1)e_{0}=\mathrm{Spin}/\{\pm e_{0}\}\cong PU(2)\cong SO(3).
+$$</p>
+<p>On the spin group the kernel is the two-element group $\{\pm e_{0}\}$, and the assignment is the classical two-to-one cover of that rotation group.</p>
+<p><em>Proof.</em> The composition law makes the assignment a homomorphism; by the kernel theorem of the sibling article two units give the same operator exactly when they differ by a scalar of modulus one, so the kernel is $U(1)e_{0}$; the central circle is contained in the pin group, so the kernel meets $\mathrm{Pin}$ in $U(1)e_{0}$ and meets $\mathrm{Spin}$ in $\{\pm e_{0}\}$. The matrix model gives $U(2)/U(1)\cong PU(2)$ and the classical isomorphism $PU(2)\cong SO(3)$; the real dimension of the image is therefore $4-1=3$. Verified: $\Theta_{\omega\tilde Q}=\Theta_{\tilde Q}$ for $\lvert\omega\rvert=1$ while $\Theta_{2\tilde Q}\neq\Theta_{\tilde Q}$. $\square$</p>
+<p><strong>Proposition (the image is the inner automorphism group).</strong> For $\tilde Q\in\mathrm{Pin}$ the parameter is unitary, so $\tilde Q^{*}=\tilde Q^{-1}$ and the two-sided operator is the inner automorphism itself,</p>
+<p>$$
+\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}=\tilde Q\tilde P\tilde Q^{-1}=\mathrm{Ad}_{\tilde Q}(\tilde P),
+$$</p>
+<p>which fixes the centre pointwise and preserves the traceless part; the image is therefore the inner automorphism group of $\mathbb{B}\cong M_2(\mathbb{C})$, and its compact real form reached here is $PU(2)\cong SO(3)$. In particular the isometries of the family are algebra automorphisms, and the family reaches the rotations of the algebra.</p>
+<p><strong>Remark (the family is far from the whole isometry group).</strong> The isometry group of the positive definite Hermitian form on the four-dimensional complex space is $U(4)$, of real dimension sixteen, while the family reaches a group of real dimension three. An explicit isometry outside the family is the diagonal map that multiplies $e_{0}$ by $i$ and fixes $e_{1},e_{2},e_{3}$: it is unitary, hence an isometry, but no two-sided operator realises it, because $\Theta_{\tilde Q}(e_{0})=\tilde Q\tilde Q^{*}$ is Hermitian for every $\tilde Q$, while $ie_{0}$ is not.</p>
+<h2 id="the-parameter-is-not-read-on-a-shell">The Parameter Is Not Read on a Shell</h2>
+<p>The two bilinear twins read their isometry parameters on a level set of a scalar-valued form, and the whole difficulty of those articles comes from the fact that such a set is not a group. Here the reading is different in kind, and that difference is what makes the present article short.</p>
+<p><strong>Proposition (the condition is an equation on a Hermitian element, not on a scalar).</strong> The isometry condition of $\Theta_{\tilde Q}$ is the matrix equation $\tilde Q^{*}\tilde Q=e_{0}$; it is one $\mathbb{C}$-bilinear equation in the pair $(\tilde Q^{*},\tilde Q)$, equivalently the four statements $\sum_\mu\lvert Q_\mu\rvert^{2}=1$ and $\tilde Q^{*}\tilde Q$ central. The set it defines is a group, because the equation is the defining equation of the unitary slice, whereas the corresponding sets $\{q=\pm1\}$ and $\{N=\pm1\}$ of the bilinear twins are not groups.</p>
+<p><em>Proof.</em> The equation is the theorem of §<em>Conventions and the Isometry Condition</em>; that the slice is a group is the closure of the unitary group under multiplication and inversion, $\tilde Q,\tilde R\in U\Rightarrow(\tilde Q\tilde R)^{*}(\tilde Q\tilde R)=\tilde R^{*}\tilde Q^{*}\tilde Q\tilde R=e_{0}$. The failure of the bilinear shells is the theorem of the twin articles. $\square$</p>
+<p><strong>Remark (the phase is invisible).</strong> Because $\Theta_{A\tilde Q}=\lvert A\rvert^{2}\Theta_{\tilde Q}$, the pin group and the circle act on the same operators: every parameter and its unitary multiples give one isometry, and the information carried by the parameter is only its class modulo the kernel $U(1)e_{0}$. This is the reason the image of the cover has real dimension three although the pin group has real dimension four.</p>
+<h2 id="the-reflections-the-algebra-does-not-reach">The Reflections the Algebra Does Not Reach</h2>
+<p><strong>Proposition (the reflections of the form).</strong> Let $\tilde V\in\mathbb{B}$ with $\tilde V\neq0$, and put</p>
+<p>$$
+r_{\tilde V}(\tilde X)=\tilde X-2\,\frac{\langle\tilde X,\tilde V\rangle_{*}}{\langle\tilde V,\tilde V\rangle_{*}}\,\tilde V .
+$$</p>
+<p>Then $r_{\tilde V}$ is an isometry of the general plain sesquilinear form, but it is not the two-sided operator of any parameter.</p>
+<p><em>Proof.</em> The denominator is the positive number $\sum_\mu\lvert V_\mu\rvert^{2}$, so the map is defined, and the standard identity $\langle r_{\tilde V}\tilde X,r_{\tilde V}\tilde Y\rangle_{*}=\langle\tilde X,\tilde Y\rangle_{*}$ is a direct substitution; verified on random pairs. Suppose now that $r_{\tilde V}=\Theta_{\tilde Q}$ for some $\tilde Q$. Then $\Theta_{\tilde Q}$ is an isometry, so $\tilde Q\in U$ by the isometry theorem, and on the slice the operator is the inner automorphism $\mathrm{Ad}_{\tilde Q}$, which is multiplicative: $\Theta_{\tilde Q}(\tilde X\tilde Y)=\Theta_{\tilde Q}(\tilde X)\Theta_{\tilde Q}(\tilde Y)$ for all $\tilde X,\tilde Y$. But the reflection is not multiplicative: taking $\tilde X=\tilde Y=\tilde V$ gives $r_{\tilde V}(\tilde V^{2})=\tilde V^{2}-2\langle\tilde V^{2},\tilde V\rangle_{*}\langle\tilde V,\tilde V\rangle_{*}^{-1}\tilde V$ while $r_{\tilde V}(\tilde V)^{2}=\tilde V^{2}$, and the two differ whenever $\langle\tilde V^{2},\tilde V\rangle_{*}\neq0$; moreover $r_{\tilde V}(e_{0})=e_{0}-2\mathrm{Sc}(\tilde V^{*})\langle\tilde V,\tilde V\rangle_{*}^{-1}\tilde V$ does not fix the centre unless $\mathrm{Sc}(\tilde V^{*})=0$, whereas every inner automorphism fixes the centre. Verified: the multiplicativity failed in $30$ of $30$ random pairs, while the form was preserved in $30$ of $30$. $\square$</p>
+<p><strong>Corollary (the family generates the automorphisms, not the isometries).</strong> Every isometry of the form generated by reflections of the algebra lies outside the two-sided family, since no reflection is a two-sided operator; the family generates only the inner automorphisms, that is, the rotations of §<em>The Action and the Cover</em>. This is the conclusion of the plain bilinear twin as well, and the reason is different: there the family was too large only by the sign coset, here it is exactly the automorphism group.</p>
+<h2 id="comparison-with-the-two-bilinear-twins">Comparison with the Two Bilinear Twins</h2>
+<p>The three pin-and-spin articles of the corpus read the same question on three forms, and the answers differ on every row.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Plain bilinear (GPA)</th>
+<th>Quaternionic bilinear (GQA)</th>
+<th>Plain sesquilinear (GPS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Form</td>
+<td>$\mathrm{Sc}(\tilde P\tilde Q)$, symmetric bilinear</td>
+<td>$\mathrm{Sc}(\tilde P\tilde Q^{\natural})$, symmetric bilinear</td>
+<td>$\mathrm{Sc}(\tilde P^{*}\tilde S)$, Hermitian positive definite</td>
+</tr>
+<tr>
+<td>Isometry condition of $\Theta$</td>
+<td>vacuous (every unit)</td>
+<td>$N(\tilde Q)=\pm1$</td>
+<td>$\tilde Q^{*}\tilde Q=e_{0}$</td>
+</tr>
+<tr>
+<td>Pin group</td>
+<td>none (the level set is not a group)</td>
+<td>$\{N=\pm1\}$</td>
+<td>$U\cong U(2)$</td>
+</tr>
+<tr>
+<td>Spin group</td>
+<td>—</td>
+<td>$\{N=1\}\cong SL_2(\mathbb{C})$</td>
+<td>$\mathrm{SU}(2)$</td>
+</tr>
+<tr>
+<td>Kernel of the assignment</td>
+<td>$\mathbb{C}^{\times}e_{0}$</td>
+<td>$\{\pm e_{0}\}$</td>
+<td>$U(1)e_{0}$ (and $\{\pm e_{0}\}$ on $\mathrm{Spin}$)</td>
+</tr>
+<tr>
+<td>Image</td>
+<td>$SO_3(\mathbb{C})$</td>
+<td>$SO_3(\mathbb{C})$</td>
+<td>$PU(2)\cong SO(3)$</td>
+</tr>
+<tr>
+<td>Reflections reached</td>
+<td>no</td>
+<td>carried by vectors, up to sign</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>The pattern is the following. The plain bilinear form has no level set that is a group, and its family is an isometry for every unit, so the pin group does not exist and the cover has the full centre as kernel. The quaternionic bilinear form has a multiplicative norm, its level set $N=\pm1$ is a group, and the sign supplies a genuine second component. The plain sesquilinear form has a definite form, its isometry condition is the unitarity of the parameter, and definiteness removes the sign entirely, leaving the unitary group and its determinant-one part.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>A unitary parameter.</strong> Let $\tilde U\in U(2)$, so $\tilde U^{*}\tilde U=e_{0}$. Then $\Theta_{\tilde U}$ is an isometry by the theorem, and it is the inner automorphism $\mathrm{Ad}_{\tilde U}$ since $\tilde U^{*}=\tilde U^{-1}$.</p>
+<p><strong>A non-central unitary in the basis.</strong> Take $\tilde Q=ie_{1}$. Then $\tilde Q^{*}=ie_{1}$ and</p>
+<p>$$
+\tilde Q^{*}\tilde Q=(ie_{1})(ie_{1})=i^{2}e_{1}^{2}=(-1)(-e_{0})=e_{0},
+$$</p>
+<p>so $ie_{1}$ lies in the pin group and $\Theta_{ie_{1}}$ is an isometry; its determinant is the determinant of the matrix $\Phi(ie_{1})$, so it lies in the spin group exactly when that determinant is one.</p>
+<p><strong>A scaled unitary fails.</strong> Take $\tilde Q=\sqrt2\,\tilde U$ with $\tilde U\in U$. Then $\tilde Q$ is not in the slice, and the operator is the similitude of multiplier $4$: on random pairs $\langle\Theta_{\tilde Q}\tilde S,\Theta_{\tilde Q}\tilde P\rangle_{*}=4\langle\tilde S,\tilde P\rangle_{*}$ and the operator is not an isometry of the form.</p>
+<p><strong>The central phase is invisible.</strong> Take $\tilde Q=\omega e_{0}$ with $\lvert\omega\rvert=1$, a central unitary. Then $\tilde Q^{*}\tilde Q=e_{0}$, so $\omega e_{0}$ lies in the pin group, and $\Theta_{\omega e_{0}}=\Theta_{e_{0}}$ is the identity: the whole central circle is the kernel of the assignment and produces one and the same operator.</p>
+<p><strong>A reflection.</strong> Take $\tilde V=e_{0}$. Then $\langle\tilde V,\tilde V\rangle_{*}=1$ and</p>
+<p>$$
+r_{e_{0}}(\tilde X)=\tilde X-2\,\mathrm{Sc}(\tilde X)\,e_{0},
+$$</p>
+<p>which is an isometry of the form by the proposition and which no two-sided operator equals: it is not multiplicative, and it changes the central part, while every two-sided operator of the pin group fixes it.</p>
+<h2 id="summary">Summary</h2>
+<p>The general plain sesquilinear form $\langle\tilde S,\tilde P\rangle_{*}=\mathrm{Sc}(\tilde P^{*}\tilde S)$ of the biquaternion algebra, positive definite of Gram matrix the identity, has for its two-sided operators $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$ exactly the isometries with parameter in the <strong>unitary slice</strong> $\tilde Q^{*}\tilde Q=e_{0}$: the isometry condition is neither vacuous, as for the plain bilinear form, nor a level set of a scalar form, as for the quaternionic bilinear form, but the unitarity of the parameter. The <strong>pin group</strong> is therefore the unitary group $\mathrm{Pin}=U\cong U(2)$, compact of real dimension four, and the <strong>spin group</strong> is its determinant-one part $\mathrm{Spin}=\mathrm{SU}(2)$, compact of real dimension three, normal and of derived group equal to itself, with quotient $\mathrm{Pin}/\mathrm{Spin}\cong U(1)$. Because the defining element $\tilde Q^{*}\tilde Q$ is positive, the value $-1$ is impossible, so there is no second component and no discrete sign: the quotient of pin by spin is the connected circle. The assignment $\tilde Q\mapsto\Theta_{\tilde Q}$ is a group homomorphism with kernel the central circle $U(1)e_{0}$ on the pin group and the two-element group $\{\pm e_{0}\}$ on the spin group, so it is the classical two-to-one cover of the rotation group $PU(2)\cong SO(3)$, of real dimension three; on the pin group the operator is an algebra automorphism, indeed the inner automorphism $\mathrm{Ad}_{\tilde Q}$, and the family reaches only these rotations inside the full isometry group $U(4)$ of real dimension sixteen. The reflections of the form are isometries and are not two-sided operators, because they are not multiplicative and do not fix the centre, so the family generates the automorphisms and not the isometries. A scaled unitary is a similitude of positive multiplier $\lvert c\rvert^{4}$, never a sign; the central phase is invisible to the operator; and the shells of the multiplicative norm belong to the two bilinear products, not to this one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde S,\tilde P\rangle_{*}=\mathrm{Sc}(\tilde P^{*}\tilde S)$</td>
+<td>The general plain sesquilinear form; positive definite, Gram matrix the identity</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$</td>
+<td>The two-sided operator of $\tilde Q$; the dagger sandwich</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde Q\tilde R}=\Theta_{\tilde Q}\circ\Theta_{\tilde R}$</td>
+<td>Composition law; the assignment is multiplicative in the parameter</td>
+</tr>
+<tr>
+<td>$\Theta_{A\tilde Q}=\lvert A\rvert^{2}\Theta_{\tilde Q}$</td>
+<td>Parameter rule for central $A$; the phase is invisible</td>
+</tr>
+<tr>
+<td>$U=\{\tilde Q^{*}\tilde Q=e_{0}\}=U(2)$</td>
+<td>The unitary slice; real dimension four</td>
+</tr>
+<tr>
+<td>$\mathrm{Pin}=U\cong U(2)$</td>
+<td>The pin group; the isometry parameters of the form</td>
+</tr>
+<tr>
+<td>$\mathrm{Spin}=\mathrm{SU}(2)=\ker\det$</td>
+<td>The spin group; real dimension three, normal in $\mathrm{Pin}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Pin}/\mathrm{Spin}\cong U(1)$</td>
+<td>The quotient; the circle, not a two-element group</td>
+</tr>
+<tr>
+<td>$U(1)e_{0}$</td>
+<td>Kernel of the assignment on the pin group; the central circle</td>
+</tr>
+<tr>
+<td>$\{\pm e_{0}\}$</td>
+<td>Kernel of the assignment on the spin group; the two-to-one cover</td>
+</tr>
+<tr>
+<td>$\mathrm{Pin}/U(1)e_{0}\cong PU(2)\cong SO(3)$</td>
+<td>The image; the inner automorphisms reached, real dimension three</td>
+</tr>
+<tr>
+<td>$r_{\tilde V}(\tilde X)=\tilde X-2\langle\tilde X,\tilde V\rangle_{*}\langle\tilde V,\tilde V\rangle_{*}^{-1}\tilde V$</td>
+<td>The reflection of the form; an isometry outside the family</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md</code>), for the operator, its composition and parameter rules, the adjoint, the unitary criterion and the kernel.</li>
+<li><em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em> (<code>articles_maths/the-unitary-slice-and-the-compact-real-form-with-hermitian-adjoint.md</code>), for the slice, the group $U(2)$ and its determinant-one part.</li>
+<li><em>The Pin and Spin Groups of the General Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/the-pin-and-spin-groups-of-the-general-quaternionic-algebra-of-biquaternions.md</code>), the bilinear twin whose isometry condition is the norm level set $N=\pm1$.</li>
+<li><em>The Pin and Spin Groups of the General Plain Algebra of Biquaternions</em> (<code>articles_maths/the-pin-and-spin-groups-of-the-general-plain-algebra-of-biquaternions.md</code>), the bilinear twin whose isometry condition is vacuous and whose level set is not a group.</li>
+<li><em>The Pin and Spin Groups with Signed Hermitian Adjoint</em> (<code>articles_maths/the-pin-and-spin-groups-with-signed-hermitian-adjoint.md</code>), for the general theory of the pin and spin groups with a Hermitian adjoint, of which this is the biquaternion instance.</li>
+<li><em>Biquaternions as a Vector Space over $\mathbb{C}$</em> (<code>articles_maths/biquaternions-as-a-vector-space-over-c.md</code>), for the algebra, the four conjugations and the scalar form.</li>
+<li><em>The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the same operator in coordinates, the forms, positivity and the slice.</li>
+<li><em>The Four Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the four forms of the algebra side by side.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

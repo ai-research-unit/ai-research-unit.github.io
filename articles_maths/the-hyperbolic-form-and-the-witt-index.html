@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hyperbolic Form and the Witt Index — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hyperbolic-form-and-the-witt-index"><strong>The Hyperbolic Form and the Witt Index</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The forms of the layer are built from one indecomposable block: the <strong>hyperbolic plane</strong>, the two-dimensional form with a basis of two isotropic vectors paired to $1$. Every non-degenerate form is an orthogonal sum of hyperbolic planes and one <strong>anisotropic</strong> part, and the number of the planes is the <strong>Witt index</strong> of the form:</p>
+<p>$$
+h \cong \underbrace{\mathbb{H} \perp \dots \perp \mathbb{H}}_{m} \perp h_{\mathrm{an}}, \qquad m = \operatorname{ind}(h) .
+$$</p>
+<p>The decomposition is the <strong>Witt decomposition</strong>, the number $m$ is an invariant of the form by the cancellation theorem, and the pair (index, anisotropic part) classifies the form over a field. This article constructs the plane, proves that every isotropic vector lies in one, and states the decomposition and its consequences; the cancellation theorem and the general Witt theory are <em>Witt's Theorems</em>, the inertia over an ordered field is <em>The Indefinite Case and the Signature</em>, and the orthogonal complements and the isotropy that the construction uses are <em>Orthogonality, Isotropy and the Radical</em>.</p>
+<p>The hyperbolic form is the extremal case of the layer: it is as far from definite as a form of the given dimension can be, its index is maximal, its totally isotropic subspaces are the largest possible, and its Clifford algebra is the algebra of the exterior algebra, the reading of <em>Clifford Algebras in Finite Dimensions</em> and of <em>The Exterior Algebra</em> and <em>Involutions of the Exterior Algebra</em>. Over $\mathbb{R}$ the index of a form of signature $(p,q)$ is $\min(p,q)$, so the hyperbolic form of dimension $2n$ is the form of signature $(n,n)$. Throughout, $k$ is a field with an involution $\varsigma$ and $2$ invertible, $h$ is a non-degenerate Hermitian form on a finite-dimensional $k$-space $V$, and the Witt index is the largest dimension of a totally isotropic subspace.</p>
+<h2 id="the-hyperbolic-plane">The Hyperbolic Plane</h2>
+<p><strong>Definition.</strong> The <strong>hyperbolic plane</strong> $\mathbb{H}$ is the two-dimensional space with basis $e, f$ and the form</p>
+<p>$$
+h(e,e) = 0, \qquad h(f,f) = 0, \qquad h(e,f) = 1, \qquad h(f,e) = \varsigma(1) = 1 .
+$$</p>
+<p><strong>Proposition.</strong> The hyperbolic plane is non-degenerate, its Witt index is $1$, its matrix in the basis $(e,f)$ is $\begin{pmatrix}0 & 1\\ 1 & 0\end{pmatrix}$ of determinant $-1$, and its two coordinate lines are the totally isotropic subspaces of maximal dimension.</p>
+<p><strong>Proof.</strong> The matrix has determinant $-1$, so the form is non-degenerate; the vectors $e$ and $f$ are isotropic, and their lines are totally isotropic, so the index is at least $1$. A two-dimensional totally isotropic subspace would be the whole plane, whose form is non-zero, so the index is exactly $1$.</p>
+<p><strong>Proposition.</strong> Every non-zero isotropic vector $x$ of a non-degenerate form lies in a hyperbolic plane.</p>
+<p><strong>Proof.</strong> By non-degeneracy there is $y$ with $h(x,y) \neq 0$; replacing $y$ by $y - \frac{h(y,y)}{2h(x,y)}\,x$ makes it isotropic without changing $h(x,y)$, because $h(y - \lambda x, y - \lambda x) = h(y,y) - 2\lambda h(x,y)$ when $h(x,x) = 0$ and $2$ is invertible. The plane spanned by $x$ and the new $y$ has the matrix of the previous proposition in the basis $(x,y)$ up to a scalar, and it is a hyperbolic plane.</p>
+<p><strong>Corollary.</strong> The Witt index of a non-degenerate form is the largest number of pairwise orthogonal hyperbolic planes it contains, and it is zero exactly when the form is anisotropic.</p>
+<h2 id="the-hyperbolic-form">The Hyperbolic Form</h2>
+<p><strong>Definition.</strong> A form is <strong>hyperbolic</strong> when it is an orthogonal sum of hyperbolic planes, $h \cong \mathbb{H}^{\perp m}$; the form is <strong>split</strong> when in addition $m = \dim V/2$.</p>
+<p><strong>Proposition.</strong> The hyperbolic form $\mathbb{H}^{\perp m}$ has dimension $2m$, Witt index $m$, and its maximal totally isotropic subspaces have dimension $m$; it is the form of signature $(m,m)$ over $\mathbb{R}$.</p>
+<p><strong>Proof.</strong> The basis of the $2m$ vectors $e_{1},f_{1},\dots,e_{m},f_{m}$ is orthonormal-mixed: $h(e_{i},f_{j}) = \delta_{ij}$ and the other pairings vanish. The span of the $e_{i}$ and the span of the $f_{i}$ are totally isotropic of dimension $m$, and no totally isotropic subspace has a larger dimension because the form on a $(m+1)$-dimensional subspace has a non-zero restriction by the rank bound $\dim W + \dim W^{\perp} = 2m$ with $W$ totally isotropic giving $W \subseteq W^{\perp}$ and hence $2\dim W \leq 2m$. Over $\mathbb{R}$ the diagonalisation of the form has $m$ positive and $m$ negative squares.</p>
+<h2 id="the-witt-decomposition">The Witt Decomposition</h2>
+<p><strong>Theorem (Witt).</strong> Every non-degenerate form decomposes as an orthogonal sum</p>
+<p>$$
+V = H \perp V_{\mathrm{an}}, \qquad H \cong \mathbb{H}^{\perp m}, \quad V_{\mathrm{an}} \text{ anisotropic},
+$$</p>
+<p>with $m = \operatorname{ind}(h)$; the decomposition is unique in the sense that the index and the isometry class of the anisotropic part are invariants of the form.</p>
+<p><strong>Proof.</strong> The construction is by induction on the index: if the form is anisotropic the decomposition is trivial, and otherwise an isotropic vector spans a hyperbolic plane by the previous proposition, whose orthogonal complement is non-degenerate by <em>Orthogonality, Isotropy and the Radical</em> and has index one less. The uniqueness is Witt's cancellation theorem, which states that $h_{1} \perp h \cong h_{2} \perp h$ implies $h_{1} \cong h_{2}$ for non-degenerate forms; the theorem and its proof are <em>Witt's Theorems</em>.</p>
+<p><strong>Corollary (the classification).</strong> Two non-degenerate forms over a field with an involution and $2$ invertible are isometric exactly when they have the same Witt index and isometric anisotropic parts; the classification of the forms reduces to the classification of the anisotropic forms, and the classes form the Witt group of the layer, <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>.</p>
+<p><strong>Corollary (the order relations).</strong> A form has index at least $m$ exactly when it contains $\mathbb{H}^{\perp m}$ as an orthogonal summand; adding a hyperbolic plane increases the index by one and leaves the anisotropic part unchanged; the index is monotone under the orthogonal inclusion of non-degenerate forms.</p>
+<h2 id="the-hyperbolic-form-and-the-algebra">The Hyperbolic Form and the Algebra</h2>
+<p><strong>Proposition.</strong> The Clifford algebra of the hyperbolic plane over a field of characteristic not two is the full matrix algebra $M_{2}(k)$, and the Clifford algebra of $\mathbb{H}^{\perp m}$ is $M_{2^{m}}(k)$; over $\mathbb{R}$ the hyperbolic form of dimension $2m$ has the Clifford algebra $M_{2^{m}}(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> The Clifford algebra of a hyperbolic plane has a basis $\{1, e, f, ef\}$ with $e^{2} = f^{2} = 0$ and $ef + fe = -2$, which is the algebra of the two matrices $\begin{pmatrix}0&0\\ -2&0\end{pmatrix}$ and $\begin{pmatrix}0&1\\0&0\end{pmatrix}$; the identification is the matrix realisation of the exterior algebra, and the product statement follows by the tensor product of the Clifford algebras of the orthogonal summands.</p>
+<p><strong>Corollary.</strong> The hyperbolic form is the form whose Clifford algebra is the matrix algebra; the split cases of the classification of the Clifford algebras are the hyperbolic ones, and the periodicity and the classification are <em>The Low-Dimensional Classification</em>, <em>Bott Periodicity and the Classification</em> and <em>The Brauer–Wall Group and the Eightfold Way</em>. The exterior-algebra reading is <em>The Exterior Algebra</em> and <em>Involutions of the Exterior Algebra</em>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-plane-and-the-lorentz-form">The Plane and the Lorentz Form</h3>
+<p>The hyperbolic plane is the form of signature $(1,1)$ over $\mathbb{R}$; the Lorentz form of signature $(1,n-1)$ has index $1$ and anisotropic part of dimension $n-2$, its unique hyperbolic plane being the light plane of the two null directions of the physics articles.</p>
+<h3 id="the-split-form">The Split Form</h3>
+<p>The hyperbolic form $\mathbb{H}^{\perp n}$ is the split form of dimension $2n$ and signature $(n,n)$; it is the form of the maximum index and of the maximum totally isotropic dimension $n$, and it is the form of the split groups of <em>The Indefinite Case and the Signature</em>.</p>
+<h3 id="the-biquaternion-algebra">The Biquaternion Algebra</h3>
+<p>On $\mathbb{B}$ with the form $\operatorname{Sc}(\bar{\tilde Q}\tilde Q')$ of signature $(2,6)$ the index is $2$, the anisotropic part has dimension $4$, and the decomposition into two hyperbolic planes is the Lorentzian reading of <em>The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form</em>.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The <strong>hyperbolic plane</strong> $\mathbb{H}$ has an isotropic basis $(e,f)$ with $h(e,f) = 1$; it is non-degenerate, its index is $1$, and its matrix has determinant $-1$.</li>
+<li>Every non-zero isotropic vector of a non-degenerate form lies in a hyperbolic plane.</li>
+<li>A <strong>hyperbolic form</strong> is an orthogonal sum of hyperbolic planes; $\mathbb{H}^{\perp m}$ has dimension $2m$, index $m$, and signature $(m,m)$ over $\mathbb{R}$.</li>
+<li>The <strong>Witt decomposition</strong> writes every non-degenerate form as $H \perp V_{\mathrm{an}}$ with $H$ hyperbolic and $V_{\mathrm{an}}$ anisotropic; the index and the anisotropic part are invariants by Witt's cancellation.</li>
+<li>The classification of the forms is by the Witt index together with the anisotropic part, and the classes form the Witt group.</li>
+<li>The Clifford algebra of a hyperbolic form is a full matrix algebra, the exterior-algebra realisation of the split case.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>the hyperbolic plane with basis $e, f$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^{\perp m}$</td>
+<td>the orthogonal sum of $m$ hyperbolic planes</td>
+</tr>
+<tr>
+<td>$h_{\mathrm{an}}$</td>
+<td>the anisotropic part of a Witt decomposition</td>
+</tr>
+<tr>
+<td>$\operatorname{ind}(h)$</td>
+<td>the Witt index of a non-degenerate form</td>
+</tr>
+<tr>
+<td>$(m,m)$</td>
+<td>the signature of the hyperbolic form over $\mathbb{R}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for the hyperbolic plane, the Witt decomposition and the cancellation theorem.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em>, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for the Witt index, the anisotropic forms and the classification over a field.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em>, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for the hyperbolic forms over a ring with an involution and the Witt group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

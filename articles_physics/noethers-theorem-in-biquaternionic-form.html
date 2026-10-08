@@ -206,7 +206,7 @@ $$</p>
 T^0{}_0 = |\partial_0\phi|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2 > 0,
 $$</p>
 <p>positive, in contrast with the charge density, whose sign is not fixed. This was checked by symbolic recomputation on the on-shell superposition of three plane waves: all four divergences $\partial_\mu T^\mu{}_\nu$ simplify to zero, and $T^0{}_0$ is exactly the expression above.</p>
-<p><strong>Why the framework does not write this as one biquaternion.</strong> A symmetric rank-two tensor in four dimensions has ten independent components, while a biquaternion has four complex coefficients, that is eight real components, and $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*}$ carries only four of them. So no single biquaternion can be $T^{\mu\nu}$; the framework writes the translation current as a <strong>biquaternion bilinear</strong>, one basis element for each index. <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em> constructs exactly this for the Maxwell field, $T^\mu{}_\nu = \tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, and shows that the four-component object is its time row. The framework's energy–momentum biquaternion is therefore not the whole Noether current of translations; it is the energy–flux part of it.</p>
+<p><strong>Why the framework does not write this as one biquaternion.</strong> A symmetric rank-two tensor in four dimensions has ten independent components, while a biquaternion has four complex coefficients, that is eight real components, and $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*}$ carries only four of them. So no single biquaternion can be $T^{\mu\nu}$; the framework writes the translation current as a <strong>bigeneral quaternionic bilinear</strong>, one basis element for each index. <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em> constructs exactly this for the Maxwell field, $T^\mu{}_\nu = \tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, and shows that the four-component object is its time row. The framework's energy–momentum biquaternion is therefore not the whole Noether current of translations; it is the energy–flux part of it.</p>
 <p><strong>The Maxwell case in the corpus form.</strong> For the electromagnetic field the corpus's object is $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_0 + \frac{i}{c}\mathbf{S}\in\mathbb{M}_+$, with $W$ the energy density and $\mathbf{S} = \mathbf{E}\times\mathbf{H}$ the Poynting vector, and the conservation law is $\tilde{\nabla}\tilde{W} = -\tilde{P}$ with $\tilde{P}$ the power–force density; the source-free case is $\tilde{\nabla}\tilde{W} = 0$. Its scalar part is the Poynting theorem, and the sign structure is the one the energy–momentum exercise verifies: the Hermitian form passes the test, while the real form $W + \frac{1}{c}\mathbf{S}$ does not, by a factor $i$ on the Poynting part. Read as a Noether statement, $\tilde{\nabla}\tilde{W} = -\tilde{P}$ says that the translation current of the Maxwell field is conserved up to the work done on the charges — the source is present, so the field alone is not closed.</p>
 <p><strong>A caution on the $ict$ convention.</strong> The energy density is not $\mathcal{L}$ and is not obtained from $\mathcal{L}$ by a flat sum: in the $ict$ convention the time direction carries the sign that the metric would carry, and mixing the two conventions produces the wrong sign on the time derivative. The canonical tensor above is written with the physical index positions, where $T^0{}_0$ is manifestly positive; the biquaternion packaging must be read through the same convention. This is the same caution the energy–momentum exercise records for the trace.</p>
 <h2 id="lorentz-invariance-and-the-angular-momentum-bivector">Lorentz Invariance and the Angular-Momentum Bivector</h2>
@@ -385,15 +385,15 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
-<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+<td>the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$</td>
-<td>the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$</td>
+<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
-<td>the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

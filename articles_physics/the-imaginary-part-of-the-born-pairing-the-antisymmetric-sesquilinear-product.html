@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-imaginary-part-of-the-born-pairing-the-antisymmetric-sesquilinear-product"><strong>The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every value of the plain sesquilinear product $\tilde P\tilde Q^{*}$ splits into two halves, and the companion band read the first of them. This article is the first of the two articles of the second band, and it reads the <strong>antisymmetric half</strong>:</p>
+<p>$$
+\tilde P\wedge_{*}\tilde Q=\tfrac12\Bigl(\tilde P\tilde Q^{*}-\bigl(\tilde P\tilde Q^{*}\bigr)^{\natural}\Bigr)=\mathrm{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)=-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q}.
+$$</p>
+<p>The value is a <strong>pure vector</strong> and the scalar part of the parent value is exactly what the subtraction removes, so the two bands of the block carry the two halves of one number: the companion band carries the central half, which the corpus reads as a <strong>probability</strong>, and this band carries the vector half, which the corpus reads as a <strong>phase</strong> or an <strong>interference term</strong>. The split between the two bands of the block is exactly this split.</p>
+<p>Three facts distinguish the operation from a bilinear antisymmetrisation, and they organise the article. Its <strong>diagonal does not vanish</strong>: $\tilde Q\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})$ is the vector part of the sesquilinear square and is a genuine quadratic condition, not an identity. Its <strong>trace form vanishes</strong>, so it contributes nothing to the scalar part of the algebra, in exact contrast with the companion band, which is the whole scalar form. And its <strong>symmetry law is conjugate-alternation</strong>, $\tilde P\wedge_{*}\tilde Q=-\overline{\tilde Q\wedge_{*}\tilde P}$, which is the antisymmetric law of the class and not the alternation of the bilinear theory. On these three facts the reading of the value as a <strong>phase</strong> is built, and the bound at the end of the article is that a phase is <em>read from</em> a value and is not <em>measured by</em> the operation.</p>
+<p><strong>Boundaries.</strong> The operation is <em>Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions</em>; the diagonal, its vanishing criterion and the quadric it defines, and the Jacobi failure, are <em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>; the general construction of the two parts is <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>. The physical phases are read elsewhere and are owned elsewhere: the phase of a path is <em>The Path Integral in Biquaternionic Form</em>, the interference experiment is <em>The Double-Slit Experiment in Biquaternionic Form</em>, the geometric phase of a spin is <em>Geometric Phases of Non-Relativistic Spin in Biquaternionic Form</em> and <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em>, and the phase of a polarisation is <em>Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</em>. The positivity and the states are <em>Mass, Rank and the Positivity of the Dagger</em>, <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em> and <em>The Ontology of the Quantum State under the Biquaternion Framework</em>. The other half of the same value is <em>The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing</em>, and the centrality of probability there is <em>Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone</em>.</p>
+<p><strong>Conventions.</strong> As in the companion articles and in <em>Conventions in the Biquaternion Universe</em>: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$; $\tilde Q=Q_0e_0+\mathbf Q$, $Q_\mu\in\mathbb{C}$; ${}^{\natural}$ the natural conjugation, $\overline{\cdot}$ the coefficientwise one, ${}^{*}=\overline{\cdot}\circ{}^{\natural}$; $\mathrm{Sc}$ the scalar part, $\mathrm{Vect}$ the vector part, $\mathrm{Tr}=2\,\mathrm{Sc}$. The bilinear dot and cross products of vector parts are written $(\mathbf P,\mathbf Q)$ and $\mathbf P\times\mathbf Q$. The Hermitian form is $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$, the operation of the companion band is $\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)e_0$, and the operation of this band is $\tilde P\wedge_{*}\tilde Q$. A state is $\tilde\rho=\tfrac12(e_0+i\mathbf r)$ with $\mathbf r\in\mathbb{R}^{3}$ and $\lvert\mathbf r\rvert\le1$, and a projector is $\tilde\Pi_{\pm}(\hat{\boldsymbol{\mu}})=\tfrac12(e_0\pm i\hat{\boldsymbol{\mu}})$ with $\lvert\hat{\boldsymbol{\mu}}\rvert=1$. The sectors are $\mathbb{M}_{\pm}$ and the centre is $\mathbb{C}_{\mathbb{B}}=\{\lambda e_0\}$.</p>
+<h2 id="the-operation-and-its-value">The Operation and Its Value</h2>
+<h3 id="definition">Definition</h3>
+<p>The exchange that keeps the class of the plain sesquilinear product is the interchange composed with the coefficientwise conjugation of the value, equivalently the natural conjugation of the parent value, $(\tilde P\tilde Q^{*})^{\natural}=\overline{\tilde Q\tilde P^{*}}$. Its antisymmetric half is the operation of this block,</p>
+<p>$$
+\tilde P\wedge_{*}\tilde Q=\tfrac12\Bigl(\tilde P\tilde Q^{*}-\bigl(\tilde P\tilde Q^{*}\bigr)^{\natural}\Bigr)=\mathrm{Vect}\bigl(\tilde P\tilde Q^{*}\bigr).
+$$</p>
+<p>The two halves of the parent value therefore reconstruct it,</p>
+<p>$$
+\tilde P\tilde Q^{*}=\tilde P\circledast\tilde Q+\tilde P\wedge_{*}\tilde Q=H(\tilde P,\tilde Q)e_0+\mathrm{Vect}\bigl(\tilde P\tilde Q^{*}\bigr),
+$$</p>
+<p>a central part and a vector part. Substituting the coordinate rule of the parent product gives the value in coordinates,</p>
+<p>$$
+\tilde P\wedge_{*}\tilde Q=-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q},
+$$</p>
+<p>each term of which is a vector part, so the value is <strong>pure vector</strong> and the operation has image in the vector subspace $\mathrm{Vect}(\mathbb{B})$ (<em>Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions</em>).</p>
+<p><strong>Remark (verified).</strong> The half-difference is the vector part of $\tilde P\tilde Q^{*}$ on $100$ random pairs, and the reconstruction $\tilde P\tilde Q^{*}=\tilde P\circledast\tilde Q+\tilde P\wedge_{*}\tilde Q$ holds identically.</p>
+<h3 id="the-law">The Law</h3>
+<p>Because the second slot conjugates, the symmetry that survives the antisymmetrisation is not the alternation of the bilinear theory but the <strong>conjugate-alternation</strong></p>
+<p>$$
+\tilde P\wedge_{*}\tilde Q=-\overline{\tilde Q\wedge_{*}\tilde P},
+$$</p>
+<p>the bar acting coefficientwise on the vector value. A bilinear antisymmetrisation is alternating, vanishes on the diagonal, and satisfies $\tilde P\wedge\tilde Q=-\tilde Q\wedge\tilde P$; here the coefficientwise conjugation is part of the operation, and the exchange of the arguments alone does <strong>not</strong> reverse the sign. This is the general phenomenon of <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em> read on this block, and it is why the whole bilinear vocabulary — alternation, diagonal vanishing, a Jacobi identity of the usual form — is unavailable and must be replaced.</p>
+<p><strong>Remark (verified).</strong> $\tilde P\wedge_{*}\tilde Q+\overline{\tilde Q\wedge_{*}\tilde P}=0$ on $100$ random pairs, to $<10^{-13}$.</p>
+<h2 id="the-diagonal-is-not-zero">The Diagonal Is Not Zero</h2>
+<h3 id="the-vector-part-of-the-square">The Vector Part of the Square</h3>
+<p>Putting $\tilde P=\tilde Q$ in the definition, the parent value $X=\tilde Q\tilde Q^{*}$ is Hermitian, $X=x_0e_0+i\mathbf x$ with $x_0$ real and $\mathbf x$ a real vector, so $X^{\natural}=x_0e_0-i\mathbf x$ and the half-difference keeps the vector part alone; hence</p>
+<p>$$
+\tilde Q\wedge_{*}\tilde Q=\mathrm{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr),
+$$</p>
+<p>the <strong>vector part of the sesquilinear square</strong>. Writing the element in real coordinates, $Q_0=a+ib$ and $\mathbf Q=\mathbf u+i\mathbf v$ with $a,b\in\mathbb{R}$ and $\mathbf u,\mathbf v$ real vectors,</p>
+<p>$$
+\tilde Q\wedge_{*}\tilde Q=2i\bigl(a\,\mathbf v-b\,\mathbf u+\mathbf u\times\mathbf v\bigr),
+$$</p>
+<p>a <strong>purely imaginary vector</strong>, quadratic and homogeneous in the real coordinates (<em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>). The diagonal is therefore not an identity but a genuine quadratic map, and its vanishing is a condition and not a law.</p>
+<p><strong>Remark (verified).</strong> The real-coordinate form was recomputed on $100$ random elements to $<10^{-13}$; $e_1+ie_2$ gives $2ie_3$ and $e_0+ie_1$ gives $2ie_1$.</p>
+<h3 id="the-witness-and-the-vanishing-set">The Witness and the Vanishing Set</h3>
+<p>The witness named by the menu is $\tilde Q=e_1+ie_2$, for which $\mathbf u=e_1$, $\mathbf v=e_2$, $a=b=0$ and the cross term alone survives:</p>
+<p>$$
+(e_1+ie_2)\wedge_{*}(e_1+ie_2)=2i\,e_1\times e_2=2ie_3\neq0 .
+$$</p>
+<p>So the antisymmetric part of the block is <strong>not zero on the diagonal</strong>, which is the exact opposite of the two algebra rows, where the antisymmetric part is alternating and vanishes on the diagonal. The vanishing set of the diagonal is a genuine condition: $\tilde Q\wedge_{*}\tilde Q=0$ exactly when the square $\tilde Q\tilde Q^{*}$ is central, and it is a quadric cone that contains the centre and the two quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ and misses the element $e_1+ie_2$ (<em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>, which owns the criterion and the quadric).</p>
+<p><strong>Remark (the image of the diagonal).</strong> The image of the map $\tilde Q\mapsto\tilde Q\wedge_{*}\tilde Q$ is the whole real three-dimensional space $i\,\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$ of the purely imaginary vectors, which is the vector part of the informational sector $\mathbb{M}_{+}$. The diagonal is a surjection onto the imaginary vectors and its zeros form the quadric it carries; the two are different objects, and the mathematics article holds their distinction.</p>
+<h2 id="the-vector-part-as-the-phase">The Vector Part as the Phase</h2>
+<h3 id="the-two-halves-of-one-amplitude">The Two Halves of One Amplitude</h3>
+<p>The parent value is one amplitude, and its two halves are read on two sides of the same physical question. The central half,</p>
+<p>$$
+\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)e_0,
+$$</p>
+<p>is the number that the corpus reads as a <strong>probability</strong>, the real part of the Born pairing on the state side. The vector half,</p>
+<p>$$
+\tilde P\wedge_{*}\tilde Q=\mathrm{Vect}\bigl(\tilde P\tilde Q^{*}\bigr),
+$$</p>
+<p>is the part of the same value that the exchange reverses and conjugates, and the corpus reads it as a <strong>phase</strong> and as the <strong>interference term</strong> of the pairing. This article owns the second half and does not read the first.</p>
+<p><strong>Remark (what is algebraic here, and what is reading).</strong> The algebraic facts are that the parent value is the sum of the two operations, that the first is central and positive on the diagonal, and that the second is a <strong>pure vector</strong>, purely imaginary on the diagonal, which the exchange sends to minus its conjugate. The identification of the first with a probability and of the second with a phase is the corpus's physical reading of the pair, stated in the two menu comments of the bands and developed in the two articles. The reading is forced in the weak sense that the central part is the only part that can carry a probability (the companion band's argument) and the vector part is the only part that reverses under the exchange, which is what a relative phase does; it is not forced in the strong sense that the algebra names a phase.</p>
+<h3 id="where-the-phase-lives">Where the Phase Lives</h3>
+<p>The value of the operation is a <strong>pure vector</strong>, $\mathrm{Vect}(\tilde P\tilde Q^{*})\in\mathrm{Vect}(\mathbb{B})$, with no scalar part; its complex coordinates are general, and the <strong>diagonal</strong> is where the value becomes purely imaginary — exactly the central imaginary $i$ times a real vector. Those purely imaginary vectors are exactly the vector part $i\mathbb{R}^{3}$ of the informational sector $\mathbb{M}_{+}=\mathbb{R}e_0\oplus i\mathbb{R}^{3}$, and they place the two halves of a diagonal amplitude in the two parts of the coordinate at once: the <strong>probability</strong> is the central, $e_0$ direction, and the <strong>coherence</strong> is the imaginary vector $i\mathbb{R}^{3}$. On the state side the statement is sharp. For $\tilde\rho=\tfrac12(e_0+i\mathbf r)$, $\tilde\rho^{*}=\tilde\rho$, so the operation is the vector part of the square, and</p>
+<p>$$
+\tilde\rho\wedge_{*}\tilde\rho=\mathrm{Vect}\bigl(\tilde\rho^{2}\bigr)=\tfrac12\,i\,\mathbf r .
+$$</p>
+<p>The antisymmetric square of a state is its <strong>Bloch vector</strong>, that is the direction and the magnitude of the state's coherence, while the symmetric square of the same state is its <strong>purity</strong>, $\tilde\rho\circledast\tilde\rho=\tfrac12\mathrm{Tr}(\tilde\rho^{2})e_0$ (the companion band). One value, one state: a central number and an imaginary vector, purity and coherence direction.</p>
+<p><strong>Remark (verified).</strong> $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\mathbf r$ on $100$ random states, to $<10^{-13}$.</p>
+<p><strong>Remark (the phase is the central imaginary, and the corpus says so).</strong> The corpus identifies the symbol $i$ of the phase $e^{iS/\hbar}$ with the <strong>central scalar imaginary</strong>, places the exponent in the material sector, and records that only <em>relative</em> phases of paths are observable (<em>The Path Integral in Biquaternionic Form</em>). The vector part of the pairing is written with that same central $i$, and this is the algebraic contact between the two statements: the phase-like half of a pairing is the half that is imaginary under the natural conjugation. The contact is a consistency and not a derivation, and it is stated as such.</p>
+<h3 id="interference-and-the-bound">Interference, and the Bound</h3>
+<p>The reading of the vector part as an interference term is the reading of the corpus's interference experiment. In <em>The Double-Slit Experiment in Biquaternionic Form</em> the two route amplitudes add and the cross term $2\,\mathrm{Re}\,\mathrm{Tr}(\psi_1^{\dagger}\psi_2)$ is the interference pattern; the cross term pairs two amplitudes, and the part of a pairing that carries the relative-phase information is the vector part $\mathrm{Vect}(\tilde P\tilde Q^{*})$. The operation of this article is that pairing half. It supplies the amplitude-like vector the interference is built from; it does not supply the two paths, the measure or the action, and it does not select an outcome.</p>
+<p><strong>The caution, and it is the bound of the band.</strong> A <strong>phase is read from a value and is not measured by the operation</strong>. The operation returns a vector in the informational directions; a <em>phase angle</em> is a relative quantity, extracted from two such vectors and only up to the central phase, and the corpus's phase articles — geometric phases, Berry phase, Pancharatnam's phase — own the physical phases and their measurement-like readings. This article reads the algebraic half of the pairing and does not trespass on those articles' subject; in particular it does not claim that $\tilde P\wedge_{*}\tilde Q$ is an observable, and it does not claim that a failed bracket (the companion article of this band) or a vanished trace form gives a phase a dynamical law.</p>
+<h2 id="the-trace-form-vanishes">The Trace Form Vanishes</h2>
+<p><strong>The trace form of the block is zero.</strong> For all biquaternions the scalar part of the value vanishes,</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde P\wedge_{*}\tilde Q\bigr)=0,
+$$</p>
+<p>because each of the three terms of the coordinate rule is a vector part. The block therefore contributes <strong>nothing</strong> to the scalar part of the algebra, in exact contrast with the companion band, whose operation <em>is</em> the scalar form, $\mathrm{Sc}(\tilde P\circledast\tilde Q)=H(\tilde P,\tilde Q)$ (<em>The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra</em>, <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>). The two bands are the two extreme cases of one split: the symmetric half carries the whole central form, and the antisymmetric half carries none of it. Read physically, the probability content of the pairing is entirely in the companion band; this band carries only the phase content, and it can carry nothing else, since its value has no scalar part to carry.</p>
+<h2 id="the-operation-is-not-alternating">The Operation Is Not Alternating</h2>
+<p>The vocabulary of this band has to be used exactly, because the bilinear words fail one by one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bilinear antisymmetrisation (for example $\mathrm{APA}$)</th>
+<th>the plain sesquilinear antisymmetrisation, this block</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alternating: $\tilde P\wedge\tilde P=0$</td>
+<td>conjugate-alternating: $\tilde P\wedge_{*}\tilde P=\mathrm{Vect}(\tilde P\tilde P^{*})\neq0$ in general</td>
+</tr>
+<tr>
+<td>$\tilde P\wedge\tilde Q=-\tilde Q\wedge\tilde P$</td>
+<td>$\tilde P\wedge_{*}\tilde Q=-\overline{\tilde Q\wedge_{*}\tilde P}$</td>
+</tr>
+<tr>
+<td>values in the vector subspace $\mathrm{Vect}(\mathbb{B})$</td>
+<td>values in the vector subspace $\mathrm{Vect}(\mathbb{B})$, purely imaginary on the diagonal</td>
+</tr>
+<tr>
+<td>trace form zero</td>
+<td>trace form zero</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two operations share the vector-valued image and the vanishing trace form, and they differ in the diagonal and in the law. The bilinear antisymmetrisation is the cross product and closes as a Lie algebra; this block fails the Jacobi identity, which is the subject of the companion article of the band, <em>Interference without a Lie Algebra: the Jacobi Failure in the State Space</em>. The comparison with $\mathrm{APA}$ is the comparison between a bracket that closes and a bracket that does not, and it is developed there.</p>
+<h2 id="ledger">Ledger</h2>
+<p><strong>What the operation does.</strong>
+- Carries the vector half of the plain sesquilinear amplitude: $\tilde P\tilde Q^{*}=\tilde P\circledast\tilde Q+\tilde P\wedge_{*}\tilde Q$.
+- Exposes the coherence of a state on its diagonal: $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\mathbf r$, the Bloch vector times $i/2$.
+- Has values in the vector subspace $\mathrm{Vect}(\mathbb{B})$, with the image of the diagonal the purely imaginary vectors $i\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$, the vector part of the informational sector $\mathbb{M}_{+}$.</p>
+<p><strong>What the operation does not do.</strong>
+- It does not carry a probability: its trace form is zero and its scalar part vanishes.
+- It does not measure a phase: the value is read, and a phase angle is a relative quantity extracted from two values.
+- It is not alternating, and its diagonal is not zero: the bilinear vocabulary of a cross product does not apply.
+- It is a pairing and not a measurement, and it supplies no state and no dynamics.</p>
+<h2 id="summary">Summary</h2>
+<p>The antisymmetric plain sesqualgebra carries the <strong>vector half</strong> of the plain sesquilinear amplitude, $\tilde P\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})=-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q}$, so that $\tilde P\tilde Q^{*}=\tilde P\circledast\tilde Q+\tilde P\wedge_{*}\tilde Q$ splits one value into its <strong>probability</strong> half and its <strong>phase</strong> half. The value is a <strong>pure vector</strong> (no scalar part), the trace form vanishes, and the law is the <strong>conjugate-alternation</strong> $\tilde P\wedge_{*}\tilde Q=-\overline{\tilde Q\wedge_{*}\tilde P}$. Its <strong>diagonal is not zero</strong>: $\tilde Q\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})=2i(a\mathbf v-b\mathbf u+\mathbf u\times\mathbf v)$ is a quadratic condition, and the witness $e_1+ie_2$ gives $2ie_3$, the exact opposite of the two algebra rows, where the antisymmetric part is alternating. On the state side the diagonal is the <strong>coherence direction</strong>, $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\mathbf r$, while the diagonal of the companion band is the purity. The reading is that the vector half of a pairing is the phase and the interference term, in the algebraic sense that it is the half reversed and conjugated by the exchange; the bound is that a phase is <strong>read from</strong> a value and is <strong>not measured by</strong> the operation, and that the physical phases remain the property of the phase articles of the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})$</td>
+<td>the antisymmetric part (APS); the operation of the block</td>
+</tr>
+<tr>
+<td>$\tilde P\wedge_{*}\tilde Q=-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q}$</td>
+<td>the coordinate rule</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde Q^{*}=\tilde P\circledast\tilde Q+\tilde P\wedge_{*}\tilde Q$</td>
+<td>one amplitude, a central half and a vector half</td>
+</tr>
+<tr>
+<td>$\tilde P\wedge_{*}\tilde Q=-\overline{\tilde Q\wedge_{*}\tilde P}$</td>
+<td>conjugate-alternation</td>
+</tr>
+<tr>
+<td>$\tilde Q\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})=2i(a\mathbf v-b\mathbf u+\mathbf u\times\mathbf v)$</td>
+<td>the diagonal; not zero in general</td>
+</tr>
+<tr>
+<td>$(e_1+ie_2)\wedge_{*}(e_1+ie_2)=2ie_3$</td>
+<td>the witness of the non-vanishing diagonal</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde P\wedge_{*}\tilde Q)=0$</td>
+<td>the trace form vanishes</td>
+</tr>
+<tr>
+<td>$\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\mathbf r$</td>
+<td>the diagonal of a state is its Bloch vector times $i/2$</td>
+</tr>
+<tr>
+<td>$i\,\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$</td>
+<td>the purely imaginary vectors; the image of the diagonal</td>
+</tr>
+<tr>
+<td>$\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)e_0$</td>
+<td>the symmetric half, read in the companion band</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra-of-biquaternions.md</code>), for the operation, its class and its law.</li>
+<li><em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em> (<code>articles_maths/the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.md</code>), for the diagonal, its vanishing criterion and the quadric.</li>
+<li><em>The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra</em> (<code>articles_maths/the-sesquilinear-pairing-of-the-antisymmetric-plain-sesqualgebra.md</code>), for the pairings of the values.</li>
+<li><em>The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing</em> (<code>articles_physics/the-hermitian-form-as-a-product-positivity-and-the-real-part-of-the-born-pairing.md</code>), the companion band of the same value.</li>
+<li><em>Interference without a Lie Algebra: the Jacobi Failure in the State Space</em> (<code>articles_physics/interference-without-a-lie-algebra-the-jacobi-failure-in-the-state-space.md</code>), the companion article of the band.</li>
+<li><em>The Double-Slit Experiment in Biquaternionic Form</em> (<code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>), which owns the interference experiment.</li>
+<li><em>Geometric Phases of Non-Relativistic Spin in Biquaternionic Form</em> (<code>articles_physics/geometric-phases-of-non-relativistic-spin-in-biquaternionic-form.md</code>) and <em>Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</em> (<code>articles_physics/pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.md</code>), which own the physical phases.</li>
+<li><em>Mass, Rank and the Positivity of the Dagger</em> (<code>articles_physics/mass-rank-and-the-positivity-of-the-dagger.md</code>), which owns the positivity of the companion half.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

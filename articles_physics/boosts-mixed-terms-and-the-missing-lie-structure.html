@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boosts, Mixed Terms and the Missing Lie Structure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="boosts-mixed-terms-and-the-missing-lie-structure"><strong>Boosts, Mixed Terms and the Missing Lie Structure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The antisymmetrised quaternionic product fails the Jacobi identity, and the failure has a shape: it is not
+spread over the whole operation but lives in one of its two terms. This article reads that term, and it
+reads what the failure leaves behind. The operation is</p>
+<p>$$
+\tilde P\wedge_{\natural}\tilde Q
+=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
+$$</p>
+<p>the antisymmetric part of the quaternionic product, and its value is the sum of two pieces of different
+kinds. The <strong>mixed term</strong> $P_0\mathbf Q-Q_0\mathbf P$ carries a scalar part times a vector part, is the
+piece that mixes the time direction with the space direction, and is the only place the Jacobi identity
+breaks. The <strong>cross term</strong> $-\mathbf P\times\mathbf Q$ carries two vector parts and is the piece the plain
+bracket also has, with a reversed sign. On the material sector the two pieces separate by their
+Hermitian character: the cross term is <strong>anti-Hermitian</strong> and gives the compact <strong>rotation</strong> directions,
+while the mixed term is <strong>Hermitian</strong> and gives the <strong>boost</strong> directions. The Jacobi failure is thus a
+statement about the boost part, and the article reads the three objects that measure it: the invariant
+bilinear forms of the bracket, its multiplication operators, and the Lie structure that is consequently
+<strong>missing</strong>.</p>
+<p>The word of the band is <strong>Obstruction</strong>, and this article supplies the structural half of it: the failed
+bracket carries no invariant non-degenerate form, so it has no Killing form and no Casimir element, and
+it has no nonzero inner derivation. Its companion <em>The Brackets That Do Not Close: the Jacobi Failure of
+the Quaternionic Commutator</em> owns the operation, its class, its image and the group reading; this article
+owns the split of the value, the invariant forms, the operators and the missing Lie structure.</p>
+<p>The article keeps to the operation and to the two structures that measure it. The operation, its class and
+its table are <em>Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions</em>; the failure, its
+closed form and the associator criterion are <em>The Jacobi Failure and the Associator Defect of the
+Antisymmetric Quaternionic Algebra</em>; the invariant bilinear forms, the form $\varphi$ and the trace form
+of the operators are <em>The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</em>; the
+operators, their traces, ranks and derivations are <em>The Adjoint Operators of the Antisymmetric
+Quaternionic Algebra</em>; the compact and non-compact directions of the internal action are
+<em>Observables, Gauge Generators and the Chirality of the Internal Action</em>, and the compact internal group
+with the non-compact boosts and their rapidity are <em>Particle Types, Discrete Charge and Three-Particle
+Couplings</em>, both cited and not redone. The group ceiling is <em>The Gauge Group Ceiling: Why the Biquaternion
+Algebra Reaches SU(2) but Not SU(3)</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
+$e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$; an
+element is $\tilde Q=Q_0e_0+\mathbf Q$; the natural conjugation is ${}^{\natural}$ and the Hermitian star
+is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the sectors are $\mathbb{M}_\pm$, with the material basis
+$ie_0,e_1,e_2,e_3$. The quaternionic product is $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ and
+$\tilde P\wedge_{\natural}\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ is
+its antisymmetrisation. The symmetrisation symbol $\bullet$ is <strong>row-relative</strong> in this chapter: the plain
+row writes it for $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$, a different operation;
+$\mathrm{Vect}(\mathbb{B})=\{\tilde Q:\mathrm{Sc}(\tilde Q)=0\}$ is the vector subspace, the image of the
+operation; and the general quaternionic bilinear form is
+$N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$.</p>
+<h2 id="the-two-terms-of-the-value">The Two Terms of the Value</h2>
+<p><strong>Proposition (the split of the value).</strong> For all $\tilde P,\tilde Q$,</p>
+<p>$$
+\tilde P\wedge_{\natural}\tilde Q
+=\underbrace{P_0\mathbf Q-Q_0\mathbf P}_{\text{mixed term}}\;\underbrace{-\;\mathbf P\times\mathbf Q}_{\text{cross term}} ,
+$$</p>
+<p>and the two terms are distinguished by the number of vector parts they carry: the mixed term is a scalar
+part times a vector part, the cross term a product of two vector parts. The cross term is exactly the
+plain bracket, $\mathbf P\times\mathbf Q$, with the sign reversed; the mixed term is absent from the plain
+bracket.</p>
+<p><em>Proof.</em> The explicit form of the operation is the sum of the two displayed terms; the plain bracket is
+$\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q$, which carries the cross product
+with the other sign and no mixed term.</p>
+<p>The two terms behave differently under the Hermitian conjugation, and that is the physical key.</p>
+<p><strong>Proposition (the Hermitian characters).</strong> For material arguments $\tilde P,\tilde Q\in\mathbb{M}_-$ the
+mixed term is <strong>Hermitian</strong> and the cross term is <strong>anti-Hermitian</strong>,</p>
+<p>$$
+(P_0\mathbf Q-Q_0\mathbf P)^{*}=P_0\mathbf Q-Q_0\mathbf P , \qquad
+(-\mathbf P\times\mathbf Q)^{*}=+\mathbf P\times\mathbf Q ,
+$$</p>
+<p>and then the mixed term lies in $\mathbb{M}_+$ and the cross term in $\mathbb{M}_-$.</p>
+<p><em>Proof.</em> On the material sector $P_0=ip_0$, $Q_0=iq_0$ with $p_0,q_0$ real and $\mathbf P,\mathbf Q$ real
+vectors. Then $P_0\mathbf Q-Q_0\mathbf P=i(p_0\mathbf q-q_0\mathbf p)$ is $i$ times a real vector, a
+combination of the Hermitian imaginary units $ie_k$, hence Hermitian; and $-\mathbf P\times\mathbf Q$ is a
+real vector, a combination of the anti-Hermitian units $e_k$, hence anti-Hermitian. The two sectors
+$\mathbb{M}_\pm$ are the fixed and anti-fixed spaces of the star.</p>
+<h2 id="the-material-bracket-compact-rotations-and-boost-like-mixed-terms">The Material Bracket: Compact Rotations and Boost-Like Mixed Terms</h2>
+<p>The split just proved is a split of the bracket of two material operations into its two familiar physical
+directions, and the identification is exact on the material sector.</p>
+<p><strong>Proposition (the boost-rotation split).</strong> For $\tilde P=ip_0e_0+\mathbf p$ and
+$\tilde Q=iq_0e_0+\mathbf q$ with $p_0,q_0$ real and $\mathbf p,\mathbf q$ real vectors,</p>
+<p>$$
+\tilde P\wedge_{\natural}\tilde Q=-\;\mathbf p\times\mathbf q\;+\;i\,(p_0\mathbf q-q_0\mathbf p) ,
+$$</p>
+<p>so the value of the bracket of two material operations is a pure vector whose <strong>real part is a rotation</strong>
+and whose <strong>imaginary part is a boost</strong>.</p>
+<p><em>Proof.</em> Substitute the material coordinates into the split of the value. The cross term $-\mathbf p\times\mathbf q$
+is real and lies in $\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$, the rotation directions; the mixed term
+$i(p_0\mathbf q-q_0\mathbf p)$ is imaginary and lies in $i\mathbb{R}e_1+i\mathbb{R}e_2+i\mathbb{R}e_3$, the
+boost directions.</p>
+<h3 id="the-compact-rotations">The Compact Rotations</h3>
+<p>The cross term is the negative of the cross product of the two spatial parts, and the cross product is the
+Lie bracket of the compact rotations: $e_1\wedge_{\natural}e_2=-e_3$, and the three real directions
+$e_1,e_2,e_3$ span the compact factor of the internal action. <em>Observables, Gauge Generators and the
+Chirality of the Internal Action</em> reads the <strong>anti-Hermitian</strong> elements under the one-sided action as the
+gauge generators, exponentiating to the compact unitary group; the rotation directions are anti-Hermitian
+and thus lie on that compact side. The cross term therefore carries the <strong>compact</strong> part of the bracket.
+This is the same term the plain bracket has; on the pure vectors alone the quaternionic bracket is the
+cross product, and there it is a Lie bracket.</p>
+<h3 id="the-boost-like-part">The Boost-Like Part</h3>
+<p>The mixed term is $i$ times a real vector, so it lies along the <strong>imaginary</strong> vector directions
+$ie_1,ie_2,ie_3$, which are <strong>Hermitian</strong> and are the <strong>non-compact</strong> directions of the internal action.
+<em>Particle Types, Discrete Charge and Three-Particle Couplings</em> reads the compact internal group as the
+source of the discrete labels and the non-compact boosts, whose parameter is the continuous <strong>rapidity</strong>,
+as the source of a continuous family with no quantum. The mixed term is exactly the boost-like part: it
+carries a scalar (time-like) part times a vector (space-like) part, the hallmark of a boost, and it is the
+term the plain bracket does not have.</p>
+<p><strong>The two reads together.</strong> The bracket of two material operations is a <strong>rotation plus a boost</strong>: its
+compact part is the cross term, its non-compact part the mixed term. That is the physical content of the
+split of the value, and it is exactly the content of the Jacobi failure, as the companion article
+<em>The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator</em> fixes: the
+failure needs a scalar part in one argument and two non-parallel vector parts in the other two, which is
+precisely a boost-like configuration; on the pure vectors (rotations only) the identity holds.</p>
+<p><strong>Remark (verified).</strong> The split was recomputed on $100$ random pairs of material elements in exact
+complex arithmetic. The value of the bracket is always a pure vector; its real part equals
+$-\mathbf p\times\mathbf q$ and its imaginary part equals $i(p_0\mathbf q-q_0\mathbf p)$ exactly; and the
+mixed term is Hermitian while the cross term is anti-Hermitian, to machine precision. The two pieces are
+the sector projections of the value: the real part is its $\mathbb{M}_-$ (anti-Hermitian) piece and the
+imaginary part its $\mathbb{M}_+$ (Hermitian) piece.</p>
+<h2 id="the-invariant-bilinear-forms-of-the-bracket">The Invariant Bilinear Forms of the Bracket</h2>
+<p>A Lie algebra carries an invariant bilinear form — the Killing form — and the bracket of this band has no
+Jacobi identity. The question of its invariant forms is still well posed, and it has a clean and degenerate
+answer.</p>
+<p><strong>Definition (invariance).</strong> A $\mathbb{C}$-bilinear form $\beta$ is <strong>invariant</strong> under the bracket when
+$\beta(\tilde P\wedge_{\natural}\tilde Q,\tilde R)+\beta(\tilde Q,\tilde P\wedge_{\natural}\tilde R)=0$
+for all triples, the classical condition of a Lie algebra read for this operation.</p>
+<p><strong>Theorem (the invariant forms).</strong> The space of invariant bilinear forms of the bracket is
+<strong>one-dimensional</strong>, spanned by</p>
+<p>$$
+\varphi(\tilde P,\tilde Q)=P_0Q_0 ,
+$$</p>
+<p>the product of the two scalar parts. The form $\varphi$ is symmetric, its Gram matrix is
+$\operatorname{diag}(1,0,0,0)$ of rank $1$, and its radical is the whole vector subspace
+$\mathrm{Vect}(\mathbb{B})$; there is <strong>no</strong> nonzero alternating invariant form. In particular the bracket
+carries <strong>no non-degenerate invariant form</strong>, so it has no Killing form and no Casimir element.</p>
+<p><em>Proof.</em> This is <em>The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</em>. The form
+$\varphi$ is invariant for a trivial reason: the bracket has zero scalar part, so both terms of the
+invariance condition vanish on the scalar slot,
+$\varphi(\tilde P\wedge_{\natural}\tilde Q,\tilde R)=(\tilde P\wedge_{\natural}\tilde Q)_0R_0=0$; and it
+is the only invariant form, since a form that reads a vector slot is moved by the mixed terms and fails
+the condition. The radical is the vector subspace because $\varphi$ reads only the scalar coordinate.</p>
+<p><strong>Proposition (the trace form of the bracket vanishes).</strong> The coefficient form of the bracket is zero,
+because the bracket has zero scalar part; so the natural substitute, the coefficient form of the operation,
+is unavailable.</p>
+<p><strong>Proposition (the operator trace form is not invariant).</strong> The trace form of the multiplication operators
+is non-degenerate and <strong>not</strong> invariant,</p>
+<p>$$
+K(\tilde A,\tilde B)=\operatorname{Tr}\bigl(L_{\tilde A}L_{\tilde B}\bigr)=3A_0B_0-2\,(\mathbf A,\mathbf B) ,
+$$</p>
+<p>with Gram matrix $\operatorname{diag}(3,-2,-2,-2)$ and radical zero; and the failure of its invariance,
+$K(\tilde A\wedge_{\natural}\tilde B,\tilde C)+K(\tilde B,\tilde A\wedge_{\natural}\tilde C)=0$, is
+<strong>false</strong>, the same obstruction as the Jacobi failure.</p>
+<p><em>Proof.</em> The matrix of $L_{\tilde A}$ is computed in <em>The Adjoint Operators of the Antisymmetric
+Quaternionic Algebra</em>, where its trace is $3A_0$; the trace of the product gives the displayed $K$. It is
+non-degenerate because its Gram matrix is diagonal with nonzero entries. Its failure of invariance is the
+failure of the Jacobi identity expressed in the operators, and is proved in <em>The Invariant Bilinear Forms
+of the Antisymmetric Quaternionic Algebra</em>.</p>
+<p><strong>Remark (verified).</strong> The invariant-form space was recomputed by solving the invariance condition over all
+symmetric Gram matrices: the solution space is <strong>one-dimensional</strong>, spanned by $\operatorname{diag}(1,0,0,0)$,
+and the alternating solution space is <strong>zero</strong>; the trace form $K$ was recomputed as
+$\operatorname{Tr}(L_{\tilde A}L_{\tilde B})$ and equals $3A_0B_0-2(\mathbf A,\mathbf B)$ to
+$4.0\times10^{-15}$; and its invariance failure at the triple $(e_0,e_1,e_1)$ is $-4$.</p>
+<h2 id="the-missing-lie-structure">The Missing Lie Structure</h2>
+<p>The failure of the Jacobi identity and the degeneracy of the invariant forms are two faces of the same
+absence. This section reads what is <strong>missing</strong>, and what small piece survives.</p>
+<p><strong>No Killing form, no Casimir.</strong> A finite-dimensional Lie algebra carries the symmetric invariant form
+$\beta(x,y)=\operatorname{Tr}(\mathrm{ad}_x\mathrm{ad}_y)$, non-degenerate on the semisimple part, and its
+inverse supplies the Casimir element. The bracket of this band has no Jacobi identity, so it has no adjoint
+representation in the Lie sense; its only invariant form is the rank-one $\varphi$, with radical the whole
+vector subspace; so it has no Killing form and <strong>no Casimir element</strong>. There is no invariant that could
+label the irreducible pieces of a bracket that is not a Lie algebra.</p>
+<p><strong>The derived bracket is the only Lie part.</strong> On the derived subalgebra $\mathrm{Vect}(\mathbb{B})$ the
+bracket is $-\mathbf P\times\mathbf Q$, a Lie bracket isomorphic to $\mathfrak{sl}(2,\mathbb{C})$; this is
+the entire Lie content of the operation, and it is three-dimensional. Everything the bracket adds to it —
+the mixed terms, the boost-like part — breaks the identity. The Lie structure is therefore not absent from
+the operation but <strong>missing above the derived subalgebra</strong>: the operation is a Lie bracket on
+$\mathrm{Vect}(\mathbb{B})$ and not on $\mathbb{B}$, exactly as <em>The Jacobi Failure and the Associator
+Defect of the Antisymmetric Quaternionic Algebra</em> proves.</p>
+<p><strong>No inner derivation.</strong> <em>The Adjoint Operators of the Antisymmetric Quaternionic Algebra</em> computes the
+operators of the bracket: the trace of $L_{\tilde A}$ is $3A_0$ rather than $0$, the rank is $3$ off the
+isotropic cone and drops to $2$ on it, the commutator of two operators deviates from the operator of the
+value by a term that is the operator form of the Jacobi failure, and the operation has <strong>no nonzero inner
+derivation</strong>, so all its derivations are outer; they form a three-dimensional algebra, the skew maps of
+the vector subspace, the same algebra that appears in the Lie case as the inner derivations. The
+automorphism group of the bracket is the group of linear maps preserving the cross product of the vector
+subspace and fixing $e_0$, of complex dimension three.</p>
+<h2 id="the-reading-what-the-missing-structure-costs">The Reading: What the Missing Structure Costs</h2>
+<p><strong>Proposed reading, labelled as such.</strong></p>
+<ul>
+<li><strong>The failure is a boost phenomenon.</strong> The Jacobi identity holds on the rotations, where the bracket is
+  the cross product, and fails as soon as a boost-like mixed term is present; the failure needs a scalar
+  part in one argument and two non-parallel vector parts in the other two. So the obstruction is the price
+  of the boost-like part of the bracket, and the compact rotation part is untouched.</li>
+<li><strong>The bracket is a deformed cross product, not a Lie algebra.</strong> The operation is the cross product of
+  the vector subspace plus the mixed terms; the mixed terms make the centre act, so the bracket is a
+  <strong>deformation</strong> of the cross product in which the algebra's centre has ceased to be central, not a
+  central extension of it.</li>
+<li><strong>The missing structure is exactly the Killing structure.</strong> No invariant non-degenerate form, hence no
+  Killing form, no Casimir, no adjoint representation in the Lie sense — the whole standard apparatus of a
+  gauge algebra is absent, and it is absent for the reason the Jacobi identity is: the operation has no
+  Lie structure above its derived subalgebra.</li>
+<li><strong>The internal group is read elsewhere.</strong> As in the companion article, the framework's group is reached
+  by the <strong>associative</strong> one-sided action on the anti-Hermitian sector, not by this bracket; the missing
+  structure of this article is not a missing group.</li>
+</ul>
+<p><strong>Caution.</strong> An obstruction is a negative result, and a negative result constrains a reading without
+supplying one. This article says that the quaternionic bracket has no invariant non-degenerate form, no
+Killing form, no Casimir and no inner derivation; it does not supply a group, a form or an invariant in
+their place, and it does not claim that the framework lacks gauge structure. It also does not claim that
+the mixed term <strong>is</strong> a boost; it claims that the mixed term is the Boost-like part of the bracket, on the
+exact ground that on the material sector it is Hermitian and lies along the imaginary vector directions,
+which the corpus reads as the non-compact boost directions.</p>
+<h2 id="the-ledger">The Ledger</h2>
+<p><strong>Proved.</strong> The split of the value into the mixed term $P_0\mathbf Q-Q_0\mathbf P$ and the cross term
+$-\mathbf P\times\mathbf Q$; the Hermitian character of the mixed term ($\mathbb{M}_+$) and the
+anti-Hermitian character of the cross term ($\mathbb{M}_-$) for material arguments; the boost-rotation
+split $-\mathbf p\times\mathbf q+i(p_0\mathbf q-q_0\mathbf p)$ on the material sector; the
+one-dimensional space of invariant forms, spanned by $\varphi=P_0Q_0$, symmetric of rank $1$ with radical
+the vector subspace, and the absence of a nonzero alternating invariant form; the vanishing of the
+coefficient form of the bracket; the non-degenerate but non-invariant operator trace form
+$K=3A_0B_0-2(\mathbf A,\mathbf B)$; the absence of a Killing form and a Casimir element; the derived
+bracket as a Lie bracket on $\mathrm{Vect}(\mathbb{B})$ isomorphic to $\mathfrak{sl}(2,\mathbb{C})$; the
+trace $3A_0$, rank $3$ off the isotropic cone, absence of a nonzero inner derivation and the
+three-dimensional derivation algebra of the operators.</p>
+<p><strong>Readings.</strong> That the mixed term is the boost-like part of the bracket and the cross term the compact
+rotation part; that the failure is a boost phenomenon; that the bracket is a deformation of the cross
+product in which the centre is not central; that the missing structure is exactly the Killing structure;
+that the internal group is read off the associative one-sided action and not off this bracket.</p>
+<p><strong>Not claimed.</strong> That a physical operation is a biquaternion, or that the mixed term <strong>is</strong> a physical
+boost. That the bracket can be repaired into a Lie algebra. That the framework lacks a gauge group or a
+gauge algebra; both are reached elsewhere. That the rank-one invariant $\varphi$ is a physical pairing of
+significance — it is a trivial invariant of the operation, not a metric.</p>
+<h2 id="summary">Summary</h2>
+<p>The antisymmetrised quaternionic product
+$\tilde P\wedge_{\natural}\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ splits into a
+<strong>mixed term</strong> $P_0\mathbf Q-Q_0\mathbf P$ and a <strong>cross term</strong> $-\mathbf P\times\mathbf Q$, and on the
+material sector the two separate by their Hermitian character: the cross term is anti-Hermitian and gives
+the <strong>compact rotation</strong> directions, the mixed term is Hermitian and gives the <strong>boost-like</strong> directions.
+The value of the bracket of two material operations is therefore $-\mathbf p\times\mathbf q+i(p_0\mathbf q-q_0\mathbf p)$,
+a rotation plus a boost, and the Jacobi failure — which needs a scalar part in one argument and two
+non-parallel vector parts in the other two — is exactly a <strong>boost phenomenon</strong>: it is invisible on the
+rotations and enters with the mixed terms. The bracket's only invariant bilinear form is the rank-one
+$\varphi(\tilde P,\tilde Q)=P_0Q_0$, reading the scalar parts, with radical the whole vector subspace, and
+there is no nonzero alternating invariant form; its coefficient form vanishes; and the operator trace form
+$K=\operatorname{Tr}(L_{\tilde A}L_{\tilde B})=3A_0B_0-2(\mathbf A,\mathbf B)$ is non-degenerate but
+<strong>not</strong> invariant, its failure being the Jacobi failure itself. Consequently the bracket has <strong>no Killing
+form, no Casimir element and no nonzero inner derivation</strong>, and its only Lie part is the derived bracket on
+$\mathrm{Vect}(\mathbb{B})$, isomorphic to $\mathfrak{sl}(2,\mathbb{C})$. This Lie structure is <strong>missing
+above the derived subalgebra</strong>, and the reading is that the missing structure is exactly the Killing
+structure of a gauge algebra: the quaternionic bracket is a deformation of the cross product in which the
+centre is not central, and the internal group is reached by the <strong>associative</strong> one-sided action of
+<em>Observables, Gauge Generators and the Chirality of the Internal Action</em> and bounded by <em>The Gauge Group
+Ceiling</em>, not by this bracket. The operation, its class and its table are <em>Introduction to the
+Antisymmetric Quaternionic Algebra of Biquaternions</em>; the failure and the associator criterion are <em>The
+Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra</em>; the invariant forms
+are <em>The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</em>; the operators are
+<em>The Adjoint Operators of the Antisymmetric Quaternionic Algebra</em>; and the group reading is the companion
+<em>The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\wedge_{\natural}\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$</td>
+<td>the antisymmetrised quaternionic product (AQA)</td>
+</tr>
+<tr>
+<td>$P_0\mathbf Q-Q_0\mathbf P$</td>
+<td>the mixed term; the boost-like, Hermitian part on $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$-\mathbf P\times\mathbf Q$</td>
+<td>the cross term; the compact, anti-Hermitian rotation part on $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$-\mathbf p\times\mathbf q+i(p_0\mathbf q-q_0\mathbf p)$</td>
+<td>the bracket of two material operations; rotation plus boost</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+,\mathbb{M}_-$</td>
+<td>the Hermitian and anti-Hermitian sectors; the boost and rotation directions</td>
+</tr>
+<tr>
+<td>$\varphi(\tilde P,\tilde Q)=P_0Q_0$</td>
+<td>the only invariant bilinear form; rank $1$, radical $\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$K(\tilde A,\tilde B)=\operatorname{Tr}(L_{\tilde A}L_{\tilde B})=3A_0B_0-2(\mathbf A,\mathbf B)$</td>
+<td>the operator trace form; non-degenerate, not invariant</td>
+</tr>
+<tr>
+<td>$L_{\tilde A}$</td>
+<td>the left multiplication $\tilde R\mapsto\tilde A\wedge_{\natural}\tilde R$; trace $3A_0$, rank $3$ off the cone</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(2,\mathbb{C})$</td>
+<td>the derived bracket on $\mathrm{Vect}(\mathbb{B})$; the only Lie part</td>
+</tr>
+<tr>
+<td>$i(p_0\mathbf q-q_0\mathbf p)$</td>
+<td>the boost parameter content: rapidity directions, non-compact</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Mathematical Study of Biquaternions</em>, the physics entry point to the mathematical study under
+  which this block sits.</li>
+<li>Mathematics article <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>
+  (<code>articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the twelve
+  operations, the method of the decomposition and the laws of each.</li>
+<li>Mathematics article <em>The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</em>
+  (<code>articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.md</code>), for the
+  form $\varphi$, the rank-one invariant space and the non-invariance of the trace form.</li>
+<li>Mathematics article <em>The Adjoint Operators of the Antisymmetric Quaternionic Algebra</em>
+  (<code>articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md</code>), for the matrices,
+  the traces, the ranks, the derivations and the automorphism group of the bracket.</li>
+<li>Mathematics article <em>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic
+  Algebra</em>
+  (<code>articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.md</code>),
+  for the closed form of the cyclic sum and the derived bracket.</li>
+<li>Mathematics article <em>Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions</em>
+  (<code>articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md</code>), for the
+  operation and its table.</li>
+<li>Companion article <em>The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator</em>,
+  for the failure, the witness and the group reading.</li>
+<li>Companion article <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>, for the
+  compact and non-compact directions and the one-sided action.</li>
+<li>Companion article <em>Particle Types, Discrete Charge and Three-Particle Couplings</em>, for the compact
+  internal group and the non-compact boosts with their rapidity.</li>
+<li>Companion article <em>The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</em>,
+  for the group the algebra does reach.</li>
+<li>Companion article <em>The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations</em>,
+  for the symmetric half of the same parent.</li>
+<li>Companion article <em>The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity</em>, for the
+  compact rotation bracket $\mathrm{APA}$, the Lie case this article contrasts with.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

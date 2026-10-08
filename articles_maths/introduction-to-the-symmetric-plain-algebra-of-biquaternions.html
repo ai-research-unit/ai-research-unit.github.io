@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the Symmetric Plain Algebra of Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-symmetric-plain-algebra-of-biquaternions"><strong>Introduction to the Symmetric Plain Algebra of Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries the general plain bilinear product $\tilde P\tilde Q$, the multiplication of <em>Introduction to the General Plain Algebra of Biquaternions</em>. Its exchange of the two arguments splits it into a symmetric and an antisymmetric part, and each of the two parts is again a $\mathbb{C}$-bilinear product of the space. This article reads the <strong>symmetric part</strong> as a multiplication in its own right:</p>
+<p>$$
+\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)
+=\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]+P_0\mathbf{Q}+Q_0\mathbf{P}.
+$$</p>
+<p>The operation is the plain product with the cross term dropped, and the space it makes of $\mathbb{B}$ is a commutative unital Jordan algebra over $\mathbb{C}$. The reading is one of the twelve operations of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, where the operation is named $\mathrm{SPA}$ and is one of the two members of the twelve that satisfies the identity of a classical nonassociative algebra.</p>
+<p>The split that produces the operation, its two projections and the two admissibility conditions are <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>, and the order-symmetry reading of the same split, with the worked examples on the four complex products, is <em>Scalar / Vector decomposition of the Biquaternion Complex Products</em>. This article owns the operation as a multiplication: the rule, the class, the laws, the sixteen products of the basis, the square and its polarisation, the reconstruction, and the placement of the block among the twelve. The algebra it builds is read further in five companions of the block: <em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>, <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em>, <em>The Six Subspaces under the Symmetric Plain Algebra of Biquaternions</em>, <em>The Multiplication Operators of the Symmetric Plain Algebra</em> and <em>The Symmetric Plain Algebra in the Matrix Representations</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, central scalar imaginary $i$ and $e_1e_2=e_3$, so that $e_1^2=e_2^2=e_3^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. A generic element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$; $(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The product $\tilde P\tilde Q$ is the general plain bilinear one throughout. The inner product $(\cdot,\cdot)$ and the general plain product are as in <em>The Four Biquaternion Complex Products</em> and <em>The Four Pairings of the Biquaternion Algebra</em>; the six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of <em>Introduction to the Six Subspaces</em>.</p>
+<h2 id="the-symmetrisation-of-the-plain-product">The Symmetrisation of the Plain Product</h2>
+<h3 id="the-rule">The Rule</h3>
+<p><strong>Definition.</strong> The <strong>symmetric plain product</strong> of two biquaternions is</p>
+<p>$$
+\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr).
+$$</p>
+<p>It is the <strong>symmetrisation</strong> of the general plain bilinear product $\tilde P\tilde Q$, the operation called the symmetric part of the product in <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>, and the operation named $\mathrm{SPA}$ in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. The space $\mathbb{B}$ with the product $\bullet$ is written $\mathbb{B}^{\bullet}$ and is the <strong>symmetric plain algebra</strong> of the block.</p>
+<p>The rule needs no more than the plain product, and <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em> proves that the split is canonical: if a product is written as a sum of a symmetric and an antisymmetric operation, the two are forced to be the two halves. The symmetric half is therefore fixed by the plain product alone and not by a choice of notation.</p>
+<h3 id="the-coordinate-and-scalarvector-forms">The Coordinate and Scalar–Vector Forms</h3>
+<p>The plain product reads, in the scalar–vector form of <em>Introduction to the General Plain Algebra of Biquaternions</em>,</p>
+<p>$$
+\tilde P\tilde Q=\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]+P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q},
+$$</p>
+<p>and its exchange $\tilde Q\tilde P$ differs from it only in the sign of the cross term. Adding the two and halving gives the rule that names the block:</p>
+<p>$$
+\tilde P\bullet\tilde Q=\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]+P_0\mathbf{Q}+Q_0\mathbf{P}.
+$$</p>
+<p><strong>Remark (the cross term is what the symmetrisation removes).</strong> The scalar part $P_0Q_0-(\mathbf{P},\mathbf{Q})$ is symmetric by itself, since $(\mathbf{P},\mathbf{Q})=(\mathbf{Q},\mathbf{P})$, and the mixed vector part $P_0\mathbf{Q}+Q_0\mathbf{P}$ is symmetric as well; the only asymmetric piece of the plain product is the cross product $\mathbf{P}\times\mathbf{Q}$, which changes sign under the exchange. <strong>The symmetric plain product is therefore exactly the plain product with the cross term dropped</strong>, and the vector part of the value is $P_0\mathbf{Q}+Q_0\mathbf{P}$.</p>
+<p>Read on the coordinates, the same rule is the plain coordinate rule of <em>Introduction to the General Plain Algebra of Biquaternions</em> with the cross terms deleted:</p>
+<p>$$
+\tilde P\bullet\tilde Q=\bigl(P_0Q_0-P_1Q_1-P_2Q_2-P_3Q_3\bigr)
++\bigl(P_0Q_1+P_1Q_0\bigr)e_1
++\bigl(P_0Q_2+P_2Q_0\bigr)e_2
++\bigl(P_0Q_3+P_3Q_0\bigr)e_3.
+$$</p>
+<p>The two forms are one rule, and each is used where it is shorter.</p>
+<h3 id="bilinearity-and-the-class">Bilinearity and the Class</h3>
+<p><strong>Proposition.</strong> The symmetric plain product is $\mathbb{C}$-<strong>bilinear</strong>:</p>
+<p>$$
+(\tilde P+\tilde R)\bullet\tilde Q=\tilde P\bullet\tilde Q+\tilde R\bullet\tilde Q,\qquad
+\tilde Q\bullet(\tilde P+\tilde R)=\tilde Q\bullet\tilde P+\tilde Q\bullet\tilde R,\qquad
+(A\tilde P)\bullet\tilde Q=A(\tilde P\bullet\tilde Q)=\tilde P\bullet(A\tilde Q)
+$$</p>
+<p>for every $A\in\mathbb{C}$.</p>
+<p><em>Proof.</em> The plain product is $\mathbb{C}$-bilinear, and the sum of two $\mathbb{C}$-bilinear maps and the halving keep the class; equivalently, the displayed coordinate rule is additive and homogeneous in the coordinates of each argument separately. Verified on the coordinate rule.</p>
+<p><strong>Remark (why the class survives the split).</strong> The plain product has two $\mathbb{C}$-linear slots, so its two slots have the same type and the bare interchange of the arguments is an exchange that keeps the class; the two halves are $\mathbb{C}$-bilinear again. This is the <strong>algebra case</strong> of the general split, and it is contrasted in <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em> with the case of a product one of whose slots is conjugate-linear, where the bare interchange returns a product of the opposite class and the exchange must be adapted. <strong>The symmetric plain product is $\mathbb{C}$-bilinear, and the obstruction of the class does not arise in this block.</strong></p>
+<h2 id="the-algebra-the-symmetrisation-defines">The Algebra the Symmetrisation Defines</h2>
+<h3 id="commutativity">Commutativity</h3>
+<p><strong>Proposition.</strong> The symmetric plain product is <strong>commutative</strong>:</p>
+<p>$$
+\tilde P\bullet\tilde Q=\tilde Q\bullet\tilde P .
+$$</p>
+<p><em>Proof.</em> The half-sum of the plain product and its exchange is unchanged when the two arguments are interchanged; equivalently, the scalar part is the symmetric bilinear form $P_0Q_0-(\mathbf{P},\mathbf{Q})$ and the vector part $P_0\mathbf{Q}+Q_0\mathbf{P}$ is symmetric in the two elements. Verified on the coordinate rule.</p>
+<p>Commutativity is the defining departure from the plain product, which is not commutative, since $e_1e_2=e_3$ and $e_2e_1=-e_3$. The commutator of the plain product is carried entirely by the antisymmetric part, $[\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P=2(\mathbf{P}\times\mathbf{Q})$, which is the operation of the companion block <em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em>.</p>
+<h3 id="the-unit">The Unit</h3>
+<p><strong>Proposition.</strong> The element $e_0$ is a <strong>two-sided identity</strong> of the symmetric plain product:</p>
+<p>$$
+e_0\bullet\tilde Q=\tilde Q\bullet e_0=\tilde Q .
+$$</p>
+<p><em>Proof.</em> $e_0$ is the identity of the plain product, so $\tfrac12(e_0\tilde Q+\tilde Qe_0)=\tfrac12(\tilde Q+\tilde Q)=\tilde Q$. Verified on the coordinate rule.</p>
+<p>The identity is unique, and $e_0$ is the only element that serves, as it is for the plain product. The operation is therefore <strong>unital</strong>, and the unit is two-sided because the product is commutative.</p>
+<p><strong>Remark (the only part with a unit).</strong> Of the twelve operations of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, $\mathrm{SPA}$ is the only part — the only operation other than the four general products — that carries a unit, and both $\mathrm{APA}$ and the six parts of the other rows fail to have one. <strong>The symmetric plain product is the unique two-sidedly unital operation of the eight parts of the twelve.</strong></p>
+<h3 id="the-jordan-identity">The Jordan Identity</h3>
+<p><strong>Definition.</strong> A commutative product is a <strong>Jordan product</strong> when it satisfies the <strong>Jordan identity</strong></p>
+<p>$$
+(x\bullet y)\bullet(x\bullet x)=x\bullet\bigl(y\bullet(x\bullet x)\bigr),
+$$</p>
+<p>and a commutative algebra with a Jordan product is a <strong>Jordan algebra</strong>. The identity is the one named in <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em> and in <em>Jordan Algebras</em>.</p>
+<p><strong>Theorem.</strong> The symmetric plain product satisfies the Jordan identity: for all $\tilde P,\tilde Q\in\mathbb{B}$,</p>
+<p>$$
+(\tilde P\bullet\tilde Q)\bullet(\tilde P\bullet\tilde P)=\tilde P\bullet\bigl(\tilde Q\bullet(\tilde P\bullet\tilde P)\bigr).
+$$</p>
+<p><em>Proof.</em> The symmetrisation of an associative product always satisfies the Jordan identity: for an associative algebra $A$, the algebra $A^{\bullet}$ with the product $\tfrac12(xy+yx)$ is the classical special Jordan algebra, and the identity is the theorem of <em>Jordan Algebras</em>, §<em>The Symmetrisation of an Associative Algebra</em>, that $A^{+}$ is a Jordan algebra, proved there by the direct expansion with the product $xy+yx$ (the halved product satisfies it as well, every coefficient being halved). Expanding both sides in the associative product of $\mathbb{B}$ and using its associativity verifies the identity directly. The identity was recomputed on the coordinate rule of this block and checked on random pairs.</p>
+<p><strong>Remark (the identity is what singles out the block).</strong> Of the twelve operations of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, exactly one satisfies the Jordan identity and exactly one satisfies the Jacobi identity, and both sit in the plain row: $\mathrm{SPA}$ is the Jordan product and $\mathrm{APA}$ is the Lie product. The other six parts fail the identity of their kind. <strong>Read with the product $\bullet$, the biquaternion space is a commutative unital Jordan algebra over $\mathbb{C}$</strong>, and it is a <em>special</em> Jordan algebra, because it is the symmetrisation of an associative algebra. Its degree, its idempotents, its inverse and its norm are <em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>.</p>
+<p>The relation of the associativity of the plain product to the Jordan identity is the general one: associativity implies both the Jacobi and the Jordan identities of the two halves, while neither identity implies the other, and the block is the instance of the Jordan side. The generic theory, with the two inadmissibility witnesses and the criterion read off the associator, is <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>.</p>
+<h3 id="the-associativity-of-the-block">The Associativity of the Block</h3>
+<p><strong>Proposition.</strong> The symmetric plain product is <strong>not associative</strong>.</p>
+<p><em>Proof.</em> The witness is the pair $\tilde P=\tilde Q=e_1$ read against $\tilde R=e_2$:</p>
+<p>$$
+(e_1\bullet e_1)\bullet e_2=(-e_0)\bullet e_2=-e_2,\qquad
+e_1\bullet(e_1\bullet e_2)=e_1\bullet 0=0,
+$$</p>
+<p>and the two values differ. Verified on the basis.</p>
+<p>The failure is the reason the block is a Jordan algebra and not an associative one; the Jordan identity is the substitute for associativity that the symmetrisation keeps, and it is weaker, as the witness shows.</p>
+<h3 id="the-sixteen-products-of-the-basis">The Sixteen Products of the Basis</h3>
+<p>The product is $\mathbb{C}$-bilinear, so it is fixed by its values on the sixteen pairs of basis elements.</p>
+<p><strong>Proposition.</strong> The products of the basis elements are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\bullet$</th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$e_0$</td>
+<td>$e_1$</td>
+<td>$e_2$</td>
+<td>$e_3$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$e_1$</td>
+<td>$-e_0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$e_2$</td>
+<td>$0$</td>
+<td>$-e_0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$e_3$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$-e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> Each entry is $\tfrac12(e_\mu e_\nu+e_\nu e_\mu)$ read from the multiplication table of <em>Introduction to the General Plain Algebra of Biquaternions</em>. For $\mu=\nu=0$ the entry is $e_0$; for $\mu=\nu=k$ it is $e_k^2=-e_0$; for one index $0$ it is the other basis element, the unit acting trivially; and for two distinct vector indices the quaternion units anticommute, $e_je_k=-e_ke_j$, so the two terms cancel and the entry is $0$. The table is symmetric, as commutativity requires, and its diagonal is $e_0,-e_0,-e_0,-e_0$. Verified on the table.</p>
+<p><strong>Remark (the table against the plain one).</strong> The table of the block is the quaternion table of <em>Introduction to the General Plain Algebra of Biquaternions</em> with the six signed off-diagonal vector entries $e_3,-e_3,e_2,-e_2,e_1,-e_1$ replaced by $0$, and it keeps the diagonal $e_0,-e_0,-e_0,-e_0$ and the first row and column. <strong>The two tables differ only where the plain product is skew, which is off the diagonal in the vector block.</strong></p>
+<h3 id="the-square-and-its-polarisation">The Square and Its Polarisation</h3>
+<p><strong>Proposition.</strong> The square of an element in the block is the plain square,</p>
+<p>$$
+\tilde Q\bullet\tilde Q=\tilde Q^2=\bigl[Q_0^2-(\mathbf{Q},\mathbf{Q})\bigr]+2Q_0\mathbf{Q},
+$$</p>
+<p>so the diagonal of $\bullet$ and the diagonal of the plain product agree.</p>
+<p><em>Proof.</em> $\tilde Q\bullet\tilde Q=\tfrac12(\tilde Q^2+\tilde Q^2)=\tilde Q^2$, and the plain square is the displayed form by the scalar–vector rule with $\tilde P=\tilde Q$. Verified on the coordinate rule.</p>
+<p>The square is the symmetric part of the plain square, and the antisymmetric part vanishes on the diagonal because it is alternating; this is the general fact that the antisymmetric part of a product has zero diagonal and the square carries the symmetric part alone.</p>
+<p><strong>Proposition (polarisation).</strong> The product off the diagonal is recovered from the square by polarisation:</p>
+<p>$$
+\tilde P\bullet\tilde Q=\tfrac12\bigl((\tilde P+\tilde Q)\bullet(\tilde P+\tilde Q)-\tilde P\bullet\tilde P-\tilde Q\bullet\tilde Q\bigr).
+$$</p>
+<p><em>Proof.</em> The product is $\mathbb{C}$-bilinear and commutative, so expanding the square of the sum gives $(\tilde P+\tilde Q)\bullet(\tilde P+\tilde Q)=\tilde P\bullet\tilde P+2\tilde P\bullet\tilde Q+\tilde Q\bullet\tilde Q$, and the displayed identity follows by subtraction and halving. Verified on the coordinate rule.</p>
+<p>So the square map $\tilde Q\mapsto\tilde Q\bullet\tilde Q$ determines the whole product, and the block is generated by its square and its linear structure. The square is the quadratic map whose study, with the idempotents and the norm, is <em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>.</p>
+<h2 id="the-reconstruction-and-the-twelve">The Reconstruction and the Twelve</h2>
+<h3 id="the-reconstruction-math129">The Reconstruction $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$</h3>
+<p><strong>Theorem.</strong> The plain product is the sum of its two parts:</p>
+<p>$$
+\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q,\qquad
+\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf{P}\times\mathbf{Q},
+$$</p>
+<p>and the symmetric part is $\mathrm{SPA}$ and the antisymmetric part $\mathrm{APA}$.</p>
+<p><em>Proof.</em> Adding the two halves restores the product, and the antisymmetric half of the plain product is the cross product of the two vector parts, as <em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em> develops. The identity is one of the four row reconstructions $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$, $\mathrm{GQA}=\mathrm{SQA}+\mathrm{AQA}$, $\mathrm{GPS}=\mathrm{SPS}+\mathrm{APS}$, $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$ of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. Verified on the coordinate rule.</p>
+<p>The two halves have opposite symmetry, so either determines the other from the product, and the pair is the unique such decomposition. The plain row is the one whose symmetric part is the Jordan product and whose antisymmetric part is the Lie product; the two companion blocks that read the halves are <em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em> and the present one.</p>
+<h3 id="the-placement-among-the-twelve">The Placement among the Twelve</h3>
+<p>The name $\mathrm{SPA}$ is read with the code of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>: the first letter $\mathrm S$ says that the operation is the symmetric part of the row; the second letter $\mathrm P$ says that it comes from the plain product, whose first slot is read as it stands; and the third letter $\mathrm A$ says that it belongs to the family of algebras over $\mathbb{C}$, whose second slot is read as it stands.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the row</th>
+<th>general</th>
+<th>symmetric</th>
+<th>antisymmetric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the plain algebra</td>
+<td>$\mathrm{GPA}$</td>
+<td>$\mathrm{SPA}$</td>
+<td>$\mathrm{APA}$</td>
+</tr>
+<tr>
+<td>the quaternionic algebra</td>
+<td>$\mathrm{GQA}$</td>
+<td>$\mathrm{SQA}$</td>
+<td>$\mathrm{AQA}$</td>
+</tr>
+<tr>
+<td>the plain sesqualgebra</td>
+<td>$\mathrm{GPS}$</td>
+<td>$\mathrm{SPS}$</td>
+<td>$\mathrm{APS}$</td>
+</tr>
+<tr>
+<td>the quaternionic sesqualgebra</td>
+<td>$\mathrm{GQS}$</td>
+<td>$\mathrm{SQS}$</td>
+<td>$\mathrm{AQS}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the place of the block).</strong> The block $\mathrm{SPA}$ is the symmetrisation of the associative product $\mathrm{GPA}$, and the other seven parts are the symmetrisations and antisymmetrisations of the three further products. Two of the eight parts pass the identity of a classical nonassociative algebra, both in the plain row: $\mathrm{APA}$ is the Lie product and $\mathrm{SPA}$ the Jordan product. <strong>Of the twelve operations, $\mathrm{SPA}$ is the one commutative unital Jordan product, and it is the only one of the twelve that satisfies the Jordan identity.</strong> The class of the operation is that of the plain product, $\mathbb{C}$-bilinear, and the eight parts are described in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, which owns the names and the laws, and in <em>Scalar / Vector decomposition of the Biquaternion Complex Products</em>, which owns the order-symmetry reading.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetric part of the general plain bilinear product of $\mathbb{B}$ is the operation</p>
+<p>$$
+\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)
+=\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]+P_0\mathbf{Q}+Q_0\mathbf{P},
+$$</p>
+<p>the plain product with the cross term dropped. It is $\mathbb{C}$-bilinear and commutative, $e_0$ is a two-sided unit, it satisfies the Jordan identity, and it is not associative, with the witness $(e_1\bullet e_1)\bullet e_2=-e_2$ against $e_1\bullet(e_1\bullet e_2)=0$. Read with the product, the space is a commutative unital special Jordan algebra over $\mathbb{C}$, and it is the only part of the twelve operations that has a unit and the only one that is a Jordan product. The sixteen products of the basis are the quaternion table with the six off-diagonal vector entries set to $0$; the square is the plain square, $\tilde Q\bullet\tilde Q=Q_0^2-(\mathbf{Q},\mathbf{Q})+2Q_0\mathbf{Q}$, and the product is the polarisation of the square. The plain product reconstructs as $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$, the symmetrisation of an associative product in the plain row of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$</td>
+<td>the symmetrised (Jordan) product, the multiplication of the block</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\bullet}$</td>
+<td>the biquaternion space with the symmetric plain product</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$</td>
+<td>the name of the operation among the twelve</td>
+</tr>
+<tr>
+<td>$\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$</td>
+<td>the antisymmetric part, $\mathrm{APA}$</td>
+</tr>
+<tr>
+<td>$\tilde Q\bullet\tilde Q=\tilde Q^2$</td>
+<td>the square of the block = the plain square</td>
+</tr>
+<tr>
+<td>$\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$</td>
+<td>the reconstruction of the plain product</td>
+</tr>
+<tr>
+<td>$(\mathbf{P},\mathbf{Q})$</td>
+<td>the complex bilinear dot product of the vector parts</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, for the names, the laws and the table of the twelve operations.</li>
+<li><em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>, for the split, its uniqueness and the two admissibility conditions.</li>
+<li><em>Scalar / Vector decomposition of the Biquaternion Complex Products</em>, for the same split read from the side of the order symmetry.</li>
+<li><em>Introduction to the General Plain Algebra of Biquaternions</em>, for the product the block splits and its multiplication table.</li>
+<li><em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em>, for the companion half, the cross product and the Lie structure.</li>
+<li><em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>, <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em>, <em>The Six Subspaces under the Symmetric Plain Algebra of Biquaternions</em>, <em>The Multiplication Operators of the Symmetric Plain Algebra</em> and <em>The Symmetric Plain Algebra in the Matrix Representations</em>, for the remainder of the block.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra"><strong>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The symmetric quaternionic multiplication $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$
+(<em>Introduction to the Symmetric Quaternionic Algebra of Biquaternions</em>) collapses every product onto the
+central line, so the element theory of the operation is read entirely from the coefficient
+$B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ and its diagonal. This article reads that coefficient as a
+pairing and develops the two objects the article title names: the <strong>radical</strong>, which is the set of elements
+annihilated by the whole algebra on both sides, and the <strong>isotropic elements</strong>, the elements whose square
+vanishes. It then records the derived objects the collapse produces — the idempotents, the square-zero set,
+the derived law and the ternary law — and identifies the isotropic elements with the zero divisors of
+$\mathbb{B}$.</p>
+<p>The article is the second of the block of $\mathrm{SQA}$; it assumes the operation and its formula from
+<em>Introduction to the Symmetric Quaternionic Algebra of Biquaternions</em>, the centrality from <em>The Symmetrised
+Quaternionic Product and the Hermitian Subspace</em>, and the norm, its polarisation and its isotropic cone from
+<em>Biquaternion Norm and Invertibility</em> and <em>Biquaternion Zero Divisors</em>. The six subspaces are treated in the
+companion article <em>The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions</em>, and the form
+reader is <em>The Quaternion Form as a Product on the Symmetric Quaternionic Algebra</em>.</p>
+<p><strong>Conventions.</strong> The operation is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$,
+equal to $B(\tilde P,\tilde Q)e_0$; the coefficient $B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ is the
+quaternion form, and $N(\tilde Q)=B(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$ is its diagonal; the quaternionic
+bracket is $[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$. The six
+subspaces are $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$,
+$i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ of <em>Introduction to the Six Subspaces</em>.</p>
+<h2 id="the-product-as-a-pairing-with-values-in-the-centre">The Product as a Pairing with Values in the Centre</h2>
+<p>Because the operation is $\mathbb{C}$-bilinear, it is the same thing as a family of linear maps, and because
+its value is central it is the same thing as a bilinear form.</p>
+<p><strong>Definition.</strong> For $\tilde A\in\mathbb{B}$ the <strong>left multiplication by $\tilde A$</strong> is the
+$\mathbb{C}$-linear map</p>
+<p>$$
+L^{\star}_{\tilde A}: \mathbb{B}\longrightarrow\mathbb{C}e_0,\qquad
+L^{\star}_{\tilde A}\tilde R = \tilde A\star\tilde R = B(\tilde A,\tilde R)\,e_0 .
+$$</p>
+<p>Because the product is commutative the right multiplication coincides with it,
+$R^{\star}_{\tilde A}=L^{\star}_{\tilde A}$; the operator is examined in <em>The Multiplication Operators of the
+Symmetric Quaternionic Algebra</em>.</p>
+<p><strong>Proposition (the operation is a form read on the central line).</strong> The operation is determined by $B$ and
+$B$ is recovered from it: for every pair,</p>
+<p>$$
+B(\tilde P,\tilde Q) = \operatorname{Sc}\bigl(\tilde P\star\tilde Q\bigr),
+$$</p>
+<p>the coefficient of $e_0$ in the value. In particular $\star$ is the <strong>quaternion form</strong> placed on the central
+line, and the only datum of the operation is the symmetric $\mathbb{C}$-bilinear form $B$.</p>
+<p><em>Proof.</em> The value is $B(\tilde P,\tilde Q)e_0$ by the theorem of <em>Introduction to the Symmetric Quaternionic
+Algebra of Biquaternions</em>, and its scalar part is $B(\tilde P,\tilde Q)$. Conversely a bilinear operation given
+by a form is the form. $\square$</p>
+<p><strong>Remark (an algebraic form).</strong> The coefficient $B$ is a $\mathbb{C}$-bilinear form, symmetric,
+with values in $\mathbb{C}$; its values are complex and not real in general, as at $\tilde P=e_0$,
+$\tilde Q=ie_0$, where $B=i$. The diagonal $N$ is the algebraic
+norm of <em>Biquaternion Norm and Invertibility</em>, and $N$ is multiplicative on the algebra. The reader must keep
+the two readings apart: $N$ is multiplicative and central-valued, while $B$ is only bilinear.</p>
+<h2 id="the-radical">The Radical</h2>
+<p><strong>Definition.</strong> The <strong>radical</strong> or <strong>two-sided annihilator</strong> of $\star$ is the set of elements annihilated by
+every element on both sides,</p>
+<p>$$
+\operatorname{Rad}(\star) = \{\tilde A\in\mathbb{B}: \tilde A\star\tilde R=0 \text{ and }
+\tilde R\star\tilde A=0 \text{ for every } \tilde R\in\mathbb{B}\}
+= \{\tilde A\in\mathbb{B}: L^{\star}_{\tilde A}=0\}.
+$$</p>
+<p>Because the operation is commutative the two-sided and the one-sided definitions agree, and the radical is the
+common kernel of the left multiplications, $\bigcap_{\tilde R}\ker L^{\star}_{\tilde R}=\{\tilde A: B(\tilde A,\tilde R)=0 \text{ for all } \tilde R\}$.</p>
+<p><strong>Theorem (the radical is trivial).</strong> $\operatorname{Rad}(\star)=\{0\}$: the only element annihilated by the
+whole algebra is $0$.</p>
+<p><em>Proof.</em> $B$ is the standard symmetric form of $\mathbb{C}^4$ in the basis $e_0,e_1,e_2,e_3$, whose Gram
+matrix is $I_4$; a form with invertible Gram matrix has no nonzero element paired to zero with the whole
+space. Concretely $\tilde A\star e_0=A_0e_0$ and $\tilde A\star e_k=A_ke_0$ for $k=1,2,3$, so
+$\tilde A\star\tilde R=0$ for all $\tilde R$ forces $A_0=A_1=A_2=A_3=0$. $\square$</p>
+<p><strong>Corollary (the operation is not the zero operation, and it is non-degenerate as a form).</strong> The operation is
+nonzero — $B(e_0,e_0)=1$ — and the form $B$ is non-degenerate, of rank $4$ over $\mathbb{C}$ and of Gram
+matrix $I_4$ in the basis. The image of each nonzero left multiplication is the whole central line
+$\mathbb{C}e_0$: for $\tilde A\ne0$ some coordinate $A_\mu\ne0$, so $L^{\star}_{\tilde A}e_\mu=A_\mu e_0\ne0$ and no nonzero element acts by zero.</p>
+<p><strong>Remark (a trivial radical and a poor element theory are not the same fact).</strong> A non-degenerate pairing is
+what one expects of a form, and it does not prevent the operation from being element-theoretically poor: the
+radical is trivial, yet the operation has no unit, its idempotents reduce to $0$ and $e_0$, and its
+square-zero set is a cone of complex dimension $3$. The triviality of the radical is a statement about the
+pairing; the poverty is a statement about the product. The two must not be confused.</p>
+<h2 id="the-isotropic-elements">The Isotropic Elements</h2>
+<p><strong>Definition.</strong> An element $\tilde Q$ is <strong>isotropic</strong> when its square under $\star$ vanishes,
+$\tilde Q\star\tilde Q=0$; equivalently when $N(\tilde Q)=0$. The <strong>isotropic cone</strong> of the operation is the
+set of isotropic elements.</p>
+<p><strong>Theorem (the isotropic elements are the zero divisors).</strong> An element is isotropic for $\star$ exactly when
+it is a zero divisor of the biquaternion algebra, that is exactly when $N(\tilde Q)=\sum_\mu Q_\mu^2=0$. The
+cone is the affine cone over the quadric $\{[Q_0:Q_1:Q_2:Q_3]:\sum_\mu Q_\mu^2=0\}$ of
+$\mathbb{P}^3(\mathbb{C})$, of complex dimension $2$ in the projective space and $3$ in the algebra, and it is
+the isotropic cone of the form $B$ and of the norm $N$ alike (<em>Biquaternion Zero Divisors</em>, <em>Biquaternion Norm
+and Invertibility</em>). It splits into the <strong>pure family</strong>, the elements with $Q_0=0$, a cone of complex
+dimension $2$, and the <strong>non-pure family</strong>, the elements with $Q_0\ne0$, of complex dimension $3$; the two are
+disjoint and their union is the cone (<em>Biquaternion Zero Divisors</em>).</p>
+<p><em>Proof.</em> $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ by the square formula of <em>Introduction to the Symmetric
+Quaternionic Algebra of Biquaternions</em>, and this vanishes exactly when $N(\tilde Q)=0$. The identification of
+the set $N=0$ with the zero divisors and its description as a quadric cone are <em>Biquaternion Zero Divisors</em>.
+$\square$</p>
+<p><strong>Example (the standard isotropic elements).</strong> For $\tilde Q=e_0+ie_1$ the norm is $N=1+i^2=0$, so the
+element is isotropic; it lies on the Hermitian subspace $\mathbb{M}_+$ and is a non-pure zero divisor. For
+$\tilde Q=e_1+ie_2$ the norm is $N=1+i^2=0$ as well, and the element is a pure zero divisor, lying in the
+vector subspace. For $\tilde Q=e_1+e_2+e_3$ the norm is $N=1+1+1=3\ne0$, and the element is not isotropic.</p>
+<p><strong>Remark (isotropy is not the vanishing of the value).</strong> An element with $N(\tilde Q)=0$ still multiplies
+nonzero elements to nonzero values: the product $\tilde Q\star\tilde R=B(\tilde Q,\tilde R)e_0$ can be
+nonzero even when $B(\tilde Q,\tilde Q)=0$, because the form is indefinite and not positive. The isotropy of
+$B$ is the vanishing of the form on one direction, and it is the diagonal that reads it; the radical, by
+contrast, is the vanishing on all directions, and it is trivial. Isotropy is a property of each element, and
+the radical is a property of the space.</p>
+<p><strong>Corollary (the idempotents).</strong> The set $\{\tilde Q:\tilde Q\star\tilde Q=0\}$ is the isotropic cone, and the
+idempotents of the operation are the elements with $N(\tilde Q)e_0=\tilde Q$. Comparing the
+vector parts forces the vector part of $\tilde Q$ to vanish, and comparing the central parts forces
+$Q_0=Q_0^2$; hence</p>
+<p>$$
+\tilde\Pi\star\tilde\Pi=\tilde\Pi \quad\Longleftrightarrow\quad \tilde\Pi=0 \text{ or } \tilde\Pi=e_0 ,
+$$</p>
+<p>the two idempotents being the trivial ones. The operation has no nonzero proper idempotent, and no projector
+other than $0$ and $e_0$; the idempotents of the algebra $\mathbb{B}$ are not idempotents of the operation
+(<em>Biquaternion Idempotents and Projections</em>).</p>
+<p><em>Proof.</em> $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ is central, so $\tilde Q\star\tilde Q=\tilde Q$ forces
+$\mathbf Q=0$ and $\tilde Q=Q_0e_0$, and then $Q_0e_0=Q_0^2e_0$, so $Q_0\in\{0,1\}$. $\square$</p>
+<h2 id="the-derived-objects-and-the-collapse-of-the-laws">The Derived Objects and the Collapse of the Laws</h2>
+<p><strong>Proposition (the derived law collapses).</strong> The commutator of the operation vanishes identically,</p>
+<p>$$
+[\tilde P,\tilde Q]_{\star} = \tilde P\star\tilde Q-\tilde Q\star\tilde P = 0 ,
+$$</p>
+<p>so the operation has no derived Lie structure: the derived operation of $\mathrm{SQA}$ is the zero operation
+on the whole space. The derived object of the operation is therefore the one-dimensional algebra
+$\mathbb{C}e_0=\mathbb{C}_{\mathbb{B}}$, with the multiplication of $\mathbb{C}$.</p>
+<p><em>Proof.</em> The operation is commutative. The image is the central line, on which the operation is the
+multiplication of $\mathbb{C}$ by the proposition of <em>Introduction to the Symmetric Quaternionic Algebra of
+Biquaternions</em>. $\square$</p>
+<p><strong>Proposition (the associative law does not collapse).</strong> The operation is not associative: at
+$\tilde P=\tilde Q=e_1$, $\tilde R=e_0$ the two bracketings are</p>
+<p>$$
+(\tilde P\star\tilde Q)\star\tilde R = e_0, \qquad
+\tilde P\star(\tilde Q\star\tilde R) = 0 ,
+$$</p>
+<p>so the associator is the nonzero element $e_0$. The general associator is</p>
+<p>$$
+(\tilde P\star\tilde Q)\star\tilde R-\tilde P\star(\tilde Q\star\tilde R)
+= \Bigl(B(\tilde P,\tilde Q)R_0 - P_0B(\tilde Q,\tilde R)\Bigr)e_0 .
+$$</p>
+<p><em>Proof.</em> $(\tilde P\star\tilde Q)\star\tilde R=B(\tilde P,\tilde Q)e_0\star\tilde R=B(\tilde P,\tilde Q)R_0e_0$, and $\tilde P\star(\tilde Q\star\tilde R)=B(\tilde Q,\tilde R)\,L^{\star}_{\tilde P}e_0=B(\tilde Q,\tilde R)P_0e_0$. At the witness the first is
+$B(e_1,e_1)\cdot 1\cdot e_0=e_0$ and the second is $B(e_1,e_0)\cdot 0=0$. $\square$</p>
+<p><strong>Remark (the ternary law).</strong> The ternary object the operation carries is the one obtained by composing the
+quaternionic bracket with the product,</p>
+<p>$$
+T(\tilde P,\tilde Q,\tilde R) = [\tilde P,\tilde R]_{\natural}\star\tilde Q
+= B\bigl([\tilde P,\tilde R]_{\natural},\tilde Q\bigr)e_0 ,
+$$</p>
+<p>which is linear in each of its three arguments and alternating in the first and the third, the bracket
+$[\tilde P,\tilde R]_{\natural}=2\bigl(P_0\mathbf R-R_0\mathbf P-\mathbf P\times\mathbf R\bigr)$ being alternating. It does
+<strong>not</strong> vanish in general: at $\tilde P=e_1$, $\tilde R=e_2$, $\tilde Q=e_3$ the bracket is
+$[\tilde P,\tilde R]_{\natural}=-2e_3$ and $B(-2e_3,e_3)=-2$, so $T=-2e_0$, and the sum
+$[\tilde P,\tilde R]_{\natural}\star\tilde Q+\tilde Q\star[\tilde P,\tilde R]_{\natural}=2B([\tilde P,\tilde R]_{\natural},\tilde Q)e_0$ is twice this value and is not $0$. The operation therefore
+does not kill the bracket by symmetrisation; what is zero is the commutator of $\star$ itself, not its
+composition with the bracket.</p>
+<h2 id="the-relation-to-the-zero-divisors">The Relation to the Zero Divisors</h2>
+<p>The identification of the isotropic elements with the zero divisors makes the element theory of the operation
+a small chapter of the zero-divisor geometry of $\mathbb{B}$, which is algebraic: the cone $N=0$ is a quadric
+cone, cut by the six distinguished subspaces into the pieces recorded in <em>The Six Subspaces under the
+Symmetric Quaternionic Algebra of Biquaternions</em>. On the two definite rows $\mathbb{H}_{\mathbb{B}}$ and
+$i\mathbb{H}_{\mathbb{B}}$ the norm is strictly signed and the cone meets the row only at the origin; on the
+vector subspace the cone is the pure zero-divisor cone; on the two Hermitian subspaces the cone is their real
+light cone.</p>
+<p><strong>Proposition (the operation kills nothing on the definite rows).</strong> No nonzero element of $\mathbb{H}_{\mathbb{B}}$
+or of $i\mathbb{H}_{\mathbb{B}}$ is isotropic for $\star$.</p>
+<p><em>Proof.</em> On $\mathbb{H}_{\mathbb{B}}$ the form is positive definite, $N=\sum_\mu q_\mu^2\ge0$, vanishing only
+at the origin; on $i\mathbb{H}_{\mathbb{B}}$ it is negative definite, $N=-\sum_\mu(q'_\mu)^2\le0$, vanishing
+only at the origin (<em>The Six Subspaces under the General Quaternionic Algebra of Biquaternions</em>). $\square$</p>
+<p><strong>Remark (the radical again, from the subspaces).</strong> The triviality of the radical is compatible with a large
+isotropic cone, and the two are read on the Gram data: the form has Gram matrix $I_4$, which is invertible and
+carries no radical; the cone is the set where the diagonal vanishes, which is the isotropic set of an
+indefinite form on a complex space. A well-defined form with an isotropic cone of positive dimension is the
+generic situation.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetric quaternionic multiplication is a pairing: $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$, the
+quaternion form placed on the central line, and the form is recovered from the product as the coefficient of
+$e_0$. Its radical — the two-sided annihilator — is trivial, the Gram matrix of $B$ being the unit matrix; the
+operation is therefore not the zero operation and its form is non-degenerate. Its isotropic elements are the
+zero divisors, $N(\tilde Q)=\sum_\mu Q_\mu^2=0$, forming the affine cone over the quadric
+$\sum_\mu Q_\mu^2=0$ of $\mathbb{P}^3(\mathbb{C})$, of complex dimension $3$ in the algebra; the standard
+witnesses are $e_0+ie_1$ on the Hermitian subspace and $e_1+ie_2$ on the vector subspace. The square-zero
+elements are exactly the isotropic ones; the idempotents are $0$ and $e_0$ alone; the derived law collapses,
+the commutator of $\star$ being identically zero; the associative law does not collapse, the associator being
+$B(\tilde P,\tilde Q)R_0-P_0B(\tilde Q,\tilde R)$ times $e_0$, nonzero at $e_1,e_1,e_0$; and the ternary
+object $B([\tilde P,\tilde R]_{\natural},\tilde Q)e_0$ does not vanish. The two definite rows of the six
+contain no isotropic element.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$</td>
+<td>the symmetric quaternionic multiplication</td>
+</tr>
+<tr>
+<td>$B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$</td>
+<td>the quaternion form, the coefficient of the product</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=B(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$</td>
+<td>the norm form, the diagonal of $B$</td>
+</tr>
+<tr>
+<td>$L^{\star}_{\tilde A}$</td>
+<td>the left (and right) multiplication, $L^{\star}_{\tilde A}\tilde R=B(\tilde A,\tilde R)e_0$</td>
+</tr>
+<tr>
+<td>$\operatorname{Rad}(\star)$</td>
+<td>the two-sided annihilator, $\{0\}$</td>
+</tr>
+<tr>
+<td>$[\tilde P,\tilde Q]_{\natural}$</td>
+<td>the quaternionic bracket $\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$</td>
+</tr>
+<tr>
+<td>$[\tilde P,\tilde Q]_{\star}$</td>
+<td>the commutator of the operation, identically zero</td>
+</tr>
+<tr>
+<td>$T(\tilde P,\tilde Q,\tilde R)=B([\tilde P,\tilde R]_{\natural},\tilde Q)e_0$</td>
+<td>the ternary object of the operation</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$</td>
+<td>the six distinguished subspaces</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Symmetric Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md</code>), for the operation and its square</li>
+<li><em>The Symmetrised Quaternionic Product and the Hermitian Subspace</em> (<code>articles_maths/the-symmetrised-quaternionic-product-and-the-hermitian-subspace.md</code>), for the centrality and the coefficient in full</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>) and <em>Biquaternion Zero Divisors</em> (<code>articles_maths/biquaternion-zero-divisors.md</code>), for the norm, its polarisation and the isotropic cone</li>
+<li><em>Biquaternion Idempotents and Projections</em> (<code>articles_maths/biquaternion-idempotents-and-projections.md</code>), for the idempotents of the algebra and their contrast with the idempotents of $\mathrm{SQA}$</li>
+<li><em>The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/the-six-subspaces-under-the-symmetric-quaternionic-algebra-of-biquaternions.md</code>), for the isotropic elements on each subspace</li>
+<li><em>The Multiplication Operators of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md</code>), for the operators $L^{\star}_{\tilde A}$ in full</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

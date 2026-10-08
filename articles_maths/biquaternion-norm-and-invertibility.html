@@ -52,8 +52,8 @@
       <div class="article-body">
         <h1 id="biquaternion-norm-and-invertibility"><strong>Biquaternion Norm and Invertibility</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article studies the biquaternion norm of the algebra and the invertibility of its elements. It follows the basic algebra article, which defined the algebra, its conjugations, and its six distinguished subspaces. The goal here is to define the biquaternion norm and polarise it, to read the algebra as a complex quadratic space, to tabulate the real forms and their signatures, to record the associated Clifford algebra, to define the Euclidean norm from the complex sesquilinear form, to establish the criterion for invertibility, and to describe the group of units.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations, its six distinguished subspaces and its complex sesquilinear form.</p>
+<p>This article studies the biquaternion norm of the algebra and the invertibility of its elements. It follows the basic algebra article, which defined the algebra, its conjugations, and its six distinguished subspaces. The goal here is to define the biquaternion norm and polarise it, to read the algebra as a complex quadratic space, to tabulate the real forms and their signatures, to record the associated Clifford algebra, to define the Euclidean norm from the general plain sesquilinear form, to establish the criterion for invertibility, and to describe the group of units.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations, its six distinguished subspaces and its general plain sesquilinear form.</p>
 <p>Throughout this article, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, and the scalar imaginary is written $i$, so that it does not collide with the quaternion units. A general biquaternion is written</p>
 <p>$$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C}.
@@ -99,6 +99,14 @@ $$</p>
 $$</p>
 <p><strong>Corollary.</strong> If $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$ and $\langle\tilde{R},\tilde{R}\rangle_{\natural} \neq 0$, then $\langle\tilde{Q}\tilde{R},\tilde{Q}\tilde{R}\rangle_{\natural} \neq 0$.</p>
 <p><strong>Corollary.</strong> If $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ or $\langle\tilde{R},\tilde{R}\rangle_{\natural} = 0$, then $\langle\tilde{Q}\tilde{R},\tilde{Q}\tilde{R}\rangle_{\natural} = 0$. In particular, the product of a zero divisor with any biquaternion is either zero or a zero divisor.</p>
+<p><strong>Proposition (the scaling of the form).</strong> For every $a\in\mathbb{B}$ and all $\tilde P,\tilde Q$,
+$$
+\langle a\tilde P,a\tilde Q\rangle_{\natural}=N(a)\,\langle\tilde P,\tilde Q\rangle_{\natural},
+\qquad
+\langle\tilde P a,\tilde Q a\rangle_{\natural}=N(a)\,\langle\tilde P,\tilde Q\rangle_{\natural}.
+$$</p>
+<p><em>Proof.</em> The first identity is the polarisation of the multiplicativity of the norm applied to $a\tilde P$ and $a\tilde Q$; the second is the first with the factors in the other order, using $\mathrm{Sc}(\tilde P a\tilde Q^{\natural}a^{\natural})=\mathrm{Sc}(a^{\natural}\tilde P a\tilde Q^{\natural})$ and the centrality of $a^{\natural}a=N(a)$.</p>
+<p><strong>Corollary (the norm-one slice of the multiplications).</strong> Left or right multiplication by $a$ preserves the form exactly when $N(a)=1$, so the multiplications that preserve the form are the elements of the norm-one group $N=1$, a proper subgroup of the full automorphism group $O_4(\mathbb{C})$; for instance $\tilde Q(t)=\cosh t\,e_0+i\sinh t\,e_1$ has $N(\tilde Q(t))=\cosh^{2}t-\sinh^{2}t=1$, while $e_0+ie_1$ has norm $0$ and its multiplication collapses the form.</p>
 <h3 id="the-biquaternion-norm-as-a-semi-norm">The Biquaternion Norm as a Semi-Norm</h3>
 <p>The norm of this article is the <strong>semi-norm</strong> of the biquaternion literature (Ward; Sangwine, Ell and Le Bihan). The name records two departures from a norm: the value is complex rather than real, and a non-zero element can have vanishing value, the vanishing locus being exactly the zero divisors. It is worth recording which of the usual norm axioms survive, because the article uses the symbol $N$ and the multiplicativity theorem speaks of a norm; the audit, following Sangwine, Ell and Le Bihan, is as follows.</p>
 <ul>
@@ -131,14 +139,20 @@ $$</p>
 <li>$q_r \perp q_i$ and $\langle q_r,q_r\rangle_{\natural} = \langle q_i,q_i\rangle_{\natural}$: the biquaternion norm vanishes. These are exactly the zero divisors, so the criterion $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ of the article on biquaternion zero divisors is the statement that the two halves have equal norms and vanishing scalar product; that article splits the same set into the pure and non-pure families by the vanishing of the scalar part.</li>
 </ul>
 <h2 id="the-euclidean-norm-and-the-hermitian-form">The Euclidean Norm and the Hermitian Form</h2>
-<p>The <strong>complex sesquilinear form</strong> $\tilde{Q} \tilde{Q}^{*}$ is defined, with its basic properties and with the inner product, in <em>The Hermitian Form on the Biquaternion Algebra</em>. This article reads the metric from it: the Euclidean norm below, and the relation of its scalar part to the biquaternion norm.</p>
+<p>The <strong>general plain sesquilinear form</strong> is built on the Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$,</p>
+<p>$$
+\langle\tilde{Q},\tilde{P}\rangle_{*}=\mathrm{Sc}\!\left(\tilde{Q}\tilde{P}^{*}\right)=\sum_{\mu=0}^{3}P_{\bar\mu}Q_\mu ,
+$$</p>
+<p>with the conjugation in the second argument, so the pairing is $\mathbb{C}$-<strong>sesquilinear</strong>, linear in the first argument and conjugate-linear in the second. It is Hermitian, $\langle\tilde{Q},\tilde{P}\rangle_{*}=\overline{\langle\tilde{P},\tilde{Q}\rangle_{*}}$, and non-degenerate, and its Gram matrix in the basis $e_0,e_1,e_2,e_3$ is the identity; on the diagonal it is $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$, a genuine positive definite quadratic form of signature $(8,0)$ on $\mathbb{B}\cong\mathbb{R}^{8}$. It is this form, and not the general quaternionic bilinear form $\sum_\mu Q_\mu^2$, that supplies the algebra with its definite structure.</p>
+<p>The <strong>form of a single element</strong> is the biquaternion $\tilde{Q}\tilde{Q}^{*}$, a Hermitian element of $\mathbb{M}_+$, with scalar part $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}$ and a vector part that need not vanish: $(e_0+ie_1)^{2}=2e_0+2ie_1$. The assignment $\tilde{Q}\mapsto\tilde{Q}\tilde{Q}^{*}$ is <strong>not multiplicative</strong>, the witness being the zero divisor $e_1+ie_2$, for which $\tilde{Q}^{2}=0$ while $\tilde{Q}\tilde{Q}^{*}=2e_0+2ie_3$.</p>
+<p>This article reads the metric from the form: the Euclidean norm below, and the relation of its scalar part to the biquaternion norm.</p>
 <h3 id="the-euclidean-norm">The Euclidean Norm</h3>
-<p>The <strong>Euclidean norm</strong> of a biquaternion is defined by the scalar part of the complex sesquilinear form:</p>
+<p>The <strong>Euclidean norm</strong> of a biquaternion is defined by the scalar part of the general plain sesquilinear form:</p>
 <p>$$
 \|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^{*}\right)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2} = \sqrt{\sum_{\mu=0}^{3} (q_\mu^2 + (q'_\mu)^2)}.
 $$</p>
 <p>It is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It is <strong>not</strong> multiplicative with respect to the biquaternion product.</p>
-<p><strong>Notation.</strong> The scalar part of the complex sesquilinear form is often written $\|\tilde{Q}\|_E^2$; the trace version is</p>
+<p><strong>Notation.</strong> The scalar part of the general plain sesquilinear form is often written $\|\tilde{Q}\|_E^2$; the trace version is</p>
 <p>$$
 \mathrm{Tr}\!\left(\tilde{Q} \tilde{Q}^{*}\right) = 2 \sum_{\mu=0}^{3} |Q_\mu|^2 = 2 \|\tilde{Q}\|_E^2.
 $$</p>
@@ -146,13 +160,18 @@ $$</p>
 <p>The two forms are related as follows:</p>
 <ul>
 <li>The <strong>biquaternion norm</strong> $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a complex scalar (a multiple of $e_0$), multiplicative, and can vanish for nonzero $\tilde{Q}$.</li>
-<li>The <strong>complex sesquilinear form</strong> $\tilde{Q} \tilde{Q}^{*}$ is a Hermitian biquaternion whose scalar part is $\sum_\mu |Q_\mu|^2$ (non-negative, vanishing only at $\tilde{Q} = 0$) and whose vector part need not vanish. It is not multiplicative.</li>
+<li>The <strong>general plain sesquilinear form</strong> $\tilde{Q} \tilde{Q}^{*}$ is a Hermitian biquaternion whose scalar part is $\sum_\mu |Q_\mu|^2$ (non-negative, vanishing only at $\tilde{Q} = 0$) and whose vector part need not vanish. It is not multiplicative.</li>
 </ul>
-<p>They coincide as biquaternions if and only if $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, i.e. if and only if all the coefficients $Q_\mu$ are real. On the imaginary translate $i \mathbb{H}_{\mathbb{B}}$, the complex sesquilinear form is also scalar-valued, but it equals $+\sum_\mu (q'_\mu)^2 \cdot e_0$, which is the negative of the biquaternion norm; on that subspace the two forms differ by a sign.</p>
+<p>They coincide as biquaternions if and only if $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, i.e. if and only if all the coefficients $Q_\mu$ are real. On the imaginary translate $i \mathbb{H}_{\mathbb{B}}$, the general plain sesquilinear form is also scalar-valued, but it equals $+\sum_\mu (q'_\mu)^2 \cdot e_0$, which is the negative of the biquaternion norm; on that subspace the two forms differ by a sign.</p>
+<p>The <strong>real inner product</strong> of the underlying real space is the real part of the pairing with the arguments in the symmetric order,
+$$
+(\tilde{P},\tilde{Q})_{\mathbb{R}}=\mathrm{Re}\,\langle\tilde{Q},\tilde{P}\rangle_{*}=\sum_{\mu=0}^{3}\left(p_\mu q_\mu+p'_\mu q'_\mu\right),
+$$
+positive definite on $\mathbb{B}\cong\mathbb{R}^{8}$ by the Gram matrix and the diagonal of the pairing; the coefficient map $\tilde{Q}\mapsto(Q_0,Q_1,Q_2,Q_3)$ is an isomorphism onto $\mathbb{C}^{4}$ with its ordinary Hermitian inner product. The <strong>value-one set</strong> of the Euclidean norm is the sphere $\mathcal{S}=\{\tilde{Q}:\lVert\tilde{Q}\rVert_E=1\}$, the unit sphere $S^{7}$ of the real eight-space.</p>
 <p>The two forms play different roles:</p>
 <ul>
 <li>The <strong>biquaternion norm</strong> controls the multiplicative structure: it determines invertibility, zero divisors, and the multiplicativity of the biquaternion norm.</li>
-<li>The <strong>scalar part of the complex sesquilinear form</strong> (equivalently the diagonal value $\langle \tilde{Q}, \tilde{Q}\rangle$ of the inner product of <em>The Hermitian Form on the Biquaternion Algebra</em>) controls the topological structure: it defines the Euclidean norm, the topology of $\mathbb{B}$, and the completeness of the underlying real vector space.</li>
+<li>The <strong>scalar part of the general plain sesquilinear form</strong> (equivalently the diagonal value $\langle \tilde{Q}, \tilde{Q}\rangle$ of the inner product above) controls the topological structure: it defines the Euclidean norm, the topology of $\mathbb{B}$, and the completeness of the underlying real vector space.</li>
 </ul>
 <h2 id="the-real-forms-and-their-signatures">The Real Forms and Their Signatures</h2>
 <p>Over $\mathbb{C}$ a non-degenerate quadratic form has no signature; signature appears only after a real form is chosen. With $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$,
@@ -206,7 +225,7 @@ Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate
 $$
 W=\operatorname{span}_{\mathbb{R}}\{e_0,e_1,ie_2,ie_3\},\qquad N|_W=a^2+b^2-c^2-d^2 \quad \text{for } a e_0+b e_1+ci e_2+di e_3,
 $$
-of real dimension $4$ and matrix $\operatorname{diag}(1,1,-1,-1)$; its complexification is $(\mathbb{B},N)$, and its projective quadric is the doubly ruled real surface $S^1\times S^1$ (<em>Biquaternion Topology</em>, <em>Biquaternion Lorentzian and Conformal Geometry</em>).</p>
+of real dimension $4$ and matrix $\operatorname{diag}(1,1,-1,-1)$; its complexification is $(\mathbb{B},N)$, and its projective quadric is the doubly ruled real surface $S^1\times S^1$ (<em>The Null Quadric and Its Projective Geometry</em>, <em>Biquaternion Lorentzian and Conformal Geometry</em>).</p>
 <h2 id="the-associated-clifford-algebra">The Associated Clifford Algebra</h2>
 <p>With the series convention $v^2=\langle v,v\rangle_{\natural}\cdot1$,
 $$
@@ -217,7 +236,7 @@ $$
 \mathrm{Cl}^+(\mathbb{B},N)\cong\mathrm{Cl}_3(\mathbb{C})\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B},
 $$
 whose two simple summands are the two chiralities, matched to the rulings in <em>Biquaternion Spin Geometry</em>, §<em>The Spinor Module and Its Two Chiral Halves</em>.</p>
-<p>A caution. The biquaternion algebra itself is the even Clifford algebra $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ of the Minkowski quadratic space of signature $(1,3)$ (<em>The Clifford Structure of the Biquaternion Algebra</em>). That is a different Clifford algebra, attached to a different quadratic space; it is not $\mathrm{Cl}(\mathbb{B},N)$.</p>
+<p>A caution. The biquaternion algebra itself is the even Clifford algebra $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ of the Minkowski quadratic space of signature $(1,3)$ (<em>The Clifford Algebra Representation</em>). That is a different Clifford algebra, attached to a different quadratic space; it is not $\mathrm{Cl}(\mathbb{B},N)$.</p>
 <hr />
 <h2 id="invertibility">Invertibility</h2>
 <h3 id="definition_1">Definition</h3>
@@ -309,7 +328,7 @@ $$</p>
 <p>The biquaternion algebra $\mathbb{B}$ contains zero divisors, so it is <strong>not</strong> a division algebra. This is in contrast to the Frobenius theorem, which states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$. The biquaternion algebra $\mathbb{B}$ is an eight-dimensional associative real algebra, but it is not a division algebra, because it contains zero divisors. The zero divisors are studied in the article on biquaternion zero divisors.</p>
 <h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
 <p>We now examine how the invertible elements are distributed among the six distinguished subspaces of $\mathbb{B}$ defined in the basic algebra article. The criterion is the same in all cases: an element is invertible if and only if its biquaternion norm is nonzero.</p>
-<h3 id="the-complex-subspace-math232">The Complex Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
+<h3 id="the-complex-subspace-math269">The Complex Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
 <p>An element of $\mathbb{C}_{\mathbb{B}}$ has the form</p>
 <p>$$
 \tilde{Q} = Q_0 e_0, \qquad Q_0 \in \mathbb{C}.
@@ -319,7 +338,7 @@ $$</p>
 \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2.
 $$</p>
 <p>This vanishes if and only if $Q_0 = 0$, i.e. if and only if $\tilde{Q} = 0$. So every nonzero element of $\mathbb{C}_{\mathbb{B}}$ is invertible. This reflects the fact that $\mathbb{C}_{\mathbb{B}}$ is a copy of the field $\mathbb{C}$, in which every nonzero element has an inverse.</p>
-<h3 id="the-vector-subspace-math241">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
+<h3 id="the-vector-subspace-math278">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
 <p>An element of $\mathrm{Vect}(\mathbb{B})$ has vanishing scalar part, $\tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_k = q_k + i q'_k$. The biquaternion norm is</p>
 <p>$$
 \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_1^2 + Q_2^2 + Q_3^2 = \left(q_1^2 + q_2^2 + q_3^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2\right) + 2i\left(q_1 q'_1 + q_2 q'_2 + q_3 q'_3\right).
@@ -330,7 +349,7 @@ Q_1^2 + Q_2^2 + Q_3^2 = 0.
 $$</p>
 <p>This is the <strong>nilpotent cone</strong>: its nonzero elements square to zero, and they are the pure zero divisors studied in the companion article on biquaternion zero divisors. As a complex cone in $\mathbb{C}^3$ it has complex dimension $2$, that is, real dimension $4$; it therefore has real codimension $2$ in the six-dimensional space $\mathrm{Vect}(\mathbb{B})$. The elements outside the cone are invertible, and their set is <strong>connected</strong>, being the complement of a subset of codimension $2$.</p>
 <p>In particular the intersection $\mathrm{Vect}(\mathbb{B}) \cap \mathbb{H}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_1, e_2, e_3\}$ consists entirely of invertible elements away from the origin, since $N$ restricts to the positive-definite form $q_1^2 + q_2^2 + q_3^2$ there.</p>
-<h3 id="the-quaternion-subspace-math258">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-quaternion-subspace-math295">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
 <p>An element of $\mathbb{H}_{\mathbb{B}}$ has the form</p>
 <p>$$
 \tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
@@ -340,13 +359,13 @@ $$</p>
 \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2.
 $$</p>
 <p>This is a sum of squares of real numbers, and it vanishes if and only if all $q_\mu = 0$, i.e. if and only if $\tilde{Q} = 0$. So every nonzero element of $\mathbb{H}_{\mathbb{B}}$ is invertible. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{B}}$ is a copy of the division algebra $\mathbb{H}$, in which every nonzero element has an inverse.</p>
-<h3 id="the-anti-quaternion-subspace-math267">The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-anti-quaternion-subspace-math304">The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
 <p>An element of $i\mathbb{H}_{\mathbb{B}}$ is $i$ times a real quaternion, $\tilde{Q} = i\tilde{P}$ with $\tilde{P} = p_0 e_0 + p_1 e_1 + p_2 e_2 + p_3 e_3 \in \mathbb{H}_{\mathbb{B}}$. The biquaternion norm is</p>
 <p>$$
 \langle i\tilde{P},i\tilde{P}\rangle_{\natural} = \sum_{\mu=0}^{3} (i p_\mu)^2 = -\sum_{\mu=0}^{3} p_\mu^2 = -\left(p_0^2 + p_1^2 + p_2^2 + p_3^2\right).
 $$</p>
 <p>This is a <strong>negative-definite</strong> quadratic form on the four-dimensional real space $i\mathbb{H}_{\mathbb{B}}$, and it vanishes if and only if $\tilde{P} = 0$. So every nonzero element of $i\mathbb{H}_{\mathbb{B}}$ is invertible, and $i\mathbb{H}_{\mathbb{B}}$ contains no zero divisors. The subspace is not a subalgebra, so it is not itself a division algebra; but its nonzero elements are invertible in $\mathbb{B}$. Its signature is $(0,4)$, the exact negative of the $(4,0)$ of $\mathbb{H}_{\mathbb{B}}$, as the relation $\langle i\tilde{Q},i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ requires.</p>
-<h3 id="the-hermitian-subspace-math282">The Hermitian Subspace $\mathbb{M}_+$</h3>
+<h3 id="the-hermitian-subspace-math319">The Hermitian Subspace $\mathbb{M}_+$</h3>
 <p>An element of $\mathbb{M}_+$ has the form</p>
 <p>$$
 \tilde{Q} = q_0 e_0 + i q'_1 e_1 + i q'_2 e_2 + i q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
@@ -367,7 +386,7 @@ $$</p>
 <li>The <strong>inside region</strong> $q_0^2 < (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, on which $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} < 0$.</li>
 </ul>
 <p>On all three components, the biquaternion norm is nonzero.</p>
-<h3 id="the-anti-hermitian-subspace-math300">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
+<h3 id="the-anti-hermitian-subspace-math337">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
 <p>An element of $\mathbb{M}_-$ has the form</p>
 <p>$$
 \tilde{Q} = i q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
@@ -397,7 +416,7 @@ $$</p>
 </ul>
 <p>The two light cones in $\mathbb{M}_+$ and $\mathbb{M}_-$ have the same structure: each is defined by the vanishing of an indefinite quadratic form of signature $(1,3)$ or $(3,1)$, which has real codimension $1$ in the four-dimensional space, so the complement has three connected components. The cone in $\mathrm{Vect}(\mathbb{B})$ is different: the biquaternion norm is complex there, its vanishing imposes two real conditions, the cone has real codimension $2$ in the six-dimensional space, and the complement is connected.</p>
 <h2 id="the-relation-to-the-hermitian-decomposition">The Relation to the Hermitian Decomposition</h2>
-<p>The invertibility criterion is stated in terms of the biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$. It is worth noting that the biquaternion norm is the complex analogue of the complex sesquilinear form, and the two are related by the Hermitian decomposition</p>
+<p>The invertibility criterion is stated in terms of the biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$. It is worth noting that the biquaternion norm is the complex analogue of the general plain sesquilinear form, and the two are related by the Hermitian decomposition</p>
 <p>$$
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-.
 $$</p>
@@ -407,7 +426,7 @@ $$</p>
 <li>For $\tilde{Q} \in \mathbb{M}_-$, the biquaternion norm is real, and it is positive in the spacelike region (outside the light cone) and negative in the timelike region (inside the light cone, which has two connected components).</li>
 <li>For a general $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$ with both components nonzero, the biquaternion norm need not be real, and the invertibility criterion is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$, which is a condition on both the real and imaginary parts of $N$.</li>
 </ul>
-<p>The <strong>scalar part</strong> of the complex sesquilinear form, by contrast, is always non-negative, and it is positive-definite on all of $\mathbb{B}$: it vanishes only at $\tilde{Q} = 0$. The full complex sesquilinear form $\tilde{Q} \tilde{Q}^{*}$ is a Hermitian biquaternion whose scalar part is this non-negative quantity; it does not detect the zero divisors, because its scalar part vanishes only at $\tilde{Q} = 0$.</p>
+<p>The <strong>scalar part</strong> of the general plain sesquilinear form, by contrast, is always non-negative, and it is positive-definite on all of $\mathbb{B}$: it vanishes only at $\tilde{Q} = 0$. The full general plain sesquilinear form $\tilde{Q} \tilde{Q}^{*}$ is a Hermitian biquaternion whose scalar part is this non-negative quantity; it does not detect the zero divisors, because its scalar part vanishes only at $\tilde{Q} = 0$.</p>
 <h2 id="the-commutative-four-dimensional-contrast">The Commutative Four-Dimensional Contrast</h2>
 <p>The criterion of this article is a statement about a non-commutative algebra. It has a commutative counterpart worth recording, because there every object in the criterion can be computed in closed form. The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the reduced biquaternion algebra of <em>List of Algebras by Dimension</em>: an element is $q = A_1+A_2e$ with $e^2=+1$ and $A_1,A_2\in\mathbb{C}$, and the multiplicative form on it is the determinant of the two-by-two complex matrix representation, which in the idempotent coordinates is the product of the two components,</p>
 <p>$$
@@ -419,7 +438,7 @@ $$</p>
 <p><strong>The conjugation is not a real-product involution.</strong> The paper defines its norm and conjugation together, and requires the norm to be multiplicative, $\lvert q_1q_2\rvert^2 = \lvert q_1\rvert^2\lvert q_2\rvert^2$ for arbitrary $q_1,q_2$. It reports that this cannot be arranged with a product that is real: with the conjugation chosen so that the product $q q^\ast$ is the natural one, the product "is still an RB and not a real number", and the three further conjugations proposed in its references [12] and [13] fail likewise. None of the four conjugations the paper knows therefore yields a real product, and a ring-valued norm has to serve in place of a scalar product – the same obstruction that forces the complex-valued $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ on $\mathbb{B}$, recorded in the section above. The paper attributes the failure of the triangle inequality, its one departure from the complex case, to the conjugation being a <strong>nonlinear</strong> operation.</p>
 <p><strong>An unresolved tension, recorded deliberately.</strong> The corpus does not transcribe the printed norm and conjugation: they are set as one-bit equation images with no text layer, and every displayed equation in this source is in that form. That matters here, because the paper's two statements are not obviously compatible. A conjugation paired with a determinant norm by $q q^\ast = \langle q,q\rangle_{\natural}$ would be the map $q^\ast = A_1 - A_2e$, which is linear, not nonlinear; so either the paper's norm is not the determinant transcribed above, or its conjugation is not the one paired with it in that way, or "nonlinear" is used there in a sense the corpus has not fixed. The corpus records the paper's own report and the algebraic facts it has verified, and asserts no formula for the printed pair until a text-layer copy of the source is available.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form on the biquaternion algebra, the <strong>semi-norm</strong> of the literature. It is not positive-definite, and it vanishes on the zero divisors. Of the usual norm axioms only the sign axiom survives: the triangle inequality is inapplicable to a complex value, and the scaling axiom fails for complex scalars, since the square root of $\lambda^2$ lies in the right half-plane and not at $|\lambda|$. The absolute square root $r = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|}$ is, by contrast, the <strong>unique</strong> multiplicative real norm on the group of units normalised by $r(\lambda e_0) = |\lambda|$ for real $\lambda$. The complex sesquilinear form $\tilde{Q} \tilde{Q}^{*}$ is a Hermitian biquaternion whose scalar part is the non-negative quantity $\sum_\mu |Q_\mu|^2$; this scalar part defines the Euclidean norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$. The full complex sesquilinear form is not scalar-valued in general; its vector part vanishes precisely when $\tilde{Q}$ is a complex scalar multiple of a real quaternion, i.e. when $\tilde{Q} = (\alpha + i\beta) A$ with $\alpha, \beta \in \mathbb{R}$ and $A \in \mathbb{H}_{\mathbb{B}}$.</p>
+<p>The biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form on the biquaternion algebra, the <strong>semi-norm</strong> of the literature. It is not positive-definite, and it vanishes on the zero divisors. Of the usual norm axioms only the sign axiom survives: the triangle inequality is inapplicable to a complex value, and the scaling axiom fails for complex scalars, since the square root of $\lambda^2$ lies in the right half-plane and not at $|\lambda|$. The absolute square root $r = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|}$ is, by contrast, the <strong>unique</strong> multiplicative real norm on the group of units normalised by $r(\lambda e_0) = |\lambda|$ for real $\lambda$. The general plain sesquilinear form $\tilde{Q} \tilde{Q}^{*}$ is a Hermitian biquaternion whose scalar part is the non-negative quantity $\sum_\mu |Q_\mu|^2$; this scalar part defines the Euclidean norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$. The full general plain sesquilinear form is not scalar-valued in general; its vector part vanishes precisely when $\tilde{Q}$ is a complex scalar multiple of a real quaternion, i.e. when $\tilde{Q} = (\alpha + i\beta) A$ with $\alpha, \beta \in \mathbb{R}$ and $A \in \mathbb{H}_{\mathbb{B}}$.</p>
 <p>The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$. The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. The group of units $\mathbb{B}^\times$ is an open, connected subset of $\mathbb{B}$, and is a topological group of real dimension $8$ with center $\mathbb{C}^\times$; its topology is in <em>The Biquaternion Unit Group as a Topological Group</em> and its Lie structure in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
 <p>The algebra $\mathbb{B}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the six distinguished subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors at all; $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a light cone of zero divisors, the invertible elements in each forming a complement of the cone with three connected components; and $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, whose complement is connected.</p>
 <p>The zero divisors themselves are studied in the article on biquaternion zero divisors, and the classification of the roots of $-1$ that underlies the idempotent classification is studied in the article on biquaternion roots of minus one.</p>
@@ -470,11 +489,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{Q} \tilde{Q}^{*}$</td>
-<td>complex sesquilinear form (a Hermitian biquaternion); defined in <em>The Hermitian Form on the Biquaternion Algebra</em></td>
+<td>general plain sesquilinear form (a Hermitian biquaternion); defined above</td>
 </tr>
 <tr>
 <td>$\mathrm{Sc}(\tilde{Q} \tilde{Q}^{*}) = \sum_\mu |Q_\mu|^2$</td>
-<td>Scalar part of the complex sesquilinear form</td>
+<td>Scalar part of the general plain sesquilinear form</td>
 </tr>
 <tr>
 <td>$\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q} \tilde{Q}^{*})}$</td>
@@ -510,7 +529,7 @@ $$</p>
 <ul>
 <li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original discovery of the biquaternions and the zero divisors.</li>
 <li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the semi-norm and the algebraic properties of the biquaternions.</li>
-<li>S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636, for the semi-norm and its axioms, the unique real norm, and the complex sesquilinear form.</li>
+<li>S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636, for the semi-norm and its axioms, the unique real norm, and the general plain sesquilinear form.</li>
 <li>Klaus Gürlebeck and Wolfgang Sprößig, <em>Quaternionic and Clifford Calculus for Physicists and Engineers</em> (Wiley, 1997), for the unique multiplicative real norm of the algebra.</li>
 <li>
 <p>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</p>

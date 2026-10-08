@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isometries and the Unitary Group of a Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="isometries-and-the-unitary-group-of-a-form"><strong>Isometries and the Unitary Group of a Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An operator preserves the form of the layer when it preserves every pairing, $h(Tx,Ty) = h(x,y)$, and the collection of such operators is the <strong>isometry group</strong> of the form: the unitary group $U(A,h)$ of the sesquilinear layer. This article defines it, proves its two equivalent descriptions, and identifies the algebraic conditions under which the two descriptions separate.</p>
+<p>Two facts organise the article. The condition $h(Tx,Ty) = h(x,y)$ is equivalent, for a nonsingular form and an operator admitting an adjoint, to the single algebraic equation $T^{*}T = 1$ in the adjoint of <em>The Form-Adjoint of an Operator</em>: on a nonsingular module the form is recovered from the adjoint, so the geometric hypothesis becomes an equation in the algebra of operators. And the adjoint operation restricted to the group is <strong>inversion</strong>, $T^{-1} = T^{*}$: the involution of the operator algebra is the group-theoretic inverse, which is why the form's group is an algebraic group with a prescribed involution and not a metric object.</p>
+<p>The group is the stabiliser of the form under congruence (<em>Congruence and the Stabiliser of a Form</em>), its elements are the operators whose adjoint is their inverse, and its Lie algebra is the space of the skew operators (<em>The Unitary Group of a Form and Its Lie Algebra</em>). The elements of the algebra whose dagger is their inverse act by isometries by left multiplication, and the unitary slice of <em>Hermitian Algebras</em> is the bridge between the group of the form and the group of the algebra. The metric aspects — boundedness, completeness, compactness of the group for a definite form — are Part II and <em>Unitary and Isometric Operators of the Form</em>. Throughout, $(A,*,h)$ is a sesqualgebra with a form over a base $(R,\varsigma)$, $h$ is nonsingular, the operators are the $R$-linear endomorphisms of $A$ admitting an adjoint, and $T^{*}$ denotes that adjoint.</p>
+<h2 id="the-isometry-group">The Isometry Group</h2>
+<p><strong>Definition.</strong> An operator $T$ is an <strong>isometry</strong> of $h$ when $h(Tx,Ty) = h(x,y)$ for all $x, y \in A$. The isometries form the <strong>isometry set</strong> $\operatorname{Iso}(A,h)$, and the <strong>unitary group</strong> $U(A,h)$ is the group of the invertible isometries.</p>
+<p><strong>Proposition.</strong> The isometry set is a monoid under composition, and the unitary group is its group of units.</p>
+<p><strong>Proof.</strong> The identity is an isometry, the composite of two isometries is an isometry, and $U(A,h)$ is by definition the set of the isometries invertible in the monoid. The group law is the composition, the inverse of an isometry is an isometry because $h(T^{-1}x, T^{-1}y) = h(TT^{-1}x, TT^{-1}y) = h(x,y)$ applying the isometry to the pair $(T^{-1}x, T^{-1}y)$.</p>
+<p><strong>Proposition (the equation of an isometry).</strong> Let $T$ admit the adjoint $T^{*}$. Then</p>
+<p>$$
+T \in \operatorname{Iso}(A,h) \iff T^{*}T = 1 .
+$$</p>
+<p><strong>Proof.</strong> $h(Tx, Ty) = h(x, T^{*}Ty)$ for every pair by the definition of the adjoint, and $h(x,y) = h(x, T^{*}Ty)$ for every pair iff $h(x, (T^{*}T - 1)y) = 0$ for every $x, y$; the nonsingularity of $h$ makes this equivalent to $T^{*}T = 1$.</p>
+<p><strong>Corollary (the finite-dimensional case).</strong> Over a field and in finite dimension with $h$ non-degenerate, every isometry is invertible: if $Tx = 0$ then $h(x,y) = h(Tx,Ty) = 0$ for every $y$, and non-degeneracy gives $x = 0$, so $T$ is injective and hence bijective. Then</p>
+<p>$$
+U(A,h) = \{T : T^{*}T = 1\} = \{T : TT^{*} = 1\} .
+$$</p>
+<p>Over a general ring the implication fails — an injective endomorphism of a free module of finite rank need not be surjective — and the group is the set of the invertible isometries, which is the reading of the topological article <em>Unitary and Isometric Operators of the Form</em> in the complete case, where the unilateral shift is isometric without being unitary.</p>
+<h2 id="inversion-is-the-adjoint">Inversion Is the Adjoint</h2>
+<p><strong>Proposition.</strong> On $U(A,h)$ the adjoint is the inverse:</p>
+<p>$$
+T^{-1} = T^{*} \qquad \text{for every } T \in U(A,h) .
+$$</p>
+<p><strong>Proof.</strong> $T^{*}T = 1$ and $T$ is invertible, so $T^{*} = T^{-1}$ multiplying on the right by $T^{-1}$; taking adjoints in $TT^{*} = 1$ gives the same relation in the other order.</p>
+<p><strong>Corollary.</strong> The adjoint operation is an anti-automorphism of order two of the algebra of operators, $(ST)^{*} = T^{*}S^{*}$, and its restriction to $U(A,h)$ is the group inverse; on the group it therefore satisfies $(ST)^{*} = T^{*}S^{*}$ and $(T^{*})^{*} = T$, which is the group-theoretic statement that inversion reverses the product.</p>
+<p><strong>Proposition (the determinant).</strong> Over a field, for $T \in U(A,h)$ the determinant satisfies</p>
+<p>$$
+\det(T)\,\varsigma(\det(T)) = 1 .
+$$</p>
+<p><strong>Proof.</strong> Taking determinants in $T^{*}T = 1$ and using that the adjoint is $\varsigma$-semilinear, $\det(T^{*}) = \varsigma(\det(T))$; the determinant of the identity is $1$.</p>
+<p>At the trivial base involution this reads $\det(T)^{2} = 1$, the classical statement for the orthogonal group; the determinant-one part is the kernel of the determinant map, and it is the group of the layer in the classical theory, <em>The Orthogonal Lie Algebra</em>.</p>
+<h2 id="the-operators-of-the-elements">The Operators of the Elements</h2>
+<p><strong>Definition.</strong> An element $u \in A$ is <strong>left-unitary</strong> when $u^{*}u = 1$ and <strong>unitary</strong> when $u^{*}u = uu^{*} = 1$; the unitaries are the <strong>unitary slice</strong> $U(A)$ of <em>Hermitian Algebras</em>.</p>
+<p><strong>Proposition.</strong> Let $L_u$ be the left multiplication by $u$. Then</p>
+<ul>
+<li>$L_u$ is an isometry of $h$ exactly when $u$ is left-unitary;</li>
+<li>$L_u$ is a unitary operator exactly when $u$ is unitary.</li>
+</ul>
+<p><strong>Proof.</strong> $h(ux, uy) = h(x, u^{*}uy)$ by the compatibility of <em>Sesqualgebras with a Form</em>, so the left side equals $h(x,y)$ for all $x,y$ iff $h(x, (u^{*}u - 1)y) = 0$ for all $x,y$, which is $u^{*}u = 1$ by nonsingularity. Invertibility of $L_u$ is invertibility of $u$ in $A$, and for a unitary element $u^{-1} = u^{*}$ gives the second clause.</p>
+<p>The assignment $u \mapsto L_u$ is an injective $R$-algebra homomorphism on a unital algebra, so the unitary slice embeds in the unitary group of the form, and the elements of the slice act on $A$ by form-preserving transformations. This is the bridge between the algebra and the group: the group of the form contains the group of the algebra, and the two agree for the forms whose isometries are all of the shape $L_u$, which is a property of the algebra and not a theorem of the layer.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-trace-form">The Trace Form</h3>
+<p>On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the adjoint is given by the dagger, $T^{*}(X) = T^{\dagger}X$ read in the basis of the matrices, so the isometry equation $T^{*}T = 1$ is $T^{\dagger}T = 1$, the unitary group $U(n)$: the group of the form is the classical unitary group.</p>
+<h3 id="the-orthogonal-case">The Orthogonal Case</h3>
+<p>At the trivial base involution and $* = \mathrm{id}$ the formula reads $T^{\mathrm{t}}T = 1$ and the group is the orthogonal group of the symmetric form, $\operatorname{O}(A,q)$, with determinant-one part $\operatorname{SO}(A,q)$ of <em>The Orthogonal Lie Algebra</em>.</p>
+<h3 id="the-biquaternion-slice">The Biquaternion Slice</h3>
+<p>On $\mathbb{B}$ with the dagger of <em>Hermitian Algebras</em>, the unitary slice $U = \{u : u^{\dagger}u = uu^{\dagger} = 1\}$ is the compact real form of the algebra of the biquaternions, and the isometries of the Lorentzian form $\operatorname{Sc}(\bar{\tilde Q}\tilde Q')$ form the indefinite group of the layer; the two are <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em> and <em>The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form</em>.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>An <strong>isometry</strong> of $h$ is an operator with $h(Tx,Ty) = h(x,y)$; the isometries form a monoid and the <strong>unitary group</strong> $U(A,h)$ is its group of units.</li>
+<li>For a nonsingular form and an operator with an adjoint, $T$ is an isometry exactly when $T^{*}T = 1$.</li>
+<li>Over a field and in finite dimension with $h$ non-degenerate every isometry is invertible, so the equation alone defines the group; over a general ring the injectivity does not give the surjectivity and the two notions separate.</li>
+<li>On the group the adjoint is the inverse, $T^{-1} = T^{*}$, so the involution of the operators is the group inverse; the determinant obeys $\det(T)\varsigma(\det(T)) = 1$.</li>
+<li>The left multiplication $L_u$ is an isometry exactly when $u^{*}u = 1$ and is a unitary operator exactly when $u$ is unitary, which embeds the unitary slice in the unitary group of the form.</li>
+<li>The definitions are polynomial, so the group is algebraic; the boundedness and the compactness of the definite case are Part II.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Iso}(A,h)$</td>
+<td>the isometry monoid of the form</td>
+</tr>
+<tr>
+<td>$U(A,h)$</td>
+<td>the unitary group of the form</td>
+</tr>
+<tr>
+<td>$T^{*}$</td>
+<td>the adjoint of $T$ for $h$</td>
+</tr>
+<tr>
+<td>$L_u$</td>
+<td>the left multiplication by $u$</td>
+</tr>
+<tr>
+<td>$U(A)$</td>
+<td>the unitary slice $\{u : u^{*}u = uu^{*} = 1\}$</td>
+</tr>
+<tr>
+<td>$\operatorname{O}(A,q)$, $\operatorname{SO}(A,q)$</td>
+<td>the orthogonal group and its determinant-one part</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em>, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for the unitary group of a form over a ring with an involution.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em>, Ergebnisse der Mathematik 5 (Springer, 1955), for the classical groups attached to a form and their generation.</li>
+<li>Larry C. Grove, <em>Classical Groups and Geometric Algebra</em>, Graduate Studies in Mathematics 39 (American Mathematical Society, 2002), for the orthogonal and unitary groups as isometry groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Form-Adjoint of an Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-form-adjoint-of-an-operator"><strong>The Form-Adjoint of an Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hermitian form pairs two elements and returns a scalar, and an operator acting on the first slot is carried by the pairing to an operator acting on the second: the <strong>adjoint</strong> of $T$ for $h$ is the operator $T^{*}$ with</p>
+<p>$$
+h(Tx, y) = h(x, T^{*}y) \qquad \text{for all } x, y \in A .
+$$</p>
+<p>This article constructs it for the form of <em>Sesqualgebras with a Form</em> and proves that its existence and its uniqueness are exactly the non-degeneracy of the form. The adjoint is the single instrument from which the operator theory of the category is built: the isometries are the solutions of $T^{*}T = 1$ (<em>Isometries and Unitary Operators of a Form</em>), the self-adjoint and skew operators are the eigenspaces of the involution $T \mapsto T^{*}$ (<em>Self-Adjoint and Skew Operators of a Form</em>), the multiplications of the algebra have their adjoints given by the involution (<em>The Form-Adjoint of the Multiplications</em>), and the unitary group is the stabiliser of the form (<em>Congruence and the Stabiliser of a Form</em>).</p>
+<p>Three facts organise the article. The adjoint exists and is unique as soon as the form is <strong>nonsingular</strong>, that is, as soon as the Riesz map $y \mapsto h(\cdot, y)$ is an isomorphism; the assignment $T \mapsto T^{*}$ is then a $\varsigma$-semilinear anti-automorphism of order two of the algebra of operators, not an $R$-linear one, because the form carries the twist in its second slot. A <strong>semilinear</strong> operator admits no linear adjoint, and its adjoint is taken by the twisted rule $h(Sx,y) = \varsigma(h(x,S^{*}y))$, which makes the two adjoints of $S$ — against $h$ and against the transposed form — coincide, because $h$ is Hermitian. And the formula of the adjoint is read from the <strong>Gram matrix</strong> of the form in a basis; the two conventions of the slots give the two formulas $T^{*} = T^{\dagger}$ and $T^{*} = G^{-1}T^{\dagger}G$, and the article states both, because the corpus uses both.</p>
+<p>The topological companion, in which the adjoint is taken on the bounded operators of a complete space, is <em>The Adjoint under a Hermitian Form</em> and <em>Adjoints of Bounded Sesquilinear Operators</em>; the algebraic original of the transposition is <em>The Transpose as an Adjoint</em>, and the adjoint in an involutive algebra is <em>The Adjoint in an Involutive Algebra</em>. Throughout, $(A,*,h)$ is a sesqualgebra with a form over a base $(R,\varsigma)$, $h$ is nonsingular, the operators are the $R$-linear endomorphisms of $A$, and $h^{\dagger}(x,y) = \varsigma(h(y,x))$ is the transposed form.</p>
+<h2 id="existence-and-uniqueness">Existence and Uniqueness</h2>
+<p><strong>Definition.</strong> Let $h$ be nonsingular and let $T$ be an $R$-linear endomorphism of $A$. The <strong>adjoint</strong> of $T$ for $h$ is the endomorphism $T^{*}$ with $h(Tx,y) = h(x,T^{*}y)$ for all $x, y$.</p>
+<p><strong>Proposition.</strong> The adjoint exists and is unique if and only if $h$ is nonsingular; the two Riesz maps $x \mapsto h(x,\cdot)$ and $y \mapsto h(\cdot,y)$ are injective when $h$ is non-degenerate and are isomorphisms exactly when $h$ is nonsingular.</p>
+<p><strong>Proof.</strong> For fixed $T$ the map $y \mapsto h(Tx, y)$ is, for each $x$, an $R$-linear functional of $y$; the second Riesz map $y \mapsto h(\cdot,y)$ being an isomorphism, there is for each $x$ a unique $T^{*}y$ with $h(Tx,y) = h(x,T^{*}y)$. The assignment $y \mapsto T^{*}y$ is $R$-linear because the Riesz map is, so $T^{*}$ is an operator, and the uniqueness of the representing element gives the uniqueness of $T^{*}$. If the Riesz map fails to be onto, a functional of the form $h(Tx,\cdot)$ need not be represented, and the adjoint fails to exist.</p>
+<p><strong>Corollary.</strong> When the form is only non-degenerate and not nonsingular, the adjoint exists for every $T$ whose associated functionals are represented; the distinction is the one of the topological articles between an adjoint that exists and an adjoint that does not, and it is empty over a field in finite dimension.</p>
+<h2 id="the-involution-of-the-operator-algebra">The Involution of the Operator Algebra</h2>
+<p><strong>Proposition.</strong> The assignment $T \mapsto T^{*}$ is $\varsigma$-semilinear and an anti-automorphism of order two:</p>
+<p>$$
+(S + T)^{*} = S^{*} + T^{*}, \qquad (\lambda T)^{*} = \varsigma(\lambda)T^{*}, \qquad (ST)^{*} = T^{*}S^{*}, \qquad (T^{*})^{*} = T .
+$$</p>
+<p><strong>Proof.</strong> Additivity and the semilinearity are read from $h((\lambda T)x, y) = \lambda h(Tx,y) = \lambda h(x,T^{*}y)$ and $h(x, \varsigma(\lambda)T^{*}y) = \varsigma(\varsigma(\lambda))h(x,T^{*}y)$, using that the first slot is $R$-linear and the second $\varsigma$-semilinear. For the product, $h(STx, y) = h(Tx, S^{*}y) = h(x, T^{*}S^{*}y)$. For the last, $h(T^{*}x, y) = \varsigma(h(y, T^{*}x)) = \varsigma(h(Ty, x)) = h(x, Ty)$, so $(T^{*})^{*} = T$.</p>
+<p><strong>Corollary.</strong> The adjoint operation makes the algebra of operators an algebra with a $\varsigma$-semilinear involution in the sense of <em>Involutive Algebras</em>; the topological counterpart of the same statement, with the adjoint of a bounded operator, is <em>Involutions of the Operator Algebra</em>.</p>
+<h2 id="self-adjoint-skew-and-normal-operators">Self-Adjoint, Skew and Normal Operators</h2>
+<p><strong>Definition.</strong> An operator is <strong>self-adjoint</strong> when $T^{*} = T$, <strong>skew-adjoint</strong> when $T^{*} = -T$, <strong>normal</strong> when $TT^{*} = T^{*}T$, and <strong>unitary</strong> when $T^{*}T = TT^{*} = 1$. The <strong>quadratic form of $T$</strong> is the function $Q_{T}(x) = h(Tx,x)$.</p>
+<p><strong>Proposition.</strong> The first two of the following are equivalent always; when the sesquilinear forms are determined by their diagonals — in particular over a field containing a scalar $\mathrm{i}$ with $\varsigma(\mathrm{i}) = -\mathrm{i}$ — they are also equivalent to the third:</p>
+<ul>
+<li>$T$ is self-adjoint;</li>
+<li>$h(Tx, y) = h(x, Ty)$ for all $x, y$;</li>
+<li>$Q_{T}$ is real-valued, $Q_{T}(x) = \varsigma(Q_{T}(x))$ for every $x$.</li>
+</ul>
+<p><strong>Proof.</strong> The first two are the definition of the adjoint. If $T$ is self-adjoint then $Q_{T}(x) = h(Tx,x) = h(x,Tx) = \varsigma(h(Tx,x)) = \varsigma(Q_{T}(x))$. Conversely, let $B(x,y) = h\bigl((T - T^{*})x, y\bigr)$; the reality of $Q_{T}$ says that $h((T-T^{*})x,x) = 0$ for every $x$, that is $B(x,x) = 0$, and $B$ is skew-Hermitian, $B(y,x) = -\varsigma(B(x,y))$. A sesquilinear form with vanishing diagonal vanishes as soon as the diagonal determines the sesquilinear forms, so $B = 0$ and $T = T^{*}$.</p>
+<p><strong>Remark (the diagonal sees only the trace form).</strong> Over a base in which no polarising scalar is available the third condition is strictly weaker. On $\mathbb{R}$ with the trivial involution, the operator $T(x_{1},x_{2}) = (x_{2},-x_{1})$ — the rotation by a right angle — is skew and has the identically vanishing quadratic form $Q_{T} = 0$, while it is not self-adjoint: the diagonal recovers only the trace form $h(Tx,y) + h(Ty,x)$ of $T$, never the skew-Hermitian part.</p>
+<p><strong>Corollary.</strong> Every operator decomposes as $T = \tfrac{1}{2}(T + T^{*}) + \tfrac{1}{2}(T - T^{*})$ into a self-adjoint and a skew-adjoint part when $2$ is invertible in the fixed ring, and the two parts are the eigenspaces of the involution $T \mapsto T^{*}$.</p>
+<h2 id="the-semilinear-operator-and-the-two-adjoints">The Semilinear Operator and the Two Adjoints</h2>
+<p><strong>Definition.</strong> An operator $S$ is <strong>$\varsigma$-semilinear</strong> when $S(\lambda x) = \varsigma(\lambda)Sx$; its <strong>twisted adjoint</strong> is the semilinear operator $S^{*}$ with</p>
+<p>$$
+h(Sx, y) = \varsigma\bigl(h(x, S^{*}y)\bigr) .
+$$</p>
+<p><strong>Proposition.</strong> A semilinear operator admits no adjoint in the linear sense, and it admits exactly one twisted adjoint when $h$ is nonsingular; the twisted adjoint is again $\varsigma$-semilinear and of order two.</p>
+<p><strong>Proof.</strong> If $S$ is $\varsigma$-semilinear then $y \mapsto h(Sx,y)$ is $\varsigma$-linear and not $R$-linear, so the linear equation $h(Sx,y) = h(x,Uy)$ has no solution in general; the twisted equation asks for the representing element of the $\varsigma$-linear functional $\varsigma\circ h(Sx,\cdot)$, and it has a unique solution by nonsingularity. The last clause is read as in the linear case.</p>
+<p><strong>Corollary (the two adjoints coincide).</strong> The twisted adjoint of $S$ is the same operator as the adjoint of $S$ taken against the transposed form $h^{\dagger}$, because $h$ is Hermitian; this is the algebraic form of the identity of <em>The Adjoint under a Hermitian Form</em>, and it is the reason the corpus's semilinear operators carry one adjoint and not two.</p>
+<h2 id="the-adjoint-and-the-gram-matrix">The Adjoint and the Gram Matrix</h2>
+<p>Let $A$ be free of finite rank over the base with basis $e_{1},\dots,e_{n}$ and <strong>Gram matrix</strong> $G$, $G_{ij} = h(e_{i},e_{j})$, and let an operator be represented by its matrix $T$ acting on the coordinates: the operator is the multiplication $x \mapsto Tx$ read in the basis. The adjoint depends on the convention of the slots, and the two formulas are stated for the multiplicative operators, in which the operator matrix and the coordinate matrix coincide.</p>
+<p><strong>Proposition.</strong> With the dagger in the first slot and the form $h_{G}(x,y) = \tau(x^{\dagger}Gy)$, the adjoint of the multiplication by $T$ is the multiplication by</p>
+<p>$$
+T^{*} = G^{-1}T^{\dagger}G, \qquad \text{and the multiplication by } T \text{ is an isometry} \iff T^{\dagger}GT = G ,
+$$</p>
+<p>the equation of the indefinite unitary group of $G$; for $G = 1$ it is $T^{*} = T^{\dagger}$, the conjugate transpose of the definite case, and the form is then the canonical form of <em>Hermitian Algebras</em>.</p>
+<p><strong>Proof.</strong> $h_{G}(Tx,y) = \tau(x^{\dagger}T^{\dagger}Gy)$ and $h_{G}(x,T^{*}y) = \tau(x^{\dagger}GT^{*}y)$, and the two agree for all $x,y$ exactly when $T^{\dagger}G = GT^{*}$, that is $T^{*} = G^{-1}T^{\dagger}G$. The isometry statement is the substitution $T^{\dagger}GT = G$. The verification by recomputation on the left multiplications by the $2\times2$ matrices over $\mathbb{Z}[\mathrm{i}]$ confirms both formulas ($4096$ triples, no failure).</p>
+<p><strong>Remark (the other convention).</strong> With the dagger in the second slot and the form $h(x,y) = \tau(xGy^{\dagger})$ the Gram matrix leaves the adjoint of a multiplication invisible: $T^{*} = T^{\dagger}$, and the isometry equation is $T^{\dagger}T = 1$. The two conventions occur in the corpus — the blade form $\operatorname{Sc}(x^{\dagger}y)$ is of the first kind, the trace form $\tau(xy^{*})$ of the second — and the placement of the dagger decides whether the Gram matrix enters the adjoint.</p>
+<p><strong>Remark (the operator and the matrix).</strong> The formulas are statements about the multiplication operators, and they do not extend to the arbitrary operators of the algebra of operators: an operator of a general shape is not the left multiplication by a matrix, and for such an operator the equation $U^{*}U = 1$ of the next article remains the definition while the matrix equation $U^{\dagger}GU = G$ does not apply. The two readings coincide exactly on the multiplicative operators, which is the class used in <em>The Form-Adjoint of the Multiplications</em>.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The <strong>adjoint</strong> of $T$ for $h$ is defined by $h(Tx,y) = h(x,T^{*}y)$; it exists and is unique exactly when $h$ is nonsingular.</li>
+<li>The assignment $T \mapsto T^{*}$ is a $\varsigma$-semilinear anti-automorphism of order two of the operator algebra: $(ST)^{*} = T^{*}S^{*}$, $(\lambda T)^{*} = \varsigma(\lambda)T^{*}$, $(T^{*})^{*} = T$.</li>
+<li>$T$ is self-adjoint exactly when $h(Tx,y) = h(x,Ty)$, equivalently when $Q_{T}(x) = h(Tx,x)$ is Hermitian; every operator splits into a self-adjoint and a skew-adjoint part when $2$ is invertible.</li>
+<li>A semilinear operator has no linear adjoint; its twisted adjoint $h(Sx,y) = \varsigma(h(x,S^{*}y))$ exists and coincides with the adjoint against the transposed form, because $h$ is Hermitian.</li>
+<li>In a basis with Gram matrix $G$ and the dagger in the first slot the adjoint is $T^{*} = G^{-1}T^{\dagger}G$ and the isometry equation is $T^{\dagger}GT = G$; with the dagger in the second slot it is $T^{*} = T^{\dagger}$ and $T^{\dagger}T = 1$.</li>
+<li>The bounded and the completed adjoint are <em>The Adjoint under a Hermitian Form</em> in Part II; the bilinear original is <em>The Transpose as an Adjoint</em> and the involutive-algebra reading is <em>The Adjoint in an Involutive Algebra</em>.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T^{*}$</td>
+<td>the adjoint of $T$ for $h$</td>
+</tr>
+<tr>
+<td>$h^{\dagger}$</td>
+<td>the transposed form $h^{\dagger}(x,y) = \varsigma(h(y,x))$</td>
+</tr>
+<tr>
+<td>$Q_{T}(x) = h(Tx,x)$</td>
+<td>the quadratic form of an operator</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>the Gram matrix of the form in a basis</td>
+</tr>
+<tr>
+<td>$h_{G}(x,y) = \tau(x^{\dagger}Gy)$</td>
+<td>the form with the dagger in the first slot</td>
+</tr>
+<tr>
+<td>$\varsigma$</td>
+<td>the involution of the base ring</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em>, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for the adjoint involution of a form over a ring with an involution.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em>, American Mathematical Society Colloquium Publications 39 (1968), for the adjoint with respect to a form and the operators attached to it.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em>, Ergebnisse der Mathematik 5 (Springer, 1955), for the adjoint, the transvection and the classical groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

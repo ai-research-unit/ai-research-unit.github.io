@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orthogonality, Isotropy and the Radical — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="orthogonality-isotropy-and-the-radical"><strong>Orthogonality, Isotropy and the Radical</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A form of degree two organises the space it acts on by pairing elements, and the pairing yields a second, derived structure: the relation of <strong>orthogonality</strong>, the <strong>isotropic</strong> elements that the form cannot separate, the <strong>totally isotropic</strong> subspaces, and the <strong>radical</strong>, the part of the space that the form does not see at all. This article develops that structure for the forms of <em>Sesqualgebras with a Form</em>.</p>
+<p>Three facts govern the layer. Orthogonality is a relation and not an inner product: it is symmetric because the form is Hermitian, and a subspace $W$ has two orthogonal complements which coincide, $W^{\perp} = {}^{\perp}W$, and satisfy $W \subseteq W^{\perp\perp}$, with equality for every $W$ as soon as the form is non-degenerate; the radical of the restriction is the intersection $W \cap W^{\perp}$. Isotropy and the radical are different: an isotropic element has $h(x,x) = 0$ and the radical is the set of the elements orthogonal to everything, and a totally isotropic subspace need not lie in the radical — the hyperbolic plane is the standard witness. And the radical is the total orthogonal complement, $A^{\perp} = \operatorname{rad}$, so that the form descends to the quotient $A/\operatorname{rad}$, where it is non-degenerate.</p>
+<p>This is the counterpart of the orthogonality theory of <em>Bilinear Forms</em> and of the inertia theory of <em>The Indefinite Case and the Signature</em>; the classification of the forms by their Witt index is <em>The Hyperbolic Form and the Witt Index</em>, and the cancellation theorems are <em>Witt's Theorems</em>. Throughout, $(A,*,h)$ is a sesqualgebra with a form over a base $(R,\varsigma)$; the rank statements are made over a field $k$ with an involution $\varsigma$, where the Riesz maps are isomorphisms exactly when the form is non-degenerate, and the general case is stated with the hypothesis that the form be nonsingular, that is, that the Riesz map $x \mapsto h(\cdot, x)$ be an isomorphism.</p>
+<h2 id="orthogonality">Orthogonality</h2>
+<p><strong>Definition.</strong> Two elements $x, y$ are <strong>orthogonal</strong> when $h(x,y) = 0$; for a subset $W \subseteq A$ the <strong>right complement</strong> and the <strong>left complement</strong> are</p>
+<p>$$
+W^{\perp} = \{x : h(w,x) = 0 \ \text{for all } w \in W\}, \qquad
+{}^{\perp}W = \{x : h(x,w) = 0 \ \text{for all } w \in W\} .
+$$</p>
+<p><strong>Proposition.</strong> For a Hermitian form the two complements coincide, $W^{\perp} = {}^{\perp}W$, and orthogonality is a symmetric relation.</p>
+<p><strong>Proof.</strong> $h(x,w) = 0$ is equivalent to $\varsigma(h(w,x)) = 0$ and $\varsigma$ is injective, so the two sets are equal; the same computation gives symmetry.</p>
+<p><strong>Proposition (the radical of a restriction).</strong> For every subset $W$,</p>
+<p>$$
+W \cap W^{\perp} = \operatorname{rad}(h|_{W}) ,
+$$</p>
+<p>and the restriction $h|_{W}$ is non-degenerate exactly when $W \cap W^{\perp} = 0$. For every $W$ one has $W \subseteq W^{\perp\perp}$.</p>
+<p><strong>Proof.</strong> $x \in W \cap W^{\perp}$ means $x \in W$ and $h(x,w) = 0$ for every $w \in W$, which is exactly $x \in \operatorname{rad}(h|_{W})$; the restriction is non-degenerate exactly when that radical vanishes. For the inclusion, if $w \in W$ and $y \in W^{\perp}$ then $h(w,y) = 0$, so every element of $W$ is orthogonal to every element of $W^{\perp}$, which is $W \subseteq W^{\perp\perp}$.</p>
+<p><strong>Corollary.</strong> For a non-degenerate form the complement is an involution on the subspaces, $W^{\perp\perp} = W$ for every $W$. The radical is a different object: for a totally isotropic $W$ one has $\operatorname{rad}(h|_{W}) = W$, the whole of $W$, so the restriction is as degenerate as possible while the double complement is still $W$ and carries no information about the isotropy.</p>
+<p><strong>Proposition (the orthogonal decomposition).</strong> Let $A$ be a vector space of finite dimension over a field and $h$ non-degenerate. A subspace $W$ is non-degenerate exactly when $A = W \oplus W^{\perp}$.</p>
+<p><strong>Proof.</strong> If $W$ is non-degenerate then $W \cap W^{\perp} = \operatorname{rad}(h|_{W}) = 0$. The map $W \to W^{*}$, $w \mapsto h(\cdot,w)|_{W}$, is an isomorphism in finite dimension — injective by the vanishing of the radical and an isomorphism of vector spaces of the same dimension $\dim W$ — so the restriction map $A \to W^{*}$, $x \mapsto h(\cdot,x)|_{W}$, is onto; its kernel is $W^{\perp}$ and the rank–nullity theorem gives $\dim W^{\perp} = \dim A - \dim W$. The sum $W + W^{\perp}$ is then direct and of dimension $\dim A$, hence all of $A$. Conversely, if $A = W \oplus W^{\perp}$ and $x \in W$ is orthogonal to $W$, then $x$ is orthogonal to $W + W^{\perp} = A$, so $x = 0$ by non-degeneracy.</p>
+<p>Over a general ring the rank argument is replaced by the hypothesis that $h$ be nonsingular, and the decomposition holds as a direct summand statement.</p>
+<h2 id="isotropy">Isotropy</h2>
+<p><strong>Definition.</strong> An element $x$ is <strong>isotropic</strong> when $h(x,x) = 0$ and <strong>anisotropic</strong> otherwise; a subspace $W$ is <strong>totally isotropic</strong> when $h(x,y) = 0$ for all $x, y \in W$. A form with no non-zero isotropic element is <strong>anisotropic</strong>.</p>
+<p><strong>Proposition.</strong> Every element of the radical is isotropic, and the radical is a totally isotropic subspace. A totally isotropic subspace need not lie in the radical.</p>
+<p><strong>Proof.</strong> If $x \in \operatorname{rad}$ then $h(x,x) = 0$, and $h(x,y) = 0$ for all $x, y \in \operatorname{rad}$ by definition, so the radical is totally isotropic. For the failure, let $A = k^{2}$ with the form $h((a,b),(c,d)) = ad + bc$, the hyperbolic plane of the next article: it is non-degenerate, hence has zero radical, while $e_{1} = (1,0)$ is isotropic with $h(e_{1},e_{1}) = 0$ and the line $ke_{1}$ is totally isotropic.</p>
+<p><strong>Remark (the null set is not the radical).</strong> The set $\{x : h(x,x) = 0\}$ is the <strong>null set</strong> of the form and it is generally much larger than the radical; the two agree only in degenerate situations. The indefinite case is where the difference is visible, and it is the subject of <em>The Indefinite Case and the Signature</em>, where the inertia is defined through maximal definite subspaces precisely because the null set is not an invariant.</p>
+<h2 id="the-radical-and-the-quotient">The Radical and the Quotient</h2>
+<p><strong>Proposition.</strong> The radical is the total orthogonal complement,</p>
+<p>$$
+\operatorname{rad} = A^{\perp} = {}^{\perp}A ,
+$$</p>
+<p>and it is invariant under the isometries of the form.</p>
+<p><strong>Proof.</strong> The first clause is the definition of the radical as the set of the elements orthogonal to every element of $A$; the Hermitian property identifies the two sides. If $T$ is an invertible isometry — in finite dimension and for a non-degenerate form every isometry is invertible, by <em>Isometries and the Unitary Group of a Form</em> — and $x \in \operatorname{rad}$ then $h(Tx, Ty) = h(x,y) = 0$ for every $y$, and $T$ being onto, $h(Tx, z) = 0$ for every $z$, so $Tx \in \operatorname{rad}$.</p>
+<p><strong>Proposition (the descent).</strong> The form descends to the quotient $A/\operatorname{rad}$ by $h_{\mathrm{red}}(x + \operatorname{rad}, y + \operatorname{rad}) = h(x,y)$, and the descended form is non-degenerate.</p>
+<p><strong>Proof.</strong> Well defined: if $z \in \operatorname{rad}$ then $h(x + z, y) = h(x,y) + h(z,y) = h(x,y)$ and likewise in the second slot. Non-degenerate: if $h(x,y) = 0$ for every $y$ then $x \in \operatorname{rad}$, so the class of $x$ is zero.</p>
+<p>The descent is the algebraic reduction of the layer, and the radical is a left ideal of the algebra by <em>Sesqualgebras with a Form</em>; when the form is associative the radical is a two-sided ideal and the quotient is again an algebra, which is the quotient construction of <em>The Completion of a Sesqualgebra with a Form</em> read without the completion.</p>
+<h2 id="the-witt-index">The Witt Index</h2>
+<p><strong>Definition.</strong> Let $h$ be a non-degenerate Hermitian form on a vector space of finite dimension over a field with an involution. The <strong>Witt index</strong> of $h$ is the largest dimension of a totally isotropic subspace, $\operatorname{ind}(h) = \max\{\dim W : W$ totally isotropic$\}$.</p>
+<p><strong>Proposition.</strong> Every totally isotropic subspace of a non-degenerate form is contained in a maximal one, and the Witt index is the number of hyperbolic planes in a Witt decomposition $A = H \perp A_{\mathrm{an}}$ with $H$ a sum of hyperbolic planes and $A_{\mathrm{an}}$ anisotropic.</p>
+<p><strong>Proof.</strong> The extension of a totally isotropic subspace to a maximal one is the finite-dimensional case of the extension theorem; the decomposition is the Witt decomposition, which the hyperbolic-plane reduction constructs pair by pair, and the number of pairs is the index. The details, with the cancellation theorem that makes the index and the anisotropic part invariants, are <em>Witt's Theorems</em> and <em>The Hyperbolic Form and the Witt Index</em>.</p>
+<p><strong>Corollary.</strong> Over an algebraically closed field $k$ with $\varsigma = \mathrm{id}$ the index of a non-degenerate form of dimension $n$ is $\lfloor n/2\rfloor$: the form is the sum of $\lfloor n/2\rfloor$ hyperbolic planes and, for $n$ odd, one anisotropic line. Over $\mathbb{R}$ the index is $\min(p,q)$ where $(p,q)$ is the signature, and the inertial invariant is <em>The Indefinite Case and the Signature</em>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-hyperbolic-plane">The Hyperbolic Plane</h3>
+<p>On $k^{2}$ with $h((a,b),(c,d)) = ad + bc$ the form is non-degenerate of Witt index one: the line $ke_{1}$ and the line $ke_{2}$ are totally isotropic, the radical is zero, and the matrix of the form is $\begin{pmatrix}0 & 1\\ 1 & 0\end{pmatrix}$ of determinant $-1$.</p>
+<h3 id="the-matrix-algebra-with-an-indefinite-form">The Matrix Algebra with an Indefinite Form</h3>
+<p>On $M_{2}(\mathbb{C})$ with $h(X,Y) = \tau(XGY^{*})$, $G = \operatorname{diag}(1,-1)$, the rank-one matrix $E_{11}$ has the positive diagonal $h(E_{11},E_{11}) = 1$ and is <strong>not</strong> isotropic; the sum $E_{11} + E_{22}$ is isotropic, $h(E_{11}+E_{22}, E_{11}+E_{22}) = \tau(G) = 0$, so the null set is not empty although the radical is zero, because the form is non-degenerate. The comparison with the rank-one functional form of the layer, $h_{\varphi}(X,Y) = \varphi(Y^{*}X)$ with $\varphi(Z) = \operatorname{tr}(ZE_{11})$, whose radical is the left ideal $\{X : XE_{11} = 0\}$ of the matrices with the first column zero, separates the two notions.</p>
+<h3 id="the-biquaternion-algebra">The Biquaternion Algebra</h3>
+<p>On $\mathbb{B}$ with the form $\operatorname{Sc}(\bar{\tilde Q}\tilde Q')$ of signature $(2,6)$ over $\mathbb{R}$, the totally isotropic subspaces have dimension at most $2$; the two null directions are the light cone of the Minkowski reading, and the passage to the definite quotient is <em>The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form</em>.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Orthogonality is the symmetric relation $h(x,y) = 0$; the two orthogonal complements coincide for a Hermitian form and $W \subseteq W^{\perp\perp}$, with equality for every $W$ when the form is non-degenerate, while $W \cap W^{\perp} = \operatorname{rad}(h|_{W})$.</li>
+<li>Over a field and for a non-degenerate form, $W$ is non-degenerate exactly when $A = W \oplus W^{\perp}$.</li>
+<li>An element is isotropic when $h(x,x) = 0$; the radical is totally isotropic, and a totally isotropic subspace need not lie in the radical, the hyperbolic plane being the witness.</li>
+<li>The null set is not the radical, and the inertia must be defined through maximal definite subspaces rather than through the null set.</li>
+<li>The radical is the total orthogonal complement $A^{\perp}$ and is isometry-invariant; the form descends to $A/\operatorname{rad}$, where it is non-degenerate.</li>
+<li>The Witt index is the largest dimension of a totally isotropic subspace and the number of hyperbolic planes in a Witt decomposition.</li>
+<li>The bilinear originals are <em>Bilinear Forms</em> and <em>Witt's Theorems</em>; the index classification is <em>The Hyperbolic Form and the Witt Index</em>.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$W^{\perp}$, ${}^{\perp}W$</td>
+<td>the right and the left orthogonal complement of $W$</td>
+</tr>
+<tr>
+<td>$W^{\perp\perp}$</td>
+<td>the double complement, containing $W$</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}$</td>
+<td>the radical $A^{\perp} = {}^{\perp}A$</td>
+</tr>
+<tr>
+<td>$h_{\mathrm{red}}$</td>
+<td>the form descended to $A/\operatorname{rad}$</td>
+</tr>
+<tr>
+<td>$\operatorname{ind}(h)$</td>
+<td>the Witt index of a non-degenerate form</td>
+</tr>
+<tr>
+<td>$A_{\mathrm{an}}$</td>
+<td>the anisotropic part of a Witt decomposition</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>the hyperbolic part of a Witt decomposition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for orthogonality, the radical, the descent and the Witt decomposition.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em>, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for totally isotropic subspaces and the Witt index over a field.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em>, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for the non-singular form over a ring and the orthogonal summand statements.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

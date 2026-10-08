@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Left Multiplication on a Hermitian Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-left-multiplication-on-a-hermitian-algebra"><strong>The Adjoint of the Left Multiplication on a Hermitian Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The adjoint of the left multiplication of a Hermitian algebra is the left multiplication by the involution, $L_x^{*} = L_{x^{\dagger}}$, and everything the adjoint does can be read off from that single identity. This article fixes that identity, the fact that it is the adjoint axiom in operator form, and the fact that it determines the involution. Its consequences on the completion — the adjoint at the cyclic vector, the <strong>Tomita operator</strong>, the <strong>polar decomposition</strong> and the completion-level self-adjointness and unitarity criteria — are operator theory and are in <em>The Modular Structure of a Hermitian Algebra</em>.</p>
+<p>Two facts organise the computation. The first is that the adjoint of the left multiplication is again a left multiplication, so the adjoint of a one-sided operator stays on its own side; the passage to the other side is not adjunction but conjugation by the modular conjugation, and that is operator theory. The second is that the identity $L_x^{*} = L_{x^{\dagger}}$ determines the involution: evaluating at $1$ recovers $x^{\dagger}$ from $L_x^{*}$, so form and involution determine each other.</p>
+<p>This article fixes the adjoint of the left multiplication, its form as the adjoint axiom, and the fact that it determines the involution.</p>
+<p>The involution and the adjoint axiom are <em>Hermitian Adjoints on a Hermitian Algebra</em> and <em>Hermitian Algebras</em>; the two representations and the adjoint of the right multiplication are <em>The Left and the Right Regular Representation</em> and <em>The Adjoint of the Left and the Right Multiplication</em>; the Tomita operator, the polar decomposition and the modular objects are <em>The Modular Structure of a Hermitian Algebra</em>. Those are cited. The algebra is $A$ with involution $\dagger$ and form $\langle\cdot,\cdot\rangle$.</p>
+<h2 id="the-adjoint-of-the-left-multiplication">The Adjoint of the Left Multiplication</h2>
+<p><strong>Definition.</strong> For $x\in A$ the <strong>left multiplication</strong> is $L_x(y) = xy$ on $A$, and $\bar L_x$ is its extension to the completion $H$; the <strong>adjoint</strong> $\bar L_x^{*}$ is the Hermitian adjoint on $H$.</p>
+<p><strong>Theorem.</strong> For every $x$ the left multiplication is bounded on the completion and</p>
+<p>$$
+\bar L_x^{*} = \bar L_{x^{\dagger}} .
+$$</p>
+<p><strong>Proof.</strong> On the algebra the identity is the adjoint axiom, $\langle L_xy,z\rangle = \langle xy,z\rangle = \langle y,x^{\dagger}z\rangle = \langle y,L_{x^{\dagger}}z\rangle$; the operator $L_x$ is bounded on $A$ for the form norm, so it extends to $H$ with the same adjoint; both sides of the identity are bounded and agree on the dense subspace $A$, hence on $H$.</p>
+<p><strong>Proposition (the adjoint at the cyclic vector).</strong> With $\xi = \iota(1)$,</p>
+<p>$$
+\bar L_x\xi = \iota(x) , \qquad \bar L_x^{*}\xi = \iota(x^{\dagger}) ,
+$$</p>
+<p>so the adjoint is the map of the cyclic vector to the involution, and the deviation of the involution from the identity on $\iota(A)$ is the deviation of $\bar L_x^{*}$ from $\bar L_x$.</p>
+<p><strong>Proof.</strong> $L_x1 = x$ gives the first identity; the second is the theorem applied to $1$.</p>
+<p><strong>Proposition (positivity of the adjoint products).</strong> For every $x$ and every $u\in H$,</p>
+<p>$$
+\langle\bar L_x\bar L_x^{*}u,u\rangle = \|\bar L_x^{*}u\|^{2}\geq0 , \qquad \langle\bar L_x^{*}\bar L_xu,u\rangle = \|\bar L_xu\|^{2}\geq0 ,
+$$</p>
+<p>so $\bar L_x\bar L_x^{*}$ and $\bar L_x^{*}\bar L_x$ are positive operators, and the left multiplications form a $\ast$-closed family.</p>
+<p><strong>Proof.</strong> The two displays are the definition of the Hermitian adjoint.</p>
+<p><strong>Proposition (the adjoint is determined by the form).</strong> If an antilinear map $\Phi$ of $A$ satisfies $L_{\Phi(x)} = L_x^{*}$ for every $x$ then $\Phi = \dagger$; the adjoint axiom therefore determines the involution and conversely.</p>
+<p><strong>Proof.</strong> Evaluating at $1$ gives $\Phi(x) = \Phi(x)\cdot 1 = L_{\Phi(x)}1 = L_x^{*}1 = x^{\dagger}$ by the previous proposition.</p>
+<p>The <strong>Tomita operator</strong>, the <strong>polar decomposition</strong> $\bar S=J\Delta^{1/2}$, the <strong>modular operator</strong> and the completion-level self-adjointness and unitarity criteria are operator theory and are in <em>The Modular Structure of a Hermitian Algebra</em> (Part II).</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-group-algebra">The Group Algebra</h3>
+<p>For $A = \mathbb{C}[G]$ with the standard form, $L_g^{*} = L_{g^{-1}}$, the Tomita operator is $S(g\xi) = g^{-1}\xi$, and the form is tracial, so $\Delta = \mathrm{id}$ and $S = J$ is a bounded antiunitary involution with $J\bar L_gJ = \bar R_{g^{-1}}$.</p>
+<h3 id="matrices">Matrices</h3>
+<p>For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\bar L_a^{*} = \bar L_{a^{*}}$ with $a^{*}$ the conjugate transpose, the Tomita operator is $S(a\xi) = a^{*}\xi$ extended, the polar decomposition is $S = J$ with $\Delta = \mathrm{id}$, and every left multiplication is normal.</p>
+<h3 id="a-non-tracial-case">A Non-Tracial Case</h3>
+<p>For the group von Neumann algebra of an infinite non-abelian group with a non-tracial vector state, the Tomita operator is unbounded, $\Delta\neq\mathrm{id}$, and the adjoint of the left multiplication is the $\Delta$-twisted right multiplication; this is the case in which the three descriptions — involution, adjoint, modular operator — visibly differ.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint of the <strong>left multiplication</strong> of a Hermitian algebra is the left multiplication by the involution, $\bar L_x^{*} = \bar L_{x^{\dagger}}$, and it is computed at the cyclic vector by $\bar L_x^{*}\xi = \iota(x^{\dagger})$; the adjoint axiom is exactly this identity, so the form determines the involution and conversely. The <strong>Tomita operator</strong> $S(x\xi) = x^{\dagger}\xi$ is the closure of the involution, it is antilinear with $S^{2} = \mathrm{id}$ on its domain, it exchanges the sides through $SL_xS = R_{x^{\dagger}}$, and it converts an adjoint into a conjugation of the other side, $L_x^{*} = SR_xS$. Its <strong>polar decomposition</strong> $\bar S = J\Delta^{1/2}$ produces the modular conjugation $J$, the modular operator $\Delta = \bar S^{*}\bar S$, the inversion $J\Delta J = \Delta^{-1}$ and the modular group, so the adjoint of the left multiplication already carries the modular structure and the deviation of the form from being tracial is exactly $\Delta\neq\mathrm{id}$. The <strong>criteria</strong> are: $\bar L_x$ self-adjoint exactly when $x = x^{\dagger}$, normal exactly when $xx^{\dagger} = x^{\dagger}x$, unitary exactly when $x$ is a unitary element, positive exactly when $x$ is in the positive cone; the modular group acts by $\Delta^{it}\bar L_x\Delta^{-it} = \bar L_{\sigma_t(x)}$. The involution and the adjoint axiom are <em>Hermitian Adjoints on a Hermitian Algebra</em>, the two-sided adjoint identities are <em>The Adjoint of the Left and the Right Multiplication</em>, the modular objects are <em>The Modular Operator and Tomita-Takesaki Theory</em>, and the unbounded spectral theory is deferred to Part III with <em>Analysis on Linear Spaces</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_x(y) = xy$, $\bar L_x$</td>
+<td>Left multiplication and its extension to $H$</td>
+</tr>
+<tr>
+<td>$\bar L_x^{*} = \bar L_{x^{\dagger}}$</td>
+<td>The adjoint</td>
+</tr>
+<tr>
+<td>$S^{2} = \mathrm{id}$, $SL_xS = R_{x^{\dagger}}$</td>
+<td>Involutivity and the exchange of sides</td>
+</tr>
+<tr>
+<td>$L_x^{*} = SR_xS$</td>
+<td>Adjoint as a conjugation of the right multiplication</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the left multiplication, its adjoint and the standard form.</li>
+<li>Serban Stratila and László Zsidó, <em>Lectures on von Neumann Algebras</em> (Abacus Press, 1979), for the Tomita operator of a Hermitian algebra.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 2 (Academic Press, 1986), for the polar decomposition of the Tomita operator.</li>
+<li>Masamichi Takesaki, <em>Tomita's Theory of Modular Hilbert Algebras and its Applications</em>, Lecture Notes in Mathematics 128 (Springer, 1970), for the modular operator from the involution.</li>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em>, vol. 1 (Springer, 1987), for the standard form and the modular group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

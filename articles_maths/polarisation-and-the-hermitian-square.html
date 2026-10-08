@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polarisation and the Hermitian Square — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="polarisation-and-the-hermitian-square"><strong>Polarisation and the Hermitian Square</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A sesquilinear form is a function of two variables; its <strong>diagonal</strong> $q(x) = h(x,x)$ is a function of one. The diagonal determines the form only up to a well-defined part of it, and the passage from the diagonal back to the form is <strong>polarisation</strong>. The exact content of the passage, and the exact information the diagonal loses, are the subject of this article.</p>
+<p>Two objects organise it. The <strong>polarisation identity</strong></p>
+<p>$$
+q(x+y) - q(x) - q(y) = h(x,y) + h(y,x)
+$$</p>
+<p>recovers from the diagonal the <strong>trace form</strong> $h(x,y) + \varsigma(h(x,y))$, and leaves the skew-Hermitian part of $h$ unseen; at the trivial base involution and with $2$ invertible the passage is a bijection, and in characteristic two the diagonal sees nothing at all. And the <strong>Hermitian square</strong> $x^{*}x$ of the algebra is the element whose functional image is the diagonal, $q(x) = \varphi(x^{*}x)$, so that the quadratic form of the layer is carried by the involution of the algebra and not by the form alone.</p>
+<p>This is the counterpart, in the sesquilinear layer, of <em>Quadratic Forms and Polarisation</em>, whose identity and whose characteristic-two degeneracy are the same. The form is <em>Sesqualgebras with a Form</em>, the matrix and quaternion quadratics are <em>Quadratic Forms over Algebras and Norms</em>, the trace form is <em>Hermitian Algebras</em>, and the real form that the trace form defines is <em>Real Forms and the Signature</em>. Throughout, $(A,*,h)$ is a sesqualgebra with a form over a base $(R,\varsigma)$, $\varphi = h(\cdot, 1)$ is the functional of the form, and $R^{\varsigma}$ is the fixed ring.</p>
+<h2 id="the-diagonal">The Diagonal</h2>
+<p><strong>Definition.</strong> The <strong>diagonal</strong> of the form is the map</p>
+<p>$$
+q : A \longrightarrow R^{\varsigma}, \qquad q(x) = h(x,x) .
+$$</p>
+<p>It is valued in the fixed ring because $q(x) = \varsigma(q(x))$ is the Hermitian property read on the diagonal. The association $h \mapsto q$ is $R^{\varsigma}$-linear and it is the only part of the form that a single variable can see.</p>
+<p><strong>Definition.</strong> The <strong>trace form</strong> of $h$ is</p>
+<p>$$
+h_{\mathrm{tr}}(x,y) = h(x,y) + h(y,x) = h(x,y) + \varsigma(h(x,y)),
+$$</p>
+<p>the sum of the two orderings of the pair, and the <strong>skew-Hermitian part</strong> is $h_{\mathrm{sk}}(x,y) = h(x,y) - \varsigma(h(x,y))$. The two are the eigenspaces of the involution $h \mapsto h^{\dagger}$, $h^{\dagger}(x,y) = \varsigma(h(y,x))$, of <em>The Sesquilinear Form and the Conjugation</em>.</p>
+<p><strong>Proposition.</strong> The trace form is symmetric, $h_{\mathrm{tr}}(x,y) = h_{\mathrm{tr}}(y,x)$, and $R^{\varsigma}$-bilinear; the skew-Hermitian part is alternating, $h_{\mathrm{sk}}(x,x) = 0$. Every form is the sum $h = \tfrac{1}{2}h_{\mathrm{tr}} + \tfrac{1}{2}h_{\mathrm{sk}}$ when $2$ is invertible in $R^{\varsigma}$.</p>
+<p><strong>Proof.</strong> Symmetry and bilinearity are immediate from the definition and from $R^{\varsigma} = R^{\varsigma\cdot\varsigma}$. For the alternating property, $h_{\mathrm{sk}}(x,x) = h(x,x) - \varsigma(h(x,x)) = 0$ because the diagonal lies in $R^{\varsigma}$. The decomposition is the eigenvector decomposition of the involution $h \mapsto h^{\dagger}$ of the space of the sesquilinear forms, which needs $\tfrac{1}{2}$.</p>
+<p>Note that $h_{\mathrm{tr}}$ is not $R$-sesquilinear when $\varsigma \neq \mathrm{id}$: it carries $\lambda$ to $\tfrac{1}{2}(\lambda + \varsigma(\lambda))$-weight, so it is a form over the fixed ring and not over $R$. This is why the two classical readings over $\mathbb{R}$ and over $\mathbb{C}$ differ, and the difference is worked in the examples below.</p>
+<h2 id="polarisation">Polarisation</h2>
+<p><strong>Proposition (the polarisation identity).</strong> For all $x, y \in A$,</p>
+<p>$$
+q(x+y) = q(x) + q(y) + h_{\mathrm{tr}}(x,y) .
+$$</p>
+<p><strong>Proof.</strong> Expand by biadditivity: $q(x+y) = h(x,x) + h(x,y) + h(y,x) + h(y,y) = q(x) + q(y) + h(x,y) + h(y,x)$, and the last two terms are $h_{\mathrm{tr}}(x,y)$.</p>
+<p><strong>Corollary (the diagonal recovers the trace form).</strong> If $2$ is invertible in $R^{\varsigma}$ then</p>
+<p>$$
+h_{\mathrm{tr}}(x,y) = q(x+y) - q(x) - q(y),
+$$</p>
+<p>so two forms with the same diagonal have the same trace form and differ by a skew-Hermitian form.</p>
+<p><strong>Corollary (the classical case).</strong> When $\varsigma = \mathrm{id}$ and $2$ is invertible, the polarisation $h(x,y) = \tfrac{1}{2}\bigl(q(x+y) - q(x) - q(y)\bigr)$ is a bijection between the symmetric bilinear forms and the quadratic functions $q$ with $q(\lambda x) = \lambda^{2}q(x)$. This is the correspondence of <em>Quadratic Forms and Polarisation</em>, and the sesquilinear layer is its $\varsigma$-twisted version.</p>
+<p><strong>Remark (what the diagonal does not see).</strong> The skew-Hermitian part is invisible to the diagonal: $h$ and $h - h_{\mathrm{sk}}$ have the same diagonal, and $h_{\mathrm{sk}}(x,x) = 0$ for every $x$. Over $\mathbb{C}$ with $\varsigma$ the conjugation, the trace form $\tfrac{1}{2}h_{\mathrm{tr}} = \operatorname{Re} h$ is a real symmetric form and the skew part $\tfrac{1}{2}h_{\mathrm{sk}} = \mathrm{i}\,\operatorname{Im} h$ is real alternating; a Hermitian form is exactly a real symmetric form together with a real alternating form tied by the complex structure, and this is the decomposition $h = g + \mathrm{i}\,\omega$ of the geometry of a Kähler manifold.</p>
+<h2 id="the-hermitian-square">The Hermitian Square</h2>
+<p>The diagonal of the layer is computed by the algebra, because the functional of the form is evaluated on the Hermitian square.</p>
+<p><strong>Proposition.</strong> The diagonal is the functional image of the <strong>Hermitian square</strong>:</p>
+<p>$$
+q(x) = \varphi(x^{*}x), \qquad \varphi = h(\cdot, 1),
+$$</p>
+<p>and $x^{*}x$ is self-adjoint, $(x^{*}x)^{*} = x^{*}x$.</p>
+<p><strong>Proof.</strong> $\varphi(x^{*}x) = h(x^{*}x, 1) = h(x, x^{*}1) = h(x,x)$, by the compatibility $h(ab,c) = h(b,a^{*}c)$ read at $(a,b,c) = (x^{*},x,1)$ and by $1^{*} = 1$. Self-adjointness is the involution axiom, $(x^{*}x)^{*} = x^{*}x^{**} = x^{*}x$.</p>
+<p><strong>Corollary.</strong> The <strong>quadratic form of the algebra</strong> $Q(x) = \varphi(x^{*}x)$ satisfies $Q(x) = h(x,x)$, and its polarisation is the trace form, $Q(x+y) - Q(x) - Q(y) = h_{\mathrm{tr}}(x,y)$.</p>
+<p>The two products $x^{*}x$ and $xx^{*}$ are the two Hermitian squares of the element, exchanged by the involution. The second gives the same diagonal for a <strong>cyclic</strong> functional, in particular for the trace form $\varphi = \tau$, where $\varphi(xx^{*}) = \varphi(x^{*}x)$ and the diagonal is also the functional image of $xx^{*}$; for a non-cyclic functional the two differ, and it is $x^{*}x$ that the diagonal reads. The square is the <strong>norm map</strong> of the layer; it is quadratic over $R^{\varsigma}$ in the sense $(\lambda x)^{*}(\lambda x) = \varsigma(\lambda)\lambda\,x^{*}x = |\lambda|^{2}x^{*}x$, and it is multiplicative for the elements of the unitary slice, $(xy)^{*}(xy) = y^{*}(x^{*}x)y$. When the norm map is multiplicative on the whole algebra the form is that of a composition algebra, and the norm form of the quaternion and octonion algebras is the classical instance: the polarisation of the norm is the trace form, and the whole theory is <em>Hermitian Forms over Algebras and Norms</em>.</p>
+<h2 id="the-failure-when-2-is-not-invertible">The Failure When 2 Is Not Invertible</h2>
+<p><strong>Proposition.</strong> In characteristic two with $\varsigma = \mathrm{id}$ the polarisation identity degenerates: $q(x+y) = q(x) + q(y)$, the trace form vanishes, and the diagonal determines no part of the form at all.</p>
+<p><strong>Proof.</strong> With $\varsigma = \mathrm{id}$ the form is symmetric, $h_{\mathrm{tr}} = 2h = 0$, and the polarisation identity reduces to additivity of $q$. A symmetric bilinear form and its diagonal are then unrelated data: an alternating form has a vanishing diagonal and is not zero, and distinct symmetric forms share the diagonal.</p>
+<p>The quadratic datum is therefore strictly finer than the bilinear one when $2$ is not invertible: a <strong>quadratic refinement</strong> of the form is a function $q$ with $q(x+y) - q(x) - q(y) = h(x,y)$, and it is an extra structure. The characteristic-two examples, including the Hermitian-and-skew-Hermitian-not-alternating form over $\mathbb{F}_{2}$, are worked in <em>The Sesquilinear Form and the Conjugation</em>; the quadratic forms themselves are <em>Quadratic Forms and Polarisation</em>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-matrices">The Matrices</h3>
+<p>On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the diagonal is $q(X) = \tau(XX^{*}) = \sum_{ij}|X_{ij}|^{2}$, the square of the Frobenius norm, and the polarisation recovers $\tau(XY^{*} + YX^{*}) = 2\operatorname{Re}\tau(XY^{*})$. The form is Hermitian, its trace form is the real symmetric form of the real and imaginary parts of the trace pairing, and its skew part is the alternating form $\mathrm{i}\operatorname{Im}\tau(XY^{*})$.</p>
+<h3 id="the-real-and-the-complex-reading">The Real and the Complex Reading</h3>
+<p>Over $\mathbb{R}$ with the trivial involution every Hermitian form is symmetric and the polarisation is a bijection when $2$ is invertible. Over $\mathbb{C}$ it is not: the diagonal of a Hermitian form sees $\operatorname{Re}h$ and never $\operatorname{Im}h$, and the pair $(\operatorname{Re}h, \operatorname{Im}h)$ is the pair (symmetric, alternating) of the real reading. The transfer between the two readings is <em>Real Forms and the Signature</em>.</p>
+<h3 id="the-biquaternion-form">The Biquaternion Form</h3>
+<p>On $\mathbb{B}$ with the dagger, $q(\tilde Q) = \operatorname{Sc}(\tilde Q\tilde Q^{\dagger}) = \sum_{\mu}|Q_{\mu}|^{2}$, and the polarisation gives the real symmetric form $\operatorname{Re}\operatorname{Sc}(\tilde P\tilde Q^{\dagger})$ together with the alternating form $\operatorname{Im}\operatorname{Sc}(\tilde P\tilde Q^{\dagger})$. The indefinite companion $\operatorname{Sc}(\bar{\tilde Q}\tilde Q')$ and its signature are <em>The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form</em>.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The <strong>diagonal</strong> $q(x) = h(x,x)$ is valued in the fixed ring $R^{\varsigma}$ and is the only part of the form visible to one variable.</li>
+<li>The <strong>polarisation identity</strong> reads $q(x+y) - q(x) - q(y) = h_{\mathrm{tr}}(x,y)$, the trace form.</li>
+<li>The trace form is symmetric and $R^{\varsigma}$-bilinear, the skew-Hermitian part $h_{\mathrm{sk}}$ is alternating, and $h = \tfrac{1}{2}h_{\mathrm{tr}} + \tfrac{1}{2}h_{\mathrm{sk}}$ when $2$ is invertible: the diagonal recovers the trace form and never the skew part.</li>
+<li>Over $\mathbb{C}$ the decomposition is $\operatorname{Re}h + \mathrm{i}\operatorname{Im}h$, a real symmetric form and a real alternating form.</li>
+<li>The diagonal is the functional image of the <strong>Hermitian square</strong>, $q(x) = \varphi(x^{*}x)$, and the quadratic form $Q(x) = \varphi(x^{*}x)$ has the trace form for its polarisation; for a cyclic functional the square $xx^{*}$ gives the same diagonal.</li>
+<li>In characteristic two with the trivial involution the polarisation degenerates, the diagonal determines nothing, and a quadratic refinement is extra structure.</li>
+<li>The classical bilinear original is <em>Quadratic Forms and Polarisation</em>; the norm forms of the algebras are <em>Hermitian Forms over Algebras and Norms</em>.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$q$</td>
+<td>the diagonal $h(x,x)$ of the form</td>
+</tr>
+<tr>
+<td>$h_{\mathrm{tr}}$</td>
+<td>the trace form $h(x,y) + \varsigma(h(x,y))$</td>
+</tr>
+<tr>
+<td>$h_{\mathrm{sk}}$</td>
+<td>the skew-Hermitian part $h(x,y) - \varsigma(h(x,y))$</td>
+</tr>
+<tr>
+<td>$h^{\dagger}$</td>
+<td>the involution $h^{\dagger}(x,y) = \varsigma(h(y,x))$ on the forms</td>
+</tr>
+<tr>
+<td>$\varphi$</td>
+<td>the functional $h(\cdot,1)$</td>
+</tr>
+<tr>
+<td>$xx^{*}$</td>
+<td>the Hermitian square of $x$</td>
+</tr>
+<tr>
+<td>$Q(x) = \varphi(xx^{*})$</td>
+<td>the quadratic form of the algebra</td>
+</tr>
+<tr>
+<td>$R^{\varsigma}$</td>
+<td>the fixed ring of the base involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for the polarisation of a form, the trace form and the characteristic-two degeneration.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em>, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for the quadratic refinements and the failure of polarisation in characteristic two.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em>, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for the trace form of a Hermitian form over a ring with an involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Topological Witt Group and the Brauer–Wall Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-topological-witt-group-and-the-brauerwall-group"><strong>The Topological Witt Group and the Brauer–Wall Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The isometry classes of non-degenerate quadratic forms form a ring under the orthogonal sum and the tensor product, the Witt ring, and the classes of Clifford algebras form an eightfold periodic group, the Brauer–Wall group. Both constructions are algebraic, and both acquire a topology when the forms and the algebras are read over a topological field: the space of forms is a topological space on which the general linear group acts, the invariants of the classification are <strong>locally constant</strong> functions on it, and the periodicity of the classification is the periodicity of a topological invariant of a group. This article is the topological reading of that classification.</p>
+<p>The first content is the topology of the space of forms. The non-degenerate forms of a fixed dimension form an open subset of the space of all symmetric forms, the general linear group acts on it, and the orbits are the signature classes; the signature is a continuous map into a discrete set, so it is locally constant and each orbit is open and closed. The space is therefore the disjoint union of finitely many connected pieces, one per signature, and each piece is a homogeneous space of the general linear group. Every invariant of the Witt classification — the dimension, the discriminant, the signature — is either a continuous homomorphism into a discrete group or a locally constant function on the pieces, and that is the sense in which the topological Witt group is the group of locally constant invariants of the space of forms.</p>
+<p>The second content is the periodicity. The Brauer–Wall group of the real numbers is the cyclic group of order eight, and the eight classes of real Clifford algebras are represented by the algebras $\mathrm{Cl}_{p,q}$ with $p-q$ read modulo eight; the periodicity of the classification is the periodicity of the homotopy groups of the orthogonal group, $\pi_{n}(\mathrm{O})=\pi_{n+8}(\mathrm{O})$, which is <strong>Bott periodicity</strong> and belongs to Algebraic Topology and to <em>Topological K-Theory</em>. This article records the topological reading, states the table, and defers the proofs; it does not reprove the classification of <em>The Brauer–Wall Group and the Eightfold Way</em> nor the periodicity of <em>Bott Periodicity and the Classification</em>.</p>
+<p>The article treats the space of forms and the orbit decomposition, the locally constant invariants and the two rings, the Brauer–Wall group and the periodicity, the relation to topological K-theory, and the examples of the real forms. The algebraic theory of the Witt and Grothendieck–Witt rings is <em>The Witt Group and the Grothendieck–Witt Ring</em>, the Clifford classification is <em>The Brauer–Wall Group and the Eightfold Way</em> and <em>Bott Periodicity and the Classification</em>, the signature is <em>Quadratic Forms over Algebras and Norms</em> and <em>Witt's Theorems</em>, and the K-theory is <em>Topological K-Theory</em>. Throughout, $F$ is a topological field of characteristic not $2$ or $0$ as the antisymmetrisation requires, and the space of forms is that of <em>The Continuous Quadratic Form and the Polar Form</em>.</p>
+<h2 id="the-space-of-forms-and-its-orbits">The Space of Forms and its Orbits</h2>
+<p><strong>Definition.</strong> Let $\Omega_{n}$ be the set of non-degenerate symmetric bilinear forms on $F^{n}$, a subset of the space $\operatorname{Sym}_{n}$ of all symmetric forms, and let $GL_{n}(F)$ act by $B\mapsto B\circ(T\times T)$.</p>
+<p><strong>Proposition (the space of forms is open and the action is continuous).</strong> The set $\Omega_{n}$ is open in $\operatorname{Sym}_{n}$, the action of $GL_{n}(F)$ on $\Omega_{n}$ is continuous, and the orbit of a form is its isometry class.</p>
+<p><em>Proof.</em> A symmetric form is non-degenerate exactly when the determinant of its matrix is nonzero, and the determinant is a continuous function of the coefficients; hence $\Omega_{n}$ is the complement of a closed set. The action is a polynomial map in the entries of $T$ and of the matrix of $B$, hence continuous, and two forms lie in the same orbit exactly when one is carried to the other by a change of basis, which is an isometry. $\square$</p>
+<p><strong>Theorem (the orbits are the signatures and each is connected).</strong> Let $F=\mathbb{R}$. Then the orbits of $GL_{n}(\mathbb{R})$ on $\Omega_{n}$ are the classes of a fixed signature $(p,q)$ with $p+q=n$, there are $n+1$ of them, each orbit is <strong>open and closed</strong> in $\Omega_{n}$, each is <strong>connected</strong>, and each is homeomorphic to the homogeneous space $GL_{n}(\mathbb{R})/\mathrm{O}(p,q)$ of <em>The Topological Orthogonal Group and the Spin Group</em>.</p>
+<p><em>Proof.</em> Sylvester's law of inertia says that a real form is determined up to isometry by the numbers $p$ and $q$ of positive and negative squares in a diagonal form, so the orbits are exactly the signature classes and there are $n+1$. The signature is a function into the finite set $\{0,\dots,n\}$, and the ordered eigenvalues of a symmetric matrix are continuous functions of its entries, by the max–min characterisation $\lambda_{k}(G)=\max_{\dim S=k}\min_{0\neq v\in S}q_{G}(v)/\lVert v\rVert^{2}$; on the open set where the determinant does not vanish the count of positive eigenvalues is therefore locally constant, being the largest $k$ with $\lambda_{k}>0$. A locally constant map into a discrete set makes each of its level sets open, and the level sets are the orbits; they are closed as well, the complement being the union of the other level sets. Connectedness is the connectedness of $GL_{n}(\mathbb{R})$ and the continuity of the orbit map from the connected group; Connectedness is the connectedness of $GL_{n}(\mathbb{R})$ and the continuity of the orbit map from the connected group; the stabiliser of a form of signature $(p,q)$ is the orthogonal group $\mathrm{O}(p,q)$, and the orbit is thus the quotient, with the quotient topology. $\square$</p>
+<p><strong>Remark (what the topology of the space of forms says).</strong> The theorem says that the moduli of real forms of dimension $n$ is a finite discrete set with no topology beyond the point count, each point being a connected homogeneous space. The invariants of the classification are therefore exactly the locally constant functions on $\Omega_{n}$, and this is the sense in which the topological layer adds nothing to the classification over the real numbers and everything to its interpretation: it identifies the invariants with the locally constant functions, and it identifies the path components of the space of forms with the signatures.</p>
+<h2 id="the-locally-constant-invariants-and-the-two-rings">The Locally Constant Invariants and the Two Rings</h2>
+<p><strong>Definition.</strong> The <strong>dimension</strong>, the <strong>discriminant</strong> and the <strong>signature</strong> are</p>
+<p>$$
+\dim(B)=n,\qquad \Delta(B)=\det G_{B}\in F^{\times}/(F^{\times})^{2},\qquad \operatorname{sign}(B)=p-q ,
+$$</p>
+<p>as in <em>The Witt Group and the Grothendieck–Witt Ring</em>, §§<em>The Grothendieck–Witt Ring</em> and <em>Orderings and the Signature</em>.</p>
+<p><strong>Proposition (each invariant is locally constant or a discrete homomorphism).</strong> The dimension is a continuous homomorphism $\Omega_{n}\to\mathbb{Z}$; the discriminant is a continuous map $\Omega_{n}\to F^{\times}/(F^{\times})^{2}$ into the square-class group, which over $\mathbb{R}$ is the two-element discrete group $\{\pm1\}$ and over $\mathbb{C}$ is trivial; the signature is locally constant. Consequently each invariant is constant on the connected components of $\Omega_{n}$.</p>
+<p><em>Proof.</em> The dimension is constant on $\Omega_{n}$ by definition. The determinant of the matrix of a form is continuous, and the quotient map to the square classes is continuous for the quotient topology, which over $\mathbb{R}$ and over $\mathbb{C}$ is discrete on the image, so the discriminant is locally constant. The signature is a function of the orbit, which is locally constant by the theorem above. $\square$</p>
+<p><strong>Theorem (the Witt and Grothendieck–Witt groups).</strong> The Grothendieck group of the monoid of isometry classes of non-degenerate forms under orthogonal sum is the <strong>Grothendieck–Witt group</strong> $GW(F)$; the subgroup generated by the class $[H]$ of the hyperbolic plane is an ideal, and the quotient $W(F)=GW(F)/\mathbb{Z}[H]$ is the <strong>Witt ring</strong>. Over the real numbers</p>
+<p>$$
+GW(\mathbb{R})\;\cong\;\mathbb{Z}\langle 1\rangle\oplus\mathbb{Z}\langle-1\rangle\;\cong\;\mathbb{Z}^{2}, \qquad W(\mathbb{R})\;\cong\;\mathbb{Z},
+$$</p>
+<p>the dimension and the signature being the two coordinates of $GW(\mathbb{R})$, and the signature being the isomorphism $W(\mathbb{R})\to\mathbb{Z}$.</p>
+<p><em>Proof.</em> The algebraic construction of the two groups as the Grothendieck group of the monoid of isometry classes and its quotient by the hyperbolic ideal is that of <em>The Witt Group and the Grothendieck–Witt Ring</em>, §§<em>The Grothendieck–Witt Ring</em> and <em>The Witt Ring</em>. Over $\mathbb{R}$ the monoid of isometry classes is the set of pairs $(a,b)$ of multiplicities of the positive and the negative squares with $a,b\ge0$, isomorphic to $\mathbb{N}^{2}$ under addition, because Sylvester's law says that no two distinct pairs are isometric; the Grothendieck group of $\mathbb{N}^{2}$ is $\mathbb{Z}^{2}$, generated by $\langle1\rangle$ and $\langle-1\rangle$. The hyperbolic plane is $\langle1,-1\rangle$, of class $\langle1\rangle+\langle-1\rangle$, and quotienting by that class identifies the two generators up to sign, leaving $\mathbb{Z}$ generated by the class of $\langle1\rangle$, which is the signature by its value on the generators. $\square$</p>
+<p><strong>Remark (the topological reading).</strong> The two groups are discrete, and their elements are the locally constant invariants of the space of forms assembled into a group: this is why no topology is lost by passing to them. The topological content of the classification over a general topological field is the statement that each of the maps above is continuous for the discrete topologies on the targets, and therefore that the classification is rigid — no form can cross a signature class along a continuous path.</p>
+<h2 id="the-brauerwall-group-and-the-periodicity">The Brauer–Wall Group and the Periodicity</h2>
+<p><strong>Definition.</strong> The <strong>Brauer–Wall group</strong> $\mathrm{BW}(F)$ is the group of classes of finite-dimensional $\mathbb{Z}/2$-graded central simple algebras over $F$ under the graded tensor product, modulo the graded matrix algebras, as in <em>The Brauer–Wall Group and the Eightfold Way</em>; the Clifford algebra $\mathrm{Cl}(V,q)$ of a non-degenerate form represents an element of it.</p>
+<p><strong>Theorem (the eightfold periodicity).</strong> Over the real numbers the Brauer–Wall group is cyclic of order eight,</p>
+<p>$$
+\mathrm{BW}(\mathbb{R})\cong\mathbb{Z}/8 ,
+$$</p>
+<p>and the class of $\mathrm{Cl}_{p,q}$ depends only on $p-q$ modulo eight. The periodicity is the periodicity of the classification of the real Clifford algebras of <em>Bott Periodicity and the Classification</em>.</p>
+<p><em>Proof.</em> The algebraic classification, that the graded central simple real algebras are classified by an element of $\mathbb{Z}/8$ read off from the pair $(p,q)$ modulo eight, is that of <em>The Brauer–Wall Group and the Eightfold Way</em>; the statement is quoted, and its proof by the graded tensor product and the periodicity of the eight classes is not reproduced here. $\square$</p>
+<p><strong>Theorem (the periodicity is topological).</strong> The eightfold periodicity of the real Clifford algebras is the periodicity of the homotopy groups of the orthogonal group,</p>
+<p>$$
+\pi_{n}(\mathrm{O}) = \pi_{n+8}(\mathrm{O}) \qquad\text{with}\qquad (\pi_{0},\dots,\pi_{7}) = (\mathbb{Z}/2,\ \mathbb{Z}/2,\ 0,\ \mathbb{Z},\ 0,\ 0,\ 0,\ \mathbb{Z}),
+$$</p>
+<p>and the identification of the two statements is <strong>Bott periodicity</strong>, a theorem of Algebraic Topology. Consequently the eight classes of the Brauer–Wall group are in bijection with the eight values of the homotopy of the orthogonal group, and the "eightfold way" of the algebra is the periodicity of the homotopy invariant.</p>
+<p><em>Proof.</em> The statement of Bott periodicity, that the homotopy groups of the stable orthogonal group are periodic of period eight with the table displayed, is the theorem of <em>Bott Periodicity and the Classification</em>, where the table is derived and the classification of the real Clifford algebras is read from it; the present article records the identification and does not reprove it. The bijection of the eight classes with the eight values is the standard correspondence between the graded central simple algebras and the elements of the coefficient group of the corresponding K-theory, which is developed in <em>Topological K-Theory</em>. $\square$</p>
+<p><strong>Remark (what is proved here and what is quoted).</strong> This article proves the topology of the space of forms, the local constancy of the invariants, the orbit decomposition and the computation of the two groups over $\mathbb{R}$, all of which are elementary and belong to the layer. It quotes the periodicity, the eightfold classification and the identification with the homotopy groups, which belong to Algebraic Topology, and it points to the articles that prove them. The boundary is therefore between the locally constant invariants of a space of forms, which is the content of this category, and the homotopy of a classifying space, which is not.</p>
+<h2 id="the-relation-to-topological-k-theory">The Relation to Topological K-Theory</h2>
+<p><strong>Remark (the three groups).</strong> The Witt group, the Grothendieck–Witt group and the Brauer–Wall group are the degree-zero parts of three cohomology theories of the point in the real case: the Witt group corresponds to the group $KO_{0}$ of the real K-theory of a point, the Brauer–Wall group to the class in $KO^{-1}$ or to the group of the invertible elements of the Clifford algebra, and the eightfold periodic table of the Clifford algebras to the eight homotopy groups $\pi_{n}(\mathrm{O})$. The identifications are the content of <em>Topological K-Theory</em> and of <em>Bott Periodicity and the Classification</em>; the present article states the correspondence and does not use it beyond the table of the homotopy groups, and the reader who needs the K-theoretic machinery is referred there.</p>
+<p><strong>Remark (the general topological field).</strong> Over a general topological field the three objects are still defined, and the topological content is only the continuity of the invariants; the computation of the groups requires more than the topology and belongs to the algebra, to <em>The Witt Group and the Grothendieck–Witt Ring</em> and to <em>The Brauer–Wall Group and the Eightfold Way</em>. This article therefore takes the topological field to be $\mathbb{R}$ or $\mathbb{C}$ in every computation and treats the general case only through the continuity of the maps.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-real-forms-of-low-dimension">The Real Forms of Low Dimension</h3>
+<p><strong>Example ($\mathbb{R}^{1}$ and $\mathbb{R}^{2}$).</strong> For $n=1$ the space $\Omega_{1}$ is the two-component set of the forms $x^{2}$ and $-x^{2}$, the orbit decomposition has two pieces, and the Witt group of the line is generated by the class of $\langle1\rangle$ with the relation $\langle1\rangle+\langle-1\rangle=0$; the Grothendieck–Witt group keeps the two classes apart. For $n=2$ the space $\Omega_{2}$ has three components, of signatures $(2,0)$, $(1,1)$ and $(0,2)$, and the middle one is the class of the hyperbolic plane, which vanishes in the Witt group and not in the Grothendieck–Witt group. The examples exhibit in the smallest dimension the difference between the two groups and the meaning of the locally constant signature.</p>
+<p><strong>Example ($\mathbb{C}$).</strong> Over the complex numbers every non-degenerate form is isometric to the standard one, so $\Omega_{n}$ is a single orbit, the discriminant is trivial, the signature is not defined and $W(\mathbb{C})\cong\mathbb{Z}/2$, $GW(\mathbb{C})\cong\mathbb{Z}$, as in <em>The Witt Group and the Grothendieck–Witt Ring</em>, §<em>Examples</em>. The example is the extreme case of the orbit decomposition, with a single connected piece and no locally constant invariant beyond the dimension.</p>
+<h3 id="the-brauerwall-class-of-the-lorentzian-form">The Brauer–Wall Class of the Lorentzian Form</h3>
+<p><strong>Example (signature $(1,3)$).</strong> The Lorentzian form on $\mathbb{R}^{4}$ and its Clifford algebra $\mathrm{Cl}_{1,3}$ represent an element of $\mathrm{BW}(\mathbb{R})\cong\mathbb{Z}/8$. The algebra is $\mathrm{Cl}_{4,0}$ by the identity $\mathrm{Cl}_{p+1,q}\cong\mathrm{Cl}_{q+1,p}$ of <em>The Low-Dimensional Classification</em>, hence $M_{2}(\mathbb{H})$, the algebra listed at $\mathrm{Cl}_{0,4}$ in the table of <em>The Brauer–Wall Group and the Eightfold Way</em>; the difference $p-q=-2$ is congruent to $6$ modulo eight, so the class is the sixth position of the eightfold table. The example shows that the invariant is the difference $p-q$ modulo eight and not the dimension, and it connects the table of the layer to the real division algebras.</p>
+<p><strong>Example (the split and the definite cases).</strong> The definite form of dimension $n$ has $p-q=n$, and the periodicity matches the periodicity of the Clifford algebra of the Euclidean space, whose class in $\mathrm{BW}(\mathbb{R})$ runs through all eight values as $n$ increases; the split form of dimension $2m$ has $p-q=0$ and the hyperbolic class, the neutral element. The two families are the extremes of the table, and they show that the periodicity is driven by the signature difference and not by the dimension.</p>
+<h2 id="summary">Summary</h2>
+<p>The set $\Omega_{n}$ of non-degenerate symmetric forms on $F^{n}$ is an <strong>open</strong> subset of the space of symmetric forms, the general linear group acts on it continuously, and over $\mathbb{R}$ the orbits are the <strong>signatures</strong>: there are $n+1$ of them, each <strong>open and closed</strong> and each <strong>connected</strong>, homeomorphic to the homogeneous space $GL_{n}(\mathbb{R})/\mathrm{O}(p,q)$. The classification invariants — <strong>dimension</strong>, <strong>discriminant</strong>, <strong>signature</strong> — are continuous homomorphisms into discrete groups or locally constant functions, hence constant on the components; this is the sense in which the topological layer adds nothing to the real classification but identifies the invariants with the locally constant functions.</p>
+<p>The <strong>Grothendieck–Witt group</strong> is the Grothendieck group of the monoid of isometry classes under orthogonal sum, the <strong>Witt ring</strong> is its quotient by the hyperbolic ideal, and over $\mathbb{R}$ one has $GW(\mathbb{R})\cong\mathbb{Z}\langle1\rangle\oplus\mathbb{Z}\langle-1\rangle\cong\mathbb{Z}^{2}$ and $W(\mathbb{R})\cong\mathbb{Z}$, the dimension and the signature being the coordinates. The <strong>Brauer–Wall group</strong> of $\mathbb{R}$ is cyclic of order eight, the class of $\mathrm{Cl}_{p,q}$ depending only on $p-q$ modulo eight, and its periodicity is the <strong>Bott periodicity</strong> of the homotopy groups of the orthogonal group, $\pi_{n}(\mathrm{O})=\pi_{n+8}(\mathrm{O})$ with the table $(\mathbb{Z}/2,\mathbb{Z}/2,0,\mathbb{Z},0,0,0,\mathbb{Z})$ — a theorem of Algebraic Topology, quoted here and proved in <em>Bott Periodicity and the Classification</em>.</p>
+<p>What the article owns is the topology of the space of forms and the local constancy of the invariants; what it quotes is the classification, the periodicity and the K-theoretic identification, which belong to <em>The Witt Group and the Grothendieck–Witt Ring</em>, <em>The Brauer–Wall Group and the Eightfold Way</em>, <em>Bott Periodicity and the Classification</em> and <em>Topological K-Theory</em>. The examples exhibit the orbit decomposition over $\mathbb{R}$ and over $\mathbb{C}$, the hyperbolic class vanishing in the Witt group and not in the Grothendieck–Witt group, and the Brauer–Wall class of the Lorentzian form as the sixth position of the table.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Omega_{n}\subseteq\operatorname{Sym}_{n}$</td>
+<td>the open set of non-degenerate forms on $F^{n}$</td>
+</tr>
+<tr>
+<td>$(p,q)$, $\operatorname{sign}=p-q$</td>
+<td>the signature, the orbit label, locally constant</td>
+</tr>
+<tr>
+<td>$\Delta$, $\dim$</td>
+<td>the discriminant and the dimension, discrete homomorphisms</td>
+</tr>
+<tr>
+<td>$GL_{n}(\mathbb{R})/\mathrm{O}(p,q)$</td>
+<td>the homogeneous space of one signature class</td>
+</tr>
+<tr>
+<td>$GW(F)$, $W(F)=GW/\mathbb{Z}[H]$</td>
+<td>the Grothendieck–Witt group and the Witt ring</td>
+</tr>
+<tr>
+<td>$GW(\mathbb{R})\cong\mathbb{Z}^{2}$, $W(\mathbb{R})\cong\mathbb{Z}$</td>
+<td>the real computation</td>
+</tr>
+<tr>
+<td>$\mathrm{BW}(\mathbb{R})\cong\mathbb{Z}/8$</td>
+<td>the Brauer–Wall group, the eightfold way</td>
+</tr>
+<tr>
+<td>$\pi_{n}(\mathrm{O})=\pi_{n+8}(\mathrm{O})$</td>
+<td>Bott periodicity, the topological form of the periodicity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for the Witt and Grothendieck–Witt groups and the signature.</li>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for the orthogonal group, the space of forms and the orbit decomposition.</li>
+<li>Max Karoubi, <em>K-Theory: An Introduction</em> (Springer, 1978), for the Brauer–Wall group, the Clifford algebras and the relation to topological K-theory.</li>
+<li>Dale Husemoller, <em>Fibre Bundles</em>, 3rd edition (Springer, 1994), for Bott periodicity and the homotopy groups of the orthogonal group.</li>
+<li>Raoul Bott, <em>Lectures on K(X)</em> (W. A. Benjamin, 1969), for the periodicity theorem in its original form.</li>
+<li>Nicolas Bourbaki, <em>Topological Groups</em> (Springer, 1998), for the orbit map of a continuous action and the quotient topology of a homogeneous space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

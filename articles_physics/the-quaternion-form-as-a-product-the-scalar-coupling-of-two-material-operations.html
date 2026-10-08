@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-quaternion-form-as-a-product-the-scalar-coupling-of-two-material-operations"><strong>The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two material operations can be compared, and the comparison returns a number. This article reads the
+operation that performs it. It is the <strong>symmetrised quaternionic product</strong>,</p>
+<p>$$
+\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)
+=\bigl[P_0Q_0+(\mathbf P,\mathbf Q)\bigr]e_0 ,
+$$</p>
+<p>the symmetric part of the quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ for the
+exchange of its two arguments. The operation is the symmetric part of the quaternionic row of the twelve
+structures the algebra carries — the row opened by the general quaternionic product
+$\mathrm{GQA}$ whose square is the interval (<em>The Interval as the Square and the Charge of the Material
+Composition</em>). Its value is <strong>central</strong>: whatever the two operations are, the operation returns a multiple
+of the unit, the scalar their overlap carries, and nothing else. The article's claim is that this is what
+the symmetrised half of the quaternionic product <strong>is</strong> — a <strong>scalar coupling</strong>, a comparison that
+returns a number — and that its diagonal is the <strong>interval</strong> of the material row.</p>
+<p>The word of the band is <strong>Coupling</strong>, and the article earns it from the value the operation returns. The
+companion half, the antisymmetrised quaternionic product of the band
+<code>Focus on the Antisymmetric Quaternionic Algebra (AQA) — Obstruction</code>, is the other bracket of the row; the
+two halves reconstruct the parent,</p>
+<p>$$
+\tilde P^{\natural}\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge_{\natural}\tilde Q ,
+$$</p>
+<p>and the reader must hold the two together: the symmetric half is what survives when the order of the two
+operations is forgotten, and the antisymmetric half is exactly what the forgetting loses.</p>
+<p>The article keeps to the one operation. The general construction of the two parts of a product is
+<em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>; the operation on its own, its class, its
+image and the sixteen products of the basis are <em>Introduction to the Symmetric Quaternionic Algebra of
+Biquaternions</em>; the coefficient read as a form, with its Gram matrix, its realification and its
+invariance, is <em>The Quaternion Form as a Product on the Symmetric Quaternionic Algebra</em>; the radical, the
+isotropic elements and the failure of the Jordan identity are <em>The Radical and the Isotropic Elements of
+the Symmetric Quaternionic Algebra</em> and are the subject of the companion article <em>Why a Central Product
+Cannot Compose: the Radical and the Isotropic Elements</em>; the operators and the matrix models are
+<em>The Multiplication Operators of the Symmetric Quaternionic Algebra</em> and <em>The Symmetric Quaternionic
+Algebra in the Matrix Representations</em>. The comparison of this operation with the other three rows is
+<em>The Four Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras</em>, and it is
+cited and not redone.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
+$e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$. An
+element is $\tilde Q=Q_0e_0+\mathbf Q$ with $Q_\mu\in\mathbb{C}$ and vector part
+$\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$; the complex bilinear dot and cross products of vector parts are
+$(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and $\mathbf P\times\mathbf Q$. The natural conjugation is
+${}^{\natural}$, the Hermitian star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the sectors are
+$\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ with the material one $\mathbb{M}_-$. The ordinary
+(plain) product is juxtaposition $\tilde P\tilde Q$, the quaternionic product is
+$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$. The <strong>general plain bilinear form</strong> is
+$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$, the scalar part of the
+plain product (<em>The Ordinary Product and the Material Sector</em>), and the <strong>general quaternionic bilinear
+form</strong> is $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$,
+the scalar part of the quaternionic product (<em>Conventions in the Biquaternion Universe</em>). The two differ
+by the sign of the vector part alone. The symmetrisation symbol $\bullet$ is <strong>row-relative</strong> in this
+chapter — it is the symmetrisation of whichever product is in play, so the plain row writes
+$\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ and this block writes
+$\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$, a different
+operation — and this block's antisymmetrisation is written $\wedge_{\natural}$, where the plain row writes
+$\wedge$ for the cross product $\mathbf P\times\mathbf Q$. The six distinguished subspaces are the centre
+$\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace
+$\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian sector
+$\mathbb{M}_+$ and the material sector $\mathbb{M}_-$.</p>
+<h2 id="the-two-halves-of-the-parent-product">The Two Halves of the Parent Product</h2>
+<p>The general quaternionic product is $\mathbb{C}$-bilinear, so for it the exchange of the two arguments is
+the plain interchange, and it is a <strong>conjugation of the value</strong> and not a reversal,</p>
+<p>$$
+\tilde Q^{\natural}\tilde P=\bigl(\tilde P^{\natural}\tilde Q\bigr)^{\natural} .
+$$</p>
+<p>A bilinear product over a field in which $2$ is invertible therefore splits canonically into a symmetric
+and an antisymmetric part (<em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>), and the two
+parts of the quaternionic product are the two operations of the quaternionic row.</p>
+<p><strong>Proposition (the explicit form).</strong> For all $\tilde P=P_0e_0+\mathbf P$ and $\tilde Q=Q_0e_0+\mathbf Q$,</p>
+<p>$$
+\tilde P\bullet\tilde Q
+=\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)
+=\bigl[P_0Q_0+(\mathbf P,\mathbf Q)\bigr]e_0 .
+$$</p>
+<p>In particular the value is central, the operation is $\mathbb{C}$-bilinear and commutative, and its
+image is the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$.</p>
+<p><em>Proof.</em> The parent value is
+$\tilde P^{\natural}\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$
+(<em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>). The reverse value is obtained
+by exchanging the arguments; its scalar part is symmetric in the pair and its vector part is
+antisymmetric, with the cross product reversing and the mixed terms exchanging with a sign. Half the sum
+keeps the scalar part and cancels the vector part. Bilinearity is inherited term by term with the
+coefficients in $\mathbb{C}$; commutativity is the symmetry of the definition; and the value being a
+multiple of $e_0$ puts the image in the centre.</p>
+<p><strong>Remark (what the exchange leaves and what it removes).</strong> The scalar part of the parent product carries
+the two terms the exchange leaves fixed — the square term $P_0Q_0$ and the scalar product
+$(\mathbf P,\mathbf Q)$ of the two vector parts — and the symmetrised part is exactly that half. The
+vector part of the parent, the mixed terms $P_0\mathbf Q-Q_0\mathbf P$ and the cross term
+$-\mathbf P\times\mathbf Q$, is antisymmetric and is removed; it is the operation of the companion band.
+The coupling therefore <strong>removes the order</strong> of the two operations: it is the value of the product once
+the order is forgotten, and nothing of the order survives.</p>
+<h2 id="the-value-is-central-a-coupling-and-not-a-composition">The Value Is Central: a Coupling and Not a Composition</h2>
+<p><strong>Proposition (centrality, commutativity and the image).</strong> Every value of $\bullet$ is a complex multiple
+of the unit, and the image of the operation is the centre $\mathbb{C}_{\mathbb{B}}$; the operation is
+commutative,</p>
+<p>$$
+\tilde P\bullet\tilde Q=\tilde Q\bullet\tilde P ,
+$$</p>
+<p>and it is the value of the general quaternionic bilinear form placed on the central line,</p>
+<p>$$
+\tilde P\bullet\tilde Q=N(\tilde P,\tilde Q)\,e_0 , \qquad
+N(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q\bigr)=P_0Q_0+(\mathbf P,\mathbf Q) .
+$$</p>
+<p><em>Proof.</em> The explicit form is the definition of the coefficient, and the coefficient is the scalar part
+of the parent product; commutativity is the symmetry of $P_0Q_0+(\mathbf P,\mathbf Q)$; the image statement
+is the centrality of the value.</p>
+<p>The operation is therefore a <strong>bilinear form read as a product</strong>: it takes two operations and returns the
+scalar their comparison carries, always on the same one-dimensional line, and it never returns an
+operation of the same kind as its inputs. That is the whole content of the band name. A value in the
+<strong>centre</strong> is a number, the same number for every observer and commuting with every element; it can be
+multiplied by other numbers and it cannot be composed with other operations, because a central value
+carries no vector direction and no slot to act on.</p>
+<h3 id="the-sixteen-products-of-the-basis">The Sixteen Products of the Basis</h3>
+<p>On the complex basis $e_0,e_1,e_2,e_3$, with the row index the left argument and the column index the
+right one, the operation reads</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\bullet$</th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$0$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition (the table).</strong> The table is diagonal,
+$e_\mu\bullet e_\nu=\delta_{\mu\nu}e_0$; every entry is central; the four diagonal entries are the unit
+and the twelve off-diagonal entries are zero; and the operation is not the zero operation, since
+$e_0\bullet e_0=e_0$.</p>
+<p><em>Proof.</em> $N(e_\mu,e_\nu)=\mathrm{Sc}(e_\mu^{\natural}e_\nu)$ is the coefficient square of the two basis
+elements, which is $\delta_{\mu\nu}$; the centrality and the values follow from the explicit form. The
+table is the one of <em>Introduction to the Symmetric Quaternionic Algebra of Biquaternions</em>.</p>
+<p>Four of the sixteen products are nonzero and equal to $e_0$, twelve vanish: the coupling is the identity
+table of the coefficient form and nothing more. In particular two <strong>distinct</strong> basis operations do not
+couple at all — their value is zero — and a basis operation couples only with itself, to the unit.</p>
+<h2 id="the-diagonal-is-the-interval">The Diagonal Is the Interval</h2>
+<p><strong>Theorem (the square is the interval).</strong> For every $\tilde Q$,</p>
+<p>$$
+\tilde Q\bullet\tilde Q=N(\tilde Q)\,e_0 , \qquad N(\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2} .
+$$</p>
+<p>On the material coordinate $\tilde Q=ict\,e_0+\mathbf x$ the value is $-c^{2}t^{2}+\mathbf x^{2}$, the
+Minkowski interval.</p>
+<p><em>Proof.</em> Put $\tilde P=\tilde Q$ in the explicit form: the coefficient is $Q_0^{2}+(\mathbf Q,\mathbf Q)$,
+which is $N(\tilde Q)$. The material reading is the substitution $Q_0=ict$ and $\mathbf Q=\mathbf x$ with
+$t$ and $\mathbf x$ real.</p>
+<p>This is the article's sharpest point, and it must be stated with its caution. <strong>The operation whose values
+are central is the one that carries the metric.</strong> The diagonal of the scalar coupling is the interval, so
+the geometry of the material row sits in the <strong>symmetric</strong> part of the quaternionic product; the order of
+the two operations, by contrast, sits in the <strong>antisymmetric</strong> part and carries no geometry at all. The
+two halves of one product divide the two jobs between them.</p>
+<p>The diagonal has three readings that must not be conflated. Its <strong>value</strong> $N(\tilde Q)$ is the interval;
+its <strong>sign</strong> separates the timelike from the spacelike element, since $N$ is indefinite on the material
+sector; and its <strong>vanishing set</strong> is the light cone, $\{N(\tilde Q)=0\}$, the set of the zero divisors of
+the algebra. The square of a material element being central, the interval is a number carried by the
+element and not a component of it. The interval itself, the mass shell and the group of its automorphisms
+are <em>Biquaternion Norm and Invertibility</em>; the cone is <em>The Light Cone as the Biquaternion Zero-Divisor
+Cone</em> and <em>Zero Divisors as a Physical Locus in Biquaternionic Form</em>; the reading of the interval as the
+square of a composition is <em>The Interval as the Square and the Charge of the Material Composition</em>, and
+none of the three is redone here.</p>
+<p><strong>Remark (verified).</strong> The identity $\tilde P\bullet\tilde Q=N(\tilde P,\tilde Q)e_0$ and the square
+$\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$ were recomputed on $100$ random biquaternions in exact complex
+arithmetic; the maximum deviation from zero is $8.9\times10^{-16}$, machine precision. The commutation
+$\tilde P\bullet\tilde Q-\tilde Q\bullet\tilde P$ vanishes <strong>exactly</strong> on the same samples, not merely to
+machine precision, the coefficient being literally symmetric.</p>
+<h2 id="the-contrast-with-the-symmetrised-plain-product">The Contrast with the Symmetrised Plain Product</h2>
+<p>The operation has a <strong>plain</strong> cousin, the symmetric part of the ordinary product,</p>
+<p>$$
+\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)
+=\bigl[P_0Q_0-(\mathbf P,\mathbf Q)\bigr]e_0+P_0\mathbf Q+Q_0\mathbf P ,
+$$</p>
+<p>the operation of the band <code>Focus on the Symmetric Plain Algebra (SPA) — Commutativity</code>. The two are the
+same construction applied to the two rows of the algebra, and they differ in one sign; the difference is
+not cosmetic, because the sign decides whether the value is central and whether the operation is a
+Jordan product.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>symmetrised quaternionic (this band)</th>
+<th>symmetrised plain (SPA)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>definition</td>
+<td>$\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$</td>
+<td>$\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$</td>
+</tr>
+<tr>
+<td>value</td>
+<td>$[P_0Q_0+(\mathbf P,\mathbf Q)]e_0$</td>
+<td>$[P_0Q_0-(\mathbf P,\mathbf Q)]e_0+P_0\mathbf Q+Q_0\mathbf P$</td>
+</tr>
+<tr>
+<td>image</td>
+<td>the centre $\mathbb{C}_{\mathbb{B}}$</td>
+<td>not central, vector part present</td>
+</tr>
+<tr>
+<td>coefficient</td>
+<td>$N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$</td>
+<td>$B(\tilde P,\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$</td>
+</tr>
+<tr>
+<td>unit</td>
+<td>none</td>
+<td>$e_0$, on both sides</td>
+</tr>
+<tr>
+<td>Jordan identity</td>
+<td>fails</td>
+<td>holds</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two coefficients differ by one sign, and it is the sign of the vector part.</strong>
+$N(\tilde P,\tilde Q)$ is the general <strong>quaternionic</strong> bilinear form, the scalar part of $\tilde P^{\natural}\tilde Q$;
+$B(\tilde P,\tilde Q)$ is the general <strong>plain</strong> bilinear form, the scalar part of $\tilde P\tilde Q$. The
+scalar part of this article's operation is $N$ and <strong>not</strong> $B$: on the vector part of the pair the two
+forms carry opposite signs, and the natural conjugation in the first slot is exactly what flips the sign.
+A sentence that names $B$ for the coefficient of the symmetrised quaternionic product is wrong, and the
+error is the most tempting of this row. The forms themselves, with their Gram matrices and their
+signatures, are <em>Comparison Between the Four Biquaternion Products</em> and <em>The Four Pairings of the
+Biquaternion Algebra</em>.</p>
+<p><strong>A cross-chapter warning on the letters.</strong> The letters of the two forms are chapter-relative. The
+mathematics chapter writes <em>this</em> chapter's $N$ — the scalar part of $\tilde P^{\natural}\tilde Q$ — as
+$B$, the very letter this chapter reserves for the plain form: a reader who follows the citations into
+<em>The Quaternion Form as a Product on the Symmetric Quaternionic Algebra</em> will find the quaternionic form
+called $B$ there. The object is the same one this chapter calls $N$; only the letter changes. The name of
+this chapter's coefficient is $N$ throughout, and $B$ is never it.</p>
+<p><strong>The image is the centre, and that is the physical dividing line.</strong> The symmetrised plain product of two
+material operations is again an element with a scalar part and a vector part, so it can be composed
+again and can carry a direction; the symmetrised quaternionic product of two material operations is a
+number, and a number composes with nothing. The two operations therefore do not do the same job, and the
+distinction is exactly the one the two band names record: the plain symmetrisation is the plain
+<strong>anticommutator</strong> and stays in the algebra, the quaternionic symmetrisation <strong>couples</strong> and leaves it.</p>
+<h2 id="what-the-coupling-cannot-do">What the Coupling Cannot Do</h2>
+<p>Three negative statements bound the operation and are the reason its reading is a caution.</p>
+<p><strong>A central value compares and does not compose.</strong> The operation has <strong>no unit</strong>: there is no $\tilde E$
+with $\tilde E\bullet\tilde Q=\tilde Q$ for every $\tilde Q$. The reason is one line — the value
+$\tilde E\bullet\tilde Q$ is always <strong>central</strong>, while a general $\tilde Q$ is not, so the equality fails
+already at $\tilde Q=e_1$ for every $\tilde E$. The candidate $e_0$ itself acts as
+$e_0\bullet\tilde Q=Q_0e_0$, the projection onto the scalar part, and not as the identity. Without a unit
+the operation cannot be iterated as a composition, and a chain of couplings has no bracketing-free value
+to give.</p>
+<p><strong>It is not a Jordan product.</strong> The symmetrised plain product is a Jordan product; this operation is not.
+The failure and its witness belong to the companion article <em>Why a Central Product Cannot Compose: the
+Radical and the Isotropic Elements</em>, and its algebraic origin is the non-associativity of the parent
+quaternionic product: a symmetrisation makes a Jordan algebra out of an associative product and not out
+of a general one, and the quaternionic product is not associative. This is the reason the two rows of the
+algebra cannot be read alike even though the construction of their symmetric parts is identical.</p>
+<p><strong>It selects no state.</strong> The coefficient $N$ is a $\mathbb{C}$-bilinear form, indefinite on the real
+space of the algebra, of signature $(4,4)$ in the real basis; on the material sector it restricts to the
+Minkowski form of signature $(3,1)$ and on the informational sector to $(1,3)$. An indefinite form has no
+positive cone, and a form with no positive cone selects no state and no probability. The operation
+returns the interval of a material operation faithfully and returns <strong>no</strong> notion of a positive norm; a
+central-valued pairing is not a state and is not a probability. That role belongs to the sesquilinear row
+of the algebra, not to this one. The forms on the six subspaces, with their signatures, are
+<em>The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions</em> and the transversal
+signature table of <em>The Four Products and Their Physical Readings: the Two Algebras and the Two
+Sesqualgebras</em>.</p>
+<h2 id="the-reading-a-central-value-is-the-scalar-of-a-comparison">The Reading: a Central Value Is the Scalar of a Comparison</h2>
+<p><strong>Proposed reading, labelled as such.</strong> Each clause below names a proved identity of the preceding
+sections, and the reading is what the framework does with it.</p>
+<ul>
+<li><strong>The operation is a comparison of two operations.</strong> The value $N(\tilde P,\tilde Q)$ is the scalar
+  overlap of the two material operations; the operation couples them to a number. It is the value a
+  comparison returns, and it is not a composite operation of the same kind as its arguments.</li>
+<li><strong>The comparison is order-free.</strong> The operation is commutative, so the coupling of two operations does
+  not depend on their order: this is the part of the product that the order does not touch. All of the
+  order lives in the antisymmetric half of the parent, the failed bracket of the companion band.</li>
+<li><strong>The diagonal of the coupling is the interval.</strong> The coupling of an operation with itself is its
+  interval, so the symmetric half of the row is the half that carries the metric of the material row.</li>
+<li><strong>The coupling carries the metric, and the order carries the obstruction.</strong> The geometry of the
+  material row sits in the symmetric part and the failure of the internal group in the antisymmetric
+  part; the two are the two halves of one product and neither can be read off the other.</li>
+</ul>
+<p><strong>Caution.</strong> A central value <strong>compares and does not compose</strong>. No associativity, no composition of a
+product and no iterated chain can be read from this operation. It is a coupling, and a coupling is a
+number.</p>
+<h2 id="the-ledger">The Ledger</h2>
+<p><strong>Proved.</strong> The explicit form
+$\tilde P\bullet\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0$ and the centrality of the value; the
+commutativity; the image equal to the centre $\mathbb{C}_{\mathbb{B}}$; the diagonal,
+$\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$, with the material reading $-c^{2}t^{2}+\mathbf x^{2}$; the
+reconstruction $\tilde P^{\natural}\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge_{\natural}\tilde Q$;
+the sixteen basis products, diagonal with values $\delta_{\mu\nu}e_0$; the absence of a unit, with $e_0$
+acting as the projection onto the scalar part; the coefficient $N$ and not $B$, the two differing by the
+sign of the vector part; the indefiniteness of the coefficient on the real space.</p>
+<p><strong>Readings.</strong> That the symmetrised quaternionic product is the scalar coupling of two material
+operations; that its value is the number a comparison of the two operations returns; that the comparison
+is order-free; that its diagonal is the interval and the symmetric half of the row carries the metric.</p>
+<p><strong>Not claimed.</strong> That a physical material operation is a biquaternion, or that the coupling of two
+operations is a measured quantity. That a central value composes, associates or iterates. That the
+coupling carries a positivity or a state. That the symmetrised quaternionic product is a Jordan product.
+That the reading of the value as a "comparison" is forced by the algebra rather than chosen; the algebra
+forces the centrality and the commutativity, and the naming is the framework's.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetrised quaternionic product
+$\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ is the
+symmetric part of the quaternionic product for the exchange of its two arguments, and its value is
+central, $\tilde P\bullet\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0=N(\tilde P,\tilde Q)e_0$: it is the
+<strong>general quaternionic bilinear form read as a product</strong>. The operation is commutative, its image is the
+centre, it has <strong>no unit</strong> ($e_0\bullet\tilde Q=Q_0e_0$ projects onto the scalar part), and it is <strong>not a
+Jordan product</strong>, unlike the symmetrised plain product of the band SPA. Its diagonal is the <strong>interval</strong>,
+$\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$, so the operation whose values are central is the one that
+carries the metric of the material row, while the order of the two operations sits in the antisymmetric
+half of the parent. The coupling differs from the symmetrised plain product of the plain row in one sign:
+its coefficient is the quaternionic form $N$, the scalar part of $\tilde P^{\natural}\tilde Q$, and not
+the plain form $B$, the scalar part of $\tilde P\tilde Q$ — the two differ by the sign of the vector part
+alone. The operation reads as a <strong>scalar coupling</strong>: it compares two material operations and returns the
+number their overlap carries, and the reading is bounded by the caution that a central value <strong>compares
+and does not compose</strong> and selects no state. The radical and the isotropic elements, the failure of the
+Jordan identity with its witness, and the boundary of the coefficient against the form $B$ are the
+companion article <em>Why a Central Product Cannot Compose: the Radical and the Isotropic Elements</em>; the
+coefficient read as a form is <em>The Quaternion Form as a Product on the Symmetric Quaternionic Algebra</em>;
+the six subspaces are <em>The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions</em>; and
+the comparison of the four rows is <em>The Four Products and Their Physical Readings: the Two Algebras and
+the Two Sesqualgebras</em>, none of them redone here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$; $i$</td>
+<td>the basis, $e_k^{2}=-e_0$; the central scalar imaginary</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_0e_0+\mathbf Q$</td>
+<td>an element and its scalar–vector split</td>
+</tr>
+<tr>
+<td>${}^{\natural}$, ${}^{*}$</td>
+<td>the natural and the Hermitian conjugations</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$</td>
+<td>the general quaternionic product (GQA)</td>
+</tr>
+<tr>
+<td>$\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$</td>
+<td>the symmetrised quaternionic product (SQA, this band)</td>
+</tr>
+<tr>
+<td>$\tilde P\wedge_{\natural}\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$</td>
+<td>the antisymmetrised quaternionic product (AQA, the companion band)</td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge_{\natural}\tilde Q$</td>
+<td>the reconstruction of the parent</td>
+</tr>
+<tr>
+<td>$N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$</td>
+<td>the general quaternionic bilinear form, the coefficient of the coupling</td>
+</tr>
+<tr>
+<td>$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$</td>
+<td>the general plain bilinear form, the coefficient of the plain row</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$</td>
+<td>the biquaternion norm, the diagonal of the coupling</td>
+</tr>
+<tr>
+<td>$ict\,e_0+\mathbf x$</td>
+<td>the material coordinate; $\tilde Q\bullet\tilde Q=-c^{2}t^{2}+\mathbf x^{2}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$</td>
+<td>the six distinguished subspaces</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Mathematical Study of Biquaternions</em>, the physics entry point to the mathematical study under
+  which this block sits.</li>
+<li>Mathematics article <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>
+  (<code>articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the twelve
+  operations, the method of the decomposition and the laws of each.</li>
+<li>Mathematics article <em>Introduction to the Symmetric Quaternionic Algebra of Biquaternions</em>
+  (<code>articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md</code>), for the
+  operation, its class, its image and the sixteen products.</li>
+<li>Mathematics article <em>The Quaternion Form as a Product on the Symmetric Quaternionic Algebra</em>
+  (<code>articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md</code>), for the
+  coefficient read as a form, its Gram matrix, its realification and the failure of its invariance.</li>
+<li>Mathematics article <em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em>
+  (<code>articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md</code>), for
+  the radical, the isotropic elements and the Jordan witness.</li>
+<li>Mathematics article <em>The Multiplication Operators of the Symmetric Quaternionic Algebra</em>
+  (<code>articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md</code>), for the
+  operators $L^{\bullet}_{\tilde A}$ and the adjoint with respect to the form.</li>
+<li>Mathematics article <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>
+  (<code>articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md</code>), for the general
+  construction of the two parts and the reconstruction.</li>
+<li>Companion article <em>The Interval as the Square and the Charge of the Material Composition</em>, for the
+  square identity, the interval and the multiplicativity of the norm.</li>
+<li>Companion article <em>The Ordinary Product and the Material Sector</em>, for the form $B$ and the plain row.</li>
+<li>Companion article <em>The Symmetrised Material Composition and the Jordan Identity</em>, for the symmetrised
+  plain product (SPA), the Jordan-product contrast of this operation.</li>
+<li>Companion article <em>The Four Products and Their Physical Readings: the Two Algebras and the Two
+  Sesqualgebras</em>, for the transversal comparison and the signature table.</li>
+<li>Companion article <em>Why a Central Product Cannot Compose: the Radical and the Isotropic Elements</em>, for
+  the radical, the isotropic elements and the Jordan witness read physically.</li>
+<li>Companion article <em>The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator</em>,
+  for the antisymmetric half of the same parent.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

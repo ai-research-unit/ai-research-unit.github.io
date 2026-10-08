@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Sandwich on a Hermitian Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-sandwich-on-a-hermitian-algebra"><strong>The Adjoint of the Sandwich on a Hermitian Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The two-sided operator, or <strong>sandwich</strong>, of a Hermitian algebra is $\Theta_x(y) = xyx^{\dagger}$, the composition of a left and a right multiplication, $\Theta_x = L_xR_{x^{\dagger}}$. Its adjoint for the form is again a sandwich, $\Theta_x^{*} = \Theta_{x^{\dagger}}$, so the sandwich is the natural two-sided operator of the theory and the family of sandwiches is closed under adjunction. The sandwich is normal, it preserves the positive cone in the appropriate sense, and its adjoint relation with its parameter is the sharpest form of the adjoint axiom for two-sided operators.</p>
+<p>A sandwich has two unitarity properties, and they must not be confused. It is <strong>self-adjoint</strong> for the form exactly when $\Theta_{x^{\dagger}} = \Theta_x$, which holds in particular when the parameter is self-adjoint, $x = x^{\dagger}$; it is an <strong>isometry</strong> exactly when $\Theta_x^{*}\Theta_x = \Theta_{x^{\dagger}x}$ is the identity, which holds in particular when $x^{\dagger}x = 1$; and it is <strong>unitary</strong> exactly when $x^{\dagger}x = xx^{\dagger} = 1$, that is when $x$ is unitary in the algebra. So the unitarity of the sandwich is the unitarity of its parameter, and the unitary sandwiches are the norm-preserving two-sided operators of the algebra.</p>
+<p>The comparison of the form-adjoint $\Theta_{x^{\dagger}}$ with the Hermitian adjoint $\Theta_{x^{*}}$ of the sandwich, and the modular operator that measures their difference, are operator theory on the completion and are in <em>The Modular Structure of a Hermitian Algebra</em>.</p>
+<p>This article fixes the sandwich, its adjoint and the unitarity condition.</p>
+<p>The Hermitian algebra and its involution are <em>Hermitian Algebras</em> and <em>Hermitian Adjoints on a Hermitian Algebra</em>; the multiplications and their adjoints are <em>The Adjoint of the Left and the Right Multiplication</em>; the completion-level comparison of the two adjoints and the modular objects are <em>The Modular Structure of a Hermitian Algebra</em>. Those are cited. The algebra is $A$ with involution $\dagger$ and form $\langle\cdot,\cdot\rangle$.</p>
+<h2 id="the-sandwich-and-its-adjoint">The Sandwich and Its Adjoint</h2>
+<p><strong>Definition.</strong> For $x\in A$ the <strong>sandwich</strong>, or two-sided operator, is</p>
+<p>$$
+\Theta_x : A\to A, \qquad \Theta_x(y) = x\,y\,x^{\dagger} .
+$$</p>
+<p>It is the composition $\Theta_x = L_xR_{x^{\dagger}} = R_{x^{\dagger}}L_x$ of a left and a right multiplication, and it is semilinear in the parameter up to the involution and linear in the argument.</p>
+<p><strong>Theorem (the adjoint is the sandwich of the involution).</strong> For every $x$,</p>
+<p>$$
+\Theta_x^{*} = \Theta_{x^{\dagger}} ,
+$$</p>
+<p>the adjoint being taken for the form.</p>
+<p><strong>Proof.</strong> By the adjoint axiom applied twice, $\langle \Theta_xy, z\rangle = \langle xyx^{\dagger}, z\rangle = \langle yx^{\dagger}, x^{\dagger}z\rangle = \langle y, x^{\dagger}z(x^{\dagger})^{\dagger}\rangle = \langle y,\Theta_{x^{\dagger}}z\rangle$.</p>
+<p><strong>Proposition (positivity of the adjoint products).</strong> $\Theta_x^{*}\Theta_x = \Theta_{x^{\dagger}x}$ and $\Theta_x\Theta_x^{*} = \Theta_{xx^{\dagger}}$; both are sandwiches of positive elements and hence are positive operators for the form, $\langle\Theta_{x^{\dagger}x}u,u\rangle\geq0$.</p>
+<p><strong>Proof.</strong> The composition law $\Theta_x\Theta_z = \Theta_{xz}$ holds by associativity, whence the two products; positivity is $\langle\Theta_{x^{\dagger}x}u,u\rangle = \langle x^{\dagger}x\,u, u\rangle = \langle x u, x u\rangle$ by the adjoint axiom.</p>
+<p><strong>Proposition (normal and form-preserving maps).</strong> $\Theta_x$ preserves the adjoint relation in the sense $\Theta_x(y^{\dagger}) = \Theta_{x^{\dagger}}(y)^{\dagger}$, and it maps the positive cone into itself when $x$ is such that $x^{\dagger}x\leq 1$.</p>
+<p><strong>Proof.</strong> $x y^{\dagger}x^{\dagger} = (xyx^{\dagger})^{\dagger}$ is the involution statement; the cone statement is the composition of the positivity of the two adjoint products with the stability of the cone under inner conjugation.</p>
+<h2 id="the-unitarity-condition">The Unitarity Condition</h2>
+<p><strong>Theorem (the sandwich is an isometry exactly for unitary parameters).</strong> For every $x$ the following are equivalent:</p>
+<ol>
+<li>$\Theta_x$ is isometric for the form, $\langle\Theta_xy,\Theta_xz\rangle = \langle y,z\rangle$;</li>
+<li>$\Theta_x^{*}\Theta_x = \mathrm{id}$, that is $\Theta_{x^{\dagger}x} = \mathrm{id}$;</li>
+<li>$x^{\dagger}x = 1$ (when the left representation is faithful).</li>
+</ol>
+<p>Similarly $\Theta_x$ is <strong>unitary</strong> exactly when $x^{\dagger}x = xx^{\dagger} = 1$, that is when $x$ is unitary.</p>
+<p><strong>Proof.</strong> The identity $\langle\Theta_xy,\Theta_xz\rangle = \langle\Theta_x^{*}\Theta_xy,z\rangle = \langle\Theta_{x^{\dagger}x}y,z\rangle$ gives the equivalence of 1 and 2; the faithfulness of the left representation identifies $\Theta_{x^{\dagger}x} = \mathrm{id}$ with $x^{\dagger}x = 1$; unitarity adds the inverse on the other side.</p>
+<p><strong>Corollary (the unitary sandwiches form a group).</strong> The parameters $x$ with $x^{\dagger}x = xx^{\dagger} = 1$ form a group, and $x\mapsto\Theta_x$ is a group homomorphism with $x\mapsto\Theta_{x^{\dagger}}$ for the inverse; the sandwiches realised are the two-sided operators preserving the form and the norm.</p>
+<p><strong>Proof.</strong> Multiplicativity of $\Theta$ is associativity, the inverse statement is the adjoint identity, and the preservation of the form is the theorem.</p>
+<p><strong>Remark (self-adjointness against unitarity).</strong> A sandwich is self-adjoint for the form exactly when $\Theta_{x^{\dagger}} = \Theta_x$; since the map $x\mapsto\Theta_x$ is even in the parameter, $\Theta_{-x} = \Theta_x$, this holds in particular for every self-adjoint parameter and every anti-self-adjoint one, and the parameter is recovered from the operator only up to sign. A sandwich is an isometry exactly when $\Theta_{x^{\dagger}x} = \mathrm{id}$, which holds in particular for a unitary parameter. The two conditions are independent, and a unitary parameter need not be self-adjoint. The self-adjoint sandwich of a positive parameter is the <strong>Hermitian sandwich</strong> of <em>The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint</em>, and its ordering properties are those of <em>Self-Adjoint Elements and the Positive Cone</em>.</p>
+<p>The <strong>modular operator</strong> and the comparison of the form-adjoint with the Hermitian adjoint of the sandwich are operator theory on the completion and are in <em>The Modular Structure of a Hermitian Algebra</em> (Part II).</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-group-algebra">The Group Algebra</h3>
+<p>For $A = \mathbb{C}[G]$ with the tracial standard form, $\Theta_g(y) = gyg^{-1}$ and $\Theta_g^{*} = \Theta_{g^{-1}}$, with $\Theta_g$ unitary for every $g$; the form-adjoint and the Hermitian adjoint coincide.</p>
+<h3 id="matrices">Matrices</h3>
+<p>For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\Theta_a(y) = aya^{*}$ and $\Theta_a^{*} = \Theta_{a^{*}}$; the sandwich is unitary exactly when $a$ is unitary, and the discrepancy between the two adjoints vanishes because the form is tracial.</p>
+<h3 id="the-density-matrix-picture">The Density Matrix Picture</h3>
+<p>For the algebra of matrices with the form $\langle a,b\rangle = \mathrm{tr}(b^{*}a)$ the sandwich is $\Theta_a(b) = aba^{*}$, its adjoint is $\Theta_{a^{*}} = \Theta_{a^{\dagger}}$ because the form is tracial, and the modular conjugation $J(u) = u^{*}$ commutes with the sandwich; the sandwiches are exactly the inner automorphisms.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>sandwich</strong> $\Theta_x(y) = xyx^{\dagger}$ is the composition $\Theta_x = L_xR_{x^{\dagger}}$ of a left and a right multiplication, its <strong>adjoint for the form</strong> is $\Theta_x^{*} = \Theta_{x^{\dagger}}$, and the adjoint products $\Theta_{x^{\dagger}x}$ and $\Theta_{xx^{\dagger}}$ are sandwiches of positive elements, hence positive. The <strong>unitarity condition</strong> is that $\Theta_x$ is an isometry exactly when $x^{\dagger}x = 1$ and unitary exactly when $x^{\dagger}x = xx^{\dagger} = 1$, so the unitary sandwiches are the two-sided form-preserving operators and the map $x\mapsto\Theta_x$ is a homomorphism of the unitary group of the algebra. The invariance of the sandwich under the modular conjugation and the modular flow are operator theory on the completion and are in <em>The Modular Structure of a Hermitian Algebra</em>. The involution is <em>Hermitian Adjoints on a Hermitian Algebra</em>, the multiplications and their adjoints are <em>The Adjoint of the Left and the Right Multiplication</em>, and the Hermitian case is <em>The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Theta_x(y) = xyx^{\dagger}$</td>
+<td>The sandwich, or two-sided operator</td>
+</tr>
+<tr>
+<td>$\Theta_x = L_xR_{x^{\dagger}}$</td>
+<td>Composition of a left and a right multiplication</td>
+</tr>
+<tr>
+<td>$\Theta_x^{*} = \Theta_{x^{\dagger}}$</td>
+<td>Adjoint for the form</td>
+</tr>
+<tr>
+<td>$\Theta_{x^{\dagger}x}\geq0$</td>
+<td>Positivity of the adjoint products</td>
+</tr>
+<tr>
+<td>$\Theta_x$ unitary $\iff$ $x^{\dagger}x = xx^{\dagger} = 1$</td>
+<td>The unitarity condition</td>
+</tr>
+<tr>
+<td>$\sigma_t = \mathrm{Ad}\,\Delta^{it}$</td>
+<td>Modular flow, generally outer</td>
+</tr>
+<tr>
+<td>$\jmath\Delta^{it}\jmath = \Delta^{-it}$</td>
+<td>The conjugation inverts the flow</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for two-sided operators on a Hermitian algebra.</li>
+<li>Serban Stratila and László Zsidó, <em>Lectures on von Neumann Algebras</em> (Abacus Press, 1979), for the sandwich and the regular representations.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 2 (Academic Press, 1986), for the modular operator and the adjoint of a two-sided action.</li>
+<li>Masamichi Takesaki, <em>Tomita's Theory of Modular Hilbert Algebras and its Applications</em>, Lecture Notes in Mathematics 128 (Springer, 1970), for the modular comparison of the two adjoints.</li>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em>, vol. 1 (Springer, 1987), for the standard form and the sandwich operators.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

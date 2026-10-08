@@ -567,7 +567,7 @@ $$</p>
 <td>$-c^2t^2-x^2-y^2-z^2$, signature $(0,4)$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$, the quaternionic bilinear form</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$, the general quaternionic bilinear form</td>
 <td>$\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$</td>
 <td>${}^{\natural}$</td>
 <td>$\mathbb{C}$-<strong>bilinear</strong></td>
@@ -583,7 +583,7 @@ $$</p>
 <td>$c^2t^2+x^2+y^2+z^2$, signature $(4,0)$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$, the quaternionic sesquilinear form</td>
+<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$, the general quaternionic sesquilinear form</td>
 <td>$\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})$</td>
 <td>$\bar{\cdot}$</td>
 <td>$\mathbb{C}$-<strong>sesquilinear</strong>, indefinite</td>
@@ -608,7 +608,7 @@ $$</p>
 <td>$Q_0^2 - Q_1^2 - Q_2^2 - Q_3^2$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, the quaternionic bilinear norm</td>
+<td>$\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, the general quaternionic bilinear norm</td>
 <td>$\mathrm{Sc}(\tilde{Q}^{\natural}\tilde{Q})$</td>
 <td>$Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$</td>
 </tr>
@@ -618,7 +618,7 @@ $$</p>
 <td>$\lvert Q_0\rvert^2 + \lvert Q_1\rvert^2 + \lvert Q_2\rvert^2 + \lvert Q_3\rvert^2$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}$, the quaternionic sesquilinear norm</td>
+<td>$\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}$, the general quaternionic sesquilinear norm</td>
 <td>$\mathrm{Sc}(\tilde{Q}^{\natural}\tilde{Q}^{*})$</td>
 <td>$\lvert Q_0\rvert^2 - \lvert Q_1\rvert^2 - \lvert Q_2\rvert^2 - \lvert Q_3\rvert^2$</td>
 </tr>
@@ -629,10 +629,10 @@ $$</p>
 <p>$$
 \langle\tilde{T},\tilde{T}\rangle = -(c^2t^2+x^2+y^2+z^2), \qquad \tilde{T} = ict\,e_0 + \mathbf{x},
 $$</p>
-<p>of signature $(0,4)$. It is the form of the plain product, and it differs from the quaternionic bilinear form by the sign of the vector part alone, $\langle\tilde{P},\tilde{Q}\rangle = \mathrm{Sc}(\tilde{P}\tilde{Q})$ against $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$.</p>
-<p><strong>The quaternionic bilinear form, from the natural sign.</strong> $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ is the bilinear form over $\mathbb{C}$ associated with the biquaternion norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$ (<em>Biquaternion Norm and Invertibility</em>); it is level 1 of the metric below, and its Gram matrix in the complex basis $e_0,e_1,e_2,e_3$ is the identity. Its diagonal is generally complex, so it carries no positivity and is no analytic norm; its unit group is the set of elements of norm one, $\{\tilde{\Lambda} : \langle\tilde{\Lambda},\tilde{\Lambda}\rangle_{\natural} = 1\}$, which is $\mathrm{SL}(2,\mathbb{C})$ — the norm is the determinant of the matrix realization — the group the notation table calls the Lorentz group on $\mathbb{M}_-$. It is the form of symmetry and duality.</p>
+<p>of signature $(0,4)$. It is the form of the plain product, and it differs from the general quaternionic bilinear form by the sign of the vector part alone, $\langle\tilde{P},\tilde{Q}\rangle = \mathrm{Sc}(\tilde{P}\tilde{Q})$ against $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$.</p>
+<p><strong>The general quaternionic bilinear form, from the natural sign.</strong> $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ is the bilinear form over $\mathbb{C}$ associated with the biquaternion norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$ (<em>Biquaternion Norm and Invertibility</em>); it is level 1 of the metric below, and its Gram matrix in the complex basis $e_0,e_1,e_2,e_3$ is the identity. Its diagonal is generally complex, so it carries no positivity and is no analytic norm; its unit group is the set of elements of norm one, $\{\tilde{\Lambda} : \langle\tilde{\Lambda},\tilde{\Lambda}\rangle_{\natural} = 1\}$, which is $\mathrm{SL}(2,\mathbb{C})$ — the norm is the determinant of the matrix realization — the group the notation table calls the Lorentz group on $\mathbb{M}_-$. It is the form of symmetry and duality.</p>
 <p><strong>The sesquilinear form, from the star.</strong> $\langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = P_0\bar{Q}_0 + P_1\bar{Q}_1 + P_2\bar{Q}_2 + P_3\bar{Q}_3$ is the form the series calls the Hermitian form, the <em>different</em> object of the level-1 caution below. It is genuinely positive definite, real with $\langle\tilde{Q},\tilde{Q}\rangle_{*} = \lvert Q_0\rvert^2 + \lvert Q_1\rvert^2 + \lvert Q_2\rvert^2 + \lvert Q_3\rvert^2$ strictly positive for $\tilde{Q} \neq 0$, and it is the internal Hilbert-space structure that the Born rule and the unitary evolution use; its isometry group is $\{\tilde{U} : \tilde{U}^{*}\tilde{U} = e_0\} = U(2)$, the unitary slice of <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>. On the material sector it is the <strong>Euclidean</strong> square, $\langle\tilde{T},\tilde{T}\rangle_{*} = c^2t^2+x^2+y^2+z^2$.</p>
-<p><strong>The quaternionic sesquilinear form, from the bar.</strong> $\langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*}) = P_0\bar{Q}_0 - P_1\bar{Q}_1 - P_2\bar{Q}_2 - P_3\bar{Q}_3$ is real on the diagonal and indefinite, of signature $(2,6)$ on $\mathbb{B}$. On the material sector it is the negative of the biquaternion norm,</p>
+<p><strong>The general quaternionic sesquilinear form, from the bar.</strong> $\langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*}) = P_0\bar{Q}_0 - P_1\bar{Q}_1 - P_2\bar{Q}_2 - P_3\bar{Q}_3$ is real on the diagonal and indefinite, of signature $(2,6)$ on $\mathbb{B}$. On the material sector it is the negative of the biquaternion norm,</p>
 <p>$$
 \langle\tilde{T},\tilde{T}\rangle_{\natural*} = c^2t^2 - x^2 - y^2 - z^2 = -\langle\tilde{T},\tilde{T}\rangle_{\natural}, \qquad \tilde{T} = ict\,e_0 + \mathbf{x},
 $$</p>
@@ -642,7 +642,7 @@ $$</p>
 \langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \langle\tilde{P}^{\natural},\tilde{Q}\rangle_{*}, \qquad J = {}^{\natural}, \qquad J^2 = \mathrm{id}, \qquad J \ \ \mathbb{C}\text{-linear}, \qquad \langle J\tilde{P},\tilde{Q}\rangle_{*} = \langle\tilde{P},J\tilde{Q}\rangle_{*},
 $$</p>
 <p>so $J$ is a $\mathbb{C}$-linear involution and is self-adjoint for the positive form. That is exactly the <strong>fundamental symmetry</strong> of a Krein space, the data of an indefinite-metric space with a definite form attached: the Krein form is the definite one with the sign twisted by $J$, the two are simultaneously diagonal in the basis adapted to the sectors, and the pair $(\langle\cdot,\cdot\rangle_{*}, J)$ is equivalent to the pair $(\langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\natural*})$. On the material sector $J$ is the spatial reflection, $J = \mathrm{diag}(+1,-1,-1,-1)$ in the basis $ie_0, e_1, e_2, e_3$, which is the sign pattern of the $ict$ metric $\eta$ read with the opposite overall sign.</p>
-<p><strong>Why the quaternionic bilinear form is bilinear, computed.</strong> Three ingredients are used in each slot, and all three are $\mathbb{C}$-linear: the natural sign, $(\lambda\tilde{R})^{\natural} = \lambda\tilde{R}^{\natural}$; the centrality of $\mathbb{C}$ in $\mathbb{B}$, $\lambda\tilde{X} = \tilde{X}\lambda$; and the scalar part, $\mathrm{Sc}(\lambda\tilde{X}) = \lambda\,\mathrm{Sc}(\tilde{X})$. In the first slot,</p>
+<p><strong>Why the general quaternionic bilinear form is bilinear, computed.</strong> Three ingredients are used in each slot, and all three are $\mathbb{C}$-linear: the natural sign, $(\lambda\tilde{R})^{\natural} = \lambda\tilde{R}^{\natural}$; the centrality of $\mathbb{C}$ in $\mathbb{B}$, $\lambda\tilde{X} = \tilde{X}\lambda$; and the scalar part, $\mathrm{Sc}(\lambda\tilde{X}) = \lambda\,\mathrm{Sc}(\tilde{X})$. In the first slot,</p>
 <p>$$
 \langle\lambda\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}\bigl(\lambda\tilde{P}\tilde{Q}^{\natural}\bigr) = \lambda\,\mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{\natural}\bigr) = \lambda\,\langle\tilde{P},\tilde{Q}\rangle_{\natural},
 $$</p>
@@ -650,7 +650,7 @@ $$</p>
 <p>$$
 \langle\tilde{P},\lambda\tilde{Q}\rangle_{\natural} = \mathrm{Sc}\bigl(\tilde{P}(\lambda\tilde{Q})^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde{P}\lambda\tilde{Q}^{\natural}\bigr) = \lambda\,\mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{\natural}\bigr) = \lambda\,\langle\tilde{P},\tilde{Q}\rangle_{\natural},
 $$</p>
-<p>so a scalar pulls out of both slots without conjugation and the quaternionic bilinear form is $\mathbb{C}$-bilinear. For the two sesquilinear forms the same computation conjugates $\lambda$ in the second slot, $\langle\tilde{P},\lambda\tilde{Q}\rangle_{*} = \mathrm{Sc}\bigl(\tilde{P}\bar\lambda\tilde{Q}^{*}\bigr) = \bar\lambda\,\langle\tilde{P},\tilde{Q}\rangle_{*}$, so those two are linear in the first slot and sesquilinear in the second. The bilinearity of the quaternionic bilinear form is therefore not a convention that could have been made differently: it is the exact consequence of the $\mathbb{C}$-linearity of the natural sign together with the centrality of $\mathbb{C}$ in $\mathbb{B}$, which is the point the Krein form makes from the other side.</p>
+<p>so a scalar pulls out of both slots without conjugation and the general quaternionic bilinear form is $\mathbb{C}$-bilinear. For the two sesquilinear forms the same computation conjugates $\lambda$ in the second slot, $\langle\tilde{P},\lambda\tilde{Q}\rangle_{*} = \mathrm{Sc}\bigl(\tilde{P}\bar\lambda\tilde{Q}^{*}\bigr) = \bar\lambda\,\langle\tilde{P},\tilde{Q}\rangle_{*}$, so those two are linear in the first slot and sesquilinear in the second. The bilinearity of the general quaternionic bilinear form is therefore not a convention that could have been made differently: it is the exact consequence of the $\mathbb{C}$-linearity of the natural sign together with the centrality of $\mathbb{C}$ in $\mathbb{B}$, which is the point the Krein form makes from the other side.</p>
 <h3 id="the-metric-three-levels">The Metric: Three Levels</h3>
 <p>The word "metric" appears at three distinct levels in the series, and most of the disagreements below are the result of the levels being conflated. They are separated here in order of priority, because the first is the convention of the framework and the third is only a convention of translation.</p>
 <p><strong>Level 1 — the biquaternion norm on $\mathbb{B}$.</strong> The algebra carries the complex-linear biquaternion norm</p>
@@ -802,7 +802,7 @@ $$</li>
 <p>$\flat$ is <strong>not</strong> the mass. The two roles were conflated in the retired form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$, and separating them is the content of the mass-term convention above. A reader who finds $\flat$ in an article should expect conjugation, a Majorana pairing, a bilinear, or the sector split — never a Dirac mass.</p>
 <h2 id="summary">Summary</h2>
 <p>The conventions of the series fall into two groups.</p>
-<p><strong>Algebraic.</strong> The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry. The conjugations cut the algebra into six real subspaces: the two-dimensional center subspace $\mathbb{C}_{\mathbb{B}}$; the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$; and four distinguished four-dimensional ones, named $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. Each carries its own real parameters and its own slice of the coordinate dictionary, with $q'_0 = ct$, $q_0 = ct'$, $(q_1,q_2,q_3) = (x,y,z)$ and $(q'_1,q'_2,q'_3) = (x',y',z')$. With complex coefficients the biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$ is the identity matrix on $\mathbb{B}$; its Minkowski signature appears only on the real sectors, and the $i$ is what supplies the minus. The algebra carries four forms, not two: the complex bilinear form, from the identity; the $\mathbb{C}$-bilinear polar form of the norm, from the $\mathbb{C}$-linear natural sign; the positive-definite Hermitian form, from the star; and the Krein form, from the bar, each classified by the $\mathbb{C}$-linearity of the involution that produces it. The matrix representation $\Phi$ is fixed by its four basis images, with the Hermitian units following as $\Phi(ie_k) = i\,\Phi(e_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it. The algebra has three representations — the coefficient quadruple, the regular matrix, and the matrix image $\Phi$ — each developed in its own article, and it is the trace of $\Phi$ that the series calls the trace.</p>
+<p><strong>Algebraic.</strong> The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry. The conjugations cut the algebra into six real subspaces: the two-dimensional center subspace $\mathbb{C}_{\mathbb{B}}$; the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$; and four distinguished four-dimensional ones, named $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. Each carries its own real parameters and its own slice of the coordinate dictionary, with $q'_0 = ct$, $q_0 = ct'$, $(q_1,q_2,q_3) = (x,y,z)$ and $(q'_1,q'_2,q'_3) = (x',y',z')$. With complex coefficients the biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$ is the identity matrix on $\mathbb{B}$; its Minkowski signature appears only on the real sectors, and the $i$ is what supplies the minus. The algebra carries four forms, not two: the general plain bilinear form, from the identity; the $\mathbb{C}$-bilinear polar form of the norm, from the $\mathbb{C}$-linear natural sign; the positive-definite Hermitian form, from the star; and the Krein form, from the bar, each classified by the $\mathbb{C}$-linearity of the involution that produces it. The matrix representation $\Phi$ is fixed by its four basis images, with the Hermitian units following as $\Phi(ie_k) = i\,\Phi(e_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it. The algebra has three representations — the coefficient quadruple, the regular matrix, and the matrix image $\Phi$ — each developed in its own article, and it is the trace of $\Phi$ that the series calls the trace.</p>
 <p><strong>Spacetime and fields.</strong> The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$, using the $ict$ convention so that the Minkowski interval is the biquaternion norm, of signature $(3,1)$, vanishing on the zero-divisor cone. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The series d'Alembertian is $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_0^2 + \Delta_Q$, read on the material sector as $\partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2$, and written by the Weyl-spinor exercise in real time as $-\partial_0^2 + \nabla^2$; every article uses this one operator, with the mass equation $\left(\Box - m^2c^2/\hbar^2\right)\psi = 0$. The Clifford metric $g$ is a level-3 tool rather than a convention, adopted where an article translates into gamma matrices, and its value is the standard mostly-minus $\mathrm{diag}(+1,-1,-1,-1)$ throughout the series — the $\mathbb{M}_+$ form, since the Clifford vectors correspond to the Hermitian subspace, so that the square of a Clifford vector agrees with the biquaternion norm of the biquaternion it represents with no relative sign. The opposite sign is not in use. Either way the biquaternion norm, the $ict$ metric and the sector structure are unchanged, and the tool never dictates them. The Dirac mass term is <strong>linear and chirality-off-diagonal</strong>, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$; it conserves the vector $U(1)$ and breaks the axial symmetry. The retired antilinear form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ was retired for its spacelike dispersion, and $\flat = -{}^{*}$ is retained as the algebra's real structure.</p>
 <p>The theme is single. In a framework whose algebra and sector assignment are non-standard, the most likely error is a correction of something that is deliberate. The conventions recorded above are the places where that is most likely to happen.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -892,7 +892,7 @@ $$</li>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}) = P_0Q_0 + P_1Q_1 + P_2Q_2 + P_3Q_3$</td>
-<td>The quaternionic bilinear form, the form of the norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$; unit group $\mathrm{SL}(2,\mathbb{C})$</td>
+<td>The general quaternionic bilinear form, the form of the norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$; unit group $\mathrm{SL}(2,\mathbb{C})$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = P_0\bar{Q}_0 + P_1\bar{Q}_1 + P_2\bar{Q}_2 + P_3\bar{Q}_3$</td>
@@ -900,7 +900,7 @@ $$</li>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*}) = P_0\bar{Q}_0 - P_1\bar{Q}_1 - P_2\bar{Q}_2 - P_3\bar{Q}_3$</td>
-<td>The quaternionic sesquilinear form, the indefinite Krein form of the bar; signature $(2,6)$ on $\mathbb{B}$ and $(1,3)$ on $\mathbb{M}_-$; $\langle\tilde{T},\tilde{T}\rangle_{\natural*} = -\langle\tilde{T},\tilde{T}\rangle_{\natural}$ on $\mathbb{M}_-$</td>
+<td>The general quaternionic sesquilinear form, the indefinite Krein form of the bar; signature $(2,6)$ on $\mathbb{B}$ and $(1,3)$ on $\mathbb{M}_-$; $\langle\tilde{T},\tilde{T}\rangle_{\natural*} = -\langle\tilde{T},\tilde{T}\rangle_{\natural}$ on $\mathbb{M}_-$</td>
 </tr>
 <tr>
 <td>$J = {}^{\natural}$</td>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint on a Hermitian Module — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-on-a-hermitian-module"><strong>The Signed Adjoint on a Hermitian Module</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hermitian module over a graded Hermitian algebra carries the action of the algebra and the form for which the action is self-adjoint, $(x\cdot s,t) = (s,x^{\dagger}\cdot t)$; its <strong>signed action</strong> is the action of the twisted parameter, $\rho^{\alpha}(x) = \rho(\alpha(x))$, which on a homogeneous parameter is the scalar multiple $\rho^{\alpha}(x) = \varepsilon_x\rho(x)$ with $\varepsilon_x = (-1)^{|x|}$. This article computes the adjoint of the signed action and the self-adjointness condition it carries.</p>
+<p>Two facts decide the computation. The first is that the dagger of a Hermitian algebra commutes with the grade involution, $\alpha(x)^{\dagger} = \alpha(x^{\dagger})$, so the adjoint of the signed action is the signed action of the involution,</p>
+<p>$$
+\rho^{\alpha}(x)^{*} = \rho^{\alpha}(x^{\dagger}) ,
+$$</p>
+<p>the sign passing through adjunction unchanged. The second is that the products $x^{\dagger}x$ and $xx^{\dagger}$ are even, so the operator products of the signed action are the unsigned ones, $\rho^{\alpha}(x)^{*}\rho^{\alpha}(x) = \rho(x^{\dagger}x)$; consequently <strong>self-adjointness, normality, unitarity and the positivity of the products are governed by the same conditions as for the ordinary action</strong>, and the sign is visible only in the value of the operator at a homogeneous element and in the parametrisation. This is the module form of the statement of <em>The Signed Adjoint of the Sandwich on a Hermitian Algebra</em> that the sign is a real scalar and adjunction does not see it.</p>
+<p>This article fixes the signed action and its adjoint, the self-adjointness, normality and unitarity conditions, the module involution and the sign rule, and the behaviour under the modular objects.</p>
+<p>The module, its form and the self-adjointness axiom are <em>Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint</em>; the adjoint of the action is <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>; the module adjoint calculus and the induced involution are <em>The Hermitian Adjoint on a Hermitian Module</em>; the grading and the signed multiplications are <em>The Grading of a Hermitian Algebra with Signed Hermitian Adjoint</em> and <em>One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint</em>; the modular objects are <em>The Modular Operator and Tomita-Takesaki Theory</em>. Those are cited. The algebra is $A$ with involution $\dagger$, grade involution $\alpha$ commuting with $\dagger$, and form $\langle\cdot,\cdot\rangle$; the module is $M$ with form $(\cdot,\cdot)$ and action $x\cdot s$; the modular objects of the module are $\jmath_M$ and $\Delta_M$.</p>
+<h2 id="the-signed-action-and-its-adjoint">The Signed Action and Its Adjoint</h2>
+<p><strong>Definition.</strong> The <strong>signed action</strong> of the algebra on the module is</p>
+<p>$$
+\rho^{\alpha}(x)\,s = \alpha(x)\cdot s ,
+$$</p>
+<p>so that $\rho^{\alpha}(x) = \rho(\alpha(x))$; on a homogeneous $x$ it is $\rho^{\alpha}(x) = \varepsilon_x\rho(x)$.</p>
+<p><strong>Theorem (the adjoint of the signed action).</strong> For every $x$,</p>
+<p>$$
+\rho^{\alpha}(x)^{*} = \rho^{\alpha}(x^{\dagger}) .
+$$</p>
+<p><strong>Proof.</strong> $\rho^{\alpha}(x)^{*} = \rho(\alpha(x))^{*} = \rho(\alpha(x)^{\dagger})$ by the adjoint of the action of <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>, and $\alpha(x)^{\dagger} = \alpha(x^{\dagger})$ because the dagger is even; assembling gives the display.</p>
+<p><strong>Corollary (the sign passes through adjunction).</strong> For homogeneous $x$,</p>
+<p>$$
+\rho^{\alpha}(x)^{*} = \varepsilon_x\,\rho(x^{\dagger}) = \varepsilon_x\,\rho(x)^{*} ,
+$$</p>
+<p>so the signed action and the ordinary action have adjoints carrying the same sign; adjunction commutes with the grade involution.</p>
+<p><strong>Proposition (the signed action is a reparametrisation).</strong> The map $x\mapsto\rho^{\alpha}(x)$ is a representation of $A$, $\rho^{\alpha}(xz) = \rho^{\alpha}(x)\rho^{\alpha}(z)$, with the same image as the ordinary action: $\rho^{\alpha}(A) = \rho(A)$.</p>
+<p><strong>Proof.</strong> Multiplicativity is $\alpha(xz) = \alpha(x)\alpha(z)$ and multiplicativity of the action; the images agree because $\alpha$ is a bijection of $A$ onto itself.</p>
+<p><strong>Proposition (the value on homogeneous parameters).</strong> For homogeneous $x$ and every $s$,</p>
+<p>$$
+\rho^{\alpha}(x)\,s = \begin{cases} \ \ \rho(x)\,s , & x \text{ even}, \\ -\rho(x)\,s , & x \text{ odd}, \end{cases}
+$$</p>
+<p>so the signed action agrees with the ordinary action on the even part of the algebra and is its negative on the odd part.</p>
+<p><strong>Proof.</strong> $\alpha(x) = \varepsilon_xx$ for homogeneous $x$ and the scalar $\varepsilon_x$ acts on the module through the action of the scalars.</p>
+<h2 id="self-adjointness-normality-and-unitarity">Self-Adjointness, Normality and Unitarity</h2>
+<p><strong>Theorem (the criteria).</strong> For $x\in A$:</p>
+<ol>
+<li>$\rho^{\alpha}(x)$ is self-adjoint exactly when $x = x^{\dagger}$;</li>
+<li>it is skew-adjoint exactly when $x^{\dagger} = -x$;</li>
+<li>it is normal exactly when $xx^{\dagger} = x^{\dagger}x$;</li>
+<li>it is unitary exactly when $xx^{\dagger} = x^{\dagger}x = 1$;</li>
+<li>it is positive, for self-adjoint $x$, exactly when $x$ lies in the positive cone of the algebra.</li>
+</ol>
+<p><strong>Proof.</strong> By the theorem, $\rho^{\alpha}(x)^{*} = \rho^{\alpha}(x^{\dagger}) = \rho(\alpha(x^{\dagger}))$; the representation is faithful on the subalgebra generated by $x$ in the cases below, so equality of operators is equality of parameters. For normality, $\rho^{\alpha}(x)^{*}\rho^{\alpha}(x) = \rho^{\alpha}(x^{\dagger}x) = \rho(x^{\dagger}x)$ and $\rho^{\alpha}(x)\rho^{\alpha}(x)^{*} = \rho(xx^{\dagger})$, the equalities to the unsigned action holding because $x^{\dagger}x$ and $xx^{\dagger}$ are even; unitarity is the same with the value $\mathrm{id}$; positivity is $(x\cdot s,s)\geq0$ for self-adjoint $x$ in the cone.</p>
+<p><strong>Corollary (the sign is invisible to every operator criterion).</strong> Self-adjointness, skew-adjointness, normality, unitarity and the positivity of the operator products of the signed action are exactly those of the ordinary action; the signed action is therefore a rescaling of the ordinary action by a real sign and not a different operator family.</p>
+<p><strong>Proof.</strong> The criteria of the theorem depend only on the involution of the parameter and on the products $x^{\dagger}x$, $xx^{\dagger}$, which are even; the formulae of the proof show that the signed and unsigned operator products coincide.</p>
+<p><strong>Remark (where the sign is visible on the module).</strong> The sign is visible in the value $\rho^{\alpha}(x)s$ on an odd parameter and in the parametrisation of the family; it is invisible in the adjoint, in the modulus and in all the criteria. This is the module counterpart of the corresponding statement for the signed sandwich, and it is the reason the signed structure of the corpus can be described as the <em>same</em> operators with a graded bookkeeping.</p>
+<h2 id="the-module-involution-and-the-sign-rule">The Module Involution and the Sign Rule</h2>
+<p><strong>Definition.</strong> Let $\xi$ be cyclic and separating for the action, so that $x\cdot\xi = 0$ forces $x = 0$, and let $S_M(x\cdot\xi) = x^{\dagger}\cdot\xi$ be the module involution of <em>The Hermitian Adjoint on a Hermitian Module</em>, with polar decomposition $\bar S_M = \jmath_M\Delta_M^{1/2}$.</p>
+<p><strong>Proposition (the involution conjugates the signed action).</strong> On the bimodule case, where the right action $\sigma$ of the algebra is defined, the module involution satisfies</p>
+<p>$$
+S_M\,\rho^{\alpha}(x)\,S_M = \sigma^{\alpha}(x^{\dagger}) \quad\text{on } A\cdot\xi ,
+$$</p>
+<p>where $\sigma^{\alpha}(y)$ is the signed right action, $s\mapsto s\cdot\alpha(y)$; so the conjugation by the module involution turns the signed left action into the signed right action of the involution.</p>
+<p><strong>Proof.</strong> $S_M\rho^{\alpha}(x)S_M(y\cdot\xi) = S_M(\alpha(x)y^{\dagger}\cdot\xi) = (\alpha(x)y^{\dagger})^{\dagger}\cdot\xi = y\alpha(x)^{\dagger}\cdot\xi = y\alpha(x^{\dagger})\cdot\xi = \sigma^{\alpha}(x^{\dagger})(y\cdot\xi)$, using that the dagger is even.</p>
+<p><strong>Corollary (the sign rule is preserved by the conjugation).</strong> For homogeneous $x$ the conjugation carries the scalar $\varepsilon_x$ across,</p>
+<p>$$
+S_M\,\rho^{\alpha}(x)\,S_M = \varepsilon_x\,S_M\,\rho(x)\,S_M = \sigma^{\alpha}(x^{\dagger}) ,
+$$</p>
+<p>so the sign rule and the exchange of sides are compatible; the sign is not disturbed by the exchange.</p>
+<p><strong>Proof.</strong> $\rho^{\alpha}(x) = \varepsilon_x\rho(x)$ for homogeneous $x$, and $S_M\rho(x)S_M = \sigma(x^{\dagger})$ by the module involution of <em>The Hermitian Adjoint on a Hermitian Module</em>; the definition of $\sigma^{\alpha}$ gives the claim.</p>
+<p><strong>Proposition (the modular flow on the signed action).</strong> The modular group of the module acts by</p>
+<p>$$
+\Delta_M^{it}\,\rho^{\alpha}(x)\,\Delta_M^{-it} = \rho^{\alpha}(\sigma_t(x)) ,
+$$</p>
+<p>with $\sigma_t$ the modular automorphism of the algebra; the flow preserves the parity, $\varepsilon_{\sigma_t(x)} = \varepsilon_x$, so it preserves the sign.</p>
+<p><strong>Proof.</strong> The modular flow acts on the coefficients of the action, as in <em>The Hermitian Adjoint on a Hermitian Module</em>, and the parity invariance is the even-ness of the modular automorphism of <em>The Grading of a Hermitian Algebra with Signed Hermitian Adjoint</em>.</p>
+<p><strong>Remark (the modular objects and the sign).</strong> The module involution, its polar decomposition and the modular flow are all defined by the form and the involution and do not involve the grade involution; they are therefore compatible with the signed action in the strong sense that they preserve its defining sign, and this is why the signed action may be used in place of the ordinary one whenever the parametrisation by parity is convenient.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-regular-module">The Regular Module</h3>
+<p>For $M = A$ with the form $(s,t) = \langle s,t\rangle$ and $\xi = 1$, the signed action is the signed left multiplication $\Lambda^{\alpha}_x$ and the theorem is the identity $(\Lambda^{\alpha}_x)^{*} = \Lambda^{\alpha}_{x^{\dagger}}$; the conjugation by the module involution is $S\Lambda^{\alpha}_xS = \mathrm{P}^{\alpha}_{x^{\dagger}}$, the signed right multiplication.</p>
+<h3 id="the-vector-module">The Vector Module</h3>
+<p>For $M = \mathbb{C}^{n}$ over $A = M_n(\mathbb{C})$ with $\rho(x)s = xs$, the grading being given by an involution $\gamma$ of $\mathbb{C}^{n}$, the signed action of an odd matrix is minus the multiplication by it; the adjoint is the signed action of the conjugate transpose, and the criteria of the theorem reduce to the usual ones for matrices.</p>
+<h3 id="an-odd-parameter">An Odd Parameter</h3>
+<p>Let $u$ be odd with $u^{\dagger} = -u$. Then $\rho^{\alpha}(u) = -\rho(u)$ and $\rho^{\alpha}(u)^{*} = \rho^{\alpha}(u^{\dagger}) = -\rho^{\alpha}(u)$, so the signed action is skew-adjoint, and so is the ordinary action, $-\rho(u)$; the sign does not change the adjointness class, it only rescales the operator.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>signed action</strong> on a Hermitian module is $\rho^{\alpha}(x) = \rho(\alpha(x))$, equal to $\varepsilon_x\rho(x)$ on a homogeneous parameter, and its <strong>adjoint</strong> is</p>
+<p>$$
+\rho^{\alpha}(x)^{*} = \rho^{\alpha}(x^{\dagger}) ,
+$$</p>
+<p>the sign passing through adjunction unchanged because the dagger is even, $\alpha(x)^{\dagger} = \alpha(x^{\dagger})$; for homogeneous $x$ the signed action is the ordinary one on the even part and its negative on the odd part. The <strong>criteria</strong> are those of the ordinary action: self-adjoint exactly when $x = x^{\dagger}$, skew-adjoint exactly when $x^{\dagger} = -x$, normal exactly when $xx^{\dagger} = x^{\dagger}x$, unitary exactly when $xx^{\dagger} = x^{\dagger}x = 1$, and positive for self-adjoint $x$ in the positive cone; the operator products agree, $\rho^{\alpha}(x)^{*}\rho^{\alpha}(x) = \rho(x^{\dagger}x)$, because $x^{\dagger}x$ is even, so the sign is invisible to every operator criterion and visible only in the value on an odd parameter and in the parametrisation. The <strong>module involution</strong> conjugates the signed action into the signed right action of the involution, $S_M\rho^{\alpha}(x)S_M = \sigma^{\alpha}(x^{\dagger})$, with the sign rule preserved, and the <strong>modular flow</strong> acts by $\Delta_M^{it}\rho^{\alpha}(x)\Delta_M^{-it} = \rho^{\alpha}(\sigma_t(x))$ with the parity preserved. The module and its axiom are <em>Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint</em>, the module involution is <em>The Hermitian Adjoint on a Hermitian Module</em>, the signed multiplications are <em>One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint</em>, and the modular objects are <em>The Modular Operator and Tomita-Takesaki Theory</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho^{\alpha}(x) = \rho(\alpha(x))$</td>
+<td>The signed action</td>
+</tr>
+<tr>
+<td>$\rho^{\alpha}(x) = \varepsilon_x\rho(x)$</td>
+<td>Value on a homogeneous parameter</td>
+</tr>
+<tr>
+<td>$\rho^{\alpha}(x)^{*} = \rho^{\alpha}(x^{\dagger})$</td>
+<td>The adjoint</td>
+</tr>
+<tr>
+<td>$\alpha(x)^{\dagger} = \alpha(x^{\dagger})$</td>
+<td>The dagger is even</td>
+</tr>
+<tr>
+<td>$\rho^{\alpha}(x)^{*}\rho^{\alpha}(x) = \rho(x^{\dagger}x)$</td>
+<td>The product is unsigned</td>
+</tr>
+<tr>
+<td>$x = x^{\dagger}$, $x^{\dagger} = -x$, $xx^{\dagger} = x^{\dagger}x$, $xx^{\dagger} = x^{\dagger}x = 1$</td>
+<td>Self-adjoint, skew-adjoint, normal, unitary</td>
+</tr>
+<tr>
+<td>$S_M\rho^{\alpha}(x)S_M = \sigma^{\alpha}(x^{\dagger})$</td>
+<td>Conjugation into the signed right action</td>
+</tr>
+<tr>
+<td>$\Delta_M^{it}\rho^{\alpha}(x)\Delta_M^{-it} = \rho^{\alpha}(\sigma_t(x))$</td>
+<td>Modular flow</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for self-adjointness, normality and the adjoint calculus on a module.</li>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for Hermitian modules and the induced involution.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for involutions commuting with an automorphism and the Hermitian forms they define.</li>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works vol. 2 (Springer, 1997), for the grade involution and its commutation with the involution of a Clifford algebra.</li>
+<li>Masamichi Takesaki, <em>Tomita's Theory of Modular Hilbert Algebras and its Applications</em>, Lecture Notes in Mathematics 128 (Springer, 1970), for the modular flow on the coefficients of an action.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

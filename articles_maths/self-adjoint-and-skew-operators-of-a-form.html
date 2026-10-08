@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Adjoint and Skew Operators of a Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="self-adjoint-and-skew-operators-of-a-form"><strong>Self-Adjoint and Skew Operators of a Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The adjoint operation $T \mapsto T^{*}$ of <em>The Form-Adjoint of an Operator</em> is an involution of the algebra of operators, and an involution splits the algebra into two eigenspaces: the <strong>self-adjoint</strong> operators with $T^{*} = T$ and the <strong>skew-adjoint</strong> operators with $T^{*} = -T$. The two eigenspaces are the two algebraic structures of the category: the skew operators close under the commutator and form the <strong>Lie algebra</strong> of the unitary group (<em>The Unitary Group of a Form and Its Lie Algebra</em>), and the self-adjoint operators close under the anticommutator and form a <strong>Jordan algebra</strong> (<em>The Hermitian Jordan Algebra of a Form</em>).</p>
+<p>The article proves the two closures from one sign computation, states the correspondence between the self-adjoint operators and the Hermitian forms of the shape $Q_{T}(x) = h(Tx,x)$, and gives the algebraic substitute for the exponential map: the <strong>Cayley transform</strong>, which carries a skew operator to a unitary one by rational operations and needs no limit and no completion. The analytic exponential, the spectral theorem and the polar decomposition of the operators of a form are Part II: <em>The Spectra of Self-Adjoint Operators with Hermitian Adjoint</em>, <em>The Polar Decomposition of an Operator of the Form</em> and <em>Self-Adjoint and Skew Operators with Hermitian Adjoint</em>. The bilinear counterpart is the theory of <em>Hermitian and Skew-Hermitian Elements</em>, and the corresponding elements of an algebra with an involution are <em>Self-Adjoint Elements and the Positive Cone</em>. Throughout, $(A,*,h)$ is a sesqualgebra with a form over a base $(R,\varsigma)$, $h$ is nonsingular, $2$ is invertible in the fixed ring, and the operators are the $R$-linear endomorphisms of $A$ admitting an adjoint, with $T^{*}$ the adjoint for $h$.</p>
+<h2 id="the-two-eigenspaces">The Two Eigenspaces</h2>
+<p><strong>Proposition.</strong> Every operator splits as</p>
+<p>$$
+T = \tfrac{1}{2}\bigl(T + T^{*}\bigr) + \tfrac{1}{2}\bigl(T - T^{*}\bigr) ,
+$$</p>
+<p>with the first summand self-adjoint and the second skew-adjoint; the splitting is the eigenspace decomposition of the involution $T \mapsto T^{*}$, and it is unique.</p>
+<p><strong>Proof.</strong> $\bigl(\tfrac{1}{2}(T+T^{*})\bigr)^{*} = \tfrac{1}{2}(T^{*}+T)$ by the additivity and the order-two property of the adjoint, and likewise for the difference; the two subspaces meet only at $0$ because an operator with $T^{*} = T = -T$ is $0$ when $2$ is invertible in the fixed ring. The uniqueness is the uniqueness of the eigenvector decomposition of an involution.</p>
+<h2 id="the-sign-rule-and-the-two-algebras">The Sign Rule and the Two Algebras</h2>
+<p><strong>Definition.</strong> An operator is of <strong>sign</strong> $\varepsilon \in \{1,-1\}$ when $T^{*} = \varepsilon T$; the operators of sign $+1$ are self-adjoint and those of sign $-1$ skew-adjoint.</p>
+<p><strong>Proposition (the sign rule).</strong> If $S$ has sign $\varepsilon$ and $T$ has sign $\delta$ then</p>
+<p>$$
+(ST + TS)^{*} = \varepsilon\delta\,(ST + TS), \qquad (ST - TS)^{*} = -\varepsilon\delta\,(ST - TS) .
+$$</p>
+<p><strong>Proof.</strong> $(ST)^{*} = T^{*}S^{*} = \delta\varepsilon\,TS$ and $(TS)^{*} = \varepsilon\delta\,ST$; adding gives the first identity and subtracting gives the second, and the two signs $\varepsilon, \delta$ commute as central signs.</p>
+<p><strong>Corollary (the Lie algebra).</strong> The skew-adjoint operators close under the commutator, $[S,T] = ST - TS$, and form a Lie subalgebra $\mathfrak{u}(A,h)$ of the operators; the self-adjoint operators close under the anticommutator $S \circ T = \tfrac{1}{2}(ST + TS)$ and form a Jordan subalgebra.</p>
+<p><strong>Proof.</strong> The first is the sign rule at $\varepsilon = \delta = -1$; the second is the sign rule at $\varepsilon = \delta = +1$ combined with the bilinearity of the anticommutator, the commutativity $S \circ T = T \circ S$ and the Jordan identity, which is the associativity of the underlying product read in the symmetrised form.</p>
+<p><strong>Remark.</strong> The two structures are the two halves of the same involution, and the product of two skew operators is not skew but has the two parts $ST = \tfrac{1}{2}[S,T] + S \circ T$: the commutator remains in the Lie algebra and the anticommutator leaves it, which is the classical split of the theory of Lie and Jordan structures.</p>
+<h2 id="the-quadratic-form-of-a-self-adjoint-operator">The Quadratic Form of a Self-Adjoint Operator</h2>
+<p><strong>Definition.</strong> The <strong>quadratic form</strong> of an operator $T$ is $Q_{T}(x) = h(Tx,x)$.</p>
+<p><strong>Proposition.</strong> The operator $T$ is self-adjoint exactly when $Q_{T}$ is real-valued, and then the polarisation of $Q_{T}$ is the form $h(Tx,y) + h(Ty,x)$; when the sesquilinear forms are determined by their diagonals — in particular over a field containing a scalar $\mathrm{i}$ with $\varsigma(\mathrm{i}) = -\mathrm{i}$ — the map $T \mapsto Q_{T}$ is an injective $R^{\varsigma}$-linear map from the self-adjoint operators onto the Hermitian forms carried by $T$ in this way.</p>
+<p><strong>Proof.</strong> If $T$ is self-adjoint then $Q_{T}(x) = h(Tx,x) = h(x,Tx) = \varsigma(h(Tx,x))$. Conversely, if $Q_{T}$ is real-valued for every $x$ then the sesquilinear form $B(x,y) = h((T - T^{*})x, y)$ has vanishing diagonal and is skew-Hermitian, so it vanishes when the diagonal determines the sesquilinear forms, giving $h(Tx,y) = h(x,Ty)$. The polarisation of $Q_{T}$ is computed as in <em>Polarisation and the Hermitian Square</em>: $Q_{T}(x+y) - Q_{T}(x) - Q_{T}(y) = h(Tx,y) + h(Ty,x)$. The assignment is additive in $T$, and its kernel is the zero operator on the self-adjoint part under the same hypothesis, by the non-degeneracy of $h$; over the trivial involution the kernel contains the skew operators, whose quadratic form vanishes as in the remark of <em>The Form-Adjoint of an Operator</em>.</p>
+<p><strong>Corollary.</strong> A self-adjoint operator is a Hermitian form of the layer, and the self-adjoint operators of the form are the same data as the Hermitian forms of the shape $h(T\cdot,\cdot)$; this is the algebraic identity between the Jordan algebra of the article and the forms of the category, and it is the exact statement that the positivity of the form and the positivity of the operator are two readings of one cone (<em>Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint</em> in Part II).</p>
+<h2 id="the-cayley-transform-and-the-exponential">The Cayley Transform and the Exponential</h2>
+<p><strong>Proposition (the Cayley transform).</strong> Let $S$ be skew-adjoint and suppose $1 + S$ invertible. Then</p>
+<p>$$
+U = (1 - S)(1 + S)^{-1}
+$$</p>
+<p>is unitary, and the assignment is inverted by $S = (1 - U)(1 + U)^{-1}$ when $1 + U$ is invertible.</p>
+<p><strong>Proof.</strong> With $S^{*} = -S$, $(1+S)^{*} = 1 - S$ and $(1-S)^{*} = 1+S$, so $U^{*} = \bigl((1+S)^{-1}\bigr)^{*}(1+S) = (1-S)^{-1}(1+S)$; then $U^{*}U = (1-S)^{-1}(1+S)(1-S)(1+S)^{-1}$ and $(1+S)(1-S) = 1 - S^{2} = (1-S)(1+S)$ because the powers of $S$ commute with each other, giving $U^{*}U = 1$. The inversion is the same computation solved for $S$.</p>
+<p><strong>Remark (the exponential).</strong> Over $\mathbb{R}$ or $\mathbb{C}$ the exponential of a skew operator is unitary, and the identity is the origin of the correspondence between the Lie algebra and the group; the series is analytic and needs a topology, so in this algebraic layer the Cayley transform is the substitute, and the exponential is <em>The Lie Algebra and the Exponential Map</em> in Part II. The two maps agree to first order, $U = 1 - 2S + \dots$, which is the statement that the Lie algebra is the tangent space of the group at the identity.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-trace-form">The Trace Form</h3>
+<p>On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the self-adjoint operators are the Hermitian matrices, the skew operators the skew-Hermitian ones, the Jordan algebra is the real vector space of the Hermitian matrices with the anticommutator, and the Lie algebra is $\mathfrak{u}(n)$ with the commutator.</p>
+<h3 id="the-indefinite-case">The Indefinite Case</h3>
+<p>With the form of signature $(p,q)$ on $\mathbb{R}^{n}$ the sign rule gives the Lie algebra $\mathfrak{o}(p,q)$ of the skew operators for the form $h(Tx,x) = 0$; the self-adjoint operators are the forms of the layer and the Cayley transform produces the elements of $\operatorname{SO}(p,q)$ from them, the framework of <em>The Orthogonal Lie Algebra</em>.</p>
+<h3 id="the-biquaternions">The Biquaternions</h3>
+<p>On $\mathbb{B}$ with the dagger, $Q_{T}(\tilde Q) = \operatorname{Sc}(T\tilde Q\tilde Q^{\dagger})$ is the Hermitian reading of an operator and the self-adjoint operators are the Hermitian forms of the algebra; the sandwich operators $\Theta_x$ of <em>The Form-Adjoint of the Multiplications</em> are self-adjoint exactly when $x$ is self-adjoint, and the structure is <em>The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The involution $T \mapsto T^{*}$ splits the operators into the <strong>self-adjoint</strong> and the <strong>skew-adjoint</strong> parts, $T = \tfrac12(T+T^{*}) + \tfrac12(T-T^{*})$, and the splitting is unique when $2$ is invertible.</li>
+<li>The <strong>sign rule</strong> $(ST \pm TS)^{*} = \pm\varepsilon\delta(ST \pm TS)$ makes the skew operators a <strong>Lie algebra</strong> under the commutator and the self-adjoint operators a <strong>Jordan algebra</strong> under the anticommutator.</li>
+<li>An operator is self-adjoint exactly when its quadratic form $Q_{T}(x) = h(Tx,x)$ is Hermitian; the map $T \mapsto Q_{T}$ identifies the self-adjoint operators with the Hermitian forms of the shape $h(T\cdot,\cdot)$.</li>
+<li>The <strong>Cayley transform</strong> $U = (1-S)(1+S)^{-1}$ carries a skew operator to a unitary one by rational operations, and inverts; it is the algebraic substitute for the exponential, which belongs to Part II.</li>
+<li>The spectra, the polar decomposition and the functional calculus of these operators are Part II.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T^{*}$</td>
+<td>the adjoint of $T$ for $h$</td>
+</tr>
+<tr>
+<td>$[S,T] = ST - TS$</td>
+<td>the commutator, giving the Lie algebra of the skew operators</td>
+</tr>
+<tr>
+<td>$S \circ T = \tfrac12(ST+TS)$</td>
+<td>the anticommutator, giving the Jordan algebra of the self-adjoint operators</td>
+</tr>
+<tr>
+<td>$Q_{T}(x) = h(Tx,x)$</td>
+<td>the quadratic form of an operator</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(A,h)$</td>
+<td>the Lie algebra of the skew-adjoint operators</td>
+</tr>
+<tr>
+<td>$U = (1-S)(1+S)^{-1}$</td>
+<td>the Cayley transform of a skew operator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em>, American Mathematical Society Colloquium Publications 39 (1968), for the Jordan algebra of the self-adjoint elements of an algebra with an involution.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em>, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for the algebra with an involution attached to a form and its two eigenspaces.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em>, Ergebnisse der Mathematik 5 (Springer, 1955), for the Cayley transform, the reflections and the classical groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

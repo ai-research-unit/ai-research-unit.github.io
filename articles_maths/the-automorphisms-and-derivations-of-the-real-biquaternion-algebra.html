@@ -80,7 +80,7 @@ $$</p>
 $$
 \ker\rho \cong \mathbb{B}^\times / \mathbb{C}^\times \cong PGL(2,\mathbb{C}) \cong PSL(2,\mathbb{C}) \cong SO(3,\mathbb{C}) ,
 $$
-of real dimension six and connected (<em>Biquaternion Automorphisms and Derivations</em>, §<em>Automorphisms over $\mathbb{C}$</em>).</p>
+of real dimension six (<em>Biquaternion Automorphisms and Derivations</em>, §<em>Automorphisms over $\mathbb{C}$</em>).</p>
 <h3 id="the-conjugate-linear-coset">The Conjugate-Linear Coset</h3>
 <p><strong>Proposition.</strong> The homomorphism $\rho$ is surjective, and $\mathbb{R}$-algebra automorphisms not fixing the centre exist.</p>
 <p><strong>Proof.</strong> The complex conjugation $c(\tilde Q) = \bar{\tilde Q}$ is an $\mathbb{R}$-algebra automorphism, because conjugating a product conjugates its coefficients and the structure constants are real, $c(\tilde P\tilde Q) = c(\tilde P)c(\tilde Q)$; it negates the central element, $c(i) = -i$, so it induces $\kappa$ on the centre, and it is therefore not in the kernel. $\square$</p>
@@ -91,7 +91,7 @@ of real dimension six and connected (<em>Biquaternion Automorphisms and Derivati
 $$
 \operatorname{Aut}_\mathbb{R}(\mathbb{B}) \;\cong\; \operatorname{Aut}_\mathbb{C}(\mathbb{B}) \rtimes \mathbb{Z}/2 \;\cong\; \bigl(\mathbb{B}^\times/\mathbb{C}^\times\bigr) \rtimes \mathbb{Z}/2 ,
 $$
-a real Lie group of real dimension six with exactly two connected components; the nontrivial element of $\mathbb{Z}/2$ acts on $\operatorname{Aut}_\mathbb{C}(\mathbb{B})$ by $\iota_g \mapsto \iota_{\bar g}$, that is, on the level of units, by $g \mapsto \bar g$.</p>
+a real Lie group of real dimension six with exactly two components; the nontrivial element of $\mathbb{Z}/2$ acts on $\operatorname{Aut}_\mathbb{C}(\mathbb{B})$ by $\iota_g \mapsto \iota_{\bar g}$, that is, on the level of units, by $g \mapsto \bar g$.</p>
 <p><strong>Proof.</strong> The sequence
 $$
 1 \longrightarrow \operatorname{Aut}_\mathbb{C}(\mathbb{B}) \longrightarrow \operatorname{Aut}_\mathbb{R}(\mathbb{B}) \xrightarrow{\ \rho\ } \mathbb{Z}/2 \longrightarrow 1
@@ -100,7 +100,7 @@ is exact, and it splits because $c^2 = \mathrm{id}$; hence the semidirect produc
 $$
 \sigma(\tilde R) = g\,\tilde R\,g^{-1} \qquad\text{or}\qquad \sigma(\tilde R) = g\,\bar{\tilde R}\,g^{-1}, \qquad g \in \mathbb{B}^\times ,
 $$
-with $g$ determined modulo the nonzero complex scalars; the first family is the identity component, the second is the coset of $c$. The identity component is connected by the corollary above, and the second component is a translate of it, so there are exactly two components. The action of $c$ on a unit is $c$ itself, and $c \iota_g c^{-1} = \iota_{\bar g}$ on the complex part. $\square$</p>
+with $g$ determined modulo the nonzero complex scalars; the first family is the identity component, the second is the coset of $c$. The first family is the identity component and the second is its translate by the complex conjugation, so there are exactly two components. The action of $c$ on a unit is $c$ itself, and $c \iota_g c^{-1} = \iota_{\bar g}$ on the complex part. $\square$</p>
 <p><strong>Remark (the second family is conjugate-linear).</strong> The automorphisms $g\bar{\tilde R}g^{-1}$ are $\mathbb{C}$-antilinear: they satisfy $\sigma(\lambda \tilde R) = \bar\lambda\,\sigma(\tilde R)$ for $\lambda \in \mathbb{C}$, because $\bar{\cdot}$ is antilinear and $\iota_g$ is linear. They are the automorphisms that the real reading has and the complex reading does not, and they are exactly the elements outside the identity component.</p>
 <p><strong>Remark (the outer automorphism group).</strong> Since the kernel of $\rho$ is the whole identity component and its image is $\mathbb{Z}/2$, the outer automorphism group is
 $$
@@ -152,7 +152,7 @@ the quotient of $\mathbb{B}$ by its centre, that is, the traceless part $\operat
 <p><strong>Theorem.</strong> The Lie algebra of the real Lie group $\operatorname{Aut}_\mathbb{R}(\mathbb{B})$ is $\operatorname{Der}_\mathbb{R}(\mathbb{B})$.</p>
 <p><strong>Proof.</strong> The identity component of $\operatorname{Aut}_\mathbb{R}(\mathbb{B})$ is $\operatorname{Aut}_\mathbb{C}(\mathbb{B})$, whose Lie algebra is $\operatorname{Der}_\mathbb{C}(\mathbb{B})$ by the exponential formula $\exp(t\,\mathrm{ad}_{\tilde A})\,\tilde R = e^{t\tilde A}\,\tilde R\, e^{-t\tilde A}$ (<em>Biquaternion Automorphisms and Derivations</em>, §<em>Derivations over $\mathbb{C}$</em>). Since the Lie algebra of a Lie group depends only on its identity component, and $\operatorname{Der}_\mathbb{R}(\mathbb{B}) = \operatorname{Der}_\mathbb{C}(\mathbb{B})$ by the theorem above, the Lie algebra of the full real group is the real derivation space. $\square$</p>
 <p><strong>Corollary.</strong> The tangent space at the identity of $\operatorname{Aut}_\mathbb{R}(\mathbb{B})$ has real dimension six, which is the dimension of the group; the second component, the conjugate coset, contributes no tangent directions at the identity.</p>
-<p><strong>Remark (the two invariants against each other).</strong> Over $\mathbb{R}$ the automorphism group is strictly larger than over $\mathbb{C}$, by the conjugate coset, while the derivation space is the same; over $\mathbb{C}$ the automorphism group is connected and every automorphism is inner, and the derivation space is its Lie algebra. The comparison is therefore: adding the scalars of a Galois-twisted coset to an automorphism group is possible, since an automorphism may be semilinear; adding the corresponding twist to a derivation algebra is not, since a derivation is linear by its Leibniz rule. The general statement is <em>Automorphisms and Derivations of Algebras</em>, and the complex case is <em>Biquaternion Automorphisms and Derivations</em>.</p>
+<p><strong>Remark (the two invariants against each other).</strong> Over $\mathbb{R}$ the automorphism group is strictly larger than over $\mathbb{C}$, by the conjugate coset, while the derivation space is the same; over $\mathbb{C}$ the automorphism group is a single component and every automorphism is inner, and the derivation space is its Lie algebra. The comparison is therefore: adding the scalars of a Galois-twisted coset to an automorphism group is possible, since an automorphism may be semilinear; adding the corresponding twist to a derivation algebra is not, since a derivation is linear by its Leibniz rule. The general statement is <em>Automorphisms and Derivations of Algebras</em>, and the complex case is <em>Biquaternion Automorphisms and Derivations</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The real automorphism group of $\mathbb{B}$ is obtained from the complex one by adjoining the complex conjugation, which is $\mathbb{R}$-linear, conjugate-linear over $\mathbb{C}$, and not inner because it moves the centre. The restriction to the centre gives an exact sequence
 $$
@@ -162,7 +162,7 @@ split by $c$, so that
 $$
 \boxed{\ \operatorname{Aut}_\mathbb{R}(\mathbb{B}) \cong \operatorname{Aut}_\mathbb{C}(\mathbb{B}) \rtimes \mathbb{Z}/2 \cong \bigl(\mathbb{B}^\times/\mathbb{C}^\times\bigr)\rtimes\mathbb{Z}/2 , \quad \operatorname{Der}_\mathbb{R}(\mathbb{B}) = \operatorname{Der}_\mathbb{C}(\mathbb{B}) . }
 $$</p>
-<p>Every real automorphism has exactly one of the forms $\tilde R \mapsto g\tilde Rg^{-1}$ and $\tilde R \mapsto g\bar{\tilde R}g^{-1}$, the group is a real Lie group of real dimension six with two connected components, and its outer automorphism group is $\mathbb{Z}/2$, generated by the class of the complex conjugation. Every real derivation is automatically $\mathbb{C}$-linear, because it kills the centre and the centre has no nonzero real derivation, so the real derivation space coincides with the complex one, $\operatorname{Der}_\mathbb{R}(\mathbb{B}) \cong \mathbb{B}/\mathbb{C}_{\mathbb{B}}$, of real dimension six, with the real Lie algebra $\mathfrak{so}(1,3)$; it is the Lie algebra of the real automorphism group, read on its identity component.</p>
+<p>Every real automorphism has exactly one of the forms $\tilde R \mapsto g\tilde Rg^{-1}$ and $\tilde R \mapsto g\bar{\tilde R}g^{-1}$, the group is a real Lie group of real dimension six with two components, and its outer automorphism group is $\mathbb{Z}/2$, generated by the class of the complex conjugation. Every real derivation is automatically $\mathbb{C}$-linear, because it kills the centre and the centre has no nonzero real derivation, so the real derivation space coincides with the complex one, $\operatorname{Der}_\mathbb{R}(\mathbb{B}) \cong \mathbb{B}/\mathbb{C}_{\mathbb{B}}$, of real dimension six, with the real Lie algebra $\mathfrak{so}(1,3)$; it is the Lie algebra of the real automorphism group, read on its identity component.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

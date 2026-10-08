@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-brackets-that-do-not-close-the-jacobi-failure-of-the-quaternionic-commutator"><strong>The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A bracket that is to generate a group must satisfy the Jacobi identity. The antisymmetrised part of the
+quaternionic product is a bracket — bilinear, alternating, vector valued, the natural candidate — and it
+does <strong>not</strong> satisfy the identity. This article reads the failure and its physical consequence. The
+operation is the <strong>antisymmetrised quaternionic product</strong></p>
+<p>$$
+\tilde P\wedge_{\natural}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)
+=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
+$$</p>
+<p>the antisymmetric part of the quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ for
+the exchange of its two arguments, and half the quaternionic bracket
+$[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$. Its value has
+zero scalar part, so it is a <strong>pure vector</strong>; it is <strong>alternating</strong>, so its diagonal vanishes; and its
+<strong>Jacobi sum</strong> does not vanish. The witness on which the corpus reads the failure is
+$(\tilde P,\tilde Q,\tilde R)=(e_0,e_1,e_2)$, where the cyclic sum is $-e_3$. The cause is exact and is
+not an accident of the witness: the failure is the <strong>associator defect</strong> of the parent quaternionic
+product, and non-associativity alone produces it. The physical consequence is the band's word,
+<strong>Obstruction</strong>: the quaternionic commutator cannot be the Lie algebra of an internal group.</p>
+<p>The word of the band is <strong>Obstruction</strong>, and the article earns it from a negative result. The companion
+band, <code>Focus on the Symmetric Quaternionic Algebra (SQA) — Coupling</code>, is the other half of the same
+parent: the two halves reconstruct it,</p>
+<p>$$
+\tilde P^{\natural}\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge_{\natural}\tilde Q ,
+$$</p>
+<p>and the division of labour between them is the point of the row. The symmetric half is central valued and
+carries the interval; the antisymmetric half is vector valued and carries the order, and it is the half
+that fails.</p>
+<p>The article keeps to the operation and to the failure. The operation, its image and its table are
+<em>Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions</em>; the cyclic sum, its closed form
+and the associator criterion are <em>The Jacobi Failure and the Associator Defect of the Antisymmetric
+Quaternionic Algebra</em>; the associator of the parent product is <em>The Associator and the Ternary Product of
+the Quaternionic Product</em>; the general criterion relating an antisymmetrised algebra to the associator of
+its parent is <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>; the invariant bilinear forms
+and the operators of the bracket are the companion article <em>Boosts, Mixed Terms and the Missing Lie
+Structure</em>; and the group the algebra does reach, and the group it does not, are <em>The Gauge Group Ceiling:
+Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</em>, cited and not redone.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
+$e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$; an
+element is $\tilde Q=Q_0e_0+\mathbf Q$ with vector part $\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$; the complex
+bilinear dot and cross products of vector parts are $(\mathbf P,\mathbf Q)$ and $\mathbf P\times\mathbf Q$,
+and the cross product is defined by $e_j\times e_k=e_l$ cyclically. The natural conjugation is
+${}^{\natural}$, the Hermitian star is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the sectors are
+$\mathbb{M}_\pm$. The ordinary product is $\tilde P\tilde Q$; the quaternionic product is
+$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, with bracket
+$[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$; and
+$\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ is its
+symmetrisation. The symmetrisation symbol $\bullet$ is <strong>row-relative</strong> in this chapter: the plain row
+writes it for $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$, a different operation; the plain row writes
+$\wedge$ for its antisymmetrisation, the cross product $\mathbf P\times\mathbf Q$. The vector subspace is
+$\mathrm{Vect}(\mathbb{B})=\{\tilde Q:\mathrm{Sc}(\tilde Q)=0\}$, the image of the operation; the
+general plain bilinear form is $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$ and the general
+quaternionic bilinear form is $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$.</p>
+<h2 id="the-antisymmetrised-quaternionic-product">The Antisymmetrised Quaternionic Product</h2>
+<p><strong>Proposition (the explicit form).</strong> For all $\tilde P=P_0e_0+\mathbf P$ and $\tilde Q=Q_0e_0+\mathbf Q$,</p>
+<p>$$
+\tilde P\wedge_{\natural}\tilde Q
+=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)
+=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q .
+$$</p>
+<p>The value has zero scalar part and lies in the vector subspace $\mathrm{Vect}(\mathbb{B})$; the operation
+is $\mathbb{C}$-bilinear and alternating, $\tilde Q\wedge_{\natural}\tilde P=-\tilde P\wedge_{\natural}\tilde Q$,
+and its diagonal vanishes. It is half the quaternionic bracket,
+$\tilde P\wedge_{\natural}\tilde Q=\tfrac12[\tilde P,\tilde Q]_{\natural}$.</p>
+<p><em>Proof.</em> The parent value is
+$\tilde P^{\natural}\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$
+(<em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>). Exchanging the arguments reverses
+the two mixed terms and the cross product and leaves the scalar part fixed, which cancels in the
+difference; half the difference is the displayed value. The scalar part zero puts the value in
+$\mathrm{Vect}(\mathbb{B})$; alternation is the antisymmetry of the definition and its diagonal is the
+cancellation at $\tilde P=\tilde Q$.</p>
+<p><strong>Remark (what the antisymmetrisation removes).</strong> The scalar part of the parent product is exactly the
+symmetric half, the operation of the companion band SQA; the antisymmetrisation is what remains after that
+half is removed, and it never produces a central element. The symmetric half also carries the interval,
+since $\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$; the antisymmetric half carries the opposite, the part of
+the product that the interval does not see. The reader must hold the two bands together to read the row.</p>
+<h3 id="the-sixteen-brackets-of-the-basis">The Sixteen Brackets of the Basis</h3>
+<p>On the complex basis $e_0,e_1,e_2,e_3$, with the row index the left argument and the column index the
+right one, the operation reads</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\wedge_{\natural}$</th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$0$</td>
+<td>$e_1$</td>
+<td>$e_2$</td>
+<td>$e_3$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$-e_1$</td>
+<td>$0$</td>
+<td>$-e_3$</td>
+<td>$e_2$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$-e_2$</td>
+<td>$e_3$</td>
+<td>$0$</td>
+<td>$-e_1$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$-e_3$</td>
+<td>$-e_2$</td>
+<td>$e_1$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition (the table).</strong> The table is alternating with zero diagonal; the mixed entries are
+$e_0\wedge_{\natural}e_k=e_k$ and $e_k\wedge_{\natural}e_0=-e_k$; on the pure vectors the operation is the
+negative of the cross product, $e_j\wedge_{\natural}e_k=-e_j\times e_k$; and the element $e_0$ is a left
+identity on the vector subspace and its negative on the right.</p>
+<p><em>Proof.</em> Read the explicit form on the basis; the scalar-vanishing cases give the mixed signs
+$P_0\mathbf Q$ and $-Q_0\mathbf P$, and the pure-vector cases give $-\mathbf P\times\mathbf Q$. The table
+is the one of <em>Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions</em>.</p>
+<p>Twelve of the sixteen entries are nonzero: the operation is not the zero bracket, and on the vector
+subspace it is the plain cross product up to the overall sign.</p>
+<h3 id="the-image-is-the-whole-vector-subspace">The Image Is the Whole Vector Subspace</h3>
+<p><strong>Proposition (the image).</strong> $\mathbb{B}\wedge_{\natural}\mathbb{B}=\mathrm{Vect}(\mathbb{B})$, of complex
+dimension three, and it contains no nonzero central element. The operation has no unit on either side.</p>
+<p><em>Proof.</em> Every value has zero scalar part, so the image lies in $\mathrm{Vect}(\mathbb{B})$; conversely,
+$e_0\wedge_{\natural}\tilde Q=\mathbf Q$, so every pure vector is a value. The centre is the set of
+elements with zero vector part, whose intersection with $\mathrm{Vect}(\mathbb{B})$ is $0$. A unit
+$\tilde E$ would satisfy $\tilde E\wedge_{\natural}\tilde X=\tilde X$ for all $\tilde X$; at
+$\tilde X=e_0$ the value is $-\mathbf E$, a pure vector, which cannot equal the central $e_0$, so no left
+unit exists; the same argument on the right excludes a right unit.</p>
+<p>The image is the <strong>whole</strong> vector subspace (complex dimension three, real dimension six) and not a
+subalgebra of the algebra; this is the object the companion article reads as the home of the rotations
+and the boosts.</p>
+<h2 id="the-jacobi-identity-fails">The Jacobi Identity Fails</h2>
+<p><strong>Theorem (the identity fails).</strong> The operation does not satisfy the Jacobi identity. At the triple
+$(e_0,e_1,e_2)$ the cyclic sum — the left-nested Jacobiator of the corpus, the same nesting as in the
+mathematics counterpart — is</p>
+<p>$$
+J(e_0,e_1,e_2)=(e_0\wedge_{\natural}e_1)\wedge_{\natural}e_2
++(e_1\wedge_{\natural}e_2)\wedge_{\natural}e_0
++(e_2\wedge_{\natural}e_0)\wedge_{\natural}e_1=-e_3 ,
+$$</p>
+<p>which is nonzero, so the Jacobi identity is false.</p>
+<p><em>Proof.</em> From the table, $e_0\wedge_{\natural}e_1=e_1$ and $e_1\wedge_{\natural}e_2=-e_3$, so the first term
+is $e_1\wedge_{\natural}e_2=-e_3$; $e_k\wedge_{\natural}e_0=-e_k$, so the second term is
+$(-e_3)\wedge_{\natural}e_0=+e_3$; and $e_2\wedge_{\natural}e_0=-e_2$ with
+$e_2\wedge_{\natural}e_1=+e_3$, so the third term is $(-e_2)\wedge_{\natural}e_1=-e_3$. The three terms are
+$-e_3,+e_3,-e_3$ and the sum is $-e_3$.</p>
+<h3 id="the-closed-form-and-when-the-sum-vanishes">The Closed Form and When the Sum Vanishes</h3>
+<p><strong>Theorem (the closed form).</strong> For general elements the cyclic sum is</p>
+<p>$$
+J(\tilde P,\tilde Q,\tilde R)
+=-P_0\,(\mathbf Q\times\mathbf R)+Q_0\,(\mathbf P\times\mathbf R)-R_0\,(\mathbf P\times\mathbf Q) ,
+$$</p>
+<p>a $\mathbb{C}$-trilinear alternating pure-vector map, $\mathbb{C}$-linear in the triple of scalar parts
+$(P_0,Q_0,R_0)$ and vanishing identically in them if and only if the three vector parts are pairwise
+parallel.</p>
+<p><em>Proof.</em> This is <em>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic
+Algebra</em>; the identity of the three-cycle is proved there monomial by monomial, the double cross products
+collapsing by $\mathbf U\times(\mathbf A\times\mathbf B)=\mathbf A(\mathbf U,\mathbf B)-\mathbf B(\mathbf U,\mathbf A)$.</p>
+<p>Two consequences fix the incidence of the failure. First, the sum is decided on the basis, because it is
+$\mathbb{C}$-trilinear and alternating; it is nonzero on $18$ of the $64$ ordered triples of basis
+elements, the three unordered triples $\{0,1,2\}$, $\{0,1,3\}$ and $\{0,2,3\}$ with their six orderings
+each, with values the negatives of the three cross products. Second, a witness needs one nonzero scalar
+part and two independent vector parts: on the pure vectors alone the operation is the cross product up to
+sign, and there it does satisfy the identity. The failure enters <strong>through the mixed terms</strong> $P_0\mathbf Q-Q_0\mathbf P$,
+which carry a scalar part into the vector subspace. The three smallest witnesses are
+$(e_0,e_1,e_2),(e_0,e_1,e_3),(e_0,e_2,e_3)$; the corpus's canonical witness is the first, with cyclic sum
+$-e_3$.</p>
+<p><strong>Remark (on the six subspaces).</strong> The identity holds on the centre and on the vector subspace and fails
+on the four four-dimensional subspaces. It holds on the vector subspace because there the operation is
+the cross product, which is a Lie bracket; it fails on every subspace that mixes the scalar and vector
+directions, which is exactly where the mixed terms live.</p>
+<p><strong>Remark (verified).</strong> The explicit form, the table, the witness, the closed form and the count were
+recomputed on the basis and on $100$ random triples in exact complex arithmetic. The explicit form agrees
+with $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ to $8.9\times10^{-16}$; the
+reconstruction $\tilde P^{\natural}\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge_{\natural}\tilde Q$
+is <strong>exactly</strong> satisfied on every sample, the two halves being exact; the witness gives
+$J(e_0,e_1,e_2)=-e_3$ exactly; and the closed form agrees with the cyclic sum to
+$8.9\times10^{-15}$ on the random triples.</p>
+<h2 id="the-cause-is-the-associator-of-the-parent-product">The Cause Is the Associator of the Parent Product</h2>
+<p>The failure is not a numerical accident and not a defect of the class of the operation; it is the
+<strong>associator</strong> of the parent quaternionic product. The general criterion is <em>The Symmetric and
+Antisymmetric Parts of an Algebra Product</em>.</p>
+<p><strong>Theorem (the associator criterion).</strong> For a product over a field of characteristic not $2$, its
+antisymmetrisation satisfies the Jacobi identity if and only if the associator satisfies the cyclic
+identity of the criterion; equivalently the Jacobi sum of the commutator is the signed sum of the six
+associators.</p>
+<p><strong>Corollary (the defect of the quaternionic bracket).</strong> For the block, half the commutator and half the
+associator sum stand in the same relation,</p>
+<p>$$
+J(\tilde P,\tilde Q,\tilde R)
+=\tfrac14\sum_{\sigma}\operatorname{sgn}(\sigma)\,
+\bigl[\tilde P_{\sigma(1)},\tilde P_{\sigma(2)},\tilde P_{\sigma(3)}\bigr] ,
+$$</p>
+<p>with the associator $[\tilde X,\tilde Y,\tilde Z]=(\tilde X^{\natural}\tilde Y)^{\natural}\tilde Z-\tilde X^{\natural}(\tilde Y^{\natural}\tilde Z)$
+taken in the parent product. The quaternionic product is not associative, so its associator does not
+vanish, so the criterion is not met and the bracket is not Lie-admissible.</p>
+<p><strong>Computation (the criterion at the witness).</strong> On the triple $(e_0,e_1,e_2)$ four of the six associators
+of the parent product vanish, and the two that survive are at the orderings $(e_1,e_0,e_2)$ and
+$(e_2,e_0,e_1)$, with values $+2e_3$ and $-2e_3$; their signed sum is $-4e_3$, and the quarter is $-e_3$,
+which is $J(e_0,e_1,e_2)$.</p>
+<p>The reading of the mechanism is exact: <strong>the insertion of the natural conjugation in the first slot of the
+parent product is what costs the Jacobi identity.</strong> The plain antisymmetrisation, the cross product, keeps
+the identity because the plain product is associative; the quaternionic antisymmetrisation loses it because
+the first slot is read through a non-automorphism, and the resulting mixed terms break the criterion. The
+defect is associativity and nothing else; unlike the two sesquilinear failures of the catalogue, whose
+cause is the obstruction of <em>Lie Algebras of Sesqualgebras</em>, no involution intervenes in the class of this
+operation, which is $\mathbb{C}$-bilinear.</p>
+<h2 id="the-contrast-with-the-plain-bracket">The Contrast with the Plain Bracket</h2>
+<p>The antisymmetric part of the <strong>plain</strong> product is the cross product,</p>
+<p>$$
+\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf P\times\mathbf Q ,
+$$</p>
+<p>the operation $\mathrm{APA}$ of the catalogue. The two brackets differ in two ways, and both are what the
+conjugation inserts. First, the cross term is <strong>reversed</strong>: the plain bracket is $+\mathbf P\times\mathbf Q$,
+this one is $-\mathbf P\times\mathbf Q$, and on the pure vectors alone the two agree up to that sign.
+Second, the two <strong>mixed terms</strong> $P_0\mathbf Q-Q_0\mathbf P$ are <strong>added</strong> to this bracket and are absent
+from the plain one; the plain bracket vanishes whenever either argument is central, while this one does
+not, since $Ae_0\wedge_{\natural}\tilde Y=A\,\mathbf Y$. The plain bracket therefore <strong>closes</strong> — it
+satisfies the Jacobi identity, it is a Lie bracket, and it is the one Lie product of the twelve operations
+— and this bracket does not. On the pure vectors this bracket is the negative of the cross product and it
+satisfies the identity there; the failure is entirely the price of the two mixed terms.</p>
+<p><strong>The derived bracket is a Lie bracket.</strong> The derived subalgebra of this operation is the whole vector
+subspace, $\mathbb{B}\wedge_{\natural}\mathbb{B}=\mathrm{Vect}(\mathbb{B})$, and on it the operation is
+$-\mathbf P\times\mathbf Q$, a Lie bracket isomorphic to the cross product on $\mathbb{C}^3$, hence to
+$\mathfrak{sl}(2,\mathbb{C})$. The failure is therefore not a failure of the <strong>derived</strong> bracket; it is the
+failure of the extension of that bracket to the whole algebra. This is the exact bound on the negative
+reading below: the operation is a Lie bracket <strong>on the vector subspace</strong> and not on $\mathbb{B}$. The
+mathematics is <em>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra</em>
+§<em>The Derived Bracket</em>.</p>
+<h2 id="why-this-cannot-be-the-lie-algebra-of-an-internal-group">Why This Cannot Be the Lie Algebra of an Internal Group</h2>
+<p><strong>Proposed reading, labelled as such.</strong> A bracket generates a group through the exponential of its
+representation, and the exponential exists as a group only when the bracket satisfies the Jacobi identity:
+the identity is exactly the condition that the bracket be the commutator of an associative algebra or the
+tangent bracket of a Lie group. The quaternionic bracket fails it, so <strong>it cannot be the Lie algebra of an
+internal group</strong>, and no group and no gauge algebra can be read off it. The two negative readings below
+are the content of the band's word, Obstruction.</p>
+<ul>
+<li><strong>The failure is not removable by a change of sign or of scale.</strong> The defect is the associator of the
+  parent product, an intrinsic nonzero object; neither $-\tilde P\wedge_{\natural}\tilde Q$ nor
+  $\lambda\,\tilde P\wedge_{\natural}\tilde Q$ changes the associator, and the derived bracket, which does
+  close, is the cross product on the vector subspace alone and not a bracket on the whole algebra, so it
+  cannot carry the internal action of the whole algebra.</li>
+<li><strong>The derived bracket is a bound, not a repair.</strong> That the vector subspace is a Lie algebra under this
+  operation says where the failure is not; it does not give a bracket on the algebra, and the mixed terms
+  cannot be discarded without leaving the quaternionic row.</li>
+</ul>
+<p><strong>The bearing on the gauge ceiling.</strong> The group the algebra does reach is read elsewhere, and this is what
+makes the failure informative. <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>
+reads the gauge generators as the <strong>anti-Hermitian</strong> elements under the <strong>associative</strong> one-sided action,
+where the bracket is the plain commutator and closes; <em>The Gauge Group Ceiling: Why the Biquaternion
+Algebra Reaches SU(2) but Not SU(3)</em> owns the resulting group, the algebra's intrinsic $U(2)$, locally
+$SU(2)\times U(1)$, and the ceiling above it. So the internal group is reached by the associative
+product and the one-sided action, and <strong>not</strong> by the quaternionic bracket of this article. The failure of
+this bracket is therefore not an obstacle to the framework's gauge group; it isolates where the gauge
+structure does not come from. A reader who tries to build the internal algebra out of the antisymmetrised
+quaternionic product will fail, and the failure is the associator of the quaternionic product.</p>
+<p><strong>Caution.</strong> An obstruction is a <strong>negative result</strong>: it says which operation cannot be the Lie algebra
+and supplies no group in its place. This article does not construct an internal group, does not repair the
+bracket, and does not claim that the framework lacks gauge structure. It says that the quaternionic
+commutator is not a Lie algebra, and it names the reason. The positive statements about the group belong
+to the two articles cited above. The failure is a negative result of the same kind as the entries of the
+catalogue <em>What the Biquaternion Algebra Cannot Do: a Catalogue of Algebraic Obstructions</em>, and it is
+written in that catalogue's manner: a <strong>Statement</strong> (the antisymmetrised quaternionic product is not
+Lie-admissible), a <strong>Consequence</strong> (no internal group can be read off it), and a <strong>Remedy</strong> (read the
+internal group off the associative one-sided action, not off this bracket).</p>
+<h2 id="the-ledger">The Ledger</h2>
+<p><strong>Proved.</strong> The explicit form
+$\tilde P\wedge_{\natural}\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$, its zero scalar
+part, its pure-vector value, its alternation and its vanishing diagonal; its identity with half the
+quaternionic bracket; its image $\mathrm{Vect}(\mathbb{B})$; the absence of a unit on either side; the
+sixteen brackets of the basis; the failure of the Jacobi identity at the witness $(e_0,e_1,e_2)$ with
+cyclic sum $-e_3$; the closed form
+$J=-P_0(\mathbf Q\times\mathbf R)+Q_0(\mathbf P\times\mathbf R)-R_0(\mathbf P\times\mathbf Q)$ and its
+$18$ nonzero ordered basis triples; the associator criterion and the defect as non-associativity alone;
+the contrast with the plain bracket, which closes; the derived bracket on the vector subspace as a Lie
+bracket isomorphic to $\mathfrak{sl}(2,\mathbb{C})$.</p>
+<p><strong>Readings.</strong> That the quaternionic commutator cannot be the Lie algebra of an internal group; that the
+insertion of the conjugation in the first slot is what costs the Jacobi identity; that the failure enters
+through the mixed terms and is invisible on the pure vectors; that the internal group is reached by the
+associative one-sided action and not by this bracket.</p>
+<p><strong>Not claimed.</strong> That a physical operation is a biquaternion, or that the bracket is a physical
+commutator. That the failure can be repaired, or that a group was expected from this operation. That the
+framework lacks a gauge group; the group is read elsewhere. That the obstruction overthrows any physical
+result.</p>
+<h2 id="summary">Summary</h2>
+<p>The antisymmetrised quaternionic product
+$\tilde P\wedge_{\natural}\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$
+is the antisymmetric part of the quaternionic product for the exchange of its two arguments, pure vector,
+alternating, and half the quaternionic bracket; its image is the whole vector subspace
+$\mathrm{Vect}(\mathbb{B})$, it has no unit, and on the basis the mixed entries are $e_0\wedge_{\natural}e_k=e_k$,
+$e_k\wedge_{\natural}e_0=-e_k$ and the pure-vector entries are the negatives of the cross products. It
+<strong>fails the Jacobi identity</strong>, with the witness $(e_0,e_1,e_2)$ whose cyclic sum is $-e_3$; the sum is the
+closed form $J=-P_0(\mathbf Q\times\mathbf R)+Q_0(\mathbf P\times\mathbf R)-R_0(\mathbf P\times\mathbf Q)$,
+nonzero on $18$ of the $64$ ordered basis triples and decided by the mixed scalar-vector terms. The cause
+is the <strong>associator defect</strong> of the parent quaternionic product: the associator criterion reads the failure
+off the non-associativity of the parent, and the two surviving associators at the witness, $\pm2e_3$,
+give the quarter $-e_3$. The <strong>plain</strong> bracket, the cross product of the plain row, is the contrast and
+<strong>closes</strong>; it is the one Lie product of the twelve. On the derived subalgebra $\mathrm{Vect}(\mathbb{B})$
+this operation is the negative of the cross product and is a Lie bracket isomorphic to
+$\mathfrak{sl}(2,\mathbb{C})$, so the failure is the failure of the extension of that bracket to the whole
+algebra. The reading is the band's word <strong>Obstruction</strong>: the quaternionic commutator cannot be the Lie
+algebra of an internal group, and no group can be read off it. The internal group the algebra does reach
+is the algebra's intrinsic $U(2)$, locally $SU(2)\times U(1)$, read off the <strong>associative</strong> one-sided
+action by <em>Observables, Gauge Generators and
+the Chirality of the Internal Action</em> and bounded by <em>The Gauge Group Ceiling: Why the Biquaternion
+Algebra Reaches SU(2) but Not SU(3)</em>; the failure of this bracket therefore isolates where the gauge
+structure does not come from, and the caution stands that a negative result constrains a reading without
+supplying one. The operation, its image and its table are <em>Introduction to the Antisymmetric Quaternionic
+Algebra of Biquaternions</em>; the cyclic sum and the associator criterion are <em>The Jacobi Failure and the
+Associator Defect of the Antisymmetric Quaternionic Algebra</em>; the invariant forms and the operators of the
+bracket are the companion <em>Boosts, Mixed Terms and the Missing Lie Structure</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\wedge_{\natural}\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$</td>
+<td>the antisymmetrised quaternionic product (AQA, this band)</td>
+</tr>
+<tr>
+<td>$[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$</td>
+<td>the quaternionic bracket; twice the operation</td>
+</tr>
+<tr>
+<td>$P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$</td>
+<td>the explicit form; zero scalar part, pure vector</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>the vector subspace, the image of the operation</td>
+</tr>
+<tr>
+<td>$J(\tilde P,\tilde Q,\tilde R)=(\tilde P\wedge_{\natural}\tilde Q)\wedge_{\natural}\tilde R+(\tilde Q\wedge_{\natural}\tilde R)\wedge_{\natural}\tilde P+(\tilde R\wedge_{\natural}\tilde P)\wedge_{\natural}\tilde Q$</td>
+<td>the Jacobi cyclic sum, left-nested; fails</td>
+</tr>
+<tr>
+<td>$(e_0,e_1,e_2)$</td>
+<td>the canonical witness; $J=-e_3$</td>
+</tr>
+<tr>
+<td>$[\tilde X,\tilde Y,\tilde Z]$</td>
+<td>the associator of the parent product; the defect</td>
+</tr>
+<tr>
+<td>$\mathbf P\times\mathbf Q$</td>
+<td>the cross product; the plain bracket that closes</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(2,\mathbb{C})$</td>
+<td>the derived bracket on the vector subspace</td>
+</tr>
+<tr>
+<td>$\tilde P\bullet\tilde Q$</td>
+<td>the symmetric half (SQA); the two halves reconstruct the parent</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Mathematical Study of Biquaternions</em>, the physics entry point to the mathematical study under
+  which this block sits.</li>
+<li>Mathematics article <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>
+  (<code>articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the twelve
+  operations, the method of the decomposition and the laws of each.</li>
+<li>Mathematics article <em>Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions</em>
+  (<code>articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md</code>), for the
+  operation, its class, its image and the sixteen brackets.</li>
+<li>Mathematics article <em>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic
+  Algebra</em>
+  (<code>articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.md</code>),
+  for the cyclic sum, its closed form, the associator criterion and the derived bracket.</li>
+<li>Mathematics article <em>The Associator and the Ternary Product of the Quaternionic Product</em>
+  (<code>articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md</code>), for the
+  associator of the parent product.</li>
+<li>Mathematics article <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>
+  (<code>articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md</code>), for the general
+  associator criterion.</li>
+<li>Companion article <em>The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations</em> and
+  <em>Why a Central Product Cannot Compose: the Radical and the Isotropic Elements</em>, for the symmetric half
+  of the same parent.</li>
+<li>Companion article <em>Boosts, Mixed Terms and the Missing Lie Structure</em>, for the mixed term, the invariant
+  forms and the operators of this bracket.</li>
+<li>Companion article <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>, for the
+  compact and non-compact directions and the one-sided action that does carry the group.</li>
+<li>Companion article <em>The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</em>,
+  for the group the algebra reaches.</li>
+<li>Companion article <em>The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity</em>, for the plain
+  bracket $\mathrm{APA}$ that does satisfy the identity and is the one Lie product of the twelve.</li>
+<li>Companion article <em>A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure</em>, for
+  one of the two sesquilinear Jacobi failures contrasted here, whose witness needs a complex element.</li>
+<li>Companion article <em>What the Biquaternion Algebra Cannot Do: a Catalogue of Algebraic Obstructions</em>, for
+  the catalogue of negative results this failure belongs to.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

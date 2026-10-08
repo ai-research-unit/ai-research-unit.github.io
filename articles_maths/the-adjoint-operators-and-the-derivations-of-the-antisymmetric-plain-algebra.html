@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra"><strong>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The bracket of the antisymmetric plain algebra, $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$, carries two layers of operators: the <strong>adjoint</strong> of an element, which is its operator on the algebra, and the <strong>derivations</strong> of the bracket, which are the linear maps that obey the Leibniz rule. This article reads both, together with the groups and the Lie algebras they generate.</p>
+<p>The first layer is the adjoint map. On the commutator $\tilde P\tilde Q-\tilde Q\tilde P$ of the algebra the adjoint is</p>
+<p>$$
+\operatorname{ad}_{\tilde P}=[\tilde P,\ \cdot\ ]=\tilde P\,\cdot\,-\,\cdot\,\tilde P,
+$$</p>
+<p>it vanishes on the centre and is twice the cross-product operator $\mathbf{P}\times$ on the vector subspace, and its trace is zero; the version halved to the block's bracket is $\operatorname{ad}^{\wedge}_{\tilde P}=\tilde P\wedge\cdot=\mathbf{P}\times$, and the two differ by the constant factor $2$ that separates the halved bracket from the commutator. The second layer is the Lie algebra of the derivations, which contains the adjoints as its inner part and one outer derivation, the dilation of the centre. The article then reads the automorphisms of the bracket as linear maps, with the conjugation by a unit and the central scalar as the two generators, the adjoint representation and its kernel, and the structure group of the bracket with its Lie algebra.</p>
+<p>The bracket and its structure are used from <em>The Lie Algebra of the Antisymmetric Plain Algebra</em>, and the two-dimensional model in which the conjugations are read is <em>The Antisymmetric Plain Algebra in the Matrix Representations</em>; the invariant form, through which the adjoints are skew and the Casimir is built, is <em>The Killing Form of the Antisymmetric Plain Algebra</em>; the reading of the bracket on the six subspaces is <em>The Six Subspaces under the Antisymmetric Plain Algebra of Biquaternions</em>. The general theory of the derivations of a Lie algebra, of the inner and outer parts and of the derivation algebra as the Lie algebra of the automorphism group is <em>Derivations of a Lie Algebra</em>; the associativity that makes $\operatorname{ad}_{\tilde P}$ a derivation is <em>Associative Algebras</em>; and the skew-Hermitian case of the same operators, with the group of linear maps preserving its form, is <em>The Unitary Lie Algebra</em>. No group of matrices with a topology and no exponential map is read here: the automorphism group is read as a group of linear maps and its Lie algebra as the tangent derivations.</p>
+<h2 id="the-adjoint-map">The Adjoint Map</h2>
+<h3 id="definition-and-the-two-conventions">Definition and the Two Conventions</h3>
+<p><strong>Definition.</strong> For $\tilde P\in\mathbb{B}$ the <strong>adjoint</strong> of $\tilde P$ is the $\mathbb{C}$-linear endomorphism of $\mathbb{B}$</p>
+<p>$$
+\operatorname{ad}_{\tilde P}(\tilde X)=[\tilde P,\tilde X]=\tilde P\tilde X-\tilde X\tilde P,
+$$</p>
+<p>the <strong>halved adjoint</strong> is $\operatorname{ad}^{\wedge}_{\tilde P}(\tilde X)=\tilde P\wedge\tilde X$, and the two are related by</p>
+<p>$$
+\operatorname{ad}_{\tilde P}=2\,\operatorname{ad}^{\wedge}_{\tilde P},\qquad \operatorname{ad}^{\wedge}_{\tilde P}=\tfrac12\operatorname{ad}_{\tilde P}.
+$$</p>
+<p><strong>Theorem (the identity with the cross product).</strong> For all $\tilde P,\tilde X$,</p>
+<p>$$
+\operatorname{ad}^{\wedge}_{\tilde P}(\tilde X)=\mathbf{P}\times\mathbf{X},\qquad
+\operatorname{ad}_{\tilde P}(\tilde X)=2\,(\mathbf{P}\times\mathbf{X}),
+$$</p>
+<p>so the halved adjoint coincides with the operator $\mathbf{P}\times$ on the vector subspace and vanishes on the centre, and the adjoint is twice that operator.</p>
+<p><em>Proof.</em> The commutator is twice the half-difference, $[\tilde P,\tilde X]=2(\tilde P\wedge\tilde X)$, and the halved bracket is the cross product of the vector parts; both statements are <em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em>. $\square$</p>
+<p><strong>Remark (which convention is which).</strong> The menu of the block writes $\operatorname{ad}_{\tilde P}=[\tilde P,\ \cdot\ ]$ for the adjoint and records that it is <strong>twice</strong> the operator $\mathbf{P}\times$ on the vector subspace; the article writes the same, and it records the halved adjoint $\operatorname{ad}^{\wedge}_{\tilde P}=\mathbf{P}\times$ beside it because the block's bracket is the halved one and the Killing form of <em>The Killing Form of the Antisymmetric Plain Algebra</em> is taken with the halved adjoint, $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}^{\wedge}_{\tilde P}\operatorname{ad}^{\wedge}_{\tilde Q})$. With the adjoint as fixed here the same form reads, as the complex trace of the endomorphisms of $\mathbb{B}$, $\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})=4\kappa(\tilde P,\tilde Q)$; the factor is the factor $2$ of the halving, and the two readings are the same object. <strong>The convention is fixed once: the adjoint of the article is $[\tilde P,\cdot]$, twice $\mathbf{P}\times$, and the form of the block is taken with the half of it.</strong></p>
+<h3 id="the-vanishing-on-the-centre">The Vanishing on the Centre</h3>
+<p><strong>Theorem.</strong> For $\tilde P\in\mathbb{B}$ the following are equivalent: $\operatorname{ad}_{\tilde P}=0$; $\operatorname{ad}^{\wedge}_{\tilde P}=0$; $\tilde P$ is central; and $\tilde P\in\mathbb{C}_{\mathbb{B}}$. Hence</p>
+<p>$$
+\ker\operatorname{ad}=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0,
+$$</p>
+<p>the centre of the algebra and of the bracket; and every adjoint annihilates the centre, $\operatorname{ad}_{\tilde P}(\tilde X)=0$ for $\tilde X\in\mathbb{C}_{\mathbb{B}}$.</p>
+<p><em>Proof.</em> $\operatorname{ad}_{\tilde P}=0$ exactly when $[\tilde P,\tilde X]=0$ for all $\tilde X$, which by the cross-product formula is $\mathbf{P}\times\mathbf{X}=0$ for all $\mathbf{X}$, forcing $\mathbf{P}=0$, that is $\tilde P\in\mathbb{C}e_0$. The last statement is that a central element commutes with everything, so the commutator with it is zero. This is <em>The Lie Algebra of the Antisymmetric Plain Algebra</em>, §<em>The Centre and the Quotient</em>. Verified on the basis and on general elements. $\square$</p>
+<p><strong>Remark.</strong> <strong>The kernel of the adjoint representation is the centre, and the centre is also annihilated by every adjoint</strong>: the first is the kernel of the map $\tilde P\mapsto\operatorname{ad}_{\tilde P}$, the second is the common kernel of the operators on the algebra, and the two statements together say that the centre is the whole carrier of the invisibility of the bracket.</p>
+<h3 id="the-matrix-in-the-real-basis-and-the-trace">The Matrix in the Real Basis and the Trace</h3>
+<p><strong>Theorem.</strong> In the real basis $(e_0,ie_0,e_1,e_2,e_3,ie_1,ie_2,ie_3)$ of $\mathbb{B}$, with the centre first and the vector subspace after, the adjoint of $e_1$ is the block-diagonal matrix</p>
+<p>$$
+\operatorname{ad}_{e_1}=
+\begin{pmatrix}
+0 & & & & & & & \\
+& 0 & & & & & & \\
+& & 0 & 0 & 0 & 0 & 0 & 0\\
+& & 0 & 0 & -2 & 0 & 0 & 0\\
+& & 0 & 2 & 0 & 0 & 0 & 0\\
+& & 0 & 0 & 0 & 0 & 0 & 0\\
+& & 0 & 0 & 0 & 0 & 0 & -2\\
+& & 0 & 0 & 0 & 0 & 2 & 0
+\end{pmatrix},
+$$</p>
+<p>the two zero entries on the centre, and the $6\times6$ part the realification of the operator $2C_{e_1}$ on the complex vector subspace. Its trace is zero and its rank is $4$; the same statements hold for the adjoint of every nonzero vector element, and the adjoint of every central element is zero.</p>
+<p><em>Proof.</em> The adjoint is twice the cross product by the vector part, and the cross product by $e_1$ sends $e_2\mapsto e_3$, $e_3\mapsto-e_2$ and fixes $e_1$, with the same action on $ie_1,ie_2,ie_3$ because it is $\mathbb{C}$-linear; doubling and reading the images as columns gives the displayed block. The trace vanishes because the diagonal is zero; the rank is $4$ because the kernel is the complex plane spanned by $e_0$ and $e_1$ (and its real coordinates $ie_0$, $ie_1$), of real dimension four. Computed exactly on the real basis. $\square$</p>
+<p><strong>Remark (the general matrix and the characteristic polynomial).</strong> For a general vector element $\tilde P$ the $6\times6$ part is the realification of the complex operator $2C_{\mathbf{P}}$, whose characteristic polynomial is $\lambda(\lambda^2+4\,\mathbf{P}\cdot\mathbf{P})$; the realification of a complex operator doubles each complex eigenvalue by its conjugate, so the characteristic polynomial of the $6\times6$ block is $\lambda^2(\lambda^2+4\,\mathbf{P}\cdot\mathbf{P})(\lambda^2+4\,\overline{\mathbf{P}\cdot\mathbf{P}})$, which on the real unit directions is $\lambda^2(\lambda^2+4)^2$, with $0$ of multiplicity two and $\pm2i$ of multiplicity two each, and together with the two zero eigenvalues on the centre the adjoint on the real space has characteristic polynomial $\lambda^2$ times that. The trace is zero. The cross-product operator $C_{\mathbf{P}}$ itself has characteristic polynomial $\lambda(\lambda^2+\mathbf{P}\cdot\mathbf{P})$. <strong>The trace of every adjoint vanishes, which is the first invariant of the block and the reason the Killing form is read on the adjoints and not on the operators of the multiplication.</strong> The trace form of the multiplication operators themselves, which does not vanish, is <em>Two-Sided Operators on the General Plain Algebra of Biquaternions</em>.</p>
+<h2 id="the-derivations-of-the-block">The Derivations of the Block</h2>
+<h3 id="the-inner-derivations">The Inner Derivations</h3>
+<p><strong>Definition.</strong> A <strong>derivation</strong> of the bracket is a $\mathbb{C}$-linear map $D:\mathbb{B}\to\mathbb{B}$ with</p>
+<p>$$
+D(\tilde P\wedge\tilde Q)=D\tilde P\wedge\tilde Q+\tilde P\wedge D\tilde Q
+$$</p>
+<p>for all $\tilde P,\tilde Q$; the derivations form a Lie algebra $\operatorname{Der}(\mathfrak{g})$ under the commutator of endomorphisms. A derivation is <strong>inner</strong> when it is an adjoint, $D=\operatorname{ad}_{\tilde P}$ for some $\tilde P$.</p>
+<p><strong>Theorem.</strong> Every adjoint is a derivation, because the bracket is the half-commutator of an associative product and the associativity gives the Leibniz rule:</p>
+<p>$$
+\operatorname{ad}_{\tilde P}(\tilde Q\wedge\tilde R)
+=\operatorname{ad}_{\tilde P}\tilde Q\wedge\tilde R+\tilde Q\wedge\operatorname{ad}_{\tilde P}\tilde R.
+$$</p>
+<p>The inner derivations are the adjoints of the vector subspace; the adjoints of the centre vanish, so</p>
+<p>$$
+\operatorname{Inn}(\mathfrak{g})=\{\operatorname{ad}_{\tilde P}:\tilde P\in\mathbb{B}\}=\{\operatorname{ad}_{\mathbf{P}}:\mathbf{P}\in\mathrm{Vect}(\mathbb{B})\}\cong\mathfrak{sl}(2,\mathbb{C}),
+$$</p>
+<p>of complex dimension three and real dimension six.</p>
+<p><em>Proof.</em> The Leibniz rule for the commutator is the associativity of the product, $\operatorname{ad}_{\tilde P}(\tilde Q\tilde R)=(\operatorname{ad}_{\tilde P}\tilde Q)\tilde R+\tilde Q(\operatorname{ad}_{\tilde P}\tilde R)$, and the halving carries it to the bracket; this is <em>Associative Algebras</em> and <em>Derivations of a Lie Algebra</em>. The inner derivations are the image of the adjoint representation, which by the previous section has kernel the centre, so its image is isomorphic to $\mathfrak{g}/\mathbb{C}_{\mathbb{B}}\cong\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$; the isomorphism is $\operatorname{ad}_{[\,\tilde P,\tilde Q\,]}=[\operatorname{ad}_{\tilde P},\operatorname{ad}_{\tilde Q}]$. $\square$</p>
+<p><strong>Remark.</strong> <strong>The inner derivations are the adjoints, and there are as many of them as the derived algebra has dimensions: three complex and six real.</strong> The identification of the inner derivations with $\mathfrak{sl}(2,\mathbb{C})$ is the same identification as the one of the derived algebra, read through the adjoint representation; the two are the same space, one acting on the algebra and one acted upon.</p>
+<h3 id="the-outer-derivations">The Outer Derivations</h3>
+<p><strong>Theorem.</strong> The outer derivations form a complex line, spanned by the derivation</p>
+<p>$$
+D_0:\quad D_0(e_0)=e_0,\qquad D_0(ie_0)=ie_0,\qquad D_0(\tilde X)=0\ \text{ on }\ \mathrm{Vect}(\mathbb{B}),
+$$</p>
+<p>which scales the centre and annihilates the derived algebra; it is the derivation induced by the dual number $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ acting on the centre in the description below. Hence</p>
+<p>$$
+\operatorname{Der}(\mathfrak{g})=\operatorname{Inn}(\mathfrak{g})\oplus\mathbb{C}D_0\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C},
+$$</p>
+<p>of complex dimension four and real dimension eight.</p>
+<p><em>Proof.</em> For the bracket of two vector elements the image lies in the vector subspace, on which $D_0$ vanishes, and both terms of the Leibniz rule vanish; for the bracket of a central element with anything the bracket is zero on both sides; so $D_0$ is a derivation. For the converse, a derivation preserves the centre, because the centre is the kernel of the adjoint representation and a derivation commutes with the adjoints: $D\operatorname{ad}_{\tilde P}=\operatorname{ad}_{D\tilde P}+\operatorname{ad}_{\tilde P}D$, so an element annihilated by every adjoint is carried to an element annihilated by every adjoint. A derivation also preserves the derived algebra, by the Leibniz rule and the stability of the image. Its restriction to the simple derived algebra is an inner derivation of that algebra, $D|_{\mathrm{Vect}}=\operatorname{ad}_{\mathbf{P}}$ for some vector $\mathbf{P}$, by <em>Derivations of a Lie Algebra</em>, since $\mathfrak{sl}(2,\mathbb{C})$ has no outer derivation; the difference $D-\operatorname{ad}_{\mathbf{P}}$ is then a derivation vanishing on the derived algebra and preserving the one-dimensional centre, so it acts on the centre by a scalar $\nu$ and is $\nu D_0$; hence every derivation is $\operatorname{ad}_{\mathbf{P}}+\nu D_0$. Computed exactly on the basis. $\square$</p>
+<p><strong>Remark (the derivation algebra is the tangent algebra of the automorphisms).</strong> The dual numbers give the reason the outer derivation has dimension one: over $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ the automorphism $\mathrm{id}+\varepsilon D$ of the bracket is a derivation exactly when $D$ obeys the Leibniz rule, and the derivations of the simple derived algebra are its inner ones, of dimension three, together with the derivation that scales the one-dimensional centre. <strong>The derivation algebra is $\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$, of complex dimension four.</strong> The inner derivations are the adjoints and the outer line is the centre scaling; the general theory is <em>Derivations of a Lie Algebra</em>, and the same algebra is the Lie algebra of the group of the next section.</p>
+<h2 id="the-automorphisms-of-the-bracket">The Automorphisms of the Bracket</h2>
+<h3 id="the-group">The Group</h3>
+<p><strong>Definition.</strong> An <strong>automorphism of the bracket</strong> is an invertible $\mathbb{C}$-linear map $T:\mathbb{B}\to\mathbb{B}$ with</p>
+<p>$$
+T(\tilde P\wedge\tilde Q)=T\tilde P\wedge T\tilde Q
+$$</p>
+<p>for all $\tilde P,\tilde Q$; the automorphisms form the group $\operatorname{Aut}(\mathfrak{g})$.</p>
+<p><strong>Theorem.</strong> Every automorphism preserves the centre and the derived algebra, and it is the direct sum of an invertible scalar on the centre and an automorphism of the derived algebra:</p>
+<p>$$
+T(\tilde P)=\alpha\,P_0e_0\oplus A(\mathbf{P}),\qquad \alpha\in\mathbb{C}^{\times},\qquad A\in\operatorname{Aut}\bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr),
+$$</p>
+<p>so that</p>
+<p>$$
+\operatorname{Aut}(\mathfrak{g})\cong\mathbb{C}^{\times}\times\operatorname{Aut}\bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr)\cong\mathbb{C}^{\times}\times PGL(2,\mathbb{C}),
+$$</p>
+<p>of complex dimension four.</p>
+<p><em>Proof.</em> The centre is the kernel of the adjoint representation, an intrinsic subspace, so an automorphism preserves it; the derived algebra is intrinsically $[\mathfrak{g},\mathfrak{g}]$, so it is preserved too, and it is complementary to the centre. On the centre the automorphism is an invertible scalar; on the derived algebra it is a bracket automorphism, and the automorphism group of $\mathfrak{sl}(2,\mathbb{C})$ is the adjoint group $PGL(2,\mathbb{C})=\operatorname{PSL}(2,\mathbb{C})$, of complex dimension three, acting by conjugation in the two-dimensional model, <em>The Antisymmetric Plain Algebra in the Matrix Representations</em>. Any pair $(\alpha,A)$ is an automorphism because the bracket never mixes the centre with the derived algebra. Computed on the basis. $\square$</p>
+<h3 id="the-two-examples">The Two Examples</h3>
+<p><strong>Theorem (the conjugation by a unit).</strong> Let $\tilde U$ be invertible in $\mathbb{B}$ and put $T_{\tilde U}(\tilde P)=\tilde U\tilde P\tilde U^{-1}$. Then $T_{\tilde U}$ is an automorphism of the bracket, it is the identity on the centre, and on the derived algebra it is the conjugation by the image of $\tilde U$ in $PGL(2,\mathbb{C})$. The assignment descends to the group of units modulo the centre.</p>
+<p><em>Proof.</em> The map is invertible and multiplicative for the plain product, so it carries the commutator to the commutator and the halved bracket to the halved bracket; on the centre it is the identity because the centre commutes with $\tilde U$; the kernel of the assignment is the group of units whose conjugation is trivial, which is the centre. This is <em>The Lie Algebra of the Antisymmetric Plain Algebra</em>'s identification of the derived algebra and the model of <em>The Antisymmetric Plain Algebra in the Matrix Representations</em>. Computed on general units. $\square$</p>
+<p><strong>Theorem (the central scalar).</strong> For $\lambda\in\mathbb{C}^{\times}$ let $T_\lambda$ multiply the centre by $\lambda$ and fix the derived algebra. Then $T_\lambda$ is an automorphism of the bracket; $T_\lambda$ is the identity exactly for $\lambda=1$.</p>
+<p><em>Proof.</em> The bracket of two vector elements is a vector element and is fixed; a bracket with a central element vanishes on both sides; so the map preserves the bracket. $\square$</p>
+<p><strong>Remark.</strong> The two families generate the automorphism group: <strong>every automorphism of the bracket is the product of a conjugation by a unit and a central scalar</strong>, the conjugation moving the derived algebra and the central scalar moving the centre, and the two families commute because the conjugation is the identity on the centre. The Lie algebra of the automorphism group is $\operatorname{Der}(\mathfrak{g})$, as the previous section records by the dual numbers, and it is of complex dimension four.</p>
+<h2 id="the-adjoint-representation">The Adjoint Representation</h2>
+<p><strong>Theorem.</strong> The map $\operatorname{ad}:\mathfrak{g}\to\operatorname{End}(\mathbb{B})$, $\tilde P\mapsto\operatorname{ad}_{\tilde P}$, is a representation of the bracket,</p>
+<p>$$
+\operatorname{ad}_{[\tilde P,\tilde Q]}=[\operatorname{ad}_{\tilde P},\operatorname{ad}_{\tilde Q}],
+\qquad\text{equivalently}\qquad
+\operatorname{ad}^{\wedge}_{\tilde P\wedge\tilde Q}=[\operatorname{ad}^{\wedge}_{\tilde P},\operatorname{ad}^{\wedge}_{\tilde Q}],
+$$</p>
+<p>its kernel is the centre $\mathbb{C}_{\mathbb{B}}$, and its image is the Lie algebra of the inner derivations, identified with the derived algebra:</p>
+<p>$$
+\operatorname{ad}(\mathfrak{g})\cong\mathfrak{g}/\mathbb{C}_{\mathbb{B}}\cong\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C}),
+$$</p>
+<p>of complex dimension three and real dimension six.</p>
+<p><em>Proof.</em> The identity $\operatorname{ad}_{[\,\tilde P,\tilde Q\,]}=[\operatorname{ad}_{\tilde P},\operatorname{ad}_{\tilde Q}]$ is the Jacobi identity, and it holds for the halved bracket with the factor carried along; the kernel is the centre by the vanishing theorem, and the image is the quotient by the kernel, which is the derived algebra by <em>The Lie Algebra of the Antisymmetric Plain Algebra</em>. Verified on the basis. $\square$</p>
+<p><strong>Remark.</strong> <strong>The adjoint representation is faithful exactly on the derived algebra and kills exactly the centre</strong>, and its image is the inner derivation algebra. The representation is the matrix model of the adjoints; its matrices in the real basis are the ones computed above, and their vanishing trace is the trace form of the representation.</p>
+<h2 id="the-structure-group">The Structure Group</h2>
+<p><strong>Definition.</strong> A <strong>similarity of the bracket</strong> is an invertible $\mathbb{C}$-linear map $T$ with</p>
+<p>$$
+T(\tilde P\wedge\tilde Q)=\lambda\,(T\tilde P\wedge T\tilde Q)
+$$</p>
+<p>for a nonzero scalar $\lambda$ depending on $T$; the similarities form the <strong>structure group</strong> $\operatorname{Str}(\mathfrak{g})$.</p>
+<p><strong>Theorem.</strong> In the decomposition of an automorphism into a scalar on the centre and a linear map on the derived algebra, the similarities are the maps</p>
+<p>$$
+T=\bigl(\alpha\ \text{on the centre},\ \mu A\ \text{on the derived algebra}\bigr),\qquad \alpha,\mu\in\mathbb{C}^{\times},\ A\in PGL(2,\mathbb{C}),
+$$</p>
+<p>and the multiplier is $\lambda=1/\mu$. Hence</p>
+<p>$$
+\operatorname{Str}(\mathfrak{g})\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}\times PGL(2,\mathbb{C}),
+$$</p>
+<p>of complex dimension five; it contains the automorphism group as the subgroup $\alpha$ arbitrary, $\mu=1$.</p>
+<p><em>Proof.</em> For two vector elements, $T(\tilde P\wedge\tilde Q)=\mu A(\tilde P\wedge\tilde Q)$ and $T\tilde P\wedge T\tilde Q=\mu^2\,(A\tilde P\wedge A\tilde Q)=\mu^2A(\tilde P\wedge\tilde Q)$; the multiplier is therefore $1/\mu$, independent of the elements. For a bracket with a central element both sides vanish; for two central elements both sides vanish. Conversely, a similarity preserves the centre and the derived algebra by the same intrinsic argument as an automorphism, so it has the displayed form. Computed exactly on general elements, where the identity $T(\tilde P\wedge\tilde Q)=\mu^{-1}(T\tilde P\wedge T\tilde Q)$ was verified for $A$ a conjugation. $\square$</p>
+<p><strong>Remark (the Lie algebra of the structure group).</strong> The structure group has the same dimension as its Lie algebra of tangent maps, and that algebra is</p>
+<p>$$
+\operatorname{Der}(\mathfrak{g})\oplus\mathbb{C}\,D_{\mathrm{dil}},
+$$</p>
+<p>where $D_{\mathrm{dil}}$ is the <strong>dilation</strong> of the derived algebra (the identity on $\mathrm{Vect}(\mathbb{B})$ and zero on the centre), a map that is not a derivation but obeys the infinitesimal similarity rule. <strong>The structure group of the bracket is the automorphism group times the dilations, of complex dimension four plus one; the extra dimension is the one that scales the bracket itself.</strong> The central scalars form the subgroup that scales only the centre, and they are already automorphisms, which is why the structure group contributes two scalar factors and the automorphism group only one.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>A central adjoint.</strong> $\operatorname{ad}_{e_0+ie_0}=0$, because both coordinates are central: the adjoint representation kills the centre.</p>
+<p><strong>A vector adjoint.</strong> $\operatorname{ad}_{e_1}(e_2)=2e_3$ and $\operatorname{ad}_{e_1}(e_3)=-2e_2$: the adjoint of $e_1$ is twice the cross product by $e_1$, and it fixes $e_1$ and the centre.</p>
+<p><strong>The trace.</strong> $\operatorname{Tr}(\operatorname{ad}_{e_1})=0$ and $\operatorname{Tr}(\operatorname{ad}_{ie_1})=0$: every adjoint has vanishing trace, the diagonal of the displayed matrix being zero.</p>
+<p><strong>A derivation.</strong> $\operatorname{ad}_{e_3}$ sends $e_1\mapsto 2e_2$ and $e_2\mapsto-2e_1$, and it obeys the Leibniz rule on the pair $e_1,e_2$: $\operatorname{ad}_{e_3}(e_1\wedge e_2)=\operatorname{ad}_{e_3}e_3=0$, and $\operatorname{ad}_{e_3}e_1\wedge e_2+e_1\wedge\operatorname{ad}_{e_3}e_2=2e_2\wedge e_2+e_1\wedge(-2e_1)=0$.</p>
+<p><strong>The outer derivation.</strong> $D_0(e_0)=e_0$ and $D_0(e_1)=0$: the centre scaling, which is not inner because an inner derivation vanishes on the centre.</p>
+<p><strong>The conjugation by a unit.</strong> For $\tilde U=e_1$, a unit with $e_1^{-1}=-e_1$, the conjugation fixes $e_1$ and reverses the sign on the plane orthogonal to it: $e_1e_2e_1^{-1}=(e_1e_2)(-e_1)=-e_3e_1=-e_2$, and $e_1e_3e_1^{-1}=-e_3$. It is a nontrivial automorphism of the derived algebra and the identity on the centre.</p>
+<p><strong>The central scalar.</strong> $T_\lambda(e_0)=\lambda e_0$, $T_\lambda(e_1)=e_1$ is an automorphism for every $\lambda\neq0$; the adjoint representation is unchanged by it, since the centre is in its kernel.</p>
+<p><strong>A similarity.</strong> $T$ that fixes the centre and multiplies the derived algebra by $\mu$ satisfies $T(\tilde P\wedge\tilde Q)=\mu^{-1}(T\tilde P\wedge T\tilde Q)$: the multiplier is the reciprocal of the dilation, as the theorem states.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint of the block is $\operatorname{ad}_{\tilde P}=[\tilde P,\cdot]$, equal to twice the operator $\mathbf{P}\times$ on the vector subspace, vanishing on the centre, of matrix block diagonal in the real basis with zeroes on the centre and the realification of $2C_{\mathbf{P}}$ on the derived algebra, and of trace zero; the halved adjoint $\operatorname{ad}^{\wedge}_{\tilde P}=\mathbf{P}\times$ is the version of the block's own bracket, and the two differ by the factor $2$ of the halving. The adjoints are derivations, and the inner derivations are exactly the adjoints of the derived algebra, identified with $\mathfrak{sl}(2,\mathbb{C})$; the outer derivations form one complex line, spanned by the scaling of the centre, so $\operatorname{Der}(\mathfrak{g})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$ has complex dimension four. The automorphisms of the bracket are the pairs of an invertible scalar on the centre and an automorphism of the derived algebra, $\operatorname{Aut}(\mathfrak{g})\cong\mathbb{C}^{\times}\times PGL(2,\mathbb{C})$, generated by the conjugation by a unit and the central scalar, with Lie algebra $\operatorname{Der}(\mathfrak{g})$. The adjoint representation has kernel the centre and image the derived algebra. The structure group of the bracket, of maps with $T(\tilde P\wedge\tilde Q)=\lambda(T\tilde P\wedge T\tilde Q)$, is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}\times PGL(2,\mathbb{C})$, of complex dimension five, with Lie algebra the derivations together with the dilation of the derived algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{ad}_{\tilde P}(\tilde X)=[\tilde P,\tilde X]=\tilde P\tilde X-\tilde X\tilde P$</td>
+<td>the adjoint of the block, twice $\mathbf{P}\times$ on the vector subspace</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}^{\wedge}_{\tilde P}(\tilde X)=\tilde P\wedge\tilde X=\mathbf{P}\times\mathbf{X}$</td>
+<td>the halved adjoint, the adjoint of the block's own bracket</td>
+</tr>
+<tr>
+<td>$\ker\operatorname{ad}=\mathbb{C}_{\mathbb{B}}$</td>
+<td>the kernel of the adjoint representation, the centre</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}\operatorname{ad}_{\tilde P}=0$</td>
+<td>every adjoint has vanishing trace</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(\mathfrak{g})$</td>
+<td>the derivation algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{Inn}(\mathfrak{g})=\operatorname{ad}(\mathrm{Vect}(\mathbb{B}))\cong\mathfrak{sl}(2,\mathbb{C})$</td>
+<td>the inner derivations, the adjoints</td>
+</tr>
+<tr>
+<td>$D_0$</td>
+<td>the outer derivation scaling the centre, annihilating the derived algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(\mathfrak{g})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$</td>
+<td>the derivation algebra, of complex dimension four</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(\mathfrak{g})\cong\mathbb{C}^{\times}\times PGL(2,\mathbb{C})$</td>
+<td>the automorphism group of the bracket</td>
+</tr>
+<tr>
+<td>$T_{\tilde U}(\tilde P)=\tilde U\tilde P\tilde U^{-1}$; $T_\lambda$ on the centre</td>
+<td>the conjugation by a unit and the central scalar</td>
+</tr>
+<tr>
+<td>$\operatorname{Str}(\mathfrak{g})\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}\times PGL(2,\mathbb{C})$</td>
+<td>the structure group of the bracket, of complex dimension five</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.md</code>), for the bracket and the cross-product formula</li>
+<li><em>The Lie Algebra of the Antisymmetric Plain Algebra</em> (<code>articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra.md</code>), for the centre, the derived algebra, the identifications and the enveloping algebra</li>
+<li><em>The Killing Form of the Antisymmetric Plain Algebra</em> (<code>articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.md</code>), for the invariant form, the radical and the Casimir element</li>
+<li><em>The Six Subspaces under the Antisymmetric Plain Algebra of Biquaternions</em> (<code>articles_maths/the-six-subspaces-under-the-antisymmetric-plain-algebra-of-biquaternions.md</code>), for the bracket read on the six distinguished subspaces</li>
+<li><em>The Antisymmetric Plain Algebra in the Matrix Representations</em> (<code>articles_maths/the-antisymmetric-plain-algebra-in-the-matrix-representations.md</code>), for the conjugations in the two-dimensional model</li>
+<li><em>Derivations of a Lie Algebra</em> (<code>articles_maths/derivations-of-a-lie-algebra.md</code>), for the inner and outer derivations and the derivation algebra as the Lie algebra of the automorphism group</li>
+<li><em>Associative Algebras</em> (<code>articles_maths/associative-algebras.md</code>), for the associativity behind the Leibniz rule</li>
+<li><em>Two-Sided Operators on the General Plain Algebra of Biquaternions</em> (<code>articles_maths/two-sided-operators-on-the-general-plain-algebra-of-biquaternions.md</code>), for the operators of the multiplication and their trace form</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

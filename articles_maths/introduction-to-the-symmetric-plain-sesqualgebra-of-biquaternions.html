@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions"><strong>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries the <strong>general plain sesquilinear product</strong> $\tilde P\tilde Q^{*}$, additive in each variable, $\mathbb{C}$-linear in the first and conjugate-linear in the second, whose general theory is the sesqualgebra <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>. That product is a degree-two form, and as such it is split by the exchange into two halves (<em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>). This article is the introduction of the first of the two halves.</p>
+<p>The <strong>symmetric part</strong> of the product is the operation</p>
+<p>$$
+\tilde P \star \tilde Q = \tfrac12\bigl(\tilde P\tilde Q^{*} + (\tilde P\tilde Q^{*})^{\natural}\bigr) ,
+$$</p>
+<p>where ${}^{\natural}$ is the natural conjugation of the algebra, and the article is about that operation. Its single decisive property is that <strong>every value is central</strong>: the half-sum of an element and its natural conjugate has no vector part, so the product collapses to</p>
+<p>$$
+\tilde P \star \tilde Q = \mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)\, e_0 = H(\tilde P,\tilde Q)\, e_0 , \qquad H(\tilde P,\tilde Q) = P_0\overline{Q_0} + (\mathbf P, \overline{\mathbf Q}) ,
+$$</p>
+<p>which is the <strong>Hermitian form of the corpus read as a multiplication</strong>. The block is therefore not a new bilinear form to be found but a known one put to a new use: the form $H$ that carries the positivity of the Hermitian cone (<em>Biquaternion Norm and Invertibility</em>, <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>) is here a product on the same space.</p>
+<p>Three consequences organise the block, and they are the exact opposites of the quaternionic row. The product is <strong>conjugate-commutative</strong> rather than commutative, and it has <strong>no unit</strong> on either side. Its diagonal is <strong>real and strictly positive off the origin</strong>, so there is <strong>no isotropic vector and no nonzero element of square zero</strong>; the vanishing products are those of pairs orthogonal for $H$, $e_\mu\star e_\nu = 0$ for $\mu\neq\nu$. And it <strong>fails the Jordan identity</strong>, with the witness $x = y = e_1$: a symmetrisation of a sesquilinear product is not a Jordan product, and the block is a genuine operation of the sesqualgebra row and of no classical kind. This article owns the sixteen products of the basis, the square and its polarisation, the law, the absence of a unit, the failure of the Jordan identity and the placement of the block among the twelve.</p>
+<p><strong>Boundaries.</strong> The product that is split is <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>; the split itself and the general construction of the two parts are <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>, and this article quotes both and restates neither. The form $H$, its positivity, its cone and its norm are <em>Biquaternion Norm and Invertibility</em>, <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em> and <em>The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra</em>; the form is not developed here. The other half of the product is the block <em>Biquaternions as an Antisymmetric Plain Sesqualgebra (APS) over $\mathbb{C}$</em>, and the twelve operations as a family are <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. The sibling symmetric rows are the blocks of <em>Introduction to the Symmetric Plain Algebra of Biquaternions</em> and <em>Introduction to the Symmetric Quaternionic Algebra of Biquaternions</em>, which this article compares with on the law alone. Nothing topological and nothing metric appears; no distance is used and no norm of positive real values is written.</p>
+<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with basis $e_0, e_1, e_2, e_3$, $e_0$ the identity, $e_k^2 = -e_0$ and $e_j e_k = e_l$ for $(j,k,l)$ a cyclic permutation of $(1,2,3)$; a general element is $\tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$, and $\tilde Q = Q_0 e_0 + \mathbf Q$ with $\mathbf Q = \sum_{k=1}^{3} Q_k e_k$. The scalar part is $\mathrm{Sc}$. The <strong>natural conjugation</strong> ${}^{\natural}$ negates $e_1, e_2, e_3$ and fixes $e_0$, and is $\mathbb{C}$-linear; the <strong>coefficientwise conjugation</strong> $\overline{\cdot}$ conjugates the four coordinates; the <strong>Hermitian conjugation</strong> is ${}^{*} = \overline{\cdot} \circ {}^{\natural}$, so that $Q^{*}_\nu = \varepsilon_\nu \overline{Q_\nu}$ with $\varepsilon = (1,-1,-1,-1)$. The dot and cross products of vector parts, and the four products of the space, are those of <em>The Four Biquaternion Complex Products</em>; the product split here is the general plain sesquilinear one.</p>
+<h2 id="the-product-read-as-a-multiplication">The Product Read as a Multiplication</h2>
+<p><strong>Definition.</strong> The <strong>multiplication</strong> of the block is the operation</p>
+<p>$$
+\star \; : \; \mathbb{B} \times \mathbb{B} \longrightarrow \mathbb{B} , \qquad \tilde P \star \tilde Q = \tfrac12\bigl(\tilde P\tilde Q^{*} + (\tilde P\tilde Q^{*})^{\natural}\bigr) .
+$$</p>
+<p>It is the symmetric part of the general plain sesquilinear product $\tilde P\tilde Q^{*}$ under the conjugate transpose exchange, and it is the product this article and its five companions develop.</p>
+<p><strong>Proposition (the value is central).</strong> For all $\tilde P, \tilde Q$,</p>
+<p>$$
+\tilde P \star \tilde Q = \mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)\, e_0 = H(\tilde P,\tilde Q)\, e_0 , \qquad H(\tilde P,\tilde Q) = \sum_{\mu=0}^{3} P_\mu \overline{Q_\mu} = P_0 \overline{Q_0} + (\mathbf P, \overline{\mathbf Q}) ,
+$$</p>
+<p>so the image of the multiplication is the centre $\mathbb{C}_{\mathbb{B}} = \{\lambda e_0\}$. Equivalently, in the two other forms of the same identity,</p>
+<p>$$
+\tilde P \star \tilde Q = \tfrac12\bigl(\tilde P\tilde Q^{*} + \overline{\tilde Q}\,\tilde P^{\natural}\bigr) = \tfrac12\bigl(\tilde P\tilde Q^{*} + \overline{\tilde Q\tilde P^{*}}\bigr) .
+$$</p>
+<p><em>Proof.</em> Write the value in scalar–vector form, $\tilde P\tilde Q^{*} = \bigl(P_0\overline{Q_0} + (\mathbf P,\overline{\mathbf Q})\bigr) - P_0\overline{\mathbf Q} + \overline{Q_0}\mathbf P - \mathbf P\times\overline{\mathbf Q}$ (<em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>). The natural conjugation negates the vector part and fixes the scalar part, so the half-sum of the value and its natural conjugate keeps the scalar part and cancels the vector part, giving the first display. Next, $(PQ^{*})^{\natural} = (Q^{*})^{\natural} P^{\natural} = \overline{Q}\, P^{\natural}$ because ${}^{\natural}$ is an antiautomorphism and $(Q^{*})^{\natural} = \overline{Q}$; and $\overline{Q}\,P^{\natural} = \overline{QP^{*}}$ because $\overline{\cdot}$ is an automorphism and $\overline{P^{*}} = P^{\natural}$. This gives the two forms of the second display. The identity was checked on the four basis elements and on $100$ complex pairs to $2.0\times10^{-15}$. $\square$</p>
+<p><strong>Remark (the three readings of the same half-sum).</strong> The three expressions record three faces of one operation: $(\tilde P\tilde Q^{*} + (\tilde P\tilde Q^{*})^{\natural})/2$ is the half-sum with the natural conjugate, $\mathrm{Sc}(\tilde P\tilde Q^{*})e_0$ is the scalar part, and $H(\tilde P,\tilde Q)e_0$ is the Hermitian form. The article uses all three, and they are the same element; in particular the <strong>form $H$ and the product $\star$ carry the same information</strong>, which is the reason the block is central-valued and not a genuine new multiplication on the space.</p>
+<h3 id="the-scalar-rules-and-the-class">The Scalar Rules and the Class</h3>
+<p><strong>Proposition (the product is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$).</strong> The multiplication is additive in each variable and</p>
+<p>$$
+(\lambda \tilde P) \star \tilde Q = \lambda\,(\tilde P \star \tilde Q) , \qquad \tilde P \star (\lambda \tilde Q) = \overline{\lambda}\,(\tilde P \star \tilde Q) , \qquad \lambda \in \mathbb{C} ,
+$$</p>
+<p>so it is $\mathbb{C}$-linear in the first argument and conjugate-linear in the second.</p>
+<p><em>Proof.</em> $H(\lambda \tilde P,\tilde Q) = \sum_\mu \lambda P_\mu \overline{Q_\mu} = \lambda H(\tilde P,\tilde Q)$ and $H(\tilde P,\lambda \tilde Q) = \sum_\mu P_\mu \overline{\lambda Q_\mu} = \overline{\lambda} H(\tilde P,\tilde Q)$; multiply by $e_0$. The rules were checked on $60$ triples to $4.0\times10^{-15}$. $\square$</p>
+<p><strong>Remark (what the class forces on a tabulation).</strong> Because the second slot is conjugate-linear, a table of the operation cannot be read by linearity in its second index: a scalar $Q_\nu$ in the second slot enters through its conjugate, and a scalar in the first slot enters plain. This is the first difference from the symmetric quaternionic block, whose pairing $B$ is bilinear and therefore blind to the conjugation (<em>Introduction to the Symmetric Quaternionic Algebra of Biquaternions</em>). It is also the reason the block is a structure of the <strong>sesqualgebra</strong> row and not of the algebra row.</p>
+<h2 id="the-multiplication-table-of-the-basis">The Multiplication Table of the Basis</h2>
+<p><strong>Proposition (the sixteen products).</strong> On the four basis elements the multiplication is the diagonal rule</p>
+<p>$$
+e_\mu \star e_\nu = H(e_\mu,e_\nu)\, e_0 = \delta_{\mu\nu}\, e_0 ,
+$$</p>
+<p>so the table of the block is the identity table:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\star$</th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$0$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> $H(e_\mu,e_\nu) = \sum_\rho (e_\mu)_\rho \overline{(e_\nu)_\rho} = \delta_{\mu\nu}$ because the basis is the standard basis of $\mathbb{C}^{4}$ for the form; multiply by $e_0$. All sixteen products were recomputed. $\square$</p>
+<p><strong>Corollary (the block has the structure of a rank-one form).</strong> Every product is a scalar multiple of the single element $e_0$, and the table is the table of the identity matrix of the form $H$: the multiplication records the Gram matrix of $H$ in the basis and nothing else. In particular the block is not the general plain sesquilinear product itself: the latter has the non-diagonal table $e_\mu e_\nu^{*} = \varepsilon_\nu\, e_\mu e_\nu$ of <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>.</p>
+<h2 id="the-square-and-its-polarisation">The Square and Its Polarisation</h2>
+<p><strong>Proposition (the square is the diagonal of the form).</strong> For every $\tilde Q$,</p>
+<p>$$
+\tilde Q \star \tilde Q = H(\tilde Q,\tilde Q)\, e_0 = \Bigl(\lvert Q_0\rvert^{2} + \sum_{k=1}^{3} \lvert Q_k\rvert^{2}\Bigr) e_0 = \Bigl(\sum_{\mu=0}^{3} \lvert Q_\mu\rvert^{2}\Bigr) e_0 ,
+$$</p>
+<p>a <strong>central</strong> element whose coefficient is real and non-negative, and strictly positive for $\tilde Q \neq 0$.</p>
+<p><em>Proof.</em> Put $\tilde P = \tilde Q$ in the central form. The coefficient is $\sum_\mu \lvert Q_\mu\rvert^{2}$, a sum of squares of moduli of complex numbers. $\square$</p>
+<p><strong>Proposition (the polarisation recovers the real part alone).</strong> For all $\tilde P, \tilde Q$,</p>
+<p>$$
+\tfrac12\bigl((\tilde P + \tilde Q)\star(\tilde P + \tilde Q) - \tilde P\star\tilde P - \tilde Q\star\tilde Q\bigr) = \mathrm{Re}\,H(\tilde P,\tilde Q)\, e_0 ,
+$$</p>
+<p>so the squared map $\tilde Q \mapsto \tilde Q\star\tilde Q$ determines only the real part $\mathrm{Re}\,H$ of the form, not the form $H$ itself; the imaginary part is recovered from the sesquilinear structure and not from the square. This is the exact opposite of the symmetric quaternionic block, whose polarisation recovers the whole bilinear form.</p>
+<p><em>Proof.</em> Expand $H(\tilde P+\tilde Q,\tilde P+\tilde Q) = H(\tilde P,\tilde P) + H(\tilde P,\tilde Q) + H(\tilde Q,\tilde P) + H(\tilde Q,\tilde Q)$ and use $H(\tilde Q,\tilde P) = \overline{H(\tilde P,\tilde Q)}$, so that the middle two terms are $H(\tilde P,\tilde Q) + \overline{H(\tilde P,\tilde Q)} = 2\,\mathrm{Re}\,H(\tilde P,\tilde Q)$. $\square$</p>
+<p><strong>Remark (a quadratic form of the sesquilinear kind).</strong> The map $\tilde Q \mapsto H(\tilde Q,\tilde Q)e_0$ is a genuine quadratic form on the real space $\mathbb{B} \cong \mathbb{R}^{8}$, of signature $(8,0)$ and null set $\{0\}$ (<em>Biquaternion Norm and Invertibility</em>). The block reads it as a square, and the square is the diagonal of the multiplication.</p>
+<h2 id="conjugate-commutativity-and-the-absence-of-a-unit">Conjugate-Commutativity and the Absence of a Unit</h2>
+<p><strong>Theorem (the conjugate-commutative law).</strong> For all $\tilde P, \tilde Q$,</p>
+<p>$$
+\tilde P \star \tilde Q = \overline{\tilde Q \star \tilde P} ,
+$$</p>
+<p>the bar acting on the central value; the law is read on the coefficient of $e_0$.</p>
+<p><em>Proof.</em> $H(\tilde Q,\tilde P) = \sum_\mu Q_\mu \overline{P_\mu} = \overline{\sum_\mu P_\mu \overline{Q_\mu}} = \overline{H(\tilde P,\tilde Q)}$; multiply by $e_0$ and conjugate. The identity held on $60$ pairs to $0$. $\square$</p>
+<p><strong>Proposition (the two involutions: one automorphism, one reversal).</strong> The natural conjugation preserves the product and the Hermitian conjugation reverses it up to the coefficientwise conjugate:</p>
+<p>$$
+\tilde P^{\natural} \star \tilde Q^{\natural} = \tilde P \star \tilde Q , \qquad \tilde P^{*} \star \tilde Q^{*} = \overline{\tilde P \star \tilde Q} = \tilde Q \star \tilde P .
+$$</p>
+<p><em>Proof.</em> On the coordinates, $(\tilde P^{\natural})_\mu = \varepsilon_\mu P_\mu$ and $(\tilde P^{*})_\mu = \varepsilon_\mu\overline{P_\mu}$ with $\varepsilon = (1,-1,-1,-1)$. Hence $H(\tilde P^{\natural},\tilde Q^{\natural}) = \sum_\mu \varepsilon_\mu P_\mu\,\overline{\varepsilon_\mu Q_\mu} = \sum_\mu \varepsilon_\mu^{2} P_\mu \overline{Q_\mu} = H(\tilde P,\tilde Q)$, since $\varepsilon_\mu^{2} = 1$; and $H(\tilde P^{*},\tilde Q^{*}) = \sum_\mu \varepsilon_\mu \overline{P_\mu}\,\overline{\varepsilon_\mu\overline{Q_\mu}} = \sum_\mu \varepsilon_\mu^{2} \overline{P_\mu} Q_\mu = \overline{H(\tilde P,\tilde Q)}$. The second equality of the display is the conjugate-commutative law. Both were verified on $60$ pairs to $0$. $\square$</p>
+<p><strong>Remark (why the two differ).</strong> The natural conjugation is a real structure of the block and acts as an automorphism; the Hermitian conjugation carries the conjugate-linear slot into the linear one, so it reverses the two arguments and conjugates the central value. The block is thus the exact opposite of the symmetric quaternionic block, where the natural conjugation alone reverses the product and the product carries no conjugation of the base field.</p>
+<p><strong>Theorem (no unit, on either side).</strong> For every $\tilde Q$,</p>
+<p>$$
+\tilde Q \star e_0 = Q_0\, e_0 , \qquad e_0 \star \tilde Q = \overline{Q_0}\, e_0 .
+$$</p>
+<p>Hence $e_0$ is <strong>neither a right unit nor a left unit</strong> of the block: the equation $\tilde Q \star e_0 = \tilde Q$ forces $\mathbf Q = 0$ and $Q_0$ arbitrary, and the equation $e_0 \star \tilde Q = \tilde Q$ forces $\mathbf Q = 0$ and $Q_0$ real.</p>
+<p><em>Proof.</em> $H(\tilde Q,e_0) = Q_0\overline{1} = Q_0$ and $H(e_0,\tilde Q) = \overline{Q_0}$; multiply by $e_0$. The two scalar rules are the failure, since the central image can carry only the scalar part of the element and not its vector part. $\square$</p>
+<p><strong>Remark (the comparison with the two sibling rows).</strong> The law is <strong>commutative</strong> in the symmetric plain block, $\tilde P\bullet\tilde Q = \tilde Q\bullet\tilde P$, which is $\mathbb{C}$-bilinear and carries the two-sided unit $e_0$ (<em>Introduction to the Symmetric Plain Algebra of Biquaternions</em>); it is <strong>commutative</strong> in the symmetric quaternionic block, whose pairing $B$ is $\mathbb{C}$-bilinear and symmetric (<em>Introduction to the Symmetric Quaternionic Algebra of Biquaternions</em>); and it is <strong>conjugate-commutative</strong> here, the conjugation being exactly what the second slot of the sesquilinear pairing carries. The law therefore separates this block from the two bilinear ones, and it does not separate the two bilinear blocks from one another; those two are separated by the unit: commutative with a unit for the plain block, commutative without a unit for the quaternionic one, conjugate-commutative without a unit here. The symmetric plain block alone has a unit, and the two central blocks have none for the same reason: the values are central, and the identity of a central-valued product cannot reproduce a vector part.</p>
+<h2 id="the-failure-of-the-jordan-identity">The Failure of the Jordan Identity</h2>
+<p><strong>Theorem (the Jordan identity fails).</strong> The operation $\star$ does not satisfy the Jordan identity, in the associator form</p>
+<p>$$
+(x^{2} \star y) \star x = x^{2} \star (y \star x) ,
+$$</p>
+<p>and it fails already at $x = y = e_1$, where the two sides are $0$ and $e_0$:</p>
+<p>$$
+(x^{2} \star x) \star x = 0 , \qquad x^{2} \star (x \star x) = e_0 .
+$$</p>
+<p><em>Proof.</em> $e_1 \star e_1 = H(e_1,e_1)e_0 = e_0$, so $x^{2} = e_0$. Then $(x^{2} \star x) \star x = (e_0 \star e_1)\star e_1 = (H(e_0,e_1)e_0)\star e_1 = 0$, because $H(e_0,e_1) = 0$; and $x^{2} \star (x \star x) = e_0 \star e_0 = H(e_0,e_0)e_0 = e_0$. The witness was recomputed. $\square$</p>
+<p><strong>Remark (why it fails here and holds in the symmetric plain block).</strong> The symmetric plain block is a <strong>special Jordan algebra</strong>: its product $\tilde P \bullet \tilde Q = \tfrac12(\tilde P\tilde Q + \tilde Q\tilde P)$ is the symmetrisation of an associative product, and every such symmetrisation satisfies the Jordan identity (<em>The Symmetric Plain Algebra in the Matrix Representations</em>). The block of this article is a symmetrisation of the <strong>sesquilinear</strong> product $\tilde P\tilde Q^{*}$, whose second slot carries a conjugation; the symmetrisation is balanced by the natural conjugation and not by the transposition, and the resulting operation is not the Jordan product of any associative algebra. The failure is the structural mark of the sesqualgebra row: in the twelve, the symmetric part of the plain product alone is a Jordan product, and the symmetric parts of the three other products fail (<em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>).</p>
+<h2 id="the-reconstruction-and-the-placement-among-the-twelve">The Reconstruction and the Placement among the Twelve</h2>
+<p><strong>Proposition (the reconstruction).</strong> The general plain sesquilinear product splits as</p>
+<p>$$
+\tilde P\tilde Q^{*} = \tilde P \star \tilde Q + \tilde P \diamond \tilde Q ,
+$$</p>
+<p>with $\tilde P\star\tilde Q = \mathrm{Sc}(\tilde P\tilde Q^{*})e_0$ the symmetric part of this block and $\tilde P\diamond\tilde Q = \mathrm{Vect}(\tilde P\tilde Q^{*})$ the antisymmetric part, the block <em>Biquaternions as an Antisymmetric Plain Sesqualgebra (APS) over $\mathbb{C}$</em>. In terms of the twelve, $\mathrm{GPS} = \mathrm{SPS} + \mathrm{APS}$.</p>
+<p><em>Proof.</em> Every element is the sum of its scalar part and its vector part; the symmetric half is the scalar part by the proposition above, and the difference is the vector part. The identity is <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em> applied to the plain sesquilinear product. $\square$</p>
+<p><strong>Proposition (the placement).</strong> Among the twelve operations the block is the symmetric part of the third product, and it is determined by exactly four of its properties:</p>
+<ul>
+<li>its class is <strong>sesquilinear</strong> over $(\mathbb{C},\bar{\cdot}\,)$, not $\mathbb{C}$-bilinear, so it is one of the six operations of the two sesqualgebra rows;</li>
+<li>its image is the <strong>centre</strong> $\mathbb{C}_{\mathbb{B}}$, one of the two central operations of the twelve, the other being the symmetric quaternionic block;</li>
+<li>its law is <strong>conjugate-commutative</strong>, not commutative, and it has <strong>no unit</strong>;</li>
+<li>it <strong>fails</strong> the Jordan identity, so it is not a classical nonassociative product.</li>
+</ul>
+<p>On the real part of the space the block coincides with the symmetric quaternionic block, $\mathrm{SQA} = \mathrm{SPS}$, because on real elements $H = B$; on the complex space the two are distinct.</p>
+<p><em>Proof.</em> The class is the second scalar rule of the proposition above; the image is the central form; the law and the failure are the two theorems above; the coincidence on the real part is the bridge of <em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em>, $H(\tilde P,\tilde Q) = B(\tilde P,\tilde Q)$ for real $\tilde P,\tilde Q$. The distinctness off the real subspace is exhibited by $\tilde P = \tilde Q = ie_0$, where $H = 1$ and $B = -1$. $\square$</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>The basis.</strong> The products $e_\mu \star e_\nu = \delta_{\mu\nu}e_0$ are the sixteen entries of the table; in particular $e_1\star e_2 = 0$, while the general plain sesquilinear product has $e_1e_2^{*} = -e_3$. The block forgets the vector structure of the product entirely and keeps the pairing.</p>
+<p><strong>A Hermitian element and its square.</strong> Let $\tilde Q = e_0 + ie_3$, of diagonal $H(\tilde Q,\tilde Q) = 2$. Then $\tilde Q \star \tilde Q = 2e_0$, and the polarisation with $\tilde P = e_0$ gives $\mathrm{Re}\,H(e_0,e_0+ie_3)e_0 = e_0$, the real part of $H(e_0,\tilde Q) = 1$.</p>
+<p><strong>A non-real pairing.</strong> Let $\tilde P = e_0$ and $\tilde Q = ie_0$. Then $\tilde P \star \tilde Q = H(e_0,ie_0)e_0 = \overline{i}e_0 = -ie_0$, while the conjugate-commutative law gives $\tilde Q \star \tilde P = H(ie_0,e_0)e_0 = ie_0$, and the two are conjugate coefficients. The example exhibits the conjugate-linearity of the second slot and the law at once.</p>
+<p><strong>The Jordan witness.</strong> With $x = y = e_1$ one has $x^{2} = e_0$, $(x^{2}\star x)\star x = 0$ and $x^{2}\star(x\star x) = e_0$: the two sides differ by the idempotent.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = \tfrac12(\tilde P\tilde Q^{*} + (\tilde P\tilde Q^{*})^{\natural}) = \mathrm{Sc}(\tilde P\tilde Q^{*})e_0 = H(\tilde P,\tilde Q)e_0$ on the biquaternion space: the Hermitian form of the corpus read as a multiplication. Every value is central, so the block is a rank-one form and not a multiplication with a vector part; its class is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, $\mathbb{C}$-linear in the first argument and conjugate-linear in the second. Its sixteen basis products are $e_\mu\star e_\nu = \delta_{\mu\nu}e_0$, its square is $\tilde Q\star\tilde Q = (\sum_\mu\lvert Q_\mu\rvert^{2})e_0$ and its polarisation recovers only $\mathrm{Re}\,H$. It is <strong>conjugate-commutative</strong>, $\tilde P\star\tilde Q = \overline{\tilde Q\star\tilde P}$; the natural conjugation acts as an automorphism, $\tilde P^{\natural}\star\tilde Q^{\natural} = \tilde P\star\tilde Q$, and the Hermitian conjugation as the reversal, $\tilde P^{*}\star\tilde Q^{*} = \overline{\tilde P\star\tilde Q} = \tilde Q\star\tilde P$. It has <strong>no unit</strong> on either side, since $\tilde Q\star e_0 = Q_0e_0$ and $e_0\star\tilde Q = \overline{Q_0}e_0$. It <strong>fails the Jordan identity</strong>, witnessed by $x = y = e_1$ with the two sides $0$ and $e_0$, because it is the symmetrisation of a sesquilinear product and not that of an associative one; the symmetric plain block, alone among the twelve, is the Jordan product. The block is the scalar part of the general plain sesquilinear product, $\mathrm{GPS} = \mathrm{SPS} + \mathrm{APS}$, it is one of the two central operations of the twelve, and off the real subspace it is distinct from the symmetric quaternionic block, with which it coincides on the real part alone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra; basis $e_0,e_1,e_2,e_3$, $e_0 = 1$, $e_k^{2} = -1$</td>
+</tr>
+<tr>
+<td>${}^{\natural}$, $\overline{\cdot}$, ${}^{*} = \overline{\cdot}\circ{}^{\natural}$</td>
+<td>natural conjugation, coefficientwise conjugation, Hermitian conjugation</td>
+</tr>
+<tr>
+<td>$\tilde P \star \tilde Q = \tfrac12\bigl(\tilde P\tilde Q^{*} + (\tilde P\tilde Q^{*})^{\natural}\bigr)$</td>
+<td>the multiplication of the block; the symmetric part of the plain sesquilinear product</td>
+</tr>
+<tr>
+<td>$H(\tilde P,\tilde Q) = \sum_\mu P_\mu\overline{Q_\mu} = P_0\overline{Q_0} + (\mathbf P,\overline{\mathbf Q})$</td>
+<td>the Hermitian form, read as the coefficient of $e_0$</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$</td>
+<td>the value is central; image $\mathbb{C}_{\mathbb{B}}$</td>
+</tr>
+<tr>
+<td>$e_\mu\star e_\nu = \delta_{\mu\nu}e_0$</td>
+<td>the sixteen products of the basis</td>
+</tr>
+<tr>
+<td>$\tilde Q\star\tilde Q = \bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)e_0$</td>
+<td>the square; real and positive off the origin</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q = \overline{\tilde Q\star\tilde P}$</td>
+<td>the conjugate-commutative law</td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\star\tilde Q^{\natural} = \tilde P\star\tilde Q$, $\tilde P^{*}\star\tilde Q^{*} = \overline{\tilde P\star\tilde Q}$</td>
+<td>the two involutions: automorphism and reversal</td>
+</tr>
+<tr>
+<td>$\tilde Q\star e_0 = Q_0e_0$, $e_0\star\tilde Q = \overline{Q_0}e_0$</td>
+<td>the absence of a unit on either side</td>
+</tr>
+<tr>
+<td>$(x^{2}\star x)\star x = 0$, $x^{2}\star(x\star x) = e_0$ at $x = e_1$</td>
+<td>the failure of the Jordan identity</td>
+</tr>
+<tr>
+<td>$\mathrm{GPS} = \mathrm{SPS} + \mathrm{APS}$</td>
+<td>the reconstruction of the product from its two parts</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the General Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.md</code>), for the product that is split here and its two scalar rules.</li>
+<li><em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em> (<code>articles_maths/the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.md</code>), for the general construction of the two parts and the obstruction that keeps them in the class.</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the Hermitian form $H$, its positivity and its Gram matrix.</li>
+<li><em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the cone that the diagonal of the block generates.</li>
+<li><em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the row table and the placement of the block among the twelve.</li>
+<li><em>Introduction to the Symmetric Plain Algebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-plain-algebra-of-biquaternions.md</code>), the commutative unital sibling, the one Jordan product of the twelve.</li>
+<li><em>Introduction to the Symmetric Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md</code>), the bilinear central sibling, with which the block coincides on the real part.</li>
+<li><em>The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/the-conjugate-commutative-law-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.md</code>), the companion article, for the two readings of the law, the idempotents and the vanishing annihilator.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

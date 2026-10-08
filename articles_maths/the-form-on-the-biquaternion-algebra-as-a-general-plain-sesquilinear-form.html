@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-form-on-the-biquaternion-algebra-as-a-general-plain-sesquilinear-form"><strong>The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The layer of <em>Sesqualgebras with a Form</em> asks of an object three things: a base $(R,\varsigma)$ with an involution, an $R$-algebra with a $\varsigma$-semilinear involution $*$, and a Hermitian form <strong>compatible with the product</strong>, $h(xy,z) = h(y,x^{*}z)$. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four distinguished pairings, and this article reads it through those three requirements: one of the four satisfies all of them, one more is Hermitian and sesquilinear but fails the compatibility, and the remaining two are bilinear rather than sesquilinear, because both of their slot maps are $\mathbb{C}$-linear. The article is the entry of the biquaternion region from the general layer: it fixes which of the algebra's forms is an object, which is a form on the algebra only, and which belongs to the bilinear layer, and it names the articles in which each is developed.</p>
+<p>The classification is a single dichotomy, in the two slots of a pairing. The four pairings are the scalars $\operatorname{Sc}(X\tilde{P}Y\tilde{Q})$ of the four products, with $X$ one of $\mathrm{id}, {}^{\natural}$ and $Y$ one of $\mathrm{id}, {}^{*}$; the map $\mathrm{id}$ is $\mathbb{C}$-linear, ${}^{\natural}$ is $\mathbb{C}$-linear as well, and ${}^{*}$ is $\mathbb{C}$-antilinear. A pairing is <strong>bilinear</strong> when both slots are linear and <strong>sesquilinear</strong> when exactly one of them is, so the two pairings carrying $Y = \mathrm{id}$ are bilinear and the two carrying $Y = {}^{*}$ are sesquilinear, of which the one with $X = \mathrm{id}$ is the Hermitian positive definite form of the layer and the one with $X = {}^{\natural}$ is the indefinite form whose fundamental symmetry is ${}^{\natural}$ itself. The compatibility is then a computation in $\operatorname{Sc}$-cyclicity, and it selects exactly one: the adjoint of the left multiplication $L_{\tilde{Q}}$ is $L_{\tilde{Q}^{*}}$ for the general plain sesquilinear form and the <strong>right</strong> multiplication $R_{\bar{\tilde{Q}}}$ for the quaternion one, the second moving the multiplication to the right, so the general quaternionic sesquilinear form is a Hermitian form on the algebra and not a form of the layer.</p>
+<p>The article reads the four pairings through the layer's vocabulary, verifies the compatibility of the general plain sesquilinear form and the failure of the compatibility of the quaternion one, reads the indefinite form as the definite one composed with a canonical self-adjoint involution, places the unitary elements, records the caution on the linear natural conjugation and the collapse at the real base, and points to the region's articles. The four pairings, their Gram matrices, signatures, isometry groups and the adjoint rules of the left multiplications are <em>The Four Pairings of the Biquaternion Algebra</em>; the general plain sesquilinear form and its inner-product structure are <em>Biquaternion Norm and Invertibility</em>; the two bilinear pairings are <em>The Four Pairings of the Biquaternion Algebra</em>; the symmetry ${}^{\natural}$, its uniqueness and the bridge identity are <em>The Fundamental Symmetry of the Biquaternion Algebra</em>; the failure of the compatibility as a caution about the two layers is <em>The Indefinite Case and the Signature</em>, §<em>The Biquaternion Caution</em>; the unitary elements and their group are <em>The Unitary Group of the Biquaternion Algebra</em>; the norm of the positive definite form is <em>The Norm Defined by a Form</em>; the layer's definition, its radical and its collapse are <em>Sesqualgebras with a Form</em>; the inequality of the positive definite form is <em>The Cauchy–Schwarz Inequality for Continuous Sesquilinear Maps</em>; the positivity and the positive cone are <em>Positivity and the Positive Cone of a Hermitian Form</em>; the operators are <em>Unitary and Isometric Operators of the Form</em> and <em>The Adjoint under a Hermitian Form</em>; the real base is <em>The Realification of the Four Forms</em> and <em>Operators of the Real Biquaternion Algebra</em>; and the algebra structures are <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em> and <em>The Left and Right Multiplications of the Biquaternion Sesqualgebra</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the coefficient basis $\tilde{Q} = Q_{0} + Q_{1}e_{1} + Q_{2}e_{2} + Q_{3}e_{3}$, $Q_{\mu} \in \mathbb{C}$, the products $e_{k}^{2} = -1$ and $e_{1}e_{2} = e_{3}$ cyclic, and $\operatorname{Sc}$ the scalar part, as in <em>Introduction to the General Plain Algebra of Biquaternions</em>. The three conjugations of the algebra are the <strong>complex conjugation</strong> $\bar{\cdot}$, the <strong>natural conjugation</strong> ${}^{\natural}$ with $e_{k}^{\natural} = -e_{k}$, and the <strong>Hermitian conjugation</strong> ${}^{*} = {}^{\natural} \circ \bar{\cdot} = \bar{\cdot} \circ {}^{\natural}$, with $\bar{\cdot}$ a $\mathbb{C}$-antilinear automorphism, ${}^{\natural}$ a $\mathbb{C}$-linear anti-automorphism and ${}^{*}$ a $\mathbb{C}$-antilinear anti-automorphism, the three of <em>The Three Conjugations and the Symmetric Biquaternion Fractals</em>. The four pairings are those of <em>The Four Pairings of the Biquaternion Algebra</em>,</p>
+<p>$$
+\langle\tilde{P},\tilde{Q}\rangle = \operatorname{Sc}(\tilde{P}\tilde{Q}), \quad
+\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \operatorname{Sc}(\tilde{P}^{\natural}\tilde{Q}), \quad
+\langle\tilde{P},\tilde{Q}\rangle_{*} = \operatorname{Sc}(\tilde{P}\tilde{Q}^{*}), \quad
+\langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \operatorname{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*}),
+$$</p>
+<p>with $\varepsilon = (1,-1,-1,-1)$ so that $\operatorname{Sc}(e_{\mu}e_{\nu}) = \varepsilon_{\mu}\delta_{\mu\nu}$; the layer's datum is $(\mathbb{C},\varsigma)$ with $\varsigma$ the conjugation, the layer's involution is ${}^{*}$, and the layer's form is $\langle\tilde{P},\tilde{Q}\rangle_{*}$, linear in the first slot and $\varsigma$-semilinear in the second, the convention of <em>Sesqualgebras with a Form</em>, §<em>The Definition</em>.</p>
+<h2 id="the-two-slots-and-the-two-layers">The Two Slots and the Two Layers</h2>
+<h3 id="the-linearity-of-the-two-slot-maps">The Linearity of the Two Slot Maps</h3>
+<p><strong>Proposition (the linearity of the four slot maps).</strong> For $\lambda \in \mathbb{C}$ and $\tilde{Q} \in \mathbb{B}$,</p>
+<p>$$
+(\lambda\tilde{Q})^{\natural} = \lambda\,\tilde{Q}^{\natural}, \qquad
+\overline{\lambda\tilde{Q}} = \varsigma(\lambda)\,\bar{\tilde{Q}}, \qquad
+(\lambda\tilde{Q})^{*} = \varsigma(\lambda)\,\tilde{Q}^{*} .
+$$</p>
+<p>Hence ${}^{\natural}$ is $\mathbb{C}$-linear, and $\bar{\cdot}$ and ${}^{*}$ are $\mathbb{C}$-antilinear, that is $\varsigma$-semilinear for the conjugation $\varsigma$.</p>
+<p><em>Proof.</em> The natural conjugation acts on the units, $e_{k}^{\natural} = -e_{k}$, and fixes the centre $\mathbb{C}$, so it commutes with the scalars; the complex conjugation acts on the coefficients, hence conjugates the scalar; the Hermitian conjugation is the composite, and a composite of one linear and one antilinear map is antilinear. $\square$</p>
+<p><strong>Proposition (which pairings are sesquilinear).</strong> A pairing $\operatorname{Sc}(X\tilde{P}\,Y\tilde{Q})$ is $\mathbb{C}$-bilinear when both slot maps are linear and $\mathbb{C}$-sesquilinear when exactly one is. Of the four pairings of the conventions, the two with $\mathrm{id}$ in the second slot, $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$, are bilinear, and the two with ${}^{*}$ there, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$, are sesquilinear, linear in the first slot and $\varsigma$-semilinear in the second.</p>
+<p><em>Proof.</em> The scalar part is $\mathbb{C}$-linear and $\operatorname{Sc}(\overline{X}) = \varsigma(\operatorname{Sc}(X))$, so a $\mathbb{C}$-antilinear map in a slot makes the pairing antilinear in that slot and a $\mathbb{C}$-linear one keeps it linear. $\square$</p>
+<p><strong>Remark (the two layers of the algebra).</strong> The proposition is the entry of the biquaternion algebra into two categories at once. The bilinear pairings are the forms of the bilinear layer, <em>Bilinear Forms</em>, developed on the algebra in <em>The Four Pairings of the Biquaternion Algebra</em>; the sesquilinear pairings are the forms of the layer of <em>Sesqualgebras with a Form</em>, and only one of them is admissible, as the next section shows. The dichotomy is not a property of the particular forms but of the products: the algebra carries the two linear slot maps $\mathrm{id}$ and ${}^{\natural}$ and the two antilinear ones $\bar{\cdot}$ and ${}^{*}$, and a pairing $\operatorname{Sc}(X\tilde{P}Y\tilde{Q})$ is sesquilinear exactly when its second slot carries one of the antilinear maps.</p>
+<h3 id="the-admissible-involution">The Admissible Involution</h3>
+<p><strong>Proposition (the conjugations of the algebra, by linearity kind).</strong> The conjugations $\mathrm{id}$ and ${}^{\natural}$ are $\mathbb{C}$-linear and the conjugations $\bar{\cdot}$ and ${}^{*}$ are $\mathbb{C}$-antilinear; ${}^{\natural}$ and ${}^{*}$ are anti-automorphisms and $\mathrm{id}$ and $\bar{\cdot}$ are automorphisms; and ${}^{*}$ alone is both, hence the layer's involution. The natural conjugation ${}^{\natural}$ is a $\mathbb{C}$-linear anti-automorphism of square one, hence an involution over the real base $(\mathbb{R},\mathrm{id})$ but not a $\varsigma$-semilinear involution for the complex datum; the complex conjugation $\bar{\cdot}$ is a $\varsigma$-semilinear <strong>auto</strong>morphism of square one, hence not an involution of the algebra in the layer's sense, which asks for $(xy)^{*} = y^{*}x^{*}$; and the reversal $\flat = -{}^{*}$ of <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Involution Group and the Four Pairings</em>, is an anti-automorphism only up to sign and stands outside the Klein four-group $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$.</p>
+<p><em>Proof.</em> The four conjugations, their linearity, their product type, the identity ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the reversal $\flat = -{}^{*}$ are the table of <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Involution Group and the Four Pairings</em>; the linearity of the slot maps is the preceding proposition. $\square$</p>
+<p><strong>Remark (why the caution is about ${}^{\natural}$ and not about $\bar{\cdot}$).</strong> The automorphic conjugation $\bar{\cdot}$ is antilinear, so the pairing it produces, $\operatorname{Sc}(\tilde{P}\bar{\tilde{Q}})$, is sesquilinear; the anti-automorphic ${}^{\natural}$ is linear, so the pairing it produces is bilinear. The layer's involution is therefore ${}^{*}$ and not ${}^{\natural}$: the two properties required of it, the $\varsigma$-semilinearity and the anti-automorphism, are exactly what separates the complex sesquilinear pairing from the quaternion bilinear one, and the algebra carries one form of each kind because it carries one conjugation of each kind. This is the caution of the article, and it is the source of the phrase "the same algebra, two categories".</p>
+<h2 id="the-hermitian-forms-and-their-compatibility">The Hermitian Forms and Their Compatibility</h2>
+<h3 id="the-general-plain-sesquilinear-form">The General plain Sesquilinear Form</h3>
+<p><strong>Theorem (the general plain sesquilinear form is an object of the layer).</strong> The form</p>
+<p>$$
+h(\tilde{P},\tilde{Q}) = \langle\tilde{P},\tilde{Q}\rangle_{*} = \operatorname{Sc}(\tilde{P}\tilde{Q}^{*}) = \sum_{\mu}P_{\mu}\,\varsigma(Q_{\mu})
+$$</p>
+<p>is Hermitian, positive definite and nondegenerate with Gram matrix $\mathrm{I}_{4}$ in the coefficient basis and signature $(8,0)$ over $\mathbb{R}$, its radical is zero, its norm is the Euclidean norm $\lVert\tilde{Q}\rVert_{E} = (\sum_{\mu}\lvert Q_{\mu}\rvert^{2})^{1/2}$, and it is <strong>compatible with the product</strong>:</p>
+<p>$$
+h(\tilde{P}\tilde{Q},\tilde{R}) = h(\tilde{Q},\tilde{P}^{*}\tilde{R}), \qquad \text{equivalently} \qquad (L_{\tilde{P}})^{h} = L_{\tilde{P}^{*}} .
+$$</p>
+<p>Hence $(\mathbb{B},{}^{*},h)$ is an object of the layer, the left multiplications of the sesqualgebra $\tilde{P} \star \tilde{X} = \tilde{P}\tilde{X}^{*}$ are the layer's $\varsigma$-semilinear operators and the right multiplications its $R$-linear ones, and every operator statement of the layer applies to it as <em>The Left and Right Multiplications of the Biquaternion Sesqualgebra</em> records.</p>
+<p><em>Proof.</em> The Hermitian property is $\operatorname{Sc}(\tilde{P}\tilde{Q}^{*}) = \varsigma(\operatorname{Sc}(\tilde{Q}\tilde{P}^{*}))$, and the diagonal is $\sum_{\mu}\lvert Q_{\mu}\rvert^{2}$, coefficientwise, so the form is positive definite and its Gram matrix is $\mathrm{I}_{4}$; this is <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Four Pairings</em> and §<em>The Forms in Comparison</em>, and the Hilbert structure is <em>Biquaternion Norm and Invertibility</em>, §<em>The Inner Product</em>. For the compatibility, expand the right side,</p>
+<p>$$
+h(\tilde{Q},\tilde{P}^{*}\tilde{R}) = \operatorname{Sc}\bigl(\tilde{Q}(\tilde{P}^{*}\tilde{R})^{*}\bigr) = \operatorname{Sc}(\tilde{Q}\tilde{R}^{*}\tilde{P}) = \operatorname{Sc}(\tilde{P}\tilde{Q}\tilde{R}^{*}) = h(\tilde{P}\tilde{Q},\tilde{R}),
+$$</p>
+<p>using $(\tilde{P}^{*}\tilde{R})^{*} = \tilde{R}^{*}\tilde{P}$ and the cyclicity $\operatorname{Sc}(XYZ) = \operatorname{Sc}(ZXY)$ of the scalar part, which holds in an associative algebra because $\operatorname{Sc}$ is the trace of the regular representation. The adjoint rule is the same identity read as $(L_{\tilde{P}})^{h} = L_{\tilde{P}^{*}}$, the second of the four rules of <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Forms in Comparison</em>. $\square$</p>
+<p><strong>Corollary (the inequality and the positivity are the layer's).</strong> The form is positive definite and the object is of the layer, so the inequality, the norm of the diagonal, the positive cone, the tolerance and the definite quotient are the layer's: they are <em>The Cauchy–Schwarz Inequality for Continuous Sesquilinear Maps</em>, <em>The Norm Defined by a Form</em> and <em>Positivity and the Positive Cone of a Hermitian Form</em>, and they are read on the coefficient space because the Gram matrix is the identity.</p>
+<h3 id="the-general-quaternionic-sesquilinear-form">The General quaternionic Sesquilinear Form</h3>
+<p><strong>Theorem (the general quaternionic sesquilinear form is Hermitian and not admissible).</strong> The form</p>
+<p>$$
+g(\tilde{P},\tilde{Q}) = \langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \operatorname{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*}) = \sum_{\mu}\varepsilon_{\mu}P_{\mu}\,\varsigma(Q_{\mu}) = \operatorname{Sc}(\tilde{P}\bar{\tilde{Q}})
+$$</p>
+<p>is Hermitian and nondegenerate with Gram matrix $\mathrm{E} = \operatorname{diag}(1,-1,-1,-1)$, of inertia index $(1,3,0)$ over $\mathbb{C}$ and signature $(2,6)$ over $\mathbb{R}$, indefinite with the diagonal $\lvert Q_{0}\rvert^{2} - \lvert Q_{1}\rvert^{2} - \lvert Q_{2}\rvert^{2} - \lvert Q_{3}\rvert^{2}$, and it is <strong>not compatible</strong> with the product. The adjoint of the left multiplication is the <strong>right</strong> multiplication,</p>
+<p>$$
+(L_{\tilde{P}})^{g} = R_{\bar{\tilde{P}}}, \qquad \text{that is} \qquad g(\tilde{P}\tilde{Q},\tilde{R}) = g(\tilde{Q},\tilde{R}\bar{\tilde{P}}),
+$$</p>
+<p>and the compatibility identity $g(\tilde{P}\tilde{Q},\tilde{R}) = g(\tilde{Q},\tilde{P}^{*}\tilde{R})$ fails at a witness.</p>
+<p><em>Proof.</em> The form is the fourth pairing of <em>The Four Pairings of the Biquaternion Algebra</em>, and its Gram matrix, its inertia and its signature are §<em>The Forms in Comparison</em>; the Hermitian property is $\sum_{\mu}\varepsilon_{\mu}P_{\mu}\varsigma(Q_{\mu}) = \varsigma(\sum_{\mu}\varepsilon_{\mu}Q_{\mu}\varsigma(P_{\mu}))$, coefficientwise. For the adjoint rule, expand $g(\tilde{Q},\tilde{R}\bar{\tilde{P}}) = \operatorname{Sc}\bigl(\tilde{Q}\,\overline{\tilde{R}\bar{\tilde{P}}}\bigr)$, and $\overline{\tilde{R}\bar{\tilde{P}}} = \bar{\tilde{R}}\tilde{P}$ because $\bar{\cdot}$ is an automorphism of square one, so $g(\tilde{Q},\tilde{R}\bar{\tilde{P}}) = \operatorname{Sc}(\tilde{Q}\bar{\tilde{R}}\tilde{P}) = \operatorname{Sc}(\tilde{P}\tilde{Q}\bar{\tilde{R}}) = g(\tilde{P}\tilde{Q},\tilde{R})$ by cyclicity. The failure of the compatibility with $L_{\tilde{P}^{*}}$ is exhibited at the units $\tilde{P} = e_{1}$, $\tilde{Q} = e_{0}$, $\tilde{R} = e_{1}$: the left side is $g(e_{1}e_{0},e_{1}) = g(e_{1},e_{1}) = -1$, and the right side is $g(e_{0},e_{1}^{*}e_{1}) = g(e_{0},e_{0}) = 1$, so the two differ. $\square$</p>
+<p><strong>Remark (the form is on the algebra and not of the layer).</strong> The theorem is the caution of <em>The Indefinite Case and the Signature</em>, §<em>The Biquaternion Caution</em>, read in the layer's vocabulary. The compatibility $h(xz,w) = h(z,x^{*}w)$ is the axiom that makes the left multiplications of the algebra the layer's adjointable operators; here the adjoint of $L_{\tilde{P}}$ is the right multiplication $R_{\bar{\tilde{P}}}$, so the quaternion form is Hermitian and nondegenerate on the algebra without being a form of the layer, and the operator theory of <em>Unitary and Isometric Operators of the Form</em> does not apply to it. The form is nonetheless the one the Krein structure of the algebra uses, <em>The Krein Gram Matrix and the Restrictions of the Form</em> and <em>The Fundamental Symmetry of the Biquaternion Algebra</em>, and the point of the article is that being Hermitian and nondegenerate is not being of the layer.</p>
+<h2 id="the-fundamental-symmetry-and-the-two-forms">The Fundamental Symmetry and the Two Forms</h2>
+<h3 id="the-bridge-identity">The Bridge Identity</h3>
+<p><strong>Theorem (the indefinite form is the definite one composed with a self-adjoint involution).</strong> The natural conjugation $\tilde{Q} \mapsto \tilde{Q}^{\natural}$ is an $h$-self-adjoint involution, $\natural^{2} = \mathrm{id}$ and $h(\tilde{P}^{\natural},\tilde{Q}) = h(\tilde{P},\tilde{Q}^{\natural})$, with the centre $\mathbb{C}e_{0}$ as its $+1$-eigenspace and the vector subspace $\mathbb{C}e_{1} \oplus \mathbb{C}e_{2} \oplus \mathbb{C}e_{3} = \{Q_{0} = 0\}$ as its $-1$-eigenspace, of complex dimensions $(1,3)$ and real dimensions $(2,6)$, the two $h$-orthogonal. The two forms of the article are related by</p>
+<p>$$
+g(\tilde{P},\tilde{Q}) = h(\tilde{P}^{\natural},\tilde{Q}) = h(\tilde{P},\tilde{Q}^{\natural}),
+$$</p>
+<p>of which the second equality is the self-adjointness, and on the eigenspaces $g$ is $+h$ and $-h$ respectively, which is why its inertia is $(1,3,0)$.</p>
+<p><em>Proof.</em> The identity is the bridge identity $\langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \langle\tilde{P},\tilde{Q}^{\natural}\rangle_{*}$ of <em>The Fundamental Symmetry of the Biquaternion Algebra</em>, §<em>The Natural Conjugation as a Fundamental Symmetry</em>, which is the displayed equality; the eigenspaces and their orthogonality are §<em>The Eigenspaces and the Fundamental Decomposition</em> of the same article; the sign of $g$ on the two eigenspaces is the identity $g = h \circ (\natural,\mathrm{id})$ evaluated on them, since $\natural$ fixes the centre and negates the vector subspace. $\square$</p>
+<p><strong>Corollary (the layer's separation into two steps).</strong> The indefinite form is not of the layer, but it is <strong>the definite form of the layer composed with a canonical involution</strong>, so the layer's definite theory is recovered on $g$ only through the bridge: the positivity, the inequality and the norm of $g$ along the bridge are the layer's, read on $h$, and the layer's object is $(\mathbb{B},{}^{*},h)$ with $g$ read as the associated indefinite pairing. The involution $\natural$ is the <strong>fundamental symmetry</strong> of the pair $(g,h)$, and the article's contribution to the region is the placement: <em>one form, one symmetry, two categories</em>.</p>
+<h3 id="the-unitary-elements">The Unitary Elements</h3>
+<p><strong>Theorem (the unitary slice).</strong> The unitary elements of the layer, $U = \{\tilde{U} : \tilde{U}^{*}\tilde{U} = e_{0}\} = \{\tilde{U} : \tilde{U}\tilde{U}^{*} = e_{0}\}$, form a group acting on the right and on the left by isometries of $h$,</p>
+<p>$$
+h(\tilde{U}\tilde{X},\tilde{U}\tilde{Y}) = h(\tilde{X},\tilde{Y}) = h(\tilde{X}\tilde{U},\tilde{Y}\tilde{U}),
+$$</p>
+<p>and on the slice</p>
+<p>$$
+h(\tilde{U},\tilde{U}) = 1, \qquad g(\tilde{U},\tilde{U}) = 2\lvert U_{0}\rvert^{2} - 1 \in [-1,1],
+$$</p>
+<p>so the slice lies in the set $\{\tilde{X} : \lvert g(\tilde{X},\tilde{X})\rvert \leq h(\tilde{X},\tilde{X}) = 1\}$ of the definite form and meets the $g$-null set exactly in the set $\lvert U_{0}\rvert = 1/\sqrt{2}$ of the "balanced" unitary elements. The slice is the layer's unitary group, and as a group it is $U(2)$.</p>
+<p><em>Proof.</em> The isometry is the compatibility read twice, $h(\tilde{U}\tilde{X},\tilde{U}\tilde{Y}) = h(\tilde{X},\tilde{U}^{*}\tilde{U}\tilde{Y}) = h(\tilde{X},\tilde{Y})$, and the same on the right; the value $h(\tilde{U},\tilde{U}) = \operatorname{Sc}(\tilde{U}\tilde{U}^{*}) = \operatorname{Sc}(e_{0}) = 1$; for the indefinite form, $g(\tilde{U},\tilde{U}) = \sum_{\mu}\varepsilon_{\mu}\lvert U_{\mu}\rvert^{2} = 2\lvert U_{0}\rvert^{2} - \sum_{\mu}\lvert U_{\mu}\rvert^{2} = 2\lvert U_{0}\rvert^{2} - 1$ because $\sum_{\mu}\lvert U_{\mu}\rvert^{2} = 1$. The group is <em>The Unitary Group of the Biquaternion Algebra</em>, where the identification with $U(2)$ and the identification of the isometry property with $\tilde{U}^{*}\tilde{U} = e_{0}$ are established. $\square$</p>
+<p><strong>Remark (the layer's unitary group and the isometry group of the indefinite form).</strong> The elements of the slice are exactly the elements preserving $h$, which is the layer's unitary group of the pair $(\mathbb{B},{}^{*},h)$, and the operators preserving the indefinite form $g$ form the indefinite unitary group $U(1,3)$ of <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Forms in Comparison</em>; the two are different objects, the first an isometry group of the layer's form and the second the isometry group of a form on the algebra. The unitary slice is the layer's object and <em>The Unitary Group of the Biquaternion Algebra</em> is its article; the $g$-isometries are <em>Unitary and Isometric Operators of the Form</em> read in the indefinite signature, and their spectral theory is <em>The Indefinite Spectra of the Operators on the Biquaternion Algebra</em> and <em>The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra</em>.</p>
+<h2 id="the-caution-on-the-natural-conjugation">The Caution on the Natural Conjugation</h2>
+<p><strong>Remark (the linear conjugation produces a bilinear form, and it is the symmetry and not the involution).</strong> The natural conjugation ${}^{\natural}$ is $\mathbb{C}$-linear, and it therefore plays three distinct roles in the region, which the article separates. As a <strong>slot map</strong> it produces a bilinear pairing, $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \operatorname{Sc}(\tilde{P}^{\natural}\tilde{Q})$, which belongs to the bilinear layer and to <em>The Four Pairings of the Biquaternion Algebra</em>; as an <strong>involution of the algebra</strong> it is admissible over the real base $(\mathbb{R},\mathrm{id})$ and not over the complex datum, since the layer asks the involution to be $\varsigma$-semilinear; and as an <strong>operator</strong> it is the fundamental symmetry of the pair $(g,h)$ and the isometry of all four pairings of <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Four Pairings</em>. The layer uses it in the third role, and the caution is that the first two are the reason the algebra carries a bilinear form and a symmetric structure alongside its sesquilinear one, so that the phrase "the form on the biquaternion algebra" names four objects and the layer selects one.</p>
+<p><strong>Remark (the two automorphic and anti-automorphic conjugations).</strong> The same reading separates the four conjugations: $\mathrm{id}$ and ${}^{\natural}$ are $\mathbb{C}$-linear, $\bar{\cdot}$ and ${}^{*}$ are $\mathbb{C}$-antilinear; $\mathrm{id}$ and $\bar{\cdot}$ are automorphisms, ${}^{\natural}$ and ${}^{*}$ are anti-automorphisms. The layer's involution is the antilinear anti-automorphism ${}^{*}$; the pairing of the antilinear automorphism $\bar{\cdot}$ is the sesquilinear form $g = \operatorname{Sc}(\tilde{P}\bar{\tilde{Q}})$ of the article, which is the same as $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$; and the pair of linear maps produces the two bilinear forms. The four pairings are therefore the four products read with the two linear and the two antilinear conjugations, and the layer's selection is the pair (anti-automorphism, and hence compatibility) among the two antilinear ones.</p>
+<h2 id="the-collapse-at-the-real-base">The Collapse at the Real Base</h2>
+<p><strong>Theorem (the collapse).</strong> Let the datum be $(\mathbb{R},\mathrm{id})$, so that the scalars are real and the coefficient conjugation is the identity on them; then ${}^{*} = {}^{\natural}$, the four pairings collapse to the two real symmetric bilinear forms $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$, of signatures $(4,4)$ and $(4,4)$ over the eight real coordinates, the Hermitian condition is the symmetry, the natural conjugation becomes an admissible involution, and the layer is the bilinear one. The object of the layer at the complex datum has no collapse: the sesquilinear form $h$ is genuinely sesquilinear, its inner-product structure is genuinely complex, and the realification is a separate reading.</p>
+<p><em>Proof.</em> The statement is the collapse of <em>Sesqualgebras with a Form</em>, §<em>The Collapse at the Trivial Involution</em>, read on the four pairings: at $\varsigma = \mathrm{id}$ the sesquilinear forms have both slots linear, hence are bilinear and symmetric, and the two tables of signatures are those of <em>The Realification of the Four Forms</em>, §<em>The Four Gram Matrices</em>, and <em>Operators of the Real Biquaternion Algebra</em>. $\square$</p>
+<p><strong>Remark (which statements are sesquilinear).</strong> The compatibility, the adjoint rule $L_{\tilde{P}}^{*} = L_{\tilde{P}^{*}}$ and the failure of the corresponding rule for $g$ hold in both categories and are read at the real base as the self-adjointness of the left multiplications for the symmetric forms; the sesquilinear content of the article is the dichotomy of the two slots, the modulus in the Hermitian condition and the fact that the definite form $h$ has a complex Hilbert structure that the realification does not retain. The reading over the real base of the whole region, the signatures and the subalgebras, is <em>The Realification of the Four Forms</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra carries four distinguished pairings, and the layer of <em>Sesqualgebras with a Form</em> selects one of them. The selection is a dichotomy in the two slots: $\mathrm{id}$ and the natural conjugation ${}^{\natural}$ are $\mathbb{C}$-linear and the Hermitian conjugation ${}^{*}$ is $\mathbb{C}$-antilinear, so the pairings with $\mathrm{id}$ in the second slot are <strong>bilinear</strong> — the complex and the general quaternionic bilinear forms $\langle\tilde{P},\tilde{Q}\rangle = \operatorname{Sc}(\tilde{P}\tilde{Q})$ and $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \operatorname{Sc}(\tilde{P}^{\natural}\tilde{Q})$, of the bilinear layer — and the pairings with ${}^{*}$ there are <strong>sesquilinear</strong>, linear in the first slot and $\varsigma$-semilinear in the second. Of the two sesquilinear ones, the complex form $h(\tilde{P},\tilde{Q}) = \operatorname{Sc}(\tilde{P}\tilde{Q}^{*}) = \sum_{\mu}P_{\mu}\varsigma(Q_{\mu})$ is Hermitian, positive definite, nondegenerate with Gram matrix $\mathrm{I}_{4}$ and <strong>compatible with the product</strong>, $h(\tilde{P}\tilde{Q},\tilde{R}) = h(\tilde{Q},\tilde{P}^{*}\tilde{R})$ by $\operatorname{Sc}$-cyclicity, equivalently $(L_{\tilde{P}})^{h} = L_{\tilde{P}^{*}}$, so $(\mathbb{B},{}^{*},h)$ is an <strong>object of the layer</strong>, its unitary elements $\tilde{U}^{*}\tilde{U} = e_{0}$ form the group $U(2)$ acting by isometries of $h$ with $h(\tilde{U},\tilde{U}) = 1$, and its positivity, inequality, norm and operator theory are the layer's. The general quaternionic sesquilinear form $g(\tilde{P},\tilde{Q}) = \operatorname{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*}) = \operatorname{Sc}(\tilde{P}\bar{\tilde{Q}})$ is Hermitian, nondegenerate, of Gram matrix $\mathrm{E} = \operatorname{diag}(1,-1,-1,-1)$ and signature $(2,6)$, but its adjoint rule is $(L_{\tilde{P}})^{g} = R_{\bar{\tilde{P}}}$, a <strong>right</strong> multiplication, so it is a Hermitian form on the algebra and <strong>not</strong> a form of the layer; it is the indefinite companion of $h$ through the <strong>fundamental symmetry</strong> ${}^{\natural}$, $g(\tilde{P},\tilde{Q}) = h(\tilde{P}^{\natural},\tilde{Q})$, with the centre and the vector subspace as its eigenspaces, which is why its inertia is $(1,3,0)$, and on the unitary slice its value is $2\lvert U_{0}\rvert^{2} - 1 \in [-1,1]$. The <strong>caution</strong> of the article is that the natural conjugation is $\mathbb{C}$-linear and hence produces a bilinear form, is admissible as an involution only over the real base, and enters the layer in the third role of a self-adjoint operator and fundamental symmetry; the four pairings are therefore four objects, the layer takes one, and the region's articles — <em>The Four Pairings of the Biquaternion Algebra</em>, <em>Biquaternion Norm and Invertibility</em>, <em>The Fundamental Symmetry of the Biquaternion Algebra</em>, <em>The Unitary Group of the Biquaternion Algebra</em>, <em>The Four Pairings of the Biquaternion Algebra</em> — develop the four, while the placing of the algebra in the general layer is this article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, $\tilde{Q} = \sum_{\mu}Q_{\mu}e_{\mu}$</td>
+<td>the biquaternion algebra and its coefficient basis</td>
+</tr>
+<tr>
+<td>$\operatorname{Sc}$, $\varepsilon = (1,-1,-1,-1)$, $\operatorname{Sc}(e_{\mu}e_{\nu}) = \varepsilon_{\mu}\delta_{\mu\nu}$</td>
+<td>the scalar part and the sign string</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$, ${}^{\natural}$, ${}^{*} = {}^{\natural}\bar{\cdot}$</td>
+<td>the coefficient conjugation, linear; the natural conjugation, linear; the Hermitian conjugation, antilinear</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$ automorphic, ${}^{*}$ anti-automorphic</td>
+<td>the layer's involution is the antilinear anti-automorphism</td>
+</tr>
+<tr>
+<td>$\langle\tilde{P},\tilde{Q}\rangle = \operatorname{Sc}(\tilde{P}\tilde{Q})$, $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \operatorname{Sc}(\tilde{P}^{\natural}\tilde{Q})$</td>
+<td>the two bilinear pairings, of the bilinear layer</td>
+</tr>
+<tr>
+<td>$h(\tilde{P},\tilde{Q}) = \langle\tilde{P},\tilde{Q}\rangle_{*} = \operatorname{Sc}(\tilde{P}\tilde{Q}^{*}) = \sum_{\mu}P_{\mu}\varsigma(Q_{\mu})$</td>
+<td>the layer's sesquilinear form, Hermitian, positive definite, Gram $\mathrm{I}_{4}$</td>
+</tr>
+<tr>
+<td>$h(\tilde{P}\tilde{Q},\tilde{R}) = h(\tilde{Q},\tilde{P}^{*}\tilde{R})$, $(L_{\tilde{P}})^{h} = L_{\tilde{P}^{*}}$</td>
+<td>the compatibility; the object $(\mathbb{B},{}^{*},h)$</td>
+</tr>
+<tr>
+<td>$g(\tilde{P},\tilde{Q}) = \operatorname{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*}) = \operatorname{Sc}(\tilde{P}\bar{\tilde{Q}})$</td>
+<td>the general quaternionic sesquilinear form, indefinite, Gram $\mathrm{E}$, signature $(2,6)$</td>
+</tr>
+<tr>
+<td>$(L_{\tilde{P}})^{g} = R_{\bar{\tilde{P}}}$, $g(\tilde{P}\tilde{Q},\tilde{R}) = g(\tilde{Q},\tilde{R}\bar{\tilde{P}})$</td>
+<td>the adjoint rule that makes $g$ not of the layer</td>
+</tr>
+<tr>
+<td>$g(\tilde{P},\tilde{Q}) = h(\tilde{P}^{\natural},\tilde{Q})$</td>
+<td>the bridge identity: ${}^{\natural}$ is the fundamental symmetry of $(g,h)$</td>
+</tr>
+<tr>
+<td>$\tilde{U}^{*}\tilde{U} = e_{0}$, $h(\tilde{U},\tilde{U}) = 1$, $g(\tilde{U},\tilde{U}) = 2\lvert U_{0}\rvert^{2}-1$</td>
+<td>the unitary slice $U(2)$ and the two forms on it</td>
+</tr>
+<tr>
+<td>$\lvert U_{0}\rvert = 1/\sqrt{2}$</td>
+<td>the set where the slice meets the indefinite null set</td>
+</tr>
+<tr>
+<td>$\varsigma = \mathrm{id}$</td>
+<td>the collapse to the real base: ${}^{*} = {}^{\natural}$, symmetric bilinear forms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the algebras with involution and the Hermitian forms they carry.</li>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for the symmetric and Hermitian forms over a field with involution and the sesquilinear categories.</li>
+<li>I. Martin Isaacs, <em>Character Theory of Finite Groups</em> (Academic Press, 1976), and Israel Nathan Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for the trace of the regular representation and the cyclicity of the scalar part.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the positive forms, the associated operator theory and the self-adjoint operators.</li>
+<li>J. Bognár, <em>Indefinite Inner Product Spaces</em> (Springer, 1974), for the indefinite forms, the fundamental symmetry and the Krein structure the indefinite companion belongs to.</li>
+<li>Igor R. Shafarevich and Alexei O. Remizov, <em>Linear Algebra and Geometry</em> (Springer, 2013), for the classical classification of the sesquilinear and bilinear forms by their Gram matrices and signatures.</li>
+<li>E. Christopher Lance, <em>Hilbert $\mathrm{C}^{*}$-Modules: A Toolkit for Operator Algebraists</em> (Cambridge University Press, 1995), for the sesquilinear forms with values in an algebra and the compatibility they generalise.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

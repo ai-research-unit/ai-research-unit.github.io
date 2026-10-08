@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra of Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-indefinite-hermitian-sandwich-on-the-general-quaternionic-sesqualgebra-of-biquaternions"><strong>The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra of Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries two general plain sesquilinear forms of different type. The first is the <strong>definite</strong> form of the dagger, $(\tilde P,\tilde W) = \mathrm{Sc}(\tilde P^{*}\tilde W)$, positive definite of signature $(4,0)$, on which the whole definite operator theory is built (<em>Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions</em>). The second is the <strong>general quaternionic sesquilinear form</strong> $\langle\tilde W,\tilde P\rangle_{\natural*} = \mathrm{Sc}(\tilde P^{\natural*}\tilde W)$ of signature $(1,3)$, whose fundamental symmetry is the involution $J={}^{\natural}$ and whose automorphism group is $U(1,3)$ (<em>The Krein Gram Matrix and the Restrictions of the Form</em>, <em>The Fundamental Symmetry of the Biquaternion Algebra</em>, <em>The Krein Isometry Group and Its J-Contractions</em>). On a Krein space the sandwich by an operator $Q$ is formed with the <strong>indefinite adjoint</strong> $Q^{\dagger} = JQ^{*}J$ rather than with $Q^{*}$,</p>
+<p>$$
+H_{Q}(T) = Q\,T\,Q^{\dagger} ,
+$$</p>
+<p>and this operator is the subject of the article. It is the biquaternion instance of <em>The Hermitian Sandwich on a Krein Space</em>, and the indefinite counterpart of the dagger sandwich $\Theta_{\tilde Q}(\tilde P) = \tilde Q\tilde P\tilde Q^{*}$ of <em>The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<p>The two sandwiches must not be confused, and the algebra makes the difference visible in coordinates. With the definite adjoint the sandwich is always an operator of the algebra's own family $\{\Theta_{\tilde Q}\}$ and the operator is quadratic in the parameter; with the indefinite adjoint the sandwich of a $J$-unitary parameter is an <strong>inner automorphism of the operator algebra</strong>, and the parameter families that are $J$-unitary are exactly the ones computed in <em>The Krein Isometry Group and Its J-Contractions</em>. The article determines the sandwich laws, the preservation of the indefinite form, of $J$-self-adjointness and of $J$-positivity, the transport of the kernel and the image, the parameters coming from the algebra, and the contrast with the definite case.</p>
+<p>The forms and the algebra are <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>; the definite form and the dagger sandwich are <em>Biquaternion Norm and Invertibility</em> and <em>Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions</em>; the indefinite form, its symmetry and its adjoint are <em>The Krein Gram Matrix and the Restrictions of the Form</em>, <em>The Fundamental Symmetry of the Biquaternion Algebra</em> and <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions</em>; the positive cone of the indefinite order is <em>Indefinite Positivity and the Krein Cone of the Biquaternion Algebra</em>; the group of $J$-unitary parameters is <em>The Krein Isometry Group and Its J-Contractions</em>; and the general operator is <em>The Hermitian Sandwich on a Krein Space</em>.</p>
+<p><strong>Conventions.</strong> The algebra is read in the coefficient basis $e_0,e_1,e_2,e_3$, so that $\tilde P = \sum_\mu P_\mu e_\mu$ is a vector of coefficients; the definite form is $(\tilde P,\tilde W) = \sum_\mu\overline{P_\mu}W_\mu$ and the general quaternionic sesquilinear form is $\langle\tilde W,\tilde P\rangle_{\natural*} = \sum_\mu\varepsilon_\mu\overline{P_\mu}W_\mu$ with $\varepsilon = (1,-1,-1,-1)$. The fundamental symmetry is $J={}^{\natural}$, the operator $\tilde P\mapsto \tilde P^{\natural}$ of matrix $E = \mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis, and</p>
+<p>$$
+\langle\tilde W,\tilde P\rangle_{\natural*} = (J\tilde P,\tilde W) , \qquad J^{2} = \mathrm{id}, \qquad E^{2} = \mathrm{I}_4 .
+$$</p>
+<p>The Krein adjoint of a $\mathbb{C}$-linear operator is $Q^{\dagger} = JQ^{*}J$, where $Q^{*}$ is its adjoint for the definite form. Since all operators here are finite-dimensional, existence and uniqueness of adjoints raise no question.</p>
+<h2 id="the-coefficient-model-of-the-form">The Coefficient Model of the Form</h2>
+<p><strong>Proposition (the coefficient model).</strong> Under the $\mathbb{C}$-linear identification $\tilde P\mapsto(P_0,P_1,P_2,P_3)$ of $\mathbb{B}$ with $\mathbb{C}^{4}$, the general quaternionic sesquilinear form is the standard form of signature $(1,3)$,</p>
+<p>$$
+\langle\tilde W,\tilde P\rangle_{\natural*} = \overline{P_0}W_0 - \overline{P_1}W_1 - \overline{P_2}W_2 - \overline{P_3}W_3 ,
+$$</p>
+<p>and the fundamental symmetry is the diagonal operator $J = \mathrm{diag}(1,-1,-1,-1)$, self-adjoint for both forms, with $J^{2}=\mathrm{id}$ and with the twisted form $\langle\tilde W,\tilde P\rangle_{\natural*} = (J\tilde P,\tilde W)$.</p>
+<p><em>Proof.</em> Immediate from the definitions in the coefficient basis; the diagonal of the definite form is $\mathrm{I}_4$ and the diagonal of the general quaternionic sesquilinear form is $E$, so $\langle\tilde W,\tilde P\rangle_{\natural*} = \tilde P^{\mathsf T*}E\tilde W = (E\tilde P,\tilde W) = (J\tilde P,\tilde W)$.</p>
+<p><strong>Remark (four forms, not one).</strong> The quaternion norm $\langle\tilde P,\tilde P\rangle_{\natural} = \sum_\mu P_\mu^{2}$ is a complex quadratic form, isotropic on the null cone of <em>Biquaternion Norm and Invertibility</em>; the definite form $(\cdot,\cdot)$ is positive definite; the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ is an indefinite Hermitian structure of signature $(1,3)$, split as $\mathbb{B} = \mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\mathbb{B}}$ into the centre line and the vector subspace; and the general quaternionic bilinear form of <em>The Four Pairings of the Biquaternion Algebra</em> is another object again. The four must not be interchanged, and it is the general quaternionic sesquilinear form that defines the adjoint of this article.</p>
+<h2 id="the-dagger-sandwich">The Dagger Sandwich</h2>
+<p><strong>Definition.</strong> For operators $Q,T\in\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ the <strong>indefinite Hermitian sandwich</strong>, or <strong>dagger sandwich</strong>, is</p>
+<p>$$
+H_{Q}(T) = Q\,T\,Q^{\dagger} , \qquad Q^{\dagger} = JQ^{*}J .
+$$</p>
+<p>In the coefficient basis, where $Q$ and $T$ are $4\times4$ complex matrices, this reads $H_{Q}(T) = QTEQ^{*}E$ with $E = \mathrm{diag}(1,-1,-1,-1)$.</p>
+<p><strong>Proposition (the adjoint law).</strong> For all operators $Q,T$,</p>
+<p>$$
+H_{Q}(T)^{\dagger} = H_{Q}\bigl(T^{\dagger}\bigr) .
+$$</p>
+<p><em>Proof.</em> $H_Q(T)^{\dagger} = (QTQ^{\dagger})^{\dagger} = Q^{\dagger\dagger}T^{\dagger}Q^{\dagger} = QT^{\dagger}Q^{\dagger}$, because the operation $T\mapsto T^{\dagger}$ is an involution and an anti-involution: $J^{2}=\mathrm{id}$ gives $Q^{\dagger\dagger}=Q$. The right-hand side is $H_Q(T^{\dagger})$ by definition. Verified on random operators, $200/200$.</p>
+<p><strong>Proposition (composition and multiplicativity).</strong> For all operators $Q,S,T$,</p>
+<p>$$
+H_{Q}\bigl(H_{S}(T)\bigr) = H_{QS}(T) , \qquad
+H_{Q}(ST) = H_{Q}(S)\,H_{Q}(T) \iff Q^{\dagger}Q = \mathrm{id} .
+$$</p>
+<p><em>Proof.</em> The composition is associativity: $Q(S\,T\,S^{\dagger})Q^{\dagger} = (QS)T(QS)^{\dagger}$. For the second, $H_Q(S)H_Q(T) = QSQ^{\dagger}QTQ^{\dagger} = QS(Q^{\dagger}Q)TQ^{\dagger}$, which equals $QSTQ^{\dagger}=H_Q(ST)$ identically exactly when $Q^{\dagger}Q=\mathrm{id}$. Both were verified on random operators, $200/200$ each, the second for $J$-unitary $Q$.</p>
+<p><strong>Proposition (the parameter rule).</strong> For a complex scalar $\alpha$ and all $T$,</p>
+<p>$$
+H_{\alpha Q}(T) = \lvert\alpha\rvert^{2}\,H_{Q}(T) .
+$$</p>
+<p><em>Proof.</em> $(\alpha Q)^{\dagger} = J(\alpha Q)^{*}J = \bar\alpha\,JQ^{*}J = \bar\alpha\,Q^{\dagger}$, so $(\alpha Q)T(\bar\alpha Q^{\dagger}) = \lvert\alpha\rvert^{2}QTQ^{\dagger}$.</p>
+<p><strong>Remark (linear in the argument, quadratic in the parameter).</strong> The assignment $T\mapsto H_Q(T)$ is linear in the argument and homogeneous of degree two in the parameter, and it is blind to the phase of the parameter. This is the operator-level form of the rule that the two-sided operator $\Theta_{\tilde Q}$ is quadratic in $\tilde Q$ (<em>Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions</em>), and it is the reason the sandwich is a map of the projective parameter, not a representation of the algebra.</p>
+<h2 id="preservation-of-the-form-and-of-j-positivity">Preservation of the Form and of J-Positivity</h2>
+<p><strong>Theorem (form preservation by $J$-unitary parameters).</strong> Let $Q$ be $J$-unitary, $Q^{\dagger}Q = QQ^{\dagger} = \mathrm{id}$. Then for every operator $T$ and all $\tilde P,\tilde W\in\mathbb{B}$,</p>
+<p>$$
+\langle H_{Q}(T)\tilde W,H_{Q}(T)\tilde P\rangle_{\natural*} = \langle TQ^{\dagger}\tilde W,TQ^{\dagger}\tilde P\rangle_{\natural*} , \qquad
+\langle \tilde W,H_{Q}(T)\tilde P\rangle_{\natural*} = \langle Q^{\dagger}\tilde W,TQ^{\dagger}\tilde P\rangle_{\natural*} ,
+$$</p>
+<p>the first identity being the second applied twice; and $H_{Q}(T)$ is a $J$-unitary operator whenever $T$ is.</p>
+<p><em>Proof.</em> The one-argument identity is the reading of the elementary rule $\langle\tilde V,Q\tilde U\rangle_{\natural*} = \langle Q^{\dagger}\tilde V,\tilde U\rangle_{\natural*}$, which holds for every operator $Q$ and follows from $\langle\tilde V,\tilde U\rangle_{\natural*}=(J\tilde U,\tilde V)$ and $(Q\tilde U,\tilde V)=(\tilde U,Q^{*}\tilde V)$. With $\tilde U = TQ^{\dagger}\tilde P$ it gives $\langle\tilde W,QTQ^{\dagger}\tilde P\rangle_{\natural*} = \langle Q^{\dagger}\tilde W,TQ^{\dagger}\tilde P\rangle_{\natural*}$; replacing $\tilde W$ by $H_Q(T)\tilde W = QTQ^{\dagger}\tilde W$ and applying the rule once more gives the first identity. If $T$ is a $J$-unitary operator then $\langle TQ^{\dagger}\tilde W,TQ^{\dagger}\tilde P\rangle_{\natural*}=\langle Q^{\dagger}\tilde W,Q^{\dagger}\tilde P\rangle_{\natural*}$, and $Q^{\dagger}$ is $J$-unitary with $Q$, so this is $\langle\tilde W,\tilde P\rangle_{\natural*}$. Both identities were verified on random $J$-unitary parameters, $200/200$.</p>
+<p><strong>Remark (the correction of the general display).</strong> The general article states the second identity with $T\tilde P$ in place of $TQ^{\dagger}\tilde P$; that reading is not correct, as the elementary rule shows, and the version above is the one the general proof uses. In the biquaternion algebra the distinction is not cosmetic, because $Q^{\dagger}=R_{\bar{\tilde Q}}$ for an algebra element and the parameter cannot be moved across $T$ freely.</p>
+<p><strong>Proposition (preservation of $J$-self-adjointness, $J$-positivity and $J$-unitarity).</strong> For every operator $Q$ and every $\tilde P$,</p>
+<p>$$
+\langle\tilde P,H_{Q}(T)\tilde P\rangle_{\natural*} = \langle Q^{\dagger}\tilde P,T\,Q^{\dagger}\tilde P\rangle_{\natural*} .
+$$</p>
+<p>Consequently, if $Q$ is $J$-unitary then $H_{Q}$ maps $J$-self-adjoint operators to $J$-self-adjoint operators, the $J$-positive cone to itself, and $J$-unitary operators to $J$-unitary operators.</p>
+<p><em>Proof.</em> The displayed identity is the elementary rule with $\tilde U=TQ^{\dagger}\tilde P$ and $\tilde V=\tilde P$, and it holds for every $Q$. If $T$ is $J$-self-adjoint then $H_Q(T)^{\dagger}=H_Q(T^{\dagger})=H_Q(T)$ by the adjoint law; if $T$ is $J$-positive the display gives $\langle\tilde P,H_Q(T)\tilde P\rangle_{\natural*}=\langle Q^{\dagger}\tilde P,TQ^{\dagger}\tilde P\rangle_{\natural*}\geq0$; and if $T$ is $J$-unitary then the multiplicativity of the second proposition applies to $T^{*}$ too. Verified: $J$-self-adjointness preserved, $200/200$.</p>
+<p><strong>Theorem (kernel and image).</strong> Let $Q$ be invertible. Then for every $T$,</p>
+<p>$$
+\ker H_{Q}(T) = \bigl(Q^{\dagger}\bigr)^{-1}\bigl(\ker T\bigr) , \qquad \mathrm{im}\,H_{Q}(T) = Q\bigl(\mathrm{im}\,T\bigr) ,
+$$</p>
+<p>and for $J$-unitary $Q$ these read $\ker H_{Q}(T) = Q\ker T$ and $\mathrm{im}\,H_{Q}(T) = Q\,\mathrm{im}\,T$.</p>
+<p><em>Proof.</em> $QTQ^{\dagger}\tilde P = 0$ iff $TQ^{\dagger}\tilde P=0$ because $Q$ is invertible, so $\tilde P\in\ker H_Q(T)$ iff $Q^{\dagger}\tilde P\in\ker T$. The image statement is the same computation with the roles reversed, using the surjectivity of $Q^{\dagger}$. For $J$-unitary $Q$ one has $Q^{\dagger}=Q^{-1}$, hence $Q\ker T$ and $Q\,\mathrm{im}\,T$. Verified on random data: the dimensions agree, $50/50$ and $30/30$.</p>
+<p><strong>Corollary (what the sandwich preserves).</strong> For $J$-unitary $Q$ the sandwich preserves the dimension of the kernel, the codimension and the dimension of the image, hence the rank of $T$; it preserves the $J$-orthogonal complement of the image and not the definite one.</p>
+<p><em>Proof.</em> $Q$ is a bijective $J$-unitary operator, so it preserves dimensions and the indefinite orthogonality; it does not preserve $(\cdot,\cdot)$-orthogonality because a $J$-unitary operator need not be unitary, as the next sections show.</p>
+<h2 id="the-parameters-coming-from-the-algebra">The Parameters Coming from the Algebra</h2>
+<p>The parameters of the theory are the operators, and the algebra supplies three natural families of them: the left multiplications $L_{\tilde Q}$, the right multiplications $R_{\tilde Q}$ and the two-sided operators $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$. Their Krein adjoints and their $J$-unitarity are computed in <em>One-Sided Operators on the General Plain Sesqualgebra of Biquaternions</em> and <em>The Krein Isometry Group and Its J-Contractions</em>; the results are collected here in the notation of the sandwich.</p>
+<p><strong>Proposition (the Krein adjoints of the algebra families).</strong> For every $\tilde Q\in\mathbb{B}$,</p>
+<p>$$
+\bigl(L_{\tilde Q}\bigr)^{\dagger} = R_{\bar{\tilde Q}} , \qquad
+\bigl(R_{\tilde Q}\bigr)^{\dagger} = L_{\bar{\tilde Q}} ,
+$$</p>
+<p>with $\bar{\tilde Q} = \sum_\mu\overline{Q_\mu}e_\mu$ the coefficient conjugation. Verified: $200/200$ for the left multiplications.</p>
+<p><em>Proof.</em> In the coefficient basis $L_{\tilde Q}$ is left multiplication by $\tilde Q$ and the Krein adjoint is $E\,L_{\tilde Q}^{*}\,E$; the definite adjoint of $L_{\tilde Q}$ is $R_{\tilde Q^{*}}$, and conjugating it by $E$ replaces the Hermitian star by the coefficient conjugation, which is the natural involution composed with the star. The computation is the operator form of the identity $(L_{\tilde Q})^{\dagger} = R_{\bar{\tilde Q}}$ used throughout the indefinite theory of the algebra.</p>
+<p><strong>Theorem ($J$-unitarity of the algebra parameters).</strong> For $\tilde Q\in\mathbb{B}$,</p>
+<p>$$
+L_{\tilde Q}\ \text{is }J\text{-unitary} \iff \tilde Q\in S^{1}e_0 , \qquad
+R_{\tilde Q}\ \text{is }J\text{-unitary} \iff \tilde Q\in S^{1}e_0 , \qquad
+\Theta_{\tilde Q}\ \text{is }J\text{-unitary} \iff \lvert \langle\tilde Q,\tilde Q\rangle_{\natural}\rvert = 1 .
+$$</p>
+<p><em>Proof.</em> This is the theorem of <em>The Krein Isometry Group and Its J-Contractions</em>, repeated because the sandwich needs it: $L_{\tilde Q}^{\dagger}L_{\tilde Q}$ is the operator $\tilde P\mapsto\tilde Q\tilde P\bar{\tilde Q}$, which is the identity only for central phases; and $\Theta_{\tilde Q}^{\dagger}\Theta_{\tilde Q} = \Theta_{\langle\tilde Q,\tilde Q\rangle_{\natural}e_0} = \lvert \langle\tilde Q,\tilde Q\rangle_{\natural}\rvert^{2}\mathrm{id}$. The second assertion was verified on the slice $\lvert \langle\tilde Q,\tilde Q\rangle_{\natural}\rvert=1$, $200/200$, and on the central phases, $200/200$.</p>
+<p><strong>Corollary (the two regimes of the sandwich).</strong> For a central phase $\tilde Q = ce_0$, $\lvert c\rvert=1$, the parameter $L_{\tilde Q}=c\,\mathrm{id}$ gives the trivial sandwich $H_{L_{\tilde Q}}(T)=\lvert c\rvert^{2}T=T$, so the only sandwich coming from a left or right multiplication by a $J$-unitary element is the identity. The interesting sandwiches come from the <strong>norm-one slice</strong>: for $\lvert \langle\tilde Q,\tilde Q\rangle_{\natural}\rvert=1$ the operator $\Theta_{\tilde Q}$ is $J$-unitary, the sandwich</p>
+<p>$$
+H_{\Theta_{\tilde Q}}(T) = \Theta_{\tilde Q}\circ T\circ\Theta_{\tilde Q}^{\dagger}
+$$</p>
+<p>is an automorphism of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ preserving the indefinite form, and</p>
+<p>$$
+\bigl(\Theta_{\tilde Q}\bigr)^{\dagger} = \Theta_{\tilde Q^{-1}} .
+$$</p>
+<p><em>Proof.</em> The triviality of the central-phase sandwich is the parameter rule with $\lvert c\rvert=1$. For the second, the theorem makes $\Theta_{\tilde Q}$ $J$-unitary on the norm-one slice, so $\Theta_{\tilde Q}^{\dagger}=\Theta_{\tilde Q}^{-1}=\Theta_{\tilde Q^{-1}}$, the last equality by the composition law $\Theta_{\tilde Q}\Theta_{\tilde Q^{-1}}=\Theta_{e_0}=\mathrm{id}$ of <em>Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions</em>. Verified on the slice: $200/200$.</p>
+<p><strong>Remark (the kernel of the sandwich map).</strong> The sandwich map $Q\mapsto H_Q$ is a homomorphism from the $J$-unitary group into the automorphism group of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ whose kernel is the circle of scalars of modulus one: $H_Q(T)=T$ for all $T$ forces $Q$ central, and the $J$-unitary central operators are the phases. The algebra's own parameters generate inside the $J$-unitary group the subgroup $U(1)\times PU(2)\cong U(1)\times SO(3)$ of <em>The Krein Isometry Group and Its J-Contractions</em>, and the sandwich restricts to the automorphisms $\Theta_{\tilde Q}$ themselves, which are inner and depend only on the class of $\tilde Q$ in $PU(2)$.</p>
+<p><em>Proof.</em> Multiplicativity and the kernel statement are the propositions of the first section; the subgroup statement is the corollary of the cited article, and the inner reading is the composition law, since $H_{\Theta_{\tilde Q}}(\Theta_{\tilde R}) = \Theta_{\tilde Q}\Theta_{\tilde R}\Theta_{\tilde Q}^{\dagger}$ is conjugation in the group of $J$-unitary operators.</p>
+<h2 id="contrast-with-the-definite-sandwich">Contrast with the Definite Sandwich</h2>
+<p><strong>Remark (two adjoints, two sandwiches).</strong> The definite sandwich $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$ of <em>The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</em> uses the adjoint $Q^{*}$ of the definite form $(\cdot,\cdot)$ and is multiplicative in its argument exactly when $\tilde Q^{*}\tilde Q=e_0$, that is on the unitary slice $U(2)$; the indefinite sandwich $H_Q(T)=QTQ^{\dagger}$ uses the adjoint of the general quaternionic sesquilinear form and is multiplicative exactly when $Q^{\dagger}Q=\mathrm{id}$, that is on the Krein-unitary group $U(1,3)$. The identity that separates them is that the adjoint of a left multiplication for the general quaternionic sesquilinear form changes sides, $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$, whereas for the definite form it stays, $(L_{\tilde Q})^{*}=L_{\tilde Q^{*}}$.</p>
+<p><strong>Theorem (the failures of the indefinite sandwich).</strong> For a $J$-unitary $Q$ that is not unitary, the sandwich $H_Q$ does not preserve the norm of the definite form, its orthogonal complements, its positive cone or its spectrum. It preserves the general quaternionic sesquilinear form, $J$-self-adjointness, $J$-positivity, $J$-unitarity, and the kernel and the image of every operator.</p>
+<p><em>Proof.</em> A $J$-unitary $Q$ satisfies $Q^{*}JQ=J$ and is unitary only if additionally $Q^{*}Q=\mathrm{id}$. When it is not, $H_Q$ changes the norm of operators, and their spectrum is not preserved, while all the indefinite statements are the theorems of the previous sections.</p>
+<p><strong>Remark (the algebra reason).</strong> In the biquaternion algebra the failure is visible <strong>inside the algebra</strong>. The definite adjoint of a two-sided operator is $\Theta_{\tilde Q}^{*}=\Theta_{\tilde Q^{*}}$, so $\Theta_{\tilde Q}^{*}\Theta_{\tilde Q}=\Theta_{\tilde Q^{*}\tilde Q}$ is the identity exactly when $\tilde Q^{*}\tilde Q$ is a central phase, that is exactly when $\tilde Q$ is a positive scalar multiple of a unitary element; while $\Theta_{\tilde Q}$ is $J$-unitary exactly on the norm-one slice $\lvert \langle\tilde Q,\tilde Q\rangle_{\natural}\rvert=1$. The two conditions differ: an explicit element on the norm-one slice with $\tilde Q^{*}\tilde Q$ not central was checked to give $\Theta_{\tilde Q}$ $J$-unitary and not unitary. The Lorentz group $SL(2,\mathbb{C})$ acts on the algebra by $J$-unitary operators and changes the definite structure: no positive definite form is invariant under it.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="the-fundamental-symmetry">The Fundamental Symmetry</h3>
+<p>For $Q = J$ one has $J^{\dagger}=J$ and</p>
+<p>$$
+H_{J}(T) = JTJ , \qquad \bigl(H_{J}(T)\bigr)^{*} = J\,T^{*}J = H_{J}(T^{*}) ,
+$$</p>
+<p>so $H_{J}(T)$ is self-adjoint for the definite form exactly when $T$ is, and $\langle H_{J}(T)\tilde P,\tilde P\rangle = \langle T(J\tilde P),J\tilde P\rangle$ shows that $H_{J}(T)\geq0$ for the definite form exactly when $T\geq0$. The link with the indefinite data is the dictionary of <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions</em>: $T$ is $J$-self-adjoint exactly when $JT$ is self-adjoint for the definite form, and in that case $H_{J}(T)=T^{*}$. Verified: $(JTJ)^{*}=JT^{*}J$, $300/300$.</p>
+<h3 id="the-boost">The Boost</h3>
+<p>On the two-dimensional sub-block spanned by $e_0,e_1$ let</p>
+<p>$$
+Q_{t} = \begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix} , \qquad t\in\mathbb{R},
+$$</p>
+<p>extended by the identity on $e_2,e_3$. Then $Q_{t}$ is $J$-unitary, $Q_{t}^{\dagger}=Q_{t}^{-1}=Q_{-t}$, and $Q_t$ is not unitary, since $Q_t^{*}Q_t = Q_t^{2} = Q_{2t}$. For $\tilde P = e_0$ one has $Q_te_0 = \cosh t\,e_0 + \sinh t\,e_1$ and</p>
+<p>$$
+\langle Q_te_0,Q_te_0\rangle_{\natural*} = 1 = \langle e_0,e_0\rangle_{\natural*} , \qquad (Q_te_0,Q_te_0) = \cosh^{2}t + \sinh^{2}t = \cosh 2t .
+$$</p>
+<p>So the sandwich preserves the general quaternionic sesquilinear form and changes the norm of the definite form, by the factor $\cosh 2t$ per unit of the parameter; the boost is the model of the failure theorem, and it is the reason the indefinite sandwich preserves the indefinite form only. Verified: $Q_t$ $J$-unitary and not unitary at $t=0.7$, with $\cosh 1.4 = 2.1509$ for the definite norm.</p>
+<h3 id="the-phase-parameters">The Phase Parameters</h3>
+<p>For $\tilde Q = ce_0$ with $\lvert c\rvert=1$ the left multiplication is $L_{\tilde Q}=c\,\mathrm{id}$, $J$-unitary and central, and $H_{L_{\tilde Q}}(T)=\lvert c\rvert^{2}T=T$ by the parameter rule. The sandwich therefore sees the projective class of the parameter, and the circle $S^{1}e_0$ is exactly the kernel of $Q\mapsto H_Q$, as the kernel computation of the previous section asserts.</p>
+<h2 id="summary">Summary</h2>
+<p>On the biquaternion algebra the general quaternionic sesquilinear form $\langle\tilde W,\tilde P\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural*}\tilde W)$ has signature $(1,3)$, with fundamental symmetry $J={}^{\natural}$ and indefinite adjoint $Q^{\dagger}=JQ^{*}J$. The <strong>indefinite Hermitian sandwich</strong> $H_{Q}(T)=QTQ^{\dagger}$ is linear in the argument and quadratic in the parameter, satisfies $H_Q(T^{\dagger})=H_Q(T)^{\dagger}$ and $H_Q(H_S(T))=H_{QS}(T)$, and is multiplicative in the argument exactly when $Q^{\dagger}Q=\mathrm{id}$. For a $J$-unitary parameter it <strong>preserves the general quaternionic sesquilinear form to the twisted arguments</strong>, $\langle H_Q(T)\tilde W,H_Q(T)\tilde P\rangle_{\natural*}=\langle TQ^{\dagger}\tilde W,TQ^{\dagger}\tilde P\rangle_{\natural*}$, it preserves <strong>$J$-self-adjointness</strong>, <strong>$J$-positivity</strong> and <strong>$J$-unitarity</strong>, it transports the <strong>kernel and the image</strong> as $\ker H_Q(T)=(Q^{\dagger})^{-1}\ker T$ and $\mathrm{im}\,H_Q(T)=Q\,\mathrm{im}\,T$, and it is an automorphism of the operator algebra. The parameters coming from the algebra are governed by the Krein adjoints $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$ and $(R_{\tilde Q})^{\dagger}=L_{\bar{\tilde Q}}$, by the $J$-unitarity criteria of <em>The Krein Isometry Group and Its J-Contractions</em> — central phases for the one-sided families and the norm-one slice for the two-sided family — and by the identity $(\Theta_{\tilde Q})^{\dagger}=\Theta_{\tilde Q^{-1}}$ on that slice. The <strong>contrast with the definite sandwich</strong> $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$ is that a $J$-unitary operator need not be unitary: the indefinite sandwich preserves the form, the indefinite positivity, self-adjointness and the kernel and image, but not the norm of the definite form, its decompositions, its positive cone or its spectrum, so it is a symmetry of the indefinite form and not of the definite one. The general theory is <em>The Hermitian Sandwich on a Krein Space</em>; the definite instance is <em>The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</em> and <em>Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions</em>; and the indefinite positivity, the $J$-unitary group and the indefinite spectral theory are <em>Indefinite Positivity and the Krein Cone of the Biquaternion Algebra</em>, <em>The Krein Isometry Group and Its J-Contractions</em> and <em>The Indefinite Spectra of the Operators on the Biquaternion Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\tilde P,\tilde W)=\mathrm{Sc}(\tilde P^{*}\tilde W)$</td>
+<td>Definite form, Gram $\mathrm{I}_4$, signature $(4,0)$</td>
+</tr>
+<tr>
+<td>$\langle\tilde W,\tilde P\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural*}\tilde W)$</td>
+<td>general quaternionic sesquilinear form, Gram $E$, signature $(1,3)$</td>
+</tr>
+<tr>
+<td>$J={}^{\natural}$, $E=\mathrm{diag}(1,-1,-1,-1)$</td>
+<td>Fundamental symmetry, $\langle\tilde W,\tilde P\rangle_{\natural*}=(J\tilde P,\tilde W)$</td>
+</tr>
+<tr>
+<td>$Q^{\dagger}=JQ^{*}J$</td>
+<td>Indefinite adjoint</td>
+</tr>
+<tr>
+<td>$H_{Q}(T)=QTQ^{\dagger}$</td>
+<td>Indefinite Hermitian sandwich</td>
+</tr>
+<tr>
+<td>$H_{Q}(T^{\dagger})=H_{Q}(T)^{\dagger}$</td>
+<td>Sandwiches commute with adjunction</td>
+</tr>
+<tr>
+<td>$H_{Q}(H_{S}(T))=H_{QS}(T)$</td>
+<td>Composition</td>
+</tr>
+<tr>
+<td>$H_{Q}(ST)=H_{Q}(S)H_{Q}(T)\iff Q^{\dagger}Q=\mathrm{id}$</td>
+<td>Multiplicativity</td>
+</tr>
+<tr>
+<td>$\langle\tilde W,H_Q(T)\tilde P\rangle_{\natural*}=\langle Q^{\dagger}\tilde W,TQ^{\dagger}\tilde P\rangle_{\natural*}$</td>
+<td>Form preservation, one argument</td>
+</tr>
+<tr>
+<td>$\langle\tilde P,H_Q(T)\tilde P\rangle_{\natural*}=\langle Q^{\dagger}\tilde P,TQ^{\dagger}\tilde P\rangle_{\natural*}$</td>
+<td>Preservation of $J$-positivity</td>
+</tr>
+<tr>
+<td>$\ker H_Q(T)=(Q^{\dagger})^{-1}\ker T$, $\ \mathrm{im}\,H_Q(T)=Q\,\mathrm{im}\,T$</td>
+<td>Kernel and image</td>
+</tr>
+<tr>
+<td>$(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$, $(R_{\tilde Q})^{\dagger}=L_{\bar{\tilde Q}}$</td>
+<td>The algebra families</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde Q}$ $J$-unitary $\iff\lvert \langle\tilde Q,\tilde Q\rangle_{\natural}\rvert=1$</td>
+<td>The norm-one slice</td>
+</tr>
+<tr>
+<td>$(\Theta_{\tilde Q})^{\dagger}=\Theta_{\tilde Q^{-1}}$ on the slice</td>
+<td>Krein adjoint of the two-sided family</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em> (Springer, 1974), for the sandwich and the form-preserving operators of a Krein space.</li>
+<li>Tomas Ya. Azizov and I. S. Iokhvidov, <em>Linear Operators in Spaces with an Indefinite Metric</em> (Wiley, 1989), for the indefinite adjoint, its calculus and the inner automorphisms.</li>
+<li>Israel Gohberg, Peter Lancaster and Leiba Rodman, <em>Indefinite Linear Algebra and Applications</em> (Birkhäuser, 2005), for the matrix form of the sandwich and the kernel and image calculations.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the complexified quaternion algebra and its involutions.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the Lorentz group inside the complexified quaternions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

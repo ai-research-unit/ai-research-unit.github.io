@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Euclidean Form, the Norm and the Completion on a Clifford Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-euclidean-form-the-norm-and-the-completion-on-a-clifford-algebra"><strong>The Euclidean Form, the Norm and the Completion on a Clifford Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Clifford algebra over a definite real form can be made a Euclidean space by declaring the blades orthonormal, and this article is the Part II half of that construction: it owns the Euclidean form on the completion, the boundedness of the multiplication operators, and the Cauchy–Schwarz inequality with the compactness of the unit ball.</p>
+<p>The algebraic half is in Part I. The three invariant scalar forms — the blade form, the Hermitian–Schmidt form and the trace form — their diagonalisation by the blades, their definiteness and the adjoints of left and right multiplication with respect to them are in <em>The Blade Form and the Hermitian Structure with Hermitian Adjoint</em>. What is added here is the metric layer: the form as a scalar product on a Hilbert space, the norm and its failure to be submultiplicative, and the completion.</p>
+<p>The conventions are those of <em>The Blade Form and the Hermitian Structure with Hermitian Adjoint</em>: $\mathrm{Cl}(V,q)$ is the Clifford algebra of a quadratic form $q$, the $e_I$ are the blades of an orthogonal basis, and $\mathrm{Sc}$ is the scalar part.</p>
+<h2 id="the-euclidean-form-and-the-completion">The Euclidean Form and the Completion</h2>
+<p><strong>Definition.</strong> The <strong>Euclidean form</strong> of the algebra is</p>
+<p>$$
+(x,y) = \sum_I a_I\,b_I ,
+$$</p>
+<p>the form in which the blades of an orthonormal basis are an orthonormal basis. Over a real base with $q$ positive definite it is the blade form of <em>The Blade Form and the Hermitian Structure with Hermitian Adjoint</em>, and $\langle x,x\rangle = \sum_I a_I^{2} > 0$; over a complex base the same positive structure is the conjugate-reversion form $\sum_I \bar a_I b_I = \mathrm{Sc}(x^{r,\sigma}y)$, $\sigma$-sesquilinear and positive definite.</p>
+<p><strong>Proposition.</strong> Over a real base with $q$ positive definite the Euclidean form makes $\mathrm{Cl}(V,q)$ a finite-dimensional Hilbert space; its completion in infinite dimension is the Hilbert space on which the canonical anticommutation relations are represented, in <em>Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation</em>. The blade form and the form of the dagger are the Euclidean form twisted by the signature signs, so all three are unitarily equivalent after a diagonal change of basis; the distinction between them is the distinction between the geometries and not between the topological spaces.</p>
+<h2 id="boundedness-of-the-multiplication-operators">Boundedness of the Multiplication Operators</h2>
+<p><strong>Proposition.</strong> With the Euclidean norm $\|x\| = (x,x)^{1/2}$, every $L_x$ and $R_x$ is bounded, and</p>
+<p>$$
+\|xy\| \le 2^{n/2}\,\|x\|\,\|y\| .
+$$</p>
+<p>For $x$ a blade the inequality holds with constant $1$: $\|e_Iy\| = \|y\|$, since left multiplication by a blade permutes the blade basis up to signs.</p>
+<p><strong>Proof.</strong> Each $e_I$ acts by a signed permutation of the blade basis, so $\|L_{e_I}\|_{\mathrm{op}} = 1$. For general $x = \sum_I a_Ie_I$, subadditivity of the operator norm gives</p>
+<p>$$
+\|L_x\|_{\mathrm{op}} \le \sum_I |a_I| \le \Bigl(2^{n}\sum_I|a_I|^{2}\Bigr)^{1/2} = 2^{n/2}\|x\| ,
+$$</p>
+<p>by Cauchy–Schwarz on the $2^{n}$ coefficients. Then $\|xy\| = \|L_xy\| \le \|L_x\|_{\mathrm{op}}\|y\|$.</p>
+<p><strong>Remark (the norm is not submultiplicative).</strong> The constant $2^{n/2}$ is not an accident of the proof: the Euclidean norm of a Clifford algebra is not submultiplicative. The bound $2^{n/2}$ is a Cauchy–Schwarz estimate: the ratio $\|xy\|/(\|x\|\|y\|)$ is at least $2^{1/2}$ in every dimension, the element $\tfrac12(1 + e_1)$, which is not a blade, satisfying $x^{2}=x$ with $\|x\|=2^{-1/2}$; in $\mathrm{Cl}_{1,0}$, where the bound equals $2^{1/2}$, this value is the bound itself, while in the higher dimensions the bound is not known to be attained. This is the reason the algebra is completed as a Hilbert space with a von Neumann or a Clifford algebra structure rather than as a Banach algebra in this norm.</p>
+<h2 id="cauchyschwarz-positivity-and-the-cone">Cauchy–Schwarz, Positivity and the Cone</h2>
+<p><strong>Proposition (Cauchy–Schwarz).</strong> For the Euclidean form, $|(x,y)|^{2} \le (x,x)(y,y)$ with equality exactly when $x$ and $y$ are proportional.</p>
+<p><strong>Proof.</strong> The form is positive definite, so the standard proof applies; equality is the case of linear dependence.</p>
+<p><strong>Corollary.</strong> The set $\{x : (x,x) \le 1\}$ is the closed unit ball of the algebra and is compact, and the set $\{x : x = y^{\dagger}y\}$ is the positive cone of <em>Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint</em>; in dimension three with the definite form the latter is the cone over the sphere of radius $1/2$ that appears in <em>Spin Factors and the Clifford Envelope with Inner Conjugation</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>Over a real base with $q$ positive definite the <strong>Euclidean form</strong> $(x,y)=\sum_I a_I b_I$, in which the blades are orthonormal, makes $\mathrm{Cl}(V,q)$ a finite-dimensional Hilbert space, and its completion in infinite dimension is the Hilbert space on which the canonical anticommutation relations are represented. With the Euclidean norm every left and right multiplication is bounded, with $\|xy\|\le 2^{n/2}\|x\|\|y\|$ — a constant that is the price of the failure of the norm to be submultiplicative, and the reason the algebra is completed as a Hilbert space rather than as a Banach algebra in this norm. <strong>Cauchy–Schwarz</strong> holds for the Euclidean form, the set $\{x:(x,x)\le1\}$ is the compact closed unit ball, and $\{x:x=y^{\dagger}y\}$ is the positive cone. The algebraic forms, their definiteness and the adjoints of the multiplications are in <em>The Blade Form and the Hermitian Structure with Hermitian Adjoint</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Cl}(V,q)$</td>
+<td>Clifford algebra of a quadratic form $q$</td>
+</tr>
+<tr>
+<td>$e_I$, $i_1 < \dots < i_k$</td>
+<td>Blade of an orthogonal basis</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(x)$</td>
+<td>Scalar part, the coefficient of $1$</td>
+</tr>
+<tr>
+<td>$(x,y) = \sum_I a_Ib_I$</td>
+<td>Euclidean form, blades orthonormal</td>
+</tr>
+<tr>
+<td>$\|x\| = (x,x)^{1/2}$</td>
+<td>Euclidean norm</td>
+</tr>
+<tr>
+<td>$L_x$, $R_x$</td>
+<td>Left and right multiplication by $x$</td>
+</tr>
+<tr>
+<td>$2^{n/2}$</td>
+<td>Bound constant in $\|xy\| \le 2^{n/2}\|x\|\|y\|$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the Hermitian structure of the spinor bundle and the positive definite spinor form.</li>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics II</em>, Texts and Monographs in Physics (Springer, 2nd ed. 1997), for the Clifford algebra of a Hilbert space, the completion and the canonical anticommutation relations.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the trace form and the separability criterion.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

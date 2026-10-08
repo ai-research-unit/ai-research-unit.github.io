@@ -53,10 +53,10 @@
         <h1 id="the-symplectic-form-and-the-biquaternion-norm-cone"><strong>The Symplectic Form and the Biquaternion Norm Cone</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>Hamiltonian mechanics is symplectic geometry. The phase space carries a closed, non-degenerate two-form $\omega$, the Hamiltonian vector field of a function $f$ is defined by $\iota_{X_f}\omega=df$, and the Poisson bracket is $\{f,g\}=\omega(X_f,X_g)$. When the phase space is linear and the form is constant, the same data can be presented as a triple: a positive-definite metric $g$, an antisymmetric form $\omega$, and a complex structure $J$ compatible with both, with $g(Ju,Jv)=g(u,v)$ and $\omega(u,v)=g(Ju,v)$. This is the <strong>Kähler</strong> presentation, and it is the one the biquaternion algebra reproduces.</p>
-<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries two canonical quadratic structures: the <strong>Hermitian form</strong> $\tilde Z^{*}\tilde W$ with its scalar part $\mathrm{Sc}(\tilde Z^{*}\tilde W)$, and the <strong>holomorphic biquaternion norm</strong> $N(\tilde Z) = \langle\tilde Z,\tilde Z\rangle_{\natural}=\tilde Z\tilde Z^{\natural}=\sum_\mu Z_\mu^2$. The first is positive definite; the second is a complex bilinear form whose vanishing set is a complex cone — the <strong>biquaternion-norm cone</strong>. The thesis of this article is that these two structures are the two faces of one object:</p>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries two canonical quadratic structures: the <strong>Hermitian form</strong> $\tilde Z^{*}\tilde W$ with its scalar part $\mathrm{Sc}(\tilde Z^{*}\tilde W)$, and the <strong>holomorphic biquaternion norm</strong> $N(\tilde Z) = \langle\tilde Z,\tilde Z\rangle_{\natural}=\tilde Z\tilde Z^{\natural}=\sum_\mu Z_\mu^2$. The first is positive definite; the second is a general plain bilinear form whose vanishing set is a complex cone — the <strong>biquaternion-norm cone</strong>. The thesis of this article is that these two structures are the two faces of one object:</p>
 <ol>
 <li>The Hermitian pairing, read on the phase-space biquaternion $\tilde Z=\tilde q+i\tilde p$, has a real part that is the Euclidean metric $g$ and an imaginary part that is the symplectic form $\omega$. The algebra's complex structure $i$ is the Kähler $J$.</li>
-<li>The holomorphic biquaternion norm is the symmetric complex bilinear form of the same complex structure; its isotropic cone is the biquaternion-norm cone. On the material sector that cone is the light cone, and it is the characteristic cone of the d'Alembertian.</li>
+<li>The holomorphic biquaternion norm is the symmetric general plain bilinear form of the same complex structure; its isotropic cone is the biquaternion-norm cone. On the material sector that cone is the light cone, and it is the characteristic cone of the d'Alembertian.</li>
 <li>On the coadjoint orbit of the companion articles, the symplectic form is the Souriau form and the orbit is a level set of the biquaternion norm; the cone is the degenerate orbit at zero level.</li>
 </ol>
 <p>The article is classical throughout. The Hermitian pairing is the trace pairing that the companion articles on $\mathbb{M}_+$ write as the Born pairing; here it is read as a phase-space metric and a symplectic form, and no measurement postulate is involved. No commutator appears.</p>
@@ -208,7 +208,7 @@ $$</p>
 <p>$$
 N(\tilde Z)=Z_1^2+Z_2^2+Z_3^2 .
 $$</p>
-<p>Unlike the Hermitian form, $N$ is <strong>holomorphic</strong>: it is a complex bilinear form, $N(\alpha\tilde Z)=\alpha^2N(\tilde Z)$ for complex $\alpha$, and its polarization is the symmetric bilinear form</p>
+<p>Unlike the Hermitian form, $N$ is <strong>holomorphic</strong>: it is a general plain bilinear form, $N(\alpha\tilde Z)=\alpha^2N(\tilde Z)$ for complex $\alpha$, and its polarization is the symmetric bilinear form</p>
 <p>$$
 B(\tilde Z,\tilde W)=\mathrm{Sc}\!\left(\tilde Z\tilde W^{\natural}\right)
 =\bigl(\mathbf q\cdot\mathbf r-\mathbf p\cdot\mathbf s\bigr)
@@ -228,7 +228,7 @@ $$</p>
 <p>$$
 |\mathbf q|^2-|\mathbf p|^2=0,\qquad \mathbf q\cdot\mathbf p=0 .
 $$</p>
-<p>The cone is the locus where the configuration and momentum magnitudes are equal and the two vectors are orthogonal; it is isotropic for the holomorphic form, $B(\tilde Z,\tilde Z)=N(\tilde Z)=0$. Two remarks are needed. First, the condition equates the magnitudes of $\mathbf q$ and $\mathbf p$, which carry different physical dimensions unless a scale is fixed; the cone is therefore a statement about the complexified phase space after a symplectic normalization, and it is not by itself a physically invariant locus. Second, the cone meets the real phase space $\tilde q,\tilde p$ real only at $\tilde Z=0$: the complex bilinear form is definite there, and its real zero set is a single point. The cone is a genuinely complex object.</p>
+<p>The cone is the locus where the configuration and momentum magnitudes are equal and the two vectors are orthogonal; it is isotropic for the holomorphic form, $B(\tilde Z,\tilde Z)=N(\tilde Z)=0$. Two remarks are needed. First, the condition equates the magnitudes of $\mathbf q$ and $\mathbf p$, which carry different physical dimensions unless a scale is fixed; the cone is therefore a statement about the complexified phase space after a symplectic normalization, and it is not by itself a physically invariant locus. Second, the cone meets the real phase space $\tilde q,\tilde p$ real only at $\tilde Z=0$: the general plain bilinear form is definite there, and its real zero set is a single point. The cone is a genuinely complex object.</p>
 <p>The algebra's reason for caring about the cone is that its points are the <strong>zero divisors</strong>: the biquaternions with $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=0$ are exactly the elements $\tilde Q\neq0$ for which multiplication by $\tilde Q$ is not invertible, so the biquaternion norm's cone is the singular locus of the algebra's product. This is the same cone that the companion articles identify as the boundary of the idempotent (state) manifold in $\mathbb{M}_+$ and as the light cone of the material sector.</p>
 <h3 id="the-material-light-cone">The Material Light Cone</h3>
 <p>The cone becomes physical when the scalar coordinate is imaginary. For a material-sector four-vector $\tilde{Q}=ict\,e_0+\mathbf x\in\mathbb{M}_-$,</p>
@@ -328,7 +328,7 @@ $$</p>
 </tr>
 <tr>
 <td>$B(\tilde Z,\tilde W)=\mathrm{Sc}(\tilde Z\tilde W^{\natural}) = \langle\tilde Z,\tilde W\rangle_{\natural}$</td>
-<td>Symmetric complex bilinear form of $N$</td>
+<td>Symmetric general plain bilinear form of $N$</td>
 </tr>
 <tr>
 <td>$N(\tilde{Q})=0$, $\tilde{Q}=ict\,e_0+\mathbf x$</td>
@@ -348,11 +348,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
-<td>the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+<td>the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
-<td>the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interference without a Lie Algebra: the Jacobi Failure in the State Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="interference-without-a-lie-algebra-the-jacobi-failure-in-the-state-space"><strong>Interference without a Lie Algebra: the Jacobi Failure in the State Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The plain sesquilinear amplitude splits into a central half and a vector half, and the companion article of this band read the vector half as the <strong>phase</strong> of the pairing. There is an algebraic price for a phase that is carried by a vector and not by a central number, and this article states it: the antisymmetric plain sesqualgebra <strong>fails the Jacobi identity</strong>, so the phase structure of the framework carries <strong>no symmetry algebra</strong>.</p>
+<p>The failure is exact and small enough to see at a glance. For the antisymmetric plain sesqualgebra $\tilde P\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})$, the cyclic sum of the block at the triple $(e_0,e_1,e_2)$ — the outer form $\mathrm{cyc}\,\wedge_{*}$ defined below — is</p>
+<p>$$
+\mathrm{cyc}\,\wedge_{*}(e_0,e_1,e_2)=e_3\neq0,
+$$</p>
+<p>so the operation is not a Lie bracket and there is no Lie algebra of generators attached to it. The contrast is with the antisymmetric <strong>plain</strong> product, whose antisymmetrisation is the cross product, alternates, satisfies the Jacobi identity and closes as the algebra of the rotations; the contrast with that closing bracket is the whole reading of this article. The operation still has a <strong>sesquilinear pairing</strong> — the Hermitian form read on its values — and the article states it, because the pairing is what survives where the algebra does not. The bound of the band stands: the phase is <strong>read from</strong> a value, and a failure of an identity is a negative result about the algebra and supplies no dynamics.</p>
+<p><strong>Boundaries.</strong> The Jacobi failure, the witness and the quadric of the diagonal are <em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>; the pairing and the invariant forms are <em>The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra</em>; the general Lie structures of a sesqualgebra, including the failure of the Jacobi identity of an antisymmetrised sesquilinear product and the Lie structure that actually exists, are <em>Lie Algebras of Sesqualgebras</em> and <em>The Sesquilinear Commutator</em>. The closing bracket is <em>The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity</em>, <em>The Lie Algebra of the Antisymmetric Plain Algebra</em> and <em>Angular Momentum and the Lie Algebra of the Material Sector</em>; the physical angular momentum is <em>Angular Momentum and Spin in Biquaternionic Form</em>. The other antisymmetrised sesquilinear-type product and its failure are <em>The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator</em> and <em>Boosts, Mixed Terms and the Missing Lie Structure</em>; the state side is <em>Mass, Rank and the Positivity of the Dagger</em>. The companion of this band is <em>The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product</em>.</p>
+<p><strong>Conventions.</strong> As in the companion articles and in <em>Conventions in the Biquaternion Universe</em>: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$; $\tilde Q=Q_0e_0+\mathbf Q$, $Q_\mu\in\mathbb{C}$; ${}^{\natural}$ the natural conjugation, $\overline{\cdot}$ the coefficientwise one, ${}^{*}=\overline{\cdot}\circ{}^{\natural}$; $\mathrm{Sc}$ and $\mathrm{Vect}$ the scalar and vector parts, $\mathrm{Tr}=2\,\mathrm{Sc}$; the Hermitian form $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$; the operations $\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)e_0$ (symmetric) and $\tilde P\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})$ (antisymmetric). The bilinear dot and cross products of vector parts are $(\mathbf P,\mathbf Q)$ and $\mathbf P\times\mathbf Q$, and the sesquilinear triple bracket is $[\mathbf P,\mathbf Q,\mathbf R]=(\mathbf P\times\mathbf Q,\mathbf R)$. The antisymmetric plain product of the algebra row is written $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q$, the quaternionic antisymmetric product $\tilde P\wedge_{Q}\tilde Q$. The sectors are $\mathbb{M}_{\pm}$ and the state side is $\mathbb{M}_{+}$.</p>
+<h2 id="the-jacobi-identity-and-its-failure">The Jacobi Identity and Its Failure</h2>
+<h3 id="the-identity-to-be-tested">The Identity to be Tested</h3>
+<p>The antisymmetric half of a bilinear product is a Lie bracket exactly when it is alternating and satisfies the Jacobi identity, and the antisymmetric plain product of the algebra row is the model: it is the cross product of the vector parts,</p>
+<p>$$
+\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q,
+$$</p>
+<p>which alternates and closes, so its values exponentiate to the rotations. The same test asked of the antisymmetric <strong>sesquilinear</strong> half of the plain product gives the negative answer of this article.</p>
+<h3 id="the-witness">The Witness</h3>
+<p><strong>The operation fails the Jacobi identity.</strong> For an operation $b$ additive in each variable, the <strong>cyclic sum</strong> at a triple is the outer form</p>
+<p>$$
+\mathrm{cyc}\,b(\tilde X,\tilde Y,\tilde Z)=b\bigl(b(\tilde X,\tilde Y),\tilde Z\bigr)+b\bigl(b(\tilde Y,\tilde Z),\tilde X\bigr)+b\bigl(b(\tilde Z,\tilde X),\tilde Y\bigr),
+$$</p>
+<p>which vanishes for all triples exactly when $b$ satisfies the Jacobi identity (<em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>). At the real triple $(e_0,e_1,e_2)$ the cyclic sum of the block does not vanish. The basis table of the operation reads</p>
+<p>$$
+e_0\wedge_{*} e_1=-e_1,\qquad e_1\wedge_{*} e_2=-e_3,\qquad e_2\wedge_{*} e_0=e_2,\qquad e_2\wedge_{*} e_1=e_3,
+$$</p>
+<p>so the three terms are</p>
+<p>$$
+\wedge_{*}(e_0\wedge_{*} e_1,e_2)=\wedge_{*}(-e_1,e_2)=e_3,
+$$</p>
+<p>$$
+\wedge_{*}(e_1\wedge_{*} e_2,e_0)=\wedge_{*}(-e_3,e_0)=-e_3,
+$$</p>
+<p>$$
+\wedge_{*}(e_2\wedge_{*} e_0,e_1)=\wedge_{*}(e_2,e_1)=e_3,
+$$</p>
+<p>and the sum is</p>
+<p>$$
+\mathrm{cyc}\,\wedge_{*}(e_0,e_1,e_2)=e_3\neq0 .
+$$</p>
+<p>That is the menued witness: the <strong>cyclic sum $e_3$</strong> at $(e_0,e_1,e_2)$.</p>
+<p><strong>Remark (the second, conjugated witness).</strong> The failure has a second face that the real basis does not see. At the triple $(e_1,e_1,ie_2)$, which needs the non-real coefficient $i$ in the third slot, the cyclic sum is $-2ie_2$; the real triple exhibits one failure and the conjugated triple the other, and the mathematics records both (<em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>).</p>
+<p><strong>Remark (verified).</strong> With the definition $\tilde P\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})$, the outer cyclic sum at $(e_0,e_1,e_2)$ is $e_3$ and at $(e_1,e_1,ie_2)$ is $-2ie_2$; the failure is generic and not a basis accident, the cyclic sum being nonzero on $100$ of $100$ random triples.</p>
+<h3 id="why-it-fails">Why It Fails</h3>
+<p>The failure is structural and it is the same mechanism as the failure of the Jordan identity in the companion band. The operation is conjugate-linear in its <strong>second</strong> slot, and a double bracket therefore reintroduces a conjugation at the wrong place; a commutator of a <strong>bilinear associative</strong> product closes because the associativity rearranges the two products, while an antisymmetrisation of a <strong>genuine sesquilinear</strong> product does not. The mathematics states the criterion exactly — the antisymmetrisation of a derived sesquilinear product is antisymmetric and satisfies the Jacobi identity only in the collapse case where the two involutions are trivial, that is only when the product is bilinear and the sesqualgebra is an algebra (<em>Lie Algebras of Sesqualgebras</em>, <em>The Sesquilinear Commutator</em>) — and this article reads the consequence: for the plain sesqualgebra the complex conjugation is nontrivial and the identity fails, so this block supplies no bracket.</p>
+<p><strong>Remark (the terminology).</strong> The operation $\tilde P\wedge_{*}\tilde Q$ is the antisymmetric half of the product under the <strong>conjugate</strong> exchange — the interchange of the two arguments twisted by the coefficientwise conjugation — and it is <em>not</em> the sesquilinear commutator $[\tilde P,\tilde Q]_{\varsigma}=\tilde P\tilde Q^{*}-\tilde Q\tilde P^{*}$ of <em>The Sesquilinear Commutator</em>, which is the antisymmetric half under the bare interchange. The two are the two readings of the antisymmetry of one product, and the mathematics holds the exact relation $[\tilde P,\tilde Q]_{\varsigma}=2\,\tilde P\wedge_{*}\tilde Q+\bigl(\overline{\tilde Q\tilde P^{*}}-\tilde Q\tilde P^{*}\bigr)$, whose defect is the imaginary part of the swapped value and vanishes on the real span, where the commutator is twice the block (<em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>, <em>The Sesquilinear Commutator</em>). The failure of the Jacobi identity is a property of this half, and this article does not attribute it to the commutator — nor does it read the commutator's failure, whose witness is a triple of matrix units in the two-by-two model and not a triple of this basis.</p>
+<h2 id="the-absence-of-a-symmetry-algebra">The Absence of a Symmetry Algebra</h2>
+<h3 id="no-lie-algebra-of-the-phase">No Lie Algebra of the Phase</h3>
+<p>A bracket that fails the Jacobi identity is not a Lie bracket, and the operation is therefore <strong>not the Lie algebra of any group</strong>. There is no adjoint representation, no exponential of an adjoint action, and no conserved bilinear Killing form read from the operation; the whole layer that a Lie algebra supports is unavailable. The reading is the one the band's title records: <strong>the phase structure of the framework carries no symmetry algebra</strong>. An interference term is assembled from two amplitudes; it is a relational datum and not an infinitesimal transformation, and the operation that assembles it generates nothing.</p>
+<h3 id="the-contrast-with-the-closing-bracket">The Contrast with the Closing Bracket</h3>
+<p>The contrast is with the antisymmetric plain product, and it is sharp because the two operations are built by the same recipe from the two sides of the four-product grid.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>feature</th>
+<th>antisymmetric plain product $\wedge$</th>
+<th>antisymmetric plain sesquilinear product $\wedge_{*}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>$\mathbf P\times\mathbf Q$, vector subspace</td>
+<td>$\mathrm{Vect}(\tilde P\tilde Q^{*})$, vector subspace</td>
+</tr>
+<tr>
+<td>diagonal</td>
+<td>alternating, $\tilde P\wedge\tilde P=0$</td>
+<td>not zero, $\tilde P\wedge_{*}\tilde P=\mathrm{Vect}(\tilde P\tilde P^{*})$</td>
+</tr>
+<tr>
+<td>law</td>
+<td>antisymmetric, $\tilde P\wedge\tilde Q=-\tilde Q\wedge\tilde P$</td>
+<td>conjugate-alternating, $-\overline{\tilde Q\wedge_{*}\tilde P}$</td>
+</tr>
+<tr>
+<td>Jacobi identity</td>
+<td>holds</td>
+<td>fails, witness $(e_0,e_1,e_2)$, cyclic sum $e_3$</td>
+</tr>
+<tr>
+<td>reading</td>
+<td>the algebra of rotations, $SO(3)$</td>
+<td>no symmetry algebra</td>
+</tr>
+</tbody>
+</table></div>
+<p>The closing bracket is read as the generators of the rotations and as the local algebra of the material sector (<em>The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity</em>, <em>Angular Momentum and the Lie Algebra of the Material Sector</em>, <em>The Lie Algebra of the Antisymmetric Plain Algebra</em>), and the physical angular momentum of the corpus is raised from it (<em>Angular Momentum and Spin in Biquaternionic Form</em>). The failing bracket raises nothing of the kind, and the two rows of the table are the exact statement that the symmetry layer belongs to the antisymmetric <strong>plain</strong> product — the cross product — and not to the sesquilinear antisymmetrisations.</p>
+<p><strong>Remark (the neighbours that also fail).</strong> The block is not alone in failing. The antisymmetric quaternionic product fails the Jacobi identity at the same triple with the cyclic sum $-e_3$, read as the associator defect of the quaternionic product (<em>The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator</em>, <em>Boosts, Mixed Terms and the Missing Lie Structure</em>); the two failures are different in cause — an associator defect there, a twist defect here — and the mathematics separates them (<em>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra</em>). The reading of the whole grid is that the antisymmetric <strong>plain</strong> product alone closes, while the quaternionic antisymmetrisation and the two sesquilinear ones fail, so the state row of the framework is a row of pairings and not a row of generators.</p>
+<h2 id="the-sesquilinear-pairing-of-the-bracket">The Sesquilinear Pairing of the Bracket</h2>
+<h3 id="the-pairing">The Pairing</h3>
+<p>A bracket that closes carries an invariant bilinear form, the Killing form; the failing bracket carries instead the <strong>Hermitian form read on its values</strong>, because the form is defined on the whole algebra and the operation is algebra-valued. For all biquaternions,</p>
+<p>$$
+H\bigl(\tilde P\wedge_{*}\tilde Q,\tilde R\bigr)
+=-P_0\bigl(\overline{\mathbf Q},\overline{\mathbf R}\bigr)
++\overline{Q_0}\,\bigl(\mathbf P,\overline{\mathbf R}\bigr)
+-\bigl[\mathbf P,\overline{\mathbf Q},\overline{\mathbf R}\bigr],
+\qquad
+[\mathbf P,\mathbf Q,\mathbf R]=(\mathbf P\times\mathbf Q,\mathbf R),
+$$</p>
+<p>the <strong>sesquilinear pairing of the bracket</strong> (<em>The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra</em>).</p>
+<h3 id="its-class">Its Class</h3>
+<p>The pairing is <strong>$\mathbb{C}$-linear in the first argument and conjugate-linear in the second and in the third</strong>: the operation is conjugate-linear in its second slot, the form is conjugate-linear in its second slot, and the two conjugations stack without cancelling, which is exactly the algebraic reason the Jacobi identity failed on the same product. A tri-linear object of this class is a <strong>relative</strong> pairing of three amplitudes and not a bracket of an algebra. It is also worth recording the contrast in the second-slot behaviour with the pairing of the closing bracket: a Killing form is symmetric and bilinear, and this pairing is neither.</p>
+<h3 id="where-the-positivity-goes">Where the Positivity Goes</h3>
+<p>The form $H$ is positive definite on the algebra, so on the values of the operation it is positive definite as well: $H(\tilde P\wedge_{*}\tilde Q,\tilde P\wedge_{*}\tilde Q)\ge0$, with equality exactly when the value vanishes. Positivity therefore does not fail the block; the order does. The point of the pairing section is that the <strong>form survives where the algebra does not</strong>: the operation has no generators and no Killing form, and it still has the definite form, read on its values, which is what makes the interference term a positive-length vector of the informational sector and not a symmetry generator.</p>
+<p><strong>Remark (the invariant forms are one-dimensional).</strong> A form $\beta$ is invariant under the block in the sense $\beta(\tilde P\wedge_{*}\tilde Q,\tilde R)=-\overline{\beta(\tilde P,\tilde Q\wedge_{*}\tilde R)}$, and the space of such $\beta$ is <strong>one-complex-dimensional</strong>, spanned by the form that reads the scalar slot; so the invariance of $H$ itself — its invariance under the inner action that the algebra rows carry — does not descend to the block. This is the mathematics' statement (<em>The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra</em>, <em>Lie Algebras of Sesqualgebras</em>), cited here and not re-proved. The reading is again negative and exact: the failing block is not the home of an invariant form of a symmetry algebra, only of the definite form of the vector space it lives in.</p>
+<p><strong>Remark (verified).</strong> The identity with the triple bracket holds on $100$ random triples to $<10^{-13}$; the quadratic form of the pairing is strictly positive on every nonzero value tested.</p>
+<p><strong>Remark (the pairing as a tensor).</strong> The three arguments enter with the parities $\mathbb{C}$-linear, conjugate-linear, conjugate-linear, so the pairing is a tensor of the class $(\mathbb{C},\bar{\cdot},\bar{\cdot}\,)$ and not an invariant of a bracket; the maths article states the invariance that remains and its one-dimensionality (<em>The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra</em>).</p>
+<h2 id="interference-without-a-lie-algebra">Interference without a Lie Algebra</h2>
+<h3 id="the-reading">The Reading</h3>
+<p>Collecting the two bands: the plain sesquilinear amplitude splits into a central probability and a vector phase; the phase half is conjugate-alternating, has a non-vanishing diagonal and fails the Jacobi identity; it therefore carries a <strong>pairing</strong> and no <strong>algebra</strong>. Physically, the phase half of the corpus's amplitudes is the <strong>interference term</strong> (<em>The Double-Slit Experiment in Biquaternionic Form</em>, the companion article <em>The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product</em>): an interference term is assembled from two amplitudes, it is a relational datum and not a state, and it makes no sense to ask for its generators. The framework here agrees with the physical situation rather than departing from it: interference is a <strong>relational</strong> datum of two amplitudes and not an infinitesimal symmetry. What the algebra adds is the exact statement that the relational datum is the vector half of the pairing and that the operation producing it is not a Lie algebra.</p>
+<h3 id="the-contrast-with-the-observable-side">The Contrast with the Observable Side</h3>
+<p>The same contrast, seen from the state side. The state side $\mathbb{M}_{+}$ carries the observables, and the two operations of its row are the symmetric half (which fails the Jordan identity, so it is not a Jordan algebra; the companion band) and the antisymmetric half (which fails the Jacobi identity, so it is not a Lie algebra; this article). The symmetry generators of the framework live on the <strong>material</strong> side and on the <strong>bilinear</strong> products, where the brackets close, and the <strong>angular momentum</strong> of the corpus is raised there and not here. The state row therefore supplies probabilities and phases and <strong>no generators</strong>, which is the negative statement that the two bands of the pair have been building to. It is the natural counterpart, on the state side, of the statement that the state row of the framework is a row of pairings and not a row of transformations.</p>
+<p><strong>Remark (the caution).</strong> A failure of the Jacobi identity is a <strong>negative result</strong>: it says the operation is not a Lie algebra, and it does not say that the phase is unphysical, that interference is unreal, or that no group acts on the state space. The physical phases of the corpus remain what the phase articles make them (<em>The Path Integral in Biquaternionic Form</em>, <em>Geometric Phases of Non-Relativistic Spin in Biquaternionic Form</em>, <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em>, <em>Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</em>), and the groups that act on the state space are the internal action and the compact slice (<em>Observables, Gauge Generators and the Chirality of the Internal Action</em>, <em>Particle Types, Discrete Charge and Three-Particle Couplings</em>), neither of which is raised from this operation. The failure is an obstruction of one construction and not a statement about the world.</p>
+<h2 id="ledger">Ledger</h2>
+<p><strong>What the operation does.</strong>
+- Supplies the vector half of the sesquilinear amplitude, the phase and interference half of the pairing.
+- Carries the sesquilinear pairing $H(\tilde P\wedge_{*}\tilde Q,\tilde R)$, conjugate-linear in the last two slots.
+- Has positive-definite length on its values, since $H$ is definite on the algebra.</p>
+<p><strong>What the operation does not do.</strong>
+- It is not a Lie bracket: the Jacobi identity fails at $(e_0,e_1,e_2)$ with the cyclic sum $e_3$.
+- It raises no symmetry algebra: no adjoint action, no exponential, no invariant Killing form.
+- Its invariant pairings are one-dimensional and do not include the invariance of $H$.
+- It is a pairing and not a generator, and it measures no phase.</p>
+<h2 id="summary">Summary</h2>
+<p>The antisymmetric plain sesqualgebra <strong>fails the Jacobi identity</strong>: at the witness $(\tilde P,\tilde Q,\tilde R)=(e_0,e_1,e_2)$ the cyclic sum of the outer form is <strong>$e_3$</strong>, at the conjugated witness $(e_1,e_1,ie_2)$ it is $-2ie_2$, and the failure is generic (nonzero on $100$ of $100$ random triples). The reason is structural: the operation is conjugate-linear in its second slot, so a double bracket reintroduces the conjugation at the wrong place, and the antisymmetrised sesquilinear product is a Lie bracket only in the collapse case where the two involutions are trivial, that is only for a bilinear product. The operation is therefore <strong>not the Lie algebra of any group</strong> and raises no symmetry algebra, in exact contrast with the antisymmetric <strong>plain</strong> product $\tilde P\wedge\tilde Q=\mathbf P\times\mathbf Q$, which alternates, closes and gives the algebra of the rotations and the physical angular momentum. What survives is the <strong>sesquilinear pairing</strong> of the bracket, $H(\tilde P\wedge_{*}\tilde Q,\tilde R)=-P_0(\overline{\mathbf Q},\overline{\mathbf R})+\overline{Q_0}(\mathbf P,\overline{\mathbf R})-[\mathbf P,\overline{\mathbf Q},\overline{\mathbf R}]$, $\mathbb{C}$-linear in the first argument and conjugate-linear in the second and third, whose invariant forms are one-complex-dimensional and do not include the invariance of $H$; positivity does not fail, only the algebra does. The reading is that the phase structure of the framework carries a <strong>pairing and no symmetry algebra</strong>, which is the algebraic form of the physical fact that an interference term is a relational datum of two amplitudes and not an infinitesimal transformation; the state row supplies probabilities and phases and no generators, and the caution is that a failure of an identity is an obstruction of a construction and not a statement about the world.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})$</td>
+<td>the antisymmetric plain sesqualgebra; not a Lie bracket</td>
+</tr>
+<tr>
+<td>$\mathrm{cyc}\,\wedge_{*}(e_0,e_1,e_2)=e_3$</td>
+<td>the failing cyclic sum</td>
+</tr>
+<tr>
+<td>$\mathrm{cyc}\,\wedge_{*}(e_1,e_1,ie_2)=-2ie_2$</td>
+<td>the conjugated witness</td>
+</tr>
+<tr>
+<td>$(\tilde P,\tilde Q,\tilde R)=(e_0,e_1,e_2)$</td>
+<td>the witness of the Jacobi failure</td>
+</tr>
+<tr>
+<td>$\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q$</td>
+<td>the closing bracket; alternates, Jacobi holds, gives $SO(3)$</td>
+</tr>
+<tr>
+<td>$H(\tilde P\wedge_{*}\tilde Q,\tilde R)$</td>
+<td>the sesquilinear pairing of the bracket</td>
+</tr>
+<tr>
+<td>$[\,\mathbf P,\mathbf Q,\mathbf R\,]=(\mathbf P\times\mathbf Q,\mathbf R)$</td>
+<td>the sesquilinear triple bracket</td>
+</tr>
+<tr>
+<td>$H(\tilde P\wedge_{*}\tilde Q,\tilde P\wedge_{*}\tilde Q)\ge0$</td>
+<td>the definite length on the values</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{+}$</td>
+<td>the state side; no generators raised from the pair</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em> (<code>articles_maths/the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.md</code>), which owns the failure and the witness.</li>
+<li><em>The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra</em> (<code>articles_maths/the-sesquilinear-pairing-of-the-antisymmetric-plain-sesqualgebra.md</code>), which owns the pairing and the invariant forms.</li>
+<li><em>Lie Algebras of Sesqualgebras</em> (<code>articles_maths/lie-algebras-of-sesqualgebras.md</code>), for the general criterion and the Lie structure that actually exists.</li>
+<li><em>The Sesquilinear Commutator</em> (<code>articles_maths/the-sesquilinear-commutator.md</code>), for the bracket the operation is not.</li>
+<li><em>The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity</em> (<code>articles_physics/the-cross-product-as-a-lie-bracket-rotations-and-the-jacobi-identity.md</code>), the closing bracket.</li>
+<li><em>The Lie Algebra of the Antisymmetric Plain Algebra</em> (<code>articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra.md</code>), the algebra of the closing bracket.</li>
+<li><em>Angular Momentum and Spin in Biquaternionic Form</em> (<code>articles_physics/angular-momentum-and-spin-in-biquaternionic-form.md</code>), the physical angular momentum, raised from the closing bracket.</li>
+<li><em>The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator</em> (<code>articles_physics/the-brackets-that-do-not-close-the-jacobi-failure-of-the-quaternionic-commutator.md</code>), the neighbouring failure.</li>
+<li><em>The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product</em> (<code>articles_physics/the-imaginary-part-of-the-born-pairing-the-antisymmetric-sesquilinear-product.md</code>), the companion article of the band.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

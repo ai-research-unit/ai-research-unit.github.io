@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-antisymmetric-quaternionic-sesqualgebra-of-biquaternions"><strong>Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternionic sesquilinear product of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the operation $\tilde P^{\natural}\tilde Q^{*}$ of <em>Introduction to the General Quaternionic Sesqualgebra of Biquaternions</em>, with one $\mathbb{C}$-linear slot and one conjugate-linear slot. Its exchange of the two arguments does not keep the class of the operation, so the splitting of the product into a symmetric and an antisymmetric part is read with the <strong>class-preserving exchange</strong>, the conjugate of the swapped value, and not with the bare interchange; the construction and its two admissible cases are <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>. This article reads the <strong>antisymmetric part</strong> as a multiplication in its own right:</p>
+<p>$$
+\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)
+=\mathbf{P}\times\overline{\mathbf{Q}},
+$$</p>
+<p>scalar part zero and vector part the cross product of the vector part of the first argument with the <strong>conjugate</strong> of the vector part of the second. The operation is the operation named $\mathrm{AQS}$ in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>; it is the only one of the twelve whose value is a single cross-product term with the second argument conjugated, with neither a scalar part nor a mixed term, and its second slot carries the Hermitian conjugation, as do the second slots of the five other sesquilinear operations of the two sesqualgebra rows.</p>
+<p>The reading is one of the twelve operations of the corpus; the general construction of the parts is <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>, the product it splits is <em>Introduction to the General Quaternionic Sesqualgebra of Biquaternions</em>, the sesquilinear obstruction behind its failing law is <em>Lie Algebras of Sesqualgebras</em>, and the block that reads the symmetric half is <em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em>. This article owns the block as a multiplication: the rule, the class, the conjugate-alternation, the pure-vector image, the absence of a unit, the sixteen products of the basis, the non-vanishing diagonal, the failure of the Jacobi identity, and the placement of the block among the twelve. The diagonal and the conjugate cross product are developed in <em>The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra</em>; the pairing with the Krein form is <em>The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra</em>; the six subspaces are <em>The Six Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions</em>; the operators are <em>The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra</em>; and the two matrix models are <em>The Antisymmetric Quaternionic Sesqualgebra in the Matrix Representations</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, central scalar imaginary $i$ and $e_1e_2=e_3$, so that $e_1^2=e_2^2=e_3^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. A generic element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$; $(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$ is the complex bilinear dot product, $\times$ the cross product of the vector parts, and $\overline{\mathbf{Q}}=\sum_k\overline{Q_k}e_k$ the coefficientwise conjugate of the vector part. The natural conjugation ${}^{\natural}$ negates $e_1,e_2,e_3$, the Hermitian conjugation is ${}^{*}={}^{\natural}\circ\bar{\cdot}$, and the Krein form is $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ with $\varepsilon=(1,-1,-1,-1)$, linear in the first argument and conjugate-linear in the second, as the scalar part of the product $\tilde P^{\natural}\tilde Q^{*}$. The operation of the block is written $\diamond$; the comment of the menu entry writes it $\wedge$, and this article prefers $\diamond$ because $\wedge$ names the plain outer product $\mathbf{P}\times\mathbf{Q}$ of <em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em>.</p>
+<h2 id="the-split-of-the-quaternionic-sesquilinear-product">The Split of the Quaternionic Sesquilinear Product</h2>
+<h3 id="the-rule">The Rule</h3>
+<p><strong>Definition.</strong> The <strong>conjugate cross product</strong> of two biquaternions is</p>
+<p>$$
+\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr).
+$$</p>
+<p>It is the <strong>antisymmetric part</strong> of the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ under the class-preserving exchange, the operation named $\mathrm{AQS}$ in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. The space $\mathbb{B}$ with the product $\diamond$ is the <strong>antisymmetric quaternionic sesqualgebra</strong> of the block. The decomposition is the one of the general theory: the class-preserving exchange fixes the two halves, so no choice of notation enters the rule.</p>
+<h3 id="the-scalarvector-and-coordinate-forms">The Scalar–Vector and Coordinate Forms</h3>
+<p><strong>Theorem (the value is a cross product).</strong> For all biquaternions,</p>
+<p>$$
+\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\mathbf{P}\times\overline{\mathbf{Q}},
+$$</p>
+<p>so the scalar part of the value is zero and its vector part is $\mathbf{P}\times\overline{\mathbf{Q}}$.</p>
+<p><em>Proof.</em> The product $\tilde P^{\natural}\tilde Q^{*}$ of <em>Introduction to the General Quaternionic Sesqualgebra of Biquaternions</em> has the scalar–vector form</p>
+<p>$$
+\tilde P^{\natural}\tilde Q^{*}=\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}+\mathbf{P}\times\overline{\mathbf{Q}} .
+$$</p>
+<p>The swapped product $\tilde Q^{\natural}\tilde P^{*}$ has the same form with $\tilde P$ and $\tilde Q$ exchanged, and its conjugate is $\overline{\tilde Q^{\natural}\tilde P^{*}}=\tilde Q^{*}\tilde P^{\natural}$, the second term of the rule. Subtracting the conjugate of the swapped form from the form and halving: the scalar parts cancel because $P_0\overline{Q_0}-\overline{Q_0}P_0=0$ and $(P,\overline{\mathbf{Q}})-(\overline{\mathbf{Q}},\mathbf{P})=0$, the two arguments of the dot product being equal; the two mixed terms are equal and cancel in the subtraction, since the mixed term of the exchanged form is $-\bigl(Q_0\overline{\mathbf{P}}+\overline{P_0}\mathbf{Q}\bigr)$ and its conjugate is $-\bigl(P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}\bigr)$, the mixed term of the form; and the two cross terms add, $\mathbf{P}\times\overline{\mathbf{Q}}+\overline{\mathbf{Q}\times\overline{\mathbf{P}}}=2\,\mathbf{P}\times\overline{\mathbf{Q}}$, since $\overline{\mathbf{Q}\times\overline{\mathbf{P}}}=\overline{\mathbf{Q}}\times\mathbf{P}=-\mathbf{P}\times\overline{\mathbf{Q}}$. The half is therefore $\mathbf{P}\times\overline{\mathbf{Q}}$, of scalar part zero. Verified on general elements.</p>
+<p><strong>Proposition (coordinate rule).</strong> In the coordinates of the two arguments,</p>
+<p>$$
+\tilde P\diamond\tilde Q=\bigl(P_2\overline{Q_3}-P_3\overline{Q_2}\bigr)e_1+\bigl(P_3\overline{Q_1}-P_1\overline{Q_3}\bigr)e_2+\bigl(P_1\overline{Q_2}-P_2\overline{Q_1}\bigr)e_3.
+$$</p>
+<p><em>Proof.</em> The displayed cross product of the vector parts, in the quaternion basis with $e_1e_2=e_3$. Verified on the coordinate rule.</p>
+<h3 id="the-class">The Class</h3>
+<p><strong>Proposition.</strong> The conjugate cross product is <strong>sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$</strong>: it is $\mathbb{C}$-linear in the first argument and conjugate-linear in the second,</p>
+<p>$$
+(A\tilde P)\diamond\tilde Q=A(\tilde P\diamond\tilde Q),\qquad
+\tilde P\diamond(A\tilde Q)=\overline{A}\,(\tilde P\diamond\tilde Q)\qquad(A\in\mathbb{C}).
+$$</p>
+<p><em>Proof.</em> The cross product $\mathbf{P}\times\overline{\mathbf{Q}}$ is $\mathbb{C}$-linear in $\mathbf{P}$ and conjugate-linear in $\overline{\mathbf{Q}}$; equivalently the coordinate rule above is homogeneous of degree one in each coordinate of $\tilde P$ and of degree one in each conjugate coordinate of $\tilde Q$. Verified on the coordinate rule.</p>
+<p><strong>Remark (the class is the whole difficulty of the block).</strong> The operation is conjugate-linear in the second argument; that slot is shared with the five other sesquilinear operations of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, and what singles the block out among the twelve is that its value is the conjugate cross product alone, with no scalar part and no mixed term. Every later statement of the block is a consequence of the conjugate-linear slot: the ordinary operator calculus is unavailable for the left multiplications, the value is not conjugate-symmetric but conjugate-alternating, and the coincidence with the plain cross product holds only on the real elements.</p>
+<h3 id="conjugate-alternation">Conjugate-Alternation</h3>
+<p><strong>Proposition.</strong> The conjugate cross product is <strong>conjugate-alternating</strong>:</p>
+<p>$$
+\tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P}.
+$$</p>
+<p><em>Proof.</em> The rule gives $\tilde Q\diamond\tilde P=\mathbf{Q}\times\overline{\mathbf{P}}$, and $\overline{\mathbf{Q}\times\overline{\mathbf{P}}}=\overline{\mathbf{Q}}\times\mathbf{P}=-\mathbf{P}\times\overline{\mathbf{Q}}$, which is the negative of the value of the block. Verified on the coordinate rule.</p>
+<p>The symmetry is the antisymmetry of the block read through the conjugate of the value, in the sense of <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>: the bare interchange of a sesquilinear product returns the conjugate of the value, and the antisymmetric part is conjugate-alternating rather than alternating.</p>
+<h3 id="the-pure-vector-image-and-the-absence-of-a-unit">The Pure-Vector Image and the Absence of a Unit</h3>
+<p><strong>Proposition.</strong> The values of the block are <strong>pure vector</strong>, so its image is contained in $\mathrm{Vect}(\mathbb{B})$, and it is $\mathrm{Vect}(\mathbb{B})$ itself.</p>
+<p><em>Proof.</em> The rule has no scalar term, so every value has scalar part zero. Conversely every vector $\mathbf{V}$ is attained, since for a real $\mathbf{P}$ the map $\mathbf{Q}\mapsto\mathbf{P}\times\overline{\mathbf{Q}}$ is the cross product with a fixed nonzero real vector, whose values fill the two-dimensional subspace orthogonal to $\mathbf{P}$; taking $\mathbf{P}$ over two independent real directions fills $\mathrm{Vect}(\mathbb{B})$. Verified on the basis, where the values of the block are exactly the six signed vector units.</p>
+<p><strong>Proposition.</strong> The block has <strong>no unit</strong>: there is no element $\tilde E$ with $\tilde E\diamond\tilde Q=\tilde Q$ for all $\tilde Q$, on either side.</p>
+<p><em>Proof.</em> A value of the block is pure vector, while a general $\tilde Q$ has a scalar part; for $\tilde Q=e_0$ every left value $\tilde E\diamond e_0$ is zero, so no $\tilde E$ can reproduce $e_0$. The same argument on the right. Verified on the basis.</p>
+<p>The absence of a unit is shared with the other six parts of the twelve: of the twelve operations, only the general products and the symmetric plain product carry one.</p>
+<h3 id="the-sixteen-products-of-the-basis">The Sixteen Products of the Basis</h3>
+<p><strong>Proposition.</strong> The products of the basis elements are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\diamond$</th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$e_3$</td>
+<td>$-e_2$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$0$</td>
+<td>$-e_3$</td>
+<td>$0$</td>
+<td>$e_1$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$0$</td>
+<td>$e_2$</td>
+<td>$-e_1$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The basis elements are real, so $\overline{\mathbf{Q}}=\mathbf{Q}$ and the block is the ordinary cross product; the table is the cross-product table, with the first row and column zero because a scalar has zero vector part. Verified on the sixteen pairs.</p>
+<p><strong>Remark (which entries vanish and why).</strong> On the sixteen basis pairs the block vanishes exactly on the pairs one of whose arguments is central — the first row and the first column of the table — and on the four diagonal pairs, the diagonal one because a real vector is parallel to its own conjugate. The table is antisymmetric, with $e_\mu\diamond e_\nu=-e_\nu\diamond e_\mu$, as conjugate-alternation requires on the real basis. The diagonal of the block vanishes on the four real basis elements, and the block is nonetheless not alternating on the whole space, as the next section shows.</p>
+<h3 id="the-diagonal-and-the-square">The Diagonal and the Square</h3>
+<p><strong>Theorem (the diagonal does not vanish).</strong> For every biquaternion,</p>
+<p>$$
+\tilde Q\diamond\tilde Q=\mathbf{Q}\times\overline{\mathbf{Q}},
+$$</p>
+<p>which is not zero in general; writing $\mathbf{Q}=\mathbf{a}+i\mathbf{b}$ with $\mathbf{a},\mathbf{b}$ real vectors,</p>
+<p>$$
+\mathbf{Q}\times\overline{\mathbf{Q}}=-2i\,\mathbf{a}\times\mathbf{b},
+$$</p>
+<p>so that at $\tilde Q=e_1+ie_2$ the value is $-2ie_3$.</p>
+<p><em>Proof.</em> The rule with $\tilde P=\tilde Q$; and $\mathbf{Q}\times\overline{\mathbf{Q}}=(\mathbf{a}+i\mathbf{b})\times(\mathbf{a}-i\mathbf{b})=-i\,\mathbf{a}\times\mathbf{b}+i\,\mathbf{b}\times\mathbf{a}=-2i\,\mathbf{a}\times\mathbf{b}$, the two real cross products cancelling. At $\tilde Q=e_1+ie_2$ one has $\mathbf{a}=e_1$, $\mathbf{b}=e_2$ and $\mathbf{a}\times\mathbf{b}=e_3$. Verified on general elements and at the witness.</p>
+<p><strong>Remark (the diagonal against the plain block).</strong> The diagonal of $\mathrm{AQS}$ is the <strong>vector part of the square</strong> in the sense of the conjugate half-difference: $\tilde Q\diamond\tilde Q=\tfrac12\bigl(\tilde Q^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde Q^{*}}\,\bigr)$, the imaginary half of the square $\tilde Q^{\natural}\tilde Q^{*}$ of the general quaternionic sesquilinear product, whose theory is <em>The Square of the General Quaternionic Sesquilinear Product and the Two Halves</em>. This is the bridge to the square article, and it is exact: the block is the conjugate half-difference of the two orders of the square, and it is not the vector part of the value $\tilde Q^{\natural}\tilde Q^{*}$ itself, which differs from the diagonal off the elements whose square has a real scalar part and a purely imaginary vector part.</p>
+<p><strong>Proposition (the diagonal vanishes exactly on the cone of the diagonal).</strong> The diagonal vanishes at $\tilde Q$ exactly when $\mathbf{Q}$ is a complex multiple of a real vector; the set of such $\tilde Q$ is the cone $\tilde Q\diamond\tilde Q=0$, of six real dimensions, the scalar coordinate being free and the vector part running over a cone of four real dimensions in the vector subspace, and the theory of that cone is <em>The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra</em>.</p>
+<h2 id="the-failure-of-the-jacobi-identity">The Failure of the Jacobi Identity</h2>
+<h3 id="the-witness">The Witness</h3>
+<p><strong>Theorem.</strong> The block fails the <strong>Jacobi identity</strong>. With the cyclic sum declared by the corpus,</p>
+<p>$$
+(\tilde P\diamond\tilde Q)\diamond\tilde R+(\tilde Q\diamond\tilde R)\diamond\tilde P+(\tilde R\diamond\tilde P)\diamond\tilde Q,
+$$</p>
+<p>the triple $(\tilde P,\tilde Q,\tilde R)=(e_1,e_1,ie_2)$ gives the value $-2ie_2$, which is not zero.</p>
+<p><em>Proof.</em> The catalogue <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> declares the cyclic sum as the sum of the three reassociations displayed, and records the witness and the value; both are recomputed here on the cross-product table. The three inner values are $e_1\diamond e_1=0$, $e_1\diamond ie_2=\mathbf{e_1}\times\overline{ie_2}=e_1\times(-ie_2)=-ie_3$ and $ie_2\diamond e_1=(ie_2)\times e_1=i(e_2\times e_1)=-ie_3$. Hence the three reassociations are $(e_1\diamond e_1)\diamond ie_2=0$, $(e_1\diamond ie_2)\diamond e_1=(-ie_3)\diamond e_1=(-ie_3)\times e_1=-ie_2$ and $(ie_2\diamond e_1)\diamond e_1=(-ie_3)\diamond e_1=-ie_2$, whose sum is $-2ie_2$. Verified on the witness.</p>
+<p><strong>Remark (the declaration of the cyclic sum).</strong> The corpus declares the cyclic sum as the sum of the three reassociations, and the recomputation above uses that declaration. The older order of the inner brackets, $[[\tilde P,\tilde Q],\tilde R]+\cdots$ with $[\tilde P,\tilde Q]=2(\tilde P\diamond\tilde Q)$, and the sum of the reassociations do not have the same display; the value $-2ie_2$ recorded here is the value of the declared sum, and it is the one tabulated in the catalogue.</p>
+<p><strong>Remark (the smallest witness needs a complex element).</strong> The witness uses the complex element $ie_2$ and no triple of the real basis: on real elements the block is the ordinary cross product of <em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em>, whose Jacobi identity is the classical one and holds, so a real witness cannot exist. The failure is therefore a genuine feature of the complex structure and of the conjugate-linear slot, and it is the only failure of the twelve that needs an element off the real basis.</p>
+<h3 id="the-coincidence-with-the-plain-block-on-the-real-part">The Coincidence with the Plain Block on the Real Part</h3>
+<p><strong>Theorem.</strong> On the real elements the block coincides with the antisymmetric part of the plain product, the map $\tilde P\tilde Q\mapsto\mathbf{P}\times\mathbf{Q}$ of <em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em>:</p>
+<p>$$
+\tilde P\diamond\tilde Q=\mathbf{P}\times\mathbf{Q}=\mathrm{APA}(\tilde P,\tilde Q)
+\qquad(\tilde P,\tilde Q\ \text{real}).
+$$</p>
+<p><em>Proof.</em> A real vector is its own conjugate, so the rule reduces to $\mathbf{P}\times\mathbf{Q}$. Verified on the sixteen real basis pairs.</p>
+<p><strong>Remark (the failure is invisible on the real forms).</strong> The coincidence is the whole reason the failure of the Jacobi identity cannot be witnessed on real elements: there the block is the Lie product $\mathrm{APA}$, whose Jacobi identity holds, and the failure appears only once the conjugate of the second argument differs from the argument. The distinction between $\mathrm{APA}$ and $\mathrm{AQS}$ is the conjugate on the second slot, and it is exactly the distinction that the twelve collapse on the real part, where $\mathrm{APA}=\mathrm{AQS}$.</p>
+<h3 id="the-consequence">The Consequence</h3>
+<p>The failure of the Jacobi identity is the obstruction of <em>Lie Algebras of Sesqualgebras</em> read on the block: the antisymmetrisation of a sesquilinear product is a Lie bracket only after the collapse of the two involutions, which a genuine sesqualgebra forbids, and the block is one of the three failing antisymmetrisations of the corpus. The consequence is stated without proof here and developed with the other two failing brackets in <em>The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra</em>: the block is not a Lie algebra over any ring of scalars of the complex space.</p>
+<h2 id="the-reconstruction-and-the-twelve">The Reconstruction and the Twelve</h2>
+<h3 id="the-reconstruction-math151">The Reconstruction $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$</h3>
+<p><strong>Theorem.</strong> The quaternionic sesquilinear product is the sum of its two parts:</p>
+<p>$$
+\tilde P^{\natural}\tilde Q^{*}=\tilde P\diamond_{\!+}\tilde Q+\tilde P\diamond\tilde Q,
+$$</p>
+<p>where $\tilde P\diamond_{\!+}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\overline{\tilde Q^{\natural}\tilde P^{*}}\,\bigr)$ is the symmetric part $\mathrm{SQS}$ and $\tilde P\diamond\tilde Q$ is the block.</p>
+<p><em>Proof.</em> The half-sum and the half-difference of the value and the conjugate of the swapped value are the two parts of the general construction, and they add to the value; the second is the rule of this article. Verified on general elements.</p>
+<p>The pair is the unique decomposition of the product into a conjugate-symmetric and a conjugate-alternating part, and either determines the other from the product; the symmetric half is <em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em>.</p>
+<h3 id="the-placement-among-the-twelve">The Placement among the Twelve</h3>
+<p>The name $\mathrm{AQS}$ is read with the code of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>: the first letter $\mathrm A$ says that the operation is the antisymmetric part of the row; the second letter $\mathrm Q$ says that the row is the quaternionic product $\tilde P^{\natural}\tilde Q$; and the third letter $\mathrm S$ says that the class is that of the two sesqualgebras over $(\mathbb{C},\bar{\cdot})$, whose second slot is conjugate-linear.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the row</th>
+<th>general</th>
+<th>symmetric</th>
+<th>antisymmetric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the plain algebra</td>
+<td>$\mathrm{GPA}$</td>
+<td>$\mathrm{SPA}$</td>
+<td>$\mathrm{APA}$</td>
+</tr>
+<tr>
+<td>the quaternionic algebra</td>
+<td>$\mathrm{GQA}$</td>
+<td>$\mathrm{SQA}$</td>
+<td>$\mathrm{AQA}$</td>
+</tr>
+<tr>
+<td>the plain sesqualgebra</td>
+<td>$\mathrm{GPS}$</td>
+<td>$\mathrm{SPS}$</td>
+<td>$\mathrm{APS}$</td>
+</tr>
+<tr>
+<td>the quaternionic sesqualgebra</td>
+<td>$\mathrm{GQS}$</td>
+<td>$\mathrm{SQS}$</td>
+<td>$\mathrm{AQS}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the place of the block).</strong> The block is conjugate-linear in its second slot, pure-vector-valued, has no unit, and fails the Jacobi identity; its diagonal does not vanish and its image is the vector subspace. Of the twelve operations it is the only one whose value is the conjugate cross product alone, and on the real part it falls together with $\mathrm{APA}$. The names and the laws of the twelve are owned by <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, and the general construction of the parts by <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The antisymmetric part of the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ is the operation</p>
+<p>$$
+\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\mathbf{P}\times\overline{\mathbf{Q}},
+$$</p>
+<p>the conjugate cross product, the only operation of the twelve whose value is a single cross-product term with the second argument conjugated. It is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-alternating, pure-vector-valued with image $\mathrm{Vect}(\mathbb{B})$, and has no unit. Its diagonal does not vanish, $\tilde Q\diamond\tilde Q=\mathbf{Q}\times\overline{\mathbf{Q}}=-2i\,\mathbf{a}\times\mathbf{b}$ at $\mathbf{Q}=\mathbf{a}+i\mathbf{b}$, and it is $-2ie_3$ at $e_1+ie_2$. The Jacobi identity fails, with the witness $(e_1,e_1,ie_2)$ whose declared cyclic sum is $-2ie_2$; the witness needs a complex element, and on the real elements the block coincides with $\mathrm{APA}$, so the failure is invisible there. The product reconstructs as $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$, the half-sum and the half-difference of the two orders of the square of the quaternionic sesquilinear product.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})$</td>
+<td>the conjugate cross product, the multiplication of the block</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\diamond}$</td>
+<td>the biquaternion space with the conjugate cross product</td>
+</tr>
+<tr>
+<td>$\mathrm{AQS}$</td>
+<td>the name of the operation among the twelve</td>
+</tr>
+<tr>
+<td>$\mathbf{P}\times\overline{\mathbf{Q}}$</td>
+<td>the scalar–vector rule of the block</td>
+</tr>
+<tr>
+<td>$\tilde Q\diamond\tilde Q=\mathbf{Q}\times\overline{\mathbf{Q}}$</td>
+<td>the diagonal, non-vanishing in general</td>
+</tr>
+<tr>
+<td>$(e_1,e_1,ie_2)\mapsto-2ie_2$</td>
+<td>the Jacobi witness</td>
+</tr>
+<tr>
+<td>$\mathrm{APA}=\mathbf{P}\times\mathbf{Q}$</td>
+<td>the real coincidence of the block</td>
+</tr>
+<tr>
+<td>$\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$</td>
+<td>the reconstruction of the quaternionic sesquilinear product</td>
+</tr>
+<tr>
+<td>$K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$</td>
+<td>the Krein form of the block's pairing</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, for the names, the laws and the table of the twelve operations.</li>
+<li><em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>, for the class-preserving exchange and the two halves.</li>
+<li><em>Introduction to the General Quaternionic Sesqualgebra of Biquaternions</em>, for the product the block splits.</li>
+<li><em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em>, for the companion half.</li>
+<li><em>Lie Algebras of Sesqualgebras</em>, for the obstruction behind the failing Jacobi identity.</li>
+<li><em>The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra</em>, <em>The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra</em>, <em>The Six Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions</em>, <em>The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra</em> and <em>The Antisymmetric Quaternionic Sesqualgebra in the Matrix Representations</em>, for the remainder of the block.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

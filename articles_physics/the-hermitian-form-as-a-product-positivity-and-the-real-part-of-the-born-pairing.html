@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hermitian-form-as-a-product-positivity-and-the-real-part-of-the-born-pairing"><strong>The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four products, and the one this article is about is the <strong>plain sesquilinear</strong> product $\tilde P\tilde Q^{*}$: the ordinary product with the second factor read through the Hermitian conjugation ${}^{*}$. It is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second, and it is the product of the state row of the framework. This article is the first of the two articles of its band, and it reads the product's <strong>symmetric half</strong>.</p>
+<p>The symmetric half is the central part of the value, and the single structural claim of the article is that this half is the <strong>Hermitian form of the corpus read as a multiplication</strong>:</p>
+<p>$$
+\tilde P\circledast\tilde Q=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)e_0=H(\tilde P,\tilde Q)e_0,\qquad H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q}).
+$$</p>
+<p>Three facts organise the band. The value is <strong>central</strong>, so the operation is a form and not a genuine multiplication; its diagonal is <strong>real and strictly positive off the origin</strong>, so this is the row the corpus reads as probability; and it is the row whose second slot conjugates, so its law is conjugate-commutative and its operation has no unit on either side. The companion article of the band, <em>Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone</em>, owns the centrality, the idempotents of the operation and the cone of its values; this article owns the operation itself, its positivity, the failure of the Jordan identity, and the reading of its value as the real part of the Born pairing.</p>
+<p><strong>Boundaries.</strong> The product that is split is <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>; the split itself and the general construction of the two parts are <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>, and both are cited and not restated. The positivity of $H$, its cone and its signature are <em>Mass, Rank and the Positivity of the Dagger</em> and <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>, and the algebra of the operation is <em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em> and <em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em>. The Born rule as a trace formula and the state side are <em>The Born Rule as a Trace Formula — Derivation and Comparison</em>, <em>Quantum Physics in Biquaternionic Form</em> and <em>The Ontology of the Quantum State under the Biquaternion Framework</em>; the comparison of the four products is <em>The Four Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras</em>. The operation is a pairing; it is not a state and it is not a measurement, and neither is read from it.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity, $e_k^{2}=-e_0$ and $e_je_k=e_l$ for $(j,k,l)$ a cyclic permutation of $(1,2,3)$; a general element is $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$. The <strong>natural conjugation</strong> ${}^{\natural}$ fixes $e_0$, negates $e_1,e_2,e_3$ and is $\mathbb{C}$-linear; the <strong>coefficientwise conjugation</strong> $\overline{\cdot}$ conjugates the four coefficients; the <strong>Hermitian conjugation</strong> is ${}^{*}=\overline{\cdot}\circ{}^{\natural}$, so $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ with $\varepsilon=(1,-1,-1,-1)$. $\mathrm{Sc}$ is the scalar part and the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$. The six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, and the two sectors $\mathbb{M}_{\pm}$, with $\mathbb{B}=\mathbb{M}_{+}\oplus\mathbb{M}_{-}$ and $\mathbb{M}_{+}$ the Hermitian, informational side. The parent product is $\tilde P\tilde Q^{*}$, its symmetric half is written $\tilde P\circledast\tilde Q$ and its antisymmetric half $\tilde P\wedge_{*}\tilde Q$; all conventions are those of <em>Conventions in the Biquaternion Universe</em>.</p>
+<h2 id="the-operation-and-its-value">The Operation and Its Value</h2>
+<h3 id="definition-and-the-central-value">Definition and the Central Value</h3>
+<p>The <strong>general plain sesquilinear product</strong> is the operation $\tilde P\tilde Q^{*}$, and the exchange that keeps its class is the interchange composed with the coefficientwise conjugation of the value (<em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>). Its symmetric half is the operation of this block,</p>
+<p>$$
+\tilde P\circledast\tilde Q=\tfrac12\Bigl(\tilde P\tilde Q^{*}+\bigl(\tilde P\tilde Q^{*}\bigr)^{\natural}\Bigr)=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)e_0 .
+$$</p>
+<p>The two descriptions of the symmetrisation are the same element, $(\tilde P\tilde Q^{*})^{\natural}=\overline{\tilde Q\tilde P^{*}}$: the natural conjugation of the parent value is the interchange of the two factors followed by the coefficientwise conjugation of the value, and either is the exchange that keeps the class. The value is <strong>central</strong>: the natural conjugation fixes the scalar part and negates the vector part, so the vector part of $\tilde P\tilde Q^{*}$ is exactly cancelled and only the scalar part survives. Reading the scalar part through the Hermitian form,</p>
+<p>$$
+\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)\,e_0,\qquad H(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)=\sum_{\mu=0}^{3}P_\mu\overline{Q_\mu}=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q}),
+$$</p>
+<p>which is the statement of the introduction: <strong>the Hermitian form of the corpus is the operation</strong>. The form $H$ and the product $\circledast$ carry the same information, and the image of the operation is the centre $\mathbb{C}_{\mathbb{B}}=\{\lambda e_0\}$; the block is the form read as a multiplication and nothing more (<em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em>).</p>
+<p><strong>Remark (one of the two central operations).</strong> Because every value lies in the centre, the block is <strong>one of the two central operations of the twelve</strong>, the other being the symmetric quaternionic algebra $\mathrm{SQA}$; it is <strong>not</strong> a Jordan product — the symmetric plain algebra $\mathrm{SPA}$ alone among the twelve is one — and the failure of the Jordan identity in the section below is the statement of that (<em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em>, <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>). The centrality is what makes the operation a form; the form's positivity is what makes its diagonal a probability; and the two are the same sentence.</p>
+<p><strong>Remark (verified).</strong> $\mathrm{Sc}(\tilde P\tilde Q^{*})=H(\tilde P,\tilde Q)$ and the half-sum is central, to $<10^{-13}$ over $100$ random pairs.</p>
+<h3 id="the-class-of-the-operation">The Class of the Operation</h3>
+<p>The operation is additive in each variable and</p>
+<p>$$
+(\lambda\tilde P)\circledast\tilde Q=\lambda\,(\tilde P\circledast\tilde Q),\qquad \tilde P\circledast(\lambda\tilde Q)=\overline{\lambda}\,(\tilde P\circledast\tilde Q),\qquad \lambda\in\mathbb{C},
+$$</p>
+<p>so it is $\mathbb{C}$-<strong>linear in the first slot and conjugate-linear in the second</strong>: it is a <strong>sesquilinear</strong> product, and that is what places the block in the sesqualgebra row and not in the algebra row. A scalar entering the first slot enters plain, and a scalar entering the second enters through its conjugate; a tabulation cannot be read by linearity in the second index. This is the first exact difference from the symmetric plain algebra $\mathrm{SPA}$ and the symmetric quaternionic algebra $\mathrm{SQA}$, whose products are $\mathbb{C}$-bilinear (<em>Introduction to the Symmetric Plain Algebra of Biquaternions</em>, <em>Introduction to the Symmetric Quaternionic Algebra of Biquaternions</em>).</p>
+<h3 id="the-multiplication-table-of-the-basis">The Multiplication Table of the Basis</h3>
+<p><strong>On the four basis elements the operation is the identity table.</strong> Since $H(e_\mu,e_\nu)=\delta_{\mu\nu}$,</p>
+<p>$$
+e_\mu\circledast e_\nu=H(e_\mu,e_\nu)e_0=\delta_{\mu\nu}e_0 .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\circledast$</th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$0$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the Gram matrix of $H$ in the algebra basis times $e_0$: the operation records the form and nothing else. It is <strong>rank one</strong> over $\mathbb{C}$, its single value direction being $e_0$, and its kernel is the single scalar equation $H(\tilde P,\tilde Q)=0$ (<em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em>).</p>
+<p><strong>Remark (vanishing products of nonzero elements).</strong> Off the diagonal the product vanishes, $e_\mu\circledast e_\nu=0$ for $\mu\neq\nu$, so the block <strong>does</strong> have vanishing products of nonzero elements; the vanishing pairs are exactly the $H$-orthogonal ones. The block has no isotropic vector and no nonzero element of square zero, and yet it has zero products: the two statements are one, and the second is the reason the first must be read as a statement about the <em>diagonal</em> of the form.</p>
+<h2 id="the-diagonal-and-the-positivity">The Diagonal and the Positivity</h2>
+<h3 id="the-diagonal-is-real-and-strictly-positive">The Diagonal Is Real and Strictly Positive</h3>
+<p>For every $\tilde Q$,</p>
+<p>$$
+\tilde Q\circledast\tilde Q=H(\tilde Q,\tilde Q)e_0=\Bigl(\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}\Bigr)e_0,
+$$</p>
+<p>a <strong>central</strong> element whose coefficient is a sum of squares of moduli; it is real, non-negative, and <strong>strictly positive for $\tilde Q\neq0$</strong>. The diagonal is the squared Euclidean length of the coefficient vector of the element, and it vanishes only at the origin.</p>
+<p><strong>Consequences, and where they are owned.</strong>
+- <strong>No isotropic vector, no square-zero element.</strong> $H(\tilde Q,\tilde Q)=0$ forces $\tilde Q=0$, and $\tilde Q\circledast\tilde Q=0$ forces $\tilde Q=0$; the isotropic cone of the operation is $\{0\}$.
+- <strong>The positivity is inherited, not built.</strong> The diagonal is positive because $H$ is the definite form of the algebra, of signature $(8,0)$ on $\mathbb{B}\cong\mathbb{R}^{8}$; that positivity, its cone, its signature and its restriction to the six subspaces are <em>Mass, Rank and the Positivity of the Dagger</em>, <em>Biquaternion Norm and Invertibility</em> and <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>, and this article cites them and does not re-prove them.</p>
+<p><strong>Remark (what the positivity is not).</strong> The positivity is the positivity of the <strong>diagonal of the form</strong>, and the operation is conjugate-commutative and not commutative: it is not the positivity of a real-valued symmetric form, and it is not the positivity of the biquaternion norm $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$, which is indefinite and carries the interval. The statement $H\succ0$ is a statement about $H$ alone.</p>
+<h3 id="the-reality-on-the-state-side">The Reality on the State Side</h3>
+<p>The positivity acquires its physical reading on a subspace. On the Hermitian side $\mathbb{M}_{+}$ the Hermitian conjugation acts as the identity, $\tilde Q^{*}=\tilde Q$, so the second slot no longer conjugates anything new and the operation collapses onto the scalar part of the plain product,</p>
+<p>$$
+\tilde P\circledast\tilde Q=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)e_0=\mathrm{Re}\,H(\tilde P,\tilde Q)\,e_0,\qquad \tilde P,\tilde Q\in\mathbb{M}_{+},
+$$</p>
+<p>and $H(\tilde P,\tilde Q)$ is <strong>real</strong>. The state side is the side on which the operation of this block is real-valued, and it is the side the corpus calls the informational sector; multiplication by the central $i$ exchanges it with the material side, $i\mathbb{M}_{-}=\mathbb{M}_{+}$.</p>
+<p><strong>Remark (verified).</strong> For $100$ random pairs of Hermitian elements, $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$ identically, with vanishing imaginary part.</p>
+<h2 id="the-hermitian-form-as-the-real-part-of-the-born-pairing">The Hermitian Form as the Real Part of the Born Pairing</h2>
+<h3 id="the-two-halves-of-one-value">The Two Halves of One Value</h3>
+<p>The parent value $X=\tilde P\tilde Q^{*}$ is an element of the algebra, and it decomposes into the two halves of the block,</p>
+<p>$$
+X=\tilde P\tilde Q^{*}=\underbrace{\mathrm{Sc}(X)e_0}_{\tilde P\circledast\tilde Q}+\underbrace{\mathrm{Vect}(X)}_{\tilde P\wedge_{*}\tilde Q},
+$$</p>
+<p>a central part and a vector part. The central part is the operation of this article; the vector part is the operation of the companion band, <em>The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product</em>. The two parts are the two halves of one number, and the split between them is the split between a <strong>probability</strong> and a <strong>phase</strong>; this article owns the first half and does not read the second.</p>
+<h3 id="the-born-pairing">The Born Pairing</h3>
+<p>The corpus's Born rule is the trace formula</p>
+<p>$$
+\mathrm{Tr}\bigl(\tilde P\tilde H\bigr)=2\,\mathrm{Sc}\bigl(\tilde P\tilde H\bigr)=2\langle\tilde P,\tilde H\rangle,
+$$</p>
+<p>read on two Hermitian elements (<em>The Born Rule as a Trace Formula — Derivation and Comparison</em>, <em>Quantum Physics in Biquaternionic Form</em>). On the state side $\tilde H^{*}=\tilde H$, so $\mathrm{Sc}(\tilde P\tilde H^{*})=\mathrm{Sc}(\tilde P\tilde H)$, and the value of this block is one half of the Born pairing,</p>
+<p>$$
+\tilde P\circledast\tilde H=\tfrac12\,\mathrm{Tr}\bigl(\tilde P\tilde H\bigr)e_0=H(\tilde P,\tilde H)e_0,\qquad \tilde P,\tilde H\in\mathbb{M}_{+}.
+$$</p>
+<p>That identity is the reading the band's title records: <strong>the operation is the Hermitian form as a product, and its central value is the real part of the Born pairing</strong>. It is the real part in the exact sense of the decomposition above: $H(\tilde P,\tilde H)=\mathrm{Sc}(\tilde P\tilde H^{*})$ is the central half of the same amplitude whose vector half is the phase, and on the state side it is real and equals one half of the trace pairing.</p>
+<p><strong>Remark (the caution, and it is the spine of the band).</strong> A positive central value is a <strong>pairing</strong> and not a state. The operation compares two elements and returns a number; it selects none. The Born <em>probability</em> is that number once a state and an effect have been supplied from outside the operation, and the operation neither supplies them nor chooses among them. The state side is established in <em>Quantum Physics in Biquaternionic Form</em> and read ontologically in <em>The Ontology of the Quantum State under the Biquaternion Framework</em>; the operation contributes the pairing and not the state.</p>
+<p><strong>Remark (where a scale enters).</strong> The algebra carries no scale, and $\hbar$ enters with the physical reading of the phase amplitude and not here; the places of entry are those of the corpus, and none is invented in this article (<em>Action Units and the Constants of the Biquaternion Universe</em>).</p>
+<h2 id="the-failure-of-the-jordan-identity">The Failure of the Jordan Identity</h2>
+<p>The symmetric plain algebra $\mathrm{SPA}$ satisfies the <strong>Jordan identity</strong>, and its reading as a Jordan algebra of observables is <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>. It is therefore worth asking the same question of the symmetric sesquilinear block, and the answer is negative.</p>
+<p><strong>The operation fails the Jordan identity.</strong> For a commutative product the Jordan identity is the law</p>
+<p>$$
+(x^{2}\circledast y)\circledast x=x^{2}\circledast(y\circledast x),\qquad x^{2}=x\circledast x .
+$$</p>
+<p>Here the witness is $x=y=e_1$. Since $e_1\circledast e_1=e_0$ and $e_0\circledast\tilde Q=\overline{Q_0}\,e_0$, the two sides are</p>
+<p>$$
+(e_1^{2}\circledast e_1)\circledast e_1=(e_0\circledast e_1)\circledast e_1=0\circledast e_1=0,
+$$</p>
+<p>$$
+e_1^{2}\circledast(e_1\circledast e_1)=e_0\circledast e_0=e_0 .
+$$</p>
+<p>The two sides are $0$ and $e_0$, distinct, so the identity fails (<em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em>).</p>
+<p><strong>Remark (why it fails, and what it means).</strong> The reason is structural: the product is central-valued and conjugate-linear in its second slot, and the second slot of a central value cannot absorb the vector part that the identity would require it to absorb. A symmetrisation of a <em>sesquilinear</em> product is not a Jordan product; the algebraic fact is owned by the mathematics, and the reading is that the block is a genuine operation of the sesqualgebra row and of no classical kind, so <strong>no Jordan-algebra structure may be read from it</strong>, and the ordered cone of observables of the corpus belongs to the symmetric <em>plain</em> block and not to this one. The caution is exact: a failed identity is a failed identity of the algebra, and it says nothing about measurement.</p>
+<h2 id="the-absence-of-a-unit-and-the-rank-one-image">The Absence of a Unit and the Rank-One Image</h2>
+<p><strong>No unit, on either side.</strong> For every $\tilde Q$,</p>
+<p>$$
+\tilde Q\circledast e_0=Q_0\,e_0,\qquad e_0\circledast\tilde Q=\overline{Q_0}\,e_0 .
+$$</p>
+<p>The element $e_0$ is neither a right unit nor a left unit: the first equation forces $\mathbf Q=0$, and the second forces $\mathbf Q=0$ and $Q_0$ real. The reason is the rank-one central image: a value of the block can carry only the scalar part of an element and never its vector part, so no element with a vector part is reproduced on either side. The block is therefore not a unital algebra, and there is no inverse theory attached to it.</p>
+<p><strong>The idempotents are $0$ and $e_0$.</strong> The idempotent equation $\tilde Q\circledast\tilde Q=\tilde Q$ forces $\tilde Q$ into the centre, where the operation is the field rule $(\lambda e_0)\circledast(\mu e_0)=\lambda\overline{\mu}\,e_0$ and the equation reduces to $\lvert\lambda\rvert^{2}=\lambda$, whose roots are $0$ and $1$. The element $e_0$ is an idempotent and not a unit; it is the certainty, not a state. The centrality of the image, the law and the idempotents are owned by <em>The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra</em> and read physically in <em>Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone</em>.</p>
+<p><strong>The law.</strong> The operation is <strong>conjugate-commutative</strong>,</p>
+<p>$$
+\tilde P\circledast\tilde Q=\overline{\tilde Q\circledast\tilde P},
+$$</p>
+<p>the bar acting on the central value; the law and the Hermitian symmetry of the form, $H(\tilde Q,\tilde P)=\overline{H(\tilde P,\tilde Q)}$, are one statement (<em>The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra</em>).</p>
+<h2 id="the-six-subspaces">The Six Subspaces</h2>
+<p>The values of the block are central, so the product of two elements of any of the six subspaces is a real or complex multiple of $e_0$, and the restricted form $H$ is positive definite on each of the six, of rank the real dimension of the subspace. Only the <strong>closure</strong> of the product separates the six, and the criterion is one line: a subspace is closed exactly when it contains $e_0$. The centre, the real-quaternion subspace and the Hermitian subspace are closed; the vector subspace, the anti-quaternion subspace and the anti-Hermitian subspace are not, the smallest witness in each being the square of a basis element, $e_1\circledast e_1=e_0$ in the vector and anti-Hermitian subspaces and $(ie_1)\circledast(ie_1)=e_0$ in the anti-quaternion subspace (<em>The Six Subspaces under the Symmetric Plain Sesqualgebra of Biquaternions</em>).</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>real dimension</th>
+<th>$H$ restricted</th>
+<th>closed under $\circledast$</th>
+<th>contains $e_0$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$2$</td>
+<td>positive definite, complex</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$6$</td>
+<td>positive definite, complex</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$4$</td>
+<td>positive definite, real-valued</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$4$</td>
+<td>positive definite, real-valued</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{+}$</td>
+<td>$4$</td>
+<td>positive definite, real-valued</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{-}$</td>
+<td>$4$</td>
+<td>positive definite, real-valued</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the state side is the closed informational side).</strong> The Hermitian subspace is closed because the positive real multiples of $e_0$ lie in it, and on it the restricted form is real-valued and positive definite of rank $4$: this is the frame of a two-state system, whose states and observables share the subspace, and on it the diagonal is the Born pairing. The block's home is therefore the <strong>state side</strong> $\mathbb{M}_{+}$, and not the material side of the two algebra rows. The contrast with the quaternionic sesquilinear row, whose form $K$ is indefinite and whose values lie in no subspace of the six, is the companion article's subject and is stated there and not here.</p>
+<h2 id="ledger">Ledger</h2>
+<p><strong>What the operation does.</strong>
+- Reads the central part of the plain sesquilinear amplitude as a multiplication: $\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)e_0$.
+- Carries and exposes the <strong>positivity</strong> of the Hermitian form on its diagonal, $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}>0$ off the origin.
+- Supplies, on the state side, one half of the Born trace pairing, $\tilde P\circledast\tilde H=\tfrac12\mathrm{Tr}(\tilde P\tilde H)e_0$.
+- Records the Gram matrix of $H$ and the $H$-orthogonal (vanishing) pairs.</p>
+<p><strong>What the operation does not do.</strong>
+- It is not a state: a positive central value pairs two elements and selects none.
+- It is not a measurement: the operation produces no outcome and carries no probability rule of its own.
+- It has no unit and no inverse, and it is not associative or Jordan: it is a rank-one central operation and of no classical kind.
+- It carries no scale; the constants enter elsewhere in the corpus.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetric plain sesqualgebra is the <strong>Hermitian form of the corpus read as a multiplication</strong>, $\tilde P\circledast\tilde Q=\mathrm{Sc}(\tilde P\tilde Q^{*})e_0=H(\tilde P,\tilde Q)e_0$ with $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$. Its value is <strong>central</strong>, its class is sesquilinear with the conjugation in the second slot, and its basis table is the identity times $e_0$: the operation is the Gram matrix of $H$ and nothing else. Its <strong>diagonal is real and strictly positive off the origin</strong>, $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}>0$, so the operation has no isotropic vector and no nonzero element of square zero; the positivity is that of the definite form of the algebra and is owned by the mass-and-positivity article. The parent value splits into the two halves of the block, $\tilde P\tilde Q^{*}=\tilde P\circledast\tilde Q+\tilde P\wedge_{*}\tilde Q$, and the central half is the <strong>real part of the Born pairing</strong>: on the state side it is one half of the trace pairing, $\tilde P\circledast\tilde H=\tfrac12\mathrm{Tr}(\tilde P\tilde H)e_0$, with $\tilde P,\tilde H\in\mathbb{M}_{+}$. The operation <strong>fails the Jordan identity</strong>, with the witness $x=y=e_1$, where the two sides are $0$ and $e_0$; it has <strong>no unit</strong> on either side and its only idempotents are $0$ and $e_0$; it is <strong>conjugate-commutative</strong>. Among the six subspaces only the closure separates the block, and it is closed on the centre, the real-quaternion subspace and the Hermitian subspace, which is the state side of the corpus. The reading is bounded twice: a positive central value is a pairing and not a state, and the operation belongs to the state row without being a state.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\tilde Q^{*}$</td>
+<td>the general plain sesquilinear product (GPS)</td>
+</tr>
+<tr>
+<td>$\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)e_0$</td>
+<td>the symmetric part (SPS); the operation of the block</td>
+</tr>
+<tr>
+<td>$H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$</td>
+<td>the Hermitian form; $H=\langle\cdot,\cdot\rangle_{*}$</td>
+</tr>
+<tr>
+<td>$H(e_\mu,e_\nu)=\delta_{\mu\nu}$, $e_\mu\circledast e_\nu=\delta_{\mu\nu}e_0$</td>
+<td>the identity table and the Gram matrix</td>
+</tr>
+<tr>
+<td>$H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}>0$</td>
+<td>the positive diagonal; no isotropic vector</td>
+</tr>
+<tr>
+<td>$\tilde P\circledast\tilde Q=\overline{\tilde Q\circledast\tilde P}$</td>
+<td>conjugate-commutativity</td>
+</tr>
+<tr>
+<td>$\tilde Q\circledast e_0=Q_0e_0$, $e_0\circledast\tilde Q=\overline{Q_0}e_0$</td>
+<td>no unit on either side</td>
+</tr>
+<tr>
+<td>$(x^{2}\circledast y)\circledast x\neq x^{2}\circledast(y\circledast x)$ at $x=y=e_1$</td>
+<td>the Jordan failure; the sides $0$ and $e_0$</td>
+</tr>
+<tr>
+<td>$\{0,e_0\}$</td>
+<td>the idempotents of the operation</td>
+</tr>
+<tr>
+<td>$\tilde P\circledast\tilde H=\tfrac12\mathrm{Tr}(\tilde P\tilde H)e_0$ on $\mathbb{M}_{+}$</td>
+<td>the Born pairing as the central value</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{+}$</td>
+<td>the state side; closed and real-valued</td>
+</tr>
+<tr>
+<td>$\tilde P\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})$</td>
+<td>the antisymmetric part, read in the companion band</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.md</code>), for the operation, its class, its table and the Jordan failure.</li>
+<li><em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/the-hermitian-form-as-a-product-on-the-symmetric-plain-sesqualgebra.md</code>), for the form read as the product, its rank-one image and its restrictions.</li>
+<li><em>The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/the-conjugate-commutative-law-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.md</code>), for the law, the idempotents and the vanishing annihilator.</li>
+<li><em>The Six Subspaces under the Symmetric Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/the-six-subspaces-under-the-symmetric-plain-sesqualgebra-of-biquaternions.md</code>), for the closure of the six.</li>
+<li><em>Mass, Rank and the Positivity of the Dagger</em> (<code>articles_physics/mass-rank-and-the-positivity-of-the-dagger.md</code>), which owns the positivity of the Hermitian form.</li>
+<li><em>The Born Rule as a Trace Formula — Derivation and Comparison</em> (<code>articles_physics/the-born-rule-as-a-trace-formula-derivation-and-comparison.md</code>), which owns the Born rule and the trace pairing.</li>
+<li><em>Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone</em> (<code>articles_physics/why-probability-values-are-central-the-symmetric-sesquilinear-product-and-its-cone.md</code>), the companion article of the band.</li>
+<li><em>The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product</em> (<code>articles_physics/the-imaginary-part-of-the-born-pairing-the-antisymmetric-sesquilinear-product.md</code>), the other half of the same value.</li>
+<li><em>The Fourth Product and Its Indefinite Metric</em> (<code>articles_physics/the-fourth-product-and-its-indefinite-metric.md</code>), for the quaternionic sesquilinear row and its indefinite form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
