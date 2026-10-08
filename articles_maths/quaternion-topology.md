@@ -118,7 +118,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$
 | Homotopy groups of the units | $\pi_1 = 0$, $\pi_3\cong\mathbb{Z}$ | $\pi_1\cong\mathbb{Z}$, $\pi_3\cong\mathbb{Z}$ |
 | Rotation group from the adjoint action | $SO(3)$, $\pi_1\cong\mathbb{Z}/2$ | $PSL(2,\mathbb{C})$, non-compact |
 
-The essential difference is the definiteness of the quaternion norm. For $\mathbb{H}$ the polar decomposition $\tilde q = |\tilde q|\,u$ is defined for every non-zero quaternion, so the group of units is a global product and the sphere $S^3$ is a deformation retract; there is no boundary or exceptional set in the polar representation. For $\mathbb{B}$ the same construction is available only where $N\neq0$, the null cone being the obstruction, and the unit group is the non-compact $GL_2(\mathbb{C})$, whose maximal compact subgroup $U(2)$ deforms to $S^1\times S^3$ and contributes the free factor $\mathbb{Z}$ to $\pi_1$. The biquaternion account is in *Biquaternion Topology*.
+The essential difference is the definiteness of the quaternion norm. For $\mathbb{H}$ the polar decomposition $\tilde q = |\tilde q|\,u$ is defined for every non-zero quaternion, so the group of units is a global product and the sphere $S^3$ is a deformation retract; there is no boundary or exceptional set in the polar representation. For $\mathbb{B}$ the same construction is available only where $N\neq0$, the null cone being the obstruction, and the unit group is the non-compact $GL_2(\mathbb{C})$, whose maximal compact subgroup $U(2)$ deforms to $S^1\times S^3$ and contributes the free factor $\mathbb{Z}$ to $\pi_1$. The biquaternion account is in *Topology in the Space of Biquaternions*.
 
 ## Summary
 

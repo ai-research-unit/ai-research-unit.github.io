@@ -7,7 +7,7 @@ The dagger is defined on every element of the algebra, but it is an inverse only
 
 This article treats the slice as a group, as the isometry group of the Hermitian form, as the image of the exponential of the skew part, and as a compact real form of the group of units. The two structural results are that $U$ is a compact subgroup whenever the dagger is a positive involution, because $x^{\dagger}x = 1$ forces the Euclidean norm to be $1$, so the slice lies in the unit sphere; and that the group of units is the product $U\cdot\exp(\mathrm{Herm})$ of the slice with the exponential of the self-adjoint part, which is the Cartan decomposition of the polar decomposition of the previous article.
 
-The forms are *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint*; the scalar forms and the Euclidean norm are *The Blade Form and the Hilbert Structure with Hermitian Adjoint*; positivity and the cone are *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint*; the operator on the algebra whose slice this is is *The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint*; the unitary group as a classical group is *The Unitary and Symplectic Groups*; the compactness of the group of units of a complex Clifford algebra is the case of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* in the definite real case; and the biquaternion example, where the slice is $U(2)$ with determinant-one part $\mathrm{Spin}(3)$, is *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*.
+The forms are *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*; the scalar forms and the Euclidean norm are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*; positivity and the cone are *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*; the operator on the algebra whose slice this is is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; the unitary group as a classical group is *The Unitary and Symplectic Groups*; the compactness of the group of units of a complex Clifford algebra is the case of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* in the definite real case; and the biquaternion example, where the slice is $U(2)$ with determinant-one part $\mathrm{Spin}(3)$, is *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*.
 
 ## The Unitary Slice
 
@@ -33,7 +33,7 @@ $$
 x \in U \ \Longrightarrow \ \Theta_x(y) = x\,y\,x^{-1} = \mathrm{Ad}^{\alpha}_x(y) \text{ for even } x ,
 $$
 
-so the operator of *The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint* restricts on the slice to the inverse sandwich of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+so the operator of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* restricts on the slice to the inverse sandwich of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
 **Theorem (the slice is the isometry group).** $U$ is exactly the group of isometries of the Hermitian form $h_{\dagger}(x,y) = x^{\dagger}y$:
 
@@ -69,7 +69,7 @@ $$
 u \in \mathfrak{u} \ \Longrightarrow \ \exp(u) \in U .
 $$
 
-**Proof.** The case $[\mathrm{Skew},\mathrm{Skew}] \subseteq \mathrm{Skew}$ of the Cartan decomposition of *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint* makes $\mathfrak{u}$ a Lie algebra. For the exponential, the dagger is an anti-automorphism, so $\dagger(\exp u) = \exp(u^{\dagger}) = \exp(-u)$, whence
+**Proof.** The case $[\mathrm{Skew},\mathrm{Skew}] \subseteq \mathrm{Skew}$ of the Cartan decomposition of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* makes $\mathfrak{u}$ a Lie algebra. For the exponential, the dagger is an anti-automorphism, so $\dagger(\exp u) = \exp(u^{\dagger}) = \exp(-u)$, whence
 
 $$
 \exp(u)^{\dagger}\exp(u) = \exp(-u)\exp(u) = 1 .
@@ -83,9 +83,9 @@ $$
 
 of the group of units $G$, when the dagger is positive.
 
-**Proof.** $\dagger(\exp h) = \exp(h^{\dagger}) = \exp(h)$ for $h$ self-adjoint. The factorisation is the polar decomposition $x = u|x|$ of *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint*, with $|x| = \exp(\log|x|)$ and $\log|x|$ self-adjoint because $|x|$ is positive.
+**Proof.** $\dagger(\exp h) = \exp(h^{\dagger}) = \exp(h)$ for $h$ self-adjoint. The factorisation is the polar decomposition $x = u|x|$ of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*, with $|x| = \exp(\log|x|)$ and $\log|x|$ self-adjoint because $|x|$ is positive.
 
-**Corollary.** The Lie algebra of the slice is the skew part, so the slice has the dimension of the skew part of the algebra, and the exponential is surjective onto the identity component of $U$ in the definite compact case; the Cartan involution $\theta$ of *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint* is exactly the involution $\mathrm{d}\theta = +1$ on $\mathfrak{u}$, $-1$ on $\mathrm{Herm}$, associated with this decomposition.
+**Corollary.** The Lie algebra of the slice is the skew part, so the slice has the dimension of the skew part of the algebra, and the exponential is surjective onto the identity component of $U$ in the definite compact case; the Cartan involution $\theta$ of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* is exactly the involution $\mathrm{d}\theta = +1$ on $\mathfrak{u}$, $-1$ on $\mathrm{Herm}$, associated with this decomposition.
 
 ## The Compact Real Form
 
@@ -97,7 +97,7 @@ $$
 x \in U \ \Longrightarrow \ \|x\|^{2} = (x,x) = \mathrm{Sc}(x^{\dagger}x) = \mathrm{Sc}(1) = 1 .
 $$
 
-**Proof.** For $x \in U$ we have $x^{\dagger}x = 1$, so $\mathrm{Sc}(x^{\dagger}x) = 1$; when the dagger is positive, $\mathrm{Sc}(x^{\dagger}x) = \|x\|^{2}$ by *The Blade Form and the Hilbert Structure with Hermitian Adjoint*, whence $\|x\| = 1$. Thus $U$ is a closed subset of the unit sphere of a finite-dimensional Euclidean space, and it is bounded and closed, hence compact; it is a group by the theorem above, and a closed subgroup of the group of units, hence a compact Lie group.
+**Proof.** For $x \in U$ we have $x^{\dagger}x = 1$, so $\mathrm{Sc}(x^{\dagger}x) = 1$; when the dagger is positive, $\mathrm{Sc}(x^{\dagger}x) = \|x\|^{2}$ by *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, whence $\|x\| = 1$. Thus $U$ is a closed subset of the unit sphere of a finite-dimensional Euclidean space, and it is bounded and closed, hence compact; it is a group by the theorem above, and a closed subgroup of the group of units, hence a compact Lie group.
 
 **Corollary (the positive cases).** The dagger is positive and $U$ is compact for the Clifford algebras of a negative definite real form, $\mathrm{Cl}_{0,n}$ over $\mathbb{R}$, where $U = \mathrm{Pin}(0,n)$; for the complexified algebras with coefficient conjugation; and for the quaternionic cases. In each of them the slice is a compact real Lie group whose Lie algebra is the skew part, and the exponential is surjective onto its identity component.
 

@@ -322,7 +322,7 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 | $\tilde\Pi_\pm(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 \pm i\hat{\mathbf{n}})$ | Idempotents along $\hat{\mathbf{n}}$ |
 | $\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^{*}$ | Kraus representation |
 | $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_0$ | Trace-preservation condition |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J$ |
 | $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\hat{\mathbf{n}}$ |
 | $\mathbf{r} \mapsto (1-p)\mathbf{r} + p(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$ | Dephasing Bloch map |

@@ -43,7 +43,7 @@ $$
 \tau(\tilde{Q},\tilde{Q}) = 8\sum_\mu\varepsilon_\mu\bigl(q_\mu^2-q'_\mu{}^2\bigr) ,
 $$
 
-so the trace form has signature $(4,4)$ on the eight real coordinates, the four real parts of the coefficients carrying the sign $\varepsilon_\mu$ and the four imaginary parts the opposite sign. Its Gram matrix is the block matrix of *The Realification of the Four Forms* rescaled by $8$, and its null cone is the realified cone of the complex bilinear form.
+so the trace form has signature $(4,4)$ on the eight real coordinates, the four real parts of the coefficients carrying the sign $\varepsilon_\mu$ and the four imaginary parts the opposite sign. Its Gram matrix is the block matrix of *The Realification of the Four Forms* rescaled by $8$, and its null cone is the realified cone of the general plain bilinear form.
 
 **The determinant and the zero divisors.** The left multiplication is invertible exactly when $N(\tilde{Q})\neq0$, so the zero divisors are exactly the singular real regular matrices; the determinant $|N(\tilde{Q})|^4$ vanishes on them to the fourth order, and the real rank of $L_{\tilde{Q}}$ on a non-zero zero divisor is $4$, twice the complex rank $2$ of the regular matrix $\rho_L(\tilde{Q})$.
 
@@ -89,4 +89,4 @@ The real regular representation is the representation the trace form is defined 
 - *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the signature table of the realified forms
 - *Operators of the Real Biquaternion Algebra* (`articles_maths/operators-of-the-real-biquaternion-algebra.md`), for the operators of the real reading
 - *The Biquaternion Algebra over $\mathbb{R}$ in the $2\times2$ Matrix Representation* (`articles_maths/the-biquaternion-algebra-over-r-in-the-2x2-matrix-representation.md`), for the companion reading of the group
-- *The Six Subspaces under the Trace Form* (`articles_maths/the-six-subspaces-under-the-trace-form.md`), for the restriction theory of the trace form
+- *The Six Subspaces under the Real Biquaternion Algebra* (`articles_maths/the-six-subspaces-under-the-real-biquaternion-algebra.md`), for the restriction theory of the trace form

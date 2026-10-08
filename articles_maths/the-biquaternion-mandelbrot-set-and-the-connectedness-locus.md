@@ -8,7 +8,7 @@ The quadratic family, its filled Julia set, its Julia set and its critical set a
 
 The article owns the definition of the connectedness locus and of the critical-orbit locus, the escape-time algorithm and the obstruction to a single escape radius, the exact reduction on the central and commutative slices, and the placement of the real, the complex and the quaternion parameter sweeps. It does not prove any connectedness criterion in the full algebra; that is stated as the open problem it is.
 
-**Standing convention.** The parameter is $\tilde C\in\mathbb{B}$, the map is $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ in the complex bilinear product, the filled Julia set is $\mathcal K_{\tilde C}$ and the Julia set is $J_{\tilde C}=\partial\mathcal K_{\tilde C}$. A central parameter is written $\tilde C=Ce_0$ with $C\in\mathbb{C}$; the connectedness locus is written $\mathcal B$ and the critical-orbit locus $\mathcal C$.
+**Standing convention.** The parameter is $\tilde C\in\mathbb{B}$, the map is $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ in the general plain bilinear product, the filled Julia set is $\mathcal K_{\tilde C}$ and the Julia set is $J_{\tilde C}=\partial\mathcal K_{\tilde C}$. A central parameter is written $\tilde C=Ce_0$ with $C\in\mathbb{C}$; the connectedness locus is written $\mathcal B$ and the critical-orbit locus $\mathcal C$.
 
 ## The Two Loci
 
@@ -114,7 +114,7 @@ $$
 W_{\tilde\Pi}\cap\mathcal K_{\tilde C}=K_{C_1}\times K_{C_2}, \qquad W_{\tilde\Pi}\cap\mathcal C=\{C_1\in\mathcal M\}\times\{C_2\in\mathcal M\} ,
 $$
 
-and the critical-orbit locus of the plane is the product $\mathcal M\times\mathcal M$. The complex bilinear product therefore gives the **intersection** of the two conditions, not their union.
+and the critical-orbit locus of the plane is the product $\mathcal M\times\mathcal M$. The general plain bilinear product therefore gives the **intersection** of the two conditions, not their union.
 
 **Proof.** $\tilde\Pi^2=\tilde\Pi$, $\tilde\Pi'^2=\tilde\Pi'$ and $\tilde\Pi\tilde\Pi'=0$ give $(A\tilde\Pi+B\tilde\Pi')^2=A^2\tilde\Pi+B^2\tilde\Pi'$, and the parameter splits the same way; the two coordinates do not interact, so the orbit is the pair of complex orbits and both must be bounded.
 

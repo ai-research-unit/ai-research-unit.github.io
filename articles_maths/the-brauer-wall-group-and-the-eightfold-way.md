@@ -119,7 +119,7 @@ The sequence is the precise form of the statement that spinors are real in dimen
 
 ## Atiyah–Bott–Shapiro Periodicity
 
-The correspondence between Clifford modules and K-theory makes the eightfold way an instance of topological periodicity.
+The correspondence between Clifford modules and K-theory makes the eightfold way an instance of the periodicity.
 
 **Definition.** Let $\mathrm{M}_n$ denote the Grothendieck group of finite-dimensional $\mathbb{Z}/2$-graded left $\mathrm{Cl}_{0,n}$-modules: the free abelian group on the isomorphism classes of graded modules modulo the additivity relations $[M\oplus N]=[M]+[N]$ and the relation $[\Pi M]=-[M]$, where $\Pi M$ is the same module with the parity of the grading reversed. The direct sum makes $\mathrm{M}_n$ an abelian group, and the parity shift acts on it by negation.
 
@@ -138,7 +138,7 @@ and both sides are periodic of period eight:
 
 **Proof sketch.** The graded module categories of the eight algebras $\mathrm{Cl}_{0,n}$ are read from the eightfold table: the simple graded modules are those of the matrix factors $M_k(D)$ with a compatible grading, the parity shift acts by $[\Pi M]=-[M]$, and carrying out the computation in each of the eight cases gives the row displayed. The coincidence with $\mathrm{KO}^{-n}(\mathrm{pt})$ is the Atiyah–Bott–Shapiro periodicity theorem, which identifies a graded Clifford module with the algebraic model of a real vector bundle with Clifford multiplication over a point.
 
-**Remark.** The group $\mathrm{M}_n$ is the Grothendieck group of the graded module category of $\mathrm{Cl}_{0,n}$ with the parity relation $[\Pi M]=-[M]$, and its values are those of the row above: $\mathbb{Z}$ in dimensions $0$ and $4$, where one free generator survives, $\mathbb{Z}/2$ in dimensions $1$ and $2$, and zero in dimensions $3$, $5$, $6$ and $7$. The periodicity $\mathrm{M}_{n+8}\cong\mathrm{M}_n$ is Bott periodicity, and the vanishing and the torsion in the middle dimensions come from the extension relations of the graded module category together with the parity relation, read case by case from the eightfold table. The topological consequences — that the KO-groups of a point are of period eight, and that the index of a Clifford-linear elliptic operator is a KO-class — belong to the applications of the category.
+**Remark.** The group $\mathrm{M}_n$ is the Grothendieck group of the graded module category of $\mathrm{Cl}_{0,n}$ with the parity relation $[\Pi M]=-[M]$, and its values are those of the row above: $\mathbb{Z}$ in dimensions $0$ and $4$, where one free generator survives, $\mathbb{Z}/2$ in dimensions $1$ and $2$, and zero in dimensions $3$, $5$, $6$ and $7$. The periodicity $\mathrm{M}_{n+8}\cong\mathrm{M}_n$ is Bott periodicity, and the vanishing and the torsion in the middle dimensions come from the extension relations of the graded module category together with the parity relation, read case by case from the eightfold table. The consequences for the $KO$-groups — of period eight for a point, and with the index of a Clifford-linear operator as a $KO$-class — belong to the applications of the category.
 
 ## Summary
 

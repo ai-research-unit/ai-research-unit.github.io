@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The top grade of the Clifford algebra of an $n$-dimensional quadratic space is one-dimensional, spanned by the product of the elements of an orthogonal basis, and multiplication by that element is a bijection from each grade to the complementary grade. This article develops that operation. The element itself is the volume element; the map it induces is the **complement map**, a linear isomorphism $\mathrm{Cl}_k(V,q)\to\mathrm{Cl}_{n-k}(V,q)$ that carries a simple $k$-vector on a subspace to a simple $(n-k)$-vector on the orthogonal complement when the subspace is non-degenerate; normalised by the inverse of the volume element it is the **Hodge star**, whose square is a scalar determined by the metric. The star gives the cross product of three-dimensional space as the complement of a bivector, and in the biquaternion algebra it is the duality of the pseudoscalar that the physics articles write with the factor $-i$.
+The top grade of the Clifford algebra of an $n$-dimensional quadratic space is one-dimensional, spanned by the product of the elements of an orthogonal basis, and multiplication by that element is a bijection from each grade to the complementary grade. This article develops that operation. The element itself is the volume element; the map it induces is the **complement map**, a linear isomorphism $\mathrm{Cl}_k(V,q)\to\mathrm{Cl}_{n-k}(V,q)$ that carries a simple $k$-vector on a subspace to a simple $(n-k)$-vector on the orthogonal complement when the subspace is non-degenerate; normalised by the inverse of the volume element it is the **Hodge star**, whose square is a scalar determined by the form. The star gives the cross product of three-dimensional space as the complement of a bivector, and in the biquaternion algebra it is the duality of the pseudoscalar that the physics articles write with the factor $-i$.
 
-The volume element, its square and its centrality are from *Clifford Algebras in Finite Dimensions*; the grade subspaces, the grade projection and the grade theorem are from *The Geometric Product and the Grade Decomposition*; the biquaternion algebra and its identification with $\mathrm{Cl}_{3,0}$, with the pseudoscalar acting as the central unit $i$, are from *The Clifford Structure of the Biquaternion Algebra*. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, with $q$ non-degenerate on the finite-dimensional space $V$ of dimension $n$ and $B$ its polar form; the convention is $v^2=q(v)\cdot1$.
+The volume element, its square and its centrality are from *Clifford Algebras in Finite Dimensions*; the grade subspaces, the grade projection and the grade theorem are from *The Geometric Product and the Grade Decomposition*; the biquaternion algebra and its identification with $\mathrm{Cl}_{3,0}$, with the pseudoscalar acting as the central unit $i$, are from *The Clifford Algebra Representation*. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, with $q$ non-degenerate on the finite-dimensional space $V$ of dimension $n$ and $B$ its polar form; the convention is $v^2=q(v)\cdot1$.
 
 ## The Complement Map
 
@@ -59,7 +59,7 @@ so that the complement map carries the subspace spanned by the index set $I$ to 
 
 **Example.** In $\mathrm{Cl}_{3,0}$ with $\omega=e_1e_2e_3$ one has $e_1\omega=e_2e_3$, $e_2\omega=e_3e_1$, $e_3\omega=e_1e_2$, and $e_1e_2\omega=-e_3$, $e_2e_3\omega=-e_1$, $e_3e_1\omega=-e_2$. So the complement of a vector is a bivector on the perpendicular plane and the complement of a bivector is a vector, the two being related by the volume element and the sign.
 
-**Remark.** The map depends on the choice of orthogonal basis through the orientation only. Replacing one basis element $e_i$ by $-e_i$ changes $\omega$ to $-\omega$ and therefore changes both complements by a sign, while leaving the metric and the grades intact. The complement map is thus an operation of an oriented quadratic space, and the reversal of the orientation reverses it.
+**Remark.** The map depends on the choice of orthogonal basis through the orientation only. Replacing one basis element $e_i$ by $-e_i$ changes $\omega$ to $-\omega$ and therefore changes both complements by a sign, while leaving the form and the grades intact. The complement map is thus an operation of an oriented quadratic space, and the reversal of the orientation reverses it.
 
 ## The Hodge Star
 
@@ -91,7 +91,7 @@ so that $\star^2=(\omega^2)^{-1}\operatorname{id}$, and when $\omega^2=\pm1$ the
 
 ### The Low-Dimensional Cases
 
-The square of the star is read off from the square of the volume element, and the metric enters through the product of the squares of the basis generators.
+The square of the star is read off from the square of the volume element, and the form enters through the product of the squares of the basis generators.
 
 | Space | $n$ | $\omega^2$ | $\star^2$ | Behaviour of $\star$ |
 |---|---|---|---|---|
@@ -118,7 +118,7 @@ $$
 a\times b:=\star(a\wedge b)=(a\wedge b)\omega^{-1}
 $$
 
-is a vector, bilinear and alternating in $a$ and $b$, orthogonal to both, of squared length $q(a)q(b)-B(a,b)^2$, and it satisfies $a\times b=0$ exactly when $a$ and $b$ are linearly dependent.
+is a vector, bilinear and alternating in $a$ and $b$, orthogonal to both, of square $q(a)q(b)-B(a,b)^2$, and it satisfies $a\times b=0$ exactly when $a$ and $b$ are linearly dependent.
 
 **Proof.** The product $a\wedge b$ is a bivector and the star carries it to $\mathrm{Cl}_1$, so the result is a vector; bilinearity and alternation are those of the outer product, and antisymmetry is the graded-commutativity $b\wedge a=-a\wedge b$. For the remaining properties take an orthonormal basis $e_1,e_2,e_3$ with $\omega=e_1e_2e_3$, so that $\omega^{-1}=-\omega$ and the computation of the example below gives $e_i\times e_j=e_k$ for $(i,j,k)$ a cyclic permutation of $(1,2,3)$ and $e_i\times e_i=0$. Writing $a=\sum a_ie_i$ and $b=\sum b_ie_i$, bilinearity gives
 
@@ -126,7 +126,7 @@ $$
 a\times b=(a_2b_3-a_3b_2)e_1+(a_3b_1-a_1b_3)e_2+(a_1b_2-a_2b_1)e_3,
 $$
 
-which is orthogonal to $a$ and to $b$ and vanishes exactly when the three $2\times2$ minors vanish, that is when $a$ and $b$ are linearly dependent. Its squared length, computed from the three coordinates, is the Lagrange identity $q(a)q(b)-B(a,b)^2$.
+which is orthogonal to $a$ and to $b$ and vanishes exactly when the three $2\times2$ minors vanish, that is when $a$ and $b$ are linearly dependent. Its square, computed from the three coordinates, is the Lagrange identity $q(a)q(b)-B(a,b)^2$.
 
 **Example.** In $\mathrm{Cl}_{3,0}$ one has $\omega^2=-1$, hence $\omega^{-1}=-\omega=-e_1e_2e_3$, and
 
@@ -164,7 +164,7 @@ and the star exchanges the vectors with the bivectors and the scalars with the p
 
 **Proof.** $\omega^2=-1$ gives $\omega^{-1}=\omega/\omega^2=-\omega=-i$, and the star is right multiplication by $\omega^{-1}$, which here equals left multiplication because $\omega$ is central. The grade exchange is the corollary on the parity of the star in the case $n=3$, and the two grades are those named.
 
-This is the sign convention of the physics articles, where the dual of a bivector $F$ is written $\tilde F_\star=-i\tilde F$; the identification of $\mathbb{B}$ with $\mathrm{Cl}_{3,0}$ and of the pseudoscalar with $i$ is from *The Clifford Structure of the Biquaternion Algebra*, and the same operation appears there as the duality that maps a bivector to a vector and a scalar to a pseudoscalar.
+This is the sign convention of the physics articles, where the dual of a bivector $F$ is written $\tilde F_\star=-i\tilde F$; the identification of $\mathbb{B}$ with $\mathrm{Cl}_{3,0}$ and of the pseudoscalar with $i$ is from *The Clifford Algebra Representation*, and the same operation appears there as the duality that maps a bivector to a vector and a scalar to a pseudoscalar.
 
 **Remark (comparison with the star of the exterior algebra).** The Hodge star of the differential forms of the geometric layer performs the same exchange of a $k$-form with an $(n-k)$-form, and it is the present operation read through the symbol isomorphism $\sigma$ of *The Geometric Product and the Grade Decomposition*. The two differ by a sign on each grade, the sign depending on the grade and on the ordering convention chosen for the complementary basis; the signs displayed in this article are those of the Clifford normalisation, in which $\star\star A=(\omega^2)^{-1}A$ exactly and the cross product takes the form $(a\wedge b)\omega^{-1}$.
 
@@ -172,7 +172,7 @@ This is the sign convention of the physics articles, where the dual of a bivecto
 
 The volume element $\omega=e_1e_2\cdots e_n$ of an orthogonal basis has square $\omega^2=(-1)^{n(n-1)/2}\prod_iq(e_i)$, is invertible for a non-degenerate form, and is central for odd $n$ and central up to sign for even $n$. Multiplication by $\omega$ raises or lowers the grade to its complement: for $A$ of grade $k$ both $A\omega$ and $\omega A$ lie in grade $n-k$, so that right and left multiplication by $\omega$ are bijections $\mathrm{Cl}_k\to\mathrm{Cl}_{n-k}$; on a basis blade the operation returns the basis blade of the complementary index set, up to sign, and so carries a subspace to its orthogonal complement. The map depends on the orientation, changing sign when the orientation of the basis is reversed.
 
-Normalised by the inverse volume element, the operation is the Hodge star $\star A=A\omega^{-1}$, of square $\star^2=(\omega^2)^{-1}\operatorname{id}$, which preserves the parity grading for even $n$ and exchanges the two parity parts for odd $n$. The square of the star is $+1$ on the four-dimensional Euclidean space, where the six-dimensional space of bivectors splits into self-dual and anti-self-dual halves of dimension three, and $-1$ on the four-dimensional space of signature $(1,3)$, where it is a complex structure on the same space. In three definite dimensions the star of an outer product of two vectors is their cross product, $a\times b=\star(a\wedge b)$, of squared length $q(a)q(b)-B(a,b)^2$, and the scalar triple product is $a\cdot(b\times c)=(a\wedge b\wedge c)\omega^{-1}$. In the biquaternion algebra the star is multiplication by $-i$, the convention of the dual of the physics articles.
+Normalised by the inverse volume element, the operation is the Hodge star $\star A=A\omega^{-1}$, of square $\star^2=(\omega^2)^{-1}\operatorname{id}$, which preserves the parity grading for even $n$ and exchanges the two parity parts for odd $n$. The square of the star is $+1$ on the four-dimensional Euclidean space, where the six-dimensional space of bivectors splits into self-dual and anti-self-dual halves of dimension three, and $-1$ on the four-dimensional space of signature $(1,3)$, where it is a complex structure on the same space. In three definite dimensions the star of an outer product of two vectors is their cross product, $a\times b=\star(a\wedge b)$, of square $q(a)q(b)-B(a,b)^2$, and the scalar triple product is $a\cdot(b\times c)=(a\wedge b\wedge c)\omega^{-1}$. In the biquaternion algebra the star is multiplication by $-i$, the convention of the dual of the physics articles.
 
 ## Summary of Notation
 

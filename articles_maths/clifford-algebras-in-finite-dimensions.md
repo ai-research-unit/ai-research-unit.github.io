@@ -649,9 +649,9 @@ Because the quadratic is of degree two, the count of isolated roots is read off 
 - if \(b_S+ib_I\neq0\), the two values \(z=(\beta\pm\rho)/2\), \(\rho^2=b_S+ib_I\), are distinct; a value with \(|z|\neq0\) contributes two roots, a value with \(z=0\) contributes none. The generic count is **four** roots, dropping to **two** when one of the two values of \(z\) vanishes;
 - if \(b_S+ib_I=0\), the two values coincide and there are **two** roots (or none, when the common value \(\beta/2\) also vanishes), so the count drops.
 
-The vanishing of one value of \(z\) is exactly the case \(b_S\ge0\) and \(b_I=0\), which is the degeneracy that opens the continuous family of §31.
+The vanishing of one value of \(z\) is exactly the case \(b_S\ge0\) and \(b_I=0\), which is the degeneracy that opens the one-parameter family of §31.
 
-## 31. The Continuum of Roots
+## 31. The Complex-Scalar Family of Roots
 
 The reduction of §29 assumed \(\sigma=s^2+S^2\neq0\). The complementary case is genuine and produces a family rather than isolated points.
 
@@ -674,13 +674,13 @@ Collecting §30 and §31, every \(B\in Cl_{3,0}\) falls into exactly one of the 
 - **No root.** \(b_S+ib_I=0\), \(\beta=0\), and \(B\) not a complex scalar: for instance \(B=e_3+e_{23}\). Then the quadratic has only the value \(z=0\), which the linear system cannot support. A necessary condition is \(b_0=b_{123}=0\) and \(b_S=b_I=0\).
 - **Two roots.** \(b_S+ib_I=0\) and \(\beta\neq0\), or one value of \(z\) vanishes: the quadratic supplies a single nonzero complex number \(z\), hence the pair \(\pm A\).
 - **Four roots.** \(b_S+ib_I\neq0\) and both values of \(z\) nonzero: two pairs \(\pm A\). This is the generic case.
-- **A continuum, alone or alongside isolated roots.** \(B=b_0+b_{123}\omega\): the four-parameter family of §31, together with the isolated roots supplied by the values of \(z\).
+- **A complex-scalar family, alone or alongside isolated roots.** \(B=b_0+b_{123}\omega\): the four-parameter family of §31, together with the isolated roots supplied by the values of \(z\).
 
 The three central values of the algebra illustrate the trichotomy: \(B=e_0\) has the two roots \(\pm e_0\) and a family; \(B=-e_0\) has the two roots \(\pm\omega\) and a family; \(B=0\) has the family alone, its nonzero members the null elements.
 
 ## 33. The Reading of the Data
 
-The two data \(b_0\) and \(b_{123}\) have a direct reading in terms of the unknown root \(A=v+V\omega\) when it is a complex scalar, that is, on the continuum of §31: \(b_0 = Q(v)-Q(V)\) is the difference of the squared lengths of the two vectors, and \(b_{123}=2B(v,V)\) controls their mutual angle. So the scalar coefficient fixes a pair of concentric spheres on which \(v\) and \(V\) must lie, and the pseudoscalar coefficient fixes the angle between them; this is the geometric reading of the square-root problem given by Acus and Dargys, whose Clifford-layer algorithm is the closed form of §30–§31 written in the variables \(b_S,b_I,\Delta\).
+The two data \(b_0\) and \(b_{123}\) have a direct reading in terms of the unknown root \(A=v+V\omega\) when it is a complex scalar, that is, in the complex-scalar case of §31: \(b_0 = Q(v)-Q(V)\), and \(b_{123}=2B(v,V)\) controls their mutual relation. So the scalar coefficient fixes a pair of concentric quadrics on which \(v\) and \(V\) must lie, and the pseudoscalar coefficient fixes their mutual relation; this is the geometric reading of the square-root problem given by Acus and Dargys, whose Clifford-layer algorithm is the closed form of §30–§31 written in the variables \(b_S,b_I,\Delta\).
 
 For a general element the same two numbers are the real and imaginary parts of the complex number \(\beta^2-\gamma\) of §29, and the existence of roots is decided by its vanishing: \(b_S+ib_I=0\) is the boundary between the four roots and the two, and \(\beta=0\) on that boundary is the frontier with the rootless case.
 
@@ -694,9 +694,9 @@ For a general element the same two numbers are the real and imaginary parts of t
 
 **The isolated roots** come from the two values \(z=(\beta\pm\sqrt{b_S+ib_I})/2\). A nonzero value gives a pair \(\pm A\) through \(s=\pm\sqrt{(\sigma+\delta)/2}\), \(S\) signed by \(2sS=\tau\), \(\sigma=|z|\), and the vector formulas. The generic count is four roots, falling to two when one value of \(z\) vanishes or when the two values coincide, and to none when both vanish at \(\beta=0\).
 
-**The continuum** occurs exactly when \(B=b_0+b_{123}\omega\) is a complex scalar: the roots then include the four-parameter family \(v+V\omega\) with \(Q(v)-Q(V)=b_0\), \(2B(v,V)=b_{123}\), alongside the isolated roots. The roots of \(0\) are the null elements of this family.
+**The complex-scalar family** occurs exactly when \(B=b_0+b_{123}\omega\) is a complex scalar: the roots then include the four-parameter family \(v+V\omega\) with \(Q(v)-Q(V)=b_0\), \(2B(v,V)=b_{123}\), alongside the isolated roots. The roots of \(0\) are the null elements of this family.
 
-**The reading** of the two data is \(b_0=Q(v)-Q(V)\) and \(b_{123}=2B(v,V)\) on the continuum: a difference of squared lengths and an angle. The closed form is due to Acus and Dargys; the quadratic of §29 is the form in which this article states and proves it.
+**The reading** of the two data is \(b_0=Q(v)-Q(V)\) and \(b_{123}=2B(v,V)\) in the complex-scalar family: the values \(Q(v)\), \(Q(V)\) and a bilinear term. The closed form is due to Acus and Dargys; the quadratic of §29 is the form in which this article states and proves it.
 
 ---
 

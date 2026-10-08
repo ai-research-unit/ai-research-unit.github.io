@@ -493,7 +493,7 @@ In this reading the spinor module is not an add-on to the biquaternion framework
 2. **The covariance of the biquaternion Dirac equation.** The companion article on the Dirac equation formulates the equation as the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ but leaves open the transformation law of the biquaternion-valued field $\tilde{\Psi}$.
 
 A natural candidate is the module action defined here; its compatibility with the mass term requires the relationship between the one-sided action and the conjugate module to be fixed by a convention.
-3. **The biquaternion form of the symplectic pairing.** The invariant form $\varepsilon$ is presented here in matrix coordinates. Its expression as a biquaternion bilinear on the ideal $\mathbb{B}p$ follows from the coordinate map, but the cleanest biquaternion formula is a matter of convention.
+3. **The biquaternion form of the symplectic pairing.** The invariant form $\varepsilon$ is presented here in matrix coordinates. Its expression as a bigeneral quaternionic bilinear on the ideal $\mathbb{B}p$ follows from the coordinate map, but the cleanest biquaternion formula is a matter of convention.
 4. **Majorana and reality conditions.** In Lorentzian signature the Dirac module is self-conjugate but the two Weyl halves are a conjugate pair, so Majorana spinors exist while Majorana–Weyl spinors do not. How these reality conditions read as conditions on biquaternion-valued fields is a natural continuation.
 5. **Curved spacetime.** The module and its action are pointwise algebraic. Whether the spinor module globalizes to a bundle over a curved biquaternionic background is open, in parallel with the open questions of the companion articles.
 6. **The indefinite pairing and the framework's own reading.** The pairing $[u|v]=u^{\dagger}\sigma_3v$, the triple $\varsigma$ and the hyperboloid models come from the external reading cited in *Quantum Gravity under the Biquaternion Framework — A Research Agenda*. Whether the framework gives them an independent meaning — in particular whether the Majorana pair of the one-sheeted case is the module real structure of *The Neutrino and Majorana Fermions in Biquaternionic Form* — is not settled here, and the two articles are consistent but not yet joined.
@@ -546,8 +546,8 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 | $\varsigma=(\sigma_3,i\sigma_2,-i\sigma_1)$ | Hermitian triple; $\varsigma^i\varsigma^j=\eta^{ij}-i\varepsilon^{ijk}\eta_{kl}\varsigma^l$ |
 | $S^2$, $H^\pm$, $H^{sl}$ | Sphere and the two hyperboloids modelled on the module |
 | $\omega=i\sigma_3^{ij}dz_i\wedge dz_j$ | Symplectic form on the doubled spinor space; $\{v^i,v^j\}=-\varepsilon^{ijk}\eta_{kl}v^l$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

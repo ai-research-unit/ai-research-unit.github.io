@@ -71,6 +71,44 @@ so $B(u, v) = -B(v, u)$ and $B$ is skew-symmetric. Conversely, if $B$ is skew-sy
 
 We work with symmetric and alternating forms throughout. The skew-symmetric forms are recovered from the alternating ones when $2$ is invertible, and in that case the classification of skew-symmetric forms is the classification of alternating forms.
 
+### The Symmetric and Alternating Decomposition
+
+The symmetry conditions do not only classify the forms; when $2$ is invertible they split the whole space of forms.
+
+**Definition.** The **transpose** of a bilinear form $B$ on $M$ is the form $B^{\intercal}(u, v) = B(v, u)$. The assignment $B \mapsto B^{\intercal}$ is an $R$-linear involution of $\operatorname{Bil}_R(M)$; a form is symmetric exactly when $B^{\intercal} = B$, and skew-symmetric exactly when $B^{\intercal} = -B$.
+
+**Theorem.** Let $2$ be invertible in $R$. Then every bilinear form $B$ on $M$ has a unique decomposition
+
+$$
+B = B_{s} + B_{a}, \qquad B_{s}^{\intercal} = B_{s}, \qquad B_{a}^{\intercal} = -B_{a},
+$$
+
+into a **symmetric part** and an **alternating part**, given by
+
+$$
+B_{s} = \tfrac{1}{2}\bigl(B + B^{\intercal}\bigr), \qquad B_{a} = \tfrac{1}{2}\bigl(B - B^{\intercal}\bigr).
+$$
+
+Equivalently $\operatorname{Bil}_R(M) = \operatorname{Sym}_R(M) \oplus \operatorname{Alt}_R(M)$, the fixed and the anti-fixed part of the transposition.
+
+**Proof.** Each of $B_{s}$, $B_{a}$ is additive and $R$-linear in each variable. The transpose is an involution, so $B_{s}^{\intercal} = \tfrac{1}{2}(B^{\intercal} + B) = B_{s}$ and $B_{a}^{\intercal} = \tfrac{1}{2}(B^{\intercal} - B) = -B_{a}$. Moreover $B_{a}(v, v) = \tfrac{1}{2}(B(v, v) - B(v, v)) = 0$, so $B_{a}$ is alternating, and $B_{s} + B_{a} = B$. For uniqueness, transpose a decomposition $B = S + A$ with $S$ symmetric and $A$ alternating: an alternating form is skew-symmetric, so $A^{\intercal} = -A$ and $B^{\intercal} = S - A$, whence $2S = B + B^{\intercal}$ and $2A = B - B^{\intercal}$, and $2$ is invertible. Uniqueness gives $\operatorname{Sym}_R(M) \cap \operatorname{Alt}_R(M) = 0$, so the sum is direct. $\square$
+
+**Corollary (matrix form).** In a basis the Gram matrix splits as
+
+$$
+G = \tfrac{1}{2}\bigl(G + G^{T}\bigr) + \tfrac{1}{2}\bigl(G - G^{T}\bigr),
+$$
+
+the two summands being the Gram matrices of the symmetric and the alternating part.
+
+**Remark.** The splitting is the fixed-and-anti-fixed decomposition of the transposition, and it fails exactly when $2$ is not invertible. Over $\mathbb{F}_{2}$ the transpose is the identity, every form is symmetric, and no form has a nonzero alternating part; the hypothesis of invertibility of $2$ is therefore the whole content. In characteristic $2$ the correct statement is a filtration rather than a splitting, $\operatorname{Alt}_R(M) \subseteq \operatorname{Sym}_R(M)$, with the quotient measured by the diagonal: for a symmetric $B$ the function $v \mapsto B(v, v)$ is additive, since
+
+$$
+B(u + v, u + v) = B(u, u) + 2B(u, v) + B(v, v) = B(u, u) + B(v, v),
+$$
+
+so the alternating forms are exactly the symmetric forms whose diagonal vanishes and the quotient is read by the linear functional $v \mapsto B(v, v)$. The passage from a symmetric form to the quadratic form of that diagonal is *Quadratic Forms and Polarisation*, whose characteristic-two section continues this remark; the same splitting on the sesquilinear side, into the Hermitian and the skew-Hermitian parts, is *The Sesquilinear Form and the Conjugation*.
+
 ### The Matrix of a Form
 
 Let $M$ be **free** of finite rank $n$ with basis $e_1, \ldots, e_n$. A bilinear form is determined by its values on pairs of basis vectors, so define
@@ -129,7 +167,7 @@ $$
 S^\perp = \{u \in M : B(u, s) = 0 \text{ for all } s \in S\}.
 $$
 
-The complement $S^\perp$ is a submodule of $M$. For a symmetric or skew-symmetric form the relation of orthogonality is symmetric in $u$ and $v$, and then $S \subseteq (S^\perp)^\perp$. In general the two-sided orthogonal complement may be larger than $S$; the radical defined below measures the failure.
+The complement $S^\perp$ is a submodule of $M$. For a symmetric or skew-symmetric form the relation of orthogonality is symmetric in $u$ and $v$, and then $S \subseteq (S^\perp)^\perp$. In general the two-sided orthogonal complement may be larger than $S$; the radical defined below records the failure.
 
 ### The Radical
 
@@ -290,7 +328,7 @@ The discriminant is the first congruence invariant of a non-degenerate symmetric
 
 ## Summary
 
-A **bilinear form** on an $R$-module $M$ is a function $B : M \times M \to R$ linear in each argument. It is **symmetric** if $B(u, v) = B(v, u)$, **skew-symmetric** if $B(u, v) = -B(v, u)$, and **alternating** if $B(v, v) = 0$ for all $v$. Every alternating form is skew-symmetric, and when $2$ is invertible the two notions coincide and a symmetric alternating form is zero.
+A **bilinear form** on an $R$-module $M$ is a function $B : M \times M \to R$ linear in each argument. It is **symmetric** if $B(u, v) = B(v, u)$, **skew-symmetric** if $B(u, v) = -B(v, u)$, and **alternating** if $B(v, v) = 0$ for all $v$. Every alternating form is skew-symmetric, and when $2$ is invertible the two notions coincide and a symmetric alternating form is zero. When $2$ is invertible the **transpose** $B^{\intercal}(u, v) = B(v, u)$ splits every form uniquely into a **symmetric part** and an **alternating part**, $\operatorname{Bil}_R(M) = \operatorname{Sym}_R(M) \oplus \operatorname{Alt}_R(M)$, with $B_{s} = \tfrac{1}{2}(B + B^{\intercal})$ and $B_{a} = \tfrac{1}{2}(B - B^{\intercal})$; when $2$ is not invertible the splitting degrades to the filtration $\operatorname{Alt}_R(M) \subseteq \operatorname{Sym}_R(M)$ read by the diagonal $v \mapsto B(v, v)$.
 
 On a free module of finite rank a form is represented by its **Gram matrix** $G_{ij} = B(e_i, e_j)$, with $B(u, v) = [u]^T G [v]$. Symmetry is $G = G^T$, skew-symmetry is $G = -G^T$, and a change of basis replaces $G$ by $P^T G P$; forms related in this way are **congruent**. The **rank** of $B$ is the rank of $G$.
 
@@ -317,6 +355,9 @@ The **orthogonal direct sum** $B_1 \perp B_2$ on $M_1 \oplus M_2$ is non-degener
 | $\operatorname{rank}(B)$ | Rank of the Gram matrix |
 | $B_1 \perp B_2$ | Orthogonal direct sum of forms |
 | $\operatorname{Isom}(M, B)$ | Isometry group of $B$ |
+| $B^{\intercal}$ | Transpose, $B^{\intercal}(u, v) = B(v, u)$ |
+| $B_{s}$, $B_{a}$ | Symmetric and alternating parts of $B$ |
+| $\operatorname{Sym}_R(M)$, $\operatorname{Alt}_R(M)$ | Symmetric and alternating forms on $M$ |
 | $\operatorname{O}(M, B)$ | Orthogonal group of a symmetric form |
 | $\operatorname{Sp}(M, B)$ | Symplectic group of an alternating form |
 | $\delta_{ij}$ | Kronecker delta |

@@ -14,7 +14,7 @@ The quadratic family and its critical set are *The Biquaternion Quadratic Map an
 
 The article owns the escaping set, the Green's function of a biquaternion parameter, its norm-independence, its functional equation and its vanishing locus on the regular part, the exact eigenvalue formula for a central parameter, and the statement of the obstruction at the zero divisors.
 
-**Standing convention.** $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ in the complex bilinear product, $\mathcal K_{\tilde C}$ the filled Julia set, $J_{\tilde C}$ its boundary, $\|\cdot\|_E$ the Euclidean norm, $\|\cdot\|_F$ the Frobenius norm on $M_2(\mathbb{C})$.
+**Standing convention.** $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ in the general plain bilinear product, $\mathcal K_{\tilde C}$ the filled Julia set, $J_{\tilde C}$ its boundary, $\|\cdot\|_E$ the Euclidean norm, $\|\cdot\|_F$ the Frobenius norm on $M_2(\mathbb{C})$.
 
 ## The Escaping Set
 

@@ -89,7 +89,7 @@ One gap in the construction is carried here unchanged, because it bears on how a
 
 ### The ceiling on the gauge algebra
 
-The available gauge algebra is determined by the algebra, not chosen, and it is bounded. The reasoning is inherited from the read list and from *Modules over the Biquaternion Algebra*.
+The available gauge algebra is determined by the algebra, not chosen, and it is bounded. The reasoning is inherited from the read list and from *Modules over the General Plain Algebra of Biquaternions*.
 
 - **The compact subalgebra has dimension at most four.** The compact algebra present in $\mathbb{M}_-$ is $\mathrm{U}(2)$, and $\mathbb{B}\cong M_2(\mathbb{C})$ has the Cartan decomposition
 $$
@@ -343,7 +343,7 @@ The article commits throughout to the agenda's central discipline: no section as
 
 - *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda* — the colour gap, the ceiling on the gauge algebra, and the three-way classification this article shares.
 - *The Renormalization Group in Biquaternionic Form* — the one-loop non-abelian beta function and the article's own statement that the group, matter, action, and regulator are inputs; the caution against reading a transcription as a derivation.
-- *Modules over the Biquaternion Algebra* and *Lie Algebras: A General Introduction* — the module structure and the compact-subalgebra facts behind the ceiling.
+- *Modules over the General Plain Algebra of Biquaternions* and *Lie Algebras: A General Introduction* — the module structure and the compact-subalgebra facts behind the ceiling.
 - *The Spinor Module in Biquaternionic Form and Its Lorentz Action* and *The Dirac Equation in Biquaternionic Form* — the spinor module, the mass term, and the real-structure origin of chirality.
 
 - *Biquaternion Ideals and Peirce Decomposition* — the ideal decomposition, distinguished from the chiral and sector decompositions.

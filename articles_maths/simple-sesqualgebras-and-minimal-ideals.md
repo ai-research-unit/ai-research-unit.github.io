@@ -120,7 +120,7 @@ The two-sided case runs along the centre.
 
 ### The Biquaternions
 
-**Example.** Let $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with $R = \mathbb{C}$, $\varsigma$ the conjugation and $*$ the involution of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, which conjugates the coefficient and negates $e_1, e_2, e_3$ while fixing $e_0$. The algebra is simple by *Biquaternion Ideals and the Peirce Decomposition*, and like the matrices it is not a division algebra. The idempotents
+**Example.** Let $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with $R = \mathbb{C}$, $\varsigma$ the conjugation and $*$ the involution of *Introduction to the General Plain Sesqualgebra of Biquaternions*, which conjugates the coefficient and negates $e_1, e_2, e_3$ while fixing $e_0$. The algebra is simple by *Biquaternion Ideals and the Peirce Decomposition*, and like the matrices it is not a division algebra. The idempotents
 $$
 \tilde\Pi_1 = \tfrac12(e_0 + i e_3), \qquad \tilde\Pi_2 = \tfrac12(e_0 - i e_3)
 $$

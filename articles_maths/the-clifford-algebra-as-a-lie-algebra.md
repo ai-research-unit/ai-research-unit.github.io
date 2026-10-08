@@ -158,7 +158,7 @@ while $q(u)q(v) - B(u,v)^2 = a_1a_2(\alpha\delta - \beta\gamma)^2$ by the same e
 
 **Proof.** For the first statement, expand the square: the products of a pair $\{i,j\}$ with itself contribute $\tfrac{1}{4}c_{ij}^2(e_ie_j)^2 = -\tfrac{1}{4}c_{ij}^2a_ia_j$, while a product of two distinct pairs has degree $2$ when the pairs share an index and degree $4$ when they are disjoint, so it contributes nothing to the scalar part. For the second statement, the forward implication is the proposition above. The converse is the classical criterion for bivectors: over a field of characteristic not $2$, a bivector is decomposable exactly when $X \wedge X = 0$ in $\Lambda^4 V$. A direct expansion of $\Phi(X)^2$ in the orthogonal basis shows that its degree-two part vanishes identically and that its degree-four part vanishes exactly when the Plücker relations $c_{ij}c_{kl} - c_{ik}c_{jl} + c_{il}c_{jk} = 0$ hold on the coefficients, which is the same condition as $X \wedge X = 0$; the criterion is cited as standard.
 
-**Remark.** The square of a bivector therefore has a geometric reading. A decomposable bivector spans a plane, and $\Phi(u\wedge v)^2 = -\tfrac{1}{4}\det G$ is a negative multiple of the determinant of the form on that plane: a definite plane gives a negative square and an elliptic rotation, an indefinite plane a positive square and a hyperbolic one, and a degenerate plane gives square $0$, so that $\exp(\Phi(u \wedge v)) = 1 + \Phi(u \wedge v)$ is a transvection. A non-decomposable bivector has a square with a non-scalar part, so it does not generate a commutative subalgebra and its exponential is not a rotation in a single plane.
+**Remark.** The square of a bivector therefore has a geometric reading. A decomposable bivector spans a plane, and $\Phi(u\wedge v)^2 = -\tfrac{1}{4}\det G$ is a negative multiple of the determinant of the form on that plane: a definite plane gives a negative square and an elliptic rotation, an indefinite plane a positive square and a hyperbolic one, and a degenerate plane gives square $0$, so that $1 + \Phi(u \wedge v)$ is a transvection. A non-decomposable bivector has a square with a non-scalar part, so it does not generate a commutative subalgebra and the group element it generates is not a rotation in a single plane.
 
 ### The Trace Form and the Killing Form
 
@@ -190,7 +190,7 @@ $$
 \kappa\bigl(\varphi(X), \varphi(Y)\bigr) = 8(n-2)\,\mathrm{Sc}\bigl(\Phi(X)\Phi(Y)\bigr).
 $$
 
-For the standard form, where all $a_i = 1$, the identity $\operatorname{tr}(\varphi(X)^2) = -2\sum_{i<j}c_{ij}^2$ shows that the trace form is negative definite, which is the computation behind the compactness of $\mathrm{SO}(n)$ recorded there.
+For the standard form, where all $a_i = 1$, the identity $\operatorname{tr}(\varphi(X)^2) = -2\sum_{i<j}c_{ij}^2$ shows that the trace form is negative definite, which is the computation behind the negative definiteness of the trace form recorded there.
 
 ## The Geometric Interpretation
 
@@ -206,13 +206,7 @@ The three together account for the classical picture of the Clifford algebra: ve
 
 ### Infinitesimal Rotations
 
-The identification of the bivectors with $\mathrm{SO}(V, q)$ is compatible with the exponential of *The Orthogonal Lie Algebra* in the following sense: for a bivector $x \in B_2$ the exponential
-
-$$
-\exp(x) = \sum_{k \geq 0} \frac{x^k}{k!}
-$$
-
-converges when $F = \mathbb{R}$ or $\mathbb{C}$ and $x$ is finite, and lies in the even part of the Clifford algebra.
+The identification of the bivectors with $\mathrm{SO}(V, q)$ matches the passage from the Lie algebra to the group. The exponential map that effects that passage needs the convergence of a series and is therefore Part III's, in *The Lie Algebra and the Exponential Map*. What the Clifford algebra supplies algebraically is the closed form for a bivector whose square is a scalar: if $x^2 = \lambda$ then the element of the group it generates is the polynomial $\cosh$ or $\cos$ of $x$ according to the sign of $\lambda$, and it lies in the even part $\mathrm{Cl}^0$.
 
 ### The Volume Element and the Trivectors
 
@@ -238,13 +232,13 @@ $$
 \Phi(e_1 \wedge e_2) = \tfrac{1}{2}e_1e_2, \qquad (e_1e_2)^2 = -1,
 $$
 
-so the bivector satisfies $[\Phi(e_1 \wedge e_2), \Phi(e_1 \wedge e_2)] = 0$: the Lie algebra is abelian, as $\mathrm{SO}(2)$ is. Its exponential is
+so the bivector satisfies $[\Phi(e_1 \wedge e_2), \Phi(e_1 \wedge e_2)] = 0$: the Lie algebra is abelian, as $\mathrm{SO}(2)$ is. The element it generates is the polynomial
 
 $$
-\exp(\theta\,\tfrac{1}{2}e_1e_2) = \cos(\theta/2) + e_1e_2\sin(\theta/2),
+\cos(\theta/2) + e_1e_2\sin(\theta/2),
 $$
 
-whose conjugation action on $V$ is the plane rotation $\exp(\theta\varphi(e_1 \wedge e_2)) = R(-\theta)$ of *The Rotation Group and Orientation*; the half angle is the usual doubling of the Clifford parametrisation of a rotation.
+whose conjugation action on $V$ is the plane rotation $R(-\theta)$ of *The Rotation Group and Orientation*; the Clifford parameter $\theta/2$ is half that of the rotation, which is the usual doubling of the Clifford parametrisation.
 
 ### Three Dimensions
 
@@ -261,10 +255,10 @@ with the cyclic permutations. Under the correspondence $\Phi(e_1 \wedge e_2) \le
 For $V = F^2$ with the form $q(e_1) = 1$, $q(e_2) = -1$, the bivector $\Phi(e_1 \wedge e_2) = \tfrac{1}{2}e_1e_2$ satisfies $(e_1e_2)^2 = -e_1^2e_2^2 = 1$, so $e_1e_2$ is a non-nilpotent element of square $1$, and
 
 $$
-\exp(\theta\,\tfrac{1}{2}e_1e_2) = \cosh(\theta/2) + e_1e_2\sinh(\theta/2).
+\cosh(\theta/2) + e_1e_2\sinh(\theta/2).
 $$
 
-The Lie algebra $\mathrm{SO}(1, 1)$ is again one-dimensional and abelian, but its exponential is a hyperbolic rotation. For an orthogonal pair $e_i, e_j$ one has $(e_ie_j)^2 = -q(e_i)q(e_j)$, so the square of the bivector is the negative of the determinant of the form on the plane it spans: a definite plane gives a negative square and a periodic one-parameter group, an indefinite plane a positive square and a hyperbolic one.
+The Lie algebra $\mathrm{SO}(1, 1)$ is again one-dimensional and abelian, and the element generated by its nonzero bivector is a hyperbolic rotation. For an orthogonal pair $e_i, e_j$ one has $(e_ie_j)^2 = -q(e_i)q(e_j)$, so the square of the bivector is the negative of the determinant of the form on the plane it spans: a definite plane gives a negative square and a periodic one-parameter group, an indefinite plane a positive square and a hyperbolic one.
 
 ## Summary
 
@@ -272,11 +266,11 @@ The Clifford algebra $\mathrm{Cl}(V, q)$ is a Lie algebra under the commutator $
 
 The **bivectors** $\Phi(u \wedge v) = \tfrac{1}{4}(uv - vu)$ form a subspace $B_2$ of $\mathrm{Cl}^0$ of dimension $\binom{n}{2}$, and the map $\Phi$ is an isomorphism of Lie algebras from $\Lambda^2 V$ with its transported bracket onto $B_2$; equivalently, the bivectors with the commutator are isomorphic to the orthogonal Lie algebra $\mathrm{SO}(V, q)$. On the vectors the adjoint action is the defining representation, $[\Phi(x), w] = \varphi(x)(w)$, so a bivector is an infinitesimal rotation in the plane of its two factors: vectors are directions, bivectors are infinitesimal rotations, and trivectors and higher multivectors complete the algebra. For elements pure of degrees $p$ and $q$ the commutator has degree at most $p + q$, falling to at most $p + q - 2$ whenever one of the two degrees is even; the leading term survives only when both degrees are odd, and it is twice the graded product.
 
-The square of a decomposable bivector is the scalar $\Phi(u \wedge v)^2 = -\tfrac{1}{4}\det G$, where $G$ is the Gram matrix of the form on the plane spanned by $u$ and $v$, and a bivector is decomposable exactly when its Clifford square is a scalar; in an orthogonal basis the scalar part of $\Phi(X)^2$ for $X = \sum c_{ij}e_i \wedge e_j$ is $-\tfrac{1}{4}\sum c_{ij}^2a_ia_j$. A definite plane therefore gives a negative square and an elliptic rotation, an indefinite plane a positive square and a hyperbolic one, and a degenerate plane square $0$, so that the exponential is the transvection $1 + \Phi(u \wedge v)$.
+The square of a decomposable bivector is the scalar $\Phi(u \wedge v)^2 = -\tfrac{1}{4}\det G$, where $G$ is the Gram matrix of the form on the plane spanned by $u$ and $v$, and a bivector is decomposable exactly when its Clifford square is a scalar; in an orthogonal basis the scalar part of $\Phi(X)^2$ for $X = \sum c_{ij}e_i \wedge e_j$ is $-\tfrac{1}{4}\sum c_{ij}^2a_ia_j$. A definite plane therefore gives a negative square and an elliptic rotation, an indefinite plane a positive square and a hyperbolic one, and a degenerate plane square $0$, so that $1 + \Phi(u \wedge v)$ is a transvection.
 
-The invariant forms of the bivector Lie algebra are computed by the scalar part of the Clifford product: $\operatorname{tr}(\varphi(X)\varphi(Y)) = 8\,\mathrm{Sc}(\Phi(X)\Phi(Y))$ for bivectors $X, Y$, and since the Killing form of $\mathrm{SO}(V,q)$ is $\kappa = (n-2)\beta$ with $\beta$ the trace form, one has $\kappa(\varphi X, \varphi Y) = 8(n-2)\mathrm{Sc}(\Phi(X)\Phi(Y))$. In particular $\operatorname{tr}(\varphi(X)^2) = -2\sum c_{ij}^2a_ia_j$, which is negative definite for the standard form and is the computation behind the compactness of $\mathrm{SO}(n)$.
+The invariant forms of the bivector Lie algebra are computed by the scalar part of the Clifford product: $\operatorname{tr}(\varphi(X)\varphi(Y)) = 8\,\mathrm{Sc}(\Phi(X)\Phi(Y))$ for bivectors $X, Y$, and since the Killing form of $\mathrm{SO}(V,q)$ is $\kappa = (n-2)\beta$ with $\beta$ the trace form, one has $\kappa(\varphi X, \varphi Y) = 8(n-2)\mathrm{Sc}(\Phi(X)\Phi(Y))$. In particular $\operatorname{tr}(\varphi(X)^2) = -2\sum c_{ij}^2a_ia_j$, which is negative definite for the standard form and is the computation behind the negative definiteness of the trace form.
 
-Exponentiating a bivector gives an element of $\mathrm{Cl}^0$ whose conjugation action is the corresponding rotation, which is the passage from the Lie algebra to the Clifford, Pin and Spin groups. In an odd-dimensional space the volume element is central, so the top-degree trivector commutes with every bivector; in the plane the product $e_1e_2$ squares to $-1$ for a definite form and to $+1$ for an indefinite one, and the exponential of the bivector is the trigonometric or the hyperbolic rotation accordingly.
+The element generated by a bivector lies in $\mathrm{Cl}^0$, and its conjugation action is the corresponding rotation; this is the passage from the Lie algebra to the Clifford, Pin and Spin groups. In an odd-dimensional space the volume element is central, so the top-degree trivector commutes with every bivector; in the plane the product $e_1e_2$ squares to $-1$ for a definite form and to $+1$ for an indefinite one, and the element generated by the bivector is the trigonometric or the hyperbolic one accordingly.
 
 ## Summary of Notation
 
@@ -293,7 +287,7 @@ Exponentiating a bivector gives an element of $\mathrm{Cl}^0$ whose conjugation 
 | $\det G$ | Determinant of the Gram matrix on the plane of $u, v$ |
 | $c_{ij}$ | Coefficients of a bivector in an orthogonal basis |
 | Decomposable bivector | $X = u \wedge v$, equivalently $X \wedge X = 0$ |
-| Transvection | $\exp(x) = 1 + x$ for a bivector with $x^2 = 0$ |
+| Transvection | $1 + x$ for a bivector with $x^2 = 0$ |
 | $\operatorname{tr}$ | Trace of an endomorphism of $V$ |
 | $E_{ij}$ | Matrix unit, $E_{ij}(e_j) = e_i$ |
 | $\mathrm{Sc}$ | Scalar part in the Clifford algebra |
@@ -307,7 +301,6 @@ Exponentiating a bivector gives an element of $\mathrm{Cl}^0$ whose conjugation 
 | $\mathrm{SO}(V, q)$ | Orthogonal Lie algebra of skew maps |
 | $e_i$ | Orthogonal basis, $q(e_i) = a_i$ |
 | $\omega = e_1\cdots e_n$ | Volume element |
-| $\exp(x)$ | Exponential of a bivector |
 | $\mathrm{SO}(1, 1)$, $\mathrm{SO}(3)$ | Low-dimensional orthogonal Lie algebras |
 | $F$, $\mathbb{R}$, $\mathbb{C}$ | Field, real and complex numbers |
 
@@ -319,6 +312,6 @@ Exponentiating a bivector gives an element of $\mathrm{Cl}^0$ whose conjugation 
 
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the commutator of bivectors and explicit low-dimensional computations.
 - I. R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the realisation of $\mathrm{SO}(V, q)$ inside the Clifford algebra.
-- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the bivector Lie algebra, its adjoint action and the exponential to the spin group.
+- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the bivector Lie algebra, its adjoint action and the passage to the spin group.
 - Larry C. Grove, *Classical Groups and Geometric Algebra*, Graduate Studies in Mathematics 39 (American Mathematical Society, 2002), for the classical groups and their Lie algebras via geometric algebra.
 - Nathan Jacobson, *Lie Algebras* (Dover, 1979), for the general theory of commutator Lie algebras and derivations.

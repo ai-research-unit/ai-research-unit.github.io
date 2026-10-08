@@ -86,7 +86,7 @@ A Clifford module is a module over the Clifford algebra, and the spinor module i
 | chirality and the half-spin representations | in even dimension $\Delta = \Delta_+ \oplus \Delta_-$ by the volume element; the half-spin representations $\rho_\pm$ | *Spin Representations and Clifford Modules with Inner Conjugation* |
 | the infinitesimal spin representation | $d\rho(v \wedge w) = \tfrac14[c(v),c(w)]$ on $\mathrm{SO}(V,q) \cong \Lambda^2V$ | *Spin Representations and Clifford Modules with Inner Conjugation* |
 | the real, complex and quaternionic spinors | the reality structures by $d \bmod 8$; Majorana, Weyl and Majorana–Weyl spinors | *Real Spinors and Reality Conditions with Inner Conjugation* |
-| the biquaternion spinor module | the spinor module of the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$; its defining module is of complex type | *Biquaternion Spin Geometry*; *The Clifford Structure of the Biquaternion Algebra* |
+| the biquaternion spinor module | the spinor module of the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$; its defining module is of complex type | *Biquaternion Spin Geometry*; *The Clifford Algebra Representation* |
 | the spinor bundle and the Dirac operator | the geometric realisation of a Clifford module over a manifold | *Spin Geometry*; *Dirac Differential Operators* |
 
 ## Non-examples and Warnings
@@ -98,7 +98,7 @@ A Clifford module is a module over the Clifford algebra, and the spinor module i
 | the Pin group | it double covers $O(V,q)$, which is disconnected; the connected component is covered by Spin | *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* |
 | the spin representation of $SO(n)$ | it is a representation of $\mathrm{Spin}(n)$ and not of $SO(n)$: $\rho(-1) = -\mathrm{id}_S$, so the sign of the double cover survives; a half-spin representation can have a larger kernel, as $\mathrm{Spin}(4) \cong Sp(1)\times Sp(1)$ on $\Delta_+$ with kernel $\{1\}\times Sp(1)$ | *Spin Representations and Clifford Modules with Inner Conjugation* |
 | the identification $\mathrm{Spin}(n) \cong SO(n)$ | it fails for every $n \geq 3$; the covering is two-to-one and non-trivial | *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; *Matrix Groups and Classical Groups* |
-| the biquaternion algebra as a division algebra | $\mathbb{B} \cong M_2(\mathbb{C})$ is not a division algebra; it is a Clifford algebra of complex type | *The Clifford Structure of the Biquaternion Algebra*; *List of Division Algebras* |
+| the biquaternion algebra as a division algebra | $\mathbb{B} \cong M_2(\mathbb{C})$ is not a division algebra; it is a Clifford algebra of complex type | *The Clifford Algebra Representation*; *List of Division Algebras* |
 | the odd-dimensional Clifford algebra | for $n$ odd and $\delta$ a square it is a product $A \times A$ with two distinct irreducible modules, so the spinor module is not unique; the volume element exchanges the two | *Bott Periodicity and the Classification* |
 | a spin structure on a manifold | it is a bundle-theoretic datum, a principal $\mathrm{Spin}(n)$-bundle lifting the frame bundle, and not a Clifford algebra | *Spin Geometry* |
 

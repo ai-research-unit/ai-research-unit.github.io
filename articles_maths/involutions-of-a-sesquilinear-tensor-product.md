@@ -177,7 +177,7 @@ with the tensor involution $\natural(z\otimes q) = \bar z\otimes{}^{\natural}q$.
 
 ### The Case $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$
 
-Let $B = \mathbb{B}$ over $(\mathbb{C},\varsigma)$ with the star ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, and let $A = B$, so that the tensor product is the tensor square $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$. Its product is the sesquilinear product
+Let $B = \mathbb{B}$ over $(\mathbb{C},\varsigma)$ with the star ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ of *Introduction to the General Plain Sesqualgebra of Biquaternions*, and let $A = B$, so that the tensor product is the tensor square $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$. Its product is the sesquilinear product
 
 $$
 (P\otimes Q)\star(R\otimes S) = (P\star R)\otimes(Q\star S) = PR^{*}\otimes QS^{*} ,

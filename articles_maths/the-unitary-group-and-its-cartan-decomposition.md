@@ -4,7 +4,7 @@
 
 **Provisional.** This article is a placeholder of the topology region, created in the dispatch that gives the four forms their own reading groups. It records its scope, its home and its sources; the content is to be written.
 
-The isometry group of the positive definite complex sesquilinear form is $U(4)$, of real dimension $16$ and compact, with its special subgroup $SU(4)$; the Lie algebra carries the Cartan decomposition $\mathfrak u(4)=\mathfrak k\oplus\mathfrak p$. This article will treat the group, its decomposition and the symmetric space it produces, and will place them beside the indefinite group $U(1,3)$ of the quaternion sesquilinear form (*The Krein Isometry Group and Its J-Contractions*). It is the definite counterpart of *The Krein Cartan Decomposition of the Operator Algebra*.
+The isometry group of the positive definite general plain sesquilinear form is $U(4)$, of real dimension $16$ and compact, with its special subgroup $SU(4)$; the Lie algebra carries the Cartan decomposition $\mathfrak u(4)=\mathfrak k\oplus\mathfrak p$. This article will treat the group, its decomposition and the symmetric space it produces, and will place them beside the indefinite group $U(1,3)$ of the general quaternionic sesquilinear form (*The Krein Isometry Group and Its J-Contractions*). It is the definite counterpart of *The Krein Cartan Decomposition of the Operator Algebra*.
 
 ## Outline
 

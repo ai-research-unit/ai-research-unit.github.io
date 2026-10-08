@@ -4,7 +4,7 @@
 
 The classical construction of the covering groups of the orthogonal group uses the inverse: the Clifford group is the set of units $x$ for which $x\,v\,x^{-1}$ is again a vector, the norm $N(x)=x x^{\natural}$ cuts it down to $\mathrm{Pin}$, and the parity cuts $\mathrm{Pin}$ down to $\mathrm{Spin}$. The right factor in all of it is $x^{-1}$, and the operator carrying it is the signed inner conjugation $\mathrm{Ad}^{\alpha}_x(v)=\alpha(x)vx^{-1}$.
 
-This article makes the same construction with the right factor replaced by the dagger, that is with the **signed Hermitian sandwich** of *Two-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint*,
+This article makes the same construction with the right factor replaced by the dagger, that is with the **signed Hermitian sandwich** of *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*,
 
 $$
 \Theta^{\alpha}_x(v)=\alpha(x)\,v\,x^{\dagger},
@@ -20,7 +20,7 @@ the **Hermitian Clifford group**. The three are related by two facts: the Hermit
 
 The payoff is a single clean statement. With the trivial involution the Hermitian Clifford group **is** the pin group, $\Gamma_{\dagger}=\mathrm{Pin}$, and the hermitian reading of $\mathrm{Pin}$ is the set of elements whose Hermitian sandwich is an isometry; the odd part of it gives the reflections and the even part the rotations, and the map to $O(V,q)$ is two-to-one exactly as for the inverse member. The general involution $\sigma$ widens the scalars and the norm condition but changes no group-theoretic statement, because everything is a scalar modification of the inverse member on the slice.
 
-The groups $\Gamma$, $\mathrm{Pin}$, $\mathrm{Spin}$, the norm and the exact sequences are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the dagger and the involution of the base are *Hilbert Algebras*; the unitary slice, its compactness and the compact real form are *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the operator and its action on $V$ are *Two-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint*; the unsigned member and its Clifford-group identities are *The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint*. Nothing owned by those entries is reproved.
+The groups $\Gamma$, $\mathrm{Pin}$, $\mathrm{Spin}$, the norm and the exact sequences are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the dagger and the involution of the base are *Hermitian Algebras*; the unitary slice, its compactness and the compact real form are *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the operator and its action on $V$ are *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the unsigned member and its Clifford-group identities are *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*. Nothing owned by those entries is reproved.
 
 **Conventions.** The base $A$ is a commutative ring with involution $\sigma$, $F$ is the field of scalars of the Clifford algebra, $V$ is free of rank $n$ with a non-degenerate quadratic form $q$, $x^{\dagger}=\sigma(\alpha(x^{r}))$, $x^{\natural}=\alpha(x^{r})$ is Clifford conjugation, $N(x)=x x^{\natural}$, $\rho_u(v)=v-2g(v,u)q(u)^{-1}u$, and $\Theta^{\alpha}_x$, $\Theta_x$, $\mathrm{Ad}^{\alpha}_x$ are the three sandwiches named above.
 
@@ -28,7 +28,7 @@ The groups $\Gamma$, $\mathrm{Pin}$, $\mathrm{Spin}$, the norm and the exact seq
 
 **Proposition (the slice is a group).** $U=\{x:x^{\dagger}x=1\}$ is a subgroup of the unit group. It contains $1$; if $x\in U$ then $x^{\dagger}=x^{-1}$ and $x^{\dagger}\in U$; and $U$ is closed under multiplication.
 
-*Proof.* This is the slice proposition of *The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint*: $(xy)^{\dagger}(xy)=y^{\dagger}x^{\dagger}xy=y^{\dagger}y=1$.
+*Proof.* This is the slice proposition of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*: $(xy)^{\dagger}(xy)=y^{\dagger}x^{\dagger}xy=y^{\dagger}y=1$.
 
 **Proposition (the Hermitian Clifford group is a group).** $\Gamma_{\dagger}=\{x\in\Gamma(V,q):\sigma(N(x))^{2}=1\}$ is a subgroup of $\Gamma(V,q)$, and it is the set of parameters for which the Hermitian sandwiches restrict to isometries of $V$,
 

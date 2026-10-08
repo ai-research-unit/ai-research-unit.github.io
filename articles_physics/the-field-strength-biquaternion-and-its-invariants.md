@@ -147,7 +147,7 @@ $$
 \tilde{F}\,\tilde{F}^{\natural} = \mathbf{F}(-\mathbf{F}) = \mathbf{F}\cdot\mathbf{F} = \sum_{k=1}^{3} F_k^2,
 $$
 
-because $\mathbf{F}\times\mathbf{F} = 0$. The cross term drops out for the biquaternion norm of a vector, and one is left with the **complex bilinear form**
+because $\mathbf{F}\times\mathbf{F} = 0$. The cross term drops out for the biquaternion norm of a vector, and one is left with the **general plain bilinear form**
 
 $$
 N(\tilde{F}) = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \sum_{k=1}^{3} F_k^2,
@@ -488,8 +488,8 @@ Duality is the rotation $\mathbf{V}\mapsto e^{-i\theta}\mathbf{V}$; at $\theta =
 | $\mathbf{S} = \mathbf{E}\times\mathbf{H}$ | Poynting vector |
 | $\tilde{\Xi} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W e_0 + \tfrac{i}{c}\mathbf{S}$ | Energy–momentum biquaternion (Hermitian); $N(\tilde{\Xi}) = W^2 - \|\mathbf{S}\|^2/c^2$ |
 | $\mathbf{v}$ | Boost (frame) velocity |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

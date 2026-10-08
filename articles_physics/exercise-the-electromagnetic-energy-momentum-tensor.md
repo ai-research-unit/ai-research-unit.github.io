@@ -18,7 +18,7 @@ An exercise built on parents tests them. The four-component energy–momentum is
 
 ## The Problem
 
-A symmetric rank-two tensor in four dimensions has ten independent components: the trace and nine traceless parts. A biquaternion has four complex coefficients, that is eight real dimensions. So **no single biquaternion can be $T^{\mu\nu}$**; a biquaternion-valued object can carry at most four of the six independent spatial-stress components. The parents supply exactly such an object — the four-component biquaternionic energy–momentum $\tilde W = \frac{1}{2}\tilde F\tilde F^{*}$ — and the exercise tests both it and the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ with which it is easily confused. The problem is therefore not to write $T^{\mu\nu}$ as one biquaternion, which is impossible, but to write it as a **biquaternion bilinear**: a quadratic expression in $\tilde F$ that carries two vector directions, one for each index.
+A symmetric rank-two tensor in four dimensions has ten independent components: the trace and nine traceless parts. A biquaternion has four complex coefficients, that is eight real dimensions. So **no single biquaternion can be $T^{\mu\nu}$**; a biquaternion-valued object can carry at most four of the six independent spatial-stress components. The parents supply exactly such an object — the four-component biquaternionic energy–momentum $\tilde W = \frac{1}{2}\tilde F\tilde F^{*}$ — and the exercise tests both it and the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ with which it is easily confused. The problem is therefore not to write $T^{\mu\nu}$ as one biquaternion, which is impossible, but to write it as a **bigeneral quaternionic bilinear**: a quadratic expression in $\tilde F$ that carries two vector directions, one for each index.
 
 The natural pair of directions is supplied by the basis $\mathcal{E}_\mu$ of $\mathbb{M}_-$. Inserting $\mathcal{E}_\mu$ and $\mathcal{E}_\nu$ into the Hermitian form $\tilde F(\,\cdot\,)\tilde F^{*}$ and taking the scalar part produces exactly one component for each ordered pair $(\mu,\nu)$, and it produces them all from a single expression. The problems below verify that this construction is the standard energy–momentum tensor, component by component.
 
@@ -96,7 +96,7 @@ $$
 $$
 using the Poynting theorem for the last equality. The factor $i$ is now uniform, as it must be in the $ict$ convention for a temporal component, and the real statement $\partial_tW + \mathrm{div}\,\mathbf{S} + \mathbf{J}\cdot\mathbf{E} = 0$ is recovered. So the four-component object whose scalar divergence gives the energy law is the Hermitian form $\tilde W_{\mathrm{corr}} = \frac{1}{2}\tilde F\tilde F^{*}$, which is the object the parents state, and the real form differs from it by $\mathbf{S}\to i\mathbf{S}$. Even so, $\tilde W_{\mathrm{corr}}$ has only four components and therefore carries only the energy density and the energy flux; the stress is not in it. That is the subject of the next problem.
 
-## Problem 2: The Tensor as a Biquaternion Bilinear
+## Problem 2: The Tensor as a Bigeneral quaternionic Bilinear
 
 **Statement.** With $\mathcal{E}_\mu \in \{ie_0, e_1, e_2, e_3\}$ the basis of $\mathbb{M}_-$ and $\tilde{Q} = Q^\mu\mathcal{E}_\mu$ a four-vector, so that the $Q^\mu$ are its physical components, define
 $$
@@ -256,11 +256,11 @@ The following problems are left to the reader. They extend the construction, and
 $$
 T^{\mu\nu} = \frac{1}{\mu}\left(F^{\mu\alpha}{F^\nu}_\alpha - \frac{1}{4}\,\eta^{\mu\nu}F_{\alpha\beta}F^{\alpha\beta}\right)
 $$
-reproduces the component table of Problem 2 up to the medium factors, and identify the normalization of the bracketed expression in terms of $W$ and $\sigma_{jk}$. This shows that the biquaternion bilinear and the standard tensor formula are the same object.
+reproduces the component table of Problem 2 up to the medium factors, and identify the normalization of the bracketed expression in terms of $W$ and $\sigma_{jk}$. This shows that the bigeneral quaternionic bilinear and the standard tensor formula are the same object.
 
-**3. Angular momentum.** Define the angular-momentum density $M^{\mu\nu\lambda} = Q^\nu T^{\mu\lambda} - Q^\lambda T^{\mu\nu}$, with $\tilde{Q}$ the four-position in $\mathbb{M}_-$. Show that $\partial_\mu M^{\mu\nu\lambda} = 0$ for a source-free field, and identify the three spatial components as the field angular momentum and the three mixed components as the boost (centre-of-energy) densities. Does the biquaternion bilinear simplify $M$, or is the position biquaternion $\tilde{Q}$ the only extra ingredient?
+**3. Angular momentum.** Define the angular-momentum density $M^{\mu\nu\lambda} = Q^\nu T^{\mu\lambda} - Q^\lambda T^{\mu\nu}$, with $\tilde{Q}$ the four-position in $\mathbb{M}_-$. Show that $\partial_\mu M^{\mu\nu\lambda} = 0$ for a source-free field, and identify the three spatial components as the field angular momentum and the three mixed components as the boost (centre-of-energy) densities. Does the bigeneral quaternionic bilinear simplify $M$, or is the position biquaternion $\tilde{Q}$ the only extra ingredient?
 
-**4. The medium and the Abraham–Minkowski question.** The tensor constructed here is the symmetric tensor with $T^{00} = \frac{1}{2}(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2)$ and $\mathbf{S} = \mathbf{E}\times\mathbf{H}$. In a dispersive or moving medium the physically correct momentum density is a matter of the Abraham–Minkowski controversy, and the symmetric tensor used here is only one of the candidates. Determine which choice makes $\partial_\mu T^{\mu\nu} = -f^\nu$ hold with the least additional force term, and whether the biquaternion bilinear of Problem 2 can be written with a different field normalization to produce the Minkowski tensor instead. This is an open question, not a computation with a standard answer.
+**4. The medium and the Abraham–Minkowski question.** The tensor constructed here is the symmetric tensor with $T^{00} = \frac{1}{2}(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2)$ and $\mathbf{S} = \mathbf{E}\times\mathbf{H}$. In a dispersive or moving medium the physically correct momentum density is a matter of the Abraham–Minkowski controversy, and the symmetric tensor used here is only one of the candidates. Determine which choice makes $\partial_\mu T^{\mu\nu} = -f^\nu$ hold with the least additional force term, and whether the bigeneral quaternionic bilinear of Problem 2 can be written with a different field normalization to produce the Minkowski tensor instead. This is an open question, not a computation with a standard answer.
 
 **5. Coupling to gravity and to the sector structure.** The parents identify the energy–momentum tensor as the source of the gravitational field, with the four-component $\tilde W$ carrying its energy density and its energy flux. The source in general relativity is the rank-two tensor $T^{\mu\nu}$, not the four-component $\tilde W$; state precisely which components of $T^{\mu\nu}$ are lost if $\tilde W$ is used as the source, and whether the missing components are recoverable from the field equations. Then ask whether $T^{\mu\nu}$ has a natural split under $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, and whether that split carries the material/informational reading.
 
@@ -320,8 +320,8 @@ The exercise also settles the form of the four-component *biquaternionic energy�
 | $f^\nu = (\frac{1}{c}\mathbf{E}\cdot\mathbf{J},\,\rho\mathbf{E}+\mathbf{J}\times\mathbf{B})$ | Four-force density (source) |
 | $N(\tilde F) = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural}$ | Biquaternion norm (vanishes for a null field) |
 | $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ | Trace formula |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

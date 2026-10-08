@@ -204,7 +204,7 @@ $$
 Q_\rho = \langle \rho, \mathbf{v} \rangle, \qquad Q_\nu = \langle \nu, \mathbf{v} \rangle, \qquad Q_\xi = \langle \xi, \mathbf{v} \rangle,
 $$
 
-where the pairing is the complex bilinear dot product $\sum_k Q_k P_k$ defined in *The Four Biquaternion Complex Products*, §*The Complex Bilinear Product $\tilde P\tilde Q$* (the polar form of the biquaternion norm, not the Hermitian inner product). The scalar coefficient $Q_0$ is unchanged.
+where the pairing is the complex bilinear dot product $\sum_k Q_k P_k$ defined in *The Four Biquaternion Complex Products*, §*The General Plain Bilinear Product $\tilde P\tilde Q$* (the polar form of the biquaternion norm, not the Hermitian inner product). The scalar coefficient $Q_0$ is unchanged.
 
 ### The Factorization
 

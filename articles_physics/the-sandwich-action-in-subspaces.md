@@ -366,9 +366,9 @@ The type of the operator is therefore decided by the class of the acting element
 | $\hat{q} = \cos\theta+\sin\theta\,\hat{\mathbf{u}}$ | the rotation rotor, a unit real quaternion |
 | $\tilde{Q} = \sinh\varphi\,e_0 + i\cosh\varphi\,\hat{\mathbf{u}}$, $N = -1$ | the negative-norm branch of the informational sector, $= i\tilde{\Lambda}\hat{\mathbf{u}}$ |
 | $SO^+(1,3)$, $SO(3)$ | the Lorentz group and the rotation group reached by the sandwich |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

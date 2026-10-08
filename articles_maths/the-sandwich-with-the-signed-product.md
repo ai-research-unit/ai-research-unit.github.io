@@ -96,7 +96,7 @@ In the same algebra let $R = e_1e_2$. Then $\Sigma_R$ acts on the basis of $V$ b
 
 ### Two Reflections
 
-With $u = e_1$ and $w = e_2$, $\Sigma_u\Sigma_w = \mathrm{Ad}_{u\alpha(w)} = \mathrm{Ad}_{e_1(-e_2)} = \mathrm{Ad}_{-e_1e_2} = \mathrm{Ad}_{e_1e_2}$, which acts on the basis by $(-e_1,-e_2,e_3)$: the rotation through the full angle in the $e_1,e_2$ plane, the product of the two reflections. The cancellation of the two involutions is visible in the sign of the parameter.
+With $u = e_1$ and $w = e_2$, $\Sigma_u\Sigma_w = \mathrm{Ad}_{u\alpha(w)} = \mathrm{Ad}_{e_1(-e_2)} = \mathrm{Ad}_{-e_1e_2} = \mathrm{Ad}_{e_1e_2}$, which acts on the basis by $(-e_1,-e_2,e_3)$: the rotation with the full parameter in the $e_1,e_2$ plane, the product of the two reflections. The cancellation of the two involutions is visible in the sign of the parameter.
 
 ## Summary
 

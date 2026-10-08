@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The complex sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ makes $\mathbb{B}$ a sesqualgebra by *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, and the two-sided ideals of that multiplication are the two trivial ones,
+The general plain sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ makes $\mathbb{B}$ a sesqualgebra by *Introduction to the General Plain Sesqualgebra of Biquaternions*, and the two-sided ideals of that multiplication are the two trivial ones,
 
 $$
 0 \quad\text{and}\quad \mathbb{B} .
@@ -13,7 +13,7 @@ This article proves the statement in full. The proof is a single computation: a 
 
 The article is the third of the structural batch: the element theory is *Projections of the Biquaternion Sesqualgebra*, the square theory is *The Squares and the Positive Cone of the Biquaternion Sesqualgebra*, and the structure theory of the ideals is here. The general theory that it reads is *Ideals and Quotients of a Sesqualgebra*, where the one-sided and two-sided ideals of a sesqualgebra are defined, and *Simple Sesqualgebras and Minimal Ideals*, where the two notions of simplicity are compared and the one-sided case is treated. On the biquaternion side the two-sided ideals of the algebra and the simplicity of the ring are *Biquaternion Ideals and Peirce Decomposition*, and the minimal one-sided ideals of the algebra and the idempotents that determine them are the same article.
 
-The setting is that of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ with ${}^{*}$ the conjugate-linear involution. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, and the ideal theory of the general sesqualgebra is the one that is applied.
+The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ with ${}^{*}$ the conjugate-linear involution. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, and the ideal theory of the general sesqualgebra is the one that is applied.
 
 ## Ideals of the Multiplication
 

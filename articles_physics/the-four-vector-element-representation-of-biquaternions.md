@@ -51,7 +51,7 @@ $$
 
 is the real-and-imaginary split of the coefficients read coordinate by coordinate. The other four distinguished subspaces mix the real and imaginary parts, because the involutions that define them combine with the scalar imaginary in different ways; they are tabulated below.
 
-The biquaternion norm does not decompose over these eight real coordinates. Its real part is $\sum_\mu \big( (q^\mu)^2 - ({q'}^\mu)^2 \big)$ and its imaginary part is $2\sum_\mu q^\mu {q'}^\mu$, both real quadratic forms in eight variables, and the positive-definite form $\sum_\mu \big( (q^\mu)^2 + ({q'}^\mu)^2 \big)$ is the squared Euclidean length of the quadruple. That last form is the Hermitian form $\sum_\mu |Q^\mu|^2$ of the algebra, and it is a different object from the biquaternion norm: the biquaternion norm is complex bilinear and can vanish on a nonzero element, while the Hermitian form is positive definite.
+The biquaternion norm does not decompose over these eight real coordinates. Its real part is $\sum_\mu \big( (q^\mu)^2 - ({q'}^\mu)^2 \big)$ and its imaginary part is $2\sum_\mu q^\mu {q'}^\mu$, both real quadratic forms in eight variables, and the positive-definite form $\sum_\mu \big( (q^\mu)^2 + ({q'}^\mu)^2 \big)$ is the squared Euclidean length of the quadruple. That last form is the Hermitian form $\sum_\mu |Q^\mu|^2$ of the algebra, and it is a different object from the biquaternion norm: the biquaternion norm is general plain bilinear and can vanish on a nonzero element, while the Hermitian form is positive definite.
 
 ### The Physical Dictionary
 
@@ -313,7 +313,7 @@ In four-vector form the biquaternion norm has **all four signs positive**, and t
 
 **Proof.** Expand $\tilde{Q}\tilde{Q}^{\natural} = \big(\sum_\mu Q_\mu e_\mu\big)\big(Q_0e_0 - \sum_k Q_k e_k\big)$. The cross terms between $e_0$ and the vector units cancel between the two orders. The remaining terms are $Q_0^2e_0$ together with $\sum_k Q_k^2 e_k^2 = -\sum_k Q_k^2e_0$ and the mixed terms $-Q_jQ_ke_je_k$ over ordered pairs with $j \neq k$. The pairs $(j,k)$ and $(k,j)$ carry the same coefficient $Q_jQ_k$ and their basis products are negatives, so the pair contributes a multiple of $e_je_k + e_ke_j = 0$ and cancels. Collecting the surviving scalar terms gives $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$.
 
-Two consequences matter. First, the biquaternion norm is a **complex bilinear** form of rank four, multiplicative, $N(\tilde{P}\tilde{Q}) = N(\tilde{P})N(\tilde{Q})$, and on the coefficient space itself it is not indefinite: the minus signs of a spacetime signature are not in it. Second, it can vanish on a nonzero element, and it does so exactly on the nonzero solutions of $\sum_\mu Q_\mu^2 = 0$, which are the zero divisors of the algebra. The biquaternion norm is therefore not a norm in the analytic sense, and the set of its zeros is the algebra's null cone.
+Two consequences matter. First, the biquaternion norm is a **general plain bilinear** form of rank four, multiplicative, $N(\tilde{P}\tilde{Q}) = N(\tilde{P})N(\tilde{Q})$, and on the coefficient space itself it is not indefinite: the minus signs of a spacetime signature are not in it. Second, it can vanish on a nonzero element, and it does so exactly on the nonzero solutions of $\sum_\mu Q_\mu^2 = 0$, which are the zero divisors of the algebra. The biquaternion norm is therefore not a norm in the analytic sense, and the set of its zeros is the algebra's null cone.
 
 ### The Two Real Restrictions
 
@@ -421,7 +421,7 @@ $$
 
 the all-plus sign of the biquaternion norm being exactly what makes the spatial part of the d'Alembertian positive with the $ict$ convention. The gradient is the case in which the material four-vector is an operator, and the wave equation $\Box\tilde{\Psi} = 0$ is the statement that the biquaternion norm of the gradient annihilates the field.
 
-**No index is raised or lowered.** The quadruple is written $Q^\mu$ with an upper index, and the index stays where it is: on $\mathbb{C}^4$ no metric is fixed, so the index is never lowered, and the biquaternion norm cannot serve as one because it is complex bilinear — symmetric and non-degenerate, of rank four, but neither Hermitian nor positive definite. Physically, the $ict$ convention is what puts the metric into the **coefficient** instead of into a contraction rule: the material four-vector is $(ict, \mathbf{x})$ rather than $(ct, \mathbf{x})$, and the interval is then the sum of squares with no explicit scalar product. The corpus's metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ is the level-2 reading of the same object, used when a contraction of four-vectors is written explicitly; the level-1 object is the identity Gram matrix on $\mathbb{C}^4$, and the minus sign appears only when the material real coordinates are put on the quadruple.
+**No index is raised or lowered.** The quadruple is written $Q^\mu$ with an upper index, and the index stays where it is: on $\mathbb{C}^4$ no metric is fixed, so the index is never lowered, and the biquaternion norm cannot serve as one because it is general plain bilinear — symmetric and non-degenerate, of rank four, but neither Hermitian nor positive definite. Physically, the $ict$ convention is what puts the metric into the **coefficient** instead of into a contraction rule: the material four-vector is $(ict, \mathbf{x})$ rather than $(ct, \mathbf{x})$, and the interval is then the sum of squares with no explicit scalar product. The corpus's metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ is the level-2 reading of the same object, used when a contraction of four-vectors is written explicitly; the level-1 object is the identity Gram matrix on $\mathbb{C}^4$, and the minus sign appears only when the material real coordinates are put on the quadruple.
 
 ## Summary
 
@@ -446,7 +446,7 @@ The four-vectors of relativistic physics are the material elements: the four-pos
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |
 | $\tilde{Q}^{\natural}, \tilde{Q}^{*}, \tilde{Q}^{*}, \tilde{Q}^{\flat} = -\tilde{Q}^{*}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugation |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The six distinguished subspaces; coordinate conditions in the table above |
-| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | The biquaternion norm, complex bilinear and multiplicative; Gram matrix $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}^4$, signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$ |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | The biquaternion norm, general plain bilinear and multiplicative; Gram matrix $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}^4$, signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$ |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | The inverse in coordinates |
 | $c$, $c_0$ | Speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and its vacuum value |
 | $ict$, $\mathbf{x} = x e_1 + y e_2 + z e_3$ | The material coordinate; the four-position is $(ict, x, y, z)$ |
@@ -457,8 +457,8 @@ The four-vectors of relativistic physics are the material elements: the four-pos
 | $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ | Biquaternionic gradient; $N(\tilde{\nabla}) = \Box$ |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | The $ict$-coordinate metric of the explicit contractions (level 2) |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

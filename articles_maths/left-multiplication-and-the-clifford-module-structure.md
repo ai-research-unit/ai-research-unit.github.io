@@ -59,7 +59,7 @@ $$
 
 **Corollary (the uniqueness of the spin representation in even dimension).** In even dimension there is one irreducible Clifford module up to isomorphism; every spinor module is a direct sum of copies of the minimal left ideal, and the structure of the representation is the multiplicity alone. In odd dimension the two simple modules are distinguished by the action of the volume element, which is central and acts by two different scalars after the centre is split.
 
-**Remark (multiplicity and the spinor module).** The regular module has multiplicity $k$ over the simple module, where $k$ is the size of the matrix algebra; the irreducible spinor module of the physicists is the simple module, not the regular module, and it is the minimal left ideal that supplies it. This is the sense in which the minimal left ideal and not the algebra is the spinor space, the point made at length in *Spinors as Minimal Left Ideals with Inner Conjugation*.
+**Remark (multiplicity and the spinor module).** The regular module has multiplicity $k$ over the simple module, where $k$ is the size of the matrix algebra; the irreducible spinor module of the physicists is the simple module, not the regular module, and it is the minimal left ideal that supplies it. This is the sense in which the minimal left ideal and not the algebra is the spinor space, the point made in detail in *Spinors as Minimal Left Ideals with Inner Conjugation*.
 
 ## Worked Cases
 

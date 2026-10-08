@@ -447,8 +447,8 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $\dot{\mathcal{S}} = \Gamma (r_\perp(t)^2/r(t))\,\mathrm{artanh}\,r(t)$ | Entropy production rate of continuous dephasing (instantaneous $r_\perp$) |
 | $\tilde{U}(t)$, $\tilde{U}\tilde{U}^{*} = e_0$ | Matrix-unitary rotor (reversible flow) |
 | $H(w) = -\sum_a w_a\log w_a$ | Preparation entropy |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

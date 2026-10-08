@@ -11,9 +11,9 @@ $$
 
 That scalar part is a nonnegative real number, and it vanishes only at $\tilde Q=0$, so the square of a nonzero element is a nonzero Hermitian element and the square map has no kernel beyond zero. The sums of the squares form the **cone of squares** of the multiplication, and it is the subject of this article: the cone is closed under addition, it is carried into itself by the scalars of the square semiring of the base, it is invariant under the congruence $\tilde C\mapsto\tilde X^{*}\tilde C\tilde X$, and it is **proper**, so the preorder it defines is a partial order.
 
-The cone is the biquaternion instance of the algebraic positive cone of *Hermitian Squares and the Algebraic Positive Cone*, the cone of the sums of the squares $x^{*}x$ of an involutive algebra; the sesquilinear square is the derived square $x\star x=xx^{*}$ of that article, so the two cones are the same set. In the biquaternion case the second square $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ also carries the name, and the caution is the one *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* records: the two squares agree on the real subspace and differ elsewhere, and only the first one is the square of the multiplication.
+The cone is the biquaternion instance of the algebraic positive cone of *Hermitian Squares and the Algebraic Positive Cone*, the cone of the sums of the squares $x^{*}x$ of an involutive algebra; the sesquilinear square is the derived square $x\star x=xx^{*}$ of that article, so the two cones are the same set. In the biquaternion case the second square $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ also carries the name, and the caution is the one *Introduction to the General Plain Sesqualgebra of Biquaternions* records: the two squares agree on the real subspace and differ elsewhere, and only the first one is the square of the multiplication.
 
-The setting is that of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, whose §*The Squares and the Positive Cone* states the form of the square and its scalar part, and of *Sesqualgebras*. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, the zero divisors of the algebra are *Biquaternion Zero Divisors*, and the six distinguished subspaces against which the cone is placed are *The Six Subspaces and the Four Complex Products*. The general theory that the article reads is *Hermitian Squares and the Algebraic Positive Cone*, and the order it defines is the preorder of that article on the biquaternion algebra.
+The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*, whose §*The Squares and the Positive Cone* states the form of the square and its scalar part, and of *Sesqualgebras*. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, the zero divisors of the algebra are *Biquaternion Zero Divisors*, and the six distinguished subspaces against which the cone is placed are *The Six Subspaces and the Four Complex Products*. The general theory that the article reads is *Hermitian Squares and the Algebraic Positive Cone*, and the order it defines is the preorder of that article on the biquaternion algebra.
 
 ## The Square of an Element
 
@@ -27,7 +27,7 @@ $$
 
 and it is written once and for all $\tilde Q\star\tilde Q$; the other square of the corpus, $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$, is called the **natural square** and is not the square of the multiplication.
 
-**Remark.** The two squares are the two central readings of the product with one factor conjugated, and *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* keeps them apart by the caution that both are called the square in different places of the corpus. The present article uses only the first, and the second appears once, in §*The Two Squares*, where the contrast is computed.
+**Remark.** The two squares are the two central readings of the product with one factor conjugated, and *Introduction to the General Plain Sesqualgebra of Biquaternions* keeps them apart by the caution that both are called the square in different places of the corpus. The present article uses only the first, and the second appears once, in §*The Two Squares*, where the contrast is computed.
 
 ### The Square Is Hermitian
 
@@ -59,9 +59,9 @@ $$
 
 a nonnegative real number that vanishes if and only if $\tilde Q=0$.
 
-**Proof.** The scalar part of $\tilde P\tilde Q^{*}$ is $P_0\overline{Q_0}-(\mathbf P,-\overline{\mathbf Q})=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})=\sum_\mu P_\mu\overline{Q_\mu}$, by the scalar–vector form of the product of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, §*The Scalar Part of the Multiplication*. At $\tilde P=\tilde Q$ the sum is $\sum_\mu\lvert Q_\mu\rvert^{2}$, a sum of modulus squares; it is nonnegative, and it vanishes only when every coordinate vanishes. $\square$
+**Proof.** The scalar part of $\tilde P\tilde Q^{*}$ is $P_0\overline{Q_0}-(\mathbf P,-\overline{\mathbf Q})=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})=\sum_\mu P_\mu\overline{Q_\mu}$, by the scalar–vector form of the product of *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*The Scalar Part of the Multiplication*. At $\tilde P=\tilde Q$ the sum is $\sum_\mu\lvert Q_\mu\rvert^{2}$, a sum of modulus squares; it is nonnegative, and it vanishes only when every coordinate vanishes. $\square$
 
-**Remark.** The display is the reason the square is non-vanishing: a nonzero square has a strictly positive scalar part, so it is not zero and its scalar part fixes a genuine sign. It is also the reason the complex bilinear sum $\sum_\mu Q_\mu^{2}$ and the scalar part of the square are not the same function: the first is a complex bilinear sum, the second a sum of modulus squares, and they agree exactly on the real subspace.
+**Remark.** The display is the reason the square is non-vanishing: a nonzero square has a strictly positive scalar part, so it is not zero and its scalar part fixes a genuine sign. It is also the reason the general plain bilinear sum $\sum_\mu Q_\mu^{2}$ and the scalar part of the square are not the same function: the first is a general plain bilinear sum, the second a sum of modulus squares, and they agree exactly on the real subspace.
 
 ### The Coordinates of the Square
 
@@ -276,7 +276,7 @@ The square of the sesquilinear multiplication is $\tilde Q\star\tilde Q=\tilde Q
 | $\tilde X\preceq\tilde Y\iff\tilde Y-\tilde X\in C(\mathbb{B})$ | the preorder of the cone |
 | $f=\mathrm{Re}\circ\mathrm{Sc}$ | the strict positive functional that proves properness |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
-| $\sum_\mu Q_\mu^{2}$ | the complex bilinear sum, vanishing on the zero divisors |
+| $\sum_\mu Q_\mu^{2}$ | the general plain bilinear sum, vanishing on the zero divisors |
 | $\Phi$ | the isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(\tilde Q^{*})=\Phi(\tilde Q)^{\dagger}$ |
 | $\mathrm{tr}(\Phi(\tilde Q)\Phi(\tilde Q)^{\dagger})=2\sum_\mu\lvert Q_\mu\rvert^{2}$ | the trace of the square |
 

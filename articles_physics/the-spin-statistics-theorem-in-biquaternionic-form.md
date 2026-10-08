@@ -293,8 +293,8 @@ What the framework establishes is that the two pairings which survive the theore
 | $F(\boldsymbol\Delta)=\frac{m}{2\pi^2|\boldsymbol\Delta|}K_1(m|\boldsymbol\Delta|)$ | Surviving commutator kernel ($m>0$) |
 | $\Delta_{\mathrm{A}}(x-y)$, $G_{\mathrm{S}}(x-y)$ | Antisymmetric (Pauli–Jordan-type) and symmetric two-point kernels |
 | $\hat H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r)+E_0$ | Normal-ordered Hamiltonian (Fermi choice) |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

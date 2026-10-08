@@ -66,7 +66,7 @@ $$
 is such a pairing, and every pairing of the regular module is of this form up to a central factor.
 
 *Proof.* The existence and uniqueness are the module-level statement of Part II's *Hermitian Modules
-over a Hilbert Algebra with Hermitian Adjoint*, of which this is the Clifford instance; on the
+over a Hermitian Algebra with Hermitian Adjoint*, of which this is the Clifford instance; on the
 regular module the formula is checked directly, Hermitian symmetry being $(s^{*}t)^{*}=t^{*}s$ and
 left linearity being clear. $\square$
 
@@ -169,7 +169,7 @@ and the operator is **self-adjoint** when $T^{\dagger}=T$, **skew-adjoint** when
 Adjoint on a Hilbert Module* (Part II); the unbounded case is the one of *Unbounded Operators and
 Spectral Measures*.
 
-*Proof.* Quoted from Part II's *The Hilbert Adjoint on a Hilbert Module*: the bounded-operator
+*Proof.* Quoted from Part II's *The Hermitian Adjoint on a Hermitian Module*: the bounded-operator
 adjoint exists by the Riesz representation theorem applied to $g\mapsto\langle Tg,f\rangle$, and the
 laws follow as above. $\square$
 
@@ -223,7 +223,7 @@ the right multiplications $R_u$ with $u^{*}u=1$, and the Clifford-unitary condit
 $(us,ut)_A=(s,t)_A$ for all $s,t$ reads $u^{*}u=1$ for the left multiplications.
 
 *Proof.* The preservation of each form is the defining equation of the corresponding group; the
-inclusions and the compactness are the statements of Part II's *Hermitian Modules over a Hilbert
+inclusions and the compactness are the statements of Part II's *Hermitian Modules over a Hermitian
 Algebra with Hermitian Adjoint* and *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint*,
 and the regular-module computation is immediate from $(us,ut)_A=(us)^{*}(ut)=s^{*}u^{*}ut$.
 $\square$
@@ -307,8 +307,8 @@ self-adjoint on a boundaryless domain with $D_{\mathrm{sa}}^2=-\Delta$ and a rea
 algebraic one-sided theory is Part II's, in *The Adjoint of the One-Sided Action with Hermitian
 Adjoint*, *Bilinear Operators on a Hermitian Module with Hermitian Adjoint* and *Spinor Adjoints and
 the Dirac Adjoint with Hermitian Adjoint*; the module and the forms are *Hermitian Modules over a
-Hilbert Algebra with Hermitian Adjoint* and *Hermitian Hilbert Modules over a Clifford Algebra*; the
-analytic adjoint is *The Hilbert Adjoint on a Hilbert Module*; and the Hermitian refinement is *The
+Hermitian Algebra with Hermitian Adjoint* and *Hermitian Hilbert Modules over a Clifford Algebra*; the
+analytic adjoint is *The Hermitian Adjoint on a Hermitian Module*; and the Hermitian refinement is *The
 Hermitian Dirac Operator* and *The Hermitian Cauchy Kernel as an Adjoint*.
 
 ## Summary of Notation

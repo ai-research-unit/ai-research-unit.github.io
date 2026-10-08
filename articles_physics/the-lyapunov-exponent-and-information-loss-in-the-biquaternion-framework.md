@@ -292,8 +292,8 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $N$. Since $N(\d
 | $\dot{\mathcal{S}} = \Gamma(r_\perp(t)^2/r(t))\,\mathrm{artanh}\,r(t)$ | Entropy production rate (instantaneous $r_\perp$) |
 | $h_{\rm KS} = \sum_{\lambda_k>0}\lambda_k$ | Pesin's formula (standard) |
 | $|\mathbf{S}| = \text{const}$ | Coadjoint orbit (Bloch sphere); Hamiltonian flows integrable |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

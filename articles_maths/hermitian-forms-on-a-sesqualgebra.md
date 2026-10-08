@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An algebra with an involution carries a form of degree two that costs nothing: the two-variable map $h_c(x,y) = c(x)y$ attached to an anti-involution $c$, whose Hermitian property is the definition of $c$ and nothing else, is the form of *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint*. A sesqualgebra carries such a form twice over. Its product is the derived operation $x \star y = xy^{*}$ of an associative algebra with a $\varsigma$-semilinear involution $*$, and the product itself, read as a two-variable map, is Hermitian:
+An algebra with an involution carries a form of degree two that costs nothing: the two-variable map $h_c(x,y) = c(x)y$ attached to an anti-involution $c$, whose Hermitian property is the definition of $c$ and nothing else, is the form of *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*. A sesqualgebra carries such a form twice over. Its product is the derived operation $x \star y = xy^{*}$ of an associative algebra with a $\varsigma$-semilinear involution $*$, and the product itself, read as a two-variable map, is Hermitian:
 
 $$
 \Phi(x,y) = xy^{*}, \qquad \Phi(y,x) = yx^{*} = (xy^{*})^{*} = \Phi(x,y)^{*} .
@@ -22,9 +22,9 @@ $$
 \Psi(x,y) = \Phi(y^{*},x^{*}), \qquad \Phi(x,y) = \Psi(y^{*},x^{*}),
 $$
 
-so the pair $(\Phi,\Psi)$ is a single object read through the involution: $\Psi$ is the form in the convention of the sesqualgebra, linear in the first slot and $\varsigma$-semilinear in the second, and the Hilbert-algebra convention of the cited sibling, semilinear in the first slot, is the same form with the two arguments exchanged.
+so the pair $(\Phi,\Psi)$ is a single object read through the involution: $\Psi$ is the form in the convention of the sesqualgebra, linear in the first slot and $\varsigma$-semilinear in the second, and the convention of the cited sibling, semilinear in the first slot, is the same form with the two arguments exchanged.
 
-The article defines the $A$-valued Hermitian form and the two orientations of its slots, proves the Hermitian property, the diagonal proposition and the exchange relation, identifies the product with the form and the scalar forms with the reductions, computes the two radicals and their identification with the annihilators, treats the form induced on a quotient by an invariant ideal, and compares the result with the bilinear layer, with the collapse at $\varsigma = \mathrm{id}$ closing the article. The scalar forms and their three kinds are *The Sesquilinear Form and the Conjugation*, the compatibility and its radical *Topological Sesqualgebras with a Form*, the positivity of the diagonal *Positivity and the Positive Cone of a Hermitian Form*, the operator that the form adjoints *The Adjoint under a Hermitian Form*, the ternary product *Algebraic J\*-Algebras*, and the layer without a form *Topological Sesqualgebras*. Throughout, $A$ is an associative $R$-algebra with $1$ and a $\varsigma$-semilinear involution $*$, and $(A,\star)$ is the sesqualgebra $x \star y = xy^{*}$ of *Sesqualgebras*.
+The article defines the $A$-valued Hermitian form and the two orientations of its slots, proves the Hermitian property, the diagonal proposition and the exchange relation, identifies the product with the form and the scalar forms with the reductions, computes the two radicals and their identification with the annihilators, treats the form induced on a quotient by an invariant ideal, and compares the result with the bilinear layer, with the collapse at $\varsigma = \mathrm{id}$ closing the article. The scalar forms and their three kinds are *The Sesquilinear Form and the Conjugation*, the compatibility and its radical *Sesqualgebras with a Form*, the positivity of the diagonal *Positivity and the Positive Cone of a Hermitian Form*, the operator that the form adjoints *The Adjoint under a Hermitian Form*, the ternary product *Algebraic J\*-Algebras*, and the layer without a form *Topological Sesqualgebras*. Throughout, $A$ is an associative $R$-algebra with $1$ and a $\varsigma$-semilinear involution $*$, and $(A,\star)$ is the sesqualgebra $x \star y = xy^{*}$ of *Sesqualgebras*.
 
 ## The Form Carried by the Algebra
 
@@ -42,7 +42,7 @@ $$
 \operatorname{rad}(\Psi) = \{x \in A : \Psi(x,y) = 0 \text{ for all } y \in A\} .
 $$
 
-The definition is that of the entry's sesquilinear form with the scalars $R$ replaced by the algebra $A$ as the target, so the form is a rule that multiplies and not a rule that measures; the two slot rules are those of a sesqualgebra product, and the Hermitian property is read with the involution of $A$ in place of the involution $\varsigma$ of the base.
+The definition is that of the entry's sesquilinear form with the scalars $R$ replaced by the algebra $A$ as the target, so the form is a rule that multiplies and not a rule that takes a length; the two slot rules are those of a sesqualgebra product, and the Hermitian property is read with the involution of $A$ in place of the involution $\varsigma$ of the base.
 
 **Proposition (the two forms of the algebra).** The maps
 
@@ -58,7 +58,7 @@ $$
 
 *Proof.* In the first slot, $\Psi(\lambda x,y) = y^{*}(\lambda x) = \lambda(y^{*}x)$ by the $R$-bilinearity of the product, and $\Psi(x,\lambda y) = (\lambda y)^{*}x = \varsigma(\lambda)y^{*}x$ by the semilinearity of the involution; the two computations for $\Phi$ are the same with the roles of the slots exchanged, $\Phi(\lambda x,y) = (\lambda x)y^{*} = \lambda(xy^{*})$ and $\Phi(x,\lambda y) = x(\lambda y)^{*} = \varsigma(\lambda)(xy^{*})$, so $\Phi$ is $\varsigma$-semilinear in the second slot as required. The Hermitian property is $\Psi(y,x) = x^{*}y$ against $\Psi(x,y)^{*} = (y^{*}x)^{*} = x^{*}y$, using $(uv)^{*} = v^{*}u^{*}$ and $*^{2} = \mathrm{id}$, and $\Phi(y,x) = yx^{*}$ against $\Phi(x,y)^{*} = (xy^{*})^{*} = yx^{*}$. The exchange relation is $\Phi(y^{*},x^{*}) = y^{*}(x^{*})^{*} = y^{*}x = \Psi(x,y)$ and the second identity is the first read with $x, y$ replaced by $x^{*}, y^{*}$. $\square$
 
-**Remark (the two orientations).** The two forms carry the same datum in the two conventions of the two slots: $\Psi$ is linear in the first slot and $\varsigma$-semilinear in the second, $\Phi$ likewise, and the exchange relation says that applying the involution to both arguments turns one into the other. The convention of the sesqualgebra is the one of $\Psi$ and $\Phi$, and the convention of *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint*, in which the form $h_c(x,y) = c(x)y$ is semilinear in the first slot, is the same convention read with the arguments exchanged: with $c = *$ that form is $x^{*}y = \Psi(y,x)$.
+**Remark (the two orientations).** The two forms carry the same datum in the two conventions of the two slots: $\Psi$ is linear in the first slot and $\varsigma$-semilinear in the second, $\Phi$ likewise, and the exchange relation says that applying the involution to both arguments turns one into the other. The convention of the sesqualgebra is the one of $\Psi$ and $\Phi$, and the convention of *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*, in which the form $h_c(x,y) = c(x)y$ is semilinear in the first slot, is the same convention read with the arguments exchanged: with $c = *$ that form is $x^{*}y = \Psi(y,x)$.
 
 ### The Diagonal
 
@@ -86,7 +86,7 @@ and the same identity holds with $\Phi$ in place of $\Psi$.
 
 ### The Form Is the Product
 
-**Proposition (the compatibility is an identity).** The $A$-valued form $\Psi$ is compatible with the product, in the sense of *Topological Sesqualgebras with a Form*, §*The Compatibility*:
+**Proposition (the compatibility is an identity).** The $A$-valued form $\Psi$ is compatible with the product, in the sense of *Sesqualgebras with a Form*, §*The Compatibility*:
 
 $$
 \Psi(xy,z) = \Psi(y, x^{*}z)
@@ -162,7 +162,7 @@ the left and the right annihilators of the algebra. Consequently $\Psi$ is nonde
 
 **Remark (the naming of the two annihilators).** The two sets are named in opposite directions by two usages of the corpus, and the coincidence of their vanishing is what makes the ambiguity harmless. In the sense of *Left and Right Multiplication in a Ring*, §*The annihilators*, the left annihilator is the kernel of the left multiplication, $\{x : Ax = 0\} = \operatorname{rad}(\Psi)$, and the right annihilator is $\{x : xA = 0\} = \operatorname{rad}(\Phi)$; the phrase "no nonzero element of $A$ annihilates $A$ on the left" names the second set by the side on which the multiplication is written, and the two sets are carried onto each other by the involution. Only the vanishing is used below, and it is a property of both forms at once, so nothing depends on which of the two names is read.
 
-**Remark (the converse fails).** Nondegeneracy of the two forms does not give full type, because the forms read only one of the three clauses: they record the vanishing of the annihilator and see neither the faithfulness over $R$ nor the generation of $A$ by the products. The clause that fails in the smallest **unital** example is the faithfulness: let $R = \mathbb{Z}$, let $A = \mathbb{Z}/2\mathbb{Z}$ be the two-element ring as a unital $\mathbb{Z}$-algebra, with the ordinary product, the identity involution and $\varsigma = \mathrm{id}$. The products generate $A$ and the annihilator vanishes, since $xy = 0$ with $y = 1$ forces $x = 0$, so the forms $\Psi(x,y) = yx$ and $\Phi(x,y) = xy$ are nondegenerate; while $2 \cdot A = 0$ with $2 \neq 0$, so $\operatorname{ann}_{R}(A) = 2\mathbb{Z} \neq 0$ and $A$ is not faithful over $R$, hence not of full type. The generation clause is the one that fails only when $A$ is allowed to be non-unital: the ideal $(x)$ of $K[x]$ over a field $K$, with the ordinary product and the identity involution, has products generating the proper ideal $(x^{2})$ and its two forms are nondegenerate as well. The independence of the scalar layer is a different statement: the nondegenerate form of the zero product of *Topological Sesqualgebras with a Form*, §*Full Type and Nondegeneracy* is the scalar form $h(z,w) = z\varsigma(w)$, whose radical vanishes because $h(z,1) = z$, while the $A$-valued form of the same object is the zero form, the annihilator being all of $A$; the scalar and the $A$-valued nondegeneracy are therefore genuinely different conditions, and it is the scalar one that is independent of full type.
+**Remark (the converse fails).** Nondegeneracy of the two forms does not give full type, because the forms read only one of the three clauses: they record the vanishing of the annihilator and see neither the faithfulness over $R$ nor the generation of $A$ by the products. The clause that fails in the smallest **unital** example is the faithfulness: let $R = \mathbb{Z}$, let $A = \mathbb{Z}/2\mathbb{Z}$ be the two-element ring as a unital $\mathbb{Z}$-algebra, with the ordinary product, the identity involution and $\varsigma = \mathrm{id}$. The products generate $A$ and the annihilator vanishes, since $xy = 0$ with $y = 1$ forces $x = 0$, so the forms $\Psi(x,y) = yx$ and $\Phi(x,y) = xy$ are nondegenerate; while $2 \cdot A = 0$ with $2 \neq 0$, so $\operatorname{ann}_{R}(A) = 2\mathbb{Z} \neq 0$ and $A$ is not faithful over $R$, hence not of full type. The generation clause is the one that fails only when $A$ is allowed to be non-unital: the ideal $(x)$ of $K[x]$ over a field $K$, with the ordinary product and the identity involution, has products generating the proper ideal $(x^{2})$ and its two forms are nondegenerate as well. The independence of the scalar layer is a different statement: the nondegenerate form of the zero product of *Sesqualgebras with a Form*, §*Full Type and Nondegeneracy* is the scalar form $h(z,w) = z\varsigma(w)$, whose radical vanishes because $h(z,1) = z$, while the $A$-valued form of the same object is the zero form, the annihilator being all of $A$; the scalar and the $A$-valued nondegeneracy are therefore genuinely different conditions, and it is the scalar one that is independent of full type.
 
 ### The Induced Form on a Quotient
 
@@ -180,13 +180,13 @@ $$
 
 ### The Form of an Anti-Involution
 
-**Proposition.** Let $c$ be an anti-involution of $A$ and let $h_c(x,y) = c(x)y$ be the Hermitian form of *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint*, §*The Form Attached to an Anti-Involution*. Then $h_*$ is the exchange of the $A$-valued form $\Psi$,
+**Proposition.** Let $c$ be an anti-involution of $A$ and let $h_c(x,y) = c(x)y$ be the Hermitian form of *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*, §*The Form Attached to an Anti-Involution*. Then $h_*$ is the exchange of the $A$-valued form $\Psi$,
 
 $$
 h_*(x,y) = x^{*}y = \Psi(y,x),
 $$
 
-and the two differ only by the order of the arguments, which is the difference between the Hilbert-algebra convention, semilinear in the first slot, and the sesqualgebra convention, linear in the first.
+and the two differ only by the order of the arguments, which is the difference between the convention of *Hermitian Algebras*, semilinear in the first slot, and the sesqualgebra convention, linear in the first.
 
 *Proof.* The sibling's definition with $c = *$ is $h_*(x,y) = x^{*}y$, and $\Psi(y,x) = x^{*}y$ is the proposition at the top of the article. $\square$
 
@@ -216,7 +216,7 @@ $$
 \Psi(X,Y) = Y^{*}X, \qquad \Psi(X,X) = X^{*}X,
 $$
 
-the diagonal is a positive semi-definite matrix, of trace $\operatorname{tr}(X^{*}X) = \sum_{i,j} \lvert X_{ij}\rvert^{2}$, and the form is nondegenerate: if $X \neq 0$ then $X^{*}X \neq 0$, because the trace of $X^{*}X$ is a sum of squares of moduli, so the left annihilator vanishes. The verdict: the $A$-valued form of the matrix algebra is the matrix-valued inner product of the Hilbert-algebra sibling, its diagonal is the cone of *Hermitian Squares and the Algebraic Positive Cone*, and its nondegeneracy is the properness of that cone read on the algebra.
+the diagonal is a positive semi-definite matrix, of trace $\operatorname{tr}(X^{*}X) = \sum_{i,j} \lvert X_{ij}\rvert^{2}$, and the form is nondegenerate: if $X \neq 0$ then $X^{*}X \neq 0$, because the trace of $X^{*}X$ is a sum of squares of moduli, so the left annihilator vanishes. The verdict: the $A$-valued form of the matrix algebra is the matrix-valued inner product of the sibling *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*, its diagonal is the cone of *Hermitian Squares and the Algebraic Positive Cone*, and its nondegeneracy is the properness of that cone read on the algebra.
 
 ### The Field and the Split Algebra
 
@@ -238,7 +238,7 @@ vanishes for every zero divisor, $a = 0$ or $b = 0$. The verdict: an $A$-valued 
 
 ### The Biquaternion Algebra
 
-**Example (the biquaternion algebra).** Let $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star ${}^{*}$ of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* and let $\varsigma$ be the conjugation. Then $\Psi(P,Q) = Q^{*}P$, the diagonal is $Q^{*}Q$, of scalar part $\sum_{\mu} \lvert Q_{\mu}\rvert^{2}$, and the form is nondegenerate because the algebra is unital and its unit annihilates nothing on the left: the left annihilator vanishes. The verdict: the corpus's own algebra carries the $A$-valued form $\Psi$, whose diagonal is the Hermitian form of *The Hermitian Form on the Biquaternion Algebra*, with the sum of the modulus squares for scalar part, and whose scalar reduction by the scalar part is the form $\mathrm{Sc}(Q^{*}Q')$ of *The Form on the Biquaternion Algebra as a Sesquilinear Form*.
+**Example (the biquaternion algebra).** Let $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star ${}^{*}$ of *Introduction to the General Plain Sesqualgebra of Biquaternions* and let $\varsigma$ be the conjugation. Then $\Psi(P,Q) = Q^{*}P$, the diagonal is $Q^{*}Q$, of scalar part $\sum_{\mu} \lvert Q_{\mu}\rvert^{2}$, and the form is nondegenerate because the algebra is unital and its unit annihilates nothing on the left: the left annihilator vanishes. The verdict: the corpus's own algebra carries the $A$-valued form $\Psi$, whose diagonal is the Hermitian form of *Biquaternion Norm and Invertibility*, with the sum of the modulus squares for scalar part, and whose scalar reduction by the scalar part is the form $\mathrm{Sc}(Q^{*}Q')$ of *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*.
 
 ### The Characteristic-Two Case
 
@@ -246,7 +246,7 @@ vanishes for every zero divisor, $a = 0$ or $b = 0$. The verdict: an $A$-valued 
 
 ## Summary
 
-An associative $R$-algebra $A$ with a $\varsigma$-semilinear involution $*$ carries two $A$-**valued Hermitian forms**, the form of the sesqualgebra $\Psi(x,y) = y^{*}x$ and the form of the product $\Phi(x,y) = xy^{*} = x \star y$, both biadditive, $R$-linear in the first slot and $\varsigma$-semilinear in the second, both Hermitian, $\Psi(y,x) = \Psi(x,y)^{*}$ and the same for $\Phi$, and exchanged by the involution applied to both arguments, $\Psi(x,y) = \Phi(y^{*},x^{*})$. The product of the sesqualgebra **is** the form $\Phi$, so the compatibility of the entry is an identity of the algebra for the companion form and not an extra axiom, and the pair is a single object read through the involution, in the two conventions of the two slots: $\Psi$ is the sesqualgebra convention, linear in the first slot, and the convention of *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint*, which is the same form with the arguments exchanged, is the Hilbert-algebra convention, semilinear in the first slot: with the anti-involution $c = *$ that sibling's form is $h_*(x,y) = x^{*}y = \Psi(y,x)$.
+An associative $R$-algebra $A$ with a $\varsigma$-semilinear involution $*$ carries two $A$-**valued Hermitian forms**, the form of the sesqualgebra $\Psi(x,y) = y^{*}x$ and the form of the product $\Phi(x,y) = xy^{*} = x \star y$, both biadditive, $R$-linear in the first slot and $\varsigma$-semilinear in the second, both Hermitian, $\Psi(y,x) = \Psi(x,y)^{*}$ and the same for $\Phi$, and exchanged by the involution applied to both arguments, $\Psi(x,y) = \Phi(y^{*},x^{*})$. The product of the sesqualgebra **is** the form $\Phi$, so the compatibility of the entry is an identity of the algebra for the companion form and not an extra axiom, and the pair is a single object read through the involution, in the two conventions of the two slots: $\Psi$ is the sesqualgebra convention, linear in the first slot, and the convention of *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*, which is the same form with the arguments exchanged, is semilinear in the first slot: with the anti-involution $c = *$ that sibling's form is $h_*(x,y) = x^{*}y = \Psi(y,x)$.
 
 The scalar forms of the layer are the reductions of $\Psi$ by the $R$-linear functionals, $h_{\varphi}(x,y) = \varphi(y^{*}x) = \varphi(\Psi(x,y))$, and the passage $\varphi \mapsto \varphi \circ \Psi$ is a bijection onto the compatible forms, with inverse $h \mapsto h(\cdot,1)$; the two $A$-valued forms have the same reduction exactly for the functionals central on products, which is the class for which the trace pairing $\varphi(x,y) = \tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*, §*The Two Parities* agrees with the reduction $h_{\tau}$. **The diagonals** are $\Psi(x,x) = x^{*}x$ and $\Phi(x,x) = xx^{*} = x \star x$, both Hermitian, and the polarisation of the form splits into the two mixed terms $\Psi(x,y)$ and $\Psi(x,y)^{*}$.
 
@@ -265,7 +265,7 @@ The scalar forms of the layer are the reductions of $\Psi$ by the $R$-linear fun
 | $\operatorname{rad}(\Psi) = \{x : Ax = 0\}$ | the left annihilator, a two-sided ideal |
 | $\operatorname{rad}(\Phi) = \{x : xA = 0\}$ | the right annihilator, a two-sided ideal |
 | $J^{*} = J$ | the invariant ideal for which the forms descend to $A/J$ |
-| $h_c(x,y) = c(x)y$ | the form of the bilinear layer of *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint* |
+| $h_c(x,y) = c(x)y$ | the form of the bilinear layer of *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint* |
 | $\varsigma = \mathrm{id}$, $* = \mathrm{id}$ | the collapse: $\Psi(x,y) = yx$, $\Phi(x,y) = xy$ |
 
 ## Further Reading

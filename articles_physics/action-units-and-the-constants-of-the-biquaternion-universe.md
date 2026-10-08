@@ -374,7 +374,7 @@ The framework's guideline follows from the dichotomy: a dimensionful constant is
 | $h=2\pi\hbar$ | Planck constant; the quantum of action, where $\hbar$ is the quantum of angular momentum |
 | $m$, $e$, $\alpha=e^2/(4\pi\epsilon_0\hbar c)$ | Imported mass, charge and dimensionless coupling; $e$ is a defining constant of the SI, $m$ and $\alpha$ are measured |
 | $k_B$, $G$ | Imported: energy–temperature, and stress–energy–curvature; $k_B$ is a defining constant of the SI, $G$ is measured |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

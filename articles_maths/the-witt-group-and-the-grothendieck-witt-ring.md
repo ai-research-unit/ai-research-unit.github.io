@@ -265,7 +265,7 @@ is isotropic — in the middle form the vector $(2, 0, 1, 1)$ satisfies $q = 4 +
 
 ### The Complex Numbers
 
-Over $\mathbb{C}$ every non-degenerate form of dimension $n$ is isometric to $\langle 1, \ldots, 1\rangle$ of length $n$, because every element of $\mathbb{C}^\times$ is a square and the diagonal entries can be normalised to $1$. The hyperbolic plane is $\langle 1, -1\rangle \cong \langle 1, 1\rangle$, so $2[\langle 1\rangle] = 0$, and
+Over $\mathbb{C}$ every non-degenerate form of dimension $n$ is isometric to $\langle 1, \ldots, 1\rangle$ of dimension $n$, because every element of $\mathbb{C}^\times$ is a square and the diagonal entries can be normalised to $1$. The hyperbolic plane is $\langle 1, -1\rangle \cong \langle 1, 1\rangle$, so $2[\langle 1\rangle] = 0$, and
 
 $$
 W(\mathbb{C}) \cong \mathbb{Z}/2\mathbb{Z}, \qquad GW(\mathbb{C}) \cong \mathbb{Z}.

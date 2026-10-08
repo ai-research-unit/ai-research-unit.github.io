@@ -72,7 +72,7 @@ $$
 \bigl(\tilde{Q}\tilde{Q}^{*}\bigr)^i = \overline{Q^0}Q^i - Q^0\overline{Q^i} - (\mathbf{Q}\times(\mathbf{Q})^{\natural})^i .
 $$
 
-The scalar component is the sum of the squared moduli of the four coefficients, a non-negative real that vanishes only for $\tilde{Q} = 0$; it is the value at the operand of the positive complex sesquilinear form $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})$ of *Introduction to the Six Subspaces*. The vector components are purely imaginary, as the four-vector table of the six subspaces requires of a Hermitian element: the image of the identity is Hermitian for every $\tilde{Q}$, and it is central, hence a multiple of $e_0$, exactly when the vector components vanish.
+The scalar component is the sum of the squared moduli of the four coefficients, a non-negative real that vanishes only for $\tilde{Q} = 0$; it is the value at the operand of the positive general plain sesquilinear form $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})$ of *Introduction to the Six Subspaces*. The vector components are purely imaginary, as the four-vector table of the six subspaces requires of a Hermitian element: the image of the identity is Hermitian for every $\tilde{Q}$, and it is central, hence a multiple of $e_0$, exactly when the vector components vanish.
 
 **Proposition (the image of the vector basis).** For $k = 1,2,3$,
 
@@ -193,7 +193,7 @@ which has a nonzero vector component: the centre is not preserved, and the opera
 
 The element article of this pair lists the four coefficients; this article makes them act. The operator of $\tilde{Q}$ read in the four-vector realization is the Hermitian sandwich $\mathrm{H}_{\tilde{Q}}(\tilde U) = \tilde{Q}\tilde U\tilde{Q}^{*}$, computed by applying the four-vector product rule twice: multiply by $\tilde{Q}$, then by $\tilde{Q}^{*}$, whose four-vector is $(\overline{Q^0}, -\overline{Q^1}, -\overline{Q^2}, -\overline{Q^3})$. The rule is linear in the argument and quadratic in the operand, and the second factor being conjugated is what makes the operator Hermitian rather than an inner automorphism.
 
-On the identity the operator returns $\tilde{Q}\tilde{Q}^{*}$, whose scalar component is the positive quantity $\sum_\mu\lvert Q^\mu\rvert^{2}$, the value of the complex sesquilinear form $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})$; on the vector basis elements it returns elements whose scalar components are $2i\,\mathrm{Im}(Q^0\overline{Q^k}) - (\mathbf{Q}\times(\mathbf{Q})^{\natural})^k$. The centre and the vector subspace are therefore not preserved, while the two Hermitian sectors are, because the Hermitian condition constrains the components of the argument alone.
+On the identity the operator returns $\tilde{Q}\tilde{Q}^{*}$, whose scalar component is the positive quantity $\sum_\mu\lvert Q^\mu\rvert^{2}$, the value of the general plain sesquilinear form $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})$; on the vector basis elements it returns elements whose scalar components are $2i\,\mathrm{Im}(Q^0\overline{Q^k}) - (\mathbf{Q}\times(\mathbf{Q})^{\natural})^k$. The centre and the vector subspace are therefore not preserved, while the two Hermitian sectors are, because the Hermitian condition constrains the components of the argument alone.
 
 The two regimes are decided by two numbers: whether the biquaternion norm $\sum_\mu(Q^\mu)^2$ vanishes, and whether the scalar part $Q^0$ vanishes. Outside the cone the four columns are independent and the operator is invertible; on the cone all four columns lie on the line of the Hermitian element $\tilde{Q}\tilde{Q}^{*}$, whose normalisation is a minimal idempotent $\tfrac12(e_0 + i\mathbf{n}\cdot\mathbf{e})$. On the cone the square of the operator is $4\lvert Q^0\rvert^{2}$ times the operator, so $Q^0 = 0$ gives a nilpotent operator and $Q^0 \neq 0$ a scaled projection. The worked operands $e_1 + ie_2$ and $\tfrac12(e_0 - ie_3)$ exhibit the two cases on the same line: both send the algebra onto the span of an idempotent and depend only on $U^0 + iU^3$, and the first is nilpotent while the second is the projection onto its own idempotent.
 
@@ -206,7 +206,7 @@ The two regimes are decided by two numbers: whether the biquaternion norm $\sum_
 | $\mathrm{H}_{\tilde{Q}}(\tilde U) = \tilde{Q}\tilde U\tilde{Q}^{*}$ | the Hermitian sandwich, written in components |
 | $S^\mu = (\tilde{Q}\tilde U)^\mu$ | intermediate product: $S^0 = Q^0U^0 - \mathbf{Q}\cdot\mathbf{U}$, $\mathbf{S} = Q^0\mathbf{U} + U^0\mathbf{Q} + \mathbf{Q}\times\mathbf{U}$ |
 | $(\tilde{Q}^{*})^\mu = (\overline{Q^0},-\overline{Q^1},-\overline{Q^2},-\overline{Q^3})$ | the dagger in coordinates |
-| $\mathrm{H}_{\tilde{Q}}(e_0) = \tilde{Q}\tilde{Q}^{*}$, scalar part $\sum_\mu\lvert Q^\mu\rvert^{2}$ | image of the identity; the complex sesquilinear form |
+| $\mathrm{H}_{\tilde{Q}}(e_0) = \tilde{Q}\tilde{Q}^{*}$, scalar part $\sum_\mu\lvert Q^\mu\rvert^{2}$ | image of the identity; the general plain sesquilinear form |
 | $\mathrm{H}_{\tilde{Q}}(e_k)^0 = 2i\,\mathrm{Im}(Q^0\overline{Q^k}) - (\mathbf{Q}\times(\mathbf{Q})^{\natural})^k$ | scalar part of the image of a vector unit |
 | $\mathrm{H}_{A\tilde{Q}} = \lvert A\rvert^{2}\mathrm{H}_{\tilde{Q}}$, $\mathrm{H}_{i\tilde{Q}} = \mathrm{H}_{\tilde{Q}}$ | central rule; blindness to $i$ |
 | $\operatorname{rank}\mathrm{H}_{\tilde{Q}} = 4$ or $1$ | outside the cone, and on it |

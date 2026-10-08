@@ -160,7 +160,7 @@ The fourth product has no unit and is not associative, so its natural replacemen
 - Mathematics article *The Sesquilinear Associator and the Ternary Product* (`articles_maths/the-sesquilinear-associator-and-the-ternary-product.md`), for the general ternary product and the parity theorem.
 - Mathematics articles *Algebraic J\*-Algebras* (`articles_maths/algebraic-j-star-algebras.md`) and *Jordan Triples with an Involution* (`articles_maths/jordan-triples-with-an-involution.md`), for the two models, the identity, the reconstruction of the state space and the theorem that the identity belongs to the middle model.
 - Mathematics article *The Ternary Product as an Operator* (`articles_maths/the-ternary-product-as-an-operator.md`), for the commutator identity and the Lie triple system.
-- Mathematics article *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-general-quaternionic-sesqualgebra-gqs-over-c.md`), for the product, its failure to be the derived operation and its ternary reading.
+- Mathematics article *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the product, its failure to be the derived operation and its ternary reading.
 - Companion article *The Fourth Product and Its Indefinite Metric*, for the metric the block installs and the division of labour it implies.
 - Companion article *The States the Indefinite Metric Cannot Normalise*, for the states on the gauge-metric null cone.
 - Companion article *Mass, Rank and the Positivity of the Dagger*, for the positive cone and the no-ghost statement — the state side of the division of labour.

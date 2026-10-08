@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ acts on itself by left and right multiplication, and the two-sided sandwich $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$ is the product of one of each. These operators, their composition laws, their adjoints for the scalar form of the dagger and the three types — self-adjoint, skew-adjoint, unitary — are the subject of *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* and *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, which read them over $\mathbb{C}$. This article reads the same operators **over $\mathbb{R}$**: the two families as real endomorphisms of $\mathbb{B}\cong\mathbb{R}^{8}$, their adjoints for the four realified forms of *The Realification of the Four Forms*, and the real Cartan decomposition of the operator algebra that the dagger defines.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ acts on itself by left and right multiplication, and the two-sided sandwich $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$ is the product of one of each. These operators, their composition laws, their adjoints for the scalar form of the dagger and the three types — self-adjoint, skew-adjoint, unitary — are the subject of *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, which read them over $\mathbb{C}$. This article reads the same operators **over $\mathbb{R}$**: the two families as real endomorphisms of $\mathbb{B}\cong\mathbb{R}^{8}$, their adjoints for the four realified forms of *The Realification of the Four Forms*, and the real Cartan decomposition of the operator algebra that the dagger defines.
 
 The article turns on the fact that the operator theory is already real, and that the real reading adds the Cartan structure. Every operator of the corpus is $\mathbb{C}$-linear in its argument and hence real-linear; the left multiplication $L_{\tilde Q}$ is real-linear in its parameter; and the dagger, though conjugate-linear, acts on the eight real coordinates as an orthogonal map for the realified Hermitian form. The three real groups that the realified forms single out — the compact unitary group $U(2)$ of the unit slice, and the orthogonal groups $O(4)$ and $O(1,3)$ of the definite and the interval restrictions of the two indefinite forms on the quaternion and Hermitian subspaces — are read off from those operators.
 
@@ -15,7 +15,7 @@ $$
 
 and the group of units decomposes as $\mathbb{B}^{\times}=U(2)\cdot\exp(\mathbb{M}_{+})$. The decomposition is the real form of the operator theory, and the article is its reading.
 
-**Boundary.** The complex statements of the operator theory are *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* and *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, and their positivity and Cartan structure is *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, whose §*The Cartan Involution* is quoted here and not repeated. The forms are *The Realification of the Four Forms*; the trace form is the companion *The Trace Form of the Real Biquaternion Algebra*; the general one-sided and two-sided theories are *One-Sided Operators on a Clifford Algebra* and *Two-Sided Operators on a Clifford Algebra*.
+**Boundary.** The complex statements of the operator theory are *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, and their positivity and Cartan structure is *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, whose §*The Cartan Involution* is quoted here and not repeated. The forms are *The Realification of the Four Forms*; the trace form is the companion *The Trace Form of the Real Biquaternion Algebra*; the general one-sided and two-sided theories are *One-Sided Operators on a Clifford Algebra* and *Two-Sided Operators on a Clifford Algebra*.
 
 ## The One-Sided Operators
 
@@ -45,7 +45,7 @@ $$
 (L_{\tilde B})^{*}=L_{\tilde B^{*}},\qquad (R_{\tilde C})^{*}=R_{\tilde C^{*}}.
 $$
 
-*Proof.* The identity is the complex adjoint theorem of *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, whose proof uses only the anti-involution property of the dagger and the invariance of the scalar part under cyclic permutation; taking real parts preserves it.
+*Proof.* The identity is the complex adjoint theorem of *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, whose proof uses only the anti-involution property of the dagger and the invariance of the scalar part under cyclic permutation; taking real parts preserves it.
 
 **Corollary (the real reading is a faithful real $*$-representation).** The assignment $L:\mathbb{B}\to\mathrm{End}_{\mathbb{R}}(\mathbb{B})$ is an injective real algebra homomorphism, compatible with the dagger and the adjoint, on the real Hilbert space $(\mathbb{B},\langle\cdot,\cdot\rangle_{*\mathbb{R}})$. Since $\mathbb{B}\cong M_{2}(\mathbb{C})$ and $\dim_{\mathbb{R}}\mathbb{B}=8$, it is the left regular representation of a real algebra of dimension eight.
 
@@ -53,16 +53,16 @@ $$
 
 | realified form | adjoint of $L_{\tilde Q}$ |
 |---|---|
-| complex bilinear | $R_{\tilde Q}$ (the transpose) |
-| quaternion bilinear | $L_{\tilde Q^{\natural}}$ |
+| general plain bilinear | $R_{\tilde Q}$ (the transpose) |
+| general quaternionic bilinear | $L_{\tilde Q^{\natural}}$ |
 | Hermitian | $L_{\tilde Q^{*}}$ |
 | Krein | $R_{\bar{\tilde Q}}$ |
 
 where ${\natural}$ is the natural conjugation, ${}^{*}$ the Hermitian conjugation and $\bar{\cdot}$ the complex conjugation of the coefficients.
 
-*Proof.* Each identity is the corresponding adjoint of *The Four Pairings of the Biquaternion Algebra*, §*The Forms in Comparison*, read on the real parts, which are the four realified forms of *The Realification of the Four Forms*; the complex bilinear adjoint is the transpose $F^{\approx}=DF^{\mathsf T}D$ of *Association and the Transpose on the Biquaternion Algebra*, the quaternion bilinear adjoint is the natural conjugation on the parameter, the Hermitian adjoint is the dagger, and the Krein adjoint pairs a left multiplication with the right multiplication of the conjugate.
+*Proof.* Each identity is the corresponding adjoint of *The Four Pairings of the Biquaternion Algebra*, §*The Forms in Comparison*, read on the real parts, which are the four realified forms of *The Realification of the Four Forms*; the general plain bilinear adjoint is the transpose $F^{\approx}=DF^{\mathsf T}D$ of *Association and the Transpose on the Biquaternion Algebra*, the general quaternionic bilinear adjoint is the natural conjugation on the parameter, the Hermitian adjoint is the dagger, and the Krein adjoint pairs a left multiplication with the right multiplication of the conjugate.
 
-**Remark (the real reading distinguishes the forms through the adjoint).** The four forms are told apart by the adjoint they assign to a single operator and by the side it keeps. The two anti-automorphic conjugations — the natural conjugation ${\natural}$ of the quaternion bilinear form and the dagger ${}^{*}$ of the Hermitian form — keep the left multiplication on the left; the complex bilinear form, whose conjugation is the identity, and the Krein form, whose conjugation is the automorphism of complex conjugation, move it to the right. For the Hermitian form the criterion is the one of §*Self-Adjoint, Skew and Unitary One-Sided Operators*: $L_{\tilde Q}$ is self-adjoint exactly when $\tilde Q\in\mathbb{M}_{+}$. The dichotomy — left for the anti-automorphic conjugations, right for the identity and the automorphism — is the one organising *Association and the Transpose on the Biquaternion Algebra* and *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*.
+**Remark (the real reading distinguishes the forms through the adjoint).** The four forms are told apart by the adjoint they assign to a single operator and by the side it keeps. The two anti-automorphic conjugations — the natural conjugation ${\natural}$ of the general quaternionic bilinear form and the dagger ${}^{*}$ of the Hermitian form — keep the left multiplication on the left; the general plain bilinear form, whose conjugation is the identity, and the Krein form, whose conjugation is the automorphism of complex conjugation, move it to the right. For the Hermitian form the criterion is the one of §*Self-Adjoint, Skew and Unitary One-Sided Operators*: $L_{\tilde Q}$ is self-adjoint exactly when $\tilde Q\in\mathbb{M}_{+}$. The dichotomy — left for the anti-automorphic conjugations, right for the identity and the automorphism — is the one organising *Association and the Transpose on the Biquaternion Algebra* and *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*.
 
 ## The Types of the One-Sided Operators
 
@@ -120,22 +120,22 @@ so that $\mathbb{B}^{\times}=U(2)\cdot\exp(\mathbb{M}_{+})$, and the quotient $\
 
 The realified forms single out three real groups, and each acts on the space of the operators.
 
-**Theorem (the compact group $U(2)$).** The unitary slice $U=U(2)$ is the fixed group of the Cartan involution and the maximal compact subgroup of the unit group $\mathbb{B}^{\times}\cong GL_{2}(\mathbb{C})$; it is a compact connected real Lie group of dimension four, and its Lie algebra is the anti-Hermitian sector $\mathbb{M}_{-}=u(2)$, acting on $\mathbb{B}$ by skew-adjoint operators.
+**Theorem (the unitary group $U(2)$).** The unitary slice $U=U(2)$ is the fixed group of the Cartan involution and the maximal compact subgroup of the unit group $\mathbb{B}^{\times}\cong GL_{2}(\mathbb{C})$; it is a compact connected real Lie group of dimension four, and its Lie algebra is the anti-Hermitian sector $\mathbb{M}_{-}=u(2)$, acting on $\mathbb{B}$ by skew-adjoint operators.
 
-*Proof.* The fixed set and the maximal compactness are the Cartan theorems above and of *The Unitary Group and the Hermitian Symmetric Space* and *The Biquaternion Unit Group as a Topological Group*.
+*Proof.* The fixed set and the maximality are the Cartan theorems above and of *The Unitary Group and the Hermitian Symmetric Space* and *The Biquaternion Unit Group as a Topological Group*.
 
-**Theorem (the orthogonal groups $O(4)$ and $O(1,3)$).** On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the Hermitian subspace $\mathbb{M}_{+}$, both real four-dimensional, the realified forms restrict to forms whose isometry groups are
+**Theorem (the orthogonal groups $O(4)$ and $O(1,3)$).** On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the Hermitian subspace $\mathbb{M}_{+}$, both real four-dimensional, the realified forms restrict to forms whose automorphism groups are
 
-| subspace | form | restriction | isometry group |
+| subspace | form | restriction | automorphism group |
 |---|---|---|---|
-| $\mathbb{H}_{\mathbb{B}}$ | quaternion bilinear | $(4,0)$ | $O(4)$ |
-| $\mathbb{M}_{+}$ | complex bilinear | $(4,0)$ | $O(4)$ |
-| $\mathbb{H}_{\mathbb{B}}$ | complex bilinear | $(1,3)$ | $O(1,3)$ |
+| $\mathbb{H}_{\mathbb{B}}$ | general quaternionic bilinear | $(4,0)$ | $O(4)$ |
+| $\mathbb{M}_{+}$ | general plain bilinear | $(4,0)$ | $O(4)$ |
+| $\mathbb{H}_{\mathbb{B}}$ | general plain bilinear | $(1,3)$ | $O(1,3)$ |
 | $\mathbb{M}_{+}$ | Krein | $(1,3)$ | $O(1,3)$ |
 
-*Proof.* The restrictions are the rows of *The Realification of the Four Forms*, §*The Six Subspaces under the Four Realified Forms*; the group of real-linear isometries of a non-degenerate real form of signature $(p,q)$ on a space of dimension $n=p+q$ is $O(p,q)$, whence $O(4)$ for the definite rows and $O(1,3)$ for the interval rows.
+*Proof.* The restrictions are the rows of *The Realification of the Four Forms*, §*The Six Subspaces under the Four Realified Forms*; the group of real-linear automorphisms of a non-degenerate real form of signature $(p,q)$ on a space of dimension $n=p+q$ is $O(p,q)$, whence $O(4)$ for the definite rows and $O(1,3)$ for the interval rows.
 
-**Remark (the real forms of the model entry point, read on the operators).** The groups $O(4)$ and $O(1,3)$ are the two real forms of the complex orthogonal group $O_{4}(\mathbb{C})$ of *The Complex Bilinear Form on the Biquaternion Algebra*, §*The Isometry Group*, exhibited by the Hermitian subspace and the quaternion subspace respectively; the unitary group $U(2)$ is the form of the operator algebra singled out by the dagger. The three real groups, $O(4)$, $U(2)$ and $O(1,3)$, are the orthogonal and unitary groups of the real reading: $O(4)$ and $U(2)$ are compact, of real dimensions $6$ and $4$, and $O(1,3)$ is non-compact, of real dimension $6$. The indefinite operators of the Krein form, with the $J$-adjoint, are *The Krein Isometry Group and Its $J$-Contractions*, and the operator-theoretic Cartan decomposition of the Krein form is *The Krein Cartan Decomposition of the Operator Algebra*.
+**Remark (the real forms of the model entry point, read on the operators).** The groups $O(4)$ and $O(1,3)$ are the two real forms of the complex orthogonal group $O_{4}(\mathbb{C})$ of *The General Plain Algebra in the $2\times2$ Matrix Representation*, §*The General Plain Bilinear Form in the Representation*, exhibited by the Hermitian subspace and the quaternion subspace respectively; the unitary group $U(2)$ is the form of the operator algebra singled out by the dagger. The three real groups, $O(4)$, $U(2)$ and $O(1,3)$, are the orthogonal and unitary groups of the real reading, of real dimensions $6$, $4$ and $6$. The indefinite operators of the Krein form, with the $J$-adjoint, are *The Krein Isometry Group and Its $J$-Contractions*, and the operator-theoretic Cartan decomposition of the Krein form is *The Krein Cartan Decomposition of the Operator Algebra*.
 
 ## Worked Examples
 
@@ -151,7 +151,7 @@ The realified forms single out three real groups, and each acts on the space of 
 
 ## Summary
 
-The operators of the real biquaternion algebra are the left and right multiplications $L_{\tilde B}(\tilde V)=\tilde B\tilde V$ and $R_{\tilde C}(\tilde V)=\tilde V\tilde C$, with the two-sided sandwich $\Theta_{\tilde B}=L_{\tilde B}R_{\tilde B^{*}}$ as their product; they are real endomorphisms of $\mathbb{B}\cong\mathbb{R}^{8}$, and the complex operator theorems of the companion articles hold over $\mathbb{R}$ unchanged. The four realified forms assign four different adjoints to the left multiplication — the transpose $R_{\tilde Q}$ for the complex bilinear form, $L_{\tilde Q^{\natural}}$ for the quaternion bilinear form, $L_{\tilde Q^{*}}$ for the Hermitian form and $R_{\bar{\tilde Q}}$ for the Krein form — and for the realified Hermitian form the type criteria are the ones of the involution lattice: $L_{\tilde B}$ is self-adjoint exactly on the Hermitian sector $\mathbb{M}_{+}$, skew-adjoint exactly on the anti-Hermitian sector $\mathbb{M}_{-}$, and unitary exactly on the slice $U=U(2)$. The dagger defines the Cartan involution $\theta(\tilde Q)=(\tilde Q^{*})^{-1}$ of the unit group, of order two, with fixed set $U(2)$ and differential $-{}^{*}$, and its eigenspaces give the real Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_{2}(\mathbb{C})$ with the bracket relations of a $\mathbb{Z}/2$-graded Lie algebra and the group decomposition $\mathbb{B}^{\times}=U(2)\cdot\exp(\mathbb{M}_{+})$, whose quotient is the interior of the Hermitian cone. The three real groups that the realified forms single out are the compact $U(2)$, of dimension four; and the orthogonal groups $O(4)$ and $O(1,3)$, of dimension six, read as the isometry groups of the definite and the interval restrictions of the two indefinite forms on the quaternion and Hermitian subspaces.
+The operators of the real biquaternion algebra are the left and right multiplications $L_{\tilde B}(\tilde V)=\tilde B\tilde V$ and $R_{\tilde C}(\tilde V)=\tilde V\tilde C$, with the two-sided sandwich $\Theta_{\tilde B}=L_{\tilde B}R_{\tilde B^{*}}$ as their product; they are real endomorphisms of $\mathbb{B}\cong\mathbb{R}^{8}$, and the complex operator theorems of the companion articles hold over $\mathbb{R}$ unchanged. The four realified forms assign four different adjoints to the left multiplication — the transpose $R_{\tilde Q}$ for the general plain bilinear form, $L_{\tilde Q^{\natural}}$ for the general quaternionic bilinear form, $L_{\tilde Q^{*}}$ for the Hermitian form and $R_{\bar{\tilde Q}}$ for the Krein form — and for the realified Hermitian form the type criteria are the ones of the involution lattice: $L_{\tilde B}$ is self-adjoint exactly on the Hermitian sector $\mathbb{M}_{+}$, skew-adjoint exactly on the anti-Hermitian sector $\mathbb{M}_{-}$, and unitary exactly on the slice $U=U(2)$. The dagger defines the Cartan involution $\theta(\tilde Q)=(\tilde Q^{*})^{-1}$ of the unit group, of order two, with fixed set $U(2)$ and differential $-{}^{*}$, and its eigenspaces give the real Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_{2}(\mathbb{C})$ with the bracket relations of a $\mathbb{Z}/2$-graded Lie algebra and the group decomposition $\mathbb{B}^{\times}=U(2)\cdot\exp(\mathbb{M}_{+})$, whose quotient is the interior of the Hermitian cone. The three real groups that the realified forms single out are the compact $U(2)$, of dimension four; and the orthogonal groups $O(4)$ and $O(1,3)$, of dimension six, read as the automorphism groups of the definite and the interval restrictions of the two indefinite forms on the quaternion and Hermitian subspaces.
 
 ## Summary of Notation
 
@@ -161,7 +161,7 @@ The operators of the real biquaternion algebra are the left and right multiplica
 | $\Theta_{\tilde B}=L_{\tilde B}R_{\tilde B^{*}}=R_{\tilde B^{*}}L_{\tilde B}$ | the two-sided operator, the product of the two families |
 | $L_{\tilde B}L_{\tilde C}=L_{\tilde B\tilde C}$, $R_{\tilde B}R_{\tilde C}=R_{\tilde C\tilde B}$, $L_{\tilde B}R_{\tilde C}=R_{\tilde C}L_{\tilde B}$ | the composition laws |
 | $(L_{\tilde B})^{*}=L_{\tilde B^{*}}$, $(R_{\tilde C})^{*}=R_{\tilde C^{*}}$ | the adjoints for the realified Hermitian form |
-| $R_{\tilde Q}$, $L_{\tilde Q^{\natural}}$, $L_{\tilde Q^{*}}$, $R_{\bar{\tilde Q}}$ | the four adjoints, for the complex bilinear, quaternion bilinear, Hermitian and Krein forms |
+| $R_{\tilde Q}$, $L_{\tilde Q^{\natural}}$, $L_{\tilde Q^{*}}$, $R_{\bar{\tilde Q}}$ | the four adjoints, for the general plain bilinear, general quaternionic bilinear, Hermitian and Krein forms |
 | $\mathbb{M}_{+}=H_{2}(\mathbb{C})$, $\mathbb{M}_{-}=u(2)$ | the Hermitian and anti-Hermitian sectors; self-adjoint and skew-adjoint parameters |
 | $U=\{\tilde Q^{*}\tilde Q=e_{0}\}=U(2)$ | the unitary slice; the fixed group of the Cartan involution |
 | $\theta(\tilde Q)=(\tilde Q^{*})^{-1}$, $\mathrm{d}\theta=-{}^{*}$ | the Cartan involution and its differential |
@@ -171,8 +171,8 @@ The operators of the real biquaternion algebra are the left and right multiplica
 
 ## Further Reading
 
-- *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/one-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the one-sided composition laws, adjoints and types over $\mathbb{C}$
-- *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the sandwich, its quadratics and the type theorems
+- *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the one-sided composition laws, adjoints and types over $\mathbb{C}$
+- *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the sandwich, its quadratics and the type theorems
 - *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the polar decomposition and the Cartan involution quoted here
 - *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the four realified forms, their restrictions and their signatures
 - *The Trace Form of the Real Biquaternion Algebra* (`articles_maths/the-trace-form-of-the-real-biquaternion-algebra.md`), for the companion invariant form built from the regular representation

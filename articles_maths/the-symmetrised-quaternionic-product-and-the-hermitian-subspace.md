@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The product of this group is the **complex quaternionic bilinear product**
+The product of this group is the **general quaternionic bilinear product**
 
 $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
 $$
 
-the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product*), whose algebra, left unit and associativity defect are *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$* and the previous article of the group. Every bilinear product has two halves, its symmetrisation and its antisymmetrisation (*Scalar / Vector decomposition of the Biquaternion Complex Products*); this article reads the symmetric half,
+the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The General Quaternionic Bilinear Product*), whose algebra, left unit and associativity defect are *Introduction to the General Quaternionic Algebra of Biquaternions* and the previous article of the group. Every bilinear product has two halves, its symmetrisation and its antisymmetrisation (*Scalar / Vector decomposition of the Biquaternion Complex Products*); this article reads the symmetric half,
 
 $$
 \tilde P \circ \tilde Q = \tfrac12\bigl(\tilde P\star\tilde Q + \tilde Q\star\tilde P\bigr) = \tfrac12\bigl(\tilde P^{\natural}\tilde Q + \tilde Q^{\natural}\tilde P\bigr) ,
@@ -61,7 +61,7 @@ $$
 \tilde P\circ\tilde Q = \tfrac12\Bigl(N(\tilde P+\tilde Q) - N(\tilde P) - N(\tilde Q)\Bigr)e_0 ,
 $$
 
-so the central coefficient $\beta(\tilde P,\tilde Q)$ is exactly the polarisation of the norm form, $\beta(\tilde P,\tilde Q) = \tfrac12\bigl(N(\tilde P+\tilde Q)-N(\tilde P)-N(\tilde Q)\bigr)$, and the symmetrised product is the bilinear form of the algebra placed on the central line. In coordinates $\beta(\tilde P,\tilde Q) = \sum_{\mu=0}^{3}P_\mu Q_\mu$ is the standard symmetric $\mathbb{C}$-bilinear form of $\mathbb{C}^4$, so it is symmetric and non-degenerate, with the basis $e_0,e_1,e_2,e_3$ orthonormal; the written source calls it the trace form of the quaternionic bilinear product (*The Six Subspaces and the Four Complex Products*).
+so the central coefficient $\beta(\tilde P,\tilde Q)$ is exactly the polarisation of the norm form, $\beta(\tilde P,\tilde Q) = \tfrac12\bigl(N(\tilde P+\tilde Q)-N(\tilde P)-N(\tilde Q)\bigr)$, and the symmetrised product is the bilinear form of the algebra placed on the central line. In coordinates $\beta(\tilde P,\tilde Q) = \sum_{\mu=0}^{3}P_\mu Q_\mu$ is the standard symmetric $\mathbb{C}$-bilinear form of $\mathbb{C}^4$, so it is symmetric and non-degenerate, with the basis $e_0,e_1,e_2,e_3$ orthonormal; the written source calls it the trace form of the general quaternionic bilinear product (*The Six Subspaces and the Four Complex Products*).
 
 ## The Coefficient on the Six Subspaces
 
@@ -80,9 +80,9 @@ The coefficient $\beta$ is a symmetric $\mathbb{C}$-bilinear form on $\mathbb{B}
 
 **Proof.** An element $\lambda e_0$ lies in $\mathbb{M}_+$ exactly when $\lambda$ is real, by the coordinate condition of *Introduction to the Six Subspaces* §*The Hermitian Subspace*: the Hermitian subspace is the set of elements with real scalar part and purely imaginary vector part, and $\lambda e_0$ has no vector part; and $\mathbb{R}e_0 \subset \mathbb{M}_+$. $\square$
 
-**Corollary (the coefficient is real on four of the six).** For every pair drawn from the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, from the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, from the Hermitian subspace $\mathbb{M}_+$ or from the anti-Hermitian subspace $\mathbb{M}_-$, the coefficient $\beta$ is real, and the symmetrised value is a real multiple of $e_0$. For a pair drawn from the centre the coefficient is $\beta(Ae_0,Be_0) = AB$, a product of two complex numbers, real only when $AB$ is real, which is not the generic case: the pair $A = 1$, $B = i$ has $\beta = i$. For a pair drawn from the vector subspace, where $\beta(\mathbf P,\mathbf Q) = (\mathbf P,\mathbf Q)$, the coefficient is real only when the complex bilinear form of the pair is real, which is likewise not the generic case: the pair $\mathbf P = e_1$, $\mathbf Q = ie_1$ has $\beta = i$.
+**Corollary (the coefficient is real on four of the six).** For every pair drawn from the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, from the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, from the Hermitian subspace $\mathbb{M}_+$ or from the anti-Hermitian subspace $\mathbb{M}_-$, the coefficient $\beta$ is real, and the symmetrised value is a real multiple of $e_0$. For a pair drawn from the centre the coefficient is $\beta(Ae_0,Be_0) = AB$, a product of two complex numbers, real only when $AB$ is real, which is not the generic case: the pair $A = 1$, $B = i$ has $\beta = i$. For a pair drawn from the vector subspace, where $\beta(\mathbf P,\mathbf Q) = (\mathbf P,\mathbf Q)$, the coefficient is real only when the general plain bilinear form of the pair is real, which is likewise not the generic case: the pair $\mathbf P = e_1$, $\mathbf Q = ie_1$ has $\beta = i$.
 
-**Proof.** The four entries of the table whose fourth column reads "every pair" are immediate: in each the ingredients of $\beta$ are real. The centre and the vector subspace are the two entries whose fourth column is a condition; on the centre $\beta = AB$ is the plain product in $\mathbb{C}$, real for $A = B = 1$ and non-real for $A = 1$, $B = i$, and on the vector subspace $\beta$ is the complex bilinear form, real for the pair $e_1,e_1$ and non-real for the pair $e_1,ie_1$. $\square$
+**Proof.** The four entries of the table whose fourth column reads "every pair" are immediate: in each the ingredients of $\beta$ are real. The centre and the vector subspace are the two entries whose fourth column is a condition; on the centre $\beta = AB$ is the plain product in $\mathbb{C}$, real for $A = B = 1$ and non-real for $A = 1$, $B = i$, and on the vector subspace $\beta$ is the general plain bilinear form, real for the pair $e_1,e_1$ and non-real for the pair $e_1,ie_1$. $\square$
 
 **Remark (the coefficient is not the point; the closure is).** The corollary shows that a Hermitian value is the common situation and not the distinction: the value is Hermitian on every pair from four of the six subspaces, and on the centre and on the vector subspace it is Hermitian whenever the coefficient happens to be real. What distinguishes the Hermitian subspace is not that the value of a pair from it is Hermitian, but that the symmetrisation **keeps it inside itself**: for $\tilde P,\tilde Q \in \mathbb{M}_+$ the value is a real multiple of $e_0$, which is again an element of $\mathbb{M}_+$. The same is true of the centre and of the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, which contains the real line; and it is false of the vector subspace, of $i\mathbb{H}_{\mathbb{B}}$ and of $\mathbb{M}_-$, where the value escapes to the centre. This is the sense in which the Hermitian subspace is the natural home of the symmetrisation, and it is the statement of *The Six Subspaces and the Four Complex Products* that the symmetrisation of every one of the four products stays inside exactly the centre, the quaternion subspace and the Hermitian subspace.
 
@@ -135,7 +135,7 @@ The symmetrised quaternionic product $\tilde P\circ\tilde Q = \tfrac12(\tilde P^
 | $(\mathbf P,\mathbf Q)$ | the complex bilinear dot product $\sum_k P_kQ_k$ |
 | $\mathbf P\times\mathbf Q$ | the complex bilinear cross product |
 | ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$ |
-| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the complex quaternionic bilinear product, the multiplication of this group |
+| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of this group |
 | $\tilde P\circ\tilde Q = \tfrac12(\tilde P\star\tilde Q+\tilde Q\star\tilde P)$ | the symmetrised quaternionic product |
 | $\beta(\tilde P,\tilde Q) = P_0Q_0+(\mathbf P,\mathbf Q)$ | its central coefficient |
 | $\tilde P\bullet\tilde Q = \tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ | the Jordan product of the associative multiplication |

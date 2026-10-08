@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The underlying $\mathbb{R}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is eight-dimensional, with the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ of *Biquaternions as a Vector Space over $\mathbb{R}$*. The complex bilinear product of *The Four Biquaternion Complex Products* is $\mathbb{R}$-bilinear as well as $\mathbb{C}$-bilinear, so the same rule that makes that space a $\mathbb{C}$-algebra also makes it an $\mathbb{R}$-algebra, of twice the dimension. This article takes that product as the multiplication of the **real algebra** and reads off the structure the real scalars produce.
+The underlying $\mathbb{R}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is eight-dimensional, with the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ of *Biquaternions as a Vector Space over $\mathbb{R}$*. The general plain bilinear product of *The Four Biquaternion Complex Products* is $\mathbb{R}$-bilinear as well as $\mathbb{C}$-bilinear, so the same rule that makes that space a $\mathbb{C}$-algebra also makes it an $\mathbb{R}$-algebra, of twice the dimension. This article takes that product as the multiplication of the **real algebra** and reads off the structure the real scalars produce.
 
 The axioms are the same as over $\mathbb{C}$ and what they produce is finer. The product is $\mathbb{R}$-bilinear, associative and unital, so the space is an associative unital $\mathbb{R}$-algebra; the sixty-four products of the eight basis elements fix the multiplication; and the algebra is then read off. What the smaller scalar system exposes is the subject of the middle of the article: the central imaginary $i$ is an element of the real algebra rather than a scalar, so the real algebra carries the complex structure of $\mathbb{B}$ as an operator; the four conjugations are all ordinary $\mathbb{R}$-linear maps; and the signs of the squares of the eight basis elements separate the quaternion directions from the complex and split-complex ones.
 
-Two boundaries are stated at once. The product is not defined here: its coordinate rule and its scalar–vector form are *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*. The reading of the same product with the complex scalars is *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*, where the structure map, the centre and central simplicity are developed, and the complex algebra cited here is that article's; the real scalars are used here and the complex material is cited, not repeated. The elements, the basis, the conjugations and the six distinguished subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*.
+Two boundaries are stated at once. The product is not defined here: its coordinate rule and its scalar–vector form are *Introduction to the General Plain Algebra of Biquaternions*. The reading of the same product with the complex scalars is *Introduction to the General Plain Algebra of Biquaternions*, where the structure map, the centre and central simplicity are developed, and the complex algebra cited here is that article's; the real scalars are used here and the complex material is cited, not repeated. The elements, the basis, the conjugations and the six distinguished subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*.
 
 The general theory is *Algebras: A General Introduction*, associativity is *Associative Algebras*, the identity is *Unital Algebras*, the restriction and the extension of scalars are *Change of Rings* and *Extension of Scalars*, the split complex numbers are *Split-Complex Algebra*, the quaternions are *Quaternion Algebra*, the real form is *Real Forms and the Descent of an Algebra*, the group of conjugations is *The Group of Involutions*, and the simplicity is *Biquaternion Ideals and Peirce Decomposition*.
 
@@ -23,7 +23,7 @@ $$
 (\tilde P,\tilde Q) \longmapsto \tilde P\tilde Q = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3} P_\mu Q_\nu \, e_\mu e_\nu ,
 $$
 
-the complex bilinear product. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign and $i^2 = -e_0$ with $i$ central, so the double sum is an $\mathbb{R}$-linear combination of $e_0,\dots,e_3,ie_0,\dots,ie_3$: the rule is a map into $\mathbb{B}$ and is well defined.
+the general plain bilinear product. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign and $i^2 = -e_0$ with $i$ central, so the double sum is an $\mathbb{R}$-linear combination of $e_0,\dots,e_3,ie_0,\dots,ie_3$: the rule is a map into $\mathbb{B}$ and is well defined.
 
 On the eight real coordinates it is the complex coordinate rule read apart. Writing $P_\mu = p_\mu + ip'_\mu$ and $Q_\nu = q_\nu + iq'_\nu$,
 
@@ -102,7 +102,7 @@ The identity is unique: a two-sided identity $u$ satisfies $u = uu' = u'$ for an
 
 ### The Algebra Structure
 
-**Theorem.** With the complex bilinear product as its multiplication, $\mathbb{B}$ is an eight-dimensional associative unital non-commutative $\mathbb{R}$-algebra.
+**Theorem.** With the general plain bilinear product as its multiplication, $\mathbb{B}$ is an eight-dimensional associative unital non-commutative $\mathbb{R}$-algebra.
 
 **Proof.** By the propositions above the multiplication is an $\mathbb{R}$-bilinear, associative, unital binary operation on the eight-dimensional $\mathbb{R}$-vector space $\mathbb{B}$, which is the definition of an algebra over the commutative ring $\mathbb{R}$ in the broad sense of *Algebras: A General Introduction*; the two hypotheses the corpus adds to that sense, associativity and an identity, hold (*Associative Algebras*, *Unital Algebras*). The dimension is eight on the stated basis, and $e_1e_2 \neq e_2e_1$.
 
@@ -143,7 +143,7 @@ $$
 (a e_0 + b\, ie_0)(a e_0 - b\, ie_0) = (a^2 + b^2)e_0 , \qquad a,b \in \mathbb{R} .
 $$
 
-**Proof.** The centre is $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$ by *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*, §*The Scalars Are the Centre*, where the centrality criterion $[\tilde Q,e_1] = [\tilde Q,e_2] = 0 \iff Q_1 = Q_2 = Q_3 = 0$ is proved. On the centre $(ie_0)^2 = -e_0$, so the displayed product is $a^2e_0 - b^2(ie_0)^2 = (a^2+b^2)e_0$, which vanishes only at $a = b = 0$.
+**Proof.** The centre is $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$ by *Introduction to the General Plain Algebra of Biquaternions*, §*The Scalars Are the Centre*, where the centrality criterion $[\tilde Q,e_1] = [\tilde Q,e_2] = 0 \iff Q_1 = Q_2 = Q_3 = 0$ is proved. On the centre $(ie_0)^2 = -e_0$, so the displayed product is $a^2e_0 - b^2(ie_0)^2 = (a^2+b^2)e_0$, which vanishes only at $a = b = 0$.
 
 **Corollary.** The centre is a field of real dimension two, and it is not one of the split-complex planes: its generator squares to $-e_0$, while $(ie_k)^2 = +e_0$ for $k = 1,2,3$. The real algebra is therefore **not** split at its centre, and no scalar of the real algebra is a zero divisor.
 
@@ -203,7 +203,7 @@ $$
 \dim_\mathbb{C}(\mathbb{C} \otimes_\mathbb{R} \mathbb{B}) = \dim_\mathbb{R}\mathbb{B} = 8 \neq 4 = \dim_\mathbb{C}\mathbb{B} .
 $$
 
-The complex algebra is instead the extension of scalars of the quaternion algebra, $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ (*Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*, §*The Tensor Product*), of complex dimension four. The pair of algebras is therefore linked by restriction of scalars in one direction only, and an extension of the real algebra is a larger algebra, not the complex one.
+The complex algebra is instead the extension of scalars of the quaternion algebra, $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ (*Introduction to the General Plain Algebra of Biquaternions*, §*The Tensor Product*), of complex dimension four. The pair of algebras is therefore linked by restriction of scalars in one direction only, and an extension of the real algebra is a larger algebra, not the complex one.
 
 ## The Admissible Bases: $\mathbb{R}$, $\mathbb{C}$ and Not $\mathbb{H}$
 
@@ -220,7 +220,7 @@ An algebra structure over a commutative ring $R$ on a ring $A$ is a unital ring 
 | $\mathbb{H}$ | no | $\mathbb{H}$ is non-commutative and simple, so no unital homomorphism $\mathbb{H} \to \mathbb{C}$ exists |
 | $\mathbb{B}$ | no | the same obstruction, with the identity map in place of the embedding of $\mathbb{H}$ |
 
-The first two rows are the two readings of the same product developed in this article and in *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*; the last two are the excluded candidates.
+The first two rows are the two readings of the same product developed in this article and in *Introduction to the General Plain Algebra of Biquaternions*; the last two are the excluded candidates.
 
 ### Why the Quaternions Fail
 
@@ -250,7 +250,7 @@ $$
 \mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}
 $$
 
-thus differ in kind: one is a subalgebra, the other is not. Both statements are the real-space form of material proved in *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*, §*The Quaternion Subalgebra and Its Imaginary*, and they are repeated here only because the real scalars are the reading in which the signs $-e_0$ and $+e_0$ are visible.
+thus differ in kind: one is a subalgebra, the other is not. Both statements are the real-space form of material proved in *Introduction to the General Plain Algebra of Biquaternions*, §*The Quaternion Subalgebra and Its Imaginary*, and they are repeated here only because the real scalars are the reading in which the signs $-e_0$ and $+e_0$ are visible.
 
 Since $\mathbb{C} \otimes_\mathbb{R} \mathbb{H}_{\mathbb{B}} \cong \mathbb{B}$, the quaternion subalgebra is a **real form** of $\mathbb{B}$ — a real algebra whose extension of scalars is the complex algebra — the subject of *Real Forms and the Descent of an Algebra*.
 
@@ -271,19 +271,19 @@ $$
 \mathbb{R}[e_1] = \operatorname{span}_\mathbb{R}\{e_0,e_1\} \cong \mathbb{C} , \qquad \dim_\mathbb{R}\mathbb{R}[e_1] = 2 ,
 $$
 
-whereas $\mathbb{C}[e_1] = \mathbb{C}e_0 \oplus \mathbb{C}e_1$ has real dimension four. The classification of the complex plane — $\mathbb{C} \oplus \mathbb{C}$ when $(\mathbf Q,\mathbf Q) \neq 0$, the dual numbers $\mathbb{C}[t]/(t^2)$ when $(\mathbf Q,\mathbf Q) = 0$ — is *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*, §*The Subalgebra Generated by One Element*, and is not repeated here.
+whereas $\mathbb{C}[e_1] = \mathbb{C}e_0 \oplus \mathbb{C}e_1$ has real dimension four. The classification of the complex plane — $\mathbb{C} \oplus \mathbb{C}$ when $(\mathbf Q,\mathbf Q) \neq 0$, the dual numbers $\mathbb{C}[t]/(t^2)$ when $(\mathbf Q,\mathbf Q) = 0$ — is *Introduction to the General Plain Algebra of Biquaternions*, §*The Subalgebra Generated by One Element*, and is not repeated here.
 
 ## Summary
 
-The complex bilinear product, read on the underlying real space of $\mathbb{B}$, is $\mathbb{R}$-bilinear, associative and unital. It is fixed by the sixty-four products of the eight basis elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and the table is organised in four blocks: the quaternion table, that table multiplied by $i$ in the two mixed blocks, and the table negated.
+The general plain bilinear product, read on the underlying real space of $\mathbb{B}$, is $\mathbb{R}$-bilinear, associative and unital. It is fixed by the sixty-four products of the eight basis elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and the table is organised in four blocks: the quaternion table, that table multiplied by $i$ in the two mixed blocks, and the table negated.
 
 $$
-\boxed{\ \text{With the complex bilinear product, } \mathbb{B} \text{ is an associative unital non-commutative } \mathbb{R}\text{-algebra of dimension eight.}\ }
+\boxed{\ \text{With the general plain bilinear product, } \mathbb{B} \text{ is an associative unital non-commutative } \mathbb{R}\text{-algebra of dimension eight.}\ }
 $$
 
 What the real scalars expose is the sign pattern of the eight squares and its consequences. The element $ie_0$ is a second square root of $-e_0$ and is central, so the centre $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$ is a field; the elements $ie_1,ie_2,ie_3$ square to $+e_0$, so each plane $\operatorname{span}_\mathbb{R}\{e_0,ie_k\}$ is a copy of the split complex numbers with idempotents $\tfrac12(e_0 \pm ie_k)$; the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is a real subalgebra and a real form, while its imaginary $i\mathbb{H}_{\mathbb{B}}$ is not a subalgebra; and the central element $i$ is a complex structure $J$ on the whole algebra, an algebra automorphism with $J^2 = -\mathrm{id}$.
 
-The real algebra is the restriction of scalars of the complex algebra of *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*, related to it by $\dim_\mathbb{R}\mathbb{B} = 2\dim_\mathbb{C}\mathbb{B} = 8$; its extension of scalars is a larger algebra of complex dimension eight, and the complex algebra is the extension of scalars of $\mathbb{H}$ instead. The centre decides the admissible bases: $\mathbb{R}$ and $\mathbb{C}$ qualify and $\mathbb{H}$ and $\mathbb{B}$ do not, since the base ring must map into the complex centre and no unital homomorphism $\mathbb{H} \to \mathbb{C}$ exists. Finally, over $\mathbb{R}$ all four products are bilinear, and the axioms alone select the complex bilinear product as the multiplication.
+The real algebra is the restriction of scalars of the complex algebra of *Introduction to the General Plain Algebra of Biquaternions*, related to it by $\dim_\mathbb{R}\mathbb{B} = 2\dim_\mathbb{C}\mathbb{B} = 8$; its extension of scalars is a larger algebra of complex dimension eight, and the complex algebra is the extension of scalars of $\mathbb{H}$ instead. The centre decides the admissible bases: $\mathbb{R}$ and $\mathbb{C}$ qualify and $\mathbb{H}$ and $\mathbb{B}$ do not, since the base ring must map into the complex centre and no unital homomorphism $\mathbb{H} \to \mathbb{C}$ exists. Finally, over $\mathbb{R}$ all four products are bilinear, and the axioms alone select the general plain bilinear product as the multiplication.
 
 ## Summary of Notation
 
@@ -307,4 +307,4 @@ The real algebra is the restriction of scalars of the complex algebra of *Biquat
 - Nicolas Bourbaki, *Algebra I* (Springer, 1998), for algebras over a commutative ring, the structure map into the centre and the tensor product of algebras.
 - Tsit-Yuen Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for the centre of a tensor product and the impossibility of a unital homomorphism from a simple non-commutative ring into a commutative one.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the restriction and the extension of scalars and the real forms of a complex algebra.
-- *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-general-plain-algebra-gpa-over-c.md`), for the same product read with the complex scalars, the structure map and the centre.
+- *Introduction to the General Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-biquaternions.md`), for the same product read with the complex scalars, the structure map and the centre.

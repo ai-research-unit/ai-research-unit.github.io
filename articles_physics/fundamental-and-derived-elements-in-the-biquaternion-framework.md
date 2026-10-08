@@ -274,7 +274,7 @@ The polar representations are the last family of objects whose status is settled
 
 **The inputs are already available.** The exponential $\exp(\tilde Q)=\sum_{n\ge0}\tilde Q^n/n!$ converges for every biquaternion because $\mathbb{B}$ is finite-dimensional, so it is rigged from the multiplication. The roots of $-1$ used by the polar forms are the solutions of $\xi^2=-e_0$; the central ones are $\pm i$ (previous section) and the non-central ones are the real and non-trivial roots classified in the companion article. Both inputs are derived.
 
-**The Hamilton polar form.** For a biquaternion whose vector part has non-vanishing complex bilinear square $(\mathbf Q,\mathbf Q)=B^2\ne0$, put
+**The Hamilton polar form.** For a biquaternion whose vector part has non-vanishing general plain bilinear square $(\mathbf Q,\mathbf Q)=B^2\ne0$, put
 
 $$
 R=\sqrt{N(\tilde Q)},\qquad \xi=\mathbf Q/B,\qquad \cos\Theta=Q_0/R,\qquad \sin\Theta=B/R,

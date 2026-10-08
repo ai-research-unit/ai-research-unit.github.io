@@ -231,7 +231,7 @@ which vanishes for all $x, y, z$ only when $\varsigma = \mathrm{id}$ (take $y = 
 
 **Example (the matrix algebra).** On $M_n(\mathbb{C})$ with the conjugate transpose, the derived operation $S \star T = ST^{*}$ and the triple product $\{S,T,U\} = ST^{*}U$ are the standard examples of the category over $(\mathbb{C},\varsigma)$. The Hermitian and the unitary elements, and the trace functional, are the structures that the derived operation carries.
 
-**Example (the biquaternion algebra).** On $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star ${}^{*}$, the derived operation $P \star Q = PQ^{*}$ and the triple product $PQ^{*}R$ are the sesquilinear structures of the corpus's own algebra; the caution that the quaternion conjugation ${}^{\natural}$ is $\mathbb{C}$-linear, so that a product whose **second** slot carries it is bilinear and not sesquilinear, while a product whose second slot carries the star is sesquilinear whatever the first slot carries, is the subject of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*.
+**Example (the biquaternion algebra).** On $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star ${}^{*}$, the derived operation $P \star Q = PQ^{*}$ and the triple product $PQ^{*}R$ are the sesquilinear structures of the corpus's own algebra; the caution that the quaternion conjugation ${}^{\natural}$ is $\mathbb{C}$-linear, so that a product whose **second** slot carries it is bilinear and not sesquilinear, while a product whose second slot carries the star is sesquilinear whatever the first slot carries, is the subject of *Introduction to the General Plain Sesqualgebra of Biquaternions*.
 
 ## Summary
 

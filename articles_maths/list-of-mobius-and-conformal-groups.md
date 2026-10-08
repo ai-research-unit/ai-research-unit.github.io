@@ -113,7 +113,7 @@ An object that a reader may expect among the Möbius and conformal groups, and d
 | $\operatorname{Conf}(U)$ for a plane domain $U$ | infinite-dimensional in general, so not the finite-dimensional Möbius group | *Complex Analysis*; *Conformal Geometry* |
 | the similarity group of $\mathbb{R}^n$ | the transformations multiplying the metric by a constant, a proper subgroup of $\operatorname{Möb}(n)$ | *Isometries and Orthogonal Transformations*, §Similarities; *Euclidean Geometry* |
 | the orthogonal group $O(n)$ | a group defined by a quadratic form, the isometry group of the sphere, not a conformal group | *Isometries and Orthogonal Transformations* |
-| the conformal group $O(2,4)$ of Minkowski space | the conformal group of a pseudo-Riemannian space of signature $(2,4)$, not the conformal group of the round sphere | *Biquaternion Topology* |
+| the conformal group $O(2,4)$ of Minkowski space | the conformal group of a pseudo-Riemannian space of signature $(2,4)$, not the conformal group of the round sphere | *Topology in the Space of Biquaternions* |
 | the general linear group $GL(2,\mathbb{C})$ | the group whose projectivisation is $PSL(2,\mathbb{C})$; not itself the Möbius group | *The General Linear Group* |
 
 ## Summary

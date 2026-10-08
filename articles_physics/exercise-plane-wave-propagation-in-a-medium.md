@@ -148,7 +148,7 @@ $$
 \qquad
 \mathbf{V}_0 = \mathbf{E}_0 + i\,\hat{\mathbf{k}}\times\mathbf{E}_0 ,
 $$
-which is the parent's form of the amplitude. For a pure-vector biquaternion the biquaternion norm is the complex bilinear form $N(\tilde{F}_0) = \tilde{F}_0\tilde{F}^{\natural}_0 = \sum_k F_{0k}^2$, and $N(i\sqrt{\epsilon}\mathbf{V}_0) = (i\sqrt{\epsilon})^2\mathbf{V}_0\cdot\mathbf{V}_0 = -\epsilon\,\mathbf{V}_0\cdot\mathbf{V}_0$. Expand the complex dot product:
+which is the parent's form of the amplitude. For a pure-vector biquaternion the biquaternion norm is the general plain bilinear form $N(\tilde{F}_0) = \tilde{F}_0\tilde{F}^{\natural}_0 = \sum_k F_{0k}^2$, and $N(i\sqrt{\epsilon}\mathbf{V}_0) = (i\sqrt{\epsilon})^2\mathbf{V}_0\cdot\mathbf{V}_0 = -\epsilon\,\mathbf{V}_0\cdot\mathbf{V}_0$. Expand the complex dot product:
 $$
 \mathbf{V}_0\cdot\mathbf{V}_0 = \mathbf{E}_0^2 - (\hat{\mathbf{k}}\times\mathbf{E}_0)^2 + 2i\,\mathbf{E}_0\cdot(\hat{\mathbf{k}}\times\mathbf{E}_0).
 $$
@@ -398,8 +398,8 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W + \frac{i}{c}\mathbf{S}$ | Energy–momentum biquaternion, in $\mathbb{M}_+$ |
 | $v_p = \omega/k = c(\omega)$, $v_g = c_0/(n + \omega\,dn/d\omega)$ | Phase and group velocities |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

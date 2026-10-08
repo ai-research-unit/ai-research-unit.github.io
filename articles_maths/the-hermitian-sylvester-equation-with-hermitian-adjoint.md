@@ -13,7 +13,7 @@ for an unknown $X$ in the algebra, with $a$ and a right-hand side $C$ given. It 
 
 The two structural facts are the adjunction $L_a^{*} = L_{a^{\dagger}}$, which is the abstract reason the Hermitian theory is consistent, and the preservation of the Hermitian part, $C^{*} = C\Rightarrow X^{*} = X$ when $L_a$ is invertible, which is the reason the equation is the one that occurs in the Cartan decomposition and in the theory of the Hermitian cone. The equation is treated here as an equation **on the Clifford algebra with the dagger**, so that its solution operator, its kernel, its positivity and its Hermitian solutions all carry the involution.
 
-The two-sided operators and their adjoints are *Two-Sided Operators on a Clifford Algebra*; the Hermitian sandwich is *The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint*; the self-adjoint and skew operators are *Self-Adjoint and Skew Operators with Hermitian Adjoint*; the spectra and the spectral theorem are *The Spectra of Self-Adjoint Operators with Hermitian Adjoint*; the trace and blade forms are *The Blade Form and the Hilbert Structure with Hermitian Adjoint*; the positivity and the cone are *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint*; the congruence classification of the classical Sylvester law is *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and the classical Sylvester equation of linear algebra is the ordinary-matrix case of the construction here.
+The two-sided operators and their adjoints are *Two-Sided Operators on a Clifford Algebra*; the Hermitian sandwich is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; the self-adjoint and skew operators are *Self-Adjoint and Skew Operators with Hermitian Adjoint*; the spectra and the spectral theorem are *The Spectra of Self-Adjoint Operators with Hermitian Adjoint*; the trace and blade forms are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*; the positivity and the cone are *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*; the congruence classification of the classical Sylvester law is *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and the classical Sylvester equation of linear algebra is the ordinary-matrix case of the construction here.
 
 ## The Solution Operator
 
@@ -33,7 +33,7 @@ $$
 L_a^{*} = L_{a^{\dagger}} , \qquad \text{that is} \qquad \bigl(a^{\dagger}X + Xa\bigr)^{*} = aX + Xa^{\dagger}.
 $$
 
-**Proof.** For the Hermitian–Schmidt form $\langle X,Y\rangle = \mathrm{Sc}(X^{\dagger}Y)$ of *The Blade Form and the Hilbert Structure with Hermitian Adjoint*, use $L_b^{*} = L_{b^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$ of *Two-Sided Operators on a Clifford Algebra*: $L_a^{*} = (L_{a^{\dagger}} + R_a)^{*} = L_{(a^{\dagger})^{\dagger}} + R_{a^{\dagger}} = L_a + R_{a^{\dagger}} = L_{a^{\dagger}}$. This was checked on the regular module of $\mathrm{Cl}_{0,3}(\mathbb{R})$ against the Frobenius form: $L_a^{*} = L_{a^{\dagger}}$ for every tested $a$.
+**Proof.** For the Hermitian–Schmidt form $\langle X,Y\rangle = \mathrm{Sc}(X^{\dagger}Y)$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, use $L_b^{*} = L_{b^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$ of *Two-Sided Operators on a Clifford Algebra*: $L_a^{*} = (L_{a^{\dagger}} + R_a)^{*} = L_{(a^{\dagger})^{\dagger}} + R_{a^{\dagger}} = L_a + R_{a^{\dagger}} = L_{a^{\dagger}}$. This was checked on the regular module of $\mathrm{Cl}_{0,3}(\mathbb{R})$ against the Frobenius form: $L_a^{*} = L_{a^{\dagger}}$ for every tested $a$.
 
 **Corollary (self-adjoint and skew-adjoint coefficients).** The Sylvester operator $L_a$ is self-adjoint iff $a$ is self-adjoint, $a^{\dagger} = a$, and skew-adjoint iff $a$ is skew-adjoint, $a^{\dagger} = -a$; in the skew case $L_a(X) = a^{\dagger}X + Xa = -aX + Xa = [X,a]$, the inner derivation by $a$, and its kernel is the centraliser of $a$ in the algebra. The two cases were checked: $L_a$ self-adjoint for a self-adjoint $a$ and skew-adjoint for a skew $a$, so the adjoint theory of the equation is exactly the adjoint theory of the coefficient.
 
@@ -63,7 +63,7 @@ So a Hermitian right-hand side has a Hermitian solution, and the solution operat
 
 ### Positivity
 
-**Theorem (the positive case).** Let $a$ be self-adjoint and suppose the algebra has a positive dagger, as in the definite case of *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint*. Then
+**Theorem (the positive case).** Let $a$ be self-adjoint and suppose the algebra has a positive dagger, as in the definite case of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*. Then
 
 $$
 \langle L_a(X), X\rangle = \mathrm{Sc}\bigl((aX + Xa)^{\dagger}X\bigr) = 2\,\mathrm{Sc}(X^{\dagger}aX)
@@ -71,11 +71,11 @@ $$
 
 for $X$ self-adjoint, and $L_a$ is positive definite iff $a$ lies in the interior of the Hermitian cone. The Sylvester equation with a positive coefficient is the linearised form of the exponential of the cone, and its solvability for every Hermitian $C$ is the statement that the cone is open in its linear span.
 
-**Proof.** $(aX+Xa)^{\dagger}X = X^{\dagger}aX + aX^{\dagger}X$, and for $X$ self-adjoint the two terms are equal, giving $2X^{\dagger}aX$; its scalar part is positive for all $X\neq0$ exactly when $a$ is in the interior of the cone, by the definition of the cone in *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint*.
+**Proof.** $(aX+Xa)^{\dagger}X = X^{\dagger}aX + aX^{\dagger}X$, and for $X$ self-adjoint the two terms are equal, giving $2X^{\dagger}aX$; its scalar part is positive for all $X\neq0$ exactly when $a$ is in the interior of the cone, by the definition of the cone in *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*.
 
 ## The Differential Interpretation
 
-**Proposition (the differential of the sandwich).** Let $\Phi(x) = x\,T\,x^{\dagger}$ be the Hermitian sandwich of *The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint* with a fixed $T$, and let $x = x_0 + t\,h$ be a first-order variation. Then
+**Proposition (the differential of the sandwich).** Let $\Phi(x) = x\,T\,x^{\dagger}$ be the Hermitian sandwich of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* with a fixed $T$, and let $x = x_0 + t\,h$ be a first-order variation. Then
 
 $$
 \Phi(x_0 + th) = \Phi(x_0) + t\,\bigl(h\,T\,x_0^{\dagger} + x_0\,T\,h^{\dagger}\bigr) + O(t^{2}) ,

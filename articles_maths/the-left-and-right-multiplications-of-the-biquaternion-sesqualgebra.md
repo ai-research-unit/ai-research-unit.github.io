@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Every element of the sesqualgebra $(\mathbb{B},\star)$ of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* gives two operators on the underlying space, the **left multiplication** $L_{\tilde A}(\tilde X)=\tilde A\star\tilde X$ and the **right multiplication** $R_{\tilde A}(\tilde X)=\tilde X\star\tilde A$. The multiplication is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, so on the coordinates
+Every element of the sesqualgebra $(\mathbb{B},\star)$ of *Introduction to the General Plain Sesqualgebra of Biquaternions* gives two operators on the underlying space, the **left multiplication** $L_{\tilde A}(\tilde X)=\tilde A\star\tilde X$ and the **right multiplication** $R_{\tilde A}(\tilde X)=\tilde X\star\tilde A$. The multiplication is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, so on the coordinates
 
 $$
 L_{\tilde A}(\tilde X)=\tilde A\tilde X^{*}, \qquad R_{\tilde A}(\tilde X)=\tilde X\tilde A^{*} .
@@ -15,7 +15,7 @@ The consequence is an asymmetry between the two families. The left multiplicatio
 
 The subject is the operator theory of the biquaternion sesqualgebra, read from the general article *The Left and Right Multiplication Operators of a Sesqualgebra*, whose parity theorem, regular maps and obstruction to a linear representation are quoted. The ternary operator forms are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*; the two-sided operator produced by the left compositions is *The Sesquilinear Sandwich on the Biquaternions*; and the comparison with the bilinear readings is *Comparison Between the Four Biquaternion Products*.
 
-The setting is that of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are written $\tilde Q=Q_0e_0+\mathbf Q$, and the two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, where the ordinary product $\tilde P\tilde Q$ makes $\mathbb{M}_+$ a Jordan algebra, by *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are written $\tilde Q=Q_0e_0+\mathbf Q$, and the two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, where the ordinary product $\tilde P\tilde Q$ makes $\mathbb{M}_+$ a Jordan algebra, by *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Two Operators
 
@@ -57,7 +57,7 @@ $$
 L_{e_\mu}(\tilde X)=e_\mu\tilde X^{*}, \qquad R_{e_\mu}(\tilde X)=\tilde X e_\mu^{*}, \qquad e_\mu^{*}=\varepsilon_\mu e_\mu .
 $$
 
-**Proof.** Substituting $\tilde A=e_\mu$ in the definition and using $e_\mu^{*}=\varepsilon_\mu e_\mu$ from the multiplication table of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* gives the two displays. $\square$
+**Proof.** Substituting $\tilde A=e_\mu$ in the definition and using $e_\mu^{*}=\varepsilon_\mu e_\mu$ from the multiplication table of *Introduction to the General Plain Sesqualgebra of Biquaternions* gives the two displays. $\square$
 
 ### The Parameter Maps
 
@@ -81,7 +81,7 @@ $$
 
 the involution and the identity.
 
-**Proof.** $L_{e_0}(\tilde X)=e_0\star\tilde X=\tilde X^{*}$, and $R_{e_0}(\tilde X)=\tilde X\star e_0=\tilde X$ by the right unit of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, §*The Right Unit*. $\square$
+**Proof.** $L_{e_0}(\tilde X)=e_0\star\tilde X=\tilde X^{*}$, and $R_{e_0}(\tilde X)=\tilde X\star e_0=\tilde X$ by the right unit of *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*The Right Unit*. $\square$
 
 **Remark.** The unit therefore gives the two extreme operators: the involution on the left side and the identity on the right. The identity of the composition is a right multiplication and not a left one, which is the operator form of the one-sided unit and the first hint that the two families are not symmetric.
 
@@ -159,7 +159,7 @@ They are the two halves of the regular representation of *The Left and Right Mul
 
 **Proposition (the multiplicativity).** The map $\lambda$ is $\mathbb{C}$-linear and satisfies $\lambda(\tilde A\star\tilde B)=\lambda(\tilde A)\lambda(\tilde B)$ for all $\tilde A,\tilde B$ if and only if the multiplication is associative; the map $\rho$ is conjugate-linear and satisfies $\rho(\tilde A\star\tilde B)=\rho(\tilde B)\rho(\tilde A)$ for all $\tilde A,\tilde B$ if and only if the multiplication is associative. Neither is multiplicative here.
 
-**Proof.** $\lambda(\tilde A\star\tilde B)(\tilde X)=(\tilde A\star\tilde B)\star\tilde X$ and $\lambda(\tilde A)\lambda(\tilde B)(\tilde X)=\tilde A\star(\tilde B\star\tilde X)$, which agree for every $\tilde X$ exactly when the product is associative; the computation for $\rho$ is the same with the two factors reversed. The product of $\mathbb{B}$ is not associative, by *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, §*Neither Associative Nor Commutative*. $\square$
+**Proof.** $\lambda(\tilde A\star\tilde B)(\tilde X)=(\tilde A\star\tilde B)\star\tilde X$ and $\lambda(\tilde A)\lambda(\tilde B)(\tilde X)=\tilde A\star(\tilde B\star\tilde X)$, which agree for every $\tilde X$ exactly when the product is associative; the computation for $\rho$ is the same with the two factors reversed. The product of $\mathbb{B}$ is not associative, by *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*Neither Associative Nor Commutative*. $\square$
 
 **Remark.** The right regular map is nevertheless close to multiplicative, by §*The Right Family Closes*: $\rho(\tilde A\tilde B)=\rho(\tilde A)\rho(\tilde B)$ with the plain product as the parameter, but the multiplication of the sesqualgebra is $\tilde A\star\tilde B=\tilde A\tilde B^{*}$ and not $\tilde A\tilde B$, so the law reads $\rho(\tilde A\star\tilde B)=\rho(\tilde B)\rho(\tilde A)$ and its failure is the conjugate in the parameter of the right family.
 
@@ -181,7 +181,7 @@ The two bilinear multiplications $\tilde P\tilde Q$ and $\tilde P^{\natural}\til
 | $\tilde P^{\natural}\tilde Q$ | $L_{\tilde A}(\tilde X)=\tilde A^{\natural}\tilde X$ | $L_{\tilde B\tilde A}$ | $R_{\tilde A}(\tilde X)=\tilde X^{\natural}\tilde A$ | not a right multiplication |
 | $\tilde P\tilde Q^{*}$ (this article) | $L_{\tilde A}(\tilde X)=\tilde A\tilde X^{*}$ | $T_{\tilde A,\tilde B^{*}}$ | $R_{\tilde A}(\tilde X)=\tilde X\tilde A^{*}$ | $R_{\tilde A\tilde B}$ |
 
-**Remark.** The table is read with *Comparison Between the Four Biquaternion Products*: for the two bilinear products the left family is closed, in the ordinary order for $\tilde P\tilde Q$ and in the reversed order $L_{\tilde A}L_{\tilde B}=L_{\tilde B\tilde A}$ for $\tilde P^{\natural}\tilde Q$ by the anti-multiplicativity of ${}^{\natural}$, and the ordinary right family is closed as well, $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$. The right family of the ${}^{\natural}$-product, $R_{\tilde A}(\tilde X)=\tilde X^{\natural}\tilde A$, does not close: its composite is $\tilde X\mapsto\bigl(\tilde X^{\natural}\tilde B\bigr)^{\natural}\tilde A=\tilde B^{\natural}\tilde X\tilde A$, which is not a right multiplication. For the sesquilinear product the left family is open onto the two-sided multiplications while the right family closes, and the closing of the right family is a property of the derived operation and not of a general product. The fourth product, whose first slot carries ${}^{\natural}$, has the same operator shapes as the third in the first column but is not the derived operation, by *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*.
+**Remark.** The table is read with *Comparison Between the Four Biquaternion Products*: for the two bilinear products the left family is closed, in the ordinary order for $\tilde P\tilde Q$ and in the reversed order $L_{\tilde A}L_{\tilde B}=L_{\tilde B\tilde A}$ for $\tilde P^{\natural}\tilde Q$ by the anti-multiplicativity of ${}^{\natural}$, and the ordinary right family is closed as well, $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$. The right family of the ${}^{\natural}$-product, $R_{\tilde A}(\tilde X)=\tilde X^{\natural}\tilde A$, does not close: its composite is $\tilde X\mapsto\bigl(\tilde X^{\natural}\tilde B\bigr)^{\natural}\tilde A=\tilde B^{\natural}\tilde X\tilde A$, which is not a right multiplication. For the sesquilinear product the left family is open onto the two-sided multiplications while the right family closes, and the closing of the right family is a property of the derived operation and not of a general product. The fourth product, whose first slot carries ${}^{\natural}$, has the same operator shapes as the third in the first column but is not the derived operation, by *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*.
 
 ## The Action on the Two Halves
 

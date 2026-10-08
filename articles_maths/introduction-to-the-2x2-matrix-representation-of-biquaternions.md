@@ -35,7 +35,7 @@ Q_0-iQ_3 & -iQ_1-Q_2\\
 \end{pmatrix}.
 $$
 
-**Remark (the choice, stated).** The assignment above is the corpus's choice, held fixed so that the realization agrees with *The Clifford Structure of the Biquaternion Algebra*. It is convenient because the three images of $e_1,e_2,e_3$ are $-i$ times the Pauli matrices, mentioned once as a shorthand and nothing more: every proposition is a statement about $\mathbb{B}$ and about $M_2(\mathbb{C})$. The choice is not canonical; a different isomorphism differs from this one by conjugation by an invertible matrix, and the invariants below are unchanged.
+**Remark (the choice, stated).** The assignment above is the corpus's choice, held fixed so that the realization agrees with *The Clifford Algebra Representation*. It is convenient because the three images of $e_1,e_2,e_3$ are $-i$ times the Pauli matrices, mentioned once as a shorthand and nothing more: every proposition is a statement about $\mathbb{B}$ and about $M_2(\mathbb{C})$. The choice is not canonical; a different isomorphism differs from this one by conjugation by an invertible matrix, and the invariants below are unchanged.
 
 **Remark.** The four coefficients and the four matrix entries carry the same data, but the passage between them is not a rearrangement: each entry is a fixed linear combination of two coefficients, with coefficients among $1,-1,i,-i$; the entry $\Phi(\tilde Q)_{12}=-iQ_1-Q_2$ involves two components at once.
 

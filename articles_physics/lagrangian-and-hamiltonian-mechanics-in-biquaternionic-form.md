@@ -493,7 +493,7 @@ The formulation is a transcription, exact for configurations that fit in a real 
 | $\tilde L=\tilde q\tilde p$ | Angular momentum (vector part $\mathbf q\times\mathbf p$) |
 | $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R)=e_0$ | Rotation rotor |
 | $\mathrm{Tr}(e_0)=2$ | Trace normalization |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

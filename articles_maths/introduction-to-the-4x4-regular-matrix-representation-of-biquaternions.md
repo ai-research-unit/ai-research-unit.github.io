@@ -189,4 +189,4 @@ The left regular representation $\rho_L$ sends $\tilde Q$ to the matrix of left 
 
 - *Biquaternion 4×4 Regular Matrix Element Representation* (`articles_maths/biquaternion-4x4-regular-matrix-element-representation.md`), for the right multiplication, the transposition relation, the module structure and reducibility, the double centralizer, the real form and the second realization
 - *Introduction to the 2×2 Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.md`), for the companion realization, its trace $2Q_0$ and its determinant
-- *The Six Subspaces and the Structure* (`articles_maths/the-six-subspaces-and-the-structure.md`), for the two minimal left ideals and the Peirce basis used in the block form of the regular matrix
+- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the two minimal left ideals and the Peirce basis used in the block form of the regular matrix

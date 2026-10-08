@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article collects the topology of the dual-number algebra $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ as a space: its contractibility, the Euclidean unit sphere, the norm-one set, the group of units and its homotopy, the maximal ideal as a closed nilpotent direction, and the boundary of the group of units. It uses the algebra and its submodules of *Dual-Numbers Algebra* and *Dual-Number Subspaces*, the norm and unit criterion of *Dual-Numbers Norm and Invertibility*, the maximal ideal of *Dual-Numbers Ideals and the Maximal Ideal*, the zero-divisor set of *Dual-Numbers Zero Divisors*, and the boundary of the unit group. The structural model is *Biquaternion Topology*, which studies the Euclidean sphere and the null cone of $\mathbb{B}$.
+This article collects the topology of the dual-number algebra $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ as a space: its contractibility, the Euclidean unit sphere, the norm-one set, the group of units and its homotopy, the maximal ideal as a closed nilpotent direction, and the boundary of the group of units. It uses the algebra and its submodules of *Dual-Numbers Algebra* and *Dual-Number Subspaces*, the norm and unit criterion of *Dual-Numbers Norm and Invertibility*, the maximal ideal of *Dual-Numbers Ideals and the Maximal Ideal*, the zero-divisor set of *Dual-Numbers Zero Divisors*, and the boundary of the unit group. The structural model is *The Topology of the Zero-Divisor Cone*, which studies the Euclidean sphere and the null cone of $\mathbb{B}$.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{D}'$ over $\mathbb{R}$, a general dual number is
 

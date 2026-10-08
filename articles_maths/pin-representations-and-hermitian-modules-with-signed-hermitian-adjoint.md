@@ -10,7 +10,7 @@ $$
 (x\cdot s,t)=(s,x^{\dagger}\cdot t),\qquad x\in\mathrm{Cl}(V,q),\ s,t\in S,
 $$
 
-the module theory of *Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint*. The definition of the pin representation does not change,
+the module theory of *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*. The definition of the pin representation does not change,
 
 $$
 \rho:\mathrm{Pin}(V,q)\longrightarrow GL(S),\qquad \rho(x)s=x\cdot s ,
@@ -30,9 +30,9 @@ $$
 \rho\bigl(\Theta^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*},
 $$
 
-with $\varepsilon_x=(-1)^{k}$ the parity sign of $x$. The signed Hermitian sandwich of *Two-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint* is therefore the two-sided operator whose action on $V$ matches the module conjugation **up to the parity sign**, exactly as in the inverse formulation, and the odd part of the pin group is again the part that the unsigned operator cannot describe.
+with $\varepsilon_x=(-1)^{k}$ the parity sign of $x$. The signed Hermitian sandwich of *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* is therefore the two-sided operator whose action on $V$ matches the module conjugation **up to the parity sign**, exactly as in the inverse formulation, and the odd part of the pin group is again the part that the unsigned operator cannot describe.
 
-The Clifford algebra, its parity grading and the grade involution are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the general theory of modules, of the simple and semisimple modules and of the density theorem is *Modules over an Algebra* and *Simple and Semisimple Modules*; the Clifford modules, the explicit spinor module, chirality and the eightfold table are *Spin Representations and Clifford Modules with Inner Conjugation*; the Hermitian structure on a module and the self-adjointness axiom are *Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint*; the adjoint of the one-sided action is *The Adjoint of the One-Sided Action with Hermitian Adjoint* and *One-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint*; the groups and the norm are *The Pin and Spin Groups with Signed Hermitian Adjoint*; the two-sided operator is *Two-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint*; the ideal description is *Spinors as Minimal Left Ideals with Signed Hermitian Adjoint*. Nothing owned by those entries is re-derived. The base is a commutative ring $A$ with involution $\sigma$, $F$ the field of scalars of characteristic not two, $q$ non-degenerate of dimension $n$ on $V$, and $\mathrm{Cl}_{p,q}$ for the real forms.
+The Clifford algebra, its parity grading and the grade involution are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the general theory of modules, of the simple and semisimple modules and of the density theorem is *Modules over an Algebra* and *Simple and Semisimple Modules*; the Clifford modules, the explicit spinor module, chirality and the eightfold table are *Spin Representations and Clifford Modules with Inner Conjugation*; the Hermitian structure on a module and the self-adjointness axiom are *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*; the adjoint of the one-sided action is *The Adjoint of the One-Sided Action with Hermitian Adjoint* and *One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the groups and the norm are *The Pin and Spin Groups with Signed Hermitian Adjoint*; the two-sided operator is *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the ideal description is *Spinors as Minimal Left Ideals with Signed Hermitian Adjoint*. Nothing owned by those entries is re-derived. The base is a commutative ring $A$ with involution $\sigma$, $F$ the field of scalars of characteristic not two, $q$ non-degenerate of dimension $n$ on $V$, and $\mathrm{Cl}_{p,q}$ for the real forms.
 
 ## The Pin Representation
 
@@ -82,7 +82,7 @@ $$
 
 ## The Parity of the Odd Part
 
-**Proposition (chirality).** Suppose $n$ is even and $S=\Delta_+\oplus\Delta_-$ is the chiral decomposition, on which $\mathrm{Cl}^0$ acts preserving the summands and $\mathrm{Cl}^1$ acts interchanging them. Then every element of $\mathrm{Spin}(V,q)$ preserves $\Delta_\pm$ and every odd element of $\mathrm{Pin}(V,q)$ interchanges them. The two chiral summands are orthogonal for the Hermitian form, because the form pairs only elements of the same parity in the sense of $\mathrm{Cl}^0$, as recorded in *The Blade Form and the Hilbert Structure with Hermitian Adjoint*.
+**Proposition (chirality).** Suppose $n$ is even and $S=\Delta_+\oplus\Delta_-$ is the chiral decomposition, on which $\mathrm{Cl}^0$ acts preserving the summands and $\mathrm{Cl}^1$ acts interchanging them. Then every element of $\mathrm{Spin}(V,q)$ preserves $\Delta_\pm$ and every odd element of $\mathrm{Pin}(V,q)$ interchanges them. The two chiral summands are orthogonal for the Hermitian form, because the form pairs only elements of the same parity in the sense of $\mathrm{Cl}^0$, as recorded in *The Blade Form and the Hermitian Structure with Hermitian Adjoint*.
 
 *Proof.* $\mathrm{Cl}^{i}\cdot S^{j}\subseteq S^{i+j}$, the exponent read modulo two; the orthogonality is the even-ness of the form.
 
@@ -128,7 +128,7 @@ and on the unitary slice, $q(u)=-1$, this is $\rho(u)\rho(v)\rho(u)^{-1}=\rho(\r
 
 *Proof.* The restriction statement is the definition; the parity statement is the chirality proposition; faithfulness is the kernel theorem with the classification of the real Clifford algebras.
 
-**Remark (the definite case).** For a definite real form the standard module form of *Hilbert Algebras* makes each Clifford coefficient skew-adjoint, $(e_j\cdot s,t)=-(s,e_j\cdot t)$, so an even element of $\mathrm{Pin}$ acts by an orthogonal operator and an odd element by the composition of an odd number of skew operators, with $\rho(u)^{2}=q(u)\mathrm{id}_S$ of the sign of $q(u)$. In the negative definite convention of the corpus, $q(u)=-1$ on the slice, and the slice elements — the normalised roots of the reflection-group article among them — act unitarily, and their products span the compact groups. The compact real form is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*.
+**Remark (the definite case).** For a definite real form the standard module form of *Hermitian Algebras* makes each Clifford coefficient skew-adjoint, $(e_j\cdot s,t)=-(s,e_j\cdot t)$, so an even element of $\mathrm{Pin}$ acts by an orthogonal operator and an odd element by the composition of an odd number of skew operators, with $\rho(u)^{2}=q(u)\mathrm{id}_S$ of the sign of $q(u)$. In the negative definite convention of the corpus, $q(u)=-1$ on the slice, and the slice elements — the normalised roots of the reflection-group article among them — act unitarily, and their products span the compact groups. The compact real form is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*.
 
 **Remark (the dictionary with the inverse formulation).** Whenever $\sigma=\mathrm{id}$ and the elements considered lie on the slice, the two formulations give the same representation: $\Theta^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$, and the intertwining identities above are those of *Pin Representations and Clifford Modules with Signed Inner Conjugation*. The Hermitian reading adds the adjoint $\rho(x)^{*}=\rho(x^{\dagger})$, the unitarity on the slice, and the coupling of the module form to the algebra form; it adds no new representation.
 

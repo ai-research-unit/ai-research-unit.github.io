@@ -50,7 +50,7 @@ This is the form whose vanishing defines the light cone in $\mathbb{M}_+$; the n
 
 ### The Forms on $\mathbb{M}_+$
 
-The algebra carries four forms, the scalar parts of the four products of *The Four Biquaternion Complex Products*; on $\mathbb{M}_+$ they pair off and coincide, so two remain. They are the **Hermitian form**, which here equals the **complex bilinear form**, and the **bilinear form** $B$ (the quaternion bilinear form), which here equals the **quaternion sesquilinear form** $K$ because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a separate bilinear form but the *quadratic* form of $B$.
+The algebra carries four forms, the scalar parts of the four products of *The Four Biquaternion Complex Products*; on $\mathbb{M}_+$ they pair off and coincide, so two remain. They are the **Hermitian form**, which here equals the **general plain bilinear form**, and the **bilinear form** $B$ (the general quaternionic bilinear form), which here equals the **general quaternionic sesquilinear form** $K$ because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a separate bilinear form but the *quadratic* form of $B$.
 
 **The trace pairing.** The trace defines a symmetric bilinear form on $\mathbb{M}_+\times\mathbb{M}_+$:
 
@@ -655,8 +655,8 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, $\tilde{\Lambda}$ invertible | Conjugation; quantum if $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_0$ (group $U(2)$), Lorentz if $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ (group $SL(2,\mathbb{C})$) |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\mathbf{r}|^2)$ | Purity |
 | $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(|\mathbf{r}|^2-1)e_0$ | Deviation from idempotency |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

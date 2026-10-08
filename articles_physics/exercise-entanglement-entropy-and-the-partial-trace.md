@@ -406,8 +406,8 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 | $S(\tilde{\rho})=-\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho})$ | von Neumann entropy |
 | $S(\tilde{\rho})=-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ | Equivalent form (interior of the Bloch ball) |
 | $\log$ | Natural logarithm (principal branch) |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

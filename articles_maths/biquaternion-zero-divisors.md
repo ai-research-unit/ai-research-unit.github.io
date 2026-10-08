@@ -174,9 +174,9 @@ $$
 r\,(\hat{u} + i\hat{v}), \qquad \hat{u}\cdot\hat{v} = 0, \qquad |\hat{u}| = |\hat{v}| = 1, \qquad r > 0 .
 $$
 
-The parameters are a positive radius, a direction on the unit sphere, and a perpendicular direction on its unit circle — one, two and one real parameters. The pure zero divisors therefore form a real cone of dimension $4$, agreeing with the dimension recorded for the pure family below.
+The parameters are a positive radius, a real unit direction, and a perpendicular real unit direction — one, two and one real parameters. The pure zero divisors therefore form a real cone of dimension $4$, agreeing with the dimension recorded for the pure family below.
 
-**Remark (the sign of the square).** The same formula shows that when the two parts are perpendicular the square is the real scalar $|\boldsymbol{\rho}'|^2 - |\boldsymbol{\rho}|^2$: positive, zero, or negative according as $|\boldsymbol{\rho}'|$ is greater than, equal to, or less than $|\boldsymbol{\rho}|$. A real vector has $v^2 = -|v|^2 < 0$ without exception, so it is only a bivector that allows a nonzero square of positive sign; this is what the geometric reading of the theory at its origin turns on (*A Brief History of Biquaternions in Physics*).
+**Remark (the sign of the square).** The same formula shows that when the two parts are perpendicular the square is the real scalar $|\boldsymbol{\rho}'|^2 - |\boldsymbol{\rho}|^2$: positive, zero, or negative according as $|\boldsymbol{\rho}'|$ is greater than, equal to, or less than $|\boldsymbol{\rho}|$. A real vector has $v^2 = -|v|^2 < 0$ without exception, so it is only a bivector that allows a nonzero square of positive sign; this is what the reading of the theory at its origin turns on (*A Brief History of Biquaternions in Physics*).
 
 ## Non-Pure Zero Divisors
 

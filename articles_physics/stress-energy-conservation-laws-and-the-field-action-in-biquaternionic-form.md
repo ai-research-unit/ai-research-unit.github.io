@@ -16,13 +16,13 @@ $$
 \partial_\mu T^{\mu\nu} = 0
 $$
 
-is the on-shell statement of that invariance. The biquaternion framework adds nothing to this logic, but it gives the objects a definite home and makes two constructions explicit: the stress–energy of a biquaternion-valued field is built from the algebra's bilinear form, and the electromagnetic stress–energy is a **biquaternion bilinear** in the field-strength biquaternion, with the basis elements of $\mathbb{M}_-$ supplying the two vector directions of the two indices.
+is the on-shell statement of that invariance. The biquaternion framework adds nothing to this logic, but it gives the objects a definite home and makes two constructions explicit: the stress–energy of a biquaternion-valued field is built from the algebra's bilinear form, and the electromagnetic stress–energy is a **bigeneral quaternionic bilinear** in the field-strength biquaternion, with the basis elements of $\mathbb{M}_-$ supplying the two vector directions of the two indices.
 
 Three threads are developed.
 
 - **The field action.** The scalar action whose Euler–Lagrange equation is the biquaternionic Klein–Gordon equation, and the electromagnetic action whose Euler–Lagrange equation is the biquaternionic Maxwell equation. Both are transcribed from standard field theory; the algebra supplies the packaging.
 - **The Noether construction.** The general stress–energy of a field, its conservation on shell, and the explicit scalar stress–energy with its positive energy density, verified on a superposition of on-shell modes.
-- **The electromagnetic tensor as a biquaternion bilinear.** The construction $T^\mu{}_\nu = \tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, its component table, its symmetry, its tracelessness, and its conservation, including the source term that couples it to matter.
+- **The electromagnetic tensor as a bigeneral quaternionic bilinear.** The construction $T^\mu{}_\nu = \tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, its component table, its symmetry, its tracelessness, and its conservation, including the source term that couples it to matter.
 
 **Boundaries.** This article is classical and non-quantum: it concerns the classical field action, its Noether currents, and the classical conservation laws. The quantisation of these fields, the associated Hilbert-space structures and the generating functionals belong to the sibling categories and to the companion article *Canonical Quantization of the Biquaternion Maxwell Field*, and they are not developed here. The informational reading of any of these quantities is likewise outside the scope; the stress–energy tensor constructed here is an element of the field's tensor algebra, and its bilinear form takes values in the Hermitian sector $\mathbb{M}_+$ only in the sense that the contraction $\tfrac12\tilde{F}\tilde{F}^{*}$ is Hermitian, which is recorded in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The multipole and spin-direction effects are treated elsewhere in the category.
 
@@ -136,7 +136,7 @@ $$
 
 The ten conserved quantities are the four components of energy–momentum (from $\nu=0$) and the six components of angular momentum (from the spatial part, after improvement to a symmetric tensor). The biquaternion framework's contribution is not to this derivation but to the interpretation of the result: for a field whose values lie in $\mathbb{B}$, the sum over components makes $T^\mu{}_\nu$ the bilinear of the field with its conjugate, and for the electromagnetic field the bilinear has a closed algebraic form.
 
-**Symmetry and improvement.** The canonical tensor need not be symmetric or gauge invariant; the physical stress–energy is obtained by adding a divergence of an antisymmetric tensor, which does not change the conserved charges. For the electromagnetic field the improved tensor is symmetric and gauge invariant, and it is the one constructed in the next sections. For a single real scalar the canonical tensor is already symmetric. The improvement is standard and is recorded here because the biquaternion bilinear automatically gives the improved form.
+**Symmetry and improvement.** The canonical tensor need not be symmetric or gauge invariant; the physical stress–energy is obtained by adding a divergence of an antisymmetric tensor, which does not change the conserved charges. For the electromagnetic field the improved tensor is symmetric and gauge invariant, and it is the one constructed in the next sections. For a single real scalar the canonical tensor is already symmetric. The improvement is standard and is recorded here because the bigeneral quaternionic bilinear automatically gives the improved form.
 
 **Overall sign.** The canonical tensor is defined up to an overall sign by the sign of the Lagrangian, and this article follows the convention of the companion exercise: the tensor is taken with the sign that makes the physical energy density positive, $T^{00}>0$, which for the electromagnetic field means $T^0{}_0=-T^{00}=-W$. Since an overall constant does not affect $\partial_\mu T^{\mu\nu}=0$, the conservation law is unaltered.
 
@@ -192,7 +192,7 @@ $$
 
 with $\omega_i^2 = \mathbf{k}_i^2+\mu^2$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\partial^\mu T_{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $t=0.7$, $\mathbf{x}=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four $\nu$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T^{00}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.
 
-## The Electromagnetic Stress–Energy as a Biquaternion Bilinear
+## The Electromagnetic Stress–Energy as a Bigeneral quaternionic Bilinear
 
 For the electromagnetic field the improved stress–energy tensor has a closed algebraic form in the biquaternion algebra. With the material basis $\mathcal{E}_\mu\in\{ie_0,e_1,e_2,e_3\}$,
 
@@ -304,7 +304,7 @@ for the Hermitian form $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}$, which the com
 
 ## What the Algebra Supplies and What Is Transcribed
 
-**Supplied by the algebra.** The biquaternion bilinear form of the electromagnetic stress–energy, $T^\mu{}_\nu=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, with the basis elements of $\mathbb{M}_-$ supplying the two index directions; the identification of the free-field Lagrangian with the biquaternion norm of the field strength, $\tfrac14F_{\mu\nu}F^{\mu\nu}\propto\mathrm{Re}\,N(\tilde{F})$, so that the action is built from the same biquaternion norm that defines the cone; the packaging of the scalar action, whose equation is the biquaternionic Klein–Gordon equation because $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar; and the interchange law of the divergence, field action and conserved current that lets the divergence of the field tensor be read as the source term of the matter.
+**Supplied by the algebra.** The bigeneral quaternionic bilinear form of the electromagnetic stress–energy, $T^\mu{}_\nu=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, with the basis elements of $\mathbb{M}_-$ supplying the two index directions; the identification of the free-field Lagrangian with the biquaternion norm of the field strength, $\tfrac14F_{\mu\nu}F^{\mu\nu}\propto\mathrm{Re}\,N(\tilde{F})$, so that the action is built from the same biquaternion norm that defines the cone; the packaging of the scalar action, whose equation is the biquaternionic Klein–Gordon equation because $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar; and the interchange law of the divergence, field action and conserved current that lets the divergence of the field tensor be read as the source term of the matter.
 
 **Standard field theory transcribed.** The Euler–Lagrange equations, Noether's theorem, the canonical stress–energy tensor, its improvement to a symmetric gauge-invariant form, the positivity of the scalar energy, the Poynting theorem and the Lorentz four-force are standard. The algebra reproduces them in its own notation; it does not add a conservation law or modify one.
 
@@ -328,7 +328,7 @@ The conventions of the construction are those of the following companion article
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation and its mass parameter.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the field strength, the source biquaternion and the biquaternion Maxwell equation.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the biquaternion norm of the field strength and the Lorentz invariants.
-- Companion article *Exercise: The Electromagnetic Energy–Momentum Tensor*, for the biquaternion bilinear form of the tensor and its component table.
+- Companion article *Exercise: The Electromagnetic Energy–Momentum Tensor*, for the bigeneral quaternionic bilinear form of the tensor and its component table.
 - Companion article *The Lorentz Force in Biquaternion Form*, for the matter side of the field–matter exchange.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the general construction of the conserved currents.
 
@@ -360,7 +360,7 @@ T_{00}=T^{00}=\frac{1}{2c^2}\dot{\phi}^2+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^
 \partial^\mu T_{\mu\nu}=0 \ \text{on shell},
 $$
 
-verified on a superposition of two on-shell modes. The electromagnetic tensor is the biquaternion bilinear
+verified on a superposition of two on-shell modes. The electromagnetic tensor is the bigeneral quaternionic bilinear
 
 $$
 T^\mu{}_\nu = \frac12\,\mathrm{Sc}\!\left(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu\right),
@@ -393,7 +393,7 @@ symmetric on raising the index, traceless in the Minkowski pairing, and conserve
 | $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\mathbf{J}$; $\tilde{\nabla}\tilde{F}=-\tilde{R}$ | Biquaternionic Maxwell system |
 | $W=\tfrac12(\epsilon\mathbf{E}^2+\mu\mathbf{H}^2)$; $\mathbf{S}=\mathbf{E}\times\mathbf{H}$ | Energy density; Poynting vector |
 | $\sigma_{jk}=\epsilon E_jE_k+\mu H_jH_k-W\delta_{jk}$ | Maxwell stress |
-| $T^\mu{}_\nu=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$ | Electromagnetic stress–energy, biquaternion bilinear |
+| $T^\mu{}_\nu=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$ | Electromagnetic stress–energy, bigeneral quaternionic bilinear |
 | $T^0{}_0=-W$, $T^0{}_j=\frac1cS_j$, $T^j{}_0=-\frac1cS_j$, $T^j{}_k=-\sigma_{jk}$ | Mixed components |
 | $T^{00}=W$, $T^{0j}=T^{j0}=\frac1cS_j$, $T^{jk}=-\sigma_{jk}$ | Contravariant (symmetric) components |
 | $\eta_{\mu\nu}T^{\mu\nu}=-T^{00}+T^{kk}=0$ | Tracelessness (Minkowski pairing) |
@@ -401,8 +401,8 @@ symmetric on raising the index, traceless in the Minkowski pairing, and conserve
 | $T_{\mu\nu}=\partial_\mu\phi\partial_\nu\phi+\eta_{\mu\nu}\mathcal{L}_\phi$ | Scalar stress–energy |
 | $T_{00}=T^{00}=\frac{1}{2c^2}\dot{\phi}^2+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2$ | Scalar energy density, positive |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

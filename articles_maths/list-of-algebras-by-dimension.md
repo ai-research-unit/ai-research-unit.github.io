@@ -68,7 +68,7 @@ The eight-dimensional real algebras of the corpus are the octonions $\mathbb{O}$
 | Split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $8$; centre $\mathbb{D}$; associative with zero divisors, $\cong \mathbb{H}\oplus\mathbb{H}$, and no nonzero nilpotents | *Split-Biquaternion Algebra* |
 | $\mathbb{O}$ and the split octonions as the two real forms | the definite and the split form; only the definite one is a division algebra | *Normed Division Algebras and the Hurwitz Theorem* |
 | Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $4$ over $\mathbb{C}$, $8$ over $\mathbb{R}$; $\cong M_2(\mathbb{C})$; associative with zero divisors | *Biquaternions as a Vector Space over $\mathbb{C}$* |
-| $\mathbb{B}$ as a Clifford algebra | $\mathbb{B} \cong \mathrm{Cl}_{3,0}$ and $\cong \mathrm{Cl}_{0,3}$ in the appropriate form | *The Clifford Structure of the Biquaternion Algebra* |
+| $\mathbb{B}$ as a Clifford algebra | $\mathbb{B} \cong \mathrm{Cl}_{3,0}$ and $\cong \mathrm{Cl}_{0,3}$ in the appropriate form | *The Clifford Algebra Representation* |
 | $\mathbb{B}$ as a complexification | the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; real dimension $8$ | *Biquaternions as a Vector Space over $\mathbb{C}$* |
 | Hurwitz' theorem | the four normed division algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{O}$, and no others | *Normed Division Algebras and the Hurwitz Theorem* |
 | Cayley–Dickson doubling | the construction producing each dimension from the last and the property lost at each step | *Normed Division Algebras and the Hurwitz Theorem* |

@@ -30,7 +30,7 @@ $$
 
 This is the **Euclidean** quadratic form in the four real variables $(x^0, x^1, x^2, x^3)$. The Lorentzian signature has been absorbed into the **complex structure** of the time coordinate.
 
-The group that preserves this form on $\mathbb{R}^4$ is the rotation group $SO(4)$. When the coordinates are complex — as they are when $x^0 = ict$ with $t$ real — the group becomes $SO(4, \mathbb{C})$, the group of complex rotations preserving the **complex bilinear form**
+The group that preserves this form on $\mathbb{R}^4$ is the rotation group $SO(4)$. When the coordinates are complex — as they are when $x^0 = ict$ with $t$ real — the group becomes $SO(4, \mathbb{C})$, the group of complex rotations preserving the **general plain bilinear form**
 
 $$
 (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2.
@@ -48,7 +48,7 @@ The statement "the Lorentz transformation is a rotation" requires care, because 
 
 **1. The rotation angle is imaginary.** A boost is a rotation by an **imaginary angle** in a plane that mixes the time direction with a spatial direction. To see this, consider the spatial rotation rotor in the plane $(x^0, x^1)$ by angle $\theta$: it is $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat{e}_{01}$, where $\hat{e}_{01}$ is the unit bivector for the $(x^0, x^1)$ plane. Substituting $\theta = i\psi$ (imaginary angle) gives $\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{e}_{01}$, which is the **boost** rotor in the $(x^0, x^1)$ plane. The boost is therefore a rotation by an imaginary angle, and the parameter $\psi$ (the rapidity) is the "imaginary angle" of the rotation.
 
-**2. The bilinear form is complex.** The quantity preserved by the rotation is the complex bilinear form $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. On the real slice, this form can be negative (timelike intervals), positive (spacelike intervals), or zero (null intervals).
+**2. The bilinear form is complex.** The quantity preserved by the rotation is the general plain bilinear form $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. On the real slice, this form can be negative (timelike intervals), positive (spacelike intervals), or zero (null intervals).
 
 **3. The Euclidean form is only apparent.** The Euclidean appearance of the metric $ds^2 = (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$ is a consequence of using the imaginary coordinate $x^0 = ict$. On the real slice, the metric is still Lorentzian, because the coordinate $x^0$ is constrained to be imaginary. The "Euclidean" character is a formal device that trades the Lorentzian signature for a complex structure.
 
@@ -408,13 +408,13 @@ The complex nature of the rotation appears in the following places:
 
 2. **The rotor has an imaginary vector part.** The boost biquaternion $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ has a purely imaginary vector part. In contrast, a spatial rotation rotor has a real vector part.
 
-3. **The bilinear form is complex.** The quantity preserved by the rotation is not the real Euclidean norm (which is positive-definite), but the **complex bilinear form** $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. On the real slice, this form can be negative, positive, or zero.
+3. **The bilinear form is complex.** The quantity preserved by the rotation is not the real Euclidean norm (which is positive-definite), but the **general plain bilinear form** $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. On the real slice, this form can be negative, positive, or zero.
 
 ### The Euclidean Form Is Only Apparent
 
 The Euclidean form $ds^2 = (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$ with $x^0 = ict$ appears to be a genuine Euclidean metric on $\mathbb{R}^4$. But it is not: the coordinate $x^0$ is constrained to be imaginary (since $t$ is real and $x^0 = ict$). So the "real slice" on which the Lorentz transformations act is not all of $\mathbb{R}^4$ but the subspace $\{(ict, x, y, z) : t, x, y, z \in \mathbb{R}\}$, which is a **complex subspace** of $\mathbb{C}^4$.
 
-The Lorentz group $SO(1,3)$ acts on this slice as the subgroup of $SO(4, \mathbb{C})$ that preserves the slice. So the statement "the Lorentz transformation is a rotation in 4-dimensional Euclidean space" is correct, but the space in question is $\mathbb{C}^4$ with a complex bilinear form, not $\mathbb{R}^4$ with a real Euclidean form.
+The Lorentz group $SO(1,3)$ acts on this slice as the subgroup of $SO(4, \mathbb{C})$ that preserves the slice. So the statement "the Lorentz transformation is a rotation in 4-dimensional Euclidean space" is correct, but the space in question is $\mathbb{C}^4$ with a general plain bilinear form, not $\mathbb{R}^4$ with a real Euclidean form.
 
 ## The Local Complex Structure
 
@@ -485,9 +485,9 @@ The transformation itself is fixed by experiment, not by the algebra: aberration
 | $\psi$ | Rapidity, $\tanh\psi = u/c$ |
 | $\hat{\mathbf{u}}$ | Unit vector in boost direction |
 | $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

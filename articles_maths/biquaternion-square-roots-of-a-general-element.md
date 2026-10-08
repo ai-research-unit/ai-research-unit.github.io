@@ -10,7 +10,7 @@ $$
 
 The method needs no Clifford algebra, no norm and no form. It is the same vector–scalar split that solves the three central cases $\tilde P^2=-1,0,+1$ in *Biquaternion Square Roots of Minus One, Zero and Plus One*, carried one step further: the split turns the equation into one vector equation and one scalar equation, and the scalar equation is a quadratic in the square $x=P_0^2$ of the scalar part of a root. The roots are then read off the solutions of that quadratic, and the answer is a finite set — generically four elements, falling to two — or a four-parameter family, or empty.
 
-The article is algebraic. The biquaternion algebra also carries a Clifford structure, treated in the topology part of the corpus in *The Clifford Structure of the Biquaternion Algebra*; that structure is not used here. The three central values of *Biquaternion Square Roots of Minus One, Zero and Plus One* are recovered as the case of a complex scalar $\tilde Q$, in §*The Three Central Values*, which checks this method against the direct computation of that article. The zero-divisor cone, of which the nonzero roots of $0$ are a part, is *Biquaternion Zero Divisors*, named here only where the classification touches it. The polar and exponential decompositions that the answer must be consistent with are *Biquaternion Polar Element Representation*.
+The article is algebraic. The biquaternion algebra also carries a Clifford structure, treated in *The Clifford Algebra Representation*; that structure is not used here. The three central values of *Biquaternion Square Roots of Minus One, Zero and Plus One* are recovered as the case of a complex scalar $\tilde Q$, in §*The Three Central Values*, which checks this method against the direct computation of that article. The zero-divisor cone, of which the nonzero roots of $0$ are a part, is *Biquaternion Zero Divisors*, named here only where the classification touches it. The polar and exponential decompositions that the answer must be consistent with are *Biquaternion Polar Element Representation*.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked.
 
@@ -160,7 +160,7 @@ Collecting the two cases, every $\tilde Q\in\mathbb{B}$ falls into exactly one o
 | $\boldsymbol{Q}\neq0$, $(\boldsymbol{Q},\boldsymbol{Q})\neq0$, $n=0$ | two |
 | $\boldsymbol{Q}\neq0$, $(\boldsymbol{Q},\boldsymbol{Q})=0$, $Q_0\neq0$ | two |
 | $\boldsymbol{Q}\neq0$, $n=0$, $Q_0=0$ | none |
-| $\boldsymbol{Q}=0$ | a continuum |
+| $\boldsymbol{Q}=0$ | a four-parameter family |
 
 The generic case is four roots. The complex square $(\boldsymbol{Q},\boldsymbol{Q})$ of the vector part decides whether a solution $x$ is lost at $x=0$; the conjugate scalar $n$ decides whether the two solutions of the reduced quadratic are distinct; and the vector part $\boldsymbol{Q}$ itself decides which of the two cases applies.
 
@@ -176,13 +176,13 @@ $$
 \tilde P = \pm\Bigl(\sqrt{x_+}\,e_0+\frac{\boldsymbol{Q}}{2\sqrt{x_+}}\Bigr), \qquad \tilde P = \pm\Bigl(\sqrt{x_-}\,e_0+\frac{\boldsymbol{Q}}{2\sqrt{x_-}}\Bigr).
 $$
 
-**A continuum.** If $\tilde Q$ is a complex scalar, $\tilde Q=Q_0e_0$, then the root set is the two elements $\pm\sqrt{Q_0}e_0$ together with the four-real-parameter family of pure $\boldsymbol{P}$ with $(\boldsymbol{P},\boldsymbol{P})=-Q_0$.
+**A complex scalar.** If $\tilde Q$ is a complex scalar, $\tilde Q=Q_0e_0$, then the root set is the two elements $\pm\sqrt{Q_0}e_0$ together with the four-real-parameter family of pure $\boldsymbol{P}$ with $(\boldsymbol{P},\boldsymbol{P})=-Q_0$.
 
 ## The Three Central Values
 
 The classification specialises to the three central values $\tilde Q=-1,0,+1$ of *Biquaternion Square Roots of Minus One, Zero and Plus One* and reproduces them; the agreement is the check that this method and the direct computation of that article are the same computation.
 
-**$\tilde Q=-e_0$ ($Q_0=-1$, $\boldsymbol{Q}=0$).** A complex scalar, so the continuum row. The scalar roots are $\pm\sqrt{-1}\,e_0=\pm ie_0$, the trivial roots of the companion article. The family is $(\boldsymbol{P},\boldsymbol{P})=1$, that is $p_1^2+p_2^2+p_3^2-p_1'^2-p_2'^2-p_3'^2=1$ and $p_1p'_1+p_2p'_2+p_3p'_3=0$, which is exactly the pure roots of $-1$: the real roots are the members with $\boldsymbol{p}'=0$, and the non-trivial roots are the members with $\boldsymbol{p}'\neq0$.
+**$\tilde Q=-e_0$ ($Q_0=-1$, $\boldsymbol{Q}=0$).** A complex scalar, so the complex-scalar case. The scalar roots are $\pm\sqrt{-1}\,e_0=\pm ie_0$, the trivial roots of the companion article. The family is $(\boldsymbol{P},\boldsymbol{P})=1$, that is $p_1^2+p_2^2+p_3^2-p_1'^2-p_2'^2-p_3'^2=1$ and $p_1p'_1+p_2p'_2+p_3p'_3=0$, which is exactly the pure roots of $-1$: the real roots are the members with $\boldsymbol{p}'=0$, and the non-trivial roots are the members with $\boldsymbol{p}'\neq0$.
 
 **$\tilde Q=0$ ($Q_0=0$, $\boldsymbol{Q}=0$).** The scalar roots are the single element $\tilde P=0$. The family is the pure null cone $(\boldsymbol{P},\boldsymbol{P})=0$, whose nonzero elements are the nilpotents of the algebra; its structure is *Biquaternion Zero Divisors*.
 
@@ -202,7 +202,7 @@ $$
 
 in agreement with the roots of $-ie_3$ computed directly, and with the source's $\sqrt{-Ik}$.
 
-**A complex scalar.** For $\tilde Q=-1+i$ (that is $-1+I$) the radicand is a complex scalar with $Q_0=-1+i$, so the row is the continuum. The isolated roots are $\pm\sqrt{-1+i}\,e_0$. Since
+**A complex scalar.** For $\tilde Q=-1+i$ (that is $-1+I$) the radicand is a complex scalar with $Q_0=-1+i$, so the row is the four-parameter one. The isolated roots are $\pm\sqrt{-1+i}\,e_0$. Since
 
 $$
 \sqrt{-1+i} = \sqrt{\tfrac{\sqrt2-1}{2}} + i\sqrt{\tfrac{\sqrt2+1}{2}},
@@ -246,7 +246,7 @@ When $\boldsymbol{Q}\neq0$, a root has $P_0\neq0$ and $\boldsymbol{P}=\boldsymbo
 
 When $\boldsymbol{Q}=0$, the radicand is a complex scalar and the roots are the two elements $\pm\sqrt{Q_0}e_0$ (one when $Q_0=0$) together with the four-real-parameter family of pure $\boldsymbol{P}$ with $(\boldsymbol{P},\boldsymbol{P})=-Q_0$.
 
-The number of roots is: **four** when $(\boldsymbol{Q},\boldsymbol{Q})\neq0$ and $n\neq0$; **two** when $(\boldsymbol{Q},\boldsymbol{Q})\neq0$ and $n=0$, or when $(\boldsymbol{Q},\boldsymbol{Q})=0$ and $Q_0\neq0$; **none** when $n=0$ and $Q_0=0$ with $\boldsymbol{Q}\neq0$; and the **four-parameter continuum** when and only when $\tilde Q$ is a complex scalar.
+The number of roots is: **four** when $(\boldsymbol{Q},\boldsymbol{Q})\neq0$ and $n\neq0$; **two** when $(\boldsymbol{Q},\boldsymbol{Q})\neq0$ and $n=0$, or when $(\boldsymbol{Q},\boldsymbol{Q})=0$ and $Q_0\neq0$; **none** when $n=0$ and $Q_0=0$ with $\boldsymbol{Q}\neq0$; and the **four-parameter family** when and only when $\tilde Q$ is a complex scalar.
 
 ## Summary of Notation
 

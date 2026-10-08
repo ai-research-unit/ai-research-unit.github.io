@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The complex sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ of *The Four Biquaternion Complex Products* is the multiplication of the sesqualgebra $(\mathbb{B},\star)$ of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, and its idempotents are the solutions of the equation $\tilde Q\star\tilde Q=\tilde Q$. This article solves that equation. The answer is exact: **an element is idempotent for the sesquilinear multiplication if and only if it is a Hermitian idempotent of the algebra**, so the idempotents of the multiplication are the trivial pair $0,e_0$ together with the continuum of the elements
+The general plain sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ of *The Four Biquaternion Complex Products* is the multiplication of the sesqualgebra $(\mathbb{B},\star)$ of *Introduction to the General Plain Sesqualgebra of Biquaternions*, and its idempotents are the solutions of the equation $\tilde Q\star\tilde Q=\tilde Q$. This article solves that equation. The answer is exact: **an element is idempotent for the sesquilinear multiplication if and only if it is a Hermitian idempotent of the algebra**, so the idempotents of the multiplication are the trivial pair $0,e_0$ together with the family of the elements
 
 $$
 \tilde\Pi_+(\hat\mu)=\tfrac12\bigl(e_0+i\hat\mu\bigr) ,
@@ -13,7 +13,7 @@ indexed by the real unit vectors $\hat\mu$ of the vector subspace. The whole of 
 
 The result is the element theory of the batch, and it is the sharpest of the three ways in which the sesquilinear multiplication separates the elements. The algebra's own idempotents, classified in *Biquaternion Idempotents and Projections*, are the elements $\tfrac12(e_0+\xi i)$ over all roots $\xi$ of $-e_0$, and the root $\xi$ may be trivial, real or mixed; apart from the trivial pair, the Hermitian ones are exactly those with a real root, and they are the projections above. The others are not idempotent for the multiplication, and the failure is computed here rather than quoted. The same separation is read in the comparison of the four products, *Comparison Between the Four Biquaternion Products*, §*The Squares, the Idempotents and the Roots*, where the four idempotent sets are tabulated and the sesquilinear column is the family of the projections.
 
-The setting is that of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* and *Sesqualgebras*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit and $e_k^{2}=-e_0$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu=Q_0e_0+\mathbf Q$ with $Q_\mu\in\mathbb{C}$; the conjugations are the natural one ${}^{\natural}$, $\tilde Q^{\natural}=Q_0-\mathbf Q$, and the star, $\tilde Q^{*}=\overline{Q_0}-\overline{\mathbf Q}$, the conjugate-linear involution of the algebra, with ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; and the multiplication is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The two halves of the involution are the distinguished subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*. The idempotents of the algebra, the roots of $-e_0$ and the zero divisors that the nontrivial ones determine are *Biquaternion Idempotents and Projections*, *Biquaternion Square Roots of Minus One, Zero and Plus One* and *Biquaternion Zero Divisors*.
+The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions* and *Sesqualgebras*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit and $e_k^{2}=-e_0$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu=Q_0e_0+\mathbf Q$ with $Q_\mu\in\mathbb{C}$; the conjugations are the natural one ${}^{\natural}$, $\tilde Q^{\natural}=Q_0-\mathbf Q$, and the star, $\tilde Q^{*}=\overline{Q_0}-\overline{\mathbf Q}$, the conjugate-linear involution of the algebra, with ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; and the multiplication is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The two halves of the involution are the distinguished subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*. The idempotents of the algebra, the roots of $-e_0$ and the zero divisors that the nontrivial ones determine are *Biquaternion Idempotents and Projections*, *Biquaternion Square Roots of Minus One, Zero and Plus One* and *Biquaternion Zero Divisors*.
 
 ## The Idempotent Equation
 
@@ -37,7 +37,7 @@ $$
 \tilde Q^{*}=\tilde Q .
 $$
 
-**Proof.** The equation reads $\tilde Q\tilde Q^{*}=\tilde Q$. The square $\tilde Q\tilde Q^{*}$ is fixed by the involution for every $\tilde Q$, by *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, §*The Squares and the Positive Cone*: $(\tilde Q\tilde Q^{*})^{*}=\tilde Q\tilde Q^{*}$. Applying ${}^{*}$ to the equation therefore gives
+**Proof.** The equation reads $\tilde Q\tilde Q^{*}=\tilde Q$. The square $\tilde Q\tilde Q^{*}$ is fixed by the involution for every $\tilde Q$, by *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*The Squares and the Positive Cone*: $(\tilde Q\tilde Q^{*})^{*}=\tilde Q\tilde Q^{*}$. Applying ${}^{*}$ to the equation therefore gives
 
 $$
 \tilde Q\tilde Q^{*}=\tilde Q^{*} .
@@ -67,7 +67,7 @@ $$
 
 a real number, and it is nonzero unless $\tilde Q=0$.
 
-**Proof.** The scalar part of the square is $\sum_\mu\lvert Q_\mu\rvert^{2}$ by *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, §*The Squares and the Positive Cone*; taking the scalar part of $\tilde Q\star\tilde Q=\tilde Q$ gives $Q_0=\sum_\mu\lvert Q_\mu\rvert^{2}$. The sum of the modulus squares is a nonnegative real number, and it vanishes only when every coordinate vanishes. $\square$
+**Proof.** The scalar part of the square is $\sum_\mu\lvert Q_\mu\rvert^{2}$ by *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*The Squares and the Positive Cone*; taking the scalar part of $\tilde Q\star\tilde Q=\tilde Q$ gives $Q_0=\sum_\mu\lvert Q_\mu\rvert^{2}$. The sum of the modulus squares is a nonnegative real number, and it vanishes only when every coordinate vanishes. $\square$
 
 **Remark.** The display is a constraint and not a definition: it rules out at once the algebra idempotents with a non-real scalar part, and it is the first appearance of the nonnegativity of the sesquilinear square that *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* develops.
 
@@ -207,7 +207,7 @@ $$
 
 by the multiplication of the basis, so the sum is $\tfrac14(4e_0+2\sqrt2\,ie_1+2\sqrt2\,ie_3)=e_0+\tfrac{\sqrt2}{2}ie_1+\tfrac{\sqrt2}{2}ie_3$, which differs from $\tilde\Pi(\xi)$. $\square$
 
-**Remark.** The element is the one recorded in *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* as the distinguishing case of the proposition: it is idempotent for the bilinear product and not for the sesquilinear one. Its scalar part is $\tfrac12$, but $\mathrm{Sc}(\tilde\Pi\star\tilde\Pi)=1$, so the scalar-part identity of §*The Idempotent Equation* fails at the same element, which is a second reading of the same failure.
+**Remark.** The element is the one recorded in *Introduction to the General Plain Sesqualgebra of Biquaternions* as the distinguishing case of the proposition: it is idempotent for the bilinear product and not for the sesquilinear one. Its scalar part is $\tfrac12$, but $\mathrm{Sc}(\tilde\Pi\star\tilde\Pi)=1$, so the scalar-part identity of §*The Idempotent Equation* fails at the same element, which is a second reading of the same failure.
 
 ### The Two Sets Compared
 
@@ -245,7 +245,7 @@ $$
 \tilde\Pi_+(\hat\mu)=\tfrac12\bigl(e_0+i\hat\mu\bigr) , \qquad \hat\mu\in\mathbb{R}^{3},\ (\hat\mu,\hat\mu)=1 ,
 $$
 
-a continuum parametrised by the real unit vectors, whose scalar part is the sum of the modulus squares of its coordinates and whose complement is the antipodal projection $\tilde\Pi_+(-\hat\mu)$. Against the idempotents of the associative multiplication, which are the elements $\tilde\Pi(\xi)=\tfrac12(e_0+\xi i)$ over all roots $\xi$ of $-e_0$ and form a real four-dimensional family, the $\star$-idempotents are the same trivial pair together with the Hermitian idempotents, and every non-Hermitian idempotent of the algebra is not idempotent for the multiplication. The two sets agree exactly on the projections, which is the sense in which the multiplication picks out the half of the algebra's idempotent set that the algebra itself calls the projections.
+a family parametrised by the real unit vectors, whose scalar part is the sum of the modulus squares of its coordinates and whose complement is the antipodal projection $\tilde\Pi_+(-\hat\mu)$. Against the idempotents of the associative multiplication, which are the elements $\tilde\Pi(\xi)=\tfrac12(e_0+\xi i)$ over all roots $\xi$ of $-e_0$ and form a real four-dimensional family, the $\star$-idempotents are the same trivial pair together with the Hermitian idempotents, and every non-Hermitian idempotent of the algebra is not idempotent for the multiplication. The two sets agree exactly on the projections, which is the sense in which the multiplication picks out the half of the algebra's idempotent set that the algebra itself calls the projections.
 
 ## Summary of Notation
 

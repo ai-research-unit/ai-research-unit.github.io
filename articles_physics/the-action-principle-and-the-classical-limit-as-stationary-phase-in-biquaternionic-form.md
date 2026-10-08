@@ -379,7 +379,7 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | $W(\tilde q,t)$ | Hamilton's principal function |
 | $\hbar$ | Phase scale of the oscillatory integral; asymptotic parameter only |
 | $A[\tilde q_c]$ | Fluctuation (van Vleck) prefactor |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

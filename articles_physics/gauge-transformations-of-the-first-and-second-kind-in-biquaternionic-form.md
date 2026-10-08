@@ -26,7 +26,7 @@ $$
 e_ie_j = -\delta_{ij}e_0 + \epsilon_{ijk}e_k ,
 $$
 
-the standard Hamilton rule. The quaternion conjugate and the complex conjugate are $\bar Q = Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$ and $Q^* = Q_0^*e_0+\dots+Q_3^*e_3$, and the norm is $N(Q)=\bar QQ=Q_0^2+Q_1^2+Q_2^2+Q_3^2$, which may vanish, so the algebra is not a division algebra. These are the corpus's objects; the algebra and its conjugations are fixed in *Biquaternion Algebra*, and the two conjugate pairs $\bar\cdot$ and $\bar{\cdot}$ with their fixed subspaces are fixed in *The Clifford Structure of the Biquaternion Algebra*.
+the standard Hamilton rule. The quaternion conjugate and the complex conjugate are $\bar Q = Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$ and $Q^* = Q_0^*e_0+\dots+Q_3^*e_3$, and the norm is $N(Q)=\bar QQ=Q_0^2+Q_1^2+Q_2^2+Q_3^2$, which may vanish, so the algebra is not a division algebra. These are the corpus's objects; the algebra and its conjugations are fixed in *Biquaternion Algebra*, and the two conjugate pairs $\bar\cdot$ and $\bar{\cdot}$ with their fixed subspaces are fixed in *The Clifford Algebra Representation*.
 
 ### Maxwell's equations and the biquaternionic form
 
@@ -188,7 +188,7 @@ Tanişli's EPL paper writes the source-free Maxwell equations as $\nabla F=0$ wi
 | $(1+\alpha)$ | Infinitesimal parameter, named "of the first kind" | Phase of the duality rotation, of the second kind when $\alpha=\alpha(x,t)$ |
 | $u$ | $\tfrac12(\mathbf{E}^2+\mathbf{B}^2)$ | Energy density $W=\tfrac12(\epsilon\mathbf{E}^2+\mu\mathbf{H}^2)$ |
 | $\mathbf{S}=\mathbf{E}\times\mathbf{B}$ | Poynting vector | $\mathbf{S}=\mathbf{E}\times\mathbf{H}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

@@ -282,8 +282,8 @@ For a field the theorem is standard and transcribed: time-ordered products equal
 | $\tilde k=iEe_0+\mathbf{p}$, $\tilde k\tilde k^{\natural}=-m^2$ | Wave biquaternion; mass shell |
 | $\mathrm{sgn}(\pi)$ | Fermionic sign of a complete pairing |
 | $\mathcal{H}_I$, $S=T\exp(-i\int\mathcal{H}_I)$ | Interaction Hamiltonian; Dyson series |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
 
 ## Further Reading
 

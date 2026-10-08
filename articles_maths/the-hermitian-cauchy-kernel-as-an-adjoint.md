@@ -22,7 +22,7 @@ Modules over a Clifford Algebra*; the operator-theoretic statements about the He
 operator are *The Hermitian Dirac Operator*; the integral formulae and the matrix device are *The
 Hermitian Cauchy Integral and the Boundary Values*; the one-operator statements — the Cauchy
 transform, the Hilbert transform, the self-adjointness of the projection — are *The Cauchy Integral
-Operator* and *The Hilbert Adjoint on a Hilbert Module* (Part II), and the general kernel theory of
+Operator* and *The Hermitian Adjoint on a Hermitian Module* (Part II), and the general kernel theory of
 the adjoint is *Analysis on Linear Spaces*', in *Hermitian Kernels and the Integral Operator*.
 
 ## Kernels and their Adjoints
@@ -203,7 +203,7 @@ the Plemelj–Sokhotski decomposition are complementary **self-adjoint** project
 the module form, $\mathcal{S}^{\dagger}=\mathcal{S}$ and $\mathcal{S}^2=I$, and the Szegő and
 Bergman projections of the monogenic spaces are likewise self-adjoint, their kernels being the
 reproducing kernels of *Positive Definite Kernels in Clifford Analysis*. The one-operator statements
-are *The Cauchy Integral Operator*'s and *The Hilbert Adjoint on a Hilbert Module*'s; the integral
+are *The Cauchy Integral Operator*'s and *The Hermitian Adjoint on a Hermitian Module*'s; the integral
 formulae and the matrix device are *The Hermitian Cauchy Integral and the Boundary Values*; the
 operator-theoretic companion is *The Hermitian Dirac Operator*; and the general kernel theory of
 adjoints is *Analysis on Linear Spaces*'.

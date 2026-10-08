@@ -13,7 +13,7 @@ $$
 
 and nothing further until the triality of $D_4$; the coincidences of the Lie algebras are exactly these, and the coincidences of the groups follow because the double cover is unique. The mechanical reason on the Clifford side is that the even part of the Clifford algebra of a definite space of dimension $n$ is the Clifford algebra of a definite space of dimension $n-1$ of the opposite sign, so that the even parts run through the low-dimensional table and land on a matrix algebra or on a sum of two, and the spin group is realised there.
 
-The Clifford algebra, the $k$-vectors, the volume element, the even part and the basis theorem are from *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the reflection, the Clifford group, the norm $N(x)=x\bar x$, the versors, the spin group as the group of even versors of norm one and the double cover are from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*; the reflection groups and the unit groups of the quaternion algebras are from *Quaternion Rotations and Reflections* and *Biquaternion Orders and Finite Groups of Units*; the root systems and the classification of the Dynkin diagrams are from *Root Systems and Classification*; the spinor modules and their dimensions are from *Spin Representations and Clifford Modules with Inner Conjugation* and *Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation*; the Lorentzian realisations are from *The Clifford Structure of the Biquaternion Algebra*. Nothing owned by those entries is re-derived. The field is $\mathbb{R}$ unless a complexification is named, and the signature is positive definite unless stated otherwise.
+The Clifford algebra, the $k$-vectors, the volume element, the even part and the basis theorem are from *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the reflection, the Clifford group, the norm $N(x)=x\bar x$, the versors, the spin group as the group of even versors of norm one and the double cover are from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*; the reflection groups and the unit groups of the quaternion algebras are from *Quaternion Rotations and Reflections* and *Biquaternion Orders and Finite Groups of Units*; the root systems and the classification of the Dynkin diagrams are from *Root Systems and Classification*; the spinor modules and their dimensions are from *Spin Representations and Clifford Modules with Inner Conjugation* and *Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation*; the Lorentzian realisations are from *The Clifford Algebra Representation*. Nothing owned by those entries is re-derived. The field is $\mathbb{R}$ unless a complexification is named, and the signature is positive definite unless stated otherwise.
 
 ## The Even Parts and the Low-Dimensional Table
 
@@ -45,11 +45,11 @@ The spin group is the group of even versors of norm one inside this algebra, so 
 
 ### The Spin Group in Two Dimensions
 
-**Theorem.** $\mathrm{Spin}(2)\cong U(1)$, and the double cover $\mathrm{Spin}(2)\to SO(2)$ is the squaring map of the circle, of kernel $\{\pm1\}$, so that the two groups are isomorphic as abstract groups while the covering is still two-to-one.
+**Theorem.** $\mathrm{Spin}(2)\cong U(1)$, and the double cover $\mathrm{Spin}(2)\to SO(2)$ is the squaring map of $\operatorname{SO}(2)$, of kernel $\{\pm1\}$, so that the two groups are isomorphic as abstract groups while the covering is still two-to-one.
 
-**Proof.** By the table $\mathrm{Cl}^0_{2,0}\cong\mathbb{C}$, with the generator $e_1e_2$ of square $-1$; an element $x=a+be_1e_2$ has norm $N(x)=a^2+b^2$, so the even versors of norm one are the elements of the unit circle, which is $U(1)$. The rotation group of the plane is a circle as well, and the map of the covering is written in the two circles as $z\mapsto z^2$: the rotor of parameter $\theta/2$ produces the rotation through $\theta$, as in *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*, so the covering wraps once around the rotations as the rotor wraps twice.
+**Proof.** By the table $\mathrm{Cl}^0_{2,0}\cong\mathbb{C}$, with the generator $e_1e_2$ of square $-1$; an element $x=a+be_1e_2$ has norm $N(x)=a^2+b^2$, so the even versors of norm one are the norm-one elements $U(1)$, and the map of the covering is written as $z\mapsto z^2$: the rotor of parameter $\theta/2$ produces the rotation with parameter $\theta$, as in *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*, so the covering is two-to-one.
 
-**Remark.** The case of the plane is the one in which the two groups are abstractly isomorphic, $\mathrm{Spin}(2)\cong SO(2)\cong U(1)$, even though the covering map is not an isomorphism but the squaring of the circle; it is also the case in which the spinor module is one-dimensional: the weights are $\pm\tfrac12$, which for $n=2$ is the pair of weights of the one-dimensional complex module of $U(1)$ with the half-integral charge. The covering is two-to-one for every $n\ge2$; what is special about the plane is only that the two groups are abstractly the same circle, so that the kernel $\{\pm1\}$ is realised inside the group and the covering is the self-map $z\mapsto z^2$ rather than a map between different groups.
+**Remark.** The case of the plane is the one in which the two groups are abstractly isomorphic, $\mathrm{Spin}(2)\cong SO(2)\cong U(1)$, even though the covering map is not an isomorphism but the squaring map; it is also the case in which the spinor module is one-dimensional: the weights are $\pm\tfrac12$, which for $n=2$ is the pair of weights of the one-dimensional complex module of $U(1)$ with the half-integral charge. The covering is two-to-one for every $n\ge2$; what is special about the plane is only that the two groups are abstractly the same group, so that the kernel $\{\pm1\}$ is realised inside the group and the covering is the self-map $z\mapsto z^2$ rather than a map between different groups.
 
 ### The Spin Group in Three Dimensions
 
@@ -77,9 +77,9 @@ The spin group is the group of even versors of norm one inside this algebra, so 
 
 ### The Spin Group in Five Dimensions
 
-**Theorem.** $\mathrm{Spin}(5)\cong Sp(2)$, the compact symplectic group of rank two, and the spinor module of dimension four is the defining quaternionic representation of $Sp(2)$ on $\mathbb{H}^2$.
+**Theorem.** $\mathrm{Spin}(5)\cong Sp(2)$, the symplectic group of rank two, and the spinor module of dimension four is the defining quaternionic representation of $Sp(2)$ on $\mathbb{H}^2$.
 
-**Proof.** By the table $\mathrm{Cl}^0_{5,0}\cong M_2(\mathbb{H})$, so the spin group is the group of norm-one units of the quaternionic matrix algebra $M_2(\mathbb{H})$, that is the group of $2\times2$ matrices over $\mathbb{H}$ with $x\bar x=1$. That group is the compact symplectic group $Sp(2)$, of dimension $10$, and the dimension of $SO(5)$ is $10$, so the two agree; the spinor module is the natural module $\mathbb{H}^2$ of the matrices, of real dimension four, and the weights of the spinor module of *Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation* are the four vectors $\tfrac12(\pm\epsilon_1\pm\epsilon_2)$, which are the weights of the defining representation of $Sp(2)$.
+**Proof.** By the table $\mathrm{Cl}^0_{5,0}\cong M_2(\mathbb{H})$, so the spin group is the group of norm-one units of the quaternionic matrix algebra $M_2(\mathbb{H})$, that is the group of $2\times2$ matrices over $\mathbb{H}$ with $x\bar x=1$. That group is the symplectic group $Sp(2)$, of dimension $10$, and the dimension of $SO(5)$ is $10$, so the two agree; the spinor module is the natural module $\mathbb{H}^2$ of the matrices, of real dimension four, and the weights of the spinor module of *Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation* are the four vectors $\tfrac12(\pm\epsilon_1\pm\epsilon_2)$, which are the weights of the defining representation of $Sp(2)$.
 
 **Remark.** The isomorphism reflects the coincidence of Dynkin diagrams $B_2\cong C_2$, that is $\mathrm{SO}(5,\mathbb{C})\cong\mathrm{Sp}(2,\mathbb{C})$, recorded in *Root Systems and Classification*. The representation theory is the same on both sides: the spinor module of $\mathrm{SO}(5)$ is the defining module of $\mathrm{Sp}(2)$, which is self-dual.
 
@@ -95,7 +95,7 @@ The spin group is the group of even versors of norm one inside this algebra, so 
 
 The same coincidences hold for the real forms, where they are the classical isomorphisms between the groups of the Lorentzian and split signatures.
 
-**Theorem.** With the conventions and the identifications of *The Clifford Structure of the Biquaternion Algebra* and *Biquaternion Rotations and Lorentz Transformations*,
+**Theorem.** With the conventions and the identifications of *The Clifford Algebra Representation* and *Biquaternion Rotations and Lorentz Transformations*,
 
 $$
 \mathrm{Spin}(1,2)\cong SL(2,\mathbb{R}),\qquad \mathrm{Spin}(1,3)\cong SL(2,\mathbb{C}),
@@ -145,7 +145,7 @@ The source of all of these is the coincidence of Dynkin diagrams of small rank, 
 |---|---|
 | $\mathrm{Cl}^0_{n,0}\cong\mathrm{Cl}_{0,n-1}$ | Even part of a definite Clifford algebra |
 | $Sp(1)$ | Unit quaternions, $=SU(2)$ |
-| $Sp(2)$ | Compact symplectic group of rank two |
+| $Sp(2)$ | Symplectic group of rank two |
 | $U(1)$, $SU(2)$, $SU(4)$ | The unitary groups of the low-dimensional cases |
 | $SL(2,\mathbb{R})$, $SL(2,\mathbb{C})$, $SL(4,\mathbb{R})$ | The real forms of the low-dimensional cases |
 | $SU(2,2)$ | The real form isomorphic to $\mathrm{Spin}(4,2)$ |

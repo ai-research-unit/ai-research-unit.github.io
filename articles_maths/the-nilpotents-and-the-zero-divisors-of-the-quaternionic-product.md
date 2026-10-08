@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The product of this group is the **complex quaternionic bilinear product**
+The product of this group is the **general quaternionic bilinear product**
 
 $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
 $$
 
-the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product*), whose algebra and whose left unit are *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*. Its square is central,
+the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The General Quaternionic Bilinear Product*), whose algebra and whose left unit are *Introduction to the General Quaternionic Algebra of Biquaternions*. Its square is central,
 
 $$
 \tilde Q\star\tilde Q = N(\tilde Q)\,e_0 , \qquad N(\tilde Q) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 ,
@@ -161,7 +161,7 @@ The quaternionic column is this article, and it is the largest of the four: it c
 
 ## Summary
 
-In the complex quaternionic bilinear product the square of an element is the central element $N(\tilde Q)e_0$, so the square-zero elements are exactly the elements of norm zero. These are $0$ together with the zero divisors of the algebra, and the unit criterion converts the square equation into the divisibility condition; the set is a real cone of dimension six, the light cone of the complex quadratic form $\sum_\mu Q_\mu^2$, and it is closed under multiplication by the product and by scalars. For a zero divisor the left and the right annihilator are each a complex plane containing the element; for a unit both are $0$. The two annihilators coincide for every element, a consequence of the natural conjugation being a $\mathbb{C}$-linear anti-automorphism of order two; this is peculiar to the $\natural$-product and fails for the two sesquilinear products, whose annihilators are exchanged by the conjugation instead. The whole cone is the square-zero set of the product, which is the sharpest contrast of this group with the associative multiplication, whose square-zero elements are the pure isotropic vectors alone.
+In the general quaternionic bilinear product the square of an element is the central element $N(\tilde Q)e_0$, so the square-zero elements are exactly the elements of norm zero. These are $0$ together with the zero divisors of the algebra, and the unit criterion converts the square equation into the divisibility condition; the set is a real cone of dimension six, the light cone of the complex quadratic form $\sum_\mu Q_\mu^2$, and it is closed under multiplication by the product and by scalars. For a zero divisor the left and the right annihilator are each a complex plane containing the element; for a unit both are $0$. The two annihilators coincide for every element, a consequence of the natural conjugation being a $\mathbb{C}$-linear anti-automorphism of order two; this is peculiar to the $\natural$-product and fails for the two sesquilinear products, whose annihilators are exchanged by the conjugation instead. The whole cone is the square-zero set of the product, which is the sharpest contrast of this group with the associative multiplication, whose square-zero elements are the pure isotropic vectors alone.
 
 ## Summary of Notation
 
@@ -174,7 +174,7 @@ In the complex quaternionic bilinear product the square of an element is the cen
 | $(\mathbf Q,\mathbf Q)$ | the complex bilinear dot product $\sum_k Q_k^2$ |
 | ${}^{\natural}$ | the natural conjugation $\tilde Q^{\natural} = Q_0 - \mathbf Q$ |
 | $N(\tilde Q) = \tilde Q^{\natural}\tilde Q = \sum_\mu Q_\mu^2$ | the norm of the algebra |
-| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the complex quaternionic bilinear product, the multiplication of this group |
+| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of this group |
 | $C = \{\tilde Q : N(\tilde Q) = 0\}$ | the nilpotent cone, the square-zero set |
 | $\tilde\Pi_+(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ | the Hermitian projector over a real unit vector $\hat\mu$ |
 | $\mathrm{Ann}_\ell(\tilde Q)$, $\mathrm{Ann}_r(\tilde Q)$ | the left and the right annihilator of $\tilde Q$ for the product $\star$ |

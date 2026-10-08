@@ -361,7 +361,7 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert^{1/2}$ | Van Vleck determinant |
 | $t\mapsto-i\tau$ | Wick rotation; $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ |
 | $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ | Trace convention |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

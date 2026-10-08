@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The product of this group is the **complex quaternionic bilinear product**
+The product of this group is the **general quaternionic bilinear product**
 
 $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
 $$
 
-the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product*), whose algebra is *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*. The four articles before this one are negative in their outcome: the product has no nontrivial idempotent, its square-zero set is the whole zero-divisor cone, it is associative at no rung of the ladder, and its symmetrisation is no Jordan algebra. This article is the batch's one positive structure theorem, and it is about the **operators** that the product defines rather than about the elements of the algebra.
+the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The General Quaternionic Bilinear Product*), whose algebra is *Introduction to the General Quaternionic Algebra of Biquaternions*. The four articles before this one are negative in their outcome: the product has no nontrivial idempotent, its square-zero set is the whole zero-divisor cone, it is associative at no rung of the ladder, and its symmetrisation is no Jordan algebra. This article is the batch's one positive structure theorem, and it is about the **operators** that the product defines rather than about the elements of the algebra.
 
 For an element $\tilde P$ the **left multiplication** is the map on $\mathbb{B}$ obtained by fixing $\tilde P$ in the first slot,
 
@@ -134,7 +134,7 @@ The left multiplications of the quaternionic product are $L_{\tilde P}(\tilde X)
 | $e_0,e_1,e_2,e_3$ | the basis, $e_0$ the identity, $e_k^2 = -e_0$ |
 | $\tilde P = \sum_\mu P_\mu e_\mu$ | an element and its four complex coordinates |
 | ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$ |
-| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the complex quaternionic bilinear product, the multiplication of this group |
+| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of this group |
 | $\tilde P\tilde Q$ | the plain (associative) product of the algebra |
 | $L_{\tilde P}$ | the left multiplication $\tilde X\mapsto\tilde P\star\tilde X = \tilde P^{\natural}\tilde X$ |
 | $R_{\tilde P}$ | the right multiplication of the product, $\tilde X\mapsto\tilde X\star\tilde P = \tilde X^{\natural}\tilde P$ |

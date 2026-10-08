@@ -7,7 +7,7 @@ A Hermitian Clifford module is a Clifford module with a Hermitian form for which
 
 The topic is algebraic. The analytic consequences of the self-adjointness — domains, closures, essential self-adjointness, spectrum, compactness of the resolvent — are the content of *Dirac Differential Operators* and are cited, not repeated. What is established here is the algebra that makes those theorems apply: the coefficients of a Dirac operator are elements of the Clifford algebra acting one-sidedly, and they are skew-adjoint exactly when the elements are; from that, and the skew-adjointness of the derivative, the formal self-adjointness of the operator follows in one line.
 
-The Clifford action and the module form are *Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint*; the one-sided operators on the algebra and their adjoints are *One-Sided Operators on a Hilbert Algebra with Hermitian Adjoint*; the two-sided family is *Two-Sided Operators on a Clifford Algebra*; the Hermitian member of that family, whose adjoint is the theorem at the end, is *The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint*; the forms of the dagger and the adjoint of multiplication are *The Blade Form and the Hilbert Structure with Hermitian Adjoint*; the unitary slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the spinor module is *Spinors as Minimal Left Ideals with Inner Conjugation*; and the analysis of the Dirac operator is *Dirac Differential Operators*.
+The Clifford action and the module form are *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*; the one-sided operators on the algebra and their adjoints are *One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint*; the two-sided family is *Two-Sided Operators on a Clifford Algebra*; the Hermitian member of that family, whose adjoint is the theorem at the end, is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; the forms of the dagger and the adjoint of multiplication are *The Blade Form and the Hermitian Structure with Hermitian Adjoint*; the unitary slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the spinor module is *Spinors as Minimal Left Ideals with Inner Conjugation*; and the analysis of the Dirac operator is *Dirac Differential Operators*.
 
 ## The One-Sided Action on a Hermitian Module
 
@@ -33,7 +33,7 @@ $$
 \rho(xy) = \rho(x)\rho(y), \qquad \rho(x^{\dagger}) = \rho(x)^{*} .
 $$
 
-**Proof.** The adjointness axiom of *Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint* is precisely $(x\cdot s,t) = (s,x^{\dagger}\cdot t)$, that is $(\rho(x)s,t) = (s,\rho(x^{\dagger})t)$; comparing with the defining property of the adjoint, $(\rho(x)s,t) = (s,\rho(x)^{*}t)$, and using the non-degeneracy of the form to cancel $s$ and $t$, gives $\rho(x)^{*} = \rho(x^{\dagger})$. The multiplicativity of $\rho$ is the module axiom, and the $*$-property is what has just been shown.
+**Proof.** The adjointness axiom of *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint* is precisely $(x\cdot s,t) = (s,x^{\dagger}\cdot t)$, that is $(\rho(x)s,t) = (s,\rho(x^{\dagger})t)$; comparing with the defining property of the adjoint, $(\rho(x)s,t) = (s,\rho(x)^{*}t)$, and using the non-degeneracy of the form to cancel $s$ and $t$, gives $\rho(x)^{*} = \rho(x^{\dagger})$. The multiplicativity of $\rho$ is the module axiom, and the $*$-property is what has just been shown.
 
 **Corollary (the adjoint action is multiplicative).** The adjoint action is a homomorphism of the daggered algebra, $\rho(x)^{*}\rho(y)^{*} = \rho(x^{\dagger})\rho(y^{\dagger}) = \rho(x^{\dagger}y^{\dagger})$, and it agrees with the action on the daggered element, so $\rho(x^{*}) = \rho(x)^{*}$ when ${}^{*}$ is the dagger of the coefficient field composed with the algebra anti-involution. Consequently the image of $\rho$ is a $*$-subalgebra of $\mathrm{End}_A(S)$, isomorphic to the quotient of $\mathrm{Cl}(V,q)$ by the kernel of the action.
 
@@ -45,7 +45,7 @@ $$
 L_a^{*} = L_{a^{\dagger}}, \qquad R_b^{*} = R_{b^{\dagger}},
 $$
 
-the statement of *One-Sided Operators on a Hilbert Algebra with Hermitian Adjoint*; so the module theorem above is the general form of that identity, and the algebra case is its regular instance.
+the statement of *One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint*; so the module theorem above is the general form of that identity, and the algebra case is its regular instance.
 
 **Corollary (vectors act by skew-adjoint operators).** For $v \in V$, $\rho(v)^{*} = \rho(v^{\dagger}) = -\rho(v)$, because the dagger negates the vectors; so every vector acts by a **skew-adjoint** operator, $\rho(v)^{*} = -\rho(v)$, and the Clifford relation reads $\rho(v)^{2} = q(v)\cdot\mathrm{id}$ with $\rho(v)$ skew-adjoint. This is the single fact from which the formal self-adjointness of the Dirac operator is read off below.
 
@@ -59,7 +59,7 @@ $$
 
 so that $T\mapsto T^{*}$ is an involutive $\sigma$-antilinear anti-automorphism of $\mathrm{End}_A(S)$; the image of $\rho$ is closed under it, by the theorem.
 
-**Proof.** The first two are the standard properties of the Hilbert-space adjoint with respect to a $\sigma$-sesquilinear form, and the third records the semilinearity: $(\lambda Ts,t) = \lambda(Ts,t)$ while $(s, T^{*}\sigma(\lambda)t) = \sigma(\lambda)(s,T^{*}t)$.
+**Proof.** The first two are the standard properties of the Hermitian-space adjoint with respect to a $\sigma$-sesquilinear form, and the third records the semilinearity: $(\lambda Ts,t) = \lambda(Ts,t)$ while $(s, T^{*}\sigma(\lambda)t) = \sigma(\lambda)(s,T^{*}t)$.
 
 **Corollary (self-adjoint, skew-adjoint and normal elements).** For $a \in \mathrm{Cl}(V,q)$,
 
@@ -101,7 +101,7 @@ $$
 \mathrm{Ad}_u(T)^{*} = \mathrm{Ad}_u\bigl(T^{*}\bigr) \qquad \text{for all } T .
 $$
 
-**Proof.** Unitarity of $\rho(u)$ is the slice theorem of *Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint*; then $\mathrm{Ad}_u(T)^{*} = \rho(u)^{-*}\,T^{*}\,\rho(u)^{*} = \rho(u)\,T^{*}\,\rho(u)^{-1}$ because $\rho(u)^{*} = \rho(u)^{-1}$ for a unitary.
+**Proof.** Unitarity of $\rho(u)$ is the slice theorem of *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*; then $\mathrm{Ad}_u(T)^{*} = \rho(u)^{-*}\,T^{*}\,\rho(u)^{*} = \rho(u)\,T^{*}\,\rho(u)^{-1}$ because $\rho(u)^{*} = \rho(u)^{-1}$ for a unitary.
 
 **Remark.** So the slice $U$ acts on the one-sided operators by $*$-automorphisms, and this action extends to the whole operator algebra; on the image of $\rho$ it is the adjoint action inside the algebra, and on the module it is the unitary action of the slice. This is the operator-algebraic form of the statement that the slice acts by operators and not by isometries of the quadratic space.
 
@@ -111,7 +111,7 @@ $$
 \bigl(\Phi^{\theta,c}_x\bigr)^{*} = \Phi^{\theta,c}_{x^{\dagger}} .
 $$
 
-In particular the **Hermitian sandwich** $\Phi^{\mathrm{id},\dagger}_x = L_xR_{x^{\dagger}}$ has adjoint $\Phi^{\mathrm{id},\dagger}_{x^{\dagger}} = L_{x^{\dagger}}R_x$, and on the slice $U$ it is unitary, $(\Phi^{\mathrm{id},\dagger}_x)^{*}\Phi^{\mathrm{id},\dagger}_x = \mathrm{id}$, which is the operator form of $u^{\dagger}u = 1$ that *The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint* uses.
+In particular the **Hermitian sandwich** $\Phi^{\mathrm{id},\dagger}_x = L_xR_{x^{\dagger}}$ has adjoint $\Phi^{\mathrm{id},\dagger}_{x^{\dagger}} = L_{x^{\dagger}}R_x$, and on the slice $U$ it is unitary, $(\Phi^{\mathrm{id},\dagger}_x)^{*}\Phi^{\mathrm{id},\dagger}_x = \mathrm{id}$, which is the operator form of $u^{\dagger}u = 1$ that *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* uses.
 
 **Proof.** $(\Phi^{\theta,c}_x)^{*} = (L_{\theta(x)}R_{c(x)})^{*} = R_{c(x)}^{*}L_{\theta(x)}^{*} = R_{c(x)^{\dagger}}L_{\theta(x)^{\dagger}} = L_{\theta(x)^{\dagger}}R_{c(x)^{\dagger}}$; and because each of the maps commutes with the dagger, $\theta(x)^{\dagger} = \theta(x^{\dagger})$ and $c(x)^{\dagger} = c(x^{\dagger})$, giving $\Phi^{\theta,c}_{x^{\dagger}}$.
 
@@ -139,6 +139,6 @@ The adjoint is an involutive, $\sigma$-antilinear, anti-multiplicative map on th
 
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Clifford action on a Hermitian module and the skew-adjointness of the coefficients that makes the Dirac operator self-adjoint.
 - Nicole Berline, Ezra Getzler and Michèle Vergne, *Heat Kernels and Dirac Operators*, Grundlehren der mathematischen Wissenschaften 298 (Springer, 1992), for the Clifford module with Hermitian structure as the data of a Dirac operator, and for the compatibility of the connection with the form.
-- Richard V. Kadison and John R. Ringrose, *Fundamentals of the Theory of Operator Algebras I*, Graduate Studies in Mathematics 15 (American Mathematical Society, 1997), for $*$-representations, the Hilbert-space adjoint and the structure of $*$-algebras of operators.
+- Richard V. Kadison and John R. Ringrose, *Fundamentals of the Theory of Operator Algebras I*, Graduate Studies in Mathematics 15 (American Mathematical Society, 1997), for $*$-representations, the Hermitian-space adjoint and the structure of $*$-algebras of operators.
 - John C. Baez and Javier P. Muniain, *Gauge Fields, Knots and Gravity*, Series on Knots and Everything 4 (World Scientific, 1994), for the Clifford action, the adjoint and the formal self-adjointness of the Dirac operator in a form close to the computation here.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the involutions of a Clifford algebra, their pairwise commutation and the adjoint of a multiplication.

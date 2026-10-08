@@ -47,7 +47,7 @@ $$
 
 **Theorem (the adjoint).** $(L_{\tilde A}+R_{\tilde B})^{*}=L_{\tilde{A}^{*}}+R_{\tilde{B}^{*}}$, that is $S_{\tilde A,\tilde B}^{*}=S_{\tilde{A}^{*},\tilde{B}^{*}}$.
 
-*Proof.* From $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and $(R_{\tilde B})^{*}=R_{\tilde{B}^{*}}$ of *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*. Verified on random pairs.
+*Proof.* From $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and $(R_{\tilde B})^{*}=R_{\tilde{B}^{*}}$ of *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*. Verified on random pairs.
 
 **Corollary (self-adjointness needs both parameters Hermitian).** $S_{\tilde A,\tilde B}$ is self-adjoint if and only if $\tilde A$ and $\tilde B$ are both Hermitian. In particular the Lyapunov operator $S_{\tilde A,\tilde{A}^{*}}=L_{\tilde A}+R_{\tilde{A}^{*}}$ is self-adjoint if and only if $\tilde A$ is Hermitian; for general $\tilde A$ it is not, and its adjoint is $L_{\tilde{A}^{*}}+R_{\tilde A}$. **The temptation to call $L_{\tilde A}+R_{\tilde{A}^{*}}$ self-adjoint for every $\tilde A$ is the trap of this article.**
 
@@ -80,7 +80,7 @@ and $\mathrm{ad}_{\tilde A}$ is a derivation of the associative algebra, $\mathr
 
 *Proof.* $(L_{\tilde A}+R_{\tilde A})^{*}=L_{\tilde{A}^{*}}+R_{\tilde{A}^{*}}$, which equals $L_{\tilde A}+R_{\tilde A}$ iff $\tilde{A}^{*}=\tilde A$ for (2); the same computation with the relative sign gives $(\mathrm{ad}_{\tilde A})^{*}=\mathrm{ad}_{\tilde{A}^{*}}$ for (1). Both verified numerically on random, Hermitian and anti-Hermitian samples.
 
-**Remark (the sector reading).** The two statements are the sector decomposition at the operator level: the **anticommutator** is the self-adjoint operator of the **Hermitian** elements, and the **commutator** is the skew-adjoint operator of the **anti-Hermitian** elements. Since $e_{k}\in\mathbb{M}_-$ for $k=1,2,3$, the derivations $\mathrm{ad}_{e_{k}}$ are skew-adjoint with purely imaginary spectra, and $\exp(\mathrm{ad}_{e_{k}})$ are rotations, of period $\pi$ because the elementary rotation is at half-angle: this is the operator form of the compact internal group of *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*.
+**Remark (the sector reading).** The two statements are the sector decomposition at the operator level: the **anticommutator** is the self-adjoint operator of the **Hermitian** elements, and the **commutator** is the skew-adjoint operator of the **anti-Hermitian** elements. Since $e_{k}\in\mathbb{M}_-$ for $k=1,2,3$, the derivations $\mathrm{ad}_{e_{k}}$ are skew-adjoint with purely imaginary spectra, and $\exp(\mathrm{ad}_{e_{k}})$ are rotations, of period $\pi$ because the elementary rotation is at half-angle: this is the operator form of the compact internal group of *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*.
 
 ## The Solution
 
@@ -138,8 +138,8 @@ The Sylvester equation $\tilde A\tilde P+\tilde P\tilde B=c$ on the biquaternion
 
 - *The Hermitian Sylvester Equation with Hermitian Adjoint* (`articles_maths/the-hermitian-sylvester-equation-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
 - *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the spectral rules used throughout.
-- *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/one-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the adjoints $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and the composition laws.
-- *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the sandwich, its invariants and the congruence.
+- *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the adjoints $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and the composition laws.
+- *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the sandwich, its invariants and the congruence.
 - *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the derivations, the roots and the exponential.
 - *Self-Adjoint and Skew Operators with Hermitian Adjoint* (`articles_maths/self-adjoint-and-skew-operators-with-hermitian-adjoint.md`), for the general theory of the adjoint on an operator algebra.
 - *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the commutator, the roots and the Lie structure of the algebra.

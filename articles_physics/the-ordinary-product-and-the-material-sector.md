@@ -33,7 +33,7 @@ The algebra carries three other products, each read in its own block and compare
 and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*; this article needs the
 ordinary one alone. The properties of $B$ — its symmetry, its non-degeneracy, its Gram matrix and its
 restriction to the six distinguished subspaces — are the mathematics of *The Four Pairings of the
-Biquaternion Algebra* and *The Six Subspaces under the Complex Bilinear Form*, and are cited rather than
+Biquaternion Algebra* and *The Six Subspaces under the General Plain Algebra of Biquaternions*, and are cited rather than
 proved.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$,
@@ -70,7 +70,7 @@ $$
 
 of signature $(-,+,+,+)$ on $\mathbb{M}_-$; its zero set is the light cone, its level set
 $N=-m^{2}c^{2}$ is the mass shell, and both are owned by *Biquaternion Norm and Invertibility*. The
-interval is the **quaternion bilinear form**, the scalar part of the second of the four products, and it
+interval is the **general quaternionic bilinear form**, the scalar part of the second of the four products, and it
 is quoted here only to be kept apart from $B$. Two forms of opposite type sit on the same sector, and the
 rest of the article is about the one that does not carry the interval.
 
@@ -79,7 +79,7 @@ rest of the article is about the one that does not carry the interval.
 The **ordinary product** $\tilde P\tilde Q$ is the multiplication of the algebra. Of the four products
 it is the only one that is associative and two-sidedly unital, so it is the product that makes
 $\mathbb{B}$ an associative unital algebra over $\mathbb{C}$; the others are built from it and from the
-conjugations. Its scalar part is the **complex bilinear form** of this block,
+conjugations. Its scalar part is the **general plain bilinear form** of this block,
 
 $$
 B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-P_1Q_1-P_2Q_2-P_3Q_3=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q,
@@ -282,7 +282,7 @@ The article states one cell of the grid of four, and the boundary of the cell is
 - **$B$ is not the metric.** It is definite on each sector and has no cone there, so it cannot define the
   causal structure. The metric is the interval, of signature $(-,+,+,+)$ on $\mathbb{M}_-$.
 - **$B$ is not the interval.** The interval, the mass shell, the four-velocity and invertibility are the
-  level data of the quaternion bilinear form, owned by *Biquaternion Norm and Invertibility*; the worked
+  level data of the general quaternionic bilinear form, owned by *Biquaternion Norm and Invertibility*; the worked
   case shows the two forms giving different numbers on the same element.
 - **$B$ is not positivity.** The positive definite form of the state space and of the Born pairing is the
   Hermitian form of the sesqualgebra block, which is $+B$ on $\mathbb{M}_+$ and $-B$ on $\mathbb{M}_-$;
@@ -324,7 +324,7 @@ $\mathbb{M}_-$ with signature $(0,4)$ and positive definite on $\mathbb{M}_+$ wi
 opposite definite signs on the two sectors, so $B$ carries the **sector sign**. It is neutral on the
 centre and the vector subspace and indefinite on the two quaternionic subspaces, and its null set is a
 complex cone of real dimension six, which is not the light cone. Being definite, $B$ has no light cone at
-all and cannot be the metric; the metric is the interval, the quaternion bilinear form of the companion
+all and cannot be the metric; the metric is the interval, the general quaternionic bilinear form of the companion
 quaternionic block, of signature $(-,+,+,+)$ on the material sector. The composition of two material
 operations is material exactly when the two anticommute, its informational part being the anticommutator
 and its order dependence the commutator; the
@@ -346,9 +346,9 @@ distinctions are labelled throughout: what is proved is the algebra, what is pro
 | $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$ | Informational sector, basis $\{e_0,ie_1,ie_2,ie_3\}$ |
 | $\tilde T=ict\,e_0+\mathbf x$ | A material event; imaginary time, real space |
 | $\tilde P\tilde Q$ | Ordinary product; associative, unital, non-commutative |
-| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q$ | Complex bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
+| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
 | $B\big|_{\mathbb{M}_-}=-\mathrm{I}_4$, $B\big|_{\mathbb{M}_+}=+\mathrm{I}_4$ | The sector sign carried by $B$ |
-| $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | Quaternion bilinear form; the interval; $(3,1)$ on $\mathbb{M}_-$ |
+| $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | General quaternionic bilinear form; the interval; $(3,1)$ on $\mathbb{M}_-$ |
 | $\tfrac12(\tilde P\tilde Q\pm\tilde Q\tilde P)$ | Anticommutator in $\mathbb{M}_+$; commutator in $\mathbb{M}_-$ |
 | $\tilde\Pi^{2}=\tilde\Pi$ | A projection; none nonzero in $\mathbb{M}_-$ |
 | $L_{\tilde Q},R_{\tilde P},\ \Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ | Left and right multiplications and the sandwich |
@@ -367,8 +367,8 @@ distinctions are labelled throughout: what is proved is the algebra, what is pro
 - Mathematics article *The Four Pairings of the Biquaternion Algebra*
   (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms, their Gram
   matrices and their signatures.
-- Mathematics article *The Six Subspaces under the Complex Bilinear Form*
-  (`articles_maths/the-six-subspaces-under-the-complex-bilinear-form.md`), for the restriction of $B$ to
+- Mathematics article *The Six Subspaces under the General Plain Algebra of Biquaternions*
+  (`articles_maths/the-six-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), for the restriction of $B$ to
   the six subspaces.
 - Mathematics article *Biquaternion Ideals and Peirce Decomposition*
   (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the decomposition a reference

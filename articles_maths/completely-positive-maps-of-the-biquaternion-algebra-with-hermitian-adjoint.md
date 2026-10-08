@@ -2,18 +2,18 @@
 
 ## Introduction
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ with the Hermitian conjugation ${}^{*}$; this article is the biquaternion instance of *Completely Positive Maps of a Hilbert Algebra with Hermitian Adjoint*. The subject is the **positive maps** of the algebra, that is, the linear maps carrying the positive cone into itself, and the **completely positive** ones, which carry not only the cone but every cone of every matrix amplification. The result is complete and, in the biquaternion case, strikingly simple:
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ with the Hermitian conjugation ${}^{*}$; this article is the biquaternion instance of *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint*. The subject is the **positive maps** of the algebra, that is, the linear maps carrying the positive cone into itself, and the **completely positive** ones, which carry not only the cone but every cone of every matrix amplification. The result is complete and, in the biquaternion case, strikingly simple:
 
 > **A linear map of the biquaternion algebra is completely positive if and only if it is a sum of two-sided operators of the corpus:**
 > $$
 > \Phi = \sum_{k=1}^{r} \Theta_{\tilde{Q}_{k}},\qquad \Theta_{\tilde{Q}}(\tilde V)=\tilde{Q}\,\tilde V\,\tilde{Q}^{*},\qquad r\le 4 .
 > $$
 
-The rank-one case is exactly the sandwich of *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, so the completely positive maps are **sums of sandwiches**, and the article's task is to say exactly which sums are allowed, when the map is unital, when it is trace preserving, and what the canonical positive map that is *not* completely positive looks like. The criterion is **Choi's**: complete positivity is the positivity of a single $4\times4$ Hermitian matrix, the **Choi matrix** of the map.
+The rank-one case is exactly the sandwich of *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, so the completely positive maps are **sums of sandwiches**, and the article's task is to say exactly which sums are allowed, when the map is unital, when it is trace preserving, and what the canonical positive map that is *not* completely positive looks like. The criterion is **Choi's**: complete positivity is the positivity of a single $4\times4$ Hermitian matrix, the **Choi matrix** of the map.
 
 ## Positive Maps and the Cone
 
-**Convention.** The algebra carries the complex sesquilinear form $(\tilde R,\tilde V)=\mathrm{Sc}(\tilde{R}^{*}\tilde V)$ and the positive cone $P=\{\tilde{Q}\in\mathbb{M}_+:\tilde{Q}\succeq0\}$ of the elements that are positive semidefinite in the matrix model. A linear map $\Phi:\mathbb{B}\to\mathbb{B}$ is **positive** if $\tilde V\succeq0$ implies $\Phi(\tilde V)\succeq0$, and **$n$-positive** if the amplification $\mathrm{id}_{n}\otimes\Phi$ on $M_{n}(\mathbb{C})\otimes\mathbb{B}$ is positive; it is **completely positive** (CP) if it is $n$-positive for every $n$.
+**Convention.** The algebra carries the general plain sesquilinear form $(\tilde R,\tilde V)=\mathrm{Sc}(\tilde{R}^{*}\tilde V)$ and the positive cone $P=\{\tilde{Q}\in\mathbb{M}_+:\tilde{Q}\succeq0\}$ of the elements that are positive semidefinite in the matrix model. A linear map $\Phi:\mathbb{B}\to\mathbb{B}$ is **positive** if $\tilde V\succeq0$ implies $\Phi(\tilde V)\succeq0$, and **$n$-positive** if the amplification $\mathrm{id}_{n}\otimes\Phi$ on $M_{n}(\mathbb{C})\otimes\mathbb{B}$ is positive; it is **completely positive** (CP) if it is $n$-positive for every $n$.
 
 **Proposition (the sandwich is positive).** For every $\tilde{Q}$, the two-sided operator $\Theta_{\tilde{Q}}$ is positive: if $\tilde V\succeq0$ then $\tilde{Q}\tilde V\tilde{Q}^{*}\succeq0$. Moreover every $\Theta_{\tilde{Q}}$ is **completely positive**, since in the amplified algebra $\mathrm{id}_{n}\otimes \Theta_{\tilde{Q}}$ is again a sandwich, by the matrix $I_{n}\otimes\Phi(\tilde{Q})$.
 
@@ -71,7 +71,7 @@ The minimal such $r$ is the rank of the Choi matrix $C_{\Phi}$.
 
 *Proof.* (1) $\Phi(e_{0})=\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{*}$. (2) $\mathrm{tr}(\tilde{Q}_{k}\tilde V\tilde{Q}_{k}^{*})=\mathrm{tr}(\tilde{Q}_{k}^{*}\tilde{Q}_{k}\tilde V)$, so the trace is preserved for all $\tilde V$ exactly when $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{0}$. (3) is (1) and (2) for $r=1$ with $\tilde{Q}^{*}\tilde{Q}=\tilde{Q}\tilde{Q}^{*}=e_{0}$. All three were verified on random Kraus sums, including the failure of the conditions and the reversibility of the unitary case.
 
-**Remark (the invertible ones with positive inverse are the unitaries).** A completely positive map with a single Kraus operator, $\Phi=\Theta_{\tilde{Q}}$, is invertible as a linear map exactly when $\tilde{Q}$ is invertible, but its inverse is again a completely positive map (indeed again a sandwich $\Theta_{\tilde{Q}^{-1}}$) exactly when $\tilde{Q}\in U$. The completely positive maps whose inverse is completely positive are therefore the **unitary conjugations** $\tilde V\mapsto \tilde{Q}\tilde V\tilde{Q}^{*}$ with $\tilde{Q}\in U$, which are exactly the automorphisms $\Theta_{\tilde{Q}}$ of *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*; every other completely positive map has a non-positive inverse even when invertible as a linear map.
+**Remark (the invertible ones with positive inverse are the unitaries).** A completely positive map with a single Kraus operator, $\Phi=\Theta_{\tilde{Q}}$, is invertible as a linear map exactly when $\tilde{Q}$ is invertible, but its inverse is again a completely positive map (indeed again a sandwich $\Theta_{\tilde{Q}^{-1}}$) exactly when $\tilde{Q}\in U$. The completely positive maps whose inverse is completely positive are therefore the **unitary conjugations** $\tilde V\mapsto \tilde{Q}\tilde V\tilde{Q}^{*}$ with $\tilde{Q}\in U$, which are exactly the automorphisms $\Theta_{\tilde{Q}}$ of *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*; every other completely positive map has a non-positive inverse even when invertible as a linear map.
 
 ## The Transposition
 
@@ -103,7 +103,7 @@ whose eigenvalues are $+1$ with multiplicity three and $-1$ with multiplicity on
 
 **The transposition relative to a sandwich.** The composition of a sandwich with the transposition is positive and not completely positive; its Choi matrix has a negative eigenvalue, and the negativity is the obstruction to a Kraus representation.
 
-**The null sandwich revisited.** $\Theta_{e_{0}+ie_{3}}$ has Choi rank one but is **not** unital: for $\tilde{Q}=e_{0}+ie_{3}$ one has $\tilde{Q}\tilde{Q}^{*}=\tilde{Q}^{2}=2\tilde{Q}$, whose matrix is $\mathrm{diag}(4,0)$ of trace $4$, not the trace $2$ of the identity. The map is neither unital nor trace preserving, and it has no completely positive inverse although it is a positive rank-one map. It illustrates that rank one does not mean unital, and that the positive cone collapses under the null map exactly as computed in *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*.
+**The null sandwich revisited.** $\Theta_{e_{0}+ie_{3}}$ has Choi rank one but is **not** unital: for $\tilde{Q}=e_{0}+ie_{3}$ one has $\tilde{Q}\tilde{Q}^{*}=\tilde{Q}^{2}=2\tilde{Q}$, whose matrix is $\mathrm{diag}(4,0)$ of trace $4$, not the trace $2$ of the identity. The map is neither unital nor trace preserving, and it has no completely positive inverse although it is a positive rank-one map. It illustrates that rank one does not mean unital, and that the positive cone collapses under the null map exactly as computed in *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*.
 
 ## Summary
 
@@ -125,11 +125,11 @@ The completely positive maps of the biquaternion algebra are exactly the sums of
 
 ## Further Reading
 
-- *Completely Positive Maps of a Hilbert Algebra with Hermitian Adjoint* (`articles_maths/completely-positive-maps-of-a-hilbert-algebra-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
-- *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the sandwich as an operator, its positivity and its cone.
+- *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
+- *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the sandwich as an operator, its positivity and its cone.
 - *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positivity criteria in terms of the spectrum of the sandwich.
-- *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-a-hilbert-algebra-with-hermitian-adjoint.md`), for the cone and the positive involution.
+- *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-a-hermitian-algebra-with-hermitian-adjoint.md`), for the cone and the positive involution.
 - *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), for the fixed-point operator of a completely positive map.
 - *Bilinear Operators on a Hermitian Module with Hermitian Adjoint* (`articles_maths/bilinear-operators-on-a-hermitian-module-with-hermitian-adjoint.md`), for the operators built from two spinors, which are the rank-one elements behind the Kraus sums.
-- *Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint* (`articles_maths/hermitian-modules-over-a-hilbert-algebra-with-hermitian-adjoint.md`), for the module picture of the positive cone.
-- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for $\mathbb{M}_+$ itself, and *The Six Subspaces and the Structure* (`articles_maths/the-six-subspaces-and-the-structure.md`), for the Hermitian idempotents.
+- *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/hermitian-modules-over-a-hermitian-algebra-with-hermitian-adjoint.md`), for the module picture of the positive cone.
+- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for $\mathbb{M}_+$ itself and for the Hermitian idempotents.

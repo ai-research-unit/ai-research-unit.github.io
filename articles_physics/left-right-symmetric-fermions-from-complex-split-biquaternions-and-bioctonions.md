@@ -181,7 +181,7 @@ The left-right symmetric construction of Vaibhav and Singh rests on two exact al
 | $\mathrm{E}_6\cong\mathrm{F}_4\otimes\mathbb{C}$ | Complexified exceptional group of the programme |
 | $\mathrm{U}(1)_{\text{grav}}$ | Proposed second abelian factor of the programme |
 | $J_2(\mathbb{O})$, $\mathrm{Sl}(2,\mathbb{O})$ | Pre-spacetime arena of the programme; determinant of $(1,9)$ signature |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

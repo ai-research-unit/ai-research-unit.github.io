@@ -151,7 +151,7 @@ Operator*. $\square$
 
 The operator is read with the module form of Part II, so let $(\cdot,\cdot)$ be a Hermitian form on
 $\mathcal{S}$ for which the Clifford coefficients are skew, $(e_iv,w)=-(v,e_iw)$ for $i\ge1$; the
-form exists on a Hermitian Clifford module and is the one of *Hermitian Modules over a Hilbert
+form exists on a Hermitian Clifford module and is the one of *Hermitian Modules over a Hermitian
 Algebra with Hermitian Adjoint*. The adjoint of an operator is taken with respect to it, as in *The
 Adjoint of the One-Sided Action with Hermitian Adjoint*.
 

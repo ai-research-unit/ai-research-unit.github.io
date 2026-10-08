@@ -302,8 +302,8 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ | Unitary evolution, $\psi(t) = \tilde{U}(t)\psi(0)$ |
 | $\mathrm{Tr}(\tilde\Pi_+(\hat{\mu})\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_+(\hat{\mu})\tilde{H}) = h_0 + \hat{\mu}\cdot\mathbf{h}$ | Trace formula / Born rule |
 | $e_j e_k = \varepsilon_{jkl}e_l$, $j \neq k$ | Quaternion multiplication |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

@@ -2,15 +2,15 @@
 
 ## Introduction
 
-The dagger is a **positive involution** of the biquaternion algebra: $\mathrm{Sc}(\tilde{Q}^{\dagger}\tilde{Q})=\|\tilde{Q}\|_E^{2}>0$ off zero, and the image of the resulting cone is the Hermitian cone $P=\{\tilde{Q}^{\dagger}\tilde{Q}\}$ of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, the forward light cone of the interval form. The quaternion sesquilinear form of the algebra is indefinite, and what replaces that cone is twofold. On the **vectors** there is the set of elements of non-negative Krein square,
+The dagger is a **positive involution** of the biquaternion algebra: $\mathrm{Sc}(\tilde{Q}^{\dagger}\tilde{Q})=\|\tilde{Q}\|_E^{2}>0$ off zero, and the image of the resulting cone is the Hermitian cone $P=\{\tilde{Q}^{\dagger}\tilde{Q}\}$ of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, the forward light cone of the interval form. The general quaternionic sesquilinear form of the algebra is indefinite, and what replaces that cone is twofold. On the **vectors** there is the set of elements of non-negative Krein square,
 
 $$
 P_{K}=\{\tilde{Q}\in\mathbb{B}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\|c\|_E\geq\|v\|_E\},
 $$
 
-a cone whose interior is a circle's worth of directions and whose boundary is the Krein null set; on the **operators** there is the $J$-positive cone of the general theory, $\{T=T^{\dagger}:\langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0\}=J\cdot\{S\geq0\}$, of which the fundamental symmetry $J$ is a member. The first contains the Hermitian cone of the dagger as its future nappe on the Hermitian subspace; the second is the image of the Hilbert positive cone under $J$, a cone of a different kind, which contains $J$ itself and not the identity.
+a cone whose boundary is the Krein null set; on the **operators** there is the $J$-positive cone of the general theory, $\{T=T^{\dagger}:\langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0\}=J\cdot\{S\geq0\}$, of which the fundamental symmetry $J$ is a member. The first contains the Hermitian cone of the dagger as its future nappe on the Hermitian subspace; the second is the image of the Hilbert positive cone under $J$, a cone of a different kind, which contains $J$ itself and not the identity.
 
-The general theory is *Krein Algebras*, *J-Self-Adjoint and J-Unitary Operators* and *Self-Adjoint Elements and the Positive Cone*; the symmetry is *The Fundamental Symmetry of the Biquaternion Algebra*; the form is *The Biquaternion Krein Form and Its Signature*; the $J$-operators are *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*; and the definite cone, the Cartan involution and the polar decomposition that this article reads indefinitely are *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
+The general theory is *Krein Algebras*, *J-Self-Adjoint and J-Unitary Operators* and *Self-Adjoint Elements and the Positive Cone*; the symmetry is *The Fundamental Symmetry of the Biquaternion Algebra*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the $J$-operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*; and the definite cone, the Cartan involution and the polar decomposition that this article reads indefinitely are *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
 
 **Conventions.** As throughout: $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}^{\natural*}\tilde{Q}')$, $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_\mu Q_\mu^{*}Q'_\mu$, $J={}^{\natural}$, and the orthogonal decomposition is the fundamental one, $\tilde{Q}=c+v$ with $c\in\mathbb{C}_{\mathbb{B}}$, $v\in\mathbb{V}_{\mathbb{B}}$, of *The Fundamental Symmetry of the Biquaternion Algebra*.
 
@@ -32,21 +32,15 @@ $$
 
 **Proof.** The two summands are Krein-orthogonal and $\langle c,c\rangle_{\natural*}=\|c\|_E^{2}>0$ on the positive part, $\langle v,v\rangle_{\natural*}=-\|v\|_E^{2}$ on the negative part; the identity follows, and the three characterisations are immediate.
 
-**Theorem (the shape of the cone).** $P_{K}$ is a closed cone with apex at the origin: it is invariant under multiplication by non-negative reals, it is **not** convex when the negative part is nonzero, and it is contractible, being star-shaped with respect to the origin. Its interior is homotopy equivalent to a circle,
+**Theorem (the cone of the algebra).** $P_{K}$ is a cone with apex at the origin, invariant under multiplication by non-negative reals, and it is **not** convex when the negative part is nonzero. Its shape as a set is *The Krein Level Sets and the Hyperbolic Structure*.
 
-$$
-P_{K}^{\circ}\simeq S^{1},
-$$
+**Proof.** Homogeneity is $\langle\lambda\tilde{Q},\lambda\tilde{Q}\rangle_{\natural*}=|\lambda|^{2}\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}$ for real $\lambda$. To see that it is not convex, take $\tilde{Q}_{1}=e_0+e_2$ and $\tilde{Q}_{2}=-e_0+e_2$: $\langle\tilde{Q}_{i},\tilde{Q}_{i}\rangle_{\natural*}=1-1=0$, both in $P_{K}$, while the midpoint $e_2$ has $\langle e_2,e_2\rangle_{\natural*}=-1<0$. 
 
-and its boundary is the Krein null set, a real cone of dimension $7$.
-
-**Proof.** Homogeneity is $\langle\lambda\tilde{Q},\lambda\tilde{Q}\rangle_{\natural*}=|\lambda|^{2}\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}$ for real $\lambda$; the straight-line homotopy $\tilde{Q}\mapsto t\tilde{Q}$ preserves the inequality, so $P_{K}$ is contractible. To see that it is not convex, take $\tilde{Q}_{1}=e_0+e_2$ and $\tilde{Q}_{2}=-e_0+e_2$: $\langle\tilde{Q}_{i},\tilde{Q}_{i}\rangle_{\natural*}=1-1=0$, both in $P_{K}$, while the midpoint $e_2$ has $\langle e_2,e_2\rangle_{\natural*}=-1<0$. For the interior, the map $\tilde{Q}\mapsto\tilde{Q}/\sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}}$ is a deformation retraction of $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}>0\}$ onto $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}$, and the latter is $\{(c,v):\|c\|_E^{2}-\|v\|_E^{2}=1\}$, in which $c$ runs over a circle of radius $\sqrt{1+\|v\|_E^{2}}$ and $v$ over all of the negative part; it is therefore a product $\simeq S^{1}\times\mathbb{R}^{6}\simeq S^{1}$. The boundary statement is the dimension count of *The Biquaternion Krein Form and Its Signature*.
-
-**Remark (the cone is not an order cone).** $P_{K}$ is a cone in the homogeneous sense but not an order-theoretic one: it is not convex, and it is not pointed, $P_{K}\cap(-P_{K})=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}\neq\{0\}$. The order that the quaternion sesquilinear form defines is the operator order of the next section, not the set of non-negative vectors, exactly as in the general theory (*The Fundamental Symmetry*, §*Remark (the order structure)*).
+**Remark (the cone is not an order cone).** $P_{K}$ is a cone in the homogeneous sense but not an order-theoretic one: it is not convex, and it is not pointed, $P_{K}\cap(-P_{K})=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}\neq\{0\}$. The order that the general quaternionic sesquilinear form defines is the operator order of the next section, not the set of non-negative vectors, exactly as in the general theory (*The Fundamental Symmetry*, §*Remark (the order structure)*).
 
 ## The Intersection with the Hermitian Cone
 
-The Hermitian subspace carries two forms of signature $(1,3)$: the biquaternion norm, which equals the quaternion sesquilinear form there (*The Biquaternion Krein Form and Its Signature*, §*The Signature*), and the interval form of the definite theory.
+The Hermitian subspace carries two forms of signature $(1,3)$: the biquaternion norm, which equals the general quaternionic sesquilinear form there (*The Krein Gram Matrix and the Restrictions of the Form*, §*The Signature*), and the interval form of the definite theory.
 
 **Theorem.** On the Hermitian subspace the Krein cone is the full light cone of the interval form, and its future nappe is the Hermitian cone of the dagger:
 
@@ -56,7 +50,7 @@ P_{K}\cap\mathbb{M}_{+}=\{\tilde{H}\in\mathbb{M}_{+}:\langle\tilde{H},\tilde{H}\
 P=\{\tilde{Q}^{\dagger}\tilde{Q}:\tilde{Q}\in\mathbb{B}\}=\{\tilde{H}\in\mathbb{M}_{+}:\langle\tilde{H},\tilde{H}\rangle_{\natural}\geq0,\ \mathrm{Sc}(\tilde{H})\geq0\}.
 $$
 
-**Proof.** On $\mathbb{M}_{+}$ the Krein square is $N$; an element of the Hermitian subspace is of the form $\tilde{H}=q_0e_0+\sum_k iq'_ke_k$ with $q_0,q'_k$ real, so $\langle\tilde{H},\tilde{H}\rangle_{\natural}=q_0^{2}-\sum_k q'^{2}_k$ and the inequality $N\geq0$ defines the two nappes $q_0\geq|\mathbf{q}'|$ and $q_0\leq-|\mathbf{q}'|$; the Hermitian cone consists of the positive semidefinite Hermitian elements, which are precisely the ones with the additional sign $\mathrm{Sc}(\tilde{H})=q_0\geq0$, and they form one nappe. This is the Hermitian-cone computation of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Cone, the Interval Form and the Isotropic Cone*, read on the quaternion sesquilinear form.
+**Proof.** On $\mathbb{M}_{+}$ the Krein square is $N$; an element of the Hermitian subspace is of the form $\tilde{H}=q_0e_0+\sum_k iq'_ke_k$ with $q_0,q'_k$ real, so $\langle\tilde{H},\tilde{H}\rangle_{\natural}=q_0^{2}-\sum_k q'^{2}_k$ and the inequality $N\geq0$ defines the two nappes $q_0\geq|\mathbf{q}'|$ and $q_0\leq-|\mathbf{q}'|$; the Hermitian cone consists of the positive semidefinite Hermitian elements, which are precisely the ones with the additional sign $\mathrm{Sc}(\tilde{H})=q_0\geq0$, and they form one nappe. This is the Hermitian-cone computation of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Cone, the Interval Form and the Isotropic Cone*, read on the general quaternionic sesquilinear form.
 
 **Corollary (the Hermitian cone is inside the Krein cone).** $P\subseteq P_{K}$, and the Krein cone is the union of $P$, its negative $-P$ and the Krein null set inside $\mathbb{M}_{+}$.
 
@@ -72,17 +66,17 @@ $$
 \mathcal{P}_{J}=\{T:\mathbb{B}\to\mathbb{B}\ \mathbb{C}\text{-linear}:T=T^{\dagger},\ \langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0\ \forall\tilde{Q}\}.
 $$
 
-**Theorem (the cone is the $J$-image of the Hilbert cone).** $T\in\mathcal{P}_{J}$ if and only if $JT$ is self-adjoint and positive for the complex sesquilinear form; hence
+**Theorem (the cone is the $J$-image of the Hilbert cone).** $T\in\mathcal{P}_{J}$ if and only if $JT$ is self-adjoint and positive for the general plain sesquilinear form; hence
 
 $$
 \mathcal{P}_{J}=J\cdot\{S:S=S^{*},\ S\geq0\},
 $$
 
-the image of the Hilbert positive cone under the fundamental symmetry. In particular $\mathcal{P}_{J}$ is a closed convex cone, stable under sums and under $J$-adjoints; it contains $J=J\cdot e_0$ but not the identity $\mathrm{id}=J\cdot J$, since $J$ is not positive for the complex sesquilinear form.
+the image of the definite positive cone under the fundamental symmetry. In particular $\mathcal{P}_{J}$ is a closed convex cone, stable under sums and under $J$-adjoints; it contains $J=J\cdot e_0$ but not the identity $\mathrm{id}=J\cdot J$, since $J$ is not positive for the general plain sesquilinear form.
 
-**Proof.** $\langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},JT\tilde{Q}\rangle_{*}$, and $JT$ is self-adjoint exactly when $T$ is $J$-self-adjoint (*J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*, §*The $J$-Adjoint*); the displayed identity is the definition rewritten. Convexity is that of the Hilbert cone transported by the linear bijection $J$. The identity is not in the cone because $J$, which is the definite-obstruction to its positivity, has the negative eigenvalue $-1$.
+**Proof.** $\langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},JT\tilde{Q}\rangle_{*}$, and $JT$ is self-adjoint exactly when $T$ is $J$-self-adjoint (*J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*, §*The $J$-Adjoint*); the displayed identity is the definition rewritten. Convexity is that of the definite cone transported by the linear bijection $J$. The identity is not in the cone because $J$, which is the definite-obstruction to its positivity, has the negative eigenvalue $-1$.
 
-**Proposition ($J$ is $J$-positive and not Hilbert-positive).** $J\in\mathcal{P}_{J}$, since $\langle\tilde{Q},J\tilde{Q}\rangle_{\natural*}=\|\tilde{Q}\|_E^{2}\geq0$. The Hilbert spectrum of $J$ is the pair $\{+1,-1\}$ with multiplicities $(2,6)$, so $J$ is not positive for the complex sesquilinear form.
+**Proposition ($J$ is $J$-positive and not definite-positive).** $J\in\mathcal{P}_{J}$, since $\langle\tilde{Q},J\tilde{Q}\rangle_{\natural*}=\|\tilde{Q}\|_E^{2}\geq0$. The spectrum of $J$ is the pair $\{+1,-1\}$ with multiplicities $(2,6)$, so $J$ is not positive for the general plain sesquilinear form.
 
 **Proof.** The first is the positivity of the fundamental symmetry; the spectrum is the theorem of *The Fundamental Symmetry of the Biquaternion Algebra*.
 
@@ -102,7 +96,7 @@ is an involution whose fixed set is exactly the $J$-unitary group $U_{J}(\mathbb
 
 **Proof.** $\theta_{J}^{2}(T)=\bigl((T^{\dagger})^{-1}\bigr)^{\dagger}{}^{-1}=(T^{\dagger\dagger})^{-1}{}^{-1}=T$, using $(S^{-1})^{\dagger}=(S^{\dagger})^{-1}$ and $T^{\dagger\dagger}=T$; the fixed-set identity $\theta_{J}(T)=T\iff T^{\dagger}T=e_0$ is the definition of $J$-unitarity, and the group is $U(1,3)$ (*The Krein Isometry Group and Its $J$-Contractions*). The differential on $X$ is $-X^{\dagger}$ and the fixed elements are the $J$-skew operators, which are exactly $\mathfrak{u}(1,3)$ (*The Krein Cartan Decomposition of the Operator Algebra*).
 
-**Remark (why this is not a Cartan involution).** Its fixed group $U_{J}(\mathbb{B})\cong U(1,3)$ is **non-compact**, so $\theta_{J}$ cannot be the Cartan involution of the reductive group of operators, whose fixed group is compact by definition. The involution attached to the quaternion sesquilinear form is the *Krein-adjoint* involution; the Cartan involution that goes with it is the restriction of the definite involution $\theta_{0}(T)=(T^{*})^{-1}$ to $U(1,3)$, whose fixed group is the maximal compact subgroup $U(1)\times U(3)$, and the resulting symmetric space $U(1,3)/(U(1)\times U(3))$ is the complex hyperbolic space of real dimension $6$ (*The Krein Cartan Decomposition of the Operator Algebra*). This is the reason the indefinite positivity sits beside the definite one and not inside it.
+**Remark (the two involutions).** The involution attached to the general quaternionic sesquilinear form is the *Krein-adjoint* involution $\theta_{J}(T)=(T^{\dagger})^{-1}$, whose fixed set is the $J$-unitary group $U_{J}(\mathbb{B})\cong U(1,3)$; the definite involution $\theta_{0}(T)=(T^{*})^{-1}$ restricts to it with fixed group $U(1)\times U(3)$. The comparison of the two is *The Krein Cartan Decomposition of the Operator Algebra*. This is the reason the indefinite positivity sits beside the definite one and not inside it.
 
 ## Worked Examples
 
@@ -116,17 +110,17 @@ is an involution whose fixed set is exactly the $J$-unitary group $U_{J}(\mathbb
 
 **A non-convexity witness.** $\tilde Q_1=e_0+e_2$ and $\tilde Q_2=-e_0+e_2$ are both in $P_{K}$, but their midpoint $e_2$ is not.
 
-**A $J$-positive operator that is not Hilbert-positive.** $J={}^{\natural}$ itself: $J\in\mathcal{P}_{J}$ with $\langle\tilde{Q},J\tilde{Q}\rangle_{\natural*}=\|\tilde{Q}\|_E^{2}$, while the Hilbert spectrum of $J$ contains $-1$.
+**A $J$-positive operator that is not definite-positive.** $J={}^{\natural}$ itself: $J\in\mathcal{P}_{J}$ with $\langle\tilde{Q},J\tilde{Q}\rangle_{\natural*}=\|\tilde{Q}\|_E^{2}$, while the spectrum of $J$ contains $-1$.
 
 ## Summary
 
-The **Krein cone** of the algebra is $P_{K}=\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\|c\|_E\geq\|v\|_E\}$; it is a closed contractible cone, homogeneous but neither convex nor pointed, with interior $\simeq S^{1}$ and boundary the Krein null set of dimension $7$. On the Hermitian subspace it is the full light cone of the interval form, and its future nappe is the **Hermitian cone** $P=\{\tilde{Q}^{\dagger}\tilde{Q}\}$ of the dagger; so $P\subseteq P_{K}$ and the two are different objects. On operators, the **$J$-positive cone** $\mathcal{P}_{J}=\{T=T^{\dagger},\ \langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0\}=J\cdot\{S\geq0\}$ is the image of the Hilbert positive cone under $J$, hence closed and convex; it contains $J$ itself but not the identity, and its extreme rays are the rank-one $J$-projections. The $J$-projections are the Krein-orthogonal projections onto the non-degenerate subspaces, of which the definite-orthogonal projections commuting with $J$ — in particular $\pi_{\pm}$ — are the special case; among $\pi_{\pm}$, $\pi_{+}$ is $J$-positive and $\pi_{-}$ is $J$-negative. The involution $\theta_{J}(T)=(T^{\dagger})^{-1}$ has fixed set the $J$-unitary group $U_{J}(\mathbb{B})\cong U(1,3)$, which is non-compact: it is not a Cartan involution, and the Cartan involution that goes with it has the compact fixed group $U(1)\times U(3)$ (*The Krein Cartan Decomposition of the Operator Algebra*).
+The **Krein cone** of the algebra is $P_{K}=\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\|c\|_E\geq\|v\|_E\}$; it is a closed cone, homogeneous but neither convex nor pointed, with interior $\simeq S^{1}$ and boundary the Krein null set of dimension $7$. On the Hermitian subspace it is the full light cone of the interval form, and its future nappe is the **Hermitian cone** $P=\{\tilde{Q}^{\dagger}\tilde{Q}\}$ of the dagger; so $P\subseteq P_{K}$ and the two are different objects. On operators, the **$J$-positive cone** $\mathcal{P}_{J}=\{T=T^{\dagger},\ \langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0\}=J\cdot\{S\geq0\}$ is the image of the definite positive cone under $J$, hence closed and convex; it contains $J$ itself but not the identity, and its extreme rays are the rank-one $J$-projections. The $J$-projections are the Krein-orthogonal projections onto the non-degenerate subspaces, of which the definite-orthogonal projections commuting with $J$ — in particular $\pi_{\pm}$ — are the special case; among $\pi_{\pm}$, $\pi_{+}$ is $J$-positive and $\pi_{-}$ is $J$-negative. The involution $\theta_{J}(T)=(T^{\dagger})^{-1}$ has fixed set the $J$-unitary group $U_{J}(\mathbb{B})\cong U(1,3)$ (*The Krein Cartan Decomposition of the Operator Algebra*).
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $P_{K}=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\lVert c\rVert_E\geq\lVert v\rVert_E\}$ | The Krein cone; closed, contractible, non-convex |
+| $P_{K}=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\lVert c\rVert_E\geq\lVert v\rVert_E\}$ | The Krein cone; closed, non-convex |
 | $P_{K}^{\circ}\simeq S^{1}$ | Interior of the Krein cone |
 | $\partial P_{K}=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}$ | Krein null set; real cone of dimension $7$ |
 | $P_{K}\cap\mathbb{M}_{+}$ | Light cone of the interval form on the Hermitian subspace |
@@ -135,15 +129,15 @@ The **Krein cone** of the algebra is $P_{K}=\{\tilde{Q}:\langle\tilde{Q},\tilde{
 | $\pi_{\pm}=\tfrac12(\mathrm{id}\pm J)$ | The $J$-projections; spectral projections of $J$ |
 | $\mathcal{P}_{J}=J\cdot\{S\geq0\}$ | The $J$-positive cone; contains $J$, not $\mathrm{id}$ |
 | $J\,|\tilde{Q}\rangle\langle\tilde{Q}|$, $\lVert\tilde{Q}\rVert_E=1$ | The extreme rays of $\mathcal{P}_{J}$ |
-| $\theta_{J}(T)=(T^{\dagger})^{-1}$ | The $J$-adjoint involution; fixed set $U_{J}(\mathbb{B})\cong U(1,3)$, non-compact |
+| $\theta_{J}(T)=(T^{\dagger})^{-1}$ | The $J$-adjoint involution; fixed set $U_{J}(\mathbb{B})\cong U(1,3)$ |
 
 ## Further Reading
 
 - *Krein Algebras* (`articles_maths/krein-algebras.md`) and *Self-Adjoint Elements and the Positive Cone* (`articles_maths/self-adjoint-elements-and-the-positive-cone.md`), for the general indefinite cone and order
 - *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for $J$ and the two orders
-- *The Biquaternion Krein Form and Its Signature* (`articles_maths/the-biquaternion-krein-form-and-its-signature.md`), for the form and its null set
-- *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-biquaternion-algebra.md`), for the $J$-positive cone and the $J$-projections
-- *The Krein Isometry Group and Its $J$-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for the group $U(1,3)$ and its maximal compact part
+- *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form and its null set
+- *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the $J$-positive cone and the $J$-projections
+- *The Krein Isometry Group and Its $J$-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for the group $U(1,3)$
 - *The Krein Cartan Decomposition of the Operator Algebra* (`articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.md`), for $\mathfrak{u}(1,3)$, the Jordan part and the symmetric space
 - *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the definite cone and the Cartan involution used here
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), and Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the indefinite cone and the Cartan involution

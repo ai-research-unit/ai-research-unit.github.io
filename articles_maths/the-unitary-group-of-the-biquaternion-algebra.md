@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The complex sesquilinear form $\tilde{Q}\tilde{Q}^{*}$ singles out, inside the group of units of the biquaternion algebra, the elements that leave it invariant: the **unitary biquaternions** $\tilde{U}$ with $\tilde{U}^{*}\tilde{U}=e_0$. This is the maximal compact subgroup $U(\mathbb{B})\cong U(2)$ of $\mathbb{B}^{\times}$, the compact real form of the algebra, and it is the single object through which the whole topology of the group of units is read: the polar decomposition gives a strong deformation retraction of $\mathbb{B}^{\times}$ onto $U(\mathbb{B})$ and of the norm-one group onto its compact part $S^{3}$, and the homotopy groups, the generators and the universal cover follow from the resulting homotopy equivalence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.
+The general plain sesquilinear form $\tilde{Q}\tilde{Q}^{*}$ singles out, inside the group of units of the biquaternion algebra, the elements that leave it invariant: the **unitary biquaternions** $\tilde{U}$ with $\tilde{U}^{*}\tilde{U}=e_0$. This is the maximal compact subgroup $U(\mathbb{B})\cong U(2)$ of $\mathbb{B}^{\times}$, the compact real form of the algebra, and it is the single object through which the whole topology of the group of units is read: the polar decomposition gives a strong deformation retraction of $\mathbb{B}^{\times}$ onto $U(\mathbb{B})$ and of the norm-one group onto its compact part $S^{3}$, and the homotopy groups, the generators and the universal cover follow from the resulting homotopy equivalence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.
 
 This article collects the *Hermitian* half of the topology of the unit group: the unitary slice, its structure, the two retractions that the dagger supplies, and the homotopy invariants. The *bilinear* half — the units as the complement of the null cone, the centre, the distribution of the units among the three classes — is *The Biquaternion Unit Group as a Topological Group* and *Biquaternion Norm and Invertibility*, and the ambient Euclidean topology and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*.
 
@@ -74,7 +74,7 @@ $$
 
 Hence $\mathbb{B}^{\times}\simeq U(\mathbb{B})$, and $\pi_n(\mathbb{B}^{\times})\cong\pi_n(U(\mathbb{B}))$ for all $n$.
 
-**Proof.** The eigenvalues of $\tilde{P}_t$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{P}_t$ is positive definite and $\tilde{U}\tilde{P}_t\in\mathbb{B}^{\times}$; the positive definite square root depends continuously on $\tilde{A}$ (*Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, §*The Operator of an Element*), so $\tilde{H}$ is continuous; the three identities are immediate from $\tilde{P}_0=\tilde{P}$, $\tilde{P}_1=e_0$ and the fact that a unitary element has $\tilde{P}=e_0$.
+**Proof.** The eigenvalues of $\tilde{P}_t$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{P}_t$ is positive definite and $\tilde{U}\tilde{P}_t\in\mathbb{B}^{\times}$; the positive definite square root depends continuously on $\tilde{A}$ (*Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, §*The Operator of an Element*), so $\tilde{H}$ is continuous; the three identities are immediate from $\tilde{P}_0=\tilde{P}$, $\tilde{P}_1=e_0$ and the fact that a unitary element has $\tilde{P}=e_0$.
 
 **Corollary (connectedness).** $\mathbb{B}^{\times}$ is connected, and $U(\mathbb{B})$ is connected.
 
@@ -168,7 +168,7 @@ The **unitary biquaternions** $U(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e_0\}$ are
 
 - *The Biquaternion Unit Group as a Topological Group* (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the bilinear-side treatment of the group of units
 - *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the ambient Euclidean structure the retractions use
-- *The Hermitian Form on the Biquaternion Algebra* (`articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md`), for the form that defines the unitary slice
+- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the form that defines the unitary slice
 - *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the Hermitian cone and the positive square root
 - *Biquaternion Lie Group and Exponential Structure* (`articles_maths/biquaternion-lie-group-and-exponential-structure.md`), for the subgroups and the real forms
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations*, 2nd edition (Springer, 2015), for the standard facts about $U(2)$, $SU(2)$ and their quotients

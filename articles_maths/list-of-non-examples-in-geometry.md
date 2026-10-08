@@ -47,7 +47,7 @@ An object fails the manifold condition when some point has no neighbourhood home
 | the quotient of a Lie group by a dense subgroup | not a manifold: the quotient by the irrational line is not locally Euclidean | *Lie Groups* |
 | the orbifold quotient $\mathbb{R}^n/\Gamma$ of a crystallographic group | not a manifold at the fixed points of the elements of finite order, at which it is singular | *Symmetry, Point and Crystallographic Groups*, §The Classical Counts |
 | the solenoid | a hyperbolic attractor that is not a manifold | *Hyperbolic Dynamics and Anosov Systems* |
-| the null cone $\mathcal{N}$ of the biquaternion algebra | not a manifold at the origin, though $\mathcal{N}\setminus\{0\}$ is a smooth real six-manifold | *Biquaternion Topology* |
+| the null cone $\mathcal{N}$ of the biquaternion algebra | not a manifold at the origin, though $\mathcal{N}\setminus\{0\}$ is a smooth real six-manifold | *The Topology of the Zero-Divisor Cone* |
 | the zero-divisor set of the split biquaternions | not a manifold at the origin | *Split-Biquaternion Zero Divisors* |
 | a supermanifold | a supermanifold that is not a manifold: the odd directions have no topological model | *Supergeometry* |
 | a Gromov–Hausdorff limit of manifolds | may be a space that is not a manifold at all | *Gromov–Hausdorff Convergence* |

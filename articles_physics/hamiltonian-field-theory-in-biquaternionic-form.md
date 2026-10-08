@@ -232,8 +232,8 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 | $\tilde W=\mathcal{H}e_0+\frac{i}{c}\mathbf{S}\in\mathbb{M}_+$ | The energy–momentum biquaternion of the field, with $\tilde\nabla\tilde W=0$ on shell |
 | $p^\mu=\partial\mathcal{L}/\partial(\partial_\mu\phi)=\partial^\mu\phi$ | The polymomentum of the covariant (De Donder–Weyl) formalism |
 | $H_{DW}=p^\mu\partial_\mu\phi-\mathcal{L}=\frac12p^\mu p_\mu+\frac12\mu^2\phi^2$ | The De Donder–Weyl Hamiltonian of the scalar field |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

@@ -29,6 +29,22 @@ $$
 
 the two **scalar blocks** $A_1, A_2$ of dimension $1$ and the two **vector blocks** $B_1, B_2$ of dimension $3$. They are the pieces into which the eight real coordinates of $\mathbb{B}$ group: the two scalar blocks carry the two real coordinates of the scalar coefficient $Q_0$, and the two vector blocks the six real coordinates of the vector part.
 
+Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto ie_k$, of *The Clifford Algebra Representation*, the four blocks are the four Clifford grades:
+
+| block | $A_1$ | $B_2$ | $B_1$ | $A_2$ |
+|---|---|---|---|---|
+| grade | $0$ | $1$ | $2$ | $3$ |
+| basis | $e_0$ | $ie_1,ie_2,ie_3$ | $e_1,e_2,e_3$ | $ie_0$ |
+
+grade zero is the real scalar line, grade one the imaginary pure quaternions, grade two the real pure quaternions and grade three the imaginary scalar line, so that the quaternion vector part is the grade-two part while the geometric vectors of the Clifford reading are the grade-one part; the two names do not agree, and the literature on the algebra records the trap. The table of sums below is therefore a table of sums of grades,
+
+$$
+\mathbb{C}_{\mathbb{B}}=\text{grade }0\oplus\text{grade }3, \quad \mathrm{Vect}(\mathbb{B})=\text{grade }1\oplus\text{grade }2, \quad \mathbb{H}_{\mathbb{B}}=\text{grade }0\oplus\text{grade }2,
+$$
+$$
+i\mathbb{H}_{\mathbb{B}}=\text{grade }1\oplus\text{grade }3, \quad \mathbb{M}_+=\text{grade }0\oplus\text{grade }1, \quad \mathbb{M}_-=\text{grade }2\oplus\text{grade }3 .
+$$
+
 Each block is the intersection of the three subspaces that contain it:
 
 | block | basis | $\dim_{\mathbb{R}}$ | it is the intersection |
@@ -195,4 +211,4 @@ The six distinguished subspaces of $\mathbb{B}$ are organized by the four coordi
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, its basis, its conjugations and its coordinate systems
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations as an abstract group and the two spaces each defines
 - *The Six Subspaces and the Four Complex Products* (`articles_maths/the-six-subspaces-and-the-four-complex-products.md`), for what the six give when the product is brought in, which is not part of this article
-- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/the-clifford-structure-of-the-biquaternion-algebra.md`), for the grading of the algebra and the four grades
+- *The Clifford Algebra Representation* (`articles_maths/the-clifford-algebra-representation.md`), for the Clifford identification, the four grades and the conjugations as the intrinsic maps of the Clifford algebra

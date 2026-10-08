@@ -304,8 +304,8 @@ their monoid by *The Left Multiplications of the Quaternionic Product and the Op
 - Mathematics article *The Associator and the Ternary Product of the Quaternionic Product*
   (`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md`), for the
   associator and the failure of the weaker identities.
-- Mathematics article *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*
-  (`articles_maths/biquaternions-as-a-general-quaternionic-algebra-gqa-over-c.md`), for the product and its table.
+- Mathematics article *Introduction to the General Quaternionic Algebra of Biquaternions*
+  (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the product and its table.
 - Mathematics article *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*
   (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the
   two-sided operators of the sandwich and their Hermitian adjoints.

@@ -268,8 +268,8 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\not p=\gamma^0E-\boldsymbol\gamma\cdot\mathbf p$ | Spinor mass-shell operator |
 | $u^{(r)},v^{(r)}$ | External spinors; $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$ |
 | $Z=Z_-+Z_+$ | Scalar-sector splitting of the residue (sum) |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
 
 ## Further Reading
 

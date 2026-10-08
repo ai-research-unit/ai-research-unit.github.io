@@ -24,13 +24,14 @@ Physical interpretation of
 
 DANS CHACUN DES 12
 
-Introduction (the product, vector expression, scalar and vector part, algebraic norm)
+I WOULD LIKE THE FOLLOWING STRUCTURE : Introduction (this article should contain the product, its vector expression, the scalar and vector part, the algebraic norm)
 
+intermediary articles
 
+article about representation 4x4
+article about representation 2x2
+article about 6 subspacess
 
-representation 4x4
-representation 2x2
-6 subspaces
 
 
 

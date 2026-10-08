@@ -43,7 +43,7 @@ $$
 $$
 \ker\rho \cong \mathbb{B}^\times / \mathbb{C}^\times \cong PGL(2,\mathbb{C}) \cong PSL(2,\mathbb{C}) \cong SO(3,\mathbb{C}) ,
 $$
-of real dimension six and connected (*Biquaternion Automorphisms and Derivations*, §*Automorphisms over $\mathbb{C}$*).
+of real dimension six (*Biquaternion Automorphisms and Derivations*, §*Automorphisms over $\mathbb{C}$*).
 
 ### The Conjugate-Linear Coset
 
@@ -61,7 +61,7 @@ of real dimension six and connected (*Biquaternion Automorphisms and Derivations
 $$
 \operatorname{Aut}_\mathbb{R}(\mathbb{B}) \;\cong\; \operatorname{Aut}_\mathbb{C}(\mathbb{B}) \rtimes \mathbb{Z}/2 \;\cong\; \bigl(\mathbb{B}^\times/\mathbb{C}^\times\bigr) \rtimes \mathbb{Z}/2 ,
 $$
-a real Lie group of real dimension six with exactly two connected components; the nontrivial element of $\mathbb{Z}/2$ acts on $\operatorname{Aut}_\mathbb{C}(\mathbb{B})$ by $\iota_g \mapsto \iota_{\bar g}$, that is, on the level of units, by $g \mapsto \bar g$.
+a real Lie group of real dimension six with exactly two components; the nontrivial element of $\mathbb{Z}/2$ acts on $\operatorname{Aut}_\mathbb{C}(\mathbb{B})$ by $\iota_g \mapsto \iota_{\bar g}$, that is, on the level of units, by $g \mapsto \bar g$.
 
 **Proof.** The sequence
 $$
@@ -71,7 +71,7 @@ is exact, and it splits because $c^2 = \mathrm{id}$; hence the semidirect produc
 $$
 \sigma(\tilde R) = g\,\tilde R\,g^{-1} \qquad\text{or}\qquad \sigma(\tilde R) = g\,\bar{\tilde R}\,g^{-1}, \qquad g \in \mathbb{B}^\times ,
 $$
-with $g$ determined modulo the nonzero complex scalars; the first family is the identity component, the second is the coset of $c$. The identity component is connected by the corollary above, and the second component is a translate of it, so there are exactly two components. The action of $c$ on a unit is $c$ itself, and $c \iota_g c^{-1} = \iota_{\bar g}$ on the complex part. $\square$
+with $g$ determined modulo the nonzero complex scalars; the first family is the identity component, the second is the coset of $c$. The first family is the identity component and the second is its translate by the complex conjugation, so there are exactly two components. The action of $c$ on a unit is $c$ itself, and $c \iota_g c^{-1} = \iota_{\bar g}$ on the complex part. $\square$
 
 **Remark (the second family is conjugate-linear).** The automorphisms $g\bar{\tilde R}g^{-1}$ are $\mathbb{C}$-antilinear: they satisfy $\sigma(\lambda \tilde R) = \bar\lambda\,\sigma(\tilde R)$ for $\lambda \in \mathbb{C}$, because $\bar{\cdot}$ is antilinear and $\iota_g$ is linear. They are the automorphisms that the real reading has and the complex reading does not, and they are exactly the elements outside the identity component.
 
@@ -147,7 +147,7 @@ the quotient of $\mathbb{B}$ by its centre, that is, the traceless part $\operat
 
 **Corollary.** The tangent space at the identity of $\operatorname{Aut}_\mathbb{R}(\mathbb{B})$ has real dimension six, which is the dimension of the group; the second component, the conjugate coset, contributes no tangent directions at the identity.
 
-**Remark (the two invariants against each other).** Over $\mathbb{R}$ the automorphism group is strictly larger than over $\mathbb{C}$, by the conjugate coset, while the derivation space is the same; over $\mathbb{C}$ the automorphism group is connected and every automorphism is inner, and the derivation space is its Lie algebra. The comparison is therefore: adding the scalars of a Galois-twisted coset to an automorphism group is possible, since an automorphism may be semilinear; adding the corresponding twist to a derivation algebra is not, since a derivation is linear by its Leibniz rule. The general statement is *Automorphisms and Derivations of Algebras*, and the complex case is *Biquaternion Automorphisms and Derivations*.
+**Remark (the two invariants against each other).** Over $\mathbb{R}$ the automorphism group is strictly larger than over $\mathbb{C}$, by the conjugate coset, while the derivation space is the same; over $\mathbb{C}$ the automorphism group is a single component and every automorphism is inner, and the derivation space is its Lie algebra. The comparison is therefore: adding the scalars of a Galois-twisted coset to an automorphism group is possible, since an automorphism may be semilinear; adding the corresponding twist to a derivation algebra is not, since a derivation is linear by its Leibniz rule. The general statement is *Automorphisms and Derivations of Algebras*, and the complex case is *Biquaternion Automorphisms and Derivations*.
 
 ## Summary
 
@@ -160,7 +160,7 @@ $$
 \boxed{\ \operatorname{Aut}_\mathbb{R}(\mathbb{B}) \cong \operatorname{Aut}_\mathbb{C}(\mathbb{B}) \rtimes \mathbb{Z}/2 \cong \bigl(\mathbb{B}^\times/\mathbb{C}^\times\bigr)\rtimes\mathbb{Z}/2 , \quad \operatorname{Der}_\mathbb{R}(\mathbb{B}) = \operatorname{Der}_\mathbb{C}(\mathbb{B}) . }
 $$
 
-Every real automorphism has exactly one of the forms $\tilde R \mapsto g\tilde Rg^{-1}$ and $\tilde R \mapsto g\bar{\tilde R}g^{-1}$, the group is a real Lie group of real dimension six with two connected components, and its outer automorphism group is $\mathbb{Z}/2$, generated by the class of the complex conjugation. Every real derivation is automatically $\mathbb{C}$-linear, because it kills the centre and the centre has no nonzero real derivation, so the real derivation space coincides with the complex one, $\operatorname{Der}_\mathbb{R}(\mathbb{B}) \cong \mathbb{B}/\mathbb{C}_{\mathbb{B}}$, of real dimension six, with the real Lie algebra $\mathfrak{so}(1,3)$; it is the Lie algebra of the real automorphism group, read on its identity component.
+Every real automorphism has exactly one of the forms $\tilde R \mapsto g\tilde Rg^{-1}$ and $\tilde R \mapsto g\bar{\tilde R}g^{-1}$, the group is a real Lie group of real dimension six with two components, and its outer automorphism group is $\mathbb{Z}/2$, generated by the class of the complex conjugation. Every real derivation is automatically $\mathbb{C}$-linear, because it kills the centre and the centre has no nonzero real derivation, so the real derivation space coincides with the complex one, $\operatorname{Der}_\mathbb{R}(\mathbb{B}) \cong \mathbb{B}/\mathbb{C}_{\mathbb{B}}$, of real dimension six, with the real Lie algebra $\mathfrak{so}(1,3)$; it is the Lie algebra of the real automorphism group, read on its identity component.
 
 ## Summary of Notation
 

@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The orthogonal group is a smooth group when the base is $\mathbb{R}$ or $\mathbb{C}$, and its infinitesimal version is the **orthogonal Lie algebra**: the linear maps that are skew with respect to the polar form. This article develops that Lie algebra, its identification with the bivectors $\Lambda^2 V$, the exponential map that returns from the algebra to the rotation group, its structure and rank, and the two low-dimensional isomorphisms that connect it to the vector product and to $\mathrm{SL}(2, \mathbb{C})$.
+The **orthogonal Lie algebra** is the infinitesimal version of the isometry group of a form: the linear maps that are skew with respect to the polar form. This article develops that Lie algebra, its identification with the bivectors $\Lambda^2 V$, the Cayley transform that returns from the algebra to the group, its structure and rank, and the two low-dimensional isomorphisms that connect it to the vector product and to $\mathrm{SL}(2, \mathbb{C})$.
 
-The base is a commutative ring $R$ in which $2$ is invertible for the algebraic part, and $\mathbb{R}$ or $\mathbb{C}$ for the parts that use the exponential. The orthogonal group, reflections and the special orthogonal group are those of *Isometries and Orthogonal Transformations* and *The Rotation Group and Orientation*. The exterior power $\Lambda^2 V$ and its universal property are taken from *The Exterior Algebra* and *Exterior Powers*; the general theory of Lie algebras, of the commutator bracket, of the exponential map and of Cartan subalgebras is assumed from *Lie Algebras: A General Introduction* and *Lie Groups*, and is cited rather than rebuilt. The matrix groups belong to category 04; here the Lie algebra is the Lie-theoretic shadow of the isometry group, and the corresponding matrix groups are treated in *The Unitary and Symplectic Groups*.
+The base is a commutative ring $R$ in which $2$ is invertible. The isometry group of the form, the reflections and the special orthogonal group are algebraic objects of *Bilinear Forms* and *Quadratic Forms and Polarisation*; their geometry, once a definite form is chosen, is *Isometries and Orthogonal Transformations* and *The Rotation Group and Orientation* in Part IV. The exterior power $\Lambda^2 V$ and its universal property are taken from *The Exterior Algebra* and *Exterior Powers*; the general theory of Lie algebras, of the commutator bracket and of Cartan subalgebras is assumed from *Lie Algebras: A General Introduction* and *Lie Groups*, and is cited rather than rebuilt. The matrix groups belong to category 04; here the Lie algebra is the Lie-theoretic shadow of the isometry group, and the corresponding matrix groups are treated in *The Unitary and Symplectic Groups*.
 
 ## The Lie Algebra of Skew Transformations
 
@@ -117,35 +117,11 @@ $$
 
 which is the multiplication table of the vector product. This is the precise sense in which the commutator of bivectors in three dimensions is the vector product.
 
-## The Exponential Map
+## The Cayley Transform
 
-### From the Algebra to the Group
+The exponential map that returns from the skew maps to the isometry group needs the exponential series and its convergence, so it is Part III's, in *The Lie Algebra and the Exponential Map*, and it is cited here rather than rebuilt. The algebraic substitute, which needs no series, is the Cayley transform below: it recovers a group element from the algebra with rational operations alone.
 
-Over $F = \mathbb{R}$ or $\mathbb{C}$ the exponential series $\exp(A) = \sum_{k \geq 0} A^k/k!$ converges for every endomorphism, and it carries skew maps to rotations.
-
-**Theorem.** Let $q$ be a non-degenerate quadratic form on a real or complex space $V$, and let $A \in \mathrm{SO}(V, q)$. Then $\exp(A) \in \operatorname{SO}(V, q)$.
-
-**Proof.** Consider $M(t) = \exp(tA)^T G \exp(tA)$, where $G$ is the Gram matrix. Differentiating gives
-
-$$
-M'(t) = \exp(tA)^T \bigl(A^T G + G A\bigr)\exp(tA) = 0,
-$$
-
-since $A^T G + GA = 0$; hence $M(t) = M(0) = G$ and $\exp(tA) \in \operatorname{O}(V, q)$ for all $t$. Also $\operatorname{tr} A = 0$: from $A^T G = -GA$, transposing and using symmetry of $G$ gives $G A = -A^T G$, so $A = -G^{-1} A^T G$ and
-
-$$
-\operatorname{tr} A = -\operatorname{tr}\bigl(G^{-1}A^T G\bigr) = -\operatorname{tr}\bigl(A^T G G^{-1}\bigr) = -\operatorname{tr} A,
-$$
-
-whence $\operatorname{tr}A = 0$ because $2 \neq 0$. Therefore $\det\exp(A) = e^{\operatorname{tr}A} = 1$ and $\exp(A) \in \operatorname{SO}(V, q)$.
-
-**Theorem (standard).** If $q$ is positive definite on the real space $V$, then $\exp : \mathrm{SO}(V, q) \to \operatorname{SO}(V, q)$ is surjective onto the connected component. More precisely, every rotation of a Euclidean space is the exponential of a skew map, and the exponential is a local diffeomorphism near $0$.
-
-The proof uses the spectral theorem for the positive definite form: a rotation is diagonalised over $\mathbb{C}$ into planar rotations, and each planar rotation block is the exponential of its skew generator. The statement is standard, and we cite it rather than reproduce the spectral argument.
-
-### The Cayley Transform
-
-A rational alternative to the exponential avoids infinite series. If $A$ is skew and $I - A$ is invertible, the **Cayley transform**
+If $A$ is skew and $I - A$ is invertible, the **Cayley transform**
 
 $$
 C(A) = (I + A)(I - A)^{-1}
@@ -157,13 +133,13 @@ $$
 C(A)^T G\,C(A) = \bigl((I - A)^{-1}\bigr)^T (I + A)^T G\,(I + A)(I - A)^{-1} = \bigl((I - A)^{-1}\bigr)^T G\,(I - A)(I + A)(I - A)^{-1} = \bigl((I - A)^{-1}\bigr)^T (I - A)^T G = G,
 $$
 
-using that $I + A$ and $(I - A)^{-1}$ commute because both are polynomials in $A$. The Cayley transform is a birational map from the skew maps to the rotations that do not have $1$ as an eigenvalue; it is the algebraic analogue of the stereographic projection of the group onto its Lie algebra.
+using that $I + A$ and $(I - A)^{-1}$ commute because both are polynomials in $A$. The Cayley transform is a birational map from the skew maps to the rotations that do not have $1$ as an eigenvalue; it is the rational counterpart of the exponential map of Part III.
 
 ## Structure and Rank
 
 ### A Cartan Subalgebra
 
-Assume $F = \mathbb{R}$ and $q$ definite, so that $\mathrm{SO}(V, q)$ is the compact orthogonal Lie algebra. Choose an orthonormal basis and pair the coordinates $(e_1, e_2), (e_3, e_4), \ldots$; let $\mathrm{H}$ be the space spanned by the block generators
+Assume $F = \mathbb{R}$ and $q$ definite, so that $\mathrm{SO}(V, q)$ is the definite orthogonal Lie algebra. Choose an orthonormal basis and pair the coordinates $(e_1, e_2), (e_3, e_4), \ldots$; let $\mathrm{H}$ be the space spanned by the block generators
 
 $$
 H_k = \varphi(e_{2k-1} \wedge e_{2k}),
@@ -175,9 +151,9 @@ $$
 \operatorname{rank}\mathrm{SO}(V, q) = \left\lfloor \frac{n}{2} \right\rfloor,
 $$
 
-which is also the dimension of a maximal torus of $\operatorname{SO}(V, q)$. Concretely, a maximal torus consists of the block-diagonal matrices with $\lfloor n/2 \rfloor$ rotation blocks, so $\operatorname{SO}(2)$ is its own maximal torus, $\operatorname{SO}(3)$ has a circle of rotations about a fixed axis, and $\operatorname{SO}(4)$ has a two-dimensional torus, the product of two circles of independent planar rotations.
+which is also the dimension of a maximal torus of $\operatorname{SO}(V, q)$. Concretely, a maximal torus consists of the block-diagonal matrices with $\lfloor n/2 \rfloor$ rotation blocks, so $\operatorname{SO}(2)$ is its own maximal torus, $\operatorname{SO}(3)$ has a one-parameter maximal torus, and $\operatorname{SO}(4)$ has a two-dimensional torus, the product of two independent one-parameter groups of planar rotations.
 
-### The Split and Compact Forms
+### The Split and Definite Forms
 
 Over $\mathbb{R}$ the isomorphism class of $\mathrm{SO}(V, q)$ depends on the signature, not only on the dimension, because the Gram matrix can be brought to the form $\operatorname{diag}(1^p, (-1)^r)$ by Sylvester's law. Writing
 
@@ -185,7 +161,7 @@ $$
 \mathrm{SO}(p, r) = \mathrm{SO}(V, q), \qquad q \cong p\langle 1\rangle \perp r\langle -1\rangle,
 $$
 
-the complexifications of all the $\mathrm{SO}(p, r)$ with $p + r = n$ are isomorphic to $\mathrm{SO}(n, \mathbb{C})$; over $\mathbb{R}$ they are the different real forms, of which the compact form $\mathrm{SO}(n) = \mathrm{SO}(n, 0)$ and the split form $\mathrm{SO}(m, m)$ or $\mathrm{SO}(m+1, m)$ are the extremes. The common complex dimension is $\binom{n}{2}$ and the common rank is $\lfloor n/2\rfloor$.
+the complexifications of all the $\mathrm{SO}(p, r)$ with $p + r = n$ are isomorphic to $\mathrm{SO}(n, \mathbb{C})$; over $\mathbb{R}$ they are the different real forms, of which the definite form $\mathrm{SO}(n) = \mathrm{SO}(n, 0)$ and the split form $\mathrm{SO}(m, m)$ or $\mathrm{SO}(m+1, m)$ are the extremes. The common complex dimension is $\binom{n}{2}$ and the common rank is $\lfloor n/2\rfloor$.
 
 ## The Killing Form
 
@@ -225,7 +201,7 @@ $$
 
 **Proof.** Both $\kappa$ and the trace form $\beta$ are symmetric bilinear and invariant under the adjoint action by the proposition above, so on a simple Lie algebra they are proportional. The algebra $\mathrm{SO}(n)$ is simple for $n = 3$ and for $n \geq 5$, so in those dimensions $\kappa = c\,\beta$. Let $L$ be the generator of the rotation in the $(1,2)$-plane, the matrix with $L_{12} = -1$, $L_{21} = 1$ and all other entries zero. Then $\beta(L, L) = \operatorname{tr}(L^2) = -2$, while the bracket relations of the basis $E_{ij} = e_ie_j^{T} - e_je_i^{T}$ give $\kappa(L, L) = -2(n - 2)$, so $c = n - 2$. For $n = 4$ a direct evaluation in the six-dimensional basis $E_{ij}$ gives the same identity.
 
-**Example.** For $n = 3$ the isomorphism $\mathrm{SO}(3) \cong \mathbb{R}^3$ of the next section carries the Killing form to $\kappa(X, Y) = \operatorname{tr}([X]_{\times}[Y]_{\times}) = -2\,X \cdot Y$, twice the negative of the Euclidean product; the isomorphism is therefore not an isometry, and the negative sign is the reflection of the compactness of $\mathrm{SO}(3)$. For $n = 4$ the formula reads $\kappa = 2\beta$, the factor reflecting the splitting $\mathrm{SO}(4) \cong \mathrm{SU}(2) \oplus \mathrm{SU}(2)$, on which the invariant forms are the sum of the invariant forms of the two summands.
+**Example.** For $n = 3$ the isomorphism $\mathrm{SO}(3) \cong \mathbb{R}^3$ of the next section carries the Killing form to $\kappa(X, Y) = \operatorname{tr}([X]_{\times}[Y]_{\times}) = -2\,X \cdot Y$, twice the negative of the Euclidean product; the isomorphism is therefore not an isometry, and the negative sign is the reflection of the negative definiteness of the trace form. For $n = 4$ the formula reads $\kappa = 2\beta$, the factor reflecting the splitting $\mathrm{SO}(4) \cong \mathrm{SU}(2) \oplus \mathrm{SU}(2)$, on which the invariant forms are the sum of the invariant forms of the two summands.
 
 **Corollary.** For $n \geq 3$ the Killing form of $\mathrm{SO}(n)$ is negative definite, since for skew $X \neq 0$
 
@@ -233,13 +209,13 @@ $$
 \operatorname{tr}(X^2) = -\operatorname{tr}(X^{T}X) = -\sum_{i,j} X_{ij}^2 < 0 .
 $$
 
-Hence $\mathrm{SO}(n)$ is a compact semisimple Lie algebra, and by Cartan's criterion it is semisimple; it is simple for $n = 3$ and $n \geq 5$, while $\mathrm{SO}(4)$ decomposes as $\mathrm{SU}(2) \oplus \mathrm{SU}(2)$. For the indefinite forms the Killing form of $\mathrm{SO}(p, r)$ remains non-degenerate but is indefinite, and the signature distinguishes the real forms.
+Hence $\mathrm{SO}(n)$ is a semisimple Lie algebra; it is simple for $n = 3$ and $n \geq 5$, while $\mathrm{SO}(4)$ decomposes as $\mathrm{SU}(2) \oplus \mathrm{SU}(2)$. For the indefinite forms the Killing form of $\mathrm{SO}(p, r)$ remains non-degenerate but is indefinite, and the signature distinguishes the real forms.
 
 ## Low-Dimensional Isomorphisms
 
 ### The Plane
 
-For $n = 2$ the algebra $\mathrm{SO}(2)$ is one-dimensional and abelian, with basis $J$ satisfying $[J, J] = 0$; it is the Lie algebra of the circle group $\operatorname{SO}(2)$, and $\exp(\theta J) = R(\theta)$ recovers the plane rotations of *The Rotation Group and Orientation*.
+For $n = 2$ the algebra $\mathrm{SO}(2)$ is one-dimensional and abelian, with basis $J$ satisfying $[J, J] = 0$; it is the Lie algebra of the group $\operatorname{SO}(2)$, and the Cayley transform of $\theta J$ recovers the plane rotations of *The Rotation Group and Orientation*.
 
 ### The Space $\mathbb{R}^3$ and the Vector Product
 
@@ -253,7 +229,7 @@ where the bracket on the right is the vector product.
 
 **Proof.** The map sends $L_1 \mapsto e_1$, $L_2 \mapsto e_2$, $L_3 \mapsto e_3$ in the basis of the previous example. The bracket relations $[L_1, L_2] = L_3$ and its cyclic permutations are exactly the relations $e_1 \times e_2 = e_3$ and its cyclic permutations, so the map is an isomorphism of Lie algebras.
 
-**Corollary.** Under the isomorphism a skew map $A$ acts on $\mathbb{R}^3$ by $Ax = \omega \times x$, so a one-parameter group of rotations is generated by an element $\omega$ of $\mathbb{R}^3$, and $\omega$ is the axis of the rotation $\exp(tA)$. The double cover of $\operatorname{SO}(3)$ by the unit quaternions, of which this isomorphism is the infinitesimal shadow, belongs to the Clifford layer of the category.
+**Corollary.** Under the isomorphism a skew map $A$ acts on $\mathbb{R}^3$ by $Ax = \omega \times x$, so a one-parameter group of rotations is generated by an element $\omega$ of $\mathbb{R}^3$, and $\omega$ is the axis of the one-parameter group generated by $A$. The double cover of $\operatorname{SO}(3)$ by the unit quaternions, of which this isomorphism is the infinitesimal shadow, belongs to the Clifford layer of the category.
 
 ### The Signature $(3, 1)$ and $\mathrm{SL}(2, \mathbb{C})$
 
@@ -265,7 +241,7 @@ $$
 
 where $\mathrm{SL}(2, \mathbb{C})$ is regarded as a real Lie algebra of dimension $6$. The same algebra is written $\mathrm{SO}(1, 3)$ in the custom that counts the negative signs first, since $\mathrm{SO}(p, r) \cong \mathrm{SO}(r, p)$ for all $p, r$.
 
-**Proof.** Both sides have dimension $6$. In the basis of rotations and hyperbolic rotations, $\mathrm{SO}(3, 1)$ has generators $J_1, J_2, J_3$ for the compact part and $K_1, K_2, K_3$ for the complementary part, with brackets
+**Proof.** Both sides have dimension $6$. In the basis of rotations and hyperbolic rotations, $\mathrm{SO}(3, 1)$ has generators $J_1, J_2, J_3$ for the rotational part and $K_1, K_2, K_3$ for the complementary part, with brackets
 
 $$
 [J_i, J_j] = \sum_k \epsilon_{ijk} J_k, \qquad [J_i, K_j] = \sum_k \epsilon_{ijk} K_k, \qquad [K_i, K_j] = -\sum_k \epsilon_{ijk} J_k,
@@ -279,9 +255,9 @@ $$
 
 so the complexification is $\mathrm{SL}(2, \mathbb{C}) \oplus \mathrm{SL}(2, \mathbb{C})$ as a complex Lie algebra, each summand spanned by one of the triples. The real form $\mathrm{SO}(3, 1)$ is the fixed-point set of the conjugation of this complex algebra sending $(X, Y)$ to $(\bar Y, \bar X)$, that is the diagonal $\{(X, \bar X)\}$; the map $(X, \bar X) \mapsto X$ is an isomorphism of real Lie algebras onto $\mathrm{SL}(2, \mathbb{C})$. Hence $\mathrm{SO}(3, 1) \cong \mathrm{SL}(2, \mathbb{C})$ over $\mathbb{R}$. The same computation, with the negative signs counted first, is the usual derivation of the isomorphism $\mathrm{SO}(1, 3) \cong \mathrm{SL}(2, \mathbb{C})$; the two statements are the same one, since the two signatures are isometric by negation of the coordinates in which they differ.
 
-**Remark (the bracket relations).** The first relation is the bracket of the compact rotations. For the last, using $K_i = iB_i - iA_i$ and $J_i = A_i + B_i$ gives $[K_i, K_j] = -[A_i,A_j] - [B_i,B_j] + [A_i,B_j] + [B_i,A_j] = -\sum\epsilon_{ijk}A_k - \sum\epsilon_{ijk}B_k = -\sum\epsilon_{ijk}J_k$, which is the stated sign; the middle relation likewise gives $\sum\epsilon_{ijk}K_k$.
+**Remark (the bracket relations).** The first relation is the bracket of the rotational generators. For the last, using $K_i = iB_i - iA_i$ and $J_i = A_i + B_i$ gives $[K_i, K_j] = -[A_i,A_j] - [B_i,B_j] + [A_i,B_j] + [B_i,A_j] = -\sum\epsilon_{ijk}A_k - \sum\epsilon_{ijk}B_k = -\sum\epsilon_{ijk}J_k$, which is the stated sign; the middle relation likewise gives $\sum\epsilon_{ijk}K_k$.
 
-**Remark.** The case $n = 4$ is the smallest in which the orthogonal Lie algebra has more than one isomorphism type over $\mathbb{R}$: $\mathrm{SO}(4) \cong \mathrm{SU}(2) \oplus \mathrm{SU}(2)$ is the compact form, while $\mathrm{SO}(3, 1)$ is a non-compact form with the same complexification. This is the Lie-theoretic form of the double-cover phenomena that the Clifford layer of the category describes.
+**Remark.** The case $n = 4$ is the smallest in which the orthogonal Lie algebra has more than one isomorphism type over $\mathbb{R}$: $\mathrm{SO}(4) \cong \mathrm{SU}(2) \oplus \mathrm{SU}(2)$ is the definite form, while $\mathrm{SO}(3, 1)$ is an indefinite form with the same complexification. This is the Lie-theoretic form of the double-cover phenomena that the Clifford layer of the category describes.
 
 ## Summary
 
@@ -289,7 +265,7 @@ The **orthogonal Lie algebra** $\mathrm{SO}(V, q)$ of a non-degenerate quadratic
 
 For any symmetric $B$ the formula $\varphi(u \wedge v)(x) = B(v, x)u - B(u, x)v$ gives a linear map $\Lambda^2 V \to \mathrm{SO}(V, B)$ which is an isomorphism when $B$ is non-degenerate. Transporting the commutator makes the **bivectors** $\Lambda^2 V$ a Lie algebra isomorphic to $\mathrm{SO}(V, B)$; the bracket of bivectors is their commutator as endomorphisms, and in dimension three it is the vector product.
 
-Over $\mathbb{R}$ or $\mathbb{C}$ the exponential $\exp(A) = \sum_k A^k/k!$ sends $\mathrm{SO}(V, q)$ into $\operatorname{SO}(V, q)$; for a positive definite real form it is surjective onto the connected component. The **Cayley transform** $C(A) = (I + A)(I - A)^{-1}$ is a rational replacement. The algebra has dimension $\binom{n}{2}$ and rank $\lfloor n/2\rfloor$, a Cartan subalgebra being spanned by the block generators of the coordinate planes; the **split and compact forms** $\mathrm{SO}(p, r)$ have a common complexification $\mathrm{SO}(n, \mathbb{C})$ and differ as real forms. In low dimensions $\mathrm{SO}(2)$ is one-dimensional abelian, $\mathrm{SO}(3) \cong \mathbb{R}^3$ with the vector product as bracket, and $\mathrm{SO}(3, 1) \cong \mathrm{SO}(1, 3) \cong \mathrm{SL}(2, \mathbb{C})$ as real Lie algebras, the two signatures being the same up to the order of the signs.
+The **Cayley transform** $C(A) = (I + A)(I - A)^{-1}$ is the rational passage from the skew maps to the rotations that avoid the eigenvalue $1$; the exponential map, which needs the series and its convergence, is Part III's. The algebra has dimension $\binom{n}{2}$ and rank $\lfloor n/2\rfloor$, a Cartan subalgebra being spanned by the block generators of the coordinate planes; the **split and definite forms** $\mathrm{SO}(p, r)$ have a common complexification $\mathrm{SO}(n, \mathbb{C})$ and differ as real forms. In low dimensions $\mathrm{SO}(2)$ is one-dimensional abelian, $\mathrm{SO}(3) \cong \mathbb{R}^3$ with the vector product as bracket, and $\mathrm{SO}(3, 1) \cong \mathrm{SO}(1, 3) \cong \mathrm{SL}(2, \mathbb{C})$ as real Lie algebras, the two signatures being the same up to the order of the signs.
 
 The **Killing form** $\kappa(X, Y) = \operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$ and the trace form $\beta(X, Y) = \operatorname{tr}(XY)$ are symmetric and invariant under the adjoint action. For the standard form on $F^n$ with $n \geq 3$ the two are proportional,
 
@@ -297,7 +273,7 @@ $$
 \kappa(X, Y) = (n - 2)\operatorname{tr}(XY),
 $$
 
-and $\kappa$ is negative definite because $\operatorname{tr}(X^2) = -\sum_{ij}X_{ij}^2$ for skew $X$; hence $\mathrm{SO}(n)$ is compact and semisimple, and simple for $n = 3$ and $n \geq 5$. The Killing form of an indefinite $\mathrm{SO}(p, r)$ is non-degenerate but indefinite.
+and $\kappa$ is negative definite because $\operatorname{tr}(X^2) = -\sum_{ij}X_{ij}^2$ for skew $X$; hence $\mathrm{SO}(n)$ is semisimple, and simple for $n = 3$ and $n \geq 5$. The Killing form of an indefinite $\mathrm{SO}(p, r)$ is non-degenerate but indefinite.
 
 ## Summary of Notation
 
@@ -312,7 +288,7 @@ and $\kappa$ is negative definite because $\operatorname{tr}(X^2) = -\sum_{ij}X_
 | $[A, C] = AC - CA$ | Commutator bracket |
 | $\mathrm{GL}(V)$ | Lie algebra of all endomorphisms |
 | $\mathrm{SO}(V, q)$ | Orthogonal Lie algebra of skew maps |
-| $\mathrm{SO}(n)$ | Compact orthogonal Lie algebra, signature $(n, 0)$ |
+| $\mathrm{SO}(n)$ | Definite orthogonal Lie algebra, signature $(n, 0)$ |
 | $\mathrm{SO}(p, r)$ | Orthogonal Lie algebra of signature $(p, r)$, with $\mathrm{SO}(p, r) \cong \mathrm{SO}(r, p)$ |
 | $\mathrm{SL}(2, \mathbb{C})$ | Lie algebra of traceless $2 \times 2$ complex matrices |
 | $\mathrm{SU}(2)$ | Lie algebra of traceless anti-Hermitian $2 \times 2$ matrices |
@@ -324,7 +300,6 @@ and $\kappa$ is negative definite because $\operatorname{tr}(X^2) = -\sum_{ij}X_
 | $\beta(X, Y)$ | Trace form $\operatorname{tr}(XY)$ |
 | $\operatorname{ad}_X(Y) = [X, Y]$ | Adjoint map |
 | $\operatorname{tr}$ | Trace of an endomorphism or matrix |
-| $\exp(A)$ | Exponential of an endomorphism |
 | $C(A)$ | Cayley transform $(I+A)(I-A)^{-1}$ |
 | $\mathrm{H}$ | Cartan subalgebra |
 | $\operatorname{rank}\mathrm{SO}(V, q)$ | $\lfloor n/2\rfloor$, dimension of a maximal torus |
@@ -338,6 +313,5 @@ and $\kappa$ is negative definite because $\operatorname{tr}(X^2) = -\sum_{ij}X_
 
 - Jean Dieudonné, *La géométrie des groupes classiques* (Springer, 1971), for the orthogonal Lie algebra over general rings.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory*, Graduate Texts in Mathematics 9 (Springer, 1972), for the structure theory, Cartan subalgebras and real forms.
-- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Graduate Studies in Mathematics 34 (American Mathematical Society, 2001), for the exponential map onto the classical groups.
 - Larry C. Grove, *Classical Groups and Geometric Algebra*, Graduate Studies in Mathematics 39 (American Mathematical Society, 2002), for the identification of $\mathrm{SO}$ with the bivectors and the low-dimensional isomorphisms.
 - William Fulton and Joe Harris, *Representation Theory: A First Course*, Graduate Texts in Mathematics 129 (Springer, 1991), for the isomorphisms $\mathrm{SO}(3) \cong \mathrm{SL}(2, \mathbb{C})$-type coincidences and the classical families.

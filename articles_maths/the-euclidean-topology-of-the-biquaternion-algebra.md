@@ -4,7 +4,7 @@
 
 The biquaternion algebra $\mathbb{B}$ is a real vector space of dimension eight, and its topology is the one its linear structure forces; every topological statement of the corpus is made in that topology. This article develops the Euclidean structure of that space: the linear isometry onto $\mathbb{R}^{8}$ and the flat Riemannian metric; the norm, which is the one that defines the topology; the normed-algebra inequality with its sharp constant; the contractibility of the algebra and of its six distinguished subspaces; and the Euclidean unit sphere $S^{7}_{E}$, which is a genuine sphere but is not a group and contains zero divisors.
 
-The topology itself — the definitions, the equivalence of norms and the uniqueness of the topology in finite dimension — is built in *Topology in the Space of Biquaternions*. The group of units as a topological group is *The Biquaternion Unit Group as a Topological Group*; the zero divisors, the singular cone and its projective geometry are *Biquaternion Topology*; and the matrix reading of the Euclidean norm is *The Unit Group and the Frobenius Norm in the Matrix Representation*.
+The topology itself — the definitions, the equivalence of norms and the uniqueness of the topology in finite dimension — is built in *Topology in the Space of Biquaternions*. The group of units as a topological group is *The Biquaternion Unit Group as a Topological Group*; the zero divisors, the singular cone and its projective geometry are *The Null Quadric and Its Projective Geometry*; and the matrix reading of the Euclidean norm is *The Unit Group and the Frobenius Norm in the Matrix Representation*.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with units $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$, and a general element $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The Euclidean norm is the coordinate norm $\|\tilde{Q}\|_E=\bigl(\sum_\mu|Q_\mu|^{2}\bigr)^{1/2}$.
 
@@ -86,7 +86,7 @@ $$
 
 **Proof.** Immediate from the theorem.
 
-The complement of the set of zero divisors is dense in $\mathbb{B}$, because that set is a proper algebraic subset of real codimension two — a complex hypersurface of $\mathbb{B}\cong\mathbb{C}^{4}$ — with empty interior (*Biquaternion Topology*); this is what makes the group of units, an open dense subset, carry the topology it does.
+The complement of the set of zero divisors is dense in $\mathbb{B}$, because that set is a proper algebraic subset of real codimension two — a complex hypersurface of $\mathbb{B}\cong\mathbb{C}^{4}$ — with empty interior (*Topology in the Space of Biquaternions*); this is what makes the group of units, an open dense subset, carry the topology it does.
 
 ## The Euclidean Unit Sphere
 
@@ -104,7 +104,7 @@ and $\tilde{Q}_0$ is a zero divisor. Hence $S^{7}_{E}\not\subseteq\mathbb{B}^{\t
 
 **Proposition (the sphere meets the singular cone in a compact $5$-manifold).** The intersection $S^{7}_{E}\cap\mathcal{N}$, with $\mathcal{N}$ the set of zero divisors, is a compact real $5$-manifold without boundary, homeomorphic to the link of that cone.
 
-**Proof.** The set of zero divisors is a real algebraic cone of real dimension $6$ with its only singular point at the origin (*Biquaternion Topology*); intersecting the smooth part with the transverse unit sphere and removing the origin gives a compact smooth manifold of dimension $6-1=5$, and it is the link by definition (*Biquaternion Topology*).
+**Proof.** The set of zero divisors is a real algebraic cone of real dimension $6$ with its only singular point at the origin (*The Topology of the Zero-Divisor Cone*); intersecting the smooth part with the transverse unit sphere and removing the origin gives a compact smooth manifold of dimension $6-1=5$, and it is the link by definition (*The Topology of the Zero-Divisor Cone*).
 
 **Remark (the one sphere the topological norm defines).** The Euclidean sphere $S^{7}_{E}$ is the only sphere the topological norm of the space defines. The level sets of the algebra that carry a group structure — the compact subgroup $U(\mathbb{B})\cong U(2)$ of the unitary elements and the group developed in *The Biquaternion Unit Group as a Topological Group* — are not level sets of the topological norm, and their topology is proved in *The Unitary Group of the Biquaternion Algebra*.
 
@@ -138,6 +138,6 @@ The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coe
 - *Topology in the Space of Biquaternions* (`articles_maths/topology-in-the-space-of-biquaternions.md`), for the definitions, the equivalence of norms and the uniqueness of the topology used here
 - *The Topology of the Zero-Divisor Cone* (`articles_maths/the-topology-of-the-zero-divisor-cone.md`), for the zero divisors, their cone and the link used here
 - *The Unitary Group of the Biquaternion Algebra* (`articles_maths/the-unitary-group-of-the-biquaternion-algebra.md`), for the group of the unitary elements and the retraction of the group of units onto it
-- *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Representation* (`articles_maths/the-biquaternion-sesqualgebra-in-the-2x2-matrix-representation.md`), for the matrix reading of $\|\cdot\|_E$
+- *The General Plain Sesqualgebra in the $2\times2$ Matrix Representation* (`articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-representation.md`), for the matrix reading of $\|\cdot\|_E$
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the invertibility criterion and the group of units
 - John B. Conway, *A Course in Functional Analysis*, 2nd edition (Springer, 1990), for the finite-dimensional inner-product-space facts used here

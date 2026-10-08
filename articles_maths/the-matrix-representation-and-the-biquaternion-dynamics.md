@@ -76,7 +76,7 @@ The isomorphism is an isomorphism of algebras, and an algebra isomorphism carrie
 
 **Proposition (the element and the operator are different objects).** Let $L_{\tilde Q}:\mathbb{B}\to\mathbb{B}$ be left multiplication, $L_{\tilde Q}(\tilde P)=\tilde Q\tilde P$. Then $L_{\tilde Q}$ is a complex-linear endomorphism of the four-dimensional space, represented by a $4\times4$ matrix in any basis, while $\Phi(\tilde Q)$ is the two-by-two matrix corresponding to the element $\tilde Q$. The two are different objects: $\Phi(L_{\tilde Q})$ is not defined, and the eigenvalues of the $4\times4$ matrix $L_{\tilde Q}$ are $\{Q_0+iB,Q_0+iB,Q_0-iB,Q_0-iB\}$ with $B=\sqrt{\sum_kQ_k^2}$, the eigenvalues of $\Phi(\tilde Q)$ each counted twice.
 
-**Proof.** Under the identification $\mathbb{B}=\mathbb{C}^4$ the operator $L_{\tilde Q}$ is the left regular representation, and its characteristic polynomial is the square of that of $\Phi(\tilde Q)$ because $\mathbb{B}\cong M_2(\mathbb{C})$ is the direct sum of two copies of the simple module on which $M=\Phi(\tilde Q)$ acts by $M$ (*Modules over the Biquaternion Algebra*). The eigenvalues of $M$ are $Q_0\pm iB$ by the characteristic polynomial of the matrix-representation article.
+**Proof.** Under the identification $\mathbb{B}=\mathbb{C}^4$ the operator $L_{\tilde Q}$ is the left regular representation, and its characteristic polynomial is the square of that of $\Phi(\tilde Q)$ because $\mathbb{B}\cong M_2(\mathbb{C})$ is the direct sum of two copies of the simple module on which $M=\Phi(\tilde Q)$ acts by $M$ (*Modules over the General Plain Algebra of Biquaternions*). The eigenvalues of $M$ are $Q_0\pm iB$ by the characteristic polynomial of the matrix-representation article.
 
 **Corollary (where the operator enters the dynamics).** The derivative of the quadratic family is the sum of two operators on the space and not an element,
 
@@ -111,6 +111,6 @@ The matrix model conjugates the biquaternion quadratic family to the polynomial 
 
 - *Introduction to the 2×2 Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.md`) and *Biquaternion 2×2 Matrix Element Representation* (`articles_maths/biquaternion-2x2-matrix-element-representation.md`), for the isomorphism, the trace and the determinant, the spectrum and the conjugations in matrix form.
 - *The Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.md`), for the family, the eigenvalue reduction and the critical set.
-- *Modules over the Biquaternion Algebra* (`articles_maths/modules-over-the-biquaternion-algebra.md`), for the regular representation and the doubling of the spectrum.
+- *Modules over the General Plain Algebra of Biquaternions* (`articles_maths/modules-over-the-general-plain-algebra-of-biquaternions.md`), for the regular representation and the doubling of the spectrum.
 - *The Zero Divisors and the Singular Julia Sets* (`articles_maths/the-zero-divisors-and-the-singular-julia-sets.md`), for the cone that the leading part of the matrix family is not proper over.
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm $N$ and the Euclidean norm compared here.

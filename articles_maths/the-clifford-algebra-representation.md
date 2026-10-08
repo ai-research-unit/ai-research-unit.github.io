@@ -10,11 +10,11 @@ $$
 
 The algebra, its four conjugations, its six distinguished real subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ and its biquaternion norm are those of *Biquaternions as a Vector Space over $\mathbb{C}$*, and nothing of that structure is re-derived here.
 
-This article presents the **Clifford algebra representation** of $\mathbb{B}$: the biquaternion written as an element of the **even subalgebra** $\mathrm{Cl}_{1,3}^+$ of the Clifford algebra of the Minkowski quadratic form of signature $(1,3)$. The realization is real: it identifies the eight real dimensions of $\mathbb{B}$ with the eight real dimensions of $\mathrm{Cl}_{1,3}^+$, and this is why it belongs to the reading of the algebra as an **algebra over $\mathbb{R}$**.
+This article presents the **Clifford algebra representation** of $\mathbb{B}$: the biquaternion written as an element of the **even subalgebra** $\mathrm{Cl}_{1,3}^+$ of the Clifford algebra of the Minkowski quadratic form of signature $(1,3)$, and also, in the second and smaller identification, as the whole of the three-generator Clifford algebra $\mathrm{Cl}_{3,0}$. The realization is real: it identifies the eight real dimensions of $\mathbb{B}$ with the eight real dimensions of $\mathrm{Cl}_{1,3}^+$, and this is why it belongs to the reading of the algebra as an **algebra over $\mathbb{R}$**.
 
-The article owns the generators and their metric, the even part with its grade basis, the explicit dictionary between the biquaternion units and the bivectors, the identification of the reversion with the natural conjugation, and the biquaternion norm read on the Clifford side. The same identification read through the grades, the outer product, the volume element as a central scalar, the matrix model, the idempotents, the Peirce decomposition and the ideals is the subject of *The Clifford Structure of the Biquaternion Algebra*, which is the dedicated article on the Clifford reading. The matrix realizations of the same algebra are *Biquaternion 2×2 Matrix Element Representation* and *Biquaternion 4×4 Regular Matrix Element Representation*; the action of the algebra on two-component spinors is *Biquaternion Spin Geometry*.
+The article owns the generators and their form, the even part with its grade basis, the explicit dictionary between the biquaternion units and the bivectors, the second identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ with the volume element as the central scalar imaginary, the four Clifford grades against the biquaternion components, the identification of the four conjugations with the intrinsic maps of the Clifford algebra, and the biquaternion norm read on the Clifford side. The matrix realizations of the same algebra are *Biquaternion 2×2 Matrix Element Representation* and *Biquaternion 4×4 Regular Matrix Element Representation*; the action of the algebra on two-component spinors is *Biquaternion Spin Geometry*.
 
-**Conventions.** The generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with the mostly-minus metric $g = \mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma^0)^2 = +I_4$ and $(\gamma^j)^2 = -I_4$ for $j = 1,2,3$. The pseudoscalar is $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$. The biquaternion units $e_\mu$ and the scalar imaginary $i$ are the objects being placed; the gamma matrices are the objects doing the placing. Every claim below was recomputed in exact arithmetic on explicit $4\times 4$ gamma matrices over the Gaussian rationals, and the multiplicativity was checked on six exact random pairs.
+**Conventions.** The generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with the mostly-minus form $g = \mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma^0)^2 = +I_4$ and $(\gamma^j)^2 = -I_4$ for $j = 1,2,3$. The pseudoscalar is $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$. The biquaternion units $e_\mu$ and the scalar imaginary $i$ are the objects being placed; the gamma matrices are the objects doing the placing. Every claim below was recomputed in exact arithmetic on explicit $4\times 4$ gamma matrices over the Gaussian rationals, and the multiplicativity was checked on six exact random pairs.
 
 ## The Clifford Algebra $\mathrm{Cl}_{1,3}$
 
@@ -24,7 +24,7 @@ $$
 \gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2 g^{\mu\nu} I, \qquad g = \mathrm{diag}(+1,-1,-1,-1).
 $$
 
-The metric has one positive and three negative directions. The algebra has real dimension $2^4 = 16$, and a real basis indexed by the grades is the identity, the four vectors $\gamma^\mu$, the six bivectors $\gamma^\mu\gamma^\nu$ with $\mu < \nu$, the four trivectors $\gamma^\mu\gamma^\nu\gamma^\rho$ with $\mu < \nu < \rho$, and the pseudoscalar $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$.
+The form has one positive and three negative directions. The algebra has real dimension $2^4 = 16$, and a real basis indexed by the grades is the identity, the four vectors $\gamma^\mu$, the six bivectors $\gamma^\mu\gamma^\nu$ with $\mu < \nu$, the four trivectors $\gamma^\mu\gamma^\nu\gamma^\rho$ with $\mu < \nu < \rho$, and the pseudoscalar $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$.
 
 **Definition.** The **even subalgebra** $\mathrm{Cl}_{1,3}^+$ is the span of the products of an even number of generators. It is spanned by the identity, the six bivectors $\gamma^\mu\gamma^\nu$ with $\mu < \nu$, and the pseudoscalar,
 
@@ -78,9 +78,70 @@ using $(\gamma^j)^2 = -1$. So the images of $e_1,e_2,e_3$ are three square roots
 3. **The centrality of the imaginary.** $i \mapsto -\omega$ is central in $\mathrm{Cl}_{1,3}^+$ and squares to $-1$, so the image of $i$ commutes with the images of $e_1,e_2,e_3$ exactly as $i$ commutes with the quaternion units.
 4. **The imaginary units.** $(-\omega)(\gamma^2\gamma^3) = +\gamma^0\gamma^1$, and likewise $(-\omega)(\gamma^3\gamma^1) = +\gamma^0\gamma^2$ and $(-\omega)(\gamma^1\gamma^2) = +\gamma^0\gamma^3$: the three timelike bivectors correspond to $ie_1, ie_2, ie_3$ with the positive sign.
 
-**Remark (the sign is carried by $i$ alone).** Among the eight dictionaries that carry the relations of $\mathbb{B}$ to the even basis — the choices of sign on the three spacelike bivectors that keep the quaternion relations, with either sign on the pseudoscalar — exactly one sends $ie_1, ie_2, ie_3$ to the three positive timelike bivectors, namely the one displayed above. The single sign of the correspondence is therefore carried by the scalar imaginary, which goes to minus the pseudoscalar, and it is not spread over the six bivectors. Under the opposite sign of the metric a uniform dictionary exists as well, but only with the three quaternion units mapped to minus the spacelike bivectors in the order written; with the positive order the three timelike signs come out mixed. The competing labellings, and the algebra they produce, belong to *The Clifford Structure of the Biquaternion Algebra*.
+**Remark (the sign is carried by $i$ alone).** Among the eight dictionaries that carry the relations of $\mathbb{B}$ to the even basis — the choices of sign on the three spacelike bivectors that keep the quaternion relations, with either sign on the pseudoscalar — exactly one sends $ie_1, ie_2, ie_3$ to the three positive timelike bivectors, namely the one displayed above. The single sign of the correspondence is therefore carried by the scalar imaginary, which goes to minus the pseudoscalar, and it is not spread over the six bivectors. Under the opposite sign of the form a uniform dictionary exists as well, but only with the three quaternion units mapped to minus the spacelike bivectors in the order written; with the positive order the three timelike signs come out mixed.
 
 **The identification is an equality, not a containment.** The images of the eight real basis elements $1, e_1, e_2, e_3, i, ie_1, ie_2, ie_3$ of $\mathbb{B}$ are $1$, the six bivectors, and $-\omega$. These are again the eight elements $1$, the six bivectors and $\omega$ of the even basis, so the map carries a basis of $\mathbb{B}$ to a basis of $\mathrm{Cl}_{1,3}^+$. A linear map that carries a basis to a basis and preserves the products is an isomorphism of real algebras; the dimension count $8 = 8$ is what makes the identification an equality rather than an embedding of $\mathbb{B}$ in a larger algebra.
+
+## The Positive Definite Form and the Volume Element
+
+The biquaternion algebra is also, in its own right, the Clifford algebra of a three-dimensional positive definite form.
+
+**Theorem.** There is an isomorphism of real algebras
+
+$$
+\mathbb{B}\cong\mathrm{Cl}_{3,0},\qquad \gamma_k\longmapsto ie_k\quad(k=1,2,3),
+$$
+
+where the generators satisfy $\gamma_k^{2}=+1$ and $\gamma_j\gamma_k=-\gamma_k\gamma_j$ for $j\neq k$.
+
+*Proof.* The images satisfy $(ie_k)^{2}=i^{2}e_k^{2}=(-1)(-1)=+1$ and anticommute, since $i$ is central and the $e_k$ anticommute, so the assignment extends to a homomorphism; it is an isomorphism because the eight elements $1,e_1,e_2,e_3,ie_1,ie_2,ie_3,i$ are a real basis of $\mathbb{B}$ and are spanned by the products of the three generators. $\square$
+
+**Theorem (the volume element).** The volume element $\omega_3=\gamma_1\gamma_2\gamma_3$ of $\mathrm{Cl}_{3,0}$ is central, has $\omega_3^{2}=-1$, and is the central scalar imaginary of the algebra,
+
+$$
+\omega_3=\gamma_1\gamma_2\gamma_3\longmapsto(ie_1)(ie_2)(ie_3)=i^{3}e_1e_2e_3=(-i)(-e_0)=i\,e_0 .
+$$
+
+*Proof.* In a product of $n$ generators the volume element moves past each generator at the cost of the sign $(-1)^{n-1}$, so for $n=3$ the sign is $+1$ and $\omega_3\gamma_k=\gamma_k\omega_3$: the volume element of an odd-dimensional Clifford algebra is central. Its square is $\omega_3^{2}=(-1)^{n(n-1)/2}\prod_k\gamma_k^{2}=(-1)^{3}(+1)^{3}=-1$. The image is read off $e_1e_2e_3=-e_0$. $\square$
+
+**Corollary.** The centre of $\mathbb{B}$ is $\mathbb{C}e_0=\mathbb{R}[\omega_3]$, and its central scalar imaginary is the volume element. As a complex algebra the biquaternion algebra is the two-dimensional complex Clifford algebra,
+
+$$
+\mathbb{B}\cong\mathbb{C}\mathrm{l}_2=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C},
+$$
+
+the volume element of square $-1$ being the complex structure, so that no exterior complexification is needed to read the algebra over $\mathbb{C}$.
+
+*Proof.* The centre is the fixed space of quaternion conjugation, of real dimension two and generated by $e_0$ and $i$ (*Comparison of the Six Subspaces*); by the theorem $i$ is the image of $\omega_3$, so $\mathbb{R}[\omega_3]=\mathbb{C}e_0$ is the centre and multiplication by $\omega_3$ is a complex structure on the real algebra. $\square$
+
+**Remark (the three algebras, and why the even parts agree).** The two signatures are written $\mathrm{Cl}_{3,1}$ for three generators of square $+1$ and one of square $-1$, and $\mathrm{Cl}_{1,3}$ for the opposite one. The four-generator algebra of the article and the three-generator algebra of this section are therefore different objects: $\mathrm{Cl}_{1,3}$ has real dimension sixteen and contains $\mathbb{B}$ as its even part, while $\mathrm{Cl}_{3,0}$ has real dimension eight and *is* $\mathbb{B}$. The two *even* parts of the four-generator labellings agree,
+
+$$
+\mathrm{Cl}^{+}_{3,1}\cong\mathrm{Cl}^{+}_{1,3}\cong M_2(\mathbb{C})\cong\mathbb{B},
+$$
+
+because flipping the sign of one generator leaves every even monomial unchanged, so the even part cannot see the flip; each has a two-dimensional centre spanned by $1$ and by the pseudoscalar, of square $-1$. The full algebras, by contrast, differ: $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$ and $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ (*Further Reading*).
+
+## The Grades and the Biquaternion Components
+
+Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ of the previous section the four Clifford grades are the four biquaternion components. The generators $\gamma_k=ie_k$ span grade one, the **imaginary pure quaternions**; grade two is $\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$, the **real pure quaternions**, since $(ie_j)(ie_k)=-e_je_k$; grade zero is the real scalar line $\mathbb{R}e_0$ and grade three is the imaginary scalar line $\mathbb{R}ie_0$, spanned by the volume element. The four real dimensions are $1+3+3+1=8$:
+
+| grade | basis | $\dim_{\mathbb{R}}$ | name |
+|---|---|---|---|
+| $0$ | $e_0$ | $1$ | real scalar |
+| $1$ | $ie_1,ie_2,ie_3$ | $3$ | imaginary pure quaternion |
+| $2$ | $e_1,e_2,e_3$ | $3$ | real pure quaternion |
+| $3$ | $ie_0$ | $1$ | imaginary scalar |
+
+With $\tilde{P}=\sum_\mu(q_\mu+iq'_\mu)e_\mu$ and $q_\mu,q'_\mu\in\mathbb{R}$ the grade decomposition is
+
+$$
+\tilde{P}=\underbrace{q_0e_0}_{\text{grade }0}+\underbrace{i\sum_kq'_ke_k}_{\text{grade }1}+\underbrace{\sum_kq_ke_k}_{\text{grade }2}+\underbrace{iq'_0e_0}_{\text{grade }3},
+$$
+
+so that the quaternion vector part $\sum_kq_ke_k$ is the grade-two part and the imaginary quaternion part $i\sum_kq'_ke_k$ the grade-one part. The spans are over $\mathbb{R}$ and not over $\mathbb{C}$: the complex spans would give real dimensions $2+6+6+2=16\neq8=\dim_{\mathbb{R}}\mathrm{Cl}_{3,0}$.
+
+**Remark (the naming trap).** The scalar/vector terminology standard for the quaternions calls the three units $e_k$ vectors, while in the Clifford reading they are directed areas, of grade two, and the grade-one vectors are the imaginary quaternions $ie_k$. The confusion of the quaternion vector part with the geometric vectors is recorded in the literature on the same algebra (Sangwine, Ell, Le Bihan, *Further Reading*).
 
 ## The Reversion and the Natural Conjugation
 
@@ -100,6 +161,34 @@ $$
 
 **Remark.** The reversion is an operation on the Clifford algebra itself, defined on the products of generators; it is not the transpose of the gamma matrices. No matrix operation is needed anywhere in this article.
 
+## The Four Conjugations and Their Clifford Partners
+
+The Clifford algebra carries three order-two maps attached to its grading and its product: the **grade involution** $\alpha$, equal to $(-1)^k$ on a blade of $k$ generators; the **reversion** $r$, which reverses the order of the factors of a product, equal to $(-1)^{k(k-1)/2}$ on such a blade; and their composite $\alpha\circ r$, the **Clifford conjugation**, equal to $(-1)^{k(k+1)/2}$. Under $\gamma_k\mapsto ie_k$ the four conjugations of $\mathbb{B}$ are these maps, the fourth being the negative of the reversion. The reversion of the previous section was taken in the four-generator algebra and is there the natural conjugation; below it is taken in the three-generator algebra, and the closing remark reconciles the two readings.
+
+**Theorem.** On the blades of $\mathrm{Cl}_{3,0}$ of grade $k$ the four conjugations act as
+
+| conjugation | Clifford partner | sign | grades $0,1,2,3$ |
+|---|---|---|---|
+| quaternion conjugation ${}^{\natural}$ | Clifford conjugation $\alpha\circ r$ | $(-1)^{k(k+1)/2}$ | $+,-,-,+$ |
+| complex conjugation $\bar{\cdot}$ | grade involution $\alpha$ | $(-1)^{k}$ | $+,-,+,-$ |
+| Hermitian conjugation ${}^{*}$ | reversion $r$ | $(-1)^{k(k-1)/2}$ | $+,+,-,-$ |
+| reversal ${}^{\flat}$ | negative reversion $-r$ | $-(-1)^{k(k-1)/2}$ | $-,-,+,+$ |
+
+*Proof.* On a blade of $k$ generators the reversion reverses the $k$ factors, giving the sign $(-1)^{k(k-1)/2}$, and the grade involution gives $(-1)^{k}$; the composite gives $(-1)^{k(k+1)/2}$. Under $\gamma_k\mapsto ie_k$ the generators $ie_k$ are grade one and the bivectors $\gamma_j\gamma_k=-e_je_k$ are grade two, so the four rows are the sign pattern of the four conjugations on the real coordinates (*The Group of Involutions*). Checked on the eight real basis elements: the quaternion conjugation fixes $e_0$ and $ie_0$ and negates $e_k$ and $ie_k$; the complex conjugation fixes $e_0$ and $e_k$ and negates $ie_0$ and $ie_k$; the Hermitian conjugation fixes $e_0$ and $ie_k$ and negates $e_k$ and $ie_0$; the reversal negates $e_0$, $ie_0$ and $ie_k$ and fixes $e_k$. $\square$
+
+**Corollary (the fixed spaces as sums of grades).** Reading the signs on the grades, without any further computation,
+
+$$
+\mathbb{C}_{\mathbb{B}}=\text{grade }0\oplus\text{grade }3,\quad \mathrm{Vect}(\mathbb{B})=\text{grade }1\oplus\text{grade }2,\quad \mathbb{H}_{\mathbb{B}}=\text{grade }0\oplus\text{grade }2,
+$$
+$$
+i\mathbb{H}_{\mathbb{B}}=\text{grade }1\oplus\text{grade }3,\quad \mathbb{M}_+=\text{grade }0\oplus\text{grade }1,\quad \mathbb{M}_-=\text{grade }2\oplus\text{grade }3,
+$$
+
+the same six spaces as the block table of *Comparison of the Six Subspaces*.
+
+**Remark (one glyph, two maps).** On the even part of the four-generator algebra the grade involution is the identity, so the reversion and the Clifford conjugation coincide there, and both are the natural conjugation ${}^{\natural}$; that is the only intrinsic anti-involution the even part has. Consequently the **dagger** of the general involutive-Clifford theory, $x^{\dagger}=\sigma(\alpha(x^{r}))$, reads on this algebra, with the trivial involution of the base, as $\alpha(x^{r})$, the Clifford conjugation, that is ${}^{\natural}$ — and **not** as the Hermitian conjugation ${}^{*}$ of the biquaternion corpus, which is reversion. The same glyph denotes two different maps in the two families, and the two must not be interchanged.
+
 ## The Norm in the Clifford Realization
 
 Write each complex coefficient of $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ as $Q_\mu = q_\mu + i p_\mu$ with $q_\mu, p_\mu \in \mathbb{R}$.
@@ -114,7 +203,7 @@ $$
 
 **Corollary.** The image of the biquaternion norm under the isomorphism lies in $\mathrm{span}_{\mathbb{R}}\{1,\omega\}$, which is the centre of the even subalgebra and a copy of $\mathbb{C}$ inside it. Under that copy the scalar imaginary $i$ of the algebra is $-\omega$, so the norm is read off the Clifford side as the ordered pair $\bigl(\sum_\mu q_\mu^2 - \sum_\mu p_\mu^2,\ -2\sum_\mu q_\mu p_\mu\bigr)$ in the basis $\{1,\omega\}$.
 
-**Remark.** The norm is not the Clifford norm of the full algebra taken with respect to the metric $g$; the metric has signature $(1,3)$ while the norm above has all four diagonal signs positive on the coefficient space, and the indefinite signs appear only after restriction to the real subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_\pm$, as in *Biquaternion Norm and Invertibility*. What the two have in common is only the reversion.
+**Remark.** The norm is not the Clifford norm of the full algebra taken with respect to the form $g$; the form has signature $(1,3)$ while the norm above has all four diagonal signs positive on the coefficient space, and the indefinite signs appear only after restriction to the real subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_\pm$, as in *Biquaternion Norm and Invertibility*. What the two have in common is only the reversion.
 
 ## The Matrix Realization on the Clifford Side
 
@@ -122,12 +211,11 @@ $$
 
 *Proof.* The isomorphism carries $\mathbb{B}$ to $\mathrm{Cl}_{1,3}^+$, and $\mathbb{B} \cong M_2(\mathbb{C})$ by the $2\times2$ realization of *Biquaternion 2×2 Matrix Element Representation*; composing the two gives the claim. $\square$
 
-The same statement, with the explicit matrices, the idempotents, the Peirce decomposition and the ideals of the even subalgebra, is developed in *The Clifford Structure of the Biquaternion Algebra*.
 
 ## Why the Realization Is Useful
 
-1. **It connects the algebra to the Clifford algebra of a quadratic form.** The biquaternion algebra is the even part of the Clifford algebra of a four-dimensional quadratic space of signature $(1,3)$, which fixes the metric once and for all.
-2. **It makes the metric explicit.** The form is read off the generators: one of them squares to $+1$ and three to $-1$, and the six bivectors group into the three spacelike ones belonging to the quaternion units and the three timelike ones belonging to their multiples by $i$.
+1. **It connects the algebra to the Clifford algebra of a quadratic form.** The biquaternion algebra is the even part of the Clifford algebra of a four-dimensional quadratic space of signature $(1,3)$, which fixes the form once and for all.
+2. **It makes the form explicit.** The form is read off the generators: one of them squares to $+1$ and three to $-1$, and the six bivectors group into the three spacelike ones belonging to the quaternion units and the three timelike ones belonging to their multiples by $i$.
 3. **It generalizes.** The Clifford construction works in every dimension and every signature. The biquaternion case is the one with four generators and signature $(1,3)$, and the general theory places it in a family rather than in isolation.
 
 ## Summary
@@ -138,13 +226,13 @@ $$
 \mathbb{B} \cong \mathrm{Cl}_{1,3}^+(\mathbb{R}), \qquad \mathrm{Cl}_{1,3}^+ = \mathrm{span}_{\mathbb{R}}\bigl\{1,\ \gamma^\mu\gamma^\nu\ (\mu<\nu),\ \omega\bigr\},
 $$
 
-with the mostly-minus metric $g = \mathrm{diag}(+1,-1,-1,-1)$. The isomorphism is fixed by
+with the mostly-minus form $g = \mathrm{diag}(+1,-1,-1,-1)$. The isomorphism is fixed by
 
 $$
 e_1 \mapsto \gamma^2\gamma^3, \quad e_2 \mapsto \gamma^3\gamma^1, \quad e_3 \mapsto \gamma^1\gamma^2, \quad i \mapsto -\omega, \quad ie_k \mapsto +\gamma^0\gamma^k,
 $$
 
-so that all six bivectors correspond to the quaternion units with the positive sign and the single sign is carried by the scalar imaginary. The reversion of the Clifford algebra is the natural conjugation of the biquaternions, and the biquaternion norm is the reversion square, a real combination of $1$ and $\omega$ with coefficients $\sum_\mu q_\mu^2 - \sum_\mu p_\mu^2$ and $-2\sum_\mu q_\mu p_\mu$. The realization is a realization over $\mathbb{R}$: it writes the eight real dimensions of the algebra as the eight real dimensions of the even Clifford algebra, and it carries the Clifford product to the biquaternion product.
+so that all six bivectors correspond to the quaternion units with the positive sign and the single sign is carried by the scalar imaginary. The reversion of the Clifford algebra is the natural conjugation of the biquaternions, and the biquaternion norm is the reversion square, a real combination of $1$ and $\omega$ with coefficients $\sum_\mu q_\mu^2 - \sum_\mu p_\mu^2$ and $-2\sum_\mu q_\mu p_\mu$. The realization is a realization over $\mathbb{R}$: it writes the eight real dimensions of the algebra as the eight real dimensions of the even Clifford algebra, and it carries the Clifford product to the biquaternion product. The second identification is the positive definite one, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ through $\gamma_k\mapsto ie_k$, in which the volume element $\omega_3=\gamma_1\gamma_2\gamma_3$ is central, squares to $-1$ and is the scalar imaginary, and the four grades are the four biquaternion components: grade one the imaginary pure quaternions, grade two the real pure quaternions, grades zero and three the real and the imaginary scalar lines. Under that identification the four conjugations are the intrinsic maps of the Clifford algebra, the quaternion conjugation being the Clifford conjugation $\alpha\circ r$, the complex conjugation the grade involution $\alpha$, the Hermitian conjugation the reversion $r$ and the reversal the negative reversion $-r$, and their fixed spaces are the sums of grades $\mathbb{C}_{\mathbb{B}}=g_0\oplus g_3$, $\mathbb{H}_{\mathbb{B}}=g_0\oplus g_2$, $\mathbb{M}_+=g_0\oplus g_1$, $\mathrm{Vect}(\mathbb{B})=g_1\oplus g_2$, $i\mathbb{H}_{\mathbb{B}}=g_1\oplus g_3$ and $\mathbb{M}_-=g_2\oplus g_3$.
 
 ## Summary of Notation
 
@@ -163,6 +251,13 @@ so that all six bivectors correspond to the quaternion units with the positive s
 | $\operatorname{rev}$ | Reversion, $\operatorname{rev}(1) = 1$, $\operatorname{rev}(\gamma^\mu\gamma^\nu) = -\gamma^\mu\gamma^\nu$, $\operatorname{rev}(\omega) = \omega$ |
 | $\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, carried to the reversion square $\Phi(\tilde{Q})\operatorname{rev}(\Phi(\tilde{Q}))$ |
 | $\{1,\omega\}$ | The centre of $\mathrm{Cl}_{1,3}^+$, a copy of $\mathbb{C}$ in which $i$ is $-\omega$ |
+| $\mathrm{Cl}_{3,0}$ | Clifford algebra of a positive definite three-dimensional form, real dimension $8$; $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ |
+| $\gamma_k=ie_k$ | Its generators, $\gamma_k^{2}=+1$, in the biquaternion basis |
+| $\omega_3=\gamma_1\gamma_2\gamma_3$ | Volume element of $\mathrm{Cl}_{3,0}$, central, $\omega_3^{2}=-1$, the image of $i$ |
+| $\mathbb{C}\mathrm{l}_2=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ | The algebra as a complex Clifford algebra |
+| grade $0,1,2,3$ | Real scalar, imaginary pure quaternion, real pure quaternion, imaginary scalar |
+| $\alpha$, $r$, $\alpha\circ r$ | Grade involution, reversion, Clifford conjugation |
+| $x^{\dagger}=\sigma(\alpha(x^{r}))$ | The dagger of the involutive-Clifford theory; with the trivial involution of the base it is ${}^{\natural}$, not ${}^{*}$ |
 
 ## Further Reading
 
@@ -173,7 +268,8 @@ so that all six bivectors correspond to the quaternion units with the positive s
 - S. J. Sangwine, T. A. Ell, N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* 21 (2011) 607–636, for the coordinate and matrix readings of the same algebra.
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra and its conjugations
 - *Biquaternions as an Algebra over $\mathbb{R}$* (`articles_maths/biquaternions-as-an-algebra-over-r.md`), for the algebra read over the real field
-- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/the-clifford-structure-of-the-biquaternion-algebra.md`), for the dedicated reading of the Clifford identification
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm and the real subspaces it restricts to
 - *Biquaternion 2×2 Matrix Element Representation* (`articles_maths/biquaternion-2x2-matrix-element-representation.md`), for the matrix realization and the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$
+- *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the six subspaces, the coordinate blocks and their reading as sums of grades
+- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations as an abstract group
 - *Biquaternion Spin Geometry* (`articles_maths/biquaternion-spin-geometry.md`), for the action of the algebra on spinors

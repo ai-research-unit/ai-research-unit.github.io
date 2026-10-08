@@ -298,7 +298,7 @@ The quaternions are present as a bimodule action and not as scalars, and the rea
 | $x \cdot (h \cdot y) - h \cdot (x \cdot y) = [x,h]y$ | the failure of full $\mathbb{H}$-bilinearity |
 | ${}^{\natural}$ | natural sign; $\mathbb{C}$-linear, the twist of the $\mathbb{C}$-bilinear polarisation |
 | ${}^{*} = \bar{\cdot} \circ {}^{\natural}$ | star; $\mathbb{C}$-antilinear, the twist of the Hermitian inner product |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
 
 ## Further Reading
 

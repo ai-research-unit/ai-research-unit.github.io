@@ -498,7 +498,7 @@ $$
 cF(\mathbf{A}_1)\,cF(\mathbf{A}_2) + cF(\mathbf{A}_2)\,cF(\mathbf{A}_1) = 2\langle \mathbf{A}_1, \mathbf{A}_2 \rangle I, \qquad \langle \mathbf{A}, \mathbf{A} \rangle = \mathbf{E}^2 - \mathbf{B}^2 + 2i\,\mathbf{E}\cdot\mathbf{B},
 $$
 
-in the complex bilinear form — no conjugation, so that $\langle \mathbf{A}, \mathbf{A} \rangle$ is the two field invariants in one — and they **commute with their own complex conjugates**,
+in the general plain bilinear form — no conjugation, so that $\langle \mathbf{A}, \mathbf{A} \rangle$ is the two field invariants in one — and they **commute with their own complex conjugates**,
 
 $$
 cF(\mathbf{A}_1)\,\overline{cF(\mathbf{A}_2)} = \overline{cF(\mathbf{A}_2)}\,cF(\mathbf{A}_1),
@@ -800,9 +800,9 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 | $c\nabla$ | The operator matrix of the same formulation |
 | $k = \omega\sqrt{\epsilon\mu}$ | Wavenumber in the medium at fixed frequency; shift of $D_3-k$ |
 | $\mathbf{u}$ | Particle or frame velocity |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

@@ -325,8 +325,8 @@ A rotated analyser measures $\tilde{S}(\hat{n}) = \tfrac{\hbar}{2}i\hat{n}$ for 
 | $\tilde{R}(\theta) = \exp(\tfrac{\theta}{2}e_2)$ | Rotor carrying $\hat{z}$ to $\hat{n}$ |
 | $\Delta z_\pm = \pm\hbar\gamma B'L^2/(4mv^2)$ | Deflections of the two beams |
 | $\cos^2(\theta/2)$ | Probability of "up" at the rotated analyser |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

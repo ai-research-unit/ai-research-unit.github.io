@@ -151,7 +151,7 @@ the real matrices. The real form of $M_n(\mathbb{C})$ with the conjugate transpo
 
 ### The Biquaternion Algebra
 
-Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as the complex algebra of *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*, with the coordinate basis $e_0, e_1, e_2, e_3$ and the two conjugations of that article: the coefficient conjugation $\bar{\cdot}$ and the involution $\natural$ that negates the vector units, with the Hermitian conjugation ${}^{*}=\bar{\cdot}\circ\natural$. The coefficient conjugation
+Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as the complex algebra of *Introduction to the General Plain Algebra of Biquaternions*, with the coordinate basis $e_0, e_1, e_2, e_3$ and the two conjugations of that article: the coefficient conjugation $\bar{\cdot}$ and the involution $\natural$ that negates the vector units, with the Hermitian conjugation ${}^{*}=\bar{\cdot}\circ\natural$. The coefficient conjugation
 
 $$
 \alpha=\bar{\cdot}, \qquad \alpha(z\,e_\nu)=\varsigma(z)\,e_\nu,

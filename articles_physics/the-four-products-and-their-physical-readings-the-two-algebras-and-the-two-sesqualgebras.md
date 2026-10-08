@@ -31,7 +31,7 @@ the two properties a physical theory cares about most.
 jobs a relativistic quantum theory needs.** The plain product is **composition**, the product of
 operations and of the identity operation. The quaternionic product is **causality**, because its square
 is the interval. The sesquilinear product is **probability**, because its form is positive definite and
-is the Born pairing. The quaternionic sesquilinear product is **gauge**, because its form is indefinite
+is the Born pairing. The general quaternionic sesquilinear product is **gauge**, because its form is indefinite
 and its ternary product is not a state space. Each of the four readings is labelled in §*The Four
 Readings* and in §*The Ledger*, and none of them is proved here: what is proved is the grid, and the
 reading is what the framework does with it.
@@ -134,7 +134,7 @@ The grid is:
 | | $K_2=\mathrm{id}$ | $K_2={}^{*}$ |
 |---|---|---|
 | $K_1=\mathrm{id}$ | the plain product $\tilde P\tilde Q$ | the sesquilinear product $\tilde P\tilde Q^{*}$ |
-| $K_1={}^{\natural}$ | the quaternionic product $\tilde P^{\natural}\tilde Q$ | the quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ |
+| $K_1={}^{\natural}$ | the quaternionic product $\tilde P^{\natural}\tilde Q$ | the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ |
 
 **The two rows are not a second classification; they are the first slot.** The upper row has no
 ${}^{\natural}$ and the lower row has it, and by §*What the Two Slots Decide* that single difference is
@@ -148,7 +148,7 @@ structure of an **algebra over $\mathbb{C}$**; when it carries the star the prod
 $\mathbb{C}$-linear in the first factor and conjugate-linear in the second and defines the structure of
 a **sesqualgebra over $\mathbb{C}$**. This is the split made in *Comparison Between the Four
 Biquaternion Products*, and it is the reason the corpus has the four objects *Biquaternions as an
-Algebra over $\mathbb{C}$*, *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*, *Biquaternions
+Algebra over $\mathbb{C}$*, *Introduction to the General Quaternionic Algebra of Biquaternions*, *Biquaternions
 as a Sesqualgebra over $\mathbb{C}$* and *Biquaternions as a Quaternionic Sesqualgebra over
 $\mathbb{C}$* and not one object with four products.
 
@@ -221,7 +221,7 @@ The table gathers the rows of the property table of *Comparison Between the Four
 — bilinearity, the two identities, the monoid of the left multiplications and associativity — read by
 slot rather than by column, together with the two form rows of *The Four Pairings of the Biquaternion
 Algebra* and the restriction table of §*The Six Subspaces*, and the row of the scalar square, which is
-the property selected in *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*. The table is the
+the property selected in *Introduction to the General Quaternionic Algebra of Biquaternions*. The table is the
 article's central claim in tabular form, and it says that the two slots carry two independent
 structures:
 
@@ -238,7 +238,7 @@ structures:
 $e_0$ is a left identity for exactly the two products whose second slot is trivial, and a right identity
 for exactly the two whose first slot is trivial. So the plain product alone has a two-sided identity,
 and it alone is associative; the quaternionic product has a left identity and no right one; the
-sesquilinear product has a right identity and no left one; and the quaternionic sesquilinear product has
+sesquilinear product has a right identity and no left one; and the general quaternionic sesquilinear product has
 neither. In the notation of the slots,
 
 $$e_0\star\tilde Q=\tilde Q \iff K_2=\mathrm{id},\qquad
@@ -262,7 +262,7 @@ $$\tilde Q^{\natural}\tilde Q=N(\tilde Q)\,e_0,\qquad N(\tilde Q)=\sum_{\mu=0}^{
 The square of an element is scalar for the quaternionic product and for that product alone. It is not
 scalar for the plain product, where $\tilde Q\tilde Q$ retains the vector part
 $2Q_0\mathbf Q+\mathbf Q\times\mathbf Q$; not for the sesquilinear product, where $\tilde Q\tilde Q^{*}$
-is the rank-one pairing and not a scalar; and not for the quaternionic sesquilinear product either.
+is the rank-one pairing and not a scalar; and not for the general quaternionic sesquilinear product either.
 **Only one of the four products turns an element into a number, and it is the one whose first slot is
 ${}^{\natural}$ and whose second slot is trivial.**
 
@@ -323,7 +323,7 @@ this is the product of **probability**: it is the pairing that returns an amplit
 and a probability after squaring, and it is the only product of the four that carries positivity. Its
 block owns the sesquilinear square, the positivity of the dagger and the reading mass equals rank.
 
-**The quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$** has no identity on either
+**The general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$** has no identity on either
 side. It is not the derived operation: it is the **isotope** of the derived operation by the natural
 conjugation, $\tilde P\star\tilde Q={}^{\natural}(\tilde P)\tilde Q^{*}$, so it is obtained from the
 sesquilinear product by acting on the first slot and not by deriving anything new from the algebra. Its
@@ -471,7 +471,7 @@ produces a metric: it turns $B$ into $N$ in the bilinear row and $H$ into $K$ in
 
 **Caution.** The identities are form-level and are read on the sectors, with both arguments taken there;
 they do not say that the four products agree. Off the sectors the four forms are four. In particular
-$K=N$ on $\mathbb{M}_+$ does not make the quaternionic sesquilinear product a bilinear one there, and
+$K=N$ on $\mathbb{M}_+$ does not make the general quaternionic sesquilinear product a bilinear one there, and
 $H=-B$ on $\mathbb{M}_-$ does not make the ordinary product a pairing.
 
 ## The Four Readings
@@ -532,7 +532,7 @@ because they are what makes the reading in the table above a reading of *gauge* 
 state space.
 
 - **No identity on either side.** Unlike the sesquilinear product, which has a right identity, the
-  quaternionic sesquilinear product has none, so it is not the derived operation of the algebra with any
+  general quaternionic sesquilinear product has none, so it is not the derived operation of the algebra with any
   involution; it is the ${}^{\natural}$-isotope of the derived operation instead.
 - **The ternary product is not a Jordan triple.** The ternary product built from it has the parity of
   an algebraic $J^{*}$-algebra and satisfies the symmetry and linearity axioms of a Jordan triple
@@ -553,10 +553,10 @@ four objects this article maps, and they are placed in the order of the corpus's
 
 | block of the physics menu | the product | the form | the maths anchor |
 |---|---|---|---|
-| *Focus on the Plain Product — Composition* | $\tilde P\tilde Q$ | $B$ | *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$* |
-| *Focus on the Quaternionic Product — Causality* | $\tilde P^{\natural}\tilde Q$ | $N$ | *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$* |
-| *Focus on the Sesquilinear Product — Probability* | $\tilde P\tilde Q^{*}$ | $H$ | *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* |
-| *Focus on the Quaternionic Sesquilinear Product — Gauge* | $\tilde P^{\natural}\tilde Q^{*}$ | $K$ | *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$* |
+| *Focus on the General Plain Algebra (GPA) of Biquaternions — Composition* | $\tilde P\tilde Q$ | $B$ | *Introduction to the General Plain Algebra of Biquaternions* |
+| *Focus on the General Quaternionic Algebra (GQA) of Biquaternions — Causality* | $\tilde P^{\natural}\tilde Q$ | $N$ | *Introduction to the General Quaternionic Algebra of Biquaternions* |
+| *Focus on the General Plain Sesqualgebra (GPS) of Biquaternions — Probability* | $\tilde P\tilde Q^{*}$ | $H$ | *Introduction to the General Plain Sesqualgebra of Biquaternions* |
+| *Focus on the General Quaternionic Sesqualgebra (GQS) of Biquaternions — Gauge* | $\tilde P^{\natural}\tilde Q^{*}$ | $K$ | *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* |
 
 The division of labour among the four is fixed, and the corpus keeps to it.
 
@@ -570,7 +570,7 @@ The division of labour among the four is fixed, and the corpus keeps to it.
 - **The sesqualgebra** carries the state space: the sesquilinear product, the positivity of the
   dagger, the state cones and the Born pairing.
 - **The quaternionic sesqualgebra**, the fourth corner, carries the indefinite structure: the
-  quaternionic sesquilinear product and the Krein form $K$, the indefinite-metric companion that is not
+  general quaternionic sesquilinear product and the Krein form $K$, the indefinite-metric companion that is not
   a state space.
 
 From this follow the two rules that make the four blocks readable as four. **A block reads its own
@@ -595,7 +595,7 @@ $N=\sum_\mu P_\mu Q_\mu$, $H=\sum_\mu P_\mu\overline{Q_\mu}$ and
 $K=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, so that $\varepsilon$ survives exactly when the two
 slots agree and the bar appears with the second slot. The quaternionic product is the only one of the
 four whose square is scalar, and $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_0$. Only the sesquilinear
-product is the derived operation of the algebra with ${}^{*}$, and the quaternionic sesquilinear product
+product is the derived operation of the algebra with ${}^{*}$, and the general quaternionic sesquilinear product
 is its ${}^{\natural}$-isotope and has no identity on either side. The four scalar forms are one
 bilinear form read through the two involutions, $N(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q)$,
 $H(\tilde P,\tilde Q)=B(\tilde P,\tilde Q^{*})$ and
@@ -636,7 +636,7 @@ second slot is therefore the corpus's division into two **algebras over $\mathbb
 slot. Reading the grid physically, the four products are the four jobs a relativistic quantum theory
 needs — composition, causality, probability and gauge — with the plain product associative and
 two-sidedly unital, the quaternionic product carrying the interval, the sesquilinear product carrying
-the positive definite Born form and the state space, and the quaternionic sesquilinear product carrying
+the positive definite Born form and the state space, and the general quaternionic sesquilinear product carrying
 an indefinite Krein form with no identity on either side and a ternary product that is not a Jordan
 triple. The four scalar forms are one bilinear form read through the two involutions, and on a sector
 the two sesquilinear forms are the two bilinear ones up to the sign of that sector, so that on a sector
@@ -655,7 +655,7 @@ physics menu are these four objects, and this article is their map.
 | $\tilde P\tilde Q$ | Plain product; slots $(\mathrm{id},\mathrm{id})$; associative, two-sided identity |
 | $\tilde P^{\natural}\tilde Q$ | Quaternionic product; slots $({}^{\natural},\mathrm{id})$; scalar square, the interval |
 | $\tilde P\tilde Q^{*}$ | Sesquilinear product; slots $(\mathrm{id},{}^{*})$; the derived operation |
-| $\tilde P^{\natural}\tilde Q^{*}$ | Quaternionic sesquilinear product; slots $({}^{\natural},{}^{*})$; no identity |
+| $\tilde P^{\natural}\tilde Q^{*}$ | General quaternionic sesquilinear product; slots $({}^{\natural},{}^{*})$; no identity |
 | $B,N,H,K$ | The four scalar forms; $\varepsilon$ survives when the two slots agree, the bar with the second |
 | $\varepsilon=(1,-1,-1,-1)$ | The sign pattern of $\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ |
 | $\mathbb{M}_-$ | Material sector, the anti-Hermitian real four-space; the four forms read $(-,-,-,-)$, $(-,+,+,+)$, $(+,+,+,+)$, $(+,-,-,-)$ |
@@ -693,7 +693,7 @@ physics menu are these four objects, and this article is their map.
   (`articles_maths/the-four-products-and-their-two-slots-the-two-algebras-and-the-two-sesqualgebras.md`),
   for the slot construction stated and proved in general, with the two theorems that the second slot
   decides the composition and the first the form, and the second instance on $M_2(\mathbb{C})$.
-- Mathematics article *The Square of the Quaternionic Sesquilinear Product and the Two Halves*
+- Mathematics article *The Square of the General quaternionic Sesquilinear Product and the Two Halves*
   (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the
   sign of the square on the two sectors, $\tilde Q\star\tilde Q=\pm N(\tilde Q)e_0$.
 - Companion article *The Ordinary Product and the Material Sector*, for the form $B$ alone on the six

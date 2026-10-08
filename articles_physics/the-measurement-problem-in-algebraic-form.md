@@ -239,8 +239,8 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $A = \mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\tilde\Pi_-$ | Pointer (commutative) subalgebra |
 | $\mathrm{Tr}(\tilde{\rho}^2)$ | Purity; $= \tfrac{1}{2}(1 + \|\mathbf{r}\|^2)$ |
 | $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(\|\mathbf{r}\|^2 - 1)e_0$ | Deviation from idempotency (mixedness) |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

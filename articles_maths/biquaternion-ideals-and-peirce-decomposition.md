@@ -22,13 +22,13 @@ For a two-sided ideal $I$, the **quotient algebra** $A/I$ is the set of cosets w
 
 **Proof.** Let $I \neq 0$ be a two-sided ideal. It is a $\mathbb{C}$-subspace, because multiplication by the central element $i$ is left multiplication by an element of $\mathbb{B}$. Fix $0 \neq \tilde{Q} = \sum_\mu Q_\mu e_\mu \in I$. For every unit $\tilde B \in \mathbb{B}$ the conjugate $\tilde B\tilde{Q}\tilde B^{-1}$ lies in $I$, since $I$ is two-sided.
 
-Average the conjugates over the finite group $\{\pm e_0, \pm e_1, \pm e_2, \pm e_3\}$. Conjugation by $e_\mu$ fixes $e_0$ and $e_\mu$ and reverses $e_\nu$ for $\nu \neq \mu$, so the group elements of quaternion part $\pm e_\mu$ all give the same conjugate, and the average is twice
+Average the conjugates over the finite group $\{\pm e_0, \pm e_1, \pm e_2, \pm e_3\}$. Conjugation by $e_\mu$ fixes $e_0$ and $e_\mu$ and reverses $e_\nu$ for $\nu \neq \mu$, so the elements $e_\mu$ and $-e_\mu$ give the same conjugate, and the sum over the four representatives $e_0, e_1, e_2, e_3$ is
 
 $$
-Q_0 e_0 + \tfrac12\big(Q_0 e_0 + Q_1 e_1 - Q_2 e_2 - Q_3 e_3\big) + \tfrac12\big(Q_0 e_0 - Q_1 e_1 + Q_2 e_2 - Q_3 e_3\big) + \tfrac12\big(Q_0 e_0 - Q_1 e_1 - Q_2 e_2 + Q_3 e_3\big) = 4 Q_0 e_0,
+\tilde Q + \big(Q_0 e_0 + Q_1 e_1 - Q_2 e_2 - Q_3 e_3\big) + \big(Q_0 e_0 - Q_1 e_1 + Q_2 e_2 - Q_3 e_3\big) + \big(Q_0 e_0 - Q_1 e_1 - Q_2 e_2 + Q_3 e_3\big) = 4 Q_0 e_0,
 $$
 
-divided by $8$, giving $Q_0 e_0 \in I$. If $Q_0 \neq 0$ then $e_0 = Q_0^{-1}(Q_0 e_0) \in I$ and $I = \mathbb{B}$. If $Q_0 = 0$ then $\tilde{Q}$ is a nonzero element of the vector subspace, and conjugating it by the real unit quaternions rotates it: the conjugates run over a sphere in $\mathrm{Vect}(\mathbb{B})$, whose real span is all of $\mathrm{Vect}(\mathbb{B})$, so $\mathrm{Vect}(\mathbb{B}) \subseteq I$. In particular $e_1 \in I$, hence $e_1^2 = -e_0 \in I$ and again $I = \mathbb{B}$.
+the sum over all eight is twice this, and the average is that sum divided by $8$, giving $Q_0 e_0 \in I$. If $Q_0 \neq 0$ then $e_0 = Q_0^{-1}(Q_0 e_0) \in I$ and $I = \mathbb{B}$. If $Q_0 = 0$ then $\tilde{Q}$ is a nonzero element of the vector subspace, and conjugating it by the real unit quaternions rotates it: the conjugates run over the real unit vectors in $\mathrm{Vect}(\mathbb{B})$, whose real span is all of $\mathrm{Vect}(\mathbb{B})$, so $\mathrm{Vect}(\mathbb{B}) \subseteq I$. In particular $e_1 \in I$, hence $e_1^2 = -e_0 \in I$ and again $I = \mathbb{B}$.
 
 Consequences over $\mathbb{C}$:
 
@@ -194,7 +194,7 @@ $$
 
 using $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{C} \oplus \mathbb{C}$ and the associativity and commutativity of $\otimes_{\mathbb{R}}$. The algebra on the right is **not simple**: its two-sided ideals are $0$, the two summands, and the whole ring. So the real biquaternion algebra is **not absolutely simple**: simple over $\mathbb{R}$, but with a complexification that splits as a product of two simple algebras. This is the precise sense in which the real structure carries a richer two-sided ideal theory — not in the lattice of $\mathbb{B}$ itself, which is $\{0, \mathbb{B}\}$ in both views, but in the lattice produced by base change. In contrast, $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{B}$ is simple: it is the real biquaternion algebra, not $\mathbb{H}$, whose complexification splits.
 
-**(d) The action of complex conjugation on the lattice.** Complex conjugation $\tilde{Q} \mapsto \tilde{Q}^{*} = \sum_\mu \bar{Q}_\mu e_\mu$ is an $\mathbb{R}$-algebra automorphism of $\mathbb{B}$ (it is $\mathbb{C}$-antilinear), so it permutes the left ideals, $\sigma(\mathbb{B}\tilde{\chi}) = \mathbb{B}\sigma(\tilde{\chi})$. Since $\sigma(\tilde\Pi_1) = \tilde\Pi_2$ and $\sigma(\tilde\Pi_2) = \tilde\Pi_1$, it **interchanges the two standard left ideals**:
+**(d) The action of complex conjugation on the lattice.** Complex conjugation $\tilde{Q} \mapsto \bar{\tilde{Q}} = \sum_\mu \bar{Q}_\mu e_\mu$ is an $\mathbb{R}$-algebra automorphism of $\mathbb{B}$ (it is $\mathbb{C}$-antilinear); write $\sigma$ for it. It permutes the left ideals, $\sigma(\mathbb{B}\tilde{\chi}) = \mathbb{B}\sigma(\tilde{\chi})$. Since $\sigma(\tilde\Pi_1) = \tilde\Pi_2$ and $\sigma(\tilde\Pi_2) = \tilde\Pi_1$, it **interchanges the two standard left ideals**:
 
 $$
 \sigma(\mathbb{B}\tilde\Pi_1) = \mathbb{B}\tilde\Pi_2, \qquad \sigma(\mathbb{B}\tilde\Pi_2) = \mathbb{B}\tilde\Pi_1.

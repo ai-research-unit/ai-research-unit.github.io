@@ -184,7 +184,7 @@ components; the counts, four per biquaternion pair against sixteen per Dirac pai
 the rearrangement coefficients differ between the two bases.
 
 The **five types** of Dirac bilinear are scalar, vector, tensor, axial and pseudoscalar, with $1,4,6,4,1$
-components summing to the sixteen of the Dirac algebra. The biquaternion bilinears sit inside that
+components summing to the sixteen of the Dirac algebra. The bigeneral quaternionic bilinears sit inside that
 classification.
 
 **The module and its inner product.** The spinors $s,t$ above live in the minimal left ideal
@@ -320,9 +320,9 @@ $$
 -\{\tilde U,\tilde V,\{\tilde P,\tilde Q,\tilde R\}\}=0 ,
 $$
 
-and the biquaternion sesquilinear ternary product **satisfies it**.
+and the bigeneral quaternionic sesquilinear ternary product **satisfies it**.
 
-**The fourth form fails.** The **quaternionic sesquilinear product**
+**The fourth form fails.** The **general quaternionic sesquilinear product**
 $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ has a ternary product of the same formal shape,
 and it **fails**: on the five-tuple $(e_0,e_1,e_0,e_2,e_0)$ the two sides of the identity are
 $e_3$ and $-3e_3$. The failure is not a small-set accident — $480$ of the $1024$ basis five-tuples are
@@ -353,7 +353,7 @@ and whether any gauge vertex can be obtained from the ternary structure without 
 **Remark (verified).** The associator on $(e_0,e_1,e_1)$ is $-2e_0$; $\{e_1,e_2,e_3\}=e_0$ and
 $\{e_1,e_2,e_1\}=-e_2$; the Jordan triple identity holds for the sesquilinear ternary product on $100$
 random five-tuples with maximum deviation $2.7\times10^{-13}$, and no basis five-tuple violates it; the
-quaternionic sesquilinear ternary product violates it on $480$ of the $1024$ basis five-tuples, the
+general quaternionic sesquilinear ternary product violates it on $480$ of the $1024$ basis five-tuples, the
 witness $(e_0,e_1,e_0,e_2,e_0)$ giving $e_3$ and $-3e_3$.
 
 ## The Limits
@@ -378,7 +378,7 @@ compact by positivity of the dagger. The boosts have $N=1$ and $\lVert\tilde B(\
 coefficient $\tfrac12$ and the bilinear-product identity with coefficient $1$; the coefficient is never
 $\tfrac14$ over the four-element basis. Non-associativity with the witness $-2e_0$; the ternary product
 $\{\tilde P,\tilde Q,\tilde R\}=\tilde P\tilde Q^{*}\tilde R$ and its shadows; the Jordan triple identity
-for it, and its failure for the quaternionic sesquilinear product on $480$ of $1024$ basis five-tuples.
+for it, and its failure for the general quaternionic sesquilinear product on $480$ of $1024$ basis five-tuples.
 
 **Readings.** Dirac-like particles with distinct antiparticles; charge quantisation from compactness and
 continuous rapidity from non-compactness; the $s$-channel/$t$-channel exchange; the ternary product as a

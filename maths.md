@@ -12,34 +12,34 @@
 
 ### Theory
 
-###<a href="articles_maths/sets-functions-and-relations.html">Sets, Functions and Relations</a>
+### <a href="articles_maths/sets-functions-and-relations.html">Sets, Functions and Relations</a>
 <!-- sets and the membership relation; subsets, the power set and the algebra of subsets; ordered pairs and the Cartesian product; relations and their properties; equivalence relations, partitions and quotients; order relations, partial and total; functions as a special kind of relation, injective, surjective and bijective maps, composition and inverse; families and indexed sets; the algebra of subsets as the first example of a Boolean algebra, forward-referenced to Part VI. -->
 
-###<a href="articles_maths/logic-and-proof.html">Logic and Proof</a>
+### <a href="articles_maths/logic-and-proof.html">Logic and Proof</a>
 <!-- propositional logic: the connectives, truth tables and tautologies; the laws of the algebra of propositions and their identity with the algebra of subsets, forward-referenced to the Boolean algebras of Part VI; predicate logic: variables, quantifiers, free and bound occurrences; the rules of inference and the structure of a formal proof; direct, contrapositive and contradiction arguments; induction and recursion as proof principles; consistency and completeness in outline; the notational conventions used throughout this corpus. -->
 
-###<a href="articles_maths/order-theory-and-lattices.html">Order Theory and Lattices</a>
+### <a href="articles_maths/order-theory-and-lattices.html">Order Theory and Lattices</a>
 <!-- partial orders, total orders and well-orders; lattices, complete, distributive and modular lattices; Galois connections; the Knaster–Tarski theorem; the lattice of subsets, forward-referenced to the Boolean algebras of Part VI. -->
 
-###<a href="articles_maths/mereology-and-collective-set-theory.html">Mereology and Collective Set Theory</a>
+### <a href="articles_maths/mereology-and-collective-set-theory.html">Mereology and Collective Set Theory</a>
 <!-- the whole as primitive and the parts as the divisions of the whole, against the element-first construction of Zermelo–Fraenkel set theory; the division relation and its postulates, a pre-order that is not antisymmetric, with the divisibility of $\mathbb{Z}$ as the standard model and the passage to $\mathbb{N}$ as the antisymmetrisation; the observation that the postulates constrain the relation and not the quotient, so a unit-quotient rule is a physical hypothesis rather than a theorem; the quotient by mutual division; parthood and the two definitions of a proper part, which agree exactly when the relation is antisymmetric; mutual parts; overlap and disjointness; the strong and the weak supplementation principle, the non-part and the disjoint forms of the first, and the two-element order that separates them, together with the recovery of the classical implication under the second definition of a proper part when antisymmetry fails; extensionality as a postulate independent of antisymmetry under the first definition and equivalent to it under the second; the correspondence of classical mereology with a Boolean algebra without a least element, forward-referenced to Part VI. -->
 
-###<a href="articles_maths/cardinality-and-the-axiom-of-choice.html">Cardinality and the Axiom of Choice</a>
+### <a href="articles_maths/cardinality-and-the-axiom-of-choice.html">Cardinality and the Axiom of Choice</a>
 <!-- finite and infinite sets; equipotence and cardinality; countable and uncountable sets, the countability of $\mathbb{N} \times \mathbb{N}$ and of $\mathbb{Z}$, the uncountability of the power set of $\mathbb{N}$; Cantor's theorem and the cardinality of the power set; the continuum hypothesis; the axiom of choice, Zorn's lemma and the well-ordering theorem, and their equivalence; the uses of Zorn's lemma in this corpus: maximal ideals, bases of a vector space, algebraic closure, maximal filters; cardinal arithmetic. -->
 
-###<a href="articles_maths/set-theoretic-foundations.html">Set-Theoretic Foundations</a>
+### <a href="articles_maths/set-theoretic-foundations.html">Set-Theoretic Foundations</a>
 <!-- the Zermelo–Fraenkel axioms and the axiom of choice; ordinals and cardinals; transfinite induction and recursion; the cumulative hierarchy; the independence of the continuum hypothesis; large cardinals in outline. -->
 
-###<a href="articles_maths/formal-logic-and-computability.html">Formal Logic and Computability</a>
+### <a href="articles_maths/formal-logic-and-computability.html">Formal Logic and Computability</a>
 <!-- first-order logic, formal systems and derivations; soundness and completeness; compactness and the Löwenheim–Skolem theorem; Turing machines and recursive functions; decidability and undecidability; Gödel's incompleteness theorems; the halting problem. -->
 
-###<a href="articles_maths/model-theory.html">Model Theory</a>
+### <a href="articles_maths/model-theory.html">Model Theory</a>
 <!-- structures and languages; satisfaction and elementary equivalence; compactness; quantifier elimination; ultraproducts; the model theory of algebraically closed, real-closed and valued fields. -->
 
-###<a href="articles_maths/proof-theory-and-type-theory.html">Proof Theory and Type Theory</a>
+### <a href="articles_maths/proof-theory-and-type-theory.html">Proof Theory and Type Theory</a>
 <!-- natural deduction and the sequent calculus; cut elimination; normalisation; intuitionistic logic; the Curry–Howard correspondence; the lambda calculus; the categorical reading of proofs. -->
 
-###<a href="articles_maths/universal-properties-and-categories.html">Universal Properties and Categories</a>
+### <a href="articles_maths/universal-properties-and-categories.html">Universal Properties and Categories</a>
 <!-- objects and morphisms; the categories of sets, of groups, of rings and of modules over a fixed ring; functors, natural transformations and equivalence of categories; initial and terminal objects; universal properties and universal objects, with existence and uniqueness formulated as a single statement; products, coproducts, free objects, quotients and localisations as universal constructions; the universal properties this corpus relies on: the free group, the tensor product, the symmetric and exterior algebras, the fraction field, the completion; adjunction in outline. -->
 
 ### Operator Theory
@@ -106,7 +106,7 @@
 ### <a href="articles_maths/groups.html">Groups</a>
 <!-- definition (associativity, unit, inverses), elementary properties, order and powers, cyclic subgroups, subgroups, homomorphisms, cosets and Lagrange's theorem, normal subgroups and quotient groups, the isomorphism theorems, the centre, the commutator subgroup and abelianization, group actions, orbits and the orbit–stabiliser theorem, conjugacy and the class equation, $p$-groups, the Sylow theorems, symmetric, alternating and dihedral groups. -->
 
-###<a href="articles_maths/infinite-abelian-groups.html">Infinite Abelian Groups</a>
+### <a href="articles_maths/infinite-abelian-groups.html">Infinite Abelian Groups</a>
 <!-- abelian groups as modules over $\mathbb{Z}$; free abelian groups and rank; torsion and torsion-free groups; divisible groups and their classification; the structure of infinite abelian groups, the finitely generated case being treated separately. -->
 
 ### <a href="articles_maths/transformation-groups.html">Transformation Groups</a>
@@ -115,31 +115,31 @@
 ### <a href="articles_maths/group-actions-and-structure.html">Group Actions and Structure</a>
 <!-- group actions, orbits, stabilisers, the orbit–stabiliser theorem, Burnside's lemma, the centre, the commutator subgroup and abelianization, composition series, the Sylow theorems. -->
 
-###<a href="articles_maths/solvable-and-nilpotent-groups.html">Solvable and Nilpotent Groups</a>
+### <a href="articles_maths/solvable-and-nilpotent-groups.html">Solvable and Nilpotent Groups</a>
 <!-- solvable groups, the derived series and the commutator subgroup; nilpotent groups and the lower central series; Hall subgroups; the Fitting and Frattini subgroups; examples from matrix groups. -->
 
 ### <a href="articles_maths/generators-presentations-and-free-products.html">Generators, Presentations and Free Products</a>
 <!-- generating sets, presentations, free groups, free products, direct and semidirect products. -->
 
-###<a href="articles_maths/combinatorial-group-theory.html">Combinatorial Group Theory</a>
+### <a href="articles_maths/combinatorial-group-theory.html">Combinatorial Group Theory</a>
 <!-- free groups, presentations and the word problem; the Nielsen–Schreier theorem; the Kurosh subgroup theorem; HNN extensions and amalgamated products; the accessibility of finitely presented groups. -->
 
-###<a href="articles_maths/infinite-groups.html">Infinite Groups</a>
+### <a href="articles_maths/infinite-groups.html">Infinite Groups</a>
 <!-- infinite groups and their properties; finitely generated infinite groups, torsion groups and the Burnside problem; the Tits alternative; the algebraic theory only, the geometric theory of Cayley graphs and growth belonging to Part II. -->
 
-###<a href="articles_maths/coxeter-groups.html">Coxeter Groups</a>
+### <a href="articles_maths/coxeter-groups.html">Coxeter Groups</a>
 <!-- Coxeter systems and diagrams; the presentation of a Coxeter group; finite and affine Coxeter groups and the classification of the finite ones; the word problem; reflection groups and Weyl groups require a form and belong to Part II. -->
 
-###<a href="articles_maths/braid-groups.html">Braid Groups</a>
+### <a href="articles_maths/braid-groups.html">Braid Groups</a>
 <!-- the braid group on $n$ strands and its presentation; the pure braid group; the relation to the symmetric group; the algebraic properties of the braid groups. -->
 
-###<a href="articles_maths/group-cohomology.html">Group Cohomology</a>
+### <a href="articles_maths/group-cohomology.html">Group Cohomology</a>
 <!-- the cohomology of a group, the standard resolution and the low-dimensional interpretations; $H^1$ and $H^2$ as derivations and as extensions; the Schur multiplier; the cohomology of finite groups. -->
 
-###<a href="articles_maths/the-classification-of-finite-simple-groups.html">The Classification of Finite Simple Groups</a>
+### <a href="articles_maths/the-classification-of-finite-simple-groups.html">The Classification of Finite Simple Groups</a>
 <!-- the statement of the classification; the alternating groups; the groups of Lie type; the sporadic groups; the Feit–Thompson theorem; the classification of groups of small order. -->
 
-###<a href="articles_maths/finite-simple-groups-of-lie-type.html">Finite Simple Groups of Lie Type</a>
+### <a href="articles_maths/finite-simple-groups-of-lie-type.html">Finite Simple Groups of Lie Type</a>
 <!-- the Chevalley, Steinberg, Suzuki–Ree and twisted groups as abstract finite groups; the classification of the finite simple groups of Lie type; the orders of the groups; the algebraic-group structure, the Zariski topology and the building-theoretic constructions belong to Part II. -->
 
 ### Operator Theory
@@ -256,19 +256,19 @@
 ### <a href="articles_maths/localization-and-the-fraction-field.html">Localization and the Fraction Field</a>
 <!-- multiplicative sets, localization, $\operatorname{Frac}(R)$, local rings, the universal property. -->
 
-###<a href="articles_maths/noetherian-and-artinian-rings.html">Noetherian and Artinian Rings</a>
+### <a href="articles_maths/noetherian-and-artinian-rings.html">Noetherian and Artinian Rings</a>
 <!-- the ascending and descending chain conditions; the Hilbert basis theorem; the Akizuki–Hopkins theorem; the relation to the finitely generated modules of Part I. -->
 
-###<a href="articles_maths/primary-decomposition.html">Primary Decomposition</a>
+### <a href="articles_maths/primary-decomposition.html">Primary Decomposition</a>
 <!-- primary ideals and primary decomposition; the uniqueness of the associated primes; the relation to the Nullstellensatz and to the ideals of this part. -->
 
-###<a href="articles_maths/integral-extensions-and-krull-dimension.html">Integral Extensions and Krull Dimension</a>
+### <a href="articles_maths/integral-extensions-and-krull-dimension.html">Integral Extensions and Krull Dimension</a>
 <!-- integral extensions; the lying-over, going-up and going-down theorems; the Krull dimension; the dimension of a polynomial ring. -->
 
-###<a href="articles_maths/dedekind-domains-and-ideal-class-groups.html">Dedekind Domains and Ideal Class Groups</a>
+### <a href="articles_maths/dedekind-domains-and-ideal-class-groups.html">Dedekind Domains and Ideal Class Groups</a>
 <!-- Dedekind domains and the unique factorisation of ideals; fractional ideals; the ideal class group and the finiteness of the class number. -->
 
-###<a href="articles_maths/valuation-theory-and-henselian-rings.html">Valuation Theory and Henselian Rings</a>
+### <a href="articles_maths/valuation-theory-and-henselian-rings.html">Valuation Theory and Henselian Rings</a>
 <!-- valuations and valuation rings; the extension of valuations; the p-adic completions are treated in Part II, where a distance first appears; Hensel's lemma, Henselian rings and the lifting of factorisations. -->
 
 ### <a href="articles_maths/fields.html">Fields</a>
@@ -289,49 +289,49 @@
 ### <a href="articles_maths/ring-and-field-automorphisms.html">Ring and Field Automorphisms</a>
 <!-- the transformation group of a ring, $\operatorname{Aut}(R)$, and what it preserves: addition and multiplication, hence $0$, $1$ and the prime subfield; inner automorphisms $x\mapsto uxu^{-1}$ by a unit $u$, and the failure of commutativity in the non-commutative case; the fixed subring and the invariance of the centre; field automorphisms, the prime field as their fixed field, and complex conjugation on $\mathbb{C}$; the Frobenius $x\mapsto x^p$ in prime characteristic as an automorphism of a finite field; the Galois group $\operatorname{Gal}(L/K)$ as the automorphism group of $L$ over $K$; what an automorphism of a ring does not preserve: no length, angle or norm is involved. -->
 
-###<a href="articles_maths/cyclotomic-fields.html">Cyclotomic Fields</a>
+### <a href="articles_maths/cyclotomic-fields.html">Cyclotomic Fields</a>
 <!-- the cyclotomic polynomial and the cyclotomic field; the Galois group; the relation to the Galois theory of this part; the constructible polygons belong to Part IV. -->
 
-###<a href="articles_maths/kummer-theory.html">Kummer Theory</a>
+### <a href="articles_maths/kummer-theory.html">Kummer Theory</a>
 <!-- abelian extensions of exponent $n$; the Kummer pairing. -->
 
-###<a href="articles_maths/galois-cohomology.html">Galois Cohomology</a>
+### <a href="articles_maths/galois-cohomology.html">Galois Cohomology</a>
 <!-- the cohomology of a Galois group, over the fields met in the earlier articles. -->
 
-###<a href="articles_maths/class-field-theory.html">Class Field Theory</a>
+### <a href="articles_maths/class-field-theory.html">Class Field Theory</a>
 <!-- abelian extensions of the $p$-adic fields and of the number fields; the Artin reciprocity law; the Hilbert class field; the relation to Galois cohomology and to Kummer theory; the adelic formulation is not developed here. -->
 
-###<a href="articles_maths/algebraic-number-theory.html">Algebraic Number Theory</a>
+### <a href="articles_maths/algebraic-number-theory.html">Algebraic Number Theory</a>
 <!-- number fields and rings of integers; ideals and unique factorisation; the ideal class group and Dirichlet's unit theorem; the Minkowski theory; the decomposition of primes; the relation to Galois theory. -->
 
-###<a href="articles_maths/global-fields.html">Global Fields</a>
+### <a href="articles_maths/global-fields.html">Global Fields</a>
 <!-- number fields and function fields of curves over a finite field as the two kinds of global field; places and the product formula; the arithmetic of global fields. -->
 
-###<a href="articles_maths/elliptic-curves.html">Elliptic Curves</a>
+### <a href="articles_maths/elliptic-curves.html">Elliptic Curves</a>
 <!-- elliptic curves and the group law; the Weierstrass equation; the Mordell–Weil theorem; the algebraic theory of elliptic curves and their isogenies; the L-function and modularity are treated in Part III. -->
 
-###<a href="articles_maths/algebraic-curves.html">Algebraic Curves</a>
+### <a href="articles_maths/algebraic-curves.html">Algebraic Curves</a>
 <!-- affine and projective plane curves; the function field of a curve; divisors and the genus; the relation to algebraic number theory and to the Riemann–Roch theorem. -->
 
-###<a href="articles_maths/the-riemann-roch-theorem-for-curves.html">The Riemann–Roch Theorem for Curves</a>
+### <a href="articles_maths/the-riemann-roch-theorem-for-curves.html">The Riemann–Roch Theorem for Curves</a>
 <!-- divisors and linear systems on a curve; the classical Riemann–Roch theorem and Serre duality for curves; the genus as the first obstruction; the surface and Grothendieck forms require the sheaf and derived machinery of Part II. -->
 
-###<a href="articles_maths/grobner-bases-and-elimination-theory.html">Gröbner Bases and Elimination Theory</a>
+### <a href="articles_maths/grobner-bases-and-elimination-theory.html">Gröbner Bases and Elimination Theory</a>
 <!-- monomial orders; the division algorithm; Gröbner bases and Buchberger's algorithm; the elimination theorem; the relation to polynomial rings and to ideal theory; resultants, discriminants and the elimination theorem, as the classical counterpart of Buchberger's algorithm. -->
 
-###<a href="articles_maths/invariant-theory.html">Invariant Theory</a>
+### <a href="articles_maths/invariant-theory.html">Invariant Theory</a>
 <!-- the invariant ring of a group action; the Hilbert basis theorem for invariants; the nullcone. -->
 
-###<a href="articles_maths/symmetric-functions-and-schur-functions.html">Symmetric Functions and Schur Functions</a>
+### <a href="articles_maths/symmetric-functions-and-schur-functions.html">Symmetric Functions and Schur Functions</a>
 <!-- symmetric polynomials and symmetric functions; the elementary, complete and power-sum bases; the fundamental theorem of symmetric functions; the Schur functions and Young tableaux, the Jacobi–Trudi identity and the Littlewood–Richardson rule. -->
 
-###<a href="articles_maths/representation-theory-of-symmetric-groups.html">Representation Theory of Symmetric Groups</a>
+### <a href="articles_maths/representation-theory-of-symmetric-groups.html">Representation Theory of Symmetric Groups</a>
 <!-- the irreducible representations of the symmetric group; Young diagrams and Specht modules; the hook length formula. -->
 
-###<a href="articles_maths/schur-weyl-duality.html">Schur–Weyl Duality</a>
+### <a href="articles_maths/schur-weyl-duality.html">Schur–Weyl Duality</a>
 <!-- the double commutant theorem for the symmetric and general linear groups; the decomposition of tensor powers of the defining representation. -->
 
-###<a href="articles_maths/the-inverse-galois-problem.html">The Inverse Galois Problem</a>
+### <a href="articles_maths/the-inverse-galois-problem.html">The Inverse Galois Problem</a>
 <!-- the problem and its history; the solution for solvable groups; the relation to the classification of finite simple groups and to the Galois theory of this part. -->
 
 ### <a href="articles_maths/ordered-fields.html">Ordered Fields</a>
@@ -361,7 +361,7 @@
 ### <a href="articles_maths/von-neumann-regular-rings.html">Von Neumann Regular Rings</a>
 <!-- a ring in which every principal left ideal is generated by an idempotent, equivalently every finitely generated left ideal is idempotent-generated; the commutative von Neumann regular rings as exactly the reduced rings of Krull dimension zero, equivalently those whose localization at every maximal ideal is a field; reduced von Neumann regular rings as the strongly regular rings; Boolean rings as the examples of characteristic two, and $\mathbb{Z}$, $k[x]$, $\mathbb{Z}/4\mathbb{Z}$ and the local rings as the non-examples; the failure of the class to be closed under quotients, and the place of the class among the rings of *Reduced Rings and the Nilradical*. -->
 
-###<a href="articles_maths/real-algebraic-geometry.html">Real Algebraic Geometry</a>
+### <a href="articles_maths/real-algebraic-geometry.html">Real Algebraic Geometry</a>
 <!-- real algebraic sets and semialgebraic sets; the Tarski–Seidenberg theorem; the relation to the real-closed fields of this part. -->
 
 ### Operator Theory
@@ -444,13 +444,13 @@
 
 ### Applications
 
-###<a href="articles_maths/polynomial-rings-and-rational-functions.html">Polynomial Rings and Rational Functions</a>
+### <a href="articles_maths/polynomial-rings-and-rational-functions.html">Polynomial Rings and Rational Functions</a>
 <!-- the polynomial ring $R[x]$ and its universal property; degree and the division algorithm; roots, the factor theorem and multiplicity; $R[x]$ as the free commutative $R$-algebra; the field of rational functions $R(x)$ as the fraction field; partial fractions; the comparison with the non-commutative polynomial ring and with the free algebra. -->
 
-###<a href="articles_maths/examples-of-rings-and-fields.html">Examples of Rings and Fields</a>
+### <a href="articles_maths/examples-of-rings-and-fields.html">Examples of Rings and Fields</a>
 <!-- worked examples of rings, integral domains and fields: $\mathbb{Z}$, $\mathbb{Z}/n$, $R[x]$, the Gaussian and Eisenstein integers, $\mathbb{Q}(\sqrt{2})$, the finite fields; for each: the units, the zero divisors, the ideals, whether it is a domain, a field, a PID or a UFD; the counterexamples that separate the notions. -->
 
-###<a href="articles_maths/linear-codes-over-finite-fields.html">Linear Codes over Finite Fields</a>
+### <a href="articles_maths/linear-codes-over-finite-fields.html">Linear Codes over Finite Fields</a>
 <!-- linear codes over a finite field, generator and parity-check matrices; the Hamming and Reed–Solomon codes; the minimum weight and the decoding problem; the algebraic constructions only, the information-theoretic questions belonging elsewhere. -->
 
 ## Linear Spaces
@@ -493,7 +493,7 @@
 ### <a href="articles_maths/affine-spaces-and-translations.html">Affine Spaces and Translations</a>
 <!-- an affine space as a set on which $V$ acts simply transitively (a torsor); translations as the additive group $V$; a translation has no fixed point and is not linear; the affine group $\operatorname{Aff}(V)=V\rtimes GL(V)$; affine independence, barycentres and affine combinations; points, lines and planes; the isometry group of an affine space is treated in Part IV, where a form and a distance are introduced. -->
 
-###<a href="articles_maths/multilinear-spaces.html">Multilinear Spaces</a>
+### <a href="articles_maths/multilinear-spaces.html">Multilinear Spaces</a>
 <!-- multilinear maps and the tensor product; the universal property; the relation to the tensor, symmetric and exterior algebras of this part. -->
 
 ### <a href="articles_maths/the-balanced-product.html">The Balanced Product</a>
@@ -625,16 +625,16 @@
 ### <a href="articles_maths/centre-units-zero-divisors-and-division-algebras.html">Centre, Units, Zero Divisors and Division Algebras</a>
 <!-- the centre, units, zero divisors, the regular module $A_A$. -->
 
-###<a href="articles_maths/central-simple-algebras-and-the-brauer-group.html">Central Simple Algebras and the Brauer Group</a>
+### <a href="articles_maths/central-simple-algebras-and-the-brauer-group.html">Central Simple Algebras and the Brauer Group</a>
 <!-- central simple algebras over a field; the Skolem–Noether theorem; the Brauer group of a field and the skew fields that represent its classes. -->
 
-###<a href="articles_maths/crossed-products.html">Crossed Products</a>
+### <a href="articles_maths/crossed-products.html">Crossed Products</a>
 <!-- crossed products of algebras by group actions. -->
 
-###<a href="articles_maths/separable-algebras.html">Separable Algebras</a>
+### <a href="articles_maths/separable-algebras.html">Separable Algebras</a>
 <!-- separable algebras over a commutative ring; the relation to the central simple algebras and to the étale algebras of this part. -->
 
-###<a href="articles_maths/frobenius-algebras.html">Frobenius Algebras</a>
+### <a href="articles_maths/frobenius-algebras.html">Frobenius Algebras</a>
 <!-- Frobenius algebras and their properties. -->
 
 ### <a href="articles_maths/automorphisms-and-derivations-of-algebras.html">Automorphisms and Derivations of Algebras</a>
@@ -651,73 +651,73 @@
 
 ### <a href="articles_maths/tensor-products-of-algebras.html">Tensor Products of Algebras</a>
 <!-- the product formula $(a\otimes b)(a'\otimes b')=(aa')\otimes(bb')$, unit, commuting images, the pushout, the coproduct, the free product. -->
-###<a href="articles_maths/hopf-algebras.html">Hopf Algebras</a>
+### <a href="articles_maths/hopf-algebras.html">Hopf Algebras</a>
 <!-- algebras, coalgebras and bialgebras; the antipode. -->
 
-###<a href="articles_maths/quantum-groups.html">Quantum Groups</a>
+### <a href="articles_maths/quantum-groups.html">Quantum Groups</a>
 <!-- quantised enveloping algebras; the quantum plane. -->
 
-###<a href="articles_maths/deformation-quantization.html">Deformation Quantization</a>
+### <a href="articles_maths/deformation-quantization.html">Deformation Quantization</a>
 <!-- star products and formal deformations of an algebra; the relation to the Poisson algebras and to the deformation theory of this part. -->
 
-###<a href="articles_maths/koszul-duality.html">Koszul Duality</a>
+### <a href="articles_maths/koszul-duality.html">Koszul Duality</a>
 <!-- Koszul algebras and their duals; the relation to quadratic algebras and to the operads of this part. -->
 
-###<a href="articles_maths/differential-graded-algebras.html">Differential Graded Algebras</a>
+### <a href="articles_maths/differential-graded-algebras.html">Differential Graded Algebras</a>
 <!-- differential graded algebras and their homology; the relation to the homological algebra of this part. -->
 
-###<a href="articles_maths/differential-graded-categories.html">Differential Graded Categories</a>
+### <a href="articles_maths/differential-graded-categories.html">Differential Graded Categories</a>
 <!-- differential graded categories and their modules; the relation to the derived categories of this part. -->
 
-###<a href="articles_maths/a-infinity-and-l-infinity-algebras.html">A-Infinity and L-Infinity Algebras</a>
+### <a href="articles_maths/a-infinity-and-l-infinity-algebras.html">A-Infinity and L-Infinity Algebras</a>
 <!-- $A_\infty$-algebras and their morphisms; the relation to the differential graded algebras of this part and to homotopy theory. -->
 
-###<a href="articles_maths/calabi-yau-algebras.html">Calabi–Yau Algebras</a>
+### <a href="articles_maths/calabi-yau-algebras.html">Calabi–Yau Algebras</a>
 <!-- Calabi–Yau algebras and their Hochschild homology; the relation to the derived categories of this part. -->
 
-###<a href="articles_maths/module-categories.html">Module Categories</a>
+### <a href="articles_maths/module-categories.html">Module Categories</a>
 <!-- the category of modules over a ring; functors and natural transformations between module categories. -->
 
-###<a href="articles_maths/abelian-and-grothendieck-categories.html">Abelian and Grothendieck Categories</a>
+### <a href="articles_maths/abelian-and-grothendieck-categories.html">Abelian and Grothendieck Categories</a>
 <!-- additive and abelian categories; kernels, cokernels and exact sequences; the Freyd–Mitchell embedding theorem; the relation to the module categories of this part; the Grothendieck categories, the categories with a generator and all colimits, and the Gabriel–Popescu theorem. -->
 
-###<a href="articles_maths/homological-algebra.html">Homological Algebra</a>
+### <a href="articles_maths/homological-algebra.html">Homological Algebra</a>
 <!-- chain complexes and homology; exact sequences and the snake lemma; projective and injective resolutions; the relation to the modules of this part. -->
 
-###<a href="articles_maths/derived-functors.html">Derived Functors</a>
+### <a href="articles_maths/derived-functors.html">Derived Functors</a>
 <!-- left and right derived functors; the long exact sequence. -->
 
-###<a href="articles_maths/ext-and-tor.html">Ext and Tor</a>
+### <a href="articles_maths/ext-and-tor.html">Ext and Tor</a>
 <!-- the functors Ext and Tor and their interpretations; the universal coefficient theorem; the Künneth formula; the applications to algebraic topology belong to Part II. -->
 
-###<a href="articles_maths/spectral-sequences.html">Spectral Sequences</a>
+### <a href="articles_maths/spectral-sequences.html">Spectral Sequences</a>
 <!-- the notion of a spectral sequence; filtration and convergence; the Grothendieck spectral sequence; the Leray–Serre sequence of a fibration belongs to Part II. -->
 
-###<a href="articles_maths/derived-categories.html">Derived Categories</a>
+### <a href="articles_maths/derived-categories.html">Derived Categories</a>
 <!-- the derived category of an abelian category; triangulated categories; the relation to derived functors. -->
 
-###<a href="articles_maths/k-theory-of-rings.html">K-Theory of Rings</a>
+### <a href="articles_maths/k-theory-of-rings.html">K-Theory of Rings</a>
 <!-- the Grothendieck group $K_0$ of a ring and the projective modules that generate it; $K_1$ and the determinant; the higher K-groups are treated in Part II, where the topological constructions they need are available. -->
 
-###<a href="articles_maths/hochschild-homology.html">Hochschild Homology</a>
+### <a href="articles_maths/hochschild-homology.html">Hochschild Homology</a>
 <!-- the Hochschild homology and cohomology of an algebra; the relation to the trace and to the determinant. -->
 
-###<a href="articles_maths/cyclic-homology.html">Cyclic Homology</a>
+### <a href="articles_maths/cyclic-homology.html">Cyclic Homology</a>
 <!-- cyclic homology and its relation to Hochschild homology; the cyclic bicomplex; the Connes exact sequence relating the two; the trace map from Hochschild homology; the applications to the spectral triples and the noncommutative geometry of Part IV. -->
 
-###<a href="articles_maths/deformation-theory.html">Deformation Theory</a>
+### <a href="articles_maths/deformation-theory.html">Deformation Theory</a>
 <!-- deformations of algebras and of modules; the Kodaira–Spencer map; obstruction theory; the applications to moduli belong to Part II. -->
 
-###<a href="articles_maths/operads.html">Operads</a>
+### <a href="articles_maths/operads.html">Operads</a>
 <!-- operads and their algebras; the little disks operad; the relation to the algebras of this part; the homotopy-theoretic applications belong to Part II; the bar and cobar constructions, and the algebra of operads. -->
 
-###<a href="articles_maths/topoi.html">Topoi</a>
+### <a href="articles_maths/topoi.html">Topoi</a>
 <!-- elementary and Grothendieck topoi; the logical and categorical content; the relation to the categories of this part; sheaves on a topological space belong to Part II. -->
 
-###<a href="articles_maths/sheaves-on-sites.html">Sheaves on Sites</a>
+### <a href="articles_maths/sheaves-on-sites.html">Sheaves on Sites</a>
 <!-- Grothendieck topologies and sites; sheaves on a site; the categorical content; the cohomological theory on a topological space belongs to Part II. -->
 
-###<a href="articles_maths/descent-theory.html">Descent Theory</a>
+### <a href="articles_maths/descent-theory.html">Descent Theory</a>
 <!-- descent for sheaves and for modules; the relation to Grothendieck topologies; the geometric applications belong to Part II. -->
 
 ### Operator Theory
@@ -852,10 +852,10 @@
 ### <a href="articles_maths/formal-power-series-and-completion.html">Formal Power Series and Completion</a>
 <!-- the formal power series algebra $k[[x_1,\dots,x_n]]$ as the $I$-adic completion of the polynomial algebra, the formal inverse function theorem, the relation to the symmetric algebra and to Taylor expansions. -->
 
-###<a href="articles_maths/hecke-algebras.html">Hecke Algebras</a>
+### <a href="articles_maths/hecke-algebras.html">Hecke Algebras</a>
 <!-- the Hecke algebra of a Coxeter group; the relation to the representation theory of the symmetric group and to the quantum groups. -->
 
-###<a href="articles_maths/macdonald-and-hall-littlewood-polynomials.html">Macdonald and Hall–Littlewood Polynomials</a>
+### <a href="articles_maths/macdonald-and-hall-littlewood-polynomials.html">Macdonald and Hall–Littlewood Polynomials</a>
 <!-- the Macdonald polynomials and their properties; the relation to the symmetric functions and to the double affine Hecke algebras; the Hall–Littlewood polynomials as the one-parameter deformation of the Schur functions. -->
 
 ### Operator Theory
@@ -961,7 +961,7 @@
 ### <a href="articles_maths/lie-algebras-a-general-introduction.html">Lie Algebras</a>
 <!-- why Lie algebras; the definition and the Jacobi identity; the relation with associative algebras; basic properties; solvable, nilpotent and semisimple algebras; representations. -->
 
-###<a href="articles_maths/universal-enveloping-algebras.html">Universal Enveloping Algebras</a>
+### <a href="articles_maths/universal-enveloping-algebras.html">Universal Enveloping Algebras</a>
 <!-- the universal enveloping algebra of a Lie algebra; the Poincaré–Birkhoff–Witt theorem. -->
 
 ### <a href="articles_maths/structure-of-lie-algebras.html">Structure of Lie Algebras</a>
@@ -973,19 +973,19 @@
 ### <a href="articles_maths/representations-of-lie-algebras.html">Representations of Lie Algebras</a>
 <!-- modules, weights, highest weight, the universal enveloping algebra $U(\mathrm{G})$ and the PBW theorem. -->
 
-###<a href="articles_maths/lie-algebra-cohomology.html">Lie Algebra Cohomology</a>
+### <a href="articles_maths/lie-algebra-cohomology.html">Lie Algebra Cohomology</a>
 <!-- the cohomology of a Lie algebra; the Chevalley–Eilenberg complex; the relation to deformation theory and to group cohomology; the deformations of a Lie algebra and their classification by the second cohomology group. -->
 
-###<a href="articles_maths/vertex-algebras.html">Vertex Algebras</a>
+### <a href="articles_maths/vertex-algebras.html">Vertex Algebras</a>
 <!-- vertex algebras and their modules; the state-field correspondence; the relation to the affine Lie algebras and to the symmetric algebra construction. -->
 
 ### <a href="articles_maths/superalgebras-and-graded-structures.html">Superalgebras and Graded Structures</a>
 <!-- $\mathbb{Z}/2$-gradings, the Koszul sign rule, super Lie brackets, derivations, the super-Jacobi identity. -->
 
-###<a href="articles_maths/graded-lie-algebras-and-lie-superalgebras.html">Graded Lie Algebras and Lie Superalgebras</a>
+### <a href="articles_maths/graded-lie-algebras-and-lie-superalgebras.html">Graded Lie Algebras and Lie Superalgebras</a>
 <!-- graded Lie algebras and their properties; the relation to the superalgebras and to the root systems of this part; the Lie superalgebras as the graded case. -->
 
-###<a href="articles_maths/poisson-and-gerstenhaber-algebras.html">Poisson and Gerstenhaber Algebras</a>
+### <a href="articles_maths/poisson-and-gerstenhaber-algebras.html">Poisson and Gerstenhaber Algebras</a>
 <!-- Poisson algebras and the properties of the bracket; the relation to the symplectic and Poisson forms of Part II; the Gerstenhaber algebras and their relation to Hochschild cohomology. -->
 
 ### Operator Theory
@@ -1084,7 +1084,7 @@
 ### <a href="articles_maths/simple-and-semisimple-modules.html">Simple and Semisimple Modules</a>
 <!-- simple modules, semisimple modules, Schur's lemma, the Jacobson radical, the density theorem. -->
 
-###<a href="articles_maths/character-theory.html">Character Theory</a>
+### <a href="articles_maths/character-theory.html">Character Theory</a>
 <!-- the characters of the representations of a finite group; the orthogonality relations; the character table; the relation to the group algebras of this part. -->
 
 ### <a href="articles_maths/morita-equivalence.html">Morita Equivalence</a>
@@ -1096,31 +1096,31 @@
 ### <a href="articles_maths/change-of-rings.html">Change of Rings</a>
 <!-- restriction, induction and extension of scalars along $A\to B$, the associated adjunctions, flatness over noncommutative rings. -->
 
-###<a href="articles_maths/induced-representations.html">Induced Representations</a>
+### <a href="articles_maths/induced-representations.html">Induced Representations</a>
 <!-- induced and restricted representations; Frobenius reciprocity; the relation to the modules over a group algebra; Frobenius reciprocity for the induced and the restricted representations. -->
 
-###<a href="articles_maths/projective-representations.html">Projective Representations</a>
+### <a href="articles_maths/projective-representations.html">Projective Representations</a>
 <!-- projective representations and the Schur multiplier; the relation to group cohomology and to the representation theory of groups; the Schur multiplier of a group and its identification with the second cohomology group. -->
 
-###<a href="articles_maths/modular-representation-theory.html">Modular Representation Theory</a>
+### <a href="articles_maths/modular-representation-theory.html">Modular Representation Theory</a>
 <!-- representations over a field of positive characteristic; the relation to the ordinary character theory and to the group algebras of this part; the Brauer characters and their relation to the ordinary characters. -->
 
-###<a href="articles_maths/blocks-and-defect-groups.html">Blocks and Defect Groups</a>
+### <a href="articles_maths/blocks-and-defect-groups.html">Blocks and Defect Groups</a>
 <!-- the blocks of a group algebra; the defect groups; the relation to the modular representation theory and to the Brauer characters. -->
 
-###<a href="articles_maths/integral-representations.html">Integral Representations</a>
+### <a href="articles_maths/integral-representations.html">Integral Representations</a>
 <!-- representations over the integers; the relation to the modular representation theory and to the representations of finite groups. -->
 
-###<a href="articles_maths/quiver-representations-and-representation-type.html">Quiver Representations and Representation Type</a>
+### <a href="articles_maths/quiver-representations-and-representation-type.html">Quiver Representations and Representation Type</a>
 <!-- quivers and their representations; path algebras; Gabriel's theorem on finite representation type; the finite, tame and wild representation types and the Drozd theorem. -->
 
-###<a href="articles_maths/auslander-reiten-theory.html">Auslander–Reiten Theory</a>
+### <a href="articles_maths/auslander-reiten-theory.html">Auslander–Reiten Theory</a>
 <!-- almost split sequences; the Auslander–Reiten quiver; the representation type of an algebra. -->
 
-###<a href="articles_maths/tilting-theory.html">Tilting Theory</a>
+### <a href="articles_maths/tilting-theory.html">Tilting Theory</a>
 <!-- tilting modules and tilted algebras; the Brenner–Butler theorem; the relation to the derived categories of this part. -->
 
-###<a href="articles_maths/cluster-algebras.html">Cluster Algebras</a>
+### <a href="articles_maths/cluster-algebras.html">Cluster Algebras</a>
 <!-- cluster algebras and their seeds; the Laurent phenomenon; the relation to quiver representations. -->
 
 ### Operator Theory
@@ -1320,6 +1320,345 @@
 ### <a href="articles_maths/matrix-sesqualgebras.html">Matrix Sesqualgebras</a>
 <!-- $M_n(\mathbb{C})$ with the conjugate transpose; the Hermitian, skew-Hermitian and unitary matrices; the two products $ST$ and $ST^{*}$; the trace functional and its behaviour under the involution; the worked computations for $n=2$ and the identification of the resulting structure with that of the biquaternion algebra; the general $n$ summarised. -->
 
+## Algebras with a degree-2 form
+
+### Theory
+
+### <a href="articles_maths/bilinear-forms.html">Bilinear Forms</a>
+<!-- symmetric, alternating and skew-symmetric forms, the matrix of a form, rank, radical, nondegeneracy. -->
+
+### <a href="articles_maths/quadratic-forms-and-polarisation.html">Quadratic Forms and Polarisation</a>
+<!-- quadratic forms, the polar form, diagonalisation, Sylvester's law of inertia, signature, classification over $\mathbb{R}$ and $\mathbb{C}$. -->
+
+### <a href="articles_maths/symplectic-forms-and-poisson-brackets.html">Symplectic Forms and Poisson Brackets</a>
+<!-- alternating bilinear forms and their non-degeneracy; the standard symplectic form on $k^{2n}$ and the Darboux normal form; the symplectic group $Sp(2n,k)$ and the preservation of the form; Lagrangian and isotropic subspaces; the relation to the determinant, to volume and to the Pfaffian; the Poisson bracket on the functions of a symplectic space, its derivation properties and the Jacobi identity; the bracket as a Lie algebra structure on the algebra of functions; the formal deformation of that algebra to a commutator algebra. -->
+
+### <a href="articles_maths/symplectic-reflection-algebras.html">Symplectic Reflection Algebras</a>
+<!-- symplectic reflection algebras and their representations; the symplectic form is a structure of this part, which is why the article belongs here. -->
+
+### <a href="articles_maths/rational-cherednik-algebras.html">Rational Cherednik Algebras</a>
+<!-- rational Cherednik algebras and their representations; the relation to the Hecke algebras and to the symplectic reflection algebras of this part. -->
+
+### <a href="articles_maths/the-orthogonal-lie-algebra.html">The Orthogonal Lie Algebra</a>
+<!-- $\mathrm{SO}(V,Q)$ as the skew transformations relative to $B$; the identification with the bivectors $\Lambda^2V$; the bracket as the commutator of bivectors; the identification of the bivectors with the Lie algebra $\mathrm{SO}(V,Q)$ and the Lie algebra structure; rank and the maximal torus; the low-dimensional isomorphisms $\mathrm{SO}(3)\cong\mathbb{R}^3$ and $\mathrm{SO}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$. -->
+
+### <a href="articles_maths/quadratic-forms-over-algebras-and-norms.html">Quadratic Forms over Algebras and Norms</a>
+<!-- forms with values in an algebra, the quadric, composition of quadratic forms, Hurwitz's theorem, norms of $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{B}$. -->
+
+### <a href="articles_maths/witts-theorems.html">Witt's Theorems</a>
+<!-- quadratic spaces and isometries, the Witt extension theorem, hyperbolic planes, Witt cancellation. -->
+
+### <a href="articles_maths/isometries-and-orthogonal-transformations.html">Isometries and Orthogonal Transformations</a>
+<!-- isometries and similarities, $O(V,Q)$, reflections, the Cartan–Dieudonné theorem, $SO(V,Q)$. -->
+
+### <a href="articles_maths/the-witt-group-and-the-grothendieck-witt-ring.html">The Witt Group and the Grothendieck–Witt Ring</a>
+<!-- the Witt decomposition and index, the Witt group, the Grothendieck–Witt ring, the discriminant, the Hasse invariant. -->
+
+### <a href="articles_maths/clifford-algebras.html">Clifford Algebras</a>
+<!-- definition $Cl(V,Q)=T(V)/(v\otimes v-Q(v)\cdot1)$, the universal property, the fundamental relation $uv+vu=2B(u,v)$, functoriality. -->
+
+### <a href="articles_maths/clifford-algebras-in-finite-dimensions.html">Clifford Algebras in Finite Dimensions</a>
+<!-- the definition and universal property; the fundamental relation; the radical; the reduction; the decomposition of a degenerate Clifford algebra into its non-degenerate and nilpotent factors; rank; the grading and filtration in the degenerate case; basis; $k$-vectors and multivectors; the volume element; the centre; the square root of a multivector in the Euclidean algebra $\mathrm{Cl}_{3,0}$ — the reduction $A=s+v+(S+V)\omega$ by the central volume element, the graded linear equations, the complex quadratic $4z^2-4\beta z+\gamma=0$ with $\beta=b_0-ib_{123}$, $\gamma=Q-2iP$, the existence scalars $b_S=b_0^2-b_{123}^2-Q$ and $b_I=2(P-b_0b_{123})$ with $\Delta=b_S^2+b_I^2$, the isolated roots two or four in number, the four-parameter family for a complex scalar and the classification, and the source's reading of the data as the values $Q(v)$, $Q(V)$ and their mutual relation. -->
+
+### <a href="articles_maths/degenerate-clifford-algebras-and-the-radical.html">Degenerate Clifford Algebras and the Radical</a>
+<!-- the radical, the degenerate and non-degenerate cases, the tensor product decomposition. -->
+
+### <a href="articles_maths/the-geometric-product-and-the-grade-decomposition.html">The Geometric Product and the Grade Decomposition</a>
+<!-- the grade projection $\langle x\rangle_k$ and the decomposition of a multivector into $k$-vectors; the theorem that a $k$-vector times an $l$-vector is a sum of the grades $|k-l|,|k-l|+2,\dots,k+l$; the geometric product $uv=u\cdot v+u\wedge v$ of two vectors; the inner, outer and contracted products and the grade each selects; the recovery of the exterior algebra as the top grade, so that the Clifford algebra is a deformation of it; the signs of the grade involution, of reversion and of Clifford conjugation on each grade; the even part of $\mathrm{Cl}_{3,0}$ as the quaternion algebra. -->
+
+### <a href="articles_maths/the-filtration-and-the-associated-graded-algebra.html">The Filtration and the Associated Graded Algebra</a>
+<!-- the length filtration $F_0\subseteq F_1\subseteq\cdots$ with $F_jF_l\subseteq F_{j+l}$ and the reason it is not a grading; the associated graded algebra and the Poincaré–Birkhoff–Witt theorem that it is the exterior algebra; the symbol map; the comparison with the cumulative filtration of the grade decomposition, which requires the form to be non-degenerate; the parallel with the universal enveloping algebra and the symmetric algebra; the worked cases of one and two dimensions and of the trivial form. -->
+
+### <a href="articles_maths/the-volume-element-duality-and-the-hodge-star.html">The Volume Element, Duality and the Hodge Star</a>
+<!-- the complement map $A\mapsto A\omega$ by the volume element, of grade $k$ to grade $n-k$; the complement of a basis blade as the blade of the complementary index set, hence a subspace against its orthogonal complement; the dependence on the orientation; the Hodge star $\star A=A\omega^{-1}$, its square $\star^2=(\omega^2)^{-1}$ and its behaviour on the parity grading; the low-dimensional cases $n=1,2,3,4$ including the self-dual and the anti-self-dual bivectors; the cross product $a\times b=\star(a\wedge b)$ and the scalar triple product; the biquaternion case $\star A=-iA$ and the convention $\tilde F_\star=-i\tilde F$ of the physics articles. -->
+
+### <a href="articles_maths/the-hodge-star-and-the-real-structure-of-the-exterior-algebra.html">The Hodge Star and the Real Structure of the Exterior Algebra</a>
+<!-- the Hodge star as an involution up to sign; the real structure and the complex structure it defines on the exterior algebra; the square sign $\star^2=(-1)^{k(m-k)}\mathrm{id}$ and the middle-degree dichotomy; the dependence on a nondegenerate symmetric bilinear form, an orientation and a discriminant. -->
+
+### <a href="articles_maths/the-clifford-algebra-as-a-lie-algebra.html">The Clifford Algebra as a Lie Algebra</a>
+<!-- bivectors, $\mathrm{SO}(V,Q)$, the commutator, the geometric interpretation (vectors, bivectors, trivectors). -->
+
+### <a href="articles_maths/the-low-dimensional-classification.html">The Low-Dimensional Classification</a>
+<!-- $Cl_{0,1}\cong\mathbb{C}$, $Cl_{1,0}\cong\mathbb{D}$, $Cl_{0,2}\cong\mathbb{H}$, $Cl_{1,1}\cong$ split-$\mathbb{H}$, $Cl_{2,0}\cong M_2(\mathbb{R})$, $Cl_{3,0}\cong\mathbb{C}l_2\cong\mathbb{B}$, complexification and realification. -->
+
+### <a href="articles_maths/bott-periodicity-and-the-classification.html">Bott Periodicity and the Classification</a>
+<!-- the real and complex periodicity isomorphisms, the tensor product decomposition as their source, the real and complex classification, the even subalgebra, the type of irreducible modules. -->
+
+### <a href="articles_maths/the-brauer-wall-group-and-the-eightfold-way.html">The Brauer–Wall Group and the Eightfold Way</a>
+<!-- Morita equivalence, the Brauer–Wall group, Atiyah–Bott–Shapiro periodicity, the eightfold way of spinor types. -->
+
+### <a href="articles_maths/two-sided-operators-on-a-clifford-algebra.html">Two-Sided Operators on a Clifford Algebra</a>
+<!-- the two-sided operator $\Phi^{\theta,c}_x(y)=\theta(x)yc(x)$, its composition law, its parity and its value at the unit; the five members indexed by the right factor, the inner conjugation and the signed inner conjugation on the units, the reversion and Clifford-conjugation sandwiches on the whole algebra and the Hermitian sandwich over an involutive base; preservation of the quadratic space $\Phi_x(V)\subseteq V$, the scaling of the conjugation sandwich by the Clifford norm on the Clifford group and the failure of a merely central scale. -->
+
+### <a href="articles_maths/one-sided-operators-on-a-clifford-algebra.html">One-Sided Operators on a Clifford Algebra</a>
+<!-- the factors of the two-sided family: the left multiplication $y\mapsto\theta(x)y$ and the right multiplication $y\mapsto y\,c(x)$ attached to an automorphism and an anti-automorphism; the composition laws and the exception by which the plain right multiplication is a representation of the opposite algebra, $R_{xz}=R_zR_x$; the commutation of the two families and the return to the two-sided operator $\Phi^{\theta,c}_x=\Lambda^{\theta}_x\mathrm P^{c}_x$; the value at the unit and the parity; the variants as conjugates by the intrinsic anti-involutions; injectivity, the annihilators as kernels and the ideals as images; the mutual commutants $\{L_a\}'=\{R_b\}$ and the algebra generated, which is $\mathrm{End}_F$ exactly when the Clifford algebra is central simple; the reason a non-scalar one-sided operator cannot preserve the space of vectors, which forces the pairing of the two factors; the Hermitian adjoint is the concern of *One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint*. -->
+
+### Theory, Two-Sided Operator with Inner Conjugation
+
+### <a href="articles_maths/the-sandwich-on-a-clifford-algebra.html">The Sandwich on a Clifford Algebra</a>
+<!-- the two-sided sandwich $x\mapsto axb$ on a Clifford algebra; the versor action and its relation to the twisted conjugation. -->
+
+### <a href="articles_maths/the-two-sided-operators-and-the-spin-group.html">The Two-Sided Operators and the Spin Group</a>
+<!-- the two-sided operators generated by the versors; the spin group as the group of invertible two-sided operators. -->
+
+### <a href="articles_maths/the-inner-conjugation-on-the-two-sided-operators.html">The Inner Conjugation on the Two-Sided Operators</a>
+<!-- the inner conjugation $x\mapsto axa^{-1}$ on a Clifford algebra; the twisted action and the orthogonal group. -->
+
+### <a href="articles_maths/the-spinor-norm-and-the-structure-of-the-orthogonal-group-with-inner-conjugation.html">The Spinor Norm and the Structure of the Orthogonal Group with Inner Conjugation</a>
+<!-- the spinor norm from the orthogonal group to the square classes of the field, defined on a reflection in a vector by the value of the form on that vector; its well-definedness as a homomorphism; the spinorial kernel, the products of two reflections and the chain of subgroups; the theorem of Dieudonné identifying the reduced group with the commutator subgroup, quoted; the cases of the definite real forms, the sum of four squares over $\mathbb{Q}$, and the indefinite forms. -->
+
+### <a href="articles_maths/the-low-dimensional-spin-groups-and-the-exceptional-isomorphisms-with-inner-conjugation.html">The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation</a>
+<!-- $\mathrm{Cl}^0_{n,0}\cong\mathrm{Cl}_{0,n-1}$ and the table of even parts; $\mathrm{Spin}(2)\cong U(1)$, $\mathrm{Spin}(3)\cong Sp(1)\cong SU(2)$, $\mathrm{Spin}(4)\cong Sp(1)\times Sp(1)$, $\mathrm{Spin}(5)\cong Sp(2)$ and $\mathrm{Spin}(6)\cong SU(4)$, with the dimension counts and the spinor modules; the real forms $\mathrm{Spin}(1,2)\cong SL(2,\mathbb{R})$, $\mathrm{Spin}(1,3)\cong SL(2,\mathbb{C})$, $\mathrm{Spin}(2,2)\cong SL(2,\mathbb{R})\times SL(2,\mathbb{R})$, $\mathrm{Spin}(3,3)\cong SL(4,\mathbb{R})$ and $\mathrm{Spin}(4,2)\cong SU(2,2)$; the Dynkin coincidences $A_1\cong B_1\cong C_1$, $D_2\cong A_1\times A_1$, $B_2\cong C_2$, $A_3\cong D_3$ and the end of the coincidences at $n=7$. -->
+
+### <a href="articles_maths/the-clifford-invariant-and-the-spinor-genus-with-inner-conjugation.html">The Clifford Invariant and the Spinor Genus with Inner Conjugation</a>
+<!-- the class of the Clifford algebra in the Brauer group as an invariant of a non-degenerate form, unchanged under isometry; the even part and the carrier of the invariant; the computation for a binary form; the invariant on the fundamental ideal of the Witt ring; the spinor norm; the genus and the spinor genus of a lattice, the three equivalences, the count of spinor genera and the quaternionic case. -->
+
+### <a href="articles_maths/spin-factors-and-the-clifford-envelope-with-inner-conjugation.html">Spin Factors and the Clifford Envelope with Inner Conjugation</a>
+<!-- spin factors, degree-2 Jordan algebras, the Clifford envelope. -->
+
+### Theory, One-Sided Operator with Inner Conjugation
+
+### <a href="articles_maths/left-multiplication-and-the-clifford-module-structure.html">Left Multiplication and the Clifford Module Structure</a>
+<!-- left multiplication as a representation of the Clifford algebra; the module structure and its irreducibility in the even dimensions. -->
+
+### <a href="articles_maths/the-one-sided-action-and-the-spin-representation.html">The One-Sided Action and the Spin Representation</a>
+<!-- the one-sided action and the spin representation; the minimal left ideals and the spinors they carry. -->
+
+### <a href="articles_maths/right-multiplication-and-the-opposite-algebra.html">Right Multiplication and the Opposite Algebra</a>
+<!-- right multiplication and the opposite algebra; the bimodule structure and the commutant of the left action. -->
+
+### <a href="articles_maths/spin-representations-and-clifford-modules-with-inner-conjugation.html">Spin Representations and Clifford Modules with Inner Conjugation</a>
+<!-- Clifford modules, the spinor module, the complex spin representation and its dimension, chirality and half-spin representations. -->
+
+### <a href="articles_maths/spinors-as-minimal-left-ideals-with-inner-conjugation.html">Spinors as Minimal Left Ideals with Inner Conjugation</a>
+<!-- idempotents, the primitive idempotent $\tfrac12(1+e)$ of a unit vector and the minimal left ideal $\mathrm{Cl}(V,q)f$; ideals as Clifford modules, their isomorphism and their dimension $2^{[n/2]}$; the action of the spin group by left multiplication with kernel $\{\pm1\}$; the Witt basis and the idempotent $a_1a_1^\dagger\cdots a_ma_m^\dagger$, with the ideal isomorphic to the exterior algebra of the creation operators, so that the Chevalley module is the ideal; spinors as even multivectors when the even subalgebra is simple, and its failure in general; the chiral halves as the minimal left ideals of the even part; the worked cases $\mathrm{Cl}_{3,0}$ with the Pauli action and $\mathrm{Cl}_{1,3}$ with the biquaternion algebra as a Dirac spinor. -->
+
+### <a href="articles_maths/spin-representations-of-the-orthogonal-lie-algebra-with-inner-conjugation.html">Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation</a>
+<!-- the bivectors as the orthogonal Lie algebra acting on the spinor module; the infinitesimal homomorphism and its compatibility with the vector representation; the Cartan subalgebra, the half-integral weights and the highest weights $\tfrac12(\epsilon_1+\cdots+\epsilon_m)$ and $(\tfrac12,\dots,\tfrac12)$; the dimensions and the chiral splitting; the branching rule under the passage from $n$ to $n-1$ dimensions; the worked cases in three, four, five and six dimensions. -->
+
+### <a href="articles_maths/real-spinors-and-reality-conditions-with-inner-conjugation.html">Real Spinors and Reality Conditions with Inner Conjugation</a>
+<!-- real structures, the low-dimensional cases (dimensions $2$, $3$, $4$). -->
+
+### <a href="articles_maths/triality-and-spin8-with-inner-conjugation.html">Triality and Spin(8) with Inner Conjugation</a>
+<!-- the three eight-dimensional representations $8_v$, $8_s$, $8_c$ and the uniqueness of the coincidence of their dimensions at $n=8$; the invariant trilinear form as the Clifford action composed with the invariant pairing; the outer automorphism group $S_3$ from the diagram $D_4$; the fixed-point subgroup $G_2$ and the chain $\mathrm{Spin}(8)\supset G_2\supset\mathrm{Spin}(7)$; the octonionic model with the three products $xy$, $\bar xy$, $x\bar y$ and the alternative laws; why no other dimension admits a triality. -->
+
+### Theory, Two-Sided Operator with Signed Inner Conjugation
+
+### <a href="articles_maths/the-graded-multiplication-operators.html">The Graded Multiplication Operators</a>
+<!-- the multiplication operators twisted by the grading; the sign rule and the super-structure. -->
+
+### <a href="articles_maths/two-sided-operators-with-the-signed-product.html">Two-Sided Operators with the Signed Product</a>
+<!-- the two-sided operators with the signed product $x\mapsto a\alpha(x)b$; the reflections they realise. -->
+
+### <a href="articles_maths/the-sandwich-with-the-signed-product.html">The Sandwich with the Signed Product</a>
+<!-- the signed sandwich on a Clifford algebra; the versor action and the reflections it produces. -->
+
+### <a href="articles_maths/two-sided-operators-on-a-clifford-algebra-with-signed-inner-conjugation.html">Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</a>
+<!-- the two-sided operator $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)yx^{-1}$, the member of the family whose left factor carries the grade involution; the parity sign $\mathrm{Ad}^{\alpha}_x=\varepsilon_x\mathrm{Ad}_x$ with $\varepsilon_x=(-1)^k$, so that it is the inner conjugation on the even part and its negative on the odd part; bijectivity, the composition law, commutation with the grade involution and multiplicativity up to the sign; the kernel $F^{\times}$ against the kernel $Z(\mathrm{Cl})^{\times}$ of the inner conjugation, with the central volume element satisfying $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$ while $\mathrm{Ad}_\omega=\mathrm{id}$; the reflection $\mathrm{Ad}^{\alpha}_u=\rho_u$ against $\mathrm{Ad}_u=-\rho_u$, and the reason the minus is what makes the kernel of $\mathrm{Pin}\to O$ the two elements $\{\pm1\}$. -->
+
+### <a href="articles_maths/the-grading-of-the-clifford-algebra-with-signed-inner-conjugation.html">The Grading of the Clifford Algebra with Signed Inner Conjugation</a>
+<!-- why the signed member is not a second structure: the sign is the parity, $\mathrm{Ad}^{\alpha}_x=\varepsilon_x\mathrm{Ad}_x$; the composition $\mathrm{Ad}^{\alpha}_x\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz}$, so that two odd steps compose to the ordinary sandwich with the two minus signs cancelling, and the parity table of composites; the family generated by the ordinary conjugations and one odd one; the odd part of the pin group as a coset, $\mathrm{Pin}=\mathrm{Spin}\sqcup(\text{odd})$ and $\mathrm{Pin}/\mathrm{Spin}\cong\mathbb{Z}/2$; the algebra as a free rank-two module over its even part, $\mathrm{Cl}=\mathrm{Cl}^0\oplus\mathrm{Cl}^0e$ with basis $\{1,e\}$ for an odd unit $e$, the two components isomorphic but not independent; why two independent copies of $\mathrm{Cl}^0$ fail; and the determinants $\det\mathrm{Ad}^{\alpha}_x=\varepsilon_x$ against $\det\mathrm{Ad}_x=(\varepsilon_x)^{n+1}$, so that in odd dimension the inner conjugation never reaches an improper isometry. -->
+
+### <a href="articles_maths/the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html">The Clifford, Pin and Spin Groups with Signed Inner Conjugation</a>
+<!-- unit vectors and reflections, the Clifford group, the Pin and Spin groups, the double cover of the special orthogonal group. -->
+
+### <a href="articles_maths/the-two-pin-groups-and-the-double-covers-of-the-orthogonal-group-with-inner-conjugation.html">The Two Pin Groups and the Double Covers of the Orthogonal Group with Inner Conjugation</a>
+<!-- the choice hidden in the Pin construction: the two central extensions $1\to\{\pm1\}\to\mathrm{Pin}_\pm\to O\to1$, distinguished by whether the preimage of a reflection squares to $+1$ or $-1$ and kept consistent by the conjugacy of the reflections under $SO$; the realisation by the two signs of the form, $\mathrm{Pin}(n,0)$ and $\mathrm{Pin}(0,n)$ not isomorphic although $O(n,0)=O(0,n)$ and $\mathrm{Spin}(n,0)\cong\mathrm{Spin}(0,n)$; the centre from the volume element, $C_2$ in even dimension and $\{\pm1,\pm\omega\}$ of type $C_2\times C_2$ or $C_4$ in odd dimension, by $n\bmod4$ for the definite groups and by $p-q\bmod8$ in the indefinite case; the splitting of the reflections into the two classes of positive and negative norm and the resulting proliferation of covers, up to thirty-two double covers of $O(p,q)$ with only $\mathrm{Pin}(p,q)$ and $\mathrm{Pin}(q,p)$ standard, the uniqueness of the Spin double cover only in the definite and Lorentzian cases, the three connected double covers for $p,q>2$ and the finer covers, which are Part II's; the low dimensions $\mathrm{Pin}_+(1)\cong C_2\times C_2$, $\mathrm{Pin}_-(1)\cong C_4$, the dihedral and dicyclic preimages in dimension two, $\mathrm{Pin}_+(3)\cong\{A\in U(2):\det A=\pm1\}$ against $\mathrm{Pin}_-(3)\cong SU(2)\times C_2$ with centres $C_4$ and $C_2\times C_2$; the projective orthogonal square of $\mathrm{Spin}(2)$, $\mathrm{Pin}_+(2)$, $SO(2)$, $O(2)$; and the name as a back-formation from Spin due to Serre. -->
+
+### <a href="articles_maths/versors-rotors-and-the-sandwich-action-with-signed-inner-conjugation.html">Versors, Rotors and the Sandwich Action with Signed Inner Conjugation</a>
+<!-- versors as products of non-isotropic vectors, the Lipschitz group and its identity with the Clifford group; the rotor, an even versor of Clifford norm one, as a subgroup of the spin group; the element generated by a bivector, the endomorphism $J_B=\tfrac12\operatorname{ad}_B$, and its closed form when the square of the bivector is a scalar; the plane case, $J_B^2=-\varepsilon$, giving the rotation of parameter $\theta$ from the rotor $\cos\tfrac{\theta}{2}-\sin\tfrac{\theta}{2}B$ when $\varepsilon=+1$ and the hyperbolic element of parameter $\varphi/2$ when $\varepsilon=-1$; general bivectors as sums of commuting simple ones; the two actions, the sandwich $v\mapsto RvR^{-1}$ carrying the full parameter and the spinor action $\psi\mapsto R\psi$ carrying half of it; the failure of left multiplication on a vector, $Re_3=\cos\tfrac{\theta}{2}e_3-\sin\tfrac{\theta}{2}\omega$, and the cancellation of the trivector parts in the sandwich; the double cover of the rotation group; the low-dimensional cases. -->
+
+### <a href="articles_maths/reflection-groups-and-clifford-algebras-with-signed-inner-conjugation.html">Reflection Groups and Clifford Algebras with Signed Inner Conjugation</a>
+<!-- the reflection $\rho_\alpha=\mathrm{Ad}^{\alpha}_{u_\alpha}$ as the sandwich of a unit root; the Clifford lift $\Gamma_\Phi=\langle u_\alpha\rangle\subset\mathrm{Pin}$; its finiteness, the twofold cover of $W_\Phi$ and $|\Gamma_\Phi|=2|W_\Phi|$; the even part $\Gamma^0_\Phi$ of order $|W_\Phi|$ covering the rotation subgroup; the cases $A_1$ and $A_2$ and the table $A_3\mapsto 2T$, $B_3\mapsto 2O$, $H_3\mapsto 2I$; the $24$ Hurwitz units, the $24$-cell and the McKay correspondence. -->
+
+### Theory, One-Sided Operator with Signed Inner Conjugation
+
+### <a href="articles_maths/the-signed-action-on-a-clifford-module.html">The Signed Action on a Clifford Module</a>
+<!-- the signed one-sided action on a Clifford module; its compatibility with the grading. -->
+
+### <a href="articles_maths/one-sided-operators-with-the-signed-product.html">One-Sided Operators with the Signed Product</a>
+<!-- the one-sided operators with the signed product; their fixed elements and the reflections. -->
+
+### <a href="articles_maths/one-sided-operators-on-a-clifford-algebra-with-signed-inner-conjugation.html">One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</a>
+<!-- the signed left multiplication $\Lambda^{\alpha}_x(y)=\alpha(x)y$ and the inverse right multiplication $R_{x^{-1}}(y)=yx^{-1}$ as the two one-sided factors of the signed inner conjugation; $\Lambda^{\alpha}_x=\varepsilon_xL_x=\alpha L_x\alpha$, the value $\alpha(x)$ at the unit and the parity; the composition laws of the two families; the pairings $L_xR_{x^{-1}}=\mathrm{Ad}_x$ and $\Lambda^{\alpha}_xR_{x^{-1}}=\mathrm{Ad}^{\alpha}_x$, so that the whole sign sits in the left factor; the reflection $\rho_u$ against $-\rho_u$ produced by the two pairings; the kernels and the images, which do not see the sign; the reason no one-sided operator can preserve the space of vectors. -->
+
+### <a href="articles_maths/pin-representations-and-clifford-modules-with-signed-inner-conjugation.html">Pin Representations and Clifford Modules with Signed Inner Conjugation</a>
+<!-- the pin representation as the restriction of the Clifford action on a Clifford module to the whole Pin group, one-sided by construction; $\rho(-1)=-\mathrm{id}_S$, faithfulness and the kernel over a product of simple algebras; the odd elements interchanging the two chiral halves, so that the pin representation is irreducible where the spin representation splits; the intertwining identity $\rho(x)\rho(v)\rho(x)^{-1}=\rho(\mathrm{Ad}_x(v))=\rho(\varepsilon_x\mathrm{Ad}^{\alpha}_x(v))$ and the module form of the reflection $\rho(u)\rho(v)\rho(u)^{-1}=-\rho(\rho_u(v))$; the square $\rho(u)^2=q(u)$; the real pin modules and the definite case. -->
+
+### <a href="articles_maths/spinors-as-minimal-left-ideals-with-signed-inner-conjugation.html">Spinors as Minimal Left Ideals with Signed Inner Conjugation</a>
+<!-- a spinor as an element of a minimal left ideal $I=\mathrm{Cl}(V,q)\pi$, with the whole Pin group acting because a left ideal is preserved by every left multiplication; the parity splitting $I=I^0\oplus I^1$ with $I^i=\mathrm{Cl}^i\pi$, the even elements preserving the two summands and the odd ones interchanging them; the signed inner conjugation realised on the ideal as $\rho(\alpha(x))\rho(v)\rho(x)^{-1}$; the reflection $\rho_u(v)\psi$ against $-\rho_u(v)\psi$; the central volume element acting by the exchange of the summands and by $-\mathrm{id}$ under the signed conjugation. -->
+
+### Applications
+
+### <a href="articles_maths/the-number-systems-as-clifford-algebras.html">The Number Systems as Clifford Algebras</a>
+<!-- The dictionary $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$, split-$\mathbb{H}$, $M_2(\mathbb{R})$, $\mathbb{B}$; the norm; Hurwitz's theorem. -->
+
+### <a href="articles_maths/lattices-and-the-quaternion-lattice.html">Lattices and the Quaternion Lattice</a>
+<!-- an integral lattice as a free $\mathbb{Z}$-module carrying a positive definite form: rank, index, covolume, duality and base change; the Lipschitz and Hurwitz lattices in $\mathbb{R}^4$, of covolume $1$ and $\tfrac12$ and index $2$ in each other, realising the norm of $\mathbb{H}$ and containing the $8$ Lipschitz and $24$ Hurwitz units. An instance of a quadratic space, which is why it sits in this category; the multiplicative structure of $\mathbb{H}$ is from *Division Algebras*. -->
+
+## Sesqualgebras with a degree-2 form
+
+### Theory
+
+### <a href="articles_maths/the-sesquilinear-form-and-the-conjugation.html">The Sesquilinear Form and the Conjugation</a>
+<!-- the correspondence between a Hermitian form and the involution of the algebra, $h(x,y)=h(x^{*}y,1)$; the two directions and the compatibility; the classification of the forms into Hermitian, skew-Hermitian and alternating; the failure over a ring where $2$ is not invertible. -->
+
+### <a href="articles_maths/hermitian-forms-on-a-sesqualgebra.html">Hermitian Forms on a Sesqualgebra</a>
+<!-- the $A$-valued Hermitian forms carried by the involution of an associative algebra with a sesquilinear product, $\Psi(x,y)=y^{*}x$ and its companion $\Phi(x,y)=xy^{*}=x\star y$; the two slots and the Hermitian property $\Psi(y,x)=\Psi(x,y)^{*}$; the product read as the form and the form read as a product; the reduction of $\Psi$ to the compatible scalar forms $h_{\varphi}(x,y)=\varphi(y^{*}x)$ of *The Sesquilinear Form and the Conjugation*; the two radicals as the left and the right annihilators, so that non-degeneracy of $\Psi$ is the vanishing of the left annihilator, one clause of the objects of full type of *Topological Sesqualgebras*; the form descended to a quotient by an invariant ideal; and the relation to *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint* of the bilinear layer, whose form $h_c(x,y)=c(x)y$ is the companion form with the two arguments exchanged. -->
+
+### <a href="articles_maths/hermitian-algebras.html">Hermitian Algebras</a>
+<!-- the base structure of the layer: an associative algebra with an involution and a Hermitian form tied to the product by the adjoint axiom $h(xy,z)=h(y,x^{\dagger}z)$; the correspondence $h(x,y)=h(x^{\dagger}y,1)$; the companion form $h_c(x,y)=c(x)y$ of an anti-involution; the trace form and the induced dagger $x^{\dagger}=\sigma(\alpha(x^r))$ from reversion and the conjugate reversion; the radical, non-degeneracy and the isometry group; the unitary slice $U=\{x:x^{\dagger}x=1\}$ on which the dagger is the inverse. Positivity, completeness and the norm are *Hilbert Algebras* and the layer of Part II; the operators built from the dagger are the four groups below. -->
+
+### <a href="articles_maths/sesqualgebras-with-a-form.html">Sesqualgebras with a Form</a>
+<!-- the base object of the category: an associative algebra with a $\varsigma$-semilinear involution $*$ and a Hermitian form tied by the compatibility $h(xy,z)=h(y,x^{*}z)$; the equivalent identity $h(x,yz)=h(y^{*}x,z)$ and the caution that $h(xy,z)=h(x,zy^{*})$ is an extra hypothesis, with the counterexample $\tau(xGy^{*})$; the radical as a left ideal whose image under $*$ is a right ideal, the objects of full type, the non-degeneracy criterion and the collapse at the trivial involution; the algebraic original of *Topological Sesqualgebras with a Form*, with no continuity, no norm and no completion. -->
+
+### <a href="articles_maths/polarisation-and-the-hermitian-square.html">Polarisation and the Hermitian Square</a>
+<!-- the diagonal $q(x)=h(x,x)$ and the polarisation identity $q(x+y)-q(x)-q(y)=h_{\mathrm{tr}}(x,y)$; the trace form, the skew-Hermitian part the diagonal never sees, and $h=\tfrac12h_{\mathrm{tr}}+\tfrac12h_{\mathrm{sk}}$ when $2$ is invertible; the Hermitian square $xx^{*}$ with $q(x)=\varphi(xx^{*})$ and the quadratic form of the algebra; the degeneration in characteristic two and the quadratic refinement. -->
+
+### <a href="articles_maths/orthogonality-isotropy-and-the-radical.html">Orthogonality, Isotropy and the Radical</a>
+<!-- orthogonality and the two orthogonal complements, with $W\subseteq W^{\perp\perp}$ and equality exactly for a non-degenerate restriction; the decomposition $A=W\oplus W^{\perp}$; isotropy, the null set and its difference from the radical; the radical as the total orthogonal complement $A^{\perp}$, the non-degenerate descent to $A/\operatorname{rad}$ and the Witt index. -->
+
+### <a href="articles_maths/isometries-and-the-unitary-group-of-a-form.html">Isometries and the Unitary Group of a Form</a>
+<!-- the isometry set and the unitary group of the form; the equation $T^{*}T=1$, the determinant condition $\det(T)\varsigma(\det T)=1$ and the inversion $T^{-1}=T^{*}$ on the group; the embedding of the unitary slice by left multiplication; the polynomial nature of the equations and the algebraic-group reading. -->
+
+### <a href="articles_maths/hermitian-forms-over-algebras-and-norms.html">Hermitian Forms over Algebras and Norms</a>
+<!-- the norm map $x\mapsto xx^{*}$ and its polarisation as the trace form; the quaternion norm $a^{2}-\alpha b^{2}-\beta c^{2}+\alpha\beta d^{2}$ and its multiplicativity; the reduced norm of a central simple algebra, whose polarisation $\tau(X\operatorname{adj}(Y))$ is distinct from the Hermitian form $\tau(XY^{*})$; the blade form of a Clifford algebra and its failure of multiplicativity; the boundary between the algebraic norm and the norm that defines a distance. -->
+
+### <a href="articles_maths/hermitian-clifford-algebras.html">Hermitian Clifford Algebras</a>
+<!-- the real and the imaginary parts of a Hermitian form, $h=g+\mathrm{i}\omega$, and the Clifford algebra of $g=\operatorname{Re}h$; the impossibility of a Clifford relation for the sesquilinear form itself and the symplectic role of $\omega$; the dagger and the blade form on the complexified algebra; the unitary slice and the Pin and Spin groups; the CAR algebra named for the infinite-dimensional case. -->
+
+### Operator Theory
+
+### <a href="articles_maths/the-form-adjoint-of-an-operator.html">The Form-Adjoint of an Operator</a>
+<!-- the adjoint $T^{*}$ defined by $h(Tx,y)=h(x,T^{*}y)$; existence and uniqueness exactly for a nonsingular form through the Riesz map; the $\varsigma$-semilinear anti-automorphism of order two of the operator algebra; the self-adjoint, skew, normal and unitary operators and the quadratic form $Q_T(x)=h(Tx,x)$; the two adjoints of a semilinear operator; the Gram-matrix formulas for a multiplication operator. -->
+
+### <a href="articles_maths/isometries-and-unitary-operators-of-a-form.html">Isometries and Unitary Operators of a Form</a>
+<!-- the isometry equation in operator form; the matrix equations $T^{\dagger}GT=G$ and $T^{\dagger}T=1$ in the two conventions of the slots; the classical groups $U(n)$, $\operatorname{O}(p,q)$, $\operatorname{Sp}(2n)$ and $U(p,q)$; the determinant and the special subgroups; the algebraic nature of the group and the generation by transvections and reflections. -->
+
+### <a href="articles_maths/self-adjoint-and-skew-operators-of-a-form.html">Self-Adjoint and Skew Operators of a Form</a>
+<!-- the eigenspace split of the adjoint involution and the sign rule; the Lie algebra of the skew operators under the commutator and the Jordan algebra of the self-adjoint ones under the anticommutator; the quadratic form $Q_T(x)=h(Tx,x)$ and the correspondence with the Hermitian forms; the Cayley transform and the exponential deferred to Part II. -->
+
+### <a href="articles_maths/the-form-adjoint-of-the-multiplications.html">The Form-Adjoint of the Multiplications</a>
+<!-- the adjoint identities $L_x^{*}=L_{x^{*}}$, $R_x^{*}=R_{x^{*}}$ and $\Theta_x^{*}=\Theta_{x^{*}}$ of the left, the right and the sandwich operators; the regular representations as injective $\ast$-maps; the inner automorphism on the unitary slice; the double centraliser of the multiplications; the conjugate multiplication as a semilinear operator deferred to Part II. -->
+
+### <a href="articles_maths/congruence-and-the-stabiliser-of-a-form.html">Congruence and the Stabiliser of a Form</a>
+<!-- the congruence action $h\mapsto h_C$, $h_C(x,y)=h(Cx,Cy)$, the Gram matrix $G\mapsto C^{\dagger}GC$ and the determinant rule; the stabiliser equal to the unitary group and the conjugacy $U(A,h_C)=C^{-1}U(A,h)C$; the classification by the signature over $\mathbb{R}$, by the rank over $\mathbb{C}$ and by the Witt class in general; the transport of the operators by $T\mapsto C^{-1}TC$. -->
+
+### * Theory
+
+### <a href="articles_maths/the-indefinite-case-and-the-signature.html">The Indefinite Case and the Signature</a>
+<!-- the signature and the inertia of a Hermitian form; the Pontryagin index and the decomposition into the positive and the negative parts; the indefinite inner product; the boundary with the Krein space, which belongs to *Topology on Algebras with a degree-2 form* and is named rather than developed. -->
+
+### <a href="articles_maths/the-form-on-the-biquaternion-algebra-as-a-general-plain-sesquilinear-form.html">The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form</a>
+<!-- the form $\mathrm{Sc}(Q^{*}Q')$ on $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; its positive definiteness; the indefinite form $\mathrm{Sc}(\bar Q Q')$ and its signature $(2,6)$ over $\mathbb{R}$; the unitary slice; the caution that quaternion conjugation ${}^{\natural}$ is $\mathbb{C}$-linear, so the form it gives is bilinear and belongs to the bilinear layer. -->
+
+### <a href="articles_maths/the-unitary-group-of-a-form-and-its-lie-algebra.html">The Unitary Group of a Form and Its Lie Algebra</a>
+<!-- the tangent space at the identity by the dual numbers and its identification with the skew-adjoint operators, $\mathfrak{u}(A,h)=\{T:T^{*}=-T\}$; the commutator and the closure; the algebraic construction with no limit, no norm and no completion; the examples $\mathfrak{u}(n)$, $\mathfrak{su}(n)$, $\mathfrak{so}(G)$, $\mathfrak{sp}(2n)$ and the Lorentzian $\mathfrak{so}(2,6)$ of the biquaternions. -->
+
+### <a href="articles_maths/the-hermitian-jordan-algebra-of-a-form.html">The Hermitian Jordan Algebra of a Form</a>
+<!-- the self-adjoint operators with the symmetrised product as a special Jordan algebra and the two eigenspaces of the adjoint involution; the correspondence with the Hermitian forms $Q_T(x)=h(Tx,x)$; the quadratic representation equal to the sandwich exactly for self-adjoint parameters; the action of the unitary group and its infinitesimal derivation; the positivity and the cone deferred to Part II. -->
+
+### <a href="articles_maths/real-forms-and-the-signature.html">Real Forms and the Signature</a>
+<!-- the descent from a Hermitian form to a real symmetric form, the compatible real structures and the real forms of the layer; the signature as the complete invariant over an ordered field (Sylvester); the complex congruence class fixed by the dimension and the family of real forms inside it classified by the signature; the transfer and the norm in the arithmetic reading; the biquaternion signatures as examples. -->
+
+### <a href="articles_maths/the-hyperbolic-form-and-the-witt-index.html">The Hyperbolic Form and the Witt Index</a>
+<!-- the hyperbolic plane and the hyperbolic forms; the existence of a hyperbolic plane through every isotropic vector; the Witt decomposition into hyperbolic planes plus an anisotropic part; the index and the anisotropic part as invariants by Witt's cancellation; the Clifford algebra of a hyperbolic form as a full matrix algebra. -->
+
+### * Theory, Two-Sided Operator with Hermitian Adjoint
+
+### <a href="articles_maths/hermitian-adjoints-on-a-hermitian-algebra.html">Hermitian Adjoints on a Hermitian Algebra</a>
+<!-- the adjoint axiom as the operator identity $L_{x^{\dagger}}=L_x^{*}$; the two adjoints, the involution as the adjoint and the self-adjoint elements. -->
+
+### <a href="articles_maths/the-blade-form-and-the-hermitian-structure-with-hermitian-adjoint.html">The Blade Form and the Hermitian Structure with Hermitian Adjoint</a>
+<!-- the blade basis and the scalar forms it defines; the trace form $\mathrm{Sc}(x^{\dagger}y)$; the completeness of the metric reading of that form deferred to *The Euclidean Form, the Norm and the Completion on a Clifford Algebra* in Part II; the invariance of the forms under the anti-involutions; the adjoints of the left and the right multiplication for the dagger form and for the reversion form, and the parity sign that separates them. -->
+
+### <a href="articles_maths/hermitian-forms-on-a-hermitian-algebra-with-hermitian-adjoint.html">Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint</a>
+<!-- the canonical Hermitian form $\mathrm{Sc}(x^{\dagger}y)$ of an anti-involution and the Hermitian forms on the algebra; the Gram matrix, the radical and the isometry group; the congruence $H\mapsto S^{\dagger}HS$ and the two-sided operators attached to a form; the passage to the unitary Witt group. -->
+
+### <a href="articles_maths/hermitian-forms-over-an-involution-ring-and-the-unitary-witt-group-with-hermitian-adjoint.html">Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</a>
+<!-- Hermitian forms over a ring with an involution, their congruence classification, the unitary Witt group and the Wall group; the discriminant and the Hasse-type invariants; the Hermitian forms carried by a Clifford algebra as the instance of the theory. -->
+
+### <a href="articles_maths/the-hermitian-sandwich-on-a-hermitian-algebra-with-hermitian-adjoint.html">The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint</a>
+<!-- the Hermitian sandwich $\Theta_x(y)=x\,y\,x^{\dagger}$, its linearity in the argument and its semilinearity in the parameter up to the norm rule, its multiplicativity, its value at the unit; the identities on the Clifford group with the correction, the unitary slice on which it is the inner conjugation, the preservation of the quadratic space and the two worked cases. -->
+
+### <a href="articles_maths/the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.html">The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</a>
+<!-- the biquaternion algebra $\mathbb{B}=M_2(\mathbb{C})$ as the one algebra in which the whole Hermitian theory is written in coordinates: the operator $\Theta_x$, the forms, positivity, the unitary slice, the Lorentz transformation it produces and complete positivity. -->
+
+### <a href="articles_maths/the-unitary-slice-and-the-compact-real-form-with-hermitian-adjoint.html">The Unitary Slice and the Compact Real Form with Hermitian Adjoint</a>
+<!-- the unitary slice $U=\{x:x^{\dagger}x=1\}$ on which the dagger is the inverse and the Hermitian sandwich is the inner conjugation; the shape of the slice recording the signature; the compact real form, the identity involution with $U=\mathrm{Pin}$, and the definite case over $\mathbb{C}$ and $\mathbb{H}$. -->
+
+### <a href="articles_maths/positivity-and-the-hermitian-cone-of-a-hermitian-algebra-with-hermitian-adjoint.html">Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint</a>
+<!-- the positive involution of the algebra; the self-adjoint and skew elements and the decomposition of the algebra; the cone of the elements $x^{\dagger}x$ and the criterion that the dagger is positive; the polar decomposition and the Cartan involution of the group of units. -->
+
+### <a href="articles_maths/self-adjoint-and-skew-operators-with-hermitian-adjoint.html">Self-Adjoint and Skew Operators with Hermitian Adjoint</a>
+<!-- the $\ast$-algebra $\mathrm{End}_A(S)$ of operators on a Hermitian Clifford module; the adjoint, the splitting into the self-adjoint and skew-adjoint parts, the graded commutator rules; the skew part as the Lie algebra of the unitary group and the self-adjoint part as the Jordan algebra; the Hilbert–Schmidt orthogonality of the two halves; the blade sign and the regular representation. -->
+
+### <a href="articles_maths/the-spectra-of-self-adjoint-operators-with-hermitian-adjoint.html">The Spectra of Self-Adjoint Operators with Hermitian Adjoint</a>
+<!-- the finite-dimensional spectral theorem: real spectrum, orthogonal eigenspaces, the spectral decomposition $T=\sum_i\lambda_iP_i$ and the functional calculus; the min-max principle, the positivity criterion; the purely imaginary spectrum of the skew-adjoint operators; normality and unitary invariance; the two-sided spectrum and the Sylvester solvability condition; the failure of the theorem in indefinite signature. -->
+
+### <a href="articles_maths/unitary-equivalence-and-congruence-of-operators-with-hermitian-adjoint.html">Unitary Equivalence and Congruence of Operators with Hermitian Adjoint</a>
+<!-- the conjugation $T\mapsto UTU^{-1}$ with its invariant the spectrum and the congruence $T\mapsto A^{\dagger}TA$ with its invariant the inertia; the two relations agreeing on the slice and the equivalence being strictly finer off it; the preservation of positivity and the cone; the Takagi invariant in the complex-symmetric case. -->
+
+### <a href="articles_maths/the-hermitian-sylvester-equation-with-hermitian-adjoint.html">The Hermitian Sylvester Equation with Hermitian Adjoint</a>
+<!-- the Hermitian Sylvester equation and its operator form $L_a+R_b$; the solvability exactly when no eigenvalue sum vanishes, the spectral form of the classical solvability condition; the alternating and symmetric cases and the congruence law which belongs to the unitary Witt group. -->
+
+### <a href="articles_maths/mixed-inner-conjugation-and-hermitian-adjoint.html">Mixed Inner Conjugation and Hermitian Adjoint</a>
+<!-- the four two-sided operators formed by the independent choices of the left twist, identity or signed, and the right factor, inverse or dagger; the interaction of the involutive and the orthogonal structure; the two defects between the members and the signed Hermitian sandwich $\alpha(x)yx^{\dagger}$. -->
+
+### <a href="articles_maths/completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.html">Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint</a>
+<!-- the Clifford algebra with a positive involution as a finite-dimensional $C^{*}$-algebra; Choi's theorem, the Kraus form of a completely positive map and the innerness of the automorphisms of a full matrix algebra, read in the Clifford language. -->
+
+### * Theory, One-Sided Operator with Hermitian Adjoint
+
+### <a href="articles_maths/one-sided-operators-on-a-hermitian-algebra-with-hermitian-adjoint.html">One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint</a>
+<!-- the left and right multiplications and their graded and anti-involution variants; the composition laws, the commutation and the two-sided operator as their product; the adjoint $L_a^{*}=L_{a^{\dagger}}$ and $R_b^{*}=R_{b^{\dagger}}$ with respect to $\mathrm{Sc}(x^{\dagger}y)$, and the self-adjoint, skew and unitary criteria; the double centraliser, the images as ideals and the annihilators as kernels. -->
+
+### <a href="articles_maths/hermitian-modules-over-a-hermitian-algebra-with-hermitian-adjoint.html">Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint</a>
+<!-- the Clifford module carrying a form for which the action is self-adjoint, $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$; the two-point function, the positivity and the self-adjointness axiom; the reducibility and the module-level form. -->
+
+### <a href="articles_maths/the-adjoint-of-the-one-sided-action-with-hermitian-adjoint.html">The Adjoint of the One-Sided Action with Hermitian Adjoint</a>
+<!-- the adjoint of the action $\rho(x)^{*}=\rho(x^{\dagger})$; the resulting $\ast$-structure on the operator algebra, the rule for the adjoint of a composite and the reversal of the factors; the vectors acting skew-adjointly; the elementary algebraic reason the Dirac operator is formally self-adjoint. -->
+
+### <a href="articles_maths/bilinear-operators-on-a-hermitian-module-with-hermitian-adjoint.html">Bilinear Operators on a Hermitian Module with Hermitian Adjoint</a>
+<!-- operators built from two spinors; the completeness of the Clifford action and the Fierz identity; the bilinear covariants $(s,\Gamma^{A}t)$ spanning the bilinear forms and reconstructing every endomorphism; the adjoint of a bilinear operator. -->
+
+### <a href="articles_maths/invariant-operators-and-intertwiners-with-hermitian-adjoint.html">Invariant Operators and Intertwiners with Hermitian Adjoint</a>
+<!-- the commutant of the Clifford action and its identification with the intertwiners; Schur's lemma on an irreducible module and the right multiplications on the regular module; the adjoint of an intertwiner and the self-adjoint invariant operators. -->
+
+### <a href="articles_maths/dirac-operators-with-hermitian-adjoint.html">Dirac Operators with Hermitian Adjoint</a>
+<!-- the Dirac operator as a Hermitian operator: the product of the skew-adjoint Clifford action and a formally skew-adjoint first-order operator; its self-adjointness with respect to the module form, the positivity of the Hermitian square, the reality of the spectrum, the orthogonality of the eigenspinors and the splitting of the module by the kernel. -->
+
+### <a href="articles_maths/spinor-adjoints-and-the-dirac-adjoint-with-hermitian-adjoint.html">Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</a>
+<!-- the spinor adjoint $s\mapsto(s,\cdot)$ as the Clifford-equivariant identification of the module with its dual, and the Dirac adjoint $\bar\psi=\psi^{\dagger}\gamma_0$ with the invariant $\bar\psi\psi$; the repair of the isotropy of the scalar form and the interaction with the self-adjointness of the Dirac operator. -->
+
+### * Theory, Two-Sided Operator with Signed Hermitian Adjoint
+
+### <a href="articles_maths/two-sided-operators-on-a-hermitian-algebra-with-signed-hermitian-adjoint.html">Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint</a>
+<!-- the two-sided operator $\Theta^{\alpha}_x(y)=\alpha(x)yx^{\dagger}$, the signed Hermitian member whose left factor carries the grade involution and whose right factor carries the dagger; the parity sign $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ with $\varepsilon_x=(-1)^k$, so that it is the Hermitian sandwich on the even part and its negative on the odd part; bijectivity, the composition law and the parameter rule $\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x$; the action on the Clifford group, $\Theta^{\alpha}_x=\varepsilon_x\sigma(N(x))\,x(\ )\sigma(x)^{-1}$, an isometry exactly when $\sigma(N(x))^2=1$ and otherwise a similarity of ratio $\sigma(N(x))^2$; the kernel of the invertible elements with central dagger, $F^{\times}\cap U$ on the slice against the kernel $F^{\times}$ of the signed inner conjugation; the reflection $\Theta^{\alpha}_u=-q(u)\rho_u$, which is $\rho_u$ exactly on the slice; the slice reduction $\Theta^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ for $x^{\dagger}=x^{-1}$; the biquaternion dictionary $\tilde{Q}x\tilde{Q}^{\dagger}$ and the Lorentz group. -->
+
+### <a href="articles_maths/the-grading-of-a-hermitian-algebra-with-signed-hermitian-adjoint.html">The Grading of a Hermitian Algebra with Signed Hermitian Adjoint</a>
+<!-- why the signed Hermitian member is not a second structure: the sign is the parity, $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$; the dagger is even, so $\Theta^{\alpha}_x\Theta^{\alpha}_z=\varepsilon_x\varepsilon_z\Theta^{\alpha}_{xz}$ and two odd steps compose to the ordinary Hermitian sandwich, $\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta_{xz}$ for $x,z$ odd; the odd part of the unitary slice as a coset and $U/U^0\cong\mathbb{Z}/2$; the algebra as a free rank-two module over its even part; the even-ness of the Hermitian form, so that the two parity sectors are orthogonal; the determinants $\det\mathrm{Ad}^{\alpha}_x=\varepsilon_x$ against $\det\mathrm{Ad}_x=(\varepsilon_x)^{n+1}$, and the comparison by the scalar $\sigma(N(x))$ off the unitary slice. -->
+
+### <a href="articles_maths/the-pin-and-spin-groups-with-signed-hermitian-adjoint.html">The Pin and Spin Groups with Signed Hermitian Adjoint</a>
+<!-- the Hermitian formulation of the covering groups: the Clifford group $\Gamma$, the Hermitian Clifford group $\Gamma_{\dagger}=\{x\in\Gamma:\sigma(N(x))^2=1\}$ where the Hermitian sandwich is an isometry, and the unitary slice $U$ where the dagger is the inverse; $\Gamma_{\dagger}=\mathrm{Pin}$ and $U\cap\Gamma=\{N=1\}$ for the trivial involution, the two coinciding for a definite form in the corpus's convention; the reflections as the odd elements, $\Theta^{\alpha}_u=\rho_u$ for $q(u)=-1$; the double cover $\{\pm1\}\to\mathrm{Pin}\to O$ and $\{\pm1\}\to\mathrm{Spin}\to SO$, Cartan–Dieudonné, the low-dimensional groups, and the indefinite and degenerate cases. -->
+
+### <a href="articles_maths/versors-rotors-and-the-sandwich-action-with-signed-hermitian-adjoint.html">Versors, Rotors and the Sandwich Action with Signed Hermitian Adjoint</a>
+<!-- versors and rotors under the signed Hermitian sandwich: the dagger of a versor is a versor of the same length and parity, so the sandwich has versors on both sides; the form of the operator on the Clifford group, $\Theta^{\alpha}_x=\varepsilon_x\sigma(N(x))\,x(\ )\sigma(x)^{-1}$; the rotor as an even $\sigma$-real versor of norm with $\sigma(N)=1$, for which the Hermitian sandwich is the plain rotation $RvR^{-1}$; the two actions and the half angle against the full angle; the adjointness axiom $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$ on a Hermitian Clifford module, with the dagger entering the module side as the adjoint and never as a rotation; the similarity of ratio $\sigma(N(x))^2$ off the slice. -->
+
+### <a href="articles_maths/reflection-groups-and-the-pin-lift-with-signed-hermitian-adjoint.html">Reflection Groups and the Pin Lift with Signed Hermitian Adjoint</a>
+<!-- the reflection of a root as a signed Hermitian sandwich: $\Theta^{\alpha}_u=-q(u)\rho_u$, so the reflection is realised exactly on the unitary slice, by the slice-normalised root $q(u_\alpha)=-1$; the Hermitian Clifford lift $\Gamma_\Phi=\langle u_\alpha\rangle\subseteq U\cap\Gamma_{\dagger}$; its finiteness, the twofold cover $\Gamma_\Phi\to W_\Phi$, the orders $|\Gamma_\Phi|=2|W_\Phi|$ and $|\Gamma_\Phi^0|=|W_\Phi|$, and the even part covering the rotation subgroup; the cases $A_1$, $A_2$ and $A_3$, the Hurwitz units and the $24$-cell. -->
+
+### * Theory, One-Sided Operator with Signed Hermitian Adjoint
+
+### <a href="articles_maths/one-sided-operators-on-a-hermitian-algebra-with-signed-hermitian-adjoint.html">One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint</a>
+<!-- the signed left multiplication $\Lambda^{\alpha}_x(y)=\alpha(x)y$ and the dagger right multiplication $R_{x^{\dagger}}(y)=yx^{\dagger}$ as the two one-sided factors of the signed Hermitian sandwich; $\Lambda^{\alpha}_x=\varepsilon_xL_x=\alpha L_x\alpha$, the value $\alpha(x)$ at the unit and the parity; the composition laws, the commutation, and the adjoints $(\Lambda^{\alpha}_x)^{*}=\Lambda^{\alpha}_{x^{\dagger}}$ and $(R_{x^{\dagger}})^{*}=R_x$ for the form $\mathrm{Sc}(x^{\dagger}y)$; the split of linearity, the left factor linear and the right factor $\sigma$-semilinear in the parameter, giving $\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x$; the reflection $\rho_u$ against $-q(u)\rho_u$; the kernels and the images, which see the involution but not the sign. -->
+
+### <a href="articles_maths/pin-representations-and-hermitian-modules-with-signed-hermitian-adjoint.html">Pin Representations and Hermitian Modules with Signed Hermitian Adjoint</a>
+<!-- the pin representation on a Hermitian Clifford module: the restriction of the algebra action to the whole Pin group, one-sided by construction, with the adjoint $\rho(x)^{*}=\rho(x^{\dagger})$ and unitarity on the unitary slice; the intertwining identities $\rho(x)\rho(v)\rho(x)^{*}=\rho(\Theta_x(v))$ and $\rho(\Theta^{\alpha}_x(v))=\varepsilon_x\rho(x)\rho(v)\rho(x)^{*}$; the module form of the reflection $\rho(u)\rho(v)\rho(u)^{*}=\rho(-q(u)\rho_u(v))$, which is $\rho_u$ on the slice, with $\rho(u)^2=-\mathrm{id}$ there; the chirality, the Hermitian-orthogonal chiral halves, the kernel, the real modules and the definite case. -->
+
+### <a href="articles_maths/spinors-as-minimal-left-ideals-with-signed-hermitian-adjoint.html">Spinors as Minimal Left Ideals with Signed Hermitian Adjoint</a>
+<!-- a spinor as an element of a minimal left ideal $I=\mathrm{Cl}(V,q)\pi$ with the whole Pin group acting by left multiplication; the parity splitting $I=I^0\oplus I^1$, the even elements preserving and the odd ones interchanging the summands, with the two halves Hermitian-orthogonal; the signed Hermitian sandwich realised on the ideal as $\Theta^{\alpha}_x(v)\psi=\rho(\alpha(x))\rho(v)\rho(x)^{*}\psi$, the adjoint of the left multiplication playing the role of the right factor, with the defect $\rho(xx^{\dagger})$ off the slice; the reflection $\rho_u(v)\psi$ on the slice against $-q(u)\rho_u(v)\psi$; the central volume element exchanging the two summands, the unsigned Hermitian sandwich acting on it by $-\mathrm{id}$ and the signed one by $+\mathrm{id}$. -->
+
 ## PART II : TOPOLOGY
 
 ## Foundations of Topology
@@ -1332,28 +1671,28 @@
 ### <a href="articles_maths/topological-spaces.html">Topological Spaces</a>
 <!-- topological spaces, open and closed sets, bases and subbases, continuity, homeomorphism, subspaces, product and quotient (identification) topologies, convergence of nets and filters, separation axioms, connectedness, compactness. -->
 
-###<a href="articles_maths/nets-filters-and-convergence.html">Nets, Filters and Convergence</a>
+### <a href="articles_maths/nets-filters-and-convergence.html">Nets, Filters and Convergence</a>
 <!-- nets and filters; convergence in an arbitrary topological space; ultrafilters; the equivalence of the two formulations; the role of nets where no metric exists; the relation to the Tychonoff theorem; the convergence spaces and the categorical description of convergence. -->
 
-###<a href="articles_maths/metrisation-and-separation-axioms.html">Metrisation and Separation Axioms</a>
+### <a href="articles_maths/metrisation-and-separation-axioms.html">Metrisation and Separation Axioms</a>
 <!-- the separation axioms $T_0$ through $T_4$ and their permanence; regular and normal spaces; Urysohn's lemma and the Tietze extension theorem; which topological spaces arise from a distance, and the metrisation theorems of Urysohn and Nagata–Smirnov; the role of second countability and paracompactness; the status of the Krull, profinite and Gelfand topologies as the standard non-metrisable spaces of this corpus. -->
 
-###<a href="articles_maths/paracompactness-and-partitions-of-unity.html">Paracompactness and Partitions of Unity</a>
+### <a href="articles_maths/paracompactness-and-partitions-of-unity.html">Paracompactness and Partitions of Unity</a>
 <!-- paracompactness and the shrinking lemma; partitions of unity subordinate to a cover; the Smirnov metrisation theorem; the role of partitions of unity in the construction of smooth structures. -->
 
-###<a href="articles_maths/baire-spaces-and-category.html">Baire Spaces and Category</a>
+### <a href="articles_maths/baire-spaces-and-category.html">Baire Spaces and Category</a>
 <!-- Baire spaces and the Baire category theorem; meagre sets; the relation to completeness and to the functional analysis of Part III. -->
 
-###<a href="articles_maths/dimension-theory.html">Dimension Theory</a>
+### <a href="articles_maths/dimension-theory.html">Dimension Theory</a>
 <!-- the covering dimension and the inductive dimensions; the invariance of dimension; the dimension of a manifold; the relation to the Lebesgue covering lemma. -->
 
-###<a href="articles_maths/proximity-spaces.html">Proximity Spaces</a>
+### <a href="articles_maths/proximity-spaces.html">Proximity Spaces</a>
 <!-- proximity spaces and the proximity relation; the relation to the uniform spaces and to the topological spaces. -->
 
-###<a href="articles_maths/bornology.html">Bornology</a>
+### <a href="articles_maths/bornology.html">Bornology</a>
 <!-- bornologies and bounded sets; the relation to the topological spaces and to the bounded sets of the functional analysis of Part III. -->
 
-###<a href="articles_maths/continuum-theory.html">Continuum Theory</a>
+### <a href="articles_maths/continuum-theory.html">Continuum Theory</a>
 <!-- continua and their properties; indecomposable continua; Peano spaces; the relation to compactness and to the dynamical systems of Part III. -->
 
 ### <a href="articles_maths/graph-theory.html">Graph Theory</a>
@@ -1426,55 +1765,55 @@
 ### <a href="articles_maths/topological-groups.html">Topological Groups</a>
 <!-- group topology (continuity of the product and the inverse), homogeneity, the topology determined by the neighbourhoods of the identity, subgroups and quotient groups, products, the left and right uniform structures, completion of a topological group, profinite groups as inverse limits of finite groups; topological vector spaces as the additive case. -->
 
-###<a href="articles_maths/abelian-topological-groups.html">Abelian Topological Groups</a>
+### <a href="articles_maths/abelian-topological-groups.html">Abelian Topological Groups</a>
 <!-- abelian topological groups; the duality of a locally compact abelian group with its character group; the relation to the harmonic analysis of Part III. -->
 
-###<a href="articles_maths/pontryagin-duality.html">Pontryagin Duality</a>
+### <a href="articles_maths/pontryagin-duality.html">Pontryagin Duality</a>
 <!-- the character group of a locally compact abelian group; Pontryagin duality and its consequences; the relation to Fourier analysis, treated in Part III. -->
 
-###<a href="articles_maths/profinite-groups-and-the-krull-topology.html">Profinite Groups and the Krull Topology</a>
+### <a href="articles_maths/profinite-groups-and-the-krull-topology.html">Profinite Groups and the Krull Topology</a>
 <!-- inverse limits of finite groups; profinite groups and their topology; compactness and total disconnectedness; open subgroups and the neighbourhood basis of the identity; the Krull topology on an absolute Galois group; the Galois correspondence as a statement about open subgroups; $\mathbb{Z}_p$ and the profinite completion of $\mathbb{Z}$; a group topology that no distance induces. -->
 
-###<a href="articles_maths/representation-theory-of-locally-compact-groups.html">Representation Theory of Locally Compact Groups</a>
+### <a href="articles_maths/representation-theory-of-locally-compact-groups.html">Representation Theory of Locally Compact Groups</a>
 <!-- the unitary representations of a locally compact group. -->
 
-###<a href="articles_maths/induced-representations-of-locally-compact-groups.html">Induced Representations of Locally Compact Groups</a>
+### <a href="articles_maths/induced-representations-of-locally-compact-groups.html">Induced Representations of Locally Compact Groups</a>
 <!-- induced representations of locally compact groups; the imprimitivity theorem. -->
 
-###<a href="articles_maths/mackey-theory.html">Mackey Theory</a>
+### <a href="articles_maths/mackey-theory.html">Mackey Theory</a>
 <!-- the Mackey machine for induced representations; the imprimitivity theorem; the relation to the representation theory of locally compact groups. -->
 
 ### <a href="articles_maths/linear-algebraic-groups.html">Linear Algebraic Groups</a>
 <!-- the subgroups of $GL_n$ defined by polynomial equations over a field: the Zariski topology as the topology of the zero sets of polynomials, so that the group operations are continuous; connectedness, the identity component and the finite component group; the unipotent and the solvable groups and their structure; the tori, the characters and the cocharacters, the weights and the root data; the Borel and the parabolic subgroups, the Levi decomposition and the Bruhat decomposition; the reductive and the semisimple groups and their classification by root data; the $k$-structure for a general field $k$, the split and the anisotropic groups, and the Galois action on the root data; the arithmetic subgroups are the $k$-integral points of these groups. -->
 
-###<a href="articles_maths/property-t.html">Property (T)</a>
+### <a href="articles_maths/property-t.html">Property (T)</a>
 <!-- Kazhdan's property (T): its definition, its equivalent formulations and its consequences for the representation theory of locally compact groups. -->
 
-###<a href="articles_maths/geometric-group-theory.html">Geometric Group Theory</a>
+### <a href="articles_maths/geometric-group-theory.html">Geometric Group Theory</a>
 <!-- Cayley graphs and word metrics; quasi-isometries; the Gromov boundary; the Milnor–Wolf theorem; the Švarc–Milnor lemma; the growth of groups. -->
 
-###<a href="articles_maths/hyperbolic-groups.html">Hyperbolic Groups</a>
+### <a href="articles_maths/hyperbolic-groups.html">Hyperbolic Groups</a>
 <!-- Gromov-hyperbolic spaces and groups; the Morse lemma; the boundary at infinity; the classification of isometries; the Rips complex; the algorithmic properties of hyperbolic groups. -->
 
-###<a href="articles_maths/amenable-groups.html">Amenable Groups</a>
+### <a href="articles_maths/amenable-groups.html">Amenable Groups</a>
 <!-- amenability and the Følner condition; the fixed-point property; the class of elementary amenable groups; the von Neumann conjecture and its failure; the topological case is treated in the same article. -->
 
-###<a href="articles_maths/self-similar-groups.html">Self-Similar Groups</a>
+### <a href="articles_maths/self-similar-groups.html">Self-Similar Groups</a>
 <!-- the regular rooted tree and its self-similar boundary; the level-preserving automorphisms and the wreath recursion $g=(g_0,\dots,g_{d-1})\sigma$; the sections $g\|_v$ and the multiplication rule $(gh)\|_v=g\|_v\,h\|_{gv}$; the portrait of an automorphism as a labelling of the tree; the self-similar action as a group of automorphisms closed under sections, and the complete automaton it generates; level-transitive, self-replicating, recurrent and contracting actions and the virtual endomorphism $\varphi_x$; the standard examples with their recursions and portraits, the adding machine, the dihedral group, the Grigorchuk group, the Gupta–Sidki groups, the lamplighter group, the Sierpiński gasket group and the iterated monodromy groups; branch and weakly branch groups, the rigid stabilisers and the just-infiniteness of the branch groups; the Grigorchuk group as a group of intermediate growth, the statement only, its growth exponent being unknown; the framing is distance only, the tree and the level metric being the sole structures, and the measure on the boundary, the spectra and the operator algebras are Part III's. -->
 
-###<a href="articles_maths/automaton-and-contracting-groups.html">Automaton and Contracting Groups</a>
+### <a href="articles_maths/automaton-and-contracting-groups.html">Automaton and Contracting Groups</a>
 <!-- the Mealy automaton $(Q,\lambda,\pi)$ and its Moore diagram; the transformation $A_q$ of a state on the tree and the boundary; the section of a state as a state, so a finite machine is closed under sections, and the equivalence of a finite-state self-similar action with generation by a finite automaton; the group $G(\mathcal{A})$ and the complete automaton; the residual finiteness and the finite generation of every automaton group; the word problem, the machine's level check, its hardness in general — PSPACE-completeness for a binary-alphabet automaton group and coNP-completeness for the finitary ones, with the optimality of the binary alphabet — and its decidability for the contracting groups; the contracting action and the nucleus $N$, closed under sections and generating the group when the action is recurrent; the contraction coefficient $\rho$, less than one exactly for the contracting actions; the reduction lemma and the word-problem algorithm read off the nucleus; the bounded automata of Sidki, characterised by the disjoint nontrivial cycles of their machine, and the theorem that the contracting groups with post-critically finite limit space are exactly the subgroups of the group $B$ of bounded automorphisms; the nuclei of the standard examples, the adding machine, the Grigorchuk group, the Gupta–Sidki and Sierpiński gasket groups and the lamplighter group, which is not contracting, and the contracting iterated monodromy groups of the sub-hyperbolic rational maps; the framing is distance only, the tree and the word metric carrying the arguments, and the spectra, the measures and the Julia sets are Part III's. -->
 
-###<a href="articles_maths/limit-spaces-and-schreier-graphs.html">Limit Spaces and Schreier Graphs</a>
+### <a href="articles_maths/limit-spaces-and-schreier-graphs.html">Limit Spaces and Schreier Graphs</a>
 <!-- the Schreier graph $\Gamma(G,S,M)$ of an action; the finite graphs $\Gamma_n(G,S)$ of the levels and the equivariant projections $\Gamma_{n+1}\to\Gamma_n$, an inverse spectrum whose inverse limit is the profinite graph of the action on the boundary; the local topology on pointed graphs and the orbit Schreier graph as the limit of the pointed level graphs; the graph contraction and the self-similarity of the family of graphs as the substitution form of the wreath recursion; the space $X^{-\omega}$ of sequences infinite to the left and the asymptotic equivalence, decided by the nucleus criterion $h_n(x_n)=y_n$, $h_n\|_{x_n}=h_{n-1}$ on the nuclear Moore diagram; the limit space $\mathcal{J}_G$ as the quotient, compact and metrisable of covering dimension at most $\lvert N\rvert-1$, connected in the level-transitive case, with the shift $s$ as the limit dynamical system; the tiles $T_v$ with $T_v=\bigcup_xT_{xv}$, $s(T_v)=T_{v'}$, at most $\lvert N\rvert$ tiles through a point and $T_u\cap T_v\neq\emptyset$ exactly when $h(v)=u$ for a nucleus element, and the Markov partition they give; the graph $J_n(G)$ on the tiles of a level as the Schreier graph of the nucleus, the limit space as the rescaled limit of the graphs $J_n(G)$ in the sense of the approximation theorem, and as the Gromov boundary of the self-similarity complex; the dimension theorem, the covering dimension equal to the asymptotic dimension of the orbital graphs and equal to one exactly for the faithful quotients of the contracting self-similar virtually free groups; the examples, the circle for the adding machine with the doubling map, the segment for the Grigorchuk and the dihedral groups with the tent map, the dendrite of the Fabrykowski–Gupta group, the Sierpiński gasket and the Julia sets of the sub-hyperbolic rational maps; the framing is distance only, the graph distance and the quotient topology carrying the constructions, and the spectra and the measures are Part III's while the Gromov–Hausdorff convergence and the Hausdorff dimension are Part IV's. -->
 
-###<a href="articles_maths/bass-serre-theory.html">Bass–Serre Theory</a>
+### <a href="articles_maths/bass-serre-theory.html">Bass–Serre Theory</a>
 <!-- groups acting on trees; graphs of groups and their fundamental groups; the structure theorem; the theory of ends and the Stallings theorem; the tree is a topological space, which is why this article belongs to this part. -->
 
-###<a href="articles_maths/buildings-and-tits-systems.html">Buildings and Tits Systems</a>
+### <a href="articles_maths/buildings-and-tits-systems.html">Buildings and Tits Systems</a>
 <!-- buildings as simplicial complexes with the chamber topology; the Moufang property; Tits systems and BN-pairs; the classification of spherical and affine buildings; the relation to the finite simple groups of Lie type of Part I. -->
 
-###<a href="articles_maths/bruhat-tits-theory.html">Bruhat–Tits Theory</a>
+### <a href="articles_maths/bruhat-tits-theory.html">Bruhat–Tits Theory</a>
 <!-- the Bruhat–Tits building of a reductive group over a local field. -->
 
 ### Operator Theory
@@ -1544,25 +1883,25 @@
 ### <a href="articles_maths/absolute-values-valuations-and-completions.html">Absolute Values, Valuations and Completions</a>
 <!-- absolute values, the induced metric, equivalence of absolute values, Ostrowski's theorem (every nontrivial absolute value on $\mathbb{Q}$ is the real one or a $p$-adic one), valuations and non-Archimedean fields, completion with respect to a valuation, $\mathbb{Q}\to\mathbb{R}$ and $\mathbb{Q}\to\mathbb{Q}_p$, Hensel's lemma, extensions of valuations. -->
 
-###<a href="articles_maths/local-fields.html">Local Fields</a>
+### <a href="articles_maths/local-fields.html">Local Fields</a>
 <!-- local fields and their completions; the p-adic fields; the structure of the multiplicative group; the residue field and ramification; the relation to the p-adic numbers and to the algebraic number theory of Part I. -->
 
-###<a href="articles_maths/adeles-and-ideles.html">Adeles and Ideles</a>
+### <a href="articles_maths/adeles-and-ideles.html">Adeles and Ideles</a>
 <!-- the ring of adeles and the group of ideles; the restricted product topology; the relation to the algebraic number theory of Part I and to the locally compact groups of this part. -->
 
-###<a href="articles_maths/rigid-analytic-geometry.html">Rigid Analytic Geometry</a>
+### <a href="articles_maths/rigid-analytic-geometry.html">Rigid Analytic Geometry</a>
 <!-- affinoid algebras and rigid spaces; the maximum modulus principle. -->
 
-###<a href="articles_maths/berkovich-spaces.html">Berkovich Spaces</a>
+### <a href="articles_maths/berkovich-spaces.html">Berkovich Spaces</a>
 <!-- Berkovich analytic spaces and their properties. -->
 
-###<a href="articles_maths/formal-schemes.html">Formal Schemes</a>
+### <a href="articles_maths/formal-schemes.html">Formal Schemes</a>
 <!-- formal schemes and their properties; the relation to the completion of Part I and to the rigid analytic geometry of this part. -->
 
-###<a href="articles_maths/adic-spaces.html">Adic Spaces</a>
+### <a href="articles_maths/adic-spaces.html">Adic Spaces</a>
 <!-- adic spaces and their properties; the relation to the rigid analytic geometry and to the formal schemes of this part. -->
 
-###<a href="articles_maths/perfectoid-spaces.html">Perfectoid Spaces</a>
+### <a href="articles_maths/perfectoid-spaces.html">Perfectoid Spaces</a>
 <!-- perfectoid spaces and their properties; the relation to the adic spaces of this part and to the algebraic number theory of Part I. -->
 
 ### Operator Theory
@@ -1648,7 +1987,7 @@
 
 ### Applications
 
-###<a href="articles_maths/the-p-adic-numbers.html">The $p$-adic Numbers</a>
+### <a href="articles_maths/the-p-adic-numbers.html">The $p$-adic Numbers</a>
 <!-- the $p$-adic absolute value and the completion of $\mathbb{Q}$ at $p$; the ring $\mathbb{Z}_p$ of $p$-adic integers, its maximal ideal and its units; the ultrametric topology and the geometry of balls; digits, expansions and Hensel's lemma; Ostrowski's theorem and the places of $\mathbb{Q}$; the product formula; the standard field whose distance is non-Archimedean and whose geometry contradicts intuition from $\mathbb{R}$. -->
 
 ## Topology on Linear Spaces
@@ -1661,19 +2000,19 @@
 ### <a href="articles_maths/normed-and-banach-spaces.html">Normed and Banach Spaces</a>
 <!-- norms, equivalence of norms in finite dimension, bounded linear maps, completeness, the Baire-based cornerstones (Hahn–Banach, open mapping, closed graph, uniform boundedness), Hilbert spaces, the dual space. -->
 
-###<a href="articles_maths/locally-convex-spaces.html">Locally Convex Spaces</a>
+### <a href="articles_maths/locally-convex-spaces.html">Locally Convex Spaces</a>
 <!-- locally convex spaces and their properties; seminorms and the topology they generate; the LF spaces and the inductive limits; the Montel spaces and the Heine–Borel property. -->
 
-###<a href="articles_maths/frechet-spaces.html">Fréchet Spaces</a>
+### <a href="articles_maths/frechet-spaces.html">Fréchet Spaces</a>
 <!-- Fréchet spaces and their properties; the relation to the locally convex spaces and to the Banach spaces of this part. -->
 
-###<a href="articles_maths/duality-theory.html">Duality Theory</a>
+### <a href="articles_maths/duality-theory.html">Duality Theory</a>
 <!-- dual pairs and their properties; the weak and strong topologies; the Mackey–Arens theorem and the bipolar theorem; the relation to the locally convex spaces of this part; the weak and weak-star topologies; the strong topology on the dual; the Mackey–Arens theorem on the admissible topologies; the bipolar theorem and the polars of a dual pair. -->
 
-###<a href="articles_maths/nuclear-spaces.html">Nuclear Spaces</a>
+### <a href="articles_maths/nuclear-spaces.html">Nuclear Spaces</a>
 <!-- nuclear spaces and their properties. -->
 
-###<a href="articles_maths/topological-tensor-products.html">Topological Tensor Products</a>
+### <a href="articles_maths/topological-tensor-products.html">Topological Tensor Products</a>
 <!-- completed tensor products; the relation to the balanced product of Part I and to the nuclear spaces of this part. -->
 
 ### Operator Theory
@@ -1770,19 +2109,19 @@
 ### <a href="articles_maths/topological-algebras-and-banach-algebras.html">Topological Algebras and Banach Algebras</a>
 <!-- compatibility of the product with the topology, the topology determined by the neighbourhoods of zero, submultiplicative norms $\lVert xy\rVert\le\lVert x\rVert\lVert y\rVert$, Banach algebras, the spectrum and the spectral radius, the Gelfand transform and Gelfand duality (commutative C*-algebras recover compact Hausdorff spaces), C*-algebras and the continuous functional calculus. -->
 
-###<a href="articles_maths/locally-convex-and-frechet-algebras.html">Locally Convex and Fréchet Algebras</a>
+### <a href="articles_maths/locally-convex-and-frechet-algebras.html">Locally Convex and Fréchet Algebras</a>
 <!-- Fréchet algebras and their properties; the relation to the Banach algebras and to the topological algebras of this part; the locally convex algebras and the topological algebras between which the Fréchet algebras sit. -->
 
-###<a href="articles_maths/type-i-groups.html">Type I Groups</a>
+### <a href="articles_maths/type-i-groups.html">Type I Groups</a>
 <!-- type I groups and their representation theory; the relation to the operator algebras of this part and to the harmonic analysis of Part III. -->
 
-###<a href="articles_maths/topological-k-theory.html">Topological K-Theory</a>
+### <a href="articles_maths/topological-k-theory.html">Topological K-Theory</a>
 <!-- topological K-theory and its properties; the relation to the operator algebras of this part and to the index theory of Part IV. -->
 
-###<a href="articles_maths/locally-compact-quantum-groups.html">Locally Compact Quantum Groups</a>
+### <a href="articles_maths/locally-compact-quantum-groups.html">Locally Compact Quantum Groups</a>
 <!-- the operator-algebraic notion of a quantum group; the relation to the Hopf algebras and quantum groups of Part I and to the operator algebras of this part. -->
 
-###<a href="articles_maths/normed-division-algebras-and-the-hurwitz-theorem.html">Normed Division Algebras and the Hurwitz Theorem</a>
+### <a href="articles_maths/normed-division-algebras-and-the-hurwitz-theorem.html">Normed Division Algebras and the Hurwitz Theorem</a>
 <!-- the four normed division algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$; the Hurwitz theorem that there are no others; the Cayley–Dickson construction and the loss of structure at each step, from order to commutativity to associativity. -->
 
 ### Operator Theory
@@ -1828,22 +2167,22 @@
 ### <a href="articles_maths/operator-algebras.html">Operator Algebras</a>
 <!-- the algebra $B(H)$ of bounded operators on a Hilbert space and its topologies; C*-algebras and the Gelfand–Naimark theorem; the Gelfand representation of a commutative C*-algebra as functions on its spectrum; states, positivity and the GNS construction; von Neumann algebras, the bicommutant theorem and the weak and strong topologies; factors and the classification into types; traces, the trace class and the Hilbert–Schmidt class; the Tomita–Takesaki modular theory, the modular operator and the modular flow; KMS states and the modular Hamiltonian; the finite-dimensional case, where the modular operator is explicit and the theory reduces to linear algebra. -->
 
-###<a href="articles_maths/toeplitz-algebras.html">Toeplitz Algebras</a>
+### <a href="articles_maths/toeplitz-algebras.html">Toeplitz Algebras</a>
 <!-- Toeplitz algebras and their properties; the relation to the operator algebras and to the index theory of Part IV. -->
 
-###<a href="articles_maths/graph-c-star-algebras.html">Graph C*-Algebras</a>
+### <a href="articles_maths/graph-c-star-algebras.html">Graph C*-Algebras</a>
 <!-- graph C*-algebras and their properties; the relation to the Cuntz algebras and to the operator algebras of this part; the Cuntz algebras as the graph C*-algebras of the one-vertex graphs. -->
 
-###<a href="articles_maths/crossed-products-of-c-star-algebras.html">Crossed Products of C*-Algebras</a>
+### <a href="articles_maths/crossed-products-of-c-star-algebras.html">Crossed Products of C*-Algebras</a>
 <!-- crossed products of C*-algebras by group actions; the relation to the operator algebras of this part and to the crossed products of Part I. -->
 
-###<a href="articles_maths/groupoid-c-star-algebras.html">Groupoid C*-Algebras</a>
+### <a href="articles_maths/groupoid-c-star-algebras.html">Groupoid C*-Algebras</a>
 <!-- groupoid C*-algebras and their properties; the relation to the operator algebras of this part and to the group algebras of Part I. -->
 
-###<a href="articles_maths/k-theory-of-operator-algebras.html">K-Theory of Operator Algebras</a>
+### <a href="articles_maths/k-theory-of-operator-algebras.html">K-Theory of Operator Algebras</a>
 <!-- the K-groups of a C*-algebra; the six-term exact sequence; the relation to the operator algebras of this part and to the index theory. -->
 
-###<a href="articles_maths/kk-theory.html">KK-Theory</a>
+### <a href="articles_maths/kk-theory.html">KK-Theory</a>
 <!-- KK-theory and its properties; the relation to the K-theory of operator algebras and to the index theory of Part IV. -->
 
 ### <a href="articles_maths/involutive-banach-algebras-and-the-gelfand-naimark-theorem.html">Involutive Banach Algebras and the Gelfand–Naimark Theorem</a>
@@ -1982,174 +2321,53 @@
 
 ## Topology on Algebras with a degree-2 form
 
-### Theory (General)
+### Theory
 
-### <a href="articles_maths/bilinear-forms.html">Bilinear Forms</a>
-<!-- symmetric, alternating and skew-symmetric forms, the matrix of a form, rank, radical, nondegeneracy. -->
-
-### <a href="articles_maths/quadratic-forms-and-polarisation.html">Quadratic Forms and Polarisation</a>
-<!-- quadratic forms, the polar form, diagonalisation, Sylvester's law of inertia, signature, classification over $\mathbb{R}$ and $\mathbb{C}$. -->
-
-### <a href="articles_maths/symplectic-forms-and-poisson-brackets.html">Symplectic Forms and Poisson Brackets</a>
-<!-- alternating bilinear forms and their non-degeneracy; the standard symplectic form on $k^{2n}$ and the Darboux normal form; the symplectic group $Sp(2n,k)$ and the preservation of the form; Lagrangian and isotropic subspaces; the relation to the determinant, to volume and to the Pfaffian; the Poisson bracket on the functions of a symplectic space, its derivation properties and the Jacobi identity; the bracket as a Lie algebra structure on the algebra of functions; the formal deformation of that algebra to a commutator algebra. -->
-
-### <a href="articles_maths/symplectic-reflection-algebras.html">Symplectic Reflection Algebras</a>
-<!-- symplectic reflection algebras and their representations; the symplectic form is a structure of this part, which is why the article belongs here. -->
-
-### <a href="articles_maths/rational-cherednik-algebras.html">Rational Cherednik Algebras</a>
-<!-- rational Cherednik algebras and their representations; the relation to the Hecke algebras and to the symplectic reflection algebras of this part. -->
-
-### <a href="articles_maths/the-orthogonal-lie-algebra.html">The Orthogonal Lie Algebra</a>
-<!-- $\mathrm{SO}(V,Q)$ as the skew transformations relative to $B$; the identification with the bivectors $\Lambda^2V$; the bracket as the commutator of bivectors; the exponential map onto $SO$; rank and the maximal torus; the low-dimensional isomorphisms $\mathrm{SO}(3)\cong\mathbb{R}^3$ and $\mathrm{SO}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$. -->
+### <a href="articles_maths/topological-clifford-algebras.html">Topological Clifford Algebras</a>
+<!-- the entry of the layer: a Clifford algebra over a topological field, with a continuous quadratic form and a continuous product, read for the topology alone; the standing hypotheses, the separate and the joint continuity of the product, the closure of zero and the Hausdorff quotient, the collapse at the zero form to the topological exterior algebra; the relation to *Topological Algebras and Banach Algebras* and the boundary with *Topology on Sesqualgebras with a degree-2 form*. -->
 
 ### <a href="articles_maths/the-cartan-involution-and-the-cartan-decomposition.html">The Cartan Involution and the Cartan Decomposition</a>
 <!-- the Cartan involution of a real semisimple Lie algebra, defined by the positive definiteness of the form $\kappa_\theta(x,y)=-\kappa(x,\theta y)$; the Cartan decomposition $\mathfrak g_0=\mathfrak k\oplus\mathfrak p$, the brackets of the induced $\mathbb{Z}/2$-grading and the symmetric pair; the fixed subalgebra as the maximal compact subalgebra. -->
 
-### <a href="articles_maths/quadratic-forms-over-algebras-and-norms.html">Quadratic Forms over Algebras and Norms</a>
-<!-- forms with values in an algebra, the quadric, composition of quadratic forms, Hurwitz's theorem, norms of $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{B}$. -->
+### <a href="articles_maths/the-continuous-quadratic-form-and-the-polar-form.html">The Continuous Quadratic Form and the Polar Form</a>
+<!-- the quadratic form of the layer as a continuous map and the continuity of its polar form; the uniform norm on the forms and the operator norm on the polar forms, equal by polarisation; the completeness of the space of continuous forms; the radical closed and its comparison with the closure of zero; the openness of the non-degenerate forms and the local constancy of the signature over $\mathbb{R}^n$; the continuous isometries and the closedness of the isometry group. -->
 
-### <a href="articles_maths/witts-theorems.html">Witt's Theorems</a>
-<!-- quadratic spaces and isometries, the Witt extension theorem, hyperbolic planes, Witt cancellation. -->
+### <a href="articles_maths/the-continuous-symplectic-form-and-the-poisson-bracket.html">The Continuous Symplectic Form and the Poisson Bracket</a>
+<!-- the continuous alternating form and its contraction; the topological splitting of the bilinear forms into the symmetric and the alternating parts; the rank lower semicontinuous and the symplectic forms open, with two components over the real numbers from the sign of the Pfaffian; the symplectic group closed and contained in the special linear group; the canonical form on a module and its dual; the continuous Poisson bracket, the Hamiltonian derivations and the Poisson centre. -->
 
-### <a href="articles_maths/the-witt-group-and-the-grothendieck-witt-ring.html">The Witt Group and the Grothendieck–Witt Ring</a>
-<!-- the Witt decomposition and index, the Witt group, the Grothendieck–Witt ring, the discriminant, the Hasse invariant. -->
+### <a href="articles_maths/the-continuous-grade-decomposition-and-the-filtration.html">The Continuous Grade Decomposition and the Filtration</a>
+<!-- the grade projections as continuous maps and the grade decomposition as a topological direct sum; the descending chain of elements of degree at least $k$ and the filtration topology it generates; the quotients as the bounded-degree parts; the separatedness and the discreteness in finite dimension; the associated graded algebra as the exterior algebra and the symbol map; the completion of the filtration. -->
 
-### <a href="articles_maths/clifford-algebras.html">Clifford Algebras</a>
-<!-- definition $Cl(V,Q)=T(V)/(v\otimes v-Q(v)\cdot1)$, the universal property, the fundamental relation $uv+vu=2B(u,v)$, functoriality. -->
+### <a href="articles_maths/the-continuous-volume-element-duality-and-the-hodge-star.html">The Continuous Volume Element, Duality and the Hodge Star</a>
+<!-- the volume element as a continuous function of the orthogonal frame, the set of volume elements open with two components over the real numbers; the complement map a homeomorphism from each grade to its complement; the duality pairing of a grade with its complement, continuous and non-degenerate; the Hodge star a continuous homeomorphism and the two topological cases of its square, the self-dual splitting and the complex structure; the cross product; the failure of the construction in infinite dimension. -->
 
-### <a href="articles_maths/clifford-algebras-in-finite-dimensions.html">Clifford Algebras in Finite Dimensions</a>
-<!-- the definition and universal property; the fundamental relation; the radical; the reduction; the decomposition of a degenerate Clifford algebra into its non-degenerate and nilpotent factors; rank; the grading and filtration in the degenerate case; basis; $k$-vectors and multivectors; the volume element; the centre; the square root of a multivector in the Euclidean algebra $\mathrm{Cl}_{3,0}$ — the reduction $A=s+v+(S+V)\omega$ by the central volume element, the graded linear equations, the complex quadratic $4z^2-4\beta z+\gamma=0$ with $\beta=b_0-ib_{123}$, $\gamma=Q-2iP$, the existence scalars $b_S=b_0^2-b_{123}^2-Q$ and $b_I=2(P-b_0b_{123})$ with $\Delta=b_S^2+b_I^2$, the isolated roots two or four in number, the four-parameter continuum for a complex scalar and the classification, and the source's reading of the data as a difference of squared lengths and an angle. -->
+### <a href="articles_maths/the-completion-of-a-clifford-algebra.html">The Completion of a Clifford Algebra</a>
+<!-- the two completions of the algebra, the normed one and the one of the filtration; the comparison of the topologies; the completed algebra as a complete topological algebra with the same associated graded; the convergence of the exponential and the power series; the canonical anticommutation relations read on the completion; the Hilbert-space case and the continuous inclusion of the algebra. -->
 
-### <a href="articles_maths/degenerate-clifford-algebras-and-the-radical.html">Degenerate Clifford Algebras and the Radical</a>
-<!-- the radical, the degenerate and non-degenerate cases, the tensor product decomposition. -->
+### <a href="articles_maths/the-topological-orthogonal-group-and-the-spin-group.html">The Topological Orthogonal Group and the Spin Group</a>
+<!-- the isometry group of a continuous form as a closed subgroup of the invertible operators, locally compact in finite dimension; the identity component and the determinant; the two-fold covering of the special orthogonal group by the spin group as a covering of topological groups; the connectedness and the local structure; the low-dimensional isomorphisms read topologically; the spinor norm; the symplectic and the Hermitian counterparts named. -->
 
-### <a href="articles_maths/the-geometric-product-and-the-grade-decomposition.html">The Geometric Product and the Grade Decomposition</a>
-<!-- the grade projection $\langle x\rangle_k$ and the decomposition of a multivector into $k$-vectors; the theorem that a $k$-vector times an $l$-vector is a sum of the grades $|k-l|,|k-l|+2,\dots,k+l$; the geometric product $uv=u\cdot v+u\wedge v$ of two vectors; the inner, outer and contracted products and the grade each selects; the recovery of the exterior algebra as the top grade, so that the Clifford algebra is a deformation of it; the signs of the grade involution, of reversion and of Clifford conjugation on each grade; the even part of $\mathrm{Cl}_{3,0}$ as the quaternion algebra. -->
+### <a href="articles_maths/the-topological-witt-group-and-the-brauer-wall-group.html">The Topological Witt Group and the Brauer–Wall Group</a>
+<!-- the isometry classes of non-degenerate continuous forms modulo the hyperbolic ones as a topological group of components; the Witt and the Grothendieck–Witt groups read topologically; the topological Brauer–Wall group and the periodicity; the classification of the real Clifford algebras at the layer of the topology; the relation to topological K-theory. -->
 
-### <a href="articles_maths/the-filtration-and-the-associated-graded-algebra.html">The Filtration and the Associated Graded Algebra</a>
-<!-- the length filtration $F_0\subseteq F_1\subseteq\cdots$ with $F_jF_l\subseteq F_{j+l}$ and the reason it is not a grading; the associated graded algebra and the Poincaré–Birkhoff–Witt theorem that it is the exterior algebra; the symbol map; the comparison with the cumulative filtration of the grade decomposition, which requires the form to be non-degenerate; the parallel with the universal enveloping algebra and the symmetric algebra; the worked cases of one and two dimensions and of the trivial form. -->
 
-### <a href="articles_maths/the-volume-element-duality-and-the-hodge-star.html">The Volume Element, Duality and the Hodge Star</a>
-<!-- the complement map $A\mapsto A\omega$ by the volume element, of grade $k$ to grade $n-k$; the complement of a basis blade as the blade of the complementary index set, hence a subspace against its orthogonal complement; the dependence on the orientation; the Hodge star $\star A=A\omega^{-1}$, its square $\star^2=(\omega^2)^{-1}$ and its behaviour on the parity grading; the low-dimensional cases $n=1,2,3,4$ including the self-dual and the anti-self-dual bivectors; the cross product $a\times b=\star(a\wedge b)$ and the scalar triple product; the biquaternion case $\star A=-iA$ and the convention $\tilde F_\star=-i\tilde F$ of the physics articles. -->
-
-### <a href="articles_maths/the-hodge-star-and-the-real-structure-of-the-exterior-algebra.html">The Hodge Star and the Real Structure of the Exterior Algebra</a>
-<!-- the Hodge star as an involution up to sign; the real structure and the complex structure it defines on the exterior algebra; the square sign $\star^2=(-1)^{k(m-k)}\mathrm{id}$ and the middle-degree dichotomy; the dependence on a nondegenerate symmetric bilinear form, an orientation and a discriminant. -->
-
-### <a href="articles_maths/the-clifford-algebra-as-a-lie-algebra.html">The Clifford Algebra as a Lie Algebra</a>
-<!-- bivectors, $\mathrm{SO}(V,Q)$, the commutator, the geometric interpretation (vectors, bivectors, trivectors). -->
-
-### <a href="articles_maths/the-low-dimensional-classification.html">The Low-Dimensional Classification</a>
-<!-- $Cl_{0,1}\cong\mathbb{C}$, $Cl_{1,0}\cong\mathbb{D}$, $Cl_{0,2}\cong\mathbb{H}$, $Cl_{1,1}\cong$ split-$\mathbb{H}$, $Cl_{2,0}\cong M_2(\mathbb{R})$, $Cl_{3,0}\cong\mathbb{C}l_2\cong\mathbb{B}$, complexification and realification. -->
-
-### <a href="articles_maths/bott-periodicity-and-the-classification.html">Bott Periodicity and the Classification</a>
-<!-- the real and complex periodicity isomorphisms, the tensor product decomposition as their source, the real and complex classification, the even subalgebra, the type of irreducible modules. -->
-
-### <a href="articles_maths/the-brauer-wall-group-and-the-eightfold-way.html">The Brauer–Wall Group and the Eightfold Way</a>
-<!-- Morita equivalence, the Brauer–Wall group, Atiyah–Bott–Shapiro periodicity, the eightfold way of spinor types. -->
-
-### <a href="articles_maths/two-sided-operators-on-a-clifford-algebra.html">Two-Sided Operators on a Clifford Algebra</a>
-<!-- the two-sided operator $\Phi^{\theta,c}_x(y)=\theta(x)yc(x)$, its composition law, its parity and its value at the unit; the five members indexed by the right factor, the inner conjugation and the signed inner conjugation on the units, the reversion and Clifford-conjugation sandwiches on the whole algebra and the Hermitian sandwich over an involutive base; preservation of the quadratic space $\Phi_x(V)\subseteq V$, the scaling of the conjugation sandwich by the Clifford norm on the Clifford group and the failure of a merely central scale. -->
-
-### <a href="articles_maths/one-sided-operators-on-a-clifford-algebra.html">One-Sided Operators on a Clifford Algebra</a>
-<!-- the factors of the two-sided family: the left multiplication $y\mapsto\theta(x)y$ and the right multiplication $y\mapsto y\,c(x)$ attached to an automorphism and an anti-automorphism; the composition laws and the exception by which the plain right multiplication is a representation of the opposite algebra, $R_{xz}=R_zR_x$; the commutation of the two families and the return to the two-sided operator $\Phi^{\theta,c}_x=\Lambda^{\theta}_x\mathrm P^{c}_x$; the value at the unit and the parity; the variants as conjugates by the intrinsic anti-involutions; injectivity, the annihilators as kernels and the ideals as images; the mutual commutants $\{L_a\}'=\{R_b\}$ and the algebra generated, which is $\mathrm{End}_F$ exactly when the Clifford algebra is central simple; the reason a non-scalar one-sided operator cannot preserve the space of vectors, which forces the pairing of the two factors; the Hermitian adjoint is the concern of *One-Sided Operators on a Hilbert Algebra with Hermitian Adjoint*. -->
-
-### Theory, Two-Sided Operator with Inner Conjugation
-
-### <a href="articles_maths/the-sandwich-on-a-clifford-algebra.html">The Sandwich on a Clifford Algebra</a>
-<!-- the two-sided sandwich $x\mapsto axb$ on a Clifford algebra; the versor action and its relation to the twisted conjugation. -->
-
-### <a href="articles_maths/the-two-sided-operators-and-the-spin-group.html">The Two-Sided Operators and the Spin Group</a>
-<!-- the two-sided operators generated by the versors; the spin group as the group of invertible two-sided operators. -->
-
-### <a href="articles_maths/the-inner-conjugation-on-the-two-sided-operators.html">The Inner Conjugation on the Two-Sided Operators</a>
-<!-- the inner conjugation $x\mapsto axa^{-1}$ on a Clifford algebra; the twisted action and the orthogonal group. -->
-
-### <a href="articles_maths/the-spinor-norm-and-the-structure-of-the-orthogonal-group-with-inner-conjugation.html">The Spinor Norm and the Structure of the Orthogonal Group with Inner Conjugation</a>
-<!-- the spinor norm from the orthogonal group to the square classes of the field, defined on a reflection in a vector by the value of the form on that vector; its well-definedness as a homomorphism; the spinorial kernel, the products of two reflections and the chain of subgroups; the theorem of Dieudonné identifying the reduced group with the commutator subgroup, quoted; the cases of the definite real forms, the sum of four squares over $\mathbb{Q}$, and the indefinite forms. -->
-
-### <a href="articles_maths/the-low-dimensional-spin-groups-and-the-exceptional-isomorphisms-with-inner-conjugation.html">The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation</a>
-<!-- $\mathrm{Cl}^0_{n,0}\cong\mathrm{Cl}_{0,n-1}$ and the table of even parts; $\mathrm{Spin}(2)\cong U(1)$, $\mathrm{Spin}(3)\cong Sp(1)\cong SU(2)$, $\mathrm{Spin}(4)\cong Sp(1)\times Sp(1)$, $\mathrm{Spin}(5)\cong Sp(2)$ and $\mathrm{Spin}(6)\cong SU(4)$, with the dimension counts and the spinor modules; the real forms $\mathrm{Spin}(1,2)\cong SL(2,\mathbb{R})$, $\mathrm{Spin}(1,3)\cong SL(2,\mathbb{C})$, $\mathrm{Spin}(2,2)\cong SL(2,\mathbb{R})\times SL(2,\mathbb{R})$, $\mathrm{Spin}(3,3)\cong SL(4,\mathbb{R})$ and $\mathrm{Spin}(4,2)\cong SU(2,2)$; the Dynkin coincidences $A_1\cong B_1\cong C_1$, $D_2\cong A_1\times A_1$, $B_2\cong C_2$, $A_3\cong D_3$ and the end of the coincidences at $n=7$. -->
-
-### <a href="articles_maths/the-clifford-invariant-and-the-spinor-genus-with-inner-conjugation.html">The Clifford Invariant and the Spinor Genus with Inner Conjugation</a>
-<!-- the class of the Clifford algebra in the Brauer group as an invariant of a non-degenerate form, unchanged under isometry; the even part and the carrier of the invariant; the computation for a binary form; the invariant on the fundamental ideal of the Witt ring; the spinor norm; the genus and the spinor genus of a lattice, the three equivalences, the count of spinor genera and the quaternionic case. -->
+### Operator Theory
 
 ### <a href="articles_maths/infinite-dimensional-clifford-algebras-and-car-with-inner-conjugation.html">Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation</a>
 <!-- the Clifford algebra of a Hilbert space; the canonical anticommutation relations; the CAR algebra as a C*-algebra and the uniqueness of its representation; its relation to the finite-dimensional Clifford algebras and to the exterior algebra; the infinite-dimensional Pin and Spin groups. -->
 
-### <a href="articles_maths/spin-factors-and-the-clifford-envelope-with-inner-conjugation.html">Spin Factors and the Clifford Envelope with Inner Conjugation</a>
-<!-- spin factors, degree-2 Jordan algebras, the Clifford envelope. -->
 
-### Theory, One-Sided Operator with Inner Conjugation
+### <a href="articles_maths/operators-on-a-topological-clifford-algebra.html">Operators on a Topological Clifford Algebra</a>
+<!-- the ambient space of the continuous operators on the algebra; the operator norm and the submultiplicative bound; the two one-sided multiplications as the elementary operators, with their continuity and their norms; the two-sided operators and the sandwich as the geometric operators, continuous in the parameter; the closure of the operator algebra and the passage to the completion. -->
 
-### <a href="articles_maths/left-multiplication-and-the-clifford-module-structure.html">Left Multiplication and the Clifford Module Structure</a>
-<!-- left multiplication as a representation of the Clifford algebra; the module structure and its irreducibility in the even dimensions. -->
+### <a href="articles_maths/the-bounded-left-and-right-multiplication-on-a-clifford-algebra.html">The Bounded Left and Right Multiplication on a Clifford Algebra</a>
+<!-- the left and the right multiplication as bounded operators for the Euclidean form; the explicit norms and the sharp constant $2^{n/2}$; the adjoint of each with respect to the form; the subalgebra of $\mathrm{End}$ they generate and its closure; the contrast with the general topological case, where the bound is a hypothesis and not a theorem. -->
 
-### <a href="articles_maths/the-one-sided-action-and-the-spin-representation.html">The One-Sided Action and the Spin Representation</a>
-<!-- the one-sided action and the spin representation; the minimal left ideals and the spinors they carry. -->
+### <a href="articles_maths/the-bounded-sandwich-and-the-continuous-inner-conjugation.html">The Bounded Sandwich and the Continuous Inner Conjugation</a>
+<!-- the two-sided operator $\Theta_x(y)=x\,y\,x^{\dagger}$ and the inner conjugation $x\,y\,x^{-1}$ as continuous maps of the parameter; the continuity of the induced map on the orthogonal and the spin group; the norm of the sandwich and its dependence on the parameter; the isometry property and the failure of compactness of the sandwich in the indefinite case. -->
 
-### <a href="articles_maths/right-multiplication-and-the-opposite-algebra.html">Right Multiplication and the Opposite Algebra</a>
-<!-- right multiplication and the opposite algebra; the bimodule structure and the commutant of the left action. -->
-
-### <a href="articles_maths/spin-representations-and-clifford-modules-with-inner-conjugation.html">Spin Representations and Clifford Modules with Inner Conjugation</a>
-<!-- Clifford modules, the spinor module, the complex spin representation and its dimension, chirality and half-spin representations. -->
-
-### <a href="articles_maths/spinors-as-minimal-left-ideals-with-inner-conjugation.html">Spinors as Minimal Left Ideals with Inner Conjugation</a>
-<!-- idempotents, the primitive idempotent $\tfrac12(1+e)$ of a unit vector and the minimal left ideal $\mathrm{Cl}(V,q)f$; ideals as Clifford modules, their isomorphism and their dimension $2^{[n/2]}$; the action of the spin group by left multiplication with kernel $\{\pm1\}$; the Witt basis and the idempotent $a_1a_1^\dagger\cdots a_ma_m^\dagger$, with the ideal isomorphic to the exterior algebra of the creation operators, so that the Chevalley module is the ideal; spinors as even multivectors when the even subalgebra is simple, and its failure in general; the chiral halves as the minimal left ideals of the even part; the worked cases $\mathrm{Cl}_{3,0}$ with the Pauli action and $\mathrm{Cl}_{1,3}$ with the biquaternion algebra as a Dirac spinor. -->
-
-### <a href="articles_maths/spin-representations-of-the-orthogonal-lie-algebra-with-inner-conjugation.html">Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation</a>
-<!-- the bivectors as the orthogonal Lie algebra acting on the spinor module; the infinitesimal homomorphism and its compatibility with the vector representation; the Cartan subalgebra, the half-integral weights and the highest weights $\tfrac12(\epsilon_1+\cdots+\epsilon_m)$ and $(\tfrac12,\dots,\tfrac12)$; the dimensions and the chiral splitting; the branching rule under the passage from $n$ to $n-1$ dimensions; the worked cases in three, four, five and six dimensions. -->
-
-### <a href="articles_maths/real-spinors-and-reality-conditions-with-inner-conjugation.html">Real Spinors and Reality Conditions with Inner Conjugation</a>
-<!-- real structures, the low-dimensional cases (dimensions $2$, $3$, $4$). -->
-
-### <a href="articles_maths/triality-and-spin8-with-inner-conjugation.html">Triality and Spin(8) with Inner Conjugation</a>
-<!-- the three eight-dimensional representations $8_v$, $8_s$, $8_c$ and the uniqueness of the coincidence of their dimensions at $n=8$; the invariant trilinear form as the Clifford action composed with the invariant pairing; the outer automorphism group $S_3$ from the diagram $D_4$; the fixed-point subgroup $G_2$ and the chain $\mathrm{Spin}(8)\supset G_2\supset\mathrm{Spin}(7)$; the octonionic model with the three products $xy$, $\bar xy$, $x\bar y$ and the alternative laws; why no other dimension admits a triality. -->
-
-### Theory, Two-Sided Operator with Signed Inner Conjugation
-
-### <a href="articles_maths/the-graded-multiplication-operators.html">The Graded Multiplication Operators</a>
-<!-- the multiplication operators twisted by the grading; the sign rule and the super-structure. -->
-
-### <a href="articles_maths/two-sided-operators-with-the-signed-product.html">Two-Sided Operators with the Signed Product</a>
-<!-- the two-sided operators with the signed product $x\mapsto a\alpha(x)b$; the reflections they realise. -->
-
-### <a href="articles_maths/the-sandwich-with-the-signed-product.html">The Sandwich with the Signed Product</a>
-<!-- the signed sandwich on a Clifford algebra; the versor action and the reflections it produces. -->
-
-### <a href="articles_maths/two-sided-operators-on-a-clifford-algebra-with-signed-inner-conjugation.html">Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</a>
-<!-- the two-sided operator $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)yx^{-1}$, the member of the family whose left factor carries the grade involution; the parity sign $\mathrm{Ad}^{\alpha}_x=\varepsilon_x\mathrm{Ad}_x$ with $\varepsilon_x=(-1)^k$, so that it is the inner conjugation on the even part and its negative on the odd part; bijectivity, the composition law, commutation with the grade involution and multiplicativity up to the sign; the kernel $F^{\times}$ against the kernel $Z(\mathrm{Cl})^{\times}$ of the inner conjugation, with the central volume element satisfying $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$ while $\mathrm{Ad}_\omega=\mathrm{id}$; the reflection $\mathrm{Ad}^{\alpha}_u=\rho_u$ against $\mathrm{Ad}_u=-\rho_u$, and the reason the minus is what makes the kernel of $\mathrm{Pin}\to O$ the two elements $\{\pm1\}$. -->
-
-### <a href="articles_maths/the-grading-of-the-clifford-algebra-with-signed-inner-conjugation.html">The Grading of the Clifford Algebra with Signed Inner Conjugation</a>
-<!-- why the signed member is not a second structure: the sign is the parity, $\mathrm{Ad}^{\alpha}_x=\varepsilon_x\mathrm{Ad}_x$; the composition $\mathrm{Ad}^{\alpha}_x\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz}$, so that two odd steps compose to the ordinary sandwich with the two minus signs cancelling, and the parity table of composites; the family generated by the ordinary conjugations and one odd one; the odd part of the pin group as a coset, $\mathrm{Pin}=\mathrm{Spin}\sqcup(\text{odd})$ and $\mathrm{Pin}/\mathrm{Spin}\cong\mathbb{Z}/2$; the algebra as a free rank-two module over its even part, $\mathrm{Cl}=\mathrm{Cl}^0\oplus\mathrm{Cl}^0e$ with basis $\{1,e\}$ for an odd unit $e$, the two components isomorphic but not independent; why two independent copies of $\mathrm{Cl}^0$ fail; and the determinants $\det\mathrm{Ad}^{\alpha}_x=\varepsilon_x$ against $\det\mathrm{Ad}_x=(\varepsilon_x)^{n+1}$, so that in odd dimension the inner conjugation never reaches an improper isometry. -->
-
-### <a href="articles_maths/the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html">The Clifford, Pin and Spin Groups with Signed Inner Conjugation</a>
-<!-- unit vectors and reflections, the Clifford group, the Pin and Spin groups, the double cover of the special orthogonal group. -->
-
-### <a href="articles_maths/the-two-pin-groups-and-the-double-covers-of-the-orthogonal-group-with-inner-conjugation.html">The Two Pin Groups and the Double Covers of the Orthogonal Group with Inner Conjugation</a>
-<!-- the choice hidden in the Pin construction: the two central extensions $1\to\{\pm1\}\to\mathrm{Pin}_\pm\to O\to1$, distinguished by whether the preimage of a reflection squares to $+1$ or $-1$ and kept consistent by the conjugacy of the reflections under $SO$; the realisation by the two signs of the form, $\mathrm{Pin}(n,0)$ and $\mathrm{Pin}(0,n)$ not isomorphic although $O(n,0)=O(0,n)$ and $\mathrm{Spin}(n,0)\cong\mathrm{Spin}(0,n)$; the centre from the volume element, $C_2$ in even dimension and $\{\pm1,\pm\omega\}$ of type $C_2\times C_2$ or $C_4$ in odd dimension, by $n\bmod4$ for the compact definite groups and by $p-q\bmod8$ in the indefinite case; the splitting of the reflections into the two classes of positive and negative norm and the resulting proliferation of covers, up to thirty-two double covers of $O(p,q)$ with only $\mathrm{Pin}(p,q)$ and $\mathrm{Pin}(q,p)$ standard, the uniqueness of the Spin double cover only in the compact and Lorentzian cases, the three connected double covers for $p,q>2$ and the four-fold universal cover; the low dimensions $\mathrm{Pin}_+(1)\cong C_2\times C_2$, $\mathrm{Pin}_-(1)\cong C_4$, the dihedral and dicyclic preimages in dimension two, $\mathrm{Pin}_+(3)\cong\{A\in U(2):\det A=\pm1\}$ against $\mathrm{Pin}_-(3)\cong SU(2)\times C_2$ with centres $C_4$ and $C_2\times C_2$; the projective orthogonal square of $\mathrm{Spin}(2)$, $\mathrm{Pin}_+(2)$, $SO(2)$, $O(2)$; and the name as a back-formation from Spin due to Serre. -->
-
-### <a href="articles_maths/versors-rotors-and-the-sandwich-action-with-signed-inner-conjugation.html">Versors, Rotors and the Sandwich Action with Signed Inner Conjugation</a>
-<!-- versors as products of non-isotropic vectors, the Lipschitz group and its identity with the Clifford group; the rotor, an even versor of Clifford norm one, as a subgroup of the spin group; the exponential of a bivector, the endomorphism $J_B=\tfrac12\operatorname{ad}_B$ and $\exp(B)v\exp(-B)=\exp(2J_B)v$; the plane case, $J_B^2=-\varepsilon$, giving the rotation through $\theta$ from the rotor $\exp(-\tfrac{\theta}{2}B)$ when $\varepsilon=+1$ and the boost of half-rapidity $\varphi/2$ when $\varepsilon=-1$; general bivectors as sums of commuting simple ones; the two actions, the sandwich $v\mapsto RvR^{-1}$ carrying the full angle and the spinor action $\psi\mapsto R\psi$ carrying the half angle; the failure of left multiplication on a vector, $Re_3=\cos\tfrac{\theta}{2}e_3-\sin\tfrac{\theta}{2}\omega$, and the cancellation of the trivector parts in the sandwich; the double cover of the rotation group; the low-dimensional cases. -->
-
-### <a href="articles_maths/reflection-groups-and-clifford-algebras-with-signed-inner-conjugation.html">Reflection Groups and Clifford Algebras with Signed Inner Conjugation</a>
-<!-- the reflection $\rho_\alpha=\mathrm{Ad}^{\alpha}_{u_\alpha}$ as the sandwich of a unit root; the Clifford lift $\Gamma_\Phi=\langle u_\alpha\rangle\subset\mathrm{Pin}$; its finiteness, the twofold cover of $W_\Phi$ and $|\Gamma_\Phi|=2|W_\Phi|$; the even part $\Gamma^0_\Phi$ of order $|W_\Phi|$ covering the rotation subgroup; the cases $A_1$ and $A_2$ and the table $A_3\mapsto 2T$, $B_3\mapsto 2O$, $H_3\mapsto 2I$; the $24$ Hurwitz units, the $24$-cell and the McKay correspondence. -->
-
-### Theory, One-Sided Operator with Signed Inner Conjugation
-
-### <a href="articles_maths/the-signed-action-on-a-clifford-module.html">The Signed Action on a Clifford Module</a>
-<!-- the signed one-sided action on a Clifford module; its compatibility with the grading. -->
-
-### <a href="articles_maths/one-sided-operators-with-the-signed-product.html">One-Sided Operators with the Signed Product</a>
-<!-- the one-sided operators with the signed product; their fixed elements and the reflections. -->
-
-### <a href="articles_maths/one-sided-operators-on-a-clifford-algebra-with-signed-inner-conjugation.html">One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</a>
-<!-- the signed left multiplication $\Lambda^{\alpha}_x(y)=\alpha(x)y$ and the inverse right multiplication $R_{x^{-1}}(y)=yx^{-1}$ as the two one-sided factors of the signed inner conjugation; $\Lambda^{\alpha}_x=\varepsilon_xL_x=\alpha L_x\alpha$, the value $\alpha(x)$ at the unit and the parity; the composition laws of the two families; the pairings $L_xR_{x^{-1}}=\mathrm{Ad}_x$ and $\Lambda^{\alpha}_xR_{x^{-1}}=\mathrm{Ad}^{\alpha}_x$, so that the whole sign sits in the left factor; the reflection $\rho_u$ against $-\rho_u$ produced by the two pairings; the kernels and the images, which do not see the sign; the reason no one-sided operator can preserve the space of vectors. -->
-
-### <a href="articles_maths/pin-representations-and-clifford-modules-with-signed-inner-conjugation.html">Pin Representations and Clifford Modules with Signed Inner Conjugation</a>
-<!-- the pin representation as the restriction of the Clifford action on a Clifford module to the whole Pin group, one-sided by construction; $\rho(-1)=-\mathrm{id}_S$, faithfulness and the kernel over a product of simple algebras; the odd elements interchanging the two chiral halves, so that the pin representation is irreducible where the spin representation splits; the intertwining identity $\rho(x)\rho(v)\rho(x)^{-1}=\rho(\mathrm{Ad}_x(v))=\rho(\varepsilon_x\mathrm{Ad}^{\alpha}_x(v))$ and the module form of the reflection $\rho(u)\rho(v)\rho(u)^{-1}=-\rho(\rho_u(v))$; the square $\rho(u)^2=q(u)$; the real pin modules and the definite case. -->
-
-### <a href="articles_maths/spinors-as-minimal-left-ideals-with-signed-inner-conjugation.html">Spinors as Minimal Left Ideals with Signed Inner Conjugation</a>
-<!-- a spinor as an element of a minimal left ideal $I=\mathrm{Cl}(V,q)\pi$, with the whole Pin group acting because a left ideal is preserved by every left multiplication; the parity splitting $I=I^0\oplus I^1$ with $I^i=\mathrm{Cl}^i\pi$, the even elements preserving the two summands and the odd ones interchanging them; the signed inner conjugation realised on the ideal as $\rho(\alpha(x))\rho(v)\rho(x)^{-1}$; the reflection $\rho_u(v)\psi$ against $-\rho_u(v)\psi$; the central volume element acting by the exchange of the summands and by $-\mathrm{id}$ under the signed conjugation. -->
+### <a href="articles_maths/bounded-clifford-modules-and-the-continuous-spin-representation.html">Bounded Clifford Modules and the Continuous Spin Representation</a>
+<!-- the Clifford module with a continuous action and a compatible form; the continuity of the spin representation; the intertwining operators and their boundedness; the unitary case on a complete module; the relation to the Hermitian modules of *Topology on Sesqualgebras with a degree-2 form*, named and deferred. -->
 
 ### * Theory
 
@@ -2203,58 +2421,8 @@
 
 ### <a href="articles_maths/von-neumann-algebras-and-the-hilbert-algebra-completeness.html">Von Neumann Algebras and the Hilbert Algebra Completeness</a>
 <!-- von Neumann algebras and the completeness of a Hilbert algebra; the standard form and the left Hilbert algebra. -->
-### * Theory, Two-Sided Operator with Hermitian Adjoint
 
-### <a href="articles_maths/hermitian-adjoints-on-a-hilbert-algebra.html">Hermitian Adjoints on a Hilbert Algebra</a>
-<!-- the Hermitian adjoint on a Hilbert algebra; the involution and the self-adjoint elements. -->
-
-### <a href="articles_maths/the-adjoint-of-the-left-and-the-right-multiplication.html">The Adjoint of the Left and the Right Multiplication</a>
-<!-- the adjoint of the one-sided multiplications; its explicit form and the modular conjugation. -->
-
-### <a href="articles_maths/the-adjoint-of-the-sandwich-on-a-hilbert-algebra.html">The Adjoint of the Sandwich on a Hilbert Algebra</a>
-<!-- the adjoint of the two-sided action; the modular operator and the unitarity condition. -->
-
-### <a href="articles_maths/the-two-sided-operators-and-the-modular-conjugation.html">The Two-Sided Operators and the Modular Conjugation</a>
-<!-- the two-sided operators and the modular conjugation $J$; the standard form and the self-duality. -->
-
-### <a href="articles_maths/the-blade-form-and-the-hilbert-structure-with-hermitian-adjoint.html">The Blade Form and the Hilbert Structure with Hermitian Adjoint</a>
-<!-- the blade basis and the scalar forms it defines; the trace form $\mathrm{Sc}(x^{\dagger}y)$ and the Hilbert structure on the algebra; the invariance of the forms under the anti-involutions; the adjoints of the left and the right multiplication for the dagger form and for the reversion form, and the parity sign that separates them. -->
-
-### <a href="articles_maths/hermitian-forms-on-a-hilbert-algebra-with-hermitian-adjoint.html">Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint</a>
-<!-- the canonical Hermitian form $\mathrm{Sc}(x^{\dagger}y)$ of an anti-involution and the Hermitian forms on the algebra; the Gram matrix, the radical and the isometry group; the congruence $H\mapsto S^{\dagger}HS$ and the two-sided operators attached to a form; the passage to the unitary Witt group. -->
-
-### <a href="articles_maths/hermitian-forms-over-an-involution-ring-and-the-unitary-witt-group-with-hermitian-adjoint.html">Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</a>
-<!-- Hermitian forms over a ring with an involution, their congruence classification, the unitary Witt group and the Wall group; the discriminant and the Hasse-type invariants; the Hermitian forms carried by a Clifford algebra as the instance of the theory. -->
-
-### <a href="articles_maths/the-hermitian-sandwich-on-a-hilbert-algebra-with-hermitian-adjoint.html">The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint</a>
-<!-- the Hermitian sandwich $\Theta_x(y)=x\,y\,x^{\dagger}$, its linearity in the argument and its semilinearity in the parameter up to the norm rule, its multiplicativity, its value at the unit; the identities on the Clifford group with the correction, the unitary slice on which it is the inner conjugation, the preservation of the quadratic space and the two worked cases. -->
-
-### <a href="articles_maths/the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.html">The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</a>
-<!-- the biquaternion algebra $\mathbb{B}=M_2(\mathbb{C})$ as the one algebra in which the whole Hermitian theory is written in coordinates: the operator $\Theta_x$, the forms, positivity, the unitary slice, the Lorentz transformation it produces and complete positivity. -->
-
-### <a href="articles_maths/the-unitary-slice-and-the-compact-real-form-with-hermitian-adjoint.html">The Unitary Slice and the Compact Real Form with Hermitian Adjoint</a>
-<!-- the unitary slice $U=\{x:x^{\dagger}x=1\}$ on which the dagger is the inverse and the Hermitian sandwich is the inner conjugation; the shape of the slice recording the signature; the compact real form, the identity involution with $U=\mathrm{Pin}$, and the definite case over $\mathbb{C}$ and $\mathbb{H}$. -->
-
-### <a href="articles_maths/positivity-and-the-hermitian-cone-of-a-hilbert-algebra-with-hermitian-adjoint.html">Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint</a>
-<!-- the positive involution of the algebra; the self-adjoint and skew elements and the decomposition of the algebra; the cone of the elements $x^{\dagger}x$ and the criterion that the dagger is positive; the polar decomposition and the Cartan involution of the group of units. -->
-
-### <a href="articles_maths/self-adjoint-and-skew-operators-with-hermitian-adjoint.html">Self-Adjoint and Skew Operators with Hermitian Adjoint</a>
-<!-- the $\ast$-algebra $\mathrm{End}_A(S)$ of operators on a Hermitian Clifford module; the adjoint, the splitting into the self-adjoint and skew-adjoint parts, the graded commutator rules; the skew part as the Lie algebra of the unitary group and the self-adjoint part as the Jordan algebra; the Hilbert–Schmidt orthogonality of the two halves; the blade sign and the regular representation. -->
-
-### <a href="articles_maths/the-spectra-of-self-adjoint-operators-with-hermitian-adjoint.html">The Spectra of Self-Adjoint Operators with Hermitian Adjoint</a>
-<!-- the finite-dimensional spectral theorem: real spectrum, orthogonal eigenspaces, the spectral decomposition $T=\sum_i\lambda_iP_i$ and the functional calculus; the min-max principle, the positivity criterion; the purely imaginary spectrum of the skew-adjoint operators; normality and unitary invariance; the two-sided spectrum and the Sylvester solvability condition; the failure of the theorem in indefinite signature. -->
-
-### <a href="articles_maths/unitary-equivalence-and-congruence-of-operators-with-hermitian-adjoint.html">Unitary Equivalence and Congruence of Operators with Hermitian Adjoint</a>
-<!-- the conjugation $T\mapsto UTU^{-1}$ with its invariant the spectrum and the congruence $T\mapsto A^{\dagger}TA$ with its invariant the inertia; the two relations agreeing on the slice and the equivalence being strictly finer off it; the preservation of positivity and the cone; the Takagi invariant in the complex-symmetric case. -->
-
-### <a href="articles_maths/the-hermitian-sylvester-equation-with-hermitian-adjoint.html">The Hermitian Sylvester Equation with Hermitian Adjoint</a>
-<!-- the Hermitian Sylvester equation and its operator form $L_a+R_b$; the solvability exactly when no eigenvalue sum vanishes, the spectral form of the classical solvability condition; the alternating and symmetric cases and the congruence law which belongs to the unitary Witt group. -->
-
-### <a href="articles_maths/mixed-inner-conjugation-and-hermitian-adjoint.html">Mixed Inner Conjugation and Hermitian Adjoint</a>
-<!-- the four two-sided operators formed by the independent choices of the left twist, identity or signed, and the right factor, inverse or dagger; the interaction of the involutive and the orthogonal structure; the two defects between the members and the signed Hermitian sandwich $\alpha(x)yx^{\dagger}$. -->
-
-### <a href="articles_maths/completely-positive-maps-of-a-hilbert-algebra-with-hermitian-adjoint.html">Completely Positive Maps of a Hilbert Algebra with Hermitian Adjoint</a>
-<!-- the Clifford algebra with a positive involution as a finite-dimensional $C^{*}$-algebra; Choi's theorem, the Kraus form of a completely positive map and the innerness of the automorphisms of a full matrix algebra, read in the Clifford language. -->
+### * Operator Theory
 
 ### <a href="articles_maths/j-self-adjoint-and-j-unitary-operators.html">J-Self-Adjoint and J-Unitary Operators</a>
 <!-- the operators that are self-adjoint or unitary with respect to the indefinite form; the relation $T^\dagger = JT^{*}J$ to the Hilbert adjoint; the $J$-self-adjoint, $J$-unitary, $J$-projection and $J$-normal operators; the $J$-positive cone; the failure of the real spectrum in general. -->
@@ -2268,88 +2436,8 @@
 ### <a href="articles_maths/the-hermitian-sandwich-on-a-krein-space.html">The Hermitian Sandwich on a Krein Space</a>
 <!-- the dagger sandwich $H_Q(T) = QTQ^\dagger$ with respect to the indefinite form; the preservation of the form; the kernel and the image; the contrast with the Hilbert case. -->
 
-### * Theory, One-Sided Operator with Hermitian Adjoint
-
-### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-hilbert-algebra.html">The Adjoint of the Left Multiplication on a Hilbert Algebra</a>
-<!-- the adjoint of the left multiplication; the Tomita operator $S$ and its polar decomposition. -->
-
-### <a href="articles_maths/the-hilbert-adjoint-on-a-hilbert-module.html">The Hilbert Adjoint on a Hilbert Module</a>
-<!-- the Hilbert adjoint on a Hilbert module; the induced involution and the self-adjoint operators. -->
-
-### <a href="articles_maths/adjoints-of-the-intertwiners-of-a-hilbert-algebra.html">Adjoints of the Intertwiners of a Hilbert Algebra</a>
-<!-- the adjoints of the intertwiners; the commutant and the standard form. -->
-
-### <a href="articles_maths/one-sided-operators-on-a-hilbert-algebra-with-hermitian-adjoint.html">One-Sided Operators on a Hilbert Algebra with Hermitian Adjoint</a>
-<!-- the left and right multiplications and their graded and anti-involution variants; the composition laws, the commutation and the two-sided operator as their product; the adjoint $L_a^{*}=L_{a^{\dagger}}$ and $R_b^{*}=R_{b^{\dagger}}$ with respect to $\mathrm{Sc}(x^{\dagger}y)$, and the self-adjoint, skew and unitary criteria; the double centraliser, the images as ideals and the annihilators as kernels. -->
-
-### <a href="articles_maths/hermitian-modules-over-a-hilbert-algebra-with-hermitian-adjoint.html">Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint</a>
-<!-- the Clifford module carrying a form for which the action is self-adjoint, $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$; the two-point function, the positivity and the self-adjointness axiom; the reducibility and the module-level form. -->
-
-### <a href="articles_maths/the-adjoint-of-the-one-sided-action-with-hermitian-adjoint.html">The Adjoint of the One-Sided Action with Hermitian Adjoint</a>
-<!-- the adjoint of the action $\rho(x)^{*}=\rho(x^{\dagger})$; the resulting $\ast$-structure on the operator algebra, the rule for the adjoint of a composite and the reversal of the factors; the vectors acting skew-adjointly; the elementary algebraic reason the Dirac operator is formally self-adjoint. -->
-
-### <a href="articles_maths/bilinear-operators-on-a-hermitian-module-with-hermitian-adjoint.html">Bilinear Operators on a Hermitian Module with Hermitian Adjoint</a>
-<!-- operators built from two spinors; the completeness of the Clifford action and the Fierz identity; the bilinear covariants $(s,\Gamma^{A}t)$ spanning the bilinear forms and reconstructing every endomorphism; the adjoint of a bilinear operator. -->
-
-### <a href="articles_maths/invariant-operators-and-intertwiners-with-hermitian-adjoint.html">Invariant Operators and Intertwiners with Hermitian Adjoint</a>
-<!-- the commutant of the Clifford action and its identification with the intertwiners; Schur's lemma on an irreducible module and the right multiplications on the regular module; the adjoint of an intertwiner and the self-adjoint invariant operators. -->
-
-### <a href="articles_maths/dirac-operators-with-hermitian-adjoint.html">Dirac Operators with Hermitian Adjoint</a>
-<!-- the Dirac operator as a Hermitian operator: the product of the skew-adjoint Clifford action and a formally skew-adjoint first-order operator; its self-adjointness with respect to the module form, the positivity of the Hermitian square, the reality of the spectrum, the orthogonality of the eigenspinors and the splitting of the module by the kernel. -->
-
-### <a href="articles_maths/spinor-adjoints-and-the-dirac-adjoint-with-hermitian-adjoint.html">Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</a>
-<!-- the spinor adjoint $s\mapsto(s,\cdot)$ as the Clifford-equivariant identification of the module with its dual, and the Dirac adjoint $\bar\psi=\psi^{\dagger}\gamma_0$ with the invariant $\bar\psi\psi$; the repair of the isotropy of the scalar form and the interaction with the self-adjointness of the Dirac operator. -->
-
 ### <a href="articles_maths/infinite-dimensional-hermitian-operators-and-car-with-hermitian-adjoint.html">Infinite-Dimensional Hermitian Operators and CAR with Hermitian Adjoint</a>
 <!-- the Fock space and the CAR algebra with the dagger; the CAR relations, the number operator, the vacuum and the quasi-free states with their forms $0\leq T\leq1$; the Bogoliubov transformations and the Shale–Stinespring implementability condition; the unboundedness of the number operator and of the one-particle Hamiltonian, and the replacement of the trace by the states. -->
-
-### * Theory, Two-Sided Operator with Signed Hermitian Adjoint
-
-### <a href="articles_maths/the-signed-adjoint-of-the-sandwich-on-a-hilbert-algebra.html">The Signed Adjoint of the Sandwich on a Hilbert Algebra</a>
-<!-- the adjoint of the signed sandwich; the modular conjugation and the sign rule. -->
-
-### <a href="articles_maths/adjoints-of-the-graded-operators-of-a-hilbert-algebra.html">Adjoints of the Graded Operators of a Hilbert Algebra</a>
-<!-- the adjoints of the graded operators; the compatibility with the grading and the modular structure. -->
-
-### <a href="articles_maths/two-sided-operators-on-a-hilbert-algebra-with-signed-hermitian-adjoint.html">Two-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint</a>
-<!-- the two-sided operator $\Theta^{\alpha}_x(y)=\alpha(x)yx^{\dagger}$, the signed Hermitian member whose left factor carries the grade involution and whose right factor carries the dagger; the parity sign $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ with $\varepsilon_x=(-1)^k$, so that it is the Hermitian sandwich on the even part and its negative on the odd part; bijectivity, the composition law and the parameter rule $\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x$; the action on the Clifford group, $\Theta^{\alpha}_x=\varepsilon_x\sigma(N(x))\,x(\ )\sigma(x)^{-1}$, an isometry exactly when $\sigma(N(x))^2=1$ and otherwise a similarity of ratio $\sigma(N(x))^2$; the kernel of the invertible elements with central dagger, $F^{\times}\cap U$ on the slice against the kernel $F^{\times}$ of the signed inner conjugation; the reflection $\Theta^{\alpha}_u=-q(u)\rho_u$, which is $\rho_u$ exactly on the slice; the slice reduction $\Theta^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ for $x^{\dagger}=x^{-1}$; the biquaternion dictionary $\tilde{Q}x\tilde{Q}^{\dagger}$ and the Lorentz group. -->
-
-### <a href="articles_maths/the-grading-of-a-hilbert-algebra-with-signed-hermitian-adjoint.html">The Grading of a Hilbert Algebra with Signed Hermitian Adjoint</a>
-<!-- why the signed Hermitian member is not a second structure: the sign is the parity, $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$; the dagger is even, so $\Theta^{\alpha}_x\Theta^{\alpha}_z=\varepsilon_x\varepsilon_z\Theta^{\alpha}_{xz}$ and two odd steps compose to the ordinary Hermitian sandwich, $\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta_{xz}$ for $x,z$ odd; the odd part of the unitary slice as a coset and $U/U^0\cong\mathbb{Z}/2$; the algebra as a free rank-two module over its even part; the even-ness of the Hermitian form, so that the two parity sectors are orthogonal; the determinants $\det\mathrm{Ad}^{\alpha}_x=\varepsilon_x$ against $\det\mathrm{Ad}_x=(\varepsilon_x)^{n+1}$, and the comparison by the scalar $\sigma(N(x))$ off the unitary slice. -->
-
-### <a href="articles_maths/the-pin-and-spin-groups-with-signed-hermitian-adjoint.html">The Pin and Spin Groups with Signed Hermitian Adjoint</a>
-<!-- the Hermitian formulation of the covering groups: the Clifford group $\Gamma$, the Hermitian Clifford group $\Gamma_{\dagger}=\{x\in\Gamma:\sigma(N(x))^2=1\}$ where the Hermitian sandwich is an isometry, and the unitary slice $U$ where the dagger is the inverse; $\Gamma_{\dagger}=\mathrm{Pin}$ and $U\cap\Gamma=\{N=1\}$ for the trivial involution, the two coinciding for a definite form in the corpus's convention; the reflections as the odd elements, $\Theta^{\alpha}_u=\rho_u$ for $q(u)=-1$; the double cover $\{\pm1\}\to\mathrm{Pin}\to O$ and $\{\pm1\}\to\mathrm{Spin}\to SO$, Cartan–Dieudonné, the low-dimensional groups, and the indefinite and degenerate cases. -->
-
-### <a href="articles_maths/versors-rotors-and-the-sandwich-action-with-signed-hermitian-adjoint.html">Versors, Rotors and the Sandwich Action with Signed Hermitian Adjoint</a>
-<!-- versors and rotors under the signed Hermitian sandwich: the dagger of a versor is a versor of the same length and parity, so the sandwich has versors on both sides; the form of the operator on the Clifford group, $\Theta^{\alpha}_x=\varepsilon_x\sigma(N(x))\,x(\ )\sigma(x)^{-1}$; the rotor as an even $\sigma$-real versor of norm with $\sigma(N)=1$, for which the Hermitian sandwich is the plain rotation $RvR^{-1}$; the two actions and the half angle against the full angle; the adjointness axiom $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$ on a Hermitian Clifford module, with the dagger entering the module side as the adjoint and never as a rotation; the similarity of ratio $\sigma(N(x))^2$ off the slice. -->
-
-### <a href="articles_maths/reflection-groups-and-the-pin-lift-with-signed-hermitian-adjoint.html">Reflection Groups and the Pin Lift with Signed Hermitian Adjoint</a>
-<!-- the reflection of a root as a signed Hermitian sandwich: $\Theta^{\alpha}_u=-q(u)\rho_u$, so the reflection is realised exactly on the unitary slice, by the slice-normalised root $q(u_\alpha)=-1$; the Hermitian Clifford lift $\Gamma_\Phi=\langle u_\alpha\rangle\subseteq U\cap\Gamma_{\dagger}$; its finiteness, the twofold cover $\Gamma_\Phi\to W_\Phi$, the orders $|\Gamma_\Phi|=2|W_\Phi|$ and $|\Gamma_\Phi^0|=|W_\Phi|$, and the even part covering the rotation subgroup; the cases $A_1$, $A_2$ and $A_3$, the Hurwitz units and the $24$-cell. -->
-
-### * Theory, One-Sided Operator with Signed Hermitian Adjoint
-
-### <a href="articles_maths/the-signed-adjoint-on-a-hilbert-module.html">The Signed Adjoint on a Hilbert Module</a>
-<!-- the adjoint of the signed action on a Hilbert module; the self-adjointness condition. -->
-
-### <a href="articles_maths/adjoints-of-the-signed-action-of-a-hilbert-algebra.html">Adjoints of the Signed Action of a Hilbert Algebra</a>
-<!-- the adjoints of the signed action; the modular operator and the sign rule. -->
-
-### <a href="articles_maths/one-sided-operators-on-a-hilbert-algebra-with-signed-hermitian-adjoint.html">One-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint</a>
-<!-- the signed left multiplication $\Lambda^{\alpha}_x(y)=\alpha(x)y$ and the dagger right multiplication $R_{x^{\dagger}}(y)=yx^{\dagger}$ as the two one-sided factors of the signed Hermitian sandwich; $\Lambda^{\alpha}_x=\varepsilon_xL_x=\alpha L_x\alpha$, the value $\alpha(x)$ at the unit and the parity; the composition laws, the commutation, and the adjoints $(\Lambda^{\alpha}_x)^{*}=\Lambda^{\alpha}_{x^{\dagger}}$ and $(R_{x^{\dagger}})^{*}=R_x$ for the form $\mathrm{Sc}(x^{\dagger}y)$; the split of linearity, the left factor linear and the right factor $\sigma$-semilinear in the parameter, giving $\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x$; the reflection $\rho_u$ against $-q(u)\rho_u$; the kernels and the images, which see the involution but not the sign. -->
-
-### <a href="articles_maths/pin-representations-and-hermitian-modules-with-signed-hermitian-adjoint.html">Pin Representations and Hermitian Modules with Signed Hermitian Adjoint</a>
-<!-- the pin representation on a Hermitian Clifford module: the restriction of the algebra action to the whole Pin group, one-sided by construction, with the adjoint $\rho(x)^{*}=\rho(x^{\dagger})$ and unitarity on the unitary slice; the intertwining identities $\rho(x)\rho(v)\rho(x)^{*}=\rho(\Theta_x(v))$ and $\rho(\Theta^{\alpha}_x(v))=\varepsilon_x\rho(x)\rho(v)\rho(x)^{*}$; the module form of the reflection $\rho(u)\rho(v)\rho(u)^{*}=\rho(-q(u)\rho_u(v))$, which is $\rho_u$ on the slice, with $\rho(u)^2=-\mathrm{id}$ there; the chirality, the Hermitian-orthogonal chiral halves, the kernel, the real modules and the definite case. -->
-
-### <a href="articles_maths/spinors-as-minimal-left-ideals-with-signed-hermitian-adjoint.html">Spinors as Minimal Left Ideals with Signed Hermitian Adjoint</a>
-<!-- a spinor as an element of a minimal left ideal $I=\mathrm{Cl}(V,q)\pi$ with the whole Pin group acting by left multiplication; the parity splitting $I=I^0\oplus I^1$, the even elements preserving and the odd ones interchanging the summands, with the two halves Hermitian-orthogonal; the signed Hermitian sandwich realised on the ideal as $\Theta^{\alpha}_x(v)\psi=\rho(\alpha(x))\rho(v)\rho(x)^{*}\psi$, the adjoint of the left multiplication playing the role of the right factor, with the defect $\rho(xx^{\dagger})$ off the slice; the reflection $\rho_u(v)\psi$ on the slice against $-q(u)\rho_u(v)\psi$; the central volume element exchanging the two summands, the unsigned Hermitian sandwich acting on it by $-\mathrm{id}$ and the signed one by $+\mathrm{id}$. -->
-
-### Applications
-
-### <a href="articles_maths/the-number-systems-as-clifford-algebras.html">The Number Systems as Clifford Algebras</a>
-<!-- The dictionary $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$, split-$\mathbb{H}$, $M_2(\mathbb{R})$, $\mathbb{B}$; the norm; Hurwitz's theorem. -->
-
-### <a href="articles_maths/lattices-and-the-quaternion-lattice.html">Lattices and the Quaternion Lattice</a>
-<!-- an integral lattice as a free $\mathbb{Z}$-module carrying a positive definite form: rank, index, covolume, duality and base change; the Lipschitz and Hurwitz lattices in $\mathbb{R}^4$, of covolume $1$ and $\tfrac12$ and index $2$ in each other, realising the norm of $\mathbb{H}$ and containing the $8$ Lipschitz and $24$ Hurwitz units. An instance of a quadratic space, which is why it sits in this category; the multiplicative structure of $\mathbb{H}$ is from *Division Algebras*. -->
 
 ## Topology on Sesqualgebras with a degree-2 form
 
@@ -2358,20 +2446,11 @@
 ### <a href="articles_maths/topological-sesqualgebras-with-a-form.html">Topological Sesqualgebras with a Form</a>
 <!-- the entry for the layer: a topological sesqualgebra with a continuous Hermitian form $h$; the compatibility of the form with the product, $h(xy,z)=h(y,x^{*}z)$; the collapse to the bilinear degree-2 form category exactly when $\varsigma=\mathrm{id}$; the relation to *Topology on Sesqualgebras* and the boundary with *Topology on Algebras with a degree-2 form*. -->
 
-### <a href="articles_maths/the-sesquilinear-form-and-the-conjugation.html">The Sesquilinear Form and the Conjugation</a>
-<!-- the correspondence between a Hermitian form and the involution of the algebra, $h(x,y)=h(x^{*}y,1)$; the two directions and the compatibility; the classification of the forms into Hermitian, skew-Hermitian and alternating; the failure over a ring where $2$ is not invertible. -->
-
-### <a href="articles_maths/hermitian-forms-on-a-sesqualgebra.html">Hermitian Forms on a Sesqualgebra</a>
-<!-- the $A$-valued Hermitian forms carried by the involution of an associative algebra with a sesquilinear product, $\Psi(x,y)=y^{*}x$ and its companion $\Phi(x,y)=xy^{*}=x\star y$; the two slots and the Hermitian property $\Psi(y,x)=\Psi(x,y)^{*}$; the product read as the form and the form read as a product; the reduction of $\Psi$ to the compatible scalar forms $h_{\varphi}(x,y)=\varphi(y^{*}x)$ of *The Sesquilinear Form and the Conjugation*; the two radicals as the left and the right annihilators, so that non-degeneracy of $\Psi$ is the vanishing of the left annihilator, one clause of the objects of full type of *Topological Sesqualgebras*; the form descended to a quotient by an invariant ideal; and the relation to *Hermitian Forms on a Hilbert Algebra with Hermitian Adjoint* of the bilinear layer, whose form $h_c(x,y)=c(x)y$ is the companion form with the two arguments exchanged. -->
-
 ### <a href="articles_maths/positivity-and-the-positive-cone-of-a-hermitian-form.html">Positivity and the Positive Cone of a Hermitian Form</a>
-<!-- positive definite and positive semi-definite Hermitian forms, the diagonal in the ordered fixed ring and its scaling by squares, and the cone of the positive semi-definite forms in the module of the Hermitian forms; the tolerance $x\succeq y\iff h(x-y,x-y)\geq0$, reflexive, symmetric and translation invariant, transitive exactly for the semi-definite forms and hence not an order, the genuine order being the cone of the Hermitian squares read by the positive functionals; the positive set $P(h)$ and the null set, with $P(h)\cap(-P(h))=N(h)$ and $P(h)=A$ exactly in the semi-definite case; the null set as the radical in the semi-definite case, by Cauchy–Schwarz, and the definite quotient by the radical; the positivity of $h_{\varphi}(x,y)=\varphi(y^{*}x)$ as the positivity of $\varphi$ on the algebraic cone of the Hermitian squares of *Hermitian Squares and the Algebraic Positive Cone*, so that a definite form is a certificate of properness; the collapse at $\varsigma=\mathrm{id}$ to the positivity of a quadratic form, the companion of the bilinear layer being *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint*; and the absence of any order on a base of characteristic two. -->
+<!-- positive definite and positive semi-definite Hermitian forms, the diagonal in the ordered fixed ring and its scaling by squares, and the cone of the positive semi-definite forms in the module of the Hermitian forms; the tolerance $x\succeq y\iff h(x-y,x-y)\geq0$, reflexive, symmetric and translation invariant, transitive exactly for the semi-definite forms and hence not an order, the genuine order being the cone of the Hermitian squares read by the positive functionals; the positive set $P(h)$ and the null set, with $P(h)\cap(-P(h))=N(h)$ and $P(h)=A$ exactly in the semi-definite case; the null set as the radical in the semi-definite case, by Cauchy–Schwarz, and the definite quotient by the radical; the positivity of $h_{\varphi}(x,y)=\varphi(y^{*}x)$ as the positivity of $\varphi$ on the algebraic cone of the Hermitian squares of *Hermitian Squares and the Algebraic Positive Cone*, so that a definite form is a certificate of properness; the collapse at $\varsigma=\mathrm{id}$ to the positivity of a quadratic form, the companion of the bilinear layer being *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*; and the absence of any order on a base of characteristic two. -->
 
 ### <a href="articles_maths/the-norm-defined-by-a-form.html">The Norm Defined by a Form</a>
 <!-- the norm $\|x\|^{2}=h(x,x)$ on a sesqualgebra with a positive definite form; the Cauchy–Schwarz inequality; the triangle inequality and the passage to a normed and then a Banach sesqualgebra; the $C^*$-condition and its relation to the involution. -->
-
-### <a href="articles_maths/the-completion-of-a-sesqualgebra-with-a-form.html">The Completion of a Sesqualgebra with a Form</a>
-<!-- the completion with respect to the norm of the form; the extension of the product, of the involution and of the form; the universal property; the recovery of the form and the collapse at $\varsigma=\mathrm{id}$. -->
 
 ### <a href="articles_maths/the-fundamental-symmetry-of-the-form.html">The Fundamental Symmetry of the Form</a>
 <!-- the symmetry $J$ that splits an indefinite form into its positive and its negative parts; the Gram operator; the equivalence of the indefinite and the definite pairings; the passage to the Krein space of the bilinear degree-2 form category, named and deferred. -->
@@ -2379,7 +2458,7 @@
 ### Operator Theory
 
 ### <a href="articles_maths/the-adjoint-under-a-hermitian-form.html">The Adjoint under a Hermitian Form</a>
-<!-- the adjoint of a bounded operator with respect to the Hermitian form $h$; the anti-automorphism $T\mapsto T^{\dagger}$; the two-slot adjoint of a conjugate-linear operator; the self-adjoint and the normal operators; the relation to *Hermitian Adjoints on a Hilbert Algebra* of the bilinear layer. -->
+<!-- the adjoint of a bounded operator with respect to the Hermitian form $h$; the anti-automorphism $T\mapsto T^{\dagger}$; the two-slot adjoint of a conjugate-linear operator; the self-adjoint and the normal operators; the relation to *Hermitian Adjoints on a Hermitian Algebra* of the bilinear layer. -->
 
 ### <a href="articles_maths/unitary-and-isometric-operators-of-the-form.html">Unitary and Isometric Operators of the Form</a>
 <!-- the operators preserving the form, $h(Tx,Ty)=h(x,y)$; the unitary group and the isometry group; the indefinite case and the Krein isometries; the relation to the unitary group of the elements. -->
@@ -2401,11 +2480,46 @@
 
 ### * Theory
 
-### <a href="articles_maths/the-indefinite-case-and-the-signature.html">The Indefinite Case and the Signature</a>
-<!-- the signature and the inertia of a Hermitian form; the Pontryagin index and the decomposition into the positive and the negative parts; the indefinite inner product; the boundary with the Krein space, which belongs to *Topology on Algebras with a degree-2 form* and is named rather than developed. -->
+### <a href="articles_maths/the-completion-of-a-sesqualgebra-with-a-form.html">The Completion of a Sesqualgebra with a Form</a>
+<!-- the completion with respect to the norm of the form; the extension of the product, of the involution and of the form; the universal property; the recovery of the form and the collapse at $\varsigma=\mathrm{id}$. -->
 
-### <a href="articles_maths/the-form-on-the-biquaternion-algebra-as-a-sesquilinear-form.html">The Form on the Biquaternion Algebra as a Sesquilinear Form</a>
-<!-- the form $\mathrm{Sc}(Q^{*}Q')$ on $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; its positive definiteness; the indefinite form $\mathrm{Sc}(\bar Q Q')$ and its signature $(2,6)$ over $\mathbb{R}$; the unitary slice; the caution that quaternion conjugation ${}^{\natural}$ is $\mathbb{C}$-linear, so the form it gives is bilinear and belongs to the bilinear layer. -->
+### <a href="articles_maths/the-euclidean-form-the-norm-and-the-completion-on-a-clifford-algebra.html">The Euclidean Form, the Norm and the Completion on a Clifford Algebra</a>
+<!-- the Euclidean form $(x,y)=\sum_I a_Ib_I$ with orthonormal blades; the algebra as a finite-dimensional Hilbert space over a definite real form; the completion in infinite dimension carrying the canonical anticommutation relations; the boundedness of the multiplication operators with $\|xy\|\le 2^{n/2}\|x\|\|y\|$ and the non-submultiplicativity of the norm; Cauchy-Schwarz, the compact unit ball and the positive cone; the metric layer of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*. -->
+
+### <a href="articles_maths/the-modular-structure-of-a-hermitian-algebra.html">The Modular Structure of a Hermitian Algebra</a>
+<!-- the involution on the completion, bounded exactly for a tracial form and closable otherwise; the Tomita operator $S(x\xi)=x^{\dagger}\xi$ and the polar decomposition $\bar S=J\Delta^{1/2}$; the modular conjugation and the exchange $\jmath\bar L_x\jmath=\bar R_{x^{\dagger}}$; the modular operator of the sandwich and the modular flow; the standard form $(\mathcal{M},H,\jmath,P)$ and the self-dual cone; the commutant, the modular transpose $T\mapsto\jmath T^{*}\jmath$ and the polar decomposition of intertwiners; the completion-level companion of the Part I Hermitian-adjoint articles. -->
+
+### * Operator Theory
+
+### <a href="articles_maths/the-adjoint-of-the-left-and-the-right-multiplication.html">The Adjoint of the Left and the Right Multiplication</a>
+<!-- the adjoint of the one-sided multiplications $L_x^{*}=L_{x^{\dagger}}$ and $R_x^{*}=R_{x^{\dagger}}$ and its explicit form, and the fact that it determines the involution; the exchange by the modular conjugation is *The Modular Structure of a Hermitian Algebra*. -->
+
+### <a href="articles_maths/the-adjoint-of-the-left-multiplication-on-a-hermitian-algebra.html">The Adjoint of the Left Multiplication on a Hermitian Algebra</a>
+<!-- the adjoint of the left multiplication and its explicit form, and the fact that it determines the involution; the Tomita operator $S$, the polar decomposition and the modular objects are *The Modular Structure of a Hermitian Algebra*. -->
+
+### <a href="articles_maths/the-hermitian-adjoint-on-a-hermitian-module.html">The Hermitian Adjoint on a Hermitian Module</a>
+<!-- the Hilbert adjoint on a Hilbert module; the induced involution and the self-adjoint operators. -->
+
+### <a href="articles_maths/adjoints-of-the-intertwiners-of-a-hermitian-algebra.html">Adjoints of the Intertwiners of a Hermitian Algebra</a>
+<!-- the adjoint of an intertwiner of the left representations and the closure of the class under adjunction; the commutant, the modular transpose and the polar decomposition of intertwiners are *The Modular Structure of a Hermitian Algebra*. -->
+
+### <a href="articles_maths/the-adjoint-of-the-sandwich-on-a-hermitian-algebra.html">The Adjoint of the Sandwich on a Hermitian Algebra</a>
+<!-- the sandwich $\Theta_x$, its adjoint $\Theta_x^{*}=\Theta_{x^{\dagger}}$ and the self-adjointness and unitarity conditions; the modular operator and the comparison of the two adjoints are *The Modular Structure of a Hermitian Algebra*. -->
+
+### <a href="articles_maths/the-signed-adjoint-of-the-sandwich-on-a-hermitian-algebra.html">The Signed Adjoint of the Sandwich on a Hermitian Algebra</a>
+<!-- the adjoint of the signed sandwich; the modular conjugation and the sign rule. -->
+
+### <a href="articles_maths/adjoints-of-the-graded-operators-of-a-hermitian-algebra.html">Adjoints of the Graded Operators of a Hermitian Algebra</a>
+<!-- the adjoints of the graded operators; the compatibility with the grading and the modular structure. -->
+
+### <a href="articles_maths/the-signed-adjoint-on-a-hermitian-module.html">The Signed Adjoint on a Hermitian Module</a>
+<!-- the adjoint of the signed action on a Hilbert module; the self-adjointness condition. -->
+
+### <a href="articles_maths/adjoints-of-the-signed-action-of-a-hermitian-algebra.html">Adjoints of the Signed Action of a Hermitian Algebra</a>
+<!-- the adjoints of the signed action; the modular operator and the sign rule. -->
+
+### <a href="articles_maths/the-two-sided-operators-on-a-hermitian-algebra.html">The Two-Sided Operators on a Hermitian Algebra</a>
+<!-- the two-sided operators $\Theta_x(y)=xyx^{\dagger}$ and their closure under composition and adjunction, their invertible members and the inner automorphisms; the modular conjugation, the standard form and the self-duality are *The Modular Structure of a Hermitian Algebra*. -->
 
 ### Applications
 
@@ -2416,49 +2530,49 @@
 
 ### Theory
 
-###<a href="articles_maths/the-fundamental-group-and-covering-spaces.html">The Fundamental Group and Covering Spaces</a>
+### <a href="articles_maths/the-fundamental-group-and-covering-spaces.html">The Fundamental Group and Covering Spaces</a>
 <!-- homotopy of paths and maps; the fundamental group $\pi_1(X,x_0)$; change of basepoint; the fundamental group of the circle; simply connected spaces; functoriality; van Kampen's theorem; covering spaces and the lifting properties; the correspondence between the coverings of a space and the subgroups of its fundamental group; deck transformations and the universal cover. -->
 
-###<a href="articles_maths/cw-complexes-and-cellular-approximation.html">CW Complexes and Cellular Approximation</a>
+### <a href="articles_maths/cw-complexes-and-cellular-approximation.html">CW Complexes and Cellular Approximation</a>
 <!-- CW complexes, cells, skeleta and attaching maps; the homotopy extension property; cellular approximation; the cellular boundary formula; the Euler characteristic. -->
 
-###<a href="articles_maths/simplicial-and-singular-homology.html">Simplicial and Singular Homology</a>
+### <a href="articles_maths/simplicial-and-singular-homology.html">Simplicial and Singular Homology</a>
 <!-- simplicial and singular homology; the chain complex, cycles and boundaries; the homology groups $H_n(X)$; functoriality and homotopy invariance; the Mayer–Vietoris sequence; the homology of spheres and graphs. -->
 
-###<a href="articles_maths/cohomology-and-the-universal-coefficient-theorem.html">Cohomology and the Universal Coefficient Theorem</a>
+### <a href="articles_maths/cohomology-and-the-universal-coefficient-theorem.html">Cohomology and the Universal Coefficient Theorem</a>
 <!-- the cohomology groups $H^n(X; G)$; the universal coefficient theorem; cohomology with coefficients; the cohomology of a CW complex; the Bockstein homomorphism. -->
 
-###<a href="articles_maths/cup-and-cap-products.html">Cup and Cap Products</a>
+### <a href="articles_maths/cup-and-cap-products.html">Cup and Cap Products</a>
 <!-- the cup product on cohomology; the cohomology ring and graded-commutativity; the cap product; the Künneth formula; the cohomology of projective spaces and of tori. -->
 
-###<a href="articles_maths/poincare-duality.html">Poincaré Duality</a>
+### <a href="articles_maths/poincare-duality.html">Poincaré Duality</a>
 <!-- orientability and the fundamental class; Poincaré duality for closed manifolds; the intersection form; Lefschetz duality; applications to surfaces. -->
 
-###<a href="articles_maths/homotopy-groups-and-fibrations.html">Homotopy Groups and Fibrations</a>
+### <a href="articles_maths/homotopy-groups-and-fibrations.html">Homotopy Groups and Fibrations</a>
 <!-- the higher homotopy groups $\pi_n(X)$; the long exact sequence of a fibration; the homotopy groups of spheres; the Hopf fibration; the Hurewicz theorem; the Freudenthal suspension theorem. -->
 
 ### <a href="articles_maths/classifying-spaces-and-cohomology-operations.html">Classifying Spaces and Cohomology Operations</a>
 <!-- the classifying space $BG$ of a topological group and the universal bundle $EG \to BG$, constructed by the Milnor join and by the bar construction, with the principal $G$-bundles it classifies; the functoriality, and the homotopy characterisation by which $BG$ represents the principal bundles; the standard cases $BG$ for a discrete group, for a compact Lie group and for the classical groups, and the case $K(\pi,1)$; the Eilenberg–MacLane spaces $K(\pi,n)$, their construction and their uniqueness up to weak homotopy equivalence, and the representability of the singular cohomology; the cohomology operations on the singular cohomology, the Steenrod squares and powers, their axioms and the Adem relations, and the Steenrod algebra they generate. -->
 
-###<a href="articles_maths/the-leray-serre-spectral-sequence.html">The Leray–Serre Spectral Sequence</a>
+### <a href="articles_maths/the-leray-serre-spectral-sequence.html">The Leray–Serre Spectral Sequence</a>
 <!-- the Leray–Serre spectral sequence of a fibration; the Atiyah–Hirzebruch spectral sequence; convergence and the comparison theorem; the cohomology of fibre bundles and homogeneous spaces. -->
 
-###<a href="articles_maths/model-categories-and-homotopy-theory.html">Model Categories and Homotopy Theory</a>
+### <a href="articles_maths/model-categories-and-homotopy-theory.html">Model Categories and Homotopy Theory</a>
 <!-- model categories and their homotopy theory; the homotopy category; the relation to the differential graded algebras of Part I. -->
 
-###<a href="articles_maths/higher-algebra-and-higher-categories.html">Higher Algebra and Higher Categories</a>
+### <a href="articles_maths/higher-algebra-and-higher-categories.html">Higher Algebra and Higher Categories</a>
 <!-- higher categories and higher algebras; the relation to homotopy theory and to the algebras of Part I. -->
 
-###<a href="articles_maths/stable-homotopy-theory.html">Stable Homotopy Theory</a>
+### <a href="articles_maths/stable-homotopy-theory.html">Stable Homotopy Theory</a>
 <!-- spectra and stable homotopy; the stable homotopy groups of spheres; the relation to cobordism and to the algebraic topology of this part. -->
 
-###<a href="articles_maths/higher-algebraic-k-theory.html">Higher Algebraic K-Theory</a>
+### <a href="articles_maths/higher-algebraic-k-theory.html">Higher Algebraic K-Theory</a>
 <!-- the higher K-groups of a ring; the plus construction and the classifying-space definition; the relation to the K-theory of rings of Part I and to the K-theory of operator algebras of this part; the Milnor K-groups and the tame symbol of a field. -->
 
-###<a href="articles_maths/ramification-sequences-and-bezoutian-forms.html">Ramification Sequences and Bezoutian Forms</a>
+### <a href="articles_maths/ramification-sequences-and-bezoutian-forms.html">Ramification Sequences and Bezoutian Forms</a>
 <!-- the places of a rational function field, the tame symbol and Milnor's exact sequence for $k_2$; the group $R_2(F)$ of ramification sequences and the question of which sequences are the ramification of a single symbol; the Bezoutian form of a pair of polynomials, its computation rules and the criterion by which a non-trivial Bezoutian obstructs representability; the worked sequence of degree four over $\mathbb{Q}$ and the biquaternion division algebras over $\mathbb{Q}(t)$ it produces. -->
 
-###<a href="articles_maths/degree-theory-and-the-brouwer-fixed-point-theorem.html">Degree Theory and the Brouwer Fixed Point Theorem</a>
+### <a href="articles_maths/degree-theory-and-the-brouwer-fixed-point-theorem.html">Degree Theory and the Brouwer Fixed Point Theorem</a>
 <!-- the degree of a map between spheres; the Brouwer fixed point theorem; the Jordan–Brouwer separation theorem; the hairy ball theorem; the Lefschetz fixed point theorem. -->
 
 ### Operator Theory
@@ -2522,19 +2636,19 @@
 
 ### Theory
 
-###<a href="articles_maths/presheaves-and-sheaves.html">Presheaves and Sheaves</a>
+### <a href="articles_maths/presheaves-and-sheaves.html">Presheaves and Sheaves</a>
 <!-- presheaves and sheaves on a topological space; the sheaf condition; stalks and germs; sheafification; the category of sheaves; the constant sheaf. -->
 
-###<a href="articles_maths/sheaf-cohomology.html">Sheaf Cohomology</a>
+### <a href="articles_maths/sheaf-cohomology.html">Sheaf Cohomology</a>
 <!-- the derived-functor definition of sheaf cohomology; flabby and soft sheaves; the long exact sequence; the relation to singular cohomology; the de Rham complex as a resolution of the constant sheaf. -->
 
-###<a href="articles_maths/cech-cohomology.html">Čech Cohomology</a>
+### <a href="articles_maths/cech-cohomology.html">Čech Cohomology</a>
 <!-- Čech cohomology with respect to an open cover; the comparison with sheaf cohomology; the Leray theorem; the Čech-to-derived spectral sequence; the nerve of a cover. -->
 
-###<a href="articles_maths/derived-functors-and-sheaf-cohomology.html">Derived Functors and Sheaf Cohomology</a>
+### <a href="articles_maths/derived-functors-and-sheaf-cohomology.html">Derived Functors and Sheaf Cohomology</a>
 <!-- the derived functors of the global sections functor; injective resolutions; the Grothendieck spectral sequence; the relation to the homological algebra of Part I. -->
 
-###<a href="articles_maths/sheaves-in-algebraic-geometry.html">Sheaves in Algebraic Geometry</a>
+### <a href="articles_maths/sheaves-in-algebraic-geometry.html">Sheaves in Algebraic Geometry</a>
 <!-- the structure sheaf of a scheme; the sheaf of Kähler differentials $\Omega^1_{X/k}$ and the algebraic de Rham complex it generates; the canonical sheaf $\omega_X$ and Serre duality. -->
 
 ### Operator Theory
@@ -2589,19 +2703,19 @@
 
 ### Theory
 
-###<a href="articles_maths/algebraic-geometry.html">Algebraic Geometry</a>
+### <a href="articles_maths/algebraic-geometry.html">Algebraic Geometry</a>
 <!-- affine and projective varieties; the Nullstellensatz; morphisms and rational maps; the relation to commutative algebra and to sheaf theory. -->
 
-###<a href="articles_maths/schemes.html">Schemes</a>
+### <a href="articles_maths/schemes.html">Schemes</a>
 <!-- the spectrum of a ring; the Zariski topology; the structure sheaf; schemes and their morphisms; the relation to the commutative algebra of Part I. -->
 
-###<a href="articles_maths/coherent-sheaves.html">Coherent Sheaves</a>
+### <a href="articles_maths/coherent-sheaves.html">Coherent Sheaves</a>
 <!-- coherent and quasi-coherent sheaves on a scheme; their cohomology; the relation to the sheaf cohomology of this part and to the modules of Part I. -->
 
-###<a href="articles_maths/moduli-spaces.html">Moduli Spaces</a>
+### <a href="articles_maths/moduli-spaces.html">Moduli Spaces</a>
 <!-- moduli problems and their representability; the moduli of curves and of vector bundles; the relation to the deformation theory of Part I and to the algebraic geometry of this part. -->
 
-###<a href="articles_maths/stacks.html">Stacks</a>
+### <a href="articles_maths/stacks.html">Stacks</a>
 <!-- algebraic stacks and their moduli; the relation to the descent theory of Part I and to the moduli spaces of this part. -->
 
 ### Operator Theory
@@ -2656,31 +2770,31 @@
 
 ### Theory
 
-###<a href="articles_maths/low-dimensional-topology.html">Low-Dimensional Topology</a>
+### <a href="articles_maths/low-dimensional-topology.html">Low-Dimensional Topology</a>
 <!-- low-dimensional topology and its properties; the relation to the three-manifolds and four-manifolds of this part; the three-manifolds and their geometrisation; the four-manifolds and their intersection forms. -->
 
-###<a href="articles_maths/knot-theory.html">Knot Theory</a>
+### <a href="articles_maths/knot-theory.html">Knot Theory</a>
 <!-- knot theory and its properties; the relation to the braid groups of Part I and to the three-manifolds of this part. -->
 
-###<a href="articles_maths/mapping-class-groups.html">Mapping Class Groups</a>
+### <a href="articles_maths/mapping-class-groups.html">Mapping Class Groups</a>
 <!-- mapping class groups and their properties. -->
 
-###<a href="articles_maths/lens-spaces.html">Lens Spaces</a>
+### <a href="articles_maths/lens-spaces.html">Lens Spaces</a>
 <!-- lens spaces and their topology; the relation to the algebraic topology and to the manifolds of this part. -->
 
 ### <a href="articles_maths/wild-and-exotic-manifolds.html">Wild and Exotic Manifolds</a>
 <!-- the manifolds that escape the smooth classification: the Whitehead manifold, a contractible open three-manifold not homeomorphic to $\mathbb{R}^3$, with *Low-Dimensional Topology*; the exotic spheres, smooth manifolds homeomorphic but not diffeomorphic to $S^7$ and the classes of them in the higher dimensions, with *Cobordism and Surgery Theory*; the Alexander horned sphere and the wild embeddings of spheres and cells; the failure of the Schoenflies theorem in dimension three; the existence of manifolds with a topological and no smooth structure, and the relation between the smooth, the piecewise-linear and the topological categories. -->
 
-###<a href="articles_maths/cobordism-and-surgery-theory.html">Cobordism and Surgery Theory</a>
+### <a href="articles_maths/cobordism-and-surgery-theory.html">Cobordism and Surgery Theory</a>
 <!-- cobordism theory and its properties; the relation to surgery theory and to the algebraic topology of this part; the surgery of manifolds and the surgery exact sequence. -->
 
 ### <a href="articles_maths/thompson-groups-and-the-cantor-set.html">Thompson Groups and the Cantor Set</a>
 <!-- the three Thompson groups $F$, $T$ and $V$ as the groups of the piecewise-linear homeomorphisms of the interval, the circle and the Cantor set defined by pairs of finite binary trees, with tree diagrams, the Cantor set $\{0,1\}^{\mathbb{N}}$ and the prefix-replacement description of $V$; $F$ and $T$ finitely presented, $V$ finitely generated and not finitely presented; the simplicity of $F$, $T$ and $V$ and the place of $F$ among the infinite finitely presented simple groups; the relation to *Diffeomorphism Groups* and to *Continuum Theory*. -->
 
-###<a href="articles_maths/symplectic-and-contact-topology.html">Symplectic and Contact Topology</a>
+### <a href="articles_maths/symplectic-and-contact-topology.html">Symplectic and Contact Topology</a>
 <!-- symplectic topology and its properties; the contact topology and the Legendre submanifolds. -->
 
-###<a href="articles_maths/floer-homology.html">Floer Homology</a>
+### <a href="articles_maths/floer-homology.html">Floer Homology</a>
 <!-- Floer homology and its properties; the relation to the symplectic topology of this part and to the algebraic topology of this part. -->
 
 ### Operator Theory
@@ -2749,22 +2863,22 @@
 ### <a href="articles_maths/algorithmic-randomness-and-chaitins-omega.html">Algorithmic Randomness and Chaitin's $\Omega$</a>
 <!-- the effective refinement of measure theory: computable real numbers and computably enumerable sets, effective null sets, and the Martin-Löf random reals as those that lie in no effective null set; the Kolmogorov and prefix complexity of a finite string and the incompressibility criterion of randomness; Chaitin's $\Omega$ as the halting probability of a prefix-free universal machine, a computably enumerable real that is random and therefore not computable; the halting problem and the immunity properties of the random reals; the failure of the randomness classes to be closed under the arithmetic operations. -->
 
-###<a href="articles_maths/modes-of-convergence.html">Modes of Convergence</a>
+### <a href="articles_maths/modes-of-convergence.html">Modes of Convergence</a>
 <!-- convergence of a sequence in a metric or uniform space; pointwise and uniform convergence of a sequence of functions, and the distinction that the topology cannot see; convergence almost everywhere and in measure; convergence in the $L^p$ norms, and the implications and counterexamples relating all the modes; the theorems that justify exchanging two limits, and the conditions for interchanging limit with integral, with derivative and with an infinite sum; Egorov's and Lusin's theorems; the role of completeness and of uniform integrability. -->
 
-###<a href="articles_maths/descriptive-set-theory.html">Descriptive Set Theory</a>
+### <a href="articles_maths/descriptive-set-theory.html">Descriptive Set Theory</a>
 <!-- Polish spaces and Borel sets; the projective hierarchy; analytic and coanalytic sets; the perfect set property; the relation to the descriptive topology of Part II; the descriptive topology of the Polish spaces and their Borel and analytic sets. -->
 
-###<a href="articles_maths/fourier-analysis-on-euclidean-spaces.html">Fourier Analysis on Euclidean Spaces</a>
+### <a href="articles_maths/fourier-analysis-on-euclidean-spaces.html">Fourier Analysis on Euclidean Spaces</a>
 <!-- the Fourier transform on $\mathbb{R}^n$ and its properties; the inversion theorem and Plancherel's theorem; Schwarz functions and tempered distributions in outline; the relation to the harmonic analysis of this part. -->
 
-###<a href="articles_maths/convex-analysis.html">Convex Analysis</a>
+### <a href="articles_maths/convex-analysis.html">Convex Analysis</a>
 <!-- convex sets and convex functions; the subdifferential; the Fenchel conjugate; the supporting hyperplane theorem; the relation to the variational methods of this part. -->
 
-###<a href="articles_maths/nonsmooth-and-variational-analysis.html">Nonsmooth and Variational Analysis</a>
+### <a href="articles_maths/nonsmooth-and-variational-analysis.html">Nonsmooth and Variational Analysis</a>
 <!-- nonsmooth functions and their subdifferentials; the Clarke subdifferential; the relation to convex analysis and to the variational analysis of this part; the variational problems, the direct method and the existence of minimisers. -->
 
-###<a href="articles_maths/potential-theory.html">Potential Theory</a>
+### <a href="articles_maths/potential-theory.html">Potential Theory</a>
 <!-- harmonic functions and the Dirichlet problem; potentials and capacity. -->
 
 ### Operator Theory
@@ -2822,43 +2936,43 @@
 
 ### Theory
 
-###<a href="articles_maths/locally-compact-groups-and-haar-measure.html">Locally Compact Groups and Haar Measure</a>
+### <a href="articles_maths/locally-compact-groups-and-haar-measure.html">Locally Compact Groups and Haar Measure</a>
 <!-- locally compact groups; the existence and uniqueness up to scale of Haar measure; left and right invariance, unimodularity and the modular function; the abelian, compact and discrete cases; $\mathbb{R}^n$, the circle and $\mathbb{Z}$ as the standard examples; the measure a topological group carries, constructed where the measure and the integral of Part III are available. -->
 
-###<a href="articles_maths/harmonic-analysis-on-groups.html">Harmonic Analysis on Groups</a>
+### <a href="articles_maths/harmonic-analysis-on-groups.html">Harmonic Analysis on Groups</a>
 <!-- the Fourier transform on a locally compact abelian group; characters and Pontryagin duality; Haar measure and the convolution theorem; the inversion and Plancherel theorems; the compact, discrete and finite cases; the group algebra; the obstruction for non-abelian groups and the role of the irreducible representations; the general theory that the per-system transforms of Part VI instantiate. -->
 
-###<a href="articles_maths/analysis-on-compact-groups.html">Analysis on Compact Groups</a>
+### <a href="articles_maths/analysis-on-compact-groups.html">Analysis on Compact Groups</a>
 <!-- Haar measure on a compact group and its normalisation; characters and the orthogonality relations; the classification of the irreducible representations for the classical groups; the non-abelian counterpart of Pontryagin duality and the obstruction to a full duality; the worked cases $SU(2)$, $SO(3)$ and the circle. -->
 
-###<a href="articles_maths/the-peter-weyl-theorem.html">The Peter–Weyl Theorem</a>
+### <a href="articles_maths/the-peter-weyl-theorem.html">The Peter–Weyl Theorem</a>
 <!-- the Peter–Weyl theorem for compact groups; the decomposition of $L^2(G)$; the relation to the representation theory of Part II and to the harmonic analysis of this part. -->
 
-###<a href="articles_maths/the-convolution-algebra-l1g.html">The Convolution Algebra $L^1(G)$</a>
+### <a href="articles_maths/the-convolution-algebra-l1g.html">The Convolution Algebra $L^1(G)$</a>
 <!-- the convolution algebra $L^1(G)$ of a locally compact group; the relation to the group algebras of Part I and to the operator algebras of Part II. -->
 
-###<a href="articles_maths/noncommutative-harmonic-analysis.html">Noncommutative Harmonic Analysis</a>
+### <a href="articles_maths/noncommutative-harmonic-analysis.html">Noncommutative Harmonic Analysis</a>
 <!-- harmonic analysis on non-abelian groups; the relation to the representation theory of locally compact groups of Part II and to the operator algebras of Part II. -->
 
-###<a href="articles_maths/the-plancherel-theorem.html">The Plancherel Theorem</a>
+### <a href="articles_maths/the-plancherel-theorem.html">The Plancherel Theorem</a>
 <!-- the Plancherel theorem for locally compact groups; the Plancherel measure; the relation to the harmonic analysis and to the representation theory of Part II. -->
 
-###<a href="articles_maths/ergodic-theory-of-group-actions.html">Ergodic Theory of Group Actions</a>
+### <a href="articles_maths/ergodic-theory-of-group-actions.html">Ergodic Theory of Group Actions</a>
 <!-- ergodic and mixing actions; the mean ergodic theorem for group actions. -->
 
-###<a href="articles_maths/homogeneous-dynamics.html">Homogeneous Dynamics</a>
+### <a href="articles_maths/homogeneous-dynamics.html">Homogeneous Dynamics</a>
 <!-- dynamics on homogeneous spaces $G/\Gamma$; unipotent flows. -->
 
-###<a href="articles_maths/ratners-theorems.html">Ratner's Theorems</a>
+### <a href="articles_maths/ratners-theorems.html">Ratner's Theorems</a>
 <!-- Ratner's classification of unipotent flows and its consequences; the equidistribution of orbits; the relation to homogeneous dynamics. -->
 
-###<a href="articles_maths/equidistribution.html">Equidistribution</a>
+### <a href="articles_maths/equidistribution.html">Equidistribution</a>
 <!-- equidistribution of sequences and of orbits; Weyl's criterion. -->
 
-###<a href="articles_maths/automorphic-forms.html">Automorphic Forms</a>
+### <a href="articles_maths/automorphic-forms.html">Automorphic Forms</a>
 <!-- automorphic forms on a reductive group; the relation to the adeles of Part II and to the representation theory of Part II. -->
 
-###<a href="articles_maths/the-langlands-program.html">The Langlands Program</a>
+### <a href="articles_maths/the-langlands-program.html">The Langlands Program</a>
 <!-- the Langlands program and its conjectures; the relation to automorphic forms and to the Galois representations of Part I. -->
 
 ### Operator Theory
@@ -2933,49 +3047,49 @@
 
 ### Theory
 
-###<a href="articles_maths/analytic-functions-and-power-series.html">Analytic Functions and Power Series</a>
+### <a href="articles_maths/analytic-functions-and-power-series.html">Analytic Functions and Power Series</a>
 <!-- power series over a valued field; the radius of convergence and the ultrametric rigidity of the convergence domain; analytic functions, their uniqueness and the identity theorem; the exponential, logarithm and binomial series where they converge; differentiation and integration term by term; the failure of the classical theory when the field is not complete, not ordered, or not of characteristic zero. -->
 
 ### <a href="articles_maths/elliptic-functions-and-integrals.html">Elliptic Functions and Integrals</a>
 <!-- the elliptic integrals of the first, second and third kind and the elliptic functions obtained by inverting them; the Jacobi elliptic functions and the Weierstrass $\wp$ function with its addition theorem; the period lattice $\Lambda = \mathbb{Z}\omega_1 + \mathbb{Z}\omega_2$ and the complex torus $\mathbb{C}/\Lambda$; the elliptic curve attached to a lattice and the analytic content of the group law of *Elliptic Curves*; the modular function and the classification of the lattices by the modular parameter; the complete elliptic integrals, the arithmetic–geometric mean and the theta functions. -->
 
-###<a href="articles_maths/non-archimedean-analysis.html">Non-Archimedean Analysis</a>
+### <a href="articles_maths/non-archimedean-analysis.html">Non-Archimedean Analysis</a>
 <!-- analysis over a field with a non-Archimedean absolute value: the strong triangle inequality and its geometric consequences, every triangle isosceles, balls are nested or disjoint, no interval is connected; convergence of series and the irrelevance of absolute convergence, which coincides with convergence; the $p$-adic exponential and logarithm; the classical theorems that fail and what replaces them; the comparison with the Archimedean case and the role of the residue field. -->
 
-###<a href="articles_maths/p-adic-analysis.html">p-adic Analysis</a>
+### <a href="articles_maths/p-adic-analysis.html">p-adic Analysis</a>
 <!-- continuous and analytic functions on the p-adic numbers; the p-adic exponential and logarithm; the relation to the local fields of Part II. -->
 
-###<a href="articles_maths/p-adic-integration.html">p-adic Integration</a>
+### <a href="articles_maths/p-adic-integration.html">p-adic Integration</a>
 <!-- the Haar measure on the p-adic numbers; p-adic integration and its properties. -->
 
-###<a href="articles_maths/p-adic-differential-equations.html">p-adic Differential Equations</a>
+### <a href="articles_maths/p-adic-differential-equations.html">p-adic Differential Equations</a>
 <!-- differential equations over a p-adic field; the Robba ring. -->
 
-###<a href="articles_maths/rigid-analytic-functions.html">Rigid Analytic Functions</a>
+### <a href="articles_maths/rigid-analytic-functions.html">Rigid Analytic Functions</a>
 <!-- analytic functions on a rigid space; the maximum modulus principle; the relation to the rigid analytic geometry of Part II. -->
 
-###<a href="articles_maths/non-archimedean-functional-analysis.html">Non-Archimedean Functional Analysis</a>
+### <a href="articles_maths/non-archimedean-functional-analysis.html">Non-Archimedean Functional Analysis</a>
 <!-- Banach and normed spaces over a non-Archimedean field; the relation to the p-adic analysis of this part and to the functional analysis of this part. -->
 
-###<a href="articles_maths/adelic-analysis.html">Adelic Analysis</a>
+### <a href="articles_maths/adelic-analysis.html">Adelic Analysis</a>
 <!-- analysis on the adeles and ideles; the Fourier transform on the adeles; the relation to the adeles of Part II and to Tate's thesis; Tate's thesis and the local and global zeta integrals. -->
 
-###<a href="articles_maths/zeta-functions.html">Zeta Functions</a>
+### <a href="articles_maths/zeta-functions.html">Zeta Functions</a>
 <!-- the Riemann zeta function and its properties; the Euler product and the functional equation. -->
 
-###<a href="articles_maths/l-functions.html">L-Functions</a>
+### <a href="articles_maths/l-functions.html">L-Functions</a>
 <!-- Dirichlet L-functions and their properties; the functional equation; the Dirichlet L-functions and their characters. -->
 
-###<a href="articles_maths/analytic-number-theory.html">Analytic Number Theory</a>
+### <a href="articles_maths/analytic-number-theory.html">Analytic Number Theory</a>
 <!-- the distribution of the primes; the analytic methods applied to arithmetic. -->
 
-###<a href="articles_maths/the-prime-number-theorem.html">The Prime Number Theorem</a>
+### <a href="articles_maths/the-prime-number-theorem.html">The Prime Number Theorem</a>
 <!-- the prime number theorem and its proof; the zero-free region; the relation to the zeta functions and to the analytic number theory of this part. -->
 
-###<a href="articles_maths/the-riemann-hypothesis.html">The Riemann Hypothesis</a>
+### <a href="articles_maths/the-riemann-hypothesis.html">The Riemann Hypothesis</a>
 <!-- the Riemann hypothesis and its consequences; the critical strip; the relation to the zeta functions and to the prime number theorem; the generalised Riemann hypothesis. -->
 
-###<a href="articles_maths/modular-forms.html">Modular Forms</a>
+### <a href="articles_maths/modular-forms.html">Modular Forms</a>
 <!-- modular forms and their properties; the modular group and its congruence subgroups; the relation to the elliptic curves of Part I and to the automorphic forms of this part. -->
 
 ### Operator Theory
@@ -3063,43 +3177,43 @@
 ### <a href="articles_maths/banach-and-hilbert-spaces.html">Banach and Hilbert Spaces</a>
 <!-- normed and Banach spaces; bounded linear operators and the operator norm; the dual space and the Hahn–Banach, open mapping and closed graph theorems; inner product spaces, the Cauchy–Schwarz inequality and the parallelogram law; Hilbert spaces, orthonormal bases and the Riesz representation theorem; orthogonal projection and the geometry of a Hilbert space; the adjoint; the spectral theorem for bounded self-adjoint and normal operators; compact operators, their spectral theory and the Fredholm alternative; $L^2$ and $\ell^2$ as the standard examples; the finite-dimensional case, where every operator is a matrix and the theory reduces to the spectral theorem for normal matrices. -->
 
-###<a href="articles_maths/interpolation-theory.html">Interpolation Theory</a>
+### <a href="articles_maths/interpolation-theory.html">Interpolation Theory</a>
 <!-- interpolation of Banach and Sobolev spaces; the real and complex methods; the relation to the function spaces of this part. -->
 
-###<a href="articles_maths/differential-calculus-on-normed-spaces.html">Differential Calculus on Normed Spaces</a>
+### <a href="articles_maths/differential-calculus-on-normed-spaces.html">Differential Calculus on Normed Spaces</a>
 <!-- the Fréchet derivative, its uniqueness and the chain rule; continuity of the derivative and the class $C^1$; partial derivatives and the total derivative; the inverse and implicit function theorems; higher derivatives, the second derivative as a bilinear form, and Taylor's theorem with remainder; the role of completeness and of the contraction mapping principle; the finite-dimensional case, where the derivative is the Jacobian matrix. -->
 
-###<a href="articles_maths/distributions-and-fundamental-solutions.html">Distributions and Fundamental Solutions</a>
+### <a href="articles_maths/distributions-and-fundamental-solutions.html">Distributions and Fundamental Solutions</a>
 <!-- test functions and the space of distributions as the topological dual; differentiation of distributions and the derivative of a locally integrable function; the delta distribution, its derivatives and the Heaviside function; multiplication and the limits of the theory; the Fourier transform of a tempered distribution; convolution and the convolution algebra; fundamental solutions of linear differential operators and the parametrix. -->
 
-###<a href="articles_maths/distributions-on-surfaces-layers-and-jump-conditions.html">Distributions on Surfaces, Layers, and Jump Conditions</a>
+### <a href="articles_maths/distributions-on-surfaces-layers-and-jump-conditions.html">Distributions on Surfaces, Layers, and Jump Conditions</a>
 <!-- the surface delta and the coarea formula; the jump formula and the layer decomposition of the gradient, the divergence and the rotor; single and double layers and the structure of a distribution supported on a surface; the surface gradient, divergence and rotor; the jump conditions of first- and second-order equations and the characteristic of the principal symbol; the Rankine–Hugoniot condition of a conservation law; traces and the restriction problem. -->
 
-###<a href="articles_maths/the-schwartz-kernel-theorem.html">The Schwartz Kernel Theorem</a>
+### <a href="articles_maths/the-schwartz-kernel-theorem.html">The Schwartz Kernel Theorem</a>
 <!-- the Schwartz kernel theorem and its consequences; the relation to the topological tensor products of Part II and to the distributions of this part. -->
 
-###<a href="articles_maths/fredholm-theory.html">Fredholm Theory</a>
+### <a href="articles_maths/fredholm-theory.html">Fredholm Theory</a>
 <!-- Fredholm operators and their index; the Fredholm alternative; compact perturbations; the relation to the index theory of Part IV and to the spectral theory of operators. -->
 
-###<a href="articles_maths/unbounded-operators-and-spectral-measures.html">Unbounded Operators and Spectral Measures</a>
+### <a href="articles_maths/unbounded-operators-and-spectral-measures.html">Unbounded Operators and Spectral Measures</a>
 <!-- an unbounded linear operator, its domain, the graph and the closed graph theorem; closable operators, the adjoint of an unbounded operator, and the distinction between symmetric and self-adjoint, which no longer coincide; the deficiency indices and the self-adjoint extensions of a symmetric operator; the spectrum of a closed operator and the resolvent as a bounded operator away from it; the spectral theorem for a self-adjoint operator in its projection-valued form, with the spectral measure $E$ and the representation $A=\int\lambda\,dE(\lambda)$; the Borel functional calculus and the spectrum as the support of the spectral measure; the multiplication operator on $L^2$ of a measure space as the model case, and the diagonalisation of a self-adjoint operator as the statement that it is unitarily equivalent to one. -->
 
-###<a href="articles_maths/pseudodifferential-operators.html">Pseudodifferential Operators</a>
+### <a href="articles_maths/pseudodifferential-operators.html">Pseudodifferential Operators</a>
 <!-- pseudodifferential operators and their symbols; elliptic operators. -->
 
-###<a href="articles_maths/microlocal-analysis.html">Microlocal Analysis</a>
+### <a href="articles_maths/microlocal-analysis.html">Microlocal Analysis</a>
 <!-- the wavefront set and microlocal regularity; the propagation of singularities; the relation to the pseudodifferential operators of this part. -->
 
-###<a href="articles_maths/semiclassical-analysis.html">Semiclassical Analysis</a>
+### <a href="articles_maths/semiclassical-analysis.html">Semiclassical Analysis</a>
 <!-- the semiclassical limit and its properties; the mathematical content only. -->
 
-###<a href="articles_maths/nonlinear-functional-analysis.html">Nonlinear Functional Analysis</a>
+### <a href="articles_maths/nonlinear-functional-analysis.html">Nonlinear Functional Analysis</a>
 <!-- nonlinear operators and their properties; monotone and accretive operators. -->
 
-###<a href="articles_maths/fixed-point-theory-and-degree-theory.html">Fixed Point Theory and Degree Theory</a>
+### <a href="articles_maths/fixed-point-theory-and-degree-theory.html">Fixed Point Theory and Degree Theory</a>
 <!-- the fixed point theorems of analysis; the contraction mapping principle; the Schauder and Kakutani theorems; the relation to the nonlinear functional analysis of this part; the Leray–Schauder degree and its use in existence theorems. -->
 
-###<a href="articles_maths/besov-and-triebel-lizorkin-spaces.html">Besov and Triebel–Lizorkin Spaces</a>
+### <a href="articles_maths/besov-and-triebel-lizorkin-spaces.html">Besov and Triebel–Lizorkin Spaces</a>
 <!-- Besov spaces and their properties; the relation to the interpolation theory and to the Sobolev spaces of this part; the Triebel–Lizorkin spaces and their relation to the Besov spaces. -->
 
 ### <a href="articles_maths/symmetric-tensors-and-spherical-harmonics.html">Symmetric Tensors and Spherical Harmonics</a>
@@ -3205,7 +3319,7 @@
 ### <a href="articles_maths/regularity-and-the-cauchy-riemann-operator.html">Regularity and the Cauchy–Riemann Operator</a>
 <!-- the first-order operator $D$ assembled from a frame of the algebra, and the class of functions it annihilates; the classical Cauchy–Riemann equations in $\mathbb{C}$, their generalisation and the several distinct meanings the equation $Df=0$ takes once multiplication is one-sided; monogenic and regular functions; the relation between regularity and holomorphy inside a commutative subalgebra; the square of the operator as the Laplacian, and the harmonicity of regular functions; the Cauchy integral formula and the hypotheses that replace the classical ones; the mean value property, the maximum principle and Liouville's theorem, with the systems in which each fails; the Fischer and Stokes decompositions; forward references to the per-system analysis articles. -->
 
-###<a href="articles_maths/clifford-analysis.html">Clifford Analysis</a>
+### <a href="articles_maths/clifford-analysis.html">Clifford Analysis</a>
 <!-- the analysis of functions with values in a Clifford algebra; the Dirac operator and monogenic functions; the Cauchy integral formula; the relation to the Clifford algebras of Part II; the monogenic, polymonogenic and shifted theories; the Hermitean refinement, with the four Hermitean Dirac operators, the simultaneous null solutions and the circulant matrix of Cauchy kernels; the measure-theoretic boundary theory, with the Federer normal, the Cauchy and Hilbert transforms on Ahlfors–David regular surfaces, the Plemelj calculus and the complementary projections, the removable singularities, and the $d$-summable fractal boundaries on which the transform is rebuilt from the Teodorescu transform and a Whitney extension, with the approximate dimension in the solvability condition. -->
 
 ### <a href="articles_maths/geometric-calculus-and-the-vector-derivative.html">Geometric Calculus and the Vector Derivative</a>
@@ -3214,7 +3328,7 @@
 ### <a href="articles_maths/clifford-modules-and-the-twisted-cauchy-riemann-operator.html">Clifford Modules and the Twisted Cauchy–Riemann Operator</a>
 <!-- Clifford modules and their structure; the spinor module; the twisted Cauchy–Riemann operator acting on a Clifford module; the resulting elliptic complex and the computation of its index. -->
 
-###<a href="articles_maths/fueter-theory.html">Fueter Theory</a>
+### <a href="articles_maths/fueter-theory.html">Fueter Theory</a>
 <!-- Fueter's theory of regular functions of a quaternionic variable; the Cauchy–Fueter integral formula; the relation to the hypercomplex analysis of this part. -->
 
 ### <a href="articles_maths/hypercomplex-integration.html">Hypercomplex Integration</a>
@@ -3226,16 +3340,16 @@
 ### <a href="articles_maths/harmonic-analysis-over-hypercomplex-systems.html">Harmonic Analysis over Hypercomplex Systems</a>
 <!-- the transform theory a hypercomplex algebra supports, and why it depends on the underlying additive group rather than on the multiplication; the Fourier transform on $\mathbb{C}$, on the split complex numbers, on the dual numbers and on the quaternion groups; the discrete and continuous cases; convolution and the algebra it defines; the Plancherel and Paley–Wiener theorems; the Laplace, Hilbert, Mellin and Radon transforms; the Calderón–Zygmund theory of singular integrals; the obstruction in the non-commutative and zero-divisor cases, and the reduction to the factor algebra; forward references to the per-system harmonic analysis articles. -->
 
-###<a href="articles_maths/dirac-differential-operators.html">Dirac Differential Operators</a>
+### <a href="articles_maths/dirac-differential-operators.html">Dirac Differential Operators</a>
 <!-- the differential theory of Dirac operators: the analysis of the family of Dirac-type operators; self-adjointness, the domain and the closure, the spectrum and the compact resolvent, and the index of the chiral part; the relation to the algebraic and topological operator of Part II and to the spin geometry and index theory of Part IV. -->
 
-###<a href="articles_maths/the-dirac-kahler-equation.html">The Dirac–Kähler Equation</a>
+### <a href="articles_maths/the-dirac-kahler-equation.html">The Dirac–Kähler Equation</a>
 <!-- the multivector Dirac equation $(d-\delta+m)\Phi=0$; the exterior derivative, the codifferential $\delta=-\star d\star$ and the Laplace–de Rham operator, $(d-\delta)^2=\square$; the Clifford product $dx_\mu\vee dx_\nu=dx_\mu\wedge dx_\nu+\delta_{\mu\nu}$; the decomposition into four Dirac equations through the basis change $Z$ and the internal $\mathrm{SO}(2,4)$ symmetry; minimal coupling; the simplicial discretization and the equivalence to staggered fermions; the harmonic-form zero modes; the curved-spacetime failure of the fourfold split; the relation to the biquaternion algebra, the even part $\mathrm{Cl}_{1,3}^+=\mathbb{B}$ contained in the multivector and the oddness of $d-\delta$ that prevents a restriction to it. -->
 
-###<a href="articles_maths/holomorphic-functional-calculus.html">Holomorphic Functional Calculus</a>
+### <a href="articles_maths/holomorphic-functional-calculus.html">Holomorphic Functional Calculus</a>
 <!-- the holomorphic functional calculus for a Banach algebra; the relation to the Banach algebras of Part II and to the spectral theory of operators. -->
 
-###<a href="articles_maths/cyclic-cohomology.html">Cyclic Cohomology</a>
+### <a href="articles_maths/cyclic-cohomology.html">Cyclic Cohomology</a>
 <!-- cyclic cohomology as the dual of cyclic homology; the pairing with K-theory and the Chern character in its cyclic form; the relation to the cyclic homology of Part I and to the K-theory of Part II and the index theory of Part IV. -->
 
 ### Operator Theory
@@ -3408,7 +3522,7 @@
 
 ### Theory
 
-###<a href="articles_maths/smooth-manifolds-and-differential-geometry.html">Smooth Manifolds and Differential Geometry</a>
+### <a href="articles_maths/smooth-manifolds-and-differential-geometry.html">Smooth Manifolds and Differential Geometry</a>
 <!-- charts, atlases and smooth structures; the tangent space at a point and the differential of a smooth map; vector fields, their Lie bracket and the Lie algebra of a manifold; submanifolds, the rank theorem and the implicit function theorem; the manifold structure of the spheres and of the classical groups; a Riemannian metric as a smoothly varying inner product on each tangent space, and the distance it induces; the passage from the linear algebra of one tangent space to the geometry of the whole manifold, which is the frame for the bundles and the curvature that follow. -->
 
 ### <a href="articles_maths/differential-forms-and-stokes-theorem.html">Differential Forms and Stokes' Theorem</a>
@@ -3420,10 +3534,10 @@
 ### <a href="articles_maths/fibre-bundles-connections-and-curvature.html">Fibre Bundles, Connections and Curvature</a>
 <!-- smooth manifolds and the tangent bundle; vector bundles and their sections — this entry is the home of vector bundles, which have no separate entry; principal bundles, the structure group and the associated bundle; the Hopf bundle $S^3\to S^2$ and its local data; connections as a horizontal distribution, the connection form and the covariant derivative; parallel transport and holonomy; the curvature two-form, its Bianchi identity and the failure of commutativity; the gauge-theoretic reading of a connection and its curvature; the Clifford bundle and the twisted Cauchy–Riemann operator. -->
 
-###<a href="articles_maths/characteristic-classes.html">Characteristic Classes</a>
+### <a href="articles_maths/characteristic-classes.html">Characteristic Classes</a>
 <!-- the characteristic classes of a vector bundle: the Chern, Pontryagin, Stiefel–Whitney and Euler classes; the relation to the fibre bundles of this part and to the index theory. -->
 
-###<a href="articles_maths/differential-topology.html">Differential Topology</a>
+### <a href="articles_maths/differential-topology.html">Differential Topology</a>
 <!-- transversality and Sard's theorem; degree theory; cobordism in outline; the relation to the algebraic topology of Part II. -->
 
 ### Operator Theory
@@ -3481,64 +3595,64 @@
 
 ### Theory
 
-###<a href="articles_maths/ordinary-differential-equations.html">Ordinary Differential Equations</a>
+### <a href="articles_maths/ordinary-differential-equations.html">Ordinary Differential Equations</a>
 <!-- the first-order equation $y'=f(t,y)$ and the existence and uniqueness theorem of Picard–Lindelöf; the Lipschitz condition, the contraction mapping argument and the maximal interval of existence; systems of equations, and the reduction of a higher-order equation to a first-order system; linear systems, the matrix exponential, the fundamental matrix and the variation of constants formula; linear equations with constant coefficients and the characteristic equation; the phase portrait of a planar system, its equilibria and their stability, and the classification of the linearised flow by the eigenvalues; Sturm–Liouville problems, their eigenvalues and the eigenfunction expansion they give; the spectral-parameter power series solution of the Sturm–Liouville equation, generated from one particular solution of the auxiliary equation bounded together with its reciprocal, the two interleaved recursions and the polynomial in the spectral parameter a truncation gives; Green's functions for a linear boundary-value problem; the equations of Bessel and Legendre, whose solutions are the special functions of Part VI. -->
 
-###<a href="articles_maths/delay-and-functional-differential-equations.html">Delay and Functional Differential Equations</a>
+### <a href="articles_maths/delay-and-functional-differential-equations.html">Delay and Functional Differential Equations</a>
 <!-- delay differential equations and their properties; the method of steps; the relation to the ordinary differential equations of this part; the functional differential equations of which the delay equations are the first case. -->
 
-###<a href="articles_maths/impulsive-differential-equations.html">Impulsive Differential Equations</a>
+### <a href="articles_maths/impulsive-differential-equations.html">Impulsive Differential Equations</a>
 <!-- impulsive differential equations and their properties; the relation to the ordinary differential equations of this part. -->
 
-###<a href="articles_maths/differential-algebraic-equations.html">Differential-Algebraic Equations</a>
+### <a href="articles_maths/differential-algebraic-equations.html">Differential-Algebraic Equations</a>
 <!-- differential-algebraic equations and their properties; the index of a differential-algebraic equation; the relation to the ordinary differential equations of this part. -->
 
-###<a href="articles_maths/partial-differential-equations.html">Partial Differential Equations</a>
+### <a href="articles_maths/partial-differential-equations.html">Partial Differential Equations</a>
 <!-- the classification of a second-order linear equation into elliptic, parabolic and hyperbolic types by the symbol of its principal part; the Laplace and Poisson equations, harmonic functions, the mean value property and the maximum principle; the heat equation, the smoothing of its solutions and the failure of the backward equation to be well posed; the wave equation, the d'Alembert solution, finite propagation speed and Huygens' principle; the Cauchy problem, Hadamard's notion of well-posedness and his example of an ill-posed problem; separation of variables and the eigenfunction expansion of a boundary-value problem; the fundamental solution of each operator and the Green's function it defines; characteristics, the method of descent and the explicit solution formulas in low dimension. -->
 
-###<a href="articles_maths/fractional-differential-equations.html">Fractional Differential Equations</a>
+### <a href="articles_maths/fractional-differential-equations.html">Fractional Differential Equations</a>
 <!-- fractional derivatives and fractional differential equations; the relation to the partial differential equations of this part. -->
 
-###<a href="articles_maths/sobolev-spaces-and-weak-solutions.html">Sobolev Spaces and Weak Solutions</a>
+### <a href="articles_maths/sobolev-spaces-and-weak-solutions.html">Sobolev Spaces and Weak Solutions</a>
 <!-- the weak derivative and its agreement with the classical derivative where both exist; the Sobolev spaces $W^{k,p}$ and $H^k$, their completeness and the Hilbert structure of $H^k$; approximation by smooth functions and the density of $C_c^\infty$ in $W^{k,p}_0$; the Sobolev embedding and Rellich–Kondrachov compactness theorems, with the dimension-dependent exponents; traces and the boundary values of a function in $H^1$; the weak formulation of an elliptic boundary-value problem, its bilinear form and the Lax–Milgram theorem; existence of a weak solution and the elliptic regularity that upgrades it. -->
 
-###<a href="articles_maths/the-calculus-of-variations.html">The Calculus of Variations</a>
+### <a href="articles_maths/the-calculus-of-variations.html">The Calculus of Variations</a>
 <!-- the tautochrone problem and the origin of the subject; a functional on a space of admissible functions, its first variation and the stationarity condition; the fundamental lemma of the calculus of variations; the Euler–Lagrange equation, the du Bois-Reymond argument and the regularity of a minimiser; the functional derivative and the discrete polygonal approximation; the higher-order and Euler–Poisson equation; the several-functions, several-variables, minimal-surface and multi-index forms; the second variation, the Legendre and Jacobi conditions and conjugate points; constrained problems and the Lagrange multiplier rule; the Hamiltonian formulation, the Legendre transform and Hamilton's equations; the Hamilton–Jacobi equation and the action as a function of the endpoint; Noether's theorem and the conservation law associated with each one-parameter symmetry of a Lagrangian; the direct method, with coercivity, weak lower semicontinuity and the existence of a minimiser. -->
 
-###<a href="articles_maths/noethers-two-theorems.html">Noether's Two Theorems</a>
+### <a href="articles_maths/noethers-two-theorems.html">Noether's Two Theorems</a>
 <!-- the fundamental variation identity; the first theorem, a rigid symmetry, its current and charge, with translation, Lorentz and internal $U(1)$ as examples; the second theorem, a local symmetry with arbitrary functions and the differential identity among the Euler–Lagrange expressions, valid off shell; the equations are not independent and a gauge condition is needed; the Maxwell identity and the conservation of the source as an integrability condition; a Stueckelberg-type field whose local symmetry contains a rigid subgroup; the counting of conservation laws against identities; the Hamiltonian form; and Weyl's naming of symmetries of the first and second kind. -->
 
-###<a href="articles_maths/optimal-control-and-the-pontryagin-maximum-principle.html">Optimal Control and the Pontryagin Maximum Principle</a>
+### <a href="articles_maths/optimal-control-and-the-pontryagin-maximum-principle.html">Optimal Control and the Pontryagin Maximum Principle</a>
 <!-- the optimal control problem: a state obeying a controlled differential equation, a running cost and a terminal cost, and the minimisation of the cost over the admissible controls; the relation to the calculus of variations and the state equation as a non-holonomic constraint with the costate as its multiplier; the control Hamiltonian $\langle p,f\rangle+L$ and the Pontryagin maximum principle, with the state and costate equations, the pointwise minimisation of the Hamiltonian, the transversality condition $p(T)=\varphi_x(x(T))$ for a free final state and the condition $H(T)=0$ for a free final time; the derivation from the Lagrange multiplier rule and the role of the needle variation; the conservation of the Hamiltonian for an autonomous problem and the costate as the sensitivity of the optimal cost; the linear-quadratic regulator, the matrix Riccati equation $\dot S=-C-A^{\mathsf T}S-SA+SBD^{-1}B^{\mathsf T}S$, the scalar instance $S=\tanh(T-t)$ and the finite escape of the Riccati solution; the time-optimal problem of the double integrator, the bang-bang principle, the switching curve $\sigma=x_1+\tfrac12x_2\lvert x_2\rvert$ and the singular arc; the value function, Bellman's principle, the Hamilton–Jacobi–Bellman equation and the verification theorem; the identity $p=V_x$ and the characteristic passage between the maximum principle and the Bellman equation; sufficiency under convexity; the relation to the Riccati equation of the integrable systems of this part. -->
 
-###<a href="articles_maths/minimal-surfaces.html">Minimal Surfaces</a>
+### <a href="articles_maths/minimal-surfaces.html">Minimal Surfaces</a>
 <!-- minimal surfaces and the variational problem they solve; the relation to the calculus of variations of this part and to the geometric measure theory of Part IV. -->
 
-###<a href="articles_maths/teichmuller-theory.html">Teichmüller Theory</a>
+### <a href="articles_maths/teichmuller-theory.html">Teichmüller Theory</a>
 <!-- Teichmüller spaces and their properties. -->
 
-###<a href="articles_maths/integrable-systems.html">Integrable Systems</a>
+### <a href="articles_maths/integrable-systems.html">Integrable Systems</a>
 <!-- integrable systems and their properties; the Lax pair. -->
 
-###<a href="articles_maths/soliton-theory.html">Soliton Theory</a>
+### <a href="articles_maths/soliton-theory.html">Soliton Theory</a>
 <!-- solitons and their properties; the inverse scattering transform; the relation to the integrable systems of this part. -->
 
-###<a href="articles_maths/lagrangian-and-hamiltonian-systems.html">Lagrangian and Hamiltonian Systems</a>
+### <a href="articles_maths/lagrangian-and-hamiltonian-systems.html">Lagrangian and Hamiltonian Systems</a>
 <!-- Hamiltonian systems and their properties; the symplectic form; the relation to the symplectic geometry of Part IV and to the integrable systems of this part; the Lagrangian systems, the Euler–Lagrange equations and the Legendre transform between the two pictures; the modified Hamilton principle $\delta\int(\sum_ip_i\dot q^i-H)dt=0$ with independent variations of the coordinates and the momenta; the cyclic coordinate and its conserved conjugate momentum; the canonical momentum one-form and the coordinate-free Euler–Lagrange equation $\mathcal{L}_X\theta_L=dL$ with the field of the system as the unique second-order field; the higher-derivative Lagrangians and the Ostrogradsky instability; the mechanical origin of the equation in D'Alembert's principle of virtual work, the ideal constraints and the generalised force, the derivation of the Lagrange equation from D'Alembert's principle, the holonomic, scleronomic, rheonomic and non-holonomic constraints, the Lagrange–d'Alembert equations with their multipliers, the skate as the non-integrable example, and the conservation of energy for a non-holonomic system; the bracket formulation $\frac{d}{dt}g=\{g,H\}+\partial_tg$ and Poisson's theorem that the bracket of two constants of motion is itself a constant of motion, the constants of motion forming the Lie subalgebra that centralises $H$; the canonical transformations and their equivalent criteria by the symplectic form, the Poisson bracket and the canonical brackets, the generating functions of the four types $F_1$, $F_2$, $F_3$, $F_4$ and their Legendre transforms, the time-dependent generating function and the shift $K=H+\partial F/\partial t$, the elementary instances, the group generated by the Hamiltonian flows and the infinitesimal canonical transformations with their generator, the Hamiltonian generating the flow; the Hamilton–Jacobi equation as the vanishing of the new Hamiltonian and the action as the generating function that trivialises the flow, the method itself — the complete integral, the separation of variables and the Stäckel conditions — being the companion article *The Hamilton–Jacobi Equation and Separability*; Liouville's equation $\partial_t\rho+\{\rho,H\}=0$ for a density, with the conserved densities stationary; and the phase portrait of one degree of freedom, with the elliptic and hyperbolic equilibria, the Jacobian $JH''$ and the separatrix. -->
 
-###<a href="articles_maths/the-hamilton-jacobi-equation-and-separability.html">The Hamilton–Jacobi Equation and Separability</a>
+### <a href="articles_maths/the-hamilton-jacobi-equation-and-separability.html">The Hamilton–Jacobi Equation and Separability</a>
 <!-- the equation as the condition that the Hamiltonian-generating canonical transformation vanish, and as a first-order partial differential equation whose characteristics are Hamilton's equations; the principal function and Hamilton's characteristic function $W$, the reduced equation $H(q,\partial W/\partial q)=\alpha_1$; the complete integral, the nonsingularity of $\partial^2S/\partial q\,\partial\alpha$, and Jacobi's theorem solving the system by inverting $\beta=\partial S/\partial\alpha$; additive separation, the criterion that a coordinate entering through one combination of itself and its gradient separates, and the cyclic coordinate as the extreme case; the Stäckel conditions $U=\sum_i(1/h_i^2)U_i(q^i)$ for a quadratic Hamiltonian in orthogonal coordinates, with the spherical instance $U=U_r(r)+U_\theta(\theta)/r^2+U_\phi(\phi)/(r^2\sin^2\theta)$; the Stäckel matrix and the Stäckel class; the classical finite list of orthogonal coordinate systems of Euclidean three-space in which the free equation separates; the tie to integrability, the separation constants as the commuting integrals and the actions as the closed integrals of the separated momenta; the examples — the oscillator, the central force, Kepler and the conic of eccentricity $e=\sqrt{1+2\alpha_1L^2/mk^2}$, the spherical coordinates with $|\mathbf L|^2$, the parabolic coordinates and the Coulomb problem in a uniform field with $B_1+B_2=2\kappa$, and the elliptic coordinates of the two-centre problem; and the limits of the method — the dependence of separation on the coordinates, integrability without separation, and the three-body problem. -->
 
-###<a href="articles_maths/multisymplectic-and-covariant-hamiltonian-field-theory.html">Multisymplectic and Covariant Hamiltonian Field Theory</a>
+### <a href="articles_maths/multisymplectic-and-covariant-hamiltonian-field-theory.html">Multisymplectic and Covariant Hamiltonian Field Theory</a>
 <!-- the case of several independent variables and why the naive transcription of the finite-dimensional theory fails; the polymomentum and the Legendre map, with hyperregularity as its invertibility; the De Donder–Weyl Hamiltonian and the De Donder–Weyl equations, with the theorem that they are equivalent to the Euler–Lagrange equations for a hyperregular density and the remark that only the second equation is dynamical; the multimomentum form $\Theta_{DW}=p^\mu_i\,du^i\wedge\varpi_\mu$, its exterior derivative the closed multisymplectic form $-d\Theta_{DW}$, and the polysymplectic form of Günther as an $\mathbb{R}^m$-valued two-form; why there is no covariant Poisson bracket, by a degree count, and the replacement of the Hamiltonian vector field by a Hamiltonian distribution; the multisymplectic Noether theorem and the multimomentum current $J^\mu{}_\nu=p^\mu_i\partial_\nu u^i-L\delta^\mu_\nu$, $m$ copies of the Beltrami first integral; the variants Hamilton–De Donder, polysymplectic, multisymplectic, $k$-symplectic and Lepage; the two worked examples, the single unknown with a potential and the antisymmetrised (curl) Lagrangian with the exact shifts as the kernel of the Legendre map; the passage to the instantaneous formalism and the case $m=1$, which is the finite-dimensional theory of the preceding article. -->
 
-###<a href="articles_maths/semigroups-and-evolution-equations.html">Semigroups and Evolution Equations</a>
+### <a href="articles_maths/semigroups-and-evolution-equations.html">Semigroups and Evolution Equations</a>
 <!-- a one-parameter semigroup of bounded operators and strong continuity; the generator, as a closed and densely defined unbounded operator; the Hille–Yosida theorem and the characterisation of the generators of contraction semigroups; the Lumer–Phillips theorem and dissipative operators; the abstract Cauchy problem, its mild and classical solutions and the uniqueness question; the heat semigroup and the wave group as the worked examples; Stone's theorem, the unitary group generated by a self-adjoint operator, and the recovery of a one-parameter symmetry group from its generator; the Lie–Trotter product formula, the Chernoff formula and the exponential formula, the Strang splitting and the orders of the approximation, and the path-integral time slicing; the spectral mapping theorem and the asymptotic behaviour of a semigroup. -->
 
-###<a href="articles_maths/stochastic-differential-equations.html">Stochastic Differential Equations</a>
+### <a href="articles_maths/stochastic-differential-equations.html">Stochastic Differential Equations</a>
 <!-- stochastic differential equations; the Itô and Stratonovich integrals; the relation to the Brownian motion of this part and to the partial differential equations. -->
 
-###<a href="articles_maths/stochastic-partial-differential-equations.html">Stochastic Partial Differential Equations</a>
+### <a href="articles_maths/stochastic-partial-differential-equations.html">Stochastic Partial Differential Equations</a>
 <!-- stochastic partial differential equations; the relation to the stochastic differential equations of this part and to the partial differential equations. -->
 
 ### Operator Theory
@@ -3602,31 +3716,31 @@
 ### <a href="articles_maths/the-lie-correspondence-and-the-adjoint-representation.html">The Lie Correspondence and the Adjoint Representation</a>
 <!-- differentials of homomorphisms, Lie subgroups and subalgebras, the simply connected case, the adjoint representation. -->
 
-###<a href="articles_maths/the-fundamental-group-of-a-lie-group.html">The Fundamental Group of a Lie Group</a>
+### <a href="articles_maths/the-fundamental-group-of-a-lie-group.html">The Fundamental Group of a Lie Group</a>
 <!-- the fundamental group of a topological group is abelian; the fundamental groups of the classical groups; the universal cover of $SO(n)$ and the spin groups; the double cover $SU(2)\to SO(3)$. -->
 
-###<a href="articles_maths/homology-of-classical-groups-and-homogeneous-spaces.html">Homology of Classical Groups and Homogeneous Spaces</a>
+### <a href="articles_maths/homology-of-classical-groups-and-homogeneous-spaces.html">Homology of Classical Groups and Homogeneous Spaces</a>
 <!-- the homology of $GL_n$, $SL_n$, $O(n)$, $SO(n)$, $U(n)$ and $SU(n)$; the homology of Grassmannians and Stiefel manifolds; Schubert calculus; the relation to the characteristic classes of this part. -->
 
 ### <a href="articles_maths/hilberts-fifth-problem-and-infinite-dimensional-lie-theory.html">Hilbert's Fifth Problem and Infinite-Dimensional Lie Theory</a>
 <!-- the Lie algebra of a topological group, locally Euclidean topological groups are Lie groups, approximation of topological groups by Lie groups, $p$-adic Lie groups and Banach–Lie algebras. -->
 
-###<a href="articles_maths/diffeomorphism-groups.html">Diffeomorphism Groups</a>
+### <a href="articles_maths/diffeomorphism-groups.html">Diffeomorphism Groups</a>
 <!-- diffeomorphism groups of manifolds; the relation to the infinite-dimensional Lie theory of this part and to the geometry of Part IV. -->
 
-###<a href="articles_maths/loop-groups.html">Loop Groups</a>
+### <a href="articles_maths/loop-groups.html">Loop Groups</a>
 <!-- loop groups and their representations. -->
 
-###<a href="articles_maths/kac-moody-groups.html">Kac–Moody Groups</a>
+### <a href="articles_maths/kac-moody-groups.html">Kac–Moody Groups</a>
 <!-- Kac–Moody groups and their properties; the relation to the Lie groups of this part and to the root systems of Part I. -->
 
-###<a href="articles_maths/p-adic-lie-groups.html">p-adic Lie Groups</a>
+### <a href="articles_maths/p-adic-lie-groups.html">p-adic Lie Groups</a>
 <!-- p-adic Lie groups and their Lie algebras; the relation to the Lie groups of this part and to the p-adic numbers of Part II. -->
 
-###<a href="articles_maths/lattices-in-lie-groups.html">Lattices in Lie Groups</a>
+### <a href="articles_maths/lattices-in-lie-groups.html">Lattices in Lie Groups</a>
 <!-- lattices in Lie groups: their definition, the arithmetic examples and the rigidity properties. -->
 
-###<a href="articles_maths/arithmetic-groups.html">Arithmetic Groups</a>
+### <a href="articles_maths/arithmetic-groups.html">Arithmetic Groups</a>
 <!-- arithmetic groups and their properties; the relation to lattices in Lie groups and to the algebraic number theory of Part I. -->
 
 ### Operator Theory
@@ -3699,37 +3813,37 @@
 
 ### Theory
 
-###<a href="articles_maths/measure-theoretic-probability.html">Measure-Theoretic Probability</a>
+### <a href="articles_maths/measure-theoretic-probability.html">Measure-Theoretic Probability</a>
 <!-- probability spaces and random variables; distributions and their properties; the relation to the measure theory of Part III; expectation and the standard limit theorems in outline. -->
 
-###<a href="articles_maths/independence-and-conditional-expectation.html">Independence and Conditional Expectation</a>
+### <a href="articles_maths/independence-and-conditional-expectation.html">Independence and Conditional Expectation</a>
 <!-- independence of events and of random variables; conditional expectation as a projection; filtrations. -->
 
-###<a href="articles_maths/laws-of-large-numbers-and-the-central-limit-theorem.html">Laws of Large Numbers and the Central Limit Theorem</a>
+### <a href="articles_maths/laws-of-large-numbers-and-the-central-limit-theorem.html">Laws of Large Numbers and the Central Limit Theorem</a>
 <!-- the strong and weak laws of large numbers; characteristic functions; the central limit theorem and its variants; the relation to the independence of this part. -->
 
-###<a href="articles_maths/martingales.html">Martingales</a>
+### <a href="articles_maths/martingales.html">Martingales</a>
 <!-- martingales and their properties; the optional stopping theorem; the martingale convergence theorem; the relation to the conditional expectation of this part. -->
 
-###<a href="articles_maths/markov-chains-and-processes.html">Markov Chains and Processes</a>
+### <a href="articles_maths/markov-chains-and-processes.html">Markov Chains and Processes</a>
 <!-- Markov chains and their properties; stationarity and recurrence; the relation to the measure-theoretic probability of this part. -->
 
-###<a href="articles_maths/brownian-motion-and-stochastic-calculus.html">Brownian Motion and Stochastic Calculus</a>
+### <a href="articles_maths/brownian-motion-and-stochastic-calculus.html">Brownian Motion and Stochastic Calculus</a>
 <!-- Brownian motion and its properties; the Itô integral and Itô's formula; the relation to the stochastic differential equations of this part. -->
 
-###<a href="articles_maths/functional-integration-and-the-rigorous-path-integral.html">Functional Integration and the Rigorous Path Integral</a>
+### <a href="articles_maths/functional-integration-and-the-rigorous-path-integral.html">Functional Integration and the Rigorous Path Integral</a>
 <!-- cylinder measures and the extension problem; Gaussian measures on a Hilbert space and the trace-class condition; the Wiener measure and its covariance kernel; the Cameron–Martin space; quasi-invariance and the Radon–Nikodym derivative; the Feynman–Kac formula and the Euclidean path integral; the Fresnel obstruction to the oscillatory path integral; time slicing and the Lie–Trotter limit. -->
 
-###<a href="articles_maths/ergodic-theory.html">Ergodic Theory</a>
+### <a href="articles_maths/ergodic-theory.html">Ergodic Theory</a>
 <!-- measure-preserving transformations; ergodicity and mixing; the Birkhoff and von Neumann ergodic theorems; the relation to the measure-theoretic probability of this part. -->
 
-###<a href="articles_maths/the-probabilistic-method.html">The Probabilistic Method</a>
+### <a href="articles_maths/the-probabilistic-method.html">The Probabilistic Method</a>
 <!-- the probabilistic method in combinatorics; random graphs and the first and second moment methods; the Lovász local lemma; the relation to the measure-theoretic probability of this part. -->
 
-###<a href="articles_maths/probabilistic-number-theory.html">Probabilistic Number Theory</a>
+### <a href="articles_maths/probabilistic-number-theory.html">Probabilistic Number Theory</a>
 <!-- the distribution of arithmetic functions; the Erdős–Kac theorem; the relation to the analytic number theory of this part and to the measure-theoretic probability of this part. -->
 
-###<a href="articles_maths/random-walks-on-groups.html">Random Walks on Groups</a>
+### <a href="articles_maths/random-walks-on-groups.html">Random Walks on Groups</a>
 <!-- random walks on groups and their properties; recurrence and transience; the relation to the geometric group theory of Part II and to the measure-theoretic probability of this part. -->
 
 ### Operator Theory
@@ -3814,28 +3928,28 @@
 
 ### Theory
 
-###<a href="articles_maths/topological-dynamics.html">Topological Dynamics</a>
+### <a href="articles_maths/topological-dynamics.html">Topological Dynamics</a>
 <!-- topological dynamical systems; recurrence and minimality; topological transitivity; the relation to the topological spaces of Part II and to the ergodic theory of this part. -->
 
-###<a href="articles_maths/smooth-dynamical-systems.html">Smooth Dynamical Systems</a>
+### <a href="articles_maths/smooth-dynamical-systems.html">Smooth Dynamical Systems</a>
 <!-- smooth dynamical systems and their properties; fixed points and periodic orbits; the relation to the ordinary differential equations of this part. -->
 
-###<a href="articles_maths/hyperbolic-dynamics-and-anosov-systems.html">Hyperbolic Dynamics and Anosov Systems</a>
+### <a href="articles_maths/hyperbolic-dynamics-and-anosov-systems.html">Hyperbolic Dynamics and Anosov Systems</a>
 <!-- hyperbolic sets and Anosov systems; stable and unstable manifolds; the relation to the smooth dynamical systems of this part; the ergodic theory of the hyperbolic systems and the Bowen–Ruelle measure. -->
 
-###<a href="articles_maths/random-dynamical-systems.html">Random Dynamical Systems</a>
+### <a href="articles_maths/random-dynamical-systems.html">Random Dynamical Systems</a>
 <!-- random dynamical systems; the multiplicative ergodic theorem; the relation to the dynamical systems of this part and to the stochastic differential equations. -->
 
-###<a href="articles_maths/bifurcation-theory.html">Bifurcation Theory</a>
+### <a href="articles_maths/bifurcation-theory.html">Bifurcation Theory</a>
 <!-- bifurcations and their classification; normal forms; the relation to the ordinary differential equations and to the dynamical systems of this part. -->
 
-###<a href="articles_maths/chaos-and-strange-attractors.html">Chaos and Strange Attractors</a>
+### <a href="articles_maths/chaos-and-strange-attractors.html">Chaos and Strange Attractors</a>
 <!-- chaos and its properties; strange attractors; the relation to the hyperbolic dynamics and to the topological dynamics of this part. -->
 
-###<a href="articles_maths/symbolic-dynamics.html">Symbolic Dynamics</a>
+### <a href="articles_maths/symbolic-dynamics.html">Symbolic Dynamics</a>
 <!-- symbolic dynamics and subshifts; the shift space and coding; the relation to the topological dynamics of this part. -->
 
-###<a href="articles_maths/dynamics-and-number-theory.html">Dynamics and Number Theory</a>
+### <a href="articles_maths/dynamics-and-number-theory.html">Dynamics and Number Theory</a>
 <!-- the dynamics of arithmetic origin; the Gauss map and continued fractions; the relation to the homogeneous dynamics of this part. -->
 
 ### Operator Theory
@@ -3935,19 +4049,19 @@
 
 ### Theory
 
-###<a href="articles_maths/curvature-and-geodesics.html">Curvature and Geodesics</a>
+### <a href="articles_maths/curvature-and-geodesics.html">Curvature and Geodesics</a>
 <!-- a Riemannian metric as a distance varying from point to point; length, the induced distance and the metric topology it recovers; geodesics as the locally distance-minimising curves and the geodesic equation; the exponential map of the metric, and its distinction from the exponential of a Lie algebra; the Levi-Civita connection and parallel transport; sectional, Ricci and scalar curvature, and what each measures; the three constant-curvature models, elliptic, Euclidean and hyperbolic, as the geometries of the three two-dimensional algebras; the Gauss–Bonnet theorem; the shape of the metric, which is what separates geometry from topology. -->
 
-###<a href="articles_maths/riemannian-geometry.html">Riemannian Geometry</a>
+### <a href="articles_maths/riemannian-geometry.html">Riemannian Geometry</a>
 <!-- Riemannian metrics and connections; the curvature tensors; the Gauss–Bonnet theorem; the relation to the curvature and geodesics of this part and to the dynamical systems of Part III. -->
 
-###<a href="articles_maths/metric-geometry.html">Metric Geometry</a>
+### <a href="articles_maths/metric-geometry.html">Metric Geometry</a>
 <!-- metric geometry and its properties. -->
 
-###<a href="articles_maths/pseudo-riemannian-and-lorentzian-geometry.html">Pseudo-Riemannian and Lorentzian Geometry</a>
+### <a href="articles_maths/pseudo-riemannian-and-lorentzian-geometry.html">Pseudo-Riemannian and Lorentzian Geometry</a>
 <!-- pseudo-Riemannian metrics and their properties; the relation to the Riemannian geometry and to the Lorentzian geometry of this part; the Lorentzian case of signature $(3,1)$ and its causal structure. -->
 
-###<a href="articles_maths/gromov-hausdorff-convergence.html">Gromov–Hausdorff Convergence</a>
+### <a href="articles_maths/gromov-hausdorff-convergence.html">Gromov–Hausdorff Convergence</a>
 <!-- Gromov–Hausdorff convergence and its properties; the relation to the metric geometry and to the Riemannian geometry of this part. -->
 
 ### Operator Theory
@@ -4008,9 +4122,6 @@
 ### <a href="articles_maths/the-three-two-dimensional-algebras-and-the-three-kinds-of-rotation.html">The Three Two-Dimensional Algebras and the Three Kinds of Rotation</a>
 <!-- the same vector space $\mathbb{R}^2$ carries three distinct algebra structures, and the relation of the generator to $1$ selects the geometry: $\mathbb{C}$ with $i^2=-1$ gives the elliptic rotation and the compact group $U(1)\cong SO(2)$; the split complex numbers with $j^2=+1$ give the hyperbolic rotation and $SO(1,1)$; the dual numbers with $\epsilon^2=0$ give the parabolic rotation and the shear. For each: the units, the norm preserved, the parametrisation, the orbit of a point, and the fixed lines. Why a rotation implemented by multiplication needs exactly two dimensions and a multiplicative norm, why dimension three forces a non-commutative algebra, and how the sign of the square of the generator selects a definite, an indefinite or a degenerate geometry. -->
 
-### <a href="articles_maths/isometries-and-orthogonal-transformations.html">Isometries and Orthogonal Transformations</a>
-<!-- isometries and similarities, $O(V,Q)$, reflections, the Cartan–Dieudonné theorem, $SO(V,Q)$. -->
-
 ### <a href="articles_maths/the-rotation-group-and-orientation.html">The Rotation Group and Orientation</a>
 <!-- the rotation group $SO(V,Q)$ as the kernel of the determinant on $O(V,Q)$; orientation of a space and of a form; rotations versus reflections and the Cartan–Dieudonné parity; the definite case and the notion of angle; the plane case $SO(2)$ as the unit circle; the rotation group of $\mathbb{R}^3$ and its axis; the normal form as a sequence of planar rotation blocks, quoted up to conjugation in $O(V,Q)$ with the finer classes in $SO(V,Q)$ named. -->
 
@@ -4020,7 +4131,7 @@
 ### <a href="articles_maths/matrix-groups-and-classical-groups.html">Matrix Groups and Classical Groups</a>
 <!-- $GL_n$, $SL_n$, $O(n)$, $SO(n)$, $U(n)$, $SU(n)$, $Sp(n)$, determinants, orthogonal and unitary conditions, $SU(2)$ as the unit quaternions, the 2-to-1 cover $SU(2)\to SO(3)$, $SU(2)\times SU(2)\to SO(4)$. -->
 
-###<a href="articles_maths/symmetry-point-and-crystallographic-groups.html">Symmetry, Point and Crystallographic Groups</a>
+### <a href="articles_maths/symmetry-point-and-crystallographic-groups.html">Symmetry, Point and Crystallographic Groups</a>
 <!-- the symmetry group of a figure in Euclidean space as a subgroup of the isometry group; the orthogonal group and the reflections and rotations it contains, with the distance and the measure these require; the finite point groups and their classification in two and three dimensions; the polyhedral and dihedral families and their realisation inside $O(3)$; the discrete and crystallographic groups of Euclidean space, their lattices and the Bieberbach theorems; the classical groups as the continuous families of symmetry, with forward references to the articles on $O$, $U$ and $Sp$. -->
 
 ### Operator Theory
@@ -4093,22 +4204,22 @@
 
 ### Theory
 
-###<a href="articles_maths/euclidean-geometry.html">Euclidean Geometry</a>
+### <a href="articles_maths/euclidean-geometry.html">Euclidean Geometry</a>
 <!-- Euclidean geometry and its properties; the relation to the Riemannian geometry of this part and to the isometries of this part. -->
 
-###<a href="articles_maths/spherical-geometry.html">Spherical Geometry</a>
+### <a href="articles_maths/spherical-geometry.html">Spherical Geometry</a>
 <!-- spherical geometry and its properties; the relation to the Riemannian geometry of this part. -->
 
-###<a href="articles_maths/hyperbolic-geometry.html">Hyperbolic Geometry</a>
+### <a href="articles_maths/hyperbolic-geometry.html">Hyperbolic Geometry</a>
 <!-- hyperbolic geometry and its properties; the four models and their isometries, with the Weierstrass coordinates of the hyperboloid and the Cayley–Klein metric of the Beltrami–Klein ball; the geodesics, the trigonometry and the area, the isometry group and the classification of its elements, the discrete groups and the space forms; the relation to the Riemannian geometry of this part and to the three-manifolds. -->
 
-###<a href="articles_maths/non-euclidean-geometry.html">Non-Euclidean Geometry</a>
+### <a href="articles_maths/non-euclidean-geometry.html">Non-Euclidean Geometry</a>
 <!-- non-Euclidean geometry and its properties; the relation to the hyperbolic and spherical geometry of this part. -->
 
-###<a href="articles_maths/conformal-geometry.html">Conformal Geometry</a>
+### <a href="articles_maths/conformal-geometry.html">Conformal Geometry</a>
 <!-- conformal geometry and the conformal group; the relation to the Riemannian geometry and to the twistor construction. -->
 
-###<a href="articles_maths/mobius-and-lie-sphere-geometry.html">Möbius and Lie Sphere Geometry</a>
+### <a href="articles_maths/mobius-and-lie-sphere-geometry.html">Möbius and Lie Sphere Geometry</a>
 <!-- Möbius geometry and its properties; the relation to the conformal geometry and to the Lie sphere geometry of this part; the Lie sphere geometry and its relation to the Möbius geometry. -->
 
 ### Operator Theory
@@ -4188,40 +4299,40 @@
 
 ### Theory
 
-###<a href="articles_maths/grassmannians-and-stiefel-manifolds.html">Grassmannians and Stiefel Manifolds</a>
+### <a href="articles_maths/grassmannians-and-stiefel-manifolds.html">Grassmannians and Stiefel Manifolds</a>
 <!-- Grassmannians and their geometry; the Stiefel manifolds and their fibration over the Grassmannians. -->
 
-###<a href="articles_maths/homogeneous-spaces.html">Homogeneous Spaces</a>
+### <a href="articles_maths/homogeneous-spaces.html">Homogeneous Spaces</a>
 <!-- homogeneous spaces $G/H$; the representation-theoretic and the geometric treatments are brought together here. -->
 
 ### <a href="articles_maths/transformation-groups-and-the-erlangen-program.html">Transformation Groups and the Erlangen Program</a>
 <!-- Klein's principle: a geometry is the study of the invariants of a transformation group, and a Klein geometry is a pair $(G,H)$ with $G$ a Lie group and $H$ a closed subgroup together with the homogeneous space $G/H$, as in *Homogeneous Spaces* and *Lie Groups*; Euclidean, spherical, hyperbolic, affine, projective, conformal and Möbius geometry each read through the group that defines it; the correspondence $G \to \operatorname{Aut}(X)$ and the hierarchy $\operatorname{Sym}(X) \supset \operatorname{Aut}(X, \text{structure})$ of *Transformation Groups*; the limits of the principle, a Riemannian manifold of general curvature not being a Klein geometry, and the place of the principle in the classification of the geometries of constant curvature. -->
 
-###<a href="articles_maths/symmetric-spaces.html">Symmetric Spaces</a>
+### <a href="articles_maths/symmetric-spaces.html">Symmetric Spaces</a>
 <!-- symmetric spaces and their classification; the relation to the homogeneous spaces and to the Lie groups of Part III. -->
 
-###<a href="articles_maths/flag-manifolds.html">Flag Manifolds</a>
+### <a href="articles_maths/flag-manifolds.html">Flag Manifolds</a>
 <!-- flag manifolds and their geometry; the relation to the homogeneous spaces of this part and to the representation theory of Part II. -->
 
-###<a href="articles_maths/symplectic-geometry.html">Symplectic Geometry</a>
+### <a href="articles_maths/symplectic-geometry.html">Symplectic Geometry</a>
 <!-- symplectic manifolds and their properties; the Darboux theorem; the relation to the symplectic forms of Part II and to the Hamiltonian systems of Part III. -->
 
-###<a href="articles_maths/contact-geometry.html">Contact Geometry</a>
+### <a href="articles_maths/contact-geometry.html">Contact Geometry</a>
 <!-- contact manifolds and their properties; the relation to the symplectic geometry and to the differential forms of Part III. -->
 
-###<a href="articles_maths/poisson-geometry.html">Poisson Geometry</a>
+### <a href="articles_maths/poisson-geometry.html">Poisson Geometry</a>
 <!-- Poisson manifolds and their properties; the relation to the symplectic geometry of this part and to the Poisson algebras of Part I. -->
 
-###<a href="articles_maths/lie-poisson-reduction-and-the-euler-poincare-equation.html">Lie–Poisson Reduction and the Euler–Poincaré Equation</a>
+### <a href="articles_maths/lie-poisson-reduction-and-the-euler-poincare-equation.html">Lie–Poisson Reduction and the Euler–Poincaré Equation</a>
 <!-- the trivialisation of the cotangent bundle of a Lie group and the reduction $T^*G/G\cong\mathfrak g^*$; the reduced bracket and its derivation, with the linearity, the Jacobi identity and the rank as the codimension of the coadjoint orbit; the coadjoint convention and the sign of the reduced equation, with the fork between the bracket of *Poisson Geometry* and the Euler top of *Lagrangian and Hamiltonian Systems*; the Lie–Poisson equation $\dot\xi=\mathrm{ad}^*_{dH}\xi$ and the Casimirs as the invariants of the coadjoint representation; the reduction of Hamilton's principle to a Lagrangian on the Lie algebra and the Euler–Poincaré equation $\frac{d}{dt}\frac{\delta\ell}{\delta\xi}=\mathrm{ad}^*_\xi\frac{\delta\ell}{\delta\xi}$, with the reconstruction of the configuration variable; the rigid body as the geodesic equation of a left-invariant metric and the agreement of the two derivations; the semidirect product bracket, the heavy top and its two Casimirs; the volume-preserving diffeomorphism group, the vorticity bracket, the Euler equation of an ideal incompressible flow and the enstrophy Casimir. -->
 
-###<a href="articles_maths/kahler-geometry.html">Kähler Geometry</a>
+### <a href="articles_maths/kahler-geometry.html">Kähler Geometry</a>
 <!-- Kähler manifolds and their properties; the relation to the complex manifolds and to the symplectic geometry of this part. -->
 
-###<a href="articles_maths/hermitian-geometry-and-almost-complex-structures.html">Hermitian Geometry and Almost Complex Structures</a>
+### <a href="articles_maths/hermitian-geometry-and-almost-complex-structures.html">Hermitian Geometry and Almost Complex Structures</a>
 <!-- Hermitian metrics and their properties; the relation to the Kähler geometry and to the complex manifolds of this part; the almost complex structures and the integrability condition. -->
 
-###<a href="articles_maths/calabi-yau-manifolds.html">Calabi–Yau Manifolds</a>
+### <a href="articles_maths/calabi-yau-manifolds.html">Calabi–Yau Manifolds</a>
 <!-- Calabi–Yau manifolds and their properties; the relation to the Kähler geometry of this part. -->
 
 ### Operator Theory
@@ -4306,25 +4417,25 @@
 
 ### Theory
 
-###<a href="articles_maths/quaternionic-geometry.html">Quaternionic Geometry</a>
+### <a href="articles_maths/quaternionic-geometry.html">Quaternionic Geometry</a>
 <!-- quaternionic manifolds and their properties. -->
 
-###<a href="articles_maths/hyperkahler-geometry.html">Hyperkähler Geometry</a>
+### <a href="articles_maths/hyperkahler-geometry.html">Hyperkähler Geometry</a>
 <!-- hyperkähler manifolds and their properties. -->
 
-###<a href="articles_maths/g2-and-spin7-manifolds.html">G2 and Spin(7) Manifolds</a>
+### <a href="articles_maths/g2-and-spin7-manifolds.html">G2 and Spin(7) Manifolds</a>
 <!-- G2 and Spin(7) manifolds and their properties; the relation to the exceptional holonomy and to the Clifford algebras of Part II. -->
 
-###<a href="articles_maths/spin-geometry.html">Spin Geometry</a>
+### <a href="articles_maths/spin-geometry.html">Spin Geometry</a>
 <!-- spin structures and spin manifolds; the Dirac operator and the Lichnerowicz formula; the relation to the Clifford algebras of Part II and to the index theory of this part; the analytic theory of the operator itself is treated in Part III. -->
 
-###<a href="articles_maths/supergeometry.html">Supergeometry</a>
+### <a href="articles_maths/supergeometry.html">Supergeometry</a>
 <!-- supermanifolds and their geometry; the relation to the superalgebras of Part I and to the graded structures of Part II. -->
 
 ### <a href="articles_maths/the-conformal-model-of-euclidean-space.html">The Conformal Model of Euclidean Space</a>
 <!-- the space $\mathbb{R}^{n+1,1}$ with the two null vectors $n$ and $n_\infty$ and $B(n,n_\infty)=-1$; the point vector $X=x+\tfrac12|x|^2n_\infty+n$ with $X^2=0$ and $B(X,Y)=-\tfrac12|x-y|^2$; spheres and planes as vectors with the incidence $B(X,s)=0$ and the join of blades; the conformal group $O(n+1,1)/\{\pm1\}$ and the count of its dimension; the transformations as versors, in particular the translation $1+\tfrac12tn_\infty$; the Lorentzian case $\mathrm{Spin}(4,2)\cong SU(2,2)$; the boundary against conformal geometry. -->
 
-###<a href="articles_maths/projective-geometry.html">Projective Geometry</a>
+### <a href="articles_maths/projective-geometry.html">Projective Geometry</a>
 <!-- projective geometry and its properties; the relation to the projective spaces of Part IV (*Grassmannians and Stiefel Manifolds*, *Flag Manifolds*) and to the Klein correspondence; the projective spaces and their coordinates. -->
 
 ### <a href="articles_maths/projective-geometric-algebra-and-dual-quaternions.html">Projective Geometric Algebra and Dual Quaternions</a>
@@ -4412,19 +4523,19 @@
 
 ### Theory
 
-###<a href="articles_maths/geometric-measure-theory.html">Geometric Measure Theory</a>
+### <a href="articles_maths/geometric-measure-theory.html">Geometric Measure Theory</a>
 <!-- rectifiable sets and currents; the area and coarea formulae; the plateau problem. -->
 
-###<a href="articles_maths/harmonic-maps.html">Harmonic Maps</a>
+### <a href="articles_maths/harmonic-maps.html">Harmonic Maps</a>
 <!-- harmonic maps between Riemannian manifolds; the energy functional; the relation to the calculus of variations of Part III and to the Riemannian geometry of Part IV. -->
 
-###<a href="articles_maths/the-geodesic-flow.html">The Geodesic Flow</a>
+### <a href="articles_maths/the-geodesic-flow.html">The Geodesic Flow</a>
 <!-- the geodesic flow of a Riemannian manifold; its ergodic properties; the relation to the Riemannian geometry of Part IV and to the hyperbolic dynamics of Part III. -->
 
-###<a href="articles_maths/ricci-flow.html">Ricci Flow</a>
+### <a href="articles_maths/ricci-flow.html">Ricci Flow</a>
 <!-- the Ricci flow equation; the evolution of curvature; the relation to the Riemannian geometry of Part IV and to the partial differential equations of Part III. -->
 
-###<a href="articles_maths/mean-curvature-flow.html">Mean Curvature Flow</a>
+### <a href="articles_maths/mean-curvature-flow.html">Mean Curvature Flow</a>
 <!-- the mean curvature flow and its properties; the evolution of hypersurfaces; the relation to the partial differential equations of Part III and to the minimal surfaces. -->
 
 ### <a href="articles_maths/the-atiyah-singer-index-theorem-and-k-theory.html">The Atiyah–Singer Index Theorem and K-Theory</a>
@@ -4476,7 +4587,7 @@
 
 ### Theory
 
-###<a href="articles_maths/fractal-geometry.html">Fractal Geometry</a>
+### <a href="articles_maths/fractal-geometry.html">Fractal Geometry</a>
 <!-- fractals and their properties; the Hausdorff dimension; the relation to the metric geometry of this part and to the dynamical systems of Part III. -->
 
 ### <a href="articles_maths/rectifiability-and-the-geometry-of-fractal-curves.html">Rectifiability and the Geometry of Fractal Curves</a>
@@ -4777,54 +4888,54 @@
 
 ### Algebra
 
-###<a href="articles_maths/boolean-algebras-and-lattices.html">Boolean Algebras and Lattices</a>
+### <a href="articles_maths/boolean-algebras-and-lattices.html">Boolean Algebras and Lattices</a>
 <!-- lattices and their two operations; distributivity, complements and the resulting laws; Boolean algebras as the algebraic form of propositional logic; the order and the duality principle; algebraic normal form and the representation of a Boolean function; the connection with $\mathbb{Z}/2$ and with the algebra of subsets of a set; the elementary constructions of product and quotient; the observation that this system supports an algebra but no analysis. -->
 
-###<a href="articles_maths/heyting-algebras-and-intuitionistic-logic.html">Heyting Algebras and Intuitionistic Logic</a>
+### <a href="articles_maths/heyting-algebras-and-intuitionistic-logic.html">Heyting Algebras and Intuitionistic Logic</a>
 <!-- Heyting algebras and their properties; the algebraic semantics of intuitionistic logic; the relation to the Boolean algebras of this system and to the proof theory of Part I. -->
 
-###<a href="articles_maths/mv-algebras-and-many-valued-logic.html">MV-Algebras and Many-Valued Logic</a>
+### <a href="articles_maths/mv-algebras-and-many-valued-logic.html">MV-Algebras and Many-Valued Logic</a>
 <!-- MV-algebras and their properties; the algebraic semantics of Łukasiewicz logic; the relation to the Boolean algebras of this system. -->
 
-###<a href="articles_maths/effect-algebras-and-orthomodular-lattices.html">Effect Algebras and Orthomodular Lattices</a>
+### <a href="articles_maths/effect-algebras-and-orthomodular-lattices.html">Effect Algebras and Orthomodular Lattices</a>
 <!-- effect algebras and orthomodular lattices; the algebraic content of the non-distributive logic; the relation to the Boolean algebras of this system; the mathematical content only. -->
 
-###<a href="articles_maths/quantales-and-frames.html">Quantales and Frames</a>
+### <a href="articles_maths/quantales-and-frames.html">Quantales and Frames</a>
 <!-- quantales and frames; the pointfree topology; the relation to the Boolean algebras of this system and to the topological spaces of Part II. -->
 
 ### Topology
 
-###<a href="articles_maths/boolean-rings-and-stone-duality.html">Boolean Rings and Stone Duality</a>
+### <a href="articles_maths/boolean-rings-and-stone-duality.html">Boolean Rings and Stone Duality</a>
 <!-- the Boolean ring of a Boolean algebra, in which every element satisfies $x^2=x$ and which is an algebra over $\mathbb{Z}/2$; ideals, filters and the correspondence between them; ultrafilters and the Stone space; the topology on the spectrum and its total disconnectedness and compactness; Stone duality between Boolean algebras and Boolean spaces; the first instance in this corpus of the algebra–topology dictionary later completed by Gelfand duality. -->
 
 ## Natural Numbers
 
 ### Algebra
 
-###<a href="articles_maths/the-natural-numbers.html">The Natural Numbers ($\mathbb{N}$)</a>
+### <a href="articles_maths/the-natural-numbers.html">The Natural Numbers ($\mathbb{N}$)</a>
 <!-- the Peano axioms; induction and recursion as the defining principles; the recursive definitions of addition, multiplication and exponentiation and the proofs of their laws; the order and its compatibility with the operations; $\mathbb{N}$ as a commutative monoid under addition and a monoid under multiplication, with no additive inverses and no subtraction; its embedding into $\mathbb{Z}$; the smallest infinite set and the index set of every sequence in this corpus. -->
 
-###<a href="articles_maths/peano-arithmetic-and-model-theory.html">Peano Arithmetic and Model Theory</a>
+### <a href="articles_maths/peano-arithmetic-and-model-theory.html">Peano Arithmetic and Model Theory</a>
 <!-- Peano arithmetic as a first-order theory; non-standard models; the incompleteness theorems; the relation to the model theory of Part I. -->
 
-###<a href="articles_maths/computability-theory.html">Computability Theory</a>
+### <a href="articles_maths/computability-theory.html">Computability Theory</a>
 <!-- computable functions and Turing machines; decidability and undecidability; the halting problem and the recursion theorems; the relation to the formal logic of Part I. -->
 
 ### Special Functions
 
-###<a href="articles_maths/combinatorial-functions-and-generating-functions.html">Combinatorial Functions and Generating Functions</a>
+### <a href="articles_maths/combinatorial-functions-and-generating-functions.html">Combinatorial Functions and Generating Functions</a>
 <!-- binomial and multinomial coefficients and the Pascal relation; the binomial theorem in a commutative ring where the factorial invertibility permits it; permutations, combinations, partitions and compositions; ordinary and exponential generating functions as elements of the formal power series ring; the convolution product of sequences and the algebra of generating functions; the role of $\mathbb{N}$ as the index set of every series and power series in this corpus. -->
 
 ## Integers
 
 ### Algebra
 
-###<a href="articles_maths/the-integers.html">The Integers ($\mathbb{Z}$)</a>
+### <a href="articles_maths/the-integers.html">The Integers ($\mathbb{Z}$)</a>
 <!-- the construction of $\mathbb{Z}$ from $\mathbb{N}$ as the Grothendieck group of its additive monoid; the extension of the order and its compatibility with the operations; the division algorithm and the resulting Euclidean structure; $\mathbb{Z}$ as the initial ring and the prime subring of every unital ring; primes, divisibility and unique factorisation as the model for the general theory of Part I; the lattice of ideals and the arithmetic of congruences. -->
 
 ### Applications
 
-###<a href="articles_maths/modular-arithmetic-and-the-ring-of-residues.html">Modular Arithmetic and the Ring of Residues</a>
+### <a href="articles_maths/modular-arithmetic-and-the-ring-of-residues.html">Modular Arithmetic and the Ring of Residues</a>
 <!-- the quotient $\mathbb{Z}/n$ and the ring of residues; congruences and their compatibility with the operations; the Chinese remainder theorem; units, the group $(\mathbb{Z}/n)^\times$, the Euler function and Euler's and Fermat's theorems; the criterion for $\mathbb{Z}/n$ to be a field; the first examples of quotient rings, of finite rings and of a ring that is not an integral domain. -->
 
 ## Rational Numbers
@@ -4836,7 +4947,7 @@
 
 ### Analysis
 
-###<a href="articles_maths/diophantine-approximation-and-continued-fractions.html">Diophantine Approximation and Continued Fractions</a>
+### <a href="articles_maths/diophantine-approximation-and-continued-fractions.html">Diophantine Approximation and Continued Fractions</a>
 <!-- the approximation of real numbers by rationals; the continued fraction expansion and its convergents; the recurrence for the convergents, the best-approximation property and the periodicity of the expansion for quadratic irrationals; Hurwitz's theorem and the golden ratio as the extremal case; Liouville numbers and lower bounds on the quality of approximation; the first place in the corpus where the distance between $\mathbb{Q}$ and $\mathbb{R}$ is measured rather than merely asserted. -->
 
 ## Real Numbers
@@ -4944,7 +5055,7 @@
 ### <a href="articles_maths/complex-analysis.html">Complex Analysis</a>
 <!-- the complex plane; limits and continuity; complex differentiability; conformal maps; integration; series representations; singularities; applications of the residue theorem. -->
 
-###<a href="articles_maths/several-complex-variables.html">Several Complex Variables</a>
+### <a href="articles_maths/several-complex-variables.html">Several Complex Variables</a>
 <!-- holomorphic functions of several variables; domains of holomorphy; the Hartogs phenomenon; pseudoconvexity; the relation to the complex analysis of this system and to the complex manifolds of Part IV. -->
 
 ### <a href="articles_maths/complex-integration.html">Complex Integration</a>
@@ -5272,7 +5383,7 @@
 ### <a href="articles_maths/quaternion-automorphisms-and-derivations.html">Quaternion Automorphisms and Derivations</a>
 <!-- the automorphisms of $\mathbb{H}$ over $\mathbb{R}$ as the inner automorphisms, and the identification of their group with the rotation group of the vector subspace; the derivations and their identification with the vector subspace under the bracket; the contrast with the biquaternion case, where the automorphism group is the projective Lorentz group; the Lie algebra statement. -->
 
-###<a href="articles_maths/quaternion-geometry.html">Quaternion Geometry</a>
+### <a href="articles_maths/quaternion-geometry.html">Quaternion Geometry</a>
 <!-- quaternion geometry and its properties; the relation to the quaternion algebra and to the quaternion rotations and reflections of this system; the relation to the quaternionic geometry of Part IV. -->
 
 ### <a href="articles_maths/riemannian-quaternions.html">Riemannian Quaternions</a>
@@ -5429,526 +5540,684 @@
 #### Biquaternions as Linear Spaces
 
 ### <a href="articles_maths/biquaternions-as-a-vector-space-over-c.html">Biquaternions as a Vector Space over $\mathbb{C}$</a>
-
-<!-- $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as a $\mathbb{C}$-vector space: the additive group and the complex scalar action, of dimension four; the basis $e_0,e_1,e_2,e_3$ and the central imaginary $i$; the three coordinate systems real, complex and quaternionic; the four conjugations as linear and antilinear maps, the group they form being *The Group of Involutions*; and the six distinguished subspaces, named only and defined and tabulated in *Introduction to the Six Subspaces*. The two ring-based readings, the bimodule over $\mathbb{H}$ and the module over $\mathbb{B}$ itself, are *Biquaternions as a Bimodule over $\mathbb{H}$* and *Biquaternions as a Module over Itself*; the three decompositions the conjugations cut out are *Decompositions Along the Six Subspaces*; and the algebra the product defines over $\mathbb{C}$, its multiplication table, the centre as the base-ring criterion and the base-ring question are *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*, the multiplication itself being *The Four Biquaternion Complex Products* and purged from this article. The Hermitian form $\tilde{Q}\tilde{Q}^{*}$ and the inner product are a form and are purged from this article to *The Hermitian Form on the Biquaternion Algebra*. The same set over the real scalars is *Biquaternions as a Vector Space over $\mathbb{R}$*. -->
+<!-- $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as a $\mathbb{C}$-vector space: the additive group and the complex scalar action, of dimension four; the basis $e_0,e_1,e_2,e_3$ and the central imaginary $i$; the three coordinate systems real, complex and quaternionic; the four conjugations as linear and antilinear maps, the group they form being *The Group of Involutions*; and the six distinguished subspaces, named only and defined and tabulated in *Introduction to the Six Subspaces*. The two ring-based readings, the bimodule over $\mathbb{H}$ and the module over $\mathbb{B}$ itself, are *Biquaternions as a Bimodule over $\mathbb{H}$* and *Modules over the General Plain Algebra of Biquaternions*; the three decompositions the conjugations cut out are *Decompositions Along the Six Subspaces*; and the algebra the product defines over $\mathbb{C}$, its multiplication table, the centre as the base-ring criterion and the base-ring question are *Introduction to the General Plain Algebra of Biquaternions*, the multiplication itself being *The Four Biquaternion Complex Products* and purged from this article. The Hermitian form $\tilde{Q}\tilde{Q}^{*}$ and the inner product are a form and are purged from this article to *Biquaternion Norm and Invertibility*. The same set over the real scalars is *Biquaternions as a Vector Space over $\mathbb{R}$*. -->
 
 ### <a href="articles_maths/biquaternions-as-a-vector-space-over-r.html">Biquaternions as a Vector Space over $\mathbb{R}$</a>
-
 <!-- the same set one scalar field lower: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ over the subfield $\mathbb{R}$ by restriction of scalars, the additive group and the elements of the complex reading, of real dimension eight on the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, twice the complex dimension; the central imaginary as the complex structure $J$, real-linear with $J^2=-\mathrm{id}$ and carrying the whole gap, the complex action being the real action together with $J$; the real-linear maps classified by the commutator with $J$, the $\mathbb{C}$-linear ones exactly those commuting with it and the antilinear ones those anticommuting, with $\operatorname{End}_\mathbb{R}(\mathbb{B})\cong M_8(\mathbb{R})$ against $\operatorname{End}_\mathbb{C}(\mathbb{B})\cong M_4(\mathbb{C})$; the real forms $V$, real subspaces of dimension four meeting $JV$ only at zero, with $\mathbb{B}=V\oplus JV$ and $\mathbb{C}\otimes_\mathbb{R}V\cong\mathbb{B}$, so that the complex reading is recovered by extension of scalars and the choice of $V$ is data beyond it, the real-coefficient quaternion subspace being the example; and the six distinguished subspaces read over $\mathbb{R}$, the centre and the vector subspace the only two closed under $J$ and the other four real forms exchanged in pairs. The product stays $\mathbb{R}$-bilinear, so the four products of *The Four Biquaternion Complex Products* are read unchanged and the algebra over $\mathbb{R}$ is *Biquaternions as an Algebra over $\mathbb{R}$*. The three coordinate systems and the four conjugation formulas are *Biquaternions as a Vector Space over $\mathbb{C}$*. -->
 
 ### <a href="articles_maths/the-group-of-involutions.html">The Group of Involutions</a>
-
 <!-- the two commuting involutive anti-automorphisms of the algebra, the Hermitian conjugation ${}^{*}$ and the quaternion conjugation ${}^{\natural}$, the first the C*-involution and the second the extra involution, linear where ${}^{*}$ is conjugate-linear, both reversing the order of the product; their composition rules and the order-two property; the Klein four-group $G=\{\mathrm{id},{}^{*},{}^{\natural},\bar{\cdot}\}\cong V_4$ they generate with the identity and their composite the complex conjugation, its Cayley table and its abelian character; the subgroup structure, the three order-two subgroups, any two non-identity elements generating the group, the two presentations by generators, and the direct-product form $G=\{\mathrm{id},{}^{*}\}\times\{\mathrm{id},{}^{\natural}\}$; and the exclusion of the reversal $\flat=-{}^{*}$, an anti-automorphism only up to the central sign; the composition table with the reversal, whose entries are the maps of the group and their negatives; and the orbits of the group on the algebra, of size one, two or four by the orbit–stabilizer count, with worked elements of each size. The formulas of the conjugations are *Biquaternions as a Vector Space over $\mathbb{C}$* and the lattice of the fixed spaces is *Comparison of the Six Subspaces*. -->
 
 ### <a href="articles_maths/introduction-to-the-six-subspaces.html">Introduction to the Six Subspaces</a>
-
-<!-- the entry point of the group that treats the six distinguished subspaces of $\mathbb{B}$, one to a section: the centre $\mathbb{C}_{\mathbb{B}}$, defined as the fixed space of quaternion conjugation, the set of elements with vanishing vector part, real basis $e_0, ie_0$, dimension $2$, the centre of the algebra and a field; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the anti-fixed space of quaternion conjugation and the kernel of the scalar part, real basis $e_1,e_2,e_3,ie_1,ie_2,ie_3$, dimension $6$, a Lie algebra and not a subalgebra; the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the fixed space of complex conjugation, the elements with real coefficients, real basis $e_0,e_1,e_2,e_3$, dimension $4$, a division subalgebra; the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the anti-fixed space of complex conjugation, the elements with purely imaginary coefficients, real basis $ie_0,ie_1,ie_2,ie_3$, dimension $4$, a module over $\mathbb{H}_{\mathbb{B}}$; the Hermitian subspace $\mathbb{M}_+$, the fixed space of Hermitian conjugation, real scalar part with purely imaginary vector part, real basis $e_0,ie_1,ie_2,ie_3$, dimension $4$, a Jordan algebra under the symmetrized product; and the anti-Hermitian subspace $\mathbb{M}_-$, the anti-fixed space of Hermitian conjugation and the fixed space of the reversal $\flat=-{}^{*}$, purely imaginary scalar part with real vector part, real basis $ie_0,e_1,e_2,e_3$, dimension $4$, a real Lie algebra; each section giving the defining condition, the coordinate condition, the real basis, the dimension and the role, and the six also tabulated at a glance in the introduction. The four conjugations themselves, the group they form and the two spaces each defines are *Biquaternions as a Vector Space over $\mathbb{C}$*, *The Group of Involutions* and *Comparison of the Six Subspaces*; the coordinate blocks, the pairwise intersections, the sums, the action of the conjugations as sign patterns and the action of the central imaginary unit are *Comparison of the Six Subspaces*; the product and its two halves, the Jordan and Lie algebras, the units, the zero divisors, the idempotents and projections, the ideals and the Peirce decomposition, the roots of minus one, the two matrix representations, the forms and the analysis are the thematic articles of the group. This article replaces the six articles that treated the subspaces one at a time. -->
+<!-- the entry point of the group that treats the six distinguished subspaces of $\mathbb{B}$, one to a section: the centre $\mathbb{C}_{\mathbb{B}}$, defined as the fixed space of quaternion conjugation, the set of elements with vanishing vector part, real basis $e_0, ie_0$, dimension $2$, the centre of the algebra and a field; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the anti-fixed space of quaternion conjugation and the kernel of the scalar part, real basis $e_1,e_2,e_3,ie_1,ie_2,ie_3$, dimension $6$, a Lie algebra and not a subalgebra; the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the fixed space of complex conjugation, the elements with real coefficients, real basis $e_0,e_1,e_2,e_3$, dimension $4$, a division subalgebra; the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the anti-fixed space of complex conjugation, the elements with purely imaginary coefficients, real basis $ie_0,ie_1,ie_2,ie_3$, dimension $4$, a module over $\mathbb{H}_{\mathbb{B}}$; the Hermitian subspace $\mathbb{M}_+$, the fixed space of Hermitian conjugation, real scalar part with purely imaginary vector part, real basis $e_0,ie_1,ie_2,ie_3$, dimension $4$, a Jordan algebra under the symmetrized product; and the anti-Hermitian subspace $\mathbb{M}_-$, the anti-fixed space of Hermitian conjugation and the fixed space of the reversal $\flat=-{}^{*}$, purely imaginary scalar part with real vector part, real basis $ie_0,e_1,e_2,e_3$, dimension $4$, a real Lie algebra; each section giving the defining condition, the coordinate condition, the real basis, the dimension and the role, and the six also tabulated at a glance in the introduction. The four conjugations themselves, the group they form and the two spaces each defines are *Biquaternions as a Vector Space over $\mathbb{C}$*, *The Group of Involutions* and *Comparison of the Six Subspaces*; the coordinate blocks, the pairwise intersections, the sums, the action of the conjugations as sign patterns and the action of the central imaginary unit are *Comparison of the Six Subspaces*; the product and its two halves, the Jordan and Lie algebras, the units, the zero divisors, the idempotents and projections, the ideals and the Peirce decomposition, the roots of minus one, the two matrix representations, the forms and the analysis are the thematic articles of the group. This article replaces the six articles that treated the subspaces one at a time; it also carries the elements of the six, with the criterion table of units and zero divisors, and their structure, with the idempotents confined to the Hermitian subspace and the minimal ideals of a Hermitian idempotent. -->
 
 ### <a href="articles_maths/decompositions-along-the-six-subspaces.html">Decompositions Along the Six Subspaces</a>
-
 <!-- the three direct-sum decompositions of $\mathbb{B}$ cut out by the conjugations, each a fixed space paired with an anti-fixed space of the six distinguished subspaces; the quaternion decomposition $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ from complex conjugation, of dimensions $4+4$, expressing $\tilde{Q}=\tilde{Q}_r+i\tilde{Q}_i$ as a real quaternion plus the scalar imaginary times another, the real and imaginary parts of the complexification, with $\tilde{Q}_r=\frac12(\tilde{Q}+\bar{\tilde{Q}})$ and $\tilde{Q}_i=\frac{1}{2i}(\tilde{Q}-\bar{\tilde{Q}})$; the Hermitian decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ from the Hermitian conjugation, of dimensions $4+4$, with $\tilde{Q}_\pm=\frac12(\tilde{Q}\pm\tilde{Q}^{*})$, the algebraic analogue of real and imaginary parts, whose halves are not subalgebras; the centre–vector decomposition $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$ from quaternion conjugation, of dimensions $2+6$, with $\tilde{Q}_{\mathrm{c}}=\frac12(\tilde{Q}+\tilde{Q}^{\natural})$ and $\tilde{Q}_{\mathrm{v}}=\frac12(\tilde{Q}-\tilde{Q}^{\natural})$, the splitting into scalar and pure vector parts and the one whose halves have unequal dimension; and the proof that there are exactly three, the reversal $\flat=-{}^{*}$ reproducing the eigenspaces of ${}^{*}$ with the signs exchanged. The six subspaces one to a section are *Introduction to the Six Subspaces*; the blocks, the pairwise intersections, the sums and the sign patterns are *Comparison of the Six Subspaces*. -->
 
 ### <a href="articles_maths/comparison-of-the-six-subspaces.html">Comparison of the Six Subspaces</a>
-
 <!-- the reference article of the group: the three decompositions of $\mathbb{B}$ displayed as a table of involution, fixed space, anti-fixed space and decomposition, with the remark that the reversal $\flat=-{}^{*}$ gives no fourth; the four coordinate blocks $A_1=\mathbb{R}e_0$, $A_2=\mathbb{R}(ie_0)$, $B_1=\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$, $B_2=\operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$, each the intersection of the three subspaces that contain it; the theorem that each of the six subspaces is the sum of two blocks — the centre of the two scalar blocks, the vector subspace of the two vector blocks, and each four-dimensional subspace of one scalar and one vector block — with the pairing argument that the three decompositions are the three pairings of the four blocks into two complementary pairs and that this is why there is no fourth; the theorem that two distinct subspaces meet in the blocks they share, so that the fifteen pairwise intersections have dimension 0, 1 or 3 and never 2, 4, 5 or 6, with the full $6\times6$ table, whose zero entries are exactly the three decomposition pairs, the centre meeting each other subspace in the scalar line $A_1$ or $A_2$ and the vector subspace in the vector triple $B_1$ or $B_2$; the $6\times6$ table of the sums, in which exactly the three decomposition pairs span $\mathbb{B}$ and the others have sum 7 or 5; the $4\times6$ table of the multiplicities of the eigenvalue $-1$ of each conjugation on each subspace, whose vanishing cells recover the definitions of the six and whose composition is the symmetric difference ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; and the complex structure $J : \tilde Q \mapsto i\tilde Q$, stable on $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$, exchanging $\mathbb{H}_{\mathbb{B}}$ with $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$ with $\mathbb{M}_-$, where no product is used; and the lattice of the fixed spaces, the four involutions and their eight labelled spaces reducing to six and sitting over the four coordinate blocks in levels that are not a chain and not closed under sum. No form and no topology appear. This article replaces the comparison chapters of the retired *Biquaternion Relations Between Subspaces*, deleted with the six, and absorbs the lattice of the fixed spaces of the retired *Biquaternion Involution Lattice*. -->
 
-### <a href="articles_maths/biquaternion-four-vector-element-representation.html">Introduction to the Biquaternion Four-Vector Representation</a>
-
-<!-- the biquaternion read as its four complex coefficients; the complex four-vector $Q^\mu$; the $4\times1$ column and the dual $1\times4$ row; multiplication in components and the cross-product term that carries the non-commutativity; the three conjugations in coordinates; the six distinguished subspaces; the norm with all four signs plus; the indefinite signatures of the two real subspaces. -->
-
 ### <a href="articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.html">Introduction to the 2×2 Matrix Representation of Biquaternions</a>
-
 <!-- the first reading of the matrix realization of the algebra: the $\mathbb{C}$-linear map $\Phi$ determined on the basis by the four matrices $\Phi(e_0)=\mathrm{I}_2$, $\Phi(e_1)=\left(\begin{smallmatrix}0&-i\\-i&0\end{smallmatrix}\right)$, $\Phi(e_2)=\left(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\right)$, $\Phi(e_3)=\left(\begin{smallmatrix}-i&0\\0&i\end{smallmatrix}\right)$, and on the central scalar by $\Phi(ie_\mu)=i\Phi(e_\mu)$, with the general element $\left(\begin{smallmatrix}Q_0-iQ_3&-iQ_1-Q_2\\-iQ_1+Q_2&Q_0+iQ_3\end{smallmatrix}\right)$; the reason the three vector images are $-i$ times the Pauli matrices and the statement that the choice is not canonical; the theorem that $\Phi$ is an algebra isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, read from the quaternion relations on the four images and their linear independence, with the corollary that the centre is the scalar matrices; and the six distinguished subspaces as matrix conditions, the scalar matrices on the centre, the traceless matrices $\mathfrak{sl}_2(\mathbb{C})$ on the vector subspace, the $\epsilon$-conjugation pattern of the real coefficients with $\epsilon=i\sigma_2$ on the quaternion subspace, its $i$-multiple on the anti-quaternion subspace, and the Hermitian and the anti-Hermitian matrices; the trace $\operatorname{Tr}\Phi=2Q_0$ and the determinant $\det\Phi=N=\sum_\mu Q_\mu^2$, the corollary that the units are the elements of $N\neq0$ and the zero divisors the nonzero singular matrices, the multiplicativity of the determinant against the additivity of the trace, a worked example, and the explicit pattern of each subspace with its trace and determinant. The characteristic polynomial, the spectrum, the Cayley–Hamilton identity, the rank-one elements, the matrix form of the four conjugations, the simple module and the matrix-unit structure are the further development and are *Biquaternion 2×2 Matrix Element Representation*. -->
 
 ### <a href="articles_maths/introduction-to-the-4x4-regular-matrix-representation-of-biquaternions.html">Introduction to the 4×4 Regular Matrix Representation of Biquaternions</a>
-
 <!-- the first reading of the regular representation: the $\mathbb{C}$-linear operator $\rho_L(\tilde Q)$ of left multiplication $\tilde R\mapsto\tilde Q\tilde R$, its Cayley matrix in the basis $e_0,e_1,e_2,e_3$, whose entries are single coefficients up to sign and whose first column is the four-vector $(Q_0,Q_1,Q_2,Q_3)$; the theorem $\rho_L(\tilde Q)\rho_L(\tilde R)=\rho_L(\tilde Q\tilde R)$ read from associativity on the basis, which makes $\rho_L$ an algebra homomorphism, with the injectivity from the first column and the worked example $e_0+e_1$, $e_0+e_2$ that separates the two orders; and the six distinguished subspaces in the regular model, the scalar matrices on the centre, the traceless matrices on the vector subspace, the real matrices on the quaternion subspace, the purely imaginary matrices on the anti-quaternion subspace, and the Hermitian and anti-Hermitian matrices, each with its explicit $4\times4$ matrix and its trace and determinant, with the point that the quaternion and anti-quaternion conditions are entrywise here and the $\epsilon$-conjugation pattern in the $2\times2$ model; the trace $\operatorname{Tr}\rho_L=4Q_0$ and the determinant $\det\rho_L=\Delta^2$, the square of the $2\times2$ determinant $\Delta=Q_0^2+Q_1^2+Q_2^2+Q_3^2$, read as the doubled trace and the squared determinant of the $2\times2$ matrix, with the example $\Delta=11+2i$; and the comparison of the two models, the side-by-side table of the six conditions with their traces and determinants, the theorem that the regular matrix is block diagonal with two blocks each conjugate to the $2\times2$ matrix of the same element, the corollary $\operatorname{Tr}\rho_L=2\operatorname{Tr}\Phi$ and $\det\rho_L=(\det\Phi)^2$, and the remark that only the $2\times2$ determinant sees the sign on the anti-quaternion subspace. The right multiplication, the transposition relation and the plausible identity that is false, the module structure and the decomposition into two minimal left ideals, the double centralizer, the $8\times8$ real form and the second realization are the further development and are *Biquaternion 4×4 Regular Matrix Element Representation*. -->
 
 #### Multiplications and Degree-2 Forms
 
 ### <a href="articles_maths/the-four-biquaternion-complex-products.html">The Four Biquaternion Complex Products</a>
-
-<!-- the four products carried by the underlying $\mathbb{C}$-vector space of $\mathbb{B}$, each of them introduced independently on the coordinates of the two elements of a pair and each with its scalar–vector form: the complex bilinear product $\tilde{P}\tilde{Q}$, the $\mathbb{C}$-bilinear extension of the quaternion product of the units, $\tilde{P}\tilde{Q}=P_0Q_0-(\mathbf{P},\mathbf{Q})+P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q}$, with the complex bilinear dot product and cross product; the complex quaternionic bilinear product $\tilde{P}^{\natural}\tilde{Q}=P_0Q_0+(\mathbf{P},\mathbf{Q})+P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$; the complex sesquilinear product $\tilde{P}\tilde{Q}^{*}=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$; and the complex quaternionic sesquilinear product $\tilde{P}^{\natural}\tilde{Q}^{*}=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}+\mathbf{P}\times\overline{\mathbf{Q}}$, where $\overline{\mathbf{Q}}$ is the coefficientwise conjugate of the vector part; the four differ in whether the coordinates of each element of the pair are used as they stand or taken from the conjugated element, the two elements being treated independently, and no two of the four agree on every pair; the four scalar parts are the four scalar forms, the scalar product form, the bilinear form, the Hermitian form and the Krein form, with the four vector parts beside them. The identities that link the four operations and the four forms are *Relations Between the Four Biquaternion Products*; the property table is *Comparison Between the Four Biquaternion Products*; the split of the four products into their symmetric and antisymmetric parts is *Scalar / Vector decomposition of the Biquaternion Complex Products*; the behaviour on the six subspaces is *The Six Subspaces and the Four Complex Products*; the operators $L_{\tilde{P}}$ and $R_{\tilde{P}}$ are *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*; and the basis products written out are in *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*, §*The Multiplication Table*. This article holds the product that *Biquaternions as a Vector Space over $\mathbb{C}$* formerly carried as §*Multiplication*, and it replaces the former *Biquaternion Multiplication*. -->
+<!-- the four products carried by the underlying $\mathbb{C}$-vector space of $\mathbb{B}$, each of them introduced independently on the coordinates of the two elements of a pair and each with its scalar–vector form: the general plain bilinear product $\tilde{P}\tilde{Q}$, the $\mathbb{C}$-bilinear extension of the quaternion product of the units, $\tilde{P}\tilde{Q}=P_0Q_0-(\mathbf{P},\mathbf{Q})+P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q}$, with the complex bilinear dot product and cross product; the general quaternionic bilinear product $\tilde{P}^{\natural}\tilde{Q}=P_0Q_0+(\mathbf{P},\mathbf{Q})+P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$; the general plain sesquilinear product $\tilde{P}\tilde{Q}^{*}=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$; and the general quaternionic sesquilinear product $\tilde{P}^{\natural}\tilde{Q}^{*}=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}+\mathbf{P}\times\overline{\mathbf{Q}}$, where $\overline{\mathbf{Q}}$ is the coefficientwise conjugate of the vector part; the four differ in whether the coordinates of each element of the pair are used as they stand or taken from the conjugated element, the two elements being treated independently, and no two of the four agree on every pair; the four scalar parts are the four scalar forms, the scalar product form, the bilinear form, the Hermitian form and the Krein form, with the four vector parts beside them. The identities that link the four operations and the four forms are *Relations Between the Four Biquaternion Products*; the property table is *Comparison Between the Four Biquaternion Products*; the split of the four products into their symmetric and antisymmetric parts is *Scalar / Vector decomposition of the Biquaternion Complex Products*; the behaviour on the six subspaces is *The Six Subspaces and the Four Complex Products*; the operators $L_{\tilde{P}}$ and $R_{\tilde{P}}$ are *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*; and the basis products written out are in *Introduction to the General Plain Algebra of Biquaternions*, §*The Multiplication Table*. This article holds the product that *Biquaternions as a Vector Space over $\mathbb{C}$* formerly carried as §*Multiplication*, and it replaces the former *Biquaternion Multiplication*. -->
 
 ### <a href="articles_maths/relations-between-the-four-biquaternion-products.html">Relations Between the Four Biquaternion Products</a>
-
-<!-- the four products read on one and the same pair with either element replaced by its conjugate, the two choices being independent and the four pairwise distinct; the two conjugations left out of the list add no form, $\mathrm{Sc}(\bar{\tilde{P}}\tilde{Q})=\mathrm{Sc}(\tilde{Q}^{\natural}\tilde{P}^{*})$ and $\mathrm{Sc}(\tilde{P}\bar{\tilde{Q}})=\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})$, the complex conjugation being an automorphism and the anti-Hermitian one its negative; how each factor enters, $\tilde{P}\tilde{Q}+\tilde{P}^{\natural}\tilde{Q}=2P_0\tilde{Q}$ and $\tilde{P}\tilde{Q}-\tilde{P}^{\natural}\tilde{Q}=2\mathbf{P}_{e}\tilde{Q}$ with the same two identities for the sesquilinear pair against $\tilde{Q}^{*}$, so that the ${}^{\natural}$ in the first slot separates the scalar part of that factor from its vector part; the agreement criterion $\tilde{P}^{\natural}\tilde{Q}=\tilde{P}\tilde{Q}\iff\mathbf{P}_{e}\tilde{Q}=0$, in particular for every central $\tilde{P}$; the conjugate of a product, with $(\tilde{P}^{\natural}\tilde{Q})^{\natural}=\tilde{Q}^{\natural}\tilde{P}$ and $(\tilde{P}\tilde{Q}^{*})^{*}=\tilde{Q}\tilde{P}^{*}$, which is the reason the scalar part of the $\natural$-product is symmetric and that of the star-product Hermitian; the four scalar parts and their pair sums and half-differences, $\mathrm{Sc}(\tilde{P}\tilde{Q})+\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})=2P_0Q_0$, $\mathrm{Sc}(\tilde{P}\tilde{Q})-\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})=-2(\mathbf{P},\mathbf{Q})$ and the two companions with $\overline{Q_0}$ and $(\mathbf{P},\overline{\mathbf{Q}})$, the exchange of the natural sign from one factor to the other, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})=\mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$ and $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})=\mathrm{Sc}(\tilde{P}\bar{\tilde{Q}})$, and the symmetry of the two bilinear and the two sesquilinear scalar forms; the same identities for the four vector parts; the left multiplications $L^{\natural}_{\tilde{P}}=L_{\tilde{P}^{\natural}}$, $L^{*}_{\tilde{P}}=(\cdot)^{*}\circ R_{\tilde{P}^{*}}$ and $L^{\natural*}_{\tilde{P}}=(\cdot)^{*}\circ R_{\bar{\tilde{P}}}$, with $L^{\natural}_{\tilde{P}}\circ L^{\natural}_{\tilde{R}}=L^{\natural}_{\tilde{R}\tilde{P}}$ and the failure of closure for the two sesquilinear products; and the restriction to the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the four scalar forms collapse onto two pairs and the Hermitian form restricts to the bilinear one. The four products themselves, with their scalar–vector forms, are *The Four Biquaternion Complex Products*; the property table is *Comparison Between the Four Biquaternion Products*; the four scalar forms are *Association and the Transpose on the Biquaternion Algebra*, *The Bilinear Form on the Biquaternion Algebra*, *The Hermitian Form on the Biquaternion Algebra* and *The Biquaternion Krein Form and Its Signature*; and the operators are *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*. -->
+<!-- the four products read on one and the same pair with either element replaced by its conjugate, the two choices being independent and the four pairwise distinct; the two conjugations left out of the list add no form, $\mathrm{Sc}(\bar{\tilde{P}}\tilde{Q})=\mathrm{Sc}(\tilde{Q}^{\natural}\tilde{P}^{*})$ and $\mathrm{Sc}(\tilde{P}\bar{\tilde{Q}})=\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})$, the complex conjugation being an automorphism and the anti-Hermitian one its negative; how each factor enters, $\tilde{P}\tilde{Q}+\tilde{P}^{\natural}\tilde{Q}=2P_0\tilde{Q}$ and $\tilde{P}\tilde{Q}-\tilde{P}^{\natural}\tilde{Q}=2\mathbf{P}_{e}\tilde{Q}$ with the same two identities for the sesquilinear pair against $\tilde{Q}^{*}$, so that the ${}^{\natural}$ in the first slot separates the scalar part of that factor from its vector part; the agreement criterion $\tilde{P}^{\natural}\tilde{Q}=\tilde{P}\tilde{Q}\iff\mathbf{P}_{e}\tilde{Q}=0$, in particular for every central $\tilde{P}$; the conjugate of a product, with $(\tilde{P}^{\natural}\tilde{Q})^{\natural}=\tilde{Q}^{\natural}\tilde{P}$ and $(\tilde{P}\tilde{Q}^{*})^{*}=\tilde{Q}\tilde{P}^{*}$, which is the reason the scalar part of the $\natural$-product is symmetric and that of the star-product Hermitian; the four scalar parts and their pair sums and half-differences, $\mathrm{Sc}(\tilde{P}\tilde{Q})+\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})=2P_0Q_0$, $\mathrm{Sc}(\tilde{P}\tilde{Q})-\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})=-2(\mathbf{P},\mathbf{Q})$ and the two companions with $\overline{Q_0}$ and $(\mathbf{P},\overline{\mathbf{Q}})$, the exchange of the natural sign from one factor to the other, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})=\mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$ and $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})=\mathrm{Sc}(\tilde{P}\bar{\tilde{Q}})$, and the symmetry of the two bilinear and the two sesquilinear scalar forms; the same identities for the four vector parts; the left multiplications $L^{\natural}_{\tilde{P}}=L_{\tilde{P}^{\natural}}$, $L^{*}_{\tilde{P}}=(\cdot)^{*}\circ R_{\tilde{P}^{*}}$ and $L^{\natural*}_{\tilde{P}}=(\cdot)^{*}\circ R_{\bar{\tilde{P}}}$, with $L^{\natural}_{\tilde{P}}\circ L^{\natural}_{\tilde{R}}=L^{\natural}_{\tilde{R}\tilde{P}}$ and the failure of closure for the two sesquilinear products; and the restriction to the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the four scalar forms collapse onto two pairs and the Hermitian form restricts to the bilinear one. The four products themselves, with their scalar–vector forms, are *The Four Biquaternion Complex Products*; the property table is *Comparison Between the Four Biquaternion Products*; the four scalar forms are *Association and the Transpose on the Biquaternion Algebra*, *The Bilinear Form on the Biquaternion Algebra*, *Biquaternion Norm and Invertibility* and *The Krein Gram Matrix and the Restrictions of the Form*; and the operators are *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*. -->
 
 ### <a href="articles_maths/comparison-between-the-four-biquaternion-products.html">Comparison Between the Four Biquaternion Products</a>
-
-<!-- the comparison of the four products by their algebraic properties: the property table, with $\mathbb{C}$-linearity in the first argument for all four, $\mathbb{C}$-linearity in the second for the two bilinear ones against conjugate-linearity for the two sesquilinear ones; associativity for the complex bilinear product alone, with the counterexamples on $(-e_2,-e_2,e_2)$, $(-e_3,e_2,e_2)$ and $(-e_3,e_3,e_0)$ for $\tilde{P}^{\natural}\tilde{Q}$, $\tilde{P}\tilde{Q}^{*}$ and $\tilde{P}^{\natural}\tilde{Q}^{*}$, each pair of sides differing by the sign of a single basis element; commutativity for none of the four, the scalar parts being symmetric in every case; the units, $1$ two-sided for the complex bilinear product, a left identity alone for $\tilde{P}^{\natural}\tilde{Q}$, a right identity alone for $\tilde{P}\tilde{Q}^{*}$ and no identity on either side for $\tilde{P}^{\natural}\tilde{Q}^{*}$; the alternative, flexible and degree-three identities, satisfied by the complex bilinear product alone, with the counterexamples at $\tilde{P}=e_3$, $\tilde{Q}=-e_3$ for the left alternative identity of the ${}^{\natural}$-product and at $\tilde{P}=-e_3$, $\tilde{Q}=e_3$ for that of the star product, at $\tilde{P}=e_3$, $\tilde{Q}=e_0$ for the flexibility of the ${}^{\natural}$-product, at $\tilde{P}=-e_2$, $\tilde{Q}=e_0$ for that of the star product, at $\tilde{P}=e_0$, $\tilde{Q}=ie_0$ for the left alternative identity and at $\tilde{P}=ie_0$, $\tilde{Q}=e_0$ for the flexibility of the fourth product, and at $\tilde{P}=e_3$ for the ${}^{\natural}$- and the star-product and at $\tilde{P}=ie_3$ for the fourth for the degree-three identity; the left multiplications, a monoid for the complex bilinear and the $\natural$-product and not for the two sesquilinear ones; and the two algebra rows, which read yes / yes / no / no for the multiplication of an algebra over $\mathbb{C}$ and no / no / yes / yes for that of a sesqualgebra over $\mathbb{C}$, the four products splitting two and two by the involution each carries and neither row separating the two star-products, which are separated by the right unit alone, with the sharper statements cited from the sibling articles, that exactly one of the four is the multiplication of an associative unital $\mathbb{C}$-algebra and exactly one is the derived operation of the algebra with its conjugate-linear involution. The four definitions are *The Four Biquaternion Complex Products*; the identities that link the four are *Relations Between the Four Biquaternion Products*; and the two parts of each of the four products are *Scalar / Vector decomposition of the Biquaternion Complex Products*; and the squares of the four with their scalar parts, the four idempotent sets and the roots of a central value, one column to a product, in *The Squares, the Idempotents and the Roots*. -->
+<!-- the comparison of the four products by their algebraic properties: the property table, with $\mathbb{C}$-linearity in the first argument for all four, $\mathbb{C}$-linearity in the second for the two bilinear ones against conjugate-linearity for the two sesquilinear ones; associativity for the general plain bilinear product alone, with the counterexamples on $(-e_2,-e_2,e_2)$, $(-e_3,e_2,e_2)$ and $(-e_3,e_3,e_0)$ for $\tilde{P}^{\natural}\tilde{Q}$, $\tilde{P}\tilde{Q}^{*}$ and $\tilde{P}^{\natural}\tilde{Q}^{*}$, each pair of sides differing by the sign of a single basis element; commutativity for none of the four, the scalar parts being symmetric in every case; the units, $1$ two-sided for the general plain bilinear product, a left identity alone for $\tilde{P}^{\natural}\tilde{Q}$, a right identity alone for $\tilde{P}\tilde{Q}^{*}$ and no identity on either side for $\tilde{P}^{\natural}\tilde{Q}^{*}$; the alternative, flexible and degree-three identities, satisfied by the general plain bilinear product alone, with the counterexamples at $\tilde{P}=e_3$, $\tilde{Q}=-e_3$ for the left alternative identity of the ${}^{\natural}$-product and at $\tilde{P}=-e_3$, $\tilde{Q}=e_3$ for that of the star product, at $\tilde{P}=e_3$, $\tilde{Q}=e_0$ for the flexibility of the ${}^{\natural}$-product, at $\tilde{P}=-e_2$, $\tilde{Q}=e_0$ for that of the star product, at $\tilde{P}=e_0$, $\tilde{Q}=ie_0$ for the left alternative identity and at $\tilde{P}=ie_0$, $\tilde{Q}=e_0$ for the flexibility of the fourth product, and at $\tilde{P}=e_3$ for the ${}^{\natural}$- and the star-product and at $\tilde{P}=ie_3$ for the fourth for the degree-three identity; the left multiplications, a monoid for the general plain bilinear and the $\natural$-product and not for the two sesquilinear ones; and the two algebra rows, which read yes / yes / no / no for the multiplication of an algebra over $\mathbb{C}$ and no / no / yes / yes for that of a sesqualgebra over $\mathbb{C}$, the four products splitting two and two by the involution each carries and neither row separating the two star-products, which are separated by the right unit alone, with the sharper statements cited from the sibling articles, that exactly one of the four is the multiplication of an associative unital $\mathbb{C}$-algebra and exactly one is the derived operation of the algebra with its conjugate-linear involution. The four definitions are *The Four Biquaternion Complex Products*; the identities that link the four are *Relations Between the Four Biquaternion Products*; and the two parts of each of the four products are *Scalar / Vector decomposition of the Biquaternion Complex Products*; and the squares of the four with their scalar parts, the four idempotent sets and the roots of a central value, one column to a product, in *The Squares, the Idempotents and the Roots*. -->
 
 ### <a href="articles_maths/scalar-over-vector-decomposition-of-the-biquaternion-complex-products.html">Scalar / Vector decomposition of the Biquaternion Complex Products</a>
-
-<!-- the product of two biquaternions read through its order symmetry, as the sum of two halves $\tilde{P}\tilde{Q}=\tilde{P}\bullet\tilde{Q}+\tilde{P}\wedge\tilde{Q}$; the symmetric or symmetrised (Jordan) product $\tilde{P}\bullet\tilde{Q}=\tfrac{1}{2}(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P})$, its commutativity, $\tilde{P}\bullet\tilde{P}=\tilde{P}^2$, the polarisation of the square $\tilde{P}\bullet\tilde{Q}=\tfrac{1}{2}((\tilde{P}+\tilde{Q})^2-\tilde{P}^2-\tilde{Q}^2)$, the Jordan identity, the closure of the Hermitian subspace and the agreement of its scalar part with that of the product, $\mathrm{Sc}(\tilde{P}\bullet\tilde{Q})=\mathrm{Sc}(\tilde{P}\tilde{Q})=P_0Q_0-(\mathbf{P},\mathbf{Q})$; the antisymmetric part or outer product $\tilde{P}\wedge\tilde{Q}=\tfrac{1}{2}(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P})=\mathbf{P}\times\mathbf{Q}$, its alternation, its purity as a vector and the commutativity criterion $\tilde{P}\tilde{Q}=\tilde{Q}\tilde{P}\iff\mathbf{P}\times\mathbf{Q}=0$, which recovers the centre; the two-sector closure table for the Hermitian and anti-Hermitian subspaces; the operator reading $\tfrac{1}{2}(L_{\tilde{P}}\pm R_{\tilde{P}})$, the balanced multiplication and the derivation; and the worked example $\tilde{P}=e_0+e_1$, $\tilde{Q}=e_2$; and the same split carried out for the three other products, the interchange of the two factors being a conjugation of the value for the $\natural$- and the star-product, $\mathcal{B}(\tilde{Q},\tilde{P})=\mathcal{B}(\tilde{P},\tilde{Q})^{\natural}$ and $\mathcal{C}(\tilde{Q},\tilde{P})=\mathcal{C}(\tilde{P},\tilde{Q})^{*}$, and a genuine reversal for the complex bilinear and the quaternionic sesquilinear product, with the four symmetric halves carrying $P_0Q_0-(\mathbf{P},\mathbf{Q})$, $P_0Q_0+(\mathbf{P},\mathbf{Q})$ and the real parts $\mathrm{Re}(P_0\overline{Q_0}\pm(\mathbf{P},\overline{\mathbf{Q}}))$, the four antisymmetric halves, the split of the $\natural$-product read as its scalar–vector split and the split of the star-product as its Hermitian split, and the ranges $\mathbb{B}$, $\mathrm{Vect}(\mathbb{B})$, the centre $\mathbb{C}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ and neither. The product itself and its scalar–vector form are *The Four Biquaternion Complex Products*; the subspace-by-subspace closure is *The Six Subspaces and the Four Complex Products*; the Lie theory and the Jordan theory are *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; and the operators are *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*. -->
+<!-- the product of two biquaternions read through its order symmetry, as the sum of two halves $\tilde{P}\tilde{Q}=\tilde{P}\bullet\tilde{Q}+\tilde{P}\wedge\tilde{Q}$; the symmetric or symmetrised (Jordan) product $\tilde{P}\bullet\tilde{Q}=\tfrac{1}{2}(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P})$, its commutativity, $\tilde{P}\bullet\tilde{P}=\tilde{P}^2$, the polarisation of the square $\tilde{P}\bullet\tilde{Q}=\tfrac{1}{2}((\tilde{P}+\tilde{Q})^2-\tilde{P}^2-\tilde{Q}^2)$, the Jordan identity, the closure of the Hermitian subspace and the agreement of its scalar part with that of the product, $\mathrm{Sc}(\tilde{P}\bullet\tilde{Q})=\mathrm{Sc}(\tilde{P}\tilde{Q})=P_0Q_0-(\mathbf{P},\mathbf{Q})$; the antisymmetric part or outer product $\tilde{P}\wedge\tilde{Q}=\tfrac{1}{2}(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P})=\mathbf{P}\times\mathbf{Q}$, its alternation, its purity as a vector and the commutativity criterion $\tilde{P}\tilde{Q}=\tilde{Q}\tilde{P}\iff\mathbf{P}\times\mathbf{Q}=0$, which recovers the centre; the two-sector closure table for the Hermitian and anti-Hermitian subspaces; the operator reading $\tfrac{1}{2}(L_{\tilde{P}}\pm R_{\tilde{P}})$, the balanced multiplication and the derivation; and the worked example $\tilde{P}=e_0+e_1$, $\tilde{Q}=e_2$; and the same split carried out for the three other products, the interchange of the two factors being a conjugation of the value for the $\natural$- and the star-product, $\mathcal{B}(\tilde{Q},\tilde{P})=\mathcal{B}(\tilde{P},\tilde{Q})^{\natural}$ and $\mathcal{C}(\tilde{Q},\tilde{P})=\mathcal{C}(\tilde{P},\tilde{Q})^{*}$, and a genuine reversal for the general plain bilinear and the general quaternionic sesquilinear product, with the four symmetric halves carrying $P_0Q_0-(\mathbf{P},\mathbf{Q})$, $P_0Q_0+(\mathbf{P},\mathbf{Q})$ and the real parts $\mathrm{Re}(P_0\overline{Q_0}\pm(\mathbf{P},\overline{\mathbf{Q}}))$, the four antisymmetric halves, the split of the $\natural$-product read as its scalar–vector split and the split of the star-product as its Hermitian split, and the ranges $\mathbb{B}$, $\mathrm{Vect}(\mathbb{B})$, the centre $\mathbb{C}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ and neither. The product itself and its scalar–vector form are *The Four Biquaternion Complex Products*; the subspace-by-subspace closure is *The Six Subspaces and the Four Complex Products*; the Lie theory and the Jordan theory are *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; and the operators are *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*. -->
 
 ### <a href="articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.html">The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</a>
-
 <!-- the twelve operations carried by the complex space of the biquaternion algebra, four products with the symmetric and the antisymmetric part of each, and the name of each: three letters, the part — $\mathrm G$ general, $\mathrm S$ symmetric, $\mathrm A$ antisymmetric — the first slot — $\mathrm P$ plain, $\mathrm Q$ quaternionic — and the family — $\mathrm A$ the algebra over $\mathbb{C}$, $\mathrm S$ the sesqualgebra over $\mathbb{C}$ — read product by product, one product with its two parts at a time: $\mathrm{GPA},\mathrm{SPA},\mathrm{APA}$ for the plain algebra, $\mathrm{GQA},\mathrm{SQA},\mathrm{AQA}$ for the quaternionic algebra, $\mathrm{GPS},\mathrm{SPS},\mathrm{APS}$ for the plain sesqualgebra and $\mathrm{GQS},\mathrm{SQS},\mathrm{AQS}$ for the quaternionic sesqualgebra; the four general names being the four structures of *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*, *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*, *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* and *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*; the product of each of the twelve written out, with its scalar and vector parts; $\mathrm{GPA}$ associative and unital on both sides, $\mathrm{GQA}$ not associative with a unit on the left only, $\mathrm{GPS}$ not associative with a unit on the right only, $\mathrm{GQS}$ with no unit; $\mathrm{SPA}$ the Jordan product and $\mathrm{APA}$ the Lie product, the only two that pass their identity, against the six witnesses of the failures, $\mathrm{AQA}$, $\mathrm{APS}$ and $\mathrm{AQS}$ for Jacobi and $\mathrm{SQA}$, $\mathrm{SPS}$ and $\mathrm{SQS}$ for Jordan; $\mathrm{SQA}$ the central form $B$, $\mathrm{SPS}$ the scalar part of the value and $\mathrm{APS}$ the vector part of the value, in the centre and in the vector subspace, against $\mathrm{SQS}$ in no subspace of the six and $\mathrm{AQS}$ the cross product $\mathbf{P}\times\overline{\mathbf{Q}}$, pure vector; the table of the twelve, the product with its scalar and vector parts, with the eight $\mathbb{C}$-bilinear names against the four sesquilinear parts of the two sesqualgebra products, and the remark that the trailing $\mathrm S$ names the family of the parent product and not the class of the part; the reconstruction row by row, $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$ and so on; the coincidences on the real part, where the twelve distinct operations of the complex space fall to ten, $\mathrm{APA}=\mathrm{AQS}$ and $\mathrm{SQA}=\mathrm{SPS}$; and the exchange behind the names, the class-preserving conjugate transpose that makes the count $4\times3$, against the plain swap, which does not keep the sesquilinear class and whose two halves are the only $\mathbb{R}$-bilinear operations of the family. The method is §*The Method of the Decomposition* of this article and the four products are *The Four Biquaternion Complex Products*; the physics is *The Four Products and Their Physical Readings: the two Algebras and the two Sesqualgebras*. -->
 
 ### <a href="articles_maths/the-six-subspaces-and-the-four-complex-products.html">The Six Subspaces and the Four Complex Products</a>
+<!-- the four products of the biquaternion algebra read against the six distinguished subspaces, one subspace to a section; the proof that all four products have the same value set on each subspace, since the conjugations $\natural$ and $*$ preserve every subspace of the list, with the common span identified subspace by subspace; the product kept inside a subspace for exactly two of the six, the centre and the quaternion subspace, for all four products; the Jordan algebras among the six and the product that gives each — the field $\mathbb{C}$ on the centre, from the complex and the general quaternionic bilinear products; the symmetrised real quaternion algebra on the quaternion subspace, from the general plain bilinear product; and $H_{2}(\mathbb{C})=J(\mathbb{B})$ on the Hermitian subspace, from the general plain bilinear and the general plain sesquilinear products, which coincide there — together with the symmetrisations that stay inside a subspace but fail the Jordan identity; the Lie algebras among the six and the product that gives each — the centre, abelian for the two bilinear and the two-dimensional non-abelian for the two sesquilinear; $\mathfrak{sl}(2,\mathbb{C})$ on the vector subspace, from the two bilinear products; $\mathbb{R}e_{0}\oplus\mathfrak{su}(2)$ on the quaternion subspace, from the general plain bilinear and the general quaternionic sesquilinear products; and $\mathfrak{u}(2)$ on the anti-Hermitian subspace, from the general plain bilinear and the general plain sesquilinear products — each of the three products other than the general plain bilinear one reducing to the commutator, up to sign, on exactly one further subspace; the anti-quaternion subspace carrying no algebra under any product; and the quaternion subspace the one four-dimensional subspace with both a Jordan and a Lie algebra. No form appears. -->
 
-<!-- the four products of the biquaternion algebra read against the six distinguished subspaces, one subspace to a section; the proof that all four products have the same value set on each subspace, since the conjugations $\natural$ and $*$ preserve every subspace of the list, with the common span identified subspace by subspace; the product kept inside a subspace for exactly two of the six, the centre and the quaternion subspace, for all four products; the Jordan algebras among the six and the product that gives each — the field $\mathbb{C}$ on the centre, from the complex and the quaternionic bilinear products; the symmetrised real quaternion algebra on the quaternion subspace, from the complex bilinear product; and $H_{2}(\mathbb{C})=J(\mathbb{B})$ on the Hermitian subspace, from the complex bilinear and the complex sesquilinear products, which coincide there — together with the symmetrisations that stay inside a subspace but fail the Jordan identity; the Lie algebras among the six and the product that gives each — the centre, abelian for the two bilinear and the two-dimensional non-abelian for the two sesquilinear; $\mathfrak{sl}(2,\mathbb{C})$ on the vector subspace, from the two bilinear products; $\mathbb{R}e_{0}\oplus\mathfrak{su}(2)$ on the quaternion subspace, from the complex bilinear and the quaternionic sesquilinear products; and $\mathfrak{u}(2)$ on the anti-Hermitian subspace, from the complex bilinear and the complex sesquilinear products — each of the three products other than the complex bilinear one reducing to the commutator, up to sign, on exactly one further subspace; the anti-quaternion subspace carrying no algebra under any product; and the quaternion subspace the one four-dimensional subspace with both a Jordan and a Lie algebra. No form appears. -->
+### <a href="articles_maths/the-four-biquaternion-complex-products-and-operators.html">The Four Biquaternion Complex Products and Operators</a>
+<!-- what the four products decide and what they do not: the four products share one multiplication table of the units and differ only in the conjugation inserted into each of the two slots, so they determine the four pairings (their scalar parts), the four adjoints and the names of the four operator families, but not an operator, which needs an element and an insertion; the element e_1 read through the four insertions, giving diag(1,1,-1,-1) and diag(-1,-1,1,1) and, on the vector subspace, -rho and rho; the theorem that the plain product gives minus the reflection and the sign gives the reflection, the starred insertions leaving the vector subspace in general; the determinant table on the vector subspace, showing that a rotation and a reflection are read there and not on the four-complex-dimensional algebra; the two independent choices, the sign (invisible on the centre) and the star (invisible on the real directions); and the convention by which the corpus fixes the sign as the natural conjugation, with the dictionary to the Clifford grading of the biquaternion algebra. -->
 
 #### Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$
 
-### <a href="articles_maths/biquaternions-as-a-general-plain-algebra-gpa-over-c.html">Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$</a>
+##### Common Theory
 
-<!-- the complex bilinear product read as a multiplication, and the algebra it defines: the rule on the four coordinates and its well-definedness; the sixteen products of the basis, the multiplication table being the quaternion table with the central imaginary allowed only as a coefficient; bilinearity and the determination of the multiplication by its values on the basis pairs; associativity; the two-sided unit $e_0$; non-commutativity, so that the underlying $\mathbb{C}$-vector space of $\mathbb{B}$ is a four-dimensional associative unital non-commutative $\mathbb{C}$-algebra; the multiplication as the tensor product of the complex and the quaternion multiplications, hence $\mathbb{B}$ as the complexification of $\mathbb{H}$, with the quaternion subspace a real subalgebra and a real form, the imaginary $i\mathbb{H}_{\mathbb{B}}$ not a subalgebra and not a $\mathbb{C}$-subspace; the scalars read through the structure map $\varphi(A)=Ae_0$, the central element of square $-1$ that carries the complex structure, the centre quoted as the scalar line, centrality, simplicity and the absence of division, with the witness $e_0+ie_1$; the generators $e_1,e_2$ and the presentation $\mathbb{C}\langle E_1,E_2\rangle/(E_1^2+1,E_2^2+1,E_1E_2+E_2E_1)$ as the quaternion algebra over $\mathbb{C}$, with the three-generator presentation shown to fail; the subalgebra generated by one element, the plane $\mathbb{C}e_0\oplus\mathbb{C}\tilde{Q}$ being $\mathbb{C}\oplus\mathbb{C}$ or the dual numbers according as the vector part is anisotropic or isotropic; and the other three products of the four read as the multiplication with a conjugation in one or both slots, so that exactly one of the four is a multiplication. The base-ring question and the real algebra are *Biquaternions as an Algebra over $\mathbb{R}$*; the product itself is *The Four Biquaternion Complex Products*. -->
+### <a href="articles_maths/introduction-to-the-general-plain-algebra-of-biquaternions.html">Introduction to the General Plain Algebra of Biquaternions</a>
+<!-- the general plain bilinear product read as a multiplication, and the algebra it defines: the rule on the four coordinates and its well-definedness; the sixteen products of the basis, the multiplication table being the quaternion table with the central imaginary allowed only as a coefficient; bilinearity and the determination of the multiplication by its values on the basis pairs; associativity; the two-sided unit $e_0$; non-commutativity, so that the underlying $\mathbb{C}$-vector space of $\mathbb{B}$ is a four-dimensional associative unital non-commutative $\mathbb{C}$-algebra; the multiplication as the tensor product of the complex and the quaternion multiplications, hence $\mathbb{B}$ as the complexification of $\mathbb{H}$, with the quaternion subspace a real subalgebra and a real form, the imaginary $i\mathbb{H}_{\mathbb{B}}$ not a subalgebra and not a $\mathbb{C}$-subspace; the scalars read through the structure map $\varphi(A)=Ae_0$, the central element of square $-1$ that carries the complex structure, the centre quoted as the scalar line, centrality, simplicity and the absence of division, with the witness $e_0+ie_1$; the generators $e_1,e_2$ and the presentation $\mathbb{C}\langle E_1,E_2\rangle/(E_1^2+1,E_2^2+1,E_1E_2+E_2E_1)$ as the quaternion algebra over $\mathbb{C}$, with the three-generator presentation shown to fail; the subalgebra generated by one element, the plane $\mathbb{C}e_0\oplus\mathbb{C}\tilde{Q}$ being $\mathbb{C}\oplus\mathbb{C}$ or the dual numbers according as the vector part is anisotropic or isotropic; and the other three products of the four read as the multiplication with a conjugation in one or both slots, so that exactly one of the four is a multiplication. The base-ring question and the real algebra are *Biquaternions as an Algebra over $\mathbb{R}$*; the product itself is *The Four Biquaternion Complex Products*. -->
 
 ### <a href="articles_maths/biquaternion-idempotents-and-projections.html">Biquaternion Idempotents and Projections</a>
+<!-- idempotents and the direct sum decompositions they carry; orthogonal, complete and primitive idempotents and the primitivity criterion; the standard idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ as the diagonal matrix units; the classification of the idempotents of $\mathbb{B}$ in the general plain bilinear product, the multiplication of the algebra, the other three products carrying idempotents of their own; the bijection $\xi\mapsto\tfrac12(e_0+\xi i)$ from the roots of $-1$ onto the idempotents, with complementary pairs for $\{\xi,-\xi\}$; idempotents as projections and the Hermitian idempotents as orthogonal projections; the non-pure zero divisors as complex multiples of idempotents; the dimension of the idempotent set. -->
 
-<!-- idempotents and the direct sum decompositions they carry; orthogonal, complete and primitive idempotents and the primitivity criterion; the standard idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ as the diagonal matrix units; the classification of the idempotents of $\mathbb{B}$ in the complex bilinear product, the multiplication of the algebra, the other three products carrying idempotents of their own; the bijection $\xi\mapsto\tfrac12(e_0+\xi i)$ from the roots of $-1$ onto the idempotents, with complementary pairs for $\{\xi,-\xi\}$; idempotents as projections and the Hermitian idempotents as orthogonal projections; the non-pure zero divisors as complex multiples of idempotents; the dimension of the idempotent set. -->
+### <a href="articles_maths/biquaternion-zero-divisors.html">Biquaternion Zero Divisors</a>
+<!-- definition; the two families, pure and non-pure; the square of a pure and of a non-pure biquaternion; the criterion in terms of the scalar part, which needs no norm; the bivector (real two-vector) form of the pure zero divisors, with the orthogonality and equal-length conditions and the dimension count; the associated idempotent; the structure of each family and the comparison table; the union; the zero divisor set. The criterion by the vanishing of the norm needs a distance and is in *Biquaternion Norm and Invertibility*. -->
+
+##### Associative and Unital Theory
 
 ### <a href="articles_maths/biquaternion-ideals-and-peirce-decomposition.html">Biquaternion Ideals and Peirce Decomposition</a>
-
 <!-- ideals in an algebra; the two-sided ideals and the simplicity of $\mathbb{B}$; Artinian, semisimple and length two; idempotents and orthogonal idempotents; the off-diagonal elements and the matrix units; the Peirce decomposition; the decomposition into minimal left and right ideals, with the bases and dimensions of the two minimal left ideals and $\mathbb{C}^2$ as a left module; the lattice of left ideals as a projective line; the radical; the real structure. -->
 
-### <a href="articles_maths/the-six-subspaces-and-the-structure.html">The Six Subspaces and the Structure</a>
-
-<!-- the idempotents and the ideals of $\mathbb{B}$ read against the six distinguished subspaces: the idempotent equation split as $\Pi_0^2-(\mathbf{q},\mathbf{q})=\Pi_0$, $2\Pi_0\mathbf{q}=\mathbf{q}$, and the theorem that only the centre, the quaternion subspace and the Hermitian subspace contain a nonzero idempotent, the nontrivial ones being exactly the Hermitian idempotents $\tfrac12(e_0+i\mathbf{u})$ over the two-sphere of real unit vectors, all in $\mathbb{M}_+$, each a zero divisor of norm $0$ and paired with the unique orthogonal partner $e_0-\tilde\Pi$, the frame and the four Peirce pieces of real dimension $2$, none a sum of coordinate blocks; simplicity and the length two, so that no subspace of the six is a two-sided ideal while each generates $\mathbb{B}$ on both sides, the annihilator theorem of the zero divisors, the coincidence $\mathbb{B}\mathbf{P}=I_{\mathbf{P}}$ for the nilpotents of the vector subspace against the complementarity $\mathbb{B}=\mathbb{B}\tilde Q\oplus I_{\tilde Q}$ for every other zero divisor, and the four minimal ideals of a Hermitian idempotent, which are the Peirce lines, the two idempotent lines and the two nilpotent lines inside the vector subspace. -->
-
-### <a href="articles_maths/modules-over-the-biquaternion-algebra.html">Modules over the Biquaternion Algebra</a>
-
-<!-- the modules over $\mathbb{B}\cong M_2(\mathbb{C})$: the defining module $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,y\}$ as the unique simple left module, with the left action in the idempotent basis and the isomorphism $\Phi(e_k)=-i\sigma_k$; the classification, every left module a direct sum $S^{\oplus k}$ and every module projective; the left regular module $\mathbb{B}\cong S\oplus S$, free of rank one; the parity criterion for freeness, $S^{\oplus k}$ free iff $k$ is even, so that $S$ is projective and not free; the endomorphism algebras $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$, $\operatorname{Hom}_\mathbb{B}(S^{\oplus m},S^{\oplus n})\cong M_{n\times m}(\mathbb{C})$, $\operatorname{End}_\mathbb{B}(S^{\oplus k})\cong M_k(\mathbb{C})$ with automorphism group $\mathrm{GL}_k(\mathbb{C})$, and the double centralizer $\operatorname{End}_\mathbb{C}(S)=\mathbb{B}$; the standard bimodule ${}_\mathbb{B}S_\mathbb{C}$ with its commuting actions, the dual $S^*\cong S$ and quaternion conjugation as the adjugate $\Phi(\tilde{Q}^{\natural})=\varepsilon\Phi(\tilde{Q})^{\mathrm T}\varepsilon^{-1}$; the Morita equivalence $\operatorname{Mod}(\mathbb{B})\cong\operatorname{Mod}(\mathbb{C})$ and the doubling of every complex dimension; the degeneration of the naive torsion and the torsion-freeness of the category; the real structures of the modules obtained from $\mathbb{H}$ by extension of scalars, exactly the free ones. The norm, its vanishing, the invertibility criterion and the group of units are in *Biquaternion Norm and Invertibility*; the group-theoretic representations are in *Biquaternion Rotations and Lorentz Transformations*. -->
-
-### <a href="articles_maths/biquaternions-as-a-module-over-itself.html">Biquaternions as a Module over Itself</a>
-
-<!-- the algebra acting on its own additive group, the module-over-itself reading, distinct from the scalar and ring-based views: the left regular module ${}_\mathbb{B}\mathbb{B}$, the right regular module $\mathbb{B}_\mathbb{B}$ and the regular bimodule ${}_\mathbb{B}\mathbb{B}_\mathbb{B}$; the submodules are the left, the right and the two-sided ideals, so the ideal theory of *Biquaternion Ideals and Peirce Decomposition* is the submodule theory of the regular object; cyclic on the unit, faithful, free of rank one on $\{e_0\}$, a generator, and the identity of the tensor product, $M\otimes_\mathbb{B}{}_\mathbb{B}\mathbb{B}\cong M$ and ${}_\mathbb{B}\mathbb{B}\otimes_\mathbb{B}N\cong N$; the endomorphism rings $\operatorname{End}_\mathbb{B}(\mathbb{B}_\mathbb{B})\cong\mathbb{B}$, $\operatorname{End}_\mathbb{B}({}_\mathbb{B}\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ and $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})=\mathbb{C}e_0$; the biquaternion case, the bimodule simple, ${}_\mathbb{B}\mathbb{B}\cong S\oplus S$ with $S\cong\mathbb{C}^2$ the unique simple module, the minimal left ideals $L_\ell$ indexed by the lines of $\mathbb{C}^2$, $\mathbb{B}$ von Neumann regular and self-injective and ${}_\mathbb{B}\mathbb{B}$ a projective generator and injective cogenerator. The $4\times4$ regular matrices are in *Biquaternion 4×4 Regular Matrix Element Representation*; the involution, the twist and the canonical form are in *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*. -->
+### <a href="articles_maths/modules-over-the-general-plain-algebra-of-biquaternions.html">Modules over the General Plain Algebra of Biquaternions</a>
+<!-- the modules over $\mathbb{B}\cong M_2(\mathbb{C})$, the algebra acting on its own additive group and the category of all its modules: the left regular module ${}_\mathbb{B}\mathbb{B}$, the right regular module $\mathbb{B}_\mathbb{B}$ and the regular bimodule ${}_\mathbb{B}\mathbb{B}_\mathbb{B}$; the submodules are the left, the right and the two-sided ideals, so the ideal theory of *Biquaternion Ideals and Peirce Decomposition* is the submodule theory of the regular object; cyclic on the unit, faithful, free of rank one on $\{e_0\}$, a generator and the identity of the tensor product, $M\otimes_\mathbb{B}{}_\mathbb{B}\mathbb{B}\cong M$ and ${}_\mathbb{B}\mathbb{B}\otimes_\mathbb{B}N\cong N$; the endomorphism rings $\operatorname{End}_\mathbb{B}(\mathbb{B}_\mathbb{B})\cong\mathbb{B}$, $\operatorname{End}_\mathbb{B}({}_\mathbb{B}\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ and $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})=\mathbb{C}e_0$; the defining module $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde T\}$ as the unique simple left module, with the left action in the idempotent basis and the isomorphism $\Phi(e_k)=-i\sigma_k$; the classification, every left module a direct sum $S^{\oplus k}$ and every module projective; ${}_\mathbb{B}\mathbb{B}\cong S\oplus S$, so that $S\cong\mathbb{C}^2$ and the minimal left ideals $L_\ell$ are indexed by the lines of $\mathbb{C}^2$; the parity criterion for freeness, $S^{\oplus k}$ free iff $k$ is even, so that $S$ is projective and not free; the endomorphism algebras $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$, $\operatorname{Hom}_\mathbb{B}(S^{\oplus m},S^{\oplus n})\cong M_{n\times m}(\mathbb{C})$, $\operatorname{End}_\mathbb{B}(S^{\oplus k})\cong M_k(\mathbb{C})$ with automorphism group $\mathrm{GL}_k(\mathbb{C})$, and the double centralizer $\operatorname{End}_\mathbb{C}(S)=\mathbb{B}$; the standard bimodule ${}_\mathbb{B}S_\mathbb{C}$ with its commuting actions, the dual $S^*\cong S$ and quaternion conjugation as the adjugate $\Phi(\tilde Q^{\natural})=\varepsilon\Phi(\tilde Q)^{\mathrm T}\varepsilon^{-1}$; the Morita equivalence $\operatorname{Mod}(\mathbb{B})\cong\operatorname{Mod}(\mathbb{C})$ and the doubling of every complex dimension; the degeneration of the naive torsion and the torsion-freeness of the category; the real structures of the modules obtained from $\mathbb{H}$ by extension of scalars, exactly the free ones; and $\mathbb{B}$ von Neumann regular and self-injective, so that ${}_\mathbb{B}\mathbb{B}$ is a projective generator and an injective cogenerator. The norm, its vanishing, the invertibility criterion and the group of units are in *Biquaternion Norm and Invertibility*; the group-theoretic representations are in *Biquaternion Rotations and Lorentz Transformations*; the $4\times4$ regular matrices are in *Biquaternion 4×4 Regular Matrix Element Representation*; and the involution, the twist and the canonical form are in *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*. -->
 
 ### <a href="articles_maths/the-enveloping-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure</a>
-
 <!-- the enveloping algebra $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{op}}$ and the sandwich action $(x\otimes y^{\mathrm{op}})\cdot z=xzy$; $\mathbb{B}^{\mathrm e}\cong\mathrm{End}_\mathbb{C}(\mathbb{B})\cong M_4(\mathbb{C})$, faithful and exhausting the $\mathbb{C}$-linear operators; the Conway operator basis $e_n[\,]e_m$ with $(e_n[\,]e_m)(z)=e_nze_m$, the sixteen operators a basis, the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$ and the one-sided operators as the edge rows; the antisymmetric, diagonal and diagonal-less symmetric functions $A\{a\}$, $D\{d\}$, $S\{s\}$ and their $4\times4$ matrix displays in the coordinate order $(e_1,e_2,e_3,e_0)$; the failure of the method from three to four dimensions; the left and right multiplications $L_a=a\otimes\mathbb 1^{\mathrm{op}}$, $R_b=\mathbb 1\otimes b^{\mathrm{op}}$ as two commuting copies of $\mathbb{B}$ and $\mathbb{B}^{\mathrm{op}}$, of the same algebraic type; the two-sided operators as the elementary tensors; the regular bi-module $_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ as a left $\mathbb{B}^{\mathrm e}$-module; the $32$-dimensional kernel over $\mathbb{R}$, exactly the redundancy of the central $i$; the reading of the left-versus-right matter-representation question, and Fauser's caution on the iso-spin identification; distinct from the Lie-theoretic *Universal Enveloping Algebras*. Function association, the scalar form $\mathrm{Sc}(XY)$ of signature $(1,3)$, its Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ and the transposes $F^{\approx}=DF^{\mathsf T}D$ and $\bar F^{\approx}=DF^{*}D$ are a form and are purged from this article to *Association and the Transpose on the Biquaternion Algebra*. -->
 
 ### <a href="articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.html">Biquaternion Square Roots of Minus One, Zero and Plus One</a>
-
-<!-- the square roots of the three central values $-1$, $0$ and $+1$; the problem and its reduction by the vector-part decomposition to two cases; the pure roots; the classification of the roots of $-1$ as the trivial, the real and the non-trivial families, each stated explicitly; the roots of $0$ as the element $0$ together with the pure elements of vanishing complex square $Q_1^2+Q_2^2+Q_3^2=0$, the nilpotents, with $e_1+ie_2$ as the worked instance; the roots of $+1$ as $\tilde P i$; the relation to the idempotents and to the zero divisors, with the roots of $-1$ and $+1$ as units and the nonzero roots of $0$ as zero divisors; the free real parameters of the three families; the roots read in the complex bilinear product, the other three products having different squares and different roots. The classification of $\tilde P^2=\tilde Q$ for a general $\tilde Q$, by the same vector–scalar split, is *Biquaternion Square Roots of a General Element* and is cited and not reproduced; the structure of the zero-divisor set is *Biquaternion Zero Divisors*. -->
+<!-- the square roots of the three central values $-1$, $0$ and $+1$; the problem and its reduction by the vector-part decomposition to two cases; the pure roots; the classification of the roots of $-1$ as the trivial, the real and the non-trivial families, each stated explicitly; the roots of $0$ as the element $0$ together with the pure elements of vanishing complex square $Q_1^2+Q_2^2+Q_3^2=0$, the nilpotents, with $e_1+ie_2$ as the worked instance; the roots of $+1$ as $\tilde P i$; the relation to the idempotents and to the zero divisors, with the roots of $-1$ and $+1$ as units and the nonzero roots of $0$ as zero divisors; the free real parameters of the three families; the roots read in the general plain bilinear product, the other three products having different squares and different roots. The classification of $\tilde P^2=\tilde Q$ for a general $\tilde Q$, by the same vector–scalar split, is *Biquaternion Square Roots of a General Element* and is cited and not reproduced; the structure of the zero-divisor set is *Biquaternion Zero Divisors*. -->
 
 ### <a href="articles_maths/biquaternion-square-roots-of-a-general-element.html">Biquaternion Square Roots of a General Element</a>
+<!-- the problem $\tilde P^2=\tilde Q$ for an arbitrary $\tilde Q$; the method free of Clifford algebras, norms and forms, by the same vector–scalar split that solves the central values; the two equations $2P_0\boldsymbol{P}=\boldsymbol{Q}$ and $P_0^2-(\boldsymbol{P},\boldsymbol{P})=Q_0$; the two cases according to whether the vector part $\boldsymbol{Q}$ vanishes; the reduced quadratic $4x^2-4Q_0x-(\boldsymbol{Q},\boldsymbol{Q})=0$ for $x=P_0^2$, of discriminant $16n$ with the conjugate scalar $n=Q_0^2+Q_1^2+Q_2^2+Q_3^2$, the scalar of $\tilde Q\tilde Q^{\natural}=ne_0$, and the pair $\pm(\sqrt{x}\,e_0+\boldsymbol{Q}/(2\sqrt{x}))$ from each nonzero solution; the complex-scalar case, with the elements $\pm\sqrt{Q_0}e_0$ and the four-real-parameter family of pure $\boldsymbol{P}$ of complex square $-Q_0$, the nilpotent cone at $\tilde Q=0$; the classification of no root, two roots, four roots and continuum, with the roots stated in each case; the specialisation to the three central values, cited to the companion article and used as a consistency check; the worked examples, verified by squaring. This article owns the classification of $\tilde P^2=\tilde Q$; the Clifford structure of the algebra, proved in *The Clifford Algebra Representation*, is a later topology article and is not used. -->
 
-<!-- the problem $\tilde P^2=\tilde Q$ for an arbitrary $\tilde Q$; the method free of Clifford algebras, norms and forms, by the same vector–scalar split that solves the central values; the two equations $2P_0\boldsymbol{P}=\boldsymbol{Q}$ and $P_0^2-(\boldsymbol{P},\boldsymbol{P})=Q_0$; the two cases according to whether the vector part $\boldsymbol{Q}$ vanishes; the reduced quadratic $4x^2-4Q_0x-(\boldsymbol{Q},\boldsymbol{Q})=0$ for $x=P_0^2$, of discriminant $16n$ with the conjugate scalar $n=Q_0^2+Q_1^2+Q_2^2+Q_3^2$, the scalar of $\tilde Q\tilde Q^{\natural}=ne_0$, and the pair $\pm(\sqrt{x}\,e_0+\boldsymbol{Q}/(2\sqrt{x}))$ from each nonzero solution; the complex-scalar case, with the elements $\pm\sqrt{Q_0}e_0$ and the four-real-parameter family of pure $\boldsymbol{P}$ of complex square $-Q_0$, the nilpotent cone at $\tilde Q=0$; the classification of no root, two roots, four roots and continuum, with the roots stated in each case; the specialisation to the three central values, cited to the companion article and used as a consistency check; the worked examples, verified by squaring. This article owns the classification of $\tilde P^2=\tilde Q$; the Clifford structure of the algebra, proved in *The Clifford Structure of the Biquaternion Algebra*, is a later topology article and is not used. -->
-
-### <a href="articles_maths/biquaternion-zero-divisors.html">Biquaternion Zero Divisors</a>
-
-<!-- definition; the two families, pure and non-pure; the square of a pure and of a non-pure biquaternion; the criterion in terms of the scalar part, which needs no norm; the bivector (real two-vector) form of the pure zero divisors, with the orthogonality and equal-length conditions and the dimension count; the associated idempotent; the structure of each family and the comparison table; the union; the zero divisor set. The criterion by the vanishing of the norm needs a distance and is in *Biquaternion Norm and Invertibility*. -->
-
-### <a href="articles_maths/the-six-subspaces-and-the-elements.html">The Six Subspaces and the Elements</a>
-
-<!-- the elements of the six distinguished subspaces read by the norm $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ and by the square: the criterion table over the six, $A\neq0$, $(\mathbf{P},\mathbf{P})\neq0$, $h\neq0$, $h\neq0$, $a_0^2\neq(\mathbf{p},\mathbf{p})$, $(\mathbf{q},\mathbf{q})\neq b_0^2$, the theorem that the centre, the quaternion and the anti-quaternion subspaces consist of $0$ and units while the vector, Hermitian and anti-Hermitian subspaces carry the zero divisors; the pure zero divisors of the vector subspace, the nonzero solutions of $(\mathbf{P},\mathbf{P})=0$, square-zero and cut out as the $r(\hat u+i\hat v)$ over an orthonormal pair of directions, against the non-pure ones of the two Hermitian subspaces, the nonzero complex multiples of the Hermitian idempotents and never square-zero; and the roots of $-1$, $\pm i$ in the centre, the anti-quaternion and the anti-Hermitian subspaces, the unit real sphere in the vector, quaternion and anti-Hermitian subspaces, the four-parameter non-trivial family confined to the vector subspace, none at all in $\mathbb{M}_+$, together with the companion roots of $0$, the nilpotent cone of the vector subspace, and of $+1$, the table transported by multiplication by $i$. -->
-
-### <a href="articles_maths/the-six-subspaces-under-the-complex-bilinear-form.html">The Six Subspaces under the Complex Bilinear Form</a>
-
-<!-- the restriction theory of the entry point's form on the six distinguished real subspaces: the six restriction matrices in the natural real bases, of signatures $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(1,3)$ on the quaternion subspace, $(3,1)$ on the anti-quaternion subspace, $(4,0)$ on the Hermitian subspace and $(0,4)$ on the anti-Hermitian subspace; the two definite rows and the maximal definite subspaces of the realified $(4,4)$; the isotropic lines of the four indefinite rows, with one null element each and the null-cone dimensions; the isometry groups of the restrictions, $O(1,1)$, $O(3,3)$, $O(1,3)$, $O(3,1)$, $O(4)$ and $O(4)$; the orthogonal splitting $\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B})$; and the comparison with the quaternion bilinear table. It does not re-derive the form. -->
+##### Form
 
 ### <a href="articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.html">Association and the Transpose on the Biquaternion Algebra</a>
-
 <!-- the transpose and adjoint calculus of the entry point's form: association $F^{\approx}$ defined by $\mathrm{Sc}(F\tilde R\,\tilde S)=\mathrm{Sc}(\tilde R\,F^{\approx}\tilde S)$ as the transpose for the indefinite form; the algebra identities $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$, $L_a^{\approx}=R_a$ and $R_b^{\approx}=L_b$, with $(FG)^{\approx}=G^{\approx}F^{\approx}$; the matrix formula $F^{\approx}=DF^{\mathsf T}D$, the plain transpose exactly for the operators fixing $e_0$ and preserving the vector part; and the identity $\bar F^{\approx}=DF^{*}D$ against the Hermitian adjoint, collapsing to $\bar F^{\approx}=F^{*}=F^{-1}$ on the vector-preserving unitaries. It cites the general transpose of a bilinear form and is kept apart from the dagger. It was purged from *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*. -->
+### <a href="articles_maths/the-six-subspaces-under-the-general-plain-algebra-of-biquaternions.html">The Six Subspaces under the General Plain Algebra of Biquaternions</a>
+<!-- the restriction theory of the entry point's form on the six distinguished real subspaces: the six restriction matrices in the natural real bases, of signatures $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(1,3)$ on the quaternion subspace, $(3,1)$ on the anti-quaternion subspace, $(4,0)$ on the Hermitian subspace and $(0,4)$ on the anti-Hermitian subspace; the two definite rows and the maximal definite subspaces of the realified $(4,4)$; the isotropic lines of the four indefinite rows, with one null element each and the null-cone dimensions; the isometry groups of the restrictions, $O(1,1)$, $O(3,3)$, $O(1,3)$, $O(3,1)$, $O(4)$ and $O(4)$; the orthogonal splitting $\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B})$; and the comparison with the general quaternionic bilinear table. It does not re-derive the form. -->
 
-### <a href="articles_maths/the-biquaternion-algebra-in-the-2x2-matrix-representation.html">The Biquaternion Algebra in the $2\times2$ Matrix Representation</a>
+##### Operators
 
-<!-- the complex bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ and the plain product read on the $2\times2$ realization $\Phi(e_0)=I$, $\Phi(e_k)=-i\sigma_k$: the product is the matrix product, $\Phi(\tilde P)\Phi(\tilde Q)=\Phi(\tilde P\tilde Q)$; the form is the plain trace pairing $\tfrac12\operatorname{Tr}(\Phi(\tilde P)\Phi(\tilde Q))$, with diagonal $\sum_\mu\varepsilon_\mu Q_\mu^2$, coefficient Gram matrix the sign matrix $E$, real signature $(4,4)$, isotropic cone of real dimension $6$ and isometry group $O_4(\mathbb{C})$; the units $GL_2(\mathbb{C})$, the zero divisors the singular matrices, the invariants $\operatorname{Tr}\Phi=2Q_0$ and $\det\Phi=\sum_\mu Q_\mu^2$; the inner automorphisms and the transpose as isometries. -->
+### <a href="articles_maths/two-sided-operators-on-the-general-plain-algebra-of-biquaternions.html">Two-Sided Operators on the General Plain Algebra of Biquaternions</a>
+<!-- the products $L_{\tilde A}R_{\tilde B}(\tilde Y)=\tilde A\tilde Y\tilde B$ of a left and a right multiplication; composition, the adjoint that swaps the two parameters, and the type, form-preserving and multiplicativity criteria of the family, with no norm entering -->
 
-### <a href="articles_maths/the-biquaternion-algebra-in-the-4x4-regular-matrix-representation.html">The Biquaternion Algebra in the $4\times4$ Regular Matrix Representation</a>
+### <a href="articles_maths/one-sided-operators-on-the-general-plain-algebra-of-biquaternions.html">One-Sided Operators on the General Plain Algebra of Biquaternions</a>
+<!-- the left and the right multiplications $L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$ and $R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$, their composition laws and their adjoint: association swaps the two families, the self-adjoint sector is the centre, the skew sector is trivial, and the one-sided automorphisms of the form are $\pm\mathrm{id}$ -->
 
-<!-- the same group on the left regular representation $\rho_L(\tilde Q)(\tilde R)=\tilde Q\tilde R$: the product is the product of the regular matrices, the form is $\tfrac12\operatorname{Tr}(\rho_L(\tilde P)\rho_L(\tilde Q))=2\langle\tilde P,\tilde Q\rangle$ with the same coefficient Gram matrix $E$ and signature $(4,4)$; the two commuting copies $\rho_L(\mathbb{B})$ and $\rho_R(\mathbb{B})$ with $\rho_R(\tilde Q)=E\rho_L(\tilde Q)^{\mathsf T}E$ and $\rho_L(\tilde Q^{\natural})=\rho_L(\tilde Q)^{\mathsf T}$; the invariants $\operatorname{Tr}\rho_L=4Q_0$ and $\det\rho_L=\langle\tilde Q,\tilde Q\rangle_{\natural}^2$; the double centralizer structure and the two minimal left ideals. -->
+### <a href="articles_maths/the-pin-and-spin-groups-of-the-general-plain-algebra-of-biquaternions.html">The Pin and Spin Groups of the General Plain Algebra of Biquaternions</a>
+<!-- the plain twin of the pin and spin article: the quadratic form $q(\tilde A)=\mathrm{Sc}(\tilde A^2)$ of the plain form is not multiplicative, so the shells $\{q=\pm1\}$ are not groups and there is no pin group inside the algebra; what exists is the whole unit group acting by inner automorphisms (the isometry condition is vacuous), the two cosets $\pm\mathrm{Ad}_{\tilde A}$ in $SO_4(\mathbb{C})$, the kernel $\mathbb{C}^\times$ of the action and its normalised section $SL_2(\mathbb{C})$, and the reflections, which are isometries of determinant $-1$ outside the two-sided family -->
 
-### <a href="articles_maths/the-complex-bilinear-form-on-the-biquaternion-algebra.html">The Complex Bilinear Form on the Biquaternion Algebra</a>
+##### Representations
 
-<!-- the entry point of the group, the fourth form, $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$, the polarisation of the quadratic form $\sum_\mu\varepsilon_\mu Q_\mu^2$; $\mathbb{C}$-bilinear, symmetric and non-degenerate, with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ in the coefficient basis, determinant $-1$, inertia $(1,3)$ and realified matrix $\operatorname{diag}(D,-D)$ of signature $(4,4)$; the null quadric $\sum_\mu\varepsilon_\mu Q_\mu^2=0$, of real dimension $6$, smooth off the apex, with its rulings and its maximal totally isotropic dimension $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$, kept distinct from the zero-divisor cone; the level set $\sum_\mu\varepsilon_\mu Q_\mu^2=1$, a non-compact complex quadric of real dimension $6$ that is not a group; the isometry group $O_4(\mathbb{C})$, of complex dimension $6$ and real dimension $12$, with the real forms $O(1,3)$ on the quaternion subspace and the compact $O(4)$ on the Hermitian subspace; and the restriction signature table, stated once and developed in the companion article. It absorbs the former isotropic-structure, level-set and Gram-matrix articles. The companion quaternion bilinear form is $N=\mathrm{Sc}(\tilde P\tilde Q^{\natural})$ of Gram matrix $\mathrm{I}_4$; the four-form comparison is *The Four Pairings of the Biquaternion Algebra*. -->
+### <a href="articles_maths/the-general-plain-algebra-in-the-2x2-matrix-representation.html">The General Plain Algebra in the $2\times2$ Matrix Representation</a>
+<!-- the general plain bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ and the plain product read on the $2\times2$ realization $\Phi(e_0)=I$, $\Phi(e_k)=-i\sigma_k$: the product is the matrix product, $\Phi(\tilde P)\Phi(\tilde Q)=\Phi(\tilde P\tilde Q)$; the form is the plain trace pairing $\tfrac12\operatorname{Tr}(\Phi(\tilde P)\Phi(\tilde Q))$, with diagonal $\sum_\mu\varepsilon_\mu Q_\mu^2$, coefficient Gram matrix the sign matrix $E$, real signature $(4,4)$, isotropic cone of real dimension $6$ and isometry group $O_4(\mathbb{C})$; the units $GL_2(\mathbb{C})$, the zero divisors the singular matrices, the invariants $\operatorname{Tr}\Phi=2Q_0$ and $\det\Phi=\sum_\mu Q_\mu^2$; the inner automorphisms and the transpose as isometries; the congruence $S^{\mathsf T}ES$ and the automorphism group theorem $T^{\mathsf T}ET=E$, with $O_4(\mathbb{C})$ of complex dimension $6$ and real dimension $12$, its real forms $O(4)$ and $O(1,3)$ and the remark that the real-linear automorphisms form the larger $O(4,4)$. -->
+
+### <a href="articles_maths/the-general-plain-algebra-in-the-4x4-regular-matrix-representation.html">The General Plain Algebra in the $4\times4$ Regular Matrix Representation</a>
+<!-- the same group on the left regular representation $\rho_L(\tilde Q)(\tilde R)=\tilde Q\tilde R$: the product is the product of the regular matrices, the form is $\tfrac12\operatorname{Tr}(\rho_L(\tilde P)\rho_L(\tilde Q))=2\langle\tilde P,\tilde Q\rangle$ with the same coefficient Gram matrix $E$ and signature $(4,4)$; the two commuting copies $\rho_L(\mathbb{B})$ and $\rho_R(\mathbb{B})$ with $\rho_R(\tilde Q)=E\rho_L(\tilde Q)^{\mathsf T}E$ and $\rho_L(\tilde Q^{\natural})=\rho_L(\tilde Q)^{\mathsf T}$; the invariants $\operatorname{Tr}\rho_L=4Q_0$ and $\det\rho_L=\langle\tilde Q,\tilde Q\rangle_{\natural}^2$; the double centralizer structure and the two minimal left ideals; the congruence $S^{\mathsf T}ES$ and the corresponding automorphism group theorem $T^{\mathsf T}ET=E$ with its real forms. -->
 
 #### Biquaternions as a Symmetric Plain Algebra (SPA) over $\mathbb{C}$
 
+##### Common Theory
+
+### <a href="articles_maths/introduction-to-the-symmetric-plain-algebra-of-biquaternions.html">Introduction to the Symmetric Plain Algebra of Biquaternions</a>
+<!-- the symmetric part of the plain product read as a multiplication, $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)=\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]+P_0\mathbf{Q}+Q_0\mathbf{P}$, the plain product with the cross term dropped; the class, which is $\mathbb{C}$-bilinear; commutativity; the two-sided unit $e_0$; the Jordan identity, which this operation alone of the twelve satisfies, so that the space is a commutative unital Jordan algebra over $\mathbb{C}$; the sixteen products of the basis; the square $\tilde Q\bullet\tilde Q=\bigl[Q_0^2-(\mathbf{Q},\mathbf{Q})\bigr]+2Q_0\mathbf{Q}$ and its polarisation; the reconstruction $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$; and the placement of the block among the twelve. The general construction of the parts is *The Symmetric and Antisymmetric Parts of an Algebra Product*; the order-symmetry reading is *Scalar / Vector decomposition of the Biquaternion Complex Products*; the product it splits is *Introduction to the General Plain Algebra of Biquaternions*. -->
+
+##### Commutative and Unital Theory
+
+### <a href="articles_maths/the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.html">The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</a>
+<!-- the square and the quadratic map $\tilde Q\mapsto\tilde Q\bullet\tilde Q$; the idempotents $\tilde Q\bullet\tilde Q=\tilde Q$ and their identity with the idempotents of the plain product, hence with the pairs $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$; the Jordan inverse and the invertibility criterion of an element in the block, compared with the inverse in the algebra; the generic trace $2Q_0$ and the generic norm $N(\tilde Q)$, the degree two of the block and the isotopy with the two by two matrices; the isotropic cone $\{\tilde Q:N(\tilde Q)=0\}$ and the consequent non-division of the Jordan algebra; the elements of square zero. The idempotents in the plain product are *Biquaternion Idempotents and Projections*; the norm form and the invertibility criterion are *Biquaternion Norm and Invertibility*; the algebraic norm is *Biquaternion Forms and Algebraic Norms*. -->
+
+##### Form
+
+### <a href="articles_maths/the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra.html">The Trace Form and the Invariance of the Symmetric Plain Algebra</a>
+<!-- the trace form $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$, its identity with the scalar part of the plain product, its Gram matrix on the real basis and its invariance $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$, which is associativity read on the Jordan product; the polarisation that recovers the product from the form; the operator trace $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})$ and its relation to $\tau$, computed; the trace functional $\tilde Q\mapsto2Q_0$; the restriction of the form to the six subspaces with its rank and its isotropic cone. The plain bilinear form and its operator theory are *Association and the Transpose on the Biquaternion Algebra* and *Two-Sided Operators on the General Plain Algebra of Biquaternions*; here the same form is read as the form of the Jordan algebra. -->
+
+### <a href="articles_maths/the-six-subspaces-under-the-symmetric-plain-algebra-of-biquaternions.html">The Six Subspaces under the Symmetric Plain Algebra of Biquaternions</a>
+<!-- the six distinguished subspaces under the symmetric part of the plain product, one to a section: the closure or the failure of closure of each under $\bullet$, the product rule read on it, the units and the idempotents it contains, its isotropic elements, and the table of the six. The pattern is the one of *The Six Subspaces under the General Plain Algebra of Biquaternions*; the subspaces themselves are *Introduction to the Six Subspaces* and their relations *Comparison of the Six Subspaces*. -->
+
+##### Operators
+
+### <a href="articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra.html">The Multiplication Operators of the Symmetric Plain Algebra</a>
+<!-- the multiplication operators $L^{\bullet}_{\tilde A}$ and $R^{\bullet}_{\tilde A}$ of the block, their coincidence because the product is commutative, and their identity with the sum $L_{\tilde A}+R_{\tilde A}$ of the two operators of the plain product; the composition $L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}$ and the failure of multiplicativity; the adjoint of $L^{\bullet}_{\tilde A}$ with respect to the trace form, computed; the Jordan identity read on the operators, $[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde A^{\bullet2}}]=0$; the derivations and the inner derivations of the block; the automorphisms and the structure group of the Jordan algebra taken as groups of linear maps, with their Lie algebras. The plain operators are *Two-Sided Operators on the General Plain Algebra of Biquaternions* and *One-Sided Operators on the General Plain Algebra of Biquaternions*. -->
+
+##### Representations
+
+### <a href="articles_maths/the-symmetric-plain-algebra-in-the-matrix-representations.html">The Symmetric Plain Algebra in the Matrix Representations</a>
+<!-- the symmetrised product in the two matrix models of the chapter: under $\mathbb{B}\cong M_2(\mathbb{C})$ the product is $\tfrac12(XY+YX)$, the symmetric part of the matrix product, with $\operatorname{Tr}\tfrac12(XY+YX)=\operatorname{Tr}(XY)$ and its relation to the generic trace; in the four by four regular model the operator $\tfrac12\bigl(\rho_L(\tilde P)\rho_L(\tilde Q)+\rho_L(\tilde Q)\rho_L(\tilde P)\bigr)$ and its identity with $\rho_L(\tilde P\bullet\tilde Q)$; the matrix form of the trace form, of the idempotents and of the isotropic cone. The two models are *The General Plain Algebra in the $2\times2$ Matrix Representation* and *The General Plain Algebra in the $4\times4$ Regular Matrix Representation*. -->
+
 #### Biquaternions as an Antisymmetric Plain Algebra (APA) over $\mathbb{C}$
+
+##### Common Theory
+
+### <a href="articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.html">Introduction to the Antisymmetric Plain Algebra of Biquaternions</a>
+<!-- the antisymmetric part of the plain product read as a multiplication, $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$, scalar part zero and vector part the cross product of the two vector parts; the class, which is $\mathbb{C}$-bilinear; alternation and the vanishing of the diagonal; the image in the vector subspace $\mathrm{Vect}(\mathbb{B})$ and the absence of a unit; the Jacobi identity, which this operation alone of the twelve satisfies, so that it is a Lie product; the identity of the operation with half the commutator of the algebra; the sixteen brackets of the basis; the reconstruction $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$; and the placement of the block among the twelve. The general construction of the parts is *The Symmetric and Antisymmetric Parts of an Algebra Product*; the Lie structure it carries is *The Unitary Lie Algebra*. -->
+
+##### Lie Theory
+
+### <a href="articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra.html">The Lie Algebra of the Antisymmetric Plain Algebra</a>
+<!-- the alternating bracket $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$ and the Lie algebra it makes of $\mathbb{B}$: the centre, which is the centre $\mathbb{C}_{\mathbb{B}}$ of the algebra, and the quotient by it; the image $\mathrm{Vect}(\mathbb{B})$, closed under the bracket, a Lie subalgebra of complex dimension three and real dimension six; the isomorphism of that image with $\mathfrak{sl}(2,\mathbb{C})$, the identification of the quaternion subspace with $\mathbb{R}e_0\oplus\mathfrak{su}(2)$ and of the anti-Hermitian subspace with $\mathfrak{u}(2)$, and the derived algebra $\mathfrak{su}(2)$; the derived series and the readings of solvability and simplicity; the enveloping algebra; the ideals and the quotients of the bracket. The subspaces are *Introduction to the Six Subspaces*; the readings on them are *The Six Subspaces and the Four Complex Products*; the unitary group and the exponential are *The Unitary Lie Algebra* and the Lie-group article of the chapter. -->
+
+##### Form
+
+### <a href="articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.html">The Killing Form of the Antisymmetric Plain Algebra</a>
+<!-- the Killing form $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q}\bigr)$ of the bracket of the block, computed on a general pair and on the basis; its rank, its radical and its invariance; its relation to the plain bilinear form on the image, the proportionality constant computed; the Cartan criteria read on it, semisimplicity and the radical; the Casimir element; the restriction to the six subspaces and the isotropic elements. The plain bilinear form itself is *Association and the Transpose on the Biquaternion Algebra*; the invariant forms of the algebra are *Biquaternion Forms and Algebraic Norms*. -->
+
+### <a href="articles_maths/the-six-subspaces-under-the-antisymmetric-plain-algebra-of-biquaternions.html">The Six Subspaces under the Antisymmetric Plain Algebra of Biquaternions</a>
+<!-- the bracket of the block read on the six distinguished subspaces, one to a section: the vanishing on the centre, the closure of $\mathrm{Vect}(\mathbb{B})$ and its Lie subalgebras, the identifications of the quaternion subspace and of the Hermitian and anti-Hermitian subspaces, the isotropic elements, and the table of the six. The pattern is the one of *The Six Subspaces under the General Plain Algebra of Biquaternions*; the subspaces themselves are *Introduction to the Six Subspaces*. -->
+
+##### Operators
+
+### <a href="articles_maths/the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.html">The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</a>
+<!-- the adjoint map $\operatorname{ad}_{\tilde P}=[\tilde P,\cdot\,]$, its vanishing on the centre, its identity with twice the operator $\mathbf{P}\times$ on the vector subspace, its matrix in the real basis and its trace, zero; the derivation algebra of the block and the identity of the inner derivations with the adjoints; the outer derivations, computed; the automorphism group of the bracket as a group of linear maps and its Lie algebra; the adjoint representation and its kernel, the centre; the structure group. The derivations of the algebra, as opposed to those of the bracket, belong to the block of the algebra; the general operator theory of the plain form is *Two-Sided Operators on the General Plain Algebra of Biquaternions*. -->
+
+##### Representations
+
+### <a href="articles_maths/the-antisymmetric-plain-algebra-in-the-matrix-representations.html">The Antisymmetric Plain Algebra in the Matrix Representations</a>
+<!-- the bracket of the block in the two matrix models of the chapter: under $\mathbb{B}\cong M_2(\mathbb{C})$ the operation is $\tfrac12(XY-YX)$, the skew part of the matrix product, with its identity with the commutator of $\mathfrak{sl}(2,\mathbb{C})$ on the trace-free matrices; the image $\mathrm{Vect}(\mathbb{B})$ read as the trace-free matrices and the kernel as the scalar matrices; the adjoint representation as a six-dimensional real matrix model, its matrices and its invariants; the Killing form and the trace form read on the matrices. The two models are *The General Plain Algebra in the $2\times2$ Matrix Representation* and *The General Plain Algebra in the $4\times4$ Regular Matrix Representation*. -->
 
 #### Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$
 
-### <a href="articles_maths/biquaternions-as-a-general-quaternionic-algebra-gqa-over-c.html">Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$</a>
+##### Common Theory
 
-<!-- the complex quaternionic bilinear product $\tilde P^{\natural}\tilde Q$ read as a multiplication, and the $\mathbb{C}$-algebra it defines: the rule on the four coordinates and its well-definedness; the sixteen products of the basis, first row the identity row and first column the negation of the basis, the three-by-three block the negated quaternion table; the four quaternionic scalar laws and the failure of three of them, so that the product is quaternionic in name and complex in base ring, the whole difference with the plain product being carried by the vector part of the first factor; the reading as the isotope of the complex bilinear product by the $\mathbb{C}$-linear natural conjugation, and the associator $(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural})\tilde R$; non-associativity, the left unit $e_0$ and the absence of a right one, non-commutativity and the trivial centre, with the complex scalars still acting by left multiplication by $Ae_0$; the failure of the alternative, flexible and degree-three identities and the monoid of left multiplications anti-isomorphic to the multiplicative monoid of the algebra; the square as the norm $\tilde Q\star\tilde Q=N(\tilde Q)e_0$, so that the idempotents are $0$ and $e_0$ alone and the nilpotents are the zero divisors; the symmetrisation as the bilinear form and the antisymmetrisation as the corresponding vector form; the behaviour on the scalar line, on the vector part and on the real quaternion subspace, where the product is the plain product with the quaternionic conjugate inserted in the first slot and the splitting $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ is a $\mathbb{Z}/2$-grading; and the two conditions of the derived-operation test, both failing. The product is *The Four Biquaternion Complex Products*, the table is *Comparison Between the Four Biquaternion Products*, the sibling readings are *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$* and *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*, and the general theory of the weak algebra is *Algebras: A General Introduction* and *Non-Associative Algebras and the Property Ladder*. -->
+### <a href="articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.html">Introduction to the General Quaternionic Algebra of Biquaternions</a>
+<!-- the general quaternionic bilinear product $\tilde P^{\natural}\tilde Q$ read as a multiplication, and the $\mathbb{C}$-algebra it defines: the rule on the four coordinates and its well-definedness; the sixteen products of the basis, first row the identity row and first column the negation of the basis, the three-by-three block the negated quaternion table; the four quaternionic scalar laws and the failure of three of them, so that the product is quaternionic in name and complex in base ring, the whole difference with the plain product being carried by the vector part of the first factor; the reading as the isotope of the general plain bilinear product by the $\mathbb{C}$-linear natural conjugation, and the associator $(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural})\tilde R$; non-associativity, the left unit $e_0$ and the absence of a right one, non-commutativity and the trivial centre, with the complex scalars still acting by left multiplication by $Ae_0$; the failure of the alternative, flexible and degree-three identities and the monoid of left multiplications anti-isomorphic to the multiplicative monoid of the algebra; the square as the norm $\tilde Q\star\tilde Q=N(\tilde Q)e_0$, so that the idempotents are $0$ and $e_0$ alone and the nilpotents are the zero divisors; the symmetrisation as the bilinear form and the antisymmetrisation as the corresponding vector form; the behaviour on the scalar line, on the vector part and on the real quaternion subspace, where the product is the plain product with the quaternionic conjugate inserted in the first slot and the splitting $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ is a $\mathbb{Z}/2$-grading; and the two conditions of the derived-operation test, both failing. The product is *The Four Biquaternion Complex Products*, the table is *Comparison Between the Four Biquaternion Products*, the sibling readings are *Introduction to the General Plain Algebra of Biquaternions* and *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, and the general theory of the weak algebra is *Algebras: A General Introduction* and *Non-Associative Algebras and the Property Ladder*. -->
 
 ### <a href="articles_maths/idempotents-of-the-quaternionic-product.html">Idempotents of the Quaternionic Product</a>
-
 <!-- the idempotent equation $\tilde Q\star\tilde Q=\tilde Q$ for the $\mathbb{C}$-bilinear quaternionic multiplication $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$; every square lies in the scalar line, so an idempotent satisfies $\sum_{\mu=0}^{3}Q_\mu^2=Q_0$, whose only solutions are $0$ and $e_0$; why the Hermitian family $\tilde\Pi_+(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ of the sibling sesquilinear multiplication does not survive the reading of the first factor through ${}^{\natural}$, and what replaces it; the same equation read on each of the six distinguished subspaces, of which only the centre, the quaternion subspace and the Hermitian one carry the two trivial idempotents. -->
 
 ### <a href="articles_maths/the-nilpotents-and-the-zero-divisors-of-the-quaternionic-product.html">The Nilpotents and the Zero Divisors of the Quaternionic Product</a>
-
 <!-- the equivalence $\tilde Q^{\natural}\tilde Q=0\iff\sum_{\mu=0}^{3}Q_\mu^2=0\iff\tilde Q$ is a zero divisor of the algebra, proved from the square formula and the unit criterion; the square-zero elements of this multiplication are therefore exactly the elements of norm zero, a real cone of dimension six and not a subspace; the left and the right annihilator of a zero divisor with respect to this multiplication, each of complex dimension two, and the coincidence of the two for **every** element, a unit or a zero divisor alike, because the natural conjugation is an involutive anti-automorphism and exchanges the two annihilators; the contrast with the associative multiplication, whose square-zero elements are the pure ones alone. -->
 
-### <a href="articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.html">The Associator and the Ternary Product of the Quaternionic Product</a>
+##### Non-Associative Theory
 
+### <a href="articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.html">The Associator and the Ternary Product of the Quaternionic Product</a>
 <!-- the associator $(\tilde P^{\natural}\tilde Q)^{\natural}\tilde R-\tilde P^{\natural}(\tilde Q^{\natural}\tilde R)$ of this multiplication, nonzero on explicit triples of basis elements; the failure of flexibility and of the degree-three identity, each with the triple that witnesses it, and each decided on the vector parts; the compatible ternary product of the general theory with its parities in the three variables; the comparison with the associator of the associative multiplication, which vanishes identically. -->
 
 ### <a href="articles_maths/the-symmetrised-quaternionic-product-and-the-hermitian-subspace.html">The Symmetrised Quaternionic Product and the Hermitian Subspace</a>
-
-<!-- the symmetrised operation $\tilde P\circ\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$, commutative, with its two summands exchanged by the conjugation ${}^{\natural}$, and with a value that is **central**, namely $\bigl(P_0Q_0+(\mathbf P,\mathbf Q)\bigr)e_0$, because the two vector parts are opposites and cancel; the scalar coefficient $\beta(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ read on the six subspaces, and the characterisation of the pairs for which the value is Hermitian: it lies in the Hermitian subspace $\mathbb{M}_+$ — indeed in the real line $\mathbb{R}e_0$ — exactly when $\beta$ is real, which holds for every pair drawn from $\mathbb{M}_+$ and from $\mathbb{M}_-$ and for a pair drawn from the vector subspace only when the complex bilinear form $(\mathbf P,\mathbf Q)$ is real, the Hermitian subspace being singled out not by the Hermitian value but by being one of the three subspaces the symmetrisation keeps inside itself, the value of a pair from $\mathbb{M}_-$ leaving that subspace for the real line; the failure of the Jordan identity, at $\tilde P=\tilde Q=e_3$ where $(\tilde P\circ\tilde Q)\circ(\tilde P\circ\tilde P)=e_0$ while $\tilde P\circ(\tilde Q\circ(\tilde P\circ\tilde P))=0$, and the failure in the same place of the weaker laws a Jordan algebra needs; the contrast with the Jordan product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of the associative multiplication, which does satisfy the identity, and the reason the central value cannot be the Jordan product of the algebra. -->
+<!-- the symmetrised operation $\tilde P\circ\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$, commutative, with its two summands exchanged by the conjugation ${}^{\natural}$, and with a value that is **central**, namely $\bigl(P_0Q_0+(\mathbf P,\mathbf Q)\bigr)e_0$, because the two vector parts are opposites and cancel; the scalar coefficient $\beta(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ read on the six subspaces, and the characterisation of the pairs for which the value is Hermitian: it lies in the Hermitian subspace $\mathbb{M}_+$ — indeed in the real line $\mathbb{R}e_0$ — exactly when $\beta$ is real, which holds for every pair drawn from $\mathbb{M}_+$ and from $\mathbb{M}_-$ and for a pair drawn from the vector subspace only when the general plain bilinear form $(\mathbf P,\mathbf Q)$ is real, the Hermitian subspace being singled out not by the Hermitian value but by being one of the three subspaces the symmetrisation keeps inside itself, the value of a pair from $\mathbb{M}_-$ leaving that subspace for the real line; the failure of the Jordan identity, at $\tilde P=\tilde Q=e_3$ where $(\tilde P\circ\tilde Q)\circ(\tilde P\circ\tilde P)=e_0$ while $\tilde P\circ(\tilde Q\circ(\tilde P\circ\tilde P))=0$, and the failure in the same place of the weaker laws a Jordan algebra needs; the contrast with the Jordan product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of the associative multiplication, which does satisfy the identity, and the reason the central value cannot be the Jordan product of the algebra. -->
 
 ### <a href="articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.html">The Left Multiplications of the Quaternionic Product and the Opposite Monoid</a>
-
 <!-- the left multiplications $L_{\tilde P}(\tilde X)=\tilde P^{\natural}\tilde X$ of this multiplication and the composition law $L_{\tilde P}\circ L_{\tilde R}=L_{\tilde R\tilde P}$, which makes them a monoid isomorphic to the opposite of the multiplicative monoid of $\mathbb{B}$ although the multiplication is not associative; the right multiplications, whose law is the direct one; the mixed compositions and the operators they produce; the reading of the monoid row of the property table of *Comparison Between the Four Biquaternion Products*. -->
 
 ### <a href="articles_maths/the-quaternionic-product-on-the-quaternion-subspace.html">The Quaternionic Product on the Quaternion Subspace</a>
-
 <!-- the multiplication restricted to the quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$, where ${}^{\natural}$ is the quaternion conjugation and the product is the plain $\bar hh'$; the left unit it keeps there and the right unit it has not, proved from $\bar he_0=h$ and $h^{\natural}e_0=h^{\natural}$; the restriction to the real vector subspace, where the multiplication is $+(\mathbf u,\mathbf v)e_0-\mathbf u\times\mathbf v$, the Euclidean dot product with the negated cross product, the opposite choice of sign from the plain product's $-(\mathbf u,\mathbf v)+\mathbf u\times\mathbf v$, and the restriction to the real line, where it is the ordinary square of the real coordinate. -->
 
-### <a href="articles_maths/the-quaternion-bilinear-form-on-the-biquaternion-algebra.html">The Quaternion Bilinear Form on the Biquaternion Algebra</a>
+##### Form
 
-<!-- the bilinear form $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$, its polarisation and the complex quadratic space it defines; the restriction of $N$ to each of the six subspaces with its real signature — centre $(1,1)$, vector $(3,3)$, quaternion $(4,0)$, anti-quaternion $(0,4)$, Hermitian $(1,3)$, anti-Hermitian $(3,1)$; the null cone $\{N=0\}$; the multiplicativity; this article gathers the metric readings purged from the six subspace articles and the signature column of *The Six Subspaces and the Four Forms*. -->
+### <a href="articles_maths/the-isotropic-structure-of-the-general-quaternionic-algebra.html">The Isotropic Structure of the General Quaternionic Algebra</a>
+<!-- the null cone $\langle\tilde Q,\tilde Q\rangle_\natural=\sum_\mu Q_\mu^2=0$ of the general quaternionic algebra: the zero-divisor set, non-singular off the apex, the two families of maximal totally isotropic planes and their incidence, and the theorem that the minimal one-sided ideals are exactly the maximal totally isotropic one-sided ideals, with the hyperbolic Peirce Gram matrix; the topology of the cone is *The Topology of the Zero-Divisor Cone*, its projective picture is *The Null Quadric and Its Projective Geometry*, the realified invariants are *The Realification of the Four Forms*, and the restrictions to the six subspaces are *The Six Subspaces under the General Quaternionic Algebra of Biquaternions*. -->
+### <a href="articles_maths/the-six-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.html">The Six Subspaces under the General Quaternionic Algebra of Biquaternions</a>
+<!-- the general quaternionic bilinear form $N$ on the six distinguished real subspaces: signatures $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(4,0)$ on the quaternion subspace, $(0,4)$ on the anti-quaternion subspace, $(1,3)$ on the Hermitian subspace and $(3,1)$ on the anti-Hermitian subspace; the definite rows, the maximal definite subspaces and the comparison with the general plain bilinear form. -->
 
-### <a href="articles_maths/the-clifford-structure-of-the-biquaternion-algebra.html">The Clifford Structure of the Biquaternion Algebra</a>
+##### Operators
 
-<!-- the algebra as a Clifford algebra: the even part $\mathbb{B}\cong\mathrm{Cl}^+_{3,1}\cong\mathrm{Cl}^+_{1,3}$ and the competing labelling; the real and complex identifications $\mathbb{B}\cong\mathrm{Cl}_{3,0}\cong\mathbb{C}\mathrm{l}_2$; the volume element central with square $-1$ as the central scalar imaginary and the complex structure it supplies; the volume element of $\mathrm{Cl}_{3,1}$; the duality and the Hodge star; the four grades against the biquaternion components and the naming trap. The module of the Clifford structure is in *Biquaternion Spin Geometry*; the Clifford algebra of the norm as a quadratic space is in *Biquaternion Norm and Invertibility*. -->
+### <a href="articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.html">Two-Sided Operators on the General Quaternionic Algebra of Biquaternions</a>
+<!-- the twisted two-sided operator $\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}$, the conjugation sandwich $\tilde Y\mapsto\tilde A\tilde Y\tilde A^{\natural}$: quadratic in the parameter with $\Theta_{-\tilde A}=\Theta_{\tilde A}$ and $\Theta_{i\tilde A}=-\Theta_{\tilde A}$, equal to $N(\tilde A)\,\mathrm{Ad}_{\tilde A}$ on the units; the laws $\Theta_{\tilde A}\circ\Theta_{\tilde B}=\Theta_{\tilde A\tilde B}$ and $\Theta_{\tilde A}(\tilde Y)\Theta_{\tilde A}(\tilde Z)=N(\tilde A)\Theta_{\tilde A}(\tilde Y\tilde Z)$, so that it is an algebra automorphism exactly for $N=1$ and multiplicative up to the sign $-1$ for $N=-1$; injectivity up to sign on the units with kernel $\{\pm e_0\}$, and $\Theta_{\tilde A}=0$ only for $\tilde A=0$; the adjoint $(\Theta_{\tilde A})^{N}=\Theta_{\tilde A^{\natural}}$, with self-adjointness exactly for the parameters in the centre or the vector subspace and no nonzero skew-adjoint operator; the criterion that $L_{\tilde A}R_{\tilde B}$ is multiplicative up to the scalar $\tilde B\tilde A$ exactly when $\tilde B\tilde A$ is central, and strictly multiplicative exactly when $\tilde B\tilde A=e_0$, so that up to scalars the multiplicative two-sided products are exactly the twisted ones; the isometry condition $N(\tilde A)=\pm1$; the dagger adjoint $(\Theta_{\tilde A})^{*}=\Theta_{\tilde A^{*}}$, with self-adjointness exactly on $\mathbb{M}_+\cup\mathbb{M}_-$ and unitarity exactly on the slice $a^{*}a=e_0$. The one-sided factors are *One-Sided Operators on the General Quaternionic Algebra of Biquaternions*; the groups are *The Pin and Spin Groups of the General Quaternionic Algebra of Biquaternions*. -->
 
-### <a href="articles_maths/the-six-subspaces-under-the-quaternion-bilinear-form.html">The Six Subspaces under the Quaternion Bilinear Form</a>
-
-<!-- the quaternion bilinear form $N$ on the six distinguished real subspaces: signatures $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(4,0)$ on the quaternion subspace, $(0,4)$ on the anti-quaternion subspace, $(1,3)$ on the Hermitian subspace and $(3,1)$ on the anti-Hermitian subspace; the definite rows, the maximal definite subspaces and the comparison with the complex bilinear form. -->
-
-### <a href="articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-signed-inner-conjugation.html">Two-Sided Operators on the Biquaternion Algebra with Signed Inner Conjugation</a>
-
-<!-- the twisted two-sided operator $\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}$, the signed inner conjugation $\tilde Y\mapsto\tilde A\tilde Y\tilde A^{\natural}$: quadratic in the parameter with $\Theta_{-\tilde A}=\Theta_{\tilde A}$ and $\Theta_{i\tilde A}=-\Theta_{\tilde A}$, equal to $N(\tilde A)\,\mathrm{Ad}_{\tilde A}$ on the units; the laws $\Theta_{\tilde A}\circ\Theta_{\tilde B}=\Theta_{\tilde A\tilde B}$ and $\Theta_{\tilde A}(\tilde Y)\Theta_{\tilde A}(\tilde Z)=N(\tilde A)\Theta_{\tilde A}(\tilde Y\tilde Z)$, so that it is an algebra automorphism exactly for $N=1$ and multiplicative up to the sign $-1$ for $N=-1$; injectivity up to sign on the units with kernel $\{\pm e_0\}$, and $\Theta_{\tilde A}=0$ only for $\tilde A=0$; the adjoint $(\Theta_{\tilde A})^{N}=\Theta_{\tilde A^{\natural}}$, with self-adjointness exactly for the parameters in the centre or the vector subspace and no nonzero skew-adjoint operator; the criterion that $L_{\tilde A}R_{\tilde B}$ is multiplicative up to the scalar $\tilde B\tilde A$ exactly when $\tilde B\tilde A$ is central, and strictly multiplicative exactly when $\tilde B\tilde A=e_0$, so that up to scalars the multiplicative two-sided products are exactly the twisted ones; the isometry condition $N(\tilde A)=\pm1$; the dagger adjoint $(\Theta_{\tilde A})^{*}=\Theta_{\tilde A^{*}}$, with self-adjointness exactly on $\mathbb{M}_+\cup\mathbb{M}_-$ and unitarity exactly on the slice $a^{*}a=e_0$. The one-sided factors are *One-Sided Operators on the Biquaternion Algebra with Signed Inner Conjugation*; the groups are *The Pin and Spin Groups of the Biquaternion Algebra with Signed Inner Conjugation*. -->
-
-### <a href="articles_maths/one-sided-operators-on-the-biquaternion-algebra-with-signed-inner-conjugation.html">One-Sided Operators on the Biquaternion Algebra with Signed Inner Conjugation</a>
-
+### <a href="articles_maths/one-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.html">One-Sided Operators on the General Quaternionic Algebra of Biquaternions</a>
 <!-- the left and right multiplications $L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$ and $R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$: linear and injective in the parameter, invertible exactly for units, with the composition laws $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$, $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$ and $L_{\tilde A}R_{\tilde B}=R_{\tilde B}L_{\tilde A}$, the left law a representation and the right law a representation of the opposite algebra; the commutant of the left multiplications as the right multiplications and the double centraliser as the scalars; the bilinear adjoints $(L_{\tilde A})^{N}=L_{\tilde A^{\natural}}$ and $(R_{\tilde B})^{N}=R_{\tilde B^{\natural}}$, with self-adjointness exactly on the centre and skew-adjointness exactly on the vector subspace, both sectors populated, and the isometry condition $N=1$; the conformal factor $N(L_{\tilde A}\tilde X)=N(\tilde A)N(\tilde X)$ and the determinant $\det L_{\tilde A}=N(\tilde A)^{2}$; the dagger adjoints $(L_{\tilde A})^{*}=L_{\tilde A^{*}}$ and $(R_{\tilde B})^{*}=R_{\tilde B^{*}}$ with the two Hermitian sectors. -->
 
-### <a href="articles_maths/the-biquaternion-quaternionic-algebra-in-the-2x2-matrix-representation.html">The Biquaternion Quaternionic Algebra in the $2\times2$ Matrix Representation</a>
-
-<!-- the quaternion bilinear form $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$ and the quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ read on the $2\times2$ realization: the natural conjugation is the adjugate $\Phi(\tilde Q^{\natural})=\operatorname{adj}\Phi(\tilde Q)=\varepsilon\Phi(\tilde Q)^{\mathsf T}\varepsilon^{-1}$ with $\varepsilon=\Phi(-e_2)$, the product is $\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)$, its square is the scalar matrix $N(\tilde Q)I$; the form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(\Phi(\tilde P)\operatorname{adj}\Phi(\tilde Q))$, with diagonal the determinant $N(\tilde Q)$, coefficient Gram matrix the identity $I_4$, real signature $(4,4)$ split, null set the singular matrices of real dimension $6$ and isometry group $O_4(\mathbb{C})$; the units $GL_2(\mathbb{C})$, the norm-one group $SL_2(\mathbb{C})$, the idempotents $0$ and $e_0$. -->
-
-### <a href="articles_maths/the-biquaternion-quaternionic-algebra-in-the-4x4-regular-matrix-representation.html">The Biquaternion Quaternionic Algebra in the $4\times4$ Regular Matrix Representation</a>
-
-<!-- the same group on the left regular representation: the natural conjugation is the transposition $\rho_L(\tilde Q^{\natural})=\rho_L(\tilde Q)^{\mathsf T}$, the product is $\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)$, the form is $\tfrac12\operatorname{Tr}(\rho_L(\tilde P)\rho_L(\tilde Q)^{\mathsf T})=2\langle\tilde P,\tilde Q\rangle_{\natural}$, with diagonal twice the norm, coefficient Gram matrix the identity $I_4$ of split real signature $(4,4)$, null set the singular regular matrices of rank two and real dimension $6$; the invariants $\operatorname{Tr}\rho_L=4Q_0$ and $\det\rho_L=N(\tilde Q)^2$. -->
-
-### <a href="articles_maths/the-isotropic-structure-of-the-quaternion-bilinear-form.html">The Isotropic Structure of the Quaternion Bilinear Form</a>
-
-<!-- the null cone $\langle\tilde Q,\tilde Q\rangle_\natural=\sum_\mu Q_\mu^2=0$ of the quaternion bilinear form: the zero-divisor cone of real dimension $6$, smooth off the apex, its rulings and isotropic lines, its real dimension on each of the six distinguished subspaces, and the comparison with the null cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ of the complex bilinear form. -->
-
-### <a href="articles_maths/the-pin-and-spin-groups-of-the-biquaternion-algebra-with-signed-inner-conjugation.html">The Pin and Spin Groups of the Biquaternion Algebra with Signed Inner Conjugation</a>
-
+### <a href="articles_maths/the-pin-and-spin-groups-of-the-general-quaternionic-algebra-of-biquaternions.html">The Pin and Spin Groups of the General Quaternionic Algebra of Biquaternions</a>
 <!-- the pin group $\mathrm{Pin}=\{\tilde A:N(\tilde A)=\pm1\}$ and the spin group $\mathrm{Spin}=\{N=1\}=\ker N$, normal of index two with quotient $\{\pm1\}$ through the norm, in the matrix picture $\{\det^{2}=1\}$ and $SL_2(\mathbb{C})$, connected of real dimension $6$; the action $\Theta$ as a group homomorphism with kernel $\{\pm e_0\}$, a two-to-one cover of its image in the orthogonal group of the form; on $\mathrm{Spin}$ the twisted operator is the inner automorphism, with image $\mathrm{Inn}(\mathbb{B})\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C})$ fixing the centre and rotating the vector subspace, the classical two-to-one cover of the rotation group by $SL_2(\mathbb{C})$; the norm-minus-one coset of isometries that are multiplicative only up to the sign; the reflection $\Theta_{\tilde V}|_V=-N(\tilde V)\rho_{\tilde V}$ carried by a vector, with the minus of the odd part, and the generation of the rotations by the reflections, the pin group by the vectors. The general theory is *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. -->
+
+##### Representations
+
+### <a href="articles_maths/the-general-quaternionic-algebra-in-the-2x2-matrix-representation.html">The General Quaternionic Algebra in the $2\times2$ Matrix Representation</a>
+<!-- the general quaternionic bilinear form $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$ and the quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ read on the $2\times2$ realization: the natural conjugation is the adjugate $\Phi(\tilde Q^{\natural})=\operatorname{adj}\Phi(\tilde Q)=\varepsilon\Phi(\tilde Q)^{\mathsf T}\varepsilon^{-1}$ with $\varepsilon=\Phi(-e_2)$, the product is $\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)$, its square is the scalar matrix $N(\tilde Q)I$; the form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(\Phi(\tilde P)\operatorname{adj}\Phi(\tilde Q))$, with diagonal the determinant $N(\tilde Q)$, coefficient Gram matrix the identity $I_4$, real signature $(4,4)$ split, null set the singular matrices of real dimension $6$ and isometry group $O_4(\mathbb{C})$; the units $GL_2(\mathbb{C})$, the norm-one group $SL_2(\mathbb{C})$, the idempotents $0$ and $e_0$. -->
+
+### <a href="articles_maths/the-general-quaternionic-algebra-in-the-4x4-regular-matrix-representation.html">The General Quaternionic Algebra in the $4\times4$ Regular Matrix Representation</a>
+<!-- the same group on the left regular representation: the natural conjugation is the transposition $\rho_L(\tilde Q^{\natural})=\rho_L(\tilde Q)^{\mathsf T}$, the product is $\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)$, the form is $\tfrac12\operatorname{Tr}(\rho_L(\tilde P)\rho_L(\tilde Q)^{\mathsf T})=2\langle\tilde P,\tilde Q\rangle_{\natural}$, with diagonal twice the norm, coefficient Gram matrix the identity $I_4$ of split real signature $(4,4)$, null set the singular regular matrices of rank two and real dimension $6$; the invariants $\operatorname{Tr}\rho_L=4Q_0$ and $\det\rho_L=N(\tilde Q)^2$. -->
 
 #### Biquaternions as a Symmetric Quaternionic Algebra (SQA) over $\mathbb{C}$
 
+##### Common Theory
+
+### <a href="articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.html">Introduction to the Symmetric Quaternionic Algebra of Biquaternions</a>
+<!-- the symmetric part of the quaternionic product read as a multiplication, $\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)=B(\tilde P,\tilde Q)e_0$ with $B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf{P},\mathbf{Q})$, which is the quaternion form of *Comparison Between the Four Biquaternion Products* read as a product; the class, which is $\mathbb{C}$-bilinear; commutativity; the image in the centre $\mathbb{C}_{\mathbb{B}}$ and the absence of a unit; the failure of the Jordan identity with the witness $x=y=e_1$, where the two sides are $0$ and $e_0$; the sixteen products of the basis, all central; the reconstruction $\mathrm{GQA}=\mathrm{SQA}+\mathrm{AQA}$; and the placement of the block among the twelve. The general construction of the parts is *The Symmetric and Antisymmetric Parts of an Algebra Product*; the product it splits is *Introduction to the General Quaternionic Algebra of Biquaternions*. -->
+
+##### Commutative Theory
+
+### <a href="articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.html">The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</a>
+<!-- the product as a pairing with values in the centre, $(\tilde P,\tilde Q)\mapsto B(\tilde P,\tilde Q)e_0$; the two-sided annihilator $\{\tilde Q:B(\tilde Q,\tilde R)=0\ \text{for every}\ \tilde R\}$, computed and shown to be zero because the form is non-degenerate; the rank of the product as a bilinear map; the isotropic cone $\{\tilde Q:B(\tilde Q,\tilde Q)=0\}$, its two families and its complex dimension; the square-zero elements $\tilde Q\bullet\tilde Q=0$, which are exactly the isotropic ones; the relation of the isotropic elements of the block to the zero divisors of the general quaternionic algebra and to the norm cone; the idempotents, none off the origin. The isotropic structure of the general quaternionic algebra is *The Isotropic Structure of the General Quaternionic Algebra*; the zero divisors of the algebra are *Biquaternion Zero Divisors*; the norm and its cone are *Biquaternion Norm and Invertibility*. -->
+
+##### Form
+
+### <a href="articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.html">The Quaternion Form as a Product on the Symmetric Quaternionic Algebra</a>
+<!-- the identification of the block with the quaternion form read as a product, $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$; the Gram matrix of the form on the algebra basis, which is the identity, and its signature on the real basis and on the real subspaces; the non-degeneracy and the vanishing of the radical; the trace functional and the trace form of the block, computed; the invariance of the form under the product, computed and stated whether it holds or fails; the restriction of the form to the six subspaces with its rank and its isotropic elements; the coincidence of the form with the Hermitian form $H$ on the real part, where $\mathrm{SQA}=\mathrm{SPS}$. The form $B$ itself, its comparison with the other three forms and its operator theory are *Comparison Between the Four Biquaternion Products* and *The Four Pairings of the Biquaternion Algebra*; here it is read as the multiplication of the block. -->
+
+### <a href="articles_maths/the-six-subspaces-under-the-symmetric-quaternionic-algebra-of-biquaternions.html">The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions</a>
+<!-- the six distinguished subspaces under the symmetric part of the quaternionic product, one to a section: the product rule read on each, the closure of the centre and the failure of closure of the others, the units and the idempotents, the isotropic elements, and the table of the six. The pattern is the one of *The Six Subspaces under the General Quaternionic Algebra of Biquaternions*; the subspaces themselves are *Introduction to the Six Subspaces*. -->
+
+##### Operators
+
+### <a href="articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.html">The Multiplication Operators of the Symmetric Quaternionic Algebra</a>
+<!-- the multiplication operators of the block, $L^{\bullet}_{\tilde A}\tilde R=B(\tilde A,\tilde R)e_0$ and its coincidence with the right operator because the product is commutative; the rank one of every nonzero operator, its image the centre and its kernel the hyperplane $B(\tilde A,\cdot\,)=0$; the trace and the determinant of the operator; the composition $L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}=B(\tilde A,e_0)L^{\bullet}_{\tilde B}$ and the failure of multiplicativity; the adjoint of $L^{\bullet}_{\tilde A}$ with respect to the form; the group of linear maps preserving the form and its Lie algebra, taken as groups of linear maps and never as a metric group; the structure group of the block. The operators of the general quaternionic algebra are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*; the groups preserving the forms of the algebra are *The Unitary Group of the Biquaternion Algebra* and its companions. -->
+
+##### Representations
+
+### <a href="articles_maths/the-symmetric-quaternionic-algebra-in-the-matrix-representations.html">The Symmetric Quaternionic Algebra in the Matrix Representations</a>
+<!-- the symmetrised product of the block in the two matrix models of the chapter: under $\mathbb{B}\cong M_2(\mathbb{C})$ the symmetrisation of the matrix form of the quaternionic product, written on a general pair with the matrix of ${}^{\natural}$, with the trace and the rank of the resulting endomorphism; in the four by four regular model the operator $\tfrac12\bigl(\rho(\tilde P^{\natural})\rho_L(\tilde Q)+\rho(\tilde Q^{\natural})\rho_L(\tilde P)\bigr)$ read through the matrix of ${}^{\natural}$; the matrix form of the form $B$, of its Gram matrix and of its isotropic cone. The two models are *The General Quaternionic Algebra in the $2\times2$ Matrix Representation* and *The General Quaternionic Algebra in the $4\times4$ Regular Matrix Representation*. -->
+
 #### Biquaternions as an Antisymmetric Quaternionic Algebra (AQA) over $\mathbb{C}$
+
+##### Common Theory
+
+### <a href="articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.html">Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions</a>
+<!-- the antisymmetric part of the quaternionic product read as a multiplication, $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$, scalar part zero and vector part the mixed term with the cross term subtracted; the class, which is $\mathbb{C}$-bilinear; alternation and the vanishing of the diagonal; the pure-vector image $\mathrm{Vect}(\mathbb{B})$ and the absence of a unit; the failure of the Jacobi identity, with the witness $(e_0,e_1,e_2)$ whose cyclic sum is $-e_3$; the identity of the operation with half the quaternionic commutator; the sixteen brackets of the basis; the reconstruction $\mathrm{GQA}=\mathrm{SQA}+\mathrm{AQA}$; and the placement of the block among the twelve. The general construction of the parts is *The Symmetric and Antisymmetric Parts of an Algebra Product*; the product it splits is *Introduction to the General Quaternionic Algebra of Biquaternions*; the two operators of the quaternionic product are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*. -->
+
+##### Alternating Theory
+
+### <a href="articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.html">The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra</a>
+<!-- the cyclic sum of the bracket of the block, its failure to vanish, the witness $(e_0,e_1,e_2)$ with cyclic sum $-e_3$, and the minimal witnesses; the expression of the cyclic sum through the associator of the quaternionic product, which is the Lie-admissibility defect, computed on the witness; the comparison with the three Jacobi failures of the twelve, of which $\mathrm{AQA}$ is the one whose defect comes from non-associativity alone; the derived bracket and the algebra it generates; the alternating centre and the annihilator of the block; the elements whose adjoint operators commute; the failure read on the basis, on the real part and on the six subspaces. The general construction of the parts is *The Symmetric and Antisymmetric Parts of an Algebra Product*; the associator of the quaternionic product is *The Associator and the Ternary Product of the Quaternionic Product*; the failure caused by a sesquilinear slot is *Lie Algebras of Sesqualgebras*. -->
+
+##### Form
+
+### <a href="articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.html">The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</a>
+<!-- the bilinear forms invariant under the block, those $\beta$ with $\beta(\tilde P\star\tilde Q,\tilde R)+\beta(\tilde Q,\tilde P\star\tilde R)=0$, their space, their basis and their dimension, computed on the basis pairs; the vanishing of the trace form, the block being of scalar part zero; the symmetric invariant forms and the alternating ones, separated; the radical of each; the adjoint of the operator $L^{\star}_{\tilde A}$ with respect to a form; the comparison with the Lie case $\mathrm{APA}$, which carries a Killing form, and the substitute computed in the absence of a Jacobi identity; the restriction of each form to the six subspaces. The forms of the general quaternionic algebra are *Comparison Between the Four Biquaternion Products* and *The Four Pairings of the Biquaternion Algebra*; the invariant forms of the algebra are *Biquaternion Forms and Algebraic Norms*. -->
+
+### <a href="articles_maths/the-six-subspaces-under-the-antisymmetric-quaternionic-algebra-of-biquaternions.html">The Six Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions</a>
+<!-- the bracket of the block read on the six distinguished subspaces, one to a section: the vanishing on the centre, the pure-vector image and the failure of closure of the Hermitian and anti-Hermitian subspaces, the elements whose bracket vanishes, the isotropic elements, and the table of the six. The pattern is the one of *The Six Subspaces under the General Quaternionic Algebra of Biquaternions*; the subspaces themselves are *Introduction to the Six Subspaces*. -->
+
+##### Operators
+
+### <a href="articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.html">The Adjoint Operators of the Antisymmetric Quaternionic Algebra</a>
+<!-- the operator $L^{\star}_{\tilde A}$ of the block, $\tilde R\mapsto\tilde A\star\tilde R=P_0(\tilde A)\mathbf{R}-R_0\mathbf{A}-\mathbf{A}\times\mathbf{R}$, its matrix in the real basis, its trace, zero, and its characteristic polynomial; its rank for a general element and the elements for which it drops; the commutator of two such operators and its deviation from $L^{\star}_{\tilde A\star\tilde B}$, which is the operator form of the Jacobi failure; the derivations that the block admits and the inner ones, computed; the structure group and the automorphism group of the bracket as groups of linear maps; the comparison with the Lie case $\mathrm{APA}$. The operators of the general quaternionic algebra are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*. -->
+
+##### Representations
+
+### <a href="articles_maths/the-antisymmetric-quaternionic-algebra-in-the-matrix-representations.html">The Antisymmetric Quaternionic Algebra in the Matrix Representations</a>
+<!-- the bracket of the block in the two matrix models of the chapter: under $\mathbb{B}\cong M_2(\mathbb{C})$ the operation is $\tfrac12$ times the difference of the two twisted matrix products, written out on a general pair with the matrix of ${}^{\natural}$; the image, pure vector, read on the matrices and the kernel; the trace, the determinant and the rank of the operator of the block; the matrix form of the invariant forms of the block and of its failure of the Jacobi identity. The two models are *The General Quaternionic Algebra in the $2\times2$ Matrix Representation* and *The General Quaternionic Algebra in the $4\times4$ Regular Matrix Representation*. -->
 
 #### Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$
 
-### <a href="articles_maths/biquaternions-as-a-general-plain-sesqualgebra-gps-over-c.html">Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$</a>
+##### Common Theory
 
-<!-- the complex sesquilinear product $\tilde P\tilde Q^{*}$ read as a multiplication, and the sesqualgebra it defines: the rule on the four coordinates, the two scalar rules, $\mathbb{C}$-linear in the first slot and conjugate-linear in the second, the base involution being the complex conjugation; the sixteen products of the basis, with diagonal $e_0$ throughout and the first row the negation of the identity row; the reading of the product as the derived operation of the algebra with its conjugate-linear Hermitian involution; the right unit $e_0$ and the absence of a left one, the left action by $e_0$ being the involution; the collapse of *Sesqualgebras*, the algebra being of full type with a nontrivial involution, so that the product is neither associative nor commutative, with the witnesses $(e_0,e_1,e_1)$ and $(e_1,e_2)$; the associator; the involution exchanging the two slots, $(\tilde P\star\tilde Q)^{*}=\tilde Q\star\tilde P$; the Hermitian and skew-Hermitian elements as the two distinguished subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$; the ternary product $\tilde P\tilde Q^{*}\tilde R$, the algebraic $J^{*}$-algebra it defines and the recovery of the multiplication and the involution by inserting the unit; the Hermitian square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ and the algebraic positive cone it generates, with the caution that the square is not the norm; the simplicity of the sesqualgebra, whose two-sided ideals are $0$ and $\mathbb{B}$; the idempotents of the multiplication as the Hermitian idempotents of the algebra; and the comparison that makes the complex sesquilinear product the only derived operation among the four, with the caution that the $\mathbb{C}$-linear ${}^{\natural}$ yields the bilinear structures and requires the star for the sesquilinear one. The product is *The Four Biquaternion Complex Products*, the algebra is *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*, the form is *The Hermitian Form on the Biquaternion Algebra* and the general theory is the sesquilinear block. -->
+### <a href="articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.html">Introduction to the General Plain Sesqualgebra of Biquaternions</a>
+<!-- the general plain sesquilinear product $\tilde P\tilde Q^{*}$ read as a multiplication, and the sesqualgebra it defines: the rule on the four coordinates, the two scalar rules, $\mathbb{C}$-linear in the first slot and conjugate-linear in the second, the base involution being the complex conjugation; the sixteen products of the basis, with diagonal $e_0$ throughout and the first row the negation of the identity row; the reading of the product as the derived operation of the algebra with its conjugate-linear Hermitian involution; the right unit $e_0$ and the absence of a left one, the left action by $e_0$ being the involution; the collapse of *Sesqualgebras*, the algebra being of full type with a nontrivial involution, so that the product is neither associative nor commutative, with the witnesses $(e_0,e_1,e_1)$ and $(e_1,e_2)$; the associator; the involution exchanging the two slots, $(\tilde P\star\tilde Q)^{*}=\tilde Q\star\tilde P$; the Hermitian and skew-Hermitian elements as the two distinguished subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$; the ternary product $\tilde P\tilde Q^{*}\tilde R$, the algebraic $J^{*}$-algebra it defines and the recovery of the multiplication and the involution by inserting the unit; the Hermitian square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ and the algebraic positive cone it generates, with the caution that the square is not the norm; the simplicity of the sesqualgebra, whose two-sided ideals are $0$ and $\mathbb{B}$; the idempotents of the multiplication as the Hermitian idempotents of the algebra; and the comparison that makes the general plain sesquilinear product the only derived operation among the four, with the caution that the $\mathbb{C}$-linear ${}^{\natural}$ yields the bilinear structures and requires the star for the sesquilinear one. The product is *The Four Biquaternion Complex Products*, the algebra is *Introduction to the General Plain Algebra of Biquaternions*, the form is *Biquaternion Norm and Invertibility* and the general theory is the sesquilinear block. -->
 
 ### <a href="articles_maths/projections-of-the-biquaternion-sesqualgebra.html">Projections of the Biquaternion Sesqualgebra</a>
-
 <!-- the idempotents of the sesquilinear multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, the solutions of $\tilde Q\star\tilde Q=\tilde Q$; applying ${}^{*}$ to the equation shows that every such $\tilde Q$ is self-adjoint, so the idempotents are exactly the Hermitian idempotents $\tilde\Pi_+(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ over the real unit vectors $\hat\mu$, a continuum; the contrast with the idempotents of the associative multiplication, the family $\tfrac12(e_0+\xi i)$ over all roots $\xi$ of $-1$, which also contains the non-Hermitian ones; the agreement of the two at $0$ and $e_0$. -->
 
 ### <a href="articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html">The Squares and the Positive Cone of the Biquaternion Sesqualgebra</a>
-
 <!-- the square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$, fixed by the involution ${}^{*}$ for every $\tilde Q$, with scalar part the sum of the modulus squares of the coordinates; the consequence that this square vanishes only at $\tilde Q=0$, against the two bilinear multiplications, whose square-zero elements are the zero divisors; the cone of squares and its relation to the Hermitian cone of the algebra. -->
 
 ### <a href="articles_maths/the-biquaternion-sesqualgebra-is-simple.html">The Biquaternion Sesqualgebra Is Simple</a>
-
 <!-- the theorem that the only two-sided ideals of the sesqualgebra $(\mathbb{B},\star)$ are $0$ and $\mathbb{B}$, although the multiplication is neither associative nor two-sidedly unital; the proof from one element of an ideal and the unit criterion; the minimal one-sided ideals that the elements determine; the comparison with the two-sided ideals of the associative multiplication of *Biquaternion Ideals and Peirce Decomposition*. -->
 
-### <a href="articles_maths/the-ternary-product-and-the-associator-of-the-biquaternion-sesqualgebra.html">The Ternary Product and the Associator of the Biquaternion Sesqualgebra</a>
+##### Non-Associative Theory
 
-<!-- the associator of the sesquilinear multiplication and the ternary product $\{x,y,z\}=(x\star y)\star z^{*}$; the additivity and the parities of the ternary product in the three variables; the Jordan triple identity, satisfied here, so that this ternary product is an algebraic $J^{*}$-triple product; the contrast with the sibling quaternionic sesquilinear multiplication, whose ternary product fails the identity. -->
+### <a href="articles_maths/the-ternary-product-and-the-associator-of-the-biquaternion-sesqualgebra.html">The Ternary Product and the Associator of the Biquaternion Sesqualgebra</a>
+<!-- the associator of the sesquilinear multiplication and the ternary product $\{x,y,z\}=(x\star y)\star z^{*}$; the additivity and the parities of the ternary product in the three variables; the Jordan triple identity, satisfied here, so that this ternary product is an algebraic $J^{*}$-triple product; the contrast with the sibling general quaternionic sesquilinear multiplication, whose ternary product fails the identity. -->
 
 ### <a href="articles_maths/the-left-and-right-multiplications-of-the-biquaternion-sesqualgebra.html">The Left and Right Multiplications of the Biquaternion Sesqualgebra</a>
-
 <!-- the left and the right multiplications $L_{\tilde A}(\tilde X)=\tilde A\star\tilde X$ and $R_{\tilde A}(\tilde X)=\tilde X\star\tilde A$ of the sesquilinear multiplication; the composition $L_{\tilde A}\circ L_{\tilde B}$, which is $\mathbb{C}$-linear and therefore not a left multiplication again, so that these left multiplications form no monoid, unlike those of the two bilinear multiplications; the mixed compositions and the operators they produce. -->
 
 ### <a href="articles_maths/the-sesquilinear-sandwich-on-the-biquaternions.html">The Sesquilinear Sandwich on the Biquaternions</a>
-
 <!-- the sandwich $\tilde X\mapsto\tilde P\star\tilde X\star\tilde Q$ of the sesquilinear multiplication, written out as $\tilde P\tilde X^{*}\tilde Q^{*}$; its conjugate-linearity in the middle argument and its behaviour in the two outer arguments; the ranks it takes as $\tilde P$ and $\tilde Q$ vary; its relation to the ternary product and to the two-sided action of the algebra. -->
 
 ### <a href="articles_maths/the-adjoint-of-the-sesquilinear-sandwich-on-the-biquaternions.html">The Adjoint of the Sesquilinear Sandwich on the Biquaternions</a>
-
 <!-- the adjoint of the sandwich of the sesquilinear multiplication with respect to the Hermitian form of the algebra; the sandwich of the adjoint elements and the identity that exchanges the two; the relation to the adjoint operator of the general theory and to *The Sesquilinear Adjoint Operator*. -->
 
 ### <a href="articles_maths/the-sesquilinear-commutator-and-the-symmetrised-product-on-the-biquaternions.html">The Sesquilinear Commutator and the Symmetrised Product on the Biquaternions</a>
-
 <!-- the commutator and the symmetrised product of the sesquilinear multiplication, the two halves of its general-theory decomposition; which of the Lie and the Jordan identities each of them satisfies, with the witnesses where it does not; the comparison with the commutator and the symmetrised product of the associative multiplication of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. -->
 
+##### Form
+
 ### <a href="articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html">The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra</a>
-
-<!-- the involution of the algebra read on the regular module: the quaternion conjugation and the Hermitian conjugation as the two involutions of the ring, while the coefficient conjugation is an automorphism and the flat is a skew anti-map; the $\sigma$-unitary elements and their groups, $U_{{}^{*}}(\mathbb{B})\cong U(2)$ and $U_{{}^{\natural}}(\mathbb{B})=\mathrm{Sp}(2,\mathbb{C})\cong\mathrm{SL}_2(\mathbb{C})$; the twist $({}_\mathbb{B}\mathbb{B})^{\sigma}\cong\mathbb{B}_\mathbb{B}$, the involution as the bimodule isomorphism onto the $\sigma$-swap, $\sigma(\tilde A\tilde X\tilde B)=\sigma(\tilde B)\sigma(\tilde X)\sigma(\tilde A)$, with the plain swap as the commutative case; the canonical $B$-valued Hermitian form $h(\tilde X,\tilde Y)=\tilde X\tilde Y^{*}$, sesquilinear, Hermitian and non-degenerate, with scalar part $\mathrm{Sc}\,h(\tilde X,\tilde Y)=\langle\tilde Y,\tilde X\rangle$ and associated quadratic form $q(\tilde X)=\tilde X\tilde X^{*}\in\mathbb{M}_+$ and its polarisation; the $\mathbb{B}$-linear isometries as the right multiplications by the unitary elements and the left multiplications as isometries only for the central unitaries $\lambda e_0$, $|\lambda|=1$; the parallel form $h_{{}^{\natural}}(\tilde X,\tilde Y)=\tilde X\tilde Y^{\natural}$ with the bilinear form as its scalar part. The scalar form and its topology are *The Hermitian Form on the Biquaternion Algebra*; the adjoints of the operators are *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*. -->
-
-### <a href="articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html">Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint</a>
-
-<!-- the biquaternion instance of the reality-condition layer: the defining module $S\cong\mathbb{C}^2$ of $\mathbb{B}\cong M_2(\mathbb{C})$ has **complex type**, and the proof is one line peculiar to the algebra -- the volume element of $\mathrm{Cl}_{3,0}$ is central with $\omega^2=-1$ and acts as $c(\omega)=iI=\Phi(i)$, so the complex structure of the module is itself a Clifford element and an antilinear $J$ commuting with the action is killed by its own antilinearity; the conjugate module $\bar S$, inequivalent to $S$ as a complex module and isomorphic to it as a real representation, and the form $\varepsilon=i\sigma_2=\Phi(-e_2)$ realising $\varepsilon\overline{c}(v)\varepsilon^{-1}=c(\bar v)$, a $\mathbb{C}$-linear intertwiner against the $e_k$-action but not against the $\gamma_k$-action; the three real forms of $\mathbb{C}\mathrm{l}_3$ on one $\mathbb{C}^2$ (complex $\mathrm{Cl}_{3,0}$, real $\mathrm{Cl}_{2,1}$, quaternionic $\mathrm{Cl}_{0,3}$) and the competing-labelling trap $c(\gamma_k)=i\,c(e_k)$; the ambient four-dimensional cases and the commuting versus anticommuting normalisations. -->
-
-### <a href="articles_maths/the-six-subspaces-under-the-complex-sesquilinear-form.html">The Six Subspaces under the Complex Sesquilinear Form</a>
-
-<!-- the complex sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ restricted to the six distinguished subspaces: positive definite on all six, of signatures $(2,0)$ on the centre, $(6,0)$ on the vector subspace and $(4,0)$ on each four-dimensional subspace, so that it distinguishes nothing among them; the restrictions $\mathrm{I}_2$, $\mathrm{I}_6$ and four copies of $\mathrm{I}_4$ in the natural real bases; the maximal definite dimensions and the Euclidean structure; the isometry groups $O(2)$, $O(6)$ and four copies of $O(4)$, with the complex-linear subgroups $U(1)$ and $U(3)$; the centre and the vector subspace as the only orthogonal pair; the definite companion of the quaternion sesquilinear form -->
-
-### <a href="articles_maths/the-biquaternion-sesqualgebra-in-the-2x2-matrix-representation.html">The Biquaternion Sesqualgebra in the $2\times2$ Matrix Representation</a>
-
-<!-- the complex sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ and the sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ read on the $2\times2$ realization, where the Hermitian conjugation is the conjugate transpose $\Phi(\tilde Q^{*})=\Phi(\tilde Q)^{\dagger}$ and the product is $\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}$; the form is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\Phi(\tilde P)^{\dagger}\Phi(\tilde Q))=\langle\tilde Q,\tilde P\rangle_{*}$, with diagonal the Euclidean norm $\sum_\mu\lvert Q_\mu\rvert^2$, Frobenius norm $\lVert\Phi(\tilde Q)\rVert_F=\sqrt2\lVert\tilde Q\rVert_E$, positive definite of signature $(8,0)$, null set $\{0\}$, isometry group $U(4)$ with algebra-preserving part $U(2)\times U(2)$ modulo the centre, maximal compact $U(2)$ with $SU(2)\cong\mathrm{Spin}(3)$; the Hermitian subspace is the Hermitian matrices. -->
-
-### <a href="articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html">Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</a>
-
-<!-- the dagger sandwich $\Theta_{\tilde{Q}}(y)=\tilde{Q}y\tilde{Q}^{\dagger}$ as an operator: the positive definite form of the dagger and its Gram matrix; $\tilde{Q}\mapsto\Theta_{\tilde{Q}}$ multiplicative and quadratic, $\Theta_{\tilde{Q}\tilde{R}}=\Theta_{\tilde{Q}}\circ\Theta_{\tilde{R}}$ and $\Theta_{z\tilde{Q}}=|z|^2\Theta_{\tilde{Q}}$ for central $z$, so $\Theta_{i\tilde{Q}}=\Theta_{-\tilde{Q}}=\Theta_{\tilde{Q}}$; the cross term of the failure of additivity; the adjoint $(\Theta_{\tilde{Q}})^{*}=\Theta_{\tilde{Q}^{\dagger}}$; the self-adjoint operators exactly for $\tilde{Q}$ Hermitian up to a central phase, so that the two sectors give one family; no nonzero two-sided operator skew-adjoint; the unitary operators for $\tilde{Q}^{\dagger}\tilde{Q}\in U(1)e_0$; the automorphisms exactly on the slice $U=U(2)$ and the inner automorphisms $U/U(1)\cong SO(3)$; the kernel $U(1)e_0$ of the assignment; the image of the identity and the cone $\{\tilde{Q}\tilde{Q}^{\dagger}\}$; congruence and unitary equivalence with the inertia and the spectrum; worked examples including a null element.-->
-
-### <a href="articles_maths/one-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html">One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</a>
-
-<!-- the left and the right multiplications $L_a(y)=ay$ and $R_b(y)=yb$: linearity and injectivity in the parameter; $L_aL_b=L_{ab}$, $R_aR_b=R_{ba}$ and $L_aR_b=R_bL_a$; $\Theta_a=L_aR_{a^{\dagger}}$; the adjoints $(L_a)^{*}=L_{a^{\dagger}}$ and the faithful $*$-representation on the Hilbert space of the scalar form, two copies of the standard module; the type criteria $L_a$ self-adjoint exactly on $\mathbb{M}_+$, skew-adjoint exactly on $\mathbb{M}_-$, unitary and isometric exactly on the slice $U$; the Lie algebra $L_{\mathbb{M}_-}$ and $e^{L_a}=L_{e^{a}}$; the double centraliser theorem, the commutant of the left multiplications being the right multiplications, and the bicommutant the scalars; the characterisation of the scalar form as a Hermitian Clifford module; the mixed operators $L_aR_b$ and when they are two-sided.-->
-
-### <a href="articles_maths/mixed-inner-conjugation-on-the-biquaternion-algebra-with-hermitian-adjoint.html">Mixed Inner Conjugation on the Biquaternion Algebra with Hermitian Adjoint</a>
-
-<!-- mixed inner conjugation on the biquaternion algebra: the four operators $\Phi^{\theta,\rho}_{\tilde Q}(x)=\theta(\tilde Q)x\rho(\tilde Q)$ with the twist $\theta\in\{\mathrm{id},{}^{*}\}$ (complex conjugation, which is the grade involution of $\mathrm{Cl}_{3,0}$) and the right factor $\rho\in\{\mathrm{inv},{}^{\dagger}\}$; multiplicativity in the parameter and $\mathbb{C}$-linearity in the argument; the horizontal defect $\Phi^{\theta,{}^{\dagger}}=R_{\tilde Q\tilde Q^{\dagger}}\circ\Phi^{\theta,\mathrm{inv}}$ (the right multiplication by the cone element) and the vertical defect $\Phi^{{}^{*},\rho}=L_{{}^{*}(\tilde Q)\tilde Q^{-1}}\circ\Phi^{\mathrm{id},\rho}$ (the twist element, the scalar $(-1)^{g}$ on a homogeneous parameter and $e_0$ exactly on the real quaternions); the adjoint $(\Phi^{\theta,{}^{\dagger}}_{\tilde Q})^{*}=\Phi^{\theta,{}^{\dagger}}_{\tilde Q^{\dagger}}$ and the isometries on the unitary slice; the collapse in two steps, the untwisted pair on $U(2)$ and the twisted pair on the rotation group $SU(2)=U(2)\cap\mathbb{H}_{\mathbb{B}}$, so the central phase $U(1)$ is exactly what the twist detects; the fork between the $\mathrm{Cl}_{1,3}$ reading (grading trivial on the even part) and the $\mathrm{Cl}_{3,0}$ reading (twist $={}^{*}$).-->
-
-### <a href="articles_maths/bilinear-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html">Bilinear Operators on the Biquaternion Algebra with Hermitian Adjoint</a>
-
-<!-- bilinear operators on the biquaternion spinor module $S=\mathbb{B}\tilde\Pi_1$: every form is $b_M(s,t)=s^{\dagger}Mt$, Hermitian exactly when $M$ is, with the adjoint of the bilinear operator and the Clifford-equivariant forms as the multiples of the module form by the commutant; the completeness of the action, $L:\mathbb{B}\to\mathrm{End}_\mathbb{C}(S)$ an isomorphism (the Fierz identity, exact because the algebra is a full matrix algebra), so the four blades are a basis of the endomorphisms and the four bilinear covariants $b_\mu=(s,e_\mu t)$ a basis of the forms; the Fierz coefficients $c_\mu=\tfrac12\mathrm{Tr}(e_\mu^{\dagger}M)$ and the orthogonality $\mathrm{Tr}(e_\mu^{\dagger}e_\nu)=2\delta_{\mu\nu}$; the dagger as the reversion of $\mathrm{Cl}_{3,0}$ at the vectors $ie_k$, giving one Hermitian covariant (the scalar, the module form) and three skew-Hermitian ones, a rule stable across the two Clifford structures the algebra carries; the Hermitian forms as the real four-dimensional $\mathbb{R}\{b_0,ib_1,ib_2,ib_3\}\cong\mathbb{M}_+=H_2(\mathbb{C})$ with the cone of positivity and the $1+3$ centre-vector splitting; the slice $U(2)$ permuting the covariants by $\Gamma\mapsto u^{\dagger}\Gamma u$, fixing the scalar and rotating the triplet by the adjoint representation of $SO(3)$, so the invariants are the multiples of the module form; the defect off the slice.-->
-
-### <a href="articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.html">The Fierz–Kofink Identities and the Classification of Spinors</a>
-
-<!-- the sixteen bilinear covariants $\sigma,\omega,J,K,S$ of a Dirac spinor and the completeness of the Clifford action (the sixteen blades a basis of $M_4(\mathbb{C})$, the four-dimensional completion of the internal Fierz identity of *Bilinear Operators on the Biquaternion Algebra with Hermitian Adjoint*); the scalar Fierz–Kofink identities $J^2=\sigma^2+\omega^2$, $J^2=-K^2$, $J\cdot K=0$, verified on $100$ random spinors, with the tensor identities stated but not reproduced, and the tensor defined with the commutator $\sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ so that $S$ is antisymmetric as its name says, the naive $\bar\psi i\gamma_\mu\gamma_\nu\psi$ differing from it by the symmetric term $i\sigma\eta_{\mu\nu}$ and so leaving the singular classes untouched; the Fierz aggregate or boomerang $Z=\sigma+J+iS+K\gamma_5-i\omega\gamma_5$, $Z^2=4\sigma Z$ and the inversion $\psi=Z\xi$; Lounesto's six classes for a nonzero spinor with $J\neq0$ — regular (Dirac, the $\omega=0$ and the $\sigma=0$ types) and singular (flag-dipole, flagpole, dipole) — with explicit representatives for all six, the vector-versus-norm trap for the null $K$, and the flag-dipole as the type the usual list of Dirac, real and chiral spinors does not exhaust. -->
-
-### <a href="articles_maths/the-hermitian-form-on-the-biquaternion-algebra.html">The Hermitian Form on the Biquaternion Algebra</a>
-
-<!-- the second scalar pairing of the algebra: the Hermitian form $\tilde Q\tilde Q^{*}$ built on the conjugate-linear Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$, its scalar part $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}$, positive definite and zero only at the origin, and its vector part, which need not vanish, with the worked example $(e_0+ie_1)^2=2e_0+2ie_1$ and the Hermitian character $(\tilde Q\tilde Q^{*})^{*}=\tilde Q\tilde Q^{*}$ in $\mathbb{M}_+$, the assignment not being multiplicative; the sesquilinear inner product $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_{\bar\mu}Q_\mu$, linear in the first argument and conjugate-linear in the second, Hermitian by symmetry and non-degenerate, with Gram matrix $\mathrm{I}_4$ and signature $(8,0)$; the real inner product $(\tilde P,\tilde Q)_{\mathbb{R}}=\mathrm{Re}\langle\tilde Q,\tilde P\rangle_{*}$, the completeness and the model $\mathbb{C}^4$ with orthonormal basis $e_0,e_1,e_2,e_3$, the Euclidean norm $\lVert\tilde Q\rVert_E$ and its unit sphere $S^7$; the comparison with the quaternion bilinear form, whose diagonal coincides with the Hermitian one on $\mathbb{H}_{\mathbb{B}}$ and is its negative on $i\mathbb{H}_{\mathbb{B}}$, with the four sector rows. Gathered from the purged sections of *Biquaternions as a Vector Space over $\mathbb{C}$*, and absorbing the former provisional *The Hermitian Form and the Hilbert Structure of the Biquaternion Algebra*. The topology is *The Euclidean Topology of the Biquaternion Algebra*, the compact group is *The Unitary Group of the Biquaternion Algebra*, the module-level origin of the scalar form is *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*. -->
-
-### <a href="articles_maths/the-biquaternion-sesqualgebra-in-the-4x4-regular-matrix-representation.html">The Biquaternion Sesqualgebra in the $4\times4$ Regular Matrix Representation</a>
-
-<!-- the same group on the $*$-representation $\rho_L(\tilde Q^{*})=\rho_L(\tilde Q)^{\dagger}$: the product is $\rho_L(\tilde P)\rho_L(\tilde Q)^{\dagger}$ with square positive semidefinite, the form is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\rho_L(\tilde P)^{\dagger}\rho_L(\tilde Q))=2\langle\tilde Q,\tilde P\rangle_{*}$, positive definite of signature $(32,0)$ on the matrices, Frobenius norm $\lVert\rho_L(\tilde Q)\rVert_F=2\lVert\tilde Q\rVert_E$, isometry group $U(16)$ with algebra-preserving part $U(4)\times U(4)$ modulo the centre; the two-sided action of the norm-one group $SL_2(\mathbb{C})$ on the Hermitian subspace gives the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$. -->
+<!-- the involution of the algebra read on the regular module: the quaternion conjugation and the Hermitian conjugation as the two involutions of the ring, while the coefficient conjugation is an automorphism and the flat is a skew anti-map; the $\sigma$-unitary elements and their groups, $U_{{}^{*}}(\mathbb{B})\cong U(2)$ and $U_{{}^{\natural}}(\mathbb{B})=\mathrm{Sp}(2,\mathbb{C})\cong\mathrm{SL}_2(\mathbb{C})$; the twist $({}_\mathbb{B}\mathbb{B})^{\sigma}\cong\mathbb{B}_\mathbb{B}$, the involution as the bimodule isomorphism onto the $\sigma$-swap, $\sigma(\tilde A\tilde X\tilde B)=\sigma(\tilde B)\sigma(\tilde X)\sigma(\tilde A)$, with the plain swap as the commutative case; the canonical $B$-valued Hermitian form $h(\tilde X,\tilde Y)=\tilde X\tilde Y^{*}$, sesquilinear, Hermitian and non-degenerate, with scalar part $\mathrm{Sc}\,h(\tilde X,\tilde Y)=\langle\tilde Y,\tilde X\rangle$ and associated quadratic form $q(\tilde X)=\tilde X\tilde X^{*}\in\mathbb{M}_+$ and its polarisation; the $\mathbb{B}$-linear isometries as the right multiplications by the unitary elements and the left multiplications as isometries only for the central unitaries $\lambda e_0$, $|\lambda|=1$; the parallel form $h_{{}^{\natural}}(\tilde X,\tilde Y)=\tilde X\tilde Y^{\natural}$ with the bilinear form as its scalar part. The scalar form and its topology are *Biquaternion Norm and Invertibility*; the adjoints of the operators are *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*. -->
 
 ### <a href="articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html">Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</a>
-
-<!-- the biquaternion instance of the positivity of the involution and of the cone: the splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ into the Hermitian and the anti-Hermitian sectors, $H_2(\mathbb{C})$ and $u(2)$, and the self-adjointness of every square $\tilde{Q}^{\dagger}\tilde{Q}$; the positivity $\mathrm{Sc}(\tilde{Q}^{\dagger}\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}>0$ off zero, and the reason it holds notwithstanding the indefinite norm, namely that the dagger is the reversion of the positive definite structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ and not the Clifford conjugation of $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$; the cone $P=\{\tilde{Q}^{\dagger}\tilde{Q}\}=\{\tilde{Q}\tilde{Q}^{\dagger}\}$ of the positive semidefinite Hermitian elements, closed convex pointed and self-dual for the scalar form, of real dimension four; the interior $P^{\circ}$ as the image of the units, singled out by $N(\tilde{Q})\neq0$, against the older isotropic cone of the sector; the cone as the forward light cone $t\ge\lvert\mathbf{u}\rvert$ of the interval form and its extreme rays $vv^{\dagger}$ on the projective line; the polar decomposition $\tilde{Q}=U\lvert\tilde{Q}\rvert$ with $\lvert\tilde{Q}\rvert\in P$ and $U$ in the slice, unique off the null cone, and its relation to the polar element representation; the Cartan involution $\theta(\tilde{Q})=(\tilde{Q}^{\dagger})^{-1}$ with fixed set $U(2)$, its differential $-{}^{\dagger}$, the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ and $\mathbb{B}^{\times}=U(2)\cdot\exp(\mathbb{M}_+)$; the real-quaternion slice as the case where the modulus is scalar. The general theory is in *Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint*.-->
+<!-- the biquaternion instance of the positivity of the involution and of the cone: the splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ into the Hermitian and the anti-Hermitian sectors, $H_2(\mathbb{C})$ and $u(2)$, and the self-adjointness of every square $\tilde{Q}^{\dagger}\tilde{Q}$; the positivity $\mathrm{Sc}(\tilde{Q}^{\dagger}\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}>0$ off zero, and the reason it holds notwithstanding the indefinite norm, namely that the dagger is the reversion of the positive definite structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ and not the Clifford conjugation of $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$; the cone $P=\{\tilde{Q}^{\dagger}\tilde{Q}\}=\{\tilde{Q}\tilde{Q}^{\dagger}\}$ of the positive semidefinite Hermitian elements, closed convex pointed and self-dual for the scalar form, of real dimension four; the interior $P^{\circ}$ as the image of the units, singled out by $N(\tilde{Q})\neq0$, against the older isotropic cone of the sector; the cone as the forward light cone $t\ge\lvert\mathbf{u}\rvert$ of the interval form and its extreme rays $vv^{\dagger}$ on the projective line; the polar decomposition $\tilde{Q}=U\lvert\tilde{Q}\rvert$ with $\lvert\tilde{Q}\rvert\in P$ and $U$ in the slice, unique off the null cone, and its relation to the polar element representation; the Cartan involution $\theta(\tilde{Q})=(\tilde{Q}^{\dagger})^{-1}$ with fixed set $U(2)$, its differential $-{}^{\dagger}$, the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ and $\mathbb{B}^{\times}=U(2)\cdot\exp(\mathbb{M}_+)$; the real-quaternion slice as the case where the modulus is scalar. The general theory is in *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*.-->
 
 ### <a href="articles_maths/hermitian-modules-over-the-biquaternion-algebra-with-hermitian-adjoint.html">Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint</a>
-
-<!-- the biquaternion instance of the Hermitian Clifford modules of the general series: the Hermitian form on a left module over $\mathbb{B}$, sesquilinear for the dagger, and the adjointness axiom $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$, equivalent to the anti-Hermitian sector acting skew-adjointly and the Hermitian sector self-adjointly, so that the action is a $*$-representation; the regular module $\mathbb{B}$ with the scalar form $\mathrm{Sc}(x^{\dagger}y)=\sum_\mu x_\mu^{*}y_\mu$, positive definite, non-degenerate and unique up to a positive scalar; the simple module $S=\mathbb{B}\tilde{\Pi}_1=\mathbb{C}\{\tilde{\Pi}_1,y\}$ with the restriction of the scalar form, Gram matrix $\frac12 I_2$, positive definite; the self-adjointness of the idempotents $\tilde{\Pi}_1^{\dagger}=\tilde{\Pi}_1$ and the absence of any totally isotropic minimal left ideal in $\mathbb{B}$, against the general isotropic example; the uniqueness of the module form by Schur, with $\mathrm{End}_{\mathbb{B}}(S)\cong\mathbb{C}$; the unitary slice $U(2)$ acting by unitaries, with the non-compact slice $SL(2,\mathbb{C})$ not unitary on the module; the Dirac element $D_{\mathrm{alg}}=\sum_k L_{e_k}$, its restriction $-i(\sigma_1+\sigma_2+\sigma_3)$, the square $-3\,\mathrm{id}$, the positive Hermitian square $3\,\mathrm{id}$, the formal self-adjointness of the differential Dirac operator $D^{*}=D$ and the absence of harmonic spinors in the finite model. The general theory is in *Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint* and *Dirac Operators with Hermitian Adjoint*.-->
+<!-- the biquaternion instance of the Hermitian Clifford modules of the general series: the Hermitian form on a left module over $\mathbb{B}$, sesquilinear for the dagger, and the adjointness axiom $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$, equivalent to the anti-Hermitian sector acting skew-adjointly and the Hermitian sector self-adjointly, so that the action is a $*$-representation; the regular module $\mathbb{B}$ with the scalar form $\mathrm{Sc}(x^{\dagger}y)=\sum_\mu x_\mu^{*}y_\mu$, positive definite, non-degenerate and unique up to a positive scalar; the simple module $S=\mathbb{B}\tilde{\Pi}_1=\mathbb{C}\{\tilde{\Pi}_1,y\}$ with the restriction of the scalar form, Gram matrix $\frac12 I_2$, positive definite; the self-adjointness of the idempotents $\tilde{\Pi}_1^{\dagger}=\tilde{\Pi}_1$ and the absence of any totally isotropic minimal left ideal in $\mathbb{B}$, against the general isotropic example; the uniqueness of the module form by Schur, with $\mathrm{End}_{\mathbb{B}}(S)\cong\mathbb{C}$; the unitary slice $U(2)$ acting by unitaries, with the non-compact slice $SL(2,\mathbb{C})$ not unitary on the module; the Dirac element $D_{\mathrm{alg}}=\sum_k L_{e_k}$, its restriction $-i(\sigma_1+\sigma_2+\sigma_3)$, the square $-3\,\mathrm{id}$, the positive Hermitian square $3\,\mathrm{id}$, the formal self-adjointness of the differential Dirac operator $D^{*}=D$ and the absence of harmonic spinors in the finite model. The general theory is in *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint* and *Dirac Operators with Hermitian Adjoint*.-->
 
 ### <a href="articles_maths/hermitian-forms-over-the-biquaternion-algebra-and-the-unitary-witt-group-with-hermitian-adjoint.html">Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint</a>
-
 <!-- the biquaternion instance of the classification of Hermitian forms over a $*$-algebra: the Hermitian forms $h(x,y)$ sesquilinear for the dagger and the Hermitian-sesquilinear forms $h(x,ay)$; the matrix model and the Gram matrix, so that the forms of the rank-one module are the Hermitian elements; the unit form $x^{\dagger}y$ of scalar part $\sum_\mu x_\mu^{*}y_\mu$ and Gram matrix the identity, positive definite, with isometry group the slice $U(e_0)=U(2)$; congruence $H\mapsto S^{\dagger}HS$, the change of the form by a linear operator; the representation of a linear operator by a two-sided operator of the sibling articles, $(x,My)=h(M^{*}x,y)$, so that the form theory is the matrix side of the operator theory; Sylvester's law of inertia, the normal form $\mathrm{diag}(1_p,-1_q,0_r)$, the signature, the rank, the discriminant and their congruence invariance; Hermitian additivity and the orthogonality of the components; the hyperbolic plane and the isotropic and totally isotropic subspaces; Witt's theorems, the cancellation and the extension; the unit form as the reference and the uniqueness of the positive definite class; the Witt group $W(\mathbb{B},{}^{\dagger})\cong\mathbb{Z}$ as the group of the non-degenerate forms modulo the hyperbolic ones, generated by the unit form and the form $\mathrm{diag}(1,-1,-1,-1)$; the exclusion of the quaternion norm $N$, complex and not Hermitian for the dagger, which is the indefinite form of the interval and not a form of the dagger; worked examples with the indefinite, the null and the hyperbolic cases.-->
+
+### <a href="articles_maths/the-six-subspaces-under-the-general-plain-sesqualgebra-of-biquaternions.html">The Six Subspaces under the General Plain Sesqualgebra of Biquaternions</a>
+<!-- the general plain sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ restricted to the six distinguished subspaces: positive definite on all six, of signatures $(2,0)$ on the centre, $(6,0)$ on the vector subspace and $(4,0)$ on each four-dimensional subspace, so that it distinguishes nothing among them; the restrictions $\mathrm{I}_2$, $\mathrm{I}_6$ and four copies of $\mathrm{I}_4$ in the natural real bases; the maximal definite dimensions and the Euclidean structure; the isometry groups $O(2)$, $O(6)$ and four copies of $O(4)$, with the complex-linear subgroups $U(1)$ and $U(3)$; the centre and the vector subspace as the only orthogonal pair; the definite companion of the general quaternionic sesquilinear form -->
+
+##### Operators
+
+### <a href="articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.html">Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions</a>
+<!-- the dagger sandwich $\Theta_{\tilde{Q}}(y)=\tilde{Q}y\tilde{Q}^{\dagger}$ as an operator: the positive definite form of the dagger and its Gram matrix; $\tilde{Q}\mapsto\Theta_{\tilde{Q}}$ multiplicative and quadratic, $\Theta_{\tilde{Q}\tilde{R}}=\Theta_{\tilde{Q}}\circ\Theta_{\tilde{R}}$ and $\Theta_{z\tilde{Q}}=|z|^2\Theta_{\tilde{Q}}$ for central $z$, so $\Theta_{i\tilde{Q}}=\Theta_{-\tilde{Q}}=\Theta_{\tilde{Q}}$; the cross term of the failure of additivity; the adjoint $(\Theta_{\tilde{Q}})^{*}=\Theta_{\tilde{Q}^{\dagger}}$; the self-adjoint operators exactly for $\tilde{Q}$ Hermitian up to a central phase, so that the two sectors give one family; no nonzero two-sided operator skew-adjoint; the unitary operators for $\tilde{Q}^{\dagger}\tilde{Q}\in U(1)e_0$; the automorphisms exactly on the slice $U=U(2)$ and the inner automorphisms $U/U(1)\cong SO(3)$; the kernel $U(1)e_0$ of the assignment; the image of the identity and the cone $\{\tilde{Q}\tilde{Q}^{\dagger}\}$; congruence and unitary equivalence with the inertia and the spectrum; worked examples including a null element.-->
+
+### <a href="articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.html">One-Sided Operators on the General Plain Sesqualgebra of Biquaternions</a>
+<!-- the left and the right multiplications $L_a(y)=ay$ and $R_b(y)=yb$: linearity and injectivity in the parameter; $L_aL_b=L_{ab}$, $R_aR_b=R_{ba}$ and $L_aR_b=R_bL_a$; $\Theta_a=L_aR_{a^{\dagger}}$; the adjoints $(L_a)^{*}=L_{a^{\dagger}}$ and the faithful $*$-representation on the Hilbert space of the scalar form, two copies of the standard module; the type criteria $L_a$ self-adjoint exactly on $\mathbb{M}_+$, skew-adjoint exactly on $\mathbb{M}_-$, unitary and isometric exactly on the slice $U$; the Lie algebra $L_{\mathbb{M}_-}$ and $e^{L_a}=L_{e^{a}}$; the double centraliser theorem, the commutant of the left multiplications being the right multiplications, and the bicommutant the scalars; the characterisation of the scalar form as a Hermitian Clifford module; the mixed operators $L_aR_b$ and when they are two-sided.-->
+
+### <a href="articles_maths/the-pin-and-spin-groups-of-the-general-plain-sesqualgebra-of-biquaternions.html">The Pin and Spin Groups of the General Plain Sesqualgebra of Biquaternions</a>
+<!-- the isometry parameters of the dagger sandwich: the pin group is the unitary slice $U(2)$, the spin group its determinant-one part, the cover onto $SO(3)$, the absent minus sign of the definite form, and the reflections outside the family. -->
+
+### <a href="articles_maths/mixed-inner-conjugation-on-the-general-plain-sesqualgebra-of-biquaternions.html">Mixed Inner Conjugation on the General Plain Sesqualgebra of Biquaternions</a>
+<!-- mixed inner conjugation on the biquaternion algebra: the four operators $\Phi^{\theta,\rho}_{\tilde Q}(x)=\theta(\tilde Q)x\rho(\tilde Q)$ with the twist $\theta\in\{\mathrm{id},{}^{*}\}$ (complex conjugation, which is the grade involution of $\mathrm{Cl}_{3,0}$) and the right factor $\rho\in\{\mathrm{inv},{}^{\dagger}\}$; multiplicativity in the parameter and $\mathbb{C}$-linearity in the argument; the horizontal defect $\Phi^{\theta,{}^{\dagger}}=R_{\tilde Q\tilde Q^{\dagger}}\circ\Phi^{\theta,\mathrm{inv}}$ (the right multiplication by the cone element) and the vertical defect $\Phi^{{}^{*},\rho}=L_{{}^{*}(\tilde Q)\tilde Q^{-1}}\circ\Phi^{\mathrm{id},\rho}$ (the twist element, the scalar $(-1)^{g}$ on a homogeneous parameter and $e_0$ exactly on the real quaternions); the adjoint $(\Phi^{\theta,{}^{\dagger}}_{\tilde Q})^{*}=\Phi^{\theta,{}^{\dagger}}_{\tilde Q^{\dagger}}$ and the isometries on the unitary slice; the collapse in two steps, the untwisted pair on $U(2)$ and the twisted pair on the rotation group $SU(2)=U(2)\cap\mathbb{H}_{\mathbb{B}}$, so the central phase $U(1)$ is exactly what the twist detects; the fork between the $\mathrm{Cl}_{1,3}$ reading (grading trivial on the even part) and the $\mathrm{Cl}_{3,0}$ reading (twist $={}^{*}$).-->
+
+### <a href="articles_maths/bilinear-operators-on-the-general-plain-sesqualgebra-of-biquaternions.html">Bilinear Operators on the General Plain Sesqualgebra of Biquaternions</a>
+<!-- bilinear operators on the biquaternion spinor module $S=\mathbb{B}\tilde\Pi_1$: every form is $b_M(s,t)=s^{\dagger}Mt$, Hermitian exactly when $M$ is, with the adjoint of the bilinear operator and the Clifford-equivariant forms as the multiples of the module form by the commutant; the completeness of the action, $L:\mathbb{B}\to\mathrm{End}_\mathbb{C}(S)$ an isomorphism (the Fierz identity, exact because the algebra is a full matrix algebra), so the four blades are a basis of the endomorphisms and the four bilinear covariants $b_\mu=(s,e_\mu t)$ a basis of the forms; the Fierz coefficients $c_\mu=\tfrac12\mathrm{Tr}(e_\mu^{\dagger}M)$ and the orthogonality $\mathrm{Tr}(e_\mu^{\dagger}e_\nu)=2\delta_{\mu\nu}$; the dagger as the reversion of $\mathrm{Cl}_{3,0}$ at the vectors $ie_k$, giving one Hermitian covariant (the scalar, the module form) and three skew-Hermitian ones, a rule stable across the two Clifford structures the algebra carries; the Hermitian forms as the real four-dimensional $\mathbb{R}\{b_0,ib_1,ib_2,ib_3\}\cong\mathbb{M}_+=H_2(\mathbb{C})$ with the cone of positivity and the $1+3$ centre-vector splitting; the slice $U(2)$ permuting the covariants by $\Gamma\mapsto u^{\dagger}\Gamma u$, fixing the scalar and rotating the triplet by the adjoint representation of $SO(3)$, so the invariants are the multiples of the module form; the defect off the slice.-->
+
+
+##### Representations
+
+### <a href="articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html">Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint</a>
+<!-- the biquaternion instance of the reality-condition layer: the defining module $S\cong\mathbb{C}^2$ of $\mathbb{B}\cong M_2(\mathbb{C})$ has **complex type**, and the proof is one line peculiar to the algebra -- the volume element of $\mathrm{Cl}_{3,0}$ is central with $\omega^2=-1$ and acts as $c(\omega)=iI=\Phi(i)$, so the complex structure of the module is itself a Clifford element and an antilinear $J$ commuting with the action is killed by its own antilinearity; the conjugate module $\bar S$, inequivalent to $S$ as a complex module and isomorphic to it as a real representation, and the form $\varepsilon=i\sigma_2=\Phi(-e_2)$ realising $\varepsilon\overline{c}(v)\varepsilon^{-1}=c(\bar v)$, a $\mathbb{C}$-linear intertwiner against the $e_k$-action but not against the $\gamma_k$-action; the three real forms of $\mathbb{C}\mathrm{l}_3$ on one $\mathbb{C}^2$ (complex $\mathrm{Cl}_{3,0}$, real $\mathrm{Cl}_{2,1}$, quaternionic $\mathrm{Cl}_{0,3}$) and the competing-labelling trap $c(\gamma_k)=i\,c(e_k)$; the ambient four-dimensional cases and the commuting versus anticommuting normalisations. -->
+### <a href="articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.html">The Fierz–Kofink Identities and the Classification of Spinors</a>
+<!-- the sixteen bilinear covariants $\sigma,\omega,J,K,S$ of a Dirac spinor and the completeness of the Clifford action (the sixteen blades a basis of $M_4(\mathbb{C})$, the four-dimensional completion of the internal Fierz identity of *Bilinear Operators on the General Plain Sesqualgebra of Biquaternions*); the scalar Fierz–Kofink identities $J^2=\sigma^2+\omega^2$, $J^2=-K^2$, $J\cdot K=0$, verified on $100$ random spinors, with the tensor identities stated but not reproduced, and the tensor defined with the commutator $\sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ so that $S$ is antisymmetric as its name says, the naive $\bar\psi i\gamma_\mu\gamma_\nu\psi$ differing from it by the symmetric term $i\sigma\eta_{\mu\nu}$ and so leaving the singular classes untouched; the Fierz aggregate or boomerang $Z=\sigma+J+iS+K\gamma_5-i\omega\gamma_5$, $Z^2=4\sigma Z$ and the inversion $\psi=Z\xi$; Lounesto's six classes for a nonzero spinor with $J\neq0$ — regular (Dirac, the $\omega=0$ and the $\sigma=0$ types) and singular (flag-dipole, flagpole, dipole) — with explicit representatives for all six, the vector-versus-norm trap for the null $K$, and the flag-dipole as the type the usual list of Dirac, real and chiral spinors does not exhaust. -->
+
+### <a href="articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-representation.html">The General Plain Sesqualgebra in the $2\times2$ Matrix Representation</a>
+<!-- the general plain sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ and the sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ read on the $2\times2$ realization, where the Hermitian conjugation is the conjugate transpose $\Phi(\tilde Q^{*})=\Phi(\tilde Q)^{\dagger}$ and the product is $\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}$; the form is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\Phi(\tilde P)^{\dagger}\Phi(\tilde Q))=\langle\tilde Q,\tilde P\rangle_{*}$, with diagonal the Euclidean norm $\sum_\mu\lvert Q_\mu\rvert^2$, Frobenius norm $\lVert\Phi(\tilde Q)\rVert_F=\sqrt2\lVert\tilde Q\rVert_E$, positive definite of signature $(8,0)$, null set $\{0\}$, isometry group $U(4)$ with algebra-preserving part $U(2)\times U(2)$ modulo the centre, maximal compact $U(2)$ with $SU(2)\cong\mathrm{Spin}(3)$; the Hermitian subspace is the Hermitian matrices. -->
+
+### <a href="articles_maths/the-general-plain-sesqualgebra-in-the-4x4-regular-matrix-representation.html">The General Plain Sesqualgebra in the $4\times4$ Regular Matrix Representation</a>
+<!-- the same group on the $*$-representation $\rho_L(\tilde Q^{*})=\rho_L(\tilde Q)^{\dagger}$: the product is $\rho_L(\tilde P)\rho_L(\tilde Q)^{\dagger}$ with square positive semidefinite, the form is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\rho_L(\tilde P)^{\dagger}\rho_L(\tilde Q))=2\langle\tilde Q,\tilde P\rangle_{*}$, positive definite of signature $(32,0)$ on the matrices, Frobenius norm $\lVert\rho_L(\tilde Q)\rVert_F=2\lVert\tilde Q\rVert_E$, isometry group $U(16)$ with algebra-preserving part $U(4)\times U(4)$ modulo the centre; the two-sided action of the norm-one group $SL_2(\mathbb{C})$ on the Hermitian subspace gives the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$. -->
 
 #### Biquaternions as a Symmetric Plain Sesqualgebra (SPS) over $\mathbb{C}$
 
+##### Common Theory
+
+### <a href="articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.html">Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</a>
+<!-- the symmetric part of the sesquilinear product under the conjugate transpose read as a multiplication, $\tfrac12\bigl(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}}\bigr)=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)e_0=H(\tilde P,\tilde Q)e_0$ with $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$, which is the Hermitian form read as a product; the class, which is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, $\mathbb{C}$-linear in the first argument and conjugate-linear in the second; conjugate-commutativity, $\tilde P\star\tilde Q=\overline{\tilde Q\star\tilde P}$; the central image and the absence of a unit; the diagonal $H(\tilde Q,\tilde Q)=|Q_0|^2+(\mathbf{Q},\overline{\mathbf{Q}})$, real and positive off the origin; the failure of the Jordan identity with the witness $x=y=e_1$, where the two sides are $0$ and $e_0$; the reconstruction $\mathrm{GPS}=\mathrm{SPS}+\mathrm{APS}$; and the placement of the block among the twelve. The general construction of the sesqualgebra parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the form $H$ is *Biquaternion Norm and Invertibility*; the product it splits is *Introduction to the General Plain Sesqualgebra of Biquaternions*. -->
+
+##### Conjugate-Commutative Theory
+
+### <a href="articles_maths/the-conjugate-commutative-law-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.html">The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra</a>
+<!-- the conjugate-commutative law, the two readings of it through the involutions of the sesqualgebra, and its coincidences; the idempotents of the block, $\tilde Q\star\tilde Q=\tilde Q$, computed and shown to be the two central ones $0$ and $e_0$, with $e_0$ an idempotent and not a unit; the two-sided annihilator, zero, the form being non-degenerate; the elements of square zero, none off the origin, the diagonal being positive there; the conjugate-commutative law compared with the commutative law of $\mathrm{SPA}$ and with the conjugate-commutative law of $\mathrm{SQS}$; the projections of the block and the relation to the idempotent theory of the sesqualgebra. The positivity and the cone of the Hermitian form are *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; the projections of the sesqualgebra are *Projections of the Biquaternion Sesqualgebra*. -->
+
+##### Form
+
+### <a href="articles_maths/the-hermitian-form-as-a-product-on-the-symmetric-plain-sesqualgebra.html">The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</a>
+<!-- the identification of the block with the Hermitian form $H$ read as a product and the rank-one structure that follows: the image the centre, the Gram matrix of $H$ on the algebra basis, which is the identity, and its positivity on the real basis; the positivity $H(\tilde Q,\tilde Q)=|Q_0|^2+(\mathbf{Q},\overline{\mathbf{Q}})$ and the absence of an isotropic vector; the Cauchy and Schwarz inequality for $H$, with its equality case; the trace functional and the trace form of the block, computed; the invariance of $H$ under the block, computed, and its comparison with the invariance of the trace form of $\mathrm{SPA}$; the restriction of $H$ to the six subspaces with its rank and its positivity; the coincidence with the quaternion form $B$ of $\mathrm{SQA}$ on the real part. The form $H$, its cone and its positivity theory are *Biquaternion Norm and Invertibility*, *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* and *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*; here it is read as the multiplication of the block. -->
+
+### <a href="articles_maths/the-six-subspaces-under-the-symmetric-plain-sesqualgebra-of-biquaternions.html">The Six Subspaces under the Symmetric Plain Sesqualgebra of Biquaternions</a>
+<!-- the six distinguished subspaces under the symmetric part of the sesquilinear product, one to a section: the product rule read on each, the closure of the centre and the failure of closure of the others, the idempotents, the elements of square zero, and the table of the six. The pattern is the one of *The Six Subspaces under the General Plain Sesqualgebra of Biquaternions*; the subspaces themselves are *Introduction to the Six Subspaces*. -->
+
+##### Operators
+
+### <a href="articles_maths/the-multiplication-operators-of-the-symmetric-plain-sesqualgebra.html">The Multiplication Operators of the Symmetric Plain Sesqualgebra</a>
+<!-- the operators of the block, $L^{\star}_{\tilde A}\tilde R=H(\tilde A,\tilde R)e_0$ and $R^{\star}_{\tilde A}\tilde R=H(\tilde R,\tilde A)e_0$, their conjugate-linearity in the second argument and their relation through the coefficientwise conjugation; the rank one of every nonzero operator, its image the centre and its kernel the hyperplane $H(\tilde A,\cdot\,)=0$; the trace of the operator, computed; the adjoint of $L^{\star}_{\tilde A}$ with respect to $H$, computed, and the verification of whether it is $R^{\star}_{\tilde A}$; the composition and the failure of multiplicativity; the group of linear maps preserving $H$ and its Lie algebra, taken as groups of linear maps; the structure group of the block. The general sesquilinear operator theory is *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*. -->
+
+##### Representations
+
+### <a href="articles_maths/the-symmetric-plain-sesqualgebra-in-the-matrix-representations.html">The Symmetric Plain Sesqualgebra in the Matrix Representations</a>
+<!-- the block in the two matrix models of the chapter: under $\mathbb{B}\cong M_2(\mathbb{C})$ the symmetrisation $\tfrac12(X\,\Phi(\tilde Q)^{*}+\Phi(\tilde Q)^{*}\,X)$ written with the conjugate-transpose of the matrix model, its trace and its rank; the identity of the operation with the scalar multiple of the identity matrix read as the Hermitian form; in the four by four regular model the operator $\tfrac12\bigl(\rho_L(\tilde P)\rho_R(\tilde Q^{*})+\rho_L(\tilde Q)\rho_R(\tilde P^{*})\bigr)$ and its rank; the matrix form of $H$, of its Gram matrix and of its positivity. The two models are *The General Plain Sesqualgebra in the $2\times2$ Matrix Representation* and *The General Plain Sesqualgebra in the $4\times4$ Regular Matrix Representation*. -->
+
 #### Biquaternions as an Antisymmetric Plain Sesqualgebra (APS) over $\mathbb{C}$
+
+##### Common Theory
+
+### <a href="articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra-of-biquaternions.html">Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions</a>
+<!-- the antisymmetric part of the sesquilinear product under the conjugate transpose read as a multiplication, $\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}}\bigr)=\mathrm{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)=-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$, the vector part of the general plain sesquilinear product; the class, which is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$; conjugate-alternation, $\tilde P\wedge\tilde Q=-\overline{\tilde Q\wedge\tilde P}$; the pure-vector image $\mathrm{Vect}(\mathbb{B})$ and the absence of a unit; the non-vanishing diagonal $\tilde Q\wedge\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})$, which is $2ie_3$ at the element $e_1+ie_2$; the failure of the Jacobi identity with the witness $(e_0,e_1,e_2)$, whose cyclic sum is $e_3$; the reconstruction $\mathrm{GPS}=\mathrm{SPS}+\mathrm{APS}$; and the placement of the block among the twelve. The general construction of the sesqualgebra parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the sesquilinear bracket is *The Sesquilinear Commutator*; the product it splits is *Introduction to the General Plain Sesqualgebra of Biquaternions*. -->
+
+##### Conjugate-Alternating Theory
+
+### <a href="articles_maths/the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.html">The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</a>
+<!-- the diagonal of the block, the vector part of the square $\mathrm{Vect}(\tilde Q\tilde Q^{*})$, its non-vanishing and the elements on which it vanishes, with the criterion computed; the identity of the block with the sesquilinear bracket of the corpus, up to the exchange; the failure of the Jacobi identity and the witness $(e_0,e_1,e_2)$ with cyclic sum $e_3$; the obstruction of *Lie Algebras of Sesqualgebras*, the antisymmetrisation of a sesquilinear product being a Lie bracket only after the collapse of the two involutions, which a genuine sesqualgebra forbids; the comparison of the block with its two siblings among the failing brackets, $\mathrm{AQA}$ and $\mathrm{AQS}$; the elements of square zero and the quadric traced by the diagonal; the reading of the diagonal on the real part, where the block coincides with a cross product. The sesquilinear commutator and the symmetrised product are *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternions*. -->
+
+##### Form
+
+### <a href="articles_maths/the-sesquilinear-pairing-of-the-antisymmetric-plain-sesqualgebra.html">The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra</a>
+<!-- the pairing of the block with the Hermitian form, $H(\tilde P\wedge\tilde Q,\tilde R)$ and $H(\tilde P\wedge\tilde Q,\tilde P\wedge\tilde Q)$, with the Gram matrix of the block computed on the basis pairs and its rank and radical; the invariance forms $\beta$ with $\beta(\tilde P\wedge\tilde Q,\tilde R)=-\overline{\beta(\tilde P,\tilde Q\wedge\tilde R)}$, their space and its dimension, computed, and the vanishing of the trace form, which is checked and not assumed; the compatibility of the block with the sandwich $\tilde R\mapsto\tilde Q\tilde R\tilde Q^{*}$ of the sesqualgebra; the relation of the pairing to the norm of the value and to the quadric of the diagonal; the restriction to the six subspaces. The sandwich is *The Sesquilinear Sandwich on the Biquaternions* and its adjoint *The Adjoint of the Sesquilinear Sandwich on the Biquaternions*; the form $H$ is *Biquaternion Norm and Invertibility*. -->
+
+### <a href="articles_maths/the-six-subspaces-under-the-antisymmetric-plain-sesqualgebra-of-biquaternions.html">The Six Subspaces under the Antisymmetric Plain Sesqualgebra of Biquaternions</a>
+<!-- the block read on the six distinguished subspaces, one to a section: the vanishing on the centre, the pure-vector image and the failure of closure of the other subspaces, the elements whose bracket vanishes, the diagonal read on each, and the table of the six. The pattern is the one of *The Six Subspaces under the General Plain Sesqualgebra of Biquaternions*; the subspaces themselves are *Introduction to the Six Subspaces*. -->
+
+##### Operators
+
+### <a href="articles_maths/the-adjoint-operators-and-the-sandwich-of-the-antisymmetric-plain-sesqualgebra.html">The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra</a>
+<!-- the operator $L^{\wedge}_{\tilde A}$ of the block and its matrix in the real basis; its trace, zero, its rank for a general element and its characteristic polynomial; the composition of two such operators and its defect; the adjoint of $L^{\wedge}_{\tilde A}$ with respect to the Hermitian form, computed, and the anticommutator companion it forces; the derivations and the structure group of the block; the relation of the operator to the sesquilinear sandwich $\tilde R\mapsto\tilde Q\tilde R\tilde Q^{*}$ and to the operators of the general plain sesqualgebra. The sandwich operators are *The Sesquilinear Sandwich on the Biquaternions*; the operators of the general plain sesqualgebra are *The Left and Right Multiplications of the Biquaternion Sesqualgebra*. -->
+
+##### Representations
+
+### <a href="articles_maths/the-antisymmetric-plain-sesqualgebra-in-the-matrix-representations.html">The Antisymmetric Plain Sesqualgebra in the Matrix Representations</a>
+<!-- the block in the two matrix models of the chapter: under $\mathbb{B}\cong M_2(\mathbb{C})$ the half-difference $\tfrac12\bigl(X\,\Phi(\tilde Q)^{*}-\Phi(\tilde Q)^{*}\,X\bigr)$ written with the conjugate-transpose of the matrix model, its image and the identification of the conjugate-alternation with the conjugate-transpose of the matrix; the trace, zero, and the rank; in the four by four regular model the operator $\tfrac12\bigl(\rho_L(\tilde P)\rho_R(\tilde Q^{*})-\rho_L(\tilde Q)\rho_R(\tilde P^{*})\bigr)$ and its invariants; the matrix form of the pairing of the block. The two models are *The General Plain Sesqualgebra in the $2\times2$ Matrix Representation* and *The General Plain Sesqualgebra in the $4\times4$ Regular Matrix Representation*. -->
 
 #### Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$
 
-### <a href="articles_maths/biquaternions-as-a-general-quaternionic-sesqualgebra-gqs-over-c.html">Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$</a>
+##### Common Theory
 
-<!-- the complex quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ read as a multiplication, and the sesqualgebra over $\mathbb{C}$ with the conjugation that it defines: the rule on the four coordinates and its scalar–vector form, the two scalar rules, and the admission into the sesquilinear row of the comparison; the sixteen products of the basis, first row and first column the negation of the basis and the three-by-three block the quaternion table; the failure of the derived-operation test, the first row $\sigma(\tilde Y)=e_0\star\tilde Y$ being the star, which satisfies condition (i) alone and fails condition (ii); the two one-sided actions of $e_0$, the star on the left and the natural conjugation on the right, and the absence of a unit on either side; non-associativity, non-commutativity, the non-flexibility and the failure of the degree-three identity, with the associator $\overline{\tilde Q}\tilde P\tilde R^{*}-\tilde P^{\natural}\tilde R\overline{\tilde Q}$ and the left multiplications whose composition is the sandwich $\tilde A^{\natural}(\cdot)\overline{\tilde B}$, linear where each is conjugate-linear; the star of a product as the plain product in the reversed order, $(\tilde P\star\tilde Q)^{*}=\tilde Q\overline{\tilde P}$, so that the involution does not exchange the two slots, and the reading of the two halves $\mathbb{M}_+,\mathbb{M}_-$ by the multiplication, with the scalar square $N(\tilde P)e_0$ on $\mathbb{M}_+$ and $-N(\tilde P)e_0$ on $\mathbb{M}_-$; the square $(\overline{\tilde Q}\tilde Q)^{\natural}$, its scalar part the Krein form of signature $(2,2)$, and the idempotents $0$, $e_0$ and the sphere $-\tfrac12e_0+\mu$ with $(\mu,\mu)=\tfrac34$ in the real vector subspace, which are not the Hermitian idempotents and for which the Hermitian idempotents of the algebra are isotropic; the ternary product $\overline{\tilde Q}\tilde P\tilde R$ as the left model $\tilde X^{*}\tilde Y\tilde Z$, with the parity of an algebraic $J^{*}$-algebra and the failure of the Jordan triple identity at $(e_0,e_1,e_0,e_2,e_0)$; the simplicity of the sesqualgebra; and the scalar part as the Krein form. The product is *The Four Biquaternion Complex Products*, the comparison is *Comparison Between the Four Biquaternion Products*, the sibling readings are *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* and *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*, and the general theory is the sesquilinear block, among it *Sesqualgebras*, *The Sesquilinear Associator and the Ternary Product* and *Algebraic J\*-Algebras*. -->
+### <a href="articles_maths/introduction-to-the-general-quaternionic-sesqualgebra-of-biquaternions.html">Introduction to the General Quaternionic Sesqualgebra of Biquaternions</a>
+<!-- the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ read as a multiplication, and the sesqualgebra over $\mathbb{C}$ with the conjugation that it defines: the rule on the four coordinates and its scalar–vector form, the two scalar rules, and the admission into the sesquilinear row of the comparison; the sixteen products of the basis, first row and first column the negation of the basis and the three-by-three block the quaternion table; the failure of the derived-operation test, the first row $\sigma(\tilde Y)=e_0\star\tilde Y$ being the star, which satisfies condition (i) alone and fails condition (ii); the two one-sided actions of $e_0$, the star on the left and the natural conjugation on the right, and the absence of a unit on either side; non-associativity, non-commutativity, the non-flexibility and the failure of the degree-three identity, with the associator $\overline{\tilde Q}\tilde P\tilde R^{*}-\tilde P^{\natural}\tilde R\overline{\tilde Q}$ and the left multiplications whose composition is the sandwich $\tilde A^{\natural}(\cdot)\overline{\tilde B}$, linear where each is conjugate-linear; the star of a product as the plain product in the reversed order, $(\tilde P\star\tilde Q)^{*}=\tilde Q\overline{\tilde P}$, so that the involution does not exchange the two slots, and the reading of the two halves $\mathbb{M}_+,\mathbb{M}_-$ by the multiplication, with the scalar square $N(\tilde P)e_0$ on $\mathbb{M}_+$ and $-N(\tilde P)e_0$ on $\mathbb{M}_-$; the square $(\overline{\tilde Q}\tilde Q)^{\natural}$, its scalar part the Krein form of signature $(2,2)$, and the idempotents $0$, $e_0$ and the sphere $-\tfrac12e_0+\mu$ with $(\mu,\mu)=\tfrac34$ in the real vector subspace, which are not the Hermitian idempotents and for which the Hermitian idempotents of the algebra are isotropic; the ternary product $\overline{\tilde Q}\tilde P\tilde R$ as the left model $\tilde X^{*}\tilde Y\tilde Z$, with the parity of an algebraic $J^{*}$-algebra and the failure of the Jordan triple identity at $(e_0,e_1,e_0,e_2,e_0)$; the simplicity of the sesqualgebra; and the scalar part as the Krein form. The product is *The Four Biquaternion Complex Products*, the comparison is *Comparison Between the Four Biquaternion Products*, the sibling readings are *Introduction to the General Plain Sesqualgebra of Biquaternions* and *Introduction to the General Quaternionic Algebra of Biquaternions*, and the general theory is the sesquilinear block, among it *Sesqualgebras*, *The Sesquilinear Associator and the Ternary Product* and *Algebraic J\*-Algebras*. -->
 
-### <a href="articles_maths/idempotents-of-the-quaternionic-sesquilinear-product.html">Idempotents of the Quaternionic Sesquilinear Product</a>
+### <a href="articles_maths/idempotents-of-the-quaternionic-sesquilinear-product.html">Idempotents of the General Quaternionic Sesquilinear Product</a>
+<!-- the idempotents of the general quaternionic sesquilinear multiplication $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$, the solutions of $\tilde Q^{\natural}\tilde Q^{*}=\tilde Q$, equivalently of $\overline{\tilde Q}\tilde Q=\tilde Q^{\natural}$; inside the quaternion subspace the solutions are $\tilde\Pi(\mu)=-\tfrac12e_0+\mu$ with $\mu$ in the real vector subspace and $(\mu,\mu)=\tfrac34$, a two-sphere; their norm is $1$, so that each of them is a unit and they are the only idempotents among the four multiplications that are units; the contrast with the two trivial idempotents of the sibling bilinear quaternionic multiplication. -->
 
-<!-- the idempotents of the quaternionic sesquilinear multiplication $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$, the solutions of $\tilde Q^{\natural}\tilde Q^{*}=\tilde Q$, equivalently of $\overline{\tilde Q}\tilde Q=\tilde Q^{\natural}$; inside the quaternion subspace the solutions are $\tilde\Pi(\mu)=-\tfrac12e_0+\mu$ with $\mu$ in the real vector subspace and $(\mu,\mu)=\tfrac34$, a two-sphere; their norm is $1$, so that each of them is a unit and they are the only idempotents among the four multiplications that are units; the contrast with the two trivial idempotents of the sibling bilinear quaternionic multiplication. -->
-
-### <a href="articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.html">The Two One-Sided Actions and the Absence of a Unit</a>
-
-<!-- the two one-sided actions of $e_0$, which are the two conjugations of the algebra, ${}^{*}$ on the left and ${}^{\natural}$ on the right; the proposition that no element is a unit on either side, with its proof from $\tilde E\star e_0$ and $e_0\star\tilde E$; the two actions read on each of the six distinguished subspaces. -->
-
-### <a href="articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html">The Square of the Quaternionic Sesquilinear Product and the Two Halves</a>
-
+### <a href="articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html">The Square of the General Quaternionic Sesquilinear Product and the Two Halves</a>
 <!-- the square $\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q^{*}$, equivalently the ${}^{\natural}$-image of $\overline{\tilde Q}\tilde Q$, and its scalar part $\sum_{\mu=0}^{3}\varepsilon_\mu Q_\mu\overline{Q_\mu}$; the two halves of the square and the elements whose square vanishes, a proper subfamily of the zero divisors, against the two bilinear quaternionic multiplications, whose square-zero elements are the whole zero-divisor cone; the worked elements of the two-sphere of idempotents. -->
 
-### <a href="articles_maths/the-associator-of-the-quaternionic-sesquilinear-product.html">The Associator of the Quaternionic Sesquilinear Product</a>
+##### Non-Associative Theory
 
-<!-- the associator of the quaternionic sesquilinear multiplication; its additivity and its parities in the three variables, with the two conjugations taken into account; the failure of flexibility and of the degree-three identity with the triples that witness it; the comparison with the associator of the sibling sesquilinear multiplication. -->
+### <a href="articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.html">The Two One-Sided Actions and the Absence of a Unit</a>
+<!-- the two one-sided actions of $e_0$, which are the two conjugations of the algebra, ${}^{*}$ on the left and ${}^{\natural}$ on the right; the proposition that no element is a unit on either side, with its proof from $\tilde E\star e_0$ and $e_0\star\tilde E$; the two actions read on each of the six distinguished subspaces. -->
+
+### <a href="articles_maths/the-associator-of-the-quaternionic-sesquilinear-product.html">The Associator of the General Quaternionic Sesquilinear Product</a>
+<!-- the associator of the general quaternionic sesquilinear multiplication; its additivity and its parities in the three variables, with the two conjugations taken into account; the failure of flexibility and of the degree-three identity with the triples that witness it; the comparison with the associator of the sibling sesquilinear multiplication. -->
 
 ### <a href="articles_maths/the-ternary-product-and-the-failure-of-the-jordan-triple-identity.html">The Ternary Product and the Failure of the Jordan Triple Identity</a>
+<!-- the ternary product $\{\tilde P,\tilde Q,\tilde R\}=(\tilde P\star\tilde Q)\star\tilde R^{*}=\overline{\tilde Q}\tilde P\tilde R$ of the general quaternionic sesquilinear multiplication; its additivity and its parities, $\mathbb{C}$-linear in the first and the third variables and conjugate-linear in the second; the failure of the Jordan triple identity, at $(\tilde P,\tilde Q,\tilde U,\tilde V,\tilde R)=(e_0,e_1,e_0,e_2,e_0)$ where the two sides are $e_3$ and $-3e_3$; the contrast with the sibling sesquilinear multiplication, whose ternary product is an algebraic $J^{*}$-triple product. -->
 
-<!-- the ternary product $\{\tilde P,\tilde Q,\tilde R\}=(\tilde P\star\tilde Q)\star\tilde R^{*}=\overline{\tilde Q}\tilde P\tilde R$ of the quaternionic sesquilinear multiplication; its additivity and its parities, $\mathbb{C}$-linear in the first and the third variables and conjugate-linear in the second; the failure of the Jordan triple identity, at $(\tilde P,\tilde Q,\tilde U,\tilde V,\tilde R)=(e_0,e_1,e_0,e_2,e_0)$ where the two sides are $e_3$ and $-3e_3$; the contrast with the sibling sesquilinear multiplication, whose ternary product is an algebraic $J^{*}$-triple product. -->
-
-### <a href="articles_maths/the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.html">The Left and Right Multiplications of the Quaternionic Sesquilinear Product</a>
-
+### <a href="articles_maths/the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.html">The Left and Right Multiplications of the General Quaternionic Sesquilinear Product</a>
 <!-- the left and the right multiplications of this multiplication; the composition $L_{\tilde A}\circ L_{\tilde B}(\tilde X)=\tilde A^{\natural}\tilde X\overline{\tilde B}$, which leaves the class of the left multiplications because it is linear where they are conjugate-linear, so that they form no monoid; the mixed compositions and the operators they produce; the relation to *The Left and Right Multiplication Operators of a Sesqualgebra*. -->
 
-### <a href="articles_maths/the-biquaternion-krein-form-and-its-signature.html">The Biquaternion Krein Form and Its Signature</a>
-
-<!-- the third pairing, the indefinite Hermitian form $[\tilde Q,\tilde Q']=\mathrm{Sc}(\tilde Q^{\natural*}\tilde Q')=\sum_\mu\varepsilon_\mu Q_\mu^{*}Q'_\mu$; its Hermitianity and non-degeneracy; the signature $(2,6)$ over $\mathbb{R}$ and $(1,3)$ over $\mathbb{C}$, with positive part the centre and negative part the vector subspace; the Lagrange identities $[\tilde V,\tilde V]=-N(\tilde V)$ on the vector subspace and $[\tilde H,\tilde H]=N(\tilde H)$ on the Hermitian subspace, hence signature $(1,3)$ on both real quaternion slices; the Krein space and Pontryagin structure; the Krein null set of dimension $7$ and the maximal totally isotropic plane $\mathbb{C}(e_0+e_1)$; the comparison with the complex null cone of $N$. General theory: *Krein Spaces*, *Pontryagin Spaces*. -->
-
-### <a href="articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.html">The Krein Gram Matrix and the Restrictions of the Form</a>
-
-<!-- the matrix side of the Krein form: the Gram matrix in the coefficient basis, the sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$ of determinant $-1$, and in the real basis $\operatorname{diag}(1,-1,-1,-1,1,-1,-1,-1)$ of signature $(2,6)$; the form as the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde Q)^{\dagger}\Phi(\tilde Q'))$ in the $2\times2$ model; Sylvester's law, the inertia $(1,3)$ over $\mathbb C$ and $(2,6)$ over $\mathbb R$, and the maximal positive definite subspaces; the restrictions to the six distinguished subspaces — centre $(2,0)$, vector $(0,6)$, and the quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces each $(1,3)$ — set against the restrictions of the norm; the centre and the vector subspace as mutual Krein-orthogonal complements; the discriminant, of class $-1$ over $\mathbb R$ for the form and for each restriction. -->
-
-### <a href="articles_maths/the-six-subspaces-under-the-quaternion-sesquilinear-form.html">The Six Subspaces under the Quaternion Sesquilinear Form</a>
-
-<!-- the quaternion sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ of signature $(2,6)$ restricted to the six distinguished subspaces: positive definite on the centre $(2,0)$ and negative definite on the vector subspace $(0,6)$, which are the fundamental decomposition of the Krein space, and indefinite of signature $(1,3)$ on the quaternion, anti-quaternion and two Hermitian subspaces; the restriction matrices $\operatorname{diag}(1,1)$, $-\mathrm{I}_6$ and $\mathrm{E}$; the four real light cones of dimension $3$ and their isotropic lines; the coincidences with the complex sesquilinear form, the complex bilinear form and the quaternion bilinear form; the isometry groups $O(2)$, $O(6)$ and four copies of $O(1,3)$ -->
-
-### <a href="articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-biquaternion-algebra.html">J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra</a>
-
-<!-- the $J$-adjoint $T^{\dagger}=JT^{*}J$, its characterisation, calculus and antimultiplicativity; the dictionary $JT$ self-adjoint, $JTJ$ unitary, and the $J$-unitary group $U_J(\mathbb{B})=\{T:T^{\dagger}T=\mathrm{id}\}\cong U(1,3)$, non-compact, with maximal compact part $U(1)\times U(3)$; the $J$-adjoints of the three families, $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$, $(R_{\tilde R})^{\dagger}=L_{\bar{\tilde R}}$, $(L_{\tilde Q}R_{\tilde R})^{\dagger}=L_{\bar{\tilde R}}R_{\bar{\tilde Q}}$, $(\Theta_{\tilde Q})^{\dagger}=\Theta_{\natural\tilde Q}$, so the indefinite adjoint of a left multiplication is a right multiplication; the criteria $L_{\tilde Q}$ $J$-self-adjoint iff $\tilde Q\in\mathbb{R}e_0$, $J$-skew iff $\tilde Q\in i\mathbb{R}e_0$, $J$-unitary iff $\tilde Q\in S^1e_0$, and $\Theta_{\tilde Q}$ $J$-self-adjoint iff $\tilde Q\in\mathbb{C}_{\mathbb{B}}\cup\mathbb{V}_{\mathbb{B}}$, $J$-unitary iff $\lvert N(\tilde Q)\rvert=1$; the symmetry of the $J$-self-adjoint spectrum about the real axis. The indefinite counterpart of the two operator articles with Hermitian adjoint. General theory: *J-Self-Adjoint and J-Unitary Operators*. -->
-
-### <a href="articles_maths/the-biquaternion-quaternionic-sesqualgebra-in-the-2x2-matrix-representation.html">The Biquaternion Quaternionic Sesqualgebra in the $2\times2$ Matrix Representation</a>
-
-<!-- the quaternion sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural*}\tilde Q)=\sum_\mu\varepsilon_\mu\overline{P_\mu}Q_\mu$ and the product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ read on the $2\times2$ realization, where the two conjugations are the adjugate and the conjugate transpose and the product is $\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}$; the form is $\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde P)^{\dagger}\Phi(\tilde Q))$, with diagonal $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^2$, positive on the centre and negative on the vector subspace, complex inertia $(1,3)$, real signature $(2,6)$, Krein null set the real cone of real dimension $7$, isometry group $U(1,3)$ of realification $O(2,6)$; the natural conjugation $J={}^{\natural}$ is the fundamental symmetry and the adjugation. -->
-
-### <a href="articles_maths/the-biquaternion-quaternionic-sesqualgebra-in-the-4x4-regular-matrix-representation.html">The Biquaternion Quaternionic Sesqualgebra in the $4\times4$ Regular Matrix Representation</a>
-
-<!-- the same group on the left regular representation, where the two conjugations are the transposition and the conjugate transpose: the product is $\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)^{\dagger}$, the form is $\tfrac12\operatorname{Tr}(\operatorname{adj}\rho_L(\tilde P)^{\dagger}\rho_L(\tilde Q))=2\overline{N(\tilde P)}\langle\tilde P,\tilde Q\rangle_{\natural*}$, exactly twice the form on the norm-one slice, of complex inertia $(1,3)$ and real signature $(2,6)$, Krein null set the real cone of real dimension $7$, isometry group $U(1,3)$ of realification $O(2,6)$; the fundamental symmetry is the plain transposition. -->
+##### Form
 
 ### <a href="articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.html">The Fundamental Symmetry of the Biquaternion Algebra</a>
-
 <!-- the fundamental symmetry $J=\natural$: $\mathbb{C}$-linear, $J^2=\mathrm{id}$, self-adjoint for the Krein form, with the bridge $[\tilde Q,\tilde Q']=\langle J\tilde Q,\tilde Q'\rangle$ to the Hermitian form and $[J\tilde Q,\tilde Q]=\lVert\tilde Q\rVert_E^2$; the eigenspaces, the centre and the vector subspace, as the fundamental decomposition, so the decomposition is the splitting of an Algebra involution; $\natural$ as the $\mathbb{C}$-algebra anti-automorphism exchanging the sides of the left and right multiplications and the uniqueness of $\natural$ among the fundamental symmetries that respect the algebra; the whole family of fundamental symmetries as the open unit ball of the vector subspace, $\ell_{\tilde V}=\mathbb{C}(e_0+\tilde V)$ with $\lVert\tilde V\rVert_E<1$; the $J$-adjoint and the dictionary; the $J$-positive cone containing $J$; and the Pontryagin data — signature $(2,6)$ over $\mathbb R$ and $(1,3)$ over $\mathbb C$, negative index $6$ and $3$, Pontryagin index $\min(p,q)=2$ and $1$, so the algebra is $\Pi_6$ over $\mathbb R$ and $\Pi_3$ over $\mathbb C$. General theory: *The Fundamental Symmetry*, *Krein Spaces*, *Pontryagin Spaces*. -->
 
-### <a href="articles_maths/the-isotropic-structure-of-the-krein-form.html">The Isotropic Structure of the Krein Form</a>
+### <a href="articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.html">The Krein Gram Matrix and the Restrictions of the Form</a>
+<!-- the matrix side of the Krein form: the Gram matrix in the coefficient basis, the sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$ of determinant $-1$, and in the real basis $\operatorname{diag}(1,-1,-1,-1,1,-1,-1,-1)$ of signature $(2,6)$; the form as the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde Q)^{\dagger}\Phi(\tilde Q'))$ in the $2\times2$ model; Sylvester's law, the inertia $(1,3)$ over $\mathbb C$ and $(2,6)$ over $\mathbb R$, and the maximal positive definite subspaces; the restrictions to the six distinguished subspaces — centre $(2,0)$, vector $(0,6)$, and the quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces each $(1,3)$ — set against the restrictions of the norm; the centre and the vector subspace as mutual Krein-orthogonal complements; the discriminant, of class $-1$ over $\mathbb R$ for the form and for each restriction. -->
 
-<!-- the isotropic structure of the Krein form: the null set $[\tilde Q,\tilde Q]=0$ as $\lVert c\rVert_E=\lVert v\rVert_E$, a real cone of dimension $7$, smooth off the apex, connected, with link and punctured homotopy type $S^1\times S^5$; the comparison with the norm cone of the zero divisors, of real dimension $6$, meeting it in the union of the doubly null lines $\mathbb C(e_0\pm i\hat\mu)$, a cone of real dimension $4$; the totally isotropic subspaces, the Witt index $\min(p,q)=1$ over $\mathbb C$ and $2$ over $\mathbb R$, the maximal isotropic complex line $\mathbb C(e_0+e_1)$ and the maximal isotropic real plane $\mathrm{span}_\mathbb R\{e_0+e_1,i(e_0+e_1)\}$; the Peirce lines generated by the rank-one Hermitian idempotents $\tilde\Pi_\pm(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$, exactly the doubly null lines, with the minimal left and right ideals they generate; the isotropic lines as a copy of $S^5$, the boundary sphere of the complex hyperbolic ball. -->
+### <a href="articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html">The Isotropic Structure of the General Quaternionic Sesqualgebra</a>
+<!-- the isotropic structure of the Krein form: the null set $[\tilde Q,\tilde Q]=0$ as $\lVert c\rVert_E=\lVert v\rVert_E$, a real cone of dimension $7$, non-singular off the apex; the comparison with the norm cone of the zero divisors, of real dimension $6$, meeting it in the union of the doubly null lines $\mathbb C(e_0\pm i\hat\mu)$, a cone of real dimension $4$; the totally isotropic subspaces, the Witt index $\min(p,q)=1$ over $\mathbb C$ and $2$ over $\mathbb R$, the maximal isotropic complex line $\mathbb C(e_0+e_1)$ and the maximal isotropic real plane $\mathrm{span}_\mathbb R\{e_0+e_1,i(e_0+e_1)\}$; the Peirce lines generated by the rank-one Hermitian idempotents $\tilde\Pi_\pm(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$, exactly the doubly null lines, with the minimal left and right ideals they generate; the isotropic lines and the minimal ideals they carry. -->
 
 ### <a href="articles_maths/krein-orthogonality-and-the-fundamental-decomposition.html">Krein Orthogonality and the Fundamental Decomposition</a>
+<!-- the indefinite structure of the Krein form: the Krein-orthogonal complement with $\dim W+\dim W^{\perp_K}=4$ over $\mathbb C$ and the non-degeneracy criterion $W\cap W^{\perp_K}=\{0\}$; the classification of subspaces into definite, neutral, degenerate and totally isotropic, with the neutral plane $\mathrm{span}_\mathbb R\{e_0+e_1,e_0-e_1\}$ and the dimension bounds $1$ and $3$; the maximal positive definite subspaces as the lines $\mathbb C(e_0+\tilde V)$ with $\lVert\tilde V\rVert_E<1$; the fundamental decomposition $W\perp_K W^{\perp_K}$ and its fundamental symmetry $J_W=\pm\mathrm{id}$, with the bridge $[\tilde Q,\tilde Q']=\langle J_W\tilde Q,\tilde Q'\rangle$ and the canonical case $J=\natural$; the $J$-self-adjoint idempotents as exactly the Krein-orthogonal projections onto the non-degenerate subspaces, a class strictly larger than the definite-orthogonal projections commuting with $J$; the Krein Gram–Schmidt process. -->
 
-<!-- the indefinite geometry of the Krein form: the Krein-orthogonal complement with $\dim W+\dim W^{\perp_K}=4$ over $\mathbb C$ and the non-degeneracy criterion $W\cap W^{\perp_K}=\{0\}$; the classification of subspaces into definite, neutral, degenerate and totally isotropic, with the neutral plane $\mathrm{span}_\mathbb R\{e_0+e_1,e_0-e_1\}$ and the dimension bounds $1$ and $3$; the maximal positive definite subspaces as the lines $\mathbb C(e_0+\tilde V)$ with $\lVert\tilde V\rVert_E<1$; the fundamental decomposition $W\perp_K W^{\perp_K}$ and its fundamental symmetry $J_W=\pm\mathrm{id}$, with the bridge $[\tilde Q,\tilde Q']=\langle J_W\tilde Q,\tilde Q'\rangle$ and the canonical case $J=\natural$; the $J$-self-adjoint idempotents as exactly the Krein-orthogonal projections onto the non-degenerate subspaces, a class strictly larger than the definite-orthogonal projections commuting with $J$; the Krein Gram–Schmidt process. -->
+### <a href="articles_maths/the-six-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.html">The Six Subspaces under the General Quaternionic Sesqualgebra of Biquaternions</a>
+<!-- the general quaternionic sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ of signature $(2,6)$ restricted to the six distinguished subspaces: positive definite on the centre $(2,0)$ and negative definite on the vector subspace $(0,6)$, which are the fundamental decomposition of the Krein space, and indefinite of signature $(1,3)$ on the quaternion, anti-quaternion and two Hermitian subspaces; the restriction matrices $\operatorname{diag}(1,1)$, $-\mathrm{I}_6$ and $\mathrm{E}$; the four real light cones of dimension $3$ and their isotropic lines; the coincidences with the general plain sesquilinear form, the general plain bilinear form and the general quaternionic bilinear form; the isometry groups $O(2)$, $O(6)$ and four copies of $O(1,3)$ -->
+
+##### Operators
+
+### <a href="articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra-of-biquaternions.html">J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions</a>
+<!-- the $J$-adjoint $T^{\dagger}=JT^{*}J$, its characterisation, calculus and antimultiplicativity; the dictionary $JT$ self-adjoint, $JTJ$ unitary, and the $J$-unitary group $U_J(\mathbb{B})=\{T:T^{\dagger}T=\mathrm{id}\}\cong U(1,3)$, non-compact, with maximal compact part $U(1)\times U(3)$; the $J$-adjoints of the three families, $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$, $(R_{\tilde R})^{\dagger}=L_{\bar{\tilde R}}$, $(L_{\tilde Q}R_{\tilde R})^{\dagger}=L_{\bar{\tilde R}}R_{\bar{\tilde Q}}$, $(\Theta_{\tilde Q})^{\dagger}=\Theta_{\natural\tilde Q}$, so the indefinite adjoint of a left multiplication is a right multiplication; the criteria $L_{\tilde Q}$ $J$-self-adjoint iff $\tilde Q\in\mathbb{R}e_0$, $J$-skew iff $\tilde Q\in i\mathbb{R}e_0$, $J$-unitary iff $\tilde Q\in S^1e_0$, and $\Theta_{\tilde Q}$ $J$-self-adjoint iff $\tilde Q\in\mathbb{C}_{\mathbb{B}}\cup\mathbb{V}_{\mathbb{B}}$, $J$-unitary iff $\lvert N(\tilde Q)\rvert=1$; the symmetry of the $J$-self-adjoint spectrum about the real axis. The indefinite counterpart of the two operator articles with Hermitian adjoint. General theory: *J-Self-Adjoint and J-Unitary Operators*. -->
 
 ### <a href="articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html">Indefinite Positivity and the Krein Cone of the Biquaternion Algebra</a>
+<!-- the Krein cone $P_K=\{\tilde Q:[\tilde Q,\tilde Q]\ge0\}=\{\lVert c\rVert_E\ge\lVert v\rVert_E\}$, closed but neither convex nor pointed, with boundary the Krein null set; the intersection with the Hermitian subspace as the full light cone of the interval form, whose future nappe is the Hermitian cone $P$, so $P\subseteq P_K$; the operator $J$-positive cone $\mathcal{P}_J=J\cdot\{S\ge0\}$, convex, larger than the Hilbert cone and containing $J$; the $J$-projections as exactly the Krein-orthogonal projections onto the non-degenerate subspaces, of which the definite-orthogonal projections commuting with $J$ and the spectral projections $\pi_\pm$ are the special case, with the rank-one counterexample on the isotropic line; the $J$-Cartan involution $\theta_J(T)=(T^{\dagger})^{-1}$ with fixed group $U_J(\mathbb{B})\cong U(1,3)$, contrasted with the Cartan involution of $U(1,3)$, whose fixed group is $U(1)\times U(3)$. General theory: *Krein Algebras*. -->
 
-<!-- the Krein cone $P_K=\{\tilde Q:[\tilde Q,\tilde Q]\ge0\}=\{\lVert c\rVert_E\ge\lVert v\rVert_E\}$, closed and contractible but neither convex nor pointed, with interior $\simeq S^1$ and boundary the Krein null set; the intersection with the Hermitian subspace as the full light cone of the interval form, whose future nappe is the Hermitian cone $P$, so $P\subseteq P_K$; the operator $J$-positive cone $\mathcal{P}_J=J\cdot\{S\ge0\}$, convex, larger than the Hilbert cone and containing $J$; the $J$-projections as exactly the Krein-orthogonal projections onto the non-degenerate subspaces, of which the definite-orthogonal projections commuting with $J$ and the spectral projections $\pi_\pm$ are the special case, with the rank-one counterexample on the isotropic line; the $J$-Cartan involution $\theta_J(T)=(T^{\dagger})^{-1}$ with fixed group $U_J(\mathbb{B})\cong U(1,3)$, non-compact, contrasted with the Cartan involution of $U(1,3)$, whose fixed group $U(1)\times U(3)$ is compact. General theory: *Krein Algebras*. -->
-
-### <a href="articles_maths/the-indefinite-hermitian-sandwich-on-the-biquaternion-algebra.html">The Indefinite Hermitian Sandwich on the Biquaternion Algebra</a>
-
+### <a href="articles_maths/the-indefinite-hermitian-sandwich-on-the-general-quaternionic-sesqualgebra-of-biquaternions.html">The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra of Biquaternions</a>
 <!-- the dagger sandwich $H_{Q}(T)=QTQ^{\dagger}$ for the Krein form on $\mathrm{End}_\mathbb{C}(\mathbb{B})\cong M_4(\mathbb{C})$, with $Q^{\dagger}=JQ^{*}J$ and $J={}^{\natural}$ of matrix $E=\mathrm{diag}(1,-1,-1,-1)$: the laws $H_Q(T^{\dagger})=H_Q(T)^{\dagger}$, $H_Q(H_S(T))=H_{QS}(T)$, multiplicativity exactly for $Q^{\dagger}Q=\mathrm{id}$, and the parameter rule $H_{\alpha Q}=\lvert\alpha\rvert^{2}H_Q$; the preservation for $J$-unitary $Q$ of the Krein form in the twisted sense $[H_Q(T)\tilde X,\tilde Y]=[TQ^{\dagger}\tilde X,Q^{\dagger}\tilde Y]$ and $[H_Q(T)\tilde X,\tilde X]=[TQ^{\dagger}\tilde X,Q^{\dagger}\tilde X]$, of $J$-self-adjointness, $J$-positivity and $J$-unitarity, and the transport $\ker H_Q(T)=(Q^{\dagger})^{-1}\ker T$, $\mathrm{im}\,H_Q(T)=Q\,\mathrm{im}\,T$; the parameters from the algebra with $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$ and $(R_{\tilde Q})^{\dagger}=L_{\bar{\tilde Q}}$, the $J$-unitarity criteria — central phases for the one-sided families and the norm-one slice $\lvert N(\tilde Q)\rvert=1$ for the two-sided family — the identity $(\Theta_{\tilde Q})^{\dagger}=\Theta_{\tilde Q^{-1}}$ on that slice, and the trivial sandwich of the phases, the kernel of $Q\mapsto H_Q$ being $S^1e_0$; the dictionary $H_J(T)=JTJ$ with $H_J(T)=T^{*}$ for $J$-self-adjoint $T$; and the contrast with the definite sandwich $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, the indefinite sandwich preserving the form and not the metric. -->
+
+##### Representations
+
+### <a href="articles_maths/the-general-quaternionic-sesqualgebra-in-the-2x2-matrix-representation.html">The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Representation</a>
+<!-- the general quaternionic sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural*}\tilde Q)=\sum_\mu\varepsilon_\mu\overline{P_\mu}Q_\mu$ and the product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ read on the $2\times2$ realization, where the two conjugations are the adjugate and the conjugate transpose and the product is $\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}$; the form is $\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde P)^{\dagger}\Phi(\tilde Q))$, with diagonal $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^2$, positive on the centre and negative on the vector subspace, complex inertia $(1,3)$, real signature $(2,6)$, Krein null set the real cone of real dimension $7$, isometry group $U(1,3)$ of realification $O(2,6)$; the natural conjugation $J={}^{\natural}$ is the fundamental symmetry and the adjugation. -->
+
+### <a href="articles_maths/the-general-quaternionic-sesqualgebra-in-the-4x4-regular-matrix-representation.html">The General Quaternionic Sesqualgebra in the $4\times4$ Regular Matrix Representation</a>
+<!-- the same group on the left regular representation, where the two conjugations are the transposition and the conjugate transpose: the product is $\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)^{\dagger}$, the form is $\tfrac12\operatorname{Tr}(\operatorname{adj}\rho_L(\tilde P)^{\dagger}\rho_L(\tilde Q))=2\overline{N(\tilde P)}\langle\tilde P,\tilde Q\rangle_{\natural*}$, exactly twice the form on the norm-one slice, of complex inertia $(1,3)$ and real signature $(2,6)$, Krein null set the real cone of real dimension $7$, isometry group $U(1,3)$ of realification $O(2,6)$; the fundamental symmetry is the plain transposition. -->
 
 #### Biquaternions as a Symmetric Quaternionic Sesqualgebra (SQS) over $\mathbb{C}$
 
+##### Common Theory
+
+### <a href="articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.html">Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</a>
+<!-- the symmetric part of the quaternionic sesquilinear product under the conjugate transpose read as a multiplication, $\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)=\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$, with scalar part the form $K$ and vector part the mixed term, the cross product cancelling between the two orders; the class, which is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$; conjugate-commutativity; the absence of a unit and the values in no one of the six subspaces; the diagonal $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$, which is not central, being $-e_0$ at $e_1$ and $-2e_0$ at $e_1+ie_2$; the failure of the Jordan identity with the witness $x=y=e_1$, where the two sides are $-e_0$ and $e_0$; the two-halves relation to the two orders of the plain product $\overline{\tilde Q}\tilde P$; the reconstruction $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$; and the placement of the block among the twelve. The general construction of the sesqualgebra parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the form $K$ is *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* and its Gram matrix *The Krein Gram Matrix and the Restrictions of the Form*; the product it splits is *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. -->
+
+##### Conjugate-Commutative Theory
+
+### <a href="articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.html">The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra</a>
+<!-- the diagonal of the block, $K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$, its failure to be central and the elements on which it is; the two halves out of which the block is built, the two orders $\tilde P^{\natural}\tilde Q^{*}$ and $\tilde Q^{*}\tilde P^{\natural}$ of the plain product, and the cross-product cancellation that makes the second one not the conjugate of the first; the pairs with a common value and a differing swap, the pairs $(-ie_3,-ie_0)$ and $(e_2,e_1)$ with common value $-e_3$; the idempotents and the elements of square zero of the block, computed; the absence of a unit and the two one-sided actions it admits; the comparison with the two halves of the general quaternionic sesquilinear product. The general construction of the sesqualgebra parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the two halves of the general quaternionic sesquilinear product are *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*; the one-sided actions are *The Two One-Sided Actions and the Absence of a Unit*. -->
+
+##### Form
+
+### <a href="articles_maths/the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.html">The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra</a>
+<!-- the scalar part of the block, the form $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$ read as a product; the indefiniteness of $K$ and its signature on the real basis and on the six subspaces, computed; the Gram matrix of $K$ and its inertia; the isotropic cone of $K$ and the complex and real isotropic elements it contains; the invariance of $K$ under the block, computed and stated whether it holds or fails, with the defect when it fails; the restriction of $K$ to the Hermitian and anti-Hermitian subspaces with the two signatures; the comparison of the four forms of the row through their scalar parts. The form $K$, its Gram matrix, its restrictions and its cone are *The Krein Gram Matrix and the Restrictions of the Form*, *The Isotropic Structure of the General Quaternionic Sesqualgebra*, *The Six Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* and *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*. -->
+
+### <a href="articles_maths/the-six-subspaces-under-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.html">The Six Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions</a>
+<!-- the block read on the six distinguished subspaces, one to a section: the product rule read on each, the closure of the centre and the failure of closure of the others, with the smallest subspace that contains the values and its dimension, the idempotents, the isotropic elements, and the table of the six. The pattern is the one of *The Six Subspaces under the General Quaternionic Sesqualgebra of Biquaternions*; the subspaces themselves are *Introduction to the Six Subspaces*. -->
+
+##### Operators
+
+### <a href="articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.html">The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra</a>
+<!-- the operators $L^{\star}_{\tilde A}$ and $R^{\star}_{\tilde A}$ of the block, their matrices in the real basis, their ranks and their traces; the image of a general operator, which is a four-dimensional real subspace not among the six, exhibited; the kernel and its dimension; the composition of two such operators and the defect of multiplicativity; the adjoint with respect to $K$, computed, and the $J$-self-adjointness it gives, with the involution $J$ exhibited; the group of linear maps preserving $K$ and its Lie algebra, taken as groups of linear maps; the structure group of the block. The operators of the general quaternionic sesquilinear product are *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*; the operators with the conjugate transpose are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*. -->
+
+##### Representations
+
+### <a href="articles_maths/the-symmetric-quaternionic-sesqualgebra-in-the-matrix-representations.html">The Symmetric Quaternionic Sesqualgebra in the Matrix Representations</a>
+<!-- the block in the two matrix models of the chapter: under $\mathbb{B}\cong M_2(\mathbb{C})$ the symmetrisation of the twisted matrix product, written on a general pair with the matrix of ${}^{\natural}$ and the conjugate-transpose, with its trace and its rank; the deformation of the diagonal, which is no longer a scalar matrix, exhibited on the witnesses $e_1$ and $e_1+ie_2$ in the model; in the four by four regular model the corresponding symmetrisation of the two orders and its invariants; the matrix form of $K$, of its Gram matrix and of its indefinite cone. The two models are *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Representation* and *The General Quaternionic Sesqualgebra in the $4\times4$ Regular Matrix Representation*. -->
+
 #### Biquaternions as an Antisymmetric Quaternionic Sesqualgebra (AQS) over $\mathbb{C}$
+
+##### Common Theory
+
+### <a href="articles_maths/introduction-to-the-antisymmetric-quaternionic-sesqualgebra-of-biquaternions.html">Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions</a>
+<!-- the antisymmetric part of the quaternionic sesquilinear product under the conjugate transpose read as a multiplication, $\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\mathbf{P}\times\overline{\mathbf{Q}}$, scalar part zero and vector part the cross product of the vector part of the first argument with the conjugate of the vector part of the second; the class, which is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$; conjugate-alternation; the pure-vector image $\mathrm{Vect}(\mathbb{B})$ and the absence of a unit; the non-vanishing diagonal, the cross product of the vector part with its conjugate, which is $-2ie_3$ at $e_1+ie_2$ and is $-2i\mathbf{a}\times\mathbf{b}$ at $\mathbf{a}+i\mathbf{b}$ with $\mathbf{a},\mathbf{b}$ real; the failure of the Jacobi identity with the witness $(e_1,e_1,ie_2)$, whose cyclic sum is $-2ie_2$, the only Jacobi failure of the twelve that needs a complex element off the real basis; the coincidence of the block with $\mathrm{APA}$ on the real part, so that the failure is invisible there; the reconstruction $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$; and the placement of the block among the twelve. The general construction of the sesqualgebra parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the product it splits is *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. -->
+
+##### Conjugate-Alternating Theory
+
+### <a href="articles_maths/the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.html">The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra</a>
+<!-- the block as the cross product with the conjugate of the second argument; the diagonal $\tilde Q\wedge\tilde Q=\mathbf{Q}\times\overline{\mathbf{Q}}$ and its vanishing exactly on the elements whose vector part is a complex multiple of a real vector, so that it is a genuine four-real-dimensional condition, with the quadric it cuts; the conjugating of the value; the failure of the Jacobi identity and the witness $(e_1,e_1,ie_2)$, the smallest witness, with the reason it needs a complex element and the reason the failure is invisible on the real forms where the block coincides with $\mathrm{APA}$; the comparison with the two other failing brackets $\mathrm{AQA}$ and $\mathrm{APS}$; the elements of square zero; the obstruction of *Lie Algebras of Sesqualgebras*. The general construction of the sesqualgebra parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*. -->
+
+##### Form
+
+### <a href="articles_maths/the-sesquilinear-pairing-of-the-antisymmetric-quaternionic-sesqualgebra.html">The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra</a>
+<!-- the pairing of the block with the Krein form, $K(\tilde P\wedge\tilde Q,\tilde R)$ and $K(\tilde P\wedge\tilde Q,\tilde P\wedge\tilde Q)$, with the Gram matrix of the block computed on the basis pairs, its rank and its radical; the invariance forms $\beta$ with $\beta(\tilde P\wedge\tilde Q,\tilde R)=-\overline{\beta(\tilde P,\tilde Q\wedge\tilde R)}$, their space and its dimension, computed; the vanishing of the trace form, checked and not assumed; the relation of the pairing to the norm of the value and to the quadric of the diagonal; the restriction to the six subspaces with the signs of $K$ on each; the comparison with the pairing of $\mathrm{APS}$, where the form is $H$. The form $K$ is *The Krein Gram Matrix and the Restrictions of the Form* and *The Isotropic Structure of the General Quaternionic Sesqualgebra*. -->
+
+### <a href="articles_maths/the-six-subspaces-under-the-antisymmetric-quaternionic-sesqualgebra-of-biquaternions.html">The Six Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions</a>
+<!-- the block read on the six distinguished subspaces, one to a section: the vanishing on the centre, the pure-vector image and the failure of closure of the other subspaces, the elements whose value vanishes, the diagonal read on each and the subspaces on which it is identically zero, and the table of the six. The pattern is the one of *The Six Subspaces under the General Quaternionic Sesqualgebra of Biquaternions*; the subspaces themselves are *Introduction to the Six Subspaces*. -->
+
+##### Operators
+
+### <a href="articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-sesqualgebra.html">The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra</a>
+<!-- the operator $L^{\wedge}_{\tilde A}$ of the block, $\tilde R\mapsto\mathbf{A}\times\overline{\mathbf{R}}$, its conjugate-linearity in the second argument and the conjugate-linear operator theory it forces; its matrix in the real basis, its rank for a general element and its trace, zero; its composition with its conjugate and the conjugate-linear invariants; the adjoint with respect to $K$, computed; the derivations and the structure group of the block; the coincidence of the operator with the operator of $\mathrm{APA}$ on the real elements and the divergence off them. The operators of the general quaternionic sesquilinear product are *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*; the operators with the conjugate transpose are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*. -->
+
+##### Representations
+
+### <a href="articles_maths/the-antisymmetric-quaternionic-sesqualgebra-in-the-matrix-representations.html">The Antisymmetric Quaternionic Sesqualgebra in the Matrix Representations</a>
+<!-- the block in the two matrix models of the chapter: under $\mathbb{B}\cong M_2(\mathbb{C})$ the half-difference of the two twisted matrix products, written on a general pair with the matrix of ${}^{\natural}$ and the conjugate-transpose, with its pure-vector image read on the matrices; the deformation of the diagonal in the model, exhibited on $e_1+ie_2$, where the operation of the block does not vanish; the conjugate-linearity read on the matrices and the comparison with the $\mathrm{AQA}$ model, where the operation is linear in the second argument; in the four by four regular model the corresponding half-difference and its invariants; the matrix form of the pairing of the block. The two models are *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Representation* and *The General Quaternionic Sesqualgebra in the $4\times4$ Regular Matrix Representation*. -->
 
 #### Biquaternions as an Algebra over $\mathbb{R}$
 
+##### Common Theory
+
 ### <a href="articles_maths/biquaternions-as-an-algebra-over-r.html">Biquaternions as an Algebra over $\mathbb{R}$</a>
+<!-- the general plain bilinear product read on the real space, and the real algebra it defines: the rule on the eight real coordinates; the sixty-four products of the eight basis elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ in four blocks, the quaternion table, its multiples by $i$ and its negation, so that $e_0$ and $ie_0$ square to $e_0$ and $-e_0$ while $e_k$ and $ie_k$ square to $-e_0$ and $+e_0$; the three split-complex planes $\operatorname{span}_\mathbb{R}\{e_0,ie_k\}$ isomorphic to $\mathbb{R}[x]/(x^2-1)$ with idempotents $\tfrac12(e_0\pm ie_k)$, against the centre $\operatorname{span}_\mathbb{R}\{e_0,ie_0\}$, a field; the four conjugations all $\mathbb{R}$-linear; the central $i$ as a complex structure $J^2=-\mathrm{id}$; the real algebra as the restriction of scalars of the complex one, of dimension $8=2\cdot 4$, and the complexification as a different algebra; the admissible bases $\mathbb{R}$ and $\mathbb{C}$ against $\mathbb{H}$ and $\mathbb{B}$, the quaternion factor being non-central; the quaternion subalgebra as a real form and its imaginary as a non-subalgebra; and the four products all $\mathbb{R}$-bilinear, with the general plain bilinear one the only multiplication of an associative unital algebra. -->
 
-<!-- the complex bilinear product read on the real space, and the real algebra it defines: the rule on the eight real coordinates; the sixty-four products of the eight basis elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ in four blocks, the quaternion table, its multiples by $i$ and its negation, so that $e_0$ and $ie_0$ square to $e_0$ and $-e_0$ while $e_k$ and $ie_k$ square to $-e_0$ and $+e_0$; the three split-complex planes $\operatorname{span}_\mathbb{R}\{e_0,ie_k\}$ isomorphic to $\mathbb{R}[x]/(x^2-1)$ with idempotents $\tfrac12(e_0\pm ie_k)$, against the centre $\operatorname{span}_\mathbb{R}\{e_0,ie_0\}$, a field; the four conjugations all $\mathbb{R}$-linear; the central $i$ as a complex structure $J^2=-\mathrm{id}$; the real algebra as the restriction of scalars of the complex one, of dimension $8=2\cdot 4$, and the complexification as a different algebra; the admissible bases $\mathbb{R}$ and $\mathbb{C}$ against $\mathbb{H}$ and $\mathbb{B}$, the quaternion factor being non-central; the quaternion subalgebra as a real form and its imaginary as a non-subalgebra; and the four products all $\mathbb{R}$-bilinear, with the complex bilinear one the only multiplication of an associative unital algebra. -->
-
-### <a href="articles_maths/biquaternions-as-a-bimodule-over-h.html">Biquaternions as a Bimodule over $\mathbb{H}$</a>
-
-<!-- the additive group of the algebra under the two commuting actions of the quaternion ring $\mathbb{H}$: the left action $h\cdot(A\otimes h')=A\otimes hh'$ and the right action $(A\otimes h')\cdot h=A\otimes h'h$, distinct because $\mathbb{H}$ is not commutative; in the quaternionic coordinates $\tilde Q=h_1+ih_2$ they read $h\cdot\tilde Q=(hh_1)+i(hh_2)$ and $\tilde Q\cdot h=(h_1h)+i(h_2h)$ by the centrality of $i$; the module is free of rank two on each side on the generators $e_0,ie_0$, which are a real basis of the centre; the endomorphism ring $\operatorname{End}_\mathbb{H}(\mathbb{B})\cong M_2(\mathbb{H})$; and the product is left $\mathbb{H}$-linear in the first argument and right $\mathbb{H}$-linear in the second but not fully $\mathbb{H}$-bilinear, the defect being the commutator $\tilde Q\cdot(h\cdot\tilde P)-h\cdot(\tilde Q\cdot\tilde P)=[\tilde Q,h]\tilde P$, so the structure is an $\mathbb{H}$-ring and not a second field of scalars. The base-ring question is in *Biquaternions as an Algebra over $\mathbb{R}$*. -->
 
 ### <a href="articles_maths/the-change-of-scalars-from-c-to-r.html">The Change of Scalars from $\mathbb{C}$ to $\mathbb{R}$</a>
-
 <!-- the same ring $\mathbb{B}$ read over the smaller field $\mathbb{R}$; the real form and the complexification, and the two constructions that recover the other reading; which statements are statements about the ring and its elements and are therefore the same in the two readings, and which are statements about the scalars and are not; the eight real coordinates and the four complex ones, and the passage from the one set to the other. -->
 
 ### <a href="articles_maths/the-real-subalgebras-of-the-biquaternion-algebra.html">The Real Subalgebras of the Biquaternion Algebra</a>
-
 <!-- the $\mathbb{R}$-subalgebras of $\mathbb{B}$ spanned by real subspaces; the three-dimensional case $\mathbb{R}\{e_0,\ e_1+ie_2,\ ie_1-e_2\}$, whose square-zero ideal is two-dimensional, so that it is isomorphic to $\mathbb{R}[x,y]/(x,y)^2$; the absence of an even-dimension rule over $\mathbb{R}$, against the complex reading, where every subspace is a complex subspace and has even real dimension; the real subalgebras isomorphic to $\mathbb{C}$ and to $\mathbb{H}$. -->
 
-### <a href="articles_maths/the-four-conjugations-are-all-r-linear.html">The Four Conjugations Are All $\mathbb{R}$-Linear</a>
 
+
+##### Real Structure Theory
+
+### <a href="articles_maths/the-four-conjugations-are-all-r-linear.html">The Four Conjugations Are All $\mathbb{R}$-Linear</a>
 <!-- the four conjugations of the algebra read over $\mathbb{R}$, where they are all $\mathbb{R}$-linear maps of the eight-dimensional real space; the two that are $\mathbb{C}$-linear and the two that are conjugate-linear over $\mathbb{C}$; the two that change character in the passage between the readings, and the reason, in the coefficients; the real $8\times8$ matrix of each of the four. -->
 
 ### <a href="articles_maths/why-the-ideals-the-idempotents-and-the-zero-divisors-do-not-change.html">Why the Ideals, the Idempotents and the Zero Divisors Do Not Change</a>
-
 <!-- the reason the change of scalars leaves the three notions alone: each is a condition on the ring and its elements, so a smaller field of scalars cannot create or destroy an instance; the central element $i$ acting as a complex structure, which makes every ideal a complex subspace and every idempotent equation an equation with complex coefficients; the consequent sameness of the idempotent tables, of the zero-divisor cone and of the lattice of ideals, against what does change, the subalgebras, the automorphisms and the derivations. -->
 
-### <a href="articles_maths/the-automorphisms-and-derivations-of-the-real-biquaternion-algebra.html">The Automorphisms and Derivations of the Real Biquaternion Algebra</a>
 
+### <a href="articles_maths/the-automorphisms-and-derivations-of-the-real-biquaternion-algebra.html">The Automorphisms and Derivations of the Real Biquaternion Algebra</a>
 <!-- the $\mathbb{R}$-algebra automorphisms and the $\mathbb{R}$-derivations of $\mathbb{B}$; the larger automorphism group it forms against the $\mathbb{C}$-algebra automorphisms, and the derivation space, which the change of scalars leaves the same; the relation to *Biquaternion Automorphisms and Derivations*, and the automorphisms that exist only over $\mathbb{R}$. -->
 
-### <a href="articles_maths/the-biquaternion-algebra-as-a-real-module-over-itself.html">The Biquaternion Algebra as a Real Module over Itself</a>
+### <a href="articles_maths/biquaternions-as-a-bimodule-over-h.html">Biquaternions as a Bimodule over $\mathbb{H}$</a>
+<!-- the additive group of the algebra under the two commuting actions of the quaternion ring $\mathbb{H}$: the left action $h\cdot(A\otimes h')=A\otimes hh'$ and the right action $(A\otimes h')\cdot h=A\otimes h'h$, distinct because $\mathbb{H}$ is not commutative; in the quaternionic coordinates $\tilde Q=h_1+ih_2$ they read $h\cdot\tilde Q=(hh_1)+i(hh_2)$ and $\tilde Q\cdot h=(h_1h)+i(h_2h)$ by the centrality of $i$; the module is free of rank two on each side on the generators $e_0,ie_0$, which are a real basis of the centre; the endomorphism ring $\operatorname{End}_\mathbb{H}(\mathbb{B})\cong M_2(\mathbb{H})$; and the product is left $\mathbb{H}$-linear in the first argument and right $\mathbb{H}$-linear in the second but not fully $\mathbb{H}$-bilinear, the defect being the commutator $\tilde Q\cdot(h\cdot\tilde P)-h\cdot(\tilde Q\cdot\tilde P)=[\tilde Q,h]\tilde P$, so the structure is an $\mathbb{H}$-ring and not a second field of scalars. The base-ring question is in *Biquaternions as an Algebra over $\mathbb{R}$*. -->
 
+### <a href="articles_maths/the-biquaternion-algebra-as-a-real-module-over-itself.html">The Biquaternion Algebra as a Real Module over Itself</a>
 <!-- the two ranks of the regular module, one over $\mathbb{B}$ and eight over $\mathbb{R}$; the left regular representation over $\mathbb{R}$ and the $8\times8$ real Cayley matrix of left multiplication, the realification of the $4\times4$ complex one, with its multiplicativity, its determinant $|N|^4$ and trace $8\,\mathrm{Re}(Q_0)$, and the trace form of signature $(4,4)$; the submodule lattice, equal to the lattice of left ideals, the decomposition $\mathbb{B}\cong V\oplus V$ and the endomorphism rings, the $\mathbb{B}$-linear one the right multiplications, against the full $\operatorname{End}_\mathbb{R}(\mathbb{B})\cong M_8(\mathbb{R})$; the relation to *Biquaternion 4×4 Regular Matrix Element Representation*, and the real coordinates of one in the terms of the other. -->
 
-### <a href="articles_maths/the-clifford-algebra-representation.html">The Clifford Algebra Representation</a>
-
-<!-- the real realization of $\mathbb{B}$ as the even subalgebra $\mathrm{Cl}_{1,3}^+$ of the Clifford algebra of the Minkowski form: the four generators and the mostly-minus $g=\mathrm{diag}(+1,-1,-1,-1)$, the grade basis of $\mathrm{Cl}_{1,3}$ and the even part $1$, the six bivectors and the pseudoscalar of real dimension $8$; the isomorphism fixed by $e_1\mapsto\gamma^2\gamma^3$, $e_2\mapsto\gamma^3\gamma^1$, $e_3\mapsto\gamma^1\gamma^2$, $i\mapsto-\omega=-\gamma^0\gamma^1\gamma^2\gamma^3$ and $ie_k\mapsto+\gamma^0\gamma^k$; the verification of the squares, of the quaternion relations, of the centrality of the imaginary and of the uniform positive signs of the six bivectors; the argument that the eight basis images are a basis, so that the identification is an equality; the reversion $1\mapsto1$, bivectors $\mapsto$ minus themselves, $\omega\mapsto\omega$ as the image of the natural conjugation, with the norm as the reversion square $\Phi(\tilde Q\tilde Q^{\natural})=\Phi(\tilde Q)\operatorname{rev}(\Phi(\tilde Q))$, a real combination of $1$ and $\omega$; and the corollary $\mathrm{Cl}_{1,3}^+\cong M_2(\mathbb{C})$. The grades, the matrix model, the idempotents, the Peirce decomposition and the ideals of the same identification are *The Clifford Structure of the Biquaternion Algebra*; the matrix realizations are *Biquaternion 2×2 Matrix Element Representation* and *Biquaternion 4×4 Regular Matrix Element Representation*; the module is *Biquaternion Spin Geometry*. -->
-
-### <a href="articles_maths/the-trace-form-of-the-real-biquaternion-algebra.html">The Trace Form of the Real Biquaternion Algebra</a>
-
-<!-- the trace form of the real biquaternion algebra: the regular representation and the left multiplication $L_{\tilde P}$, the trace of a left multiplication $\operatorname{Tr}(L_{\tilde X})=8\,\mathrm{Re}\,\mathrm{Sc}(\tilde X)$, the Gram matrix $8\cdot\operatorname{diag}(1,-1,-1,-1,-1,1,1,1)$ and the signature $(4,4)$, the identity $\tau=8\,\mathrm{Re}\langle\cdot,\cdot\rangle$ with the realified complex bilinear form, the invariance under every automorphism and in particular under conjugation by the units, and the contrast with the positive definite Hilbert–Schmidt form of the matrix model. -->
-
-### <a href="articles_maths/the-six-subspaces-under-the-trace-form.html">The Six Subspaces under the Trace Form</a>
-
-<!-- the trace form $\tau(\tilde P,\tilde Q)=\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=8\,\mathrm{Re}\langle\tilde P,\tilde Q\rangle$ of signature $(4,4)$ restricted to the six distinguished subspaces, the real-algebra reading of the same table as the complex bilinear form rescaled by $8$: $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(1,3)$ on the quaternion subspace, $(3,1)$ on the anti-quaternion subspace, positive definite $(4,0)$ on the Hermitian subspace and negative definite $(0,4)$ on the anti-Hermitian one, the last two the orthogonal splitting of the algebra and its four positive and four negative directions; the null cones of the indefinite rows; the isometry groups $O(1,1)$, $O(3,3)$, $O(1,3)$, $O(3,1)$ and $O(4)$; the automorphisms of the algebra inside $O(4,4)$ -->
-
-### <a href="articles_maths/the-biquaternion-algebra-over-r-in-the-2x2-matrix-representation.html">The Biquaternion Algebra over $\mathbb{R}$ in the $2\times2$ Matrix Representation</a>
-
-<!-- the realification $M_2(\mathbb{C})\cong\mathbb{R}^8$ with complex structure $iI$ and coefficient conjugation the conjugation of the matrix; the trace form $\tau(\tilde P,\tilde Q)=4\operatorname{Re}\operatorname{Tr}(\Phi(\tilde P)\Phi(\tilde Q))=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle$, of diagonal $8\sum_\mu\varepsilon_\mu(q_\mu^2-q'_\mu{}^2)$, real signature $(4,4)$, Gram matrix the block matrix of the realified complex bilinear form rescaled by $8$, invariant under the automorphisms of the algebra; the four realified forms as the real parts of the four pairings, with signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$; the Minkowski form of signature $(1,3)$ belongs to the Lorentzian slice. -->
-
-### <a href="articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-regular-matrix-representation.html">The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Regular Matrix Representation</a>
-
-<!-- the same group on the real regular representation $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$: the trace form is literally the matrix trace $\tau(\tilde P,\tilde Q)=\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle=2\operatorname{Re}\operatorname{Tr}(\rho_L(\tilde P)\rho_L(\tilde Q))$, with $\operatorname{Tr}L_{\tilde Q}=8\operatorname{Re}Q_0$ and $\det L_{\tilde Q}=\lvert N(\tilde Q)\rvert^4$; diagonal $8\sum_\mu\varepsilon_\mu(q_\mu^2-q'_\mu{}^2)$ of signature $(4,4)$, invariant under the automorphisms of the algebra; the four realified forms with the signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$; the zero divisors are the singular real regular matrices, of real rank four, and the Minkowski form and the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ belong to the Lorentzian slice and the sesqualgebra group. -->
+##### Form
 
 ### <a href="articles_maths/the-realification-of-the-four-forms.html">The Realification of the Four Forms</a>
+<!-- the entry point of the group: the four complex forms read on the real vector space of dimension $8$; the real basis $\tilde Q=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu ie_\mu$, the four realified Gram matrices $\operatorname{diag}(\mathrm{D},-\mathrm{D})$, $\operatorname{diag}(\mathrm{I}_4,-\mathrm{I}_4)$, $\mathrm{I}_8$, $\operatorname{diag}(\varepsilon,\varepsilon)$ and the four signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$; the four restriction tables on the six distinguished real subspaces side by side, with the definite rows and the maximal totally isotropic dimensions $4,4,0,2$; the four realified null cones of real dimension $7$ against the complex cone of real dimension $6$; the Euclidean norm and the unit group $\mathbb{B}^\times\simeq U(2)$ with the norm-one slice $\mathrm{SL}_2(\mathbb{C})$; the common source of the signature table of the synthesis group. It absorbs *The Real Reading of the Six Subspaces*, *The Real Norm and the Units* and *The Real Isotropic Structure*; the topology of *The Real Topology of the Biquaternion Algebra* is not used here. -->
 
-<!-- the entry point of the group: the four complex forms read on the real vector space of dimension $8$; the real basis $\tilde Q=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu ie_\mu$, the four realified Gram matrices $\operatorname{diag}(\mathrm{D},-\mathrm{D})$, $\operatorname{diag}(\mathrm{I}_4,-\mathrm{I}_4)$, $\mathrm{I}_8$, $\operatorname{diag}(\varepsilon,\varepsilon)$ and the four signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$; the four restriction tables on the six distinguished real subspaces side by side, with the definite rows and the maximal totally isotropic dimensions $4,4,0,2$; the four realified null cones of real dimension $7$ against the complex cone of real dimension $6$; the Euclidean norm and the unit sphere $S^7$; the unit group $\mathbb{B}^\times\simeq U(2)$ and the norm-one slice $\mathrm{SL}_2(\mathbb{C})\simeq S^3$; the vector-space topology of $\mathbb{R}^8$, the contractibility and $S^7$; the common source of the signature table of the synthesis group. Absorbs *The Real Reading of the Six Subspaces*, *The Real Norm and the Units*, *The Real Isotropic Structure* and *The Real Topology of the Biquaternion Algebra*. -->
+### <a href="articles_maths/the-trace-form-of-the-real-biquaternion-algebra.html">The Trace Form of the Real Biquaternion Algebra</a>
+<!-- the trace form of the real biquaternion algebra: the regular representation and the left multiplication $L_{\tilde P}$, the trace of a left multiplication $\operatorname{Tr}(L_{\tilde X})=8\,\mathrm{Re}\,\mathrm{Sc}(\tilde X)$, the Gram matrix $8\cdot\operatorname{diag}(1,-1,-1,-1,-1,1,1,1)$ and the signature $(4,4)$, the identity $\tau=8\,\mathrm{Re}\langle\cdot,\cdot\rangle$ with the realified general plain bilinear form, the invariance under every automorphism and in particular under conjugation by the units, and the contrast with the positive definite Hilbert–Schmidt form of the matrix model. -->
+
+
+
+### <a href="articles_maths/the-six-subspaces-under-the-real-biquaternion-algebra.html">The Six Subspaces under the Real Biquaternion Algebra</a>
+<!-- the trace form $\tau(\tilde P,\tilde Q)=\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=8\,\mathrm{Re}\langle\tilde P,\tilde Q\rangle$ of signature $(4,4)$ restricted to the six distinguished subspaces, the real-algebra reading of the same table as the general plain bilinear form rescaled by $8$: $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(1,3)$ on the quaternion subspace, $(3,1)$ on the anti-quaternion subspace, positive definite $(4,0)$ on the Hermitian subspace and negative definite $(0,4)$ on the anti-Hermitian one, the last two the orthogonal splitting of the algebra and its four positive and four negative directions; the null cones of the indefinite rows; the isometry groups $O(1,1)$, $O(3,3)$, $O(1,3)$, $O(3,1)$ and $O(4)$; the automorphisms of the algebra inside $O(4,4)$ -->
+
+
+##### Operators
 
 ### <a href="articles_maths/operators-of-the-real-biquaternion-algebra.html">Operators of the Real Biquaternion Algebra</a>
-
 <!-- the operators of the real biquaternion algebra: the left and right multiplications and the two-sided sandwich as real endomorphisms of $\mathbb{R}^8$, their composition laws, the four adjoints $(L_{\tilde Q})^{\langle,\rangle}=R_{\tilde Q}$, $(L_{\tilde Q})^{\langle,\rangle_{\natural}}=L_{\tilde Q^{\natural}}$, $(L_{\tilde Q})^{\langle,\rangle_{*}}=L_{\tilde Q^{*}}$ and $(L_{\tilde Q})^{\langle,\rangle_{\natural*}}=R_{\bar{\tilde Q}}$ for the four realified forms, the type criteria on the Hermitian, anti-Hermitian and unitary slices, the real Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ with $\mathbb{B}^\times=U(2)\cdot\exp(\mathbb{M}_+)$, and the real groups $O(4)$, $U(2)$, $O(1,3)$ that the realified forms single out. -->
+
+
+
+##### Representations
+
+### <a href="articles_maths/the-biquaternion-algebra-over-r-in-the-2x2-matrix-representation.html">The Biquaternion Algebra over $\mathbb{R}$ in the $2\times2$ Matrix Representation</a>
+<!-- the realification $M_2(\mathbb{C})\cong\mathbb{R}^8$ with complex structure $iI$ and coefficient conjugation the conjugation of the matrix; the trace form $\tau(\tilde P,\tilde Q)=4\operatorname{Re}\operatorname{Tr}(\Phi(\tilde P)\Phi(\tilde Q))=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle$, of diagonal $8\sum_\mu\varepsilon_\mu(q_\mu^2-q'_\mu{}^2)$, real signature $(4,4)$, Gram matrix the block matrix of the realified general plain bilinear form rescaled by $8$, invariant under the automorphisms of the algebra; the four realified forms as the real parts of the four pairings, with signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$; the Minkowski form of signature $(1,3)$ belongs to the Lorentzian slice. -->
+
+### <a href="articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-regular-matrix-representation.html">The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Regular Matrix Representation</a>
+<!-- the same group on the real regular representation $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$: the trace form is literally the matrix trace $\tau(\tilde P,\tilde Q)=\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle=2\operatorname{Re}\operatorname{Tr}(\rho_L(\tilde P)\rho_L(\tilde Q))$, with $\operatorname{Tr}L_{\tilde Q}=8\operatorname{Re}Q_0$ and $\det L_{\tilde Q}=\lvert N(\tilde Q)\rvert^4$; diagonal $8\sum_\mu\varepsilon_\mu(q_\mu^2-q'_\mu{}^2)$ of signature $(4,4)$, invariant under the automorphisms of the algebra; the four realified forms with the signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$; the zero divisors are the singular real regular matrices, of real rank four, and the Minkowski form and the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ belong to the Lorentzian slice and the sesqualgebra group. -->
+
+### <a href="articles_maths/the-clifford-algebra-representation.html">The Clifford Algebra Representation</a>
+<!-- the real realization of $\mathbb{B}$ as the even subalgebra $\mathrm{Cl}_{1,3}^+$ of the Clifford algebra of the Minkowski form: the four generators and the mostly-minus $g=\mathrm{diag}(+1,-1,-1,-1)$, the grade basis of $\mathrm{Cl}_{1,3}$ and the even part $1$, the six bivectors and the pseudoscalar of real dimension $8$; the isomorphism fixed by $e_1\mapsto\gamma^2\gamma^3$, $e_2\mapsto\gamma^3\gamma^1$, $e_3\mapsto\gamma^1\gamma^2$, $i\mapsto-\omega=-\gamma^0\gamma^1\gamma^2\gamma^3$ and $ie_k\mapsto+\gamma^0\gamma^k$; the verification of the squares, of the quaternion relations, of the centrality of the imaginary and of the uniform positive signs of the six bivectors; the argument that the eight basis images are a basis, so that the identification is an equality; the reversion $1\mapsto1$, bivectors $\mapsto$ minus themselves, $\omega\mapsto\omega$ as the image of the natural conjugation, with the norm as the reversion square $\Phi(\tilde Q\tilde Q^{\natural})=\Phi(\tilde Q)\operatorname{rev}(\Phi(\tilde Q))$, a real combination of $1$ and $\omega$; and the corollary $\mathrm{Cl}_{1,3}^+\cong M_2(\mathbb{C})$. The article also carries the second identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, the volume element as the central scalar imaginary, the four grades against the biquaternion components and the four conjugations as the intrinsic maps $\alpha$, $r$, $\alpha r$, $-r$. The matrix model, the idempotents and the Peirce decomposition are their own entries; the matrix realizations are *Biquaternion 2×2 Matrix Element Representation* and *Biquaternion 4×4 Regular Matrix Element Representation*; the module is *Biquaternion Spin Geometry*. -->
+
+
 
 #### Synthesis of the Four Products
 
 ### <a href="articles_maths/the-four-products-and-their-two-slots-the-two-algebras-and-the-two-sesqualgebras.html">The Four Products and Their Two Slots: the Two Algebras and the Two Sesqualgebras</a>
-
 <!-- the algebra companion of *Biquaternion Forms and Algebraic Norms*: the four products as the four settings of one two-slot construction $x\star y=K_1(x)K_2(y)$, the rules by which the second slot decides bilinearity, the left unit and the closure of the left multiplications while the first slot decides the right unit and the surviving coefficient $\varepsilon$ of the scalar form, the derivation of the two algebras over $\mathbb{C}$ and the two sesqualgebras over $\mathbb{C}$ from the second slot, the four scalar forms with the two marks, the Gram matrices $\mathrm{E}$ and $\mathrm{I}_4$ and the signatures $(4,4),(4,4),(8,0),(2,6)$, the square-is-scalar property at the setting $({}^{\natural},\mathrm{id})$ alone, and the reading of the four as the plain multiplication, its $\natural$-isotope, the derived operation with respect to ${}^{*}$ and the $\natural$-isotope of that -->
 
 ### <a href="articles_maths/the-annihilating-elements-of-the-four-products.html">The Annihilating Elements of the Four Products</a>
-
-<!-- the central square $c(\tilde P)e_0=\tilde P\tilde P^{\natural}=\tilde P^{\natural}\tilde P$ with $c(\tilde P)=P_0^2+P_1^2+P_2^2+P_3^2$, and its four multiplicative laws, $c(\tilde P\tilde Q)=c(\tilde P)c(\tilde Q)$ for the two bilinear products and $c(\tilde P\tilde Q)=c(\tilde P)\overline{c(\tilde Q)}$ for the two sesquilinear ones; the single set of elements that admit a nonzero annihilating factor, exactly $\{c(\tilde P)=0\}$, the rank-one elements of the $2\times2$ model and a complex cone of dimension three; the four products' different annihilators of one fixed annihilated element, their different square-zero sets, their different idempotent sets and their different unit groups; the warning that this set is not the isotropic cone of the complex bilinear form $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$, which the topology group owns; the synthesis of the four element theories read in the four preceding groups, and the restriction to the six subspaces, which *The Six Subspaces and the Four Forms* owns. -->
+<!-- the central square $c(\tilde P)e_0=\tilde P\tilde P^{\natural}=\tilde P^{\natural}\tilde P$ with $c(\tilde P)=P_0^2+P_1^2+P_2^2+P_3^2$, and its four multiplicative laws, $c(\tilde P\tilde Q)=c(\tilde P)c(\tilde Q)$ for the two bilinear products and $c(\tilde P\tilde Q)=c(\tilde P)\overline{c(\tilde Q)}$ for the two sesquilinear ones; the single set of elements that admit a nonzero annihilating factor, exactly $\{c(\tilde P)=0\}$, the rank-one elements of the $2\times2$ model and a complex cone of dimension three; the four products' different annihilators of one fixed annihilated element, their different square-zero sets, their different idempotent sets and their different unit groups; the warning that this set is not the isotropic cone of the general plain bilinear form $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$, which the topology group owns; the synthesis of the four element theories read in the four preceding groups, and the restriction to the six subspaces, which *The Six Subspaces and the Four Complex Products* owns. -->
 
 ### <a href="articles_maths/the-idempotents-of-the-four-products.html">The Idempotents of the Four Products</a>
-
-<!-- the four idempotent sets of the four products and the invariants that separate them: the trivial pair $0,e_0$ shared by all four; the plain family $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-e_0$, its three parts being the trivial pair, the two-sphere of the Hermitian idempotents and the four-parameter family of non-trivial idempotents lying in none of the four four-dimensional subspaces; the two spheres, $\tfrac12(e_0+i\hat\mu)$ of the sesqualgebra about the point $\tfrac12e_0$ and $-\tfrac12e_0+\mu$ with $(\mu,\mu)=\tfrac34$ of the quaternionic sesquilinear product about the point $-\tfrac12e_0$, and the displacement between them; the central square of an idempotent, $0$ on every nontrivial idempotent of the plain and of the complex sesquilinear product and $e_0$ on the two-sphere of the fourth, so that the units among the four sets are $e_0$ and the sphere of the fourth product and the zero divisors are the nontrivial idempotents of the first and the third; the complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$ of the plain family, with the orthogonality $\tilde\Pi(e_0-\tilde\Pi)=0$, available for the plain product alone; the position of the families in the centre, in $\mathbb{M}_+$, in $\mathbb{H}_{\mathbb{B}}$ and in no distinguished subspace; and the Peirce decomposition, which is the plain product's because it needs associativity. The four sets are tabulated in *Comparison Between the Four Biquaternion Products*; the owners are the four idempotent articles of the four groups. -->
+<!-- the four idempotent sets of the four products and the invariants that separate them: the trivial pair $0,e_0$ shared by all four; the plain family $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-e_0$, its three parts being the trivial pair, the two-sphere of the Hermitian idempotents and the four-parameter family of non-trivial idempotents lying in none of the four four-dimensional subspaces; the two spheres, $\tfrac12(e_0+i\hat\mu)$ of the sesqualgebra about the point $\tfrac12e_0$ and $-\tfrac12e_0+\mu$ with $(\mu,\mu)=\tfrac34$ of the general quaternionic sesquilinear product about the point $-\tfrac12e_0$, and the displacement between them; the central square of an idempotent, $0$ on every nontrivial idempotent of the plain and of the general plain sesquilinear product and $e_0$ on the two-sphere of the fourth, so that the units among the four sets are $e_0$ and the sphere of the fourth product and the zero divisors are the nontrivial idempotents of the first and the third; the complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$ of the plain family, with the orthogonality $\tilde\Pi(e_0-\tilde\Pi)=0$, available for the plain product alone; the position of the families in the centre, in $\mathbb{M}_+$, in $\mathbb{H}_{\mathbb{B}}$ and in no distinguished subspace; and the Peirce decomposition, which is the plain product's because it needs associativity. The four sets are tabulated in *Comparison Between the Four Biquaternion Products*; the owners are the four idempotent articles of the four groups. -->
 
 ### <a href="articles_maths/the-square-roots-of-a-central-value-in-the-four-products.html">The Square Roots of a Central Value in the Four Products</a>
-
-<!-- the four square-root problems of a central value $\lambda e_0$, one per product, and the existence of a root for each $\lambda$: the plain product's vector-scalar reduction to $P_0^2-(\mathbf P,\mathbf P)=\lambda$ and $2P_0\mathbf P=0$, with the classification of the three special values $-1$, $0$, $+1$ quoted from *Biquaternion Square Roots of Minus One, Zero and Plus One*; the natural product's single complex equation $c(\tilde P)=\lambda$, the cone for $\lambda=0$ and a quadric of real dimension six for $\lambda\neq0$; the complex sesquilinear product's non-negative scalar part $\sum_\mu\lvert P_\mu\rvert^2$, so that no root exists for a non-real or negative $\lambda$, the root of $0$ is the origin alone and the roots of $1$ are the unitary group $\cong U(2)$ of *The Unitary Group of the Biquaternion Algebra*; the complex quaternionic sesquilinear product's Krein scalar part, real for every element, so that roots of every real $\lambda$ and of no non-real one exist, with $e_k$ roots of $-1$, $e_0$ and $\pm i$ roots of $+1$ and $e_0+ie_1$ a root of $0$; and the central-square criterion $c(\tilde P\star\tilde P)=c(\tilde P)^2$ or $\lvert c(\tilde P)\rvert^2$, by which every root of a non-zero central value is a unit and every non-zero root of $0$ is a zero divisor. The four root sets are tabulated in *Comparison Between the Four Biquaternion Products*, and the idempotent reading of the roots of $-1$ is *The Idempotents of the Four Products*. -->
+<!-- the four square-root problems of a central value $\lambda e_0$, one per product, and the existence of a root for each $\lambda$: the plain product's vector-scalar reduction to $P_0^2-(\mathbf P,\mathbf P)=\lambda$ and $2P_0\mathbf P=0$, with the classification of the three special values $-1$, $0$, $+1$ quoted from *Biquaternion Square Roots of Minus One, Zero and Plus One*; the natural product's single complex equation $c(\tilde P)=\lambda$, the cone for $\lambda=0$ and a quadric of real dimension six for $\lambda\neq0$; the general plain sesquilinear product's non-negative scalar part $\sum_\mu\lvert P_\mu\rvert^2$, so that no root exists for a non-real or negative $\lambda$, the root of $0$ is the origin alone and the roots of $1$ are the unitary group $\cong U(2)$ of *The Unitary Group of the Biquaternion Algebra*; the general quaternionic sesquilinear product's Krein scalar part, real for every element, so that roots of every real $\lambda$ and of no non-real one exist, with $e_k$ roots of $-1$, $e_0$ and $\pm i$ roots of $+1$ and $e_0+ie_1$ a root of $0$; and the central-square criterion $c(\tilde P\star\tilde P)=c(\tilde P)^2$ or $\lvert c(\tilde P)\rvert^2$, by which every root of a non-zero central value is a unit and every non-zero root of $0$ is a zero divisor. The four root sets are tabulated in *Comparison Between the Four Biquaternion Products*, and the idempotent reading of the roots of $-1$ is *The Idempotents of the Four Products*. -->
 
 ### <a href="articles_maths/the-square-zero-elements-of-the-four-products.html">The Square-Zero Elements of the Four Products</a>
-
-<!-- the four square-zero sets of the four products, all inside the common zero-divisor set $\{c=0\}$: the plain product's pure isotropic cone $\{P_0=0,\ (\mathbf P,\mathbf P)=0\}$, of real dimension four, parametrised as $r(\hat u+i\hat v)$ over real pairs with equal squares and vanishing cross sum; the natural product's whole cone, of real dimension six; the complex sesquilinear product's origin alone; and the complex quaternionic sesquilinear product's proper subfamily cut out by $\overline{\tilde P}\tilde P=0$, with the witnesses $e_0+ie_1$ and $ie_0+e_1+e_2+ie_3$; the order $Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2$ and $\{0\}\subsetneq Z_4\subsetneq Z_2$ together with the transversality $Z_1\cap Z_4=\{0\}$, from the formula $\overline{\tilde P}\tilde P=-2\sum_k u_k^2e_0+2i\,\mathbf u\times\mathbf v$ on the pure elements, the plain square forgetting the cross product and the fourth product's square keeping it; and the reading of the sets as the elements that lie in their own annihilator, the annihilators themselves being *The Annihilating Elements of the Four Products*. The table is *Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*. -->
+<!-- the four square-zero sets of the four products, all inside the common zero-divisor set $\{c=0\}$: the plain product's pure isotropic cone $\{P_0=0,\ (\mathbf P,\mathbf P)=0\}$, of real dimension four, parametrised as $r(\hat u+i\hat v)$ over real pairs with equal squares and vanishing cross sum; the natural product's whole cone, of real dimension six; the general plain sesquilinear product's origin alone; and the general quaternionic sesquilinear product's proper subfamily cut out by $\overline{\tilde P}\tilde P=0$, with the witnesses $e_0+ie_1$ and $ie_0+e_1+e_2+ie_3$; the order $Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2$ and $\{0\}\subsetneq Z_4\subsetneq Z_2$ together with the transversality $Z_1\cap Z_4=\{0\}$, from the formula $\overline{\tilde P}\tilde P=-2\sum_k u_k^2e_0+2i\,\mathbf u\times\mathbf v$ on the pure elements, the plain square forgetting the cross product and the fourth product's square keeping it; and the reading of the sets as the elements that lie in their own annihilator, the annihilators themselves being *The Annihilating Elements of the Four Products*. The table is *Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*. -->
 
 ### <a href="articles_maths/the-four-pairings-of-the-biquaternion-algebra.html">The Four Pairings of the Biquaternion Algebra</a>
+<!-- the four pairings of the algebra in one place: the general plain bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$, the general quaternionic bilinear form $\langle\tilde P,\tilde Q\rangle_\natural=\mathrm{Sc}(\tilde P^\natural\tilde Q)=\sum_\mu P_\mu Q_\mu$, the general plain sesquilinear form $\langle\tilde P,\tilde Q\rangle_*=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ and the general quaternionic sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^\natural\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, the scalar parts of the four products of *The Four Biquaternion Complex Products*; the common comparison table; the four conjugations that index them — none on either argument for the general plain bilinear, the natural conjugation on the first for the general quaternionic bilinear, the Hermitian conjugation on the second for the general plain sesquilinear, both for the general quaternionic sesquilinear — and the involution group $\{\mathrm{id},\natural,\bar{\cdot},{}^{*}\}\cong(\mathbb Z/2)^2$; the four Gram matrices $\mathrm{E}$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$ with $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, and the four signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$; the four adjoints of a left multiplication — the transpose for the general plain bilinear form, $L_{\tilde Q^\natural}$, $L_{\tilde Q^{*}}$ and $R_{\bar{\tilde Q}}$ — and the four isometry groups $O_4(\mathbb C)$, $O_4(\mathbb C)$, $U(4)$ and $U(1,3)$; the dictionary that recovers each pairing from the others; the null quadric of the general plain bilinear form, its two families of isotropic planes with the hyperbolic basis $h_1..h_4$ and the index $1+1=2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$, and the value-one set $\sum_\mu\varepsilon_\mu Q_\mu^2=1$ with the proof that it is not a group. The unifying entry of the category and the home of the general plain bilinear form, whose own article was dissolved into this one and into the two matrix-representation articles. -->
 
-<!-- the four pairings of the algebra in one place: the complex bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$, the quaternion bilinear form $\langle\tilde P,\tilde Q\rangle_\natural=\mathrm{Sc}(\tilde P^\natural\tilde Q)=\sum_\mu P_\mu Q_\mu$, the complex sesquilinear form $\langle\tilde P,\tilde Q\rangle_*=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ and the quaternion sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^\natural\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, the scalar parts of the four products of *The Four Biquaternion Complex Products*; the common comparison table; the four conjugations that index them — none on either argument for the complex bilinear, the natural conjugation on the first for the quaternion bilinear, the Hermitian conjugation on the second for the complex sesquilinear, both for the quaternion sesquilinear — and the involution group $\{\mathrm{id},\natural,\bar{\cdot},{}^{*}\}\cong(\mathbb Z/2)^2$; the four Gram matrices $\mathrm{E}$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$ with $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, and the four signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$; the four adjoints of a left multiplication — the transpose for the complex bilinear form, $L_{\tilde Q^\natural}$, $L_{\tilde Q^{*}}$ and $R_{\bar{\tilde Q}}$ — and the four isometry groups $O_4(\mathbb C)$, $O_4(\mathbb C)$, $U(4)$ and $U(1,3)$; the dictionary that recovers each pairing from the others. The unifying entry of the category; the individual forms are *The Complex Bilinear Form on the Biquaternion Algebra*, *The Bilinear Form on the Biquaternion Algebra*, *The Hermitian Form on the Biquaternion Algebra* and *The Biquaternion Krein Form and Its Signature*. -->
+### <a href="articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html">The Four Adjoints of the Biquaternion Algebra in Examples</a>
+<!-- the four adjoints of the four pairings of the previous article, worked out on explicit operators: $(L_AR_B)^\approx=L_BR_A$ the swap with no conjugation, $(L_AR_B)^N=L_{A^\natural}R_{B^\natural}$ the sign in place, $(L_AR_B)^*=L_{A^*}R_{B^*}$ and $(L_AR_B)^{\natural*}=L_{\bar B}R_{\bar A}$; the four adjoint matrices of one two-sided operator in the coefficient basis; the signed inner conjugation $A^\natural\,X\,A^{-1}$ against the unsigned $A\,X\,A^{-1}$, their difference $-2\mathbf A\,X\,A^{-1}$, their matrices for a mixed, a central and a vector parameter and the anti-multiplicativity of the signed one; the self-adjointness criteria on the same parameters; the table that reads the suffixes of the operator families as the adjoints of the forms, which is what the old titles "with Association" and "with Signed Inner Conjugation" named; and the two switches $\sigma$ (the coefficient involution) and $\alpha$ (the sign character) on the twisted right factor $c_{\sigma,\alpha}(\tilde A)=\sigma(\alpha(\tilde A))$, with the four settings (identity, $\natural$, $\bar{\cdot}$, $\ast$), the ones that close the family under composition, and the worked unit $\tilde A=(1+i)e_0+e_1$ whose four values have the four scalar parts $-1+2i$, $1+2i$, $1$, $3$ -->
 
 #### Basic Representations
 
-### <a href="articles_maths/biquaternion-2x2-matrix-element-representation.html">Biquaternion 2×2 Matrix Element Representation</a>
+### <a href="articles_maths/biquaternion-four-vector-element-representation.html">Biquaternion Four-Vector Element Representation</a>
+<!-- the biquaternion read as its four complex coefficients; the complex four-vector $Q^\mu$; the $4\times1$ column and the dual $1\times4$ row; multiplication in components and the cross-product term that carries the non-commutativity; the three conjugations in coordinates; the six distinguished subspaces; the norm with all four signs plus; the indefinite signatures of the two real subspaces. -->
+### <a href="articles_maths/biquaternion-polar-element-representation.html">Biquaternion Polar Element Representation</a>
+<!-- the polar representation of the biquaternion algebra, the reference of the series and the one the named Hamilton, complex and Cartan representations regroup; the four factors, the scale, the central phase, the boost and the rotor; the modulus as the square root of the norm in the closed right half plane, its branch and the two roots; existence and uniqueness on the nonzero elements; the domain and its boundary, the null cone, on which the boosts are unbounded and the boundary word is a minimal idempotent of norm zero; the trichotomy of the exponential, $\nu^2 = -1, 0, +1$; the algorithm and the comparison of each factor with a matrix group; the matrix polar decomposition of $\mathrm{GL}(2,\mathbb{C})$ and of $\mathrm{SL}(2,\mathbb{C})$, and the order of the four factors, which is part of the word because the boost is not central. -->
+### <a href="articles_maths/biquaternion-partial-polar-element-representations.html">Biquaternion Partial Polar Element Representations</a>
+<!-- the three two-factor representations as the three pairings of the four factors; the Hamilton representation $R\exp(\xi\Theta)$ and the price of its real quaternion modulus, undefined on the null cone; the complex representation $Q\exp(i\Psi)$, whose factorisation exists off the null cone while its standard construction needs an invertible real quaternion part, with the counterexample that separates the two; the Cartan representation $HU$ as the matrix polar decomposition and its domain beyond the unit-norm elements; the three domains, which differ and are not nested, and whose union is the complement of the null cone; the two degenerate limits that reproduce the quaternion and complex polar forms; the exponential of the element, whose Hamilton parameters are generally not those of the element; the correlated non-uniqueness of the axis, angle and modulus, and its role in the multivaluedness of the logarithm; behaviour under the quaternion, complex and Hermitian conjugations; the worked examples and the counting that forbids a fourth two-factor representation. -->
 
+### <a href="articles_maths/biquaternion-2x2-matrix-element-representation.html">Biquaternion 2×2 Matrix Element Representation</a>
 <!-- the further development of the matrix realization of *Introduction to the 2×2 Matrix Representation of Biquaternions*: the rank-one elements and the outer product $\Phi(\tilde Q)=uv^{T}$, determined up to $(\lambda u,\lambda^{-1}v)$; the characteristic polynomial $\lambda^2-2Q_0\lambda+N(\tilde Q)$ and the spectrum $\{Q_0\pm iB\}$; the Cayley–Hamilton identity $\tilde Q^2-2Q_0\tilde Q+N(\tilde Q)e_0=0$; the four conjugations in matrix form and the failure of entrywise conjugation; the simple module $\mathbb{C}^2$ and the minimal left ideals; the matrix units $E_{ij}$ and the projective line; and the structural consequences, simplicity, the centre and the endomorphism algebra $\mathbb{B}=\operatorname{End}_{\mathbb{C}}(V)$. -->
 
 ### <a href="articles_maths/biquaternion-4x4-regular-matrix-element-representation.html">Biquaternion 4×4 Regular Matrix Element Representation</a>
-
 <!-- the further development of the regular representation of *Introduction to the 4×4 Regular Matrix Representation of Biquaternions*: the right regular representation and the opposite algebra; transposition as quaternion conjugation and the naive identity that is false; the two minimal left ideals, $\mathbb{B}=I_1\oplus I_2$ and the reducibility $\rho_L\cong V\oplus V$; the double centralizer; the $8\times8$ real form with $\det=|N|^4$ and trace $8\operatorname{Re}(Q_0)$; the second realization on the generators $ie_k$ with the multiplicative quadratic map; the sixteen products $\rho_L(e_i)\rho_R(e_j)$ as an orthogonal basis of $\mathbb{M}_4(\mathbb{C})$ and the biparavectors; and the three classical functions with their matrices. -->
 
 #### Forms and Algebraic Norms of the Biquaternion Algebra
 
 ### <a href="articles_maths/biquaternion-forms-and-algebraic-norms.html">Biquaternion Forms and Algebraic Norms</a>
-
-<!-- the synthesis of the four forms of the algebra and of the norm-like objects read from them, placed before the topology because none of it is topology: the four forms $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$, $\langle\tilde P,\tilde Q\rangle_{\natural}$, $\langle\tilde P,\tilde Q\rangle_{*}$, $\langle\tilde P,\tilde Q\rangle_{\natural*}$ with their coordinate expressions, their four diagonals and their linearity; **the four diagonals and their types** — the two bilinear diagonals quadratic and the two sesquilinear diagonals Hermitian, no inertia over $\mathbb{C}$ and only rank, signature $(4,0)$ for the complex sesquilinear and $(1,3)$ for the quaternion sesquilinear, the four realifications of signatures $(4,4),(4,4),(8,0),(2,6)$, and the signatures $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ of $N$ on the six distinguished subspaces; **the algebraic norm** $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$, multiplicative, $=\det\Phi$, zero exactly on the zero divisors, invertibility $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$, and $r=\sqrt{\lvert N\rvert}$ the unique multiplicative real norm on the group of units, together with the four degree-two functions of the four products; **the proposition that no function on $\mathbb{B}$ is both definite and multiplicative**, proved from the zero divisors $(e_0+ie_1)(e_0-ie_1)=0$ and contrasted with the four normed division algebras of the Hurwitz theorem, with the coincidence recovered on $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ and the two sectors; **the distances read from the forms** through their four symmetries (${}^{*}$, $\bar{\cdot}$, $\mathrm{id}$, ${}^{\natural}$), which are four routes to one distance and four isometries of it; **the geometry** — null sets (the zero-divisor cone of $N$, the Krein cone, the definite form with none), level sets ($\{N=1\}$ a non-compact real $6$-manifold homotopy equivalent to $S^{3}$ and the only group level set, $S^{7}$ for the complex sesquilinear diagonal), and the isometry groups, complex-linear $O_4(\mathbb{C})$, $U(4)$, $U(1,3)$ against real $O(4,4)$, $O(8)$, $O(2,6)$; and the two categories in the framework, the algebraic norm as the interval of signature $(3,1)$ on the material sector and the Hermitian norm as the state-space norm on the informational sector. -->
-
-### <a href="articles_maths/the-null-quadric-and-its-projective-geometry.html">The Null Quadric and Its Projective Geometry</a>
-
-<!-- the projective geometry of the quaternion bilinear form's null set: the linear coordinates $Z_0=Q_0-iQ_3$, $Z_1=-iQ_1-Q_2$, $Z_2=-iQ_1+Q_2$, $Z_3=Q_0+iQ_3$ in which the form is the split form $Z_0Z_3-Z_1Z_2$; the Segre embedding $s:\mathbb{P}^1\times\mathbb{P}^1\to\mathbb{P}^3$, $([u],[v])\mapsto[\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta]$, whose image is the projective null quadric $Q^2$, smooth, irreducible and isomorphic to $\mathbb{P}^1\times\mathbb{P}^1$; the two rulings of maximal isotropic null planes $W_{[u]}$ and $W^{[v]}$ with their incidence; the real points of the quadric, empty or $S^2$ or the torus $S^1\times S^1$ according to the real form of the form; the Klein quadric and the Plücker embedding $\mathrm{Gr}(2,4)\hookrightarrow\mathbb{P}^5$, in which the two rulings are two conics; the polarity $[\tilde P]\mapsto[\tilde P]^{\perp}$ and the tangency $Q^2\cap[\tilde P]^{\perp}=\ell_{[u]}\cup m_{[v]}$ at a point of the quadric; and the automorphisms $\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})$, the identity component preserving each ruling and the outer component swapping them, the Lorentz group being the conformal group of the real sphere instead. The affine cone and its link are *The Topology of the Zero-Divisor Cone*; the affine reading of the same form is *The Isotropic Structure of the Quaternion Bilinear Form*; the form itself is *Biquaternion Forms and Algebraic Norms*. Split off from the former *Biquaternion Topology*, whose form-free half is *The Topology of the Zero-Divisor Cone*. -->
+<!-- the synthesis of the four forms of the algebra and of the norm-like objects read from them, placed before the topology because none of it is topology: the four forms $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$, $\langle\tilde P,\tilde Q\rangle_{\natural}$, $\langle\tilde P,\tilde Q\rangle_{*}$, $\langle\tilde P,\tilde Q\rangle_{\natural*}$ with their coordinate expressions, their four diagonals and their linearity; **the four diagonals and their types** — the two bilinear diagonals quadratic and the two sesquilinear diagonals Hermitian, no inertia over $\mathbb{C}$ and only rank, signature $(4,0)$ for the general plain sesquilinear and $(1,3)$ for the general quaternionic sesquilinear, the four realifications of signatures $(4,4),(4,4),(8,0),(2,6)$, and the signatures $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ of $N$ on the six distinguished subspaces; **the algebraic norm** $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$, multiplicative, $=\det\Phi$, zero exactly on the zero divisors, invertibility $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$, and $r=\sqrt{\lvert N\rvert}$ the unique multiplicative real norm on the group of units, together with the four degree-two functions of the four products; **the proposition that no function on $\mathbb{B}$ is both definite and multiplicative**, proved from the zero divisors $(e_0+ie_1)(e_0-ie_1)=0$ and contrasted with the four normed division algebras of the Hurwitz theorem, with the coincidence recovered on $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ and the two sectors; and the two categories in the framework, the algebraic norm as the interval of signature $(3,1)$ on the material sector and the Hermitian norm as the state-space norm on the informational sector. -->
 
 ### Topology
 
 #### Introduction to Topology on the Biquaternions
 
 ### <a href="articles_maths/topology-in-the-space-of-biquaternions.html">Topology in the Space of Biquaternions</a>
-
 <!-- the topology of the space of biquaternions, built from the linear structure alone and with no form and no algebraic norm entering: a **norm** defined by the three axioms (real-valued, non-negative, definite, homogeneous, subadditive) and the norm $\lVert\tilde Q\rVert=(\sum_\mu\lvert Q_\mu\rvert^{2})^{1/2}$ of the real space $\mathbb{B}=\mathbb{R}\text{-span}\{e_\mu,ie_\mu\}\cong\mathbb{R}^{8}$; **the theorem of finite dimension** — every two norms on a finite-dimensional real space are equivalent, and such a space carries exactly one Hausdorff vector-space topology — whence **one topological norm** and one topology (Rudin 1.21–1.22, Bourbaki I, *Normed and Banach Spaces*, *Comparison of Norms and Invertibility*); **the construction** of the topology: the metric $d(\tilde P,\tilde Q)=\lVert\tilde P-\tilde Q\rVert$, the balls, the coordinate isomorphism and the arrival at the **Euclidean topology of $\mathbb{R}^{8}$**, with the usual properties (Hausdorff, second countable, locally compact, complete, path connected, Heine–Borel) and the subspace topology from the regular representation into $M_4(\mathbb{R})$; then the algebra structure in it — the product bound $\lVert\tilde P\tilde Q\rVert\leq\sqrt2\lVert\tilde P\rVert\lVert\tilde Q\rVert$, proved from $\lVert\Phi(\tilde Q)\rVert_F=\sqrt2\lVert\tilde Q\rVert$ and the Frobenius norm, so that $\mathbb{B}$ is a topological, normed and Banach algebra and its group of units is open. This is the only article of the introduction to topology: the topology does not depend on the forms. -->
 
 #### Topology of the Biquaternion Algebra
 
 ### <a href="articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html">The Euclidean Topology of the Biquaternion Algebra</a>
-
 <!-- the Euclidean structure of the ambient space, independent of the forms: the real inner product and the Euclidean norm, which is the topological norm, the linear isometry onto $\mathbb{R}^8$; the sharp normed-algebra inequality $\lVert\tilde Q\tilde R\rVert\le\sqrt2\lVert\tilde Q\rVert\lVert\tilde R\rVert$; the contractibility with $\pi_n(\mathbb{B})=0$ and the contractibility of the six subspaces; the Euclidean unit sphere $S^7$, not a group and meeting the singular cone in the compact $5$-manifold link; the Riesz duality and the flat Riemannian metric. Moved into this region out of the former parked region, where it sat under a heading that named a topology for a form. -->
 
 ### <a href="articles_maths/the-biquaternion-unit-group-as-a-topological-group.html">The Biquaternion Unit Group as a Topological Group</a>
-
 <!-- $\mathbb{B}^\times$ with its group structure and its topology, open and dense as the complement of the singular cone; the determinant and the matrix model $GL_2(\mathbb{C})$; the retraction of $\mathbb{B}^\times$ onto its maximal compact subgroup; the retraction of the determinant-one group; the structure of the maximal compact subgroup; the homotopy groups, the generators and the universal cover; the connected components. This is the topological part of the Lie-theoretic block, which the boundary places in three parts: the Lie algebra in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the topology here, the Lie-group theory in *Biquaternion Lie Group and Exponential Structure*. -->
 
 ### <a href="articles_maths/biquaternion-orders-and-finite-groups-of-units.html">Biquaternion Orders and Finite Groups of Units</a>
-
 <!-- the integral structures of the algebra and their groups of units: the Lipschitz and Hurwitz orders, the index two of the second over the first and its maximality; the groups of units $Q_8$ and the binary tetrahedral $2T$; the finite subgroups of the unit sphere $Sp(1)$ — the twofold preimages of the finite rotation groups of the plane and the three Platonic figures, cyclic, binary dihedral and the binary polyhedral $2T$, $2O$, $2I$ of orders $24$, $48$, $120$; the regular $24$-cell with the Hurwitz units as vertices and its symmetry groups $B_4$ and $F_4$; the twelve distinct rotations $\rho_v$ that the twenty-four units define; the McKay correspondence between the five families and the simply laced Dynkin types; the integral biquaternions over the Gaussian integers and their infinite group of units, generated by a nilpotent direction. The unit criterion is invertibility, the discrete side of the same topology, which places this article in Topology. The quotient $Sp(1)/\{\pm e_0\}\cong SO(3)$ and the rotation $\rho_v$ are *Biquaternion Rotations and Lorentz Transformations*. -->
 
 ### <a href="articles_maths/the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a>
-
 <!-- the singular set of the algebra as a topological object, built with no form entering: the zero-divisor cone $\mathcal{Z}$ with its apex adjoined, closed with empty interior, a real algebraic cone of real dimension $6$, with the group of units as its open and dense complement; the punctured cone $\mathcal{Z}$ as a smooth complex $3$-manifold of which the apex is the only singular point; the contractibility of the cone by $\tilde Q\mapsto(1-s)\tilde Q$; the link $L=\mathcal{N}\cap S^7_E$ as a closed connected real $5$-manifold, an $S^1$-bundle over the projectivised cone $S^2\times S^2$, simply connected with $\pi_2(L)\cong\mathbb{Z}$ and so not $S^5$, which certifies the apex as genuinely singular; and the two pure real slices, which the cone meets only at the apex and whose unit sphere is the sphere of real roots of $-1$, $S^2$, compact, connected, simply connected and not a group. The equation $N=0$ and the algebraic norm itself are quoted from *Biquaternion Forms and Algebraic Norms*; the ambient Euclidean structure and the unit sphere are *The Euclidean Topology of the Biquaternion Algebra*; the projective geometry of the cone's complex lines is *The Null Quadric and Its Projective Geometry*. Carries the form-free half of the former *Biquaternion Topology*, which the corpus has since split between this article and *The Null Quadric and Its Projective Geometry*. -->
 
 ### <a href="articles_maths/biquaternion-norm-and-invertibility.html">Biquaternion Norm and Invertibility</a>
-
-<!-- the norm $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ and its multiplicativity; the polarisation $B(\tilde{P},\tilde{Q})=\sum_\mu P_\mu Q_\mu$ and the complex quadratic space it defines; the norm as the semi-norm and the audit of the norm axioms, of which only the sign axiom survives; the unique multiplicative real norm $r=\sqrt{|N|}=\sqrt{|\det\Phi|}$; the norm from the halves; the Euclidean norm read from the Hermitian form defined in *The Hermitian Form on the Biquaternion Algebra*; the real forms and their signatures $(4,4)$, $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$, $(3,1)$; the associated Clifford algebra; the invertibility criterion $N(\tilde{Q})\neq0$; left and right inverses and the inverse formula; the group of units; the three-way classification by the sign of the norm; the distribution of the invertible elements over the six subspaces. This article absorbs the polarisation, the real forms and the Clifford algebra that formerly opened *Biquaternion Null Quadric and Projective Geometry*, since merged into *Biquaternion Topology*. -->
+<!-- the norm $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ and its multiplicativity; the polarisation $B(\tilde{P},\tilde{Q})=\sum_\mu P_\mu Q_\mu$ and the complex quadratic space it defines; the norm as the semi-norm and the audit of the norm axioms, of which only the sign axiom survives; the unique multiplicative real norm $r=\sqrt{|N|}=\sqrt{|\det\Phi|}$; the norm from the halves; the Euclidean norm read from the Hermitian form defined in *Biquaternion Norm and Invertibility*; the real forms and their signatures $(4,4)$, $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$, $(3,1)$; the associated Clifford algebra; the invertibility criterion $N(\tilde{Q})\neq0$; left and right inverses and the inverse formula; the group of units; the three-way classification by the sign of the norm; the distribution of the invertible elements over the six subspaces. This article absorbs the polarisation, the real forms and the Clifford algebra that formerly opened *Biquaternion Null Quadric and Projective Geometry*, since merged into *Biquaternion Topology*. -->
 
 #### Metrics of the Biquaternion Algebra
 
 ### <a href="articles_maths/topology-and-metric-for-each-of-the-twelve-operations.html">Topology and Metric for Each of the Twelve Operations</a>
-
-<!-- the walk of the twelve names of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* with respect to the two questions the region separates: the topology, one for all twelve since the space is a finite-dimensional real space and all its norms are equivalent, and the metric, which differs from operation to operation and is read from the scalar part. The two facts that distribute the twelve: the scalar part of a bilinear product is symmetric in its two arguments, so the symmetric half keeps it and the antisymmetric half loses it, which is why $\mathrm{APA}$ and $\mathrm{AQA}$ carry no form and why the complex bilinear form is carried by $\mathrm{GPA}$ and $\mathrm{SPA}$ and the quaternion bilinear form by $\mathrm{GQA}$ and $\mathrm{SQA}$; and the scalar part of a sesquilinear product is Hermitian, so the symmetric half takes the real form of the Hermitian form and the antisymmetric half the alternating form, which is why the four sesquilinear-row operations carry four forms and not two. The table of the eight non-vanishing forms with the operations that carry each, the kind of each, its inertia and its definiteness; the twelve read one by one in a fixed order — the operation and its scalar part, the inertia and the definiteness, the level set and the isometry group it owns, and its metric verdict in the two routes of *Biquaternion Forms and Algebraic Norms* — with the indefinite metrics of $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{GQS}$, $\mathrm{SQS}$, the positive definite metric of $\mathrm{GPS}$ and $\mathrm{SPS}$ by the diagonal route, the two alternating forms of $\mathrm{APS}$ and $\mathrm{AQS}$ with $Sp(8,\mathbb{R})$, the zero scalar parts of $\mathrm{APA}$ and $\mathrm{AQA}$ and the Killing form of the bracket of $\mathrm{APA}$, of inertia $(3,3)$ with the centre as radical; the summary table of the twelve; the one topology and the two objects the forms distinguish, the level sets and the isometry groups; and the sector $\mathbb{M}_{-}$ with the four restrictions $(3,1)$, $(1,3)$, $(4,0)$ and $(0,4)$, the three-dimensional compact part that preserves the definite restrictions against the six dimensions that preserve the indefinite ones, and the uniqueness up to scale of the indefinite form invariant under the whole algebra, which is why an indefinite metric is a metric and not a norm and why a group of motions of the indefinite kind cannot fix a positive definite form. The physics reading of the sector is *Biquaternion Lorentzian and Conformal Geometry* and *Biquaternion Automorphisms and Derivations*. -->
+<!-- the walk of the twelve names of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* with respect to the two questions the region separates: the topology, one for all twelve since the space is a finite-dimensional real space and all its norms are equivalent, and the metric, which differs from operation to operation and is read from the scalar part. The two facts that distribute the twelve: the scalar part of a bilinear product is symmetric in its two arguments, so the symmetric half keeps it and the antisymmetric half loses it, which is why $\mathrm{APA}$ and $\mathrm{AQA}$ carry no form and why the general plain bilinear form is carried by $\mathrm{GPA}$ and $\mathrm{SPA}$ and the general quaternionic bilinear form by $\mathrm{GQA}$ and $\mathrm{SQA}$; and the scalar part of a sesquilinear product is Hermitian, so the symmetric half takes the real form of the Hermitian form and the antisymmetric half the alternating form, which is why the four sesquilinear-row operations carry four forms and not two. The table of the eight non-vanishing forms with the operations that carry each, the kind of each, its inertia and its definiteness; the twelve read one by one in a fixed order — the operation and its scalar part, the inertia and the definiteness, the level set and the isometry group it owns, and its metric verdict in the two routes of *Biquaternion Forms and Algebraic Norms* — with the indefinite metrics of $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{GQS}$, $\mathrm{SQS}$, the positive definite metric of $\mathrm{GPS}$ and $\mathrm{SPS}$ by the diagonal route, the two alternating forms of $\mathrm{APS}$ and $\mathrm{AQS}$ with $Sp(8,\mathbb{R})$, the zero scalar parts of $\mathrm{APA}$ and $\mathrm{AQA}$ and the Killing form of the bracket of $\mathrm{APA}$, of inertia $(3,3)$ with the centre as radical; the summary table of the twelve; the one topology and the two objects the forms distinguish, the level sets and the isometry groups; and the sector $\mathbb{M}_{-}$ with the four restrictions $(3,1)$, $(1,3)$, $(4,0)$ and $(0,4)$, the three-dimensional compact part that preserves the definite restrictions against the six dimensions that preserve the indefinite ones, and the uniqueness up to scale of the indefinite form invariant under the whole algebra, which is why an indefinite metric is a metric and not a norm and why a group of motions of the indefinite kind cannot fix a positive definite form. The physics reading of the sector is *Biquaternion Lorentzian and Conformal Geometry* and *Biquaternion Automorphisms and Derivations*. -->
 
 ### Analysis
 
@@ -5988,11 +6257,7 @@
 ### <a href="articles_maths/biquaternion-continuous-harmonic-analysis.html">Biquaternion Continuous Harmonic Analysis</a>
 <!-- the Fourier kernel and the condition on the root; the continuous transform pair, convergence, the Riemann–Lebesgue lemma, the inversion theorem and the Plancherel theorem; the factorisation into complex Fourier transforms; the convolution theorem; the relation to the gradient, the d'Alembertian and the convective derivative; the vanishing-norm issue; the two-unit kernel with one unit per variable, its closed form, its reduction to the one-unit kernel, its inverse and its frequency reversal, and the absent factorisation for two non-commuting units; the transform of a finite positive measure, the quadratic form that is the integral of the biquaternion norm, the negative value at the central imaginary unit, and the Euclidean pairing that repairs it; the relation to the discrete transform, sampling and periodisation. -->
 
-### <a href="articles_maths/biquaternion-polar-element-representation.html">Biquaternion Polar Element Representation</a>
-<!-- the polar representation of the biquaternion algebra, the reference of the series and the one the named Hamilton, complex and Cartan representations regroup; the four factors, the scale, the central phase, the boost and the rotor; the modulus as the square root of the norm in the closed right half plane, its branch and the two roots; existence and uniqueness on the nonzero elements; the domain and its boundary, the null cone, on which the boosts are unbounded and the boundary word is a minimal idempotent of norm zero; the trichotomy of the exponential, $\nu^2 = -1, 0, +1$; the algorithm and the comparison of each factor with a matrix group; the matrix polar decomposition of $\mathrm{GL}(2,\mathbb{C})$ and of $\mathrm{SL}(2,\mathbb{C})$, and the order of the four factors, which is part of the word because the boost is not central. -->
 
-### <a href="articles_maths/biquaternion-partial-polar-element-representations.html">Biquaternion Partial Polar Element Representations</a>
-<!-- the three two-factor representations as the three pairings of the four factors; the Hamilton representation $R\exp(\xi\Theta)$ and the price of its real quaternion modulus, undefined on the null cone; the complex representation $Q\exp(i\Psi)$, whose factorisation exists off the null cone while its standard construction needs an invertible real quaternion part, with the counterexample that separates the two; the Cartan representation $HU$ as the matrix polar decomposition and its domain beyond the unit-norm elements; the three domains, which differ and are not nested, and whose union is the complement of the null cone; the two degenerate limits that reproduce the quaternion and complex polar forms; the exponential of the element, whose Hamilton parameters are generally not those of the element; the correlated non-uniqueness of the axis, angle and modulus, and its role in the multivaluedness of the logarithm; behaviour under the quaternion, complex and Hermitian conjugations; the worked examples and the counting that forbids a fourth two-factor representation. -->
 
 ### <a href="articles_maths/biquaternion-four-vector-operator-representation.html">Biquaternion Four-Vector Operator Representation</a>
 <!-- the sandwich computed in the four complex coefficients of *Biquaternion Four-Vector Element Representation*: the two-step rule, multiply by $\tilde{Q}$ and then by $\tilde{Q}^{\dagger}$ with four-vector $(\overline{Q^{0}},-\overline{Q^{1}},-\overline{Q^{2}},-\overline{Q^{3}})$; the rule linear in the argument and quadratic in the operand, and the two laws it realizes; the image of the identity, $\tilde{Q}\tilde{Q}^{\dagger}$, with scalar part the squared-modulus sum $\sum_{\mu}\lvert Q^{\mu}\rvert^{2}$ and the images of the vector units, whose scalar parts are $2i\operatorname{Im}(Q^{0}\overline{Q^{k}})+(\mathbf{Q}\times\overline{\mathbf{Q}})^{k}$; the scalar and vector parts of the image and the subspaces the operator does and does not preserve; the two regimes in coordinates, the invertible substitution off the cone and the one-dimensional image on it; and the worked cases, the nilpotent operand $e_{1}+ie_{2}$ and the Hermitian operand $\tfrac12(e_{0}-ie_{3})$, for both of which the image depends on the argument only through $x^{0}+ix^{3}$, together with the unit boost rotor whose stored half-rapidity is doubled by the operator. -->
@@ -6004,7 +6269,7 @@
 <!-- the operator-level spectral theory: the identification $\mathbb{B}\otimes\mathbb{B}\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{op}}\cong M_4(\mathbb{C})$ and the left/right structure; $L_a=R_a$ are regular representations with $\mathrm{spec}(L_a)=\mathrm{spec}(\Phi(a))$ each eigenvalue twice; the Kronecker forms $L_a=\Phi(a)\otimes I$, $R_b=I\otimes\Phi(b)^{T}$, $\Theta_{\tilde{Q}}=\Phi(\tilde{Q})\otimes\overline{\Phi(\tilde{Q})}$; the four spectral rules, the eigenvalues of the left and right multiplications, of the sandwich $\Theta_{\tilde{Q}}$ as the products $\lambda_i\overline{\lambda_j}$, of the derivation $\mathrm{ad}_a$ as the differences $\lambda_i-\lambda_j$, of the Sylvester operator $L_a+R_b$ as the sums $\lambda_i+\mu_j$; the trace, the determinant and the rank as the corresponding functions of the element spectrum; the self-adjointness, unitarity and positivity criteria in terms of the element spectrum, with the phase of the self-adjointness criterion; the signature $(p^2+q^2,2pq)$ of the sandwich of a Hermitian element of inertia $(p,q)$ and the remark that a sandwich is never negative; the norm $\lVert\Theta_{\tilde{Q}}\rVert=\lVert\Phi(\tilde{Q})\rVert^2$; the numerical range and the counterexample. The element spectra are in *Biquaternion Spectral Theory*; here they are the spectra of the operators.-->
 
 ### <a href="articles_maths/completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.html">Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint</a>
-<!-- the biquaternion instance of the completely positive maps of a $*$-algebra: the positive cone and the $n$-positive and completely positive notions; the sandwich $\Theta_{\tilde{Q}}$ as a positive and indeed completely positive map, and the transposition as positive and not completely positive; the Choi matrix $C_{\Phi}=\sum_{ij}E_{ij}\otimes\Phi(E_{ij})$ and its equivalence with complete positivity, $C_{\Phi}\succeq0$; the Kraus form $\Phi=\sum_{k=1}^{r}\tilde{Q}_k\,\cdot\,\tilde{Q}_k^{\dagger}$ with $r=\mathrm{rank}\,C_{\Phi}\le4$, so that the completely positive maps are the sums of the two-sided operators of the corpus and the sandwiches are the rank-one ones; the unital and trace-preserving conditions $\sum_k \tilde{Q}_k\tilde{Q}_k^{\dagger}=e_0$ and $\sum_k \tilde{Q}_k^{\dagger}\tilde{Q}_k=e_0$; the unitary single-sandwich case and the reversible maps; the Choi matrix of the transposition as the flip with eigenvalues $(1,1,1,-1)$ and the single negative eigenvalue on the antisymmetric part; the cone of the completely positive maps and its extreme rays; worked examples including the dephasing channel and the rank-one non-unital collapse. The general theory is in *Completely Positive Maps of a Hilbert Algebra with Hermitian Adjoint*.-->
+<!-- the biquaternion instance of the completely positive maps of a $*$-algebra: the positive cone and the $n$-positive and completely positive notions; the sandwich $\Theta_{\tilde{Q}}$ as a positive and indeed completely positive map, and the transposition as positive and not completely positive; the Choi matrix $C_{\Phi}=\sum_{ij}E_{ij}\otimes\Phi(E_{ij})$ and its equivalence with complete positivity, $C_{\Phi}\succeq0$; the Kraus form $\Phi=\sum_{k=1}^{r}\tilde{Q}_k\,\cdot\,\tilde{Q}_k^{\dagger}$ with $r=\mathrm{rank}\,C_{\Phi}\le4$, so that the completely positive maps are the sums of the two-sided operators of the corpus and the sandwiches are the rank-one ones; the unital and trace-preserving conditions $\sum_k \tilde{Q}_k\tilde{Q}_k^{\dagger}=e_0$ and $\sum_k \tilde{Q}_k^{\dagger}\tilde{Q}_k=e_0$; the unitary single-sandwich case and the reversible maps; the Choi matrix of the transposition as the flip with eigenvalues $(1,1,1,-1)$ and the single negative eigenvalue on the antisymmetric part; the cone of the completely positive maps and its extreme rays; worked examples including the dephasing channel and the rank-one non-unital collapse. The general theory is in *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint*.-->
 
 ### <a href="articles_maths/the-indefinite-spectra-of-the-operators-on-the-biquaternion-algebra.html">The Indefinite Spectra of the Operators on the Biquaternion Algebra</a>
 <!-- the spectra for the Krein adjoint: $L_{\tilde Q}$ and $R_{\tilde R}$ are $J$-self-adjoint only for a real scalar parameter, with spectrum that scalar of multiplicity four; the $J$-self-adjoint sandwiches in two regimes, the central parameter giving $\lvert\zeta\rvert^2$ of multiplicity four with inertia $(4,0)$ and the vector parameter of nonzero norm giving the real pair $\pm\lvert N(\tilde Q)\rvert$ with multiplicity two each and inertia $(2,2)$, with the null-vector regime the nilpotent $\Theta_{\tilde Q}^2=0$ and spectrum $\{0\}$; the general symmetry $\mathrm{spec}(T)=\overline{\mathrm{spec}(T)}$; the non-real, non-definitizable example $L_{e_1}+R_{e_1}$ with spectrum $\{2i,-2i,0\}$. General theory: *Spectral Theory on Krein Spaces*, *Definitizable Operators and the Krein–Naĭmark Theorem*. -->
@@ -6030,7 +6295,7 @@
 <!-- the two real slices of the algebra and the geometries they carry: the Minkowski slice with its light cone and its null lines, and the split slice with its signature; the Lorentzian reading of the quadric; the conformal group $SU(2,2)\cong Spin(4,2)$; the conformal model of Euclidean space, with the null vectors $n$ and $n_\infty$, the point vector $X$, the spheres and the planes as vectors, and the transformations as versors; the relation to the projective null quadric. Built on *The Conformal Model of Euclidean Space* and *Pseudo-Riemannian and Lorentzian Geometry* of Part IV, cited. -->
 
 ### <a href="articles_maths/biquaternion-spin-geometry.html">Biquaternion Spin Geometry</a>
-<!-- the geometry the Clifford structure defines: the spinor module of $\mathbb{B}$ and its two chiral halves; spinors as the minimal left ideals, against the two rulings of the null quadric; the spin representation and its dimension; the Dirac operator as a geometric object on the algebra; the spin geometry the biquaternion carries, against the general spin geometry of Part IV. The Clifford multiplication $c(\gamma_k)=\sigma_k$, $c(\omega)=iI$, the chirality operator and the reality type (no Majorana spinor) are stated here; the relation to *The Clifford Structure of the Biquaternion Algebra* is cited, and the analytic theory of the operator is in Analysis. -->
+<!-- the geometry the Clifford structure defines: the spinor module of $\mathbb{B}$ and its two chiral halves; spinors as the minimal left ideals, against the two rulings of the null quadric; the spin representation and its dimension; the Dirac operator as a geometric object on the algebra; the spin geometry the biquaternion carries, against the general spin geometry of Part IV. The Clifford multiplication $c(\gamma_k)=\sigma_k$, $c(\omega)=iI$, the chirality operator and the reality type (no Majorana spinor) are stated here; the relation to *The Clifford Algebra Representation* is cited, and the analytic theory of the operator is in Analysis. -->
 
 ### <a href="articles_maths/biquaternion-versors-and-the-orthogonal-group.html">Biquaternion Versors and the Orthogonal Group</a>
 <!-- the biquaternion case of the Clifford group: the algebra as the even slot of the Clifford envelope and the odd slot $\mathbb{B}u$ as a second copy of it, of real dimension eight, containing the Minkowski space on which the orthogonal group acts; the parity of the length of a versor as its reflection count, so the odd versors are the reflections and $\mathrm{Pin}\not\subseteq\mathbb{B}$ while the only part of $\mathrm{Pin}(1,3)$ inside the algebra is $\mathrm{Spin}(1,3)=\mathbb{B}^\times_1$; the components of $O(1,3)$ that the operations of the algebra reach, with the table of the four and with the two discrete operations, the quaternion conjugation of the argument as parity and the negation as $PT$; the volume element $\Omega$, the central scalar imaginary up to sign, acting as $-\mathrm{id}$ on Minkowski space through the inner automorphism and as the identity through the sandwich; the difference between the Hermitian dagger of the algebra and the Clifford conjugation of the envelope, which is the coefficient conjugation, vanishing exactly on the real-quaternion slice, where the sandwich is the inner automorphism scaled by the norm. The Lorentz reflections here are distinguished from the reflections $\rho_v$ of $\mathrm{Vect}(\mathbb{B})$ of *Biquaternion Rotations and Lorentz Transformations*, which are the maps the algebra does realise. -->
@@ -6038,8 +6303,11 @@
 ### <a href="articles_maths/biquaternion-objects-and-their-matrix-correspondences.html">Biquaternion Objects and Their Matrix Correspondences</a>
 <!-- the index of the objects of the algebra against their matrix images: the isomorphism $\Phi$ to $M_2(\mathbb{C})$ and the left regular map $\rho_L$ into $M_4(\mathbb{C})$, with $\rho_L$ the isomorphism taken twice, block diagonal with two equal blocks in the column-adapted basis and its image of complex dimension $4$ inside the $16$ of $M_4(\mathbb{C})$; one row per object — the algebra, the unit group, the norm-one group, the unit quaternions, the central scalars, the sign group, the automorphism group and the Lorentz quotient — each with its image under both maps, a column of the further realizations ($8\times8$ real, the $4\times4$ real of $\mathrm{Cl}_{3,1}$, the $2\times2$ quaternionic of $\mathrm{Cl}_{1,3}$ and the coefficient column $\mathbb{C}^4$) and a column of the sets and correspondences attached; the collected sets with their real dimensions, $Sp(1)=S^3=SU(2)=\mathrm{Spin}(3)$ and the complexification $\mathbb{B}^{\times}_1=SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$ with the quotient $SO^+(1,3)$ and the Lie algebra $\mathbb{B}_0\cong\mathrm{so}(1,3)$; the two double covers $SU(2)\to SO(3)$ and $\mathbb{B}^{\times}_1\to SO^+(1,3)$ with the common discrete kernel $\{\pm1\}$ and the Lie group structure of the quotient; the two cautions that the determinant is $N$ in the small picture and $N^2$ in the large one and that the automorphism group and the Lorentz quotient are the same abstract group acted differently; an index only, owning no result, citing the articles that own each correspondence and placed last in the geometry section so that it points to no further article. -->
 
+### <a href="articles_maths/the-null-quadric-and-its-projective-geometry.html">The Null Quadric and Its Projective Geometry</a>
+<!-- the projective geometry of the general quaternionic bilinear form's null set: the linear coordinates $Z_0=Q_0-iQ_3$, $Z_1=-iQ_1-Q_2$, $Z_2=-iQ_1+Q_2$, $Z_3=Q_0+iQ_3$ in which the form is the split form $Z_0Z_3-Z_1Z_2$; the Segre embedding $s:\mathbb{P}^1\times\mathbb{P}^1\to\mathbb{P}^3$, $([u],[v])\mapsto[\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta]$, whose image is the projective null quadric $Q^2$, smooth, irreducible and isomorphic to $\mathbb{P}^1\times\mathbb{P}^1$; the two rulings of maximal isotropic null planes $W_{[u]}$ and $W^{[v]}$ with their incidence; the real points of the quadric, empty or $S^2$ or the torus $S^1\times S^1$ according to the real form of the form; the Klein quadric and the Plücker embedding $\mathrm{Gr}(2,4)\hookrightarrow\mathbb{P}^5$, in which the two rulings are two conics; the polarity $[\tilde P]\mapsto[\tilde P]^{\perp}$ and the tangency $Q^2\cap[\tilde P]^{\perp}=\ell_{[u]}\cup m_{[v]}$ at a point of the quadric; and the automorphisms $\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})$, the identity component preserving each ruling and the outer component swapping them, the Lorentz group being the conformal group of the real sphere instead. The affine cone and its link are *The Topology of the Zero-Divisor Cone*; the affine reading of the same form is *The Isotropic Structure of the General Quaternionic Algebra*; the form itself is *Biquaternion Forms and Algebraic Norms*. Split off from the former *Biquaternion Topology*, whose form-free half is *The Topology of the Zero-Divisor Cone*. -->
+
 ### <a href="articles_maths/the-inner-adjoint-and-the-orthogonal-group-of-the-bilinear-form.html">The Inner Adjoint and the Orthogonal Group of the Bilinear Form</a>
-<!-- the two-sided operator the quaternion bilinear form puts on the algebra: the inner adjoint $\tilde Q\mapsto\tilde Q^{\natural}$ and the sandwich it defines, the group of the $\natural$-versors and the double covers onto $O_4(\mathbb{C})$ and its real slice $SO^+(1,3)$; the quaternion-bilinear counterpart of *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*. **Provisional.** -->
+<!-- the two-sided operator the general quaternionic bilinear form puts on the algebra: the inner adjoint $\tilde Q\mapsto\tilde Q^{\natural}$ and the sandwich it defines, the group of the $\natural$-versors and the double covers onto $O_4(\mathbb{C})$ and its real slice $SO^+(1,3)$; the quaternion-bilinear counterpart of *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*. **Provisional.** -->
 
 ### <a href="articles_maths/the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a>
 <!-- the unitary biquaternions $U(\mathbb{B})=\{\tilde U^{*}\tilde U=e_0\}\cong U(2)$ and the normal form as scalar multiples of unit quaternions; the structure $U(\mathbb{B})=S^1\cdot S^3\cong(S^1\times S^3)/\{\pm\}\cong S^1\times S^3$, the maximal torus $T^2$ and the flag variety $U(\mathbb{B})/T^2\cong S^2$; the polar decomposition and the strong deformation retractions of $\mathbb{B}^\times$ onto $U(\mathbb{B})$ and of the norm-one group onto $S^3$; the homotopy groups, the generators and the universal cover $\mathbb{R}\times S^3$; $N$ as the determinant with $U(\mathbb{B})/S^3\cong S^1$ and the double cover $U(\mathbb{B})/U(1)\cong SO(3)$. The Hermitian half of the former group topology, split out of *The Biquaternion Unit Group as a Topological Group*. -->
@@ -6057,7 +6325,6 @@
 <!-- the geometric figures of the finite unit groups: the finite subgroups of the unit sphere $S^3$ of the real slice, the cyclic, the binary dihedral and the three binary polyhedral groups of orders $24$, $48$ and $120$; the regular $24$-cell with the Hurwitz units as its vertices, the twelve rotations and the binary tetrahedral action; the McKay correspondence between these finite subgroups and the affine Dynkin diagrams, with the Clifford and reflection-group lift cited from Part II. Split from *Biquaternion Orders and Finite Groups of Units*. **Provisional.** -->
 
 ### <a href="articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html">The Krein Level Sets and the Hyperbolic Structure</a>
-
 <!-- the level sets of the Krein form and the hyperbolic geometry they carry: the positive set $S^1\times\mathbb R^6\simeq S^1$, the negative set $S^5\times\mathbb R^2\simeq S^5$ and the null set $S^1\times S^5\times\mathbb R_{>0}$, all of real dimension $7$ and non-compact, against the compact Euclidean sphere $S^7$; the free phase action with quotient the complex hyperbolic space and the real scaling between the levels; the positive region contracting onto the circle of phases; the positive lines $\mathbb C(e_0+\tilde V)$ with $\lVert\tilde V\rVert_E<1$ as the open unit ball of $\mathbb C^3$, the complex hyperbolic space $\mathbb{CH}^3=U(1,3)/(U(1)\times U(3))$ with boundary the isotropic sphere $S^5$ and its Bergman metric with the complex lines as geodesics; the Krein cone as origin plus positive region plus null set, against the complex hypersurfaces of the norm; the Minkowski slices with the hyperboloid model of $H^3$, the one-sheeted hyperboloid $S^2\times\mathbb R$ and the two nappes of the light cone. -->
 
 #### Fractal Geometry
@@ -6081,7 +6348,7 @@
 <!-- the three inequivalent conjugations of the biquaternion algebra, the complex, the quaternionic and the total, and the three involutions they define on the iterate; the invariance of the Julia set under each and the symmetric fractals they produce; the fixed subspaces of the involutions, which are the six subspaces of the algebra, and the slice each one cuts out of the Julia set; the comparison with the single conjugation of the quaternions, which gives the single symmetry group of the quaternion case. -->
 
 ### <a href="articles_maths/the-matrix-representation-and-the-biquaternion-dynamics.html">The Matrix Representation and the Biquaternion Dynamics</a>
-<!-- the isomorphism of the biquaternion algebra with the two-by-two complex matrices and its use as the primary tool of the theory; the biquaternion iterate read as a matrix iterate, the escape tested on the operator or the Frobenius norm, and the eigenvalues and the determinant of the iterate as the invariant data; the reduction of the biquaternion dynamics to the dynamics of a pair of complex variables, which is the two-variable complex dynamics of Part III and is cited; the warning, carried by *Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$*, that the isomorphism concerns the elements and not the operators. -->
+<!-- the isomorphism of the biquaternion algebra with the two-by-two complex matrices and its use as the primary tool of the theory; the biquaternion iterate read as a matrix iterate, the escape tested on the operator or the Frobenius norm, and the eigenvalues and the determinant of the iterate as the invariant data; the reduction of the biquaternion dynamics to the dynamics of a pair of complex variables, which is the two-variable complex dynamics of Part III and is cited; the warning, carried by *Introduction to the General Plain Algebra of Biquaternions*, that the isomorphism concerns the elements and not the operators. -->
 
 ### <a href="articles_maths/the-idempotent-decomposition-and-the-split-fractal.html">The Idempotent Decomposition and the Split Fractal</a>
 <!-- the central idempotents of the biquaternion algebra and the decomposition of an element into two halves, each carrying the dynamics of a quaternion or a complex algebra; the split fractal obtained by iterating the two halves independently, and the reconstruction of the biquaternion fractal from the pair; the cases in which the pair commutes, so the split is clean, and the cases in which it does not; the contrast with the split-biquaternion decomposition, where the idempotents act differently. -->
@@ -6202,16 +6469,16 @@
 ### <a href="articles_maths/split-biquaternion-null-quadric-and-projective-geometry.html">Split-Biquaternion Null Quadric and Projective Geometry</a>
 <!-- the null cone and the rank-one description; the Segre embedding and the projective null quadric; the relation to the projective geometry of $\mathbb{B}$ and to the Lorentzian geometry of Part IV. The split biquaternion norm and its polarisation are a form and a distance and belong to *Split-Biquaternion Norm and Invertibility*. -->
 
-###<a href="articles_maths/split-biquaternion-rotations-and-the-lorentz-group.html">Split-Biquaternion Rotations and the Lorentz Group</a>
+### <a href="articles_maths/split-biquaternion-rotations-and-the-lorentz-group.html">Split-Biquaternion Rotations and the Lorentz Group</a>
 <!-- the split biquaternions as the algebra of the Lorentz groups $SO(3,1)$ and $SO(2,2)$; the unit sphere as a hyperboloid of one sheet on which the induced form is Lorentzian, and its two rulings; the three types of one-parameter subgroup, elliptic, hyperbolic and parabolic, and their fixed points on the null cone; the realisation of the hyperbolic and the elliptic one-parameter subgroups, and the separation of the two because the form is indefinite; the relation to the split-complex hyperbolic rotations and to the biquaternion treatment; the comparison with the quaternion sphere $S^3$, and how the zero divisors and the non-compactness replace the compact case. -->
 
 ### <a href="articles_maths/split-biquaternion-automorphisms-and-derivations.html">Split-Biquaternion Automorphisms and Derivations</a>
 <!-- the automorphisms of the algebra over $\mathbb{R}$ and over the split complex algebra; the derivations; the inner and outer automorphisms; the contrast with the biquaternion case, where the automorphism group is the projective Lorentz group; the Lie algebra statement. -->
 
-###<a href="articles_maths/split-biquaternions-and-hyperbolic-geometry.html">Split-Biquaternions and Hyperbolic Geometry</a>
+### <a href="articles_maths/split-biquaternions-and-hyperbolic-geometry.html">Split-Biquaternions and Hyperbolic Geometry</a>
 <!-- the model of hyperbolic three-space on the split-biquaternions of unit norm; the relation to the split-biquaternion rotations and the Lorentz group of this system and to the hyperbolic geometry of Part IV. -->
 
-###<a href="articles_maths/split-biquaternion-geometry.html">Split-Biquaternion Geometry</a>
+### <a href="articles_maths/split-biquaternion-geometry.html">Split-Biquaternion Geometry</a>
 <!-- split-biquaternion geometry and its properties; the relation to the split-biquaternion algebra and to the split-biquaternion rotations and the Lorentz group of this system; the relation to the Lorentzian geometry of Part IV. -->
 
 #### Fractal Geometry
@@ -6290,35 +6557,35 @@
 
 ### Algebra
 
-###<a href="articles_maths/octonion-algebra.html">Octonion Algebra</a>
+### <a href="articles_maths/octonion-algebra.html">Octonion Algebra</a>
 <!-- the octonions on $\mathbb{R}^8$; the multiplication and its non-associativity; the norm; the conjugation; the relation to the normed division algebras and to the Hurwitz theorem of Part I; the relation to the Clifford algebras of Part II. -->
 
-###<a href="articles_maths/octonion-norm-and-invertibility.html">Octonion Norm and Invertibility</a>
+### <a href="articles_maths/octonion-norm-and-invertibility.html">Octonion Norm and Invertibility</a>
 <!-- the norm on the octonions; the invertibility criterion; the group of units and the fact that the octonions have no zero divisors, in contrast to the biquaternions and the split-biquaternions; the relation to the octonion algebra and to the division algebras of Part I. -->
 
-###<a href="articles_maths/complex-octonions-and-the-clifford-algebra-cl6.html">Complex Octonions and the Clifford Algebra Cl(6)</a>
+### <a href="articles_maths/complex-octonions-and-the-clifford-algebra-cl6.html">Complex Octonions and the Clifford Algebra Cl(6)</a>
 <!-- the complex octonions $\mathbb{C}\otimes\mathbb{O}$ and Furey's Fano convention $e_1e_2=e_4$ with the shift and doubling rules, and its warning that the corpus's octonion basis is related to Furey's by a signed relabelling of the units which is not the identity, so results are not transplanted index by index; the complex octonionic chain algebra, associative, generated by the left multiplications and isomorphic to $\mathrm{Cl}(6)\cong\mathrm{Cl}_6(\mathbb{C})\cong M_8(\mathbb{C})$; the Clifford relations $\{e_i,e_j\}=-2\delta_{ij}$ of the six units, the $64$ independent monomials and the volume element $e_1e_2e_3e_4e_5e_6=e_7$; the maximal totally isotropic subspace, its ladder operators $\alpha_i,\alpha_i^\dagger$ and their anticommutation relations, and the number operator $N$ with spectrum $0,1,1,1,2,2,2,3$; the intrinsic $\mathrm{su}(3)$ of the MTIS, its standard structure constants, its identity with the octonionic automorphism generators fixing $e_7$, the weights of the ladder operators and the Casimir $4/3$; the primitive idempotent $P=\alpha_1\alpha_2\alpha_3\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger$, the eight-dimensional minimal left ideal $S^u$ and the charge operator $Q=N/3$ with values $0,1/3,2/3,1$. -->
 
-###<a href="articles_maths/split-bioctonions-and-the-clifford-algebra-cl7.html">Split Bioctonions and the Clifford Algebra Cl(7)</a>
+### <a href="articles_maths/split-bioctonions-and-the-clifford-algebra-cl7.html">Split Bioctonions and the Clifford Algebra Cl(7)</a>
 <!-- the bioctonions $\mathbb{C}\otimes\mathbb{O}$, the split bioctonions $\mathbb{D}\otimes\mathbb{O}$ and the complex split bioctonions $\mathbb{C}\otimes\mathbb{D}\otimes\mathbb{O}\cong(\mathbb{C}\otimes\mathbb{O})\oplus(\mathbb{C}\otimes\mathbb{O})$; the chain algebra of a direct sum and the theorem that the chain algebra of the complex split bioctonions is $\mathrm{Cl}(7)\cong\mathrm{Cl}(6)\oplus\mathrm{Cl}(6)\cong M_8(\mathbb{C})\oplus M_8(\mathbb{C})$; the volume element $J=e_1\cdots e_7=\Gamma e_7$, central, self-adjoint and an involution, $J^2=1$, and the identity $e_7=-\Gamma J$ expressing the seventh generator as the $\mathrm{Cl}(6)$ volume element on each summand; the central idempotents $\Pi_\pm=\tfrac12(1\pm J)$ and the splitting into two copies of the complex octonionic chain algebra, each of complex dimension $64$; the parity automorphism $e_i\mapsto-e_i$ and the two inequivalent pinor representations distinguished by the eigenvalue of $J$; the Furey ladder operators, the primitive idempotent, the eight-dimensional minimal left ideal and the charges $0,\tfrac13,\tfrac13,\tfrac13,\tfrac23,\tfrac23,\tfrac23,1$ in each summand; the intrinsic $\mathrm{su}(3)\oplus\mathrm{u}(1)$ commuting with $J$, so that the two summands differ only in chirality; and the warning about the two meanings of the label $e_7$. -->
 
-###<a href="articles_maths/maximal-totally-isotropic-subspaces-and-their-unitary-symmetries.html">Maximal Totally Isotropic Subspaces and Their Unitary Symmetries</a>
+### <a href="articles_maths/maximal-totally-isotropic-subspaces-and-their-unitary-symmetries.html">Maximal Totally Isotropic Subspaces and Their Unitary Symmetries</a>
 <!-- isotropic and totally isotropic subspaces, the Witt index and the bound $\dim W\le n$ in dimension $2n$; the Witt decomposition and the Witt basis $u_i,u_i^\dagger$ with the Fock relations $\{u_i,u_j^\dagger\}=\delta_{ij}$; the number operator, its spectrum and the multiplicities $\binom nk$; the unitary symmetry $\mathfrak u(n)=\mathfrak{su}(n)\oplus\mathfrak u(1)$ of an MTIS, its Schwinger realization by the bivectors $u_i^\dagger u_j$, and the general group statement that the stabiliser of an MTIS is $\mathrm{U}(n)$; the primitive idempotent $u_1\cdots u_nu_n^\dagger\cdots u_1^\dagger$, the minimal left ideal and the Fock decomposition $\bigoplus_k\Lambda^k(\mathbf n)$, with the case $n=3$ giving $\mathbf1\oplus\mathbf3\oplus\bar{\mathbf3}\oplus\mathbf1$; the relation to the octonionic construction of the companion article, whose $\mathrm{Cl}(6)$ realization carries the charge spectrum $0,1/3,2/3,1$. -->
 
 ### Focus on Element Representations
 
-###<a href="articles_maths/octonion-element-representations.html">Octonion Element Representations</a>
+### <a href="articles_maths/octonion-element-representations.html">Octonion Element Representations</a>
 <!-- representations of the octonions and their classification; the bimodules over a non-associative algebra and the obstruction to an associative module theory; the relation to the octonion algebra and to the representation theory of algebras. -->
 
-###<a href="articles_maths/octonions-and-the-exceptional-lie-groups.html">Octonions and the Exceptional Lie Groups</a>
+### <a href="articles_maths/octonions-and-the-exceptional-lie-groups.html">Octonions and the Exceptional Lie Groups</a>
 <!-- the construction of the exceptional Lie groups from the octonions, by the magic square and through the exceptional Jordan algebras; $G_2$ as the automorphism group of the octonions; the relation to the Lie algebras of Part I and to the exceptional Jordan algebras of Part I. -->
 
 ### Geometry
 
-###<a href="articles_maths/octonion-geometry.html">Octonion Geometry</a>
+### <a href="articles_maths/octonion-geometry.html">Octonion Geometry</a>
 <!-- octonion geometry and its properties; the octonionic projective plane; the relation to the octonion algebra and to the exceptional geometry; the relation to the geometry of Part IV. -->
 
-###<a href="articles_maths/octonions-and-exceptional-geometry.html">Octonions and Exceptional Geometry</a>
+### <a href="articles_maths/octonions-and-exceptional-geometry.html">Octonions and Exceptional Geometry</a>
 <!-- the use of the octonions in exceptional geometry; the holonomy groups $G_2$ and $\operatorname{Spin}(7)$ and the manifolds that carry them; the relation to the octonion algebra and to the $G_2$ and $\operatorname{Spin}(7)$ manifolds of Part IV. -->
 
 #### Fractal Geometry
@@ -6337,20 +6604,20 @@
 
 ### Analysis
 
-###<a href="articles_maths/octonion-analysis.html">Octonion Analysis</a>
+### <a href="articles_maths/octonion-analysis.html">Octonion Analysis</a>
 <!-- octonion analysis and its properties; the non-associativity and what it costs; the relation to the hypercomplex analysis and to the octonion algebra; the relation to the Clifford analysis of Part III. -->
 
 ### Integration
 
-###<a href="articles_maths/octonion-integration.html">Octonion Integration</a>
+### <a href="articles_maths/octonion-integration.html">Octonion Integration</a>
 <!-- integration of octonion-valued functions; the relation to the hypercomplex integration and to the octonion analysis of this system. -->
 
 ### Special Functions
 
-###<a href="articles_maths/octonion-special-functions.html">Octonion Special Functions</a>
+### <a href="articles_maths/octonion-special-functions.html">Octonion Special Functions</a>
 <!-- special functions of an octonion variable; the relation to the octonion analysis of this system and to the special functions of Part VI. -->
 
 ### Harmonic Analysis
 
-###<a href="articles_maths/octonion-harmonic-analysis.html">Octonion Harmonic Analysis</a>
+### <a href="articles_maths/octonion-harmonic-analysis.html">Octonion Harmonic Analysis</a>
 <!-- harmonic analysis on the octonions; the relation to the octonion analysis of this system and to the harmonic analysis of Part III. -->

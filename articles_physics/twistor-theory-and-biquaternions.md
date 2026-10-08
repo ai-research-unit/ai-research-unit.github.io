@@ -86,7 +86,7 @@ On the biquaternion side, the biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q}
 
 On the twistor side, the same projective space and the same spinor lines appear, now carrying the metric. The incidence relation makes the null separation of two points a statement about the intersection of two lines: the null cone at $x$ is swept out by the points $y$ whose lines $L_y$ meet $L_x$, and this is exactly the condition $\det(x-y)=0$. The Klein correspondence is the dictionary between the two descriptions of the same projective geometry.
 
-Two qualifications keep the agreement honest. First, the quadrics are different objects. The biquaternion norm $N$ is a **complex bilinear** (symmetric) form on $\mathbb{B}\cong\mathbb{C}^4$, and its null cone is a complex quadric; the twistor form $h$ is **Hermitian** of signature $(2,2)$, and its null set is the real cone that defines the conformal structure. They agree in being governed by the spinor and its two chiralities, not in being the same equation. Second, the agreement is at the level of the algebra of spinors and null directions, which is standard; neither programme owns it.
+Two qualifications keep the agreement honest. First, the quadrics are different objects. The biquaternion norm $N$ is a **general plain bilinear** (symmetric) form on $\mathbb{B}\cong\mathbb{C}^4$, and its null cone is a complex quadric; the twistor form $h$ is **Hermitian** of signature $(2,2)$, and its null set is the real cone that defines the conformal structure. They agree in being governed by the spinor and its two chiralities, not in being the same equation. Second, the agreement is at the level of the algebra of spinors and null directions, which is standard; neither programme owns it.
 
 ## Where the Aims Diverge
 
@@ -273,7 +273,7 @@ The word carries a third sense, and that one is the classical object. In Kassand
 | $\tilde{\Pi}_\pm(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$ | Rank-one Hermitian idempotents; the $H$-twistor's amplitude is a real multiple of one |
 | $Z(\kappa)$, $\kappa\in\mathbb{C}$ | World line of the "virtual" charge generating a shear-free null congruence (Kassandrov) |
 | $\{\xi,\tau\}$, $(Z-\hat{Z}(\kappa))\xi=0$, $\tau=Z\xi$ | Twistor field of the congruence; the Penrose incidence relation over complexified Minkowski space |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

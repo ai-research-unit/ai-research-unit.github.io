@@ -1,5 +1,5 @@
 
-# __The Associator of the Quaternionic Sesquilinear Product__
+# __The Associator of the General Quaternionic Sesquilinear Product__
 
 ## Introduction
 
@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
 $$
 
-is the subject of this group. The rule and the scalar–vector form are *The Four Biquaternion Complex Products* §*The Complex Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its axioms are *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, and $N(\tilde P) = \tilde P\tilde P^{\natural} = \sum_\mu P_\mu^{2}$ is the norm form.
+is the subject of this group. The rule and the scalar–vector form are *The Four Biquaternion Complex Products* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its axioms are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, and $N(\tilde P) = \tilde P\tilde P^{\natural} = \sum_\mu P_\mu^{2}$ is the norm form.
 
 The subject of this article is the **associator** of the multiplication,
 
@@ -25,7 +25,7 @@ $$
 
 the two terms being the two groupings in the notation of the plain product. Second, the **parities**: the associator is $\mathbb{C}$-linear in the first variable, $\varsigma$-semilinear in the second, and neither in the third, so the associator is not a trilinear form on $\mathbb{B}^{3}$ but a trilinear form on two different mixed modules, in the sense of *The Sesquilinear Associator and the Ternary Product*. Third, the failure of the product is total: it is not associative, not flexible and not power-associative, and the degree-three identity fails as well, so the product sits at the bottom of the property ladder of *Non-Associative Algebras and the Property Ladder* and not at some intermediate rung.
 
-The article owns the associator, its parities and the failure of the weaker laws. It cites the general associator formula and the parity theorem to *The Sesquilinear Associator and the Ternary Product*; it cites the two propositions for the fourth product to *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$* §*The Associator* and §*The Flexibility and the Degree-Three Identity*; and it does not treat the ternary product, which is *The Ternary Product and the Failure of the Jordan Triple Identity*, nor the operators, which are *The Left and Right Multiplications of the Quaternionic Sesquilinear Product*.
+The article owns the associator, its parities and the failure of the weaker laws. It cites the general associator formula and the parity theorem to *The Sesquilinear Associator and the Ternary Product*; it cites the two propositions for the fourth product to *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* §*The Associator* and §*The Flexibility and the Degree-Three Identity*; and it does not treat the ternary product, which is *The Ternary Product and the Failure of the Jordan Triple Identity*, nor the operators, which are *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
 
 ## The Associator
 
@@ -189,7 +189,7 @@ $$
 \text{associative} \implies \text{alternative} \implies \text{flexible} , \qquad \text{alternative} \implies \text{power-associative} ,
 $$
 
-and the complex quaternionic sesquilinear product satisfies none of the four properties.
+and the general quaternionic sesquilinear product satisfies none of the four properties.
 
 **Proof.** The product is not flexible by the second theorem above; since alternative implies flexible, and associative implies alternative, the product is not alternative and not associative. The product fails third-power associativity by the third theorem, and since power-associative implies third-power associativity, the product is not power-associative. The four failures all follow from the failure at the last of the three computations, together with the separate witness of non-flexibility. $\square$
 
@@ -237,11 +237,11 @@ so that $[\tilde P,\tilde Q,\tilde R] = L - R$ by the formula.
 
 **Proof.** The plain product is associative. The sibling bilinear product has the associator obtained by inserting ${}^{\natural}$ in each first slot; it is the same kind of difference of two groupings, with the conjugations ${}^{\natural}$ and the plain form. The sibling sesquilinear associator is the general formula of *The Sesquilinear Associator and the Ternary Product* for the derived operation, $\tilde P((\tilde R\tilde Q)^{*} - \tilde R\tilde Q^{*})$, with the first factor untouched. The fourth row is the formula of this article. $\square$
 
-**Remark.** The three non-associative associators are all differences of two groupings with opposite third-slot parities, and the parity structure is the same for all three: $\mathbb{C}$-linear in the first variable, conjugate-linear in the second, neither in the third. What distinguishes the fourth row from the sibling sesquilinear row is the factor $\overline{\tilde Q}$ in front and the ${}^{\natural}$ on $\tilde P$ in the second term; the sibling's associator has the first factor $\tilde P$ untouched, and the fourth product's associator carries the extra $\natural$ that makes it the isotope of the derived operation. This is the associator-level form of the isotope reading of *Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$* §*The Isotope Reading*.
+**Remark.** The three non-associative associators are all differences of two groupings with opposite third-slot parities, and the parity structure is the same for all three: $\mathbb{C}$-linear in the first variable, conjugate-linear in the second, neither in the third. What distinguishes the fourth row from the sibling sesquilinear row is the factor $\overline{\tilde Q}$ in front and the ${}^{\natural}$ on $\tilde P$ in the second term; the sibling's associator has the first factor $\tilde P$ untouched, and the fourth product's associator carries the extra $\natural$ that makes it the isotope of the derived operation. This is the associator-level form of the isotope reading of *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* §*The Isotope Reading*.
 
 ## Summary
 
-The associator of the complex quaternionic sesquilinear multiplication is
+The associator of the general quaternionic sesquilinear multiplication is
 
 $$
 [\tilde P,\tilde Q,\tilde R] = \overline{\tilde Q}\,\tilde P\,\tilde R^{*} - \tilde P^{\natural}\,\tilde R\,\overline{\tilde Q} ,

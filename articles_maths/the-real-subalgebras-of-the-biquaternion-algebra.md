@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}$ is read here as an eight-dimensional real algebra, with the complex bilinear product of *Biquaternions as an Algebra over $\mathbb{R}$* as its multiplication. A **real subalgebra** of $\mathbb{B}$ is a real subspace closed under that product. This article classifies the low-dimensional ones and records the ones that the complex reading cannot see.
+The biquaternion algebra $\mathbb{B}$ is read here as an eight-dimensional real algebra, with the general plain bilinear product of *Biquaternions as an Algebra over $\mathbb{R}$* as its multiplication. A **real subalgebra** of $\mathbb{B}$ is a real subspace closed under that product. This article classifies the low-dimensional ones and records the ones that the complex reading cannot see.
 
 The change of scalars from $\mathbb{C}$ to $\mathbb{R}$ enlarges the supply of subalgebras, and this article is the measure of the enlargement. Over $\mathbb{C}$ a subalgebra is in particular a complex subspace, so its real dimension is even; over $\mathbb{R}$ a subalgebra need merely be a real subspace, and the parity restriction disappears. The smallest witness is the real line $\mathbb{R} e_0$ itself, of real dimension one; the substantial witness is a three-dimensional subalgebra,
 $$
@@ -169,7 +169,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}} = \operatorname{span}_\mathbb{R
 
 ## Summary
 
-A unital real subalgebra of $\mathbb{B}$ is a real subspace containing $e_0$ and closed under the complex bilinear product. The two-dimensional ones are $A = \mathbb{R}\{e_0,x\}$ with $x^2 = \alpha e_0 + \beta x$, and they split into exactly three isomorphism types,
+A unital real subalgebra of $\mathbb{B}$ is a real subspace containing $e_0$ and closed under the general plain bilinear product. The two-dimensional ones are $A = \mathbb{R}\{e_0,x\}$ with $x^2 = \alpha e_0 + \beta x$, and they split into exactly three isomorphism types,
 $$
 \mathbb{C} = \mathbb{R}[t]/(t^2+1), \qquad \mathbb{R}\times\mathbb{R} = \mathbb{R}[t]/(t^2-1), \qquad \mathbb{R}[t]/(t^2) ,
 $$

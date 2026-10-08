@@ -115,7 +115,7 @@ $$
 \mathrm{Sc}(\tilde Q\tilde Q)=Q_0^{2}-(\mathbf Q,\mathbf Q)=B(\tilde Q,\tilde Q) ,
 $$
 
-the diagonal value of the complex bilinear form $B$ of *The Ordinary Product and the Material Sector*.
+the diagonal value of the general plain bilinear form $B$ of *The Ordinary Product and the Material Sector*.
 
 **Proof.** Distribute the product and use $\mathbf Q^{2}=-(\mathbf Q,\mathbf Q)$ for a vector part. 
 
@@ -325,7 +325,7 @@ Readings: the Two Algebras and the Two Sesqualgebras*.
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the quaternionic product |
 | $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ | the square identity; the interval as the square |
 | $N(\tilde Q)=\sum_\mu Q_\mu^{2}$ | the biquaternion norm |
-| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$ | the complex bilinear form of the ordinary product |
+| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$ | the general plain bilinear form of the ordinary product |
 | $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$ | multiplicativity; the interval as a charge |
 | $\mathcal N=\{N=0\}$ | the null set; the light cone on the material sector |
 | $\{N=1\}$ | the interval-one operations; a group under the ordinary product |
@@ -335,8 +335,8 @@ Readings: the Two Algebras and the Two Sesqualgebras*.
 
 - *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
   which this block sits.
-- Mathematics article *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*
-  (`articles_maths/biquaternions-as-a-general-quaternionic-algebra-gqa-over-c.md`), for the product, its table and its
+- Mathematics article *Introduction to the General Quaternionic Algebra of Biquaternions*
+  (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the product, its table and its
   square.
 - Mathematics article *Idempotents of the Quaternionic Product*
   (`articles_maths/idempotents-of-the-quaternionic-product.md`), for the square lemma.

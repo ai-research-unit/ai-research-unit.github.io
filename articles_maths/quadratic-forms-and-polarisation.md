@@ -3,9 +3,9 @@
 
 ## Introduction
 
-A **quadratic form** is a scalar-valued function of one vector that is homogeneous of degree two. The prototype is $q(x) = x_1^2 + \cdots + x_n^2$ on $\mathbb{R}^n$, the square of the Euclidean length. This article develops the theory over a commutative ring: the definition, the polar form that recovers a symmetric bilinear form from $q$, the polarisation identities and the matrix of a form, isometry of forms and the orthogonal direct sum, diagonalisation, Sylvester's law of inertia, and the classification of real and complex forms.
+A **quadratic form** is a scalar-valued function of one vector that is homogeneous of degree two. The prototype is $q(x) = x_1^2 + \cdots + x_n^2$ on $\mathbb{R}^n$, the standard Euclidean form. This article develops the theory over a commutative ring: the definition, the polar form that recovers a symmetric bilinear form from $q$, the polarisation identities and the matrix of a form, isometry of forms and the orthogonal direct sum, diagonalisation, Sylvester's law of inertia, and the classification of real and complex forms.
 
-The passage between a quadratic form and a symmetric bilinear form is a bijection when $2$ is invertible in the base ring, and it is a genuine obstruction when $2$ is not; the first half treats the correspondence and the last section measures its failure.
+The passage between a quadratic form and a symmetric bilinear form is a bijection when $2$ is invertible in the base ring, and it is a genuine obstruction when $2$ is not; the first half treats the correspondence and the last section records its failure.
 
 The base is a commutative ring $R$, and the bilinear vocabulary is that of *Bilinear Forms*: a bilinear form $B$, its Gram matrix $G$, the radical $\operatorname{rad}(B)$, and non-degeneracy as an isomorphism $M \to M^*$. We write $B$ for the symmetric bilinear form associated with a quadratic form $q$, so that $q(v) = B(v, v)$; this fixes the convention in which the fundamental relation of the Clifford algebra reads $uv + vu = 2B(u, v)$. The number systems and the companion articles on tensor and exterior constructions are used only for the examples.
 
@@ -89,7 +89,7 @@ The parallelogram law and the second identity recover $B$ from $q$ in the two wa
 
 **Proof.** The hypothesis says $2B(u, v) = 0$ for all $u, v$, so $B = 0$ because $2$ is invertible, and then $q(v) = B(v, v) = 0$.
 
-The corollary fails as soon as $2$ is not invertible: over $\mathbb{F}_2$ the form $q(x) = x^2$ is additive and nonzero. The precise measure of the failure is the subject of the last section of this article.
+The corollary fails as soon as $2$ is not invertible: over $\mathbb{F}_2$ the form $q(x) = x^2$ is additive and nonzero. The precise shape of the failure is the subject of the last section of this article.
 
 ### Examples
 
@@ -343,7 +343,7 @@ A real form is **positive definite** if $q(v) > 0$ for all $v \neq 0$, **negativ
 - $q$ is negative definite if and only if $r = n$, equivalently $\sigma(q) = -n$;
 - $q$ is indefinite if and only if $p, r > 0$.
 
-The positive definite forms are exactly the inner products of Euclidean geometry; the existence of a positive definite form on a real space is the algebraic content of the choice of a Euclidean structure, and the orthogonal group of such a form is the compact orthogonal group treated.
+The positive definite forms are exactly the inner products of Euclidean geometry; the existence of a positive definite form on a real space is the algebraic content of the choice of a Euclidean structure, and the orthogonal group of such a form is the classical group of *Isometries and Orthogonal Transformations* in Part IV.
 
 ### Isotropic Vectors and Anisotropy
 

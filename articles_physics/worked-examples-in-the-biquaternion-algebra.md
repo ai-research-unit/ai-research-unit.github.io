@@ -76,7 +76,7 @@ Each is an involution, and the Klein group is visible in $\tilde{Q}^{*}=\tilde{Q
 
 The standard idempotents $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_2=\tfrac12(e_0-ie_3)$ satisfy $\tilde\Pi_1^2=\tilde\Pi_1$, $\tilde\Pi_2^2=\tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2=\tilde\Pi_2\tilde\Pi_1=0$ and $\tilde\Pi_1+\tilde\Pi_2=e_0$; they are primitive, and they give the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ into two minimal left ideals of real dimension $4$.
 
-**Physical reading.** The two idempotents are the **chiral projectors** onto the two Weyl components, and the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ is the splitting of the algebra into the two chiralities (*Modules over the Biquaternion Algebra*).
+**Physical reading.** The two idempotents are the **chiral projectors** onto the two Weyl components, and the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ is the splitting of the algebra into the two chiralities (*Modules over the General Plain Algebra of Biquaternions*).
 
 ## The Norm and the Inverse of the Concrete Element
 

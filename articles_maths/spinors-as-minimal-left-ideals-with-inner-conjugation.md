@@ -151,7 +151,7 @@ which is the action of the Pauli matrices with $i=\omega$: $e_1$ acts as $\begin
 
 ### Minkowski Space
 
-In $\mathrm{Cl}_{1,3}=M_2(\mathbb{H})$ the even part is $\mathrm{Cl}^0_{1,3}\cong\mathrm{Cl}_{1,2}\cong M_2(\mathbb{C})$, which is the biquaternion algebra $\mathbb{B}$ of *The Clifford Structure of the Biquaternion Algebra*. An even multivector of $\mathrm{Cl}_{1,3}$ has $1+6+1=8$ real components, the scalar, the six bivectors and the pseudoscalar, and this is the real dimension of a Dirac spinor; the chiral halves are the two minimal left ideals of $M_2(\mathbb{C})$, each of complex dimension two, and they are the two Weyl spinors of the spinor module. The description of a Dirac spinor as an even multivector is thus the statement that the spinor module is the even subalgebra, which here is the biquaternion algebra acting on itself.
+In $\mathrm{Cl}_{1,3}=M_2(\mathbb{H})$ the even part is $\mathrm{Cl}^0_{1,3}\cong\mathrm{Cl}_{1,2}\cong M_2(\mathbb{C})$, which is the biquaternion algebra $\mathbb{B}$ of *The Clifford Algebra Representation*. An even multivector of $\mathrm{Cl}_{1,3}$ has $1+6+1=8$ real components, the scalar, the six bivectors and the pseudoscalar, and this is the real dimension of a Dirac spinor; the chiral halves are the two minimal left ideals of $M_2(\mathbb{C})$, each of complex dimension two, and they are the two Weyl spinors of the spinor module. The description of a Dirac spinor as an even multivector is thus the statement that the spinor module is the even subalgebra, which here is the biquaternion algebra acting on itself.
 
 ## The Two Actions on the Ideal
 

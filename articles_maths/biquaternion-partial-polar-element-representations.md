@@ -466,7 +466,7 @@ The three named representations are also distinguished by their behaviour under 
 | $r$, $e^{i\alpha}$, $B$, $\hat{q}$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor |
 | $\rho = re^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ | the complex modulus of the four-factor representation |
 | $\mathbf{Q} = Q_1e_1+Q_2e_2+Q_3e_3$ | the vector part of $\tilde{Q}$ |
-| $(\mathbf{Q},\mathbf{Q}) = Q_1^2+Q_2^2+Q_3^2$ | the complex bilinear square of the vector part |
+| $(\mathbf{Q},\mathbf{Q}) = Q_1^2+Q_2^2+Q_3^2$ | the general plain bilinear square of the vector part |
 | $Q_r$, $Q_i$ | the real and imaginary quaternion parts of $\tilde{Q}$ |
 | $R$ | Hamilton modulus, the complex scalar $\rho$ |
 | $\xi$, $\Theta$ | Hamilton axis, parallel to $\mathbf{Q}$, and complex angle |

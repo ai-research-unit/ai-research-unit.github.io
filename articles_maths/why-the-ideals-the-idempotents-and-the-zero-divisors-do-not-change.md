@@ -41,7 +41,7 @@ $$
 
 **Proof.** A left ideal over $\mathbb{R}$ is closed under left multiplication by every element of $\mathbb{B}$, hence by $i$, hence is a complex subspace by the lemma, hence is closed under left multiplication by every complex multiple of every element of $\mathbb{B}$; so it is a left ideal over $\mathbb{C}$. The converse is immediate. The statements for right and two-sided ideals and for submodules are the same argument applied to left multiplication, right multiplication and the module action. $\square$
 
-**Remark (the module reading).** The statement is the assertion that the left regular module of $\mathbb{B}$ over $\mathbb{R}$ has the same submodules as the left regular module over $\mathbb{C}$, even though the first is a real vector space of dimension eight and the second a complex vector space of dimension four. The reason is the one above: the complex action is the real action together with $J$, and every submodule is already $J$-stable because $J$ is part of the action. The module theory is *The Biquaternion Algebra as a Real Module over Itself* and *Modules over the Biquaternion Algebra*.
+**Remark (the module reading).** The statement is the assertion that the left regular module of $\mathbb{B}$ over $\mathbb{R}$ has the same submodules as the left regular module over $\mathbb{C}$, even though the first is a real vector space of dimension eight and the second a complex vector space of dimension four. The reason is the one above: the complex action is the real action together with $J$, and every submodule is already $J$-stable because $J$ is part of the action. The module theory is *The Biquaternion Algebra as a Real Module over Itself* and *Modules over the General Plain Algebra of Biquaternions*.
 
 ## The Ideals
 

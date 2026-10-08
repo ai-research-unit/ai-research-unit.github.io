@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The product of this group is the **complex quaternionic bilinear product**
+The product of this group is the **general quaternionic bilinear product**
 
 $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
 $$
 
-the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product*), whose algebra is *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*. The previous five articles read the product over the whole algebra; this one reads it on the four-dimensional real subspace on which the whole batch becomes classical,
+the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The General Quaternionic Bilinear Product*), whose algebra is *Introduction to the General Quaternionic Algebra of Biquaternions*. The previous five articles read the product over the whole algebra; this one reads it on the four-dimensional real subspace on which the whole batch becomes classical,
 
 $$
 \mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3 ,
@@ -23,7 +23,7 @@ $$
 h\star g = \bar h\,g ,
 $$
 
-which is the isotope of the quaternion algebra by its conjugation. Second, the restricted product is **not associative**, the triple $(i,i,j)$ of units witnessing it, so it is neither the quaternion algebra nor the opposite quaternion algebra: it is the isotope. Third, its left multiplications are the plain left multiplications by the conjugates and form a monoid isomorphic to the **opposite** of the quaternion algebra, which is the precise sense in which the opposite algebra appears on this subspace. Fourth, the whole batch restricts classically on the subspace: the square is the reduced norm $|h|^2e_0$, the reduced norm of a real quaternion is a sum of four real squares and vanishes only at the origin, so the cone of the second article meets the subspace at the origin alone and every nonzero element is a unit, and the symmetrisation is the Euclidean inner product placed on the real line.
+which is the isotope of the quaternion algebra by its conjugation. Second, the restricted product is **not associative**, the triple $(i,i,j)$ of units witnessing it, so it is neither the quaternion algebra nor the opposite quaternion algebra: it is the isotope. Third, its left multiplications are the plain left multiplications by the conjugates and form a monoid isomorphic to the **opposite** of the quaternion algebra, which is the precise sense in which the opposite algebra appears on this subspace. Fourth, the whole batch restricts classically on the subspace: the square is the reduced norm $|h|^2e_0$, the reduced norm of a real quaternion is a sum of four real squares and vanishes only at the origin, so the cone of the second article meets the subspace at the origin alone and every nonzero element is a unit, and the symmetrisation is the definite inner product placed on the real line.
 
 ## The Restriction of the Product
 
@@ -39,7 +39,7 @@ where $\bar h$ is the quaternion conjugate of $h$.
 
 **Corollary (the subspace is a real algebra with a left unit only).** $\mathbb{H}_{\mathbb{B}}$ is a four-dimensional real algebra under $\star$, with $e_0$ as a left unit, $e_0\star g = g$, and no right unit, $h\star e_0 = \bar h$, which differs from $h$ as soon as the vector part of $h$ is nonzero. In particular the subspace is closed under $\star$ but is not the quaternion algebra: the element $h = i$ gives $i\star e_0 = -i$ whereas $i e_0 = i$.
 
-**Remark (the source of the restriction).** All four products of the chapter restrict to the quaternion subspace (*The Six Subspaces and the Four Complex Products*): on real quaternions they read $hg$, $\bar hg$, $h\bar g$ and $\bar h\bar g = \overline{gh}$. The three non-associative ones are the three isotopes of the quaternion algebra by the three nontrivial maps among the identity and the two conjugations, and only the first is associative. The product of this group is the one with the conjugation in the first slot, and its restriction $\bar hg$ is the isotope by the quaternion conjugation. The isotope reading was introduced for the whole algebra in *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$* and used in the first three articles of this group; here it is the only reading, the twisting map being an involution of the algebra.
+**Remark (the source of the restriction).** All four products of the chapter restrict to the quaternion subspace (*The Six Subspaces and the Four Complex Products*): on real quaternions they read $hg$, $\bar hg$, $h\bar g$ and $\bar h\bar g = \overline{gh}$. The three non-associative ones are the three isotopes of the quaternion algebra by the three nontrivial maps among the identity and the two conjugations, and only the first is associative. The product of this group is the one with the conjugation in the first slot, and its restriction $\bar hg$ is the isotope by the quaternion conjugation. The isotope reading was introduced for the whole algebra in *Introduction to the General Quaternionic Algebra of Biquaternions* and used in the first three articles of this group; here it is the only reading, the twisting map being an involution of the algebra.
 
 ## The Two Smaller Real Subspaces
 
@@ -135,7 +135,7 @@ $$
 h\circ g = \tfrac12\bigl(\bar h g + \bar g h\bigr) = \langle h,g\rangle\,e_0 ,
 $$
 
-the Euclidean inner product placed on the real line, a commutative operation with no vector part. It is not a Jordan algebra: at $h = g = e_1$ its two sides in the Jordan identity are $e_0$ and $0$, which is the failure computed for the whole algebra in *The Symmetrised Quaternionic Product and the Hermitian Subspace* and recorded for the subspace in *The Six Subspaces and the Four Complex Products*.
+the definite inner product placed on the real line, a commutative operation with no vector part. It is not a Jordan algebra: at $h = g = e_1$ its two sides in the Jordan identity are $e_0$ and $0$, which is the failure computed for the whole algebra in *The Symmetrised Quaternionic Product and the Hermitian Subspace* and recorded for the subspace in *The Six Subspaces and the Four Complex Products*.
 
 **Not a Lie algebra.** The antisymmetrisation $[h,g]_{\star} = \bar hg-\bar gh$ stays inside the subspace, but it fails the Jacobi identity; at the triple $(e_0,e_1,e_2)$ the cyclic sum of the three brackets is a nonzero multiple of $e_3$ (*The Six Subspaces and the Four Complex Products*, and *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* for the whole algebra).
 
@@ -143,7 +143,7 @@ the Euclidean inner product placed on the real line, a commutative operation wit
 
 ## Summary
 
-The quaternion subspace $\mathbb{H}_{\mathbb{B}}$, of real dimension four, is the fixed space of complex conjugation, and it is closed under the quaternionic product: on real quaternions the product reads $h\star g = \bar hg$, the isotope of the quaternion algebra by its conjugation. The restriction is not associative, the triple $(i,i,j)$ of units being a witness, so it is neither the quaternion algebra nor the opposite quaternion algebra; the opposite appears instead as the monoid of left multiplications, $L_h\circ L_g = L_{gh}$, and as the isotopy class of the isotope. The square of a real quaternion is its reduced norm $|h|^2e_0$, a sum of four real squares, so the only idempotents are $0$ and $e_0$, the only square-zero element is $0$, every nonzero element is a unit, and the nilpotent cone of the whole algebra meets the subspace at the origin alone. The symmetrisation restricts to the Euclidean inner product on the real line and fails the Jordan identity; the antisymmetrisation stays inside the subspace and fails Jacobi. The subspace is thus the classical picture of the batch: the same product, with the element theory of a division algebra, on the four-dimensional real form on which the norm is positive definite.
+The quaternion subspace $\mathbb{H}_{\mathbb{B}}$, of real dimension four, is the fixed space of complex conjugation, and it is closed under the quaternionic product: on real quaternions the product reads $h\star g = \bar hg$, the isotope of the quaternion algebra by its conjugation. The restriction is not associative, the triple $(i,i,j)$ of units being a witness, so it is neither the quaternion algebra nor the opposite quaternion algebra; the opposite appears instead as the monoid of left multiplications, $L_h\circ L_g = L_{gh}$, and as the isotopy class of the isotope. The square of a real quaternion is its reduced norm $|h|^2e_0$, a sum of four real squares, so the only idempotents are $0$ and $e_0$, the only square-zero element is $0$, every nonzero element is a unit, and the nilpotent cone of the whole algebra meets the subspace at the origin alone. The symmetrisation restricts to the definite inner product on the real line and fails the Jordan identity; the antisymmetrisation stays inside the subspace and fails Jacobi. The subspace is thus the classical picture of the batch: the same product, with the element theory of a division algebra, on the four-dimensional real form on which the norm is positive definite.
 
 ## Summary of Notation
 
@@ -155,12 +155,12 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}}$, of real dimension four, is th
 | $h = h_0+h_1e_1+h_2e_2+h_3e_3$ | a real quaternion, all four coefficients real |
 | $\bar h = h_0-h_1e_1-h_2e_2-h_3e_3$ | the quaternion conjugate, the restriction of ${}^{\natural}$ |
 | ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_0-\mathbf P$ |
-| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the complex quaternionic bilinear product, the multiplication of this group |
+| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of this group |
 | $\tilde P\tilde Q$ | the plain (associative) product of the algebra |
 | $N(h) = \bar hh = |h|^2$ | the reduced norm of a real quaternion |
 | $L_h$ | the left multiplication of the product, $L_h(g) = \bar hg$ |
 | $\mathbb{H}^{\mathrm{op}}$ | the opposite quaternion algebra, the monoid of the left multiplications |
-| $\langle h,g\rangle$ | the Euclidean inner product of the four real coordinates |
+| $\langle h,g\rangle$ | the definite inner product of the four real coordinates |
 
 ## Further Reading
 

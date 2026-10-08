@@ -34,7 +34,7 @@ The correspondence is the bridge between the finite unit groups and the simply l
 
 ## The Place of the Article
 
-This article owns the geometric and finite-group reading of the unit groups: the finite subgroups of $S^3$, the figures they determine, and the McKay correspondence. The orders, their arithmetic, their groups of units and the integral biquaternions remain with *Biquaternion Orders and Finite Groups of Units* in the quaternion-bilinear reading group, where the norm that decides the units is available. The Clifford structure that carries the spinor lift is *The Clifford Structure of the Biquaternion Algebra*.
+This article owns the geometric and finite-group reading of the unit groups: the finite subgroups of $S^3$, the figures they determine, and the McKay correspondence. The orders, their arithmetic, their groups of units and the integral biquaternions remain with *Biquaternion Orders and Finite Groups of Units* in the quaternion-bilinear reading group, where the norm that decides the units is available. The Clifford structure that carries the spinor lift is *The Clifford Algebra Representation*.
 
 ## Summary
 
@@ -53,4 +53,4 @@ The finite subgroups of the unit sphere $S^3$ of the real slice are the cyclic g
 
 - *Biquaternion Orders and Finite Groups of Units* (`articles_maths/biquaternion-orders-and-finite-groups-of-units.md`), for the orders, the groups of units and the integral biquaternions
 - *Biquaternion Rotations and Lorentz Transformations* (`articles_maths/biquaternion-rotations-and-lorentz-transformations.md`), for the rotations of the real slice
-- *The Clifford Structure of the Biquaternion Algebra* (`articles_maths/the-clifford-structure-of-the-biquaternion-algebra.md`), for the Clifford and spinor lift
+- *The Clifford Algebra Representation* (`articles_maths/the-clifford-algebra-representation.md`), for the Clifford identification, its grades and the four conjugations

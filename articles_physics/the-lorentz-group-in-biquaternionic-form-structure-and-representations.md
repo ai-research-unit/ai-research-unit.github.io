@@ -466,8 +466,8 @@ The group that carries the transformations is represented as follows. The group 
 | $S^2$, $H^\pm$, $H^{sl}$ | Sphere, two-sheeted time-like hyperboloid, one-sheeted hyperboloid |
 | $[u|v]=u^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing |
 | $\varsigma=(\sigma_3,i\sigma_2,-i\sigma_1)$ | Triple of $SU(1,1)$ generators; $\varsigma^i\varsigma^j=\eta^{ij}-i\varepsilon^{ijk}\eta_{kl}\varsigma^l$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

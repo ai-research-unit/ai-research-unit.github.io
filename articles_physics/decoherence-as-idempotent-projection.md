@@ -345,8 +345,8 @@ One many-qubit case belongs here because a source overstates it. The singlet $\l
 | $A = \mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\tilde\Pi_-$ | Pointer (commutative) subalgebra |
 | $S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$ | Von Neumann entropy, $\lambda_\pm = \tfrac12(1\pm|\mathbf{r}|)$ |
 | $\Phi(\tilde{\rho}) = \sum_l \tilde{K}_l\tilde{\rho}\tilde{K}_l^{*}$ | Kraus representation of a channel |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

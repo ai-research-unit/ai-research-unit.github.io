@@ -8,7 +8,7 @@ The quadratic family, its critical set and its derivative are *The Biquaternion 
 
 The article owns the Jacobian and its determinant, the local biholomorphism off the critical set, the definition of the Fatou and Julia sets, the central-parameter theorem identifying the two Julia sets, the fixed-point multiplier computation, and the local picture at the cone. It does not re-derive the derivative.
 
-**Standing convention.** $F=F_{\tilde C}$ is the quadratic family in the complex bilinear product, $dF|_{\tilde Q}(\tilde P)=\tilde Q\tilde P+\tilde P\tilde Q$ is its complex derivative, and $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ is the critical set.
+**Standing convention.** $F=F_{\tilde C}$ is the quadratic family in the general plain bilinear product, $dF|_{\tilde Q}(\tilde P)=\tilde Q\tilde P+\tilde P\tilde Q$ is its complex derivative, and $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ is the critical set.
 
 ## Holomorphy and the Jacobian
 
@@ -20,7 +20,7 @@ $$
 
 whose determinant, in the coordinates of the model, is $4\,N(\tilde Q)\,(2Q_0)^2$.
 
-**Proof.** The complex bilinear product is complex-bilinear and the map is a polynomial in it; the derivative is the product rule, and the determinant is the critical-set proposition of *The Biquaternion Quadratic Map and Its Julia Sets*, where the matrix model gives the explicit form $I\otimes M+M^{\mathsf{T}}\otimes I$ and the determinant $\det(M)\operatorname{tr}(M)^2\cdot4$.
+**Proof.** The general plain bilinear product is complex-bilinear and the map is a polynomial in it; the derivative is the product rule, and the determinant is the critical-set proposition of *The Biquaternion Quadratic Map and Its Julia Sets*, where the matrix model gives the explicit form $I\otimes M+M^{\mathsf{T}}\otimes I$ and the determinant $\det(M)\operatorname{tr}(M)^2\cdot4$.
 
 **Corollary (the local inverse).** Off the critical set $\Sigma(\mathbb{B})$ the map $F$ is a local biholomorphism: every $\tilde Q\notin\Sigma(\mathbb{B})$ has a neighbourhood $U$ with $F:U\to F(U)$ biholomorphic and $F^{-1}$ holomorphic on $F(U)$.
 

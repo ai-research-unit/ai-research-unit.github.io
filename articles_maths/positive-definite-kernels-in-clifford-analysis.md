@@ -71,7 +71,7 @@ $\square$
 **Remark (what the Clifford structure adds).** Three features distinguish the case at hand from the
 scalar theory. The kernel takes values in a non-commutative algebra, so the order of the factors in
 the reproducing property matters and the Hermitian symmetry carries the conjugation $*$; the module
-form is the one of *Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint*, so the
+form is the one of *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*, so the
 positivity of the kernel is the positivity of a family of module forms; and the functions of the
 classical spaces are **monogenic**, so the kernel inherits monogenicity in each variable — it is
 monogenic in the first and anti-monogenic in the second — and the kernel is determined by its

@@ -17,7 +17,7 @@ The article is organised as follows. A first section fixes the spintensors and t
 - Corpus article *The Field-Strength Biquaternion and Its Invariants*, for the biquaternion form of the bivector space.
 - Corpus article *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, for the spinor form of the Dirac and Maxwell equations used in the Dirac limit.
 - Corpus article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation*, for the Maxwell–Dirac package in the corpus's own form.
-- Corpus article *Clifford Structure of the Biquaternion Algebra*, for the algebra the first member of the chain is.
+- Corpus article *Clifford Algebra Representation*, for the algebra the first member of the chain is.
 - Corpus article *Bhabha Scattering in Biquaternionic Form*, for the other work bearing Bhabha's name.
 
 ## Spintensors and the Spin Chains
@@ -204,7 +204,7 @@ $$
 \mathbb{C}_0\longrightarrow \mathbb{C}_2\otimes\bar{\mathbb{C}}_2\longrightarrow \mathbb{C}_2\otimes\bar{\mathbb{C}}_2\otimes\mathbb{C}_2\otimes\bar{\mathbb{C}}_2\longrightarrow\cdots,
 $$
 
-is thus a chain whose second member is the biquaternion algebra, and the first member is the centre. The corpus's *Higher Spin from Tensor Products* and *Clifford Structure of the Biquaternion Algebra* are the framework's statements of the same nesting; the present chain is the spinor-structure programme's version. One caution: the programme writes "$\mathbb{C}^2$ and complex conjugate $\bar{\mathbb{C}}^2$ are biquaternion algebras", which conflates the algebra with its module. $\mathbb{C}^2$ is the two-dimensional complex vector space on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts; the algebra is the matrix algebra, and the tensor products of the chain are tensor products of **modules** until an algebra structure is imposed. The article keeps the distinction.
+is thus a chain whose second member is the biquaternion algebra, and the first member is the centre. The corpus's *Higher Spin from Tensor Products* and *Clifford Algebra Representation* are the framework's statements of the same nesting; the present chain is the spinor-structure programme's version. One caution: the programme writes "$\mathbb{C}^2$ and complex conjugate $\bar{\mathbb{C}}^2$ are biquaternion algebras", which conflates the algebra with its module. $\mathbb{C}^2$ is the two-dimensional complex vector space on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts; the algebra is the matrix algebra, and the tensor products of the chain are tensor products of **modules** until an algebra structure is imposed. The article keeps the distinction.
 
 Second, the **bivector space** is the corpus's field-strength space. The six-dimensional space of antisymmetric two-tensors is, under the Hodge decomposition, the pair of a vector and an axial vector, and in the corpus's notation it is the field-strength biquaternion $\mathbf{E}+i\mathbf{B}$ with six real components. The mapping $g_{ab}\to g_{\alpha\beta\gamma\delta}$ is the metric structure the corpus's *Field-Strength Biquaternion and Its Invariants* meets when it classifies a field by its two invariants; and the programme's $\mathbb{C}^3\cong\mathbb{R}^6$ is the complex form in which the corpus's $\mathbf{B}$ and $\mathbf{E}$ are two vectors of one complex space. This is a genuine agreement of objects, and the article records it as one.
 

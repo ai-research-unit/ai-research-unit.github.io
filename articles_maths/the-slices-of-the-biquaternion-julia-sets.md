@@ -4,11 +4,11 @@
 
 The biquaternion Julia set of a parameter $\tilde C$ is a subset of an eight-real-dimensional space, and every picture of it is a picture of a slice. The word slice carries three inequivalent meanings in the corpus and in the literature: the *intersection* $J_{\tilde C}\cap V$ with a chosen subspace, the *restriction* of the dynamics to a subspace $V$ that the map leaves invariant, and the *projection* of the whole set to a plane, which is what a rendered image shows. The three agree exactly when the subspace is invariant and the projection is the identity on the slice, and they differ otherwise, which is the source of most of the confusion the subject produces.
 
-The quadratic family, its filled Julia set and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the parameter locus is *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the six distinguished real subspaces are *The Six Subspaces and the Elements*; the idempotents are *Biquaternion Idempotents and Projections* and the matrix model is *Biquaternion 2×2 Matrix Element Representation*. The quaternion slices are *The Quaternion Quadratic Map and Its Julia Sets* and *The Quaternion Mandelbrot Set*; the complex ones are *The Julia Sets of a Complex Polynomial*.
+The quadratic family, its filled Julia set and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the parameter locus is *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the six distinguished real subspaces are *Introduction to the Six Subspaces*; the idempotents are *Biquaternion Idempotents and Projections* and the matrix model is *Biquaternion 2×2 Matrix Element Representation*. The quaternion slices are *The Quaternion Quadratic Map and Its Julia Sets* and *The Quaternion Mandelbrot Set*; the complex ones are *The Julia Sets of a Complex Polynomial*.
 
 The article owns the three notions of a slice, the invariance criterion and the identification of the invariant slices, the central and real slices, the quaternion and anti-quaternion slices, the idempotent slices as the exact two-dimensional ones, and the warning that a rendered picture is a projection and not an intersection. The idempotent decomposition itself is *The Idempotent Decomposition and the Split Fractal*.
 
-**Standing convention.** $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ with the complex bilinear product, $\mathcal K_{\tilde C}$ the filled Julia set and $J_{\tilde C}=\partial\mathcal K_{\tilde C}$. A subspace is a real linear subspace $V\subset\mathbb{B}$ unless it is called complex.
+**Standing convention.** $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ with the general plain bilinear product, $\mathcal K_{\tilde C}$ the filled Julia set and $J_{\tilde C}=\partial\mathcal K_{\tilde C}$. A subspace is a real linear subspace $V\subset\mathbb{B}$ unless it is called complex.
 
 ## The Three Notions of a Slice
 
@@ -64,7 +64,7 @@ $$
 
 so the map preserves the quaternion subspace exactly when $\tilde P\tilde R+\tilde R\tilde P+\tilde B=0$ for all initial data, which for $\tilde B=0$ is the anticommutation condition $\tilde P\tilde R+\tilde R\tilde P=0$.
 
-**Proof.** Expand in the complex bilinear product and collect the real and the imaginary parts; the product $i\tilde R$ is central.
+**Proof.** Expand in the general plain bilinear product and collect the real and the imaginary parts; the product $i\tilde R$ is central.
 
 **Remark (the anticommuting pair).** The condition $\tilde P\tilde R+\tilde R\tilde P=0$ with $\tilde P,\tilde R$ real quaternions means the two are purely imaginary and orthogonal, the classical anticommuting pair of a quaternion; it is satisfied in codimension one and is not generic. **The orbit of a generic biquaternion alternates between the two real quaternion slices and is on neither**, and this is the elementary reason the quaternion picture is a slice and not a factorisation.
 
@@ -115,4 +115,4 @@ A slice of a biquaternion Julia set can mean the intersection with a subspace, t
 - *The Biquaternion Mandelbrot Set and the Connectedness Locus* (`articles_maths/the-biquaternion-mandelbrot-set-and-the-connectedness-locus.md`), for the commutative-plane theorem used at the idempotent slice.
 - *The Idempotent Decomposition and the Split Fractal* (`articles_maths/the-idempotent-decomposition-and-the-split-fractal.md`), for the decomposition the exact slices carry.
 - *The Quaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-quaternion-quadratic-map-and-its-julia-sets.md`), for the three-dimensional picture read here as a slice.
-- *The Six Subspaces and the Elements* (`articles_maths/the-six-subspaces-and-the-elements.md`), for the distinguished subspaces and their closedness properties.
+- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the distinguished subspaces and their closedness properties.

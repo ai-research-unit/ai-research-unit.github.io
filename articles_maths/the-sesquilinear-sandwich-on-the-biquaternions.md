@@ -15,7 +15,7 @@ Three properties fix the operator. It is conjugate-linear in the middle variable
 
 The article is the sixth of the batch and reads the general article *The Sesquilinear Sandwich Operator*, whose composition table and invertibility criterion are quoted; the two-sided multiplication it uses is the linear operator of the same article, and the two one-sided cases are *The Left and Right Multiplications of the Biquaternion Sesqualgebra*, above in this group. The ternary form of the sandwich is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*, and the operator of the ternary product is *The Ternary Product as an Operator*; the adjoint of the sandwich is *The Adjoint of the Sesquilinear Sandwich on the Biquaternions*, below.
 
-The setting is that of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. Writing $T_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q$ for the ordinary two-sided multiplication, the sandwich is $S_{\tilde P,\tilde Q}=T_{\tilde P,\tilde Q^{*}}\circ{}^{*}$. The invertible elements are those with $N(\tilde Q)=Q_0^2+Q_1^2+Q_2^2+Q_3^2\neq0$, by *Biquaternion Norm and Invertibility*, and the rank of an element is the rank of its matrix in the model of *Biquaternion $2\times2$ Matrix Element Representation*.
+The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. Writing $T_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q$ for the ordinary two-sided multiplication, the sandwich is $S_{\tilde P,\tilde Q}=T_{\tilde P,\tilde Q^{*}}\circ{}^{*}$. The invertible elements are those with $N(\tilde Q)=Q_0^2+Q_1^2+Q_2^2+Q_3^2\neq0$, by *Biquaternion Norm and Invertibility*, and the rank of an element is the rank of its matrix in the model of *Biquaternion $2\times2$ Matrix Element Representation*.
 
 ## The Definition
 
@@ -160,7 +160,7 @@ In the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ of *Biquaternion $2\times2
 
 **Proof.** The table is the theorem read with the three possible ranks of each parameter. $\square$
 
-**Remark.** The sandwich therefore never has rank three, and it is invertible exactly in the top-left corner of the table, in agreement with §*The Invertible Sandwiches*. A sandwich is a rank-one operator exactly when both parameters are zero divisors, and it is the zero operator exactly when either parameter vanishes; the middle of the table is the continuum of the rank-two sandwiches, one parameter a unit and the other a zero divisor.
+**Remark.** The sandwich therefore never has rank three, and it is invertible exactly in the top-left corner of the table, in agreement with §*The Invertible Sandwiches*. A sandwich is a rank-one operator exactly when both parameters are zero divisors, and it is the zero operator exactly when either parameter vanishes; the middle of the table is the family of the rank-two sandwiches, one parameter a unit and the other a zero divisor.
 
 ### The Kernel
 
@@ -232,7 +232,7 @@ $$
 
 so the sandwich of two basis elements sends each basis element to a basis element up to the sign $\varepsilon_\lambda\varepsilon_\nu$ and the signs of the quaternion table. For $\mu=\nu=0$ the operator is the involution, $S_{e_0,e_0}(e_\lambda)=\varepsilon_\lambda e_\lambda=e_\lambda^{*}$.
 
-**Proof.** Substituting $e_\lambda^{*}=\varepsilon_\lambda e_\lambda$ and $e_\nu^{*}=\varepsilon_\nu e_\nu$ from the basis table of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* in the definition gives the display; the case $\mu=\nu=0$ is §*Two Elementary Values*. $\square$
+**Proof.** Substituting $e_\lambda^{*}=\varepsilon_\lambda e_\lambda$ and $e_\nu^{*}=\varepsilon_\nu e_\nu$ from the basis table of *Introduction to the General Plain Sesqualgebra of Biquaternions* in the definition gives the display; the case $\mu=\nu=0$ is §*Two Elementary Values*. $\square$
 
 ## Summary
 

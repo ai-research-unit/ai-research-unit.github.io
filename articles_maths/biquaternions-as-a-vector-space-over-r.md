@@ -4,7 +4,7 @@
 
 This article treats the biquaternions as a **real vector space**: the same set as *Biquaternions as a Vector Space over $\mathbb{C}$* with the scalars cut from $\mathbb{C}$ down to the subfield $\mathbb{R}$, the complex structure the complex reading rests on, the separation of the real-linear self-maps into the $\mathbb{C}$-linear and the antilinear ones, and the real forms from which the complex reading is recovered by extension of scalars. Restriction of scalars doubles the dimension, from four over $\mathbb{C}$ to eight over $\mathbb{R}$. The elements, the basis, the coordinate systems and the four conjugation formulas are those of the complex article and are cited, not restated: what is added here is the scalar reading itself, the operator that carries the gap between the two readings, and the linear algebra that the doubled dimension makes visible.
 
-No form appears in this article: the Hermitian form and the inner product belong to the Topology group. The product read over the real scalars is *Biquaternions as an Algebra over $\mathbb{R}$*; the four products themselves are *The Four Biquaternion Complex Products*.
+No form appears in this article: the Hermitian form and the inner product are *Biquaternion Norm and Invertibility*. The product read over the real scalars is *Biquaternions as an Algebra over $\mathbb{R}$*; the four products themselves are *The Four Biquaternion Complex Products*.
 
 ## The Real Scalars
 
@@ -70,7 +70,7 @@ A real subspace of $\mathbb{B}$ of real dimension four need not be closed under 
 
 ### What the View Adds
 
-The real reading sees more subspaces than the complex one, since every complex subspace is a real subspace and the converse fails, and it makes the antilinear maps visible as ordinary linear maps. It costs the complex structure, which leaves the scalars and must be carried by $J$ whenever the complex action is meant. The product stays $\mathbb{R}$-bilinear, so the four products of *The Four Biquaternion Complex Products* are read over $\mathbb{R}$ unchanged; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *Biquaternions as a Bimodule over $\mathbb{H}$* and *Biquaternions as a Module over Itself*.
+The real reading sees more subspaces than the complex one, since every complex subspace is a real subspace and the converse fails, and it makes the antilinear maps visible as ordinary linear maps. It costs the complex structure, which leaves the scalars and must be carried by $J$ whenever the complex action is meant. The product stays $\mathbb{R}$-bilinear, so the four products of *The Four Biquaternion Complex Products* are read over $\mathbb{R}$ unchanged; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *Biquaternions as a Bimodule over $\mathbb{H}$* and *Modules over the General Plain Algebra of Biquaternions*.
 
 ## Summary
 
@@ -80,7 +80,7 @@ The gap between the two readings is one operator: the multiplication $J : \tilde
 
 A real form is a real subspace $V$ of dimension four meeting $JV$ only at zero; then $\mathbb{B} = V \oplus JV$ and $\mathbb{C}\otimes_\mathbb{R}V \cong \mathbb{B}$, so the complex reading is recovered from $V$ by extension of scalars, the choice of $V$ being data beyond the real reading. The six distinguished subspaces are real; the centre and the vector subspace are the only two closed under $J$, and the other four are real forms exchanged in pairs.
 
-The product stays $\mathbb{R}$-bilinear, so the four products of *The Four Biquaternion Complex Products* are read over $\mathbb{R}$ unchanged. The product as the multiplication of an algebra over $\mathbb{R}$ is *Biquaternions as an Algebra over $\mathbb{R}$*; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *Biquaternions as a Bimodule over $\mathbb{H}$* and *Biquaternions as a Module over Itself*.
+The product stays $\mathbb{R}$-bilinear, so the four products of *The Four Biquaternion Complex Products* are read over $\mathbb{R}$ unchanged. The product as the multiplication of an algebra over $\mathbb{R}$ is *Biquaternions as an Algebra over $\mathbb{R}$*; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *Biquaternions as a Bimodule over $\mathbb{H}$* and *Modules over the General Plain Algebra of Biquaternions*.
 
 ## Summary of Notation
 
@@ -99,4 +99,4 @@ The product stays $\mathbb{R}$-bilinear, so the four products of *The Four Biqua
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the original formulation.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra reading of the biquaternions.
+- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the Clifford-algebra reading of the biquaternions.

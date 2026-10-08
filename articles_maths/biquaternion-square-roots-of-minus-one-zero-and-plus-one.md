@@ -20,7 +20,7 @@ $$
 
 The quaternion conjugate is denoted $\tilde{P}^{\natural}$, the complex conjugate is denoted $\bar{\tilde{P}}$, and the Hermitian conjugate is denoted $\tilde{P}^{*} = \overline{\tilde{P}^{\natural}}$. Throughout, $\boldsymbol{p}$ and $\boldsymbol{p}'$ denote the real and imaginary parts of the vector part of a root, and two pure real quaternions are said to **anticommute** when $\boldsymbol{p}\boldsymbol{p}' + \boldsymbol{p}'\boldsymbol{p} = 0$.
 
-Throughout, the square $\tilde{P}^2$ is taken in the complex bilinear product $\tilde{P}\tilde{P}$, the multiplication of the algebra. The other three products of *The Four Biquaternion Complex Products* have different squares, and therefore different roots. In the quaternionic bilinear product the square is always the central element $N(\tilde{P})e_0$, so that the roots of a central value $\lambda$ are the single equation $N(\tilde{P}) = \lambda$. In the complex sesquilinear product the scalar part of the square is $\sum_\mu\lvert P_\mu\rvert^2$, which is never negative, so that product has **no** root of $-1$ at all and its only root of $0$ is $\tilde{P} = 0$. In the quaternionic sesquilinear product the scalar part of the square is the Krein value $\lvert P_0\rvert^2 - \sum_k\lvert P_k\rvert^2$, on which roots of all three values occur, $e_k^2 = -e_0$ for instance. The classification of this article is therefore the classification of the roots for the complex bilinear product; the four squares and the four idempotent sets are set side by side in *Comparison Between the Four Biquaternion Products*.
+Throughout, the square $\tilde{P}^2$ is taken in the general plain bilinear product $\tilde{P}\tilde{P}$, the multiplication of the algebra. The other three products of *The Four Biquaternion Complex Products* have different squares, and therefore different roots. In the general quaternionic bilinear product the square is always the central element $N(\tilde{P})e_0$, so that the roots of a central value $\lambda$ are the single equation $N(\tilde{P}) = \lambda$. In the general plain sesquilinear product the scalar part of the square is $\sum_\mu\lvert P_\mu\rvert^2$, which is never negative, so that product has **no** root of $-1$ at all and its only root of $0$ is $\tilde{P} = 0$. In the general quaternionic sesquilinear product the scalar part of the square is the Krein value $\lvert P_0\rvert^2 - \sum_k\lvert P_k\rvert^2$, on which roots of all three values occur, $e_k^2 = -e_0$ for instance. The classification of this article is therefore the classification of the roots for the general plain bilinear product; the four squares and the four idempotent sets are set side by side in *Comparison Between the Four Biquaternion Products*.
 
 ## The Problem and Its Reduction
 
@@ -123,9 +123,9 @@ $$
 
 because $e_k^2 = -1$ and each cross term vanishes, $e_je_k + e_ke_j = 0$ for $j \neq k$. So every pure real quaternion satisfying that one condition is a root.
 
-The condition $p_1^2 + p_2^2 + p_3^2 = 1$ is the **unit sphere** in the three real coordinates $(p_1, p_2, p_3)$: three real coefficients carrying one constraint, hence two free real parameters, which may be taken as two angles on the sphere. **The roots in this case are the pure real quaternions of unit length**, the **real roots** — the roots of $-1$ lying in the real subspace $\mathbb{H}$ of $\mathbb{B}$, that is, the classical imaginary units of the quaternions.
+The condition $p_1^2 + p_2^2 + p_3^2 = 1$ is the **real unit vectors** in the three real coordinates $(p_1, p_2, p_3)$: three real coefficients carrying one constraint, hence two free real parameters. **The roots in this case are the pure real quaternions of unit length**, the **real roots** — the roots of $-1$ lying in the real subspace $\mathbb{H}$ of $\mathbb{B}$, that is, the classical imaginary units of the quaternions.
 
-The two signs describe one set and not two: if $\boldsymbol{p}$ is a root then so is $-\boldsymbol{p}$, because $(-\boldsymbol{p})^2 = \boldsymbol{p}^2 = -1$, and the sphere already contains both. The family is therefore written in the redundant form
+The two signs describe one set and not two: if $\boldsymbol{p}$ is a root then so is $-\boldsymbol{p}$, because $(-\boldsymbol{p})^2 = \boldsymbol{p}^2 = -1$, and the set of real unit vectors already contains both. The family is therefore written in the redundant form
 
 $$
 \tilde P = \pm\boldsymbol{p}, \qquad \boldsymbol{p} = p_1e_1 + p_2e_2 + p_3e_3, \qquad p_1^2 + p_2^2 + p_3^2 = 1,
@@ -281,7 +281,7 @@ $$
 (e_1+ie_2)^2 = e_1^2 + i^2e_2^2 + i(e_1e_2+e_2e_1) = -1 + 1 + 0 = 0 .
 $$
 
-The set is the zero-divisor set of $\mathbb{B}$ — the elements of vanishing complex square — whose structure, its two families and the criterion in terms of the scalar part, is the subject of *Biquaternion Zero Divisors*. It is named here only to complete the list of the three central values, and not developed.
+The set is the **nilpotent** family of the zero-divisor set of $\mathbb{B}$; the whole zero-divisor set — the elements of vanishing norm, which splits into these nilpotents and the non-pure zero divisors — its two families and the criterion in terms of the scalar part, are the subject of *Biquaternion Zero Divisors*. It is named here only to complete the list of the three central values, and not developed.
 
 ## The Roots of Plus One
 
@@ -315,7 +315,7 @@ $$
 (\boldsymbol{p}i)^2 = \boldsymbol{p}^2 i^2 = (-1)(-1) = 1 .
 $$
 
-Spelled out, the family is $\tilde P_+ = \pm(p_1e_1 + p_2e_2 + p_3e_3)i$ with $p_1^2 + p_2^2 + p_3^2 = 1$: the same unit sphere of the real roots of $-1$, mapped by $\boldsymbol{p} \mapsto \boldsymbol{p}i$. It is a **two-real-parameter family**, and its elements are the only roots of $+1$ that are pure multiples of a real quaternion.
+Spelled out, the family is $\tilde P_+ = \pm(p_1e_1 + p_2e_2 + p_3e_3)i$ with $p_1^2 + p_2^2 + p_3^2 = 1$: the same real unit vectors of the roots of $-1$, mapped by $\boldsymbol{p} \mapsto \boldsymbol{p}i$. It is a **two-real-parameter family**, and its elements are the only roots of $+1$ that are pure multiples of a real quaternion.
 
 **The non-trivial roots.** The four-real-parameter family
 

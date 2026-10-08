@@ -56,7 +56,7 @@ The members are told apart by their value on the algebra unit and by their behav
 
 **Proof.** Immediate from the definition, since $1$ is the identity and $c(1)=1$; for the signed inner conjugation $\alpha(x)x^{-1}$ equals $x\,x^{-1}=1$ when $x$ is even and $-x\,x^{-1}=-1$ when $x$ is odd; for the conjugation sandwich $x\,x^{\natural}$ is the Clifford norm.
 
-**Remark.** The inner conjugation is the only member that fixes the unit identically. The signed inner conjugation fixes it on the even part and negates it on the odd part, which is the same parity sign that distinguishes the two actions of *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*. The anti-involution sandwiches return an element that measures the size of $x$: reversion returns $x\,x^{r}$ and Clifford conjugation returns the Clifford norm.
+**Remark.** The inner conjugation is the only member that fixes the unit identically. The signed inner conjugation fixes it on the even part and negates it on the odd part, which is the same parity sign that distinguishes the two actions of *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*. The anti-involution sandwiches return an element that records the size of $x$: reversion returns $x\,x^{r}$ and Clifford conjugation returns the Clifford norm.
 
 ### The Parity
 
@@ -124,7 +124,7 @@ $$
 \Phi^{\theta,c}_x(V)\subseteq V.
 $$
 
-For the signed inner conjugation this condition is the definition of the Clifford group, and once it holds the restriction to $V$ is an isometry up to the scale that the Clifford norm measures.
+For the signed inner conjugation this condition is the definition of the Clifford group, and once it holds the restriction to $V$ is an isometry up to the scale that the Clifford norm records.
 
 ### The Scaling by the Norm
 

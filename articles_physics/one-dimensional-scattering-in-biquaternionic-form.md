@@ -454,7 +454,7 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $\tau_W = \hbar\,d\arg t/dE$ | Wigner time delay; a scalar |
 | $\tilde S = S\otimes I_2$ | Scattering matrix central in the module |
 | $\mathrm{Tr}(\tilde H) = 2\,\mathrm{Sc}(\tilde H)$ | Trace convention |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
 

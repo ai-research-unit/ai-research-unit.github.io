@@ -17,7 +17,7 @@ Neither half is an algebra in the naive sense over $\mathbb{C}$. The two operati
 
 The article is the eighth of the batch and reads the two general articles *The Sesquilinear Commutator* and *The Sesquilinear Symmetrised Product*, whose antisymmetry, scalar theorems, half-theorems and failure witnesses are quoted; the two bilinear operations that the sesquilinear ones are compared with are *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the Lie and the Jordan structures of the sesqualgebra are *Lie Algebras of Sesqualgebras* and *Jordan Algebras of Sesqualgebras*. The ternary product that repairs the associativity is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*, and the operator forms of the two halves are *The Left and Right Multiplications of the Biquaternion Sesqualgebra*.
 
-The setting is that of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are $\tilde Q=Q_0e_0+\mathbf Q$, and the Hermitian form is $\langle\tilde P,\tilde Q\rangle_*=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *The Hermitian Form on the Biquaternion Algebra*.
+The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are $\tilde Q=Q_0e_0+\mathbf Q$, and the Hermitian form is $\langle\tilde P,\tilde Q\rangle_*=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *Biquaternion Norm and Invertibility*.
 
 ## The Split of the Multiplication
 
@@ -140,7 +140,7 @@ $$
 [\tilde H,\tilde P]_\varsigma=\tilde H\tilde P-\tilde P\tilde H=\tfrac12\bigl(e_2+ie_1\bigr)-\tfrac12\bigl(ie_1-e_2\bigr)=e_2 ,
 $$
 
-where the basis products of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$* give the two expansions. Both inner values are the skew-Hermitian $e_2$, and the outer brackets read a skew-Hermitian element with a Hermitian one by the mixed rule $[\tilde s,\tilde h]_\varsigma=\tilde s\tilde h+\tilde h\tilde s$:
+where the basis products of *Introduction to the General Plain Sesqualgebra of Biquaternions* give the two expansions. Both inner values are the skew-Hermitian $e_2$, and the outer brackets read a skew-Hermitian element with a Hermitian one by the mixed rule $[\tilde s,\tilde h]_\varsigma=\tilde s\tilde h+\tilde h\tilde s$:
 
 $$
 [e_2,\tilde P]_\varsigma=e_2\tilde P+\tilde Pe_2=\tfrac12\bigl(e_2+ie_1\bigr)+\tfrac12\bigl(e_2-ie_1\bigr)=e_2 , \qquad

@@ -127,7 +127,7 @@ Over $\mathbb{R}$ with $\dim V = 1$ and $q(e_1) = -1$, the algebra is $\mathbb{C
 
 ### The Rotor of a Plane
 
-In $\mathrm{Cl}_{0,2}(\mathbb{R}) \cong \mathbb{H}$ with $e_1^{2} = e_2^{2} = -1$, let $R = e_1e_2$, an even versor with $N(R) = (e_1e_2)(e_1e_2)^{\natural} = 1$. The sandwich $T_{R,R^{-1}}$ acts on $V$ by the half-turn $\chi_R(e_1) = -e_1$, $\chi_R(e_2) = -e_2$, and $T_{R,R^{-1}} = T_{-R,-R^{-1}}$ because $-R$ is the other versor of the same operator. So $\mathrm{Spin}(2) \to SO(2)$ is the double cover of the circle by its two opposite rotors, and the two-sided operator is the rotation through the full angle, not the half angle.
+In $\mathrm{Cl}_{0,2}(\mathbb{R}) \cong \mathbb{H}$ with $e_1^{2} = e_2^{2} = -1$, let $R = e_1e_2$, an even versor with $N(R) = (e_1e_2)(e_1e_2)^{\natural} = 1$. The sandwich $T_{R,R^{-1}}$ acts on $V$ by the half-turn $\chi_R(e_1) = -e_1$, $\chi_R(e_2) = -e_2$, and $T_{R,R^{-1}} = T_{-R,-R^{-1}}$ because $-R$ is the other versor of the same operator. So $\mathrm{Spin}(2) \to SO(2)$ is the double cover of $\operatorname{SO}(2)$ by its two opposite rotors, and the two-sided operator is the full vector action, not the half spinor action.
 
 ### The Volume Element
 

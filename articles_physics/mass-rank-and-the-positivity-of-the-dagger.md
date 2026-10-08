@@ -54,7 +54,7 @@ the **canonical Hermitian form of the regular module**, the form the algebra car
 involution is read on the regular bimodule, where it produces three structures at once — the twist that
 turns the left module into the right one, the symmetry of the bimodule, and the sesquilinear form. Its
 positivity is what the whole argument above descends from, and it is the mother of the Born pairing on
-every submodule. The construction is *The Canonical Hermitian Form on the Regular Module of the
+every submodule, the pairing whose scalar part the corpus reads as a probability. The construction is *The Canonical Hermitian Form on the Regular Module of the
 Biquaternion Algebra*.
 
 ### The Natural Square Is the Interval

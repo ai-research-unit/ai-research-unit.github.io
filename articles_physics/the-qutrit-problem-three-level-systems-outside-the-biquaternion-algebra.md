@@ -14,7 +14,7 @@ The article is organised as follows. The defining module and its classification 
 
 ## The Defining Module: Two Levels
 
-The classification is stated in the companion article *Modules over the Biquaternion Algebra* and is used here as given.
+The classification is stated in the companion article *Modules over the General Plain Algebra of Biquaternions* and is used here as given.
 
 **Theorem.** *Let $V=\mathbb{C}^2$ be the space of column vectors with the natural action of $\mathbb{B}\cong M_2(\mathbb{C})$. Every finite-dimensional $\mathbb{B}$-module is isomorphic to a direct sum of copies of $V$,*
 

@@ -90,7 +90,7 @@ with equality exactly when $\rho$ is injective; in particular a graded action of
 
 *Proof.* The preservation of the pieces is the grading condition with $i=0$; the commutation relations are the intertwining of the previous section, and the statement about the commutant is the definition of the commutant read on the two pieces.
 
-**Remark (the $*$-structure).** When the module is a **Hilbert module**, meaning that $M$ carries an inner product for which each $\rho(T)$ has an adjoint and $\rho(T^*)=\rho(T)^*$, the graded action is a graded $*$-representation, the odd operators are skew-adjoint with respect to the grading, and the sign rule is compatible with the involution, $\rho((ST)^*)=\rho(T^*)\rho(S^*)$. The general theory of Hilbert modules is *Hilbert Algebras* and *Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint* (Part II).
+**Remark (the $*$-structure).** When the module is a **Hilbert module**, meaning that $M$ carries an inner product for which each $\rho(T)$ has an adjoint and $\rho(T^*)=\rho(T)^*$, the graded action is a graded $*$-representation, the odd operators are skew-adjoint with respect to the grading, and the sign rule is compatible with the involution, $\rho((ST)^*)=\rho(T^*)\rho(S^*)$. The general theory of Hilbert modules is *Hilbert Algebras* and *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint* (Part II).
 
 ## The Block Form and the Even Part
 

@@ -54,7 +54,7 @@ whenever the algebra is simple.
 
 ## The One-Sided Action and the Vector Action
 
-**Proposition (the two actions are different).** Let $R$ be a rotor and $\psi \in I$. The **spin action** is left multiplication $\psi \mapsto R\psi$ and carries the half of the double cover that acts on the spinors; the **vector action** is the sandwich $v \mapsto RvR^{-1}$ and acts on $V$, not on $I$ in general. The two actions carry the two halves of the angle of the rotation, and they are not the same representation.
+**Proposition (the two actions are different).** Let $R$ be a rotor and $\psi \in I$. The **spin action** is left multiplication $\psi \mapsto R\psi$ and carries the half of the double cover that acts on the spinors; the **vector action** is the sandwich $v \mapsto RvR^{-1}$ and acts on $V$, not on $I$ in general. The two actions carry the two halves of the parameter of the rotation, and they are not the same representation.
 
 **Proof.** Left multiplication by $R$ is the module action; the sandwich is the two-sided operator of *The Sandwich on a Clifford Algebra*, which acts on $V$ by construction and does not preserve a general left ideal, as the explicit counterexample of *Spinors as Minimal Left Ideals with Inner Conjugation* shows.
 

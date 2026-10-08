@@ -567,7 +567,7 @@ $$
 \mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,i\rho\,\boldsymbol{\mathcal A}' + \big[\boldsymbol{\mathcal A}',\mathbf{J}\big],
 $$
 
-where $(\cdot,\cdot)$ is the complex bilinear form $\sum_k F_kG_k$. The scalar part is a **power density**: its real part is the rate at which the electric and gravimagnetic fields do work on their currents, and its imaginary part is the corresponding magnetic-charge quantity.
+where $(\cdot,\cdot)$ is the general plain bilinear form $\sum_k F_kG_k$. The scalar part is a **power density**: its real part is the rate at which the electric and gravimagnetic fields do work on their currents, and its imaginary part is the corresponding magnetic-charge quantity.
 
 The vector part is the **force density**, and its relation to the two halves named below carries a factor of $i$:
 
@@ -670,9 +670,9 @@ At the level of densities the companion programme replaces the per-particle forc
 | $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ | First field invariant |
 | $I_2 = \mathbf{E}\cdot\mathbf{B}$ | Second field invariant |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ | Boost biquaternion (Hermitian, unit norm) |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the quaternion bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the complex sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the complex bilinear form, the scalar part of the complex bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading
 

@@ -9,7 +9,7 @@ $$
 \varphi(\tilde X,\tilde Y)=\mathrm{Sc}(\tilde X\tilde Y^{*})=\sum_\mu X_\mu\overline{Y_\mu}=\tfrac12\,\mathrm{tr}\bigl(\Phi(\tilde X)\Phi(\tilde Y)^{\dagger}\bigr)
 $$
 
-of *The Hermitian Form on the Biquaternion Algebra* is perfect and sesqui-symmetric. The two together give the **adjoint** of the sandwich: the conjugate-linear operator $S_{\tilde P,\tilde Q}^{\dagger}$ characterised by
+of *Biquaternion Norm and Invertibility* is perfect and sesqui-symmetric. The two together give the **adjoint** of the sandwich: the conjugate-linear operator $S_{\tilde P,\tilde Q}^{\dagger}$ characterised by
 
 $$
 \varphi\bigl(S_{\tilde P,\tilde Q}\tilde X,\tilde Y\bigr)=\overline{\varphi\bigl(\tilde X,S_{\tilde P,\tilde Q}^{\dagger}\tilde Y\bigr)} .
@@ -25,19 +25,19 @@ The adjoint exchanges the two parameters and conjugates them; it is an involutio
 
 The article is the seventh of the batch and reads the general article *The Sesquilinear Adjoint Operator*, whose definition for a conjugate-linear operator, twisted rule and computation for the standard model are quoted; the operator whose adjoint is taken is *The Sesquilinear Sandwich on the Biquaternions*, above in this group, and its relation to the ternary product is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*. The ternary forms of the adjoint are *The Adjoint of the Ternary Product* and *The Ternary Product as an Operator*, and the model in which the form becomes the trace is *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model*. The two one-sided operators whose adjoints are computed below are those of *The Left and Right Multiplications of the Biquaternion Sesqualgebra*.
 
-The setting is that of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The sandwich is $S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X^{*}\tilde Q^{*}$ and the ordinary two-sided multiplication is $T_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q$.
+The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The sandwich is $S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X^{*}\tilde Q^{*}$ and the ordinary two-sided multiplication is $T_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q$.
 
 ## The Hermitian Form and the Adjoint
 
 ### The Form
 
-**Recall.** The Hermitian form of *The Hermitian Form on the Biquaternion Algebra* is
+**Recall.** The Hermitian form of *Biquaternion Norm and Invertibility* is
 
 $$
 \varphi(\tilde X,\tilde Y)=\mathrm{Sc}\bigl(\tilde X\tilde Y^{*}\bigr)=\sum_{\mu=0}^{3}X_\mu\overline{Y_\mu} ,
 $$
 
-with the scalar part $\mathrm{Sc}$ of *Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$*; it is $\mathbb{C}$-linear in the first argument, conjugate-linear in the second, sesqui-symmetric, $\varphi(\tilde Y,\tilde X)=\overline{\varphi(\tilde X,\tilde Y)}$, and nondegenerate.
+with the scalar part $\mathrm{Sc}$ of *Introduction to the General Plain Sesqualgebra of Biquaternions*; it is $\mathbb{C}$-linear in the first argument, conjugate-linear in the second, sesqui-symmetric, $\varphi(\tilde Y,\tilde X)=\overline{\varphi(\tilde X,\tilde Y)}$, and nondegenerate.
 
 **Proposition (the form is perfect).** If $\varphi(\tilde X,\tilde Y)=0$ for every $\tilde Y$ then $\tilde X=0$, and the same in the other argument; hence every conjugate-linear operator has a unique adjoint.
 

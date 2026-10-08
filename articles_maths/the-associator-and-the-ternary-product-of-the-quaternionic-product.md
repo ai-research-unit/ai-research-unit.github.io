@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The product of this group is the **complex quaternionic bilinear product**
+The product of this group is the **general quaternionic bilinear product**
 
 $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
 $$
 
-the second of the four products of the biquaternion algebra $\mathbb{B}$, whose rule is *The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product* and whose algebra is *Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$*. The product is $\mathbb{C}$-bilinear and has $e_0$ as a left unit and no right one; the previous two articles read its square, its idempotents and its zero divisors. This article reads its **associativity defect**.
+the second of the four products of the biquaternion algebra $\mathbb{B}$, whose rule is *The Four Biquaternion Complex Products* §*The General Quaternionic Bilinear Product* and whose algebra is *Introduction to the General Quaternionic Algebra of Biquaternions*. The product is $\mathbb{C}$-bilinear and has $e_0$ as a left unit and no right one; the previous two articles read its square, its idempotents and its zero divisors. This article reads its **associativity defect**.
 
 For a bilinear product the defect is the **associator**
 
@@ -150,7 +150,7 @@ The quaternionic product is not associative, and its associator has the closed f
 | $(\mathbf P,\mathbf Q)$ | the complex bilinear dot product $\sum_k P_kQ_k$ |
 | $\mathbf P\times\mathbf Q$ | the complex bilinear cross product |
 | ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$ |
-| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the complex quaternionic bilinear product, the multiplication of this group |
+| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of this group |
 | $[\tilde P,\tilde Q,\tilde R] = (\tilde P\star\tilde Q)\star\tilde R - \tilde P\star(\tilde Q\star\tilde R)$ | the associator of the product |
 | $\tilde P\circ\tilde Q = \tfrac12(\tilde P\star\tilde Q+\tilde Q\star\tilde P)$ | the symmetrised product |
 | $\beta(\tilde P,\tilde Q) = P_0Q_0+(\mathbf P,\mathbf Q)$ | its central coefficient |
