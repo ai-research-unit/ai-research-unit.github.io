@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ideals and Quotients of a Sesqualgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="ideals-and-quotients-of-a-sesqualgebra"><strong>Ideals and Quotients of a Sesqualgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A quotient of an algebra is formed by an ideal, and in a sesqualgebra an ideal has to respect one structure more than an ordinary algebra does: the two scalar rules. The two sides are not interchangeable here, because the product is $R$-linear in the first variable and $\varsigma$-semilinear in the second, so a left ideal and a right ideal are genuinely different sets, and the involution is the map that exchanges them. The involution descends to the quotient only when the ideal is carried to itself by it, and that is the second condition the algebra imposes.</p>
+<p>Throughout, $A$ is a sesqualgebra with a $\varsigma$-semilinear involution $*$, in the sense of <em>Sesqualgebras</em>, with the product of that article: additive in each variable, $R$-linear in the first slot and $\varsigma$-semilinear in the second. The product need not be associative; where an argument uses associativity it is said so.</p>
+<p>What is added here: the three kinds of ideal and the $*$-ideal, the closure of the ideals under intersection and sum, the fact that the involution exchanges the two sides, the conjugate image $I^{*}$ and the smallest $*$-ideal through it, the quotient by a two-sided ideal together with the exact condition for the involution to descend, the first and third isomorphism theorems, and the three worked quotients $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{B}$.</p>
+<h2 id="ideals">Ideals</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A <strong>left ideal</strong> of $A$ is an $R$-submodule $I \subseteq A$ with $AI \subseteq I$; a <strong>right ideal</strong> is an $R$-submodule with $IA \subseteq I$; a <strong>two-sided ideal</strong> is an $R$-submodule with both. The <strong>conjugate image</strong> of a subset $I$ is</p>
+<p>$$
+I^{*} = \{ x^{*} : x \in I \} ,
+$$</p>
+<p>and a <strong>$*$-ideal</strong> is a two-sided ideal with $I^{*} \subseteq I$.</p>
+<p><strong>Remark.</strong> The $R$-submodule condition is part of the definition because the quotient of an $R$-module is an $R$-module only by a submodule, and the scalar rules are read in the quotient through it. In a unital algebra the condition is automatic, as the proposition below shows, so there the three notions are the plain product-closed ones.</p>
+<p><strong>Remark.</strong> The two sides differ, and an ideal that is only one-sided is not a defect of the definition. In $M_n(\mathbb{C})$ with the conjugate transpose, the matrices whose last column vanishes form a left ideal: the last column of $AX$ is the product of $A$ with the last column of $X$, so it vanishes whenever that of $X$ does. They do not form a right ideal, since the last column of $XA$ is $X$ applied to the last column of $A$ and need not vanish. The same set is the conjugate image of the matrices whose last row vanishes, a right ideal, as the next proposition explains in general.</p>
+<h3 id="the-unital-case">The Unital Case</h3>
+<p><strong>Proposition.</strong> Suppose $A$ is unital, with unit $1$. If an additive subgroup $I \subseteq A$ satisfies $AI \subseteq I$, then it is an $R$-submodule and a left ideal; if it satisfies $IA \subseteq I$, then it is an $R$-submodule and a right ideal; and if it satisfies both, it is an $R$-submodule and a two-sided ideal.</p>
+<p><strong>Proof.</strong> For the left case and $x \in I$, the first scalar rule gives $\lambda x = (\lambda 1)x \in AI \subseteq I$, so $I$ is closed under the scalars. For the right case and $x \in I$, the second rule gives $x(\lambda 1) = \varsigma(\lambda)x$, and $x(\lambda 1) \in IA \subseteq I$, so $\varsigma(\lambda)x \in I$ for every $\lambda$; since $\varsigma$ is a bijection with $\varsigma = \varsigma^{-1}$, every $\mu \in R$ is $\varsigma(\lambda)$ for $\lambda = \varsigma(\mu)$, so $\mu x \in I$ and $I$ is closed under the scalars. The two-sided case follows from either. $\square$</p>
+<p><strong>Remark.</strong> The right-hand case is where the sesquilinearity is felt at the level of ideals: it is the second scalar rule, not the first, that a right ideal obeys, and the bijectivity of $\varsigma$ is what converts the closure under the scalars $\varsigma(\lambda)$ into closure under all scalars. Without a unit the scalar closure is a genuine extra condition, which is why it is written into the definition.</p>
+<h3 id="elementary-closure">Elementary Closure</h3>
+<p><strong>Proposition.</strong> The intersection of any family of left ideals is a left ideal, and the same holds for right ideals and for two-sided ideals; the sum $I + J$ of two left ideals is a left ideal, and likewise on the right and for two-sided ideals.</p>
+<p><strong>Proof.</strong> An intersection of $R$-submodules is an $R$-submodule, and $A \cdot \bigl(\bigcap_\alpha I_\alpha\bigr) \subseteq AI_\alpha \subseteq I_\alpha$ for every $\alpha$, hence the inclusion lands in the intersection. A sum of $R$-submodules is an $R$-submodule, and $A(I + J) \subseteq AI + AJ \subseteq I + J$. The right-hand case is the same with the product written on the other side and the two-sided case is the two together. $\square$</p>
+<p><strong>Proposition.</strong> The sum and the intersection of two $*$-ideals are $*$-ideals, and a two-sided ideal $I$ is a $*$-ideal if and only if $I^{*} = I$.</p>
+<p><strong>Proof.</strong> The involution is additive and swaps the sides, so $(I + J)^{*} = I^{*} + J^{*} = I + J$ and $(I \cap J)^{*} = I^{*} \cap J^{*} = I \cap J$ when $I$ and $J$ are $*$-ideals, and the sum and the intersection are two-sided by the previous proposition. For the last statement, $I^{*} \subseteq I$ gives $I = (I^{*})^{*} \subseteq I^{*}$ on applying $*$ again, hence equality, and the converse is immediate. $\square$</p>
+<h3 id="the-involution-swaps-the-two-sides">The Involution Swaps the Two Sides</h3>
+<p><strong>Proposition.</strong> If $I$ is a left ideal then $I^{*}$ is a right ideal, if $I$ is a right ideal then $I^{*}$ is a left ideal, and if $I$ is two-sided then $I^{*}$ is two-sided.</p>
+<p><strong>Proof.</strong> Let $I$ be a left ideal. An element of $I^{*}$ is $x^{*}$ with $x \in I$, and for $a \in A$,</p>
+<p>$$
+x^{*} a = (a^{*} x)^{*} ,
+$$</p>
+<p>because $*$ is anti-multiplicative and $*^{2} = \mathrm{id}$. Now $a^{*}x \in AI \subseteq I$, so $x^{*}a \in I^{*}$ and $I^{*}A \subseteq I^{*}$; thus $I^{*}$ is a right ideal. The other case is the same with the roles of the sides exchanged, and the two-sided case is the two together. $\square$</p>
+<p><strong>Remark.</strong> The involution is the map that identifies the two sides of the algebra, and the proposition is its statement at the level of ideals: the conjugate image of a left ideal is a right ideal. It is also the reason a $*$-ideal is defined as a two-sided ideal that is carried to itself, since for a one-sided ideal there is no self to be carried to.</p>
+<h3 id="the-smallest-math104-invariant-ideal">The Smallest $*$-Invariant Ideal</h3>
+<p><strong>Proposition.</strong> Let $I$ be a two-sided ideal. Then $I + I^{*}$ is a two-sided ideal, it is the smallest $*$-ideal containing $I$, and it equals $I$ exactly when $I$ is a $*$-ideal.</p>
+<p><strong>Proof.</strong> By the proposition above $I^{*}$ is two-sided, and a sum of two-sided ideals is two-sided, so $I + I^{*}$ is two-sided. It is $*$-stable because $(I + I^{*})^{*} = I^{*} + I = I + I^{*}$. It contains $I$. If $J$ is any $*$-ideal containing $I$, then $I^{*} \subseteq J^{*} = J$, so $I + I^{*} \subseteq J$ and $I + I^{*}$ is the smallest. Finally $I + I^{*} = I$ says $I^{*} \subseteq I$, which is the definition of a $*$-ideal. $\square$</p>
+<p><strong>Remark.</strong> The proposition is the repair of a two-sided ideal that the involution does not preserve: the conjugate image detects the failure, $I \neq I^{*}$, and adjoining it by the sum gives the smallest ideal on which the involution is defined. The class of an element $x \in I$ with $x^{*} \notin I$ is the obstruction, since in the quotient the involution would have to send the class $I = 0 + I$ to the class $x^{*} + I$, which is nonzero.</p>
+<h2 id="the-quotient">The Quotient</h2>
+<h3 id="the-product-descends">The Product Descends</h3>
+<p><strong>Theorem (the quotient of a sesqualgebra).</strong> Let $I$ be a two-sided ideal of $A$. Then the rule</p>
+<p>$$
+(x + I)(y + I) = xy + I
+$$</p>
+<p>is well defined, and with it $A/I$ is a sesqualgebra with the same base involution $\varsigma$; the quotient map $\pi : A \to A/I$ is a surjective homomorphism with kernel $I$.</p>
+<p><strong>Proof.</strong> Let $x' = x + i$ and $y' = y + j$ with $i, j \in I$. Then</p>
+<p>$$
+x'y' = xy + xj + iy + ij ,
+$$</p>
+<p>where $xj \in AI \subseteq I$ and $iy \in IA \subseteq I$ because $I$ is two-sided, and $ij \in II \subseteq AI \subseteq I$ because $i \in I \subseteq A$ and $I$ is a left ideal. Hence $x'y' \in xy + I$ and the product is well defined. It is additive in each variable because the product of $A$ is, and it inherits the scalar rules: $((\lambda x) + I)(y + I) = (\lambda x)y + I = \lambda(xy) + I = \lambda((x+I)(y+I))$ and $(x + I)((\lambda y) + I) = x(\lambda y) + I = \varsigma(\lambda)xy + I = \varsigma(\lambda)((x+I)(y+I))$. The quotient map is additive and multiplicative by construction, it is surjective because every class is the image of a representative, and its kernel is the class of $0$, which is $I$. $\square$</p>
+<p><strong>Remark.</strong> No associativity is used. The three inclusions $AI \subseteq I$, $IA \subseteq I$ and $II \subseteq I$ are what the well-definedness requires, and the third follows from the first because $I \subseteq A$. The quotient inherits the base involution $\varsigma$ unchanged, because the base ring is not touched by the quotient; what descends is the algebra, and it descends as a sesqualgebra over the same datum $(R, \varsigma)$.</p>
+<h3 id="the-involution-descends">The Involution Descends</h3>
+<p><strong>Theorem (the involution descends exactly for a $*$-ideal).</strong> Let $I$ be a two-sided ideal. Then the rule</p>
+<p>$$
+(x + I)^{*} = x^{*} + I
+$$</p>
+<p>defines a map on $A/I$ if and only if $I$ is a $*$-ideal, and in that case $A/I$ is an algebra with a $\varsigma$-semilinear involution, and $\pi$ is a $*$-homomorphism.</p>
+<p><strong>Proof.</strong> Suppose first that the rule defines a map. For $x \in I$ the class $x + I$ is $0 + I$, so $x^{*} + I = 0^{*} + I = I$ and $x^{*} \in I$; hence $I^{*} \subseteq I$ and $I$ is a $*$-ideal. Conversely suppose $I^{*} \subseteq I$ and let $x' - x \in I$. Then $x'^{*} - x^{*} = (x' - x)^{*} \in I^{*} \subseteq I$, so $x'^{*}$ and $x^{*}$ have the same class and the rule is well defined. The induced map is additive, it has $*^{2} = \mathrm{id}$ and the anti-multiplicativity $(xy)^{*} = y^{*}x^{*}$ inherited from $A$, and the second scalar rule holds in the quotient because it holds in $A$ and the product descends; hence $A/I$ is an algebra with a $\varsigma$-semilinear involution. Finally $\pi(x^{*}) = x^{*} + I = (x + I)^{*} = \pi(x)^{*}$, so $\pi$ is a $*$-homomorphism. $\square$</p>
+<p><strong>Remark.</strong> Two conditions are needed for the quotient, and they are independent: two-sidedness lets the product descend, and $*$-stability lets the involution descend. A two-sided ideal need not be $*$-stable, and the commutative case already shows it: in $\mathbb{C}[x]$ with the involution of complex conjugation on the coefficients, the ideal $(x - i)$ is two-sided, since the algebra is commutative, while $(x - i)^{*} = (x + i) \neq (x - i)$, so the involution does not descend and the quotient carries none, even though it is the field $\mathbb{C}$.</p>
+<h2 id="homomorphisms">Homomorphisms</h2>
+<h3 id="kernels-and-images">Kernels and Images</h3>
+<p><strong>Definition.</strong> A <strong>homomorphism</strong> of sesqualgebras $f : A \to B$ is an $R$-linear map with $f(xy) = f(x)f(y)$; it is a <strong>$*$-homomorphism</strong> if in addition $f(x^{*}) = f(x)^{*}$.</p>
+<p><strong>Remark.</strong> Only the first scalar rule is imposed, and the second is then a consequence: $f(x(\lambda y)) = f(\varsigma(\lambda) xy) = \varsigma(\lambda) f(x)f(y) = f(x)(\lambda f(y))$. The $\varsigma$-semilinearity of the product in the second slot is carried by the $R$-linearity of $f$ together with the sesquilinearity of the two products, so the definition does not need to name it.</p>
+<p><strong>Proposition.</strong> The kernel of a homomorphism is a two-sided ideal, and the kernel of a $*$-homomorphism is a $*$-ideal. The image is an $R$-submodule closed under the product.</p>
+<p><strong>Proof.</strong> The kernel is an $R$-submodule because $f$ is $R$-linear. For $x \in \ker f$ and $a \in A$ one has $f(ax) = f(a)f(x) = 0$ and $f(xa) = f(x)f(a) = 0$, so $ax$ and $xa$ lie in $\ker f$, which is therefore two-sided. If $f$ is a $*$-homomorphism and $x \in \ker f$ then $f(x^{*}) = f(x)^{*} = 0$, so $x^{*} \in \ker f$ and the kernel is a $*$-ideal. The image of an $R$-linear map is an $R$-submodule, and $f(x)f(y) = f(xy)$ is the image of $xy$, so the image is closed under the product. $\square$</p>
+<h3 id="the-first-isomorphism-theorem">The First Isomorphism Theorem</h3>
+<p><strong>Theorem.</strong> Let $f : A \to B$ be a homomorphism with kernel $I$. Then $I$ is a two-sided ideal, and the map $\bar f : A/I \to B$ given by $\bar f(x + I) = f(x)$ is well defined, injective and multiplicative, and it is an isomorphism of $A/I$ onto $f(A)$. If $f$ is a $*$-homomorphism then $I$ is a $*$-ideal and $\bar f$ is a $*$-isomorphism.</p>
+<p><strong>Proof.</strong> The kernel is a two-sided ideal by the proposition above. If $x' - x \in I$ then $f(x') - f(x) = f(x' - x) = 0$, so $\bar f$ is well defined, and it is additive and multiplicative because $f$ is. Its kernel is the set of the classes $x + I$ with $f(x) = 0$, which is the single class $I$, so $\bar f$ is injective; its image is $f(A)$ by construction, so it is an isomorphism onto it. If $f$ is a $*$-homomorphism then $I$ is a $*$-ideal, the involution descends to $A/I$, and $\bar f((x + I)^{*}) = \bar f(x^{*} + I) = f(x^{*}) = f(x)^{*} = \bar f(x + I)^{*}$, so $\bar f$ is a $*$-isomorphism. $\square$</p>
+<p><strong>Remark.</strong> The first isomorphism theorem has the same shape as in the ordinary case, and the only change is the second clause: the isomorphism respects the involution exactly when the map does, which is the same condition under which the involution descends to the quotient. The kernel and the quotient carry the same datum $(R, \varsigma)$ as the algebra, so no change of base occurs anywhere in the statement.</p>
+<p><strong>Theorem (the third isomorphism theorem).</strong> Let $I \subseteq J$ be two-sided ideals of $A$. Then $J/I$ is a two-sided ideal of $A/I$, and</p>
+<p>$$
+\frac{A/I}{J/I} \; \cong \; A/J
+$$</p>
+<p>as sesqualgebras. If in addition $I$ and $J$ are $*$-ideals, then the involution descends to each of them and the isomorphism is a $*$-isomorphism.</p>
+<p><strong>Proof.</strong> The map $A \to A/J$ is a homomorphism with kernel $J$, and it factors through $A/I$ because $I \subseteq J$: if $x' - x \in I \subseteq J$ then $x'$ and $x$ have the same class modulo $J$, so $x + I \mapsto x + J$ is well defined. It is $R$-linear and multiplicative as a composite of homomorphisms, it is onto because both quotient maps are, and its kernel is the set of the classes $x + I$ with $x \in J$, which is $J/I$; this is therefore a two-sided ideal of $A/I$, and the first isomorphism theorem applied to the map gives the isomorphism. When $I$ and $J$ are $*$-ideals, an $x + I \in J/I$ has $x \in J$ and $(x+I)^{*} = x^{*} + I$ with $x^{*} \in J$, so $J/I$ is $*$-stable, and the map is induced by the quotient maps, which are $*$-homomorphisms, hence is a $*$-isomorphism. $\square$</p>
+<h2 id="three-worked-quotients">Three Worked Quotients</h2>
+<h3 id="the-complex-numbers">The Complex Numbers</h3>
+<p><strong>Proposition.</strong> Let $A = \mathbb{R}[x]$ with $\varsigma = \mathrm{id}$ and the involution fixing $\mathbb{R}$ and sending $x$ to $-x$. Then the ideal $I = (x^{2} + 1)$ is a $*$-ideal and the quotient $A/I$ is $\mathbb{C}$ with the involution of complex conjugation.</p>
+<p><strong>Proof.</strong> The algebra is commutative, so $I$ is two-sided. The generator is $*$-fixed, $(x^{2}+1)^{*} = (-x)^{2} + 1 = x^{2}+1$, so $I^{*} = I$ and $I$ is a $*$-ideal, and the involution descends. The quotient is $\mathbb{R}[x]/(x^{2}+1) = \mathbb{C}$, the class of $x$ being a root of $t^{2}+1$, and the descended involution sends that class to the class of $-x$, which is its negative, so it is the map $i \mapsto -i$, that is complex conjugation. $\square$</p>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p><strong>Proposition.</strong> Let $A$ be the free associative $\mathbb{R}$-algebra on $x, y$ with the involution $x^{*} = -x$, $y^{*} = -y$. Then the ideal $J$ generated by $x^{2}+1$, $y^{2}+1$ and $xy + yx$ is a $*$-ideal and the quotient is $\mathbb{H}$ with the involution that negates $i, j, k$.</p>
+<p><strong>Proof.</strong> Each generator is $*$-fixed: $x^{2}+1$ and $y^{2}+1$ because $(-x)^{2} = x^{2}$ and likewise for $y$, and $xy + yx$ because $(xy + yx)^{*} = y^{*}x^{*} + x^{*}y^{*} = yx + xy$. An ideal generated by $*$-fixed elements is a $*$-ideal, since $(\sum a_i g_i b_i)^{*} = \sum b_i^{*} g_i a_i^{*}$ is again in the ideal. The quotient is the algebra presented by $x^{2} = y^{2} = -1$ and $xy = -yx$, which is $\mathbb{H}$ with $x = i$, $y = j$ and $xy = k$. The descended involution sends $x$ to $-x$ and $y$ to $-y$, hence $k = xy$ to $(xy)^{*} = y^{*}x^{*} = (-y)(-x) = yx = -xy = -k$, so it is the involution that negates the three imaginary units. $\square$</p>
+<h3 id="the-biquaternions">The Biquaternions</h3>
+<p><strong>Proposition.</strong> Let $A$ be the free associative $\mathbb{C}$-algebra on $x, y$ with $\varsigma$ the conjugation and the involution $x^{*} = -x$, $y^{*} = -y$ together with $\varsigma$ on the coefficients. Then the ideal generated by the same three elements is a $*$-ideal and the quotient is the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the involution acting by $\varsigma$ on the coefficients of $\mathbb{C}$ and by the negation of $i, j, k$ on the quaternion factor.</p>
+<p><strong>Proof.</strong> The three generators are still $*$-fixed, because the coefficients in $x^{2}+1$ and $y^{2}+1$ are the fixed scalars $1$, and $xy + yx$ is again fixed as above; an ideal generated by fixed elements is a $*$-ideal. The quotient is the complexification of the algebra of the previous proposition, that is $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, and the descended involution is the tensor product of the conjugation of $\mathbb{C}$ with the negation of the three units, which is what the acting of $*$ gives on the generators and hence on all of $\mathbb{B}$. $\square$</p>
+<p><strong>Remark.</strong> The three examples are the same construction over an increasing base: the quotient of a free or polynomial algebra by the ideal of the defining relations, which is $*$-stable because the relations are, and the descended involution is the standard one of the algebra obtained. The obstruction of the previous section does not arise here. The complex and the biquaternion algebras are among the standard examples of the category in <em>Sesqualgebras</em>, where they appear with these involutions, the quaternions being the real algebra whose complexification is $\mathbb{B}$.</p>
+<h2 id="summary">Summary</h2>
+<p>A left ideal of a sesqualgebra is an $R$-submodule $I$ with $AI \subseteq I$, a right ideal one with $IA \subseteq I$, and a two-sided ideal one with both; a $*$-ideal is a two-sided ideal with $I^{*} \subseteq I$, where $I^{*}$ is the conjugate image. The ideals are closed under intersection and sum, the involution exchanges the left and the right ideals by $x^{*}a = (a^{*}x)^{*}$, and the smallest $*$-ideal containing a two-sided ideal $I$ is $I + I^{*}$, which equals $I$ exactly when $I$ is a $*$-ideal. The quotient $A/I$ by a two-sided ideal is a sesqualgebra over the same datum $(R, \varsigma)$, with the product $(x+I)(y+I) = xy + I$, and the involution descends to it exactly when $I$ is a $*$-ideal, as in $\mathbb{C}[x]/(x - i)$ it does not. The kernel of a homomorphism is a two-sided ideal, the kernel of a $*$-homomorphism is a $*$-ideal, and $A/\ker f$ is isomorphic to the image of $f$, as algebras with involution when $f$ is a $*$-homomorphism; for two-sided ideals $I \subseteq J$ one has $(A/I)/(J/I) \cong A/J$, a $*$-isomorphism when both ideals are $*$-ideals. The quotients of the free algebras by the defining relations of the classical algebras give $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{B}$ with their standard involutions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$AI \subseteq I$</td>
+<td>the condition for a left ideal, $A$ multiplying on the left</td>
+</tr>
+<tr>
+<td>$IA \subseteq I$</td>
+<td>the condition for a right ideal, $A$ multiplying on the right</td>
+</tr>
+<tr>
+<td>$I^{*} = \{x^{*} : x \in I\}$</td>
+<td>the conjugate image, a right ideal when $I$ is a left ideal</td>
+</tr>
+<tr>
+<td>$I^{*} \subseteq I$</td>
+<td>the condition for a $*$-ideal, equivalently $I^{*} = I$</td>
+</tr>
+<tr>
+<td>$I + I^{*}$</td>
+<td>the smallest $*$-ideal containing the two-sided ideal $I$</td>
+</tr>
+<tr>
+<td>$(x+I)(y+I) = xy + I$</td>
+<td>the product on the quotient by a two-sided ideal</td>
+</tr>
+<tr>
+<td>$(x+I)^{*} = x^{*} + I$</td>
+<td>the descended involution, defined exactly for a $*$-ideal</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the ideals, the involutions and the quotients of a ring with involution.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the involutive ideals and the quotients of an algebra with involution.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Graduate Texts in Mathematics 88, Springer, 1982), for the general theory of the ideals and the quotients of an associative algebra.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Graduate Texts in Mathematics 131, Springer, 2001), for the isomorphism theorems and the ideals of a noncommutative algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

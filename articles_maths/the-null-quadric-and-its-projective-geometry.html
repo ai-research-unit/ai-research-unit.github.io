@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Null Quadric and Its Projective Geometry — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-null-quadric-and-its-projective-geometry"><strong>The Null Quadric and Its Projective Geometry</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion bilinear form of the biquaternion algebra, $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_{\mu=0}^{3}P_\mu Q_\mu$, is non-degenerate, and a non-degenerate form in four variables has a projective geometry: its null set is a quadric. This article is that geometry. The quadric, the two rulings of its null planes, its polarity and its automorphism group are the projective reading of the form, and they sit beside the affine reading of the same form on the algebra and on the six distinguished real subspaces.</p>
+<p>The article is the companion of <em>The Isotropic Structure of the Quaternion Bilinear Form</em>, which reads the same form affinely — the cone of real dimension $6$, its isotropic lines, its restrictions to the six subspaces — and of <em>Biquaternion Forms and Algebraic Norms</em>, which owns the form, its diagonal and the algebraic norm it polarises. The cone whose projectivisation is the quadric is studied as a topological space, with no form entering, in <em>The Topology of the Zero-Divisor Cone</em>; the real forms of the form and their signatures are <em>Biquaternion Norm and Invertibility</em>; the Lorentzian and conformal reading of the real slices is <em>Biquaternion Lorentzian and Conformal Geometry</em>; the algebra and its fixed-point subspaces are <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>; and the classical groups that act are <em>Lie Groups</em>.</p>
+<p><strong>Scope.</strong> The article owns the Segre embedding of the two rulings into $\mathbb{P}^3$, the projective quadric $Q^2$ with its real points, the Klein–Plücker geometry of the lines of $\mathbb{P}^3$ in which $Q^2$ sits, the polarity and the tangency it induces, and the automorphism group of the complex quadric. No physics is invoked and no new result about the algebra is claimed.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, and $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The bilinear form is $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$; the projectivised null cone is $\mathbb{P}(\mathcal{N})\subset\mathbb{P}^3$.</p>
+<h2 id="the-segre-embedding">The Segre Embedding</h2>
+<p>Choose on $\mathbb{B}$ the linear coordinates</p>
+<p>$$
+Z_0=Q_0-iQ_3,\qquad Z_1=-iQ_1-Q_2,\qquad Z_2=-iQ_1+Q_2,\qquad Z_3=Q_0+iQ_3,
+$$</p>
+<p>an invertible $\mathbb{C}$-linear change of the coordinates $Q_0,\dots,Q_3$. In them the form is a split form,</p>
+<p>$$
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu=0}^{3}Q_\mu^2=Z_0Z_3-Z_1Z_2,
+$$</p>
+<p>since $Z_0Z_3=(Q_0-iQ_3)(Q_0+iQ_3)=Q_0^2+Q_3^2$ and $Z_1Z_2=(-iQ_1-Q_2)(-iQ_1+Q_2)=-Q_1^2-Q_2^2$. The null cone is therefore the affine hypersurface $Z_0Z_3=Z_1Z_2$, and each of its nonzero points is a pair of one-dimensional subspaces of $\mathbb{C}^2$. Indeed, for nonzero $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$ the point</p>
+<p>$$
+(Z_0,Z_1,Z_2,Z_3)=(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta)
+$$</p>
+<p>lies on the null cone, since $\alpha\gamma\cdot\beta\delta=\alpha\delta\cdot\beta\gamma$, and conversely every null point is of this form: if $Z_0\neq0$ the pair $u=(1,Z_2/Z_0)$, $v=(Z_0,Z_1)$ reproduces it, and the other cases are the same argument applied to a coordinate that is nonzero. The pair is determined only up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$.</p>
+<p>Projectivising gives the <strong>Segre embedding</strong></p>
+<p>$$
+s:\mathbb{P}^1\times\mathbb{P}^1\longrightarrow\mathbb{P}^3,\qquad ([u],[v])\mapsto[\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta],
+$$</p>
+<p>whose image is exactly the projective null quadric</p>
+<p>$$
+\mathbb{P}(\mathcal{N})=\{[\tilde{Q}]\in\mathbb{P}^3:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0\}.
+$$</p>
+<p>The affine null cone is the cone over the Segre variety $\mathbb{P}^1\times\mathbb{P}^1$, and the zero-divisor set is that cone with its apex removed (<em>The Topology of the Zero-Divisor Cone</em>).</p>
+<h2 id="the-two-rulings-of-null-planes">The Two Rulings of Null Planes</h2>
+<p>In the coordinates above the polar form of $N$ is</p>
+<p>$$
+\langle\tilde R,\tilde S\rangle_{\natural}=\tfrac12\bigl(Z_0Z'_3+Z_3Z'_0-Z_1Z'_2-Z_2Z'_1\bigr),
+$$</p>
+<p>the polarisation of $Z_0Z_3-Z_1Z_2$, which returns the norm on the diagonal, $\langle\tilde R,\tilde R\rangle_{\natural}=N(\tilde R)$. For each $[u]=[\alpha:\beta]\in\mathbb{P}^1$ the two-dimensional subspace</p>
+<p>$$
+W_{[u]}=\operatorname{span}\{(\alpha,0,\beta,0),\,(0,\alpha,0,\beta)\}=\{(\alpha\sigma,\alpha\tau,\beta\sigma,\beta\tau):\sigma,\tau\in\mathbb{C}\}
+$$</p>
+<p>is totally isotropic: for $\tilde R$ built from $\sigma,\tau$ and $\tilde S$ from $\sigma',\tau'$ the form above gives $\langle\tilde R,\tilde S\rangle_{\natural}=\tfrac12\alpha\beta(\sigma\tau'+\tau\sigma'-\tau\sigma'-\sigma\tau')=0$. Since $\dim W_{[u]}=2$ is the maximal isotropic dimension for a non-degenerate form in dimension $4$, $W_{[u]}$ is a <strong>null plane</strong>, and the same holds for</p>
+<p>$$
+W^{[v]}=\operatorname{span}\{(\gamma,\delta,0,0),\,(0,0,\gamma,\delta)\},\qquad [v]=[\gamma:\delta].
+$$</p>
+<p>Their projectivisations $\ell_{[u]}=\mathbb{P}(W_{[u]})$ and $m_{[v]}=\mathbb{P}(W^{[v]})$ are the <strong>two rulings</strong>: each family is a $\mathbb{P}^1$ of lines; every quadric point lies on exactly one line of each family; lines of the same family are disjoint, while lines of different families meet in exactly one point, the point $[(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta)]$ that the pair $([u],[v])$ determines.</p>
+<h2 id="the-projective-null-quadric-math54">The Projective Null Quadric $Q^2$</h2>
+<p>The projectivised null cone</p>
+<p>$$
+Q^2=\{[\tilde{Q}]\in\mathbb{P}^3:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0\}
+$$</p>
+<p>is a smooth irreducible quadric surface, isomorphic to $\mathbb{P}^1\times\mathbb{P}^1$; it is the classical <strong>Segre quadric</strong>. Non-degeneracy of the form gives smoothness, and over $\mathbb{C}$ all smooth quadric surfaces in $\mathbb{P}^3$ are projectively equivalent.</p>
+<p>Its real points depend on the real form of the bilinear form (<em>Biquaternion Norm and Invertibility</em>, §<em>The Real Forms and Their Signatures</em>): empty for the definite form on $\mathbb{H}_{\mathbb{B}}$; the sphere $S^2$ for the Lorentzian form on $\mathbb{M}_+$ (or $\mathbb{M}_-$); the torus $S^1\times S^1$ for the split form of signature $(2,2)$. Only in the split case does the real quadric contain real lines.</p>
+<h2 id="lines-in-math65-the-klein-quadric-and-the-plucker-embedding">Lines in $\mathbb{P}^3$, the Klein Quadric and the Plücker Embedding</h2>
+<p>A line in $\mathbb{P}^3$ is $\mathbb{P}(U)$ for a two-dimensional subspace $U\subset\mathbb{C}^4$. With a basis $\tilde Q,\tilde P$ of $U$, the <strong>Plücker coordinates</strong> are the six minors</p>
+<p>$$
+p_{ij}=Q_iP_j-Q_jP_i,\qquad 0\le i < j\le3,
+$$</p>
+<p>the coordinates of the decomposable bivector $\tilde Q\wedge\tilde P\in\Lambda^2\mathbb{C}^4$, defined up to an overall scalar. This gives the <strong>Plücker embedding</strong></p>
+<p>$$
+\mathrm{Gr}(2,4)\hookrightarrow\mathbb{P}(\Lambda^2\mathbb{C}^4)=\mathbb{P}^5,
+$$</p>
+<p>whose image is the <strong>Klein quadric</strong>, the quadric hypersurface of dimension $4$ cut out by the Plücker relation</p>
+<p>$$
+p_{01}p_{23}-p_{02}p_{13}+p_{03}p_{12}=0 .
+$$</p>
+<p>Over $\mathbb{R}$ the Plücker form has signature $(3,3)$. This Klein quadric in $\mathbb{P}^5$ is distinct from the null quadric $Q^2$ in $\mathbb{P}^3$: it is the variety of lines of the projective space in which $Q^2$ sits.</p>
+<p>The rulings of $Q^2$ appear in this picture as follows. A line of $Q^2$ is a maximal isotropic two-plane, and its Plücker point lies on the Klein quadric. The lines on $Q^2$ form two components, the two rulings, each a $\mathbb{P}^1$; their Plücker images are two conics on the Klein quadric. (The maximal isotropic subspaces of the Klein quadric itself are two families of projective planes $\mathbb{P}^2$: the stars of lines through a fixed point and the plane fields of lines in a fixed plane.)</p>
+<h2 id="tangency-and-polarity">Tangency and Polarity</h2>
+<p>The form defines a <strong>polarity</strong>, the correlation</p>
+<p>$$
+[\tilde{P}]\longmapsto[\tilde{P}]^{\perp}=\{[\tilde{Q}]:\langle\tilde{P},\tilde{Q}\rangle_{\natural}=0\},
+$$</p>
+<p>well defined by bilinearity and bijective by non-degeneracy. The quadric is the locus of self-polar points, $[\tilde{P}]\in Q^2\iff \langle\tilde{P},\tilde{P}\rangle_{\natural}=0$. For $[\tilde{P}]\in Q^2$, since the differential of $N$ at $\tilde{P}$ is $2\langle\tilde{P},\cdot\,\rangle_{\natural}$, the polar hyperplane is the <strong>tangent hyperplane</strong>, and its intersection with the quadric is the pair of ruling lines through $[\tilde{P}]$,</p>
+<p>$$
+Q^2\cap[\tilde{P}]^{\perp}=\ell_{[u]}\cup m_{[v]},
+$$</p>
+<p>one line from each family. For two distinct null points $[\tilde{P}],[\tilde{Q}]$, the form on the line $\tilde{P}+t\tilde{Q}$ is $2t\,\langle\tilde{P},\tilde{Q}\rangle_{\natural}$, so</p>
+<p>$$
+[\tilde{P}][\tilde{Q}]\subset Q^2\iff \langle\tilde{P},\tilde{Q}\rangle_{\natural}=0,
+$$</p>
+<p>in which case the two points lie on a common ruling line. A line through $[\tilde{P}]\in Q^2$ is therefore tangent exactly when its direction lies in the tangent hyperplane; the two ruling lines are tangent, and every other tangent line meets the quadric only at $[\tilde{P}]$.</p>
+<h2 id="automorphisms-of-the-quadric">Automorphisms of the Quadric</h2>
+<p>The projective automorphisms of $Q^2$ are induced by the complex orthogonal group of the form:</p>
+<p>$$
+\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})=O_4(\mathbb{C})/\{\pm I\},
+$$</p>
+<p>acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, with the $\mathbb{Z}/2$ exchanging the rulings. Its identity component $PSO_4(\mathbb{C})$ preserves each ruling; the outer component swaps them. The Lorentz group is not this group: $SO^+(1,3)$ is the conformal group of the projective null cone $S^2$ of the Lorentzian real form, not the automorphism group of the complex quadric.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The projective null cone $Q^2=\mathbb{P}(\mathcal{N})$ is the smooth irreducible quadric surface $\mathbb{P}^1\times\mathbb{P}^1$, the Segre quadric; the affine null cone is the cone over it and the zero-divisor set is that cone minus its apex.</li>
+<li>The <strong>Segre embedding</strong> $s:\mathbb{P}^1\times\mathbb{P}^1\to\mathbb{P}^3$, $([u],[v])\mapsto[\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta]$, has the quadric as its image; in the coordinates $Z_0,\dots,Z_3$ the form is $Z_0Z_3-Z_1Z_2$ and the quadric is the locus of self-polar points.</li>
+<li>The two <strong>rulings</strong> are the two families of maximal isotropic null planes, each a $\mathbb{P}^1$; every quadric point lies on exactly one line of each family.</li>
+<li>The quadric sits in the <strong>Plücker–Klein geometry</strong> of the lines of $\mathbb{P}^3$; its rulings are two conics on the Klein quadric in $\mathbb{P}^5$.</li>
+<li>The <strong>polarity</strong> of the form gives the tangency: at a point of the quadric the polar hyperplane is the tangent hyperplane and its intersection with the quadric is the pair of ruling lines through the point.</li>
+<li>$\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})$, its identity component preserving each ruling and the outer component swapping them; the real points of the quadric are empty, $S^2$ or $S^1\times S^1$ according to the real form of the bilinear form.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde P,\tilde Q\rangle_{\natural} = \sum_\mu P_\mu Q_\mu$</td>
+<td>Bilinear form; polar form of the algebraic norm</td>
+</tr>
+<tr>
+<td>$Z_0,\dots,Z_3$</td>
+<td>Linear coordinates in which the form is $Z_0Z_3 - Z_1Z_2$</td>
+</tr>
+<tr>
+<td>$\mathbb{P}(\mathcal{N}) = Q^2 \cong \mathbb{P}^1 \times \mathbb{P}^1$</td>
+<td>Projectivised null cone, the Segre quadric</td>
+</tr>
+<tr>
+<td>$s : \mathbb{P}^1 \times \mathbb{P}^1 \to \mathbb{P}^3$</td>
+<td>Segre embedding, $([u],[v]) \mapsto [\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta]$</td>
+</tr>
+<tr>
+<td>$[u] = [\alpha:\beta]$, $[v] = [\gamma:\delta]$</td>
+<td>The two factors of a null point, up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$</td>
+</tr>
+<tr>
+<td>$W_{[u]}$, $W^{[v]}$</td>
+<td>The two families of maximal isotropic null planes</td>
+</tr>
+<tr>
+<td>$\ell_{[u]}, m_{[v]}$</td>
+<td>The two rulings of $Q^2$</td>
+</tr>
+<tr>
+<td>$p_{ij} = Q_i P_j - Q_j P_i$</td>
+<td>Plücker coordinates; the Klein quadric in $\mathbb{P}^5$ is their Plücker locus</td>
+</tr>
+<tr>
+<td>$[\tilde{P}]^{\perp}$</td>
+<td>Polar hyperplane of $[\tilde{P}]$; the tangent hyperplane when $[\tilde{P}] \in Q^2$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(Q^2) \cong PO_4(\mathbb{C})$</td>
+<td>Projective automorphisms of the quadric</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions", <em>Proceedings of the London Mathematical Society</em> <strong>4</strong> (1873) 381–395.</li>
+<li>Joe Harris, <em>Algebraic Geometry: A First Course</em> (Springer, 1992).</li>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978).</li>
+<li>Igor R. Shafarevich, <em>Basic Algebraic Geometry 1: Varieties in Projective Space</em> (Springer, 3rd ed., 2013).</li>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991).</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995).</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

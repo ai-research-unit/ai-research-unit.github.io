@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternions-as-a-general-plain-sesqualgebra-gps-over-math0"><strong>Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four products, defined side by side in <em>The Four Biquaternion Complex Products</em>. Read as a multiplication, one of the four makes that space an associative unital algebra, the complex bilinear product $\tilde P\tilde Q$, and that reading is <em>Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$</em>. A second reading is available, and it is the subject of this article: the <strong>complex sesquilinear product</strong> $\tilde P\tilde Q^{*}$ is additive in each variable, $\mathbb{C}$-linear in the first and $\mathbb{C}$-<strong>conjugate</strong>-linear in the second, and those are the two scalar rules of a <strong>sesqualgebra</strong> over $\mathbb{C}$ with its conjugation as the base involution (<em>Sesqualgebras</em>). The fourth product satisfies the same two rules, its first slot being read through the $\mathbb{C}$-linear ${}^{\natural}$, so the rules alone do not select this product; what does is proved in §<em>Which of the Four Is a Sesquilinear Multiplication</em>. This article takes $\tilde P\tilde Q^{*}$ as the multiplication and builds the sesqualgebra it defines.</p>
+<p>The consequences are of a different kind from the bilinear case. Associativity is not available: a sesqualgebra of full type with a nontrivial involution is <strong>never</strong> associative, by the collapse theorem of <em>Sesqualgebras</em>, and $\mathbb{B}$ is of full type. What survives is the structure that does not need associativity: a unit on one side alone, an involution that exchanges the two slots, the ternary product $\tilde P\tilde Q^{*}\tilde R$ with the algebraic $J^{*}$-algebra it defines, the two halves of the algebra cut out by the involution, the squares that generate the positive cone, and the simplicity of the product as an ideal-theoretic object.</p>
+<p>Three boundaries are stated at once. The product is not defined here, and neither are the four products as a family: the coordinate rule and the four names are <em>The Four Biquaternion Complex Products</em>, and the comparison of their properties is <em>Comparison Between the Four Biquaternion Products</em>. The same space read as an algebra and the question of its base rings are <em>Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$</em> and, with the real scalars, <em>Biquaternions as an Algebra over $\mathbb{R}$</em>, and neither is repeated here. And the elements, the basis, the conjugations and the six distinguished subspaces are <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>, <em>Introduction to the Six Subspaces</em> and <em>Decompositions Along the Six Subspaces</em>; the subspaces are named here only as the two halves the involution cuts out.</p>
+<p>One word on the two scalar rules, because they are weaker than they look. They admit a product as soon as it is additive in each variable and sesquilinear for <strong>some</strong> involution of $\mathbb{C}$, so they admit all four products of $\mathbb{B}$: the two bilinear ones for the trivial involution and the two carrying the star for the conjugation. The corresponding row of <em>Comparison Between the Four Biquaternion Products</em> is therefore read with the definition and with nothing added, and it reads no, no, yes, yes: <strong>both</strong> products carrying the star are multiplications of a sesqualgebra over $\mathbb{C}$ with the conjugation, and the two bilinear ones are the trivial-involution collapse of the same definition. The section <em>Which of the Four Is a Sesquilinear Multiplication</em> draws that conclusion and then decides the sharper question, which of the four is the <strong>derived operation</strong> $\tilde X\star\tilde Y=\tilde X\tilde Y^{*}$ of the algebra $\mathbb{B}$ with its conjugate-linear involution; the answer is the complex sesquilinear product alone, and that is the product this article is about.</p>
+<p>The general theory is the sesquilinear block: the definition and the standard example are <em>Sesqualgebras</em>, the calculus of the product is <em>The Sesquilinear Product</em>, the semilinear maps and the conjugate module are <em>Conjugate-Linear Maps and the Conjugate Dual</em>, the associator and the ternary product are <em>The Sesquilinear Associator and the Ternary Product</em>, the abstract ternary system is <em>Algebraic J*-Algebras</em>, the two halves of an involutive algebra are <em>Hermitian and Skew-Hermitian Elements</em>, the squares are <em>Hermitian Squares and the Algebraic Positive Cone</em>, and the ideals are <em>Ideals and Quotients of a Sesqualgebra</em>. On the biquaternion side, the two-sided ideals of the algebra and the simplicity of the ring are <em>Biquaternion Ideals and Peirce Decomposition</em>, and the idempotents are <em>Biquaternion Idempotents and Projections</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2 = -1$; a general element is $\tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Throughout, a biquaternion is written $\tilde Q = Q_0e_0 + \mathbf Q$ with $\mathbf Q = \sum_{k=1}^{3} Q_ke_k$, and $\overline{\mathbf Q}$ is the coefficientwise conjugate of the vector part. The base involution is the complex conjugation, written $\varsigma(z) = \bar z$, and the involution of the algebra is the Hermitian conjugation ${}^{*} = \bar{\cdot} \circ {}^{\natural}$, with the coordinates $Q^{*}_0 = \overline{Q_0}$ and $Q^{*}_k = -\overline{Q_k}$ for $k = 1,2,3$, that is $Q^{*}_\nu = \varepsilon_\nu \overline{Q_\nu}$ with $\varepsilon = (1,-1,-1,-1)$. The four products and their notation are those of <em>The Four Biquaternion Complex Products</em>.</p>
+<h2 id="the-product-read-as-a-multiplication">The Product Read as a Multiplication</h2>
+<h3 id="the-rule">The Rule</h3>
+<p><strong>Definition.</strong> The <strong>multiplication</strong> of the sesqualgebra is the rule</p>
+<p>$$
+\star \; : \; \mathbb{B} \times \mathbb{B} \longrightarrow \mathbb{B} , \qquad
+(\tilde P,\tilde Q) \longmapsto \tilde P \star \tilde Q = \tilde P\tilde Q^{*} ,
+$$</p>
+<p>the complex sesquilinear product of <em>The Four Biquaternion Complex Products</em>. On the coordinates it reads</p>
+<p>$$
+\tilde P \star \tilde Q = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3} P_\mu Q^{*}_\nu \, e_\mu e_\nu
+= \sum_{\mu=0}^{3}\sum_{\nu=0}^{3} \varepsilon_\nu P_\mu \overline{Q_\nu} \, e_\mu e_\nu ,
+$$</p>
+<p>each product $e_\mu e_\nu$ being a basis element up to sign, so that the double sum is a complex combination of $e_0,\dots,e_3$ and the rule is well defined. The rule is the product $\tilde P\tilde Q^{*}$ and nothing else: it is quoted here, not defined, and the equality of the two displays is the definition of $\tilde Q^{*}$ in coordinates.</p>
+<h3 id="the-scalarvector-form">The Scalar–Vector Form</h3>
+<p>Collecting the scalar part and the vector part of the two elements, the vector part of the second read through the coefficientwise conjugate, the same product reads</p>
+<p>$$
+\tilde P\star\tilde Q=\bigl(P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})\bigr)-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q} ,
+$$</p>
+<p>where $(\mathbf P,\overline{\mathbf Q})$ and $\mathbf P\times\overline{\mathbf Q}$ are the complex bilinear dot and cross products of the vector parts and the display is the one of <em>The Four Biquaternion Complex Products</em>. Its scalar part is $\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_{\mu=0}^{3}P_\mu\overline{Q_\mu}$, conjugate-linear in the coordinates of the second element, and its vector part is the one displayed.</p>
+<h3 id="the-two-scalar-rules">The Two Scalar Rules</h3>
+<p><strong>Proposition.</strong> The multiplication is <strong>additive in each variable</strong>; it is $\mathbb{C}$-<strong>linear in the first</strong> variable and $\varsigma$-<strong>semilinear in the second</strong>, with $\varsigma(z) = \bar z$:</p>
+<p>$$
+(\lambda\tilde P) \star \tilde Q = \lambda\,(\tilde P \star \tilde Q), \qquad
+\tilde P \star (\lambda\tilde Q) = \bar\lambda\,(\tilde P \star \tilde Q), \qquad \lambda \in \mathbb{C} .
+$$</p>
+<p><strong>Proof.</strong> The coordinates of the developed form are sums of terms $P_\mu\overline{Q_\nu}$ with fixed coefficients, so they are additive and $\mathbb{C}$-linear in the four coordinates of $\tilde P$ alone and additive and $\mathbb{C}$-conjugate-linear in the four coordinates of $\tilde Q$ alone. The two displays are that statement read coordinate by coordinate; the second is the reason the rule is not bilinear. $\square$</p>
+<p>These are the two axioms of a sesquilinear product over $(\mathbb{C},\varsigma)$ and nothing else: no associativity, no commutativity and no two-sided unit is assumed (<em>The Sesquilinear Product</em>). The product is thus a second multiplication on the same space, of the sesquilinear kind, and the rest of the article asks what it forces.</p>
+<h3 id="the-multiplication-table">The Multiplication Table</h3>
+<p><strong>Proposition.</strong> On the four basis elements the multiplication is</p>
+<p>$$
+e_\mu \star e_\nu = \varepsilon_\nu\, e_\mu e_\nu , \qquad \varepsilon = (1,-1,-1,-1) ,
+$$</p>
+<p>so the sixteen products are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\star$</th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$e_0$</td>
+<td>$-e_1$</td>
+<td>$-e_2$</td>
+<td>$-e_3$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$e_1$</td>
+<td>$e_0$</td>
+<td>$-e_3$</td>
+<td>$e_2$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$e_2$</td>
+<td>$e_3$</td>
+<td>$e_0$</td>
+<td>$-e_1$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$e_3$</td>
+<td>$-e_2$</td>
+<td>$e_1$</td>
+<td>$e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The involution acts on the basis by $e^{*}_\nu = \varepsilon_\nu e_\nu$, since ${}^{*}$ conjugates the coefficient and negates the vector units while fixing $e_0$. Multiplying by $e_\mu$ on the left with the complex bilinear product gives the displayed products. $\square$</p>
+<p>The table is not the quaternion table. Its diagonal is $e_0$ throughout, the three imaginary units anticommuting on the off-diagonal block with the signs of the quaternion product, $e_j \star e_k = -e_k \star e_j$ for $j \neq k$ in $\{1,2,3\}$; and the first row is the negation of the identity row, because $e_0 \star e_\nu = e^{*}_\nu$. The unit is therefore the unit of a single side only, and this asymmetry is the visible form of the second scalar rule.</p>
+<h3 id="the-product-is-the-derived-operation">The Product Is the Derived Operation</h3>
+<p><strong>Theorem.</strong> Let $\mathbb{B}$ be read as the associative $\mathbb{C}$-algebra with its conjugate-linear involution ${}^{*}$. Then the complex sesquilinear product is the <strong>derived operation</strong> of that pair,</p>
+<p>$$
+\tilde P \star \tilde Q = \tilde P\tilde Q^{*} ,
+$$</p>
+<p>in the sense of <em>Sesqualgebras</em>: the multiplication of the algebra with the involution inserted in the second slot.</p>
+<p><strong>Proof.</strong> This is the definition of the rule read in the notation of the standard example, and the verification of the axioms is the proposition above; the involution ${}^{*}$ is $\varsigma$-semilinear, $(xy)^{*} = y^{*}x^{*}$ and $*^{2} = \mathrm{id}$, which is the datum the construction requires (<em>The Group of Involutions</em>, <em>Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$</em>). $\square$</p>
+<p><strong>Corollary.</strong> $(\mathbb{B},\star)$ is the standard example of a sesqualgebra over $(\mathbb{C},\varsigma)$ built on the biquaternion algebra, and every general theorem of <em>Sesqualgebras</em>, <em>The Sesquilinear Product</em> and <em>The Sesquilinear Associator and the Ternary Product</em> applies to it. In particular the derived operation has the properties that the general theory proves for it, and the article reads off the ones that are explicit for $\mathbb{B}$.</p>
+<h2 id="the-axioms-and-what-they-do-not-force">The Axioms and What They Do Not Force</h2>
+<h3 id="the-right-unit">The Right Unit</h3>
+<p><strong>Proposition.</strong> The element $e_0$ is a <strong>right identity</strong> for the multiplication: $\tilde Q \star e_0 = \tilde Q$ for every $\tilde Q$. It is not a left identity.</p>
+<p><strong>Proof.</strong> The right identity is the second column of the table, $e_\mu \star e_0 = e_\mu$, which is the statement $e^{*}_0 = e_0$ pushed through the product; on a general element it follows by additivity. For the left action, the first row gives $e_0 \star \tilde Q = \tilde Q^{*}$, and this equals $\tilde Q$ for every $\tilde Q$ only if the involution is the identity, which it is not; the witness is $e_0 \star e_1 = -e_1 \neq e_1$. $\square$</p>
+<p><strong>Remark.</strong> The one-sided unit is the mark of the derived operation and appears in the general theory in the same form: the standard sesqualgebra has a right unit and no left one (<em>Sesqualgebras</em>). It is not a defect of $\mathbb{B}$ but a consequence of the involution sitting in the second slot; the left action by $e_0$ is the involution itself.</p>
+<h3 id="neither-associative-nor-commutative">Neither Associative Nor Commutative</h3>
+<p><strong>Theorem.</strong> The multiplication is <strong>neither associative nor commutative</strong>.</p>
+<p><strong>Proof.</strong> The algebra is of full type with respect to the product: it is faithful over $\mathbb{C}$, the products of its elements span it, and no nonzero element annihilates it on the left, since a left annihilator $a$ would satisfy $a = a \star e_0 = 0$ by the right unit. The involution $\varsigma$ of the base is not the identity, and for an algebra of full type with a nontrivial involution the sesquilinear product is never associative, by the collapse theorem of <em>Sesqualgebras</em>; the same hypothesis makes it non-commutative, since a commutative product would likewise force $\varsigma = \mathrm{id}$. $\square$</p>
+<p><strong>Witnesses.</strong> Associativity fails on the triple $(e_0,e_1,e_1)$:</p>
+<p>$$
+(e_0 \star e_1) \star e_1 = (-e_1) \star e_1 = -e_0, \qquad
+e_0 \star (e_1 \star e_1) = e_0 \star e_0 = e_0 ,
+$$</p>
+<p>and the two differ. Commutativity fails on the pair $(e_1,e_2)$: $e_1 \star e_2 = -e_3$ while $e_2 \star e_1 = e_3$.</p>
+<p>The failure of associativity is not an accident of the chosen basis, and the two products of $\mathbb{B}$ that are not associative must be told apart. The $\natural$-product fails associativity for want of a two-sided unit and remains $\mathbb{C}$-bilinear; the sesquilinear product fails it while being conjugate-linear in a slot, and the failure is the general collapse of <em>Sesqualgebras</em>.</p>
+<h3 id="the-associator">The Associator</h3>
+<p><strong>Definition.</strong> The <strong>associator</strong> of the multiplication is</p>
+<p>$$
+[\tilde P,\tilde Q,\tilde R] = (\tilde P \star \tilde Q) \star \tilde R - \tilde P \star (\tilde Q \star \tilde R) .
+$$</p>
+<p><strong>Proposition.</strong> For the derived operation of an associative algebra with a $\varsigma$-semilinear involution,</p>
+<p>$$
+[\tilde P,\tilde Q,\tilde R] = \tilde P\bigl((\tilde R\tilde Q)^{*} - \tilde R\tilde Q^{*}\bigr) = \tilde P\bigl(\tilde Q^{*}\tilde R^{*} - \tilde R\tilde Q^{*}\bigr) ,
+$$</p>
+<p>so the associator is $\mathbb{C}$-linear in $\tilde P$, $\varsigma$-semilinear in $\tilde Q$ and carries the difference of the two parities in $\tilde R$.</p>
+<p><strong>Proof.</strong> The first identity is the general formula of <em>The Sesquilinear Associator and the Ternary Product</em> for the derived operation, $\tilde P\bigl((\tilde R\tilde Q)^{*} - \tilde R\tilde Q^{*}\bigr)$; the expansion $(\tilde R\tilde Q)^{*} = \tilde Q^{*}\tilde R^{*}$ is the anti-multiplicativity of ${}^{*}$. The last clause is the parity theorem of the same article: the two groupings are trilinear on two different modules, $(\tilde P\tilde Q) \star \tilde R$ on $\mathbb{B} \times \mathbb{B}^{\varsigma} \times \mathbb{B}^{\varsigma}$ and $\tilde P \star (\tilde Q \star \tilde R)$ on $\mathbb{B} \times \mathbb{B}^{\varsigma} \times \mathbb{B}$, so the associator is not homogeneous in the third slot. $\square$</p>
+<p>The associator vanishes exactly when the two groupings agree, that is when the product is associative, and it does not. The quantities that replace it are the ternary product and the two halves of the next section.</p>
+<h2 id="the-involution-and-the-two-halves">The Involution and the Two Halves</h2>
+<h3 id="the-involution-exchanges-the-slots">The Involution Exchanges the Slots</h3>
+<p><strong>Proposition.</strong> The involution reverses the multiplication:</p>
+<p>$$
+(\tilde P \star \tilde Q)^{*} = \tilde Q \star \tilde P .
+$$</p>
+<p><strong>Proof.</strong> $(\tilde P\tilde Q^{*})^{*} = \tilde Q\tilde P^{*} = \tilde Q \star \tilde P$, using $*^{2} = \mathrm{id}$ and the anti-multiplicativity of ${}^{*}$. $\square$</p>
+<p><strong>Remark.</strong> The identity is the sesquilinear counterpart of the commutativity of a bilinear product: it does not make the product commutative, since $\tilde Q \star \tilde P$ is the transposed product of <em>The Sesquilinear Product</em> and not the value on the same ordered pair, but it does make the involution exchange the two arguments, and it is the reason the two halves below fit together. In the notation of the general theory it is the statement that the product is Hermitian-symmetric with respect to the involution.</p>
+<h3 id="the-two-halves-are-the-distinguished-subspaces">The Two Halves Are the Distinguished Subspaces</h3>
+<p><strong>Theorem.</strong> The sets</p>
+<p>$$
+H(\mathbb{B}) = \{\tilde Q : \tilde Q^{*} = \tilde Q\} , \qquad S(\mathbb{B}) = \{\tilde Q : \tilde Q^{*} = -\tilde Q\}
+$$</p>
+<p>of Hermitian and skew-Hermitian elements of the sesqualgebra are the Hermitian and the anti-Hermitian subspaces,</p>
+<p>$$
+H(\mathbb{B}) = \mathbb{M}_+ , \qquad S(\mathbb{B}) = \mathbb{M}_- ,
+$$</p>
+<p>and they are the fixed and the anti-fixed subspaces of ${}^{*}$; in particular $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ is the Hermitian decomposition of <em>Decompositions Along the Six Subspaces</em> and <em>Introduction to the Six Subspaces</em>.</p>
+<p><strong>Proof.</strong> The two definitions are the definitions of the fixed and anti-fixed sets of the involution ${}^{*}$ of the algebra, that is, of the Hermitian and the anti-Hermitian subspaces of <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>; the decomposition into the two halves is the order-two property of the involution, in the form of <em>Hermitian and Skew-Hermitian Elements</em>. $\square$</p>
+<p><strong>Remark.</strong> This is the first place where the sesquilinear reading meets the six distinguished subspaces: two of the six, $\mathbb{M}_+$ and $\mathbb{M}_-$, are the halves that the involution ${}^{*}$ of the sesquilinear datum cuts out, while the other four are the halves of the other conjugations (<em>Comparison of the Six Subspaces</em>). The pairing is not an analogy: the fixed and anti-fixed sets of an involution are the two halves of any sesqualgebra, and here they carry their corpus names.</p>
+<h3 id="the-other-exchange-and-the-scalar-and-the-vector-part">The Other Exchange, and the Scalar and the Vector Part</h3>
+<p>The two halves above are the halves of the <strong>involution</strong> ${}^{*}$. The halves of the <strong>exchange</strong> of the two arguments are a second pair, and that exchange comes in two forms.</p>
+<p>The <strong>plain exchange</strong> swaps the two arguments, $\tilde{P}\tilde{Q}^{*}\mapsto\tilde{Q}\tilde{P}^{*}$, and the proposition above reads it on the value, $\tilde{Q}\tilde{P}^{*}=(\tilde{P}\tilde{Q}^{*})^{*}$: its symmetric part is the Hermitian part and its antisymmetric part the skew-Hermitian part of the value, valued in $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$. Those two halves are only $\mathbb{R}$-bilinear, since the swap moves the conjugate-linear slot to the other side, and they are the symmetrised sesquilinear product of <em>The Sesquilinear Symmetrised Product</em> and the sesquilinear commutator of <em>The Sesquilinear Commutator</em>; they are not the two parts named $\mathrm{SPS}$ and $\mathrm{APS}$ of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<p>The <strong>exchange by the coefficientwise conjugation</strong> $c=\overline{\cdot}$ composes the swap with $c$, $f^{c}(\tilde{P},\tilde{Q})=\overline{f(\tilde{Q},\tilde{P})}$, and it keeps the class: its two parts are sesquilinear over $\mathbb{C}$ again, and they are the scalar part and the vector part of the value,</p>
+<p>$$
+\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\overline{\tilde{Q}\tilde{P}^{*}}\bigr)=\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+(\tilde{P}\tilde{Q}^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*}),\qquad
+\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}-\overline{\tilde{Q}\tilde{P}^{*}}\bigr)=\mathrm{Vect}(\tilde{P}\tilde{Q}^{*}),
+$$</p>
+<p>the first central and the second vector-valued. The two readings are the conjugate-symmetric ones of <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>, and the biquaternion instance, with the two parts of the other sesqualgebra, is <em>Scalar / Vector decomposition of the Biquaternion Complex Products</em>, §<em>The Other Exchange, and the Class It Keeps</em>. This reading stays inside the class of this article, and it is the one the twelve names $\mathrm{SPS}$ and $\mathrm{APS}$ belong to; the bare reading is the other, and it leaves the class.</p>
+<h3 id="the-ternary-product">The Ternary Product</h3>
+<p><strong>Theorem.</strong> The ternary product attached to the multiplication is</p>
+<p>$$
+\{\tilde P,\tilde Q,\tilde R\} = (\tilde P \star \tilde Q) \star \tilde R^{*} = \tilde P\tilde Q^{*}\tilde R ,
+$$</p>
+<p>and $\mathbb{B}$ with this ternary product is an <strong>algebraic $J^{*}$-algebra</strong>: the operation is additive in each variable, $\mathbb{C}$-linear in the first and the third and conjugate-linear in the second, and satisfies the Jordan triple identity (<em>Algebraic J*-Algebras</em>).</p>
+<p><strong>Proof.</strong> The first equality is the definition of the ternary product of a sesqualgebra, $\{x,y,z\} = (x \star y) \star z^{*}$, and the second is the derived form of <em>The Sesquilinear Associator and the Ternary Product</em>; the unital reading $\{\tilde P,\tilde Q,e_0\} = \tilde P \star \tilde Q$ and $\{e_0,\tilde Q,e_0\} = \tilde Q^{*}$ recovers the multiplication and the involution from the ternary product. The axioms are the theorem that the model $xy^{*}z$ of an associative algebra with a sesquilinear involution is an algebraic $J^{*}$-algebra. $\square$</p>
+<p><strong>Remark.</strong> The ternary product is the binary multiplication's surviving form: it is associative-like in the only sense available, its identities hold where the binary ones fail, and it is defined by a formula, $\tilde P\tilde Q^{*}\tilde R$, in which the middle slot carries the involution and the two outer slots do not. The operator form, the Lie triple system and the adjoint are <em>The Ternary Product as an Operator</em> and <em>The Adjoint of the Ternary Product</em>.</p>
+<h3 id="the-squares-and-the-positive-cone">The Squares and the Positive Cone</h3>
+<p><strong>Proposition.</strong> The square of an element in the sesquilinear multiplication is</p>
+<p>$$
+\tilde Q \star \tilde Q = \tilde Q\tilde Q^{*} ,
+$$</p>
+<p>it is fixed by the involution ${}^{*}$ for every $\tilde Q$, and its scalar part is the sum of the modulus squares of the coordinates,</p>
+<p>$$
+\mathrm{Sc}(\tilde Q \star \tilde Q) = \sum_{\mu=0}^{3} Q_\mu\overline{Q_\mu} = \sum_{\mu=0}^{3} |Q_\mu|^{2} ,
+$$</p>
+<p>a sum fixed by the complex conjugation.</p>
+<p><strong>Proof.</strong> The square is the derived product with equal arguments; it is fixed by ${}^{*}$ because $(\tilde Q\tilde Q^{*})^{*} = \tilde Q\tilde Q^{*}$; and its scalar part is the scalar part $\mathrm{Sc}(\tilde P\tilde Q^{*}) = \sum_\mu P_\mu\overline{Q_\mu}$ of <em>The Four Biquaternion Complex Products</em> at $\tilde P = \tilde Q$, each term $Q_\mu\overline{Q_\mu}$ being fixed by the complex conjugation. $\square$</p>
+<p><strong>Corollary.</strong> The finite sums of the squares $\tilde Q \star \tilde Q$ are the elements of the <strong>algebraic positive cone</strong> $C(\mathbb{B})$ of <em>Hermitian Squares and the Algebraic Positive Cone</em>, and $\tilde Q \star \tilde Q = \tilde Q\tilde Q^{*}$ is the element the involution attaches to $\tilde Q$. The cone is generated by the squares of the sesquilinear product as much as by the squares of the involution, the two generating sets coinciding.</p>
+<p><strong>Caution on the two squares.</strong> The square $\tilde Q\tilde Q^{*}$ of the sesquilinear multiplication is not the other square of the algebra, $\tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^{2}$, which is built on the $\mathbb{C}$-linear conjugation ${}^{\natural}$, is central, and vanishes exactly on the zero divisors; it is the central scalar on which invertibility turns (<em>The Six Subspaces and the Elements</em>). The square $\tilde Q\tilde Q^{*}$ is fixed by the involution ${}^{*}$ and its scalar part is the sum of the modulus squares displayed above. The two agree when all four coordinates are real, that is on the quaternion subspace, where the two conjugations coincide, and differ in general.</p>
+<h2 id="the-sesqualgebra-as-an-object">The Sesqualgebra as an Object</h2>
+<h3 id="simplicity">Simplicity</h3>
+<p><strong>Theorem.</strong> The only two-sided ideals of the sesqualgebra $(\mathbb{B},\star)$ are $0$ and $\mathbb{B}$.</p>
+<p><strong>Proof.</strong> Let $I$ be a two-sided ideal, so that $\tilde A \star \tilde X \in I$ and $\tilde X \star \tilde A \in I$ for every $\tilde A \in \mathbb{B}$ and $\tilde X \in I$. The first condition with $\tilde A = e_0$ gives $\tilde X^{*} \in I$, so $I$ is stable under the involution; with that, the first condition reads $\mathbb{B}I \subseteq I$, and the second reads $I\mathbb{B} \subseteq I$. Hence $I$ is a two-sided ideal of the ring $\mathbb{B}$, and the ring is simple by <em>Biquaternion Ideals and Peirce Decomposition</em>, so $I$ is $0$ or $\mathbb{B}$. $\square$</p>
+<p><strong>Remark.</strong> The sesqualgebra is simple with respect to the multiplication $\star$ although that multiplication is neither associative nor two-sidedly unital, and it is simple for the same underlying reason as the algebra, the simplicity of the ring. In the theory of <em>Ideals and Quotients of a Sesqualgebra</em> the ideals here are the two-sided ideals of the algebra, so the answer is the same as the bilinear one.</p>
+<h3 id="the-idempotents-of-the-multiplication">The Idempotents of the Multiplication</h3>
+<p><strong>Proposition.</strong> An element is idempotent for the sesquilinear multiplication, $\tilde Q \star \tilde Q = \tilde Q$, if and only if it is a Hermitian idempotent of the algebra; hence the idempotents of the multiplication are $0$, $e_0$, and the <strong>pure states</strong></p>
+<p>$$
+\tilde\Pi_+(\hat\mu) = \tfrac12\bigl(e_0 + i\hat\mu\bigr) , \qquad \hat\mu \in \mathbb{R}^{3}, \ |\hat\mu| = 1 ,
+$$</p>
+<p>indexed by the real unit vectors (<em>Conventions in Mathematics</em>, <em>Biquaternion Idempotents and Projections</em>).</p>
+<p><strong>Proof.</strong> If $\tilde Q \star \tilde Q = \tilde Q$ then $\tilde Q\tilde Q^{*} = \tilde Q$, and applying ${}^{*}$ gives $\tilde Q\tilde Q^{*} = \tilde Q^{*}$ because the square is Hermitian, so $\tilde Q = \tilde Q^{*}$; hence $\tilde Q\tilde Q^{*} = \tilde Q^{2}$ and $\tilde Q$ is an idempotent of the algebra, Hermitian. Conversely a Hermitian idempotent satisfies $\tilde Q \star \tilde Q = \tilde Q\tilde Q^{*} = \tilde Q^{2} = \tilde Q$. The Hermitian idempotents of $\mathbb{B}$ are classified in <em>Biquaternion Idempotents and Projections</em>: the idempotents are the elements $\tfrac12(e_0 + \xi i)$ with $\xi$ a root of $-1$, and the Hermitian ones are those of the <strong>real root</strong> family, $\xi = \pm\mu$ with $\mu$ a unit pure real quaternion, that is the elements $\tfrac12(e_0 \pm \mu i)$, together with the trivial idempotents $0$ and $e_0$. $\square$</p>
+<p><strong>Remark.</strong> The unit $e_0$ is idempotent on both sides, and each $\tilde\Pi_+(\hat\mu)$ is idempotent for the multiplication while being a Hermitian idempotent of the algebra, a pure state of <em>Biquaternion Idempotents and Projections</em>; the sesquilinear multiplication therefore has the same idempotents as the algebra has Hermitian ones, and none besides. The idempotents of the algebra that are not Hermitian, the non-trivial-root family of <em>Biquaternion Idempotents and Projections</em>, are <strong>not</strong> idempotent for the multiplication.</p>
+<h2 id="the-four-products-and-the-sesquilinear-structure">The Four Products and the Sesquilinear Structure</h2>
+<h3 id="which-of-the-four-is-a-sesquilinear-multiplication">Which of the Four Is a Sesquilinear Multiplication</h3>
+<p>The row of the table of <em>Comparison Between the Four Biquaternion Products</em> headed "multiplication of a sesqualgebra over $\mathbb{C}$" is read with the definition of <em>Sesqualgebras</em> and with nothing added to it. That definition is the two scalar rules: a sesqualgebra is an $R$-module with a product additive in each variable, $R$-linear in the first and $\varsigma$-semilinear in the second. Over $(\mathbb{C},\varsigma)$ with the conjugation $\varsigma(z)=\bar z$ the rules are</p>
+<p>$$
+(\lambda\tilde P)\star\tilde Q = \lambda(\tilde P\star\tilde Q), \qquad
+\tilde P\star(\lambda\tilde Q) = \bar\lambda(\tilde P\star\tilde Q).
+$$</p>
+<p>The complex sesquilinear product satisfies them by its definition, and the complex quaternionic sesquilinear product satisfies them too: its first slot is read through the $\mathbb{C}$-linear conjugation ${}^{\natural}$, which the first rule does not see, and its second slot carries the star, which supplies the conjugation of the second rule. <strong>Both products carrying the star are therefore multiplications of a sesqualgebra over $\mathbb{C}$ with the conjugation</strong>, and the row of the comparison table reads no, no, yes, yes; the two bilinear products are sesqualgebras as well, for the trivial involution, which is the collapse of §<em>The Collapse at the Identity</em> of <em>Sesqualgebras</em> and the bilinear row of the same table. The definition alone therefore does not select the product of this article.</p>
+<p>What does select it is a sharper property, and it is the property the corpus's own standard example carries: the product must be the <strong>derived operation</strong> $\tilde X\star\tilde Y=\tilde X\tilde Y^{*}$ of the associative algebra $\mathbb{B}$ with its conjugate-linear involution. That is a statement about the algebra and its involution and not about the scalar rules, and among the four products it holds for the complex sesquilinear product alone. The rest of this section states and proves it.</p>
+<p><strong>Definition.</strong> Let $\star$ be one of the four products. Put</p>
+<p>$$
+\sigma(\tilde Y) = e_0 \star \tilde Y ,
+$$</p>
+<p>the first row of $\star$ read on $\tilde Y$. Then $\star$ is the <strong>derived operation</strong> of the algebra $\mathbb{B}$ with the conjugate-linear involution $\sigma$ when the two conditions hold:</p>
+<p>(i) $\sigma$ is a conjugate-linear <strong>involution</strong> of the algebra, that is $\sigma(\lambda\tilde Y) = \bar\lambda\,\sigma(\tilde Y)$, $\sigma^2 = \mathrm{id}$, $\sigma(\tilde X\tilde Y) = \sigma(\tilde Y)\sigma(\tilde X)$ and $\sigma(e_0) = e_0$;</p>
+<p>(ii) $\sigma$ rebuilds $\star$, that is $\tilde X \star \tilde Y = \tilde X\,\sigma(\tilde Y)$ for all $\tilde X,\tilde Y$.</p>
+<p>Condition (i) says that $\sigma$ is an involution of the algebra of the kind ${}^{*}$ and not of the kind ${}^{\natural}$ (<em>The Group of Involutions</em>, <em>Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$</em>); condition (ii) says that $\star$ is the multiplication with that involution inserted in the second slot and the first factor untouched. Together they are the statement that $\star$ is the derived operation of <em>Sesqualgebras</em>, and $\sigma$ is then the involution of the definition and is <strong>determined</strong> by $\star$, being its first row.</p>
+<p><strong>Theorem (the derived operation among the four).</strong> Among the four products of <em>The Four Biquaternion Complex Products</em>, the complex sesquilinear product is the only one that is the derived operation of $\mathbb{B}$ with a conjugate-linear involution, and the involution is ${}^{*}$. The complex quaternionic sesquilinear product is a multiplication of a sesqualgebra over $\mathbb{C}$ all the same, and it is not of this derived form.</p>
+<p><strong>Proof.</strong> The four first rows are read from the products themselves, and they are $\sigma = \mathrm{id}$ for $\tilde X\tilde Y$, $\sigma = \mathrm{id}$ for $\tilde X^{\natural}\tilde Y$ because ${}^{\natural}$ fixes $e_0$ and so $e_0 \star \tilde Y = e_0^{\natural}\tilde Y = \tilde Y$, and $\sigma = {}^{*}$ for both $\tilde X\tilde Y^{*}$ and $\tilde X^{\natural}\tilde Y^{*}$, because $e_0 \star \tilde Y = e_0^{\natural}\tilde Y^{*} = \tilde Y^{*}$ in either case. The two conditions then separate the four:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>$\sigma$ (first row)</th>
+<th>(i)</th>
+<th>(ii)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde X\tilde Y$</td>
+<td>$\mathrm{id}$</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\tilde X^{\natural}\tilde Y$</td>
+<td>$\mathrm{id}$</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\tilde X\tilde Y^{*}$</td>
+<td>${}^{*}$</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\tilde X^{\natural}\tilde Y^{*}$</td>
+<td>${}^{*}$</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Condition (i).</em> The identity is not conjugate-linear, since $\sigma(\lambda\tilde Y) = \lambda\tilde Y \neq \bar\lambda\tilde Y$ for a non-real $\lambda$ and $\tilde Y \neq 0$; and ${}^{\natural}$ is $\mathbb{C}$-linear by construction (<em>Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$</em>). So the two products whose first row is the identity fail (i) on the first clause, and the two products carrying the star pass it, the star being conjugate-linear, involutive, anti-multiplicative and fixing $e_0$ (<em>The Group of Involutions</em>, <em>Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$</em>).</p>
+<p><em>Condition (ii).</em> With $\tilde X = e_0$, condition (ii) says that $e_0$ is a <strong>right</strong> unit of $\star$, in the form $e_0 \star \tilde Y = \sigma(\tilde Y)$; and with $\sigma$ fixed it says that $\star$ is the algebra product with $\sigma$ inserted in the second slot. For the complex sesquilinear product this is the definition of the rule and holds. For the complex quaternionic sesquilinear product it would read $\tilde X^{\natural}\tilde Y^{*} = \tilde X\tilde Y^{*}$, and at $\tilde Y = e_0$ this is $\tilde X^{\natural} = \tilde X$ for every $\tilde X$, which fails at $\tilde X = e_1$; equivalently the fourth product has no right unit, $e_1 \star^{\natural} e_0 = e_1^{\natural} = -e_1$. For the $\natural$-product, (ii) with $\sigma = \mathrm{id}$ would read $\tilde X^{\natural}\tilde Y = \tilde X\tilde Y$, which already fails at $\tilde X = e_1$ and $\tilde Y = e_0$.</p>
+<p>Hence only the complex sesquilinear product satisfies (i) and (ii). $\square$</p>
+<p><strong>Corollary (the row of the comparison table).</strong> The two rows of <em>Comparison Between the Four Biquaternion Products</em> that name the categories record the definitional facts, and they read yes, yes, no, no for the bilinear row and no, no, yes, yes for the sesquilinear one: the two star-products are <strong>both</strong> multiplications of a sesqualgebra over $\mathbb{C}$ with the conjugation, and the definition does not separate them. The property proved here is sharper and does separate them, reading no, no, yes, no. The three failures fall on different clauses, which is why both conditions are needed: the complex bilinear product satisfies (ii) and fails (i) alone, the $\natural$-product fails both, and the complex quaternionic sesquilinear product passes (i) and fails (ii) alone — it carries the right conjugation in the second slot but twists the first slot by ${}^{\natural}$ as well, so it is not the derived operation, and the two products carrying the star share the first row $\sigma = {}^{*}$. Equivalently, the two are separated by the unit, which is the row "$1$ is a right identity" of the same table: $e_0$ is a right unit of the complex sesquilinear product and there is none for the complex quaternionic one.</p>
+<p><strong>Corollary (the caution on ${}^{\natural}$).</strong> The conjugation that makes a product sesquilinear is the conjugate-linear involution ${}^{*} = \bar{\cdot}\circ{}^{\natural}$, not the $\mathbb{C}$-linear ${}^{\natural}$. The map ${}^{\natural}$ fixes the complex scalars, so it is invisible to the scalar rules: a slot conjugated by ${}^{\natural}$ is still $\mathbb{C}$-linear, and this is why a product twisted by ${}^{\natural}$ in the first slot is still sesquilinear while the star must stay in the second slot: a second slot carrying ${}^{\natural}$ instead of the star makes the product bilinear. A sesquilinear structure over $\mathbb{C}$ with its conjugation therefore rests on the star, the involution of the algebra; a product whose second slot carries ${}^{\natural}$ instead of the star is bilinear, and it is the bilinear structure of <em>Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$</em>.</p>
+<h3 id="the-scalar-part-of-the-multiplication">The Scalar Part of the Multiplication</h3>
+<p><strong>Proposition.</strong> The scalar part of the multiplication is</p>
+<p>$$
+\mathrm{Sc}(\tilde P \star \tilde Q) = \mathrm{Sc}(\tilde P\tilde Q^{*}) = \sum_{\mu=0}^{3} P_\mu\overline{Q_\mu} ,
+$$</p>
+<p>conjugate-linear in its second argument, and the multiplication is that scalar part read coefficientwise against the basis,</p>
+<p>$$
+\tilde P\tilde Q^{*} = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3}\varepsilon_\nu P_\mu\overline{Q_\nu}\,e_\mu e_\nu .
+$$</p>
+<p><strong>Proof.</strong> The scalar part of the derived product is read on the coordinates by the displayed scalar–vector form of <em>The Four Biquaternion Complex Products</em>, $\mathrm{Sc}(\tilde P\tilde Q^{*}) = \sum_\mu P_\mu\overline{Q_\mu}$, conjugate-linear in the second argument; the second display is the coordinate rule of the definition, whose coefficients $\varepsilon_\nu P_\mu\overline{Q_\nu}$ are that scalar part read on each basis pair. $\square$</p>
+<p><strong>Remark.</strong> The scalar part and the multiplication are two readings of one datum, and the article separates them deliberately: the scalar part of the product, whatever is made of it later, is not the object here, and the multiplication is. The scalar part alone does not determine the product, and it is the involution that turns the pairings of the coordinates into the multiplication; conversely the product determines the involution, hence the scalar part, together.</p>
+<p><strong>Remark (the scalar part is a product of the same class).</strong> Under the exchange by the coefficientwise conjugation the scalar part is the <strong>conjugate-symmetric part</strong> of the multiplication, $\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+(\tilde{P}\tilde{Q}^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$, so it is a product in the same sense as the multiplication, sesquilinear over $\mathbb{C}$ and not merely $\mathbb{R}$-bilinear, with the vector part $\mathrm{Vect}(\tilde{P}\tilde{Q}^{*})$ as its antisymmetric partner; §<em>The Other Exchange, and the Scalar and the Vector Part</em>. It is not the symmetrisation of the multiplication, which is Hermitian-valued in $\mathbb{M}_{+}$ and only $\mathbb{R}$-bilinear (<em>The Sesquilinear Symmetrised Product</em>).</p>
+<h2 id="summary">Summary</h2>
+<p>The complex sesquilinear product $\tilde P\tilde Q^{*}$ of <em>The Four Biquaternion Complex Products</em>, read as a multiplication, is additive in each variable, $\mathbb{C}$-linear in the first and conjugate-linear in the second. Those are the two axioms of a sesqualgebra over $\mathbb{C}$ with its conjugation, and the product is the derived operation of the associative algebra $\mathbb{B}$ with its conjugate-linear involution ${}^{*}$.</p>
+<p>$$
+\boxed{\ \text{With the complex sesquilinear product, } \mathbb{B} \text{ is a sesquilinear } \mathbb{C}\text{-algebra, neither associative nor commutative, with a right unit and the involution } {}^{*}. \ }
+$$</p>
+<p>The product has the unit $e_0$ on the right and none on the left, the left action by $e_0$ being the involution; it is neither associative nor commutative, by the collapse theorem, with the witnesses $(e_0,e_1,e_1)$ and $(e_1,e_2)$; the involution exchanges the two slots, $(\tilde P \star \tilde Q)^{*} = \tilde Q \star \tilde P$; the Hermitian and skew-Hermitian elements are the two distinguished subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$; the ternary product $\tilde P\tilde Q^{*}\tilde R$ makes $\mathbb{B}$ an algebraic $J^{*}$-algebra and recovers the multiplication and the involution by inserting the unit; the square $\tilde Q \star \tilde Q$ is fixed by the involution and its scalar part is the sum of the modulus squares of the coordinates; the two-sided ideals are $0$ and $\mathbb{B}$; and the idempotents of the multiplication are the Hermitian idempotents of the algebra.</p>
+<p>Among the four products of <em>The Four Biquaternion Complex Products</em>, <strong>both</strong> products carrying the star are multiplications of a sesqualgebra over $\mathbb{C}$ with the conjugation, and the complex sesquilinear product is the only one that is the <strong>derived operation</strong> $\tilde X\star\tilde Y=\tilde X\tilde Y^{*}$ of $\mathbb{B}$ with the conjugate-linear involution ${}^{*}$, in the sense of the two conditions (i) and (ii) of §<em>Which of the Four Is a Sesquilinear Multiplication</em>. The complex quaternionic sesquilinear product shares the involution in the second slot and fails (ii), reading the first factor through the $\mathbb{C}$-linear ${}^{\natural}$ as well, and equivalently it has no right unit; the two bilinear products have $\sigma = \mathrm{id}$ and fail (i). The conjugation that does this is the star, the conjugate-linear involution; the natural sign ${}^{\natural}$ is $\mathbb{C}$-linear, so a second slot carrying it gives a bilinear product, which is the caution of <em>Sesqualgebras</em> made explicit on the biquaternion algebra. The row of <em>Comparison Between the Four Biquaternion Products</em> that names the sesquilinear kind is read with the definition and not with the derived form, and it holds for both star-products; the derived form is the sharper property proved in this article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+<td>the biquaternion algebra, read here with the sesquilinear multiplication</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>complex basis; $e_0$ the unit, $e_k$ the quaternion units</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>central scalar imaginary, $i^2=-1$</td>
+</tr>
+<tr>
+<td>$\tilde Q = Q_0e_0 + \mathbf Q$</td>
+<td>a biquaternion and its scalar–vector split</td>
+</tr>
+<tr>
+<td>$\varsigma(z) = \bar z$</td>
+<td>the base involution, the complex conjugation</td>
+</tr>
+<tr>
+<td>${}^{*} = \bar{\cdot}\circ{}^{\natural}$</td>
+<td>the Hermitian conjugation, the conjugate-linear involution of the algebra</td>
+</tr>
+<tr>
+<td>$\sigma(\tilde Y) = e_0 \star \tilde Y$</td>
+<td>the first row of a product, the involution of the derived operation</td>
+</tr>
+<tr>
+<td>$\tilde P \star \tilde Q = \tilde P\tilde Q^{*}$</td>
+<td>the complex sesquilinear product, the multiplication of the sesqualgebra</td>
+</tr>
+<tr>
+<td>$\varepsilon = (1,-1,-1,-1)$</td>
+<td>the signs of the involution on the basis, $e^{*}_\nu = \varepsilon_\nu e_\nu$</td>
+</tr>
+<tr>
+<td>$[\tilde P,\tilde Q,\tilde R]$</td>
+<td>the associator, $(\tilde P \star \tilde Q) \star \tilde R - \tilde P \star (\tilde Q \star \tilde R)$</td>
+</tr>
+<tr>
+<td>$\{\tilde P,\tilde Q,\tilde R\} = \tilde P\tilde Q^{*}\tilde R$</td>
+<td>the ternary product, the $J^{*}$-structure</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>the Hermitian and the anti-Hermitian halves, $H(\mathbb{B})$ and $S(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$C(\mathbb{B})$</td>
+<td>the algebraic positive cone, the sums of the squares $\tilde Q \star \tilde Q$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_+(\hat\mu) = \tfrac12(e_0+i\hat\mu)$</td>
+<td>the idempotents of the multiplication, $\hat\mu$ a real unit vector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Irving Kaplansky, <em>Rings of Operators</em> (Benjamin, 1968), for the $J^{*}$-algebras and the ternary product $xy^{*}z$ that the derived operation defines.</li>
+<li>Harald Hanche-Olsen and Erling Størmer, <em>Jordan Operator Algebras</em> (Pitman, 1984), for the Jordan triple identity and the model of an involutive algebra.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. I (Academic Press, 1983), for the adjoint, the Hermitian and the skew-Hermitian elements and the positive cone.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the $\varsigma$-semilinear involutions and the derived operation.</li>
+<li><em>The Four Biquaternion Complex Products</em> (<code>articles_maths/the-four-biquaternion-complex-products.md</code>), for the product, its coordinate rule and its scalar–vector form.</li>
+<li><em>Comparison Between the Four Biquaternion Products</em> (<code>articles_maths/comparison-between-the-four-biquaternion-products.md</code>), for the property table that decides which of the four products is a sesquilinear multiplication.</li>
+<li><em>Sesqualgebras</em> (<code>articles_maths/sesqualgebras.md</code>), for the axioms, the collapse theorem and the standard example.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

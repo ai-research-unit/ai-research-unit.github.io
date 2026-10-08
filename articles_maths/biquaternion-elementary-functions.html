@@ -207,7 +207,7 @@ $$</p>
 <p><strong>Example.</strong> The biquaternion $\tilde{Q} = \pi i\, e_0 + \pi\, e_3$ has $Q_0 = \pi i$, $B = \pi$, so $k = j = 1$ and $\exp(\tilde{Q}) = e^{\pi i}(\cos\pi\, e_0 + \sin\pi\, e_3) = e_0$. Since $N(\tilde{Q}) = 0$, this kernel element is a zero divisor: the kernel is not contained in the group of units.</p>
 <p><strong>On the phrase "eigenvalues differ by a multiple of $2\pi i$".</strong> The condition implies such a difference, but the difference alone is weaker: $\tilde{Q} = e_0$ has equal eigenvalues yet $\exp(e_0) \neq e_0$. Each eigenvalue must be a multiple of $2\pi i$.</p>
 <h3 id="the-exponential-in-the-two-real-directions">The Exponential in the Two Real Directions</h3>
-<p>Let $\hat{n}$ be a real unit vector part, so that $\hat{n}^2 = -e_0$. The two real three-dimensional families of exponents — the bivector directions $\theta\hat{n}$ and the vector directions $\psi\, i\hat{n}$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in <em>Biquaternion Lie Algebras</em>.</p>
+<p>Let $\hat{n}$ be a real unit vector part, so that $\hat{n}^2 = -e_0$. The two real three-dimensional families of exponents — the bivector directions $\theta\hat{n}$ and the vector directions $\psi\, i\hat{n}$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
 <p><strong>The bivector directions.</strong> For real $\theta$,</p>
 <p>$$
 \exp(\theta\hat{n}) = \cos\theta\, e_0 + \sin\theta\, \hat{n},
@@ -238,7 +238,7 @@ $$</p>
 \sinh(\tilde{Q}) = \frac{\exp(\tilde{Q}) - \exp(-\tilde{Q})}{2}, \qquad \cosh(\tilde{Q}) = \frac{\exp(\tilde{Q}) + \exp(-\tilde{Q})}{2},
 $$</p>
 <p>where $i$ is the scalar imaginary. These identities hold because $i$ commutes with everything, so the standard derivations carry over. They reduce the computation to the exponential formula.</p>
-<h3 id="the-case-math251">The Case $B \neq 0$</h3>
+<h3 id="the-case-math252">The Case $B \neq 0$</h3>
 <p>For $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $B \neq 0$ and $\hat{n} = \mathbf{Q}/B$, we have</p>
 <p>$$
 \exp(\tilde{Q}) = e^{Q_0}(\cos B \, e_0 + \sin B \, \hat{n}), \qquad \exp(-\tilde{Q}) = e^{-Q_0}(\cos B \, e_0 - \sin B \, \hat{n}).
@@ -256,7 +256,7 @@ $$</p>
 <p>$$
 \cosh(\tilde{Q}) = \cosh(Q_0) \cos B \, e_0 + \sinh(Q_0) \sin B \, \hat{n}.
 $$</p>
-<h3 id="the-case-math260">The Case $B = 0$</h3>
+<h3 id="the-case-math261">The Case $B = 0$</h3>
 <p>If $B = 0$, then $\mathbf{Q}^2 = 0$, and the powers of $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ satisfy</p>
 <p>$$
 \tilde{Q}^n = Q_0^n e_0 + n Q_0^{n-1} \mathbf{Q}, \qquad n \geq 1,
@@ -274,7 +274,7 @@ $$</p>
 <p>$$
 \cosh(\tilde{Q}) = \cosh(Q_0) e_0 + \sinh(Q_0) \mathbf{Q}.
 $$</p>
-<h3 id="the-case-math272">The Case $\mathbf{Q} = 0$</h3>
+<h3 id="the-case-math273">The Case $\mathbf{Q} = 0$</h3>
 <p>If $\mathbf{Q} = 0$, both formulas reduce to the ordinary complex trigonometric and hyperbolic functions.</p>
 <h3 id="summary-of-trigonometric-and-hyperbolic-functions">Summary of Trigonometric and Hyperbolic Functions</h3>
 <p>$$
@@ -427,19 +427,19 @@ $$</p>
 \tilde{Q}^\alpha = \exp(\alpha \log \tilde{Q}).
 $$</p>
 <p>The power function inherits the multivaluedness of the logarithm: for non-integer $\alpha$, it is multivalued, and the principal branch is obtained from the principal logarithm. The domain is the group of units $\mathbb{B}^\times$.</p>
-<h3 id="the-case-math393">The Case $B \neq 0$</h3>
+<h3 id="the-case-math394">The Case $B \neq 0$</h3>
 <p>Using the formula for the logarithm and the exponential, we obtain</p>
 <p>$$
 \tilde{Q}^\alpha = R^\alpha \bigl(\cos(\alpha\Theta) \, e_0 + \sin(\alpha\Theta) \, \hat{n}\bigr), \qquad B \neq 0,
 $$</p>
 <p>where $R = \sqrt{Q_0^2 + B^2}$, $\cos\Theta = Q_0/R$, and $\sin\Theta = B/R$.</p>
-<h3 id="the-case-math398-math399">The Case $B = 0$, $\mathbf{Q} \neq 0$</h3>
+<h3 id="the-case-math399-math400">The Case $B = 0$, $\mathbf{Q} \neq 0$</h3>
 <p>In the nilpotent regime,</p>
 <p>$$
 \tilde{Q}^\alpha = Q_0^\alpha e_0 + \alpha Q_0^{\alpha-1} \mathbf{Q}, \qquad B = 0, \quad \mathbf{Q} \neq 0,
 $$</p>
 <p>with $Q_0 \neq 0$ required for invertibility. This involves the linear term $\alpha Q_0^{\alpha-1} \mathbf{Q}$, which is the analogue of the expansion $(1 + a)^\alpha \approx 1 + \alpha a$ for small $a$ with $a^2 = 0$.</p>
-<h3 id="the-case-math406">The Case $\mathbf{Q} = 0$</h3>
+<h3 id="the-case-math407">The Case $\mathbf{Q} = 0$</h3>
 <p>If $\mathbf{Q} = 0$, the power function reduces to the ordinary complex power.</p>
 <h3 id="summary-of-the-power-function">Summary of the Power Function</h3>
 <p>$$

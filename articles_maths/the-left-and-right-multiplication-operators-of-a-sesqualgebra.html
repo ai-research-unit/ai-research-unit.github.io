@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Left and Right Multiplication Operators of a Sesqualgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-left-and-right-multiplication-operators-of-a-sesqualgebra"><strong>The Left and Right Multiplication Operators of a Sesqualgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every element of a sesqualgebra gives two operators on the underlying module, the left multiplication $L_a(x) = a \star x$ and the right multiplication $R_a(x) = x \star a$. The two scalar rules of the category split them: $L_a$ is $\varsigma$-semilinear while $R_a$ is $R$-linear, and the split is not an accident of notation but the operator-level form of the rules themselves. This article reads the two families as operators: the modules in which they live, the laws of their composition, the two maps $a \mapsto L_a$ and $a \mapsto R_a$ that the product defines, and the reason a single faithful linear representation cannot carry the whole product.</p>
+<p>The subject is the operator theory of the category, and it belongs to the group <em>Operator Theory</em> of the sesqualgebras. The definitions of the two operators and their composition in the associative case are in <em>Sesqualgebras</em>, §<em>The Left and the Right Multiplication</em>; what is added here is the place of the operators among the semilinear endomorphisms, the composition in the standard example, the reading of the two families as representations, and the obstruction to a single linear one. The classical counterpart, where the product is bilinear and the left multiplications compose exactly when the algebra is associative, is <em>Left and Right Multiplication</em>; the proposition that locates associativity in the composition of the left multiplications is in <em>Associative Algebras</em>, and the analogue for a Jordan product is <em>The Left and Right Multiplication Operators on a Jordan Algebra</em>.</p>
+<p>The setting is that of <em>Sesqualgebras</em>: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is an $R$-module with a product additive in each variable satisfying the two scalar rules, and the product is written $\star$. When the example is the standard one, $A$ is an associative $R$-algebra with a $\varsigma$-semilinear involution $*$ and $x \star y = xy^{*}$; in that case juxtaposition denotes the associative product of $A$ and $*$ the involution. The fixed ring is $R^{\varsigma} = \{\lambda \in R : \varsigma(\lambda) = \lambda\}$; the two halves of $A$ and the scalars that preserve them are <em>Hermitian and Skew-Hermitian Elements</em>; the case $\varsigma = \mathrm{id}$, where the two families collapse into one, is <em>Left and Right Multiplication</em>.</p>
+<hr />
+<h2 id="the-two-operators">The Two Operators</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> For $a \in A$ the <strong>left multiplication</strong> and the <strong>right multiplication</strong> of the sesquilinear product are</p>
+<p>$$
+L_a(x) = a \star x , \qquad R_a(x) = x \star a .
+$$</p>
+<p>Both are additive in $x$, since the product is additive in each variable. The definition is that of <em>Sesqualgebras</em>, §<em>The Left and the Right Multiplication</em>, and it is recalled here because the operators are the subject.</p>
+<h3 id="the-two-parities">The Two Parities</h3>
+<p><strong>Proposition (the parity of the two operators).</strong> For every $a \in A$ the left multiplication $L_a$ is $\varsigma$-semilinear and the right multiplication $R_a$ is $R$-linear:</p>
+<p>$$
+L_a(\lambda x) = \varsigma(\lambda)L_a(x) , \qquad R_a(\lambda x) = \lambda R_a(x) .
+$$</p>
+<p>Consequently $L_a$ is $R^{\varsigma}$-linear and lies in $\operatorname{End}_{R^{\varsigma}}(A)$, while $R_a$ lies in $\operatorname{End}_{R}(A)$.</p>
+<p><strong>Proof.</strong> The two displayed identities are the two scalar rules of the sesqualgebra read at $x$, and they are the computation of <em>Sesqualgebras</em>, §<em>The Left and the Right Multiplication</em>. For the last statement, a map $f$ with $f(\lambda x) = \varsigma(\lambda)f(x)$ satisfies $f(\mu x) = \varsigma(\mu)f(x) = \mu f(x)$ for $\mu \in R^{\varsigma}$, so it is $R^{\varsigma}$-linear; the same reading gives the $R$-linearity of $R_a$. $\square$</p>
+<p><strong>Remark.</strong> The two operators therefore have opposite parities, and this is the whole difference from the bilinear case: over a ring with $\varsigma = \mathrm{id}$ both are $R$-linear and the two families are two subfamilies of one endomorphism ring. When $\varsigma \neq \mathrm{id}$ no single ring of $R$-linear endomorphisms contains both: the common home of the two families is $\operatorname{End}_{R^{\varsigma}}(A)$, which contains $\operatorname{End}_{R}(A)$, strictly in the standard examples, where the conjugation is $R^{\varsigma}$-linear but not $R$-linear. The two families are the operator-level reason the category carries two classes of operators, and the bilinear case is the one in which the two classes meet.</p>
+<p><strong>Proposition (the action on the parameter).</strong> The assignment $a \mapsto L_a$ is $R$-linear, and the assignment $a \mapsto R_a$ is $\varsigma$-semilinear:</p>
+<p>$$
+L_{\lambda a} = \lambda L_a , \qquad R_{\lambda a} = \varsigma(\lambda)R_a .
+$$</p>
+<p><strong>Proof.</strong> $L_{\lambda a}(x) = (\lambda a) \star x = \lambda(a \star x) = \lambda L_a(x)$ by the first scalar rule, and $R_{\lambda a}(x) = x \star (\lambda a) = \varsigma(\lambda)(x \star a) = \varsigma(\lambda)R_a(x)$ by the second. $\square$</p>
+<p><strong>Remark.</strong> The parities are exchanged between the operator and its parameter: the left family is linear in its parameter and its values are conjugate-linear, the right family is conjugate-linear in its parameter and its values are linear. The product of the two parities is the same on the two sides, which is the sense in which the two families carry the same information through opposite routes.</p>
+<h2 id="the-composition">The Composition</h2>
+<h3 id="the-associative-case">The Associative Case</h3>
+<p><strong>Proposition.</strong> Suppose the product of $A$ is associative. Then</p>
+<p>$$
+L_aL_b = L_{a \star b} , \qquad R_aR_b = R_{b \star a} , \qquad L_aR_b = R_bL_a .
+$$</p>
+<p><strong>Proof.</strong> The three identities are the associative law read in the three possible orders, and they are the ones of <em>Sesqualgebras</em>, §<em>The Left and the Right Multiplication</em>: for $x \in A$ one has $L_aL_b(x) = a \star (b \star x) = (a \star b) \star x = L_{a \star b}(x)$, and the other two are the same computation. $\square$</p>
+<p><strong>Corollary.</strong> When the product is associative, $a \mapsto L_a$ is an algebra homomorphism $A \to \operatorname{End}_{R^{\varsigma}}(A)$ with $\varsigma$-semilinear values, $a \mapsto R_a$ is an algebra anti-homomorphism $A \to \operatorname{End}_{R}(A)$ with $R$-linear values, and the two images commute.</p>
+<p><strong>Proof.</strong> The composition laws say that $L$ respects products, so it is a homomorphism, and that $R$ reverses them, so it is an anti-homomorphism; the last identity says that every left multiplication commutes with every right multiplication. $\square$</p>
+<p><strong>Remark.</strong> Associativity is exactly the hypothesis that makes the two families compose inside themselves, and it is the same criterion as in the bilinear case: <em>Associative Algebras</em> locates it in the identity $L(ab) = L(a)L(b)$, and the sesquilinear statement differs only in the module that receives the operators, $\operatorname{End}_{R^{\varsigma}}(A)$ rather than $\operatorname{End}_{R}(A)$. For a sesqualgebra of full type associativity forces $\varsigma = \mathrm{id}$, by the theorem of <em>Sesqualgebras</em>, §<em>The Collapse at the Identity</em>, so the associative case of the present proposition is the bilinear one.</p>
+<h3 id="the-standard-example">The Standard Example</h3>
+<p><strong>Proposition (the composition in the standard example).</strong> Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution and let $x \star y = xy^{*}$. Write $T_{p,q}(x) = p\,x\,q$ for the ordinary two-sided multiplication. Then</p>
+<p>$$
+L_aL_b = T_{a,\,b^{*}} , \qquad R_aR_b = T_{1,\,(a b)^{*}} ,
+$$</p>
+<p>and $L_aR_b \neq R_bL_a$ in general.</p>
+<p><strong>Proof.</strong> In the standard example $L_a(x) = a x^{*}$, so $L_aL_b(x) = a(b x^{*})^{*} = a x b^{*} = T_{a,b^{*}}(x)$, and $R_a(x) = x a^{*}$, so $R_aR_b(x) = (x b^{*})a^{*} = x b^{*}a^{*} = x(ab)^{*} = T_{1,(ab)^{*}}(x)$. For the last statement $L_aR_b(x) = a(x b^{*})^{*} = ab\,x^{*}$ while $R_bL_a(x) = (a x^{*})b^{*} = a x^{*} b^{*}$, and the two are equal for all $a$ and $b$ exactly when $A$ is commutative and the involution is trivial, so they differ for some pair as soon as $A$ is noncommutative or the involution is nontrivial. $\square$</p>
+<p><strong>Remark.</strong> The composition of two left multiplications is again a two-sided multiplication but not a left multiplication, and the reason is that the derived operation is not associative: the two sides of $L_aL_b = L_{a \star b}$ would read $a x b^{*}$ and $a b\,x^{*}$, which differ. The standard example therefore shows the composition law of the associative case failing in the smallest possible way, with a two-sided operator as the residue. That operator is the subject of <em>The Sesquilinear Sandwich Operator</em>, where the family $T_{p,q}$ and the conjugate-linear family attached to it are developed together.</p>
+<h2 id="the-two-representations">The Two Representations</h2>
+<h3 id="the-homomorphism-and-the-anti-homomorphism">The Homomorphism and the Anti-Homomorphism</h3>
+<p><strong>Definition.</strong> The <strong>left regular map</strong> is $\lambda_A : A \to \operatorname{End}_{R^{\varsigma}}(A)$, $\lambda_A(a) = L_a$, and the <strong>right regular map</strong> is $\rho_A : A \to \operatorname{End}_{R}(A)$, $\rho_A(a) = R_a$.</p>
+<p><strong>Proposition.</strong> The map $\lambda_A$ is always $R$-linear, and it satisfies $\lambda_A(a \star b) = \lambda_A(a)\lambda_A(b)$ for all $a, b$ if and only if the product of $A$ is associative; the map $\rho_A$ is always $\varsigma$-semilinear, and it satisfies $\rho_A(a \star b) = \rho_A(b)\rho_A(a)$ for all $a, b$ if and only if the product is associative.</p>
+<p><strong>Proof.</strong> The linearity and the semilinearity are the proposition on the parameter. For the multiplicativity, $\lambda_A(a \star b)(x) = (a \star b) \star x$ and $\lambda_A(a)\lambda_A(b)(x) = a \star (b \star x)$, which are equal for every $x$ exactly when the product is associative; the computation for $\rho_A$ is the same with the order of the two factors reversed. $\square$</p>
+<p><strong>Remark.</strong> The two maps are the two halves of the regular representation of a sesqualgebra, and they are not the same map: one is linear and multiplicative into the conjugate-linear operators, the other is conjugate-linear and anti-multiplicative into the linear ones. In the bilinear case they are the ordinary left and right regular representations of an associative algebra, by the theorem of <em>Associative Algebras</em> that a representation of an algebra and a module over it are the same thing; in the sesquilinear case there are two such maps and no single one of them is linear in both the parameter and the argument.</p>
+<h3 id="the-failure-of-a-single-linear-representation">The Failure of a Single Linear Representation</h3>
+<p><strong>Proposition (the obstruction).</strong> Let $A$ be a sesqualgebra with $\varsigma \neq \mathrm{id}$, let $a, x \in A$, and suppose that $L_a$ is $R$-linear. Then $(\lambda - \varsigma(\lambda))(a \star x) = 0$ for every $\lambda \in R$. Consequently $L_a$ is not $R$-linear as soon as there is an $x$ with $a \star x$ of zero annihilator.</p>
+<p><strong>Proof.</strong> $L_a(\lambda x) = \varsigma(\lambda)L_a(x)$ and $R$-linearity requires $L_a(\lambda x) = \lambda L_a(x)$; subtracting the two expressions gives $(\varsigma(\lambda) - \lambda)(a \star x) = 0$. If $a \star x$ has zero annihilator this forces $\varsigma(\lambda) = \lambda$ for every $\lambda$, that is $\varsigma = \mathrm{id}$, contrary to the hypothesis. $\square$</p>
+<p><strong>Corollary.</strong> Let $A$ be of full type with $\varsigma \neq \mathrm{id}$. Then the left multiplication is not an $R$-algebra representation: there is no $R$-algebra map $\rho : A \to \operatorname{End}_{R}(A)$ with $\rho(a) = L_a$ for every $a$.</p>
+<p><strong>Proof.</strong> Such a $\rho$ would make each $\rho(a) = L_a$ an $R$-linear map. Fix $\lambda \in R$ and put $c_{\lambda} = \lambda - \varsigma(\lambda)$. The proposition applied to every $a$ and every $x$ gives $c_{\lambda}(a \star x) = 0$, that is $c_{\lambda} \cdot (A \star A) = 0$. Since the products generate $A$, the element $c_{\lambda}$ vanishes on all of $A$, and since $A$ has no nonzero left annihilator, $c_{\lambda} = 0$. So $\varsigma(\lambda) = \lambda$ for every $\lambda \in R$, that is $\varsigma = \mathrm{id}$, contrary to the hypothesis. $\square$</p>
+<p><strong>Remark.</strong> The corollary is the precise sense in which a single faithful linear representation cannot carry the whole product: the left multiplication of a sesqualgebra is conjugate-linear, so the regular module $A_A$ is not a module over $A$ unless the product is bilinear. The representation theory of a sesqualgebra is therefore the theory of the conjugate-linear operators on the left and of the linear ones on the right, and it is the reason the operator theory of the category carries two classes of operators rather than one. The same split is behind the two adjoints that a conjugate-linear operator requires, the subject of <em>The Sesquilinear Adjoint Operator</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-complex-matrices">The Complex Matrices</h3>
+<p>Let $A = M_n(\mathbb{C})$ with the conjugate transpose and $\varsigma$ the complex conjugation, so that $x \star y = xy^{*}$. The left multiplication $L_a(x) = ax^{*}$ is conjugate-linear: $L_a(\lambda x) = \bar{\lambda}L_a(x)$, and for the imaginary unit $\lambda$ one gets $L_a(iX) = -i\,L_a(X)$, so no $L_a$ with $a \neq 0$ is complex-linear. The right multiplication $R_a(x) = xa^{*}$ is linear. The composition laws of the standard example read $L_aL_b = T_{a,b^{*}}$ and $R_aR_b = T_{1,(ab)^{*}}$, and the two-sided operators $T_{p,q}$ are the linear maps with $T_{p,q}(iX) = i\,T_{p,q}(X)$; the product $L_aL_b$ is the composition of two conjugate-linear maps and is therefore linear, as the parities require. On the Hermitian part the left multiplication by a Hermitian $a$ is the operator $h \mapsto ah$, and on the skew-Hermitian part it is $s \mapsto as^{*} = -as$; the two differ by the sign, which is the operator form of the anti-fixed subspace of <em>Hermitian and Skew-Hermitian Elements</em>.</p>
+<h3 id="the-field">The Field</h3>
+<p>Let $A = \mathbb{C}$ over $R = \mathbb{C}$ with $\varsigma$ the conjugation, so that the fixed ring is $R^{\varsigma} = \mathbb{R}$, and let $x \star y = x\bar{y}$. Then $L_a(x) = a\bar{x}$ and $R_a(x) = x\bar{a}$. The right multiplication is the multiplication by the scalar $\bar{a}$ and is $\mathbb{C}$-linear; the left multiplication is the composition of the multiplication by $a$ with the conjugation, and for $a \neq 0$ it is $\mathbb{R}$-linear but not $\mathbb{C}$-linear. The two endomorphism rings therefore differ: $\operatorname{End}_{R^{\varsigma}}(A) = \operatorname{End}_{\mathbb{R}}(\mathbb{C})$ is the ring of the $\mathbb{R}$-linear maps, of four real parameters, and it strictly contains $\operatorname{End}_{R}(A) = \operatorname{End}_{\mathbb{C}}(\mathbb{C})$, the multiplications by the complex scalars, of two. The field exhibits the obstruction in the simplest way: $L_1$ is the conjugation, which is not $\mathbb{C}$-linear, and the hypothesis of the proposition is met because $1 \star 1 = 1$ has zero annihilator and the imaginary unit lies outside the fixed ring. The composition is $L_aL_b(x) = a\bar{b}\,x$, a $\mathbb{C}$-linear map, which is the field form of $L_aL_b = T_{a,b^{*}}$ with $T_{p,q}(x) = pqx$.</p>
+<h2 id="summary">Summary</h2>
+<p>The left and the right multiplication of a sesqualgebra are $L_a(x) = a \star x$ and $R_a(x) = x \star a$. The left operator is $\varsigma$-semilinear and lies in $\operatorname{End}_{R^{\varsigma}}(A)$; the right operator is $R$-linear and lies in $\operatorname{End}_{R}(A)$; the parameter maps have the exchanged parities, $a \mapsto L_a$ being $R$-linear and $a \mapsto R_a$ being $\varsigma$-semilinear.</p>
+<p>When the product is associative the left multiplications compose, $L_aL_b = L_{a \star b}$, the right ones anti-compose, $R_aR_b = R_{b \star a}$, and the two families commute; associativity is exactly the condition, as in the bilinear case, and a sesqualgebra of full type is then bilinear. In the standard example the composition leaves the family, $L_aL_b = T_{a,b^{*}}$ and $R_aR_b = T_{1,(ab)^{*}}$, the residue being a two-sided multiplication. The two regular maps are the two halves of the regular representation, one linear and multiplicative, the other conjugate-linear and anti-multiplicative, and a single faithful linear representation cannot carry the whole product, because the left multiplication is conjugate-linear and the regular module $A_A$ is a module over $A$ only when the product is bilinear.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a(x) = a \star x$</td>
+<td>the left multiplication, $\varsigma$-semilinear</td>
+</tr>
+<tr>
+<td>$R_a(x) = x \star a$</td>
+<td>the right multiplication, $R$-linear</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{R^{\varsigma}}(A)$</td>
+<td>the conjugate-linear operators, the home of $L_a$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{R}(A)$</td>
+<td>the linear operators, the home of $R_a$</td>
+</tr>
+<tr>
+<td>$L_{\lambda a} = \lambda L_a$</td>
+<td>the left family is linear in its parameter</td>
+</tr>
+<tr>
+<td>$R_{\lambda a} = \varsigma(\lambda)R_a$</td>
+<td>the right family is conjugate-linear in its parameter</td>
+</tr>
+<tr>
+<td>$L_aL_b = L_{a \star b}$</td>
+<td>the composition in the associative case</td>
+</tr>
+<tr>
+<td>$R_aR_b = R_{b \star a}$</td>
+<td>the anti-composition in the associative case</td>
+</tr>
+<tr>
+<td>$L_aR_b = R_bL_a$</td>
+<td>the commutation in the associative case</td>
+</tr>
+<tr>
+<td>$T_{p,q}(x) = pxq$</td>
+<td>the ordinary two-sided multiplication</td>
+</tr>
+<tr>
+<td>$L_aL_b = T_{a,b^{*}}$</td>
+<td>the composition in the standard example</td>
+</tr>
+<tr>
+<td>$\lambda_A(a) = L_a$, $\rho_A(a) = R_a$</td>
+<td>the left and the right regular maps</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I, Chapters 1–3</em> (Springer, 1998), for the regular representation, the left and the right multiplication of an algebra, and the semilinear maps.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the operators attached to a ring with involution and the conjugate-linear maps they produce.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society Colloquium Publications 37, 1956), for the regular representation of a ring and the module theory attached to it.</li>
+<li>The companion articles of this series: <em>Sesqualgebras</em>, <em>Hermitian and Skew-Hermitian Elements</em>, <em>Associative Algebras</em>, <em>Left and Right Multiplication</em>, <em>The Sesquilinear Sandwich Operator</em>, <em>The Sesquilinear Adjoint Operator</em> and <em>The Left and Right Multiplication Operators on a Jordan Algebra</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -73,9 +73,11 @@ $$</p>
 \omega=i\,\bar\psi\gamma_5\psi,\qquad
 J_\mu=\bar\psi\gamma_\mu\psi,\qquad
 K_\mu=-\bar\psi\gamma_5\gamma_\mu\psi,\qquad
-S_{\mu\nu}=\bar\psi\,i\gamma_\mu\gamma_\nu\,\psi .
+S_{\mu\nu}=\bar\psi\,\sigma_{\mu\nu}\psi,\qquad
+\sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu] .
 $$</p>
 <p>The names are the standard ones: $\sigma$ is the scalar, $\omega$ the pseudoscalar, $J$ the vector, $K$ the axial vector and $S$ the antisymmetric tensor. The five objects comprise $1+1+4+4+6=16$ real components, a basis of the space of sesquilinear forms on $\mathbb C^4$: the sixteen Clifford blades $\mathbb 1,\gamma_\mu,\gamma_{\mu\nu},\gamma_{\mu\nu\rho},\gamma_5\gamma_\mu,\gamma_5$ are a basis of $M_4(\mathbb C)$, so every sesquilinear form $\psi\mapsto\phi^{\dagger}M\psi$ is a combination of the covariants with coefficients the entries of $M$. This is the <strong>completeness of the action</strong>, the ambient form of the corpus's internal Fierz identity: the map $\mathbb B\to\operatorname{End}_{\mathbb C}(S)$ is an isomorphism in the internal case, and in the ambient case the sixteen blades are an isomorphism of $M_4(\mathbb C)$ onto the forms.</p>
+<p><strong>Remark (why the tensor is written with the commutator).</strong> The symmetric product is not antisymmetric, and the tensor must be. On $100$ random spinors one has $S_{\nu\mu}=2i\eta_{\mu\nu}\sigma-S_{\mu\nu}$, equivalently $S_{\mu\nu}=\bar\psi\sigma_{\mu\nu}\psi+i\sigma\,\eta_{\mu\nu}$: the naive $\bar\psi i\gamma_\mu\gamma_\nu\psi$ differs from the tensor by the term $i\sigma\eta_{\mu\nu}$, symmetric in the two indices and <strong>proportional to the scalar</strong> $\sigma$. The difference is therefore invisible in the three singular classes, where $\sigma=0$, which is the only place the $S$-conditions are used, so the classification below is unaffected by the choice. The commutator form is kept because it is the one whose name matches its symmetry, and the corpus records the degeneracy here rather than leaving it to a later reader.</p>
 <p><strong>Remark (the corpus's internal version).</strong> <em>Bilinear Operators on the Biquaternion Algebra with Hermitian Adjoint</em> proves the internal statement: the map $L\colon\mathbb B\to\operatorname{End}_{\mathbb C}(S)$ given by left multiplication on the minimal left ideal $S=\mathbb B\tilde\Pi_1$ is an isomorphism, the four blades being a basis of the four-dimensional endomorphism space, and the four bilinear covariants $b_\mu=(s,e_\mu t)$ a basis of the forms. The present article is the four-dimensional completion: sixteen blades, sixteen covariants. The two are the same statement in dimensions two and four, and the internal one is the case the corpus has already verified.</p>
 <h2 id="the-fierzkofink-identities">The Fierz–Kofink Identities</h2>
 <p><strong>Theorem (the scalar FPK identities).</strong> For every Dirac spinor $\psi$, with $J^2=J_\mu J^\mu=\eta^{\mu\nu}J_\mu J_\nu$ and similarly for $K$ and $J\cdot K$,</p>
@@ -93,7 +95,7 @@ $$</p>
 <p>where $J=J_\mu\gamma^\mu$, $K=K_\mu\gamma^\mu$ and $S=S_{\mu\nu}\gamma^{\mu\nu}$ are read as Clifford elements with the covariant coefficients.</p>
 <p><strong>Statement (the aggregate form of the FPK identities).</strong> The aggregate satisfies</p>
 <p>$$
-Z^2=4\sigma Z,\qquad Z\gamma_\mu Z=4J_\mu Z,\qquad Z i\gamma_5 Z=4\omega Z,\qquad Z\gamma_5\gamma_\mu Z=4K_\mu Z,\qquad Z i\gamma_\mu\gamma_\nu Z=4S_{\mu\nu}Z .
+Z^2=4\sigma Z,\qquad Z\gamma_\mu Z=4J_\mu Z,\qquad Z i\gamma_5 Z=4\omega Z,\qquad Z\gamma_5\gamma_\mu Z=4K_\mu Z,\qquad Z\sigma_{\mu\nu}Z=4S_{\mu\nu}Z .
 $$</p>
 <p><strong>Statement (the inversion theorem).</strong> If $\xi$ is a fixed spinor with $\xi^{\dagger}\gamma_0\psi\neq0$, then $\psi$ is recovered from its aggregate by $\psi=Z\xi$. The aggregate therefore returns from the tensor densities to the spinor; this is why Lounesto named it the <strong>boomerang</strong>.</p>
 <p>The two statements are quoted from the literature (see <em>Further Reading</em>) and are not recomputed here; the normalisation of $Z$ is fixed by the factor $4$ in $Z^2=4\sigma Z$, and the corpus did not succeed in matching the literature's sign conventions quickly enough to assert the identity. The boomerang is the conceptual device that motivates the classification and it is recorded for that reason, with the corpus's uncertainty marked.</p>
@@ -218,7 +220,7 @@ $$</p>
 <td>Axial vector</td>
 </tr>
 <tr>
-<td>$S_{\mu\nu}=\bar\psi\, i\gamma_\mu\gamma_\nu\,\psi$</td>
+<td>$S_{\mu\nu}=\bar\psi\,\sigma_{\mu\nu}\psi$, $\sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$</td>
 <td>Antisymmetric tensor</td>
 </tr>
 <tr>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product"><strong>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A sesqualgebra product is conjugate-linear in one argument. The product $\star$ of $A$ over the datum $(R,\varsigma)$ is $R$-linear in the first variable and $\varsigma$-semilinear in the second (<em>Sesqualgebras</em>, <em>The Sesquilinear Product</em>), and like every product of two arguments it carries an exchange, and the exchange cuts the product into the part it fixes and the part it negates. The exchange of a sesqualgebra product is <strong>not</strong> the bare transposition of the two arguments. The transposed product is $\varsigma$-semilinear in the first variable and $R$-linear in the second, the opposite parity, so the two halves of the bare transpose are only $R^{\varsigma}$-bilinear operations and they are not products of the class. The exchange has therefore to be <strong>adapted</strong>: the arguments are exchanged <strong>and the value is conjugated</strong>, the conjugation being a compatible involution $c$ of the module. With the adapted exchange</p>
+<p>$$
+f^{c}(x,y) := c\bigl(f(y,x)\bigr), \qquad f^{\mathrm s} = \tfrac12\bigl(f + f^{c}\bigr), \qquad f^{\mathrm a} = \tfrac12\bigl(f - f^{c}\bigr),
+$$</p>
+<p>the two parts $f^{\mathrm s}$ and $f^{\mathrm a}$ are sesquilinear of the original parity again, and they are the <strong>symmetric part</strong> and the <strong>antisymmetric part</strong> of $f$. The split of a sesqualgebra product by the adapted exchange <strong>keeps the sesqualgebra</strong>, and that is what distinguishes it from the bare transposition of the bilinear theory.</p>
+<p>This article states the adapted split: the transposition and the two parity classes that force the adaptation, the adapted exchange and its two parts, the reconstruction and the uniqueness, the two exchange-symmetries the two parts detect, the diagonal and the square, the sesquilinearity of the two parts, the derived case and the biquaternion instance. The long development of the same split — the conjugation and its compatibility, the projections of the space of products, the scalar theorem, the structure constants and their count, the standard example of the complex matrices and the collapse in characteristic two — is <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>, where the two parts also carry the longer names <strong>conjugate-symmetric</strong> and <strong>skew-conjugate-symmetric</strong>; this article uses the short names of the sesqualgebra and cites that article for the rest. The bilinear case, in which the bare transposition already keeps the class and the conjugation is the identity, is <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>, of which this article is the case of a product with a conjugate-linear slot. The two halves of the <strong>bare</strong> transpose are the symmetrised sesquilinear product $x \circ y$ of <em>The Sesquilinear Symmetrised Product</em> and the sesquilinear commutator $[x,y]_{\varsigma}$ of <em>The Sesquilinear Commutator</em>, which own those two operations of the fixed ring and are cited rather than repeated.</p>
+<p><strong>Setting and notation.</strong> The setting is that of <em>Sesqualgebras</em>, <em>The Sesquilinear Product</em> and <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$ with fixed ring</p>
+<p>$$
+R^{\varsigma} = \{\lambda \in R : \varsigma(\lambda) = \lambda\},
+$$</p>
+<p>and $A$ is an $R$-module carrying a $\varsigma$-sesquilinear product $\star$, additive in each variable, $R$-linear in the first and $\varsigma$-semilinear in the second,</p>
+<p>$$
+(\lambda x) \star y = \lambda\,(x \star y), \qquad x \star (\lambda y) = \varsigma(\lambda)\,(x \star y).
+$$</p>
+<p>The product need not be associative, commutative or unital. The <strong>conjugation</strong> $c : A \to A$ is additive, involutive, $c^{2} = \mathrm{id}$, and $\varsigma$-semilinear in the sense $c(\lambda x) = \varsigma(\lambda)\,c(x)$; it is the datum the adapted exchange needs, and its compatibility with the involution of the algebra is stated in <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>. The elements fixed and anti-fixed by the involution of the algebra, the Hermitian and the skew-Hermitian ones, are <em>Hermitian and Skew-Hermitian Elements</em>; and throughout $2$ is invertible in $R$, so that every halving below is available, exactly as in the bilinear article.</p>
+<p><strong>A note on the word <em>symmetric</em>.</strong> Here <em>symmetric</em> is said of the <strong>operation</strong>, in the sense that the operation is fixed by the adapted exchange, $f^{\mathrm s}(x,y) = c\bigl(f^{\mathrm s}(y,x)\bigr)$, and not of the elements of $A$; the elements fixed by the involution of the algebra are called <strong>Hermitian</strong>. The longer name for the fixed operation is <strong>conjugate-symmetric</strong>, and the two readings of the word and their occurrences are separated in the Introduction of <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>.</p>
+<hr />
+<h2 id="the-transposition-and-the-two-parity-classes">The Transposition and the Two Parity Classes</h2>
+<h3 id="the-transposition">The Transposition</h3>
+<p><strong>Definition.</strong> Let $f : A \times A \to A$ be additive in each variable. Its <strong>transposition</strong> is the map</p>
+<p>$$
+E(f)(x,y) := f(y,x).
+$$</p>
+<p><strong>Proposition.</strong> The transposition is additive and involutive on the abelian group of the additive maps $A \times A \to A$,</p>
+<p>$$
+E(f + g) = E(f) + E(g), \qquad E\bigl(E(f)\bigr) = f .
+$$</p>
+<p><em>Proof.</em> Both statements are read argument by argument from the definition: $E(f+g)(x,y) = (f+g)(y,x) = f(y,x) + g(y,x)$, and $E(E(f))(x,y) = E(f)(y,x) = f(x,y)$. $\square$</p>
+<p><strong>Proposition (the transposition reverses the parity).</strong> Let $f$ be $\varsigma$-sesquilinear. Then its transposition is $\varsigma$-semilinear in the first variable and $R$-linear in the second:</p>
+<p>$$
+E(f)(\lambda x, y) = \varsigma(\lambda)\,E(f)(x,y), \qquad E(f)(x, \lambda y) = \lambda\,E(f)(x,y).
+$$</p>
+<p><em>Proof.</em> The first display is the second scalar rule of $\star$ read in the exchanged slots, $E(f)(\lambda x,y) = f(y,\lambda x) = \varsigma(\lambda) f(y,x)$, and the second is the first scalar rule, $E(f)(x,\lambda y) = f(\lambda y, x) = \lambda f(y,x)$. $\square$</p>
+<p><strong>Remark.</strong> Write $\mathrm{Sesq}(A)$ for the $R$-module of the $\varsigma$-sesquilinear products and $\mathrm{Sesq}^{\mathrm{op}}(A)$ for the $R$-module of the additive maps that are $\varsigma$-semilinear in the first variable and $R$-linear in the second, the products of the <strong>opposite parity</strong>. The proposition says that the transposition is a bijection</p>
+<p>$$
+E : \mathrm{Sesq}(A) \longrightarrow \mathrm{Sesq}^{\mathrm{op}}(A),
+$$</p>
+<p>so <strong>the transposition does not preserve the class of the product</strong>, and no construction made of it alone can stay inside the sesqualgebra. The two classes coincide exactly in the degenerate case $\bigl(\varsigma(\lambda) - \lambda\bigr)(y \star x) = 0$ for all $\lambda, x, y$, which contains the case $\varsigma = \mathrm{id}$ of the bilinear theory and the case of a product that is identically zero. The obstruction is the reason the exchange is adapted below, and it is the subject of the opening section of <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>, §<em>The Obstruction</em>.</p>
+<h3 id="the-adapted-exchange">The Adapted Exchange</h3>
+<p><strong>Definition.</strong> Let $c$ be a conjugation of $A$. The <strong>exchange of $f$ by $c$</strong> is the transposition of the arguments followed by the conjugation of the value,</p>
+<p>$$
+f^{c} := c \circ E(f), \qquad f^{c}(x,y) = c\bigl(f(y,x)\bigr).
+$$</p>
+<p><strong>Proposition (the adapted exchange keeps the class).</strong> Let $f$ be $\varsigma$-sesquilinear and let $c$ be a conjugation. Then $f^{c}$ is $\varsigma$-sesquilinear, of the same parity as $f$; the assignment $f \mapsto f^{c}$ is additive and involutive,</p>
+<p>$$
+(f + g)^{c} = f^{c} + g^{c}, \qquad (\lambda f)^{c} = \varsigma(\lambda)\, f^{c}, \qquad \bigl(f^{c}\bigr)^{c} = f ,
+$$</p>
+<p>so that it is an involution of the $R^{\varsigma}$-module of the products of the class.</p>
+<p><em>Proof.</em> For the first slot of $f^{c}$,</p>
+<p>$$
+f^{c}(\lambda x, y) = c\bigl(f(y, \lambda x)\bigr) = c\bigl(\varsigma(\lambda)\, f(y,x)\bigr) = \varsigma\bigl(\varsigma(\lambda)\bigr)\, c\bigl(f(y,x)\bigr) = \lambda\, f^{c}(x,y),
+$$</p>
+<p>the middle step being the $\varsigma$-semilinearity of $c$ and the last the involution property $\varsigma \circ \varsigma = \mathrm{id}$ of the base involution; the second slot is the same computation with the two scalar rules exchanged, $f^{c}(x, \lambda y) = c\bigl(\lambda f(y,x)\bigr) = \varsigma(\lambda) f^{c}(x,y)$. Additivity and the scalar rule in $f$ are coefficientwise, and the involution is</p>
+<p>$$
+\bigl(f^{c}\bigr)^{c}(x,y) = c\bigl(f^{c}(y,x)\bigr) = c\bigl(c\bigl(f(x,y)\bigr)\bigr) = f(x,y),
+$$</p>
+<p>which is $c^{2} = \mathrm{id}$. $\square$</p>
+<p><strong>Remark.</strong> The conjugation repairs the parity that the transposition reverses: the transposition alone carries a sesquilinear product to one of the opposite parity, and composing with $c$ brings it back. The exchange $f \mapsto f^{c}$ is written $\star^{c}$ or $E_{c}(\star)$ in <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>, §<em>The Exchange</em>, where the compatibility of $c$ with the datum is stated; the identity behind the repaired parity is the display of this proof.</p>
+<p><strong>Remark (the choice of $c$).</strong> On the biquaternions with $(\mathbb{C},\bar{\cdot})$ two conjugations are available, the coefficientwise conjugation $\bar{\cdot}$ and the Hermitian conjugation ${}^{*}$, and they do not give the same split. With $c = {}^{*}$ the exchange of the derived operation returns the product itself, $\tilde{Q}\tilde{P}^{*\,*} = \tilde{P}\tilde{Q}^{*}$, and the split is trivial; with $c = \bar{\cdot}$ the exchange is the natural conjugate of the value, $\overline{\tilde{Q}\tilde{P}^{*}} = \bigl(\tilde{P}\tilde{Q}^{*}\bigr)^{\natural}$, and the split is the one carried out in §<em>The Biquaternion Instance</em>. The two candidates are separated in <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>, §<em>The Derived Operation</em>.</p>
+<h3 id="the-symmetrisation-and-the-antisymmetrisation">The Symmetrisation and the Antisymmetrisation</h3>
+<p><strong>Definition.</strong> For a product $f$ of the class put</p>
+<p>$$
+f^{\mathrm s} = \tfrac12\bigl(f + f^{c}\bigr), \qquad f^{\mathrm a} = \tfrac12\bigl(f - f^{c}\bigr).
+$$</p>
+<p>The <strong>symmetric part</strong> of $f$ is $f^{\mathrm s}$ and its <strong>antisymmetric part</strong> is $f^{\mathrm a}$; read on the arguments,</p>
+<p>$$
+f^{\mathrm s}(x,y) = \tfrac12\bigl(f(x,y) + c(f(y,x))\bigr), \qquad f^{\mathrm a}(x,y) = \tfrac12\bigl(f(x,y) - c(f(y,x))\bigr).
+$$</p>
+<p><strong>Proposition.</strong> Both parts are $\varsigma$-sesquilinear of the class of $f$ and additive in each variable, and for all $x, y \in A$</p>
+<p>$$
+f^{\mathrm s}(x,y) = c\bigl(f^{\mathrm s}(y,x)\bigr), \qquad f^{\mathrm a}(x,y) = -c\bigl(f^{\mathrm a}(y,x)\bigr),
+$$</p>
+<p>together with the reconstruction</p>
+<p>$$
+f = f^{\mathrm s} + f^{\mathrm a}, \qquad f^{c} = f^{\mathrm s} - f^{\mathrm a}, \qquad f - f^{c} = 2\,f^{\mathrm a}.
+$$</p>
+<p><em>Proof.</em> Sesquilinearity is the proposition of §<em>The Adapted Exchange</em> applied to $f$ and to $f^{c}$ and closed under the halves, and additivity is inherited from $f$ coefficient by coefficient. Exchanging $x$ and $y$ in the definition of $f^{\mathrm s}$ and conjugating gives $c\bigl(f^{\mathrm s}(y,x)\bigr) = \tfrac12\bigl(c(f(y,x)) + c^{2}(f(x,y))\bigr) = \tfrac12\bigl(c(f(y,x)) + f(x,y)\bigr) = f^{\mathrm s}(x,y)$, and the antisymmetric display is the same computation with the sign; the reconstruction is the sum and the difference of the two definitions. $\square$</p>
+<p><strong>Theorem (uniqueness of the split).</strong> Suppose $f = s + t$ with $s$ fixed by the exchange, $s(x,y) = c(s(y,x))$, and $t$ negated by it, $t(x,y) = -c(t(y,x))$ for all $x, y$. Then $s = f^{\mathrm s}$ and $t = f^{\mathrm a}$.</p>
+<p><em>Proof.</em> Exchanging the arguments in the assumed decomposition and conjugating gives $c(f(y,x)) = s(x,y) - t(x,y)$, because $s$ is fixed and $t$ negated. Adding this relation to $f(x,y) = s(x,y) + t(x,y)$ gives $f(x,y) + c(f(y,x)) = 2s(x,y)$, and subtracting it gives $f(x,y) - c(f(y,x)) = 2t(x,y)$; the two quotients by $2$ are the two parts. The division by $2$ is the only place where the hypothesis on the ring is used. $\square$</p>
+<p><strong>Corollary (what each part detects).</strong> The symmetric part vanishes identically exactly when the product is exchange-<strong>anticommutative</strong>, $f(x,y) = -c(f(y,x))$ for all $x, y$, and the antisymmetric part vanishes identically exactly when it is exchange-<strong>symmetric</strong>, $f(x,y) = c(f(y,x))$.</p>
+<p><em>Proof.</em> The first part is zero exactly when $f(x,y) = -c(f(y,x))$ for every pair, which is the first condition; the second is zero exactly when $f(x,y) = c(f(y,x))$. $\square$</p>
+<p><strong>Remark.</strong> The pair of the two parts is the product: to give a product of the class is to give a conjugate-symmetric operation and a skew-conjugate-symmetric one, and the exchange $f \mapsto f^{c}$ is the involution that separates them. Nothing in this section refers to the transposition alone, and the section holds for every product of the class with a conjugation.</p>
+<h3 id="the-diagonal-and-the-square">The Diagonal and the Square</h3>
+<p><strong>Proposition (the polarisation of the square).</strong> For all $x, y \in A$,</p>
+<p>$$
+f(x+y, x+y) - f(x,x) - f(y,y) = f(x,y) + f(y,x) = 2\,f^{\mathrm{sym}}(x,y),
+$$</p>
+<p>where $f^{\mathrm{sym}}(x,y) = \tfrac12\bigl(f(x,y) + f(y,x)\bigr)$ is the <strong>plain</strong> symmetrisation, the half of the bare transposition.</p>
+<p><em>Proof.</em> Expand the left-hand side by the additivity in each variable and cancel the two squares:</p>
+<p>$$
+f(x+y,x+y) = f(x,x) + f(x,y) + f(y,x) + f(y,y).
+$$</p>
+<p>$\square$</p>
+<p><strong>Remark (the polarisation sees the plain symmetrisation, not the symmetric part).</strong> The right-hand side is twice the plain symmetrisation of <em>The Sesquilinear Symmetrised Product</em>, the operation $x \circ y$ of the bare transpose, and it is twice the symmetric part $f^{\mathrm s}$ only when $c$ is the identity, that is in the bilinear case. <strong>The polarisation identity therefore does not recover the symmetric part of a sesqualgebra product</strong>, and it is the first of the two facts of the bilinear theory that the adaptation costs. The reason is that the square of a sum conjugates nothing while the exchange conjugates the value, so the diagonal and the polarisation cannot both see the same operation.</p>
+<p><strong>Proposition (the diagonal is the separated square).</strong> For every $x \in A$,</p>
+<p>$$
+f^{\mathrm s}(x,x) = \tfrac12\bigl(f(x,x) + c(f(x,x))\bigr), \qquad f^{\mathrm a}(x,x) = \tfrac12\bigl(f(x,x) - c(f(x,x))\bigr).
+$$</p>
+<p><em>Proof.</em> The definitions at $y = x$. $\square$</p>
+<p><strong>Remark (the antisymmetric part is not zero on the diagonal).</strong> In the bilinear theory the antisymmetric part vanishes identically on the diagonal, $f_{-}(x,x) = \tfrac12(f(x,x) - f(x,x)) = 0$, and that vanishing is what makes the square a function of the symmetric part alone. For a sesqualgebra product the antisymmetric part on the diagonal is the antisymmetrised square $\tfrac12\bigl(f(x,x) - c(f(x,x))\bigr)$, which <strong>need not vanish</strong>: it vanishes exactly when the square of every element is fixed by the conjugation. This is the second fact the adaptation costs, and the two are the same fact read on the diagonal and off it.</p>
+<p><strong>Remark (what the diagonal carries).</strong> The pair $\bigl(f^{\mathrm s}(x,x), f^{\mathrm a}(x,x)\bigr)$ is the decomposition of the square $f(x,x)$ into its part fixed and its part anti-fixed by the conjugation, and both are recovered from the square alone. What is lost is the recovery of the two parts <strong>off</strong> the diagonal from the square map: no polarisation identity recovers the exchange-conjugate symmetrisation, and the diagonal is the one piece of the square that stays. The construction of the two parts is common to an algebra product and to a sesqualgebra product only in the bilinear case; in the general case the exchange is adapted and the square is split by the conjugation instead of by the transposition.</p>
+<p><strong>Remark (the two parts are independent data).</strong> Since a product of the class is an arbitrary pair $(s,t)$ of a conjugate-symmetric and a skew-conjugate-symmetric operation by the uniqueness theorem, <strong>a condition imposed on the symmetric part imposes nothing on the antisymmetric part and conversely</strong>. The independence is inherited from the definitions, and the two projections of the space of products onto its two halves are stated in <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>, §<em>The Two Projections</em>, where they are idempotent, orthogonal and sum to the identity.</p>
+<h3 id="the-two-parts-under-their-own-names">The Two Parts Under Their Own Names</h3>
+<p><strong>Remark.</strong> On a sesqualgebra the symmetric part and the antisymmetric part of the product $\star$ have their own names and their own articles.</p>
+<ul>
+<li>The symmetric part is the <strong>conjugate-symmetric part</strong> of the product relative to $c$,
+$$
+f^{\mathrm s}(x,y) = \tfrac12\bigl(x \star y + c(y \star x)\bigr),
+$$
+the operation fixed by the adapted exchange; its diagonal is the part of the square fixed by the conjugation.</li>
+<li>The antisymmetric part is the <strong>skew-conjugate-symmetric part</strong>,
+$$
+f^{\mathrm a}(x,y) = \tfrac12\bigl(x \star y - c(y \star x)\bigr),
+$$
+the operation negated by the adapted exchange; its diagonal is the antisymmetrised square.</li>
+</ul>
+<p>The two are developed, with the scalar theorem, the projections and the standard example, in <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>; the reconstruction $x \star y = f^{\mathrm s}(x,y) + f^{\mathrm a}(x,y)$ is the display at the opening of §<em>Definition and Reconstruction</em> there.</p>
+<p><strong>Remark (the two operations of the bare transpose, and why they are not the two parts).</strong> The transposition alone defines two further operations, the <strong>symmetrised sesquilinear product</strong></p>
+<p>$$
+x \circ y := \tfrac12\bigl(x \star y + y \star x\bigr)
+$$</p>
+<p>of <em>The Sesquilinear Symmetrised Product</em> and the <strong>sesquilinear commutator</strong></p>
+<p>$$
+[x,y]_{\varsigma} := x \star y - y \star x
+$$</p>
+<p>of <em>The Sesquilinear Commutator</em>, whose correction term $\bigl(\lambda - \varsigma(\lambda)\bigr)(y \star x)$ is the whole difference from the bilinear case and whose Jacobi identity fails. By the proposition of §<em>The Transposition and the Two Parity Classes</em> the two are only $R^{\varsigma}$-bilinear and are not products of the sesqualgebra. <strong>They are the two halves of the bare transpose and not the two parts of the product</strong>, and the plain reconstruction</p>
+<p>$$
+x \star y = x \circ y + \tfrac12\,[x,y]_{\varsigma}
+$$</p>
+<p>is the reconstruction of that bare split. The corpus reads the twelve operations of the biquaternion space under the adapted exchange; the plain operations keep their own articles and their own laws, and the contrast between the two readings of the same product is the subject of §<em>The Other Exchange, and the Class It Keeps</em> of <em>Scalar / Vector decomposition of the Biquaternion Complex Products</em>.</p>
+<hr />
+<h2 id="the-split-keeps-the-class">The Split Keeps the Class</h2>
+<h3 id="the-two-parts-are-sesquilinear">The Two Parts Are Sesquilinear</h3>
+<p><strong>Proposition.</strong> Let $\star$ be $\varsigma$-sesquilinear and let $\star^{\mathrm s}$ and $\star^{\mathrm a}$ be its two parts under the adapted exchange. Then both are $\varsigma$-sesquilinear of the class of $\star$: for $\lambda \in R$,</p>
+<p>$$
+(\lambda x) \star^{\mathrm s} y = \lambda\,(x \star^{\mathrm s} y), \qquad x \star^{\mathrm s} (\lambda y) = \varsigma(\lambda)\,(x \star^{\mathrm s} y),
+$$</p>
+<p>and the same two rules hold for $\star^{\mathrm a}$.</p>
+<p><em>Proof.</em> This is the proposition of §<em>The Adapted Exchange</em> for $\star^{c}$, closed under the half-sum and the half-difference. $\square$</p>
+<p><strong>Remark.</strong> The proposition is the substance of the article. <strong>A sesqualgebra product is split into two parts and the two parts are products of the sesqualgebra</strong>: the split does not leave the class, and the closure that the bare transpose loses by the correction term $\tfrac12\bigl(\varsigma(\lambda) - \lambda\bigr)(y \star x)$ is restored by the conjugation of the value. The four operations $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{SQS}$ and $\mathrm{AQS}$ of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> are the four parts of the two biquaternion sesqualgebra products under this exchange, and they are sesquilinear over $(\mathbb{C},\bar{\cdot})$; the four parts of the <strong>bare</strong> split, which are only $\mathbb{R}$-bilinear and are not sesqualgebra products, are the readings of <em>Scalar / Vector decomposition of the Biquaternion Complex Products</em>, where the split is carried by the order symmetry.</p>
+<p><strong>Remark (the count).</strong> The two parts of a product of the class are not an independent pair of a symmetric and an antisymmetric <strong>bilinear</strong> map, as in the algebra article: the space of products of the class is the direct sum of its conjugate-symmetric and its skew-conjugate-symmetric elements, both of which are sesquilinear, so the two halves are of equal size. On a free module of rank $n$ over the fixed field the two arrays of structure constants each have rank $n^{3}$ entries relative to the split of the constants by the transposition and the conjugation together, which is the count of <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>, §<em>The Count</em>.</p>
+<h3 id="the-values-in-the-derived-case">The Values in the Derived Case</h3>
+<p><strong>Definition.</strong> The standard example of <em>Sesqualgebras</em> is the <strong>derived operation</strong> of an associative $R$-algebra $A$ with a $\varsigma$-semilinear involution $*$, that is the product</p>
+<p>$$
+x \star y := x\,y^{*},
+$$</p>
+<p>where the juxtaposition is the associative product, $R$-linear in the first variable and $\varsigma$-semilinear in the second.</p>
+<p><strong>Proposition.</strong> Let $c$ be a conjugation of $A$ and let $\star$ be the derived operation. Then</p>
+<p>$$
+\star^{c}(x,y) = c\bigl(yx^{*}\bigr), \qquad
+\star^{\mathrm s}(x,y) = \tfrac12\bigl(xy^{*} + c(yx^{*})\bigr), \qquad
+\star^{\mathrm a}(x,y) = \tfrac12\bigl(xy^{*} - c(yx^{*})\bigr),
+$$</p>
+<p>and if $c$ is an automorphism of the associative product this reads $\star^{c}(x,y) = c(y)\,c(x^{*})$.</p>
+<p><em>Proof.</em> Substitute the derived operation in the adapted exchange: $\star^{c}(x,y) = c\bigl(\star(y,x)\bigr) = c(yx^{*})$, and the two halves are the definitions; the last display is the multiplicativity of an automorphism $c$. $\square$</p>
+<p><strong>Remark (the two twists, and which one carries information).</strong> The algebra carries the involution $*$ itself as a second conjugation, and with it the exchange $\star \mapsto \star^{*}$, $\star^{*}(x,y) = \bigl(\star(y,x)\bigr)^{*}$. For the derived operation this exchange does nothing,</p>
+<p>$$
+\bigl(\star(y,x)\bigr)^{*} = \bigl(yx^{*}\bigr)^{*} = xy^{*} = \star(x,y),
+$$</p>
+<p>so the derived operation is fixed by the $*$-exchange and its split by that exchange is trivial. <strong>The derived operation is conjugate-symmetric in the $*$-sense automatically, and it is the other conjugation — the one whose fixed ring contains the scalars — that carries the split.</strong> The two exchanges must not be confused, and it is the second that this article uses; the computation is <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>, §<em>The Derived Operation</em>.</p>
+<p><strong>Remark (the Hermitian half in the derived case).</strong> When $c$ is the identity of the algebra the symmetric part is the plain symmetrisation, $\star^{\mathrm s}(x,y) = \tfrac12(xy^{*} + yx^{*})$, which takes Hermitian values, $(\star^{\mathrm s}(x,y))^{*} = \star^{\mathrm s}(x,y)$, and the antisymmetric part skew-Hermitian values; that is the bilinear-certificate case of the algebra article, where the two halves are the Hermitian and the skew-Hermitian parts of the value. For a genuine sesqualgebra with $c \neq \mathrm{id}$ the two parts are not the Hermitian and the skew-Hermitian parts in general, and the symmetric part carries the scalar part of the product rather than the Hermitian part of the value: the scalar theorem of <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>, §<em>The Scalar Theorem</em>, says that the whole scalar form of a derived operation lies in the symmetric part, whereas the plain split distributes only the even part of that form into its symmetric half.</p>
+<hr />
+<h2 id="the-biquaternion-instance">The Biquaternion Instance</h2>
+<p>The complex space of the biquaternion algebra carries two sesqualgebra products over $(\mathbb{C},\bar{\cdot})$, the sesquilinear one $\tilde{P}\tilde{Q}^{*}$ and the quaternionic sesquilinear one $\tilde{P}^{\natural}\tilde{Q}^{*}$. Their base involution is the complex conjugation and their conjugation is the coefficientwise conjugation $\bar{\cdot}$, so their adapted exchange is the transposition of the two arguments followed by $\bar{\cdot}$, and the two parts of each are the four operations $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{SQS}$ and $\mathrm{AQS}$ of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<ul>
+<li>For the <strong>sesquilinear product</strong> the exchange is the natural conjugation of the value, $\overline{\tilde{Q}\tilde{P}^{*}} = \bigl(\tilde{P}\tilde{Q}^{*}\bigr)^{\natural}$, so the two parts are the scalar and the vector part of the one value:
+$$
+\mathrm{SPS} = \tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\overline{\tilde{Q}\tilde{P}^{*}}\bigr) = \mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{*}\bigr) = P_0\overline{Q_0} + (\mathbf{P},\overline{\mathbf{Q}}), \qquad
+\mathrm{APS} = \tfrac12\bigl(\tilde{P}\tilde{Q}^{*}-\overline{\tilde{Q}\tilde{P}^{*}}\bigr) = \mathrm{Vect}\bigl(\tilde{P}\tilde{Q}^{*}\bigr) = -P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}},
+$$
+respectively <strong>central</strong> and <strong>pure vector</strong>. The symmetric part is the Hermitian form $H = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ of <em>The Hermitian Form on the Biquaternion Algebra</em> read as a product, and the antisymmetric part is the whole vector part $-P_0\overline{\mathbf{Q}} + \overline{Q_0}\mathbf{P} - \mathbf{P}\times\overline{\mathbf{Q}}$.</li>
+<li>For the <strong>quaternionic sesquilinear product</strong> the exchange is not a conjugation of the value, and the two parts are the symmetrisation and half the commutator of two elements in the plain product,
+$$
+\mathrm{SQS} = \tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*} + \tilde{Q}^{*}\tilde{P}^{\natural}\bigr), \qquad
+\mathrm{AQS} = \tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*} - \tilde{Q}^{*}\tilde{P}^{\natural}\bigr),
+$$
+since $\overline{\tilde{Q}^{\natural}\tilde{P}^{*}} = \tilde{Q}^{*}\tilde{P}^{\natural}$. The antisymmetric part is the cross product $\mathbf{P}\times\overline{\mathbf{Q}}$, <strong>pure vector</strong>; the symmetric part carries the quaternionic sesquilinear form $K = P_0\overline{Q_0} - (\mathbf{P},\overline{\mathbf{Q}})$ in its scalar part and $-\bigl(P_0\overline{\mathbf{Q}} + \overline{Q_0}\mathbf{P}\bigr)$ in its vector part, and it lies in <strong>no</strong> subspace of the six.</li>
+</ul>
+<p>The two parts of each of the four products are written in scalar–vector form, and the four operations with their names and their laws are read, in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. The two $\mathbb{C}$-bilinear products of the space have the trivial base involution, so their exchange is the bare transposition and their parts are the same under either reading: the plain and the quaternionic algebra rows $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{SQA}$ and $\mathrm{AQA}$ are unchanged by the adaptation, and the adaptation touches only the four sesqualgebra parts.</p>
+<p><strong>Remark (the twelve and the ten).</strong> On the <strong>real</strong> part of the space, where the coefficientwise conjugation acts trivially, the two readings of the exchange coincide, and two pairs of the twelve operations coincide: the central forms agree, $\mathrm{SQA} = \mathrm{SPS}$, and the two cross products agree, $\mathrm{APA} = \mathrm{AQS}$. The twelve are pairwise distinct on the complex space and fall to ten on the real part; the count and the coincidences are <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, §<em>The Twelve Are Distinct, and Ten on the Real Part</em>.</p>
+<hr />
+<h2 id="degenerations">Degenerations</h2>
+<p><strong>Remark (the bilinear case).</strong> When the base involution is trivial, $\varsigma = \mathrm{id}$, the conjugation $c$ that carries information is the identity, the adapted exchange is the bare transposition, the two classes coincide, and every statement of this article is a statement of <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>: the two projections are projections of the space of products, the direct sum $S^{2} A \oplus \Lambda^{2} A$ is available, the antisymmetric part vanishes on the diagonal, and the polarisation recovers the symmetric part. The present article is therefore the general form of which the bilinear article is the case of two slots of the same type, and the case of a trivial conjugation.</p>
+<p><strong>Remark (the derived operation and the trivial conjugation).</strong> When the conjugation is the involution that generates the derived operation, the exchange fixes the product, the symmetric part is the product and the antisymmetric part is zero; the split is then trivial and carries no information, exactly as in §<em>The Values in the Derived Case</em>. The interesting conjugation is the one that is not the generating involution.</p>
+<p><strong>Remark (the trivial product).</strong> When the product is identically zero the two parts are zero and the reconstruction is trivial; the obstruction of §<em>The Transposition and the Two Parity Classes</em> is then vacuous, since its correction term contains $y \star x$.</p>
+<p><strong>Remark (characteristic two).</strong> If $2 = 0$ in $R$ then $-1 = 1$, the exchange and its negative coincide, and the two parts $f^{\mathrm s}$ and $f^{\mathrm a}$ are equal, being $\tfrac12(f \pm f^{c})$ with the two signs indistinguishable. The projections are then unavailable, since they are built from $\tfrac12$, and the split of this article does not exist.</p>
+<p><strong>Remark (the general commutative ring).</strong> The construction needs $\tfrac12$, not a field, and it needs the conjugation $c$ with its $\varsigma$-semilinearity and its involution; over a commutative ring in which $2$ is invertible the whole of the article goes through unchanged, with $R^{\varsigma}$ the fixed ring of the involution. The statements on the forms of the biquaternion instance specialise $R = \mathbb{C}$ and $\varsigma$ the complex conjugation.</p>
+<hr />
+<h2 id="where-the-corpus-uses-the-split">Where the Corpus Uses the Split</h2>
+<p>The split is used at several places in the corpus, and each use is recorded in the article that owns it.</p>
+<p><strong>The two parts of the sesqualgebra.</strong> The conjugate-symmetric and the skew-conjugate-symmetric parts, their existence, their uniqueness and their scalar theorem are <em>The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product</em>, which owns the adapted exchange and its development. This article owns the definition of the two parts as the halves of the adapted exchange and the reading of the biquaternion instance.</p>
+<p><strong>The two operations of the bare transpose.</strong> The symmetrised sesquilinear product $x \circ y$ and the sesquilinear commutator $[x,y]_{\varsigma}$ are <em>The Sesquilinear Symmetrised Product</em> and <em>The Sesquilinear Commutator</em>, which own those two operations of the fixed ring, their scalar rules, the closure of the Hermitian elements, the values of the bracket in the skew-Hermitian part and the failure of the Jacobi identity. They are the halves of the bare transpose and not the two parts of the product, and the two readings are compared in §<em>The Other Exchange, and the Class It Keeps</em> of <em>Scalar / Vector decomposition of the Biquaternion Complex Products</em>.</p>
+<p><strong>The squares and the cone.</strong> The diagonal of the split in the derived case is the square and the cone of the squares is its image in the fixed set of the conjugation; the construction is <em>Hermitian Squares and the Algebraic Positive Cone</em>, and the two must not be confused with the two halves of the involution of the elements.</p>
+<p><strong>The biquaternion instance.</strong> The four parts of the two sesqualgebra products of the biquaternion algebra and their scalar–vector forms, and the twelve operations with their names and their laws, are <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>; the order-symmetry reading of the same four parts is <em>Scalar / Vector decomposition of the Biquaternion Complex Products</em>.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A $\varsigma$-sesquilinear product on an $R$-module $A$ is split into a symmetric part and an antisymmetric part by the <strong>adapted exchange</strong>, the transposition of the two arguments followed by the conjugation of the value,</p>
+<p>$$
+f^{c}(x,y) = c\bigl(f(y,x)\bigr), \qquad f^{\mathrm s} = \tfrac12\bigl(f + f^{c}\bigr), \qquad f^{\mathrm a} = \tfrac12\bigl(f - f^{c}\bigr),
+$$</p>
+<p>with the reconstruction $f = f^{\mathrm s} + f^{\mathrm a}$, the uniqueness of the pair and the sentence that the symmetric part is fixed and the antisymmetric part negated by the exchange. The exchange is adapted and not bare because the bare transposition of a sesquilinear product has the <strong>opposite parity</strong>: it is semilinear in the first variable and linear in the second, so the two halves of the bare transpose are only $R^{\varsigma}$-bilinear and are not products of the class. The conjugation repairs the parity, $(f^{c})^{c} = f$, and the two parts are $\varsigma$-sesquilinear again: <strong>the split of a sesqualgebra product by the adapted exchange keeps the sesqualgebra</strong>, the two parts are conjugate-symmetric and skew-conjugate-symmetric, and the two operations of the bare transpose are the symmetrised sesquilinear product $x \circ y$ and the sesquilinear commutator $[x,y]_{\varsigma}$, which are not the two parts.</p>
+<p>Two facts of the bilinear theory are paid for by the adaptation. The polarisation of the square polarises the <strong>plain</strong> symmetrisation and not the symmetric part, and the antisymmetric part does not vanish on the diagonal: it is the antisymmetrised square, which vanishes exactly when the square of every element is fixed by the conjugation. The diagonal of the split is the decomposition of the square by the conjugation into its fixed and its anti-fixed part, and both are recovered from the square alone, while the recovery of the two parts off the diagonal from the square map is lost. On the biquaternion space the two parts of the sesquilinear product are the scalar part and the vector part of the value, $\mathrm{SPS} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ in the centre and $\mathrm{APS} = \mathrm{Vect}(\tilde{P}\tilde{Q}^{*})$ in the vector subspace, and the two parts of the quaternionic sesquilinear product are the symmetrisation and half the commutator of $\tilde{P}^{\natural}$ with $\tilde{Q}^{*}$, whose antisymmetric half is the cross product $\mathbf{P}\times\overline{\mathbf{Q}}$. The two $\mathbb{C}$-bilinear products have the trivial base involution, their exchange is the bare transposition, and the four algebra parts $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{SQA}$ and $\mathrm{AQA}$ are unchanged. The twelve operations are pairwise distinct on the complex space and fall to ten on the real part, where $\mathrm{SQA} = \mathrm{SPS}$ and $\mathrm{APA} = \mathrm{AQS}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $\varsigma$, $R^{\varsigma}$</td>
+<td>A commutative ring with $1$; an involution of $R$; its fixed ring $\{\lambda : \varsigma(\lambda) = \lambda\}$</td>
+</tr>
+<tr>
+<td>$A$, $\star$</td>
+<td>An $R$-module; a $\varsigma$-sesquilinear product, $R$-linear in the first variable and $\varsigma$-semilinear in the second</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>A conjugation of $A$: additive, involutive, $c(\lambda x) = \varsigma(\lambda)c(x)$</td>
+</tr>
+<tr>
+<td>$E(f)(x,y) = f(y,x)$</td>
+<td>The bare transposition; additive and involutive; it reverses the parity</td>
+</tr>
+<tr>
+<td>$f^{c}(x,y) = c\bigl(f(y,x)\bigr)$</td>
+<td>The adapted exchange; an involution of the class of products</td>
+</tr>
+<tr>
+<td>$\mathrm{Sesq}(A)$, $\mathrm{Sesq}^{\mathrm{op}}(A)$</td>
+<td>The products of the class and the products of the opposite parity; the transposition is a bijection between them</td>
+</tr>
+<tr>
+<td>$f^{\mathrm s} = \tfrac12(f + f^{c})$</td>
+<td>The symmetric part of $f$, the conjugate-symmetric part</td>
+</tr>
+<tr>
+<td>$f^{\mathrm a} = \tfrac12(f - f^{c})$</td>
+<td>The antisymmetric part of $f$, the skew-conjugate-symmetric part</td>
+</tr>
+<tr>
+<td>$f = f^{\mathrm s} + f^{\mathrm a}$</td>
+<td>The reconstruction; the two parts determine the product</td>
+</tr>
+<tr>
+<td>$f^{\mathrm s}(x,y) = c(f^{\mathrm s}(y,x))$, $f^{\mathrm a}(x,y) = -c(f^{\mathrm a}(y,x))$</td>
+<td>The two exchange-symmetries the parts satisfy</td>
+</tr>
+<tr>
+<td>$f^{\mathrm s}(x,x) = \tfrac12(x \star x + c(x \star x))$</td>
+<td>The diagonal of the symmetric part: the fixed part of the square</td>
+</tr>
+<tr>
+<td>$f(x{+}y,x{+}y) - f(x,x) - f(y,y) = 2f^{\mathrm{sym}}(x,y)$</td>
+<td>The polarisation of the square: it recovers the plain symmetrisation</td>
+</tr>
+<tr>
+<td>$x \circ y = \tfrac12(x \star y + y \star x)$</td>
+<td>The symmetrised sesquilinear product, the half of the bare transpose (<em>The Sesquilinear Symmetrised Product</em>)</td>
+</tr>
+<tr>
+<td>$[x,y]_{\varsigma} = x \star y - y \star x$</td>
+<td>The sesquilinear commutator, the other half of the bare transpose (<em>The Sesquilinear Commutator</em>)</td>
+</tr>
+<tr>
+<td>$x \star y = x y^{*}$</td>
+<td>The derived operation of an associative algebra with a $\varsigma$-semilinear involution $*$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{SQS}$, $\mathrm{AQS}$</td>
+<td>The four parts of the two biquaternion sesqualgebra products, in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em></td>
+</tr>
+<tr>
+<td>$\mathrm{SPS}=\tfrac12(\tilde{P}\tilde{Q}^{*}+\overline{\tilde{Q}}\tilde{P}^{\natural})=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$</td>
+<td>The symmetric part of the biquaternion sesquilinear product, central</td>
+</tr>
+<tr>
+<td>$\mathrm{AQS} = \mathbf{P}\times\overline{\mathbf{Q}}$</td>
+<td>The antisymmetric part of the biquaternion quaternionic sesquilinear product, pure vector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>N. Bourbaki, <em>Algèbre</em>, Chapitre IX: <em>Formes sesquilinéaires et formes quadratiques</em> (Hermann, 1959), for the sesquilinear forms, the base ring with involution and the symmetric and alternating parts of a Hermitian form.</li>
+<li>W. Scharlau, <em>Quadratic and Hermitian Forms</em>, Grundlehren der mathematischen Wissenschaften <strong>270</strong> (Springer, 1985), for the conjugate module, the fixed ring of an involution and the forms carried by the two parities.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications <strong>44</strong> (American Mathematical Society, 1998), for the involutions of an algebra, the conjugations they define and the fixed sets that carry the scalars.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the symmetrisation and the antisymmetrisation of a product in the bilinear case, of which this article is the sesquilinear form.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Interscience, 1962), for the commutator of an associative algebra, the Jacobi identity and the reason the antisymmetrisation of a sesquilinear product is a bracket only over the fixed ring.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the symmetrised product, the polarisation of its square and the Jordan identity on the Hermitian part.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

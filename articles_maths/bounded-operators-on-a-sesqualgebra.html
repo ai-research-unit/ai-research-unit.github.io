@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bounded Operators on a Sesqualgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bounded-operators-on-a-sesqualgebra"><strong>Bounded Operators on a Sesqualgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The operators of a sesqualgebra are of two kinds, because the product is linear in the first slot and $\varsigma$-semilinear in the second: the $\mathbb{K}$-linear operators and the conjugate-linear ones, and the left multiplication belongs to the second class while the right multiplication belongs to the first. When the module carries a norm the bounded operators of each class form a Banach space. This article lays down that operator layer, which is the topological counterpart of the endomorphism algebras of <em>The Left and Right Multiplication Operators of a Sesqualgebra</em>.</p>
+<p>Three facts organise the article. The two classes are each complete for the operator norm, and composition with the involution is an isometric isomorphism from the bounded linear operators onto the bounded conjugate-linear ones, so the two spaces are one Banach space read through two scalar rules. The union of the two classes is not closed under composition, since the composite of two conjugate-linear operators is linear, so no algebra structure has that union as its underlying set; the smallest algebra containing both is the direct sum, and it carries a $\mathbb{Z}/2$-grading whose graded pieces are the two classes, the parity of a composite being the product of the parities. And the norm topology is not the only natural one: the topology of pointwise convergence is coarser, it agrees with the norm topology exactly in finite dimension, while the uniform boundedness principle keeps the two in contact on a complete module.</p>
+<p>The article defines the two classes and their norm, proves the completeness and reads the involution as the operator that exchanges them, treats the composition and the grading, compares the norm topology with the topology of pointwise convergence, and works the examples. The two parities are <em>The Left and Right Multiplication Operators of a Sesqualgebra</em>, §<em>The Two Parities</em>; the norm, the bounded maps and the completeness of the operator space are <em>Normed and Banach Spaces</em>, §<em>Bounded Linear Maps</em> and §<em>Completeness</em>, and <em>The Operator Algebra of a Banach Space</em>, §<em>The Bounded Operators of a Banach Space</em>; the pointwise convergence and the equicontinuous families are <em>Bounded Operators on a Topological Vector Space</em>, §<em>The Space of Continuous Operators</em>; the uniform boundedness principle is <em>Normed and Banach Spaces</em>, §<em>Uniform Boundedness</em>. Throughout $(\mathbb{K},\varsigma)$ is $\mathbb{R}$ or $\mathbb{C}$ with its continuous involution, $A$ is a normed sesqualgebra over $(\mathbb{K},\varsigma)$ in the sense of <em>Banach Sesqualgebras</em> when the norm is submultiplicative and in the sense of <em>Topological Sesqualgebras</em> otherwise, and the topology is the norm topology unless another one is named.</p>
+<h2 id="the-two-classes-of-operators">The Two Classes of Operators</h2>
+<h3 id="the-definition-and-the-operator-norm">The Definition and the Operator Norm</h3>
+<p><strong>Definition.</strong> Let $T : A \to A$ be additive. Then $T$ is <strong>$\mathbb{K}$-linear</strong> if $T(\lambda x) = \lambda T(x)$ for all $\lambda \in \mathbb{K}$ and $x \in A$, and <strong>conjugate-linear</strong>, or <strong>$\varsigma$-semilinear</strong>, if $T(\lambda x) = \varsigma(\lambda)T(x)$. It is <strong>bounded</strong> if</p>
+<p>$$
+\lVert T\rVert = \sup\{\lVert Tx\rVert : x \in A,\ \lVert x\rVert \leq 1\} < +\infty .
+$$</p>
+<p>The bounded $\mathbb{K}$-linear operators form the space $B(A)$, the bounded conjugate-linear operators the space $B^{\varsigma}(A)$, and $\lVert T\rVert$ is the <strong>operator norm</strong> of $T$ in either class.</p>
+<p>The two classes are the two endomorphism classes of the algebraic layer, read with the continuity that the norm imposes. For a sesqualgebra of full type with a nontrivial involution both are nonempty and different: the left multiplications lie in the second class, and the right multiplications in the first, by <em>The Left and Right Multiplication Operators of a Sesqualgebra</em>, §<em>The Two Parities</em>.</p>
+<p><strong>Proposition (boundedness is continuity, in both classes).</strong> For an additive $T : A \to A$ of either class the following are equivalent: $T$ is bounded; $T$ is continuous; $T$ is continuous at $0$; there is $C \geq 0$ with $\lVert Tx\rVert \leq C\lVert x\rVert$ for all $x$.</p>
+<p><em>Proof.</em> An additive map of either class satisfies $T(x) - T(y) = T(x-y)$ and $T(\lambda(x-y)) = \varsigma(\lambda)(Tx-Ty)$ for suitable $\lambda$, so it commutes with the translations in the appropriate sense and is continuous exactly when it is continuous at $0$. If $\lVert Tx\rVert \leq C\lVert x\rVert$ then $\lVert Tx - Ty\rVert \leq C\lVert x - y\rVert$ and $T$ is Lipschitz. Conversely a continuous $T$ is continuous at $0$, so there is $r > 0$ with $\lVert Tx\rVert \leq 1$ whenever $\lVert x\rVert \leq r$; then for $x \neq 0$ one has $\lVert T(rx/\lVert x\rVert)\rVert = \lvert \varsigma(r/\lVert x\rVert)\rvert \lVert Tx\rVert = (r/\lVert x\rVert)\lVert Tx\rVert \leq 1$, because the modulus of a scalar is fixed by $\varsigma$, and $\lVert Tx\rVert \leq r^{-1}\lVert x\rVert$. The last two conditions are recastings of the first, and the least constant is the supremum of the definition. $\square$</p>
+<p><strong>Proposition (the three expressions of the norm).</strong> For $T$ of either class,</p>
+<p>$$
+\lVert T\rVert = \sup_{\lVert x\rVert = 1}\lVert Tx\rVert = \sup_{x \neq 0}\frac{\lVert Tx\rVert}{\lVert x\rVert} , \qquad \lVert Tx\rVert \leq \lVert T\rVert\lVert x\rVert .
+$$</p>
+<p><em>Proof.</em> The twist does not affect the scaling: for conjugate-linear $T$ one has $\lVert T(\mu x)\rVert = \lvert \varsigma(\mu)\rvert\lVert Tx\rVert = \lvert \mu\rvert\lVert Tx\rVert$, because an involution of $\mathbb{R}$ or $\mathbb{C}$ fixes the modulus, and for linear $T$ the same computation holds without $\varsigma$. The three suprema therefore range over the same values, and the inequality is the definition of the last one. $\square$</p>
+<h3 id="the-completeness-of-the-two-classes">The Completeness of the Two Classes</h3>
+<p><strong>Theorem ($B(A)$ is a Banach algebra and $B^{\varsigma}(A)$ a Banach space).</strong> $B(A)$ is a unital algebra under the pointwise linear structure and the composition, the operator norm is submultiplicative on it, $\lVert ST\rVert \leq \lVert S\rVert\lVert T\rVert$ and $\lVert \mathrm{id}\rVert = 1$, and $B(A)$ is complete for it when $A$ is complete, hence a unital Banach algebra. The space $B^{\varsigma}(A)$ is a Banach space with the same norm when $A$ is complete.</p>
+<p><em>Proof.</em> For $B(A)$ this is the theorem of <em>Operators on a Banach Algebra</em>, §<em>The Bounded Operators</em>, whose proof uses only the completeness of $A$ and the submultiplicativity of the operator norm. For $B^{\varsigma}(A)$, let $(T_n)$ be Cauchy; for each $x$ the sequence $(T_nx)$ is Cauchy in $A$, with limit $Tx$, and $T$ is additive because the limits are and conjugate-linear because $\varsigma$ is continuous: $T(\lambda x) = \lim_n T_n(\lambda x) = \lim_n \varsigma(\lambda)T_nx = \varsigma(\lambda)Tx$. The uniformly bounded norms $\lVert T_n\rVert \leq M$ give $\lVert Tx\rVert \leq M\lVert x\rVert$, so $T$ is bounded, and $\lVert T - T_n\rVert \leq \sup_{m \geq n}\lVert T_m - T_n\rVert \to 0$, so the space is complete. $\square$</p>
+<h3 id="the-involution-as-an-operator">The Involution as an Operator</h3>
+<p><strong>Proposition (composition with the involution).</strong> Let $*$ be an isometric involution of $A$ and $* : A \to A$ the map $x \mapsto x^{*}$, read as an operator. Then $* \in B^{\varsigma}(A)$, $\lVert *\rVert = 1$, $*^{2} = \mathrm{id}$, and</p>
+<p>$$
+B(A) \longrightarrow B^{\varsigma}(A), \qquad T \longmapsto T \circ * ,
+$$</p>
+<p>is an isometric vector-space isomorphism, with inverse $S \mapsto S \circ *$.</p>
+<p><em>Proof.</em> The involution is additive, conjugate-linear, $*(\lambda x) = \varsigma(\lambda)x^{*}$, and isometric by hypothesis, so $* \in B^{\varsigma}(A)$ with norm one, and $*^{2} = \mathrm{id}$ because an involution has order two. The composite of a $\mathbb{K}$-linear $T$ with $*$ is conjugate-linear, and $\lVert T \circ *\rVert = \sup_{\lVert x\rVert\leq1}\lVert T(x^{*})\rVert = \lVert T\rVert$ because $*$ is a surjective isometry and its image of the unit ball is the unit ball. The assignment is additive and $\mathbb{K}$-linear, and $(T \circ *) \circ * = T$ and $(S \circ *) \circ * = S$, so it is bijective with the stated inverse. $\square$</p>
+<p><strong>Remark.</strong> The proposition is the reason the two classes are not two unrelated spaces: the bounded conjugate-linear operators are exactly the bounded linear operators followed or preceded by the involution, $B^{\varsigma}(A) = B(A) \circ * = * \circ B(A)$. The same statement at the level of the whole endomorphism algebra is <em>The Left and Right Multiplication Operators of a Sesqualgebra</em>, §<em>The Two Parities</em>, and the topology adds the isometry and the completeness.</p>
+<h2 id="the-composition-and-the-grading">The Composition and the Grading</h2>
+<h3 id="the-parity-of-a-composite">The Parity of a Composite</h3>
+<p><strong>Proposition (the parity multiplication).</strong> For operators of the two classes the composite is of the class given by</p>
+<p>$$
+B(A) \circ B(A) \subseteq B(A), \quad B(A) \circ B^{\varsigma}(A) \subseteq B^{\varsigma}(A), \quad B^{\varsigma}(A) \circ B(A) \subseteq B^{\varsigma}(A), \quad B^{\varsigma}(A) \circ B^{\varsigma}(A) \subseteq B(A),
+$$</p>
+<p>and in each case $\lVert ST\rVert \leq \lVert S\rVert\lVert T\rVert$.</p>
+<p><em>Proof.</em> Write the parities as a two-element group. The scalar rule of a composite of two additive maps is the product of the rules: if $T(\lambda x) = \sigma_T(\lambda)T(x)$ and $S(\lambda y) = \sigma_S(\lambda)S(y)$ with $\sigma_T, \sigma_S \in \{\mathrm{id}, \varsigma\}$, then $S(T(\lambda x)) = \sigma_S(\lambda)\sigma_T(\lambda)S(T(x))$ and $\sigma_S\sigma_T = \mathrm{id}$ exactly when the two rules agree. The norm inequality is the estimate of the preceding section read on $ST$. $\square$</p>
+<p><strong>Corollary (the union is not an algebra).</strong> Suppose $\varsigma \neq \mathrm{id}$. Then the union $B(A) \cup B^{\varsigma}(A)$ is not closed under composition, since the composite of two conjugate-linear operators is linear and is not conjugate-linear unless it vanishes; consequently the union is not the underlying set of an algebra under the composition, and in particular $B^{\varsigma}(A)$ is not a subalgebra of anything under it.</p>
+<p><em>Proof.</em> For conjugate-linear $S$ and $T$ the composite is linear by the proposition. It is conjugate-linear only if it is both linear and conjugate-linear, that is if $(\lambda - \varsigma(\lambda))STx = 0$ for all $\lambda$ and $x$; with $\varsigma \neq \mathrm{id}$ this forces $ST = 0$. So $ST$ lies outside the union as soon as $ST \neq 0$. $\square$</p>
+<h3 id="the-graded-algebra">The Graded Algebra</h3>
+<p><strong>Theorem (the direct sum is a graded Banach algebra).</strong> Let</p>
+<p>$$
+\mathcal{B}(A) = B(A) \oplus B^{\varsigma}(A)
+$$</p>
+<p>with the componentwise vector structure, the norm $\lVert (T_0,T_1)\rVert = \lVert T_0\rVert + \lVert T_1\rVert$, and the product</p>
+<p>$$
+(T_0,T_1)(S_0,S_1) = (T_0S_0 + T_1S_1,\ T_0S_1 + T_1S_0) .
+$$</p>
+<p>Then $\mathcal{B}(A)$ is an associative unital algebra with unit $(\mathrm{id},0)$, the norm is submultiplicative, $\lVert (T_0,T_1)(S_0,S_1)\rVert \leq \lVert (T_0,T_1)\rVert\lVert (S_0,S_1)\rVert$, and $\mathcal{B}(A)$ is a Banach algebra when $A$ is complete. The direct sum is $\mathbb{Z}/2$-graded, with even part $B(A)$ and odd part $B^{\varsigma}(A)$, the two classes are its graded pieces, and the product of two homogeneous elements is homogeneous of the product of the parities.</p>
+<p><em>Proof.</em> The product formula is the parity rule written out, and it is associative because the four cases reduce to the associativity of the composition in the two classes: the even part of a product of three factors collects the terms with an even number of odd factors, and the two ways of bracketing give the same because the composition is associative and the mixed products distribute. The unit is $(\mathrm{id},0)$. For submultiplicativity,</p>
+<p>$$
+\lVert (T_0S_0 + T_1S_1,\ T_0S_1 + T_1S_0)\rVert \leq (\lVert T_0\rVert\lVert S_0\rVert + \lVert T_1\rVert\lVert S_1\rVert) + (\lVert T_0\rVert\lVert S_1\rVert + \lVert T_1\rVert\lVert S_0\rVert) = \lVert (T_0,T_1)\rVert\lVert (S_0,S_1)\rVert ,
+$$</p>
+<p>by the triangle inequality and the submultiplicativity in each class. Completeness is that of a finite direct sum of complete spaces. $\square$</p>
+<p><strong>Remark (the sum map is injective).</strong> For $\varsigma \neq \mathrm{id}$ the evaluation $(T_0,T_1) \mapsto T_0 + T_1$ is an injective map $\mathcal{B}(A) \to \operatorname{End}(A)$: if $T_0 + T_1 = 0$ then $T_0 = -T_1$ is at once $\mathbb{K}$-linear and conjugate-linear, so $(\lambda - \varsigma(\lambda))T_0 = 0$ for every $\lambda$, and $\varsigma \neq \mathrm{id}$ forces $T_0 = T_1 = 0$. The grading of $\mathcal{B}(A)$ is therefore visible on its image, and an additive operator has at most one decomposition into an even and an odd part.</p>
+<p><strong>Remark (the failure of a single algebra and its repair).</strong> The theorem is the precise sense in which a single algebra contains both classes: the classes are not subalgebras of $\mathcal{B}(A)$ as ungraded pieces, since the odd part is not closed under the product, but they are its homogeneous components, and the grading records which class an operator comes from. The involution is the odd element $(0,*)$, and $(0,*)(0,*) = (*^{2},0) = (\mathrm{id},0)$, which is the reason the graded algebra is not the plain direct sum of two algebras; the operator thus exhibits the same order-two obstruction as the datum involution itself.</p>
+<h2 id="the-topology-of-pointwise-convergence">The Topology of Pointwise Convergence</h2>
+<h3 id="the-strong-operator-topology">The Strong Operator Topology</h3>
+<p><strong>Definition.</strong> The <strong>topology of pointwise convergence</strong>, or the <strong>strong operator topology</strong>, on the operators is the locally convex topology of the seminorms $T \mapsto \lVert Tx\rVert$ for $x \in A$; a net converges, $T_\alpha \to T$, exactly when $T_\alpha x \to Tx$ in $A$ for every $x$. It is the topology induced from the product topology of $A^{A}$.</p>
+<p><strong>Proposition (elementary properties).</strong> The topology of pointwise convergence is Hausdorff, locally convex and coarser than the norm topology, and the operator norm is lower semicontinuous for it.</p>
+<p><em>Proof.</em> It is a locally convex topology by definition, Hausdorff because a nonzero operator differs from $0$ at some $x$; it is coarser than the norm topology because $\lVert T_\alpha x - Tx\rVert \leq \lVert T_\alpha - T\rVert\lVert x\rVert$, so norm convergence gives pointwise convergence. For the lower semicontinuity, $\{T : \lVert T\rVert > c\}$ is the union over $x$ of $\{T : \lVert Tx\rVert > c\lVert x\rVert\}$, which is open. $\square$</p>
+<p><strong>Theorem (coincidence with the norm topology).</strong> On $B(A)$, or on $B^{\varsigma}(A)$, the topology of pointwise convergence agrees with the norm topology if and only if $A$ is finite-dimensional.</p>
+<p><em>Proof.</em> If $A$ is finite-dimensional then $B(A)$ and $B^{\varsigma}(A)$ are finite-dimensional and all Hausdorff locally convex topologies on them agree. Conversely suppose the two topologies agree on $B(A)$; then the norm-open unit ball $\{T : \lVert T\rVert < 1\}$ is open for the pointwise topology, so it contains a basic neighbourhood $\{T : \lVert Tx_i\rVert < \epsilon,\ i = 1,\dots,n\}$ for some $x_1,\dots,x_n$. If $A$ is infinite-dimensional there is $x$ of norm one outside the span of the $x_i$; choose by Hahn–Banach a functional $f$ with $f(x) = 1$ and $f(x_i) = 0$ for all $i$, and for $y \in A$ let $T_y = f(\cdot)y$. Then $T_y$ lies in the basic neighbourhood because $T_yx_i = f(x_i)y = 0$, while $\lVert T_y\rVert = \lVert f\rVert\lVert y\rVert$ is unbounded in $y$, contradicting the containment in the unit ball. So $A$ is finite-dimensional, and the same argument with $B(A)$ replaced by $B^{\varsigma}(A)$ is carried by the isometric isomorphism of §<em>The Involution as an Operator</em>. $\square$</p>
+<h3 id="the-uniform-boundedness-principle">The Uniform Boundedness Principle</h3>
+<p><strong>Theorem (pointwise boundedness implies norm boundedness).</strong> Let $A$ be a Banach space and $\mathcal{F} \subseteq B(A)$ with $\sup_{T \in \mathcal{F}}\lVert Tx\rVert < +\infty$ for every $x$. Then $\sup_{T \in \mathcal{F}}\lVert T\rVert < +\infty$.</p>
+<p><em>Proof.</em> This is the uniform boundedness principle of <em>Normed and Banach Spaces</em>, §<em>Uniform Boundedness</em>; the completeness of $A$ is its hypothesis, and the conclusion is that a pointwise bounded family of bounded operators is norm bounded. $\square$</p>
+<p><strong>Corollary (sequences of the strong topology).</strong> Let $A$ be a Banach sesqualgebra and let $(T_n)$ converge pointwise to $T$. Then $(T_n)$ is norm bounded, $T$ is bounded, and $\lVert T\rVert \leq \liminf_n\lVert T_n\rVert$; in particular the pointwise limit of a sequence of bounded operators is bounded. On an infinite-dimensional $A$ the pointwise topology is not normable.</p>
+<p><em>Proof.</em> Pointwise convergence makes $(T_n)$ pointwise bounded, so it is norm bounded by the theorem, and $T$ is additive; the bound $\lVert Tx\rVert = \lim_n\lVert T_nx\rVert \leq (\sup_n\lVert T_n\rVert)\lVert x\rVert$ makes $T$ bounded, with the stated estimate on the norms. For the last statement, a normable topology has a bounded neighbourhood, namely a ball of a norm defining it; but a basic neighbourhood of the pointwise topology, $\{T : \lVert Tx_i\rVert < \epsilon,\ i = 1,\dots,n\}$, is not a bounded set, since it contains the operators $T_y = f(\cdot)y$ of §<em>The Strong Operator Topology</em>, whose norms $\lVert T_y\rVert = \lVert f\rVert\lVert y\rVert$ are arbitrarily large. Hence the pointwise topology has no bounded neighbourhood and is not normable. $\square$</p>
+<p>The corollary is the exact point at which the sesquilinear layer needs the completeness of the bilinear layer: separate continuity of the product gives the continuity of the one-sided multiplications without any completeness, but the passage from pointwise convergence to norm bounds and the normability question are properties of the complete norm and are used where a limit of operators is taken.</p>
+<h2 id="the-relation-to-the-endomorphism-algebras-of-the-layer">The Relation to the Endomorphism Algebras of the Layer</h2>
+<p><strong>Proposition (the bounded operators inside the endomorphism algebras).</strong> Let $\operatorname{End}_{\mathbb{K}}(A)$ be the algebra of all $\mathbb{K}$-linear maps and $\operatorname{End}^{\varsigma}_{\mathbb{K}}(A)$ the vector space of all conjugate-linear maps. Then</p>
+<p>$$
+B(A) = \{T \in \operatorname{End}_{\mathbb{K}}(A) : T \text{ continuous}\} , \qquad B^{\varsigma}(A) = \{T \in \operatorname{End}^{\varsigma}_{\mathbb{K}}(A) : T \text{ continuous}\} ,
+$$</p>
+<p>and the spaces of the algebraic layer are recovered by forgetting the norm, with $\mathcal{B}(A)$ reducing to the graded algebra $\operatorname{End}_{\mathbb{K}}(A) \oplus \operatorname{End}^{\varsigma}_{\mathbb{K}}(A)$.</p>
+<p><em>Proof.</em> Boundedness is continuity in each class, by §<em>The Two Classes of Operators</em>; the algebraic statements are the definitions of the two endomorphism spaces of <em>The Left and Right Multiplication Operators of a Sesqualgebra</em>, §<em>The Two Parities</em>. $\square$</p>
+<p><strong>Remark.</strong> The proposition is the sense in which the present article adds a norm and nothing algebraically: the operator layer of the sesqualgebra is the algebraic layer of Part I restricted to the continuous maps and completed. On a finite-dimensional $A$ there is nothing to restrict, since every map is continuous, and $\mathcal{B}(A)$ is the graded algebra of all operators; on an infinite-dimensional $A$ the restriction is proper, and the left multiplication of an unbounded element would be the first thing to leave it. In a normed sesqualgebra every element has bounded one-sided multiplications, so no such element occurs, and that is the subject of <em>The Bounded Left and Right Multiplication Operators of a Sesqualgebra</em>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-field">The Field</h3>
+<p><strong>Example (the field, verdict: two copies of $\mathbb{C}$).</strong> Let $A = \mathbb{C}$ with the modulus and $\varsigma$ the conjugation. The bounded linear operators are the multiplications $z \mapsto cz$, so $B(A) \cong \mathbb{C}$; the bounded conjugate-linear operators are the maps $z \mapsto c\bar z$, so $B^{\varsigma}(A) \cong \mathbb{C}$ as a real vector space, via the involution $z \mapsto \bar z$. The graded algebra $\mathcal{B}(A)$ is $\mathbb{R}$-dimensional of dimension four, with even part the two-dimensional $B(A)$ and odd part the two-dimensional $B^{\varsigma}(A)$; the involution is the odd element $z \mapsto \bar z$.</p>
+<h3 id="the-matrices">The Matrices</h3>
+<p><strong>Example (the matrices, verdict: the sandwiches span the conjugate-linear operators).</strong> Let $A = M_n(\mathbb{C})$ with the operator norm, the conjugation and the product $S \star T = ST^{*}$. The bounded linear operators are all the linear maps, of complex dimension $n^{2}$; and every bounded conjugate-linear map is a finite sum of sandwich operators $X \mapsto AX^{*}B$, since the matrix units give $X \mapsto E_{ij}X^{*}E_{kl}$ and these span. The involution $X \mapsto X^{*}$ is the sandwich $S_{1,1}$ of <em>The Sesquilinear Sandwich Operator</em>, §<em>The Definition</em>, and it is the odd element of the graded algebra that generates the whole odd part by composition with the linear operators, as §<em>The Involution as an Operator</em> states.</p>
+<h3 id="the-sequences">The Sequences</h3>
+<p><strong>Example (the sequences, verdict: the shift has no conjugate-linear partner).</strong> Let $A = \ell^{1}$ with the norm, the termwise conjugation and the termwise product, which is submultiplicative. The left shift $T(x_0,x_1,\dots) = (x_1,x_2,\dots)$ is bounded and linear; the map $x \mapsto \bar x$ followed by the left shift is the bounded conjugate-linear operator $T \circ *$, and $T \circ *$ has the same norm as $T$ by §<em>The Involution as an Operator</em>. The operator norm of a sandwich is estimated in <em>The Bounded Sesquilinear Sandwich</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The operators of a sesqualgebra fall into two classes, the $\mathbb{K}$-linear and the conjugate-linear, and a norm makes each of them a Banach space: $B(A)$ is a unital Banach algebra for the composition and the operator norm, with $\lVert ST\rVert \leq \lVert S\rVert\lVert T\rVert$, and $B^{\varsigma}(A)$ is a Banach space for the same norm in which boundedness, continuity and a finite Lipschitz constant agree. Composition with the isometric involution is an isometry $B(A) \to B^{\varsigma}(A)$, so the two spaces are one space read through two scalar rules, and the left multiplications lie in the second while the right multiplications lie in the first.</p>
+<p>The union of the two classes is not closed under composition, the composite of two conjugate-linear operators being linear, so it is not the underlying set of an algebra; the smallest algebra containing the classes is the graded direct sum $\mathcal{B}(A) = B(A) \oplus B^{\varsigma}(A)$ with the parity product and the norm $\lVert T_0\rVert + \lVert T_1\rVert$, a graded Banach algebra whose homogeneous components are exactly the two classes and whose unit is even and whose involution is odd. The norm topology on the operators is not the only natural one: the topology of pointwise convergence is coarser and locally convex, it agrees with the norm topology exactly when $A$ is finite-dimensional, and on a complete $A$ the uniform boundedness principle converts pointwise boundedness into norm boundedness, so a pointwise convergent sequence of bounded operators has a bounded limit and converges in no finer a sense than the strong one. The bounded operators are the continuous ones inside the endomorphism algebras of the algebraic layer, and the layer of the next articles is their use in reading the product.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B(A)$</td>
+<td>the bounded $\mathbb{K}$-linear operators, $A \to A$</td>
+</tr>
+<tr>
+<td>$B^{\varsigma}(A)$</td>
+<td>the bounded conjugate-linear operators, $A \to A$</td>
+</tr>
+<tr>
+<td>$\lVert T\rVert = \sup_{\lVert x\rVert\leq1}\lVert Tx\rVert$</td>
+<td>the operator norm, on both classes</td>
+</tr>
+<tr>
+<td>$T(\lambda x) = \varsigma(\lambda)T(x)$</td>
+<td>the defining rule of the conjugate-linear class</td>
+</tr>
+<tr>
+<td>$* \in B^{\varsigma}(A)$, $\lVert *\rVert = 1$</td>
+<td>the isometric involution as the odd operator</td>
+</tr>
+<tr>
+<td>$T \mapsto T \circ *$</td>
+<td>the isometric isomorphism $B(A) \to B^{\varsigma}(A)$</td>
+</tr>
+<tr>
+<td>$B^{\varsigma}(A) \circ B^{\varsigma}(A) \subseteq B(A)$</td>
+<td>the parity of a composite of two odd operators</td>
+</tr>
+<tr>
+<td>$\mathcal{B}(A) = B(A) \oplus B^{\varsigma}(A)$</td>
+<td>the graded Banach algebra of the two classes</td>
+</tr>
+<tr>
+<td>$\lVert T_0\rVert + \lVert T_1\rVert$</td>
+<td>the norm on the graded sum, submultiplicative</td>
+</tr>
+<tr>
+<td>topology of pointwise convergence</td>
+<td>$T_\alpha \to T$ iff $T_\alpha x \to Tx$ for all $x$</td>
+</tr>
+<tr>
+<td>norm topology $=$ pointwise topology</td>
+<td>exactly when $A$ is finite-dimensional</td>
+</tr>
+<tr>
+<td>$\sup_T\lVert Tx\rVert < \infty \Rightarrow \sup_T\lVert T\rVert < \infty$</td>
+<td>uniform boundedness on a complete $A$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the strong operator topology, the norm topology and the uniform boundedness principle in the operator setting.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume I</em> (Cambridge University Press, 1994), for the operator spaces attached to an algebra with an involution and the grading of the compositions.</li>
+<li>Nicolas Bourbaki, <em>Topological Vector Spaces, Chapters 1–5</em> (Springer, 1987), for the pointwise convergence, the equicontinuous families and the topologies of the operator spaces.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, second edition, 1990), for the bounded operators of a normed space and the topologies on their space.</li>
+<li>The companion articles of this series: <em>Topological Sesqualgebras</em>, <em>Banach Sesqualgebras</em>, <em>The Left and Right Multiplication Operators of a Sesqualgebra</em>, <em>The Bounded Left and Right Multiplication Operators of a Sesqualgebra</em> and <em>The Sesquilinear Adjoint Operator</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
