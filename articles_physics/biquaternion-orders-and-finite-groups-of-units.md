@@ -145,6 +145,8 @@ so the unit group contains an infinite cyclic subgroup generated along a nilpote
 
 The orders read as the discrete skeleton of the algebra and their finite unit groups as its discrete symmetries: the quaternion units are rotations by $\pi$ of the lattice and the binary groups are their lifts. Read against the continuous groups, the article's structures are what survives when the frame is restricted to integral elements, so the orders are the framework's arithmetic rather than its dynamics. Read on the clock, the finite unit group carries no continuous phase, which is the sharpest illustration that the phase of the framework comes from the centre and not from the units.
 
+Read on a lattice, the orders are the **discrete spacetime lattice** of the framework: the Lipschitz and Hurwitz lattices are the Euclidean lattice of the real sector and the nilpotent direction of the complex order is the discrete **lightlike** direction, so the arithmetic of the algebra is the arithmetic of a lattice gauge theory and of a quantum simulation of the framework (*Lattice Gauge Theory and the Biquaternion Path Integral*). Read against the thermal circle, the real sector is the Euclidean lattice and the imaginary sector the thermal/Matsubara direction, the reading of *The Matsubara Formalism in Biquaternionic Form*.
+
 ## Summary
 
 The quaternion orders inside the biquaternion algebra are the Lipschitz order $\mathcal{L}$ and the Hurwitz order $\mathcal{L}'$, the second containing the first with index two and maximal. Their groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four; the unit-group index is three, though the lattice index is two.

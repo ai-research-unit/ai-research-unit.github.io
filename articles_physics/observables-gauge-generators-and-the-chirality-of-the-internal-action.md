@@ -14,7 +14,7 @@ multiplication and not through left: only the right action preserves the algebra
 the one-sidedness of that form is the framework's reading of a **chirality** in the internal action.
 
 The article keeps to the operator structure. It defers the positivity of the dagger and the positive cone
-to *Mass, Rank and the Positivity of the Dagger*; the internal group and its compactness to *Particle Types, Discrete Charge and Three-Particle Couplings*; the group ceiling to *The Gauge Group Ceiling*; the states to *The States the Indefinite Metric Cannot Normalise* and *Decoherence as Idempotent Projection*;
+to *Mass, Rank and the Positivity of the Dagger*; the internal group and its compactness to *Particle Types, Discrete Charge and Three-Particle Couplings*; the group ceiling to *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*; the states to *The States the Indefinite Metric Cannot Normalise* and *Decoherence as Idempotent Projection*;
 and the mathematics of the adjoints and the sandwiches to the mathematics articles *The Adjoints of the
 Regular Operators*, *The Two-Sided Operators on a Hermitian Algebra* and *Jordan
 Algebras of Sesqualgebras*.

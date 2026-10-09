@@ -453,6 +453,12 @@ The boundary can be drawn as a list, and drawing it is this article's main resul
 
 The honest summary of the boundary is this. The biquaternion framework contains the kinematical fibre of tetrad gravity: a pointwise Lorentzian vector space, its Lorentz group, the vector representation, and the Lie-algebra-valued connection. It contains nothing of tetrad gravity's dynamics, and nothing that selects a metric. It is therefore not correct to say that the framework contains general relativity, and it is not correct to say that it conflicts with it. What the framework contains is the algebra in which the local part of general relativity is normally written, plus a proposal — the local scale factor of the imaginary time axis — that is too rigid to carry the non-flat vacuum solutions.
 
+## The Local Complex Structure as an Emergent Metric
+
+This article puts the biquaternion Dirac equation on an imported background $g$. The framework's own construction is more modest and, read one way, more suggestive: the complex structure is **local**, fixed point by point by the medium through $c=1/\sqrt{\epsilon\mu}$, and a change of the local structure moves the interval and the composition while leaving the probability form and the zero-divisor cone (*The Local Complex Structure and the Speed of Light*).
+
+Read further, the local complex structure is an **emergent metric** in the sense of the analogue-gravity programme — the wave cone is a property of the medium and not of a fixed background — and the construction is a **bundle of algebras** whose typical fibre is the biquaternion algebra, whose local complex structure is a section of the frame bundle and whose medium is a connection on it. The reading is labelled and bounded: it is the shape the framework's algebra takes when the complex structure is allowed to vary, and it is offered against the imported $g$, not as a derivation of Einstein's equations. The owner of the local construction is *The Local Complex Structure and the Speed of Light*.
+
 ## Summary
 
 The read-list machinery is flat and pointwise: one fixed algebra, one fixed biquaternion norm with constant coefficients, a global chart with a distinguished imaginary time, and a global rotor group. Curvature cannot be made a property of the algebra, because the algebra has no points and no deformable coefficient; it can only be carried by the field that attaches the algebra to spacetime.

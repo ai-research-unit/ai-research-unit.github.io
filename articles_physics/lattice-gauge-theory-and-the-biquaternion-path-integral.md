@@ -227,6 +227,13 @@ Three remarks place the construction.
 
 **Not supplied.** The lattice does not add a new gauge group: it regularizes the compact factor the algebra contains, so it is the $SU(2)$ theory. It does not supply the fermion content, the chiral structure or the colour octet. It does not by itself prove confinement beyond the strong-coupling regime, and it does not supply a continuum construction of the non-abelian measure without a limit. As everywhere in the series, no empirical content is added.
 
+## The Orders as a Discrete Spacetime Lattice
+
+The lattice of this article is a regulator, imported to make the continuum path integral finite: the link variable, the plaquette and the Wilson action are the continuum's, discretised. The algebra also carries integral structures of its own, the Lipschitz and Hurwitz orders and the integral biquaternions, whose reading is the **discrete spacetime lattice** of the framework: the real sector is a Euclidean lattice, because the biquaternion norm is definite there, and the nilpotent direction of the complex order is a discrete **lightlike** direction (*Biquaternion Orders and Finite Groups of Units*).
+
+Read together, the two lattices answer different questions. The regulator here supplies the coupling, the continuum limit and the running; the algebra's orders supply the arithmetic that a **quantum simulation** of the framework would use, a discrete arena whose local variables are lattice biquaternions, whose Euclidean part is definite and whose null direction makes the light cone a lattice cone. The reading is labelled and it does not replace the regulator: the orders carry no coupling and no dynamics. The owner of the orders is *Biquaternion Orders and Finite Groups of Units*.
+
+
 ## Summary
 
 The lattice is the regulator that makes the biquaternion path integral a finite-dimensional integral. The link variable is the parallel transporter, a unit quaternion,

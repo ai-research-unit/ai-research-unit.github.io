@@ -8,7 +8,7 @@ The article is the Geometry slot of the Lie-theoretic block: the algebra is *The
 
 The article also owns the **dagger sandwich** $\operatorname{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$, the action of an arbitrary unit of the algebra on the algebra regarded as an eight-dimensional real vector space. Its carrier, its kernel, its invariants, its action on the six distinguished subspaces and the operators of a boost and of a rotation are read below. The inner automorphism $\tilde T\mapsto\tilde{Q}\tilde T\tilde{Q}^{-1}$ and its contrast with the sandwich are in *Biquaternion Automorphisms and Derivations*, the matrix congruence in *The 2×2 Matrix Element Representation of Biquaternions*, and the four factors of a single element in *The Polar Element Representation of Biquaternions*.
 
-Physically the sandwich $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ is the Lorentz transformation of the material sector: the boost is the change of inertial frame and the rotor is the spatial rotation, so that a four-vector of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* is carried from one frame to another by a biquaternion multiplication. The doubling of the half-angle is the geometric origin of the spinor double cover: the same motion is realised twice in $\mathbb{B}^{\times}_1$, once as $\tilde{\Lambda}$ and once as $-\tilde{\Lambda}$, which is why the carrier of the state of *Biquaternion Quantum Fields* is a spinor and not a vector.
+Physically the sandwich $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ is the Lorentz transformation of the material sector: the boost is the change of inertial frame and the rotor is the spatial rotation, so that a four-vector of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* is carried from one frame to another by a biquaternion multiplication. The doubling of the half-angle is the geometric origin of the spinor double cover: the same motion is realised twice in $\mathbb{B}^{\times}_1$, once as $\tilde{\Lambda}$ and once as $-\tilde{\Lambda}$, which is why the carrier of the state in the Biquaternion Quantum Fields category is a spinor and not a vector.
 
 **Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (*Biquaternion Norm and Invertibility*). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.
 
@@ -81,7 +81,7 @@ Left multiplication is recorded for comparison only, as the regular representati
 
 ### On the Material Sector
 
-Rotor conjugation is the four-vector action of the series, and the identification is established in *The Lorentz Group as Biquaternion Norm Automorphisms* and *The Lorentz Group in Biquaternionic Form*; what is needed here are the three properties, each of which transfers a fact about the biquaternion norm to the operator language.
+Rotor conjugation is the four-vector action of the series, and the identification is established in *The Lorentz Group as Biquaternion Norm Automorphisms* and *The Lorentz Group in Biquaternionic Form — Structure and Representations*; what is needed here are the three properties, each of which transfers a fact about the biquaternion norm to the operator language.
 
 **Proposition.** For every rotor $\tilde{\Lambda}$, $\operatorname{H}_{\tilde{\Lambda}}$ maps $\mathbb{M}_-$ to itself, maps $\mathbb{M}_+$ to itself, and satisfies $N\big(\operatorname{H}_{\tilde{\Lambda}}(\tilde T)\big) = |N(\tilde{\Lambda})|^2N(\tilde T) = \langle\tilde T,\tilde T\rangle_{\natural} = N(\tilde T)$.
 
@@ -299,7 +299,7 @@ which agrees with the polar decomposition of the product to twelve digits. The o
 
 ### Thomas Precession
 
-The Wigner rotor is the kinematic content of Thomas precession, and the operator reading makes the bookkeeping automatic: composing the two boosts and reading off the rotor factor is the whole computation, and the rotor factor acts on the spinor by left multiplication with the half-angle. The precession rate of a spinning particle in a circular orbit, the factor of one half that distinguishes the Thomas value from the naive one, and the comparison with the Bargmann–Michel–Telegdi equation are the subject of *Thomas Precession as a Biquaternion Rotor Effect* and *The Thomas Precession*, and the closed form of the Wigner angle above is the element they use.
+The Wigner rotor is the kinematic content of Thomas precession, and the operator reading makes the bookkeeping automatic: composing the two boosts and reading off the rotor factor is the whole computation, and the rotor factor acts on the spinor by left multiplication with the half-angle. The precession rate of a spinning particle in a circular orbit, the factor of one half that distinguishes the Thomas value from the naive one, and the comparison with the Bargmann–Michel–Telegdi equation are the subject of *Thomas Precession as a Biquaternion Rotor Effect* and *Exercise: The Thomas Precession*, and the closed form of the Wigner angle above is the element they use.
 
 ## The Operator and the Polar Representation
 
@@ -347,7 +347,7 @@ $$
 (S^3\times S^3)/\{\pm e_0\}\cong SO(4)
 $$
 on the algebra. The one-sided action is its diagonal restriction, and the Lorentzian motions are obtained from the complexification instead.
-**Physical reading: the motions of the framework.** The isometries of the norm are the physical motions: $S^3=Sp(1)$ supplies the spatial rotations of the material sector, and $\mathbb{B}^{\times}_1\cong Spin(1,3)$ supplies the Lorentz transformations, the boosts being the hyperbolic directions of the trace-free subalgebra. The two-sided action is the Euclidean reading the informational sector $\mathbb{M}_+$ carries, and its diagonal restriction is the Lorentzian one. Because the rotor acts by conjugation the angle is halved and the map to $SO^+(1,3)$ is two-to-one: the double cover is not an accident of the parametrisation but the statement that a $2\pi$ rotation returns a vector and reverses a spinor, the fact behind the spin-$\tfrac{1}{2}$ behaviour of *Biquaternion Non Relativistic Quantum Theory*.
+**Physical reading: the motions of the framework.** The isometries of the norm are the physical motions: $S^3=Sp(1)$ supplies the spatial rotations of the material sector, and $\mathbb{B}^{\times}_1\cong Spin(1,3)$ supplies the Lorentz transformations, the boosts being the hyperbolic directions of the trace-free subalgebra. The two-sided action is the Euclidean reading the informational sector $\mathbb{M}_+$ carries, and its diagonal restriction is the Lorentzian one. Because the rotor acts by conjugation the angle is halved and the map to $SO^+(1,3)$ is two-to-one: the double cover is not an accident of the parametrisation but the statement that a $2\pi$ rotation returns a vector and reverses a spinor, the fact behind the spin-$\tfrac{1}{2}$ behaviour of the Biquaternion Non Relativistic Quantum Theory category.
 
 ## Worked Examples
 
@@ -400,6 +400,8 @@ Let $\tilde{R}$ be any rotation rotor and consider $-\tilde{R}$. Since $-\tilde{
 ## Physical Readings
 
 The double covers read as the two frame groups of the framework: $SU(2)\to SO(3)$ is the material rotation and $\mathrm{SL}(2,\mathbb{C})\to SO^+(1,3)$ is the full change of frame, and the rotor is the acting element of a change of frame. Read on the clock, a rotation preserves the central phase and the norm, so a frame change moves the material ledger and leaves the temporal phase and the probability form where they were; read on the split, the rotors that preserve each sector are the superselection-preserving operations (*The Material-Informational Split as a Superselection Structure in Biquaternionic Form*).
+
+Two further readings of the boost operator follow. Its **spectrum** is read as the Doppler/redshift factors: the boost rotor stores the half-rapidity and its eigenvalues are the red- and blue-shift factors of the frame change, and the **doubling** of the eigenvalue pair is read as the two-way light travel, the two null directions the boost slides along. The reading is the operator form of the Doppler factor of *The Boost of a Plane Wave as a Rotation and a Dilation* and *Exercise: The Relativistic Doppler Effect*.
 
 ## Summary
 

@@ -233,6 +233,12 @@ The interaction theory is the vacuum perturbation theory with the discrete sums 
 - The temperature is an input; the framework does not derive it. The Unruh and Hawking articles' gaps — that the modular flow is imported and that the algebra does not produce thermality — are inherited unchanged.
 - The finite-dimensional modular Hamiltonian of the KMS article is not extended here to the field algebra; the thermal state is used as the standard Gibbs state of the standard field theory.
 
+## The Euclidean and Thermal Splits in the Algebra
+
+The identifying statement of the article is that the compactified direction is the material time $ict$, so that the thermal circle is a circle in the imaginary direction of the material sector. Read on the two splits of the algebra, the statement has a place in the block structure. The real sector $\mathbb{H}_{\mathbb{B}}$ is the **Euclidean slice**, on which no coordinate carries an explicit $i$ and the norm is definite, and the imaginary sector $i\mathbb{H}_{\mathbb{B}}$ is the **thermal direction**, the slice the imaginary time sweeps; and multiplication by the central imaginary $i$ exchanges the two, which is the Wick rotation of *The Four Other Remarkable Subspaces* and *The Central Rotation: Phase, Duality and the Wick Rotation as One Generator*.
+
+The reading is that the Euclidean-versus-thermal split is the real-versus-imaginary split, so the two Euclidean and thermal theories of this article are the two halves of one algebra related by the central generator, and the inverse temperature $\beta$ is the circumference the compactification gives to the imaginary half. It is a labelled reading: the article's own computations use $ict$ and $\mathbb{M}_-$, and the block reading is a place to put them. The owners are *The Four Other Remarkable Subspaces* and *The Central Rotation: Phase, Duality and the Wick Rotation as One Generator*.
+
 ## Summary
 
 The Matsubara formalism in biquaternionic form is the Euclidean thermal field theory with the compactified direction identified as a material-sector direction. The thermal circle $\tau\sim\tau+\beta$ has circumference $\beta=\hbar/(k_BT)$, which is the KMS strip width, because both are the complexification of the material time $ict$; the Euclidean mass-shell operator is the central biquaternion norm

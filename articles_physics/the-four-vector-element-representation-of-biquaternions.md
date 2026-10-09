@@ -427,6 +427,8 @@ the all-plus sign of the biquaternion norm being exactly what makes the spatial 
 
 The four coefficients read as four coordinates, and the article's own reading is the four-vector. Read on the clock, the scalar coefficient is the central coordinate and the three vector coefficients are the spatial part, so the representation is the framework's temporal/spatial split at the level of coordinates. Read on the four conjugations, the real and the imaginary parts of a coefficient are the two sectors, so a coordinate and a sector are two readings of one number, which is the dictionary the physics articles use without restating it.
 
+The four complex coordinates are read as a **spacetime event carrying an internal state**: the eight real parameters are the four coordinates the $ict$ convention realises together with the four internal data on which the phase and the sector act, so one element is a point of spacetime and its internal label at once.
+
 ## Summary
 
 The four-vector representation reads a biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ as its quadruple of complex coefficients $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$, with $Q^0 = Q_0$ the scalar component and $(Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3)$ the vector components. It is a $\mathbb{C}$-linear isomorphism onto $\mathbb{C}^4$, of complex dimension four and real dimension eight, and it supplies the space on which the regular operator of *The 4×4 Regular Matrix Element Representation of Biquaternions* is written. Physically, each complex coefficient carries one material and one informational coordinate: $Q^0 = ct' + ict$ and $Q^k = x_k + ix'_k$, so that the material four-vector is the quadruple $(ict, x, y, z)$ with a purely imaginary scalar entry, that is $Q^0 = iq'_0$ with $q'_0 = ct$.

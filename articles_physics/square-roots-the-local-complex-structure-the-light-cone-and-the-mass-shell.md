@@ -341,6 +341,8 @@ the nilpotents; and, speculatively, that the roots of $+1$ are the discrete symm
 
 The three distinguished radicands read as the three physical cases of the framework. The square root of $-e_0$ is the local complex structure $i$, that is, the quarter turn that carries the clock; the square root of $e_0$ is a null direction, that is, a point of the cone, where the two roots coincide at the lightlike element; and the square root of a general radicand is a boost, whose polar form exists only outside the cone. The equation therefore reads the mass shell and the cone in one statement, and the reading is that massive, massless and spacelike are the interior, the boundary and the exterior of one quadric.
 
+Read with the Klein four of *Relations Between Subspaces*, the speculative discrete-symmetry reading acquires its structure: the involutions are the four **characters** of that group, $\flat=-{}^{*}$ is the fourth character, and no assignment of parity, time reversal and charge conjugation to the characters is proved here.
+
 ## Summary
 
 The single equation $\tilde P^{2}=\tilde Q$ has, at its three distinguished central radicands, three

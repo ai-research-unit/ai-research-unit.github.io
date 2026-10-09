@@ -496,6 +496,8 @@ The limitation is equally clear. The matrix form is a representation of the **co
 
 The isomorphism reads as the dictionary of the framework: the trace is the scalar part and the determinant the biquaternion norm, so the interval and the mass are the trace and the determinant of one $2\times2$ complex matrix. Read on the states, the Hermitian matrices are the observables and the determinant is the positivity test, so the same two matrix invariants carry the framework's metric and its state condition. Read on the conjugations, the matrix image of a conjugation is a matrix conjugation, which is why the four forms can be computed in the smallest representation that carries them.
 
+The determinant is read as a **volume**: $\det\Phi(\tilde{Q})=N(\tilde{Q})$ is the biquaternion norm, so the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$, read as the **volume-preserving** group, and a general element is a four-volume element its determinant measures. The Lorentz group is therefore the volume-preserving group of the representation, which is the matrix form of the statement that a Lorentz transformation preserves the interval.
+
 ## Summary
 
 The matrix representation of the biquaternion algebra is the isomorphism $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ given by $\Phi(e_0) = I_2$ and the three basis matrices asserted above, with $\Phi(i) = i\,\Phi(e_0)$ on the central scalar. The images of the Hermitian units, $\Phi(ie_k) = i\,\Phi(e_k)$, are the three Hermitian basis matrices named in the remark above.

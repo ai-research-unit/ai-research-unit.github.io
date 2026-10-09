@@ -17,7 +17,7 @@ The article keeps to the algebra. It defers the states to *The States the Indefi
 and antilinear structures to *The Majorana Representation in Biquaternionic Form* and *Antilinear
 Structure and the Two Kinds of Mass in Biquaternionic Form*; the Lorentz group to *The Lorentz Group in
 Biquaternionic Form — Structure and Representations* and *The Two-Sheeted Cover and the Topology of Boosts
-in Biquaternionic Form*; the group ceiling to *The Gauge Group Ceiling*; the spin ceiling to *Higher Spin
+in Biquaternionic Form*; the group ceiling to *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*; the spin ceiling to *Higher Spin
 from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and One-Half*; and the mathematics
 to the mathematics articles *Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint*, *The Sesquilinear
 Associator and the Ternary Product* and *The Ternary Product and the Failure of the Jordan Triple
@@ -433,8 +433,8 @@ vertex, as the algebra's natural **three-particle coupling** — the state pairi
 with the associator as the order dependence of a three-field coupling. The states are owned by *The States the
 Indefinite Metric Cannot Normalise*; the charge-state trichotomy and the Majorana condition by *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*
 and *The Neutrino and Majorana Fermions in Biquaternionic Form*; the Lorentz group by
-*The Lorentz Group in Biquaternionic Form* and *The Two-Sheeted Cover and the Topology of Boosts*; the
-group ceiling by *The Gauge Group Ceiling*; the spin ceiling by *Higher Spin from Tensor Products*; and
+*The Lorentz Group in Biquaternionic Form — Structure and Representations* and *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*; the
+group ceiling by *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*; the spin ceiling by *Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and One-Half*; and
 the operator structure on which all of this rests by the companion articles *Mass, Rank and the
 Positivity of the Dagger* and *Observables, Gauge Generators and the Chirality of the Internal Action*.
 

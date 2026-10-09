@@ -91,7 +91,10 @@ the two underlying quaternions, and those three properties are cited from the ma
 in the introduction.
 
 **Proposed reading, labelled as such.** The ordinary product is read as the **composition of two material
-operations**: $\tilde P\tilde Q$ is "the operation $\tilde Q$, then the operation $\tilde P$". Three of
+operations**: $\tilde P\tilde Q$ is "the operation $\tilde P$, then the operation $\tilde Q$" — the
+written order of the factors is the order of the operations, as in the polar word $e^{i\alpha}B\hat q$ of
+*The Polar Element Representation of Biquaternions* (*The Twisted Spinor Operator Representation of
+Biquaternions*). Three of
 its properties then carry their physical names.
 
 - Associativity is composability: $\tilde P(\tilde Q\tilde R)=(\tilde P\tilde Q)\tilde R$, so a chain of

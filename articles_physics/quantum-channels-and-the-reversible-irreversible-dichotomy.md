@@ -252,6 +252,17 @@ The framework **does** provide a natural algebraic home for the standard theory 
 
 The framework **does not** claim to explain why a given physical process is irreversible, to derive the environment a channel traces over, or to resolve the measurement problem. The reformulation changes the vocabulary of the dichotomy, not its physics; the selection problem — why one outcome, or one channel, rather than another — is untouched.
 
+## The Dichotomy and the Two Other Two-Class Splits
+
+The dichotomy of this article is the dichotomy of **Kraus rank**: a channel is reversible exactly when its rank is one, and then it is conjugation by a unitary biquaternion; it is irreversible exactly when its rank is at least two. That cut must be kept apart from two other two-class splits of the algebra with which it is easily conflated, because they cut on different quantities.
+
+**The units and the zero divisors.** The multiplication monoid of the algebra is cut by the light cone (*The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*): the invertible maps are left multiplications by units, the elements with $N(\tilde Q)\neq0$, and the non-invertible ones are left multiplications by zero divisors, the elements with $N(\tilde Q)=0$. This cut is by the **norm**, and it is not the channel dichotomy — a Kraus operator of a rank-two channel can be a perfectly good unit. The two cuts agree only on the reversible side, where a rank-one channel is built from a single unitary and the monoid's inverse exists; on the irreversible side they differ, since the monoid's non-units are the null elements and the channel's irreversible maps are the sums of two or more conjugations by units.
+
+**The sector splits.** Neither cut is the sector split $\mathbb{M}_+\oplus\mathbb{M}_-$, which is the distinction of states and observables, not of reversible and irreversible maps.
+
+**The arrow.** The channel cut is genuinely one-way: a channel of Kraus rank at least two cannot be inverted by any channel, and the passage from a unit to a sum of conjugations is the algebraic image of tracing out an environment. This is a physical arrow of the map, and it is a reading of this article's dichotomy. It must not be confused with the **temporal** arrow, which the framework does not supply: the exchange of the two sectors is a rotation of order four and carries no orientation, so the algebra offers both senses of the tick and no rule that selects one (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*, which records exactly that absence). Two senses of "irreversible" therefore live in the corpus — the non-invertibility of a map and the missing orientation of time — and they are different questions about different objects.
+
+
 ## Open Questions
 
 **1. Empirical content.** As for the rest of the framework, the central question is whether the biquaternion formulation predicts anything standard quantum information theory does not. A reformulation of quantum channels is, by itself, empirically empty.

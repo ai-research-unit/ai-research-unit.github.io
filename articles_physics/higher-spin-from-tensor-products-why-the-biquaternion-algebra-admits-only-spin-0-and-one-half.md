@@ -284,6 +284,12 @@ The conventions and the explicit cases used above are those of five companion ar
 - Companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the explicit spin-one case and its constraint structure.
 - Companion article *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*, for the explicit spin-three-halves case and its constraint structure.
 
+## The Two Index Families of the Bimodule
+
+The algebra is not only an algebra over $\mathbb{C}$; it is a rank-two bimodule over $\mathbb{H}$ on each side, with two commuting actions (*Different Ways to Consider Biquaternions*; the mathematics article *Biquaternions as a Bimodule over $\mathbb{H}$*). Read on the spinor, the two commuting actions are **two spinor index families**: the left action carries one index and the right action the other, so that the four-vector module $S\otimes\bar S$ is the product of the two families, and the defining module $S$ is the carrier of one family alone.
+
+The reading gives the module count of this article a second form. The module category of the algebra over $\mathbb{C}$ carries only spin zero and spin one-half; over $\mathbb{H}$ the same modules carry two index families, and the **failure of full $\mathbb{H}$-bilinearity** — the module being of rank two and not of rank one — is read as the obstruction to treating the two families as independent. It is a labelled reading, and it is offered as the bimodule form of the ceiling this article establishes. The owners are *Different Ways to Consider Biquaternions* and the mathematics article *Biquaternions as a Bimodule over $\mathbb{H}$*.
+
 ## Summary
 
 The biquaternion algebra is $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$, a simple algebra with a single simple module $S$, the spinor module of complex dimension two. Every finite-dimensional module over it is a direct sum of copies of $S$, by Artin–Wedderburn and Schur, so every module's rotation content is a multiple of spin one-half. A module carries no spin of magnitude one or greater, and the reason the dimension argument alone is insufficient is that the four-vector representation $(\tfrac12,\tfrac12)$ has the even dimension of a possible module but the weight content $1\oplus0$, which no direct sum of copies of $S$ reproduces.

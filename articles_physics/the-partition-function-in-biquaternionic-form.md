@@ -207,6 +207,18 @@ The partition function is complex. Its modulus is $2|\cos(\beta|\mathbf a|)|$ an
 
 This is a genuine modification, but it is **not forced** by the framework: observables are defined to be Hermitian elements of $\mathbb{M}_+$, and a Hermitian $\tilde H$ is the case treated in the body of the article. The non-Hermitian case is what one gets if one allows the generator to have an $\mathbb{M}_-$ component, and it connects to two standard ideas without deriving either: **complex temperature** (continuing $\beta\to\beta+i\theta$, which turns the trace into $\mathrm{Tr}(e^{-\beta\tilde H}e^{-i\theta\tilde H})$ and exposes real-time evolution), and the **imaginary chemical potential** used in finite-density lattice studies, where an imaginary parameter again converts a sign problem into a phase. Whether an $\mathbb{M}_-$-valued generator is physically meaningful in this framework, and whether the resulting complex free energy has an interpretation beyond these known techniques, is open.
 
+## The Norm's Logarithm as a Chemical Potential
+
+The thermal weight is a scale: $e^{-\beta\tilde H}$ is a Boltzmann factor times a boost, and in the scalar sector its logarithm is a free energy. Read on the biquaternion norm, the same logarithm has a chemical-potential form. The norm is multiplicative and definite on a unit, so a state of unit norm carries weight one and a general state carries a weight whose modulus is a power of $\lvert N\rvert$; the quantity $\log\lvert N\rvert$ is therefore a **potential**, and the total
+
+$$
+\mu_{\mathrm{tot}}=\log\lvert N\rvert+V ,
+$$
+
+with $V$ a central scalar external potential, is the sum of a configurational term and an external one. Read physically, $\log\lvert N\rvert$ is a chemical potential and $\mu_{\mathrm{tot}}$ the total potential of a grand-canonical description, the norm playing the role of the density and its logarithm that of the conjugate potential.
+
+The reading is labelled. The article's own content is the trace and the thermal operator; the identification of $\log\lvert N\rvert$ with a chemical potential is a reading of the same object, and it joins the two other readings of the norm's logarithm in the corpus, the dilation potential of *Conformal Invariance and the Massless Limit in Biquaternionic Form* and the Weyl factor of *The Local Complex Structure and the Speed of Light*. The passage to the imaginary direction, where the material sector enters, is the subject of the article's *Imaginary Time* section and of *The Matsubara Formalism in Biquaternionic Form*.
+
 ## Summary
 
 The partition function $Z=\mathrm{Tr}(e^{-\beta\tilde H})$ has a biquaternion form, and its content is a reading of the trace rather than a new object.

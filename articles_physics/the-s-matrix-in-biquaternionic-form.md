@@ -268,6 +268,12 @@ The gap is therefore the propagator's gap, seen from the S-matrix side: the alge
 
 **What is interpretation.** Reading $\tilde S$ as a scattering operator on a qubit-like informational sector is an interpretation of the algebraic structure; the algebra contains the unitary element and the trace pairing, but the identification of the two occupation states with asymptotic particle states requires the field-theoretic reading of the module, which is not derived here.
 
+## The Polar Word and the Moduli of an Amplitude
+
+The one-mode core of this article is already polar: $\tilde S=e^{i\theta_0}\tilde\Pi_1+e^{i\theta_1}\tilde\Pi_2$ is a scale times a phase on each idempotent, and every matrix-unitary biquaternion is $e^{i\theta}\tilde R$ with $\tilde R$ a unit real quaternion. Read on the polar element $\tilde Q=r\,e^{i\alpha}B\hat q$ of *The Polar Element Representation of Biquaternions*, the four factors carry the four moduli a scattering amplitude is built from: $r$ the magnitude, $\alpha$ the global phase, $B$ the frame velocity and $\hat q$ the spin rotation, so the polar word is read as the four moduli of an amplitude.
+
+The reading is labelled and its boundary is stated. The S-matrix of this article is finite-dimensional and conditional on the one-mode identification, and the identification of the polar factors with physical amplitude moduli is a reading and not a theorem: it names the shape the amplitude takes in the framework's word, and it does not compute a cross section. The owner of the polar word is *The Polar Element Representation of Biquaternions*.
+
 ## Open Questions
 
 1. **Is the one-mode S-matrix structural or accidental?** The identification of a single fermionic mode with $\mathbb{B}$ and hence of its S-matrix with a matrix-unitary biquaternion rests on $\dim_\mathbb{C}M_2(\mathbb{C}) = \dim_\mathbb{C}\mathbb{B}$. If the framework's one-mode identification is a coincidence, so is the biquaternion S-matrix.

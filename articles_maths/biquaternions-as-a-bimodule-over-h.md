@@ -94,6 +94,16 @@ $$
 
 so the product is not fully $\mathbb{H}$-bilinear on the basis elements themselves.
 
+## The Two Index Families
+
+The two commuting actions have a reading which the physics corpus takes up. A **spinor index family** is a copy of the quaternions carrying one of the two commuting actions: the left action carries one family and the right action the other. Since a spinor of the framework is an element of the minimal left ideal $\mathbb{B}\tilde\Pi_1$, the left action acts on it and the right action commutes with the left, so the two families are the two independent index structures of the spinor, and the **four-vector** of the framework is the product $S\otimes\bar S$ of the two families.
+
+**Statement.** The rank-two freeness on each side is the statement that each family is one quaternion factor, and the failure of full $\mathbb{H}$-bilinearity is the statement that the two families do not combine into one.
+
+*Proof.* The module is $\mathbb{H}$-free of rank two on each side with generators $e_0,ie_0$, so a family has one copy of $\mathbb{H}$; the two sides are the two families. The defect $[\tilde Q,h]\tilde P$ of the previous section is non-zero for non-central $h$, so no single $\mathbb{H}$-action contains both, and the two families are distinct. The identification of the four-vector with $S\otimes\bar S$ is the physics article's.
+
+The reading is recorded here because the physics articles cite it: *Higher Spin from Tensor Products* reads the two actions as the two spinor index families and the failure of full bilinearity as the obstruction to treating them as independent. The mathematical content of the section is the rank and the defect already proved; the index language is the physical name for them.
+
 ## Summary
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is an $\mathbb{H}$-bimodule with commuting left and right actions $h\cdot(A\otimes h')=A\otimes(hh')$ and $(A\otimes h')\cdot h=A\otimes(h'h)$, the two actions being distinct because $\mathbb{H}$ is non-commutative. In the quaternionic coordinates $\tilde Q=h_1+ih_2$ the actions read $h\cdot\tilde Q=(hh_1)+i(hh_2)$ and $\tilde Q\cdot h=(h_1h)+i(h_2h)$, using the centrality of $i$, and the module is free of rank two on each side on the generators $e_0$ and $ie_0$, which are a real basis of the centre. Its endomorphism ring is $\operatorname{End}_\mathbb{H}(\mathbb{B})\cong M_2(\mathbb{H})$. The product is left $\mathbb{H}$-linear in the first argument and right $\mathbb{H}$-linear in the second but not fully $\mathbb{H}$-bilinear; the defect is the commutator $[\tilde Q,h]$, and the structure is an $\mathbb{H}$-ring rather than a scalar structure. The base-ring question is *Biquaternions as an Algebra over $\mathbb{R}$*, and the structure in which $\mathbb{B}$ itself acts is *Modules over the General Plain Algebra of Biquaternions*.

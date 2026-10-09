@@ -251,6 +251,12 @@ The tensor product multiplies the centres, and this is the algebraic origin of t
 
 **5. Casimir elements.** In the enveloping algebra of $\mathrm{U}(2)=\mathbb{M}_-$ the central elements are the Casimirs, and on each irreducible module they act as scalars. The quadratic Casimir and the identity furnish the labels by which a representation is characterized, and those labels — a mass, a spin quantum number — are classical data attached to the representation rather than to the algebra. They are central in the enveloping algebra, not in $\mathbb{B}$ itself, and the distinction is the representation-theoretic counterpart of the statement that the framework's classical sector is minimal: the labels live in the centre of the symmetry algebra, and the symmetry algebra is larger than $\mathbb{B}$'s centre.
 
+## Two Independent $\mathbb{Z}_2$ Decompositions and the Failure of a Grading
+
+The article proves that the centre is trivial as an operator algebra and that the framework therefore has no intrinsic superselection structure. Read together with the block structure of *Relations Between Subspaces*, the statement sharpens. The algebra carries **two $\mathbb{Z}_2$ decompositions** — the half split $\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ and the sector split $\mathbb{M}_-\oplus\mathbb{M}_+$ — and multiplication by the central imaginary $i$ **exchanges both of them**, so the two structures cannot be aligned: no choice of one real slice makes both splits simultaneously the even and odd parts.
+
+The reading is that the framework carries "two independent superselections" in the sense of two independent $\mathbb{Z}_2$ decompositions, and the caution is exact. Neither is a superselection in the technical sense, since a superselection is a central projection and the centre has none; and the sector split is not a grading either, the obstruction $O15$ of *What the Biquaternion Algebra Cannot Do* recording that the two sectors do not form an algebra grading. The two splits are symmetries of the block decomposition, not classical labels, and the reading is offered with that boundary. The owners are *Relations Between Subspaces* for the block structure and the failure of a grading, and this article for the triviality of the centre.
+
 ## Summary
 
 The centre of the biquaternion algebra is

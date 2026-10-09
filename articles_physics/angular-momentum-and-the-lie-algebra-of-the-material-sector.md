@@ -302,7 +302,7 @@ homomorphism; the physical names are the reading.
 
 Three limits are worth stating. The **Lie algebra is not the group**: the exponential and the global
 structure are separate, and the reachable gauge groups are bounded by
-*The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches $\mathrm{SU}(2)$ but Not $\mathrm{SU}(3)$*.
+*The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*.
 The **Cartan criteria** read on $\kappa$ give a degenerate form: the algebra is not semisimple, its
 radical is the centre, and its derived algebra is the simple
 $\mathfrak{sl}(2,\mathbb{C})$; the reading is that the frame's algebra of generators is simple only up to

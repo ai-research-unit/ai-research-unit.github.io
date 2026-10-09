@@ -337,9 +337,8 @@ Some ideas may be very close, they could be added both. Only in case 2 ideas are
 
 
 
-The question is not "is this already in the corpus?" The question is: what are the possible physical readings these specific articles can carry (The biquaternion universe and the mathematical physics). They may be new or in other articles of the corpus.
 
-The question is not "is this already in the corpus?" The question is: what are the possible physical readings these specific articles can carry (The biquaternion universe and the mathematical physics). They may be new or in other articles of the corpus.
+Your job is 1. to implement the ideas in the head articles 2. to tell if some ideas deserve a new article or a part of an existing article deeper in the corpus.
 
 
 
