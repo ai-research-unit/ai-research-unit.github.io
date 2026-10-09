@@ -182,6 +182,10 @@ Four cautions belong with the ideas, because the failure mode of a programme of 
 
 **Fourth, the framework sits in a crowded space.** Reformulations of quantum mechanics already exist: geometric algebra (Hestenes, Doran and Lasenby), algebraic quantum field theory (Haag and Kastler), operational quantum mechanics (Hardy, Chiribella), quantum information (Hardy, Barrett) and twistor theory. The framework has to say what it adds. Its own catalogue of what the algebra cannot do, *What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions*, is where the boundary is drawn; *Twistor Theory and Biquaternions* compares it with the nearest complex-geometric programme.
 
+## Physical Readings
+
+The difficulties of the article can be read as the list of the places where a physical reading is already available. Difficulty 2, the axiomatic Born rule, has its reading in the trace formula (*The Born Rule as a Trace Formula — Derivation and Comparison*); difficulty 4, measurement outside the formalism, in the passage from a pure state to a mixture (*The Measurement Problem in Algebraic Form*, *Decoherence as Idempotent Projection*); difficulty 6, the oscillatory path integral, in the central phase, which is the clock of the theory; and difficulty 7, non-locality against causality, in the cone of the algebra, which is one locus for the null directions of the field and for the correlation (*The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase*). No reading closes its difficulty, and each is stated where it is made.
+
 ## Summary
 
 Quantum mechanics and relativity do not sit comfortably together, and the difficulties are structural: the time is a parameter in one theory and a coordinate in the other; the Born rule is an axiom; spin–statistics needs field theory; the measurement lies outside the formalism; quantisation is a recipe; the path integral needs the Wick rotation; and non-locality is in tension with causality.

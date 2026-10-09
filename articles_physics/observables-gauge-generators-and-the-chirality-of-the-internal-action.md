@@ -309,6 +309,10 @@ as a chirality of the internal coupling, with no parity violation claimed and wi
 **Not claimed.** That the chirality reading is a physical result; that any weak-interaction structure is
 derived; that a gauge vertex is computed.
 
+## Physical Readings
+
+The two one-sided operators read as the two kinds of acting element: an observable is Hermitian and an evolution is unitary, and the adjoint rule $\Theta_{\tilde Q}^{\dagger} = \Theta_{\tilde Q^{*}}$ is what makes the distinction algebraic. Read on the monoid, the reversible elements are the units and the projections are the non-invertible maps, so the chirality of the internal action is where the framework's direction of process begins (*The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*). Read on the split, the operators that preserve the sectors are the observable frame changes, which is the same statement the sandwich makes on the subspaces.
+
 ## Summary
 
 The algebra's operator structure expresses the split of its sectors. Left multiplication by a Hermitian

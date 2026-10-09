@@ -387,6 +387,10 @@ coupling has a physical process behind it. That an $N$-orthogonal family is a se
 superselection sectors, or that the orthogonality-selection-rule naming is forced by the algebra rather
 than chosen; the algebra forces only the vanishing of the cross term and the non-degeneracy of the form.
 
+## Physical Readings
+
+The central-valued form reads as a coupling and not as a state: its values are numbers, so it can weight a process and cannot label an outcome. Read for invariance, this is the class of the probability form as well, a central value being the only kind of value that a change of the local complex structure leaves alone, which is why the two central-valued forms of the grid are the ones that survive a change of frame. Read on the states, the article's negative results — no unit, no Jordan identity — are the reason that a coupling of material operations is not an algebra of observables.
+
 ## Summary
 
 The symmetrised quaternionic product

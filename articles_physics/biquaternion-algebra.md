@@ -564,6 +564,10 @@ The two **sectors** are where the form becomes indefinite, and they are the two 
 
 The material signature is the $ict$ metric of the series, $-c^2t^2 + \mathbf{x}^2$, and it is the signature of spacetime. The informational signature is its negative, which is not a second spacetime but the same form read on the other end of the dictionary. The two are exchanged by multiplication by $i$, exactly as the two sectors are. Only the two indefinite subspaces carry null elements, $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ with $\tilde{Q} \neq 0$; the light cone is the null cone of the material restriction.
 
+## Physical Readings
+
+The four conjugations and the four forms of the algebra read as four physical objects. The plain bilinear form is the composition, the quaternionic bilinear form is the interval, the plain sesquilinear form is the probability and the quaternionic sesquilinear form is the gauge calibration; the six subspaces then carry the algebraic names of the temporal, spatial, material and informational structures of the universe. Read for invariance, the same algebra is one object under a change of the local complex structure, and its probability form, its gauge calibration and its zero-divisor cone are what do not move.
+
 ## Summary
 
 The biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$. It is associative, non-commutative and not a division algebra.

@@ -896,6 +896,10 @@ principle**.
 is a grid of jobs, is a claim about the framework's organisation and not a theorem about biquaternions.
 The algebra fixes the grid and the signs; it does not fix the names.
 
+## Physical Readings
+
+Two transversal readings can be added to the map. The sector exchange sorts the four products into two classes, the two bilinear products moving with the Wick exchange and the two sesquilinear products not, and a change of the local complex structure does the same, so the sorting itself is the framework's invariant criterion (*Conventions in the Biquaternion Universe*). And the exchange read as a clock adds a reading of the temporal product: the quarter turn of the complex time sector is the tick, whose reference and period are supplied and whose arrow and rate are not (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*).
+
 ## Summary
 
 The biquaternion space carries four general products, obtained by inserting the involutions of the algebra into

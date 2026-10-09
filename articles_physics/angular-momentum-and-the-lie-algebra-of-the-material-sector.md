@@ -339,6 +339,10 @@ and is labelled as such.
 representations of the physical angular momentum; that the compactness of a direction is a physical
 statement without the sign of the form; that the bracket is the angular momentum of a material field.
 
+## Physical Readings
+
+Angular momentum and the Killing form read as the two invariants of the material frame, and the signature of the Killing form reads as the compact/non-compact dichotomy. Read on the sectors, that dichotomy is the material/informational split at the level of generators: a rotation is a material generator and a boost is an informational one, and the non-closure of the boosts is the algebraic origin of the Wigner rotation (*The Material-Informational Split as a Superselection Structure in Biquaternionic Form*). The invariants of the rotation group are then the invariants of the spatial part of the clock, while the central phase is separate and belongs to the exchange.
+
 ## Summary
 
 The antisymmetric plain algebra is a complex Lie algebra of complex dimension four, with centre

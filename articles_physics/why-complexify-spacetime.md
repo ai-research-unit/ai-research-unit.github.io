@@ -174,6 +174,10 @@ The metric convention tells you **what** the geometry is. The $ict$ convention t
 
 This is not a proof. It is a research program. The motivations above are reasons to take it seriously, not reasons to believe it. The next articles lay out the mathematical structure in detail: first the two natural subspaces of the biquaternion algebra — the material sector $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$ — and then the objects that live in each.
 
+## Physical Readings
+
+Complexification can be read twice, and the two readings point in opposite directions. Read backwards it recovers Minkowski's $ict$ as a coordinate device and makes the Lorentzian signature an output of the complex structure rather than an axiom. Read forwards it makes the complex structure *local*: the algebra is one object, the speed $c$ is the scale of its embedding in physical spacetime, and a change of the embedding is a change of the local complex structure that moves the interval and the composition while the probability form and the cone stay (*Conventions in the Biquaternion Universe*, *Electromagnetism in Media — The Local Complex Structure at Work*). The article's additional motivation reads the other end of the same fact: the null-divisor fields exist only on manifolds of indefinite signature, so the Lorentzian signature is a necessary condition of a non-trivial dynamics.
+
 ## Summary
 
 The corpus adopts the complexified convention: time is written $ict$ and the geometry is carried by the complexified algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, not by a real four-dimensional vector space with a metric. The article states why. The $ict$ convention is Minkowski's own, and the metric convention of signature $(-,+,+,+)$ is a later re-writing that suppresses the complex structure while preserving every result; what the re-writing lost is the reason the factors of $i$ were there. Reinstating them makes the real slice a **projection** and the complex structure the thing projected: the metric convention says *what* the geometry is, the complexified convention asks *why*.

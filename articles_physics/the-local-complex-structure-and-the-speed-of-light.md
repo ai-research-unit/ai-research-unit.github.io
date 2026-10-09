@@ -159,6 +159,10 @@ Four boundaries should be stated, so that the local claim is not read as a globa
 3. **Only the pointwise Lorentz invariance survives when $c$ varies.** For constant $c$ the interval is invariant under the full Lorentz group and the invariance is global. For $c=c(\mathbf x)$, a constant Lorentz transformation mixes $t$ and $\mathbf x$ and therefore does not preserve $g(\mathbf x)$: only the pointwise invariance remains. No global Lorentz invariance of a variable metric is claimed here. This is the same local/global caution in group-theoretic form.
 4. **Curved spacetime is a further step.** The structure described here is a tangent-space statement at a point. Its extension to a curved manifold requires a tetrad or spin connection, and it is treated separately in the corpus; nothing in the present article assumes or establishes that extension.
 
+## Physical Readings
+
+The two senses of complex structure read as two physical claims. Globally, the complex structure of the algebra is fixed and no physics follows from it, which is the article's negative reading. Locally, the structure is the medium's: $c$ is the scale of the embedding, a change of the local structure moves the interval and the composition and leaves the probability form and the zero-divisor cone, and the cone of the algebra is therefore the invariant against which the physical wave cone is compared (*Conventions in the Biquaternion Universe*, *Electromagnetism in Media — The Local Complex Structure at Work*).
+
 ## Summary
 
 The Lorentzian signature of spacetime is algebraic in the biquaternion framework: the minus sign in $ds^2=-c^2dt^2+d\mathbf x^2$ is the sign of $i^2$. What this article has separated is the sense in which the complex structure that produces it is, and is not, available.

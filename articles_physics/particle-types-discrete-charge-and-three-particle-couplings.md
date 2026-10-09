@@ -400,6 +400,10 @@ three-gluon vertex explicitly not derived.
 **Not claimed.** That a reality type is assigned to any observed particle; that a mass or charge spectrum
 is derived; that any gauge vertex is computed.
 
+## Physical Readings
+
+The reality-condition trichotomy reads as a particle taxonomy: a spinor whose reality condition holds for no coefficient, for the central one only and for the whole real part are three physical species, and the algebra rather than an external label fixes the types. The ternary couplings read as the gauge side: a three-particle vertex is a ternary product of the gauge structure, which is why the couplings of the framework are not the structure constants of a Lie algebra but the values of a product. Read on the states, the trichotomy is also the boundary of the state space, since only the elements that meet the reality condition of the whole real part carry states.
+
 ## Summary
 
 The particle content of the operator structure follows one pattern. The algebra's module carries a

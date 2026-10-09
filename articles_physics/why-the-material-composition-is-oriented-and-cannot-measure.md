@@ -286,6 +286,10 @@ structure is possible; that the trivial idempotents carry physical processes; th
 operations has a natural bracketing; that the ordering-cost reading is forced by the algebra rather than
 chosen.
 
+## Physical Readings
+
+The orientation reads as the statement that the material ledger carries no Born rule: with no right unit and two slots that are not the same, a form of this product cannot be a probability, which is why the probability is the sesquilinear product and why the two slots of an observation are not interchangeable (*The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*). Read against measurement, the absence is informative rather than defective: a measurement needs positivity and idempotents, and the material composition has neither, while the informational sector has both.
+
 ## Summary
 
 The material composition $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is **oriented**: its first

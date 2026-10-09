@@ -340,6 +340,10 @@ framework lacks a gauge group; the group is read elsewhere. That the obstruction
 result. That the Jacobiator is a physical anomaly, or that the mixed terms are physical boosts in a sense
 stronger than the companion article's reading.
 
+## Physical Readings
+
+The Jacobi failure reads as the algebraic origin of the boost obstruction: the non-compact generators do not close on a Lie algebra, and the gap is the mixed term $P_0\mathbf Q-Q_0\mathbf P$ that the companion article reads as the boost (*Boosts, Mixed Terms and the Missing Lie Structure*). Read on the split, the failure is the non-compactness of the informational generators, so this article's record of a failure and the framework's superselection statement are two statements of one fact: the boosts are informational generators and the informational generators do not form an algebra.
+
 ## Summary
 
 The antisymmetrised quaternionic product

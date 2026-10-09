@@ -676,6 +676,10 @@ In every case the coupling built on $\flat$ pairs $\tilde{\Psi}$ with $\tilde{\P
 
 $\flat$ is **not** the mass. The two roles were conflated in the retired form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$, and separating them is the content of the mass-term convention above. A reader who finds $\flat$ in an article should expect conjugation, a Majorana pairing, a bilinear, or the sector split — never a Dirac mass.
 
+## Physical Readings
+
+The article can also be read as the dictionary that says where each physical reading is taken. The three levels of the word metric are three physical jobs and not three objects: the complex-linear norm on $\mathbb{B}$ is the universal form of the algebra, the level-2 form on the real sectors is the interval with its signature, and the level-3 form is a convention of translation into the gamma-matrix literature. The freedom of level 3 and the freedom of a change of the local complex structure are then one statement read at two levels: neither moves the algebra, and both are movements of the embedding rather than of the physics.
+
 ## Summary
 
 The conventions of the series fall into two groups.

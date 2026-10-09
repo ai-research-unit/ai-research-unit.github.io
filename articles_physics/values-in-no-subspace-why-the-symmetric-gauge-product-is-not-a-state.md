@@ -232,6 +232,10 @@ element, and the vector directions have $K(e_k,e_k)=-1$. Three further readings,
 unphysical; that the block's product is a correction of the plain one; that a state space can be
 reconstructed from the block.
 
+## Physical Readings
+
+The values lying in no subspace read as the framework's criterion for what can be an observable: an object whose diagonal is not central cannot be counted, so a symmetric gauge product is a structure and not a quantity. The article's examples are the reading in one line: the minimal mixing element $\tilde Q = e_0 + e_1$ has the non-central diagonal $-2e_1$, while a pure vector direction has a central one, so the slightest mixing is enough to leave the class of what can be measured. Read on the split, the criterion is the same one that separates the gauge side from the state side.
+
 ## Summary
 
 The symmetric quaternionic sesquilinear product has values in **no one of the six subspaces** of the

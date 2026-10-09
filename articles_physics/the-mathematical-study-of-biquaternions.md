@@ -299,6 +299,10 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [The Pluripotential Theory of the Biquaternion Dynamics](../articles_maths/the-pluripotential-theory-of-the-biquaternion-dynamics.html)
 - [The Biquaternion Holomorphic Dynamics and the Jacobian](../articles_maths/the-biquaternion-holomorphic-dynamics-and-the-jacobian.html)
 
+## Physical Readings
+
+The four blocks of the study read as a division of labour with the physics. Algebra owns the products, the involutions and the six subspaces; topology owns the zero-divisor cone and the projective cone, which are the light cone and the directions of light; analysis owns the regular functions and the operators, which are the fields and their evolutions; geometry owns the frame, the geodesics and the surfaces, which are the Lorentz transformations and their orbits. The article's claim that nothing here is owned and everything is read is the same claim from the other end: each physical reading is a theorem of one of the four blocks.
+
 ## Summary
 
 - The biquaternion algebra is studied in depth in the mathematics corpus; this article is the physics-side sub-menu of that study and owns no result of its own.

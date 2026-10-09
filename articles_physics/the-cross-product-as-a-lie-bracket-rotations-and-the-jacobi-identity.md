@@ -289,6 +289,10 @@ fact and is labelled as such.
 generates; that the bracket is the physical angular momentum of a system; that the operation carries a
 positivity, a unit or a metric.
 
+## Physical Readings
+
+The bracket reads as the infinitesimal change of frame in its compact half: the cross product of two material vectors generates a rotation, and the closure of the bracket is why the rotations form a group while the boosts do not. Read on the split, this is a *material* bracket, its values lying in the vector subspace, so it belongs to the compact half of the Lorentz algebra (*The Material-Informational Split as a Superselection Structure in Biquaternionic Form*). Read on the clock, the bracket touches no central coordinate and is therefore invisible to the exchange, which acts on the scalar part.
+
 ## Summary
 
 The antisymmetric part of the ordinary product is the **cross product of the two vector parts**,

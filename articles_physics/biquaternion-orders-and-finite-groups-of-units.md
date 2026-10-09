@@ -141,6 +141,10 @@ so the unit group contains an infinite cyclic subgroup generated along a nilpote
 
 **Physical reading.** The real orders have finite unit groups; the complex order does not. The difference is the light cone: nilpotent directions are null, and a null direction generates a translation-like one-parameter group without bound. On the material sector, where the four-position is $\tilde{Q}=ict\,e_0+\mathbf{x}$, the null condition is the light cone $c^2t^2=\mathbf{x}^2$: the integral null element $P=e_1+ie_2$ lies on the complex null cone and is the nilpotent direction that generates the infinite cyclic subgroup, while the finite unit groups sit in the real sector $\mathbb{H}_{\mathbb{B}}$, where the norm is definite and no null direction exists. In physics terms the infinite unit group is the algebraic statement that the light cone is present, and the finite unit groups are the groups of the massive, non-null sector.
 
+## Physical Readings
+
+The orders read as the discrete skeleton of the algebra and their finite unit groups as its discrete symmetries: the quaternion units are rotations by $\pi$ of the lattice and the binary groups are their lifts. Read against the continuous groups, the article's structures are what survives when the frame is restricted to integral elements, so the orders are the framework's arithmetic rather than its dynamics. Read on the clock, the finite unit group carries no continuous phase, which is the sharpest illustration that the phase of the framework comes from the centre and not from the units.
+
 ## Summary
 
 The quaternion orders inside the biquaternion algebra are the Lipschitz order $\mathcal{L}$ and the Hurwitz order $\mathcal{L}'$, the second containing the first with index two and maximal. Their groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four; the unit-group index is three, though the lattice index is two.

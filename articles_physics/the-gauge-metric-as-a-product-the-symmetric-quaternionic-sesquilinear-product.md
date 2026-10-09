@@ -421,6 +421,10 @@ pairing**, **frame strain** and **internal volume form**.
 unphysical; that the operation supplies a state space, a Jordan structure or a gauge algebra; that a
 particular transformation group beyond the cited articles leaves the pairing invariant.
 
+## Physical Readings
+
+The gauge metric reads as the pairing of the transformations rather than of the states, and its signature is the reading of the gauge side: it is indefinite, so it selects no direction of positivity, which is why a gauge calibration can compare two internal frames and cannot rank them. Read for invariance, this is the second member of the invariant pair: the sesquilinear row of the grid is what a change of the local complex structure does not move, so the gauge metric and the probability form travel together while the interval and the composition do not.
+
 ## Summary
 
 The symmetric quaternionic sesquilinear product is the symmetric half of the fourth product under the

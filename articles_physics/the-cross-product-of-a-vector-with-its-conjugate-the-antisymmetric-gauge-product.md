@@ -295,6 +295,10 @@ oriented frame.
 or Bloch sphere; that the axial vector is a gauge generator; that the operation is an algebra with a unit
 or a Lie structure (the Jacobi failure is the companion article's).
 
+## Physical Readings
+
+The antisymmetric gauge product reads as the rotation-like part of the internal action, and its being pure vector is what keeps it out of the state space. Read against the reality conditions, the conjugation in the first slot is the framework's way of pairing an object with its conjugate, which is the structure a reality condition needs; read on the clock, the product carries no central component, so it is invisible to the exchange and belongs entirely to the vector part of the algebra.
+
 ## Summary
 
 The antisymmetric quaternionic sesquilinear product is the half-difference of the two orders of the fourth

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A massless element of the framework is an element of zero biquaternion norm, and its **direction** is the only datum its norm does not remove. The set of those directions is an object with a name and a long history in the relativity of the null cone: the **celestial sphere**. This article gathers the sphere, describes the two chiralities it carries, and records the reading that a massless element is a **point of the celestial sphere together with a phase**. It is deliberately short, because most of the machinery it uses is owned elsewhere: the Hopf bundle and its winding numbers belong to *The Hopf Fibration and the Biquaternion Gauge Bundle*, the metric geometry of the sphere to *The Fubini–Study Geometry and the Biquaternion Norm*, the little group and the helicity weights to *The Spinor-Helicity Formalism and Biquaternions*, and the photon's nullity to *The Photon as a Null Element*. What this article owns is the **sphere of directions of the null cone** — its definition inside the algebra, its two chiralities, and the sentence that says what a massless element physically is.
+A massless element of the framework is an element of zero biquaternion norm, and its **direction** is the only datum its norm does not remove. The set of those directions is an object with a name and a long history in the relativity of the null cone: the **celestial sphere**. This article gathers the sphere, describes the two chiralities it carries, and records the reading that a massless element is a **point of the celestial sphere together with a phase**. It is deliberately short, because most of the machinery it uses is owned elsewhere: the Hopf bundle and its winding numbers belong to *The Hopf Fibration and the Biquaternion Gauge Bundle*, the metric geometry of the sphere to *The Fubini–Study Geometry and the Biquaternion Norm*, the little group and the helicity weights to *The Spinor-Helicity Formalism and Biquaternions*, and the photon's nullity to *The Photon as a Null Element: What the Cone Derives and What It Does Not*. What this article owns is the **sphere of directions of the null cone** — its definition inside the algebra, its two chiralities, and the sentence that says what a massless element physically is.
 
 ## The Null Cone of the Algebra
 
@@ -48,13 +48,13 @@ so that over the complexified cone the phase is a circle over the two spheres to
 
 ## The Spinor Coordinates
 
-The sphere and the spinors are the same object in two coordinates. A null element of the material sector, carried to the informational sector by the central rotation and read as a Hermitian element, is a rank-one Hermitian element, and every such element is a product of a spinor with its conjugate,
+The sphere and the spinors are the same object in two coordinates. A null element of the material sector, carried to the informational sector by the central rotation, $\tilde H = -i\tilde P \in \mathbb{M}_+$, is a rank-one Hermitian element, and a **positive** such element is a product of a spinor with its conjugate,
 
 $$
 \tilde{\Pi}_\xi = \xi\,\xi^{\dagger}, \qquad \xi \in \mathbb{C}^2,
 $$
 
-with $\tilde{\Pi}_\xi$ of rank one exactly when $\xi\neq0$, and idempotent when $\xi$ is normalised. The **direction** of $\tilde{\Pi}_\xi$ depends on the spinor only through its **ray**: replacing $\xi$ by $e^{i\alpha}\xi$ multiplies $\xi\xi^{\dagger}$ by $e^{i\alpha}e^{-i\alpha} = 1$ and leaves the element unchanged, so the direction is a **spinor up to a phase**, and
+with $\tilde{\Pi}_\xi$ of rank one exactly when $\xi\neq0$, and idempotent when $\xi$ is normalised. The sign is the direction of time: a future-pointing null element gives a positive-semidefinite matrix and a past-pointing one gives its negative, so the two orbits of the sphere are the two signs, and the positive case is the one the spinor-helicity factorisation uses (*The Spinor-Helicity Formalism and Biquaternions*). The **direction** of $\tilde{\Pi}_\xi$ depends on the spinor only through its **ray**: replacing $\xi$ by $e^{i\alpha}\xi$ multiplies $\xi\xi^{\dagger}$ by $e^{i\alpha}e^{-i\alpha} = 1$ and leaves the element unchanged, so the direction is a **spinor up to a phase**, and
 
 $$
 \mathcal{C} \;\cong\; \mathbb{C}\mathbb{P}^1 \;\cong\; S^2.
@@ -81,7 +81,7 @@ The reading also fixes the boundary of the object. The sphere is the set of **di
 ## What the Reading Does Not Claim
 
 - It does **not** claim that the celestial sphere is something the biquaternion algebra adds to relativity. The sphere of lightlike directions is standard, and it is met by every four-dimensional treatment of the null cone; the article records its place in the algebra and not a new result.
-- It does **not** claim that the sphere derives the massless condition. The cone marks the massless shell and does not choose it, as *The Photon as a Null Element* records; the sphere is the geometry of the marking, not a derivation of it.
+- It does **not** claim that the sphere derives the massless condition. The cone marks the massless shell and does not choose it, as *The Photon as a Null Element: What the Cone Derives and What It Does Not* records; the sphere is the geometry of the marking, not a derivation of it.
 - It does **not** own the metric, the bundle or the little group. The Fubini–Study line element, the Hopf fibration with its winding numbers, and the helicity weights are delegated by name in the text.
 - It does **not** claim that the direction datum and the phase are independent in every representation. The spinor presentation ties them — the direction is the ray and the phase is the remaining freedom of the representative — and the article states the tie rather than a product decomposition.
 
@@ -98,7 +98,7 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 | $\mathcal{C} \cong S^2$ | the celestial sphere, the null directions up to scale |
 | $\mathbb{P}^1\times\mathbb{P}^1$ | the Segre quadric, the projective complex null cone, the two chiral spheres |
 | $\xi \in \mathbb{C}^2$ | the spinor; the direction is its ray, $\xi\mapsto e^{i\alpha}\xi$ |
-| $\tilde{\Pi}_\xi = \xi\xi^{\dagger}$ | a null Hermitian element of rank one; idempotent for unit $\xi$ |
+| $\tilde{\Pi}_\xi = \xi\xi^{\dagger}$ | a positive rank-one Hermitian element, hence null; idempotent for unit $\xi$ |
 | $h$ | the helicity, the weight of the little-group $U(1)$ |
 | $\mathbb{C}\mathbb{P}^1 \cong S^2$ | the sphere in spinor coordinates |
 

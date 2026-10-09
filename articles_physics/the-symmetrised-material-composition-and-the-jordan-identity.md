@@ -316,6 +316,10 @@ algebraic fact and is labelled as such.
 **Not claimed.** That the Jordan identity concerns measurement; that the order-free composition is the
 whole composition; that the operation carries a positivity, a state or a scale.
 
+## Physical Readings
+
+The symmetrised product reads as what two material observations share when their order does not matter: it is commutative and its cross term is dropped, so it carries no orientation. Its failure of the Jordan identity is then the algebraic statement that the material ledger is not an algebra of observables; the observables are the Hermitian elements with the same symmetrised operation (*Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*). Read on the two ledgers, the article is the negative half of a pair whose positive half is the state side.
+
 ## Summary
 
 The ordinary product of $\mathbb{B}$ splits under the exchange of its arguments into the **symmetrised

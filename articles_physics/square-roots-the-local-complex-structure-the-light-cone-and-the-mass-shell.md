@@ -337,6 +337,10 @@ local frames a quantity can be referred to, the non-uniqueness of the root being
 representative; that the material sector is the sector of the composite, the refusal being confined to
 the nilpotents; and, speculatively, that the roots of $+1$ are the discrete symmetries.
 
+## Physical Readings
+
+The three distinguished radicands read as the three physical cases of the framework. The square root of $-e_0$ is the local complex structure $i$, that is, the quarter turn that carries the clock; the square root of $e_0$ is a null direction, that is, a point of the cone, where the two roots coincide at the lightlike element; and the square root of a general radicand is a boost, whose polar form exists only outside the cone. The equation therefore reads the mass shell and the cone in one statement, and the reading is that massive, massless and spacelike are the interior, the boundary and the exterior of one quadric.
+
 ## Summary
 
 The single equation $\tilde P^{2}=\tilde Q$ has, at its three distinguished central radicands, three

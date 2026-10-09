@@ -190,6 +190,10 @@ $$
 
 The dimension doubles for the same reason as in the element article: $\mathbb{B}$ is a complex space regarded as a real one by restriction of scalars, and each complex coordinate becomes two real ones. The doubling changes the exponents — $4 \to 8$ on the determinant, the factor $2$ on the trace — and nothing else.
 
+## Physical Readings
+
+The operator reads as a process written as a product of two regular maps, and the reading is that a change of frame is a composition and not an element: the sandwich is the left multiplication by the operand composed with the right multiplication by its adjoint. Read on the monoid, units are reversible processes and zero divisors are the irreversible ones, so this representation is where the direction of a process becomes visible as a failure of invertibility. Read on the two ledgers, the two factors are the two actions, which is the matrix form of the statement that a frame change touches both sectors at once.
+
 ## Summary
 
 The sandwich of an element is a product of the two regular maps: $\operatorname{H}_{\tilde{Q}} = \rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{*})$, the left multiplication by the operand composed with the right multiplication by its Hermitian conjugate, which in the coefficient basis is the matrix $\rho_L(\tilde{Q})\,D\,\rho_L(\tilde{Q})^{*}\,D$ with $D = \operatorname{diag}(-1,1,1,1)$. Every entry is sesquilinear in the coefficients, so the operator is quadratic in the operand and linear in the argument. It is a congruence and not a similarity, which is the matrix-level reason it is not multiplicative, and physically it is the product of the two chiral multiplications by which the corpus writes a Lorentz transformation.

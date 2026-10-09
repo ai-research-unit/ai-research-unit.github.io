@@ -170,6 +170,10 @@ signature $4$ on the algebra, $8$ over $\mathbb{R}$; the Krein form indefinite w
 **Readings and speculation.** The signature as the net number of positive modes; the one integer as a
 bound on net state content; the signature as a conserved net index, explicitly labelled speculation.
 
+## Physical Readings
+
+Inertia reads as the classification of what a signature allows a physical spectrum to carry: how many timelike, how many spacelike and how many null directions a form admits is exactly how many of each kind of physical direction the theory has, and congruence is a change of frame. Read for invariance, inertia is what a change of the local complex structure moves, the signatures $(3,1)$ and $(1,3)$ of the two sectors being one inertia with one sign flipped, while the coarser invariants of the article are what survives the change. Read on the clock, a form's inertia is unchanged by the central rotation, which is why the exchange is a rotation and not an isometry.
+
 ## Summary
 
 Hermitian forms on the biquaternion algebra are classified up to the congruence

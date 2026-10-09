@@ -341,6 +341,10 @@ $\tilde{Q} = \sqrt3e_0+2ie_3$: $\operatorname{H}_{\tilde{Q}}(ie_0) = 7ie_0 - 4\s
 
 $i\tilde{Q} = \sqrt3ie_0 - 2e_3$, of biquaternion norm $1$: the same operators as $\tilde{Q}$, with $\operatorname{H}_{i\tilde{Q}}(ie_0) = 7ie_0-4\sqrt3e_3$, which is the material-sector reading of the previous example.
 
+## Physical Readings
+
+The sandwich reads as an isometry of the form of each subspace, and the article's own reading is that one map gives one symmetry per subspace. Read on the split, the sandwich is the reason a change of frame cannot mix the material and the informational data: the acting element keeps the grading, so the relativity of the frame and the sharpness of the split are compatible (*The Material-Informational Split as a Superselection Structure in Biquaternionic Form*). Read on the clock, the unit-norm slice of the sandwich is the group that moves the ledger and does not move the phase, which is why the temporal reading of the exchange and the transformation theory of the material sector are separate.
+
 ## Summary
 
 The sandwich, restricted to the six distinguished subspaces, produces four operator classes, because a central factor multiplies the sandwich by the squared modulus of its scalar: the scalar imaginary identifies the two halves and the two sectors, so an antiquaternion acts as its real quaternion and a four-vector acts as the informational element $i$ times it.

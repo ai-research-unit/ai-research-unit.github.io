@@ -408,6 +408,10 @@ The invertibility criterion is stated with the biquaternion norm; the Hermitian 
 
 The scalar part of the Hermitian form, by contrast, is non-negative and definite on all of $\mathbb{B}$: it vanishes only at the origin and **does not detect the zero divisors at all**. The two forms answer different questions — "is this element invertible" and "how large is this element" — and the series uses them for those two questions respectively.
 
+## Physical Readings
+
+The norm reads as mass and its zero set as light, and the article's own reading is that the norm of the algebra is a semi-norm and not a norm in the analytic sense. Two further readings belong with it. The norm is reversed by the central generator, $N(i\tilde Q) = -N(\tilde Q)$, so the exchange that ticks the clock also flips the sign of the mass form (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). And invertibility fails exactly on the zero divisors, so the directions that travel at $c$ are the directions that cannot be inverted, which is the framework's algebraic reason that light is a boundary rather than a state.
+
 ## Summary
 
 The biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form, the semi-norm of the literature. It is the level-1 form and is the metric of the framework: it is the Minkowski interval on the material coordinate and the opposite signature on the informational one. It is not positive-definite and it vanishes on the zero divisors, which on the material sector is the light cone. Of the usual norm axioms only the sign axiom survives; the scaling axiom fails for complex scalars, since $\sqrt{\lambda^2}$ lies in the right half-plane and not at $|\lambda|$. The absolute square root $r = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\Phi(\tilde{Q})|}$ is the **unique** multiplicative real norm on the units normalised by $r(\lambda e_0) = |\lambda|$ for real $\lambda$, and it is the real scale of the polar representations.

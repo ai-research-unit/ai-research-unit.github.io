@@ -303,6 +303,10 @@ is a mass operator: only that no observable algebra of masses is available in th
 mass spectrum is a set of characters, or that "a comparison that normalises none" is forced by the
 algebra: only the multiplicativity of $N$, the trivial radical and the cone are asserted.
 
+## Physical Readings
+
+The isotropic elements read as the null cone, so the radical of the central product is the cone read as a degeneration of a product, and the article's reading is that a central product cannot compose because composing needs a value that can be multiplied rather than only added. Read against the states, the absence of a unit and the failure of the Jordan identity say that this product cannot define an observable; read for invariance, its central values are of the class that no change of the local complex structure touches.
+
 ## Summary
 
 The symmetrised quaternionic product has all its values in the centre $\mathbb{C}_{\mathbb{B}}$, and the

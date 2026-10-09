@@ -284,6 +284,10 @@ The record does not show that the biquaternion algebra is nature's, that any nea
 
 The distinction on which this turns is between an algebra **containing** a structure and a person **using** it. Containment is a theorem of the 1840s; use is an event of the 1910s or the 1920s. "Near-miss" conflates the two, and this article uses it only where the documented record — the published relativity of Conway and Silberstein — justifies it.
 
+## Physical Readings
+
+The historical objects can be read in the framework's own terms, and the article invites that. Hamilton's bivectors of square zero are the null directions of the biquaternion norm, that is, the zero-divisor cone read as light; Clifford's rotors are the sandwich action, that is, the isometries of the four forms; and the split-biquaternion algebra of the *Preliminary Sketch* is the two-sector structure $\mathbb{M}_\pm$, so the material–informational split has a nineteenth-century ancestor. Read that way the history is not a list of anticipations but a record of which algebraic object each physical reading was first attached to.
+
 ## Summary
 
 The biquaternions are the complex quaternions, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, introduced and named by Hamilton and treated at length in his *Lectures on Quaternions* (1853). The motive for the complexification was algebraic: in $\mathbb{H}$ a quadratic equation has no quadratic formula, its solution set need not be finite, and its resolution can call for a scalar square root of $-1$ — that is, for complex coefficients. As an algebra the biquaternions are $M_2(\mathbb{C})$, equivalently the Pauli algebra $Cl_{3,0}(\mathbb{R})$ and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Their unit-norm elements are $SL(2,\mathbb{C})$, the double cover of the Lorentz group, acting on the material sector $\mathbb{M}_{-}$ by rotor conjugation; the full algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is the operator algebra of a two-state system, of which $\mathbb{M}_{+}$ is the Hermitian subspace.

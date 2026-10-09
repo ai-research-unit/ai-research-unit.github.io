@@ -423,6 +423,10 @@ between the sectors, or that the imaginary part of the interval is a physical pr
 $\mathbb{M}_-\to\mathbb{M}_+$ and the name of the overlap are supplied, and the coupling between the
 sectors remains an open question of the introduction.
 
+## Physical Readings
+
+The interval reads as the square of the composition, the mass as its charge and the sign as the sector. Two further readings belong with it. The norm is reversed by the central generator, $N(i\tilde Q) = -N(\tilde Q)$, so the exchange that ticks the clock also carries the sign of the interval, and the flip of signature between the two sectors is one application of the tick (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). And the interval is the form that a change of the local complex structure moves, so its sign at a point is data of the embedding rather than of the algebra (*Conventions in the Biquaternion Universe*).
+
 ## Summary
 
 The quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is the ordinary product with

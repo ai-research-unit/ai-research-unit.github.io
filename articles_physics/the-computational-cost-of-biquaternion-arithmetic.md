@@ -227,6 +227,10 @@ The numbers are hardware-specific and were not reproduced in this corpus. What i
 5. **The benchmarks are the source's.** They are reported for their shape and their order of magnitude, not reproduced here, and they belong to particular hardware, libraries and compiler stacks.
 6. **The corpus's mathematical account is unchanged.** The articles on the matrix representations, the ideals, the spectral theory and the norm own the algebra; this article adds a cost to objects they define and alters none of them.
 
+## Physical Readings
+
+The counts can be read as the price of the two-sector description. The real count of a product is the count of a pair of four-vectors, the block forms of the two halves are the real and the imaginary sectors, and Gauss's three-multiplication rule is a statement about the complex structure, so the arithmetic's structure and the algebra's structure are the same list. Read on the forms, the fact that the four-product lattice costs what it costs is the computational face of the multiplication table that fixes the physical products.
+
 ## Summary
 
 Multiplying two general biquaternions naively costs sixteen complex multiplications, that is sixty-four real multiplications. The bilinear scheme of the source — the general quaternionic bilinear identity evaluated in eight intermediate products, combined with Gauss's three-multiplication rule for each complex product — brings the count to twenty-four: eight Hadamard products of the two coefficient vectors, four corner products, and Gauss's rule, with no further reduction possible for the full algebra. On the real-quaternion and antiquaternion halves the scheme stops at eight real multiplications against the naive sixteen, because the coefficients are already real or purely imaginary.

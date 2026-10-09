@@ -325,6 +325,10 @@ physical anomaly of a gauge theory, or that "spanning two sectors" and "the symm
 forced readings; and that a higher homotopy structure exists behind the Jacobi failure — it is an open
 question.
 
+## Physical Readings
+
+The mixed term reads as the boost and the missing Lie structure reads as the non-compactness of the informational generators: the commutator of two boosts is a rotation, so the material bracket closes where the informational one does not, which is the framework's reading of the Cartan decomposition. The invariant bilinear forms of the article then read as the two surviving pairings, one compact and one Lorentzian, which is the same dichotomy the four forms carry and the same pair that a change of the local complex structure separates.
+
 ## Summary
 
 The antisymmetrised quaternionic product

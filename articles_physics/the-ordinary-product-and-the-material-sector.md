@@ -336,6 +336,10 @@ informational state; and that in the material sector time is the central directi
 directions. Each is the framework's naming of a proved algebraic fact and
 is labelled as such.
 
+## Physical Readings
+
+The ordinary product reads as the process on the material sector, and the article's own reading is the composition of two operations. Two further readings follow from its two failings. The product is not commutative, which is the orientation of a material process and the reason the two slots are not interchangeable; and its scalar part composes operations rather than values, which is why the Born pairing is the sesquilinear product and not this one (*The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*). Read on the clock, this product acts on the four-vector and carries no role for the central phase, which is the exchange's business and not the vector part's.
+
 ## Summary
 
 The material sector $\mathbb{M}_-$ carries the four-vectors, an event being

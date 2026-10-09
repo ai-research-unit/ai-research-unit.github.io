@@ -282,6 +282,10 @@ fact and is labelled as such.
 metric, the interval or a Hamiltonian; that the coincidence with the Born pairing extends off
 $\mathbb{M}_+$; that the Jordan identity concerns measurement.
 
+## Physical Readings
+
+The Jordan algebra reads as the algebra of what can be measured, and the article's own reading is the classical composition. Read against the probability form the reading is sharper: an observable is an element on which the Born pairing is defined and a state is an idempotent of the algebra, so the Jordan structure is what makes a state assignable while the positivity of the sesquilinear form is what makes it normalisable. The two structures are separate, and their separation is the framework's version of the difference between a classical composition and a quantum state.
+
 ## Summary
 
 The symmetrised plain product

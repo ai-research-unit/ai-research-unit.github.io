@@ -252,6 +252,10 @@ Over $\mathbb{H}$ neither construction is available. The natural sign does not c
 | quaternionic bimodule | $\mathbb{H}$ | free of rank two on each side, no centrality | this article |
 | six subspaces | $\mathbb{R}$ | the fixed and anti-fixed spaces of the conjugations, read as the sectors | *Relations Between Subspaces* |
 
+## Physical Readings
+
+The three base rings read as three physical resolutions of one object. Over $\mathbb{R}$ the central $i$ is a complex structure, that is, the quarter turn that carries the clock (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*); over $\mathbb{C}$ the centre is the scalar field, that is, the two times and the global phase; and over $\mathbb{H}$ the two commuting actions are the left and the right frame actions, whose composition is the sandwich. The choice of ring is therefore a choice of which physical structure is being exhibited, and the article's insistence that the centre arbitrates is the same statement read as a constraint.
+
 ## Summary
 
 The biquaternion algebra is one set of elements with three basic structures, taken in the order of the scalars they admit.

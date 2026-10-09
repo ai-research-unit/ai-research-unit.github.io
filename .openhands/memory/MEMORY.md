@@ -231,3 +231,22 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
   as the involution) for algebraic identities, and the closed-form `2×2` largest singular value for operator norms.
 - **Very large heredoc commands in the terminal are silently dropped** (exit 0, nothing printed, no files created).
   Use the file editor to create long files, or split the heredoc into smaller commands.
+
+## 2026-09-27 (physical readings in the head categories)
+- All 62 articles of *Biquaternion Universe* (10) and *Biquaternion Mathematical Physics* (52) gained a brief
+  `## Physical Readings` section before `## Summary` (2-4 sentences each), the clause `physical readings` in their
+  `physics.md` comment, and a `## 2026-09-27 (physical readings)` note in their `.context`. The 62 texts are in
+  `/tmp/rc/add_readings.py` + `/tmp/rc/add_readings2.py` (the inserter is idempotent: it skips files that already
+  have the section). Full detail in the 2026-09-27 daily log.
+- The pass rests on two reusable readings: the **invariant content** of a change of the local complex structure is
+  the sesquilinear row (probability form, gauge calibration) plus the zero-divisor cone, while the interval and the
+  composition move; and the **period $2\pi$** of the central phase makes the quarter turn a clock whose reference and
+  rate are supplied and whose arrow is not.
+- Review of the two newest articles (same day): *The Celestial Sphere of the Null Cone* — the rank-one factorisation
+  needs $\tilde H=-i\tilde P$ and "positive" (future null gives eigenvalues $(2,0)$, past $(0,-2)$). *The Monoid of
+  Acting Maps* — "the idempotents lie in $\mathbb{M}_+$" is false (idempotents need not be Hermitian; the corpus's
+  word is **projector**), and the minimal-idempotent identity needs a factor two:
+  $\tilde\Pi\tilde Q\tilde\Pi=\mathrm{Tr}(\tilde\Pi\tilde Q)\tilde\Pi=2\,\mathrm{Sc}(\tilde\Pi\tilde Q)\tilde\Pi$.
+- Two `physics.md` comments wrote $^{\dagger}$ on an element (sandwich action; $4\times4$ regular operator) where
+  the articles write $^{*}$; corrected. The dagger belongs to operators only (Conventions, "the dagger is the
+  general adjoint").

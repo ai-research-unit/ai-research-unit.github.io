@@ -327,6 +327,10 @@ Second, the corpus already follows this principle where it matters, and the patt
 
 **5. The gravitational coupling.** Whether the algebra fixes the normalisation of the Einstein–Hilbert-like term is recorded as open by the companion article on the Einstein field equations. The present article adds nothing to that question, and records it as the one entry of the constants table whose *role* is not yet settled, as opposed to merely its value.
 
+## Physical Readings
+
+The constants can be read as the two ends of one clock. The central phase is periodic with period $2\pi$, and the clock of the framework ticks by a quarter of that period; $\hbar$ is then the conversion of that angle into action, so the quantisation of action and the period of the central rotation are two readings of one fact (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). Read for invariance, the algebra fixes the algebra and not the scale: the scale $\lambda$, $c$ and $\hbar$ are points of entry, and the dimensionless period $2\pi$ of the central rotation is what none of them can change.
+
 ## Summary
 
 The biquaternion algebra carries no scale. Every structure constant in its multiplication table is an integer, the algebra has no free real parameter, and the four conjugations and the biquaternion norm are canonical. The framework therefore fixes **form** and no **magnitude**: its outputs are pure numbers, and its inputs are dimensionful.

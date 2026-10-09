@@ -516,6 +516,10 @@ The identity $e_0$ is trivially in $\mathbb{M}_+$. It corresponds to the trivial
 
 The common feature of these objects is that they are **Hermitian** (fixed under ${}^{*}$). This is what defines membership in $\mathbb{M}_+$.
 
+## Physical Readings
+
+The informational sector reads as the state space, as the carrier of the informational time and as one half of a clock. The state-space reading is the article's own: the idempotents are the pure states, the Bloch ball is the mixtures and the positive sesquilinear form is the probability. The temporal reading is that the real scalar coefficient $ct'$ is the informational projection of the central coordinate $z = ct' + i\,ct$, so an element of $\mathbb{M}_+$ carries one projection of the clock and its partner in $\mathbb{M}_-$ carries the other (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*).
+
 ## Summary
 
 The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its biquaternion norm has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$, and the Hermitian forms $\tilde{Q}\tilde{Q}^{*}$.

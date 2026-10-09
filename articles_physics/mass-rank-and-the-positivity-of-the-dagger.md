@@ -279,6 +279,10 @@ of the natural square.
 the polarisation count is derived rather than read from the rank; that a spacelike element is or is not a
 physical particle; that the cone-as-causal-order dictionary is forced by the algebra.
 
+## Physical Readings
+
+The two squares read as the two ledgers: $\tilde Q\tilde Q^{*}$ and $\tilde Q^{*}\tilde Q$ have the same scalar part and differ in the vector part, so passing between the material and the informational ledger is a change of ledger and not of the number, which is the reading of *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*. Rank reads as mass and positivity as the state condition, so the article is where the framework's mass and its probability are shown to be two aspects of one dagger. Read on the clock, the dagger is the operation under which the central phase is conjugated, which is why a reversible evolution is unitary and a mass term is not.
+
 ## Summary
 
 The biquaternion algebra carries two squares. The **sesquilinear square** $\tilde Q\tilde Q^{*}$ is

@@ -105,6 +105,10 @@ Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients. Moreover $
 
 **Physical reading.** The pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is a **lightlike pair**: each is null, $N=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $\tilde A$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $e_1+ie_2$, whose square vanishes (*Biquaternion Zero Divisors*).
 
+## Physical Readings
+
+The computations read as the framework's calibration set. The multiplication table is the product law of the physical objects; the six subspaces exhibited on one element are the six readings of one four-vector; the four conjugations applied to it are the four forms; and the idempotents are the pure states. Read as a calibration, the article is where the vocabulary of the series is checked against a single element, so it is also the place where the readings of the other articles can be tested against one another.
+
 ## Summary
 
 The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}=-{}^{*}$ act on it as listed. The element has norm $N(\tilde{Q})=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_1,\tilde\Pi_2$ satisfy $\tilde\Pi_1\tilde\Pi_2=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ with each summand minimal; the pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is an explicit zero-divisor pair, both factors null.

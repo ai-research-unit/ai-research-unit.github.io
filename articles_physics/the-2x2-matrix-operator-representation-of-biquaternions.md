@@ -142,6 +142,10 @@ The two examples separate the two faces of the cone exactly as in the other real
 
 **Reading (the congruence is a completely positive map).** The congruence $X\mapsto M X M^{\dagger}$ has the form $\sum_k A_k X A_k^{\dagger}$ with a single Kraus operator, $A = M$, so it is a **completely positive** map — the algebraic shape of a quantum channel or a measurement. Read physically, the sandwich is the operator form of a completely positive map on the state space, and the operand is the Kraus operator that defines it. The reading has a sharp condition and a sharp boundary. The map is **trace-preserving**, hence a genuine channel, exactly when $M$ is unitary, that is for the rotations; otherwise it is a positive map that rescales the trace. On the cone, where $M$ has rank one, the map is a **destructive measurement**: it projects onto a single line and destroys every other distinction, which is the rank-one collapse of the preceding reading. The algebra supplies the completely positive form and the unitarity condition and no probability rule for the outcomes.
 
+## Physical Readings
+
+The congruence reads as the Lorentz action on the Hermitian matrix that carries a four-vector, and it is the smallest form in which a change of frame can be computed. Read for invariance, a congruence preserves the signature, which is why the sign of the interval is frame-invariant while its normalisation is not, and why the probability form is the one the congruence cannot reach at all. Read on the clock, the matrix image of the central imaginary is a scalar matrix, which is the matrix reason that the exchange commutes with every change of frame.
+
 ## Summary
 
 In the matrix realization the operator is a congruence. The map $\Phi$ carries the Hermitian conjugate to the conjugate transpose, so the sandwich $\operatorname{H}_{\tilde{Q}}(\tilde R) = \tilde{Q}\tilde R\tilde{Q}^{*}$ becomes
