@@ -62,7 +62,7 @@
 ### <a href="articles_physics/relations-between-subspaces.html">Relations Between Subspaces</a>
 <!--the three decompositions; the six subspaces at a glance, with the defining condition of each, its closure under products and under brackets, its biquaternion norm and its area pairing; the four coordinate blocks; the involutions as sign patterns; the intersections; which pairs span the algebra; the grading; the biquaternion norm on each half; how the operations act on the splits; the matrix picture.-->
 
-### Focus on the 12 Products of Biquaternions over $\mathbb{C}$
+### Focus on the 12 Algebraic Structures of Biquaternions over $\mathbb{C}$
 <!--the twelve operations of the complex space of the biquaternion algebra, named $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{GQS}$, $\mathrm{SQS}$ and $\mathrm{AQS}$; each of the four general products together with its symmetric and its antisymmetric part, so that the band reads the four general products and their eight parts, twelve in all; each family of three is ordered general product, then symmetric part, then antisymmetric part, and the four general products carry the physics of composition, causality, probability and gauge, while each part carries the half of the row whose job word names it; the twelve are all written, so the band carries no entry awaiting an article; the naming of the twelve is owned by the mathematics article *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the method of the decomposition and the laws of each by *The 12 Products of the Biquaternion Complex Space*, and each band of this menu mirrors one band of the mathematics menu, of the same code and the same order; the last band compares the four general products and is not one of the twelve.-->
 
 #### Focus on the General Plain Algebra (GPA) of Biquaternions — Composition
@@ -903,6 +903,8 @@ so that it is the only Jordan product of the twelve; the reading of the operatio
 
 ### <a href="articles_physics/the-relativistic-exchange-of-information-and-clock-synchronisation-in-biquaternionic-form.html">The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form</a>
 <!-- signals as null displacements; clocks and proper time; the radar method and Einstein synchronisation; the $k$-factor and the exchange of frequency; synchronising a moving frame; clock transport and the twin effect; non-transitivity and the Sagnac effect. -->
+### <a href="articles_physics/each-sector-is-the-others-clock-the-sector-exchange-as-relational-time.html">Each Sector Is the Other's Clock: the Sector Exchange as Relational Time</a>
+<!-- the two times in one central plane; the exchange as a quarter turn; the clock hand and its two projections; reference, period, arrow and rate; the relational reading; global and local clocks; the problem of time. -->
 
 ## Biquaternion Quantum Fields
 

@@ -94,6 +94,8 @@ Seven ideas. Six are numbered against one difficulty each — ideas 3 and 4 both
 
 **The mechanism.** The two sectors are exchanged by multiplication by the central $i$: $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The time is therefore not an external label attached to a state; it is one of the four coordinates of the material sector on the same footing as the three space coordinates, and the same central element that generates the exchange is the one that generates the sign of the interval. This is the sense in which the framework **has no external parameter**: every quantity that transforms is a coordinate of an element, and there is no slot outside the algebra for a parametric time to occupy.
 
+**A relational reading.** The exchange admits a reading in time, and it is the sharpening this idea takes. The two times are the real and the imaginary parts of one central coordinate, $z = ct' + i\,ct$, and multiplication by $i$ is the quarter turn of that plane, which carries the informational time to the material coordinate and the material time to the informational one. A sector's time coordinate is therefore read against the phase of the other sector and not against a parameter outside the algebra: each sector is in this kinematic sense the other's clock. What the exchange fixes is the reference and the period, and not the arrow — it is invertible and of order four, so it offers the rotation between the two times and no rule that selects one — while the selection of a slice stays the problem of time recorded in the edge below. The reading is developed in *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*.
+
 **The edge.** This is a statement about the kinematic structure, and it is not yet a dynamics. What is missing is the same object that difficulty 1 names: a formulation in which the constraint structure carries the content, and in which the Schrödinger equation is recovered as a sector equation rather than assumed. *The Schrödinger Equation in Biquaternionic Form* and *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form* give the kinematic pieces; the constraint analysis is not written.
 
 ### 5. Read the two evolutions as two classes of acting element
@@ -131,7 +133,7 @@ The ideas, collected by difficulty.
 | Difficulty | Idea | The mechanism |
 |---|---|---|
 | 1 Time a parameter | 3, the signature from $i^2=-1$ | $N(\tilde{Q})=\sum_\mu Q_\mu^2$ with $Q_0=ict$ |
-| 1 Problem of time | 4, the time as a coordinate | $i\mathbb{M}_\pm=\mathbb{M}_\mp$ |
+| 1 Problem of time | 4, the time as a coordinate | $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the exchange as an internal clock |
 | 2 Born rule an axiom | 1, states and observables in one subspace | $\mathrm{Tr}(\tilde{\Pi}\tilde{\rho})=\tfrac12(1+\hat{\mathbf{n}}\cdot\mathbf{r})$ |
 | 3 Spin–statistics | 6, two classes of representation | $-e_0$ acts as $\pm\mathrm{id}$ by module |
 | 4 Two evolutions | 5, two classes of acting element | Unitary and idempotent elements of one algebra |
