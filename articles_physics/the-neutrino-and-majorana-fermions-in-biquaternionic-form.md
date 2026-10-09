@@ -268,7 +268,7 @@ The reason the neutrino appears in this article at all is that it is the fermion
 |---|---|
 | A charge-conjugation real structure on $\Delta$, with $\mathcal{C}^2=1$ and the constraint $\psi^{c}=\psi$ | **Supplied**, by the coefficient conjugation $\bar{\cdot}$ transported to the module; verified |
 | The Majorana component count $\dim_{\mathbb{R}}=4$ and the exchange of the chiral halves | **Supplied** |
-| Existence of Majorana and non-existence of Majorana–Weyl in $(1,3)$ | **Transcribed** from the corpus's spinor article *Spinors* (§8); *Spinors categorization* takes the real structure to commute with the full Clifford action, under which $(1,3)$ is symplectic Majorana |
+| Existence of Majorana and non-existence of Majorana–Weyl in $(1,3)$ | **Transcribed** from *Real Spinors and Reality Conditions with Inner Conjugation*, which takes the real structure to commute with the full Clifford action, under which $(1,3)$ is symplectic Majorana |
 | The explicit charge-conjugation matrix $C$, its basis dependence, and the block form of the constraint | **Transcribed**; basis and signature stated |
 | Consistency of the constraint with the massive equation | **Supplied** (through the verified $K\gamma^{\mu*}K^{-1}=-\gamma^{\mu}$) |
 | The bilinear physics: no vector current, mass and axial current permitted | **Supplied at the level of the anticommuting field**; not visible in a commuting c-number spinor |

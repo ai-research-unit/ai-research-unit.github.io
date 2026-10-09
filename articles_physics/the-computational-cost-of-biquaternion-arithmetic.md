@@ -134,7 +134,7 @@ $$
 M = \sum_{\mu=0}^{3} \Phi(e_\mu)\otimes Q_\mu, \qquad \Phi(e_0) = I_2,
 $$
 
-where $\Phi$ is the isomorphism of *Biquaternion 2×2 Matrix Element Representation* and $\otimes$ is the Kronecker product, taken with $\Phi$ first: the indices of $\Phi$ are the block indices of the image and the array indices run inside the blocks. With $\Phi(e_k) = -i\sigma_k$ in the corpus convention the image is $I_2\otimes Q_0$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A, B, C, D$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in *Biquaternion Other Algebraic Element Representations*.
+where $\Phi$ is the isomorphism of *Biquaternion 2×2 Matrix Element Representation* and $\otimes$ is the Kronecker product, taken with $\Phi$ first: the indices of $\Phi$ are the block indices of the image and the array indices run inside the blocks. With $\Phi(e_k) = -i\sigma_k$ in the corpus convention the image is $I_2\otimes Q_0$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A, B, C, D$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in *The Clifford Algebra Representation*.
 
 Three properties of this image are used constantly, and each is exact:
 

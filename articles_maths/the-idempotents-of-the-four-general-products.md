@@ -1,16 +1,16 @@
-# __The Idempotents of the Four Products__
+# __The Idempotents of the Four General Products__
 
 ## Introduction
 
-An **idempotent** of one of the four products of the biquaternion algebra is an element $\tilde\Pi$ with $\tilde\Pi\star\tilde\Pi = \tilde\Pi$, the equation read in that product. The equation is the algebraic form of a projection, and each of the four groups of the chapter solves it for its own multiplication: the general plain bilinear product in *Biquaternion Idempotents and Projections*, the general quaternionic bilinear product in *Idempotents of the Quaternionic Product*, the general plain sesquilinear product in *Projections of the Biquaternion Sesqualgebra*, and the general quaternionic sesquilinear product in *Idempotents of the General Quaternionic Sesquilinear Product*. This article sets the four solution sets side by side and reads their invariants together, the four sets themselves having been tabulated in *Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*.
+An **idempotent** of one of the four general products of the biquaternion algebra is an element $\tilde\Pi$ with $\tilde\Pi\star\tilde\Pi = \tilde\Pi$, the equation read in that product. The equation is the algebraic form of a projection, and each of the four groups of the chapter solves it for its own multiplication: the general plain bilinear product in *Biquaternion Idempotents and Projections*, the general quaternionic bilinear product in *Idempotents of the Quaternionic Product*, the general plain sesquilinear product in *Projections of the Biquaternion Sesqualgebra*, and the general quaternionic sesquilinear product in *Idempotents of the General Quaternionic Sesquilinear Product*. This article sets the four solution sets side by side and reads their invariants together, the four sets themselves having been tabulated in *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*.
 
 The four sets are of four different kinds, and the difference is not in the size of the sets alone but in the place they occupy in the algebra. The plain product's idempotents are the idempotents of the algebra: the trivial pair, the family of the Hermitian idempotents that the sesquilinear product singles out, and a four-parameter family of non-trivial idempotents lying in no distinguished subspace, every member of the family outside the trivial pair being a zero divisor. The natural product keeps only the trivial pair. The general plain sesquilinear product keeps the Hermitian family, and the general quaternionic sesquilinear product replaces it by the family $-\tfrac12e_0+\mu$, whose members are the only nontrivial idempotents of the four multiplications that are **units**. The article owns the comparison of the four sets, the effect of the central square on each, the reading of each in the six distinguished subspaces and the complementation that pairs the members of the plain family.
 
-**Conventions.** The notation is that of *The Four Biquaternion Complex Products* and of the introduction to this group, with the natural conjugation $\tilde Q^{\natural} = Q_0-\mathbf Q$, the star $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$ and the **central square** $\tilde Q^{\natural}\tilde Q = \tilde Q\tilde Q^{\natural}$, a central element. The four products are written $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, and the six distinguished subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$.
+**Conventions.** The notation is that of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and of the introduction to this group, with the natural conjugation $\tilde Q^{\natural} = Q_0-\mathbf Q$, the star $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$ and the **central square** $\tilde Q^{\natural}\tilde Q = \tilde Q\tilde Q^{\natural}$, a central element. The four general products are written $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, and the six distinguished subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$.
 
 ## The Four Sets
 
-**Theorem (the four idempotent sets, quoted).** The idempotents of the four products are:
+**Theorem (the four idempotent sets, quoted).** The idempotents of the four general products are:
 
 | product | idempotents | owner |
 |---|---|---|
@@ -68,7 +68,7 @@ Zero for the two families of zero divisors, $e_0$ for the two units: the central
 
 ## Units, Zero Divisors and the Antipode
 
-**Theorem (units and zero divisors among the idempotents).** Among the idempotents of the four products, the units of the algebra are $e_0$ and the family $-\tfrac12e_0+\mu$ of the fourth product; the zero divisors of the algebra are the members of the plain family $\tfrac12(e_0+\xi i)$ with $\xi$ non-trivial or real, and no other idempotent; and $0$ is neither.
+**Theorem (units and zero divisors among the idempotents).** Among the idempotents of the four general products, the units of the algebra are $e_0$ and the family $-\tfrac12e_0+\mu$ of the fourth product; the zero divisors of the algebra are the members of the plain family $\tfrac12(e_0+\xi i)$ with $\xi$ non-trivial or real, and no other idempotent; and $0$ is neither.
 
 **Proof.** The values of the central square are the previous theorem, and the criterion of invertibility is that the central square not vanish (*Biquaternion Norm and Invertibility*). $\square$
 
@@ -90,11 +90,11 @@ Each family lives in a specific place, and the places are read off the coefficie
 
 **Proof.** $0$ and $e_0$ are complex multiples of $e_0$, hence central. For $\tfrac12(e_0+i\hat\mu)$ the scalar part is real and the vector part is purely imaginary, which is the definition of $\mathbb{M}_+$; the element is not pure, so it is not in $\mathrm{Vect}(\mathbb{B})$, its scalar part is not purely imaginary, so it is not in $\mathbb{M}_-$, and its vector part is not real, so it is not in $\mathbb{H}_{\mathbb{B}}$ or in $i\mathbb{H}_{\mathbb{B}}$. For $-\tfrac12e_0+\mu$ the coefficients are real, so the element is in $\mathbb{H}_{\mathbb{B}}$; its scalar part is real and nonzero, so it is not anti-Hermitian, and its vector part is real and nonzero, so it is not Hermitian. For the non-trivial $\tilde\Pi = \tfrac12(e_0-\mathbf p')+\tfrac12\mathbf p\,i$ the vector part carries both a real term $-\tfrac12\mathbf p'$ and an imaginary term $\tfrac12\mathbf p\,i$, and the scalar part is real; the element is neither Hermitian, nor anti-Hermitian, nor pure, nor real. $\square$
 
-The four sets therefore occupy four different regions: the centre for the trivial pair, $\mathbb{M}_+$ for the Hermitian family, $\mathbb{H}_{\mathbb{B}}$ for the fourth family, and no distinguished region at all for the non-trivial family, which is the whole point of its name. The restrictions of the products themselves to these subspaces are *The Six Subspaces and the Four Complex Products*.
+The four sets therefore occupy four different regions: the centre for the trivial pair, $\mathbb{M}_+$ for the Hermitian family, $\mathbb{H}_{\mathbb{B}}$ for the fourth family, and no distinguished region at all for the non-trivial family, which is the whole point of its name. The restrictions of the products themselves to these subspaces are *The Six Subspaces and the Four General Products*.
 
 ## The Peirce Data
 
-Of the four products, only the plain one supports the Peirce theory, and the reason is associativity.
+Of the four general products, only the plain one supports the Peirce theory, and the reason is associativity.
 
 **Theorem (the Peirce decomposition is the plain product's own).** For an idempotent $\tilde\Pi$ of the plain product the algebra splits as $\mathbb{B} = \tilde\Pi\mathbb{B}\oplus(e_0-\tilde\Pi)\mathbb{B}$, and the two summands are left ideals; for the idempotents of the other three products no such decomposition is available, because the products are not associative and the multiplication by an idempotent is not a projection.
 
@@ -104,11 +104,11 @@ The comparison is the last separation of the article, and it is the reason the p
 
 ## Summary
 
-The four products of *The Four Biquaternion Complex Products* have four idempotent sets, all containing the trivial pair. The plain product, whose idempotents are the idempotents of the algebra, has the elements $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-e_0$: the trivial pair, the family $\tfrac12(e_0+i\hat\mu)$ of the Hermitian idempotents, and a four-parameter family lying in none of the four four-dimensional subspaces; the natural product has the trivial pair alone; the general plain sesquilinear product has the trivial pair and the Hermitian family; and the general quaternionic sesquilinear product has the trivial pair and the family $-\tfrac12e_0+\mu$ with $(\mu,\mu) = \tfrac34$.
+The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* have four idempotent sets, all containing the trivial pair. The plain product, whose idempotents are the idempotents of the algebra, has the elements $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-e_0$: the trivial pair, the family $\tfrac12(e_0+i\hat\mu)$ of the Hermitian idempotents, and a four-parameter family lying in none of the four four-dimensional subspaces; the natural product has the trivial pair alone; the general plain sesquilinear product has the trivial pair and the Hermitian family; and the general quaternionic sesquilinear product has the trivial pair and the family $-\tfrac12e_0+\mu$ with $(\mu,\mu) = \tfrac34$.
 
 The central square separates the sets: it is $e_0$ on $e_0$, $0$ on every nontrivial idempotent of the plain product and of the general plain sesquilinear product, and $e_0$ on the family of the fourth product. The idempotents of the four sets that are units of the algebra are therefore $e_0$ and the fourth product's family; the idempotents that are zero divisors are the nontrivial ones of the plain product and the Hermitian ones of the general plain sesquilinear product; and the natural product's set consists of the two units alone.
 
-The families occupy the centre, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and no distinguished subspace, and the complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$ pairs the members of the plain family and is available for the plain product alone. The Peirce decomposition is the plain product's, because it needs associativity, and the comparison in one sentence is this: the plain product is the only one of the four whose idempotents build the algebra, the fourth product is the only one whose nontrivial idempotents are units, and the natural product is the only one with no nontrivial idempotent at all. The four sets themselves are tabulated in *Comparison Between the Four Biquaternion Products*.
+The families occupy the centre, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and no distinguished subspace, and the complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$ pairs the members of the plain family and is available for the plain product alone. The Peirce decomposition is the plain product's, because it needs associativity, and the comparison in one sentence is this: the plain product is the only one of the four whose idempotents build the algebra, the fourth product is the only one whose nontrivial idempotents are units, and the natural product is the only one with no nontrivial idempotent at all. The four sets themselves are tabulated in *Comparison Between the Four General Products*.
 
 ## Summary of Notation
 
@@ -122,7 +122,7 @@ The families occupy the centre, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and no
 
 ## Further Reading
 
-- *Comparison Between the Four Biquaternion Products* (`articles_maths/comparison-between-the-four-biquaternion-products.md`), for the tabulation of the four idempotent sets and the four square-root problems.
+- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the tabulation of the four idempotent sets and the four square-root problems.
 - *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the idempotents of the algebra, their bijection with the roots of $-e_0$ and their role in the Peirce decomposition.
 - *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the three families of roots of $-e_0$.
 - *Idempotents of the Quaternionic Product* (`articles_maths/idempotents-of-the-quaternionic-product.md`), for the trivial pair of the natural product.
@@ -131,4 +131,4 @@ The families occupy the centre, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and no
 - *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the decomposition the plain idempotents carry.
 - *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (`articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.md`), for the positive cone on whose boundary the Hermitian idempotents lie.
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the criterion that the central square not vanish, which the table applies.
-- *The Six Subspaces and the Four Complex Products* (`articles_maths/the-six-subspaces-and-the-four-complex-products.md`), for the six subspaces and the products on them.
+- *The Six Subspaces and the Four General Products* (`articles_maths/the-six-subspaces-and-the-four-general-products.md`), for the six subspaces and the products on them.

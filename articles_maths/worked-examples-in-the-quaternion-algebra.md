@@ -125,7 +125,7 @@ $$
 
 Its trace is $2q_0 = 2$ and its determinant is $N(\tilde q) = 15$, in agreement with the general identities $\operatorname{tr}\Phi(\tilde Q) = 2Q_0$ and $\det\Phi(\tilde Q) = N(\tilde Q)$.
 
-**The $4\times4$ real image.** Under the left regular representation of *Quaternion 4x4 Regular Matrix Element Representation*, whose Cayley matrix has the four products $\tilde q e_k$ for columns, the worked element has image
+**The $4\times4$ real image.** Under the left regular representation of *Quaternion 4x4 Regular Matrix Element Representation*, whose Cayley matrix has the four general products $\tilde q e_k$ for columns, the worked element has image
 
 $$
 L_{\tilde q} = \begin{pmatrix}

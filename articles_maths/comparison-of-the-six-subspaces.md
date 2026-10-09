@@ -210,5 +210,5 @@ The six distinguished subspaces of $\mathbb{B}$ are organized by the four coordi
 - *Decompositions Along the Six Subspaces* (`articles_maths/decompositions-along-the-six-subspaces.md`), for the three decompositions and the projection formulas
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, its basis, its conjugations and its coordinate systems
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations as an abstract group and the two spaces each defines
-- *The Six Subspaces and the Four Complex Products* (`articles_maths/the-six-subspaces-and-the-four-complex-products.md`), for what the six give when the product is brought in, which is not part of this article
+- *The Six Subspaces and the Four General Products* (`articles_maths/the-six-subspaces-and-the-four-general-products.md`), for what the six give when the product is brought in, which is not part of this article
 - *The Clifford Algebra Representation* (`articles_maths/the-clifford-algebra-representation.md`), for the Clifford identification, the four grades and the conjugations as the intrinsic maps of the Clifford algebra

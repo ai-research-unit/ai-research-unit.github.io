@@ -88,7 +88,7 @@ so the antisymmetric plain product is the **halved commutator**,
 $[\tilde P,\tilde Q]=2\tilde P\wedge\tilde Q$. The two bands differ by the factor of two in each slot and
 by nothing else. The
 symmetric band is *The Symmetrised Material Composition and the Jordan Identity*; the comparison of the
-four products and their parts is *The Four Products and Their Physical Readings: the Two Algebras and the
+four general products and their parts is *The Four General Products and Their Physical Readings: the Two Algebras and the
 Two Sesqualgebras*.
 
 ## The Cross Product and the Jacobi Identity
@@ -120,13 +120,13 @@ Antisymmetric Plain Algebra*.
 
 **Theorem (the uniqueness among the twelve).** Of the twelve operations
 $\mathrm{GPA},\mathrm{SPA},\mathrm{APA},\mathrm{GQA},\mathrm{SQA},\mathrm{AQA},\mathrm{GPS},\mathrm{SPS},\mathrm{APS},\mathrm{GQS},\mathrm{SQS},\mathrm{AQS}$
-of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the antisymmetric plain product
+of *The 12 Products of the Biquaternion Complex Space*, the antisymmetric plain product
 is the **only** one that is a **Lie product**.
 
 *Proof.* The identity is put to the antisymmetrisations of the batch; the four general products are
 neither symmetrisations nor antisymmetrisations, and the identity is not put to them. Of the four
 antisymmetric parts only the plain one satisfies it, the other three failing on the witnesses recorded in
-the table of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, computed there on
+the table of *The 12 Products of the Biquaternion Complex Space*, computed there on
 the basis. The plain antisymmetrisation passes because it is the halved commutator of the one associative
 product of the twelve, and the halved commutator of an associative product always satisfies the Jacobi
 identity. The identity was recomputed here for the plain antisymmetric part and failed for the
@@ -193,6 +193,10 @@ $\mathrm{SU}(3)$*, so the real vector triple with the commutator is $\mathfrak{s
 $\mathfrak{so}(3)$ as a real Lie algebra. Verified on the three generators. The bracket $\wedge$ carries
 the same structure constants up to the halving, $T_a\wedge T_b=\tfrac12\varepsilon_{abc}T_c$.
 
+**Proposed reading, labelled as such.** The rotor returns to $-e_0$ at $2\pi$, so the identity is
+reached only at $4\pi$. **The half-angle of the rotor is the algebraic home of the two-valuedness of the
+spinor.** *The physical spin is owned by Angular Momentum and Spin in Biquaternionic Form.*
+
 ## The Closure of the Rotation Algebra
 
 **Proposed reading, labelled as such.** The antisymmetric plain product is the bracket of the
@@ -217,6 +221,25 @@ rotation group, its generators are the three real vector units, its structure co
 antisymmetric symbols, and the Jacobi identity is the coherence of the closure. What the algebra proves
 is that $(\mathrm{Vect}(\mathbb{B}),\wedge)$ with the real vector triple is $\mathfrak{su}(2)$; the words
 "infinitesimal rotation", "rotation group" and "closure" are the reading.
+
+**Proposed reading, labelled as such.** Lifted from this bracket to the operator algebra of covariant
+derivatives, the same identity becomes the Bianchi identity of the gauge curvature. *Gauge Curvature and
+the Bianchi Identity in Biquaternionic Form* carries out that substitution; the bracket here is its
+algebraic ancestor, at the level of the algebra rather than of the operators.
+
+**Proposed reading, labelled as such.** The real vector triple generates the compact
+$\mathfrak{su}(2)\cong\mathfrak{so}(3)$, whose complexification $\mathfrak{sl}(2,\mathbb{C})$ is the
+algebra the whole vector subspace carries. **The internal symmetry the frame carries natively is the
+rotation algebra of its own material sector**: the symmetry it carries internally is nothing beyond the
+rotations of the frame itself.
+
+**Proposed reading, labelled as such.** The derived algebra is the vector subspace, six-dimensional over
+$\mathbb{R}$, which is the Lorentz algebra of bivectors. **The generators of the Lorentz transformations
+and the components of an antisymmetric field strength are the same space**, and the central imaginary $i$
+acts on it as the duality rotation, giving the self-dual and anti-self-dual halves and the combination
+$\mathbf E+ic\mathbf B$. *The identification of the vector subspace with the field-strength space, and
+the split, are owned by The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material
+Sector.*
 
 ## What the Bracket Is Not
 
@@ -256,8 +279,11 @@ is $\mathfrak{su}(2)\cong\mathfrak{so}(3)$.
 
 **Readings.** That the antisymmetric plain product is the bracket of the **infinitesimal rotations** of
 the frame; that its generators are the three real vector units and its structure constants the
-antisymmetric symbols; and that the Jacobi identity is the **closure of the rotation algebra**. Each is
-the framework's naming of a proved algebraic fact and is labelled as such.
+antisymmetric symbols; that the Jacobi identity is the **closure of the rotation algebra** and the
+ancestor of the Bianchi identity; that the generator space is the field strength; that the internal
+symmetry the frame carries natively is its own rotation algebra; and that the half-angle of the rotor is
+the two-valuedness of the spinor. Each is the framework's naming of a proved algebraic
+fact and is labelled as such.
 
 **Not claimed.** That a Lie bracket is a group; that the bracket knows the compactness of the group it
 generates; that the bracket is the physical angular momentum of a system; that the operation carries a
@@ -270,7 +296,7 @@ $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\t
 scalar part and values in the traceless vector subspace, and it is the halved commutator,
 $\tilde P\wedge\tilde Q=\tfrac12[\tilde P,\tilde Q]$. The operation is $\mathbb{C}$-bilinear, alternating
 and skew, it has no unit, and it satisfies the **Jacobi identity**; it is the only Lie product of the
-twelve operations of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, so the
+twelve operations of *The 12 Products of the Biquaternion Complex Space*, so the
 biquaternion space with the bracket is a complex Lie algebra of complex dimension four. The physical
 reading offered and labelled here is that the operation is the bracket of the **infinitesimal rotations**
 of the frame: the derivative of the rotation
@@ -305,7 +331,7 @@ angular momentum.
   and the ideals.
 - Mathematics article *The Commutator Operator* and *Associative Algebras*, for the derivation of the
   Jacobi identity from the associativity of the product.
-- Mathematics article *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the
+- Mathematics article *The 12 Products of the Biquaternion Complex Space*, for the
   twelve operations and the uniqueness of the Jacobi and Jordan laws.
 - Mathematics article *Biquaternion Rotations and Lorentz Transformations*, for the conjugations, the
   rotors and the Lorentz action.

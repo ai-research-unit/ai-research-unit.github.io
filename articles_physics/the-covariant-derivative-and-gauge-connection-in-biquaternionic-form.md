@@ -349,7 +349,7 @@ with the scalar part the covariant d'Alembertian and the vector part the curvatu
 ## Further Reading
 
 - *The Gauge Principle in Biquaternionic Form* — the origin of the connection, the transformation law, the covariance, and the curvature identity inherited here.
-- *Maxwell's Equations in the Biquaternionic Form* — the potential, the field strength, the gauge scalar $S$, and the Maxwell equation.
+- *Maxwell's Equations in the Biquaternionic Formulation* — the potential, the field strength, the gauge scalar $S$, and the Maxwell equation.
 - *The Field-Strength Biquaternion and Its Invariants* — the gauge-invariant content of $\tilde{F}$, which this article uses but does not develop.
 - *The Dirac Equation in Biquaternionic Form* — the massless field equation $\tilde{\nabla}\tilde{\Psi} = 0$ and the minimal-coupling question.
 - *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — the coupled Dirac equation, the left/right matter-representation question, and the companion that names the covariant-derivative article.

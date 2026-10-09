@@ -157,7 +157,7 @@ $$
 [X,Y] = XY - YX.
 $$
 
-Indeed the left-invariant fields determined by $X, Y$ are $A \mapsto AX$ and $A \mapsto AY$, whose commutator at $I$ is $XY - YX$. The tangent space is the kernel of the derivative of the defining equations: $d(\det)_I = \operatorname{tr}$ gives $\mathrm{SL}_n = \{\operatorname{tr}H = 0\}$; $A^TA = I$ gives $\mathrm{SO}(n) = \{H^T = -H\}$; and $A^*A = I$ gives $\mathrm{U}(n) = \{H^* = -H\}$. Similarly $\mathrm{SU}(n) = \{H^* = -H,\ \operatorname{tr}H = 0\}$, and $\mathrm{Sp}(n)$, $\mathrm{Sp}(2n,\mathbb{R})$ satisfy $H^* = -H$ and $H^TJ + JH = 0$ respectively. Each has the real dimension of the corresponding group in §3, and these algebras coincide with those classified in *Lie Algebras: Categorization*; in particular $\mathrm{SO}(3)$ is $\mathbb{R}^3$ with the cross product, and $\mathrm{GL}_2(\mathbb{C})$ is the biquaternions with the commutator bracket.
+Indeed the left-invariant fields determined by $X, Y$ are $A \mapsto AX$ and $A \mapsto AY$, whose commutator at $I$ is $XY - YX$. The tangent space is the kernel of the derivative of the defining equations: $d(\det)_I = \operatorname{tr}$ gives $\mathrm{SL}_n = \{\operatorname{tr}H = 0\}$; $A^TA = I$ gives $\mathrm{SO}(n) = \{H^T = -H\}$; and $A^*A = I$ gives $\mathrm{U}(n) = \{H^* = -H\}$. Similarly $\mathrm{SU}(n) = \{H^* = -H,\ \operatorname{tr}H = 0\}$, and $\mathrm{Sp}(n)$, $\mathrm{Sp}(2n,\mathbb{R})$ satisfy $H^* = -H$ and $H^TJ + JH = 0$ respectively. Each has the real dimension of the corresponding group in §3, and these algebras coincide with those classified in *Structure of Lie Algebras*; in particular $\mathrm{SO}(3)$ is $\mathbb{R}^3$ with the cross product, and $\mathrm{GL}_2(\mathbb{C})$ is the biquaternions with the commutator bracket.
 
 For an abelian group all brackets vanish, and different groups can share a Lie algebra: $S^1$ and $\mathbb{R}$ both have Lie algebra $\mathbb{R}$ but are not isomorphic. The Lie algebra records local data only.
 
@@ -351,7 +351,7 @@ Examples: $\mathbb{R}/\mathbb{Z} \cong S^1$, $\mathbb{R}^n/\mathbb{Z}^n \cong T^
 
 ## 19. Lie Groups in the Wider Corpus
 
-- The group of units of the biquaternion algebra is $\mathbb{B}^\times \cong GL_2(\mathbb{C})$, a real Lie group of dimension $8$ whose Lie algebra is $\mathrm{GL}_2(\mathbb{C})$ with the commutator bracket, in agreement with *Lie Algebras: Categorization*; the biquaternion exponential is treated in a separate article of the biquaternion series.
+- The group of units of the biquaternion algebra is $\mathbb{B}^\times \cong GL_2(\mathbb{C})$, a real Lie group of dimension $8$ whose Lie algebra is $\mathrm{GL}_2(\mathbb{C})$ with the commutator bracket, in agreement with *Structure of Lie Algebras*; the biquaternion exponential is treated in a separate article of the biquaternion series.
 - The unit quaternions form $S^3 \cong SU(2) \cong Sp(1)$, the double cover of $SO(3)$, and $SL_2(\mathbb{C})$ is the double cover of the identity component $SO^+(1,3)$ of the Lorentz group.
 - The spin groups $\operatorname{Spin}(n)$ for $n \geq 3$, the universal covers of $SO(n)$, link this article to the Clifford algebra and spinor articles of the series.
 

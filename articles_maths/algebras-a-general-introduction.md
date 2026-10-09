@@ -4,7 +4,7 @@
 
 This article introduces algebras as mathematical structures. The treatment is introductory and purely mathematical. The goal is to explain what an algebra is, how it relates to the more familiar notion of a module, and what additional properties an algebra may or may not have.
 
-This article treats the general theory over a **commutative ring**. A separate article, *Algebras: Categorization*, gives a classification organized by ring.
+This article treats the general theory over a **commutative ring**. The companion article *List of Algebras* gives the classification of the algebras the corpus meets.
 
 A note on terminology. The word "algebra" is used in this article in the **broad sense**: a module over a commutative ring $R$ equipped with a bilinear product, with no further assumptions. In this sense, an algebra need not be associative, need not be commutative, and need not have a unit. When we want to insist on associativity, we say **associative algebra**. The word "algebra" without qualification always means the broad sense.
 

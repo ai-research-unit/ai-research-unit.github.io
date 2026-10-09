@@ -109,22 +109,26 @@ There are exactly three perfect matchings of four objects, so there are exactly 
 
 The block structure classifies the subspaces completely. Choosing one temporal block and one spatial block gives the four four-dimensional subspaces; taking both temporal blocks gives the center; taking both spatial blocks gives the vector subspace.
 
-| subspace | real dim | blocks | defining condition | closed under products | closed under brackets | biquaternion norm |
-|---|---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ — center subspace | 2 | $T_{\mathrm{m}} \oplus T_{\mathrm{i}}$ | $\tilde{Q}$ central | yes — a field | yes | complex: $z^2$ |
-| $\mathrm{Vect}(\mathbb{B})$ — vector subspace | 6 | $X_{\mathrm{m}} \oplus X_{\mathrm{i}}$ | $\mathrm{Sc}(\tilde{Q}) = 0$ | no | yes — $[\mathbb{B},\mathbb{B}]$ | complex quadratic: $z_1^2+z_2^2+z_3^2$ |
-| $\mathbb{H}_{\mathbb{B}}$ — quaternion subspace | 4 | $T_{\mathrm{i}} \oplus X_{\mathrm{m}}$ | $\tilde{Q}^* = \tilde{Q}$ | yes — a division algebra | yes — $\mathrm{SU}(2)$ | positive definite, $(4,0)$ |
-| $i\mathbb{H}_{\mathbb{B}}$ — antiquaternion subspace | 4 | $T_{\mathrm{m}} \oplus X_{\mathrm{i}}$ | $\tilde{Q}^* = -\tilde{Q}$ | no | no | negative definite, $(0,4)$ |
-| $\mathbb{M}_+$ — informational sector | 4 | $T_{\mathrm{i}} \oplus X_{\mathrm{i}}$ | $\tilde{Q}^{*} = \tilde{Q}$ | no | no | indefinite, $(1,3)$ |
-| $\mathbb{M}_-$ — material sector | 4 | $T_{\mathrm{m}} \oplus X_{\mathrm{m}}$ | $\tilde{Q}^{*} = -\tilde{Q}$ | no | yes — $\mathrm{U}(2)$ | indefinite, $(3,1)$; light cone |
+| subspace | real dim | blocks | defining condition | closed under products | closed under brackets | biquaternion norm | area pairing |
+|---|---|---|---|---|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}$ — center subspace | 2 | $T_{\mathrm{m}} \oplus T_{\mathrm{i}}$ | $\tilde{Q}$ central | yes — a field | yes | complex: $z^2$ | yes — rank $2$: $ict$ with $ct'$ |
+| $\mathrm{Vect}(\mathbb{B})$ — vector subspace | 6 | $X_{\mathrm{m}} \oplus X_{\mathrm{i}}$ | $\mathrm{Sc}(\tilde{Q}) = 0$ | no | yes — $[\mathbb{B},\mathbb{B}]$ | complex quadratic: $z_1^2+z_2^2+z_3^2$ | yes — rank $6$: $x_k$ with $ix'_k$ |
+| $\mathbb{H}_{\mathbb{B}}$ — quaternion subspace | 4 | $T_{\mathrm{i}} \oplus X_{\mathrm{m}}$ | $\bar{Q} = \tilde{Q}$ | yes — a division algebra | yes — $\mathrm{SU}(2)$ | positive definite, $(4,0)$ | no |
+| $i\mathbb{H}_{\mathbb{B}}$ — antiquaternion subspace | 4 | $T_{\mathrm{m}} \oplus X_{\mathrm{i}}$ | $\bar{Q} = -\tilde{Q}$ | no | no | negative definite, $(0,4)$ | no |
+| $\mathbb{M}_+$ — informational sector | 4 | $T_{\mathrm{i}} \oplus X_{\mathrm{i}}$ | $\tilde{Q}^{*} = \tilde{Q}$ | no | no | indefinite, $(1,3)$ | no |
+| $\mathbb{M}_-$ — material sector | 4 | $T_{\mathrm{m}} \oplus X_{\mathrm{m}}$ | $\tilde{Q}^{*} = -\tilde{Q}$ | no | yes — $\mathrm{U}(2)$ | indefinite, $(3,1)$; light cone | no |
 
-Three entries of the table repay attention, because each is a distinction that is easy to collapse.
+Four entries of the table repay attention, because each is a distinction that is easy to collapse.
 
 **Closure under multiplication is rare.** Only $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are subalgebras, and only $\mathbb{H}_{\mathbb{B}}$ is a subalgebra that is also definite. Every other subspace has a product that leaves it: for the halves the return $i\mathbb{H}_{\mathbb{B}} \cdot i\mathbb{H}_{\mathbb{B}} \subseteq \mathbb{H}_{\mathbb{B}}$ carries a product out of the imaginary half altogether, and for the sectors the crossing $(ie_1)(ie_2) = -e_3$ carries a product from $\mathbb{M}_+$ into $\mathbb{M}_-$.
 
 **Closure under the commutator is a different question.** $\mathbb{C}_{\mathbb{B}}$ is both a Lie subalgebra and a subalgebra; $\mathrm{Vect}(\mathbb{B})$ is a Lie subalgebra without being a subalgebra at all; $\mathbb{H}_{\mathbb{B}}$ is both; $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$ are neither, and $\mathbb{M}_-$ is a Lie subalgebra without being a subalgebra at all. All four combinations occur among the six subspaces, so neither notion implies the other.
 
 **Definiteness singles out the halves.** The biquaternion norm takes complex values on the center and the vector subspace, so it has no definite sign there; it is positive definite on $\mathbb{H}_{\mathbb{B}}$ and negative definite on $i\mathbb{H}_{\mathbb{B}}$; and it is indefinite on both sectors. The zero divisors of the algebra are therefore carried by the vector subspace and the two sectors, and excluded from the two halves. The center is not a carrier: its biquaternion norm is complex but anisotropic, $N(ze_0) = z^2e_0$ vanishing only at $z = 0$. The degeneracy of the algebra lies not in the center but in the vector subspace and in the sectors.
+
+**The area pairing is carried by the two complex subspaces alone.** Each of the four forms of the algebra splits into a real part and an imaginary part, and the imaginary part is an alternating form — the *area pairing*, symplectic where it is non-degenerate — for the two sesquilinear forms and a symmetric one for the two bilinear forms (*The Six Subspaces and the Four Forms*). It is the imaginary part of the **scalar-valued** form, and it must not be confused with the **vector-valued** antisymmetric half of the product, which the corpus also reads as a phase and which is non-zero on the sectors (*The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product*); nor is it an invariant of a bracket. The area pairing is non-degenerate on the center subspace, of rank $2$, and on the vector subspace, of rank $6$, and it vanishes identically on the four four-dimensional subspaces, the two halves and the two sectors alike. The rule is the block one: **the area pairing joins each direction to its partner under multiplication by the central imaginary**, so it is available exactly where both members of a pair are present — the two temporal blocks for the center, the two spatial blocks for the vector subspace. The four four-dimensional subspaces each hold one time and one space, so each holds one member of every pair and never the partner, and there the pairing has nothing to join.
+
+This is why the area pairing is a fact of the block structure and not an extra. It is present exactly where the multiplication by $i$ preserves the subspace, the same condition as having a complex dimension, and it is the invariant that closure under $i$ brings. The physics of the two classes is in *The Four Other Remarkable Subspaces*: on the center the pairing makes the two times one canonical pair, and on the vector subspace it makes each material direction conjugate to its informational partner.
 
 Each of the six subspaces has its own article treating it on its own terms — basis and parameters, algebraic properties, and physical reading. What follows here is only what the subspaces do to one another.
 
@@ -517,6 +521,7 @@ The biquaternion algebra admits exactly three decompositions into two distinguis
 - The half split is a $\mathbb{Z}/2$-grading: $\mathbb{H}_{\mathbb{B}}$ is the even part and a subalgebra, $i\mathbb{H}_{\mathbb{B}}$ the odd part and only a module. $\mathbb{H}_{\mathbb{B}} \cong \mathbb{H}$ is a division algebra.
 - The biquaternion norm is complex — hence of no definite sign — on the center and the vector subspace, positive definite on $\mathbb{H}_{\mathbb{B}}$ and negative definite on $i\mathbb{H}_{\mathbb{B}}$, so neither half contains a zero divisor, and indefinite on the two sectors. The Lorentzian signature and the whole zero-divisor cone of $\mathbb{B}$ come from mixing the two halves.
 - Multiplication by $i$ exchanges the halves and exchanges the sectors; quaternion conjugation preserves all four subspaces; complex conjugation fixes the real half and negates the imaginary half, and preserves both sectors.
+- The four forms of the algebra carry an alternating companion, the **area pairing**, on the center subspace, of rank $2$, and on the vector subspace, of rank $6$, and none on the four four-dimensional subspaces. It joins each direction to its partner under multiplication by the central imaginary, so it is present exactly where both members of a pair lie inside the subspace — the same two subspaces on which the multiplication by $i$ closes and on which a complex dimension exists.
 
 ## Summary of Notation
 
@@ -553,3 +558,4 @@ The biquaternion algebra admits exactly three decompositions into two distinguis
 - S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions," *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the canonical decompositions and the conventions in applied use.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the grading of the algebra and the role of its even part.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the even subalgebra of spacetime algebra and the rotors it carries.
+- *The Six Subspaces and the Four Forms* (mathematics), for the four forms read on each of the six subspaces, the real and the imaginary parts, the area pairing and its ranks, the collapse patterns and the Kähler identity that reads the area pairing off the real part by the central imaginary.

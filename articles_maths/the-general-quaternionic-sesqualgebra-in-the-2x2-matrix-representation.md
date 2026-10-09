@@ -49,9 +49,9 @@ the ordinary matrix product with the adjugate in the first slot and the conjugat
 
 **The fundamental symmetry.** The natural conjugation $J={}^{\natural}$ is an involution commuting with the complex coefficients, and in the model it is the adjugation; it is self-adjoint for the Krein form and it splits the algebra into its $+1$ and $-1$ eigenspaces, the Hermitian and anti-Hermitian subspaces.
 
-## The Four Products in Matrices
+## The Four General Products in Matrices
 
-**Theorem (the four matrix forms).** Under $\Phi$ the four products of the algebra read
+**Theorem (the four matrix forms).** Under $\Phi$ the four general products of the algebra read
 
 | product | rule on $\mathbb{B}$ | matrix form |
 |---|---|---|
@@ -60,7 +60,7 @@ the ordinary matrix product with the adjugate in the first slot and the conjugat
 | general plain sesquilinear (sibling) | $\tilde{P}\tilde{Q}^{*}$ | $M(P)M(Q)^{\dagger}$ |
 | general quaternionic sesquilinear | $\tilde{P}^{\natural}\tilde{Q}^{*}$ | $\operatorname{adj}M(P)\,M(Q)^{\dagger}$ |
 
-where $M(\tilde{X})=\Phi(\tilde{X})$. The four products are the four ways of inserting the two conjugations into the two slots of the matrix product, and the fourth carries one adjugate and one conjugate transpose. It is the sesquilinear one: the first factor enters linearly and the second conjugate-linearly,
+where $M(\tilde{X})=\Phi(\tilde{X})$. The four general products are the four ways of inserting the two conjugations into the two slots of the matrix product, and the fourth carries one adjugate and one conjugate transpose. It is the sesquilinear one: the first factor enters linearly and the second conjugate-linearly,
 
 $$
 \Phi\bigl((\lambda\tilde{P})\star\tilde{Q}\bigr)=\lambda\,\Phi(\tilde{P}\star\tilde{Q}),\qquad \Phi\bigl(\tilde{P}\star(\lambda\tilde{Q})\bigr)=\bar\lambda\,\Phi(\tilde{P}\star\tilde{Q}),
@@ -160,7 +160,7 @@ the Krein invariant of the element; it is positive on the centre, negative on th
 
 ## Summary
 
-The $2\times2$ realization keeps the two conjugations apart, the natural conjugation as the adjugate and the Hermitian conjugation as the conjugate transpose, with the coefficientwise conjugation as the adjugate of the dagger; so the general quaternionic sesquilinear product is the adjugated conjugate-transposed matrix product, $\Phi(\tilde{P}\star\tilde{Q})=\operatorname{adj}\Phi(\tilde{P})\Phi(\tilde{Q})^{\dagger}=\varepsilon\Phi(\tilde{P})^{\mathsf{T}}\varepsilon^{-1}\Phi(\tilde{Q})^{\dagger}$, the fourth of the four products and the only sesquilinear one. Its idempotents satisfy $\operatorname{adj}(M)M^{\dagger}=M$; the nontrivial ones have norm one and satisfy $M^{3}=I$, $M^{\dagger}=M^{2}=M^{-1}$, $\operatorname{Tr}M=-1$, and they are exactly the unitary conjugates of $\operatorname{diag}(\omega,\omega^{2})$, the family of the group, disjoint from the zero divisors, which are the singular matrices. The associator is $\operatorname{adj}(M(Q)^{\dagger})M(P)M(R)^{\dagger}-\operatorname{adj}M(P)M(R)\operatorname{adj}(M(Q)^{\dagger})$, and the left and right multiplications are $\operatorname{adj}M(A)M(X)^{\dagger}$ and $\operatorname{adj}M(X)M(A)^{\dagger}$. The general quaternionic sesquilinear form of the group is the adjugated conjugate-transpose pairing $\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde{P})^{\dagger}\Phi(\tilde{Q}))=\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$, whose diagonal is $\sum_\mu\varepsilon_\mu|Q_\mu|^2$, positive on the centre and negative on the vector subspace, of complex inertia $(1,3)$ and real signature $(2,6)$, with the real cone of real dimension $7$ as null set and the indefinite unitary group $U(1,3)$ as automorphism group, of realification $O(2,6)$. The natural conjugation is the fundamental symmetry, and in the model it is the adjugation.
+The $2\times2$ realization keeps the two conjugations apart, the natural conjugation as the adjugate and the Hermitian conjugation as the conjugate transpose, with the coefficientwise conjugation as the adjugate of the dagger; so the general quaternionic sesquilinear product is the adjugated conjugate-transposed matrix product, $\Phi(\tilde{P}\star\tilde{Q})=\operatorname{adj}\Phi(\tilde{P})\Phi(\tilde{Q})^{\dagger}=\varepsilon\Phi(\tilde{P})^{\mathsf{T}}\varepsilon^{-1}\Phi(\tilde{Q})^{\dagger}$, the fourth of the four general products and the only sesquilinear one. Its idempotents satisfy $\operatorname{adj}(M)M^{\dagger}=M$; the nontrivial ones have norm one and satisfy $M^{3}=I$, $M^{\dagger}=M^{2}=M^{-1}$, $\operatorname{Tr}M=-1$, and they are exactly the unitary conjugates of $\operatorname{diag}(\omega,\omega^{2})$, the family of the group, disjoint from the zero divisors, which are the singular matrices. The associator is $\operatorname{adj}(M(Q)^{\dagger})M(P)M(R)^{\dagger}-\operatorname{adj}M(P)M(R)\operatorname{adj}(M(Q)^{\dagger})$, and the left and right multiplications are $\operatorname{adj}M(A)M(X)^{\dagger}$ and $\operatorname{adj}M(X)M(A)^{\dagger}$. The general quaternionic sesquilinear form of the group is the adjugated conjugate-transpose pairing $\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde{P})^{\dagger}\Phi(\tilde{Q}))=\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$, whose diagonal is $\sum_\mu\varepsilon_\mu|Q_\mu|^2$, positive on the centre and negative on the vector subspace, of complex inertia $(1,3)$ and real signature $(2,6)$, with the real cone of real dimension $7$ as null set and the indefinite unitary group $U(1,3)$ as automorphism group, of realification $O(2,6)$. The natural conjugation is the fundamental symmetry, and in the model it is the adjugation.
 
 ## Summary of Notation
 
@@ -169,7 +169,7 @@ The $2\times2$ realization keeps the two conjugations apart, the natural conjuga
 | $\Phi(\tilde{Q})$ | the $2\times2$ matrix of the realization, $\operatorname{Tr}\Phi(\tilde{Q})=2Q_0$ |
 | $\Phi(\tilde{Q}^{\natural})=\operatorname{adj}\Phi(\tilde{Q})$, $\Phi(\tilde{Q}^{*})=\Phi(\tilde{Q})^{\dagger}$ | the natural conjugation is the adjugate, the Hermitian conjugation the conjugate transpose |
 | $\Phi(\overline{\tilde{Q}})=\operatorname{adj}(\Phi(\tilde{Q})^{\dagger})=\varepsilon\overline{\Phi(\tilde{Q})}\varepsilon^{-1}$ | the coefficientwise conjugation is the adjugate of the dagger |
-| $\Phi(\tilde{P}\star\tilde{Q})=\operatorname{adj}\Phi(\tilde{P})\Phi(\tilde{Q})^{\dagger}$ | the general quaternionic sesquilinear product, the fourth of the four products |
+| $\Phi(\tilde{P}\star\tilde{Q})=\operatorname{adj}\Phi(\tilde{P})\Phi(\tilde{Q})^{\dagger}$ | the general quaternionic sesquilinear product, the fourth of the four general products |
 | $\operatorname{adj}(M)M^{\dagger}=M$ | the matrix idempotent equation |
 | $U\operatorname{diag}(\omega,\omega^{2})U^{\dagger}$ | the family of idempotents as a unitary orbit |
 | $\operatorname{adj}(M(Q)^{\dagger})M(P)M(R)^{\dagger}-\operatorname{adj}M(P)M(R)\operatorname{adj}(M(Q)^{\dagger})$ | the associator in matrices |
@@ -184,7 +184,7 @@ The $2\times2$ realization keeps the two conjugations apart, the natural conjuga
 - Nicolas Bourbaki, *Algebra I, Chapters 1–3* (Springer, 1998), for the structure of $M_2(\mathbb{C})$ and its involutions.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the classification of the involutions of a matrix algebra and the orthosymplectic forms.
 - Barry Simon, *Representations of Finite and Compact Groups* (American Mathematical Society, 1996), for the conjugacy classes of $U(2)$ and the orbits of the unitary group.
-- *Introduction to the $2\times2$ Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.md`), for the realization and its first properties
+- *Introduction to the 2×2 Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.md`), for the realization and its first properties
 - *Biquaternion 2×2 Matrix Element Representation* (`articles_maths/biquaternion-2x2-matrix-element-representation.md`), for the further reading of the isomorphism
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form on the algebra
 - *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for the fundamental symmetry $J={}^{\natural}$

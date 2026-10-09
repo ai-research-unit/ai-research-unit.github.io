@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is studied in depth in the mathematics corpus, and every result the physics uses is explained there. This article is the physics-side entry point to that mathematical study. It carries the direct links to all one hundred and sixty-five entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them. Every entry opens a mathematics article directly.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is studied in depth in the mathematics corpus, and every result the physics uses is explained there. This article is the physics-side entry point to that mathematical study. It carries the direct links to all two hundred and sixteen entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them. Every entry opens a mathematics article directly.
 
 ## Algebra
 
@@ -20,13 +20,17 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 ### Multiplications and Degree-2 Forms
 
-- [The Four Biquaternion Complex Products](../articles_maths/the-four-biquaternion-complex-products.html)
-- [Relations Between the Four Biquaternion Products](../articles_maths/relations-between-the-four-biquaternion-products.html)
-- [Comparison Between the Four Biquaternion Products](../articles_maths/comparison-between-the-four-biquaternion-products.html)
-- [Scalar / Vector decomposition of the Biquaternion Complex Products](../articles_maths/scalar-over-vector-decomposition-of-the-biquaternion-complex-products.html)
+- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternion-c-space.html)
+- [Relations Between the Four General Products](../articles_maths/relations-between-the-four-general-products.html)
+- [Comparison Between the Four General Products](../articles_maths/comparison-between-the-four-general-products.html)
+- [The 12 Products of the Biquaternion Complex Space](../articles_maths/the-12-products-of-the-biquaternion-complex-space.html)
 - [The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.html)
-- [The Six Subspaces and the Four Complex Products](../articles_maths/the-six-subspaces-and-the-four-complex-products.html)
-- [The Four Biquaternion Complex Products and Operators](../articles_maths/the-four-biquaternion-complex-products-and-operators.html)
+- [The Six Subspaces and the Four General Products](../articles_maths/the-six-subspaces-and-the-four-general-products.html)
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html)
+- [The Six Subspaces and the Four Forms](../articles_maths/the-six-subspaces-and-the-four-forms.html)
+- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.html)
+- [The Six Subspaces and the Four Algebraic Norms](../articles_maths/the-six-subspaces-and-the-four-algebraic-norms.html)
+- [The Four General Products and Operators](../articles_maths/the-four-general-products-and-operators.html)
 
 ### Introduction to the General Plain Algebra of Biquaternions
 
@@ -38,9 +42,6 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Biquaternion Square Roots of Minus One, Zero and Plus One](../articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.html)
 - [Biquaternion Square Roots of a General Element](../articles_maths/biquaternion-square-roots-of-a-general-element.html)
 - [Biquaternion Zero Divisors](../articles_maths/biquaternion-zero-divisors.html)
-- [Two-Sided Operators on the General Plain Algebra of Biquaternions](../articles_maths/two-sided-operators-on-the-general-plain-algebra-of-biquaternions.html)
-- [One-Sided Operators on the General Plain Algebra of Biquaternions](../articles_maths/one-sided-operators-on-the-general-plain-algebra-of-biquaternions.html)
-- [The Pin and Spin Groups of the General Plain Algebra of Biquaternions](../articles_maths/the-pin-and-spin-groups-of-the-general-plain-algebra-of-biquaternions.html)
 
 ### Introduction to the Symmetric Plain Algebra of Biquaternions
 - [Introduction to the Symmetric Plain Algebra of Biquaternions](../articles_maths/introduction-to-the-symmetric-plain-algebra-of-biquaternions.html)
@@ -95,7 +96,6 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [The Sesquilinear Sandwich on the Biquaternions](../articles_maths/the-sesquilinear-sandwich-on-the-biquaternions.html)
 - [The Adjoint of the Sesquilinear Sandwich on the Biquaternions](../articles_maths/the-adjoint-of-the-sesquilinear-sandwich-on-the-biquaternions.html)
 - [The Sesquilinear Commutator and the Symmetrised Product on the Biquaternions](../articles_maths/the-sesquilinear-commutator-and-the-symmetrised-product-on-the-biquaternions.html)
-- [The Pin and Spin Groups of the General Plain Sesqualgebra of Biquaternions](../articles_maths/the-pin-and-spin-groups-of-the-general-plain-sesqualgebra-of-biquaternions.html)
 
 ### Introduction to the Symmetric Plain Sesqualgebra of Biquaternions
 - [Introduction to the Symmetric Plain Sesqualgebra of Biquaternions](../articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.html)
@@ -149,14 +149,14 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Why the Ideals, the Idempotents and the Zero Divisors Do Not Change](../articles_maths/why-the-ideals-the-idempotents-and-the-zero-divisors-do-not-change.html)
 - [The Automorphisms and Derivations of the Real Biquaternion Algebra](../articles_maths/the-automorphisms-and-derivations-of-the-real-biquaternion-algebra.html)
 - [The Biquaternion Algebra as a Real Module over Itself](../articles_maths/the-biquaternion-algebra-as-a-real-module-over-itself.html)
-### Synthesis of the Four Products
+### Synthesis of the Four General Products
 
-- [The Annihilating Elements of the Four Products](../articles_maths/the-annihilating-elements-of-the-four-products.html)
-- [The Idempotents of the Four Products](../articles_maths/the-idempotents-of-the-four-products.html)
-- [The Square Roots of a Central Value in the Four Products](../articles_maths/the-square-roots-of-a-central-value-in-the-four-products.html)
-- [The Square-Zero Elements of the Four Products](../articles_maths/the-square-zero-elements-of-the-four-products.html)
-- [The Four Products and Their Two Slots: the Two Algebras and the Two Sesqualgebras](../articles_maths/the-four-products-and-their-two-slots-the-two-algebras-and-the-two-sesqualgebras.html)
-- [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html)
+- [The Annihilating Elements of the Four General Products](../articles_maths/the-annihilating-elements-of-the-four-general-products.html)
+- [The Idempotents of the Four General Products](../articles_maths/the-idempotents-of-the-four-general-products.html)
+- [The Square Roots of a Central Value in the Four General Products](../articles_maths/the-square-roots-of-a-central-value-in-the-four-general-products.html)
+- [The Square-Zero Elements of the Four General Products](../articles_maths/the-square-zero-elements-of-the-four-general-products.html)
+- [The Four General Products and Their Two Slots: the Two Algebras and the Two Sesqualgebras](../articles_maths/the-four-general-products-and-their-two-slots-the-two-algebras-and-the-two-sesqualgebras.html)
+- [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](../articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html)
 
 ### Basic Representations
 
@@ -170,11 +170,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [Topology in the Space of Biquaternions](../articles_maths/topology-in-the-space-of-biquaternions.html)
 
-### Forms and Algebraic Norms of the Biquaternion Algebra
-
-- [Biquaternion Forms and Algebraic Norms](../articles_maths/biquaternion-forms-and-algebraic-norms.html)
-
-*(The plain topology is above: *Topology in the Space of Biquaternions* fixes the space and its one topology, *The Topology of the Zero-Divisor Cone* the singular set, and *Topology of the Cones and Level Sets* the topology that the four forms and the norm carry and prove themselves. A second group, *Topology of the Groups and Slices*, collects the articles that quote a compactness fact rather than establish it. The sub-categories below are parked on the maths side under `### ERROR`: they now hold the algebra of the four forms and the operators, organised by the four products, which is geometry and not topology.)*
+*(The plain topology is above: *Topology in the Space of Biquaternions* fixes the space and its one topology, *The Topology of the Zero-Divisor Cone* the singular set, and *Topology of the Cones and Level Sets* the topology that the four forms and the norm carry and prove themselves. A second group, *Topology of the Groups and Slices*, collects the articles that quote a compactness fact rather than establish it. The sub-categories below are parked on the maths side under `### ERROR`: they now hold the algebra of the four forms and the operators, organised by the four general products, which is geometry and not topology.)*
 
 ### Topology of the Biquaternion Algebra
 
@@ -208,6 +204,9 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Association and the Transpose on the Biquaternion Algebra](../articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.html)
 - [The General Plain Algebra in the $2\times2$ Matrix Representation](../articles_maths/the-general-plain-algebra-in-the-2x2-matrix-representation.html)
 - [The General Plain Algebra in the $4\times4$ Regular Matrix Representation](../articles_maths/the-general-plain-algebra-in-the-4x4-regular-matrix-representation.html)
+- [Two-Sided Operators on the General Plain Algebra of Biquaternions](../articles_maths/two-sided-operators-on-the-general-plain-algebra-of-biquaternions.html)
+- [One-Sided Operators on the General Plain Algebra of Biquaternions](../articles_maths/one-sided-operators-on-the-general-plain-algebra-of-biquaternions.html)
+- [The Pin and Spin Groups of the General Plain Algebra of Biquaternions](../articles_maths/the-pin-and-spin-groups-of-the-general-plain-algebra-of-biquaternions.html)
 
 ### Topology on the Introduction to the General Quaternionic Algebra of Biquaternions
 
@@ -229,6 +228,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Mixed Inner Conjugation on the General Plain Sesqualgebra of Biquaternions](../articles_maths/mixed-inner-conjugation-on-the-general-plain-sesqualgebra-of-biquaternions.html)
 - [Bilinear Operators on the General Plain Sesqualgebra of Biquaternions](../articles_maths/bilinear-operators-on-the-general-plain-sesqualgebra-of-biquaternions.html)
 - [The Fierz–Kofink Identities and the Classification of Spinors](../articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.html)
+- [The Pin and Spin Groups of the General Plain Sesqualgebra of Biquaternions](../articles_maths/the-pin-and-spin-groups-of-the-general-plain-sesqualgebra-of-biquaternions.html)
 
 ### Topology on the Introduction to the General Quaternionic Sesqualgebra of Biquaternions
 
@@ -303,7 +303,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - The biquaternion algebra is studied in depth in the mathematics corpus; this article is the physics-side sub-menu of that study and owns no result of its own.
 - The mathematical study is organised in four blocks: *Algebra*, *Topology*, *Analysis* and *Geometry*, and each block carries a part of the physics.
-- The article carries the direct links to all one hundred and sixty-five entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them.
+- The article carries the direct links to all two hundred and sixteen entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them.
 - The neighbouring mathematical systems, the split-biquaternions and the structural comparison around the biquaternions, are outside this index.
 
 ## Summary of Notation

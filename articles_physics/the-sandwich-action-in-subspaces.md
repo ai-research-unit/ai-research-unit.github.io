@@ -26,7 +26,7 @@ $$
 \operatorname{H}_{z\tilde{Q}}(\tilde S) = |z|^2\operatorname{H}_{\tilde{Q}}(\tilde S) .
 $$
 
-**Proof.** Since $z$ is central, $(z\tilde{Q})\tilde S(z\tilde{Q})^\dagger = z\tilde{Q}\tilde S\tilde{Q}^{*}\bar{z} = |z|^2\tilde{Q}\tilde S\tilde{Q}^{*}$.
+**Proof.** Since $z$ is central, $(z\tilde{Q})\tilde S(z\tilde{Q})^{*} = z\tilde{Q}\tilde S\tilde{Q}^{*}\bar{z} = |z|^2\tilde{Q}\tilde S\tilde{Q}^{*}$.
 
 Two special cases are worth stating apart. For $z = i$ the scaling factor is $|i|^2 = 1$, so
 
@@ -113,10 +113,10 @@ $$
 
 ### A Real Vector Acts as the Rotation by $\pi$ About Itself
 
-Let $\hat{\mathbf{u}}$ be a real unit vector, so that $\hat{\mathbf{u}}^2 = -e_0$, $N(\hat{\mathbf{u}}) = 1$, and $\hat{\mathbf{u}}^\dagger = -\hat{\mathbf{u}}$. The sandwich of a real unit vector is therefore a sandwich with a sign,
+Let $\hat{\mathbf{u}}$ be a real unit vector, so that $\hat{\mathbf{u}}^2 = -e_0$, $N(\hat{\mathbf{u}}) = 1$, and $\hat{\mathbf{u}}^{*} = -\hat{\mathbf{u}}$. The sandwich of a real unit vector is therefore a sandwich with a sign,
 
 $$
-\operatorname{H}_{\hat{\mathbf{u}}}(\tilde S) = \hat{\mathbf{u}}\,\tilde S\,\hat{\mathbf{u}}^\dagger = -\hat{\mathbf{u}}\,\tilde S\,\hat{\mathbf{u}} ,
+\operatorname{H}_{\hat{\mathbf{u}}}(\tilde S) = \hat{\mathbf{u}}\,\tilde S\,\hat{\mathbf{u}}^{*} = -\hat{\mathbf{u}}\,\tilde S\,\hat{\mathbf{u}} ,
 $$
 
 and the map is the rotation by $\pi$ about $\hat{\mathbf{u}}$: it fixes $e_0$ and $\hat{\mathbf{u}}$, negates the two-dimensional plane orthogonal to $\hat{\mathbf{u}}$, and because $i$ is central it does the same on the imaginary vector part. In particular it preserves each of the six subspaces, and it is an element of the rotation group $SO(3)$ of order two.
@@ -137,13 +137,13 @@ $$
 N\!\left(\operatorname{H}_{\mathbf{v}}(\tilde S)\right) = |N(\mathbf{v})|^2N(\tilde S) ,
 $$
 
-so a vector preserves the causal type of every element and rescales the interval by one positive factor; on the unit-norm vectors the factor is one and the map is an isometry. The Hermitian element that measures the scaling is $\mathbf{v}\mathbf{v}^\dagger$, computable from the cross product of the coefficient vector and its conjugate,
+so a vector preserves the causal type of every element and rescales the interval by one positive factor; on the unit-norm vectors the factor is one and the map is an isometry. The Hermitian element that measures the scaling is $\mathbf{v}\mathbf{v}^{*}$, computable from the cross product of the coefficient vector and its conjugate,
 
 $$
-\mathbf{v}\,\mathbf{v}^\dagger = |\mathbf{v}|^2e_0 - \mathbf{v}\times\mathbf{v}^{*} , \qquad |\mathbf{v}|^2 = |v_1|^2+|v_2|^2+|v_3|^2 ,
+\mathbf{v}\,\mathbf{v}^{*} = |\mathbf{v}|^2e_0 - \mathbf{v}\times\mathbf{v}^{*} , \qquad |\mathbf{v}|^2 = |v_1|^2+|v_2|^2+|v_3|^2 ,
 $$
 
-where $|\mathbf{v}|^2$ is the Euclidean norm squared and $\mathbf{v}\times\mathbf{v}^{*}$ is the cross product of the coefficient triple with its complex conjugate. That cross product is purely imaginary in each coordinate, so $\mathbf{v}\mathbf{v}^\dagger$ is an element of the informational sector; it is central exactly when the three coefficients share a common complex factor, $\mathbf{v} = c\,\mathbf{w}$ with $c\in\mathbb{C}$ and $\mathbf{w}$ real, and then the operator of the complex vector is the operator of the real direction multiplied by the biquaternion norm,
+where $|\mathbf{v}|^2$ is the Euclidean norm squared and $\mathbf{v}\times\mathbf{v}^{*}$ is the cross product of the coefficient triple with its complex conjugate. That cross product is purely imaginary in each coordinate, so $\mathbf{v}\mathbf{v}^{*}$ is an element of the informational sector; it is central exactly when the three coefficients share a common complex factor, $\mathbf{v} = c\,\mathbf{w}$ with $c\in\mathbb{C}$ and $\mathbf{w}$ real, and then the operator of the complex vector is the operator of the real direction multiplied by the biquaternion norm,
 
 $$
 \operatorname{H}_{\mathbf{v}} = |\mathbf{v}|^2\operatorname{H}_{\hat{\mathbf{w}}} , \qquad \hat{\mathbf{w}} = \mathbf{w}/|\mathbf{w}| .
@@ -305,7 +305,7 @@ $$
 \operatorname{H}_{\tilde{Q}} = r^{2}\,\operatorname{H}_{\tilde{\Lambda}},
 $$
 
-because the Hermitian conjugates of the four factors are $\hat{q}^{\dagger} = \hat{q}^{-1}$, $B^{\dagger} = B$, $r^{\dagger} = r$ and $(e^{i\alpha})^{\dagger} = e^{-i\alpha}$, so the two central factors cancel against their inverses. A non-central factor occurs once on each side, so its parameter is deposited twice: the rotor of angle $\theta$ acts by the doubled angle, and the boost of rapidity $\psi$ acts by the doubled rapidity, as the diagonal case $\Phi(B) = \operatorname{diag}(e^{\psi/2},e^{-\psi/2})$ shows explicitly, the operator storing the half-rapidity and producing the rapidity. The four factors and their range are *The Polar Element Representation of Biquaternions* and *The Polar Element Representation in Subspaces*.
+because the Hermitian conjugates of the four factors are $\hat{q}^{*} = \hat{q}^{-1}$, $B^{*} = B$, $r^{*} = r$ and $(e^{i\alpha})^{*} = e^{-i\alpha}$, so the two central factors cancel against their inverses. A non-central factor occurs once on each side, so its parameter is deposited twice: the rotor of angle $\theta$ acts by the doubled angle, and the boost of rapidity $\psi$ acts by the doubled rapidity, as the diagonal case $\Phi(B) = \operatorname{diag}(e^{\psi/2},e^{-\psi/2})$ shows explicitly, the operator storing the half-rapidity and producing the rapidity. The four factors and their range are *The Polar Element Representation of Biquaternions* and *The Polar Element Representation in Subspaces*.
 
 ## Worked Examples
 
@@ -345,7 +345,7 @@ $i\tilde{Q} = \sqrt3ie_0 - 2e_3$, of biquaternion norm $1$: the same operators a
 
 The sandwich, restricted to the six distinguished subspaces, produces four operator classes, because a central factor multiplies the sandwich by the squared modulus of its scalar: the scalar imaginary identifies the two halves and the two sectors, so an antiquaternion acts as its real quaternion and a four-vector acts as the informational element $i$ times it.
 
-The **centre** contributes only the dilations by the squared modulus of the biquaternion norm. The **vector subspace** contributes the similarities of the interval: an element of the vector subspace has a central square, $\mathbf{v}^2 = -N(\mathbf{v})e_0$, and the sandwich preserves the causal type of every element while rescaling the interval by $|N(\mathbf{v})|^2$; a real unit vector acts as the rotation by $\pi$ about itself and preserves all six subspaces, a general unit-norm vector acts on the four-vectors as a boost composed with that rotation, and the Hermitian factor of the scaling is $\mathbf{v}\mathbf{v}^\dagger = |\mathbf{v}|^2e_0 - \mathbf{v}\times\mathbf{v}^{*}$. The **two halves** contribute the rotations: a real quaternion acts as $|\tilde{R}|^2$ times the rotation through twice its half-angle, the two equal on the unit-norm slice, with kernel $\{\pm e_0\}$ and the two-fold cover of $SO(3)$, and the two halves give the same operators. The **two sectors** contribute the similarities, whose unit-norm slice carries the Lorentz transformations: the sandwich of a Hermitian element of unit norm is the boost, written with the element on both sides, and it is the Lorentz transformation of the corpus, while a general element of the sector adds a dilation by $|N(\tilde{Q})|^2$; the sandwich of a four-vector is the same family through the central imaginary; and the sign of the biquaternion norm decides whether the operator carries a rotation by $\pi$, since the negative-norm Hermitian elements are $\tilde{Q} = i\tilde{\Lambda}\hat{\mathbf{u}}$ and act as a boost composed with the rotation by $\pi$ about $\hat{\mathbf{u}}$.
+The **centre** contributes only the dilations by the squared modulus of the biquaternion norm. The **vector subspace** contributes the similarities of the interval: an element of the vector subspace has a central square, $\mathbf{v}^2 = -N(\mathbf{v})e_0$, and the sandwich preserves the causal type of every element while rescaling the interval by $|N(\mathbf{v})|^2$; a real unit vector acts as the rotation by $\pi$ about itself and preserves all six subspaces, a general unit-norm vector acts on the four-vectors as a boost composed with that rotation, and the Hermitian factor of the scaling is $\mathbf{v}\mathbf{v}^{*} = |\mathbf{v}|^2e_0 - \mathbf{v}\times\mathbf{v}^{*}$. The **two halves** contribute the rotations: a real quaternion acts as $|\tilde{R}|^2$ times the rotation through twice its half-angle, the two equal on the unit-norm slice, with kernel $\{\pm e_0\}$ and the two-fold cover of $SO(3)$, and the two halves give the same operators. The **two sectors** contribute the similarities, whose unit-norm slice carries the Lorentz transformations: the sandwich of a Hermitian element of unit norm is the boost, written with the element on both sides, and it is the Lorentz transformation of the corpus, while a general element of the sector adds a dilation by $|N(\tilde{Q})|^2$; the sandwich of a four-vector is the same family through the central imaginary; and the sign of the biquaternion norm decides whether the operator carries a rotation by $\pi$, since the negative-norm Hermitian elements are $\tilde{Q} = i\tilde{\Lambda}\hat{\mathbf{u}}$ and act as a boost composed with the rotation by $\pi$ about $\hat{\mathbf{u}}$.
 
 The type of the operator is therefore decided by the class of the acting element and, inside a class, by the element's biquaternion norm: the centre dilates, the vector subspace and the halves transform isometrically or almost so, and the sectors carry the Lorentz transformations on the unit-norm slice and the similarities off it.
 
@@ -359,7 +359,7 @@ The type of the operator is therefore decided by the class of the acting element
 | $\mathbb{C}_{\mathbb{B}}$ | the centre, of elements $ze_0$ |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, $\operatorname{Sc}\tilde{Q} = 0$ |
 | $\mathbf{v}^2 = -N(\mathbf{v})e_0$ | the central square of a vector |
-| $\mathbf{v}\mathbf{v}^\dagger = \|\mathbf{v}\|^2e_0 - \mathbf{v}\times\mathbf{v}^{*}$ | the Hermitian element of a vector |
+| $\mathbf{v}\mathbf{v}^{*} = \|\mathbf{v}\|^2e_0 - \mathbf{v}\times\mathbf{v}^{*}$ | the Hermitian element of a vector |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the quaternion and antiquaternion subspaces |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the informational and material sectors |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2}e_0 + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ | the boost rotor, Hermitian and of unit norm |

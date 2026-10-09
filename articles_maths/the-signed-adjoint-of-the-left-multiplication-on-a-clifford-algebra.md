@@ -17,7 +17,7 @@ $$
 
 the parameter replaced by its grade-twisted Clifford conjugate; the involution of parameters is therefore $a\mapsto\alpha(\hat a)$, the self-adjoint members are those with $\alpha(\hat a)=a$, and the isometric members satisfy the same condition $\hat aa=1$ as for the ordinary left multiplication — the signed and the ordinary left multiplication are isometric simultaneously. For the **twisted form** the adjoint is $\mathrm{L}^{\alpha}_{\hat a}$, the parameter conjugated by the Clifford conjugation alone.
 
-**The boundaries.** The signed left multiplication, its composition law and the disambiguation of the two twists are *The Signed Left Multiplication on a Clifford Algebra*; the ordinary adjoints $L_a^*=L_{\hat a}$ and the Clifford conjugation $\hat x=\alpha(\tilde x)$ are *The Adjoint of the Left Multiplication on a Clifford Algebra* and *The Twisted Adjoint on a Clifford Algebra*; the twisted form and the identity $(A^{*\alpha})=\alpha A^*\alpha$ are the latter; the signed sandwich, of which $\mathrm{L}^{\alpha}_a$ is the left factor, is *The Signed Sandwich on a Clifford Algebra* and *The Signed Adjoint Sandwich on a Clifford Algebra*. The parameter-twisted family $\Lambda^{\alpha}_x(y)=\alpha(x)y$ of *The Graded Multiplication Operators* is a different operator and is not treated. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $q(u)=B(u,u)$ and $uv+vu=2B(u,v)$.
+**The boundaries.** The signed left multiplication, its composition law and the disambiguation of the two twists are *The Signed Left Multiplication on a Clifford Algebra*; the ordinary adjoints $L_a^*=L_{\hat a}$ and the Clifford conjugation $\hat x=\alpha(\tilde x)$ are *The Adjoint of the Left Multiplication on a Clifford Algebra*; the twisted form and the identity $(A^{*\alpha})=\alpha A^*\alpha$ are the latter; the signed sandwich, of which $\mathrm{L}^{\alpha}_a$ is the left factor, is *The Signed Sandwich on a Clifford Algebra* and *The Signed Adjoint Sandwich on a Clifford Algebra*. The parameter-twisted family $\Lambda^{\alpha}_x(y)=\alpha(x)y$ of *The Graded Multiplication Operators* is a different operator and is not treated. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $q(u)=B(u,u)$ and $uv+vu=2B(u,v)$.
 
 ## The Adjoint and Its Involution
 
@@ -29,7 +29,7 @@ $$
 
 The map $a\mapsto\alpha(\hat a)$ is an anti-automorphism and an involution of the algebra, it is the composite $\alpha\circ\hat{}$ of the grade involution with the Clifford conjugation, on a vector it acts by $\alpha(\hat u)=\alpha(-u)=u$, and the adjoint correspondence is an involution of the signed family.
 
-**Proof.** By definition $\mathrm{L}^{\alpha}_a=L_a\alpha$, so $(\mathrm{L}^{\alpha}_a)^*=\alpha^*L_a^*=\alpha L_{\hat a}$, using the adjoints $L_a^*=L_{\hat a}$ and $\alpha^*=\alpha$ of *The Twisted Adjoint on a Clifford Algebra*. Now $\alpha L_{\hat a}(y)=\alpha(\hat ay)=\alpha(\hat a)\alpha(y)$, so $\alpha L_{\hat a}=\mathrm{L}^{\alpha}_{\alpha(\hat a)}$. The statements about $a\mapsto\alpha(\hat a)$ are those of the two anti-involutions: $\widehat{\alpha(ab)}=\widehat{\alpha(a)\alpha(b)}=\alpha(b)\alpha(a)=\alpha(\hat b)\alpha(\hat a)$, and $\alpha(\hat{\alpha(\hat a)})=\alpha(\alpha(\hat a))=\hat a$. On a vector, $\hat u=-u$ and $\alpha(-u)=u$.
+**Proof.** By definition $\mathrm{L}^{\alpha}_a=L_a\alpha$, so $(\mathrm{L}^{\alpha}_a)^*=\alpha^*L_a^*=\alpha L_{\hat a}$, using the adjoints $L_a^*=L_{\hat a}$ and $\alpha^*=\alpha$ of *The Adjoint of the Left Multiplication on a Clifford Algebra*. Now $\alpha L_{\hat a}(y)=\alpha(\hat ay)=\alpha(\hat a)\alpha(y)$, so $\alpha L_{\hat a}=\mathrm{L}^{\alpha}_{\alpha(\hat a)}$. The statements about $a\mapsto\alpha(\hat a)$ are those of the two anti-involutions: $\widehat{\alpha(ab)}=\widehat{\alpha(a)\alpha(b)}=\alpha(b)\alpha(a)=\alpha(\hat b)\alpha(\hat a)$, and $\alpha(\hat{\alpha(\hat a)})=\alpha(\alpha(\hat a))=\hat a$. On a vector, $\hat u=-u$ and $\alpha(-u)=u$.
 
 **Corollary.** The adjoint of the ordinary left multiplication is ordinary, $L_a^*=L_{\hat a}$, while the adjoint of the signed left multiplication is signed; the two families are each stable under the adjoint correspondence, and the involutions of the parameters are $\hat{}$ and $\alpha(\hat{})$ respectively.
 
@@ -61,7 +61,7 @@ which equals the identity exactly when $\alpha(\hat aa)=1$, that is $\hat aa=1$;
 
 ## The Twisted Form and the Second Adjoint
 
-**Definition.** The **twisted form** is $\langle x,y\rangle_\alpha=\langle\alpha(x),y\rangle$, and the **twisted adjoint** $A^{*\alpha}$ is the adjoint for it; the identity $A^{*\alpha}=\alpha A^*\alpha$ holds by *The Twisted Adjoint on a Clifford Algebra*.
+**Definition.** The **twisted form** is $\langle x,y\rangle_\alpha=\langle\alpha(x),y\rangle$, and the **twisted adjoint** $A^{*\alpha}$ is the adjoint for it; the identity $A^{*\alpha}=\alpha A^*\alpha$ holds by definition of the signed adjoint.
 
 **Proposition.** For the twisted form the adjoint of the signed left multiplication is the signed left multiplication by the Clifford conjugate,
 

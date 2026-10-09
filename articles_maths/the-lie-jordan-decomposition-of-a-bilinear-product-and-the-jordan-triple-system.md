@@ -161,4 +161,4 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 - K. McCrimmon, *A Taste of Jordan Algebras* (Universitext, Springer, New York, 2004), for the Jordan triple identities and the classification of special and exceptional Jordan algebras.
 - O. Loos, *Jordan Pairs* (Lecture Notes in Mathematics 460, Springer, Berlin, 1975), for Jordan triples, Jordan pairs and the Kantor–Koecher construction.
 - M. Koecher, "Imbedding of Jordan algebras into Lie algebras I, II," *American Journal of Mathematics* **89** (1967) 787–816 and **90** (1968) 476–510, for the Kantor–Koecher construction.
-- The companion corpus articles: *Jordan Algebras*, *Special and Exceptional Jordan Algebras*, *Lie Algebras*, *Automorphisms and Derivations of Algebras*, *Superalgebras and Graded Structures*, and *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+- The companion corpus articles: *Jordan Algebras*, *Special and Exceptional Jordan Algebras*, *Lie Algebras*, *Automorphisms and Derivations of Algebras*, *Superalgebras and Graded Structures*, and *The 12 Products of the Biquaternion Complex Space*.

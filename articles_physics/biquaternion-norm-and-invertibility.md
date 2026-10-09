@@ -53,16 +53,16 @@ The remaining sections of this article are, in physical terms, the study of this
 $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu=0}^{3} Q_\mu^2$ is homogeneous of degree two, hence is a quadratic form on $\mathbb{B}\cong\mathbb{C}^4$. Its polar form is
 
 $$
-B(\tilde{P},\tilde{Q})=\tfrac{1}{2}\bigl(N(\tilde{P}+\tilde{Q})-N(\tilde{P})-N(\tilde{Q})\bigr)=\sum_{\mu=0}^{3} P_\mu Q_\mu,
+N(\tilde{P},\tilde{Q})=\tfrac{1}{2}\bigl(N(\tilde{P}+\tilde{Q})-N(\tilde{P})-N(\tilde{Q})\bigr)=\sum_{\mu=0}^{3} P_\mu Q_\mu,
 $$
 
-the complex bilinear dot product. It is symmetric and non-degenerate, and the quaternion units are orthonormal,
+the complex bilinear dot product, the **general quaternionic bilinear form**, written $\langle\tilde P,\tilde Q\rangle_{\natural}$ elsewhere in the corpus. It is not the general plain bilinear form $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ of *The Ordinary Product and the Material Sector*, from which it differs by the sign of the vector part; and in the mathematical chapter the same polar form carries the letter $B$. It is symmetric and non-degenerate, and the quaternion units are orthonormal,
 
 $$
-B(e_\mu,e_\nu)=\delta_{\mu\nu}.
+N(e_\mu,e_\nu)=\delta_{\mu\nu}.
 $$
 
-So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear: it is **not** the Hermitian form $\tilde{P}\tilde{Q}^{*}$ of the next section, and the two must not be conflated. Geometrically $B$ is the form whose vanishing locus is the null cone, the object the quadric of *Biquaternion Topology* is built from.
+So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $N$ is complex-bilinear: it is **not** the Hermitian form $\tilde{P}\tilde{Q}^{*}$ of the next section, and the two must not be conflated. Geometrically $N$ is the form whose vanishing locus is the null cone, the object the quadric of *The Null Quadric and Its Projective Geometry* is built from.
 
 ### Multiplicativity
 
@@ -396,7 +396,7 @@ Beyond the six distinguished subspaces, a mixed real subspace carries a signatur
 $$
 W=\operatorname{span}_{\mathbb{R}}\{e_0,e_1,ie_2,ie_3\},\qquad N|_W=a^2+b^2-c^2-d^2 \quad \text{for } a e_0+b e_1+ci e_2+di e_3,
 $$
-of real dimension $4$ and matrix $\operatorname{diag}(1,1,-1,-1)$; its complexification is $(\mathbb{B},N)$, and its projective quadric is the doubly ruled real surface $S^1\times S^1$ (*Biquaternion Topology*, *Biquaternion Lorentzian and Conformal Geometry*).
+of real dimension $4$ and matrix $\operatorname{diag}(1,1,-1,-1)$; its complexification is $(\mathbb{B},N)$, and its projective quadric is the doubly ruled real surface $S^1\times S^1$ (*The Null Quadric and Its Projective Geometry*, *Biquaternion Lorentzian and Conformal Geometry*).
 
 ## The Relation to the Hermitian Decomposition
 

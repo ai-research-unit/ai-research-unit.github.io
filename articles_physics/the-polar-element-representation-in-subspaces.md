@@ -38,7 +38,7 @@ $$
 the principal branch of the square root fixing the pair $(r,\alpha)$ uniquely. The remaining element $U = \tilde{Q}/\rho$ has unit norm, and its polar decomposition is the Cartan decomposition
 
 $$
-U = B\,\hat{q} , \qquad B = \sqrt{UU^\dagger}, \qquad \hat{q} = B^{-1}U ,
+U = B\,\hat{q} , \qquad B = \sqrt{UU^{*}}, \qquad \hat{q} = B^{-1}U ,
 $$
 
 with $B$ the unique Hermitian positive square root. In terms of the element itself,
@@ -307,7 +307,7 @@ The sector is the fixed space of Hermitian conjugation, of real dimension four; 
 
 ### Why There Are Exactly Two Branches
 
-Write the representation as $\tilde{Q} = \rho B\hat{q}$ and impose Hermitian conjugation. With $\hat{q}$ a real unit quaternion, $\hat{q}^\dagger = \bar{\hat{q}} = 2q_0 - \hat{q}$, while $B$ and the central factor $\rho$ are fixed by ${}^{*}$, so
+Write the representation as $\tilde{Q} = \rho B\hat{q}$ and impose Hermitian conjugation. With $\hat{q}$ a real unit quaternion, $\hat{q}^{*} = \bar{\hat{q}} = 2q_0 - \hat{q}$, while $B$ and the central factor $\rho$ are fixed by ${}^{*}$, so
 
 $$
 \tilde{Q}^{*} = \bar{\rho}\,B\,\bar{\hat{q}} = \tilde{Q} = \rho\,B\,\hat{q} \quad\Longrightarrow\quad \bar{\hat{q}} = e^{2i\alpha}\hat{q} \quad\Longrightarrow\quad 2q_0 = \left(1 + e^{2i\alpha}\right)\hat{q} .
@@ -355,7 +355,7 @@ The sector is the fixed space of the anti-Hermitian conjugation $\flat$ and the 
 
 ### Why There Are Exactly Two Branches
 
-Write the representation as $\tilde{Q} = \rho B\hat{q}$ and apply the anti-Hermitian condition. With $\hat{q}$ a real unit quaternion, $\hat{q}^\dagger = \bar{\hat{q}} = 2q_0 - \hat{q}$, so
+Write the representation as $\tilde{Q} = \rho B\hat{q}$ and apply the anti-Hermitian condition. With $\hat{q}$ a real unit quaternion, $\hat{q}^{*} = \bar{\hat{q}} = 2q_0 - \hat{q}$, so
 
 $$
 \tilde{Q}^{*} = \bar{\rho}\,B\,\bar{\hat{q}} = -\tilde{Q} = -\rho\,B\,\hat{q} \quad\Longrightarrow\quad \bar{\hat{q}} = -e^{2i\alpha}\hat{q} \quad\Longrightarrow\quad 2q_0 = \left(1 - e^{2i\alpha}\right)\hat{q} .
@@ -504,6 +504,6 @@ Restricted to the six distinguished subspaces, the polar representation $\tilde{
 - *The Polar Element Representation of Biquaternions* (`articles_physics/the-polar-element-representation-of-biquaternions.md`), for the theorem, the four factors, the algorithm and the uniqueness, the determinant, the interval and the light cone.
 - *Relations Between Subspaces* (`articles_physics/relations-between-subspaces.md`), for the six subspaces, the involutions, the four blocks, the intersections and the biquaternion norm of each subspace.
 - *The Four Other Remarkable Subspaces* (`articles_physics/the-four-other-remarkable-subspaces.md`), for the center, the vector subspace, the quaternion and the anti-quaternion subspace: their dimensions over the reals and over the complex numbers and the coordinates each carries.
-- *The Hermitian Subspace M+ as the Informational Sector* (`articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md`), for the boosts and the information reading.
-- *The Anti-Hermitian Subspace M- as the Material Sector* (`articles_physics/the-anti-hermitian-subspace-m-as-the-material-sector.md`), for the four-vectors and the light cone.
+- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (`articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md`), for the boosts and the information reading.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* (`articles_physics/the-anti-hermitian-subspace-m-as-the-material-sector.md`), for the four-vectors and the light cone.
 - *The 2×2 Matrix Element Representation of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-of-biquaternions.md`), for the matrix classes of the six subspaces and $\det\Phi(\tilde{Q}) = N(\tilde{Q})$.

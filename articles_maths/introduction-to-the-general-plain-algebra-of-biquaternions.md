@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four products, defined side by side in *The Four Biquaternion Complex Products*. Read as a multiplication, only one of the four makes that space an associative unital algebra: the **general plain bilinear product** $\tilde P \tilde Q$; the $\natural$-product is $\mathbb{C}$-bilinear as well but lacks associativity, and the two sesquilinear products are not $\mathbb{C}$-bilinear at all. This article takes the general plain bilinear product as the multiplication and builds the algebra it defines, then reads off the structure the axioms give it.
+The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products, defined side by side in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Read as a multiplication, only one of the four makes that space an associative unital algebra: the **general plain bilinear product** $\tilde P \tilde Q$; the $\natural$-product is $\mathbb{C}$-bilinear as well but lacks associativity, and the two sesquilinear products are not $\mathbb{C}$-bilinear at all. This article takes the general plain bilinear product as the multiplication and builds the algebra it defines, then reads off the structure the axioms give it.
 
 The construction is short and the consequences long. The product is $\mathbb{C}$-bilinear, associative and unital, so the space becomes an associative unital $\mathbb{C}$-algebra; a bilinear product is determined by its values on a basis, so the four basis elements carry all of it; and once the algebra is in place, its scalar structure, its centre, its generators and its presentation by relations are read off in turn.
 
-Two boundaries are stated at once. The product is not defined here: the coordinate rule and the four names are *The Four Biquaternion Complex Products*, and what the four rules are to one another is *Relations Between the Four Biquaternion Products* and *Comparison Between the Four Biquaternion Products*. And the question of which base rings $\mathbb{B}$ admits, together with the reading of the same product with the real scalars, is *Biquaternions as an Algebra over $\mathbb{R}$*, where the two admissible bases and the failure of the quaternions are treated; the centre of $\mathbb{B}$ and the centrality criterion are §*The Scalars Are the Centre* below. What this article adds is the algebra as the product makes it.
+Two boundaries are stated at once. The product is not defined here: the coordinate rule and the four names are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and what the four rules are to one another is *Relations Between the Four General Products* and *Comparison Between the Four General Products*. And the question of which base rings $\mathbb{B}$ admits, together with the reading of the same product with the real scalars, is *Biquaternions as an Algebra over $\mathbb{R}$*, where the two admissible bases and the failure of the quaternions are treated; the centre of $\mathbb{B}$ and the centrality criterion are §*The Scalars Are the Centre* below. What this article adds is the algebra as the product makes it.
 
 The elements, the basis and the conjugations are *Biquaternions as a Vector Space over $\mathbb{C}$*. The general theory is *Algebras: A General Introduction*, associativity is *Associative Algebras*, the identity is *Unital Algebras*, the tensor product is *Tensor Products of Algebras*, the presentation of an algebra by generators and relations is *Quotients of the Tensor Algebra*, and the anti-automorphism as an isomorphism onto the opposite algebra is *Opposite Algebras and Anti-Isomorphisms*. On the biquaternion side, the two-sided ideals and the simplicity of $\mathbb{B}$ are *Biquaternion Ideals and Peirce Decomposition*, the units and the invertibility criterion are *Introduction to the Six Subspaces*, the zero divisors are *Biquaternion Zero Divisors*, the square of one element is *Biquaternion Square Roots of a General Element*, and the matrix model of the algebra is *Biquaternion 2×2 Matrix Element Representation*.
 
@@ -23,7 +23,7 @@ $$
 (\tilde P,\tilde Q) \longmapsto \tilde P\tilde Q = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3} P_\mu Q_\nu \, e_\mu e_\nu ,
 $$
 
-the general plain bilinear product of *The Four Biquaternion Complex Products*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_0,\dots,e_3$: the rule is a map into $\mathbb{B}$ and is well defined. On the four coordinates it reads
+the general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_0,\dots,e_3$: the rule is a map into $\mathbb{B}$ and is well defined. On the four coordinates it reads
 
 $$
 \tilde P\tilde Q = \bigl(P_0Q_0 - P_1Q_1 - P_2Q_2 - P_3Q_3\bigr)
@@ -40,7 +40,7 @@ $$
 \tilde P\tilde Q = \bigl(P_0Q_0 - (\mathbf P,\mathbf Q)\bigr) + P_0\mathbf Q + Q_0\mathbf P + \mathbf P\times\mathbf Q ,
 $$
 
-where $(\mathbf P,\mathbf Q)$ and $\mathbf P\times\mathbf Q$ are the complex bilinear dot and cross products of the vector parts and the display is the one of *The Four Biquaternion Complex Products*. Its scalar part is $\mathrm{Sc}(\tilde P\tilde Q) = \sum_{\mu=0}^{3}\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon = (1,-1,-1,-1)$, and its vector part is the one displayed.
+where $(\mathbf P,\mathbf Q)$ and $\mathbf P\times\mathbf Q$ are the complex bilinear dot and cross products of the vector parts and the display is the one of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Its scalar part is $\mathrm{Sc}(\tilde P\tilde Q) = \sum_{\mu=0}^{3}\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon = (1,-1,-1,-1)$, and its vector part is the one displayed.
 
 ### The Multiplication Table
 
@@ -252,7 +252,7 @@ the developed square being that of *Biquaternion Square Roots of a General Eleme
 
 ## The Other Three Products
 
-The comparison of the four products settles which of them is a multiplication. The two sesquilinear products are conjugate-linear in their second argument, so neither can be the multiplication of a $\mathbb{C}$-algebra; the $\natural$-product is $\mathbb{C}$-bilinear, but it is not associative and it has an identity on the left only, so it is a bilinear product that is not the multiplication of an associative unital algebra (*Comparison Between the Four Biquaternion Products*). **Exactly one of the four products is the multiplication of an associative unital $\mathbb{C}$-algebra, and it is the general plain bilinear product.**
+The comparison of the four general products settles which of them is a multiplication. The two sesquilinear products are conjugate-linear in their second argument, so neither can be the multiplication of a $\mathbb{C}$-algebra; the $\natural$-product is $\mathbb{C}$-bilinear, but it is not associative and it has an identity on the left only, so it is a bilinear product that is not the multiplication of an associative unital algebra (*Comparison Between the Four General Products*). **Exactly one of the four general products is the multiplication of an associative unital $\mathbb{C}$-algebra, and it is the general plain bilinear product.**
 
 The four are not unrelated, and the algebra determines all of them. Each is the multiplication with a conjugation applied in one or both slots:
 
@@ -266,7 +266,7 @@ where the complex conjugation $\bar{\cdot}$ conjugates the coefficients, ${}^{\n
 
 ## Summary
 
-The general plain bilinear product of *The Four Biquaternion Complex Products*, read as a multiplication on the underlying $\mathbb{C}$-vector space of $\mathbb{B}$, is $\mathbb{C}$-bilinear, associative and unital. It is determined by the sixteen products of the four basis elements, and the table is the quaternion table with the central imaginary allowed as a coefficient.
+The general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, read as a multiplication on the underlying $\mathbb{C}$-vector space of $\mathbb{B}$, is $\mathbb{C}$-bilinear, associative and unital. It is determined by the sixteen products of the four basis elements, and the table is the quaternion table with the central imaginary allowed as a coefficient.
 
 $$
 \boxed{\ \text{With the general plain bilinear product, } \mathbb{B} \text{ is an associative unital non-commutative } \mathbb{C}\text{-algebra of dimension four.}\ }
@@ -274,7 +274,7 @@ $$
 
 Its scalars enter through the structure map $\varphi(A) = Ae_0$, whose image is the scalar line and which is central; the algebra is the complexification of $\mathbb{H}$ by the tensor product of algebras; its centre is the scalar line, so it is central, simple and hence central simple; and it is not a division algebra, the product of $e_0 + ie_1$ and $e_0 - ie_1$ being zero. Two generators suffice, and the relations $e_1^2 = e_2^2 = -e_0$ and $e_1e_2 + e_2e_1 = 0$ present the algebra as the quaternion algebra over $\mathbb{C}$.
 
-The real quaternion subspace is a real subalgebra and a real form; its imaginary $i\mathbb{H}_{\mathbb{B}}$ is not a subalgebra and not a $\mathbb{C}$-subspace; and the subalgebra generated by one element is the plane spanned by $e_0$ and that element, a product of two copies of $\mathbb{C}$ when $(\mathbf Q,\mathbf Q) \neq 0$ and the dual numbers when $(\mathbf Q,\mathbf Q) = 0$. The other three products of the four are the multiplication with a conjugation in one or both slots, which is why the comparison finds only one multiplication among them.
+The real quaternion subspace is a real subalgebra and a real form; its imaginary $i\mathbb{H}_{\mathbb{B}}$ is not a subalgebra and not a $\mathbb{C}$-subspace; and the subalgebra generated by one element is the plane spanned by $e_0$ and that element, a product of two copies of $\mathbb{C}$ when $(\mathbf Q,\mathbf Q) \neq 0$ and the dual numbers when $(\mathbf Q,\mathbf Q) = 0$. The other three of the four general products are the multiplication with a conjugation in one or both slots, which is why the comparison finds only one multiplication among them.
 
 ## Summary of Notation
 
@@ -299,5 +299,5 @@ The real quaternion subspace is a real subalgebra and a real form; its imaginary
 - Nicolas Bourbaki, *Algebra I* (Springer, 1998), for algebras over a commutative ring, the structure map into the centre and the tensor product of algebras.
 - Tsit-Yuen Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005), for the quaternion algebra over a field, its presentations and its behaviour under an extension of scalars.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the presentation of an algebra by generators and relations and for central simplicity.
-- *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product, its coordinate rule and its scalar–vector form.
-- *Comparison Between the Four Biquaternion Products* (`articles_maths/comparison-between-the-four-biquaternion-products.md`), for the property table that decides which of the four products is a multiplication.
+- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the product, its coordinate rule and its scalar–vector form.
+- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the property table that decides which of the four general products is a multiplication.

@@ -173,7 +173,7 @@ $\mathrm{Cl}_{1,1}$, according as the plane is definite or indefinite; the opera
 $c(e_i)\partial_i+c(e_j)\partial_j$ on that plane are the $\mathbb{C}$- or $\mathbb{H}$-linear
 Cauchy–Riemann operators of the function theory. The reader who wants the two-dimensional model may
 read *Fueter Theory* and *Complex Analysis* for the definite case; the indefinite case is
-*Split-Complex Analysis on Subspaces*.
+*Split Complex Analysis*.
 
 ### The Intertwiners as Operators
 

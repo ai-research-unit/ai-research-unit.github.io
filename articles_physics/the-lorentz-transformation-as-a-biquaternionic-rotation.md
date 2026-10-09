@@ -278,7 +278,7 @@ The square root is **multivalued by sign**: both $\tilde{\Lambda}$ and $-\tilde{
 
 ### The Closed-Form Rotor and the Bisector Property
 
-For a **simple** Lorentz rotation — a boost, or a rotation, or in general a transformation in a single non-null plane — the rotor can be recovered from the transformation of one vector in the plane, and the recovery has a clean closed form worth recording because it is used in the paravector computation of the boost of a wave (*Paravectors and the Geometry of Spacetime*, *The Boost of a Plane Wave as a Rotation and a Dilation*).
+For a **simple** Lorentz rotation — a boost, or a rotation, or in general a transformation in a single non-null plane — the rotor can be recovered from the transformation of one vector in the plane, and the recovery has a clean closed form worth recording because it is used in the paravector computation of the boost of a wave (*Paravectors and the Geometry of Spacetime*, *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*).
 
 Let $p$ be a non-null Hermitian element lying in the plane of the rotation, so that it commutes with the rotor, and let
 

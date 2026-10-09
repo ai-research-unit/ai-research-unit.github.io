@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra carries not one but four distinguished pairings of its elements, one for each of the four products of *The Four Biquaternion Complex Products*: the scalar part of each product is a pairing of the pair. They are the four degree-2 forms of the algebra: the general plain bilinear form, the general quaternionic bilinear form, the general plain sesquilinear form and the general quaternionic sesquilinear form.
+The biquaternion algebra carries not one but four distinguished pairings of its elements, one for each of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*: the scalar part of each product is a pairing of the pair. They are the four degree-2 forms of the algebra: the general plain bilinear form, the general quaternionic bilinear form, the general plain sesquilinear form and the general quaternionic sesquilinear form.
 
 The four pairings are written
 
@@ -54,7 +54,7 @@ $$
 \langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*}),
 $$
 
-each being the scalar part of one of the four products of *The Four Biquaternion Complex Products*. The table records which conjugation enters each product and which argument carries it.
+each being the scalar part of one of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. The table records which conjugation enters each product and which argument carries it.
 
 | pairing | product | first argument | second argument | scalar part |
 |---|---|---|---|---|
@@ -88,7 +88,7 @@ $$
 \langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}.
 $$
 
-**Proof.** Substituting the four products and using $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ gives each identity; the diagonal values follow. The diagonal of the second is the biquaternion norm of *Biquaternion Norm and Invertibility*, and the diagonal of the third is the Euclidean square of the coefficient space. $\square$
+**Proof.** Substituting the four general products and using $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ gives each identity; the diagonal values follow. The diagonal of the second is the biquaternion norm of *Biquaternion Norm and Invertibility*, and the diagonal of the third is the Euclidean square of the coefficient space. $\square$
 
 **Proposition (the four Gram matrices).** In the coefficient basis the Gram matrices are
 
@@ -115,7 +115,7 @@ $$
 \langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,\bar{\tilde Q}\rangle=\langle\tilde P^{\natural},\tilde Q\rangle_{*},
 $$
 
-each identity being a rearrangement of the conjugations entering the four products. The natural conjugation $J={}^{\natural}$ preserves all four pairings, $\langle J\tilde P,J\tilde Q\rangle=\langle\tilde P,\tilde Q\rangle$ and likewise for the other three, so $J$ is an automorphism of each; it is the *fundamental symmetry* of *The Fundamental Symmetry of the Biquaternion Algebra*.
+each identity being a rearrangement of the conjugations entering the four general products. The natural conjugation $J={}^{\natural}$ preserves all four pairings, $\langle J\tilde P,J\tilde Q\rangle=\langle\tilde P,\tilde Q\rangle$ and likewise for the other three, so $J$ is an automorphism of each; it is the *fundamental symmetry* of *The Fundamental Symmetry of the Biquaternion Algebra*.
 
 **Proof.** Each identity is checked coefficientwise, and the invariance of $J$ is $\varepsilon_\mu^{2}=1$ in the bilinear cases and $\lvert\varepsilon_\mu\rvert^{2}=1$ in the sesquilinear cases. $\square$
 
@@ -131,6 +131,8 @@ The four forms are collected in one table; each entry is defined before it is us
 | $\langle\cdot,\cdot\rangle_{\natural*}$ general quaternionic sesquilinear | ${}^{\natural}\circ\bar{\cdot}$ | conjugate-linear | Hermitian, indefinite | $\mathrm{E}$ | $(2,6)$ | $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ |
 
 The two bilinear forms are complex-valued; their real parts have signature $(4,4)$ on the eight real coordinates. The general plain sesquilinear form is positive definite and the general quaternionic sesquilinear form is indefinite, of signature $(2,6)$.
+
+The four prefixes of the table name the conjugation the form is built from, and they are not a signature and not a base field: *complex* marks a form in which no natural conjugation enters, *quaternion* one in which it enters in the first argument, *bilinear* marks a form linear in both arguments, *sesquilinear* one conjugate-linear in the second. Each is recovered from the others by the conjugations of the arguments (§*The Four Pairings*), so the prefixes organise the table without carrying metric content.
 
 **Theorem (the four automorphism groups).** The $\mathbb{C}$-linear operators preserving each form are, in the coefficient basis,
 
@@ -187,7 +189,7 @@ The four diagonal values are read in the same way, and they locate each subspace
 | $\mathbb{C}_{\mathbb{B}}$ | $\tilde Q=Ae_0$, $A=q_0+iq'_0$ | $A^{2}$ | $A^{2}$ | $\lvert A\rvert^{2}$ | $\lvert A\rvert^{2}$ |
 | $\mathrm{Vect}(\mathbb{B})$ | $\tilde Q=\mathbf{P}=\sum_kP_ke_k$ | $-\sum_kP_k^{2}$ | $\sum_kP_k^{2}$ | $\sum_k\lvert P_k\rvert^{2}$ | $-\sum_k\lvert P_k\rvert^{2}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | $\tilde Q=h=\sum_\mu h_\mu e_\mu$, $h_\mu\in\mathbb{R}$ | $h_0^{2}-\sum_kh_k^{2}$ | $\sum_\mu h_\mu^{2}$ | $\sum_\mu h_\mu^{2}$ | $h_0^{2}-\sum_kh_k^{2}$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $\tilde Q=ih$ | $h_0^{2}-\sum_kh_k^{2}$ | $-\sum_\mu h_\mu^{2}$ | $\sum_\mu h_\mu^{2}$ | $h_0^{2}-\sum_kh_k^{2}$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $\tilde Q=ih$ | $-h_0^{2}+\sum_kh_k^{2}$ | $-\sum_\mu h_\mu^{2}$ | $\sum_\mu h_\mu^{2}$ | $h_0^{2}-\sum_kh_k^{2}$ |
 | $\mathbb{M}_+$ | $\tilde Q=a_0e_0+i\mathbf{p}$, $a_0\in\mathbb{R}$ | $a_0^{2}+(\mathbf{p},\mathbf{p})$ | $a_0^{2}-(\mathbf{p},\mathbf{p})$ | $a_0^{2}+(\mathbf{p},\mathbf{p})$ | $a_0^{2}-(\mathbf{p},\mathbf{p})$ |
 | $\mathbb{M}_-$ | $\tilde Q=ib_0e_0+\mathbf{q}$, $b_0\in\mathbb{R}$ | $-b_0^{2}-(\mathbf{q},\mathbf{q})$ | $-b_0^{2}+(\mathbf{q},\mathbf{q})$ | $b_0^{2}+(\mathbf{q},\mathbf{q})$ | $b_0^{2}-(\mathbf{q},\mathbf{q})$ |
 
@@ -223,11 +225,11 @@ The six subspaces are one set of subspaces carrying two form readings, and the c
 
 **Remark (the two readings do not change the orthogonal pairs).** The six subspaces have the same orthogonal pairs under every pairing, namely the centre with the vector subspace, as §*The Six Subspaces in Comparison* records; the reading is a change of form on one common set of subspaces, not a change of the lattice.
 
-**Remark (where the four forms sit in the split of the products).** Each of the four forms is the scalar form of one of the four products of *The Four Biquaternion Complex Products*, that is the scalar part of the product read as a value; and each is the **scalar part of the symmetric half** of that product taken under the exchange that keeps its class — the plain transposition for the two bilinear products, whose base involution is trivial, and the transposition followed by the coefficientwise conjugation for the two sesquilinear products — by the scalar theorem of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product* and its §*The Biquaternion Products*. For the plain sesquilinear product and $c=\overline{\cdot}$ the coincidence is exact and not only scalar: the conjugate-symmetric half is the central element
+**Remark (where the four forms sit in the split of the products).** Each of the four forms is the scalar form of one of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, that is the scalar part of the product read as a value; and each is the **scalar part of the symmetric half** of that product taken under the exchange that keeps its class — the plain transposition for the two bilinear products, whose base involution is trivial, and the transposition followed by the coefficientwise conjugation for the two sesquilinear products — by the scalar theorem of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product* and its §*The Biquaternion Products*. For the plain sesquilinear product and $c=\overline{\cdot}$ the coincidence is exact and not only scalar: the conjugate-symmetric half is the central element
 $$
 \tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+(\tilde{P}\tilde{Q}^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})\,e_0=\bigl(P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})\bigr)e_0,
 $$
-which is the form $\langle\tilde{P},\tilde{Q}\rangle_{*}$ of the algebra reading above read in the centre. So the exchange that keeps the class is the one under which the form is a product: the symmetric half carries the form in its scalar part, and for the plain sesquilinear product the half is the form itself in the centre, while for a product whose value is not central the half is the form in its scalar part and carries a vector part as well. The four forms of this article are the four scalar parts, and the four scalar parts of the four products are the four forms (*Relations Between the Four Biquaternion Products*, §*The Four Scalar Parts*). The other reading of the four, under the plain exchange, is *Scalar / Vector decomposition of the Biquaternion Complex Products*.
+which is the form $\langle\tilde{P},\tilde{Q}\rangle_{*}$ of the algebra reading above read in the centre. So the exchange that keeps the class is the one under which the form is a product: the symmetric half carries the form in its scalar part, and for the plain sesquilinear product the half is the form itself in the centre, while for a product whose value is not central the half is the form in its scalar part and carries a vector part as well. The four forms of this article are the four scalar parts, and the four scalar parts of the four general products are the four forms (*Relations Between the Four General Products*, §*The Four Scalar Parts*). The other reading of the four, under the plain exchange, is *The 12 Products of the Biquaternion Complex Space*.
 
 ## The Null Sets Compared
 
@@ -268,7 +270,7 @@ $$
 
 which force $U=0$ and $W=\hat\mu$ a real unit vector. The chart therefore meets the intersection in the copy $\{1\}\times iS^{2}$ of $S^{2}$: the intersection is the union of the doubly null lines $\mathbb{C}(e_0+i\hat\mu)$. The two lines of the statement are null for both forms, $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural}=1+(i)^{2}=0$ and $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural*}=1-1=0$. The doubly null lines are also the **Peirce lines** $\mathbb{C}\tilde\Pi_\pm(\hat\mu)$ of the rank-one Hermitian idempotents $\tilde\Pi_\pm(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$, which is the description of *The Isotropic Structure of the General Quaternionic Sesqualgebra*, §*The Index in Two Ways*. $\square$
 
-**Remark (the two cones agree on a real slice).** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the general quaternionic sesquilinear form is the interval form and the norm is the definite form, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_0^{2}-\sum_kq_k^{2}$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu}q_{\mu}^{2}$; the Krein null set is the light cone of the slice, the norm cone meets the real slice only at the origin, and the two agree nowhere except at $0$.
+**Remark (the two cones agree on a real slice).** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the general quaternionic sesquilinear form is the Krein form and the norm is the definite form, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_0^{2}-\sum_kq_k^{2}$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu}q_{\mu}^{2}$; the Krein null set is the light cone of the slice, the norm cone meets the real slice only at the origin, and the two agree nowhere except at $0$.
 
 ## The Value-One Sets Compared
 
@@ -290,6 +292,32 @@ $$
 $$
 the affine complex quadric of the same polynomial, of complex dimension $3$. The curve $\tilde Q(t)=\cosh t\,e_0+\sinh t\,e_1$ lies on $\mathcal{L}$ for every real $t$, since $\cosh^{2}t-\sinh^{2}t=1$. The set is not a group: $\langle\tilde Q(t),\tilde Q(t)\rangle=1$ while $\tilde Q(t)^{2}=e_0+\sinh2t\,e_1$, of diagonal value $1-\sinh^{2}2t$, which differs from $1$ for $t\neq0$, so $\mathcal{L}$ is not closed under the product. This separates it from the value-one set of the general quaternionic bilinear form, which is the norm-one group $G_1$ of *Biquaternion Norm and Invertibility*. Over $\mathbb{C}$ every non-degenerate quadratic form of rank $4$ is equivalent to every other, so $\mathcal{L}$ is the standard complex quadric.
 
+## The Two Senses of Norm
+
+The four pairings separate the two senses of the word *norm*, and the separation is why the algebra carries no single norm. The **algebraic norm** is the diagonal of the general quaternionic bilinear form,
+$$
+N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu=0}^{3}Q_\mu^{2}\in\mathbb{C},
+$$
+complex-valued and multiplicative; the **Hermitian norm** is the square root of the diagonal of the general plain sesquilinear form, $\lVert\tilde Q\rVert_E^{2}=\langle\tilde Q,\tilde Q\rangle_{*}$, real and definite. Multiplicativity belongs to the first and definiteness to the second, and no third function holds the two together.
+
+**Proposition (no function is both definite and multiplicative).** There is no function on $\mathbb{B}$ that is both definite and multiplicative.
+
+*Proof.* The algebra has zero divisors: for example
+$$
+(e_0+ie_1)(e_0-ie_1)=e_0-i^{2}e_1^{2}=e_0-(-1)(-1)e_0=0,
+$$
+with $e_0\pm ie_1\neq0$ and $N(e_0\pm ie_1)=1+i^{2}=0$. Suppose $\lVert\cdot\rVert$ were definite and multiplicative. Then $\lVert e_0+ie_1\rVert$ and $\lVert e_0-ie_1\rVert$ are nonzero, since the factors are nonzero, whereas
+$$
+\lVert e_0+ie_1\rVert\lVert e_0-ie_1\rVert=\lVert (e_0+ie_1)(e_0-ie_1)\rVert=\lVert 0\rVert=0,
+$$
+which is impossible in the real numbers. $\square$
+
+**Corollary.** $N$ is multiplicative and not definite; the diagonal of the general plain sesquilinear form is definite and not multiplicative; and no third function repairs the split.
+
+**Remark (the coincidence that fails here).** For $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and the octonions the multiplicative form is real and positive on the nonzero elements and equal to the square of the definite norm, so the two senses of *norm* are one function; by the Hurwitz theorem these four are the only normed division algebras (*Normed Division Algebras and the Hurwitz Theorem*). The biquaternions are excluded by their zero divisors, exactly as the proposition shows. The coincidence is recovered on the parts of $\mathbb{B}$ where $N$ does not vanish: on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where $N$ is real of signature $(4,0)$ and $N(\tilde Q)=\lVert\tilde Q\rVert^{2}$; on the imaginary translate $i\mathbb{H}_{\mathbb{B}}$, where $N$ is real of signature $(0,4)$ and $N(\tilde Q)=-\lVert\tilde Q\rVert^{2}$; and on the two sectors, where $N$ is indefinite and the norm and the interval differ by a sign on one of the two halves. It is the whole algebra, taken at once, that no single function norms. The two senses carry the two readings of the framework: restricted to the material sector the algebraic norm is the interval of signature $(3,1)$, whose zero set is the light cone, and the Hermitian norm is the length of the state space on the informational sector.
+
+**Remark (the four degree-two functions).** Each of the four products carries its own quadratic diagonal, $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu Q_\mu^{2}$, $\sum_\mu\lvert Q_\mu\rvert^{2}$ and $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$, and the four rows of the table above separate them; only the second is multiplicative and only the third is definite. The algebraic norm, its polarisation, the two norms and the unit group are *Biquaternion Norm and Invertibility*, and the four products as one two-slot construction are *The Four General Products and Their Two Slots: the Two Algebras and the Two Sesqualgebras*.
+
 ## Worked Examples
 
 **The units.** $\langle e_0,e_0\rangle=\langle e_0,e_0\rangle_{\natural}=\langle e_0,e_0\rangle_{*}=\langle e_0,e_0\rangle_{\natural*}=1$: the identity is positive for all four pairings.
@@ -306,7 +334,7 @@ the affine complex quadric of the same polynomial, of complex dimension $3$. The
 
 ## Summary
 
-The biquaternion algebra carries four pairings, the scalar parts of the four products of *The Four Biquaternion Complex Products*. In the author's convention $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$, $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\sum_\mu P_\mu Q_\mu$, $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$. Their Gram matrices are $\mathrm{E}$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$, and their signatures over $\mathbb{R}$ are $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$. The four forms determine one another by $\langle\tilde P,\tilde Q\rangle_{\natural}=\langle\tilde P^{\natural},\tilde Q\rangle$, $\langle\tilde P,\tilde Q\rangle_{*}=\langle\tilde P,\bar{\tilde Q}\rangle_{\natural}$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,\bar{\tilde Q}\rangle$, and the natural conjugation $J={}^{\natural}$ is an automorphism of all four. The adjoint of a left multiplication is a left multiplication for the two anti-automorphic involutions and a right multiplication for the identity and the automorphic conjugation, so $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle}=R_{\tilde Q}$, $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{\natural}}=L_{\tilde Q^{\natural}}$, $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{*}}=L_{\tilde Q^{*}}$ and $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{\natural*}}=R_{\bar{\tilde Q}}$. The automorphism groups are $O_4(\mathbb{C})$, $O_4(\mathbb{C})$, $U(4)$ and $U(1,3)$.
+The biquaternion algebra carries four pairings, the scalar parts of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. In the author's convention $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$, $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\sum_\mu P_\mu Q_\mu$, $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$. Their Gram matrices are $\mathrm{E}$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$, and their signatures over $\mathbb{R}$ are $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$. The four forms determine one another by $\langle\tilde P,\tilde Q\rangle_{\natural}=\langle\tilde P^{\natural},\tilde Q\rangle$, $\langle\tilde P,\tilde Q\rangle_{*}=\langle\tilde P,\bar{\tilde Q}\rangle_{\natural}$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,\bar{\tilde Q}\rangle$, and the natural conjugation $J={}^{\natural}$ is an automorphism of all four. The adjoint of a left multiplication is a left multiplication for the two anti-automorphic involutions and a right multiplication for the identity and the automorphic conjugation, so $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle}=R_{\tilde Q}$, $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{\natural}}=L_{\tilde Q^{\natural}}$, $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{*}}=L_{\tilde Q^{*}}$ and $(L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{\natural*}}=R_{\bar{\tilde Q}}$. The automorphism groups are $O_4(\mathbb{C})$, $O_4(\mathbb{C})$, $U(4)$ and $U(1,3)$. The four pairings separate the two senses of *norm*: the algebraic norm $\langle\tilde Q,\tilde Q\rangle_{\natural}$ is multiplicative and not definite, the Hermitian norm $\langle\tilde Q,\tilde Q\rangle_{*}$ is definite and not multiplicative, and no function is both, because the algebra has zero divisors.
 
 Their null sets separate them as sharply as their signatures. The general plain sesquilinear form has no null element beyond the origin. The general plain bilinear form has the complex cone $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$, and the general quaternionic bilinear form the complex norm cone $\mathcal{N}=\{\sum_\mu Q_\mu^{2}=0\}$, the zero-divisor cone. The general quaternionic sesquilinear form has the real cone $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$; the two cones $\mathcal{K}$ and $\mathcal{N}$ are distinct, and their intersection is the union of the doubly null lines $\mathbb{C}(e_0+i\hat\mu)$. The sign value-one sets of the general quaternionic sesquilinear form are the three levels of the proposition above; their restrictions to the six distinguished real subspaces are the signatures $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$ of the companion articles, and the centre and the vector subspace are the only pair of the six orthogonal for all four forms.
 
@@ -330,11 +358,12 @@ Their null sets separate them as sharply as their signatures. The general plain 
 
 ## Further Reading
 
-- *The Four Biquaternion Complex Products and Operators* (`articles_maths/the-four-biquaternion-complex-products-and-operators.md`), for the reading of the four pairings as the scalar parts of the four products and the answer to the question whether a product decides a rotation or a reflection
-- *The Four Adjoints of the Biquaternion Algebra in Examples* (`articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.md`), for the four adjoints of the notation table worked out on explicit operators, the four adjoint matrices of one two-sided operator, and the reading of the suffixes of the operator families as those adjoints
+- *The Four General Products and Operators* (`articles_maths/the-four-general-products-and-operators.md`), for the reading of the four pairings as the scalar parts of the four general products and the answer to the question whether a product decides a rotation or a reflection
+- *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the four adjoints of the notation table worked out on explicit operators, the four adjoint matrices of one two-sided operator, and the reading of the suffixes of the operator families as those adjoints
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations and their group
-- *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the four products whose scalar parts are the four pairings
+- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four general products whose scalar parts are the four pairings
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the general plain sesquilinear form and its inner product
+- *Normed Division Algebras and the Hurwitz Theorem* (`articles_maths/normed-division-algebras-and-the-hurwitz-theorem.md`), for the normed division algebras where the two senses of *norm* are one function, the coincidence that §*The Two Senses of Norm* shows fails here
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the general quaternionic sesquilinear form and its signature
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six distinguished real subspaces and their bases
 - *The Six Subspaces under the General Plain Algebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), *The Six Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), *The Six Subspaces under the General Plain Sesqualgebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-general-plain-sesqualgebra-of-biquaternions.md`), *The Six Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.md`) and *The Six Subspaces under the Real Biquaternion Algebra* (`articles_maths/the-six-subspaces-under-the-real-biquaternion-algebra.md`), for the restrictions, subspace by subspace and form by form

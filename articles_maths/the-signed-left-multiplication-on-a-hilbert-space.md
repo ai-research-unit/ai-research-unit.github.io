@@ -110,7 +110,7 @@ and the unsigned sandwich is $T_{U,V}=L_UR_V$. So the signed sandwich is the sig
 
 **Corollary (the composition table recovered).** The products of the signed sandwich computed in *The Signed Sandwich on a Hilbert Space* are the products of the factors displayed here, and the parity of the signed length is the parity of the numbers of signed one-sided factors.
 
-*Proof.* Substituting the factorisations into the four products and using $\alpha^2=\mathrm{id}$ gives the table.
+*Proof.* Substituting the factorisations into the four general products and using $\alpha^2=\mathrm{id}$ gives the table.
 
 **Example (finite dimension).** For $H=\mathbb{K}^{p+q}$ with $\Gamma=\operatorname{diag}(I_p,-I_q)$ the signed left multiplication by a block matrix $U=\begin{pmatrix}A&B\\C&D\end{pmatrix}$ acts on a block matrix $T=\begin{pmatrix}P&Q\\R&S\end{pmatrix}$ by
 

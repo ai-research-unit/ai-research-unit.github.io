@@ -155,7 +155,7 @@ The one-sided operators of the biquaternion algebra are the left and right multi
 | $L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$, $R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$ | The one-sided operators |
 | $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$, $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$, $L_{\tilde A}R_{\tilde B}=R_{\tilde B}L_{\tilde A}$ | The composition laws |
 | $\{T:TL_{\tilde A}=L_{\tilde A}T\}=\{R_{\tilde B}\}$ | The commutant; the double centraliser |
-| $(L_{\tilde A})^{N}=L_{\tilde A^{\natural}}$, $(R_{\tilde B})^{N}=R_{\tilde B^{\natural}}$ | The adjoints for the bilinear form |
+| $(L_{\tilde A})^{N}=L_{\tilde A^{\natural}}$, $(R_{\tilde B})^{N}=R_{\tilde B^{\natural}}$ | The adjoints for the general quaternionic bilinear form |
 | $(L_{\tilde A})^{*}=L_{\tilde A^{*}}$, $(R_{\tilde B})^{*}=R_{\tilde B^{*}}$ | The adjoints for the Hermitian form |
 | $N(L_{\tilde A}\tilde X)=N(\tilde A)N(\tilde X)$, $\det L_{\tilde A}=N(\tilde A)^{2}$ | The conformal factor and the determinant |
 | $\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}$ | The twisted two-sided product |

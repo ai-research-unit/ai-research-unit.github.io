@@ -88,7 +88,7 @@ which is why the critical set is read from the pair of eigenvalues of $\Phi(\til
 
 **Proof.** The product rule; the determinant computation is the critical-set proposition of *The Biquaternion Quadratic Map and Its Julia Sets*.
 
-**Remark (the moral of the warning).** A statement about the element $\tilde Q$ transports along $\Phi$ and can be read from the two-by-two matrix; a statement about the operator $\tilde Q\mapsto\tilde Q\tilde P$ or about a product of the space does not, and must be proven in the algebra. **The model is a model of the elements and of their multiplication, and every use of the model must name which of the two objects is meant.** The four products of the space are the standard trap: they are not carried by $\Phi$, which is the isomorphism for one product only.
+**Remark (the moral of the warning).** A statement about the element $\tilde Q$ transports along $\Phi$ and can be read from the two-by-two matrix; a statement about the operator $\tilde Q\mapsto\tilde Q\tilde P$ or about a product of the space does not, and must be proven in the algebra. **The model is a model of the elements and of their multiplication, and every use of the model must name which of the two objects is meant.** The four general products of the space are the standard trap: they are not carried by $\Phi$, which is the isomorphism for one product only.
 
 ## Summary
 

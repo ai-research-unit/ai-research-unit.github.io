@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four products on its underlying $\mathbb{C}$-vector space (*The Four Biquaternion Complex Products*), and the fourth of them,
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products of the Biquaternion $\mathbb{C}$ Space*), and the fourth of them,
 
 $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
 $$
 
-is the subject of this group. The rule and the scalar–vector form are *The Four Biquaternion Complex Products* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines and its one-sided actions of the unit are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*; the associator is *The Associator of the General Quaternionic Sesquilinear Product*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation, and the bar is the coefficientwise complex conjugation.
+is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines and its one-sided actions of the unit are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*; the associator is *The Associator of the General Quaternionic Sesquilinear Product*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation, and the bar is the coefficientwise complex conjugation.
 
 The subject of this article is the pair of **multiplication operators** attached to the multiplication,
 
@@ -25,7 +25,7 @@ $$
 
 where $T_{\tilde P,\tilde Q}(\tilde X) = \tilde P\tilde X\tilde Q$ is the ordinary two-sided operator. Third, the **absence of a monoid**: the composition of two left multiplications is $\mathbb{C}$-linear whereas every left multiplication is conjugate-linear, so the class is not closed under composition and the left multiplications do not form a monoid. They are sandwiches in the sense of *The Sesquilinear Sandwich Operator*, $L_{\tilde A} = S_{\tilde A^{\natural},e_0}$, and the monoid they generate is the sandwich monoid of that article.
 
-The article owns the two families, their parities, their composition laws and the failure of the monoid property. It cites the general operator theory to *The Left and Right Multiplication Operators of a Sesqualgebra*; it cites the sandwich and its composition table to *The Sesquilinear Sandwich Operator*; it cites the composition of the left multiplications of the four products to *Relations Between the Four Biquaternion Products* §*The Left Multiplications*; and it does not treat the ternary operator, which is *The Ternary Product and the Failure of the Jordan Triple Identity*, nor the matrix realization, which is *The General Quaternionic Sesquilinear Product in the 2×2 Matrix Model*.
+The article owns the two families, their parities, their composition laws and the failure of the monoid property. It cites the general operator theory to *The Left and Right Multiplication Operators of a Sesqualgebra*; it cites the sandwich and its composition table to *The Sesquilinear Sandwich Operator*; it cites the composition of the left multiplications of the four general products to *Relations Between the Four General Products* §*The Left Multiplications*; and it does not treat the ternary operator, which is *The Ternary Product and the Failure of the Jordan Triple Identity*, nor the matrix realization, which is *The General Quaternionic Sesquilinear Product in the 2×2 Matrix Model*.
 
 ## The Two Families
 
@@ -79,7 +79,7 @@ $$
 
 **Proof.** $\lambda_{\tilde A^{\natural}}(\tilde X^{*}) = \tilde A^{\natural}\tilde X^{*} = L_{\tilde A}(\tilde X)$, and $\rho_{\tilde A^{*}}(\tilde X^{\natural}) = \tilde X^{\natural}\tilde A^{*} = R_{\tilde A}(\tilde X)$. $\square$
 
-**Remark.** The reading is the one of *Relations Between the Four Biquaternion Products* §*The Left Multiplications*: the left multiplication of the fourth product is a plain multiplication re-indexed by the natural sign and composed with the star, while the right multiplication is the conjugate of a plain right multiplication re-indexed. The re-indexing by ${}^{\natural}$ is the operator form of the isotope by which the fourth product differs from the derived operation (*The Two One-Sided Actions and the Absence of a Unit*), and the asymmetric placement of the two conjugations is the operator form of the two different slots of the multiplication.
+**Remark.** The reading is the one of *Relations Between the Four General Products* §*The Left Multiplications*: the left multiplication of the fourth product is a plain multiplication re-indexed by the natural sign and composed with the star, while the right multiplication is the conjugate of a plain right multiplication re-indexed. The re-indexing by ${}^{\natural}$ is the operator form of the isotope by which the fourth product differs from the derived operation (*The Two One-Sided Actions and the Absence of a Unit*), and the asymmetric placement of the two conjugations is the operator form of the two different slots of the multiplication.
 
 ## The Composition of Two Left Multiplications
 
@@ -206,9 +206,9 @@ for generic $\tilde A, \tilde B$.
 
 **Remark.** A regular map that is linear and injective but not multiplicative is a **linear embedding of the module that is not a representation of the multiplication**, and it is the exact operator form of the statement that $\mathbb{B}$ is not a module over $(\mathbb{B},\star)$: the module axiom $L_{\tilde A}L_{\tilde B} = L_{\tilde A\star\tilde B}$ fails. The associator of *The Associator of the General Quaternionic Sesquilinear Product* is the obstruction, since the associator's vanishing is exactly the multiplicativity of the regular map.
 
-### The Comparison with the Four Products
+### The Comparison with the Four General Products
 
-**Theorem (the left multiplications of the four products).**
+**Theorem (the left multiplications of the four general products).**
 
 | product | $L_{\tilde A}(\tilde X)$ | parity | $L_{\tilde A} \circ L_{\tilde B}$ | monoid |
 |---|---|---|---|---|
@@ -217,9 +217,9 @@ for generic $\tilde A, \tilde B$.
 | $\tilde A\tilde X^{*}$ | $\tilde A\tilde X^{*}$ | conjugate-linear | $\tilde A\tilde X\tilde B^{*}$ | no |
 | $\tilde A^{\natural}\tilde X^{*}$ | $\tilde A^{\natural}\tilde X^{*}$ | conjugate-linear | $\tilde A^{\natural}\tilde X\overline{\tilde B}$ | no |
 
-**Proof.** The first row is the associativity of the plain product. The second is the composition $L^{\natural}_{\tilde A}L^{\natural}_{\tilde B}(\tilde X) = \tilde A^{\natural}\tilde B^{\natural}\tilde X = (\tilde B\tilde A)^{\natural}\tilde X = L^{\natural}_{\tilde B\tilde A}(\tilde X)$, which is the opposite monoid (*Introduction to the General Quaternionic Algebra of Biquaternions*) and is recorded in *Relations Between the Four Biquaternion Products* §*The Left Multiplications*. The third is the sibling sesquilinear composition $L^{*}_{\tilde A}L^{*}_{\tilde B}(\tilde X) = \tilde A(\tilde B\tilde X^{*})^{*} = \tilde A\tilde X\tilde B^{*}$, which is $\mathbb{C}$-linear whereas $L^{*}$ is conjugate-linear, so the class is not closed. The fourth is the composition law of this article. $\square$
+**Proof.** The first row is the associativity of the plain product. The second is the composition $L^{\natural}_{\tilde A}L^{\natural}_{\tilde B}(\tilde X) = \tilde A^{\natural}\tilde B^{\natural}\tilde X = (\tilde B\tilde A)^{\natural}\tilde X = L^{\natural}_{\tilde B\tilde A}(\tilde X)$, which is the opposite monoid (*Introduction to the General Quaternionic Algebra of Biquaternions*) and is recorded in *Relations Between the Four General Products* §*The Left Multiplications*. The third is the sibling sesquilinear composition $L^{*}_{\tilde A}L^{*}_{\tilde B}(\tilde X) = \tilde A(\tilde B\tilde X^{*})^{*} = \tilde A\tilde X\tilde B^{*}$, which is $\mathbb{C}$-linear whereas $L^{*}$ is conjugate-linear, so the class is not closed. The fourth is the composition law of this article. $\square$
 
-**Remark.** The comparison is the row of *Comparison Between the Four Biquaternion Products* that reads the monoid property, and it separates the four products into two classes: the two bilinear products, whose left multiplications form monoids, and the two sesquilinear products, whose left multiplications do not. The dividing line is the parity of the left multiplication: it is linear for the bilinear products, so that the composition of two of them has the same parity as the factors and stays in the class, and conjugate-linear for the sesquilinear products, so that the composition has the opposite parity and leaves the class.
+**Remark.** The comparison is the row of *Comparison Between the Four General Products* that reads the monoid property, and it separates the four general products into two classes: the two bilinear products, whose left multiplications form monoids, and the two sesquilinear products, whose left multiplications do not. The dividing line is the parity of the left multiplication: it is linear for the bilinear products, so that the composition of two of them has the same parity as the factors and stays in the class, and conjugate-linear for the sesquilinear products, so that the composition has the opposite parity and leaves the class.
 
 ## Worked Cases
 
@@ -251,7 +251,7 @@ $$
 
 ## Summary
 
-The left and right multiplications of the general quaternionic sesquilinear multiplication are $L_{\tilde A}(\tilde X) = \tilde A^{\natural}\tilde X^{*}$ and $R_{\tilde A}(\tilde X) = \tilde X^{\natural}\tilde A^{*}$. The left multiplication is conjugate-linear and the right one is linear; the map $\tilde A \mapsto L_{\tilde A}$ is $\mathbb{C}$-linear and the map $\tilde A \mapsto R_{\tilde A}$ is conjugate-linear, both injective, so the two families are two different images of $\mathbb{B}$ and not a single regular representation. The composition laws are $L_{\tilde A} \circ L_{\tilde B} = T_{\tilde A^{\natural},\overline{\tilde B}}$ and $R_{\tilde A} \circ R_{\tilde B} = T_{\overline{\tilde B},\tilde A^{*}}$, both compositions $\mathbb{C}$-linear; the mixed compositions $L_{\tilde A}R_{\tilde B} = \tilde A^{\natural}\tilde B\overline{\tilde X}$ and $R_{\tilde B}L_{\tilde A} = \overline{\tilde X}\tilde A\tilde B^{*}$ are conjugate-linear. Since every left multiplication is conjugate-linear and every right one is linear, the compositions leave the two classes, and neither family is closed under composition or contains an identity: neither is a monoid. The left multiplications are the sandwiches $S_{\tilde A^{\natural},e_0}$, and the monoid they generate is the sandwich monoid of *The Sesquilinear Sandwich Operator*, whose identity is the ordinary two-sided operator $T_{e_0,e_0}$. The regular map is a linear injection that is not multiplicative, which is the operator form of the failure of associativity, and the four products split into the two bilinear ones, whose left multiplications form monoids, and the two sesquilinear ones, whose left multiplications do not.
+The left and right multiplications of the general quaternionic sesquilinear multiplication are $L_{\tilde A}(\tilde X) = \tilde A^{\natural}\tilde X^{*}$ and $R_{\tilde A}(\tilde X) = \tilde X^{\natural}\tilde A^{*}$. The left multiplication is conjugate-linear and the right one is linear; the map $\tilde A \mapsto L_{\tilde A}$ is $\mathbb{C}$-linear and the map $\tilde A \mapsto R_{\tilde A}$ is conjugate-linear, both injective, so the two families are two different images of $\mathbb{B}$ and not a single regular representation. The composition laws are $L_{\tilde A} \circ L_{\tilde B} = T_{\tilde A^{\natural},\overline{\tilde B}}$ and $R_{\tilde A} \circ R_{\tilde B} = T_{\overline{\tilde B},\tilde A^{*}}$, both compositions $\mathbb{C}$-linear; the mixed compositions $L_{\tilde A}R_{\tilde B} = \tilde A^{\natural}\tilde B\overline{\tilde X}$ and $R_{\tilde B}L_{\tilde A} = \overline{\tilde X}\tilde A\tilde B^{*}$ are conjugate-linear. Since every left multiplication is conjugate-linear and every right one is linear, the compositions leave the two classes, and neither family is closed under composition or contains an identity: neither is a monoid. The left multiplications are the sandwiches $S_{\tilde A^{\natural},e_0}$, and the monoid they generate is the sandwich monoid of *The Sesquilinear Sandwich Operator*, whose identity is the ordinary two-sided operator $T_{e_0,e_0}$. The regular map is a linear injection that is not multiplicative, which is the operator form of the failure of associativity, and the four general products split into the two bilinear ones, whose left multiplications form monoids, and the two sesquilinear ones, whose left multiplications do not.
 
 ## Summary of Notation
 

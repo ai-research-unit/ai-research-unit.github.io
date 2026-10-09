@@ -1,8 +1,8 @@
-# __Relations Between the Four Biquaternion Products__
+# __Relations Between the Four General Products__
 
 ## Introduction
 
-The four products of the underlying $\mathbb{C}$-vector space of $\mathbb{B}$ are defined independently in *The Four Biquaternion Complex Products*, each on the coordinates of the two elements of a pair, and each with its scalar–vector form:
+The four general products of the underlying $\mathbb{C}$-vector space of $\mathbb{B}$ are defined independently in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, each on the coordinates of the two elements of a pair, and each with its scalar–vector form:
 
 $$
 \tilde P\tilde Q , \qquad \tilde P^{\natural}\tilde Q , \qquad \tilde P\tilde Q^{*} , \qquad \tilde P^{\natural}\tilde Q^{*} .
@@ -10,11 +10,11 @@ $$
 
 This article collects the identities that link the four. They are not four unrelated rules: the first factor is read plain in the first two and through ${}^{\natural}$ in the last two, the second factor plain in the first and the third and through ${}^{*}$ in the second and the fourth, the two choices being made independently. Every link below is a consequence of that single distinction, read on the coordinates: the four scalar parts are related to one another by the two identities that split a factor into its scalar and its vector part; the four vector parts obey the same pair of identities; the left multiplications of the four are the general plain bilinear ones read through the two conjugations, and that reading decides which of them form a monoid. Finally, on the real quaternion subspace, where the complex conjugation is the identity and the star is the natural sign, the four scalar parts collapse onto two, the two sesquilinear ones becoming the two bilinear ones.
 
-Which of the four is a multiplication in the sense of algebra is *Comparison Between the Four Biquaternion Products*, and the properties of each are tabulated there. The behaviour of the general plain bilinear product on the six distinguished subspaces is *The Six Subspaces and the Four Complex Products*, and its split into a symmetric and an antisymmetric half is *Scalar / Vector decomposition of the Biquaternion Complex Products*.
+Which of the four general products is a multiplication in the sense of algebra is *Comparison Between the Four General Products*, and the properties of each are tabulated there. The behaviour of the general plain bilinear product on the six distinguished subspaces is *The Six Subspaces and the Four General Products*, and its split into a symmetric and an antisymmetric half is *The 12 Products of the Biquaternion Complex Space*.
 
-The article assumes the four products and their scalar–vector forms from *The Four Biquaternion Complex Products*, and the conjugations from *Biquaternions as a Vector Space over $\mathbb{C}$* and *The Group of Involutions*. Throughout, $\tilde P=P_0+\mathbf P$ and $\tilde Q=Q_0+\mathbf Q$ separate the complex scalar part from the complex vector part, $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and $\mathbf P\times\mathbf Q$ are the complex bilinear dot and cross products, and $\overline{\mathbf Q}$ is the coefficientwise conjugate of the vector part.
+The article assumes the four general products and their scalar–vector forms from *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the conjugations from *Biquaternions as a Vector Space over $\mathbb{C}$* and *The Group of Involutions*. Throughout, $\tilde P=P_0+\mathbf P$ and $\tilde Q=Q_0+\mathbf Q$ separate the complex scalar part from the complex vector part, $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and $\mathbf P\times\mathbf Q$ are the complex bilinear dot and cross products, and $\overline{\mathbf Q}$ is the coefficientwise conjugate of the vector part.
 
-## The Two Choices, and the Four Products
+## The Two Choices, and the Four General Products
 
 Write ${}^{\natural}$, ${}^{*}$ for the two conjugations. The four rules are read on one and the same pair $(\tilde P,\tilde Q)$, and the three after the first are obtained from the general plain bilinear product $\tilde P\tilde Q$ by replacing the first element, the second element, or both, by its conjugate:
 
@@ -34,7 +34,7 @@ $$
 \mathrm{Sc}\bigl(\tilde P\bar{\tilde Q}\bigr)=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q^{*}\bigr) ,
 $$
 
-and the conjugation $\flat=-\,{}^{*}$ multiplies the corresponding scalar part by $-1$. The four products therefore carry the four scalar parts between them, and the two conjugations left out of the list add no new one.
+and the conjugation $\flat=-\,{}^{*}$ multiplies the corresponding scalar part by $-1$. The four general products therefore carry the four scalar parts between them, and the two conjugations left out of the list add no new one.
 
 ## How Each Factor Enters
 
@@ -61,7 +61,7 @@ $$
 \tilde P\tilde Q^{*}-\tilde P^{\natural}\tilde Q^{*}=2\,\mathbf P\tilde Q^{*} .
 $$
 
-So the ${}^{\natural}$ in the first slot separates the scalar part of the first factor from its vector part, and the four products are the two pairs of that separation: the general plain bilinear product and the ${}^{\natural}$-product are separated by the vector part of $\tilde P$, the two sesquilinear ones by the same vector part after the second factor has been conjugated. The two pairs differ from one another by the ${}^{*}$ in the second slot.
+So the ${}^{\natural}$ in the first slot separates the scalar part of the first factor from its vector part, and the four general products are the two pairs of that separation: the general plain bilinear product and the ${}^{\natural}$-product are separated by the vector part of $\tilde P$, the two sesquilinear ones by the same vector part after the second factor has been conjugated. The two pairs differ from one another by the ${}^{*}$ in the second slot.
 
 One reading follows. The ${}^{\natural}$-product agrees with the general plain bilinear product in its first argument exactly when the vector part of that argument annihilates the second factor,
 
@@ -69,11 +69,11 @@ $$
 \tilde P^{\natural}\tilde Q=\tilde P\tilde Q \quad\Longleftrightarrow\quad \mathbf P\tilde Q=0 ,
 $$
 
-which holds in particular for every central $\tilde P$, the vector part being zero; no two of the four products agree on every pair, since the vector part of a general element is different from zero.
+which holds in particular for every central $\tilde P$, the vector part being zero; no two of the four general products agree on every pair, since the vector part of a general element is different from zero.
 
 ## The Conjugate of a Product
 
-Conjugating a product conjugates the factors and reverses their order, by the two anti-automorphism rules $(\tilde X\tilde Y)^{\natural}=\tilde Y^{\natural}\tilde X^{\natural}$ and $(\tilde X\tilde Y)^{*}=\tilde Y^{*}\tilde X^{*}$. Applied to the four products,
+Conjugating a product conjugates the factors and reverses their order, by the two anti-automorphism rules $(\tilde X\tilde Y)^{\natural}=\tilde Y^{\natural}\tilde X^{\natural}$ and $(\tilde X\tilde Y)^{*}=\tilde Y^{*}\tilde X^{*}$. Applied to the four general products,
 
 $$
 (\tilde P\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural} , \qquad
@@ -100,7 +100,7 @@ That is exactly the symmetry the corresponding scalar parts have, and it explain
 
 ## The Four Scalar Parts
 
-The scalar part of each of the four products is read on the coordinates in one of four ways,
+The scalar part of each of the four general products is read on the coordinates in one of four ways,
 
 | product | scalar part | signs and conjugation |
 |---|---|---|
@@ -149,7 +149,7 @@ $$
 \mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\overline{\mathrm{Sc}(\tilde Q^{\natural}\tilde P^{*})} .
 $$
 
-The two sesquilinear identities are the conjugate-symmetry of the last two scalar parts; that symmetry is a property of the scalar part and not of the product, since none of the four products is commutative.
+The two sesquilinear identities are the conjugate-symmetry of the last two scalar parts; that symmetry is a property of the scalar part and not of the product, since none of the four general products is commutative.
 
 ## The Four Vector Parts
 
@@ -167,7 +167,7 @@ $$
 \mathrm{Vec}(\tilde P^{\natural}\tilde Q^{*})=-2P_0\overline{\mathbf Q}-\mathrm{Vec}(\tilde P\tilde Q^{*}) .
 $$
 
-The first says that the vector part of the ${}^{\natural}$-product is the reflection of the vector part of the general plain bilinear product in $P_0\mathbf Q$; the second, that the vector part of the sesquilinear pair reflects in $-P_0\overline{\mathbf Q}$. In full, the four vector parts of *The Four Biquaternion Complex Products* are two mixed terms and a cross term in each case, and the two signs — the sign of the cross term and the sign of the vector part of the first factor — are what tell the four apart:
+The first says that the vector part of the ${}^{\natural}$-product is the reflection of the vector part of the general plain bilinear product in $P_0\mathbf Q$; the second, that the vector part of the sesquilinear pair reflects in $-P_0\overline{\mathbf Q}$. In full, the four vector parts of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* are two mixed terms and a cross term in each case, and the two signs — the sign of the cross term and the sign of the vector part of the first factor — are what tell the four apart:
 
 | product | vector part | cross term |
 |---|---|---|
@@ -180,7 +180,7 @@ Deleting the cross term, the first and the second rows are reflections of each o
 
 ## The Left Multiplications
 
-The left multiplications of the four products are the general plain bilinear ones read through the two conjugations. Writing $L_{\tilde P}$ and $R_{\tilde P}$ for the left and right multiplications of the general plain bilinear product, $\tilde X\mapsto\tilde P\tilde X$ and $\tilde X\mapsto\tilde X\tilde P$,
+The left multiplications of the four general products are the general plain bilinear ones read through the two conjugations. Writing $L_{\tilde P}$ and $R_{\tilde P}$ for the left and right multiplications of the general plain bilinear product, $\tilde X\mapsto\tilde P\tilde X$ and $\tilde X\mapsto\tilde X\tilde P$,
 
 $$
 \tilde P^{\natural}\tilde X=L_{\tilde P^{\natural}}(\tilde X) , \qquad
@@ -188,7 +188,7 @@ $$
 \tilde P^{\natural}\tilde X^{*}=\bigl(R_{\bar{\tilde P}}(\tilde X)\bigr)^{*} .
 $$
 
-The first is the left multiplication of the general plain bilinear product re-indexed by the natural sign; the other two are the conjugates of the right multiplications of the general plain bilinear product by the star and by the conjugate of the first factor. The distinction decides which of the four products have a monoid of left multiplications, and it is worth recording, although the property table itself is *Comparison Between the Four Biquaternion Products*.
+The first is the left multiplication of the general plain bilinear product re-indexed by the natural sign; the other two are the conjugates of the right multiplications of the general plain bilinear product by the star and by the conjugate of the first factor. The distinction decides which of the four general products have a monoid of left multiplications, and it is worth recording, although the property table itself is *Comparison Between the Four General Products*.
 
 For the general plain bilinear product the left multiplications compose by $L_{\tilde P}\circ L_{\tilde R}=L_{\tilde P\tilde R}$, the associativity of the product, so they form a monoid, the image of $\mathbb{B}$ in its endomorphism ring. For the ${}^{\natural}$-product,
 
@@ -222,7 +222,7 @@ $$
 \tilde P^{\natural}\tilde Q^{*}=\tilde P^{\natural}\tilde Q^{\natural}=(\tilde Q\tilde P)^{\natural} ,
 $$
 
-so the four products take the four values $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{\natural}$ and $(\tilde Q\tilde P)^{\natural}$, of which the last two are the natural conjugates of the two products in the reversed order. The scalar parts follow: the third scalar part restricts to the second,
+so the four general products take the four values $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{\natural}$ and $(\tilde Q\tilde P)^{\natural}$, of which the last two are the natural conjugates of the two products in the reversed order. The scalar parts follow: the third scalar part restricts to the second,
 
 $$
 \mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu Q_\mu=\mathrm{Sc}(\tilde P^{\natural}\tilde Q) \qquad (\bar{\tilde P}=\tilde P,\ \bar{\tilde Q}=\tilde Q),
@@ -232,7 +232,7 @@ and the fourth restricts to the first. The four scalar parts therefore come in t
 
 ## Summary
 
-The four products of *The Four Biquaternion Complex Products* are read on one and the same pair $(\tilde P,\tilde Q)$, each with either element replaced by its conjugate, the two choices being independent, and they are pairwise distinct. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde P}\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde P^{*})$ and $\mathrm{Sc}(\tilde P\bar{\tilde Q})=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$.
+The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* are read on one and the same pair $(\tilde P,\tilde Q)$, each with either element replaced by its conjugate, the two choices being independent, and they are pairwise distinct. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde P}\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde P^{*})$ and $\mathrm{Sc}(\tilde P\bar{\tilde Q})=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$.
 
 The two conjugations in the slots separate the scalar part of a factor from its vector part,
 
@@ -241,17 +241,17 @@ $$
 \tilde P\tilde Q^{*}\pm\tilde P^{\natural}\tilde Q^{*}=2P_0\tilde Q^{*} \ \text{and}\ 2\mathbf P\tilde Q^{*} ,
 $$
 
-and the same identities hold for the vector parts. The ${}^{\natural}$ of the ${}^{\natural}$-product and the ${}^{*}$ of the ${}^{*}$-product return the same product with the slots exchanged, which is why the scalar parts of those two are symmetric and conjugate-symmetric respectively, while no one of the four products is commutative.
+and the same identities hold for the vector parts. The ${}^{\natural}$ of the ${}^{\natural}$-product and the ${}^{*}$ of the ${}^{*}$-product return the same product with the slots exchanged, which is why the scalar parts of those two are symmetric and conjugate-symmetric respectively, while no one of the four general products is commutative.
 
 The four scalar parts are related pairwise by the two splitting identities above; their sums and half-differences separate the scalar parts of the two factors from the vector part of the first. On the real quaternion subspace the complex conjugation is the identity, the star is the natural sign, and the four scalar parts collapse onto two pairs.
 
-The left multiplications of the four are the general plain bilinear ones read through the conjugations: $L^{\natural}_{\tilde P}=L_{\tilde P^{\natural}}$, $L^{*}_{\tilde P}=(\cdot)^{*}\circ R_{\tilde P^{*}}$ and $L^{\natural*}_{\tilde P}=(\cdot)^{*}\circ R_{\bar{\tilde P}}$, so the general plain bilinear and the ${}^{\natural}$-product have a monoid of left multiplications and the two sesquilinear ones do not. Which of the four is a multiplication in the sense of algebra is *Comparison Between the Four Biquaternion Products*.
+The left multiplications of the four are the general plain bilinear ones read through the conjugations: $L^{\natural}_{\tilde P}=L_{\tilde P^{\natural}}$, $L^{*}_{\tilde P}=(\cdot)^{*}\circ R_{\tilde P^{*}}$ and $L^{\natural*}_{\tilde P}=(\cdot)^{*}\circ R_{\bar{\tilde P}}$, so the general plain bilinear and the ${}^{\natural}$-product have a monoid of left multiplications and the two sesquilinear ones do not. Which of the four general products is a multiplication in the sense of algebra is *Comparison Between the Four General Products*.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\tilde P\tilde Q, \tilde P^{\natural}\tilde Q, \tilde P\tilde Q^{*}, \tilde P^{\natural}\tilde Q^{*}$ | the four products, defined in *The Four Biquaternion Complex Products* |
+| $\tilde P\tilde Q, \tilde P^{\natural}\tilde Q, \tilde P\tilde Q^{*}, \tilde P^{\natural}\tilde Q^{*}$ | the four general products, defined in *The Four General Products of the Biquaternion $\mathbb{C}$ Space* |
 | $\mathbf P$ | the vector part of $\tilde P$, $P_1e_1+P_2e_2+P_3e_3$, read as an element where it multiplies |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector, the signs of the first and of the fourth scalar parts |
 | $L_{\tilde P}$, $R_{\tilde P}$ | the left and right multiplications of the general plain bilinear product by $\tilde P$ |
@@ -260,6 +260,6 @@ The left multiplications of the four are the general plain bilinear ones read th
 
 ## Further Reading
 
-- *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the four definitions and their scalar–vector forms.
-- *Comparison Between the Four Biquaternion Products* (`articles_maths/comparison-between-the-four-biquaternion-products.md`), for the property table of the four.
+- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four definitions and their scalar–vector forms.
+- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the property table of the four.
 - *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.md`), for the left and right multiplications as operators.

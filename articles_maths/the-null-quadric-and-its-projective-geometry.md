@@ -4,7 +4,7 @@
 
 The general quaternionic bilinear form of the biquaternion algebra, $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_{\mu=0}^{3}P_\mu Q_\mu$, is non-degenerate, and a non-degenerate form in four variables has a projective geometry: its null set is a quadric. This article is that geometry. The quadric, the two rulings of its null planes, its polarity and its automorphism group are the projective reading of the form, and they sit beside the affine reading of the same form on the algebra and on the six distinguished real subspaces.
 
-The article is the companion of *The Isotropic Structure of the General Quaternionic Algebra*, which reads the same form affinely — the cone of real dimension $6$, its isotropic lines, its restrictions to the six subspaces — and of *Biquaternion Forms and Algebraic Norms*, which owns the form, its diagonal and the algebraic norm it polarises. The cone whose projectivisation is the quadric is studied as a topological space, with no form entering, in *The Topology of the Zero-Divisor Cone*; the real forms of the form and their signatures are *Biquaternion Norm and Invertibility*; the Lorentzian and conformal reading of the real slices is *Biquaternion Lorentzian and Conformal Geometry*; the algebra and its fixed-point subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*; and the classical groups that act are *Lie Groups*.
+The article is the companion of *The Isotropic Structure of the General Quaternionic Algebra*, which reads the same form affinely — the cone of real dimension $6$, its isotropic lines, its restrictions to the six subspaces — and of *The Four Pairings of the Biquaternion Algebra*, which owns the form and its diagonal. The cone whose projectivisation is the quadric is studied as a topological space, with no form entering, in *The Topology of the Zero-Divisor Cone*; the real forms of the form and their signatures are *Biquaternion Norm and Invertibility*; the Lorentzian and conformal reading of the real slices is *Biquaternion Lorentzian and Conformal Geometry*; the algebra and its fixed-point subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*; and the classical groups that act are *Lie Groups*.
 
 **Scope.** The article owns the Segre embedding of the two rulings into $\mathbb{P}^3$, the projective quadric $Q^2$ with its real points, the Klein–Plücker geometry of the lines of $\mathbb{P}^3$ in which $Q^2$ sits, the polarity and the tangency it induces, and the automorphism group of the complex quadric. No physics is invoked and no new result about the algebra is claimed.
 
@@ -78,7 +78,7 @@ $$
 
 is a smooth irreducible quadric surface, isomorphic to $\mathbb{P}^1\times\mathbb{P}^1$; it is the classical **Segre quadric**. Non-degeneracy of the form gives smoothness, and over $\mathbb{C}$ all smooth quadric surfaces in $\mathbb{P}^3$ are projectively equivalent.
 
-Its real points depend on the real form of the bilinear form (*Biquaternion Norm and Invertibility*, §*The Real Forms and Their Signatures*): empty for the definite form on $\mathbb{H}_{\mathbb{B}}$; the sphere $S^2$ for the Lorentzian form on $\mathbb{M}_+$ (or $\mathbb{M}_-$); the torus $S^1\times S^1$ for the split form of signature $(2,2)$. Only in the split case does the real quadric contain real lines.
+Its real points depend on the real form of the general quaternionic bilinear form (*Biquaternion Norm and Invertibility*, §*The Real Forms and Their Signatures*): empty for the definite form on $\mathbb{H}_{\mathbb{B}}$; the sphere $S^2$ for the Lorentzian form on $\mathbb{M}_+$ (or $\mathbb{M}_-$); the torus $S^1\times S^1$ for the split form of signature $(2,2)$. Only in the split case does the real quadric contain real lines.
 
 ## Lines in $\mathbb{P}^3$, the Klein Quadric and the Plücker Embedding
 
@@ -143,13 +143,13 @@ acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, wit
 - The two **rulings** are the two families of maximal isotropic null planes, each a $\mathbb{P}^1$; every quadric point lies on exactly one line of each family.
 - The quadric sits in the **Plücker–Klein geometry** of the lines of $\mathbb{P}^3$; its rulings are two conics on the Klein quadric in $\mathbb{P}^5$.
 - The **polarity** of the form gives the tangency: at a point of the quadric the polar hyperplane is the tangent hyperplane and its intersection with the quadric is the pair of ruling lines through the point.
-- $\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})$, its identity component preserving each ruling and the outer component swapping them; the real points of the quadric are empty, $S^2$ or $S^1\times S^1$ according to the real form of the bilinear form.
+- $\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})$, its identity component preserving each ruling and the outer component swapping them; the real points of the quadric are empty, $S^2$ or $S^1\times S^1$ according to the real form of the general quaternionic bilinear form.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\langle\tilde P,\tilde Q\rangle_{\natural} = \sum_\mu P_\mu Q_\mu$ | Bilinear form; polar form of the algebraic norm |
+| $\langle\tilde P,\tilde Q\rangle_{\natural} = \sum_\mu P_\mu Q_\mu$ | the general quaternionic bilinear form; polar form of the algebraic norm |
 | $Z_0,\dots,Z_3$ | Linear coordinates in which the form is $Z_0Z_3 - Z_1Z_2$ |
 | $\mathbb{P}(\mathcal{N}) = Q^2 \cong \mathbb{P}^1 \times \mathbb{P}^1$ | Projectivised null cone, the Segre quadric |
 | $s : \mathbb{P}^1 \times \mathbb{P}^1 \to \mathbb{P}^3$ | Segre embedding, $([u],[v]) \mapsto [\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta]$ |

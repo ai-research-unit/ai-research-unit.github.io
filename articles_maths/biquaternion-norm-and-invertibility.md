@@ -38,7 +38,7 @@ where $\tilde{Q}^{\natural}$ is the quaternion conjugate.
 
 $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu=0}^{3} Q_\mu^2$ is homogeneous of degree two, hence is a quadratic form on $\mathbb{B}\cong\mathbb{C}^4$. Its polar form is
 $$
-\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\tfrac{1}{2}\bigl(\langle\tilde{P}+\tilde{Q},\tilde{P}+\tilde{Q}\rangle_{\natural}-\langle\tilde{P},\tilde{P}\rangle_{\natural}-\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\bigr)=\sum_{\mu=0}^{3} P_\mu Q_\mu,
+B(\tilde{P},\tilde{Q})=\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\tfrac{1}{2}\bigl(\langle\tilde{P}+\tilde{Q},\tilde{P}+\tilde{Q}\rangle_{\natural}-\langle\tilde{P},\tilde{P}\rangle_{\natural}-\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\bigr)=\sum_{\mu=0}^{3} P_\mu Q_\mu,
 $$
 the complex bilinear dot product. It is symmetric and non-degenerate, and the quaternion units are orthonormal:
 $$

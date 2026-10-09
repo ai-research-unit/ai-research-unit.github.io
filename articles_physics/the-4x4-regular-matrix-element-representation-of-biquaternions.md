@@ -139,7 +139,7 @@ Q_3 & Q_2 & -Q_1 & Q_0
 \end{pmatrix}.
 $$
 
-**Proof.** The columns are the images $e_m\tilde{Q}$, expanded as in the left case with the factors in the opposite order. Alternatively, since $e_ke_j = -e_je_k$ for $j \neq k$, the matrix is the transpose of the left matrix conjugated by the fixed sign matrix $D$ of the next section, $\rho_R(\tilde{Q}) = D\,\rho_L(\tilde{Q})^{\mathsf{T}}D$, and computing the four products directly confirms the display.
+**Proof.** The columns are the images $e_m\tilde{Q}$, expanded as in the left case with the factors in the opposite order. Alternatively, since $e_ke_j = -e_je_k$ for $j \neq k$, the matrix is the transpose of the left matrix conjugated by the fixed sign matrix $D$ of the next section, $\rho_R(\tilde{Q}) = D\,\rho_L(\tilde{Q})^{\mathsf{T}}D$, and computing the four general products directly confirms the display.
 
 **Theorem (the right representation is an anti-homomorphism).** For all $\tilde{Q}, \tilde{R} \in \mathbb{B}$,
 

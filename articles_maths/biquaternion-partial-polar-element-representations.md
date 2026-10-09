@@ -209,10 +209,10 @@ $$
 The modulus is Hermitian positive and the second factor is unitary, so this is the matrix polar decomposition of the biquaternion: $\Phi(H)$ is the unique positive definite Hermitian square root of $\Phi(\tilde{Q})\Phi(\tilde{Q})^\dagger$ and $\Phi(U)$ is the unique unitary factor. Indeed
 
 $$
-\tilde{Q}\tilde{Q}^{*} = r^2B\hat{q}\hat{q}^\dagger B^\dagger = r^2B^2 = H^2 ,
+\tilde{Q}\tilde{Q}^{*} = r^2B\hat{q}\hat{q}^{*} B^{*} = r^2B^2 = H^2 ,
 $$
 
-using $\hat{q}\hat{q}^\dagger = e_0$, the Hermitian character of $B$ and $B^2 = S$, so $H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$ is the Hermitian positive square root, of norm $\langle H,H\rangle_{\natural} = r^2$.
+using $\hat{q}\hat{q}^{*} = e_0$, the Hermitian character of $B$ and $B^2 = S$, so $H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$ is the Hermitian positive square root, of norm $\langle H,H\rangle_{\natural} = r^2$.
 
 ### The Statement
 
@@ -365,10 +365,10 @@ has $\tan\Psi = \tfrac12(1+e_1+e_2-e_3)$, conjugate $\tfrac12(1-e_1-e_2+e_3)$, a
 For $\tilde{Q} = HU$ with $H$ Hermitian positive and $U$ unitary, Hermitian conjugation gives
 
 $$
-\tilde{Q}^{*} = U^\dagger H^\dagger = U^\dagger H = \big(U^\dagger HU\big)U^\dagger ,
+\tilde{Q}^{*} = U^{*} H^{*} = U^{*} H = \big(U^{*} HU\big)U^{*} ,
 $$
 
-so the Hermitian factor of $\tilde{Q}^{*}$ is the conjugate $U^\dagger HU$ of the original one and the unitary factor is $U^\dagger$. Both factors of the pair therefore change, and here the pairing itself changes: the Cartan pair of $\tilde{Q}^{*}$ is not a regrouping of the four factors of $\tilde{Q}$, because a Hermitian element and a unitary element multiplied in the other order is not the same element. The identity and the Hermiticity of $U^\dagger HU$ were checked to $3.2\times10^{-15}$ and $2.7\times10^{-15}$ over $400$ random pairs.
+so the Hermitian factor of $\tilde{Q}^{*}$ is the conjugate $U^{*} HU$ of the original one and the unitary factor is $U^{*}$. Both factors of the pair therefore change, and here the pairing itself changes: the Cartan pair of $\tilde{Q}^{*}$ is not a regrouping of the four factors of $\tilde{Q}$, because a Hermitian element and a unitary element multiplied in the other order is not the same element. The identity and the Hermiticity of $U^{*} HU$ were checked to $3.2\times10^{-15}$ and $2.7\times10^{-15}$ over $400$ random pairs.
 
 ### What the Comparison Shows
 
@@ -456,7 +456,7 @@ Take $\tilde{Q} = i$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = -1$, 
 
 The polar representation of a biquaternion has four factors, so it has exactly three pairings, and they are the Hamilton representation $R\exp(\xi\Theta)$ with $R = re^{i\alpha}$ and the exponential $B\hat{q}$, the complex representation $Q\exp(i\Psi)$ with $Q = r\hat{q}$ and the exponential $e^{i\alpha}\hat{q}^{-1}B\hat{q}$, and the Cartan representation $HU$ with $H = rB$ and $U = e^{i\alpha}\hat{q}$. Each is obtained from the polar representation by multiplying two factors together, with a conjugation when the rotor has to cross the boost, and each is unique within its domain once the branch of the square root of the biquaternion norm is fixed. The Hamilton representation needs the vector part non-null, the complex representation as constructed needs the real quaternion part invertible, and the Cartan representation needs only $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$; the three domains are not nested, the Cartan domain contains the other two, the union of the three is the complement of the null cone, and the only elements in none of the first two are the purely imaginary complex scalars. The four-factor representation is the reference because its domain is the complement of the null cone alone and because it separates the scale from the phase, from the rotor and from the boost, whereas each partial representation entangles the scale with one of the other three.
 
-The three named representations are also distinguished by their behaviour under the conjugations. On the Hamilton representation, quaternion conjugation and Hermitian conjugation reverse the axis and leave the angle, while complex conjugation conjugates the modulus, the axis and the angle; on the complex representation, complex conjugation flips only the scalar imaginary of the exponent, and quaternion conjugation and Hermitian conjugation exchange the order of the two factors, the angle being preserved exactly when the two quaternion parts of the element commute; on the Cartan representation, Hermitian conjugation replaces the pair $(H,U)$ by $(U^\dagger HU, U^\dagger)$. In the two degenerate limits the named representations reproduce the classical polar forms: a real quaternion gives the quaternion polar representation in the Hamilton representation, and a complex scalar gives the ordinary complex polar form in the complex representation. Two facts recorded in the Hamilton section belong to the representation rather than to the grouping: the polar form of $\tilde{Q}$ is not the polar form of $\exp(\tilde{Q})$, the two agreeing only when $R = e^{Q_0}$ and $\Theta = B$, and the three parameters are unique only up to the correlated replacements that the branch choices remove, the residue being the multivaluedness of the logarithm.
+The three named representations are also distinguished by their behaviour under the conjugations. On the Hamilton representation, quaternion conjugation and Hermitian conjugation reverse the axis and leave the angle, while complex conjugation conjugates the modulus, the axis and the angle; on the complex representation, complex conjugation flips only the scalar imaginary of the exponent, and quaternion conjugation and Hermitian conjugation exchange the order of the two factors, the angle being preserved exactly when the two quaternion parts of the element commute; on the Cartan representation, Hermitian conjugation replaces the pair $(H,U)$ by $(U^{*} HU, U^{*})$. In the two degenerate limits the named representations reproduce the classical polar forms: a real quaternion gives the quaternion polar representation in the Hamilton representation, and a complex scalar gives the ordinary complex polar form in the complex representation. Two facts recorded in the Hamilton section belong to the representation rather than to the grouping: the polar form of $\tilde{Q}$ is not the polar form of $\exp(\tilde{Q})$, the two agreeing only when $R = e^{Q_0}$ and $\Theta = B$, and the three parameters are unique only up to the correlated replacements that the branch choices remove, the residue being the multivaluedness of the logarithm.
 
 ## Summary of Notation
 
@@ -485,6 +485,6 @@ The three named representations are also distinguished by their behaviour under 
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the null cone on which all four representations fail.
 - *Quaternion Polar Element Representation* (`articles_maths/quaternion-polar-element-representation.md`), for the quaternion polar representation that the Hamilton representation generalises, and which the complex representation reduces to on the real quaternions.
 - *The 2×2 Matrix Element Representation of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-of-biquaternions.md`), for the identification of the Cartan representation with the matrix polar decomposition.
-- *The Lorentz Group in Biquaternionic Form* (`articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md`), for the Cartan representation $\tilde{\Lambda} = \tilde{B}\tilde{R}$ of the physics articles.
+- *The Lorentz Group in Biquaternionic Form — Structure and Representations* (`articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md`), for the Cartan representation $\tilde{\Lambda} = \tilde{B}\tilde{R}$ of the physics articles.
 - *Complex Polar Element Representation* (`articles_maths/complex-polar-element-representation.md`) and *Split-Complex Polar Element Representation* (`articles_maths/split-complex-polar-element-representation.md`), for the two-dimensional members of the series and the trichotomy of the exponential $\exp(\nu\theta)$ that all four factors of these pairings are built from.
 - S. J. Sangwine and E. Hitzer, "Polar decomposition of complexified quaternions and octonions", *Advances in Applied Clifford Algebras* (2020), DOI 10.1007/s00006-020-1048-y; technical report CES-535, University of Essex (2019), for Theorem 1 and Corollary 1, the published form of the Cartan pairing discussed in the section above.

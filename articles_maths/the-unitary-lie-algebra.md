@@ -154,7 +154,7 @@ Hence $\mathfrak{u}(\mathbb{H})$ is the space of the purely imaginary quaternion
 
 ### The Biquaternion Algebra
 
-For $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the skew-Hermitian subspace is the purely imaginary part of the biquaternions, a real Lie algebra under the commutator, and its structure, its relation to the two copies of the complex numbers and its comparison with the other antisymmetrisations of the biquaternion products are *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. That article is the worked case in which the closure, the bracket and the inner derivations of this article are computed on a basis of eight elements, and it is the case that pairs the biquaternion half of the corpus with the general theory above.
+For $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the skew-Hermitian subspace is the purely imaginary part of the biquaternions, a real Lie algebra under the commutator, and its structure, its relation to the two copies of the complex numbers and its comparison with the other antisymmetrisations of the biquaternion products are *The 12 Products of the Biquaternion Complex Space*. That article is the worked case in which the closure, the bracket and the inner derivations of this article are computed on a basis of eight elements, and it is the case that pairs the biquaternion half of the corpus with the general theory above.
 
 ## Summary
 

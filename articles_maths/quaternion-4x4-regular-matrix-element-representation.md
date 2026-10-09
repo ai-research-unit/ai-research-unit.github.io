@@ -56,7 +56,7 @@ $$
 \tilde q = 1+2e_1-e_2+3e_3
 $$
 
-the four products $\tilde qe_k$ are
+the four general products $\tilde qe_k$ are
 
 $$
 \tilde q e_0 = \tilde q, \quad \tilde q e_1 = -2+e_1+3e_2+e_3, \quad \tilde q e_2 = 1-3e_1+e_2+2e_3, \quad \tilde q e_3 = -3-e_1-2e_2+e_3,

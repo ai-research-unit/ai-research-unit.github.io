@@ -127,6 +127,10 @@ The form $H$ is positive definite on the algebra, so on the values of the operat
 
 **Remark (the pairing as a tensor).** The three arguments enter with the parities $\mathbb{C}$-linear, conjugate-linear, conjugate-linear, so the pairing is a tensor of the class $(\mathbb{C},\bar{\cdot},\bar{\cdot}\,)$ and not an invariant of a bracket; the maths article states the invariance that remains and its one-dimensionality (*The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*).
 
+**Reading (a three-amplitude invariant).** The pairing takes **three** amplitudes and returns a number; it is a relative invariant of the three, never of one. Read physically it is the algebraic form of a **three-point correlation of phases**: the object an interference term of three amplitudes would be assembled from, conjugate-linear in the last two entries because the phases being correlated are relative. As with the binary term, no process and no measure is derived; what the algebra supplies is the invariant, and the corpus's phase articles supply the processes that use it.
+
+**Where the positivity survives.** Positivity is the one thing the failing block keeps. The form $H$ is definite on the whole algebra, so on the values of the bracket it is definite too, and this is the exact sense in which **the form survives where the algebra does not**: the operation that raises no generators still carries a positive-definite length, and an interference vector therefore has a length even though it names no symmetry.
+
 ## Interference without a Lie Algebra
 
 ### The Reading
@@ -143,18 +147,19 @@ The same contrast, seen from the state side. The state side $\mathbb{M}_{+}$ car
 
 **What the operation does.**
 - Supplies the vector half of the sesquilinear amplitude, the phase and interference half of the pairing.
-- Carries the sesquilinear pairing $H(\tilde P\wedge_{*}\tilde Q,\tilde R)$, conjugate-linear in the last two slots.
-- Has positive-definite length on its values, since $H$ is definite on the algebra.
+- Carries the sesquilinear pairing $H(\tilde P\wedge_{*}\tilde Q,\tilde R)$, conjugate-linear in the last two slots, a relative invariant of three amplitudes.
+- Has positive-definite length on its values, since $H$ is definite on the algebra: the form survives where the algebra does not.
 
 **What the operation does not do.**
 - It is not a Lie bracket: the Jacobi identity fails at $(e_0,e_1,e_2)$ with the cyclic sum $e_3$.
 - It raises no symmetry algebra: no adjoint action, no exponential, no invariant Killing form.
 - Its invariant pairings are one-dimensional and do not include the invariance of $H$.
 - It is a pairing and not a generator, and it measures no phase.
+- It raises **no group** either: the groups that act on the state space are the internal action and the compact slice, both external to this operation.
 
 ## Summary
 
-The antisymmetric plain sesqualgebra **fails the Jacobi identity**: at the witness $(\tilde P,\tilde Q,\tilde R)=(e_0,e_1,e_2)$ the cyclic sum of the outer form is **$e_3$**, at the conjugated witness $(e_1,e_1,ie_2)$ it is $-2ie_2$, and the failure is generic (nonzero on $100$ of $100$ random triples). The reason is structural: the operation is conjugate-linear in its second slot, so a double bracket reintroduces the conjugation at the wrong place, and the antisymmetrised sesquilinear product is a Lie bracket only in the collapse case where the two involutions are trivial, that is only for a bilinear product. The operation is therefore **not the Lie algebra of any group** and raises no symmetry algebra, in exact contrast with the antisymmetric **plain** product $\tilde P\wedge\tilde Q=\mathbf P\times\mathbf Q$, which alternates, closes and gives the algebra of the rotations and the physical angular momentum. What survives is the **sesquilinear pairing** of the bracket, $H(\tilde P\wedge_{*}\tilde Q,\tilde R)=-P_0(\overline{\mathbf Q},\overline{\mathbf R})+\overline{Q_0}(\mathbf P,\overline{\mathbf R})-[\mathbf P,\overline{\mathbf Q},\overline{\mathbf R}]$, $\mathbb{C}$-linear in the first argument and conjugate-linear in the second and third, whose invariant forms are one-complex-dimensional and do not include the invariance of $H$; positivity does not fail, only the algebra does. The reading is that the phase structure of the framework carries a **pairing and no symmetry algebra**, which is the algebraic form of the physical fact that an interference term is a relational datum of two amplitudes and not an infinitesimal transformation; the state row supplies probabilities and phases and no generators, and the caution is that a failure of an identity is an obstruction of a construction and not a statement about the world.
+The antisymmetric plain sesqualgebra **fails the Jacobi identity**: at the witness $(\tilde P,\tilde Q,\tilde R)=(e_0,e_1,e_2)$ the cyclic sum of the outer form is **$e_3$**, at the conjugated witness $(e_1,e_1,ie_2)$ it is $-2ie_2$, and the failure is generic (nonzero on $100$ of $100$ random triples). The reason is structural: the operation is conjugate-linear in its second slot, so a double bracket reintroduces the conjugation at the wrong place, and the antisymmetrised sesquilinear product is a Lie bracket only in the collapse case where the two involutions are trivial, that is only for a bilinear product. The operation is therefore **not the Lie algebra of any group** and raises no symmetry algebra, in exact contrast with the antisymmetric **plain** product $\tilde P\wedge\tilde Q=\mathbf P\times\mathbf Q$, which alternates, closes and gives the algebra of the rotations and the physical angular momentum. What survives is the **sesquilinear pairing** of the bracket, $H(\tilde P\wedge_{*}\tilde Q,\tilde R)=-P_0(\overline{\mathbf Q},\overline{\mathbf R})+\overline{Q_0}(\mathbf P,\overline{\mathbf R})-[\mathbf P,\overline{\mathbf Q},\overline{\mathbf R}]$, $\mathbb{C}$-linear in the first argument and conjugate-linear in the second and third, a **relative invariant of three amplitudes** that reads as a three-point correlation of phases, whose invariant forms are one-complex-dimensional and do not include the invariance of $H$; positivity does not fail, only the algebra does, so the form survives where the algebra does not. The reading is that the phase structure of the framework carries a **pairing and no symmetry algebra**, which is the algebraic form of the physical fact that an interference term is a relational datum of two amplitudes and not an infinitesimal transformation; the state row supplies probabilities and phases and no generators, the groups acting on the state space being external to this operation, and the caution is that a failure of an identity is an obstruction of a construction and not a statement about the world.
 
 ## Summary of Notation
 
@@ -165,7 +170,7 @@ The antisymmetric plain sesqualgebra **fails the Jacobi identity**: at the witne
 | $\mathrm{cyc}\,\wedge_{*}(e_1,e_1,ie_2)=-2ie_2$ | the conjugated witness |
 | $(\tilde P,\tilde Q,\tilde R)=(e_0,e_1,e_2)$ | the witness of the Jacobi failure |
 | $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q$ | the closing bracket; alternates, Jacobi holds, gives $SO(3)$ |
-| $H(\tilde P\wedge_{*}\tilde Q,\tilde R)$ | the sesquilinear pairing of the bracket |
+| $H(\tilde P\wedge_{*}\tilde Q,\tilde R)$ | the sesquilinear pairing of the bracket; a relative invariant of three amplitudes |
 | $[\,\mathbf P,\mathbf Q,\mathbf R\,]=(\mathbf P\times\mathbf Q,\mathbf R)$ | the sesquilinear triple bracket |
 | $H(\tilde P\wedge_{*}\tilde Q,\tilde P\wedge_{*}\tilde Q)\ge0$ | the definite length on the values |
 | $\mathbb{M}_{+}$ | the state side; no generators raised from the pair |

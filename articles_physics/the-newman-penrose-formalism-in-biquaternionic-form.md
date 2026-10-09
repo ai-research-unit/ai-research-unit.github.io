@@ -4,7 +4,7 @@
 
 The Newman–Penrose formalism rewrites the local geometry of four-dimensional spacetime in a basis adapted to the light cone. In place of an orthonormal frame it uses a **null tetrad** $(l, n, m, \bar m)$: two real null vectors $l$ and $n$, and a complex-conjugate pair $m, \bar m$ that are also null. The ten independent components of the Weyl tensor become five complex scalars $\Psi_0, \dots, \Psi_4$; the connection becomes twelve complex **spin coefficients**; and the Petrov classification of the curvature is read off from which of the five scalars vanish. The formalism is the standard language of the algebraically special solutions of general relativity.
 
-This article places that formalism in the biquaternion framework of the read-list articles, and the placement is not an analogy. The primitive object of the Newman–Penrose construction is a null vector, and the primitive algebraic object of the framework is the **zero divisor**: in the material sector $\mathbb{M}_-$ the light cone *is* the zero-divisor cone, a nonzero null vector is a zero divisor of $\mathbb{B}$, and under the matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ it is a rank-one matrix (*The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *Biquaternion Topology*). Every leg of a Newman–Penrose tetrad is therefore a zero divisor of the algebra, and the tetrad itself is the image of a normalized spinor dyad under the framework's spinor bilinear. That identification is the centre of this article, and it is verified below rather than asserted.
+This article places that formalism in the biquaternion framework of the read-list articles, and the placement is not an analogy. The primitive object of the Newman–Penrose construction is a null vector, and the primitive algebraic object of the framework is the **zero divisor**: in the material sector $\mathbb{M}_-$ the light cone *is* the zero-divisor cone, a nonzero null vector is a zero divisor of $\mathbb{B}$, and under the matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ it is a rank-one matrix (*The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Topology of the Zero-Divisor Cone*). Every leg of a Newman–Penrose tetrad is therefore a zero divisor of the algebra, and the tetrad itself is the image of a normalized spinor dyad under the framework's spinor bilinear. That identification is the centre of this article, and it is verified below rather than asserted.
 
 Three claims organise the discussion.
 
@@ -19,7 +19,7 @@ The article closes by separating what the framework contains from what remains a
 The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $N(\tilde Q) = \tilde Q\tilde Q^{\natural}$. The material sector is $\mathbb{M}_- = \{iq_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 : q_\mu \in \mathbb{R}\}$, with four-vector coordinates $(q_0,q_1,q_2,q_3)$, and the bilinear (polar) form on it is
 
 $$
-\langle \tilde Q, \tilde P\rangle \;=\; \mathrm{Sc}\big(\tilde Q\tilde P^{\natural}\big) \;=\; -q_0p_0 + q_1p_1 + q_2p_2 + q_3p_3 ,
+\langle \tilde Q, \tilde P\rangle_{\natural} \;=\; \mathrm{Sc}\big(\tilde Q\tilde P^{\natural}\big) \;=\; -q_0p_0 + q_1p_1 + q_2p_2 + q_3p_3 ,
 $$
 
 of signature $(3,1)$ in the read list's counting — three positive directions and one negative. The matrix realization is the $\mathbb{C}$-algebra isomorphism
@@ -42,7 +42,7 @@ l\cdot m = l\cdot\bar m = n\cdot m = n\cdot\bar m = 0,
 \tag{1}
 $$
 
-where $\cdot$ is the bilinear form $\langle\cdot,\cdot\rangle$ of the material sector, extended $\mathbb{C}$-bilinearly to $\mathbb{C}\otimes_\mathbb{R}\mathbb{M}_-$. This is the normalization appropriate to the signature $(3,1)$ with $g = \mathrm{diag}(-1,+1,+1,+1)$ that the read list uses; with the opposite metrical convention one takes $l\cdot n = +1$ and $m\cdot\bar m = -1$. Fixed once here, the convention (1) is held throughout.
+where $\cdot$ is the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ of the material sector, the interval, extended $\mathbb{C}$-bilinearly to $\mathbb{C}\otimes_\mathbb{R}\mathbb{M}_-$. This is the normalization appropriate to the signature $(3,1)$ with $g = \mathrm{diag}(-1,+1,+1,+1)$ that the read list uses; with the opposite metrical convention one takes $l\cdot n = +1$ and $m\cdot\bar m = -1$. Fixed once here, the convention (1) is held throughout.
 
 Two features of (1) are worth naming because they are the source of most sign errors in this subject. First, the tetrad is **not** an orthonormal frame: its legs are null, so the metric in tetrad components is off-diagonal, and the completeness relation that inverts (1) carries the off-diagonal signs. Second, $l$ and $n$ are real four-vectors while $m$ and $\bar m$ are complex conjugates; the tetrad is a basis of the complexified material sector, of complex dimension four, not of the real $\mathbb{M}_-$.
 
@@ -101,7 +101,7 @@ $$
 
 The two real null directions are the two primitive idempotents, and the complex pair is the off-diagonal pair. The tetrad is the Peirce decomposition of the algebra read as a null frame: the "physical" content of the tetrad — two real null directions — is exactly the idempotent content of $\mathbb{B}$.
 
-The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q,\tilde P\rangle = \mathrm{Sc}(\tilde Q\tilde P^{\natural})$. Because $\bar q = p$ and $p^2=p$,
+The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q,\tilde P\rangle_{\natural} = \mathrm{Sc}(\tilde Q\tilde P^{\natural})$. Because $\bar q = p$ and $p^2=p$,
 
 $$
 \langle l,n\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(p\,\bar q) = -2\,\mathrm{Sc}(p^2) = -1 ,
@@ -127,7 +127,7 @@ The metric is off-diagonal because the basis is null; there is no orthonormal fr
 The tetrad is a complex basis of $\mathbb{B}$ as a four-dimensional complex vector space, and the coordinate metric is recovered from it by the completeness relation. Since the matrix $\eta$ in (5) squares to the identity, the expansion of an arbitrary element $\tilde{Q}\in\mathbb{B}$ in the tetrad is
 
 $$
-\tilde{Q} = -\langle \tilde{Q},l\rangle\,n - \langle \tilde{Q},n\rangle\,l + \langle \tilde{Q},m\rangle\,\bar m + \langle \tilde{Q},\bar m\rangle\,m ,
+\tilde{Q} = -\langle \tilde{Q},l\rangle_{\natural}\,n - \langle \tilde{Q},n\rangle_{\natural}\,l + \langle \tilde{Q},m\rangle_{\natural}\,\bar m + \langle \tilde{Q},\bar m\rangle_{\natural}\,m ,
 \tag{6}
 $$
 
@@ -140,7 +140,7 @@ $$
 
 Substituting (2), the right-hand side of (7) evaluates to $\mathrm{diag}(-1,+1,+1,+1)$: the four zero divisors reproduce the material-sector metric, with the correct signature, and no other input is used. Both (6) and (7) were recomputed symbolically; (6) was checked on a general element $\tilde{Q}$ with all four coefficients arbitrary, and (7) on the explicit legs.
 
-Equation (7) is the null-tetrad counterpart of the frame relation $g_{\mu\nu} = \langle\tilde E_\mu,\tilde E_\nu\rangle$ of the parent article. There the frame was orthonormal and its legs lay in $\mathbb{M}_-$; here the frame is null and complex, and its legs are zero divisors. At each point the two are related by the local Lorentz transformation that carries one basis to the other, so the parent's remark — that the algebra supplies the local Lorentz group and the home of the frame, but not the frame itself — applies here verbatim.
+Equation (7) is the null-tetrad counterpart of the frame relation $g_{\mu\nu} = \langle\tilde E_\mu,\tilde E_\nu\rangle_{\natural}$ of the parent article. There the frame was orthonormal and its legs lay in $\mathbb{M}_-$; here the frame is null and complex, and its legs are zero divisors. At each point the two are related by the local Lorentz transformation that carries one basis to the other, so the parent's remark — that the algebra supplies the local Lorentz group and the home of the frame, but not the frame itself — applies here verbatim.
 
 ## The Spinor Dyad Behind the Tetrad
 
@@ -170,7 +170,7 @@ The construction is not tied to the basis dyad. For any dyad with $\varepsilon(o
 
 ## Spin Coefficients
 
-The tetrad is a frame, and a connection is expressed in a frame through its coefficients. Suppose a linear connection $\nabla$ on the material sector is given, metric-compatible with $\langle\cdot,\cdot\rangle$; the parent article records that the algebra carries such a connection but does not select one. For tetrad legs $e_a,e_b,e_c$ define
+The tetrad is a frame, and a connection is expressed in a frame through its coefficients. Suppose a linear connection $\nabla$ on the material sector is given, metric-compatible with $\langle\cdot,\cdot\rangle_{\natural}$; the parent article records that the algebra carries such a connection but does not select one. For tetrad legs $e_a,e_b,e_c$ define
 
 $$
 \Gamma_{abc} := (\nabla_a e_b)\cdot e_c, \qquad \nabla_a := \nabla_{e_a}.
@@ -331,7 +331,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $\mathbb{H}_{\mathbb{B}}$ | real-quaternion subspace |
 | $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | biquaternion norm; $N(\tilde Q)=\det\Phi(\tilde Q)$ |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | scalar part and trace |
-| $\langle\tilde Q,\tilde P\rangle=\mathrm{Sc}(\tilde Q\tilde P^{\natural})$ | bilinear form on $\mathbb{M}_-$, signature $(3,1)$ |
+| $\langle\tilde Q,\tilde P\rangle_{\natural}=\mathrm{Sc}(\tilde Q\tilde P^{\natural})$ | the general quaternionic bilinear form on $\mathbb{M}_-$, the interval, of signature $(3,1)$ |
 | $\Phi$ | matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(e_k)=-i\sigma_k$ |
 | $S$, $\bar S$ | spinor module and its conjugate, $S\cong\mathbb{C}^2$ |
 | $\mathrm{Sym}^4 S$ | self-dual Weyl spinors, complex dimension $5$ |
@@ -356,7 +356,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 - *Linearized Gravity in Biquaternionic Form*, for the Weyl tensor and the self-dual and anti-self-dual bivectors recorded there as an open problem.
 - *Gravitational Waves in Biquaternionic Form*, for the null wave vector and the component count $10\to6\to2$ that the null tetrad is used to organise.
 - *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the spinor module $S$, the matrix units $p,q,x,y$, the symplectic form, and the left and right actions on which the dyad construction rests.
-- *Biquaternion Topology*, for the null cone as the zero-divisor cone, the rank-one description, and the factorization of null biquaternions into mixed spinors.
+- *The Null Quadric and Its Projective Geometry*, for the null cone as the zero-divisor cone, the rank-one description, and the factorization of null biquaternions into mixed spinors.
 - *Biquaternion Zero Divisors*, for the biquaternion-norm criterion and the classification of zero divisors used throughout.
 - *The Spinor-Helicity Formalism and Biquaternions*, for the factorization of a null momentum into a spinor bilinear, of which the null tetrad is the four-legged version.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, its biquaternion norm, and the identification of its null cone with the zero divisors.

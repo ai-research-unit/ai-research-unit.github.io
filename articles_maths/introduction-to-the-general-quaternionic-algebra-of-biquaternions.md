@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four products, defined side by side in *The Four Biquaternion Complex Products*. Read as a multiplication, the first of them makes that space an associative unital algebra, and that reading is *Introduction to the General Plain Algebra of Biquaternions*; the second is the **general quaternionic bilinear product** $\tilde P^{\natural}\tilde Q$, and it is the subject of this article. The name is the one of the four-products article: *complex* is the base ring, over which all four rules are written, and *quaternionic* marks the product whose first element is read through the natural conjugation ${}^{\natural}$, the $\mathbb{C}$-linear extension of the quaternionic conjugation. The word names a slot and not a base ring. The product is $\mathbb{C}$-bilinear and it is nothing more: it is not associative and it is unital on one side alone, so it is not the multiplication of an associative unital algebra, as the comparison of the four settles. What it defines is a multiplication in the weak sense of *Algebras: A General Introduction*, additive in each variable and linear over the commutative ring $\mathbb{C}$, and this article builds the algebra that this multiplication makes of $\mathbb{B}$.
+The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, defined side by side in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Read as a multiplication, the first of them makes that space an associative unital algebra, and that reading is *Introduction to the General Plain Algebra of Biquaternions*; the second is the **general quaternionic bilinear product** $\tilde P^{\natural}\tilde Q$, and it is the subject of this article. The name is the one of the four-general-products article: *complex* is the base ring, over which all four rules are written, and *quaternionic* marks the product whose first element is read through the natural conjugation ${}^{\natural}$, the $\mathbb{C}$-linear extension of the quaternionic conjugation. The word names a slot and not a base ring. The product is $\mathbb{C}$-bilinear and it is nothing more: it is not associative and it is unital on one side alone, so it is not the multiplication of an associative unital algebra, as the comparison of the four settles. What it defines is a multiplication in the weak sense of *Algebras: A General Introduction*, additive in each variable and linear over the commutative ring $\mathbb{C}$, and this article builds the algebra that this multiplication makes of $\mathbb{B}$.
 
 The construction is short and the consequences are of two kinds. The product is the plain multiplication with one conjugation inserted in the first slot, so the table is read off the quaternion table, bilinearity is immediate, and the failure of the axioms is decided by short computations on the basis; but the product is also the multiplication whose square of every element lands in the scalar line and whose symmetrisation is scalar. The article therefore has a negative half — the axioms the product fails, among them the three quaternionic scalar laws, which is where the base ring is fixed — and a positive half, in which the square, the idempotents, the nilpotents and the graded behaviour on the six distinguished subspaces are read off.
 
-The boundaries are stated at once. The product is not defined here: the coordinate rule and the four names are *The Four Biquaternion Complex Products*, the identities that link the four are *Relations Between the Four Biquaternion Products*, and their properties are compared in *Comparison Between the Four Biquaternion Products*. The same space read with the plain product is *Introduction to the General Plain Algebra of Biquaternions* and with the star in the second slot is *Introduction to the General Plain Sesqualgebra of Biquaternions*; the fourth product is *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The question of the base rings is *Biquaternions as an Algebra over $\mathbb{R}$*, and the centre is proved in *Introduction to the General Plain Algebra of Biquaternions*, §*The Scalars Are the Centre*; what is done here with the base ring is narrower and sharp: the three quaternionic scalar laws are tested on the product and the answer fixes the base at $\mathbb{C}$. The elements, the basis, the conjugations and the six distinguished subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*, *Introduction to the Six Subspaces*, *Decompositions Along the Six Subspaces* and *Comparison of the Six Subspaces*, and the span table of the plain product on the six is *The Six Subspaces and the Four Complex Products*; what is done here with the subspaces is narrower, the agreement with the plain product on the scalar line, the negated quaternion product on the vector part, and the $\mathbb{Z}/2$-grading that the real quaternion splitting gives to this multiplication. The general theory is *Algebras: A General Introduction*, associativity is *Associative Algebras*, the identity is *Unital Algebras*, the three weaker identities are *Non-Associative Algebras and the Property Ladder*, and the anti-automorphisms are *Opposite Algebras and Anti-Isomorphisms*. On the biquaternion side, the units and the invertibility criterion are read in the same article, the zero divisors are *Biquaternion Zero Divisors*, and the idempotents of the algebra are *Biquaternion Idempotents and Projections*.
+The boundaries are stated at once. The product is not defined here: the coordinate rule and the four names are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, the identities that link the four general products are *Relations Between the Four General Products*, and their properties are compared in *Comparison Between the Four General Products*. The same space read with the plain product is *Introduction to the General Plain Algebra of Biquaternions* and with the star in the second slot is *Introduction to the General Plain Sesqualgebra of Biquaternions*; the fourth product is *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The question of the base rings is *Biquaternions as an Algebra over $\mathbb{R}$*, and the centre is proved in *Introduction to the General Plain Algebra of Biquaternions*, §*The Scalars Are the Centre*; what is done here with the base ring is narrower and sharp: the three quaternionic scalar laws are tested on the product and the answer fixes the base at $\mathbb{C}$. The elements, the basis, the conjugations and the six distinguished subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*, *Introduction to the Six Subspaces*, *Decompositions Along the Six Subspaces* and *Comparison of the Six Subspaces*, and the span table of the plain product on the six is *The Six Subspaces and the Four General Products*; what is done here with the subspaces is narrower, the agreement with the plain product on the scalar line, the negated quaternion product on the vector part, and the $\mathbb{Z}/2$-grading that the real quaternion splitting gives to this multiplication. The general theory is *Algebras: A General Introduction*, associativity is *Associative Algebras*, the identity is *Unital Algebras*, the three weaker identities are *Non-Associative Algebras and the Property Ladder*, and the anti-automorphisms are *Opposite Algebras and Anti-Isomorphisms*. On the biquaternion side, the units and the invertibility criterion are read in the same article, the zero divisors are *Biquaternion Zero Divisors*, and the idempotents of the algebra are *Biquaternion Idempotents and Projections*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. Throughout, an element is written $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$, and $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and $\mathbf P\times\mathbf Q$ are the complex bilinear dot and cross products of the vector parts. The conjugations are the natural one ${}^{\natural}$, which keeps the scalar coordinate and negates the three vector coordinates, the coefficientwise one $\bar{\cdot}$, which conjugates the four coefficients, and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}={}^{\natural}\circ\bar{\cdot}$; the sign vector is $\varepsilon=(1,-1,-1,-1)$, so that $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$. The plain product is written $\tilde P\tilde Q$ and the product of this article is written $\star$, with
 
@@ -14,7 +14,7 @@ $$
 \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q
 $$
 
-throughout. The four products and their notation are those of *The Four Biquaternion Complex Products*.
+throughout. The four general products and their notation are those of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Multiplication as a Binary Operation
 
@@ -27,7 +27,7 @@ $$
 (\tilde P,\tilde Q)\longmapsto \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q=\sum_{\mu=0}^{3}\sum_{\nu=0}^{3}\varepsilon_\mu P_\mu Q_\nu\,e_\mu e_\nu ,
 $$
 
-the general quaternionic bilinear product of *The Four Biquaternion Complex Products*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_0,\dots,e_3$: the rule is a map into $\mathbb{B}$ and is well defined. On the four coordinates it reads
+the general quaternionic bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_0,\dots,e_3$: the rule is a map into $\mathbb{B}$ and is well defined. On the four coordinates it reads
 
 $$
 \tilde P\star\tilde Q=\bigl(P_0Q_0+P_1Q_1+P_2Q_2+P_3Q_3\bigr)
@@ -44,7 +44,7 @@ $$
 \tilde P\star\tilde Q=\bigl(P_0Q_0+(\mathbf P,\mathbf Q)\bigr)+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
 $$
 
-the coordinate display of the definition with the vector part of the first factor negated, which is what the conjugation ${}^{\natural}$ does to it; both displays are quoted from *The Four Biquaternion Complex Products*. The scalar part of the product is $\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_{\mu=0}^{3}P_\mu Q_\mu$, written on the coordinates of the two factors.
+the coordinate display of the definition with the vector part of the first factor negated, which is what the conjugation ${}^{\natural}$ does to it; both displays are quoted from *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. The scalar part of the product is $\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_{\mu=0}^{3}P_\mu Q_\mu$, written on the coordinates of the two factors.
 
 ### The Multiplication Table
 
@@ -133,7 +133,7 @@ the insertion of $\natural$ in the first slot being the isotope, and $\natural$ 
 
 **Proof.** The first display is the definition of the product: an isotope of a binary operation is the operation $(\tilde P,\tilde Q)\mapsto\varphi(\tilde P)\psi(\tilde Q)$ obtained by inserting a pair of bijections, here $\natural$ in the first slot and the identity in the second. The map $\natural$ is $\mathbb{C}$-linear, involutive and anti-multiplicative, $(\tilde P\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural}$ (*The Group of Involutions*, *Introduction to the General Plain Algebra of Biquaternions*), so it is an anti-automorphism, and it is its own inverse, hence bijective. $\square$
 
-**Remark.** The reading is worth keeping because it explains the failures at once. An isotope of an associative product is associative only when the inserted maps are compatible with the multiplication, and the anti-automorphism $\natural$ is the wrong way round; it is this reversal that produces the associator of the next section, the reversed composition of the left multiplications, and the failure of the quaternionic scalar laws. The two bilinear products of the four are therefore not two unrelated multiplications: one is the isotope of the other, and the comparison of the four records the same fact in its own words, the $\natural$-product being *the general plain bilinear product read with the $\mathbb{C}$-linear conjugation inserted in the first slot* (*Comparison Between the Four Biquaternion Products*).
+**Remark.** The reading is worth keeping because it explains the failures at once. An isotope of an associative product is associative only when the inserted maps are compatible with the multiplication, and the anti-automorphism $\natural$ is the wrong way round; it is this reversal that produces the associator of the next section, the reversed composition of the left multiplications, and the failure of the quaternionic scalar laws. The two bilinear products of the four are therefore not two unrelated multiplications: one is the isotope of the other, and the comparison of the four records the same fact in its own words, the $\natural$-product being *the general plain bilinear product read with the $\mathbb{C}$-linear conjugation inserted in the first slot* (*Comparison Between the Four General Products*).
 
 ## The Algebra Axioms
 
@@ -197,7 +197,7 @@ so they form a monoid anti-isomorphic to the multiplicative monoid of $\mathbb{B
 
 ### The Weaker Identities
 
-The three classical weakenings of associativity are settled by the witnesses already computed in *Comparison Between the Four Biquaternion Products*, and they are recalled here in the notation of this article.
+The three classical weakenings of associativity are settled by the witnesses already computed in *Comparison Between the Four General Products*, and they are recalled here in the notation of this article.
 
 **Proposition.** The multiplication is **not alternative**, **not flexible** and **not power associative**.
 
@@ -268,7 +268,7 @@ $$
 
 ## The Product on the Distinguished Subspaces
 
-The six distinguished subspaces and the exact span table of the plain product on them are *Introduction to the Six Subspaces*, *Comparison of the Six Subspaces* and *The Six Subspaces and the Four Complex Products*; this section records only the three facts that the conjugation in the first slot makes new for this multiplication, the value on the scalar line, the value on the vector part, and the grading.
+The six distinguished subspaces and the exact span table of the plain product on them are *Introduction to the Six Subspaces*, *Comparison of the Six Subspaces* and *The Six Subspaces and the Four General Products*; this section records only the three facts that the conjugation in the first slot makes new for this multiplication, the value on the scalar line, the value on the vector part, and the grading.
 
 ### The Scalar Line and the Vector Part
 
@@ -292,11 +292,11 @@ Let $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R
 
 **Remark.** The four inclusions say that the multiplication does not mix the two halves in the wrong way, and they hold for the same reason they hold for the plain product: the complex structure is an algebra automorphism for both products. On either half the multiplication has neither a two-sided unit nor associativity; on the even part its square is the sum of the squares of the real coordinates, which vanishes only at the origin, and the two halves are exchanged by the odd products.
 
-## The Position Among the Four Products
+## The Position Among the Four General Products
 
 ### The Identities That Link the Two Bilinear Products
 
-The identities of *Relations Between the Four Biquaternion Products* give the multiplication in terms of the plain one and of the scalar part of the first factor:
+The identities of *Relations Between the Four General Products* give the multiplication in terms of the plain one and of the scalar part of the first factor:
 
 $$
 \tilde P^{\natural}\tilde Q=2P_0\tilde Q-\tilde P\tilde Q , \qquad
@@ -308,7 +308,7 @@ The first display is the second identity solved for the $\natural$-product, and 
 
 ### Which of the Four Is a Multiplication
 
-The comparison of the four settles the question of the two-sided object at once: the two rows that name the categories read yes, yes, no, no for the bilinear kind and no, no, yes, yes for the sesquilinear one, the two bilinear products being the ones that define an algebra over $\mathbb{C}$ in the broad sense (*Comparison Between the Four Biquaternion Products*). Within the bilinear pair, **exactly one product is the multiplication of an associative unital algebra, and it is the plain product**: the $\natural$-product is $\mathbb{C}$-bilinear, not associative and unital on the left alone, which is the theorem of *Introduction to the General Plain Algebra of Biquaternions*.
+The comparison of the four settles the question of the two-sided object at once: the two rows that name the categories read yes, yes, no, no for the bilinear kind and no, no, yes, yes for the sesquilinear one, the two bilinear products being the ones that define an algebra over $\mathbb{C}$ in the broad sense (*Comparison Between the Four General Products*). Within the bilinear pair, **exactly one product is the multiplication of an associative unital algebra, and it is the plain product**: the $\natural$-product is $\mathbb{C}$-bilinear, not associative and unital on the left alone, which is the theorem of *Introduction to the General Plain Algebra of Biquaternions*.
 
 The sharper test of the *derived operation* of *Sesqualgebras* separates the pair in the same way and for the same reason. Let $\sigma(\tilde Y)=e_0\star\tilde Y$ be the first row of the product, as in the sibling article. Here $\sigma$ is the identity, since $\natural$ fixes $e_0$, so $\sigma$ is not conjugate-linear and condition (i) fails; and condition (ii), $\tilde P\star\tilde Q=\tilde P\sigma(\tilde Q)$, would read $\tilde P^{\natural}\tilde Q=\tilde P\tilde Q$, which fails at $\tilde P=e_1$ and $\tilde Q=e_0$. The $\natural$-product therefore fails both conditions, and it is not the derived operation of the algebra with an involution on either side; the correction it needs is not a conjugation in the second slot but the $\mathbb{C}$-linear conjugation inserted in the first, which is the isotope of §*The Product as the Plain Product with the Conjugation Inserted*.
 
@@ -316,7 +316,7 @@ The sharper test of the *derived operation* of *Sesqualgebras* separates the pai
 
 ## Summary
 
-The general quaternionic bilinear product $\tilde P^{\natural}\tilde Q$ of *The Four Biquaternion Complex Products*, read as a multiplication, is $\mathbb{C}$-bilinear and additive in each variable, and it is the isotope of the plain product determined by the natural conjugation in the first slot.
+The general quaternionic bilinear product $\tilde P^{\natural}\tilde Q$ of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, read as a multiplication, is $\mathbb{C}$-bilinear and additive in each variable, and it is the isotope of the plain product determined by the natural conjugation in the first slot.
 
 $$
 \boxed{\
@@ -354,9 +354,9 @@ Its table has $e_0$ on the diagonal, the identity row and the negated column, an
 - Nicolas Bourbaki, *Algebra I* (Springer, 1998), for algebras over a commutative ring, the module laws and the tensor product of algebras.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the isotopes and homotopes of an algebra, which is the reading of the $\natural$-product used in this article.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the anti-automorphisms of an algebra and the maps they insert in a product.
-- *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product, its coordinate rule and its scalar–vector form.
-- *Relations Between the Four Biquaternion Products* (`articles_maths/relations-between-the-four-biquaternion-products.md`), for the identities that link the four products, among them $\tilde P^{\natural}\tilde Q=2P_0\tilde Q-\tilde P\tilde Q$.
-- *Comparison Between the Four Biquaternion Products* (`articles_maths/comparison-between-the-four-biquaternion-products.md`), for the property table, the witnesses and the position of the product among the four.
+- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the product, its coordinate rule and its scalar–vector form.
+- *Relations Between the Four General Products* (`articles_maths/relations-between-the-four-general-products.md`), for the identities that link the four general products, among them $\tilde P^{\natural}\tilde Q=2P_0\tilde Q-\tilde P\tilde Q$.
+- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the property table, the witnesses and the position of the product among the four.
 - *Introduction to the General Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-biquaternions.md`), for the associative unital reading of the plain product, its centre and its presentation.
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the units and the invertibility criterion.
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the zero divisor cone, the two families of zero divisors and the idempotents that lie in it.

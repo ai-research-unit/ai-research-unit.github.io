@@ -29,8 +29,7 @@ definite form has no light cone, so $B$ cannot decide which events can influence
 is the sign that separates the material sector from the informational one, and that sign is the whole of
 its physical content.
 
-The algebra carries three other products, each read in its own block and compared in *The Four Products
-and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*; this article needs the
+The algebra carries three other products, each read in its own block and compared in *The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*; this article needs the
 ordinary one alone. The properties of $B$ — its symmetry, its non-degeneracy, its Gram matrix and its
 restriction to the six distinguished subspaces — are the mathematics of *The Four Pairings of the
 Biquaternion Algebra* and *The Six Subspaces under the General Plain Algebra of Biquaternions*, and are cited rather than
@@ -70,13 +69,13 @@ $$
 
 of signature $(-,+,+,+)$ on $\mathbb{M}_-$; its zero set is the light cone, its level set
 $N=-m^{2}c^{2}$ is the mass shell, and both are owned by *Biquaternion Norm and Invertibility*. The
-interval is the **general quaternionic bilinear form**, the scalar part of the second of the four products, and it
+interval is the **general quaternionic bilinear form**, the scalar part of the second of the four general products, and it
 is quoted here only to be kept apart from $B$. Two forms of opposite type sit on the same sector, and the
 rest of the article is about the one that does not carry the interval.
 
 ## The Ordinary Product Composes Material Operations
 
-The **ordinary product** $\tilde P\tilde Q$ is the multiplication of the algebra. Of the four products
+The **ordinary product** $\tilde P\tilde Q$ is the multiplication of the algebra. Of the four general products
 it is the only one that is associative and two-sidedly unital, so it is the product that makes
 $\mathbb{B}$ an associative unital algebra over $\mathbb{C}$; the others are built from it and from the
 conjugations. Its scalar part is the **general plain bilinear form** of this block,
@@ -103,6 +102,10 @@ its properties then carry their physical names.
 
 What is proved is the associativity, the unit and the non-commutativity; what is proposed is that they be
 read as the composition, the identity and the order of operations.
+
+**Proposed reading, labelled as such.** The order dependence has a sector signature. For two material
+operations the anticommutator is the informational half and the commutator the material one, so **the half
+of the composite that carries the order is the half that stays material**.
 
 ### The Commutator of Two Material Operations Is Material
 
@@ -160,6 +163,23 @@ sign of its diagonal that marks the sector, with no metric content at all.
 **Remark (verified).** On $100$ random elements of $\mathbb{M}_-$ the value $B(\tilde Q,\tilde Q)$ is
 real and strictly negative, and on $100$ random elements of $\mathbb{M}_+$ it is real and strictly
 positive; the Gram matrices on the two bases are exactly $-\mathrm{I}_4$ and $+\mathrm{I}_4$.
+
+**Proposed reading, labelled as such.** Under the composition the four material directions are
+**indistinguishable by sign**: $B(ie_0,ie_0)=B(e_k,e_k)=-1$, all four negative definite, so $B$ alone
+does not separate time from space. What separates them is **commutation**: $ie_0$ is central and the
+three $e_k$ are not, so **in the material sector time is the central direction and space is the vector
+directions**. The Lorentzian sign of the interval is carried by the quaternion conjugation $\natural$ instead, which
+fixes the central direction $e_0$ and reverses the three vector directions, so that $N(ie_0)=-1$ and
+$N(e_k)=+1$; time is the material direction that conjugation cannot see.
+
+**Proposed reading, labelled as such.** Write $\tilde P=\tilde P_-+\tilde P_+$ for the split of an
+element into its material and informational parts, $\tilde P_\pm\in\mathbb{M}_\pm$. On each sector $B$ is
+real; off them it is complex, and its imaginary part is exactly the pairing of the two sectors,
+$\mathrm{Im}\,B(\tilde P,\tilde Q)=\mathrm{Im}\,\mathrm{Sc}(\tilde P_-\tilde Q_++\tilde P_+\tilde Q_-)$,
+so $B$ is real exactly when the two elements lie in the same sector. Read physically, **a composition of
+like elements carries no imaginary part, and an imaginary part is the mark of a composition of a material
+operation with an informational state.** *Verified on $100$ random pairs, max deviation
+$8.9\times10^{-16}$.*
 
 ## The Sector Sign on the Six Subspaces
 
@@ -311,13 +331,16 @@ left and right multiplications commute, so the sandwich is their composition.
 geometry belongs to this block and to its quaternionic companion and not to the sesqualgebra; that the
 ordinary product is the **composition of material operations** and the sandwich the composition on both
 sides; and that a material field is split against a **reference state** rather than a material
-background. Each is the framework's naming of a proved algebraic fact and is labelled as such.
+background; that the imaginary part of the composition marks a material operation paired with an
+informational state; and that in the material sector time is the central direction and space the vector
+directions. Each is the framework's naming of a proved algebraic fact and
+is labelled as such.
 
 ## Summary
 
 The material sector $\mathbb{M}_-$ carries the four-vectors, an event being
 $\tilde T=ict\,e_0+x e_1+y e_2+z e_3$, and the ordinary product $\tilde P\tilde Q$ — the only one of the
-four products that is associative and two-sidedly unital — is read as the composition of two material
+four general products that is associative and two-sidedly unital — is read as the composition of two material
 operations. Its scalar part $B=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q$, the quaternion scalar product of the
 two elements, is negative definite on
 $\mathbb{M}_-$ with signature $(0,4)$ and positive definite on $\mathbb{M}_+$ with signature $(4,0)$:
@@ -377,7 +400,7 @@ distinctions are labelled throughout: what is proved is the algebra, what is pro
   sector and its own physics.
 - Companion article *Biquaternion Norm and Invertibility*, for the interval, the light cone and the mass
   shell.
-- Companion article *The Four Products and Their Physical Readings: the Two Algebras and the Two
-  Sesqualgebras*, for the comparison of the four products and the full restriction table.
+- Companion article *The Four General Products and Their Physical Readings: the Two Algebras and the Two
+  Sesqualgebras*, for the comparison of the four general products and the full restriction table.
 - Companion article *The Interval as the Square and the Charge of the Material Composition*, for the interval read as the
   square of a product.

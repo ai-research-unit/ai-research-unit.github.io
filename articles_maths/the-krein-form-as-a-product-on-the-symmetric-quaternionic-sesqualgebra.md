@@ -18,7 +18,7 @@ $$
 
 the **Krein form** of the corpus, and the vector part of the block is the mixed term alone. So the block is the form $K$ enlarged by one vector term: the map $\tilde Q\mapsto\tilde Q\star\tilde Q$ has real scalar part $K(\tilde Q,\tilde Q)$ and vector part $-2\mathrm{Re}(Q_0\overline{\mathbf{Q}})$, and the block is a product whose *values* carry $K$ as their scalar part and whose *scalar part* is $K$. That is the sense in which the form is a product: the form is the scalar component of a multiplication, and the multiplication is the smallest symmetric sesquilinear product whose scalar component is $K$.
 
-The form $K$ itself, its Gram matrices, its restrictions and its cone are *The Krein Gram Matrix and the Restrictions of the Form* and *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the four pairings of the algebra are *The Four Pairings of the Biquaternion Algebra*; the indefinite positivity of the algebra is *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*; the six subspaces are *The Six Subspaces under the General Quaternionic Sesqualgebra of Biquaternions*; the comparison of the four forms of the row is *Comparison Between the Four Biquaternion Products*; and the product whose scalar part is read here is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*. The invariance that does hold, the adjoint relation of the block, is used in *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
+The form $K$ itself, its Gram matrices, its restrictions and its cone are *The Krein Gram Matrix and the Restrictions of the Form* and *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the four pairings of the algebra are *The Four Pairings of the Biquaternion Algebra*; the indefinite positivity of the algebra is *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*; the six subspaces are *The Six Subspaces under the General Quaternionic Sesqualgebra of Biquaternions*; the comparison of the four forms of the row is *Comparison Between the Four General Products*; and the product whose scalar part is read here is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*. The invariance that does hold, the adjoint relation of the block, is used in *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
 
 **Conventions.** $\tilde Q=\sum_\mu Q_\mu e_\mu$; $\varepsilon=(1,-1,-1,-1)$; $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ is $\mathbb{C}$-linear in the first argument and $\bar{\cdot}$-semilinear in the second. The real basis is $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and the coefficient basis is $e_0,e_1,e_2,e_3$ over $\mathbb{C}$.
 
@@ -140,7 +140,7 @@ The two agree term by term: the natural conjugation sends $\overline{\tilde X}\t
 
 *Proof.* The two restrictions were computed in the table of §*The Restriction to the Six Subspaces*: on both, the coefficients are real up to the factor $i$ and the form reads $p_0q_0-\sum_kp_kq_k$, of signature $(1,3)$. $\square$
 
-**Theorem (the four scalar parts).** The four symmetric parts of the four biquaternion products have the scalar parts
+**Theorem (the four scalar parts).** The four symmetric parts of the four general products have the scalar parts
 
 $$
 \mathrm{Sc}(\mathrm{SPA}(\tilde P,\tilde Q))=P_0Q_0-(\mathbf{P},\mathbf{Q}),
@@ -156,9 +156,9 @@ $$
 
 The first two are the two symmetric bilinear forms of the algebra and the last two the two Hermitian forms, $H$ and $K$, of opposite sign in the vector term; on the real quaternion subspace $K$ coincides with the first bilinear form and $H$ with the second.
 
-*Proof.* The four scalar parts are the scalar parts of the four symmetric parts, written out product by product in *The Four Biquaternion Complex Products* and collected in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. On a real element the bar is the identity, so $K$ reads $p_0q_0-(p,q)$, the first bilinear form, and $H$ reads $p_0q_0+(p,q)$, the second. $\square$
+*Proof.* The four scalar parts are the scalar parts of the four symmetric parts, written out product by product in *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and collected in *The 12 Products of the Biquaternion Complex Space*. On a real element the bar is the identity, so $K$ reads $p_0q_0-(p,q)$, the first bilinear form, and $H$ reads $p_0q_0+(p,q)$, the second. $\square$
 
-**Remark (the comparison).** The two bilinear forms differ by the sign of the vector term, and so do the two Hermitian forms; the passage from the bilinear pair to the Hermitian pair is the passage from a symmetric bilinear product to a symmetric sesquilinear one, and $K$ is the Hermitian form whose vector term carries the negative sign. The four forms and their comparison are *Comparison Between the Four Biquaternion Products*; the two Hermitian forms are the two articles *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra* and the present one.
+**Remark (the comparison).** The two bilinear forms differ by the sign of the vector term, and so do the two Hermitian forms; the passage from the bilinear pair to the Hermitian pair is the passage from a symmetric bilinear product to a symmetric sesquilinear one, and $K$ is the Hermitian form whose vector term carries the negative sign. The four forms and their comparison are *Comparison Between the Four General Products*; the two Hermitian forms are the two articles *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra* and the present one.
 
 ## Worked Examples
 
@@ -198,5 +198,5 @@ The scalar part of the block is the Krein form $K(\tilde P,\tilde Q)=\mathrm{Sc}
 - *The Six Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the six subspaces and the restrictions of the forms.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product whose scalar part is the form.
 - *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the square-zero family, which lies inside the isotropic cone.
-- *Comparison Between the Four Biquaternion Products* (`articles_maths/comparison-between-the-four-biquaternion-products.md`), for the four scalar parts and their comparison.
+- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the four scalar parts and their comparison.
 - *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.md`), for the adjoint relation in operator form.

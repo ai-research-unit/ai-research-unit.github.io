@@ -83,8 +83,8 @@ $$
 The ordinary product is recovered from the two halves,
 $\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q$, and neither half determines the
 other: the symmetric half is one operation of the twelve, and the antisymmetric half is another. The
-pairing of the two halves is the pairing of the two bands of this family, and the comparison of the four
-products and their parts is *The Four Products and Their Physical Readings: the Two Algebras and the Two
+pairing of the two halves is the pairing of the two bands of this family, and the comparison of the four general
+products and their parts is *The Four General Products and Their Physical Readings: the Two Algebras and the Two
 Sesqualgebras*.
 
 ## The Operation and Its Class
@@ -134,6 +134,14 @@ the plain product with the off-diagonal vector entries $e_3,-e_3,e_2,-e_2,e_1,-e
 first row and column and the diagonal $e_0,-e_0,-e_0,-e_0$ are unchanged. The operation differs from the
 ordinary product only where the ordinary product is skew. This is *Introduction to the Symmetric Plain
 Algebra of Biquaternions*.
+
+**Proposed reading, labelled as such.** On the three vector units, $i,j\in\{1,2,3\}$, the table of the
+operation reads $\tfrac12(e_ie_j+e_je_i)=-\delta_{ij}e_0$, that is $\{e_i,e_j\}=-2\delta_{ij}e_0$; for
+two real pure vectors the symmetrised product is central,
+$\tfrac12(\mathbf P\mathbf Q+\mathbf Q\mathbf P)=-(\mathbf P\!\cdot\!\mathbf Q)\,e_0$. **The scalar part
+of the symmetrised composition is the scalar product of the two directions**, which is the
+anticommutation relation from which a Clifford algebra is built. *Verified on the basis and on $100$
+random real pure pairs, max deviation $4.4\times10^{-16}$.*
 
 ## The Square of an Element
 
@@ -192,7 +200,7 @@ algebra, and its classification among the special ones is *Special and Exception
 
 **Theorem (the uniqueness among the twelve).** Of the twelve operations
 $\mathrm{GPA},\mathrm{SPA},\mathrm{APA},\mathrm{GQA},\mathrm{SQA},\mathrm{AQA},\mathrm{GPS},\mathrm{SPS},\mathrm{APS},\mathrm{GQS},\mathrm{SQS},\mathrm{AQS}$
-of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the symmetrised plain product
+of *The 12 Products of the Biquaternion Complex Space*, the symmetrised plain product
 is the **only** one that is a **Jordan product**.
 
 *Proof.* The identity is put to the symmetrisations of the batch; the four general products are neither
@@ -200,7 +208,7 @@ symmetrisations nor antisymmetrisations, and the identity is not put to them. Of
 only the plain one satisfies it: the other three, $\mathrm{SQA}$, $\mathrm{SPS}$ and $\mathrm{SQS}$ (the
 symmetric parts of the quaternionic, the plain sesquilinear and the quaternionic sesquilinear products),
 fail on $x=y=e_1$, with the sides $0$ and $e_0$ for the first two and $-e_0$ and $e_0$ for the third
-(the table of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The plain product
+(the table of *The 12 Products of the Biquaternion Complex Space*). The plain product
 passes because it is the symmetrisation of the one associative product of the twelve. The identity was
 recomputed here for the plain one and failed for the neighbouring symmetric parts.
 
@@ -277,6 +285,14 @@ composition is order-free. The order of two operations is physically meaningful,
 article describes only the part of the composition on which the order does not act. Which physical
 operation an element represents is not selected by the algebra.
 
+**Proposed reading, labelled as such.** The symmetrised product of two anti-Hermitian elements is
+Hermitian: symmetrising two material operations leaves the material sector and lands in the observable
+one. Read physically, **the half of a composite an apparatus can register is its symmetrised half**, and
+the antisymmetrised half is the part that falls outside it, in the generator sector. The
+reading is about the destination of the symmetrised product and not about the law it satisfies; the bound
+above stands unchanged, and the Jordan identity remains a law of the algebra and not a statement about
+measurement.
+
 ## The Ledger
 
 **Proved.** The symmetrised plain product
@@ -292,8 +308,10 @@ commutator, so the material sector is not closed under the symmetrised product.
 
 **Readings.** That the symmetrised plain product is the **order-free composition of two material
 operations**; that the cross term it drops is exactly the order, which the antisymmetric band keeps; and
-that the order-free part of a material composite is informational. Each is the framework's naming of a
-proved algebraic fact and is labelled as such.
+that the order-free part of a material composite is informational; that the symmetrised half of a
+composite is the observable half; and that the table of the operation is the anticommutation relation of a
+Clifford algebra. Each is the framework's naming of a proved
+algebraic fact and is labelled as such.
 
 **Not claimed.** That the Jordan identity concerns measurement; that the order-free composition is the
 whole composition; that the operation carries a positivity, a state or a scale.
@@ -308,7 +326,7 @@ $\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q$. The symmetris
 $\mathbb{C}$-bilinear and commutative, $e_0$ is its unit on both sides, and it is not associative. Its
 square is the ordinary square and its product is the polarisation of that square, so the square map sees
 the symmetric half alone. It satisfies the Jordan identity, and it is the only Jordan product among the
-twelve operations of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; this makes
+twelve operations of *The 12 Products of the Biquaternion Complex Space*; this makes
 the biquaternion space a commutative unital **special Jordan algebra** over $\mathbb{C}$. The physical
 reading offered and labelled here is that the operation is the **order-free composition of two material
 operations**: on two material elements it is the Hermitian anticommutator, so the symmetrisation of two
@@ -342,7 +360,7 @@ order. The Jordan identity is a law of the algebra and not a statement about mea
   Algebra*, for the square, the quadratic identity, the idempotents and the norm of the block.
 - Mathematics article *Jordan Algebras* and *Special and Exceptional Jordan Algebras*, for the Jordan
   identity, the symmetrisation of an associative algebra and the special class.
-- Mathematics article *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the
+- Mathematics article *The 12 Products of the Biquaternion Complex Space*, for the
   twelve operations and the uniqueness of the Jordan and Jacobi laws.
 - Companion article *The Ordinary Product and the Material Sector*, for the ordinary product, its scalar
   form and the sector structure of a material composite.

@@ -181,7 +181,7 @@ The operators of the real biquaternion algebra are the left and right multiplica
 - *Real Forms of a Complex Lie Group and the Cartan Involution* (`articles_maths/real-forms-of-a-complex-lie-group-and-the-cartan-involution.md`), for the real forms and their involutions
 - *One-Sided Operators on a Clifford Algebra* (`articles_maths/one-sided-operators-on-a-clifford-algebra.md`) and *Two-Sided Operators on a Clifford Algebra* (`articles_maths/two-sided-operators-on-a-clifford-algebra.md`), for the general operator theories whose instance this article is
 - *The Unitary Group and the Hermitian Symmetric Space* (`articles_maths/the-unitary-group-and-the-hermitian-symmetric-space.md`), for $U(2)$ and the symmetric space of the decomposition
-- *The Krein Isometry Group and Its $J$-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for the indefinite operators of the Krein form
+- *The Krein Isometry Group and Its J-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for the indefinite operators of the Krein form
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the group of units and the invertibility criterion
 - Sigurdur Helgason, *Differential Geometry, Lie Groups and Symmetric Spaces*, Graduate Studies in Mathematics 34 (American Mathematical Society, 2001), for the Cartan involution, the Cartan decomposition and the symmetric space.
 - Anthony W. Knapp, *Lie Groups Beyond an Introduction*, Progress in Mathematics 140 (Birkhäuser, 2nd ed. 2002), for the maximal compact subgroups and the group decomposition of a reductive group.

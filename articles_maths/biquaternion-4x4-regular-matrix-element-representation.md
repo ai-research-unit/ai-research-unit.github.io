@@ -31,7 +31,7 @@ Q_3 & Q_2 & -Q_1 & Q_0
 \end{pmatrix}.
 $$
 
-**Proof.** The columns are the images $e_m \tilde{Q}$, and one expands as in the left case of *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* with the factors in the opposite order. Alternatively, since each $e_m$ is either $e_0$ or one of the $e_k$, and $e_k e_j = -e_j e_k$ for $j \neq k$, the matrix is the transpose of the left matrix conjugated by the fixed sign matrix of the next section, $\rho_R(\tilde{Q}) = D\,\rho_L(\tilde{Q})^{\mathsf T}D$, and direct computation of the four products confirms the display.
+**Proof.** The columns are the images $e_m \tilde{Q}$, and one expands as in the left case of *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* with the factors in the opposite order. Alternatively, since each $e_m$ is either $e_0$ or one of the $e_k$, and $e_k e_j = -e_j e_k$ for $j \neq k$, the matrix is the transpose of the left matrix conjugated by the fixed sign matrix of the next section, $\rho_R(\tilde{Q}) = D\,\rho_L(\tilde{Q})^{\mathsf T}D$, and direct computation of the four general products confirms the display.
 
 **Theorem (the right representation is an anti-homomorphism).** For all $\tilde{Q}, \tilde{R} \in \mathbb{B}$,
 

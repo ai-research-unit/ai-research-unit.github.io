@@ -3,9 +3,6 @@ The goal is not to focus only on "usual things" , the goal of the project is to 
 memory, very real 
 
 
-biquaternion-topology
-
-biquaternion-null-quadric-and-projective-geometry
 
 
 STRUCTURES ALGEBRIQUES QUADRATIQUES SCINDE DANS ALGEBRE
@@ -18,20 +15,17 @@ The algebra case has no antisymmetric diagonal, the sesqualgebra case has one an
 
 
 
+M₋ and M₊ are phase-free; every pairing there is symmetric.
+
+
+
+
+
+
 Physical interpretation of 
 
 
-
-DANS CHACUN DES 12
-
-I WOULD LIKE THE FOLLOWING STRUCTURE : Introduction (this article should contain the product, its vector expression, the scalar and vector part, the algebraic norm)
-
-intermediary articles
-
-article about representation 4x4
-article about representation 2x2
-article about 6 subspacess
-
+The strongest claim in the corpus is exact. The ternary-product failure is 480 of 1024 basis five-tuples, witness (e0, e1, e0, e2, e0) with sides e3 and −3e3. I enumerated all 1024 and got 480 failing, 544 holding. Exact.
 
 
 
@@ -50,8 +44,320 @@ The sandwich operator becomes the one action shared by Lorentz transformations, 
 
 
 
+Hi, can you read :
+
+1. The physics menu and the articles :
+
+Introduction to the Biquaternion Universe
+Conventions in the Biquaternion Universe
+The Quantum–Relativity Tension and the Biquaternion Framework
+The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras
+
+2. The maths sections called : 
+
+Biquaternions as a General Plain Algebra (GPA) over ℂ
+Biquaternions as a Symmetric Plain Algebra (SPA) over ℂ
+Biquaternions as an Antisymmetric Plain Algebra (APA) over ℂ
 
 
+The 12 Products of the Biquaternion Complex Space
+
+
+
+3. Its physics oriented current interpretation in the Biquaternion Universe ?
+
+
+Focus on the General Plain Algebra (GPA) of Biquaternions — Composition
+The Ordinary Product and the Material Sector
+Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell
+Focus on the Symmetric Plain Algebra (SPA) of Biquaternions — Anticommutation
+The Symmetrised Material Composition and the Jordan Identity
+Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition
+Focus on the Antisymmetric Plain Algebra (APA) of Biquaternions — Rotation
+The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity
+Angular Momentum and the Lie Algebra of the Material Sector
+
+
+
+Can you tell me the possible ideas to the physical interpretations ?
+
+The question is not "is this already in the corpus?" The question is: what are the possible physical readings these specific articles can carry.
+
+
+
+
+
+
+
+
+Hi, can you read :
+
+1. The physics menu and the articles :
+
+Introduction to the Biquaternion Universe
+Conventions in the Biquaternion Universe
+The Quantum–Relativity Tension and the Biquaternion Framework
+The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras
+
+2. The maths sections called : 
+
+Biquaternions as a General Quaternionic Algebra (GPA) over ℂ
+Biquaternions as a Symmetric Quaternionic Algebra (SPA) over ℂ
+Biquaternions as an Antisymmetric Quaternionic Algebra (APA) over ℂ
+
+
+The 12 Products of the Biquaternion Complex Space
+
+
+
+3. Its physics oriented current interpretation in the Biquaternion Universe ?
+
+Focus on the General Quaternionic Algebra (GQA) of Biquaternions — Causality
+The Interval as the Square and the Charge of the Material Composition
+Why the Material Composition Is Oriented and Cannot Measure
+Focus on the Symmetric Quaternionic Algebra (SQA) of Biquaternions — Coupling
+The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations
+Why a Central Product Cannot Compose: the Radical and the Isotropic Elements
+Focus on the Antisymmetric Quaternionic Algebra (AQA) of Biquaternions — Obstruction
+The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator
+Boosts, Mixed Terms and the Missing Lie Structure
+
+
+
+Can you tell me the possible ideas to the physical interpretations ?
+
+The question is not "is this already in the corpus?" The question is: what are the possible physical readings these specific articles can carry.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hi, can you read :
+
+1. The physics menu and the articles :
+
+Introduction to the Biquaternion Universe
+Conventions in the Biquaternion Universe
+The Quantum–Relativity Tension and the Biquaternion Framework
+The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras
+
+2. The maths sections called : 
+
+Biquaternions as a General Quaternionic Algebra (GPA) over ℂ
+Biquaternions as a Symmetric Quaternionic Algebra (SPA) over ℂ
+Biquaternions as an Antisymmetric Quaternionic Algebra (APA) over ℂ
+
+
+The 12 Products of the Biquaternion Complex Space
+
+
+
+3. Its physics oriented current interpretation in the Biquaternion Universe ?
+
+Focus on the General Quaternionic Algebra (GQA) of Biquaternions — Causality
+The Interval as the Square and the Charge of the Material Composition
+Why the Material Composition Is Oriented and Cannot Measure
+Focus on the Symmetric Quaternionic Algebra (SQA) of Biquaternions — Coupling
+The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations
+Why a Central Product Cannot Compose: the Radical and the Isotropic Elements
+Focus on the Antisymmetric Quaternionic Algebra (AQA) of Biquaternions — Obstruction
+The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator
+Boosts, Mixed Terms and the Missing Lie Structure
+
+
+
+Can you tell me the possible ideas to the physical interpretations ?
+
+The question is not "is this already in the corpus?" The question is: what are the possible physical readings these specific articles can carry.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hi, can you read :
+
+1. The physics menu and the articles :
+
+Introduction to the Biquaternion Universe
+Conventions in the Biquaternion Universe
+The Quantum–Relativity Tension and the Biquaternion Framework
+The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras
+
+2. The maths sections called : 
+
+Biquaternions as a General Plain Sesqualgebra (GPS) over ℂ
+Biquaternions as a Symmetric Plain Sesqualgebra (SPS) over ℂ
+Biquaternions as an Antisymmetric Plain Sesqualgebra (APS) over ℂ
+
+The 12 Products of the Biquaternion Complex Space
+
+
+
+3. Its physics oriented current interpretation in the Biquaternion Universe ?
+
+Focus on the General Plain Sesqualgebra (GPS) of Biquaternions — Probability
+Mass, Rank and the Positivity of the Dagger
+Observables, Gauge Generators and the Chirality of the Internal Action
+Particle Types, Discrete Charge and Three-Particle Couplings
+Focus on the Symmetric Plain Sesqualgebra (SPS) of Biquaternions — Positivity
+The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing
+Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone
+Focus on the Antisymmetric Plain Sesqualgebra (APS) of Biquaternions — Phase
+The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product
+Interference without a Lie Algebra: the Jacobi Failure in the State Space
+
+
+Can you tell me the possible ideas to the physical interpretations ?
+
+The question is not "is this already in the corpus?" The question is: what are the possible physical readings these specific articles can carry.
+
+
+
+NO I REJECT YOUR ANALYSIS. YOU SAY MANY THINGS ARE ALREADY IN THE ARTICLES . EVEN IF IT IS TRUE, IT IS FAR FROM OBVIOUS : SO THIS SHOULD BE ADDED
+
+
+REWRITE YOUR SUGGESTION AND ADD THE EQUIVALENT THINGS EXCEPT IF THERE ARE EXTREMELY OBVIOUS.  THE INTERESTING PHYSICS IDES SHOULD BE INCLUDED EVENT IF EQUIVALENT, PROVIDED THEIR NAME IS A LITTLE BIT DIFFERENT. ALSO IT'S IMPORTANT TO ENRICH THE ARTICLES.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hi, can you read :
+
+1. The physics menu and the articles :
+
+Introduction to the Biquaternion Universe
+Conventions in the Biquaternion Universe
+The Quantum–Relativity Tension and the Biquaternion Framework
+The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras
+
+2. The maths sections called : 
+
+
+Biquaternions as a General Quaternionic Sesqualgebra (GQS) over ℂ
+Biquaternions as a Symmetric Quaternionic Sesqualgebra (SQS) over ℂ
+Biquaternions as an Antisymmetric Quaternionic Sesqualgebra (AQS) over C
+
+The 12 Products of the Biquaternion Complex Space
+
+
+
+3. Its physics oriented current interpretation in the Biquaternion Universe ?
+
+Focus on the General Quaternionic Sesqualgebra (GQS) of Biquaternions — Gauge
+The Fourth Product and Its Indefinite Metric
+The States the Indefinite Metric Cannot Normalise
+Why the Fourth Product Is a Gauge Structure and Not a State Space
+Focus on the Symmetric Quaternionic Sesqualgebra (SQS) of Biquaternions — Metric
+The Gauge Metric as a Product: the Symmetric Quaternionic Sesquilinear Product
+Values in No Subspace: Why the Symmetric Gauge Product Is Not a State
+Focus on the Antisymmetric Quaternionic Sesqualgebra (AQS) of Biquaternions — Polarisation
+The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product
+A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure
+
+Can you tell me the possible ideas to the physical interpretations ?
+
+The question is not "is this already in the corpus?" The question is: what are the possible physical readings these specific articles can carry.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hi, can you read :
+
+1. The physics menu and the articles :
+
+Introduction to the Biquaternion Universe
+Conventions in the Biquaternion Universe
+The Quantum–Relativity Tension and the Biquaternion Framework
+
+
+
+2. The physics articles of the category :
+Biquaternion Mathematical Physics
+
+
+Can you check the global consistency of the category Biquaternion Mathematical Physics ?
+
+Can you elaborate on physical interpretations ?
+
+The question is not "is this already in the corpus?" The question is: what are the possible physical readings these specific articles of the head categories can carry (The biquaternion universe and the mathematical physics). They may be new or in other articles of the corpus.
+
+Some ideas may be very close, they could be added both. Only in case 2 ideas are OBVIOUSLY equivalent should they not be added both. 
+
+
+
+
+
+The question is not "is this already in the corpus?" The question is: what are the possible physical readings these specific articles can carry (The biquaternion universe and the mathematical physics). They may be new or in other articles of the corpus.
+
+The question is not "is this already in the corpus?" The question is: what are the possible physical readings these specific articles can carry (The biquaternion universe and the mathematical physics). They may be new or in other articles of the corpus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+​
+ 
 
 
 
@@ -59,63 +365,12 @@ The sandwich operator becomes the one action shared by Lorentz transformations, 
 
 
 The biquaternion algebra IS a Krein space,
-with the Hermitian form 
-[
-Q
-,
-Q
-′
-]
-=
-S
-c
-(
-Q
-∗
-Q
-′
-)
-and fundamental symmetry 
-J
-=
-quaternion conjugate.
-This is a different structure from the Lorentz one,
-which uses the bilinear form 
-N
-.
-On the material sector they agree up to sign: 
-[
-T
-,
-T
-]
-=
-−
-N
-(
-T
-,
-T
-)
-.
-So: two forms, two structures, one algebra.
-The biquaternion algebra IS a Krein space,
-with the Hermitian form [Q,Q 
-′
- ]=Sc(Q 
-∗
- Q 
-′
- )
+with the Hermitian form [Q,Q′]=Sc(Q∗Q′)
 and fundamental symmetry J=quaternion conjugate.
 This is a different structure from the Lorentz one,
 which uses the bilinear form N.
 On the material sector they agree up to sign: [T,T]=−N(T,T).
 So: two forms, two structures, one algebra.
-​
- 
-​
- 
 
 
 
@@ -124,190 +379,15 @@ So: two forms, two structures, one algebra.
 
 
 
-Sandwich: 
-Q
-~
-↦
-Λ
-Q
-~
-Λ
-†
-.
-Rotation rotor 
-q
-=
-cos
-⁡
-θ
-2
-+
-sin
-⁡
-θ
-2
- 
-e
-3
-⇒
-x
-′
-=
-x
-cos
-⁡
-θ
-−
-y
-sin
-⁡
-θ
-,
-  
-y
-′
-=
-x
-sin
-⁡
-θ
-+
-y
-cos
-⁡
-θ
-.
-Boost rotor 
-B
-=
-cosh
-⁡
-ψ
-2
-+
-i
-sinh
-⁡
-ψ
-2
- 
-e
-3
-⇒
-c
-t
-′
-=
-c
-t
-cosh
-⁡
-ψ
-−
-z
-sinh
-⁡
-ψ
-,
-  
-z
-′
-=
-z
-cosh
-⁡
-ψ
-−
-c
-t
-sinh
-⁡
-ψ
-.
-Both rotors satisfy 
-N
-(
-Λ
-)
-=
-1.
-That condition is what makes the sandwich preserve
-the interval 
-(
-i
-c
-t
-)
-2
-+
-x
-2
-+
-y
-2
-+
-z
-2
-.
-Half-angle in rotor, full angle in transformation: double cover.
-Sandwich:  
-Q
-​
- ↦Λ 
-Q
-​
- Λ 
-†
- .
-Rotation rotor q=cos 
-2
-θ
-​
- +sin 
-2
-θ
-​
- e 
-3
-​
- 
-⇒x 
-′
- =xcosθ−ysinθ,y 
-′
- =xsinθ+ycosθ.
-Boost rotor B=cosh 
-2
-ψ
-​
- +isinh 
-2
-ψ
-​
- e 
-3
-​
- 
-⇒ct 
-′
- =ctcoshψ−zsinhψ,z 
-′
- =zcoshψ−ctsinhψ.
+Sandwich: Q~ ↦ ΛQ~Λ†.
+Rotation rotor q=cos θ/2 + sin θ/2 e3 ⇒ x′=x cos θ − y sin θ, y′=x sin θ + y cos θ.
+Boost rotor B=cosh ψ/2 + i sinh ψ/2 e3 ⇒ ct′=ct cosh ψ − z sinh ψ, z′=z cosh ψ − ct sinh ψ.
 Both rotors satisfy N(Λ)=1.
-That condition is what makes the sandwich preserve
-the interval (ict) 
-2
- +x 
-2
- +y 
-2
- +z 
-2
- .
+That condition is what makes the sandwich preserve the interval (ict)²+x²+y²+z².
 Half-angle in rotor, full angle in transformation: double cover.
-​
- 
-​
+
+
+
  
 
 
@@ -6509,7 +6589,7 @@ So yes: the vector parts have meaning and use. They are not redundant with the s
 
 
 
-Mathematically the vector parts are what turn the four forms into the four products:
+Mathematically the vector parts are what turn the four forms into the four general products:
 they carry the Lie structure, the adjoint representation, and a cubic invariant the
 scalar parts cannot see. Physically, each scalar part is a charge-like quantity
 (an invariant, a density) and its vector part is the matching current-like quantity
@@ -6684,7 +6764,7 @@ WHY IT MATTERS
    The scalar part Sc is the Jordan trace form of the algebra: it is the
    symmetric bilinear form that the Jordan product ∙ induces, and it coincides
    with the scalar part of the associative product. So the "charge-like"
-   pairing of the four-products article is exactly the Jordan trace form, not
+   pairing of the four-general-products article is exactly the Jordan trace form, not
    an extra structure layered on top.
 
 2. The vector part is where the antisymmetry lives.
@@ -6704,9 +6784,9 @@ WHY IT MATTERS
    the form; the antisymmetric part is the Lie bracket, which lives entirely in
    the vector part.
 
-3. It ties the four-products article to the Jordan-algebraic reading.
+3. It ties the four-general-products article to the Jordan-algebraic reading.
 
-   The scalar parts of the four products are the four forms (symmetric or
+   The scalar parts of the four general products are the four forms (symmetric or
    Hermitian). The plain product's scalar part is in particular the Jordan
    trace form of the Jordan product ∙. So the "form = charge" row of the
    physics reading is not an analogy: it is the statement that the charge

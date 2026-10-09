@@ -6,7 +6,7 @@ This article treats the biquaternions as a **complex vector space**: the set of 
 
 $\mathbb{B}$ carries its product as well, and the product makes it an algebra. That reading, with the product taken as the multiplication, is *Introduction to the General Plain Algebra of Biquaternions*; here the product is used only to say that the scalar action is compatible with it. The four conjugations and the group they generate are *The Group of Involutions*.
 
-The treatment is elementary and self-contained: every claim is either proved or stated as a definition, and no physics is invoked. The anti-Hermitian subspace is defined algebraically. No form appears in this article; the Hermitian form and the inner product are *Biquaternion Norm and Invertibility*. The product of the algebra — its definition, its two scalar–vector parts, and the dot and cross products they are built from — is *The Four Biquaternion Complex Products*, and it is used here as given.
+The treatment is elementary and self-contained: every claim is either proved or stated as a definition, and no physics is invoked. The anti-Hermitian subspace is defined algebraically. No form appears in this article; the Hermitian form and the inner product are *Biquaternion Norm and Invertibility*. The product of the algebra — its definition, its two scalar–vector parts, and the dot and cross products they are built from — is *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and it is used here as given.
 
 The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, together with its basis, its multiplication and its conjugation. No facts about $\mathbb{H}$ are restated here.
 
@@ -20,7 +20,7 @@ $$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H},
 $$
 
-read here as a $\mathbb{C}$-vector space: an additive group with a scalar multiplication by the complex numbers. It is therefore **four-dimensional** over $\mathbb{C}$, with complex basis $\{e_0, e_1, e_2, e_3\}$. It also carries its product, the one defined and studied in *The Four Biquaternion Complex Products*; the product is $\mathbb{C}$-bilinear, so the scalars may be moved through it, and it makes $\mathbb{B}$ an algebra over $\mathbb{C}$, a reading developed in *Introduction to the General Plain Algebra of Biquaternions*. Its centre is the scalar line $\mathbb{C}e_0$, spanned over $\mathbb{R}$ by $e_0$ and $ie_0$, and it is one of the six distinguished real subspaces of the group.
+read here as a $\mathbb{C}$-vector space: an additive group with a scalar multiplication by the complex numbers. It is therefore **four-dimensional** over $\mathbb{C}$, with complex basis $\{e_0, e_1, e_2, e_3\}$. It also carries its product, the one defined and studied in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*; the product is $\mathbb{C}$-bilinear, so the scalars may be moved through it, and it makes $\mathbb{B}$ an algebra over $\mathbb{C}$, a reading developed in *Introduction to the General Plain Algebra of Biquaternions*. Its centre is the scalar line $\mathbb{C}e_0$, spanned over $\mathbb{R}$ by $e_0$ and $ie_0$, and it is one of the six distinguished real subspaces of the group.
 
 ### Developed Form
 

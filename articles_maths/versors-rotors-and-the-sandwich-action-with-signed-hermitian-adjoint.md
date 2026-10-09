@@ -23,7 +23,7 @@ with $\varepsilon_x=(-1)^{|x|}$ the parity sign and $\sigma$ the involution of t
 
 The theory of versors, of the Lipschitz group, of the rotor group and of the double cover is *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*; the dagger, the slice and the compact real form are *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the operator and its action on $V$ are *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the Hermitian module and the adjoint of the Clifford action are *The Adjoint of the One-Sided Action with Hermitian Adjoint*; the biquaternion dictionary is *Biquaternion Versors and the Orthogonal Group* in the physics corpus. Nothing owned by those entries is reproved.
 
-**Conventions.** The coefficient involution $\sigma$ is assumed **compatible** with the form, $\sigma(q(v))=q(\sigma(v))$, so that it preserves the subspace $V$ and the quadratic form, as in the Hermitian theory of *Involutive Clifford Algebras*. $N(x)=x x^{\natural}$ is the Clifford norm, $\Gamma(V,q)$ the Clifford group, $U$ the unitary slice, $\varepsilon_x=(-1)^{|x|}$, and $x^{\dagger}=\sigma(\alpha(x^{r}))$.
+**Conventions.** The coefficient involution $\sigma$ is assumed **compatible** with the form, $\sigma(q(v))=q(\sigma(v))$, so that it preserves the subspace $V$ and the quadratic form, as in the Hermitian theory of *Hermitian Clifford Algebras*. $N(x)=x x^{\natural}$ is the Clifford norm, $\Gamma(V,q)$ the Clifford group, $U$ the unitary slice, $\varepsilon_x=(-1)^{|x|}$, and $x^{\dagger}=\sigma(\alpha(x^{r}))$.
 
 ## Versors and the Hermitian Adjoint
 

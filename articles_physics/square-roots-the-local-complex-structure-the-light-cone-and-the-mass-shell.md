@@ -13,7 +13,7 @@ carries is decided by the subspace of the algebra in which the root is sought.
 
 The square is the **ordinary** square, the multiplication of the algebra's own product, which is the
 product of composition. The square roots for the other three products are different sets and are compared
-side by side in the mathematics article *Comparison Between the Four Biquaternion Products*; this article
+side by side in the mathematics article *Comparison Between the Four General Products*; this article
 needs the ordinary one. The classifications themselves — of $-1$, $0$ and $+1$, and of the general element
 — are the mathematics of *Biquaternion Square Roots of Minus One, Zero and Plus One* and *Biquaternion
 Square Roots of a General Element*, found from the vector–scalar split and free of any Clifford
@@ -89,6 +89,11 @@ $i$. The physics of the reading — the local complex structure fixing the propa
 the speed of light of the patch — is owned by *The Local Complex Structure and the Speed of Light*, where
 the sphere $S^{2}$ is the set of local frames a field can be referred to.
 
+**Proposed reading, labelled as such.** In the material sector the root set splits into the pair
+$\pm ie_0$, which commutes with everything, and the sphere of real unit vectors, which do not. **Time is
+the central direction and space is the sphere of spatial roots**, so the split of the root set is the
+algebraic form of the inertial frame: one global time direction and a sphere of spatial orientations.
+
 ## The Roots of $0$: the Light Cone and Lightlike Propagation
 
 For $\tilde P^{2}=0$ the branches give the trivial root and the pure null elements,
@@ -145,6 +150,12 @@ Biquaternionic Form*, where the antilinear structures are read as the particle k
 the **linear** companion of that structure — an element $J$ with $J^{2}=e_0$ — and the Hermitian roots of
 the informational sector are the reflections $i\hat\mu=2\tilde\Pi-e_0$. The classification proved here
 is only that the roots of $+1$ are $\pm e_0$ together with the pure elements of complex square $-1$.
+
+**Proposed reading, speculative and labelled as such.** Offered as a speculation, **the involutions are
+the discrete symmetries** — parity, time reversal and charge conjugation act as involutions of the state
+space — with the sign $J^{2}=\pm1$ for the real-versus-quaternionic type. *Not claimed:* that $P$, $T$ or
+$C$ is derived here; charge conjugation and the discrete symmetries are owned by *Charge Conjugation and
+the Division Ring in Biquaternionic Form*.
 
 ## The Three Answers in One Table
 
@@ -235,6 +246,11 @@ classification returns four, a continuum, four and two roots respectively, and e
 radicand; the rootless case is met only on the nonzero nilpotents such as $e_1+ie_2$, and never inside
 $\mathbb{M}_-$.
 
+**Proposed reading, labelled as such.** Read physically, **the material sector is the sector of the
+composite**: every material four-vector is the square of some element, and the refusal is confined to the
+null elements of the vector subspace, such as $e_1+ie_2$, which lie in neither sector. *What is proved is
+the corollary; the words "composite" and "refusal" are the reading.*
+
 ## The Mass Shell as a Slice of the Square Map
 
 The square-root problem is the problem of **inverting the ordinary square map**
@@ -290,6 +306,10 @@ physical. The root set is not unique — a generic element has four roots and a 
 — so "the" square root of a quantity is not unique, and the reading has no preferred root until an extra
 principle selects one. That non-uniqueness is the standing weakness of the reading.
 
+**Proposed reading, labelled as such.** Read as structure and not as a defect, the non-uniqueness is the
+statement that **a quantity's roots are the local frames it can be referred to**, and that choosing one
+is a choice of representative — the analogue for the frame of a gauge fixing of an orbit.
+
 ## The Ledger
 
 **Proved.** The roots of $-1$ are $\pm ie_0$ together with the pure $\mathbf P$ with
@@ -312,7 +332,10 @@ propagation**; that a root of $+1$ is a **reality condition**, a possible conjug
 that a material quantity is **realised by the algebra** exactly when it has a square root, with the
 nonzero nilpotents the unrealisable locus; and that the **mass shell** is the slice of the natural square
 map on which the square is the scalar $-m^{2}c^{2}$. Each is a proposal about naming, not a result; the
-root sets, the criterion and the corollary are results.
+root sets, the criterion and the corollary are results. Added here: that the roots of $-1$ are the
+local frames a quantity can be referred to, the non-uniqueness of the root being a choice of
+representative; that the material sector is the sector of the composite, the refusal being confined to
+the nilpotents; and, speculatively, that the roots of $+1$ are the discrete symmetries.
 
 ## Summary
 

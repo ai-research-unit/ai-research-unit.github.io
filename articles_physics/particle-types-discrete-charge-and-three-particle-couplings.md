@@ -13,7 +13,7 @@ algebra's own coefficient, $\tfrac12$ over the four-element basis and never $\tf
 natural three-linear object is its ternary product, which satisfies the Jordan triple identity, unlike the
 ternary product of the fourth form.
 
-The article keeps to the algebra. It defers the states to *The States the Indefinite Metric Cannot Normalise*; charge conjugation to *Charge Conjugation and the Division Ring in Biquaternionic Form*; the Majorana
+The article keeps to the algebra. It defers the states to *The States the Indefinite Metric Cannot Normalise*; charge conjugation to *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*; the Majorana
 and antilinear structures to *The Majorana Representation in Biquaternionic Form* and *Antilinear
 Structure and the Two Kinds of Mass in Biquaternionic Form*; the Lorentz group to *The Lorentz Group in
 Biquaternionic Form — Structure and Representations* and *The Two-Sheeted Cover and the Topology of Boosts
@@ -67,7 +67,7 @@ division-ring invariant of the signature, and for the fundamental representation
 operation is of order two. Which of the three charge states a particle carries — **charged, neutral or
 truly neutral** — is the division-ring trichotomy, and the one case in which a particle is its own
 antiparticle is the **Majorana** condition on the doubled module $\Delta=S\oplus\bar S$; these are
-*Charge Conjugation and the Division Ring in Biquaternionic Form* and *The Neutrino and Majorana
+*Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form* and *The Neutrino and Majorana
 Fermions in Biquaternionic Form*.
 
 **The three real forms on the same $\mathbb{C}^{2}$.** The trichotomy is concrete when three actions are
@@ -311,6 +311,11 @@ triple product of an algebraic $J^{*}$-algebra — and it contains the binary pr
 its shadows, $\{\tilde P,\tilde R,e_0\}=\tilde P\tilde R^{*}$ and
 $\{e_0,\tilde Q,e_0\}=\tilde Q^{*}$.
 
+**The ternary product is the state pairing at three entries.** The binary product the ternary object
+extends is the sesquilinear product $\tilde P\tilde Q^{*}$ of the probability pairing, so the three-slot
+product is the same pairing read on three amplitudes: the two-field coupling and the three-field coupling
+are **one operation at two arities**, and no new product is introduced for the triple.
+
 **The Jordan triple identity.** The identity that qualifies such a product is
 
 $$
@@ -320,12 +325,12 @@ $$
 -\{\tilde U,\tilde V,\{\tilde P,\tilde Q,\tilde R\}\}=0 ,
 $$
 
-and the bigeneral quaternionic sesquilinear ternary product **satisfies it**.
+and the general plain sesquilinear ternary product **satisfies it**.
 
 **The fourth form fails.** The **general quaternionic sesquilinear product**
 $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ has a ternary product of the same formal shape,
 and it **fails**: on the five-tuple $(e_0,e_1,e_0,e_2,e_0)$ the two sides of the identity are
-$e_3$ and $-3e_3$. The failure is not a small-set accident — $480$ of the $1024$ basis five-tuples are
+$e_3$ and $-3e_3$. The failure is not a small-set accident — $480$ of the $1024$ five-tuples of the four real quaternion units are
 witnesses. For the physics this is a caution: which ternary product an algebra carries is decided by the
 involution that defines the product, and a change of involution can turn a coherent triple into an
 incoherent one.
@@ -338,7 +343,10 @@ that the **ternary product is the repair**, giving the coupling as a single thre
 the **Jordan triple identity is the coherence condition** the repair must meet, so that the identity
 selects which three-particle vertices an algebra admits. Bilinear couplings are assembled without
 ambiguity; ternary ones require the ternary product, and that shift is the content of the algebra's
-non-associativity.
+non-associativity. In this reading the **associator is the order dependence of a three-field coupling**:
+its value on a triple is the amount by which the outcome changes when the triple is re-bracketed, so a
+nonzero associator is exactly the statement that a three-field coupling is order-dependent and cannot be
+written as an iteration of two-field ones.
 
 **Caution.** No gauge-theory vertex is claimed. In particular the **three-gluon vertex is not derived**
 here or elsewhere: a gauge-theory vertex requires a Lagrangian, a representation and a computation of
@@ -353,7 +361,8 @@ and whether any gauge vertex can be obtained from the ternary structure without 
 **Remark (verified).** The associator on $(e_0,e_1,e_1)$ is $-2e_0$; $\{e_1,e_2,e_3\}=e_0$ and
 $\{e_1,e_2,e_1\}=-e_2$; the Jordan triple identity holds for the sesquilinear ternary product on $100$
 random five-tuples with maximum deviation $2.7\times10^{-13}$, and no basis five-tuple violates it; the
-general quaternionic sesquilinear ternary product violates it on $480$ of the $1024$ basis five-tuples, the
+general quaternionic sesquilinear ternary product violates it on $480$ of the $1024$ five-tuples of the four
+real quaternion units, the
 witness $(e_0,e_1,e_0,e_2,e_0)$ giving $e_3$ and $-3e_3$.
 
 ## The Limits
@@ -378,11 +387,12 @@ compact by positivity of the dagger. The boosts have $N=1$ and $\lVert\tilde B(\
 coefficient $\tfrac12$ and the bilinear-product identity with coefficient $1$; the coefficient is never
 $\tfrac14$ over the four-element basis. Non-associativity with the witness $-2e_0$; the ternary product
 $\{\tilde P,\tilde Q,\tilde R\}=\tilde P\tilde Q^{*}\tilde R$ and its shadows; the Jordan triple identity
-for it, and its failure for the general quaternionic sesquilinear product on $480$ of $1024$ basis five-tuples.
+for it, and its failure for the general quaternionic sesquilinear product on $480$ of $1024$ five-tuples of the four real quaternion units.
 
 **Readings.** Dirac-like particles with distinct antiparticles; charge quantisation from compactness and
 continuous rapidity from non-compactness; the $s$-channel/$t$-channel exchange; the ternary product as a
-three-particle coupling.
+three-particle coupling, and as the state pairing at three entries; the associator as the order dependence
+of a three-field coupling.
 
 **Speculations, labelled.** The neutrino's type; the three-particle coupling dictionary, with the
 three-gluon vertex explicitly not derived.
@@ -414,9 +424,10 @@ singular, the flag-dipole being the type the usual list of Dirac, real and chira
 exhaust. Finally the algebra's non-associativity, with witness $-2e_0$,
 forces a **ternary product** $\{\tilde P,\tilde Q,\tilde R\}=\tilde P\tilde Q^{*}\tilde R$, which
 satisfies the Jordan triple identity while the fourth form's ternary product fails it on $480$ of $1024$
-basis five-tuples; the ternary product is read, as a labelled speculation that excludes the three-gluon
-vertex, as the algebra's natural **three-particle coupling**. The states are owned by *The States the
-Indefinite Metric Cannot Normalise*; the charge-state trichotomy and the Majorana condition by *Charge Conjugation and the Division Ring in Biquaternionic Form*
+five-tuples of the four real quaternion units; the ternary product is read, as a labelled speculation that excludes the three-gluon
+vertex, as the algebra's natural **three-particle coupling** — the state pairing read at three entries,
+with the associator as the order dependence of a three-field coupling. The states are owned by *The States the
+Indefinite Metric Cannot Normalise*; the charge-state trichotomy and the Majorana condition by *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*
 and *The Neutrino and Majorana Fermions in Biquaternionic Form*; the Lorentz group by
 *The Lorentz Group in Biquaternionic Form* and *The Two-Sheeted Cover and the Topology of Boosts*; the
 group ceiling by *The Gauge Group Ceiling*; the spin ceiling by *Higher Spin from Tensor Products*; and
@@ -451,7 +462,7 @@ Positivity of the Dagger* and *Observables, Gauge Generators and the Chirality o
   for the internal group.
 - Companion article *Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and
   One-Half*, for the spin ceiling.
-- Companion articles *Charge Conjugation and the Division Ring in Biquaternionic Form*, *The Majorana Representation in
+- Companion articles *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*, *The Majorana Representation in
   Biquaternionic Form* and *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for
   the particle and antiparticle structures.
 - Companion articles *The Lorentz Group in Biquaternionic Form — Structure and Representations* and *The

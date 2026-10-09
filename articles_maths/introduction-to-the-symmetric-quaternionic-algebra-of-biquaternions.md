@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}$ carries four products, and the second of them is the **general
+The biquaternion algebra $\mathbb{B}$ carries four general products, and the second of them is the **general
 quaternionic bilinear product** $\tilde P^{\natural}\tilde Q$, the plain product with the quaternion
-conjugation read on the first factor (*The Four Biquaternion Complex Products*). Every bilinear product on
+conjugation read on the first factor (*The Four General Products of the Biquaternion $\mathbb{C}$ Space*). Every bilinear product on
 $\mathbb{B}$ splits into a symmetric part and an antisymmetric part, and this article is the introduction
 of the block that reads the symmetric part of $\tilde P^{\natural}\tilde Q$:
 
@@ -17,7 +17,7 @@ and the operation itself, with its centrality, its coefficient and its failure o
 subject of *The Symmetrised Quaternionic Product and the Hermitian Subspace*. The present article does not
 restate either: it takes the operation as given, names it $\star$, and reads it as the multiplication of a
 named structure, the **symmetric quaternionic algebra** $\mathrm{SQA}$, whose row in the catalogue is
-*The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The five companion articles of the
+*The 12 Products of the Biquaternion Complex Space*. The five companion articles of the
 block read the same operation through the form it carries (*The Quaternion Form as a Product on the Symmetric
 Quaternionic Algebra*), on the six distinguished subspaces (*The Six Subspaces under the Symmetric
 Quaternionic Algebra of Biquaternions*), through its multiplication operators (*The Multiplication Operators
@@ -31,9 +31,8 @@ and commutative; its value is always a central element, a complex multiple of $e
 algebra it makes is far from the associative one and far from a Jordan one. The name $\mathrm{SQA}$ and the
 verb *collapse* are the two threads: the operation collapses the whole algebra onto its central line.
 
-**Boundaries.** The product $\tilde P^{\natural}\tilde Q$ and the four products are *The Four Biquaternion
-Complex Products*, their comparison is *Comparison Between the Four Biquaternion Products*, their relations are
-*Relations Between the Four Biquaternion Products*; the six subspaces are *Introduction to the Six Subspaces*;
+**Boundaries.** The product $\tilde P^{\natural}\tilde Q$ and the four general products are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, their comparison is *Comparison Between the Four General Products*, their relations are
+*Relations Between the Four General Products*; the six subspaces are *Introduction to the Six Subspaces*;
 the norm and the isotropy are *Biquaternion Norm and Invertibility* and *Biquaternion Zero Divisors*; the Jordan
 theory is *Jordan Algebras*; the general splitting is the two parts articles. Nothing of the enriched layer of Part II is used here.
 
@@ -61,8 +60,7 @@ $$
 \tilde P^{\natural}\tilde Q = \tilde P\star\tilde Q + \tfrac12[\tilde P,\tilde Q]_{\natural},
 $$
 
-and the multiplication is the multiplication of the algebra denoted $\mathrm{SQA}$ in *The 12 Algebraic
-Structures over the Biquaternion $\mathbb{C}$ Space*.
+and the multiplication is the multiplication of the algebra denoted $\mathrm{SQA}$ in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 **Theorem (the value is central and the coefficient is the quaternion form).** For all
 $\tilde P,\tilde Q \in \mathbb{B}$,
@@ -81,9 +79,8 @@ $\square$
 
 The theorem is the centrality statement of *The Symmetrised Quaternionic Product and the Hermitian Subspace*,
 where the coefficient $B(\tilde P,\tilde Q)$ is called $\beta$ and is identified with the polarisation of the
-norm. This article keeps the name $B$, the one the form carries in the catalogue article *The 12 Algebraic
-Structures over the Biquaternion $\mathbb{C}$ Space*; the form, with its comparison with the other three, is
-*Comparison Between the Four Biquaternion Products* and *The Four Pairings of the Biquaternion Algebra*.
+norm. This article keeps the name $B$, the one the form carries in the catalogue article *The 12 Products of the Biquaternion Complex Space*; the form, with its comparison with the other three, is
+*Comparison Between the Four General Products* and *The Four Pairings of the Biquaternion Algebra*.
 
 **Corollary (the class and the commutativity).** The operation $\star$ is $\mathbb{C}$-bilinear and
 commutative, and its image is the central line $\mathbb{C}e_0 = \mathbb{C}_{\mathbb{B}}$, the centre of
@@ -249,13 +246,12 @@ Symmetrised Quaternionic Product and the Hermitian Subspace* for the contrast wi
 
 **Remark (the operation is not a Lie or a Jordan product).** With the commutator identically zero and the
 Jordan identity failing, the operation is neither a Lie bracket nor a Jordan product on the whole space. It
-is one of the two central operations of the twelve (*The 12 Algebraic Structures over the Biquaternion
-$\mathbb{C}$ Space*), the other being the symmetric part of the plain sesquilinear product; and it is the
+is one of the two central operations of the twelve (*The 12 Products of the Biquaternion Complex Space*), the other being the symmetric part of the plain sesquilinear product; and it is the
 unique central and commutative operation among the six $\mathbb{C}$-bilinear ones.
 
 ## The Placement Among the Twelve
 
-The twelve operations of the catalogue are the four products and their two parts each; $\star$ is the
+The twelve operations of the catalogue are the four general products and their two parts each; $\star$ is the
 symmetric part of the general quaternionic product and its antisymmetric half is the bracket
 $[\cdot,\cdot]_{\natural}$. The two halves reconstruct the parent,
 
@@ -265,7 +261,7 @@ $$
 $$
 
 with $\mathrm{SQA}$ one of the two central operations and $\mathrm{AQA}$ one of the four antisymmetric ones
-(*The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
+(*The 12 Products of the Biquaternion Complex Space*).
 
 | the reading | the value | the class |
 |---|---|---|
@@ -282,7 +278,7 @@ real part, where $\mathrm{SQA}=\mathrm{SPS}$, and twelve on the complex space.
 
 **Remark (the name and what it does not claim).** The trailing $\mathrm A$ records that the operation is
 $\mathbb{C}$-bilinear and not merely sesquilinear, since the general quaternionic product from which it is
-taken is $\mathbb{C}$-bilinear (*The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The
+taken is $\mathbb{C}$-bilinear (*The 12 Products of the Biquaternion Complex Space*). The
 name *symmetric* refers to the symmetry of the two slots, and the name *quaternionic* to the conjugation
 inserted in the parent product; neither word is a claim about a further structure.
 
@@ -320,7 +316,7 @@ same operation through its form, its subspaces, its operators and its matrix mod
 ## Further Reading
 
 - *The Symmetrised Quaternionic Product and the Hermitian Subspace* (`articles_maths/the-symmetrised-quaternionic-product-and-the-hermitian-subspace.md`), for the centrality, the coefficient and the failure of the Jordan identity in full
-- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the row of $\mathrm{SQA}$ in the catalogue of the twelve
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the row of $\mathrm{SQA}$ in the catalogue of the twelve
 - *The Symmetric and Antisymmetric Parts of an Algebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the splitting that produces the operation
 - *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the parent product
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`) and *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the norm form and its isotropic cone

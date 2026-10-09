@@ -102,6 +102,13 @@ the central imaginary direction is the abelian phase. The companion article read
 product on the whole algebra and the rotation triple; this article reads the real form that the material
 sector itself supplies.
 
+**Proposed reading, labelled as such.** The centre $\mathbb{C}e_0$ is the radical of the Killing form, so
+no bracket, and therefore no rotation or boost, sees it. Read physically, **the directions every
+transformation leaves fixed are the global phase**, the abelian direction that decouples; its generator is
+$T_0=\tfrac12ie_0$. *The phase read as a gauge group is owned by The Gauge Principle in Biquaternionic
+Form, and the Cartan direction that carries charge in the electroweak reading is the vector generator
+$\tfrac12e_3$, not the centre.*
+
 ## The Commutator and the Adjoint Action
 
 The bracket of the block is half the commutator, $\tilde P\wedge\tilde Q=\tfrac12[\tilde P,\tilde Q]$,
@@ -192,6 +199,10 @@ non-compact boosts by a sign alone, and the framework reads the sign of the form
 of that physical distinction. What is proved is the formula and its signature; the words "compact",
 "non-compact", "rotation" and "boost" are the reading.
 
+**Proposed reading, labelled as such.** The dichotomy has a dynamical face: **negative means oscillatory
+— closed, periodic; positive means runaway — open, hyperbolic**, so the sign of the form separates a
+rotation from a boost by the kind of motion each generates.
+
 ## The Invariants of the Rotation Group
 
 The invariant bilinear form is the quadratic invariant of the algebra, and it determines the **Casimir
@@ -269,6 +280,10 @@ $\operatorname{ad}_{e_k}=-2iJ_k$, and substituting gives
 $[J_i,J_j]=-\tfrac12\varepsilon_{ijk}(-2iJ_k)=i\varepsilon_{ijk}J_k$. Verified on the four-dimensional
 adjoint matrices, max deviation $0$.
 
+**Proposed reading, labelled as such.** The factor that carries the anti-Hermitian generator to its
+Hermitian multiple is **the framework's own $i$**, the same central scalar that generates the phase:
+**the generator becomes an observable by multiplication by $i$.**
+
 **Bound.** The angular-momentum operators of the frame are read here as the adjoint actions on the
 algebra; their action on the spinor module, the ladder operators, the eigenvalues $j(j+1)$ and $m$, the
 addition of angular momenta and the representations are *Angular Momentum and Spin in Biquaternionic
@@ -315,7 +330,9 @@ $J_k=\operatorname{ad}^{\wedge}_{ie_k}$ satisfy $[J_i,J_j]=i\varepsilon_{ijk}J_k
 the rotations and positive on the boosts; that the invariants of the rotation group are read from the
 Killing form and the Casimir; and that the generators of the rotations and of the boosts are the real and
 the imaginary vector units, the angular-momentum operators being the Hermitian (imaginary-unit) form of
-the adjoint action of the rotation triple. Each is the framework's naming of a proved algebraic fact
+the adjoint action of the rotation triple; that the negative sign of the form is oscillation and the
+positive sign runaway; and that the centre is the direction no rotation sees. Each is the framework's
+naming of a proved algebraic fact
 and is labelled as such.
 
 **Not claimed.** That the Lie algebra is the group; that the algebra carries the modules and the

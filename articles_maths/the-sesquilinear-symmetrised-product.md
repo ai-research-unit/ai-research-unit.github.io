@@ -186,7 +186,7 @@ For $A = \mathbb{H}$ with the quaternion conjugation over the datum $(\mathbb{R}
 
 ### The Biquaternion Case
 
-For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the symmetrised star-product is the Jordan product of the biquaternion block, and the Hermitian part it fills is a Jordan algebra of degree two, read in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The Six Subspaces and the Four Complex Products*. The biquaternion layer is the worked case in which all of the operations of this article, the product, the derived product, the symmetrisation and the difference bracket, are computed on a basis of eight elements.
+For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the symmetrised star-product is the Jordan product of the biquaternion block, and the Hermitian part it fills is a Jordan algebra of degree two, read in *The 12 Products of the Biquaternion Complex Space* and *The Six Subspaces and the Four General Products*. The biquaternion layer is the worked case in which all of the operations of this article, the product, the derived product, the symmetrisation and the difference bracket, are computed on a basis of eight elements.
 
 ### The Other Exchange, and the Other Symmetric Half
 
@@ -198,7 +198,7 @@ $$
 \tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\bigl(\tilde{P}\tilde{Q}^{*}\bigr)^{\natural}\bigr)=\mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{*}\bigr)=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}}),
 $$
 
-the Hermitian form of the sesqualgebra read as a central element, and its antisymmetric partner is the vector part $\mathrm{Vect}(\tilde{P}\tilde{Q}^{*})$. The symmetrised product and the conjugate-symmetric part are the two symmetric halves of the one product, taken under the two exchanges, and they are not the same operation: the symmetrisation here is Hermitian-valued in $\mathbb{M}_{+}$ and only $\mathbb{R}$-bilinear, while the conjugate-symmetric part is central and sesquilinear. The twelve names of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* belong to the reading that keeps the class, whose symmetric half for the derived operation is the conjugate-symmetric part just written, the operation $\mathrm{SPS}$.
+the Hermitian form of the sesqualgebra read as a central element, and its antisymmetric partner is the vector part $\mathrm{Vect}(\tilde{P}\tilde{Q}^{*})$. The symmetrised product and the conjugate-symmetric part are the two symmetric halves of the one product, taken under the two exchanges, and they are not the same operation: the symmetrisation here is Hermitian-valued in $\mathbb{M}_{+}$ and only $\mathbb{R}$-bilinear, while the conjugate-symmetric part is central and sesquilinear. The twelve names of *The 12 Products of the Biquaternion Complex Space* belong to the reading that keeps the class, whose symmetric half for the derived operation is the conjugate-symmetric part just written, the operation $\mathrm{SPS}$.
 
 ## Summary
 

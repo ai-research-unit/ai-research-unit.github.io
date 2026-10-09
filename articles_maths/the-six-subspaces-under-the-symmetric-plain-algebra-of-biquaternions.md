@@ -4,7 +4,7 @@
 
 The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Introduction to the Symmetric Plain Algebra of Biquaternions*. The algebra carries six distinguished real subspaces, and this article reads the product on each of them: whether it stays inside, and the rule it follows where it does; the units and the idempotents it contains; and its isotropic elements. The six are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ of *Introduction to the Six Subspaces*, with their natural real bases.
 
-The reading follows the pattern of *The Six Subspaces under the General Plain Algebra of Biquaternions*, and the subspaces themselves, their bases and their relations are *Introduction to the Six Subspaces* and *Comparison of the Six Subspaces*. The products of the four complex products on the same six subspaces are *The Six Subspaces and the Four Complex Products*; the isotropic set of the block is the isotropic cone of *Biquaternion Norm and Invertibility*; and the idempotents are those of *Biquaternion Idempotents and Projections*. This article owns the product $\bullet$ on the six and the table that gathers the six readings.
+The reading follows the pattern of *The Six Subspaces under the General Plain Algebra of Biquaternions*, and the subspaces themselves, their bases and their relations are *Introduction to the Six Subspaces* and *Comparison of the Six Subspaces*. The products of the four general products on the same six subspaces are *The Six Subspaces and the Four General Products*; the isotropic set of the block is the isotropic cone of *Biquaternion Norm and Invertibility*; and the idempotents are those of *Biquaternion Idempotents and Projections*. This article owns the product $\bullet$ on the six and the table that gathers the six readings.
 
 **Conventions and the criterion.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, and the product is $\bullet$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$. The six subspaces are real and their natural real bases are the ones of *Introduction to the Six Subspaces*:
 
@@ -124,7 +124,7 @@ $$
 (\tilde P\bullet\tilde Q)^{*}=\tfrac12\bigl((\tilde P\tilde Q)^{*}+(\tilde Q\tilde P)^{*}\bigr)=\tfrac12\bigl(\tilde Q\tilde P+\tilde P\tilde Q\bigr)=\tilde P\bullet\tilde Q,
 $$
 
-and the Hermitian subspace is **closed** under $\bullet$. It is a Jordan subalgebra of the block, and it is the **Hermitian Jordan algebra** $J(\mathbb{B})$ of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+and the Hermitian subspace is **closed** under $\bullet$. It is a Jordan subalgebra of the block, and it is the **Hermitian Jordan algebra** $J(\mathbb{B})$ of *The 12 Products of the Biquaternion Complex Space*.
 
 ### Units, Idempotents and Isotropic Elements
 
@@ -193,8 +193,8 @@ On the six distinguished real subspaces the symmetric plain product is closed on
 ## Further Reading
 
 - *Introduction to the Six Subspaces* and *Comparison of the Six Subspaces*, for the six subspaces, their bases and their relations.
-- *The Six Subspaces under the General Plain Algebra of Biquaternions*, for the same six subspaces under the general plain bilinear form, and *The Six Subspaces and the Four Complex Products*, for the readings of the four products.
+- *The Six Subspaces under the General Plain Algebra of Biquaternions*, for the same six subspaces under the general plain bilinear form, and *The Six Subspaces and the Four General Products*, for the readings of the four general products.
 - *Biquaternion Norm and Invertibility*, for the generic norm, the units and the isotropic cone.
 - *Biquaternion Idempotents and Projections*, for the idempotents and the pure states.
-- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the Hermitian Jordan algebra $J(\mathbb{B})$ and the placement of the block.
+- *The 12 Products of the Biquaternion Complex Space*, for the Hermitian Jordan algebra $J(\mathbb{B})$ and the placement of the block.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, for the isotropic cone of the block and the elements of square zero.

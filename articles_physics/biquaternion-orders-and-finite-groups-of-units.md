@@ -46,6 +46,39 @@ $$
 
 **Physical reading.** The finite unit groups are the **spin point groups** the material sector admits: they are the double covers of the crystallographic point groups, so the quaternion group $Q_8$, the double cover of the four-group, is the smallest non-abelian one, and $2T$ is the next. They are the finite groups of symmetry of a discrete configuration of the material sector, and because they lie in the definite real slice no null direction enters them.
 
+### The Elements of Order Six
+
+The Lipschitz unit group is a $2$-group and the Hurwitz unit group is not, and one element exhibits the difference. The **order** of a unit $Q$ is the least $n\geq1$ with $Q^n=e_0$.
+
+**Example.** Let
+$$
+Q=\tfrac12(e_0-e_1-e_2+e_3).
+$$
+This is a Hurwitz unit, being one of the sixteen half-integral units of $(\mathcal{L}')^{\times}\setminus\mathcal{L}^{\times}$ listed above. Its square is the negative of its quaternion conjugate,
+$$
+Q^2=-Q^{\natural},
+$$
+and therefore
+$$
+Q^3=Q\,Q^2=-QQ^{\natural}=-e_0,\qquad Q^6=e_0 ,
+$$
+so $Q$ has order six and generates a cyclic subgroup $\langle Q\rangle\cong C_6$ of the unit group.
+
+**Remark.** The identity $Q^2=-Q^{\natural}$ is a property of the half-integral units and not of this example alone, and the sign of the real part decides the order. For a half-integral unit
+$$
+Q=\tfrac12(s_0e_0+s_1e_1+s_2e_2+s_3e_3),\qquad s_\mu=\pm1,
+$$
+the real part is $\tfrac12s_0$, so $Q^2=-Q^{\natural}$ when $s_0=+1$, which gives $Q^3=-e_0$ and order six, while $Q^2=+Q^{\natural}$ when $s_0=-1$, which gives $Q^3=e_0$ and order three. There are eight units of each kind, and the element orders of the two orders of units are as follows.
+
+| Unit group | Order $1$ | Order $2$ | Order $3$ | Order $4$ | Order $6$ |
+|---|---|---|---|---|---|
+| Lipschitz, $\mathcal{L}^{\times}\cong Q_8$ | $1$ | $1$ | $0$ | $6$ | $0$ |
+| Hurwitz, $(\mathcal{L}')^{\times}\cong 2T$ | $1$ | $1$ | $8$ | $6$ | $8$ |
+
+The eight elements of order six form four cyclic subgroups of order six, and their squares are the eight elements of order three, so the unit group has four subgroups of order three and four of order six, each subgroup of order three lying in exactly one of order six. None of these subgroups lies in the Lipschitz units, whose element orders are $1$, $2$ and $4$.
+
+**Physical reading.** The order of a unit is the order of the rotation it generates, and the twelve rotations the twenty-four units define split as the identity, three rotations by $\pi$ and eight rotations by $120^\circ$. The sixteen half-integral units, of orders three and six, are exactly those above the eight rotations by $120^\circ$, and no Lipschitz unit is among them: the Lipschitz units give only the identity and the three rotations by $\pi$. The orders missing from the Lipschitz group are therefore exactly the rotations missing from it, which is the discrete face of the statement that the half-integral coordinates are what the Hurwitz order adds.
+
 ## The Finite Subgroups of the Unit Sphere
 
 The unit quaternions $Sp(1)=S^3$ form a group with centre $\{\pm e_0\}$, and the quotient

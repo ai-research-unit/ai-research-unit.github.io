@@ -51,7 +51,7 @@ and the cyclic sum of the block at $(e_0,e_1,e_2)$, which is $-e_3$, has the mat
 
 *Proof.* The models are isomorphisms of vector spaces that intertwine the operator with its image, so kernels correspond; the kernel in the coefficient space is computed in *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*. $\square$
 
-The image of the block on the matrices is therefore the traceless part, and the kernel is the line of the element. The traceless matrices carry the three-dimensional Lie algebra $\mathfrak{sl}(2,\mathbb{C})$, which is the model of the vector subspace under the operation (*The Six Subspaces and the Four Complex Products*).
+The image of the block on the matrices is therefore the traceless part, and the kernel is the line of the element. The traceless matrices carry the three-dimensional Lie algebra $\mathfrak{sl}(2,\mathbb{C})$, which is the model of the vector subspace under the operation (*The Six Subspaces and the Four General Products*).
 
 ## The Operator of the Block on the Matrices
 

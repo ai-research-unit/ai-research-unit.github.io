@@ -188,7 +188,7 @@ The algebras and the modules of this framework have parallel vocabularies — co
 
 The preceding section separates the algebra's $\flat$ from the module's $\mathcal{C}$ and keeps the two apart. Having separated them, it is worth asking what else acts on the module. Besides the Lorentz action there is an extra central circle, and the group that includes both is $\mathrm{Spin}^c$.
 
-**The group.** The companion *Spinors: Categorization* defines the $\mathrm{Spin}^c$ group as
+**The group.** The $\mathrm{Spin}^c$ group is defined as
 
 $$
 \mathrm{Spin}^c(n) \;=\; \frac{\mathrm{Spin}(n)\times U(1)}{\{\pm 1\}},
@@ -332,4 +332,4 @@ In every one of these uses the coupling pairs the field with its conjugate, and 
 - The antilinear discrete symmetries: *The CPT Theorem in Biquaternionic Form* ($C$ and $T$ antilinear, and why a linear $T$ is not a symmetry).
 - On the reflection parity that antilinearity shifts: *The Reflection and the Rotation in Biquaternionic Form*.
 - The Clifford structures: *The Dirac Algebra and Biquaternions — A Dictionary*; *Spinors*.
-- The $\mathrm{Spin}^c$ structure and its obstruction: *Spinors: Categorization* (the definition of $\mathrm{Spin}^c$, $W_3$, and $w_2$ as the mod $2$ reduction of an integral class); *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* (the localized central phase and the $\lambda = \pm 1$ obstruction).
+- The $\mathrm{Spin}^c$ structure and its obstruction: the definition of $\mathrm{Spin}^c$, of $W_3$, and of $w_2$ as the mod $2$ reduction of an integral class; *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* (the localized central phase and the $\lambda = \pm 1$ obstruction).

@@ -288,7 +288,7 @@ $$
 B_{j,k} = q_0p_k-p_0\sigma_{jk}q_k-p_l\sigma_{jm}q_m+p_m\sigma_{jl}q_l ,
 $$
 
-with $(k,l,m)$ cyclic, since $(\mathbf q\times\mathbf p)_k = q_lp_m-q_mp_l$. Summing over $j$ with any of the four weight rows $\sigma_{j\cdot}$ kills every term whose indices are not the chosen pair, by the row orthogonality, and leaves exactly one of the four products displayed.
+with $(k,l,m)$ cyclic, since $(\mathbf q\times\mathbf p)_k = q_lp_m-q_mp_l$. Summing over $j$ with any of the four weight rows $\sigma_{j\cdot}$ kills every term whose indices are not the chosen pair, by the row orthogonality, and leaves exactly one of the four general products displayed.
 
 ### Consequences
 

@@ -19,7 +19,7 @@ the product carries are *The Six Subspaces under the General Quaternionic Algebr
 *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, whose table is quoted here and not
 recomputed. The isotropic elements are *Biquaternion Zero Divisors* and *The Radical and the Isotropic
 Elements of the Symmetric Quaternionic Algebra*; the closure statement for the symmetrised quaternionic
-product is *The Six Subspaces and the Four Complex Products*.
+product is *The Six Subspaces and the Four General Products*.
 
 **Conventions.** A general element is $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$ and
 $Q_\mu\in\mathbb{C}$; $A,B$ are complex numbers; $h,g$ are real quaternions, $h=h_0e_0+\cdots+h_3e_3$ with
@@ -140,8 +140,7 @@ $(\mathbf p,\mathbf p)=a_0^2$.
 
 **Remark (the three that stay inside and the three that leave).** The operation is kept inside itself by
 exactly three of the six subspaces — the centre, the quaternion subspace and the Hermitian subspace — and it
-leaves the other three, in agreement with the closure statement of *The Six Subspaces and the Four Complex
-Products* for the symmetrisation of the general quaternionic product, which this article follows. The centre
+leaves the other three, in agreement with the closure statement of *The Six Subspaces and the Four General Products* for the symmetrisation of the general quaternionic product, which this article follows. The centre
 stays inside because it is the image of the operation; the quaternion subspace and the Hermitian subspace stay
 inside because the coefficient is real on each of them and the real line $\mathbb{R}e_0$ lies in both. The
 vector subspace returns a complex multiple of $e_0$ that leaves it, while the anti-quaternion and
@@ -226,7 +225,7 @@ isotropic set appropriate to each.
 
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces, their bases and their elements
 - *The Six Subspaces under the General Plain Algebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-general-plain-algebra-of-biquaternions.md`) and *The Six Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the same six subspaces under the other $\mathbb{C}$-bilinear operations
-- *The Six Subspaces and the Four Complex Products* (`articles_maths/the-six-subspaces-and-the-four-complex-products.md`), for the closure statement of the symmetrisation
+- *The Six Subspaces and the Four General Products* (`articles_maths/the-six-subspaces-and-the-four-general-products.md`), for the closure statement of the symmetrisation
 - *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the restrictions of the form and their signatures
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the radical and the isotropic cone
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the pure and the non-pure zero divisors

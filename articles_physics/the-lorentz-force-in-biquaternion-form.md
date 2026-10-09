@@ -217,7 +217,7 @@ $$
 + \frac{q\sqrt{\mu}}{4}\left(A - A^\dagger\right),
 $$
 
-which, expanded in the four products, is
+which, expanded in the four general products, is
 
 $$
 \boxed{\;

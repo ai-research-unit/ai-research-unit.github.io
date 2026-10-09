@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four products on its underlying $\mathbb{C}$-vector space (*The Four Biquaternion Complex Products*). This group of articles is the reading of the second of them as a multiplication,
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products of the Biquaternion $\mathbb{C}$ Space*). This group of articles is the reading of the second of them as a multiplication,
 
 $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3}\varepsilon_\mu P_\mu Q_\nu\, e_\mu e_\nu , \qquad \varepsilon = (1,-1,-1,-1) ,
 $$
 
-the **general quaternionic bilinear product**, in which ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$. The coordinate rule and the scalar–vector form are *The Four Biquaternion Complex Products* §*The General Quaternionic Bilinear Product*; the algebra the product defines, its failure of associativity and its left unit are *Introduction to the General Quaternionic Algebra of Biquaternions*; its place among the four products is the property table of *Comparison Between the Four Biquaternion Products*.
+the **general quaternionic bilinear product**, in which ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$. The coordinate rule and the scalar–vector form are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*; the algebra the product defines, its failure of associativity and its left unit are *Introduction to the General Quaternionic Algebra of Biquaternions*; its place among the four general products is the property table of *Comparison Between the Four General Products*.
 
 An **idempotent** of a multiplication is an element with $\tilde\Pi\star\tilde\Pi = \tilde\Pi$. The two **trivial** idempotents are $0$ and $e_0$, and an idempotent different from both is **nontrivial**. The idempotents are the first of the element-theoretic data of a multiplication: for an associative unital algebra they are the projectors, and they carry the Peirce decompositions and the minimal ideals of the algebra, which for the multiplication $\tilde P\tilde Q$ of $\mathbb{B}$ are *Biquaternion Idempotents and Projections* and *Biquaternion Ideals and Peirce Decomposition*. This article asks the same question of the product $\star$.
 
@@ -37,7 +37,7 @@ $$
 
 where $N(\tilde Q) = Q_0^2+Q_1^2+Q_2^2+Q_3^2$ is the norm of the algebra.
 
-**Proof.** Write $\tilde Q = Q_0e_0 + \mathbf Q$ with $\mathbf Q = Q_1e_1+Q_2e_2+Q_3e_3$, so that $\tilde Q^{\natural} = Q_0e_0 - \mathbf Q$. The scalar–vector form of the product (*The Four Biquaternion Complex Products* §*The General Quaternionic Bilinear Product*) gives the scalar part $P_0Q_0 + (\mathbf P,\mathbf Q)$ and the vector part $P_0\mathbf Q - Q_0\mathbf P - \mathbf P\times\mathbf Q$. At $\tilde P = \tilde Q$ the vector part is $Q_0\mathbf Q - Q_0\mathbf Q - \mathbf Q\times\mathbf Q$, and the cross product of a vector with itself vanishes; the scalar part is $Q_0^2 + (\mathbf Q,\mathbf Q) = N(\tilde Q)$. Hence $\tilde Q\star\tilde Q = N(\tilde Q)e_0$. $\square$
+**Proof.** Write $\tilde Q = Q_0e_0 + \mathbf Q$ with $\mathbf Q = Q_1e_1+Q_2e_2+Q_3e_3$, so that $\tilde Q^{\natural} = Q_0e_0 - \mathbf Q$. The scalar–vector form of the product (*The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*) gives the scalar part $P_0Q_0 + (\mathbf P,\mathbf Q)$ and the vector part $P_0\mathbf Q - Q_0\mathbf P - \mathbf P\times\mathbf Q$. At $\tilde P = \tilde Q$ the vector part is $Q_0\mathbf Q - Q_0\mathbf Q - \mathbf Q\times\mathbf Q$, and the cross product of a vector with itself vanishes; the scalar part is $Q_0^2 + (\mathbf Q,\mathbf Q) = N(\tilde Q)$. Hence $\tilde Q\star\tilde Q = N(\tilde Q)e_0$. $\square$
 
 The lemma is the reason the idempotent equation is trivial here and nontrivial for the associative product. The latter has $\tilde Q\tilde Q = Q_0^2e_0 + 2Q_0\mathbf Q + \mathbf Q^2$, whose vector part is not obliged to vanish, and whose solutions are the projectors of *Biquaternion Idempotents and Projections*. For $\star$ the square carries no vector part at all, and the idempotents are decided by a single quadratic in one complex variable.
 
@@ -128,7 +128,7 @@ For the quaternionic product the construction has nothing to attach to. The only
 
 **The idempotents and the zero divisors.** An element of norm zero is a zero divisor of the algebra, and a nonzero idempotent of the quaternionic product is $e_0$, of norm $N(e_0) = 1$, while the zero idempotent has norm $0$. Hence **no nonzero idempotent of the quaternionic product is a zero divisor**, which is the exact opposite of the situation in the associative multiplication, where every nontrivial idempotent is a zero divisor. The zero divisors of the quaternionic product are instead the square-zero elements, among which the displaced Hermitian projectors sit; the precise statement is the equivalence $N(\tilde Q) = 0 \iff \tilde Q\star\tilde Q = 0 \iff \tilde Q$ is a zero divisor of the algebra, proved in the next article.
 
-**The four products.** The idempotent sets of the four products are four different sets, and this is the sharpest single distinction among them (*Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*):
+**The four general products.** The idempotent sets of the four general products are four different sets, and this is the sharpest single distinction among them (*Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*):
 
 | product | idempotents |
 |---|---|

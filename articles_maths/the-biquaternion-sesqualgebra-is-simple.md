@@ -67,7 +67,7 @@ is a two-sided algebra ideal, it contains $\tilde X$, and it is contained in $I$
 
 **Proof.** The two-sided ideals are $0$ and $\mathbb{B}$, and $\mathbb{B}/0=\mathbb{B}$ while $\mathbb{B}/\mathbb{B}=0$. $\square$
 
-**Remark.** A sesqualgebra that is simple has no nontrivial quotient, so the whole of the representation theory of $\mathbb{B}$ is the theory of $\mathbb{B}$ itself. The corresponding statement for the algebra is the same, and it is the reason the four products of the corpus all live on one algebra and not on a family of quotients.
+**Remark.** A sesqualgebra that is simple has no nontrivial quotient, so the whole of the representation theory of $\mathbb{B}$ is the theory of $\mathbb{B}$ itself. The corresponding statement for the algebra is the same, and it is the reason the four general products of the corpus all live on one algebra and not on a family of quotients.
 
 ## The Lattice of Ideals
 

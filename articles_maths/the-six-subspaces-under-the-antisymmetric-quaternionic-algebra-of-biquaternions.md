@@ -26,7 +26,7 @@ it is a Lie algebra, and it is the image of the operation on the whole algebra. 
 
 *Proof.* On pure vectors the two scalar parts vanish, so the explicit form is the cross term alone, $-\mathbf P\times\mathbf Q$, which is a pure vector again; the closure follows, and the cross product satisfies the Jacobi identity, so the restriction is a Lie algebra. For the image, every value of the operation is a pure vector, and every pure vector is a value, $\mathbf V=e_0\diamond\mathbf V$; the dimensions are those of the subspace. $\square$
 
-The vector subspace and the quaternion subspace are the two closed ones of positive dimension, and the vector subspace is the only one of the six on which the operation is a Lie bracket, the closed quaternion subspace failing the Jacobi identity. It is the derived subalgebra of the block, and the identification of the cross product on $\mathbb{C}^3$ with $\mathfrak{sl}(2,\mathbb{C})$ is *The Six Subspaces and the Four Complex Products*.
+The vector subspace and the quaternion subspace are the two closed ones of positive dimension, and the vector subspace is the only one of the six on which the operation is a Lie bracket, the closed quaternion subspace failing the Jacobi identity. It is the derived subalgebra of the block, and the identification of the cross product on $\mathbb{C}^3$ with $\mathfrak{sl}(2,\mathbb{C})$ is *The Six Subspaces and the Four General Products*.
 
 ## The Quaternion Subspace
 
@@ -134,4 +134,4 @@ The six distinguished subspaces read the antisymmetric quaternionic multiplicati
 - *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its table and its image
 - *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.md`), for the failure read on the subspaces and for the vanishing of the alternating centre
 - *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.md`), for the radical and the isotropic cone of the form, and for the restrictions to the six subspaces
-- *The Six Subspaces and the Four Complex Products* (`articles_maths/the-six-subspaces-and-the-four-complex-products.md`), for the cross product on the vector subspace and its identification with $\mathfrak{sl}(2,\mathbb{C})$
+- *The Six Subspaces and the Four General Products* (`articles_maths/the-six-subspaces-and-the-four-general-products.md`), for the cross product on the vector subspace and its identification with $\mathfrak{sl}(2,\mathbb{C})$

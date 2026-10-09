@@ -110,7 +110,7 @@ The biquaternion algebra carries four natural involutions, all of them used in t
 | quaternion conjugation | ${}^{\natural}$ | the intrinsic conjugate: it fixes the scalars and negates the vectors |
 | Hermitian conjugation | ${}^{*}$ | the involution of the algebra, $\bar{\cdot}\circ{}^{\natural}$ |
 | anti-Hermitian conjugation | ${}^{\flat} = -{}^{*}$ | the negative of the star |
-| operator adjoint | ${}^{\dagger}$ | the adjoint of an operator, $(L_a)^{\dagger} = L_{a^{*}}$ |
+| operator adjoint | ${}^{\dagger}$ | the general adjoint of an operator, $(L_a)^{\dagger} = L_{a^{*}}$; where the adjoint is obviously the one of the positive definite form the two marks are written together, the dagger first, $(L_a)^{\dagger}=(L_a)^{*}=L_{a^{*}}$ |
 
 Which of the marks has a sense depends on the system, since a mark degenerates wherever the structure it conjugates is absent. The four examples below fix it system by system.
 
@@ -142,7 +142,7 @@ $$
 \tilde Q^{*} = \overline{\tilde Q^{\natural}} = \bar Q_0e_0 - \bar Q_1e_1 - \bar Q_2e_2 - \bar Q_3e_3 , \qquad \tilde Q^{\flat} = -\tilde Q^{*} .
 $$
 
-The dagger is the one mark that acts on an operator and not on an element, so it is the same in every system.
+The dagger is the **general adjoint**: it acts on an operator and not on an element, and it is the same in every system. It is the general mark under which the several adjoints of the corpus fall — one for each form, one for each sandwich — and where the adjoint in view is obviously the one of the positive definite form the text writes the two marks together, the dagger first and the star second, so that the coincidence is apparent: $(L_a)^{\dagger}=(L_a)^{*}=L_{a^{*}}$ and $(\Theta_{\tilde{Q}})^{\dagger}=(\Theta_{\tilde{Q}})^{*}=\Theta_{\tilde{Q}^{*}}$.
 
 ### The idempotent convention
 
@@ -154,7 +154,7 @@ $$
 \tilde\Pi_\pm(\hat\mu) = \tfrac{1}{2}\bigl(e_0 \pm i\,\hat\mu\bigr), \qquad \hat\mu \in \mathbb{R}^3,\ |\hat\mu| = 1 .
 $$
 
-The involution here is the star on the elements, as *The conjugations and the adjoint* fixes it; the physics corpus writes the same involution with a dagger, $\tilde\Pi^\dagger = \tilde\Pi$, in *Conventions in the Biquaternion Universe*, and the two symbols must not be carried across the boundary between the corpora.
+The involution here is the star on the elements, as *The conjugations and the adjoint* fixes it, and *Conventions in the Biquaternion Universe* writes the same involution with the same star, $\tilde\Pi^{*} = \tilde\Pi$: the two corpora agree on the mark, and it is the dagger that is confined to the operators.
 
 A non-zero idempotent $\tilde\Pi$ generates the **minimal left ideal** $\mathbb{B}\tilde\Pi$; the classification of the idempotents, the polarisation identity, the Peirce decomposition and the projective geometry of the pure states are those of *Biquaternion Idempotents and Projections* and its companions.
 
@@ -165,7 +165,7 @@ The upper-case tilde is therefore **split between two roles**, and the split is 
 | $\tilde\Pi$ | an idempotent, a projector or a pure state, and the minimal left ideal $\mathbb{B}\tilde\Pi$ it generates |
 | $\tilde P$ | a *generic* element wherever a statement holds for every element |
 
-The generic element keeps its $\tilde P$ in the statements that hold for all elements: the trace pairing $\operatorname{Tr}(\tilde P\tilde Q) = 2\operatorname{Sc}(\tilde P\tilde Q)$, the commutator bracket $[\tilde P, \tilde Q] = \tilde P\tilde Q - \tilde Q\tilde P$, the bilinear form $B(\tilde P, \tilde Q)$ and the multiplicativity $N(\tilde P\tilde Q) = N(\tilde P)N(\tilde Q)$. Both roles are inherited from *Biquaternion Idempotents and Projections* and its companions, which write the idempotent $\tilde\Pi$ and the generic element $\tilde P$ side by side.
+The generic element keeps its $\tilde P$ in the statements that hold for all elements: the trace pairing $\operatorname{Tr}(\tilde P\tilde Q) = 2\operatorname{Sc}(\tilde P\tilde Q)$, the commutator bracket $[\tilde P, \tilde Q] = \tilde P\tilde Q - \tilde Q\tilde P$, the general plain bilinear form $B(\tilde P, \tilde Q)$ and the multiplicativity $N(\tilde P\tilde Q) = N(\tilde P)N(\tilde Q)$. Both roles are inherited from *Biquaternion Idempotents and Projections* and its companions, which write the idempotent $\tilde\Pi$ and the generic element $\tilde P$ side by side.
 
 The convention is one of **notation, not of substance**: an element written $\tilde\Pi$ is not a different kind of object from one written $\tilde Q$, only an element known to be idempotent, and the glyph records that knowledge at the point of use. Where a passage needs a generic idempotent variable it may write $\tilde\Pi$, and where it needs a generic element it writes $\tilde P$ or $\tilde Q$.
 
@@ -209,7 +209,7 @@ The working conventions are the corpus's own. Every article is registered in exa
 | ${}^{\natural}$ | quaternion conjugation: the intrinsic conjugate of the algebra |
 | ${}^{*}$ | Hermitian conjugation, the composite of the bar and the natural sign |
 | ${}^{\flat} = -{}^{*}$ | anti-Hermitian conjugation |
-| ${}^{\dagger}$ | the adjoint of an operator, which on an element may coincide with the star |
+| ${}^{\dagger}$ | the general adjoint of an operator, of which the star is the instance in the positive definite form; written on operators and never on elements |
 | $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}, \mathbb{O}$ | the number systems of the corpus, in the order the corpus reaches them |
 | lower case, upper case | the scalar sector is the reals, or larger than the reals |
 | tilde | the presence of the quaternionic factor |

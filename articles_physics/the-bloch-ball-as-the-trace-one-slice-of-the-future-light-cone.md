@@ -430,6 +430,8 @@ both non-negative for $ct > 0$ and both non-positive for $ct < 0$. The sign of t
 
 The maximally mixed state is the image the map singles out. It is $\tilde{\rho} = \tfrac{1}{2}e_0$, the center of the ball, and its mirror on the trace-one slice is $\tilde{Q} = i\,e_0$: timelike, of the largest interval on that slice, and equal to the four-velocity of a particle at rest divided by $c$. At the other end the idempotents, the boundary of the ball, mirror the null four-vectors. So the ordering of the ball by purity is the ordering of the timelike cone by the interval, read in reverse: the least pure state mirrors the most timelike four-vector, and the pure states mirror the light cone.
 
+**Reading (decoherence as inward motion).** The dictionary has a process reading. The pure states are the boundary of the ball and the light cone of the material sector; the maximally mixed state is the centre and the rest four-vector. A decoherence process moves a state from the boundary toward the centre, and under the mirror map that is motion from the null boundary into the **causal interior**, from a lightlike four-vector toward the timelike rest vector. Because the linear entropy is $S_{\mathrm{lin}} = 2N(\tilde{\rho}) = -\tfrac{1}{2}N(\tilde{Q})$, an increase in entropy is exactly the growth of the timelike interval of the mirror, so **entropy increase tracks the inward motion** on the causal side. The reading is a reading of the dictionary and not a new theorem: the dictionary is static and exact, the motion is the added interpretation, and the algebra supplies no rate and no mechanism for it.
+
 ### One Formula, Two Actors
 
 The two readings use one action. On $\mathbb{M}_-$,

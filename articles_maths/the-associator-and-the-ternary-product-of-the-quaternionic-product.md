@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
 $$
 
-the second of the four products of the biquaternion algebra $\mathbb{B}$, whose rule is *The Four Biquaternion Complex Products* §*The General Quaternionic Bilinear Product* and whose algebra is *Introduction to the General Quaternionic Algebra of Biquaternions*. The product is $\mathbb{C}$-bilinear and has $e_0$ as a left unit and no right one; the previous two articles read its square, its idempotents and its zero divisors. This article reads its **associativity defect**.
+the second of the four general products of the biquaternion algebra $\mathbb{B}$, whose rule is *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product* and whose algebra is *Introduction to the General Quaternionic Algebra of Biquaternions*. The product is $\mathbb{C}$-bilinear and has $e_0$ as a left unit and no right one; the previous two articles read its square, its idempotents and its zero divisors. This article reads its **associativity defect**.
 
 For a bilinear product the defect is the **associator**
 
@@ -59,7 +59,7 @@ and $24$ of the $64$ triples of basis elements give a nonzero associator.
 
 ## The Failure of the Weaker Laws
 
-The associator is the strongest defect; the ladder records the weaker ones, and the quaternionic product fails them all (*Comparison Between the Four Biquaternion Products* §*Alternative, Flexible and Power Associative*).
+The associator is the strongest defect; the ladder records the weaker ones, and the quaternionic product fails them all (*Comparison Between the Four General Products* §*Alternative, Flexible and Power Associative*).
 
 **Theorem (no rung of the ladder).** The product $\star$ is not alternative, not flexible and not power-associative; it fails even third-power associativity.
 

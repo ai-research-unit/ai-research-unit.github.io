@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The underlying $\mathbb{R}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is eight-dimensional, with the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ of *Biquaternions as a Vector Space over $\mathbb{R}$*. The general plain bilinear product of *The Four Biquaternion Complex Products* is $\mathbb{R}$-bilinear as well as $\mathbb{C}$-bilinear, so the same rule that makes that space a $\mathbb{C}$-algebra also makes it an $\mathbb{R}$-algebra, of twice the dimension. This article takes that product as the multiplication of the **real algebra** and reads off the structure the real scalars produce.
+The underlying $\mathbb{R}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is eight-dimensional, with the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ of *Biquaternions as a Vector Space over $\mathbb{R}$*. The general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* is $\mathbb{R}$-bilinear as well as $\mathbb{C}$-bilinear, so the same rule that makes that space a $\mathbb{C}$-algebra also makes it an $\mathbb{R}$-algebra, of twice the dimension. This article takes that product as the multiplication of the **real algebra** and reads off the structure the real scalars produce.
 
-The axioms are the same as over $\mathbb{C}$ and what they produce is finer. The product is $\mathbb{R}$-bilinear, associative and unital, so the space is an associative unital $\mathbb{R}$-algebra; the sixty-four products of the eight basis elements fix the multiplication; and the algebra is then read off. What the smaller scalar system exposes is the subject of the middle of the article: the central imaginary $i$ is an element of the real algebra rather than a scalar, so the real algebra carries the complex structure of $\mathbb{B}$ as an operator; the four conjugations are all ordinary $\mathbb{R}$-linear maps; and the signs of the squares of the eight basis elements separate the quaternion directions from the complex and split-complex ones.
+The axioms are the same as over $\mathbb{C}$ and what they produce is finer. The product is $\mathbb{R}$-bilinear, associative and unital, so the space is an associative unital $\mathbb{R}$-algebra; the sixty-four general products of the eight basis elements fix the multiplication; and the algebra is then read off. What the smaller scalar system exposes is the subject of the middle of the article: the central imaginary $i$ is an element of the real algebra rather than a scalar, so the real algebra carries the complex structure of $\mathbb{B}$ as an operator; the four conjugations are all ordinary $\mathbb{R}$-linear maps; and the signs of the squares of the eight basis elements separate the quaternion directions from the complex and split-complex ones.
 
 Two boundaries are stated at once. The product is not defined here: its coordinate rule and its scalar–vector form are *Introduction to the General Plain Algebra of Biquaternions*. The reading of the same product with the complex scalars is *Introduction to the General Plain Algebra of Biquaternions*, where the structure map, the centre and central simplicity are developed, and the complex algebra cited here is that article's; the real scalars are used here and the complex material is cited, not repeated. The elements, the basis, the conjugations and the six distinguished subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*.
 
@@ -41,7 +41,7 @@ with each $R_\mu$ complex and each of its two real parts a real bilinear express
 
 ### The Multiplication Table
 
-An $\mathbb{R}$-bilinear product is fixed by its values on the pairs of basis elements, so the multiplication is fixed by the following sixty-four products. They are arranged in four blocks: the products of the four quaternion units, the two mixed blocks where exactly one factor carries $i$, and the block where both do.
+An $\mathbb{R}$-bilinear product is fixed by its values on the pairs of basis elements, so the multiplication is fixed by the following sixty-four general products. They are arranged in four blocks: the products of the four quaternion units, the two mixed blocks where exactly one factor carries $i$, and the block where both do.
 
 **Proposition.** The products of the eight basis elements are
 
@@ -171,7 +171,7 @@ $$
 
 Over $\mathbb{C}$ the map $\natural$ fixes the coefficients and so is $\mathbb{C}$-linear, while $\bar{\cdot}$ and ${}^{*} = \bar{\cdot} \circ \natural$ conjugate them and are only $\mathbb{C}$-antilinear; the real reading draws no distinction between the two notions, since the conjugate of a real scalar is itself. This is the simplest of the two readings of the four maps, and the one in which each of them is an ordinary linear operator: the natural conjugation is a reflection, the complex conjugation is a reflection of a different kind, and the star and the flat map are the composites.
 
-The algebra structure of the four is nonetheless the same in both readings: $\natural$ is a $\mathbb{C}$-linear anti-automorphism of the complex algebra and an $\mathbb{R}$-linear anti-automorphism of the real one, and $\bar{\cdot}$ is an automorphism of the underlying real algebra that is conjugate-linear over $\mathbb{C}$. It is therefore not a $\mathbb{C}$-algebra automorphism.
+The algebra structure of the four general products is nonetheless the same in both readings: $\natural$ is a $\mathbb{C}$-linear anti-automorphism of the complex algebra and an $\mathbb{R}$-linear anti-automorphism of the real one, and $\bar{\cdot}$ is an automorphism of the underlying real algebra that is conjugate-linear over $\mathbb{C}$. It is therefore not a $\mathbb{C}$-algebra automorphism.
 
 ## The Complex Structure and the Change of Scalars
 
@@ -275,7 +275,7 @@ whereas $\mathbb{C}[e_1] = \mathbb{C}e_0 \oplus \mathbb{C}e_1$ has real dimensio
 
 ## Summary
 
-The general plain bilinear product, read on the underlying real space of $\mathbb{B}$, is $\mathbb{R}$-bilinear, associative and unital. It is fixed by the sixty-four products of the eight basis elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and the table is organised in four blocks: the quaternion table, that table multiplied by $i$ in the two mixed blocks, and the table negated.
+The general plain bilinear product, read on the underlying real space of $\mathbb{B}$, is $\mathbb{R}$-bilinear, associative and unital. It is fixed by the sixty-four general products of the eight basis elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and the table is organised in four blocks: the quaternion table, that table multiplied by $i$ in the two mixed blocks, and the table negated.
 
 $$
 \boxed{\ \text{With the general plain bilinear product, } \mathbb{B} \text{ is an associative unital non-commutative } \mathbb{R}\text{-algebra of dimension eight.}\ }
@@ -283,7 +283,7 @@ $$
 
 What the real scalars expose is the sign pattern of the eight squares and its consequences. The element $ie_0$ is a second square root of $-e_0$ and is central, so the centre $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$ is a field; the elements $ie_1,ie_2,ie_3$ square to $+e_0$, so each plane $\operatorname{span}_\mathbb{R}\{e_0,ie_k\}$ is a copy of the split complex numbers with idempotents $\tfrac12(e_0 \pm ie_k)$; the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is a real subalgebra and a real form, while its imaginary $i\mathbb{H}_{\mathbb{B}}$ is not a subalgebra; and the central element $i$ is a complex structure $J$ on the whole algebra, an algebra automorphism with $J^2 = -\mathrm{id}$.
 
-The real algebra is the restriction of scalars of the complex algebra of *Introduction to the General Plain Algebra of Biquaternions*, related to it by $\dim_\mathbb{R}\mathbb{B} = 2\dim_\mathbb{C}\mathbb{B} = 8$; its extension of scalars is a larger algebra of complex dimension eight, and the complex algebra is the extension of scalars of $\mathbb{H}$ instead. The centre decides the admissible bases: $\mathbb{R}$ and $\mathbb{C}$ qualify and $\mathbb{H}$ and $\mathbb{B}$ do not, since the base ring must map into the complex centre and no unital homomorphism $\mathbb{H} \to \mathbb{C}$ exists. Finally, over $\mathbb{R}$ all four products are bilinear, and the axioms alone select the general plain bilinear product as the multiplication.
+The real algebra is the restriction of scalars of the complex algebra of *Introduction to the General Plain Algebra of Biquaternions*, related to it by $\dim_\mathbb{R}\mathbb{B} = 2\dim_\mathbb{C}\mathbb{B} = 8$; its extension of scalars is a larger algebra of complex dimension eight, and the complex algebra is the extension of scalars of $\mathbb{H}$ instead. The centre decides the admissible bases: $\mathbb{R}$ and $\mathbb{C}$ qualify and $\mathbb{H}$ and $\mathbb{B}$ do not, since the base ring must map into the complex centre and no unital homomorphism $\mathbb{H} \to \mathbb{C}$ exists. Finally, over $\mathbb{R}$ all four general products are bilinear, and the axioms alone select the general plain bilinear product as the multiplication.
 
 ## Summary of Notation
 

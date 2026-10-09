@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four products on its underlying $\mathbb{C}$-vector space (*The Four Biquaternion Complex Products*), and the fourth of them,
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products of the Biquaternion $\mathbb{C}$ Space*), and the fourth of them,
 
 $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
 $$
 
-is the subject of this group. The rule, the scalar–vector form and the place of the product among the four are *The Four Biquaternion Complex Products* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its two actions of the unit are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, and $\mathbf P = \sum_k P_k e_k$ is the vector part.
+is the subject of this group. The rule, the scalar–vector form and the place of the product among the four are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its two actions of the unit are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, and $\mathbf P = \sum_k P_k e_k$ is the vector part.
 
 The subject of this article is the pair of **one-sided actions of the unit candidate** $e_0$, and the fact that they are not the identity but the two conjugations of the algebra:
 
@@ -19,7 +19,7 @@ $$
 
 Both hold for every $\tilde Q$, and both are then read on the six distinguished subspaces. Their consequence is the group's defining negative statement: the multiplication has **no unit on either side**. There is no element $\tilde E$ with $\tilde E \star \tilde Q = \tilde Q$ for all $\tilde Q$, and none with $\tilde Q \star \tilde E = \tilde Q$ for all $\tilde Q$. The third product of the four has a right unit and no left one, the second has a left unit and no right one, and the first has a unit; the fourth has neither, and this is what separates its structure theory from the other three.
 
-The article owns the two actions and the absence of a unit. It reads the actions off the rule, which is *The Four Biquaternion Complex Products*; it uses the two scalar rules of the category, which are *Sesqualgebras* §*The Definition*; it uses the derived-operation test with its two conditions, which is *Sesqualgebras* §*The Standard Example* as applied to $\mathbb{B}$ in *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* §*The Product Is Not the Derived Operation*; and it uses the reading of the two conjugations on the six subspaces, which is *Introduction to the Six Subspaces* and *Comparison of the Six Subspaces*. It does not treat the general operators of the multiplication, which are the later article of this group *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*, nor the ternary product, which is *The Ternary Product and the Failure of the Jordan Triple Identity*.
+The article owns the two actions and the absence of a unit. It reads the actions off the rule, which is *The Four General Products of the Biquaternion $\mathbb{C}$ Space*; it uses the two scalar rules of the category, which are *Sesqualgebras* §*The Definition*; it uses the derived-operation test with its two conditions, which is *Sesqualgebras* §*The Standard Example* as applied to $\mathbb{B}$ in *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* §*The Product Is Not the Derived Operation*; and it uses the reading of the two conjugations on the six subspaces, which is *Introduction to the Six Subspaces* and *Comparison of the Six Subspaces*. It does not treat the general operators of the multiplication, which are the later article of this group *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*, nor the ternary product, which is *The Ternary Product and the Failure of the Jordan Triple Identity*.
 
 ## The Two Actions of the Unit
 
@@ -133,11 +133,11 @@ the insertion being in the first slot and the derived operation being $\tilde P\
 
 **Proof.** The formula is the rule. The map ${}^{\natural}$ is a $\mathbb{C}$-linear anti-automorphism and a bijection of $\mathbb{B}$, and an isotope of an operation by a bijection $\varphi$ is the operation $(x,y) \mapsto \varphi(x)\,y$; here $\varphi = {}^{\natural}$. $\square$
 
-**Remark.** The two sesquilinear products of the four are the derived operation and its ${}^{\natural}$-isotope, exactly as the two bilinear products of the four are the plain multiplication and its ${}^{\natural}$-isotope; in each pair the second is the first with the $\mathbb{C}$-linear insertion the derived-operation test rejects (*Comparison Between the Four Biquaternion Products* §*Which of the Four Is a Multiplication*, *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* §*The Isotope Reading*). The absence of a unit in the second member of each pair is the price of the insertion: the derived operation keeps the right unit $e_0$, and its isotope loses it in the first slot.
+**Remark.** The two sesquilinear products of the four are the derived operation and its ${}^{\natural}$-isotope, exactly as the two bilinear products of the four are the plain multiplication and its ${}^{\natural}$-isotope; in each pair the second is the first with the $\mathbb{C}$-linear insertion the derived-operation test rejects (*Comparison Between the Four General Products* §*Which of the Four Is a Multiplication*, *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* §*The Isotope Reading*). The absence of a unit in the second member of each pair is the price of the insertion: the derived operation keeps the right unit $e_0$, and its isotope loses it in the first slot.
 
 ## The Actions on the Six Subspaces
 
-The six distinguished subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$ (*Introduction to the Six Subspaces*). Each of the two conjugations preserves each of the six (*The Six Subspaces and the Four Complex Products* §*The four products have the same value set*), so each action of $e_0$ restricts to each subspace, and the two restrictions are computed below.
+The six distinguished subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$ (*Introduction to the Six Subspaces*). Each of the two conjugations preserves each of the six (*The Six Subspaces and the Four General Products* §*The four general products have the same value set*), so each action of $e_0$ restricts to each subspace, and the two restrictions are computed below.
 
 **Theorem (the two actions on the six subspaces).**
 
@@ -198,7 +198,7 @@ With no unit, the derived vocabulary of an algebra has to be replaced, and the g
 
 ### The Comparison with the Sibling Products
 
-**Theorem (the unit row of the four products).**
+**Theorem (the unit row of the four general products).**
 
 | product | left unit | right unit |
 |---|---|---|
@@ -209,7 +209,7 @@ With no unit, the derived vocabulary of an algebra has to be replaced, and the g
 
 **Proof.** The plain product is the associative product of the algebra and has the two-sided unit $e_0$. For the sibling bilinear product, $e_0 \star \tilde Y = e_0^{\natural}\tilde Y = \tilde Y$ because ${}^{\natural}$ fixes $e_0$, so $e_0$ is a left unit, and there is no right one (*Introduction to the General Quaternionic Algebra of Biquaternions* §*The Unit*). For the sibling sesquilinear product, $\tilde Y \star e_0 = \tilde Y\tilde e_0^{*} = \tilde Y$, so $e_0$ is a right unit, and there is no left one (*Introduction to the General Plain Sesqualgebra of Biquaternions* §*The Right Unit*). The fourth row is the two theorems of this article, in the form that both actions of $e_0$ are conjugations and neither is the identity. $\square$
 
-**Remark.** The four rows are the sharpest reading of the two slots. Each of the four products makes one of the two slots the identity and the other slot the twist: the two bilinear products put the twist in the first slot and the identity in the second, one of them losing the right unit and the other the left; the sibling sesquilinear product has the twist in the second slot and the identity in the first, keeping the right unit; and this product puts a twist in both slots, keeping neither. The table is the unit row of the comparison of the four products, *Comparison Between the Four Biquaternion Products*, read with the two actions of this article.
+**Remark.** The four rows are the sharpest reading of the two slots. Each of the four general products makes one of the two slots the identity and the other slot the twist: the two bilinear products put the twist in the first slot and the identity in the second, one of them losing the right unit and the other the left; the sibling sesquilinear product has the twist in the second slot and the identity in the first, keeping the right unit; and this product puts a twist in both slots, keeping neither. The table is the unit row of the comparison of the four general products, *Comparison Between the Four General Products*, read with the two actions of this article.
 
 ## Summary
 

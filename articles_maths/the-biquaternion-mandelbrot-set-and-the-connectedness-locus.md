@@ -118,7 +118,7 @@ and the critical-orbit locus of the plane is the product $\mathcal M\times\mathc
 
 **Proof.** $\tilde\Pi^2=\tilde\Pi$, $\tilde\Pi'^2=\tilde\Pi'$ and $\tilde\Pi\tilde\Pi'=0$ give $(A\tilde\Pi+B\tilde\Pi')^2=A^2\tilde\Pi+B^2\tilde\Pi'$, and the parameter splits the same way; the two coordinates do not interact, so the orbit is the pair of complex orbits and both must be bounded.
 
-**Remark (the choice of product and the shape of the locus).** On the diagonal subalgebra the complex bilinear product has no cross term, so the locus is a product; a product that mixes the two coordinates would couple the two iterations, and the locus would be neither a product nor a union but a genuinely two-variable object. **The phrase "intersection or union of two lower-dimensional loci" is exact only where the algebra splits; where it does not, no such description holds.** The comparison of the four products is *Comparison Between the Four Biquaternion Products*.
+**Remark (the choice of product and the shape of the locus).** On the diagonal subalgebra the complex bilinear product has no cross term, so the locus is a product; a product that mixes the two coordinates would couple the two iterations, and the locus would be neither a product nor a union but a genuinely two-variable object. **The phrase "intersection or union of two lower-dimensional loci" is exact only where the algebra splits; where it does not, no such description holds.** The comparison of the four general products is *Comparison Between the Four General Products*.
 
 ## The Computable Slices
 

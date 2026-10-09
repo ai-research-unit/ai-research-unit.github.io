@@ -110,7 +110,7 @@ $$
 
 The adjoint is unique, so $(\Theta_{\tilde{Q}})^{*}=\Theta_{\tilde{Q}^{*}}$. The identity was checked on the four basis elements and on random elements to machine precision.
 
-**Corollary (the dagger is natural for the family).** The assignment $\tilde{Q}\mapsto\Theta_{\tilde{Q}}$ carries the dagger of the algebra to the adjoint of the operator: $\Theta_{\tilde{Q}^{*}}=(\Theta_{\tilde{Q}})^{*}$. The family is therefore stable under the adjoint, and the adjoint of $\Theta_{\tilde{Q}}$ is again a two-sided operator, of the adjoint element. In particular $\Theta_{\tilde{Q}}$ is invertible if and only if $\tilde{Q}\in\mathbb{B}^{\times}$, with $(\Theta_{\tilde{Q}})^{-1}=\Theta_{\tilde{Q}^{-1}}$, by the composition law.
+**Corollary (the dagger is natural for the family).** The assignment $\tilde{Q}\mapsto\Theta_{\tilde{Q}}$ carries the dagger of the algebra to the adjoint of the operator: $\Theta_{\tilde{Q}}^{\dagger}=(\Theta_{\tilde{Q}})^{*}=\Theta_{\tilde{Q}^{*}}$, the dagger and the star coinciding because the adjoint in view is the one of the definite form. The family is therefore stable under the adjoint, and the adjoint of $\Theta_{\tilde{Q}}$ is again a two-sided operator, of the adjoint element. In particular $\Theta_{\tilde{Q}}$ is invertible if and only if $\tilde{Q}\in\mathbb{B}^{\times}$, with $(\Theta_{\tilde{Q}})^{-1}=\Theta_{\tilde{Q}^{-1}}$, by the composition law.
 
 **Remark (the real form gives the same adjoint).** The real part $\mathrm{Re}\langle\cdot,\cdot\rangle_{*}$ is a definite inner product on the eight-dimensional real space $\mathbb{B}$, and a $\mathbb{C}$-linear operator is real-linear; its adjoint for the definite form is the same operator $\Theta_{\tilde{Q}^{*}}$, because the defining identity splits into real and imaginary parts and both hold. So no ambiguity arises from the choice between the complex and the real form.
 
@@ -254,7 +254,7 @@ The biquaternion algebra $\mathbb{B}$ with its Hermitian conjugation carries the
 
 ## Further Reading
 
-- *The Four Adjoints of the Biquaternion Algebra in Examples* (`articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.md`), for the Hermitian adjoint side by side with the other three adjoints and for the reading of the suffix of the family as the name of the adjoint
+- *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the Hermitian adjoint side by side with the other three adjoints and for the reading of the suffix of the family as the name of the adjoint
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, the four conjugations, the six subspaces and the scalar form.
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the quaternion norm, the invertibility criterion and the group of units, to be kept apart from the positive definite form of this article.
 - *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), the companion article, where the parameter enters linearly and the sectors give skew and self-adjoint operators.

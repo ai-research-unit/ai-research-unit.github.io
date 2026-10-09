@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
 $$
 
-the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The General Quaternionic Bilinear Product*), whose algebra and whose left unit are *Introduction to the General Quaternionic Algebra of Biquaternions*. Its square is central,
+the second of the four general products of the biquaternion algebra $\mathbb{B}$ (*The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*), whose algebra and whose left unit are *Introduction to the General Quaternionic Algebra of Biquaternions*. Its square is central,
 
 $$
 \tilde Q\star\tilde Q = N(\tilde Q)\,e_0 , \qquad N(\tilde Q) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 ,
@@ -53,7 +53,7 @@ The square-zero elements of $\star$ are therefore $0$ together with the whole ze
 
 **Proof.** By the square-zero theorem $\tilde Q\star\tilde Q = 0$ is $N(\tilde Q) = 0$, and by the unit criterion $N(\tilde Q) = 0$ is exactly the zero-divisor condition for $\tilde Q \neq 0$. $\square$
 
-This is the sharpest contrast of the group with the associative multiplication. There the square is $\tilde Q\tilde Q = Q_0^2e_0 + 2Q_0\mathbf Q + \mathbf Q^2$, and its vanishing forces $Q_0 = 0$ and $(\mathbf Q,\mathbf Q) = 0$: the square-zero elements of the plain product are the **pure** isotropic vectors, a real cone of dimension four, and they are a proper subset of the zero divisors (*Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*). Reading the first slot through ${}^{\natural}$ removes the scalar term from the square — the two copies of $Q_0\mathbf Q$ cancel and the scalar part becomes the signless sum — and the square-zero set expands to the whole zero-divisor cone.
+This is the sharpest contrast of the group with the associative multiplication. There the square is $\tilde Q\tilde Q = Q_0^2e_0 + 2Q_0\mathbf Q + \mathbf Q^2$, and its vanishing forces $Q_0 = 0$ and $(\mathbf Q,\mathbf Q) = 0$: the square-zero elements of the plain product are the **pure** isotropic vectors, a real cone of dimension four, and they are a proper subset of the zero divisors (*Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*). Reading the first slot through ${}^{\natural}$ removes the scalar term from the square — the two copies of $Q_0\mathbf Q$ cancel and the scalar part becomes the signless sum — and the square-zero set expands to the whole zero-divisor cone.
 
 **Example.** The Hermitian projector $\tilde\Pi_+(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ over a real unit vector $\hat\mu$ has norm
 $$
@@ -146,9 +146,9 @@ $$
 
 In both cases the element $\tilde Q$ lies in its own annihilator, and the annihilator is a two-dimensional $\mathbb{C}$-subspace; the two bases are read off the multiplication table and verified by multiplication.
 
-## The Square-Zero Elements of the Four Products
+## The Square-Zero Elements of the Four General Products
 
-The square of an element, and hence its square-zero set, separates the four products of the chapter (*Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*):
+The square of an element, and hence its square-zero set, separates the four general products of the chapter (*Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*):
 
 | product | square-zero elements |
 |---|---|

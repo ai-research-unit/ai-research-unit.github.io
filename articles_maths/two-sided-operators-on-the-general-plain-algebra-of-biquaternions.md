@@ -232,7 +232,7 @@ The two-sided operators are the products $L_{\tilde A}R_{\tilde B}(\tilde Y)=\ti
 
 ## Further Reading
 
-- *The Four Adjoints of the Biquaternion Algebra in Examples* (`articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.md`), for the four adjoints of one two-sided operator and the self-adjointness criteria, of which the association column is the first
+- *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the four adjoints of one two-sided operator and the self-adjointness criteria, of which the association column is the first
 - *The Pin and Spin Groups of the General Plain Algebra of Biquaternions* (`articles_maths/the-pin-and-spin-groups-of-the-general-plain-algebra-of-biquaternions.md`), the plain twin of the quaternionic pin and spin article, for the isometry side of the criterion $\tilde B\tilde A=\pm e_0$: the two cosets $\pm\mathrm{Ad}_{\tilde A}$, the vacuous isometry condition, and the reason no shell of the plain form is a group.
 - *One-Sided Operators on the General Plain Algebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-plain-algebra-of-biquaternions.md`), the companion article, for the factors $L_{\tilde A}$ and $R_{\tilde B}$, the swap $L^{\approx}=R$, and the one-sided form-preserving theorem used in the proof of the isometry criterion.
 - *Association and the Transpose on the Biquaternion Algebra* (`articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.md`), for the associate $F^{\approx}$, the basis rule $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$, and the reversal $(FG)^{\approx}=G^{\approx}F^{\approx}$.

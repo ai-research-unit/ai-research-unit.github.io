@@ -53,7 +53,7 @@ f(r) = 1-\frac{r_s}{r},
 r_s = \frac{2GM}{c^2}.
 $$
 
-The metric is **imported**: nothing in the biquaternion algebra produces it. *Curved Spacetime and the Biquaternion Framework* records that the framework's own local-scale route is too rigid to contain black-hole exteriors (within its metric class Ricci-flatness forces flatness), and that a general metric can be carried only by a frame field $\tilde E_\mu(x)\in\mathbb{M}_-$, with $g_{\mu\nu}=\langle\tilde E_\mu,\tilde E_\nu\rangle$, which the algebra accepts but does not determine. What the algebra carries at each point is the local tangent structure — the light cone of $\mathbb{M}_-$ in that point's frame, the zero-divisor cone — and the four-vector kinematics of the field. It does not carry the global horizon.
+The metric is **imported**: nothing in the biquaternion algebra produces it. *Curved Spacetime and the Biquaternion Framework* records that the framework's own local-scale route is too rigid to contain black-hole exteriors (within its metric class Ricci-flatness forces flatness), and that a general metric can be carried only by a frame field $\tilde E_\mu(x)\in\mathbb{M}_-$, with $g_{\mu\nu}=\langle\tilde E_\mu,\tilde E_\nu\rangle_{\natural}$, which the algebra accepts but does not determine. What the algebra carries at each point is the local tangent structure — the light cone of $\mathbb{M}_-$ in that point's frame, the zero-divisor cone — and the four-vector kinematics of the field. It does not carry the global horizon.
 
 The horizon is the surface
 

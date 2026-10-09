@@ -1,8 +1,8 @@
-# __The Annihilating Elements of the Four Products__
+# __The Annihilating Elements of the Four General Products__
 
 ## Introduction
 
-The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four products, and the four preceding groups of the chapter read one product each: the general plain bilinear product as the multiplication of an associative algebra with unit (*Introduction to the General Plain Algebra of Biquaternions*), the general quaternionic bilinear product (*Introduction to the General Quaternionic Algebra of Biquaternions*), the general plain sesquilinear product as the multiplication of a sesqualgebra (*Introduction to the General Plain Sesqualgebra of Biquaternions*), and the general quaternionic sesquilinear product (*Introduction to the General Quaternionic Sesqualgebra of Biquaternions*). Each group developed the element theory of its own product: the square of an element, the idempotents, the square-zero elements and the units of the multiplication. This article reads the four element theories together, through the one algebraic invariant that governs all four and through the annihilators each product attaches to an element.
+The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, and the four preceding groups of the chapter read one product each: the general plain bilinear product as the multiplication of an associative algebra with unit (*Introduction to the General Plain Algebra of Biquaternions*), the general quaternionic bilinear product (*Introduction to the General Quaternionic Algebra of Biquaternions*), the general plain sesquilinear product as the multiplication of a sesqualgebra (*Introduction to the General Plain Sesqualgebra of Biquaternions*), and the general quaternionic sesquilinear product (*Introduction to the General Quaternionic Sesqualgebra of Biquaternions*). Each group developed the element theory of its own product: the square of an element, the idempotents, the square-zero elements and the units of the multiplication. This article reads the four element theories together, through the one algebraic invariant that governs all four and through the annihilators each product attaches to an element.
 
 The invariant is the **central square**
 
@@ -10,11 +10,11 @@ $$
 \tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q = c(\tilde Q)e_0 , \qquad c(\tilde Q) = \sum_{\mu=0}^{3}Q_\mu^{2} .
 $$
 
-It is the second-order invariant the algebra carries, and its vanishing is the criterion of invertibility. Three facts organise the article. First, the central square is multiplicative for each of the four products, by two laws, one for the bilinear pair and one for the sesquilinear pair; the four laws are one law read through the conjugation each product carries. Second, the elements that admit a nonzero annihilating factor are the same elements for the four products, exactly the vanishing set of the central square; the article proves this and reads it in the matrix model, where the set is the rank-one elements, and in coordinates, where it is a complex cone of complex dimension three. Third, that one set of elements does **not** determine the theory: the annihilators of one fixed annihilated element, the square-zero sets, the idempotent sets and the unit structures differ from one product to the next, and the article tabulates the four readings with the owner of each entry named.
+It is the second-order invariant the algebra carries, and its vanishing is the criterion of invertibility. Three facts organise the article. First, the central square is multiplicative for each of the four general products, by two laws, one for the bilinear pair and one for the sesquilinear pair; the four laws are one law read through the conjugation each product carries. Second, the elements that admit a nonzero annihilating factor are the same elements for the four general products, exactly the vanishing set of the central square; the article proves this and reads it in the matrix model, where the set is the rank-one elements, and in coordinates, where it is a complex cone of complex dimension three. Third, that one set of elements does **not** determine the theory: the annihilators of one fixed annihilated element, the square-zero sets, the idempotent sets and the unit structures differ from one product to the next, and the article tabulates the four readings with the owner of each entry named.
 
-The article owns the central square and its four multiplicative laws, the identity of the annihilated set with the vanishing set of the central square, the rank-one reading of that set in the matrix model, its cone structure, and the comparison of the four annihilators of one fixed annihilated element. It repeats the four square-zero sets, the four idempotent sets and the four unit structures as a synthesis of the four groups, and it closes on the boundary the annihilated set carries: the set $\{c = 0\}$ is **not** the isotropic cone of the general plain bilinear form $\mathrm{Sc}(\tilde P\tilde Q)$, which belongs to *The Isotropic Structure of the General Plain Bilinear Form*. The restriction of the whole picture to the six distinguished subspaces is *The Six Subspaces and the Four Complex Products*.
+The article owns the central square and its four multiplicative laws, the identity of the annihilated set with the vanishing set of the central square, the rank-one reading of that set in the matrix model, its cone structure, and the comparison of the four annihilators of one fixed annihilated element. It repeats the four square-zero sets, the four idempotent sets and the four unit structures as a synthesis of the four groups, and it closes on the boundary the annihilated set carries: the set $\{c = 0\}$ is **not** the isotropic cone of the general plain bilinear form $\mathrm{Sc}(\tilde P\tilde Q)$, which belongs to *The Isotropic Structure of the General Plain Bilinear Form*. The restriction of the whole picture to the six distinguished subspaces is *The Six Subspaces and the Four General Products*.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu = Q_0e_0+\mathbf Q$ with $Q_0\in\mathbb{C}$ and $\mathbf Q = \sum_{k=1}^{3}Q_ke_k$. The four products and their notation are those of *The Four Biquaternion Complex Products*: $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, with the natural conjugation $\tilde Q^{\natural} = Q_0-\mathbf Q$ and the star $\tilde Q^{*} = \overline{Q_0}-\overline{\mathbf Q}$, so that ${}^{*} = \bar{\cdot}\circ{}^{\natural}$. The **central square** is $\tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q = c(\tilde Q)e_0$ with $c(\tilde Q) = \sum_\mu Q_\mu^{2}$, a central element, and $(\mathbf P,\mathbf Q) = \sum_k P_kQ_k$ is the general plain bilinear form of the two vector parts.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu = Q_0e_0+\mathbf Q$ with $Q_0\in\mathbb{C}$ and $\mathbf Q = \sum_{k=1}^{3}Q_ke_k$. The four general products and their notation are those of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*: $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, with the natural conjugation $\tilde Q^{\natural} = Q_0-\mathbf Q$ and the star $\tilde Q^{*} = \overline{Q_0}-\overline{\mathbf Q}$, so that ${}^{*} = \bar{\cdot}\circ{}^{\natural}$. The **central square** is $\tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q = c(\tilde Q)e_0$ with $c(\tilde Q) = \sum_\mu Q_\mu^{2}$, a central element, and $(\mathbf P,\mathbf Q) = \sum_k P_kQ_k$ is the general plain bilinear form of the two vector parts.
 
 ## The Central Square and the Matrix Model
 
@@ -38,7 +38,7 @@ The central square is the reason the second-order theory does the work of the wh
 
 ## The Four Multiplicative Laws of the Central Square
 
-Each of the four products multiplies the central square by one of two laws, and the law is the one the second slot carries.
+Each of the four general products multiplies the central square by one of two laws, and the law is the one the second slot carries.
 
 **Theorem (the four laws).** For all $\tilde P,\tilde Q\in\mathbb{B}$,
 
@@ -52,17 +52,17 @@ $$
 
 **Proof.** The two bilinear laws are the multiplicativity of the previous section together with $c(\tilde P^{\natural}) = c(\tilde P)$. For the two sesquilinear products the second factor carries the star, and $c(\tilde Q^{*}) = \overline{c(\tilde Q)}$; the value read in the plain product, of which the central square is the second-order invariant, is then $c(\tilde P)\overline{c(\tilde Q)}$ in both cases, the natural conjugation of the first factor leaving its own central square alone. $\square$
 
-The two laws are one law with a choice in each slot, and the choice is the same one that separates the four products in the comparison table: a slot read without a conjugation contributes the central square, a slot read through the conjugated star contributes the conjugate of the central square, and the natural conjugation, being $\mathbb{C}$-linear, contributes the central square. The laws are the algebraic face of the fact that the four products are the four insertions of the two conjugations into the matrix product.
+The two laws are one law with a choice in each slot, and the choice is the same one that separates the four general products in the comparison table: a slot read without a conjugation contributes the central square, a slot read through the conjugated star contributes the conjugate of the central square, and the natural conjugation, being $\mathbb{C}$-linear, contributes the central square. The laws are the algebraic face of the fact that the four general products are the four insertions of the two conjugations into the matrix product.
 
-The laws are read on the square as the special case $\tilde P = \tilde Q$, and they are the reason the four element theories differ. The square of $\tilde Q$ in the plain product has central square $c(\tilde Q)^{2}$; in the natural product the square is the central element $c(\tilde Q)e_0$, whose central square is $c(\tilde Q)^{2}$ again; in the two sesquilinear products the square has central square $c(\tilde Q)\overline{c(\tilde Q)} = \lvert c(\tilde Q)\rvert^{2}$. The value $c^{2}$ for the two bilinear products and $\lvert c\rvert^{2}$ for the two sesquilinear ones is the second-order invariant of the four products, and the scalar parts of the four squares, which are not the central square, are *Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*.
+The laws are read on the square as the special case $\tilde P = \tilde Q$, and they are the reason the four element theories differ. The square of $\tilde Q$ in the plain product has central square $c(\tilde Q)^{2}$; in the natural product the square is the central element $c(\tilde Q)e_0$, whose central square is $c(\tilde Q)^{2}$ again; in the two sesquilinear products the square has central square $c(\tilde Q)\overline{c(\tilde Q)} = \lvert c(\tilde Q)\rvert^{2}$. The value $c^{2}$ for the two bilinear products and $\lvert c\rvert^{2}$ for the two sesquilinear ones is the second-order invariant of the four general products, and the scalar parts of the four squares, which are not the central square, are *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*.
 
 ## The Elements with an Annihilating Factor
 
-The four products are four multiplications of one space, and an element may or may not have a partner that multiplies it to zero. The set of elements that do is the same for the four.
+The four general products are four multiplications of one space, and an element may or may not have a partner that multiplies it to zero. The set of elements that do is the same for the four.
 
-**Definition.** Let $f$ be one of the four products. An element $\tilde X\neq0$ is an **annihilating factor** of $\tilde P$ when $f(\tilde P,\tilde X) = 0$ or $f(\tilde X,\tilde P) = 0$, on one side or the other.
+**Definition.** Let $f$ be one of the four general products. An element $\tilde X\neq0$ is an **annihilating factor** of $\tilde P$ when $f(\tilde P,\tilde X) = 0$ or $f(\tilde X,\tilde P) = 0$, on one side or the other.
 
-**Theorem (the annihilated set is the same for the four products).** For each of the four products the elements that admit an annihilating factor are exactly the elements of vanishing central square,
+**Theorem (the annihilated set is the same for the four general products).** For each of the four general products the elements that admit an annihilating factor are exactly the elements of vanishing central square,
 
 $$
 \{\tilde P : \exists\,\tilde X\neq0,\ f(\tilde P,\tilde X) = 0 \ \text{or}\ f(\tilde X,\tilde P) = 0\} = \{\tilde P : c(\tilde P) = 0\} ,
@@ -70,7 +70,7 @@ $$
 
 **Proof.** Fix a product $f$ and an element $\tilde P$, and consider the map $\tilde X\mapsto f(\tilde P,\tilde X)$, which is $\mathbb{C}$-linear for the two bilinear products and conjugate-linear for the two sesquilinear ones, and which in the matrix model is left multiplication by $\Phi(\tilde P)$ or by $\Phi(\tilde P^{\natural})$, composed with the conjugate transpose when the second slot carries the star. The map has a nonzero kernel exactly when that matrix is singular, that is exactly when $c(\tilde P) = 0$. Conversely, if $c(\tilde P) = 0$ and $\tilde P\neq0$, then $\tilde P\tilde P^{\natural} = 0$ with $\tilde P^{\natural}\neq0$ exhibits an annihilating factor in the plain product; the natural product takes the same factor, since $\tilde P^{\natural}\tilde P = c(\tilde P)e_0 = 0$; and the two products carrying the star take the conjugate $\overline{\tilde P}$, for which $\tilde P\overline{\tilde P}^{*} = \tilde P\tilde P^{\natural} = 0$ and $\tilde P^{\natural}\overline{\tilde P}^{*} = \tilde P^{\natural}\tilde P = 0$. The same argument with the roles of the two slots exchanged gives the other side. $\square$
 
-The theorem is a statement about one set and four annihilators, and the distinction matters. The set $\{c = 0\}$ is intrinsic to the algebra; the annihilator of a point of the set is not, and the next section reads the four of them. The zero divisors of the algebra are the nonzero points of the set, classified in *Biquaternion Zero Divisors*; the proof above is the sense in which each of the four products detects them.
+The theorem is a statement about one set and four annihilators, and the distinction matters. The set $\{c = 0\}$ is intrinsic to the algebra; the annihilator of a point of the set is not, and the next section reads the four of them. The zero divisors of the algebra are the nonzero points of the set, classified in *Biquaternion Zero Divisors*; the proof above is the sense in which each of the four general products detects them.
 
 ## The Cone and the Rank-One Elements
 
@@ -94,13 +94,13 @@ The two families are read in the six subspaces in *Introduction to the Six Subsp
 
 ## The Four Annihilators of One Annihilated Element
 
-Fix an element of the annihilated set, $\tilde P\neq0$ with $c(\tilde P) = 0$. Each of the four products has two one-sided annihilators of it, the set of $\tilde X$ with $f(\tilde P,\tilde X) = 0$ and the set of $\tilde X$ with $f(\tilde X,\tilde P) = 0$, and each is a complex plane, so that the four products carry eight planes, each of complex dimension two.
+Fix an element of the annihilated set, $\tilde P\neq0$ with $c(\tilde P) = 0$. Each of the four general products has two one-sided annihilators of it, the set of $\tilde X$ with $f(\tilde P,\tilde X) = 0$ and the set of $\tilde X$ with $f(\tilde X,\tilde P) = 0$, and each is a complex plane, so that the four general products carry eight planes, each of complex dimension two.
 
-**Theorem (dimension of the annihilators).** Let $f$ be any of the four products and let $\tilde P\neq0$. Then $\{\tilde X : f(\tilde P,\tilde X) = 0\}$ and $\{\tilde X : f(\tilde X,\tilde P) = 0\}$ are each of complex dimension two when $c(\tilde P) = 0$, and each $0$ when $c(\tilde P)\neq0$. For the natural product the two planes contain $\tilde P$, because $\tilde P^{\natural}\tilde P = \tilde P\tilde P^{\natural} = c(\tilde P)e_0$ vanishes there; for the other three products $\tilde P$ lies in its own annihilator exactly when it is square-zero in that product, which for $\tilde P\neq0$ happens for the plain and the fourth product and never for the general plain sesquilinear one (the square-zero table below).
+**Theorem (dimension of the annihilators).** Let $f$ be any of the four general products and let $\tilde P\neq0$. Then $\{\tilde X : f(\tilde P,\tilde X) = 0\}$ and $\{\tilde X : f(\tilde X,\tilde P) = 0\}$ are each of complex dimension two when $c(\tilde P) = 0$, and each $0$ when $c(\tilde P)\neq0$. For the natural product the two planes contain $\tilde P$, because $\tilde P^{\natural}\tilde P = \tilde P\tilde P^{\natural} = c(\tilde P)e_0$ vanishes there; for the other three products $\tilde P$ lies in its own annihilator exactly when it is square-zero in that product, which for $\tilde P\neq0$ happens for the plain and the fourth product and never for the general plain sesquilinear one (the square-zero table below).
 
 **Proof.** In the model the two conditions are the two kernels of the singular matrix $\Phi(\tilde P)$ or of its transpose with the conjugations, and a rank-one matrix has a two-dimensional kernel; for the natural product $\tilde P$ lies in its own annihilator on both sides because $\tilde P\tilde P^{\natural}$ and $\tilde P^{\natural}\tilde P$ are both $c(\tilde P)e_0 = 0$. $\square$
 
-The planes are not the same for the four products, and the way they differ is the conjugation each product carries.
+The planes are not the same for the four general products, and the way they differ is the conjugation each product carries.
 
 **Theorem (how the four annihilators are related).** Let $\tilde P$ be annihilated. Writing $A_f(\tilde P) = \{\tilde X : f(\tilde P,\tilde X) = 0\}$ and $B_f(\tilde P) = \{\tilde X : f(\tilde X,\tilde P) = 0\}$, the three planes $A_\natural,A_*,A_{\natural*}$ are the planes of the plain product of $\tilde P$ and of $\tilde P^{\natural}$ and their star-images,
 
@@ -116,7 +116,7 @@ and the two sides coincide for the natural product and for the general plain ses
 
 ## The Four Square-Zero Sets
 
-The square of an element, and with it the equation $\tilde Q\star\tilde Q = 0$, separates the four products sharply. The sets are tabulated in *Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*, and each column is proved in the article of its product.
+The square of an element, and with it the equation $\tilde Q\star\tilde Q = 0$, separates the four general products sharply. The sets are tabulated in *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*, and each column is proved in the article of its product.
 
 | product | square-zero elements | owner |
 |---|---|---|
@@ -135,7 +135,7 @@ with the plain and the fourth of the four incomparable: $e_1+ie_2$ lies in the p
 
 ## The Four Idempotent Sets
 
-The idempotent equation $\tilde Q\star\tilde Q = \tilde Q$ is the other element equation the four products read differently, and its solutions separate more sharply than the square-zero sets. The table is the one of *Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*, and the four columns are owned by *Biquaternion Idempotents and Projections*, *Idempotents of the Quaternionic Product*, *Projections of the Biquaternion Sesqualgebra* and *Idempotents of the General Quaternionic Sesquilinear Product*.
+The idempotent equation $\tilde Q\star\tilde Q = \tilde Q$ is the other element equation the four general products read differently, and its solutions separate more sharply than the square-zero sets. The table is the one of *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*, and the four columns are owned by *Biquaternion Idempotents and Projections*, *Idempotents of the Quaternionic Product*, *Projections of the Biquaternion Sesqualgebra* and *Idempotents of the General Quaternionic Sesquilinear Product*.
 
 | product | idempotents |
 |---|---|
@@ -148,7 +148,7 @@ The four sets are of four different kinds, and the central square separates them
 
 ## The Four Unit Structures
 
-The last separation is the unit. The algebra has one group of units, $\mathbb{B}^{\times} = \{\tilde Q : c(\tilde Q)\neq0\}$, of real dimension eight and centre $\mathbb{C}^{\times}$ (*Biquaternion Norm and Invertibility*); the four products have four different unit structures, and only the plain product has a unit in the two-sided sense.
+The last separation is the unit. The algebra has one group of units, $\mathbb{B}^{\times} = \{\tilde Q : c(\tilde Q)\neq0\}$, of real dimension eight and centre $\mathbb{C}^{\times}$ (*Biquaternion Norm and Invertibility*); the four general products have four different unit structures, and only the plain product has a unit in the two-sided sense.
 
 | product | unit |
 |---|---|
@@ -157,27 +157,27 @@ The last separation is the unit. The algebra has one group of units, $\mathbb{B}
 | $\tilde P\tilde Q^{*}$ | $e_0$ on the right alone; no left unit |
 | $\tilde P^{\natural}\tilde Q^{*}$ | no unit on either side |
 
-The four entries are read from the two identity rows of the property table of *Comparison Between the Four Biquaternion Products* ($1$ is a left identity, $1$ is a right identity), and they are proved in the four group articles: the unit of the product is the fixed element of the conjugations the product inserts, and the three products other than the plain one insert a conjugation into a slot, which conjugates the candidate unit and breaks the other side. Two consequences deserve to be recorded here. First, the units of the multiplication are not the units of the algebra: an element may be a unit of $\mathbb{B}$ and have no inverse in the product it is read in, and conversely the idempotents of the fourth product are units of the algebra and idempotents of the multiplication while remaining non-invertible in the multiplication for want of a unit. Second, the absence of a unit is not an absence of structure: the natural product has a monoid of left multiplications, and the two sesquilinear products have none, which is the left-multiplication row of the comparison table (*Relations Between the Four Biquaternion Products* §*The Left Multiplications*).
+The four entries are read from the two identity rows of the property table of *Comparison Between the Four General Products* ($1$ is a left identity, $1$ is a right identity), and they are proved in the four group articles: the unit of the product is the fixed element of the conjugations the product inserts, and the three products other than the plain one insert a conjugation into a slot, which conjugates the candidate unit and breaks the other side. Two consequences deserve to be recorded here. First, the units of the multiplication are not the units of the algebra: an element may be a unit of $\mathbb{B}$ and have no inverse in the product it is read in, and conversely the idempotents of the fourth product are units of the algebra and idempotents of the multiplication while remaining non-invertible in the multiplication for want of a unit. Second, the absence of a unit is not an absence of structure: the natural product has a monoid of left multiplications, and the two sesquilinear products have none, which is the left-multiplication row of the comparison table (*Relations Between the Four General Products* §*The Left Multiplications*).
 
 ## The Two Cones
 
-One warning closes the article. The set $\{c = 0\}$ has the shape of a cone, and the chapter carries a second cone on the same space, the isotropic cone of the general plain bilinear form $B(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q)$. They are not the same, and they must not be conflated: the central square reads $P_0^{2}+(\mathbf P,\mathbf P)$ while the diagonal of the bilinear form reads $P_0^{2}-(\mathbf P,\mathbf P)$, the two exchanges of the sign of the vector part, and the element theory is built on the first, and the second is the isotropic cone of the form. The form and its isotropic cone are *The Four Pairings of the Biquaternion Algebra* and *Biquaternion Norm and Invertibility*; the article records the boundary and stops there.
+One warning closes the article. The set $\{c = 0\}$ has the shape of a cone, and the chapter carries a second cone on the same space, the isotropic cone of the general plain bilinear form $\langle\tilde P,\tilde Q\rangle = \mathrm{Sc}(\tilde P\tilde Q)$. They are not the same, and they must not be conflated: the central square reads $P_0^{2}+(\mathbf P,\mathbf P)$ while the diagonal of the general plain bilinear form reads $P_0^{2}-(\mathbf P,\mathbf P)$, the two exchanges of the sign of the vector part, and the element theory is built on the first, and the second is the isotropic cone of the form. The form and its isotropic cone are *The Four Pairings of the Biquaternion Algebra* and *Biquaternion Norm and Invertibility*; the article records the boundary and stops there.
 
 ## Summary
 
-The four products of *The Four Biquaternion Complex Products* share one second-order invariant, the central square $\tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q = c(\tilde Q)e_0$ with $c(\tilde Q) = \sum_\mu Q_\mu^{2}$, and the invariant is multiplicative for all four:
+The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* share one second-order invariant, the central square $\tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q = c(\tilde Q)e_0$ with $c(\tilde Q) = \sum_\mu Q_\mu^{2}$, and the invariant is multiplicative for all four:
 
 $$
 c(\tilde P\tilde Q) = c(\tilde P^{\natural}\tilde Q) = c(\tilde P)c(\tilde Q) , \qquad c(\tilde P\tilde Q^{*}) = c(\tilde P^{\natural}\tilde Q^{*}) = c(\tilde P)\overline{c(\tilde Q)} .
 $$
 
-The elements that admit a nonzero annihilating factor are the same elements for the four products, exactly the vanishing set $\{c = 0\}$ of the central square, a complex cone of complex dimension three and real dimension six whose nonzero part is the zero-divisor set of the algebra; in the matrix model they are the singular matrices and, away from zero, the rank-one elements, whose left ideals are the minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$.
+The elements that admit a nonzero annihilating factor are the same elements for the four general products, exactly the vanishing set $\{c = 0\}$ of the central square, a complex cone of complex dimension three and real dimension six whose nonzero part is the zero-divisor set of the algebra; in the matrix model they are the singular matrices and, away from zero, the rank-one elements, whose left ideals are the minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$.
 
 One set, four annihilators. Of a fixed annihilated element each product has two one-sided annihilators, each a complex plane when the central square vanishes and each $0$ when it does not; the four pairs are related by the two conjugations, the general plain sesquilinear plane being the star-image of the plane of the plain product, and the natural and the general plain sesquilinear products having their two sides coinciding for every element.
 
 The four square-zero sets, the four idempotent sets and the four unit structures do not follow from the annihilated set and are tabulated here with their owners: the square-zero sets are the origin alone for the general plain sesquilinear product, a proper subfamily of the cone for the general quaternionic sesquilinear product, the pure isotropic cone for the plain product and the whole cone for the natural product, and the two middle sets meet only at the origin; the idempotents are the plain family of the algebra, the trivial pair alone, the family of Hermitian projectors and the family of unitary elements; and the unit belongs to the plain product alone, the natural product keeping it on the left and the general plain sesquilinear product on the right.
 
-The set $\{c = 0\}$ is not the isotropic cone of the general plain bilinear form $B(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q)$; the two cones cross, and the algebra's norm cone is the other one. The restriction of the whole picture to the six distinguished subspaces is *The Six Subspaces and the Four Complex Products*, and the detailed readings of the four element theories are the four group articles of the chapter.
+The set $\{c = 0\}$ is not the isotropic cone of the general plain bilinear form $\langle\tilde P,\tilde Q\rangle = \mathrm{Sc}(\tilde P\tilde Q)$; the two cones cross, and the algebra's norm cone is the other one. The restriction of the whole picture to the six distinguished subspaces is *The Six Subspaces and the Four General Products*, and the detailed readings of the four element theories are the four group articles of the chapter.
 
 ## Summary of Notation
 
@@ -188,12 +188,12 @@ The set $\{c = 0\}$ is not the isotropic cone of the general plain bilinear form
 | $\{c = 0\}$ | the annihilated set, a complex cone of real dimension six |
 | $A_f(\tilde P)$, $B_f(\tilde P)$ | the two one-sided annihilators of $\tilde P$ for the product $f$ |
 | $(\mathbf P,\mathbf Q)$ | the general plain bilinear form of the two vector parts |
-| $B(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q)$ | the general plain bilinear form, whose isotropic cone is not $\{c = 0\}$ |
+| $\langle\tilde P,\tilde Q\rangle = \mathrm{Sc}(\tilde P\tilde Q)$ | the general plain bilinear form, whose isotropic cone is not $\{c = 0\}$ |
 
 ## Further Reading
 
-- *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the four products and their scalar–vector forms.
-- *Comparison Between the Four Biquaternion Products* (`articles_maths/comparison-between-the-four-biquaternion-products.md`), for the property table, the four idempotent sets, the four square-root problems and the four unit entries.
+- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four general products and their scalar–vector forms.
+- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the property table, the four idempotent sets, the four square-root problems and the four unit entries.
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm form, the quadratic space, the invertibility criterion and the group of units.
 - *Biquaternion 2×2 Matrix Element Representation* (`articles_maths/biquaternion-2x2-matrix-element-representation.md`), for the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, the trace and the singular matrices.
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the two families, the cone and the classification.

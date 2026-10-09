@@ -61,7 +61,7 @@ The signed and the unsigned left multiplication of the same element have the sam
 
 ## The Graded Composition Rule
 
-### The four products
+### The four general products
 
 The composition of the signed and the unsigned left multiplications follows the parity of the twist, exactly as for the sandwiches.
 

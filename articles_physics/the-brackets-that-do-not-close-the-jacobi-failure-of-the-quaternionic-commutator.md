@@ -78,7 +78,7 @@ $\tilde P\wedge_{\natural}\tilde Q=\tfrac12[\tilde P,\tilde Q]_{\natural}$.
 
 *Proof.* The parent value is
 $\tilde P^{\natural}\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$
-(*The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). Exchanging the arguments reverses
+(*The 12 Products of the Biquaternion Complex Space*). Exchanging the arguments reverses
 the two mixed terms and the cross product and leaves the scalar part fixed, which cancels in the
 difference; half the difference is the displayed value. The scalar part zero puts the value in
 $\mathrm{Vect}(\mathbb{B})$; alternation is the antisymmetry of the definition and its diagonal is the
@@ -271,6 +271,27 @@ are the content of the band's word, Obstruction.
 - **The derived bracket is a bound, not a repair.** That the vector subspace is a Lie algebra under this
   operation says where the failure is not; it does not give a bracket on the algebra, and the mixed terms
   cannot be discarded without leaving the quaternionic row.
+- **The Jacobiator is a three-form: a degree-three obstruction, not a bracket defect.** The closed form
+  proved above is $\mathbb{C}$-trilinear and alternating, so the failure of the identity is not the failure
+  of a bracket to be one but a **cochain in the third degree** — a single alternating three-form on the
+  algebra, valued in the vector subspace, nonzero on $18$ of the $64$ ordered triples of basis elements.
+  Offered as a reading, the Jacobi failure is an obstruction of **order three** and not a merely wrong
+  bracket: the operation is alternating, the derived bracket on the vector subspace is Lie, and the failure
+  appears only on triples, where it is this one three-form; and $18$ of $64$ is offered as the **support**
+  of the obstruction on the chosen basis. The word *anomaly* is used in the companion article *Boosts, Mixed Terms and the
+  Missing Lie Structure* for a **different** object, the non-invariance of the trace form $K$; the two are
+  kept apart, and the name offered here is a degree-three cochain and not that non-invariance. The algebra
+  proves the trilinear form and its support and nothing about a physical anomaly; the name is the
+  framework's, and the support is a count on a basis and not an invariant.
+- **The closable part is exactly the rotations, and the boost-like part is the obstruction.** The proved facts
+  are that the derived bracket on $\mathrm{Vect}(\mathbb{B})$ is $\mathfrak{sl}(2,\mathbb{C})$ and that the
+  failure enters through the mixed terms $P_0\mathbf Q-Q_0\mathbf P$. Read together they say that the
+  bracket **closes on the compact rotations** and **fails through the boost-like mixed terms**: offered as
+  a reading, the identity is carried by the rotations and the obstruction by the boosts, so the price of
+  the boost-like direction is the Jacobi identity. The boost-like reading of the mixed terms is the
+  companion article *Boosts, Mixed Terms and the Missing Lie Structure*; the clause added here is that the
+  boost-like part is exactly the part that costs the identity. The algebra proves the derived bracket and
+  the mixed terms and nothing about boosts as physical transformations.
 
 **The bearing on the gauge ceiling.** The group the algebra does reach is read elsewhere, and this is what
 makes the failure informative. *Observables, Gauge Generators and the Chirality of the Internal Action*
@@ -309,12 +330,15 @@ bracket isomorphic to $\mathfrak{sl}(2,\mathbb{C})$.
 **Readings.** That the quaternionic commutator cannot be the Lie algebra of an internal group; that the
 insertion of the conjugation in the first slot is what costs the Jacobi identity; that the failure enters
 through the mixed terms and is invisible on the pure vectors; that the internal group is reached by the
-associative one-sided action and not by this bracket.
+associative one-sided action and not by this bracket; that the Jacobiator is a single alternating
+three-form, read as a degree-three obstruction whose support on the basis is $18$ of the $64$ triples; that the
+closable part is exactly the compact rotations and the boost-like mixed terms are the obstruction.
 
 **Not claimed.** That a physical operation is a biquaternion, or that the bracket is a physical
 commutator. That the failure can be repaired, or that a group was expected from this operation. That the
 framework lacks a gauge group; the group is read elsewhere. That the obstruction overthrows any physical
-result.
+result. That the Jacobiator is a physical anomaly, or that the mixed terms are physical boosts in a sense
+stronger than the companion article's reading.
 
 ## Summary
 
@@ -364,8 +388,8 @@ bracket are the companion *Boosts, Mixed Terms and the Missing Lie Structure*.
 
 - *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
   which this block sits.
-- Mathematics article *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
-  (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve
+- Mathematics article *The 12 Products of the Biquaternion Complex Space*
+  (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve
   operations, the method of the decomposition and the laws of each.
 - Mathematics article *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*
   (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the

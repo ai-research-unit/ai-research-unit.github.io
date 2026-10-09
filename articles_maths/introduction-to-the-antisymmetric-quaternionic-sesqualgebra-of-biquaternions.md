@@ -64,7 +64,7 @@ $$
 
 *Proof.* The cross product $\mathbf{P}\times\overline{\mathbf{Q}}$ is $\mathbb{C}$-linear in $\mathbf{P}$ and conjugate-linear in $\overline{\mathbf{Q}}$; equivalently the coordinate rule above is homogeneous of degree one in each coordinate of $\tilde P$ and of degree one in each conjugate coordinate of $\tilde Q$. Verified on the coordinate rule.
 
-**Remark (the class is the whole difficulty of the block).** The operation is conjugate-linear in the second argument; that slot is shared with the five other sesquilinear operations of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and what singles the block out among the twelve is that its value is the conjugate cross product alone, with no scalar part and no mixed term. Every later statement of the block is a consequence of the conjugate-linear slot: the ordinary operator calculus is unavailable for the left multiplications, the value is not conjugate-symmetric but conjugate-alternating, and the coincidence with the plain cross product holds only on the real elements.
+**Remark (the class is the whole difficulty of the block).** The operation is conjugate-linear in the second argument; that slot is shared with the five other sesquilinear operations of *The 12 Products of the Biquaternion Complex Space*, and what singles the block out among the twelve is that its value is the conjugate cross product alone, with no scalar part and no mixed term. Every later statement of the block is a consequence of the conjugate-linear slot: the ordinary operator calculus is unavailable for the left multiplications, the value is not conjugate-symmetric but conjugate-alternating, and the coincidence with the plain cross product holds only on the real elements.
 
 ### Conjugate-Alternation
 
@@ -139,11 +139,11 @@ $$
 
 the triple $(\tilde P,\tilde Q,\tilde R)=(e_1,e_1,ie_2)$ gives the value $-2ie_2$, which is not zero.
 
-*Proof.* The catalogue *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* declares the cyclic sum as the sum of the three reassociations displayed, and records the witness and the value; both are recomputed here on the cross-product table. The three inner values are $e_1\diamond e_1=0$, $e_1\diamond ie_2=\mathbf{e_1}\times\overline{ie_2}=e_1\times(-ie_2)=-ie_3$ and $ie_2\diamond e_1=(ie_2)\times e_1=i(e_2\times e_1)=-ie_3$. Hence the three reassociations are $(e_1\diamond e_1)\diamond ie_2=0$, $(e_1\diamond ie_2)\diamond e_1=(-ie_3)\diamond e_1=(-ie_3)\times e_1=-ie_2$ and $(ie_2\diamond e_1)\diamond e_1=(-ie_3)\diamond e_1=-ie_2$, whose sum is $-2ie_2$. Verified on the witness.
+*Proof.* The catalogue *The 12 Products of the Biquaternion Complex Space* declares the cyclic sum as the sum of the three reassociations displayed, and records the witness and the value; both are recomputed here on the cross-product table. The three inner values are $e_1\diamond e_1=0$, $e_1\diamond ie_2=\mathbf{e_1}\times\overline{ie_2}=e_1\times(-ie_2)=-ie_3$ and $ie_2\diamond e_1=(ie_2)\times e_1=i(e_2\times e_1)=-ie_3$. Hence the three reassociations are $(e_1\diamond e_1)\diamond ie_2=0$, $(e_1\diamond ie_2)\diamond e_1=(-ie_3)\diamond e_1=(-ie_3)\times e_1=-ie_2$ and $(ie_2\diamond e_1)\diamond e_1=(-ie_3)\diamond e_1=-ie_2$, whose sum is $-2ie_2$. Verified on the witness.
 
 **Remark (the declaration of the cyclic sum).** The corpus declares the cyclic sum as the sum of the three reassociations, and the recomputation above uses that declaration. The older order of the inner brackets, $[[\tilde P,\tilde Q],\tilde R]+\cdots$ with $[\tilde P,\tilde Q]=2(\tilde P\diamond\tilde Q)$, and the sum of the reassociations do not have the same display; the value $-2ie_2$ recorded here is the value of the declared sum, and it is the one tabulated in the catalogue.
 
-**Remark (the smallest witness needs a complex element).** The witness uses the complex element $ie_2$ and no triple of the real basis: on real elements the block is the ordinary cross product of *Introduction to the Antisymmetric Plain Algebra of Biquaternions*, whose Jacobi identity is the classical one and holds, so a real witness cannot exist. The failure is therefore a genuine feature of the complex structure and of the conjugate-linear slot, and it is the only failure of the twelve that needs an element off the real basis.
+**Remark (the smallest witness needs a complex element).** The witness uses the complex element $ie_2$ and no triple of the real basis: on real elements the block is the ordinary cross product of *Introduction to the Antisymmetric Plain Algebra of Biquaternions*, whose Jacobi identity is the classical one and holds, so a real witness cannot exist. The failure is therefore a genuine feature of the complex structure and of the conjugate-linear slot, and, of the six identity failures the corpus declares (the three Jacobi failures of the antisymmetric parts and the three Jordan failures of the symmetric parts), it is the only one whose witness needs an element off the real basis. It is not the only failure of the complex space: the two sesquilinear antisymmetric parts fail the Jordan identity as soon as a complex element enters, though the corpus does not ask it of them.
 
 ### The Coincidence with the Plain Block on the Real Part
 
@@ -161,6 +161,8 @@ $$
 ### The Consequence
 
 The failure of the Jacobi identity is the obstruction of *Lie Algebras of Sesqualgebras* read on the block: the antisymmetrisation of a sesquilinear product is a Lie bracket only after the collapse of the two involutions, which a genuine sesqualgebra forbids, and the block is one of the three failing antisymmetrisations of the corpus. The consequence is stated without proof here and developed with the other two failing brackets in *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*: the block is not a Lie algebra over any ring of scalars of the complex space.
+
+**Remark (the count and the closure).** On the eight-element basis the declared cyclic sum is nonzero on $72$ of the $512$ triples, the sparsest of the three failing brackets of the catalogue. And the failure is not a failure of a span: the real span of the values of the block over $100$ random complex triples is the **whole** six-dimensional vector subspace, so the block is not too small to close — it is a vector space of directions that is not an algebra. The closure one can form from the block is therefore a span and not a Lie algebra, which is the negative reading in its sharpest form. The count is a count on a basis and not an invariant; both are recomputed.
 
 ## The Reconstruction and the Twelve
 
@@ -189,7 +191,7 @@ The name $\mathrm{AQS}$ is read with the code of *The 12 Algebraic Structures ov
 | the plain sesqualgebra | $\mathrm{GPS}$ | $\mathrm{SPS}$ | $\mathrm{APS}$ |
 | the quaternionic sesqualgebra | $\mathrm{GQS}$ | $\mathrm{SQS}$ | $\mathrm{AQS}$ |
 
-**Remark (the place of the block).** The block is conjugate-linear in its second slot, pure-vector-valued, has no unit, and fails the Jacobi identity; its diagonal does not vanish and its image is the vector subspace. Of the twelve operations it is the only one whose value is the conjugate cross product alone, and on the real part it falls together with $\mathrm{APA}$. The names and the laws of the twelve are owned by *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the general construction of the parts by *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*.
+**Remark (the place of the block).** The block is conjugate-linear in its second slot, pure-vector-valued, has no unit, and fails the Jacobi identity; its diagonal does not vanish and its image is the vector subspace. Of the twelve operations it is the only one whose value is the conjugate cross product alone, and on the real part it falls together with $\mathrm{APA}$. The names of the twelve are owned by *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and their laws by *The 12 Products of the Biquaternion Complex Space*, and the general construction of the parts by *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*.
 
 ## Summary
 
@@ -217,7 +219,7 @@ the conjugate cross product, the only operation of the twelve whose value is a s
 
 ## Further Reading
 
-- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the names, the laws and the table of the twelve operations.
+- *The 12 Products of the Biquaternion Complex Space*, for the names, the laws and the table of the twelve operations.
 - *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, for the class-preserving exchange and the two halves.
 - *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, for the product the block splits.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*, for the companion half.

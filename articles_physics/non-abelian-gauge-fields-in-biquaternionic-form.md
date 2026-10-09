@@ -377,7 +377,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 
 - *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the immediate parent; its abelian connection, its curvature-commutator identity, its gauge-orbit analysis, and the gap this article takes up.
 - *The Gauge Principle in Biquaternionic Form* — the origin of the connection and the abelian transformation law, and the preview $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu + \tfrac{iq}{\hbar}[A_\mu,A_\nu]$ that is made exact here.
-- *Maxwell's Equations in the Biquaternionic Form* — the abelian potential, field strength and gauge scalar that the non-abelian construction generalizes.
+- *Maxwell's Equations in the Biquaternionic Formulation* — the abelian potential, field strength and gauge scalar that the non-abelian construction generalizes.
 - *The Field-Strength Biquaternion and Its Invariants* — the abelian invariants and the biquaternion norm, whose non-abelian extension is posed as an open question.
 - *Chiral Fermions in the Biquaternion Framework* — the covariant derivative on the spinor module and the charge operator $Q$, the setting for the matter-representation question.
 - *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — the coupled Dirac equation and the left/right matter-representation issue.

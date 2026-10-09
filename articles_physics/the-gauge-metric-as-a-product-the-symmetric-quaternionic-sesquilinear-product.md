@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The fourth of the framework's four products is the general quaternionic sesquilinear product
+The fourth of the framework's four general products is the general quaternionic sesquilinear product
 $\tilde P^{\natural}\tilde Q^{*}$, the plain product with the natural conjugation in the first slot and
 the star in the second. Its scalar form is the **Krein form** $K$, Hermitian, non-degenerate and
 **indefinite**, and the physics menu files the row it belongs to under the word **Metric**. The same row
@@ -20,8 +20,7 @@ $$
 =\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P},
 $$
 
-the operation named $\mathrm{SQS}$ in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$
-Space* and developed as a multiplication in *Introduction to the Symmetric Quaternionic Sesqualgebra of
+the operation named $\mathrm{SQS}$ in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and developed as a multiplication in *Introduction to the Symmetric Quaternionic Sesqualgebra of
 Biquaternions*. Its scalar part is the Krein form $K$ and its vector part is the mixed term alone. Its
 companion, the **antisymmetric quaternionic sesquilinear product**
 
@@ -49,8 +48,7 @@ cannot normalise to *The States the Indefinite Metric Cannot Normalise*; the pos
 form and the state cone to *Mass, Rank and the Positivity of the Dagger*; the gauge transformations
 themselves to *The Gauge Principle in Biquaternionic Form*; and the algebra of the split to the
 mathematics articles *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*, *The
-Symmetric and Antisymmetric Parts of a Sesqualgebra Product* and *The 12 Algebraic Structures over the
-Biquaternion $\mathbb{C}$ Space*.
+Symmetric and Antisymmetric Parts of a Sesqualgebra Product* and *The 12 Products of the Biquaternion Complex Space*.
 
 **Conventions.** As in the companion articles of this block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$
 with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$;
@@ -142,8 +140,7 @@ subject of *Values in No Subspace: Why the Symmetric Gauge Product Is Not a Stat
 
 ### The Twelve, and the Split's Place
 
-The split is the quaternionic sesquilinear row of the catalogue of *The 12 Algebraic Structures over the
-Biquaternion $\mathbb{C}$ Space*: the symmetric part $\mathrm{SQS}$ and the antisymmetric part
+The split is the quaternionic sesquilinear row of the catalogue of *The 12 Products of the Biquaternion Complex Space*: the symmetric part $\mathrm{SQS}$ and the antisymmetric part
 $\mathrm{AQS}$ are two of the twelve operations, and the two are exactly the parts of the fourth product.
 The reconstruction $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$ is the uniqueness of the split read on the
 products, and it was checked against the owner article and against the row table before it was written.
@@ -171,6 +168,12 @@ the half-sum is the display. Verified on $100$ random pairs. $\square$
 $e_0$ and the vector part is a complex vector in
 $\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$; neither annihilates the other, and the two are read in the
 same element. Neither is the whole of the value, and neither was assigned the name of a part by the split.
+
+**The strain reading of the value.** The two projections have the shapes of the two elementary deformations of a frame, and the correspondence is exact. The scalar part is a **trace**, $K=\mathrm{Sc}(\tilde P\bullet\tilde Q)$, and a trace read on a frame is a **conformal factor**: it changes the scale and leaves the directions alone. The vector part is **traceless** — it is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$ and carries no $e_0$ component — and a traceless symmetric part read on a frame is a **shear**: it changes the shape and leaves the volume. The symmetric gauge product is therefore read as a **frame-deformation operator**: its value is one scale and one shape, and the statement that the value lies in no subspace of the six is the statement that a genuine deformation mixes the two grades. The reading is bounded by the same caution as the theorem it dresses: one value has at most a scalar and a vector part, and it is the **image** of the operation, not one of its values, whose real span is the whole algebra.
+
+**The mixed term as the sector-mixing term.** The vector part of the value is where the two sectors meet, and it is worth naming it. The vector part is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$, and its components run over the six real directions of the vector subspace, three of them material ($e_k$) and three informational ($ie_k$); the scalar part $K$ couples only same-grade coefficients, and the mixed term is what couples the **scalar coefficient of one argument to the vector coefficients of the other**. The symmetric gauge product is therefore the algebraic seat of the framework's **matter–information mixing**: the term the corpus reads in the imaginary part of the biquaternion norm as the coupling of the material and informational sectors is carried here by the vector part of the value, and the **centrality criterion** of the band — $Q_0\overline{Q_k}\in i\mathbb{R}$ for every $k$ — is the **no-mixing** condition under which the coupling vanishes and the value returns to the centre. The name is the article's; the algebra of the term is the theorem above.
+
+**The duality rotation is not the split.** A caution, because two operations of the corpus are easy to conflate here. Multiplication by the central imaginary $i$ is the **electric–magnetic duality rotation** of the field strength, and it exchanges the real and the imaginary sectors (*The Four Other Remarkable Subspaces*); it is **not** the symmetric-versus-antisymmetric split of a product, which is the exchange of the two arguments adapted to the class. The duality rotation is an operation on an element of the algebra; the split is an operation on a product of two. The two coincide on nothing in general, and the corpus keeps them apart.
 
 ### The Contrast with the Plain Sesquilinear Row
 
@@ -254,6 +257,14 @@ state space reconstructed from the symmetric half, which is the content of *Why 
 Gauge Structure and Not a State Space* and is referred to it. The failure does not say that the operation
 is useless: it says that its job is not the job of a state structure.
 
+**The failure given a positive name.** The identity can be read forwards as well, and the reading is worth
+the sentence. An operation whose Jordan identity held would be an **observable-like** multiplication: the
+multiplication of a Jordan algebra, from which a cone, an order and a spectrum are read. The failure says
+that the symmetric gauge pairing is therefore **curvature-like rather than probability-like** — it belongs
+to the geometry of the frame and not to the algebra of its observables — so the failure is not only the
+removal of a candidate state space but a statement of what the pairing is. The name is this article's; the
+identity and its failure are the proposition above.
+
 ## The Metric Word, Earned
 
 ### The Krein Form as the Scalar Part
@@ -303,7 +314,7 @@ Four cautions bound the reading, and they are the ledger's own.
    Positivity of the Dagger*, and the two forms are not interchangeable.
 
 4. **No scale is attached here.** The algebra has no scale; the coupling, the charge and $\hbar$ enter at
-   the physical reading, in the places the corpus has already fixed (*Action Units and the Constants of
+   the physical reading, in the places the corpus has already fixed (*Action, Units, and the Constants of
    the Biquaternion Universe*). The Krein form is a structure, not a dimensionful metric.
 
 ## One Insertion, Read Twice
@@ -313,8 +324,11 @@ first-slot insertion is the single mechanism behind the two facts of this block.
 into the first slot of the plain sesquilinear row replaces the definite form $H$ by the **indefinite** form
 $K$ — that is the metric — and inserting it into the first slot of the plain product spoils the closure of
 the bracket, since the plain antisymmetric part $\mathrm{APA}$ is a Lie bracket and its first-slot
-conjugation $\mathrm{AQA}$ is not. The **metric and the obstruction are one insertion read twice**, and
-the reading is offered as the framework's grouping and labelled as such.
+conjugation $\mathrm{AQA}$ is not. The **metric and the obstruction are one insertion read twice**, in the
+precise sense that the first-slot insertion produces the metric outright and spoils the closure of the
+*plain* bracket; the reading is offered as the framework's grouping and labelled as such, and it does not
+claim that the closure failure is the first slot's alone — the paragraph below records that the second slot
+spoils it a second time, so the metric is the first slot's work and the non-closure is shared.
 
 The statement is bounded on two sides. An **indefinite** metric is not an unphysical metric: the pairing
 is the object the gauge side needs, and the states of the framework live on the plain row and not here.
@@ -350,6 +364,15 @@ because $K(e_0+e_1,e_0+e_1)=0$ and the mixed term is $-2e_1$. The value is a vec
 multiple of $e_0$, and it is therefore **not central**: the diagonal of the symmetric gauge product leaves
 the centre, and that fact is the whole of the second article of the band.
 
+## Named Readings of the Symmetric Half
+
+Four further readings of the symmetric gauge product are recorded here, each under a name of its own and each labelled a reading rather than a theorem; the identities they rest on are the body's.
+
+- **Swap-conjugation symmetry.** The product is conjugate-commutative rather than commutative, so its values pair an element with the conjugate of the other; read physically, the pairing defines a **frame read in the conjugate**, and the ordering of the two arguments is immaterial while the conjugation is not. The name is the symmetric-half counterpart of §*The Bracket as an Anti-Linear Pairing* of *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*: there the conjugation makes the pairing antisymmetric, here it makes the pairing symmetric. The name is not **conjugate frame**, which the corpus already uses for the anti-holomorphic frame of a complex manifold.
+- **Lightlike pairing.** The scalar part of the value is $K(\tilde P,\tilde Q)$, and a pair with vanishing scalar part, $K(\tilde P,\tilde Q)=0$, is read as a **lightlike (null) pair** of the gauge frame: the pairing-level shadow of the zero-divisor condition, since the scalar part of the value is exactly $K$ and the cone of the interval is $\{N=0\}$. The name is chosen to avoid the corpus's word **eikonal**, which is reserved for the short-wavelength equation on a phase, $(\nabla\varphi)^{2}=\alpha^{2}$, of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* and of *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*; the relation between the two is that both express the zero-divisor (light-cone) condition, there on a gradient and here on a pair. The reading is the pairing-level counterpart of the null states, and its boundary is the article's: the algebra supplies the vanishing of the scalar part and no wave, no front and no propagation.
+- **Frame strain.** The value is read as a **deformation of the frame**, its scalar part a conformal factor and its traceless vector part a shear, so that the symmetric half is the product that deforms an element rather than rotating it. The reading is stated in §*The Metric Word, Earned* in the language of the frame-deformation operator and is repeated here as a named reading so that it can be cited; the boundary is that no elastic or continuum model stands behind the name.
+- **Internal volume form.** The trace pairing of the row, $\mathrm{Tr}(\tilde P\bullet\tilde Q)=2\,\mathrm{Sc}(\tilde P\bullet\tilde Q)=2K(\tilde P,\tilde Q)$, is read as an **internal volume** of the gauge frame: an isometry of $K$ preserves the pairing, and the volume-preserving subgroup in the matrix model is $SU(1,3)\subset SL(4,\mathbb{C})$, while a general isometry of $U(1,3)$ has determinant of modulus one and need not preserve the determinant. The name separates the volume reading from the metric reading of the same form, and the boundary is that the algebra supplies the trace and the two groups and no measured volume.
+
 ## The Limits
 
 - **The article does not supply the metric.** The signature, the inertia, the fundamental symmetry and the
@@ -362,7 +385,7 @@ the centre, and that fact is the whole of the second article of the band.
 - **The article does not claim a gauge algebra.** The symmetric half is not a Lie structure, and the
   antisymmetric half fails the Jacobi identity, so no gauge algebra is read from either; the negative
   reading is referred to *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not
-  SU(3)* and to *The Cross Product of a Vector with Its Conjugate*.
+  SU(3)* and to *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*.
 - **The invariance reading is a reading.** That the pairing is *the* invariant pairing of the gauge side is
   the framework's grouping, stated as such and not proved here; the transformation theory that makes it
   precise is cited and not restated.
@@ -381,12 +404,18 @@ at $x=y=e_1$, with the two sides $-e_0$ and $e_0$; its diagonal at $e_0+e_1$ is 
 value lies in no one of the six subspaces for a general pair and the real span of its values is the whole algebra. Recomputed on $100$
 random pairs and on the named witnesses, and reproduced from *Introduction to the Symmetric Quaternionic
 Sesqualgebra of Biquaternions*, *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic
-Sesqualgebra*, *The Six Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* and *The
-12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+Sesqualgebra*, *The Six Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* and *The 12 Products of the Biquaternion Complex Space*.
 
 **Reading.** That the symmetric half is the invariant indefinite pairing of the gauge structure, that its
 scalar part is the Krein form and its vector part the mixed term, and that the two projections of its
-value sit side by side in one element.
+value sit side by side in one element. Three further names for the same facts, each a reading: the value
+read as a **frame-deformation operator**, the scalar part a conformal factor and the traceless vector part
+a shear; the mixed term read as the **sector-mixing term**, so that the centrality criterion of the band
+is the no-mixing condition; and the failure of the Jordan identity read forwards, so that the pairing is
+**curvature-like rather than probability-like**. The same ledger carries the caution that the duality
+rotation by the central imaginary is not the symmetric–antisymmetric split of a product. Four further
+readings, named in §*Named Readings of the Symmetric Half*: **swap-conjugation symmetry**, **lightlike
+pairing**, **frame strain** and **internal volume form**.
 
 **Not claimed.** That the metric is a norm or a distance; that the form's vanishing makes an element
 unphysical; that the operation supplies a state space, a Jordan structure or a gauge algebra; that a
@@ -431,12 +460,14 @@ the reason the two symmetric sesquilinear products do not divide the state side 
 
 - Mathematics article *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product, its class and its scalar–vector form.
 - Mathematics article *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.md`), for the adapted exchange, the two parts and the reconstruction.
-- Mathematics article *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the names SQS and AQS, their laws and the witnesses.
+- Mathematics article *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the names SQS and AQS, their laws and the witnesses.
 - Mathematics article *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal, the two orders and the absence of a unit.
 - Mathematics article *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form $K$ and its restrictions.
 - Mathematics article *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.md`), for the form read as the multiplication of the block, its two Gram matrices, its isotropic elements and its invariance under the block.
 - Companion article *The Fourth Product and Its Indefinite Metric*, for the metric whose scalar part this product carries.
 - Companion article *The States the Indefinite Metric Cannot Normalise*, for the states that are null for that metric.
-- Companion article *The Four Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*, for the map of the four products and the four jobs.
+- Companion article *The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*, for the map of the four general products and the four jobs.
 - Companion article *Mass, Rank and the Positivity of the Dagger*, for the positivity of the probability form and the state cone.
 - Companion article *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*, for the antisymmetric half of the same row.
+- Companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* (`articles_physics/the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.md`), named for the eikonal equation that the **lightlike pairing** reading does not claim.
+- Companion article *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* (`articles_physics/maxwells-equations-in-chiral-media-the-quaternionic-reformulation.md`), named for the same word.

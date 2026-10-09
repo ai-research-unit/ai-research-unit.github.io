@@ -316,4 +316,4 @@ The multiplication operators of the block are $L^{\bullet}_{\tilde A}$ and $R^{\
 - *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the trace form, the invariance and the operator trace.
 - *The Symmetric Plain Algebra in the Matrix Representations*, for the matrices of the operators in the two models.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, for the generic trace and the generic norm preserved by the automorphisms.
-- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the placement of the block and its Jordan structure.
+- *The 12 Products of the Biquaternion Complex Space*, for the placement of the block and its Jordan structure.

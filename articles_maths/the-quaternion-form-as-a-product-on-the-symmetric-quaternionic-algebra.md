@@ -10,8 +10,7 @@ as the **form that the block carries**: it identifies it, computes its Gram matr
 realification and its signature, its invariance under the product and the failure of that invariance, its
 restriction to the six distinguished subspaces, and its relation to the Hermitian form $H$ of the algebra.
 
-The form $B$ is the quaternion form named in the catalogue *The 12 Algebraic Structures over the Biquaternion
-$\mathbb{C}$ Space*, and it is the general quaternionic bilinear one of the four pairings of *The Four
+The form $B$ is the quaternion form named in the catalogue *The 12 Products of the Biquaternion Complex Space*, and it is the general quaternionic bilinear one of the four pairings of *The Four
 Pairings of the Biquaternion Algebra*; its diagonal is the norm of *Biquaternion
 Norm and Invertibility*, and on the six subspaces its restrictions and their signatures are
 *The Six Subspaces under the General Quaternionic Algebra of Biquaternions*, whose table is quoted here and
@@ -213,7 +212,7 @@ For $\tilde P=e_0$, $\tilde Q=ie_0$ one has $B=i$ and $H=1\cdot\overline{i}= -i$
 
 **Remark (the collapse with the other central operation on the real part).** The coincidence is the form-level
 statement that $\mathrm{SQA}=\mathrm{SPS}$ on the real part, which is one of the two collapses of the twelve
-to ten recorded in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The symmetric part
+to ten recorded in *The 12 Products of the Biquaternion Complex Space*. The symmetric part
 of the plain sesquilinear product has the coefficient $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$,
 which is $B$ precisely when the coefficients are real; over $\mathbb{C}$ the two operations differ, and
 $B$ is the $\mathbb{C}$-bilinear conjugate of $H$ in the second slot. The block accordingly reads the form
@@ -252,7 +251,7 @@ collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
 ## Further Reading
 
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the quaternion form among the four pairings
-- *Comparison Between the Four Biquaternion Products* (`articles_maths/comparison-between-the-four-biquaternion-products.md`), for the quaternion form beside the other three coefficients
+- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the quaternion form beside the other three coefficients
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm, the polarisation and the Hermitian form
 - *The Six Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the restriction Gram matrices and the signatures
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the radical and the isotropic elements

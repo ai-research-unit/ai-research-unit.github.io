@@ -204,7 +204,7 @@ For $A = \mathbb{H}$ with the quaternion conjugation over $(\mathbb{R},\mathrm{i
 
 ### The Biquaternion Algebra
 
-For $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the star-involution the Hermitian subspace is a Jordan algebra of degree two, isomorphic to $H_{2}(\mathbb{C})$, with two orthogonal idempotents and the Peirce spaces read in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The Six Subspaces and the Four Complex Products*. That layer is the worked case of the whole article, the ternary structure being the $J^{*}$-algebra of the biquaternion algebra and the binary one the Hermitian Jordan algebra of degree two.
+For $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the star-involution the Hermitian subspace is a Jordan algebra of degree two, isomorphic to $H_{2}(\mathbb{C})$, with two orthogonal idempotents and the Peirce spaces read in *The 12 Products of the Biquaternion Complex Space* and *The Six Subspaces and the Four General Products*. That layer is the worked case of the whole article, the ternary structure being the $J^{*}$-algebra of the biquaternion algebra and the binary one the Hermitian Jordan algebra of degree two.
 
 ## Summary
 

@@ -328,7 +328,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 - *Noether's Theorem in Biquaternionic Form* — the framework's scalar Lagrangian, whose complex-field normalization is discussed in the companion notes.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector's basis, its four-vectors, and the imaginary-scalar/real-vector structure of the connection.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula.
-- *Maxwell's Equations in the Biquaternionic Form* — the abelian potential and field strength that the gauge field mass modifies.
+- *Maxwell's Equations in the Biquaternionic Formulation* — the abelian potential and field strength that the gauge field mass modifies.
 - *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — the left/right matter-representation question that the non-abelian scalar inherits.
 - *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, which the unitary gauge here chooses rather than derives.
 - *Biquaternion Algebra* — the multiplication rule, the conjugations, and the center used throughout.

@@ -123,7 +123,7 @@ $$
 \tilde{F} \;=\; \underbrace{i\sqrt{\epsilon}\,\mathbf{E}}_{\text{timelike planes}\;\in\,\mathbb{M}_+} \;-\; \underbrace{\sqrt{\mu}\,\mathbf{H}}_{\text{spacelike planes}\;\in\,\mathbb{M}_-}.
 $$
 
-The electric part is a combination of the three planes that contain the time direction, and the magnetic part a combination of the three that do not. This is the plane-geometric form of the algebra asymmetry: the electric field is a *boost-type* object and the magnetic field a *rotation-type* object, in the sense that the timelike planes generate the Lorentz boosts and the spacelike planes the rotations (*Biquaternion Lie Algebra*). The six components of the field are the six planes, and the field is a sum of one plane of each type.
+The electric part is a combination of the three planes that contain the time direction, and the magnetic part a combination of the three that do not. This is the plane-geometric form of the algebra asymmetry: the electric field is a *boost-type* object and the magnetic field a *rotation-type* object, in the sense that the timelike planes generate the Lorentz boosts and the spacelike planes the rotations (*The 12 Products of the Biquaternion Complex Space*). The six components of the field are the six planes, and the field is a sum of one plane of each type.
 
 Two familiar facts are read off from the plane type and are recorded here because the corpus states them separately elsewhere. The **quaternion conjugate** of the field reverses the electric planes and fixes the magnetic ones,
 

@@ -86,7 +86,7 @@ $$
 \alpha(A^*A)=\lambda I,\quad \alpha(BB^*)=\lambda^{-1}I,\quad AA^*=\mu I,\quad B^*B=\mu^{-1}I ;
 $$
 
-in particular, if $A$ and $B$ are unitary then $\lambda=\mu=1$ and $S_{A,B}$ is unitary, and conversely $S_{A,B}$ unitary with $A$ and $B$ invertible makes the four products central scalars, so each parameter is unitary up to a central scalar.
+in particular, if $A$ and $B$ are unitary then $\lambda=\mu=1$ and $S_{A,B}$ is unitary, and conversely $S_{A,B}$ unitary with $A$ and $B$ invertible makes the four general products central scalars, so each parameter is unitary up to a central scalar.
 
 *Proof.* Unitarity is the isometry together with the co-isometry; the isometry gives $\alpha(A^*A)$ and $\alpha(BB^*)$ reciprocal central scalars, the co-isometry gives $AA^*$ and $B^*B$ reciprocal central scalars, and the two pairs give the display. Sufficiency for unitary $A,B$ is immediate since $A^*A=AA^*=I$ and the same for $B$; the converse reads the centrality off the two-sided identities.
 

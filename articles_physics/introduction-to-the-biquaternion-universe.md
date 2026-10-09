@@ -142,6 +142,20 @@ with every entry positive and the four directions of $\mathbb{B}$ on an equal fo
 
 Multiplying by $i$ exchanges the two sectors, $i\mathbb{M}_+ = \mathbb{M}_-$, and reverses the sign of the form, $N(i\tilde{Q}) = -N(\tilde{Q})$; that is the algebraic content of the mirror relation between the two signatures. The Minkowski signature is therefore not an independent input of the theory. It is what the algebra's own form looks like once the time coordinate is written $ict$ — the same biquaternion norm, read on the material sector, with $i^2 = -1$ supplying the minus.
 
+### The Two Forms of One Element
+
+The body has so far developed one form, the biquaternion norm $N$. The Summary names a second, the **Hermitian form** on $\mathbb{M}_+$, and it is defined here so that the two agree. It is
+
+$$
+H(\tilde{Q},\tilde{P}) = \sum_{\mu=0}^{3} Q_\mu\overline{P_\mu},
+$$
+
+the sum of the four coordinates of one element against the conjugates of the four coordinates of the other. It is conjugate-symmetric, $H(\tilde{Q},\tilde{P}) = \overline{H(\tilde{P},\tilde{Q})}$, and **positive definite**: its diagonal is the sum of the modulus squares of the coordinates, $H(\tilde{Q},\tilde{Q}) = \sum_\mu|Q_\mu|^{2}$, which vanishes only at $\tilde{Q} = 0$. It is the coefficient of $e_0$ in the sesquilinear square $\tilde{Q}\tilde{Q}^{*}$.
+
+The two forms are two readings of one element, and they part company at once. The norm is complex and vanishes on the null cone; the Hermitian form is positive, zero only at the origin. At $\tilde{Q} = e_0 + ie_3$ the two already differ, $N = 0$ while $H = 2$: the same element is a null direction for the interval and a state of positive weight. That is the reading. The norm is the **interval**, whose real part on the material sector is $-c^{2}dt^{2} + d\mathbf{x}^{2}$ and whose zero set is the light cone; the Hermitian form is the **probability weight**, the form the Born rule draws on, whose zero set is not a cone but the single state zero. One element carries both, and the framework's account of why the causal and the probabilistic structures coexist is that they are two forms on one algebra and not two algebras.
+
+Each form also carries a second number, and the two numbers are read differently. The norm decides invertibility: $N(\tilde{Q}) = 0$ is the zero-divisor condition. The Hermitian square carries a **rank**, read in the matrix model of the algebra, two when $N(\tilde{Q})\neq0$ and one when $N(\tilde{Q}) = 0$. The rank is read as a count of polarisations, two for the massive type and one for the massless, in *Mass, Rank and the Positivity of the Dagger*, which also develops the matrix model in which the rank is taken and the cone that the form's diagonal generates; the form read as a product rather than as a form is *The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*. Recomputed on $100$ random elements: the form conjugate-symmetric and positive throughout, and the rank two off the null cone and one on it, on $100$ of $100$.
+
 ## What the Framework Achieves
 
 The main result of the framework so far is that the biquaternion algebra **contains, as a matter of algebra, the structures required for both relativity and quantum physics**. They are not incompatible sectors of physics that must be glued together; they are two aspects of the same algebra, appearing in its two complementary subspaces.
@@ -184,6 +198,10 @@ The most significant feature of the framework is that **relativity and quantum p
 
 This is the sense in which the framework is proposed as an alternative to the standard formulation: not as a modification of relativity or of quantum physics, but as a **common algebraic ground** on which both can be expressed.
 
+### The Two Slots of One Product
+
+Every product of the algebra reads two elements, one in each **slot**, and in the framework's two sesquilinear products the slots are not interchangeable: one is read plainly and the other through a conjugation. That asymmetry is the algebraic form of the two roles a quantum description pairs — an element and the adjoint of another — and it is the reason the Born weight above can be read as the scalar part of a product on the algebra rather than as a pairing imposed from outside. The four products, the two slots and their four readings are *The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*; the state and observable roles, the gauge action generated inside the algebra, and the chirality of that action are *Observables, Gauge Generators and the Chirality of the Internal Action*.
+
 ## Status and Open Questions
 
 The framework is a **research program**, not a finished theory. The algebraic results — that $\mathbb{M}_-$ carries the four-vectors of relativity and that $\mathbb{M}_+$ carries the operator algebra of quantum physics — are established mathematics, and the identifications with the physical theories are developed in the companion articles.
@@ -224,6 +242,7 @@ The framework is a research program, not a finished theory. The algebraic identi
 | $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 = ict\,e_0 + \mathbf{x}$ | Material element, both writings; $q'_0 = ct$, $q_k = x_k$ |
 | $\tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = (ct')\,e_0 + i\mathbf{x}'$ | Informational element, both writings; $q_0 = ct'$, $q'_k = x'_k$ |
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$, signature $(-,+,+,+)$ on the real material sector |
+| $H(\tilde{Q},\tilde{P}) = \sum_\mu Q_\mu\overline{P_\mu}$ | Hermitian form, positive definite; the probability weight, $H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$; the coefficient of $e_0$ in $\tilde{Q}\tilde{Q}^{*}$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): coordinates $(ict, x, y, z)$, parameters $q'_0, q_1, q_2, q_3$ |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector): coordinates $(ct', ix', iy', iz')$, parameters $q_0, q'_1, q'_2, q'_3$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace (home of the rotation rotors): the real half, all four coefficients real, fixed points of complex conjugation; a subalgebra |

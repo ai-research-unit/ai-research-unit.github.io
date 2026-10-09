@@ -399,7 +399,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 - *The Magnetic Monopole in Biquaternionic Form* — the topological magnetic charge $Q_m$ and the singular point monopole.
 - *The Skyrme Model and the Topological Baryon in Biquaternionic Form* — the same $\pi_3$ read as the baryon winding on the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$.
 - *The Wick Rotation in the Biquaternion Universe* — the identification $\mathbb{M}_-\leftrightarrow\mathbb{H}_{\mathbb{B}}$ and the Euclidean slice.
-- *Biquaternion Topology* — the contractibility of $\mathbb{B}$, the unit group and the null cone.
+- *The Euclidean Topology of the Biquaternion Algebra*, *The Biquaternion Unit Group as a Topological Group* and *The Null Quadric and Its Projective Geometry* — the contractibility of $\mathbb{B}$, the unit group and the null cone.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the field equation and the Riemann–Silberstein structure of the abelian sector.
 - *The Gauge Principle in Biquaternionic Form* — the central $U(1)$ and the local gauge structure.
 - *The Klein–Gordon Equation in Biquaternionic Form* — the free scalar field that supplies no potential.

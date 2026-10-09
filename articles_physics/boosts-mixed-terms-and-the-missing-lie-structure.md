@@ -199,6 +199,14 @@ and the alternating solution space is **zero**; the trace form $K$ was recompute
 $\operatorname{Tr}(L_{\tilde A}L_{\tilde B})$ and equals $3A_0B_0-2(\mathbf A,\mathbf B)$ to
 $4.0\times10^{-15}$; and its invariance failure at the triple $(e_0,e_1,e_1)$ is $-4$.
 
+**Reading (the only invariant reads the time direction).** The one invariant form, $\varphi(\tilde P,\tilde Q)=P_0Q_0$,
+reads the scalar coordinate alone, and its radical is the whole vector subspace: it is blind to every
+spatial direction and to every mixed term. On the material sector the scalar coordinate is the time
+coordinate, so the single invariant the operation carries isolates the **temporal** direction and supplies
+no invariant geometry of space, and no invariant read of the boost-like directions. The degeneracy of the
+invariant-form space is therefore not only an algebraic scarcity: the one direction it sees is the time
+direction, exactly the direction the boost-like part mixes.
+
 ## The Missing Lie Structure
 
 The failure of the Jacobi identity and the degeneracy of the invariant forms are two faces of the same
@@ -219,6 +227,14 @@ the operation but **missing above the derived subalgebra**: the operation is a L
 $\mathrm{Vect}(\mathbb{B})$ and not on $\mathbb{B}$, exactly as *The Jacobi Failure and the Associator
 Defect of the Antisymmetric Quaternionic Algebra* proves.
 
+**Open question (a higher structure, not claimed).** Whether the Jacobi failure is a defect or the first
+sign of a **higher** structure — a homotopy bracket, an $L_\infty$ or $A_\infty$ structure, whose
+Jacobiator is a three-bracket rather than a zero — is recorded and not settled. The corpus proves only
+that the failure is the difference of the two bracketings and that the derived bracket is a Lie algebra on
+$\mathrm{Vect}(\mathbb{B})$; it constructs no higher bracket. Reading the failure as the first layer of a
+higher structure is a proposal, labelled as one, and needs a defined higher bracket before it is more than
+a name.
+
 **No inner derivation.** *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* computes the
 operators of the bracket: the trace of $L_{\tilde A}$ is $3A_0$ rather than $0$, the rank is $3$ off the
 isotropic cone and drops to $2$ on it, the commutator of two operators deviates from the operator of the
@@ -228,6 +244,12 @@ the vector subspace, the same algebra that appears in the Lie case as the inner 
 automorphism group of the bracket is the group of linear maps preserving the cross product of the vector
 subspace and fixing $e_0$, of complex dimension three.
 
+**Reading (no self-generated gauge transformation).** Because every derivation of the operation is
+**outer**, the bracket generates no transformation of itself. A gauge transformation attached to the
+algebra would be an inner derivation; here there is none, so the internal transformations the framework
+uses cannot be produced by the bracket and must be supplied by the **associative** one-sided action. An
+operation whose derivations are all outer has its symmetry outside itself.
+
 ## The Reading: What the Missing Structure Costs
 
 **Proposed reading, labelled as such.**
@@ -236,6 +258,23 @@ subspace and fixing $e_0$, of complex dimension three.
   the cross product, and fails as soon as a boost-like mixed term is present; the failure needs a scalar
   part in one argument and two non-parallel vector parts in the other two. So the obstruction is the price
   of the boost-like part of the bracket, and the compact rotation part is untouched.
+- **The bracket spans two sectors, and closure is the price.** The value of the bracket of two material
+  operations is not material: it is a rotation in $\mathbb{M}_-$ plus a boost in $\mathbb{M}_+$, so the
+  material sector is not closed under the bracket either. The failure is not an accident of one term; it is
+  the price of an operation asked to produce two sectors at once.
+- **The non-invariance is an anomaly of the internal symmetry.** The trace form $K$ is non-degenerate but
+  not invariant, and its failure of invariance is exactly the Jacobiator. That is the pattern of an
+  **anomaly**: a symmetry that cannot be preserved by the structure that would carry it. The reading is
+  offered as a name for the pattern and is not claimed as a physical anomaly of a gauge theory.
+- **The one invariant reads the time direction.** The only invariant form, $\varphi=P_0Q_0$, is blind to
+  the vector part, so the single invariant of the operation isolates the temporal direction and carries no
+  invariant geometry of space — the direction the boost-like part mixes is exactly the direction that is
+  invisible to the only invariant there is.
+- **The symmetry is outside the operation.** Every derivation is outer, so the bracket generates no
+  transformation of itself: a gauge transformation attached to the algebra, an inner derivation, does not
+  exist here, and the internal transformations must come from the associative action.
+- **A higher structure is an open proposal.** Whether the Jacobi failure is a defect or the first layer of
+  a homotopy ($L_\infty$/$A_\infty$) structure is recorded as an open question and not claimed.
 - **The bracket is a deformed cross product, not a Lie algebra.** The operation is the cross product of
   the vector subspace plus the mixed terms; the mixed terms make the centre act, so the bracket is a
   **deformation** of the cross product in which the algebra's centre has ceased to be central, not a
@@ -273,12 +312,18 @@ three-dimensional derivation algebra of the operators.
 **Readings.** That the mixed term is the boost-like part of the bracket and the cross term the compact
 rotation part; that the failure is a boost phenomenon; that the bracket is a deformation of the cross
 product in which the centre is not central; that the missing structure is exactly the Killing structure;
-that the internal group is read off the associative one-sided action and not off this bracket.
+that the internal group is read off the associative one-sided action and not off this bracket; that the
+bracket spans two sectors and closure is the price; that the non-invariance of the trace form is an anomaly
+of the internal symmetry; that the one invariant reads the time direction; that the symmetry is outside the
+operation, all derivations being outer.
 
 **Not claimed.** That a physical operation is a biquaternion, or that the mixed term **is** a physical
 boost. That the bracket can be repaired into a Lie algebra. That the framework lacks a gauge group or a
 gauge algebra; both are reached elsewhere. That the rank-one invariant $\varphi$ is a physical pairing of
-significance — it is a trivial invariant of the operation, not a metric.
+significance — it is a trivial invariant of the operation, not a metric. That the "anomaly" naming is a
+physical anomaly of a gauge theory, or that "spanning two sectors" and "the symmetry is outside" are
+forced readings; and that a higher homotopy structure exists behind the Jacobi failure — it is an open
+question.
 
 ## Summary
 
@@ -301,7 +346,13 @@ above the derived subalgebra**, and the reading is that the missing structure is
 structure of a gauge algebra: the quaternionic bracket is a deformation of the cross product in which the
 centre is not central, and the internal group is reached by the **associative** one-sided action of
 *Observables, Gauge Generators and the Chirality of the Internal Action* and bounded by *The Gauge Group
-Ceiling*, not by this bracket. The operation, its class and its table are *Introduction to the
+Ceiling*, not by this bracket. Three further readings are recorded in the reading list, all labelled as
+such: the bracket of two material operations is a rotation in $\mathbb{M}_-$ plus a boost in $\mathbb{M}_+$
+and so **spans two sectors**, the non-invariance of the trace form is the pattern of an **anomaly** of the
+internal symmetry, and the single invariant $\varphi=P_0Q_0$ reads only the **time direction**, the vector
+part being in its radical. Whether the Jacobi failure is a defect or the first layer of a **higher**
+(homotopy) structure is recorded as an open question and not claimed. The operation, its class and its
+table are *Introduction to the
 Antisymmetric Quaternionic Algebra of Biquaternions*; the failure and the associator criterion are *The
 Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*; the invariant forms
 are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*; the operators are
@@ -327,8 +378,8 @@ are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*; th
 
 - *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
   which this block sits.
-- Mathematics article *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
-  (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve
+- Mathematics article *The 12 Products of the Biquaternion Complex Space*
+  (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve
   operations, the method of the decomposition and the laws of each.
 - Mathematics article *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*
   (`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.md`), for the

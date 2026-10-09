@@ -247,7 +247,7 @@ the eigenvalues then being $2\pi i(k\pm j)/2$. If $B = 0$ but $\mathbf{Q} \neq 0
 
 ### The Exponential in the Two Real Directions
 
-Let $\hat{n}$ be a real unit vector part, so that $\hat{n}^2 = -e_0$. The two real three-dimensional families of exponents — the bivector directions $\theta\hat{n}$ and the vector directions $\psi\, i\hat{n}$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+Let $\hat{n}$ be a real unit vector part, so that $\hat{n}^2 = -e_0$. The two real three-dimensional families of exponents — the bivector directions $\theta\hat{n}$ and the vector directions $\psi\, i\hat{n}$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in *The 12 Products of the Biquaternion Complex Space*.
 
 **The bivector directions.** For real $\theta$,
 

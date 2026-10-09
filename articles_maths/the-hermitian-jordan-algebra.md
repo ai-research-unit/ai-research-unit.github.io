@@ -136,7 +136,7 @@ $$
 
 **Proof.** A Hermitian idempotent is a matrix $P$ with $P^2 = P = P^{*}$, that is an orthogonal projection, and its image is the subspace it projects onto. A complete family of pairwise Jordan-orthogonal Hermitian idempotents is a family of pairwise orthogonal projections summing to the identity, that is an orthogonal decomposition of $\mathbb{C}^{n}$ into the images; such a decomposition has at most $n$ nonzero members, and the $n$ matrix units $E_{11}, \dots, E_{nn}$ realise the bound, so the degree is $n$. For $n = 1$ the only nonzero idempotent is $1$, and for $\mathbb{C}$ with the conjugation the Hermitian elements are real and $1$ is the only nonzero idempotent; in both cases the degree is $1$. $\square$
 
-**Remark.** The degree is the number of the pieces of a complete orthogonal decomposition, and it is not the number of elements of a basis of $J(A)$: the two coincide only in the smallest cases. In the biquaternion layer the same invariant is two, the Hermitian subspace carrying two orthogonal idempotents, as recorded in *The Six Subspaces and the Four Complex Products*.
+**Remark.** The degree is the number of the pieces of a complete orthogonal decomposition, and it is not the number of elements of a basis of $J(A)$: the two coincide only in the smallest cases. In the biquaternion layer the same invariant is two, the Hermitian subspace carrying two orthogonal idempotents, as recorded in *The Six Subspaces and the Four General Products*.
 
 ## The Quadratic Representation
 
@@ -174,7 +174,7 @@ For $A = \mathbb{H}$ with the quaternion conjugation over the datum $(\mathbb{R}
 
 ### The Biquaternion Algebra
 
-For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the Hermitian subspace is a Jordan algebra of degree two over $\mathbb{R}$, isomorphic to $H_2(\mathbb{C})$, with the two idempotents $\tilde{\Pi}_1$ and $\tilde{\Pi}_2$ as a complete Jordan-orthogonal family and the Peirce spaces of $\tilde{\Pi}_1$ reading $\mathbb{C}\tilde{\Pi}_1$, the span of $e_1$ and $e_2$, and $\mathbb{C}\tilde{\Pi}_2$. That layer is *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The Six Subspaces and the Four Complex Products*, and it is the worked case in which everything of this article is computed on a basis of eight elements.
+For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the Hermitian subspace is a Jordan algebra of degree two over $\mathbb{R}$, isomorphic to $H_2(\mathbb{C})$, with the two idempotents $\tilde{\Pi}_1$ and $\tilde{\Pi}_2$ as a complete Jordan-orthogonal family and the Peirce spaces of $\tilde{\Pi}_1$ reading $\mathbb{C}\tilde{\Pi}_1$, the span of $e_1$ and $e_2$, and $\mathbb{C}\tilde{\Pi}_2$. That layer is *The 12 Products of the Biquaternion Complex Space* and *The Six Subspaces and the Four General Products*, and it is the worked case in which everything of this article is computed on a basis of eight elements.
 
 ## Summary
 

@@ -17,7 +17,7 @@ The construction is a duality of the form and not enveloping algebra. The form i
 
 ## The Pairing That Association Uses
 
-The form is used here, not developed. Its definition, its coefficient Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$, its determinant $\det D=-1$, its inertia $(1,3)$, its realified signature $(4,4)$ and its restriction to the six distinguished subspaces are the matter of *The Four Pairings of the Biquaternion Algebra* and of *The Six Subspaces under the General Plain Algebra of Biquaternions*. The two facts this article needs are that the form is $\mathbb{C}$-bilinear, symmetric and non-degenerate, and that its Gram matrix in the coefficient basis is $D$; both are read from *The Four Pairings of the Biquaternion Algebra*.
+The form is used here, not developed. Its definition, its coefficient Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$, its determinant $\det D=-1$, its inertia $(1,3)$, its realified signature $(4,4)$ and its restriction to the six distinguished subspaces are the matter of *The Four Pairings of the Biquaternion Algebra* and of *The Six Subspaces under the General Plain Algebra of Biquaternions*. The two facts this article needs are that the form is $\mathbb{C}$-bilinear, symmetric and non-degenerate, and that its Gram matrix in the coefficient basis is $D$; both are read from that article.
 
 **Remark (association uses the plain product, not the norm).** The pairing here is the scalar part of the plain product, of Gram matrix $D$. The companion **general quaternionic bilinear form** $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$ of *Biquaternion Norm and Invertibility* is the polarisation of the norm, of Gram matrix $\mathrm{I}_4$, and it gives a second transpose, different off the operators that fix the scalar unit and preserve the vector part. The distinction of $D$ and $\mathrm{I}_4$ is the whole of the difference, as *The Four Pairings of the Biquaternion Algebra* records.
 
@@ -135,7 +135,7 @@ The **associate** $F^{\approx}$ of a $\mathbb{C}$-linear map of the biquaternion
 
 ## Further Reading
 
-- *The Four Adjoints of the Biquaternion Algebra in Examples* (`articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.md`), for the associate $\approx$ side by side with the three other adjoints of the other three forms, on explicit matrices
+- *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the associate $\approx$ side by side with the three other adjoints of the other three forms, on explicit matrices
 - *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.md`), for the Conway operator basis, the regular representations and the bi-module structure
 - *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the positive definite adjoint the dagger names
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the positive definite form the adjoint uses

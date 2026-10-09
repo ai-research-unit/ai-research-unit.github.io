@@ -196,7 +196,7 @@ reading.
 The identity of the two forms on the observables is the reason the block is compatible with the
 probability structure of the frame: the classical composition and the Born pairing share their form on
 the observables. That coincidence is a statement about $\mathbb{M}_+$ alone; on $\mathbb{M}_-$ the two
-differ by sign, and the comparison is *The Four Products and Their Physical Readings: the Two Algebras and
+differ by sign, and the comparison is *The Four General Products and Their Physical Readings: the Two Algebras and
 the Two Sesqualgebras*.
 
 ## The Classical Composition
@@ -236,6 +236,14 @@ over $\mathbb{R}$ on the observables. The invariance of the form is *The Trace F
 the Symmetric Plain Algebra*, and its positivity as a form is *Positivity and the Hermitian Cone of the
 Biquaternion Algebra with Hermitian Adjoint*.
 
+**Proposed reading, speculative and labelled as such.** The symmetric half pairs an observable with
+itself and returns a positive observable; the antisymmetric half vanishes on the diagonal, so an
+observable is never incompatible with itself. Offered as a speculation, the symmetric half is the
+**Bose-like** composition — joint knowability, a symmetric pairing — and the antisymmetric half the
+**Fermi-like** one — no self-pairing, alternation. *Not claimed:* that the framework derives the
+spin–statistics theorem; the statistics are owned by *Anyons and Braid Statistics in Biquaternionic
+Form*.
+
 ## The Bound
 
 **What the section does not claim.** The classical composition is a reading. It does not say that the
@@ -266,8 +274,9 @@ $\mathbb{M}_+$, and equal there to the Hermitian form $\mathrm{Sc}(\tilde P\tild
 
 **Readings.** That the symmetrised product is the **classical composition** of two observables, the
 composition on which the order does not act; that the observables are a **Jordan algebra**; and that the
-invariance of the trace form is the **absence of an orientation**. Each is the framework's naming of a
-proved algebraic fact and is labelled as such.
+invariance of the trace form is the **absence of an orientation**; and, speculatively, that the two
+halves of the composition are the two statistics. Each is the framework's naming of a proved algebraic
+fact and is labelled as such.
 
 **Not claimed.** That the observables compose classically in a physical sense; that the trace form is the
 metric, the interval or a Hamiltonian; that the coincidence with the Born pairing extends off

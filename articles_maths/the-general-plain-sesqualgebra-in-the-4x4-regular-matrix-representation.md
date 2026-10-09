@@ -77,7 +77,7 @@ The action defines the surjective homomorphism $SL_2(\mathbb{C})\to SO^{+}(1,3)$
 
 **A Hermitian element.** Let $\tilde{Q}=e_0+ie_3$. Then $\tilde{Q}^{*}=\tilde{Q}$ and $\rho_L(\tilde{Q})^{\dagger}=\rho_L(\tilde{Q})$, so the regular matrix is Hermitian; the square is $\tilde{Q}\star\tilde{Q}=\tilde{Q}^2=e_0+2ie_3+(ie_3)^2=2e_0+2ie_3=2\tilde{Q}$, a positive semidefinite element, and the diagonal of the pairing is $4\lVert\tilde{Q}\rVert_E^2=8$.
 
-**A zero divisor.** Let $\tilde{Q}=e_0+ie_1$. Then $\det\rho_L(\tilde{Q})=N(\tilde{Q})^2=0$ and the regular matrix is singular of rank two, while $\lVert\rho_L(\tilde{Q})\rVert_F^2=4\lVert\tilde{Q}\rVert_E^2=8$: the element is a zero divisor and yet a definite one for the sesquilinear form.
+**A zero divisor.** Let $\tilde{Q}=e_0+ie_1$. Then $\det\rho_L(\tilde{Q})=N(\tilde{Q})^2=0$ and the regular matrix is singular of rank two, while $\lVert\rho_L(\tilde{Q})\rVert_F^2=4\lVert\tilde{Q}\rVert_E^2=8$: the element is a zero divisor and yet a definite one for the general plain sesquilinear form.
 
 ## Summary
 
@@ -96,7 +96,7 @@ The left regular representation is a $*$-representation, $\rho_L(\tilde{Q}^{*})=
 
 ## Further Reading
 
-- *Introduction to the $4\times4$ Regular Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-4x4-regular-matrix-representation-of-biquaternions.md`), for the representation and its first properties
+- *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-4x4-regular-matrix-representation-of-biquaternions.md`), for the representation and its first properties
 - *Biquaternion 4×4 Regular Matrix Element Representation* (`articles_maths/biquaternion-4x4-regular-matrix-element-representation.md`), for the further reading of the regular representation
 - *Introduction to the General Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.md`), for the sesquilinear product on the algebra
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the form on the algebra

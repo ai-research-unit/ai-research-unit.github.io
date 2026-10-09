@@ -123,7 +123,7 @@ $$
 \{e_0,e_0,e_0\}=e_0 , \qquad \{e_1,e_1,e_0\}=e_0 , \qquad \{e_1,e_2,e_0\}=-e_3 ,
 $$
 
-and the third is the plain-symmetry failure: $\{e_2,e_1,e_0\}=e_3$. The first variable enters as the ordinary product on the left, the middle as the conjugate, and the third as the ordinary product on the right, so raising the outer variables and the middle variable by the basis reproduces the four products of the corpus read with their three slot conventions.
+and the third is the plain-symmetry failure: $\{e_2,e_1,e_0\}=e_3$. The first variable enters as the ordinary product on the left, the middle as the conjugate, and the third as the ordinary product on the right, so raising the outer variables and the middle variable by the basis reproduces the four general products of the corpus read with their three slot conventions.
 
 **Proof.** Each is $\tilde P\tilde Q^{*}\tilde R$ evaluated with the basis, using $e_k^{*}=-e_k$ and the products $e_1e_2=e_3$, $e_2e_1=-e_3$. $\square$
 
@@ -161,11 +161,11 @@ The general theory of *Algebraic J\*-Algebras* attaches the Jordan triple identi
 
 ### The Failure for the Fourth Product
 
-**Theorem (the sibling).** For the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ of *The Four Biquaternion Complex Products*, whose ternary product is the left model, the Jordan triple identity fails: at $(\tilde X,\tilde Y,\tilde U,\tilde V,\tilde W)=(e_0,e_1,e_0,e_2,e_0)$ the left-hand side is $e_3$ and the right-hand side is $-3e_3$.
+**Theorem (the sibling).** For the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, whose ternary product is the left model, the Jordan triple identity fails: at $(\tilde X,\tilde Y,\tilde U,\tilde V,\tilde W)=(e_0,e_1,e_0,e_2,e_0)$ the left-hand side is $e_3$ and the right-hand side is $-3e_3$.
 
 **Proof.** The statement and its proof are the theorem and the corollary of *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, §*The Ternary Product*, where the two sides are computed and the failure is read as the transposition of the two models by the insertion of the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot. $\square$
 
-**Remark.** The comparison is sharp: the same construction applied to the two sesquilinear products of the corpus gives the middle model for the derived operation and the left model for the $\natural$-isotope, and only the first is in the class. The two products are related by the insertion of a $\mathbb{C}$-linear map in the first slot, by *Comparison Between the Four Biquaternion Products*, and it is that insertion, and not the sesquilinearity, that moves the involution out of the middle slot and destroys the identity.
+**Remark.** The comparison is sharp: the same construction applied to the two sesquilinear products of the corpus gives the middle model for the derived operation and the left model for the $\natural$-isotope, and only the first is in the class. The two products are related by the insertion of a $\mathbb{C}$-linear map in the first slot, by *Comparison Between the Four General Products*, and it is that insertion, and not the sesquilinearity, that moves the involution out of the middle slot and destroys the identity.
 
 | ternary product | model | Jordan triple identity |
 |---|---|---|

@@ -11,9 +11,9 @@ Two of the six distinguished subspaces of the biquaternion algebra are the two s
 
 Each of the four is a physical object before it is an algebraic one. The complex time sector is where the two times and the global phase live; the complex space sector is where the electromagnetic field strength and the generators of the Lorentz transformations live; the real sector is the Euclidean, or Wick-rotated, reading of the four-vector space, and it is the home of the rotation rotors; the imaginary sector is the sector every coefficient of which carries the central imaginary, the sector of the boost generators.
 
-Two facts are fixed for each of the four. The first is **how its dimension is written**: as a real dimension always, and as a complex dimension in the two cases where that second writing exists. The second is **which physics it carries**: the two time coordinates $ict$ and $ct'$ for the first, the two space blocks $\mathbf{x}$ and $i\mathbf{x}'$ for the second, the mixed assignments for the last two. Together the four account for the whole of the physical dictionary of a biquaternion, since the two sectors account for the rest.
+Three facts are fixed for each of the four. The first is **how its dimension is written**: as a real dimension always, and as a complex dimension in the two cases where that second writing exists. The second is **which physics it carries**: the two time coordinates $ict$ and $ct'$ for the first, the two space blocks $\mathbf{x}$ and $i\mathbf{x}'$ for the second, the mixed assignments for the last two. The third is **whether the four forms of the algebra carry an alternating companion on it**, the *area pairing* of the sector: present on the complex time and on the complex space sector, and absent on the real and on the imaginary one. Together the four account for the whole of the physical dictionary of a biquaternion, since the two sectors account for the rest.
 
-The definitions, the involution that cuts out each subspace and the parameter dictionary are fixed in *Conventions in the Biquaternion Universe*; the place of the four among the six is in *Relations Between Subspaces*. This article counts the dimensions and places the physics.
+The definitions, the involution that cuts out each subspace and the parameter dictionary are fixed in *Conventions in the Biquaternion Universe*; the place of the four among the six is in *Relations Between Subspaces*; the four forms read on each of the four, with their real and imaginary parts, are *The Six Subspaces and the Four Forms*. This article counts the dimensions, places the physics and names the area pairing.
 
 ## The Four Sectors and Their Physics
 
@@ -25,6 +25,8 @@ It carries **both temporal directions and no spatial one**. The real direction, 
 
 Its physics is the physics of a number. A quantity that can take a definite value at the same time as every other is a central quantity, and the sector is exactly that: the complex time, the energy as a global scalar, and the global phase. The Hermitian element $h_0 e_0$ generates the phase $\exp(-i h_0 t/\hbar)e_0$, which acts on every object of the algebra in the same way, which no measurement can detect by interference, and which is nevertheless indispensable to the dynamics. This is the c-number sector, the classical part of the algebra.
 
+**Its area pairing.** The two temporal directions $e_0$ and $ie_0$ form one **canonical pair**, and the complex time sector is the sector of one degree of freedom. The four forms of the algebra carry, besides their real parts, an alternating companion — the pairing whose value on two elements is an area — and that companion is non-degenerate exactly on the two sectors of the complex time and of the complex space (*The Six Subspaces and the Four Forms*). Here it is of rank $2$, and its one non-zero entry pairs the informational time $ct'$ with the material time $ict$; on the material time alone, or on the informational time alone, it vanishes. The complex axis is therefore not only two directions written on one line: it is one canonical pair, and the area pairing is what the line carries besides the two coordinates. This is a different object from the global phase just named, and the two must not be conflated: the global phase is a number, and the area pairing is what makes the two times conjugate.
+
 ### The Complex Space Sector $\mathrm{Vect}(\mathbb{B})$
 
 This is the set of elements with vanishing scalar part, the traceless part of the algebra; it is also the derived subspace $[\mathbb{B}, \mathbb{B}]$, spanned by all commutators, and it is a Lie algebra. Its elements are the complex vectors $z_1 e_1 + z_2 e_2 + z_3 e_3$.
@@ -32,6 +34,8 @@ This is the set of elements with vanishing scalar part, the traceless part of th
 It carries **both spatial blocks and no temporal one**. The three real directions carry the material space $\mathbf{x}$, the three imaginary ones the informational space $i\mathbf{x}'$, and the three complex coordinates are the three complex spatial directions $x + ix'$, $y + iy'$, $z + iz'$.
 
 Its physics is the physics of a complex three-vector. The central imaginary acts on this sector as an internal rotation — the electric–magnetic duality rotation — and the three complex coordinates are the complex combination of the electromagnetic field strength, so that the electric and the magnetic parts are the real and the imaginary parts of one complex object and the two classical field invariants are the real and imaginary parts of one complex form. The same six real directions carry the six generators of the Lorentz group: the three real vector units generate the rotations and the three imaginary ones the boosts, so a single complex three-vector is at once a field configuration and a generator of the transformations that act on it. That is the role the sector plays in the physics of spin one.
+
+**Its area pairing.** The sector is the home of three canonical pairs, one to each spatial direction. The alternating companion of the four forms is non-degenerate on it, of rank $6$, and its non-zero entries are exactly the pairs $(\text{direction}, i\,\text{direction})$: it pairs each **material** direction with its **informational** partner of the same name, $x$ with $ix'$, $y$ with $iy'$ and $z$ with $iz'$, and nothing else. A material direction alone pairs to nothing, and an informational direction alone pairs to nothing. So the six real directions of the sector are not six independent coordinates but three conjugate pairs, and the pairing that conjugates them is the alternating companion. This is the structure the complex field strength already carries: the central imaginary rotates one member of each pair into the other, which is the duality rotation, and the alternating companion measures the area spanned by the two partners — it is the invariant of the pair, as the real part is the invariant of a single direction.
 
 ### The Real Sector $\mathbb{H}_{\mathbb{B}}$
 
@@ -45,6 +49,8 @@ $$
 
 Its physics is the Euclidean four-dimensional geometry. Because no coefficient carries the $i$, the $ict$ writing is unavailable inside the sector: the temporal coefficient is real, the four-dimensional form is positive definite of signature $(4,0)$, there is no null direction and no light cone, and no direction is singled out as time. This is exactly what the Wick rotation produces, and it is why the sector is called real. The unit elements are the rotation rotors, and their action is the rotation of the material space, with the two-to-one cover of the rotation group.
 
+**No area pairing.** The alternating companion of the four forms is **zero** on the real sector. The reason is that the companion is read by multiplying one element by the central imaginary, and the multiplication by $i$ carries the sector out of itself: it sends $ct'\,e_0 + \mathbf{x}$ to $i(ct'\,e_0 + \mathbf{x})$, an element of the imaginary sector. The sector holds one member of each conjugate pair and never both — the informational time, whose partner is the material time, and the material space, whose partners are the informational directions — so there is no pair of directions inside the sector for the companion to join, and it vanishes identically. On the sector the four forms are real, each is recovered from its own diagonal, and the only pairing left is the real symmetric one of the diagonal.
+
 ### The Imaginary Sector $i\mathbb{H}_{\mathbb{B}}$
 
 This is the image of the real sector under multiplication by the central imaginary: the set of elements every coefficient of which is purely imaginary, with basis $ie_0, ie_1, ie_2, ie_3$. It is not a subalgebra — the product of two of its elements is real — only a module over the real sector.
@@ -56,6 +62,8 @@ $$
 $$
 
 Its physics is the sector of the imaginary coefficients and of the boost generators. The material time $ict$ is here, with the informational space $i\mathbf{x}'$, the reverse assignment to the real sector. It is also where the infinitesimal generators of the boosts lie, the three imaginary vector units $ie_1, ie_2, ie_3$; a finite boost does not lie in the sector, since its scalar part is real, so the sector holds the generators and the boosts themselves are obtained by leaving it. It is the negative-definite counterpart of the real sector, with no null direction and no light cone.
+
+**No area pairing.** The alternating companion is **zero** here too, and for the mirror reason: the multiplication by $i$ carries the imaginary sector into the real one, so the sector holds the other member of each conjugate pair — the material time and the informational space — and again never both members of a pair. The two mixed sectors are the two halves of the dictionary that each contain exactly one member of every conjugate pair, and the area pairing needs both.
 
 ## How the Dimensions Are Written
 
@@ -167,6 +175,8 @@ $$
 
 The real direction of the complex time sector is the one time direction it shares with the real sector, its imaginary direction the one it shares with the imaginary sector, and the complex space sector meets each of them in the corresponding three-dimensional spatial block. Multiplication by $i$ fixes the complex time and the complex space sector and exchanges the real and the imaginary one, which is the Wick rotation; quaternion conjugation fixes the complex time sector and negates the complex space sector; complex conjugation fixes the real sector and negates the imaginary one.
 
+**The area pairing sorts the four by pairs.** The alternating companion of the four forms is non-degenerate on exactly two of the four — the complex time sector, of rank $2$, and the complex space sector, of rank $6$ — and vanishes identically on the other two (*The Six Subspaces and the Four Forms*). The rule is one line and it is the pairing's own definition read on the blocks: **the companion joins each direction to its partner under multiplication by the central imaginary**, and it is available exactly on the two sectors that contain both members of a pair — the two temporal blocks for the complex time sector, the two spatial blocks for the complex space sector. The real and the imaginary sector contain one member of each pair and not the partner, so there the companion has no pair to join. This is of the same block-level kind as the first two facts: like the complex dimension, it is present exactly on the two sectors that the multiplication by $i$ preserves. The first fact and this one are in fact a single fact, since the complex dimension is the statement that $i$ closes on the sector and the area pairing is the invariant that closure brings.
+
 ## Summary
 
 Besides the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$, the algebra has four distinguished subspaces: the complex time sector $\mathbb{C}_{\mathbb{B}}$, the complex space sector $\mathrm{Vect}(\mathbb{B})$, the real sector $\mathbb{H}_{\mathbb{B}}$ and the imaginary sector $i\mathbb{H}_{\mathbb{B}}$. The first two are the two homogeneous sectors of the physical dictionary, the temporal one and the spatial one; the last two are the two mixed ones, each carrying one time and one space in the real and in the imaginary coefficient half.
@@ -174,6 +184,8 @@ Besides the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$, the algebra has four 
 Their dimensions are written as follows. Over the reals they are $2$, $6$, $4$ and $4$, the two pairs splitting the eight real dimensions of the algebra. Over the complex numbers only two of them have a dimension to write: the complex time sector is a complex line, of complex dimension $1$, and the complex space sector a complex three-space, of complex dimension $3$, these being exactly the two sectors that multiplication by the central imaginary preserves — the Wick exchange of the times and the duality rotation of the complex field. The real and the imaginary sector are exchanged by that multiplication and have no complex dimension.
 
 Physically the complex time sector carries both times and the global phase; the complex space sector carries both spaces, the electromagnetic field strength and the Lorentz generators; the real sector carries the informational time with the material space, the Euclidean four-vector and the rotation rotors; the imaginary sector carries the material time with the informational space and the boost generators.
+
+Read as pairings, the first two of the four carry an **area pairing** and the last two do not. The alternating companion of the four forms is non-degenerate on the complex time sector, of rank $2$, where it makes the two times one canonical pair, and on the complex space sector, of rank $6$, where it makes each material direction conjugate to its informational partner of the same name; on the real and on the imaginary sector it vanishes. So the four fall into the same two classes by the area pairing as by the complex dimension, and for the same reason: the pairing exists where the multiplication by the central imaginary closes on the sector and nowhere else.
 
 ## Summary of Notation
 
@@ -192,10 +204,13 @@ Physically the complex time sector carries both times and the global phase; the 
 | $i\mathbf{x}' = i(x' e_1 + y' e_2 + z' e_3)$ | Informational space |
 | $ct'\,e_0 + ict\,e_0$ | The complex time sector: both times on one complex axis |
 | $\mathbf{x} + i\mathbf{x}'$ | The complex space sector: both spaces in one complex vector |
+| the area pairing | The alternating companion of the four forms: non-degenerate on the complex time sector, of rank $2$, and on the complex space sector, of rank $6$, where it pairs each direction with its partner under multiplication by $i$; zero on the real and on the imaginary sector |
+| the complex dimension | Present exactly where the area pairing is present: on the two sectors the multiplication by $i$ preserves |
 
 ## Further Reading
 
 - *Conventions in the Biquaternion Universe*, for the six subspaces, the involution that defines each, the physical names and the parameter-to-coordinate dictionary.
+- *The Six Subspaces and the Four Forms* (mathematics), for the four forms read on each of the six subspaces, the real and the imaginary parts, the area pairing and its ranks, and the Kähler identity that reads the area pairing off the real part by the central imaginary.
 - *Relations Between Subspaces*, for the containment lattice of the six subspaces and the decompositions they induce.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the two sectors kept out of this article.
 - *Biquaternion Rotations and Lorentz Transformations* and *The Lorentz Group as Biquaternion Norm Automorphisms*, for the rotors and the boosts whose generators live in the real and the imaginary sector.

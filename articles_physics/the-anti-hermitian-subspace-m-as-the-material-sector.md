@@ -50,7 +50,7 @@ $$
 [\tilde{Q},\tilde{Y}] = \tilde{Q}\tilde{Y} - \tilde{Y}\tilde{Q} = 2\,\mathbf{q}\times\mathbf{r},
 $$
 
-a pure real vector, so the bracket image is the three-dimensional real vector part and the temporal direction $ie_0$ is central for the bracket. With that bracket $\mathbb{M}_-$ is a Lie algebra of dimension $4$, the direct sum of the central line and that three-dimensional bracket algebra. The symmetrised product, by contrast, always lies in the Hermitian subspace, $\tilde{Q}\tilde{Y} + \tilde{Y}\tilde{Q} \in \mathbb{M}_+$, so the product of two elements of $\mathbb{M}_-$ lies in $\mathbb{M}_+$ exactly when the two commute. This is the structural reason the four-vectors have a Lie-algebraic life alongside their vector-space life; the bracket, the $\mathbb{Z}/2$-grading it puts on the two sectors and the compact real form are the subject of the companion article *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+a pure real vector, so the bracket image is the three-dimensional real vector part and the temporal direction $ie_0$ is central for the bracket. With that bracket $\mathbb{M}_-$ is a Lie algebra of dimension $4$, the direct sum of the central line and that three-dimensional bracket algebra. The symmetrised product, by contrast, always lies in the Hermitian subspace, $\tilde{Q}\tilde{Y} + \tilde{Y}\tilde{Q} \in \mathbb{M}_+$, so the product of two elements of $\mathbb{M}_-$ lies in $\mathbb{M}_+$ exactly when the two commute. This is the structural reason the four-vectors have a Lie-algebraic life alongside their vector-space life; the bracket, the $\mathbb{Z}/2$-grading it puts on the two sectors and the compact real form are the subject of the companion article *The 12 Products of the Biquaternion Complex Space*.
 
 ### The Defining Involution
 
@@ -202,7 +202,7 @@ $$
 
 with the second summand carrying the whole bracket. This is the algebraic root of the fact that the four-vectors have both a "time component" and a "spatial part" and that the transformations mix them, while the bracket itself does not.
 
-**The derived algebra is the compact real form.** On $\mathbf{q},\mathbf{r}$ the bracket is twice the ordinary vector product of $\mathbb{R}^3$, so the derived algebra is the real span $\mathrm{K} = \langle e_1,e_2,e_3\rangle$ of the three real vector units — the compact real form $\mathfrak{su}(2)$, the same three-dimensional space that $\mathbb{M}_-$ shares with the quaternion subspace, $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} = \mathrm{K}$. The explicit bracket in that basis is $[e_j,e_k] = 2\sum_l\epsilon_{jkl}e_l$. Taken whole, $\mathbb{M}_-$ with this bracket is the real Lie algebra $\mathfrak{u}(2) = \mathbb{R}ie_0 \oplus \mathfrak{su}(2)$: a compact Lie algebra of dimension $4$, with a one-dimensional centre and a simple part. The Lie-algebraic life of the four-vectors is therefore an $\mathfrak{su}(2)$ acting on the spatial part, with the time direction as an inert central direction; the full algebra, its $\mathbb{Z}/2$-grading by the involution and its fellow brackets are the subject of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+**The derived algebra is the compact real form.** On $\mathbf{q},\mathbf{r}$ the bracket is twice the ordinary vector product of $\mathbb{R}^3$, so the derived algebra is the real span $\mathrm{K} = \langle e_1,e_2,e_3\rangle$ of the three real vector units — the compact real form $\mathfrak{su}(2)$, the same three-dimensional space that $\mathbb{M}_-$ shares with the quaternion subspace, $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} = \mathrm{K}$. The explicit bracket in that basis is $[e_j,e_k] = 2\sum_l\epsilon_{jkl}e_l$. Taken whole, $\mathbb{M}_-$ with this bracket is the real Lie algebra $\mathfrak{u}(2) = \mathbb{R}ie_0 \oplus \mathfrak{su}(2)$: a compact Lie algebra of dimension $4$, with a one-dimensional centre and a simple part. The Lie-algebraic life of the four-vectors is therefore an $\mathfrak{su}(2)$ acting on the spatial part, with the time direction as an inert central direction; the full algebra, its $\mathbb{Z}/2$-grading by the involution and its fellow brackets are the subject of *The 12 Products of the Biquaternion Complex Space*.
 
 **The symmetrised product goes to the other sector.** The commutator stays in $\mathbb{M}_-$; the anticommutator goes to the opposite sector,
 
@@ -216,7 +216,31 @@ $$
 \tilde{Q}^2 = -\left((q'_0)^2 + |\mathbf{q}|^2\right)e_0 + 2iq'_0\mathbf{q},
 $$
 
-with a real scalar part and an imaginary vector part. The product of two elements of $\mathbb{M}_-$ lands in $\mathbb{M}_+$ exactly in the commuting case, so the bracket $2\,\mathbf{q}\times\mathbf{r}$ is the exact obstruction: it vanishes precisely when $\mathbf{q}$ and $\mathbf{r}$ are parallel, which is the condition for the product $\tilde{Q}\tilde{Y}$ to stay Hermitian. This alternation is a general rule of the algebra — commutator to the opposite sector, anticommutator to the same one — and is tabulated in the companion article *The Hermitian Subspace M+ as the Informational Sector*, §*The Bracket Table of the Two Sectors*.
+with a real scalar part and an imaginary vector part. The product of two elements of $\mathbb{M}_-$ lands in $\mathbb{M}_+$ exactly in the commuting case, so the bracket $2\,\mathbf{q}\times\mathbf{r}$ is the exact obstruction: it vanishes precisely when $\mathbf{q}$ and $\mathbf{r}$ are parallel, which is the condition for the product $\tilde{Q}\tilde{Y}$ to stay Hermitian. This alternation is one case of the general rule of the algebra — on two elements of one sector the commutator lands in $\mathbb{M}_-$ and the anticommutator in $\mathbb{M}_+$, and on two elements of different sectors the two are exchanged — and is tabulated in the companion article *The Hermitian Subspace M+ as the Informational Sector*, §*The Bracket Table of the Two Sectors*.
+
+### The Four Forms on the Sector, and the Absence of an Area Pairing
+
+The four forms of *Conventions in the Biquaternion Universe* are read on $\mathbb{M}_-$ in that article and in *The Six Subspaces and the Four Forms*, and the reading is the mirror of the informational one: **the material sector carries no area pairing either.**
+
+**Every form is real on the sector, so each is its own real part.** An element of $\mathbb{M}_-$ is $ib_0e_0 + \mathbf{q}$ with $b_0$ and $\mathbf{q}$ real, and each of the four forms takes real values on a pair of such elements. The imaginary part of each of the four therefore **vanishes identically on $\mathbb{M}_-$**, and every form is a real symmetric bilinear form in four real variables, recovered from its own diagonal. Like the informational sector, the material sector has in each form one symmetric pairing and no second one.
+
+**The four forms are the interval, its negative, the Euclidean square and its negative.** With $\tilde T = ict\,e_0 + \mathbf{x}$ in the $ict$ convention,
+
+$$
+\langle\tilde T,\tilde T\rangle = -\bigl(c^2t^2 + |\mathbf{x}|^2\bigr), \qquad
+\langle\tilde T,\tilde T\rangle_{\natural} = -c^2t^2 + |\mathbf{x}|^2,
+$$
+
+$$
+\langle\tilde T,\tilde T\rangle_{*} = c^2t^2 + |\mathbf{x}|^2, \qquad
+\langle\tilde T,\tilde T\rangle_{\natural*} = c^2t^2 - |\mathbf{x}|^2,
+$$
+
+of signatures $(0,4)$, $(3,1)$, $(4,0)$ and $(1,3)$ in the same order. The two sesquilinear forms are the negatives of the two bilinear ones, $\langle\cdot,\cdot\rangle_{*} = -\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural*} = -\langle\cdot,\cdot\rangle_{\natural}$ on the sector, and the reason is the definition of the sector itself: the Hermitian conjugation is minus the identity on $\mathbb{M}_-$, so the star of the second slot flips the sign and nothing else. The interval is the norm form $N=\langle\tilde T,\tilde T\rangle_{\natural}$ of §*Mass, Rank and the Positivity of the Dagger*, negative on the material time and positive on the three material space directions, with the light cone as its null cone; the other three readings are the same interval negated and the Euclidean square with its negative.
+
+**The absence of the area pairing, and why it is exact.** The four forms carry a second real pairing on a subspace only where the multiplication by the central imaginary preserves that subspace: there the imaginary part is generally non-zero and, for the two sesquilinear forms, alternating — the **area pairing**, of rank $2$ on the complex time sector and rank $6$ on the complex space sector, and tied to the real part there by the Kähler identity $\omega(\tilde P,\tilde Q) = \langle\tilde P,i\tilde Q\rangle_{*}$. On $\mathbb{M}_-$ the multiplication by $i$ carries the sector out of itself, $i\mathbb{M}_- = \mathbb{M}_+$, so the companion has no pair of directions to join inside the sector: it is zero, and **the material sector is phase-free.** Its one pairing per form is the symmetric one. As on the informational sector, this concerns the imaginary part of the **scalar-valued** form and not the **vector-valued** antisymmetric half of the product, which the corpus reads as the coherence and which is not zero on the sector (*The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product*); the two parts are the scalar and the vector halves of one block.
+
+The consequence for the reading of this article is one sentence. The material object of the sector — the four-vector — carries a **symmetric quadratic form, the interval**, and the reader of the sector takes a length and not an area from it: the Lorentzian structure of $\mathbb{M}_-$ is a metric, and a metric is what a symmetric pairing gives. The alternating companion, the canonical pairing of two conjugate directions, belongs to the complex time and the complex space sector, where each direction has its partner under the central imaginary (*The Four Other Remarkable Subspaces*), and it vanishes on both physical sectors. This is the sharpest algebraic sense in which the two physical sectors, and only they, are the sectors on which the four forms are real: each carries a symmetric pairing per form, the interval and the probability among them, and neither carries an area.
 
 ## Examples
 
@@ -276,6 +300,8 @@ The **light cone** of Minkowski space is the zero divisor cone of $\mathbb{M}_-$
 
 The subspace $\mathbb{M}_-$ is specifically the **representation** of the Lorentz group.
 
+Read as pairings, the four forms restricted to $\mathbb{M}_-$ are all real-valued, so the sector carries **no area pairing and no conjugate pair of its own**: no two of its directions are exchanged by the central imaginary, since $i\mathbb{M}_-=\mathbb{M}_+$. Every canonical pair of the framework has one leg in each sector: the two times $e_0$ and $ie_0$ in the complex time sector, and the three spatial pairs $(e_k,ie_k)$ in the complex space sector (*The Four Other Remarkable Subspaces*). The sector carries one symmetric form per form — the interval $N$ of signature $(3,1)$, its negative the Krein form $K$, the Euclidean square and its negative the general plain bilinear form $B$ — and the two sesquilinear forms are the negatives of the two bilinear ones because the Hermitian conjugation is minus the identity on the sector. The alternating companion that the four forms carry on the complex time and the complex space sector is identically zero here, as it is on the informational sector: **the two physical sectors are the phase-free ones, and the area pairing belongs to the complex sectors** (*The Six Subspaces and the Four Forms*, *The Four Other Remarkable Subspaces*).
+
 With the commutator, $\mathbb{M}_-$ is also a Lie algebra: the bracket is twice the vector product of the spatial parts, $[\tilde{Q},\tilde{Y}] = 2\,\mathbf{q}\times\mathbf{r}$, so the time direction is central and the algebra is $\mathfrak{u}(2) = \mathbb{R}ie_0 \oplus \mathfrak{su}(2)$. The commutator stays in $\mathbb{M}_-$ and the anticommutator goes to $\mathbb{M}_+$, so the **square** of every element of $\mathbb{M}_-$ lies in the Hermitian subspace, and a product of two elements of $\mathbb{M}_-$ is Hermitian exactly when the two commute. The two sectors are thus interlocked: the antisymmetric part of a product of four-vectors carries the Lie-algebraic, material structure, and the symmetric part carries the Jordan-theoretic, informational one.
 
 ## Summary of Notation
@@ -295,6 +321,8 @@ With the commutator, $\mathbb{M}_-$ is also a Lie algebra: the bracket is twice 
 | $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation |
 | $[\tilde{Q},\tilde{Y}] = 2\,\mathbf{q}\times\mathbf{r}$ | Commutator on $\mathbb{M}_-$: twice the vector product, lands in $\mathbb{M}_-$ |
 | $\{\tilde{Q},\tilde{Y}\} \in \mathbb{M}_+$ | Anticommutator on $\mathbb{M}_-$: lands in the informational sector |
+| the four forms | $B=\mathrm{Sc}(\tilde P\tilde Q)$, $N=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, $H=\mathrm{Sc}(\tilde P\tilde Q^{*})$, $K=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$; on $\mathbb{M}_-$ all four are real, with $H=-B$ and $K=-N$ |
+| the area pairing | The alternating companion of the four forms; **zero** on $\mathbb{M}_-$, non-degenerate on the complex time and the complex space sector |
 
 ## Further Reading
 
@@ -306,5 +334,6 @@ With the commutator, $\mathbb{M}_-$ is also a Lie algebra: the bracket is twice 
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric algebra formulation of special relativity.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the original formulation of spacetime algebra.
 - *Conventions in the Biquaternion Universe* and *Relations Between Subspaces*, the companion articles, for the notation and for the place of $\mathbb{M}_-$ among the six subspaces.
-- Within the corpus, the Lie-algebra structure of the sector is developed in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The Unitary Lie Algebra*, the symmetrised product in the same article, and the product rule of the six subspaces in *The Six Subspaces and the Four Complex Products*; the informational partner is *The Hermitian Subspace M+ as the Informational Sector*.
+- Within the corpus, the Lie-algebra structure of the sector is developed in *The 12 Products of the Biquaternion Complex Space* and *The Unitary Lie Algebra*, the symmetrised product in the same article, and the product rule of the six subspaces in *The Six Subspaces and the Four General Products*; the informational partner is *The Hermitian Subspace M+ as the Informational Sector*.
+- The four forms read on the sector — their reality, the collapse into pairs up to sign and the vanishing of the alternating companion — are *The Six Subspaces and the Four Forms*; the two sectors on which the alternating companion is instead non-degenerate are *The Four Other Remarkable Subspaces*.
 

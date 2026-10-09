@@ -16,7 +16,7 @@ the one-sidedness of that form is the framework's reading of a **chirality** in 
 The article keeps to the operator structure. It defers the positivity of the dagger and the positive cone
 to *Mass, Rank and the Positivity of the Dagger*; the internal group and its compactness to *Particle Types, Discrete Charge and Three-Particle Couplings*; the group ceiling to *The Gauge Group Ceiling*; the states to *The States the Indefinite Metric Cannot Normalise* and *Decoherence as Idempotent Projection*;
 and the mathematics of the adjoints and the sandwiches to the mathematics articles *The Adjoints of the
-Regular Operators*, *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* and *Jordan
+Regular Operators*, *The Two-Sided Operators on a Hermitian Algebra* and *Jordan
 Algebras of Sesqualgebras*.
 
 **Conventions.** As in the two companion articles of this block: $\mathbb{B}$ with basis
@@ -101,6 +101,23 @@ action being $\{\pm1\}$.
 agrees with direct adjoint computation on $100$ of $100$ random elements, with no mismatch; the blindness
 identities hold on $20$; $\mathrm{Tr}(\tilde Q\tilde Q^{*})+\mathrm{Tr}(\tilde Q^{*}\tilde Q)=4\lVert\tilde Q\rVert_E^{2}$ to $1.4\times10^{-14}$.
 
+### The Kernel of the Action and the State as a Ray
+
+The blindness is a statement about a **kernel**. Two parameters that differ by a central phase give the
+same operator, $\Theta_{e^{i\theta}\tilde Q}=\Theta_{\tilde Q}$, so the kernel of the map from parameters
+to operators contains the **central unitaries** $e^{i\theta}e_0$: a $U(1)$. The group that acts effectively
+is the quotient of the compact slice by that centre,
+
+$$
+U(2)/U(1)\cong PU(2)\cong SO(3) ,
+$$
+
+the rotation group of the state's Bloch sphere. The object the action moves is therefore a **ray** and not
+a vector: multiplying a state by a central phase is an unobservable gauge act, and only the ray is physical.
+This is the algebraic origin of the state space being projective, and it is the same fact the corpus reads
+as global-phase invariance; the states and the Bloch ball are *The States the Indefinite Metric Cannot
+Normalise* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*.
+
 ## One Formula, Three Jobs
 
 The sandwich is the anatomy of the framework's single action form,
@@ -127,6 +144,8 @@ the interval form on $\mathbb{M}_-$ but is neither an algebra automorphism nor g
 general Lorentz transformation is an automorphism of the interval form and not a self-adjoint operator of
 the positive form. The **choice** among the three classes is the physical input; the **form** is the
 algebra's.
+
+**Reading: the sandwich is a change of frame.** A map that sends every element to $\tilde R\tilde Q\tilde R^{-1}$ is a **change of bases** of the algebra, and the sandwich is that map with $\tilde R^{*}$ in place of $\tilde R^{-1}$ — for a unitary parameter the two agree. Reading the one map as a frame rotation, a gauge transformation or a Lorentz transformation is then a reading of the **parameter class** and not a change of structure: one map, three names, according to the normalisation of $\tilde R$. The three jobs of the previous table are three readings of one change of frame.
 
 ## One Product, Two Halves
 
@@ -244,6 +263,20 @@ read as the algebraic shadow of a **chirality** in the internal coupling.
 - The internal group so acting is the $U(2)$ of *Particle Types, Discrete Charge and Three-Particle Couplings* and *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not
   SU(3)*; the algebra reaches $SU(2)$ and not $SU(3)$.
 
+### The One-Sidedness as Bra–Ket Asymmetry
+
+The right-isometry theorem has a second reading beside the chirality. A pairing that distinguishes a left
+slot from a right slot, and that one side's action alone preserves, is the algebraic shape of the
+**bra–ket asymmetry**: the state is written in one slot and read from the other, and the internal action
+moves only one of them. What the same theorem says about the two halves of the amplitude is that the
+probability is a **singlet of the internal action** and the phase is **covariant**: the action leaves the
+central number it measures unchanged and rotates the vector direction it does not measure — a statement
+made twice in this band, here operatorial and in *Why Probability Values Are Central: the Symmetric
+Sesquilinear Product and Its Cone* algebraically.
+
+**Caution.** The one-sidedness is a theorem about the algebra-valued form $h$; the bra–ket, singlet and
+covariant readings are readings of it, and no measurement rule is derived.
+
 ## The Limits
 
 - The operator statements are statements about the algebra acting on itself, not about a physical Hilbert
@@ -266,7 +299,9 @@ Right multiplication by a unitary is an isometry of $h$, left multiplication is 
 unitaries, and the scalar part is preserved by both.
 
 **Readings.** Observables in the Hermitian half and gauge generators in the material half; the sandwich as
-the one action form with three parameter classes; the one-sidedness of the internal action as a chirality.
+the one action form with three parameter classes, read as one change of frame; the state as a ray, with the
+effective internal group $PU(2)\cong SO(3)$; the one-sidedness of the internal action as a chirality, and
+also as a bra–ket asymmetry with the probability a singlet of the internal action and the phase covariant.
 
 **Speculations, labelled.** Vector bosons carried by the antisymmetric half; the one-sidedness of the form
 as a chirality of the internal coupling, with no parity violation claimed and with the convention caveat.
@@ -284,7 +319,9 @@ self-adjoint exactly when the parameter is Hermitian up to a central phase — w
 every generator satisfies, and which normality does **not** give — and it can never be skew-adjoint, so
 the sandwich belongs to the observable kind and serves as the framework's single action form, carrying a
 Lorentz transformation, a unitary evolution and a projective measurement according to the normalisation
-of its parameter; it is blind to the sign and to the central phase of that parameter. One product then
+of its parameter; it is blind to the sign and to the central phase of that parameter, so the central
+unitaries act trivially, the effective internal group is $PU(2)\cong SO(3)$, and the state the action moves
+is a **ray**. One product then
 carries two half-algebras: its symmetrised half is Hermitian-valued, closed on the Hermitian sector and a
 Jordan algebra there, while its antisymmetric half is skew-Hermitian-valued, closed on the material sector
 and a Lie algebra there, so the observables live in $\mathbb{M}_+$ and the gauge generators in
@@ -293,10 +330,11 @@ acts through **right** multiplication, since only the right action preserves the
 form $h(\tilde P,\tilde R)=\tilde P\tilde R^{*}$ — left multiplication conjugates the form's value and is
 an isometry only for central unitaries, though both actions preserve the scalar part — and the
 one-sidedness of the form is read, as a labelled speculation with explicit cautions, as a **chirality** of
-the internal action. The positivity of the dagger is owned by *Mass, Rank and the Positivity of the
+the internal action, and beside it as a **bra–ket asymmetry** in which the probability is a singlet of the
+internal action and the phase covariant. The positivity of the dagger is owned by *Mass, Rank and the Positivity of the
 Dagger*; the compactness of the internal group by *Particle Types, Discrete Charge and Three-Particle Couplings*; the
 adjoints and sandwiches by the mathematics articles *The Adjoints of the Regular Operators* and
-*Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*; and the Jordan and Lie
+*The Two-Sided Operators on a Hermitian Algebra*; and the Jordan and Lie
 structures by *Jordan Algebras of Sesqualgebras*.
 
 ## Summary of Notation
@@ -308,6 +346,7 @@ structures by *Jordan Algebras of Sesqualgebras*.
 | $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$ | the two-sided sandwich |
 | $\Theta_{\tilde Q}^{\dagger}=\Theta_{\tilde Q^{*}}$ | the sandwich adjoint |
 | $\tilde Q^{*}=\omega\tilde Q$ | the self-adjointness criterion, $\lvert\omega\rvert=1$ |
+| $e^{i\theta}e_0$ in the kernel; $U(2)/U(1)\cong PU(2)\cong SO(3)$ | central-phase blindness; the state as a ray |
 | $\Gamma_{\tilde A}(\tilde Q)=\tilde A\tilde Q\tilde A^{*}$ | the one action form |
 | $\tilde P\circ\tilde Q$ | the symmetrised product; Hermitian-valued; Jordan on $\mathbb{M}_+$ |
 | $[\tilde P,\tilde Q]_\varsigma$ | the sesquilinear commutator; skew-valued; Lie on $\mathbb{M}_-$ |
@@ -326,8 +365,8 @@ structures by *Jordan Algebras of Sesqualgebras*.
   SU(3)*, for why the internal group is $U(2)$ and not larger.
 - Mathematics article *The Adjoints of the Regular Operators*
   (`articles_maths/the-adjoints-of-the-regular-operators.md`), for the one-sided adjoint rule.
-- Mathematics article *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*
-  (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the
+- Mathematics article *The Two-Sided Operators on a Hermitian Algebra*
+  (`articles_maths/the-two-sided-operators-on-a-hermitian-algebra.md`), for the
   sandwich, its Hermitian-up-to-phase criterion and the absence of a skew-adjoint sandwich.
 - Mathematics article *Jordan Algebras of Sesqualgebras*
   (`articles_maths/jordan-algebras-of-sesqualgebras.md`), for the Jordan structure on the Hermitian

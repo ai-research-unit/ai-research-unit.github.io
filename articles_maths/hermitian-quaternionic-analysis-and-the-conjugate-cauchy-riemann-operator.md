@@ -203,7 +203,7 @@ the monogenic one, the four equations being one equation read four times through
 
 *Proof.* The Euclidean operator is a linear combination of the four Hermitian operators — its
 coefficients are the signs of the Hadamard matrix with quaternionic weights — so its vanishing
-follows from theirs; the Laplacian is the sum of the four products
+follows from theirs; the Laplacian is the sum of the four general products
 $\partial_{Z_r}\partial_{Z_r}^{\dagger}$, so it vanishes too. The strictness is that of a system
 over a single equation, and it is recorded in *Clifford Analysis*. $\square$
 

@@ -8,7 +8,7 @@ We assume familiarity with modules and linear maps. No prior knowledge of Lie al
 
 In the preceding articles, an **algebra** was defined as a module over a commutative ring $R$ equipped with a bilinear product. No further assumptions were made. We then studied **associative algebras**, in which the product satisfies $(uv)w = u(vw)$. In this article, we study a different specialization: algebras whose product is antisymmetric and satisfies an identity called the **Jacobi identity**. These are called **Lie algebras**.
 
-This article treats the general theory over a **commutative ring**. A separate article, *Lie Algebras: Categorization*, gives a classification organized by ring.
+This article treats the general theory over a **commutative ring**. The companion article *Structure of Lie Algebras* gives the classification of the Lie algebras the corpus meets.
 
 A word on the base structure. The classical theory of Lie algebras assumes that the scalars form a field. But many of the constructions and theorems carry over to the more general setting where the scalars form a **commutative ring**. This is the setting we adopt here. The main differences from the field case are:
 

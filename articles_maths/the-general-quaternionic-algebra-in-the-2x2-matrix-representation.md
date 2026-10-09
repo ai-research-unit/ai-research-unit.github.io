@@ -140,7 +140,7 @@ The $2\times2$ realization turns the natural conjugation into the adjugate and t
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the two conjugations of an algebra, the transpose and the Hermitian transpose, and the distinction between them.
 - John Voight, *Quaternion Algebras* (Springer, 2021), for the description of a split algebra by matrices, with the reduced norm as the determinant and the reduced trace as the trace.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the reading of a twisted product as a product with an anti-automorphism inserted and the defect of its associativity.
-- *Introduction to the $2\times2$ Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.md`), for the realization and its first properties
+- *Introduction to the 2×2 Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.md`), for the realization and its first properties
 - *Biquaternion 2×2 Matrix Element Representation* (`articles_maths/biquaternion-2x2-matrix-element-representation.md`), for the further reading of the isomorphism
 - *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the quaternionic product on the algebra
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the form on the algebra

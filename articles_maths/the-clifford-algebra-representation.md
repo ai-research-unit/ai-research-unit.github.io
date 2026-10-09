@@ -153,7 +153,7 @@ $$
 
 **Proposition.** The reversion is an anti-automorphism of $\mathrm{Cl}_{1,3}^+$: it fixes the identity, negates each of the six bivectors, and fixes the pseudoscalar; consequently $\operatorname{rev}(XY) = \operatorname{rev}(Y)\operatorname{rev}(X)$ for all even $X, Y$.
 
-*Proof.* Every bivector reverses to its negative because the product of two distinct anticommuting generators changes sign under the exchange, while the pseudoscalar, a product of four generators, reverses to itself. The anti-automorphism property is then a statement about the product table of the even basis, and was checked on all sixty-four products of two even basis elements. $\square$
+*Proof.* Every bivector reverses to its negative because the product of two distinct anticommuting generators changes sign under the exchange, while the pseudoscalar, a product of four generators, reverses to itself. The anti-automorphism property is then a statement about the product table of the even basis, and was checked on all sixty-four general products of two even basis elements. $\square$
 
 **Proposition.** Under the isomorphism the reversion is the **natural conjugation** ${}^{\natural}$ of the biquaternions, the anti-automorphism that fixes $e_0$ and $i$ and negates $e_1, e_2, e_3$.
 

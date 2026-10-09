@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four products on its underlying $\mathbb{C}$-vector space, and this article treats the fourth, the **general quaternionic sesquilinear product**
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space, and this article treats the fourth, the **general quaternionic sesquilinear product**
 
 $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
 $$
 
-whose rule, scalar–vector form and place among the four are the subject of *The Four Biquaternion Complex Products*, and whose multiplication table and sesqualgebra axioms are in *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The symbolism is that article's: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, $\mathbf P = \sum_{k=1}^{3} P_k e_k$ is the vector part, and $N(\tilde P) = \tilde P\tilde P^{\natural} = \sum_{\mu} P_\mu^{2}$ is the norm form.
+whose rule, scalar–vector form and place among the four general products are the subject of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and whose multiplication table and sesqualgebra axioms are in *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The symbolism is that article's: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, $\mathbf P = \sum_{k=1}^{3} P_k e_k$ is the vector part, and $N(\tilde P) = \tilde P\tilde P^{\natural} = \sum_{\mu} P_\mu^{2}$ is the norm form.
 
 The question of the article is the **idempotent problem** for this multiplication: which elements satisfy $\tilde Q \star \tilde Q = \tilde Q$. The answer is the batch's one positive surprise. The equation has the two obvious solutions $0$ and $e_0$, and beyond them a **two-parameter family** of solutions,
 
@@ -17,9 +17,9 @@ $$
 \tilde\Pi(\mu) = -\tfrac12 e_0 + \mu , \qquad \mu \in \mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \qquad (\mu,\mu) = \tfrac34 ,
 $$
 
-each of them of norm $1$ and therefore a unit of the algebra. The family is the only positive element theory in the batch. Every other idempotent attached to the four products is either trivial or a zero divisor: the idempotents of the plain product are the idempotents of the algebra and the nontrivial ones among them have $N = 0$; the nontrivial idempotents of the sibling general plain sesquilinear product are the rank-one Hermitian idempotents and have $N = 0$ as well; and the sibling general quaternionic bilinear product has only $0$ and $e_0$. Only this product has nontrivial idempotents, and only its nontrivial idempotents are units.
+each of them of norm $1$ and therefore a unit of the algebra. The family is the only positive element theory in the batch. Every other idempotent attached to the four general products is either trivial or a zero divisor: the idempotents of the plain product are the idempotents of the algebra and the nontrivial ones among them have $N = 0$; the nontrivial idempotents of the sibling general plain sesquilinear product are the rank-one Hermitian idempotents and have $N = 0$ as well; and the sibling general quaternionic bilinear product has only $0$ and $e_0$. Only this product has nontrivial idempotents, and only its nontrivial idempotents are units.
 
-The article owns the criterion, the classification, the family and the unit property. It does not repeat the rule of the product, which is *The Four Biquaternion Complex Products* §*The General Quaternionic Sesquilinear Product*; it uses the criterion of the plain product's idempotents, which is *Biquaternion Idempotents and Projections*, and the classification of the zero divisors, which is *Biquaternion Zero Divisors*; it cites the row of the comparison table that records the four idempotent sets, which is *Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*; and it does not treat the square of a general element, the square-zero elements, or the operators of the multiplication, which are the subjects of the later articles of this group, *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* and *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
+The article owns the criterion, the classification, the family and the unit property. It does not repeat the rule of the product, which is *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; it uses the criterion of the plain product's idempotents, which is *Biquaternion Idempotents and Projections*, and the classification of the zero divisors, which is *Biquaternion Zero Divisors*; it cites the row of the comparison table that records the four idempotent sets, which is *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*; and it does not treat the square of a general element, the square-zero elements, or the operators of the multiplication, which are the subjects of the later articles of this group, *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* and *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
 
 ## The Idempotent Equation
 
@@ -53,7 +53,7 @@ $$
 Q_0 \in \mathbb{R} , \qquad Q_0 = \lvert Q_0\rvert^{2} - \sum_{k=1}^{3}\lvert Q_k\rvert^{2} , \qquad (2Q_0 + 1)\mathbf a = 0 , \qquad \mathbf a \times \mathbf b = -\tfrac12 \mathbf b .
 $$
 
-**Proof.** The left-hand side of the criterion is the plain product of $\overline{\tilde Q} = \overline{Q_0} + \overline{\mathbf Q}$ and $\tilde Q = Q_0 + \mathbf Q$, whose scalar–vector form is that of *The Four Biquaternion Complex Products*,
+**Proof.** The left-hand side of the criterion is the plain product of $\overline{\tilde Q} = \overline{Q_0} + \overline{\mathbf Q}$ and $\tilde Q = Q_0 + \mathbf Q$, whose scalar–vector form is that of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*,
 
 $$
 \overline{\tilde Q}\,\tilde Q = \overline{Q_0}Q_0 - (\overline{\mathbf Q},\mathbf Q) + \overline{Q_0}\mathbf Q + Q_0\overline{\mathbf Q} + \overline{\mathbf Q}\times\mathbf Q ,
@@ -105,7 +105,7 @@ and hence is a unit of the algebra, with inverse its own natural conjugate, $\ti
 
 **Proof.** The norm of $\tilde\Pi(\mu)$ is $\lvert-\tfrac12\rvert^{2} + (\mu,\mu) = \tfrac14 + \tfrac34 = 1$. An element of norm $1$ is a unit because $\tilde P\tilde P^{\natural} = N(\tilde P)e_0 = e_0$, and $\tilde\Pi(\mu)^{\natural} = -\tfrac12e_0 - \mu$ by the linearity of ${}^{\natural}$. The values for $0$ and $e_0$ are immediate. $\square$
 
-The proposition is the sharpest difference of this multiplication from its three companions. Among the four products, only this one has a nontrivial idempotent, and the nontrivial idempotents of the other three are degenerate in a way the norm detects: they are zero divisors.
+The proposition is the sharpest difference of this multiplication from its three companions. Among the four general products, only this one has a nontrivial idempotent, and the nontrivial idempotents of the other three are degenerate in a way the norm detects: they are zero divisors.
 
 ## The Idempotents of the Other Multiplications
 
@@ -157,7 +157,7 @@ because its square is the central scalar $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ (*I
 
 ### The Comparison
 
-**Theorem (the four idempotent sets).** The four products have four different idempotent sets, and only the fourth has nontrivial idempotents that are units:
+**Theorem (the four idempotent sets).** The four general products have four different idempotent sets, and only the fourth has nontrivial idempotents that are units:
 
 | product | idempotents | nontrivial idempotents are |
 |---|---|---|
@@ -166,9 +166,9 @@ because its square is the central scalar $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ (*I
 | $\tilde P\tilde Q^{*}$ | $0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0 + i\hat\mu)$ | zero divisors |
 | $\tilde P^{\natural}\tilde Q^{*}$ | $0$, $e_0$, and the family $-\tfrac12 e_0 + \mu$ with $(\mu,\mu) = \tfrac34$ | units, of norm $1$ |
 
-**Proof.** The four rows are the propositions above and the statement of the classification theorem; the last column is the norm computation for each family, $N = 0$ for the nontrivial idempotents of the plain and of the sibling sesquilinear product and $N = 1$ for the family. The table is the idempotent row of *Comparison Between the Four Biquaternion Products* §*The Squares, the Idempotents and the Roots*, read with the norm attached to each entry. $\square$
+**Proof.** The four rows are the propositions above and the statement of the classification theorem; the last column is the norm computation for each family, $N = 0$ for the nontrivial idempotents of the plain and of the sibling sesquilinear product and $N = 1$ for the family. The table is the idempotent row of *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*, read with the norm attached to each entry. $\square$
 
-**Remark.** The table is the reason the idempotent problem is the sharpest of the four element problems. The zero divisors are one set for all four products (*The Annihilating Elements of the Four Products*, being written in parallel), and the square-zero elements are already two different problems for the four; but the idempotents are four sets, no two of which agree beyond $0$ and $e_0$, and the fourth alone is a family of units.
+**Remark.** The table is the reason the idempotent problem is the sharpest of the four element problems. The zero divisors are one set for all four general products (*The Annihilating Elements of the Four General Products*, being written in parallel), and the square-zero elements are already two different problems for the four; but the idempotents are four sets, no two of which agree beyond $0$ and $e_0$, and the fourth alone is a family of units.
 
 ## The Family of Idempotents
 
@@ -238,7 +238,7 @@ $$
 \tilde\Pi(\mu) = -\tfrac12 e_0 + \mu , \qquad \mu \in \mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \qquad (\mu,\mu) = \tfrac34 ,
 $$
 
-and each non-trivial idempotent has norm $1$, so that it is a unit of the algebra with inverse its own natural conjugate $-\tfrac12 e_0 - \mu$. The family is a single orbit of the rotation group of the quaternion subspace, and it lies outside the Hermitian subspace, since a nontrivial idempotent is neither Hermitian nor skew-Hermitian. The idempotent sets of the four products are four different sets: the plain product and the sibling sesquilinear product have infinite families of zero divisors, the sibling bilinear product has only the two trivial idempotents, and this product alone has a family of units. The idempotents of the sibling sesquilinear product are isotropic for this multiplication, each of them having square zero, so the two infinite families are disjoint beyond $0$ and $e_0$.
+and each non-trivial idempotent has norm $1$, so that it is a unit of the algebra with inverse its own natural conjugate $-\tfrac12 e_0 - \mu$. The family is a single orbit of the rotation group of the quaternion subspace, and it lies outside the Hermitian subspace, since a nontrivial idempotent is neither Hermitian nor skew-Hermitian. The idempotent sets of the four general products are four different sets: the plain product and the sibling sesquilinear product have infinite families of zero divisors, the sibling bilinear product has only the two trivial idempotents, and this product alone has a family of units. The idempotents of the sibling sesquilinear product are isotropic for this multiplication, each of them having square zero, so the two infinite families are disjoint beyond $0$ and $e_0$.
 
 ## Summary of Notation
 

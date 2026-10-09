@@ -34,8 +34,8 @@ radical, the isotropic elements and the Jordan failure, in their algebraic form,
 *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the six subspaces, with
 the restriction of the coefficient to each, are *The Six Subspaces under the Symmetric Quaternionic
 Algebra of Biquaternions*; and the two bilinear forms of the algebra, with their Gram matrices and their
-signature table, are *Comparison Between the Four Biquaternion Products* and
-*The Four Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*.
+signature table, are *Comparison Between the Four General Products* and
+*The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$; an
@@ -191,7 +191,7 @@ $$
 
 so a value of this band's operation that is written $B$ is wrong, and the natural conjugation in the first
 slot of the parent is what fixes the sign. The forms themselves, with their Gram matrices and their
-signatures, are *Comparison Between the Four Biquaternion Products*.
+signatures, are *Comparison Between the Four General Products*.
 
 **A cross-chapter warning on the letters.** The letter $B$ is chapter-relative, and it is the one the
 mathematics chapter uses for the *other* form: there the quaternion form $B$ is what this chapter calls
@@ -222,7 +222,7 @@ $N$ is the indefinite Minkowski form $(3,1)$ and $B$ the definite negative Eucli
 passage between the two is the passage between the interval and the Euclidean square, and it is the sign
 the natural conjugation inserts. The signatures on the six subspaces are *The Six Subspaces under the
 Symmetric Quaternionic Algebra of Biquaternions* and the transversal table of
-*The Four Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*. The centre
+*The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*. The centre
 and vector rows are read as the real part of the coefficient, the two coefficients there being complex.
 
 ## The Reading: Why a Central Product Cannot Compose
@@ -244,6 +244,28 @@ and vector rows are read as the real part of the coefficient, the two coefficien
   of signature $(4,4)$ on the real space, so it has no positive cone; the coupling carries the interval of
   the material row and carries no positivity. Comparison and composition are different; comparison and
   positivity are different too.
+- **No algebra of masses in this row.** A unit and a Jordan identity are what make a symmetrised product
+  an algebra one can iterate, with powers, spectra and observables. Neither exists here, so no observable
+  algebra of masses — no spectral bookkeeping built on the diagonal — can be assembled from the material
+  coupling, and the observable structure must come from the informational, sesquilinear row. The diagonal
+  gives the interval, but an interval is not a mass operator without the algebra that would make it one.
+- **Mass is a character and not an eigenvalue.** The proved facts are the trivial radical, the centrality
+  of the values, the absence of a unit and the failure of the Jordan identity. Read together they say that
+  the interval this row attaches to a material operation is a **multiplicative label of the unit group**,
+  the group homomorphism — the character $N:(\mathbb{B}^{\times},\cdot)\to(\mathbb{C}^{\times},\cdot)$ of
+  the **ordinary** product, its multiplicativity proved in *Biquaternion Norm and Invertibility* — and that
+  it **cannot** be read as an eigenvalue of a material operator: an eigenvalue needs an algebra with a
+  unit and a spectral theory, and the preceding
+  section proves that neither exists in this row. Offered as a reading, a mass spectrum built on this row
+  would be a set of **characters**, not a set of eigenvalues; whether any physical spectrum is of that kind
+  is not claimed, and the algebra asserts only the multiplicativity of $N$ and the absence of a unit.
+- **Comparison without a normalisation.** The proved facts are the trivial radical together with the
+  isotropic set equal to the light cone. Read together they describe a **comparison that measures every
+  direction and normalises none**: every nonzero element is separated from some partner, so no direction is
+  invisible, and a lightlike element is not separated from itself, so no direction on the cone is
+  normalised. Offered as a reading, the coupling is a **comparison that normalises none** — it registers
+  directions and supplies no eigenstate on the cone. The name is the framework's and not the algebra's,
+  which asserts only the radical and the cone.
 
 **Caution.** An obstruction is a negative result, and a negative result bounds a reading without
 supplying one. This article says where the operation **cannot** be read (as a composition, as an algebra
@@ -267,12 +289,19 @@ $(4,0)$ and $(0,4)$ at the two sectors for $B$.
 
 **Readings.** That the radical is the set of pairs the coupling does not separate and is trivial; that
 the isotropic set is the one place the coupling fails to separate an element from itself; that a central
-product cannot compose; that the coupling, being indefinite, selects no state.
+product cannot compose; that the coupling, being indefinite, selects no state; that no observable algebra
+of masses can be assembled from the material coupling, the observable structure coming from the
+informational row; that mass in this row is a character of the unit group and not an eigenvalue, so a mass
+spectrum here would be a set of characters; that the coupling is a comparison that measures every
+direction and normalises none.
 
 **Not claimed.** That a physical operation is a biquaternion. That "separation" is a forced reading of
 the radical. That the coupling carries a positivity, a state or a probability. That the failure of the
 Jordan identity has a physical process behind it. That a lightlike element is a measured zero of some
-physical comparison.
+physical comparison. That the informational row in fact supplies a mass spectrum, or that the interval
+is a mass operator: only that no observable algebra of masses is available in this row. That a physical
+mass spectrum is a set of characters, or that "a comparison that normalises none" is forced by the
+algebra: only the multiplicativity of $N$, the trivial radical and the cone are asserted.
 
 ## Summary
 
@@ -294,12 +323,15 @@ $(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$ on the six subspaces, agreeing on the cent
 subspace and exchanging signatures on the other four. The reading is that a product whose image is
 the **centre** returns a number, and a number **compares and does not compose**: the operation is the
 scalar coupling of the material row, non-degenerate, and it is not an algebra with a unit, not a Jordan
-algebra and not a state. The algebraic radical, isotropic elements and Jordan witness are
+algebra and not a state. Because no unit and no Jordan identity is available, no observable algebra of
+masses can be assembled from this row — the diagonal gives the interval, but not an interval *operator* —
+and the observable structure must come from the informational, sesquilinear row. The algebraic radical,
+isotropic elements and Jordan witness are
 *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the six-subspace
 restrictions are *The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*; the
 operation itself is the companion *The Quaternion Form as a Product: the Scalar Coupling of Two Material
-Operations*; and the two forms are *Comparison Between the Four Biquaternion Products* and
-*The Four Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*.
+Operations*; and the two forms are *Comparison Between the Four General Products* and
+*The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*.
 
 ## Summary of Notation
 
@@ -320,8 +352,8 @@ Operations*; and the two forms are *Comparison Between the Four Biquaternion Pro
 
 - *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
   which this block sits.
-- Mathematics article *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
-  (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve
+- Mathematics article *The 12 Products of the Biquaternion Complex Space*
+  (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve
   operations, the method of the decomposition and the laws of each.
 - Mathematics article *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*
   (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for
@@ -344,5 +376,5 @@ Operations*; and the two forms are *Comparison Between the Four Biquaternion Pro
   and the four forms.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* and *Zero Divisors as a
   Physical Locus in Biquaternionic Form*, for the cone.
-- Companion article *The Four Products and Their Physical Readings: the Two Algebras and the Two
+- Companion article *The Four General Products and Their Physical Readings: the Two Algebras and the Two
   Sesqualgebras*, for the signature table.

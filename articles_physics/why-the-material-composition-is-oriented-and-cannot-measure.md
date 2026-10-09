@@ -21,9 +21,8 @@ Material-Informational Split as a Superselection Structure in Biquaternionic For
 the associator and the ternary product to *The Associator and the Ternary Product of the Quaternionic
 Product*; the left multiplications and their monoid to the mathematics article *The Left Multiplications of
 the Quaternionic Product and the Opposite Monoid*; and the two-sided operators with their Hermitian
-adjoints to the mathematics article *Two-Sided Operators on the Biquaternion Algebra with Hermitian
-Adjoint*, whose physics reading is *Observables, Gauge Generators and the Chirality of the Internal
-Action*.
+adjoints to the mathematics article *The Two-Sided Operators on a Hermitian Algebra*, whose physics
+reading is *Observables, Gauge Generators and the Chirality of the Internal Action*.
 
 **Conventions.** As in the companion *The Interval as the Square and the Charge of the Material
 Composition*: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
@@ -75,6 +74,17 @@ associativity therefore lives on the elements and not on the operations.
 triples in exact complex arithmetic, with deviations at machine precision. The failure of associativity is
 not a rounding effect: the associator is nonzero on $24$ of the $64$ triples of basis elements.
 
+**Reading.** The physical evolution is the **monoid of left multiplications**, not the elements. The law
+$L_{\tilde A}\circ L_{\tilde B}=L_{\tilde B\tilde A}$ is associative without exception, so a chain of
+operations has a well-defined composite *as a map*; the element is only a representative of its operator,
+and the product of representatives reproduces the composite through the reversed and conjugated law — the
+same reversal by which the composition of two functions reverses the order of their arguments. What is
+one-sided and non-associative on the elements is two-sided and associative on the operations, so the
+failure of associativity lives on the representatives and not on the evolution they generate. This does
+not turn the orientation into a time order: it says that the order-reversing law of evolution is the
+ordinary reversal of function composition, and that an algebra of processes whose composition is
+associative has its law in the monoid of operators, even when the elements do not.
+
 ## The Composite Splits into a Number and a Direction
 
 Composing two elements of the material sector, the result need not be material, and the way it fails is
@@ -100,6 +110,15 @@ composite of two material operations is a **number plus a direction**, the numbe
 order-independent pairing of the two and the direction the order-dependent discrepancy. The numerical
 check confirms the first half on $100$ random material pairs and confirms that the second half is a
 general vector, with a real and an imaginary part, so it is neither material nor informational in general.
+
+**Reading (an amplitude and a direction).** The split invites two physical names, and they are of
+different strength. The central half, being a number, reads as a **magnitude or amplitude**; the vector
+half, being a direction, reads as a **direction** or a **phase-like** part. The first name is safe: a
+number attached to a composite is a magnitude. The second is **not** asserted here: a genuine phase is an
+angle read from a complex amplitude or a holonomy, and the direction of this split is a vector in
+$\mathrm{Vect}(\mathbb{B})$, not an angle. Identifying it with a phase would require the geometric-phase
+material, which is *The Berry Phase and Geometric Phases in Biquaternionic Form* and its companions, and
+that identification is offered only as a pointer, labelled as such and not claimed.
 
 ## There Is No Material Projection
 
@@ -208,11 +227,19 @@ cross and must not be conflated.
   left of an element returns the element; using the identity on the right returns the conjugate.
 - **The composite is a number plus a direction.** The order-independent half of a material composite is a
   central number, the pairing of the two operations; the order-dependent half is a direction, with a real
-  and an imaginary part.
+  and an imaginary part. Read as an **amplitude and a direction**: the number is a magnitude, and the
+  direction would read as a phase only through the geometric-phase material, a pointer offered and not
+  claimed.
 - **The composition cannot measure.** Its only projections are $0$ and $e_0$; a measurement is supplied by
   the informational structure, whose projectors are null for the composition.
 - **Composition and measurement are done by different structures.** The material row carries the interval
   and the composition; the informational row carries the projection and the measurement.
+- **A chain of three has an ordering cost.** Because the product is not associative, a word of three
+  material operations has no bracketing-free value: the value depends on where the middle operation is
+  bracketed, and that dependence is the associator, nonzero on $24$ of the $64$ triples of basis elements.
+  It is a cost of the ordering of the elements and not of the maps, since the left multiplications compose
+  associatively; a process with an intrinsic intermediate ordering has a non-associative algebra of
+  elements and an associative monoid of operators.
 
 ## The Limits
 
@@ -229,7 +256,12 @@ not elements of the algebra; that distinction is drawn in *Decoherence as Idempo
 
 **A chain has no intrinsic value.** Because the product is not associative, a word of three material
 operations has no bracketing-free value. Whether physical composition supplies a natural bracketing is
-recorded as an open question and not resolved.
+recorded as an open question and not resolved. The reading offered here, labelled as such, is an
+**ordering cost**: the intermediate ordering is a physical datum of a three-step process, and the
+associator is its algebraic measure. The cost is on the elements alone; the monoid of left
+multiplications has no such ambiguity, so a process whose law of composition is associative — any
+process that is a map — escapes it, and the cost is the price of describing the process by an element
+rather than by its operator.
 
 ## The Ledger
 
@@ -245,11 +277,14 @@ of the spatial part of the material sector, with the witness $e_1\star e_1=e_0$.
 **Readings.** That the material composition is oriented, the first slot read through the interval and the
 second as it stands; that the composite is a number plus a direction; that the composition supplies no
 measurement; that measurement and composition are done by different structures of the framework; that the
-real–imaginary split is an internal superselection structure, distinct from the material/informational one.
+real–imaginary split is an internal superselection structure, distinct from the material/informational one;
+that the physical evolution is the monoid of left multiplications and the element only its representative;
+that a three-step chain carries an ordering cost measured by the associator.
 
 **Not claimed.** That the orientation is a time or causal order; that no material projection of some other
 structure is possible; that the trivial idempotents carry physical processes; that a chain of three
-operations has a natural bracketing.
+operations has a natural bracketing; that the ordering-cost reading is forced by the algebra rather than
+chosen.
 
 ## Summary
 
@@ -259,6 +294,8 @@ from the left, $\tilde Q\star e_0=\tilde Q^{\natural}\neq\tilde Q$, so there is 
 order matters with commutator $2P_0\mathbf Q-2Q_0\mathbf P-2\mathbf P\times\mathbf Q$. The operations
 themselves still compose associatively, $L_{\tilde A}\circ L_{\tilde B}=L_{\tilde B\tilde A}$, so a chain
 of material operations is a well-defined map even though a chain of the corresponding elements is not. The
+reading is that the physical evolution is the **monoid of left multiplications** and the element only its
+representative, and that a three-step chain carries an **ordering cost** measured by the associator. The
 composition **cannot measure**: its only idempotents are $0$ and $e_0$, since a projection must be central
 and satisfy $Q_0^{2}=Q_0$, so the material multiplication resolves no state against a reference. Every
 composite of two material operations splits into a central number — the order-independent pairing — and a
@@ -306,8 +343,8 @@ their monoid by *The Left Multiplications of the Quaternionic Product and the Op
   associator and the failure of the weaker identities.
 - Mathematics article *Introduction to the General Quaternionic Algebra of Biquaternions*
   (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the product and its table.
-- Mathematics article *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*
-  (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the
+- Mathematics article *The Two-Sided Operators on a Hermitian Algebra*
+  (`articles_maths/the-two-sided-operators-on-a-hermitian-algebra.md`), for the
   two-sided operators of the sandwich and their Hermitian adjoints.
 - Companion article *The States the Indefinite Metric Cannot Normalise* and
   *Decoherence as Idempotent Projection*, for the states and for the measurement.
