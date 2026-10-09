@@ -199,6 +199,7 @@ $$</p>
 <th>closed under products</th>
 <th>closed under brackets</th>
 <th>biquaternion norm</th>
+<th>area pairing</th>
 </tr>
 </thead>
 <tbody>
@@ -210,6 +211,7 @@ $$</p>
 <td>yes — a field</td>
 <td>yes</td>
 <td>complex: $z^2$</td>
+<td>yes — rank $2$: $ict$ with $ct'$</td>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B})$ — vector subspace</td>
@@ -219,24 +221,27 @@ $$</p>
 <td>no</td>
 <td>yes — $[\mathbb{B},\mathbb{B}]$</td>
 <td>complex quadratic: $z_1^2+z_2^2+z_3^2$</td>
+<td>yes — rank $6$: $x_k$ with $ix'_k$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$ — quaternion subspace</td>
 <td>4</td>
 <td>$T_{\mathrm{i}} \oplus X_{\mathrm{m}}$</td>
-<td>$\tilde{Q}^* = \tilde{Q}$</td>
+<td>$\bar{Q} = \tilde{Q}$</td>
 <td>yes — a division algebra</td>
 <td>yes — $\mathrm{SU}(2)$</td>
 <td>positive definite, $(4,0)$</td>
+<td>no</td>
 </tr>
 <tr>
 <td>$i\mathbb{H}_{\mathbb{B}}$ — antiquaternion subspace</td>
 <td>4</td>
 <td>$T_{\mathrm{m}} \oplus X_{\mathrm{i}}$</td>
-<td>$\tilde{Q}^* = -\tilde{Q}$</td>
+<td>$\bar{Q} = -\tilde{Q}$</td>
 <td>no</td>
 <td>no</td>
 <td>negative definite, $(0,4)$</td>
+<td>no</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$ — informational sector</td>
@@ -246,6 +251,7 @@ $$</p>
 <td>no</td>
 <td>no</td>
 <td>indefinite, $(1,3)$</td>
+<td>no</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$ — material sector</td>
@@ -255,13 +261,16 @@ $$</p>
 <td>no</td>
 <td>yes — $\mathrm{U}(2)$</td>
 <td>indefinite, $(3,1)$; light cone</td>
+<td>no</td>
 </tr>
 </tbody>
 </table></div>
-<p>Three entries of the table repay attention, because each is a distinction that is easy to collapse.</p>
+<p>Four entries of the table repay attention, because each is a distinction that is easy to collapse.</p>
 <p><strong>Closure under multiplication is rare.</strong> Only $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are subalgebras, and only $\mathbb{H}_{\mathbb{B}}$ is a subalgebra that is also definite. Every other subspace has a product that leaves it: for the halves the return $i\mathbb{H}_{\mathbb{B}} \cdot i\mathbb{H}_{\mathbb{B}} \subseteq \mathbb{H}_{\mathbb{B}}$ carries a product out of the imaginary half altogether, and for the sectors the crossing $(ie_1)(ie_2) = -e_3$ carries a product from $\mathbb{M}_+$ into $\mathbb{M}_-$.</p>
 <p><strong>Closure under the commutator is a different question.</strong> $\mathbb{C}_{\mathbb{B}}$ is both a Lie subalgebra and a subalgebra; $\mathrm{Vect}(\mathbb{B})$ is a Lie subalgebra without being a subalgebra at all; $\mathbb{H}_{\mathbb{B}}$ is both; $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$ are neither, and $\mathbb{M}_-$ is a Lie subalgebra without being a subalgebra at all. All four combinations occur among the six subspaces, so neither notion implies the other.</p>
 <p><strong>Definiteness singles out the halves.</strong> The biquaternion norm takes complex values on the center and the vector subspace, so it has no definite sign there; it is positive definite on $\mathbb{H}_{\mathbb{B}}$ and negative definite on $i\mathbb{H}_{\mathbb{B}}$; and it is indefinite on both sectors. The zero divisors of the algebra are therefore carried by the vector subspace and the two sectors, and excluded from the two halves. The center is not a carrier: its biquaternion norm is complex but anisotropic, $N(ze_0) = z^2e_0$ vanishing only at $z = 0$. The degeneracy of the algebra lies not in the center but in the vector subspace and in the sectors.</p>
+<p><strong>The area pairing is carried by the two complex subspaces alone.</strong> Each of the four forms of the algebra splits into a real part and an imaginary part, and the imaginary part is an alternating form — the <em>area pairing</em>, symplectic where it is non-degenerate — for the two sesquilinear forms and a symmetric one for the two bilinear forms (<em>The Six Subspaces and the Four Forms</em>). It is the imaginary part of the <strong>scalar-valued</strong> form, and it must not be confused with the <strong>vector-valued</strong> antisymmetric half of the product, which the corpus also reads as a phase and which is non-zero on the sectors (<em>The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product</em>); nor is it an invariant of a bracket. The area pairing is non-degenerate on the center subspace, of rank $2$, and on the vector subspace, of rank $6$, and it vanishes identically on the four four-dimensional subspaces, the two halves and the two sectors alike. The rule is the block one: <strong>the area pairing joins each direction to its partner under multiplication by the central imaginary</strong>, so it is available exactly where both members of a pair are present — the two temporal blocks for the center, the two spatial blocks for the vector subspace. The four four-dimensional subspaces each hold one time and one space, so each holds one member of every pair and never the partner, and there the pairing has nothing to join.</p>
+<p>This is why the area pairing is a fact of the block structure and not an extra. It is present exactly where the multiplication by $i$ preserves the subspace, the same condition as having a complex dimension, and it is the invariant that closure under $i$ brings. The physics of the two classes is in <em>The Four Other Remarkable Subspaces</em>: on the center the pairing makes the two times one canonical pair, and on the vector subspace it makes each material direction conjugate to its informational partner.</p>
 <p>Each of the six subspaces has its own article treating it on its own terms — basis and parameters, algebraic properties, and physical reading. What follows here is only what the subspaces do to one another.</p>
 <h2 id="the-four-coordinate-blocks">The Four Coordinate Blocks</h2>
 <p>The eight real parameters of a general element organize into <strong>four blocks</strong>, distinguished by whether the coordinate is material or informational and whether it is temporal or spatial:</p>
@@ -588,28 +597,28 @@ $$</p>
 </tbody>
 </table></div>
 <p>Two subspaces in the same row share their time, two in the same column share their space, and no two of the four are equal. The two splits appear as the two diagonals of this grid — the sectors pair a time with the space of the same sector, the halves pair a time with the space of the other. The whole intersection table is therefore the grid: <strong>for two distinct subspaces, same row gives dimension $1$, same column gives dimension $3$, and differing in both gives $0$.</strong> The vanishing pairs are exactly those differing in both entries, which is what the two splits are, and the four nonzero off-diagonal entries have the dimension of the shared block, $3$ for a shared space and $1$ for a shared time. The dimensions $\{0,1,3\}$ are the three-and-one pattern of the blocks, read as an intersection.</p>
-<h3 id="math455">$\mathbb{H}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} = 0$</h3>
+<h3 id="math465">$\mathbb{H}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} = 0$</h3>
 <p><em>Dimension $0$ — the two halves meet only at the origin.</em></p>
 <p><strong>The generator.</strong> The halves are the $+1$ and $-1$ eigenspaces of complex conjugation, so an element of both satisfies $\tilde{Q} = \tilde{Q}^{*} = -\tilde{Q}^{*}$ and is forced to vanish. <strong>In blocks.</strong> $\mathbb{H}_{\mathbb{B}} = T_{\mathrm{i}} \oplus X_{\mathrm{m}}$ and $i\mathbb{H}_{\mathbb{B}} = T_{\mathrm{m}} \oplus X_{\mathrm{i}}$ share no block either. <strong>Directness.</strong> The vanishing is the directness of the real-and-imaginary split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, and the unique decomposition it licenses is the split into real and imaginary parts with respect to $\bar{\cdot}$,</p>
 <p>$$
 \tilde{Q} = \tfrac12(\tilde{Q} + \tilde{Q}^{*}) + \tfrac12(\tilde{Q} - \tilde{Q}^{*}),
 $$</p>
 <p>the first term in $\mathbb{H}_{\mathbb{B}}$ and the second in $i\mathbb{H}_{\mathbb{B}}$. <strong>Why exactly two zeros.</strong> The two vanishing entries of the intersection table that involve two of the four-dimensional subspaces are exactly the two four-dimensional splits, one for each generator of the commuting pair $({}^{*}, \bar{\cdot})$; the two composites produce nonzero entries instead, and the third zero of the table, $\mathbb{C}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B}) = 0$, is the scalar–vector split of the two remaining summands.</p>
-<h3 id="math469">$\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = T_{\mathrm{i}}$</h3>
+<h3 id="math479">$\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = T_{\mathrm{i}}$</h3>
 <p><em>Dimension $1$ — the vacuum line, shared by the center, the real quaternions and the informational sector.</em></p>
 <p><strong>The constraint.</strong> An element of $\mathbb{M}_+$ is Hermitian, so its scalar coefficient is real and its vector coefficients are purely imaginary; an element of $\mathbb{H}_{\mathbb{B}}$ is all-real. In the intersection the vector coefficients must be imaginary and real at once, hence zero, while the scalar coefficient is real under both conditions and survives. The intersection is the line of real multiples of the identity,</p>
 <p>$$
 \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = \{\, ct'\,e_0 \;:\; ct' \in \mathbb{R} \,\} = \mathbb{R}e_0 = T_{\mathrm{i}},
 $$</p>
 <p><strong>The vacuum direction.</strong> It is the identity, the global phase, the one element of the algebra fixed by every conjugation except $\flat$. It is the <strong>common fixed line</strong> of the three involutions $\{\bar{\cdot}, {}^{\natural}, {}^{*}\}$, which is why it also appears as the triple intersection $\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$. Like its counterpart $\mathbb{R}(ie_0)$ it is central, hence commutative and rotationless, and it is the single <strong>positive</strong> direction contributed by the informational sector, $N(e_0) = +1$. <strong>The asymmetry.</strong> The block is the temporal counterpart of the previous entry, and it exhibits the same dimensional asymmetry between the two halves: the informational sector shares its <strong>time</strong> with $\mathbb{H}_{\mathbb{B}}$ in this one-dimensional intersection while sharing its <strong>space</strong> with $i\mathbb{H}_{\mathbb{B}}$ in the three-dimensional one below, whereas the material sector does the reverse.</p>
-<h3 id="math481">$\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = X_{\mathrm{m}}$</h3>
+<h3 id="math491">$\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = X_{\mathrm{m}}$</h3>
 <p><em>Dimension $3$ — the space that the material sector and the quaternion half hold in common.</em></p>
 <p><strong>The constraint.</strong> An element of $\mathbb{M}_-$ is anti-Hermitian, so its scalar coefficient $Q_0$ is purely imaginary and its vector coefficients $Q_k$ are real; an element of $\mathbb{H}_{\mathbb{B}}$ is all-real, so every $Q_\mu$ is real. In the intersection $Q_0$ must be both purely imaginary and real, which forces the scalar to vanish, while the three vector coefficients are real under both conditions and survive untouched. What remains is the real vector part,</p>
 <p>$$
 \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = \{\, x\,e_1 + y\,e_2 + z\,e_3 \;:\; x, y, z \in \mathbb{R} \,\} = \mathbb{R}(e_1,e_2,e_3) = X_{\mathrm{m}},
 $$</p>
 <p><strong>The largest intersection.</strong> It is the largest of the entries that involve two distinct subspaces, and the only three-dimensional intersection that $\mathbb{M}_-$ has with one of the four four-dimensional subspaces. <strong>Pure quaternions.</strong> Its elements are the pure quaternions in the classical sense — the vectors of the algebra — and they are exactly the part closed under the commutator, $[e_i,e_j] = 2\epsilon_{ijk}e_k$, so the intersection carries the rotation algebra $\mathrm{SU}(2)$ even though neither $\mathbb{M}_-$ nor $\mathbb{H}_{\mathbb{B}}$ is itself closed under the product. It is the <strong>space</strong> of the material sector and simultaneously the space of the quaternion half: the three spatial directions are what the sector and the half hold in common, which is why a rotor built from these units rotates space and nothing else. <strong>Biquaternion norm.</strong> In the biquaternion norm the block contributes $+3$, positive definite. <strong>Two further remarks.</strong> The intersection is a proper subspace of both factors, so neither condition implies the other: being anti-Hermitian constrains the scalar to be imaginary, being real constrains the vectors to be real, and the two agree precisely on the vector part. And since $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = X_{\mathrm{m}}$ is the <em>spatial</em> block of each, the intersection of a half with a sector is always the Euclidean part of the pair, never the time.</p>
-<h3 id="math497">$i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = X_{\mathrm{i}}$</h3>
+<h3 id="math507">$i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = X_{\mathrm{i}}$</h3>
 <p><em>Dimension $3$ — the observables that the informational sector and the imaginary half hold in common.</em></p>
 <p><strong>The constraint.</strong> The element is Hermitian, so its scalar coefficient is real, and it is all-imaginary, so that same coefficient is imaginary; the scalar therefore vanishes, while the three purely imaginary vector coefficients satisfy both conditions and survive. The intersection is the block of imaginary vectors,</p>
 <p>$$
@@ -622,14 +631,14 @@ i\,(i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-) = \mathbb{H}_{\mathbb{B}} \cap \
 $$</p>
 <p><strong>Crossing of the splits.</strong> That is the algebraic statement that the time and the space of the material sector become the time and the space of the informational sector under multiplication by the central imaginary unit — the crossing of the two splits, seen on the intersections themselves.</p>
 <p><strong>The pattern.</strong> Every pair of distinct subspaces therefore either meets in one block or does not meet at all, and each meets two of the other three. In this sense the two four-plus-four splits are maximally crossed with respect to one another: no piece of either split is contained in a piece of the other, and every cross pair meets — the largest intersections available given that both decompositions must remain direct.</p>
-<h3 id="math506">$i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = T_{\mathrm{m}}$</h3>
+<h3 id="math516">$i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = T_{\mathrm{m}}$</h3>
 <p><em>Dimension $1$ — the $ict$ axis, the time that the material sector holds with the imaginary half.</em></p>
 <p><strong>The constraint.</strong> Here an element must be anti-Hermitian, as in $\mathbb{M}_-$, and all-imaginary, as in $i\mathbb{H}_{\mathbb{B}}$. The three vector coefficients are real under the first condition and imaginary under the second, so all three must vanish; the scalar coefficient is imaginary under both and survives alone. The intersection is therefore the single line</p>
 <p>$$
 i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = \{\, ict\,e_0 \;:\; ct \in \mathbb{R} \,\} = \mathbb{R}(ie_0) = T_{\mathrm{m}},
 $$</p>
 <p>the $ict$ axis. <strong>Three features distinguish it.</strong> <strong>First</strong>, it lies in the center subspace $\mathbb{C}_{\mathbb{B}}$, since $ie_0$ is a multiple of the unit, so its elements commute with every element of $\mathbb{B}$ and cannot generate a rotation: this is why the temporal direction of that sector enters the algebra as a phase rather than as a generator. <strong>Second</strong>, it is the single <strong>negative</strong> direction in the biquaternion norm, $N(ie_0) = -1$, the origin of the Lorentzian signature of that sector. <strong>Third</strong>, it is the only place where that sector reaches into the imaginary half: intersecting it with $\mathbb{H}_{\mathbb{B}}$ leaves just its space, exactly as intersecting it with $i\mathbb{H}_{\mathbb{B}}$ leaves just this line, so the sector meets the two halves in its time and its space respectively. It is one of the two directions common to three subspaces, $\mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$.</p>
-<h3 id="math520">$\mathbb{M}_+ \cap \mathbb{M}_- = 0$</h3>
+<h3 id="math530">$\mathbb{M}_+ \cap \mathbb{M}_- = 0$</h3>
 <p><em>Dimension $0$ — the two sectors meet only at the origin.</em></p>
 <p><strong>The eigenvalue argument.</strong> The two sectors are the $+1$ and $-1$ eigenspaces of ${}^{*}$, so an element lying in both would satisfy $\tilde{Q} = \tilde{Q}^{*}$ and $\tilde{Q} = -\tilde{Q}^{*}$ simultaneously, giving $\tilde{Q} = -\tilde{Q}$ and hence $\tilde{Q} = 0$: the two sectors meet only at the origin. <strong>In blocks.</strong> The same conclusion is immediate, because $\mathbb{M}_- = T_{\mathrm{m}} \oplus X_{\mathrm{m}}$ and $\mathbb{M}_+ = T_{\mathrm{i}} \oplus X_{\mathrm{i}}$ have <strong>no block in common</strong>, and an element of an intersection has to vanish on every block outside both subspaces. <strong>Directness.</strong> This vanishing is what makes the sector split <em>direct</em>, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, so the decomposition of an arbitrary element into its Hermitian and anti-Hermitian parts,</p>
 <p>$$
@@ -746,6 +755,7 @@ $$</p>
 <li>The half split is a $\mathbb{Z}/2$-grading: $\mathbb{H}_{\mathbb{B}}$ is the even part and a subalgebra, $i\mathbb{H}_{\mathbb{B}}$ the odd part and only a module. $\mathbb{H}_{\mathbb{B}} \cong \mathbb{H}$ is a division algebra.</li>
 <li>The biquaternion norm is complex — hence of no definite sign — on the center and the vector subspace, positive definite on $\mathbb{H}_{\mathbb{B}}$ and negative definite on $i\mathbb{H}_{\mathbb{B}}$, so neither half contains a zero divisor, and indefinite on the two sectors. The Lorentzian signature and the whole zero-divisor cone of $\mathbb{B}$ come from mixing the two halves.</li>
 <li>Multiplication by $i$ exchanges the halves and exchanges the sectors; quaternion conjugation preserves all four subspaces; complex conjugation fixes the real half and negates the imaginary half, and preserves both sectors.</li>
+<li>The four forms of the algebra carry an alternating companion, the <strong>area pairing</strong>, on the center subspace, of rank $2$, and on the vector subspace, of rank $6$, and none on the four four-dimensional subspaces. It joins each direction to its partner under multiplication by the central imaginary, so it is present exactly where both members of a pair lie inside the subspace — the same two subspaces on which the multiplication by $i$ closes and on which a complex dimension exists.</li>
 </ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -851,6 +861,7 @@ $$</p>
 <li>S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions," <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636, for the canonical decompositions and the conventions in applied use.</li>
 <li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the grading of the algebra and the role of its even part.</li>
 <li>David Hestenes, <em>Space-Time Algebra</em> (Gordon and Breach, 1966), for the even subalgebra of spacetime algebra and the rotors it carries.</li>
+<li><em>The Six Subspaces and the Four Forms</em> (mathematics), for the four forms read on each of the six subspaces, the real and the imaginary parts, the area pairing and its ranks, the collapse patterns and the Kähler identity that reads the area pairing off the real part by the central imaginary.</li>
 </ul>
       </div>
     </main>

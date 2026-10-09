@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra"><strong>Indefinite Positivity and the Krein Cone of the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The dagger is a <strong>positive involution</strong> of the biquaternion algebra: $\mathrm{Sc}(\tilde{Q}^{\dagger}\tilde{Q})=\|\tilde{Q}\|_E^{2}>0$ off zero, and the image of the resulting cone is the Hermitian cone $P=\{\tilde{Q}^{\dagger}\tilde{Q}\}$ of <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>, the forward light cone of the interval form. The general quaternionic sesquilinear form of the algebra is indefinite, and what replaces that cone is twofold. On the <strong>vectors</strong> there is the set of elements of non-negative Krein square,</p>
+<p>The dagger is a <strong>positive involution</strong> of the biquaternion algebra: $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q})=\|\tilde{Q}\|_E^{2}>0$ off zero, and the image of the resulting cone is the Hermitian cone $P=\{\tilde{Q}^{*}\tilde{Q}\}$ of <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>, the forward light cone of the interval form. The general quaternionic sesquilinear form of the algebra is indefinite, and what replaces that cone is twofold. On the <strong>vectors</strong> there is the set of elements of non-negative Krein square,</p>
 <p>$$
 P_{K}=\{\tilde{Q}\in\mathbb{B}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\|c\|_E\geq\|v\|_E\},
 $$</p>
@@ -80,7 +80,7 @@ $$</p>
 <p>$$
 P_{K}\cap\mathbb{M}_{+}=\{\tilde{H}\in\mathbb{M}_{+}:\langle\tilde{H},\tilde{H}\rangle_{\natural}\geq0\},
 \qquad
-P=\{\tilde{Q}^{\dagger}\tilde{Q}:\tilde{Q}\in\mathbb{B}\}=\{\tilde{H}\in\mathbb{M}_{+}:\langle\tilde{H},\tilde{H}\rangle_{\natural}\geq0,\ \mathrm{Sc}(\tilde{H})\geq0\}.
+P=\{\tilde{Q}^{*}\tilde{Q}:\tilde{Q}\in\mathbb{B}\}=\{\tilde{H}\in\mathbb{M}_{+}:\langle\tilde{H},\tilde{H}\rangle_{\natural}\geq0,\ \mathrm{Sc}(\tilde{H})\geq0\}.
 $$</p>
 <p><strong>Proof.</strong> On $\mathbb{M}_{+}$ the Krein square is $N$; an element of the Hermitian subspace is of the form $\tilde{H}=q_0e_0+\sum_k iq'_ke_k$ with $q_0,q'_k$ real, so $\langle\tilde{H},\tilde{H}\rangle_{\natural}=q_0^{2}-\sum_k q'^{2}_k$ and the inequality $N\geq0$ defines the two nappes $q_0\geq|\mathbf{q}'|$ and $q_0\leq-|\mathbf{q}'|$; the Hermitian cone consists of the positive semidefinite Hermitian elements, which are precisely the ones with the additional sign $\mathrm{Sc}(\tilde{H})=q_0\geq0$, and they form one nappe. This is the Hermitian-cone computation of <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>, §<em>The Cone, the Interval Form and the Isotropic Cone</em>, read on the general quaternionic sesquilinear form.</p>
 <p><strong>Corollary (the Hermitian cone is inside the Krein cone).</strong> $P\subseteq P_{K}$, and the Krein cone is the union of $P$, its negative $-P$ and the Krein null set inside $\mathbb{M}_{+}$.</p>
@@ -117,7 +117,7 @@ $$</p>
 <p><strong>A non-convexity witness.</strong> $\tilde Q_1=e_0+e_2$ and $\tilde Q_2=-e_0+e_2$ are both in $P_{K}$, but their midpoint $e_2$ is not.</p>
 <p><strong>A $J$-positive operator that is not definite-positive.</strong> $J={}^{\natural}$ itself: $J\in\mathcal{P}_{J}$ with $\langle\tilde{Q},J\tilde{Q}\rangle_{\natural*}=\|\tilde{Q}\|_E^{2}$, while the spectrum of $J$ contains $-1$.</p>
 <h2 id="summary">Summary</h2>
-<p>The <strong>Krein cone</strong> of the algebra is $P_{K}=\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\|c\|_E\geq\|v\|_E\}$; it is a closed cone, homogeneous but neither convex nor pointed, with interior $\simeq S^{1}$ and boundary the Krein null set of dimension $7$. On the Hermitian subspace it is the full light cone of the interval form, and its future nappe is the <strong>Hermitian cone</strong> $P=\{\tilde{Q}^{\dagger}\tilde{Q}\}$ of the dagger; so $P\subseteq P_{K}$ and the two are different objects. On operators, the <strong>$J$-positive cone</strong> $\mathcal{P}_{J}=\{T=T^{\dagger},\ \langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0\}=J\cdot\{S\geq0\}$ is the image of the definite positive cone under $J$, hence closed and convex; it contains $J$ itself but not the identity, and its extreme rays are the rank-one $J$-projections. The $J$-projections are the Krein-orthogonal projections onto the non-degenerate subspaces, of which the definite-orthogonal projections commuting with $J$ — in particular $\pi_{\pm}$ — are the special case; among $\pi_{\pm}$, $\pi_{+}$ is $J$-positive and $\pi_{-}$ is $J$-negative. The involution $\theta_{J}(T)=(T^{\dagger})^{-1}$ has fixed set the $J$-unitary group $U_{J}(\mathbb{B})\cong U(1,3)$ (<em>The Krein Cartan Decomposition of the Operator Algebra</em>).</p>
+<p>The <strong>Krein cone</strong> of the algebra is $P_{K}=\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\|c\|_E\geq\|v\|_E\}$; it is a closed cone, homogeneous but neither convex nor pointed, with interior $\simeq S^{1}$ and boundary the Krein null set of dimension $7$. On the Hermitian subspace it is the full light cone of the interval form, and its future nappe is the <strong>Hermitian cone</strong> $P=\{\tilde{Q}^{*}\tilde{Q}\}$ of the dagger; so $P\subseteq P_{K}$ and the two are different objects. On operators, the <strong>$J$-positive cone</strong> $\mathcal{P}_{J}=\{T=T^{\dagger},\ \langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0\}=J\cdot\{S\geq0\}$ is the image of the definite positive cone under $J$, hence closed and convex; it contains $J$ itself but not the identity, and its extreme rays are the rank-one $J$-projections. The $J$-projections are the Krein-orthogonal projections onto the non-degenerate subspaces, of which the definite-orthogonal projections commuting with $J$ — in particular $\pi_{\pm}$ — are the special case; among $\pi_{\pm}$, $\pi_{+}$ is $J$-positive and $\pi_{-}$ is $J$-negative. The involution $\theta_{J}(T)=(T^{\dagger})^{-1}$ has fixed set the $J$-unitary group $U_{J}(\mathbb{B})\cong U(1,3)$ (<em>The Krein Cartan Decomposition of the Operator Algebra</em>).</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -144,7 +144,7 @@ $$</p>
 <td>Light cone of the interval form on the Hermitian subspace</td>
 </tr>
 <tr>
-<td>$P=\{\tilde{Q}^{\dagger}\tilde{Q}\}$</td>
+<td>$P=\{\tilde{Q}^{*}\tilde{Q}\}$</td>
 <td>Hermitian cone; the future nappe, $P\subseteq P_{K}$</td>
 </tr>
 <tr>
@@ -175,7 +175,7 @@ $$</p>
 <li><em>The Fundamental Symmetry of the Biquaternion Algebra</em> (<code>articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md</code>), for $J$ and the two orders</li>
 <li><em>The Krein Gram Matrix and the Restrictions of the Form</em> (<code>articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md</code>), for the form and its null set</li>
 <li><em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions</em> (<code>articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra-of-biquaternions.md</code>), for the $J$-positive cone and the $J$-projections</li>
-<li><em>The Krein Isometry Group and Its $J$-Contractions</em> (<code>articles_maths/the-krein-isometry-group-and-its-j-contractions.md</code>), for the group $U(1,3)$</li>
+<li><em>The Krein Isometry Group and Its J-Contractions</em> (<code>articles_maths/the-krein-isometry-group-and-its-j-contractions.md</code>), for the group $U(1,3)$</li>
 <li><em>The Krein Cartan Decomposition of the Operator Algebra</em> (<code>articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.md</code>), for $\mathfrak{u}(1,3)$, the Jordan part and the symmetric space</li>
 <li><em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the definite cone and the Cartan involution used here</li>
 <li>János Bognár, <em>Indefinite Inner Product Spaces</em> (Springer, 1974), and Israel Gohberg, Peter Lancaster and Leiba Rodman, <em>Indefinite Linear Algebra and Applications</em> (Birkhäuser, 2005), for the indefinite cone and the Cartan involution</li>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison Between the Four General Products — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="comparison-between-the-four-general-products"><strong>Comparison Between the Four General Products</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The four general products of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> are four binary rules on the same space, and it is natural to ask which of them deserves the name of multiplication. In the strict sense, of an associative multiplication with a two-sided unit over the field of scalars, only the general plain bilinear product does: the second is $\mathbb{C}$-bilinear but not associative and carries a unit on one side only, and the last two are not $\mathbb{C}$-bilinear at all, being conjugate-linear in their second argument. In the sense of the two objects the corpus has — an algebra in the sense of <em>Algebras</em>, and a sesqualgebra over $\mathbb{C}$ with its conjugation in the sense of <em>Sesqualgebras</em> — the four split two and two, and within the pair of sesquilinear ones the complex product is the one this series takes, being the derived operation of the algebra with the conjugate-linear involution.</p>
+<p>This article tabulates the properties that separate the four general products — bilinearity, associativity, commutativity, the units, the alternative and the flexible identities, the degree-three identity, and the left multiplications — and gives the short computation that decides each entry where it is not immediate. The scalar and vector parts the four induce are not compared here; they are <em>Relations Between the Four General Products</em>.</p>
+<p>The article assumes the four general products and their scalar–vector forms from <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>, and it uses the identities of <em>Relations Between the Four General Products</em> for the unit and the monoid rows. Throughout, $1=e_0$ is the unit of the algebra and $\mathbf P$ is the vector part of $\tilde P=P_0+\mathbf P$.</p>
+<h2 id="the-property-table">The Property Table</h2>
+<p>The last two rows are the <strong>algebra rows</strong>, and they are the reason the comparison is made. They ask which of the four general products is a multiplication of an algebra of each of the two kinds the corpus has, and each is read with the corpus's own definition of the object and with nothing added to it. <strong>Multiplication of a bilinear $\mathbb{C}$-algebra</strong> is the product of an algebra in the sense of <em>Algebras</em>: a $\mathbb{C}$-module with a product additive in each variable and $\mathbb{C}$-bilinear, with no associativity and no unit assumed, so $(\lambda\tilde P)\tilde Q = \lambda(\tilde P\tilde Q)$ and $\tilde P(\lambda\tilde Q) = \lambda(\tilde P\tilde Q)$. <strong>Multiplication of a sesqualgebra over $\mathbb{C}$</strong> is the product of an algebra in the sense of <em>Sesqualgebras</em>: additive in each variable, $\mathbb{C}$-linear in the first and conjugate-linear in the second, so $(\lambda\tilde P)\tilde Q = \lambda(\tilde P\tilde Q)$ and $\tilde P(\lambda\tilde Q) = \bar\lambda(\tilde P\tilde Q)$, the base involution being the conjugation $\varsigma(z)=\bar z$. The bilinear case is the trivial-involution collapse of the sesquilinear one, so the two kinds overlap in general; they do not overlap here. A product of full type carries only one involution (<em>Sesqualgebras</em>, §<em>The Collapse at the Identity</em>), and $\mathbb{B}$ is faithful, its products generate it and it has no nonzero left annihilator, so each of the four general products carries exactly one involution and lies in exactly one of the two rows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>property</th>
+<th>$\tilde P\tilde Q$</th>
+<th>$\tilde P^{\natural}\tilde Q$</th>
+<th>$\tilde P\tilde Q^{*}$</th>
+<th>$\tilde P^{\natural}\tilde Q^{*}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$-linear in the first argument</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$-linear in the second argument</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>associative</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>commutative</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$1$ is a left identity</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$1$ is a right identity</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>alternative</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>flexible</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>degree-three identity</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>left multiplications form a monoid</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>multiplication of an algebra over $\mathbb{C}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>multiplication of a sesqualgebra over $\mathbb{C}$</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The alternative row is satisfied automatically by the general plain bilinear product, which is associative, and it is the three other columns that the row decides. The degree-three row records the identity $\tilde P(\tilde P\tilde P)=(\tilde P\tilde P)\tilde P$ for the operation in question, which is how power associativity is tested for a product of this kind; in this and the two rows above it, juxtaposition stands for the operation of the row. The last two rows ask which of the four general products is a multiplication of an algebra of the two kinds the corpus has, with the definitions of the paragraph above the table and with nothing added to them. The test is the scalar rules alone, and it is decided by the second slot. When the second slot is read without a conjugation, as in $\tilde P\tilde Q$ and in $\tilde P^{\natural}\tilde Q$, the product is $\mathbb{C}$-bilinear and belongs to the bilinear row; when it carries the star, as in $\tilde P\tilde Q^{*}$ and in $\tilde P^{\natural}\tilde Q^{*}$, the product is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second and belongs to the sesquilinear row. The witness for each exclusion is one scalar, $\lambda = i$, and one pair, $\tilde P = \tilde Q = e_0$: for the two bilinear products $\tilde P(i\tilde Q) = ie_0$ while $\bar\imath(\tilde P\tilde Q) = -ie_0$, so they are not $\varsigma$-sesquilinear for the conjugation; and for the two star-products $\tilde P(i\tilde Q) = -ie_0$ while $i(\tilde P\tilde Q) = ie_0$, so they are not $\mathbb{C}$-bilinear. The four therefore split two and two by the involution each carries, the bilinear row reading yes, yes, no, no and the sesquilinear row no, no, yes, yes. Neither row separates the third column from the fourth, and none should: the two star-products differ only in the first slot, and ${}^{\natural}$ is $\mathbb{C}$-linear, so both are sesquilinear for the same conjugation. What separates them is the unit, and it is the row "$1$ is a right identity" above: the general plain sesquilinear product has $e_0$ on the right and the complex quaternionic one has not. Equivalently, only the general plain sesquilinear product is the <strong>derived operation</strong> $\tilde X\star\tilde Y = \tilde X\tilde Y^{*}$ of $\mathbb{B}$ with its conjugate-linear involution, the standard example of <em>Sesqualgebras</em> and the structure of <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>. The bilinear row is weakened in the same way by the absence of a qualifier: the sharper statement, that exactly one of the four general products is the multiplication of an <strong>associative unital</strong> $\mathbb{C}$-algebra, is in <em>Introduction to the General Plain Algebra of Biquaternions</em>, and it holds because the ${}^{\natural}$-product is neither associative nor two-sidedly unital.</p>
+<h2 id="bilinearity-and-sesquilinearity">Bilinearity and Sesquilinearity</h2>
+<p>The first two rows are read off the definitions. Each of the four general products is $\mathbb{C}$-linear in the first argument: the first factor is either untouched or conjugated by the $\mathbb{C}$-linear map ${}^{\natural}$, and the rest of the computation is linear in it. In the second argument, the general plain bilinear product and the ${}^{\natural}$-product are $\mathbb{C}$-linear, while the two products carrying the star are conjugate-linear, since ${}^{*}$ conjugates the coefficients of the second factor before the multiplication.</p>
+<p>The distinction is not a technicality of the definitions: it separates the two rows of the scalar and vector tables of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> that involve $\overline{\mathbf Q}$, and it is the reason the fourth column carries no unit and no monoid. It also settles what the four can be used for. A $\mathbb{C}$-bilinear operation on $\mathbb{B}$ defines on $\mathbb{B}$ the structure of an algebra over $\mathbb{C}$, associative or not; a conjugate-linear operation defines no such thing, and the two sesquilinear products are the multiplications of a sesqualgebra over $\mathbb{C}$ instead. The first of the two is nonetheless the multiplication of a sesqualgebra over $\mathbb{C}$ with its conjugation, being the derived operation of the algebra with the star, and that is a multiplication in the second sense the corpus admits (<em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>); the second is not, since it reads the first factor through the $\mathbb{C}$-linear ${}^{\natural}$ as well. The four remain binary operations of the same kind, with the same two-step rule for their computation.</p>
+<p><strong>The two exchanges, and the class.</strong> The four general products are split against an exchange of the two arguments, and there are two of them. The <strong>exchange by a conjugation</strong> $c$, $f^{c}(\tilde{P},\tilde{Q})=c(f(\tilde{Q},\tilde{P}))$, composes the swap with $c$ and keeps the class of the two sesquilinear products, whose parts under it are sesquilinear again; the conjugation and the swap repair each other's parity, and this is the exchange the twelve names are read against. The <strong>plain exchange</strong> swaps the arguments and does not keep the class: a part of a sesquilinear product taken under it is only $\mathbb{R}$-bilinear, since the swap moves the conjugate-linear slot to the other side, and its two halves are the operations of <em>The Sesquilinear Symmetrised Product</em> and <em>The Sesquilinear Commutator</em>. For the plain sesquilinear product and $c=\overline{\cdot}$ the two parts are the scalar part and the vector part of the product, $P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ and $-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$; for the general quaternionic sesquilinear product they are the symmetrisation of $\tilde{P}^{\natural}$ with $\tilde{Q}^{*}$ and half their commutator. The two exchanges and their two splits are read in <em>The 12 Products of the Biquaternion Complex Space</em>, §<em>The Other Exchange, and the Class It Keeps</em>, and in <em>The 12 Products of the Biquaternion Complex Space</em>, §<em>The Method of the Decomposition</em>.</p>
+<h2 id="the-failure-of-associativity">The Failure of Associativity</h2>
+<p>The general plain bilinear product is associative, being the complex-linear extension of the associative quaternion product. The other three products fail it, and each fails it on a triple of basis elements:</p>
+<p>$$
+(\tilde P^{\natural}\tilde Q)^{\natural}\tilde R\neq\tilde P^{\natural}(\tilde Q^{\natural}\tilde R)
+\quad\text{for}\quad \tilde P=\tilde Q=-e_2,\ \tilde R=e_2 ,
+$$</p>
+<p>where the left-hand side is $e_2$ and the right-hand side is $-e_2$; and</p>
+<p>$$
+(\tilde P\tilde Q^{*})\tilde R^{*}\neq\tilde P(\tilde Q\tilde R^{*})^{*}
+\quad\text{for}\quad \tilde P=-e_3,\ \tilde Q=\tilde R=e_2 ,
+$$</p>
+<p>where the left-hand side is $e_3$ and the right-hand side is $-e_3$. For the fourth product,</p>
+<p>$$
+(\tilde P^{\natural}\tilde Q^{*})^{\natural}\tilde R^{*}\neq\tilde P^{\natural}(\tilde Q^{\natural}\tilde R^{*})^{*}
+\quad\text{for}\quad \tilde P=-e_3,\ \tilde Q=e_3,\ \tilde R=e_0 ,
+$$</p>
+<p>with left-hand side $e_0$ and right-hand side $-e_0$. In each case the two sides differ by the sign of a single basis element, and the reason is the same in all three: associativity of the general plain bilinear product lets the parentheses be dropped, and the operation then conjugates a factor and so transposes two of them. For the ${}^{\natural}$-product, for instance, $(\tilde P^{\natural}\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$, so the two sides of the associative identity read $\tilde Q^{\natural}\tilde P\tilde R$ and $\tilde P^{\natural}\tilde Q^{\natural}\tilde R$, which differ by the transposition of $\tilde P$ and $\tilde Q^{\natural}$ alone.</p>
+<p>The failure is not repaired by the symmetry of the scalar parts, because that symmetry is a statement about the scalar parts alone. In the first two counterexamples the two sides have the same scalar part, namely zero, and differ in the vector part, and in the third the scalar part changes sign; associativity is a statement about elements, and it is decided on the vector parts.</p>
+<h2 id="identities-and-units">Identities and Units</h2>
+<p>The unit $1=e_0$ of the algebra is a unit for the general plain bilinear product on both sides. For the other three the two sides must be asked separately: ${}^{\natural}$ and ${}^{*}$ both fix the unit, $1^{\natural}=1^{*}=1$, but each of the three operations conjugates the other factor.</p>
+<p>For the ${}^{\natural}$-product, $1^{\natural}\tilde Q=\tilde Q$, so $1$ is a left identity; and $\tilde P^{\natural}1=\tilde P^{\natural}$, which equals $\tilde P$ only when $\tilde P$ is fixed by ${}^{\natural}$, so $1$ is not a right identity, and there is no right identity, since a right identity $E$ would give $\tilde P^{\natural}E=\tilde P$ for all $\tilde P$, hence $E=1$ on taking $\tilde P=1$ and then $\tilde P^{\natural}=\tilde P$ for all $\tilde P$, which is false.</p>
+<p>For the ${}^{*}$-product the two sides exchange roles. Here $\tilde P\tilde Q^{*}$ leaves the first factor untouched, so $\tilde P1^{*}=\tilde P$ and $1$ is a right identity, while $1\tilde Q^{*}=\tilde Q^{*}$ is not $\tilde Q$ in general, so $1$ is not a left identity and there is no left identity. This is the one entry of the naive table that is easy to get wrong: because $\tilde Q^{*}=\overline{Q_0}e_0-\overline{\mathbf Q}$, the unit is conjugated to itself, and the star product is unital on the right and not on the left.</p>
+<p>For the fourth product neither $1^{\natural}\tilde Q^{*}=\tilde Q^{*}$ nor $\tilde P^{\natural}1=\tilde P^{\natural}$ returns its argument, and the same argument as above shows there is no identity on either side.</p>
+<h2 id="alternative-flexible-and-power-associative">Alternative, Flexible and Power Associative</h2>
+<p>The three remaining rows record weaker forms of associativity, and each is settled by a short computation on basis elements, recorded below.</p>
+<p>The <strong>left alternative</strong> identity is $\tilde P(\tilde P\tilde Q)=(\tilde P\tilde P)\tilde Q$, and a single failure of either the left or the right law denies alternativity, so it settles the row; it fails for the ${}^{\natural}$-product at $\tilde P=e_3$, $\tilde Q=-e_3$, where the left-hand side is $e_3$ and the right-hand side is $-e_3$, for the ${}^{*}$-product at $\tilde P=-e_3$, $\tilde Q=e_3$, with the same two values, and for the fourth product at $\tilde P=e_0$, $\tilde Q=ie_0$, where the two sides are $ie_0$ and $-ie_0$. The <strong>flexible</strong> identity is $(\tilde P\tilde Q)\tilde P=\tilde P(\tilde Q\tilde P)$; it fails for the ${}^{\natural}$-product at $\tilde P=e_3$, $\tilde Q=e_0$, the two sides being $-e_0$ and $e_0$, for the ${}^{*}$-product at $\tilde P=-e_2$, $\tilde Q=e_0$, the two sides being $e_0$ and $-e_0$, and for the fourth product at $\tilde P=ie_0$, $\tilde Q=e_0$, with the same two values. The <strong>degree-three</strong> identity $\tilde P(\tilde P\tilde P)=(\tilde P\tilde P)\tilde P$ fails for all three products: for the ${}^{\natural}$-product and for the ${}^{*}$-product at $\tilde P=e_3$, where the two sides are $-e_3$ and $e_3$ in the first case and $e_3$ and $-e_3$ in the second, and for the fourth product at $\tilde P=ie_3$, where the two sides are $ie_3$ and $-ie_3$.</p>
+<p>The general plain bilinear product satisfies all three, being associative, and it is the only one of the four that does. The pattern is the one the table shows: the four general products have the four displayed scalar parts and are told apart by their vector parts, and every one of these identities is an identity of elements, hence decided on the vector parts.</p>
+<h2 id="the-left-multiplications">The Left Multiplications</h2>
+<p>The left multiplication by $\tilde P$ is the map sending $\tilde X$ to the value of the operation on the pair $(\tilde P,\tilde X)$. For the general plain bilinear product the left multiplications compose by $L_{\tilde P}\circ L_{\tilde R}=L_{\tilde P\tilde R}$, which is associativity, and they form a monoid. For the ${}^{\natural}$-product the same composition law holds in reversed order, $L^{\natural}_{\tilde P}\circ L^{\natural}_{\tilde R}=L^{\natural}_{\tilde R\tilde P}$, so the left multiplications form a monoid again, isomorphic to the opposite of the multiplicative monoid of $\mathbb{B}$; this is why the row of the table on the left multiplications reads yes, yes, no, no, the two sesquilinear products being excluded by the computation of <em>Relations Between the Four General Products</em>, where the composition of two of their left multiplications is shown to be linear and hence not one of them.</p>
+<p>The row is not implied by the associative row. The ${}^{\natural}$-product is not associative, and its left multiplications still form a monoid, because the composition law holds in reversed order, by the anti-automorphism property of ${}^{\natural}$; and the two sesquilinear products fail the row for the reason given above, namely that the composition of two of their left multiplications leaves the class, which has nothing to do with the associativity of the underlying product.</p>
+<h2 id="which-of-the-four-is-a-multiplication">Which of the Four Is a Multiplication</h2>
+<p>Only the general plain bilinear product is a multiplication in the sense of algebra. It is $\mathbb{C}$-bilinear in both arguments, associative, commutative in its scalar part alone, and unital with a two-sided unit; it is the product that makes $\mathbb{B}$ an associative algebra with unit over $\mathbb{C}$, and it is the one whose associated structures — the six distinguished subspaces, the Jordan and the Lie structures of <em>The 12 Products of the Biquaternion Complex Space</em>, the zero divisors and the idempotents — the rest of the category develops.</p>
+<p>The ${}^{\natural}$-product is $\mathbb{C}$-bilinear, and that is all: it is not associative and it is unital on the left only. It defines on the underlying vector space a non-associative algebra structure in the weak sense, one that agrees with the general plain bilinear product on the centre and disagrees on the vector parts; it is the product whose scalar part is the signless sum $\sum_\mu P_\mu Q_\mu$.</p>
+<p>The two products carrying the star are not multiplications of a bilinear $\mathbb{C}$-algebra at all: being conjugate-linear in their second argument they cannot be. Both are multiplications of a sesqualgebra over the conjugation, and within the pair they are separated by the unit. The general plain sesquilinear product is the derived operation $\tilde X\star\tilde Y = \tilde X\tilde Y^{*}$ of $\mathbb{B}$ with its conjugate-linear involution, that is the standard example of the category, and $e_0$ is a right unit of it; the general quaternionic sesquilinear product reads the first factor through the $\mathbb{C}$-linear ${}^{\natural}$ as well and has no right unit, so it is a sesquilinear multiplication that is not the derived one (<em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>). The classification of the four general products is therefore: one multiplication of an associative unital algebra, one bilinear product that fails associativity and two-sidedness, and two multiplications of a sesqualgebra, of which the complex one is the derived operation with the right unit and the complex quaternionic one is not the derived operation and has no right unit.</p>
+<p>The order of the four general products matches the order of the objects. The general plain bilinear product is the multiplication of the associative unital algebra; the general plain sesquilinear product is the derived operation, the multiplication the sesqualgebra takes; the two $\natural$-products are the same two products read with the $\mathbb{C}$-linear conjugation ${}^{\natural}$ inserted in the first slot, and the insertion of a $\mathbb{C}$-linear map changes the product without changing its sesquilinearity type.</p>
+<p>Each of the four general products is read as a multiplication in an article of its own: the general plain bilinear product in <em>Introduction to the General Plain Algebra of Biquaternions</em>, the general quaternionic bilinear product in <em>Introduction to the General Quaternionic Algebra of Biquaternions</em>, the general plain sesquilinear product in <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>, and the general quaternionic sesquilinear product in <em>Introduction to the General Quaternionic Sesqualgebra of Biquaternions</em>; the entries of the table above are the statements those four articles prove or quote.</p>
+<h2 id="the-squares-the-idempotents-and-the-roots">The Squares, the Idempotents and the Roots</h2>
+<p>The four general products are told apart on a single element by the <strong>square</strong>, and the idempotent and the root problems follow from it. Writing $\tilde P = P_0e_0 + \mathbf P$ and $(\mathbf P,\mathbf P) = P_1^2 + P_2^2 + P_3^2$, the scalar part of the square is</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde P\tilde P\bigr) = P_0^2 - (\mathbf P,\mathbf P), \qquad
+\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde P\bigr) = P_0^2 + (\mathbf P,\mathbf P) = N(\tilde P),
+$$</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde P\tilde P^{*}\bigr) = \sum_\mu\lvert P_\mu\rvert^2, \qquad
+\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde P^{*}\bigr) = \lvert P_0\rvert^2 - \sum_k\lvert P_k\rvert^2 .
+$$</p>
+<p>These are the four diagonals of <em>The Four Pairings of the Biquaternion Algebra</em>, and the same four expressions are the scalar parts of the four general products of <em>Relations Between the Four General Products</em>. Two of them decide the two problems on the spot. The $\natural$-square lies in the centre for every element, being $N(\tilde P)e_0$, so its roots of a central value are the single equation $N(\tilde P) = \lambda$. The general plain sesquilinear square has the <strong>non-negative</strong> scalar part $\sum_\mu\lvert P_\mu\rvert^2$, so that product has no root of a negative value at all. The remaining two squares are elements, and their scalar parts are the indefinite general plain bilinear and Krein values.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>problem</th>
+<th>$\tilde P\tilde P = \tilde P$</th>
+<th>$\tilde P^{\natural}\tilde P = \tilde P$</th>
+<th>$\tilde P\tilde P^{*} = \tilde P$</th>
+<th>$\tilde P^{\natural}\tilde P^{*} = \tilde P$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>idempotents</td>
+<td>$0$, $e_0$, and $\tfrac12(e_0 + \xi i)$ for a root $\xi$ of $-e_0$</td>
+<td>$0$ and $e_0$ alone</td>
+<td>$0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0 + i\hat\mu)$ with $\hat\mu$ a real unit vector</td>
+<td>$0$, $e_0$, and $-\tfrac12 e_0 + \mu$ for a real $\mu$ of the vector subspace with $(\mu,\mu) = \tfrac34$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four columns are four different sets. The first is infinite and is the one the rest of the category uses; the second is the smallest possible, the two trivial idempotents; the third is the family of the pure states of <em>Biquaternion Idempotents and Projections</em>; the fourth is a family of a different kind, lying in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$.</p>
+<p>The square roots of a central value differ in the same way and by the same two structural facts.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>square roots</th>
+<th>$\tilde P\tilde P = \lambda e_0$</th>
+<th>$\tilde P^{\natural}\tilde P = \lambda e_0$</th>
+<th>$\tilde P\tilde P^{*} = \lambda e_0$</th>
+<th>$\tilde P^{\natural}\tilde P^{*} = \lambda e_0$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>of $-e_0$</td>
+<td>$P_0 = 0$ with $(\mathbf P,\mathbf P) = 1$, and $P_0 = \pm i$</td>
+<td>the solutions of $N(\tilde P) = -1$</td>
+<td>none</td>
+<td>the solutions of $\tilde P^{\natural}\tilde P^{*} = -e_0$, among them every real pure $\mathbf P$ with $(\mathbf P,\mathbf P) = 1$</td>
+</tr>
+<tr>
+<td>of $0$</td>
+<td>$P_0 = 0$ with $(\mathbf P,\mathbf P) = 0$, the nilpotents</td>
+<td>the solutions of $N(\tilde P) = 0$, the zero divisors together with $0$</td>
+<td>$\tilde P = 0$ alone</td>
+<td>the solutions of $\tilde P^{\natural}\tilde P^{*} = 0$, among them $e_0 + ie_1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three families of <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em> are therefore the three parts of one column of this table, the column of the general plain bilinear product, and not a classification of the square of the algebra in general. The other three columns are the same three equations read in the other products, and each of the other three has its reading in the article of that product.</p>
+<h2 id="summary">Summary</h2>
+<p>The four general products of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> are compared in the table above. Each is $\mathbb{C}$-linear in the first argument; the general plain bilinear product and the ${}^{\natural}$-product are $\mathbb{C}$-linear in the second, the two products carrying the star are conjugate-linear there. The general plain bilinear product is associative, has the two-sided unit $1$, is alternative, flexible and satisfies the degree-three identity, and its left multiplications form a monoid; the ${}^{\natural}$-product is $\mathbb{C}$-bilinear and has the left unit $1$ alone, and it fails associativity, the alternative identities, flexibility and the degree-three identity, as do the two sesquilinear products, which have no identity at all and whose left multiplications do not even form a monoid. Counterexamples are given in each case on the basis elements $e_0$, $e_1$, $e_2$, $e_3$ and on $ie_0$ and $ie_3$.</p>
+<p>Both products without the star are multiplications of a bilinear $\mathbb{C}$-algebra, and exactly one of them is a multiplication of an associative unital one, the general plain bilinear product: the ${}^{\natural}$-product is $\mathbb{C}$-bilinear but neither associative nor two-sidedly unital. Both products carrying the star are multiplications of a sesqualgebra over $\mathbb{C}$ with the conjugation. Among the two, the general plain sesquilinear product is the derived operation of $\mathbb{B}$ with its conjugate-linear involution and has $e_0$ as a right unit, and the general quaternionic sesquilinear product is neither. The identities that link the four general products are <em>Relations Between the Four General Products</em>, and the split of the general plain bilinear product into a symmetric and an antisymmetric half, with the Jordan and the Lie structure the halves carry, is <em>The 12 Products of the Biquaternion Complex Space</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>the four general products, defined in <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em></td>
+</tr>
+<tr>
+<td>$1=e_0$</td>
+<td>the unit of the algebra, fixed by ${}^{\natural}$ and by ${}^{*}$</td>
+</tr>
+<tr>
+<td>$e_1$, $e_2$, $e_3$</td>
+<td>the quaternion units, with $e_1^2=e_2^2=e_3^2=-e_0$</td>
+</tr>
+<tr>
+<td>$L_{\tilde P}$, $L^{\natural}_{\tilde P}$, $L^{*}_{\tilde P}$, $L^{\natural*}_{\tilde P}$</td>
+<td>the left multiplications of the four general products</td>
+</tr>
+<tr>
+<td>$\mathbf P$</td>
+<td>the vector part of $\tilde P=P_0+\mathbf P$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-four-general-products-of-the-biquaternion-c-space.md</code>), for the four definitions and their scalar–vector forms.</li>
+<li><em>Relations Between the Four General Products</em> (<code>articles_maths/relations-between-the-four-general-products.md</code>), for the identities that link the four general products and for the left multiplications.</li>
+<li><em>The 12 Products of the Biquaternion Complex Space</em> (<code>articles_maths/the-12-products-of-the-biquaternion-complex-space.md</code>), for the symmetric and the antisymmetric part of each of the four general products, and the Jordan and the Lie structure the two parts of the general plain bilinear product carry.</li>
+<li><em>The Six Subspaces and the Four General Products</em> (<code>articles_maths/the-six-subspaces-and-the-four-general-products.md</code>), for the four general products on the six distinguished subspaces, and for the Jordan and the Lie algebra each of the six carries and with which product.</li>
+<li><em>Introduction to the General Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.md</code>), for the sesquilinear reading of the general plain sesquilinear product and the algebra it defines.</li>
+<li><em>Sesqualgebras</em> (<code>articles_maths/sesqualgebras.md</code>), for the two scalar rules, the collapse theorem and the standard example that the sesquilinear row of the table tests.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

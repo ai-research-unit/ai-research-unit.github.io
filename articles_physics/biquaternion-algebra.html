@@ -53,7 +53,7 @@
         <h1 id="biquaternion-algebra"><strong>Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article is the algebraic foundation of the physics series. It defines the biquaternion algebra, its four conjugations, its six distinguished real subspaces, its three decompositions and its three quadratic forms, and it gives each structure its physical reading as it is introduced.</p>
-<p>The algebra is the same algebra as the one set down in <em>Biquaternion Algebra</em> in the mathematics corpus, and the conventions are the same. What is added here is the interpretation. The article is written for a reader who wants the algebraic skeleton and the physical reading on the same page, rather than the skeleton first and the reading several articles later.</p>
+<p>The algebra, its basis and its conventions are those of the mathematics corpus, whose biquaternion entries the physics series reads through <em>The Mathematical Study of Biquaternions</em>. What is added here is the interpretation. The article is written for a reader who wants the algebraic skeleton and the physical reading on the same page, rather than the skeleton first and the reading several articles later.</p>
 <p>The physical content enters through one identification and one only: the eight real parameters of an element are read as coordinates of spacetime. That dictionary is fixed in <em>Conventions in the Biquaternion Universe</em> and is repeated in the section <strong>Developed Form</strong> below. Everything else that is called physical in this article is a restatement of that dictionary in algebraic language.</p>
 <p>The algebra is stated and its properties are proved. The physical reading is an <strong>identification</strong>, not a derivation, and it is flagged as such wherever it occurs: the series does not claim that the algebra forces the interpretation.</p>
 <p>The six distinguished subspaces each have their own article in the <strong>Focus on Subspaces</strong> group of the series, where the basis and dimension, the algebra and module structure, the biquaternion norm, the matrix image and the intersections are worked out in full. The present article uses them throughout and points to the article concerned at each step.</p>
@@ -117,7 +117,7 @@ $$</p>
 $$</p>
 <p>The four coordinates $ct, x, y, z$ and the four coordinates $ct', x', y', z'$ are <strong>the same eight parameters in a different grouping</strong>, not two independent sets: the unprimed coordinates are the imaginary parts of the coefficients and the primed coordinates are the real parts. The material coordinate is the four-position of relativistic physics, written with the time coordinate $ict$ so that the Minkowski interval is carried by the biquaternion norm of the algebra; the informational coordinate is the same object read on the other sector. Primes always mark the informational end of the dictionary. <strong>No index is raised or lowered anywhere in the series</strong>, and no metric is used to move one: the $ict$ convention is what replaces that operation.</p>
 <h3 id="the-algebra-structure">The Algebra Structure</h3>
-<p>The algebra $\mathbb{B}$ is associative, non-commutative and unital, in both views. It is <strong>not a division algebra</strong>: it has zero divisors, and the study of them is the subject of <em>Biquaternion Zero Divisors</em>. In the physics of the series the zero divisors are not a pathology; they are the light cone, and the physical reading is worked out in <em>The Light Cone as the Biquaternion Zero Divisor Cone</em>.</p>
+<p>The algebra $\mathbb{B}$ is associative, non-commutative and unital, in both views. It is <strong>not a division algebra</strong>: it has zero divisors, and the study of them is the subject of <em>Biquaternion Zero Divisors</em>. In the physics of the series the zero divisors are not a pathology; they are the light cone, and the physical reading is worked out in <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>.</p>
 <p>The <strong>center</strong> is $\mathbb{C}$ in both views, with a subtlety worth naming. As a $\mathbb{C}$-algebra, the center is the scalar copy of $\mathbb{C}$ spanned by $e_0$: an element is central exactly when it commutes with every quaternion unit, and those are the $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{C}$. As an $\mathbb{R}$-algebra, the same center is a real vector space of dimension 2, spanned by $e_0$ and $ie_0$. It is the complex time sector of the series, and it carries both time coordinates of the dictionary and no spatial direction.</p>
 <h3 id="multiplication">Multiplication</h3>
 <p>The product of two biquaternions is defined by extending the quaternion product complex-linearly. In developed form,</p>
@@ -285,19 +285,19 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}$, the centre</td>
-<td><em>The Center Subspace $\mathbb{C}_{\mathbb{B}}$ as the Complex Time Sector</em></td>
+<td><em>The Four Other Remarkable Subspaces</em>, complex time sector</td>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B})$, the vector subspace</td>
-<td><em>The Vector Subspace $\mathrm{Vect}(\mathbb{B})$ as the Complex Space Sector</em></td>
+<td><em>The Four Other Remarkable Subspaces</em>, complex space sector</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$, the quaternion subspace</td>
-<td><em>The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$ as the Real Sector</em></td>
+<td><em>The Four Other Remarkable Subspaces</em>, real sector</td>
 </tr>
 <tr>
 <td>$i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace</td>
-<td><em>The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$ as the Imaginary Sector</em></td>
+<td><em>The Four Other Remarkable Subspaces</em>, imaginary sector</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$, the Hermitian subspace</td>
@@ -309,7 +309,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The relations between them are collected in <em>Relations Between Subspaces</em>, and the four conjugations themselves in <em>The Biquaternion Involution Lattice: Hermitian, Anti-Hermitian and Reversal</em>. What the present article uses of the six, again and again, is the following:</p>
+<p>The relations between them are collected in <em>Relations Between Subspaces</em>, and the four conjugations and their fixed spaces in <em>The Group of Involutions</em> and <em>Comparison of the Six Subspaces</em>. What the present article uses of the six, again and again, is the following:</p>
 <ul>
 <li>$\mathbb{C}_{\mathbb{B}}$ is the set of central elements, a copy of $\mathbb{C}$ embedded as the scalar part, $\{\lambda e_0 : \lambda \in \mathbb{C}\}$; physically the complex time sector, carrying both $ct'$ and $ict$ and no direction in space;</li>
 <li>$\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar-part functional, equivalently the derived subspace $[\mathbb{B},\mathbb{B}]$; physically the complex space sector, the three coordinates $x,y,z$ and their imaginary counterparts $ix',iy',iz'$;</li>
@@ -507,7 +507,7 @@ $$</p>
 <p>$$
 N\!\left(ct'\,e_0 + i\mathbf{x}'\right) = c^2(t')^2 - (\mathbf{x}')^2 .
 $$</p>
-<p>The vanishing of the biquaternion norm is the light cone: $N(ict\,e_0 + x e_1) = 0$ exactly when $x = \pm ct$, and the null material coordinates are the zero divisors of the algebra. The two signatures are worked out in <strong>The Two Real Restrictions</strong> below, and the physics of the zero divisors in <em>The Light Cone as the Biquaternion Zero Divisor Cone</em> and <em>Zero Divisors as a Physical Locus in Biquaternionic Form</em>.</p>
+<p>The vanishing of the biquaternion norm is the light cone: $N(ict\,e_0 + x e_1) = 0$ exactly when $x = \pm ct$, and the null material coordinates are the zero divisors of the algebra. The two signatures are worked out in <strong>The Two Real Restrictions</strong> below, and the physics of the zero divisors in <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em> and <em>Zero Divisors as a Physical Locus in Biquaternionic Form</em>.</p>
 <p><strong>Why multiplicativity matters.</strong> Because $N$ is multiplicative, an element of unit norm — a <strong>rotor</strong> — preserves the interval of every element it acts on. This is the single algebraic fact behind the rotor calculus of the series: the Lorentz transformations are the unit-norm elements acting on the material sector, and the four-position, the four-velocity and the four-momentum are all carried by the same action. The biquaternion norm is thus not a side object but the invariant of the theory.</p>
 <h3 id="the-hermitian-form">The Hermitian Form</h3>
 <p>The <strong>Hermitian form</strong> of a biquaternion is</p>

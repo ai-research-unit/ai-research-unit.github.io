@@ -202,16 +202,16 @@ $$</p>
 \langle U,U\rangle_{\natural} = \frac{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}{\rho^2} = \frac{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}} = 1 ,
 $$</p>
 <p>so $U$ lies in the algebra's analogue of the special linear group, and the whole content of the decomposition now sits in the split $U = B\hat{q}$.</p>
-<h3 id="the-square-root-of-math146">The Square Root of $UU^\dagger$</h3>
+<h3 id="the-square-root-of-math146">The Square Root of $UU^{*}$</h3>
 <p>Form the Hermitian element</p>
 <p>$$
-S = U U^{\dagger} .
+S = U U^{*} .
 $$</p>
-<p>It is Hermitian, since $S^\dagger = (UU^\dagger)^\dagger = UU^\dagger = S$, and it is positive definite, because in the matrix model $\Phi(S) = \Phi(U)\Phi(U)^\dagger$ is a positive definite Hermitian matrix whenever $\Phi(U)$ is invertible. Its biquaternion norm is</p>
+<p>It is Hermitian, since $S^{*} = (UU^{*})^{*} = UU^{*} = S$, and it is positive definite, because in the matrix model $\Phi(S) = \Phi(U)\Phi(U)^\dagger$ is a positive definite Hermitian matrix whenever $\Phi(U)$ is invertible. Its biquaternion norm is</p>
 <p>$$
-\langle S,S\rangle_{\natural} = \langle U,U\rangle_{\natural}\,\langle U^\dagger,U^\dagger\rangle_{\natural} = \langle U,U\rangle_{\natural}\,\langle U,U\rangle_{\natural}^{*} = 1 ,
+\langle S,S\rangle_{\natural} = \langle U,U\rangle_{\natural}\,\langle U^{*},U^{*}\rangle_{\natural} = \langle U,U\rangle_{\natural}\,\langle U,U\rangle_{\natural}^{*} = 1 ,
 $$</p>
-<p>using multiplicativity, the reality of $\langle U,U\rangle_{\natural} = 1$, and $\langle U^\dagger,U^\dagger\rangle_{\natural} = \langle U,U\rangle_{\natural}^*$.</p>
+<p>using multiplicativity, the reality of $\langle U,U\rangle_{\natural} = 1$, and $\langle U^{*},U^{*}\rangle_{\natural} = \langle U,U\rangle_{\natural}^*$.</p>
 <p>The element $S$ is not itself the boost. The boost is its Hermitian positive square root,</p>
 <p>$$
 B = \sqrt{S} , \qquad B^2 = S ,
@@ -249,7 +249,7 @@ $$</p>
 $$</p>
 <p>where $B^{-1} = B^{\natural}$ because $\langle B,B\rangle_{\natural} = 1$ and $BB^{\natural} = \langle B,B\rangle_{\natural}e_0 = e_0$. It is unitary in the matrix sense,</p>
 <p>$$
-\hat{q}\,\hat{q}^{\dagger} = B^{-1}UU^{\dagger}B^{-1} = B^{-1}S\,B^{-1} = B^{-1}B^2B^{-1} = e_0 ,
+\hat{q}\,\hat{q}^{*} = B^{-1}UU^{*}B^{-1} = B^{-1}S\,B^{-1} = B^{-1}B^2B^{-1} = e_0 ,
 $$</p>
 <p>using $S = B^2$ and the Hermitian character of $B$, which lets $B^{-1}$ pass through the product. So $\hat{q}$ is an element of the unitary group $U(2)$ in the matrix model.</p>
 <h3 id="why-it-is-a-real-quaternion">Why It Is a Real Quaternion</h3>
@@ -275,12 +275,12 @@ $$</p>
 $$</p>
 <p>Equivalently, $\tilde{Q} = \rho B\hat{q}$ with $\rho = re^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ the principal square root.</p>
 <h3 id="existence">Existence</h3>
-<p>The construction of the three preceding sections gives the factors: $\rho$ from the branch of the square root of the biquaternion norm, $U = \tilde{Q}/\rho$ of unit norm, $S = UU^\dagger$ Hermitian positive definite of norm one, $B = \sqrt{S}$ its unique Hermitian positive square root, and $\hat{q} = B^{-1}U$, which is unitary and of norm one, hence a unit real quaternion. The product reproduces the element,</p>
+<p>The construction of the three preceding sections gives the factors: $\rho$ from the branch of the square root of the biquaternion norm, $U = \tilde{Q}/\rho$ of unit norm, $S = UU^{*}$ Hermitian positive definite of norm one, $B = \sqrt{S}$ its unique Hermitian positive square root, and $\hat{q} = B^{-1}U$, which is unitary and of norm one, hence a unit real quaternion. The product reproduces the element,</p>
 <p>$$
 r\,e^{i\alpha}B\hat{q} = \rho\,B\left(B^{-1}U\right) = \rho U = \tilde{Q} .
 $$</p>
 <h3 id="uniqueness">Uniqueness</h3>
-<p>Suppose $\tilde{Q} = r e^{i\alpha}B\hat{q} = r'e^{i\alpha'}B'\hat{q}'$ with both quadruples admissible. Taking norms and using $\langle B\hat{q},B\hat{q}\rangle_{\natural} = \langle B,B\rangle_{\natural}\langle\hat{q},\hat{q}\rangle_{\natural} = 1$ gives $r^2e^{2i\alpha} = (r')^2e^{2i\alpha'}$, so the two principal square roots of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ agree, and since $r,r' > 0$ with $\alpha,\alpha'$ in the same half-open interval of length $\pi$, one has $r = r'$ and $\alpha = \alpha'$. Then $U = \tilde{Q}/\rho$ is the same element in both decompositions, so $UU^\dagger$ is the same, and its Hermitian positive square root is unique, so $B = B'$; then $\hat{q} = B^{-1}U = \hat{q}'$.</p>
+<p>Suppose $\tilde{Q} = r e^{i\alpha}B\hat{q} = r'e^{i\alpha'}B'\hat{q}'$ with both quadruples admissible. Taking norms and using $\langle B\hat{q},B\hat{q}\rangle_{\natural} = \langle B,B\rangle_{\natural}\langle\hat{q},\hat{q}\rangle_{\natural} = 1$ gives $r^2e^{2i\alpha} = (r')^2e^{2i\alpha'}$, so the two principal square roots of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ agree, and since $r,r' > 0$ with $\alpha,\alpha'$ in the same half-open interval of length $\pi$, one has $r = r'$ and $\alpha = \alpha'$. Then $U = \tilde{Q}/\rho$ is the same element in both decompositions, so $UU^{*}$ is the same, and its Hermitian positive square root is unique, so $B = B'$; then $\hat{q} = B^{-1}U = \hat{q}'$.</p>
 <h3 id="the-domain-and-the-light-cone">The Domain and the Light Cone</h3>
 <p>The theorem is stated on the complement of the null cone, $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0\}$, and that is exactly its domain: for $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor, the matrix $\Phi(\tilde{Q})$ is singular, and no factorisation of the stated shape exists, since the product of the four factors has norm $r^2\cdot1\cdot1\cdot1 = r^2 > 0$ while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$. The null cone is the algebra's light cone, and it is treated in the companion article on biquaternion zero divisors. Among the decompositions of this series it is the mildest possible failure: a single cone, of real codimension two in the eight-dimensional algebra, whereas the partial forms of the companion article fail on larger sets.</p>
 <p><strong>The condition of existence, in one line.</strong> The polar representation of $\tilde{Q}$ exists if and only if</p>
@@ -312,7 +312,7 @@ $$</p>
 <li>Compute the biquaternion norm $N = \sum_\mu Q_\mu^2 \in \mathbb{C}$.</li>
 <li>Take its principal square root: write $N = |N|e^{i\varphi}$ with $\varphi\in(-\pi,\pi]$, and put $\rho = \sqrt{|N|}e^{i\varphi/2}$, so that $r = \sqrt{|N|}$ and $\alpha = \varphi/2$.</li>
 <li>Put $U = \tilde{Q}/\rho$, of unit norm.</li>
-<li>Compute $S = UU^\dagger$, and write it as $\sigma e_0 + i\mathbf{w}$ with $\sigma\in\mathbb{R}$, $\mathbf{w}\in\mathbb{R}^3$; then put
+<li>Compute $S = UU^{*}$, and write it as $\sigma e_0 + i\mathbf{w}$ with $\sigma\in\mathbb{R}$, $\mathbf{w}\in\mathbb{R}^3$; then put
    $B = \sqrt{\frac{1+\sigma}{2}}\,e_0 + \frac{i\mathbf{w}}{\sqrt{2(1+\sigma)}}$, and read the rapidity and axis off by $\cosh\psi = \sigma$, $\hat{\mathbf{n}} = \mathbf{w}/|\mathbf{w}|$.</li>
 <li>Put $\hat{q} = B^{\natural}U$, and verify that its coefficients are real and that $\langle\hat{q},\hat{q}\rangle_{\natural} = 1$.</li>
 </ol>
@@ -333,7 +333,7 @@ $$</p>
 U_0 = 0.504639332+0.341657461i, \quad U_1 = 0.423148397-0.081490935i, \quad U_2 = 0.846296793-0.162981871i, \quad U_3 = 0 ,
 $$</p>
 <p>and $\langle U,U\rangle_{\natural} = 1$ as required.</p>
-<p><em>Step 4.</em> The Hermitian element $S = UU^\dagger$ is</p>
+<p><em>Step 4.</em> The Hermitian element $S = UU^{*}$ is</p>
 <p>$$
 S = 1.299867367\,e_0 - 0.371390676\,i\,e_1 - 0.742781353\,i\,e_2 ,
 $$</p>
@@ -419,7 +419,7 @@ $$</p>
 <p>$$
 \mathrm{H}_{\tilde{Q}}=r^{2}\,\mathrm{H}_{\tilde{\Lambda}},
 $$</p>
-<p>because the Hermitian conjugates of the factors are $\hat{q}^{\dagger}=\hat{q}^{-1}$, $B^{\dagger}=B$, $r^{\dagger}=r$ and $(e^{i\alpha})^{\dagger}=e^{-i\alpha}$, so the two central factors cancel against their inverses. The pattern of the four factors as operators is then forced by the bilinearity:</p>
+<p>because the Hermitian conjugates of the factors are $\hat{q}^{*}=\hat{q}^{-1}$, $B^{*}=B$, $r^{*}=r$ and $(e^{i\alpha})^{*}=e^{-i\alpha}$, so the two central factors cancel against their inverses. The pattern of the four factors as operators is then forced by the bilinearity:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -472,7 +472,7 @@ i = 1\cdot e^{i\pi/2}\cdot e_0\cdot e_0 ,
 $$</p>
 <p>which exhibits the phase factor at its extremal value. This element is the sharpest illustration of the point of the four factors: two of the three named representations of the companion article fail on it, since its vector part vanishes and its real quaternion part vanishes, while the representation is available and trivial.</p>
 <h3 id="the-real-quaternions">The Real Quaternions</h3>
-<p>If all four coefficients of $\tilde{Q}$ are real then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ is a positive real, so $\alpha = 0$ and $r = |\tilde{Q}|$ is the quaternion modulus of the companion article. The element $U = \tilde{Q}/r$ is a unit real quaternion, and $S = UU^\dagger = UU^{\natural} = e_0$, so $B = e_0$ and $\hat{q} = U$. The real quaternions therefore have no boost: their polar representation is the quaternion polar representation, and the two representations agree term by term.</p>
+<p>If all four coefficients of $\tilde{Q}$ are real then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ is a positive real, so $\alpha = 0$ and $r = |\tilde{Q}|$ is the quaternion modulus of the companion article. The element $U = \tilde{Q}/r$ is a unit real quaternion, and $S = UU^{*} = UU^{\natural} = e_0$, so $B = e_0$ and $\hat{q} = U$. The real quaternions therefore have no boost: their polar representation is the quaternion polar representation, and the two representations agree term by term.</p>
 <h3 id="the-null-elements">The Null Elements</h3>
 <p>If $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor and no decomposition exists, as shown in the section on the domain. The failure is not uniform in the structure of the element: for $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ the matrix $\Phi(\tilde{Q})$ has rank one, its columns span a minimal left ideal, and the element is a multiple of an idempotent; the companion article on biquaternion zero divisors treats the classification. What is relevant here is only that no product of the four factors can reproduce it, because the biquaternion norm of such a product is a positive real.</p>
 <h2 id="the-commutative-four-dimensional-alternative">The Commutative Four-Dimensional Alternative</h2>
@@ -540,7 +540,7 @@ $$</p>
 <td>the unit-norm part</td>
 </tr>
 <tr>
-<td>$S = UU^\dagger = \sigma e_0 + i\mathbf{w}$</td>
+<td>$S = UU^{*} = \sigma e_0 + i\mathbf{w}$</td>
 <td>the Hermitian positive element</td>
 </tr>
 <tr>
@@ -577,7 +577,7 @@ $$</p>
 <li><em>Quaternion Polar Element Representation</em> (<code>articles_maths/quaternion-polar-element-representation.md</code>), for the two-factor case that this decomposition restricts to on the real quaternions.</li>
 <li><em>Complex Polar Element Representation</em> (<code>articles_maths/complex-polar-element-representation.md</code>) and <em>Split-Complex Polar Element Representation</em> (<code>articles_maths/split-complex-polar-element-representation.md</code>), for the two-dimensional members of the series, where the trichotomy of the exponential is stated once and the slots are counted in the smallest cases.</li>
 <li><em>The 2×2 Matrix Element Representation of Biquaternions</em> (<code>articles_physics/the-2x2-matrix-element-representation-of-biquaternions.md</code>), for the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, the determinant, and the matrix polar decomposition.</li>
-<li><em>The Lorentz Group in Biquaternionic Form</em> (<code>articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md</code>), for the boost and rotation rotors and the Thomas-Wigner rotation.</li>
+<li><em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em> (<code>articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md</code>), for the boost and rotation rotors and the Thomas-Wigner rotation.</li>
 <li>S. J. Sangwine and E. Hitzer, "Polar decomposition of complexified quaternions and octonions", <em>Advances in Applied Clifford Algebras</em> (2020), DOI 10.1007/s00006-020-1048-y; technical report CES-535, University of Essex (2019), for the published two-exponential factorisation of the unit semi-norm elements and, in the general case, its Corollary 1 — whose trigonometric factor is the rotor $\hat{q}$ of this article and whose hyperbolic factor is the boost about the rotor-conjugated axis, $B = \hat{q}^{-1}H\hat{q}$ with the same rapidity and norm — for Lemma 1, the trichotomy of the exponential of a hypercomplex root of $-1$, $0$ or $+1$, and for the degenerate word on the null cone of the boundary subsection above. The order of the two non-central factors is reversed there, angle first, and the complex modulus is kept whole rather than split into a scale and a phase, which is the difference of count $2+3+3$ against $1+1+3+3$; the corpus fixes the branch and proves uniqueness, while the paper admits both orders.</li>
 <li>Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", <em>IEEE Transactions on Signal Processing</em> <strong>52</strong> (2004) 2012–2022, for the reduced biquaternion algebra — the commutative four-dimensional algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, equivalently the double-complex, tessarine or commutative hypercomplex algebra — and for its polar form, its uniqueness under the phase-range convention, its De Moivre theorem and the simplified polar form for colour images.</li>
 </ul>

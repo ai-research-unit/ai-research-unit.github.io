@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-celestial-sphere-of-the-null-cone-null-directions-chirality-and-the-phase"><strong>The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A massless element of the framework is an element of zero biquaternion norm, and its <strong>direction</strong> is the only datum its norm does not remove. The set of those directions is an object with a name and a long history in the relativity of the null cone: the <strong>celestial sphere</strong>. This article gathers the sphere, describes the two chiralities it carries, and records the reading that a massless element is a <strong>point of the celestial sphere together with a phase</strong>. It is deliberately short, because most of the machinery it uses is owned elsewhere: the Hopf bundle and its winding numbers belong to <em>The Hopf Fibration and the Biquaternion Gauge Bundle</em>, the metric geometry of the sphere to <em>The Fubini–Study Geometry and the Biquaternion Norm</em>, the little group and the helicity weights to <em>The Spinor-Helicity Formalism and Biquaternions</em>, and the photon's nullity to <em>The Photon as a Null Element</em>. What this article owns is the <strong>sphere of directions of the null cone</strong> — its definition inside the algebra, its two chiralities, and the sentence that says what a massless element physically is.</p>
+<h2 id="the-null-cone-of-the-algebra">The Null Cone of the Algebra</h2>
+<p>The null cone is the zero set of the biquaternion norm,</p>
+<p>$$
+N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0,
+$$</p>
+<p>and its nonzero elements are exactly the <strong>zero divisors</strong> of the algebra, the elements whose matrix image $\Phi(\tilde{Q})$ has rank one. On the material sector $\mathbb{M}_-$, with $\tilde{Q} = ict\,e_0 + \mathbf{x}$, the norm is the interval,</p>
+<p>$$
+N(\tilde{Q}) = -c^2t^2 + |\mathbf{x}|^2,
+$$</p>
+<p>so the null cone of the algebra restricts to the <strong>light cone</strong> of the material sector, and its nonzero elements are the lightlike four-vectors. The cone is a real three-dimensional cone in the four real dimensions of the sector; it has a single point at the origin and is otherwise regular, and its nonzero elements are the lightlike directions of the material geometry.</p>
+<h2 id="the-projective-null-cone-the-celestial-sphere">The Projective Null Cone: the Celestial Sphere</h2>
+<p>The cone is a cone over its own directions. Two nonzero null elements define the <strong>same direction</strong> when one is a nonzero scalar multiple of the other; the set of directions is the <strong>projectivisation</strong> of the null cone, and on the material sector it is a two-dimensional sphere,</p>
+<p>$$
+\mathcal{C} \;=\; \bigl\{\text{null directions of }\mathbb{M}_-\bigr\} \;\cong\; S^2,
+$$</p>
+<p>which is the <strong>celestial sphere</strong> of the light cone: the sphere of lightlike directions at a point, the sphere a photon's momentum points along, swept by the two angles $(\theta,\varphi)$. The Lorentz group acts on it transitively: the future lightlike directions form one orbit of the proper orthochronous Lorentz group, the past directions the other, and time reversal exchanges the two. No direction is preferred, which is the statement that the sphere is a single orbit. A <strong>massless element</strong> is determined by its direction and its scale, and the scale is not a Lorentz datum of the direction; so the sphere, and not the cone, is the Lorentz-homogeneous object.</p>
+<h2 id="the-two-chiralities-the-segre-quadric">The Two Chiralities: the Segre Quadric</h2>
+<p>Over the complex numbers the cone has a second structure, and it is the one the spinors see. Complexifying, the null cone of the biquaternion algebra is a complex three-dimensional cone in $\mathbb{B}\cong\mathbb{C}^4$, and its projectivisation is a <strong>quadric in the projective three-space</strong>, the <strong>Segre quadric</strong></p>
+<p>$$
+\mathbb{P}^1\times\mathbb{P}^1 \;\subset\; \mathbb{P}^3,
+$$</p>
+<p>whose two rulings are the two families of chiral spinor lines. This is the projective null cone the corpus records in <em>The Null Quadric and Its Projective Geometry</em>, and it is the object the twistor article compares with twistor space: the quadric is a product of two complex projective lines, the two <strong>chiral celestial spheres</strong>, and the two rulings are the primed and the unprimed spinor families. The relation between the two pictures is a real slice: the two chiral spheres of the complex cone are complex conjugates of one another, and the real celestial sphere of the material sector is their diagonal, the fixed set of the conjugation. So the real sphere $S^2$ is one sphere and the complex cone carries two, and the pair of them, not the one, is what the complexified cone projectivises to. The complex cone comes with a circle bundle of its own: its <strong>link</strong> in the unit sphere is an $S^1$-bundle over the pair of chiral spheres,</p>
+<p>$$
+S^1 \;\longrightarrow\; L \;\longrightarrow\; S^2\times S^2,
+$$</p>
+<p>so that over the complexified cone the phase is a circle over the two spheres together, as <em>The Topology of the Zero-Divisor Cone</em> records, whereas over the real sphere the phase is the circle of the Hopf fibration below.</p>
+<h2 id="the-spinor-coordinates">The Spinor Coordinates</h2>
+<p>The sphere and the spinors are the same object in two coordinates. A null element of the material sector, carried to the informational sector by the central rotation and read as a Hermitian element, is a rank-one Hermitian element, and every such element is a product of a spinor with its conjugate,</p>
+<p>$$
+\tilde{\Pi}_\xi = \xi\,\xi^{\dagger}, \qquad \xi \in \mathbb{C}^2,
+$$</p>
+<p>with $\tilde{\Pi}_\xi$ of rank one exactly when $\xi\neq0$, and idempotent when $\xi$ is normalised. The <strong>direction</strong> of $\tilde{\Pi}_\xi$ depends on the spinor only through its <strong>ray</strong>: replacing $\xi$ by $e^{i\alpha}\xi$ multiplies $\xi\xi^{\dagger}$ by $e^{i\alpha}e^{-i\alpha} = 1$ and leaves the element unchanged, so the direction is a <strong>spinor up to a phase</strong>, and</p>
+<p>$$
+\mathcal{C} \;\cong\; \mathbb{C}\mathbb{P}^1 \;\cong\; S^2.
+$$</p>
+<p>This is the standard identification of the Riemann sphere with the celestial sphere: the spinor $\xi$ is a pair of complex numbers, its ray is a point of $\mathbb{C}\mathbb{P}^1$, and the transition between the two presentations is the stereographic projection of the sphere. The metric the sphere carries in this presentation, and the transition probability between two of its rays, are <em>The Fubini–Study Geometry and the Biquaternion Norm</em>; this article records only the identification of the object.</p>
+<h2 id="the-little-group-and-the-phase">The Little Group and the Phase</h2>
+<p>A null direction is fixed by a subgroup of the Lorentz group, its <strong>little group</strong>, and the little group is what attaches the phase to the point. On the spinor $\xi$ the direction is invariant under the phase $\xi\mapsto e^{i\alpha}\xi$, which is the compact $U(1)$ part of the little group; a massless field of <strong>helicity</strong> $h$ transforms under that phase by</p>
+<p>$$
+\xi \;\longmapsto\; e^{i\alpha}\xi, \qquad \text{the field} \;\longmapsto\; e^{i h\alpha}\,\text{the field},
+$$</p>
+<p>so the helicity is the <strong>weight</strong> of the central $U(1)$ carried at the point of the sphere. The full statement of the little group, the two helicities of the photon and the weights of the massless amplitudes, are <em>The Spinor-Helicity Formalism and Biquaternions</em>; the bundle the phase describes, the unit spinors over the sphere with fibre a circle, is the Hopf fibration of the algebra, and it is <em>The Hopf Fibration and the Biquaternion Gauge Bundle</em>. What the celestial sphere supplies here is only the <strong>base</strong>: the point of $S^2$ at which the phase sits.</p>
+<h2 id="the-reading">The Reading</h2>
+<p>The reading is one sentence and it is the reason the sphere is worth naming. <strong>A massless element is a point of the celestial sphere together with a phase</strong>: the point is its direction, the phase is the little-group $U(1)$ the helicity weights, and the norm — which is zero — has removed only the scale. Read physically, the sphere is the <strong>sky of a photon</strong>: the direction of propagation is a point of $S^2$, the two helicities are the two weights of the phase over that point, and the transitive action of the Lorentz group on the sphere is the statement that no direction is preferred. The two chiralities make the statement spinorial: the complexified sphere is the product of the two chiral spheres, and a massless field of definite chirality lives on one of the two rulings while the real, physical directions are the diagonal on which the two are conjugate.</p>
+<p>The reading also fixes the boundary of the object. The sphere is the set of <strong>directions</strong> and not of momenta: it carries no scale, and the norm that would give the scale vanishes on all of it. It carries no dynamics: the helicity is a weight, and a weight is a representation datum and not an equation of motion. And it is the <strong>real</strong> light cone's sphere when the physics is the real light cone; the two chiral spheres belong to the complexified cone, and the real diagonal of the pair is the physical sphere. A reader who wants the metric, the bundle or the little group is sent to the three articles that own them; a reader who wants the object and its name has it here.</p>
+<h2 id="what-the-reading-does-not-claim">What the Reading Does Not Claim</h2>
+<ul>
+<li>It does <strong>not</strong> claim that the celestial sphere is something the biquaternion algebra adds to relativity. The sphere of lightlike directions is standard, and it is met by every four-dimensional treatment of the null cone; the article records its place in the algebra and not a new result.</li>
+<li>It does <strong>not</strong> claim that the sphere derives the massless condition. The cone marks the massless shell and does not choose it, as <em>The Photon as a Null Element</em> records; the sphere is the geometry of the marking, not a derivation of it.</li>
+<li>It does <strong>not</strong> own the metric, the bundle or the little group. The Fubini–Study line element, the Hopf fibration with its winding numbers, and the helicity weights are delegated by name in the text.</li>
+<li>It does <strong>not</strong> claim that the direction datum and the phase are independent in every representation. The spinor presentation ties them — the direction is the ray and the phase is the remaining freedom of the representative — and the article states the tie rather than a product decomposition.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The null cone of the biquaternion norm is the zero-divisor cone, and on the material sector it is the light cone. Its <strong>directions</strong>, the null elements up to scale, form the <strong>celestial sphere</strong> $\mathcal{C}\cong S^2$, the sphere of lightlike directions. Complexified, the projective null cone is the <strong>Segre quadric</strong> $\mathbb{P}^1\times\mathbb{P}^1$, the product of the two <strong>chiral celestial spheres</strong>, whose real diagonal is the physical sphere; the two rulings are the two chiral spinor families. In spinor coordinates a null Hermitian element is $\tilde{\Pi}_\xi = \xi\xi^{\dagger}$, its direction is the <strong>ray</strong> of $\xi$, and the sphere is $\mathbb{C}\mathbb{P}^1$, with the metric and the transition probability delegated to the Fubini–Study article. The little group of a direction is a $U(1)$ phase, the <strong>helicity</strong> is the weight of that phase, and the bundle it describes is the Hopf fibration of the algebra. The reading is that <strong>a massless element is a point of the celestial sphere together with a phase</strong>: the point is the direction, the phase is the helicity's $U(1)$, and the norm, being zero, has removed only the scale.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
+<td>the biquaternion norm; $N=0$ is the null cone</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>the material sector, $\tilde{Q} = ict\,e_0 + \mathbf{x}$</td>
+</tr>
+<tr>
+<td>$\mathcal{C} \cong S^2$</td>
+<td>the celestial sphere, the null directions up to scale</td>
+</tr>
+<tr>
+<td>$\mathbb{P}^1\times\mathbb{P}^1$</td>
+<td>the Segre quadric, the projective complex null cone, the two chiral spheres</td>
+</tr>
+<tr>
+<td>$\xi \in \mathbb{C}^2$</td>
+<td>the spinor; the direction is its ray, $\xi\mapsto e^{i\alpha}\xi$</td>
+</tr>
+<tr>
+<td>$\tilde{\Pi}_\xi = \xi\xi^{\dagger}$</td>
+<td>a null Hermitian element of rank one; idempotent for unit $\xi$</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>the helicity, the weight of the little-group $U(1)$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\mathbb{P}^1 \cong S^2$</td>
+<td>the sphere in spinor coordinates</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Spinor-Helicity Formalism and Biquaternions</em> — the massless momentum as a zero divisor, rank one as factorisability, the little group and the helicity weights.</li>
+<li><em>The Hopf Fibration and the Biquaternion Gauge Bundle</em> — the unit spinors over the sphere, the Hopf map and its winding numbers.</li>
+<li><em>The Fubini–Study Geometry and the Biquaternion Norm</em> — the metric of the projective line and the transition probability of the pure states.</li>
+<li><em>The Photon as a Null Element: What the Cone Derives and What It Does Not</em> — the massless shell as the zero-divisor cone and the limits of the derivation.</li>
+<li><em>The Central Rotation: Phase, Duality and the Wick Rotation as One Generator</em> — the central imaginary that carries a material element to the informational sector, where the rank-one Hermitian element lives.</li>
+<li><em>Twistor Theory and Biquaternions</em> — the projective null cone, the Segre quadric and the comparison with twistor space.</li>
+<li><em>The Null Quadric and Its Projective Geometry</em> (mathematics) — the Segre embedding, the quadric $\mathbb{P}^1\times\mathbb{P}^1$, the two rulings and the automorphism group.</li>
+<li><em>The Topology of the Zero-Divisor Cone</em> (mathematics) — the link of the cone as an $S^1$-bundle over the projectivised cone $S^2\times S^2$.</li>
+<li><em>Biquaternion Rotations and Lorentz Transformations</em> — the Lorentz action on the lightlike directions and the null cone.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

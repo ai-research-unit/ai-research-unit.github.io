@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Six Subspaces and the Four Algebraic Norms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-six-subspaces-and-the-four-algebraic-norms"><strong>The Six Subspaces and the Four Algebraic Norms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The four <strong>algebraic norms</strong> of <em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em>, $B$, $N$, $H$ and $K$, are the diagonals of the four general forms, and each of them is read on each of the six distinguished subspaces of <em>Introduction to the Six Subspaces</em> — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$. This article carries out that reading, one subspace to a section, and states for each subspace what each of the four algebraic norms becomes there and what its signature over $\mathbb{R}$ is.</p>
+<p>The rule is the same on every subspace and needs no proof beyond the definition. The <strong>algebraic norm</strong> of a form is its diagonal, and the diagonal of a restriction is the restriction of the diagonal: for a subspace $U$ and a form $\varphi$,</p>
+<p>$$
+\varphi|_{U}(\tilde Q)=\varphi(\tilde Q,\tilde Q)=\varphi(\tilde Q)\big|_{\tilde Q\in U},
+$$</p>
+<p>so that the algebraic norm on $U$ is the algebraic norm of the ambient space read on the elements of $U$. The value of the algebraic norm on $U$ is therefore read off the coordinates of the element of $U$, and its <strong>signature over $\mathbb{R}$</strong> is the signature of the symmetric real bilinear form obtained from the polarisation of the restriction, on any real basis of $U$. The four algebraic norms are the same four functions everywhere; the six subspaces differ in the coordinate form they impose, and it is that which specialises the four.</p>
+<p>The two tables below are the summary, and the six sections after them are the detail. The restriction table gives the value of each of the four algebraic norms on a general element of each subspace; the signature table gives the signature over $\mathbb{R}$ of each.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>element</th>
+<th>$B$</th>
+<th>$N$</th>
+<th>$H$</th>
+<th>$K$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\tilde Q=Ae_0$</td>
+<td>$A^{2}$</td>
+<td>$A^{2}$</td>
+<td>$\lvert A\rvert^{2}$</td>
+<td>$\lvert A\rvert^{2}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\tilde Q=\sum_kP_ke_k$</td>
+<td>$-\sum_kP_k^{2}$</td>
+<td>$\sum_kP_k^{2}$</td>
+<td>$\sum_k\lvert P_k\rvert^{2}$</td>
+<td>$-\sum_k\lvert P_k\rvert^{2}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\tilde Q=h=\sum_\mu h_\mu e_\mu$, $h_\mu\in\mathbb{R}$</td>
+<td>$h_0^{2}-\sum_kh_k^{2}$</td>
+<td>$\sum_\mu h_\mu^{2}$</td>
+<td>$\sum_\mu h_\mu^{2}$</td>
+<td>$h_0^{2}-\sum_kh_k^{2}$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\tilde Q=ih$</td>
+<td>$-h_0^{2}+\sum_kh_k^{2}$</td>
+<td>$-\sum_\mu h_\mu^{2}$</td>
+<td>$\sum_\mu h_\mu^{2}$</td>
+<td>$h_0^{2}-\sum_kh_k^{2}$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$\tilde Q=a_0e_0+i\mathbf p$, $a_0\in\mathbb{R}$</td>
+<td>$a_0^{2}+(\mathbf p,\mathbf p)$</td>
+<td>$a_0^{2}-(\mathbf p,\mathbf p)$</td>
+<td>$a_0^{2}+(\mathbf p,\mathbf p)$</td>
+<td>$a_0^{2}-(\mathbf p,\mathbf p)$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$\tilde Q=ib_0e_0+\mathbf q$, $b_0\in\mathbb{R}$</td>
+<td>$-b_0^{2}-(\mathbf q,\mathbf q)$</td>
+<td>$-b_0^{2}+(\mathbf q,\mathbf q)$</td>
+<td>$b_0^{2}+(\mathbf q,\mathbf q)$</td>
+<td>$b_0^{2}-(\mathbf q,\mathbf q)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Reading each restriction as a real quadratic form, the signatures are these.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>$B$</th>
+<th>$N$</th>
+<th>$H$</th>
+<th>$K$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$2$</td>
+<td>$(1,1)$</td>
+<td>$(1,1)$</td>
+<td>$(2,0)$</td>
+<td>$(2,0)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$6$</td>
+<td>$(3,3)$</td>
+<td>$(3,3)$</td>
+<td>$(6,0)$</td>
+<td>$(0,6)$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$4$</td>
+<td>$(1,3)$</td>
+<td>$(4,0)$</td>
+<td>$(4,0)$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$4$</td>
+<td>$(3,1)$</td>
+<td>$(0,4)$</td>
+<td>$(4,0)$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$4$</td>
+<td>$(4,0)$</td>
+<td>$(1,3)$</td>
+<td>$(4,0)$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$4$</td>
+<td>$(0,4)$</td>
+<td>$(3,1)$</td>
+<td>$(4,0)$</td>
+<td>$(1,3)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="notational-conventions">Notational Conventions</h2>
+<p>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=c+v$ with $c=Q_0e_0\in\mathbb{C}_{\mathbb{B}}$ and $v=\sum_{k=1}^{3}Q_ke_k\in\mathrm{Vect}(\mathbb{B})$. The scalar part is $\mathrm{Sc}$, the coefficientwise conjugation is $\bar{\cdot}$, the natural conjugation is ${}^{\natural}$, with $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The sign vector is $\varepsilon=(1,-1,-1,-1)$, and $\mathbb{B}$ is identified with $\mathbb{C}^{4}$ by $\tilde Q\mapsto(Q_0,Q_1,Q_2,Q_3)$. The vector parts carry the complex bilinear dot product $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$ and the cross product $\mathbf P\times\mathbf Q$.</p>
+<p>The four general forms are the four pairings of <em>Conventions in the Biquaternion Universe</em>, written with the one bracket $\langle\cdot,\cdot\rangle$ whose subscript records the pair $(a,b)$:</p>
+<p>$$
+B(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu,
+\qquad
+N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\sum_\mu P_\mu Q_\mu,
+$$
+$$
+H(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu},
+\qquad
+K(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu},
+$$</p>
+<p>and the four <strong>algebraic norms</strong> are their diagonals,</p>
+<p>$$
+B(\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^{2},\qquad
+N(\tilde Q)=\sum_\mu Q_\mu^{2},\qquad
+H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2},\qquad
+K(\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}.
+$$</p>
+<p>$B$ is the general plain bilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle$, $N$ the general quaternionic bilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle_{\natural}$, $H$ the general plain sesquilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle_{*}$ and $K$ the general quaternionic sesquilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle_{\natural*}$; the names, the bracket and the pair of each are the convention of <em>Conventions in the Biquaternion Universe</em>, and the four are defined in <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>, which also counts them, and separated, as the diagonals of those forms, in <em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em>. $H$ is also the Hermitian algebraic norm and $K$ the Krein algebraic norm. The Euclidean norm is $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$, the square root of $H$ and the unique topological norm of the space.</p>
+<p>The six subspaces and their real bases are those of <em>Introduction to the Six Subspaces</em>, and are used here in the coordinate form that article gives: the centre $\mathbb{C}_{\mathbb{B}}=\{Ae_0:A\in\mathbb{C}\}$, of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})=\{\sum_kP_ke_k:P_k\in\mathbb{C}\}$, of real dimension six; the quaternion subspace $\mathbb{H}_{\mathbb{B}}=\{\sum_\mu h_\mu e_\mu:h_\mu\in\mathbb{R}\}$ and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}=\{ih:h\in\mathbb{H}_{\mathbb{B}}\}$, of real dimension four; and the Hermitian subspace $\mathbb{M}_+=\{a_0e_0+i\mathbf p:a_0\in\mathbb{R},\ \mathbf p\ \text{real}\}$ and the anti-Hermitian subspace $\mathbb{M}_-=\{ib_0e_0+\mathbf q:b_0\in\mathbb{R},\ \mathbf q\ \text{real}\}$, of real dimension four. A signature $(p,q)$ over $\mathbb{R}$ counts $p$ positive and $q$ negative squares of the real quadratic form; it is definite when one of the two numbers is zero and indefinite otherwise.</p>
+<h2 id="the-centre-subspace">The Centre Subspace</h2>
+<p><strong>On the centre the four algebraic norms collapse to two, $B=N=A^{2}$ and $H=K=\lvert A\rvert^{2}$.</strong> An element of the centre is $\tilde Q=Ae_0$ with $A=a+ib$ complex, and its only nonzero coordinate is $Q_0=A$. Every one of the four sums therefore reduces to its $0$-th term, $\varepsilon_0=1$ and $\overline{A}$ in place of $A$ for the two sesquilinear ones, so that</p>
+<p>$$
+B(Ae_0)=A^{2},\qquad N(Ae_0)=A^{2},\qquad H(Ae_0)=\lvert A\rvert^{2},\qquad K(Ae_0)=\lvert A\rvert^{2}.
+$$</p>
+<p>On the real basis $e_0,ie_0$ the pairs $B$ and $N$ are the complex square $A^{2}=(a^{2}-b^{2})+2iab$, of signature $(1,1)$, and the pairs $H$ and $K$ are the positive definite $\lvert A\rvert^{2}=a^{2}+b^{2}$, of signature $(2,0)$. The centre is the only subspace of the six on which $K$ is positive definite.</p>
+<h2 id="the-vector-subspace">The Vector Subspace</h2>
+<p><strong>On the vector subspace the two bilinear algebraic norms are opposite, $B=-N$, and the two sesquilinear ones are opposite, $K=-H$.</strong> An element is $\tilde Q=\sum_kP_ke_k$, with no scalar coordinate, so that the four sums run over $k=1,2,3$ alone and the sign $\varepsilon_k=-1$ of the bilinear ones enters with full force,</p>
+<p>$$
+B=-\sum_kP_k^{2},\qquad N=\sum_kP_k^{2},\qquad H=\sum_k\lvert P_k\rvert^{2},\qquad K=-\sum_k\lvert P_k\rvert^{2}.
+$$</p>
+<p>On the real basis $e_k$ and $ie_k$ the form $H$ is the positive sum of the six squares, of signature $(6,0)$, and $K$ its negative, of signature $(0,6)$, the only subspace of the six on which $K$ is negative definite. The complex squares $P_k^{2}$ split into $p_k^{2}-q_k^{2}$ on the real parts and the imaginary parts, so that $B$ and $N=-B$ are of signature $(3,3)$. The vector subspace is thus the mirror in which the sign vector $\varepsilon$ has its sharpest effect, the two bilinear algebraic norms and the two sesquilinear ones each being negatives of one another.</p>
+<h2 id="the-quaternion-subspace">The Quaternion Subspace</h2>
+<p><strong>On the quaternion subspace the two sesquilinear algebraic norms coincide with the two bilinear ones, $H=N$ and $K=B$, and the values are real.</strong> An element is $h=\sum_\mu h_\mu e_\mu$ with all $h_\mu$ real, so that the coefficientwise conjugation is the identity and</p>
+<p>$$
+B(h)=h_0^{2}-\sum_kh_k^{2},\qquad N(h)=\sum_\mu h_\mu^{2},\qquad H(h)=\sum_\mu h_\mu^{2},\qquad K(h)=h_0^{2}-\sum_kh_k^{2}.
+$$</p>
+<p>Because $H$ and $N$ are equal and $K$ and $B$ are equal, the four algebraic norms are the two, and both pairs are already real on this subspace. $N=H$ is the sum of the four squares, of signature $(4,0)$: the quaternion subspace is the one subspace of the six of dimension four on which the multiplicative algebraic norm $N$ is positive definite, and it is the subspace on which the multiplicative and the definite senses of the norm meet, as they do on $\mathbb{H}$ itself. $B=K$ is the Lorentzian form $h_0^{2}-\sum_kh_k^{2}$, of signature $(1,3)$, the form of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<h2 id="the-anti-quaternion-subspace">The Anti-Quaternion Subspace</h2>
+<p><strong>On the anti-quaternion subspace the bilinear algebraic norms change sign against the quaternion subspace, $B$ and $N$ both, while $H$ and $K$ do not.</strong> An element is $\tilde Q=ih$ with $h$ real, so that $Q_\mu=ih_\mu$ and the squares $Q_\mu^{2}=-h_\mu^{2}$ while the moduli $\lvert Q_\mu\rvert^{2}=h_\mu^{2}$ stay unchanged,</p>
+<p>$$
+B(ih)=-h_0^{2}+\sum_kh_k^{2},\qquad N(ih)=-\sum_\mu h_\mu^{2},\qquad H(ih)=\sum_\mu h_\mu^{2},\qquad K(ih)=h_0^{2}-\sum_kh_k^{2}.
+$$</p>
+<p>The Euclidean square $H$ is untouched by the translation by $i$, of signature $(4,0)$; the two sesquilinear algebraic norms are unchanged, $H(ih)=H(h)$ and $K(ih)=K(h)$; and the two bilinear algebraic norms are negated, $B(ih)=-B(h)$ and $N(ih)=-N(h)$, so that $N$ becomes $-H$, of signature $(0,4)$, and $B$ becomes $-K$, of signature $(3,1)$. The anti-quaternion subspace is the imaginary translate of the quaternion subspace, and the effect of the translation is precisely the sign that separates the complex bilinear algebraic norm $N$ from the topological one: on $\mathbb{H}_{\mathbb{B}}$, $N=\lVert\cdot\rVert_E^{2}$, and on $i\mathbb{H}_{\mathbb{B}}$, $N=-\lVert\cdot\rVert_E^{2}$. That sign is what makes $N$ definite on each of the two real forms, positive on the one and negative on the other, while $N$ is indefinite on the whole algebra.</p>
+<h2 id="the-hermitian-subspace">The Hermitian Subspace</h2>
+<p><strong>On the Hermitian subspace the general plain bilinear algebraic norm coincides with the general plain sesquilinear one, $B=H$, and the general quaternionic bilinear with the general quaternionic sesquilinear, $N=K$.</strong> An element is $\tilde Q=a_0e_0+i\mathbf p$ with $a_0$ real and $\mathbf p$ a real vector, so that $Q_0=a_0$ is real and $Q_k=ip_k$ is purely imaginary: the products $Q_0^{2}=a_0^{2}$ and $Q_k^{2}=-p_k^{2}$ give</p>
+<p>$$
+B=a_0^{2}+(\mathbf p,\mathbf p),\qquad N=a_0^{2}-(\mathbf p,\mathbf p),\qquad H=a_0^{2}+(\mathbf p,\mathbf p),\qquad K=a_0^{2}-(\mathbf p,\mathbf p).
+$$</p>
+<p>On this subspace the effect of the sign vector $\varepsilon$ is cancelled by the effect of the central imaginary unit: the sign $\varepsilon_k=-1$ of the bilinear sums composes with the sign $i^{2}=-1$ of the imaginary coordinates to give a net $+1$, so that the two bilinear algebraic norms take the same values as the two sesquilinear ones, $B=H$ and $N=K$. The pair $B=H$ is the positive sum of the four squares, of signature $(4,0)$, and the pair $N=K$ is the form $a_0^{2}-(\mathbf p,\mathbf p)$, of signature $(1,3)$, indefinite. On the Hermitian subspace the two bilinear algebraic norms coincide with the two sesquilinear ones, and the coincidence is exact rather than up to sign; it is this coincidence that makes the four algebraic norms fall to the two real forms there, and it does not make the multiplicative algebraic norm definite. $N$ is indefinite on $\mathbb{M}_+$, of signature $(1,3)$; the definite one is $H$, of signature $(4,0)$, the Euclidean square.</p>
+<h2 id="the-anti-hermitian-subspace">The Anti-Hermitian Subspace</h2>
+<p><strong>On the anti-Hermitian subspace the two bilinear algebraic norms are the negative of the two on the Hermitian subspace, and the two sesquilinear ones agree with it.</strong> An element is $\tilde Q=ib_0e_0+\mathbf q$ with $b_0$ real and $\mathbf q$ a real vector, so that $Q_0=ib_0$ is purely imaginary and $Q_k=q_k$ is real:</p>
+<p>$$
+B=-b_0^{2}-(\mathbf q,\mathbf q),\qquad N=-b_0^{2}+(\mathbf q,\mathbf q),\qquad H=b_0^{2}+(\mathbf q,\mathbf q),\qquad K=b_0^{2}-(\mathbf q,\mathbf q).
+$$</p>
+<p>The Euclidean square $H$ and the Krein algebraic norm $K$ are the same as on the Hermitian subspace, because the passage from $\mathbb{M}_+$ to $\mathbb{M}_-$ replaces the imaginary vector $\mathbf p$ by the real vector $\mathbf q$ and the real $a_0$ by the imaginary $ib_0$, an exchange that touches the bilinear algebraic norms and not the sesquilinear ones. So $H$ is positive definite of signature $(4,0)$, unchanged, and $K=b_0^{2}-(\mathbf q,\mathbf q)$ is the Lorentzian form of signature $(1,3)$, unchanged; while $B=-H$ is negative definite, of signature $(0,4)$, and $N=-K$ is of signature $(3,1)$. The material sector is this subspace, and the section below reads it.</p>
+<h2 id="the-material-reading">The Material Reading</h2>
+<p><strong>Remark (the material reading).</strong> Restricted to the material sector $\mathbb{M}_-$ the four algebraic norms read</p>
+<p>$$
+K=b_0^{2}-(\mathbf q,\mathbf q),\qquad N=-b_0^{2}+(\mathbf q,\mathbf q),\qquad H=b_0^{2}+(\mathbf q,\mathbf q),\qquad B=-b_0^{2}-(\mathbf q,\mathbf q),
+$$</p>
+<p>so that $N=-K$ and $B=-H$ there: the interval $N$ of signature $(3,1)$ and its negative $K$ of signature $(1,3)$, the Euclidean square $H$ of signature $(4,0)$ and its negative. The passage from the interval to the Euclidean square is the passage between $N$ and $H$, and it is the single sign the Hermitian conjugation inserts in the second slot; the passage between $K$ and $N$ is the sign the natural conjugation inserts in the first. On the material sector the pair is the Minkowski form and the Euclidean one that the physics part of the corpus reads as the metric of the biquaternion universe, and it is here that the four algebraic norms acquire the two forms — the interval and the Euclidean square — that the physical readings of <em>The Anti-Hermitian Subspace M- as the Material Sector</em> and <em>The Hermitian Subspace M+ as the Informational Sector</em> carry.</p>
+<h2 id="what-the-six-subspaces-separate">What the Six Subspaces Separate</h2>
+<p>The six subspaces separate the four algebraic norms in a way that no single one of them does on the whole algebra. On $\mathbb{B}$ no algebraic norm is both definite and multiplicative, and $N$ and $H$ are two different functions; on the quaternion subspace the two functions become one, $N=H$, and on the anti-quaternion subspace they become opposite, $N=-H$, the one subspace being the imaginary translate of the other. The coincidence of the quaternion subspace, and its failure on the other four subspaces, is the content of the real-form caution of <em>The 12 Products of the Biquaternion Complex Space</em> read on the diagonal and on the six.</p>
+<p>Three facts summarise the separation. Only $H$ is definite on every one of the six; $N$ is definite on exactly two of them, positive on the quaternion subspace and negative on its imaginary translate; $B$ is definite on exactly two, the two sectors, with exchanged signs; and $K$ is definite on exactly two, the centre and the vector subspace, where it is the positive definite form and its negative. The four algebraic norms are thus definite on the whole algebra only for $H$; each of the other three is definite on a proper pair of subspaces, and the six subspaces are the places where the pair is read.</p>
+<p>The same facts are read in the four algebraic norms of <em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em> and in the four pairings of <em>The Four Pairings of the Biquaternion Algebra</em>; the restrictions to the six subspaces are the same object read on the six, and the tables above and the four pairings' own restriction tables agree cell by cell.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The four algebraic norms are the same four functions on the whole algebra and on each of the six subspaces.</strong> On the centre they collapse to two, $B=N=A^{2}$ and $H=K=\lvert A\rvert^{2}$; on the vector subspace the two bilinear ones are opposites, $B=-N$, and the two sesquilinear ones are opposites, $K=-H$; on the quaternion subspace the two sesquilinear ones coincide with the two bilinear ones, $H=N$ and $K=B$, and both pairs are real; on the anti-quaternion subspace $B$ and $N$ change sign against the quaternion subspace while $H$ and $K$ do not; on the Hermitian subspace $B=H$ and $N=K$; and on the anti-Hermitian subspace the two bilinear ones are the negatives of those on the Hermitian subspace while the two sesquilinear ones agree with it.</p>
+<p><strong>The signatures over $\mathbb{R}$</strong> are: the centre, $B$ and $N$ of signature $(1,1)$ and $H$ and $K$ of signature $(2,0)$; the vector subspace, $B$ and $N$ of signature $(3,3)$, $H$ of signature $(6,0)$ and $K$ of signature $(0,6)$; the quaternion subspace, $B$ and $K$ of signature $(1,3)$ and $N$ and $H$ of signature $(4,0)$; the anti-quaternion subspace, $B$ and $K$ of signature $(3,1)$ and $(1,3)$ respectively and $N$ of signature $(0,4)$ with $H$ of signature $(4,0)$; the Hermitian subspace, $B$ and $H$ of signature $(4,0)$ and $N$ and $K$ of signature $(1,3)$; and the anti-Hermitian subspace, $B$ of signature $(0,4)$, $N$ of signature $(3,1)$, $H$ of signature $(4,0)$ and $K$ of signature $(1,3)$. Only $H$ is definite on the six; $N$ is definite on the quaternion subspace and its imaginary translate alone, $B$ on the two sectors alone, and $K$ on the centre and the vector subspace alone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$</td>
+<td>the four pairings: the bilinear, the general quaternionic bilinear, the sesquilinear and the general quaternionic sesquilinear form</td>
+</tr>
+<tr>
+<td>$B,N,H,K$</td>
+<td>the four algebraic norms, the diagonals of the four pairings, of <em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$</td>
+<td>the centre and the vector subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>the quaternion and anti-quaternion subspaces, the two real forms</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>the Hermitian and anti-Hermitian subspaces; the informational and the material sector</td>
+</tr>
+<tr>
+<td>$\tilde Q=Ae_0$</td>
+<td>the general element of the centre, $A\in\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\tilde Q=\sum_kP_ke_k$</td>
+<td>the general element of the vector subspace, $P_k\in\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$h=\sum_\mu h_\mu e_\mu$</td>
+<td>the general element of the quaternion subspace, $h_\mu\in\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$a_0e_0+i\mathbf p$, $ib_0e_0+\mathbf q$</td>
+<td>the general elements of the two sectors, $a_0,b_0\in\mathbb{R}$, $\mathbf p,\mathbf q$ real</td>
+</tr>
+<tr>
+<td>$(p,q)$</td>
+<td>the signature over $\mathbb{R}$ of a real quadratic form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md</code>), for the four algebraic norms, the reduction from the twelve products to four, and the separation of the multiplicative and the definite senses of the norm</li>
+<li><em>Conventions in the Biquaternion Universe</em> (<code>articles_physics/conventions-in-the-biquaternion-universe.md</code>), for the convention of the four pairings — the one bracket, the four names, the pairs and the trace form — and for the readings of the four on the algebra and on the material sector</li>
+<li><em>Introduction to the Six Subspaces</em> (<code>articles_maths/introduction-to-the-six-subspaces.md</code>), for the six subspaces themselves, one to a section, with their defining conditions, bases and dimensions</li>
+<li><em>Comparison of the Six Subspaces</em> (<code>articles_maths/comparison-of-the-six-subspaces.md</code>), for the coordinate blocks, the intersections and the sums of the six</li>
+<li><em>The Six Subspaces and the Four Forms</em> (<code>articles_maths/the-six-subspaces-and-the-four-forms.md</code>), for the same six subspaces read at the level of the forms, with the value of each form on a general pair, its real and imaginary parts and the alternating companion of the two sesquilinear forms, of which the tables here are the diagonals</li>
+<li><em>The Six Subspaces and the Four General Products</em> (<code>articles_maths/the-six-subspaces-and-the-four-general-products.md</code>), for the four general products read on the six subspaces, one subspace to a section</li>
+<li><em>The Four Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the four pairings and the four degree-two functions whose diagonals are the four algebraic norms, and their own restrictions to the six subspaces</li>
+<li><em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-four-general-products-of-the-biquaternion-c-space.md</code>), for the four general forms and their Gram matrices</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

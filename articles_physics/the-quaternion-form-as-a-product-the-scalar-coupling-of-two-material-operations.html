@@ -85,7 +85,7 @@ the Symmetric Quaternionic Algebra</em> and are the subject of the companion art
 Cannot Compose: the Radical and the Isotropic Elements</em>; the operators and the matrix models are
 <em>The Multiplication Operators of the Symmetric Quaternionic Algebra</em> and <em>The Symmetric Quaternionic
 Algebra in the Matrix Representations</em>. The comparison of this operation with the other three rows is
-<em>The Four Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras</em>, and it is
+<em>The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras</em>, and it is
 cited and not redone.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$. An
@@ -128,7 +128,7 @@ $$</p>
 image is the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$.</p>
 <p><em>Proof.</em> The parent value is
 $\tilde P^{\natural}\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$
-(<em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>). The reverse value is obtained
+(<em>The 12 Products of the Biquaternion Complex Space</em>). The reverse value is obtained
 by exchanging the arguments; its scalar part is symmetric in the pair and its vector part is
 antisymmetric, with the cross product reversing and the mixed terms exchanging with a sign. Half the sum
 keeps the scalar part and cancels the vector part. Bilinearity is inherited term by term with the
@@ -245,6 +245,39 @@ $\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$ were recomputed on $100$ random biquate
 arithmetic; the maximum deviation from zero is $8.9\times10^{-16}$, machine precision. The commutation
 $\tilde P\bullet\tilde Q-\tilde Q\bullet\tilde P$ vanishes <strong>exactly</strong> on the same samples, not merely to
 machine precision, the coefficient being literally symmetric.</p>
+<p><strong>Proposition (polarisation identity).</strong> The coefficient is recovered from the diagonal by the
+polarisation identity of a symmetric bilinear form,</p>
+<p>$$
+\tilde P\bullet\tilde Q=\tfrac12\bigl(N(\tilde P+\tilde Q)-N(\tilde P)-N(\tilde Q)\bigr)e_0 ,
+$$</p>
+<p>equivalently $N(\tilde P+\tilde Q)=N(\tilde P)+N(\tilde Q)+2N(\tilde P,\tilde Q)$.</p>
+<p><em>Proof.</em> $N$ is symmetric and bilinear in its two arguments, so expanding $N(\tilde P+\tilde Q)$ gives
+$N(\tilde P)+N(\tilde Q)+2N(\tilde P,\tilde Q)$; the coupling is $N(\tilde P,\tilde Q)e_0$ by the
+centrality proposition, and the identity follows on rearranging.</p>
+<p><strong>Remark (verified).</strong> The polarisation identity was recomputed on $100$ random biquaternion pairs, with
+the two sides agreeing to machine precision on all of them.</p>
+<p><strong>Reading (the interference term).</strong> The coupling is the <strong>cross term of the square of a sum</strong>, the
+quantity two operations contribute jointly beyond the sum of their separate intervals. Reading the
+diagonal $N(\tilde P)$ as the interval a single operation carries, the off-diagonal $N(\tilde P,\tilde Q)$
+is the correction to the interval of the sum: if it vanishes, the two operations contribute to the
+interval of their sum only through their separate intervals, and they are uncorrelated for the metric. In
+the language of a superposition this is an <strong>interference term</strong> — the joint term of a squared sum — with
+the caution that the interference here is symmetric and bilinear and not the sesquilinear cross term of a
+norm: the coefficient is indefinite, so it can be positive or negative, and it is not a probability-like
+interference.</p>
+<p><strong>Reading (mass and interaction are one form).</strong> A single coefficient carries both of the readings the
+framework gives it. Evaluated on one operation the diagonal is the interval, and on a material
+four-momentum on shell it is $-m^{2}c^{2}$, so the diagonal carries the <strong>mass</strong>; evaluated on two
+operations the off-diagonal is their pairing, so the same coefficient carries the <strong>interaction</strong>. Mass
+and interaction are the diagonal and the off-diagonal of one symmetric form, and neither is a separate
+object.</p>
+<p><strong>Reading (a signed correlation, and its zeros decouple).</strong> The coefficient is indefinite, so the coupling
+of two operations is positive, negative or zero, and a pair with $N(\tilde P,\tilde Q)=0$ contributes
+nothing to the interval of their sum. The coupling is therefore a <strong>signed correlation</strong> and not a
+probability: it has no positivity, and its zeros are the pairs the metric does not correlate. This is the
+same pairing the article reads as a comparison; the name offered here, labelled as a reading, is a
+correlation with either sign and a decoupled zero. Nothing in the corpus yet names a physical process
+behind a vanishing coupling, and the naming is the framework's and not the algebra's.</p>
 <h2 id="the-contrast-with-the-symmetrised-plain-product">The Contrast with the Symmetrised Plain Product</h2>
 <p>The operation has a <strong>plain</strong> cousin, the symmetric part of the ordinary product,</p>
 <p>$$
@@ -303,7 +336,7 @@ scalar part of this article's operation is $N$ and <strong>not</strong> $B$: on 
 forms carry opposite signs, and the natural conjugation in the first slot is exactly what flips the sign.
 A sentence that names $B$ for the coefficient of the symmetrised quaternionic product is wrong, and the
 error is the most tempting of this row. The forms themselves, with their Gram matrices and their
-signatures, are <em>Comparison Between the Four Biquaternion Products</em> and <em>The Four Pairings of the
+signatures, are <em>Comparison Between the Four General Products</em> and <em>The Four Pairings of the
 Biquaternion Algebra</em>.</p>
 <p><strong>A cross-chapter warning on the letters.</strong> The letters of the two forms are chapter-relative. The
 mathematics chapter writes <em>this</em> chapter's $N$ — the scalar part of $\tilde P^{\natural}\tilde Q$ — as
@@ -340,7 +373,7 @@ returns the interval of a material operation faithfully and returns <strong>no</
 central-valued pairing is not a state and is not a probability. That role belongs to the sesquilinear row
 of the algebra, not to this one. The forms on the six subspaces, with their signatures, are
 <em>The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions</em> and the transversal
-signature table of <em>The Four Products and Their Physical Readings: the Two Algebras and the Two
+signature table of <em>The Four General Products and Their Physical Readings: the Two Algebras and the Two
 Sesqualgebras</em>.</p>
 <h2 id="the-reading-a-central-value-is-the-scalar-of-a-comparison">The Reading: a Central Value Is the Scalar of a Comparison</h2>
 <p><strong>Proposed reading, labelled as such.</strong> Each clause below names a proved identity of the preceding
@@ -354,9 +387,29 @@ sections, and the reading is what the framework does with it.</p>
   order lives in the antisymmetric half of the parent, the failed bracket of the companion band.</li>
 <li><strong>The diagonal of the coupling is the interval.</strong> The coupling of an operation with itself is its
   interval, so the symmetric half of the row is the half that carries the metric of the material row.</li>
+<li><strong>The coupling is the interference term of a sum.</strong> By the polarisation identity the off-diagonal is the
+  cross term of the square of a sum, the quantity two operations contribute jointly beyond their separate
+  intervals; a vanishing coupling is a pair the metric does not correlate. The interference is symmetric
+  and bilinear and carries no positivity.</li>
+<li><strong>Mass and interaction are one form.</strong> The diagonal, on a material four-momentum on shell, is
+  $-m^{2}c^{2}$ and carries the mass; the off-diagonal carries the interaction. One coefficient, read on
+  one argument and on two, is both.</li>
+<li><strong>The pairing is a signed correlation.</strong> The coefficient is indefinite, so a coupling can be positive,
+  negative or zero, and a pair with $N(\tilde P,\tilde Q)=0$ is decoupled for the metric. The name is a
+  signed correlation, not a probability.</li>
 <li><strong>The coupling carries the metric, and the order carries the obstruction.</strong> The geometry of the
   material row sits in the symmetric part and the failure of the internal group in the antisymmetric
   part; the two are the two halves of one product and neither can be read off the other.</li>
+<li><strong>The zeros of the coupling are a selection rule.</strong> The proved statement is that a pair with
+  $N(\tilde P,\tilde Q)=0$ is decoupled for the metric, together with the non-degeneracy of the form. A
+  family of operations that are <strong>pairwise</strong> $N$-orthogonal therefore contributes to the interval of any
+  sum only through its members' separate intervals, the cross terms vanishing. Offered <strong>as a reading</strong>,
+  the vanishing coupling is an <strong>orthogonality selection rule</strong> and a maximal $N$-orthogonal family is a
+  set the metric does not mix — the algebraic shape of a superselection sector. The reading is of the
+  form's zeros and is not a proved statement about states: the coefficient is indefinite, so an
+  $N$-orthogonal family is not a positive decomposition, and the name is the framework's and not the
+  algebra's. It is a selection rule of the coefficient $N$ and is not the mass selection rule of the
+  chiral articles, which is a statement about the gauge invariance of a mass term.</li>
 </ul>
 <p><strong>Caution.</strong> A central value <strong>compares and does not compose</strong>. No associativity, no composition of a
 product and no iterated chain can be read from this operation. It is a coupling, and a coupling is a
@@ -369,15 +422,24 @@ $\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$, with the material reading $-c^{2}t^{2}
 reconstruction $\tilde P^{\natural}\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge_{\natural}\tilde Q$;
 the sixteen basis products, diagonal with values $\delta_{\mu\nu}e_0$; the absence of a unit, with $e_0$
 acting as the projection onto the scalar part; the coefficient $N$ and not $B$, the two differing by the
-sign of the vector part; the indefiniteness of the coefficient on the real space.</p>
+sign of the vector part; the indefiniteness of the coefficient on the real space; the polarisation
+identity, recovering the coefficient from the diagonal as the cross term of a sum.</p>
 <p><strong>Readings.</strong> That the symmetrised quaternionic product is the scalar coupling of two material
 operations; that its value is the number a comparison of the two operations returns; that the comparison
-is order-free; that its diagonal is the interval and the symmetric half of the row carries the metric.</p>
+is order-free; that its diagonal is the interval and the symmetric half of the row carries the metric;
+that the off-diagonal is the interference term of a sum; that mass and interaction are the diagonal and
+the off-diagonal of one form; that the pairing is a signed correlation whose zeros decouple; that the zeros
+of the coupling are an orthogonality selection rule and a maximal $N$-orthogonal family the algebraic shape
+of a superselection sector.</p>
 <p><strong>Not claimed.</strong> That a physical material operation is a biquaternion, or that the coupling of two
 operations is a measured quantity. That a central value composes, associates or iterates. That the
 coupling carries a positivity or a state. That the symmetrised quaternionic product is a Jordan product.
 That the reading of the value as a "comparison" is forced by the algebra rather than chosen; the algebra
-forces the centrality and the commutativity, and the naming is the framework's.</p>
+forces the centrality and the commutativity, and the naming is the framework's. That the interference,
+mass-and-interaction or signed-correlation namings are forced by the algebra; and that a vanishing
+coupling has a physical process behind it. That an $N$-orthogonal family is a set of physical
+superselection sectors, or that the orthogonality-selection-rule naming is forced by the algebra rather
+than chosen; the algebra forces only the vanishing of the cross term and the non-degeneracy of the form.</p>
 <h2 id="summary">Summary</h2>
 <p>The symmetrised quaternionic product
 $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ is the
@@ -388,7 +450,10 @@ centre, it has <strong>no unit</strong> ($e_0\bullet\tilde Q=Q_0e_0$ projects on
 Jordan product</strong>, unlike the symmetrised plain product of the band SPA. Its diagonal is the <strong>interval</strong>,
 $\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$, so the operation whose values are central is the one that
 carries the metric of the material row, while the order of the two operations sits in the antisymmetric
-half of the parent. The coupling differs from the symmetrised plain product of the plain row in one sign:
+half of the parent. By the polarisation identity the off-diagonal coefficient is the interference term of
+a sum, so one form carries both the <strong>mass</strong> (its diagonal) and the <strong>interaction</strong> (its off-diagonal),
+and the pairing is a <strong>signed correlation</strong> rather than a probability. The coupling differs from the
+symmetrised plain product of the plain row in one sign:
 its coefficient is the quaternionic form $N$, the scalar part of $\tilde P^{\natural}\tilde Q$, and not
 the plain form $B$, the scalar part of $\tilde P\tilde Q$ — the two differ by the sign of the vector part
 alone. The operation reads as a <strong>scalar coupling</strong>: it compares two material operations and returns the
@@ -398,7 +463,7 @@ Jordan identity with its witness, and the boundary of the coefficient against th
 companion article <em>Why a Central Product Cannot Compose: the Radical and the Isotropic Elements</em>; the
 coefficient read as a form is <em>The Quaternion Form as a Product on the Symmetric Quaternionic Algebra</em>;
 the six subspaces are <em>The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions</em>; and
-the comparison of the four rows is <em>The Four Products and Their Physical Readings: the Two Algebras and
+the comparison of the four rows is <em>The Four General Products and Their Physical Readings: the Two Algebras and
 the Two Sesqualgebras</em>, none of them redone here.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -467,8 +532,8 @@ the Two Sesqualgebras</em>, none of them redone here.</p>
 <ul>
 <li><em>The Mathematical Study of Biquaternions</em>, the physics entry point to the mathematical study under
   which this block sits.</li>
-<li>Mathematics article <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>
-  (<code>articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the twelve
+<li>Mathematics article <em>The 12 Products of the Biquaternion Complex Space</em>
+  (<code>articles_maths/the-12-products-of-the-biquaternion-complex-space.md</code>), for the twelve
   operations, the method of the decomposition and the laws of each.</li>
 <li>Mathematics article <em>Introduction to the Symmetric Quaternionic Algebra of Biquaternions</em>
   (<code>articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md</code>), for the
@@ -490,7 +555,7 @@ the Two Sesqualgebras</em>, none of them redone here.</p>
 <li>Companion article <em>The Ordinary Product and the Material Sector</em>, for the form $B$ and the plain row.</li>
 <li>Companion article <em>The Symmetrised Material Composition and the Jordan Identity</em>, for the symmetrised
   plain product (SPA), the Jordan-product contrast of this operation.</li>
-<li>Companion article <em>The Four Products and Their Physical Readings: the Two Algebras and the Two
+<li>Companion article <em>The Four General Products and Their Physical Readings: the Two Algebras and the Two
   Sesqualgebras</em>, for the transversal comparison and the signature table.</li>
 <li>Companion article <em>Why a Central Product Cannot Compose: the Radical and the Isotropic Elements</em>, for
   the radical, the isotropic elements and the Jordan witness read physically.</li>

@@ -169,9 +169,17 @@ $$</p>
 </tbody>
 </table></div>
 <p>Multiplying by $i$ exchanges the two sectors, $i\mathbb{M}_+ = \mathbb{M}_-$, and reverses the sign of the form, $N(i\tilde{Q}) = -N(\tilde{Q})$; that is the algebraic content of the mirror relation between the two signatures. The Minkowski signature is therefore not an independent input of the theory. It is what the algebra's own form looks like once the time coordinate is written $ict$ — the same biquaternion norm, read on the material sector, with $i^2 = -1$ supplying the minus.</p>
+<h3 id="the-two-forms-of-one-element">The Two Forms of One Element</h3>
+<p>The body has so far developed one form, the biquaternion norm $N$. The Summary names a second, the <strong>Hermitian form</strong> on $\mathbb{M}_+$, and it is defined here so that the two agree. It is</p>
+<p>$$
+H(\tilde{Q},\tilde{P}) = \sum_{\mu=0}^{3} Q_\mu\overline{P_\mu},
+$$</p>
+<p>the sum of the four coordinates of one element against the conjugates of the four coordinates of the other. It is conjugate-symmetric, $H(\tilde{Q},\tilde{P}) = \overline{H(\tilde{P},\tilde{Q})}$, and <strong>positive definite</strong>: its diagonal is the sum of the modulus squares of the coordinates, $H(\tilde{Q},\tilde{Q}) = \sum_\mu|Q_\mu|^{2}$, which vanishes only at $\tilde{Q} = 0$. It is the coefficient of $e_0$ in the sesquilinear square $\tilde{Q}\tilde{Q}^{*}$.</p>
+<p>The two forms are two readings of one element, and they part company at once. The norm is complex and vanishes on the null cone; the Hermitian form is positive, zero only at the origin. At $\tilde{Q} = e_0 + ie_3$ the two already differ, $N = 0$ while $H = 2$: the same element is a null direction for the interval and a state of positive weight. That is the reading. The norm is the <strong>interval</strong>, whose real part on the material sector is $-c^{2}dt^{2} + d\mathbf{x}^{2}$ and whose zero set is the light cone; the Hermitian form is the <strong>probability weight</strong>, the form the Born rule draws on, whose zero set is not a cone but the single state zero. One element carries both, and the framework's account of why the causal and the probabilistic structures coexist is that they are two forms on one algebra and not two algebras.</p>
+<p>Each form also carries a second number, and the two numbers are read differently. The norm decides invertibility: $N(\tilde{Q}) = 0$ is the zero-divisor condition. The Hermitian square carries a <strong>rank</strong>, read in the matrix model of the algebra, two when $N(\tilde{Q})\neq0$ and one when $N(\tilde{Q}) = 0$. The rank is read as a count of polarisations, two for the massive type and one for the massless, in <em>Mass, Rank and the Positivity of the Dagger</em>, which also develops the matrix model in which the rank is taken and the cone that the form's diagonal generates; the form read as a product rather than as a form is <em>The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing</em>. Recomputed on $100$ random elements: the form conjugate-symmetric and positive throughout, and the rank two off the null cone and one on it, on $100$ of $100$.</p>
 <h2 id="what-the-framework-achieves">What the Framework Achieves</h2>
 <p>The main result of the framework so far is that the biquaternion algebra <strong>contains, as a matter of algebra, the structures required for both relativity and quantum physics</strong>. They are not incompatible sectors of physics that must be glued together; they are two aspects of the same algebra, appearing in its two complementary subspaces.</p>
-<h3 id="relativity-in-math109">Relativity in $\mathbb{M}_-$</h3>
+<h3 id="relativity-in-math127">Relativity in $\mathbb{M}_-$</h3>
 <p>The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The <strong>proper orthochronous Lorentz group</strong> $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the <strong>group of biquaternions of unit norm</strong> in $\mathbb{B}$:</p>
 <p>$$
 SL(2,\mathbb{C}) \;\cong\; \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}.
@@ -182,7 +190,7 @@ $$</p>
 $$</p>
 <p>The group itself lives in the full algebra $\mathbb{B}$ (since $\mathbb{M}_-$ is not closed under multiplication and cannot carry a group structure). The four-vectors it acts on live in $\mathbb{M}_-$. The different types of Lorentz transformation have rotors in different subspaces: pure boosts have rotors in $\mathbb{M}_+$ (they are Hermitian), pure spatial rotations have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and general Lorentz transformations have rotors in the full algebra.</p>
 <p>The relativistic wave equations — <strong>Maxwell's equations</strong> and the <strong>Dirac equation</strong> — have natural biquaternion forms, as developed in the companion articles.</p>
-<h3 id="quantum-physics-in-math121">Quantum Physics in $\mathbb{M}_+$</h3>
+<h3 id="quantum-physics-in-math139">Quantum Physics in $\mathbb{M}_+$</h3>
 <p>The informational sector $\mathbb{M}_+$ is, exactly, the operator algebra of a two-state quantum system. This is established in the companion article <em>Quantum Physics in Biquaternionic Form</em>, and it can be summarized as follows.</p>
 <ul>
 <li>The <strong>idempotents</strong> in $\mathbb{M}_+$, of the form $\tilde\Pi_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, are the pure states of a qubit. They parametrize the Bloch sphere $S^2$.</li>
@@ -197,6 +205,8 @@ $$</p>
 <h3 id="the-shared-home">The Shared Home</h3>
 <p>The most significant feature of the framework is that <strong>relativity and quantum physics share the same algebraic home</strong>. The Lorentz group is realized (via its double cover $SL(2,\mathbb{C})$) as the group of biquaternions of unit norm in $\mathbb{B}$, and the operator algebra of quantum physics is realized in the Hermitian subspace $\mathbb{M}_+$. The two structures are not independent; they are aspects of the same algebra.</p>
 <p>This is the sense in which the framework is proposed as an alternative to the standard formulation: not as a modification of relativity or of quantum physics, but as a <strong>common algebraic ground</strong> on which both can be expressed.</p>
+<h3 id="the-two-slots-of-one-product">The Two Slots of One Product</h3>
+<p>Every product of the algebra reads two elements, one in each <strong>slot</strong>, and in the framework's two sesquilinear products the slots are not interchangeable: one is read plainly and the other through a conjugation. That asymmetry is the algebraic form of the two roles a quantum description pairs — an element and the adjoint of another — and it is the reason the Born weight above can be read as the scalar part of a product on the algebra rather than as a pairing imposed from outside. The four products, the two slots and their four readings are <em>The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras</em>; the state and observable roles, the gauge action generated inside the algebra, and the chirality of that action are <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>.</p>
 <h2 id="status-and-open-questions">Status and Open Questions</h2>
 <p>The framework is a <strong>research program</strong>, not a finished theory. The algebraic results — that $\mathbb{M}_-$ carries the four-vectors of relativity and that $\mathbb{M}_+$ carries the operator algebra of quantum physics — are established mathematics, and the identifications with the physical theories are developed in the companion articles.</p>
 <p>What is not established is whether the framework has consequences beyond a reformulation of known physics. The key open questions are:</p>
@@ -265,6 +275,10 @@ $$</p>
 <tr>
 <td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Biquaternion norm; the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$, signature $(-,+,+,+)$ on the real material sector</td>
+</tr>
+<tr>
+<td>$H(\tilde{Q},\tilde{P}) = \sum_\mu Q_\mu\overline{P_\mu}$</td>
+<td>Hermitian form, positive definite; the probability weight, $H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$; the coefficient of $e_0$ in $\tilde{Q}\tilde{Q}^{*}$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>

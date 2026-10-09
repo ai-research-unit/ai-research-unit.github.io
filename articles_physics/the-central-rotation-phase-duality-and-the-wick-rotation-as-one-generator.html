@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Central Rotation: Phase, Duality and the Wick Rotation as One Generator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-central-rotation-phase-duality-and-the-wick-rotation-as-one-generator"><strong>The Central Rotation: Phase, Duality and the Wick Rotation as One Generator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Three operations of the framework are usually met in three different places. The <strong>global phase</strong> $e^{i\theta}$ is the continuous symmetry of the center $\mathbb{C}_{\mathbb{B}}$, and it is what enters the amplitude $e^{iS/\hbar}$. The <strong>duality rotation</strong> is the internal rotation of the complex field strength, and it is where the electric and the magnetic parts of one complex object rotate into each other. The <strong>Wick rotation</strong> is the passage between the Lorentzian description on the material sector $\mathbb{M}_-$ and the Euclidean description on the real sector $\mathbb{H}_{\mathbb{B}}$. They are treated in three articles and they are read as three structures.</p>
+<p>This article records that the three are <strong>one generator read on three carriers</strong>. The generator is the central imaginary $i$: the element that commutes with everything, squares to $-1$, and generates the one-parameter group $e^{i\theta}e_0$ of the center. Multiplication by $i$ is a single $\mathbb{C}$-linear map of the algebra, and the algebra is cut into six subspaces on which that one map acts differently. The phase, the duality rotation and the exchange of the real and imaginary sectors are its action on the complex time sector, on the complex space sector and on the real and imaginary pair, and its exchange of the two sectors $\mathbb{M}_\pm$ is the same map again.</p>
+<p>The naming is the whole difficulty, and it is a naming problem and not an algebraic one. One map, six subspaces, and a physical word for each action; the word depends on the carrier and not on the map. The article separates the readings, states the single rule that ties them, and states what the unification does <strong>not</strong> claim — in particular that the analytic continuation $t\to-i\tau$ of the companion article is the <strong>relabeling</strong> of one coordinate and not the full multiplication, and that the two agree on the time axis in the sign they flip and nowhere else.</p>
+<h2 id="the-generator-and-its-one-parameter-group">The Generator and Its One-Parameter Group</h2>
+<p>The central imaginary is the element $i\,e_0$ of the center; the series writes it $i$, and the continuous phase is $e^{i\theta}e_0$. It is central,</p>
+<p>$$
+[i\,e_0,\;\tilde{Q}] = 0 \qquad \text{for every } \tilde{Q}\in\mathbb{B},
+$$</p>
+<p>which is what makes $\mathbb{C}_{\mathbb{B}}$ the home of the scalars and the global $U(1)$ a symmetry of the whole algebra rather than of one subspace. Its square is</p>
+<p>$$
+(i\,e_0)^2 = -e_0,
+$$</p>
+<p>so the powers of the generator close on four values, $e_0,\, i e_0,\, -e_0,\, -i e_0$, and the four are the identity, the generator, the negative identity and the inverse of the generator: the group of the center generated by $i$ has order four, and the continuous group $e^{i\theta}e_0$ interpolates between its elements. The angle $\theta = \pi/2$ is the generator read as one application; the angle $\theta = \pi$ is $-e_0$, the antipodal map; the angle $2\pi$ is the identity.</p>
+<p>Two facts about the generator are used throughout and are worth separating. The first is that multiplication by $i$ is <strong>$\mathbb{C}$-linear</strong>: it commutes with the complex scalars and it is a map of the complex structure of the algebra, not merely a real-linear map. The second is its effect on the norm form,</p>
+<p>$$
+N(i\tilde{Q}) = Q_0^2(i e_0)^2 + \dots = -\,N(\tilde{Q}),
+$$</p>
+<p>so the generator <strong>reverses the sign of the biquaternion norm</strong>. On the real subspaces, where the norm has a signature, the generator sends a form of signature $(p,q)$ to a form of signature $(q,p)$: it is the sign flip of the norm and not an isometry of it. Both facts are used below, and they are the reason the generator can carry a phase (a linear, norm-reversing motion of the center) and a duality (a linear motion of the complex space) at the same time.</p>
+<h2 id="the-six-subspaces-the-generator-meets">The Six Subspaces the Generator Meets</h2>
+<p>The algebra is cut into six subspaces, and the generator acts on each. The table collects the action; the sections that follow read it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Real dimension</th>
+<th>$i\,\cdot$ (subspace)</th>
+<th>Action of the generator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$ center, the complex time sector</td>
+<td>$2$</td>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>a quarter turn: the two times are exchanged</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$ complex space sector</td>
+<td>$6$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>the duality rotation: exchanges each material direction with its informational partner</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$ real sector</td>
+<td>$4$</td>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>exchange with the imaginary sector</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$ imaginary sector</td>
+<td>$4$</td>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>exchange with the real sector</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$ material sector</td>
+<td>$4$</td>
+<td>$\mathbb{M}_+$</td>
+<td>exchange of the two sectors</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$ informational sector</td>
+<td>$4$</td>
+<td>$\mathbb{M}_-$</td>
+<td>exchange of the two sectors</td>
+</tr>
+</tbody>
+</table></div>
+<p>The generator <strong>preserves</strong> exactly the two subspaces that admit a complex structure and <strong>exchanges</strong> the other four in three pairs. That split is not new — it is the complex dimension column of <em>The Four Other Remarkable Subspaces</em> — and what this article adds is only the reading that the four movements are one map.</p>
+<h3 id="the-complex-time-sector-the-global-phase-and-the-exchange-of-the-two-times">The Complex Time Sector: the Global Phase and the Exchange of the Two Times</h3>
+<p>The center is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$, and its two real coordinates are the two times: $e_0$ carries the informational time $ct'$, and $ie_0$ the material time $ict$. Writing one complex number</p>
+<p>$$
+z = ct' + i\,ct,
+$$</p>
+<p>the center is the complex plane of the coordinate $z$, and multiplication by the generator is the map $z\mapsto i z = -ct + i\,ct'$. This is a <strong>quarter turn</strong> of the complex time plane: the two real times are exchanged, $ct'\mapsto -ct$ and $ct\mapsto ct'$, with the sign that a rotation by $\pi/2$ carries. The continuous phase $e^{i\theta}e_0$ is the general rotation of the same plane by the angle $\theta$, so that the <strong>global phase is the rotation of the complex time</strong>, and the generator is its infinitesimal element. The two readings in one sentence: the phase moves the complex time, and the generator is the quarter turn that reads the two real times into one another.</p>
+<h3 id="the-complex-space-sector-the-duality-rotation">The Complex Space Sector: the Duality Rotation</h3>
+<p>The complex space sector is $\mathrm{Vect}(\mathbb{B}) = \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3, ie_1,ie_2,ie_3\}$, and its three complex coordinates are $x + ix'$, $y + iy'$, $z + iz'$, the complex field strength and the generator of the Lorentz transformations. Multiplication by the generator acts on each of the three canonical pairs $(e_k, ie_k)$ as it acts on $(e_0, ie_0)$: a quarter turn exchanging the two members. On the Riemann–Silberstein vector $\mathbf{V} = \mathbf{E} + ic\,\mathbf{B}$ of the field-strength article the generator acts by</p>
+<p>$$
+\mathbf{V} \;\longmapsto\; i\,\mathbf{V} = i\,\mathbf{E} - c\,\mathbf{B} = -c\,\mathbf{B} + i\,\mathbf{E},
+$$</p>
+<p>so the pair $(\mathbf{E}, c\mathbf{B})$ turns by a quarter turn. The corpus writes the duality rotation as the central phase $\tilde{F}\mapsto e^{-i\theta}\tilde{F}$, whose classical case is the quarter turn $\theta = \pi/2$, $\mathbf{E}\mapsto c\mathbf{B}$, $\mathbf{B}\mapsto-\mathbf{E}/c$; multiplication by the generator $i$ is the same quarter turn in the opposite orientation, $\theta = -\pi/2$. In either orientation the three pairs rotate together, so the generator performs the electric–magnetic rotation on the whole complex three-vector, and the sequence of four quarter turns returns the field to itself.</p>
+<h3 id="the-real-and-imaginary-sectors-the-wick-rotation">The Real and Imaginary Sectors: the Wick Rotation</h3>
+<p>The real sector $\mathbb{H}_{\mathbb{B}}$ has all four coefficients real; the imaginary sector $i\mathbb{H}_{\mathbb{B}}$ has all four purely imaginary. The generator sends one to the other,</p>
+<p>$$
+i\,\mathbb{H}_{\mathbb{B}} = i\mathbb{H}_{\mathbb{B}}, \qquad i\,(i\mathbb{H}_{\mathbb{B}}) = \mathbb{H}_{\mathbb{B}},
+$$</p>
+<p>and <em>The Four Other Remarkable Subspaces</em> names this exchange <strong>the Wick rotation</strong> between the real and the imaginary sector. The real sector is the Euclidean reading of the four-vector, the home of the rotation rotors, with the positive-definite form $(4,0)$; the imaginary sector is its image, with the form $(0,4)$, the home of the boost generators. The single quarter turn carries the Euclidean description into the boost description and back.</p>
+<h3 id="the-two-sectors-the-materialinformational-exchange">The Two Sectors: the Material–Informational Exchange</h3>
+<p>Finally the generator exchanges the two sectors. An element of $\mathbb{M}_-$ is anti-Hermitian, $\tilde{Q}^{*} = -\tilde{Q}$, and</p>
+<p>$$
+(i\tilde{Q})^{*} = \bar{i}\,\tilde{Q}^{*} = (-i)(-\tilde{Q}) = i\tilde{Q},
+$$</p>
+<p>so $i\tilde{Q}$ is Hermitian and lies in $\mathbb{M}_+$; and the same computation run backwards sends $\mathbb{M}_+$ to $\mathbb{M}_-$. The material and the informational sectors are exchanged by the generator, and this exchange is the sector-level form of the same quarter turn: the material time of $\mathbb{M}_-$ and the informational time of $\mathbb{M}_+$, the material space and the informational space, all pass into one another under it.</p>
+<h2 id="one-map-one-rule">One Map, One Rule</h2>
+<p>The six actions above are the six restrictions of a single map. The <strong>rule</strong> that makes the unification non-trivial is a rule about the generator and not about the subspaces:</p>
+<blockquote>
+<p>multiplication by the central imaginary is one $\mathbb{C}$-linear map of $\mathbb{B}$, and it is central, so it acts the same way in every subspace; the physical name of its action is the name of the carrier.</p>
+</blockquote>
+<p>Read this way, the phase, the duality rotation, the exchange of the two times and the exchange of the real and imaginary sectors are not four analogues but four <strong>restrictions of one element</strong>. The reason the union is more than a list is the centrality: because $i$ commutes with everything, the phase $e^{i\theta}$ multiplies every subspace by the same central factor, and the <em>same</em> central rotation that rotates the complex time of a state rotates the complex field of the field and exchanges the description in which the element is read. A generator that was not central would give one rotation per subspace, and the four readings would not be one.</p>
+<p>The rule also fixes the limits of the reading, which are three. First, the generator is a <strong>rotation</strong>, so it is invertible and of order four; it is not a projection, not a collapse and not a measurement, and no reading of this article turns the phase into a loss of information. Second, the generator <strong>reverses the norm</strong>, $N(i\tilde{Q}) = -N(\tilde{Q})$, so the phase rotation is not an isometry of the interval; on each real sector it flips the signature and not the angles. Third, the generator is a <strong>scalar</strong> and not a direction: it acts through the center and never through the quaternion directions, and the corpus is explicit that the phase and the relativistic generators are carried by two separate parts of one element. The unification is a unification of central actions and stops there.</p>
+<h2 id="the-wick-rotation-in-coordinate-form">The Wick Rotation in Coordinate Form</h2>
+<p>The one reading that needs care is the third, because the companion article <em>The Wick Rotation in the Biquaternion Universe</em> defines the Wick rotation in a coordinate form of its own, and the two forms must be related rather than conflated.</p>
+<p>The companion article's rotation is the substitution $t\mapsto -i\tau$ in the time coordinate, which sends the material time coefficient to a real one,</p>
+<p>$$
+i c t \;\longmapsto\; i c\,(-i\tau) = c\tau,
+$$</p>
+<p>with the spatial coefficients $x, y, z$ held fixed. The rotated point has four real coefficients and lies in the real sector $\mathbb{H}_{\mathbb{B}}$; the map is real-linear, it is an identification of $\mathbb{M}_-$ with $\mathbb{H}_{\mathbb{B}}$, and it changes the signature from $(3,1)$ to $(4,0)$.</p>
+<p>The coordinate form and the generator agree on the <strong>time axis</strong> in the sign they flip, and differ in the value they produce. Multiplying the material time coefficient $ict$ by the generator gives</p>
+<p>$$
+i\,(i\,c t) = -c t,
+$$</p>
+<p>a real time coefficient, while the continuation gives the real coefficient $c\tau$. Both send the imaginary time coefficient to a real one, and both turn the Lorentzian temporal term $-(ct)^2$ into the positive square of a real time: that is the sign flip of the temporal term, and it is the same sign flip that the generator produces on the norm form, $N(i\tilde{Q}) = -N(\tilde{Q})$. The two real values differ by $\tau = -t$, the relabeling the continuation is free to make. So <strong>the analytic continuation is the temporal component of the central rotation</strong>: the generator that takes the Lorentzian time to the Euclidean time is the same $i$ that rotates the complex time.</p>
+<p>Away from the time axis the two diverge, and the divergence is the whole caution. The companion article holds the spatial coefficients real, so it takes only the time coefficient out of the imaginary axis; the <strong>full</strong> multiplication by the generator also acts on the spatial coefficients, sending $x\mapsto ix$, $y\mapsto iy$, $z\mapsto iz$, which makes the space part imaginary and moves the point from $\mathbb{M}_-$ into $\mathbb{M}_+$ rather than into $\mathbb{H}_{\mathbb{B}}$. The relabeling of one coordinate is therefore the time-axis reading of the generator, and the generator is its extension to the whole element: the same quarter turn, applied to the temporal direction alone in the first case and to the temporal and spatial directions together in the second. The framework keeps the two apart on purpose — the Wick rotation of the companion article is a <em>transfer of description</em>, with the space held fixed and the signature changed, while multiplication by the generator is a <em>rotation of the element</em>, with the sector changed — and the honest statement of the unification is that they share one generator and one temporal sign flip, not that they are the same map.</p>
+<p>The reading attached to the exchange of the two times is the framework's <strong>problem of time</strong> in its biquaternion form. On the complex time plane there is no preferred real axis: the two real times $ct'$ and $ct$ are the real and the imaginary parts of the one coordinate $z$, and multiplication by the generator rotates one into the other. Read physically, parameter time and coordinate time are <strong>two real structures of one complex time</strong>, and the question of which is physical becomes the question of <strong>which real slice is chosen</strong> — a choice of axis in the complex time plane, and not a fact of the algebra. The generator is what turns the choice of slice into a rotation, and it is the reason the two times cannot be told apart by the algebra alone.</p>
+<h2 id="what-the-unification-does-not-claim">What the Unification Does Not Claim</h2>
+<ul>
+<li>The unification is a statement about <strong>one generator and six restrictions</strong>, and it does not assert that the phase, the duality rotation and the Wick rotation are the same physical process. They are one map read on three carriers, and the physical content is in the carriers.</li>
+<li>It does <strong>not</strong> identify the analytic continuation $t\mapsto-i\tau$ with multiplication by the generator. The two share the temporal sign flip and the time axis; the continuation is a relabeling that holds the space real and changes the signature, the multiplication is a rotation that carries the space imaginary and changes the sector.</li>
+<li>It does <strong>not</strong> turn the phase into a measurement. The generator is invertible and of order four; the collapse of the framework is a non-invertible map, and it is read in <em>The Monoid of Acting Maps</em> and in the operator articles, not here.</li>
+<li>It does <strong>not</strong> claim that the two times of the complex time plane can be distinguished by the algebra. They are the real and the imaginary parts of one coordinate, and the algebra offers the rotation between them and no rule that selects one; the selection is a choice of slice, and it is recorded as the framework's problem of time.</li>
+<li>It does <strong>not</strong> claim an empirical consequence. The unification reorganizes three existing readings under one generator; it adds no prediction and no coupling.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The central imaginary $i$ is one element, central, with $i^2=-1$, and it generates the one-parameter group $e^{i\theta}e_0$ of the center. Multiplication by it is a single $\mathbb{C}$-linear map of the algebra, and the six subspaces of $\mathbb{B}$ carry six restrictions of that one map: a quarter turn of the complex time plane, which is the global phase and the exchange of the two times; a quarter turn of each of the three complex-space pairs, which is the electric–magnetic duality rotation; an exchange of the real and the imaginary sector, which the corpus names the Wick rotation; and the exchange of the two sectors $\mathbb{M}_\pm$, the material–informational passage. The map reverses the norm, $N(i\tilde{Q}) = -N(\tilde{Q})$, so it flips the signature on each real sector and is not an isometry of the interval; and it is central, which is why one element and not four carries the four readings.</p>
+<p>The analytic-continuation Wick rotation of the companion article is the temporal component of the same rotation: it produces the same sign flip of the temporal term, $-(ct)^2\mapsto+(\text{real time})^2$, the two real time coordinates differing only by the relabeling $\tau = -t$. Away from the time axis the two part, because the continuation holds the space real and the multiplication carries it imaginary; the continuation is a relabeling of one coordinate, the multiplication is a rotation of the element. The reading closes on the framework's problem of time: the two times are the real and imaginary parts of one complex coordinate, and the generator rotates one into the other, so that which slice is physical is a choice of axis and not a fact of the algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$i$</td>
+<td>the central imaginary, $i\,e_0$; the generator of the central $U(1)$</td>
+</tr>
+<tr>
+<td>$e^{i\theta}e_0$</td>
+<td>the one-parameter group of the center, the global phase</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>the center, the complex time sector, $\mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>the vector subspace, the complex space sector, $\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3,ie_1,ie_2,ie_3\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>the real and the imaginary sector, all-real and all-imaginary coefficients</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_\pm$</td>
+<td>the material and informational sectors, the anti-Hermitian and Hermitian halves</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^{*}$, ${}^{\natural}$</td>
+<td>Hermitian conjugation, quaternion conjugation</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
+<td>the biquaternion norm, $N(i\tilde{Q}) = -N(\tilde{Q})$</td>
+</tr>
+<tr>
+<td>$z = ct' + i\,ct$</td>
+<td>the complex time coordinate of the center</td>
+</tr>
+<tr>
+<td>$\mathbf{V} = \mathbf{E} + ic\,\mathbf{B}$</td>
+<td>the Riemann–Silberstein vector of the complex space sector</td>
+</tr>
+<tr>
+<td>$t\mapsto -i\tau$</td>
+<td>the analytic continuation of <em>The Wick Rotation in the Biquaternion Universe</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Four Other Remarkable Subspaces</em> — the complex time sector, the complex space sector, the real and the imaginary sector, the complex dimension and the area pairing, and the naming of the exchange of the real and imaginary sectors as the Wick rotation.</li>
+<li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> and <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em> — the two sectors that the generator exchanges.</li>
+<li><em>The Wick Rotation in the Biquaternion Universe</em> — the analytic continuation $t\mapsto-i\tau$ as the identification $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$, its signature change, and the transfer of description.</li>
+<li><em>Conventions in the Biquaternion Universe</em> — the central phase, the center as the home of the scalars, the four conjugations and the $ict$ dictionary.</li>
+<li><em>Electric–Magnetic Duality and the Modular Group in Biquaternionic Form</em>, <em>Exercise: Duality Rotation and the Riemann–Silberstein Vector</em> and <em>The Field-Strength Biquaternion and Its Invariants</em> — the duality rotation read on the field strength, the central phase $\tilde{F}\mapsto e^{-i\theta}\tilde{F}$ and the Riemann–Silberstein vector.</li>
+<li><em>Biquaternion Algebra</em> — the centrality of $i$, the norm and its signature on each real subspace.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

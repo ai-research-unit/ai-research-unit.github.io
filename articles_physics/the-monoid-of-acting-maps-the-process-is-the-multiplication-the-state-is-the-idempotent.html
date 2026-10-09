@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-monoid-of-acting-maps-the-process-is-the-multiplication-the-state-is-the-idempotent"><strong>The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two articles of the corpus describe an element of the biquaternion algebra as an operator. <em>The 2×2 Matrix Operator Representation of Biquaternions</em> writes the sandwich $\operatorname{H}_{\tilde{Q}}(\tilde{R}) = \tilde{Q}\tilde{R}\tilde{Q}^{*}$ as the congruence $X\mapsto M X M^{\dagger}$ on the matrix image, and <em>The 4×4 Regular Matrix Operator Representation of Biquaternions</em> writes the same sandwich as a product of the two regular maps, $\operatorname{H}_{\tilde{Q}} = \rho_L(\tilde{Q})\circ\rho_R(\tilde{Q}^{*})$. Both are statements about a matrix that represents the element.</p>
+<p>This article records the abstract statement that the two matrix articles realize. An element <strong>is</strong> the map "multiply by it": the left multiplication $L_{\tilde{Q}}:\tilde{R}\mapsto\tilde{Q}\tilde{R}$ and the right multiplication $R_{\tilde{Q}}:\tilde{R}\mapsto\tilde{R}\tilde{Q}$ are two $\mathbb{C}$-linear maps of the algebra attached to one element, and the composition of these maps makes the set of acting maps a <strong>monoid</strong>. The process is the map and not the element; the elements compose well because the maps compose, and the order of the composition is the order of the operations. The sandwich of the two operator articles is the composition of a left action with a right action, which is why one article sees a congruence and the other a product of two regular matrices.</p>
+<p>The second half turns to the other half of the dictionary. The <strong>states</strong> of the framework are the idempotents, not the maps: a proper projection is an idempotent element, it exists in the informational sector and not in the material one, and it is a <strong>non-invertible</strong> map. So the dictionary of the article is one line. The <strong>process</strong> is the map side, where the reversible processes are the units off the light cone; the <strong>state</strong> is the idempotent side, and the rank-one projections are null, so they lie <strong>on</strong> the light cone. The cone is therefore not a border between two disjoint halves: it is where the non-invertible maps are and where the states sit, while a unit is an element off the cone.</p>
+<h2 id="the-two-one-sided-actions">The Two One-Sided Actions</h2>
+<p>For an element $\tilde{P}$ of the algebra, the <strong>left multiplication</strong> and the <strong>right multiplication</strong> are the maps</p>
+<p>$$
+L_{\tilde{P}} : \tilde{R} \mapsto \tilde{P}\tilde{R}, \qquad\qquad R_{\tilde{P}} : \tilde{R} \mapsto \tilde{R}\tilde{P}.
+$$</p>
+<p>Both are $\mathbb{C}$-linear endomorphisms of $\mathbb{B}$, and both are determined by the element: $L_{\tilde{P}}(e_0) = \tilde{P}$ and $R_{\tilde{P}}(e_0) = \tilde{P}$. Their <strong>composition rules</strong> are the associativity of the product read on the maps,</p>
+<p>$$
+L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}, \qquad\qquad R_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}\tilde{P}},
+$$</p>
+<p>and the two families <strong>commute</strong> with one another,</p>
+<p>$$
+L_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}}\circ L_{\tilde{P}},
+$$</p>
+<p>for every pair, because $\tilde{P}(\tilde{R}\tilde{Q}) = (\tilde{P}\tilde{R})\tilde{Q}$ is the same associativity. The first of the two rules is the one the article turns on: <strong>the left multiplications compose into the left multiplication of the product</strong>, so the correspondence between elements and left multiplications respects the multiplication, whereas the right multiplications compose in the reverse order, since the product is not commutative.</p>
+<h3 id="the-regular-representation">The Regular Representation</h3>
+<p>The rule $L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$ has a name and a consequence. The map</p>
+<p>$$
+\tilde{Q}\;\longmapsto\; L_{\tilde{Q}}
+$$</p>
+<p>is an <strong>injective algebra homomorphism</strong> from $\mathbb{B}$ into the endomorphisms of $\mathbb{B}$: it is linear, it respects the product by the rule, it carries $e_0$ to the identity map, and it is injective because $L_{\tilde{Q}}(e_0) = \tilde{Q}$ recovers the element from the map. This is the <strong>left regular representation</strong> of the algebra, and it is the abstract content of the two regular-matrix operator articles: what those articles tabulate in matrices is the image of this homomorphism, $L_{\tilde{Q}}$ read in the coefficient basis.</p>
+<h2 id="the-monoid-of-acting-maps">The Monoid of Acting Maps</h2>
+<p>The image of the regular representation is the set of left multiplications,</p>
+<p>$$
+\mathcal{L} = \{\,L_{\tilde{Q}} \;:\; \tilde{Q}\in\mathbb{B}\,\},
+$$</p>
+<p>and its structure is fixed by the composition rule. Composition of maps is associative always, so $\mathcal{L}$ is <strong>associative</strong>; the identity element is the left multiplication by the algebra's unit, $L_{e_0} = \mathrm{id}$; and $\mathcal{L}$ is closed under composition by the rule. Therefore</p>
+<p>$$
+(\mathcal{L},\,\circ,\;L_{e_0})
+$$</p>
+<p>is a <strong>monoid</strong>: a set with an associative product and an identity. It is not a group, and the reason is the algebra's zero divisors. The element $L_{\tilde{Q}}$ is invertible <strong>iff</strong> $\tilde{Q}$ is a unit, that is iff $N(\tilde{Q})\neq0$, in which case $L_{\tilde{Q}}^{-1} = L_{\tilde{Q}^{-1}}$ with $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$; if $N(\tilde{Q}) = 0$ the element is a zero divisor and $L_{\tilde{Q}}$ is not invertible. So the group of units of the monoid is the image of the group of invertible elements, and <strong>the zero divisors are the non-invertible maps</strong>.</p>
+<p>Two features of the monoid are read physically and are stated here before the reading. The first is that the monoid is <strong>oriented</strong>. Since the product does not commute, $L_{\tilde{P}\tilde{Q}}\neq L_{\tilde{Q}\tilde{P}}$ in general, so the composition of the maps remembers the order of the operations; the element is an <strong>ordered</strong> operation and not a magnitude, and the same two operations composed in the two orders give two different maps. This is the map-level form of the corpus's statement that the material composition is oriented and cannot measure. The second is that the monoid has a <strong>zero</strong>: the zero element of the algebra gives the zero map, $L_0 = 0$, and it is absorbing, $L_{\tilde{Q}}\circ L_0 = L_0$. A monoid with a zero and with non-invertible elements is exactly the shape of a set of <strong>processes</strong> that can be composed and that can fail to be reversed, and this is the shape the reading uses.</p>
+<h2 id="units-and-zero-divisors-the-boundary-of-the-monoid">Units and Zero Divisors: the Boundary of the Monoid</h2>
+<p>The invertibility of the maps cuts the algebra into two classes, and the cut is the light cone. An element is a <strong>unit</strong> iff $N(\tilde{Q})\neq0$, that is off the null cone; and it is a <strong>zero divisor</strong> iff it is null, on the cone. In the monoid this is the boundary between the invertible maps and the non-invertible ones:</p>
+<p>$$
+\underbrace{N(\tilde{Q})\neq0}_{\text{units, invertible maps}} \qquad\big|\qquad \underbrace{N(\tilde{Q})=0}_{\text{zero divisors, non-invertible maps}} ,
+$$</p>
+<p>and the boundary is the light cone $N = 0$, the locus the corpus reads as the causal boundary. A process off the cone can be undone by its inverse map; a process on the cone cannot, because the map has a kernel. The article records the identification: <strong>the group of units of the monoid is the off-cone part of the algebra, and the cone is the set of processes that cannot be reversed.</strong></p>
+<h2 id="the-sandwich-as-a-composition-of-two-actions">The Sandwich as a Composition of Two Actions</h2>
+<p>The operator of the two matrix articles is the composition of a left action with a right action. With the Hermitian conjugation ${}^{*}$,</p>
+<p>$$
+\operatorname{H}_{\tilde{Q}}(\tilde{R}) = \tilde{Q}\tilde{R}\tilde{Q}^{*} = L_{\tilde{Q}}\bigl(R_{\tilde{Q}^{*}}(\tilde{R})\bigr) = (L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}})(\tilde{R}),
+$$</p>
+<p>so that</p>
+<p>$$
+\operatorname{H}_{\tilde{Q}} = L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}.
+$$</p>
+<p>This is the abstract form of both matrix statements. Read in the coefficient basis it is the $4\times4$ regular operator, the product of the left regular matrix of $\tilde{Q}$ and the right regular matrix of its conjugate, $\rho_L(\tilde{Q})\circ\rho_R(\tilde{Q}^{*})$; read through the matrix image $\Phi$ it is the congruence $X\mapsto M X M^{\dagger}$. The two operator articles are the two matrix forms of one composition, and the composition is taken in the monoid above. The sandwich is the composite of a left multiplication (an element of $\mathcal{L}$) with a right multiplication (an element of the opposite monoid $\mathcal{R}$), so it lies in the larger monoid generated by both actions and it is generally <strong>not</strong> a left multiplication: $\operatorname{H}_{\tilde{Q}}$ equals $L_{\tilde{Q}\tilde{Q}^{*}}$ exactly when $\tilde{Q}$ is central, and otherwise the two differ. That is the map-level reason the sandwich is a congruence and not a similarity, and it is why the corpus reads it as a transformation rather than as a state.</p>
+<h2 id="the-state-side-idempotents">The State Side: Idempotents</h2>
+<p>The states of the framework are <strong>idempotents</strong>, the elements with $\tilde{P}^2 = \tilde{P}$. Under the regular representation an idempotent element gives an idempotent map,</p>
+<p>$$
+\tilde{P}^2 = \tilde{P} \quad\Longleftrightarrow\quad L_{\tilde{P}}\circ L_{\tilde{P}} = L_{\tilde{P}},
+$$</p>
+<p>since $L_{\tilde{P}}^2 = L_{\tilde{P}^2}$ and the representation is injective. So the dictionary has both entries on the same footing: <strong>idempotent elements are idempotent maps</strong>, and a projection of the framework is at once an element and the map it generates. The corpus fixes where they live. There is no nonzero idempotent in the material sector $\mathbb{M}_-$; the idempotents lie in the informational sector $\mathbb{M}_+$; and the <strong>minimal</strong> idempotents are the rank-one projections, $\tilde{\Pi}\tilde{Q}\tilde{\Pi} = \mathrm{Sc}(\tilde{\Pi}\tilde{Q})\tilde{\Pi}$, whose images are the single Hermitian lines the corpus reads as pure states and as the vacua of single modes. A minimal idempotent gives a <strong>rank-one</strong> map, the algebraic shape of a measurement outcome, and its element is <strong>null</strong>, $N(\tilde{\Pi}) = 0$, so the states sit on the light cone.</p>
+<h2 id="the-reading-the-process-is-the-map-the-state-is-the-idempotent">The Reading: the Process Is the Map, the State Is the Idempotent</h2>
+<p>The dictionary is now complete and it is read in one paragraph. An element of the algebra has two faces. Its face as a <strong>process</strong> is the map it generates, the left multiplication $L_{\tilde{Q}}$, and the processes form a monoid: they compose associatively, the order matters, the identity is the unit, and the reversible ones are the units off the light cone. Its face as a <strong>state</strong> is the idempotent it can be, and the states are the projections of the informational sector. The two faces are different objects of the same algebra: a <strong>process</strong> is a map, invertible exactly off the cone, and a <strong>state</strong> is an idempotent, the minimal ones null and sitting on the cone.</p>
+<p>Read physically, the reading is the framework's <strong>process–state split</strong> stated algebraically. A physical operation that can be composed and undone is a left multiplication of the monoid, off the cone; a measurement is a projection, an idempotent of the informational sector; and the collapse of a measurement is the passage from an invertible map to a non-invertible one, which the sandwich of the operator articles performs on the cone. The framework's own version of this passage is <em>Decoherence as Idempotent Projection</em> and the rank-one collapse read in <em>The 2×2 Matrix Operator Representation of Biquaternions</em>; the map-level statement here is that the collapse is a <strong>non-invertible element of the monoid</strong>, and the reversible dynamics is the group of its units. The algebra supplies both, and it supplies the light cone as the boundary between the reversible and the non-reversible.</p>
+<h2 id="what-the-reading-does-not-claim">What the Reading Does Not Claim</h2>
+<ul>
+<li>The reading does <strong>not</strong> add an operator algebra structure to the states. The monoid of maps is not a $C^{*}$-algebra, the idempotents are not given a trace rule by it, and the states remain the idempotents of the framework; the trace and the positivity are <em>Mass, Rank and the Positivity of the Dagger</em>.</li>
+<li>It does <strong>not</strong> claim that an element <em>is</em> an operator in the quantum sense. The left multiplication is a $\mathbb{C}$-linear map of the algebra, and the reading identifies the <strong>process</strong> with that map; whether the map is a quantum channel is a further question, and the completely positive form is read in the $2\times2$ article and not owned here.</li>
+<li>It does <strong>not</strong> claim that a non-invertible map is automatically a measurement. The zero divisors give kernels; a measurement needs a projection onto a state, which is the idempotent side, and the passage from one to the other is the collapse and not the mere vanishing of $N$.</li>
+<li>It does <strong>not</strong> turn the associativity of the monoid into a physical statement about time ordering. That the composition of the maps is associative is a theorem about composition, true for any algebra; what is read physically is the <strong>order</strong> encoded in $L_{\tilde{P}\tilde{Q}}\neq L_{\tilde{Q}\tilde{P}}$, not the associativity.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>An element of the biquaternion algebra generates two $\mathbb{C}$-linear maps, the left multiplication $L_{\tilde{Q}}$ and the right multiplication $R_{\tilde{Q}}$, with $L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$ and $R_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}\tilde{P}}$. The left multiplications form a <strong>monoid</strong> under composition: associative, with identity $L_{e_0}$, closed by the product rule. The element-to-map correspondence is the injective left regular representation, and it is the abstract content of the two regular-matrix operator articles. The units of the monoid are exactly the off-cone elements, the zero divisors are the non-invertible maps, and the light cone is the boundary between them.</p>
+<p>The sandwich of the two matrix articles is the composition of a left action with a right action, $\operatorname{H}_{\tilde{Q}} = L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$, which is why it is a congruence and not a similarity. The states are the idempotents, and idempotent elements are idempotent maps under the injective representation; they lie in $\mathbb{M}_+$ and not in $\mathbb{M}_-$, the minimal ones are the rank-one projections, and those are null and sit on the cone. The reading is the process–state split: the process is the map of the monoid, the state is the idempotent, the reversible dynamics is the group of units off the cone, and the measurement is the passage to a non-invertible map on it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\tilde{P}}$, $R_{\tilde{P}}$</td>
+<td>left and right multiplication by $\tilde{P}$, $L_{\tilde{P}}(\tilde{R})=\tilde{P}\tilde{R}$, $R_{\tilde{P}}(\tilde{R})=\tilde{R}\tilde{P}$</td>
+</tr>
+<tr>
+<td>$L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$</td>
+<td>the composition rule of the left multiplications</td>
+</tr>
+<tr>
+<td>$\mathcal{L} = \{L_{\tilde{Q}}\}$</td>
+<td>the monoid of left multiplications</td>
+</tr>
+<tr>
+<td>$L_{e_0}$</td>
+<td>the identity of the monoid</td>
+</tr>
+<tr>
+<td>$\rho_L, \rho_R$</td>
+<td>the regular matrices of the $4\times4$ article</td>
+</tr>
+<tr>
+<td>$\Phi$, $M = \Phi(\tilde{Q})$</td>
+<td>the matrix image and its matrix</td>
+</tr>
+<tr>
+<td>$\operatorname{H}_{\tilde{Q}} = L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$</td>
+<td>the sandwich as a composition of a left and a right action</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q})$</td>
+<td>the biquaternion norm; $N\neq0$ units, $N=0$ zero divisors</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$</td>
+<td>the inverse of a unit</td>
+</tr>
+<tr>
+<td>$\tilde{P}^2=\tilde{P}$</td>
+<td>an idempotent; the projections of $\mathbb{M}_+$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The 2×2 Matrix Operator Representation of Biquaternions</em> — the sandwich as the congruence $X\mapsto M X M^{\dagger}$, the completely positive form, and the rank-one collapse.</li>
+<li><em>The 4×4 Regular Matrix Operator Representation of Biquaternions</em> — the sandwich as $\rho_L(\tilde{Q})\circ\rho_R(\tilde{Q}^{*})$ and the regular matrices.</li>
+<li><em>Biquaternion Norm and Invertibility</em> — the units, the zero divisors, the inverse $\tilde{Q}^{\natural}/N(\tilde{Q})$ and the light cone.</li>
+<li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> and <em>Biquaternion Ideals and Peirce Decomposition</em> — the idempotents, the minimal idempotents and the rank-one projections.</li>
+<li><em>Why the Material Composition Is Oriented and Cannot Measure</em> — the order of the material composition and the absence of a projection in $\mathbb{M}_-$.</li>
+<li><em>Decoherence as Idempotent Projection</em> — the framework's reading of the collapse as an idempotent.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
