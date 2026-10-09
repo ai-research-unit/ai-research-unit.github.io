@@ -329,7 +329,9 @@ Second, the corpus already follows this principle where it matters, and the patt
 
 ## Physical Readings
 
-The constants can be read as the two ends of one clock. The central phase is periodic with period $2\pi$, and the clock of the framework ticks by a quarter of that period; $\hbar$ is then the conversion of that angle into action, so the quantisation of action and the period of the central rotation are two readings of one fact (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). Read for invariance, the algebra fixes the algebra and not the scale: the scale $\lambda$, $c$ and $\hbar$ are points of entry, and the dimensionless period $2\pi$ of the central rotation is what none of them can change.
+The constants can be read as the two ends of one clock. The central phase is periodic with period $2\pi$, and the clock of the framework ticks by a quarter of that period; $\hbar$ is then the conversion of that angle into action, so the quantisation of action and the period of the central rotation are two readings of one fact (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). Read for invariance, the algebra fixes the algebra and not the scale: the scale $\lambda$, $c$ and $\hbar$ are points of entry, and the dimensionless period $2\pi$ of the central rotation is what none of them can change. One further reading of the constants can be named.
+
+- **Common-scale reading.** The material time and the informational time are the imaginary and the real projections of one central coordinate, and the same $c$ makes both of them lengths, so $c$ is the one scale shared by the two clocks while the exchange between the clocks is the central $i$ and not $c$. Boundary: the reading separates the scale from the exchange, so $c$ is not read as converting one sector into the other.
 
 ## Summary
 

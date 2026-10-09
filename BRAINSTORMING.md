@@ -331,7 +331,7 @@ Can you elaborate on physical interpretations ?
 
 The question is not "is this already in the corpus?" The question is: what are the possible physical readings these specific articles of the head categories can carry (The biquaternion universe and the mathematical physics). They may be new or in other articles of the corpus.
 
-Some ideas may be very close, they could be added both. Only in case 2 ideas are OBVIOUSLY equivalent should they not be added both. 
+Some ideas may be very close, they could be added both. Only in case 2 ideas are OBVIOUSLY equivalent should they not be added both.
 
 
 
@@ -342,7 +342,7 @@ Your job is 1. to implement the ideas in the head articles 2. to tell if some id
 
 
 
-
+Do any readings would deserve an new article or a part in an existing article of the corpus ?
 
 
 

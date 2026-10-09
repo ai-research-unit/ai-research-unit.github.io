@@ -239,7 +239,9 @@ In each route the decisive question is whether the new input is **forced** by th
 
 ## Physical Readings
 
-The reading that matters for this article is which readings are testable. The frame-independent content — the sesquilinear pair, the zero-divisor cone and the period $2\pi$ of the central phase — is where a signature would have to sit, because the interval and the composition move with the local complex structure and a change of them is not an observable (*Conventions in the Biquaternion Universe*). The clock reading of the sector exchange is on the other side of the line: it reorganises existing structures and adds no prediction, so the article's inventory of candidate signatures is unchanged by it.
+The reading that matters for this article is which readings are testable. The frame-independent content — the sesquilinear pair, the zero-divisor cone and the period $2\pi$ of the central phase — is where a signature would have to sit, because the interval and the composition move with the local complex structure and a change of them is not an observable (*Conventions in the Biquaternion Universe*). The clock reading of the sector exchange is on the other side of the line: it reorganises existing structures and adds no prediction, so the article's inventory of candidate signatures is unchanged by it. A further named reading can be added.
+
+- **Selection-rule reading.** The invariance under a change of the local complex structure is read as a selection rule for observable content: only the content the change cannot move — the sesquilinear pair, the zero-divisor cone and the period $2\pi$ — can carry a signature, so the rule excludes a candidate before any experiment is run and is the framework's own filter on its inventory. Boundary: a selection rule is not a prediction, the inventory of candidate signatures is unchanged, and the invariance statement is owned by *The Local Complex Structure and the Speed of Light*.
 
 ## Summary
 

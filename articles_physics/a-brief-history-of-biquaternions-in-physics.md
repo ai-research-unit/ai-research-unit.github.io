@@ -286,7 +286,9 @@ The distinction on which this turns is between an algebra **containing** a struc
 
 ## Physical Readings
 
-The historical objects can be read in the framework's own terms, and the article invites that. Hamilton's bivectors of square zero are the null directions of the biquaternion norm, that is, the zero-divisor cone read as light; Clifford's rotors are the sandwich action, that is, the isometries of the four forms; and the split-biquaternion algebra of the *Preliminary Sketch* is the two-sector structure $\mathbb{M}_\pm$, so the material–informational split has a nineteenth-century ancestor. Read that way the history is not a list of anticipations but a record of which algebraic object each physical reading was first attached to.
+The historical objects can be read in the framework's own terms, and the article invites that. Hamilton's bivectors of square zero are the null directions of the biquaternion norm, that is, the zero-divisor cone read as light; Clifford's rotors are the sandwich action, that is, the isometries of the four forms; and the split-biquaternion algebra of the *Preliminary Sketch* is the two-sector structure $\mathbb{M}_\pm$, so the material–informational split has a nineteenth-century ancestor. Read that way the history is not a list of anticipations but a record of which algebraic object each physical reading was first attached to. One further reading can be named.
+
+- **Lost-imaginary reading.** The displacement of the quaternions by the vector calculus is read as the loss of the imaginary part of the complex coefficient: the vector calculus kept the real vector part and dropped the $i$ that the biquaternion coefficient carries, which is why the relativistic and the quantum readings of one algebra later appeared as two separate theories. Boundary: the reading is historical and does not claim that the vector calculus is wrong, only that the algebra it kept is one real slice of the biquaternion algebra.
 
 ## Summary
 

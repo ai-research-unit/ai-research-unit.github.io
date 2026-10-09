@@ -228,7 +228,7 @@ The plain form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ c
 | $\mathrm{Inn}(\mathbb{B})\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C})$ | The rotation group of the vector subspace $V$ |
 | $\mathrm{SL}_2(\mathbb{C})/\{\pm e_0\}\cong SO_3(\mathbb{C})$ | The classical two-to-one cover, by normalising $N$ |
 | $\{\pm\mathrm{Ad}_{\tilde A}\}$ | The two-sided isometries; $\det=+1$; dimension three of six |
-| $\rho_{\tilde U}(\tilde X)=\tilde X-2\langle\tilde X,\tilde U\rangleq(\tilde U)^{-1}\tilde U$ | The reflection; an isometry of determinant $-1$, **not** two-sided |
+| $\rho_{\tilde U}(\tilde X)=\tilde X-2\langle\tilde X,\tilde U\rangle q(\tilde U)^{-1}\tilde U$ | The reflection; an isometry of determinant $-1$, **not** two-sided |
 | $\rho_{e_1}\rho_{e_2}=\mathrm{Ad}_{e_3}$ | Two vector reflections make an inner automorphism |
 | $\langle\Theta_{\tilde A}\tilde X,\Theta_{\tilde A}\tilde Y\rangle_{\natural}=N(\tilde A)^{2}\langle\tilde X,\tilde Y\rangle_{\natural}$ | The quaternionic isometry condition $N=\pm1$; vacuous for the plain form |
 

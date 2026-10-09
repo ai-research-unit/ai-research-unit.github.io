@@ -340,7 +340,9 @@ The correspondences above are what the physical articles read the algebra throug
 
 ## Physical Readings
 
-The index reads as the source of the framework's translations: every physical object of the series has two matrix images, and the correspondences are why a result proved for matrices can be read as a statement about an element. Read for invariance, the table is also an invariance table: the trace corresponds to the scalar part and the determinant to the norm, so the two matrix invariants are the two quantities that survive a change of the representation. Read on the clock, the central imaginary corresponds to a scalar matrix, which is the matrix reading of its centrality.
+The index reads as the source of the framework's translations: every physical object of the series has two matrix images, and the correspondences are why a result proved for matrices can be read as a statement about an element. Read for invariance, the table is also an invariance table: the trace corresponds to the scalar part and the determinant to the norm, so the two matrix invariants are the two quantities that survive a change of the representation. Read on the clock, the central imaginary corresponds to a scalar matrix, which is the matrix reading of its centrality. One further reading of the index can be named.
+
+- **Element-data and map-data reading.** The matrix images come in two kinds: the $2\times2$ spinor image acts on the data an object acts on, and the $4\times4$ regular image acts on the objects themselves, so the two pictures are read as the element-like data and the map-like data of one description, with $\rho_L\cong\Phi\oplus\Phi$ the dictionary between them. Boundary: the two are one representation taken twice, and the analogy is offered as a reading and not as an identification of two theories.
 
 ## Summary
 

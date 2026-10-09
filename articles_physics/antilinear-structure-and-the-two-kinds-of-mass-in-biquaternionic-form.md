@@ -184,6 +184,19 @@ $$
 
 The algebras and the modules of this framework have parallel vocabularies — conjugation, real structure, sectors, chirality — and the parallel is not an identity. A statement about $\flat$ is a statement about the algebra; a reality condition on a fermion is a statement about the module. Moving between them requires a construction, not a substitution.
 
+### The Four Levels of the Name
+
+The word "charge conjugation" is used at four levels in the corpus, and the table below fixes which object each level names. The name itself is reserved for **level 3**, the operation on the Dirac module. The levels above it are structures of the pairing, and the level-1 map $\flat$ carries the *shape* of the pairing and not the operation.
+
+| level | object | space | what it is |
+|---|---|---|---|
+| 1, the algebra | $\flat=-{}^{*}$ | $\mathbb{B}$, real dim $8$ | the algebra's real structure, fixed space $\mathbb{M}_-$; the **shape** of a charge-conjugation pairing |
+| 2, the Clifford algebra | $\bar{A}=\Pi A^{*}\Pi^{-1}$ | $\mathrm{Cl}_{p,q}$ | the charge-conjugation **pseudoautomorphism**; $\Pi$ is odd and lies outside $\mathbb{B}$ |
+| 3, the module | $C[\psi]=i\gamma^{2}\psi^{*}$ | $\Delta$ | **charge conjugation**; the particle–antiparticle operation |
+| 4, the module real structure | $\bar{\cdot}$ | $\Delta\cong S\oplus\bar{S}$ | the fixed-point real structure transported to the module; fixed points $\mathbb{H}_{\mathbb{B}}$ |
+
+The levels are the corpus's own statements, each made in the article that owns it: the character reading of $\flat$ and the two labelled dictionaries are *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*; the subspace reading of $\flat$ is *Relations Between Subspaces*; the level-3 passage, with the explicit statement that it is not the coefficient conjugation, is *Particle Types, Discrete Charge and Three-Particle Couplings*; the pseudoautomorphism and the division-ring sign of $C^{2}$ are *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*; the level-4 identification is *The Neutrino and Majorana Fermions in Biquaternionic Form*; and the separation of all of them from the real structure on the value space of a scalar field is *The Quantized Scalar Field in Biquaternionic Form*. The $\mathbb{M}_\pm$ split itself is defined by the algebra-level map, so the level-1 object is also what makes $\mathbb{M}_-$ the material sector; the levels are not rivals but a chain, and no level may be substituted for another.
+
 ## Charge Conjugation, the $\mathrm{Spin}^c$ Structure and the Neutral Spinors
 
 The preceding section separates the algebra's $\flat$ from the module's $\mathcal{C}$ and keeps the two apart. Having separated them, it is worth asking what else acts on the module. Besides the Lorentz action there is an extra central circle, and the group that includes both is $\mathrm{Spin}^c$.
@@ -272,6 +285,27 @@ The nullity table is easy to misread in two opposite ways, and both errors are w
 
 So the correct statement is narrower than "the antilinear equation was wrong", and sharper than "the antilinear equation was a slip". The framework had **two** real structures and used one where the other was meant; the dispersion is the physical signature of the substitution.
 
+### The Four Involutions and the Mass Shell
+
+The retired equation is one of four. For each involution $J$ of the algebra the single-field equation
+
+$$
+\tilde{\nabla}\tilde{\Psi} = m\,J(\tilde{\Psi})
+$$
+
+is formed with the same gradient and the same mass. The three antilinear involutions conjugate the phase, so as in the equation above the minimal ansatz is the two-frequency superposition, a system of $16$ real unknowns; the linear involution leaves the phase alone, a single frequency suffices there, and the count is that of an $8$-unknown system. The table gives the dimension of the solution space in each case, quoted for a representative momentum and independent of it within a row.
+
+| involution | type | fixed space | timelike $k_0^2 = \mathbf{k}^2 + m^2$ | spacelike $\mathbf{k}^2 = k_0^2 + m^2$ |
+|---|---|---|---|---|
+| quaternion conjugation ${}^{\natural}$ | linear | $\mathbb{C}_{\mathbb{B}}$, real dim $2$ | $2$ | $0$ |
+| complex conjugation $\bar{\cdot}$ | antilinear | $\mathbb{H}_{\mathbb{B}}$, real dim $4$ | $0$ | $8$ |
+| Hermitian conjugation ${}^{*}$ | antilinear | $\mathbb{M}_+$, real dim $4$ | $0$ | $4$ |
+| anti-Hermitian conjugation $\flat=-{}^{*}$ | antilinear | $\mathbb{M}_-$, real dim $4$ | $0$ | $4$ |
+
+The fourth row is the retired equation, and its $0$ and $4$ reproduce the table of the previous section. The third row is the same system with $m$ replaced by $-m$, because $\flat=-{}^{*}$, so the two sector fixed spaces share their nullities: a Hermitian self-pairing and an anti-Hermitian one fail in the same way, with the same four-real-dimensional spacelike family. The second row is worse still, with a spacelike family of eight. The first row is the one linear involution of the four, and it is not a candidate mass: as the first point of the summary records, it is the one whose fixed space is not a sector, and it supplies no reality condition. It is listed as a **control**, because it is the only transformation in the table that is *not* antilinear, and the contrast is what shows which property does the work.
+
+The four rows are the reason the diagnosis can be stated exactly. The failure is **not** a property of $\flat$ alone, nor of the choice among the three antilinear involutions: it is a property of **every antilinear self-pairing of the algebra**, which is why the retired equation could be rewritten with ${}^{*}$ or with $\bar{\cdot}$ and fail identically. And the failure is **not** forced by the *form* of a self-pairing either, since the lone linear involution has a healthy timelike dispersion and none spacelike. The discriminator is therefore neither the linearity of the pair nor the particular involution, and it is the one the article has isolated all along: **the space on which the pairing is defined**. A pairing built on the algebra's own involutions, antilinear or not, is a pairing on $\mathbb{B}$; the physical antilinear mass is built on the *module*'s real structure $\mathcal{C}$, and its mass shell is the ordinary one. The spacelike locus is the signature of an algebra-level pairing, and reading the table with that in mind turns the retired equation from a mistake into the fourth line of a classification.
+
 ## What the Antilinear Structure Is For
 
 The algebra's real structure is retained, and the companion articles use the antilinear structure in four ways, none of which is a Dirac mass.
@@ -298,7 +332,7 @@ In every one of these uses the coupling pairs the field with its conjugate, and 
 
 5. **The $\mathrm{Spin}^c$ structure organises charge conjugation, and it decides who is charged.** $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times U(1)\bigr)/\{\pm 1\}$ is the spin group extended by a central circle, and the framework's central $U(1)$ — the phase that minimal coupling localizes — is that circle. Being central it commutes with $\gamma_5$ and is therefore **vector-like**: the electromagnetic $U(1)$, not a chiral one. A Dirac spinor carries it; a Majorana or ELKO spinor is fixed by an antilinear condition and is blind to it, hence neutral. It is the module's $\mathcal{C}$, not the algebra's $\flat$, that enforces the neutrality.
 
-6. **The retired equation failed on its dispersion.** Its central-phase plane waves have nullity $0$ on the timelike shell and $4$ on the spacelike one, so its modes are spacelike. Verified by elimination in the block representation.
+6. **The retired equation failed on its dispersion.** Its central-phase plane waves have nullity $0$ on the timelike shell and $4$ on the spacelike one, so its modes are spacelike. Verified by elimination in the block representation. It is one of four: every antilinear self-pairing of the algebra shares the spacelike locus — nullity $4$ on the two sector fixed spaces and $8$ on the real-quaternion one — while the single linear involution has a timelike solution space and none spacelike.
 
 7. **The failure was the pairing, not the antilinearity.** A Majorana mass is antilinear and physical. The retired equation paired a field with the algebra's conjugate, on a space where its kinetic operator does not respect it.
 
