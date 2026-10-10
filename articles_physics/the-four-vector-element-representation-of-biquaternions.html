@@ -110,12 +110,12 @@ Q^{\mathsf{T}} = \begin{pmatrix} Q^0 & Q^1 & Q^2 & Q^3 \end{pmatrix}.
 $$</p>
 <p>The column is the transcribed form of the quadruple, and it is convenient because the product of biquaternions is bilinear. For a fixed $\tilde{Q}$ the map $\tilde{R} \mapsto \tilde{Q}\tilde{R}$ sends the coefficients of $\tilde{R}$ linearly to the coefficients of the product, so it is a $\mathbb{C}$-linear endomorphism of the coefficient space, and with the column convention it is written as a $4 \times 4$ matrix acting on the column of $\tilde{R}$:</p>
 <p>$$
-\widetilde{\tilde{Q}\tilde{R}} \longleftrightarrow \rho_L(\tilde{Q})\, R .
+\widetilde{\tilde{Q}\tilde{R}} \longleftrightarrow \operatorname{mat}_4(\tilde{Q})\, R .
 $$</p>
-<p>The matrix $\rho_L(\tilde{Q})$ is the matrix of left multiplication; its entries are the coefficients of $\tilde{Q}$ with signs and no additions, and it is constructed and verified in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. The present article records only that the product admits this reading.</p>
+<p>The matrix $\operatorname{mat}_4(\tilde{Q})$ is the matrix of left multiplication; its entries are the coefficients of $\tilde{Q}$ with signs and no additions, and it is constructed and verified in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. The present article records only that the product admits this reading.</p>
 <p><strong>The row is the dual, not a further representation.</strong> The row $Q^{\mathsf{T}}$ is the element of the dual space paired with the column by the standard pairing, and the dual of a left module is a right module: it carries the <em>right</em> action, $(\varphi\cdot\tilde{Q})(\tilde{R}) = \varphi(\tilde{Q}\tilde{R})$. The transpose that relates the column picture to the row picture is dressed with quaternion conjugation, so that the transpose of the left matrix of $\tilde{Q}$ is the left matrix of the quaternion conjugate,</p>
 <p>$$
-\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural}),
+\operatorname{mat}_4(\tilde{Q})^{\mathsf{T}} = \operatorname{mat}_4(\tilde{Q}^{\natural}),
 $$</p>
 <p>which is proved in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. A column and a row are the same four complex numbers written in two layouts, and a change of layout is a change of bookkeeping, not a change of representation. The corpus counts three objects in this group — the coefficient space, the algebra acting on its simple module, and the algebra acting on itself — and it does not count the two layouts separately.</p>
 <h2 id="multiplication-in-four-vector-form">Multiplication in Four-Vector Form</h2>
@@ -441,8 +441,8 @@ $$</p>
 <td>The column and the dual row of the four-vector</td>
 </tr>
 <tr>
-<td>$\rho_L(\tilde{Q})$, $\rho_R(\tilde{Q})$</td>
-<td>Matrices of left and right multiplication, constructed in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>; $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural})$</td>
+<td>$\operatorname{mat}_4(\tilde{Q})$, $\operatorname{mat}_4^{R}(\tilde{Q})$</td>
+<td>Matrices of left and right multiplication, constructed in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>; $\operatorname{mat}_4(\tilde{Q})^{\mathsf{T}} = \operatorname{mat}_4(\tilde{Q}^{\natural})$</td>
 </tr>
 <tr>
 <td>$\epsilon^{ijk}$</td>

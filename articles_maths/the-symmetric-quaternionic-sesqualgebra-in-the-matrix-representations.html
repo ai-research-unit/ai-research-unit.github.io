@@ -64,9 +64,9 @@ $$</p>
 <p>$$
 \Phi(\tilde P\star\tilde Q)=\tfrac12\bigl(\mathrm{adj}\,\Phi(\tilde P)\,\Phi(\tilde Q)^{\dagger}+\Phi(\tilde Q)^{\dagger}\,\mathrm{adj}\,\Phi(\tilde P)\bigr).
 $$</p>
-<p>In the four-by-four regular model the left regular matrix $\rho_L(\tilde Q)$ satisfies $\rho_L(\tilde Q^{\natural})=\rho_L(\tilde Q)^{T}$ and $\rho_L(\tilde Q^{*})=\rho_L(\tilde Q)^{\dagger}$, and the same symmetrisation appears:</p>
+<p>In the four-by-four regular model the left regular matrix $\operatorname{mat}_4(\tilde Q)$ satisfies $\operatorname{mat}_4(\tilde Q^{\natural})=\operatorname{mat}_4(\tilde Q)^{T}$ and $\operatorname{mat}_4(\tilde Q^{*})=\operatorname{mat}_4(\tilde Q)^{\dagger}$, and the same symmetrisation appears:</p>
 <p>$$
-\rho_L(\tilde P\star\tilde Q)=\tfrac12\bigl(\rho_L(\tilde P)^{T}\rho_L(\tilde Q)^{\dagger}+\rho_L(\tilde Q)^{\dagger}\rho_L(\tilde P)^{T}\bigr).
+\operatorname{mat}_4(\tilde P\star\tilde Q)=\tfrac12\bigl(\operatorname{mat}_4(\tilde P)^{T}\operatorname{mat}_4(\tilde Q)^{\dagger}+\operatorname{mat}_4(\tilde Q)^{\dagger}\operatorname{mat}_4(\tilde P)^{T}\bigr).
 $$</p>
 <p>The article computes the trace and the rank of the two matrix forms, the determinant, the diagonal and its deformation, and the matrix form of the Krein form $K$ with its Gram matrix and its indefinite cone.</p>
 <p>The two models are <em>The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Representation</em> and <em>The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Representation</em>; the form $K$ is <em>The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra</em>; the diagonal and its centrality are <em>The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra</em>; and the product is <em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em>.</p>
@@ -116,16 +116,16 @@ $$</p>
 <h2 id="the-four-by-four-regular-model">The Four-by-Four Regular Model</h2>
 <p><strong>Theorem (the product formula).</strong> In the regular representation,</p>
 <p>$$
-\rho_L(\tilde P\star\tilde Q)=\tfrac12\bigl(\rho_L(\tilde P)^{T}\rho_L(\tilde Q)^{\dagger}+\rho_L(\tilde Q)^{\dagger}\rho_L(\tilde P)^{T}\bigr).
+\operatorname{mat}_4(\tilde P\star\tilde Q)=\tfrac12\bigl(\operatorname{mat}_4(\tilde P)^{T}\operatorname{mat}_4(\tilde Q)^{\dagger}+\operatorname{mat}_4(\tilde Q)^{\dagger}\operatorname{mat}_4(\tilde P)^{T}\bigr).
 $$</p>
-<p><em>Proof.</em> The left regular matrix is multiplicative, $\rho_L(\tilde X\tilde Y)=\rho_L(\tilde X)\rho_L(\tilde Y)$, and it carries the natural conjugation to the transpose and the star conjugation to the conjugate transpose; applying it to the two orders gives the display. The formula was checked on fifty random pairs. $\square$</p>
+<p><em>Proof.</em> The left regular matrix is multiplicative, $\operatorname{mat}_4(\tilde X\tilde Y)=\operatorname{mat}_4(\tilde X)\operatorname{mat}_4(\tilde Y)$, and it carries the natural conjugation to the transpose and the star conjugation to the conjugate transpose; applying it to the two orders gives the display. The formula was checked on fifty random pairs. $\square$</p>
 <p><strong>Theorem (the invariants).</strong> For all biquaternions,</p>
 <p>$$
-\mathrm{Tr}\,\rho_L(\tilde P\star\tilde Q)=4K(\tilde P,\tilde Q),
+\mathrm{Tr}\,\operatorname{mat}_4(\tilde P\star\tilde Q)=4K(\tilde P,\tilde Q),
 \qquad
-\det\rho_L(\tilde P\star\tilde Q)=N(\tilde P\star\tilde Q)^{2},
+\det\operatorname{mat}_4(\tilde P\star\tilde Q)=N(\tilde P\star\tilde Q)^{2},
 $$</p>
-<p>and the rank of $\rho_L(\tilde P\star\tilde Q)$ is four exactly when $N(\tilde P\star\tilde Q)\neq0$.</p>
+<p>and the rank of $\operatorname{mat}_4(\tilde P\star\tilde Q)$ is four exactly when $N(\tilde P\star\tilde Q)\neq0$.</p>
 <p><em>Proof.</em> The trace of the regular matrix is four times the scalar part, so the trace of the half-sum is $4K$; the determinant of the regular matrix is $N(\tilde X)^{2}$, so the determinant of the value is $N(\tilde P\star\tilde Q)^{2}$; and a four-by-four matrix has rank four exactly when its determinant is nonzero. $\square$</p>
 <p><strong>Corollary (the trace of the operator in the model).</strong> The trace of the value is the same invariant in the two models up to the factor of the model: it is $2K$ in the two-by-two model and $4K$ in the four-by-four model.</p>
 <p><em>Proof.</em> The two displays of the trace theorems. $\square$</p>
@@ -134,7 +134,7 @@ $$</p>
 <p>$$
 K(\tilde P,\tilde Q)=\tfrac12\,\mathrm{Tr}\bigl(\mathrm{adj}\,\Phi(\tilde P)\,\Phi(\tilde Q)^{\dagger}\bigr),
 $$</p>
-<p>with Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis; in the regular model the same form is read from the trace of the regular matrices, $\mathrm{Tr}\,\rho_L(\tilde P\star\tilde Q)=4K(\tilde P,\tilde Q)$.</p>
+<p>with Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis; in the regular model the same form is read from the trace of the regular matrices, $\mathrm{Tr}\,\operatorname{mat}_4(\tilde P\star\tilde Q)=4K(\tilde P,\tilde Q)$.</p>
 <p><em>Proof.</em> The first display is the trace theorem; the Gram matrix is the matrix of $K$ on the coefficient basis. In the regular model the trace of the product is $4K$, which recovers $K$ up to the factor of the dimension. $\square$</p>
 <p><strong>Corollary (the indefinite cone in the model).</strong> The image of the isotropic cone of $K$ under $\Phi$ is the set of matrices</p>
 <p>$$
@@ -151,7 +151,7 @@ $$</p>
 <p><strong>The form recovered.</strong> $K(e_0,e_1)=0$: $\tfrac12\mathrm{Tr}(\mathrm{adj}\,I\cdot\Phi(e_1)^{\dagger})=\tfrac12\mathrm{Tr}((-i\sigma_1)^{\dagger})=0$, the traceless matrix.</p>
 <p><strong>The cone.</strong> $e_0+e_1$ is isotropic: $|1|^{2}=|1|^{2}$, and $\Phi(e_0+e_1)$ lies in the image cone.</p>
 <h2 id="summary">Summary</h2>
-<p>In the two-by-two model the block is the symmetrisation of the twisted matrix product, $\Phi(\tilde P\star\tilde Q)=\tfrac12(\mathrm{adj}\,\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}+\Phi(\tilde Q)^{\dagger}\mathrm{adj}\,\Phi(\tilde P))$, with trace $2K$, determinant $N(\tilde P\star\tilde Q)$ and rank two off the degeneracy set. In the four-by-four regular model the same symmetrisation reads $\rho_L(\tilde P\star\tilde Q)=\tfrac12(\rho_L(\tilde P)^{T}\rho_L(\tilde Q)^{\dagger}+\rho_L(\tilde Q)^{\dagger}\rho_L(\tilde P)^{T})$, with trace $4K$, determinant $N(\tilde P\star\tilde Q)^{2}$ and rank four off the degeneracy set. The diagonal is the scalar matrix of the form value minus the matrix of the mixed term; on the two witnesses $e_1$ and $e_1+ie_2$ it is the scalar matrices $-I$ and $-2I$, and the deformation away from the scalar matrices appears at $e_0+e_1$, where the matrix is $\begin{pmatrix}0&2i\\2i&0\end{pmatrix}$. The Krein form is $K(\tilde P,\tilde Q)=\tfrac12\mathrm{Tr}(\mathrm{adj}\,\Phi(\tilde P)\Phi(\tilde Q)^{\dagger})$, with Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis, and its indefinite cone maps into the matrices of zero form value.</p>
+<p>In the two-by-two model the block is the symmetrisation of the twisted matrix product, $\Phi(\tilde P\star\tilde Q)=\tfrac12(\mathrm{adj}\,\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}+\Phi(\tilde Q)^{\dagger}\mathrm{adj}\,\Phi(\tilde P))$, with trace $2K$, determinant $N(\tilde P\star\tilde Q)$ and rank two off the degeneracy set. In the four-by-four regular model the same symmetrisation reads $\operatorname{mat}_4(\tilde P\star\tilde Q)=\tfrac12(\operatorname{mat}_4(\tilde P)^{T}\operatorname{mat}_4(\tilde Q)^{\dagger}+\operatorname{mat}_4(\tilde Q)^{\dagger}\operatorname{mat}_4(\tilde P)^{T})$, with trace $4K$, determinant $N(\tilde P\star\tilde Q)^{2}$ and rank four off the degeneracy set. The diagonal is the scalar matrix of the form value minus the matrix of the mixed term; on the two witnesses $e_1$ and $e_1+ie_2$ it is the scalar matrices $-I$ and $-2I$, and the deformation away from the scalar matrices appears at $e_0+e_1$, where the matrix is $\begin{pmatrix}0&2i\\2i&0\end{pmatrix}$. The Krein form is $K(\tilde P,\tilde Q)=\tfrac12\mathrm{Tr}(\mathrm{adj}\,\Phi(\tilde P)\Phi(\tilde Q)^{\dagger})$, with Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis, and its indefinite cone maps into the matrices of zero form value.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -170,7 +170,7 @@ $$</p>
 <td>the block in the two-by-two model</td>
 </tr>
 <tr>
-<td>$\rho_L(\tilde P\star\tilde Q)=\tfrac12(\rho_L(\tilde P)^{T}\rho_L(\tilde Q)^{\dagger}+\rho_L(\tilde Q)^{\dagger}\rho_L(\tilde P)^{T})$</td>
+<td>$\operatorname{mat}_4(\tilde P\star\tilde Q)=\tfrac12(\operatorname{mat}_4(\tilde P)^{T}\operatorname{mat}_4(\tilde Q)^{\dagger}+\operatorname{mat}_4(\tilde Q)^{\dagger}\operatorname{mat}_4(\tilde P)^{T})$</td>
 <td>the block in the regular model</td>
 </tr>
 <tr>
@@ -178,7 +178,7 @@ $$</p>
 <td>trace and determinant in the two-by-two model</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}\,\rho_L(\tilde P\star\tilde Q)=4K$, $\det\rho_L=N^{2}$</td>
+<td>$\mathrm{Tr}\,\operatorname{mat}_4(\tilde P\star\tilde Q)=4K$, $\det\operatorname{mat}_4=N^{2}$</td>
 <td>trace and determinant in the regular model</td>
 </tr>
 <tr>
