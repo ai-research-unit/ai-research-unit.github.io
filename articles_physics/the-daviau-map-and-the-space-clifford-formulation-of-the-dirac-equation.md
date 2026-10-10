@@ -113,7 +113,7 @@ $$
 \Phi(\tilde Q^{*})=\sigma_2\,\overline{\Phi(\tilde Q)}\,\sigma_2 \qquad\text{for all } \tilde Q\in\mathbb B ,
 $$
 
-where $\bar{\cdot}$ on the left is the corpus's complex conjugation, the involution that fixes the real-quaternion subspace $\mathbb H_\mathbb{B}$ and negates $i\mathbb H_\mathbb{B}$ (*Biquaternion Algebra*, *Comparison of the Six Subspaces*).
+where $\bar{\cdot}$ on the left is the corpus's complex conjugation, the involution that fixes the real-quaternion subspace $\mathbb H_\mathbb{B}$ and negates $i\mathbb H_\mathbb{B}$ (*Conventions in the Biquaternion Universe*, *Comparison of the Six Subspaces*).
 
 *Proof.* On the basis $e_0,e_1,e_2,e_3$ of $\mathbb B$ the complex conjugation fixes every $e_\mu$ and conjugates the coefficients, while the star fixes $\mathbb 1$ and $i\sigma_k=\Phi(ie_k)$ and negates $\sigma_k=\Phi(ie_k)$ and $i=\Phi(i e_0)$. Since $\Phi(i e_0)=iI_2$ and $\Phi(ie_k)=\sigma_k$, the two assignments agree on the eight real basis elements $\{e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3\}$: both act as $+1$ on $e_\mu$ and as $-1$ on $ie_\mu$. A real-linear map is determined by its values on a real basis, so the two coincide. Equivalently, in the corpus's own matrix formula $\tilde Q^{*}\mapsto\varepsilon\,\overline{\Phi(\tilde Q)}\,\varepsilon^{-1}$ with $\varepsilon=\Phi(-e_2)=i\sigma_2$, and $\varepsilon\,\overline{M}\,\varepsilon^{-1}=\sigma_2\bar M\sigma_2$. The identity was verified on general elements.
 

@@ -106,14 +106,14 @@ are
 
 $$
 \begin{aligned}
-\mathrm{Sc}(\tilde P\tilde Q)&=\textstyle\sum_\mu\varepsilon_\mu P_\mu Q_\mu=P_0Q_0-P_1Q_1-P_2Q_2-P_3Q_3,\\
-\mathrm{Sc}(\tilde P^{\natural}\tilde Q)&=\textstyle\sum_\mu P_\mu Q_\mu=P_0Q_0+P_1Q_1+P_2Q_2+P_3Q_3,\\
-\mathrm{Sc}(\tilde P\tilde Q^{*})&=\textstyle\sum_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}+P_1\overline{Q_1}+P_2\overline{Q_2}+P_3\overline{Q_3},\\
-\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})&=\textstyle\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}-P_1\overline{Q_1}-P_2\overline{Q_2}-P_3\overline{Q_3}.
+B(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P\tilde Q)=\textstyle\sum_\mu\varepsilon_\mu P_\mu Q_\mu=P_0Q_0-P_1Q_1-P_2Q_2-P_3Q_3,\\
+N(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\textstyle\sum_\mu P_\mu Q_\mu=P_0Q_0+P_1Q_1+P_2Q_2+P_3Q_3,\\
+H(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P\tilde Q^{*})=\textstyle\sum_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}+P_1\overline{Q_1}+P_2\overline{Q_2}+P_3\overline{Q_3},\\
+K(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\textstyle\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}-P_1\overline{Q_1}-P_2\overline{Q_2}-P_3\overline{Q_3}.
 \end{aligned}
 $$
 
-The four general products are the four readings of §*The Four Readings* — composition, causality, probability
+The four scalar forms carry the short names $B$, $N$, $H$ and $K$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The four general products are the four readings of §*The Four Readings* — composition, causality, probability
 and gauge — and the four scalar forms above are what the two slots organise in §*What the Two Slots
 Decide*; restricted to the two sectors they carry the signs recorded in §*The Two Marks in the Scalar
 Form*.
@@ -716,7 +716,7 @@ has proved, and none adds a theorem.
   continuation $t\mapsto-i\tau$ of *The Wick Rotation in the Biquaternion Universe* is a **relabeling** of
   the time coordinate that holds the space real, is real-linear, and is not the multiplication by $i$. The
   two share the temporal sign flip and the time axis and diverge off it; the whole reading is
-  *The Central Rotation: Phase, Duality and the Wick Rotation as One Generator*.
+  *Conventions in the Biquaternion Universe*, §*The Central Map and Its Six Restrictions*.
 - **Phase and duality are one central $U(1)$.** The complex-time sector carries the global phase, the
   complex-space sector carries the field strength, and multiplication by the central $i$ is at once the phase
   rotation and the **duality rotation** of the field. Reading: one central $U(1)$ does both jobs.

@@ -385,5 +385,5 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector's basis, its four-vectors and the imaginary-scalar/real-vector structure on which the Lie-algebra decomposition rests.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector, the rotor action $\tilde{Q}\mapsto HXH^\dagger$, and the trace formula distinguished here from the matrix trace.
 - *Lie Algebras: A General Introduction* — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
-- *Quaternion Algebra* and *Biquaternion Algebra* — the multiplication rule, the conjugations and the centre used throughout.
+- *Quaternion Algebra* and *Conventions in the Biquaternion Universe* — the multiplication rule, the conjugations and the centre used throughout.
 - *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article.

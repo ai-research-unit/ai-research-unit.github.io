@@ -39,14 +39,14 @@ Their scalar parts are the four forms the rest of the article reads, and written
 
 $$
 \begin{aligned}
-\mathrm{Sc}(\tilde P\tilde Q)&=\textstyle\sum_\mu\varepsilon_\mu P_\mu Q_\mu=P_0Q_0-P_1Q_1-P_2Q_2-P_3Q_3,\\
-\mathrm{Sc}(\tilde P^{\natural}\tilde Q)&=\textstyle\sum_\mu P_\mu Q_\mu=P_0Q_0+P_1Q_1+P_2Q_2+P_3Q_3,\\
-\mathrm{Sc}(\tilde P\tilde Q^{*})&=\textstyle\sum_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}+P_1\overline{Q_1}+P_2\overline{Q_2}+P_3\overline{Q_3},\\
-\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})&=\textstyle\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}-P_1\overline{Q_1}-P_2\overline{Q_2}-P_3\overline{Q_3}.
+B(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P\tilde Q)=\textstyle\sum_\mu\varepsilon_\mu P_\mu Q_\mu=P_0Q_0-P_1Q_1-P_2Q_2-P_3Q_3,\\
+N(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\textstyle\sum_\mu P_\mu Q_\mu=P_0Q_0+P_1Q_1+P_2Q_2+P_3Q_3,\\
+H(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P\tilde Q^{*})=\textstyle\sum_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}+P_1\overline{Q_1}+P_2\overline{Q_2}+P_3\overline{Q_3},\\
+K(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\textstyle\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}-P_1\overline{Q_1}-P_2\overline{Q_2}-P_3\overline{Q_3}.
 \end{aligned}
 $$
 
-The first is the general plain bilinear form, the second the general quaternionic bilinear, the third the general plain sesquilinear and the fourth the general quaternionic sesquilinear; the four leading expressions are the *scalar part* column of the table of *The Four Pairings of the Biquaternion Algebra*, and the vector parts, that is the remaining coordinates of the four general products, are displayed product by product in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*.
+The four are the forms $B$, $N$, $H$ and $K$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*: the first is the general plain bilinear form, the second the general quaternionic bilinear, the third the general plain sesquilinear and the fourth the general quaternionic sesquilinear; the four leading expressions are the *scalar part* column of the table of *The Four Pairings of the Biquaternion Algebra*, and the vector parts, that is the remaining coordinates of the four general products, are displayed product by product in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Two Slots
 

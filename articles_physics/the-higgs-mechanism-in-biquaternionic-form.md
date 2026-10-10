@@ -331,4 +331,4 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 - *Maxwell's Equations in the Biquaternionic Formulation* — the abelian potential and field strength that the gauge field mass modifies.
 - *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — the left/right matter-representation question that the non-abelian scalar inherits.
 - *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, which the unitary gauge here chooses rather than derives.
-- *Biquaternion Algebra* — the multiplication rule, the conjugations, and the centre used throughout.
+- *Conventions in the Biquaternion Universe* — the multiplication rule, the conjugations, and the centre used throughout.

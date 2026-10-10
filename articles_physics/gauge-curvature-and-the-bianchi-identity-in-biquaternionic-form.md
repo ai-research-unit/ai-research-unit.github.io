@@ -343,4 +343,4 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 - *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection $D_\mu\tilde{Q}=\partial_\mu\tilde{Q}+\tilde{\Gamma}_\mu\tilde{Q}+\tilde{Q}\tilde{\Gamma}_\mu^{*}$, distinct from the one-sided gauge connection of this article.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
-- *Biquaternion Algebra* and *Quaternion Algebra* — the multiplication rule, the conjugations, and the centre used throughout.
+- *Conventions in the Biquaternion Universe* and *Quaternion Algebra* — the multiplication rule, the conjugations, and the centre used throughout.

@@ -6,7 +6,7 @@ The framework has no external time parameter. The material time is the imaginary
 
 The answer, in one sentence: the exchange supplies the reference of a clock and its period, and it supplies neither the arrow nor the rate. The three readings that follow from that sentence are these. The two times are the real and the imaginary parts of one central coordinate, so the material time is not defined against anything outside the algebra but against the phase of the informational sector — each sector is the other's clock. The exchange is a quarter turn of the plane of that coordinate, so a tick is a quarter turn and the period of the clock is a full central rotation. And the exchange is invertible and of order four, so the algebra offers both senses of the rotation and no rule that selects one; the direction of the tick remains a choice of slice, which is the framework's problem of time.
 
-The article is kinematic throughout. It reads the object that *The Central Rotation: Phase, Duality and the Wick Rotation as One Generator* identifies as one generator on six subspaces, and it reads it on the one carrier that is a time. What it adds to that article is the clock, the reference that the clock supplies, and the exact statement of what a clock needs and does not get.
+The article is kinematic throughout. It reads the central map that *Conventions in the Biquaternion Universe* identifies as one generator on six subspaces, and it reads it on the one carrier that is a time. What it adds to that map is the clock, the reference that the clock supplies, and the exact statement of what a clock needs and does not get.
 
 ## The Two Times in One Plane
 
@@ -62,7 +62,7 @@ $$
 z \ \longrightarrow\ iz \ \longrightarrow\ -z \ \longrightarrow\ -iz \ \longrightarrow\ z .
 $$
 
-The second is invertibility: the generator is a rotation, so both senses are available, $e^{i\theta}$ and $e^{-i\theta}$, and the algebra contains no element that prefers one. Both properties are stated, with the other five restrictions of the same map, in *The Central Rotation: Phase, Duality and the Wick Rotation as One Generator*.
+The second is invertibility: the generator is a rotation, so both senses are available, $e^{i\theta}$ and $e^{-i\theta}$, and the algebra contains no element that prefers one. Both properties are stated, with the other five restrictions of the same map, in *Conventions in the Biquaternion Universe*.
 
 ## The Clock Hand and Its Two Projections
 
@@ -97,7 +97,7 @@ A clock, whether mechanical or algebraic, needs four things, and the framework's
 | An **arrow**: an orientation of the tick | Not supplied. The generator is invertible of order four, and $e^{i\theta}$ and $e^{-i\theta}$ are both in the algebra |
 | A **rate**: a duration per tick | Not supplied. The algebra carries the phase, which is dimensionless, and no second |
 
-**The missing arrow.** The generator is a rotation, so it is invertible, and the inverse rotation is as much an element of the algebra as the rotation itself. The exchange therefore carries no orientation: it identifies the two times and does not order them. This is the same statement that *The Central Rotation* makes in the form that the algebra offers the rotation between the two times and no rule that selects one, and it is the framework's problem of time in its kinematic form. The selection of a slice is a choice of frame, and the framework says so rather than deriving it.
+**The missing arrow.** The generator is a rotation, so it is invertible, and the inverse rotation is as much an element of the algebra as the rotation itself. The exchange therefore carries no orientation: it identifies the two times and does not order them. This is the same statement that *Conventions in the Biquaternion Universe* makes in the form that the algebra offers the rotation between the two times and no rule that selects one, and it is the framework's problem of time in its kinematic form. The selection of a slice is a choice of frame, and the framework says so rather than deriving it.
 
 **The missing rate.** The clock of the framework is angle-keeping and not duration-keeping. Its period is the full central rotation, which is the same for every element and every frame because the generator is central; nothing in the algebra attaches a physical duration to it. A physical duration enters only when a physical process is compared with the central phase, and that comparison is a dynamics; it is not a property of the exchange.
 
@@ -109,7 +109,7 @@ The two entries that are supplied are what makes the reading relational, and the
 
 **The reference is global.** The generator is central, so the exchange is the same operation at every element, in every subspace and in every frame. The clock it defines is therefore a **global** clock: it supplies one reference for the whole algebra and not one reference per point. The framework is accordingly a theory with a global internal clock and no local clock of its own; local clocks, their transport, their relative rates and their synchronisation are the business of *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form*, which builds them from null displacements, the radar method and the $k$-factor. The division is clean: this article supplies the reference that a clock needs and that the synchronisation article presupposes, and that article supplies the rates that this one does not.
 
-**The other reading of the same exchange.** The exchange has a second physical reading, in the informational direction rather than the temporal one: it carries the material ledger of an element to the informational ledger, and the two ledgers are the two biquaternion norms. That reading is *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*. The clock reading and the thermodynamic reading are readings of the same map on different carriers, which is the rule of *The Central Rotation*: one map, and a physical word for each carrier.
+**The other reading of the same exchange.** The exchange has a second physical reading, in the informational direction rather than the temporal one: it carries the material ledger of an element to the informational ledger, and the two ledgers are the two biquaternion norms. That reading is *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*. The clock reading and the thermodynamic reading are readings of the same map on different carriers, which is the rule of *Conventions in the Biquaternion Universe*: one map, and a physical word for each carrier.
 
 **The boundary with the boosts.** The phase and the relativistic generators are carried by two separate parts of one element: the generator is a *scalar*, acting through the centre, and the boosts act through the quaternion directions. The clock of this article is therefore a clock of the scalar (temporal) part of an element and says nothing about spatial directions; it times the element and does not move it. This is why the exchange is not a boost and why the clock reading adds nothing to the transformation theory of the material sector.
 
@@ -118,7 +118,7 @@ The two entries that are supplied are what makes the reading relational, and the
 - It is **not a dynamics**. No evolution equation is read off the exchange, and no rate of change of a state follows from it. The exchange is a relation between two descriptions of one element, and a dynamics is a separate object, which is the constraint analysis the framework names as missing.
 - It is **not an arrow**. The generator is invertible and of order four, so both orientations are present and neither is selected; the direction of the tick is a choice of slice, and the problem of time is not solved here but restated in the temporal reading.
 - It is **not a rate or a duration**. The period of the clock is the central rotation, an angle without a second; a physical duration requires a process to compare with it, and no such comparison is made here.
-- It does **not identify the exchange with the analytic continuation**. The Wick rotation as the continuation $t\mapsto-i\tau$ is a relabeling of one coordinate that holds the space real; the exchange is a rotation of the element that carries the space imaginary, and the two agree on the time axis and in the sign they flip and nowhere else, as *The Central Rotation* states. The clock reading uses the rotation and not the continuation.
+- It does **not identify the exchange with the analytic continuation**. The Wick rotation as the continuation $t\mapsto-i\tau$ is a relabeling of one coordinate that holds the space real; the exchange is a rotation of the element that carries the space imaginary, and the two agree on the time axis and in the sign they flip and nowhere else, as *Conventions in the Biquaternion Universe* states. The clock reading uses the rotation and not the continuation.
 - It does **not claim an empirical consequence**. It reorganizes the exchange, the phase and the two times under one reading; it adds no prediction and no coupling, and it does not turn the phase into a measurable duration.
 
 ## Summary
@@ -145,7 +145,7 @@ The accounting of a clock is partial, and the two missing entries are the ones t
 ## Further Reading
 
 - *Conventions in the Biquaternion Universe* — the basis, the conjugations, the six subspaces, the $ict$ dictionary, the four forms, and the exchange read on the metric.
-- *The Central Rotation: Phase, Duality and the Wick Rotation as One Generator* — the one generator, its six restrictions, the complex time plane, the order four of the rotation, and the statement that the algebra offers no rule that selects a slice.
+- *Conventions in the Biquaternion Universe* — the one generator, its six restrictions, the complex time plane, the order four of the rotation, and the statement that the algebra offers no rule that selects a slice.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the two sectors the exchange relates, and the coefficient dictionaries used above.
 - *The Four Other Remarkable Subspaces* — the complex time sector, the complex space sector, the real and imaginary sectors, and the exchange of the real and imaginary sectors as the Wick rotation.
 - *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form* — signals as null displacements, the radar method, Einstein synchronisation, the $k$-factor, clock transport and the twin effect: the local clocks, their rates and their synchronisation.

@@ -10,13 +10,13 @@ This article owns the map, the statement that it is an algebra isomorphism, the 
 
 ## The Representation
 
-**Definition.** The **matrix realization** of $\mathbb{B}$ is the $\mathbb{C}$-linear map
+**Definition.** The **matrix realization** of $\mathbb{B}$ is the isomorphism written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,
 
 $$
-\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C})
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),
 $$
 
-determined on the basis by
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity. The quaternion units are assigned the matrices
 
 $$
 \mathsf{M}_2(e_0)=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad

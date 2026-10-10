@@ -126,7 +126,7 @@ named as a gap and not proposed as a formula.
   partition function.
 - *The KMS Condition and the Biquaternion Framework* and *Thermal Time and the Modular Flow in the
   Biquaternion Framework*, for the KMS periodicity and the modular flow.
-- *The Central Rotation: Phase, Duality and the Wick Rotation as One Generator*, for the central phase that
+- *Conventions in the Biquaternion Universe*, for the central phase that
   the thermal circle realises.
 - *Particle Types, Discrete Charge and Three-Particle Couplings*, for the discrete charge from the compact
   group.

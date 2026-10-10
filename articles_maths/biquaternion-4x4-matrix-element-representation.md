@@ -385,7 +385,7 @@ $$
 
 the coefficients being read off one at a time. Recomputing the expansion on a random complex $4 \times 4$ matrix returns it to $5 \times 10^{-16}$.
 
-**Reading the expansion in the algebra.** The tensor square $\mathbb{B} \otimes_{\mathbb{C}} \mathbb{B}$ is spanned by the sixteen $e_i \otimes e_j$, and the expansion says that this space spans the endomorphisms of $\mathbb{B}$: the matrix of the two-sided transformation $\tilde P \mapsto \sum_{i,j} a_{ij}\, e_i \tilde P e_j$ is
+**Reading the expansion in the algebra.** The tensor square $\mathbb{B} \otimes_{\mathbb{C}} \mathbb{B}$ is spanned by the sixteen $e_i \otimes e_j$, and the expansion says that these sixteen span the whole matrix algebra $M_4(\mathbb{C})$: the two-sided transformation $\tilde P \mapsto \sum_{i,j} a_{ij}\, e_i \tilde P e_j$ has matrix
 
 $$
 \sum_{i,j} a_{ij}\,\mathsf{M}_4^{L}(e_i)\,\mathsf{M}_4^{R}(e_j) = \sum_{i,j} a_{ij}\,P_{ij},

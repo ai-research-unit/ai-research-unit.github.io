@@ -108,7 +108,7 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 - *The Hopf Fibration and the Biquaternion Gauge Bundle* — the unit spinors over the sphere, the Hopf map and its winding numbers.
 - *The Fubini–Study Geometry and the Biquaternion Norm* — the metric of the projective line and the transition probability of the pure states.
 - *The Photon as a Null Element: What the Cone Derives and What It Does Not* — the massless shell as the zero-divisor cone and the limits of the derivation.
-- *The Central Rotation: Phase, Duality and the Wick Rotation as One Generator* — the central imaginary that carries a material element to the informational sector, where the rank-one Hermitian element lives.
+- *Conventions in the Biquaternion Universe* — the central imaginary that carries a material element to the informational sector, where the rank-one Hermitian element lives.
 - *Twistor Theory and Biquaternions* — the projective null cone, the Segre quadric and the comparison with twistor space.
 - *The Null Quadric and Its Projective Geometry* (mathematics) — the Segre embedding, the quadric $\mathbb{P}^1\times\mathbb{P}^1$, the two rulings and the automorphism group.
 - *The Topology of the Zero-Divisor Cone* (mathematics) — the link of the cone as an $S^1$-bundle over the projectivised cone $S^2\times S^2$.
