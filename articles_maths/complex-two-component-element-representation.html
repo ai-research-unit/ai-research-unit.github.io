@@ -81,9 +81,9 @@ A^{\mathsf{T}} = \begin{pmatrix} A^0 & A^1 \end{pmatrix} = \begin{pmatrix} a & a
 $$</p>
 <p>The column is the transcribed form of the pair, convenient because the product is bilinear. For a fixed $A$, the map $B \mapsto AB$ sends coefficients linearly to coefficients, so it is an $\mathbb{R}$-linear endomorphism of the coefficient space, and in the column convention it is written as a $2 \times 2$ matrix,</p>
 <p>$$
-A B \longleftrightarrow \operatorname{mat}_4(A)\, B,
+A B \longleftrightarrow \mathsf{M}_2(A)\, B,
 $$</p>
-<p>where $\operatorname{mat}_4(A) = \begin{pmatrix} a & -a' \\ a' & a \end{pmatrix}$ is the Cayley matrix of <em>Complex Regular Element Representation</em>, each entry of which is a single component of $A$ carrying a sign. The present article records only that the product rule admits this reading; the operator is developed there.</p>
+<p>where $\mathsf{M}_2(A) = \begin{pmatrix} a & -a' \\ a' & a \end{pmatrix}$ is the Cayley matrix of <em>Complex Regular Element Representation</em>, each entry of which is a single component of $A$ carrying a sign. The present article records only that the product rule admits this reading; the operator is developed there.</p>
 <p><strong>Remark (the row is the dual).</strong> The row $A^{\mathsf{T}}$ is the element of the dual space associated with $A$ under the standard pairing, and it is not a further realization of the algebra. Because the algebra is commutative and the ground field is $\mathbb{R}$, the left and right actions coincide and the distinction between the column picture and the row picture carries no information: the row is the transpose and nothing more. This is the placement, in two dimensions, of the biquaternion remark that the row carries the right action and is related to the column by transposition dressed with quaternion conjugation; the dressing is absent here because the involution acts on the two real components without a coefficient field to conjugate.</p>
 <h2 id="multiplication-in-two-component-form">Multiplication in Two-Component Form</h2>
 <p><strong>Proposition (the product in components).</strong> Let $A = (a,a')$ and $B = (b,b')$. Then the product has components</p>
@@ -124,11 +124,11 @@ $$</p>
 <h3 id="the-rotation-matrix">The Rotation Matrix</h3>
 <p>On the unit circle the component product becomes a rotation. A unit has the polar form $u = \cos\theta + i\sin\theta$, so its two components are $(u^0,u^1) = (\cos\theta,\sin\theta)$ and its matrix is</p>
 <p>$$
-\operatorname{mat}_4(u) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} = R_\theta,
+\mathsf{M}_2(u) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} = R_\theta,
 $$</p>
 <p>which is the <strong>rotation matrix</strong> of the plane through the angle $\theta$. It is orthogonal, $R_\theta^{\mathsf{T}}R_\theta = I$, and of determinant $1$, and the unit criterion $N(u) = 1$ is exactly the statement $\det R_\theta = 1$. For a general element $A = a+i a' = r u$ with $r = |A|$ and $u = A/|A|$, the component product is the matrix</p>
 <p>$$
-\operatorname{mat}_4(A) = rR_\theta,
+\mathsf{M}_2(A) = rR_\theta,
 $$</p>
 <p>the product of the positive scale $r$ and the rotation $R_\theta$; the matrix is thus the conformal matrix of scaling by $r$ and rotating by $\theta$, and the polar decomposition $A = ru$ is the factorisation of the matrix into its scale and its rotation. The operator is developed in <em>Complex Regular Element Representation</em>; here it is recorded as the matrix form of the component product on the two coordinates.</p>
 <h2 id="the-conjugation-in-coordinates">The Conjugation in Coordinates</h2>
@@ -138,7 +138,7 @@ $$</p>
 (\bar A)^\mu = (A^0, -A^1) = (a, -a').
 $$</p>
 <p><strong>Proof.</strong> $\bar A = \overline{a+i a'} = a-i a'$, whose components are $(a,-a')$.</p>
-<p>The map $(a,a') \mapsto (a,-a')$ is the reflection of the plane in the real axis, and it is an involution, since applying it twice returns $(a,a')$. Its matrix is $\operatorname{diag}(1,-1)$, the coordinate form of the transpose relation $\operatorname{mat}_4(A)^{\mathsf{T}} = \operatorname{mat}_4(\bar A)$ of <em>Complex Regular Element Representation</em>.</p>
+<p>The map $(a,a') \mapsto (a,-a')$ is the reflection of the plane in the real axis, and it is an involution, since applying it twice returns $(a,a')$. Its matrix is $\operatorname{diag}(1,-1)$, the coordinate form of the transpose relation $\mathsf{M}_2(A)^{\mathsf{T}} = \mathsf{M}_2(\bar A)$ of <em>Complex Regular Element Representation</em>.</p>
 <h2 id="the-two-distinguished-subspaces">The Two Distinguished Subspaces</h2>
 <p>Each subspace of the involution is a coordinate condition, and the two conditions are the simplest possible.</p>
 <p><strong>Definition.</strong> The two <strong>distinguished subspaces</strong> are</p>
@@ -200,7 +200,7 @@ $$</p>
 <p><strong>Example.</strong> For $A = (3,4)$ the norm is $N = 9+16 = 25$, so $A$ is a unit and $A^{-1} = (3,-4)/25 = (0.12, -0.16)$. The product check $(3,4)(0.12,-0.16) = (0.36+0.64, -0.48+0.48) = (1,0) = 1$ is exact.</p>
 <h2 id="summary">Summary</h2>
 <p>The two-component realization reads a complex number $A = a+i a'$ as its pair of real coordinates $(A^0,A^1) = (a,a')$, an $\mathbb{R}$-linear isomorphism onto $\mathbb{R}^2$; it is the two-dimensional analogue of the four-vector realization of the biquaternion algebra. The column is the pair written vertically, the row is its dual by transposition, and because the algebra is commutative the left and right actions coincide and the row carries no separate right action.</p>
-<p>The product in components is $(a b-a' b', a b'+a' b)$, the multiplication table of the basis being symmetric about the diagonal, and there is no Levi-Civita term: the antisymmetric part of the biquaternion product has no analogue, and its absence is the commutativity of the field. On the unit circle the component product is the rotation matrix $R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$, and a general element has $\operatorname{mat}_4(A) = rR_\theta$, the scale times the rotation. The conjugation acts by $(a,a') \mapsto (a,-a')$, a reflection of the plane; its fixed subspace is the real axis $A^1 = 0$ and its anti-fixed subspace the imaginary axis $A^0 = 0$, each of real dimension one.</p>
+<p>The product in components is $(a b-a' b', a b'+a' b)$, the multiplication table of the basis being symmetric about the diagonal, and there is no Levi-Civita term: the antisymmetric part of the biquaternion product has no analogue, and its absence is the commutativity of the field. On the unit circle the component product is the rotation matrix $R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$, and a general element has $\mathsf{M}_2(A) = rR_\theta$, the scale times the rotation. The conjugation acts by $(a,a') \mapsto (a,-a')$, a reflection of the plane; its fixed subspace is the real axis $A^1 = 0$ and its anti-fixed subspace the imaginary axis $A^0 = 0$, each of real dimension one.</p>
 <p>The norm is $N(A) = (A^0)^2 + (A^1)^2$, with both signs positive. Its restrictions to the two subspaces are $a^2$ and $a'^2$, both positive definite, so the opposite signatures of the biquaternion sectors do not occur and the form is definite. The invertibility criterion is $(a,a') \neq (0,0)$, and the inverse in coordinates is $(a,-a')/(a^2+a'^2)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -236,11 +236,11 @@ $$</p>
 <td>the product in components</td>
 </tr>
 <tr>
-<td>$\operatorname{mat}_4(A) = aI + a'J$</td>
+<td>$\mathsf{M}_2(A) = aI + a'J$</td>
 <td>the regular matrix acting on the column</td>
 </tr>
 <tr>
-<td>$R_\theta = \operatorname{mat}_4(u)$</td>
+<td>$R_\theta = \mathsf{M}_2(u)$</td>
 <td>the rotation matrix of a unit $u = \cos\theta + i\sin\theta$</td>
 </tr>
 <tr>

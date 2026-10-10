@@ -53,25 +53,25 @@
         <h1 id="the-22-matrix-operator-representation-math0-of-biquaternions"><strong>The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>Physically this is the realization in which the Lorentz transformation of a four-vector is the congruence of the Hermitian matrix that represents it, which is the standard matrix form of the transformation written elsewhere in the corpus with rotors.</p>
-<p>The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$, with $\Phi(e_k) = -i\sigma_k$, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ and $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$, is that of <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, together with the simple module $V = \mathbb{C}^2$ on which the matrices act and which carries the two chiralities of the framework.</p>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The matrix realization $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$, with $\mathsf{M}_2(e_k) = -i\sigma_k$, $\det \mathsf{M}_2(\tilde{Q}) = N(\tilde{Q})$ and $\operatorname{Tr}\mathsf{M}_2(\tilde{Q}) = 2Q_0$, is that of <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, together with the simple module $V = \mathbb{C}^2$ on which the matrices act and which carries the two chiralities of the framework.</p>
 <p>The element article answers <em>what is</em> $\tilde{Q}$ by displaying its matrix. This article answers <em>what does</em> $\tilde{Q}$ <em>do</em>, and it answers it in the smallest space that carries an action at all: the algebra is $M_2(\mathbb{C})$, and the Hermitian sandwich of <em>Biquaternion Rotations and Lorentz Transformations</em> acts on it by the <strong>congruence</strong></p>
 <p>$$
-X \longmapsto M X M^{\dagger}, \qquad M = \Phi(\tilde{Q}) .
+X \longmapsto M X M^{\dagger}, \qquad M = \mathsf{M}_2(\tilde{Q}) .
 $$</p>
 <p>This is the realization in which the operator is a single familiar operation of matrix algebra, and in which the two regimes of the operator — invertible congruence, or collapse — become the two cases of the rank of one matrix.</p>
-<p>The article owns the identification of the sandwich with the congruence, the fact that $\Phi$ carries the dagger to the conjugate transpose, the preservation of rank, the scaling of the determinant, the preservation of the two Hermitian sectors, the positive Hermitian form attached to the identity, and the separation of the two regimes at the level of $\Phi(\tilde{Q})$, including the collapse of a null congruence onto one Hermitian line. The component computation of the same operator is <em>The Four-Vector Operator Representation of Biquaternions</em>; its matrix on the coefficient space, with the determinant $\lvert N\rvert^{4}$ and the trace $4\lvert Q_0\rvert^{2}$, is <em>The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions</em>; the module side belongs to another coordinate system and is not repeated here. The module $V$ and the left action of the algebra on it are cited from the element article and not re-derived.</p>
-<p><strong>Conventions.</strong> The matrix of the element is $M = \Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}$; the dagger on matrices is the conjugate transpose, written $M^{\dagger}$; the two Hermitian sectors are $\mathbb{M}_+$ and $\mathbb{M}_-$, whose images are the Hermitian and the skew-Hermitian matrices; and $V = \mathbb{C}^2$ is the simple module.</p>
+<p>The article owns the identification of the sandwich with the congruence, the fact that $\mathsf{M}_2$ carries the dagger to the conjugate transpose, the preservation of rank, the scaling of the determinant, the preservation of the two Hermitian sectors, the positive Hermitian form attached to the identity, and the separation of the two regimes at the level of $\mathsf{M}_2(\tilde{Q})$, including the collapse of a null congruence onto one Hermitian line. The component computation of the same operator is <em>The Four-Vector Operator Representation of Biquaternions</em>; its matrix on the coefficient space, with the determinant $\lvert N\rvert^{4}$ and the trace $4\lvert Q_0\rvert^{2}$, is <em>The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions</em>; the module side belongs to another coordinate system and is not repeated here. The module $V$ and the left action of the algebra on it are cited from the element article and not re-derived.</p>
+<p><strong>Conventions.</strong> The matrix of the element is $M = \mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}$; the dagger on matrices is the conjugate transpose, written $M^{\dagger}$; the two Hermitian sectors are $\mathbb{M}_+$ and $\mathbb{M}_-$, whose images are the Hermitian and the skew-Hermitian matrices; and $V = \mathbb{C}^2$ is the simple module.</p>
 <h2 id="the-congruence">The Congruence</h2>
-<p><strong>Lemma ($\Phi$ carries the dagger to the conjugate transpose).</strong> For every $\tilde{Q}$,</p>
+<p><strong>Lemma ($\mathsf{M}_2$ carries the dagger to the conjugate transpose).</strong> For every $\tilde{Q}$,</p>
 <p>$$
-\Phi(\tilde{Q}^{*}) = \Phi(\tilde{Q})^{\dagger} .
+\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger} .
 $$</p>
-<p><strong>Proof.</strong> Both sides are conjugate-linear in $\tilde{Q}$ and additive, so it suffices to check the eight real basis elements. On $e_0$ both sides are $I_2$. On $e_k$ one has $e_k^{*} = -e_k$ and $\Phi(e_k)^{\dagger} = (-i\sigma_k)^{\dagger} = i\sigma_k^{\dagger} = i\sigma_k = \Phi(-e_k)$, since the Pauli matrices are Hermitian; so both sides are $i\sigma_k$. On $ie_0$ the left side is $\Phi(-ie_0) = -iI_2$ and the right is $(iI_2)^{\dagger} = -iI_2$. On $ie_k$, $(i(-i\sigma_k))^{\dagger} = (\sigma_k)^{\dagger} = \sigma_k$, which is also the left side. Hence the two agree on a basis.</p>
-<p><strong>Theorem (the sandwich is the congruence by $M$).</strong> Under $\Phi$, the sandwich of $\tilde{Q}$ is the congruence by $M = \Phi(\tilde{Q})$:</p>
+<p><strong>Proof.</strong> Both sides are conjugate-linear in $\tilde{Q}$ and additive, so it suffices to check the eight real basis elements. On $e_0$ both sides are $I_2$. On $e_k$ one has $e_k^{*} = -e_k$ and $\mathsf{M}_2(e_k)^{\dagger} = (-i\sigma_k)^{\dagger} = i\sigma_k^{\dagger} = i\sigma_k = \mathsf{M}_2(-e_k)$, since the Pauli matrices are Hermitian; so both sides are $i\sigma_k$. On $ie_0$ the left side is $\mathsf{M}_2(-ie_0) = -iI_2$ and the right is $(iI_2)^{\dagger} = -iI_2$. On $ie_k$, $(i(-i\sigma_k))^{\dagger} = (\sigma_k)^{\dagger} = \sigma_k$, which is also the left side. Hence the two agree on a basis.</p>
+<p><strong>Theorem (the sandwich is the congruence by $M$).</strong> Under $\mathsf{M}_2$, the sandwich of $\tilde{Q}$ is the congruence by $M = \mathsf{M}_2(\tilde{Q})$:</p>
 <p>$$
-\Phi\bigl(\operatorname{H}_{\tilde{Q}}(\tilde R)\bigr) = \Phi(\tilde{Q})\,\Phi(\tilde R)\,\Phi(\tilde{Q})^{\dagger} = M\,\Phi(\tilde R)\,M^{\dagger} .
+\mathsf{M}_2\bigl(\operatorname{H}_{\tilde{Q}}(\tilde R)\bigr) = \mathsf{M}_2(\tilde{Q})\,\mathsf{M}_2(\tilde R)\,\mathsf{M}_2(\tilde{Q})^{\dagger} = M\,\mathsf{M}_2(\tilde R)\,M^{\dagger} .
 $$</p>
-<p><strong>Proof.</strong> $\Phi$ is an algebra isomorphism, so $\Phi(\tilde{Q}\tilde R\tilde{Q}^{*}) = \Phi(\tilde{Q})\Phi(\tilde R)\Phi(\tilde{Q}^{*})$, and the lemma replaces the last factor by $M^{\dagger}$.</p>
+<p><strong>Proof.</strong> $\mathsf{M}_2$ is an algebra isomorphism, so $\mathsf{M}_2(\tilde{Q}\tilde R\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde R)\mathsf{M}_2(\tilde{Q}^{*})$, and the lemma replaces the last factor by $M^{\dagger}$.</p>
 <p>The operator on $M_2(\mathbb{C})$ is thus a <strong>congruence</strong>: the same matrix $M$ on the left and its conjugate transpose on the right. Three consequences are immediate and are the reason this realization is the clearest one.</p>
 <p>The operator is $\mathbb{C}$-<strong>linear</strong> in $X$, because left and right multiplication by fixed matrices are linear. The coefficients of $\tilde{Q}$ enter through $M$ and $M^{\dagger}$, so the operator is quadratic in $\tilde{Q}$.</p>
 <p>The operator is <strong>not</strong> a similarity unless $M$ is unitary: the two conjugating factors must be inverse for that, and $M^{\dagger} = M^{-1}$ is the unitarity condition, which is the matrix form of the fact that the sandwich is multiplicative exactly on the rotations.</p>
@@ -80,12 +80,12 @@ $$</p>
 <p>The congruence preserves the rank of its argument and scales its determinant, and both statements are the matrix forms of invariants of the operator.</p>
 <p><strong>Proposition (rank and determinant under the congruence).</strong> For every $\tilde R$ with image $\tilde T = \tilde{Q}\tilde R\tilde{Q}^{*}$,</p>
 <p>$$
-\operatorname{rank}\Phi(\tilde T) \leq \operatorname{rank}\Phi(\tilde R), \qquad\text{with equality if } N(\tilde{Q}) \neq 0,
+\operatorname{rank}\mathsf{M}_2(\tilde T) \leq \operatorname{rank}\mathsf{M}_2(\tilde R), \qquad\text{with equality if } N(\tilde{Q}) \neq 0,
 $$</p>
 <p>$$
-\det\Phi(\tilde T) = \lvert\det M\rvert^{2}\det\Phi(\tilde R), \qquad\text{that is}\qquad N(\tilde T) = \langle\tilde T,\tilde T\rangle_{\natural} = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R) .
+\det \mathsf{M}_2(\tilde T) = \lvert\det M\rvert^{2}\det \mathsf{M}_2(\tilde R), \qquad\text{that is}\qquad N(\tilde T) = \langle\tilde T,\tilde T\rangle_{\natural} = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R) .
 $$</p>
-<p><strong>Proof.</strong> Left and right multiplication by any matrices cannot increase rank, and multiplication by invertible matrices on either side preserves it; that gives the rank statement off the light cone. For the determinant, $\det(MXM^{\dagger}) = \det M\cdot\det X\cdot\det M^{\dagger} = \lvert\det M\rvert^{2}\det X$ by multiplicativity, and $\det\Phi = N$ by the element article.</p>
+<p><strong>Proof.</strong> Left and right multiplication by any matrices cannot increase rank, and multiplication by invertible matrices on either side preserves it; that gives the rank statement off the light cone. For the determinant, $\det(MXM^{\dagger}) = \det M\cdot\det X\cdot\det M^{\dagger} = \lvert\det M\rvert^{2}\det X$ by multiplicativity, and $\det \mathsf{M}_2 = N$ by the element article.</p>
 <p>The rank of the congruence is limited by the rank of $M$ itself. A matrix of rank one can raise no rank, and this is the mechanism of the collapse: a null element has a rank-one matrix, so its congruence has image of rank at most one however large the rank of the argument.</p>
 <p>The determinant identity is the interval statement of the framework in matrix form: the image of a four-vector has its interval multiplied by $\lvert N(\tilde{Q})\rvert^{2}$, which is $\lvert \det M\rvert^{2}$, and the interval is unchanged exactly when $M$ is unimodular, that is, on the unit-norm slice of the rotors.</p>
 <p><strong>Proposition (the Hermitian form of the identity).</strong> The image of $e_0$ under the sandwich is $\operatorname{H}_{\tilde{Q}}(e_0) = \tilde{Q}\tilde{Q}^{*}$, whose matrix is the Gram matrix</p>
@@ -96,7 +96,7 @@ $$</p>
 <p>$$
 \operatorname{Tr}\bigl(MM^{\dagger}\bigr) = 2\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2} = 2\,\mathrm{Sc}\bigl(\tilde{Q}\tilde{Q}^{*}\bigr) .
 $$</p>
-<p><strong>Proof.</strong> $MM^{\dagger}$ is a Gram matrix, hence positive semidefinite, and its rank equals the rank of $M$. Its trace is the sum of the squared moduli of the four entries; expanding the entries of $M = \Phi(\tilde{Q})$ gives $\lvert M_{11}\rvert^{2} + \lvert M_{22}\rvert^{2} = 2(\lvert Q_0\rvert^{2}+\lvert Q_3\rvert^{2})$ and $\lvert M_{12}\rvert^{2}+\lvert M_{21}\rvert^{2} = 2(\lvert Q_1\rvert^{2}+\lvert Q_2\rvert^{2})$, whose sum is twice the sum of the squared moduli of the coefficients. That sum is the scalar component of $\tilde{Q}\tilde{Q}^{*}$ by <em>The Four-Vector Operator Representation of Biquaternions</em>, and $\operatorname{Tr}\Phi(\cdot) = 2\,\mathrm{Sc}(\cdot)$ closes the computation.</p>
+<p><strong>Proof.</strong> $MM^{\dagger}$ is a Gram matrix, hence positive semidefinite, and its rank equals the rank of $M$. Its trace is the sum of the squared moduli of the four entries; expanding the entries of $M = \mathsf{M}_2(\tilde{Q})$ gives $\lvert M_{11}\rvert^{2} + \lvert M_{22}\rvert^{2} = 2(\lvert Q_0\rvert^{2}+\lvert Q_3\rvert^{2})$ and $\lvert M_{12}\rvert^{2}+\lvert M_{21}\rvert^{2} = 2(\lvert Q_1\rvert^{2}+\lvert Q_2\rvert^{2})$, whose sum is twice the sum of the squared moduli of the coefficients. That sum is the scalar component of $\tilde{Q}\tilde{Q}^{*}$ by <em>The Four-Vector Operator Representation of Biquaternions</em>, and $\operatorname{Tr}\mathsf{M}_2(\cdot) = 2\,\mathrm{Sc}(\cdot)$ closes the computation.</p>
 <p><strong>Corollary (the sectors).</strong> The congruence maps the Hermitian matrices to the Hermitian matrices and the skew-Hermitian matrices to the skew-Hermitian matrices, because $(MXM^{\dagger})^{\dagger} = MXM^{\dagger}$ when $X^{\dagger} = X$ and $= -MXM^{\dagger}$ when $X^{\dagger} = -X$. These are the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ of the algebra, and they are the only pair of the six distinguished subspaces that every congruence preserves. Physically, the material four-vectors are Hermitian matrices of a definite sign pattern and the congruence is the action of the group of units on them, which is why the four-vector transformation and the matrix congruence are the same statement.</p>
 <h2 id="the-case-math92">The Case $N(\tilde{Q}) \neq 0$</h2>
 <p><strong>Theorem (the invertible congruence).</strong> Let $N(\tilde{Q}) \neq 0$. Then $M$ is invertible, the congruence $X \mapsto MXM^{\dagger}$ is a bijection of $M_2(\mathbb{C})$ that preserves the rank of every matrix, the operator has rank $4$ on the four-dimensional space, and $\det = \lvert N(\tilde{Q})\rvert^{4}$, $\operatorname{Tr} = 4\lvert Q_0\rvert^{2}$.</p>
@@ -125,7 +125,7 @@ $$</p>
 <p>$$
 E_{11} \mapsto 0, \qquad E_{12} \mapsto 0, \qquad E_{21} \mapsto 0, \qquad E_{22} \mapsto 4E_{11} ,
 $$</p>
-<p>so the image is the line $\mathbb{C}E_{11} = \mathbb{C}\Phi(\tilde\Pi_1)$ with $\tilde\Pi_1 = \tfrac12(e_0 + ie_3)$, and the image depends on $X$ only through its second diagonal entry, since $v^{\dagger}Xv = 4X_{22}$. The operator has trace $0$ and all four eigenvalues zero: it is nilpotent, and the collapse is the loss of rank, not the vanishing of the entries of a diagonal.</p>
+<p>so the image is the line $\mathbb{C}E_{11} = \mathbb{C}\mathsf{M}_2(\tilde\Pi_1)$ with $\tilde\Pi_1 = \tfrac12(e_0 + ie_3)$, and the image depends on $X$ only through its second diagonal entry, since $v^{\dagger}Xv = 4X_{22}$. The operator has trace $0$ and all four eigenvalues zero: it is nilpotent, and the collapse is the loss of rank, not the vanishing of the entries of a diagonal.</p>
 <p><strong>Example (projection).</strong> For $\tilde{Q} = \tfrac12(e_0 - ie_3) = \tilde\Pi_2$, Hermitian, of norm zero and scalar part $\tfrac12$,</p>
 <p>$$
 M = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} = E_{22} = uv^{\dagger}, \qquad u = v = \begin{pmatrix} 0 \\ 1 \end{pmatrix},
@@ -138,9 +138,9 @@ $$</p>
 <p>The congruence reads as the Lorentz action on the Hermitian matrix that carries a four-vector, and it is the smallest form in which a change of frame can be computed. Read for invariance, a congruence preserves the signature, which is why the sign of the interval is frame-invariant while its normalisation is not, and why the probability form is the one the congruence cannot reach at all. Read on the clock, the matrix image of the central imaginary is a scalar matrix, which is the matrix reason that the exchange commutes with every change of frame.</p>
 <p>Read on a state, the determinant is the framework's <strong>mixedness</strong>. The Hermitian matrix image of a state has $\det M_{\tilde\rho}=\tfrac14(1-\lvert\mathbf r\rvert^2)$, which is exactly the biquaternion norm of the trace-one state $\tilde\rho=\tfrac12(e_0+i\mathbf r)$; it vanishes on the pure states at the boundary of the ball and is maximal at its centre, and the purity and linear entropy read off it as $\mathrm{Tr}(\tilde\rho^2)=1-2\det M_{\tilde\rho}$ and $S_L=2\det M_{\tilde\rho}$, so the determinant is the matrix volume of the state (<em>Exercise: The Bloch Ball and the Geometry of Mixed States</em>). Boundary: the identity is the two-dimensional matrix image of an informational element, where the relevant transformations are unimodular; the general-biquaternion statement is the rank-and-determinant proposition above.</p>
 <h2 id="summary">Summary</h2>
-<p>In the matrix realization the operator is a congruence. The map $\Phi$ carries the Hermitian conjugate to the conjugate transpose, so the sandwich $\operatorname{H}_{\tilde{Q}}(\tilde R) = \tilde{Q}\tilde R\tilde{Q}^{*}$ becomes</p>
+<p>In the matrix realization the operator is a congruence. The map $\mathsf{M}_2$ carries the Hermitian conjugate to the conjugate transpose, so the sandwich $\operatorname{H}_{\tilde{Q}}(\tilde R) = \tilde{Q}\tilde R\tilde{Q}^{*}$ becomes</p>
 <p>$$
-X \longmapsto M X M^{\dagger}, \qquad M = \Phi(\tilde{Q}) \in M_2(\mathbb{C}),
+X \longmapsto M X M^{\dagger}, \qquad M = \mathsf{M}_2(\tilde{Q}) \in M_2(\mathbb{C}),
 $$</p>
 <p>a single familiar operation, linear in the argument and quadratic in the operand, and a similarity exactly when $M$ is unitary, that is, for the rotations. It preserves the two Hermitian sectors, because $(MXM^{\dagger})^{\dagger} = MXM^{\dagger}$ or its negative according to the sector of $X$, and it scales the determinant by $\lvert\det M\rvert^{2}$, which is the interval identity $N(\tilde T) = \langle\tilde T,\tilde T\rangle_{\natural} = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R)$. The image of the identity is the Gram matrix $MM^{\dagger}$, positive semidefinite of rank $\operatorname{rank}M$.</p>
 <p>The two regimes are the two ranks of $M$. Off the light cone $M$ is invertible, the congruence is a bijection preserving the four ranks of the two-by-two matrices, and the operator has rank $4$, determinant $\lvert N(\tilde{Q})\rvert^{4}$ and trace $4\lvert Q_0\rvert^{2}$, with the spectrum $\lambda_i\bar{\lambda}_j$ read from the eigenvalues of $M$. On the light cone $M = uv^{\dagger}$ has rank one and the congruence collapses the whole matrix algebra onto the single Hermitian line $\mathbb{C}uu^{\dagger}$, the line of a minimal idempotent: the operator has rank one, its square is $4\lvert Q_0\rvert^{2}$ times itself, and it is nilpotent for $Q_0 = 0$ and a scaled projection otherwise. The worked null operands $e_1 + ie_2$, $\tilde\Pi_2$ and $e_2 + ie_3$ show the three cases of the collapse, with images the lines of $\tilde\Pi_1$, $\tilde\Pi_2$ and $\tfrac12(e_0 + ie_1)$. The boost rotor $\tfrac53e_0 + \tfrac43ie_3$ shows the invertible case, with the half-rapidity of the operand appearing as the doubled rapidity of the congruence.</p>
@@ -154,23 +154,23 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$M = \Phi(\tilde{Q})$</td>
+<td>$M = \mathsf{M}_2(\tilde{Q})$</td>
 <td>the matrix of the operand, $\det M = N(\tilde{Q})$, $\operatorname{Tr}M = 2Q_0$</td>
 </tr>
 <tr>
-<td>$\Phi(\tilde{Q}^{*}) = \Phi(\tilde{Q})^{\dagger}$</td>
-<td>$\Phi$ carries the dagger to the conjugate transpose</td>
+<td>$\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger}$</td>
+<td>$\mathsf{M}_2$ carries the dagger to the conjugate transpose</td>
 </tr>
 <tr>
 <td>$X \mapsto MXM^{\dagger}$</td>
 <td>the sandwich as a congruence</td>
 </tr>
 <tr>
-<td>$MM^{\dagger} = \Phi(\tilde{Q}\tilde{Q}^{*})$</td>
+<td>$MM^{\dagger} = \mathsf{M}_2(\tilde{Q}\tilde{Q}^{*})$</td>
 <td>the image of the identity; the Gram matrix of $M$</td>
 </tr>
 <tr>
-<td>$\operatorname{rank}\Phi(\tilde{Q}\tilde R\tilde{Q}^{*}) \leq \operatorname{rank}\Phi(\tilde R)$</td>
+<td>$\operatorname{rank}\mathsf{M}_2(\tilde{Q}\tilde R\tilde{Q}^{*}) \leq \operatorname{rank}\mathsf{M}_2(\tilde R)$</td>
 <td>rank never increases; preserved off the cone</td>
 </tr>
 <tr>

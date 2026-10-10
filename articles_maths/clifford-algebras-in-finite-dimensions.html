@@ -177,15 +177,15 @@ $$</p>
 <p>$$
 [x, y] = xy - yx.
 $$</p>
-<p>The submodule $M_2$ of bivectors is closed under the commutator:</p>
+<p>The submodule $\mathsf{M}_2$ of bivectors is closed under the commutator:</p>
 <p>$$
-[M_2, M_2] \subseteq M_2.
+[\mathsf{M}_2, \mathsf{M}_2] \subseteq \mathsf{M}_2.
 $$</p>
-<p>So $M_2$, equipped with the commutator bracket, is a Lie subalgebra of $Cl(M, Q)$. In the non-degenerate case, $M_2$ is isomorphic to the orthogonal Lie algebra $\mathrm{SO}(M, Q)$:</p>
+<p>So $\mathsf{M}_2$, equipped with the commutator bracket, is a Lie subalgebra of $Cl(M, Q)$. In the non-degenerate case, $\mathsf{M}_2$ is isomorphic to the orthogonal Lie algebra $\mathrm{SO}(M, Q)$:</p>
 <p>$$
-M_2 \cong \mathrm{SO}(M, Q).
+\mathsf{M}_2 \cong \mathrm{SO}(M, Q).
 $$</p>
-<p><strong>The degenerate case.</strong> If $Q$ is degenerate, the bivectors involving radical elements are nilpotent, and the Lie algebra $\mathrm{SO}(M, Q)$ is replaced by a more complicated object. The spin group does not exist in the usual sense, because the radical elements do not have inverses. The bivectors involving radical elements generate a nilpotent ideal in $M_2$, and the quotient of $M_2$ by this ideal is the Lie algebra of the non-degenerate part.</p>
+<p><strong>The degenerate case.</strong> If $Q$ is degenerate, the bivectors involving radical elements are nilpotent, and the Lie algebra $\mathrm{SO}(M, Q)$ is replaced by a more complicated object. The spin group does not exist in the usual sense, because the radical elements do not have inverses. The bivectors involving radical elements generate a nilpotent ideal in $\mathsf{M}_2$, and the quotient of $\mathsf{M}_2$ by this ideal is the Lie algebra of the non-degenerate part.</p>
 <hr />
 <h1 id="part-iii-basis-and-rank-in-the-non-degenerate-case">Part III: Basis and Rank in the Non-Degenerate Case</h1>
 <h2 id="12-basis">12. Basis</h2>
@@ -308,9 +308,9 @@ $$</p>
 <h2 id="24-the-decomposition">24. The Decomposition</h2>
 <p>The Clifford algebra of a direct sum of two modules with quadratic forms is the graded tensor product of the Clifford algebras of the summands:</p>
 <p>$$
-Cl(M_1 \oplus M_2, Q_1 \oplus Q_2) \cong Cl(M_1, Q_1) \hat{\otimes} Cl(M_2, Q_2).
+Cl(M_1 \oplus \mathsf{M}_2, Q_1 \oplus Q_2) \cong Cl(M_1, Q_1) \hat{\otimes} Cl(\mathsf{M}_2, Q_2).
 $$</p>
-<p>In the graded tensor product, odd elements from the two factors anticommute, rather than commute. This ensures that the images of $v_1 \in M_1$ and $v_2 \in M_2$ anticommute, as required by the Clifford relations.</p>
+<p>In the graded tensor product, odd elements from the two factors anticommute, rather than commute. This ensures that the images of $v_1 \in M_1$ and $v_2 \in \mathsf{M}_2$ anticommute, as required by the Clifford relations.</p>
 <h2 id="25-why-this-matters">25. Why This Matters</h2>
 <p>The decomposition reduces the classification of Clifford algebras to the one-dimensional cases. Over any commutative ring, a free module of finite rank can be written as a direct sum of free submodules of rank 1. So the Clifford algebra decomposes as a graded tensor product of rank-one Clifford algebras.</p>
 <p>The classification of the rank-one cases, and the resulting periodic pattern, depend on the ring. This is not covered here.</p>
@@ -328,10 +328,10 @@ $$</p>
 <h2 id="27-the-graded-tensor-product-and-the-parity">27. The Graded Tensor Product and the Parity</h2>
 <p>The graded tensor product has a subtlety: the parity of an element in the tensor product is the sum of the parities of its factors. This is compatible with the $\mathbb{Z}/2$-grading of the Clifford algebra:</p>
 <p>$$
-Cl^0(M_1 \oplus M_2) \cong Cl^0(M_1) \otimes Cl^0(M_2) \oplus Cl^1(M_1) \otimes Cl^1(M_2),
+Cl^0(M_1 \oplus \mathsf{M}_2) \cong Cl^0(M_1) \otimes Cl^0(\mathsf{M}_2) \oplus Cl^1(M_1) \otimes Cl^1(\mathsf{M}_2),
 $$</p>
 <p>$$
-Cl^1(M_1 \oplus M_2) \cong Cl^0(M_1) \otimes Cl^1(M_2) \oplus Cl^1(M_1) \otimes Cl^0(M_2).
+Cl^1(M_1 \oplus \mathsf{M}_2) \cong Cl^0(M_1) \otimes Cl^1(\mathsf{M}_2) \oplus Cl^1(M_1) \otimes Cl^0(\mathsf{M}_2).
 $$</p>
 <p>So the even part of the tensor product is not the tensor product of the even parts: it also includes the tensor product of the odd parts. This is a consequence of the graded structure, and it is the reason the classification of Clifford algebras is periodic rather than simply multiplicative.</p>
 <hr />

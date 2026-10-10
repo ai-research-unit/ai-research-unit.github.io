@@ -72,17 +72,17 @@ $$</p>
 $$</p>
 <p>an isomorphism of $\mathbb{C}$-algebras.</p>
 <p><em>Proof.</em> The $\mathbb{R}$-linear map $\iota : \mathbb{H}\to M_2(\mathbb{C})$ given by $\iota(\tilde q) = q_0I - i(q_1\sigma_1+q_2\sigma_2+q_3\sigma_3)$ is multiplicative, since the Pauli matrices satisfy $\sigma_j\sigma_k = \delta_{jk}I + i\sum_l\epsilon_{jkl}\sigma_l$, which is the quaternion multiplication rule under the correspondence $e_k\leftrightarrow -i\sigma_k$. It is injective with four-dimensional real image, so its $\mathbb{C}$-linear extension $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\to M_2(\mathbb{C})$ is a surjective map of four-dimensional $\mathbb{C}$-algebras, hence an isomorphism.</p>
-<p><strong>Definition.</strong> In the general element $\tilde Q = \sum_\mu Q_\mu e_\mu$ of the complexification the coefficients $Q_\mu$ lie in $\mathbb{C}$; the map $\Phi : \mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\to M_2(\mathbb{C})$ extends $\iota$ by $\mathbb{C}$-linearity.</p>
+<p><strong>Definition.</strong> In the general element $\tilde Q = \sum_\mu Q_\mu e_\mu$ of the complexification the coefficients $Q_\mu$ lie in $\mathbb{C}$; the map $\mathsf{M}_2 : \mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\to M_2(\mathbb{C})$ extends $\iota$ by $\mathbb{C}$-linearity.</p>
 <h2 id="the-images-of-the-basis">The Images of the Basis</h2>
-<p><strong>Theorem.</strong> The isomorphism $\Phi$ can be fixed by</p>
+<p><strong>Theorem.</strong> The isomorphism $\mathsf{M}_2$ can be fixed by</p>
 <p>$$
-\Phi(e_0) = I, \quad \Phi(e_1) = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \quad \Phi(e_2) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad \Phi(e_3) = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
+\mathsf{M}_2(e_0) = I, \quad \mathsf{M}_2(e_1) = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \quad \mathsf{M}_2(e_2) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad \mathsf{M}_2(e_3) = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
 $$</p>
 <p>so that on a general element</p>
 <p>$$
-\Phi(\tilde Q) = Q_0 I - i(Q_1\sigma_1+Q_2\sigma_2+Q_3\sigma_3) = \begin{pmatrix} Q_0-iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & Q_0+iQ_3 \end{pmatrix}.
+\mathsf{M}_2(\tilde Q) = Q_0 I - i(Q_1\sigma_1+Q_2\sigma_2+Q_3\sigma_3) = \begin{pmatrix} Q_0-iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & Q_0+iQ_3 \end{pmatrix}.
 $$</p>
-<p><em>Proof.</em> The four images satisfy the quaternion relations, as the basis relations are checked directly: $\Phi(e_1)^2 = -I$, $\Phi(e_2)^2 = -I$, $\Phi(e_3)^2 = -I$ and $\Phi(e_1)\Phi(e_2) = \Phi(e_3)$, with the reversed products negative; the four images are linearly independent over $\mathbb{C}$, so the extension is an isomorphism.</p>
+<p><em>Proof.</em> The four images satisfy the quaternion relations, as the basis relations are checked directly: $\mathsf{M}_2(e_1)^2 = -I$, $\mathsf{M}_2(e_2)^2 = -I$, $\mathsf{M}_2(e_3)^2 = -I$ and $\mathsf{M}_2(e_1)\mathsf{M}_2(e_2) = \mathsf{M}_2(e_3)$, with the reversed products negative; the four images are linearly independent over $\mathbb{C}$, so the extension is an isomorphism.</p>
 <p><strong>Remark (the choice).</strong> The correspondence $e_k\mapsto-i\sigma_k$ is the corpus's choice, held fixed once and for all. It is not canonical: another isomorphism differs from this one by conjugation by an invertible matrix, and all the invariants below are unchanged. The Pauli matrices appear only as a shorthand for the images of $e_1,e_2,e_3$.</p>
 <p><strong>Corollary.</strong> The images of the basis are, up to the factor $-i$, the Pauli matrices, and the image of the real quaternion algebra $\iota(\mathbb{H})$ is the set</p>
 <p>$$
@@ -93,7 +93,7 @@ $$</p>
 <h2 id="trace-and-determinant">Trace and Determinant</h2>
 <p><strong>Theorem.</strong> For every element of the complexification,</p>
 <p>$$
-\operatorname{tr}\Phi(\tilde Q) = 2Q_0, \qquad \det\Phi(\tilde Q) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 = N(\tilde Q).
+\operatorname{tr}\mathsf{M}_2(\tilde Q) = 2Q_0, \qquad \det \mathsf{M}_2(\tilde Q) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 = N(\tilde Q).
 $$</p>
 <p><em>Proof.</em> The trace is the sum of the diagonal entries $Q_0-iQ_3$ and $Q_0+iQ_3$, namely $2Q_0$. The determinant is</p>
 <p>$$
@@ -130,7 +130,7 @@ $$</p>
 <p><em>Proof.</em> For a $2\times2$ matrix $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ the adjugate is $\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$. Applying this to $\iota(\tilde q)$ gives the displayed matrix, which is $\iota(q_0-q_1e_1-q_2e_2-q_3e_3) = \iota(\tilde{q}^{\natural})$.</p>
 <p><strong>Definition.</strong> The <strong>antisymmetric form</strong> is</p>
 <p>$$
-\epsilon = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = i\sigma_2 = -\Phi(e_2), \qquad \epsilon^{T} = -\epsilon, \quad \epsilon^2 = -I .
+\epsilon = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = i\sigma_2 = -\mathsf{M}_2(e_2), \qquad \epsilon^{T} = -\epsilon, \quad \epsilon^2 = -I .
 $$</p>
 <p><strong>Theorem.</strong> Quaternion conjugation is transposition dressed with the antisymmetric form:</p>
 <p>$$
@@ -213,7 +213,7 @@ $$</p>
 </table></div>
 <p>The pattern is that a $2\times2$ matrix realisation over a commutative ring exists exactly when the algebra is a full matrix algebra over that ring. The quaternion algebra becomes one only after complexification, the biquaternion algebra already is one, and the split biquaternion algebra never is: its decomposition into two division algebras is exactly what prevents it. The biquaternion account is in <em>Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The complexification $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ is a four-dimensional complex algebra isomorphic to $M_2(\mathbb{C})$, through the map sending $e_0\mapsto I$ and $e_k\mapsto-i\sigma_k$, with $\Phi(\tilde Q) = Q_0I-i\sum_k Q_k\sigma_k$; the choice is fixed once and is not canonical. The trace of an image is twice the scalar coordinate and the determinant is the quaternion norm, $N(\tilde Q) = \sum_\mu Q_\mu^2$, so invertibility over $\mathbb{R}$ is non-vanishing determinant, and the determinant is a perfect square no longer: over $\mathbb{C}$ it is an arbitrary complex number.</p>
+<p>The complexification $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ is a four-dimensional complex algebra isomorphic to $M_2(\mathbb{C})$, through the map sending $e_0\mapsto I$ and $e_k\mapsto-i\sigma_k$, with $\mathsf{M}_2(\tilde Q) = Q_0I-i\sum_k Q_k\sigma_k$; the choice is fixed once and is not canonical. The trace of an image is twice the scalar coordinate and the determinant is the quaternion norm, $N(\tilde Q) = \sum_\mu Q_\mu^2$, so invertibility over $\mathbb{R}$ is non-vanishing determinant, and the determinant is a perfect square no longer: over $\mathbb{C}$ it is an arbitrary complex number.</p>
 <p>The image of the real quaternion algebra is the four-dimensional real space of matrices $\begin{pmatrix} A & B \\ -\bar B & \bar A \end{pmatrix}$, on which the quaternion norm is the determinant and the inner product matches half the Frobenius form, $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2|\tilde q|^2$. Quaternion conjugation is the adjugate, equivalently the antisymmetric-form-dressed transpose $\iota(\tilde{q}^{\natural}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ with $\epsilon = i\sigma_2$; the scalar subspace maps to the real scalar matrices and the vector subspace to the traceless matrices, giving $M_2(\mathbb{C}) = \mathbb{C}I\oplus\mathrm{SL}_2(\mathbb{C})$ after complexification.</p>
 <p>There is no injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, because its image would be all of $M_2(\mathbb{R})$, which has zero divisors while $\mathbb{H}$ has none; the smallest real representation is the $4\times4$ regular one. The biquaternion algebra is $M_2(\mathbb{C})$ without extension of coefficients, and the split biquaternion algebra is $\mathbb{H}\oplus\mathbb{H}$, whose central idempotents rule out a $2\times2$ matrix realisation over any commutative ring.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -246,19 +246,19 @@ $$</p>
 <td>Matrix representation of the real algebra</td>
 </tr>
 <tr>
-<td>$\Phi : \mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\to M_2(\mathbb{C})$</td>
+<td>$\mathsf{M}_2 : \mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\to M_2(\mathbb{C})$</td>
 <td>The $\mathbb{C}$-algebra isomorphism</td>
 </tr>
 <tr>
 <td>$\sigma_1,\sigma_2,\sigma_3$</td>
-<td>Pauli matrices; $\Phi(e_k) = -i\sigma_k$</td>
+<td>Pauli matrices; $\mathsf{M}_2(e_k) = -i\sigma_k$</td>
 </tr>
 <tr>
-<td>$\operatorname{tr}\Phi(\tilde Q) = 2Q_0$</td>
+<td>$\operatorname{tr}\mathsf{M}_2(\tilde Q) = 2Q_0$</td>
 <td>Trace image of the scalar coordinate</td>
 </tr>
 <tr>
-<td>$\det\Phi(\tilde Q) = N(\tilde Q)$</td>
+<td>$\det \mathsf{M}_2(\tilde Q) = N(\tilde Q)$</td>
 <td>Determinant image of the quaternion norm</td>
 </tr>
 <tr>
@@ -266,7 +266,7 @@ $$</p>
 <td>Conjugate transpose; $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2\lvert \tilde q\rvert^2$</td>
 </tr>
 <tr>
-<td>$\epsilon = i\sigma_2 = -\Phi(e_2)$</td>
+<td>$\epsilon = i\sigma_2 = -\mathsf{M}_2(e_2)$</td>
 <td>Antisymmetric form; $\iota(\tilde{q}^{\natural}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$</td>
 </tr>
 <tr>

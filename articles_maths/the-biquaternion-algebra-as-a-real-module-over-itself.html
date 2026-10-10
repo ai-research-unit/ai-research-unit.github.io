@@ -55,7 +55,7 @@
 <p>The biquaternion algebra $\mathbb{B}$ acts on itself by left multiplication, and that action makes $\mathbb{B}$ a module over itself. Read over $\mathbb{C}$ the action is the left regular representation of the four-dimensional complex algebra, a $4 \times 4$ matrix representation; read over $\mathbb{R}$ the same action is a representation of the eight-dimensional real algebra, an $8 \times 8$ real matrix representation. This article treats the <strong>real</strong> module: the regular left module over the real algebra, its rank, its submodules and its endomorphism ring.</p>
 <p>The complex $4 \times 4$ regular matrix, its determinant $N(\tilde Q)^2$, its trace $4Q_0$, its characteristic polynomial and the decomposition $\mathbb{B} \cong V \oplus V$ into the simple module are <em>Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$</em>, and they are cited, not repeated. The real content is the realification: the $8 \times 8$ real matrix is the block matrix
 $$
-\operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}, \qquad \operatorname{mat}_4(\tilde Q) = A + iB ,
+\mathsf{M}_4^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}, \qquad \mathsf{M}_4(\tilde Q) = A + iB ,
 $$
 in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and this is the form in which the real module is read. The rank over the algebra is one; the rank over the field is eight; the submodule lattice is the lattice of left ideals and is the same as over $\mathbb{C}$; and the endomorphism ring over $\mathbb{R}$ is the full matrix ring $M_8(\mathbb{R})$, with the $\mathbb{B}$-linear endomorphisms the right multiplications.</p>
 <p>The general theory is <em>Modules over an Algebra</em>, <em>Direct Sums, Free Modules and Rank</em> and <em>The Endomorphism Algebra of a Module</em>; the simple module and the module classification are <em>Modules over the General Plain Algebra of Biquaternions</em>; the left ideals are <em>Biquaternion Ideals and Peirce Decomposition</em>; the invariance of the submodule lattice under the change of scalars is <em>Why the Ideals, the Idempotents and the Zero Divisors Do Not Change</em>; the $4 \times 4$ complex matrix is <em>Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$</em>; and the scalar field is <em>The Change of Scalars from $\mathbb{C}$ to $\mathbb{R}$</em>.</p>
@@ -72,30 +72,30 @@ The action satisfies the module axioms because the multiplication of $\mathbb{B}
 <h2 id="the-left-regular-representation">The Left Regular Representation</h2>
 <p><strong>Definition.</strong> The <strong>left regular representation</strong> of the real algebra is the map
 $$
-\operatorname{mat}_4^{\mathbb{R}} : \mathbb{B} \longrightarrow \operatorname{End}_{\mathbb{R}}(\mathbb{B}), \qquad \operatorname{mat}_4^{\mathbb{R}}(\tilde Q)(\tilde R) = \tilde Q\tilde R .
+L^{\mathbb{R}} : \mathbb{B} \longrightarrow \operatorname{End}_{\mathbb{R}}(\mathbb{B}), \qquad L^{\mathbb{R}}_{\tilde Q}(\tilde R) = \tilde Q\tilde R .
 $$
 It is a unital $\mathbb{R}$-algebra homomorphism, and in the real basis its matrix is the $8 \times 8$ real matrix of the operator $\tilde R \mapsto \tilde Q\tilde R$.</p>
-<p><strong>Theorem (the real matrix is the realification of the complex one).</strong> Write $\operatorname{mat}_4(\tilde Q) = A + iB$ for the $4 \times 4$ complex Cayley matrix of $\tilde Q$, with $A$ and $B$ real $4 \times 4$ matrices. Then in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$,
+<p><strong>Theorem (the real matrix is the realification of the complex one).</strong> Write $\mathsf{M}_4(\tilde Q) = A + iB$ for the $4 \times 4$ complex Cayley matrix of $\tilde Q$, with $A$ and $B$ real $4 \times 4$ matrices. Then in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$,
 $$
-\operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}.
+\mathsf{M}_4^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}.
 $$</p>
-<p><strong>Proof.</strong> Multiplication by $i$ commutes with the product, so the operator $\operatorname{mat}_4^{\mathbb{R}}(\tilde Q)$ is complex-linear and the $4 \times 4$ complex matrix $\operatorname{mat}_4(\tilde Q)$ describes it. The real basis is the complex basis $e_0,e_1,e_2,e_3$ followed by its multiple by $i$; in that ordering an operator with complex matrix $A + iB$ acts on a real coordinate column by the block matrix $\begin{pmatrix} A & -B \\ B & A\end{pmatrix}$, because $i(x + iy) = -y + ix$. $\square$</p>
-<p><strong>Corollary.</strong> The map $\operatorname{mat}_4^{\mathbb{R}}$ is an injective unital $\mathbb{R}$-algebra homomorphism, $\operatorname{mat}_4^{\mathbb{R}}(\tilde P\tilde Q) = \operatorname{mat}_4^{\mathbb{R}}(\tilde P)\operatorname{mat}_4^{\mathbb{R}}(\tilde Q)$, and its image is an eight-dimensional real subalgebra of $M_8(\mathbb{R})$ isomorphic to $\mathbb{B}$.</p>
-<p><strong>Proof.</strong> Multiplicativity of $\operatorname{mat}_4^{\mathbb{R}}$ is associativity of the product; injectivity is $\operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = 0 \Rightarrow \operatorname{mat}_4^{\mathbb{R}}(\tilde Q)(e_0) = \tilde Q = 0$; the image is a subalgebra because $\operatorname{mat}_4^{\mathbb{R}}$ is a homomorphism, and it has dimension eight because the map is injective on an eight-dimensional space. $\square$</p>
+<p><strong>Proof.</strong> Multiplication by $i$ commutes with the product, so the operator $L^{\mathbb{R}}_{\tilde Q}$ is complex-linear and the $4 \times 4$ complex matrix $\mathsf{M}_4(\tilde Q)$ describes it. The real basis is the complex basis $e_0,e_1,e_2,e_3$ followed by its multiple by $i$; in that ordering an operator with complex matrix $A + iB$ acts on a real coordinate column by the block matrix $\begin{pmatrix} A & -B \\ B & A\end{pmatrix}$, because $i(x + iy) = -y + ix$. $\square$</p>
+<p><strong>Corollary.</strong> The map $\mathsf{M}_4^{\mathbb{R}}$ is an injective unital $\mathbb{R}$-algebra homomorphism, $\mathsf{M}_4^{\mathbb{R}}(\tilde P\tilde Q) = \mathsf{M}_4^{\mathbb{R}}(\tilde P)\mathsf{M}_4^{\mathbb{R}}(\tilde Q)$, and its image is an eight-dimensional real subalgebra of $M_8(\mathbb{R})$ isomorphic to $\mathbb{B}$.</p>
+<p><strong>Proof.</strong> Multiplicativity of $\mathsf{M}_4^{\mathbb{R}}$ is associativity of the product; injectivity is $\mathsf{M}_4^{\mathbb{R}}(\tilde Q) = 0 \Rightarrow L^{\mathbb{R}}_{\tilde Q}(e_0) = \tilde Q = 0$; the image is a subalgebra because $\mathsf{M}_4^{\mathbb{R}}$ is a homomorphism, and it has dimension eight because the map is injective on an eight-dimensional space. $\square$</p>
 <h2 id="the-determinant-and-the-trace">The Determinant and the Trace</h2>
 <p>The two invariants of the real regular matrix are the realification of the two invariants of the complex one.</p>
 <p><strong>Theorem.</strong> For every $\tilde Q \in \mathbb{B}$,
 $$
-\det \operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = \bigl|N(\tilde Q)\bigr|^4, \qquad \operatorname{Tr} \operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = 8\operatorname{Re}(Q_0).
+\det \mathsf{M}_4^{\mathbb{R}}(\tilde Q) = \bigl|N(\tilde Q)\bigr|^4, \qquad \operatorname{Tr} \mathsf{M}_4^{\mathbb{R}}(\tilde Q) = 8\operatorname{Re}(Q_0).
 $$</p>
-<p><strong>Proof.</strong> The complex matrix has $\det \operatorname{mat}_4(\tilde Q) = N(\tilde Q)^2$ and $\operatorname{Tr}\operatorname{mat}_4(\tilde Q) = 4Q_0$ (<em>Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>, §<em>The Determinant and the Trace</em>), with characteristic polynomial $\bigl(\lambda^2 - 2Q_0\lambda + N(\tilde Q)\bigr)^2$. A complex-linear operator with eigenvalues $\lambda_1,\dots,\lambda_4$ has realification with eigenvalues $\lambda_1,\bar\lambda_1,\dots,\lambda_4,\bar\lambda_4$, so the determinant of the realification is $|\lambda_1\cdots\lambda_4|^2 = |N(\tilde Q)^2|^2 = |N(\tilde Q)|^4$ and its trace is $2\operatorname{Re}(\lambda_1+\cdots+\lambda_4) = 2\operatorname{Re}(4Q_0) = 8\operatorname{Re}(Q_0)$. $\square$</p>
-<p><strong>Remark (the real matrix is never singular off the zero divisors).</strong> The form $|N(\tilde Q)|^4$ is non-negative and vanishes exactly when $N(\tilde Q) = 0$; so the real regular matrix is singular exactly on the zero divisors, in agreement with the invertibility criterion $N(\tilde Q) \neq 0$ of <em>Biquaternion Norm and Invertibility</em>. Over $\mathbb{C}$ the same statement reads $\det \operatorname{mat}_4 = N^2$, and the square root is taken by the realification.</p>
+<p><strong>Proof.</strong> The complex matrix has $\det \mathsf{M}_4(\tilde Q) = N(\tilde Q)^2$ and $\operatorname{Tr}\mathsf{M}_4(\tilde Q) = 4Q_0$ (<em>Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>, §<em>The Determinant and the Trace</em>), with characteristic polynomial $\bigl(\lambda^2 - 2Q_0\lambda + N(\tilde Q)\bigr)^2$. A complex-linear operator with eigenvalues $\lambda_1,\dots,\lambda_4$ has realification with eigenvalues $\lambda_1,\bar\lambda_1,\dots,\lambda_4,\bar\lambda_4$, so the determinant of the realification is $|\lambda_1\cdots\lambda_4|^2 = |N(\tilde Q)^2|^2 = |N(\tilde Q)|^4$ and its trace is $2\operatorname{Re}(\lambda_1+\cdots+\lambda_4) = 2\operatorname{Re}(4Q_0) = 8\operatorname{Re}(Q_0)$. $\square$</p>
+<p><strong>Remark (the real matrix is never singular off the zero divisors).</strong> The form $|N(\tilde Q)|^4$ is non-negative and vanishes exactly when $N(\tilde Q) = 0$; so the real regular matrix is singular exactly on the zero divisors, in agreement with the invertibility criterion $N(\tilde Q) \neq 0$ of <em>Biquaternion Norm and Invertibility</em>. Over $\mathbb{C}$ the same statement reads $\det \mathsf{M}_4 = N^2$, and the square root is taken by the realification.</p>
 <p><strong>Proposition (the trace form).</strong> For all $\tilde P, \tilde Q \in \mathbb{B}$,
 $$
-\operatorname{Tr}\!\bigl(\operatorname{mat}_4^{\mathbb{R}}(\tilde P)\,\operatorname{mat}_4^{\mathbb{R}}(\tilde Q)\bigr) = 8\operatorname{Re}\bigl((\tilde P\tilde Q)_0\bigr) ,
+\operatorname{Tr}\!\bigl(\mathsf{M}_4^{\mathbb{R}}(\tilde P)\,\mathsf{M}_4^{\mathbb{R}}(\tilde Q)\bigr) = 8\operatorname{Re}\bigl((\tilde P\tilde Q)_0\bigr) ,
 $$
 a symmetric $\mathbb{R}$-bilinear form on the regular module, of signature $(4,4)$.</p>
-<p><strong>Proof.</strong> The product of the two matrices is $\operatorname{mat}_4^{\mathbb{R}}(\tilde P\tilde Q)$, so the trace is $8\operatorname{Re}((\tilde P\tilde Q)_0)$ by the theorem; symmetric because $\operatorname{Tr}(XY) = \operatorname{Tr}(YX)$ and $\operatorname{Re}((\tilde P\tilde Q)_0) = \operatorname{Re}((\tilde Q\tilde P)_0)$. Writing $Q_0 = a+bi$ and $Q_k = c_k + id_k$, the quadratic form $\operatorname{Re}\bigl((\tilde Q^2)_0\bigr) = (a^2-b^2) - \sum_k(c_k^2-d_k^2)$ has one positive and one negative scalar direction and three positive and three negative vector directions, hence signature $(4,4)$. $\square$</p>
+<p><strong>Proof.</strong> The product of the two matrices is $\mathsf{M}_4^{\mathbb{R}}(\tilde P\tilde Q)$, so the trace is $8\operatorname{Re}((\tilde P\tilde Q)_0)$ by the theorem; symmetric because $\operatorname{Tr}(XY) = \operatorname{Tr}(YX)$ and $\operatorname{Re}((\tilde P\tilde Q)_0) = \operatorname{Re}((\tilde Q\tilde P)_0)$. Writing $Q_0 = a+bi$ and $Q_k = c_k + id_k$, the quadratic form $\operatorname{Re}\bigl((\tilde Q^2)_0\bigr) = (a^2-b^2) - \sum_k(c_k^2-d_k^2)$ has one positive and one negative scalar direction and three positive and three negative vector directions, hence signature $(4,4)$. $\square$</p>
 <h2 id="submodules-and-the-composition-series">Submodules and the Composition Series</h2>
 <p><strong>Theorem.</strong> The left $\mathbb{B}$-submodules of the regular module are exactly the left ideals of $\mathbb{B}$; they are the same sets over $\mathbb{R}$ and over $\mathbb{C}$, and the two submodule lattices coincide.</p>
 <p><strong>Proof.</strong> A submodule is an additive subgroup closed under left multiplication by every element of $\mathbb{B}$, which is a left ideal. The change-of-scalars statement is <em>Why the Ideals, the Idempotents and the Zero Divisors Do Not Change</em>, where it is shown that such a subgroup is automatically a complex subspace because $i \in \mathbb{B}$. $\square$</p>
@@ -110,27 +110,27 @@ so it has composition length two and its socle is the whole module.</p>
 <h2 id="the-endomorphism-ring">The Endomorphism Ring</h2>
 <p><strong>Theorem.</strong> The $\mathbb{B}$-linear endomorphisms of the regular left module are the right multiplications,
 $$
-\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \{\operatorname{mat}_4^{R}(\tilde Q) : \tilde R \mapsto \tilde R\tilde Q\} \cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B} ,
+\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \{\mathsf{M}_4^{R}(\tilde Q) : \tilde R \mapsto \tilde R\tilde Q\} \cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B} ,
 $$
-an eight-dimensional real algebra, and it is the centralizer of $\operatorname{mat}_4^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$.</p>
-<p><strong>Proof.</strong> Let $f$ be $\mathbb{B}$-linear. Then $f(\tilde R) = f(\tilde R e_0) = \tilde R f(e_0)$, so $f = \operatorname{mat}_4^{R}(\tilde Q)$ with $\tilde Q = f(e_0)$; conversely right multiplications are module endomorphisms because the product associates. The map $\tilde Q \mapsto \operatorname{mat}_4^{R}(\tilde Q)$ is an anti-isomorphism onto its image, and $\mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$ by the anti-automorphism $\natural$. The centralizer statement is <em>The Endomorphism Algebra of a Module</em>, and holds over $\mathbb{R}$ because the centralizer of $\operatorname{mat}_4^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$ consists of the real-linear maps commuting with every left multiplication, which are exactly the right multiplications. $\square$</p>
+an eight-dimensional real algebra, and it is the centralizer of $\mathsf{M}_4^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> Let $f$ be $\mathbb{B}$-linear. Then $f(\tilde R) = f(\tilde R e_0) = \tilde R f(e_0)$, so $f = \mathsf{M}_4^{R}(\tilde Q)$ with $\tilde Q = f(e_0)$; conversely right multiplications are module endomorphisms because the product associates. The map $\tilde Q \mapsto \mathsf{M}_4^{R}(\tilde Q)$ is an anti-isomorphism onto its image, and $\mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$ by the anti-automorphism $\natural$. The centralizer statement is <em>The Endomorphism Algebra of a Module</em>, and holds over $\mathbb{R}$ because the centralizer of $\mathsf{M}_4^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$ consists of the real-linear maps commuting with every left multiplication, which are exactly the right multiplications. $\square$</p>
 <p><strong>Theorem (the full endomorphism ring and the mutual centralizers).</strong> The $\mathbb{R}$-linear endomorphisms of the regular module are all $\mathbb{R}$-linear maps,
 $$
 \operatorname{End}_{\mathbb{R}}(\mathbb{B}) \cong M_8(\mathbb{R}) ,
 $$
-the centralizer of $\operatorname{mat}_4^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$ is $\operatorname{mat}_4^{R}(\mathbb{B})$, and the centralizer of that is $\operatorname{mat}_4^{\mathbb{R}}(\mathbb{B})$; the two copies are mutual centralizers, each of real dimension eight.</p>
+the centralizer of $\mathsf{M}_4^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$ is $\mathsf{M}_4^{R}(\mathbb{B})$, and the centralizer of that is $\mathsf{M}_4^{\mathbb{R}}(\mathbb{B})$; the two copies are mutual centralizers, each of real dimension eight.</p>
 <p><strong>Proof.</strong> An $\mathbb{R}$-linear endomorphism of an eight-dimensional real space is an arbitrary $8 \times 8$ real matrix, and conversely. The centralizer computation is <em>The Endomorphism Algebra of a Module</em>, and its converse follows from the double centralizer theorem for a faithful semisimple module over a simple algebra: the algebra $\mathbb{B}$ is simple, the regular module is the direct sum of two copies of the simple module $V$, and the bimodule $\mathbb{B} \cong V \oplus V$ has the two one-sided copies as mutual commutants. $\square$</p>
 <p><strong>Remark (the comparison of the two endomorphism rings).</strong> Over $\mathbb{C}$, $\operatorname{End}_\mathbb{C}(\mathbb{B}) \cong M_4(\mathbb{C})$ and the $\mathbb{B}$-linear endomorphisms are the right copy of complex dimension four; over $\mathbb{R}$, the full ring is $M_8(\mathbb{R})$ and the $\mathbb{B}$-linear endomorphisms are the right copy of real dimension eight. The $\mathbb{B}$-linear part is unchanged as a set, by the change-of-scalars theorem, while the full endomorphism ring grows from $M_4(\mathbb{C})$ to $M_8(\mathbb{R})$, of real dimensions $32$ and $64$.</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion algebra acts on itself on the left, and over $\mathbb{R}$ that action is the $8 \times 8$ real left regular representation, the realification of the $4 \times 4$ complex Cayley matrix,
 $$
-\operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}, \qquad \operatorname{mat}_4(\tilde Q) = A + iB ,
+\mathsf{M}_4^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}, \qquad \mathsf{M}_4(\tilde Q) = A + iB ,
 $$
 a unital $\mathbb{R}$-algebra homomorphism with image an eight-dimensional subalgebra of $M_8(\mathbb{R})$ isomorphic to $\mathbb{B}$.</p>
 <p>$$
-\boxed{\ \text{The real regular module is free of rank one over } \mathbb{B} \text{ and rank eight over } \mathbb{R};\ \det\operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = |N(\tilde Q)|^4,\ \operatorname{Tr}\operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = 8\operatorname{Re}(Q_0). }
+\boxed{\ \text{The real regular module is free of rank one over } \mathbb{B} \text{ and rank eight over } \mathbb{R};\ \det\mathsf{M}_4^{\mathbb{R}}(\tilde Q) = |N(\tilde Q)|^4,\ \operatorname{Tr}\mathsf{M}_4^{\mathbb{R}}(\tilde Q) = 8\operatorname{Re}(Q_0). }
 $$</p>
-<p>Its submodules are the left ideals, the same lattice as over $\mathbb{C}$, and the regular module is semisimple, $V \oplus V$, of composition length two and simple module of real dimension four; the $\mathbb{B}$-linear endomorphisms are the right multiplications, $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) \cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$, unchanged by the change of scalars, while the full endomorphism ring is $\operatorname{End}_{\mathbb{R}}(\mathbb{B}) \cong M_8(\mathbb{R})$, against $M_4(\mathbb{C})$ over $\mathbb{C}$. The determinant and trace of the real regular matrix are the absolute square and the doubled real part of those of the complex one; the trace form $\operatorname{Tr}(\operatorname{mat}_4^{\mathbb{R}}(\tilde P)\operatorname{mat}_4^{\mathbb{R}}(\tilde Q)) = 8\operatorname{Re}((\tilde P\tilde Q)_0)$ is a symmetric bilinear form of signature $(4,4)$.</p>
+<p>Its submodules are the left ideals, the same lattice as over $\mathbb{C}$, and the regular module is semisimple, $V \oplus V$, of composition length two and simple module of real dimension four; the $\mathbb{B}$-linear endomorphisms are the right multiplications, $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) \cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$, unchanged by the change of scalars, while the full endomorphism ring is $\operatorname{End}_{\mathbb{R}}(\mathbb{B}) \cong M_8(\mathbb{R})$, against $M_4(\mathbb{C})$ over $\mathbb{C}$. The determinant and trace of the real regular matrix are the absolute square and the doubled real part of those of the complex one; the trace form $\operatorname{Tr}(\mathsf{M}_4^{\mathbb{R}}(\tilde P)\mathsf{M}_4^{\mathbb{R}}(\tilde Q)) = 8\operatorname{Re}((\tilde P\tilde Q)_0)$ is a symmetric bilinear form of signature $(4,4)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -141,11 +141,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\operatorname{mat}_4^{\mathbb{R}}(\tilde Q)$</td>
+<td>$\mathsf{M}_4^{\mathbb{R}}(\tilde Q)$</td>
 <td>the $8 \times 8$ real left regular matrix, $\tilde R \mapsto \tilde Q\tilde R$</td>
 </tr>
 <tr>
-<td>$\operatorname{mat}_4(\tilde Q) = A + iB$</td>
+<td>$\mathsf{M}_4(\tilde Q) = A + iB$</td>
 <td>the $4 \times 4$ complex Cayley matrix of <em>Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$</em></td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(\tilde Q) = \tilde Q\tilde Q^{\natural}$</td>
-<td>the norm; $\det\operatorname{mat}_4^{\mathbb{R}} = |N|^4$, $\operatorname{Tr}\operatorname{mat}_4^{\mathbb{R}} = 8\operatorname{Re}(Q_0)$</td>
+<td>the norm; $\det\mathsf{M}_4^{\mathbb{R}} = |N|^4$, $\operatorname{Tr}\mathsf{M}_4^{\mathbb{R}} = 8\operatorname{Re}(Q_0)$</td>
 </tr>
 <tr>
 <td>$V$</td>
@@ -165,19 +165,19 @@ $$</p>
 <td>$\tfrac12(e_0 \pm ie_3)$, the idempotents splitting $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2 \cong V\oplus V$</td>
 </tr>
 <tr>
-<td>$\operatorname{mat}_4^{R}(\tilde Q)$</td>
+<td>$\mathsf{M}_4^{R}(\tilde Q)$</td>
 <td>right multiplication, the $\mathbb{B}$-linear endomorphisms of the regular module</td>
 </tr>
 <tr>
 <td>$\operatorname{End}_{\mathbb{B}}(\mathbb{B})$</td>
-<td>$\cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$, real dimension eight, the centralizer of $\operatorname{mat}_4^{\mathbb{R}}(\mathbb{B})$</td>
+<td>$\cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$, real dimension eight, the centralizer of $\mathsf{M}_4^{\mathbb{R}}(\mathbb{B})$</td>
 </tr>
 <tr>
 <td>$\operatorname{End}_{\mathbb{R}}(\mathbb{B})$</td>
 <td>$\cong M_8(\mathbb{R})$, the full endomorphism ring</td>
 </tr>
 <tr>
-<td>$\operatorname{Tr}(\operatorname{mat}_4^{\mathbb{R}}(\tilde P)\operatorname{mat}_4^{\mathbb{R}}(\tilde Q))$</td>
+<td>$\operatorname{Tr}(\mathsf{M}_4^{\mathbb{R}}(\tilde P)\mathsf{M}_4^{\mathbb{R}}(\tilde Q))$</td>
 <td>$8\operatorname{Re}((\tilde P\tilde Q)_0)$, a form of signature $(4,4)$</td>
 </tr>
 </tbody>
