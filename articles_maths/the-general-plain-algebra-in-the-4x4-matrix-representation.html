@@ -56,11 +56,11 @@
 <p>The regular representation is the more faithful of the two carrier spaces, because it sees the algebra act and not only the algebra: it carries the left and right multiplications as two commuting copies, the natural conjugation as the transposition, and the two blocks of the fundamental decomposition as invariant subspaces. The trace pairing of the regular matrices is twice the general plain bilinear form, and the determinant of the regular matrix is the square of the determinant of the element, the two factors being the two copies of the simple module in $\mathbb{B}$.</p>
 <p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$ and sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$. All matrix claims of this article are recomputed in the verification script of the pass.</p>
 <h2 id="the-representation">The Representation</h2>
-<p><strong>Definition.</strong> The <strong>left regular representation</strong> is the algebra homomorphism</p>
+<p><strong>Definition.</strong> The <strong>left regular matrix</strong> is the isomorphism written $\mathsf{M}_4$. It converts a biquaternion into a $4 \times 4$ complex matrix,</p>
 <p>$$
-\mathsf{M}_4:\mathbb{B}\longrightarrow M_4(\mathbb{C}),\qquad L_{\tilde{Q}}(\tilde{R})=\tilde{Q}\tilde{R},
+\mathsf{M}_4:\mathbb{B}\longrightarrow M_4(\mathbb{C}),
 $$</p>
-<p>with $\mathsf{M}_4(\tilde{Q})$ the $4\times4$ matrix of left multiplication in the basis $e_0,e_1,e_2,e_3$; the <strong>right regular representation</strong> is $R_{\tilde{Q}}(\tilde{R})=\tilde{R}\tilde{Q}$. The two representation matrices satisfy</p>
+<p>and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_0,e_1,e_2,e_3$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. The <strong>right regular matrix</strong> $\mathsf{M}_4^{R}(\tilde{Q})$ is defined the same way with the product in the opposite order, its $m$-th column being the coordinate column of $e_m\tilde{Q}$. The two representation matrices satisfy</p>
 <p>$$
 \mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})=\mathsf{M}_4(\tilde{P}\tilde{Q}),\qquad \mathsf{M}_4^{R}(\tilde{Q})=E\,\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}E,\qquad \mathsf{M}_4(\tilde{Q}^{\natural})=\mathsf{M}_4(\tilde{Q})^{\mathsf{T}},
 $$</p>

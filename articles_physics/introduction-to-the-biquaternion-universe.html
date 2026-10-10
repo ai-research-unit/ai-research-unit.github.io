@@ -144,7 +144,11 @@ $$</p>
 <h2 id="what-the-framework-achieves">What the Framework Achieves</h2>
 <p>The main result of the framework so far is that the biquaternion algebra <strong>contains, as a matter of algebra, the structures required for both relativity and quantum physics</strong>. They are not incompatible sectors of physics that must be glued together; they are two aspects of the same biquaternion space, appearing in its two complementary subspaces. Two further classifications are read from that algebra and developed elsewhere: the <strong>reality condition</strong> that fixes the type of a particle, and the split of the internal symmetry into a compact part carrying a discrete charge and a non-compact part carrying a continuous label. Both are <em>Particle Types, Discrete Charge and Three-Particle Couplings</em>; the antilinear structure behind them is <em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em>.</p>
 <h3 id="relativity-in-math114">Relativity in $\mathbb{M}_-$</h3>
-<p>The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The <strong>proper orthochronous Lorentz group</strong> $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the <strong>group of biquaternions of unit norm</strong> in $\mathbb{B}$:</p>
+<p>A point of the material sector is written in the coordinates of relativistic physics as</p>
+<p>$$
+\tilde{Q} = ic\,t\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 \in \mathbb{M}_-,
+$$</p>
+<p>the imaginary time $ic\,t$ together with the three real spatial coordinates $x, y, z$. The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The <strong>proper orthochronous Lorentz group</strong> $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the <strong>group of biquaternions of unit norm</strong> in $\mathbb{B}$:</p>
 <p>$$
 SL(2,\mathbb{C}) \;\cong\; \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}.
 $$</p>
@@ -154,8 +158,12 @@ $$</p>
 $$</p>
 <p>The group itself lives in the full algebra $\mathbb{B}$ (since $\mathbb{M}_-$ is not closed under multiplication and cannot carry a group structure). The four-vectors it acts on live in $\mathbb{M}_-$. The different types of Lorentz transformation have rotors in different subspaces: pure boosts have rotors in $\mathbb{M}_+$ (they are Hermitian), pure spatial rotations have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and general Lorentz transformations have rotors in the full algebra.</p>
 <p>The relativistic wave equations — <strong>Maxwell's equations</strong> and the <strong>Dirac equation</strong> — have natural biquaternion forms, as developed in the companion articles.</p>
-<h3 id="quantum-physics-in-math126">Quantum Physics in $\mathbb{M}_+$</h3>
-<p>The informational sector $\mathbb{M}_+$ is, exactly, the operator algebra of a two-state quantum system. This is established in the companion article <em>Quantum Physics in Biquaternionic Form</em>, and it can be summarized as follows.</p>
+<h3 id="quantum-physics-in-math129">Quantum Physics in $\mathbb{M}_+$</h3>
+<p>A point of the informational sector is written in its own coordinates as</p>
+<p>$$
+\tilde{Q} = (ct')\,e_0 + (ix')\,e_1 + (iy')\,e_2 + (iz')\,e_3 \in \mathbb{M}_+,
+$$</p>
+<p>the real time $ct'$ together with the three imaginary spatial coordinates $ix', iy', iz'$. The informational sector $\mathbb{M}_+$ is, exactly, the operator algebra of a two-state quantum system. This is established in the companion article <em>Quantum Physics in Biquaternionic Form</em>, and it can be summarized as follows.</p>
 <ul>
 <li>The <strong>idempotents</strong> in $\mathbb{M}_+$, of the form $\tilde\Pi_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, are the pure states of a qubit. They parametrize the Bloch sphere $S^2$.</li>
 <li>The <strong>positive trace-one elements</strong> in $\mathbb{M}_+$, of the form $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, are the mixed states, parametrizing the Bloch ball.</li>

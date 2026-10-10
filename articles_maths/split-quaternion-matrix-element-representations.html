@@ -60,17 +60,31 @@
 \Psi : \mathbb{H}_{\mathrm{s}} \longrightarrow M_n(\mathbb{R}).
 $$</p>
 <p>The representation is <strong>faithful</strong> by definition, since injectivity is required; its <strong>image</strong> is the subalgebra $\Psi(\mathbb{H}_{\mathrm{s}})$.</p>
-<p><strong>Definition.</strong> The <strong>defining representation</strong> of $\mathbb{H}_{\mathrm{s}}$ is the isomorphism</p>
+<p><strong>Definition.</strong> The <strong>defining representation</strong> of $\mathbb{H}_{\mathrm{s}}$ is the isomorphism written $\Phi$. It converts a split quaternion into a $2 \times 2$ real matrix,</p>
 <p>$$
-\Phi(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = \begin{pmatrix} q_0 - q_3 & q_2 - q_1 \\ q_1 + q_2 & q_0 + q_3 \end{pmatrix}
+\Phi : \mathbb{H}_{\mathrm{s}} \longrightarrow M_2(\mathbb{R}),
 $$</p>
-<p>of the model, whose values on the generators are</p>
+<p>and it is fixed by its values on the basis, the rest following by $\mathbb{R}$-linearity. The generators are assigned the matrices</p>
 <p>$$
 \Phi(1) = I, \quad \Phi(e_1) = J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad
 \Phi(e_2) = K = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
-\Phi(e_3) = D = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}.
+\Phi(e_3) = D = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix},
+$$</p>
+<p>so that on a general element</p>
+<p>$$
+\Phi(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = \begin{pmatrix} q_0 - q_3 & q_2 - q_1 \\ q_1 + q_2 & q_0 + q_3 \end{pmatrix}.
 $$</p>
 <p>The defining representation is the model in which every statement of this article is computed.</p>
+<p><strong>The check.</strong> The assignment is the right one because the four matrices multiply as the four generators do. Squaring the vector images,</p>
+<p>$$
+\Phi(e_1)^2 = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} = -\Phi(1), \qquad
+\Phi(e_2)^2 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \Phi(1),
+$$</p>
+<p>and the same gives $\Phi(e_3)^2 = \Phi(1)$; so $e_1^2 = -1$, $e_2^2 = e_3^2 = 1$ are reproduced. Multiplying the first two,</p>
+<p>$$
+\Phi(e_1)\Phi(e_2) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix} = \Phi(e_3),
+$$</p>
+<p>reproducing $e_1e_2 = e_3$. Those relations are the whole multiplication table of $\mathbb{H}_{\mathrm{s}}$, so the correspondence of bases is an isomorphism of algebras and not a formal analogy.</p>
 <h2 id="existence">Existence</h2>
 <p><strong>Theorem (Existence).</strong> The split-quaternion algebra has a faithful real matrix representation of degree $2$, namely $\Phi$, and therefore</p>
 <p>$$
@@ -176,7 +190,7 @@ $$</p>
 <p><strong>Theorem (Irreducibility).</strong> The defining module is simple: it has no nonzero proper submodule. Consequently the defining representation is irreducible, and it is the unique irreducible representation of the algebra up to equivalence.</p>
 <p><strong>Proof.</strong> The submodules of the defining module are the $\Phi(\mathbb{H}_{\mathrm{s}})$-invariant subspaces of $\mathbb{R}^2$, and since $\Phi$ is surjective these are exactly the $M_2(\mathbb{R})$-invariant subspaces, that is, the subspaces stable under every $2 \times 2$ matrix. Let $W \neq 0$ be such a subspace and let $v = (v_1,v_2) \in W$ be nonzero. If $v_1 \neq 0$ then $E_{11}v = v_1 e_1$ lies in $W$, so $e_1 \in W$, and then $E_{12}e_1 = e_2 \in W$; if $v_1 = 0$ then $v_2 \neq 0$ and the same argument with the roles exchanged gives $e_2 \in W$ and then $e_1 \in W$. Hence $W$ contains both standard basis vectors and is the whole space. The uniqueness is the classification of the modules of a simple algebra, treated in <em>Split-Quaternion Element Representations</em>.</p>
 <p>The defining module is the concrete reason the matrix model is the right one: an eight-dimensional algebra cannot be a matrix algebra of this size, but a four-dimensional simple algebra is exactly a full matrix algebra over $\mathbb{R}$, and the module of the model is the module that the algebra realises.</p>
-<h2 id="comparison-with-the-quaternion-case-and-with-math138">Comparison with the Quaternion Case and with $\mathbb{H}_{\mathbb{D}}$</h2>
+<h2 id="comparison-with-the-quaternion-case-and-with-math149">Comparison with the Quaternion Case and with $\mathbb{H}_{\mathbb{D}}$</h2>
 <h3 id="the-quaternion-case">The Quaternion Case</h3>
 <p>The quaternion algebra has no faithful real matrix representation of degree $2$.</p>
 <p><strong>Proposition.</strong> There is no injective unital algebra homomorphism $\mathbb{H} \to M_2(\mathbb{R})$.</p>
@@ -184,7 +198,7 @@ $$</p>
 <p>The quaternions do have a faithful representation by $2 \times 2$ <strong>complex</strong> matrices, obtained from the same Pauli-type assignment with $i$ in place of the real rotation matrix: the scalar extension $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{C} = \mathbb{B}$ is isomorphic to $M_2(\mathbb{C})$, as recorded in <em>The Number Systems as Clifford Algebras</em>, and so the quaternions act on $\mathbb{C}^2$. Over $\mathbb{R}$ the least faithful representation is of degree $4$: no representation of degree $2$ or $3$ exists, and the regular representation of the algebra on itself, of real dimension $4$, is faithful. The difference from the split case is the difference between the two real forms of the same complex algebra: the definite form gives a division algebra with no real degree-two model, the indefinite form gives the matrix algebra, which is the degree-two model itself.</p>
 <p><strong>Proposition (The Least Degree over $\mathbb{R}$).</strong> The quaternion algebra has no faithful real matrix representation of degree $2$ or $3$.</p>
 <p><strong>Proof.</strong> Degree $2$ is excluded by the preceding proposition. For degree $3$, suppose $\mathbb{H}$ acts faithfully on $\mathbb{R}^3$. Choose $v \neq 0$. The map $\mathbb{H} \to \mathbb{R}^3$, $h \mapsto hv$, is injective: if $hv = 0$ with $h \neq 0$, then multiplying by the inverse of $h$ gives $v = 0$. Hence $\mathbb{R}^3$ contains a subspace isomorphic to $\mathbb{H}$, of real dimension $4$, which is impossible.</p>
-<h3 id="the-absence-of-a-two-dimensional-real-model-for-math173">The Absence of a Two-Dimensional Real Model for $\mathbb{H}_{\mathbb{D}}$</h3>
+<h3 id="the-absence-of-a-two-dimensional-real-model-for-math184">The Absence of a Two-Dimensional Real Model for $\mathbb{H}_{\mathbb{D}}$</h3>
 <p>The eight-dimensional algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table has no faithful $2 \times 2$ real matrix representation, and the obstruction is dimension alone.</p>
 <p><strong>Proposition.</strong> There is no injective unital algebra homomorphism $\mathbb{H}_{\mathbb{D}} \to M_2(\mathbb{R})$.</p>
 <p><strong>Proof.</strong> Such a homomorphism would embed a real vector space of dimension $8$ into one of dimension $4$, which is impossible for an injective linear map.</p>

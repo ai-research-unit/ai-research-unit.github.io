@@ -56,11 +56,12 @@
 <p>The natural conjugation is the characteristic operation of the group, and in the model it is the <strong>adjugate</strong>: $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$. The quaternionic product is therefore the ordinary matrix product with the adjugate inserted in the first slot, $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q})$, and the general quaternionic bilinear form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\operatorname{adj}\mathsf{M}_2(\tilde{Q}))$. The determinant is the norm, so the whole element theory of the group is read off the determinant of the matrix.</p>
 <p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; the quaternionic product is $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}$ and its norm is $N(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. All matrix claims are recomputed in the verification script of the pass.</p>
 <h2 id="the-representation">The Representation</h2>
-<p><strong>Definition.</strong> The <strong>matrix realization</strong> is the $\mathbb{C}$-linear isomorphism</p>
+<p><strong>Definition.</strong> The <strong>matrix realization</strong> is the isomorphism written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,</p>
 <p>$$
-\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),\qquad \mathsf{M}_2(e_0)=I,\qquad \mathsf{M}_2(e_k)=-i\sigma_k ,
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),
 $$</p>
-<p>so that $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix} Q_0-iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & Q_0+iQ_3\end{pmatrix}$. Its two invariants and its two conjugations are</p>
+<p>and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: $\mathsf{M}_2(e_0)=I$ on the identity and $\mathsf{M}_2(e_k)=-i\sigma_k$ on the three vector units.</p>
+<p>On a general element it reads $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix} Q_0-iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & Q_0+iQ_3\end{pmatrix}$. Its two invariants and its two conjugations are</p>
 <p>$$
 \operatorname{Tr}\mathsf{M}_2(\tilde{Q})=2Q_0,\qquad \det \mathsf{M}_2(\tilde{Q})=N(\tilde{Q})=\sum_\mu Q_\mu^2,\qquad \mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q}),\qquad \mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger} .
 $$</p>

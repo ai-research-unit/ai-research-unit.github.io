@@ -60,11 +60,24 @@ $$</p>
 <p>with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, norm $N(A) = A\bar A = a^2$, maximal ideal $\mathrm{M} = (\varepsilon)$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.</p>
 <h2 id="the-representation">The Representation</h2>
 <h3 id="definition">Definition</h3>
-<p><strong>Definition.</strong> The <strong>matrix representation</strong> of $\mathbb{D}'_R$ is the map</p>
+<p><strong>Definition.</strong> The <strong>matrix representation</strong> of $\mathbb{D}'_R$ is the isomorphism written $\Phi$. It converts a dual number into a $2 \times 2$ matrix over $R$,</p>
 <p>$$
-\Phi : \mathbb{D}'_R \longrightarrow M_2(R), \qquad \Phi(a + \varepsilon a') = \begin{pmatrix} a & a' \\ 0 & a \end{pmatrix}.
+\Phi : \mathbb{D}'_R \longrightarrow M_2(R),
+$$</p>
+<p>and it is fixed by its values on the basis, the rest following by $R$-linearity. The unit and the infinitesimal element are assigned the matrices</p>
+<p>$$
+\Phi(1) = I = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad \Phi(\varepsilon) = J = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix},
+$$</p>
+<p>so that on a general dual number $A = a + \varepsilon a'$,</p>
+<p>$$
+\Phi(a + \varepsilon a') = \begin{pmatrix} a & a' \\ 0 & a \end{pmatrix}.
 $$</p>
 <p>The matrix $\Phi(A)$ is the <strong>matrix of</strong> $A$; its diagonal entry is the real part and its strictly upper-triangular entry is the infinitesimal part.</p>
+<p><strong>The check.</strong> The assignment is the right one because the two matrices multiply as the two units do. The square of the infinitesimal image vanishes,</p>
+<p>$$
+\Phi(\varepsilon)^2 = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}^2 = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix} = \Phi(\varepsilon^2),
+$$</p>
+<p>reproducing $\varepsilon^2 = 0$, and $\Phi(1)^2 = \Phi(1)$ reproduces $1^2 = 1$; those relations are the whole multiplication table of $\mathbb{D}'_R$, so the correspondence of bases is an isomorphism of algebras and not a formal analogy.</p>
 <h3 id="linearity-and-the-identity">Linearity and the Identity</h3>
 <p>$\Phi$ is $R$-linear by construction, and it preserves the identity:</p>
 <p>$$
@@ -150,7 +163,7 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> $\operatorname{diag}(c,1)^{-1} = \operatorname{diag}(c^{-1},1)$, and multiplying the three matrices gives $\begin{pmatrix} a & c a' \\ 0 & a \end{pmatrix}$.</p>
 <p>So $\operatorname{Aut}_R(\mathbb{D}'_R)$ is the image of the diagonal subgroup of $GL_2(R)$ acting by conjugation: a diagonal element $\operatorname{diag}(c, d)$ rescales the $E$-coordinate by $c d^{-1}$, and the induced homomorphism $(c,d) \mapsto c d^{-1}$ onto $R^\times$ is surjective with kernel the scalar matrices $\operatorname{diag}(c, c)$.</p>
-<h2 id="comparison-with-the-math132-representation-of-math133-and-the-absence-for-math134">Comparison with the $2\times2$ Representation of $\mathbb{H}$ and the Absence for $\mathbb{H}_{\mathbb{D}}$</h2>
+<h2 id="comparison-with-the-math144-representation-of-math145-and-the-absence-for-math146">Comparison with the $2\times2$ Representation of $\mathbb{H}$ and the Absence for $\mathbb{H}_{\mathbb{D}}$</h2>
 <h3 id="the-quaternion-case">The Quaternion Case</h3>
 <p>The quaternion algebra $\mathbb{H}$ has the faithful $2\times2$ representation over $\mathbb{C}$</p>
 <p>$$
@@ -158,7 +171,7 @@ $$</p>
 $$</p>
 <p>with determinant $a^2 + b^2 + c^2 + d^2$, the non-degenerate norm of $\mathbb{H}$; the image is not a subalgebra of $M_2(\mathbb{R})$ but a real form inside $M_2(\mathbb{C})$, of real dimension four, which realifies to a four-dimensional subalgebra of $M_4(\mathbb{R})$.</p>
 <p>The dual-number model is the analogue in which the coefficient ring stays $\mathbb{R}$ and the image is the commutative Toeplitz subalgebra; the determinant is the degenerate norm $a^2$, and the missing imaginary part of the coefficients is exactly the lost second coordinate. Both models sit inside a four-real-dimensional matrix algebra, but the quaternion image is a four-real-dimensional real form of $M_2(\mathbb{C})$, while the dual image is only the two-real-dimensional commutative subalgebra $RI \oplus RE$ of $M_2(\mathbb{R})$: $\mathbb{H}$ needs complex coefficients and $\mathbb{D}'$ does not.</p>
-<h3 id="the-absence-of-a-two-dimensional-representation-for-math151">The Absence of a Two-Dimensional Representation for $\mathbb{H}_{\mathbb{D}}$</h3>
+<h3 id="the-absence-of-a-two-dimensional-representation-for-math163">The Absence of a Two-Dimensional Representation for $\mathbb{H}_{\mathbb{D}}$</h3>
 <p>The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ has real dimension eight, and $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\oplus\mathbb{H}$. There is <strong>no</strong> faithful representation of $\mathbb{H}_{\mathbb{D}}$ by $2\times2$ matrices over $\mathbb{R}$, and none over $\mathbb{C}$. Over $\mathbb{R}$, a faithful representation would be an injective $\mathbb{R}$-linear map into $M_2(\mathbb{R})$, which would need $\dim_{\mathbb{R}} M_2(\mathbb{R}) = 4 \ge \dim_{\mathbb{R}}\mathbb{H}_{\mathbb{D}} = 8$, and this fails. Over $\mathbb{C}$ the dimension count alone does <strong>not</strong> obstruct: a homomorphism of $\mathbb{R}$-algebras $\mathbb{H}_{\mathbb{D}} \to M_2(\mathbb{C})$ is only $\mathbb{R}$-linear, and $M_2(\mathbb{C})$ has real dimension $8$, equal to $\dim_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}$, so an injective such map exists as a linear map and its image would be all of $M_2(\mathbb{C})$. What obstructs is the centre: such an embedding would give an isomorphism of $\mathbb{R}$-algebras $\mathbb{H}_{\mathbb{D}} \cong M_2(\mathbb{C})$, but the centre of $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\oplus\mathbb{H}$ is $\mathbb{R}\oplus\mathbb{R}$, not a field, while the centre of $M_2(\mathbb{C})$ is $\mathbb{C}$, a field. So the failure over $\mathbb{C}$ is a failure of the centre, not of the dimension.</p>
 <p><strong>Remark.</strong> Over $\mathbb{R}$ the obstruction is dimension, and over $\mathbb{C}$ it is the centre; in neither case is it the presence of zero divisors, since $M_2(\mathbb{R})$ itself has zero divisors and $\mathbb{H}_{\mathbb{D}}$ has zero divisors, so the failure is not caused by the ring-theoretic degeneracy. The smallest faithful matrix representation of $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\oplus\mathbb{H}$ is by $4\times4$ matrices over $\mathbb{C}$ (equivalently $8\times8$ over $\mathbb{R}$), obtained by embedding each factor $\mathbb{H}$ in $M_2(\mathbb{C})$ and taking the block diagonal sum. So the dual-number algebra, although degenerate, is small enough to fit in $M_2(\mathbb{R})$, while the split biquaternion algebra, although it has the same kind of zero divisors, is too large.</p>
 <h2 id="worked-examples">Worked Examples</h2>

@@ -63,13 +63,13 @@ $$</p>
 <p>The one difference between the two readings is the shape of the image. In the $2\times2$ model the image is the <strong>traceless</strong> matrices, of complex dimension three, the <strong>traceless skew-Hermitian</strong> matrices among them, a real three-dimensional space, being the image of the real vector triple; in the $4\times4$ model the image is the image of the vector subspace under the regular representation, again of complex dimension three, and the rank of a value is four, two or zero according to the <strong>isotropy</strong> of the value for the complex bilinear norm form, not according to the vanishing of the value. The two ranks are computed, and the distinction between the two forms carried by the block is the point of the article: the positive definite form $H(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)$ vanishes only on the zero value, while the determinant of the matrix of the value, which is the complex bilinear form $\sum_\mu V_\mu^2$, vanishes on the whole isotropic cone.</p>
 <p>The setting and the notation are those of <em>Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions</em>; the $2\times2$ model and its invariants are <em>Introduction to the 2×2 Matrix Representation of Biquaternions</em> and <em>The General Plain Sesqualgebra in the $2\times2$ Matrix Representation</em>; the regular model is <em>Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> and <em>The General Plain Sesqualgebra in the $4\times4$ Matrix Representation</em>; the form $H$, the norm $N$ and the zero divisors are <em>Biquaternion Norm and Invertibility</em>; the operator whose invariants appear here is <em>The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra</em>, above in this block; and the invariants of a linear map are <em>Linear Maps and Matrices</em>, §<em>Rank</em> and §<em>The Trace and the Determinant of a Matrix</em>. The purity list of the pass is respected: the matrix invariants are the rank, the trace and the determinant, and no word of distance, of limit or of continuity occurs.</p>
 <h2 id="the-models">The Models</h2>
-<p><strong>Recall (the $2\times2$ realization).</strong> The matrix realization of <em>Introduction to the 2×2 Matrix Representation of Biquaternions</em> is the $\mathbb{C}$-linear isomorphism</p>
+<p><strong>Recall (the $2\times2$ realization).</strong> The matrix realization of <em>Introduction to the 2×2 Matrix Representation of Biquaternions</em> is the isomorphism written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,</p>
 <p>$$
-\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),\qquad
-\mathsf{M}_2(e_0)=I,\qquad \mathsf{M}_2(e_k)=-i\sigma_k,
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),
 $$</p>
+<p>and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: $\mathsf{M}_2(e_0)=I$ and $\mathsf{M}_2(e_k)=-i\sigma_k$,</p>
 <p>with $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$, $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$, $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$ and $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)=\sum_\mu Q_\mu^2$. It is a $*$-isomorphism, and it carries the Hermitian conjugation of the algebra to the conjugate transpose of the matrices.</p>
-<p><strong>Recall (the left regular representation).</strong> The left regular representation of <em>Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> is $L_{\tilde Q}(\tilde R)=\tilde Q\tilde R$ read in the basis $e_0,e_1,e_2,e_3$, with</p>
+<p><strong>Recall (the left regular matrix).</strong> The left regular matrix of <em>Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> is $\mathsf{M}_4(\tilde Q)$, whose $m$-th column is the coordinate column of the product $\tilde Q e_m$ in the basis $e_0,e_1,e_2,e_3$; it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity, and it satisfies</p>
 <p>$$
 \mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger},\qquad
 \operatorname{Tr}\mathsf{M}_4(\tilde Q)=4Q_0,\qquad
@@ -84,7 +84,7 @@ $$</p>
 \mathsf{M}_4\bigl(\mathrm{Vect}(\tilde X)\bigr)=\mathsf{M}_4(\tilde X)-\tfrac14\operatorname{Tr}\mathsf{M}_4(\tilde X)\,I .
 $$</p>
 <p><em>Proof.</em> In the $2\times2$ model, $\mathsf{M}_2(\tilde X)=X_0I-i(X_1\sigma_1+X_2\sigma_2+X_3\sigma_3)$ and $\operatorname{Tr}\mathsf{M}_2(\tilde X)=2X_0$, so subtracting $\tfrac12\operatorname{Tr}\mathsf{M}_2(\tilde X)I=X_0I$ leaves $-i\sum_kX_k\sigma_k=\mathsf{M}_2(\mathrm{Vect}\tilde X)$; the regular case is the same with $\mathsf{M}_4(e_0)=I$ and $\operatorname{Tr}\mathsf{M}_4(\tilde X)=4X_0$. $\square$</p>
-<h2 id="the-block-in-the-math42-model">The Block in the $2\times2$ Model</h2>
+<h2 id="the-block-in-the-math49-model">The Block in the $2\times2$ Model</h2>
 <p><strong>Theorem (the block is the traceless part of the conjugate-transposed product).</strong> For all biquaternions,</p>
 <p>$$
 \mathsf{M}_2(\tilde P\diamond\tilde Q)=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}
@@ -138,7 +138,7 @@ H\bigl(\tilde V,\tilde V\bigr)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tild
 $$</p>
 <p>which vanishes only at $\tilde V=0$, while the <strong>complex bilinear</strong> form is the determinant $\det\mathsf{M}_2(\tilde V)=\sum_\mu V_\mu^2$, which vanishes on the isotropic cone $N(\tilde V)=0$, a quadric that contains the nonzero values, for instance $\tilde V=e_1+ie_2$. The block therefore has a value of rank one, $e_1+ie_2$, whose matrix is traceless and has zero determinant; the rank of the matrix reads the bilinear form, and the positivity of the Hilbert–Schmidt pairing reads the definite one.</p>
 <p><strong>Remark (the isotropic value).</strong> The value $e_1+ie_2$ has $N=1+i^2=1-1=0$, so its matrix is a nonzero traceless matrix of determinant zero, of rank one; the value $e_1+e_2$ has $N=1+1=2\neq0$, so its matrix has rank two. The determinant of the matrix of the value is therefore not a definitive test of the vanishing of the value, and the definite form $H$ is needed for that; the distinction is the same as the one of <em>Biquaternion Norm and Invertibility</em>, §<em>The Euclidean Norm and the Hermitian Form</em>.</p>
-<h2 id="the-block-in-the-math109-regular-model">The Block in the $4\times4$ Regular Model</h2>
+<h2 id="the-block-in-the-math116-regular-model">The Block in the $4\times4$ Regular Model</h2>
 <p><strong>Theorem (the block in the regular model).</strong> For all biquaternions,</p>
 <p>$$
 \mathsf{M}_4(\tilde P\diamond\tilde Q)=\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)^{\dagger}
