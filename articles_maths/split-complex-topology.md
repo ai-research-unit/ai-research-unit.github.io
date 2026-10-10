@@ -9,7 +9,7 @@ The article uses the algebra of *Split-Complex Algebra*, the norm $N(A)=a^2-a'^2
 
 **Scope.** The topology of the **group of units** beyond its component count — the exponential, the Lie correspondence and the homotopy of the components — is treated in *Split-Complex Exponential and Lie Group Structure*; the component count of $\mathbb{D}^\times$ is in *Split-Complex Norm and Invertibility*; this article owns the ambient space and its distinguished subsets, and takes the component structure of $\mathbb{D}^\times$ from those articles for the comparison. The null quadric of the norm as a projective object is the subject of *Split-Complex Null Quadric and Projective Geometry*.
 
-**Conventions.** The basis is $1$, $j$ with $j^2=+1$; $A=a+ja'$ with $a,a'\in\mathbb{R}$; conjugate $\bar A=a-ja'$; idempotents $\Pi_\pm=\tfrac12(1\pm j)$; idempotent coordinates $A_\pm=a\pm a'$. The norm is $N(A)=a^2-a'^2$, the units are $\mathbb{D}^\times=\{N\neq 0\}$, and the Euclidean norm is $\lVert A\rVert_E=(a^2+a'^2)^{1/2}$.
+**Conventions.** The basis is $1$, $j$ with $j^2=+1$; $A=a+ja'$ with $a,a'\in\mathbb{R}$; conjugate $\bar A=a-ja'$; idempotents $\Pi_{1,2}=\tfrac12(1\pm j)$; idempotent coordinates $A_\pm=a\pm a'$. The norm is $N(A)=a^2-a'^2$, the units are $\mathbb{D}^\times=\{N\neq 0\}$, and the Euclidean norm is $\lVert A\rVert_E=(a^2+a'^2)^{1/2}$.
 
 ## The Algebra as a Topological Space
 
@@ -196,7 +196,7 @@ The group of units $\mathbb{D}^\times=\mathbb{D}\setminus\mathcal{N}\cong(\mathb
 | $\Sigma_+=\{a'>\lvert a\rvert\}$, $\Sigma_-=\{a'<-\lvert a\rvert\}$ | The two components of negative norm |
 | $\rho(A)=\sqrt{\lvert N(A)\rvert}$ | Modulus |
 | $\mathbb{D}^{(\pm1)}=\{\lvert N\rvert=1\}$ | Unit-modulus set; four hyperbola branches, the deformation retract |
-| $\Pi_\pm=\tfrac12(1\pm j)$ | Idempotents, spanning the null lines |
+| $\Pi_{1,2}=\tfrac12(1\pm j)$ | Idempotents, spanning the null lines |
 
 ## Further Reading
 

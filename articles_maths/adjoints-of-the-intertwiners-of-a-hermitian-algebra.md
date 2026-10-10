@@ -46,7 +46,11 @@ The **commutant**, the **modular transpose** $T\mapsto T^{\flat}=\jmath T^{*}\jm
 
 ### Matrices
 
-For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, the commutant of the left action is the right action, the modular conjugation is $J(u) = u^{*}$, and an intertwiner is a map $T$ with $T(a u) = a T(u)$ for all $a$; the adjoint is again such a map and the modular transpose is $T^{\flat}(u) = T^{*}(u^{*})^{*}$, the entrywise conjugate transpose operation.
+For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, the commutant of the left action is the right action, the modular conjugation is $J(u) = u^{*}$, and an intertwiner is a map $T$ with $T(a u) = a T(u)$ for all $a$; the adjoint is again such a map and the modular transpose is $T^{\flat}(u) = T^{*}(u^{*})^{*}$, the entrywise conjugate transpose operation; on the matrix units the conjugation $J$ is the transposition,
+
+$$
+J\left(\begin{pmatrix}a&b\\c&d\end{pmatrix}\right)=\begin{pmatrix}\bar a&\bar c\\\bar b&\bar d\end{pmatrix},\qquad J(E_{12})=J\begin{pmatrix}0&1\\0&0\end{pmatrix}=\begin{pmatrix}0&0\\1&0\end{pmatrix}=E_{21} .
+$$
 
 ### The Group Algebra
 

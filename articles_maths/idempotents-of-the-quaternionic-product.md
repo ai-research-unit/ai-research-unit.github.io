@@ -11,7 +11,7 @@ $$
 
 the **general quaternionic bilinear product**, in which ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$. The coordinate rule and the scalar–vector form are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*; the algebra the product defines, its failure of associativity and its left unit are *Introduction to the General Quaternionic Algebra of Biquaternions*; its place among the four general products is the property table of *Comparison Between the Four General Products*.
 
-An **idempotent** of a multiplication is an element with $\tilde\Pi\star\tilde\Pi = \tilde\Pi$. The two **trivial** idempotents are $0$ and $e_0$, and an idempotent different from both is **nontrivial**. The idempotents are the first of the element-theoretic data of a multiplication: for an associative unital algebra they are the projectors, and they carry the Peirce decompositions and the minimal ideals of the algebra, which for the multiplication $\tilde P\tilde Q$ of $\mathbb{B}$ are *Biquaternion Idempotents and Projections* and *Biquaternion Ideals and Peirce Decomposition*. This article asks the same question of the product $\star$.
+An **idempotent** of a multiplication is an element with $\tilde\Pi\star\tilde\Pi = \tilde\Pi$. The two **trivial** idempotents are $0$ and $e_0$, and an idempotent different from both is **nontrivial**. The idempotents are the first of the element-theoretic data of a multiplication: for an associative unital algebra they are the projectors, and they carry the Peirce decompositions and the minimal ideals of the algebra, which for the multiplication $\tilde P\tilde Q$ of $\mathbb{B}$ are *Idempotents of the General Plain Algebra* and *Biquaternion Ideals and Peirce Decomposition*. This article asks the same question of the product $\star$.
 
 The answer is as small as it could be. The square of every biquaternion lies in the centre,
 
@@ -39,7 +39,7 @@ where $N(\tilde Q) = Q_0^2+Q_1^2+Q_2^2+Q_3^2$ is the norm of the algebra.
 
 **Proof.** Write $\tilde Q = Q_0e_0 + \mathbf Q$ with $\mathbf Q = Q_1e_1+Q_2e_2+Q_3e_3$, so that $\tilde Q^{\natural} = Q_0e_0 - \mathbf Q$. The scalar–vector form of the product (*The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*) gives the scalar part $P_0Q_0 + (\mathbf P,\mathbf Q)$ and the vector part $P_0\mathbf Q - Q_0\mathbf P - \mathbf P\times\mathbf Q$. At $\tilde P = \tilde Q$ the vector part is $Q_0\mathbf Q - Q_0\mathbf Q - \mathbf Q\times\mathbf Q$, and the cross product of a vector with itself vanishes; the scalar part is $Q_0^2 + (\mathbf Q,\mathbf Q) = N(\tilde Q)$. Hence $\tilde Q\star\tilde Q = N(\tilde Q)e_0$. $\square$
 
-The lemma is the reason the idempotent equation is trivial here and nontrivial for the associative product. The latter has $\tilde Q\tilde Q = Q_0^2e_0 + 2Q_0\mathbf Q + \mathbf Q^2$, whose vector part is not obliged to vanish, and whose solutions are the projectors of *Biquaternion Idempotents and Projections*. For $\star$ the square carries no vector part at all, and the idempotents are decided by a single quadratic in one complex variable.
+The lemma is the reason the idempotent equation is trivial here and nontrivial for the associative product. The latter has $\tilde Q\tilde Q = Q_0^2e_0 + 2Q_0\mathbf Q + \mathbf Q^2$, whose vector part is not obliged to vanish, and whose solutions are the projectors of *Idempotents of the General Plain Algebra*. For $\star$ the square carries no vector part at all, and the idempotents are decided by a single quadratic in one complex variable.
 
 **Theorem (idempotents).** The solutions of $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ are $\tilde\Pi = 0$ and $\tilde\Pi = e_0$.
 
@@ -75,7 +75,7 @@ $$
 
 **Proof.** The element $i\hat\mu$ has square $(i\hat\mu)^2 = i^2\hat\mu^2 = (-1)(-e_0) = e_0$ because $\hat\mu$ is a real unit vector, and it is fixed by Hermitian conjugation, which conjugates the coefficients and negates the vector part while both operations leave $i\hat\mu$ unchanged. Hence $\tilde\Pi_1^2 = \tfrac14(e_0 + 2i\hat\mu + e_0) = \tfrac12(e_0+i\hat\mu) = \tilde\Pi_1$; the element has real scalar part and purely imaginary vector part, which is the coordinate condition of $\mathbb{M}_+$. It is not $0$ and not $e_0$. $\square$
 
-This is the statement of *Biquaternion Idempotents and Projections* that the nontrivial idempotents of the algebra are exactly these, one for each real unit vector, so that the idempotent set of the associative product is the family $\tilde\Pi_1(\hat\mu)$ over the real unit vectors, together with $0$ and $e_0$. The quaternionic product answers differently.
+This is the statement of *Idempotents of the General Plain Algebra* that the nontrivial idempotents of the algebra are exactly these, one for each real unit vector, so that the idempotent set of the associative product is the family $\tilde\Pi_1(\hat\mu)$ over the real unit vectors, together with $0$ and $e_0$. The quaternionic product answers differently.
 
 **Proposition (the projectors become nilpotents).** For every real unit vector $\hat\mu$,
 

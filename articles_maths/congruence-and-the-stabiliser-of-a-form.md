@@ -84,7 +84,13 @@ for the adjoint with respect to $h$ on the left and with respect to $h_{C}$ on t
 
 ### The Matrices
 
-On $M_n(\mathbb{C})$ with the trace form the congruence is $G \mapsto C^{\dagger}GC$, and the signature classifies over $\mathbb{R}$; over $\mathbb{C}$ the Hermitian forms are still classified by the signature, while a complex bilinear form of the same Gram matrix is classified only by its rank. The stabiliser of the identity Gram matrix is $U(n)$.
+On $M_n(\mathbb{C})$ with the trace form the congruence is $G \mapsto C^{\dagger}GC$, and the signature classifies over $\mathbb{R}$; over $\mathbb{C}$ the Hermitian forms are still classified by the signature, while a complex bilinear form of the same Gram matrix is classified only by its rank. The stabiliser of the identity Gram matrix is $U(n)$. The smallest cases are
+
+$$
+C=\begin{pmatrix}1&1\\0&1\end{pmatrix},\qquad C^{\dagger}I_2C=\begin{pmatrix}1&1\\1&2\end{pmatrix},\qquad C^{\dagger}\begin{pmatrix}1&0\\0&-1\end{pmatrix}C=\begin{pmatrix}1&1\\1&0\end{pmatrix},
+$$
+
+so the same congruence carries the definite form to the first Gram matrix, of determinant $1$ and signature $(2,0)$, and the indefinite one to the second, of determinant $-1$ and signature $(1,1)$.
 
 ### The Indefinite Form
 

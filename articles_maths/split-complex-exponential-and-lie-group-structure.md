@@ -9,7 +9,7 @@ The one point that governs everything below is that $\mathbb{D}$ is **commutativ
 
 The article owns the abelian Lie algebra structure of $\mathbb{D}$, the exponential and its closed forms in the two bases, the group of units and its exponential parametrisation, the four components, the non-compact hyperbolic subgroup, the one-parameter subgroups of the geometry slot, and the comparison with $\mathbb{C}$ and $\mathbb{B}$. It assumes the norm and invertibility theory of *Split-Complex Norm and Invertibility*, the idempotents of *Split-Complex Idempotents and Projections*, and the exponential parametrisation of the units; the hyperbolic one-parameter group is the subject of *Hyperbolic Rotations*, and the automorphisms and derivations are treated in *Split-Complex Automorphisms and Derivations*.
 
-**Conventions.** $A = a+ja'$, $a,a'\in\mathbb{R}$; conjugate $\bar A = a-ja'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$, with $A = A_+\Pi_1 + A_-\Pi_2$; norm $N(A) = A\bar A = a^2-a'^2$; group of units $\mathbb{D}^\times = \{A : N(A)\neq 0\}$; unit-norm set $\mathbb{D}^{(1)} = \{A : N(A) = 1\}$. The identity component of a group $G$ is written $G_0$.
+**Conventions.** $A = a+ja'$, $a,a'\in\mathbb{R}$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$, with $A = A_+\Pi_1 + A_-\Pi_2$; norm $N(A) = A\bar A = a^2-a'^2$; group of units $\mathbb{D}^\times = \{A : N(A)\neq 0\}$; unit-norm set $\mathbb{D}^{(1)} = \{A : N(A) = 1\}$. The identity component of a group $G$ is written $G_0$.
 
 ## The Algebra as an Abelian Lie Algebra
 
@@ -23,7 +23,7 @@ $$
 
 **Proof.** $\mathbb{D}$ is commutative, so $AB = BA$ for all $A,B$ and every bracket vanishes. A Lie algebra with zero bracket is abelian, and the underlying real vector space is two-dimensional.
 
-**Remark.** The bracket rules out every phenomenon of the biquaternion case that depends on noncommutativity: there are no nontrivial inner derivations, no Baker–Campbell–Hausdorff correction, no Ad-action distinct from the identity, and no $\mathrm{SL}$-summand. In the idempotent basis the Lie algebra is the direct sum of two one-dimensional abelian Lie algebras, $\mathbb{D} = \mathrm{I}_+ \oplus \mathrm{I}_-$ with $\mathrm{I}_\pm = \mathbb{R}\Pi_\pm$, and every subspace is an abelian ideal.
+**Remark.** The bracket rules out every phenomenon of the biquaternion case that depends on noncommutativity: there are no nontrivial inner derivations, no Baker–Campbell–Hausdorff correction, no Ad-action distinct from the identity, and no $\mathrm{SL}$-summand. In the idempotent basis the Lie algebra is the direct sum of two one-dimensional abelian Lie algebras, $\mathbb{D} = \mathrm{I}_+ \oplus \mathrm{I}_-$ with $\mathrm{I}_\pm = \mathbb{R}\Pi_{1,2}$, and every subspace is an abelian ideal.
 
 ## The Exponential: Series and Closed Form
 
@@ -41,7 +41,7 @@ $$
 \exp(A) = e^{A_+} \Pi_1 + e^{A_-} \Pi_2, \qquad \exp(a+ja') = e^{a}\bigl(\cosh a' + j \sinh a'\bigr) = e^{a}\cosh a' + e^{a}\sinh a'\, j .
 $$
 
-**Proof.** The idempotents satisfy $\Pi_\pm^2 = \Pi_\pm$ and $\Pi_1\Pi_2 = 0$, so for $n \geq 0$
+**Proof.** The idempotents satisfy $\Pi_{1,2}^2 = \Pi_{1,2}$ and $\Pi_1\Pi_2 = 0$, so for $n \geq 0$
 
 $$
 A^n = (A_+\Pi_1 + A_-\Pi_2)^n = A_+^n \Pi_1 + A_-^n \Pi_2,
@@ -226,7 +226,7 @@ The group of units is $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\
 | $A = a + ja'$ | General split complex number |
 | $[A,B] = AB - BA$ | Commutator; identically zero |
 | $N(A) = a^2 - a'^2$ | Norm |
-| $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents, basis of the abelian decomposition |
+| $\Pi_{1,2} = \tfrac12(1\pm j)$ | Idempotents, basis of the abelian decomposition |
 | $A_\pm = a\pm a'$ | Idempotent coordinates |
 | $\exp(A)$ | Exponential; $= e^{A_+}\Pi_1 + e^{A_-}\Pi_2$ |
 | $\mathbb{D}^\times = \{N\neq 0\}$ | Group of units, $(\mathbb{R}^\times)^2$-shaped |

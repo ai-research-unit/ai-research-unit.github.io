@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is not a division algebra. It contains nonzero elements whose biquaternion norm vanishes, and those elements annihilate other nonzero elements: they are the zero divisors. The algebraic theory of the zero divisor set — the criterion, the pure/non-pure dichotomy, the nilpotents and the idempotents, the distribution across the four real subspaces — is the subject of the mathematics articles *Biquaternion Zero Divisors* and *Split-Quaternion Zero Divisors*, and of the structural material of the generalities subcategory. This article does not re-derive any of it. It asks the physical question: **where does the zero divisor set sit in a non-relativistic spin-0 problem, and what does it bound?**
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is not a division algebra. It contains nonzero elements whose biquaternion norm vanishes, and those elements annihilate other nonzero elements: they are the zero divisors. The algebraic theory of the zero divisor set — the criterion, the pure/non-pure dichotomy, the nilpotents and the idempotents, the distribution across the four real subspaces — is the subject of the mathematics articles *Zero Divisors of the General Plain Algebra* and *Split-Quaternion Zero Divisors*, and of the structural material of the generalities subcategory. This article does not re-derive any of it. It asks the physical question: **where does the zero divisor set sit in a non-relativistic spin-0 problem, and what does it bound?**
 
 The answer has three parts, and they are three images of one algebraic object under the three maps that the framework uses: the momentum-space image, the configuration-space image, and the state-space image.
 
@@ -20,7 +20,7 @@ The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otim
 
 ### Criterion and classification
 
-The algebraic input is the following, due to the mathematics article *Biquaternion Zero Divisors* and stated here without proof. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if its biquaternion norm vanishes,
+The algebraic input is the following, due to the mathematics article *Zero Divisors of the General Plain Algebra* and stated here without proof. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if its biquaternion norm vanishes,
 
 $$
 \tilde Q\ne0,
@@ -40,7 +40,7 @@ The pure family is the nilpotent cone; the non-pure family is the set of nonzero
 
 ### The cone across the remarkable subspaces
 
-The distribution of the zero divisors across the remarkable real subspaces is what gives the locus its physical reading. The complex scalar subspace $\mathbb{C}_{\mathbb{B}}$ and the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ contain **no** zero divisors: they are the division subalgebras of $\mathbb{B}$, and the biquaternion norm restricts to each as a nondegenerate form. The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ likewise contains none: its biquaternion norm is negative definite. Of the remaining three, the vector subspace $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, and the two Hermitian-type subspaces contain the cone:
+The distribution of the zero divisors across the remarkable real subspaces is what gives the locus its physical reading. The complex scalar subspace $\mathbb{C}_{\mathbb{B}}$ and the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ contain **no** zero divisors: they are the division subalgebras of $\mathbb{B}$, and the biquaternion norm restricts to each as a nondegenerate form. The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ likewise contains none: its biquaternion norm is negative definite. Of the remaining three, the vector subspace $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, whose nonzero elements are the nilpotents $\tilde\Upsilon$ of the convention (§*The Nilpotent Convention* of *Conventions in the Biquaternion Universe*), and the two Hermitian-type subspaces contain the cone:
 
 - In $\mathbb{M}_+$ the cone is the **future light cone** of the informational sector, with the real scalar part $q_0$ as the special coordinate and the equation $q_0^2=|\mathbf q|^2$.
 - In $\mathbb{M}_-$ the cone is the **light cone** of the material sector, with the imaginary scalar part $q_0'$ as the special coordinate and the equation $(q_0')^2=|\mathbf q|^2$.

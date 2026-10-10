@@ -33,7 +33,7 @@ $$
 
 **Proof.** The sets are equalizers of continuous maps, hence closed, and they contain the images because $\widehat\sigma\iota = \iota\sigma$. For the converse when $2$ is invertible, let $x$ be fixed and write $x = \lim_i\iota(a_i)$ with $a_i\in R$, possible because $\iota(R)$ is dense; applying $\widehat\sigma$ and using continuity, $\widehat\sigma(x) = \lim_i\iota(\sigma(a_i)) = x$, so $\lim_i\iota(a_i - \sigma(a_i)) = 0$. The elements $\tfrac12(a_i + \sigma(a_i))$ lie in $R^\sigma$ and their images converge to $\tfrac12(x + x) = x$, so $x \in \overline{\iota(R^\sigma)}$. The skew case is identical with the sign reversed.
 
-**Proposition (the averaging map and the topological splitting).** Assume $2$ is invertible in $\widehat{R}$ and let $\pi_+ = \tfrac12(\mathrm{id}+\widehat\sigma)$ and $\pi_- = \tfrac12(\mathrm{id}-\widehat\sigma)$. Then $\pi_+$ and $\pi_-$ are continuous additive projectors with images the fixed and the skew parts, $\pi_+ + \pi_- = \mathrm{id}$, $\pi_+\pi_- = 0$, and
+**Proposition (the averaging map and the topological splitting).** Assume $2$ is invertible in $\widehat{R}$ and let $\pi_1 = \tfrac12(\mathrm{id}+\widehat\sigma)$ and $\pi_2 = \tfrac12(\mathrm{id}-\widehat\sigma)$. Then $\pi_1$ and $\pi_2$ are continuous additive projectors with images the fixed and the skew parts, $\pi_1 + \pi_2 = \mathrm{id}$, $\pi_1\pi_2 = 0$, and
 
 $$
 \widehat{R} = \widehat{R}^{\widehat\sigma} \oplus \mathrm{Skew}(\widehat{R})
@@ -41,7 +41,7 @@ $$
 
 is a topological direct sum of additive topological groups. The involution acts as $+1$ on the first summand and $-1$ on the second.
 
-**Proof.** The maps are continuous because $\widehat\sigma$ and the scalar $\tfrac12$ are; they are additive because $\widehat\sigma$ is; the identities are immediate from $\widehat\sigma^2 = \mathrm{id}$. The image of $\pi_+$ is the fixed part and of $\pi_-$ the skew part, and the direct sum decomposition is the statement that every $x$ is $\pi_+(x)+\pi_-(x)$ with the two components in the two closed subgroups; the decomposition is topological because the projections $\pi_\pm$ are continuous.
+**Proof.** The maps are continuous because $\widehat\sigma$ and the scalar $\tfrac12$ are; they are additive because $\widehat\sigma$ is; the identities are immediate from $\widehat\sigma^2 = \mathrm{id}$. The image of $\pi_1$ is the fixed part and of $\pi_2$ the skew part, and the direct sum decomposition is the statement that every $x$ is $\pi_1(x)+\pi_2(x)$ with the two components in the two closed subgroups; the decomposition is topological because the projections $\pi_{1,2}$ are continuous.
 
 **Corollary (the completion of the fixed part).** The inclusion $R^\sigma\hookrightarrow R$ is a continuous homomorphism commuting with the involutions, so it extends to a continuous homomorphism of the completions whose image lies in the fixed part of $\widehat{R}$ and is dense there; when the involution is continuous and the topology of $R^\sigma$ has the same Cauchy filters as its image in $R$, this map is an isomorphism onto $\widehat{R}^{\widehat\sigma}$, which holds for the standard linear topologies and fails in pathological ones.
 
@@ -71,7 +71,7 @@ is a topological direct sum of additive topological groups. The involution acts 
 
 A continuous involution of a topological ring is additive and therefore uniformly continuous for the additive uniformity, so it extends uniquely to a continuous involution $\widehat\sigma$ of the completion with $\widehat\sigma\iota = \iota\sigma$; the completion is an involutive topological ring, and the extension is compatible with composition, so the completion operator is an endofunctor of the category of topological rings with a continuous involution, idempotent and with $\iota$ as a natural transformation. The fixed part of the extension is the closure of the fixed subring, $\widehat{R}^{\widehat\sigma} = \overline{\iota(R^\sigma)}$, and the skew part is the closure of the skew subgroup; both are closed, being equalizers.
 
-When $2$ is invertible the averaging maps $\pi_\pm = \tfrac12(\mathrm{id}\pm\widehat\sigma)$ are continuous additive projectors, so the additive group of the completion splits topologically, $\widehat{R} = \widehat{R}^{\widehat\sigma}\oplus\mathrm{Skew}(\widehat{R})$, and the completion of the fixed subring maps densely into the fixed part, with isomorphism under a mild completeness hypothesis. The $I$-adic case, where the involution preserves the defining ideal up to a power, is the criterion of *Involutive Topological Rings and Fields*, recovered here as the special case of a linear topology given by the powers of one ideal.
+When $2$ is invertible the averaging maps $\pi_{1,2} = \tfrac12(\mathrm{id}\pm\widehat\sigma)$ are continuous additive projectors, so the additive group of the completion splits topologically, $\widehat{R} = \widehat{R}^{\widehat\sigma}\oplus\mathrm{Skew}(\widehat{R})$, and the completion of the fixed subring maps densely into the fixed part, with isomorphism under a mild completeness hypothesis. The $I$-adic case, where the involution preserves the defining ideal up to a power, is the criterion of *Involutive Topological Rings and Fields*, recovered here as the special case of a linear topology given by the powers of one ideal.
 
 ## Summary of Notation
 
@@ -83,7 +83,7 @@ When $2$ is invertible the averaging maps $\pi_\pm = \tfrac12(\mathrm{id}\pm\wid
 | $\widehat\sigma$ | The extension of the involution, $\widehat\sigma\iota = \iota\sigma$ |
 | $\widehat{R}^{\widehat\sigma} = \overline{\iota(R^\sigma)}$ | Fixed part of the completion |
 | $\mathrm{Skew}(\widehat{R}) = \overline{\iota(\mathrm{Skew}(R))}$ | Skew part of the completion |
-| $\pi_\pm = \tfrac12(\mathrm{id}\pm\widehat\sigma)$ | Averaging projectors when $2$ is invertible |
+| $\pi_{1,2} = \tfrac12(\mathrm{id}\pm\widehat\sigma)$ | Averaging projectors when $2$ is invertible |
 | $\widehat{R} = \widehat{R}^{\widehat\sigma}\oplus\mathrm{Skew}(\widehat{R})$ | Topological splitting |
 | $\sigma(I)^m\subseteq I$ | The $I$-adic continuity criterion, quoted |
 | $(\widehat{R},\widehat\sigma)$ | The completed involutive topological ring |

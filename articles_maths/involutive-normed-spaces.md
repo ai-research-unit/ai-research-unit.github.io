@@ -37,7 +37,7 @@ defines a norm on $X$, equivalent to $\lVert\cdot\rVert$, for which $\theta$ is 
 
 ## The Fixed and Negated Subspaces
 
-**Proposition (closedness and the inherited norm).** The fixed subspace $X^{\theta}$ and the negated subspace $X^{-}$ are closed subspaces of $X$, and each is a normed space for the restriction of the norm; in the antilinear case $X^{\theta}$ is a real normed space. When $2$ is invertible the averaging maps $\pi_{\pm} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and the direct sum
+**Proposition (closedness and the inherited norm).** The fixed subspace $X^{\theta}$ and the negated subspace $X^{-}$ are closed subspaces of $X$, and each is a normed space for the restriction of the norm; in the antilinear case $X^{\theta}$ is a real normed space. When $2$ is invertible the averaging maps $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and the direct sum
 
 $$
 X = X^{\theta} \oplus X^{-}
@@ -55,7 +55,7 @@ $$
 
 and the two inequalities are equalities on the summands; the direct sum norm $\lVert x_{+}\rVert_{\theta} + \lVert x_{-}\rVert_{\theta}$ and $\lVert x\rVert_{\theta}$ are equivalent, with the fixed and negated subspaces isometric to the summands.
 
-**Proof.** $\pi_{\pm}$ are contractions for the invariant norm, since $\lVert\pi_{\pm}x\rVert_{\theta} = \sup(\lVert\pi_{\pm}x\rVert, \lVert\theta\pi_{\pm}x\rVert) = \sup(\lVert\pi_{\pm}x\rVert, \lVert\pi_{\pm}x\rVert) = \lVert\pi_{\pm}x\rVert \leq \lVert x\rVert_{\theta}$, giving the lower bound; the upper bound is the triangle inequality. On a summand $\theta$ acts by $\pm\mathrm{id}$, so $\lVert\cdot\rVert_{\theta}$ and $\lVert\cdot\rVert$ agree there.
+**Proof.** $\pi_{1,2}$ are contractions for the invariant norm, since $\lVert\pi_{1,2}x\rVert_{\theta} = \sup(\lVert\pi_{1,2}x\rVert, \lVert\theta\pi_{1,2}x\rVert) = \sup(\lVert\pi_{1,2}x\rVert, \lVert\pi_{1,2}x\rVert) = \lVert\pi_{1,2}x\rVert \leq \lVert x\rVert_{\theta}$, giving the lower bound; the upper bound is the triangle inequality. On a summand $\theta$ acts by $\pm\mathrm{id}$, so $\lVert\cdot\rVert_{\theta}$ and $\lVert\cdot\rVert$ agree there.
 
 ## The Transposed Involution and the Dual Norm
 
@@ -104,7 +104,7 @@ On a normed space a continuous involution $\theta$ has a finite norm $\lVert\the
 | $\lVert\theta\rVert = 1$ | The isometric case |
 | $\lVert x\rVert_{\theta} = \sup(\lVert x\rVert, \lVert\theta x\rVert)$ | Equivalent invariant norm |
 | $X^{\theta}$, $X^{-}$ | Fixed and negated subspaces, normed |
-| $\pi_{\pm} = \frac12(\mathrm{id}\pm\theta)$ | Averaging projections |
+| $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ | Averaging projections |
 | $\theta'(\varphi) = \varphi\circ\theta$ | Transposed involution on the dual |
 | $\lVert\theta'\rVert = \lVert\theta\rVert$ | Norm of the transpose |
 | $(X^{-})^{\circ}$, $(X^{\theta})^{\circ}$ | Annihilators, the dual summands |

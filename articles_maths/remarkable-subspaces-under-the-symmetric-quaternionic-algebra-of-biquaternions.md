@@ -17,7 +17,7 @@ $\mathbb{C}$-bilinear operations, *Remarkable Subspaces under the General Plain 
 real bases and their elements are *Introduction to the Remarkable Subspaces*, and the restrictions of the form that
 the product carries are *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* and
 *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, whose table is quoted here and not
-recomputed. The isotropic elements are *Biquaternion Zero Divisors* and *The Radical and the Isotropic
+recomputed. The isotropic elements are *Zero Divisors of the General Plain Algebra* and *The Radical and the Isotropic
 Elements of the Symmetric Quaternionic Algebra*; the closure statement for the symmetrised quaternionic
 product is *Remarkable Subspaces and the Four General Products*.
 
@@ -63,7 +63,7 @@ coefficient vanishes. The **smallest nonzero value off the subspace** is $e_0$, 
 $e_1,e_1$; more generally $\mathbf P\star\mathbf Q=0$ exactly when the two complex vectors are
 $B$-isotropic partners, $(\mathbf P,\mathbf Q)=0$. The idempotents are $0$ alone, since $e_0$ is not in the
 subspace; the isotropic elements are the pure zero divisors, the complex cone
-$\sum_kQ_k^2=0$ of *Biquaternion Zero Divisors*.
+$\sum_kQ_k^2=0$ of *Zero Divisors of the General Plain Algebra*.
 
 ### The Quaternion Subspace
 
@@ -227,4 +227,4 @@ isotropic set appropriate to each.
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the closure statement of the symmetrisation
 - *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the restrictions of the form and their signatures
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the radical and the isotropic cone
-- *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the pure and the non-pure zero divisors
+- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the pure and the non-pure zero divisors

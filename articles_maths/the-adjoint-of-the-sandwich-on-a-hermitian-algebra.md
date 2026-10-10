@@ -68,7 +68,11 @@ For $A = \mathbb{C}[G]$ with the tracial standard form, $\Theta_g(y) = gyg^{-1}$
 
 ### Matrices
 
-For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\Theta_a(y) = aya^{*}$ and $\Theta_a^{*} = \Theta_{a^{*}}$; the sandwich is unitary exactly when $a$ is unitary, and the discrepancy between the two adjoints vanishes because the form is tracial.
+For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\Theta_a(y) = aya^{*}$ and $\Theta_a^{*} = \Theta_{a^{*}}$; the sandwich is unitary exactly when $a$ is unitary, and the discrepancy between the two adjoints vanishes because the form is tracial. At $n=2$ the sandwich by the Hermitian $\sigma_1$ is self-adjoint and it reverses $\sigma_3$:
+
+$$
+a=\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad a^{*}=a,\qquad \Theta_a(\sigma_3)=\sigma_1\sigma_3\sigma_1=-\sigma_3,\qquad \Theta_a^{*}=\Theta_{a^{*}}=\Theta_a .
+$$
 
 ### The Density Matrix Picture
 

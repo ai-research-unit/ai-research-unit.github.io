@@ -33,7 +33,7 @@ The conventions below are those used throughout the corpus. They are stated once
 | $B(v,w), Q(v), N(x)$ | bilinear form, quadratic form, norm |
 | $\bullet$ | the symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$; the circle $\circ$ is reserved for the composition of maps |
 | $\bar{\cdot}, {}^{\natural}, {}^{*}, {}^{\flat}, {}^{\dagger}$ | the conjugations of an algebra with an involution, and the adjoint of an operator; *The conjugations and the adjoint* below fixes their meanings |
-| $\tilde\Pi$ | an idempotent, a projector or a pure state, and the minimal left ideal it generates |
+| $\tilde\Pi$, $\tilde\pi$, $\Pi$ | an idempotent, a projector or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi$, the quaternion layer $\tilde\pi$, and the tilde-free layers $\Pi$ (§*The idempotent convention*) |
 | $\tilde P, \tilde q, \tilde Q$ | a generic element of the algebra: the quaternion, split-quaternion, biquaternion or split-biquaternion one |
 
 ### Groups, rings and operations
@@ -96,6 +96,8 @@ where the four coefficients $Q_\mu$ are complex, and each of them splits into a 
 
 The case and the tilde are read independently, and the glyph of a generic element is the two together: $a$ is real, $A$ complex, split-complex or dual, $\tilde q$ quaternion or split-quaternion, $\tilde Q$ biquaternion or split-biquaternion, and $\tilde o$ octonion.
 
+**The generic element is written $\tilde{P}$ or $\tilde{Q}$.** A statement that holds for every element is written with $\tilde P$ — the trace pairing $\operatorname{Tr}(\tilde P\tilde Q) = 2\operatorname{Sc}(\tilde P\tilde Q)$, the commutator bracket $[\tilde P, \tilde Q] = \tilde P\tilde Q - \tilde Q\tilde P$, the general plain bilinear form $B(\tilde P, \tilde Q)$ and the multiplicativity $N(\tilde P\tilde Q) = N(\tilde P)N(\tilde Q)$ — inherited from *Idempotents of the General Plain Algebra* and its companions, which write the generic element $\tilde P$ beside the idempotent $\tilde\Pi$.
+
 **The coordinates carry the letter of the element.** The components of a generic element are written with the same letter as the element and a subscript: $q_\mu$ for $\tilde q$, $Q_\mu = q_\mu + iq'_\mu$ for $\tilde Q$, and $o_\mu$ for $\tilde o$; a Euclidean vector part assembled from the non-scalar components carries the bold letter, $\mathbf{q}$, $\mathbf{Q}$ or $\mathbf{o}$; and a plain real variable is $a$, $b$ or $c$. In the synthetic studies of Part VI the letters $x, y$ and $z$ name neither an element nor a coordinate of any system: they appear there only as a formal indeterminate, as in $\mathbb{R}[x]/(x^2-1)$, or inside the name of an operator, a map or a function that the article itself defines.
 
 This is a **preferred convention** — a preference, not a strict rule, not to be enforced by rewriting other articles: the basis $e_0, \dots, e_3$, the central unit $i$, the Euclidean vector $\mathbf{q}$, the coefficients $q_\mu, q'_\mu$, indices such as $\mu, \nu, k$, structure constants, and the individual elements an article defines keep the symbols that article gives them. Where the constructions that share a glyph must be told apart — the complex from the split-complex and the dual, the quaternion from the split-quaternion, the biquaternion from the split-biquaternion — the glyph is qualified by a subscript, as in $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{H}_{\mathbb{D}}$.
@@ -148,36 +150,51 @@ The dagger is the **general adjoint**: it acts on an operator and not on an elem
 
 The convention of *The element and its coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the corpus uses it throughout.
 
-An **idempotent** of the algebra is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$; a **projector** is a Hermitian idempotent, $\tilde\Pi^{*} = \tilde\Pi$, and the rank-one projectors of $\mathbb{M}_+$, the Hermitian subspace, are the **pure states**,
+An **idempotent** of the algebra is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$; a **projector** is a Hermitian idempotent, $\tilde\Pi^{*} = \tilde\Pi$, and the rank-one projectors of $\mathbb{M}_+$, the Hermitian subspace, are the **pure states**.
 
-$$
-\tilde\Pi_{1,2}(\hat\mu) = \tfrac{1}{2}\bigl(e_0 \pm i\,\hat\mu\bigr), \qquad \hat\mu \in \mathbb{R}^3,\ |\hat\mu| = 1 .
-$$
-
-The standard pair of the algebra is
-
-$$
-\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3), \qquad \tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3), \qquad \tilde\Pi_1 + \tilde\Pi_2 = e_0, \qquad \tilde\Pi_1\tilde\Pi_2 = 0 ,
-$$
-
-and the two nilpotent matrix units of its Peirce decomposition are $\tilde R = \tfrac12(ie_1 - e_2)$ and $\tilde T = \tfrac12(ie_1 + e_2)$. The lower-case letters $p, q$ for the standard pair are retired, and a minimal left ideal is written $\mathbb{B}\tilde\Pi_1$ and never $\mathbb{B}p$; the classification, the Peirce decomposition and the basis $\{\tilde\Pi_1, \tilde T\}$ are those of *Biquaternion Idempotents and Projections* and *Biquaternion Ideals and Peirce Decomposition*.
-
-The family $\tilde\Pi_{1,2}(\hat\mu)$, written with its argument, is the two-sphere of pure states of the algebra in view; the central idempotents $\tfrac12(1\pm j)$ of the split-complex algebra are the separate pair $\tilde\Pi_{3,4}$.
+**The case rule splits the glyph, as it does for the elements.** The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Pi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\pi$; and those of the complex, split-complex and dual layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor. The same splitting of the identity is written $\tilde\pi_{1,2}$ in $\mathbb{H}_{\mathrm{s}}$ (*Split-Quaternion Idempotents and Projections*) and $\Pi_{1,2}$ in $\mathbb{D}$ (*Split-Complex Idempotents and Projections*), and the idempotents of the split-biquaternion layer are the $\tilde\Pi_{1,2}$ of *Split-Biquaternion Idempotents and Projections*; the layer fixes the glyph.
 
 The involution here is the star on the elements, as *The conjugations and the adjoint* fixes it, and *Conventions in the Biquaternion Universe* writes the same involution with the same star, $\tilde\Pi^{*} = \tilde\Pi$: the two corpora agree on the mark, and it is the dagger that is confined to the operators.
 
-A non-zero idempotent $\tilde\Pi$ generates the **minimal left ideal** $\mathbb{B}\tilde\Pi$; the classification of the idempotents, the polarisation identity, the Peirce decomposition and the projective geometry of the pure states are those of *Biquaternion Idempotents and Projections* and its companions.
+**The subscript of an idempotent is always numeric**: a pair is $\tilde\Pi_1, \tilde\Pi_2$; a second pair occurring in the same statement takes the next numbers, $\tilde\Pi_3, \tilde\Pi_4$; and the sign $\pm$ is never written as a subscript, so a family indexed by a direction is written with its argument, $\tilde\Pi_{1,2}(\hat\mu)$, and never with the sign. The lower-case letters $p, q$ for a minimal idempotent are retired: a minimal left ideal of $\mathbb{B}$ is written $\mathbb{B}\tilde\Pi$ and never $\mathbb{B}p$, and one of $\mathbb{H}_{\mathrm{s}}$ is written $\mathbb{H}_{\mathrm{s}}\tilde\pi$.
 
-The upper-case tilde is therefore **split between two roles**, and the split is the reason the convention is stated:
+A non-zero idempotent $\tilde\Pi$ generates the **minimal left ideal** $\mathbb{B}\tilde\Pi$; the standard pair, the classification of the idempotents, the polarisation identity, the Peirce decomposition, the matrix units and the projective geometry of the pure states are those of *Idempotents of the General Plain Algebra* and its companions.
+
+The idempotent glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
 | Symbol | Role |
 |---|---|
-| $\tilde\Pi$ | an idempotent, a projector or a pure state, and the minimal left ideal $\mathbb{B}\tilde\Pi$ it generates |
-| $\tilde P$ | a *generic* element wherever a statement holds for every element |
+| $\tilde\Pi$ | an idempotent, a projector or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Pi$ it generates |
+| $\tilde\pi$ | an idempotent of the quaternion or split-quaternion layer |
+| $\Pi$ | an idempotent of the complex, split-complex or dual layer, where no tilde is written |
 
-The generic element keeps its $\tilde P$ in the statements that hold for all elements: the trace pairing $\operatorname{Tr}(\tilde P\tilde Q) = 2\operatorname{Sc}(\tilde P\tilde Q)$, the commutator bracket $[\tilde P, \tilde Q] = \tilde P\tilde Q - \tilde Q\tilde P$, the general plain bilinear form $B(\tilde P, \tilde Q)$ and the multiplicativity $N(\tilde P\tilde Q) = N(\tilde P)N(\tilde Q)$. Both roles are inherited from *Biquaternion Idempotents and Projections* and its companions, which write the idempotent $\tilde\Pi$ and the generic element $\tilde P$ side by side.
+The convention is one of **notation, not of substance**: an element written $\tilde\Pi$ is not a different kind of object from one written $\tilde Q$, only an element known to be idempotent, and the glyph records that knowledge at the point of use; a passage that needs a generic idempotent variable writes $\tilde\Pi$.
 
-The convention is one of **notation, not of substance**: an element written $\tilde\Pi$ is not a different kind of object from one written $\tilde Q$, only an element known to be idempotent, and the glyph records that knowledge at the point of use. Where a passage needs a generic idempotent variable it may write $\tilde\Pi$, and where it needs a generic element it writes $\tilde P$ or $\tilde Q$.
+### The nilpotent convention
+
+The nilpotents carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§*The idempotent convention*): the lower-case $\tilde\nu$ of the quaternion and split-quaternion layers and the upper-case $\tilde\Upsilon$ of the biquaternion and split-biquaternion layers, as the case rule requires. **The capital is an upsilon and not a $Y$.**
+
+A **nilpotent** of the algebra is an element $\tilde\nu$ whose square vanishes,
+
+$$
+\tilde\nu^2 = 0 .
+$$
+
+**The square is read in a named product**, the algebra product unless the statement names another: the corpus writes nilpotents in the four general products of *The Square-Zero Elements of the Four General Products* as well, and the class is relative to the product — an element square-zero in the plain product need not be square-zero in the general plain sesquilinear one, and in the plain antisymmetric block every central element is square-zero, the unit among them. The star preserves the class, $(\tilde\nu^{*})^2 = (\tilde\nu^2)^{*} = 0$, so the star pairs the nilpotents two by two and fixes none of them. **No nilpotent is a projector**, a Hermitian nilpotent being zero, so no nilpotent is a pure state; it is nevertheless the partner of the idempotent in a minimal left ideal — for the standard pair $\mathbb{B}\tilde\Upsilon_2 = \mathbb{B}\tilde\Pi_1$ — and its products with its star are projectors of that ideal.
+
+**The subscript of a nilpotent is always numeric**, as for the idempotents: a pair is $\tilde\nu_1, \tilde\nu_2$, a second pair in the same statement takes the next numbers, and a sign is never written as a subscript.
+
+The nilpotents have no classification of the idempotent kind. The square-zero set is not one family, and which set it is depends on the product: the elements of zero norm under the general quaternionic product, the pure isotropic vectors under the associative one. The standard units and the instances are those of *The Nilpotents and the Zero Divisors of the Quaternionic Product*, *Idempotents of the General Plain Algebra* and *Biquaternion Ideals and Peirce Decomposition*. The standard pair of nilpotents is the two off-diagonal Peirce units of the last of these, $\tilde\Upsilon_1$ and $\tilde\Upsilon_2$, exchanged by the star.
+
+The nilpotent glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
+
+| Symbol | Role |
+|---|---|
+| $\tilde\Upsilon$ | a nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Upsilon$ it generates |
+| $\tilde\nu$ | a nilpotent of the quaternion or split-quaternion layer |
+| $\Upsilon$ | a nilpotent of the complex, split-complex or dual layer, where no tilde is written |
+
+The convention is one of **notation, not of substance**: an element written $\tilde\nu$ is not a different kind of object from one written $\tilde Q$, only an element known to be nilpotent.
 
 ## Conventions of the Corpus Itself
 
@@ -209,7 +226,7 @@ A generic element of a number system is written as a linear combination of the b
 the scalar sector of the system, the biquaternion element being $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$
 with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter of its own: $\alpha, \beta$ for the Booleans, $n, m$ for the naturals and the integers, $a, b, c$ for the rationals and the reals, and $A = a + ia'$, $B = b + ib'$ for the commutative two-parameter systems. The notation is fixed here above all for the conjugations, which is where the corpus has the most marks to keep apart, and for the number systems, whose glyphs carry two bits each. An algebra with a degree-2 form carries an intrinsic conjugate, the map that negates its vectors and fixes its scalars; it is written with a **natural sign**. The involution of the base extends to the coefficients and is written with a **bar**. Their composite is the Hermitian anti-automorphism that makes the algebra a Hilbert algebra, written with a **star**; its negative is the **anti-Hermitian** conjugation, written **flat**; and the **dagger** is the adjoint of an operator, written on operators and never on the elements. The star and the bar commute, $^{*} = \bar{\cdot}\circ{}^{\natural} = {}^{\natural}\circ\bar{\cdot}$, the flat is $\flat = -{}^{*}$, and $\{\mathrm{id}, \bar{\cdot}, {}^{\natural}, {}^{*}\}$ is a Klein four-group while the flat stands outside it. On a base whose involution is the identity the bar is the identity map and the star coincides with the natural sign.
 
-On the number systems the **case** records whether the commuting scalar sector is larger than the reals and the **tilde** records the presence of the quaternionic factor, and the two are read independently: $a$ is real, $A$ complex or split-complex or dual, $\tilde q$ quaternion or split-quaternion, and $\tilde Q$ biquaternion or split-biquaternion. The **idempotents** carry a symbol of their own: $\tilde\Pi$ is an idempotent, a projector or a pure state, and the minimal left ideal it generates, while $\tilde P$ is the generic element of a statement that holds for every element. The upper-case tilde is thus split between two roles, and the split is deliberate.
+On the number systems the **case** records whether the commuting scalar sector is larger than the reals and the **tilde** records the presence of the quaternionic factor, and the two are read independently: $a$ is real, $A$ complex or split-complex or dual, $\tilde q$ quaternion or split-quaternion, and $\tilde Q$ biquaternion or split-biquaternion. The **idempotents** and the **nilpotents** carry symbols of their own, split by the same case rule: $\tilde\Pi$ is an idempotent, a projector or a pure state of the biquaternion and split-biquaternion layers, and the minimal left ideal it generates, $\tilde\pi$ the same in the quaternion and split-quaternion layers, and $\Pi$ in the complex, split-complex and dual layers where no tilde is written; $\tilde\nu$ is a nilpotent of the quaternion or split-quaternion layer and $\tilde\Upsilon$ a nilpotent of the biquaternion or split-biquaternion layer, while $\tilde P$ is the generic element of a statement that holds for every element. The upper-case tilde carries three roles — the idempotent, the nilpotent and the generic element — and the split is deliberate.
 
 The working conventions are the corpus's own. Every article is registered in exactly one menu, with a comment that outlines it, and a leading `+` marks a planned article. The four groups of a category — Theory, Operator Theory, `*` Theory and `*` Operator Theory — each add one thing to the group before, the star naming the involutive layer on the elements and then on the operators, so that the last group holds the operators built from the involution, and the group `Applications` closes the category. A concept is introduced once, in the category that owns it, and is cited afterwards rather than restated; every deferral to a later part is stated explicitly, which is how the ordering rule of *Introduction to Mathematics* is enforced. Each article opens with its title and an Introduction and closes with Summary, Summary of Notation and Further Reading.
 
@@ -227,8 +244,11 @@ The working conventions are the corpus's own. Every article is registered in exa
 | tilde | the presence of the quaternionic factor |
 | $\alpha, \beta$; $n, m$; $a, b, c$ | the generic elements of the Booleans, the naturals and the integers, and the rationals and the reals |
 | $A = a + ia'$, $B = b + ib'$ | the generic element of a commutative two-parameter system, with $j$ or $\varepsilon$ in place of $i$, and the imaginary coefficient carrying a prime |
-| $\tilde\Pi$ | an idempotent, a projector or a pure state, and the minimal left ideal it generates |
-| $\tilde\Pi_1, \tilde\Pi_2$ | the standard orthogonal idempotents, $\tilde\Pi_1 = \tfrac{1}{2}(e_0+ie_3)$, $\tilde\Pi_2 = \tfrac{1}{2}(e_0-ie_3)$ |
+| $\tilde\Pi$ | an idempotent, a projector or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal it generates |
+| $\tilde\pi$ | an idempotent of the quaternion or split-quaternion layer |
+| $\Pi$ | an idempotent of the complex, split-complex or dual layer |
+| $\tilde\nu$ | a nilpotent of the quaternion or split-quaternion layer |
+| $\tilde\Upsilon$ | a nilpotent of the biquaternion or split-biquaternion layer |
 | $\tilde P$ | the generic element of the algebra, in a statement that holds for every element |
 | `- Theory`, `- Operator Theory`, `- * Theory`, `- * Operator Theory` | the four groups of a category, in that order |
 | `- Applications` | the group that closes a category with the concrete instances of its structure |

@@ -16,10 +16,26 @@ $$
 G=\mathrm{diag}(1,-1,-1,-1)=E ,
 $$
 
-so the diagonal entries are $+1,-1,-1,-1$, the off-diagonal entries vanish, and $\det G=-1$. In the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ of $\mathbb{B}_{\mathbb{R}}$ the Gram matrix is
+so the diagonal entries are $+1,-1,-1,-1$, the off-diagonal entries vanish, and $\det G=-1$; displayed in full,
 
 $$
-G_{\mathbb{R}}=\mathrm{diag}(1,-1,-1,-1,\,1,-1,-1,-1),
+G=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}.
+$$
+
+In the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ of $\mathbb{B}_{\mathbb{R}}$ the Gram matrix is
+
+$$
+G_{\mathbb{R}}=\mathrm{diag}(1,-1,-1,-1,\,1,-1,-1,-1)
+=\begin{pmatrix}
+1&0&0&0&0&0&0&0\\
+0&-1&0&0&0&0&0&0\\
+0&0&-1&0&0&0&0&0\\
+0&0&0&-1&0&0&0&0\\
+0&0&0&0&1&0&0&0\\
+0&0&0&0&0&-1&0&0\\
+0&0&0&0&0&0&-1&0\\
+0&0&0&0&0&0&0&-1
+\end{pmatrix},
 $$
 
 of signature $(2,6)$.
@@ -37,7 +53,15 @@ $$
 =\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde{Q}^{\natural})^{\dagger}\Phi(\tilde{Q}')\bigr),
 $$
 
-where $\dagger$ is the conjugate transpose in the matrix algebra.
+where $\dagger$ is the conjugate transpose in the matrix algebra. For $\tilde{Q}=e_0+ie_1$ the model is
+
+$$
+\Phi(\tilde{Q})=\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
+\operatorname{adj}\Phi(\tilde{Q})=\begin{pmatrix}1&-1\\-1&1\end{pmatrix},\qquad
+\operatorname{adj}\Phi(\tilde{Q})^{\dagger}\Phi(\tilde{Q})=\begin{pmatrix}0&0\\0&0\end{pmatrix},
+$$
+
+of trace $0$, matching $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=|1|^{2}-|i|^{2}=0$: the element is isotropic and its matrix is singular, of rank one.
 
 **Proof.** $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\bar{\tilde{Q}}\tilde{Q}')=\mathrm{Sc}\bigl((\tilde{Q}^{\natural})^{*}\tilde{Q}'\bigr)$, because $(\tilde{Q}^{\natural})^{*}=\overline{\tilde{Q}}$; the trace identity $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\Phi(\tilde R)\Phi(\tilde S))$ of *The Matrix Element Representation and the Biquaternion Dynamics* then gives the result, and $\Phi(\tilde{Q}^{\natural})=\operatorname{adj}\Phi(\tilde{Q})$ with $\Phi$ a $*$-homomorphism gives the second form.
 
@@ -75,6 +99,26 @@ The remarkable subspaces are defined in *Introduction to the Remarkable Subspace
 | $i\mathbb{H}_{\mathbb{B}}$ | $4$ | $(q'_0)^2-(q'_1)^2-(q'_2)^2-(q'_3)^2$ | $(1,3)$ |
 | $\mathbb{M}_{+}$ | $4$ | $q_0^2-(q'_1)^2-(q'_2)^2-(q'_3)^2$ | $(1,3)$ |
 | $\mathbb{M}_{-}$ | $4$ | $(q'_0)^2-q_1^2-q_2^2-q_3^2$ | $(1,3)$ |
+
+In the coordinates of each row the four indefinite restrictions carry the same matrix and the two definite ones the identity and minus the identity,
+
+$$
+G_{\mathbb{C}_{\mathbb{B}}}=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
+G_{\mathbb{H}_{\mathbb{B}}}=G_{i\mathbb{H}_{\mathbb{B}}}=G_{\mathbb{M}_{+}}=G_{\mathbb{M}_{-}}
+=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix},
+$$
+
+$$
+G_{\mathbb{V}_{\mathbb{B}}}=
+\begin{pmatrix}
+-1&0&0&0&0&0\\
+0&-1&0&0&0&0\\
+0&0&-1&0&0&0\\
+0&0&0&-1&0&0\\
+0&0&0&0&-1&0\\
+0&0&0&0&0&-1
+\end{pmatrix}.
+$$
 
 **Proof.** The centre and the vector subspace are spanned by $e_0,ie_0$ and by $e_k,ie_k$; there $\langle e_{\mu},e_{\mu}\rangle_{\natural*}=\varepsilon_{\mu}$ and $\langle ie_{\mu},ie_{\mu}\rangle_{\natural*}=\varepsilon_{\mu}$, which gives $\pm1$ on each basis vector and the first two rows. A real quaternion has $Q_{\mu}=q_{\mu}$, a purely imaginary one has $Q_{\mu}=iq'_{\mu}$; on the Hermitian subspace $Q_0=q_0$ and $Q_k=iq'_k$, on the anti-Hermitian subspace $Q_0=iq'_0$ and $Q_k=q_k$; substituting $\varepsilon$ in $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}|Q_{\mu}|^{2}$ gives the last four rows.
 

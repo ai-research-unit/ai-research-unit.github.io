@@ -14,6 +14,14 @@ $$
 \mathsf{M}_2\circ F_{\tilde C}\circ\mathsf{M}_2^{-1}=\bigl(M\mapsto M^2+N\bigr).
 $$
 
+The model of an element is the matrix
+
+$$
+\mathsf{M}_2(\tilde Q)=\begin{pmatrix}Q_0-iQ_3&-iQ_1-Q_2\\-iQ_1+Q_2&Q_0+iQ_3\end{pmatrix},\qquad Q_\mu=q_\mu+iq'_\mu ,
+$$
+
+of determinant $N(\tilde Q)=Q_0^2+Q_1^2+Q_2^2+Q_3^2$ and trace $2Q_0$.
+
 ## The Model as a Model of the Dynamics
 
 **Theorem (transport of the family).** For every $n$, $\mathsf{M}_2(F_{\tilde C}^n(\tilde Q))=p_n(\mathsf{M}_2(\tilde Q))$, where $p_0(M)=M$ and $p_{n+1}(M)=p_n(M)^2+N$. Consequently the map $\mathsf{M}_2$ restricts to a bijection
@@ -26,19 +34,26 @@ and the dynamics of the biquaternion family is conjugate to the dynamics of a po
 
 **Proof.** $\mathsf{M}_2$ is multiplicative and $\mathbb{C}$-linear, so $\mathsf{M}_2(\tilde Q^2+\tilde C)=\mathsf{M}_2(\tilde Q)^2+\mathsf{M}_2(\tilde C)$ and induction gives the transport of the orbit; a bijective linear map preserves boundedness and boundaries.
 
-**Remark (the reduction to four complex coordinates).** The matrix has four complex entries; with $M=\left(\begin{smallmatrix}\alpha&\beta\\\gamma&\delta\end{smallmatrix}\right)$ the family is the four-dimensional complex map
+**Remark (the reduction to four complex coordinates).** The matrix has four complex entries; with $M=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix}$ its square is
+
+$$
+M^2=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix}\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix}
+=\begin{pmatrix}\alpha^2+\beta\gamma&\beta(\alpha+\delta)\\\gamma(\alpha+\delta)&\delta^2+\beta\gamma\end{pmatrix},
+$$
+
+and the family is the four-dimensional complex map
 
 $$
 (\alpha,\beta,\gamma,\delta)\longmapsto(\alpha^2+\beta\gamma+n_1,\ \beta(\alpha+\delta)+n_2,\ \gamma(\alpha+\delta)+n_3,\ \gamma\beta+\delta^2+n_4)
 $$
 
-with $N=\left(\begin{smallmatrix}n_1&n_2\\n_3&n_4\end{smallmatrix}\right)$; the diagonal entries are quadratic in one line and the off-diagonal entries are linear in the trace $\alpha+\delta$ and the off-diagonal pair. **The map of the entries is a polynomial map of degree two of $\mathbb{C}^4$**, and the four complex dimensions of the space appear here for the first time.
+with $N=\begin{pmatrix}n_1&n_2\\n_3&n_4\end{pmatrix}$; the diagonal entries are quadratic in one line and the off-diagonal entries are linear in the trace $\alpha+\delta$ and the off-diagonal pair. **The map of the entries is a polynomial map of degree two of $\mathbb{C}^4$**, and the four complex dimensions of the space appear here for the first time.
 
 ## The Norm Comparison and the Escape Notions
 
 **Proposition (the Frobenius and Euclidean norms).** For every biquaternion, $\|\mathsf{M}_2(\tilde Q)\|_F=\sqrt2\,\|\tilde Q\|_E$; for every pair, $\|\tilde P\tilde Q\|_E\le\sqrt2\,\|\tilde P\|_E\|\tilde Q\|_E$; and the induced operator norm satisfies $\|M\|_2\le\sqrt2\,\|\tilde Q\|_E$.
 
-**Proof.** The Frobenius norm of the explicit matrix $\left(\begin{smallmatrix}Q_0-iQ_3&-iQ_1-Q_2\\-iQ_1+Q_2&Q_0+iQ_3\end{smallmatrix}\right)$ is the squared sum of the moduli of the entries, which is $\sum_\mu|Q_\mu|^2$ computed twice, hence $\|\mathsf{M}_2(\tilde Q)\|_F^2=2\|\tilde Q\|_E^2$. Multiplicativity of $\mathsf{M}_2$ and submultiplicativity of the Frobenius norm give $\sqrt2\|\tilde P\tilde Q\|_E=\|\mathsf{M}_2(\tilde P\tilde Q)\|_F\le\|\mathsf{M}_2(\tilde P)\|_F\|\mathsf{M}_2(\tilde Q)\|_F=2\|\tilde P\|_E\|\tilde Q\|_E$, hence the second inequality. The operator norm is bounded by the Frobenius norm, which is $\sqrt2\|\tilde Q\|_E$.
+**Proof.** The Frobenius norm of the explicit matrix $\mathsf{M}_2(\tilde Q)$ displayed above is the squared sum of the moduli of the entries, which is $\sum_\mu|Q_\mu|^2$ computed twice, hence $\|\mathsf{M}_2(\tilde Q)\|_F^2=2\|\tilde Q\|_E^2$. Multiplicativity of $\mathsf{M}_2$ and submultiplicativity of the Frobenius norm give $\sqrt2\|\tilde P\tilde Q\|_E=\|\mathsf{M}_2(\tilde P\tilde Q)\|_F\le\|\mathsf{M}_2(\tilde P)\|_F\|\mathsf{M}_2(\tilde Q)\|_F=2\|\tilde P\|_E\|\tilde Q\|_E$, hence the second inequality. The operator norm is bounded by the Frobenius norm, which is $\sqrt2\|\tilde Q\|_E$.
 
 **Corollary (the escape notions agree).** A biquaternion orbit is bounded in the Euclidean norm exactly when its matrix orbit is bounded in the Frobenius norm, and exactly when it is bounded in the operator norm. The filled Julia set and the Julia set are the same sets in the two models.
 
@@ -54,7 +69,14 @@ $$
 \det\mathsf{M}_2(\tilde Q_n)=N(\tilde Q_n), \qquad \operatorname{tr}\mathsf{M}_2(\tilde Q_n)=2(Q_n)_0 ,
 $$
 
-and for the parameter zero, $N(\tilde Q_n)=N(\tilde Q)^{2^n}$.
+and for the parameter zero, $N(\tilde Q_n)=N(\tilde Q)^{2^n}$. In the entries of the matrix the two invariants are the classical ones,
+
+$$
+M=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix},\qquad
+\det M=\alpha\delta-\beta\gamma,\qquad
+\operatorname{tr}M=\alpha+\delta,\qquad
+\chi_M(\zeta)=\zeta^2-(\operatorname{tr}M)\zeta+(\det M).
+$$
 
 **Proof.** $\det\mathsf{M}_2=N$ and $\operatorname{tr}\mathsf{M}_2=2Q_0$ are the trace-and-determinant proposition of the matrix-element-representation article, applied to the iterate. For a central zero parameter $\mathsf{M}_2(\tilde Q_n)=\mathsf{M}_2(\tilde Q)^{2^n}$ and the determinant is multiplicative.
 
@@ -74,7 +96,18 @@ The model turns the biquaternion dynamics into the iteration of a polynomial map
 
 The isomorphism is an isomorphism of algebras, and an algebra isomorphism carries multiplication and its derived operations; it does not carry every operator that can be built on the underlying space.
 
-**Proposition (the element and the operator are different objects).** Let $L_{\tilde Q}:\mathbb{B}\to\mathbb{B}$ be left multiplication, $L_{\tilde Q}(\tilde P)=\tilde Q\tilde P$. Then $L_{\tilde Q}$ is a complex-linear endomorphism of the four-dimensional space, represented by a $4\times4$ matrix in any basis, while $\mathsf{M}_2(\tilde Q)$ is the two-by-two matrix corresponding to the element $\tilde Q$. The two are different objects: $\mathsf{M}_2(L_{\tilde Q})$ is not defined, and the eigenvalues of the $4\times4$ matrix $L_{\tilde Q}$ are $\{Q_0+iB,Q_0+iB,Q_0-iB,Q_0-iB\}$ with $B=\sqrt{\sum_kQ_k^2}$, the eigenvalues of $\mathsf{M}_2(\tilde Q)$ each counted twice.
+**Proposition (the element and the operator are different objects).** Let $L_{\tilde Q}:\mathbb{B}\to\mathbb{B}$ be left multiplication, $L_{\tilde Q}(\tilde P)=\tilde Q\tilde P$. Then $L_{\tilde Q}$ is a complex-linear endomorphism of the four-dimensional space, represented by a $4\times4$ matrix in any basis, while $\mathsf{M}_2(\tilde Q)$ is the two-by-two matrix corresponding to the element $\tilde Q$. In the basis $e_0,e_1,e_2,e_3$ the matrix of $L_{\tilde Q}$ is
+
+$$
+\begin{pmatrix}
+Q_0&-Q_1&-Q_2&-Q_3\\
+Q_1&Q_0&-Q_3&Q_2\\
+Q_2&Q_3&Q_0&-Q_1\\
+Q_3&-Q_2&Q_1&Q_0
+\end{pmatrix},
+$$
+
+of determinant $N(\tilde Q)^2$ and trace $4Q_0$, with characteristic polynomial $\bigl((\zeta-Q_0)^2+\sum_kQ_k^2\bigr)^2$. The two are different objects: $\mathsf{M}_2(L_{\tilde Q})$ is not defined, and the eigenvalues of the $4\times4$ matrix $L_{\tilde Q}$ are $\{Q_0+iB,Q_0+iB,Q_0-iB,Q_0-iB\}$ with $B=\sqrt{\sum_kQ_k^2}$, the eigenvalues of $\mathsf{M}_2(\tilde Q)$ each counted twice.
 
 **Proof.** Under the identification $\mathbb{B}=\mathbb{C}^4$ the operator $L_{\tilde Q}$ is the left regular representation, and its characteristic polynomial is the square of that of $\mathsf{M}_2(\tilde Q)$ because $\mathbb{B}\cong M_2(\mathbb{C})$ is the direct sum of two copies of the simple module on which $M=\mathsf{M}_2(\tilde Q)$ acts by $M$ (*Modules over the General Plain Algebra of Biquaternions*). The eigenvalues of $M$ are $Q_0\pm iB$ by the characteristic polynomial of the matrix-element-representation article.
 

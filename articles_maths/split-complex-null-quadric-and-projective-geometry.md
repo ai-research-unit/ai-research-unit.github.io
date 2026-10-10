@@ -7,7 +7,7 @@ The norm $N(A)=a^2-a'^2$ of the split-complex algebra decides invertibility (*Sp
 
 The article owns the quadratic space $(\mathbb{D},N)$ read geometrically, the projective null quadric and the two points at infinity, the action of the hyperbolic group as a projectivity, and the cross-ratio description of the hyperbolic distance; the norm and its polarisation are defined and owned by *Split-Complex Norm and Invertibility*, and are used here as the geometric input. No physics is invoked and no new result is claimed.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1$, $j$ with $j^2=+1$; a general element is $A=a+j a'$ with $a,a'\in\mathbb{R}$; idempotents $\Pi_\pm=\tfrac12(1\pm j)$; norm $N(A)=a^2-a'^2$, of signature $(1,1)$. The projective line of one-dimensional subspaces is written $\mathbb{P}(\mathbb{D})\cong\mathbb{RP}^1$, with homogeneous coordinates $[a:a']$ and affine coordinate $t=a'/a$.
+**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1$, $j$ with $j^2=+1$; a general element is $A=a+j a'$ with $a,a'\in\mathbb{R}$; idempotents $\Pi_{1,2}=\tfrac12(1\pm j)$; norm $N(A)=a^2-a'^2$, of signature $(1,1)$. The projective line of one-dimensional subspaces is written $\mathbb{P}(\mathbb{D})\cong\mathbb{RP}^1$, with homogeneous coordinates $[a:a']$ and affine coordinate $t=a'/a$.
 
 ## The Quadratic Space
 
@@ -33,7 +33,7 @@ $$
 
 each a maximal totally isotropic subspace of $(\mathbb{D},N)$; the two lines are the eigenspaces of the conjugation and are interchanged by it. There are no other isotropic vectors.
 
-**Proof.** $N(A)=a^2-a'^2=(a-a')(a+a')$, so $N(A)=0$ iff $a=a'$ or $a=-a'$, which are the two lines displayed. On either line the restricted form vanishes identically, so each is totally isotropic; a two-dimensional space of signature $(1,1)$ has totally isotropic subspaces only of dimension $1$, so each is maximal. The idempotents $\Pi_\pm=\tfrac12(1\pm j)$ span the two lines, and $\bar \Pi_1 = \Pi_2$.
+**Proof.** $N(A)=a^2-a'^2=(a-a')(a+a')$, so $N(A)=0$ iff $a=a'$ or $a=-a'$, which are the two lines displayed. On either line the restricted form vanishes identically, so each is totally isotropic; a two-dimensional space of signature $(1,1)$ has totally isotropic subspaces only of dimension $1$, so each is maximal. The idempotents $\Pi_{1,2}=\tfrac12(1\pm j)$ span the two lines, and $\bar \Pi_1 = \Pi_2$.
 
 So the null cone is a **degenerate quadric**: two lines meeting at the apex, rather than the nonsingular cone of a definite form. It contains the zero divisors of the algebra together with $0$, and the two lines are exactly the two isotropic directions of the Lorentzian plane.
 
@@ -152,7 +152,7 @@ The hyperbolic one-parameter group $\{e^{js}\}$ acts on the projective line by t
 | $B(A,B) = a b - a' b'$ | Polar form, Lorentzian inner product |
 | $\mathbf{G} = \operatorname{diag}(1,-1)$ | Gram matrix of $B$ |
 | $\mathcal{N}$ | Isotropic cone; the two null lines $a = \pm a'$ |
-| $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents, spanning the null lines |
+| $\Pi_{1,2} = \tfrac12(1\pm j)$ | Idempotents, spanning the null lines |
 | $\mathbb{P}(\mathbb{D})\cong\mathbb{RP}^1$ | Real projective line; $[a:a']$, affine coordinate $t = a'/a$ |
 | $Q^0 = \{[1:1],[1:-1]\}$ | Projective null quadric; the two points at infinity |
 | $t = \pm1$ | The two isotropic points in the affine coordinate |

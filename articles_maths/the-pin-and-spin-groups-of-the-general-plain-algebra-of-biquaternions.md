@@ -242,4 +242,4 @@ The plain form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ c
 - *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the inner automorphisms as the isometric motions and for the outer coset.
 - *The Biquaternion Unit Group as a Topological Group* (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the ambient group, its centre and the quotient by it.
 - *Association and the Transpose on the Biquaternion Algebra* (`articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.md`), for the associate $F^{\approx}$ and the swap law of the one-sided families used throughout.
-- *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the null elements of the examples and their role in the algebra.
+- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the null elements of the examples and their role in the algebra.

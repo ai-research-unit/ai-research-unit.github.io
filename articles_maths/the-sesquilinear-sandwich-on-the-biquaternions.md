@@ -174,7 +174,7 @@ so the sandwich is injective exactly when both parameters are units, and it has 
 
 **Proof.** The rank formula $\dim\operatorname{im}+\dim\ker=4$ for a map of the four-dimensional complex space, with the image dimension from the theorem. $\square$
 
-**Remark.** The kernel is the set of the $\tilde X$ with $\tilde P\tilde X^{*}\tilde Q^{*}=0$, whose conjugate is the set of the $\tilde Y$ with $\tilde P\tilde Y\tilde Q^{*}=0$, the two-sided annihilator of the pair $(\tilde P,\tilde Q^{*})$; the two-sided operators attached to a zero divisor therefore carry a two-dimensional kernel, which is the operator form of the fact that a zero divisor of $\mathbb{B}$ is neither injective nor surjective, by *Biquaternion Zero Divisors*.
+**Remark.** The kernel is the set of the $\tilde X$ with $\tilde P\tilde X^{*}\tilde Q^{*}=0$, whose conjugate is the set of the $\tilde Y$ with $\tilde P\tilde Y\tilde Q^{*}=0$, the two-sided annihilator of the pair $(\tilde P,\tilde Q^{*})$; the two-sided operators attached to a zero divisor therefore carry a two-dimensional kernel, which is the operator form of the fact that a zero divisor of $\mathbb{B}$ is neither injective nor surjective, by *Zero Divisors of the General Plain Algebra*.
 
 ## The Ternary Product and the Quadratic Representation
 

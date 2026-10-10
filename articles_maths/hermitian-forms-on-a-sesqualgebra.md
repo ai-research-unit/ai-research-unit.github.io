@@ -216,7 +216,13 @@ $$
 \Psi(X,Y) = Y^{*}X, \qquad \Psi(X,X) = X^{*}X,
 $$
 
-the diagonal is a positive semi-definite matrix, of trace $\operatorname{tr}(X^{*}X) = \sum_{i,j} \lvert X_{ij}\rvert^{2}$, and the form is nondegenerate: if $X \neq 0$ then $X^{*}X \neq 0$, because the trace of $X^{*}X$ is a sum of squares of moduli, so the left annihilator vanishes. The verdict: the $A$-valued form of the matrix algebra is the matrix-valued inner product of the sibling *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*, its diagonal is the cone of *Hermitian Squares and the Algebraic Positive Cone*, and its nondegeneracy is the properness of that cone read on the algebra.
+the diagonal is a positive semi-definite matrix, of trace $\operatorname{tr}(X^{*}X) = \sum_{i,j} \lvert X_{ij}\rvert^{2}$, and the form is nondegenerate: if $X \neq 0$ then $X^{*}X \neq 0$, because the trace of $X^{*}X$ is a sum of squares of moduli, so the left annihilator vanishes. The diagonal at $n=2$ is
+
+$$
+X=\begin{pmatrix}1&i\\0&2\end{pmatrix},\qquad X^{*}X=\begin{pmatrix}1&i\\-i&5\end{pmatrix},\qquad \operatorname{tr}(X^{*}X)=6=\lvert1\rvert^{2}+\lvert i\rvert^{2}+\lvert0\rvert^{2}+\lvert2\rvert^{2},
+$$
+
+the matrix Hermitian with the positive diagonal $(1,5)$. The verdict: the $A$-valued form of the matrix algebra is the matrix-valued inner product of the sibling *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*, its diagonal is the cone of *Hermitian Squares and the Algebraic Positive Cone*, and its nondegeneracy is the properness of that cone read on the algebra.
 
 ### The Field and the Split Algebra
 

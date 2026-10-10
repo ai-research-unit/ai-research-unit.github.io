@@ -49,7 +49,7 @@ which is the replacement that turns Hamilton's rule into the paper's: on vectors
 
 **The norm.** The paper's square modulus, $\mathcal{B}\bar{\mathcal{B}} = s^2 - \mathbf{u}^2$, is **indefinite** in this basis: the "unitary" biquaternions, $\mathcal{B}\bar{\mathcal{B}} = 1$, are those with $s^2 - \lvert\mathbf{u}\rvert^2 = 1$, not those on a sphere. In the corpus's Hamilton basis the same expression would read $s^2 + \lvert\mathbf{u}\rvert^2$, because the vector units square to $-e_0$ there; the sign is the dictionary's, and the caution is repeated here because the paper's Lorentz group is built on the indefinite form.
 
-The algebra is $\mathbb{C}\otimes\mathbb{H}$, isomorphic to the $2\times2$ complex matrices and therefore carrying zero divisors; the corpus's *Biquaternion Zero Divisors* and *The Null Cone* treat them, and the null field $F^2 = 0$ of the twisting section is one of them.
+The algebra is $\mathbb{C}\otimes\mathbb{H}$, isomorphic to the $2\times2$ complex matrices and therefore carrying zero divisors; the corpus's *Zero Divisors of the General Plain Algebra* and *The Null Cone* treat them, and the null field $F^2 = 0$ of the twisting section is one of them.
 
 ### The Field, and the Lorentz Action
 

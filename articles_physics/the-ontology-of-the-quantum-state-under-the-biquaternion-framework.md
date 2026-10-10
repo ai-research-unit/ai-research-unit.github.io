@@ -231,7 +231,7 @@ The article's interpretive claim is that the algebra settles the identity, the s
 - *Quantum Physics in Biquaternionic Form*, for the state and observable formalism, the Bloch ball, and the Born rule.
 - *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the state space as a slice of the cone and purity as a boundary condition.
 - *The Born Rule as a Trace Formula — Derivation and Comparison*, for what the trace pairing derives and what it restates.
-- *Biquaternion Zero Divisors* and *Biquaternion Spectral Theory*, for the algebraic structure of idempotents, rank-one elements, and zero divisors used in the purity section.
+- *Zero Divisors of the General Plain Algebra* and *Biquaternion Spectral Theory*, for the algebraic structure of idempotents, rank-one elements, and zero divisors used in the purity section.
 - *The Measurement Problem in Algebraic Form*, for provenance-blindness, the missing outcome index, and the segment-versus-endpoint gap.
 - *Decoherence as Idempotent Projection*, for the deformation of an idempotent into a mixed state.
 - *Entangled Subsystems in the Biquaternion Framework*, for reduced states and the tensor-product structure.

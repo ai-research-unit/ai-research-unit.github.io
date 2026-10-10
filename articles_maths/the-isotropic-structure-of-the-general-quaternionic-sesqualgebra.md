@@ -126,9 +126,9 @@ The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone o
 
 ## Further Reading
 
-- *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the norm cone of the zero divisors, whose intersection with the Krein null set is the doubly null lines
+- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the norm cone of the zero divisors, whose intersection with the Krein null set is the doubly null lines
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the comparison of the null sets and of the value-one sets of the four forms, and for the null quadric of the general plain bilinear form with its isotropic planes
-- *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the idempotents $\tilde\Pi_{1,2}(\hat\mu)$ and the minimal left and right ideals they generate
+- *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the idempotents $\tilde\Pi_{1,2}(\hat\mu)$ and the minimal left and right ideals they generate
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the same description for the general quaternionic bilinear form
 - *Krein Orthogonality and the Fundamental Decomposition* (`articles_maths/krein-orthogonality-and-the-fundamental-decomposition.md`), for the complements used here
 - *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the ball whose boundary is the isotropic sphere

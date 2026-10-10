@@ -9,7 +9,7 @@ $$
 $$
 the complex Clifford algebra of the **split bioctonions** $\mathbb{D}\otimes_{\mathbb{R}}\mathbb{O}$. Its structure is fixed by the same mechanism as the one-rung-lower case of *Complex Split Biquaternions and the Clifford Algebra Cl(3)*: the volume element of an odd-dimensional Clifford algebra is central, and here it is an involution, so it splits the algebra into the direct sum of two copies of the complex octonionic chain algebra,
 $$
-\mathrm{Cl}(7) = \mathrm{Cl}(7)\Pi_+ \oplus \mathrm{Cl}(7)\Pi_-, \qquad \Pi_\pm = \tfrac12(1\pm J), \qquad J = e_1e_2e_3e_4e_5e_6e_7 .
+\mathrm{Cl}(7) = \mathrm{Cl}(7)\Pi_1 \oplus \mathrm{Cl}(7)\Pi_2, \qquad \Pi_{1,2} = \tfrac12(1\pm J), \qquad J = e_1e_2e_3e_4e_5e_6e_7 .
 $$
 Each copy is a full $\mathrm{Cl}(6)$ and therefore carries its own Fano chain algebra, its own ladder operators, its own $\mathrm{su}(3)\oplus\mathrm{u}(1)$ and its own eight-dimensional minimal left ideal with the same charge spectrum; the two copies are the two **pinor representations** of $\mathrm{Cl}(7)$, are inequivalent, and are interchanged by the parity automorphism $e_i\mapsto -e_i$. This is the algebraic content of a generation of fermions carrying both chiralities, developed in *Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions*.
 
@@ -77,26 +77,26 @@ On each central summand, where $J$ acts as the scalar $\pm1$, the seventh genera
 
 *Proof.* From $\Gamma^2=-1$ and $e_7\Gamma=-\Gamma e_7$: $\Gamma J=\Gamma^2e_7=-e_7$, so $e_7=-\Gamma J$, and $J$ is $\pm1$ on the summands. $\square$
 
-**Theorem (the central splitting).** With $\Pi_\pm=\tfrac12(1\pm J)$, the elements $\Pi_+,\Pi_-$ are a complete family of orthogonal central idempotents,
+**Theorem (the central splitting).** With $\Pi_{1,2}=\tfrac12(1\pm J)$, the elements $\Pi_1,\Pi_2$ are a complete family of orthogonal central idempotents,
 $$
-\Pi_+^2=\Pi_+, \qquad \Pi_-^2=\Pi_-, \qquad \Pi_+\Pi_-=0, \qquad \Pi_++\Pi_-=1,
+\Pi_1^2=\Pi_1, \qquad \Pi_2^2=\Pi_2, \qquad \Pi_1\Pi_2=0, \qquad \Pi_1+\Pi_2=1,
 $$
 and
 $$
-\mathrm{Cl}(7) = \mathrm{Cl}(7)\Pi_+ \oplus \mathrm{Cl}(7)\Pi_- ,
+\mathrm{Cl}(7) = \mathrm{Cl}(7)\Pi_1 \oplus \mathrm{Cl}(7)\Pi_2 ,
 $$
 a direct sum of two two-sided ideals, each of complex dimension $64$ and each isomorphic to the complex octonionic chain algebra,
 $$
-\mathrm{Cl}(7)\Pi_\pm \cong \mathrm{Cl}(6) \cong M_8(\mathbb{C}).
+\mathrm{Cl}(7)\Pi_{1,2} \cong \mathrm{Cl}(6) \cong M_8(\mathbb{C}).
 $$
 
-*Proof.* Idempotency, orthogonality and completeness come from $J^2=1$ as in the companion Cl(3) article; centrality from centrality of $J$. The two-sided ideals are the two simple summands of $\mathrm{Cl}(7)\cong M_8(\mathbb{C})\oplus M_8(\mathbb{C})$, each of complex dimension $64$; left multiplication by $\Pi_\pm$ was checked to be a rank-$64$ projector of the $128$-dimensional space. $\square$
+*Proof.* Idempotency, orthogonality and completeness come from $J^2=1$ as in the companion Cl(3) article; centrality from centrality of $J$. The two-sided ideals are the two simple summands of $\mathrm{Cl}(7)\cong M_8(\mathbb{C})\oplus M_8(\mathbb{C})$, each of complex dimension $64$; left multiplication by $\Pi_{1,2}$ was checked to be a rank-$64$ projector of the $128$-dimensional space. $\square$
 
 **Theorem (the parity automorphism and the two pinor representations).** The map
 $$
 \sigma : \mathrm{Cl}(7)\to\mathrm{Cl}(7), \qquad \sigma(e_i)=-e_i ,
 $$
-is an algebra automorphism which fixes the even monomials and negates the odd ones, satisfies $\sigma(J)=-J$, and interchanges the two summands, $\sigma(\Pi_+)=\Pi_-$, $\sigma(\Pi_-)=\Pi_+$. The two summands are the two pinor representations of $\mathrm{Cl}(7)$, inequivalent and distinguished by the eigenvalue $\pm1$ of the central volume element $J$; equivalently, by the proposition above, by the sign of the $\mathrm{Cl}(6)$ volume element $\Gamma$ that each induces.
+is an algebra automorphism which fixes the even monomials and negates the odd ones, satisfies $\sigma(J)=-J$, and interchanges the two summands, $\sigma(\Pi_1)=\Pi_2$, $\sigma(\Pi_2)=\Pi_1$. The two summands are the two pinor representations of $\mathrm{Cl}(7)$, inequivalent and distinguished by the eigenvalue $\pm1$ of the central volume element $J$; equivalently, by the proposition above, by the sign of the $\mathrm{Cl}(6)$ volume element $\Gamma$ that each induces.
 
 *Proof.* As in the companion Cl(3) article: sending every generator to its negative preserves the quadratic relations and is invertible; on the volume element the seven sign flips give $\sigma(J)=(-1)^7J=-J$; and the two projections are the two nonequivalent simple modules of $M_8(\mathbb{C})\oplus M_8(\mathbb{C})$. $\square$
 
@@ -151,7 +151,7 @@ The split bioctonions are $\mathbb{D}\otimes_{\mathbb{R}}\mathbb{O}$, and the co
 $$
 \mathrm{Cl}(7) \cong \mathrm{Cl}(6)\oplus\mathrm{Cl}(6) \cong M_8(\mathbb{C})\oplus M_8(\mathbb{C}),
 $$
-of complex dimension $128$. Its volume element $J=e_1e_2e_3e_4e_5e_6e_7$ is central, self-adjoint and an involution, $J^2=1$, and through the idempotents $\Pi_\pm=\tfrac12(1\pm J)$ it splits the algebra into two copies of the complex octonionic chain algebra $\mathrm{Cl}(6)\cong M_8(\mathbb{C})$, each of complex dimension $64$. The seventh generator acts on the two copies as the $\mathrm{Cl}(6)$ volume element $\Gamma=e_1\cdots e_6$ with opposite signs, $e_7=-\Gamma J$. The parity automorphism $e_i\mapsto-e_i$ negates $J$ and interchanges the two copies, which are the two inequivalent pinor representations of $\mathrm{Cl}(7)$, distinguished by the eigenvalue of $J$; this is the doubling of the octonionic chain algebra into the two chiralities of a generation. Each copy carries the Furey ladder operators with $\{\alpha_i,\alpha_j^{\dagger}\}=\delta_{ij}$, an eight-dimensional minimal left ideal with charges $0,\tfrac13,\tfrac13,\tfrac13,\tfrac23,\tfrac23,\tfrac23,1$ under $Q=\tfrac13N$, and the same intrinsic $\mathrm{su}(3)\oplus\mathrm{u}(1)$, which commutes with $J$: the two copies differ only in chirality. The construction is the six-dimensional case of the general statement that the chain algebra of a split normed algebra is $\mathrm{Cl}(2n)\oplus\mathrm{Cl}(2n)\cong\mathrm{Cl}(2n+1)$, of which the quaternionic case is *Complex Split Biquaternions and the Clifford Algebra Cl(3)*.
+of complex dimension $128$. Its volume element $J=e_1e_2e_3e_4e_5e_6e_7$ is central, self-adjoint and an involution, $J^2=1$, and through the idempotents $\Pi_{1,2}=\tfrac12(1\pm J)$ it splits the algebra into two copies of the complex octonionic chain algebra $\mathrm{Cl}(6)\cong M_8(\mathbb{C})$, each of complex dimension $64$. The seventh generator acts on the two copies as the $\mathrm{Cl}(6)$ volume element $\Gamma=e_1\cdots e_6$ with opposite signs, $e_7=-\Gamma J$. The parity automorphism $e_i\mapsto-e_i$ negates $J$ and interchanges the two copies, which are the two inequivalent pinor representations of $\mathrm{Cl}(7)$, distinguished by the eigenvalue of $J$; this is the doubling of the octonionic chain algebra into the two chiralities of a generation. Each copy carries the Furey ladder operators with $\{\alpha_i,\alpha_j^{\dagger}\}=\delta_{ij}$, an eight-dimensional minimal left ideal with charges $0,\tfrac13,\tfrac13,\tfrac13,\tfrac23,\tfrac23,\tfrac23,1$ under $Q=\tfrac13N$, and the same intrinsic $\mathrm{su}(3)\oplus\mathrm{u}(1)$, which commutes with $J$: the two copies differ only in chirality. The construction is the six-dimensional case of the general statement that the chain algebra of a split normed algebra is $\mathrm{Cl}(2n)\oplus\mathrm{Cl}(2n)\cong\mathrm{Cl}(2n+1)$, of which the quaternionic case is *Complex Split Biquaternions and the Clifford Algebra Cl(3)*.
 
 ## Summary of Notation
 
@@ -164,8 +164,8 @@ of complex dimension $128$. Its volume element $J=e_1e_2e_3e_4e_5e_6e_7$ is cent
 | $\Gamma=e_1\cdots e_6$ | $\mathrm{Cl}(6)$ volume element, $\Gamma^2=-1$; the companion's $e_7$ |
 | $J=e_1\cdots e_7=\Gamma e_7$ | $\mathrm{Cl}(7)$ volume element, central, self-adjoint, $J^2=1$ |
 | $e_7=-\Gamma J$ | Seventh generator as the $\mathrm{Cl}(6)$ volume element on each summand |
-| $\Pi_\pm=\tfrac12(1\pm J)$ | Complete orthogonal central idempotents |
-| $\mathrm{Cl}(7)\Pi_\pm\cong\mathrm{Cl}(6)\cong M_8(\mathbb{C})$ | The two summands, each of complex dimension $64$ |
+| $\Pi_{1,2}=\tfrac12(1\pm J)$ | Complete orthogonal central idempotents |
+| $\mathrm{Cl}(7)\Pi_{1,2}\cong\mathrm{Cl}(6)\cong M_8(\mathbb{C})$ | The two summands, each of complex dimension $64$ |
 | $\sigma:e_i\mapsto-e_i$ | Parity automorphism, interchanges the summands |
 | $\alpha_i,\alpha_i^{\dagger}$ | Furey ladder operators of a summand |
 | $N=\sum_i\alpha_i^{\dagger}\alpha_i$ | Number operator |

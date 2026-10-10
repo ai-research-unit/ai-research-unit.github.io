@@ -146,7 +146,11 @@ For $x = e_1e_2$ one has $|x| = 0$, so $L_x^{\star} = L_x^{*} = L_{x^{\dagger}}$
 
 ### Matrices
 
-For $A = M_n(\mathbb{C})$ with the grading $\alpha(a) = \gamma a\gamma$ of $\mathbb{C}^{n}$, take an odd self-adjoint matrix $m$, $\alpha(m) = -m = m^{\dagger}$, for instance $\sigma_x$ with $\gamma = \mathrm{diag}(1,-1)$ in $M_2(\mathbb{C})$. The operator $T = L_m$, $T(a) = ma$, is odd, its ordinary adjoint is $T^{*} = L_{m^{\dagger}} = L_m = T$, so it is self-adjoint, and its super-adjoint is $T^{\star} = -\,T^{*} = -T$; thus an odd operator that is self-adjoint is anti-super-self-adjoint, which is the parity-$1$ case of the rule $T^{\star} = -T$ for $T^{*} = T$.
+For $A = M_n(\mathbb{C})$ with the grading $\alpha(a) = \gamma a\gamma$ of $\mathbb{C}^{n}$, take an odd self-adjoint matrix $m$, $\alpha(m) = -m = m^{\dagger}$, for instance $\sigma_x$ with $\gamma = \mathrm{diag}(1,-1)$ in $M_2(\mathbb{C})$. The operator $T = L_m$, $T(a) = ma$, is odd, its ordinary adjoint is $T^{*} = L_{m^{\dagger}} = L_m = T$, so it is self-adjoint, and its super-adjoint is $T^{\star} = -\,T^{*} = -T$; thus an odd operator that is self-adjoint is anti-super-self-adjoint, which is the parity-$1$ case of the rule $T^{\star} = -T$ for $T^{*} = T$. The smallest instance is
+
+$$
+\gamma=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad m=\sigma_x=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad \gamma m\gamma=\begin{pmatrix}0&-1\\-1&0\end{pmatrix}=-m,\qquad m^{\dagger}=m .
+$$
 
 ## Summary
 

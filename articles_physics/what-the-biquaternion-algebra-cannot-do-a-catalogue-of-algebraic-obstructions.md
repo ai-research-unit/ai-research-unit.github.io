@@ -22,7 +22,7 @@ The catalogue is not a list of defects of the framework. It is the map of the bo
 
 Each item below is given in the form **statement — proof — consequence — remedy**, and each is verified either by explicit computation or by a standard theorem cited as standard.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, with $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; pure states are $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, with $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; pure states are $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}\tilde\Pi_1$ with $\tilde\Pi_1=\tfrac12(e_0+ie_3)$.
 
 ## How an Obstruction Is Certified
 
@@ -239,19 +239,19 @@ $$
 
 Since the two subspaces intersect only at zero, no non-zero Hermitian element is $i$ times a Hermitian element.
 
-**Consequence.** The framework's Hilbert space is the **module** $\mathbb{B}p\cong\mathbb{C}^2$, on which $i$ acts as the complex structure and the inner product is the Hermitian form; the observable space $\mathbb{M}_+$ is a real vector space and must be handled as such. Treating $\mathbb{M}_+$ as a complex Hilbert space is the characteristic error this catalogue is concerned to exclude.
+**Consequence.** The framework's Hilbert space is the **module** $\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$, on which $i$ acts as the complex structure and the inner product is the Hermitian form; the observable space $\mathbb{M}_+$ is a real vector space and must be handled as such. Treating $\mathbb{M}_+$ as a complex Hilbert space is the characteristic error this catalogue is concerned to exclude.
 
 **Remedy.** Put the complex structure on the module and keep the real structure on the observables; the two are related by the map $\psi\mapsto\psi\psi^\dagger$ that sends rays to Hermitian rank-one elements.
 
 ### O17. The state module is not canonical
 
-**Statement.** There is no distinguished minimal left ideal of $\mathbb{B}$; the module $\mathbb{B}p$ depends on the idempotent $p$, and different choices give isomorphic but distinct submodules.
+**Statement.** There is no distinguished minimal left ideal of $\mathbb{B}$; the module $\mathbb{B}\tilde\Pi_1$ depends on the idempotent $\tilde\Pi_1$, and different choices give isomorphic but distinct submodules.
 
-**Proof.** The minimal left ideals of $M_2(\mathbb{C})$ are the column spaces of rank-one projections; they are all isomorphic as modules, and the unitary group acts transitively on the rank-one projections, so no one of them is singled out by the algebra. Concretely, $p=\tfrac12(e_0+ie_3)$ and $p'=\tfrac12(e_0+ie_1)$ generate distinct ideals related by a unitary conjugation.
+**Proof.** The minimal left ideals of $M_2(\mathbb{C})$ are the column spaces of rank-one projections; they are all isomorphic as modules, and the unitary group acts transitively on the rank-one projections, so no one of them is singled out by the algebra. Concretely, $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_3=\tfrac12(e_0+ie_1)$ generate distinct ideals related by a unitary conjugation.
 
 **Consequence.** The identification of the two components of a spinor, and hence the split into material and informational parts, requires a choice of basis; the state space is canonical only up to unitary equivalence. Physical predictions are invariant under the choice, but the bookkeeping is not.
 
-**Remedy.** Fix the idempotent once and for all — the corpus fixes $p=\tfrac12(e_0+ie_3)$ — and verify that any statement of interest is invariant under unitary change of $p$. The isomorphism is not a canonical identification, and statements that depend on it must be shown to be basis-independent.
+**Remedy.** Fix the idempotent once and for all — the corpus fixes $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ — and verify that any statement of interest is invariant under unitary change of $\tilde\Pi_1$. The isomorphism is not a canonical identification, and statements that depend on it must be shown to be basis-independent.
 
 ## V. Obstructions of Dynamics and Interpretation
 
@@ -341,7 +341,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 | O14 unit forced central | norm preservation for all $\tilde{H}$ | accept the complex scalar field |
 | O15 sectors not an algebra grading | $\mathbb{M}_+\mathbb{M}_+\not\subseteq\mathbb{M}_+$ | use commutators or the trace |
 | O16 no complex structure on $\mathbb{M}_+$ | $i\mathbb{M}_+=\mathbb{M}_-$ | put it on the module |
-| O17 module not canonical | transitive action on idempotents | fix $p$ and check invariance |
+| O17 module not canonical | transitive action on idempotents | fix $\tilde\Pi_1$ and check invariance |
 | O18 no time or Hamiltonian | inner derivations only | import the dynamics |
 | O19 measurement problem untouched | O1, O2, O18 together | add interpretive structure |
 | O20 no algebraic scale | scale-free relations | import the scales |
@@ -373,7 +373,7 @@ Read as a whole, the catalogue is the framework's **ledger of forbidden structur
 - **Canonical-versus-positive reading.** The three quadratic obstructions O5–O7 are one trade-off: the form the algebra fixes canonically, the norm, is indefinite and vanishes on non-zero elements, while the positive form is trace-relative and canonical only up to its scale. Read physically, the canonical form of a relativistic element is indefinite — the norm is the interval, of signature $(3,1)$ on the material sector — so a positive probability cannot be read from the algebra's own form and must be added, which is the algebraic shape of why a relativistic one-particle description needs an added positive structure rather than an available one. Boundary: the obstructions and the trace-relative repair are proved above and in *Conventions in the Biquaternion Universe*; the indefinite inner product of a quantised gauge field is imported, and whether its identification with the norm on $\mathbb{M}_-$ has content beyond the coincidence of signatures is asked and not settled in *Canonical Quantization of the Biquaternion Maxwell Field*; the reading adds no derivation.
 - **One-mode reading.** O12 and O13 read together say that the algebra carries one mode and no internal composition: it has no canonical commutation relation and no internal tensor factorisation, while the two-mode arena is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. Read physically, the biquaternion algebra is intrinsically a **one-mode (one-qubit) theory**: the single-mode truncation is exact, the many-mode theory is the tensor tower built over it, and the framework's finite content is exactly one fermionic mode (*Fock Space and Creation/Annihilation Operators in Biquaternionic Form*). Boundary: the reading names the mode count and does not supply a field algebra, whose brackets are imported (O12).
 - **Basis-freedom reading.** O1, O16 and O17 are one statement read on the states: the algebra has no canonical maximal commutative subalgebra, the Hermitian sector no intrinsic complex structure, and the state module no canonical idempotent, so no basis is singled out. Read physically, the framework has no preferred classical frame and no pointer basis of its own — the basis of a measurement is a choice and not a datum of the algebra — which is the algebraic form of the basis-independence of quantum mechanics and the reason the classical sector is a limit rather than a subspace (*The Centre of the Biquaternion Algebra as the Classical Sector*). Boundary: basis-independence is shared with ordinary quantum mechanics; the reading states its algebraic origin and does not address the selection rule (O19).
-- **Mass is a breaking, not a product.** O22 read forwards: since a multiplication acts identically on the two chiral components and cannot couple them, a mass term is not a product of the algebra but a breaking, which the conventions realise as the right multiplication by $\tilde{a}_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$. Boundary: the shape of the term is the algebra's, its mechanism and its value are not; the physical statement is developed in *The Quantum–Relativity Tension and the Biquaternion Framework*.
+- **Mass is a breaking, not a product.** O22 read forwards: since a multiplication acts identically on the two chiral components and cannot couple them, a mass term is not a product of the algebra but a breaking, which the conventions realise as the right multiplication by $\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$. Boundary: the shape of the term is the algebra's, its mechanism and its value are not; the physical statement is developed in *The Quantum–Relativity Tension and the Biquaternion Framework*.
 
 ## Summary
 
@@ -396,7 +396,7 @@ Each obstruction is proved from the defining relations and is stated with its co
 | $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$ | Hermitian form |
 | $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$ | Pure state, null under $N$ |
 | $\mathbb{A}_{\hat{n}}$ | Maximal commutative subalgebra |
-| $\mathbb{B}p$, $p=\tfrac12(e_0+ie_3)$, also written $S$ | State (spinor) module, $\cong\mathbb{C}^2$; $\mathbb{B}=\mathrm{End}(S)$ |
+| $\mathbb{B}\tilde\Pi_1$, $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, also written $S$ | State (spinor) module, $\cong\mathbb{C}^2$; $\mathbb{B}=\mathrm{End}(S)$ |
 | $M_2(\mathbb{C})$ | Matrix model; $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$ |
 | $U(2)$ | Norm-preserving (unitary) group |
 | $G_N=U(1)\cdot SL(2,\mathbb{C})$ | Biquaternion-norm-preserving group, $\dim_\mathbb{R}=7$ |

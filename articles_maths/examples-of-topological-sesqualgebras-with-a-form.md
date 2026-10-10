@@ -16,7 +16,13 @@ The article presents the four standard models, the indefinite models and the deg
 
 ### The Matrices
 
-**Example (the matrices, verdict: complete, submultiplicative, no $\mathrm{C}^{*}$).** Let $A = M_{n}(\mathbb{C})$ with the conjugate transpose and the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, the model of the layer. The form is Hermitian, compatible, positive definite, nondegenerate and of signature $(2n^{2},0)$ over $\mathbb{R}$; the norm is the **Frobenius norm**, the Euclidean norm of the $n^{2}$ entries, submultiplicative by Cauchy–Schwarz on the entries and with $\lVert E_{ij}\rVert = 1$ on the matrix units. The norm is **not** the $\mathrm{C}^{*}$-norm: $\lVert 1\rVert^{2} = n$ while $\lVert 1^{*}1\rVert = \sqrt{n}$, so the $\mathrm{C}^{*}$-condition fails for $n \geq 2$, and correspondingly the operator norm of $m_{1}$ is $1$ while $\lVert 1\rVert = \sqrt{n}$. The radical is zero, the involution is isometric, and the example is the model of the article and the first witness that the $\mathrm{C}^{*}$-condition is a restriction on the object and not a consequence of definiteness.
+**Example (the matrices, verdict: complete, submultiplicative, no $\mathrm{C}^{*}$).** Let $A = M_{n}(\mathbb{C})$ with the conjugate transpose and the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, the model of the layer. The form is Hermitian, compatible, positive definite, nondegenerate and of signature $(2n^{2},0)$ over $\mathbb{R}$; the norm is the **Frobenius norm**, the Euclidean norm of the $n^{2}$ entries, submultiplicative by Cauchy–Schwarz on the entries and with $\lVert E_{ij}\rVert = 1$ on the matrix units. The norm is **not** the $\mathrm{C}^{*}$-norm: $\lVert 1\rVert^{2} = n$ while $\lVert 1^{*}1\rVert = \sqrt{n}$, so the $\mathrm{C}^{*}$-condition fails for $n \geq 2$, and correspondingly the operator norm of $m_{1}$ is $1$ while $\lVert 1\rVert = \sqrt{n}$. The radical is zero, the involution is isometric, and the example is the model of the article and the first witness that the $\mathrm{C}^{*}$-condition is a restriction on the object and not a consequence of definiteness. The smallest case is explicit:
+
+$$
+E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad \lVert E_{11}\rVert_F=\lVert E_{12}\rVert_F=1,\qquad I_2=\begin{pmatrix}1&0\\0&1\end{pmatrix},\quad \lVert I_2\rVert_F=\sqrt2,\quad \lVert I_2\rVert_F^{2}=2\neq\sqrt2=\lVert I_2^{*}I_2\rVert_F ,
+$$
+
+the last inequality the failure of the $\mathrm{C}^{*}$-condition at $n=2$.
 
 ### The Group Algebra
 

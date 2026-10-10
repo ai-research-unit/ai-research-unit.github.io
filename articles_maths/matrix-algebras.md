@@ -21,7 +21,21 @@ $$
 E_{ij}E_{kl} = \delta_{jk}E_{il},
 $$
 
-where $\delta_{jk}$ is $1$ if $j = k$ and $0$ otherwise.
+where $\delta_{jk}$ is $1$ if $j = k$ and $0$ otherwise. For $n = 2$ the four units are the matrices
+
+$$
+E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad
+E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad
+E_{21}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\quad
+E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix},
+$$
+
+and the rule reads concretely
+
+$$
+E_{12}E_{21}=\begin{pmatrix}0&1\\0&0\end{pmatrix}\begin{pmatrix}0&0\\1&0\end{pmatrix}=\begin{pmatrix}1&0\\0&0\end{pmatrix}=E_{11},\qquad
+E_{12}E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix}\begin{pmatrix}0&1\\0&0\end{pmatrix}=\begin{pmatrix}0&0\\0&0\end{pmatrix}=0 .
+$$
 
 *Proof.* The matrix $E_{ij}E_{kl}$ has entry in position $(p,q)$ equal to $\sum_r (E_{ij})_{pr}(E_{kl})_{rq} = \sum_r \delta_{ip}\delta_{jr}\delta_{kr}\delta_{lq} = \delta_{jr}\delta_{kr}\delta_{ip}\delta_{lq}$. The sum over $r$ collapses to $\delta_{jk}$, so the entry is $\delta_{jk}\delta_{ip}\delta_{lq}$, which is the $(p,q)$-entry of $\delta_{jk}E_{il}$.
 
@@ -51,7 +65,18 @@ $$
 \det A = \sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_{i=1}^n A_{i,\sigma(i)} \in R .
 $$
 
-Both are polynomial functions of the entries, so they are defined over any commutative ring.
+Both are polynomial functions of the entries, so they are defined over any commutative ring. For $n = 2$, with $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ and $B = \begin{pmatrix} a' & b' \\ c' & d' \end{pmatrix}$, they read
+
+$$
+\operatorname{Tr} A = a + d, \qquad \det A = ad - bc,
+$$
+
+$$
+AB=\begin{pmatrix} a & b \\ c & d \end{pmatrix}\begin{pmatrix} a' & b' \\ c' & d' \end{pmatrix}=\begin{pmatrix} aa'+bc' & ab'+bd' \\ ca'+dc' & cb'+dd' \end{pmatrix},\qquad
+\operatorname{Tr}(AB)=\operatorname{Tr}(BA)=aa'+bc'+cb'+dd',
+$$
+
+the last identity exhibiting the cyclic invariance on the entries.
 
 **Proposition (properties).** For $A, B \in M_n(R)$:
 
@@ -118,7 +143,16 @@ $$
 = \delta_{ji'}\delta_{lk'}\, E_{(i,k),(j',l')},
 $$
 
-which is exactly the product $E_{(i,k),(j,l)}E_{(i',k'),(j',l')}$; and it sends $I_m\otimes I_n$ to $I_{mn}$.
+which is exactly the product $E_{(i,k),(j,l)}E_{(i',k'),(j',l')}$; and it sends $I_m\otimes I_n$ to $I_{mn}$. For $m = n = 2$ the formula reads on the units
+
+$$
+E_{12}\otimes E_{21}
+=\begin{pmatrix}0&1\\0&0\end{pmatrix}\otimes\begin{pmatrix}0&0\\1&0\end{pmatrix}
+=\begin{pmatrix}0&0&0&0\\0&0&1&0\\0&0&0&0\\0&0&0&0\end{pmatrix}
+=E_{(1,2),(2,1)}=E_{2,3},
+$$
+
+the index $(1,2)$ being the integer $(1-1)\cdot 2 + 2 = 2$ and $(2,1)$ the integer $3$.
 
 The formula is the algebraic statement that the tensor product of two matrix algebras is again a matrix algebra, of size the product of the sizes; the two factors embed as the subalgebras of matrices acting on the two tensor legs, and the two images commute. Iterating, $M_{n_1}(k)\otimes\dots\otimes M_{n_r}(k) \cong M_{n_1\cdots n_r}(k)$. The construction is the matrix case of the tensor product of algebras in *Tensor Products of Algebras*.
 
@@ -168,7 +202,16 @@ $$
 \langle A, B\rangle = \operatorname{Tr}(AB)
 $$
 
-is symmetric, associative in the sense that $\langle AB, C\rangle = \langle A, BC\rangle$, and non-degenerate.
+is symmetric, associative in the sense that $\langle AB, C\rangle = \langle A, BC\rangle$, and non-degenerate. In the basis $(E_{11},E_{12},E_{21},E_{22})$ of $M_2(k)$ its Gram matrix is
+
+$$
+\bigl(\langle E_{ij},E_{kl}\rangle\bigr)
+=\bigl(\operatorname{Tr}(E_{ij}E_{kl})\bigr)
+=\bigl(\delta_{jk}\delta_{il}\bigr)
+=\begin{pmatrix} 1&0&0&0\\ 0&0&1&0\\ 0&1&0&0\\ 0&0&0&1 \end{pmatrix},
+$$
+
+of rank $4$ and signature $(3,1)$, the general count for $M_n$ being $\bigl(\tfrac{n^2+n}{2},\tfrac{n^2-n}{2}\bigr)$.
 
 *Proof.* Symmetry is $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$. Associativity is $\operatorname{Tr}((AB)C) = \operatorname{Tr}(A(BC))$. For non-degeneracy, suppose $\langle A, B\rangle = 0$ for all $B$; taking $B = E_{ji}$ gives $\operatorname{Tr}(AE_{ji}) = A_{ij} = 0$ for all $i,j$, hence $A = 0$.
 

@@ -7,7 +7,7 @@ The split-complex algebra $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$ is the two-dimens
 
 The article owns the automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{D})$, the derivation space $\operatorname{Der}_{\mathbb{R}}(\mathbb{D})$, the reason the derivation space vanishes, the two-dimensional space of **twisted** (conjugation-)derivations that replaces it, and the comparison with $\mathbb{C}$ and with $\mathbb{B}$. It assumes the algebra, the idempotents and the norm of *Split-Complex Algebra*, *Split-Complex Idempotents and Projections* and *Split-Complex Norm and Invertibility*, and it cites the general theory of automorphisms and derivations of an algebra as the companion article *Automorphisms and Derivations of Algebras*. No physics is invoked and no new results are claimed beyond the explicit computations for $\mathbb{D}$.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, commutative, of real dimension $2$; basis $1$, $j$, $j^2 = +1$; general element $A = a+j a'$; conjugate $\bar A = a-j a'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $N(A) = a^2-a'^2$. The **centre** is written $Z(\mathbb{D})$.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, commutative, of real dimension $2$; basis $1$, $j$, $j^2 = +1$; general element $A = a+j a'$; conjugate $\bar A = a-j a'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $N(A) = a^2-a'^2$. The **centre** is written $Z(\mathbb{D})$.
 
 ## Standing Facts: Commutativity, the Centre and Separability
 
@@ -159,7 +159,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$
 |---|---|---|
 | dimension, commutativity | $4$ over $\mathbb{C}$, noncommutative | $2$ over $\mathbb{R}$, commutative |
 | centre | $\mathbb{C}_{\mathbb{B}}\cong\mathbb{C}$, $1$-dimensional | $\mathbb{D}$ itself, $2$-dimensional |
-| simple? | yes (simple; central over $\mathbb{C}$) | no ($\mathbb{R}\Pi_\pm$ are ideals) |
+| simple? | yes (simple; central over $\mathbb{C}$) | no ($\mathbb{R}\Pi_{1,2}$ are ideals) |
 | $\operatorname{Aut}$ over $\mathbb{R}$ | $\mathrm{PGL}(2,\mathbb{C})\rtimes\mathbb{Z}/2$, real dim $6$, two components | $\mathbb{Z}/2$, dim $0$, discrete |
 | generators of $\operatorname{Aut}$ | inner automorphisms, plus the conjugate-linear coset | the identity and the swap of $\Pi_1,\Pi_2$ |
 | $\operatorname{Der}$ over $\mathbb{R}$ | $\mathrm{SO}(1,3)$, real dim $6$, all inner | $0$ |
@@ -191,7 +191,7 @@ The two-dimensional space attached to the derivation picture is therefore not th
 | $\mathbb{D}$ | Split complex algebra, $\mathbb{R}[x]/(x^2-1)$ |
 | $A = a + j a'$ | General split complex number |
 | $\bar{\cdot} = \sigma$ | Conjugation, $a+j a' \mapsto a-j a'$; the nontrivial automorphism |
-| $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents, swapped by $\bar{\cdot}$ |
+| $\Pi_{1,2} = \tfrac12(1\pm j)$ | Idempotents, swapped by $\bar{\cdot}$ |
 | $Z(\mathbb{D}) = \mathbb{D}$ | Centre; the whole algebra, dimension $2$ |
 | $\operatorname{Aut}_{\mathbb{R}}(\mathbb{D})$ | Automorphism group $\{\mathrm{id}, \bar{\cdot}\}\cong\mathbb{Z}/2$ |
 | $\operatorname{Der}_{\mathbb{R}}(\mathbb{D})$ | Derivation space; $= 0$ |

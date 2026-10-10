@@ -12,7 +12,7 @@ A **domain** is a commutative ring with $1 \neq 0$ and no zero divisors; the obj
 
 | Object | The property above it, and the failure | Introduced in |
 |---|---|---|
-| Split-complex numbers $\mathbb{D}$ | not a domain: $\pi_+ \pi_- = 0$ for $\pi_\pm = \tfrac12(1\pm t)$, both nonzero | *Split-Complex Algebra* |
+| Split-complex numbers $\mathbb{D}$ | not a domain: $\pi_1 \pi_2 = 0$ for $\pi_{1,2} = \tfrac12(1\pm t)$, both nonzero | *Split-Complex Algebra* |
 | Dual numbers $\mathbb{D}'$ | not a domain: $\varepsilon^2 = 0$ with $\varepsilon \neq 0$ | *Dual Numbers Algebra* |
 | $\mathbb{Z}/n\mathbb{Z}$ for composite $n$ | not a domain: the residue classes of the proper factors of $n$ multiply to $0$ | *Examples of Rings and Fields* |
 | $\mathbb{Z}/4\mathbb{Z}$ | not reduced: the class of $2$ is a nonzero nilpotent | *Reduced Rings and the Nilradical* |

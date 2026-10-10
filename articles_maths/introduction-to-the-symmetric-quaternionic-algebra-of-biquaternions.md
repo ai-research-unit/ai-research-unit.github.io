@@ -33,7 +33,7 @@ verb *collapse* are the two threads: the operation collapses the whole algebra o
 
 **Boundaries.** The product $\tilde P^{\natural}\tilde Q$ and the four general products are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, their comparison is *Comparison Between the Four General Products*, their relations are
 *Relations Between the Four General Products*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*;
-the norm and the isotropy are *Biquaternion Norm and Invertibility* and *Biquaternion Zero Divisors*; the Jordan
+the norm and the isotropy are *Biquaternion Norm and Invertibility* and *Zero Divisors of the General Plain Algebra*; the Jordan
 theory is *Jordan Algebras*; the general splitting is the two parts articles. Nothing of the enriched layer of Part II is used here.
 
 ## The Operation
@@ -319,5 +319,5 @@ same operation through its form, its subspaces, its operators and its matrix mod
 - *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the row of $\mathrm{SQA}$ in the catalogue of the twelve
 - *The Symmetric and Antisymmetric Parts of an Algebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the splitting that produces the operation
 - *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the parent product
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`) and *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the norm form and its isotropic cone
+- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`) and *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the norm form and its isotropic cone
 - *Jordan Algebras* (`articles_maths/jordan-algebras.md`), for the symmetrisation of an associative product and the identity it inherits

@@ -397,13 +397,13 @@ The integration on the submodules is therefore the following pair: the ordinary 
 
 ## Comparison with the Split Complex Case
 
-The split complex algebra $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, has the two idempotents $\pi_\pm = \tfrac{1}{2}(1 \pm j)$ and the decomposition $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. Its analysis correspondingly splits into a pair of independent real analyses: the Wirtinger-type operators $\partial_{\pi_+}$ and $\partial_{\pi_-}$ act on the two components separately and the Cauchy–Riemann equation is equivalent to a pair of ordinary differential equations on two independent lines.
+The split complex algebra $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, has the two idempotents $\pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ and the decomposition $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. Its analysis correspondingly splits into a pair of independent real analyses: the Wirtinger-type operators $\partial_{\pi_1}$ and $\partial_{\pi_2}$ act on the two components separately and the Cauchy–Riemann equation is equivalent to a pair of ordinary differential equations on two independent lines.
 
 The dual algebra has only the idempotent $1$, so the two-component splitting is unavailable. What replaces the second component is the *first-order neighbourhood* of the first: the real submodule $R_{\mathbb{D}'}$ is the retract on which the augmentation is a ring homomorphism, and $\varepsilon R_{\mathbb{D}'}$ is the square-zero direction over it. The analysis reduces to the real line and one nilpotent direction rather than to two lines, and the Cauchy–Riemann operator couples the direction to the line through its nilpotent component instead of separating the two. The two degeneracies that follow are the ones established above: no factorisation of the Laplacian, and no ellipticity.
 
 | | Split complex $\mathbb{D}$ | Dual $\mathbb{D}'$ |
 |---|---|---|
-| Idempotents | two, $\pi_\pm$ | one, $1$ |
+| Idempotents | two, $\pi_{1,2}$ | one, $1$ |
 | Decomposition | $\mathbb{R} \oplus \mathbb{R}$, two lines | $\mathbb{R} \oplus \varepsilon\mathbb{R}$, line plus first-order neighbourhood |
 | First-order operators | two, one per component | $\partial_a$, $\partial_{a'}$, coupled by $\varepsilon\partial_a$ |
 | Cauchy–Riemann system | two independent real equations | $u_{a'} = 0$, $v_{a'} = u_a$ |

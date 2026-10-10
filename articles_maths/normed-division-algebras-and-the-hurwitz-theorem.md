@@ -43,7 +43,7 @@ Throughout, $k$ is a field of characteristic $\neq2$; $A$ is a finite-dimensiona
 
 *Proof.* Statement 1: $N(1) = 1$ gives $1\in A_1$, closure under multiplication is multiplicativity, and $u^{-1} = u^{\natural}$ satisfies $u u^{\natural} = 1$ and lies in $A_1$ because $N(u^{\natural}) = N(u) = 1$. Statement 2 is the standard theorem that the norm-one set of a normed algebra with an anisotropic multiplicative norm and an involution is a Moufang loop when the algebra is alternative; statement 3 is immediate from the definitions. The identification of $A_1$ with the unit sphere, and the Lie-theoretic and differential structure on it, requires the distance and is treated in this part and in Part III.
 
-**Example (the four real cases).** For $A = \mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ with the standard conjugation and $N(\tilde Q) = \tilde Q\tilde{Q}^{\natural}$ read as a multiplicative map, $A_1$ is the two-element group, the group of complex numbers of modulus one, and the group of quaternions of norm one. For the octonions $A_1$ is the Moufang loop of norm-one octonions, which is not a group. For the split systems $\mathbb{D}$ and $\mathbb{H}_{\mathbb{D}}$ the standard involution still satisfies $x x^{\natural} = N(x)1$, but the norm is isotropic: for $\mathbb{D}$ one has $\pi_+\pi_- = 0$ for the idempotents $\pi_\pm = \tfrac12(1\pm j)$, so $N(\pi_+) = N(\pi_-) = 0$ and the algebra is not anisotropic; for $\mathbb{H}_{\mathbb{D}}$ the same failure occurs along the idempotent decomposition. The split systems are therefore normed but not normed division algebras, and *Dual Numbers Algebra* andrecord the corresponding degenerations.
+**Example (the four real cases).** For $A = \mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ with the standard conjugation and $N(\tilde Q) = \tilde Q\tilde{Q}^{\natural}$ read as a multiplicative map, $A_1$ is the two-element group, the group of complex numbers of modulus one, and the group of quaternions of norm one. For the octonions $A_1$ is the Moufang loop of norm-one octonions, which is not a group. For the split systems $\mathbb{D}$ and $\mathbb{H}_{\mathbb{D}}$ the standard involution still satisfies $x x^{\natural} = N(x)1$, but the norm is isotropic: for $\mathbb{D}$ one has $\pi_1\pi_2 = 0$ for the idempotents $\pi_{1,2} = \tfrac12(1\pm j)$, so $N(\pi_1) = N(\pi_2) = 0$ and the algebra is not anisotropic; for $\mathbb{H}_{\mathbb{D}}$ the same failure occurs along the idempotent decomposition. The split systems are therefore normed but not normed division algebras, and *Dual Numbers Algebra* andrecord the corresponding degenerations.
 
 ## The Cayley–Dickson Doubling
 
@@ -198,7 +198,7 @@ with the multiplicativity of the norm holding through the octonions and failing 
 | $\mathbb{R},\mathbb{C},\mathbb{H},\mathbb{O},\mathbb{S}$ | reals, complexes, quaternions, octonions, sedenions |
 | $\mathbb{D}$, $\mathbb{H}_{\mathbb{D}}$ | split complex numbers, split biquaternions (isotropic norm) |
 | $[x,y,z] = (xy)z - x(yz)$ | associator |
-| $\pi_\pm = \tfrac12(1\pm j)$ | idempotents of $\mathbb{D}$, with $\pi_+\pi_- = 0$ |
+| $\pi_{1,2} = \tfrac12(1\pm j)$ | idempotents of $\mathbb{D}$, with $\pi_1\pi_2 = 0$ |
 | $e_0 = 1$, $e_1,\dots,e_7$ | bases of $\mathbb{H}$ and $\mathbb{O}$, $e_k^2 = -e_0$ |
 | $\sum_i a_i^2$ | the norm in coordinates; sums-of-squares identities |
 

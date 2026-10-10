@@ -166,7 +166,18 @@ $$
 
 **Corollary.** In matrix terms the decomposition is the splitting of $\iota(\mathbb{H})$ into its scalar part and its traceless part, and after complexification the algebra splits as $M_2(\mathbb{C}) = \mathbb{C}I\oplus\mathrm{SL}_2(\mathbb{C})$; the scalar subspace is the one-dimensional centre and the vector subspace the three-dimensional traceless summand.
 
-*Proof.* The splitting $M = \tfrac12(\operatorname{tr}M)I + (M-\tfrac12(\operatorname{tr}M)I)$ separates the scalar and traceless parts, and the image of a quaternion under $\iota$ has trace twice its scalar coordinate.
+*Proof.* The splitting $M = \tfrac12(\operatorname{tr}M)I + (M-\tfrac12(\operatorname{tr}M)I)$ separates the scalar and traceless parts, and the image of a quaternion under $\iota$ has trace twice its scalar coordinate. For the quaternion $2+3\mathbf{i}+4\mathbf{j}+5\mathbf{k}$ the two pieces are
+
+$$
+\iota(2+3\mathbf{i}+4\mathbf{j}+5\mathbf{k})=\begin{pmatrix}2-5i&-4-3i\\4-3i&2+5i\end{pmatrix},\qquad \operatorname{tr}=4 ,
+$$
+
+$$
+\mathbb{R}I\text{-part}=2I=\begin{pmatrix}2&0\\0&2\end{pmatrix},\qquad
+\text{traceless part}=\begin{pmatrix}-5i&-4-3i\\4-3i&5i\end{pmatrix},
+$$
+
+the second of trace $0$, the two adding to the image.
 
 ## A Worked Image
 
@@ -214,7 +225,7 @@ and it therefore has a $2\times2$ matrix representation over a commutative ring 
 
 **Theorem.** The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ is not isomorphic to a full $2\times2$ matrix algebra over any commutative ring.
 
-*Proof.* The split-complex numbers decompose as $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ through the idempotents $\Pi_\pm = \tfrac12(1\pm j)$, so $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$. A ring of the form $M_2(k)$ with $k$ commutative has no non-trivial central idempotent, since its centre is the scalar matrices; the product $\mathbb{H}\oplus\mathbb{H}$ has the two central idempotents $(1,0)$ and $(0,1)$. Hence $\mathbb{H}_{\mathbb{D}}$ is not isomorphic to any $M_2(k)$.
+*Proof.* The split-complex numbers decompose as $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ through the idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$, so $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$. A ring of the form $M_2(k)$ with $k$ commutative has no non-trivial central idempotent, since its centre is the scalar matrices; the product $\mathbb{H}\oplus\mathbb{H}$ has the two central idempotents $(1,0)$ and $(0,1)$. Hence $\mathbb{H}_{\mathbb{D}}$ is not isomorphic to any $M_2(k)$.
 
 | Feature | $\mathbb{H}$ | $\mathbb{B}$ | $\mathbb{H}_{\mathbb{D}}$ |
 |---|---|---|---|

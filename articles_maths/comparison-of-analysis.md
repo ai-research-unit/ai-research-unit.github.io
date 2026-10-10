@@ -64,7 +64,7 @@ The first-order operator is the ordinary derivative in $\mathbb{R}$, the Cauchyâ
 | $\mathrm{M}=\varepsilon\mathbb{R}$ | the maximal ideal of $\mathbb{D}'$ |
 | $\mathbb{H}_{\mathbb{B}}$ | the real quaternion subspace of $\mathbb{B}$ |
 | $\mathbb{M}_\pm$ | the Hermitian and anti-Hermitian subspaces of $\mathbb{B}$ |
-| $\Pi_\pm,e_\pm$ | the idempotents of $\mathbb{D}$ |
+| $\Pi_{1,2},e_\pm$ | the idempotents of $\mathbb{D}$ |
 | `â€”` | an empty cell, stated and never filled |
 
 ## Further Reading

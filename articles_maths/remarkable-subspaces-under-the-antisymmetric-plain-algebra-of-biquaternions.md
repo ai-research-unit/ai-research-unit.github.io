@@ -146,7 +146,7 @@ The invariant form of the block is computed in *The Killing Form of the Antisymm
 
 *Proof.* The form is $-2\,\mathbf{Q}\cdot\mathbf{Q}$ on the vector part and zero on the scalar part, by *The Killing Form of the Antisymmetric Plain Algebra*; the four real subspaces have real or purely imaginary vector parts, and the two complex subspaces, the centre and the vector subspace, have the components as displayed. The vanishing of the bracket on the central directions is the previous sections. Verified on the basis and on general elements. $\square$
 
-**Remark.** **The isotropic elements of the block are not its zero divisors, and on the four real subspaces they are only the null directions of the bracket.** The comparison with the zero-divisor cone and with the null cones of the four pairings is *Remarkable Subspaces and the Four General Products* and *Biquaternion Zero Divisors*; the two cones agree on the vector subspace at the complex null cone of the scalar product and differ on the real subspaces, where the Killing isotropy is a line and the zero-divisor condition is a genuine cone.
+**Remark.** **The isotropic elements of the block are not its zero divisors, and on the four real subspaces they are only the null directions of the bracket.** The comparison with the zero-divisor cone and with the null cones of the four pairings is *Remarkable Subspaces and the Four General Products* and *Zero Divisors of the General Plain Algebra*; the two cones agree on the vector subspace at the complex null cone of the scalar product and differ on the real subspaces, where the Killing isotropy is a line and the zero-divisor condition is a genuine cone.
 
 ## The Table of the Remarkable Subspaces
 

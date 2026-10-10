@@ -33,7 +33,7 @@ with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar 
 $$
 N(\tilde{H})=\bigl(h_0^2-|\mathbf{h}|^2\bigr)e_0 .
 $$
-A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; a pure state is the idempotent $\tilde\Pi_{1,2}(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$, with matrix units $x=\tfrac12(ie_1-e_2)$, $y=\tfrac12(ie_1+e_2)$ and basis $\{p,y\}$. The unit quaternions act on the Bloch sphere by rotations.
+A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; a pure state is the idempotent $\tilde\Pi_{1,2}(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}\tilde\Pi_1$ with $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, with matrix units $x=\tfrac12(ie_1-e_2)$, $y=\tfrac12(ie_1+e_2)$ and basis $\{\tilde\Pi_1,y\}$. The unit quaternions act on the Bloch sphere by rotations.
 
 ## The State Space and Its Two Forms
 
@@ -78,9 +78,9 @@ the map $\hat{\mu}\mapsto\tilde\Pi(\hat{\mu})$ is a bijection from the unit sphe
 
 The pure states have a second, independent parametrization, and the agreement of the two is what makes the projective geometry available. The **state module** is the minimal left ideal
 $$
-\mathbb{B}p=\{\psi_1\,p+\psi_2\,y:\ \psi_1,\psi_2\in\mathbb{C}\}\cong\mathbb{C}^2,
+\mathbb{B}\tilde\Pi_1=\{\psi_1\,\tilde\Pi_1+\psi_2\,y:\ \psi_1,\psi_2\in\mathbb{C}\}\cong\mathbb{C}^2,
 \qquad
-p=\tfrac12(e_0+ie_3),
+\tilde\Pi_1=\tfrac12(e_0+ie_3),
 $$
 and its rays $[\psi]=\mathbb{C}\psi$ constitute the projective line $\mathbb{P}^1(\mathbb{C})$. To a nonzero spinor $\psi$ attach the rank-one element
 $$
@@ -96,7 +96,7 @@ $$
 $$
 and the physical equivalence of $\psi$ and $e^{i\alpha}\psi$ is the statement that the phase direction is the fiber of the Hopf map $S^3\to S^2$. The **central scalar imaginary** $i$ supplies that phase: it is central, so left multiplication by $i$ commutes with the left action of $\mathbb{B}$ on the module and gives the module its complex structure. The phase $U(1)$ is a central subgroup, and the quotient by it is the passage from spinors to rays.
 
-Two remarks fix the roles. First, the complex structure used here lives on the **state module** $\mathbb{B}p$, not on $\mathbb{M}_+$: multiplication by $i$ exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so it is not an operator on the state space. The projective structure is that of the module, and it descends to the boundary of the ball. Second, the pure states are the extreme points of the ball, so the boundary is not merely a convenient subset: it is the set on which the geometry is specified by the algebra's *quadratic* form rather than by the trace.
+Two remarks fix the roles. First, the complex structure used here lives on the **state module** $\mathbb{B}\tilde\Pi_1$, not on $\mathbb{M}_+$: multiplication by $i$ exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so it is not an operator on the state space. The projective structure is that of the module, and it descends to the boundary of the ball. Second, the pure states are the extreme points of the ball, so the boundary is not merely a convenient subset: it is the set on which the geometry is specified by the algebra's *quadratic* form rather than by the trace.
 
 ## The Transition Probability from the Trace Pairing
 
@@ -166,7 +166,7 @@ The sign convention in $-N$ deserves a word, because the biquaternion norm itsel
 
 The second derivation uses the spinor directly and confirms the first. Let
 $$
-\psi(\theta,\varphi)=\cos\tfrac{\theta}{2}\,p+\sin\tfrac{\theta}{2}\,e^{i\varphi}\,y
+\psi(\theta,\varphi)=\cos\tfrac{\theta}{2}\,\tilde\Pi_1+\sin\tfrac{\theta}{2}\,e^{i\varphi}\,y
 $$
 be a normalized spinor, $\mathrm{Tr}(\psi^\dagger\psi)=1$, with $\tilde\Pi_\psi=\psi\psi^\dagger$. The Fubini–Study line element of the ray space is
 $$
@@ -174,9 +174,9 @@ ds^2_{\mathrm{FS}}=\mathrm{Tr}\!\left(d\psi^\dagger\,d\psi\right)-\Bigl|\mathrm{
 $$
 the second term removing the phase direction. With
 $$
-d\psi=\Bigl(-\tfrac12\sin\tfrac{\theta}{2}\,d\theta\Bigr)p+e^{i\varphi}\Bigl(\tfrac12\cos\tfrac{\theta}{2}\,d\theta+i\sin\tfrac{\theta}{2}\,d\varphi\Bigr)y ,
+d\psi=\Bigl(-\tfrac12\sin\tfrac{\theta}{2}\,d\theta\Bigr)\tilde\Pi_1+e^{i\varphi}\Bigl(\tfrac12\cos\tfrac{\theta}{2}\,d\theta+i\sin\tfrac{\theta}{2}\,d\varphi\Bigr)y ,
 $$
-from which $\partial_\varphi\psi=i\,e^{i\varphi}\sin\tfrac{\theta}{2}\,y$. Using the trace formula $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, the normalization $\mathrm{Tr}(\psi^\dagger\psi)=1$, and the matrix-unit relations $p^2=p$, $y^2=x^2=0$, $xy=p$, $yx=e_0-p$ with $y^{*}=x$, the four first derivatives are
+from which $\partial_\varphi\psi=i\,e^{i\varphi}\sin\tfrac{\theta}{2}\,y$. Using the trace formula $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, the normalization $\mathrm{Tr}(\psi^\dagger\psi)=1$, and the matrix-unit relations $\tilde\Pi_1^2=\tilde\Pi_1$, $y^2=x^2=0$, $xy=\tilde\Pi_1$, $yx=e_0-\tilde\Pi_1$ with $y^{*}=x$, the four first derivatives are
 $$
 \mathrm{Tr}\!\left(\psi^\dagger\partial_\theta\psi\right)=0,
 \qquad
@@ -320,7 +320,7 @@ Five statements summarize the result, and two of them are limitations that a rea
 
 2. **The trace pairing supplies the probability, not the distance.** The transition probability $\mathrm{Tr}(\tilde{P}\tilde{Q})$ is the trace pairing's two-point function, and the Fubini–Study distance is its arccosine-square-root. The two forms divide the geometry between them: the trace pairing gives the overlap, the biquaternion norm gives the length, and the Kähler structure relates them.
 
-3. **The geometry is that of the state *module*, descended to the state space.** The complex structure, the Hopf fibration and the projective line belong to the module $\mathbb{B}p\cong\mathbb{C}^2$; the metric descends to the boundary of $\mathbb{M}_+$ through the bilinear map $\psi\mapsto\psi\psi^\dagger$. The complex structure does **not** live on $\mathbb{M}_+$, where multiplication by $i$ exchanges the two sectors; treating $\mathbb{M}_+$ itself as a complex vector space is the characteristic error that this separation avoids.
+3. **The geometry is that of the state *module*, descended to the state space.** The complex structure, the Hopf fibration and the projective line belong to the module $\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$; the metric descends to the boundary of $\mathbb{M}_+$ through the bilinear map $\psi\mapsto\psi\psi^\dagger$. The complex structure does **not** live on $\mathbb{M}_+$, where multiplication by $i$ exchanges the two sectors; treating $\mathbb{M}_+$ itself as a complex vector space is the characteristic error that this separation avoids.
 
 4. **The interior metric is imported.** The Bures metric of the mixed states is the standard monotone metric of quantum information theory. The algebra determines its boundary value and its value at the centre, and it determines the flat alternative that it is not; it does not determine the interpolation. This is a limit on the algebra's reach, not a defect of the derivation, and it is stated to prevent an overclaim.
 
@@ -352,7 +352,7 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 | $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ | State, $|\mathbf{r}|\leq1$ |
 | $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$ | Pure state (idempotent), $|\hat{\mu}|=1$ |
-| $\mathbb{B}p$, $p=\tfrac12(e_0+ie_3)$ | State module, $\cong\mathbb{C}^2$ |
+| $\mathbb{B}\tilde\Pi_1$, $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ | State module, $\cong\mathbb{C}^2$ |
 | $\psi$, $\lvert\psi\rangle$ | Spinor in the state module |
 | $\mathrm{Tr}(\tilde{P}\tilde{Q})$ | Transition probability of two pure states |
 | $\theta$ | Angle between $\hat{\mu}$ and $\hat{\nu}$ |

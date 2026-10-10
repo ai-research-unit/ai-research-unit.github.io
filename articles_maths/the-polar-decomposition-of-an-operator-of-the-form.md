@@ -104,7 +104,11 @@ For an operator whose product $T^{\dagger}T$ is **definitizable** — some nonze
 
 ### The Matrices
 
-**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$ and let $m_{Z}$ be the left multiplication by $Z$. Since $Z \mapsto m_{Z}$ is an algebra homomorphism and the functional calculus is multiplicative under a homomorphism, $\lvert m_{Z}\rvert = m_{\lvert Z\rvert}$ with $\lvert Z\rvert = (Z^{*}Z)^{1/2}$ the matrix modulus, and the phase is $m_{Z}\lvert m_{Z}\rvert^{-1} = m_{Z\lvert Z\rvert^{-1}}$ when $Z$ is invertible. The unitary polar factor $Z\lvert Z\rvert^{-1}$ is the unitary of the classical polar decomposition of the matrix $Z$, and the example is the model in which the operator polar decomposition is read on the algebra as the matrix one. The Cauchy–Schwarz identity $\operatorname{tr}(\lvert Z\rvert^{2}) = \operatorname{tr}(Z^{*}Z)$ is the norm identity of the modulus, and it is the Frobenius norm of *The Norm Defined by a Form*, §*The Matrix Algebra*.
+**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$ and let $m_{Z}$ be the left multiplication by $Z$. Since $Z \mapsto m_{Z}$ is an algebra homomorphism and the functional calculus is multiplicative under a homomorphism, $\lvert m_{Z}\rvert = m_{\lvert Z\rvert}$ with $\lvert Z\rvert = (Z^{*}Z)^{1/2}$ the matrix modulus, and the phase is $m_{Z}\lvert m_{Z}\rvert^{-1} = m_{Z\lvert Z\rvert^{-1}}$ when $Z$ is invertible. The unitary polar factor $Z\lvert Z\rvert^{-1}$ is the unitary of the classical polar decomposition of the matrix $Z$, and the example is the model in which the operator polar decomposition is read on the algebra as the matrix one. The Cauchy–Schwarz identity $\operatorname{tr}(\lvert Z\rvert^{2}) = \operatorname{tr}(Z^{*}Z)$ is the norm identity of the modulus, and it is the Frobenius norm of *The Norm Defined by a Form*, §*The Matrix Algebra*. At $n=2$ the modulus and the phase are
+
+$$
+Z=\begin{pmatrix}0&2\\-2&0\end{pmatrix},\qquad Z^{*}Z=\begin{pmatrix}4&0\\0&4\end{pmatrix},\qquad \lvert Z\rvert=2I_2,\qquad Z\lvert Z\rvert^{-1}=\begin{pmatrix}0&1\\-1&0\end{pmatrix}\in U(2),\qquad \operatorname{tr}(\lvert Z\rvert^{2})=8 .
+$$
 
 ## Summary
 

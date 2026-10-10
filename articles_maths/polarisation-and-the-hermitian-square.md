@@ -90,7 +90,13 @@ The quadratic datum is therefore strictly finer than the bilinear one when $2$ i
 
 ### The Matrices
 
-On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the diagonal is $q(X) = \tau(XX^{*}) = \sum_{ij}|X_{ij}|^{2}$, the square of the Frobenius norm, and the polarisation recovers $\tau(XY^{*} + YX^{*}) = 2\operatorname{Re}\tau(XY^{*})$. The form is Hermitian, its trace form is the real symmetric form of the real and imaginary parts of the trace pairing, and its skew part is the alternating form $\mathrm{i}\operatorname{Im}\tau(XY^{*})$.
+On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the diagonal is $q(X) = \tau(XX^{*}) = \sum_{ij}|X_{ij}|^{2}$, the square of the Frobenius norm, and the polarisation recovers $\tau(XY^{*} + YX^{*}) = 2\operatorname{Re}\tau(XY^{*})$. The form is Hermitian, its trace form is the real symmetric form of the real and imaginary parts of the trace pairing, and its skew part is the alternating form $\mathrm{i}\operatorname{Im}\tau(XY^{*})$. The smallest instance shows the square and its trace at once:
+
+$$
+X=\begin{pmatrix}1&i\\0&2\end{pmatrix},\qquad XX^{*}=\begin{pmatrix}2&2i\\-2i&4\end{pmatrix},\qquad q(X)=\tau(XX^{*})=6=\lvert1\rvert^{2}+\lvert i\rvert^{2}+\lvert0\rvert^{2}+\lvert2\rvert^{2},
+$$
+
+the matrix $XX^{*}$ Hermitian positive semi-definite, as a Hermitian square must be.
 
 ### The Real and the Complex Reading
 

@@ -50,7 +50,7 @@ The path integral exists for all eight algebras and is built from Riemann sums w
 | $\tilde G=\tilde{Q}^{\natural}/\lVert\tilde Q\rVert_E^4$ | the fundamental solution of the biquaternion gradient |
 | $E_D$ | the fundamental solution of the split-quaternion vector operator |
 | $\mathrm{M}=\varepsilon\mathbb{R}$ | the maximal ideal of $\mathbb{D}'$ |
-| $\Pi_\pm,e_\pm$ | the idempotents of $\mathbb{D}$ |
+| $\Pi_{1,2},e_\pm$ | the idempotents of $\mathbb{D}$ |
 | $V$ | the four-dimensional subspace of $\mathbb{H}_{\mathbb{D}}$ carrying the integral |
 | `—` | an empty cell, stated and never filled |
 

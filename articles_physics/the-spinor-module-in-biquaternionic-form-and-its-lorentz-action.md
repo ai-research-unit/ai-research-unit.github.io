@@ -97,56 +97,56 @@ The action is $\mathbb{C}$-linear in $\psi$ and compatible with the algebra prod
 The module $S$ can be exhibited **inside** the algebra, which is often the most convenient realization. Let
 
 $$
-p = \frac{e_0 + i e_3}{2}, \qquad q = \frac{e_0 - i e_3}{2}.
+\tilde\Pi_1 = \frac{e_0 + i e_3}{2}, \qquad \tilde\Pi_2 = \frac{e_0 - i e_3}{2}.
 $$
 
 Since $(ie_3)^2 = 1$, these satisfy
 
 $$
-p^2 = p, \qquad q^2 = q, \qquad pq = qp = 0, \qquad p + q = e_0,
+\tilde\Pi_1^2 = \tilde\Pi_1, \qquad \tilde\Pi_2^2 = \tilde\Pi_2, \qquad \tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = e_0,
 $$
 
-so $p$ and $q$ are orthogonal idempotents summing to the unit. They are primitive, and they give the Peirce decomposition
+so $\tilde\Pi_1$ and $\tilde\Pi_2$ are orthogonal idempotents summing to the unit. They are primitive, and they give the Peirce decomposition
 
 $$
-\mathbb{B} = \mathbb{B}p \oplus \mathbb{B}q, \qquad \mathbb{B}p \cong \mathbb{B}q \cong S \quad (\text{as left } \mathbb{B}\text{-modules}).
+\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2, \qquad \mathbb{B}\tilde\Pi_1 \cong \mathbb{B}\tilde\Pi_2 \cong S \quad (\text{as left } \mathbb{B}\text{-modules}).
 $$
 
 The off-diagonal matrix units are recovered in biquaternion coordinates: with
 
 $$
-x = \frac{i e_1 - e_2}{2}, \qquad y = \frac{i e_1 + e_2}{2},
+\tilde\Upsilon_1 = \frac{i e_1 - e_2}{2}, \qquad \tilde\Upsilon_2 = \frac{i e_1 + e_2}{2},
 $$
 
-the set $\{p,x,y,q\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$ with the matrix-unit relations
+the set $\{\tilde\Pi_1,\tilde\Upsilon_1,\tilde\Upsilon_2,\tilde\Pi_2\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$ with the matrix-unit relations
 
 $$
-E_{11} = p,\quad E_{12} = x,\quad E_{21} = y,\quad E_{22} = q,
+E_{11} = \tilde\Pi_1,\quad E_{12} = x,\quad E_{21} = y,\quad E_{22} = \tilde\Pi_2,
 \qquad
-px = x = xq,\quad qy = y = yp,\quad xy = p,\quad yx = q.
+\tilde\Pi_1\tilde\Upsilon_1 = \tilde\Upsilon_1 = \tilde\Upsilon_1 \tilde\Pi_2,\quad \tilde\Pi_2\tilde\Upsilon_2 = \tilde\Upsilon_2 = \tilde\Upsilon_2 \tilde\Pi_1,\quad \tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1,\quad \tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2.
 $$
 
-Under $\mathsf{M}_2$, $p$ and $q$ are the diagonal matrix units and $\mathbb{B}p$ is the space of matrices whose only nonzero column is the first. A convenient basis of the left ideal is
+Under $\mathsf{M}_2$, $\tilde\Pi_1$ and $\tilde\Pi_2$ are the diagonal matrix units and $\mathbb{B}\tilde\Pi_1$ is the space of matrices whose only nonzero column is the first. A convenient basis of the left ideal is
 
 $$
-\{p,\; y\}, \qquad y = e_2 p = \frac{i e_1 + e_2}{2},
+\{\tilde\Pi_1,\; \tilde\Upsilon_2\}, \qquad \tilde\Upsilon_2 = e_2 \tilde\Pi_1 = \frac{i e_1 + e_2}{2},
 $$
 
-and a general spinor in $\mathbb{B}p$ is
+and a general spinor in $\mathbb{B}\tilde\Pi_1$ is
 
 $$
-\tilde{\psi} = \psi_1\, p + \psi_2\, y, \qquad \psi_1,\psi_2 \in \mathbb{C}.
+\tilde{\psi} = \psi_1\, \tilde\Pi_1 + \psi_2\, \tilde\Upsilon_2, \qquad \psi_1,\psi_2 \in \mathbb{C}.
 $$
 
 The coordinate map $\tilde{\psi}\leftrightarrow(\psi_1,\psi_2)^{T}$ is an isomorphism of $\mathbb{B}$-modules: for every $\tilde{Q}\in\mathbb{B}$,
 
 $$
-\tilde{Q}\tilde{\psi} = \psi_1(\tilde{Q}p) + \psi_2(\tilde{Q}y) \;\longleftrightarrow\; \mathsf{M}_2(\tilde{Q})\begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}.
+\tilde{Q}\tilde{\psi} = \psi_1(\tilde{Q}\tilde\Pi_1) + \psi_2(\tilde{Q}y) \;\longleftrightarrow\; \mathsf{M}_2(\tilde{Q})\begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}.
 $$
 
-For example $e_3 p = -i p$ and $e_3 y = i y$, matching $\mathsf{M}_2(e_3) = \operatorname{diag}(-i,i)$; and $e_1 p = -i y$, matching the first column of $\mathsf{M}_2(e_1)=-i\sigma_1$. The two minimal left ideals $\mathbb{B}p$ and $\mathbb{B}q$ are both isomorphic to $S$; the algebra is simple, so all its simple modules are isomorphic.
+For example $e_3 \tilde\Pi_1 = -i \tilde\Pi_1$ and $e_3 \tilde\Upsilon_2 = i \tilde\Upsilon_2$, matching $\mathsf{M}_2(e_3) = \operatorname{diag}(-i,i)$; and $e_1 \tilde\Pi_1 = -i \tilde\Upsilon_2$, matching the first column of $\mathsf{M}_2(e_1)=-i\sigma_1$. The two minimal left ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ are both isomorphic to $S$; the algebra is simple, so all its simple modules are isomorphic.
 
-This ideal model is the precise sense in which "the spinor module lies inside $\mathbb{B}$": a spinor is an element of the algebra that lies in the minimal left ideal $\mathbb{B}p$, and the algebra acts on it by left multiplication. It is not an arbitrary biquaternion.
+This ideal model is the precise sense in which "the spinor module lies inside $\mathbb{B}$": a spinor is an element of the algebra that lies in the minimal left ideal $\mathbb{B}\tilde\Pi_1$, and the algebra acts on it by left multiplication. It is not an arbitrary biquaternion.
 
 ## The Two Chiral Halves
 
@@ -176,7 +176,7 @@ where $\tilde{\Lambda}^{*}$ is the complex conjugate of the biquaternion (conjug
 
 Two cautions belong here, because they are often blurred.
 
-**First, the two halves are not the two minimal left ideals.** The ideals $\mathbb{B}p$ and $\mathbb{B}q$ are both isomorphic to $S$ as left $\mathbb{B}$-modules: left multiplication by $\tilde{\Lambda}$ acts by the **same** defining representation on each. The chirality distinction is therefore *not* visible to the complex algebra $\mathbb{B}$ alone, which is simple and has a single simple module. It becomes visible only when the real structure — complex conjugation — is taken into account, or when the algebra is complexified.
+**First, the two halves are not the two minimal left ideals.** The ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ are both isomorphic to $S$ as left $\mathbb{B}$-modules: left multiplication by $\tilde{\Lambda}$ acts by the **same** defining representation on each. The chirality distinction is therefore *not* visible to the complex algebra $\mathbb{B}$ alone, which is simple and has a single simple module. It becomes visible only when the real structure — complex conjugation — is taken into account, or when the algebra is complexified.
 
 **Second, the chiral splitting appears in the complexification.** As a real algebra, the complexification of $\mathbb{B}$ splits:
 
@@ -254,7 +254,7 @@ $$
 \qquad \tilde{\Lambda}\in SL(2,\mathbb{C}),\quad \psi\in S.
 $$
 
-Equivalently, in the ideal model, $\tilde{\psi}\in\mathbb{B}p$ is sent to $\tilde{\Lambda}\tilde{\psi}\in\mathbb{B}p$; the ideal is stable because $\mathbb{B}(\mathbb{B}p)\subseteq\mathbb{B}p$. The action is $\mathbb{C}$-linear, and it is a group action:
+Equivalently, in the ideal model, $\tilde{\psi}\in\mathbb{B}\tilde\Pi_1$ is sent to $\tilde{\Lambda}\tilde{\psi}\in\mathbb{B}\tilde\Pi_1$; the ideal is stable because $\mathbb{B}(\mathbb{B}\tilde\Pi_1)\subseteq\mathbb{B}\tilde\Pi_1$. The action is $\mathbb{C}$-linear, and it is a group action:
 
 $$
 \tilde{\Lambda}_2(\tilde{\Lambda}_1\psi) = (\tilde{\Lambda}_2\tilde{\Lambda}_1)\psi.
@@ -493,14 +493,14 @@ In this reading the spinor module is not an add-on to the biquaternion framework
 2. **The covariance of the biquaternion Dirac equation.** The companion article on the Dirac equation formulates the equation as the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ but leaves open the transformation law of the biquaternion-valued field $\tilde{\Psi}$.
 
 A natural candidate is the module action defined here; its compatibility with the mass term requires the relationship between the one-sided action and the conjugate module to be fixed by a convention.
-3. **The biquaternion form of the symplectic pairing.** The invariant form $\varepsilon$ is presented here in matrix coordinates. Its expression as a bigeneral quaternionic bilinear on the ideal $\mathbb{B}p$ follows from the coordinate map, but the cleanest biquaternion formula is a matter of convention.
+3. **The biquaternion form of the symplectic pairing.** The invariant form $\varepsilon$ is presented here in matrix coordinates. Its expression as a bigeneral quaternionic bilinear on the ideal $\mathbb{B}\tilde\Pi_1$ follows from the coordinate map, but the cleanest biquaternion formula is a matter of convention.
 4. **Majorana and reality conditions.** In Lorentzian signature the Dirac module is self-conjugate but the two Weyl halves are a conjugate pair, so Majorana spinors exist while Majorana–Weyl spinors do not. How these reality conditions read as conditions on biquaternion-valued fields is a natural continuation.
 5. **Curved spacetime.** The module and its action are pointwise algebraic. Whether the spinor module globalizes to a bundle over a curved biquaternionic background is open, in parallel with the open questions of the companion articles.
 6. **The indefinite pairing and the framework's own reading.** The pairing $[u|v]=u^{\dagger}\sigma_3v$, the triple $\varsigma$ and the hyperboloid models come from the external reading cited in *Quantum Gravity under the Biquaternion Framework — A Research Agenda*. Whether the framework gives them an independent meaning — in particular whether the Majorana pair of the one-sheeted case is the module real structure of *The Neutrino and Majorana Fermions in Biquaternionic Form* — is not settled here, and the two articles are consistent but not yet joined.
 
 ## Summary
 
-The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, the two-dimensional complex **spinor module** $S=\mathbb{C}^2$, on which $\mathbb{B}$ acts by matrix multiplication. Inside the algebra, $S$ is realized as the minimal left ideal $\mathbb{B}p$, $p = \tfrac{1}{2}(e_0+ie_3)$, whose elements are the spinors; the algebra acts by left multiplication, and the action is one-sided.
+The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, the two-dimensional complex **spinor module** $S=\mathbb{C}^2$, on which $\mathbb{B}$ acts by matrix multiplication. Inside the algebra, $S$ is realized as the minimal left ideal $\mathbb{B}\tilde\Pi_1$, $\tilde\Pi_1 = \tfrac{1}{2}(e_0+ie_3)$, whose elements are the spinors; the algebra acts by left multiplication, and the action is one-sided.
 
 The **left-handed Weyl spinor** is the defining module $(\tfrac12,0)$; the **right-handed Weyl spinor** is its complex conjugate $(0,\tfrac12)$. These are the two **chiral halves**; their direct sum is the four-component Dirac spinor module. The two halves are not isomorphic as complex representations of $SL(2,\mathbb{C})$ (they are conjugate to one another), and the chirality distinction is a real-structure distinction that appears on complexification, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$.
 
@@ -530,8 +530,8 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 | $V_1 = (\tfrac12,0)$ | Left-handed Weyl (defining) representation |
 | $\bar{S} = \overline{V_1} = (0,\tfrac12)$ | Right-handed Weyl (conjugate) representation |
 | $\Delta = S\oplus\bar{S}$ | Dirac spinor module, $\dim_{\mathbb{C}}\Delta=4$ |
-| $p = \tfrac12(e_0+ie_3),\ q=\tfrac12(e_0-ie_3)$ | Primitive orthogonal idempotents, $\mathbb{B}=\mathbb{B}p\oplus\mathbb{B}q$ |
-| $x = \tfrac12(ie_1-e_2),\ y=\tfrac12(ie_1+e_2)=e_2p$ | Matrix units $E_{12},E_{21}$; basis $\{p,y\}$ of $S$ |
+| $\tilde\Pi_1 = \tfrac12(e_0+ie_3),\ \tilde\Pi_2=\tfrac12(e_0-ie_3)$ | Primitive orthogonal idempotents, $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ |
+| $\tilde\Upsilon_1 = \tfrac12(ie_1-e_2),\ \tilde\Upsilon_2=\tfrac12(ie_1+e_2)=e_2\tilde\Pi_1$ | Matrix units $E_{12},E_{21}$; basis $\{\tilde\Pi_1,\tilde\Upsilon_2\}$ of $S$ |
 | $SL(2,\mathbb{C}) = \{\tilde{\Lambda}:\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0\}$ | Unit-norm biquaternions, double cover of $SO^{+}(1,3)$ |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
 | $\tilde{R} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat{\mathbf{n}}$ | Rotation rotor (in $\mathbb{H}_{\mathbb{B}}$) |

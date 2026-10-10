@@ -68,8 +68,8 @@ The two readings agree on everything that is a property of the ring, and they di
 - The centrality of $i$, the relation $i^2 = -e_0$, and the identification of the centre with $\mathbb{C}_{\mathbb{B}}$ (*Introduction to the General Plain Algebra of Biquaternions*).
 - The four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$, ${}^{\flat}$ as maps of the ring, their orders and the group they generate; only their scalar-linearity changes (*The Group of Involutions*).
 - The **lattice of ideals**, including simplicity: the two-sided ideals are $0$ and $\mathbb{B}$, and the minimal left ideals are parametrized by $\mathbb{P}^1(\mathbb{C})$, in both readings (*Biquaternion Ideals and Peirce Decomposition*, §*The Real Structure*).
-- The **idempotents**: the equation $\tilde\Pi^2 = \tilde\Pi$ is a ring equation, so the idempotents, their classification and the bijection with the roots of $-1$ are the same sets (*Biquaternion Idempotents and Projections*).
-- The **zero divisors**: $\tilde Q$ is a zero divisor exactly when $\tilde Q\tilde Q^{\natural} = 0$, a ring equation, so the zero-divisor cone and its two families are the same sets (*Biquaternion Zero Divisors*).
+- The **idempotents**: the equation $\tilde\Pi^2 = \tilde\Pi$ is a ring equation, so the idempotents, their classification and the bijection with the roots of $-1$ are the same sets (*Idempotents of the General Plain Algebra*).
+- The **zero divisors**: $\tilde Q$ is a zero divisor exactly when $\tilde Q\tilde Q^{\natural} = 0$, a ring equation, so the zero-divisor cone and its two families are the same sets (*Zero Divisors of the General Plain Algebra*).
 - **Invertibility**: $\tilde Q$ is invertible exactly when $\tilde Q\tilde Q^{\natural} \neq 0$; the criterion is a ring criterion, and the group of units is the same set (*Biquaternion Norm and Invertibility*).
 
 **The scalar-level statements.** The following mention the scalars and differ between the readings.

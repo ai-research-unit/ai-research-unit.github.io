@@ -45,7 +45,7 @@ The four notions satisfy the usual inclusions. In the Lorentzian signature $(1,3
 | Majorana | real form of $\Delta$ | $4$ | no (halves conjugate) | yes |
 | Majorana–Weyl | real form of $S$ | — | yes | yes (does not exist in $(1,3)$) |
 
-Two cautions belong here, both inherited from the read list and both relevant below. First, the chiral halves are **not** the two minimal left ideals $\mathbb{B}p$, $\mathbb{B}q$: those are both isomorphic to $S$ and carry the same defining representation, so the chirality distinction is invisible to $\mathbb{B}$ alone. Second, a biquaternion $\tilde{\Psi}\in\mathbb{B}$ is not a spinor; the spinor is an element of the module $S$, or of $\Delta$, and the algebra acts on it. The identification of an algebra element with a spinor is a separate step, and it is exactly where the reality conditions become delicate.
+Two cautions belong here, both inherited from the read list and both relevant below. First, the chiral halves are **not** the two minimal left ideals $\mathbb{B}\tilde\Pi_1$, $\mathbb{B}\tilde\Pi_2$: those are both isomorphic to $S$ and carry the same defining representation, so the chirality distinction is invisible to $\mathbb{B}$ alone. Second, a biquaternion $\tilde{\Psi}\in\mathbb{B}$ is not a spinor; the spinor is an element of the module $S$, or of $\Delta$, and the algebra acts on it. The identification of an algebra element with a spinor is a separate step, and it is exactly where the reality conditions become delicate.
 
 ## Charge Conjugation as a Real Structure on the Spinor Module
 

@@ -44,7 +44,7 @@ satisfying $\Phi(\tilde Q\tilde R) = \Phi(\tilde Q)\Phi(\tilde R)$, $\det\Phi(\t
 
 ## The Massless Momentum as a Zero Divisor
 
-The zero divisors of $\mathbb{B}$ are characterized by the biquaternion norm: a nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $N(\tilde Q) = 0$ (*Biquaternion Zero Divisors*). Equivalently, because the biquaternion norm is the determinant of the matrix realization, the nonzero zero divisors are exactly the rank-one elements of $M_2(\mathbb{C})$.
+The zero divisors of $\mathbb{B}$ are characterized by the biquaternion norm: a nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $N(\tilde Q) = 0$ (*Zero Divisors of the General Plain Algebra*). Equivalently, because the biquaternion norm is the determinant of the matrix realization, the nonzero zero divisors are exactly the rank-one elements of $M_2(\mathbb{C})$.
 
 The four-momentum of a particle of mass $m$ is
 
@@ -64,7 +64,7 @@ Two consequences follow immediately.
 
 **A massive momentum is invertible.** For $m \neq 0$ one has $N(\tilde P) = -m^2c^2 \neq 0$, so $\tilde P$ is invertible and is *not* a zero divisor. This is the structural asymmetry between the two cases, and it will reappear in the section on the singular massless limit: the rank of $\Phi(\tilde P)$ is one at $m=0$ and two at $m\neq0$.
 
-The zero divisor here is of the **non-pure** kind: its scalar part $iE/c$ does not vanish (for $E\neq0$). The general non-pure zero divisor satisfies the square relation $\tilde Q^2 = 2Q_0\tilde Q$ (*Biquaternion Zero Divisors*), so the massless momentum obeys
+The zero divisor here is of the **non-pure** kind: its scalar part $iE/c$ does not vanish (for $E\neq0$). The general non-pure zero divisor satisfies the square relation $\tilde Q^2 = 2Q_0\tilde Q$ (*Zero Divisors of the General Plain Algebra*), so the massless momentum obeys
 
 $$
 \tilde P^2 \;=\; 2\,\frac{iE}{c}\,\tilde P .
@@ -319,7 +319,7 @@ Two things are deliberately not claimed. The framework does not derive the Parke
 - Zvi Bern, Lance J. Dixon, and David A. Kosower, "On-shell methods in perturbative QCD," *Annals of Physics* **322** (2007) 1587–1634, for the use of helicity amplitudes in practical calculations.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1: *Two-Spinor Calculus and Relativistic Fields* (Cambridge University Press, 1984), for the two-component spinor calculus and the reality condition on the momentum bispinor.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge University Press, 1995), for the little group of a massless particle and helicity as the weight of its compact subgroup.
-- Companion article *Biquaternion Zero Divisors*, for the criterion $N(\tilde Q)=0$, the pure and non-pure families, and the rank-one statement.
+- Companion article *Zero Divisors of the General Plain Algebra*, for the criterion $N(\tilde Q)=0$, the pure and non-pure families, and the rank-one statement.
 - Companion article *The Null Quadric and Its Projective Geometry*, for the Segre quadric, the two rulings, and the mixed-spinor factorisation $A_\alpha{}^{\dot\beta}=\phi_\alpha\pi^{\dot\beta}$.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the module $S$, the conjugate module, the symplectic form $\varepsilon$, and the Lorentz action.
 - Companion article *Exercise: Chirality and the Weyl Spinors*, for the chirality projectors, the conjugate defining representation in the $\varepsilon$ convention.

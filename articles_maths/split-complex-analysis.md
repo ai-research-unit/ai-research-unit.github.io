@@ -420,7 +420,7 @@ The complex case is rigid: differentiability is a strong condition, and it force
 
 Split complex analysis is the study of differentiable functions of a split complex variable $A = a + ja'$ with $j^2 = +1$. The plane carries the Euclidean norm inherited from $\mathbb{R}^2$, and with it the convergent sequences and the continuous functions on which the subject is built.
 
-The derivative is defined as in the complex case, and its behaviour is governed by the idempotents $\Pi_\pm = (1 \pm j)/2$, which satisfy $\Pi_1^2 = \Pi_1$, $\Pi_2^2 = \Pi_2$ and $\Pi_1\Pi_2 = 0$. In the idempotent basis the algebra is the direct sum $\mathbb{R} \oplus \mathbb{R}$, and the analysis decomposes with it: the power series and the conditions of differentiability separate into one condition for each component, so the theory is real analysis carried out twice rather than a new rigid theory as in the complex case.
+The derivative is defined as in the complex case, and its behaviour is governed by the idempotents $\Pi_{1,2} = (1 \pm j)/2$, which satisfy $\Pi_1^2 = \Pi_1$, $\Pi_2^2 = \Pi_2$ and $\Pi_1\Pi_2 = 0$. In the idempotent basis the algebra is the direct sum $\mathbb{R} \oplus \mathbb{R}$, and the analysis decomposes with it: the power series and the conditions of differentiability separate into one condition for each component, so the theory is real analysis carried out twice rather than a new rigid theory as in the complex case.
 
 The article develops the subject in that basis: contour integrals along paths, power series, and the classification of the isolated singularities as removable, a pole, or essential. It closes with the comparison with complex analysis and traces every difference to the sign in the multiplication rule, $j^2 = +1$ against $i^2 = -1$.
 

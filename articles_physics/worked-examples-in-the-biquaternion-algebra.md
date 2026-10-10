@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article works the computations of the biquaternion algebra out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the remarkable subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the general subject of *Biquaternion Idempotents and Projections*; here they are only exhibited. The physical reading is attached to each computation, so that the dictionary of *The Four-Vector Element Representation of Biquaternions* and of *Conventions in the Biquaternion Universe* can be checked arithmetically.
+This article works the computations of the biquaternion algebra out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the remarkable subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the general subject of *Idempotents of the General Plain Algebra*; here they are only exhibited. The physical reading is attached to each computation, so that the dictionary of *The Four-Vector Element Representation of Biquaternions* and of *Conventions in the Biquaternion Universe* can be checked arithmetically.
 
 **Notation.** A biquaternion is written in developed form
 $$
@@ -103,7 +103,7 @@ $$
 $$
 Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients. Moreover $N(\tilde A)=1+i^2=0$, so $\tilde A$ is **null** as well as a zero divisor; it is not nilpotent, since $\tilde A^2=(e_0+ie_3)^2=e_0+2ie_3-(e_3)^2=2e_0+2ie_3=2\tilde A\neq0$.
 
-**Physical reading.** The pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is a **lightlike pair**: each is null, $N=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $\tilde A$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $e_1+ie_2$, whose square vanishes (*Biquaternion Zero Divisors*).
+**Physical reading.** The pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is a **lightlike pair**: each is null, $N=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $\tilde A$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $e_1+ie_2$, whose square vanishes (*Zero Divisors of the General Plain Algebra*).
 
 ## Physical Readings
 

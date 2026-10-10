@@ -80,7 +80,7 @@ $$
 
 ### Compared with the Two Families of $\mathbb{B}$
 
-In the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the zero divisors split into **two** families, distinguished by the vanishing of the scalar part: the *pure* zero divisors, which are the nonzero nilpotents of the vector subspace and satisfy $\tilde{Q}^2 = 0$, and the *non-pure* zero divisors, which have nonzero scalar part and are the nonzero complex multiples of the nontrivial idempotents, satisfying $\tilde{Q}^2 = 2Q_0\tilde{Q}$. The two families are disjoint and of different complex dimension. The organisation of that classification is the article *Biquaternion Zero Divisors*.
+In the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the zero divisors split into **two** families, distinguished by the vanishing of the scalar part: the *pure* zero divisors, which are the nonzero nilpotents of the vector subspace and satisfy $\tilde{Q}^2 = 0$, and the *non-pure* zero divisors, which have nonzero scalar part and are the nonzero complex multiples of the nontrivial idempotents, satisfying $\tilde{Q}^2 = 2Q_0\tilde{Q}$. The two families are disjoint and of different complex dimension. The organisation of that classification is the article *Zero Divisors of the General Plain Algebra*.
 
 The dual algebra has **one** family, not two. The reason is structural: the biquaternion invariant that separates the two families is the scalar part $Q_0$, and the nontrivial idempotents it produces are what make the non-pure family possible. In $\mathbb{D}'_R$ the only idempotents are $0$ and $1$ (by *Dual-Numbers Ideals and the Maximal Ideal*), so there is no nontrivial idempotent to multiply, and no second family. Every zero divisor of $\mathbb{D}'_R$ is of the same kind: a nonzero nilpotent lying in the maximal ideal.
 
@@ -184,10 +184,10 @@ Three comparisons complete the picture, and in each the family count is read fro
 **Split complex $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$.** The algebra has the two nontrivial idempotents
 
 $$
-\pi_\pm = \tfrac{1}{2}(1 \pm j), \qquad \pi_+ \pi_- = 0, \qquad \pi_+ + \pi_- = 1,
+\pi_{1,2} = \tfrac{1}{2}(1 \pm j), \qquad \pi_1 \pi_2 = 0, \qquad \pi_1 + \pi_2 = 1,
 $$
 
-giving the decomposition $\mathbb{D} = \mathbb{R}\pi_+ \oplus \mathbb{R}\pi_-$ into a product of two copies of $\mathbb{R}$. The zero divisors are the nonzero elements of the two ideals $\mathbb{D}\pi_+$ and $\mathbb{D}\pi_-$, so there are **two** families, one per idempotent; each family is the nonzero part of a one-dimensional ideal. The dual algebra is the contraction of this picture: the two idempotents coalesce into the single idempotent $1$, the decomposition into a product of two fields degenerates into the local ring with a square-zero maximal ideal, and the two families coalesce into one.
+giving the decomposition $\mathbb{D} = \mathbb{R}\pi_1 \oplus \mathbb{R}\pi_2$ into a product of two copies of $\mathbb{R}$. The zero divisors are the nonzero elements of the two ideals $\mathbb{D}\pi_1$ and $\mathbb{D}\pi_2$, so there are **two** families, one per idempotent; each family is the nonzero part of a one-dimensional ideal. The dual algebra is the contraction of this picture: the two idempotents coalesce into the single idempotent $1$, the decomposition into a product of two fields degenerates into the local ring with a square-zero maximal ideal, and the two families coalesce into one.
 
 **Split biquaternion $\mathbb{H}_{\mathbb{D}}$, $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$.** The algebra is a product of two copies of the quaternion division algebra, and its zero divisors are the nonzero elements with one component zero: the union of the two ideals $\mathbb{H} \oplus 0$ and $0 \oplus \mathbb{H}$. So there are again **two** families, one per simple factor; a zero divisor is killed by one of the two ring projections. The dual algebra, being local with a single minimal ideal rather than a product of two division factors, has only one such family.
 
@@ -219,7 +219,7 @@ The zero divisors form a **single family**, against the two families of the biqu
 | $R_{\mathbb{D}'}$, $\varepsilon R_{\mathbb{D}'}$ | Real and infinitesimal submodules |
 | $\mathcal{Z} = \mathrm{M} \setminus \{0\}$ | Zero-divisor set, a single family |
 | $\operatorname{Ann}(A)$ | Annihilator of $A$; equals $\mathrm{M}$ for $A \in \mathcal{Z}$ |
-| $\pi_\pm = \tfrac{1}{2}(1 \pm j)$ | The idempotents of the split complex algebra, two zero-divisor families |
+| $\pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | The idempotents of the split complex algebra, two zero-divisor families |
 | $\mathbb{B}$ | Biquaternion algebra, two families of zero divisors |
 | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ | Split biquaternions, two families |
 

@@ -24,7 +24,7 @@ $$
 \qquad
 \mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_1, ie_2, ie_3\},
 $$
-with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the centre. The isomorphism is $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, the **biquaternion norm** is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The single-mode ladder is $\tilde a_{\mathrm{tr}} = \tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger = \tfrac12(ie_1+e_2)$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
+with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the centre. The isomorphism is $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, the **biquaternion norm** is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The single-mode ladder is $\tilde\Upsilon_1 = \tfrac12(ie_1-e_2)$, $\tilde\Upsilon_2 = \tfrac12(ie_1+e_2)$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
 
 ## The Vacuum as a State
 
@@ -86,19 +86,19 @@ which on an **observable** $\tilde A\in\mathbb{M}_+$ takes the real value $2\,\m
 
 For a single fermionic mode the algebra contains the whole ladder. With
 $$
-\tilde a_{\mathrm{tr}} = \tfrac12\big(ie_1 - e_2\big),
+\tilde\Upsilon_1 = \tfrac12\big(ie_1 - e_2\big),
 \qquad
-\tilde a_{\mathrm{tr}}^\dagger = \tfrac12\big(ie_1 + e_2\big),
+\tilde\Upsilon_2 = \tfrac12\big(ie_1 + e_2\big),
 $$
 one has, as the Fock article establishes,
 $$
-\big\{\tilde a_{\mathrm{tr}}, \tilde a_{\mathrm{tr}}^\dagger\big\} = e_0,
+\big\{\tilde\Upsilon_1, \tilde\Upsilon_2\big\} = e_0,
 \qquad
-\tilde a_{\mathrm{tr}}^2 = 0,
+\tilde\Upsilon_1^2 = 0,
 \qquad
-(\tilde a_{\mathrm{tr}}^\dagger)^2 = 0,
+(\tilde\Upsilon_2)^2 = 0,
 \qquad
-\tilde N_{\mathrm{tr}} = \tilde a_{\mathrm{tr}}^\dagger \tilde a_{\mathrm{tr}} = \tfrac12\big(e_0 - ie_3\big).
+\tilde N_{\mathrm{tr}} = \tilde\Upsilon_2 \tilde\Upsilon_1 = \tfrac12\big(e_0 - ie_3\big).
 $$
 The number operator is a projector, so its spectrum is $\{0,1\}$: the mode is either empty or occupied. The **vacuum projector** is the spectral projector onto the empty eigenvalue,
 $$
@@ -139,16 +139,16 @@ $$
 $$
 in agreement with the Fock article's $(-1)^F=ie_3$; as an operator it anticommutes with the ladder,
 $$
-(-1)^F \tilde a_{\mathrm{tr}} (-1)^F = -\tilde a_{\mathrm{tr}},
+(-1)^F \tilde\Upsilon_1 (-1)^F = -\tilde\Upsilon_1,
 \qquad
-(-1)^F \tilde a_{\mathrm{tr}}^\dagger (-1)^F = -\tilde a_{\mathrm{tr}}^\dagger .
+(-1)^F \tilde\Upsilon_2 (-1)^F = -\tilde\Upsilon_2 .
 $$
 
-**A numerical check on the whole set.** Representing $\mathbb{B}$ by $2\times2$ complex matrices through $\Phi$ and using explicit complex arithmetic on the coefficients, one finds: $\tilde\Pi_1^2-\tilde\Pi_1=0$; $\tilde\Pi_1^{*}-\tilde\Pi_1=0$; $\det\Phi(\tilde\Pi_1)=0$ with $\mathrm{Tr}\,\Phi(\tilde\Pi_1)=1$; $\tilde\Pi_1\tilde\Pi_2=0$ and $\tilde\Pi_1+\tilde\Pi_2=I_2$; $\Phi((-1)^F)=\sigma_3$; and $\Phi((-1)^F\tilde a_{\mathrm{tr}}(-1)^F) = -\Phi(\tilde a_{\mathrm{tr}})$, all to machine precision ($<10^{-16}$). The vacuum expectation values reproduce the mode algebra,
+**A numerical check on the whole set.** Representing $\mathbb{B}$ by $2\times2$ complex matrices through $\Phi$ and using explicit complex arithmetic on the coefficients, one finds: $\tilde\Pi_1^2-\tilde\Pi_1=0$; $\tilde\Pi_1^{*}-\tilde\Pi_1=0$; $\det\Phi(\tilde\Pi_1)=0$ with $\mathrm{Tr}\,\Phi(\tilde\Pi_1)=1$; $\tilde\Pi_1\tilde\Pi_2=0$ and $\tilde\Pi_1+\tilde\Pi_2=I_2$; $\Phi((-1)^F)=\sigma_3$; and $\Phi((-1)^F\tilde\Upsilon_1(-1)^F) = -\Phi(\tilde\Upsilon_1)$, all to machine precision ($<10^{-16}$). The vacuum expectation values reproduce the mode algebra,
 $$
-\langle \tilde a_{\mathrm{tr}}^\dagger \tilde a_{\mathrm{tr}}\rangle_0 = \mathrm{Tr}\big(\tilde\Pi_1\tilde N_{\mathrm{tr}}\big) = 0,
+\langle \tilde\Upsilon_2 \tilde\Upsilon_1\rangle_0 = \mathrm{Tr}\big(\tilde\Pi_1\tilde N_{\mathrm{tr}}\big) = 0,
 \qquad
-\langle \tilde a_{\mathrm{tr}} \tilde a_{\mathrm{tr}}^\dagger\rangle_0 = \mathrm{Tr}\big(\tilde\Pi_1(e_0-\tilde N_{\mathrm{tr}})\big) = 1,
+\langle \tilde\Upsilon_1 \tilde\Upsilon_2\rangle_0 = \mathrm{Tr}\big(\tilde\Pi_1(e_0-\tilde N_{\mathrm{tr}})\big) = 1,
 $$
 which are the statements that the vacuum is empty and the mode anticommutator is normalized.
 
@@ -277,8 +277,8 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 | $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$ | Matrix isomorphism |
 | $\tilde\Pi(\pm\hat{\boldsymbol\mu})=\tfrac12(e_0\pm i\hat{\boldsymbol\mu})$, $\hat{\boldsymbol\mu}\in S^2$ | Minimal idempotents; vacuum projectors |
 | $|0\rangle\langle 0|=\tilde\Pi_1$ | One-mode vacuum projector |
-| $\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=\tilde\Pi_2$ | Number operator (occupied projector) |
-| $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger=\tfrac12(ie_1+e_2)$ | Single-mode ladder |
+| $\tilde N_{\mathrm{tr}}=\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_2$ | Number operator (occupied projector) |
+| $\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$, $\tilde\Upsilon_2=\tfrac12(ie_1+e_2)$ | Single-mode ladder |
 | $(-1)^F=ie_3=\tilde\Pi_1-\tilde\Pi_2$ | Fermion-parity grading |
 | $\mathbb{B}\tilde\Pi(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$ | Minimal left ideal; one-particle (spinor) module |
 | $\mathcal{M}_{\text{vac}}\cong S^2$ | Vacuum manifold |

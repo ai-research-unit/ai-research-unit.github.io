@@ -116,7 +116,13 @@ so $h_{C}$ is again compatible for $*$. The compatible forms of the layer are th
 
 ### The Matrices
 
-**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, whose Gram matrix in the standard basis is the identity of size $n^{2}$. A congruent form has Gram matrix $\Gamma^{T}\varsigma(\Gamma)$, which is positive definite for every invertible $\Gamma$; the inertia of the identity is $(n^{2},0,0)$, so every congruent form is positive definite by Sylvester's law, and the inertia $(n^{2},0,0)$ is the complete invariant over $\mathbb{C}$ as well. The unitary group of $h$ is $U(n^{2})$ by *Unitary and Isometric Operators of the Form*, §*The Matrices*, and it is the stabiliser of the form; the unitary equivalence of the operators is the conjugation $T \mapsto UTU^{\dagger}$ by a unitary of $M_{n^{2}}(\mathbb{C})$. The example is the model in which both relations are visible on the same object, the congruence acting on the Gram matrix and the unitary equivalence on the operator.
+**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, whose Gram matrix in the standard basis is the identity of size $n^{2}$. A congruent form has Gram matrix $\Gamma^{T}\varsigma(\Gamma)$, which is positive definite for every invertible $\Gamma$; the inertia of the identity is $(n^{2},0,0)$, so every congruent form is positive definite by Sylvester's law, and the inertia $(n^{2},0,0)$ is the complete invariant over $\mathbb{C}$ as well. The unitary group of $h$ is $U(n^{2})$ by *Unitary and Isometric Operators of the Form*, §*The Matrices*, and it is the stabiliser of the form; the unitary equivalence of the operators is the conjugation $T \mapsto UTU^{\dagger}$ by a unitary of $M_{n^{2}}(\mathbb{C})$. The example is the model in which both relations are visible on the same object, the congruence acting on the Gram matrix and the unitary equivalence on the operator. At $n=2$ the Gram matrix is $I_4$ and the congruence by $\Gamma=I_4+E_{12}$ gives
+
+$$
+\Gamma=\begin{pmatrix}1&1&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad \Gamma^{T}\Gamma=\begin{pmatrix}1&1&0&0\\1&2&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
+$$
+
+still positive definite, of inertia $(4,0,0)$ as Sylvester's law requires.
 
 ### The Hyperbolic Plane
 

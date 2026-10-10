@@ -31,7 +31,7 @@ where $\tilde{Q}^{\natural}$ is the quaternion conjugate.
 **Basic properties.**
 
 - $N(\tilde{Q})$ is a complex scalar (a complex multiple of $e_0$) in general. It is real on the real sector $\mathbb{H}_{\mathbb{B}}$ and on the imaginary sector $i\mathbb{H}_{\mathbb{B}}$; outside their union it need not be real.
-- $N(\tilde{Q})$ is not positive-definite: it can vanish for a nonzero biquaternion. Those are the zero divisors, studied in *Biquaternion Zero Divisors*; physically they are the null elements, and the light cone is their locus.
+- $N(\tilde{Q})$ is not positive-definite: it can vanish for a nonzero biquaternion. Those are the zero divisors, studied in *Zero Divisors of the General Plain Algebra*; physically they are the null elements, and the light cone is their locus.
 - $N(\tilde{Q}^{\natural}) = N(\tilde{Q})$, $N(\tilde{Q}^*) = N(\tilde{Q})^*$ and $N(\tilde{Q}^{*}) = N(\tilde{Q})^*$.
 
 **Physical reading: this is the metric.** On the material coordinate the biquaternion norm is the Minkowski interval,
@@ -424,7 +424,7 @@ The invertibility criterion is $N(\tilde{Q})\neq0$, with inverse $\tilde{Q}^{-1}
 
 The group of units $\mathbb{B}^\times$ is open, connected and isomorphic to $\mathrm{GL}(2,\mathbb{C})$, a real Lie group of dimension 8 with Lie algebra $\mathbb{B}$ and centre $\mathbb{C}^\times$. The algebra is partitioned into the zero element, the invertible elements and the zero divisors, and this is the partition of four-vectors into the null ones and the rest. Of the remarkable subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a cone each, with three-component complements; and $\mathrm{Vect}(\mathbb{B})$ contains the complex nilpotent cone of codimension 2, whose complement is connected.
 
-The zero divisors are studied in *Biquaternion Zero Divisors*, and the classification of the roots of $-1$ that underlies the idempotent classification in *Biquaternion Square Roots of Minus One, Zero and Plus One*.
+The zero divisors are studied in *Zero Divisors of the General Plain Algebra*, and the classification of the roots of $-1$ that underlies the idempotent classification in *Biquaternion Square Roots of Minus One, Zero and Plus One*.
 
 ## Summary of Notation
 

@@ -39,7 +39,7 @@ The criterion for a zero divisor of the algebra is the companion statement.
 
 **Theorem (unit criterion).** An element $\tilde Q$ of $\mathbb{B}$ is a unit if and only if $N(\tilde Q) \neq 0$, and if $N(\tilde Q) = 0$ with $\tilde Q \neq 0$ then $\tilde Q$ is a zero divisor of the algebra; the inverse is $\tilde Q^{-1} = \tilde Q^{\natural}/N(\tilde Q)$ when it exists.
 
-**Proof.** The natural conjugation satisfies $\tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q = N(\tilde Q)e_0$ and is an anti-automorphism, so if $N(\tilde Q)\neq0$ the displayed element is a two-sided inverse. If $N(\tilde Q)=0$ and $\tilde Q\neq0$, then $\tilde Q^{\natural}\neq0$ and $\tilde Q^{\natural}\tilde Q = 0$ exhibits a nonzero product equal to zero. The detail is *Biquaternion Norm and Invertibility* and *Biquaternion Zero Divisors*. $\square$
+**Proof.** The natural conjugation satisfies $\tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q = N(\tilde Q)e_0$ and is an anti-automorphism, so if $N(\tilde Q)\neq0$ the displayed element is a two-sided inverse. If $N(\tilde Q)=0$ and $\tilde Q\neq0$, then $\tilde Q^{\natural}\neq0$ and $\tilde Q^{\natural}\tilde Q = 0$ exhibits a nonzero product equal to zero. The detail is *Biquaternion Norm and Invertibility* and *Zero Divisors of the General Plain Algebra*. $\square$
 
 Combining the two theorems gives the equivalence that names the article.
 
@@ -69,6 +69,8 @@ $$
 C = \{\tilde Q \in \mathbb{B} : N(\tilde Q) = 0\} = \{\tilde Q : \tilde Q\star\tilde Q = 0\} .
 $$
 
+A single square-zero element, being an element known to be nilpotent, is written $\tilde\Upsilon$ where the nilpotency is the point — the upper-case glyph of the biquaternion layer (§*The nilpotent convention* of *Conventions in Mathematics*) — and the generic $\tilde Q$ is kept in the statements that hold for every element.
+
 **Proposition (shape).** The cone $C$ is a real algebraic cone of real dimension $6$ in the real eight-dimensional space $\mathbb{B}$, and it is not a real subspace.
 
 **Proof.** With $Q_\mu = q_\mu + iq'_\mu$ the real and imaginary parts, $N = \sum_\mu Q_\mu^2 = \sum_\mu (q_\mu^2 - q'_\mu{}^2) + 2i\sum_\mu q_\mu q'_\mu$ is one complex equation, that is two real equations, and the set is a cone because $N$ is homogeneous of degree two; the two equations are independent off $0$, so the real dimension is $8-2 = 6$. For the failure of linearity, the elements $e_1+ie_2$ and $e_1-ie_2$ both have norm $1-1 = 0$, while their sum $2e_1$ has norm $4$. $\square$
@@ -83,7 +85,7 @@ so the cone together with $0$ is a multiplicative set, and it is closed under mu
 
 **Proof.** The biquaternion norm is multiplicative for the plain product and invariant under ${}^{\natural}$, so $N(\tilde P^{\natural}\tilde Q) = N(\tilde P^{\natural})N(\tilde Q) = N(\tilde P)N(\tilde Q)$ (*Biquaternion Norm and Invertibility* §*Multiplicativity*); the statement follows on evaluating at $N(\tilde Q) = 0$. $\square$
 
-**The two families of zero divisors.** The cone was described in the algebra by *Biquaternion Zero Divisors* as the union of two families: the **pure** zero divisors, the vectors $\mathbf P \neq 0$ with $(\mathbf P,\mathbf P)=0$, and the **non-pure** ones, the complex multiples of the Hermitian projectors. In the quaternionic product the distinction is invisible at the level of the square — every element of the cone has square zero, pure or not — but it is visible at the level of the plain square: a pure zero divisor has $\mathbf P^2 = -(\mathbf P,\mathbf P)e_0 = 0$, while a non-pure one, being a multiple of a projector, has a nonzero plain square. The displacement of the previous article is this sentence read in reverse: the nontrivial idempotents of the algebra, which are the non-pure zero divisors, are exactly the Hermitian projectors that the quaternionic square sends to $0$.
+**The two families of zero divisors.** The cone was described in the algebra by *Zero Divisors of the General Plain Algebra* as the union of two families: the **pure** zero divisors, the vectors $\mathbf P \neq 0$ with $(\mathbf P,\mathbf P)=0$, and the **non-pure** ones, the complex multiples of the Hermitian projectors. In the quaternionic product the distinction is invisible at the level of the square — every element of the cone has square zero, pure or not — but it is visible at the level of the plain square: a pure zero divisor has $\mathbf P^2 = -(\mathbf P,\mathbf P)e_0 = 0$, while a non-pure one, being a multiple of a projector, has a nonzero plain square. The displacement of the previous article is this sentence read in reverse: the nontrivial idempotents of the algebra, which are the non-pure zero divisors, are exactly the Hermitian projectors that the quaternionic square sends to $0$.
 
 ## The Annihilators
 

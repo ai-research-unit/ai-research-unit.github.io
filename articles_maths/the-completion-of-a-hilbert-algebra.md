@@ -60,7 +60,11 @@ $A = \mathbb{C}[G]$ for a finite group with the standard form $\langle\sum a_g g
 
 ### Matrices
 
-$A = M_n(\mathbb{C})$ with $\langle a,b\rangle = \mathrm{tr}(b^{*}a)$ and $\dagger$ the conjugate transpose is a Hilbert algebra, already complete: $H = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, and the involution is bounded and closable (already closed).
+$A = M_n(\mathbb{C})$ with $\langle a,b\rangle = \mathrm{tr}(b^{*}a)$ and $\dagger$ the conjugate transpose is a Hilbert algebra, already complete: $H = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, and the involution is bounded and closable (already closed). At $n=2$ the form reads
+
+$$
+a=\begin{pmatrix}1&i\\0&2\end{pmatrix},\qquad \lVert a\rVert^{2}=\operatorname{tr}(a^{*}a)=6,\qquad b=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad \langle a,b\rangle=\operatorname{tr}(b^{*}a)=\operatorname{tr}\begin{pmatrix}1&i\\0&0\end{pmatrix}=1 .
+$$
 
 ### The Trivial Completion
 

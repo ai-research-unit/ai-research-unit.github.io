@@ -19,7 +19,7 @@ $$
 
 with scalar part $\sum_\mu \varepsilon_\mu Q_\mu\overline{Q_\mu} = \lvert Q_0\rvert^{2} - \lvert Q_1\rvert^{2} - \lvert Q_2\rvert^{2} - \lvert Q_3\rvert^{2}$, an indefinite form of signature $(2,2)$. Second, on the two halves $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ the square collapses to the centre with opposite signs, $\tilde Q \star \tilde Q = \pm N(\tilde Q)e_0$, the sign being that of the half. Third, the elements whose square vanishes form a **proper** subfamily of the zero-divisor cone: every square-zero element has norm $0$, and not every element of norm $0$ has square zero, a fact that separates this product from both bilinear products.
 
-The article owns the square, its scalar part, its behaviour on the two halves and the square-zero set. It cites the rule and the four scalar parts to *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *Relations Between the Four General Products* §*The Four Scalar Parts*; it cites the two halves and their definition to *Introduction to the Remarkable Subspaces*, *Decompositions Along the Remarkable Subspaces* and *Hermitian and Skew-Hermitian Elements*; it cites the zero-divisor criterion to *Biquaternion Zero Divisors*; and it does not treat the idempotents, which are *Idempotents of the General Quaternionic Sesquilinear Product*, nor the operators, which are *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
+The article owns the square, its scalar part, its behaviour on the two halves and the square-zero set. It cites the rule and the four scalar parts to *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *Relations Between the Four General Products* §*The Four Scalar Parts*; it cites the two halves and their definition to *Introduction to the Remarkable Subspaces*, *Decompositions Along the Remarkable Subspaces* and *Hermitian and Skew-Hermitian Elements*; it cites the zero-divisor criterion to *Zero Divisors of the General Plain Algebra*; and it does not treat the idempotents, which are *Idempotents of the General Quaternionic Sesquilinear Product*, nor the operators, which are *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
 
 ## The Square of an Element
 
@@ -133,7 +133,7 @@ $$
 
 The last clause is the vanishing of the left-hand side. $\square$
 
-**Corollary.** Every square-zero element is a zero divisor, since $N = 0$ is the zero-divisor criterion of *Biquaternion Zero Divisors*.
+**Corollary.** Every square-zero element is a zero divisor, since $N = 0$ is the zero-divisor criterion of *Zero Divisors of the General Plain Algebra*.
 
 ### A Proper Subfamily of the Zero Divisors
 

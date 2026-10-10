@@ -9,7 +9,7 @@ The word *representation* is used here in the sense of a concrete realization of
 
 The article owns the coefficient space $\mathbb{R}^2$, the column and the row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces and the norm with its two real restrictions. It does not treat the matrix of multiplication on this space, which belongs to *Split-Complex Regular Element Representation*; it does not treat the polar forms, which belong to *Split-Complex Polar Element Representation*; and it introduces no physical vocabulary. The comparison throughout is with the complex field, whose two-component realization is the **definite** one and whose product rule differs from the present one in a single sign.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+j a'$ with $a = \operatorname{Re}A$, $a' = \operatorname{Im}A$; conjugate $\bar A = a-j a'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $N(A) = a^2-a'^2$.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+j a'$ with $a = \operatorname{Re}A$, $a' = \operatorname{Im}A$; conjugate $\bar A = a-j a'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $N(A) = a^2-a'^2$.
 
 ## The Coefficient Space
 
@@ -216,7 +216,7 @@ The complex field and the split-complex algebra are the two two-dimensional real
 | norm | $a^2+a'^2$, positive definite | $a^2-a'^2$, signature $(1,1)$ |
 | isotropic set | $\{0\}$ | the two lines $a = \pm a'$ |
 | zero divisors | none | the two idempotent lines |
-| idempotents beyond $0,1$ | none | $\Pi_\pm$ |
+| idempotents beyond $0,1$ | none | $\Pi_{1,2}$ |
 | isomorphism | field $\mathbb{C}$ | ring $\mathbb{R}\oplus\mathbb{R}$ |
 
 The two realizations share their coefficient space, their column and row, their product's second component, and their conjugation; they differ in the sign of the first component's $a' b'$ term, and that single difference turns a field into a ring with zero divisors and a Euclidean plane into a Lorentzian one. The split-complex algebra is thus the **indefinite two-component** algebra, the systematic opposite of the complex field, and the comparison table is the complete statement of the difference at the level of coordinates.

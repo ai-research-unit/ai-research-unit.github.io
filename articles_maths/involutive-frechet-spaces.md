@@ -42,7 +42,7 @@ form an increasing generating sequence of $\theta$-invariant seminorms defining 
 
 ## The Fixed and Negated Subspaces
 
-**Theorem (the summands are Fréchet).** The fixed subspace $E^{\theta}$ and the negated subspace $E^{-}$ are closed subspaces of $E$, hence Fréchet spaces for the induced structure and the restricted generating seminorms; in the antilinear case $E^{\theta}$ is a real Fréchet space. When $2$ is invertible the averaging maps $\pi_{\pm} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and
+**Theorem (the summands are Fréchet).** The fixed subspace $E^{\theta}$ and the negated subspace $E^{-}$ are closed subspaces of $E$, hence Fréchet spaces for the induced structure and the restricted generating seminorms; in the antilinear case $E^{\theta}$ is a real Fréchet space. When $2$ is invertible the averaging maps $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and
 
 $$
 E = E^{\theta} \oplus E^{-}
@@ -54,7 +54,7 @@ is a topological direct sum of Fréchet spaces.
 
 **Proposition (the fixed subspace and the closure).** The completion of the fixed subspace is the fixed subspace, $E^{\theta}$ being closed; for a dense involutive subspace $D \subseteq E$ the involution of $E$ is the extension of the involution of $D$ and $E^{\theta} = \overline{D^{\theta}}$.
 
-**Proof.** The direction $\supseteq$ is continuity and closedness, and $\subseteq$ is the density argument of *Involutive Banach Spaces*, carried over verbatim to Fréchet spaces using the boundedness of $\pi_{+}$.
+**Proof.** The direction $\supseteq$ is continuity and closedness, and $\subseteq$ is the density argument of *Involutive Banach Spaces*, carried over verbatim to Fréchet spaces using the boundedness of $\pi_1$.
 
 ## The Strong Dual
 
@@ -93,7 +93,7 @@ On a Fréchet space a $\varsigma$-semilinear involution is continuous exactly wh
 | $\lvert x\rvert_{\theta}$ | Equivalent invariant $F$-norm |
 | $q_{n} = \sup(p_{n}, p_{n}\circ\theta)$ | Invariant generating seminorms |
 | $E^{\theta}$, $E^{-}$ | Closed summands, Fréchet spaces |
-| $\pi_{\pm} = \frac12(\mathrm{id}\pm\theta)$ | Continuous averaging projections |
+| $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ | Continuous averaging projections |
 | $E'_{b}$ | Strong dual, complete |
 | $\theta'(\varphi) = \varphi\circ\theta$ | Transposed involution on the strong dual |
 | $(E^{-})^{\circ}$, $(E^{\theta})^{\circ}$ | Annihilators, the dual summands |

@@ -7,7 +7,7 @@ This article treats the multiplicative size of a split-complex number: the **nor
 
 The organisation follows the biquaternion article. The norm is defined and shown multiplicative; it is shown **not** to be definite, and its square root $|N|^{1/2}$ is shown to be a modulus only up to a sign, which produces the two regimes that recur throughout the category. The Euclidean form is then separated from the norm, as in the four-dimensional case, and the invertibility of an element is reduced to the non-vanishing of the norm. The group of units, its four components and its non-compactness are established, the elements are classified in three ways, and the distribution of the invertible elements among the distinguished subspaces is tabulated.
 
-The conventions are those of *Split-Complex Algebra*: the basis is $1$, $j$, with $j^2 = +1$, a general element is $A = a + j a'$ with $a = \operatorname{Re}A$ and $a' = \operatorname{Im}A$, the conjugate is $\bar{A} = a-j a'$, and the idempotent basis is $\Pi_\pm = \tfrac12(1\pm j)$ with $A = A_+\Pi_1 + A_-\Pi_2$, $A_\pm = a\pm a'$. The modulus $\rho = \sqrt{|N(A)|}$ is defined in this article as the positive scale carried by the polar factorisation. Every numerical claim below was recomputed in double precision.
+The conventions are those of *Split-Complex Algebra*: the basis is $1$, $j$, with $j^2 = +1$, a general element is $A = a + j a'$ with $a = \operatorname{Re}A$ and $a' = \operatorname{Im}A$, the conjugate is $\bar{A} = a-j a'$, and the idempotent basis is $\Pi_{1,2} = \tfrac12(1\pm j)$ with $A = A_+\Pi_1 + A_-\Pi_2$, $A_\pm = a\pm a'$. The modulus $\rho = \sqrt{|N(A)|}$ is defined in this article as the positive scale carried by the polar factorisation. Every numerical claim below was recomputed in double precision.
 
 ## The Norm
 
@@ -89,7 +89,7 @@ $$
 \mathrm{Cl}^+(1,1)=\langle 1,\omega\rangle\cong\mathbb{R}\oplus\mathbb{R}\cong\mathbb{D}, \qquad \mathrm{Cl}(1,1)\cong M_2(\mathbb{R}).
 $$
 
-So the split-complex algebra is the even Clifford algebra of its own norm, and the full Clifford algebra is the algebra of real $2\times2$ matrices. The two isotropic lines are the two eigenspaces of $\omega$, and the idempotents $\Pi_\pm$ are its spectral projections.
+So the split-complex algebra is the even Clifford algebra of its own norm, and the full Clifford algebra is the algebra of real $2\times2$ matrices. The two isotropic lines are the two eigenspaces of $\omega$, and the idempotents $\Pi_{1,2}$ are its spectral projections.
 
 ### The Modulus and the Two Regimes
 
@@ -346,8 +346,8 @@ An element is a unit exactly when its norm does not vanish, and then $A^{-1} = \
 | $g(A,B) = a b-a' b'$ | Polarisation of $N$, the split bilinear form |
 | $\mathrm{Cl}(1,1)\cong M_2(\mathbb{R})$, $\mathrm{Cl}^+(1,1)\cong\mathbb{D}$ | Clifford algebra of the form and its even part |
 | $A_\pm = a\pm a'$ | Idempotent coordinates, $A = A_+\Pi_1 + A_-\Pi_2$ |
-| $\Pi_\pm = (1\pm j)/2$ | Idempotents |
-| $\mathcal{N} = \{N=0\}$ | Isotropic cone, the two null lines $\mathbb{R}\Pi_\pm$ |
+| $\Pi_{1,2} = (1\pm j)/2$ | Idempotents |
+| $\mathcal{N} = \{N=0\}$ | Isotropic cone, the two null lines $\mathbb{R}\Pi_{1,2}$ |
 | $\rho = \sqrt{|N(A)|} = \sqrt{|A_+A_-|}$ | Modulus, multiplicative and absolutely homogeneous |
 | $\|A\|_E = \sqrt{a^2+a'^2}$ | Euclidean norm |
 | $\langle A,B\rangle = a b+a' b'$ | Euclidean inner product |

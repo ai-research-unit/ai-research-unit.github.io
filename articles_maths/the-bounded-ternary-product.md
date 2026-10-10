@@ -162,7 +162,11 @@ and on the completion $\widehat{A}$ the triple product, the binary product and t
 
 ### The Matrices
 
-**Example (the matrices, verdict: the triple product is bounded by one).** Let $A = M_{n}(\mathbb{C})$ with the operator norm, the conjugation and the product $X \star Y = XY^{*}$. The ternary product is $\{X,Y,Z\} = XY^{*}Z$, bounded with $\lVert\{X,Y,Z\}\rVert \leq \lVert X\rVert\lVert Y\rVert\lVert Z\rVert$; the pair operator is $\Theta_{X,Y}(Z) = XY^{*}Z$, bounded with $\lVert\Theta_{X,Y}\rVert \leq \lVert X\rVert\lVert Y\rVert$; and the completion is $A$ itself, the algebra being finite-dimensional, so the Banach $J^{*}$-triple of the example is the whole matrix algebra with the triple product.
+**Example (the matrices, verdict: the triple product is bounded by one).** Let $A = M_{n}(\mathbb{C})$ with the operator norm, the conjugation and the product $X \star Y = XY^{*}$. The ternary product is $\{X,Y,Z\} = XY^{*}Z$, bounded with $\lVert\{X,Y,Z\}\rVert \leq \lVert X\rVert\lVert Y\rVert\lVert Z\rVert$; the pair operator is $\Theta_{X,Y}(Z) = XY^{*}Z$, bounded with $\lVert\Theta_{X,Y}\rVert \leq \lVert X\rVert\lVert Y\rVert$; and the completion is $A$ itself, the algebra being finite-dimensional, so the Banach $J^{*}$-triple of the example is the whole matrix algebra with the triple product. At $n=2$ the triple product and its norm bound are
+
+$$
+X=Y=E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad Z=E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad \{X,Y,Z\}=E_{12}E_{12}^{*}E_{11}=E_{11},\qquad \lVert\{E_{12},E_{12},E_{11}\}\rVert=1=\lVert E_{12}\rVert^{2}\lVert E_{11}\rVert .
+$$
 
 ### The Field
 

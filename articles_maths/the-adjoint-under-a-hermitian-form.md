@@ -184,7 +184,13 @@ $$
 (AZB)^{\dagger} = A^{*}ZB^{*} , \qquad m_{X}^{\dagger} = m_{X^{*}} , \qquad R_{b}^{\dagger} = R_{b^{*}} , \qquad \bigl(Z \mapsto Z^{*}\bigr)^{\dagger} = \bigl(Z \mapsto Z^{*}\bigr) ,
 $$
 
-by the theorems above, read with the cyclicity of the trace, which is the compatibility. The conjugate left multiplication $\Lambda_{X}(Z) = XZ^{*}$ has $\Lambda_{X}^{\dagger}(Y) = Y^{*}X$, a conjugate sandwich; the inner automorphism $\alpha_{U}$ by a unitary matrix is a unitary operator; and the operator $Z \mapsto Z^{*}$ is self-adjoint. The example is the matrix model of the whole article, and it is the one in which every formula is read on the entries.
+by the theorems above, read with the cyclicity of the trace, which is the compatibility. The conjugate left multiplication $\Lambda_{X}(Z) = XZ^{*}$ has $\Lambda_{X}^{\dagger}(Y) = Y^{*}X$, a conjugate sandwich; the inner automorphism $\alpha_{U}$ by a unitary matrix is a unitary operator; and the operator $Z \mapsto Z^{*}$ is self-adjoint. The example is the matrix model of the whole article, and it is the one in which every formula is read on the entries. The Riesz map and the conjugate sandwich at $n=2$ are
+
+$$
+X=E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad Y=\begin{pmatrix}3&0\\0&4\end{pmatrix},\qquad \Lambda_X(Y)=XY^{*}=\begin{pmatrix}0&4\\0&0\end{pmatrix}\neq\begin{pmatrix}0&3\\0&0\end{pmatrix}=Y^{*}X=\Lambda_X^{\dagger}(Y),
+$$
+
+the two differing, so $\Lambda_X^{\dagger}$ is not $\Lambda_X$ but the conjugate sandwich written on the other side.
 
 ### The Indefinite Biquaternion Form
 

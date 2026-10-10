@@ -148,7 +148,13 @@ and the spaces of the algebraic layer are recovered by forgetting the norm, with
 
 ### The Matrices
 
-**Example (the matrices, verdict: the sandwiches span the conjugate-linear operators).** Let $A = M_n(\mathbb{C})$ with the operator norm, the conjugation and the product $S \star T = ST^{*}$. The bounded linear operators are all the linear maps, of complex dimension $n^{2}$; and every bounded conjugate-linear map is a finite sum of sandwich operators $X \mapsto AX^{*}B$, since the matrix units give $X \mapsto E_{ij}X^{*}E_{kl}$ and these span. The involution $X \mapsto X^{*}$ is the sandwich $S_{1,1}$ of *The Sesquilinear Sandwich Operator*, §*The Definition*, and it is the odd element of the graded algebra that generates the whole odd part by composition with the linear operators, as §*The Involution as an Operator* states.
+**Example (the matrices, verdict: the sandwiches span the conjugate-linear operators).** Let $A = M_n(\mathbb{C})$ with the operator norm, the conjugation and the product $S \star T = ST^{*}$. The bounded linear operators are all the linear maps, of complex dimension $n^{2}$; and every bounded conjugate-linear map is a finite sum of sandwich operators $X \mapsto AX^{*}B$, since the matrix units give $X \mapsto E_{ij}X^{*}E_{kl}$ and these span. At $n=2$ the sandwiches read off the entries,
+
+$$
+X=\begin{pmatrix}a&b\\c&d\end{pmatrix},\qquad E_{11}X^{*}E_{22}=3E_{12}\ \text{for}\ c=3,\qquad E_{12}X^{*}E_{12}=2E_{12}\ \text{for}\ b=2,\qquad E_{21}X^{*}E_{21}=3E_{21},
+$$
+
+the involution $X \mapsto X^{*} = I_2 X^{*} I_2$ being the sandwich $S_{1,1}$ with both slots the identity. That involution is the sandwich $S_{1,1}$ of *The Sesquilinear Sandwich Operator*, §*The Definition*, and it is the odd element of the graded algebra that generates the whole odd part by composition with the linear operators, as §*The Involution as an Operator* states.
 
 ### The Sequences
 

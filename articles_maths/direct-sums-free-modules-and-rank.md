@@ -221,13 +221,13 @@ Over a principal ideal domain, every submodule of a free module is free. This is
 
 ### Over the Split Complex Numbers
 
-The split complex numbers $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ are not a domain, and their module theory is governed by the idempotents $\pi_\pm=\tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_+^2=\pi_+$, $\pi_-^2=\pi_-$, $\pi_+\pi_-=0$ and $\pi_++\pi_-=1$. The ring isomorphism
+The split complex numbers $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ are not a domain, and their module theory is governed by the idempotents $\pi_{1,2}=\tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_1^2=\pi_1$, $\pi_2^2=\pi_2$, $\pi_1\pi_2=0$ and $\pi_1+\pi_2=1$. The ring isomorphism
 
 $$
 \mathbb{D} \cong \mathbb{R} \times \mathbb{R}, \qquad a+bj \longmapsto (a+b,\ a-b),
 $$
 
-sends $\pi_+$ to $(1,0)$ and $\pi_-$ to $(0,1)$. Every $\mathbb{D}$-module therefore splits as $M \cong M_+ \oplus M_-$ with $M_\pm$ real vector spaces, and
+sends $\pi_1$ to $(1,0)$ and $\pi_2$ to $(0,1)$. Every $\mathbb{D}$-module therefore splits as $M \cong M_+ \oplus M_-$ with $M_\pm$ real vector spaces, and
 
 $$
 \mathbb{D}^{(I)} \cong \mathbb{R}^{(I)} \oplus \mathbb{R}^{(I)}

@@ -50,7 +50,7 @@ The idempotents $\tilde\pi_{1,2}$ of the first plane are exactly the **standard 
 
 ### Subalgebra, Commutativity, Ring Structure
 
-As abstract rings, $\mathbb{D}_2 \cong \mathbb{D}_3 \cong \mathbb{R} \oplus \mathbb{R}$: the map sending $q_0 + q_2 e_2$ to the pair $(q_0 + q_2, q_0 - q_2)$ is a ring isomorphism, inverse to $(r, s) \mapsto \tfrac{1}{2}(r+s) + \tfrac{1}{2}(r-s) e_2$. Hence each split-complex subspace is a product of two copies of the field $\mathbb{R}$; it has exactly two maximal ideals, the kernels of the two projections, which are the spans of the idempotents $\tilde\pi_\mp$. Neither subspace is a field, and each has zero divisors.
+As abstract rings, $\mathbb{D}_2 \cong \mathbb{D}_3 \cong \mathbb{R} \oplus \mathbb{R}$: the map sending $q_0 + q_2 e_2$ to the pair $(q_0 + q_2, q_0 - q_2)$ is a ring isomorphism, inverse to $(r, s) \mapsto \tfrac{1}{2}(r+s) + \tfrac{1}{2}(r-s) e_2$. Hence each split-complex subspace is a product of two copies of the field $\mathbb{R}$; it has exactly two maximal ideals, the kernels of the two projections, which are the spans of the idempotents $\tilde\pi_{1,2}$. Neither subspace is a field, and each has zero divisors.
 
 ### Multiplication Tables
 

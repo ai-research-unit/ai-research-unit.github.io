@@ -277,7 +277,7 @@ which grows without bound, so the Hermitian norm of a state is not preserved. It
 
 The norm-preservation theorem of the preceding sections is algebraic: it is about the conjugation action on the algebra. Its dynamical counterpart is the statement that the unit of the Schrödinger equation is forced to be central if the norm is to be preserved for every generator.
 
-**The state-vector equation.** In the state module $\mathbb{B}p$, the equation is
+**The state-vector equation.** In the state module $\mathbb{B}\tilde\Pi_1$, the equation is
 $$
 i\hbar\,\partial_t\psi=J\tilde{H}\psi ,
 \qquad

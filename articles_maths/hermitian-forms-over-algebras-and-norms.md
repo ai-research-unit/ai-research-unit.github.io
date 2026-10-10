@@ -90,7 +90,11 @@ For $A = \mathbb{C}$ with the conjugation the norm is $N(z) = |z|^{2}$, multipli
 
 ### The Matrices
 
-On $M_2(\mathbb{C})$ the reduced norm is the determinant, its polarisation is $B(X,Y) = \tau(X\operatorname{adj}(Y))$, and the Hermitian form of the dagger is the Frobenius form $\tau(XY^{\dagger})$; the two differ, as the remark above shows.
+On $M_2(\mathbb{C})$ the reduced norm is the determinant, its polarisation is $B(X,Y) = \tau(X\operatorname{adj}(Y))$, and the Hermitian form of the dagger is the Frobenius form $\tau(XY^{\dagger})$; the two differ, as the remark above shows. At $n=2$ the difference is visible already on the identity:
+
+$$
+X=\begin{pmatrix}1&2\\3&4\end{pmatrix},\qquad Y=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad \operatorname{adj}Y=\begin{pmatrix}0&0\\0&1\end{pmatrix},\qquad \tau(X\operatorname{adj}Y)=4\neq1=\tau(XY^{\dagger}) .
+$$
 
 ### The Biquaternion Algebra
 

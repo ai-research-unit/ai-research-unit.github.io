@@ -94,7 +94,13 @@ with $u$ a partial isometry.
 
 ### Matrices
 
-For $A = M_n(\mathbb{C})$ the self-adjoint elements are the Hermitian matrices, the positive cone is the set of positive semidefinite matrices, the order is the Loewner order, and every positive matrix has a unique positive semidefinite square root; the polar decomposition is the classical one.
+For $A = M_n(\mathbb{C})$ the self-adjoint elements are the Hermitian matrices, the positive cone is the set of positive semidefinite matrices, the order is the Loewner order, and every positive matrix has a unique positive semidefinite square root; the polar decomposition is the classical one. At $n=2$ the order and the square root are
+
+$$
+A=\begin{pmatrix}2&1\\1&2\end{pmatrix}=A^{*}\succ0,\qquad A-I_2=\begin{pmatrix}1&1\\1&1\end{pmatrix}\succeq0,\qquad \sqrt A=\frac12\begin{pmatrix}\sqrt3+1&\sqrt3-1\\ \sqrt3-1&\sqrt3+1\end{pmatrix},\qquad (\sqrt A)^{2}=A ,
+$$
+
+the second display the Loewner order $I_2\preceq A$ and the last the positive semidefinite square root, of eigenvalues $\sqrt3$ and $1$.
 
 ### The Abelian Case
 

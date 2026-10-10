@@ -72,6 +72,8 @@ Three rules are read off the table. **A complex element carries a majuscule**, $
 
 The notation of this article already reads through the convention: the coefficients $q_\mu$ are real, the coefficients $Q_\mu = q_\mu + iq'_\mu$ are complex, and a general element of $\mathbb{B}$ is written $\tilde Q$.
 
+**The generic element and the four-momentum share the letter $\tilde{P}$.** A statement that holds for every element is written with $\tilde{P}$ or $\tilde{Q}$ — the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{Q})$, the commutator bracket $[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q} - \tilde{Q}\tilde{P}$, the general quaternionic bilinear form $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ and the multiplicativity $\langle\tilde{P}\tilde{Q},\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P},\tilde{P}\rangle_{\natural}\,\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ — and the same letter names a four-momentum or four-vector, $\tilde{P} = m\tilde{U}$. Both roles are inherited from the mathematical corpus, where *Idempotents of the General Plain Algebra* writes the generic element $\tilde{P}$ beside the idempotent $\tilde{\Pi}$.
+
 **What the prime marks.** The prime belongs to the **coefficients**, not to the physical coordinates. The four coefficients of a general element are complex, and writing each as a real part plus $i$ times a real part,
 
 $$
@@ -268,28 +270,51 @@ pairs the two sectors — in this series' usage, *the sectors*, without qualific
 
 The convention of *The element and its coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the series uses it throughout.
 
-An **idempotent** of the algebra is an element $\tilde{\Pi}$ with $\tilde{\Pi}^2 = \tilde{\Pi}$; a **projector** is a Hermitian idempotent, $\tilde{\Pi}^{*} = \tilde{\Pi}$, and the rank-one projectors of $\mathbb{M}_+$ are the **pure states** of the informational sector,
+An **idempotent** of the algebra is an element $\tilde{\Pi}$ with $\tilde{\Pi}^2 = \tilde{\Pi}$; a **projector** is a Hermitian idempotent, $\tilde{\Pi}^{*} = \tilde{\Pi}$, and the rank-one projectors of $\mathbb{M}_+$ are the **pure states** of the informational sector.
 
-$$
-\tilde{\Pi}_{1,2}(\hat{\mu}) = \tfrac{1}{2}\bigl(e_0 \pm i\,\hat{\mu}\bigr), \qquad \hat{\mu}\in\mathbb{R}^3,\ |\hat{\mu}| = 1 .
-$$
+**The case rule splits the glyph, as it does in the mathematical corpus.** The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Pi}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\pi}$; and those of the complex, split-complex and dual layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor. The series works in $\mathbb{B}$ and writes $\tilde{\Pi}$ throughout; the other two glyphs are the mathematical corpus's, and the layer fixes the glyph.
 
-A non-zero idempotent $\tilde{\Pi}$ generates the **minimal left ideal** $\mathbb{B}\tilde{\Pi}$, which is the state module of the companion articles; the classification of the idempotents, the polarisation identity, the Peirce decomposition and the projective geometry of the pure states are those of *Biquaternion Idempotents and Projections* and its companions in the mathematical corpus.
+A non-zero idempotent $\tilde{\Pi}$ generates the **minimal left ideal** $\mathbb{B}\tilde{\Pi}$, which is the state module of the companion articles; the standard pair, the classification of the idempotents, the polarisation identity, the Peirce decomposition, the matrix units and the projective geometry of the pure states are those of *Idempotents of the General Plain Algebra* and its companions in the mathematical corpus.
 
-The standard pair is $\tilde{\Pi}_1 = \tfrac12(e_0 + ie_3)$ and $\tilde{\Pi}_2 = \tfrac12(e_0 - ie_3)$, with $\tilde{\Pi}_1 + \tilde{\Pi}_2 = e_0$ and $\tilde{\Pi}_1\tilde{\Pi}_2 = 0$; the state module is $S = \mathbb{B}\tilde{\Pi}_1 = \mathbb{C}\{\tilde{\Pi}_1, \tilde{T}\}$ with $\tilde{T} = \tfrac12(ie_1 + e_2)$.
+**The subscript of an idempotent is always numeric**: a pair is $\tilde{\Pi}_1, \tilde{\Pi}_2$, a second pair in the same statement takes the next numbers, $\tilde{\Pi}_3, \tilde{\Pi}_4$, and the sign $\pm$ is never written as a subscript, a family indexed by a direction being written with its argument, $\tilde{\Pi}_{1,2}(\hat{\mu})$.
 
-The family $\tilde{\Pi}_{1,2}(\hat{\mu})$, written with its argument, is the two-sphere of pure states of the algebra in view; the central idempotents $\tfrac12(1\pm j)$ of the split-complex algebra are the separate pair $\tilde{\Pi}_{3,4}$.
-
-The upper-case tilde is therefore **split between two roles**, and the split is the reason the convention is stated:
+The idempotent glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
 | Symbol | Role |
 |---|---|
-| $\tilde{\Pi}$ | an idempotent, a projector or a pure state, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates |
-| $\tilde{P}$ | a four-momentum or four-vector, $\tilde{P} = m\tilde{U}$, and a *generic* element wherever a statement holds for every element |
+| $\tilde{\Pi}$ | an idempotent, a projector or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates |
+| $\tilde{\pi}$ | an idempotent of the quaternion or split-quaternion layer, in the mathematical corpus |
+| $\Pi$ | an idempotent of the complex, split-complex or dual layer, in the mathematical corpus |
 
-The generic element keeps its $\tilde{P}$ in the statements that hold for all elements: the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{Q})$, the commutator bracket $[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q} - \tilde{Q}\tilde{P}$, the general quaternionic bilinear form $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ and the multiplicativity $\langle\tilde{P}\tilde{Q},\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P},\tilde{P}\rangle_{\natural}\,\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. The same letter is the four-momentum. Both roles are inherited from the mathematical corpus, where *Biquaternion Idempotents and Projections* writes the idempotent $\tilde{\Pi}$ and the generic element $\tilde{P}$ side by side.
+The convention is one of **notation, not of substance**: an element written $\tilde{\Pi}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be idempotent, and the glyph records that knowledge at the point of use; a passage that needs a generic idempotent variable writes $\tilde{\Pi}$.
 
-The convention is one of **notation, not of substance**: an element written $\tilde{\Pi}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be idempotent, and the glyph records that knowledge at the point of use. Where a passage needs a generic idempotent variable it may write $\tilde{\Pi}$, and where it needs a generic element it writes $\tilde{P}$ or $\tilde{Q}$.
+### The Nilpotent Convention
+
+The nilpotents carry a symbol of their own, beside the idempotent $\tilde{\Pi}$ (§*The Idempotent Convention*): the lower-case $\tilde{\nu}$ of the quaternion and split-quaternion layers and the upper-case $\tilde{\Upsilon}$ of the biquaternion and split-biquaternion layers. **The capital is an upsilon and not a $Y$.**
+
+A **nilpotent** of the algebra is an element $\tilde{\nu}$ whose square vanishes,
+
+$$
+\tilde{\nu}^2 = 0 .
+$$
+
+**The square is read in a named product**, the algebra product unless the statement names another, as in the mathematical corpus (§*The nilpotent convention* of *Conventions in Mathematics*), and the class is relative to the product. The star preserves the class, $(\tilde{\nu}^{*})^2 = (\tilde{\nu}^2)^{*} = 0$, so the star pairs the nilpotents two by two and fixes none of them. A nilpotent is never a projector, a Hermitian nilpotent being zero, and it is never a state; the nilpotent is the partner of the idempotent in a minimal left ideal — for the standard pair $\mathbb{B}\tilde{\Upsilon}_2 = \mathbb{B}\tilde{\Pi}_1$ — and its products with its star are projectors of that ideal.
+
+**The subscript of a nilpotent is always numeric**, as for the idempotents: a pair is $\tilde{\nu}_1, \tilde{\nu}_2$, a second pair in the same statement takes the next numbers, and a sign is never written as a subscript.
+
+The nilpotents have no classification of the idempotent kind and no sphere of pure states. The square-zero set is not one family, and which set it is depends on the product, the instances being those of the mathematical corpus; the nilpotents of a state module are those of *The Biquaternion Vacuum as a Minimal Idempotent*, and the spin-down state of *Spin-1/2 Quantum Physics in Biquaternionic Form* is a nilpotent of the ideal of that vacuum.
+
+The nilpotent glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
+
+| Symbol | Role |
+|---|---|
+| $\tilde{\Upsilon}$ | a nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Upsilon}$ it generates |
+| $\tilde{\nu}$ | a nilpotent of the quaternion or split-quaternion layer |
+| $\Upsilon$ | a nilpotent of the complex, split-complex or dual layer, where no tilde is written |
+
+The convention is one of **notation, not of substance**: an element written $\tilde{\nu}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be nilpotent.
+
+The standard pair of nilpotents is $\tilde{\Upsilon}_1$ and $\tilde{\Upsilon}_2$, the off-diagonal Peirce units of *Biquaternion Ideals and Peirce Decomposition* exchanged by the star. The truncated ladder of *The Biquaternion Vacuum as a Minimal Idempotent* and of the Fock, vacuum and matrix-representation articles is this pair: those articles write it $\tilde{\Upsilon}_1$ and $\tilde{\Upsilon}_2$ wherever the algebra element is meant, and keep the ladder letters for the abstract operators.
 
 ### The Four-Vector Representation
 
@@ -749,8 +774,10 @@ The theme is single. In a framework whose algebra and sector assignment are non-
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Q}$ | An element of the algebra. The same symbol serves for the general element and for an element of any of the subspaces, whichever the passage at hand is about; the complex coefficients are $Q_\mu$, the real parameters of a four-dimensional subspace are $q_\mu$ and $q'_\mu$, the prime marking the slot that carries the $i$. |
-| $\tilde{\Pi}$ | An idempotent, projector or pure state, $\tilde{\Pi}^2 = \tilde{\Pi}$, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates; a four-momentum and a generic element keep $\tilde{P}$ (see §*The Idempotent Convention*) |
-| $\tilde{\Pi}_1, \tilde{\Pi}_2$ | The standard orthogonal idempotents, $\tilde{\Pi}_1 = \tfrac12(e_0+ie_3)$, $\tilde{\Pi}_2 = \tfrac12(e_0-ie_3)$, $\tilde{\Pi}_1+\tilde{\Pi}_2 = e_0$, $\tilde{\Pi}_1\tilde{\Pi}_2 = 0$ |
+| $\tilde{P}$ | A four-momentum or four-vector, $\tilde{P} = m\tilde{U}$, and a generic element in a statement that holds for every element (see §*The element and its coefficients*) |
+| $\tilde{\Pi}$ | An idempotent, projector or pure state, $\tilde{\Pi}^2 = \tilde{\Pi}$, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates (see §*The Idempotent Convention*). By the case rule the quaternion layer of the mathematical corpus writes $\tilde{\pi}$ and the tilde-free layers $\Pi$ |
+| $\tilde{\nu}$ | A nilpotent of the quaternion or split-quaternion layer, $\tilde{\nu}^2 = 0$ (see §*The Nilpotent Convention*) |
+| $\tilde{\Upsilon}$ | A nilpotent of the biquaternion or split-biquaternion layer, the upper-case glyph of the same letter; not a $Y$ |
 | $\tilde{Q}^{\natural}, \bar{\tilde{Q}}, \tilde{Q}^{*}, \tilde{Q}^{\flat}$ | Quaternion (the natural sign), complex, Hermitian and anti-Hermitian conjugation |
 | $\tilde{Q}^{\natural} \mapsto \epsilon M^{\mathsf T}\epsilon^{-1}$, $\bar{\tilde{Q}} \mapsto \epsilon\overline{M}\epsilon^{-1}$ | The two conjugations dressed by the antisymmetric form; $\epsilon = \Phi(-e_2)$ |
 | $\tilde{Q}^{*} \mapsto M^\dagger$, $\tilde{Q}^\flat \mapsto -M^\dagger$ | The two undressed ones. Entrywise conjugation of $M$ alone is not the image of any involution |

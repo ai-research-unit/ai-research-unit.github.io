@@ -19,7 +19,23 @@ so $X\mapsto X^{*}$ is the adjoint involution of $M_n(R)$ determined by $\Phi$ a
 
 **Proof.** $\langle Xx,y\rangle = \sigma(Xx)^{\mathrm t}\Phi y = \sigma(x)^{\mathrm t}\sigma(X)^{\mathrm t}\Phi y = \sigma(x)^{\mathrm t}\Phi(\Phi^{-1}\sigma(X)^{\mathrm t}\Phi)y = \langle x, X^{*}y\rangle$. The four laws are those of *Involutions of the Endomorphism Ring*.
 
-**Proposition (self-adjoint and skew-adjoint).** The **self-adjoint** matrices are those with $\sigma(X)^{\mathrm t}\Phi = \Phi X$, equivalently $X^{*} = X$; the **skew-adjoint** ones are those with $X^{*} = -X$. With $2$ invertible the ring is the sum of the two, and for $\Phi = I$ they are the matrices with $\sigma(X)^{\mathrm t} = \pm X$, the Hermitian and skew-Hermitian matrices of the coefficient involution.
+**Example (degree two).** For $n = 2$, $\sigma$ the complex conjugation and $\Phi = \operatorname{diag}(1,-1)$, the adjoint of
+
+$$
+X=\begin{pmatrix}i&1\\0&2\end{pmatrix}
+$$
+
+is
+
+$$
+X^{*}=\Phi^{-1}\sigma(X)^{\mathrm t}\Phi
+=\begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}-i&0\\1&2\end{pmatrix}\begin{pmatrix}1&0\\0&-1\end{pmatrix}
+=\begin{pmatrix}-i&0\\-1&2\end{pmatrix},
+$$
+
+the middle factor being $\sigma(X)^{\mathrm t}$; and with $\Phi = I$ the same involution is the conjugate transpose, $X^{*} = \begin{pmatrix}-i&0\\1&2\end{pmatrix}$.
+
+**Proposition (self-adjoint and skew-adjoint).** The **self-adjoint** matrices are those with $\sigma(X)^{\mathrm t}\Phi = \Phi X$, equivalently $X^{*} = X$; the **skew-adjoint** ones are those with $X^{*} = -X$. For $\Phi = \operatorname{diag}(1,-1)$ the self-adjoint matrices are $\begin{pmatrix}a&b\\-\bar b&d\end{pmatrix}$ with $a,d$ real, the matrix $\Phi$ itself among them. With $2$ invertible the ring is the sum of the two, and for $\Phi = I$ they are the matrices with $\sigma(X)^{\mathrm t} = \pm X$, the Hermitian and skew-Hermitian matrices of the coefficient involution.
 
 **Proof.** $X^{*} = X$ is $\Phi^{-1}\sigma(X)^{\mathrm t}\Phi = X$, i.e. $\sigma(X)^{\mathrm t}\Phi = \Phi X$; the rest is *Involutive Rings* applied to the adjoint involution.
 
@@ -51,13 +67,19 @@ Hence the trace pairing is $\sigma$-semilinear in the appropriate sense and its 
 
 ## Examples
 
-**(a) The real orthogonal case.** $R = \mathbb{R}$, $\sigma = \mathrm{id}$, $\Phi = I$: $X^{*} = X^{\mathrm t}$, the self-adjoint matrices are the symmetric ones, and $U_n$ is the orthogonal group.
+**(a) The real orthogonal case.** $R = \mathbb{R}$, $\sigma = \mathrm{id}$, $\Phi = I$: $X^{*} = X^{\mathrm t}$, the self-adjoint matrices are the symmetric ones, $\begin{pmatrix}1&2\\2&3\end{pmatrix}$ among them against the skew-adjoint $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, and $U_n$ is the orthogonal group.
 
-**(b) The complex unitary case.** $R = \mathbb{C}$, $\sigma$ the conjugation, $\Phi = I$: $X^{*} = \overline{X}^{\mathrm t}$, the self-adjoint matrices are the Hermitian ones, and $U_n$ is the unitary group. The adjoint involution is of the second kind.
+**(b) The complex unitary case.** $R = \mathbb{C}$, $\sigma$ the conjugation, $\Phi = I$: $X^{*} = \overline{X}^{\mathrm t}$, the self-adjoint matrices are the Hermitian ones, and $U_n$ is the unitary group. For $n = 2$ the Pauli matrix
 
-**(c) The symplectic case.** $\Phi = J$ with $J^{\mathrm t} = -J$, $J^2 = -1$: $X^{*} = -JX^{\mathrm t}J$ and $U_n$ is the symplectic group of *Matrix Rings with an Involution*.
+$$
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}
+$$
 
-**(d) The indefinite case.** $\Phi = \operatorname{diag}(1,\dots,1,-1,\dots,-1)$: the self-adjoint matrices are the Hermitian matrices of a signature, and the unitary group is the corresponding indefinite unitary group; the signature is a Part II invariant and is only named here.
+is Hermitian, and $\tfrac{1}{\sqrt2}\begin{pmatrix}1&-1\\1&1\end{pmatrix}$ is unitary. The adjoint involution is of the second kind.
+
+**(c) The symplectic case.** $\Phi = J$ with $J^{\mathrm t} = -J$, $J^2 = -1$, in the degree-two model $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$: $X^{*} = -JX^{\mathrm t}J$, the self-adjoint matrices are the scalar matrices, $-JX^{\mathrm t}J=X$ being equivalent to $X=\lambda I$, so that the matrix $J$ and its multiples are skew-adjoint, and $U_n$ is the symplectic group of *Matrix Rings with an Involution*.
+
+**(d) The indefinite case.** $\Phi = \operatorname{diag}(1,\dots,1,-1,\dots,-1)$, in the degree-two model $\Phi=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$: the self-adjoint matrices are the Hermitian matrices of a signature, and the unitary group is the corresponding indefinite unitary group; the signature is a Part II invariant and is only named here.
 
 ## Summary
 

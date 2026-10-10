@@ -7,7 +7,7 @@ The distinguished subspaces of $\mathbb{D}$ are the fixed and anti-fixed spaces 
 
 The single non-trivial involution is the conjugation $\bar{\cdot}$: it is the only involution distinct from the identity, and the idempotent conjugation coincides with it. Each involution splits the algebra into a fixed space and an anti-fixed space, so there is one decomposition into two lines, namely the scalar–split-vector decomposition, and there is a second, finer decomposition, the idempotent one, not induced by an involution. Every number below is recomputed from the definitions by comparison of coefficients.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$; conjugate $\bar A = a-ja'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $N(A) = A\bar A = a^2-a'^2$. The algebra is commutative, so there is no quaternion conjugation and no Hermitian decomposition; those slots of the four-dimensional case are empty here.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $N(A) = A\bar A = a^2-a'^2$. The algebra is commutative, so there is no quaternion conjugation and no Hermitian decomposition; those slots of the four-dimensional case are empty here.
 
 ## The Two Involutions
 
@@ -43,7 +43,7 @@ $$
 and the idempotent basis gives the **idempotent decomposition**
 
 $$
-\mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2, \qquad A = A_+\Pi_1 + A_-\Pi_2, \qquad A_\pm = A\Pi_\pm = a\pm a'.
+\mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2, \qquad A = A_+\Pi_1 + A_-\Pi_2, \qquad A_\pm = A\Pi_{1,2} = a\pm a'.
 $$
 
 The two decompositions are related by the coefficient change-of-basis in the plane $\mathbb{D}\cong\mathbb{R}^2$:
@@ -233,7 +233,7 @@ There is no remarkable-subspace lattice of the biquaternion kind, because there 
 | $\tilde{A} = \bar{A}$ | Idempotent conjugation; equal to $\bar{A}$ |
 | $\mathbb{R}_{\mathbb{D}}$ | Real subspace, $+1$ eigenspace of $\bar{\cdot}$ |
 | $j\mathbb{R}_{\mathbb{D}}$ | Split imaginary subspace, $-1$ eigenspace of $\bar{\cdot}$ |
-| $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents, basis of the finer decomposition |
+| $\Pi_{1,2} = \tfrac12(1\pm j)$ | Idempotents, basis of the finer decomposition |
 | $\mathbb{R}\Pi_1, \mathbb{R}\Pi_2$ | The two isotropic lines |
 | $A_r = a, A_i = a'$ | Eigenline coordinates |
 | $A_\pm = a\pm a'$ | Idempotent coordinates |

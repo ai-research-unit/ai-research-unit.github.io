@@ -81,7 +81,7 @@ extends to an involutive algebra anti-automorphism that preserves $N$ and interc
 
 ## Nonzero Nilpotents
 
-**Definition.** A nonzero element $\tilde q$ is **nilpotent** if $\tilde q^2 = 0$.
+**Definition.** A nonzero element $\tilde q$ is **nilpotent** if $\tilde q^2 = 0$; a nilpotent of the quaternion layer carries the symbol $\tilde\nu$ (§*The nilpotent convention* of *Conventions in Mathematics*).
 
 **Theorem (The Nilpotents).** A nonzero element $\tilde q$ is nilpotent if and only if
 

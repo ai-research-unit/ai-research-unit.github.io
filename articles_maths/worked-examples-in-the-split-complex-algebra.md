@@ -5,7 +5,7 @@
 
 This article works the structural facts of the split-complex algebra in explicit numbers. It is the computational companion of *Split-Complex Algebra* and its counterpart is *Biquaternions as a Vector Space over $\mathbb{C}$*: the general theory is established in the earlier articles, and here it is exercised on named elements, so that a reader can see the involutions, the idempotents, the minimal ideals, the zero divisors and the hyperbolic and parabolic elements in full. The norm, the unit criterion and the polar decomposition are a form and a distance and belong to *Split-Complex Norm and Invertibility* and to *Split-Complex Polar Element Representation*; the examples below use only the algebra.
 
-Every computation below uses the conventions of the category: $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$ with $a = \operatorname{Re}A$, $a' = \operatorname{Im}A$; conjugate $\bar A = a-ja'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$. Every number below was recomputed in double precision, and the general identities behind the examples are in the earlier articles.
+Every computation below uses the conventions of the category: $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$ with $a = \operatorname{Re}A$, $a' = \operatorname{Im}A$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$. Every number below was recomputed in double precision, and the general identities behind the examples are in the earlier articles.
 
 ## The Two Involutions and Their Fixed Spaces
 
@@ -54,7 +54,7 @@ A_+ = a+a' = 5, \qquad A_- = a-a' = 1, \qquad A = 5\Pi_1 + 1\Pi_2
 = 5\cdot\tfrac{1+j}{2} + 1\cdot\tfrac{1-j}{2} = 3 + 2j. \checkmark
 $$
 
-The two components $A_\pm = A\Pi_\pm$ are
+The two components $A_\pm = A\Pi_{1,2}$ are
 
 $$
 A\Pi_1 = 5\Pi_1 = \tfrac{5}{2}(1+j), \qquad A\Pi_2 = 1\Pi_2 = \tfrac{1}{2}(1-j).
@@ -130,7 +130,7 @@ which is the same computation in the idempotent basis, $A^n = 2^n\Pi_1 = 2^{n-1}
 
 ## Summary
 
-This article worked the algebra in explicit numbers. The two natural involutions of $\mathbb{D}$, the split-complex conjugation and the idempotent swap, were shown to coincide on $A = 3+2j$ and hence throughout, with fixed space the real line $\mathbb{R}_{\mathbb{D}}$ and anti-fixed space the split imaginary line $j\mathbb{R}_{\mathbb{D}}$. The idempotents $\Pi_\pm$ were exhibited, the decomposition $3+2j = 5\Pi_1 + 1\Pi_2$ computed, and the minimal ideals $\mathbb{R}\Pi_\pm$ identified.
+This article worked the algebra in explicit numbers. The two natural involutions of $\mathbb{D}$, the split-complex conjugation and the idempotent swap, were shown to coincide on $A = 3+2j$ and hence throughout, with fixed space the real line $\mathbb{R}_{\mathbb{D}}$ and anti-fixed space the split imaginary line $j\mathbb{R}_{\mathbb{D}}$. The idempotents $\Pi_{1,2}$ were exhibited, the decomposition $3+2j = 5\Pi_1 + 1\Pi_2$ computed, and the minimal ideals $\mathbb{R}\Pi_{1,2}$ identified.
 
 Explicit zero-divisor pairs were given, $a = 1+j = 2\Pi_1$ and $b = 2-2j = 4\Pi_2$ with $a b = 0$, and the general pair $(\lambda \Pi_1)(\mu \Pi_2) = 0$. Finally, the hyperbolic element $A = \tfrac54 + \tfrac34 j$, of coordinates $(2, \tfrac12)$ and powers $A^n = 2^n\Pi_1 + 2^{-n}\Pi_2$, was compared with the parabolic element $1+j$, of coordinates $(2,0)$, with $A^n = 2^{n-1}A$ and no inverse.
 
@@ -143,7 +143,7 @@ Explicit zero-divisor pairs were given, $a = 1+j = 2\Pi_1$ and $b = 2-2j = 4\Pi_
 | $\bar A = a - j a'$ | Split-complex conjugation (unique non-trivial involution) |
 | $A = (a-a')\Pi_1 + (a+a')\Pi_2$ | Idempotent conjugation; equal to $\bar A$ |
 | $\mathbb{R}_{\mathbb{D}}, j\mathbb{R}_{\mathbb{D}}$ | Fixed and anti-fixed spaces of the involution |
-| $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents |
+| $\Pi_{1,2} = \tfrac12(1\pm j)$ | Idempotents |
 | $A_\pm = a\pm a'$ | Idempotent coordinates, $A = A_+\Pi_1 + A_-\Pi_2$ |
 | $\mathbb{R}\Pi_1, \mathbb{R}\Pi_2$ | Minimal ideals / null lines |
 | $A_+A_-$ | Product of the idempotent coordinates; its sign classes the unit |

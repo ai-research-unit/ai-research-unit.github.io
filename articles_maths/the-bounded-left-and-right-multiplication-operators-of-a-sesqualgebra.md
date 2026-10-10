@@ -160,7 +160,13 @@ is the centre of the sesqualgebra, it is closed in $A$, and when $A$ is the comp
 
 ### The Matrices
 
-**Example (the matrices, verdict: the multiplications are bounded and the commutator is a sandwich).** Let $A = M_n(\mathbb{C})$ with the operator norm, the conjugation and the product $X \star Y = XY^{*}$. The left multiplication $L_X(Y) = XY^{*}$ is conjugate-linear with $\lVert L_X\rVert = \lVert X\rVert$, and the right multiplication $R_Y(X) = XY^{*}$ has the same norm. The two families do not commute: $L_XR_Y = S_{XY,1}$ while $R_YL_X = S_{X,Y^{*}}$, so $[L_X,R_Y] = 0$ for all $X$ exactly when $Y$ is Hermitian and central, that is a real scalar, and the commutator is the bounded difference $S_{XY,1} - S_{X,Y^{*}}$ of two sandwiches.
+**Example (the matrices, verdict: the multiplications are bounded and the commutator is a sandwich).** Let $A = M_n(\mathbb{C})$ with the operator norm, the conjugation and the product $X \star Y = XY^{*}$. The left multiplication $L_X(Y) = XY^{*}$ is conjugate-linear with $\lVert L_X\rVert = \lVert X\rVert$, and the right multiplication $R_Y(X) = XY^{*}$ has the same norm. The two families do not commute: $L_XR_Y = S_{XY,1}$ while $R_YL_X = S_{X,Y^{*}}$, so $[L_X,R_Y] = 0$ for all $X$ exactly when $Y$ is Hermitian and central, that is a real scalar, and the commutator is the bounded difference $S_{XY,1} - S_{X,Y^{*}}$ of two sandwiches. The two products differ already on the identity:
+
+$$
+X=Y=E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad [L_X,R_Y](I_2)=E_{12}E_{12}-E_{12}E_{21}=-E_{11}=\begin{pmatrix}-1&0\\0&0\end{pmatrix}\neq0,
+$$
+
+so a non-Hermitian $Y$ already spoils the commutation.
 
 ### The Field
 

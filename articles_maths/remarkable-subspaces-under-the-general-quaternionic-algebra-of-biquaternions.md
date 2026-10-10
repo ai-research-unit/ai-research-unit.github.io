@@ -50,7 +50,7 @@ The quaternion subspace is thus a **maximal positive definite** subspace of the 
 
 Three of the restrictions are indefinite with an isotropic cone; the centre is indefinite but anisotropic over $\mathbb{C}$; the two definite rows have no isotropic element.
 
-**The vector subspace.** The restriction is the complex quadratic $\sum_kQ_k^2$ on $\mathbb{C}\{e_1,e_2,e_3\}$, the pure zero-divisor cone of *Biquaternion Zero Divisors*. Its isotropic **complex** lines are the points of the conic $\{[Q]\in\mathbb{P}^2:\sum_kQ_k^2=0\}$; the line $\mathbb{C}(e_1+ie_2)$ is one of them, and the maximal totally isotropic dimension is $1$ over $\mathbb{C}$ and $3$ over $\mathbb{R}$, the realification having signature $(3,3)$ and the real $3$-space $\mathbb{R}\{e_1+ie_1,e_2+ie_2,e_3+ie_3\}$ being totally isotropic. The cone has real dimension $4$.
+**The vector subspace.** The restriction is the complex quadratic $\sum_kQ_k^2$ on $\mathbb{C}\{e_1,e_2,e_3\}$, the pure zero-divisor cone of *Zero Divisors of the General Plain Algebra*. Its isotropic **complex** lines are the points of the conic $\{[Q]\in\mathbb{P}^2:\sum_kQ_k^2=0\}$; the line $\mathbb{C}(e_1+ie_2)$ is one of them, and the maximal totally isotropic dimension is $1$ over $\mathbb{C}$ and $3$ over $\mathbb{R}$, the realification having signature $(3,3)$ and the real $3$-space $\mathbb{R}\{e_1+ie_1,e_2+ie_2,e_3+ie_3\}$ being totally isotropic. The cone has real dimension $4$.
 
 **The Hermitian and anti-Hermitian subspaces.** The restrictions are the two real forms of the interval, of signatures $(1,3)$ and $(3,1)$; their null sets are the two real light cones, of real dimension $3$, and the isotropic **real** lines of a light cone are parametrised by the real unit directions. The maximal totally isotropic dimension is $1$ in each, a null line; the non-pure zero divisors are the elements of these two cones.
 
@@ -100,7 +100,7 @@ on the centre, the vector subspace, the quaternion subspace, the anti-quaternion
 
 **The twist on a definite row.** For $\tilde Q=e_0+e_1$ the quaternion form gives $2$ and the $\varepsilon$-twisted form gives $1-1=0$, so the same element is a unit of the first form and a null element of the second: the exchange of the definite rows is visible on a single element, and it is the sign of the second coordinate that is responsible.
 
-**A non-pure zero divisor.** For $\tilde Q=e_0+ie_1$ the norm is $N=1+i^{2}=0$, and the element lies on the real light cone of the Hermitian subspace $\mathbb{M}_+$, of signature $(1,3)$; it is a zero divisor that is neither pure nor in the vector subspace, the two statements being the classification of *Biquaternion Zero Divisors*.
+**A non-pure zero divisor.** For $\tilde Q=e_0+ie_1$ the norm is $N=1+i^{2}=0$, and the element lies on the real light cone of the Hermitian subspace $\mathbb{M}_+$, of signature $(1,3)$; it is a zero divisor that is neither pure nor in the vector subspace, the two statements being the classification of *Zero Divisors of the General Plain Algebra*.
 
 **A maximal definite subspace of an indefinite row.** In the vector subspace, of signature $(3,3)$, the span $\mathbb{R}\{e_1,e_2,e_3\}$ is a maximal positive definite subspace of dimension $3$ and the span $\mathbb{R}\{ie_1,ie_2,ie_3\}$ a maximal negative definite one; the two are orthogonal for the realified form, since the pairing of a real direction with its imaginary companion is purely imaginary, and are exchanged by multiplication by $i$, which is the local form of the exchange of the two definite rows of the whole algebra.
 

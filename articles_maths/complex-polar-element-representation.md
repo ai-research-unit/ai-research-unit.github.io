@@ -79,6 +79,8 @@ $$
 
 and the exponential of $\nu\theta$ is trigonometric, parabolic or hyperbolic accordingly. This is one computation with three cases, and it is the rule that the whole family follows.
 
+**The $\nu$ of this section is a direction, not the nilpotent glyph.** It is written bare because it ranges over the two-dimensional algebras as well as the quaternionic ones. A nilpotent of the quaternion layer is written $\tilde\nu$, and one of the biquaternion layer $\tilde\Upsilon$ (§*The nilpotent convention* of *Conventions in Mathematics*), so the tilde is what distinguishes the square-zero element of the algebra from the bare direction classified here.
+
 **Proposition.** Let $\nu$ be an element of a real algebra of the family and let $\theta \in \mathbb{R}$. Then the exponential of $\nu\theta$ is given by the case
 
 | case | $\nu^2$ | $\exp(\nu\theta)$ | the summands |

@@ -50,7 +50,11 @@ For $A = \mathbb{C}[G]$ with the standard form the involution $g^{\dagger} = g^{
 
 ### Matrices
 
-For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form the involution is the conjugate transpose, the form is tracial, the left multiplications satisfy $L_{a^{*}} = L_a^{*}$, and the self-adjoint elements are the Hermitian matrices.
+For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form the involution is the conjugate transpose, the form is tracial, the left multiplications satisfy $L_{a^{*}} = L_a^{*}$, and the self-adjoint elements are the Hermitian matrices. The smallest instance of the identity $L_{a^{*}} = L_{a}^{*}$ is the pair
+
+$$
+a=\begin{pmatrix}1&i\\0&2\end{pmatrix},\qquad a^{*}=\begin{pmatrix}1&0\\-i&2\end{pmatrix},\qquad \tau(a)=3,\qquad \sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix}=\sigma_1^{*}.
+$$
 
 ## Summary
 

@@ -85,7 +85,7 @@ $$
 
 A field of definite chirality has no Dirac mass bilinear at all. This is the precise sense in which a lone Weyl field cannot carry a mass, and it is the algebra behind the Standard Model's chiral matter.
 
-**Framework caution.** Chirality is not visible to the algebra $\mathbb{B}$ alone. The algebra is simple, with one simple module; the two minimal left ideals $\mathbb{B}p$ and $\mathbb{B}q$, $p=\tfrac12(e_0+ie_3)$, $q=\tfrac12(e_0-ie_3)$, are both isomorphic to $S$ and carry the *same* defining representation. The chiral halves are $S$ and $\bar{S}$, and the distinction between them is a real-structure distinction: it appears only when complex conjugation is taken into account, or when the algebra is complexified, where the central idempotents $\tfrac12(1\pm\gamma_5)$ split
+**Framework caution.** Chirality is not visible to the algebra $\mathbb{B}$ alone. The algebra is simple, with one simple module; the two minimal left ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, $\tilde\Pi_2=\tfrac12(e_0-ie_3)$, are both isomorphic to $S$ and carry the *same* defining representation. The chiral halves are $S$ and $\bar{S}$, and the distinction between them is a real-structure distinction: it appears only when complex conjugation is taken into account, or when the algebra is complexified, where the central idempotents $\tfrac12(1\pm\gamma_5)$ split
 
 $$
 \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B} \;\cong\; M_2(\mathbb{C})\oplus M_2(\mathbb{C})
@@ -224,9 +224,9 @@ Three decompositions of the framework are in play in this article and its parent
 
 - The **chiral decomposition** is a decomposition of the spinor module $\Delta$ by the operator $\gamma_5$, into $S$ and $\bar{S}$. Its projectors are $P_L,P_R$, and it is the subject of this article.
 - The **sector decomposition** is a decomposition of the algebra $\mathbb{B}$ by Hermitian conjugation ${}^{*}$, into the anti-Hermitian $\mathbb{M}_-$ and the Hermitian $\mathbb{M}_+$. Its projectors are the maps $\tilde{Q}\mapsto\tfrac12(\tilde{Q}\mp\tilde{Q}^{*})$.
-- The **ideal decomposition** is the Peirce decomposition $\mathbb{B}=\mathbb{B}p\oplus\mathbb{B}q$ by the primitive idempotents $p=\tfrac12(e_0+ie_3)$, $q=\tfrac12(e_0-ie_3)$. Its two summands are *both* copies of $S$; it is not a chirality decomposition, as the read-list spinor article stresses.
+- The **ideal decomposition** is the Peirce decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ by the primitive idempotents $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, $\tilde\Pi_2=\tfrac12(e_0-ie_3)$. Its two summands are *both* copies of $S$; it is not a chirality decomposition, as the read-list spinor article stresses.
 
-The chiral projectors act on the module; the sector projectors act on the algebra; the Peirce projectors act on the algebra by right multiplication and produce two identical modules. The first two act on different spaces and compose to nothing; the first and third are different decompositions of different objects and, in particular, $P_L$ is not $p$ or $q$. The electron article of the corpus reaches the same conclusion from the physical side and records that "chirality is not the same as the sector split" and that "the two decompositions share no projector". This article inherits that finding unchanged; it is repeated here only because a reader of the gauge principle might be tempted to identify the internal chirality with the material/informational split, and the temptation is without algebraic support.
+The chiral projectors act on the module; the sector projectors act on the algebra; the Peirce projectors act on the algebra by right multiplication and produce two identical modules. The first two act on different spaces and compose to nothing; the first and third are different decompositions of different objects and, in particular, $P_L$ is not $\tilde\Pi_1$ or $\tilde\Pi_2$. The electron article of the corpus reaches the same conclusion from the physical side and records that "chirality is not the same as the sector split" and that "the two decompositions share no projector". This article inherits that finding unchanged; it is repeated here only because a reader of the gauge principle might be tempted to identify the internal chirality with the material/informational split, and the temptation is without algebraic support.
 
 ## What the Framework Supplies, Transcribes, and Does Not Supply
 
@@ -318,7 +318,7 @@ Two gaps are left visible. First, without a non-central gauge structure the fram
 | $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Q$ | Chiral curvature identity |
 | $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$ | Anti-Hermitian conjugation; the algebra's real structure ($\mathbb{C}$-antilinear, order-reversing) |
 | $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$ | Complexification; the two chiral summands |
-| $p=\tfrac12(e_0+ie_3),\ q=\tfrac12(e_0-ie_3)$ | Primitive idempotents (Peirce, not chirality) |
+| $\tilde\Pi_1=\tfrac12(e_0+ie_3),\ \tilde\Pi_2=\tfrac12(e_0-ie_3)$ | Primitive idempotents (Peirce, not chirality) |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing of the informational sector |
 

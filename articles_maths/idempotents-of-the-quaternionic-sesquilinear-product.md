@@ -19,7 +19,7 @@ $$
 
 each of them of norm $1$ and therefore a unit of the algebra. The family is the only positive element theory in the batch. Every other idempotent attached to the four general products is either trivial or a zero divisor: the idempotents of the plain product are the idempotents of the algebra and the nontrivial ones among them have $N = 0$; the nontrivial idempotents of the sibling general plain sesquilinear product are the rank-one Hermitian idempotents and have $N = 0$ as well; and the sibling general quaternionic bilinear product has only $0$ and $e_0$. Only this product has nontrivial idempotents, and only its nontrivial idempotents are units.
 
-The article owns the criterion, the classification, the family and the unit property. It does not repeat the rule of the product, which is *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; it uses the criterion of the plain product's idempotents, which is *Biquaternion Idempotents and Projections*, and the classification of the zero divisors, which is *Biquaternion Zero Divisors*; it cites the row of the comparison table that records the four idempotent sets, which is *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*; and it does not treat the square of a general element, the square-zero elements, or the operators of the multiplication, which are the subjects of the later articles of this group, *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* and *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
+The article owns the criterion, the classification, the family and the unit property. It does not repeat the rule of the product, which is *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; it uses the criterion of the plain product's idempotents, which is *Idempotents of the General Plain Algebra*, and the classification of the zero divisors, which is *Zero Divisors of the General Plain Algebra*; it cites the row of the comparison table that records the four idempotent sets, which is *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*; and it does not treat the square of a general element, the square-zero elements, or the operators of the multiplication, which are the subjects of the later articles of this group, *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* and *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
 
 ## The Idempotent Equation
 
@@ -111,7 +111,7 @@ The proposition is the sharpest difference of this multiplication from its three
 
 ### The Idempotents of the Plain Product
 
-The idempotents of the plain product $\tilde P\tilde Q$ are the idempotents of the algebra, classified in *Biquaternion Idempotents and Projections*: the elements $\tfrac12(e_0 + \xi i)$ with $\xi$ a root of $-e_0$, that is a pure quaternion $\xi$ with $\xi^{2} = -e_0$, together with $0$ and $e_0$. They fall into the Hermitian family, where $\xi$ is a real unit vector, and the non-Hermitian family, where it is not.
+The idempotents of the plain product $\tilde P\tilde Q$ are the idempotents of the algebra, classified in *Idempotents of the General Plain Algebra*: the elements $\tfrac12(e_0 + \xi i)$ with $\xi$ a root of $-e_0$, that is a pure quaternion $\xi$ with $\xi^{2} = -e_0$, together with $0$ and $e_0$. They fall into the Hermitian family, where $\xi$ is a real unit vector, and the non-Hermitian family, where it is not.
 
 **Proposition.** Every nontrivial idempotent of the plain product is a zero divisor and is not a unit.
 
@@ -121,7 +121,7 @@ $$
 N(\tilde\Pi) = \Bigl(\tfrac12\Bigr)^{2} + \sum_{k=1}^{3}\Bigl(\tfrac{i}{2}\xi_k\Bigr)^{2} = \tfrac14 - \tfrac14 \sum_{k=1}^{3}\xi_k^{2} = \tfrac14 - \tfrac14 \cdot 1 = 0 ,
 $$
 
-since $\xi$ is a unit pure quaternion and $(\xi,\xi) = 1$. The element is nonzero of norm $0$, so by the criterion of *Biquaternion Zero Divisors* it is a zero divisor and not a unit. $\square$
+since $\xi$ is a unit pure quaternion and $(\xi,\xi) = 1$. The element is nonzero of norm $0$, so by the criterion of *Zero Divisors of the General Plain Algebra* it is a zero divisor and not a unit. $\square$
 
 **Remark.** The family $\tfrac12(e_0 + \xi i)$ is therefore the exact opposite of the family of this article: it is infinite and it consists entirely of zero divisors, whereas the family is infinite and consists entirely of units. The plain product and this one have their idempotents disjoint except for the two trivial ones, and the difference is carried by the sign of the vector contribution to the norm.
 
@@ -133,7 +133,7 @@ $$
 \tilde\Pi_1(\hat\mu) = \tfrac12\bigl(e_0 + i\hat\mu\bigr) , \qquad \hat\mu \in \mathbb{R}^{3} , \quad \lvert\hat\mu\rvert = 1 ,
 $$
 
-the pure states of *Biquaternion Idempotents and Projections*.
+the pure states of *Idempotents of the General Plain Algebra*.
 
 **Proposition.** Every nontrivial idempotent of the sibling sesquilinear product is isotropic for this multiplication,
 

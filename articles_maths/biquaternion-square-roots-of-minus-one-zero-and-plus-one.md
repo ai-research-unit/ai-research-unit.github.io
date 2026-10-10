@@ -8,7 +8,7 @@ $$
 \tilde P^2 = -1, \qquad \tilde P^2 = 0, \qquad \tilde P^2 = +1.
 $$
 
-It relates to *Biquaternion Idempotents and Projections* through the bijection between the roots of $-1$ and the idempotents established in §*The Relation to the Idempotents*. The goal here is to state the classification precisely and to prove it. The classification of $\tilde P^2 = \tilde Q$ for an arbitrary $\tilde Q \in \mathbb{B}$, by the same vector–scalar split and free of Clifford algebras, is the subject of *Biquaternion Square Roots of a General Element*; the three cases treated here are its degenerate data, and the algorithm is deliberately not reproduced, since these three sets are small enough to be found directly.
+It relates to *Idempotents of the General Plain Algebra* through the bijection between the roots of $-1$ and the idempotents established in §*The Relation to the Idempotents*. The goal here is to state the classification precisely and to prove it. The classification of $\tilde P^2 = \tilde Q$ for an arbitrary $\tilde Q \in \mathbb{B}$, by the same vector–scalar split and free of Clifford algebras, is the subject of *Biquaternion Square Roots of a General Element*; the three cases treated here are its degenerate data, and the algorithm is deliberately not reproduced, since these three sets are small enough to be found directly.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations and its remarkable subspaces.
 
@@ -275,13 +275,13 @@ that is, writing $P_k = p_k + ip'_k$, the pair of real equations $p_1^2+p_2^2+p_
 
 For a pure $\tilde P$ with $(\boldsymbol{P},\boldsymbol{P}) = 0$ the scalar part of $\tilde P^2$ is $-(\boldsymbol{P},\boldsymbol{P}) = 0$ and the vector part is $2P_0\boldsymbol{P} = 0$, and the two cases are exhaustive by the reduction above. ✓
 
-The nonzero roots of $0$ are exactly the **nilpotents** of the algebra, and they form the **nilpotent cone** of the pure subspace. An example is $\tilde P = e_1 + ie_2$, for which
+The nonzero roots of $0$ are exactly the **nilpotents** of the algebra, written $\tilde\Upsilon$ where the nilpotency is the point (§*The nilpotent convention* of *Conventions in Mathematics*), and they form the **nilpotent cone** of the pure subspace. An example is $\tilde P = e_1 + ie_2$, for which
 
 $$
 (e_1+ie_2)^2 = e_1^2 + i^2e_2^2 + i(e_1e_2+e_2e_1) = -1 + 1 + 0 = 0 .
 $$
 
-The set is the **nilpotent** family of the zero-divisor set of $\mathbb{B}$; the whole zero-divisor set — the elements of vanishing norm, which splits into these nilpotents and the non-pure zero divisors — its two families and the criterion in terms of the scalar part, are the subject of *Biquaternion Zero Divisors*. It is named here only to complete the list of the three central values, and not developed.
+The set is the **nilpotent** family of the zero-divisor set of $\mathbb{B}$; the whole zero-divisor set — the elements of vanishing norm, which splits into these nilpotents and the non-pure zero divisors — its two families and the criterion in terms of the scalar part, are the subject of *Zero Divisors of the General Plain Algebra*. It is named here only to complete the list of the three central values, and not developed.
 
 ## The Roots of Plus One
 
@@ -351,13 +351,13 @@ $$
 \tilde P \longmapsto \tilde\Pi_1(\tilde P) = \tfrac{1}{2}(e_0 + \tilde P i)
 $$
 
-is a bijection from the set of roots of $-1$ onto the set of idempotents, under which the complementary pairs $\{\tilde\Pi, e_0 - \tilde\Pi\}$ correspond to the classes $\{\tilde P, -\tilde P\}$, and under which the three families of roots give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and the idempotents lying in none of the four four-dimensional subspaces. The construction of the idempotent, the proof of the bijection and the projection interpretation are the subject of *Biquaternion Idempotents and Projections*.
+is a bijection from the set of roots of $-1$ onto the set of idempotents, under which the complementary pairs $\{\tilde\Pi, e_0 - \tilde\Pi\}$ correspond to the classes $\{\tilde P, -\tilde P\}$, and under which the three families of roots give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and the idempotents lying in none of the four four-dimensional subspaces. The construction of the idempotent, the proof of the bijection and the projection interpretation are the subject of *Idempotents of the General Plain Algebra*.
 
 ## The Relation to the Zero Divisors
 
 ### The Idempotents as Zero Divisors
 
-Every non-trivial idempotent is a zero divisor, $\tilde\Pi(e_0 - \tilde\Pi) = 0$ with both factors nonzero (the construction of $\tilde\Pi$ is in *Biquaternion Idempotents and Projections*). The trivial idempotents $0$ and $e_0$ are not zero divisors: $0$ is excluded by the definition, and $e_0$ is a unit.
+Every non-trivial idempotent is a zero divisor, $\tilde\Pi(e_0 - \tilde\Pi) = 0$ with both factors nonzero (the construction of $\tilde\Pi$ is in *Idempotents of the General Plain Algebra*). The trivial idempotents $0$ and $e_0$ are not zero divisors: $0$ is excluded by the definition, and $e_0$ is a unit.
 
 ### The Roots as Invertible Elements
 
@@ -381,7 +381,7 @@ The square roots of $-1$ are exactly:
 
 The scalar case gives the trivial roots. The pure case reduces to $(\boldsymbol{P}, \boldsymbol{P}) = 1$, which splits into the real and non-trivial families according to whether the imaginary part $\boldsymbol{p}'$ of the pure biquaternion vanishes. The trivial roots are the two elements $\pm i$. The real roots are the family $\pm\boldsymbol{p}$ cut out by the single constraint $p_1^2 + p_2^2 + p_3^2 = 1$, leaving two free real parameters. The non-trivial roots are the elements $\boldsymbol{p} + i\boldsymbol{p}'$ cut out by the two constraints $p_1^2 + p_2^2 + p_3^2 - p_1'^2 - p_2'^2 - p_3'^2 = 1$ and $p_1p'_1 + p_2p'_2 + p_3p'_3 = 0$, four free real parameters in all. All roots except the trivial ones are pure, hence lie in the six-real-dimensional vector subspace of pure biquaternions.
 
-The square roots of $0$ are the element $0$ together with the pure biquaternions $\tilde P = P_1e_1+P_2e_2+P_3e_3$ with $P_1^2+P_2^2+P_3^2=0$, a four-real-parameter nilpotent cone whose nonzero elements are the nilpotents of the algebra, for example $e_1+ie_2$. Unlike the roots of $-1$ and $+1$, which are units, the nonzero roots of $0$ are zero divisors; the full structure of the cone, and the classification of the zero divisors it is part of, are in *Biquaternion Zero Divisors*, and the classification of $\tilde P^2=\tilde Q$ for a general $\tilde Q$ is in *Biquaternion Square Roots of a General Element*.
+The square roots of $0$ are the element $0$ together with the pure biquaternions $\tilde P = P_1e_1+P_2e_2+P_3e_3$ with $P_1^2+P_2^2+P_3^2=0$, a four-real-parameter nilpotent cone whose nonzero elements are the nilpotents of the algebra, for example $e_1+ie_2$. Unlike the roots of $-1$ and $+1$, which are units, the nonzero roots of $0$ are zero divisors; the full structure of the cone, and the classification of the zero divisors it is part of, are in *Zero Divisors of the General Plain Algebra*, and the classification of $\tilde P^2=\tilde Q$ for a general $\tilde Q$ is in *Biquaternion Square Roots of a General Element*.
 
 The square roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: $\tilde P_+ = \tilde P i$. They are not used in the idempotent classification, but they appear in the theory of the biquaternion exponential.
 

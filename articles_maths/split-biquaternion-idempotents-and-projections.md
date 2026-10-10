@@ -61,21 +61,21 @@ $$
 \tilde\Pi_1^{*} = \tilde\Pi_2, \qquad \tilde\Pi_2^{*} = \tilde\Pi_1, \qquad \tilde\Pi_1^\flat = -\tilde\Pi_2, \qquad \tilde\Pi_2^\flat = -\tilde\Pi_1,
 $$
 
-so the Hermitian and anti-Hermitian conjugations swap the two idempotents (up to sign). The idempotents $\tilde\Pi_{1,2}$ are therefore **not** Hermitian: $\tilde\Pi_{1,2}^{*} = \tilde\Pi_\mp \neq \tilde\Pi_{1,2}$.
+so the Hermitian and anti-Hermitian conjugations swap the two idempotents (up to sign). The idempotents $\tilde\Pi_{1,2}$ are therefore **not** Hermitian: $\tilde\Pi_1^{*} = \tilde\Pi_2 \neq \tilde\Pi_1$, and likewise with the two exchanged.
 
 ## The Classification of the Idempotents
 
 **Theorem.** The idempotents of $\mathbb{H}_{\mathbb{D}}$ are exactly $0$, $\tilde\Pi_1$, $\tilde\Pi_2$ and $1$. There are no others.
 
-**Proof.** Write an idempotent in the idempotent basis as $\tilde P = \tilde P_+ \tilde\Pi_1 + \tilde P_- \tilde\Pi_2$ with $\tilde P_\pm = \tilde P \tilde\Pi_{1,2} \in \mathbb{H}$. Since $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$ and $\tilde\Pi_1 \tilde\Pi_2 = 0$, the square is
+**Proof.** Write an idempotent in the idempotent basis as $\tilde P = \tilde P_1 \tilde\Pi_1 + \tilde P_2 \tilde\Pi_2$ with $\tilde P_{1,2} = \tilde P \tilde\Pi_{1,2} \in \mathbb{H}$. Since $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$ and $\tilde\Pi_1 \tilde\Pi_2 = 0$, the square is
 
 $$
-\tilde P^2 = \tilde P_+^2 \tilde\Pi_1 + \tilde P_-^2 \tilde\Pi_2.
+\tilde P^2 = \tilde P_1^2 \tilde\Pi_1 + \tilde P_2^2 \tilde\Pi_2.
 $$
 
-Hence $\tilde P^2 = \tilde P$ is equivalent to the pair of equations $\tilde P_+^2 = \tilde P_+$ and $\tilde P_-^2 = \tilde P_-$ in the quaternion algebra $\mathbb{H}$. Each $\tilde P_\pm$ is therefore an idempotent of $\mathbb{H}$.
+Hence $\tilde P^2 = \tilde P$ is equivalent to the pair of equations $\tilde P_1^2 = \tilde P_1$ and $\tilde P_2^2 = \tilde P_2$ in the quaternion algebra $\mathbb{H}$. Each $\tilde P_{1,2}$ is therefore an idempotent of $\mathbb{H}$.
 
-The quaternion algebra is a division algebra, so its only idempotents are $0$ and $1$: if $\tilde q = a + \mathbf{v}$ with $a \in \mathbb{R}$ and $\mathbf{v}$ pure, then $\tilde q^2 = \tilde q$ gives $2a\mathbf{v} = \mathbf{v}$ and $a^2 - |\mathbf{v}|^2 = a$; if $\mathbf{v} = 0$ then $a^2 = a$, so $a \in \{0, 1\}$; if $\mathbf{v} \neq 0$ then $a = 1/2$ and then $|\mathbf{v}|^2 = -1/4$, which is impossible. Hence $\tilde P_\pm \in \{0, 1\}$, and the four combinations give
+The quaternion algebra is a division algebra, so its only idempotents are $0$ and $1$: if $\tilde q = a + \mathbf{v}$ with $a \in \mathbb{R}$ and $\mathbf{v}$ pure, then $\tilde q^2 = \tilde q$ gives $2a\mathbf{v} = \mathbf{v}$ and $a^2 - |\mathbf{v}|^2 = a$; if $\mathbf{v} = 0$ then $a^2 = a$, so $a \in \{0, 1\}$; if $\mathbf{v} \neq 0$ then $a = 1/2$ and then $|\mathbf{v}|^2 = -1/4$, which is impossible. Hence $\tilde P_{1,2} \in \{0, 1\}$, and the four combinations give
 
 $$
 \tilde P = 0, \qquad \tilde P = \tilde\Pi_1, \qquad \tilde P = \tilde\Pi_2, \qquad \tilde P = \tilde\Pi_1 + \tilde\Pi_2 = 1.
@@ -127,7 +127,7 @@ $$
 
 with $\mathbb{H} \tilde\Pi_1 = \mathbb{H}_{\mathbb{D}} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2 = \mathbb{H}_{\mathbb{D}} \tilde\Pi_2$.
 
-A **Hermitian idempotent** is one satisfying $\tilde{P}^{*} = \tilde P$; in $\mathbb{B}$ these are the orthogonal projections for the Hermitian form and the ones that occur in the spectral decomposition of a Hermitian element. In $\mathbb{H}_{\mathbb{D}}$ there is no nontrivial Hermitian idempotent: the calculation $\tilde\Pi_{1,2}^{*} = \tilde\Pi_\mp$ of the second section shows that the two nontrivial idempotents are interchanged by ${}^{*}$, and neither is fixed. The idempotent decomposition of $\mathbb{H}_{\mathbb{D}}$ is therefore a decomposition into two ideals that are exchanged by the Hermitian conjugation, not a decomposition into orthogonal projections.
+A **Hermitian idempotent** is one satisfying $\tilde{P}^{*} = \tilde P$; in $\mathbb{B}$ these are the orthogonal projections for the Hermitian form and the ones that occur in the spectral decomposition of a Hermitian element. In $\mathbb{H}_{\mathbb{D}}$ there is no nontrivial Hermitian idempotent: the calculation $\tilde\Pi_1^{*} = \tilde\Pi_2$ of the second section shows that the two nontrivial idempotents are interchanged by ${}^{*}$, and neither is fixed. The idempotent decomposition of $\mathbb{H}_{\mathbb{D}}$ is therefore a decomposition into two ideals that are exchanged by the Hermitian conjugation, not a decomposition into orthogonal projections.
 
 ## Idempotents and the Zero Divisors
 
@@ -159,7 +159,7 @@ $$
 
 **Proof.** Every $\tilde{Q}$ satisfies $\tilde{Q} = \tilde{Q}(\tilde\Pi_1 + \tilde\Pi_2) = \tilde{Q} \tilde\Pi_1 + \tilde{Q} \tilde\Pi_2$, and the intersection is zero: if $\tilde{Q} \tilde\Pi_1 = \tilde P \tilde\Pi_2$, then multiplying on the right by $\tilde\Pi_1$ gives $\tilde{Q} \tilde\Pi_1 = 0$. In the idempotent basis $\tilde{Q} \tilde\Pi_1 = \tilde{Q}_+ \tilde\Pi_1$ with $\tilde{Q}_+ \in \mathbb{H}$, so $\mathbb{H} \tilde\Pi_1$ is the image of the projection $\tilde{Q} \mapsto \tilde{Q}_+ \tilde\Pi_1$, a real vector space of dimension $4$; the same holds for $\tilde\Pi_2$, and $4 + 4 = 8$ accounts for the whole algebra. For minimality, the map $\mathbb{H}_{\mathbb{D}} \to \mathbb{H} \tilde\Pi_1$, $\tilde{Q} \mapsto \tilde{Q} \tilde\Pi_1$, is onto with kernel $\mathbb{H} \tilde\Pi_2$; any nonzero left ideal contained in $\mathbb{H} \tilde\Pi_1$ therefore has a preimage that is a left ideal strictly containing $\mathbb{H} \tilde\Pi_2$, and since the quotient $\mathbb{H}_{\mathbb{D}} / \mathbb{H} \tilde\Pi_2 \cong \mathbb{H}$ is a division algebra, that ideal must be all of $\mathbb{H} \tilde\Pi_1$. Equivalently, $\tilde\Pi_1 \mathbb{H}_{\mathbb{D}} \tilde\Pi_1 = \mathbb{H} \tilde\Pi_1 \cong \mathbb{H}$ is a division ring, so $\tilde\Pi_1$ is primitive.
 
-The counterpart statement in the biquaternion algebra is different in kind. There the standard idempotents $p = \tfrac{1}{2}(e_0 + ie_3)$ and $q = \tfrac{1}{2}(e_0 - ie_3)$ are **not** central, the ideals $\mathbb{B}p$ and $\mathbb{B}q$ are minimal **left** ideals only, and each is isomorphic to $\mathbb{C}^2$. Here centrality upgrades the left ideals to two-sided ideals and replaces $\mathbb{C}^2$ by the division algebra $\mathbb{H}$. The ideals themselves, their lattice, the distinction between the two summands, and the Peirce decomposition associated with them are developed in *Split-Biquaternion Ideals and Peirce Decomposition*.
+The counterpart statement in the biquaternion algebra is different in kind. There the standard idempotents $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$ and $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3)$ are **not** central, the ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ are minimal **left** ideals only, and each is isomorphic to $\mathbb{C}^2$. Here centrality upgrades the left ideals to two-sided ideals and replaces $\mathbb{C}^2$ by the division algebra $\mathbb{H}$. The ideals themselves, their lattice, the distinction between the two summands, and the Peirce decomposition associated with them are developed in *Split-Biquaternion Ideals and Peirce Decomposition*.
 
 ## The Dimension of the Set of Idempotents
 
@@ -177,7 +177,7 @@ $$
 
 which are central, lie in the split complex centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, and give the idempotent decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$ into two minimal left ideals, each isomorphic to the quaternion division algebra $\mathbb{H}$.
 
-There are exactly four idempotents, namely $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and all of them are central; equivalently, $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ is a product of two division algebras, and a product of two division algebras has a four-point idempotent set. The nontrivial idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ are primitive and orthogonal, and together with $0$ and $1$ they exhaust the primitive idempotents. Because there is no bijection with the roots of $-1$ — that set is $S^2 \times S^2$, of dimension $4$ — the biquaternion correspondence between idempotents and roots of $-1$ does not transfer, and the idempotents are confined to the centre. The Hermitian conjugation interchanges $\tilde\Pi_1$ and $\tilde\Pi_2$, so no nontrivial idempotent is Hermitian and the idempotent decomposition is not a decomposition into orthogonal projections. Each nontrivial idempotent is a zero divisor, with annihilator the complementary ideal $\mathbb{H} \tilde\Pi_\mp$ of real dimension $4$; the zero divisors themselves form the union of the two ideals, and are treated in *Split-Biquaternion Zero Divisors*.
+There are exactly four idempotents, namely $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and all of them are central; equivalently, $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ is a product of two division algebras, and a product of two division algebras has a four-point idempotent set. The nontrivial idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ are primitive and orthogonal, and together with $0$ and $1$ they exhaust the primitive idempotents. Because there is no bijection with the roots of $-1$ — that set is $S^2 \times S^2$, of dimension $4$ — the biquaternion correspondence between idempotents and roots of $-1$ does not transfer, and the idempotents are confined to the centre. The Hermitian conjugation interchanges $\tilde\Pi_1$ and $\tilde\Pi_2$, so no nontrivial idempotent is Hermitian and the idempotent decomposition is not a decomposition into orthogonal projections. Each nontrivial idempotent is a zero divisor, with annihilator the complementary ideal: $\mathrm{Ann}(\tilde\Pi_1) = \mathbb{H} \tilde\Pi_2$ and $\mathrm{Ann}(\tilde\Pi_2) = \mathbb{H} \tilde\Pi_1$, each of real dimension $4$; the zero divisors themselves form the union of the two ideals, and are treated in *Split-Biquaternion Zero Divisors*.
 
 ## Summary of Notation
 
@@ -188,8 +188,8 @@ There are exactly four idempotents, namely $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and
 | $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$ |
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | Centre, the split complex subspace; contains every idempotent |
 | $\mathbb{H} \tilde\Pi_1, \mathbb{H} \tilde\Pi_2$ | The two minimal left (and two-sided) ideals, each $\cong \mathbb{H}$ |
-| $\tilde\Pi_{1,2}^{*} = \tilde\Pi_\mp$ | The Hermitian conjugation exchanges the idempotents |
-| $\mathrm{Ann}(\tilde\Pi_{1,2}) = \mathbb{H} \tilde\Pi_\mp$ | Annihilator of an idempotent |
+| $\tilde\Pi_1^{*} = \tilde\Pi_2$, $\tilde\Pi_2^{*} = \tilde\Pi_1$ | The Hermitian conjugation exchanges the idempotents |
+| $\mathrm{Ann}(\tilde\Pi_1) = \mathbb{H} \tilde\Pi_2$, $\mathrm{Ann}(\tilde\Pi_2) = \mathbb{H} \tilde\Pi_1$ | Annihilator of an idempotent |
 | $\xi$, $\mu_\pm$ | Root of $-1$; unit pure real quaternion components |
 | $S^2 \times S^2$ | The topological product form of the root set, established in *Split-Biquaternion Analysis* |
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Split-Biquaternion norm, named only; the subject of *Split-Biquaternion Norm and Invertibility* |

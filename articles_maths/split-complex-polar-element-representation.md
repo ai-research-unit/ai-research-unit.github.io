@@ -266,7 +266,7 @@ Every split-complex number $A$ with $N(A) \neq 0$ has exactly one polar represen
 | $A = a + j a'$ | a split-complex number, $a$ and $a'$ real |
 | $\bar{A} = a - j a'$ | the split-complex conjugate |
 | $N(A) = A\bar{A} = a^2-a'^2$ | the norm, indefinite of signature $(1,1)$ |
-| $\Pi_\pm = (1\pm j)/2$ | the idempotent basis, $A = A_+\Pi_1 + A_-\Pi_2$ |
+| $\Pi_{1,2} = (1\pm j)/2$ | the idempotent basis, $A = A_+\Pi_1 + A_-\Pi_2$ |
 | $\rho = \sqrt{\lvert N(A)\rvert} = \sqrt{\lvert A_+A_-\rvert}$ | the modulus, a positive real |
 | $u = A/\rho$ | the unit factor, $\lvert N(u)\rvert = 1$ |
 | $\phi$ | the hyperbolic angle or rapidity, $\phi \in \mathbb{R}$ |

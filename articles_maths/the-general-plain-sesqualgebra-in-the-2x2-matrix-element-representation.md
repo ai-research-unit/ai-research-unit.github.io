@@ -153,7 +153,19 @@ $$
 \mathbb{B}^{\times}\cong GL_2(\mathbb{C}),\qquad \{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=1\}\cong SL_2(\mathbb{C}),
 $$
 
-and their unitary slices are $U(2)$ and $SU(2)$, with $SU(2)\cong\mathrm{Spin}(3)$ and $SU(2)/\{\pm I\}\cong SO(3)$. The unit-norm group is the group that acts on the Hermitian subspace by $*$-congruence, $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$, which in the model is $X\mapsto AXA^{\dagger}$ on the Hermitian matrices.
+and their unitary slices are $U(2)$ and $SU(2)$, with $SU(2)\cong\mathrm{Spin}(3)$ and $SU(2)/\{\pm I\}\cong SO(3)$. The unit-norm group is the group that acts on the Hermitian subspace by $*$-congruence, $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$, which in the model is $X\mapsto AXA^{\dagger}$ on the Hermitian matrices. Three representatives in the model are
+
+$$
+A=\begin{pmatrix}1&1\\0&1\end{pmatrix},\quad \det A=1\ (\text{the unit-norm group}),\qquad
+U=i\sigma_1=\begin{pmatrix}0&i\\i&0\end{pmatrix},\quad \det U=1,\ UU^{\dagger}=I_2\ (\text{the unitary slice}),
+$$
+
+$$
+\begin{pmatrix}e^{i\theta}&0\\0&e^{-i\theta}\end{pmatrix}\in SU(2),\qquad\text{and}\qquad
+A\,\sigma_3\,A^{\dagger}=\begin{pmatrix}1&1\\0&1\end{pmatrix}\begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}1&0\\1&1\end{pmatrix}=\begin{pmatrix}0&-1\\-1&-1\end{pmatrix},
+$$
+
+the last Hermitian as the congruence action requires.
 
 ## Worked Examples
 

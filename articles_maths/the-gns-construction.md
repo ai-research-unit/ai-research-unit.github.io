@@ -86,7 +86,13 @@ For an abelian $\ast$-algebra a pure state is a character, $\omega(xy) = \omega(
 
 ### Matrices
 
-For $A = M_n(\mathbb{C})$ a state is a density matrix $\omega(x) = \mathrm{tr}(\rho x)$ with $\rho\geq0$, $\mathrm{tr}\rho = 1$; the GNS space is $\mathbb{C}^{n}$ with the standard form when $\rho$ is faithful, the representation is the defining one, and the state is pure exactly when $\rho$ is a rank-one projection.
+For $A = M_n(\mathbb{C})$ a state is a density matrix $\omega(x) = \mathrm{tr}(\rho x)$ with $\rho\geq0$, $\mathrm{tr}\rho = 1$; the GNS space is $\mathbb{C}^{n}$ with the standard form when $\rho$ is faithful, the representation is the defining one, and the state is pure exactly when $\rho$ is a rank-one projection. At $n=2$ a pure state and a mixed state are
+
+$$
+\rho=E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\ \rho^{2}=\rho,\ \operatorname{tr}\rho=1,\qquad \omega\!\left(\begin{pmatrix}a&b\\c&d\end{pmatrix}\right)=a,\qquad \rho=\tfrac12 I_2,\ \omega(x)=\tfrac12\operatorname{tr}x ,
+$$
+
+the first rank one, the second of rank two and faithful.
 
 ### The Trivial State
 

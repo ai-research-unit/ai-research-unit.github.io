@@ -26,6 +26,31 @@ $$
 
 The form has one positive and three negative directions. The algebra has real dimension $2^4 = 16$, and a real basis indexed by the grades is the identity, the four vectors $\gamma^\mu$, the six bivectors $\gamma^\mu\gamma^\nu$ with $\mu < \nu$, the four trivectors $\gamma^\mu\gamma^\nu\gamma^\rho$ with $\mu < \nu < \rho$, and the pseudoscalar $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$.
 
+In the Dirac representation the generators are the $4\times4$ complex matrices
+
+$$
+\gamma^0=\begin{pmatrix}I_2&0\\0&-I_2\end{pmatrix},\qquad
+\gamma^k=\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix},\quad k=1,2,3,
+$$
+
+with the Pauli matrices
+
+$$
+\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+$$
+
+that is
+
+$$
+\gamma^1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},\qquad
+\gamma^2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
+\gamma^3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
+$$
+
+and they satisfy $\gamma^\mu\gamma^\nu+\gamma^\nu\gamma^\mu=2g^{\mu\nu}I_4$ by direct computation, the case $\mu=\nu$ giving $\gamma^0\gamma^0=I_4$ and $\gamma^k\gamma^k=-I_4$ for $k=1,2,3$.
+
 **Definition.** The **even subalgebra** $\mathrm{Cl}_{1,3}^+$ is the span of the products of an even number of generators. It is spanned by the identity, the six bivectors $\gamma^\mu\gamma^\nu$ with $\mu < \nu$, and the pseudoscalar,
 
 $$
@@ -210,6 +235,23 @@ $$
 **Corollary.** $\mathrm{Cl}_{1,3}^+$ is isomorphic to $M_2(\mathbb{C})$ as a real algebra.
 
 *Proof.* The isomorphism carries $\mathbb{B}$ to $\mathrm{Cl}_{1,3}^+$, and $\mathbb{B} \cong M_2(\mathbb{C})$ by the $2\times2$ realization of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; composing the two gives the claim. $\square$
+
+In the Dirac representation the bivectors and the pseudoscalar are the matrices
+
+$$
+\gamma^2\gamma^3=\begin{pmatrix}-i\sigma_1&0\\0&-i\sigma_1\end{pmatrix},\qquad
+\gamma^0\gamma^1=\begin{pmatrix}0&\sigma_1\\\sigma_1&0\end{pmatrix},\qquad
+\omega=-\gamma^0\gamma^1\gamma^2\gamma^3=\begin{pmatrix}0&-iI_2\\-iI_2&0\end{pmatrix},
+$$
+
+the first displayed in full as
+
+$$
+\gamma^2\gamma^3=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
+\omega=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+$$
+
+and the eight even basis elements are $I_2\otimes I_2$, the $\sigma_1\otimes\sigma_k$ $(k=1,2,3)$ that are the images of $ie_1,ie_2,ie_3$, the $-i(I_2\otimes\sigma_k)$ $(k=1,2,3)$ that are the images of $e_1,e_2,e_3$, and $\omega=-i(\sigma_1\otimes I_2)$, of real dimension $8$ as the rank computation of the section above shows. The entry $-i\sigma_1$ of the second tensor leg of $\gamma^2\gamma^3$ is the image $\mathsf{M}_2(e_1)=-i\sigma_1$ of the two-by-two model, and the scalar imaginary goes to $-\omega=i(\sigma_1\otimes I_2)$, whose second tensor leg is $iI_2=\mathsf{M}_2(i)$: the two realizations are the same dictionary read on the two tensor legs.
 
 
 ## Why the Realization Is Useful

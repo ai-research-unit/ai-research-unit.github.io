@@ -72,7 +72,7 @@ since $(-iQ_1)^2=-Q_1^2$ and the cross terms cancel within each product. $\squar
 
 **Proof.** A square matrix over a field is invertible if and only if its determinant is nonzero, and $\mathsf{M}_2$ is an isomorphism, so invertibility transports. $\square$
 
-The classification of the zero divisors is *Biquaternion Zero Divisors*; what the matrix realization adds is the reading of the criterion in terms of the determinant and the rank, developed in *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Rank-One Elements and the Outer Product*.
+The classification of the zero divisors is *Zero Divisors of the General Plain Algebra*; what the matrix realization adds is the reading of the criterion in terms of the determinant and the rank, developed in *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Rank-One Elements and the Outer Product*.
 
 **Remark (the determinant is multiplicative, the trace is not).** The determinant is multiplicative, $\det \mathsf{M}_2(\tilde{P}\tilde{Q})=\det \mathsf{M}_2(\tilde{P})\det \mathsf{M}_2(\tilde{Q})$, so $N$ is multiplicative, $N(\tilde{P}\tilde{Q})=N(\tilde{P})N(\tilde{Q})$. The trace is additive but not multiplicative, and its value $2Q_0$ depends only on the scalar part.
 

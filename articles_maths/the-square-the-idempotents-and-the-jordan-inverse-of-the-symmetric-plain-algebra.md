@@ -6,7 +6,7 @@ The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet
 
 The results are collected here because they are one subject. The block is a Jordan algebra of degree two, and its degree is the statement that every element satisfies a quadratic identity with a **generic trace** $T(\tilde Q)=2Q_0$ and a **generic norm** $N(\tilde Q)=Q_0^2+Q_1^2+Q_2^2+Q_3^2$; the idempotents are read off the same identity at $N=1$; the inverse is the companion root of the quadratic; and the isotropic cone $\{N(\tilde Q)=0\}$ is what makes the algebra not a division Jordan algebra.
 
-The square of the block is the plain square, so the idempotents of the block are the idempotents of the plain product, already classified in *Biquaternion Idempotents and Projections*, and the norm is the biquaternion norm of *Biquaternion Norm and Invertibility*. What this article adds is the reading of those facts as the degree-two structure of the Jordan algebra, and the computation of the Jordan inverse. The trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the idempotents as minimal ideals are *Biquaternion Ideals and Peirce Decomposition*; the zero divisors are *Biquaternion Zero Divisors*; the roots of $-1$ are *Biquaternion Square Roots of Minus One, Zero and Plus One*; and the placement of the block among the twelve operations is *The 12 Products of the Biquaternion Complex Space*.
+The square of the block is the plain square, so the idempotents of the block are the idempotents of the plain product, already classified in *Idempotents of the General Plain Algebra*, and the norm is the biquaternion norm of *Biquaternion Norm and Invertibility*. What this article adds is the reading of those facts as the degree-two structure of the Jordan algebra, and the computation of the Jordan inverse. The trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the idempotents as minimal ideals are *Biquaternion Ideals and Peirce Decomposition*; the zero divisors are *Zero Divisors of the General Plain Algebra*; the roots of $-1$ are *Biquaternion Square Roots of Minus One, Zero and Plus One*; and the placement of the block among the twelve operations is *The 12 Products of the Biquaternion Complex Space*.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$, and $(\mathbf{Q},\mathbf{Q})=\sum_kQ_k^2$. The product is $\bullet$, the symmetric plain product; the product $\tilde P\tilde Q$ without a mark is the general plain one. The natural conjugate is $\tilde Q^{\natural}=Q_0e_0-\mathbf{Q}$, and the biquaternion norm is $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ of *Biquaternion Norm and Invertibility*, written $N(\tilde Q)$ here.
 
@@ -81,7 +81,7 @@ $$
 
 *Proof.* The square of the block is the plain square, $\tilde\Pi\bullet\tilde\Pi=\tilde\Pi^2$, so the equation $\tilde\Pi\bullet\tilde\Pi=\tilde\Pi$ is the equation $\tilde\Pi^2=\tilde\Pi$ of the plain product. Verified on the square.
 
-The classification is therefore the one of *Biquaternion Idempotents and Projections*, and it is restated here in the language of the block.
+The classification is therefore the one of *Idempotents of the General Plain Algebra*, and it is restated here in the language of the block.
 
 **Theorem (classification).** Every idempotent of the block is either trivial, $\tilde\Pi=0$ or $\tilde\Pi=e_0$, or has the form
 
@@ -91,7 +91,7 @@ $$
 
 for a **root of $-1$** $\xi\in\mathbb{B}$, $\xi^2=-1$. There are no others.
 
-*Proof.* If $\boldsymbol{\Pi}=0$ the two equations give $\Pi_0^2=\Pi_0$, hence $\Pi_0=0$ or $1$. If $\boldsymbol{\Pi}\neq0$ the second equation gives $\Pi_0=\tfrac12$ and the first gives $(\boldsymbol{\Pi},\boldsymbol{\Pi})=-\tfrac14$; putting $\xi=-2i\boldsymbol{\Pi}$ gives $(\xi,\xi)=1$, hence $\xi^2=-1$ and $\boldsymbol{\Pi}=\xi\cdot\tfrac{i}{2}$. The sign is the replacement of $\xi$ by $-\xi$. The computation is the proof of *Biquaternion Idempotents and Projections*, read in the block; verified on the classification.
+*Proof.* If $\boldsymbol{\Pi}=0$ the two equations give $\Pi_0^2=\Pi_0$, hence $\Pi_0=0$ or $1$. If $\boldsymbol{\Pi}\neq0$ the second equation gives $\Pi_0=\tfrac12$ and the first gives $(\boldsymbol{\Pi},\boldsymbol{\Pi})=-\tfrac14$; putting $\xi=-2i\boldsymbol{\Pi}$ gives $(\xi,\xi)=1$, hence $\xi^2=-1$ and $\boldsymbol{\Pi}=\xi\cdot\tfrac{i}{2}$. The sign is the replacement of $\xi$ by $-\xi$. The computation is the proof of *Idempotents of the General Plain Algebra*, read in the block; verified on the classification.
 
 **Theorem (the bijection).** The map $\xi\mapsto\tfrac12(e_0+\xi i)$ is a bijection from the roots of $-1$ onto the idempotents of the block, and the complementary pairs $\{\tilde\Pi,e_0-\tilde\Pi\}$ correspond to the classes $\{\xi,-\xi\}$.
 
@@ -102,7 +102,7 @@ for a **root of $-1$** $\xi\in\mathbb{B}$, $\xi^2=-1$. There are no others.
 Substituting the classification of the roots of $-1$ of *Biquaternion Square Roots of Minus One, Zero and Plus One* gives the three families:
 
 - the **trivial roots** $\xi=\pm i$ give the trivial idempotents $0$ and $e_0$;
-- the **real roots** $\xi=\pm\hat\mu$ over a unit real vector $\hat\mu\in\mathbb{R}^3$ give the **Hermitian idempotents** $\tfrac12(e_0\pm i\hat\mu)$, which lie in $\mathbb{M}_+$ and are the pure states of *Biquaternion Idempotents and Projections*;
+- the **real roots** $\xi=\pm\hat\mu$ over a unit real vector $\hat\mu\in\mathbb{R}^3$ give the **Hermitian idempotents** $\tfrac12(e_0\pm i\hat\mu)$, which lie in $\mathbb{M}_+$ and are the pure states of *Idempotents of the General Plain Algebra*;
 - the **non-trivial roots** $\xi=\mathbf{p}+i\mathbf{p}'$, cut by $p_1^2+p_2^2+p_3^2-p_1'^2-p_2'^2-p_3'^2=1$ and $p_1p'_1+p_2p'_2+p_3p'_3=0$, give idempotents whose vector part mixes a real and an imaginary direction, and they lie in none of the four four-dimensional subspaces.
 
 **Remark (the idempotents are isotropic).** A non-trivial idempotent has generic trace $T(\tilde\Pi)=2\Pi_0=1$ and generic norm
@@ -170,7 +170,7 @@ $$
 \{\tilde Q\in\mathbb{B}:N(\tilde Q)=0\}.
 $$
 
-**Remark (the isotropic cone is the zero-divisor cone).** $N(\tilde Q)=0$ holds for $\tilde Q=0$ and for the zero divisors of *Biquaternion Zero Divisors*, and for no other element. **The isotropic cone of the block is the union of the origin and the zero-divisor cone of the algebra, so the symmetric plain algebra possesses non-zero isotropic elements and is not a division Jordan algebra.** This is the Jordan reading of the failure of $\mathbb{B}$ to be a division algebra: the block is a Jordan algebra whose norm form is **non-degenerate** but isotropic, of realified signature $(4,4)$; **it is the Hermitian form, and not the norm form, that is definite**.
+**Remark (the isotropic cone is the zero-divisor cone).** $N(\tilde Q)=0$ holds for $\tilde Q=0$ and for the zero divisors of *Zero Divisors of the General Plain Algebra*, and for no other element. **The isotropic cone of the block is the union of the origin and the zero-divisor cone of the algebra, so the symmetric plain algebra possesses non-zero isotropic elements and is not a division Jordan algebra.** This is the Jordan reading of the failure of $\mathbb{B}$ to be a division algebra: the block is a Jordan algebra whose norm form is **non-degenerate** but isotropic, of realified signature $(4,4)$; **it is the Hermitian form, and not the norm form, that is definite**.
 
 An element is isotropic exactly when it fails to be invertible, so the invertible elements of the block are its non-isotropic elements, the group of units of *Biquaternion Norm and Invertibility*.
 
@@ -219,9 +219,9 @@ The symmetric plain algebra is a commutative unital Jordan algebra of degree two
 
 ## Further Reading
 
-- *Biquaternion Idempotents and Projections*, for the classification of the idempotents, the projections and the minimal left ideals.
+- *Idempotents of the General Plain Algebra*, for the classification of the idempotents, the projections and the minimal left ideals.
 - *Biquaternion Norm and Invertibility*, for the biquaternion norm, its multiplicativity and the invertibility criterion.
-- *Biquaternion Zero Divisors*, for the zero divisors and the structure of the isotropic set.
+- *Zero Divisors of the General Plain Algebra*, for the zero divisors and the structure of the isotropic set.
 - *Biquaternion Square Roots of Minus One, Zero and Plus One*, for the classification of the roots of $-1$ and the families of idempotents.
 - *The 12 Products of the Biquaternion Complex Space*, for the degree-two reading and the placement of the block.
 - *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, for the matrix model and the isotopy with the symmetrised matrices.

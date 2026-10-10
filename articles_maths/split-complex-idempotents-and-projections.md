@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The algebra article defined the split-complex algebra $\mathbb{D}$, its conjugation and its two idempotents $\Pi_\pm = \tfrac12(1\pm j)$. This article treats the **idempotents** of $\mathbb{D}$ — the elements satisfying $A^2 = A$ — and the projections and direct-sum decompositions they carry. It is the two-dimensional counterpart of *Biquaternion Idempotents and Projections*, and the contrast is sharp: the biquaternion algebra has a two-parameter family of idempotents in bijection with the roots of $-1$, while $\mathbb{D}$ has no root of $-1$ at all and exactly four idempotents.
+The algebra article defined the split-complex algebra $\mathbb{D}$, its conjugation and its two idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$. This article treats the **idempotents** of $\mathbb{D}$ — the elements satisfying $A^2 = A$ — and the projections and direct-sum decompositions they carry. It is the two-dimensional counterpart of *Idempotents of the General Plain Algebra*, and the contrast is sharp: the biquaternion algebra has a two-parameter family of idempotents in bijection with the roots of $-1$, while $\mathbb{D}$ has no root of $-1$ at all and exactly four idempotents.
 
 Idempotents are the algebraic form of a projection, and in $\mathbb{D}$ they do three jobs at once:
 
@@ -13,7 +13,7 @@ Idempotents are the algebraic form of a projection, and in $\mathbb{D}$ they do 
 
 **Placement.** The article is second in the Algebra group, after *Split-Complex Algebra* and before *Split-Complex Ideals and Peirce Decomposition*, *Split-Complex Zero Divisors* and *Worked Examples in the Split-Complex Algebra*, all of which use the idempotents. Its proofs use only the algebra article; the norm and the invertibility criterion belong to *Split-Complex Norm and Invertibility* in the Topology group.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$. A general element is $A = a+ja'$ with $a, a' \in \mathbb{R}$, the conjugate is $\bar A = a-ja'$, and the idempotents are $\Pi_\pm = \tfrac12(1\pm j)$, with $A = A_+\Pi_1 + A_-\Pi_2$ and $A_\pm = a\pm a'$. The base field is $\mathbb{R}$, so $2$ is invertible.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$. A general element is $A = a+ja'$ with $a, a' \in \mathbb{R}$, the conjugate is $\bar A = a-ja'$, and the idempotents are $\Pi_{1,2} = \tfrac12(1\pm j)$, with $A = A_+\Pi_1 + A_-\Pi_2$ and $A_\pm = a\pm a'$. The base field is $\mathbb{R}$, so $2$ is invertible.
 
 ## Idempotents in an Algebra
 
@@ -214,9 +214,9 @@ The table is the summary of the systematic degeneration: the two-dimensional alg
 
 ## Summary
 
-An idempotent of $\mathbb{D}$ is an element $A$ with $A^2 = A$. The algebra has exactly four: $0$, $1$, and the standard pair $\Pi_\pm = \tfrac12(1\pm j)$. The standard pair is orthogonal, complete and primitive, and it is central because $\mathbb{D}$ is commutative. Under the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ the four idempotents are the four indicator functions of the two-point set $\{+,-\}$, so the set of idempotents is finite and corresponds to the power set of $\{+,-\}$ rather than to a family of roots of $-1$.
+An idempotent of $\mathbb{D}$ is an element $A$ with $A^2 = A$. The algebra has exactly four: $0$, $1$, and the standard pair $\Pi_{1,2} = \tfrac12(1\pm j)$. The standard pair is orthogonal, complete and primitive, and it is central because $\mathbb{D}$ is commutative. Under the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ the four idempotents are the four indicator functions of the two-point set $\{+,-\}$, so the set of idempotents is finite and corresponds to the power set of $\{+,-\}$ rather than to a family of roots of $-1$.
 
-The idempotents are projections: $A = A_+\Pi_1 + A_-\Pi_2$, with $A_\pm = A\Pi_\pm$ the two components, and $\Pi_1 + \Pi_2 = 1$, $\Pi_1\Pi_2 = 0$ give the direct-sum decomposition $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2 \cong \mathbb{R}\oplus\mathbb{R}$, whose summands are the two minimal ideals. The nontrivial idempotents are zero divisors, and conversely every zero divisor is a real multiple of $\Pi_1$ or of $\Pi_2$: in the idempotent basis the zero divisors are exactly the elements supported on a single idempotent, that is, the elements with one vanishing coordinate. This is the two-dimensional analogue of the idempotent theory of $\mathbb{B}$, with the vector part missing and the non-commutativity gone.
+The idempotents are projections: $A = A_+\Pi_1 + A_-\Pi_2$, with $A_\pm = A\Pi_{1,2}$ the two components, and $\Pi_1 + \Pi_2 = 1$, $\Pi_1\Pi_2 = 0$ give the direct-sum decomposition $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2 \cong \mathbb{R}\oplus\mathbb{R}$, whose summands are the two minimal ideals. The nontrivial idempotents are zero divisors, and conversely every zero divisor is a real multiple of $\Pi_1$ or of $\Pi_2$: in the idempotent basis the zero divisors are exactly the elements supported on a single idempotent, that is, the elements with one vanishing coordinate. This is the two-dimensional analogue of the idempotent theory of $\mathbb{B}$, with the vector part missing and the non-commutativity gone.
 
 ## Summary of Notation
 
@@ -227,7 +227,7 @@ The idempotents are projections: $A = A_+\Pi_1 + A_-\Pi_2$, with $A_\pm = A\Pi_\
 | $A^2 = A$ | Idempotence condition |
 | $\Pi_1 = \tfrac12(1+j)$ | Standard positive idempotent |
 | $\Pi_2 = \tfrac12(1-j)$ | Standard negative idempotent |
-| $\Pi_\pm$ | Orthogonal, complete, central, primitive pair |
+| $\Pi_{1,2}$ | Orthogonal, complete, central, primitive pair |
 | $A = A_+\Pi_1 + A_-\Pi_2$ | Idempotent decomposition, $A_\pm = a\pm a'$ |
 | $P_+, P_-$ | Projections $A \mapsto A_+$, $A \mapsto A_-$; $P_+ + P_- = \mathrm{id}$ |
 | $\mathbb{D}\Pi_1, \mathbb{D}\Pi_2$ | The two minimal ideals, $\cong \mathbb{R}$ |

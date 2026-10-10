@@ -96,10 +96,10 @@ since $\det M = \cosh^2 t - \sinh^2 t = 1$ and the matrix preserves the form $x^
 **Orbits and fixed lines.** Multiplication by $u(t)$ preserves $x^2 - y^2$, so the orbit of a point with $x^2 - y^2 = r^2 \neq 0$ is the hyperbola $x^2 - y^2 = r^2$ within one of the four connected regions; the four null lines are the asymptotes. The two null lines are fixed: the idempotents
 
 $$
-\pi_+ = \tfrac{1}{2}(1 + j), \qquad \pi_- = \tfrac{1}{2}(1 - j)
+\pi_1 = \tfrac{1}{2}(1 + j), \qquad \pi_2 = \tfrac{1}{2}(1 - j)
 $$
 
-satisfy $u(t)\pi_+ = e^{t}\pi_+$ and $u(t)\pi_- = e^{-t}\pi_-$, so the lines $\mathbb{R}\pi_+$ and $\mathbb{R}\pi_-$ are fixed pointwise up to scaling. These are exactly the lines on which $N$ vanishes, and they are the null directions of the indefinite form.
+satisfy $u(t)\pi_1 = e^{t}\pi_1$ and $u(t)\pi_2 = e^{-t}\pi_2$, so the lines $\mathbb{R}\pi_1$ and $\mathbb{R}\pi_2$ are fixed pointwise up to scaling. These are exactly the lines on which $N$ vanishes, and they are the null directions of the indefinite form.
 
 ## The Parabolic Case: The Dual Numbers
 
@@ -198,7 +198,7 @@ Passing to dimension three is impossible in the commutative setting: there is no
 | $N(x+\omega y) = x^2 - \sigma y^2$ | Norm, multiplicative |
 | $G_A = \{u : N(u)=1\}$ | Rotation group |
 | $u(\theta), u(t)$ | Parametrisations by angle and by rapidity |
-| $\pi_\pm = \tfrac{1}{2}(1\pm j)$ | Idempotents of $\mathbb{D}$, spanning the null lines |
+| $\pi_{1,2} = \tfrac{1}{2}(1\pm j)$ | Idempotents of $\mathbb{D}$, spanning the null lines |
 | $SO(2), SO(1,1)$ | Elliptic and hyperbolic rotation groups |
 | $(\mathbb{R},+)$ | Parabolic rotation group, the transvections and shears |
 | $S^3 = \{q\in\mathbb{H} : N(q)=1\}$ | Unit quaternions |

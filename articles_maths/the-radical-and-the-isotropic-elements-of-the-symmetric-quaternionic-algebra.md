@@ -15,7 +15,7 @@ $\mathbb{B}$.
 The article is the second of the block of $\mathrm{SQA}$; it assumes the operation and its formula from
 *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*, the centrality from *The Symmetrised
 Quaternionic Product and the Hermitian Subspace*, and the norm, its polarisation and its isotropic cone from
-*Biquaternion Norm and Invertibility* and *Biquaternion Zero Divisors*. The remarkable subspaces are treated in the
+*Biquaternion Norm and Invertibility* and *Zero Divisors of the General Plain Algebra*. The remarkable subspaces are treated in the
 companion article *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*, and the form
 reader is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*.
 
@@ -105,14 +105,14 @@ set of isotropic elements.
 it is a zero divisor of the biquaternion algebra, that is exactly when $N(\tilde Q)=\sum_\mu Q_\mu^2=0$. The
 cone is the affine cone over the quadric $\{[Q_0:Q_1:Q_2:Q_3]:\sum_\mu Q_\mu^2=0\}$ of
 $\mathbb{P}^3(\mathbb{C})$, of complex dimension $2$ in the projective space and $3$ in the algebra, and it is
-the isotropic cone of the form $B$ and of the norm $N$ alike (*Biquaternion Zero Divisors*, *Biquaternion Norm
+the isotropic cone of the form $B$ and of the norm $N$ alike (*Zero Divisors of the General Plain Algebra*, *Biquaternion Norm
 and Invertibility*). It splits into the **pure family**, the elements with $Q_0=0$, a cone of complex
 dimension $2$, and the **non-pure family**, the elements with $Q_0\ne0$, of complex dimension $3$; the two are
-disjoint and their union is the cone (*Biquaternion Zero Divisors*).
+disjoint and their union is the cone (*Zero Divisors of the General Plain Algebra*).
 
 *Proof.* $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ by the square formula of *Introduction to the Symmetric
 Quaternionic Algebra of Biquaternions*, and this vanishes exactly when $N(\tilde Q)=0$. The identification of
-the set $N=0$ with the zero divisors and its description as a quadric cone are *Biquaternion Zero Divisors*.
+the set $N=0$ with the zero divisors and its description as a quadric cone are *Zero Divisors of the General Plain Algebra*.
 $\square$
 
 **Example (the standard isotropic elements).** For $\tilde Q=e_0+ie_1$ the norm is $N=1+i^2=0$, so the
@@ -138,7 +138,7 @@ $$
 
 the two idempotents being the trivial ones. The operation has no nonzero proper idempotent, and no projector
 other than $0$ and $e_0$; the idempotents of the algebra $\mathbb{B}$ are not idempotents of the operation
-(*Biquaternion Idempotents and Projections*).
+(*Idempotents of the General Plain Algebra*).
 
 *Proof.* $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ is central, so $\tilde Q\star\tilde Q=\tilde Q$ forces
 $\mathbf Q=0$ and $\tilde Q=Q_0e_0$, and then $Q_0e_0=Q_0^2e_0$, so $Q_0\in\{0,1\}$. $\square$
@@ -249,7 +249,7 @@ contain no isotropic element.
 
 - *Introduction to the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the operation and its square
 - *The Symmetrised Quaternionic Product and the Hermitian Subspace* (`articles_maths/the-symmetrised-quaternionic-product-and-the-hermitian-subspace.md`), for the centrality and the coefficient in full
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`) and *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the norm, its polarisation and the isotropic cone
-- *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the idempotents of the algebra and their contrast with the idempotents of $\mathrm{SQA}$
+- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`) and *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the norm, its polarisation and the isotropic cone
+- *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the idempotents of the algebra and their contrast with the idempotents of $\mathrm{SQA}$
 - *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the isotropic elements on each subspace
 - *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the operators $L^{\star}_{\tilde A}$ in full

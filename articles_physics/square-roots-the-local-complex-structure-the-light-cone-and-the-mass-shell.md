@@ -31,7 +31,8 @@ $n=Q_0^{2}+(\mathbf Q,\mathbf Q)$, which is the biquaternion norm, $\tilde Q\til
 The Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{\natural}$, the sectors are
 $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$, and a **complex structure** is an element whose
 square is $-e_0$, an **involution** one whose square is $+e_0$, and a **nilpotent** a nonzero element
-whose square is $0$.
+whose square is $0$ — written $\tilde\Upsilon$ where the nilpotency is the point (§*The Nilpotent
+Convention* of *Conventions in the Biquaternion Universe*).
 
 ## One Equation, Three Physical Answers
 

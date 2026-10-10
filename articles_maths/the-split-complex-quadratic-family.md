@@ -19,13 +19,13 @@ The article is the $\mathbb{D}$ instance of the quadratic family. The algebra an
 **Definition.** The **split-complex algebra** is $\mathbb{D} = \mathbb{R}[j]$ with $j^2 = +1$. A general element is $z = a + ja'$ with $a, a' \in \mathbb{R}$; the **conjugation** is $\bar z = a - ja'$; the **norm** is $N(z) = z\bar z = a^2 - a'^2$, an indefinite form of signature $(1,1)$; and the **idempotents** are
 
 $$
-\Pi_+ = \frac{1+j}{2}, \qquad \Pi_- = \frac{1-j}{2}, \qquad \Pi_\pm^2 = \Pi_\pm, \quad \Pi_+\Pi_- = 0, \quad \Pi_+ + \Pi_- = 1 .
+\Pi_1 = \frac{1+j}{2}, \qquad \Pi_2 = \frac{1-j}{2}, \qquad \Pi_{1,2}^2 = \Pi_{1,2}, \quad \Pi_1\Pi_2 = 0, \quad \Pi_1 + \Pi_2 = 1 .
 $$
 
 Every element decomposes uniquely as
 
 $$
-z = z_+\Pi_+ + z_-\Pi_-, \qquad z_+ = a+a', \quad z_- = a-a' ,
+z = z_+\Pi_1 + z_-\Pi_2, \qquad z_+ = a+a', \quad z_- = a-a' ,
 $$
 
 and the **idempotent coordinates** $z_+, z_-$ are the values of $z$ under the two algebra homomorphisms $\mathbb{D} \to \mathbb{R}$ sending $j$ to $+1$ and to $-1$.
@@ -38,7 +38,7 @@ $$
 
 is an isomorphism of real vector spaces and of rings, with the product of $\mathbb{R}^2$ taken componentwise; its inverse is $\varphi^{-1}(u,v) = \frac{u+v}{2} + j\,\frac{u-v}{2}$. The conjugation corresponds to the exchange of the two coordinates, $\varphi(\bar z) = (z_-, z_+)$, and the norm corresponds to the product, $N(z) = z_+z_-$.
 
-**Proof.** The idempotents are the standard projections onto the two coordinates; linearity of $\varphi$ is clear, and multiplicativity is the computation $\varphi(zw) = (z_+w_+, z_-w_-)$, since $\Pi_+^2 = \Pi_+$, $\Pi_-^2 = \Pi_-$ and $\Pi_+\Pi_- = 0$. The inverse is verified by $z = z_+\Pi_+ + z_-\Pi_-$, and the conjugation is $\bar z = z_-\Pi_+ + z_+\Pi_-$, the exchange of the two coordinates. Finally $N(z) = z\bar z = z_+z_-$, by expanding $(z_+\Pi_+ + z_-\Pi_-)(z_-\Pi_+ + z_+\Pi_-)$ and using $\Pi_+^2 = \Pi_+$, $\Pi_-^2 = \Pi_-$, $\Pi_+\Pi_- = 0$, $\Pi_++\Pi_- = 1$.
+**Proof.** The idempotents are the standard projections onto the two coordinates; linearity of $\varphi$ is clear, and multiplicativity is the computation $\varphi(zw) = (z_+w_+, z_-w_-)$, since $\Pi_1^2 = \Pi_1$, $\Pi_2^2 = \Pi_2$ and $\Pi_1\Pi_2 = 0$. The inverse is verified by $z = z_+\Pi_1 + z_-\Pi_2$, and the conjugation is $\bar z = z_-\Pi_1 + z_+\Pi_2$, the exchange of the two coordinates. Finally $N(z) = z\bar z = z_+z_-$, by expanding $(z_+\Pi_1 + z_-\Pi_2)(z_-\Pi_1 + z_+\Pi_2)$ and using $\Pi_1^2 = \Pi_1$, $\Pi_2^2 = \Pi_2$, $\Pi_1\Pi_2 = 0$, $\Pi_1+\Pi_2 = 1$.
 
 ### The Quadratic Map on the Pair
 
@@ -66,7 +66,7 @@ and the orbit of $z$ under $f_c$ is bounded if and only if both orbits $g_+^n(z_
 
 ### The Norm and the Null Cone
 
-**Definition.** The **null cone** of $\mathbb{D}$ is the zero set of the norm, $\mathcal{N} = \{z : N(z) = 0\} = \mathbb{R}\Pi_+ \cup \mathbb{R}\Pi_-$, the union of the two **null lines** $z_- = 0$ and $z_+ = 0$; its elements other than $0$ are the zero divisors of the algebra.
+**Definition.** The **null cone** of $\mathbb{D}$ is the zero set of the norm, $\mathcal{N} = \{z : N(z) = 0\} = \mathbb{R}\Pi_1 \cup \mathbb{R}\Pi_2$, the union of the two **null lines** $z_- = 0$ and $z_+ = 0$; its elements other than $0$ are the zero divisors of the algebra.
 
 **Theorem (the failure of the norm as an escape radius).** The norm is indefinite: there are nonzero $z$ with $N(z) = 0$, and along the null lines the norm vanishes while the orbit of $f_c$ may be unbounded. Hence no condition of the form $N(z) > R$ detects the escape, and there is no single radius in the norm that plays the role of the escape radius of the complex case.
 
@@ -134,7 +134,7 @@ so $N$ vanishes at the $n$-th step exactly when one of the two real orbits passe
 
 ## Summary
 
-The split-complex quadratic family $f_c(z) = z^2+c$ on $\mathbb{D} = \mathbb{R}[j]$ is, through the idempotent decomposition $\varphi(z) = (z_+,z_-) = (a+a',a-a')$, the pair of real quadratic maps $u \mapsto u^2+c_+$ and $v \mapsto v^2+c_-$ acting on the two coordinates. The critical set is the null cone $\mathcal{N}$ — the derivative is the multiplication by $2z$, singular exactly where $2z$ is a zero divisor — and the critical value of the point $0$ is $c$; the other critical points $t\Pi_\pm$ have the images $t^2\Pi_\pm+c$, and the orbit of $0$ is the pair of the two real critical orbits and is the orbit that defines the connectedness locus. The orbit of a point is bounded exactly when both coordinate orbits are bounded. The norm $N = a^2-a'^2 = z_+z_-$ is indefinite and vanishes on the two null lines; it cannot serve as an escape radius, and the escape is decided by the two real radii $R_\pm = \frac12(1+\sqrt{1+4|c_\pm|})$ separately, not by a single radius.
+The split-complex quadratic family $f_c(z) = z^2+c$ on $\mathbb{D} = \mathbb{R}[j]$ is, through the idempotent decomposition $\varphi(z) = (z_+,z_-) = (a+a',a-a')$, the pair of real quadratic maps $u \mapsto u^2+c_+$ and $v \mapsto v^2+c_-$ acting on the two coordinates. The critical set is the null cone $\mathcal{N}$ — the derivative is the multiplication by $2z$, singular exactly where $2z$ is a zero divisor — and the critical value of the point $0$ is $c$; the other critical points $t\Pi_{1,2}$ have the images $t^2\Pi_{1,2}+c$, and the orbit of $0$ is the pair of the two real critical orbits and is the orbit that defines the connectedness locus. The orbit of a point is bounded exactly when both coordinate orbits are bounded. The norm $N = a^2-a'^2 = z_+z_-$ is indefinite and vanishes on the two null lines; it cannot serve as an escape radius, and the escape is decided by the two real radii $R_\pm = \frac12(1+\sqrt{1+4|c_\pm|})$ separately, not by a single radius.
 
 The connectedness locus is the square $\varphi^{-1}([-2,\frac14]\times[-2,\frac14])$, the product of the two real Mandelbrot intervals, with vertices $\frac14$, $-\frac78\pm j\frac98$, $-2$, centre $-\frac78$ and side $\frac{9\sqrt2}{8}$; on the real axis it is the interval $[-2,\frac14]$ of the real quadratic family. The fractal content of the complex parameter plane — the Mandelbrot set and its hyperbolic components — is replaced here by the convex square, and the fractal content of the split family is carried by the Julia sets of the individual parameters, treated in *The Split-Complex Julia Sets*. The algebra, the idempotents and the null cone are those of *Split-Complex Algebra*, *Split-Complex Idempotents and Projections* and *Split-Complex Null Quadric and Projective Geometry*; the real quadratic theory that the pair inherits is that of *The Mandelbrot Set and the Quadratic Family* and *The Escape Radius and the Green's Function*.
 
@@ -146,13 +146,13 @@ The connectedness locus is the square $\varphi^{-1}([-2,\frac14]\times[-2,\frac1
 | $z = a + ja'$ | General element, $a, a'\in\mathbb{R}$ |
 | $\bar z = a-ja'$ | Conjugation |
 | $N(z) = a^2-a'^2 = z_+z_-$ | Norm, signature $(1,1)$ |
-| $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents |
+| $\Pi_{1,2} = \tfrac12(1\pm j)$ | Idempotents |
 | $z_\pm = a\pm a'$ | Idempotent coordinates |
 | $\varphi(z) = (z_+,z_-)$ | Isomorphism $\mathbb{D}\to\mathbb{R}^2$ |
 | $f_c(z) = z^2+c$ | The split-complex quadratic family |
 | $c_\pm = \gamma\pm\gamma'$ | Idempotent coordinates of $c = \gamma+j\gamma'$ |
 | $g_\pm$ | The two real quadratic maps $u\mapsto u^2+c_\pm$ |
-| $\mathcal{N} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$ | Null cone, the two null lines |
+| $\mathcal{N} = \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$ | Null cone, the two null lines |
 | $R_\pm = \tfrac12(1+\sqrt{1+4\lvert c_\pm\rvert})$ | The two real escape radii |
 | $M_{\mathbb{D}}$ | Connectedness locus, the square $\varphi^{-1}([-2,\tfrac14]^2)$ |
 

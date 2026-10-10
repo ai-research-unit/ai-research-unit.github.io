@@ -28,7 +28,13 @@ For $A = \mathbb{C}[G]$ the two-sided operators are $\Theta_g(y) = gyg^{-1}$, th
 
 ### Matrices
 
-For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\Theta_a(b) = aba^{*}$ and $\jmath(u) = u^{*}$ satisfies $\jmath\Theta_a\jmath = \Theta_a$; the cone $P$ is the cone of positive matrices applied to the unit, and its self-duality is the statement that the positive matrices are exactly those pairing nonnegatively with the positive matrices.
+For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\Theta_a(b) = aba^{*}$ and $\jmath(u) = u^{*}$ satisfies $\jmath\Theta_a\jmath = \Theta_a$; the cone $P$ is the cone of positive matrices applied to the unit, and its self-duality is the statement that the positive matrices are exactly those pairing nonnegatively with the positive matrices. At $n=2$ the two-sided operator by $a=\mathrm{diag}(1,2)$ sends $\sigma_1$ to
+
+$$
+a=\begin{pmatrix}1&0\\0&2\end{pmatrix},\qquad b=\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad \Theta_a(b)=aba^{*}=\begin{pmatrix}0&2\\2&0\end{pmatrix},\qquad \jmath\Theta_a\jmath=\Theta_a ,
+$$
+
+the last identity the invariance of the sandwich under the modular conjugation $\jmath(u)=u^{*}$.
 
 ### The Trivial Algebra
 

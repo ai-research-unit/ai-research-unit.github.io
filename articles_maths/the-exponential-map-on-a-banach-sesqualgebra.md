@@ -138,7 +138,19 @@ $$
 
 **Example (the complex matrices, verdict: the exponential onto $U(n)$).** Let $A = M_{n}(\mathbb{C})$ with the operator norm, the conjugation, the conjugate transpose and $X \star Y = XY^{*}$. The skew-Hermitian matrices are the matrices $X$ with $X^{*} = -X$, that is $X = iH$ with $H$ Hermitian, and $\exp$ is the matrix exponential; it maps the skew-Hermitian matrices onto the connected group $U(n)$, since every unitary matrix is $e^{iH}$ for a Hermitian $H$, by the spectral theorem of *Self-Adjoint Operators and the Spectral Theorem*. The article's failure of surjectivity is therefore absent here, and its presence in $M_{n}(\mathbb{R})$ is the price of the disconnectedness of $O(n)$.
 
-**Example (the real matrices of odd size, verdict: $-I$ is not an exponential).** The object of §*The Failure of Surjectivity* with $n$ odd: $-I$ is a Hermitian unitary element, $(-I)^{2} = I$ and $(-I)^{*} = -I$, and it is not the exponential of a skew-Hermitian matrix; the verdict is that the exponential of the Lie algebra is a proper part of the unitary group, and that the Hermitian unitary elements of *Units and the Unitary Elements* are not all reachable from the Lie algebra.
+**Example (the real matrices of odd size, verdict: $-I$ is not an exponential).** The object of §*The Failure of Surjectivity* with $n$ odd: $-I$ is a Hermitian unitary element, $(-I)^{2} = I$ and $(-I)^{*} = -I$, and it is not the exponential of a skew-Hermitian matrix; the verdict is that the exponential of the Lie algebra is a proper part of the unitary group, and that the Hermitian unitary elements of *Units and the Unitary Elements* are not all reachable from the Lie algebra. The smallest cases make both sides explicit: at $n=2$
+
+$$
+H=\begin{pmatrix}1&0\\0&-1\end{pmatrix}=H^{*},\qquad iH=\begin{pmatrix}i&0\\0&-i\end{pmatrix}=-(iH)^{*},\qquad e^{iH}=\begin{pmatrix}e^{i}&0\\0&e^{-i}\end{pmatrix}\in U(2),
+$$
+
+and at $n=1$ over $\mathbb{R}$
+
+$$
+-1\in M_1(\mathbb{R}),\qquad (-1)^{*}=-1,\qquad -1\neq e^{0}=1,
+$$
+
+so the only skew-Hermitian real number is $0$ and $-1$ is out of reach.
 
 ### The Field and the Quaternions
 

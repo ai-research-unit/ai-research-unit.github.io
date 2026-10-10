@@ -147,7 +147,7 @@ $$
 E_1E_2E_3 = j^3(e_1e_2)e_3 = j\,e_3e_3 = -j,
 $$
 
-which is central with square $+1$; the Clifford idempotents $\tfrac12(1 \pm E_1E_2E_3) = \tfrac12(1 \mp j)$ are the idempotents $\tilde\Pi_\mp$ of the idempotent decomposition, with the index reversed.
+which is central with square $+1$; the Clifford idempotents $\tfrac12(1 \pm E_1E_2E_3) = \tfrac12(1 \mp j)$ are the idempotents $\tilde\Pi_{1,2}$ of the idempotent decomposition, with the index reversed.
 
 *Proof.* The monomials are the eight elements $\tilde\Pi_{1,2}$ times the quaternion basis and are independent; the product is immediate from $j^2=1$, $e_1e_2=e_3$ and $e_3^2=-1$. $\square$
 

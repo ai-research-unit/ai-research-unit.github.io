@@ -175,7 +175,7 @@ $$
 and both factors are nonzero unless $\tilde\pi$ is $0$ or $1$. The direct verification is the product
 
 $$
-\tilde\pi_{1,2} \bar{\tilde\pi}_\pm = \tfrac{1}{4}(1 \pm e_2)(1 \mp e_2) = \tfrac{1}{4}(1 - e_2^2) = 0,
+\tilde\pi_{1,2} \bar{\tilde\pi}_{1,2} = \tfrac{1}{4}(1 \pm e_2)(1 \mp e_2) = \tfrac{1}{4}(1 - e_2^2) = 0,
 $$
 
 and for a general non-scalar idempotent $\tilde\pi = \tfrac{1}{2}(1+\eta)$ with $\eta \in V$ and $\eta^2 = 1$,

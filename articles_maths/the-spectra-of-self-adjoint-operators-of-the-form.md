@@ -142,7 +142,13 @@ Two statements of the definite theory survive the loss of definiteness without c
 
 ### The Matrices
 
-**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, identifiable with $\mathbb{C}^{n^{2}}$ as a Hilbert space. The self-adjoint operators of the form include the left multiplications $m_{Z}$ with $Z$ Hermitian, whose spectrum is the spectrum of $Z$ repeated $n$ times; the eigenvalues of $m_{Z}$ are real and its eigenspaces are the matrix eigenspaces of $Z$, so the spectral theorem of the layer is the spectral theorem for the Hermitian matrix $Z$ read on the operator algebra. The unitary group of the form is $U(n^{2})$ by *Unitary and Isometric Operators of the Form*, and the conjugation $m_{Z} \mapsto m_{UZU^{*}}$ by a unitary $U$ realises the invariance of the spectrum on the Hermitian matrices. The example is the model of the article and the smallest in which the multiplicities of the spectrum are visible.
+**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, identifiable with $\mathbb{C}^{n^{2}}$ as a Hilbert space. The self-adjoint operators of the form include the left multiplications $m_{Z}$ with $Z$ Hermitian, whose spectrum is the spectrum of $Z$ repeated $n$ times; the eigenvalues of $m_{Z}$ are real and its eigenspaces are the matrix eigenspaces of $Z$, so the spectral theorem of the layer is the spectral theorem for the Hermitian matrix $Z$ read on the operator algebra. The unitary group of the form is $U(n^{2})$ by *Unitary and Isometric Operators of the Form*, and the conjugation $m_{Z} \mapsto m_{UZU^{*}}$ by a unitary $U$ realises the invariance of the spectrum on the Hermitian matrices. The example is the model of the article and the smallest in which the multiplicities of the spectrum are visible. At $n=2$ the Hermitian $Z=\mathrm{diag}(2,-1)$ multiplies the matrix units by
+
+$$
+Z=\begin{pmatrix}2&0\\0&-1\end{pmatrix},\qquad m_Z(E_{11})=2E_{11},\quad m_Z(E_{12})=2E_{12},\quad m_Z(E_{21})=-E_{21},\quad m_Z(E_{22})=-E_{22},\qquad m_Z=\operatorname{diag}(2,2,-1,-1),
+$$
+
+in the basis $(E_{11},E_{12},E_{21},E_{22})$ the operator is the diagonal matrix $\operatorname{diag}(2,2,-1,-1)$, the spectrum $\{2,-1\}$ of $Z$ repeated $n=2$ times.
 
 ### The Hyperbolic Plane
 

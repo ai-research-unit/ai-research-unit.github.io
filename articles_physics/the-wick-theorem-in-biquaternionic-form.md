@@ -6,27 +6,27 @@ The **Wick theorem** is the identity that reduces the vacuum expectation value o
 
 The contributions are three, and they are of different kinds.
 
-- **Established, and recomputed below.** For a **single fermionic mode** the Wick theorem is not an approximation or a statement about vacuum expectation values in a large space; it is an **exact operator identity** in a four-real-dimensional subalgebra of $\mathbb{B}$, and it can be proved by exhibiting both sides. Since the mode operators satisfy $\tilde a_{\mathrm{tr}}^2 = 0$ and $(\tilde a_{\mathrm{tr}}^\dagger)^2 = 0$, every product of more than two mode operators collapses, and the four-point and six-point contractions reduce to products of the two-point contraction $\langle\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\rangle_0 = 1$ with the fermionic signs. The identity
+- **Established, and recomputed below.** For a **single fermionic mode** the Wick theorem is not an approximation or a statement about vacuum expectation values in a large space; it is an **exact operator identity** in a four-real-dimensional subalgebra of $\mathbb{B}$, and it can be proved by exhibiting both sides. Since the mode operators satisfy $\tilde\Upsilon_1^2 = 0$ and $(\tilde\Upsilon_2)^2 = 0$, every product of more than two mode operators collapses, and the four-point and six-point contractions reduce to products of the two-point contraction $\langle\tilde\Upsilon_1\tilde\Upsilon_2\rangle_0 = 1$ with the fermionic signs. The identity
 $$
-\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = \,:\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger: \,+\, \langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\rangle_0\,e_0,
+\tilde\Upsilon_1\tilde\Upsilon_2 = \,:\tilde\Upsilon_1\tilde\Upsilon_2: \,+\, \langle \tilde\Upsilon_1\tilde\Upsilon_2\rangle_0\,e_0,
 \qquad
-:\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger: \,=\, -\tilde N_{\mathrm{tr}},
+:\tilde\Upsilon_1\tilde\Upsilon_2: \,=\, -\tilde N_{\mathrm{tr}},
 $$
 holds as an identity in $\mathbb{B}$, not merely in expectation.
-- **Established (algebra).** The operators $\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger$ generate a **real form** of $\mathbb{B}$: a four-real-dimensional subalgebra isomorphic to $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, with basis $\{e_0, ie_1, e_2, ie_3\}$, whose complexification is all of $\mathbb{B}$. The fermionic contraction is thus a statement inside a genuine subalgebra, and the fermionic sign is the algebra's own. The fermion-parity operator $(-1)^F = ie_3$ is an element of it, and it is what implements the sign on exchanging two mode operators.
+- **Established (algebra).** The operators $\tilde\Upsilon_1,\tilde\Upsilon_2$ generate a **real form** of $\mathbb{B}$: a four-real-dimensional subalgebra isomorphic to $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, with basis $\{e_0, ie_1, e_2, ie_3\}$, whose complexification is all of $\mathbb{B}$. The fermionic contraction is thus a statement inside a genuine subalgebra, and the fermionic sign is the algebra's own. The fermion-parity operator $(-1)^F = ie_3$ is an element of it, and it is what implements the sign on exchanging two mode operators.
 - **Standard, and transcribed.** For a field the theorem is the standard one: the time-ordered product of fields equals the normal-ordered product plus all contractions, with a minus sign for every exchange of two fermionic operators, and the contractions are the Feynman propagators of *The Feynman Propagator in Biquaternionic Form*. The algebra does not supply that theorem; it supplies the notation, the sign, and the one-mode truncation. The **gap**, inherited from the Fock article, is that the field's Fock space is a module over $\mathbb{B}$ and the fermion-parity operator is not an element of $\mathbb{B}$ for more than one mode.
 
 The article proceeds as follows. The next section states the standard theorem and its fermionic sign. A section defines normal ordering and contraction. A section exhibits the one-mode subalgebra and computes its products. A section proves and verifies the one-mode Wick identity, with a table of all low-order contractions. Sections then identify the contraction with the propagator and the sign with the grading, and state the field case and its gap. A section separates what is established from what is interpretation, and the article closes with open questions.
 
 **Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\varepsilon_{jkl}e_l$ for distinct $j,k,l$, and central scalar imaginary $i$, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector) and $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ is the centre. The isomorphism is $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Tr}(e_0)=2$. The single-mode ladder and number operator are
 $$
-\tilde a_{\mathrm{tr}} = \tfrac12\big(ie_1-e_2\big),
+\tilde\Upsilon_1 = \tfrac12\big(ie_1-e_2\big),
 \qquad
-\tilde a_{\mathrm{tr}}^\dagger = \tfrac12\big(ie_1+e_2\big),
+\tilde\Upsilon_2 = \tfrac12\big(ie_1+e_2\big),
 \qquad
-\tilde N_{\mathrm{tr}} = \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}} = \tfrac12\big(e_0-ie_3\big),
+\tilde N_{\mathrm{tr}} = \tilde\Upsilon_2\tilde\Upsilon_1 = \tfrac12\big(e_0-ie_3\big),
 $$
-with $\{\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger\}=e_0$, $\tilde a_{\mathrm{tr}}^2=(\tilde a_{\mathrm{tr}}^\dagger)^2=0$, and $(-1)^F=ie_3$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The one-mode vacuum projector is $\tilde\Pi_1=\tfrac12(e_0+ie_3)=e_0-\tilde N_{\mathrm{tr}}$. Throughout, $\langle\cdot\rangle_0$ denotes the vacuum expectation value $\mathrm{Tr}(\tilde\Pi_1\,\cdot\,)$.
+with $\{\tilde\Upsilon_1,\tilde\Upsilon_2\}=e_0$, $\tilde\Upsilon_1^2=(\tilde\Upsilon_2)^2=0$, and $(-1)^F=ie_3$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The one-mode vacuum projector is $\tilde\Pi_1=\tfrac12(e_0+ie_3)=e_0-\tilde N_{\mathrm{tr}}$. Throughout, $\langle\cdot\rangle_0$ denotes the vacuum expectation value $\mathrm{Tr}(\tilde\Pi_1\,\cdot\,)$.
 
 ## The Wick Theorem in the Standard Theory
 
@@ -84,13 +84,13 @@ For an operator algebra generated by modes, normal ordering is an operation on t
 
 ## The One-Mode Subalgebra
 
-The mode operators $\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger$ generate a subalgebra of $\mathbb{B}$, and it is useful to exhibit it.
+The mode operators $\tilde\Upsilon_1,\tilde\Upsilon_2$ generate a subalgebra of $\mathbb{B}$, and it is useful to exhibit it.
 
 **Generators.** Writing out the real and imaginary parts,
 $$
-\tilde a_{\mathrm{tr}} + \tilde a_{\mathrm{tr}}^\dagger = ie_1,
+\tilde\Upsilon_1 + \tilde\Upsilon_2 = ie_1,
 \qquad
-\tilde a_{\mathrm{tr}} - \tilde a_{\mathrm{tr}}^\dagger = -e_2,
+\tilde\Upsilon_1 - \tilde\Upsilon_2 = -e_2,
 $$
 so the real-linear span of the generators and the identity contains $ie_1$ and $e_2$; and the number operator supplies
 $$
@@ -100,11 +100,11 @@ Hence
 $$
 \mathcal{A}_{\mathrm{tr}} \;=\; \mathrm{span}_{\mathbb{R}}\big\{e_0,\; ie_1,\; e_2,\; ie_3\big\}
 $$
-is contained in the algebra generated by $\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger$; the reverse inclusion is the observation that
+is contained in the algebra generated by $\tilde\Upsilon_1,\tilde\Upsilon_2$; the reverse inclusion is the observation that
 $$
-\tilde a_{\mathrm{tr}} = \tfrac12\big(ie_1-e_2\big),
+\tilde\Upsilon_1 = \tfrac12\big(ie_1-e_2\big),
 \qquad
-\tilde a_{\mathrm{tr}}^\dagger = \tfrac12\big(ie_1+e_2\big)
+\tilde\Upsilon_2 = \tfrac12\big(ie_1+e_2\big)
 $$
 are themselves real combinations of $ie_1$ and $e_2$. So the generated algebra is exactly $\mathcal{A}_{\mathrm{tr}}$.
 
@@ -128,7 +128,7 @@ $$
 \qquad
 \mathcal{A}_{\mathrm{tr}}\otimes_\mathbb{R}\mathbb{C} = \mathbb{B}.
 $$
-The one-mode truncation is therefore a **real form** of the biquaternion algebra, the one fixed by a Majorana-like reality condition on the module rather than by retaining the complex ladder: its generators are the two anticommuting real combinations of the ladder $u=\tilde a_{\mathrm{tr}}+\tilde a_{\mathrm{tr}}^\dagger=ie_1$ and $v=\tilde a_{\mathrm{tr}}^\dagger-\tilde a_{\mathrm{tr}}=e_2$, with $u^2=+e_0$ and $v^2=-e_0$. This matches the general statement that $\mathbb{B}\cong M_2(\mathbb{C})$ has real forms determined by the reality condition imposed on the module.
+The one-mode truncation is therefore a **real form** of the biquaternion algebra, the one fixed by a Majorana-like reality condition on the module rather than by retaining the complex ladder: its generators are the two anticommuting real combinations of the ladder $u=\tilde\Upsilon_1+\tilde\Upsilon_2=ie_1$ and $v=\tilde\Upsilon_2-\tilde\Upsilon_1=e_2$, with $u^2=+e_0$ and $v^2=-e_0$. This matches the general statement that $\mathbb{B}\cong M_2(\mathbb{C})$ has real forms determined by the reality condition imposed on the module.
 
 A numerical check over the products confirms closure: every product of the basis elements $u,v,w$ lies in the real span of $\{e_0,u,v,w\}$ with a residual below $10^{-16}$, and the coefficient vectors are exactly those of the table above — in particular $u v = w$ with coordinates $(0,0,0,1)$ and $v^2 = -e_0$ with coordinates $(-1,0,0,0)$ in the basis $(e_0,u,v,w)$. The dimension count is $4$ over $\mathbb{R}$, as $\mathrm{Cl}_{1,1}$ requires.
 
@@ -144,11 +144,11 @@ Because the generators are nilpotent, the one-mode theorem can be stated and pro
 
 > **Theorem (one-mode Wick).** In $\mathcal{A}_{\mathrm{tr}}$,
 >$$
-> \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = \,:\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger: \,+\, \langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\rangle_0\,e_0,
+> \tilde\Upsilon_1\tilde\Upsilon_2 = \,:\tilde\Upsilon_1\tilde\Upsilon_2: \,+\, \langle \tilde\Upsilon_1\tilde\Upsilon_2\rangle_0\,e_0,
 > \qquad
-> :\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger: \,=\, -\tilde N_{\mathrm{tr}},
+> :\tilde\Upsilon_1\tilde\Upsilon_2: \,=\, -\tilde N_{\mathrm{tr}},
 > \qquad
-> \langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\rangle_0 = 1 ,
+> \langle \tilde\Upsilon_1\tilde\Upsilon_2\rangle_0 = 1 ,
 >$$
 > and for every product $\tilde{Q}_1\cdots\tilde{Q}_{2m}$ of mode operators,
 >$$
@@ -158,25 +158,25 @@ Because the generators are nilpotent, the one-mode theorem can be stated and pro
 
 **Proof of the two-point identity.** The contraction is, by the anticommutator,
 $$
-\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = e_0 - \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}} = e_0 - \tilde N_{\mathrm{tr}} = \tilde\Pi_1,
+\tilde\Upsilon_1\tilde\Upsilon_2 = e_0 - \tilde\Upsilon_2\tilde\Upsilon_1 = e_0 - \tilde N_{\mathrm{tr}} = \tilde\Pi_1,
 $$
 whose vacuum expectation is $\mathrm{Tr}(\tilde\Pi_1^2)=\mathrm{Tr}(\tilde\Pi_1)=1$. Normal ordering moves the creation operator to the left and produces $:\tilde a\tilde a^\dagger:\,=-\tilde a^\dagger\tilde a=-\tilde N_{\mathrm{tr}}$. Adding back the contraction gives $-\tilde N_{\mathrm{tr}}+e_0=e_0-\tilde N_{\mathrm{tr}}$, which is the left-hand side.
 
-**Why the higher identities are exact.** No induction is needed. The identities $\tilde a_{\mathrm{tr}}^2=0$ and $(\tilde a_{\mathrm{tr}}^\dagger)^2=0$ say that any word in the mode operators that contains two adjacent equal letters vanishes; and any word in which the letters alternate can be reduced by the anticommutator to a word with a repeated adjacent pair plus a contraction times a shorter word:
+**Why the higher identities are exact.** No induction is needed. The identities $\tilde\Upsilon_1^2=0$ and $(\tilde\Upsilon_2)^2=0$ say that any word in the mode operators that contains two adjacent equal letters vanishes; and any word in which the letters alternate can be reduced by the anticommutator to a word with a repeated adjacent pair plus a contraction times a shorter word:
 $$
-\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = e_0 - \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}},
+\tilde\Upsilon_1\tilde\Upsilon_2 = e_0 - \tilde\Upsilon_2\tilde\Upsilon_1,
 \qquad
-\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}} = e_0 - \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger .
+\tilde\Upsilon_2\tilde\Upsilon_1 = e_0 - \tilde\Upsilon_1\tilde\Upsilon_2 .
 $$
 Iterating this reduction produces exactly the sum over complete pairings with the fermionic signs, and the vacuum expectation kills the normally ordered remainder. The one-mode theorem is thus the algebraic skeleton of the field theorem, with the reduction by anticommutation playing the role of the induction.
 
 **The contractions explicitly.** The two nonvanishing elementary contractions are
 $$
-\langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\rangle_0 = 1,
+\langle \tilde\Upsilon_1\tilde\Upsilon_2\rangle_0 = 1,
 \qquad
-\langle \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}\rangle_0 = 0,
+\langle \tilde\Upsilon_2\tilde\Upsilon_1\rangle_0 = 0,
 \qquad
-\langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}\rangle_0 = \langle \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}^\dagger\rangle_0 = 0 .
+\langle \tilde\Upsilon_1\tilde\Upsilon_1\rangle_0 = \langle \tilde\Upsilon_2\tilde\Upsilon_2\rangle_0 = 0 .
 $$
 The complete table of the four-point function is the following, in which each entry was computed twice: directly as $\mathrm{Tr}(\tilde\Pi_1\tilde{Q}_1\tilde{Q}_2\tilde{Q}_3\tilde{Q}_4)$ using explicit $2\times2$ complex matrices, and by the pairing sum. All entries agree to machine precision.
 
@@ -201,7 +201,7 @@ $$
 $$
 and the biquaternion content of $S_F$ is the same as that of the scalar $D_F$: its four-momentum-space form is a function of the wave biquaternion $\tilde k = iEe_0+\mathbf{p}$, and its pole sits on the mass shell $\tilde k\tilde k^{\natural} = -m^2$, in the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The propagator article's finding carries over verbatim: the algebra names the wave biquaternion and the axis of the $i\epsilon$ deformation — the $ict$ direction of $\mathbb{M}_-$ — but it does not choose the orientation of the deformation, which is the choice of Feynman contour. The Wick theorem uses the propagator; it does not produce it.
 
-Within the one-mode truncation, the contraction is a **central scalar** times $e_0$: $\langle\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\rangle_0 = 1$ is an element of $\mathbb{C}_{\mathbb{B}}$. This is the algebraic shadow of the field statement that a contraction is a $c$-number, and it is why the contracted products in the table are scalars. The mode algebra's contractions are the entries of a positive semidefinite matrix — the covariance of the state — and the alternating structure of the one-mode contractions is the $\mathbb{Z}_2$-graded version of the bosonic Gaussian form.
+Within the one-mode truncation, the contraction is a **central scalar** times $e_0$: $\langle\tilde\Upsilon_1\tilde\Upsilon_2\rangle_0 = 1$ is an element of $\mathbb{C}_{\mathbb{B}}$. This is the algebraic shadow of the field statement that a contraction is a $c$-number, and it is why the contracted products in the table are scalars. The mode algebra's contractions are the entries of a positive semidefinite matrix — the covariance of the state — and the alternating structure of the one-mode contractions is the $\mathbb{Z}_2$-graded version of the bosonic Gaussian form.
 
 ## The Fermionic Sign and the Grading
 
@@ -211,9 +211,9 @@ $$
 $$
 The operator $(-1)^F$ is Hermitian, squares to $e_0$, and satisfies
 $$
-(-1)^F\,\tilde a_{\mathrm{tr}}\,(-1)^F = -\tilde a_{\mathrm{tr}},
+(-1)^F\,\tilde\Upsilon_1\,(-1)^F = -\tilde\Upsilon_1,
 \qquad
-(-1)^F\,\tilde a_{\mathrm{tr}}^\dagger\,(-1)^F = -\tilde a_{\mathrm{tr}}^\dagger .
+(-1)^F\,\tilde\Upsilon_2\,(-1)^F = -\tilde\Upsilon_2 .
 $$
 The sign in the Wick theorem is the statement that exchanging two odd operators produces $(-1)^F$: the anticommutator of two odd elements is even, and the transposition sign is the image of that parity. In the one-mode algebra this is exact and can be written as an element; the contraction table above is its consequence.
 
@@ -230,7 +230,7 @@ and its expansion is contracted by precisely the theorem above: each term of the
 **Established (algebra).**
 - The mode operators generate the four-real-dimensional subalgebra $\mathcal{A}_{\mathrm{tr}} = \mathrm{span}_{\mathbb{R}}\{e_0,ie_1,e_2,ie_3\}\cong\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, a real form of $\mathbb{B}$; it is closed under multiplication, and the vacuum projector lies in it.
 - The one-mode Wick identity $\tilde a\tilde a^\dagger = \,:\tilde a\tilde a^\dagger:\,+\langle\tilde a\tilde a^\dagger\rangle_0 e_0$, with $:\tilde a\tilde a^\dagger:\,=-\tilde N_{\mathrm{tr}}$ and $\langle\tilde a\tilde a^\dagger\rangle_0=1$, holds as an identity in $\mathbb{B}$, and every $2m$-point one-mode contraction equals the signed sum over complete pairings. All values in the table were recomputed directly.
-- The fermionic sign is implemented by $(-1)^F=ie_3\in\mathcal{A}_{\mathrm{tr}}$, with $(-1)^F\tilde a_{\mathrm{tr}}(-1)^F=-\tilde a_{\mathrm{tr}}$.
+- The fermionic sign is implemented by $(-1)^F=ie_3\in\mathcal{A}_{\mathrm{tr}}$, with $(-1)^F\tilde\Upsilon_1(-1)^F=-\tilde\Upsilon_1$.
 
 **Standard, and transcribed.**
 - The field Wick theorem, its inductive proof from the (anti)commutation relations, the fermionic transposition sign, and the identification of contractions with Feynman propagators. These are cited as standard.
@@ -253,11 +253,11 @@ $$
 $$
 which is a real form of the biquaternion algebra, and the vacuum projector $\tilde\Pi_1=e_0-\tilde N_{\mathrm{tr}}$ lies in it. The nilpotency of the ladder makes the contraction exact:
 $$
-\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = -\,\tilde N_{\mathrm{tr}} + e_0 = \tilde\Pi_1,
+\tilde\Upsilon_1\tilde\Upsilon_2 = -\,\tilde N_{\mathrm{tr}} + e_0 = \tilde\Pi_1,
 \qquad
-\langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\rangle_0 = 1,
+\langle \tilde\Upsilon_1\tilde\Upsilon_2\rangle_0 = 1,
 \qquad
-\langle \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}\rangle_0 = 0 ,
+\langle \tilde\Upsilon_2\tilde\Upsilon_1\rangle_0 = 0 ,
 $$
 and every $2m$-point one-mode contraction is the signed sum over complete pairings, with the relative sign supplied by the parity of the pairing. The four-point table and the six-point value were recomputed directly in the matrix representation and agree with the pairing sums to machine precision; the nonzero entries are $\langle(\tilde a\tilde a^\dagger)^k\rangle_0=1$, and the alternating word is the only contractible one.
 
@@ -271,8 +271,8 @@ For a field the theorem is standard and transcribed: time-ordered products equal
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Scalar imaginary, central |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors |
-| $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger=\tfrac12(ie_1+e_2)$ | Single-mode ladder |
-| $\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$ | Number operator |
+| $\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$, $\tilde\Upsilon_2=\tfrac12(ie_1+e_2)$ | Single-mode ladder |
+| $\tilde N_{\mathrm{tr}}=\tilde\Upsilon_2\tilde\Upsilon_1=\tfrac12(e_0-ie_3)$ | Number operator |
 | $\tilde\Pi_1=e_0-\tilde N_{\mathrm{tr}}=\tfrac12(e_0+ie_3)$ | One-mode vacuum projector |
 | $\mathcal{A}_{\mathrm{tr}}=\mathrm{span}_\mathbb{R}\{e_0,ie_1,e_2,ie_3\}\cong\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ | One-mode real form of $\mathbb{B}$ |
 | $(-1)^F=ie_3=e_0-2\tilde N_{\mathrm{tr}}$ | Fermion-parity grading |

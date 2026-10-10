@@ -10,7 +10,7 @@ $$
 
 of the underlying real space $\mathbb{B}\cong\mathbb{R}^8$ (*Topology in the Space of Biquaternions*). That norm is one of the equivalent norms of that space; any equivalent norm gives the same topology, the same singular set and the same link, and it is the only metric input of the article.
 
-That the singular set is also the null set $\{\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$ of the algebraic norm is a computational convenience and nothing more. The equation describes the cone; it does not equip the space with its topology, which is fixed by the linear structure alone. The algebraic norm itself — its multiplicativity, its real forms and its polarisations — belongs to *Biquaternion Norm and Invertibility*, and the zero-divisor set in its own right to *Biquaternion Zero Divisors*. The space with its unique topology is *Topology in the Space of Biquaternions*; the ambient Euclidean structure, the topological unit sphere and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*; the complement of the cone, with its group structure and its own topology, is *The Biquaternion Unit Group as a Topological Group*; and the projective geometry of the complex lines the cone contains — the quadric surface, its two rulings and its polarity — is *The Null Quadric and Its Projective Geometry*.
+That the singular set is also the null set $\{\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$ of the algebraic norm is a computational convenience and nothing more. The equation describes the cone; it does not equip the space with its topology, which is fixed by the linear structure alone. The algebraic norm itself — its multiplicativity, its real forms and its polarisations — belongs to *Biquaternion Norm and Invertibility*, and the zero-divisor set in its own right to *Zero Divisors of the General Plain Algebra*. The space with its unique topology is *Topology in the Space of Biquaternions*; the ambient Euclidean structure, the topological unit sphere and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*; the complement of the cone, with its group structure and its own topology, is *The Biquaternion Unit Group as a Topological Group*; and the projective geometry of the complex lines the cone contains — the quadric surface, its two rulings and its polarity — is *The Null Quadric and Its Projective Geometry*.
 
 **Scope.** The article owns the singular set as a closed algebraic cone, its smooth structure away from its apex, its contractibility, its link with the topological unit sphere, and the homotopy invariants of that link, together with the sphere of real roots of $-1$ that the pure real slice carries. The ambient Euclidean structure and the unit sphere are quoted from *The Euclidean Topology of the Biquaternion Algebra* rather than re-derived; the two facts about the cone that are read from that sphere are proved here.
 
@@ -18,7 +18,7 @@ That the singular set is also the null set $\{\langle\tilde Q,\tilde Q\rangle_{\
 
 ## The Singular Set
 
-**Definition (the singular set).** An element is **singular** if it is nonzero and not invertible. A **zero divisor** is a nonzero $\tilde Q$ for which there is a nonzero $\tilde R$ with $\tilde Q\tilde R=0$ or $\tilde R\tilde Q=0$. For the biquaternion algebra the two notions coincide (*Biquaternion Zero Divisors*): a nonzero element is singular exactly when it is a zero divisor. The **singular set** of the algebra is
+**Definition (the singular set).** An element is **singular** if it is nonzero and not invertible. A **zero divisor** is a nonzero $\tilde Q$ for which there is a nonzero $\tilde R$ with $\tilde Q\tilde R=0$ or $\tilde R\tilde Q=0$. For the biquaternion algebra the two notions coincide (*Zero Divisors of the General Plain Algebra*): a nonzero element is singular exactly when it is a zero divisor. The **singular set** of the algebra is
 
 $$
 \mathcal{N}=\mathcal{Z}\cup\{0\},\qquad \mathcal{Z}=\{\tilde Q\in\mathbb{B}:\tilde Q\neq0\text{ and }\tilde Q\text{ is not invertible}\},
@@ -28,7 +28,7 @@ and $\mathcal{Z}$ is the **zero-divisor cone**. The group of units is its comple
 
 The two descriptions agree with the null set of the algebraic norm.
 
-**Proposition (the singular set is the null set; quoted).** $\mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, with $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu=0}^{3}Q_\mu^{2}$; so $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ (*The Four Pairings of the Biquaternion Algebra*, §*The Algebraic Norm*; *Biquaternion Zero Divisors*). $\square$
+**Proposition (the singular set is the null set; quoted).** $\mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, with $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu=0}^{3}Q_\mu^{2}$; so $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ (*The Four Pairings of the Biquaternion Algebra*, §*The Algebraic Norm*; *Zero Divisors of the General Plain Algebra*). $\square$
 
 **Proposition (elementary properties).** With the Euclidean topology of the ambient space:
 

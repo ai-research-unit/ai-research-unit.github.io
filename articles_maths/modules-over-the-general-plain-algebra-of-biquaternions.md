@@ -5,7 +5,7 @@
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is isomorphic to the full matrix algebra $M_2(\mathbb{C})$, and this one fact settles both its action on itself and its module theory. A module over a general ring is an intractable object; a module over $\mathbb{B}$ is a direct sum of copies of a single two-dimensional module $S=\mathbb{C}^2$, and the category of modules is the linear algebra of $\mathbb{C}$ with every dimension doubled. The algebra acting on its own additive group by its multiplication gives the **regular module**, the object cut from the same multiplication as the algebra: its submodules are the ideals, it is cyclic on the unit, faithful, free of rank one, a generator and the identity of the tensor product, and its endomorphism ring recovers the algebra, its opposite or its centre according to which of the two actions is kept. This article develops both in the concrete case of $\mathbb{B}$: the three regular objects and their four properties, the defining module, the classification of modules, the parity that decides freeness, the endomorphism algebras, the Morita equivalence with $\mathbb{C}$, the degeneration of torsion, and the descent to the real form. The regular object is at once the smallest module the algebra has and the universal one.
 
-The general theory is used, not repeated. The definitions and the isomorphism theorems are those of *Modules over an Algebra*, the simple and semisimple theory is *Simple and Semisimple Modules*, the Morita theorem is *Morita Equivalence*, the balanced product is *The Balanced Product over an Algebra*, and base change is *Change of Rings*. The general theory of the regular object is *The Regular Module and the Regular Bimodule* for the three regular objects, the correspondence with the ideals, the four properties and the endomorphism ring, with *The Balanced Product* for the tensor product and its universal property, and *Modules* and *Direct Sums, Free Modules and Rank* for submodules, free modules and rank. The quaternionic side of the comparison is *Quaternion Ideals and Simplicity*, which owns the module theory over the division ring, and the companion ring-based reading of the same additive group is *Biquaternions as a Bimodule over $\mathbb{H}$*. What is added here is the module theory of the system $\mathbb{B}$ itself. The algebra conventions are those of *Biquaternions as a Vector Space over $\mathbb{C}$*: the basis $e_0,e_1,e_2,e_3$ with $e_0=1$, $e_k^2=-e_0$ and $e_1e_2=e_3$; the central imaginary $i$ with $i^2=-1$; the idempotents $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, $\tilde\Pi_2=\tfrac12(e_0-ie_3)$ and the matrix units $\tilde R=\tfrac12(ie_1-e_2)$, $\tilde T=\tfrac12(ie_1+e_2)$, with the Peirce decomposition, as in *Biquaternion Idempotents and Projections* and *Biquaternion Ideals and Peirce Decomposition*.
+The general theory is used, not repeated. The definitions and the isomorphism theorems are those of *Modules over an Algebra*, the simple and semisimple theory is *Simple and Semisimple Modules*, the Morita theorem is *Morita Equivalence*, the balanced product is *The Balanced Product over an Algebra*, and base change is *Change of Rings*. The general theory of the regular object is *The Regular Module and the Regular Bimodule* for the three regular objects, the correspondence with the ideals, the four properties and the endomorphism ring, with *The Balanced Product* for the tensor product and its universal property, and *Modules* and *Direct Sums, Free Modules and Rank* for submodules, free modules and rank. The quaternionic side of the comparison is *Quaternion Ideals and Simplicity*, which owns the module theory over the division ring, and the companion ring-based reading of the same additive group is *Biquaternions as a Bimodule over $\mathbb{H}$*. What is added here is the module theory of the system $\mathbb{B}$ itself. The algebra conventions are those of *Biquaternions as a Vector Space over $\mathbb{C}$*: the basis $e_0,e_1,e_2,e_3$ with $e_0=1$, $e_k^2=-e_0$ and $e_1e_2=e_3$; the central imaginary $i$ with $i^2=-1$; the idempotents $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, $\tilde\Pi_2=\tfrac12(e_0-ie_3)$ and the matrix units $\tilde R=\tfrac12(ie_1-e_2)$, $\tilde T=\tfrac12(ie_1+e_2)$, with the Peirce decomposition, as in *Idempotents of the General Plain Algebra* and *Biquaternion Ideals and Peirce Decomposition*.
 
 A generic element is $\tilde Q$, an idempotent is $\tilde\Pi$, and the two one-sided multiplications are
 
@@ -55,7 +55,7 @@ which is the associativity of $\mathbb{B}$ once more: the two scalar multiplicat
 
 **Corollary (the lattice of ideals is the lattice of submodules).** The identity map on subsets of $\mathbb{B}$ is an isomorphism of the lattice of submodules of ${}_{\mathbb{B}}\mathbb{B}$ onto the lattice of left ideals of $\mathbb{B}$, preserving inclusion, intersection and sum; likewise for the right ideals and for the two-sided ideals of the bimodule.
 
-**Remark (the biquaternion content).** Because $\mathbb{B}$ is simple, the two-sided ideals are only $0$ and $\mathbb{B}$, so the regular bimodule has no nontrivial sub-bimodule; this is the bimodule reading of the simplicity proved in *Biquaternion Ideals and Peirce Decomposition*. The left ideals are the left ideals of the algebra, classified there as the Peirce subspaces and the minimal left ideals $\mathbb{B}\tilde\Pi$ generated by the primitive idempotents of *Biquaternion Idempotents and Projections*; the theorem above says that the same list is the complete list of submodules of the left regular module.
+**Remark (the biquaternion content).** Because $\mathbb{B}$ is simple, the two-sided ideals are only $0$ and $\mathbb{B}$, so the regular bimodule has no nontrivial sub-bimodule; this is the bimodule reading of the simplicity proved in *Biquaternion Ideals and Peirce Decomposition*. The left ideals are the left ideals of the algebra, classified there as the Peirce subspaces and the minimal left ideals $\mathbb{B}\tilde\Pi$ generated by the primitive idempotents of *Idempotents of the General Plain Algebra*; the theorem above says that the same list is the complete list of submodules of the left regular module.
 
 ## The Four Properties of the Regular Object
 
@@ -140,18 +140,18 @@ $$
 and the four Peirce corners of $\mathbb{B}$ with respect to the pair are
 
 $$
-\tilde\Pi_1\mathbb{B}\tilde\Pi_1=\mathbb{C}\tilde\Pi_1,\qquad \tilde\Pi_1\mathbb{B}\tilde\Pi_2=\mathbb{C}\tilde R,\qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_1=\mathbb{C}\tilde T,\qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_2=\mathbb{C}\tilde\Pi_2,
+\tilde\Pi_1\mathbb{B}\tilde\Pi_1=\mathbb{C}\tilde\Pi_1,\qquad \tilde\Pi_1\mathbb{B}\tilde\Pi_2=\mathbb{C}\tilde\Upsilon_1,\qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_1=\mathbb{C}\tilde\Upsilon_2,\qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_2=\mathbb{C}\tilde\Pi_2,
 $$
 
 each of complex dimension one. The minimal left ideal generated by $\tilde\Pi_1$ is therefore
 
 $$
-S:=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\,\tilde T\},
+S:=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\,\tilde\Upsilon_2\},
 $$
 
-of complex dimension two, the **defining module** of $\mathbb{B}$. The second column $\mathbb{B}\tilde\Pi_2=\mathbb{C}\{\tilde\Pi_2,\,\tilde R\}$ is a second minimal left ideal, isomorphic to the first.
+of complex dimension two, the **defining module** of $\mathbb{B}$. The second column $\mathbb{B}\tilde\Pi_2=\mathbb{C}\{\tilde\Pi_2,\,\tilde\Upsilon_1\}$ is a second minimal left ideal, isomorphic to the first.
 
-The left action of $\mathbb{B}$ on $S$ is computed on the basis $(\tilde\Pi_1,\tilde T)$. Multiplication by the idempotent fixes $\tilde\Pi_1$ and kills $\tilde T$, while multiplication by the off-diagonal elements interchanges the two: $\tilde R\tilde\Pi_1=0$, $\tilde T\tilde\Pi_1=\tilde T$, $\tilde R \tilde T=\tilde\Pi_1$ and $\tilde T^2=0$. The action makes $S$ the defining two-dimensional module of $\mathbb{B}$. Nothing in this paragraph depends on the choice of idempotent: all minimal left ideals of $\mathbb{B}$ are isomorphic, and they are indexed by the projective line $\mathbb{P}^1(\mathbb{C})$, as in *Biquaternion Ideals and Peirce Decomposition*.
+The left action of $\mathbb{B}$ on $S$ is computed on the basis $(\tilde\Pi_1,\tilde\Upsilon_2)$. Multiplication by the idempotent fixes $\tilde\Pi_1$ and kills $\tilde\Upsilon_2$, while multiplication by the off-diagonal elements interchanges the two: $\tilde\Upsilon_1\tilde\Pi_1=0$, $\tilde\Upsilon_2\tilde\Pi_1=\tilde\Upsilon_2$, $\tilde\Upsilon_1 \tilde\Upsilon_2=\tilde\Pi_1$ and $\tilde\Upsilon_2^2=0$. The action makes $S$ the defining two-dimensional module of $\mathbb{B}$. Nothing in this paragraph depends on the choice of idempotent: all minimal left ideals of $\mathbb{B}$ are isomorphic, and they are indexed by the projective line $\mathbb{P}^1(\mathbb{C})$, as in *Biquaternion Ideals and Peirce Decomposition*.
 
 **Theorem.** $S$ is a simple left $\mathbb{B}$-module, and up to isomorphism it is the only one.
 
@@ -257,7 +257,7 @@ Every statement that can be made about $\mathbb{B}$-modules is a statement about
 
 The naive notion of torsion does not survive the passage from a commutative domain to $\mathbb{B}$, and it is worth recording why, since the failure is a feature of the module category rather than a defect.
 
-Recall that over a commutative domain a nonzero module element $m$ is torsion when $\operatorname{Ann}(m)\neq0$, an invariant that classifies finitely generated modules over a principal ideal domain (*Modules over a PID*). Over $\mathbb{B}$ the definition collapses. The algebra has zero divisors — this is the vanishing of the norm, treated in *Biquaternion Zero Divisors* and *Biquaternion Norm and Invertibility* — and for every nonzero $s\in S$ the annihilator
+Recall that over a commutative domain a nonzero module element $m$ is torsion when $\operatorname{Ann}(m)\neq0$, an invariant that classifies finitely generated modules over a principal ideal domain (*Modules over a PID*). Over $\mathbb{B}$ the definition collapses. The algebra has zero divisors — this is the vanishing of the norm, treated in *Zero Divisors of the General Plain Algebra* and *Biquaternion Norm and Invertibility* — and for every nonzero $s\in S$ the annihilator
 
 $$
 \operatorname{Ann}_\mathbb{B}(s)=\{b\in\mathbb{B}:bs=0\}
@@ -370,8 +370,8 @@ The morphisms are the complex matrices: $\operatorname{End}_\mathbb{B}(S)=\mathb
 | $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ | the right multiplications |
 | $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})=\mathbb{C}e_0$ | the bimodule endomorphisms |
 | $\tilde\Pi_1,\tilde\Pi_2$ | orthogonal minimal idempotents $\tfrac12(e_0\pm ie_3)$, $\tilde\Pi_1+\tilde\Pi_2=e_0$ |
-| $\tilde R,\tilde T$ | the two off-diagonal elements $\tfrac12(ie_1-e_2)$, $\tfrac12(ie_1+e_2)$ |
-| $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde T\}$ | defining module, the unique simple left $\mathbb{B}$-module, $\dim_\mathbb{C}=2$ |
+| $\tilde\Upsilon_1,\tilde\Upsilon_2$ | the two off-diagonal elements $\tfrac12(ie_1-e_2)$, $\tfrac12(ie_1+e_2)$ |
+| $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}$ | defining module, the unique simple left $\mathbb{B}$-module, $\dim_\mathbb{C}=2$ |
 | $S^{\oplus k}$ | general finitely generated left module, $\dim_\mathbb{C}=2k$ |
 | ${}_{\mathbb{B}}\mathbb{B}\cong S\oplus S$ | left regular module, free of rank one over $\mathbb{B}$, completely reducible |
 | $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$ | commutant of the simple module |

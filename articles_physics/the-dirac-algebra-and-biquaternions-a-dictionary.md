@@ -100,12 +100,20 @@ $$
 \gamma^k = \begin{pmatrix} 0 & \sigma_k \\ -\sigma_k & 0 \end{pmatrix},
 $$
 
-which is the usual **mostly-minus** block representation, the one used in the parent article, whose block construction is $\gamma^0 = \bigl(\begin{smallmatrix}0 & e_0\\ e_0 & 0\end{smallmatrix}\bigr)$, $\gamma^k = \bigl(\begin{smallmatrix}0 & ie_k\\ -ie_k & 0\end{smallmatrix}\bigr)$, identical to the form used here.
+which is the usual **mostly-minus** block representation, the one used in the parent article, whose block construction is $\gamma^0 = \bigl(\begin{smallmatrix}0 & e_0\\ e_0 & 0\end{smallmatrix}\bigr)$, $\gamma^k = \bigl(\begin{smallmatrix}0 & ie_k\\ -ie_k & 0\end{smallmatrix}\bigr)$, identical to the form used here. Written out entry by entry the four generators are
+
+$$
+\gamma^0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma^1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},\qquad
+\gamma^2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
+\gamma^3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix}.
+$$
 
 Direct multiplication in this representation gives $(\gamma^0)^2 = +I_4$, $(\gamma^k)^2 = -I_4$, and $\gamma^\mu\gamma^\nu = -\gamma^\nu\gamma^\mu$ for $\mu \neq \nu$, that is, $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$. The pseudoscalar is
 
 $$
-\omega = \gamma^0\gamma^1\gamma^2\gamma^3 = \mathrm{diag}(i,i,-i,-i),
+\omega = \gamma^0\gamma^1\gamma^2\gamma^3 = \mathrm{diag}(i,i,-i,-i)
+=\begin{pmatrix}i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&-i\end{pmatrix},
 $$
 
 with $\omega^2 = -I_4$, and it commutes with every even element and anticommutes with every generator:
@@ -221,6 +229,17 @@ $$
 \Phi(e_1) = \gamma^2\gamma^3, \quad \Phi(e_2) = \gamma^3\gamma^1, \quad \Phi(e_3) = \gamma^1\gamma^2, \qquad
 \Phi(ie_1) = \gamma^0\gamma^1, \quad \Phi(ie_2) = \gamma^0\gamma^2, \quad \Phi(ie_3) = \gamma^0\gamma^3 .
 $$
+
+The two representative entries, written out, are
+
+$$
+\Phi(e_1)=\gamma^2\gamma^3=\begin{pmatrix}-i\sigma_1&0\\0&-i\sigma_1\end{pmatrix}
+=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
+\Phi(ie_1)=\gamma^0\gamma^1=\begin{pmatrix}-\sigma_1&0\\0&\sigma_1\end{pmatrix}
+=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix},
+$$
+
+so the quaternion unit $e_1$ becomes $-i\sigma_1$ block-diagonally and $ie_1$ becomes the two blocks with opposite signs, the positive sign on the second.
 
 The only sign in the dictionary is the minus on $\Phi(i) = -\omega$, and it is the single sign the correspondence leaves free. The reason the mixed pattern of the opposite-generator convention does not arise is visible in the products:
 
@@ -358,7 +377,8 @@ Two consequences follow immediately and are worth recording. First, the timelike
 The chirality operator of the Dirac algebra is
 
 $$
-\gamma_5 = i_{\mathrm{Cl}}\,\omega = i_{\mathrm{Cl}}\,\gamma^0\gamma^1\gamma^2\gamma^3, \qquad \gamma_5 = \mathrm{diag}(-1,-1,1,1),
+\gamma_5 = i_{\mathrm{Cl}}\,\omega = i_{\mathrm{Cl}}\,\gamma^0\gamma^1\gamma^2\gamma^3, \qquad \gamma_5 = \mathrm{diag}(-1,-1,1,1)
+=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
 $$
 
 where $i_{\mathrm{Cl}}$ is the scalar imaginary of the **complexified** Clifford algebra, not the biquaternion imaginary. The two are different objects: the biquaternion imaginary $i$ has image $-\omega$ under $\Phi$, so in the dictionary
@@ -385,7 +405,14 @@ $$
 \tilde\Pi_{L,R} = \tfrac{1}{2}\bigl(I_4 \pm \gamma_5\bigr) \;=\; \Phi_{\mathbb{C}}\!\left(\tfrac{1}{2}\bigl(e_0 \mp i_{\mathrm{Cl}}\, i\bigr)\right),
 $$
 
-each of rank $2$ in the $4\times 4$ representation. Direct multiplication gives
+each of rank $2$ in the $4\times 4$ representation, that is, the two diagonal matrices
+
+$$
+\tilde\Pi_L = \tfrac12\bigl(I_4+\gamma_5\bigr)=\begin{pmatrix}0&0&0&0\\0&0&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+\tilde\Pi_R = \tfrac12\bigl(I_4-\gamma_5\bigr)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix},
+$$
+
+written in the checks below as $\tilde\Pi_1,\tilde\Pi_2$ in the same order. Direct multiplication gives
 
 $$
 \tilde\Pi_1^2 = \tilde\Pi_1, \qquad \tilde\Pi_2^2 = \tilde\Pi_2, \qquad \tilde\Pi_1\tilde\Pi_2 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = I_4, \qquad \mathrm{Tr}\,\tilde\Pi_{1,2} = 2 .
@@ -476,7 +503,7 @@ The dictionary so far has mapped objects; it is worth stating the two ways an el
 
 **One element, two readings.** Because $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, the algebra is the endomorphism algebra of its own unique simple module, $\mathbb{B} = \mathrm{End}(S)$ with $S$ of complex dimension two. Every element is therefore at once an **object** of the algebra and a **linear operator** on $S$. The two mechanisms are those two readings.
 
-**Mechanism one: multiplication, on the module.** A spinor is an element of the minimal left ideal $S = \mathbb{B}p$, $p = \tfrac12(e_0+ie_3)$, and $\mathbb{B}$ acts on it by left multiplication, $\psi\mapsto \rho(\tilde B)\psi$. Since $\mathbb{B} = \mathrm{End}(S)$, *every* complex-linear operator on the spinor module is some biquaternion, and this mechanism carries the whole half-integer-spin sector: the Dirac field, its two Weyl halves, the chirality projectors (central idempotents of the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$ itself), the mass $m$ and the central phase $\lambda = e^{i\theta}$ (central elements), and the gradient $\tilde{\nabla}$ when it acts on a field.
+**Mechanism one: multiplication, on the module.** A spinor is an element of the minimal left ideal $S = \mathbb{B}\tilde\Pi_1$, $\tilde\Pi_1 = \tfrac12(e_0+ie_3)$, and $\mathbb{B}$ acts on it by left multiplication, $\psi\mapsto \rho(\tilde B)\psi$. Since $\mathbb{B} = \mathrm{End}(S)$, *every* complex-linear operator on the spinor module is some biquaternion, and this mechanism carries the whole half-integer-spin sector: the Dirac field, its two Weyl halves, the chirality projectors (central idempotents of the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$ itself), the mass $m$ and the central phase $\lambda = e^{i\theta}$ (central elements), and the gradient $\tilde{\nabla}$ when it acts on a field.
 
 **Mechanism two: conjugation, on the algebra.** A four-vector is not in the module but in the algebra: the material sector $\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$. A Lorentz transformation acts on it by the rotor conjugation
 
@@ -580,7 +607,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian and Hermitian subspaces |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion and complex subspaces |
-| $S = \mathbb{B}p$, $p=\tfrac12(e_0+ie_3)$ | The simple (spinor) module; $\mathbb{B}=\mathrm{End}(S)$ |
+| $S = \mathbb{B}\tilde\Pi_1$, $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ | The simple (spinor) module; $\mathbb{B}=\mathrm{End}(S)$ |
 | $\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k\partial_k$ | Biquaternionic gradient |
 | $\not\partial = \gamma^\mu\partial_\mu$ | Gamma-matrix Dirac operator |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (unchanged) |

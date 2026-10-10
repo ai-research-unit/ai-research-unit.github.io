@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops integration for functions of one split complex variable. It follows *Split Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_\pm = \tfrac12(1 \pm j)$, the conjugation $\bar A$, and the norm $N(A) = A\bar A = a^2 - a'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
+This article develops integration for functions of one split complex variable. It follows *Split Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_{1,2} = \tfrac12(1 \pm j)$, the conjugation $\bar A$, and the norm $N(A) = A\bar A = a^2 - a'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
 
 The base ring throughout is $\mathbb{D}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The **vanishing** statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The **representation** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\zeta - A)$ of the formula is defined only where $\zeta - A$ is a unit, and the set where it is not is not the point $A$ but the two lines through $A$; no contour that surrounds $A$ avoids them.
 
@@ -111,7 +111,7 @@ $$
 
 where $\gamma_\pm(t) = a(\gamma(t)) \pm a'(\gamma(t))$ are the projected paths and each integral on the right is an ordinary real line integral.
 
-**Proof.** Since $dA = \Pi_1\,dA_+ + \Pi_2\,dA_-$ and $\Pi_1 \Pi_2 = \Pi_2 \Pi_1 = 0$, $\Pi_\pm^2 = \Pi_\pm$, the product $f(A)\,dA$ splits as $f_+(A_+)\,\Pi_1\,dA_+ + f_-(A_-)\,\Pi_2\,dA_-$. Integrating the two summands separately gives the stated identity.
+**Proof.** Since $dA = \Pi_1\,dA_+ + \Pi_2\,dA_-$ and $\Pi_1 \Pi_2 = \Pi_2 \Pi_1 = 0$, $\Pi_{1,2}^2 = \Pi_{1,2}$, the product $f(A)\,dA$ splits as $f_+(A_+)\,\Pi_1\,dA_+ + f_-(A_-)\,\Pi_2\,dA_-$. Integrating the two summands separately gives the stated identity.
 
 So a split complex contour integral is exactly a pair of real line integrals, one for each idempotent, and the two are independent of each other. This is the source of both the strength and the weakness of the theory.
 
@@ -165,7 +165,7 @@ $$
 \partial_{\bar A} f = (\Pi_2\partial_+ + \Pi_1\partial_-)(f_+\Pi_1 + f_-\Pi_2) = (\partial_+ f_-)\,\Pi_2 + (\partial_- f_+)\,\Pi_1,
 $$
 
-because $\Pi_2 \Pi_1 = \Pi_1 \Pi_2 = 0$ and $\Pi_\pm^2 = \Pi_\pm$. The two idempotents are independent, so this vanishes if and only if $\partial_+ f_- = 0$ and $\partial_- f_+ = 0$, that is, if and only if $f_-$ is locally a function of $A_-$ alone and $f_+$ of $A_+$ alone.
+because $\Pi_2 \Pi_1 = \Pi_1 \Pi_2 = 0$ and $\Pi_{1,2}^2 = \Pi_{1,2}$. The two idempotents are independent, so this vanishes if and only if $\partial_+ f_- = 0$ and $\partial_- f_+ = 0$, that is, if and only if $f_-$ is locally a function of $A_-$ alone and $f_+$ of $A_+$ alone.
 
 **Corollary (the derivative in idempotent coordinates).** If $f$ is split complex differentiable, then
 
@@ -452,7 +452,7 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\zet
 | $N(A) = A\bar A = a^2 - a'^2$ | Norm, signature $(1,1)$ |
 | $\{N = 0\}$ | Null cone, the zero-divisor set |
 | $\|A\|_E = \sqrt{a^2 + a'^2}$ | Euclidean modulus |
-| $\Pi_1 = \tfrac12(1+j), \ \Pi_2 = \tfrac12(1-j)$ | Idempotents, $\Pi_\pm^2 = \Pi_\pm$, $\Pi_1\Pi_2 = 0$ |
+| $\Pi_1 = \tfrac12(1+j), \ \Pi_2 = \tfrac12(1-j)$ | Idempotents, $\Pi_{1,2}^2 = \Pi_{1,2}$, $\Pi_1\Pi_2 = 0$ |
 | $A = A_+\Pi_1 + A_-\Pi_2$, $A_+ = a+a'$, $A_- = a-a'$ | Idempotent decomposition and coordinates |
 | $\gamma : [a,b] \to \mathbb{D}$ | Piecewise $C^1$ path |
 | $\gamma_\pm(t) = A_\pm(\gamma(t))$ | Projections of a path to the two null coordinates |

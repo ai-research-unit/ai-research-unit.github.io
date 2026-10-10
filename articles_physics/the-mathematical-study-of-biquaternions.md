@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is studied in depth in the mathematics corpus, and every result the physics uses is explained there. This article is the physics-side entry point to that mathematical study. It carries the direct links to all two hundred and twenty-four entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them. Every entry opens a mathematics article directly.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is studied in depth in the mathematics corpus, and every result the physics uses is explained there. This article is the physics-side entry point to that mathematical study. It carries the direct links to the entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them. Every entry opens a mathematics article directly.
 
 ## Algebra
 
@@ -36,8 +36,8 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 #### Common Theory
 
 - [Introduction to the General Plain Algebra of Biquaternions](../articles_maths/introduction-to-the-general-plain-algebra-of-biquaternions.html)
-- [Biquaternion Idempotents and Projections](../articles_maths/biquaternion-idempotents-and-projections.html)
-- [Biquaternion Zero Divisors](../articles_maths/biquaternion-zero-divisors.html)
+- [Idempotents of the General Plain Algebra](../articles_maths/idempotents-of-the-general-plain-algebra.html)
+- [Zero Divisors of the General Plain Algebra](../articles_maths/zero-divisors-of-the-general-plain-algebra.html)
 
 #### Associative and Unital Theory
 

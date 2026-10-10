@@ -102,7 +102,7 @@ $$
 N(z) = a^2 - a'^2 = z_+ z_- ,
 $$
 
-indefinite of signature $(1,1)$; its zero set is the **null cone** $\mathcal{N} = \mathbb{R}\Pi_+ \cup \mathbb{R}\Pi_-$, the two null lines $z_+ = 0$ and $z_- = 0$, whose nonzero elements are the zero divisors.
+indefinite of signature $(1,1)$; its zero set is the **null cone** $\mathcal{N} = \mathbb{R}\Pi_1 \cup \mathbb{R}\Pi_2$, the two null lines $z_+ = 0$ and $z_- = 0$, whose nonzero elements are the zero divisors.
 
 **Definition.** The **level sets of the norm** are the sets $N(z) = t$: for $t > 0$ the two branches of a hyperbola crossing the real axis at $\pm\sqrt{t}$; for $t < 0$ the two branches crossing the imaginary axis at $\pm\sqrt{|t|}j$; for $t = 0$ the two null lines. In the idempotent coordinates each level set is the hyperbola $z_+z_- = t$.
 
@@ -120,7 +120,7 @@ $$
 
 where $p_\pm(x) = \sum_k a_{k\pm} x^k$ is the real polynomial obtained from the coefficients of $p$ and $N_{p_\pm}$ is its real Newton map.
 
-**Proof.** A polynomial with coefficients in $\mathbb{D}$ splits, $\varphi(p(z)) = (p_+(z_+), p_-(z_-))$, because $\varphi$ is a ring homomorphism and $\varphi(a_k) = (a_{k+},a_{k-})$; the same holds for the derivative. The quotient of two split-complex numbers with nonzero coordinates is componentwise in the coordinates, since $\Pi_\pm$ are orthogonal idempotents; hence the Newton quotient splits, and the formula follows.
+**Proof.** A polynomial with coefficients in $\mathbb{D}$ splits, $\varphi(p(z)) = (p_+(z_+), p_-(z_-))$, because $\varphi$ is a ring homomorphism and $\varphi(a_k) = (a_{k+},a_{k-})$; the same holds for the derivative. The quotient of two split-complex numbers with nonzero coordinates is componentwise in the coordinates, since $\Pi_{1,2}$ are orthogonal idempotents; hence the Newton quotient splits, and the formula follows.
 
 **Corollary.** The Fatou set of the Newton map is $\varphi^{-1}(F_{p_+} \times F_{p_-})$ and its Julia set is $\varphi^{-1}((J_{p_+}\times\mathbb{R})\cup(\mathbb{R}\times J_{p_-}))$, with the real Newton basins of the two factor polynomials as the factors. In particular the fractal Newton basins of a real polynomial with distinct real roots are the products of the real basins and their boundaries, and the "Newton fractal" of the split-complex plane is a union of two products of one-dimensional basins.
 
@@ -143,7 +143,7 @@ The norm is indefinite, with the two forms $N = a^2-a'^2 = z_+z_-$; its level se
 | $F_\pm$, $J_\pm$ | Fatou and Julia sets of the real maps |
 | $K_c = \varphi^{-1}(K_+\times K_-)$ | Filled Julia set, the compact product |
 | $N(z) = a^2-a'^2 = z_+z_-$ | Norm, indefinite |
-| $\mathcal{N} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$ | Null cone, the two null lines |
+| $\mathcal{N} = \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$ | Null cone, the two null lines |
 | $N_p$ | Newton map, splitting as $N_{p_\pm}$ |
 
 ## Further Reading

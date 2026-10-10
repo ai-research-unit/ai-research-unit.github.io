@@ -7,7 +7,7 @@ The split-complex algebra $\mathbb{D}$ acting on itself by left multiplication i
 
 The general representation theory is owned by *Split-Complex Element Representations*; here the regular representation alone is studied, in its matrix form, with the multiplication operator as the object. The word *representation* is used in both senses at once, the concrete realization and the technical action of an algebra on a vector space, because the action is the object of study. The article owns the $2\times2$ regular matrix, the left and right multiplication operators and the fact that they coincide, the identification $\mathbb{D}\cong\{aI+a'J\}$, the determinant identity $\det \mathsf{M}_2(A) = N(A)$, the diagonalisation in the idempotent basis, the centralizer statement, and the identification of the unit-norm subgroup with the hyperbolic rotations. It does not treat the classification of all representations, which belongs to *Split-Complex Element Representations*; it does not treat the polar parametrisation of the unit-norm group in its own right, which belongs to *Split-Complex Polar Element Representation*; and it uses, but does not reprove, the idempotent decomposition of *Split-Complex Idempotents and Projections*.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+j a'$; conjugate $\bar A = a-j a'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$, with $A = A_+\Pi_1 + A_-\Pi_2$; norm $N(A) = a^2-a'^2$. The coefficient space is the two-dimensional real vector space $\mathbb{D}$ itself, and the matrix of an operator is taken in the basis $\{1, j\}$ unless stated.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+j a'$; conjugate $\bar A = a-j a'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$, with $A = A_+\Pi_1 + A_-\Pi_2$; norm $N(A) = a^2-a'^2$. The coefficient space is the two-dimensional real vector space $\mathbb{D}$ itself, and the matrix of an operator is taken in the basis $\{1, j\}$ unless stated.
 
 ## The Left Regular Representation
 
@@ -216,7 +216,7 @@ $$
 \mathsf{M}_2(\Pi_1) = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix} = E_{11}, \qquad \mathsf{M}_2(\Pi_2) = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} = E_{22}.
 $$
 
-The corresponding abstract statement — that $\Pi_\pm$ are the diagonal matrix units of $\mathbb{D}$, with the multiplication rule $\Pi_1^2=\Pi_1$, $\Pi_2^2=\Pi_2$, $\Pi_1\Pi_2=0$, $\Pi_1+\Pi_2=1$, and that no off-diagonal matrix units exist because the algebra is commutative — is the content of *Split-Complex Ideals and Peirce Decomposition*. In the matrix model it reads as the diagonalisation just recorded: the image is a direct sum of two diagonal blocks, and in the biquaternion algebra the same decomposition splits $\mathbb{B}$ into four blocks of complex dimensions $1+1+1+1$ with all matrix units present, whereas here only two blocks survive, of real dimension $1$ each.
+The corresponding abstract statement — that $\Pi_{1,2}$ are the diagonal matrix units of $\mathbb{D}$, with the multiplication rule $\Pi_1^2=\Pi_1$, $\Pi_2^2=\Pi_2$, $\Pi_1\Pi_2=0$, $\Pi_1+\Pi_2=1$, and that no off-diagonal matrix units exist because the algebra is commutative — is the content of *Split-Complex Ideals and Peirce Decomposition*. In the matrix model it reads as the diagonalisation just recorded: the image is a direct sum of two diagonal blocks, and in the biquaternion algebra the same decomposition splits $\mathbb{B}$ into four blocks of complex dimensions $1+1+1+1$ with all matrix units present, whereas here only two blocks survive, of real dimension $1$ each.
 
 ## The Unit-Norm Subgroup and the Hyperbolic Rotations
 
@@ -304,7 +304,7 @@ The determinant of the regular matrix is the norm, $\det \mathsf{M}_2(A) = a^2-a
 | $\operatorname{Tr}\mathsf{M}_2(A) = 2a$ | Trace of the regular matrix |
 | $P = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$ | Change of basis to the idempotents, $P\mathsf{M}_2(A)P^{-1} = \operatorname{diag}(A_+,A_-)$ |
 | $A_\pm = a\pm a'$ | Idempotent coordinates, the eigenvalues |
-| $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents |
+| $\Pi_{1,2} = \tfrac12(1\pm j)$ | Idempotents |
 | $I_1 = \mathbb{R}\Pi_1$, $I_2 = \mathbb{R}\Pi_2$ | The two minimal left ideals |
 | $R_j(t) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$ | Hyperbolic rotation matrix, $\mathsf{M}_2(e^{jt})$ |
 | $N(A) = a^2-a'^2$ | Norm |

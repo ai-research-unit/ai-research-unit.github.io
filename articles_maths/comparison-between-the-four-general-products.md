@@ -120,14 +120,14 @@ These are the four diagonals of *The Four Pairings of the Biquaternion Algebra*,
 |---|---|---|---|---|
 | idempotents | $0$, $e_0$, and $\tfrac12(e_0 + \xi i)$ for a root $\xi$ of $-e_0$ | $0$ and $e_0$ alone | $0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0 + i\hat\mu)$ with $\hat\mu$ a real unit vector | $0$, $e_0$, and $-\tfrac12 e_0 + \mu$ for a real $\mu$ of the vector subspace with $(\mu,\mu) = \tfrac34$ |
 
-The four columns are four different sets. The first is infinite and is the one the rest of the category uses; the second is the smallest possible, the two trivial idempotents; the third is the family of the pure states of *Biquaternion Idempotents and Projections*; the fourth is a family of a different kind, lying in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$.
+The four columns are four different sets. The first is infinite and is the one the rest of the category uses; the second is the smallest possible, the two trivial idempotents; the third is the family of the pure states of *Idempotents of the General Plain Algebra*; the fourth is a family of a different kind, lying in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$.
 
 The square roots of a central value differ in the same way and by the same two structural facts.
 
 | square roots | $\tilde P\tilde P = \lambda e_0$ | $\tilde P^{\natural}\tilde P = \lambda e_0$ | $\tilde P\tilde P^{*} = \lambda e_0$ | $\tilde P^{\natural}\tilde P^{*} = \lambda e_0$ |
 |---|---|---|---|---|
 | of $-e_0$ | $P_0 = 0$ with $(\mathbf P,\mathbf P) = 1$, and $P_0 = \pm i$ | the solutions of $N(\tilde P) = -1$ | none | the solutions of $\tilde P^{\natural}\tilde P^{*} = -e_0$, among them every real pure $\mathbf P$ with $(\mathbf P,\mathbf P) = 1$ |
-| of $0$ | $P_0 = 0$ with $(\mathbf P,\mathbf P) = 0$, the nilpotents | the solutions of $N(\tilde P) = 0$, the zero divisors together with $0$ | $\tilde P = 0$ alone | the solutions of $\tilde P^{\natural}\tilde P^{*} = 0$, among them $e_0 + ie_1$ |
+| of $0$ | $P_0 = 0$ with $(\mathbf P,\mathbf P) = 0$, the nilpotents $\tilde\Upsilon$ | the solutions of $N(\tilde P) = 0$, the zero divisors together with $0$ | $\tilde P = 0$ alone | the solutions of $\tilde P^{\natural}\tilde P^{*} = 0$, among them $e_0 + ie_1$ |
 
 The three families of *Biquaternion Square Roots of Minus One, Zero and Plus One* are therefore the three parts of one column of this table, the column of the general plain bilinear product, and not a classification of the square of the algebra in general. The other three columns are the same three equations read in the other products, and each of the other three has its reading in the article of that product.
 

@@ -13,7 +13,23 @@ This article introduces nothing and proves nothing. It records examples and non-
 
 ## The Matrix Ring and Its Matrix Units
 
-For a commutative ring $R$ and $n \geq 1$, the matrix ring $M_n(R)$ is the ring of $n \times n$ matrices with the usual addition and multiplication. Its additive basis is the set of matrix units, and the multiplication table of the units is the source of every structural fact below.
+For a commutative ring $R$ and $n \geq 1$, the matrix ring $M_n(R)$ is the ring of $n \times n$ matrices with the usual addition and multiplication. Its additive basis is the set of matrix units, and the multiplication table of the units is the source of every structural fact below. For $n = 2$ the four units are
+
+$$
+E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad
+E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad
+E_{21}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\quad
+E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix},
+$$
+
+and the two products $E_{12}E_{21}$ and $E_{21}E_{12}$ read
+
+$$
+E_{12}E_{21}=\begin{pmatrix}0&1\\0&0\end{pmatrix}\begin{pmatrix}0&0\\1&0\end{pmatrix}=\begin{pmatrix}1&0\\0&0\end{pmatrix}=E_{11},\qquad
+E_{21}E_{12}=\begin{pmatrix}0&0\\1&0\end{pmatrix}\begin{pmatrix}0&1\\0&0\end{pmatrix}=\begin{pmatrix}0&0\\0&1\end{pmatrix}=E_{22},
+$$
+
+which differ, and $E_{12}E_{12}=0$ while $E_{12}\neq 0$.
 
 | Object | The property it has | Introduced in |
 |---|---|---|

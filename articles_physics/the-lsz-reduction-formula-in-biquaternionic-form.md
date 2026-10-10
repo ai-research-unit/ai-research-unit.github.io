@@ -165,15 +165,15 @@ with the $\tilde\Psi^{\natural}$ legs amputated by $i\not\partial+m$. The operat
 
 Conditional on the one-mode identification of the Fock article, the reduction has a finite-dimensional shadow.
 
-**The one-mode statement.** For a single fermionic mode the field $\tilde\Phi$ is replaced by the ladder $\tilde a_{\mathrm{tr}}$ and its conjugate, the correlation functions by traces over the module, and the reduction becomes the matrix statement that the on-shell residue of the one-mode propagator is the identity of the mode algebra. Concretely, the one-mode two-point operators and their vacuum expectations are
+**The one-mode statement.** For a single fermionic mode the field $\tilde\Phi$ is replaced by the ladder $\tilde\Upsilon_1$ and its conjugate, the correlation functions by traces over the module, and the reduction becomes the matrix statement that the on-shell residue of the one-mode propagator is the identity of the mode algebra. Concretely, the one-mode two-point operators and their vacuum expectations are
 $$
-\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = \tilde\Pi_1,
+\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1,
 \qquad
-\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}} = \tilde\Pi_2,
+\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2,
 \qquad
-\big\langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\big\rangle_0 = 1,
+\big\langle \tilde\Upsilon_1\tilde\Upsilon_2\big\rangle_0 = 1,
 \qquad
-\big\langle \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}\big\rangle_0 = 0 ,
+\big\langle \tilde\Upsilon_2\tilde\Upsilon_1\big\rangle_0 = 0 ,
 $$
 so the two operators are the pair of minimal idempotents — the empty and the occupied projector — their vacuum expectations are the free one-mode two-point functions, and the amputation is the algebra's identity $e_0$; the one-mode reduction therefore reproduces the free result $Z=1$. This is the finite-dimensional instance of LSZ, and it is exact rather than approximate.
 

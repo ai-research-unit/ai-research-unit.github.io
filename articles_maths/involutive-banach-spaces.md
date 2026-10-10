@@ -15,7 +15,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the inv
 
 **Proof.** The subspaces are the kernels of the continuous maps $\mathrm{id} \mp \theta$, hence closed by *Involutive Normed Spaces*; a closed subspace of a complete normed space is complete, so each is a Banach space for the restricted norm of *Banach Spaces*. The antilinear statement is that the restriction of the scalars to $\mathbb{R}$ preserves completeness.
 
-**Theorem (topological direct sum).** With $2$ invertible in $\mathbb{K}$ the averaging maps $\pi_{\pm} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and
+**Theorem (topological direct sum).** With $2$ invertible in $\mathbb{K}$ the averaging maps $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and
 
 $$
 X = X^{\theta} \oplus X^{-}
@@ -45,7 +45,7 @@ $$
 
 and the negated subspace of the completion is the closure of the negated subspace.
 
-**Proof.** The direction $\overline{\iota(X^{\theta})} \subseteq \widehat{X}^{\widehat{\theta}}$ is the continuity of $\widehat{\theta}$ and the closedness of its fixed subspace; conversely, if $\hat x \in \widehat{X}^{\widehat{\theta}}$ and $x_{n} \to \hat x$ with $x_{n} \in X$, then $\pi_{+}x_{n} \to \pi_{+}\hat x = \hat x$ by the boundedness of $\pi_{+}$ and the continuity of $\widehat{\theta}$, and $\pi_{+}x_{n} \in X^{\theta}$, so $\hat x$ is a limit of fixed elements.
+**Proof.** The direction $\overline{\iota(X^{\theta})} \subseteq \widehat{X}^{\widehat{\theta}}$ is the continuity of $\widehat{\theta}$ and the closedness of its fixed subspace; conversely, if $\hat x \in \widehat{X}^{\widehat{\theta}}$ and $x_{n} \to \hat x$ with $x_{n} \in X$, then $\pi_1x_{n} \to \pi_1\hat x = \hat x$ by the boundedness of $\pi_1$ and the continuity of $\widehat{\theta}$, and $\pi_1x_{n} \in X^{\theta}$, so $\hat x$ is a limit of fixed elements.
 
 **Corollary (fixed points are limits of fixed points).** An element of the completion is fixed exactly when it is a limit of fixed elements of the original space; in particular a dense fixed subspace of a normed space forces the involution to be the identity, and the extension adds limits and no new fixed element.
 
@@ -96,7 +96,7 @@ On a Banach space a continuous involution has closed fixed and negated subspaces
 | $X$, $\lVert\cdot\rVert$ | Banach space and its norm |
 | $\theta$, $T$ | Continuous involution; the linear case |
 | $X^{\theta}$, $X^{-}$ | Closed summands, Banach spaces |
-| $\pi_{\pm} = \frac12(\mathrm{id}\pm\theta)$ | Bounded averaging projections |
+| $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ | Bounded averaging projections |
 | $\widehat{X}$, $\iota$ | Completion and inclusion of a normed space |
 | $\widehat{\theta}$, $\lVert\widehat{\theta}\rVert = \lVert\theta\rVert$ | Extended involution and its norm |
 | $\widehat{X}^{\widehat{\theta}} = \overline{\iota(X^{\theta})}$ | Fixed subspace of the completion |

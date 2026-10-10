@@ -136,7 +136,13 @@ $$
 U(A,h) = U(n^{2}) , \qquad \mathrm{Iso}(A,h) = U(n^{2}) ,
 $$
 
-the definite form being complete and finite dimensional; the left multiplications embed $U(n)$ in $U(n^{2})$ by $u \mapsto m_{u}$, and the inner automorphisms embed $PU(n) = U(n)/U(1)$ in $U(n^{2})$ by $u \mapsto \alpha_{u}$, the kernel being the scalar unitaries. The example realizes both containments concretely and shows that the isometry monoid and the unitary group coincide exactly in finite dimension.
+the definite form being complete and finite dimensional; the left multiplications embed $U(n)$ in $U(n^{2})$ by $u \mapsto m_{u}$, and the inner automorphisms embed $PU(n) = U(n)/U(1)$ in $U(n^{2})$ by $u \mapsto \alpha_{u}$, the kernel being the scalar unitaries. The example realizes both containments concretely and shows that the isometry monoid and the unitary group coincide exactly in finite dimension. At $n=2$ the unitary $u=\sigma_1$ acts on the matrix units by
+
+$$
+u=\begin{pmatrix}0&1\\1&0\end{pmatrix}\in U(2),\qquad m_u(E_{11})=E_{21},\quad m_u(E_{12})=E_{22},\quad m_u(E_{21})=E_{11},\quad m_u(E_{22})=E_{12},
+$$
+
+a permutation of the four matrix units, the image of $\sigma_1$ inside $U(4)$.
 
 ### The Biquaternion Algebra
 

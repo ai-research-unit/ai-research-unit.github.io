@@ -76,36 +76,36 @@ The two properties, centrality and $\omega^2=+1$, are exactly what a **split** u
 
 **Theorem (the central splitting).** Define
 $$
-\Pi_+ := \tfrac12(1+\omega), \qquad \Pi_- := \tfrac12(1-\omega).
+\Pi_1 := \tfrac12(1+\omega), \qquad \Pi_2 := \tfrac12(1-\omega).
 $$
 Then
 $$
-\Pi_+^2=\Pi_+, \qquad \Pi_-^2=\Pi_-, \qquad \Pi_+\Pi_-=\Pi_-\Pi_+=0, \qquad \Pi_++\Pi_-=1,
+\Pi_1^2=\Pi_1, \qquad \Pi_2^2=\Pi_2, \qquad \Pi_1\Pi_2=\Pi_2\Pi_1=0, \qquad \Pi_1+\Pi_2=1,
 $$
 and both are central. Consequently
 $$
-\mathrm{Cl}(3) = \mathrm{Cl}(3)\Pi_+ \oplus \mathrm{Cl}(3)\Pi_-
+\mathrm{Cl}(3) = \mathrm{Cl}(3)\Pi_1 \oplus \mathrm{Cl}(3)\Pi_2
 $$
 is a decomposition of $\mathrm{Cl}(3)$ into the direct sum of two proper nonzero two-sided ideals, each of complex dimension $4$, and each isomorphic to the biquaternion algebra:
 $$
-\mathrm{Cl}(3)\Pi_\pm \cong \mathrm{Cl}(2) \cong \mathbb{C}\mathrm{l}_2 \cong \mathbb{B} \cong M_2(\mathbb{C}).
+\mathrm{Cl}(3)\Pi_{1,2} \cong \mathrm{Cl}(2) \cong \mathbb{C}\mathrm{l}_2 \cong \mathbb{B} \cong M_2(\mathbb{C}).
 $$
 
-*Proof.* Orthogonality, idempotency and completeness are the algebra $\omega^2=1$: for instance $\Pi_+\Pi_-=\tfrac14(1-\omega^2)=0$ and $\Pi_+^2=\tfrac14(1+2\omega+\omega^2)=\tfrac12(1+\omega)=\Pi_+$. Centrality is centrality of $\omega$. The direct sum is the decomposition of a module by a complete family of orthogonal central idempotents. Each ideal has complex dimension $4$, since left multiplication by $\Pi_+$ is a rank-$4$ projector of the $8$-dimensional space; and a four-dimensional complex algebra that is a full matrix algebra is $M_2(\mathbb{C})$, which is $\mathbb{C}\mathrm{l}_2\cong\mathbb{B}$ by *The Clifford Algebra Representation*. The dimension of each ideal was computed to be $4$ on the eight monomials. $\square$
+*Proof.* Orthogonality, idempotency and completeness are the algebra $\omega^2=1$: for instance $\Pi_1\Pi_2=\tfrac14(1-\omega^2)=0$ and $\Pi_1^2=\tfrac14(1+2\omega+\omega^2)=\tfrac12(1+\omega)=\Pi_1$. Centrality is centrality of $\omega$. The direct sum is the decomposition of a module by a complete family of orthogonal central idempotents. Each ideal has complex dimension $4$, since left multiplication by $\Pi_1$ is a rank-$4$ projector of the $8$-dimensional space; and a four-dimensional complex algebra that is a full matrix algebra is $M_2(\mathbb{C})$, which is $\mathbb{C}\mathrm{l}_2\cong\mathbb{B}$ by *The Clifford Algebra Representation*. The dimension of each ideal was computed to be $4$ on the eight monomials. $\square$
 
-**Corollary (semisimple, not simple).** $\mathrm{Cl}(3)$ is semisimple and is not simple; its two-sided ideals are $0$, $\mathrm{Cl}(3)\Pi_+$, $\mathrm{Cl}(3)\Pi_-$ and $\mathrm{Cl}(3)$. Its minimal left, right and two-sided ideals coincide, and its left ideals form the diamond
+**Corollary (semisimple, not simple).** $\mathrm{Cl}(3)$ is semisimple and is not simple; its two-sided ideals are $0$, $\mathrm{Cl}(3)\Pi_1$, $\mathrm{Cl}(3)\Pi_2$ and $\mathrm{Cl}(3)$. Its minimal left, right and two-sided ideals coincide, and its left ideals form the diamond
 $$
-0 \subset \mathrm{Cl}(3)\Pi_+,\ \mathrm{Cl}(3)\Pi_- \subset \mathrm{Cl}(3).
+0 \subset \mathrm{Cl}(3)\Pi_1,\ \mathrm{Cl}(3)\Pi_2 \subset \mathrm{Cl}(3).
 $$
 
-*Proof.* Because $\Pi_\pm$ are central, the left, right and two-sided ideals they generate agree; the summands are simple matrix algebras and have no proper nonzero ideal, so no further ideals occur. The lattice is then the diamond, as in *Split-Biquaternion Ideals and Peirce Decomposition*.
+*Proof.* Because $\Pi_{1,2}$ are central, the left, right and two-sided ideals they generate agree; the summands are simple matrix algebras and have no proper nonzero ideal, so no further ideals occur. The lattice is then the diamond, as in *Split-Biquaternion Ideals and Peirce Decomposition*.
 
-**Theorem (the two summands are the two halves).** The idempotents $\Pi_\pm$ of $\mathrm{Cl}(3)$ coincide with the split biquaternion idempotents $\tilde\Pi_\mp=\tfrac12(1\mp j)$ of $\mathbb{H}_{\mathbb{D}}$ promoted to the complexification, and the central splitting is the complexification of the splitting of the split biquaternion algebra:
+**Theorem (the two summands are the two halves).** The idempotents $\Pi_{1,2}$ of $\mathrm{Cl}(3)$ coincide, with the indices reversed, with the split biquaternion idempotents $\tilde\Pi_{1,2}=\tfrac12(1\mp j)$ of $\mathbb{H}_{\mathbb{D}}$ promoted to the complexification, and the central splitting is the complexification of the splitting of the split biquaternion algebra:
 $$
 \mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_1\bigr) \oplus \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_2\bigr) \cong \mathbb{B}\oplus\mathbb{B}.
 $$
 
-*Proof.* With $\omega=-j$ one has $\Pi_+=\tfrac12(1-j)=\tilde\Pi_2$ and $\Pi_-=\tfrac12(1+j)=\tilde\Pi_1$. The two-sided ideals $\mathbb{H}\tilde\Pi_{1,2}\cong\mathbb{H}$ of *Split-Biquaternion Ideals and Peirce Decomposition* complexify to $\mathbb{B}\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$. $\square$
+*Proof.* With $\omega=-j$ one has $\Pi_1=\tfrac12(1-j)=\tilde\Pi_2$ and $\Pi_2=\tfrac12(1+j)=\tilde\Pi_1$. The two-sided ideals $\mathbb{H}\tilde\Pi_{1,2}\cong\mathbb{H}$ of *Split-Biquaternion Ideals and Peirce Decomposition* complexify to $\mathbb{B}\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$. $\square$
 
 **Theorem (the parity automorphism).** The map
 $$
@@ -113,11 +113,11 @@ $$
 $$
 is an algebra automorphism; it fixes the even monomials and negates the odd ones; it satisfies $\sigma(\omega)=-\omega$, and it therefore interchanges the two summands,
 $$
-\sigma(\Pi_+)=\Pi_-, \qquad \sigma(\Pi_-)=\Pi_+ .
+\sigma(\Pi_1)=\Pi_2, \qquad \sigma(\Pi_2)=\Pi_1 .
 $$
 The two summands are the two **pinor representations** of $\mathrm{Cl}(3)$: the two simple modules of $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, inequivalent and distinguished by the eigenvalue $\pm1$ of the central volume element $\omega$.
 
-*Proof.* Sending every generator to its negative preserves the quadratic relations $E_i^2=-1$, $E_iE_j=-E_jE_i$, and is invertible, so it is an automorphism; it is the grading automorphism of the Clifford algebra, equal to $+1$ on the even subalgebra and $-1$ on the odd part. On the volume element the three sign flips give $\sigma(\omega)=(-1)^3\omega=-\omega$, and the action on $\Pi_\pm$ follows. A central element of a product of two simple algebras acts as a scalar on each simple module; the idempotents $\Pi_\pm$ are the two projections and their distinct images are the two non-isomorphic simple modules. $\square$
+*Proof.* Sending every generator to its negative preserves the quadratic relations $E_i^2=-1$, $E_iE_j=-E_jE_i$, and is invertible, so it is an automorphism; it is the grading automorphism of the Clifford algebra, equal to $+1$ on the even subalgebra and $-1$ on the odd part. On the volume element the three sign flips give $\sigma(\omega)=(-1)^3\omega=-\omega$, and the action on $\Pi_{1,2}$ follows. A central element of a product of two simple algebras acts as a scalar on each simple module; the idempotents $\Pi_{1,2}$ are the two projections and their distinct images are the two non-isomorphic simple modules. $\square$
 
 ## The Ladder Structure and the Minimal Left Ideal
 
@@ -197,9 +197,9 @@ $$
 \mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}
 \cong \mathrm{Cl}_3(\mathbb{C}),
 $$
-of complex dimension $8$. Its generators $E_i=je_i$ satisfy $\{E_i,E_j\}=-2\delta_{ij}$, and its volume element $\omega=E_1E_2E_3$ is central, self-adjoint and an involution, $\omega^2=1$. The centrality gives the complete family of orthogonal central idempotents $\Pi_\pm=\tfrac12(1\pm\omega)$ and the splitting
+of complex dimension $8$. Its generators $E_i=je_i$ satisfy $\{E_i,E_j\}=-2\delta_{ij}$, and its volume element $\omega=E_1E_2E_3$ is central, self-adjoint and an involution, $\omega^2=1$. The centrality gives the complete family of orthogonal central idempotents $\Pi_{1,2}=\tfrac12(1\pm\omega)$ and the splitting
 $$
-\mathrm{Cl}(3) = \mathrm{Cl}(3)\Pi_+ \oplus \mathrm{Cl}(3)\Pi_- \cong \mathbb{B}\oplus\mathbb{B} \cong M_2(\mathbb{C})\oplus M_2(\mathbb{C}),
+\mathrm{Cl}(3) = \mathrm{Cl}(3)\Pi_1 \oplus \mathrm{Cl}(3)\Pi_2 \cong \mathbb{B}\oplus\mathbb{B} \cong M_2(\mathbb{C})\oplus M_2(\mathbb{C}),
 $$
 into two copies of the biquaternion algebra, each of complex dimension $4$, so that $\mathrm{Cl}(3)$ is semisimple and not simple, with a four-element ideal lattice. The parity automorphism $E_i\mapsto-E_i$ negates $\omega$ and interchanges the two summands; they are the two pinor representations of $\mathrm{Cl}(3)$, inequivalent and distinguished by the eigenvalue $\pm1$ of $\omega$. Inside each summand the ladder element $\alpha=\tfrac12(E_1+iE_2)$ is isotropic, its number operator $N=\alpha^{\dagger}\alpha$ has the complementary projector $\alpha\alpha^{\dagger}$ as partner, and the minimal left ideal $\mathrm{Cl}(3)( \alpha\alpha^{\dagger})$ has basis $\{P,\alpha^{\dagger}P\}$ with charges $0$ and $1$ under $Q=N$. The whole construction is the three-dimensional case of the doubling of $\mathrm{Cl}(2n)$ to $\mathrm{Cl}(2n+1)$ by a central involution, of which the octonionic case is *Split Bioctonions and the Clifford Algebra Cl(7)*. The two-sided structure has two rungs: the left and right actions of $\mathbb{B}$ on itself generate the enveloping algebra $\mathbb{B}^{\mathrm{e}}\cong M_4(\mathbb{C})\cong\mathrm{Cl}(4)_{\mathbb{C}}$, and the left action of $\mathrm{Cl}(3)$ together with the right action of $\mathbb{B}$ generates $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{op}}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})\cong\mathrm{Cl}(5)_{\mathbb{C}}\cong\mathrm{Cl}(6)^+$.
 
@@ -216,8 +216,8 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 | $\gamma_i=iE_i$ | Hermitian generators, $\gamma_i^{\dagger}=\gamma_i$, $\{\gamma_i,\gamma_j\}=2\delta_{ij}$ |
 | $\dagger$ | Hermitian adjoint, $E_i^{\dagger}=-E_i$, $i^{\dagger}=-i$ |
 | $\omega=E_1E_2E_3=-j$ | Volume element, central, self-adjoint, $\omega^2=1$ |
-| $\Pi_\pm=\tfrac12(1\pm\omega)=\tilde\Pi_\mp$ | Central idempotents, complete and orthogonal |
-| $\mathrm{Cl}(3)\Pi_\pm$ | The two simple summands, each ${}\cong\mathbb{B}\cong M_2(\mathbb{C})$ |
+| $\Pi_1 = \tilde\Pi_2 = \tfrac12(1+\omega)$, $\Pi_2 = \tilde\Pi_1 = \tfrac12(1-\omega)$ | Central idempotents, complete and orthogonal |
+| $\mathrm{Cl}(3)\Pi_{1,2}$ | The two simple summands, each ${}\cong\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\sigma:E_i\mapsto-E_i$ | Parity (grading) automorphism, interchanges the summands |
 | $\alpha=\tfrac12(E_1+iE_2)$ | Isotropic (ladder) element, $\alpha^2=0$ |
 | $N=\alpha^{\dagger}\alpha$, $P=\alpha\alpha^{\dagger}$ | Number operator and its complementary projector, $P+N=1$ |

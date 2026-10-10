@@ -18,7 +18,7 @@ $$
 [u] = \begin{pmatrix} p & q \\ q & p \end{pmatrix}, \qquad u = p+jq ,
 $$
 
-of which the eigenvalues are $u_+ = p+q$ and $u_- = p-q$ with eigenvectors $\Pi_+$ and $\Pi_-$, and the singular values $|u_+|, |u_-|$. The map $S$ is a Euclidean contraction exactly when
+of which the eigenvalues are $u_+ = p+q$ and $u_- = p-q$ with eigenvectors $\Pi_1$ and $\Pi_2$, and the singular values $|u_+|, |u_-|$. The map $S$ is a Euclidean contraction exactly when
 
 $$
 \max\{|u_+|, |u_-|\} < 1 ,
@@ -26,7 +26,7 @@ $$
 
 that is, exactly when both idempotent coordinates of $u$ lie in $(-1,1)$; the determinant of the linear part is $u_+u_- = N(u)$.
 
-**Proof.** The matrix of multiplication by $p+jq$ is read off from $(p+jq)(1) = p+jq$ and $(p+jq)(j) = q+pj$; it is symmetric with trace $2p$ and determinant $p^2-q^2 = N(u)$, and its eigenvalues are $p\pm q$ with the eigenvectors $\Pi_\pm$. A symmetric matrix has the singular values equal to the absolute values of the eigenvalues, and the Euclidean operator norm is the largest singular value. The contraction condition follows.
+**Proof.** The matrix of multiplication by $p+jq$ is read off from $(p+jq)(1) = p+jq$ and $(p+jq)(j) = q+pj$; it is symmetric with trace $2p$ and determinant $p^2-q^2 = N(u)$, and its eigenvalues are $p\pm q$ with the eigenvectors $\Pi_{1,2}$. A symmetric matrix has the singular values equal to the absolute values of the eigenvalues, and the Euclidean operator norm is the largest singular value. The contraction condition follows.
 
 ### The Contraction Must Be Euclidean
 
@@ -125,7 +125,7 @@ the larger of the two factor dimensions; the box counting of a sampled orbit at 
 
 ## The Null Cone
 
-**Definition.** The **null cone** of $\mathbb{D}$ is $\mathcal{N} = \{N = 0\} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, the union of the two coordinate axes $z_+ = 0$ and $z_- = 0$ of the idempotent plane.
+**Definition.** The **null cone** of $\mathbb{D}$ is $\mathcal{N} = \{N = 0\} = \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$, the union of the two coordinate axes $z_+ = 0$ and $z_- = 0$ of the idempotent plane.
 
 **Theorem (the trace of the null cone on the attractor).** The attractor meets the null cone exactly in the points whose coding has one coordinate equal to $0$,
 

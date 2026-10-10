@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An **idempotent** of one of the four general products of the biquaternion algebra is an element $\tilde\Pi$ with $\tilde\Pi\star\tilde\Pi = \tilde\Pi$, the equation read in that product. The equation is the algebraic form of a projection, and each of the four groups of the chapter solves it for its own multiplication: the general plain bilinear product in *Biquaternion Idempotents and Projections*, the general quaternionic bilinear product in *Idempotents of the Quaternionic Product*, the general plain sesquilinear product in *Projections of the Biquaternion Sesqualgebra*, and the general quaternionic sesquilinear product in *Idempotents of the General Quaternionic Sesquilinear Product*. This article sets the four solution sets side by side and reads their invariants together, the four sets themselves having been tabulated in *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*.
+An **idempotent** of one of the four general products of the biquaternion algebra is an element $\tilde\Pi$ with $\tilde\Pi\star\tilde\Pi = \tilde\Pi$, the equation read in that product. The equation is the algebraic form of a projection, and each of the four groups of the chapter solves it for its own multiplication: the general plain bilinear product in *Idempotents of the General Plain Algebra*, the general quaternionic bilinear product in *Idempotents of the Quaternionic Product*, the general plain sesquilinear product in *Projections of the Biquaternion Sesqualgebra*, and the general quaternionic sesquilinear product in *Idempotents of the General Quaternionic Sesquilinear Product*. This article sets the four solution sets side by side and reads their invariants together, the four sets themselves having been tabulated in *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*.
 
 The four sets are of four different kinds, and the difference is not in the size of the sets alone but in the place they occupy in the algebra. The plain product's idempotents are the idempotents of the algebra: the trivial pair, the family of the Hermitian idempotents that the sesquilinear product singles out, and a four-parameter family of non-trivial idempotents lying in no remarkable subspace, every member of the family outside the trivial pair being a zero divisor. The natural product keeps only the trivial pair. The general plain sesquilinear product keeps the Hermitian family, and the general quaternionic sesquilinear product replaces it by the family $-\tfrac12e_0+\mu$, whose members are the only nontrivial idempotents of the four multiplications that are **units**. The article owns the comparison of the four sets, the effect of the central square on each, the reading of each in the remarkable subspaces and the complementation that pairs the members of the plain family.
 
@@ -14,7 +14,7 @@ The four sets are of four different kinds, and the difference is not in the size
 
 | product | idempotents | owner |
 |---|---|---|
-| $\tilde P\tilde Q$ | $0$, $e_0$, and $\tfrac12(e_0+\xi i)$ for a root $\xi$ of $-e_0$ | *Biquaternion Idempotents and Projections* |
+| $\tilde P\tilde Q$ | $0$, $e_0$, and $\tfrac12(e_0+\xi i)$ for a root $\xi$ of $-e_0$ | *Idempotents of the General Plain Algebra* |
 | $\tilde P^{\natural}\tilde Q$ | $0$ and $e_0$ alone | *Idempotents of the Quaternionic Product* |
 | $\tilde P\tilde Q^{*}$ | $0$, $e_0$, and $\tfrac12(e_0+i\hat\mu)$ for a real unit vector $\hat\mu$ | *Projections of the Biquaternion Sesqualgebra* |
 | $\tilde P^{\natural}\tilde Q^{*}$ | $0$, $e_0$, and $-\tfrac12e_0+\mu$ for a real vector $\mu$ with $(\mu,\mu) = \tfrac34$ | *Idempotents of the General Quaternionic Sesquilinear Product* |
@@ -27,7 +27,7 @@ The plain product is the one associative multiplication with a unit, and its ide
 
 **Theorem (the plain family, quoted).** The idempotents of $\mathbb{B}$ are $0$, $e_0$, and the elements $\tilde\Pi = \tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-e_0$. The map $\xi\mapsto\tfrac12(e_0+\xi i)$ is a bijection from the roots of $-e_0$ onto the idempotents, and the complementary pair is $\{\tfrac12(e_0+\xi i),\ \tfrac12(e_0-\xi i)\}$.
 
-**Proof.** The proof is in *Biquaternion Idempotents and Projections*; it reduces the equation $\tilde\Pi^2 = \tilde\Pi$ to the classification of the roots of $-e_0$, which is *Biquaternion Square Roots of Minus One, Zero and Plus One*. $\square$
+**Proof.** The proof is in *Idempotents of the General Plain Algebra*; it reduces the equation $\tilde\Pi^2 = \tilde\Pi$ to the classification of the roots of $-e_0$, which is *Biquaternion Square Roots of Minus One, Zero and Plus One*. $\square$
 
 The classification of the roots organises the family in three parts, and each part has its own type. The **trivial** roots $\xi = \pm i$ give the trivial idempotents, $0$ and $e_0$. The **real** roots $\xi = \hat\mu$, the unit real vectors, form the family of $\mathbb{R}^{3}$, and give the family $\tfrac12(e_0+i\hat\mu)$ of **Hermitian** idempotents, the family the general plain sesquilinear product keeps. The **non-trivial** roots $\xi = \mathbf p+i\mathbf p'$, with $\mathbf p,\mathbf p'$ real vectors, $\mathbf p'\neq0$, satisfying $\sum_k p_k^{2}-\sum_k p'^{2}_k = 1$ and $\sum_k p_kp'_k = 0$, form a four-parameter family, and give the **non-trivial** idempotents, a four-parameter family that lies in none of the four four-dimensional subspaces of the algebra.
 
@@ -123,7 +123,7 @@ The families occupy the centre, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and no
 ## Further Reading
 
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the tabulation of the four idempotent sets and the four square-root problems.
-- *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the idempotents of the algebra, their bijection with the roots of $-e_0$ and their role in the Peirce decomposition.
+- *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the idempotents of the algebra, their bijection with the roots of $-e_0$ and their role in the Peirce decomposition.
 - *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the three families of roots of $-e_0$.
 - *Idempotents of the Quaternionic Product* (`articles_maths/idempotents-of-the-quaternionic-product.md`), for the trivial pair of the natural product.
 - *Projections of the Biquaternion Sesqualgebra* (`articles_maths/projections-of-the-biquaternion-sesqualgebra.md`), for the Hermitian family and its projections.

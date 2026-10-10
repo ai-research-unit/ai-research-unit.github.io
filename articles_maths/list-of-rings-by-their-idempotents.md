@@ -24,9 +24,9 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | $\mathbb{Z}/6\mathbb{Z}$ | $0, 1, 3, 4$ | $4$ | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{Z}/12\mathbb{Z}$ | $0, 1, 4, 9$ | $4$ | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{Z}/n\mathbb{Z}$ | one for each factorisation into coprime parts | $2^{\omega(n)}$ | *Modular Arithmetic and the Ring of Residues* |
-| $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ | $0, 1, \pi_+, \pi_-$ | $4$ | *Split-Complex Algebra* |
+| $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ | $0, 1, \pi_1, \pi_2$ | $4$ | *Split-Complex Algebra* |
 | $\mathbb{R}[x]/(x^2-1)$ | $0, 1$, the two class idempotents | $4$ | *Examples of Rings and Fields* |
-| $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $0, \pi_+, \pi_-, e_0$ | $4$ | *Split-Biquaternion Algebra* |
+| $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $0, \pi_1, \pi_2, e_0$ | $4$ | *Split-Biquaternion Algebra* |
 | $\mathbb{Q}[C_3]$ | $0, 1$ and the two minimal ones | $4$ | *Examples of Rings and Fields* |
 | $M_2(\mathbb{R})$ | the projections | infinitely many | *Matrix Algebras* |
 | $\mathbb{B}$, the biquaternions | the complex multiples of the idempotents | infinitely many | *Biquaternion Ideals and Peirce Decomposition* |
@@ -40,8 +40,8 @@ The dichotomy the table records is between the rings that are connected, with $0
 |---|---|---|---|
 | any ring | $e$ | $R = Re \oplus R(1-e)$ | *Rings*, §§8–9 |
 | $\mathbb{Z}/6\mathbb{Z}$ | $3$ | $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ | *Modular Arithmetic and the Ring of Residues* |
-| $\mathbb{D}$ | $\pi_+$ | $\mathbb{D} \cong \mathbb{R} \pi_+ \oplus \mathbb{R} \pi_- \cong \mathbb{R} \times \mathbb{R}$ | *Split-Complex Algebra* |
-| $\mathbb{H}_{\mathbb{D}}$ | $\pi_+$ | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\pi_+ \oplus \mathbb{H}\pi_-$ | *Split-Biquaternion Zero Divisors* |
+| $\mathbb{D}$ | $\pi_1$ | $\mathbb{D} \cong \mathbb{R} \pi_1 \oplus \mathbb{R} \pi_2 \cong \mathbb{R} \times \mathbb{R}$ | *Split-Complex Algebra* |
+| $\mathbb{H}_{\mathbb{D}}$ | $\pi_1$ | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\pi_1 \oplus \mathbb{H}\pi_2$ | *Split-Biquaternion Zero Divisors* |
 | $R \times S$ | $(1,0)$ | the product by construction | *Examples of Rings and Fields* |
 | $\mathbb{Q}[C_3]$ | the minimal idempotents | $\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\zeta_3)$ | *Examples of Rings and Fields* |
 | $\mathbb{R}[x]/(x^2-1)$ | $e_{\pm}$ | $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$ | *Examples of Rings and Fields* |
@@ -61,7 +61,7 @@ A nontrivial idempotent $e$ satisfies $e(1-e) = 0$, so $R = Re \oplus R(1-e)$ is
 | $R \times S$ | $(1,0)$, $(0,1)$ | the two components | *Examples of Rings and Fields* |
 | a group algebra $k[G]$ | the idempotents of the group | $k[G] = \bigoplus e_i k[G] e_i \oplus \text{off-diagonal}$ | *Group Algebras* |
 
-The Peirce decomposition relative to a complete orthogonal family of idempotents $e_1 + \cdots + e_n = 1$ writes a module as $M = \bigoplus_i e_i M$ and an algebra as the direct sum of the corner algebras $e_i A e_j$. The biquaternion case is the corpus's worked example: with $p = E_{11}$ and $q = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $x$ and $y$, as recorded in *Biquaternion Ideals and Peirce Decomposition*.
+The Peirce decomposition relative to a complete orthogonal family of idempotents $e_1 + \cdots + e_n = 1$ writes a module as $M = \bigoplus_i e_i M$ and an algebra as the direct sum of the corner algebras $e_i A e_j$. The biquaternion case is the corpus's worked example: with $p = E_{11}$ and $q = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $\tilde\Upsilon_1$ and $\tilde\Upsilon_2$, as recorded in *Biquaternion Ideals and Peirce Decomposition*.
 
 ## The von Neumann Regular Rings
 

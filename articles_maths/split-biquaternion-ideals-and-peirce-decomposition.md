@@ -101,7 +101,7 @@ $$
 
 and likewise for $\tilde\Pi_2$. Each summand is annihilated by the complementary idempotent — $\mathbb{H} \tilde\Pi_1$ by $\tilde\Pi_2$ and $\mathbb{H} \tilde\Pi_2$ by $\tilde\Pi_1$ — so the two ideals are disjoint, and together they fill the algebra: $\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2 \cong \mathbb{H} \oplus \mathbb{H}$, both summands isomorphic to the division algebra $\mathbb{H}$ as rings.
 
-In the biquaternion algebra the corresponding statement is different in every respect: the minimal left ideals $\mathbb{B}p$ and $\mathbb{B}q$ are not two-sided, are not right ideals, and are isomorphic to $\mathbb{C}^2$ rather than to a division algebra.
+In the biquaternion algebra the corresponding statement is different in every respect: the minimal left ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ are not two-sided, are not right ideals, and are isomorphic to $\mathbb{C}^2$ rather than to a division algebra.
 
 ## The Lattice of Left Ideals
 

@@ -56,7 +56,11 @@ For $A = \mathbb{C}[G]$ with the standard form, $L_g^{*} = L_{g^{-1}}$, the Tomi
 
 ### Matrices
 
-For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\bar L_a^{*} = \bar L_{a^{*}}$ with $a^{*}$ the conjugate transpose, the Tomita operator is $S(a\xi) = a^{*}\xi$ extended, the polar decomposition is $S = J$ with $\Delta = \mathrm{id}$, and every left multiplication is normal.
+For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\bar L_a^{*} = \bar L_{a^{*}}$ with $a^{*}$ the conjugate transpose, the Tomita operator is $S(a\xi) = a^{*}\xi$ extended, the polar decomposition is $S = J$ with $\Delta = \mathrm{id}$, and every left multiplication is normal. The smallest instance of the pair $a,a^{*}$ and of $S = J$ is
+
+$$
+a=\begin{pmatrix}1&i\\0&2\end{pmatrix},\qquad a^{*}=\begin{pmatrix}1&0\\-i&2\end{pmatrix},\qquad S(a)=a^{*},\qquad J=S,\ \Delta=\mathrm{id},\qquad \tau(a)=3 .
+$$
 
 ### A Non-Tracial Case
 

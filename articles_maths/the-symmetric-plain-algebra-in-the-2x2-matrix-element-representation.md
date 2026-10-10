@@ -92,7 +92,7 @@ $$
 
 *Proof.* $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$; a matrix is singular exactly when its determinant vanishes. Verified on the model. $\square$
 
-**Remark (the rank of the isotropic matrices).** A non-zero isotropic element has a non-zero singular matrix; it is of **rank one**, hence of the form $uv^{\mathsf T}$. **The isotropic cone of the block is the cone of the rank-one matrices in the model**, and the zero divisors are the rank-one matrices; the description of *Biquaternion Zero Divisors* and *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* is the same list. Verified on the model.
+**Remark (the rank of the isotropic matrices).** A non-zero isotropic element has a non-zero singular matrix; it is of **rank one**, hence of the form $uv^{\mathsf T}$. **The isotropic cone of the block is the cone of the rank-one matrices in the model**, and the zero divisors are the rank-one matrices; the description of *Zero Divisors of the General Plain Algebra* and *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* is the same list. Verified on the model.
 
 **Theorem (the elements of square zero).** The elements of square zero are exactly the **nilpotent** matrices:
 
@@ -228,5 +228,5 @@ In the $2\times2$ model the block's product becomes the symmetrisation of the ma
 - *The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-symmetric-plain-algebra-in-the-4x4-matrix-element-representation.md`), for the reading on the left regular representation.
 - *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the element tables of the model.
 - *Biquaternion Objects and Their Matrix Correspondences* (`articles_maths/biquaternion-objects-and-their-matrix-correspondences.md`), for the correspondence between the objects and the matrices.
-- *Biquaternion Idempotents and Projections* and *Biquaternion Ideals and Peirce Decomposition*, for the idempotents, the projectors and the minimal left ideals.
+- *Idempotents of the General Plain Algebra* and *Biquaternion Ideals and Peirce Decomposition*, for the idempotents, the projectors and the minimal left ideals.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, *The Trace Form and the Invariance of the Symmetric Plain Algebra* and *The Multiplication Operators of the Symmetric Plain Algebra*, for the coordinate statements transported here.

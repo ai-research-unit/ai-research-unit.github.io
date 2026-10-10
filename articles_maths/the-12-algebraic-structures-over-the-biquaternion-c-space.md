@@ -179,6 +179,7 @@ Of the twelve, two are the product of a classical nonassociative algebra and bot
 
 ## Further Reading
 
+- *Definitions for the Study of the 12 Algebraic Structures*, for the vocabulary the twelve are studied with: the classes of elements and the derived operations defined once for a general product and read on the products of the space.
 - *The 12 Products of the Biquaternion Complex Space*, for the products themselves, the method of the decomposition and the table of the twelve with their laws, units and images.
 - *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, for the four general products that the four $\mathrm G$-names read as multiplications.
 - *The Symmetric and Antisymmetric Parts of an Algebra Product* and *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, for the two definitions of the split and the class-preserving exchange.

@@ -4,7 +4,7 @@
 
 The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Introduction to the Symmetric Plain Algebra of Biquaternions*. The algebra carries remarkable real subspaces, and this article reads the product on each of them: whether it stays inside, and the rule it follows where it does; the units and the idempotents it contains; and its isotropic elements. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*, with their natural real bases.
 
-The reading follows the pattern of *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, and the subspaces themselves, their bases and their relations are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*. The products of the four general products on the same remarkable subspaces are *Remarkable Subspaces and the Four General Products*; the isotropic set of the block is the isotropic cone of *Biquaternion Norm and Invertibility*; and the idempotents are those of *Biquaternion Idempotents and Projections*. This article owns the product $\bullet$ on the remarkable subspaces and the table that gathers the readings.
+The reading follows the pattern of *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, and the subspaces themselves, their bases and their relations are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*. The products of the four general products on the same remarkable subspaces are *Remarkable Subspaces and the Four General Products*; the isotropic set of the block is the isotropic cone of *Biquaternion Norm and Invertibility*; and the idempotents are those of *Idempotents of the General Plain Algebra*. This article owns the product $\bullet$ on the remarkable subspaces and the table that gathers the readings.
 
 **Conventions and the criterion.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, and the product is $\bullet$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$. The remarkable subspaces are real and their natural real bases are the ones of *Introduction to the Remarkable Subspaces*:
 
@@ -128,7 +128,7 @@ and the Hermitian subspace is **closed** under $\bullet$. It is a Jordan subalge
 
 ### Units, Idempotents and Isotropic Elements
 
-A Hermitian element has $N(\tilde P)=P_0^2-\sum_k(P'_k)^2$, so the **units** are the Hermitian elements with $P_0^2\neq\sum_k(P'_k)^2$, and the **isotropic** elements are those with $P_0^2=\sum_k(P'_k)^2$. The isotropic set is non-empty: the element $e_0+ie_1$ is Hermitian and $N(e_0+ie_1)=1+i^2=0$. The **idempotents** are the Hermitian idempotents of *Biquaternion Idempotents and Projections*,
+A Hermitian element has $N(\tilde P)=P_0^2-\sum_k(P'_k)^2$, so the **units** are the Hermitian elements with $P_0^2\neq\sum_k(P'_k)^2$, and the **isotropic** elements are those with $P_0^2=\sum_k(P'_k)^2$. The isotropic set is non-empty: the element $e_0+ie_1$ is Hermitian and $N(e_0+ie_1)=1+i^2=0$. The **idempotents** are the Hermitian idempotents of *Idempotents of the General Plain Algebra*,
 
 $$
 \tilde\Pi=\tfrac12(e_0\pm i\hat\mu),\qquad \hat\mu\in\mathbb{R}^3,\ |\hat\mu|=1,
@@ -195,6 +195,6 @@ On the remarkable real subspaces the symmetric plain product is closed on the ce
 - *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*, for the remarkable subspaces, their bases and their relations.
 - *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, for the same remarkable subspaces under the general plain bilinear form, and *Remarkable Subspaces and the Four General Products*, for the readings of the four general products.
 - *Biquaternion Norm and Invertibility*, for the generic norm, the units and the isotropic cone.
-- *Biquaternion Idempotents and Projections*, for the idempotents and the pure states.
+- *Idempotents of the General Plain Algebra*, for the idempotents and the pure states.
 - *The 12 Products of the Biquaternion Complex Space*, for the Hermitian Jordan algebra $J(\mathbb{B})$ and the placement of the block.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, for the isotropic cone of the block and the elements of square zero.

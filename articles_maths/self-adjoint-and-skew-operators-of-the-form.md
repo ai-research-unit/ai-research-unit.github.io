@@ -174,7 +174,15 @@ The skew-adjoint operators are the line $\mathrm{i}\mathbb{R}$, which is the Lie
 
 ### The Matrices
 
-**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with the conjugate transpose and the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, and let $m_{Z}$ be the multiplication by $Z$ on the left. By the regular representation, $m_{Z}$ is self-adjoint exactly when $Z$ is Hermitian and skew-adjoint exactly when $Z$ is skew-Hermitian; the skew-adjoint multiplications therefore form the Lie algebra $\mathfrak{u}(n)$ of the unitary group $U(n)$, and the self-adjoint ones the Jordan algebra of the Hermitian matrices. The exponential of $m_{Z}$ is the multiplication by $e^{Z}$, which is unitary exactly when $Z$ is skew-Hermitian, and the identification of the operator algebra with $\mathbb{C}^{n^{2}}$ through the trace form carries the adjoint of the layer to the conjugate transpose of the operator, so the splitting of the layer is the classical one. The example is the model of the article and the smallest in which the Lie algebra is not abelian.
+**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with the conjugate transpose and the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, and let $m_{Z}$ be the multiplication by $Z$ on the left. By the regular representation, $m_{Z}$ is self-adjoint exactly when $Z$ is Hermitian and skew-adjoint exactly when $Z$ is skew-Hermitian; the skew-adjoint multiplications therefore form the Lie algebra $\mathfrak{u}(n)$ of the unitary group $U(n)$, and the self-adjoint ones the Jordan algebra of the Hermitian matrices. The exponential of $m_{Z}$ is the multiplication by $e^{Z}$, which is unitary exactly when $Z$ is skew-Hermitian, and the identification of the operator algebra with $\mathbb{C}^{n^{2}}$ through the trace form carries the adjoint of the layer to the conjugate transpose of the operator, so the splitting of the layer is the classical one. The example is the model of the article and the smallest in which the Lie algebra is not abelian. The two generating elements are
+
+$$
+\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix}=\sigma_1^{*},\qquad
+W=\begin{pmatrix}i&0\\0&-i\end{pmatrix}=-W^{*},\qquad
+e^{W}=\begin{pmatrix}e^{i}&0\\0&e^{-i}\end{pmatrix}\in U(2),\quad (e^{W})^{*}e^{W}=I_2 ,
+$$
+
+the first Hermitian so that $m_{\sigma_1}$ is self-adjoint, the second skew-Hermitian so that $m_{W}$ is skew-adjoint in $\mathfrak{u}(2)$, and the third the unitary exponential of the skew-Hermitian generator.
 
 ### The Hyperbolic Plane
 

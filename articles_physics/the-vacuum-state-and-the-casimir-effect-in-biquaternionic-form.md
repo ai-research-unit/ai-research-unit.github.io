@@ -40,13 +40,13 @@ The question that is specific to the framework is: **is the vacuum state an obje
 
 **The one-mode vacuum is native.** For a single fermionic mode the algebra contains the whole ladder, as *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* establishes. With
 $$
-\tilde a_{\mathrm{tr}}=\tfrac12\big(ie_1-e_2\big),\qquad
-\tilde a_{\mathrm{tr}}^{\dagger}=\tfrac12\big(ie_1+e_2\big),\qquad
-\{\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^{\dagger}\}=e_0,
+\tilde\Upsilon_1=\tfrac12\big(ie_1-e_2\big),\qquad
+\tilde\Upsilon_2=\tfrac12\big(ie_1+e_2\big),\qquad
+\{\tilde\Upsilon_1,\tilde\Upsilon_2\}=e_0,
 $$
 the number operator is the idempotent
 $$
-\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^{\dagger}\tilde a_{\mathrm{tr}}=\tfrac12\big(e_0-ie_3\big)=\tilde\Pi_2\in\mathbb{M}_+,
+\tilde N_{\mathrm{tr}}=\tilde\Upsilon_2\tilde\Upsilon_1=\tfrac12\big(e_0-ie_3\big)=\tilde\Pi_2\in\mathbb{M}_+,
 $$
 so the **vacuum projector** is the complementary idempotent
 $$
@@ -332,7 +332,7 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ | Centre of the algebra; home of the zero-point scalar |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula; $\mathrm{Tr}(e_0)=2$ |
-| $\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger$ | One-mode ladder, $\{\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger\}=e_0$ |
+| $\tilde\Upsilon_1,\tilde\Upsilon_2$ | One-mode ladder, $\{\tilde\Upsilon_1,\tilde\Upsilon_2\}=e_0$ |
 | $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$ | One-mode number operator (idempotent) |
 | $\vert 0\rangle\langle 0\vert=\tilde\Pi_1=\tfrac12(e_0+ie_3)$ | One-mode vacuum projector (idempotent in $\mathbb{M}_+$) |
 | $(-1)^F=ie_3$ | Fermion parity (single mode) |

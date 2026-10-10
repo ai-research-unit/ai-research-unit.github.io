@@ -69,7 +69,11 @@ the adjoint of the sandwich by $x$ being the sandwich by $x^{*}$, for a **cyclic
 
 ### The Matrices
 
-On $M_n(\mathbb{C})$ with the trace form the left multiplication by $X$ has for adjoint the left multiplication by $X^{\dagger}$; the sandwich $\Theta_{X}(Y) = XYX^{\dagger}$ has for adjoint the sandwich by $X^{\dagger}$, and on the unitary group it is the conjugation $Y \mapsto UYU^{-1}$.
+On $M_n(\mathbb{C})$ with the trace form the left multiplication by $X$ has for adjoint the left multiplication by $X^{\dagger}$; the sandwich $\Theta_{X}(Y) = XYX^{\dagger}$ has for adjoint the sandwich by $X^{\dagger}$, and on the unitary group it is the conjugation $Y \mapsto UYU^{-1}$. At $n=2$ the unitary sandwich by $\sigma_1$ and its adjoint are
+
+$$
+X=\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix}=X^{\dagger},\qquad \Theta_X(\sigma_3)=\sigma_1\sigma_3\sigma_1=-\sigma_3,\qquad \Theta_X^{\dagger}=\Theta_{X^{\dagger}}=\Theta_X .
+$$
 
 ### The Clifford Algebra
 

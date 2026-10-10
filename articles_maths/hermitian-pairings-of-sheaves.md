@@ -78,12 +78,12 @@ the Hermitian part is closed under the **Jordan product** $T\bullet S=\frac12(TS
 **Theorem (involutions and the eigensheaf decomposition).** Let $T$ be unitary with $T^2=\mathrm{id}$. Then $T$ is self-adjoint, $T^{\dagger}=T$, and if $2$ is invertible the sheaf decomposes as the direct sum of the eigensheaves
 
 $$
-\mathcal{F}=\mathcal{F}_+\oplus\mathcal{F}_-,\qquad \mathcal{F}_{\pm}=\ker(T\mp\mathrm{id}),\qquad \pi_{\pm}=\tfrac12(\mathrm{id}\pm T),
+\mathcal{F}=\mathcal{F}_+\oplus\mathcal{F}_-,\qquad \mathcal{F}_{\pm}=\ker(T\mp\mathrm{id}),\qquad \pi_{1,2}=\tfrac12(\mathrm{id}\pm T),
 $$
 
-the projections being morphisms of sheaves with $\pi_++\pi_-=\mathrm{id}$ and $\pi_+\pi_-=0$.
+the projections being morphisms of sheaves with $\pi_1+\pi_2=\mathrm{id}$ and $\pi_1\pi_2=0$.
 
-*Proof.* From $T^{\dagger}T=\mathrm{id}$ and $T^2=\mathrm{id}$ we get $T^{\dagger}=T^{\dagger}TT=(T^{\dagger}T)T=T$, so $T$ is self-adjoint. The projections $\pi_{\pm}$ are idempotent and orthogonal because $T^2=\mathrm{id}$, and they exhibit the sheaf as the direct sum of their images.
+*Proof.* From $T^{\dagger}T=\mathrm{id}$ and $T^2=\mathrm{id}$ we get $T^{\dagger}=T^{\dagger}TT=(T^{\dagger}T)T=T$, so $T$ is self-adjoint. The projections $\pi_{1,2}$ are idempotent and orthogonal because $T^2=\mathrm{id}$, and they exhibit the sheaf as the direct sum of their images.
 
 **Theorem (the agreement of the two layers).** Let $u$ be an equivariant structure of order two on $\mathcal{F}$, as in *The Involution on the Structure Sheaf*, compatible with the Hermitian structure: $\langle u(s),u(t)\rangle=\sigma(\langle s,t\rangle)$. Then $u$ is a self-adjoint unitary endomorphism, the fixed eigensheaf $\mathcal{F}_+$ is the fixed sheaf of the element involution and the anti-invariant eigensheaf $\mathcal{F}_-$ is the anti-invariant sheaf; the element involution and the operator adjoint agree, and the equivariant structure is a $\ast$-representation of the two-element group. Without the compatibility hypothesis the two structures differ: the element involution need not be self-adjoint, and its fixed sheaf need not be the $+1$-eigensheaf of the adjoint.
 
@@ -147,7 +147,7 @@ The positive definite case, when a positive cone is available in the structure s
 | $(T^{\dagger})^{\dagger}=T$, $(ST)^{\dagger}=T^{\dagger}S^{\dagger}$, $(aT)^{\dagger}=\sigma(a)T^{\dagger}$ | the dagger laws; a $\sigma$-semilinear anti-involution |
 | $\mathcal{H}(\mathcal{F})$, $\mathcal{S}(\mathcal{F})$ | sheaves of Hermitian and skew-adjoint endomorphisms; the fixed and anti-invariant parts of the dagger |
 | $\mathcal{E}nd(\mathcal{F})=\mathcal{H}\oplus\mathcal{S}$ | decomposition when $2$ is invertible; Jordan structure on $\mathcal{H}$, Lie structure on $\mathcal{S}$ |
-| $\mathcal{F}=\mathcal{F}_+\oplus\mathcal{F}_-$, $\pi_{\pm}=\frac12(\mathrm{id}\pm T)$ | eigensheaf decomposition of an involution $T$; $T^2=\mathrm{id}$ |
+| $\mathcal{F}=\mathcal{F}_+\oplus\mathcal{F}_-$, $\pi_{1,2}=\frac12(\mathrm{id}\pm T)$ | eigensheaf decomposition of an involution $T$; $T^2=\mathrm{id}$ |
 | $\mathcal{O}_X^+$ | positive cone of the structure sheaf; used only for the positive definite case |
 | Hermitian metric | positive definite Hermitian structure; the boundary to Part III |
 | $H^p(X,\mathcal{F})\times H^q(X,\mathcal{G})\to H^{p+q}(X,\omega)$ | induced pairing on cohomology; orientation only |

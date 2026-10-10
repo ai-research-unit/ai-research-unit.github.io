@@ -4,7 +4,7 @@
 
 The biquaternion algebra is not a division algebra, and the failure is concentrated on a single cone: the set of non-zero elements of norm zero, equivalently the set of non-invertible elements, equivalently the rank-one matrices in the model. The cone is the critical set of the quadratic map, the set on which the square can collapse, the set on which no escape radius is uniform, the set on which the Green's function loses its normalization, and the set on which the Julia set is not a complex manifold. It is not a negligible exceptional set: for the parameter zero the whole surface of idempotents lies on the Julia set.
 
-The zero divisors and their classification are *Biquaternion Zero Divisors*; the idempotents are *Biquaternion Idempotents and Projections*; the matrix model, the rank-one elements and the determinant are *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the quadratic family and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the collapse of the square and the conditional radius are *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the Green's function is *The Escape Radius and the Green's Function for the Biquaternions*.
+The zero divisors and their classification are *Zero Divisors of the General Plain Algebra*; the idempotents are *Idempotents of the General Plain Algebra*; the matrix model, the rank-one elements and the determinant are *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the quadratic family and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the collapse of the square and the conditional radius are *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the Green's function is *The Escape Radius and the Green's Function for the Biquaternions*.
 
 The article owns the two kinds of zero divisor and the closed form of their square, the invariance of the cone under squaring, the affine dynamics it carries, the definition of the singular Julia set, and the theorem that the idempotent surface lies on the Julia set of the parameter zero. It does not re-derive the classification of the zero divisors, which is the zero-divisor article, and it does not treat the dimension of the singular set, which is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
 
@@ -103,8 +103,8 @@ Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_0\tilde 
 
 ## Further Reading
 
-- *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the classification of the zero divisors and their rank-one form.
-- *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the idempotents, the bijection with the roots of $-1$ and the standard idempotents.
+- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the classification of the zero divisors and their rank-one form.
+- *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the idempotents, the bijection with the roots of $-1$ and the standard idempotents.
 - *The Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.md`), for the critical set and the corollary on the parameter zero.
 - *The Escape Radius and the Green's Function for the Biquaternions* (`articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.md`), for the failure of the escape radius and the conditional Green's function.
 - *The Hausdorff Dimension of the Biquaternion Julia Sets* (`articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.md`), for the dimension of the singular part.

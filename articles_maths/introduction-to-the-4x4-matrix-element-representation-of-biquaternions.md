@@ -205,7 +205,7 @@ The left regular representation $\mathsf{M}_4$ sends $\tilde Q$ to the matrix of
 | $\det\mathsf{M}_4(\tilde Q)=\Delta(\tilde Q)^2$ | the determinant, the square of the $2\times2$ determinant |
 | $(Q_0,Q_1,Q_2,Q_3)$ | the first column, the four-vector of $\tilde Q$ |
 | $\tilde\Pi=\tfrac12(e_0+ie_1)$, $f=e_0-\tilde\Pi$ | orthogonal idempotents splitting $\mathbb{B}$ into two minimal left ideals |
-| $\tilde R=e_3+ie_2$, $\tilde T=e_3-ie_2$ | the nilpotent generators of the two ideals, the adapted basis $\tilde\Pi,\tilde R,f,\tilde T$ |
+| $\tilde\Upsilon_1=e_3+ie_2$, $\tilde\Upsilon_2=e_3-ie_2$ | the nilpotent generators of the two ideals, the adapted basis $\tilde\Pi,\tilde\Upsilon_1,f,\tilde\Upsilon_2$ |
 | $A_+,A_-$ | the two diagonal blocks of $\mathsf{M}_4$, each conjugate to $\Phi(\tilde Q)$ |
 
 ## Further Reading

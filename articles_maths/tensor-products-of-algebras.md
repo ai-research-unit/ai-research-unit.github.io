@@ -123,7 +123,7 @@ $$
 \mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H},
 $$
 
-the split biquaternion algebra, of real dimension $2 \cdot 4 = 8$. The central unit $j \in \mathbb{D}$ has $j^2 = +1$ and commutes with the quaternion units, so the element $1 + j$ is a zero divisor: $(1 + j)(1 - j) = 1 - j^2 = 0$. The two split-complex idempotents $\pi_\pm = \tfrac{1}{2}(1 \pm j)$ are central, so the algebra decomposes as a direct sum of two ideals; the algebra and its decomposition are the subject of *Split-Biquaternion Algebra*, and the ideals and the Peirce decomposition of *Split-Biquaternion Ideals and Peirce Decomposition*.
+the split biquaternion algebra, of real dimension $2 \cdot 4 = 8$. The central unit $j \in \mathbb{D}$ has $j^2 = +1$ and commutes with the quaternion units, so the element $1 + j$ is a zero divisor: $(1 + j)(1 - j) = 1 - j^2 = 0$. The two split-complex idempotents $\pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are central, so the algebra decomposes as a direct sum of two ideals; the algebra and its decomposition are the subject of *Split-Biquaternion Algebra*, and the ideals and the Peirce decomposition of *Split-Biquaternion Ideals and Peirce Decomposition*.
 
 **Example (matrix algebras).** For a commutative ring $R$ and positive integers $m, n$, there is an isomorphism of $R$-algebras
 

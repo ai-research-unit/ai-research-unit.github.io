@@ -32,7 +32,7 @@ with identity component $SO^+(1,1) = \{z \mapsto e^{js}z : s \in \mathbb{R}\}$, 
 
 **Proof.** Multiplication by $e^{js}$ preserves $N$ and moves along the level set; conversely on $N(z) = 1$ with $z$ on the right branch one has $z = e^{js}$ for the unique $s$ with $\cosh s = a$, $\sinh s = a'$, and $s$ is additive because $e^{js}e^{jt} = e^{j(s+t)}$. The parametrisation of the other branches is the same up to scale.
 
-**Definition (the null quadric).** The **null cone** is $\mathcal{N} = \{N = 0\} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, the two null lines of *Split-Complex Null Quadric and Projective Geometry*; in the projective line $\mathbb{P}(\mathbb{D})\cong\mathbb{RP}^1$ with affine coordinate $t = a'/a$, the **projective null quadric** is the pair of points at infinity $t = \pm1$. The identity component acts on the projective line by the projectivity
+**Definition (the null quadric).** The **null cone** is $\mathcal{N} = \{N = 0\} = \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$, the two null lines of *Split-Complex Null Quadric and Projective Geometry*; in the projective line $\mathbb{P}(\mathbb{D})\cong\mathbb{RP}^1$ with affine coordinate $t = a'/a$, the **projective null quadric** is the pair of points at infinity $t = \pm1$. The identity component acts on the projective line by the projectivity
 
 $$
 t \longmapsto \frac{t+\tanh s}{1+t\tanh s} ,
@@ -50,7 +50,7 @@ fixing each of the two points at infinity, and the **hyperbolic distance** betwe
 $$
 \alpha = \alpha^2, \qquad 2\alpha\beta = 0 .
 $$
-The solutions of $\alpha^2 = \alpha$ in $\mathbb{D}$ are $0$, $1$ and the two idempotents $\Pi_\pm$, and only $\alpha = 1$ is a unit; a bijection requires $\alpha$ to be a unit, so $\alpha = 1$, and then $2\beta = 0$ forces $\beta = 0$, because $\mathbb{D}$ has no nonzero element of additive order two. Hence $h$ is the identity.
+The solutions of $\alpha^2 = \alpha$ in $\mathbb{D}$ are $0$, $1$ and the two idempotents $\Pi_{1,2}$, and only $\alpha = 1$ is a unit; a bijection requires $\alpha$ to be a unit, so $\alpha = 1$, and then $2\beta = 0$ forces $\beta = 0$, because $\mathbb{D}$ has no nonzero element of additive order two. Hence $h$ is the identity.
 
 **Theorem (the even symmetries).** The map $f_c$ is even in the strong sense that $f_c(uz) = f_c(z)$ for every unit with $u^2 = 1$, that is for $u \in \{\pm1,\pm j\}$; hence the Fatou and the Julia sets are invariant under each of the four maps $z \mapsto uz$,
 $$

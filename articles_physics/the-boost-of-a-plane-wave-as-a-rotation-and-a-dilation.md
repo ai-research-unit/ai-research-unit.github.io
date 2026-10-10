@@ -51,7 +51,7 @@ N(\tilde{K}) = \tilde{K}\tilde{K}^{\natural} = \frac{\omega^2}{c^2}\left(i+\hat{
 = \frac{\omega^2}{c^2}\left(i^2 - \hat{\mathbf k}\hat{\mathbf k}\right) = \frac{\omega^2}{c^2}\left(-1 + 1\right) = 0,
 $$
 
-because $\hat{\mathbf k}\hat{\mathbf k} = -e_0$. The null element is a zero divisor of $\mathbb{B}$ (*Biquaternion Zero Divisors*, *The Light Cone as the Biquaternion Zero-Divisor Cone*), and this is the algebraic form of the statement that light has no rest frame.
+because $\hat{\mathbf k}\hat{\mathbf k} = -e_0$. The null element is a zero divisor of $\mathbb{B}$ (*Zero Divisors of the General Plain Algebra*, *The Light Cone as the Biquaternion Zero-Divisor Cone*), and this is the algebraic form of the statement that light has no rest frame.
 
 ## The Null Flag and the Flagpole
 

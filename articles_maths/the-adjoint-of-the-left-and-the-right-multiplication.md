@@ -56,7 +56,11 @@ For $A = \mathbb{C}[G]$ the adjoint of the left multiplication by $g$ is the lef
 
 ### Matrices
 
-For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\bar L_a^{*} = \bar L_{a^{*}}$ with $a^{*}$ the conjugate transpose, and the modular conjugation $J(u) = u^{*}$, the conjugate transpose, satisfies $JL_aJ = R_{a^{*}}$, which is the passage from the left-action copy of $M_n(\mathbb{C})$ to the right-action copy.
+For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\bar L_a^{*} = \bar L_{a^{*}}$ with $a^{*}$ the conjugate transpose, and the modular conjugation $J(u) = u^{*}$, the conjugate transpose, satisfies $JL_aJ = R_{a^{*}}$, which is the passage from the left-action copy of $M_n(\mathbb{C})$ to the right-action copy. The smallest witness of $JL_aJ = R_{a^{*}}$ is the matrix unit $a = E_{12}$, for which
+
+$$
+a=E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad a^{*}=E_{21},\qquad (JL_aJ)(E_{12})=(E_{12}E_{12}^{*})^{*}=E_{11}=E_{12}E_{21}=R_{a^{*}}(E_{12}) .
+$$
 
 ### The Tracial Case
 

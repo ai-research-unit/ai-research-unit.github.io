@@ -193,10 +193,10 @@ Four features of the algebra obstruct the programme, and they are logically inde
 
 In both degenerate cases $D$ is not elliptic, the characteristic variety meets the real space, and the theory of §Consequences of Ellipticity is not available.
 
-**Example (the degenerate systems solved explicitly).** For $\mathbb{D}$, write a function in the idempotent decomposition $f = f_+\Pi_+ + f_-\Pi_-$ and use the characteristic coordinates $\xi_\pm = x_0 \pm x_1$, so that $\partial_0 = \partial_+ + \partial_-$ and $\partial_1 = \partial_+ - \partial_-$ and therefore $\Pi_+\partial_+ + \Pi_-\partial_- = \tfrac12(\partial_0 + j\partial_1)$. Then
+**Example (the degenerate systems solved explicitly).** For $\mathbb{D}$, write a function in the idempotent decomposition $f = f_+\Pi_1 + f_-\Pi_2$ and use the characteristic coordinates $\xi_\pm = x_0 \pm x_1$, so that $\partial_0 = \partial_+ + \partial_-$ and $\partial_1 = \partial_+ - \partial_-$ and therefore $\Pi_1\partial_+ + \Pi_2\partial_- = \tfrac12(\partial_0 + j\partial_1)$. Then
 
 $$
-D = \partial_0 + j\partial_1 = 2\bigl(\Pi_+\partial_+ + \Pi_-\partial_-\bigr),
+D = \partial_0 + j\partial_1 = 2\bigl(\Pi_1\partial_+ + \Pi_2\partial_-\bigr),
 $$
 
 so $f$ is left regular exactly when $f_+$ is a function of $\xi_-$ alone and $f_-$ is a function of $\xi_+$ alone. The regular functions of $\mathbb{D}$ therefore depend on arbitrary functions of one real variable, and they obey neither unique continuation nor Liouville's theorem nor the maximum principle: the bounded function
@@ -343,7 +343,7 @@ Regular functions form a real vector space, are closed under right multiplicatio
 | $L_A$ | Left multiplications in $\operatorname{End}_\mathbb{R}(A)$, $\dim = m$ |
 | $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ | Split complex numbers, $j^2=+1$; degenerate for $D = \partial_0 + j\partial_1$ |
 | $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual numbers, $\varepsilon^2=0$; degenerate for $D = \partial_0+\varepsilon\partial_1$ |
-| $\Pi_\pm = \tfrac12(1\pm j)$, $\xi_\pm = x_0\pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{D}$ |
+| $\Pi_{1,2} = \tfrac12(1\pm j)$, $\xi_\pm = x_0\pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{D}$ |
 
 
 

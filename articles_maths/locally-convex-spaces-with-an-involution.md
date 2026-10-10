@@ -40,16 +40,16 @@ generates the same topology and consists of $\theta$-invariant seminorms; hence 
 **Theorem (topological splitting).** Suppose $2$ is invertible in $\mathbb{K}$. Then the averaging maps
 
 $$
-\pi_{\pm} = \tfrac{1}{2}(\mathrm{id} \pm \theta)
+\pi_{1,2} = \tfrac{1}{2}(\mathrm{id} \pm \theta)
 $$
 
-are continuous $\theta$-invariant projections with $\mathrm{im}\,\pi_{+} = E^{\theta}$, $\mathrm{im}\,\pi_{-} = E^{-}$, and
+are continuous $\theta$-invariant projections with $\mathrm{im}\,\pi_1 = E^{\theta}$, $\mathrm{im}\,\pi_2 = E^{-}$, and
 
 $$
 E = E^{\theta} \oplus E^{-}
 $$
 
-as a topological direct sum; the projection onto $E^{\theta}$ along $E^{-}$ is $\pi_{+}$, and the direct sum is locally convex for the product topology.
+as a topological direct sum; the projection onto $E^{\theta}$ along $E^{-}$ is $\pi_1$, and the direct sum is locally convex for the product topology.
 
 **Proof.** This is the topological splitting of *Involutive Topological Linear Spaces*: the maps are continuous linear (or semilinear over the fixed field) idempotents with the stated images, their sum is the identity and their product vanishes, so they are the projections of a topological direct sum. The local convexity of the product is *Locally Convex Spaces*.
 
@@ -99,7 +99,7 @@ $$
 
 ## Summary
 
-A locally convex space with a continuous involution $\theta$ can always be described by $\theta$-invariant seminorms, since the assignment $p \mapsto \sup(p, p\circ\theta)$ replaces any generating family by an invariant one with the same topology; consequently a continuous involution is an isometry for some admissible generating family, and it is continuous exactly when it is bounded with respect to the seminorms. The fixed and negated subspaces $E^{\theta}$ and $E^{-}$ are closed locally convex subspaces, and when $2$ is invertible the averaging maps $\pi_{\pm} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections exhibiting $E$ as the topological direct sum $E^{\theta}\oplus E^{-}$; in the antilinear case the fixed subspace is a real locally convex space. The transposed involution $\theta'$ on the dual is continuous for the weak-star, weak and strong topologies, and its fixed and negated parts are the annihilators of $E^{-}$ and $E^{\theta}$; quotients by closed stable subspaces and products carry the induced involution, and a continuous involution extends to the completion with the fixed subspace of the completion the closure of the fixed subspace. The conjugation of a complex space, the transposition involution and the discontinuous sparse involution are the standard examples.
+A locally convex space with a continuous involution $\theta$ can always be described by $\theta$-invariant seminorms, since the assignment $p \mapsto \sup(p, p\circ\theta)$ replaces any generating family by an invariant one with the same topology; consequently a continuous involution is an isometry for some admissible generating family, and it is continuous exactly when it is bounded with respect to the seminorms. The fixed and negated subspaces $E^{\theta}$ and $E^{-}$ are closed locally convex subspaces, and when $2$ is invertible the averaging maps $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections exhibiting $E$ as the topological direct sum $E^{\theta}\oplus E^{-}$; in the antilinear case the fixed subspace is a real locally convex space. The transposed involution $\theta'$ on the dual is continuous for the weak-star, weak and strong topologies, and its fixed and negated parts are the annihilators of $E^{-}$ and $E^{\theta}$; quotients by closed stable subspaces and products carry the induced involution, and a continuous involution extends to the completion with the fixed subspace of the completion the closure of the fixed subspace. The conjugation of a complex space, the transposition involution and the discontinuous sparse involution are the standard examples.
 
 ## Summary of Notation
 
@@ -112,7 +112,7 @@ A locally convex space with a continuous involution $\theta$ can always be descr
 | $E^{\theta}$, $E^{-}$ | Fixed and negated subspaces, $\ker(\theta \mp \mathrm{id})$ |
 | $\sup(p, p\circ\theta)$ | Invariant seminorm generating the same topology |
 | $\lVert\cdot\rVert_{\theta}$ | Equivalent invariant norm |
-| $\pi_{\pm} = \frac12(\mathrm{id}\pm\theta)$ | Averaging projections |
+| $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ | Averaging projections |
 | $\theta'$, $(E^{-})^{\circ}$ | Transposed involution and the annihilator calculus |
 | $\widehat{E}$ | Completion, carrying the extended involution |
 

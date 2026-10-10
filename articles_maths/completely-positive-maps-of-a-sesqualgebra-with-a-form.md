@@ -154,7 +154,13 @@ so the sandwich is **unital**, $\Theta_{a}(1) = 1$, exactly when $a a^{*} = 1$; 
 
 ### The Matrices
 
-**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$. The sandwich $\Theta_{a}(X) = aXa^{*}$ is completely positive of Kraus rank one by the general theorem, its Choi matrix is $\lvert a\rangle\langle a\rvert$, and it is unital exactly when $aa^{*} = 1$ and multiplicative exactly when $a = 0$ or $a^{*}a = 1$ (the zero sandwich being multiplicative too); the inner automorphisms of the trace form are the channels $\Theta_{u}$ with $u$ unitary, which are exactly the $*$-automorphisms of the matrix algebra that preserve the trace form. The transpose $X \mapsto X^{T}$ is the standard positive and not completely positive map, its Choi matrix being the flip operator. The example is the model of the article and the smallest in which all the phenomena — the sandwich, the Kraus form, the rank, the channels and the obstruction — are visible.
+**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$. The sandwich $\Theta_{a}(X) = aXa^{*}$ is completely positive of Kraus rank one by the general theorem, its Choi matrix is $\lvert a\rangle\langle a\rvert$, and it is unital exactly when $aa^{*} = 1$ and multiplicative exactly when $a = 0$ or $a^{*}a = 1$ (the zero sandwich being multiplicative too); the inner automorphisms of the trace form are the channels $\Theta_{u}$ with $u$ unitary, which are exactly the $*$-automorphisms of the matrix algebra that preserve the trace form. The transpose $X \mapsto X^{T}$ is the standard positive and not completely positive map, its Choi matrix being the flip operator. The smallest case is explicit:
+
+$$
+a=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad \Theta_a(\sigma_1)=\sigma_3\sigma_1\sigma_3=-\sigma_1,\qquad \lvert a\rangle\langle a\rvert=\begin{pmatrix}1&0&0&-1\\0&0&0&0\\0&0&0&0\\-1&0&0&1\end{pmatrix},\qquad F=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
+$$
+
+with $\lvert a\rangle=(1,0,0,-1)$ the vectorisation of $a$ and $F$ the flip $F(e_i\otimes e_j)=e_j\otimes e_i$. The example is the model of the article and the smallest in which all the phenomena — the sandwich, the Kraus form, the rank, the channels and the obstruction — are visible.
 
 ## Summary
 

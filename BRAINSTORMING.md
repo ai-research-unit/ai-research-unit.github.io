@@ -6827,47 +6827,140 @@ How far to trust the count. All 12 are distinct operations, so "12 products" is 
 
 
 
-GPA
-GQA
-SPA
-SQA
-APA
-AQA
-
-
-GPS
-GQS
-SPS
-SQS
-APS
-AQS
-
-
-The 12 Algebraic structures over the Biquaternion C space 
-
-what about naming the 12 structures : 
-
-
-GPA General Plain Algebra
-SPA Symmetric Plain Algebra
-APA Antisymmetric Plain Algebra
-
-GQA General Quaternionic Algebra
-SQA Symmetric Quaternionic Algebra
-AQA Antisymmetric Quaternionic Algebra
-
-
-GPS General Plain Sesqualgebra
-SPS Symmetric Plain Sesqualgebra
-APS Antisymmetric Plain Sesqualgebra
-
-
-GQS General Quaternionic Sesqualgebra
-SQS Symmetric Quaternionic Sesqualgebra
-AQS Antisymmetric Quaternionic Sesqualgebra
 
 
 
 
+````text
+# Decomposition of B between the subspaces — technical summary
+
+## 0. The object
+
+B = H ⊗_R C, a complex algebra of dim_R = 8, dim_C = 4. Its center is C{e0, i}
+(real dimension 2). As a complex algebra B ≅ M2(C), so it is simple: the only
+two-sided ideals are 0 and B. Every nontrivial decomposition below is one-sided
+(a decomposition of the left or right regular module), not an algebra direct sum.
+This is the single most important structural point.
+
+## 1. The four canonical elements
+
+    Û1 = ½(e0 + i e3),   Û2 = ½(e0 − i e3),   Ý2 = ½(i e1 + e2),   Ý1 = ½(i e1 − e2).
+     1                    2                    2                    1
+
+They are a C-basis and the matrix units E11, E22, E21, E12; the pair {Û1, Û2} is
+orthogonal and complete, the pair {Ý1, Ý2} is square-zero and star-exchanged.
+
+    ·         Û1     Û2     Ý1     Ý2
+    Û1        Û1     0      Ý1     0
+    Û2        0      Û2     0      Ý2
+    Ý1        0      Ý1     0      Û1
+    Ý2        Ý2     0      Û2     0
+
+Asymmetry to keep in view: Û1 Ý2 = 0 but Ý2 Û1 = Ý2; the left/right distinction is
+carried by these products.
+
+## 2. The five decompositions of B
+
+(a) Peirce / matrix units — the finest, into four complex lines:
+
+    B = Û1 B Û1 ⊕ Û1 B Û2 ⊕ Û2 B Û1 ⊕ Û2 B Û2
+      = C Û1     ⊕ C Ý1     ⊕ C Ý2     ⊕ C Û2 .
+
+(b) Left ideals (columns) — two minimal left ideals, each ≅ C^2:
+
+    B = B Û1 ⊕ B Û2,   B Û1 = C{Û1, Ý2},   B Û2 = C{Û2, Ý1}.
+
+(c) Right ideals (rows) — the star-mirror of (b):
+
+    B = Û1 B ⊕ Û2 B,   Û1 B = C{Û1, Ý1},   Û2 B = C{Ý2, Û2}.
+
+(d) Real sectors:
+
+    B = M+ ⊕ M−  (real, 4 + 4),   M− = i M+ .
+
+(e) Generator form:
+
+    B = C Û1 ⊕ C Ý1 ⊕ C Ý2 ⊕ C Û2   ( = (a) ).
+
+## 3. How they nest
+
+- (b) groups the corners {11, 21} (column 1) and {22, 12} (column 2).
+- (c) groups {11, 12} (row 1) and {22, 21} (row 2).
+- The two idempotent lines are the state lines; the two nilpotent lines are the
+  off-diagonal (transition) lines. Each left ideal = one state line ⊕ one
+  nilpotent line; each right ideal likewise, but with the other nilpotent partner.
+- (d) cuts every complex line into two real lines. It is a real structure and does
+  not commute with (a)–(c).
+
+## 4. The two involutions connect the pieces
+
+* (Hermitian): fixes Û1 and Û2, swaps Ý1 ↔ Ý2. It maps a left ideal to the
+  companion right ideal: (B Ûi)* = Ûi B. Equivalently it transposes the corners,
+  E21 ↔ E12. This is why the conjugate module is a right ideal.
+
+̄ (complex): swaps Û1 ↔ Û2 and Ý1 ↔ −Ý2. It maps left ideal 1 to left ideal 2:
+  conj(B Û1) = B Û2.
+
+## 5. Sector content of the basis (the real cut)
+
+    element      M+ part                 M− part
+    Û1           ½ e0 + ½ i e3 = Û1      0
+    i Û1         0                       i Û1
+    Ý2           ½ i e1                  ½ e2
+    Ý1           ½ i e1                 −½ e2
+
+So Û1 is wholly Hermitian and i Û1 wholly anti-Hermitian, while each nilpotent is
+half in each sector (same M+ part ½ i e1, opposite M− parts). Hence
+
+    B Û1 ∩ M+ = R Û1,   B Û1 ∩ M− = R (i Û1),
+
+one real line each. The ideal is a diagonal cut across the sector split: its two
+"sector" dimensions are the state line and its i-multiple, and its two remaining
+dimensions (the nilpotent line) straddle the two sectors.
+
+## 6. Module data
+
+- S = B Û1 carries <u, v>_* = Sc(v* u) with G = ½ I2 on the basis {Û1, Ý2}:
+  positive definite, so S is a genuine Hilbert space (contrast: a general Clifford
+  minimal left ideal can be totally isotropic).
+- Left action on {Û1, Ý2} gives L_Û1 = E11, L_Û2 = E22, L_Ý1 = E12, L_Ý2 = E21
+  under ek → −i σk; the coordinate map ψ1 Û1 + ψ2 Ý2 ↔ (ψ1, ψ2)^T is an
+  isomorphism.
+- Zero divisors, two kinds: Û1 idempotent (a state, rank-one projector), Ý nilpotent
+  (N = 0, not a state). The module carries one state direction and one nilpotent
+  direction; the two amplitudes live in the complex coefficients.
+
+## 7. What is canonical, what is chosen
+
+- Chosen: the pair (Û1, Û2). Every primitive Û(n̂) = ½(e0 + i n̂ · e) gives its own
+  ideal; the family is P^1(C). There is no distinguished minimal left ideal
+  (catalogue article, obstruction). So the decomposition in §2–§5 is one
+  representative of a class, carried by conjugation.
+- Canonical: the isomorphism type S ⊕ S (left regular module = two copies of the
+  unique simple module, length 2, multiplicity 2), and the four-corner count
+  1 + 1 + 1 + 1.
+
+## 8. Two traps
+
+- Non-central idempotents. In B the Û1, Û2 are not central (e.g.
+  Û1 e1 = ½(e1 + i e2) ≠ ½(e1 − i e2) = e1 Û1). So the decomposition is one-sided
+  only. In the split-biquaternion algebra the analogous pair ½(1 ± j) is central
+  and there the sum is an algebra direct sum. Do not transfer the statement.
+- Ideals are not chiralities. Both B Û1 and B Û2 carry the same representation
+  (½, 0) of SL(2, C); the chirality is invisible to the complex algebra and appears
+  only via ̄, or in C ⊗_R B ≅ M2(C) ⊕ M2(C). The two chiralities are S and its
+  conjugate S̄ — the module and its conjugate — not the two left ideals.
+
+## 9. Status
+
+- Correction already stated: B ≅ S ⊕ S as left modules, not S ⊕ S̄; S̄ = (0, ½) ≠ B Û2.
+- All relations of §1–§6 verified by recomputation in this session.
+- Open for the write-up: (i) fix the ordering convention Ý1, Ý2 vs 2, 1 on the
+  definition line; (ii) decide whether M± gets its own subsection or stays a
+  cross-reference; (iii) old names R̃, T̃ still present in a handful of articles
+  that predate the Ý convention — separate sweep.
+````
+
+Note: the ASCII approximation above loses the LaTeX glyphs. The symbols stand for $\tilde\Pi_1,\tilde\Pi_2$ (idempotents), $\tilde\Upsilon_1,\tilde\Upsilon_2$ (nilpotents), $S=\mathbb{B}\tilde\Pi_1$, and $\bar S$ (the conjugate module). If you want the fenced block to keep real LaTeX — `$\tilde\Pi_1$` rather than `Û1` — say so and I emit that version.
 
 

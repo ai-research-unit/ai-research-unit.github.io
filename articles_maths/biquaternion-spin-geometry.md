@@ -26,7 +26,7 @@ Matching the matrix form $\Phi(\tilde{Q})=uv^{T}$ of *The 2×2 Matrix Element Re
 
 ## Spinors as the Minimal Left Ideals
 
-The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, where $\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\hat{\mathbf{u}})$ are a complete pair of orthogonal idempotents (*Biquaternion Idempotents and Projections*, *Biquaternion Ideals and Peirce Decomposition*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
+The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, where $\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\hat{\mathbf{u}})$ are a complete pair of orthogonal idempotents (*Idempotents of the General Plain Algebra*, *Biquaternion Ideals and Peirce Decomposition*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
 $$
 \mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2,
 $$

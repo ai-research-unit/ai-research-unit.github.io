@@ -144,7 +144,11 @@ so the bracket is the difference of the left and the right multiplication, and w
 
 ### The Matrices
 
-**Example (the matrices, verdict: the bracket of the skew-Hermitian matrices is the unitary Lie algebra).** Let $A = M_{n}(\mathbb{C})$ with the operator norm, the conjugation and the product $X \star Y = XY^{*}$. The bracket is $[X,Y]_{\varsigma} = XY^{*} - YX^{*}$, bounded with $\lVert[X,Y]_{\varsigma}\rVert \leq 2\lVert X\rVert\lVert Y\rVert$, with values in the skew-Hermitian matrices $S(A) = \mathfrak{u}(n)$. On $S(A)$ the bracket is the negative of the commutator, so $S(A)$ is the real Banach Lie algebra $\mathfrak{u}(n)$ with all signs reversed; the Jacobi identity fails on the Hermitian matrices, the Hermitian triple $E_{11}, E_{22}, E_{12} + E_{21}$ of *The Sesquilinear Commutator*, §*The Failure of the Jacobi Identity* producing the nonzero sum.
+**Example (the matrices, verdict: the bracket of the skew-Hermitian matrices is the unitary Lie algebra).** Let $A = M_{n}(\mathbb{C})$ with the operator norm, the conjugation and the product $X \star Y = XY^{*}$. The bracket is $[X,Y]_{\varsigma} = XY^{*} - YX^{*}$, bounded with $\lVert[X,Y]_{\varsigma}\rVert \leq 2\lVert X\rVert\lVert Y\rVert$, with values in the skew-Hermitian matrices $S(A) = \mathfrak{u}(n)$. On $S(A)$ the bracket is the negative of the commutator, so $S(A)$ is the real Banach Lie algebra $\mathfrak{u}(n)$ with all signs reversed; the Jacobi identity fails on the Hermitian matrices, the Hermitian triple $E_{11}, E_{22}, E_{12} + E_{21}$ of *The Sesquilinear Commutator*, §*The Failure of the Jacobi Identity* producing the nonzero sum. Explicitly,
+
+$$
+[\sigma_1,\sigma_2]_{\varsigma}=\sigma_1\sigma_2-\sigma_2\sigma_1=2i\sigma_3=\begin{pmatrix}2i&0\\0&-2i\end{pmatrix}\in\mathfrak{u}(2),\qquad \bigl[[E_{11},E_{22}]_{\varsigma},E_{12}+E_{21}\bigr]_{\varsigma}+\text{cyclic}=\begin{pmatrix}0&-2\\2&0\end{pmatrix}\neq0 .
+$$
 
 ### The Field
 
