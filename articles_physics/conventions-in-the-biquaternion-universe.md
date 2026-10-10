@@ -303,7 +303,7 @@ $$
 
 and the index is written in the upper position. **No index is raised or lowered anywhere in the series.** On $\mathbb{C}^4$ there is no pairing with which to move one, and the $ict$ convention is what puts the metric into the coefficient — $(ict, \mathbf{x})$ rather than a contraction rule — so that the interval is the sum of squares with no explicit scalar product. The article owns the product in components and the column-and-dual-row convention.
 
-### The 4×4 Regular Matrix Representation
+### The 4×4 Matrix Representation
 
 Multiplication is read as a linear map on that quadruple, in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The four units act by
 

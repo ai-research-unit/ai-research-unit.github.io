@@ -38,7 +38,7 @@ $$
 \tilde{Q}\;\longmapsto\; L_{\tilde{Q}}
 $$
 
-is an **injective algebra homomorphism** from $\mathbb{B}$ into the endomorphisms of $\mathbb{B}$: it is linear, it respects the product by the rule, it carries $e_0$ to the identity map, and it is injective because $L_{\tilde{Q}}(e_0) = \tilde{Q}$ recovers the element from the map. This is the **left regular representation** of the algebra, and it is the abstract content of the two regular-matrix operator articles: what those articles tabulate in matrices is the image of this homomorphism, $L_{\tilde{Q}}$ read in the coefficient basis.
+is an **injective algebra homomorphism** from $\mathbb{B}$ into the endomorphisms of $\mathbb{B}$: it is linear, it respects the product by the rule, it carries $e_0$ to the identity map, and it is injective because $L_{\tilde{Q}}(e_0) = \tilde{Q}$ recovers the element from the map. This is the **left regular representation** of the algebra, and it is the abstract content of the two matrix operator articles: what those articles tabulate in matrices is the image of this homomorphism, $L_{\tilde{Q}}$ read in the coefficient basis.
 
 ## The Monoid of Acting Maps
 
@@ -117,7 +117,7 @@ Read as a **resource theory**, the monoid's split is the framework's version of 
 
 ## Summary
 
-An element of the biquaternion algebra generates two $\mathbb{C}$-linear maps, the left multiplication $L_{\tilde{Q}}$ and the right multiplication $R_{\tilde{Q}}$, with $L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$ and $R_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}\tilde{P}}$. The left multiplications form a **monoid** under composition: associative, with identity $L_{e_0}$, closed by the product rule. The element-to-map correspondence is the injective left regular representation, and it is the abstract content of the two regular-matrix operator articles. The units of the monoid are exactly the off-cone elements, the zero divisors are the non-invertible maps, and the light cone is the boundary between them.
+An element of the biquaternion algebra generates two $\mathbb{C}$-linear maps, the left multiplication $L_{\tilde{Q}}$ and the right multiplication $R_{\tilde{Q}}$, with $L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$ and $R_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}\tilde{P}}$. The left multiplications form a **monoid** under composition: associative, with identity $L_{e_0}$, closed by the product rule. The element-to-map correspondence is the injective left regular representation, and it is the abstract content of the two matrix operator articles. The units of the monoid are exactly the off-cone elements, the zero divisors are the non-invertible maps, and the light cone is the boundary between them.
 
 The sandwich of the two matrix articles is the composition of a left action with a right action, $\operatorname{H}_{\tilde{Q}} = L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$, which is why it is a congruence and not a similarity. The states are the projectors, and idempotent elements are idempotent maps under the injective representation; the projectors lie in $\mathbb{M}_+$ and $\mathbb{M}_-$ has none, the minimal ones are the rank-one projectors, and those are null and sit on the cone. The reading is the process–state split: the process is the map of the monoid, the state is the idempotent, the reversible dynamics is the group of units off the cone, and the measurement is the passage to a non-invertible map on it.
 

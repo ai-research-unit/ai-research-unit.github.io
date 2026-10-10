@@ -227,6 +227,7 @@ The right regular representation $R_{\tilde q}(\tilde r) = \tilde r\tilde q$ is 
 | $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\tilde{q}^{\natural}$, norm $N(\tilde q)$ |
 | $L_{\tilde q}$ | Cayley matrix of left multiplication $\tilde r\mapsto \tilde q \tilde r$ |
+| $M_4(\mathbb{R})_L=\operatorname{image}L_{\tilde q}$ | the regular matrices, the real subspace of dimension $4$ inside $M_4(\mathbb{R})$ |
 | $\Omega_q = L_{\tilde q} - q_0I$ | Skew-symmetric part of the Cayley matrix |
 | $R_{\tilde q}$ | Matrix of right multiplication $\tilde r\mapsto \tilde r\tilde q$ |
 | $D = \operatorname{diag}(1,-1,-1,-1)$ | Matrix of conjugation, $R_{\tilde q} = D L_{\tilde q}^{T} D$ |

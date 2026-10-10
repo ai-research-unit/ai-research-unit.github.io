@@ -175,6 +175,7 @@ The left regular representation $\rho_L$ sends $\tilde Q$ to the matrix of left 
 | Symbol | Meaning |
 |---|---|
 | $\rho_L(\tilde Q)(\tilde R)=\tilde Q\tilde R$ | the left regular representation |
+| $M_4(\mathbb{C})_L=\operatorname{image}\rho_L=\{\rho_L(\tilde Q)\}$ | the regular matrices, the subspace of complex dimension $4$ inside $M_4(\mathbb{C})$ |
 | $\rho_L(\tilde Q)=\begin{pmatrix}Q_0&-Q_1&-Q_2&-Q_3\\Q_1&Q_0&-Q_3&Q_2\\Q_2&Q_3&Q_0&-Q_1\\Q_3&-Q_2&Q_1&Q_0\end{pmatrix}$ | its matrix in the basis $e_0,e_1,e_2,e_3$ |
 | $\rho_L(\tilde Q)\rho_L(\tilde R)=\rho_L(\tilde Q\tilde R)$ | multiplicativity |
 | $\operatorname{Tr}\rho_L(\tilde Q)=4Q_0$ | the trace |

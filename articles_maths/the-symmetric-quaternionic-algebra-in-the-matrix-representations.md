@@ -6,8 +6,7 @@ The symmetric quaternionic multiplication is the central-valued operation
 $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$ (*Introduction to the Symmetric Quaternionic Algebra of
 Biquaternions*). This article reads the operation in the two matrix models of the algebra: the **$2\times2$
 model** $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of *Introduction to the 2×2 Matrix Representation of
-Biquaternions*, and the **$4\times4$ regular model** $\rho_L$ of *Biquaternion 4×4 Regular Matrix Element
-Representation*. In each, the product of two elements becomes the symmetrisation of a matrix product, the
+Biquaternions*, and the **$4\times4$ regular model** $\rho_L$ of *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*. In each, the product of two elements becomes the symmetrisation of a matrix product, the
 matrix of the quaternion conjugation acts on it, and the value is a scalar matrix whose coefficient is the
 quaternion form $B$; the article records the trace and the rank of the resulting endomorphism and the matrix
 form of the form.
