@@ -17,8 +17,8 @@ The article proceeds as follows. The standard algebraic notion of a superselecti
 The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, central scalar imaginary $i$ with $i^2 = -1$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian conjugation $\tilde{Q}^{*}$, quaternion conjugate $\tilde{Q}^{\natural}$, and the real structure $\flat = -{}^{*}$ with fixed space $\mathbb{M}_-$. The matrix model is $\mathbb{B}\cong M_2(\mathbb{C})$ with $e_0\mapsto I_2$, $e_k\mapsto -i\sigma_k$ and $i\mapsto iI_2$.
 
 The companion articles supply the pieces:
-- Companion article *The Anti-Hermitian Subspace M- as the Material Sector*, for the four-vector content, the interval, and the anti-Hermitian sector.
-- Companion article *The Hermitian Subspace M+ as the Informational Sector*, for the trace pairing, the Hermitian sector, and the Born rule.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the four-vector content, the interval, and the anti-Hermitian sector.
+- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the trace pairing, the Hermitian sector, and the Born rule.
 - Companion article *Quantum Physics in Biquaternionic Form*, for the state space, the idempotents, and the conjugation action.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module and its irreducibility.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Lie algebra, the Cartan decomposition, and the Wigner rotation.

@@ -326,6 +326,6 @@ The four blocks of the study read as a division of labour with the physics. Alge
 ## Further Reading
 
 - The mathematics corpus itself: its menu and its *Biquaternions* category, from which every link of this article is taken. Its *Split-Biquaternions* category and *Structural Comparison around Biquaternions* continue the study of the neighbouring systems and are outside this index.
-- Within the corpus, the foundational articles *Introduction to the Biquaternion Universe*, *Conventions in the Biquaternion Universe*, *The Hermitian Subspace M+ as the Informational Sector* and *The Anti-Hermitian Subspace M- as the Material Sector*.
+- Within the corpus, the foundational articles *Introduction to the Biquaternion Universe*, *Conventions in the Biquaternion Universe*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, second edition, Cambridge University Press, 2001, for the identification of the biquaternions with $M_2(\mathbb{C})$ and with the even part of $\mathrm{Cl}_{1,3}$.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge University Press, 1995, for the classical groups carried by the algebra.

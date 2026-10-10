@@ -134,13 +134,13 @@ the Pythagorean instance of the definite decomposition; for $B$, $N(B_+) + N(B_-
 Multiplication by an element is an $\mathbb{R}$-linear endomorphism of $\mathbb{C}$, and in the basis $1$, $i$ it is the Cayley matrix of *Complex Regular Element Representation*. The matrices of the two worked elements are
 
 $$
-\rho_L(A) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}, \qquad \rho_L(B) = \begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix}.
+\operatorname{mat}_4(A) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}, \qquad \operatorname{mat}_4(B) = \begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix}.
 $$
 
 **Multiplicativity.** The product of the two matrices reproduces the product computed in components,
 
 $$
-\rho_L(A)\rho_L(B) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}\begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix} = \begin{pmatrix} 11 & 2 \\ -2 & 11 \end{pmatrix} = \rho_L(AB),
+\operatorname{mat}_4(A)\operatorname{mat}_4(B) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}\begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix} = \begin{pmatrix} 11 & 2 \\ -2 & 11 \end{pmatrix} = \operatorname{mat}_4(AB),
 $$
 
 the matrix of $AB = 11-2i$.
@@ -148,7 +148,7 @@ the matrix of $AB = 11-2i$.
 **The determinant is the norm.** Each matrix has determinant equal to the norm of its element,
 
 $$
-\det \rho_L(A) = 3\cdot 3 - (-4)\cdot 4 = 25 = N(A), \qquad \det \rho_L(B) = 1\cdot 1 - 2\cdot(-2) = 5 = N(B),
+\det \operatorname{mat}_4(A) = 3\cdot 3 - (-4)\cdot 4 = 25 = N(A), \qquad \det \operatorname{mat}_4(B) = 1\cdot 1 - 2\cdot(-2) = 5 = N(B),
 $$
 
 so multiplicativity of the determinant is the multiplicativity $N(AB) = N(A)N(B)$ on the worked pair.
@@ -156,10 +156,10 @@ so multiplicativity of the determinant is the multiplicativity $N(AB) = N(A)N(B)
 **Transposition is conjugation.** The transpose of the matrix of $A$ is the matrix of $\bar{A}$:
 
 $$
-\rho_L(A)^{\mathsf{T}} = \begin{pmatrix} 3 & 4 \\ -4 & 3 \end{pmatrix} = \rho_L(3-4i) = \rho_L(\bar{A}),
+\operatorname{mat}_4(A)^{\mathsf{T}} = \begin{pmatrix} 3 & 4 \\ -4 & 3 \end{pmatrix} = \operatorname{mat}_4(3-4i) = \operatorname{mat}_4(\bar{A}),
 $$
 
-and likewise $\rho_L(B)^{\mathsf{T}} = \rho_L(\bar{B})$.
+and likewise $\operatorname{mat}_4(B)^{\mathsf{T}} = \operatorname{mat}_4(\bar{B})$.
 
 ## The Galois Action, Worked
 
@@ -181,7 +181,7 @@ and the norm is preserved, $N(\sigma(A)) = 25 = N(A)$. The fixed points are exac
 
 The article exhibits the structures of the complex algebra on the elements $A = 3+4i$ and $B = 1-2i$. Their product is $AB = 11-2i$ and their square norms are $N(A) = 25$, $N(B) = 5$, $N(AB) = 125$, so the norm is multiplicative on the worked pair. The identity and complex conjugation are the two involutions; conjugation sends $A$ to $3-4i$ and $B$ to $1+2i$, is an involution and an algebra automorphism, and fixes exactly the real axis while negating the imaginary axis.
 
-The eigencomponents of conjugation are $A_+ = 3 \in \mathbb{R}_{\mathbb{C}}$ and $A_- = 4i \in i\mathbb{R}_{\mathbb{C}}$, with $N(A_+)+N(A_-) = N(A)$; the product $(4i)(-2i) = 8$ is real and shows that the imaginary subspace is not closed. The unit criterion and the inverse formula belong to the topology layer and are developed, with the worked instances, in the companion article *Complex Norm and Invertibility*. The matrix model carries the same data: $\rho_L(A) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}$ and $\rho_L(B) = \begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix}$ multiply to $\rho_L(AB)$, their determinants $25$ and $5$ are the norms of the elements, and $\rho_L(A)^{\mathsf{T}} = \rho_L(\bar{A})$ is the transpose relation. The Galois action $\sigma = \bar{\cdot}$ preserves the product and the norm on the worked elements and is conjugate-linear over $\mathbb{C}$.
+The eigencomponents of conjugation are $A_+ = 3 \in \mathbb{R}_{\mathbb{C}}$ and $A_- = 4i \in i\mathbb{R}_{\mathbb{C}}$, with $N(A_+)+N(A_-) = N(A)$; the product $(4i)(-2i) = 8$ is real and shows that the imaginary subspace is not closed. The unit criterion and the inverse formula belong to the topology layer and are developed, with the worked instances, in the companion article *Complex Norm and Invertibility*. The matrix model carries the same data: $\operatorname{mat}_4(A) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}$ and $\operatorname{mat}_4(B) = \begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix}$ multiply to $\operatorname{mat}_4(AB)$, their determinants $25$ and $5$ are the norms of the elements, and $\operatorname{mat}_4(A)^{\mathsf{T}} = \operatorname{mat}_4(\bar{A})$ is the transpose relation. The Galois action $\sigma = \bar{\cdot}$ preserves the product and the norm on the worked elements and is conjugate-linear over $\mathbb{C}$.
 
 ## Summary of Notation
 
@@ -194,7 +194,7 @@ The eigencomponents of conjugation are $A_+ = 3 \in \mathbb{R}_{\mathbb{C}}$ and
 | $A_\pm = \tfrac12(A \pm \bar{A})$ | the eigencomponents of conjugation |
 | $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | the real and imaginary subspaces |
 | $N(A) = A\bar{A} = a^2+a'^2$ | the norm |
-| $\rho_L(A) = aI + a'J$ | the Cayley matrix of multiplication by $A$, the $2\times2$ matrix model |
+| $\operatorname{mat}_4(A) = aI + a'J$ | the Cayley matrix of multiplication by $A$, the $2\times2$ matrix model |
 
 ## Further Reading
 

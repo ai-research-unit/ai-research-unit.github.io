@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The biquaternion algebra carries one distinguished algebra isomorphism $\Phi$ to the $2\times2$ complex matrices and one distinguished complete realization $\rho_L$, the left regular map, in the $4\times4$ complex matrices. Every named object of the algebra — the algebra, its unit group, its norm-one group, its centre, its automorphism group — has an image under both, and the two images are related: the regular map is the isomorphism taken twice.
+The biquaternion algebra carries one distinguished algebra isomorphism $\Phi$ to the $2\times2$ complex matrices and one distinguished complete realization $\operatorname{mat}_4$, the left regular map, in the $4\times4$ complex matrices. Every named object of the algebra — the algebra, its unit group, its norm-one group, its centre, its automorphism group — has an image under both, and the two images are related: the regular map is the isomorphism taken twice.
 
-This article collects those images in a table and comments on them row by row. It is an index, not a source: the isomorphism $\Phi$ is owned by *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the map $\rho_L$ by *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, the objects themselves by their own articles, and the module decomposition that explains the relation between the two by *Modules over the General Plain Algebra of Biquaternions*. No new result is claimed and no dynamical statement is made.
+This article collects those images in a table and comments on them row by row. It is an index, not a source: the isomorphism $\Phi$ is owned by *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the map $\operatorname{mat}_4$ by *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, the objects themselves by their own articles, and the module decomposition that explains the relation between the two by *Modules over the General Plain Algebra of Biquaternions*. No new result is claimed and no dynamical statement is made.
 
 The article is the correspondence index of the mathematical-physics block: the algebra and the notation are *Conventions in the Biquaternion Universe*, its norm and units are *Biquaternion Norm and Invertibility*, the group structure and its exponential are *Biquaternion Lie Group and Exponential Structure*, the topology of the units is *The Biquaternion Unit Group as a Topological Group*, the subspaces are *Relations Between Subspaces*, and the physical reading of the two sectors is in *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*.
 
@@ -48,30 +48,30 @@ $$
 \det\Phi(\tilde{Q})=N(\tilde{Q}).
 $$
 
-### The Left Regular Map $\rho_L$
+### The Left Regular Map $\operatorname{mat}_4$
 
 The map
 
 $$
-\rho_L:\mathbb{B}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
-\rho_L(\tilde{Q})(\tilde{R})=\tilde{Q}\tilde{R}
+\operatorname{mat}_4:\mathbb{B}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
+\operatorname{mat}_4(\tilde{Q})(\tilde{R})=\tilde{Q}\tilde{R}
 $$
 
 writes left multiplication by $\tilde{Q}$ as a linear operator on the four-dimensional space $\mathbb{B}$. In the basis $e_0,e_1,e_2,e_3$ the matrix has the images $\tilde{Q}e_m$ for columns, and its functionals are
 
 $$
-\operatorname{tr}\rho_L(\tilde{Q})=4Q_0,\qquad
-\det\rho_L(\tilde{Q})=N(\tilde{Q})^2.
+\operatorname{tr}\operatorname{mat}_4(\tilde{Q})=4Q_0,\qquad
+\det\operatorname{mat}_4(\tilde{Q})=N(\tilde{Q})^2.
 $$
 
-Unlike $\Phi$, the map $\rho_L$ is not onto: its image is a four-complex-dimensional family inside the sixteen-dimensional algebra $M_4(\mathbb{C}).$ Concretely, it is the family of matrices of left multiplication by a biquaternion, and nothing else.
+Unlike $\Phi$, the map $\operatorname{mat}_4$ is not onto: its image is a four-complex-dimensional family inside the sixteen-dimensional algebra $M_4(\mathbb{C}).$ Concretely, it is the family of matrices of left multiplication by a biquaternion, and nothing else.
 
 ### The Relation Between the Two
 
 Because $\Phi$ is multiplicative, $\Phi(\tilde{Q}\tilde{R})=\Phi(\tilde{Q})\Phi(\tilde{R})$, so left multiplication by $\tilde{Q}$ acts on the four entries of $\Phi(\tilde{R})$ by letting $\Phi(\tilde{Q})$ act on each of the two columns. Reading the columns of $\Phi(\tilde{R})$ as the four coordinates therefore block-diagonalizes the regular matrix, and in that basis the two blocks coincide:
 
 $$
-\rho_L(\tilde{Q})\;=\;
+\operatorname{mat}_4(\tilde{Q})\;=\;
 \begin{pmatrix}
 \Phi(\tilde{Q}) & 0\\
 0 & \Phi(\tilde{Q})
@@ -81,7 +81,7 @@ $$
 The basis that exhibits this form is the column-adapted one: the four elements whose $\Phi$-images are the matrix units, grouped as the first column of $\Phi$, then the second. In that basis the equality above holds exactly, block for block. Equivalently, the left regular module is a direct sum of two copies of the simple module,
 
 $$
-\mathbb{B}\cong V\oplus V,\qquad \rho_L\cong\Phi\oplus\Phi,
+\mathbb{B}\cong V\oplus V,\qquad \operatorname{mat}_4\cong\Phi\oplus\Phi,
 $$
 
 which is the module-theoretic content of the display and is the statement of *Modules over the General Plain Algebra of Biquaternions*. The two functionals agree with this: $4Q_0$ is twice $2Q_0$, and $N^2$ is the square of $N$. The owner article states the same block form in the idempotent basis, where each block has trace $2Q_0$ and determinant $N$ and is therefore **similar** to $\Phi(\tilde{Q})$; passing from that basis to the column-adapted one is a change of basis inside each block, which is what turns the similarity into an equality.
@@ -93,7 +93,7 @@ The two maps above are not the only realizations of the algebra. Beside them the
 - the **coefficient four-vector**, writing the element as a column of its four complex coordinates in the space $\mathbb{C}^4$, owned by *The Four-Vector Element Representation of Biquaternions*;
 - the **spinor module** $V=\mathbb{C}^2$, the two-dimensional complex space on which $\Phi(\tilde{Q})$ acts by multiplication, of complex dimension $2$ and real dimension $4$; this is the spin representation of the algebra, owned by *Biquaternion Spin Geometry*, and its module theory is *Modules over the General Plain Algebra of Biquaternions*;
 - the **even Clifford algebra** $\mathrm{Cl}_{1,3}^{+}$, isomorphic to $\mathbb{B}$ as a real algebra and hence also to $M_2(\mathbb{C})$ as a real algebra, owned by *The Clifford Algebra Representation*;
-- the **realification** $\rho_L$ over $\mathbb{R}$, writing the operator as an $8\times8$ real matrix, since the algebra is the real space $\mathbb{R}^8$;
+- the **realification** $\operatorname{mat}_4$ over $\mathbb{R}$, writing the operator as an $8\times8$ real matrix, since the algebra is the real space $\mathbb{R}^8$;
 - the **real Clifford algebra** $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$, the opposite-sign companion, in which the biquaternions sit as the even part and so are written as $4\times4$ real matrices;
 - the **quaternionic matrix algebra** $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, in which the biquaternions sit as the even part and so are written as $2\times2$ quaternionic matrices.
 
@@ -103,7 +103,7 @@ The coefficient column and the simple module are carriers rather than matrix alg
 
 Every image below is the image of the object named in the first column; a dash in no cell means the object is empty, only that no separate name was given to the image.
 
-| object | $\dim_{\mathbb{C}}$ | $\dim_{\mathbb{R}}$ | $2\times2$ image under $\Phi$ | $4\times4$ image under $\rho_L$ | other realizations | sets and correspondences |
+| object | $\dim_{\mathbb{C}}$ | $\dim_{\mathbb{R}}$ | $2\times2$ image under $\Phi$ | $4\times4$ image under $\operatorname{mat}_4$ | other realizations | sets and correspondences |
 |---|---|---|---|---|---|---|
 | $\mathbb{B}$ | $4$ | $8$ | all of $M_2(\mathbb{C})$, an isomorphism | the $4$-dimensional family of left-multiplication matrices, not all of $M_4(\mathbb{C})$; equal blocks $\Phi(\tilde{Q})$ | the $8\times8$ real regular matrices; the $4\times4$ real matrices of $\mathrm{Cl}_{3,1}$; the $2\times2$ quaternionic matrices of $\mathrm{Cl}_{1,3}$; the coefficient column $\mathbb{C}^4$; the spinor module $V=\mathbb{C}^2$, of complex dimension $2$ | the real space $\mathbb{R}^8$; the even Clifford algebra $\mathrm{Cl}_{1,3}^{+}$ |
 | $\mathbb{B}^{\times}$ | $4$ | $8$ | $GL(2,\mathbb{C})$ | block-diagonal $\mathrm{diag}(GL(2,\mathbb{C}),GL(2,\mathbb{C}))$ | the invertible $8\times8$ real matrices; the invertible quaternionic $2\times2$ matrices | $(\mathbb{C}^{\times}\times SL(2,\mathbb{C}))/\{\pm1\}$; a real Lie group of real dimension $8$, not simply connected; **only its norm-one part generates Lorentz transformations** |
@@ -127,7 +127,7 @@ The two dimension columns are read as follows. $\dim_{\mathbb{C}}$ is the comple
 
 **$2\times2$.** The image is all of $M_2(\mathbb{C})$, and the correspondence is an isomorphism, not merely an injective map. The inverse of the display above reads an arbitrary matrix back to its biquaternion. The trace sees only the scalar part, and the determinant is the norm, which is why invertibility of the matrix and invertibility of the element are the same condition.
 
-**$4\times4$.** The image is the four-dimensional family of left-multiplication operators, and in the column-adapted basis each one is the block-diagonal doubling of its $2\times2$ image. The trace is $4Q_0$ and the determinant is $N^2$, so the determinant is the square of the $2\times2$ determinant; this is the general fact that the determinant of a direct sum is the product of the determinants of its summands, applied to $\rho_L\cong\Phi\oplus\Phi$.
+**$4\times4$.** The image is the four-dimensional family of left-multiplication operators, and in the column-adapted basis each one is the block-diagonal doubling of its $2\times2$ image. The trace is $4Q_0$ and the determinant is $N^2$, so the determinant is the square of the $2\times2$ determinant; this is the general fact that the determinant of a direct sum is the product of the determinants of its summands, applied to $\operatorname{mat}_4\cong\Phi\oplus\Phi$.
 
 **Other.** The coefficient column is the realization in which a field is written as a four-component object; the Clifford identification is the one in which the spinor module is natural, since the bivectors act on it as the matrices do; the realification is the same algebra read over $\mathbb{R}$, where it is $\mathbb{R}^8$ and the matrices are twice as large.
 
@@ -137,7 +137,7 @@ The two dimension columns are read as follows. $\dim_{\mathbb{C}}$ is the comple
 
 **$2\times2$.** The image is $GL(2,\mathbb{C})$, by the identity $\det\Phi(\tilde{Q})=N(\tilde{Q})$. This is the cleanest statement of the group of units in the whole corpus: it is reached by applying the isomorphism and then taking the determinant.
 
-**$4\times4$.** The image is block-diagonal with both blocks in $GL(2,\mathbb{C})$, by $\det\rho_L=N^2$. The two blocks carry the same information, so no hypothesis is gained or lost by passing to the larger realization.
+**$4\times4$.** The image is block-diagonal with both blocks in $GL(2,\mathbb{C})$, by $\det\operatorname{mat}_4=N^2$. The two blocks carry the same information, so no hypothesis is gained or lost by passing to the larger realization.
 
 **Other.** Every unit factors as a central scalar times a norm-one element, $\tilde{Q}=N(\tilde{Q})^{1/2}\,\tilde{U}$ with $N(\tilde{U})=1$, and the central factor is fixed only up to a sign, so the group is the quotient $(\mathbb{C}^{\times}\times SL(2,\mathbb{C}))/\{\pm1\}$ along the diagonal. It is not simply connected: the central circle contributes a copy of $\mathbb{Z}$ to the fundamental group. Only its norm-one subgroup is the spin group.
 
@@ -316,11 +316,11 @@ The correspondences above are what the physical articles read the algebra throug
 
 ## What the Table Does Not Say
 
-**The $4\times4$ map is not an isomorphism.** $\Phi$ is onto $M_2(\mathbb{C})$, but $\rho_L$ is not onto $M_4(\mathbb{C})$: its image is four-complex-dimensional, against sixteen. The table's entries in that column are faithful images, not the whole matrix algebra, and the phrase "the $4\times4$ matrix representation" names a representation, not an isomorphism.
+**The $4\times4$ map is not an isomorphism.** $\Phi$ is onto $M_2(\mathbb{C})$, but $\operatorname{mat}_4$ is not onto $M_4(\mathbb{C})$: its image is four-complex-dimensional, against sixteen. The table's entries in that column are faithful images, not the whole matrix algebra, and the phrase "the $4\times4$ matrix representation" names a representation, not an isomorphism.
 
-**The determinants are not the same function.** $\det\Phi=N$ and $\det\rho_L=N^2$, and the traces are $2Q_0$ and $4Q_0$. Only the criterion is common, since $N\neq0$ and $N^2\neq0$ are the same condition. A determinant computed in the wrong realization is off by a square.
+**The determinants are not the same function.** $\det\Phi=N$ and $\det\operatorname{mat}_4=N^2$, and the traces are $2Q_0$ and $4Q_0$. Only the criterion is common, since $N\neq0$ and $N^2\neq0$ are the same condition. A determinant computed in the wrong realization is off by a square.
 
-**The sector structure lives in $\Phi$, not in $\rho_L$.** Hermitian against anti-Hermitian, the signatures $(1,3)$ and $(3,1)$, the compact subalgebra and the boosts — all of these are read cleanly from the single $2\times2$ matrix, because ${}^{*}$ on the image is the conjugate transpose. In the $4\times4$ realization each is doubled, and the statement becomes one about both blocks at once. The sector theorems are therefore stated in the $2\times2$ realization for a reason and not by accident.
+**The sector structure lives in $\Phi$, not in $\operatorname{mat}_4$.** Hermitian against anti-Hermitian, the signatures $(1,3)$ and $(3,1)$, the compact subalgebra and the boosts — all of these are read cleanly from the single $2\times2$ matrix, because ${}^{*}$ on the image is the conjugate transpose. In the $4\times4$ realization each is doubled, and the statement becomes one about both blocks at once. The sector theorems are therefore stated in the $2\times2$ realization for a reason and not by accident.
 
 **The two actions in the last two rows are different.** The automorphism group acts by conjugation $X\mapsto \Phi(g)X\Phi(g)^{-1}$ for a unit $g$; the Lorentz quotient acts by the dagger sandwich $X\mapsto \Phi(\tilde{\Lambda})X\Phi(\tilde{\Lambda})^{\dagger}$ for a rotor $\tilde{\Lambda}$ of norm one. They agree exactly on the unitary slice, by the identity $\tilde{\Lambda}^{*}=\tilde{\Lambda}^{-1}$ for a unitary $\tilde{\Lambda}$; off it they differ, and the sandwich is not multiplicative in the acting rotor across a central rescaling, while the conjugation is insensitive to it.
 
@@ -330,7 +330,7 @@ The correspondences above are what the physical articles read the algebra throug
 
 **The last two columns are neither exclusive nor exhaustive.** The four-vector, Clifford, spinor and real realizations are different ways of writing the same algebra, and an object corresponds to all of them at once. The Clifford realization is singled out only because the spinor module is natural there.
 
-**The doubling is not the chiral splitting.** $\rho_L\cong\Phi\oplus\Phi$ is one spinor taken twice, not the left-handed and the right-handed spinor. Chirality sits inside each copy: the spin module splits into its two chiral spaces over $\mathbb{C}$, and the regular representation doubles that splitting rather than being it. The two ideals that realize the module inside the algebra are therefore not the chiral halves, and the identification is owned by *Biquaternion Spin Geometry*, §*Spinors as the Minimal Left Ideals*.
+**The doubling is not the chiral splitting.** $\operatorname{mat}_4\cong\Phi\oplus\Phi$ is one spinor taken twice, not the left-handed and the right-handed spinor. Chirality sits inside each copy: the spin module splits into its two chiral spaces over $\mathbb{C}$, and the regular representation doubles that splitting rather than being it. The two ideals that realize the module inside the algebra are therefore not the chiral halves, and the identification is owned by *Biquaternion Spin Geometry*, §*Spinors as the Minimal Left Ideals*.
 
 **The spinor is a module, not a matrix.** The word spinor names the space that a realization acts on, not any one of its matrix forms: the $2\times2$ matrix is a coordinate realization of the algebra, while the spinor is the $V$ on which it acts, treated in this menu by *Biquaternion Spin Geometry* and its module theory by *Modules over the General Plain Algebra of Biquaternions*. Reading the module off the matrix is exactly what produces the chiral-splitting error recorded above.
 
@@ -342,11 +342,11 @@ The correspondences above are what the physical articles read the algebra throug
 
 The index reads as the source of the framework's translations: every physical object of the series has two matrix images, and the correspondences are why a result proved for matrices can be read as a statement about an element. Read for invariance, the table is also an invariance table: the trace corresponds to the scalar part and the determinant to the norm, so the two matrix invariants are the two quantities that survive a change of the representation. Read on the clock, the central imaginary corresponds to a scalar matrix, which is the matrix reading of its centrality. One further reading of the index can be named.
 
-- **Element-data and map-data reading.** The matrix images come in two kinds: the $2\times2$ spinor image acts on the data an object acts on, and the $4\times4$ regular image acts on the objects themselves, so the two pictures are read as the element-like data and the map-like data of one description, with $\rho_L\cong\Phi\oplus\Phi$ the dictionary between them. Boundary: the two are one representation taken twice, and the analogy is offered as a reading and not as an identification of two theories.
+- **Element-data and map-data reading.** The matrix images come in two kinds: the $2\times2$ spinor image acts on the data an object acts on, and the $4\times4$ regular image acts on the objects themselves, so the two pictures are read as the element-like data and the map-like data of one description, with $\operatorname{mat}_4\cong\Phi\oplus\Phi$ the dictionary between them. Boundary: the two are one representation taken twice, and the analogy is offered as a reading and not as an identification of two theories.
 
 ## Summary
 
-The algebra $\mathbb{B}$ has one algebra isomorphism $\Phi$ onto $M_2(\mathbb{C})$ and one faithful regular map $\rho_L$ into $M_4(\mathbb{C})$, and the second is the first taken twice: in the column-adapted basis the regular matrix is block-diagonal with two equal blocks $\Phi(\tilde{Q})$, and in the idempotent basis the same blocks are each similar to $\Phi(\tilde{Q})$. Every named object has an image under both, and the images interlock: the determinant of the element is $N$ in the small picture and $N^2$ in the large one, so the group of units becomes $GL(2,\mathbb{C})$ and then a doubled copy of it, the norm-one group becomes $SL(2,\mathbb{C})$, the unit quaternions become $SU(2)$, the centre becomes the scalars, and the sign group becomes its kernel. The automorphism group is the units modulo the centre, acting by conjugation; the Lorentz quotient is the norm-one group modulo the sign group, acting by the dagger sandwich. The classical groups reached are the compact $Sp(1)=S^3=SU(2)=\mathrm{Spin}(3)$, its complexification $\mathbb{B}^{\times}_1=SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$, and the common quotient $SO^{+}(1,3)=\mathbb{B}^{\times}_1/\{\pm e_0\}=PSL(2,\mathbb{C})$, which is also the automorphism group; the two covers $SU(2)\to SO(3)$ and $\mathbb{B}^{\times}_1\to SO^{+}(1,3)$ have the same discrete kernel, and the Lie algebra $\mathrm{B}_0\cong\mathrm{so}(1,3)$ is the infinitesimal form of the second. The table is an index, and each row is owned by the article named beside it.
+The algebra $\mathbb{B}$ has one algebra isomorphism $\Phi$ onto $M_2(\mathbb{C})$ and one faithful regular map $\operatorname{mat}_4$ into $M_4(\mathbb{C})$, and the second is the first taken twice: in the column-adapted basis the regular matrix is block-diagonal with two equal blocks $\Phi(\tilde{Q})$, and in the idempotent basis the same blocks are each similar to $\Phi(\tilde{Q})$. Every named object has an image under both, and the images interlock: the determinant of the element is $N$ in the small picture and $N^2$ in the large one, so the group of units becomes $GL(2,\mathbb{C})$ and then a doubled copy of it, the norm-one group becomes $SL(2,\mathbb{C})$, the unit quaternions become $SU(2)$, the centre becomes the scalars, and the sign group becomes its kernel. The automorphism group is the units modulo the centre, acting by conjugation; the Lorentz quotient is the norm-one group modulo the sign group, acting by the dagger sandwich. The classical groups reached are the compact $Sp(1)=S^3=SU(2)=\mathrm{Spin}(3)$, its complexification $\mathbb{B}^{\times}_1=SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$, and the common quotient $SO^{+}(1,3)=\mathbb{B}^{\times}_1/\{\pm e_0\}=PSL(2,\mathbb{C})$, which is also the automorphism group; the two covers $SU(2)\to SO(3)$ and $\mathbb{B}^{\times}_1\to SO^{+}(1,3)$ have the same discrete kernel, and the Lie algebra $\mathrm{B}_0\cong\mathrm{so}(1,3)$ is the infinitesimal form of the second. The table is an index, and each row is owned by the article named beside it.
 
 ## Summary of Notation
 
@@ -357,7 +357,7 @@ The algebra $\mathbb{B}$ has one algebra isomorphism $\Phi$ onto $M_2(\mathbb{C}
 | $\tilde{\Lambda}$ | a rotor, an element of the norm-one group $\mathbb{B}^{\times}_1$, acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ |
 | $g$ | a unit, an element of $\mathbb{B}^{\times}$, acting on the algebra by conjugation |
 | $\Phi$ | the algebra isomorphism $\mathbb{B}\to M_2(\mathbb{C})$ |
-| $\rho_L$ | the left regular map, $\rho_L(\tilde{Q})(\tilde{R})=\tilde{Q}\tilde{R}$ |
+| $\operatorname{mat}_4$ | the left regular map, $\operatorname{mat}_4(\tilde{Q})(\tilde{R})=\tilde{Q}\tilde{R}$ |
 | $N$ | the biquaternion norm $\sum_\mu Q_\mu^2$ |
 | ${}^{*}$ | Hermitian conjugation; fixed space $\mathbb{M}_+$, anti-fixed space $\mathbb{M}_-$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the informational and material sectors |

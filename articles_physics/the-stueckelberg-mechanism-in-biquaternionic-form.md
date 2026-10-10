@@ -15,8 +15,8 @@ We use the conventions of the companion articles. The biquaternion algebra is $\
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the abelian gauge structure from the central phase.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the massless abelian field and its gauge invariance.
 - Companion article *The Photon in Biquaternionic Form*, for the massless neutral vector field.
-- Companion article *The Anti-Hermitian Subspace M- as the Material Sector*, for the material-sector carrier of the connection.
-- Companion article *The Hermitian Subspace M+ as the Informational Sector*, for the sector structure and the trace.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material-sector carrier of the connection.
+- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the sector structure and the trace.
 
 ## The Proca Obstruction
 

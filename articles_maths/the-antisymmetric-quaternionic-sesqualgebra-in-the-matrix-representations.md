@@ -6,7 +6,7 @@ The block $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\ti
 
 The product the block splits is *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Representation* and its regular companion; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the general construction of a part is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the diagonal and the failure of the Jacobi identity are *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; and the operators are *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*. This article owns the reading of the block in the two matrix models.
 
-**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, $e_k^2=-e_0$; a generic element $\tilde Q=Q_0e_0+\mathbf{Q}$; natural conjugation ${}^{\natural}$ and Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; form $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ with $\varepsilon=(1,-1,-1,-1)$, linear in the first argument and conjugate-linear in the second. In the $2\times2$ model the realization is $\Phi(e_0)=I$, $\Phi(e_k)=-i\sigma_k$; in the $4\times4$ model the realization $\rho_L$ is the left multiplication $\tilde R\mapsto\tilde Q\tilde R$ of the plain product.
+**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, $e_k^2=-e_0$; a generic element $\tilde Q=Q_0e_0+\mathbf{Q}$; natural conjugation ${}^{\natural}$ and Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; form $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ with $\varepsilon=(1,-1,-1,-1)$, linear in the first argument and conjugate-linear in the second. In the $2\times2$ model the realization is $\Phi(e_0)=I$, $\Phi(e_k)=-i\sigma_k$; in the $4\times4$ model the realization $\operatorname{mat}_4$ is the left multiplication $\tilde R\mapsto\tilde Q\tilde R$ of the plain product.
 
 ## The Two-by-Two Model
 
@@ -93,7 +93,7 @@ $$
 
 ### The Model and Its Conjugations
 
-**Definition.** The **left regular representation** $\rho_L$ sends $\tilde Q$ to the matrix of the left multiplication $\tilde R\mapsto\tilde Q\tilde R$ of the plain product, with $\rho_L(\tilde Q^{\natural})=\rho_L(\tilde Q)^{T}$, $\rho_L(\tilde Q^{*})=\rho_L(\tilde Q)^{\dagger}$, and $\operatorname{Tr}\rho_L(\tilde Q)=4Q_0$.
+**Definition.** The **left regular representation** $\operatorname{mat}_4$ sends $\tilde Q$ to the matrix of the left multiplication $\tilde R\mapsto\tilde Q\tilde R$ of the plain product, with $\operatorname{mat}_4(\tilde Q^{\natural})=\operatorname{mat}_4(\tilde Q)^{T}$, $\operatorname{mat}_4(\tilde Q^{*})=\operatorname{mat}_4(\tilde Q)^{\dagger}$, and $\operatorname{Tr}\operatorname{mat}_4(\tilde Q)=4Q_0$.
 
 *Proof.* The regular representation of an associative algebra is multiplicative, and the two conjugations are the transpose and the conjugate transpose of the matrix, as in *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions*. Verified on the generators.
 
@@ -102,16 +102,16 @@ $$
 **Theorem.** For all biquaternions,
 
 $$
-\rho_L\bigl(\tilde P\diamond\tilde Q\bigr)
-=\tfrac12\Bigl(\rho_L(\tilde P)^{T}\rho_L(\tilde Q)^{\dagger}
--\rho_L(\tilde Q)^{\dagger}\rho_L(\tilde P)^{T}\Bigr),
+\operatorname{mat}_4\bigl(\tilde P\diamond\tilde Q\bigr)
+=\tfrac12\Bigl(\operatorname{mat}_4(\tilde P)^{T}\operatorname{mat}_4(\tilde Q)^{\dagger}
+-\operatorname{mat}_4(\tilde Q)^{\dagger}\operatorname{mat}_4(\tilde P)^{T}\Bigr),
 $$
 
 again the half-difference of the two twisted regular products, with the transpose in the first slot and the conjugate transpose in the second.
 
-*Proof.* The products $\tilde P^{\natural}\tilde Q^{*}$ and $\tilde Q^{*}\tilde P^{\natural}$ read $\rho_L(\tilde P)^{T}\rho_L(\tilde Q)^{\dagger}$ and $\rho_L(\tilde Q)^{\dagger}\rho_L(\tilde P)^{T}$ in the model, and the block is their half-difference. Verified on general elements.
+*Proof.* The products $\tilde P^{\natural}\tilde Q^{*}$ and $\tilde Q^{*}\tilde P^{\natural}$ read $\operatorname{mat}_4(\tilde P)^{T}\operatorname{mat}_4(\tilde Q)^{\dagger}$ and $\operatorname{mat}_4(\tilde Q)^{\dagger}\operatorname{mat}_4(\tilde P)^{T}$ in the model, and the block is their half-difference. Verified on general elements.
 
-**Proposition (the value is traceless).** $\operatorname{Tr}\rho_L(\tilde P\diamond\tilde Q)=0$ for all biquaternions, the block being pure vector.
+**Proposition (the value is traceless).** $\operatorname{Tr}\operatorname{mat}_4(\tilde P\diamond\tilde Q)=0$ for all biquaternions, the block being pure vector.
 
 *Proof.* The trace of the regular matrix is $4Q_0$, and the block has scalar coordinate zero. Verified on general elements.
 
@@ -125,7 +125,7 @@ again the half-difference of the two twisted regular products, with the transpos
 
 ## Summary
 
-In the $2\times2$ realization the block is the half-difference of the two twisted matrix products, $\Phi(\tilde P\diamond\tilde Q)=\tfrac12(\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}-\Phi(\tilde Q)^{\dagger}\operatorname{adj}\Phi(\tilde P))$, with the matrix of the natural conjugation, the adjugate, in the first slot and the conjugate transpose in the second; in the $4\times4$ regular representation it is the same half-difference with the transpose in the first slot, $\rho_L(\tilde P\diamond\tilde Q)=\tfrac12(\rho_L(\tilde P)^{T}\rho_L(\tilde Q)^{\dagger}-\rho_L(\tilde Q)^{\dagger}\rho_L(\tilde P)^{T})$. In both models the value is traceless, because the block is pure vector, and at the witness $e_1+ie_2$ the value $-2ie_3$ has matrix $\operatorname{diag}(-2,2)$. The block is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second, the model split being the one between the adjugate or transpose and the conjugate transpose. The pairing of the block is the adjugated conjugate-transposed trace form of the $2\times2$ model and the trace form of the regular model, both reading the form $K$ on the value. The comparison with the plain row isolates the block as the half-difference with the natural conjugation in the first slot, the difference of the two sesquilinear antisymmetric parts in the models.
+In the $2\times2$ realization the block is the half-difference of the two twisted matrix products, $\Phi(\tilde P\diamond\tilde Q)=\tfrac12(\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}-\Phi(\tilde Q)^{\dagger}\operatorname{adj}\Phi(\tilde P))$, with the matrix of the natural conjugation, the adjugate, in the first slot and the conjugate transpose in the second; in the $4\times4$ regular representation it is the same half-difference with the transpose in the first slot, $\operatorname{mat}_4(\tilde P\diamond\tilde Q)=\tfrac12(\operatorname{mat}_4(\tilde P)^{T}\operatorname{mat}_4(\tilde Q)^{\dagger}-\operatorname{mat}_4(\tilde Q)^{\dagger}\operatorname{mat}_4(\tilde P)^{T})$. In both models the value is traceless, because the block is pure vector, and at the witness $e_1+ie_2$ the value $-2ie_3$ has matrix $\operatorname{diag}(-2,2)$. The block is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second, the model split being the one between the adjugate or transpose and the conjugate transpose. The pairing of the block is the adjugated conjugate-transposed trace form of the $2\times2$ model and the trace form of the regular model, both reading the form $K$ on the value. The comparison with the plain row isolates the block as the half-difference with the natural conjugation in the first slot, the difference of the two sesquilinear antisymmetric parts in the models.
 
 ## Summary of Notation
 
@@ -134,8 +134,8 @@ In the $2\times2$ realization the block is the half-difference of the two twiste
 | $\Phi(e_0)=I$, $\Phi(e_k)=-i\sigma_k$ | the $2\times2$ realization |
 | $\Phi(\tilde Q^{\natural})=\operatorname{adj}\Phi(\tilde Q)$, $\Phi(\tilde Q^{*})=\Phi(\tilde Q)^{\dagger}$ | the two conjugations in the model |
 | $\Phi(\tilde P\diamond\tilde Q)=\tfrac12(\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}-\Phi(\tilde Q)^{\dagger}\operatorname{adj}\Phi(\tilde P))$ | the block in the $2\times2$ model |
-| $\rho_L(\tilde Q^{\natural})=\rho_L(\tilde Q)^{T}$, $\rho_L(\tilde Q^{*})=\rho_L(\tilde Q)^{\dagger}$ | the two conjugations in the regular model |
-| $\rho_L(\tilde P\diamond\tilde Q)=\tfrac12(\rho_L(\tilde P)^{T}\rho_L(\tilde Q)^{\dagger}-\rho_L(\tilde Q)^{\dagger}\rho_L(\tilde P)^{T})$ | the block in the regular model |
+| $\operatorname{mat}_4(\tilde Q^{\natural})=\operatorname{mat}_4(\tilde Q)^{T}$, $\operatorname{mat}_4(\tilde Q^{*})=\operatorname{mat}_4(\tilde Q)^{\dagger}$ | the two conjugations in the regular model |
+| $\operatorname{mat}_4(\tilde P\diamond\tilde Q)=\tfrac12(\operatorname{mat}_4(\tilde P)^{T}\operatorname{mat}_4(\tilde Q)^{\dagger}-\operatorname{mat}_4(\tilde Q)^{\dagger}\operatorname{mat}_4(\tilde P)^{T})$ | the block in the regular model |
 | $\operatorname{diag}(-2,2)$ | the value $-2ie_3$ at $e_1+ie_2$ |
 | trace $0$ | the value is pure vector |
 | $\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)^{\dagger})$ | the trace form of the pairing |

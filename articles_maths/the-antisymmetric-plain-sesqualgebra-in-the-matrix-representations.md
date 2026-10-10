@@ -11,7 +11,7 @@ $$
 M=\Phi(\tilde P)\Phi(\tilde Q)^{\dagger},
 $$
 
-half the difference of the conjugate-transposed product and its **adjoint matrix**, the model of the natural conjugation. In the $4\times4$ model the same statement reads $\rho_L(\tilde P\diamond\tilde Q)=M-\tfrac14\operatorname{Tr}(M)I$ with $M=\rho_L(\tilde P)\rho_L(\tilde Q)^{\dagger}$, and the two models agree on the invariants.
+half the difference of the conjugate-transposed product and its **adjoint matrix**, the model of the natural conjugation. In the $4\times4$ model the same statement reads $\operatorname{mat}_4(\tilde P\diamond\tilde Q)=M-\tfrac14\operatorname{Tr}(M)I$ with $M=\operatorname{mat}_4(\tilde P)\operatorname{mat}_4(\tilde Q)^{\dagger}$, and the two models agree on the invariants.
 
 The one difference between the two readings is the shape of the image. In the $2\times2$ model the image is the **traceless** matrices, of complex dimension three, the **traceless skew-Hermitian** matrices among them, a real three-dimensional space, being the image of the real vector triple; in the $4\times4$ model the image is the image of the vector subspace under the regular representation, again of complex dimension three, and the rank of a value is four, two or zero according to the **isotropy** of the value for the complex bilinear norm form, not according to the vanishing of the value. The two ranks are computed, and the distinction between the two forms carried by the block is the point of the article: the positive definite form $H(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)$ vanishes only on the zero value, while the determinant of the matrix of the value, which is the complex bilinear form $\sum_\mu V_\mu^2$, vanishes on the whole isotropic cone.
 
@@ -28,12 +28,12 @@ $$
 
 with $\Phi(\tilde Q^{\natural})=\operatorname{adj}\Phi(\tilde Q)$, $\Phi(\tilde Q^{*})=\Phi(\tilde Q)^{\dagger}$, $\operatorname{Tr}\Phi(\tilde Q)=2Q_0$ and $\det\Phi(\tilde Q)=N(\tilde Q)=\sum_\mu Q_\mu^2$. It is a $*$-isomorphism, and it carries the Hermitian conjugation of the algebra to the conjugate transpose of the matrices.
 
-**Recall (the left regular representation).** The left regular representation of *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* is $\rho_L(\tilde Q)(\tilde R)=\tilde Q\tilde R$ read in the basis $e_0,e_1,e_2,e_3$, with
+**Recall (the left regular representation).** The left regular representation of *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* is $\operatorname{mat}_4(\tilde Q)(\tilde R)=\tilde Q\tilde R$ read in the basis $e_0,e_1,e_2,e_3$, with
 
 $$
-\rho_L(\tilde Q^{*})=\rho_L(\tilde Q)^{\dagger},\qquad
-\operatorname{Tr}\rho_L(\tilde Q)=4Q_0,\qquad
-\det\rho_L(\tilde Q)=N(\tilde Q)^{2}.
+\operatorname{mat}_4(\tilde Q^{*})=\operatorname{mat}_4(\tilde Q)^{\dagger},\qquad
+\operatorname{Tr}\operatorname{mat}_4(\tilde Q)=4Q_0,\qquad
+\det\operatorname{mat}_4(\tilde Q)=N(\tilde Q)^{2}.
 $$
 
 **The two vector parts.** In each model the vector part of an element is read by the trace: in the $2\times2$ model
@@ -45,10 +45,10 @@ $$
 the **traceless part** of the matrix, and in the $4\times4$ model
 
 $$
-\rho_L\bigl(\mathrm{Vect}(\tilde X)\bigr)=\rho_L(\tilde X)-\tfrac14\operatorname{Tr}\rho_L(\tilde X)\,I .
+\operatorname{mat}_4\bigl(\mathrm{Vect}(\tilde X)\bigr)=\operatorname{mat}_4(\tilde X)-\tfrac14\operatorname{Tr}\operatorname{mat}_4(\tilde X)\,I .
 $$
 
-*Proof.* In the $2\times2$ model, $\Phi(\tilde X)=X_0I-i(X_1\sigma_1+X_2\sigma_2+X_3\sigma_3)$ and $\operatorname{Tr}\Phi(\tilde X)=2X_0$, so subtracting $\tfrac12\operatorname{Tr}\Phi(\tilde X)I=X_0I$ leaves $-i\sum_kX_k\sigma_k=\Phi(\mathrm{Vect}\tilde X)$; the regular case is the same with $\rho_L(e_0)=I$ and $\operatorname{Tr}\rho_L(\tilde X)=4X_0$. $\square$
+*Proof.* In the $2\times2$ model, $\Phi(\tilde X)=X_0I-i(X_1\sigma_1+X_2\sigma_2+X_3\sigma_3)$ and $\operatorname{Tr}\Phi(\tilde X)=2X_0$, so subtracting $\tfrac12\operatorname{Tr}\Phi(\tilde X)I=X_0I$ leaves $-i\sum_kX_k\sigma_k=\Phi(\mathrm{Vect}\tilde X)$; the regular case is the same with $\operatorname{mat}_4(e_0)=I$ and $\operatorname{Tr}\operatorname{mat}_4(\tilde X)=4X_0$. $\square$
 
 ## The Block in the $2\times2$ Model
 
@@ -136,22 +136,22 @@ which vanishes only at $\tilde V=0$, while the **complex bilinear** form is the 
 **Theorem (the block in the regular model).** For all biquaternions,
 
 $$
-\rho_L(\tilde P\diamond\tilde Q)=\rho_L(\tilde P)\rho_L(\tilde Q)^{\dagger}
--\tfrac14\operatorname{Tr}\bigl(\rho_L(\tilde P)\rho_L(\tilde Q)^{\dagger}\bigr)\,I,
+\operatorname{mat}_4(\tilde P\diamond\tilde Q)=\operatorname{mat}_4(\tilde P)\operatorname{mat}_4(\tilde Q)^{\dagger}
+-\tfrac14\operatorname{Tr}\bigl(\operatorname{mat}_4(\tilde P)\operatorname{mat}_4(\tilde Q)^{\dagger}\bigr)\,I,
 $$
 
-the **traceless part** of the conjugate-transposed product of the regular matrices; in particular $\operatorname{Tr}\rho_L(\tilde P\diamond\tilde Q)=0$.
+the **traceless part** of the conjugate-transposed product of the regular matrices; in particular $\operatorname{Tr}\operatorname{mat}_4(\tilde P\diamond\tilde Q)=0$.
 
-*Proof.* $\rho_L(\tilde P\tilde Q^{*})=\rho_L(\tilde P)\rho_L(\tilde Q)^{\dagger}$ by the $*$-representation property, and the vector part is the traceless part by §*The Models*. $\square$
+*Proof.* $\operatorname{mat}_4(\tilde P\tilde Q^{*})=\operatorname{mat}_4(\tilde P)\operatorname{mat}_4(\tilde Q)^{\dagger}$ by the $*$-representation property, and the vector part is the traceless part by §*The Models*. $\square$
 
 **Theorem (the invariants in the regular model).** For every value $\tilde V$ of the block,
 
 $$
-\operatorname{Tr}\rho_L(\tilde V)=0,
+\operatorname{Tr}\operatorname{mat}_4(\tilde V)=0,
 \qquad
-\det\rho_L(\tilde V)=N(\tilde V)^{2},
+\det\operatorname{mat}_4(\tilde V)=N(\tilde V)^{2},
 \qquad
-\operatorname{rank}\rho_L(\tilde V)=
+\operatorname{rank}\operatorname{mat}_4(\tilde V)=
 \begin{cases}
 4, & N(\tilde V)\neq0,\\
 2, & N(\tilde V)=0,\ \tilde V\neq0,\\
@@ -159,17 +159,17 @@ $$
 \end{cases}
 $$
 
-*Proof.* The trace vanishes because $\operatorname{Tr}\rho_L(\tilde X)=4\mathrm{Sc}(\tilde X)$ and the value is a pure vector; the determinant is $N(\tilde X)^2$ for every $\tilde X$, by the invariants of the model. For the rank, $\det\rho_L(\tilde V)=N(\tilde V)^2$, so the regular matrix is invertible exactly when $N(\tilde V)\neq0$; for $N(\tilde V)=0$ and $\tilde V\neq0$ the left regular representation of a central simple algebra has rank a multiple of the degree two, and the value is a zero divisor, so the rank is two. $\square$
+*Proof.* The trace vanishes because $\operatorname{Tr}\operatorname{mat}_4(\tilde X)=4\mathrm{Sc}(\tilde X)$ and the value is a pure vector; the determinant is $N(\tilde X)^2$ for every $\tilde X$, by the invariants of the model. For the rank, $\det\operatorname{mat}_4(\tilde V)=N(\tilde V)^2$, so the regular matrix is invertible exactly when $N(\tilde V)\neq0$; for $N(\tilde V)=0$ and $\tilde V\neq0$ the left regular representation of a central simple algebra has rank a multiple of the degree two, and the value is a zero divisor, so the rank is two. $\square$
 
-**Remark (the image and the rank in the regular model).** The image of the block in the regular model is the image of the vector subspace under $\rho_L$, of complex dimension three: the value $\tilde V=e_0\diamond\tilde R=\mathbf R$ has regular matrix $\rho_L(\mathbf R)$ of rank four whenever $N(\mathbf R)\neq0$, so the image meets the invertible matrices, while a zero divisor $\mathbf R$ has rank two. The $2\times2$ model reads the same image by the traceless matrices, again of complex dimension three, and the two models have the same rank pattern on the values through the factor two, $\operatorname{rank}\rho_L=2\operatorname{rank}\Phi$ on the values, which is the ratio of the sizes of the two matrix algebras.
+**Remark (the image and the rank in the regular model).** The image of the block in the regular model is the image of the vector subspace under $\operatorname{mat}_4$, of complex dimension three: the value $\tilde V=e_0\diamond\tilde R=\mathbf R$ has regular matrix $\operatorname{mat}_4(\mathbf R)$ of rank four whenever $N(\mathbf R)\neq0$, so the image meets the invertible matrices, while a zero divisor $\mathbf R$ has rank two. The $2\times2$ model reads the same image by the traceless matrices, again of complex dimension three, and the two models have the same rank pattern on the values through the factor two, $\operatorname{rank}\operatorname{mat}_4=2\operatorname{rank}\Phi$ on the values, which is the ratio of the sizes of the two matrix algebras.
 
 **Remark (the two-sided antisymmetrised operator).** The regular model also carries the **two-sided** antisymmetrisation
 
 $$
-\tfrac12\bigl(\rho_L(\tilde P)\rho_R(\tilde Q^{*})-\rho_L(\tilde Q)\rho_R(\tilde P^{*})\bigr),
+\tfrac12\bigl(\operatorname{mat}_4(\tilde P)\operatorname{mat}_4^{R}(\tilde Q^{*})-\operatorname{mat}_4(\tilde Q)\operatorname{mat}_4^{R}(\tilde P^{*})\bigr),
 $$
 
-the matrix of the map $\tilde X\mapsto\tfrac12\bigl(\tilde P\tilde X\tilde Q^{*}-\tilde Q\tilde X\tilde P^{*}\bigr)$ on the module, with $\rho_R(\tilde X)$ the right multiplication by $\tilde X$. It is alternating in its two parameters, so it vanishes identically at $\tilde P=\tilde Q$; its trace is $4i\,\mathrm{Im}\bigl(P_0\overline{Q_0}\bigr)$, not zero, and its rank is four for generic parameters, two on the real basis pairs such as $(e_0,e_1)$, and one on special complex pairs such as $(e_0+ie_1,\,ie_0-e_1)$, where the trace is $-4i$. It is not the block's element in the model, which is the traceless part of the one-sided product and has trace zero; and its vanishing diagonal is the opposite of the block's, whose diagonal is the vector part of the square. The distinction is the one of the symmetric row: the block's element is the matrix of the value, and the two-sided operator is the action of the two factors on the module, one-sided in the first case and two-sided in the second.
+the matrix of the map $\tilde X\mapsto\tfrac12\bigl(\tilde P\tilde X\tilde Q^{*}-\tilde Q\tilde X\tilde P^{*}\bigr)$ on the module, with $\operatorname{mat}_4^{R}(\tilde X)$ the right multiplication by $\tilde X$. It is alternating in its two parameters, so it vanishes identically at $\tilde P=\tilde Q$; its trace is $4i\,\mathrm{Im}\bigl(P_0\overline{Q_0}\bigr)$, not zero, and its rank is four for generic parameters, two on the real basis pairs such as $(e_0,e_1)$, and one on special complex pairs such as $(e_0+ie_1,\,ie_0-e_1)$, where the trace is $-4i$. It is not the block's element in the model, which is the traceless part of the one-sided product and has trace zero; and its vanishing diagonal is the opposite of the block's, whose diagonal is the vector part of the square. The distinction is the one of the symmetric row: the block's element is the matrix of the value, and the two-sided operator is the action of the two factors on the module, one-sided in the first case and two-sided in the second.
 
 ## The Matrix Form of the Pairing
 
@@ -177,20 +177,20 @@ the matrix of the map $\tilde X\mapsto\tfrac12\bigl(\tilde P\tilde X\tilde Q^{*}
 
 $$
 H(\tilde P,\tilde Q)=\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}\bigr)
-=\tfrac14\operatorname{Tr}\bigl(\rho_L(\tilde P)\rho_L(\tilde Q)^{\dagger}\bigr).
+=\tfrac14\operatorname{Tr}\bigl(\operatorname{mat}_4(\tilde P)\operatorname{mat}_4(\tilde Q)^{\dagger}\bigr).
 $$
 
-*Proof.* $\operatorname{Tr}\Phi(\tilde X)=2X_0$ and $\operatorname{Tr}\rho_L(\tilde X)=4X_0$; hence $\operatorname{Tr}(\Phi(\tilde P)\Phi(\tilde Q)^{\dagger})=\operatorname{Tr}\Phi(\tilde P\tilde Q^{*})=2H(\tilde P,\tilde Q)$ and $\operatorname{Tr}(\rho_L(\tilde P)\rho_L(\tilde Q)^{\dagger})=\operatorname{Tr}\rho_L(\tilde P\tilde Q^{*})=4H(\tilde P,\tilde Q)$. $\square$
+*Proof.* $\operatorname{Tr}\Phi(\tilde X)=2X_0$ and $\operatorname{Tr}\operatorname{mat}_4(\tilde X)=4X_0$; hence $\operatorname{Tr}(\Phi(\tilde P)\Phi(\tilde Q)^{\dagger})=\operatorname{Tr}\Phi(\tilde P\tilde Q^{*})=2H(\tilde P,\tilde Q)$ and $\operatorname{Tr}(\operatorname{mat}_4(\tilde P)\operatorname{mat}_4(\tilde Q)^{\dagger})=\operatorname{Tr}\operatorname{mat}_4(\tilde P\tilde Q^{*})=4H(\tilde P,\tilde Q)$. $\square$
 
 **Corollary (the pairing of the block).** For the block,
 
 $$
 H\bigl(\tilde P\diamond\tilde Q,\tilde R\bigr)
 =\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde P\diamond\tilde Q)\,\Phi(\tilde R)^{\dagger}\bigr)
-=\tfrac14\operatorname{Tr}\bigl(\rho_L(\tilde P\diamond\tilde Q)\,\rho_L(\tilde R)^{\dagger}\bigr),
+=\tfrac14\operatorname{Tr}\bigl(\operatorname{mat}_4(\tilde P\diamond\tilde Q)\,\operatorname{mat}_4(\tilde R)^{\dagger}\bigr),
 $$
 
-with $\Phi(\tilde P\diamond\tilde Q)$ and $\rho_L(\tilde P\diamond\tilde Q)$ the traceless parts displayed above; the pairing is computed on the values, and it agrees with the coordinate formula of *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, §*The Pairing with the Form*.
+with $\Phi(\tilde P\diamond\tilde Q)$ and $\operatorname{mat}_4(\tilde P\diamond\tilde Q)$ the traceless parts displayed above; the pairing is computed on the values, and it agrees with the coordinate formula of *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, §*The Pairing with the Form*.
 
 **Theorem (the invariant form in the model).** The unique invariant form of the block, up to a scalar, is the **scalar-slot form**
 
@@ -206,23 +206,23 @@ and the invariance $\beta(\tilde P\diamond\tilde Q,\tilde R)=-\overline{\beta(\t
 
 ## Summary
 
-In the $2\times2$ model the block is the traceless part of the conjugate-transposed product, $\Phi(\tilde P\diamond\tilde Q)=M-\tfrac12\operatorname{Tr}(M)I=\tfrac12(M-\operatorname{adj}M)$ with $M=\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}$, half the difference of $M$ and its adjoint matrix; the adjoint matrix is the model of the natural conjugation, and the conjugate transpose in the model is the model of ${}^{*}$. The image is the traceless matrices, of complex dimension three, and the traceless skew-Hermitian ones, spanned by $-i\sigma_1,-i\sigma_2,-i\sigma_3$, are the image of the real vector triple; every value has trace zero and determinant $N(\tilde V)=\sum_\mu V_\mu^2$, and the rank is two, one or zero according as $N\neq0$, $N=0$ with $\tilde V\neq0$, or $\tilde V=0$; the positive definite form $H$ vanishes only on the zero value, while the determinant vanishes on the whole isotropic cone, with $e_1+ie_2$ a nonzero value of rank one. In the $4\times4$ model the block is the traceless part of $\rho_L(\tilde P)\rho_L(\tilde Q)^{\dagger}$, with trace zero and determinant $N(\tilde V)^2$, and rank four, two or zero on the same three cases; the form is the Hilbert–Schmidt pairing, $\tfrac12\operatorname{Tr}$ in the $2\times2$ model and $\tfrac14\operatorname{Tr}$ in the regular one, and the unique invariant form is the scalar-slot form $X_0\overline{Y_0}=\tfrac14\operatorname{Tr}\Phi(\tilde X)\overline{\operatorname{Tr}\Phi(\tilde Y)}$, degenerate on every value. The two-sided antisymmetrised operator $\tfrac12\bigl(\rho_L(\tilde P)\rho_R(\tilde Q^{*})-\rho_L(\tilde Q)\rho_R(\tilde P^{*})\bigr)$ is a different object: it is alternating, with trace $4i\,\mathrm{Im}(P_0\overline{Q_0})$ and generic rank four.
+In the $2\times2$ model the block is the traceless part of the conjugate-transposed product, $\Phi(\tilde P\diamond\tilde Q)=M-\tfrac12\operatorname{Tr}(M)I=\tfrac12(M-\operatorname{adj}M)$ with $M=\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}$, half the difference of $M$ and its adjoint matrix; the adjoint matrix is the model of the natural conjugation, and the conjugate transpose in the model is the model of ${}^{*}$. The image is the traceless matrices, of complex dimension three, and the traceless skew-Hermitian ones, spanned by $-i\sigma_1,-i\sigma_2,-i\sigma_3$, are the image of the real vector triple; every value has trace zero and determinant $N(\tilde V)=\sum_\mu V_\mu^2$, and the rank is two, one or zero according as $N\neq0$, $N=0$ with $\tilde V\neq0$, or $\tilde V=0$; the positive definite form $H$ vanishes only on the zero value, while the determinant vanishes on the whole isotropic cone, with $e_1+ie_2$ a nonzero value of rank one. In the $4\times4$ model the block is the traceless part of $\operatorname{mat}_4(\tilde P)\operatorname{mat}_4(\tilde Q)^{\dagger}$, with trace zero and determinant $N(\tilde V)^2$, and rank four, two or zero on the same three cases; the form is the Hilbert–Schmidt pairing, $\tfrac12\operatorname{Tr}$ in the $2\times2$ model and $\tfrac14\operatorname{Tr}$ in the regular one, and the unique invariant form is the scalar-slot form $X_0\overline{Y_0}=\tfrac14\operatorname{Tr}\Phi(\tilde X)\overline{\operatorname{Tr}\Phi(\tilde Y)}$, degenerate on every value. The two-sided antisymmetrised operator $\tfrac12\bigl(\operatorname{mat}_4(\tilde P)\operatorname{mat}_4^{R}(\tilde Q^{*})-\operatorname{mat}_4(\tilde Q)\operatorname{mat}_4^{R}(\tilde P^{*})\bigr)$ is a different object: it is alternating, with trace $4i\,\mathrm{Im}(P_0\overline{Q_0})$ and generic rank four.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\Phi$ | the $2\times2$ realization, $\Phi(e_0)=I$, $\Phi(e_k)=-i\sigma_k$, $\Phi(\tilde Q^{*})=\Phi(\tilde Q)^{\dagger}$ |
-| $\rho_L$ | the left regular representation, $\rho_L(\tilde Q^*)=\rho_L(\tilde Q)^{\dagger}$, $\operatorname{Tr}\rho_L(\tilde Q)=4Q_0$ |
+| $\operatorname{mat}_4$ | the left regular representation, $\operatorname{mat}_4(\tilde Q^*)=\operatorname{mat}_4(\tilde Q)^{\dagger}$, $\operatorname{Tr}\operatorname{mat}_4(\tilde Q)=4Q_0$ |
 | $\operatorname{adj}$ | the adjoint matrix, the model of the natural conjugation, $\Phi(\tilde Q^{\natural})=\operatorname{adj}\Phi(\tilde Q)$ |
 | $\Phi(\tilde P\diamond\tilde Q)=M-\tfrac12\operatorname{Tr}(M)I$ | the block in the $2\times2$ model, the traceless part |
-| $\rho_L(\tilde P\diamond\tilde Q)=M-\tfrac14\operatorname{Tr}(M)I$ | the block in the regular model, the traceless part |
+| $\operatorname{mat}_4(\tilde P\diamond\tilde Q)=M-\tfrac14\operatorname{Tr}(M)I$ | the block in the regular model, the traceless part |
 | $N(\tilde X)=\sum_\mu X_\mu^2$ | the complex bilinear norm, the determinant of the matrix |
 | $\operatorname{Tr}=0$, rank $2/1/0$ | the invariants of the $2\times2$ value |
 | $\operatorname{Tr}=0$, rank $4/2/0$ | the invariants of the $4\times4$ value |
-| $H=\tfrac12\operatorname{Tr}\Phi(\cdot)\Phi(\cdot)^{\dagger}=\tfrac14\operatorname{Tr}\rho_L(\cdot)\rho_L(\cdot)^{\dagger}$ | the form as the Hilbert–Schmidt pairing |
+| $H=\tfrac12\operatorname{Tr}\Phi(\cdot)\Phi(\cdot)^{\dagger}=\tfrac14\operatorname{Tr}\operatorname{mat}_4(\cdot)\operatorname{mat}_4(\cdot)^{\dagger}$ | the form as the Hilbert–Schmidt pairing |
 | $X_0\overline{Y_0}$ | the unique invariant form, degenerate |
-| $\tfrac12\bigl(\rho_L(\tilde P)\rho_R(\tilde Q^{*})-\rho_L(\tilde Q)\rho_R(\tilde P^{*})\bigr)$ | the two-sided antisymmetrised operator, alternating, trace $4i\,\mathrm{Im}(P_0\overline{Q_0})$ |
+| $\tfrac12\bigl(\operatorname{mat}_4(\tilde P)\operatorname{mat}_4^{R}(\tilde Q^{*})-\operatorname{mat}_4(\tilde Q)\operatorname{mat}_4^{R}(\tilde P^{*})\bigr)$ | the two-sided antisymmetrised operator, alternating, trace $4i\,\mathrm{Im}(P_0\overline{Q_0})$ |
 
 ## Further Reading
 

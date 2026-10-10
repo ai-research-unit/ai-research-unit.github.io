@@ -6,7 +6,7 @@ The symmetric quaternionic multiplication is the central-valued operation
 $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$ (*Introduction to the Symmetric Quaternionic Algebra of
 Biquaternions*). This article reads the operation in the two matrix models of the algebra: the **$2\times2$
 model** $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of *Introduction to the 2×2 Matrix Representation of
-Biquaternions*, and the **$4\times4$ regular model** $\rho_L$ of *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*. In each, the product of two elements becomes the symmetrisation of a matrix product, the
+Biquaternions*, and the **$4\times4$ regular model** $\operatorname{mat}_4$ of *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*. In each, the product of two elements becomes the symmetrisation of a matrix product, the
 matrix of the quaternion conjugation acts on it, and the value is a scalar matrix whose coefficient is the
 quaternion form $B$; the article records the trace and the rank of the resulting endomorphism and the matrix
 form of the form.
@@ -22,7 +22,7 @@ the enriched layer is used.
 **Conventions.** The product is $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$ with
 $B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$; the realisation is $\Phi$, an algebra isomorphism with
 $\Phi(e_0)=I_2$, and the adjugate of a matrix is written $\operatorname{adj}$; the left-regular
-representation is $\rho_L(\tilde P)\tilde Q=\tilde P\tilde Q$, with $\rho_L(\tilde P^\natural)=\rho_L(\tilde P)^{\mathsf T}$
+representation is $\operatorname{mat}_4(\tilde P)\tilde Q=\tilde P\tilde Q$, with $\operatorname{mat}_4(\tilde P^\natural)=\operatorname{mat}_4(\tilde P)^{\mathsf T}$
 in the basis.
 
 ## The 2×2 Model
@@ -84,46 +84,46 @@ with $c\ne0$).
 ## The 4×4 Regular Model
 
 **Proposition (the symmetrisation of the left multiplications).** In the basis $e_0,e_1,e_2,e_3$ the
-left-regular representation satisfies $\rho_L(\tilde P^\natural)=\rho_L(\tilde P)^{\mathsf T}$, and for all
+left-regular representation satisfies $\operatorname{mat}_4(\tilde P^\natural)=\operatorname{mat}_4(\tilde P)^{\mathsf T}$, and for all
 $\tilde P,\tilde Q$,
 
 $$
-\tfrac12\Bigl(\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)
-+ \rho_L(\tilde Q)^{\mathsf T}\rho_L(\tilde P)\Bigr)
-= \rho_L\bigl(\tilde P\star\tilde Q\bigr) = B(\tilde P,\tilde Q)\,I_4 .
+\tfrac12\Bigl(\operatorname{mat}_4(\tilde P)^{\mathsf T}\operatorname{mat}_4(\tilde Q)
++ \operatorname{mat}_4(\tilde Q)^{\mathsf T}\operatorname{mat}_4(\tilde P)\Bigr)
+= \operatorname{mat}_4\bigl(\tilde P\star\tilde Q\bigr) = B(\tilde P,\tilde Q)\,I_4 .
 $$
 
 *Proof.* The left-regular representation is multiplicative, so
-$\rho_L(\tilde P^{\natural}\tilde Q)=\rho_L(\tilde P^\natural)\rho_L(\tilde Q)=\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)$; the half-sum is $\rho_L$ of the product, and the value is
+$\operatorname{mat}_4(\tilde P^{\natural}\tilde Q)=\operatorname{mat}_4(\tilde P^\natural)\operatorname{mat}_4(\tilde Q)=\operatorname{mat}_4(\tilde P)^{\mathsf T}\operatorname{mat}_4(\tilde Q)$; the half-sum is $\operatorname{mat}_4$ of the product, and the value is
 central, so the matrix is the scalar matrix $B(\tilde P,\tilde Q)I_4$. The transpose identity is read on the
-basis: for $\tilde P=e_1$ the matrix $\rho_L(e_1)$ and its transpose are opposite, $\rho_L(e_1)^{\mathsf T}=-\rho_L(e_1)=\rho_L(e_1^\natural)$,
+basis: for $\tilde P=e_1$ the matrix $\operatorname{mat}_4(e_1)$ and its transpose are opposite, $\operatorname{mat}_4(e_1)^{\mathsf T}=-\operatorname{mat}_4(e_1)=\operatorname{mat}_4(e_1^\natural)$,
 and the general case follows by linearity. $\square$
 
-**Corollary (the regular endomorphism).** Fix $\tilde A$ and let $A=\rho_L(\tilde A)$. On the image of the
-regular representation — the matrices $\rho_L(\tilde Q)$ — the map is the transport of the multiplication
+**Corollary (the regular endomorphism).** Fix $\tilde A$ and let $A=\operatorname{mat}_4(\tilde A)$. On the image of the
+regular representation — the matrices $\operatorname{mat}_4(\tilde Q)$ — the map is the transport of the multiplication
 $L^{\star}_{\tilde A}$:
 
 $$
-X=\rho_L(\tilde Q)\quad\Longrightarrow\quad
+X=\operatorname{mat}_4(\tilde Q)\quad\Longrightarrow\quad
 \tfrac12\bigl(A^{\mathsf T}X+X^{\mathsf T}A\bigr)
-= \rho_L\bigl(\tilde A\star\tilde Q\bigr) = B(\tilde A,\tilde Q)\,I_4 ,
+= \operatorname{mat}_4\bigl(\tilde A\star\tilde Q\bigr) = B(\tilde A,\tilde Q)\,I_4 ,
 $$
 
-because $X^{\mathsf T}=\rho_L(\tilde Q)^\natural$ on the image of $\rho_L$ by the transpose identity above. On
+because $X^{\mathsf T}=\operatorname{mat}_4(\tilde Q)^\natural$ on the image of $\operatorname{mat}_4$ by the transpose identity above. On
 that four-dimensional space the map has image the line $\mathbb{C}I_4$ of the scalar matrices, rank $1$ for
 $\tilde A\ne0$ and trace $\tilde A_0$. The same formula read on the whole of $M_4(\mathbb{C})$ is a larger map:
 there $X^{\mathsf T}$ is not the conjugation of an element of $\mathbb{B}$, the image leaves the scalar
 matrices, and the rank is larger than one (it is $5$ for $\tilde A=e_1$ and $7$ for a generic $\tilde A$). The
 two models differ here because the $2\times2$ realisation is onto $M_2(\mathbb{C})$ — there "all matrices" and
-"the image of the realisation" are the same set — while $\rho_L(\mathbb{B})$ is a four-dimensional subspace of
+"the image of the realisation" are the same set — while $\operatorname{mat}_4(\mathbb{B})$ is a four-dimensional subspace of
 the sixteen-dimensional $M_4(\mathbb{C})$. The rank-one statement is a statement about the transport of the
 multiplication, not about the formula on arbitrary matrices.
 
-*Proof.* For $X=\rho_L(\tilde Q)$ one has $A^{\mathsf T}X=\rho_L(\tilde A^\natural)\rho_L(\tilde Q)=\rho_L(\tilde A^\natural\tilde Q)$
-and $X^{\mathsf T}A=\rho_L(\tilde Q^\natural)\rho_L(\tilde A)=\rho_L(\tilde Q^\natural\tilde A)$, so the
-half-sum is $\rho_L(\tilde A\star\tilde Q)=B(\tilde A,\tilde Q)I_4$. The rank is $1$ because the image is a
-nonzero line for $\tilde A\ne0$ (the image of $X=\rho_L(e_\mu)$ is $\tilde A_\mu I_4$) and the trace on the
-image of $\rho_L$ is the coefficient of $\rho_L(e_0)$, namely $B(\tilde A,e_0)=\tilde A_0$. On the whole of
+*Proof.* For $X=\operatorname{mat}_4(\tilde Q)$ one has $A^{\mathsf T}X=\operatorname{mat}_4(\tilde A^\natural)\operatorname{mat}_4(\tilde Q)=\operatorname{mat}_4(\tilde A^\natural\tilde Q)$
+and $X^{\mathsf T}A=\operatorname{mat}_4(\tilde Q^\natural)\operatorname{mat}_4(\tilde A)=\operatorname{mat}_4(\tilde Q^\natural\tilde A)$, so the
+half-sum is $\operatorname{mat}_4(\tilde A\star\tilde Q)=B(\tilde A,\tilde Q)I_4$. The rank is $1$ because the image is a
+nonzero line for $\tilde A\ne0$ (the image of $X=\operatorname{mat}_4(e_\mu)$ is $\tilde A_\mu I_4$) and the trace on the
+image of $\operatorname{mat}_4$ is the coefficient of $\operatorname{mat}_4(e_0)$, namely $B(\tilde A,e_0)=\tilde A_0$. On the whole of
 $M_4(\mathbb{C})$ the map is larger: on the sixteen matrix units its rank is $5$ for $\tilde A=e_1$ and $7$ for
 a generic $\tilde A$, so the rank-one statement must not be read on arbitrary matrices. $\square$
 
@@ -132,7 +132,7 @@ models: in the $2\times2$ model the conjugation is the adjugate, in the $4\times
 and in both the symmetrised product of two matrices is the scalar matrix whose scalar is the quaternion form.
 The regular model exhibits the reason more plainly: the four-dimensional regular representation is faithful,
 and the transpose of a left multiplication is the left multiplication by the conjugate, which is the identity
-$\rho_L(\tilde P^\natural)=\rho_L(\tilde P)^{\mathsf T}$ that makes the symmetrisation central.
+$\operatorname{mat}_4(\tilde P^\natural)=\operatorname{mat}_4(\tilde P)^{\mathsf T}$ that makes the symmetrisation central.
 
 ## The Matrix Form of the Form
 
@@ -140,11 +140,11 @@ $\rho_L(\tilde P^\natural)=\rho_L(\tilde P)^{\mathsf T}$ that makes the symmetri
 
 $$
 B(\tilde P,\tilde Q) = \tfrac12\operatorname{Tr}\Bigl(\operatorname{adj}\bigl(\Phi(\tilde P)\bigr)\Phi(\tilde Q)\Bigr)
-= \tfrac14\operatorname{Tr}\Bigl(\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)\Bigr).
+= \tfrac14\operatorname{Tr}\Bigl(\operatorname{mat}_4(\tilde P)^{\mathsf T}\operatorname{mat}_4(\tilde Q)\Bigr).
 $$
 
 *Proof.* The first identity is the trace of the product $\operatorname{adj}(\Phi(\tilde P))\Phi(\tilde Q)=\Phi(\tilde P^{\natural}\tilde Q)$, whose trace is $2B(\tilde P,\tilde Q)$; the second is the trace of
-$\rho_L(\tilde P^{\natural}\tilde Q)$, whose trace is $4\operatorname{Sc}(\tilde P^{\natural}\tilde Q)=4B(\tilde P,\tilde Q)$.
+$\operatorname{mat}_4(\tilde P^{\natural}\tilde Q)$, whose trace is $4\operatorname{Sc}(\tilde P^{\natural}\tilde Q)=4B(\tilde P,\tilde Q)$.
 $\square$
 
 **Proposition (the isotropic cone and the Gram matrix).** An element is isotropic, $N(\tilde Q)=0$, exactly
@@ -152,7 +152,7 @@ when its image is singular in either model:
 
 $$
 N(\tilde Q)=0 \quad\Longleftrightarrow\quad \det\Phi(\tilde Q)=0
-\quad\Longleftrightarrow\quad \det\rho_L(\tilde Q)=0 ,
+\quad\Longleftrightarrow\quad \det\operatorname{mat}_4(\tilde Q)=0 ,
 $$
 
 the two determinants being $N(\tilde Q)$ and $N(\tilde Q)^2$. The Gram matrix of $B$ in the basis is $I_4$,
@@ -160,7 +160,7 @@ and the form in the $2\times2$ model is the trace pairing
 $\operatorname{Tr}(\operatorname{adj}(\Phi(\tilde P))\Phi(\tilde Q))$, equal to $2B(\tilde P,\tilde Q)$.
 
 *Proof.* $\det\Phi(\tilde Q)=N(\tilde Q)$ is the trace-and-determinant theorem of *Introduction to the 2×2
-Matrix Representation of Biquaternions*, and $\det\rho_L(\tilde Q)=N(\tilde Q)^2$ is the determinant of the
+Matrix Representation of Biquaternions*, and $\det\operatorname{mat}_4(\tilde Q)=N(\tilde Q)^2$ is the determinant of the
 left regular representation (*Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*); the two vanish together with $N$. The Gram matrix is the table of
 *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*. $\square$
 
@@ -203,9 +203,9 @@ $\tfrac12(\operatorname{adj}(\Phi(\tilde P))\Phi(\tilde Q)+\operatorname{adj}(\P
 the adjugate being the matrix of the quaternion conjugation, and the trace of the value is $2B(\tilde P,\tilde Q)$;
 the resulting endomorphism of $M_2(\mathbb{C})$ has image the scalar matrices, rank $1$ and trace
 $\tilde P_0$. In the $4\times4$ regular model the same identity reads
-$\tfrac12(\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)+\rho_L(\tilde Q)^{\mathsf T}\rho_L(\tilde P))=B(\tilde P,\tilde Q)I_4$,
+$\tfrac12(\operatorname{mat}_4(\tilde P)^{\mathsf T}\operatorname{mat}_4(\tilde Q)+\operatorname{mat}_4(\tilde Q)^{\mathsf T}\operatorname{mat}_4(\tilde P))=B(\tilde P,\tilde Q)I_4$,
 the transpose being the matrix of the conjugation, and the transport of the multiplication on the image of
-$\rho_L$, $X=\rho_L(\tilde Q)\mapsto\tfrac12(\rho_L(\tilde P)^{\mathsf T}X+X^{\mathsf T}\rho_L(\tilde P))$, has
+$\operatorname{mat}_4$, $X=\operatorname{mat}_4(\tilde Q)\mapsto\tfrac12(\operatorname{mat}_4(\tilde P)^{\mathsf T}X+X^{\mathsf T}\operatorname{mat}_4(\tilde P))$, has
 image the scalar matrices, rank $1$ and trace $\tilde P_0$. The form is half the trace in the $2\times2$ model and a quarter of the trace in the $4\times4$
 model; the isotropic elements are exactly the singular matrices, the determinants of the two models being
 $N(\tilde Q)$ and $N(\tilde Q)^2$; the Gram matrix in the basis is $I_4$; and the definite rows and the two
@@ -217,12 +217,12 @@ Hermitian subspaces are read through the subspace conditions of the two represen
 |---|---|
 | $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ | the $2\times2$ realisation, $\Phi(e_0)=I_2$, $\det\Phi(\tilde Q)=N(\tilde Q)$ |
 | $\operatorname{adj}$ | the adjugate, the matrix of the quaternion conjugation in the $2\times2$ model |
-| $\rho_L(\tilde P^\natural)=\rho_L(\tilde P)^{\mathsf T}$ | the conjugation as the transpose in the regular model |
+| $\operatorname{mat}_4(\tilde P^\natural)=\operatorname{mat}_4(\tilde P)^{\mathsf T}$ | the conjugation as the transpose in the regular model |
 | $\Phi(\tilde P\star\tilde Q)=\tfrac12(\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)+\operatorname{adj}\Phi(\tilde Q)\Phi(\tilde P))=B(\tilde P,\tilde Q)I_2$ | the product in the $2\times2$ model |
-| $\tfrac12(\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)+\rho_L(\tilde Q)^{\mathsf T}\rho_L(\tilde P))=B(\tilde P,\tilde Q)I_4$ | the product in the $4\times4$ regular model |
+| $\tfrac12(\operatorname{mat}_4(\tilde P)^{\mathsf T}\operatorname{mat}_4(\tilde Q)+\operatorname{mat}_4(\tilde Q)^{\mathsf T}\operatorname{mat}_4(\tilde P))=B(\tilde P,\tilde Q)I_4$ | the product in the $4\times4$ regular model |
 | $\operatorname{Tr}\Phi(\tilde P\star\tilde Q)=2B(\tilde P,\tilde Q)$ | the trace of the value |
-| $B=\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde P)\,\Phi(\tilde Q))=\tfrac14\operatorname{Tr}(\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q))$ | the form in the two models |
-| $N(\tilde Q)=0\Longleftrightarrow\det\Phi(\tilde Q)=0\Longleftrightarrow\det\rho_L(\tilde Q)=0$ | the isotropic cone as the singular matrices |
+| $B=\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde P)\,\Phi(\tilde Q))=\tfrac14\operatorname{Tr}(\operatorname{mat}_4(\tilde P)^{\mathsf T}\operatorname{mat}_4(\tilde Q))$ | the form in the two models |
+| $N(\tilde Q)=0\Longleftrightarrow\det\Phi(\tilde Q)=0\Longleftrightarrow\det\operatorname{mat}_4(\tilde Q)=0$ | the isotropic cone as the singular matrices |
 
 ## Further Reading
 

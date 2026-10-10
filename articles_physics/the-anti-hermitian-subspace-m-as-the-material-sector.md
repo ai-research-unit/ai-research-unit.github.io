@@ -216,7 +216,7 @@ $$
 \tilde{Q}^2 = -\left((q'_0)^2 + |\mathbf{q}|^2\right)e_0 + 2iq'_0\mathbf{q},
 $$
 
-with a real scalar part and an imaginary vector part. The product of two elements of $\mathbb{M}_-$ lands in $\mathbb{M}_+$ exactly in the commuting case, so the bracket $2\,\mathbf{q}\times\mathbf{r}$ is the exact obstruction: it vanishes precisely when $\mathbf{q}$ and $\mathbf{r}$ are parallel, which is the condition for the product $\tilde{Q}\tilde{Y}$ to stay Hermitian. This alternation is one case of the general rule of the algebra — on two elements of one sector the commutator lands in $\mathbb{M}_-$ and the anticommutator in $\mathbb{M}_+$, and on two elements of different sectors the two are exchanged — and is tabulated in the companion article *The Hermitian Subspace M+ as the Informational Sector*, §*The Bracket Table of the Two Sectors*.
+with a real scalar part and an imaginary vector part. The product of two elements of $\mathbb{M}_-$ lands in $\mathbb{M}_+$ exactly in the commuting case, so the bracket $2\,\mathbf{q}\times\mathbf{r}$ is the exact obstruction: it vanishes precisely when $\mathbf{q}$ and $\mathbf{r}$ are parallel, which is the condition for the product $\tilde{Q}\tilde{Y}$ to stay Hermitian. This alternation is one case of the general rule of the algebra — on two elements of one sector the commutator lands in $\mathbb{M}_-$ and the anticommutator in $\mathbb{M}_+$, and on two elements of different sectors the two are exchanged — and is tabulated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, §*The Bracket Table of the Two Sectors*.
 
 ### The Four Forms on the Sector, and the Absence of an Area Pairing
 
@@ -338,6 +338,6 @@ With the commutator, $\mathbb{M}_-$ is also a Lie algebra: the bracket is twice 
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric algebra formulation of special relativity.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the original formulation of spacetime algebra.
 - *Conventions in the Biquaternion Universe* and *Relations Between Subspaces*, the companion articles, for the notation and for the place of $\mathbb{M}_-$ among the six subspaces.
-- Within the corpus, the Lie-algebra structure of the sector is developed in *The 12 Products of the Biquaternion Complex Space* and *The Unitary Lie Algebra*, the symmetrised product in the same article, and the product rule of the six subspaces in *The Six Subspaces and the Four General Products*; the informational partner is *The Hermitian Subspace M+ as the Informational Sector*.
+- Within the corpus, the Lie-algebra structure of the sector is developed in *The 12 Products of the Biquaternion Complex Space* and *The Unitary Lie Algebra*, the symmetrised product in the same article, and the product rule of the six subspaces in *The Six Subspaces and the Four General Products*; the informational partner is *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
 - The four forms read on the sector — their reality, the collapse into pairs up to sign and the vanishing of the alternating companion — are *The Six Subspaces and the Four Forms*; the two sectors on which the alternating companion is instead non-degenerate are *The Four Other Remarkable Subspaces*.
 

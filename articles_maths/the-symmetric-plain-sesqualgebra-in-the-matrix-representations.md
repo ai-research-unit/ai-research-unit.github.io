@@ -8,7 +8,7 @@ The result that organises the article is that the block is a **scalar matrix** i
 
 **Boundaries.** The two models, the realization $\Phi$, the left regular representation, the Hilbert and Schmidt pairing and the tables of the models are *The General Plain Sesqualgebra in the $2\times2$ Matrix Representation* and *The General Plain Sesqualgebra in the $4\times4$ Matrix Representation*; they are cited here and not restated, and this article owns only the image of the block in them. The form $H$ is *Biquaternion Norm and Invertibility* and *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra*; the multiplication operators as abstract operators are *The Multiplication Operators of the Symmetric Plain Sesqualgebra*. Nothing topological and nothing metric appears; positivity is stated as the positivity of the diagonal of $H$ and no norm of positive real values is named.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$. The realization is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $\Phi(e_0) = I$, $\Phi(e_k) = -i\sigma_k$, so that $\Phi$ is multiplicative, $\Phi(\tilde Q^{\natural}) = \operatorname{adj}\Phi(\tilde Q)$, $\Phi(\tilde Q^{*}) = \Phi(\tilde Q)^{\dagger}$ and $\operatorname{Tr}\Phi(\tilde Q) = 2Q_0$ (*The General Plain Sesqualgebra in the $2\times2$ Matrix Representation*). The left regular representation is $\rho_L(\tilde P)$, the matrix of $\tilde X\mapsto\tilde P\tilde X$ in the basis, with $\rho_L(e_0) = I_4$. The block is $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$. The realization is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $\Phi(e_0) = I$, $\Phi(e_k) = -i\sigma_k$, so that $\Phi$ is multiplicative, $\Phi(\tilde Q^{\natural}) = \operatorname{adj}\Phi(\tilde Q)$, $\Phi(\tilde Q^{*}) = \Phi(\tilde Q)^{\dagger}$ and $\operatorname{Tr}\Phi(\tilde Q) = 2Q_0$ (*The General Plain Sesqualgebra in the $2\times2$ Matrix Representation*). The left regular representation is $\operatorname{mat}_4(\tilde P)$, the matrix of $\tilde X\mapsto\tilde P\tilde X$ in the basis, with $\operatorname{mat}_4(e_0) = I_4$. The block is $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$.
 
 ## The Block in the $2\times2$ Realization
 
@@ -49,12 +49,12 @@ so the form is the Hilbert and Schmidt pairing of the matrices, positive definit
 **Theorem (the value is a scalar matrix).** For all $\tilde P,\tilde Q$,
 
 $$
-\rho_L(\tilde P\star\tilde Q) = H(\tilde P,\tilde Q)\,I_4 ,
+\operatorname{mat}_4(\tilde P\star\tilde Q) = H(\tilde P,\tilde Q)\,I_4 ,
 $$
 
 of trace $4H(\tilde P,\tilde Q)$ and rank $4$ when $H\neq0$, and zero when $H = 0$.
 
-*Proof.* $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ and $\rho_L$ is multiplicative with $\rho_L(e_0) = I_4$; so the regular matrix of the value is the scalar matrix $H I_4$. The identity was recomputed to $2.2\times10^{-16}$. $\square$
+*Proof.* $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ and $\operatorname{mat}_4$ is multiplicative with $\operatorname{mat}_4(e_0) = I_4$; so the regular matrix of the value is the scalar matrix $H I_4$. The identity was recomputed to $2.2\times10^{-16}$. $\square$
 
 **Proposition (the multiplication operators in the regular model).** The two multiplication operators of the block are rank-one row matrices, in the conjugate-linear convention for the left family:
 
@@ -69,7 +69,7 @@ where $E_{0j}$ is the matrix unit with the single non-zero entry $1$ in row $0$,
 **Remark (the two-sided symmetrised operator).** The regular model also carries the **two-sided** symmetrisation
 
 $$
-\tfrac12\bigl(\rho_L(\tilde P)\rho_R(\tilde Q^{*}) + \rho_L(\tilde Q)\rho_R(\tilde P^{*})\bigr) ,
+\tfrac12\bigl(\operatorname{mat}_4(\tilde P)\operatorname{mat}_4^{R}(\tilde Q^{*}) + \operatorname{mat}_4(\tilde Q)\operatorname{mat}_4^{R}(\tilde P^{*})\bigr) ,
 $$
 
 the matrix of the map $\tilde X\mapsto\tfrac12\bigl(\tilde P\tilde X\tilde Q^{*} + \tilde Q\tilde X\tilde P^{*}\bigr)$ on the module; for generic parameters its rank is $4$, and it is not the scalar matrix $H I_4$. The distinction is the one between a two-sided action on the module and the one-sided value of a central product: the block's *element* is the scalar matrix $H I_4$, and a two-sided action of its two factors is the operator above.
@@ -79,12 +79,12 @@ the matrix of the map $\tilde X\mapsto\tfrac12\bigl(\tilde P\tilde X\tilde Q^{*}
 **Theorem (the value is invariant under the adjoint operation and under the change of model).** For all $\tilde P,\tilde Q$,
 
 $$
-\Phi(\tilde P\star\tilde Q)^{\dagger} = \Phi(\tilde Q\star\tilde P) , \qquad \rho_L(\tilde P\star\tilde Q) = \overline{\rho_L(\tilde Q\star\tilde P)} ,
+\Phi(\tilde P\star\tilde Q)^{\dagger} = \Phi(\tilde Q\star\tilde P) , \qquad \operatorname{mat}_4(\tilde P\star\tilde Q) = \overline{\operatorname{mat}_4(\tilde Q\star\tilde P)} ,
 $$
 
 and the scalar matrix $\Phi(\tilde P\star\tilde Q) = HI_2$ is fixed by conjugation by every invertible matrix of the model; a scalar matrix has no preferred basis, and the symmetric part of the block is therefore invariant under the choice of coordinates in the model.
 
-*Proof.* $\Phi(\tilde P\star\tilde Q)^{\dagger} = \overline{H}I_2 = \Phi(\tilde Q\star\tilde P)$ because $H(\tilde Q,\tilde P) = \overline{H(\tilde P,\tilde Q)}$; likewise $\rho_L(\tilde P\star\tilde Q) = HI_4 = \overline{\overline{H}I_4} = \overline{\rho_L(\tilde Q\star\tilde P)}$; and $U(HI_2)U^{-1} = HI_2$ for every invertible $U$. $\square$
+*Proof.* $\Phi(\tilde P\star\tilde Q)^{\dagger} = \overline{H}I_2 = \Phi(\tilde Q\star\tilde P)$ because $H(\tilde Q,\tilde P) = \overline{H(\tilde P,\tilde Q)}$; likewise $\operatorname{mat}_4(\tilde P\star\tilde Q) = HI_4 = \overline{\overline{H}I_4} = \overline{\operatorname{mat}_4(\tilde Q\star\tilde P)}$; and $U(HI_2)U^{-1} = HI_2$ for every invertible $U$. $\square$
 
 **Remark (the invariance in the two models at once).** The same scalar matrix is the image of the block in each model, so the block is a **central** element of the model algebra $M_2(\mathbb{C})$ and of $M_4(\mathbb{C})$: its image lies in the centre, which is the scalars, in both. The invariance of the symmetric part is the statement that the image is central, and it is the model form of the central image of the product.
 
@@ -108,7 +108,7 @@ and the scalar matrix $\Phi(\tilde P\star\tilde Q) = HI_2$ is fixed by conjugati
 
 ## Summary
 
-In the $2\times2$ realization the block is the scalar matrix $\Phi(\tilde P\star\tilde Q) = H(\tilde P,\tilde Q)I_2$, obtained as the symmetrisation $\tfrac12\bigl(\Phi(\tilde P)\Phi(\tilde Q)^{\dagger} + \operatorname{adj}(\Phi(\tilde P)\Phi(\tilde Q)^{\dagger})\bigr)$ of the general plain sesquilinear product with the adjugate — the half-sum being the trace-halving $\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}\bigr)I_2$ by the $2\times2$ identity $M + \operatorname{adj}M = (\operatorname{Tr}M)I$ — and identified with the Hermitian form through the trace identity $\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}\bigr) = H(\tilde P,\tilde Q)$. Its trace is $2H$, its determinant $H^{2}$ and its rank $2$ as a matrix ($1$ as a central coordinate); the Hermitian conjugation is the conjugate transpose and the natural conjugation is the adjugate, and the pairing of the two involutions is what makes the value central. In the $4\times4$ regular representation the block is the scalar matrix $\rho_L(\tilde P\star\tilde Q) = H(\tilde P,\tilde Q)I_4$, of trace $4H$ and rank $4$; the multiplication operators are the rank-one row matrices $\sum_j R_jE_{0j}$ and $\sum_j\overline{R_j}E_{0j}$; and the two-sided symmetrised operator $\tfrac12(\rho_L(\tilde P)\rho_R(\tilde Q^{*}) + \rho_L(\tilde Q)\rho_R(\tilde P^{*}))$ is generically of rank $4$ and is then distinct from the value. The block is **central** in both model algebras, so its image in each is a scalar matrix, invariant under the change of coordinates; the form $H$ is the Hilbert and Schmidt pairing in the $2\times2$ model and its positive definite diagonal is $\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde Q)^{\dagger}\Phi(\tilde Q)\bigr) = \sum_\mu\lvert Q_\mu\rvert^{2}$. The scalar matrix is the model form of the central image of the product, and the difference from the symmetric plain block is the involution layer of the symmetrisation.
+In the $2\times2$ realization the block is the scalar matrix $\Phi(\tilde P\star\tilde Q) = H(\tilde P,\tilde Q)I_2$, obtained as the symmetrisation $\tfrac12\bigl(\Phi(\tilde P)\Phi(\tilde Q)^{\dagger} + \operatorname{adj}(\Phi(\tilde P)\Phi(\tilde Q)^{\dagger})\bigr)$ of the general plain sesquilinear product with the adjugate — the half-sum being the trace-halving $\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}\bigr)I_2$ by the $2\times2$ identity $M + \operatorname{adj}M = (\operatorname{Tr}M)I$ — and identified with the Hermitian form through the trace identity $\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}\bigr) = H(\tilde P,\tilde Q)$. Its trace is $2H$, its determinant $H^{2}$ and its rank $2$ as a matrix ($1$ as a central coordinate); the Hermitian conjugation is the conjugate transpose and the natural conjugation is the adjugate, and the pairing of the two involutions is what makes the value central. In the $4\times4$ regular representation the block is the scalar matrix $\operatorname{mat}_4(\tilde P\star\tilde Q) = H(\tilde P,\tilde Q)I_4$, of trace $4H$ and rank $4$; the multiplication operators are the rank-one row matrices $\sum_j R_jE_{0j}$ and $\sum_j\overline{R_j}E_{0j}$; and the two-sided symmetrised operator $\tfrac12(\operatorname{mat}_4(\tilde P)\operatorname{mat}_4^{R}(\tilde Q^{*}) + \operatorname{mat}_4(\tilde Q)\operatorname{mat}_4^{R}(\tilde P^{*}))$ is generically of rank $4$ and is then distinct from the value. The block is **central** in both model algebras, so its image in each is a scalar matrix, invariant under the change of coordinates; the form $H$ is the Hilbert and Schmidt pairing in the $2\times2$ model and its positive definite diagonal is $\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde Q)^{\dagger}\Phi(\tilde Q)\bigr) = \sum_\mu\lvert Q_\mu\rvert^{2}$. The scalar matrix is the model form of the central image of the product, and the difference from the symmetric plain block is the involution layer of the symmetrisation.
 
 ## Summary of Notation
 
@@ -119,9 +119,9 @@ In the $2\times2$ realization the block is the scalar matrix $\Phi(\tilde P\star
 | $\Phi(\tilde P\star\tilde Q) = H(\tilde P,\tilde Q)I_2$ | the block in the $2\times2$ model |
 | $\tfrac12\bigl(XY^{\dagger} + \operatorname{adj}(XY^{\dagger})\bigr) = \tfrac12\operatorname{Tr}(XY^{\dagger})I_2$ | the symmetrisation is the trace-halving |
 | $\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}\bigr) = H(\tilde P,\tilde Q)$ | the trace identity |
-| $\rho_L(\tilde P\star\tilde Q) = H(\tilde P,\tilde Q)I_4$ | the block in the $4\times4$ regular model |
+| $\operatorname{mat}_4(\tilde P\star\tilde Q) = H(\tilde P,\tilde Q)I_4$ | the block in the $4\times4$ regular model |
 | $\sum_j R_jE_{0j}$, $\sum_j\overline{R_j}E_{0j}$ | the regular matrices of $L^{\star}_{\tilde R}$, $R^{\star}_{\tilde R}$; rank one |
-| $\tfrac12(\rho_L(\tilde P)\rho_R(\tilde Q^{*}) + \rho_L(\tilde Q)\rho_R(\tilde P^{*}))$ | the two-sided symmetrised operator; generically rank four, not $HI_4$ |
+| $\tfrac12(\operatorname{mat}_4(\tilde P)\operatorname{mat}_4^{R}(\tilde Q^{*}) + \operatorname{mat}_4(\tilde Q)\operatorname{mat}_4^{R}(\tilde P^{*}))$ | the two-sided symmetrised operator; generically rank four, not $HI_4$ |
 | $HI_2$, $HI_4$ central | the invariance of the symmetric part |
 
 ## Further Reading

@@ -16,15 +16,15 @@ and $\operatorname{adj}\Phi(\tilde P)=\Phi(\tilde P^{\natural})$ is the matrix o
 
 *Proof.* The isomorphism satisfies $\Phi(\tilde P\tilde Q)=\Phi(\tilde P)\Phi(\tilde Q)$ for the plain product and $\Phi(\tilde P^{\natural})=\operatorname{adj}\Phi(\tilde P)$, which is *The General Quaternionic Algebra in the $2\times2$ Matrix Representation*; the $\natural$-product of the parent row is $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, of matrix $\Phi(\tilde P\star\tilde Q)=\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)$, and the operation is half the difference of that product with its arguments exchanged. $\square$
 
-**Theorem (the operation in the $4\times4$ model).** Let $\rho_L$ be the left regular representation, the matrix of the plain multiplication by the element. Then
+**Theorem (the operation in the $4\times4$ model).** Let $\operatorname{mat}_4$ be the left regular representation, the matrix of the plain multiplication by the element. Then
 
 $$
-\rho_L(\tilde P\diamond\tilde Q) = \tfrac12\Bigl(\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)-\rho_L(\tilde Q)^{\mathsf T}\rho_L(\tilde P)\Bigr),
+\operatorname{mat}_4(\tilde P\diamond\tilde Q) = \tfrac12\Bigl(\operatorname{mat}_4(\tilde P)^{\mathsf T}\operatorname{mat}_4(\tilde Q)-\operatorname{mat}_4(\tilde Q)^{\mathsf T}\operatorname{mat}_4(\tilde P)\Bigr),
 $$
 
-and $\rho_L(\tilde P^{\natural})=\rho_L(\tilde P)^{\mathsf T}$ is the matrix of the quaternion conjugation.
+and $\operatorname{mat}_4(\tilde P^{\natural})=\operatorname{mat}_4(\tilde P)^{\mathsf T}$ is the matrix of the quaternion conjugation.
 
-*Proof.* The regular representation is the multiplication action, faithful and multiplicative, and it carries ${}^{\natural}$ to the transpose, which is *The General Quaternionic Algebra in the $4\times4$ Matrix Representation*; the $\natural$-product $\tilde P\star\tilde Q$ has the matrix $\rho_L(\tilde P)^{\mathsf T}\rho_L(\tilde Q)$, and the operation is half the difference of it with its arguments exchanged. $\square$
+*Proof.* The regular representation is the multiplication action, faithful and multiplicative, and it carries ${}^{\natural}$ to the transpose, which is *The General Quaternionic Algebra in the $4\times4$ Matrix Representation*; the $\natural$-product $\tilde P\star\tilde Q$ has the matrix $\operatorname{mat}_4(\tilde P)^{\mathsf T}\operatorname{mat}_4(\tilde Q)$, and the operation is half the difference of it with its arguments exchanged. $\square$
 
 The two theorems are the two readings of one fact: in each model the operation is half the difference of the $\natural$-product with its arguments exchanged, and the matrix of the $\natural$-product is a twisted product in which the first factor is read through the matrix of ${}^{\natural}$, the adjugate in the two-dimensional model and the transpose in the four-dimensional one.
 
@@ -43,11 +43,11 @@ and the cyclic sum of the block at $(e_0,e_1,e_2)$, which is $-e_3$, has the mat
 
 ## The Image and the Kernel on the Matrices
 
-**Proposition (the image).** In the $2\times2$ model the image of the operation is the space of traceless matrices, of complex dimension three, since the trace of the image matrix is twice the scalar part of the value; in the $4\times4$ model the image is the space of matrices of the regular representation of the vector subspace, which is the traceless part of the image of $\rho_L$. In the coefficient model the image is the vector subspace, as before.
+**Proposition (the image).** In the $2\times2$ model the image of the operation is the space of traceless matrices, of complex dimension three, since the trace of the image matrix is twice the scalar part of the value; in the $4\times4$ model the image is the space of matrices of the regular representation of the vector subspace, which is the traceless part of the image of $\operatorname{mat}_4$. In the coefficient model the image is the vector subspace, as before.
 
-*Proof.* $\operatorname{Tr}\Phi(\tilde Q)=2Q_0$ and the value of the operation has zero scalar part, so $\operatorname{Tr}\Phi(\tilde P\diamond\tilde Q)=0$; conversely a traceless matrix is the image of a pure vector, and the pure vectors are exactly the traceless matrices, since the trace reads the scalar part. In the regular model $\operatorname{Tr}\rho_L(\tilde Q)=4Q_0$, so the same argument applies. $\square$
+*Proof.* $\operatorname{Tr}\Phi(\tilde Q)=2Q_0$ and the value of the operation has zero scalar part, so $\operatorname{Tr}\Phi(\tilde P\diamond\tilde Q)=0$; conversely a traceless matrix is the image of a pure vector, and the pure vectors are exactly the traceless matrices, since the trace reads the scalar part. In the regular model $\operatorname{Tr}\operatorname{mat}_4(\tilde Q)=4Q_0$, so the same argument applies. $\square$
 
-**Proposition (the kernel).** In either model the kernel of the left multiplication operator $L_{\tilde A}$ is the image under the model of the kernel in the coefficient space, which for a regular element $N(\tilde A)\neq0$ is the line $\mathbb{C}\tilde A$: the matrices that the operator annihilates are the multiples of $\Phi(\tilde A)$, respectively of $\rho_L(\tilde A)$.
+**Proposition (the kernel).** In either model the kernel of the left multiplication operator $L_{\tilde A}$ is the image under the model of the kernel in the coefficient space, which for a regular element $N(\tilde A)\neq0$ is the line $\mathbb{C}\tilde A$: the matrices that the operator annihilates are the multiples of $\Phi(\tilde A)$, respectively of $\operatorname{mat}_4(\tilde A)$.
 
 *Proof.* The models are isomorphisms of vector spaces that intertwine the operator with its image, so kernels correspond; the kernel in the coefficient space is computed in *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*. $\square$
 
@@ -58,14 +58,14 @@ The image of the block on the matrices is therefore the traceless part, and the 
 **Proposition (the invariants of the operator).** The left multiplication operator of the block, read in either model, has
 
 $$
-\operatorname{Tr}L_{\tilde A} = 3A_0 = \tfrac32\operatorname{Tr}\Phi(\tilde A) = \tfrac34\operatorname{Tr}\rho_L(\tilde A), \qquad
+\operatorname{Tr}L_{\tilde A} = 3A_0 = \tfrac32\operatorname{Tr}\Phi(\tilde A) = \tfrac34\operatorname{Tr}\operatorname{mat}_4(\tilde A), \qquad
 \det L_{\tilde A} = 0, \qquad
 \operatorname{rank}L_{\tilde A} = 3 \iff N(\tilde A)\neq0 ,
 $$
 
 with the rank dropping to $2$ on the isotropic cone and to $0$ only at $\tilde A=0$.
 
-*Proof.* The traces of the two models are $\operatorname{Tr}\Phi(\tilde A)=2A_0$ and $\operatorname{Tr}\rho_L(\tilde A)=4A_0$, which convert the coefficient-space value $3A_0$ computed in *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* into the two model formulae; the determinant and the rank are basis-independent properties of the operator and are carried over by the intertwining isomorphism. $\square$
+*Proof.* The traces of the two models are $\operatorname{Tr}\Phi(\tilde A)=2A_0$ and $\operatorname{Tr}\operatorname{mat}_4(\tilde A)=4A_0$, which convert the coefficient-space value $3A_0$ computed in *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* into the two model formulae; the determinant and the rank are basis-independent properties of the operator and are carried over by the intertwining isomorphism. $\square$
 
 **Proposition (the operator on the matrices).** In the $2\times2$ model the operator acts on a matrix by
 
@@ -73,7 +73,7 @@ $$
 L_{\tilde A}\Phi(\tilde R) = \tfrac12\Bigl(\operatorname{adj}\Phi(\tilde A)\,\Phi(\tilde R)-\operatorname{adj}\Phi(\tilde R)\,\Phi(\tilde A)\Bigr),
 $$
 
-which is antisymmetric in the two matrix arguments, and in the $4\times4$ model by the same formula with $\rho_L$ and the transpose. In either model the operator is the sum of the two terms, the first of which is the multiplication by the fixed matrix in the twisted product and the second the reverse.
+which is antisymmetric in the two matrix arguments, and in the $4\times4$ model by the same formula with $\operatorname{mat}_4$ and the transpose. In either model the operator is the sum of the two terms, the first of which is the multiplication by the fixed matrix in the twisted product and the second the reverse.
 
 *Proof.* This is the model form of $L_{\tilde A}\tilde R=\tilde A\diamond\tilde R$ under the two theorems above. $\square$
 
@@ -82,12 +82,12 @@ which is antisymmetric in the two matrix arguments, and in the $4\times4$ model 
 **Proposition (the invariant form on the matrices).** The unique invariant form of the block, $\varphi(\tilde P,\tilde Q)=P_0Q_0$, reads in the two models as
 
 $$
-\varphi(\tilde P,\tilde Q) = \tfrac14\operatorname{Tr}\Phi(\tilde P)\,\operatorname{Tr}\Phi(\tilde Q) = \tfrac1{16}\operatorname{Tr}\rho_L(\tilde P)\,\operatorname{Tr}\rho_L(\tilde Q),
+\varphi(\tilde P,\tilde Q) = \tfrac14\operatorname{Tr}\Phi(\tilde P)\,\operatorname{Tr}\Phi(\tilde Q) = \tfrac1{16}\operatorname{Tr}\operatorname{mat}_4(\tilde P)\,\operatorname{Tr}\operatorname{mat}_4(\tilde Q),
 $$
 
 its Gram matrix in the coefficient basis is $\operatorname{diag}(1,0,0,0)$, and its radical is the traceless part, that is the image of the block.
 
-*Proof.* $\operatorname{Tr}\Phi(\tilde P)=2P_0$ and $\operatorname{Tr}\rho_L(\tilde P)=4P_0$, giving the two coefficients; the Gram matrix and the radical are those of *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, and the radical is the traceless part by the trace formula. $\square$
+*Proof.* $\operatorname{Tr}\Phi(\tilde P)=2P_0$ and $\operatorname{Tr}\operatorname{mat}_4(\tilde P)=4P_0$, giving the two coefficients; the Gram matrix and the radical are those of *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, and the radical is the traceless part by the trace formula. $\square$
 
 **Proposition (the failure on the matrices).** The failure of the Jacobi identity is the failure of the twisted matrix product to be associative, and in the $2\times2$ model the cyclic sum of the block corresponds to the matrix
 
@@ -105,7 +105,7 @@ the associator of the quaternionic product being computable on the matrices as t
 
 ## Summary
 
-In the $2\times2$ model the operation of the block is half the difference of the two twisted products, $\Phi(\tilde P\diamond\tilde Q)=\tfrac12(\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)-\operatorname{adj}\Phi(\tilde Q)\Phi(\tilde P))$, with the adjugate the matrix of ${}^{\natural}$; in the $4\times4$ regular model it is the same formula with $\rho_L$ and the transpose, since $\rho_L(\tilde P^{\natural})=\rho_L(\tilde P)^{\mathsf T}$. The image is the traceless part in either model, of complex dimension three, and the kernel is the line of the element, the multiples of the matrix of $\tilde A$ for a regular element. The left multiplication operator has trace $3A_0$, equal to $\tfrac32\operatorname{Tr}\Phi(\tilde A)$ and to $\tfrac34\operatorname{Tr}\rho_L(\tilde A)$, determinant zero, and rank three exactly when $N(\tilde A)\neq0$, dropping to two on the isotropic cone and to zero only at the origin. The unique invariant form is $\varphi(\tilde P,\tilde Q)=\tfrac14\operatorname{Tr}\Phi(\tilde P)\operatorname{Tr}\Phi(\tilde Q)=\tfrac1{16}\operatorname{Tr}\rho_L(\tilde P)\operatorname{Tr}\rho_L(\tilde Q)$, with Gram matrix $\operatorname{diag}(1,0,0,0)$ and radical the traceless part. The failure of the Jacobi identity is the failure of the twisted matrix product to be associative, and its matrix at the witness $(e_0,e_1,e_2)$ is $\operatorname{diag}(i,-i)$, the negative of the matrix of $e_3$.
+In the $2\times2$ model the operation of the block is half the difference of the two twisted products, $\Phi(\tilde P\diamond\tilde Q)=\tfrac12(\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)-\operatorname{adj}\Phi(\tilde Q)\Phi(\tilde P))$, with the adjugate the matrix of ${}^{\natural}$; in the $4\times4$ regular model it is the same formula with $\operatorname{mat}_4$ and the transpose, since $\operatorname{mat}_4(\tilde P^{\natural})=\operatorname{mat}_4(\tilde P)^{\mathsf T}$. The image is the traceless part in either model, of complex dimension three, and the kernel is the line of the element, the multiples of the matrix of $\tilde A$ for a regular element. The left multiplication operator has trace $3A_0$, equal to $\tfrac32\operatorname{Tr}\Phi(\tilde A)$ and to $\tfrac34\operatorname{Tr}\operatorname{mat}_4(\tilde A)$, determinant zero, and rank three exactly when $N(\tilde A)\neq0$, dropping to two on the isotropic cone and to zero only at the origin. The unique invariant form is $\varphi(\tilde P,\tilde Q)=\tfrac14\operatorname{Tr}\Phi(\tilde P)\operatorname{Tr}\Phi(\tilde Q)=\tfrac1{16}\operatorname{Tr}\operatorname{mat}_4(\tilde P)\operatorname{Tr}\operatorname{mat}_4(\tilde Q)$, with Gram matrix $\operatorname{diag}(1,0,0,0)$ and radical the traceless part. The failure of the Jacobi identity is the failure of the twisted matrix product to be associative, and its matrix at the witness $(e_0,e_1,e_2)$ is $\operatorname{diag}(i,-i)$, the negative of the matrix of $e_3$.
 
 ## Summary of Notation
 
@@ -114,11 +114,11 @@ In the $2\times2$ model the operation of the block is half the difference of the
 | $\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ | the isomorphism of the algebra with the $2\times2$ matrices |
 | $\operatorname{adj}\Phi(\tilde P)=\Phi(\tilde P^{\natural})$ | the matrix of the quaternion conjugation in the $2\times2$ model |
-| $\rho_L$ | the left regular representation, the $4\times4$ model |
-| $\rho_L(\tilde P^{\natural})=\rho_L(\tilde P)^{\mathsf T}$ | the matrix of the quaternion conjugation in the regular model |
+| $\operatorname{mat}_4$ | the left regular representation, the $4\times4$ model |
+| $\operatorname{mat}_4(\tilde P^{\natural})=\operatorname{mat}_4(\tilde P)^{\mathsf T}$ | the matrix of the quaternion conjugation in the regular model |
 | $\operatorname{adj}\Phi(\tilde P)\Phi(\tilde Q)$ | the twisted product, the matrix of the parent product |
 | traceless matrices | the image of the block in either model |
-| $\operatorname{Tr}L_{\tilde A}=3A_0$ | the trace of the operator, in the models $\tfrac32\operatorname{Tr}\Phi(\tilde A)$ and $\tfrac34\operatorname{Tr}\rho_L(\tilde A)$ |
+| $\operatorname{Tr}L_{\tilde A}=3A_0$ | the trace of the operator, in the models $\tfrac32\operatorname{Tr}\Phi(\tilde A)$ and $\tfrac34\operatorname{Tr}\operatorname{mat}_4(\tilde A)$ |
 | $\varphi=\tfrac14\operatorname{Tr}\Phi(\tilde P)\operatorname{Tr}\Phi(\tilde Q)$ | the invariant form in the $2\times2$ model |
 | $\operatorname{diag}(i,-i)$ | the matrix of the failure at the witness $(e_0,e_1,e_2)$ |
 

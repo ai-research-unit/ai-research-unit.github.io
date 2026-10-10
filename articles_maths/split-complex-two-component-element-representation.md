@@ -54,18 +54,18 @@ $$
 The column is the transcribed form of the same object, and it is convenient because the product of split-complex numbers is bilinear. For a fixed $A$, the map $B \mapsto AB$ sends coordinates linearly to coordinates, so it is an $\mathbb{R}$-linear endomorphism of the coefficient space, and with the column convention it is written as a $2\times2$ matrix acting on the column of $B$:
 
 $$
-AB \longleftrightarrow \rho_L(A)\, B, \qquad \rho_L(A) = \begin{pmatrix} a & a' \\ a' & a \end{pmatrix}.
+AB \longleftrightarrow \operatorname{mat}_4(A)\, B, \qquad \operatorname{mat}_4(A) = \begin{pmatrix} a & a' \\ a' & a \end{pmatrix}.
 $$
 
-The matrix $\rho_L(A)$ is constructed and verified in *Split-Complex Regular Element Representation*; the present article records only that the product rule admits this reading. The **component form** is the same statement written out:
+The matrix $\operatorname{mat}_4(A)$ is constructed and verified in *Split-Complex Regular Element Representation*; the present article records only that the product rule admits this reading. The **component form** is the same statement written out:
 
 $$
 AB = (a b + a' b') + (a b' + a' b) j, \qquad B = b+j b',
 $$
 
-so the two components of the product are the two entries of the matrix product $\rho_L(A)B$.
+so the two components of the product are the two entries of the matrix product $\operatorname{mat}_4(A)B$.
 
-**Remark (the row is the dual).** The row $A^{\mathsf{T}}$ is the element of the dual space $\operatorname{Hom}_{\mathbb{R}}(\mathbb{D}, \mathbb{R})$ associated with $A$ by the standard pairing $\langle A^{\mathsf{T}}, B\rangle = a b + a' b'$, and it is **not** a further realization of the algebra. The dual of a left module is a right module, carrying the *right* action $(\varphi\cdot A)(B) = \varphi(AB)$. Because $\mathbb{D}$ is commutative, the right action is the action of the same element, and the row picture and the column picture are interchanged by transposition without a conjugate: the transpose of $\rho_L(A)$ is $\rho_L(A)$ itself, since the regular matrix is symmetric. This is the degeneration of the biquaternion transposition identity, where the transpose of the left matrix is the left matrix of the conjugate.
+**Remark (the row is the dual).** The row $A^{\mathsf{T}}$ is the element of the dual space $\operatorname{Hom}_{\mathbb{R}}(\mathbb{D}, \mathbb{R})$ associated with $A$ by the standard pairing $\langle A^{\mathsf{T}}, B\rangle = a b + a' b'$, and it is **not** a further realization of the algebra. The dual of a left module is a right module, carrying the *right* action $(\varphi\cdot A)(B) = \varphi(AB)$. Because $\mathbb{D}$ is commutative, the right action is the action of the same element, and the row picture and the column picture are interchanged by transposition without a conjugate: the transpose of $\operatorname{mat}_4(A)$ is $\operatorname{mat}_4(A)$ itself, since the regular matrix is symmetric. This is the degeneration of the biquaternion transposition identity, where the transpose of the left matrix is the left matrix of the conjugate.
 
 ## Multiplication in Two-Component Form
 
@@ -236,7 +236,7 @@ The conjugation is the reflection $(a,a') \mapsto (a,-a')$, with fixed subspace 
 | $A^\mu = (A^0, A^1) = (a, a')$ | Two-component vector |
 | $A^0 = a$, $A^1 = a'$ | Real and imaginary components |
 | $A = \begin{pmatrix} a \\ a' \end{pmatrix}$, $A^{\mathsf{T}} = (a\ \ a')$ | Column and row |
-| $\rho_L(A) = \begin{pmatrix} a & a' \\ a' & a \end{pmatrix}$ | Left multiplication matrix |
+| $\operatorname{mat}_4(A) = \begin{pmatrix} a & a' \\ a' & a \end{pmatrix}$ | Left multiplication matrix |
 | $(AB)^0 = a b+a' b'$, $(AB)^1 = a b'+a' b$ | Component product rule |
 | $\overline{(a,a')} = (a,-a')$ | Conjugation in coordinates |
 | $C = \operatorname{diag}(1,-1)$ | Matrix of the conjugation |

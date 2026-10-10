@@ -96,15 +96,15 @@ $$
 The column is the transcribed form of the quadruple, and it is convenient because the product of biquaternions is bilinear. For a fixed $\tilde{Q}$ the map $\tilde{R} \mapsto \tilde{Q}\tilde{R}$ sends the coefficients of $\tilde{R}$ linearly to the coefficients of the product, so it is a $\mathbb{C}$-linear endomorphism of the coefficient space, and with the column convention it is written as a $4 \times 4$ matrix acting on the column of $\tilde{R}$:
 
 $$
-\widetilde{\tilde{Q}\tilde{R}} \longleftrightarrow \rho_L(\tilde{Q})\, R .
+\widetilde{\tilde{Q}\tilde{R}} \longleftrightarrow \operatorname{mat}_4(\tilde{Q})\, R .
 $$
 
-The matrix $\rho_L(\tilde{Q})$ is the matrix of left multiplication; its entries are the coefficients of $\tilde{Q}$ with signs and no additions, and it is constructed and verified in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The present article records only that the product admits this reading.
+The matrix $\operatorname{mat}_4(\tilde{Q})$ is the matrix of left multiplication; its entries are the coefficients of $\tilde{Q}$ with signs and no additions, and it is constructed and verified in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The present article records only that the product admits this reading.
 
 **The row is the dual, not a further representation.** The row $Q^{\mathsf{T}}$ is the element of the dual space paired with the column by the standard pairing, and the dual of a left module is a right module: it carries the *right* action, $(\varphi\cdot\tilde{Q})(\tilde{R}) = \varphi(\tilde{Q}\tilde{R})$. The transpose that relates the column picture to the row picture is dressed with quaternion conjugation, so that the transpose of the left matrix of $\tilde{Q}$ is the left matrix of the quaternion conjugate,
 
 $$
-\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural}),
+\operatorname{mat}_4(\tilde{Q})^{\mathsf{T}} = \operatorname{mat}_4(\tilde{Q}^{\natural}),
 $$
 
 which is proved in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. A column and a row are the same four complex numbers written in two layouts, and a change of layout is a change of bookkeeping, not a change of representation. The corpus counts three objects in this group — the coefficient space, the algebra acting on its simple module, and the algebra acting on itself — and it does not count the two layouts separately.
@@ -448,7 +448,7 @@ The four-vectors of relativistic physics are the material elements: the four-pos
 | $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ | The four-vector; $Q^0 = Q_0$ the scalar component, $(Q^1,Q^2,Q^3) = (Q_1,Q_2,Q_3)$ the vector components |
 | $Q^\mu = q^\mu + i{q'}^\mu$ | Real and imaginary parts of each component |
 | $Q$, $Q^{\mathsf{T}}$ | The column and the dual row of the four-vector |
-| $\rho_L(\tilde{Q})$, $\rho_R(\tilde{Q})$ | Matrices of left and right multiplication, constructed in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural})$ |
+| $\operatorname{mat}_4(\tilde{Q})$, $\operatorname{mat}_4^{R}(\tilde{Q})$ | Matrices of left and right multiplication, constructed in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; $\operatorname{mat}_4(\tilde{Q})^{\mathsf{T}} = \operatorname{mat}_4(\tilde{Q}^{\natural})$ |
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |
 | $\tilde{Q}^{\natural}, \tilde{Q}^{*}, \tilde{Q}^{*}, \tilde{Q}^{\flat} = -\tilde{Q}^{*}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugation |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The six distinguished subspaces; coordinate conditions in the table above |

@@ -7,7 +7,7 @@ The left regular representation of the real algebra is a real endomorphism $L_{\
 
 The regular representation adds the two facts the $2\times2$ model cannot give: the trace form is literally a matrix trace, and the determinant of the left multiplication is the modulus of $N$ to the fourth power, so the real regular matrix detects the zero divisors with multiplicity four. In the complex regular basis the same form is twice the real part of the complex trace pairing, and the two factors $8$ and $2$ measure the passage between the real and the complex reading of the same representation.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$. The real basis is $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$; $L_{\tilde{Q}}$ is the real $8\times8$ matrix of left multiplication in that basis, and $\rho_L(\tilde{Q})$ the complex $4\times4$ matrix in the basis $e_0,e_1,e_2,e_3$. All matrix claims of this article are recomputed in the verification script of the pass.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$. The real basis is $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$; $L_{\tilde{Q}}$ is the real $8\times8$ matrix of left multiplication in that basis, and $\operatorname{mat}_4(\tilde{Q})$ the complex $4\times4$ matrix in the basis $e_0,e_1,e_2,e_3$. All matrix claims of this article are recomputed in the verification script of the pass.
 
 ## The Real Regular Representation
 
@@ -30,12 +30,12 @@ $$
 the trace of the product of the two real $8\times8$ regular matrices, and it satisfies
 
 $$
-\operatorname{Tr}\bigl(L_{\tilde{P}}L_{\tilde{Q}}\bigr)=2\,\mathrm{Re}\operatorname{Tr}\bigl(\rho_L(\tilde{P})\rho_L(\tilde{Q})\bigr) ,
+\operatorname{Tr}\bigl(L_{\tilde{P}}L_{\tilde{Q}}\bigr)=2\,\mathrm{Re}\operatorname{Tr}\bigl(\operatorname{mat}_4(\tilde{P})\operatorname{mat}_4(\tilde{Q})\bigr) ,
 $$
 
 the passage between the real and the complex regular basis.
 
-*Proof.* $L_{\tilde{P}}L_{\tilde{Q}}=L_{\tilde{P}\tilde{Q}}$ and $\operatorname{Tr}L_{\tilde{X}}=8\mathrm{Re}\,X_0$, so $\operatorname{Tr}(L_{\tilde{P}}L_{\tilde{Q}})=8\mathrm{Re}\,\mathrm{Sc}(\tilde{P}\tilde{Q})$, which is the trace-form theorem; and $\operatorname{Tr}(\rho_L(\tilde{P})\rho_L(\tilde{Q}))=4\mathrm{Sc}(\tilde{P}\tilde{Q})$ gives the second identity.
+*Proof.* $L_{\tilde{P}}L_{\tilde{Q}}=L_{\tilde{P}\tilde{Q}}$ and $\operatorname{Tr}L_{\tilde{X}}=8\mathrm{Re}\,X_0$, so $\operatorname{Tr}(L_{\tilde{P}}L_{\tilde{Q}})=8\mathrm{Re}\,\mathrm{Sc}(\tilde{P}\tilde{Q})$, which is the trace-form theorem; and $\operatorname{Tr}(\operatorname{mat}_4(\tilde{P})\operatorname{mat}_4(\tilde{Q}))=4\mathrm{Sc}(\tilde{P}\tilde{Q})$ gives the second identity.
 
 **The diagonal and the signature.** With $\tilde{Q}=\sum_\mu(q_\mu+iq'_\mu)e_\mu$,
 
@@ -45,7 +45,7 @@ $$
 
 so the trace form has signature $(4,4)$ on the eight real coordinates, the four real parts of the coefficients carrying the sign $\varepsilon_\mu$ and the four imaginary parts the opposite sign. Its Gram matrix is the block matrix of *The Realification of the Four Forms* rescaled by $8$, and its null cone is the realified cone of the general plain bilinear form.
 
-**The determinant and the zero divisors.** The left multiplication is invertible exactly when $N(\tilde{Q})\neq0$, so the zero divisors are exactly the singular real regular matrices; the determinant $|N(\tilde{Q})|^4$ vanishes on them to the fourth order, and the real rank of $L_{\tilde{Q}}$ on a non-zero zero divisor is $4$, twice the complex rank $2$ of the regular matrix $\rho_L(\tilde{Q})$.
+**The determinant and the zero divisors.** The left multiplication is invertible exactly when $N(\tilde{Q})\neq0$, so the zero divisors are exactly the singular real regular matrices; the determinant $|N(\tilde{Q})|^4$ vanishes on them to the fourth order, and the real rank of $L_{\tilde{Q}}$ on a non-zero zero divisor is $4$, twice the complex rank $2$ of the regular matrix $\operatorname{mat}_4(\tilde{Q})$.
 
 **Invariance.** The trace form is invariant under the automorphisms of the algebra: for every unit $\tilde{A}$ and all biquaternions, $\tau(\tilde{A}\tilde{P}\tilde{A}^{-1},\tilde{A}\tilde{Q}\tilde{A}^{-1})=\tau(\tilde{P},\tilde{Q})$, because $L_{\tilde{A}\tilde{P}\tilde{A}^{-1}}=L_{\tilde{A}}L_{\tilde{P}}L_{\tilde{A}}^{-1}$ and the trace is invariant under conjugation.
 
@@ -54,7 +54,7 @@ so the trace form has signature $(4,4)$ on the eight real coordinates, the four 
 The real parts of the four complex pairings of the regular model are
 
 $$
-\mathrm{Re}\operatorname{Tr}\bigl(\rho_L(\tilde{P})\rho_L(\tilde{Q})\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\rho_L(\tilde{P})\rho_L(\tilde{Q})^{\mathsf{T}}\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\rho_L(\tilde{P})^{\dagger}\rho_L(\tilde{Q})\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\operatorname{adj}\rho_L(\tilde{P})^{\dagger}\rho_L(\tilde{Q})\bigr),
+\mathrm{Re}\operatorname{Tr}\bigl(\operatorname{mat}_4(\tilde{P})\operatorname{mat}_4(\tilde{Q})\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\operatorname{mat}_4(\tilde{P})\operatorname{mat}_4(\tilde{Q})^{\mathsf{T}}\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\operatorname{mat}_4(\tilde{P})^{\dagger}\operatorname{mat}_4(\tilde{Q})\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\operatorname{adj}\operatorname{mat}_4(\tilde{P})^{\dagger}\operatorname{mat}_4(\tilde{Q})\bigr),
 $$
 
 the trace pairings of the plain, transposed, conjugate-transposed and adjugated conjugate-transposed products. Their signatures are the four signatures of the group, $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$; the first is the trace form of this group up to the factor $2$, and all four are recorded in *The Realification of the Four Forms*. The Lorentzian forms do not appear here: the Minkowski form of signature $(1,3)$ recorded in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*, §*A Second $4 \times 4$ Realization, and the Multiplicative Map* is a form of the second real $4\times4$ realization, on the real span of $e_0,ie_1,ie_2,ie_3$, and the two-sided action of the norm-one group is the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ of the sesqualgebra group.
@@ -77,7 +77,7 @@ The real regular representation is the representation the trace form is defined 
 |---|---|
 | $L_{\tilde{Q}}$ | the real $8\times8$ left multiplication, $\operatorname{Tr}L_{\tilde{Q}}=8\operatorname{Re}Q_0$, $\det L_{\tilde{Q}}=\lvert N(\tilde{Q})\rvert^4$ |
 | $\tau(\tilde{P},\tilde{Q})=\operatorname{Tr}(L_{\tilde{P}}L_{\tilde{Q}})$ | the trace form of the group |
-| $\operatorname{Tr}(L_{\tilde{P}}L_{\tilde{Q}})=2\operatorname{Re}\operatorname{Tr}(\rho_L(\tilde{P})\rho_L(\tilde{Q}))$ | the passage to the complex regular basis |
+| $\operatorname{Tr}(L_{\tilde{P}}L_{\tilde{Q}})=2\operatorname{Re}\operatorname{Tr}(\operatorname{mat}_4(\tilde{P})\operatorname{mat}_4(\tilde{Q}))$ | the passage to the complex regular basis |
 | $8\sum_\mu\varepsilon_\mu(q_\mu^2-q'_\mu{}^2)$ | the diagonal, signature $(4,4)$ |
 | $(4,4),(4,4),(8,0),(2,6)$ | the signatures of the four realified forms |
 | $\lvert N(\tilde{Q})\rvert^4$ | the determinant of the left multiplication, vanishing on the zero divisors |

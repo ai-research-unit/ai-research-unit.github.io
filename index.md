@@ -661,3 +661,4 @@ The extension to many qubits, the second-quantized version, the connection to qu
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for the POVM and Kraus formalism.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Clifford algebra formulation of spin.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric algebra approach to quantum physics.
+

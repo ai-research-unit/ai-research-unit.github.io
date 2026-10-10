@@ -36,7 +36,7 @@ $$
 and in the $4\times4$ regular representation the determinant is its square and the trace is four times the scalar part,
 
 $$
-\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2 , \qquad \operatorname{Tr}\rho_L(\tilde{Q}) = 4Q_0 .
+\det\operatorname{mat}_4(\tilde{Q}) = N(\tilde{Q})^2 , \qquad \operatorname{Tr}\operatorname{mat}_4(\tilde{Q}) = 4Q_0 .
 $$
 
 The modulus of the polar representation is $\rho = re^{i\alpha} = \sqrt{N(\tilde{Q})}$, so the scale and the phase are the polar form of the determinant:
@@ -63,7 +63,7 @@ $$
 \tilde{\Lambda} = B\,\hat{q} , \qquad B\in\mathbb{M}_+,\quad \hat{q}\in\mathrm{Sp}(1) .
 $$
 
-This is the **Cartan decomposition** of the Lorentz group as the companion article *The Lorentz Group in Biquaternionic Form* states it: every unit-norm biquaternion is a boost times a spatial rotation, unique when the boost is required to have positive-definite matrix image. The polar representation therefore supplies a proof and a normalisation of the Cartan decomposition at once: the boost is the Hermitian positive square root of $\tilde{\Lambda}\tilde{\Lambda}^{*}$, and the positivity is exactly the condition that removes the sign ambiguity of the Cartan factorisation.
+This is the **Cartan decomposition** of the Lorentz group as the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations* states it: every unit-norm biquaternion is a boost times a spatial rotation, unique when the boost is required to have positive-definite matrix image. The polar representation therefore supplies a proof and a normalisation of the Cartan decomposition at once: the boost is the Hermitian positive square root of $\tilde{\Lambda}\tilde{\Lambda}^{*}$, and the positivity is exactly the condition that removes the sign ambiguity of the Cartan factorisation.
 
 ### What the Two Extra Factors Mean
 
@@ -153,7 +153,7 @@ In each row $B = (\tilde{\Lambda}^{\natural})^2$ to $3.3\times10^{-16}$, the sca
 
 ### The Rotor and the Thomas–Wigner Rotation
 
-The fourth factor is the unit real quaternion, the element of $\mathrm{Sp}(1) = SU(2)$, and it is the spatial rotation of the frame. It is not optional even for a pure boost, because the boosts do not close: the product of two non-collinear boost rotors has a non-hermitian part, and the Cartan decomposition of that product exhibits it as the **Thomas–Wigner rotation**, which is the rotor factor of the polar representation of the product. The algebraic mechanism is the non-commutativity of the boost factor with the rotor, taken up with its numbers in the section *The Order of the Factors* below. The composition law, the angle of the Wigner rotation, and the information content of the boost are the subjects of the companion articles *The Lorentz Group in Biquaternionic Form*, *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form* and *Exercise: The Thomas Precession*.
+The fourth factor is the unit real quaternion, the element of $\mathrm{Sp}(1) = SU(2)$, and it is the spatial rotation of the frame. It is not optional even for a pure boost, because the boosts do not close: the product of two non-collinear boost rotors has a non-hermitian part, and the Cartan decomposition of that product exhibits it as the **Thomas–Wigner rotation**, which is the rotor factor of the polar representation of the product. The algebraic mechanism is the non-commutativity of the boost factor with the rotor, taken up with its numbers in the section *The Order of the Factors* below. The composition law, the angle of the Wigner rotation, and the information content of the boost are the subjects of the companion articles *The Lorentz Group in Biquaternionic Form — Structure and Representations*, *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form* and *Exercise: The Thomas Precession*.
 
 The rotor of the representation of a four-vector has a direct kinematic reading. A four-position on a world line with velocity $\mathbf{v}$ has $B = (\tilde{\Lambda}^{\natural})^2$ and $\hat{q} = e_0$ in the frame in which $\mathbf{v}$ is the velocity, as the table shows: the boost factor is the square of the rotor that carries the rest frame to the lab frame, and the rotor is trivial because a single boost needs no rotation. The rotor becomes nontrivial whenever the element is not a pure boost of a coordinate direction, and it is then the rotation that the residual frame carries.
 
@@ -257,7 +257,7 @@ $$
 
 with a complex modulus in place of the corpus's scale and phase. Their trigonometric factor is the rotor $\hat{q}$ of this section exactly, and their hyperbolic factor is the boost about the rotor-conjugated axis, $\hat{q}^{-1}B\hat{q}$, of the same rapidity and the same biquaternion norm; recomputed on their own example the two factors multiply to the corpus word, since $\hat{q}\,(\hat{q}^{-1}B\hat{q}) = B\hat{q}$. Their reversed order is therefore not the reversed physical order of this section and must not be read as an identification of $\hat{q}B$ with $B\hat{q}$: the hyperbolic factor they write is not $B$ but its conjugate, the conjugation being the one already displayed above, which rotates the boost axis and leaves the rapidity alone. The same element is described by the two words, once with the boost in the original frame and once with the boost in the rotated one.
 
-The non-commutativity of $B$ is a property of the algebra and not of the representation, and its infinitesimal form is in the brackets of the companion article *The Lorentz Group in Biquaternionic Form*: with the rotation generators $J_k = e_k$ and the boost generators $K_k = ie_k$, the brackets read $[J_j,K_k] = 2\varepsilon_{jkl}K_l$ and $[K_j,K_k] = -2\varepsilon_{jkl}J_l$. The rotations and the boosts do not commute, and the boosts do not close: the bracket of two boost generators is a rotation generator, which is the Lie-algebraic origin of the rotor in the polar representation of a product of boosts. The two extremes are the ones where the order ceases to matter: two boosts along the same line commute, compose into a boost, and leave the rotor trivial, and a rotation about the axis of a boost commutes with it, so that the word is a single boost-rotation about that axis.
+The non-commutativity of $B$ is a property of the algebra and not of the representation, and its infinitesimal form is in the brackets of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*: with the rotation generators $J_k = e_k$ and the boost generators $K_k = ie_k$, the brackets read $[J_j,K_k] = 2\varepsilon_{jkl}K_l$ and $[K_j,K_k] = -2\varepsilon_{jkl}J_l$. The rotations and the boosts do not commute, and the boosts do not close: the bracket of two boost generators is a rotation generator, which is the Lie-algebraic origin of the rotor in the polar representation of a product of boosts. The two extremes are the ones where the order ceases to matter: two boosts along the same line commute, compose into a boost, and leave the rotor trivial, and a rotation about the axis of a boost commutes with it, so that the word is a single boost-rotation about that axis.
 
 ## Physical Readings
 
@@ -277,7 +277,7 @@ The polar representation of a biquaternion is $r e^{i\alpha}B\hat{q}$, and in th
 |---|---|
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | a biquaternion, $Q_\mu\in\mathbb{C}$ |
 | $N(\tilde{Q}) = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ | the biquaternion norm, the determinant of the $2\times2$ representative |
-| $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$, $\operatorname{Tr}\rho_L(\tilde{Q}) = 4Q_0$ | determinant and trace of the $4\times4$ regular representative |
+| $\det\operatorname{mat}_4(\tilde{Q}) = N(\tilde{Q})^2$, $\operatorname{Tr}\operatorname{mat}_4(\tilde{Q}) = 4Q_0$ | determinant and trace of the $4\times4$ regular representative |
 | $\rho = re^{i\alpha} = \sqrt{N(\tilde{Q})}$ | the complex modulus |
 | $r$ | the scale, $|\det\Phi|^{1/2}$ |
 | $e^{i\alpha}$ | the central phase, $\alpha = \tfrac12\arg\det\Phi$ |

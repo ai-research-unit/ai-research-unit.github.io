@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}$ acts on itself by left multiplication, and
 
 The complex $4 \times 4$ regular matrix, its determinant $N(\tilde Q)^2$, its trace $4Q_0$, its characteristic polynomial and the decomposition $\mathbb{B} \cong V \oplus V$ into the simple module are *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*, and they are cited, not repeated. The real content is the realification: the $8 \times 8$ real matrix is the block matrix
 $$
-\rho_L^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}, \qquad \rho_L(\tilde Q) = A + iB ,
+\operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}, \qquad \operatorname{mat}_4(\tilde Q) = A + iB ,
 $$
 in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and this is the form in which the real module is read. The rank over the algebra is one; the rank over the field is eight; the submodule lattice is the lattice of left ideals and is the same as over $\mathbb{C}$; and the endomorphism ring over $\mathbb{R}$ is the full matrix ring $M_8(\mathbb{R})$, with the $\mathbb{B}$-linear endomorphisms the right multiplications.
 
@@ -32,20 +32,20 @@ The action satisfies the module axioms because the multiplication of $\mathbb{B}
 
 **Definition.** The **left regular representation** of the real algebra is the map
 $$
-\rho_L^{\mathbb{R}} : \mathbb{B} \longrightarrow \operatorname{End}_{\mathbb{R}}(\mathbb{B}), \qquad \rho_L^{\mathbb{R}}(\tilde Q)(\tilde R) = \tilde Q\tilde R .
+\operatorname{mat}_4^{\mathbb{R}} : \mathbb{B} \longrightarrow \operatorname{End}_{\mathbb{R}}(\mathbb{B}), \qquad \operatorname{mat}_4^{\mathbb{R}}(\tilde Q)(\tilde R) = \tilde Q\tilde R .
 $$
 It is a unital $\mathbb{R}$-algebra homomorphism, and in the real basis its matrix is the $8 \times 8$ real matrix of the operator $\tilde R \mapsto \tilde Q\tilde R$.
 
-**Theorem (the real matrix is the realification of the complex one).** Write $\rho_L(\tilde Q) = A + iB$ for the $4 \times 4$ complex Cayley matrix of $\tilde Q$, with $A$ and $B$ real $4 \times 4$ matrices. Then in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$,
+**Theorem (the real matrix is the realification of the complex one).** Write $\operatorname{mat}_4(\tilde Q) = A + iB$ for the $4 \times 4$ complex Cayley matrix of $\tilde Q$, with $A$ and $B$ real $4 \times 4$ matrices. Then in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$,
 $$
-\rho_L^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}.
+\operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}.
 $$
 
-**Proof.** Multiplication by $i$ commutes with the product, so the operator $\rho_L^{\mathbb{R}}(\tilde Q)$ is complex-linear and the $4 \times 4$ complex matrix $\rho_L(\tilde Q)$ describes it. The real basis is the complex basis $e_0,e_1,e_2,e_3$ followed by its multiple by $i$; in that ordering an operator with complex matrix $A + iB$ acts on a real coordinate column by the block matrix $\begin{pmatrix} A & -B \\ B & A\end{pmatrix}$, because $i(x + iy) = -y + ix$. $\square$
+**Proof.** Multiplication by $i$ commutes with the product, so the operator $\operatorname{mat}_4^{\mathbb{R}}(\tilde Q)$ is complex-linear and the $4 \times 4$ complex matrix $\operatorname{mat}_4(\tilde Q)$ describes it. The real basis is the complex basis $e_0,e_1,e_2,e_3$ followed by its multiple by $i$; in that ordering an operator with complex matrix $A + iB$ acts on a real coordinate column by the block matrix $\begin{pmatrix} A & -B \\ B & A\end{pmatrix}$, because $i(x + iy) = -y + ix$. $\square$
 
-**Corollary.** The map $\rho_L^{\mathbb{R}}$ is an injective unital $\mathbb{R}$-algebra homomorphism, $\rho_L^{\mathbb{R}}(\tilde P\tilde Q) = \rho_L^{\mathbb{R}}(\tilde P)\rho_L^{\mathbb{R}}(\tilde Q)$, and its image is an eight-dimensional real subalgebra of $M_8(\mathbb{R})$ isomorphic to $\mathbb{B}$.
+**Corollary.** The map $\operatorname{mat}_4^{\mathbb{R}}$ is an injective unital $\mathbb{R}$-algebra homomorphism, $\operatorname{mat}_4^{\mathbb{R}}(\tilde P\tilde Q) = \operatorname{mat}_4^{\mathbb{R}}(\tilde P)\operatorname{mat}_4^{\mathbb{R}}(\tilde Q)$, and its image is an eight-dimensional real subalgebra of $M_8(\mathbb{R})$ isomorphic to $\mathbb{B}$.
 
-**Proof.** Multiplicativity of $\rho_L^{\mathbb{R}}$ is associativity of the product; injectivity is $\rho_L^{\mathbb{R}}(\tilde Q) = 0 \Rightarrow \rho_L^{\mathbb{R}}(\tilde Q)(e_0) = \tilde Q = 0$; the image is a subalgebra because $\rho_L^{\mathbb{R}}$ is a homomorphism, and it has dimension eight because the map is injective on an eight-dimensional space. $\square$
+**Proof.** Multiplicativity of $\operatorname{mat}_4^{\mathbb{R}}$ is associativity of the product; injectivity is $\operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = 0 \Rightarrow \operatorname{mat}_4^{\mathbb{R}}(\tilde Q)(e_0) = \tilde Q = 0$; the image is a subalgebra because $\operatorname{mat}_4^{\mathbb{R}}$ is a homomorphism, and it has dimension eight because the map is injective on an eight-dimensional space. $\square$
 
 ## The Determinant and the Trace
 
@@ -53,20 +53,20 @@ The two invariants of the real regular matrix are the realification of the two i
 
 **Theorem.** For every $\tilde Q \in \mathbb{B}$,
 $$
-\det \rho_L^{\mathbb{R}}(\tilde Q) = \bigl|N(\tilde Q)\bigr|^4, \qquad \operatorname{Tr} \rho_L^{\mathbb{R}}(\tilde Q) = 8\operatorname{Re}(Q_0).
+\det \operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = \bigl|N(\tilde Q)\bigr|^4, \qquad \operatorname{Tr} \operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = 8\operatorname{Re}(Q_0).
 $$
 
-**Proof.** The complex matrix has $\det \rho_L(\tilde Q) = N(\tilde Q)^2$ and $\operatorname{Tr}\rho_L(\tilde Q) = 4Q_0$ (*Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions*, §*The Determinant and the Trace*), with characteristic polynomial $\bigl(\lambda^2 - 2Q_0\lambda + N(\tilde Q)\bigr)^2$. A complex-linear operator with eigenvalues $\lambda_1,\dots,\lambda_4$ has realification with eigenvalues $\lambda_1,\bar\lambda_1,\dots,\lambda_4,\bar\lambda_4$, so the determinant of the realification is $|\lambda_1\cdots\lambda_4|^2 = |N(\tilde Q)^2|^2 = |N(\tilde Q)|^4$ and its trace is $2\operatorname{Re}(\lambda_1+\cdots+\lambda_4) = 2\operatorname{Re}(4Q_0) = 8\operatorname{Re}(Q_0)$. $\square$
+**Proof.** The complex matrix has $\det \operatorname{mat}_4(\tilde Q) = N(\tilde Q)^2$ and $\operatorname{Tr}\operatorname{mat}_4(\tilde Q) = 4Q_0$ (*Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions*, §*The Determinant and the Trace*), with characteristic polynomial $\bigl(\lambda^2 - 2Q_0\lambda + N(\tilde Q)\bigr)^2$. A complex-linear operator with eigenvalues $\lambda_1,\dots,\lambda_4$ has realification with eigenvalues $\lambda_1,\bar\lambda_1,\dots,\lambda_4,\bar\lambda_4$, so the determinant of the realification is $|\lambda_1\cdots\lambda_4|^2 = |N(\tilde Q)^2|^2 = |N(\tilde Q)|^4$ and its trace is $2\operatorname{Re}(\lambda_1+\cdots+\lambda_4) = 2\operatorname{Re}(4Q_0) = 8\operatorname{Re}(Q_0)$. $\square$
 
-**Remark (the real matrix is never singular off the zero divisors).** The form $|N(\tilde Q)|^4$ is non-negative and vanishes exactly when $N(\tilde Q) = 0$; so the real regular matrix is singular exactly on the zero divisors, in agreement with the invertibility criterion $N(\tilde Q) \neq 0$ of *Biquaternion Norm and Invertibility*. Over $\mathbb{C}$ the same statement reads $\det \rho_L = N^2$, and the square root is taken by the realification.
+**Remark (the real matrix is never singular off the zero divisors).** The form $|N(\tilde Q)|^4$ is non-negative and vanishes exactly when $N(\tilde Q) = 0$; so the real regular matrix is singular exactly on the zero divisors, in agreement with the invertibility criterion $N(\tilde Q) \neq 0$ of *Biquaternion Norm and Invertibility*. Over $\mathbb{C}$ the same statement reads $\det \operatorname{mat}_4 = N^2$, and the square root is taken by the realification.
 
 **Proposition (the trace form).** For all $\tilde P, \tilde Q \in \mathbb{B}$,
 $$
-\operatorname{Tr}\!\bigl(\rho_L^{\mathbb{R}}(\tilde P)\,\rho_L^{\mathbb{R}}(\tilde Q)\bigr) = 8\operatorname{Re}\bigl((\tilde P\tilde Q)_0\bigr) ,
+\operatorname{Tr}\!\bigl(\operatorname{mat}_4^{\mathbb{R}}(\tilde P)\,\operatorname{mat}_4^{\mathbb{R}}(\tilde Q)\bigr) = 8\operatorname{Re}\bigl((\tilde P\tilde Q)_0\bigr) ,
 $$
 a symmetric $\mathbb{R}$-bilinear form on the regular module, of signature $(4,4)$.
 
-**Proof.** The product of the two matrices is $\rho_L^{\mathbb{R}}(\tilde P\tilde Q)$, so the trace is $8\operatorname{Re}((\tilde P\tilde Q)_0)$ by the theorem; symmetric because $\operatorname{Tr}(XY) = \operatorname{Tr}(YX)$ and $\operatorname{Re}((\tilde P\tilde Q)_0) = \operatorname{Re}((\tilde Q\tilde P)_0)$. Writing $Q_0 = a+bi$ and $Q_k = c_k + id_k$, the quadratic form $\operatorname{Re}\bigl((\tilde Q^2)_0\bigr) = (a^2-b^2) - \sum_k(c_k^2-d_k^2)$ has one positive and one negative scalar direction and three positive and three negative vector directions, hence signature $(4,4)$. $\square$
+**Proof.** The product of the two matrices is $\operatorname{mat}_4^{\mathbb{R}}(\tilde P\tilde Q)$, so the trace is $8\operatorname{Re}((\tilde P\tilde Q)_0)$ by the theorem; symmetric because $\operatorname{Tr}(XY) = \operatorname{Tr}(YX)$ and $\operatorname{Re}((\tilde P\tilde Q)_0) = \operatorname{Re}((\tilde Q\tilde P)_0)$. Writing $Q_0 = a+bi$ and $Q_k = c_k + id_k$, the quadratic form $\operatorname{Re}\bigl((\tilde Q^2)_0\bigr) = (a^2-b^2) - \sum_k(c_k^2-d_k^2)$ has one positive and one negative scalar direction and three positive and three negative vector directions, hence signature $(4,4)$. $\square$
 
 ## Submodules and the Composition Series
 
@@ -90,17 +90,17 @@ so it has composition length two and its socle is the whole module.
 
 **Theorem.** The $\mathbb{B}$-linear endomorphisms of the regular left module are the right multiplications,
 $$
-\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \{\rho_R(\tilde Q) : \tilde R \mapsto \tilde R\tilde Q\} \cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B} ,
+\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \{\operatorname{mat}_4^{R}(\tilde Q) : \tilde R \mapsto \tilde R\tilde Q\} \cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B} ,
 $$
-an eight-dimensional real algebra, and it is the centralizer of $\rho_L^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$.
+an eight-dimensional real algebra, and it is the centralizer of $\operatorname{mat}_4^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$.
 
-**Proof.** Let $f$ be $\mathbb{B}$-linear. Then $f(\tilde R) = f(\tilde R e_0) = \tilde R f(e_0)$, so $f = \rho_R(\tilde Q)$ with $\tilde Q = f(e_0)$; conversely right multiplications are module endomorphisms because the product associates. The map $\tilde Q \mapsto \rho_R(\tilde Q)$ is an anti-isomorphism onto its image, and $\mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$ by the anti-automorphism $\natural$. The centralizer statement is *The Endomorphism Algebra of a Module*, and holds over $\mathbb{R}$ because the centralizer of $\rho_L^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$ consists of the real-linear maps commuting with every left multiplication, which are exactly the right multiplications. $\square$
+**Proof.** Let $f$ be $\mathbb{B}$-linear. Then $f(\tilde R) = f(\tilde R e_0) = \tilde R f(e_0)$, so $f = \operatorname{mat}_4^{R}(\tilde Q)$ with $\tilde Q = f(e_0)$; conversely right multiplications are module endomorphisms because the product associates. The map $\tilde Q \mapsto \operatorname{mat}_4^{R}(\tilde Q)$ is an anti-isomorphism onto its image, and $\mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$ by the anti-automorphism $\natural$. The centralizer statement is *The Endomorphism Algebra of a Module*, and holds over $\mathbb{R}$ because the centralizer of $\operatorname{mat}_4^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$ consists of the real-linear maps commuting with every left multiplication, which are exactly the right multiplications. $\square$
 
 **Theorem (the full endomorphism ring and the mutual centralizers).** The $\mathbb{R}$-linear endomorphisms of the regular module are all $\mathbb{R}$-linear maps,
 $$
 \operatorname{End}_{\mathbb{R}}(\mathbb{B}) \cong M_8(\mathbb{R}) ,
 $$
-the centralizer of $\rho_L^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$ is $\rho_R(\mathbb{B})$, and the centralizer of that is $\rho_L^{\mathbb{R}}(\mathbb{B})$; the two copies are mutual centralizers, each of real dimension eight.
+the centralizer of $\operatorname{mat}_4^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$ is $\operatorname{mat}_4^{R}(\mathbb{B})$, and the centralizer of that is $\operatorname{mat}_4^{\mathbb{R}}(\mathbb{B})$; the two copies are mutual centralizers, each of real dimension eight.
 
 **Proof.** An $\mathbb{R}$-linear endomorphism of an eight-dimensional real space is an arbitrary $8 \times 8$ real matrix, and conversely. The centralizer computation is *The Endomorphism Algebra of a Module*, and its converse follows from the double centralizer theorem for a faithful semisimple module over a simple algebra: the algebra $\mathbb{B}$ is simple, the regular module is the direct sum of two copies of the simple module $V$, and the bimodule $\mathbb{B} \cong V \oplus V$ has the two one-sided copies as mutual commutants. $\square$
 
@@ -110,30 +110,30 @@ the centralizer of $\rho_L^{\mathbb{R}}(\mathbb{B})$ in $M_8(\mathbb{R})$ is $\r
 
 The biquaternion algebra acts on itself on the left, and over $\mathbb{R}$ that action is the $8 \times 8$ real left regular representation, the realification of the $4 \times 4$ complex Cayley matrix,
 $$
-\rho_L^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}, \qquad \rho_L(\tilde Q) = A + iB ,
+\operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}, \qquad \operatorname{mat}_4(\tilde Q) = A + iB ,
 $$
 a unital $\mathbb{R}$-algebra homomorphism with image an eight-dimensional subalgebra of $M_8(\mathbb{R})$ isomorphic to $\mathbb{B}$.
 
 $$
-\boxed{\ \text{The real regular module is free of rank one over } \mathbb{B} \text{ and rank eight over } \mathbb{R};\ \det\rho_L^{\mathbb{R}}(\tilde Q) = |N(\tilde Q)|^4,\ \operatorname{Tr}\rho_L^{\mathbb{R}}(\tilde Q) = 8\operatorname{Re}(Q_0). }
+\boxed{\ \text{The real regular module is free of rank one over } \mathbb{B} \text{ and rank eight over } \mathbb{R};\ \det\operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = |N(\tilde Q)|^4,\ \operatorname{Tr}\operatorname{mat}_4^{\mathbb{R}}(\tilde Q) = 8\operatorname{Re}(Q_0). }
 $$
 
-Its submodules are the left ideals, the same lattice as over $\mathbb{C}$, and the regular module is semisimple, $V \oplus V$, of composition length two and simple module of real dimension four; the $\mathbb{B}$-linear endomorphisms are the right multiplications, $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) \cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$, unchanged by the change of scalars, while the full endomorphism ring is $\operatorname{End}_{\mathbb{R}}(\mathbb{B}) \cong M_8(\mathbb{R})$, against $M_4(\mathbb{C})$ over $\mathbb{C}$. The determinant and trace of the real regular matrix are the absolute square and the doubled real part of those of the complex one; the trace form $\operatorname{Tr}(\rho_L^{\mathbb{R}}(\tilde P)\rho_L^{\mathbb{R}}(\tilde Q)) = 8\operatorname{Re}((\tilde P\tilde Q)_0)$ is a symmetric bilinear form of signature $(4,4)$.
+Its submodules are the left ideals, the same lattice as over $\mathbb{C}$, and the regular module is semisimple, $V \oplus V$, of composition length two and simple module of real dimension four; the $\mathbb{B}$-linear endomorphisms are the right multiplications, $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) \cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$, unchanged by the change of scalars, while the full endomorphism ring is $\operatorname{End}_{\mathbb{R}}(\mathbb{B}) \cong M_8(\mathbb{R})$, against $M_4(\mathbb{C})$ over $\mathbb{C}$. The determinant and trace of the real regular matrix are the absolute square and the doubled real part of those of the complex one; the trace form $\operatorname{Tr}(\operatorname{mat}_4^{\mathbb{R}}(\tilde P)\operatorname{mat}_4^{\mathbb{R}}(\tilde Q)) = 8\operatorname{Re}((\tilde P\tilde Q)_0)$ is a symmetric bilinear form of signature $(4,4)$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\rho_L^{\mathbb{R}}(\tilde Q)$ | the $8 \times 8$ real left regular matrix, $\tilde R \mapsto \tilde Q\tilde R$ |
-| $\rho_L(\tilde Q) = A + iB$ | the $4 \times 4$ complex Cayley matrix of *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$* |
+| $\operatorname{mat}_4^{\mathbb{R}}(\tilde Q)$ | the $8 \times 8$ real left regular matrix, $\tilde R \mapsto \tilde Q\tilde R$ |
+| $\operatorname{mat}_4(\tilde Q) = A + iB$ | the $4 \times 4$ complex Cayley matrix of *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$* |
 | $\begin{pmatrix} A & -B \\ B & A\end{pmatrix}$ | the block form of the realification |
-| $N(\tilde Q) = \tilde Q\tilde Q^{\natural}$ | the norm; $\det\rho_L^{\mathbb{R}} = |N|^4$, $\operatorname{Tr}\rho_L^{\mathbb{R}} = 8\operatorname{Re}(Q_0)$ |
+| $N(\tilde Q) = \tilde Q\tilde Q^{\natural}$ | the norm; $\det\operatorname{mat}_4^{\mathbb{R}} = |N|^4$, $\operatorname{Tr}\operatorname{mat}_4^{\mathbb{R}} = 8\operatorname{Re}(Q_0)$ |
 | $V$ | the simple left module, $\dim_\mathbb{R} V = 4$, $\dim_\mathbb{C} V = 2$ |
 | $\tilde\Pi_1, \tilde\Pi_2$ | $\tfrac12(e_0 \pm ie_3)$, the idempotents splitting $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2 \cong V\oplus V$ |
-| $\rho_R(\tilde Q)$ | right multiplication, the $\mathbb{B}$-linear endomorphisms of the regular module |
-| $\operatorname{End}_{\mathbb{B}}(\mathbb{B})$ | $\cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$, real dimension eight, the centralizer of $\rho_L^{\mathbb{R}}(\mathbb{B})$ |
+| $\operatorname{mat}_4^{R}(\tilde Q)$ | right multiplication, the $\mathbb{B}$-linear endomorphisms of the regular module |
+| $\operatorname{End}_{\mathbb{B}}(\mathbb{B})$ | $\cong \mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$, real dimension eight, the centralizer of $\operatorname{mat}_4^{\mathbb{R}}(\mathbb{B})$ |
 | $\operatorname{End}_{\mathbb{R}}(\mathbb{B})$ | $\cong M_8(\mathbb{R})$, the full endomorphism ring |
-| $\operatorname{Tr}(\rho_L^{\mathbb{R}}(\tilde P)\rho_L^{\mathbb{R}}(\tilde Q))$ | $8\operatorname{Re}((\tilde P\tilde Q)_0)$, a form of signature $(4,4)$ |
+| $\operatorname{Tr}(\operatorname{mat}_4^{\mathbb{R}}(\tilde P)\operatorname{mat}_4^{\mathbb{R}}(\tilde Q))$ | $8\operatorname{Re}((\tilde P\tilde Q)_0)$, a form of signature $(4,4)$ |
 
 ## Further Reading
 

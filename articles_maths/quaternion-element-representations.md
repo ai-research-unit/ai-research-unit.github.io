@@ -47,11 +47,11 @@ This is the representation $\rho_{\mathrm{reg}} : \mathbb{H} \to \operatorname{E
 
 Because $\mathbb{H}$ is not commutative, there are two distinct regular representations:
 
-**Left regular representation.** $\rho_L(\tilde q) r = \tilde q r$.
+**Left regular representation.** $\operatorname{mat}_4(\tilde q) r = \tilde q r$.
 
-**Right regular representation.** $\rho_R(\tilde q) r = r \tilde q$. This is a right action rather than a left one: $\rho_R(\tilde q) \rho_R(\tilde q') = \rho_R(\tilde q' \tilde q)$.
+**Right regular representation.** $\operatorname{mat}_4^{R}(\tilde q) r = r \tilde q$. This is a right action rather than a left one: $\operatorname{mat}_4^{R}(\tilde q) \operatorname{mat}_4^{R}(\tilde q') = \operatorname{mat}_4^{R}(\tilde q' \tilde q)$.
 
-Composing the right action with the anti-automorphism $\tilde q \mapsto \tilde{q}^{\natural}$ gives a left representation $\rho_R(\tilde q) r = r \tilde{q}^{\natural}$, and the map $r \mapsto \bar{r}$ intertwines it with $\rho_L$, so the two regular representations are isomorphic.
+Composing the right action with the anti-automorphism $\tilde q \mapsto \tilde{q}^{\natural}$ gives a left representation $\operatorname{mat}_4^{R}(\tilde q) r = r \tilde{q}^{\natural}$, and the map $r \mapsto \bar{r}$ intertwines it with $\operatorname{mat}_4$, so the two regular representations are isomorphic.
 
 ## Representations of the Algebra
 
@@ -331,7 +331,7 @@ Two further sections complete the theory: the complexification $\mathbb{B} = \ma
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Complexified quaternion algebra, the biquaternion algebra |
 | $\rho : \mathbb{H} \to \operatorname{End}_F(V)$ | Representation |
 | $\rho_{\mathrm{reg}}$ | Regular representation |
-| $\rho_L, \rho_R$ | Left and right regular representations |
+| $\operatorname{mat}_4, \operatorname{mat}_4^{R}$ | Left and right regular representations |
 | $V^*$ | Dual representation |
 | $V \otimes W$ | Tensor product |
 | $\operatorname{Hom}_{\mathbb{H}}(V, W)$ | Space of homomorphisms |
