@@ -56,7 +56,7 @@
 <p>$$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3 = \sum_{\mu = 0}^{3} Q_\mu e_\mu, \qquad Q_\mu \in \mathbb{C},
 $$</p>
-<p>which identifies $\mathbb{B}$ with the coordinate space $\mathbb{C}^4$. The realization supplies a space and no action: the action is the $4 \times 4$ matrix of left multiplication in <em>The 4×4 Regular Matrix Element Representation of Biquaternions</em> and the $2 \times 2$ matrices of <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>. This article treats the coefficient space, the column and the dual row, the component form of the product, the four conjugations in coordinates, the six distinguished subspaces as coordinate conditions, and the biquaternion norm with its two real restrictions.</p>
+<p>which identifies $\mathbb{B}$ with the coordinate space $\mathbb{C}^4$. The realization supplies a space and no action: the action is the $4 \times 4$ matrix of left multiplication in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> and the $2 \times 2$ matrices of <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>. This article treats the coefficient space, the column and the dual row, the component form of the product, the four conjugations in coordinates, the six distinguished subspaces as coordinate conditions, and the biquaternion norm with its two real restrictions.</p>
 <p>The conventions are those of <em>Conventions in the Biquaternion Universe</em>, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, the scalar imaginary $i$ commutes with every unit, and the conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{*}$. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The physical dictionary writes a general element as a material coordinate plus an informational coordinate,</p>
 <p>$$
 \tilde{Q} = \underbrace{(ict)\,e_0 + \mathbf{x}}_{\in\,\mathbb{M}_-} \;+\; \underbrace{(ct')\,e_0 + i\mathbf{x}'}_{\in\,\mathbb{M}_+},
@@ -71,7 +71,7 @@ $$</p>
 <p>The index position is fixed by this definition. The component $Q^0$ is the <strong>scalar component</strong> and $Q^1, Q^2, Q^3$ are the <strong>vector components</strong>, the coefficients of the scalar and vector parts of $\tilde{Q}$ and nothing else. No raising or lowering of indices is introduced anywhere in this article, and the reason is stated below: on $\mathbb{C}^4$ there is no pairing with which to move an index.</p>
 <p><strong>Proposition.</strong> The map $\tilde{Q} \mapsto Q^\mu$ is a $\mathbb{C}$-linear isomorphism from $\mathbb{B}$ onto $\mathbb{C}^4$. The coefficient space therefore has complex dimension $4$ and real dimension $8$.</p>
 <p><strong>Proof.</strong> The map sends the basis $e_0, e_1, e_2, e_3$ to the standard basis of $\mathbb{C}^4$ and is extended by linearity; it is bijective on bases, and the action of a complex scalar on the coefficients is the same on both sides.</p>
-<p>The coefficient space is <strong>not</strong> the simple module of the algebra. The simple module has complex dimension $2$ and is the carrier of the spinor of the corpus; it is treated in <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>. The number $4$ recurs there and in <em>The 4×4 Regular Matrix Element Representation of Biquaternions</em> for two different reasons, and neither is a coincidence: the coefficient space is the algebra itself, of complex dimension $4$, and the regular representation is the algebra acting on itself, so its matrix is $4 \times 4$ for the same count.</p>
+<p>The coefficient space is <strong>not</strong> the simple module of the algebra. The simple module has complex dimension $2$ and is the carrier of the spinor of the corpus; it is treated in <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>. The number $4$ recurs there and in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> for two different reasons, and neither is a coincidence: the coefficient space is the algebra itself, of complex dimension $4$, and the regular representation is the algebra acting on itself, so its matrix is $4 \times 4$ for the same count.</p>
 <h3 id="the-real-and-imaginary-parts">The Real and Imaginary Parts</h3>
 <p>Each complex component splits into a real part and $i$ times a real part,</p>
 <p>$$
@@ -112,12 +112,12 @@ $$</p>
 <p>$$
 \widetilde{\tilde{Q}\tilde{R}} \longleftrightarrow \rho_L(\tilde{Q})\, R .
 $$</p>
-<p>The matrix $\rho_L(\tilde{Q})$ is the matrix of left multiplication; its entries are the coefficients of $\tilde{Q}$ with signs and no additions, and it is constructed and verified in <em>The 4×4 Regular Matrix Element Representation of Biquaternions</em>. The present article records only that the product admits this reading.</p>
+<p>The matrix $\rho_L(\tilde{Q})$ is the matrix of left multiplication; its entries are the coefficients of $\tilde{Q}$ with signs and no additions, and it is constructed and verified in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. The present article records only that the product admits this reading.</p>
 <p><strong>The row is the dual, not a further representation.</strong> The row $Q^{\mathsf{T}}$ is the element of the dual space paired with the column by the standard pairing, and the dual of a left module is a right module: it carries the <em>right</em> action, $(\varphi\cdot\tilde{Q})(\tilde{R}) = \varphi(\tilde{Q}\tilde{R})$. The transpose that relates the column picture to the row picture is dressed with quaternion conjugation, so that the transpose of the left matrix of $\tilde{Q}$ is the left matrix of the quaternion conjugate,</p>
 <p>$$
 \rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural}),
 $$</p>
-<p>which is proved in <em>The 4×4 Regular Matrix Element Representation of Biquaternions</em>. A column and a row are the same four complex numbers written in two layouts, and a change of layout is a change of bookkeeping, not a change of representation. The corpus counts three objects in this group — the coefficient space, the algebra acting on its simple module, and the algebra acting on itself — and it does not count the two layouts separately.</p>
+<p>which is proved in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. A column and a row are the same four complex numbers written in two layouts, and a change of layout is a change of bookkeeping, not a change of representation. The corpus counts three objects in this group — the coefficient space, the algebra acting on its simple module, and the algebra acting on itself — and it does not count the two layouts separately.</p>
 <h2 id="multiplication-in-four-vector-form">Multiplication in Four-Vector Form</h2>
 <p>The product of two biquaternions is computed from the basis and separates into a scalar component and three vector components.</p>
 <p><strong>Proposition (the product in components).</strong> Let $\tilde{Q}$ and $\tilde{R}$ be biquaternions with four-vectors $Q^\mu$ and $R^\mu$. Then the four-vector of the product has components</p>
@@ -178,7 +178,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The first row and the first column reproduce the basis, since $e_0$ is the identity. In the remaining $3 \times 3$ block the table is skew off the diagonal, $e_je_k = -e_ke_j$ for distinct $j,k$, while its diagonal entries are $-e_0$. The scalar component of a product is read from the diagonal of the table, which is why it carries $Q^0R^0 - \sum_k Q^kR^k$, and the vector components are read from the off-diagonal entries, which is why they carry both the symmetric scalar–vector part and the antisymmetric Levi-Civita term. The same table read as a map on the coefficient space is the regular matrix of <em>The 4×4 Regular Matrix Element Representation of Biquaternions</em>.</p>
+<p>The first row and the first column reproduce the basis, since $e_0$ is the identity. In the remaining $3 \times 3$ block the table is skew off the diagonal, $e_je_k = -e_ke_j$ for distinct $j,k$, while its diagonal entries are $-e_0$. The scalar component of a product is read from the diagonal of the table, which is why it carries $Q^0R^0 - \sum_k Q^kR^k$, and the vector components are read from the off-diagonal entries, which is why they carry both the symmetric scalar–vector part and the antisymmetric Levi-Civita term. The same table read as a map on the coefficient space is the regular matrix of <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>.</p>
 <h2 id="the-conjugations-in-coordinates">The Conjugations in Coordinates</h2>
 <p>The algebra carries the quaternion conjugation ${}^{\natural}$, the complex conjugation $\bar{\cdot}$, the Hermitian conjugation ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and the anti-Hermitian conjugation ${}^{\flat} = -{}^{*}$. In coordinates, quaternion conjugation negates the vector components, complex conjugation conjugates every component, and Hermitian conjugation does both.</p>
 <p><strong>Proposition (conjugations in coordinates).</strong> For a biquaternion with four-vector $Q^\mu$,</p>
@@ -285,37 +285,37 @@ $$</p>
 \mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}) = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}} = \mathbb{M}_+ \oplus \mathbb{M}_- .
 $$</p>
 <p>The first separates the scalar component from the three vector components, the second separates the real coefficients from the imaginary ones, and the third separates the material quadruples from the informational ones. The three splits are different, none is a refinement of another, and how they cross is the subject of <em>Relations Between Subspaces</em>.</p>
-<h3 id="the-centre-subspace-math226">The Centre Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
+<h3 id="the-centre-subspace-math231">The Centre Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
 <p>Two-dimensional and purely temporal, without a single spatial coordinate. The scalar coefficient is an arbitrary complex number carrying the two times, and the quadruple is $(Q_0, 0, 0, 0)$:</p>
 <p>$$
 \tilde{Q} = Q_0e_0 \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ 0,\ 0,\ 0) = (q_0 + iq'_0,\ 0,\ 0,\ 0) = (ct' + ict,\ 0,\ 0,\ 0),
 $$</p>
 <p>with $Q_0 = q_0 + iq'_0$, $q_0 = ct'$ and $q'_0 = ct$, and the biquaternion norm $N = Q_0^2 = c^2(t')^2 - c^2t^2 + 2i\,c^2t't$. It is the fixed space of quaternion conjugation, so quaternion conjugation acts on it as the identity — the axis of $\mathbb{B}$.</p>
-<h3 id="the-vector-subspace-math234">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
+<h3 id="the-vector-subspace-math239">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
 <p>Six-real-dimensional and purely spatial, the only one of the six that is not four- or two-dimensional. The scalar coefficient vanishes and each of the three vector coefficients is one material spatial coordinate together with one informational coordinate:</p>
 <p>$$
 \tilde{Q} = Q_1e_1 + Q_2e_2 + Q_3e_3 \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (0,\ Q_1,\ Q_2,\ Q_3) = (0,\ q_1 + iq'_1,\ q_2 + iq'_2,\ q_3 + iq'_3) = (0,\ x + ix',\ y + iy',\ z + iz'),
 $$</p>
 <p>where $Q_k = q_k + iq'_k$ with $q_k = x_k$ and $q'_k = x'_k$, and the biquaternion norm is $N = (x+ix')^2 + (y+iy')^2 + (z+iz')^2$. It is the anti-fixed space of quaternion conjugation and the spatial counterpart of the centre: the centre has the two times in one complex number, the vector subspace the two spaces in three.</p>
-<h3 id="the-quaternion-subspace-math240">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-quaternion-subspace-math245">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
 <p>The fixed space of complex conjugation: all four coefficients real, so the scalar imaginary plays no role at all, and the quadruple mixes the informational time with the material space,</p>
 <p>$$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (q_0,\ q_1,\ q_2,\ q_3) = (ct',\ x,\ y,\ z),
 $$</p>
 <p>with $Q_\mu = q_\mu$ real, $q_0 = ct'$ and $q_k = x_k$, and the biquaternion norm $N = c^2(t')^2 + \mathbf{x}^2$. The biquaternion norm is a sum of four squares with no minus sign, so it is positive definite and vanishes only at the zero element; the unit elements of this subspace are the rotation rotors.</p>
-<h3 id="the-antiquaternion-subspace-math246">The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-antiquaternion-subspace-math251">The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
 <p>The anti-fixed space of complex conjugation: all four coefficients purely imaginary, so the quadruple takes the other assignment of the two times and the two spaces,</p>
 <p>$$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (iq'_0,\ iq'_1,\ iq'_2,\ iq'_3) = (ict,\ ix',\ iy',\ iz'),
 $$</p>
 <p>with $Q_\mu = iq'_\mu$, $q'_0 = ct$ and $q'_k = x'_k$, and the biquaternion norm $N = -\big( c^2t^2 + (\mathbf{x}')^2 \big)$. It is $i$ times the quaternion subspace, and the biquaternion norm is the negative of a sum of four squares, so it too vanishes only at the zero element.</p>
-<h3 id="the-material-subspace-math253">The Material Subspace $\mathbb{M}_-$</h3>
+<h3 id="the-material-subspace-math258">The Material Subspace $\mathbb{M}_-$</h3>
 <p>The anti-fixed space of Hermitian conjugation: a purely imaginary scalar coefficient and three real vector coefficients, three real components and one imaginary one,</p>
 <p>$$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (iq'_0,\ q_1,\ q_2,\ q_3) = (ict,\ x,\ y,\ z),
 $$</p>
 <p>with $Q_0 = iq'_0$, $Q_k = q_k$, $q'_0 = ct$ and $q_k = x_k$, and the biquaternion norm $N = -c^2t^2 + \mathbf{x}^2$. The single minus sign is the $ict$ convention, and the signature $(3,1)$ of the biquaternion norm is the Minkowski one: this is the home of the four-vectors of relativistic physics.</p>
-<h3 id="the-informational-subspace-math262">The Informational Subspace $\mathbb{M}_+$</h3>
+<h3 id="the-informational-subspace-math267">The Informational Subspace $\mathbb{M}_+$</h3>
 <p>The fixed space of Hermitian conjugation: a real scalar coefficient and three purely imaginary vector coefficients,</p>
 <p>$$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (q_0,\ iq'_1,\ iq'_2,\ iq'_3) = (ct',\ ix',\ iy',\ iz'),
@@ -400,7 +400,7 @@ $$</p>
 <p>The four coefficients read as four coordinates, and the article's own reading is the four-vector. Read on the clock, the scalar coefficient is the central coordinate and the three vector coefficients are the spatial part, so the representation is the framework's temporal/spatial split at the level of coordinates. Read on the four conjugations, the real and the imaginary parts of a coefficient are the two sectors, so a coordinate and a sector are two readings of one number, which is the dictionary the physics articles use without restating it.</p>
 <p>The four complex coordinates are read as a <strong>spacetime event carrying an internal state</strong>: the eight real parameters are the four coordinates the $ict$ convention realises together with the four internal data on which the phase and the sector act, so one element is a point of spacetime and its internal label at once.</p>
 <h2 id="summary">Summary</h2>
-<p>The four-vector representation reads a biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ as its quadruple of complex coefficients $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$, with $Q^0 = Q_0$ the scalar component and $(Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3)$ the vector components. It is a $\mathbb{C}$-linear isomorphism onto $\mathbb{C}^4$, of complex dimension four and real dimension eight, and it supplies the space on which the regular operator of <em>The 4×4 Regular Matrix Element Representation of Biquaternions</em> is written. Physically, each complex coefficient carries one material and one informational coordinate: $Q^0 = ct' + ict$ and $Q^k = x_k + ix'_k$, so that the material four-vector is the quadruple $(ict, x, y, z)$ with a purely imaginary scalar entry, that is $Q^0 = iq'_0$ with $q'_0 = ct$.</p>
+<p>The four-vector representation reads a biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ as its quadruple of complex coefficients $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$, with $Q^0 = Q_0$ the scalar component and $(Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3)$ the vector components. It is a $\mathbb{C}$-linear isomorphism onto $\mathbb{C}^4$, of complex dimension four and real dimension eight, and it supplies the space on which the regular operator of <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> is written. Physically, each complex coefficient carries one material and one informational coordinate: $Q^0 = ct' + ict$ and $Q^k = x_k + ix'_k$, so that the material four-vector is the quadruple $(ict, x, y, z)$ with a purely imaginary scalar entry, that is $Q^0 = iq'_0$ with $q'_0 = ct$.</p>
 <p>The product in components has scalar part $Q^0R^0 - \sum_k Q^kR^k$ and vector part $Q^0R^i + R^0Q^i + \sum_{j,k}\epsilon^{ijk}Q^jR^k$, and the Levi-Civita term is the only trace of non-commutativity; the commutator is twice the cross product of the vector parts and lies in the complex space sector. The three involutions ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ act by negating the vector components, conjugating every component, and doing both, and the six distinguished subspaces are the resulting coordinate conditions: the informational sector is the quadruples with real scalar component and purely imaginary vector components, the material sector the transpose of that condition. The biquaternion norm is $\sum_\mu (Q^\mu)^2$, with all four signs positive on $\mathbb{C}^4$ because each quaternion unit squares to $-e_0$ and the cross terms cancel; it restricts to signature $(3,1)$ on the material sector, where it is the Minkowski interval $-c^2t^2 + \mathbf{x}^2$, and to signature $(1,3)$ on the informational sector, and it vanishes exactly on the zero divisors, which are the light cone.</p>
 <p>The four-vectors of relativistic physics are the material elements: the four-position with biquaternion norm the interval, the four-velocity with biquaternion norm the constant $-c^2$, the four-momentum with biquaternion norm $-m^2c^2$ on the mass shell, the four-current and four-potential with their respective biquaternion norms, and the gradient, whose biquaternion norm is the d'Alembertian $\Box = \partial_{ict}^2 + \Delta$. The index on $Q^\mu$ is never raised or lowered, because the coefficient space carries no metric of its own; the $ict$ convention carries the metric in the coefficient, and the explicit metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ is the level-2 form used when a contraction is written out.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -442,7 +442,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\rho_L(\tilde{Q})$, $\rho_R(\tilde{Q})$</td>
-<td>Matrices of left and right multiplication, constructed in <em>The 4×4 Regular Matrix Element Representation of Biquaternions</em>; $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural})$</td>
+<td>Matrices of left and right multiplication, constructed in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>; $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural})$</td>
 </tr>
 <tr>
 <td>$\epsilon^{ijk}$</td>

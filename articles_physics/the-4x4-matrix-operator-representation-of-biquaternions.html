@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The 4×4 Regular Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions — Biquaternion Universe</title>
+  <title>The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -50,10 +50,10 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-44-regular-matrix-operator-representation-math0-of-biquaternions"><strong>The 4×4 Regular Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions</strong></h1>
+        <h1 id="the-44-matrix-operator-representation-math0-of-biquaternions"><strong>The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>Physically this is the statement, already made in the element article, that the Lorentz transformation of a four-vector is a product of a left multiplication and a right multiplication in the algebra; what is added here is that the product is a matrix whose invariants are real and non-negative, so that the transformation the algebra performs is measured by two scalars.</p>
-<p>The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The left and right regular representations $\rho_L, \rho_R$ of $\mathbb{B}$ on itself, in the coefficient basis $e_0, e_1, e_2, e_3$, are those of <em>The 4×4 Regular Matrix Element Representation of Biquaternions</em>.</p>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The left and right regular representations $\rho_L, \rho_R$ of $\mathbb{B}$ on itself, in the coefficient basis $e_0, e_1, e_2, e_3$, are those of <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>.</p>
 <p>That article writes an element as an operator by <em>one</em> of its two multiplications, and finds the matrix of left multiplication, $\rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{R}$, with $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^{2}$ and $\operatorname{Tr}\rho_L(\tilde{Q}) = 4Q_0$. This article writes the Hermitian sandwich of <em>Biquaternion Rotations and Lorentz Transformations</em> in the same basis,</p>
 <p>$$
 \operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\,\tilde S\,\tilde{Q}^{*},
@@ -111,7 +111,7 @@ $$</p>
 $$</p>
 <p>so that $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = 4$ off the light cone, $1$ on it for $\tilde{Q} \neq 0$, and $0$ only at $\tilde{Q} = 0$.</p>
 <p><strong>Proof.</strong> Write the singular value decomposition $\Phi(\tilde{Q}) = P\Sigma V^{\dagger}$ with $P, V$ unitary and $\Sigma = \operatorname{diag}(\sigma_1,\sigma_2)$, $\sigma_j \geq 0$. In the matrix realization the operator is $X \mapsto \Phi(\tilde{Q})X\Phi(\tilde{Q})^{\dagger} = P\Sigma(V^{\dagger}XV)\Sigma P^{\dagger}$. As $X$ runs over $M_2(\mathbb{C})$ so does $V^{\dagger}XV$, and $\Sigma Y\Sigma$ has entries $\sigma_i\sigma_j Y_{ij}$, so the image is exactly the coordinate subspace spanned by the matrix units $E_{ij}$ with $\sigma_i\sigma_j \neq 0$, of complex dimension $(\#\{j : \sigma_j \neq 0\})^{2}$; conjugation by the fixed invertible $P$ does not change that dimension. The number of nonzero singular values is $\operatorname{rank}\Phi(\tilde{Q})$, which is $2$ off the cone, $1$ for a nonzero zero divisor, and $0$ only at $\tilde{Q} = 0$.</p>
-<h2 id="the-case-math112">The Case $N(\tilde{Q}) \neq 0$</h2>
+<h2 id="the-case-math113">The Case $N(\tilde{Q}) \neq 0$</h2>
 <p>Off the light cone the results above give a complete picture.</p>
 <p><strong>Theorem (the invertible case).</strong> Let $N(\tilde{Q}) \neq 0$. Then $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = 4$, the operator lies in $GL(4,\mathbb{C})$, it preserves the rank of every argument, and in the coefficient basis it is a congruence by the invertible matrix $\rho_L(\tilde{Q})$. In the notation of the two regular maps,</p>
 <p>$$
@@ -132,7 +132,7 @@ $$</p>
 <p>The trace and the determinant are real, in agreement with the theorem; the matrix itself is not Hermitian, and its eigenvalues are $\{2, 2, 2i, -2i\}$, which are the four general products $\lambda_i\bar{\lambda}_j$ of the eigenvalues $\lambda = 1 \pm i$ of $\Phi(e_0+e_1)$: $(1+i)(1-i) = 2$ twice, and $(1\pm i)^2 = \pm 2i$.</p>
 <p><strong>Example (a physical boost).</strong> For the rotor $\tilde{Q} = \tfrac53e_0 + \tfrac43ie_3$ of <em>Biquaternion Rotations and Lorentz Transformations</em>, of norm one and of rapidity $\psi = 2\ln 3$, the matrix is $\Phi(\tilde{Q}) = \mathrm{diag}(3,\tfrac13)$, so the operator has the four eigenvalues $9, 1, 1, \tfrac19$, of determinant $1 = \lvert N\rvert^{4}$ and trace $\tfrac{100}{9} = 4(\tfrac53)^{2}$; the eigenvalue $9 = e^{\psi}$ is the doubled rapidity, the operand having stored $3 = e^{\psi/2}$.</p>
 <p><strong>The operator group.</strong> Restricted to the unit-norm slice, the set of operators is the image of $SL(2,\mathbb{C})$ and is the Lorentz group with kernel $\{\pm e_0\}$; over all units it is the set of dilated Lorentz transformations $\mathbb{R}_{>0} \times SO^{+}(1,3)$, and it has lost the phase circle. The geometric statement, the action on the six subspaces and the orbits are <em>Biquaternion Rotations and Lorentz Transformations</em> and <em>The Sandwich Action in Subspaces</em>.</p>
-<h2 id="the-case-math141">The Case $N(\tilde{Q}) = 0$</h2>
+<h2 id="the-case-math142">The Case $N(\tilde{Q}) = 0$</h2>
 <p>On the light cone the two factors of the product are singular, and the operator collapses.</p>
 <p><strong>Theorem (the singular case).</strong> Let $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q} \neq 0$. Then $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = 1$, and</p>
 <p>$$
@@ -163,7 +163,7 @@ $$</p>
 <p>The contrast between the two examples is the whole content of the two regimes at matrix level: both operators have rank one and determinant zero, both send the whole coefficient space onto one line, and they are separated by the single real number $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$, which vanishes exactly when the collapse is nilpotent. In the invertible case the determinant is $\lvert N(\tilde{Q})\rvert^{4} \neq 0$ and no collapse occurs at all.</p>
 <p>Physically, off the light cone the operand is a legitimate frame change and the operator is invertible; on the light cone the operand is a null direction and its operator is singular, able to create nothing but a single lightlike Hermitian line, so a null element generates no motion. This is the operator form of the identification of the light cone with the zero-divisor locus of the algebra, whose causal use is <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
 <p><strong>Reading (rank is mass, the determinant is the interval).</strong> The matrix $\Phi(\tilde{Q})$ carries two numbers that read as two physical data: its <strong>rank</strong>, which is two for an invertible operand and one for a null one, and its <strong>determinant</strong>, which is the biquaternion norm, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$. Read physically, the rank is the <strong>mass</strong>: rank two is the massive case and rank one the massless case, and the mass shell is the vanishing of the determinant, so that an operand is massless exactly when its matrix loses a dimension. The interval is the <strong>determinantal modulus</strong>, $\lvert\det\Phi(\tilde{Q})\rvert = \lvert N(\tilde{Q})\rvert$, and the determinant of the operator itself is $\lvert N(\tilde{Q})\rvert^{4}$, the fourth power of that modulus. The reading is the matrix form of "mass is $\lvert N\rvert$", and its boundary is that the algebra supplies the rank and the determinant and no mass value: it fixes which operands are massive and which are not, and not the spectrum.</p>
-<h2 id="the-real-math178-form">The Real $8 \times 8$ Form</h2>
+<h2 id="the-real-math179-form">The Real $8 \times 8$ Form</h2>
 <p>Regarded over $\mathbb{R}$ in the basis $e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$, the operator is real-linear and is an $8 \times 8$ real matrix; the element article performs the same realification for $\rho_L$. The eight coordinates are the eight real parameters of the framework, so in this form the operator is the transformation of the material and informational four-vectors written as one real linear map.</p>
 <p><strong>Proposition (the realified operator).</strong> The realification of $\operatorname{H}_{\tilde{Q}}$ satisfies</p>
 <p>$$

@@ -57,7 +57,7 @@
 \mathbb{B} \cong M_2(\mathbb{C}),
 $$</p>
 <p>and the isomorphism is written $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ throughout. A biquaternion and a $2 \times 2$ complex matrix are the same object written twice, and this is the form in which every statement about the algebra becomes an arithmetic check: the trace reads off the scalar part, the determinant <strong>is</strong> the biquaternion norm, invertibility becomes non-vanishing determinant, the Hermitian subspace becomes the Hermitian matrices, and the minimal left ideals become the matrix columns.</p>
-<p>The article supplies the $2 \times 2$ matrices that carry a single chirality, that is, the simple module $S = \mathbb{C}^2$ on which the algebra acts irreducibly. Its coefficient space is that of <em>The Four-Vector Element Representation of Biquaternions</em>, the left multiplication written on that space is that of <em>The 4×4 Regular Matrix Element Representation of Biquaternions</em>, and that representation is the direct sum $S \oplus S$ of two copies of the simple module treated here. The article states the assignment, checks that the four basis matrices multiply as the four units do, notes why the signs cannot be chosen differently, and reads off the invariants, the six subspaces, the two ideals as columns, the conjugations, and the spin and qubit structures.</p>
+<p>The article supplies the $2 \times 2$ matrices that carry a single chirality, that is, the simple module $S = \mathbb{C}^2$ on which the algebra acts irreducibly. Its coefficient space is that of <em>The Four-Vector Element Representation of Biquaternions</em>, the left multiplication written on that space is that of <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>, and that representation is the direct sum $S \oplus S$ of two copies of the simple module treated here. The article states the assignment, checks that the four basis matrices multiply as the four units do, notes why the signs cannot be chosen differently, and reads off the invariants, the six subspaces, the two ideals as columns, the conjugations, and the spin and qubit structures.</p>
 <p>The assignment is fixed here. It is not free: it is used identically by the spin, qubit, Bell-state, Dirac and Fock-space articles, and the two conventions a reader is likely to meet elsewhere do not agree with it.</p>
 <h2 id="the-representation">The Representation</h2>
 <p>The isomorphism is written $\Phi$. It converts a biquaternion into a $2 \times 2$ complex matrix,</p>
@@ -229,7 +229,7 @@ $$</p>
 q_0 = ct', \quad q'_0 = ct, \quad q_1 = x, \quad q_2 = y, \quad q_3 = z, \quad q'_1 = x', \quad q'_2 = y', \quad q'_3 = z' ,
 $$</p>
 <p>the unprimed slot carrying the informational time $ct'$ and the material space $\mathbf{x}$, the primed slot the material time $ct$ and the informational space $\mathbf{x}'$.</p>
-<h3 id="the-centre-subspace-math173">The Centre Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
+<h3 id="the-centre-subspace-math174">The Centre Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
 <p>The centre subspace, the fixed space of quaternion conjugation ${}^{\natural}$: the elements $Q_0e_0$ with $Q_0$ complex, carried onto the scalar matrices,</p>
 <p>$$
 \Phi(\tilde{Q}) = Q_0\,\Phi(e_0) = \begin{pmatrix} Q_0 & 0 \\ 0 & Q_0 \end{pmatrix}
@@ -241,7 +241,7 @@ $$</p>
 \tilde{Q} = q_0e_0 + q'_0(ie_0) = ct'\,e_0 + ict\,e_0 ,
 $$</p>
 <p>the informational time and the material time. It is the only one of the six of real dimension two, and the only commutative one; the vector subspace and the four four-dimensional ones are the rest.</p>
-<h3 id="the-vector-subspace-math184">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
+<h3 id="the-vector-subspace-math185">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
 <p>The complement of the centre subspace: the elements with no scalar part, those with $\mathrm{Sc}(\tilde{Q}) = 0$, carried onto the <strong>traceless</strong> matrices,</p>
 <p>$$
 \Phi(\tilde{Q}) = \begin{pmatrix} -iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & iQ_3 \end{pmatrix}
@@ -253,7 +253,7 @@ $$</p>
 \tilde{Q} = q_1e_1 + q_2e_2 + q_3e_3 + q'_1(ie_1) + q'_2(ie_2) + q'_3(ie_3) = \mathbf{x} + i\mathbf{x}' ,
 $$</p>
 <p>so its real and imaginary parts are the material and the informational space block, $\mathrm{Vect}(\mathbb{B}) = X_{\mathrm{m}} \oplus X_{\mathrm{i}}$: it takes one spatial block from $\mathbb{M}_+$ and one from $\mathbb{M}_-$, the spatial counterpart of the centre subspace's two temporal blocks. Reading its entries back off the traceless matrix returns the three complex coefficients $Q_k = q_k + iq'_k$, whose real and imaginary parts are the two spatial vectors. Its determinant is the biquaternion norm with the scalar term dropped, $\det = Q_1^2 + Q_2^2 + Q_3^2$.</p>
-<h3 id="the-quaternion-subspace-math201">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-quaternion-subspace-math202">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
 <p>The real-quaternion subspace, the fixed space of complex conjugation $\bar{\cdot}$: the elements with all four $q_\mu$ real, carried from the basis $\{e_0, e_1, e_2, e_3\}$ onto the four basis images themselves,</p>
 <p>$$
 \big\{\, \Phi(e_0),\ \Phi(e_1),\ \Phi(e_2),\ \Phi(e_3) \,\big\},
@@ -274,7 +274,7 @@ $$</p>
 \det = |z|^2 + |w|^2 = q_0^2 + q_1^2 + q_2^2 + q_3^2 ,
 $$</p>
 <p>a sum of squares, which vanishes only at the zero element. This is a four-<strong>real</strong>-dimensional set, not the four-dimensional complex space of all matrices with $z, w \in \mathbb{C}$, and on it the determinant is <strong>definite</strong> — which is the matrix reason $\mathbb{H}$ is a division algebra while $\mathbb{B}$ is not. Removing the complex coefficients from the algebra makes the biquaternion norm positive definite, and that is all that separates the two cases.</p>
-<h3 id="the-antiquaternion-subspace-math225">The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-antiquaternion-subspace-math226">The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
 <p>The anti-fixed space of complex conjugation: the elements with all four $q'_\mu$ real, carried from the basis $\{ie_0, ie_1, ie_2, ie_3\}$ onto $i$ times the four basis images,</p>
 <p>$$
 \big\{\, i\Phi(e_0),\ i\Phi(e_1),\ i\Phi(e_2),\ i\Phi(e_3) \,\big\}.
@@ -291,7 +291,7 @@ $$</p>
 $$</p>
 <p>with the same double duty of the letter $z'$, resolved there too by the combination $q'_0 - iq'_3$.</p>
 <p>The determinant changes sign with the factor, $\det = -((q'_0)^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2)$, <strong>negative definite</strong> — the exact mirror of the definite form on $\mathbb{H}_{\mathbb{B}}$. Together the two images exhaust $M_2(\mathbb{C})$, so the real-and-imaginary split of the algebra is, in matrix language, the split of $M_2(\mathbb{C})$ into the quaternion matrices and $i$ times them.</p>
-<h3 id="the-informational-subspace-math247">The Informational Subspace $\mathbb{M}_+$</h3>
+<h3 id="the-informational-subspace-math248">The Informational Subspace $\mathbb{M}_+$</h3>
 <p>The Hermitian subspace, the fixed space of ${}^{*}$: the elements with $q_0, q'_1, q'_2, q'_3$ real, carried from the basis $\{e_0, ie_1, ie_2, ie_3\}$ onto the four matrices</p>
 <p>$$
 \big\{\, \Phi(e_0),\ i\Phi(e_1),\ i\Phi(e_2),\ i\Phi(e_3) \,\big\}
@@ -313,7 +313,7 @@ $$</p>
 \det\Phi(\tilde{Q}) = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 ,
 $$</p>
 <p>the mirror interval of signature $(1,3)$, read on the informational coordinate $(ct')\,e_0 + i\,x'\,e_1 + i\,y'\,e_2 + i\,z'\,e_3$, that is $q_0 = ct'$, $q'_1 = x'$, $q'_2 = y'$, $q'_3 = z'$.</p>
-<h3 id="the-material-subspace-math266">The Material Subspace $\mathbb{M}_-$</h3>
+<h3 id="the-material-subspace-math267">The Material Subspace $\mathbb{M}_-$</h3>
 <p>The anti-Hermitian subspace, the fixed space of $\flat$: the elements with $q'_0, q_1, q_2, q_3$ real, carried from the basis $\{ie_0, e_1, e_2, e_3\}$ onto the four matrices</p>
 <p>$$
 \big\{\, i\Phi(e_0),\ \Phi(e_1),\ \Phi(e_2),\ \Phi(e_3) \,\big\}

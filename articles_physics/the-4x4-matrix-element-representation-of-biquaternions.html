@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The 4×4 Regular Matrix Element Representation of Biquaternions — Biquaternion Universe</title>
+  <title>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -50,7 +50,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-44-regular-matrix-element-representation-of-biquaternions"><strong>The 4×4 Regular Matrix Element Representation of Biquaternions</strong></h1>
+        <h1 id="the-44-matrix-element-representation-math0-of-biquaternions"><strong>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The physical point comes first. The rotor group $\{\tilde{\Lambda} : N(\tilde{\Lambda}) = e_0\}$ acts on the material sector $\mathbb{M}_-$ by the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, and that map is literally the product of the left copy of $\tilde{\Lambda}$ with the right copy of $\tilde{\Lambda}^{*}$ acting on the four-vector: in the regular representation the Lorentz transformation of a four-vector is a product of two multiplications in the algebra.</p>
 <p>The <strong>regular representation</strong> of the biquaternion algebra is the algebra acting on itself on the left. Multiplication on the left by a fixed element is a linear map of the four-dimensional space $\mathbb{B}$ to itself, so in the basis $e_0, e_1, e_2, e_3$ it is a $4 \times 4$ complex matrix. This article constructs that matrix and its companion for multiplication on the right, proves that the two constructions are multiplicative, and reads off the consequences: the determinant is the <strong>square</strong> of the biquaternion norm and the trace is four times the scalar part; the regular module is the direct sum of two copies of the simple module, which in this corpus are the two <strong>chiralities</strong>; the centralizer of the left copy is the right copy; and the two copies together give the two-sided action by which a Lorentz transformation of a four-vector is written.</p>
@@ -285,7 +285,7 @@ $$</p>
 <p>For the four-position, with $q'_0 = ct$ and $\mathbf{q} = \mathbf{x}$, the determinant of the regular matrix is the <strong>square of the interval</strong>: for $ct = 2$ and $\mathbf{x} = (1, \tfrac12, \tfrac12)$ the interval is the rational number $-4 + 1 + \tfrac14 + \tfrac14 = -\tfrac52$, and the regular matrix has determinant $\tfrac{25}{4}$, real and positive. For the four-momentum the on-shell biquaternion norm is $-m^2c^2$, so the regular matrix has determinant $m^4c^4$.</p>
 <p><strong>The regular matrix is singular exactly on the light cone.</strong> Since $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$, the regular matrix of an element fails to be invertible exactly when $N(\tilde{Q}) = 0$, that is, exactly on the zero-divisor cone. For a material four-vector that is the light cone $-c^2t^2 + \mathbf{x}^2 = 0$; for the four-momentum it is the massless case $m = 0$. The physical statement and the algebraic one are the same: a four-vector is a zero divisor of the algebra exactly when it is null, and the determinant of the regular representation is the test. Moreover the determinant is a <strong>square</strong>, and the square has a physical reading: the four-vector is the direct sum of two chiral copies, and each copy carries one factor of the biquaternion norm.</p>
 <p><strong>Remark (the determinant is not the biquaternion norm).</strong> The simple module carries the biquaternion norm as its determinant, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$, and the regular module is the direct sum of two copies of it, so its determinant is the product of two biquaternion norms. The square appears because the regular representation acts on a space of twice the dimension, and the factor $2$ is the number of chiralities. Squaring does not change the zero set, which is why the light-cone statement survives the doubling, but it does change the degree: an identity that holds for $N$ to the first power in the 2×2 article holds only for $N^2$ here.</p>
-<h2 id="the-regular-matrix-of-a-four-vector">The Regular Matrix of a Four-Vector</h2>
+<h2 id="the-matrix-of-a-four-vector">The Matrix of a Four-Vector</h2>
 <p>The general results above, read on the material sector, give the four-vector a $4 \times 4$ matrix of its own, and that matrix is the object the operator articles multiply by.</p>
 <p><strong>Proposition.</strong> For $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 \in \mathbb{M}_-$ with real components, the left regular matrix is the matrix displayed at the end of the first section, with</p>
 <p>$$
@@ -405,7 +405,7 @@ $$</p>
 = \begin{pmatrix} iq'_0 & -q_1 & -q_2 & -q_3 \\ q_1 & iq'_0 & -q_3 & q_2 \\ q_2 & q_3 & iq'_0 & -q_1 \\ q_3 & -q_2 & q_1 & iq'_0 \end{pmatrix}
 = \begin{pmatrix} ict & -x & -y & -z \\ x & ict & -z & y \\ y & z & ict & -x \\ z & -y & x & ict \end{pmatrix},
 $$</p>
-<p>with $q'_0 = ct$ and $q_k = x_k$ real, $\operatorname{Tr}\rho_L = 4ict$ and $\det\rho_L = \big( -c^2t^2 + \mathbf{x}^2 \big)^2$. It is the matrix displayed in <em>The Regular Matrix of a Four-Vector</em>. It is <strong>anti-Hermitian</strong>, and its determinant is the square of the Minkowski interval, so it is singular exactly on the light cone: a four-vector is a zero divisor of the algebra exactly when it is null.</p>
+<p>with $q'_0 = ct$ and $q_k = x_k$ real, $\operatorname{Tr}\rho_L = 4ict$ and $\det\rho_L = \big( -c^2t^2 + \mathbf{x}^2 \big)^2$. It is the matrix displayed in <em>The Matrix of a Four-Vector</em>. It is <strong>anti-Hermitian</strong>, and its determinant is the square of the Minkowski interval, so it is singular exactly on the light cone: a four-vector is a zero divisor of the algebra exactly when it is null.</p>
 <p><strong>Why the informational sector is Hermitian and the material one anti-Hermitian.</strong> The two displays are not a coincidence: the left regular representation is a $*$-homomorphism for Hermitian conjugation,</p>
 <p>$$
 \rho_L(\tilde{Q})^{\dagger} = \rho_L\big( \tilde{Q}^{*} \big),

@@ -53,10 +53,10 @@
         <h1 id="biquaternion-objects-and-their-matrix-correspondences"><strong>Biquaternion Objects and Their Matrix Correspondences</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion algebra carries one distinguished algebra isomorphism $\Phi$ to the $2\times2$ complex matrices and one distinguished complete realization $\rho_L$, the left regular map, in the $4\times4$ complex matrices. Every named object of the algebra — the algebra, its unit group, its norm-one group, its centre, its automorphism group — has an image under both, and the two images are related: the regular map is the isomorphism taken twice.</p>
-<p>This article collects those images in a table and comments on them row by row. It is an index, not a source: the isomorphism $\Phi$ is owned by <em>Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$</em>, the map $\rho_L$ by <em>Biquaternion 4×4 Regular Matrix Element Representation</em>, the objects themselves by their own articles, and the observation that the two agree in the way described below by <em>Introduction to the 4×4 Regular Matrix Representation of Biquaternions</em>. No new result is claimed and no physical vocabulary is used.</p>
+<p>This article collects those images in a table and comments on them row by row. It is an index, not a source: the isomorphism $\Phi$ is owned by <em>Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$</em>, the map $\rho_L$ by <em>Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$</em>, the objects themselves by their own articles, and the observation that the two agree in the way described below by <em>Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. No new result is claimed and no physical vocabulary is used.</p>
 <p>The two maps are written down first, then tabulated, then read one object at a time. The table carries, beside each object and its two images, a column of the other realizations of the same object, and a column of the sets and correspondences attached to it. A closing section collects the classical groups that appear — $Sp(1)=S^3$, $SU(2)$, $SO(3)$, $SO^{+}(1,3)$ and $\mathrm{Spin}(1,3)$ — with the two double covers that relate them.</p>
 <h2 id="the-two-correspondences">The Two Correspondences</h2>
-<h3 id="the-isomorphism-math12">The Isomorphism $\Phi$</h3>
+<h3 id="the-isomorphism-math14">The Isomorphism $\Phi$</h3>
 <p>The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0,e_1,e_2,e_3$ and central imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, and the norm is $N(\tilde{Q})=\sum_\mu Q_\mu^2$. On the algebra, ${}^{\dagger}$ denotes Hermitian conjugation, the composition of quaternion conjugation with complex conjugation, with fixed space the Hermitian sector $\mathbb{M}_+$ and anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$.</p>
 <p>The map</p>
 <p>$$
@@ -82,7 +82,7 @@ $$</p>
 \operatorname{tr}\Phi(\tilde{Q})=2Q_0,\qquad
 \det\Phi(\tilde{Q})=N(\tilde{Q}).
 $$</p>
-<h3 id="the-left-regular-map-math29">The Left Regular Map $\rho_L$</h3>
+<h3 id="the-left-regular-map-math31">The Left Regular Map $\rho_L$</h3>
 <p>The map</p>
 <p>$$
 \rho_L:\mathbb{B}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
@@ -228,22 +228,22 @@ $$</p>
 </table></div>
 <p>The two dimension columns are read as follows. $\dim_{\mathbb{C}}$ is the complex dimension, the number of complex parameters: the complex dimension of the group when the object is complex, and the complex dimension of the complex group of which it is a real form when it is not. It follows that $\dim_{\mathbb{R}}=2\dim_{\mathbb{C}}$ for a complex object and $\dim_{\mathbb{R}}=\dim_{\mathbb{C}}$ for a real form, so the two columns agree exactly when the object carries no complex structure. A group and its matrix image have the same dimension, so the two columns apply to the second and the third column at once.</p>
 <h2 id="the-objects-one-by-one">The Objects One by One</h2>
-<h3 id="the-algebra-math182">The Algebra $\mathbb{B}$</h3>
+<h3 id="the-algebra-math184">The Algebra $\mathbb{B}$</h3>
 <p><strong>Definition.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension $4$ and real dimension $8$, with the product on the basis $e_0,e_1,e_2,e_3$ of the quaternions and the central $i$ commuting with everything.</p>
 <p><strong>$2\times2$.</strong> The image is all of $M_2(\mathbb{C})$, and the correspondence is an isomorphism, not merely an injective map. The inverse of the display above reads an arbitrary matrix back to its biquaternion. The trace sees only the scalar part, and the determinant is the norm, which is why invertibility of the matrix and invertibility of the element are the same condition.</p>
 <p><strong>$4\times4$.</strong> The image is the four-dimensional family of left-multiplication operators, and in the column-adapted basis each one is the block-diagonal doubling of its $2\times2$ image. The trace is $4Q_0$ and the determinant is $N^2$, so the determinant is the square of the $2\times2$ determinant; this is the general fact that the determinant of a direct sum is the product of the determinants of its summands, applied to $\rho_L\cong\Phi\oplus\Phi$.</p>
 <p><strong>Other.</strong> The coefficient column is the realization the physics articles write a field in; the Clifford identification is the one in which the spinor module is natural, since the bivectors act on it as the matrices do; the realification is the same algebra read over $\mathbb{R}$, where it is $\mathbb{R}^8$ and the matrices are twice as large.</p>
-<h3 id="the-unit-group-math198">The Unit Group $\mathbb{B}^{\times}$</h3>
+<h3 id="the-unit-group-math200">The Unit Group $\mathbb{B}^{\times}$</h3>
 <p><strong>Definition.</strong> $\mathbb{B}^{\times}=\{\tilde{Q}:N(\tilde{Q})\neq0\}$, the invertible elements, of complex dimension $4$ and real dimension $8$. It is an open dense subset of the algebra, hence a complex Lie group of the same dimension as the algebra, since the condition is the nonvanishing of the determinant.</p>
 <p><strong>$2\times2$.</strong> The image is $GL(2,\mathbb{C})$, by the identity $\det\Phi(\tilde{Q})=N(\tilde{Q})$. This is the cleanest statement of the group of units in the whole corpus: it is reached by applying the isomorphism and then taking the determinant.</p>
 <p><strong>$4\times4$.</strong> The image is block-diagonal with both blocks in $GL(2,\mathbb{C})$, by $\det\rho_L=N^2$. The two blocks carry the same information, so no hypothesis is gained or lost by passing to the larger realization.</p>
 <p><strong>Other.</strong> Every unit factors as a central scalar times a norm-one element, $\tilde{Q}=N(\tilde{Q})^{1/2}\,\tilde{U}$ with $N(\tilde{U})=1$, and the central factor is fixed only up to a sign, so the group is the quotient $(\mathbb{C}^{\times}\times SL(2,\mathbb{C}))/\{\pm1\}$ along the diagonal. It is not simply connected: the central circle contributes a copy of $\mathbb{Z}$ to the fundamental group. Only its norm-one subgroup is the spin group.</p>
-<h3 id="the-norm-one-group-math212">The Norm-One Group $\mathbb{B}^{\times}_1$</h3>
+<h3 id="the-norm-one-group-math214">The Norm-One Group $\mathbb{B}^{\times}_1$</h3>
 <p><strong>Definition.</strong> $\mathbb{B}^{\times}_1=\{\tilde{Q}:N(\tilde{Q})=1\}$, the level set of the norm at $1$, of complex dimension $3$ and real dimension $6$. It is a group under multiplication because the norm is multiplicative; the gradient of the norm is $2\tilde{Q}$, which never vanishes on the level set, so the set is a submanifold; and it is connected, simply connected and non-compact.</p>
 <p><strong>$2\times2$.</strong> The image is $SL(2,\mathbb{C})$, the matrices of determinant one, by $\det\Phi=N$. This is the realization in which the group is normally met, and it is the one in which the double cover of the Lorentz group is computed.</p>
 <p><strong>$4\times4$.</strong> The image is block-diagonal with both blocks in $SL(2,\mathbb{C})$. Each block is one copy of the spinor action, and the two copies carry the same group element.</p>
 <p><strong>Other.</strong> The group is the spin group $\mathrm{Spin}(1,3)$, and as a set it is the complexification of the sphere $S^3$, which is the reason it is non-compact: the complexification of a compact group is compact only in trivial cases. It is the universal cover of $SO^{+}(1,3)$, the covering being two-to-one. <strong>Its elements are exactly the rotors of the Lorentz transformations</strong>: the sandwich $\tilde{Q}\mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ of a norm-one element is an isometry, because $N(\tilde{\Lambda})=1$ gives $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*})=N(\tilde{Q})$, and every proper orthochronous Lorentz transformation arises this way, uniquely up to the sign of $\tilde{\Lambda}$.</p>
-<h3 id="the-unit-quaternions-math230">The Unit Quaternions $S^3=Sp(1)$</h3>
+<h3 id="the-unit-quaternions-math232">The Unit Quaternions $S^3=Sp(1)$</h3>
 <p><strong>Definition.</strong> $S^3=\mathbb{H}_{\mathbb{B}}\cap\mathbb{B}^{\times}_1$, the norm-one elements of the quaternion subspace, of real dimension $3$; equivalently the real quaternions $a+be_1+ce_2+de_3$ with $a^2+b^2+c^2+d^2=1$. As the unit sphere of the quaternions it is also written $Sp(1)$, the compact symplectic group of rank one.</p>
 <p><strong>$2\times2$.</strong> The image is $SU(2)$, the unitary matrices of determinant one. The image of a general real quaternion $a+be_1+ce_2+de_3$ is the matrix of the display
 $$
@@ -255,17 +255,17 @@ $$
 which is unitary exactly because the coefficients are real and their squares sum to one.</p>
 <p><strong>$4\times4$.</strong> The image is block-diagonal with both blocks in $SU(2)$.</p>
 <p><strong>Other.</strong> The three compact groups of real dimension three are one group here, $Sp(1)=S^3=SU(2)=\mathrm{Spin}(3)$, the last identification being the spin group of the definite form. This is the maximal compact subgroup of $\mathbb{B}^{\times}_1$, the unit sphere of the quaternion subspace, and the double cover of the rotation group $SO(3)$; it is also the group that acts by conjugation, since on the unitary slice the dagger sandwich and conjugation coincide. Acting on $\mathbb{R}^4$ by left multiplication it is written as $4\times4$ real rotation matrices, and acting on $\mathbb{R}^3$ through the adjoint action as $3\times3$ real rotation matrices.</p>
-<h3 id="the-central-scalars-math249">The Central Scalars $\mathbb{C}^{\times}e_0$</h3>
+<h3 id="the-central-scalars-math251">The Central Scalars $\mathbb{C}^{\times}e_0$</h3>
 <p><strong>Definition.</strong> The centre $Z(\mathbb{B})=\mathbb{C}e_0$, with its units $\mathbb{C}^{\times}e_0=\{\lambda e_0:\lambda\neq0\}$, of complex dimension $1$ and real dimension $2$.</p>
 <p><strong>$2\times2$.</strong> The image is the scalar matrices $\lambda I$. A scalar matrix commutes with every matrix, and the centre is exactly the preimage of the scalars, since a biquaternion commutes with everything precisely when it is central.</p>
 <p><strong>$4\times4$.</strong> The image is the scalar matrices $\lambda I_4$, by the same argument applied to the doubling.</p>
 <p><strong>Other.</strong> The centre is the whole of the scalars of $M_2(\mathbb{C})$ under $\Phi$, and it is the kernel of the map to the automorphism group below. Its intersection with the norm-one group is only $\{\pm e_0\}$, since $N(\lambda e_0)=\lambda^2$ equals one only for $\lambda=\pm1$, which excludes the phases: $e^{i\theta}e_0$ is central but has norm $e^{2i\theta}$.</p>
-<h3 id="the-centre-of-the-norm-one-group-math265">The Centre of the Norm-One Group $\{\pm e_0\}$</h3>
+<h3 id="the-centre-of-the-norm-one-group-math267">The Centre of the Norm-One Group $\{\pm e_0\}$</h3>
 <p><strong>Definition.</strong> $\mathbb{C}_{\mathbb{B}}\cap\mathbb{B}^{\times}_1=\{\pm e_0\}$, a group of order two and real dimension $0$, the torsion of $\mathbb{B}^{\times}_1$ and its full centre.</p>
 <p><strong>$2\times2$.</strong> The image is $\{\pm I\}$, the central element of $SL(2,\mathbb{C})$ of order two, which is the kernel of the map $SL(2,\mathbb{C})\to PSL(2,\mathbb{C})$.</p>
 <p><strong>$4\times4$.</strong> The image is $\{\pm I_4\}$.</p>
 <p><strong>Other.</strong> This is the kernel of the two-to-one cover of the Lorentz group, and it is the algebraic origin of the spinor sign: a rotor turned by a full turn gives $-e_0$, by two turns gives $+e_0$.</p>
-<h3 id="the-automorphism-group-math277">The Automorphism Group $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$</h3>
+<h3 id="the-automorphism-group-math279">The Automorphism Group $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$</h3>
 <p><strong>Definition.</strong> The $\mathbb{C}$-algebra automorphisms of $\mathbb{B}$, that is the bijective $\mathbb{C}$-linear maps preserving the product and fixing $e_0$, of complex dimension $3$ and real dimension $6$.</p>
 <p><strong>$2\times2$.</strong> Every automorphism is inner, because the algebra is a full matrix algebra, so the group is the image of the conjugation action of the units, with kernel the central scalars:
 $$
@@ -274,7 +274,7 @@ $$
 In the $2\times2$ realization the automorphism attached to a unit $g$ is $X\mapsto \Phi(g)\,X\,\Phi(g)^{-1}$, taken modulo an overall scalar because a central multiple of $g$ gives the same automorphism. Over the complex field the projective general and projective special linear groups coincide, $PGL(2,\mathbb{C})=PSL(2,\mathbb{C})$, because every nonzero complex number is a square and so every projective class has a representative of determinant one.</p>
 <p><strong>$4\times4$.</strong> The same conjugation restricted to the image: conjugating a left-multiplication matrix by the image of a unit gives again a left-multiplication matrix, so the operator realization is stable under the automorphism group. In the adapted basis the conjugation acts on both blocks at once, carrying them to conjugate blocks.</p>
 <p><strong>Other.</strong> Modulo the scalar, this is the group of Möbius transformations of the Riemann sphere, acting on the projective line of the simple module. Two maps that are <em>not</em> automorphisms of this group and are often met beside it: quaternion conjugation is an anti-automorphism, since it reverses the order of a product, and complex conjugation is not $\mathbb{C}$-linear. Both are recorded in the owner article.</p>
-<h3 id="the-proper-orthochronous-lorentz-group-math293">The Proper Orthochronous Lorentz Group $\mathbb{B}^{\times}_1/\{\pm e_0\}$</h3>
+<h3 id="the-proper-orthochronous-lorentz-group-math295">The Proper Orthochronous Lorentz Group $\mathbb{B}^{\times}_1/\{\pm e_0\}$</h3>
 <p><strong>Definition.</strong> The quotient of the norm-one group by its centre, a Lie group of real dimension $6$, isomorphic to the identity component of the Lorentz group of signature $(1,3)$:
 $$
 \mathbb{B}^{\times}_1/\{\pm e_0\}\cong SO^{+}(1,3).
@@ -543,7 +543,7 @@ $$</p>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, second edition, Cambridge University Press, 2001, for the isomorphism of a central simple algebra with a full matrix algebra and for the spin groups.</li>
 <li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge University Press, 1995, for the identification of the biquaternions with the even part of $\mathrm{Cl}_{1,3}$ and with $M_2(\mathbb{C})$.</li>
 <li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em>, Springer, 1991, for the decomposition of the regular representation into two copies of the simple module.</li>
-<li>Within the corpus, the owner articles <em>Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$</em>, <em>Biquaternion 4×4 Regular Matrix Element Representation</em>, <em>Biquaternion Four-Vector Element Representation</em>, <em>The Clifford Algebra Representation</em>, <em>Biquaternion Norm and Invertibility</em>, <em>Biquaternion Lie Group and Exponential Structure</em>, <em>The 12 Products of the Biquaternion Complex Space</em>, <em>The Biquaternion Unit Group as a Topological Group</em>, <em>Comparison of the Six Subspaces</em>, <em>Biquaternion Automorphisms and Derivations</em>, <em>Biquaternion Rotations and Lorentz Transformations</em>, <em>Biquaternion Spin Geometry</em> and <em>Matrix Groups and Classical Groups</em>.</li>
+<li>Within the corpus, the owner articles <em>Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$</em>, <em>Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$</em>, <em>Biquaternion Four-Vector Element Representation</em>, <em>The Clifford Algebra Representation</em>, <em>Biquaternion Norm and Invertibility</em>, <em>Biquaternion Lie Group and Exponential Structure</em>, <em>The 12 Products of the Biquaternion Complex Space</em>, <em>The Biquaternion Unit Group as a Topological Group</em>, <em>Comparison of the Six Subspaces</em>, <em>Biquaternion Automorphisms and Derivations</em>, <em>Biquaternion Rotations and Lorentz Transformations</em>, <em>Biquaternion Spin Geometry</em> and <em>Matrix Groups and Classical Groups</em>.</li>
 </ul>
       </div>
     </main>

@@ -134,7 +134,7 @@ r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\Phi(\tilde{Q})|} ,
 $$</p>
 <p>where $\Phi$ is the $2\times2$ matrix realisation.</p>
 <p><strong>Proof in one paragraph.</strong> The group of units is $\mathrm{GL}_2(\mathbb{C})$ under $\Phi$. A continuous homomorphism from $\mathrm{GL}_2(\mathbb{C})$ to $\mathbb{R}_{>0}$ is constant on the commutator subgroup; that subgroup is $\mathrm{SL}_2(\mathbb{C})$, which is perfect, so the homomorphism factors through the determinant, $\mathrm{GL}_2(\mathbb{C}) \to \mathbb{C}^\times$. A continuous homomorphism $\mathbb{C}^\times \to \mathbb{R}_{>0}$ is $z \mapsto |z|^t$: on the positive reals it is a power, and the unit circle is compact and connected, so its image is trivial. Hence $\rho(\tilde{Q}) = |\det\Phi(\tilde{Q})|^t$, and the normalisation gives $|\lambda|^{2t} = |\lambda|$, so $t = \tfrac12$, which is $r$ because $\det\Phi(\tilde{Q}) = N(\tilde{Q})$.</p>
-<p><strong>Physical reading: this is the scale of the polar representation.</strong> The function $r$ is the real factor of the polar representations of the series: it is the modulus that multiplies the central phase, the boost and the rotor. It vanishes exactly on the zero divisors and is a genuine norm on the units. The physical consequence of the uniqueness is that the scale carried by the polar representation is <strong>not a convention</strong>: it is the only real size function compatible with multiplicativity and with $r(e_0) = 1$. Its reading for the four-position, the four-velocity and the four-momentum — the scale $c\tau$, $c$ and $mc$ — belongs to <em>The Polar Element Representation of Biquaternions</em> and <em>The Polar Element Representation in Subspaces</em>. The matrix face $\sqrt{|\det\Phi|}$ is the $2\times2$ one; the regular $4\times4$ representation carries $\det = N^2$ instead, as <em>The 4×4 Regular Matrix Element Representation of Biquaternions</em> records.</p>
+<p><strong>Physical reading: this is the scale of the polar representation.</strong> The function $r$ is the real factor of the polar representations of the series: it is the modulus that multiplies the central phase, the boost and the rotor. It vanishes exactly on the zero divisors and is a genuine norm on the units. The physical consequence of the uniqueness is that the scale carried by the polar representation is <strong>not a convention</strong>: it is the only real size function compatible with multiplicativity and with $r(e_0) = 1$. Its reading for the four-position, the four-velocity and the four-momentum — the scale $c\tau$, $c$ and $mc$ — belongs to <em>The Polar Element Representation of Biquaternions</em> and <em>The Polar Element Representation in Subspaces</em>. The matrix face $\sqrt{|\det\Phi|}$ is the $2\times2$ one; the regular $4\times4$ representation carries $\det = N^2$ instead, as <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> records.</p>
 <p>The function $r$ was verified to be multiplicative on random pairs, $r(\tilde{P}\tilde{Q}) = r(\tilde{P})r(\tilde{Q})$, and to satisfy $r(\tilde{Q})^2 = |\det\Phi(\tilde{Q})|$.</p>
 <h3 id="the-biquaternion-norm-from-the-halves">The Biquaternion Norm from the Halves</h3>
 <p>Writing $\tilde{Q} = q_r + i q_i$ with $q_r, q_i$ real quaternions (the quaternion decomposition of the algebra article), the biquaternion norm splits as</p>
@@ -258,9 +258,9 @@ $$</p>
 <p>A <strong>division algebra</strong> is one in which every nonzero element is invertible, equivalently one with no zero divisors. The biquaternion algebra has zero divisors and is therefore <strong>not</strong> a division algebra, in contrast with the Frobenius theorem, which says that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$. <strong>This is not a defect in the physics but the physics itself</strong>: the light cone exists because the algebra is not a division algebra, and a division algebra over the reals would give no null directions and hence no propagation velocity.</p>
 <h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
 <p>The criterion is the same in all six subspaces: invertible if and only if the biquaternion norm is nonzero. The distribution is read off physically subspace by subspace.</p>
-<h3 id="the-complex-time-sector-math197">The Complex Time Sector $\mathbb{C}_{\mathbb{B}}$</h3>
+<h3 id="the-complex-time-sector-math198">The Complex Time Sector $\mathbb{C}_{\mathbb{B}}$</h3>
 <p>$\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{C}$ gives $N(\tilde{Q}) = Q_0^2$, which vanishes only for $\tilde{Q} = 0$. Every nonzero element is invertible: the sector is a copy of the field $\mathbb{C}$, and its parameter pair $(ct', ict)$ is never null.</p>
-<h3 id="the-complex-space-sector-math204">The Complex Space Sector $\mathrm{Vect}(\mathbb{B})$</h3>
+<h3 id="the-complex-space-sector-math205">The Complex Space Sector $\mathrm{Vect}(\mathbb{B})$</h3>
 <p>With $\tilde{Q} = Q_1e_1+Q_2e_2+Q_3e_3$,</p>
 <p>$$
 N(\tilde{Q}) = Q_1^2+Q_2^2+Q_3^2 = \left(q_1^2+q_2^2+q_3^2-(q'_1)^2-(q'_2)^2-(q'_3)^2\right) + 2i\left(q_1q'_1+q_2q'_2+q_3q'_3\right).
@@ -271,15 +271,15 @@ Q_1^2+Q_2^2+Q_3^2 = 0 ,
 $$</p>
 <p>the <strong>nilpotent cone</strong>, whose nonzero elements are the pure zero divisors. As a complex cone in $\mathbb{C}^3$ it has real dimension 4, hence real codimension 2 in the six-dimensional sector, and its complement — the invertible elements — is therefore <strong>connected</strong>. The physical reading is that this sector carries the two spatial triples $(x,y,z)$ and $(ix',iy',iz')$ at once, and a complex spatial vector can be null only through a conspiracy of both: the condition is two real equations, not one, so it does not divide the sector into regions the way a light cone does.</p>
 <p>The intersection $\mathrm{Vect}(\mathbb{B})\cap\mathbb{H}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ consists of invertible elements away from the origin, since $N$ restricts to $q_1^2+q_2^2+q_3^2$ there: <strong>the real spatial vectors are never null</strong>.</p>
-<h3 id="the-real-sector-math215">The Real Sector $\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-real-sector-math216">The Real Sector $\mathbb{H}_{\mathbb{B}}$</h3>
 <p>$N(\tilde{Q}) = q_0^2+q_1^2+q_2^2+q_3^2$, a sum of squares, vanishing only at the origin. Every nonzero element is invertible, and there is no light cone: the real sector carries the coordinates $ct', x, y, z$ and no null direction at all. It is a copy of the division algebra $\mathbb{H}$ and the home of the rotation rotors.</p>
-<h3 id="the-imaginary-sector-math219">The Imaginary Sector $i\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-imaginary-sector-math220">The Imaginary Sector $i\mathbb{H}_{\mathbb{B}}$</h3>
 <p>For $\tilde{Q} = i\tilde{P}$ with $\tilde{P}\in\mathbb{H}_{\mathbb{B}}$ real,</p>
 <p>$$
 N(i\tilde{P}) = -\sum_{\mu=0}^{3}p_\mu^2 ,
 $$</p>
 <p><strong>negative-definite</strong>, vanishing only at the origin, so there are no zero divisors either. Its signature $(0,4)$ is the exact negative of the $(4,0)$ of the real sector, as $N(i\tilde{Q}) = -N(\tilde{Q})$ requires. This sector carries $ict, ix', iy', iz'$.</p>
-<h3 id="the-informational-sector-math227">The Informational Sector $\mathbb{M}_+$</h3>
+<h3 id="the-informational-sector-math228">The Informational Sector $\mathbb{M}_+$</h3>
 <p>For $\tilde{Q} = q_0e_0 + iq'_1e_1+iq'_2e_2+iq'_3e_3$,</p>
 <p>$$
 N(\tilde{Q}) = q_0^2-(q'_1)^2-(q'_2)^2-(q'_3)^2 ,
@@ -289,7 +289,7 @@ $$</p>
 q_0^2 = (q'_1)^2+(q'_2)^2+(q'_3)^2 .
 $$</p>
 <p>In the informational coordinate $ct'\,e_0+i\mathbf{x}'$ this is $c^2(t')^2 = (\mathbf{x}')^2$: the informational cone. The invertible elements are the complement, with three connected components — the <strong>future</strong> $q_0>0$, $q_0^2>(\mathbf{q}')^2$ with $N>0$; the <strong>past</strong> $q_0<0$, $q_0^2>(\mathbf{q}')^2$ with $N>0$; and the <strong>inside</strong> $q_0^2<(\mathbf{q}')^2$ with $N<0$.</p>
-<h3 id="the-material-sector-math242">The Material Sector $\mathbb{M}_-$</h3>
+<h3 id="the-material-sector-math243">The Material Sector $\mathbb{M}_-$</h3>
 <p>For $\tilde{Q} = iq'_0e_0 + q_1e_1+q_2e_2+q_3e_3$,</p>
 <p>$$
 N(\tilde{Q}) = -(q'_0)^2+q_1^2+q_2^2+q_3^2 ,
