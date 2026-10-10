@@ -1,4 +1,4 @@
-# __Introduction to the 4×4 Regular Matrix Representation of Biquaternions__
+# __Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 This article is the first reading of the **regular representation**: the algebra acting on itself on the left, and the $4\times4$ matrix of that action in the coefficient basis. It belongs to the linear algebra of the algebra, beside the $2\times2$ reading of *Introduction to the 2×2 Matrix Representation of Biquaternions*: where the $2\times2$ realization exhibits the algebra inside $M_2(\mathbb{C})$, the regular realization writes the multiplication itself as a matrix, and the six distinguished subspaces reappear as six matrix conditions. It is the first realization of the algebra that is reducible, the coefficient space splitting into two copies of the simple module.
 
-This article owns the operator, its matrix in the basis, the multiplicativity, the **determinant** and the **trace**, the six subspace conditions, and the comparison with the $2\times2$ model. The further development — the right multiplication, the transposition relation between the two representations, the module structure and the decomposition, the double centralizer, the $8\times8$ real form and the second realization — is *Biquaternion 4×4 Regular Matrix Element Representation*.
+This article owns the operator, its matrix in the basis, the multiplicativity, the **determinant** and the **trace**, the six subspace conditions, and the comparison with the $2\times2$ model. The further development — the right multiplication, the transposition relation between the two representations, the module structure and the decomposition, the double centralizer, the $8\times8$ real form and the second realization — is *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*.
 
 ## The Regular Representation
 
@@ -168,7 +168,7 @@ and each block has trace $2Q_0$ and determinant $\Delta(\tilde Q)$.
 
 ## Summary
 
-The left regular representation $\rho_L$ sends $\tilde Q$ to the matrix of left multiplication by $\tilde Q$ in the coefficient basis, a matrix whose entries are the four coefficients up to sign and whose first column is the four-vector of $\tilde Q$. It is an injective algebra homomorphism, so $\rho_L(\tilde Q)\rho_L(\tilde R)=\rho_L(\tilde Q\tilde R)$. The trace of the matrix is $4Q_0$ and the determinant is the square of the $2\times2$ determinant of the same element, the doubled trace and the squared determinant of the $2\times2$ model. The six distinguished subspaces become six matrix conditions: scalar, traceless, real, purely imaginary, Hermitian and anti-Hermitian matrices, the same six that hold in the $2\times2$ model, the two differing only in that the $2\times2$ determinant sees the sign on the anti-quaternion subspace while the regular one sees only its square. The right multiplication, the transposition relation, the module decomposition, the double centralizer, the $8\times8$ real form and the second realization are the further development and belong to *Biquaternion 4×4 Regular Matrix Element Representation*.
+The left regular representation $\rho_L$ sends $\tilde Q$ to the matrix of left multiplication by $\tilde Q$ in the coefficient basis, a matrix whose entries are the four coefficients up to sign and whose first column is the four-vector of $\tilde Q$. It is an injective algebra homomorphism, so $\rho_L(\tilde Q)\rho_L(\tilde R)=\rho_L(\tilde Q\tilde R)$. The trace of the matrix is $4Q_0$ and the determinant is the square of the $2\times2$ determinant of the same element, the doubled trace and the squared determinant of the $2\times2$ model. The six distinguished subspaces become six matrix conditions: scalar, traceless, real, purely imaginary, Hermitian and anti-Hermitian matrices, the same six that hold in the $2\times2$ model, the two differing only in that the $2\times2$ determinant sees the sign on the anti-quaternion subspace while the regular one sees only its square. The right multiplication, the transposition relation, the module decomposition, the double centralizer, the $8\times8$ real form and the second realization are the further development and belong to *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*.
 
 ## Summary of Notation
 
@@ -187,6 +187,6 @@ The left regular representation $\rho_L$ sends $\tilde Q$ to the matrix of left 
 
 ## Further Reading
 
-- *Biquaternion 4×4 Regular Matrix Element Representation* (`articles_maths/biquaternion-4x4-regular-matrix-element-representation.md`), for the right multiplication, the transposition relation, the module structure and reducibility, the double centralizer, the real form and the second realization
+- *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/biquaternion-4x4-matrix-element-representation.md`), for the right multiplication, the transposition relation, the module structure and reducibility, the double centralizer, the real form and the second realization
 - *Introduction to the 2×2 Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.md`), for the companion realization, its trace $2Q_0$ and its determinant
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the two minimal left ideals and the Peirce basis used in the block form of the regular matrix

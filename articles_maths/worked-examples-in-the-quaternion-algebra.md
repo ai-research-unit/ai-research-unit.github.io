@@ -11,7 +11,7 @@ $$
 \tilde q = 1 + 2e_1 - e_2 + 3e_3,
 $$
 
-with scalar part $q_0 = 1$ and vector part $\mathbf{q} = 2e_1 - e_2 + 3e_3$, chosen so that no coordinate vanishes and no two coordinates coincide. The general theory is from *Quaternion Algebra* (the basis, the multiplication and the three involutions), *Quaternion Norm and Invertibility* (the quaternion norm and the unit criterion), *Quaternion Rotations and Reflections* (the conjugation action and the covering of $SO(3)$), *Quaternion 2x2 Matrix Element Representation* and *Quaternion 4x4 Regular Matrix Element Representation* (the matrix images). A few examples with other elements are given where a single example would be misleading.
+with scalar part $q_0 = 1$ and vector part $\mathbf{q} = 2e_1 - e_2 + 3e_3$, chosen so that no coordinate vanishes and no two coordinates coincide. The general theory is from *Quaternion Algebra* (the basis, the multiplication and the three involutions), *Quaternion Norm and Invertibility* (the quaternion norm and the unit criterion), *Quaternion Rotations and Reflections* (the conjugation action and the covering of $SO(3)$), *Quaternion 2x2 Matrix Element Representation* and *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$* (the matrix images). A few examples with other elements are given where a single example would be misleading.
 
 Throughout, the basis is $e_0 = 1, e_1, e_2, e_3$ with
 
@@ -125,7 +125,7 @@ $$
 
 Its trace is $2q_0 = 2$ and its determinant is $N(\tilde q) = 15$, in agreement with the general identities $\operatorname{tr}\Phi(\tilde Q) = 2Q_0$ and $\det\Phi(\tilde Q) = N(\tilde Q)$.
 
-**The $4\times4$ real image.** Under the left regular representation of *Quaternion 4x4 Regular Matrix Element Representation*, whose Cayley matrix has the four general products $\tilde q e_k$ for columns, the worked element has image
+**The $4\times4$ real image.** Under the left regular representation of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*, whose Cayley matrix has the four general products $\tilde q e_k$ for columns, the worked element has image
 
 $$
 L_{\tilde q} = \begin{pmatrix}

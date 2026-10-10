@@ -26,7 +26,7 @@ $$
 
 The article computes the trace and the rank of the two matrix forms, the determinant, the diagonal and its deformation, and the matrix form of the Krein form $K$ with its Gram matrix and its indefinite cone.
 
-The two models are *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Representation* and *The General Quaternionic Sesqualgebra in the $4\times4$ Regular Matrix Representation*; the form $K$ is *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*; the diagonal and its centrality are *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; and the product is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*.
+The two models are *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Representation* and *The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Representation*; the form $K$ is *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*; the diagonal and its centrality are *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; and the product is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*.
 
 **Conventions.** $\mathrm{adj}\,M$ is the adjugate of the two-by-two matrix $M$, $\mathrm{adj}\,\begin{pmatrix}a&b\\c&d\end{pmatrix}=\begin{pmatrix}d&-b\\-c&a\end{pmatrix}$; $M^{\dagger}$ is the conjugate transpose; $N(\tilde Q)=\tilde Q^{\natural}\tilde Q=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$ is the norm and $\det\Phi(\tilde Q)=N(\tilde Q)$; the coefficient basis is $e_0,e_1,e_2,e_3$.
 
@@ -181,7 +181,7 @@ In the two-by-two model the block is the symmetrisation of the twisted matrix pr
 ## Further Reading
 
 - *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Representation* (`articles_maths/the-general-quaternionic-sesqualgebra-in-the-2x2-matrix-representation.md`), for the two-by-two model.
-- *The General Quaternionic Sesqualgebra in the $4\times4$ Regular Matrix Representation* (`articles_maths/the-general-quaternionic-sesqualgebra-in-the-4x4-regular-matrix-representation.md`), for the regular model.
+- *The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Representation* (`articles_maths/the-general-quaternionic-sesqualgebra-in-the-4x4-matrix-representation.md`), for the regular model.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product written in the models.
 - *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal, its centrality and the witnesses.
 - *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.md`), for the form $K$, its Gram matrix and its cone.

@@ -320,7 +320,7 @@ and it maps the scalar subspace to itself and the vector subspace to itself.
 
 **Proposition.** For $\tilde q\neq0$ each of the operators $L_{\tilde q}(\mathbf q) = \tilde q \mathbf q$, $\rho_{\tilde q}(\mathbf q) = \mathbf q\tilde q$, $\operatorname{Ad}_{\tilde q}$ and $S_{\tilde q}$ is invertible, with kernel $0$ and image $\mathbb{H}$; for $\tilde q = 0$ all four are the zero operator.
 
-**Proof.** The operators $L_{\tilde q}$ and $\rho_{\tilde q}$ of the regular representation are invertible exactly for a unit, as shown in *Quaternion 4x4 Regular Matrix Element Representation*; the adjoint action has inverse $\operatorname{Ad}_{\tilde q^{-1}}$, and the sandwich has inverse $N(\tilde q)^{-1}\operatorname{Ad}_{\tilde q^{-1}}$. At $\tilde q = 0$ every product with $\tilde q$ vanishes.
+**Proof.** The operators $L_{\tilde q}$ and $\rho_{\tilde q}$ of the regular representation are invertible exactly for a unit, as shown in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*; the adjoint action has inverse $\operatorname{Ad}_{\tilde q^{-1}}$, and the sandwich has inverse $N(\tilde q)^{-1}\operatorname{Ad}_{\tilde q^{-1}}$. At $\tilde q = 0$ every product with $\tilde q$ vanishes.
 
 **Proposition.** The fixed subspace of the adjoint action of a unit $\tilde q$ is its centraliser in $\mathbb{H}$: all of $\mathbb{H}$ when $\tilde q$ is real, and the two-dimensional subalgebra $F[\tilde q] = \{a+b\tilde q\}$ otherwise. On the vector subspace the fixed directions are the axis line $\mathbb{R}\mathbf{q}$.
 
@@ -328,7 +328,7 @@ and it maps the scalar subspace to itself and the vector subspace to itself.
 
 ### The Action on the Subspaces
 
-Left and right multiplication are the operators of the regular representation, treated in *Quaternion 4x4 Regular Matrix Element Representation*; the adjoint action and the sandwich are those of the preceding sections. Throughout, $L_{\tilde q}(\mathbf q) = \tilde q \mathbf q$ is the left multiplication operator and $\rho_{\tilde q}(\mathbf q) = \mathbf q\tilde q$ the right one — the operator the regular-representation article writes $R_{\tilde q}$, renamed here because that symbol is the matrix of the adjoint action on $\operatorname{Im}\mathbb{H}$.
+Left and right multiplication are the operators of the regular representation, treated in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*; the adjoint action and the sandwich are those of the preceding sections. Throughout, $L_{\tilde q}(\mathbf q) = \tilde q \mathbf q$ is the left multiplication operator and $\rho_{\tilde q}(\mathbf q) = \mathbf q\tilde q$ the right one — the operator the regular-representation article writes $R_{\tilde q}$, renamed here because that symbol is the matrix of the adjoint action on $\operatorname{Im}\mathbb{H}$.
 
 **Definition.** The **action table** of the operator representation records, for each operator, its effect on the scalar subspace $\mathbb{R}_{\mathbb{H}}$ and on the vector subspace $\operatorname{Im}\mathbb{H}$.
 

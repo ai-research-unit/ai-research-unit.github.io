@@ -16,7 +16,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Comparison of the Six Subspaces](../articles_maths/comparison-of-the-six-subspaces.html)
 - [Introduction to the Biquaternion Four-Vector Representation](../articles_maths/biquaternion-four-vector-element-representation.html)
 - [Introduction to the 2×2 Matrix Representation of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.html)
-- [Introduction to the 4×4 Regular Matrix Representation of Biquaternions](../articles_maths/introduction-to-the-4x4-regular-matrix-representation-of-biquaternions.html)
+- [Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-representation-of-biquaternions.html)
 
 ### Multiplications and Degree-2 Forms
 
@@ -161,7 +161,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 ### Basic Representations
 
 - [Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/biquaternion-2x2-matrix-element-representation-m2c.html)
-- [Biquaternion 4×4 Regular Matrix Element Representation](../articles_maths/biquaternion-4x4-regular-matrix-element-representation.html)
+- [Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/biquaternion-4x4-matrix-element-representation.html)
 - [Biquaternion Polar Element Representation](../articles_maths/biquaternion-polar-element-representation.html)
 - [Biquaternion Partial Polar Element Representations](../articles_maths/biquaternion-partial-polar-element-representations.html)
 
@@ -180,7 +180,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 ### Topology of the Cones and Level Sets
 - [Biquaternion Norm and Invertibility](../articles_maths/biquaternion-norm-and-invertibility.html)
 - [The Realification of the Four Forms](../articles_maths/the-realification-of-the-four-forms.html)
-- [The General Plain Sesqualgebra in the $4\times4$ Regular Matrix Representation](../articles_maths/the-general-plain-sesqualgebra-in-the-4x4-regular-matrix-representation.html)
+- [The General Plain Sesqualgebra in the $4\times4$ Matrix Representation](../articles_maths/the-general-plain-sesqualgebra-in-the-4x4-matrix-representation.html)
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html)
 - [The Fundamental Symmetry of the Biquaternion Algebra](../articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.html)
 - [The Isotropic Structure of the General Quaternionic Sesqualgebra](../articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html)
@@ -201,7 +201,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [The Six Subspaces under the General Plain Algebra of Biquaternions](../articles_maths/the-six-subspaces-under-the-general-plain-algebra-of-biquaternions.html)
 - [Association and the Transpose on the Biquaternion Algebra](../articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.html)
 - [The General Plain Algebra in the $2\times2$ Matrix Representation](../articles_maths/the-general-plain-algebra-in-the-2x2-matrix-representation.html)
-- [The General Plain Algebra in the $4\times4$ Regular Matrix Representation](../articles_maths/the-general-plain-algebra-in-the-4x4-regular-matrix-representation.html)
+- [The General Plain Algebra in the $4\times4$ Matrix Representation](../articles_maths/the-general-plain-algebra-in-the-4x4-matrix-representation.html)
 - [Two-Sided Operators on the General Plain Algebra of Biquaternions](../articles_maths/two-sided-operators-on-the-general-plain-algebra-of-biquaternions.html)
 - [One-Sided Operators on the General Plain Algebra of Biquaternions](../articles_maths/one-sided-operators-on-the-general-plain-algebra-of-biquaternions.html)
 - [The Pin and Spin Groups of the General Plain Algebra of Biquaternions](../articles_maths/the-pin-and-spin-groups-of-the-general-plain-algebra-of-biquaternions.html)
@@ -213,7 +213,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Two-Sided Operators on the General Quaternionic Algebra of Biquaternions](../articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.html)
 - [One-Sided Operators on the General Quaternionic Algebra of Biquaternions](../articles_maths/one-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.html)
 - [The General Quaternionic Algebra in the $2\times2$ Matrix Representation](../articles_maths/the-general-quaternionic-algebra-in-the-2x2-matrix-representation.html)
-- [The General Quaternionic Algebra in the $4\times4$ Regular Matrix Representation](../articles_maths/the-general-quaternionic-algebra-in-the-4x4-regular-matrix-representation.html)
+- [The General Quaternionic Algebra in the $4\times4$ Matrix Representation](../articles_maths/the-general-quaternionic-algebra-in-the-4x4-matrix-representation.html)
 
 ### Topology on the Introduction to the General Plain Sesqualgebra of Biquaternions
 
@@ -234,14 +234,14 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [The Six Subspaces under the General Quaternionic Sesqualgebra of Biquaternions](../articles_maths/the-six-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.html)
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions](../articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra-of-biquaternions.html)
 - [The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Representation](../articles_maths/the-general-quaternionic-sesqualgebra-in-the-2x2-matrix-representation.html)
-- [The General Quaternionic Sesqualgebra in the $4\times4$ Regular Matrix Representation](../articles_maths/the-general-quaternionic-sesqualgebra-in-the-4x4-regular-matrix-representation.html)
+- [The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Representation](../articles_maths/the-general-quaternionic-sesqualgebra-in-the-4x4-matrix-representation.html)
 
 ### Topology on the Biquaternions as an Algebra over $\mathbb{R}$
 
 - [The Trace Form of the Real Biquaternion Algebra](../articles_maths/the-trace-form-of-the-real-biquaternion-algebra.html)
 - [The Six Subspaces under the Real Biquaternion Algebra](../articles_maths/the-six-subspaces-under-the-real-biquaternion-algebra.html)
 - [The Biquaternion Algebra over $\mathbb{R}$ in the $2\times2$ Matrix Representation](../articles_maths/the-biquaternion-algebra-over-r-in-the-2x2-matrix-representation.html)
-- [The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Regular Matrix Representation](../articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-regular-matrix-representation.html)
+- [The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Matrix Representation](../articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-matrix-representation.html)
 
 ## Analysis
 

@@ -378,7 +378,7 @@ Reversibility is one of the structural features of the biquaternion formulation.
 
 ## Measurement as an Algebraic Operation
 
-In the standard framework, the measurement postulate is stated separately from the unitary evolution. In the biquaternion framework, both are consequences of the same algebraic structure.
+In the standard framework, the measurement postulate is stated separately from the unitary evolution. In the biquaternion framework, both are consequences of the same sesquilinear structure, the Hermitian form and its trace pairing.
 
 **Projective measurement.** A projective measurement of $\tilde{H} = h_0 e_0 + i\mathbf{h}$ is specified by the spectral decomposition $\tilde{H} = \lambda_+ \tilde\Pi_+ + \lambda_- \tilde\Pi_-$, with $\tilde\Pi_\pm = \tfrac{1}{2}(e_0 \pm i\hat{\mathbf{h}})$. The outcome $+$ has:
 
@@ -491,7 +491,7 @@ The companion article listed ten structural requirements for a comprehensive qua
 
 **7. Symmetry group.** The unitary group $U(2)$ acts on $\mathbb{M}_+$ by conjugation, with $SU(2)$ generating the spin rotations and $SO(3)$ acting on the Bloch sphere.
 
-**8. Relativistic extension.** The biquaternion algebra contains the proper orthochronous Lorentz group through its double cover $SL(2,\mathbb{C})$, realized as the group of biquaternions of unit norm, and the material sector $\mathbb{M}_-$ carries the four-vectors. The algebraic structure required for the Lorentz group and the spinor representation is present in the algebra. The quantum formalism presented here and the relativistic structure share the same algebraic home, which makes the framework naturally suited to a relativistic quantum theory of spinor fields. The classical precursor of such a theory — the biquaternion Dirac equation — is treated in the companion article, and the quantization of the spinor field is a natural direction for future work.
+**8. Relativistic extension.** The biquaternion algebra contains the proper orthochronous Lorentz group through its double cover $SL(2,\mathbb{C})$, realized as the group of biquaternions of unit norm, and the material sector $\mathbb{M}_-$ carries the four-vectors. The space carries the structures the relativistic side reads — the bilinear ones and the spinor module — and the Lorentz group sits in the invertible elements. The quantum formalism presented here and the relativistic structure share the same biquaternion space, which makes the framework naturally suited to a relativistic quantum theory of spinor fields. The classical precursor of such a theory — the biquaternion Dirac equation — is treated in the companion article, and the quantization of the spinor field is a natural direction for future work.
 
 **9. Classical limit.** The classical limit of the qubit formalism is the classical spin, obtained when the state is in a coherent state (a pure state) and the dynamics is a classical precession. The general classical limit of quantum physics requires the machinery of decoherence and the correspondence principle, which are not developed in this article.
 
@@ -499,7 +499,7 @@ The companion article listed ten structural requirements for a comprehensive qua
 
 ## Compatibility with Relativity
 
-Item 8 of the checklist states the compatibility with relativity as a requirement to be met. It deserves a section of its own, because the compatibility is stronger than the coexistence of two structures inside one algebra: the relativistic and the quantum objects are made from the same elements, and their transformation groups are two subgroups of the same invertible elements, acting by one and the same conjugation formula.
+Item 8 of the checklist states the compatibility with relativity as a requirement to be met. It deserves a section of its own, because the compatibility is stronger than the coexistence of the two theories on one biquaternion space: the relativistic and the quantum objects are made from the same elements, and their transformation groups are two subgroups of the same invertible elements, acting by one and the same conjugation formula.
 
 **One conjugation action, two groups.** The symmetry transformations of this article and of its relativistic companions all act by **conjugation**,
 
@@ -508,13 +508,13 @@ $$
 \qquad \tilde{\Lambda} \in \mathbb{B} \ \ \text{invertible},
 $$
 
-and the two theories differ only in the subgroup of the invertible elements over which $\tilde{\Lambda}$ ranges. The **quantum operations** of the Schrödinger picture are the **unitary** case, $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_0$; these elements form the group $U(2)$. The **proper orthochronous Lorentz transformations** of $\mathbb{M}_-$ are the case of **unit norm**, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$; these elements form $SL(2,\mathbb{C})$, the double cover of that group. The two normalization conditions are genuinely different — neither group contains the other — yet both act by the same formula, on the same algebra, and their intersection is the rotation group:
+and the two theories differ only in the subgroup of the invertible elements over which $\tilde{\Lambda}$ ranges. The **quantum operations** of the Schrödinger picture are the **unitary** case, $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_0$; these elements form the group $U(2)$. The **proper orthochronous Lorentz transformations** of $\mathbb{M}_-$ are the case of **unit norm**, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$; these elements form $SL(2,\mathbb{C})$, the double cover of that group. The two normalization conditions are genuinely different — neither group contains the other — yet both act by the same formula, on the same biquaternion space, and their intersection is the rotation group:
 
 $$
 SU(2) \subset U(2), \qquad SU(2) \subset SL(2,\mathbb{C}), \qquad U(2) \cap SL(2,\mathbb{C}) = SU(2).
 $$
 
-The intersection is the set of unit real quaternions. Its conjugation action rotates the Bloch vector of a state in $\mathbb{M}_+$ and the spatial three-vector of a four-vector in $\mathbb{M}_-$ by the same $SO(3)$ rotation, with the same rotor. The spin rotation of the qubit and the spatial rotation of the material sector are therefore one algebraic operation, not two that happen to agree. This is the double cover $SU(2) \to SO(3)$ of the companion articles, read inside the single algebra $\mathbb{B}$.
+The intersection is the set of unit real quaternions. Its conjugation action rotates the Bloch vector of a state in $\mathbb{M}_+$ and the spatial three-vector of a four-vector in $\mathbb{M}_-$ by the same $SO(3)$ rotation, with the same rotor. The spin rotation of the qubit and the spatial rotation of the material sector are therefore one algebraic operation, not two that happen to agree. This is the double cover $SU(2) \to SO(3)$ of the companion articles, read inside the single biquaternion space $\mathbb{B}$.
 
 **What distinguishes the two groups.** The two groups are subgroups of the same invertible elements, acting by the same formula, and what separates them is the algebraic character of the transformation. For a unitary rotor the conjugation is multiplicative,
 
@@ -541,6 +541,8 @@ $$
 
 This form does **not**, however, separate the two groups, and the point is worth stating: since $|N(\tilde{U})| = |\det\tilde{U}| = 1$ for a unitary element, the unitary group preserves the biquaternion norm as well. In general $N$ is invariant under conjugation by every element with $|N| = 1$, of which the unitary elements and the unit-norm rotors are the two cases that occur here. The Lorentzian form is thus common to the quantum and the relativistic transformations. What separates them is the **Euclidean** trace pairing, which only the quantum operations preserve, together with the automorphism property, which only they possess. Neither group contains the other, and their common subgroup is the rotation group $SU(2)$.
 
+**One space, several structures.** The two forms that separate the groups are the forms of two different structures of the twelve, read over the one space (*The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The indefinite form is the general quaternionic bilinear form $N$, the form of the structure $\mathrm{GQA}$, an algebra over $\mathbb{C}$, whose diagonal is the interval. The positive form is the general plain sesquilinear form (the Hermitian form), the form of the structure $\mathrm{GPS}$, a sesqualgebra over $(\mathbb{C},\bar{\cdot})$, the pairing on which the Born rule rests. The Lorentz group is defined by the bilinear structure and the unitary group by the sesquilinear one. That one space carries both is the whole of the compatibility, and it is why the two theories can be written side by side without being one theory. On $\mathbb{M}_+$ the four forms collapse pairwise — the Hermitian form coincides with the general plain bilinear form, and $N$ with $K$ (§*The Forms on $\mathbb{M}_+$*, above) — so the distinction is a statement about the full space, not about the Hermitian sector.
+
 **A boost is not a quantum operation.** A pure boost has a Hermitian rotor, and therefore lies in $\mathbb{M}_+$ itself, the subspace that carries the states and observables:
 
 $$
@@ -565,7 +567,7 @@ separates a unitary factor $\tilde{W}$ — the **Thomas–Wigner rotation** — 
 
 **The shared imaginary unit.** The $i$ of the Schrödinger equation $i\hbar\,d\tilde{U}/dt = \tilde{H}\tilde{U}$, the $i$ of the phase $e^{-i\tilde{H}t/\hbar}$, and the $i$ of the material coordinate $ict$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian signature of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{M}_-$.
 
-**What the compatibility does and does not provide.** The framework supplies a common algebraic home: the relativistic and quantum objects are made from the same elements, their transformation groups are subgroups of the same invertible elements acting by one conjugation formula, their intersection is the rotation group, and the Wigner rotation has an algebraic locus. It does not supply, by itself, a relativistic quantum dynamics. A Lorentz-covariant state space, microcausality, and the many-particle structure are not contained in the single-qubit formalism above, which is the non-relativistic restriction: the state space is a fixed Bloch ball, and a boost moves a state off it. Those questions belong to the biquaternion Dirac equation and its canonical quantization, treated in the companion articles, where the state space, and not only the transformation group, becomes relativistic.
+**What the compatibility does and does not provide.** The framework supplies a common biquaternion space: the relativistic and quantum objects are made from the same elements, their transformation groups are subgroups of the same invertible elements acting by one conjugation formula, their intersection is the rotation group, and the Wigner rotation has an algebraic locus. It does not supply, by itself, a relativistic quantum dynamics. A Lorentz-covariant state space, microcausality, and the many-particle structure are not contained in the single-qubit formalism above, which is the non-relativistic restriction: the state space is a fixed Bloch ball, and a boost moves a state off it. Those questions belong to the biquaternion Dirac equation and its canonical quantization, treated in the companion articles, where the state space, and not only the transformation group, becomes relativistic.
 
 ## What Is Structural and What Is New
 
@@ -590,7 +592,7 @@ separates a unitary factor $\tilde{W}$ — the **Thomas–Wigner rotation** — 
 
 5. **The positivity condition is a biquaternion-norm condition.** The condition $|\mathbf{r}| \leq 1$ on states is equivalent to $N(\tilde{\rho}) \geq 0$. The "physical" constraint on states is a consequence of the quadratic form of the algebra.
 
-6. **The symmetry group and observables share the same algebraic home.** The unitary elements of $\mathbb{B}$ act on $\mathbb{M}_+$ by conjugation; their generators lie in $\mathbb{M}_-$.
+6. **The symmetry group and observables share the same biquaternion space.** The unitary elements of $\mathbb{B}$ act on $\mathbb{M}_+$ by conjugation; their generators lie in $\mathbb{M}_-$.
 
 7. **The framework contains the algebraic structure for relativity.** The Lorentz group is contained in the algebra (via its double cover $SL(2,\mathbb{C})$) as the group of biquaternions of unit norm, and the material sector $\mathbb{M}_-$ carries the four-vectors. The biquaternion framework is therefore the natural setting in which the quantum formalism and the relativistic structure coexist, without the incompatibilities that appear when they are formulated separately.
 
@@ -620,7 +622,7 @@ Quantum physics in the biquaternion framework is built on the Hermitian subspace
 
 The framework reproduces the standard qubit formalism for the states, observables, Born rule, dynamics, and measurement, with the structural advantages that states and observables live in the same space, the Born rule is a consequence of the trace pairing, measurement is an algebraic operation, and the positivity condition on states is a biquaternion-norm condition.
 
-The biquaternion algebra contains the algebraic structure required for relativity — the Lorentz group (via its double cover $SL(2,\mathbb{C})$), the spinor representation, and the material sector of four-vectors — and the quantum formalism presented here and the relativistic structure coexist within the same algebra. The full relativistic quantum theory of spinor fields is the natural continuation of the framework: the classical precursor is the biquaternion Dirac equation treated in the companion article, and the quantization of the spinor field is a natural direction for future work.
+The biquaternion space carries the structures the relativistic side reads — the bilinear ones, the spinor module, and the material sector of four-vectors, with the Lorentz group in the invertible elements through the double cover $SL(2,\mathbb{C})$ — and the quantum formalism presented here and the relativistic structure coexist within the same biquaternion space. The full relativistic quantum theory of spinor fields is the natural continuation of the framework: the classical precursor is the biquaternion Dirac equation treated in the companion article, and the quantization of the spinor field is a natural direction for future work.
 
 The extension to many qubits, the second-quantized version, the connection to quantum field theory, and the question of empirical content are open.
 

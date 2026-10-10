@@ -1,5 +1,5 @@
 
-# __The General Quaternionic Algebra in the $4\times4$ Regular Matrix Representation__
+# __The General Quaternionic Algebra in the $4\times4$ Matrix Representation__
 
 ## Introduction
 
@@ -69,7 +69,7 @@ so the diagonal of the pairing is twice the determinant of the element, the dete
 
 **The null set.** The form vanishes exactly when $N(\tilde{Q})=0$, that is when $\det\rho_L(\tilde{Q})=0$: the null set is the set of singular regular matrices, the zero divisors of the algebra, of rank two and of real dimension $6$ in $\mathbb{R}^8$. It is distinct from the isotropic cone of the general plain bilinear form and strictly smaller than the real isotropic cone of the realified form.
 
-**The automorphisms.** The form has Gram matrix $I_4$, so its automorphism group is the complex orthogonal group $O_4(\mathbb{C})$, of complex dimension $6$ and real dimension $12$, and its realification is the split orthogonal group $O(4,4)$ of signature $(4,4)$. The transposition is the elementary operator of the group, and the conjugations $\rho_L(\tilde{Q})\mapsto\rho_L(\tilde{A})\rho_L(\tilde{Q})\rho_L(\tilde{A})^{-1}$ by the units are its inner part. The congruence with the general plain bilinear form is the one read on the matrices of *The General Plain Algebra in the $4\times4$ Regular Matrix Representation*.
+**The automorphisms.** The form has Gram matrix $I_4$, so its automorphism group is the complex orthogonal group $O_4(\mathbb{C})$, of complex dimension $6$ and real dimension $12$, and its realification is the split orthogonal group $O(4,4)$ of signature $(4,4)$. The transposition is the elementary operator of the group, and the conjugations $\rho_L(\tilde{Q})\mapsto\rho_L(\tilde{A})\rho_L(\tilde{Q})\rho_L(\tilde{A})^{-1}$ by the units are its inner part. The congruence with the general plain bilinear form is the one read on the matrices of *The General Plain Algebra in the $4\times4$ Matrix Representation*.
 
 ## Worked Examples
 
@@ -96,8 +96,8 @@ The left regular representation reads the natural conjugation as the transpositi
 
 ## Further Reading
 
-- *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-4x4-regular-matrix-representation-of-biquaternions.md`), for the representation and its first properties
-- *Biquaternion 4×4 Regular Matrix Element Representation* (`articles_maths/biquaternion-4x4-regular-matrix-element-representation.md`), for the further reading of the regular representation
+- *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-representation-of-biquaternions.md`), for the representation and its first properties
+- *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/biquaternion-4x4-matrix-element-representation.md`), for the further reading of the regular representation
 - *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the quaternionic product on the algebra
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the form on the algebra
 - *The General Quaternionic Algebra in the $2\times2$ Matrix Representation* (`articles_maths/the-general-quaternionic-algebra-in-the-2x2-matrix-representation.md`), for the companion reading of the group

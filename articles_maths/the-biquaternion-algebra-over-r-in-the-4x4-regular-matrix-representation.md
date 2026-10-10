@@ -1,5 +1,5 @@
 
-# __The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Regular Matrix Representation__
+# __The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Matrix Representation__
 
 ## Introduction
 
@@ -57,7 +57,7 @@ $$
 \mathrm{Re}\operatorname{Tr}\bigl(\rho_L(\tilde{P})\rho_L(\tilde{Q})\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\rho_L(\tilde{P})\rho_L(\tilde{Q})^{\mathsf{T}}\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\rho_L(\tilde{P})^{\dagger}\rho_L(\tilde{Q})\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\operatorname{adj}\rho_L(\tilde{P})^{\dagger}\rho_L(\tilde{Q})\bigr),
 $$
 
-the trace pairings of the plain, transposed, conjugate-transposed and adjugated conjugate-transposed products. Their signatures are the four signatures of the group, $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$; the first is the trace form of this group up to the factor $2$, and all four are recorded in *The Realification of the Four Forms*. The Lorentzian forms do not appear here: the Minkowski form of signature $(1,3)$ recorded in *Biquaternion 4×4 Regular Matrix Element Representation*, §*A Second $4 \times 4$ Realization, and the Multiplicative Map* is a form of the second real $4\times4$ realization, on the real span of $e_0,ie_1,ie_2,ie_3$, and the two-sided action of the norm-one group is the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ of the sesqualgebra group.
+the trace pairings of the plain, transposed, conjugate-transposed and adjugated conjugate-transposed products. Their signatures are the four signatures of the group, $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$; the first is the trace form of this group up to the factor $2$, and all four are recorded in *The Realification of the Four Forms*. The Lorentzian forms do not appear here: the Minkowski form of signature $(1,3)$ recorded in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*, §*A Second $4 \times 4$ Realization, and the Multiplicative Map* is a form of the second real $4\times4$ realization, on the real span of $e_0,ie_1,ie_2,ie_3$, and the two-sided action of the norm-one group is the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ of the sesqualgebra group.
 
 ## Worked Examples
 
@@ -84,7 +84,7 @@ The real regular representation is the representation the trace form is defined 
 
 ## Further Reading
 
-- *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-4x4-regular-matrix-representation-of-biquaternions.md`), for the regular representation and its first properties
+- *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-representation-of-biquaternions.md`), for the regular representation and its first properties
 - *The Trace Form of the Real Biquaternion Algebra* (`articles_maths/the-trace-form-of-the-real-biquaternion-algebra.md`), for the trace form on the algebra
 - *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the signature table of the realified forms
 - *Operators of the Real Biquaternion Algebra* (`articles_maths/operators-of-the-real-biquaternion-algebra.md`), for the operators of the real reading

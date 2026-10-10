@@ -702,10 +702,10 @@ has proved, and none adds a theorem.
 - **Phase and duality are one central $U(1)$.** The complex-time sector carries the global phase, the
   complex-space sector carries the field strength, and multiplication by the central $i$ is at once the phase
   rotation and the **duality rotation** of the field. Reading: one central $U(1)$ does both jobs.
-- **The interval is a clock and the Euclidean square a ruler.** One algebra yields two metrics: the
+- **The interval is a clock and the Euclidean square a ruler.** One biquaternion space yields two metrics: the
   indefinite $N$ has the causal structure of a **clock** (the cone, the interval), and the definite $H$ that
   of a **ruler** (the length, the probability). Reading: the two metrics of one element are the two
-  instruments, and the grid is why one algebra carries both. The uniqueness clause is not claimed; the two
+  instruments, and the grid is why one biquaternion space carries both. The uniqueness clause is not claimed; the two
   metrics are.
 - **The $4\times3$ table as a mnemonic.** The four products and the three involutions read as twelve
   questions — composition, commutation, rotation, causality, coupling, obstruction, decision, weight, phase,

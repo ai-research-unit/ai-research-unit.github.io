@@ -44,7 +44,7 @@ and on the imaginary part this is the rotation of $\mathbb{R}^3$ through the ang
 
 ### Left Multiplication as the Reference
 
-The simplest way to make an element act is to multiply by it, $\tilde T \mapsto \tilde{Q}\tilde T$. That map is the regular representation, it is faithful, and its matrix is the $4 \times 4$ regular matrix of *The 4×4 Regular Matrix Element Representation of Biquaternions*. It is recorded here only as the reference column of the comparison table below, since it is an algebra endomorphism rather than an automorphism and it does not preserve the sector structure either.
+The simplest way to make an element act is to multiply by it, $\tilde T \mapsto \tilde{Q}\tilde T$. That map is the regular representation, it is faithful, and its matrix is the $4 \times 4$ regular matrix of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. It is recorded here only as the reference column of the comparison table below, since it is an algebra endomorphism rather than an automorphism and it does not preserve the sector structure either.
 
 ### The Map on the Whole Algebra
 
@@ -75,7 +75,7 @@ Since $\tilde{\Lambda}^{*} = \overline{\tilde{\Lambda}^{\natural}}$, and the two
 | preserves the two sectors | no | yes |
 | preserves the product $\tilde T\tilde V$ | yes | only for unitary $\tilde{Q}$ |
 
-Left multiplication is recorded for comparison only, as the regular representation of *The 4×4 Regular Matrix Element Representation of Biquaternions*. The last two lines are the content of this section: the sandwich is the Lorentz action, and it conserves the interval in place of the product.
+Left multiplication is recorded for comparison only, as the regular representation of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The last two lines are the content of this section: the sandwich is the Lorentz action, and it conserves the interval in place of the product.
 
 ## The Sandwich Is the Lorentz Action
 

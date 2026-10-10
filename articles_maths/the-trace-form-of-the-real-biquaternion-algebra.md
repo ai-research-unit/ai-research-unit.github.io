@@ -138,7 +138,7 @@ The trace form of the real biquaternion algebra is $\tau(\tilde P,\tilde Q)=\ope
 ## Further Reading
 
 - *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the four realified forms and the signature table the trace form is compared with
-- *The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Regular Matrix Representation* (`articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-regular-matrix-representation.md`), for the trace bridge and the Hilbert–Schmidt form
+- *The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Matrix Representation* (`articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-matrix-representation.md`), for the trace bridge and the Hilbert–Schmidt form
 - *Modules over the General Plain Algebra of Biquaternions* (`articles_maths/modules-over-the-general-plain-algebra-of-biquaternions.md`), for the regular representation
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the general plain bilinear form the trace form reproduces and for the four Gram matrices of the complex forms compared with the realified ones
 - *Bilinear Forms* (`articles_maths/bilinear-forms.md`) and *Quadratic Forms and Polarisation* (`articles_maths/quadratic-forms-and-polarisation.md`), for the general theory of bilinear forms, non-degeneracy and Sylvester's law

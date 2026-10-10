@@ -4,13 +4,13 @@
 
 The biquaternion algebra $\mathbb{B}$ acts on itself by left multiplication, and that action makes $\mathbb{B}$ a module over itself. Read over $\mathbb{C}$ the action is the left regular representation of the four-dimensional complex algebra, a $4 \times 4$ matrix representation; read over $\mathbb{R}$ the same action is a representation of the eight-dimensional real algebra, an $8 \times 8$ real matrix representation. This article treats the **real** module: the regular left module over the real algebra, its rank, its submodules and its endomorphism ring.
 
-The complex $4 \times 4$ regular matrix, its determinant $N(\tilde Q)^2$, its trace $4Q_0$, its characteristic polynomial and the decomposition $\mathbb{B} \cong V \oplus V$ into the simple module are *Biquaternion 4×4 Regular Matrix Element Representation*, and they are cited, not repeated. The real content is the realification: the $8 \times 8$ real matrix is the block matrix
+The complex $4 \times 4$ regular matrix, its determinant $N(\tilde Q)^2$, its trace $4Q_0$, its characteristic polynomial and the decomposition $\mathbb{B} \cong V \oplus V$ into the simple module are *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*, and they are cited, not repeated. The real content is the realification: the $8 \times 8$ real matrix is the block matrix
 $$
 \rho_L^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}, \qquad \rho_L(\tilde Q) = A + iB ,
 $$
 in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and this is the form in which the real module is read. The rank over the algebra is one; the rank over the field is eight; the submodule lattice is the lattice of left ideals and is the same as over $\mathbb{C}$; and the endomorphism ring over $\mathbb{R}$ is the full matrix ring $M_8(\mathbb{R})$, with the $\mathbb{B}$-linear endomorphisms the right multiplications.
 
-The general theory is *Modules over an Algebra*, *Direct Sums, Free Modules and Rank* and *The Endomorphism Algebra of a Module*; the simple module and the module classification are *Modules over the General Plain Algebra of Biquaternions*; the left ideals are *Biquaternion Ideals and Peirce Decomposition*; the invariance of the submodule lattice under the change of scalars is *Why the Ideals, the Idempotents and the Zero Divisors Do Not Change*; the $4 \times 4$ complex matrix is *Biquaternion 4×4 Regular Matrix Element Representation*; and the scalar field is *The Change of Scalars from $\mathbb{C}$ to $\mathbb{R}$*.
+The general theory is *Modules over an Algebra*, *Direct Sums, Free Modules and Rank* and *The Endomorphism Algebra of a Module*; the simple module and the module classification are *Modules over the General Plain Algebra of Biquaternions*; the left ideals are *Biquaternion Ideals and Peirce Decomposition*; the invariance of the submodule lattice under the change of scalars is *Why the Ideals, the Idempotents and the Zero Divisors Do Not Change*; the $4 \times 4$ complex matrix is *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*; and the scalar field is *The Change of Scalars from $\mathbb{C}$ to $\mathbb{R}$*.
 
 **Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, unit $e_0$, quaternion units $e_k^2 = -e_0$, central imaginary $i$ with $i^2 = -e_0$, and general element $\tilde Q = \sum_\mu Q_\mu e_\mu$, $Q_\mu = q_\mu + iq'_\mu$. The quaternion conjugation is $\natural$ and the norm is $N(\tilde Q) = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$. The module is a left module unless stated.
 
@@ -56,7 +56,7 @@ $$
 \det \rho_L^{\mathbb{R}}(\tilde Q) = \bigl|N(\tilde Q)\bigr|^4, \qquad \operatorname{Tr} \rho_L^{\mathbb{R}}(\tilde Q) = 8\operatorname{Re}(Q_0).
 $$
 
-**Proof.** The complex matrix has $\det \rho_L(\tilde Q) = N(\tilde Q)^2$ and $\operatorname{Tr}\rho_L(\tilde Q) = 4Q_0$ (*Introduction to the 4×4 Regular Matrix Representation of Biquaternions*, §*The Determinant and the Trace*), with characteristic polynomial $\bigl(\lambda^2 - 2Q_0\lambda + N(\tilde Q)\bigr)^2$. A complex-linear operator with eigenvalues $\lambda_1,\dots,\lambda_4$ has realification with eigenvalues $\lambda_1,\bar\lambda_1,\dots,\lambda_4,\bar\lambda_4$, so the determinant of the realification is $|\lambda_1\cdots\lambda_4|^2 = |N(\tilde Q)^2|^2 = |N(\tilde Q)|^4$ and its trace is $2\operatorname{Re}(\lambda_1+\cdots+\lambda_4) = 2\operatorname{Re}(4Q_0) = 8\operatorname{Re}(Q_0)$. $\square$
+**Proof.** The complex matrix has $\det \rho_L(\tilde Q) = N(\tilde Q)^2$ and $\operatorname{Tr}\rho_L(\tilde Q) = 4Q_0$ (*Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions*, §*The Determinant and the Trace*), with characteristic polynomial $\bigl(\lambda^2 - 2Q_0\lambda + N(\tilde Q)\bigr)^2$. A complex-linear operator with eigenvalues $\lambda_1,\dots,\lambda_4$ has realification with eigenvalues $\lambda_1,\bar\lambda_1,\dots,\lambda_4,\bar\lambda_4$, so the determinant of the realification is $|\lambda_1\cdots\lambda_4|^2 = |N(\tilde Q)^2|^2 = |N(\tilde Q)|^4$ and its trace is $2\operatorname{Re}(\lambda_1+\cdots+\lambda_4) = 2\operatorname{Re}(4Q_0) = 8\operatorname{Re}(Q_0)$. $\square$
 
 **Remark (the real matrix is never singular off the zero divisors).** The form $|N(\tilde Q)|^4$ is non-negative and vanishes exactly when $N(\tilde Q) = 0$; so the real regular matrix is singular exactly on the zero divisors, in agreement with the invertibility criterion $N(\tilde Q) \neq 0$ of *Biquaternion Norm and Invertibility*. Over $\mathbb{C}$ the same statement reads $\det \rho_L = N^2$, and the square root is taken by the realification.
 
@@ -82,7 +82,7 @@ $$
 $$
 so it has composition length two and its socle is the whole module.
 
-**Proof.** Choose the orthogonal idempotents $\tilde\Pi_1 = \tfrac12(e_0+ie_3)$ and $\tilde\Pi_2 = \tfrac12(e_0-ie_3)$; then $e_0 = \tilde\Pi_1 + \tilde\Pi_2$ and $\tilde\Pi_1\tilde\Pi_2 = 0$, so $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ as left modules, and each summand is a minimal left ideal, isomorphic to the simple module $V$ (*Biquaternion 4×4 Regular Matrix Element Representation*, §*The Module Structure and Reducibility*; *Biquaternion Ideals and Peirce Decomposition*). The simple module has complex dimension two, hence real dimension four, and the length is two. $\square$
+**Proof.** Choose the orthogonal idempotents $\tilde\Pi_1 = \tfrac12(e_0+ie_3)$ and $\tilde\Pi_2 = \tfrac12(e_0-ie_3)$; then $e_0 = \tilde\Pi_1 + \tilde\Pi_2$ and $\tilde\Pi_1\tilde\Pi_2 = 0$, so $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ as left modules, and each summand is a minimal left ideal, isomorphic to the simple module $V$ (*Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*, §*The Module Structure and Reducibility*; *Biquaternion Ideals and Peirce Decomposition*). The simple module has complex dimension two, hence real dimension four, and the length is two. $\square$
 
 **Remark (the simple module over $\mathbb{R}$).** The simple left module is the same set in the two readings: it is a complex vector space of dimension two and a real vector space of dimension four, and the endomorphism rings around it are those of *Modules over the General Plain Algebra of Biquaternions*: Schur's lemma gives $\operatorname{End}_{\mathbb{B}}(V) = \mathbb{C}$, the double centralizer gives $\operatorname{End}_{\mathbb{C}}(V) = \mathbb{B} \cong M_2(\mathbb{C})$, and the full real endomorphism ring is $M_4(\mathbb{R})$. The regular module is the sum of two copies of $V$, which is the module-theoretic reason for the factor $N^2$ in the complex determinant and the factor $|N|^4$ in the real one.
 
@@ -125,7 +125,7 @@ Its submodules are the left ideals, the same lattice as over $\mathbb{C}$, and t
 | Symbol | Meaning |
 |---|---|
 | $\rho_L^{\mathbb{R}}(\tilde Q)$ | the $8 \times 8$ real left regular matrix, $\tilde R \mapsto \tilde Q\tilde R$ |
-| $\rho_L(\tilde Q) = A + iB$ | the $4 \times 4$ complex Cayley matrix of *Biquaternion 4×4 Regular Matrix Element Representation* |
+| $\rho_L(\tilde Q) = A + iB$ | the $4 \times 4$ complex Cayley matrix of *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$* |
 | $\begin{pmatrix} A & -B \\ B & A\end{pmatrix}$ | the block form of the realification |
 | $N(\tilde Q) = \tilde Q\tilde Q^{\natural}$ | the norm; $\det\rho_L^{\mathbb{R}} = |N|^4$, $\operatorname{Tr}\rho_L^{\mathbb{R}} = 8\operatorname{Re}(Q_0)$ |
 | $V$ | the simple left module, $\dim_\mathbb{R} V = 4$, $\dim_\mathbb{C} V = 2$ |
@@ -137,7 +137,7 @@ Its submodules are the left ideals, the same lattice as over $\mathbb{C}$, and t
 
 ## Further Reading
 
-- *Biquaternion 4×4 Regular Matrix Element Representation* (`articles_maths/biquaternion-4x4-regular-matrix-element-representation.md`), for the complex regular matrix, its determinant and trace, and the decomposition $\mathbb{B} \cong V \oplus V$.
+- *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/biquaternion-4x4-matrix-element-representation.md`), for the complex regular matrix, its determinant and trace, and the decomposition $\mathbb{B} \cong V \oplus V$.
 - *Modules over an Algebra* (`articles_maths/modules-over-an-algebra.md`), for submodules, simplicity, semisimplicity and the composition series.
 - *Direct Sums, Free Modules and Rank* (`articles_maths/direct-sums-free-modules-and-rank.md`), for free modules and rank.
 - *The Endomorphism Algebra of a Module* (`articles_maths/the-endomorphism-algebra-of-a-module.md`), for endomorphism rings and the double centralizer.

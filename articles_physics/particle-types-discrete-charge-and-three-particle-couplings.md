@@ -169,7 +169,7 @@ a boost, since a boost moves states without creating quantum numbers.
 **The contrast with the Lorentz group.** The same element acts on the material sector as a Lorentz
 transformation, and there the isometry group is the non-compact $SO^{+}(1,3)$, not a compact group. The
 difference is the form: the positive form of the informational sector gives the compact $U(2)$, the
-indefinite interval form of the material sector the non-compact Lorentz group. The two sit in one algebra
+indefinite interval form of the material sector the non-compact Lorentz group. The two sit in one biquaternion space
 and are separated by the sign of the form.
 
 **Remark (verified).** At $\varphi=0.5,2,5$ the Euclidean square is $1.543,27.31,11013$ while

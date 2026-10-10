@@ -1,4 +1,4 @@
-# __The 2×2 Matrix Operator Representation $M_2(\mathbb{C})$ of Biquaternions__
+# __The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ $$
 
 This is the realization in which the operator is a single familiar operation of matrix algebra, and in which the two regimes of the operator — invertible congruence, or collapse — become the two cases of the rank of one matrix.
 
-The article owns the identification of the sandwich with the congruence, the fact that $\Phi$ carries the dagger to the conjugate transpose, the preservation of rank, the scaling of the determinant, the preservation of the two Hermitian sectors, the positive Hermitian form attached to the identity, and the separation of the two regimes at the level of $\Phi(\tilde{Q})$, including the collapse of a null congruence onto one Hermitian line. The component computation of the same operator is *The Four-Vector Operator Representation of Biquaternions*; its matrix on the coefficient space, with the determinant $\lvert N\rvert^{4}$ and the trace $4\lvert Q_0\rvert^{2}$, is *The 4×4 Regular Matrix Operator Representation of Biquaternions*; the module side belongs to another coordinate system and is not repeated here. The module $V$ and the left action of the algebra on it are cited from the element article and not re-derived.
+The article owns the identification of the sandwich with the congruence, the fact that $\Phi$ carries the dagger to the conjugate transpose, the preservation of rank, the scaling of the determinant, the preservation of the two Hermitian sectors, the positive Hermitian form attached to the identity, and the separation of the two regimes at the level of $\Phi(\tilde{Q})$, including the collapse of a null congruence onto one Hermitian line. The component computation of the same operator is *The Four-Vector Operator Representation of Biquaternions*; its matrix on the coefficient space, with the determinant $\lvert N\rvert^{4}$ and the trace $4\lvert Q_0\rvert^{2}$, is *The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions*; the module side belongs to another coordinate system and is not repeated here. The module $V$ and the left action of the algebra on it are cited from the element article and not re-derived.
 
 **Conventions.** The matrix of the element is $M = \Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}$; the dagger on matrices is the conjugate transpose, written $M^{\dagger}$; the two Hermitian sectors are $\mathbb{M}_+$ and $\mathbb{M}_-$, whose images are the Hermitian and the skew-Hermitian matrices; and $V = \mathbb{C}^2$ is the simple module.
 
@@ -42,7 +42,7 @@ The operator is $\mathbb{C}$-**linear** in $X$, because left and right multiplic
 
 The operator is **not** a similarity unless $M$ is unitary: the two conjugating factors must be inverse for that, and $M^{\dagger} = M^{-1}$ is the unitarity condition, which is the matrix form of the fact that the sandwich is multiplicative exactly on the rotations.
 
-The two-sided space is **four-dimensional over $\mathbb{C}$**, so the operator is an element of $\operatorname{End}_{\mathbb{C}}(M_2(\mathbb{C})) \cong M_4(\mathbb{C})$; that is the same four-dimensional carrier as in the coefficient realization, and the two matrices are conjugate, which is the content of *The 4×4 Regular Matrix Operator Representation of Biquaternions*.
+The two-sided space is **four-dimensional over $\mathbb{C}$**, so the operator is an element of $\operatorname{End}_{\mathbb{C}}(M_2(\mathbb{C})) \cong M_4(\mathbb{C})$; that is the same four-dimensional carrier as in the coefficient realization, and the two matrices are conjugate, which is the content of *The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions*.
 
 ## Rank, Determinant and the Hermitian Form
 
@@ -84,7 +84,7 @@ $$
 
 **Theorem (the invertible congruence).** Let $N(\tilde{Q}) \neq 0$. Then $M$ is invertible, the congruence $X \mapsto MXM^{\dagger}$ is a bijection of $M_2(\mathbb{C})$ that preserves the rank of every matrix, the operator has rank $4$ on the four-dimensional space, and $\det = \lvert N(\tilde{Q})\rvert^{4}$, $\operatorname{Tr} = 4\lvert Q_0\rvert^{2}$.
 
-**Proof.** $M$ is invertible because $\det M = N(\tilde{Q}) \neq 0$; the inverse congruence is $X \mapsto M^{-1}X(M^{\dagger})^{-1}$, so the map is a bijection; multiplication by an invertible matrix on either side preserves rank, so rank is preserved, the strata of $M_2(\mathbb{C})$ being the zero matrix, the nonzero matrices of rank one, and the full-rank matrices; the rank and the invariants are *The 4×4 Regular Matrix Operator Representation of Biquaternions*.
+**Proof.** $M$ is invertible because $\det M = N(\tilde{Q}) \neq 0$; the inverse congruence is $X \mapsto M^{-1}X(M^{\dagger})^{-1}$, so the map is a bijection; multiplication by an invertible matrix on either side preserves rank, so rank is preserved, the strata of $M_2(\mathbb{C})$ being the zero matrix, the nonzero matrices of rank one, and the full-rank matrices; the rank and the invariants are *The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions*.
 
 The matrix $M$ has two eigenvalues $\lambda_1, \lambda_2$, nonzero in this case, and the operator has the four eigenvalues $\lambda_i\bar{\lambda}_j$; the determinant is their product and the trace their sum. The congruence preserves the rank, so each rank stratum of $M_2(\mathbb{C})$ — the zero matrix, the nonzero matrices of rank one, and the full-rank matrices — is carried into itself, and the operator on the four-dimensional matrix space has rank $4$ in this case.
 
@@ -112,7 +112,7 @@ $$
 
 The element corresponding to the Hermitian matrix $uu^{\dagger}$, normalised, is a minimal idempotent of $\mathbb{B}$; the operator is nilpotent when $Q_0 = 0$ and a scaled projection when $Q_0 \neq 0$.
 
-**Proof.** $MXM^{\dagger} = uv^{\dagger}X(vu^{\dagger}) = u(v^{\dagger}Xv)u^{\dagger}$, the parenthesis being a scalar; so every image is a multiple of $uu^{\dagger}$, which is nonzero and Hermitian, and the image has complex dimension one. The rank statement and the square are *The 4×4 Regular Matrix Operator Representation of Biquaternions*, and the identification of $uu^{\dagger}$ with a minimal idempotent is the statement that an idempotent of $M_2(\mathbb{C})$ is a rank-one projection.
+**Proof.** $MXM^{\dagger} = uv^{\dagger}X(vu^{\dagger}) = u(v^{\dagger}Xv)u^{\dagger}$, the parenthesis being a scalar; so every image is a multiple of $uu^{\dagger}$, which is nonzero and Hermitian, and the image has complex dimension one. The rank statement and the square are *The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions*, and the identification of $uu^{\dagger}$ with a minimal idempotent is the statement that an idempotent of $M_2(\mathbb{C})$ is a rank-one projection.
 
 **Example (nilpotent).** For $\tilde{Q} = e_1 + ie_2$, a zero divisor with $Q_0 = 0$,
 
@@ -145,6 +145,8 @@ The two examples separate the two faces of the cone exactly as in the other real
 ## Physical Readings
 
 The congruence reads as the Lorentz action on the Hermitian matrix that carries a four-vector, and it is the smallest form in which a change of frame can be computed. Read for invariance, a congruence preserves the signature, which is why the sign of the interval is frame-invariant while its normalisation is not, and why the probability form is the one the congruence cannot reach at all. Read on the clock, the matrix image of the central imaginary is a scalar matrix, which is the matrix reason that the exchange commutes with every change of frame.
+
+Read on a state, the determinant is the framework's **mixedness**. The Hermitian matrix image of a state has $\det M_{\tilde\rho}=\tfrac14(1-\lvert\mathbf r\rvert^2)$, which is exactly the biquaternion norm of the trace-one state $\tilde\rho=\tfrac12(e_0+i\mathbf r)$; it vanishes on the pure states at the boundary of the ball and is maximal at its centre, and the purity and linear entropy read off it as $\mathrm{Tr}(\tilde\rho^2)=1-2\det M_{\tilde\rho}$ and $S_L=2\det M_{\tilde\rho}$, so the determinant is the matrix volume of the state (*Exercise: The Bloch Ball and the Geometry of Mixed States*). Boundary: the identity is the two-dimensional matrix image of an informational element, where the relevant transformations are unimodular; the general-biquaternion statement is the rank-and-determinant proposition above.
 
 ## Summary
 

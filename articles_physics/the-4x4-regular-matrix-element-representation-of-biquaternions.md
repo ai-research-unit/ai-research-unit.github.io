@@ -1,4 +1,4 @@
-# __The 4×4 Regular Matrix Element Representation of Biquaternions__
+# __The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions__
 
 ## Introduction
 

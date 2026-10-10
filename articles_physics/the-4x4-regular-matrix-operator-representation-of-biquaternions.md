@@ -1,10 +1,10 @@
-# __The 4×4 Regular Matrix Operator Representation of Biquaternions__
+# __The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions__
 
 ## Introduction
 
 Physically this is the statement, already made in the element article, that the Lorentz transformation of a four-vector is a product of a left multiplication and a right multiplication in the algebra; what is added here is that the product is a matrix whose invariants are real and non-negative, so that the transformation the algebra performs is measured by two scalars.
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The left and right regular representations $\rho_L, \rho_R$ of $\mathbb{B}$ on itself, in the coefficient basis $e_0, e_1, e_2, e_3$, are those of *The 4×4 Regular Matrix Element Representation of Biquaternions*.
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The left and right regular representations $\rho_L, \rho_R$ of $\mathbb{B}$ on itself, in the coefficient basis $e_0, e_1, e_2, e_3$, are those of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 That article writes an element as an operator by *one* of its two multiplications, and finds the matrix of left multiplication, $\rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{R}$, with $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^{2}$ and $\operatorname{Tr}\rho_L(\tilde{Q}) = 4Q_0$. This article writes the Hermitian sandwich of *Biquaternion Rotations and Lorentz Transformations* in the same basis,
 

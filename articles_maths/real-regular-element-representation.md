@@ -149,7 +149,7 @@ $$
 \rho_L^{\mathbb{B}} = \rho_L^{\mathbb{C}} \otimes_{\mathbb{R}} \rho_L^{\mathbb{H}}, \qquad \dim_{\mathbb{R}} = 2 \times 4 = 8,
 $$
 
-which is the $4 \times 4$ complex regular representation of $\mathbb{B}$ read over $\mathbb{R}$. The real representation is the scalar base factor of this product: at each of the two tensor levels the coefficient factor is a copy of the real scalars, and the complex Cayley factor $\rho_L^{\mathbb{C}}$ acts on each $\mathbb{C}$-coefficient while the quaternion Cayley factor $\rho_L^{\mathbb{H}}$ acts on the index $\mu$. The two combine into the Cayley matrix of *Biquaternion 4×4 Regular Matrix Element Representation*.
+which is the $4 \times 4$ complex regular representation of $\mathbb{B}$ read over $\mathbb{R}$. The real representation is the scalar base factor of this product: at each of the two tensor levels the coefficient factor is a copy of the real scalars, and the complex Cayley factor $\rho_L^{\mathbb{C}}$ acts on each $\mathbb{C}$-coefficient while the quaternion Cayley factor $\rho_L^{\mathbb{H}}$ acts on the index $\mu$. The two combine into the Cayley matrix of *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*.
 
 The lower end of the same hierarchy is the $2 \times 2$ complex representation of the quaternions. Since $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{C} \cong M_2(\mathbb{C})$, the quaternion regular representation, of real dimension $4$, complexifies to the $2 \times 2$ complex representation
 
