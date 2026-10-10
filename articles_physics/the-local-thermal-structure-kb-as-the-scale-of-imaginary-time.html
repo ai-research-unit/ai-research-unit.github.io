@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Local Thermal Structure: k_B as the Scale of Imaginary Time — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-local-thermal-structure-k_b-as-the-scale-of-imaginary-time"><strong>The Local Thermal Structure: k_B as the Scale of Imaginary Time</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The local complex structure of the framework attaches one number to the algebraic imaginary-time direction: the local speed of light $c=1/\sqrt{\epsilon\mu}$. The imaginary phase is the algebra's fixed $i$, the scale is $c$, and the map $t\mapsto i\,c\,t\,e_0$ is what turns "the temporal direction is imaginary" into a statement about lengths. The positivity of $c$ is what makes it a rescaling of the imaginary axis rather than a rotation of it (<em>The Local Complex Structure and the Speed of Light</em>).</p>
+<p>Thermodynamics attaches a second number to the same direction. The KMS condition says that the correlation functions of a thermal state at inverse temperature
+$$
+\beta=\frac{\hbar}{k_BT}
+$$
+extend analytically to a strip of width $\beta$ in the complex time plane, and that the imaginary-time direction is therefore periodic, with the thermal circle of circumference $\beta$ (<em>The KMS Condition and the Biquaternion Framework</em>). In the material sector's units the thermal circle has circumference $\hbar c/(k_BT)$.</p>
+<p>The article <em>Action, Units, and the Constants of the Biquaternion Universe</em> records the resulting question as its open question 3:</p>
+<blockquote>
+<p><strong>3. Is $k_B$ a scale of the same kind as $c$?</strong> The thermal circle has circumference $\hbar c/(k_BT)$ in the material sector's units, and its direction is the algebraic imaginary-time direction. This makes $k_B$ look like $c$: a scale attached to an imaginary coordinate, without which that coordinate has no size. Whether that parallel can be made precise — whether there is a "local thermal structure" — is open.</p>
+</blockquote>
+<p>This article answers that question. The answer has two halves, and they point in opposite directions. <strong>Yes</strong>: $k_B$ is a scale attached to the same fixed algebraic direction, of the same local character as $c$, and the parallel can be made precise as a <em>local thermal structure</em> on the field of states. <strong>No</strong>: it is not the same kind of scale as $c$, because $c$ is required by the algebra and $k_B$ is required by no algebraic structure. The framework's thermal scale is a scale of a state, not of the algebra, and that difference is the content of the reading.</p>
+<p>Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with central $i$, the material sector is $\mathbb{M}_-$ with $\tilde{Q}=ic\,t\,e_0+\mathbf x$ and norm $N(\tilde{Q})=\sum_\mu Q_\mu^2$, and the framework's local metric is $g=\mathrm{diag}(-c^2,1,1,1)$. $\hbar$ is the reduced Planck constant, $k_B$ Boltzmann's constant, $T$ the temperature and $\beta=\hbar/(k_BT)$ the inverse temperature.</p>
+<h2 id="the-local-complex-structure-recalled">The Local Complex Structure, Recalled</h2>
+<p>Two ingredients of the local complex structure are used below, and it is worth separating them because the thermal structure will have an analogue of one and not of the other.</p>
+<p><strong>The phase.</strong> The imaginary unit is the algebra's own $i$, central, with $i^2=-1$. It is the same at every point, and it is what supplies the minus sign of the Minkowski interval: the $i^2$ of $(ic\,dt)^2$ is the signature. Nothing physical follows from the phase alone.</p>
+<p><strong>The scale.</strong> The one free number is $c$. It is what makes the statement "the temporal direction is imaginary" dimensionally meaningful, because $ict$ is a length and $t$ is a time. It is local, $c=c(\mathbf x)$ in an inhomogeneous medium, and the structure is global only in the limit in which $c$ is constant. The metric it induces is $g=\mathrm{diag}(-c^2,1,1,1)$.</p>
+<p>The formal shape to carry away is: <strong>a fixed algebraic direction, plus one real positive scale attached to it locally</strong>. The scale is real and positive so that it rescales the imaginary axis rather than rotating it; the structure is pointwise rather than holomorphic; and it requires a scale, since without one the statement "the temporal direction is imaginary" has no metric content.</p>
+<h2 id="the-thermal-structure-of-the-same-direction">The Thermal Structure of the Same Direction</h2>
+<p>The KMS condition is a statement about the <em>same</em> algebraic direction, and its scale is $\beta$. Three facts fix the parallel.</p>
+<p><strong>The direction is the algebraic one.</strong> The KMS strip is a strip in the <em>complex</em> time plane, and the direction along which the correlation functions are continued is the imaginary one — the direction of $ict$ in the material sector, spanned by the coefficient $ict$ that is imaginary by construction (<em>The KMS Condition and the Biquaternion Framework</em>). The shift $t\mapsto t+i\beta$ moves the real parameter along that algebraic direction.</p>
+<p><strong>The period is $\beta$, and the length is $c\beta$.</strong> The imaginary-time direction is compact with circumference $\beta$ <em>in the coordinate $t$</em>, so the thermal circle has circumference $c\beta=\hbar c/(k_BT)$ in the material sector's units. The identity
+$$
+c\beta=\frac{\hbar c}{k_BT}
+$$
+is exact, and it was checked numerically for $T=2.725$, $300$ and $1000\,\mathrm{K}$: the ratio $(\hbar c/k_BT)/(\beta c)$ is $1$ to twelve decimal places. So the two scales multiply, and they are independent: $c$ comes from $\epsilon\mu$ and $\beta$ from $T$.</p>
+<p><strong>The same shape: a fixed direction with one real positive scale.</strong> Here is the parallel in its sharp form. The thermal structure is <em>also</em> a fixed algebraic direction — the algebra's imaginary-time axis — with <em>one real positive scale attached to it locally</em>, namely $\beta(\mathbf x)=\hbar/(k_BT(\mathbf x))$. It is pointwise: a temperature field is a field of local scales. It is global only in equilibrium, when $T$ is constant, exactly as the local complex structure is global only when $c$ is constant. And it requires a scale: without $k_B$ the statement "the imaginary time is periodic" has no period.</p>
+<h2 id="the-parallel-and-the-disanalogy">The Parallel and the Disanalogy</h2>
+<p>The parallel is now precise, and so is its limit.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Local complex structure</th>
+<th>Local thermal structure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fixed algebraic direction</td>
+<td>the imaginary-time axis, phase $i$</td>
+<td>the imaginary-time axis, phase $i$</td>
+</tr>
+<tr>
+<td>Scale attached to it</td>
+<td>$c=1/\sqrt{\epsilon\mu}$</td>
+<td>$\beta=\hbar/(k_BT)$</td>
+</tr>
+<tr>
+<td>Character of the scale</td>
+<td>real, positive, local</td>
+<td>real, positive, local</td>
+</tr>
+<tr>
+<td>Global in the limit</td>
+<td>$c$ constant</td>
+<td>$T$ constant (equilibrium)</td>
+</tr>
+<tr>
+<td>What the algebra requires</td>
+<td>$c$ is required: without it the quadratic form has no length</td>
+<td>none: the imaginary direction exists without $k_B$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is the disanalogy, and it is decided by the role each constant plays in the algebra. The biquaternion norm on the material sector is $N(\tilde{Q})=(ic\,t)^2+\mathbf x^2$, and the scale $c$ is what gives the temporal term a physical size; without a scale the form is a formal expression in mixed units. $c$ is therefore a scale of the <strong>algebra</strong>: the algebra cannot state its own quadratic form without one, and the corpus records the constants article's result that $c$ "must appear for the algebra to state its own quadratic form" (<em>Action, Units, and the Constants of the Biquaternion Universe</em>).</p>
+<p>$k_B$ is not of that kind. The imaginary-time direction exists without it; the algebra's $i$ and the material sector's $ict$ are there whether or not any temperature is defined. $k_B$ enters only when an <strong>energy is compared with a temperature</strong>, that is, only on a state. The corpus's own formulation is that "$k_B$ must appear for a temperature to be a time", and that the algebra cannot produce it, because a dimensionful constant is a unit conversion and not a statement about the algebra.</p>
+<p>The consequence is the honest verdict on the open question: <strong>$k_B$ is a scale of the same kind as $c$ at the level of a scale attached to the algebraic imaginary-time direction, and not of the same kind at the level of the algebra.</strong> The scale of the local complex structure is data of the algebra; the scale of the thermal structure is data of a state. A local thermal structure exists, and it is a structure on the <em>field of states</em>, not on the manifold: a pointwise period, not a pointwise metric.</p>
+<h2 id="the-local-thermal-structure">The Local Thermal Structure</h2>
+<p>That distinction has a checkable consequence, because the pointwise character of the thermal scale can be exhibited.</p>
+<p><strong>Tolman's law on the framework's metric.</strong> In a static metric the local temperature satisfies $T\sqrt{-g_{00}}=\text{const}$. With the framework's $g_{00}=-c^2$ this reads
+$$
+T\,c=\text{const},
+\qquad\text{so}\qquad
+T\propto\frac{1}{c}\propto n .
+$$
+The local temperature is inversely proportional to the local speed of light: where the medium is optically denser, the local temperature is higher. The relation was checked directly: with a reference $T_0=300\,\mathrm{K}$ at $c_1=1$, a point at $c_2=1.5$ carries $T=200\,\mathrm{K}$, and $Tc=300$ at both points. The pointwise character is the same as that of $c$: the temperature varies from point to point precisely as the local complex structure does, and the two variations are tied by the metric.</p>
+<p><strong>Two local temperatures of established physics.</strong> The two temperatures the corpus already treats are local in exactly this sense. The <strong>Unruh temperature</strong> of an accelerated observer,
+$$
+T=\frac{\hbar\,a}{2\pi c\,k_B},
+$$
+is fixed by the local acceleration $a$ and the local light speed $c$, hence pointwise. The <strong>Hawking temperature</strong>,
+$$
+T_H=\frac{\hbar c^3}{8\pi G M k_B},
+$$
+is fixed by the local surface gravity of the horizon. Both read the same scale $\hbar/(k_BT)$ against the same algebraic imaginary-time direction, and both are owned elsewhere in the corpus (<em>Hawking Radiation in Biquaternionic Form</em>).</p>
+<p><strong>The thermal circle and the Matsubara direction.</strong> The compactness of the imaginary-time direction with period $\beta$ is what makes the Fourier modes discrete: the bosonic Matsubara frequencies are $2\pi n/\beta$ and the fermionic ones $(2n+1)\pi/\beta$. The thermal structure's scale is therefore what the spectral structure of the imaginary-time direction is measured in (<em>The Matsubara Formalism in Biquaternionic Form</em>). This is the thermal analogue of the statement that $c$ is the scale the <em>spatial</em> spectral structure of the local complex structure is measured in.</p>
+<h2 id="the-wick-rotation-of-the-thermal-structure">The Wick Rotation of the Thermal Structure</h2>
+<p>The thermal structure and the framework's Euclidean continuation are two readings of one operation. The Wick rotation transfers the material sector to the real-quaternion subspace, replacing the imaginary time coordinate $ict$ by a real one (<em>The Wick Rotation in the Biquaternion Universe</em>), and the central rotation $t\mapsto e^{i\theta}t$ is the same generator read on the time coordinate (<em>The Central Rotation: Phase, Duality and the Wick Rotation as One Generator</em>). The KMS circle is the compact form of the imaginary-time direction, and the Euclidean formulation of thermal field theory is the theory on that compact direction.</p>
+<p>The reading is that the thermal structure is the <strong>compactification</strong> of the same algebraic direction that the local complex structure leaves open, and that the scale of the compactification is $\hbar/(k_BT)$. In the medium, the sign of $\epsilon\mu$ decides whether the direction is Lorentzian or Euclidean (<em>The Effective Optical Metric of the Local Complex Structure</em>); in the state, the temperature decides the period. The two are independent, and they meet in one algebra.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established (physics).</strong> The KMS condition and its strip of width $\beta=\hbar/(k_BT)$; the compactness of the imaginary-time direction and the Matsubara frequencies; Tolman's law $T\sqrt{-g_{00}}=\text{const}$ in a static metric; the Unruh and Hawking temperatures; the numerical identities $c\beta=\hbar c/(k_BT)$ and $Tc=\text{const}$ on the framework's metric.</p>
+<p><strong>Established (algebra).</strong> The local complex structure with its phase $i$ and its scale $c$; the material sector with the imaginary time coordinate $ict$; the fact that the thermal direction is the same algebraic direction; the corpus's result that $c$ is required by the algebra and $k_B$ is not.</p>
+<p><strong>Interpretation.</strong> That the parallel is precise enough to be called a <em>local thermal structure</em>; that this structure lives on the field of states and not on the manifold; that the thermal structure is the compactification of the same direction the local complex structure leaves open; and that the disanalogy — algebra scale against state scale — is the answer to the open question.</p>
+<p><strong>Open.</strong> Whether the state-dependence of the thermal scale can be given an algebraic home, for instance whether the modular Hamiltonian of the state plays the role that the central imaginary plays for the algebra; and whether the local thermal structure has consequences beyond the restatement of Tolman's law and the KMS condition.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<p>The thermal scale reads as the <strong>local complex structure's partner on the state side</strong>. The algebra fixes the imaginary-time direction, the medium fixes its length through $c$, and the state fixes its period through $\beta=\hbar/(k_BT)$: three data for one direction, one of them algebraic and two of them pointwise and physical. Read on the medium, the temperature is a field tied to the local light speed by Tolman's law, $T\propto1/c$, so a denser medium is locally hotter and the thermal and optical structures vary together (<em>The Effective Optical Metric of the Local Complex Structure</em>). Read on the state, the thermal scale is what the imaginary time's periodicity is measured in, so the Matsubara spectrum is the spectrum of the algebra's own imaginary direction read with the state's scale (<em>The Matsubara Formalism in Biquaternionic Form</em>). Read on the class of scales, the reading is the sharp answer to the constants article's question: $k_B$ is a scale of the same kind as $c$ as a scale <em>attached to the imaginary-time direction</em>, and not of the same kind as $c$ as a scale <em>required by the algebra</em>, because the algebra states its quadratic form only with $c$ and states its imaginary direction with no help from $k_B$ (<em>Action, Units, and the Constants of the Biquaternion Universe</em>).</p>
+<h2 id="summary">Summary</h2>
+<p>The constants article asks whether $k_B$ is a scale of the same kind as $c$. This article's answer is two-sided. The parallel can be made precise: the KMS condition attaches the scale $\beta=\hbar/(k_BT)$ to the <em>same</em> fixed algebraic imaginary-time direction that the local complex structure attaches the scale $c$ to; both scales are real, positive and local, hence pointwise, hence global only in the limiting case of a constant value; and the identity $c\beta=\hbar c/(k_BT)$ between the material-sector circumference and the coordinate period is exact, checked for three temperatures.</p>
+<p>The disanalogy is decided by the algebra's own requirement. The biquaternion norm $(ic\,t)^2+\mathbf x^2$ needs the scale $c$ to state a length, so $c$ is a scale of the algebra; the imaginary-time direction needs no scale at all, so $k_B$ is a scale of a state. The local thermal structure therefore exists, and it is a structure on the field of states: a pointwise period, not a pointwise metric. Its pointwise character is exhibited by Tolman's law on the framework's metric, $Tc=\text{const}$, so $T\propto1/c$: the local temperature varies with the local light speed, exactly as the local complex structure does, and the two are tied by the metric. The Unruh and Hawking temperatures are the two established local temperatures of the corpus read with the same scale, and the thermal circle is the compactified form of the algebraic imaginary-time direction, the same direction whose Lorentzian-or-Euclidean character is decided in the medium by the sign of $\epsilon\mu$ and in the state by the temperature.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary, the fixed phase of the imaginary-time direction</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Material sector, $\tilde{Q}=ic\,t\,e_0+\mathbf x$</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q})=(ic\,t)^2+\mathbf x^2$</td>
+<td>Biquaternion norm; needs the scale $c$ to have a length</td>
+</tr>
+<tr>
+<td>$c=1/\sqrt{\epsilon\mu}$</td>
+<td>Local speed of light: the algebra's scale</td>
+</tr>
+<tr>
+<td>$g_{\mu\nu}=\mathrm{diag}(-c^2,1,1,1)$</td>
+<td>Framework's local metric</td>
+</tr>
+<tr>
+<td>$\beta=\hbar/(k_BT)$</td>
+<td>Inverse temperature: the state's scale</td>
+</tr>
+<tr>
+<td>$c\beta=\hbar c/(k_BT)$</td>
+<td>Thermal circle in the material sector's units</td>
+</tr>
+<tr>
+<td>$Tc=\text{const}$</td>
+<td>Tolman's law on the framework's metric; $T\propto1/c\propto n$</td>
+</tr>
+<tr>
+<td>$T=\hbar a/(2\pi c\,k_B)$</td>
+<td>Unruh temperature: a local temperature</td>
+</tr>
+<tr>
+<td>$T_H=\hbar c^3/(8\pi G M k_B)$</td>
+<td>Hawking temperature: a local temperature</td>
+</tr>
+<tr>
+<td>$\omega_n=2\pi n/\beta$, $(2n+1)\pi/\beta$</td>
+<td>Bosonic and fermionic Matsubara frequencies</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>R. Tolman, "On the weight of heat and thermal equilibrium in general relativity," <em>Physical Review</em> <strong>35</strong> (1930) 904–924, and R. Tolman and P. Ehrenfest, "Temperature equilibrium in a static gravitational field," <em>Physical Review</em> <strong>36</strong> (1930) 1791–1798, for the pointwise character of temperature in a static field.</li>
+<li>W. G. Unruh, "Notes on black-hole evaporation," <em>Physical Review D</em> <strong>14</strong> (1976) 870–892, for the Unruh temperature.</li>
+<li>S. W. Hawking, "Particle creation by black holes," <em>Communications in Mathematical Physics</em> <strong>43</strong> (1975) 199–220, for the Hawking temperature.</li>
+<li>R. Haag, N. M. Hugenholtz, and M. Winnink, "On the equilibrium states in quantum statistical mechanics," <em>Communications in Mathematical Physics</em> <strong>5</strong> (1967) 215–236, for the KMS characterization of equilibrium.</li>
+<li>M. Le Bellac, <em>Thermal Field Theory</em> (Cambridge, 1996), for the imaginary-time formalism and the Matsubara frequencies.</li>
+<li>The companion articles: <em>Action, Units, and the Constants of the Biquaternion Universe</em> (the open question this article answers), <em>The Local Complex Structure and the Speed of Light</em>, <em>The Effective Optical Metric of the Local Complex Structure</em>, <em>The KMS Condition and the Biquaternion Framework</em>, <em>The Matsubara Formalism in Biquaternionic Form</em>, <em>The Wick Rotation in the Biquaternion Universe</em>, and <em>Hawking Radiation in Biquaternionic Form</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
