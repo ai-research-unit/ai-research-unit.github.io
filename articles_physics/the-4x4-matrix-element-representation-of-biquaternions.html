@@ -56,40 +56,48 @@
 <p>The <strong>regular representation</strong> of the biquaternion algebra is the algebra acting on itself on the left. Multiplication on the left by a fixed element is linear on the four-dimensional space $\mathbb{B}$, so in the basis $e_0, e_1, e_2, e_3$ it is a $4 \times 4$ complex matrix. This article constructs that matrix and its companion for multiplication on the right, proves that the two constructions are multiplicative, and reads off the consequences: the determinant is the <strong>square</strong> of the biquaternion norm and the trace is four times the scalar part; the regular module is the direct sum of two copies of the simple module, which in this corpus are the two <strong>chiralities</strong>; the centralizer of the left copy is the right copy; and the two copies together give the two-sided action by which a Lorentz transformation of a four-vector is written. The image of the left multiplication is written $M_4(\mathbb{C})_L$: the subspace of $M_4(\mathbb{C})$ of the regular matrices, of complex dimension $4$ inside the $16$ of the matrix algebra.</p>
 <p>The conventions are those of <em>Conventions in the Biquaternion Universe</em> and of the two companion articles, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$; the scalar imaginary $i$ commutes with every unit; the conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{*}$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; the subspaces are $\mathbb{C}_{\mathbb{B}}$ (centre), $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$ (real), $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ (informational) and $\mathbb{M}_-$ (material); the physical coordinates are $\tilde{Q} = ict\,e_0 + \mathbf{x}$ in $\mathbb{M}_-$ and $ct'\,e_0 + i\mathbf{x}'$ in $\mathbb{M}_+$, with $\mathbf{x} = xe_1+ye_2+ze_3$ and $\mathbf{x}' = x'e_1+y'e_2+z'e_3$; the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$ and the d'Alembertian is $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$.</p>
 <h2 id="the-left-regular-matrix">The Left Regular Matrix</h2>
-<p><strong>Definition.</strong> In the basis $e_0, e_1, e_2, e_3$, the <strong>left regular matrix</strong> $\mathsf{M}_4^{L}(\tilde{Q})$ is the $4 \times 4$ matrix whose $m$-th column is the coordinate column of the product $\tilde{Q}e_m$:</p>
+<p>The isomorphism is written $\mathsf{M}_4^{L}$. It converts a biquaternion into a $4 \times 4$ complex matrix,</p>
 <p>$$
-\mathsf{M}_4^{L}(\tilde{Q})\,E_m = \operatorname{col}\bigl(\tilde{Q}e_m\bigr), \qquad \operatorname{col}\bigl(\tilde{Q}\tilde{R}\bigr) = \mathsf{M}_4^{L}(\tilde{Q})\,R ,
+\mathsf{M}_4^{L} : \mathbb{B} \longrightarrow M_4(\mathbb{C}),
 $$</p>
-<p>where $E_m$ is the $m$-th standard column, $R$ is the $4 \times 1$ column of $\tilde{R}$ of <em>The Four-Vector Element Representation of Biquaternions</em>, and $\operatorname{col}(\tilde{S})$ is the coordinate column of $\tilde{S}$. The second identity is the first applied to $\tilde{R} = \sum_m R^m e_m$, and it is the reason the matrix acts on columns: one column of the algebra becomes one matrix-column product.</p>
-<p>The matrix is the left multiplication written in coordinates, and it exists because multiplication on the left is linear, $\tilde{Q}(\tilde{R}_1 + \lambda\tilde{R}_2) = \tilde{Q}\tilde{R}_1 + \lambda\tilde{Q}\tilde{R}_2$ for every $\lambda \in \mathbb{C}$, the scalar $i$ being central.</p>
-<p><strong>Proposition (the regular matrix is the Cayley matrix).</strong> In the basis $e_0, e_1, e_2, e_3$,</p>
+<p>and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity. The scalar imaginary $i$ is the complex unit of the coefficients and is central, so it maps to a scalar matrix; the quaternion units are assigned the matrices</p>
+<p>$$
+\mathsf{M}_4^{L}(e_0) = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}, \quad
+\mathsf{M}_4^{L}(e_1) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}, \quad
+\mathsf{M}_4^{L}(e_2) = \begin{pmatrix} 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \end{pmatrix}, \quad
+\mathsf{M}_4^{L}(e_3) = \begin{pmatrix} 0 & 0 & 0 & -1 \\ 0 & 0 & -1 & 0 \\ 0 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0 \end{pmatrix},
+$$</p>
+<p>with $\mathsf{M}_4^{L}(i) = i\,\mathsf{M}_4^{L}(e_0)$ on the central scalar $\mathbb{C}_{\mathbb{B}}$.</p>
+<p>This is the assignment, taken as fixed for the whole series. A general biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$ therefore maps to</p>
 <p>$$
 \mathsf{M}_4^{L}(\tilde{Q}) = \begin{pmatrix}
 Q_0 & -Q_1 & -Q_2 & -Q_3 \\
 Q_1 & Q_0 & -Q_3 & Q_2 \\
 Q_2 & Q_3 & Q_0 & -Q_1 \\
 Q_3 & -Q_2 & Q_1 & Q_0
-\end{pmatrix}.
+\end{pmatrix},
 $$</p>
-<p>Each entry is a single coefficient of $\tilde{Q}$ carrying a sign, and <strong>no entry is a sum of two or more coefficients</strong>, because in this basis every product of basis elements is one basis element times a sign.</p>
-<p><strong>Proof.</strong> The columns are the products $\tilde{Q}e_m$ expressed in the basis. For $m = 0$ the image is $\tilde{Q}$ itself, giving the first column $(Q_0, Q_1, Q_2, Q_3)$. For $m = k \geq 1$ one uses $e_0e_k = e_k$ and $e_je_k = \epsilon^{ijk}e_i$ for $j \neq k$ with $\{i,j,k\} = \{1,2,3\}$, so that</p>
+<p>the Cayley matrix of <em>Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. Each entry is a single coefficient of $\tilde{Q}$ carrying a sign, and <strong>no entry is a sum of two or more coefficients</strong>, because in this basis every product of basis elements is one basis element times a sign.</p>
+<p><strong>Proof (the general matrix).</strong> The columns are the products $\tilde{Q}e_m$ expressed in the basis. For $m = 0$ the image is $\tilde{Q}$ itself, giving the first column $(Q_0, Q_1, Q_2, Q_3)$. For $m = k \geq 1$ one uses $e_0e_k = e_k$ and $e_je_k = \epsilon^{ijk}e_i$ for $j \neq k$ with $\{i,j,k\} = \{1,2,3\}$, so that</p>
 <p>$$
 \tilde{Q}e_k = Q_0e_k + Q_ke_k^2 + \sum_{j \neq k} Q_je_je_k = Q_0e_k - Q_ke_0 + \sum_{j \neq k} \epsilon^{ijk}Q_je_i .
 $$</p>
 <p>Expanding with $e_1e_2 = e_3$, $e_2e_3 = e_1$, $e_3e_1 = e_2$ gives the displayed columns.</p>
-<p><strong>The four basis matrices.</strong> At $\tilde{Q} = e_\mu$ the same formula gives the four matrices</p>
+<p><strong>The check.</strong> The assignment is the right one because the four matrices multiply as the four units do. Squaring a vector image,</p>
 <p>$$
-\mathsf{M}_4^{L}(e_0) = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}, \quad
-\mathsf{M}_4^{L}(e_1) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}, \quad
-\mathsf{M}_4^{L}(e_2) = \begin{pmatrix} 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \end{pmatrix}, \quad
-\mathsf{M}_4^{L}(e_3) = \begin{pmatrix} 0 & 0 & 0 & -1 \\ 0 & 0 & -1 & 0 \\ 0 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0 \end{pmatrix}.
+\mathsf{M}_4^{L}(e_1)^2 = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} -1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix} = -\mathsf{M}_4^{L}(e_0),
 $$</p>
+<p>and the same holds for $\mathsf{M}_4^{L}(e_2)$ and $\mathsf{M}_4^{L}(e_3)$; so $e_k^2 = -e_0$ is reproduced. Multiplying the first two,</p>
+<p>$$
+\mathsf{M}_4^{L}(e_1)\mathsf{M}_4^{L}(e_2) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}\begin{pmatrix} 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 0 & 0 & -1 \\ 0 & 0 & -1 & 0 \\ 0 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0 \end{pmatrix} = \mathsf{M}_4^{L}(e_3),
+$$</p>
+<p>and the other products give $\mathsf{M}_4^{L}(e_2)\mathsf{M}_4^{L}(e_3) = \mathsf{M}_4^{L}(e_1)$ and $\mathsf{M}_4^{L}(e_3)\mathsf{M}_4^{L}(e_1) = \mathsf{M}_4^{L}(e_2)$, reproducing $e_1e_2 = e_3$ with its cyclic companions; reversing the order of the factors reverses the sign of each product, reproducing $e_ie_j = -e_je_i$ for $i \neq j$. Those relations are the whole multiplication table of the units, so the correspondence of bases is an isomorphism of algebras and not a formal analogy. In particular the $m$-th column of $\mathsf{M}_4^{L}(\tilde{Q})$ is the coordinate column of the product $\tilde{Q}e_m$. Write $\operatorname{col}(\tilde{S})$ for the coordinate column of $\tilde{S}$; then the matrix acts on columns by $\mathsf{M}_4^{L}(\tilde{Q})\operatorname{col}(\tilde{S}) = \operatorname{col}(\tilde{Q}\tilde{S})$, which is the column convention of <em>The Four-Vector Element Representation of Biquaternions</em>, whose column of $\tilde{S}$ is written $S$.</p>
 <p><strong>The four basis columns.</strong> The matrices act on the columns $Q$ of <em>The Four-Vector Element Representation of Biquaternions</em>, whose four basis columns are</p>
 <p>$$
 E_0 = \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix}, \qquad E_1 = \begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix}, \qquad E_2 = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix}, \qquad E_3 = \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix},
 $$</p>
 <p>so that a general column is $Q = \sum_\mu Q^\mu E_\mu$. The column $\mathsf{M}_4^{L}(e_\mu)E_\nu$ is the four-vector of the product $e_\mu e_\nu$, which is how the matrices are also read.</p>
-<p>The four matrices are real and orthogonal, and their sixteen products reproduce the multiplication table of the units, $\mathsf{M}_4^{L}(e_m)\mathsf{M}_4^{L}(e_n) = \mathsf{M}_4^{L}(e_me_n)$: the identity, $\mathsf{M}_4^{L}(e_k)^2 = -I_4$, and $\mathsf{M}_4^{L}(e_j)\mathsf{M}_4^{L}(e_k) = -\mathsf{M}_4^{L}(e_k)\mathsf{M}_4^{L}(e_j) = \mathsf{M}_4^{L}(e_i)$ for $(i,j,k)$ cyclic. The columns of $\mathsf{M}_4^{L}(e_1)$, for instance, are the images $e_1e_0 = e_1$, $e_1e_1 = -e_0$, $e_1e_2 = e_3$ and $e_1e_3 = -e_2$, that is, $(0,1,0,0)$, $(-1,0,0,0)$, $(0,0,0,1)$ and $(0,0,-1,0)$, namely $E_1$, $-E_0$, $E_3$ and $-E_2$.</p>
+<p>The four matrices are real and orthogonal. The columns of $\mathsf{M}_4^{L}(e_1)$, for instance, are the images $e_1e_0 = e_1$, $e_1e_1 = -e_0$, $e_1e_2 = e_3$ and $e_1e_3 = -e_2$, that is, $(0,1,0,0)$, $(-1,0,0,0)$, $(0,0,0,1)$ and $(0,0,-1,0)$, namely $E_1$, $-E_0$, $E_3$ and $-E_2$.</p>
 <p><strong>Remark (the same four for one reason).</strong> The matrix is $4 \times 4$ and the coefficient space of <em>The Four-Vector Element Representation of Biquaternions</em> has complex dimension four, for the same reason and not by coincidence: the algebra has complex dimension four and the regular representation is the algebra acting on itself, so the space and the index set of the matrix are the same object. In <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> the number $2$ appears both as the dimension of the simple module and as the size of the matrix algebra, for the parallel reason that the algebra is recovered as the whole algebra of <strong>$\mathbb{C}$-linear</strong> maps of that module; its $\mathbb{B}$-linear maps are only the scalars, so the qualifier is not idle.</p>
 <p><strong>Example.</strong> For $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$, so that $(Q_0, Q_1, Q_2, Q_3) = (2+i, 1-i, 3, i)$, the regular matrix is</p>
 <p>$$
@@ -117,11 +125,11 @@ $$</p>
 \mathsf{M}_4^{L}(\tilde{Q})\,\mathsf{M}_4^{L}(\tilde{R}) = \mathsf{M}_4^{L}(\tilde{Q}\tilde{R}).
 $$</p>
 <p>Hence $\mathsf{M}_4^{L}$ is an algebra homomorphism, and the coefficient space is a left $\mathbb{B}$-module under it.</p>
-<p><strong>Proof.</strong> Both sides are $\mathbb{C}$-linear and are computed on the basis. For every $m$, associativity gives</p>
+<p><strong>Proof.</strong> For every $\tilde{S}$, the column rule and associativity give</p>
 <p>$$
-\mathsf{M}_4^{L}(\tilde{Q})\,\mathsf{M}_4^{L}(\tilde{R})\,E_m = \mathsf{M}_4^{L}(\tilde{Q})\operatorname{col}\bigl(\tilde{R}e_m\bigr) = \operatorname{col}\Bigl(\tilde{Q}\bigl(\tilde{R}e_m\bigr)\Bigr) = \operatorname{col}\Bigl(\bigl(\tilde{Q}\tilde{R}\bigr)e_m\Bigr) = \mathsf{M}_4^{L}(\tilde{Q}\tilde{R})\,E_m ,
+\mathsf{M}_4^{L}(\tilde{Q})\,\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde{S}) = \mathsf{M}_4^{L}(\tilde{Q})\operatorname{col}(\tilde{R}\tilde{S}) = \operatorname{col}\bigl(\tilde{Q}(\tilde{R}\tilde{S})\bigr) = \operatorname{col}\bigl((\tilde{Q}\tilde{R})\tilde{S}\bigr) = \mathsf{M}_4^{L}(\tilde{Q}\tilde{R})\operatorname{col}(\tilde{S}) ,
 $$</p>
-<p>the first step being the definition of the right factor, the second that of the left one and the third associativity, so the two matrices agree on the four standard columns.</p>
+<p>the first step being the column rule applied to $\tilde{R}$, the second the column rule applied to $\tilde{Q}$, and the third associativity; the columns $\operatorname{col}(\tilde{S})$ span $\mathbb{C}^4$, so the two matrices agree.</p>
 <p><strong>Example (a concrete check).</strong> For $\tilde{Q} = e_0 + e_1$ and $\tilde{R} = e_0 + e_2$ the product is $\tilde{Q}\tilde{R} = e_0 + e_1 + e_2 + e_3$ and the two matrices are</p>
 <p>$$
 \mathsf{M}_4^{L}(\tilde{Q}) = \begin{pmatrix} 1 & -1 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 0 & 0 & 1 & -1 \\ 0 & 0 & 1 & 1 \end{pmatrix},
@@ -130,11 +138,19 @@ $$</p>
 $$</p>
 <p>Their product is the matrix of $\mathsf{M}_4^{L}(\tilde{Q}\tilde{R})$, whose first column is $(1,1,1,1)$. The reversed order gives $\mathsf{M}_4^{L}(\tilde{R})\mathsf{M}_4^{L}(\tilde{Q}) = \mathsf{M}_4^{L}(\tilde{R}\tilde{Q})$ with first column $(1,1,1,-1)$, so the two orders differ, exactly as $\tilde{Q}\tilde{R} \neq \tilde{R}\tilde{Q}$. Multiplicativity is what makes the regular matrix a <em>representation</em> and not merely a table of coefficients: it is the statement that the algebra multiplication and the matrix multiplication are the same operation in two languages.</p>
 <h2 id="the-right-regular-matrix">The Right Regular Matrix</h2>
-<p><strong>Definition.</strong> In the same basis, the <strong>right regular matrix</strong> $\mathsf{M}_4^{R}(\tilde{Q})$ is the $4 \times 4$ matrix whose $m$-th column is the coordinate column of the product $e_m\tilde{Q}$:</p>
+<p>The assignment is written $\mathsf{M}_4^{R}$. It converts a biquaternion into a $4 \times 4$ complex matrix,</p>
 <p>$$
-\mathsf{M}_4^{R}(\tilde{Q})\,E_m = \operatorname{col}\bigl(e_m\tilde{Q}\bigr), \qquad \operatorname{col}\bigl(\tilde{R}\tilde{Q}\bigr) = \mathsf{M}_4^{R}(\tilde{Q})\,R .
+\mathsf{M}_4^{R} : \mathbb{B} \longrightarrow M_4(\mathbb{C}),
 $$</p>
-<p><strong>Proposition (the right regular matrix).</strong> In the basis $e_0, e_1, e_2, e_3$,</p>
+<p>and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity. The scalar imaginary $i$ is central, so it maps to a scalar matrix; the quaternion units are assigned the matrices</p>
+<p>$$
+\mathsf{M}_4^{R}(e_0) = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}, \quad
+\mathsf{M}_4^{R}(e_1) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0 \end{pmatrix}, \quad
+\mathsf{M}_4^{R}(e_2) = \begin{pmatrix} 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \end{pmatrix}, \quad
+\mathsf{M}_4^{R}(e_3) = \begin{pmatrix} 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \\ 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \end{pmatrix},
+$$</p>
+<p>with $\mathsf{M}_4^{R}(i) = i\,\mathsf{M}_4^{R}(e_0)$ on the central scalar $\mathbb{C}_{\mathbb{B}}$.</p>
+<p>This is the assignment, taken as fixed for the whole series. A general biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$ therefore maps to</p>
 <p>$$
 \mathsf{M}_4^{R}(\tilde{Q}) = \begin{pmatrix}
 Q_0 & -Q_1 & -Q_2 & -Q_3 \\
@@ -143,17 +159,22 @@ Q_2 & -Q_3 & Q_0 & Q_1 \\
 Q_3 & Q_2 & -Q_1 & Q_0
 \end{pmatrix}.
 $$</p>
-<p><strong>Proof.</strong> The columns are the images $e_m\tilde{Q}$, expanded as in the left case with the factors in the opposite order. Alternatively, since $e_ke_j = -e_je_k$ for $j \neq k$, the matrix is the transpose of the left matrix conjugated by the fixed sign matrix $D$ of the next section, $\mathsf{M}_4^{R}(\tilde{Q}) = D\,\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}D$, and computing the four general products directly confirms the display.</p>
+<p><strong>Proof (the general matrix).</strong> The columns are the images $e_m\tilde{Q}$, expanded as in the left case with the factors in the opposite order. Alternatively, since $e_ke_j = -e_je_k$ for $j \neq k$, the matrix is the transpose of the left matrix conjugated by the fixed sign matrix $D$ of the next section, $\mathsf{M}_4^{R}(\tilde{Q}) = D\,\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}D$, and computing the four general products directly confirms the display.</p>
+<p><strong>The check.</strong> The assignment is the right one because the four matrices multiply as the four units do, with the order of the factors reversed. Squaring a vector image, $\mathsf{M}_4^{R}(e_k)^2 = -I_4$, so $e_k^2 = -e_0$ is reproduced; multiplying the first two,</p>
+<p>$$
+\mathsf{M}_4^{R}(e_1)\mathsf{M}_4^{R}(e_2) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0 \end{pmatrix}\begin{pmatrix} 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0 \\ 0 & 1 & 0 & 0 \\ -1 & 0 & 0 & 0 \end{pmatrix} = -\mathsf{M}_4^{R}(e_3),
+$$</p>
+<p>which is $\mathsf{M}_4^{R}(e_2e_1) = \mathsf{M}_4^{R}(-e_3)$ and reproduces $e_1e_2 = e_3$ through the reversal. The general rule is $\mathsf{M}_4^{R}(e_i)\mathsf{M}_4^{R}(e_j) = \mathsf{M}_4^{R}(e_je_i)$; reversing the order of the factors reverses the order of the units, so the correspondence is an anti-isomorphism of algebras.</p>
 <p><strong>Theorem (the right regular matrix is anti-multiplicative).</strong> For all $\tilde{Q}, \tilde{R} \in \mathbb{B}$,</p>
 <p>$$
 \mathsf{M}_4^{R}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde{R}) = \mathsf{M}_4^{R}(\tilde{R}\tilde{Q}).
 $$</p>
 <p>Hence the assignment $\tilde{Q} \mapsto \mathsf{M}_4^{R}(\tilde{Q})$ is an algebra <strong>anti</strong>-homomorphism, and the right regular matrices are the regular representation of the opposite algebra $\mathbb{B}^{\mathrm{op}}$, not a second representation of $\mathbb{B}$.</p>
-<p><strong>Proof.</strong> For every $m$, associativity gives</p>
+<p><strong>Proof.</strong> For every $\tilde{S}$, the column rule and associativity give</p>
 <p>$$
-\mathsf{M}_4^{R}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde{R})\,E_m = \mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}\bigl(e_m\tilde{R}\bigr) = \operatorname{col}\Bigl(\bigl(e_m\tilde{R}\bigr)\tilde{Q}\Bigr) = \operatorname{col}\Bigl(e_m\bigl(\tilde{R}\tilde{Q}\bigr)\Bigr) = \mathsf{M}_4^{R}(\tilde{R}\tilde{Q})\,E_m ,
+\mathsf{M}_4^{R}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde{R})\operatorname{col}(\tilde{S}) = \mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}(\tilde{S}\tilde{R}) = \operatorname{col}\bigl((\tilde{S}\tilde{R})\tilde{Q}\bigr) = \operatorname{col}\bigl(\tilde{S}(\tilde{R}\tilde{Q})\bigr) = \mathsf{M}_4^{R}(\tilde{R}\tilde{Q})\operatorname{col}(\tilde{S}) ,
 $$</p>
-<p>so the two matrices agree on the four standard columns.</p>
+<p>and the columns $\operatorname{col}(\tilde{S})$ span $\mathbb{C}^4$, so the two matrices agree.</p>
 <p><strong>Remark (which side is which).</strong> The two regular matrices are the two ways a non-commutative algebra multiplies its own basis. Since quaternion conjugation is an anti-automorphism, the composite $\tilde{Q} \mapsto \mathsf{M}_4^{L}(\tilde{Q}^{\natural})$ is anti-multiplicative; it is therefore the right regular matrix up to a fixed change of basis, and the next section exhibits that change of basis and shows that it is not the identity. The two matrices are different objects as soon as the algebra is non-commutative, and the corpus uses both: the <strong>left</strong> copy preserves each chirality, while the <strong>right</strong> copy is the only one that can carry a chirality from one ideal to the other, which is the structural reason the mass term of the biquaternionic Dirac equation is a right multiplication, as established in <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and in <em>Conventions in the Biquaternion Universe</em>.</p>
 <h2 id="transposition-and-the-two-matrices">Transposition and the Two Matrices</h2>
 <p><strong>Proposition (transposition is quaternion conjugation).</strong> For every biquaternion $\tilde{Q}$,</p>
@@ -414,11 +435,11 @@ $$</p>
 \bigl\{ C \in M_4(\mathbb{C}) : C\,\mathsf{M}_4^{L}(\tilde{R}) = \mathsf{M}_4^{L}(\tilde{R})\,C \ \text{ for every } \tilde{R} \in \mathbb{B} \bigr\},
 $$</p>
 <p>is the image $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension $4$.</p>
-<p><strong>Proof.</strong> Write $\operatorname{col}(\tilde{S})$ for the coordinate column of $\tilde{S}$. The defining property of the left matrix is $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde{S}) = \operatorname{col}(\tilde{R}\tilde{S})$, and in particular $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_0) = \operatorname{col}(\tilde{R})$. Let $C$ commute with every $\mathsf{M}_4^{L}(\tilde{R})$ and let $\tilde{Q}$ be the element of the column $C\operatorname{col}(e_0)$. Then, for every $\tilde{R}$,</p>
+<p><strong>Proof.</strong> The column rule for the left matrix reads $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde{S}) = \operatorname{col}(\tilde{R}\tilde{S})$, and in particular $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_0) = \operatorname{col}(\tilde{R})$. Let $C$ commute with every $\mathsf{M}_4^{L}(\tilde{R})$ and let $\tilde{Q}$ be the element whose column is $C\operatorname{col}(e_0)$. Then, for every $\tilde{R}$,</p>
 <p>$$
 C\operatorname{col}(\tilde{R}) = C\,\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_0) = \mathsf{M}_4^{L}(\tilde{R})\,C\operatorname{col}(e_0) = \operatorname{col}(\tilde{R}\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}(\tilde{R}),
 $$</p>
-<p>the last step being the defining property of the right matrix. The four columns $\operatorname{col}(\tilde{R})$ span $\mathbb{C}^4$, so $C = \mathsf{M}_4^{R}(\tilde{Q})$ and the centralizer is contained in $\mathsf{M}_4^{R}(\mathbb{B})$. Conversely every $\mathsf{M}_4^{R}(\tilde{Q})$ commutes with every $\mathsf{M}_4^{L}(\tilde{R})$, because $(\tilde{R}\tilde{S})\tilde{Q} = \tilde{R}(\tilde{S}\tilde{Q})$ is associativity; hence the centralizer is exactly $\mathsf{M}_4^{R}(\mathbb{B})$. That copy has complex dimension $4$ because $\mathsf{M}_4^{R}$ is injective: $\mathsf{M}_4^{R}(\tilde{Q}) = 0$ forces its first column, which is the coordinate column of $\tilde{Q}$, to vanish. The dimension was also computed directly, as the null space of the $48 \times 16$ linear system that the three commutation conditions $M\mathsf{M}_4^{L}(e_k) = \mathsf{M}_4^{L}(e_k)M$, $k = 1,2,3$, impose on the entries of $M$; the null space is four-dimensional and is spanned by the four matrices $\mathsf{M}_4^{R}(e_\mu)$.</p>
+<p>the last step being the column rule for the right matrix. The columns $\operatorname{col}(\tilde{R})$ span $\mathbb{C}^4$, so $C = \mathsf{M}_4^{R}(\tilde{Q})$ and the centralizer is contained in $\mathsf{M}_4^{R}(\mathbb{B})$. Conversely every $\mathsf{M}_4^{R}(\tilde{Q})$ commutes with every $\mathsf{M}_4^{L}(\tilde{R})$, because $(\tilde{R}\tilde{S})\tilde{Q} = \tilde{R}(\tilde{S}\tilde{Q})$ is associativity; hence the centralizer is exactly $\mathsf{M}_4^{R}(\mathbb{B})$. That copy has complex dimension $4$ because $\mathsf{M}_4^{R}$ is injective: $\mathsf{M}_4^{R}(\tilde{Q}) = 0$ forces its first column, which is the column of $\tilde{Q}$, to vanish. The dimension was also computed directly, as the null space of the $48 \times 16$ linear system that the three commutation conditions $M\mathsf{M}_4^{L}(e_k) = \mathsf{M}_4^{L}(e_k)M$, $k = 1,2,3$, impose on the entries of $M$; the null space is four-dimensional and is spanned by the four matrices $\mathsf{M}_4^{R}(e_\mu)$.</p>
 <p><strong>Remark.</strong> The theorem is the regular-module case of the double centralizer phenomenon. In physical terms it says that the matrices commuting with every left regular matrix are exactly the right regular matrices: the left copy is the algebra acting on its four-vector, and the right copy is the largest set of matrices that can be applied to the four-vector without disturbing that left action. The right copy is also the source of the chirality coupling, since it is the only copy with off-diagonal blocks in the chirality basis; the mass term and the centralizer are therefore the same fact seen from two sides.</p>
 <h2 id="the-real-form">The Real Form</h2>
 <p><strong>Proposition (the real regular matrix).</strong> Regarded over $\mathbb{R}$ in the real basis</p>
@@ -436,7 +457,7 @@ $$</p>
 $$</p>
 <p>the biquaternion norm being real on the material sector. The real regular matrix of a material four-vector is therefore <strong>traceless</strong>, and this is the sense in which the trace of a four-vector is zero: not over $\mathbb{C}$, where it is $4iq'_0$, but over the real eight-dimensional space, where the trace is twice the real part of the complex trace. The tracelessness is a property of the material sector alone, whose scalar part is purely imaginary; on the informational sector the scalar part is real and the real trace is $8q_0 = 8ct'$, generally nonzero. On the quaternion subalgebra $\mathbb{H}_{\mathbb{B}}$ and read on $\mathbb{H}_{\mathbb{B}}$ itself the construction is the $4 \times 4$ real regular representation of the quaternions.</p>
 <h2 id="the-two-sided-action">The Two-Sided Action</h2>
-<p>One geometric statement uses both copies at once, and it is the reason the regular representation belongs to the physics corpus.</p>
+<p>One geometric statement uses both copies at once, and it is the reason the regular matrix belongs to the physics corpus.</p>
 <p><strong>Definition.</strong> The <strong>rotor group</strong> of $\mathbb{B}$ is</p>
 <p>$$
 \{\tilde{\Lambda} \in \mathbb{B} : N(\tilde{\Lambda}) = e_0\} .
@@ -636,7 +657,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the regular representation of an algebra and the identification of its endomorphism algebra.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the regular representation of an algebra and the structure of its centralizer.</li>
 <li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Interscience, 1962), for the regular module, its decomposition into minimal left ideals and the double centralizer theorem.</li>
 <li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em>, 2nd edition (Springer, 1992), for the regular module as a left module over itself and the centralizer of the left copy.</li>
 <li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em>, Graduate Texts in Mathematics 129 (Springer, 1991), for the regular representation as the direct sum of the simple modules with multiplicity equal to their dimensions.</li>

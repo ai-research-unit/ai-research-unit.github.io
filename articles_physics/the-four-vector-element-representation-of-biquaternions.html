@@ -108,14 +108,10 @@ $$</p>
 <p>$$
 Q^{\mathsf{T}} = \begin{pmatrix} Q^0 & Q^1 & Q^2 & Q^3 \end{pmatrix}.
 $$</p>
-<p>The column is the transcribed form of the quadruple, and it is convenient because the product of biquaternions is bilinear. For a fixed $\tilde{Q}$ the map $\tilde{R} \mapsto \tilde{Q}\tilde{R}$ sends the coefficients of $\tilde{R}$ linearly to the coefficients of the product, so it is a $\mathbb{C}$-linear endomorphism of the coefficient space, and with the column convention it is written as a $4 \times 4$ matrix acting on the column of $\tilde{R}$:</p>
-<p>$$
-\widetilde{\tilde{Q}\tilde{R}} \longleftrightarrow \mathsf{M}_4(\tilde{Q})\, R .
-$$</p>
-<p>The matrix $\mathsf{M}_4(\tilde{Q})$ is the matrix of left multiplication; its entries are the coefficients of $\tilde{Q}$ with signs and no additions, and it is constructed and verified in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. The present article records only that the product admits this reading.</p>
+<p>The column is the transcribed form of the quadruple, and it is convenient because the product of biquaternions is bilinear. For a fixed $\tilde{Q}$ the map $\tilde{R} \mapsto \tilde{Q}\tilde{R}$ sends the coefficients of $\tilde{R}$ linearly to the coefficients of the product, so with the column convention it is written as a $4 \times 4$ matrix acting on the column of $\tilde{R}$: the product is the matrix product $\mathsf{M}_4^{L}(\tilde{Q})\,R$, whose four entries are the coefficients of $\tilde{Q}\tilde{R}$, the column of $\tilde{R}$ being written $R$. The matrix $\mathsf{M}_4^{L}(\tilde{Q})$ is the matrix of left multiplication; its entries are the coefficients of $\tilde{Q}$ with signs and no additions, and it is constructed and verified in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. The present article records only that the product admits this reading.</p>
 <p><strong>The row is the dual, not a further representation.</strong> The row $Q^{\mathsf{T}}$ is the element of the dual space paired with the column by the standard pairing, and the dual of a left module is a right module: it carries the <em>right</em> action, $(\varphi\cdot\tilde{Q})(\tilde{R}) = \varphi(\tilde{Q}\tilde{R})$. The transpose that relates the column picture to the row picture is dressed with quaternion conjugation, so that the transpose of the left matrix of $\tilde{Q}$ is the left matrix of the quaternion conjugate,</p>
 <p>$$
-\mathsf{M}_4(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4(\tilde{Q}^{\natural}),
+\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}^{\natural}),
 $$</p>
 <p>which is proved in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. A column and a row are the same four complex numbers written in two layouts, and a change of layout is a change of bookkeeping, not a change of representation. The corpus counts three objects in this group — the coefficient space, the algebra acting on its simple module, and the algebra acting on itself — and it does not count the two layouts separately.</p>
 <h2 id="multiplication-in-four-vector-form">Multiplication in Four-Vector Form</h2>
@@ -285,37 +281,37 @@ $$</p>
 \mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}) = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}} = \mathbb{M}_+ \oplus \mathbb{M}_- .
 $$</p>
 <p>The first separates the scalar component from the three vector components, the second separates the real coefficients from the imaginary ones, and the third separates the material quadruples from the informational ones. The three splits are different, none is a refinement of another, and how they cross is the subject of <em>Relations Between Subspaces</em>.</p>
-<h3 id="the-centre-subspace-math231">The Centre Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
+<h3 id="the-centre-subspace-math233">The Centre Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
 <p>Two-dimensional and purely temporal, without a single spatial coordinate. The scalar coefficient is an arbitrary complex number carrying the two times, and the quadruple is $(Q_0, 0, 0, 0)$:</p>
 <p>$$
 \tilde{Q} = Q_0e_0 \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ 0,\ 0,\ 0) = (q_0 + iq'_0,\ 0,\ 0,\ 0) = (ct' + ict,\ 0,\ 0,\ 0),
 $$</p>
 <p>with $Q_0 = q_0 + iq'_0$, $q_0 = ct'$ and $q'_0 = ct$, and the biquaternion norm $N = Q_0^2 = c^2(t')^2 - c^2t^2 + 2i\,c^2t't$. It is the fixed space of quaternion conjugation, so quaternion conjugation acts on it as the identity — the axis of $\mathbb{B}$.</p>
-<h3 id="the-vector-subspace-math239">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
+<h3 id="the-vector-subspace-math241">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
 <p>Six-real-dimensional and purely spatial, the only one of the six that is not four- or two-dimensional. The scalar coefficient vanishes and each of the three vector coefficients is one material spatial coordinate together with one informational coordinate:</p>
 <p>$$
 \tilde{Q} = Q_1e_1 + Q_2e_2 + Q_3e_3 \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (0,\ Q_1,\ Q_2,\ Q_3) = (0,\ q_1 + iq'_1,\ q_2 + iq'_2,\ q_3 + iq'_3) = (0,\ x + ix',\ y + iy',\ z + iz'),
 $$</p>
 <p>where $Q_k = q_k + iq'_k$ with $q_k = x_k$ and $q'_k = x'_k$, and the biquaternion norm is $N = (x+ix')^2 + (y+iy')^2 + (z+iz')^2$. It is the anti-fixed space of quaternion conjugation and the spatial counterpart of the centre: the centre has the two times in one complex number, the vector subspace the two spaces in three.</p>
-<h3 id="the-quaternion-subspace-math245">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-quaternion-subspace-math247">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
 <p>The fixed space of complex conjugation: all four coefficients real, so the scalar imaginary plays no role at all, and the quadruple mixes the informational time with the material space,</p>
 <p>$$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (q_0,\ q_1,\ q_2,\ q_3) = (ct',\ x,\ y,\ z),
 $$</p>
 <p>with $Q_\mu = q_\mu$ real, $q_0 = ct'$ and $q_k = x_k$, and the biquaternion norm $N = c^2(t')^2 + \mathbf{x}^2$. The biquaternion norm is a sum of four squares with no minus sign, so it is positive definite and vanishes only at the zero element; the unit elements of this subspace are the rotation rotors.</p>
-<h3 id="the-antiquaternion-subspace-math251">The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-antiquaternion-subspace-math253">The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
 <p>The anti-fixed space of complex conjugation: all four coefficients purely imaginary, so the quadruple takes the other assignment of the two times and the two spaces,</p>
 <p>$$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (iq'_0,\ iq'_1,\ iq'_2,\ iq'_3) = (ict,\ ix',\ iy',\ iz'),
 $$</p>
 <p>with $Q_\mu = iq'_\mu$, $q'_0 = ct$ and $q'_k = x'_k$, and the biquaternion norm $N = -\big( c^2t^2 + (\mathbf{x}')^2 \big)$. It is $i$ times the quaternion subspace, and the biquaternion norm is the negative of a sum of four squares, so it too vanishes only at the zero element.</p>
-<h3 id="the-material-subspace-math258">The Material Subspace $\mathbb{M}_-$</h3>
+<h3 id="the-material-subspace-math260">The Material Subspace $\mathbb{M}_-$</h3>
 <p>The anti-fixed space of Hermitian conjugation: a purely imaginary scalar coefficient and three real vector coefficients, three real components and one imaginary one,</p>
 <p>$$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (iq'_0,\ q_1,\ q_2,\ q_3) = (ict,\ x,\ y,\ z),
 $$</p>
 <p>with $Q_0 = iq'_0$, $Q_k = q_k$, $q'_0 = ct$ and $q_k = x_k$, and the biquaternion norm $N = -c^2t^2 + \mathbf{x}^2$. The single minus sign is the $ict$ convention, and the signature $(3,1)$ of the biquaternion norm is the Minkowski one: this is the home of the four-vectors of relativistic physics.</p>
-<h3 id="the-informational-subspace-math267">The Informational Subspace $\mathbb{M}_+$</h3>
+<h3 id="the-informational-subspace-math269">The Informational Subspace $\mathbb{M}_+$</h3>
 <p>The fixed space of Hermitian conjugation: a real scalar coefficient and three purely imaginary vector coefficients,</p>
 <p>$$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (q_0,\ iq'_1,\ iq'_2,\ iq'_3) = (ct',\ ix',\ iy',\ iz'),
@@ -441,8 +437,8 @@ $$</p>
 <td>The column and the dual row of the four-vector</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_4(\tilde{Q})$, $\mathsf{M}_4^{R}(\tilde{Q})$</td>
-<td>Matrices of left and right multiplication, constructed in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>; $\mathsf{M}_4(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4(\tilde{Q}^{\natural})$</td>
+<td>$\mathsf{M}_4^{L}(\tilde{Q})$, $\mathsf{M}_4^{R}(\tilde{Q})$</td>
+<td>Matrices of left and right multiplication, constructed in <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>; $\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}^{\natural})$</td>
 </tr>
 <tr>
 <td>$\epsilon^{ijk}$</td>
