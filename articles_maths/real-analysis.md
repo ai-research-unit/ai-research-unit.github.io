@@ -35,7 +35,7 @@ The pair $(\mathbb{R}, d)$ is a **metric space**. Every notion in real analysis 
 
 ### Balls and Neighborhoods
 
-The **open ball** of radius $r > 0$ centered at $a$ is
+The **open ball** of radius $r > 0$ centred at $a$ is
 
 $$
 B(a, r) = \{b \in \mathbb{R} : |b - a| < r\} = (a - r, a + r).
@@ -429,7 +429,7 @@ A series of functions $\sum f_n$ **converges uniformly** if the sequence of part
 
 ### Definition
 
-A **power series** centered at $a$ is
+A **power series** centred at $a$ is
 
 $$
 \sum_{n=0}^\infty c_n (b - a)^n, \qquad c_n \in \mathbb{R}.

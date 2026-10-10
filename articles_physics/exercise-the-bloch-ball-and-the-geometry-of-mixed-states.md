@@ -4,7 +4,7 @@
 
 This article is a **worked exercise** on the geometry of the qubit state space. It is a set of six problems on one theme, and it applies the state-space results established in the companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone*. The reader is assumed to have read that article; the exercise exists precisely to test it, so nothing is carried over except what that article establishes.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$ and the center is $\mathbb{C}_{\mathbb{B}}$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$ and the centre is $\mathbb{C}_{\mathbb{B}}$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.
 
 **Assumed results.** From the parent article we take, without rederivation, the following. A state is an element
 
@@ -18,9 +18,9 @@ $$
 \mathrm{Tr}(\tilde{\rho}\tilde{\sigma}) = \tfrac{1}{2}\bigl(1 + \mathbf{r}\cdot\mathbf{s}\bigr), \qquad \tilde{\sigma} = \tfrac{1}{2}\bigl(e_0 + i\mathbf{s}\bigr),
 $$
 
-the squared Hilbert–Schmidt distance is $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2) = \tfrac{1}{2}|\mathbf{r}-\mathbf{s}|^2$, the Uhlmann transition probability is $\tfrac{1}{2}(1 + \mathbf{r}\cdot\mathbf{s} + \sqrt{(1-|\mathbf{r}|^2)(1-|\mathbf{s}|^2)})$, and convex combinations act on Bloch vectors by the same weights. The pure states are the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$ with $|\hat{\boldsymbol{\mu}}| = 1$, forming the boundary sphere, and the maximally mixed state is the center $\mathbf{r} = 0$.
+the squared Hilbert–Schmidt distance is $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2) = \tfrac{1}{2}|\mathbf{r}-\mathbf{s}|^2$, the Uhlmann transition probability is $\tfrac{1}{2}(1 + \mathbf{r}\cdot\mathbf{s} + \sqrt{(1-|\mathbf{r}|^2)(1-|\mathbf{s}|^2)})$, and convex combinations act on Bloch vectors by the same weights. The pure states are the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$ with $|\hat{\boldsymbol{\mu}}| = 1$, forming the boundary sphere, and the maximally mixed state is the centre $\mathbf{r} = 0$.
 
-**What is to be shown.** Six problems: (1) the parametrisation of a mixed state by its Bloch vector; (2) purity, linear entropy, and von Neumann entropy for explicit states; (3) the geometry of convex combinations; (4) the metric and distinguishability structure; (5) the center and the boundary; (6) when two Bloch vectors give identical or orthogonal states. Each is solved in full, and numerical values are given where they aid the check.
+**What is to be shown.** Six problems: (1) the parametrisation of a mixed state by its Bloch vector; (2) purity, linear entropy, and von Neumann entropy for explicit states; (3) the geometry of convex combinations; (4) the metric and distinguishability structure; (5) the centre and the boundary; (6) when two Bloch vectors give identical or orthogonal states. Each is solved in full, and numerical values are given where they aid the check.
 
 ## Problem 1: Parametrising a Mixed State by Its Bloch Vector
 
@@ -170,7 +170,7 @@ so the purity is $\tfrac12(1 + \tfrac58) = \tfrac{13}{16}$ and the linear entrop
 
 ## Problem 4: The Metric and Distinguishability Structure
 
-**Problem.** (a) Compute the squared Hilbert–Schmidt distance $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2)$ in terms of the Bloch vectors. (b) Compute the trace distance $D(\tilde{\rho},\tilde{\sigma}) = \tfrac12\mathrm{Tr}|\tilde{\rho}-\tilde{\sigma}|$, verify the parent's formula for the distance to the center, and relate the two distances. (c) Evaluate both for $\mathbf{r} = \tfrac12 e_3$ and $\mathbf{s} = \tfrac12 e_1$, and compute the trace distance between two pure states as a function of the angle. (d) State the range of $D$ on the ball.
+**Problem.** (a) Compute the squared Hilbert–Schmidt distance $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2)$ in terms of the Bloch vectors. (b) Compute the trace distance $D(\tilde{\rho},\tilde{\sigma}) = \tfrac12\mathrm{Tr}|\tilde{\rho}-\tilde{\sigma}|$, verify the parent's formula for the distance to the centre, and relate the two distances. (c) Evaluate both for $\mathbf{r} = \tfrac12 e_3$ and $\mathbf{s} = \tfrac12 e_1$, and compute the trace distance between two pure states as a function of the angle. (d) State the range of $D$ on the ball.
 
 **Solution.** (a) The difference of two states is
 
@@ -234,15 +234,15 @@ so the two notions of separation are complementary on the boundary: coincident d
 
 ## Problem 5: The Centre and the Boundary
 
-**Problem.** (a) Characterize the center of the ball and compute its purity, entropies, and biquaternion norm. (b) Characterize the boundary and show that a boundary state is an extreme point that cannot be written as a nontrivial convex combination. (c) Show that the elements of the trace-one hyperplane with $|\mathbf{r}| > 1$ are not states.
+**Problem.** (a) Characterize the centre of the ball and compute its purity, entropies, and biquaternion norm. (b) Characterize the boundary and show that a boundary state is an extreme point that cannot be written as a nontrivial convex combination. (c) Show that the elements of the trace-one hyperplane with $|\mathbf{r}| > 1$ are not states.
 
-**Solution.** (a) The center is $\mathbf{r} = 0$, i.e.
+**Solution.** (a) The centre is $\mathbf{r} = 0$, i.e.
 
 $$
 \tilde{\rho} = \tfrac12 e_0,
 $$
 
-the maximally mixed state. Its purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1+0) = \tfrac12$, the minimum on the ball; its linear entropy is $\tfrac12$, the maximum; its biquaternion norm is $\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14 e_0$, whose scalar coefficient $\tfrac14$ is the largest attainable on the slice; and its von Neumann entropy is $\log 2$, the maximum. In the spectral form it is the equal mixture $\tfrac12\tilde\Pi_+(\hat{\boldsymbol{\mu}}) + \tfrac12\tilde\Pi_-(\hat{\boldsymbol{\mu}})$ of the complementary idempotents along **any** axis, and it is the unique state invariant under the full unitary group $U(2)$, which acts on the ball by rotations. It is also the barycenter: the uniform average of the pure states over the boundary sphere is
+the maximally mixed state. Its purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1+0) = \tfrac12$, the minimum on the ball; its linear entropy is $\tfrac12$, the maximum; its biquaternion norm is $\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14 e_0$, whose scalar coefficient $\tfrac14$ is the largest attainable on the slice; and its von Neumann entropy is $\log 2$, the maximum. In the spectral form it is the equal mixture $\tfrac12\tilde\Pi_+(\hat{\boldsymbol{\mu}}) + \tfrac12\tilde\Pi_-(\hat{\boldsymbol{\mu}})$ of the complementary idempotents along **any** axis, and it is the unique state invariant under the full unitary group $U(2)$, which acts on the ball by rotations. It is also the barycentre: the uniform average of the pure states over the boundary sphere is
 
 $$
 \frac{1}{4\pi}\int_{S^2}\tilde\Pi(\hat{\boldsymbol{\mu}})\,d\Omega
@@ -327,7 +327,7 @@ We have worked six problems on the geometry of the qubit state space, using only
 
 **Metric.** The trace distance is $D = \tfrac12|\mathbf{r}-\mathbf{s}|$ and the squared Hilbert–Schmidt distance is $2D^2$. For pure states $D = \sin(\theta/2)$ and the transition probability is $\cos^2(\theta/2)$, so $D^2 + \mathrm{Tr}(\tilde{P}\tilde{Q}) = 1$.
 
-**Centre and boundary.** The center is the maximally mixed state $\tfrac12 e_0$, with minimal purity $\tfrac12$ and maximal entropy $\log 2$; the boundary $|\mathbf{r}| = 1$ consists of the pure states, equivalently the idempotents, the zero divisors, and the extreme points. Elements with $|\mathbf{r}| > 1$ are not states.
+**Centre and boundary.** The centre is the maximally mixed state $\tfrac12 e_0$, with minimal purity $\tfrac12$ and maximal entropy $\log 2$; the boundary $|\mathbf{r}| = 1$ consists of the pure states, equivalently the idempotents, the zero divisors, and the extreme points. Elements with $|\mathbf{r}| > 1$ are not states.
 
 **Identical and orthogonal.** Two states are identical iff $\mathbf{r} = \mathbf{s}$; they have orthogonal supports — and the Uhlmann transition probability vanishes — iff $\mathbf{r}\cdot\mathbf{s} = -1$, which forces $|\mathbf{r}| = |\mathbf{s}| = 1$ and $\mathbf{s} = -\mathbf{r}$. Only the two ends of a diameter are perfectly distinguishable.
 
@@ -339,7 +339,7 @@ We have worked six problems on the geometry of the qubit state space, using only
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\mathbb{C}_{\mathbb{B}}$ | Center of $\mathbb{B}$ |
+| $\mathbb{C}_{\mathbb{B}}$ | Centre of $\mathbb{B}$ |
 | $\mathbb{M}_+$ | Hermitian subspace (states and observables) |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ |
 | $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ | State with Bloch vector $\mathbf{r}$ |

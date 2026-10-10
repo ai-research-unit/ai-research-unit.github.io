@@ -12,7 +12,7 @@ Because the biquaternions carry both a complex and a real structure, every state
 
 Let $A$ be an associative unital algebra over a field $k$. An additive subgroup $I \subseteq A$ is a **left ideal** if $A I \subseteq I$, a **right ideal** if $I A \subseteq I$, and a **two-sided ideal** if it is both. The distinction matters only when $A$ is noncommutative; for $\mathbb{B}$ the three notions genuinely differ. The ideals $0$ and $A$ are called trivial.
 
-A base-field remark will be used repeatedly. If $A I \subseteq I$, then $I$ is automatically a $k$-subspace, since $\lambda \tilde R = (\lambda 1) \tilde R \in I$ for $\lambda \in k$, $\tilde R \in I$, as $\lambda 1 \in A$. So the left ideals of a unital algebra do not depend on which field of scalars inside the center is used to view it; in particular the ideal lattice of $\mathbb{B}$ is the same in the $\mathbb{C}$-view and the $\mathbb{R}$-view (§*The Real Structure*).
+A base-field remark will be used repeatedly. If $A I \subseteq I$, then $I$ is automatically a $k$-subspace, since $\lambda \tilde R = (\lambda 1) \tilde R \in I$ for $\lambda \in k$, $\tilde R \in I$, as $\lambda 1 \in A$. So the left ideals of a unital algebra do not depend on which field of scalars inside the centre is used to view it; in particular the ideal lattice of $\mathbb{B}$ is the same in the $\mathbb{C}$-view and the $\mathbb{R}$-view (§*The Real Structure*).
 
 For a two-sided ideal $I$, the **quotient algebra** $A/I$ is the set of cosets with the induced operations, well defined precisely because $I$ absorbs multiplication on both sides. Kernels of algebra homomorphisms are two-sided ideals, and the first isomorphism theorem gives $A/\ker\varphi \cong \operatorname{im}\varphi$. For a left ideal only, $A/I$ is still a left $A$-module but not in general an algebra. Thus the left ideals govern module theory and the two-sided ideals govern quotient algebras.
 
@@ -34,7 +34,7 @@ Consequences over $\mathbb{C}$:
 
 - The only quotient algebras of $\mathbb{B}$ are $\mathbb{B}$ and $0$.
 - Every nonzero element generates $\mathbb{B}$ as a two-sided ideal.
-- The center of $\mathbb{B}$ is the scalar copy of $\mathbb{C}$, so $\mathbb{B}$ is a **central simple** $\mathbb{C}$-algebra; in particular it is not a product $A_1 \times A_2$ of nonzero algebras, since each factor would give a nontrivial two-sided ideal.
+- The centre of $\mathbb{B}$ is the scalar copy of $\mathbb{C}$, so $\mathbb{B}$ is a **central simple** $\mathbb{C}$-algebra; in particular it is not a product $A_1 \times A_2$ of nonzero algebras, since each factor would give a nontrivial two-sided ideal.
 - The many one-sided ideals of §*Minimal Left and Right Ideals* and §*The Lattice of Left Ideals* are all non-two-sided, so they do not contradict simplicity.
 
 ## Artinian, Semisimple, and Length Two
@@ -184,7 +184,7 @@ Everything so far was stated over $\mathbb{C}$. We now regard the same set $\mat
 
 **(a) The ideal lattice does not change.** By the base-field remark of §*Ideals in an Algebra*, an additive subgroup closed under left multiplication by $\mathbb{B}$ is automatically a complex subspace, because multiplication by $i$ is left multiplication by the central element $i e_0$. So an $\mathbb{R}$-left ideal is the same thing as a $\mathbb{C}$-left ideal, and the same holds on the right and for two-sided ideals. In particular, over $\mathbb{R}$: $\mathbb{B}$ is still simple, with two-sided ideals only $0$ and $\mathbb{B}$; the minimal left ideals are the same subsets, parametrized by $\mathbb{P}^1(\mathbb{C})$; the radical is still zero; and the length as a module over itself is still $2$.
 
-**(b) The algebra is not central over $\mathbb{R}$.** The center of $\mathbb{B}$ is the copy of $\mathbb{C}$ spanned by $e_0$ and $i e_0$ — the **complex subspace** $\mathbb{C}_{\mathbb{B}}$ — a proper field extension of $\mathbb{R}$ of degree $2$. Thus $\mathbb{B}$ is a simple $\mathbb{R}$-algebra but not a **central simple** one. In the Wedderburn–Artin description $\mathbb{B} \cong M_n(D)$ over $\mathbb{R}$, one has $n = 2$ and $D = \mathbb{C}$.
+**(b) The algebra is not central over $\mathbb{R}$.** The centre of $\mathbb{B}$ is the copy of $\mathbb{C}$ spanned by $e_0$ and $i e_0$ — the **complex subspace** $\mathbb{C}_{\mathbb{B}}$ — a proper field extension of $\mathbb{R}$ of degree $2$. Thus $\mathbb{B}$ is a simple $\mathbb{R}$-algebra but not a **central simple** one. In the Wedderburn–Artin description $\mathbb{B} \cong M_n(D)$ over $\mathbb{R}$, one has $n = 2$ and $D = \mathbb{C}$.
 
 **(c) The enrichment appears after extension of scalars.** The complexification of the real algebra $\mathbb{B}$ is
 
@@ -209,7 +209,7 @@ On the parametrizing projective line the induced map $t \mapsto -1/\bar{t}$ has 
 | Dimension | $4$ | $8$ |
 | Algebra type | simple $\mathbb{C}$-algebra, $\dim 4$ | simple $\mathbb{R}$-algebra, $\dim 8$ |
 | Two-sided ideals | $0$, $\mathbb{B}$ (simple) | $0$, $\mathbb{B}$ (simple) |
-| Central simple? | yes, center $\mathbb{C}$ | no, center $\mathbb{C} \neq \mathbb{R}$ |
+| Central simple? | yes, centre $\mathbb{C}$ | no, centre $\mathbb{C} \neq \mathbb{R}$ |
 | Left ideals | $0$, the $\mathbb{P}^1(\mathbb{C})$ of minimal ones, $\mathbb{B}$ | same lattice |
 | Minimal left ideals | all isomorphic | same; $\sigma$ pairs them, none stable |
 | Minimal right ideals | all isomorphic | same |
@@ -223,7 +223,7 @@ On the parametrizing projective line the induced map $t \mapsto -1/\bar{t}$ has 
 |---|---|
 | $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ | Biquaternion algebra; dimension $4$ over $\mathbb{C}$, $8$ over $\mathbb{R}$ |
 | $e_0, e_1, e_2, e_3$ | Algebra basis, $e_0 = 1$, $e_k^2 = -e_0$ |
-| $i$ | Central scalar imaginary; $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center |
+| $i$ | Central scalar imaginary; $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the centre |
 | $\tilde\Pi_1, \tilde\Pi_2$ | Orthogonal idempotents, $\tilde\Pi_1+\tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = 0$ |
 | $\tilde R, \tilde T$ | Nilpotent off-diagonal elements, $\tilde R = \tfrac{i e_1 - e_2}{2}$, $\tilde T = \tfrac{i e_1 + e_2}{2}$, $\tilde R^2 = \tilde T^2 = 0$ |
 | $\mathbb{B}\tilde\Pi_1 \cong \mathbb{C}^2$ | The minimal left ideal, a simple left $\mathbb{B}$-module, $i$ acting as the scalar $i$ |

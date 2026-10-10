@@ -12,7 +12,7 @@ The relation to the two subspaces is the conceptual thread. States live in $\mat
 
 Two cautionary notes, in the spirit of the companion articles. First, the mathematics is **standard quantum information theory** transcribed into biquaternion notation; no result below depends on the physical hypothesis that $\mathbb{M}_+$ is a distinct sector of the world. Second, the reformulation **reframes** the dichotomy without resolving the conceptual problems that attend it in standard quantum physics — the position taken in *Entangled Subsystems in the Biquaternion Framework*, that the framework changes the language and not the physics, applies here too.
 
-The conventions are those of the companion articles: the quaternion basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; the central scalar imaginary $i$; the fixed-point subspaces $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the center), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), $\mathbb{M}_+$ (Hermitian), and $\mathbb{M}_-$ (anti-Hermitian); a general element $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu \in \mathbb{C}$; and the trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$.
+The conventions are those of the companion articles: the quaternion basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; the central scalar imaginary $i$; the fixed-point subspaces $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the centre), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), $\mathbb{M}_+$ (Hermitian), and $\mathbb{M}_-$ (anti-Hermitian); a general element $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu \in \mathbb{C}$; and the trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$.
 
 ## The State Space and the Trace Pairing
 
@@ -105,7 +105,7 @@ the trigonometric form following from $\hat{\mathbf{h}}^2 = -e_0$. The elements 
 
 The generator of the group is $-\tfrac{i\tilde{H}}{\hbar} \in \mathbb{M}_-$, since $\tilde{H} \in \mathbb{M}_+$ implies $(-i\tilde{H})^{*} = i\tilde{H}^{*} = i\tilde{H} = -(-i\tilde{H})$. Because $i\mathbb{M}_+ = \mathbb{M}_-$, *every* element of $\mathbb{M}_-$ is of this form, and the exponential map sends $\mathbb{M}_-$ onto the unitary group. This is the cleanest expression of the complementarity that organizes the subject: **states and observables live in $\mathbb{M}_+$, while the generators of their reversible evolution live in $\mathbb{M}_-$.** The subspace $\mathbb{M}_-$ is the Lie algebra of the unitary group under the commutator, and reversible dynamics is its action on $\mathbb{M}_+$ by inner derivations.
 
-The fixed-point subspaces $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ mark two extremes. The trace part $h_0 e_0$ lies in $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_+ = \mathbb{R}e_0$, the center; it generates the central phase $e^{-ih_0t/\hbar}$, which commutes with everything and cancels in the conjugation, affecting only the unobservable global phase. The traceless part $i\mathbf{h}$ has $h_0 = 0$, and then
+The fixed-point subspaces $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ mark two extremes. The trace part $h_0 e_0$ lies in $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_+ = \mathbb{R}e_0$, the centre; it generates the central phase $e^{-ih_0t/\hbar}$, which commutes with everything and cancels in the conjugation, affecting only the unobservable global phase. The traceless part $i\mathbf{h}$ has $h_0 = 0$, and then
 
 $$
 \tilde{U}(t) = \cos\!\left(\frac{|\mathbf{h}|t}{\hbar}\right)e_0 + \sin\!\left(\frac{|\mathbf{h}|t}{\hbar}\right)\hat{\mathbf{h}} \in \mathbb{H}_{\mathbb{B}}
@@ -143,10 +143,10 @@ for an isometry $\tilde{V}$ into the system tensor an environment, with $\mathrm
 
 Geometrically, a qubit channel is an affine map of the Bloch ball into itself, $\mathbf{r} \mapsto M\mathbf{r} + \mathbf{t}$. The unitary channels are the rotations $M \in SO(3)$, $\mathbf{t} = 0$. Two canonical types are distinguished by whether the origin is fixed:
 
-- **Unital channels** have $\mathbf{t} = 0$ and fix the maximally mixed state, contracting the ball toward the center. The **depolarizing channel** $\Delta_p(\tilde{\rho}) = (1-p)\tilde{\rho} + p\,e_0/2$, with Bloch map $\mathbf{r} \mapsto (1-p)\mathbf{r}$, is completely positive and trace preserving for $0 \leq p \leq 1$; in the biquaternion algebra it has Kraus operators $\{\sqrt{1-\tfrac{3p}{4}}\,e_0,\ \sqrt{\tfrac{p}{4}}\,e_1,\ \sqrt{\tfrac{p}{4}}\,e_2,\ \sqrt{\tfrac{p}{4}}\,e_3\}$, whose normalization uses $e_k^{*} e_k = e_0$.
-- **Non-unital channels** have $\mathbf{t} \neq 0$ and move the maximally mixed state off center. The **amplitude-damping channel** is the standard example, acting on the Bloch vector as $(r_1, r_2, r_3) \mapsto (\sqrt{1-\gamma}\,r_1,\ \sqrt{1-\gamma}\,r_2,\ \gamma + (1-\gamma)r_3)$, $0 \leq \gamma \leq 1$, contractive for $\gamma > 0$ and the identity only at $\gamma = 0$.
+- **Unital channels** have $\mathbf{t} = 0$ and fix the maximally mixed state, contracting the ball toward the centre. The **depolarizing channel** $\Delta_p(\tilde{\rho}) = (1-p)\tilde{\rho} + p\,e_0/2$, with Bloch map $\mathbf{r} \mapsto (1-p)\mathbf{r}$, is completely positive and trace preserving for $0 \leq p \leq 1$; in the biquaternion algebra it has Kraus operators $\{\sqrt{1-\tfrac{3p}{4}}\,e_0,\ \sqrt{\tfrac{p}{4}}\,e_1,\ \sqrt{\tfrac{p}{4}}\,e_2,\ \sqrt{\tfrac{p}{4}}\,e_3\}$, whose normalization uses $e_k^{*} e_k = e_0$.
+- **Non-unital channels** have $\mathbf{t} \neq 0$ and move the maximally mixed state off centre. The **amplitude-damping channel** is the standard example, acting on the Bloch vector as $(r_1, r_2, r_3) \mapsto (\sqrt{1-\gamma}\,r_1,\ \sqrt{1-\gamma}\,r_2,\ \gamma + (1-\gamma)r_3)$, $0 \leq \gamma \leq 1$, contractive for $\gamma > 0$ and the identity only at $\gamma = 0$.
 
-Dephasing, treated next, is unital: it contracts the ball toward an *axis* rather than its center.
+Dephasing, treated next, is unital: it contracts the ball toward an *axis* rather than its centre.
 
 ### The Lindblad Form
 
@@ -292,7 +292,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_+$ | Hermitian subspace (states, observables) |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (generators of reversible evolution) |
-| $\mathbb{C}_{\mathbb{B}}$ | Complex subspace (center); trace part of a Hamiltonian |
+| $\mathbb{C}_{\mathbb{B}}$ | Complex subspace (centre); trace part of a Hamiltonian |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace (rotation rotors) |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |

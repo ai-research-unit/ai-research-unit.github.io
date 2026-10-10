@@ -20,7 +20,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+ ,
 $$
-and the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with conjugate $\tilde{\nabla}^{\natural}$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The non-abelian sector is built on the compact factor
+and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with conjugate $\tilde{\nabla}^{\natural}$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The non-abelian sector is built on the compact factor
 $$
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}\subset\mathbb{M}_- ,
 \qquad
@@ -238,7 +238,7 @@ Two consequences follow, and both are properties of the non-abelian path integra
 - **The Faddeev–Popov integral overcounts.** A slice that meets an orbit $k$ times is counted $k$ times, and the determinant alone does not correct for it. The corrected integral restricts the configuration space to a **fundamental domain** in which the gauge condition has a unique solution, the interior of the Gribov region; the boundary is the horizon.
 - **The horizon is dynamical.** Because the horizon is a statement about the Faddeev–Popov operator, it is affected by the gauge field, and the low-momentum behaviour of the gauge field's propagator is modified by the restriction. This is the analytic setting in which the confining behaviour of the non-abelian theory is studied in the continuum; the non-perturbative construction in which the area law is established is the lattice regularization, cited below.
 
-In the framework's terms the ambiguity is a statement about the adjoint action, and it is worth stating why the two cases differ. In the abelian theory the gauge group is the center, which is one-dimensional and abelian, the orbit direction is the gradient $\tilde{\nabla}\Gamma$, and the gauge-fixing equation is linear in $\Gamma$ with a field-independent operator. In the non-abelian theory the group is the unit quaternions, the orbit direction is $D_\mu\Gamma$ with a connection-dependent covariant derivative, and the equation is no longer linear in the field: the determinant's dependence on $\mathcal{A}$ and the non-uniqueness of the slice are the same fact seen from two sides. The algebra does not remove the ambiguity; it identifies the operator whose kernel creates it as the adjoint twisting of a central differential operator, and it records that the ambiguity is a property of the non-abelian orbit, exactly as the non-abelian equation of motion is.
+In the framework's terms the ambiguity is a statement about the adjoint action, and it is worth stating why the two cases differ. In the abelian theory the gauge group is the centre, which is one-dimensional and abelian, the orbit direction is the gradient $\tilde{\nabla}\Gamma$, and the gauge-fixing equation is linear in $\Gamma$ with a field-independent operator. In the non-abelian theory the group is the unit quaternions, the orbit direction is $D_\mu\Gamma$ with a connection-dependent covariant derivative, and the equation is no longer linear in the field: the determinant's dependence on $\mathcal{A}$ and the non-uniqueness of the slice are the same fact seen from two sides. The algebra does not remove the ambiguity; it identifies the operator whose kernel creates it as the adjoint twisting of a central differential operator, and it records that the ambiguity is a property of the non-abelian orbit, exactly as the non-abelian equation of motion is.
 
 ## What the Algebra Supplies and What It Imports
 
@@ -280,7 +280,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ | Center of the algebra; abelian factor |
+| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ | Centre of the algebra; abelian factor |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}\subset\mathbb{M}_-$ | Compact gauge algebra |

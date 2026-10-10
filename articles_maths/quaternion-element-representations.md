@@ -127,7 +127,7 @@ The quaternion algebra $\mathbb{H}$ is **simple**: it has no non-trivial two-sid
 
 **Proof.** Let $I$ be a non-zero two-sided ideal, and let $\tilde q \in I$ be non-zero. Since $\tilde q$ is invertible, $1 = \tilde q^{-1} \tilde q \in I$, so $I = \mathbb{H}$.
 
-So $\mathbb{H}$ is a central simple algebra over $F$ when $F$ is the center. The center of $\mathbb{H}$ is $F$ (the scalars), and $\mathbb{H}$ is four-dimensional over $F$, so it is a central simple algebra of degree two.
+So $\mathbb{H}$ is a central simple algebra over $F$ when $F$ is the centre. The centre of $\mathbb{H}$ is $F$ (the scalars), and $\mathbb{H}$ is four-dimensional over $F$, so it is a central simple algebra of degree two.
 
 ### The Brauer Class
 

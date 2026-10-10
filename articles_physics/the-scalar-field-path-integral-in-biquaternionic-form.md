@@ -8,7 +8,7 @@ The division of labour among the path-integral articles of the corpus must be st
 
 Three statements organise the article.
 
-1. **The integration variable is a central-valued c-number field.** The field configurations are functions into the center $\mathbb{C}_{\mathbb{B}}$; the action, the source and the measure are central; and the weight is a central phase. Because the scalar field is bosonic, the sum over configurations is an ordinary (functional) integral over complex functions; it is the fermionic case that would require anticommuting values. This is the path-integral form of the statement that spin $0$ lives in the center.
+1. **The integration variable is a central-valued c-number field.** The field configurations are functions into the centre $\mathbb{C}_{\mathbb{B}}$; the action, the source and the measure are central; and the weight is a central phase. Because the scalar field is bosonic, the sum over configurations is an ordinary (functional) integral over complex functions; it is the fermionic case that would require anticommuting values. This is the path-integral form of the statement that spin $0$ lives in the centre.
 2. **The functional integral is the operator formalism's generating functional.** Its functional derivatives reproduce the time-ordered correlation functions of the field operator of the companion article *The Quantized Scalar Field in Biquaternionic Form*; the free two-point function is the Feynman propagator; the vacuum functional is the norm of the vacuum-to-vacuum amplitude. The canonical commutator is recovered from the representation $\hat\pi=-i\hbar\,\delta/\delta\phi$.
 3. **The algebra contributes the same three things it contributes elsewhere in the scalar sector.** The centrality of the field and the source; the biquaternion-norm reading of the quadratic form, whose momentum-space symbol is the biquaternion norm of the material four-wavevector shifted by the mass; and the identification of the Wick rotation with a sector relabelling. No new mechanism and no native ladder; the bosonic gap of the companion Fock-space article persists.
 
@@ -21,7 +21,7 @@ The article is organised as follows. The next section derives the functional int
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the central scalar action and the current.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material four-wavevector and the biquaternion norm.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, written in real components as $\phi=(\phi_1+i\phi_2)/\sqrt2$, so that $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=\frac12(\phi_1^2+\phi_2^2)$ and the kinetic term is $\frac12[(\partial\phi_1)^2+(\partial\phi_2)^2]$ — the component normalization of the companion articles on the quantized field and on symmetry breaking — and the mass parameter is $\mu=mc/\hbar$. Natural units $\hbar=c=1$ are used in the analytical parts. The metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; physical components are written $x=(t,\mathbf{x})$ and $p=(\omega,\mathbf{p})$, with $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, written in real components as $\phi=(\phi_1+i\phi_2)/\sqrt2$, so that $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=\frac12(\phi_1^2+\phi_2^2)$ and the kinetic term is $\frac12[(\partial\phi_1)^2+(\partial\phi_2)^2]$ — the component normalization of the companion articles on the quantized field and on symmetry breaking — and the mass parameter is $\mu=mc/\hbar$. Natural units $\hbar=c=1$ are used in the analytical parts. The metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; physical components are written $x=(t,\mathbf{x})$ and $p=(\omega,\mathbf{p})$, with $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$.
 
 ## From the Operator Formalism to the Functional Integral
 
@@ -59,7 +59,7 @@ Z=\int\mathcal{D}\tilde{\Phi}\;e^{\,iS[\tilde{\Phi}]/\hbar},
 e^{\,iS/\hbar}\ \text{a central unitary} .
 $$
 
-Three features of this rewriting are structural rather than cosmetic. First, the integration variable is a function into the **center**, so the path integral is an ordinary functional integral over complex functions, equivalently over pairs of real functions, and the state module on which spinor fields live is not integrated over at all. Second, the quadratic form in the exponent is the biquaternion norm shifted by the mass: the momentum-space symbol of $(\Box-\mu^2)$ on the plane wave $e^{-ip\cdot x}$ is
+Three features of this rewriting are structural rather than cosmetic. First, the integration variable is a function into the **centre**, so the path integral is an ordinary functional integral over complex functions, equivalently over pairs of real functions, and the state module on which spinor fields live is not integrated over at all. Second, the quadratic form in the exponent is the biquaternion norm shifted by the mass: the momentum-space symbol of $(\Box-\mu^2)$ on the plane wave $e^{-ip\cdot x}$ is
 
 $$
 \frac{\omega^2}{c^2}-\mathbf{k}^2-\mu^2
@@ -270,13 +270,13 @@ Two structural comments complete the picture.
 
 Four statements summarise what the framework contributes to the scalar functional integral.
 
-**The configuration space is the center.** The configuration space of the theory is the space of central-valued functions; the action, the source and the measure are central; the state module is a spectator. This is why the scalar functional integral is an ordinary complex functional integral and why no Grassmann or spinor structure appears.
+**The configuration space is the centre.** The configuration space of the theory is the space of central-valued functions; the action, the source and the measure are central; the state module is a spectator. This is why the scalar functional integral is an ordinary complex functional integral and why no Grassmann or spinor structure appears.
 
 **The quadratic form is the biquaternion norm.** The momentum-space symbol of the Gaussian's operator is $-(N(\tilde{K})+\mu^2)$ with $N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}$, and it vanishes on the mass shell, the level set $N(\tilde{K})=-\mu^2$. The shell's geometry, the Gaussian's width and the pole of the propagator are three readings of one algebraic object, and the framework's convention for $\Box$ makes them mutually consistent.
 
 **The phase is central, and the Wick rotation is a sector relabelling.** The phase $e^{iS/\hbar}$ is a central unitary, so it multiplies the whole configuration space uniformly. The continuation to imaginary time is the relabelling of the material coordinate $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$ by the real coefficient $c\tau$, which is the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the standard Wick rotation read as a change of sector, and it is what makes the Euclidean Gaussian converge.
 
-**The algebra supplies nothing beyond the center.** There is no bosonic ladder in $\mathbb{B}$, as the companion Fock-space article's trace argument shows, so the mode expansion, the Fock space and the perturbative expansion that the path integral organises are all constructed on an imported module. The functional integral's algebraic content is exhausted by the centrality of the field and the biquaternion-norm geometry of the quadratic form.
+**The algebra supplies nothing beyond the centre.** There is no bosonic ladder in $\mathbb{B}$, as the companion Fock-space article's trace argument shows, so the mode expansion, the Fock space and the perturbative expansion that the path integral organises are all constructed on an imported module. The functional integral's algebraic content is exhausted by the centrality of the field and the biquaternion-norm geometry of the quadratic form.
 
 ## What Is Standard and What Is Open
 
@@ -288,7 +288,7 @@ Four statements summarise what the framework contributes to the scalar functiona
 - **The intrinsic generating functional.** Whether the generating functional should be defined with the trace pairing $\mathrm{Tr}$ or the scalar projection $\mathrm{Sc}$, and whether the choice affects the contact terms, is a convention the algebra does not force.
 - **The functional determinant and its phase.** The determinant is central, but its phase requires a regularization and a choice of branch. Whether the framework's complex structure fixes the branch, or whether the standard $i\epsilon$ prescription is the only input, is open.
 - **Interactions.** A central quartic coupling preserves the centrality of every object. Whether the trace form suggests a preferred normalization of the coupling is not shown; the perturbative expansion is standard once the coupling is fixed.
-- **The bosonic gap.** The path integral's variables are c-numbers, which is what makes the bosonic theory an ordinary integral; the scalar sector has no native ladder in $\mathbb{B}$, so the algebraic content remains the center. Whether an enlarged structure supplements this is the structural question of the whole scalar sector.
+- **The bosonic gap.** The path integral's variables are c-numbers, which is what makes the bosonic theory an ordinary integral; the scalar sector has no native ladder in $\mathbb{B}$, so the algebraic content remains the centre. Whether an enlarged structure supplements this is the structural question of the whole scalar sector.
 - **Empirical content.** Whether the functional integral as written yields a prediction distinguishing the framework from standard scalar field theory is open.
 
 ## Summary
@@ -306,7 +306,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Center; the configuration space's value space |
+| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Centre; the configuration space's value space |
 | $\tilde{\Phi}=\phi\,e_0$, $\tilde J=J\,e_0$, $\phi=(\phi_1+i\phi_2)/\sqrt2$ | Scalar field and central source; real components |
 | $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Material coordinate |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$, $\Box=\partial_{ict}^2+\Delta$ | Gradient and d'Alembertian |

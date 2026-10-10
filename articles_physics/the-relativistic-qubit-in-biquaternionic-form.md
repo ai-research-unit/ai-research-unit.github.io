@@ -195,7 +195,7 @@ $$
 \qquad
 \mathrm{Tr}\bigl(\tilde{\Lambda}\tfrac12 e_0\tilde{\Lambda}^{*}\bigr) = \cosh\psi \neq 1 ,
 $$
-and after normalizing, the center of the Bloch ball is carried to the point
+and after normalizing, the centre of the Bloch ball is carried to the point
 $$
 \mathbf{r} = \tanh\psi\ \hat{\mathbf{u}},
 $$

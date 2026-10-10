@@ -43,7 +43,7 @@ This makes $\mathbb{H}$ a metric space isometric to $\mathbb{R}^4$. The topology
 
 ### Balls and Neighborhoods
 
-The **open ball** of radius $r > 0$ centered at $q_0$ is
+The **open ball** of radius $r > 0$ centred at $q_0$ is
 
 $$
 B(q_0, r) = \{\tilde q \in \mathbb{H} : |\tilde q - q_0| < r\}.
@@ -357,7 +357,7 @@ where $n(w)$ is the outward unit normal and $dS$ is the surface measure on the s
 
 ### Definition
 
-A **power series** centered at $q_0$ is
+A **power series** centred at $q_0$ is
 
 $$
 \sum_{n=0}^\infty c_n (\tilde q - q_0)^n, \qquad c_n \in \mathbb{H}.

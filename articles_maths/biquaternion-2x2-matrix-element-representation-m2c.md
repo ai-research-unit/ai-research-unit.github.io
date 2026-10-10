@@ -1,4 +1,4 @@
-# __Biquaternion 2×2 Matrix Element Representation__
+# __Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$__
 
 ## Introduction
 

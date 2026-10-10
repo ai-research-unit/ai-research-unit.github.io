@@ -62,7 +62,7 @@ so that a general column is $Q = \sum_\mu Q^\mu E_\mu$. The column $\rho_L(e_\mu
 
 The four matrices are real and orthogonal, and their sixteen products reproduce the multiplication table of the units, $\rho_L(e_m)\rho_L(e_n) = \rho_L(e_me_n)$: the identity, $\rho_L(e_k)^2 = -I_4$, and $\rho_L(e_j)\rho_L(e_k) = -\rho_L(e_k)\rho_L(e_j) = \rho_L(e_i)$ for $(i,j,k)$ cyclic. The columns of $\rho_L(e_1)$, for instance, are the images $e_1e_0 = e_1$, $e_1e_1 = -e_0$, $e_1e_2 = e_3$ and $e_1e_3 = -e_2$, that is, $(0,1,0,0)$, $(-1,0,0,0)$, $(0,0,0,1)$ and $(0,0,-1,0)$, namely $E_1$, $-E_0$, $E_3$ and $-E_2$.
 
-**Remark (the same four for one reason).** The matrix is $4 \times 4$ and the coefficient space of *The Four-Vector Element Representation of Biquaternions* has complex dimension four, for the same reason and not by coincidence: the algebra has complex dimension four and the regular representation is the algebra acting on itself, so the space and the index set of the matrix are the same object. In *The 2×2 Matrix Element Representation of Biquaternions* the number $2$ appears both as the dimension of the simple module and as the size of the matrix algebra, for the parallel reason that the algebra is the algebra of **$\mathbb{C}$-linear** endomorphisms of that module; its $\mathbb{B}$-linear endomorphisms are only the scalars, so the qualifier is not idle.
+**Remark (the same four for one reason).** The matrix is $4 \times 4$ and the coefficient space of *The Four-Vector Element Representation of Biquaternions* has complex dimension four, for the same reason and not by coincidence: the algebra has complex dimension four and the regular representation is the algebra acting on itself, so the space and the index set of the matrix are the same object. In *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* the number $2$ appears both as the dimension of the simple module and as the size of the matrix algebra, for the parallel reason that the algebra is the algebra of **$\mathbb{C}$-linear** endomorphisms of that module; its $\mathbb{B}$-linear endomorphisms are only the scalars, so the qualifier is not idle.
 
 **Example.** For $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$, so that $(Q_0, Q_1, Q_2, Q_3) = (2+i, 1-i, 3, i)$, the regular matrix is
 
@@ -157,7 +157,7 @@ $$
 
 which is the displayed identity.
 
-**Remark (which side is which).** The two regular representations are the two actions of a non-commutative algebra on itself. Since quaternion conjugation is an anti-automorphism, the composite $\tilde{Q} \mapsto \rho_L(\tilde{Q}^{\natural})$ is an anti-homomorphism, hence a homomorphism from $\mathbb{B}^{\mathrm{op}}$ into $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$; it is therefore the right regular representation up to a fixed change of basis, and the next section exhibits that change of basis and shows that it is not the identity. The two actions are different objects as soon as the algebra is non-commutative, and the corpus uses both: the **left** copy preserves each chirality, while the **right** copy is the only one that can carry a chirality from one ideal to the other, which is the structural reason the mass term of the biquaternionic Dirac equation is a right multiplication, as established in *The 2×2 Matrix Element Representation of Biquaternions* and in *Conventions in the Biquaternion Universe*.
+**Remark (which side is which).** The two regular representations are the two actions of a non-commutative algebra on itself. Since quaternion conjugation is an anti-automorphism, the composite $\tilde{Q} \mapsto \rho_L(\tilde{Q}^{\natural})$ is an anti-homomorphism, hence a homomorphism from $\mathbb{B}^{\mathrm{op}}$ into $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$; it is therefore the right regular representation up to a fixed change of basis, and the next section exhibits that change of basis and shows that it is not the identity. The two actions are different objects as soon as the algebra is non-commutative, and the corpus uses both: the **left** copy preserves each chirality, while the **right** copy is the only one that can carry a chirality from one ideal to the other, which is the structural reason the mass term of the biquaternionic Dirac equation is a right multiplication, as established in *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and in *Conventions in the Biquaternion Universe*.
 
 ## Transposition and the Two Representations
 
@@ -247,7 +247,7 @@ $$
 
 so that $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ as a direct sum of left ideals.
 
-**Proof.** Because $i$ is central, $e_3^2 = -e_0$ and $i^2 = -1$, one computes $\tilde\Pi_1^2 = \tfrac14(e_0 + 2ie_3 + i^2e_3^2) = \tfrac14(e_0 + 2ie_3 + e_0) = \tilde\Pi_1$, and similarly $\tilde\Pi_2^2 = \tilde\Pi_2$; while $\tilde\Pi_1\tilde\Pi_2 = \tfrac14(e_0 - i^2e_3^2) = \tfrac14(e_0 - e_0) = 0$. The sum is $e_0$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q} = \tilde{Q}\tilde\Pi_2 = 0$, because membership of $\mathbb{B}\tilde\Pi_2$ gives $\tilde{Q}\tilde\Pi_2 = \tilde{Q}$ while $\tilde\Pi_1\tilde\Pi_2 = 0$. The sum is therefore direct. Under the isomorphism $\Phi$ of *The 2×2 Matrix Element Representation of Biquaternions* the two idempotents are the matrix units $\tilde\Pi_1 \mapsto E_{11}$ and $\tilde\Pi_2 \mapsto E_{22}$, and the two ideals are the two **columns** of the matrix algebra, which the corpus calls the two chiralities.
+**Proof.** Because $i$ is central, $e_3^2 = -e_0$ and $i^2 = -1$, one computes $\tilde\Pi_1^2 = \tfrac14(e_0 + 2ie_3 + i^2e_3^2) = \tfrac14(e_0 + 2ie_3 + e_0) = \tilde\Pi_1$, and similarly $\tilde\Pi_2^2 = \tilde\Pi_2$; while $\tilde\Pi_1\tilde\Pi_2 = \tfrac14(e_0 - i^2e_3^2) = \tfrac14(e_0 - e_0) = 0$. The sum is $e_0$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q} = \tilde{Q}\tilde\Pi_2 = 0$, because membership of $\mathbb{B}\tilde\Pi_2$ gives $\tilde{Q}\tilde\Pi_2 = \tilde{Q}$ while $\tilde\Pi_1\tilde\Pi_2 = 0$. The sum is therefore direct. Under the isomorphism $\Phi$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* the two idempotents are the matrix units $\tilde\Pi_1 \mapsto E_{11}$ and $\tilde\Pi_2 \mapsto E_{22}$, and the two ideals are the two **columns** of the matrix algebra, which the corpus calls the two chiralities.
 
 **Theorem (the regular representation is the sum of the two chiralities).** In the basis
 
@@ -267,7 +267,7 @@ $$
 A_-(\tilde{Q}) = \begin{pmatrix} Q_0 + iQ_3 & -Q_1 - iQ_2 \\ Q_1 - iQ_2 & Q_0 - iQ_3 \end{pmatrix},
 $$
 
-and each block has trace $2Q_0$ and determinant $N(\tilde{Q})$. Consequently each block is similar to the matrix $\Phi(\tilde{Q})$ of *The 2×2 Matrix Element Representation of Biquaternions*, each block is a copy of the simple module $S$, and
+and each block has trace $2Q_0$ and determinant $N(\tilde{Q})$. Consequently each block is similar to the matrix $\Phi(\tilde{Q})$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, each block is a copy of the simple module $S$, and
 
 $$
 \rho_L \cong S \oplus S
@@ -305,7 +305,7 @@ $$
 A_+(\tilde{Q}) = \Phi(u_+)\,\Phi(\tilde{Q})\,\Phi(u_+)^{-1}, \qquad A_-(\tilde{Q}) = \Phi(u_-)\,\Phi(\tilde{Q})\,\Phi(u_-)^{-1}
 $$
 
-for every $\tilde{Q}$: both sides are $\mathbb{C}$-linear in $\tilde{Q}$, so it suffices to compare them on the four basis elements, where they agree. Both conjugating matrices are invertible, since $\det\Phi(u_+) = (1-i)(1+i) = 2 = \det\Phi(u_-)$. Each block therefore realizes the simple module $S$ of *The 2×2 Matrix Element Representation of Biquaternions*, and the regular module is $S \oplus S$.
+for every $\tilde{Q}$: both sides are $\mathbb{C}$-linear in $\tilde{Q}$, so it suffices to compare them on the four basis elements, where they agree. Both conjugating matrices are invertible, since $\det\Phi(u_+) = (1-i)(1+i) = 2 = \det\Phi(u_-)$. Each block therefore realizes the simple module $S$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and the regular module is $S \oplus S$.
 
 ### The Characteristic Polynomial
 
@@ -666,7 +666,7 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $u_+ = e_0 + e_3$, $u_- = e_1 + e_2$ | Conjugating elements, $A_\pm(\tilde{Q}) = \Phi(u_\pm)\Phi(\tilde{Q})\Phi(u_\pm)^{-1}$ |
 | $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Truncated ladder operator; right multiplication carries $\mathbb{B}\tilde\Pi_1$ onto $\mathbb{B}\tilde\Pi_2$ |
 | $S = \mathbb{C}^2$ | Simple left $\mathbb{B}$-module, the spinor module; $\rho_L \cong S \oplus S$ |
-| $\Phi(\tilde{Q})$ | The $2 \times 2$ matrix realization of *The 2×2 Matrix Element Representation of Biquaternions* |
+| $\Phi(\tilde{Q})$ | The $2 \times 2$ matrix realization of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* |
 | $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \rho_R(\mathbb{B})$ | Endomorphism algebra of the regular module, the double centralizer statement |
 | $\rho_L^{\mathbb{R}}(\tilde{Q})$ | Real $8 \times 8$ regular matrix; $\det = |N|^4$, $\operatorname{Tr} = 8\operatorname{Re}(Q_0)$ |
 | $q'_0, q_1, q_2, q_3$ | Real parameters of a material four-vector, $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$, $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; $q'_0 = ct$, $(q_1,q_2,q_3) = (x,y,z)$; $\operatorname{Tr}\rho_L = 4iq'_0$, $\det\rho_L = (-(q'_0)^2 + \mathbf{q}^2)^2$ |

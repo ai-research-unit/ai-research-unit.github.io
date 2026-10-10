@@ -391,7 +391,7 @@ The mathematics of $\mathbb{M}_+$ and its action on $\mathbb{M}_-$ is **structur
 | Density matrix $\rho$ (Hermitian, positive, trace 1) | Element $\tilde{\rho} \in \mathbb{M}_+$ (Hermitian, positive, trace 1) |
 | Pure state $\lvert\psi\rangle\langle\psi\rvert$ | Idempotent $\tfrac{1}{2}(e_0 + i\hat{\boldsymbol\mu})$ |
 | Observable (Hermitian operator) | Hermitian element $\tilde{Q} \in \mathbb{M}_+$ |
-| Unitary gate $U$ | Unit-norm element $\tilde{\Lambda}$ of $SL(2,\mathbb{C})$ |
+| Unitary gate $U$ | Unit-norm element $\tilde{\Lambda}$ with $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_0$: a rotation rotor, the $SU(2)$ of the real quaternions. The general unit-norm element of $SL(2,\mathbb{C})$ also carries the boosts, which are Hermitian and not unitary |
 | Expectation value $\mathrm{Tr}(\rho H)$ | Trace formula $2\,\mathrm{Sc}(\tilde{\rho}\tilde{Q})$ |
 | Reversible evolution $U\rho U^\dagger$ | Rotor conjugation $\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*}$ |
 | Projective measurement $\rho \mapsto P\rho P$ | Idempotent projection $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}$ |
@@ -416,9 +416,9 @@ The correspondence with quantum information is closely related to the **spin-1/2
 The difference is:
 
 - In spin-1/2, the operators generate the **compact** group $SU(2)$ (rotations).
-- In $\mathbb{M}_+$, the Hermitian elements generate the **non-compact** group $SL(2,\mathbb{C})$ (Lorentz transformations).
+- In $\mathbb{M}_+$, the Hermitian elements are a **real four-dimensional space and not a group**: exponentiated, the traceless ones $i\mathbf{h}$ with $\mathbf{h}$ real give the **non-compact** boosts of $SL(2,\mathbb{C})$, and the central one $h_0e_0$ gives a dilation, $e^{h_0}e_0$, which is not of unit norm. Their products with the rotation rotors — the unit-norm *anti*-Hermitian elements $\exp(\theta\hat{\mathbf{u}})$ — generate all of $SL(2,\mathbb{C})$.
 
-The compact/non-compact distinction reflects the difference between rotations in a spacelike plane (compact) and boosts in a timelike plane (non-compact). The biquaternion framework extends the spin-1/2 structure to the relativistic setting: the operators generate the Lorentz group rather than the rotation group, and the corresponding observables include boosts (Hermitian biquaternions with imaginary vector part) alongside rotations.
+The compact/non-compact distinction reflects the difference between rotations in a spacelike plane (compact) and boosts in a timelike plane (non-compact). The biquaternion framework extends the spin-1/2 structure to the relativistic setting: the observables include the boost generators $i\mathbf{h}$ alongside the rotation generators, so the group they act in is the Lorentz group rather than the rotation group.
 
 The biquaternion framework can therefore be read as a **relativistic generalisation of the spin-1/2 formalism**, in which the state space is the spinor module of $\mathbb{B}$ and the symmetry group is the Lorentz group.
 

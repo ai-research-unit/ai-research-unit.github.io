@@ -217,7 +217,7 @@ and it therefore has a $2\times2$ matrix representation over a commutative ring 
 | Determinant image | $N(\tilde q) = \sum q_\mu^2$ | $N(\tilde Q) = \sum Q_\mu^2$ | componentwise |
 | Zero divisors | none | singular matrices | present in each summand |
 
-The pattern is that a $2\times2$ matrix realisation over a commutative ring exists exactly when the algebra is a full matrix algebra over that ring. The quaternion algebra becomes one only after complexification, the biquaternion algebra already is one, and the split biquaternion algebra never is: its decomposition into two division algebras is exactly what prevents it. The biquaternion account is in *Biquaternion 2×2 Matrix Element Representation*.
+The pattern is that a $2\times2$ matrix realisation over a commutative ring exists exactly when the algebra is a full matrix algebra over that ring. The quaternion algebra becomes one only after complexification, the biquaternion algebra already is one, and the split biquaternion algebra never is: its decomposition into two division algebras is exactly what prevents it. The biquaternion account is in *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*.
 
 ## Summary
 

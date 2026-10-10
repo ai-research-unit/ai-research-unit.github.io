@@ -57,7 +57,7 @@ It is a genuine metric on $\mathbb{H}_{\mathbb{D}}$: positive-definite, symmetri
 
 ### Balls and Neighborhoods
 
-The **open ball** of radius $r > 0$ centered at $\tilde{Q}_0$ is
+The **open ball** of radius $r > 0$ centred at $\tilde{Q}_0$ is
 
 $$
 B(\tilde{Q}_0, r) = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \|\tilde{Q} - \tilde{Q}_0\|_E < r\}.

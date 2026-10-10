@@ -11,7 +11,7 @@ $$
 
 for a module $M$ over a possibly noncommutative algebra $A$. The first is a ring and the second its group of units, and the passage from $A$ to this pair records how much freedom an $A$-linear map retains once the whole algebra is required to commute with it. When $A=F$ is a field the requirement is vacuous, and the pair is the full ring of $F$-linear maps together with the full general linear group; over a larger algebra the condition is severe, and the gap between $A$-linear and merely $R$-linear maps is not covered here.
 
-The conventions are those of the companion article *Modules over an Algebra*: $R$ is a commutative ring with $1 \neq 0$, and $A$ is a unital associative $R$-algebra, generally noncommutative. Modules are left modules unless stated, $A^{\times}$ is the group of units of $A$, and $Z(A)$ is the center. The regular module ${}_A A$ acts on itself by left multiplication, and the endomorphisms of the regular module were identified in the companion article as the right multiplications. That identification is the base case of everything below, and it is the reason the noncommutative case behaves asymmetrically.
+The conventions are those of the companion article *Modules over an Algebra*: $R$ is a commutative ring with $1 \neq 0$, and $A$ is a unital associative $R$-algebra, generally noncommutative. Modules are left modules unless stated, $A^{\times}$ is the group of units of $A$, and $Z(A)$ is the centre. The regular module ${}_A A$ acts on itself by left multiplication, and the endomorphisms of the regular module were identified in the companion article as the right multiplications. That identification is the base case of everything below, and it is the reason the noncommutative case behaves asymmetrically.
 
 Two facts are used throughout and are stated once. The first is that $\operatorname{End}_A(M)$ is the **centralizer** of the action of $A$ in the ring $\operatorname{End}_R(M)$ of $R$-linear maps: an $R$-linear map is $A$-linear precisely when it commutes with every operator of the representation. The second is Schur's lemma, proved in the companion article and recalled here in the form needed: a nonzero homomorphism between simple modules is an isomorphism, so the endomorphism ring of a simple module is a division ring. The second fact is the engine of the theory, and it converts questions about transformations into questions about division rings and matrices over them.
 
@@ -137,7 +137,7 @@ Let $F$ be a field, let $A=M_n(F)$, and let $S=F^n$ be the defining module of co
 
 **Theorem.** $\operatorname{End}_{M_n(F)}(S)\cong F$.
 
-*Proof.* Regard $S$ as the space of column vectors and identify $\operatorname{End}_F(S)$ with $M_n(F)$ acting on the left. An element $T=(t_{kl})$ of $\operatorname{End}_F(S)$ is $A$-linear precisely when $XT=TX$ for every $X \in M_n(F)$, that is, when $T$ lies in the center of $M_n(F)$. To compute that center, let $E_{ij}$ be the matrix units and write $E_{ij}T=TE_{ij}$ in coordinates:
+*Proof.* Regard $S$ as the space of column vectors and identify $\operatorname{End}_F(S)$ with $M_n(F)$ acting on the left. An element $T=(t_{kl})$ of $\operatorname{End}_F(S)$ is $A$-linear precisely when $XT=TX$ for every $X \in M_n(F)$, that is, when $T$ lies in the centre of $M_n(F)$. To compute that centre, let $E_{ij}$ be the matrix units and write $E_{ij}T=TE_{ij}$ in coordinates:
 
 $$
 \delta_{ki}\,t_{jl}=t_{ki}\,\delta_{jl}.
@@ -147,7 +147,7 @@ Taking $i=j$ gives $t_{il}=t_{ii}\delta_{il}$, so $T$ is diagonal; taking $i \ne
 
 **Corollary.** $\operatorname{Aut}_{M_n(F)}(S)\cong F^{\times}$.
 
-The corollary is the extreme case of Schur's lemma: the only invertible transformations of the defining module commuting with the whole matrix algebra are the nonzero scalars. Passing from $F$-linear to $M_n(F)$-linear therefore discards the whole of $GL_n(F)$ except its center.
+The corollary is the extreme case of Schur's lemma: the only invertible transformations of the defining module commuting with the whole matrix algebra are the nonzero scalars. Passing from $F$-linear to $M_n(F)$-linear therefore discards the whole of $GL_n(F)$ except its centre.
 
 **Theorem.** For the regular module,
 
@@ -209,7 +209,7 @@ $$
 \operatorname{End}_{\mathbb{C}}(S)=M_2(\mathbb{C})\cong\mathbb{B}.
 $$
 
-The first two are Schur's lemma and the computation of §The Case $A=M_n(F)$ with $n=2$, $F=\mathbb{C}$. The third is the statement that every $\mathbb{C}$-linear map of $S$ is given by a biquaternion: $\mathbb{B}$ is exactly the full endomorphism ring of its own simple module, by the double centralizer corollary. The contrast is the point. A $\mathbb{C}$-linear endomorphism of $S$ is an arbitrary $2\times2$ complex matrix, a four-complex-dimensional family, and every such matrix is multiplication by an element of $\mathbb{B}$; a $\mathbb{B}$-linear endomorphism is multiplication by a scalar alone, a one-complex-dimensional family. The intermediate group $GL_2(\mathbb{C})$ therefore contains transformations of $S$ that are not $\mathbb{B}$-linear; only its center $\mathbb{C}^{\times}$ survives the restriction.
+The first two are Schur's lemma and the computation of §The Case $A=M_n(F)$ with $n=2$, $F=\mathbb{C}$. The third is the statement that every $\mathbb{C}$-linear map of $S$ is given by a biquaternion: $\mathbb{B}$ is exactly the full endomorphism ring of its own simple module, by the double centralizer corollary. The contrast is the point. A $\mathbb{C}$-linear endomorphism of $S$ is an arbitrary $2\times2$ complex matrix, a four-complex-dimensional family, and every such matrix is multiplication by an element of $\mathbb{B}$; a $\mathbb{B}$-linear endomorphism is multiplication by a scalar alone, a one-complex-dimensional family. The intermediate group $GL_2(\mathbb{C})$ therefore contains transformations of $S$ that are not $\mathbb{B}$-linear; only its centre $\mathbb{C}^{\times}$ survives the restriction.
 
 For the regular module the theorem on the regular module gives
 
@@ -291,7 +291,7 @@ Schur's lemma makes $\operatorname{End}_A(S)$ a division ring for simple $S$, wi
 | $A$ | unital associative $R$-algebra, generally noncommutative |
 | $A^{\mathrm{op}}$ | opposite algebra, product $a \cdot_{\mathrm{op}} b=ba$ |
 | $A^{\times}$ | group of units of $A$ |
-| $Z(A)$ | center of $A$ |
+| $Z(A)$ | centre of $A$ |
 | $M$, $N$, $S$ | left $A$-modules; $S$ simple |
 | ${}_A A$ | left regular module |
 | $\rho : A \to \operatorname{End}_R(M)$ | the action homomorphism |

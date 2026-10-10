@@ -39,7 +39,7 @@ This makes $\mathbb{D}'$ a metric space when $R = \mathbb{R}$, isometric to $\ma
 
 ### Balls and Neighborhoods
 
-The **open ball** of radius $r > 0$ centered at $A_0$ is
+The **open ball** of radius $r > 0$ centred at $A_0$ is
 
 $$
 B(A_0, r) = \{A \in \mathbb{D}' : \|A - A_0\|_E < r\}.
@@ -321,7 +321,7 @@ However, if the function is written in the form $f(a + \varepsilon a') = u(a) + 
 
 ### Definition
 
-A **power series** centered at $A_0$ is
+A **power series** centred at $A_0$ is
 
 $$
 \sum_{n=0}^\infty c_n (A - A_0)^n, \qquad c_n \in \mathbb{D}'.

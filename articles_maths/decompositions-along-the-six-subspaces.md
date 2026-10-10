@@ -8,9 +8,9 @@ This article establishes the three decompositions, gives the two projection form
 
 The six subspaces, one to a section, are *Introduction to the Six Subspaces*; the four conjugations as formulas, the group they form and the lattice of their fixed spaces are *The Group of Involutions* and *Comparison of the Six Subspaces*. The elements, the basis and the coordinate systems are assumed from *Biquaternions as a Vector Space over $\mathbb{C}$*, and the fact that the conjugations are linear and antilinear from *Biquaternions as a Vector Space over $\mathbb{R}$*. The coordinate blocks, the fifteen pairwise intersections, the sums and the sign patterns of the conjugations on the six subspaces are *Comparison of the Six Subspaces*.
 
-## The Center and Vector Decomposition
+## The Centre and Vector Decomposition
 
-The quaternion conjugation ${}^{\natural}$ is one of the three commuting involutions. Its eigenspaces are the center $\mathbb{C}_{\mathbb{B}}$ (eigenvalue $+1$) and the vector subspace $\mathrm{Vect}(\mathbb{B})$ (eigenvalue $-1$), of real dimensions 2 and 6. Every biquaternion therefore decomposes uniquely as a scalar plus a pure vector part:
+The quaternion conjugation ${}^{\natural}$ is one of the three commuting involutions. Its eigenspaces are the centre $\mathbb{C}_{\mathbb{B}}$ (eigenvalue $+1$) and the vector subspace $\mathrm{Vect}(\mathbb{B})$ (eigenvalue $-1$), of real dimensions 2 and 6. Every biquaternion therefore decomposes uniquely as a scalar plus a pure vector part:
 
 $$
 \tilde{Q} = \tilde{Q}_{\mathrm{c}} + \tilde{Q}_{\mathrm{v}}, \qquad \tilde{Q}_{\mathrm{c}} = Q_0 e_0 \in \mathbb{C}_{\mathbb{B}}, \quad \tilde{Q}_{\mathrm{v}} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3 \in \mathrm{Vect}(\mathbb{B}),

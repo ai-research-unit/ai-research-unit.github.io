@@ -1,16 +1,16 @@
-# __The Central Scalar Field: Classical Dynamics in the Biquaternion Center__
+# __The Central Scalar Field: Classical Dynamics in the Biquaternion Centre__
 
 ## Introduction
 
-The biquaternion algebra carries a distinguished two-dimensional real subspace that commutes with everything: the **center** $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$, the fixed-point set of quaternion conjugation. It is the algebra's rotationally invariant subspace, and it is the only place a field with a single Lorentz-scalar component can live. The companion article *The Scalar Field in the Center: Why Spin 0 Escapes the Biquaternion State Module* established that result representation-theoretically: the state module is the two-dimensional defining module of the algebra and carries spin $\tfrac12$, so a trivial-representation field has no module to occupy and must be valued in the center instead.
+The biquaternion algebra carries a distinguished two-dimensional real subspace that commutes with everything: the **centre** $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$, the fixed-point set of quaternion conjugation. It is the algebra's rotationally invariant subspace, and it is the only place a field with a single Lorentz-scalar component can live. The companion article *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module* established that result representation-theoretically: the state module is the two-dimensional defining module of the algebra and carries spin $\tfrac12$, so a trivial-representation field has no module to occupy and must be valued in the centre instead.
 
-This article develops the **classical dynamics** of that field. The field is $\tilde{\Phi}=\phi e_0$, a single complex (or, in the real case, real) scalar function of the event; because it is valued in the center, it commutes with the biquaternionic gradient, with every rotation rotor and with every element of the algebra, and its dynamics is the classical field theory of one scalar degree of freedom. No quantization is used anywhere below: the field equation is a wave equation, the source is a prescribed classical density, and the objects computed are the classical field, its energy and its force on a test source.
+This article develops the **classical dynamics** of that field. The field is $\tilde{\Phi}=\phi e_0$, a single complex (or, in the real case, real) scalar function of the event; because it is valued in the centre, it commutes with the biquaternionic gradient, with every rotation rotor and with every element of the algebra, and its dynamics is the classical field theory of one scalar degree of freedom. No quantization is used anywhere below: the field equation is a wave equation, the source is a prescribed classical density, and the objects computed are the classical field, its energy and its force on a test source.
 
 The article has one configuration as its destination. A **static central source** produces a static, spherically symmetric field, and the interaction of a test source with that field is the central-force problem of the sibling article *The Relativistic Central Force Problem in Biquaternionic Form*. The reduction is exact, and it has a clean algebraic reason: because the field takes its values in the rotationally invariant subspace, the potential it produces is a **central scalar** in the sense of the companion article *The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form*, so the force on a test source is a real vector parallel to the position, the angular momentum is conserved, and the orbit is the one solved relativistically in the sibling article. This article therefore supplies the field-theoretic origin of the $1/r$ potential that the central-force articles treat as given.
 
 Four results are established.
 
-- **The field equation in the center.** The classical action
+- **The field equation in the centre.** The classical action
 $$
 S=\int\left[-\tfrac12\,\partial_\mu\phi\,\partial^\mu\phi-\tfrac12\mu^2\phi^2+g\rho\,\phi\right]d^4x
 $$
@@ -21,13 +21,13 @@ has the Euler–Lagrange equation $(\Box-\mu^2)\tilde{\Phi}=-g\rho\,e_0$, where 
 
 The article closes by identifying why a central scalar field carries no intrinsic magnetism, and by separating what the algebra supplies from what it imports.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\varepsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the center is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$, and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_0\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial_{ict}^2+\Delta=-\partial_t^2/c^2+\Delta$, the series convention of the companion article *Conventions in the Biquaternion Universe*. The mass parameter is $\mu=mc/\hbar$, the inverse Compton wavelength, exactly as in the companion articles *The Klein–Gordon Equation in Biquaternionic Form* and *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*; classically only the length $\mu^{-1}$ matters and $\hbar$ enters only through the identification of $\mu$ with a mass. The four-position is $\tilde{Q}=ict\,e_0+\mathbf{x}$. The source density is $\rho$, the source strength $Q$, and the couplings are $g$ for the field and $g'$ for the test source. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\varepsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$, and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_0\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial_{ict}^2+\Delta=-\partial_t^2/c^2+\Delta$, the series convention of the companion article *Conventions in the Biquaternion Universe*. The mass parameter is $\mu=mc/\hbar$, the inverse Compton wavelength, exactly as in the companion articles *The Klein–Gordon Equation in Biquaternionic Form* and *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*; classically only the length $\mu^{-1}$ matters and $\hbar$ enters only through the identification of $\mu$ with a mass. The four-position is $\tilde{Q}=ict\,e_0+\mathbf{x}$. The source density is $\rho$, the source strength $Q$, and the couplings are $g$ for the field and $g'$ for the test source. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value.
 
-## The Center as the Scalar's Value Space
+## The Centre as the Scalar's Value Space
 
-### The Center and Its Properties
+### The Centre and Its Properties
 
-The center is the centralizer of the quaternion units,
+The centre is the centralizer of the quaternion units,
 
 $$
 \mathbb{C}_{\mathbb{B}}=\{\tilde{Q}\in\mathbb{B} : [\tilde{Q},e_k]=0,\ k=1,2,3\}=\{Q_0e_0 : Q_0\in\mathbb{C}\}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}.
@@ -40,7 +40,7 @@ $$
 \mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_-=\mathbb{R}\,ie_0 .
 $$
 
-The first property to record is that the center is not merely a subspace: it is **closed under multiplication**, because $Q_0e_0\cdot Q_0'e_0=Q_0Q_0'e_0$. A scalar field valued in the center therefore admits polynomial self-interactions without leaving the center, a fact used in the open questions below. The second is that its elements commute with the rotation generators, so a centrally valued field is a **rotational scalar**: rotations act on it trivially, and there is no internal direction for a rotation to move.
+The first property to record is that the centre is not merely a subspace: it is **closed under multiplication**, because $Q_0e_0\cdot Q_0'e_0=Q_0Q_0'e_0$. A scalar field valued in the centre therefore admits polynomial self-interactions without leaving the centre, a fact used in the open questions below. The second is that its elements commute with the rotation generators, so a centrally valued field is a **rotational scalar**: rotations act on it trivially, and there is no internal direction for a rotation to move.
 
 ### The Field and Its Components
 
@@ -56,9 +56,9 @@ $$
 \tilde{\Phi}=\phi_1 e_0+i\phi_2 e_0, \qquad \phi_1,\phi_2\in\mathbb{R},
 $$
 
-so the real part occupies the scalar direction of the informational sector and the imaginary part the scalar direction of the material sector. This is the algebraic reason the second-order scalar structure does not organise itself by the material/informational split: the sector decomposition of a complex scalar is its decomposition into real and imaginary parts, not into particle and antiparticle or state and operator, as discussed in the companion article on the scalar field in the center. For most of this article the field is taken **real**, $\phi_2=0$; the complex case is treated where the central phase matters, in the section on the conserved current.
+so the real part occupies the scalar direction of the informational sector and the imaginary part the scalar direction of the material sector. This is the algebraic reason the second-order scalar structure does not organise itself by the material/informational split: the sector decomposition of a complex scalar is its decomposition into real and imaginary parts, not into particle and antiparticle or state and operator, as discussed in the companion article on the scalar field in the centre. For most of this article the field is taken **real**, $\phi_2=0$; the complex case is treated where the central phase matters, in the section on the conserved current.
 
-A field in the center is a Lorentz scalar in two senses. It is invariant under the rotor conjugation $\tilde{\Phi}\mapsto\tilde{\Lambda}\tilde{\Phi}\tilde{\Lambda}^{-1}=\tilde{\Lambda}\tilde{\Phi}\tilde{\Lambda}^{\natural}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$, because $\tilde{\Phi}$ commutes with $\tilde{\Lambda}$ and $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$; and it is invariant under spatial rotations, which are the unit real quaternions acting the same way, for the same reason. The scalar nature of the field is thus not an assumption about its transformation law but a consequence of its living in the center.
+A field in the centre is a Lorentz scalar in two senses. It is invariant under the rotor conjugation $\tilde{\Phi}\mapsto\tilde{\Lambda}\tilde{\Phi}\tilde{\Lambda}^{-1}=\tilde{\Lambda}\tilde{\Phi}\tilde{\Lambda}^{\natural}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$, because $\tilde{\Phi}$ commutes with $\tilde{\Lambda}$ and $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$; and it is invariant under spatial rotations, which are the unit real quaternions acting the same way, for the same reason. The scalar nature of the field is thus not an assumption about its transformation law but a consequence of its living in the centre.
 
 ## The Classical Action and the Field Equation
 
@@ -90,7 +90,7 @@ $$
 \boxed{\;\left(\Box-\mu^2\right)\tilde{\Phi}=-g\rho\,e_0 .\;}
 $$
 
-The operator $\Box-\mu^2$ is a **central scalar** differential operator with real coefficients, so it acts on the field by acting on the single component: the biquaternion-valued field equation and the ordinary scalar equation say the same thing. This is the first place the center is used. For a biquaternion-valued field with all four components active, the same operator would act componentwise and produce four decoupled scalar equations, none of which mixes the components; a genuinely multi-component field requires a noncentral operator, and the framework's only such operators are the module-theoretic ones described in the companion articles. The scalar field is the case in which the central operator and the single component match.
+The operator $\Box-\mu^2$ is a **central scalar** differential operator with real coefficients, so it acts on the field by acting on the single component: the biquaternion-valued field equation and the ordinary scalar equation say the same thing. This is the first place the centre is used. For a biquaternion-valued field with all four components active, the same operator would act componentwise and produce four decoupled scalar equations, none of which mixes the components; a genuinely multi-component field requires a noncentral operator, and the framework's only such operators are the module-theoretic ones described in the companion articles. The scalar field is the case in which the central operator and the single component match.
 
 The free field obeys
 
@@ -155,7 +155,7 @@ $$
 
 the $1/r$ potential that the central-force articles treat as the inverse-square force's potential energy.
 
-Two properties of the solution matter for what follows. It is **static** and **spherically symmetric**, being a function of $r=|\mathbf{x}|$ alone, and its value at every point lies in the center, so it commutes with the rotation generators and carries no direction. A distribution of sources superposes: for $\rho=\sum_aQ_a\delta^{(3)}(\mathbf{x}-\mathbf{x}_a)$ the field is the sum of the individual Yukawa fields, because the equation is linear and the center is closed under addition.
+Two properties of the solution matter for what follows. It is **static** and **spherically symmetric**, being a function of $r=|\mathbf{x}|$ alone, and its value at every point lies in the centre, so it commutes with the rotation generators and carries no direction. A distribution of sources superposes: for $\rho=\sum_aQ_a\delta^{(3)}(\mathbf{x}-\mathbf{x}_a)$ the field is the sum of the individual Yukawa fields, because the equation is linear and the centre is closed under addition.
 
 ### The Field of a Moving Source
 
@@ -225,13 +225,13 @@ which is exactly the inverse-square force of the central-force articles, with $\
 
 ### Why the Force Is Central
 
-The force is central for an algebraic reason. The field $\tilde{\Phi}=\phi(r)e_0$ is valued in the center and is therefore invariant under the rotation group, and its gradient transforms as a vector:
+The force is central for an algebraic reason. The field $\tilde{\Phi}=\phi(r)e_0$ is valued in the centre and is therefore invariant under the rotation group, and its gradient transforms as a vector:
 
 $$
 \mathbf{F}(\mathbf{x})=-\nabla U(r)=g'\,\nabla\phi(r)=g'\,\frac{d\phi}{dr}\,\hat{\mathbf{r}} ,
 $$
 
-a real vector parallel to the position, pointing inward because $\frac{d\phi}{dr}<0$ for the attractive field. In the algebra's criterion, $[\mathbf{r},\mathbf{F}]=0$, so the force commutes with the position and the angular momentum $\mathbf{L}=\mathbf{r}\times\mathbf{p}=\tfrac12[\mathbf{r},\mathbf{p}]$ is conserved. The potential energy $U(r)e_0$ is a **central scalar**, an element of the center, so the whole configuration is a central-scalar configuration in the sense of the companion article *The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form*: scalar data in the center, configuration a real vector in the material sector, no vector direction of the informational sector occupied. The field-theoretic origin of a central force is therefore the centrality of the field's value space, not an assumption about the force law.
+a real vector parallel to the position, pointing inward because $\frac{d\phi}{dr}<0$ for the attractive field. In the algebra's criterion, $[\mathbf{r},\mathbf{F}]=0$, so the force commutes with the position and the angular momentum $\mathbf{L}=\mathbf{r}\times\mathbf{p}=\tfrac12[\mathbf{r},\mathbf{p}]$ is conserved. The potential energy $U(r)e_0$ is a **central scalar**, an element of the centre, so the whole configuration is a central-scalar configuration in the sense of the companion article *The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form*: scalar data in the centre, configuration a real vector in the material sector, no vector direction of the informational sector occupied. The field-theoretic origin of a central force is therefore the centrality of the field's value space, not an assumption about the force law.
 
 ### Which Central-Force Results Apply
 
@@ -278,7 +278,7 @@ That the current's normalization is a convention, while its conservation is not,
 
 The subcategory to which this article belongs is that of effects **without intrinsic magnetism**, and the central scalar field is the field-theoretic reason the restriction is a natural one. Three independent statements combine.
 
-**No internal vector, hence no spin.** The value space is the center, the rotationally invariant subspace of $\mathbb{B}$. A field valued there has no internal direction for a rotation to act on and no internal vector degree of freedom to precess; it carries spin $0$. A magnetic moment requires either an intrinsic spin or an internal current distribution, and a single complex scalar has neither. This is the algebraic statement of the subcategory's subject, and it is the field-theoretic counterpart of the central-scalar limit's exclusion of internal vectors.
+**No internal vector, hence no spin.** The value space is the centre, the rotationally invariant subspace of $\mathbb{B}$. A field valued there has no internal direction for a rotation to act on and no internal vector degree of freedom to precess; it carries spin $0$. A magnetic moment requires either an intrinsic spin or an internal current distribution, and a single complex scalar has neither. This is the algebraic statement of the subcategory's subject, and it is the field-theoretic counterpart of the central-scalar limit's exclusion of internal vectors.
 
 **No vector potential, hence no magnetic field.** The field equation is a single scalar equation. There is no gauge connection, no field-strength tensor and no electric–magnetic decomposition; the static solution has a scalar potential only, and the moving solution of the previous section has a scalar Liénard–Wiechert potential and no vector counterpart. The absence of a magnetic field is not a small effect or a limit; it is the statement that the theory has no object out of which a magnetic field could be built.
 
@@ -290,7 +290,7 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 
 ### What the Algebra Supplies
 
-**The value space.** The center is the unique rotationally invariant subspace of $\mathbb{B}$, so the algebra determines where a scalar field must live rather than leaving it a choice.
+**The value space.** The centre is the unique rotationally invariant subspace of $\mathbb{B}$, so the algebra determines where a scalar field must live rather than leaving it a choice.
 
 **The centrality of the field equation.** The d'Alembertian is central and scalar, so the biquaternion field equation acts on the single component and no coupling between components is introduced. The reduction to one scalar equation is a consequence of the algebra, not an ansatz.
 
@@ -298,7 +298,7 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 
 **The central phase.** The global $U(1)$ of the complex scalar is the algebra's central phase, and its conservation is Noether's theorem applied to a central transformation.
 
-**The closure of the center.** The center is a subalgebra, so polynomial self-interactions of the scalar stay in the center and are available without leaving the scalar sector.
+**The closure of the centre.** The centre is a subalgebra, so polynomial self-interactions of the scalar stay in the centre and are available without leaving the scalar sector.
 
 ### What the Algebra Does Not Contain
 
@@ -312,7 +312,7 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 
 1. **The value of the couplings and the mass.** The framework fixes the form of the central potential and leaves $g$, $g'$, $Q$ and $\mu$ free. Is there any algebraic constraint on their ratios, in the way that the barrier condition $L>\kappa/c$ constrains the angular momentum? Not known.
 
-2. **Self-interaction in the center.** Because the center is closed under multiplication, a potential $V(\tilde{\Phi})$ polynomial in a central field is well defined and stays in the center. Whether the framework's scalar sector should be linear or self-interacting — and how a self-interacting central scalar relates to the Higgs sector treated elsewhere in the corpus — is open.
+2. **Self-interaction in the centre.** Because the centre is closed under multiplication, a potential $V(\tilde{\Phi})$ polynomial in a central field is well defined and stays in the centre. Whether the framework's scalar sector should be linear or self-interacting — and how a self-interacting central scalar relates to the Higgs sector treated elsewhere in the corpus — is open.
 
 3. **The dynamical source and back-reaction.** A source with its own equation of motion, radiating into the scalar field and recoiling, is the scalar analogue of the electromagnetic radiation-reaction problem. The framework treats prescribed sources here and the back-reaction elsewhere; the scalar case is not worked out.
 
@@ -320,13 +320,13 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 
 5. **The relation to the gauge principle.** The central phase is a global symmetry of the central scalar field. Whether it can be gauged, and whether a gauged central phase has a biquaternionic interpretation distinct from ordinary $U(1)$ electromagnetism, is a question for the articles on the gauge principle rather than for a classical scalar field.
 
-6. **Coupling to the informational sector.** The field occupies the center and therefore one scalar direction of each sector. Whether the scalar direction of $\mathbb{M}_+$ couples to the informational structures of the framework, and how a scalar source would appear to an informational observer, is the central open question shared with the foundational article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
+6. **Coupling to the informational sector.** The field occupies the centre and therefore one scalar direction of each sector. Whether the scalar direction of $\mathbb{M}_+$ couples to the informational structures of the framework, and how a scalar source would appear to an informational observer, is the central open question shared with the foundational article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
 
 7. **Curved spacetime and the range.** The Yukawa range $\mu^{-1}$ and the $1/r$ tail are computed on flat spacetime. Whether the framework's local complex structure modifies the range in a medium, as it modifies the speed of light, is not addressed.
 
 ## Summary
 
-The central scalar field in the biquaternion framework is a field valued in the center $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$,
+The central scalar field in the biquaternion framework is a field valued in the centre $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$,
 
 $$
 \tilde{\Phi}(x)=\phi(x)e_0 ,
@@ -359,7 +359,7 @@ $$
 
 whose massless limit $U=-\kappa/r$ is exactly the inverse-square central potential of the sibling article *The Relativistic Central Force Problem in Biquaternionic Form*. The force is central because the field's value space is the rotationally invariant subspace, so $[\mathbf{r},\mathbf{F}]=0$, the angular momentum $\mathbf{L}=\tfrac12[\mathbf{r},\mathbf{p}]$ is conserved, and the orbit is the precessing conic of that article in the massless case.
 
-The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto e^{i\alpha}\tilde{\Phi}$, with conserved current $j^\nu=\tfrac{i}{2}(\phi^*\partial^\nu\phi-\phi\,\partial^\nu\phi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the center, and it is the field-theoretic content of the spin-zero subcategory.
+The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto e^{i\alpha}\tilde{\Phi}$, with conserved current $j^\nu=\tfrac{i}{2}(\phi^*\partial^\nu\phi-\phi\,\partial^\nu\phi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the centre, and it is the field-theoretic content of the spin-zero subcategory.
 
 ## Summary of Notation
 
@@ -367,8 +367,8 @@ The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto e^{i\
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$; central $i$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Center of $\mathbb{B}$; the scalar field's value space |
-| $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_0$, $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_-=\mathbb{R}ie_0$ | The center's one real direction in each sector |
+| $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
+| $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_0$, $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_-=\mathbb{R}ie_0$ | The centre's one real direction in each sector |
 | $\tilde{\Phi}=\phi e_0$ | Central scalar field; $\phi$ a complex scalar function |
 | $\phi_1,\phi_2$ | Real and imaginary parts of $\phi$ |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |
@@ -397,4 +397,4 @@ The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto e^{i\
 - J. D. Jackson, *Classical Electrodynamics* (Wiley, 1999), for the Liénard–Wiechert potentials and the contrast between scalar and vector potentials.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of scalar fields and their conserved currents.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the spacetime-algebra formulation of scalar field theory.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the center of a Clifford algebra, its idempotents and its relation to the scalar representation.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the centre of a Clifford algebra, its idempotents and its relation to the scalar representation.

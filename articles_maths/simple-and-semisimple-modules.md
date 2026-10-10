@@ -88,7 +88,7 @@ $$
 \operatorname{End}_A(M) \cong \prod_{i=1}^{r} M_{n_i}\bigl(\operatorname{End}_A(S_i)\bigr),
 $$
 
-a product of matrix rings over division rings. In particular the endomorphism ring of a semisimple module of finite length is semisimple, by the criterion of the next section, and its center is the product of the centers of the division rings $\operatorname{End}_A(S_i)$.
+a product of matrix rings over division rings. In particular the endomorphism ring of a semisimple module of finite length is semisimple, by the criterion of the next section, and its centre is the product of the centres of the division rings $\operatorname{End}_A(S_i)$.
 
 For the rest of the article $D_i$ denotes the division ring of the $i$-th factor of a Wedderburn decomposition, so that $D_i\cong\operatorname{End}_A(S_i)^{\mathrm{op}}$: for a division ring $D_0$ the defining module of $M_n(D_0)$ has endomorphism ring $D_0^{\mathrm{op}}$, the $A$-linear endomorphisms of $D_0^n$ being the right multiplications by scalars. The two division rings agree whenever $D_i\cong D_i^{\mathrm{op}}$, which is the case for every division ring occurring in this corpus.
 
@@ -119,7 +119,7 @@ for division rings $D_1,\dots,D_r$ and positive integers $n_1,\dots,n_r$. The nu
 Several consequences are immediate.
 
 - The simple left $A$-modules are, up to isomorphism, exactly one $S_i$ for each factor $M_{n_i}(D_i)$: the defining module $D_i^{n_i}$ of column vectors, with $\operatorname{End}_A(S_i)\cong D_i^{\mathrm{op}}$.
-- The center of $A$ is $\prod_i Z(D_i)$, so $A$ is central simple over its center exactly when $r=1$, and central simple over the base field $F$ exactly when $r=1$ and $Z(D_1)=F$.
+- The centre of $A$ is $\prod_i Z(D_i)$, so $A$ is central simple over its centre exactly when $r=1$, and central simple over the base field $F$ exactly when $r=1$ and $Z(D_1)=F$.
 - A ring is a **division ring** exactly when it is semisimple with $r=n_1=1$, so that $A=D_1$.
 - A ring is a **matrix ring over a division ring** exactly when it is semisimple and simple in the sense of having no nontrivial two-sided ideals; this is the simple Artinian case.
 

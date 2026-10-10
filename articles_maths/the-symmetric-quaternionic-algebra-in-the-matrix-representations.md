@@ -39,7 +39,7 @@ $$
 
 *Proof.* The realisations of the two summands of $\tilde P\star\tilde Q$ are
 $\Phi(\tilde P^{\natural}\tilde Q)=\Phi(\tilde P^{\natural})\Phi(\tilde Q)=\operatorname{adj}(\Phi(\tilde P))\Phi(\tilde Q)$ and its exchange, since $\Phi$ is an algebra isomorphism and
-the image of the conjugation is the adjugate (*Biquaternion 2×2 Matrix Element Representation*). The half-sum
+the image of the conjugation is the adjugate (*Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*). The half-sum
 is the image of the product, and it equals $\Phi(B(\tilde P,\tilde Q)e_0)=B(\tilde P,\tilde Q)I_2$ because the
 value is central. $\square$
 
@@ -74,7 +74,7 @@ isotropic $\tilde A$, the trace being $\tilde A_0$ in either case). $\square$
 
 **Remark (the adjugate is the conjugation).** The matrix of the quaternion conjugation in the model is the
 adjugate, $\Phi(\tilde Q^{\natural})=\operatorname{adj}(\Phi(\tilde Q))=\epsilon\Phi(\tilde Q)^{\mathsf T}\epsilon^{-1}$
-with $\epsilon=i\sigma_2$ (*Biquaternion 2×2 Matrix Element Representation*). The symmetrisation is therefore
+with $\epsilon=i\sigma_2$ (*Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*). The symmetrisation is therefore
 read on the pair as the half-sum of the two products in which one factor is adorned with the conjugation, and
 the identity $\operatorname{adj}(\Phi(\tilde P))\Phi(\tilde Q)+\operatorname{adj}(\Phi(\tilde Q))\Phi(\tilde P)=2B(\tilde P,\tilde Q)I_2$
 is the matrix form of the centrality of the operation. The vectors of the kernel of the endomorphism are the matrices $X$ with
@@ -171,7 +171,7 @@ space of complex conjugation, is the set of elements with real coefficients, on 
 definite, and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is its image under the multiplication by
 $i$, on which the form is negative definite. The Hermitian subspace $\mathbb{M}_+$, the fixed space of Hermitian
 conjugation, is realised by the matrices equal to their conjugate transpose, and the form has signature
-$(1,3)$ on it. The correspondence is the one of *Biquaternion 2×2 Matrix Element Representation* and
+$(1,3)$ on it. The correspondence is the one of *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* and
 *Introduction to the 2×2 Matrix Representation of Biquaternions*, which own the subspace conditions.
 
 ## Worked Examples
@@ -228,7 +228,7 @@ Hermitian subspaces are read through the subspace conditions of the two represen
 ## Further Reading
 
 - *Introduction to the 2×2 Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.md`), for the realisation, the trace and the determinant
-- *Biquaternion 2×2 Matrix Element Representation* (`articles_maths/biquaternion-2x2-matrix-element-representation.md`), for the adjugate and the singular elements
+- *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/biquaternion-2x2-matrix-element-representation-m2c.md`), for the adjugate and the singular elements
 - *Biquaternion 4×4 Regular Matrix Element Representation* (`articles_maths/biquaternion-4x4-regular-matrix-element-representation.md`), for the regular model and its determinant
 - *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the form $B$ and its Gram matrix
 - *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the operators transported by the models

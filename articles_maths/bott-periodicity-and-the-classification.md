@@ -80,7 +80,7 @@ The classification is now reduced to the eight values of $n$ modulo $8$ in each 
 
 **The family $\mathrm{Cl}_{n,0}$.** Here $e_i^2=+1$.
 
-| $n \bmod 8$ | $\mathrm{Cl}_{n,0}$ | division algebra | center |
+| $n \bmod 8$ | $\mathrm{Cl}_{n,0}$ | division algebra | centre |
 |---|---|---|---|
 | $0$ | $M_{2^{n/2}}(F)$ | $F$ | $F$ |
 | $1$ | $M_{2^{(n-1)/2}}(F)\times M_{2^{(n-1)/2}}(F)$ | $F$ | $F\times F$ |
@@ -93,7 +93,7 @@ The classification is now reduced to the eight values of $n$ modulo $8$ in each 
 
 **The family $\mathrm{Cl}_{0,n}$.** Here $e_i^2=-1$.
 
-| $n \bmod 8$ | $\mathrm{Cl}_{0,n}$ | division algebra | center |
+| $n \bmod 8$ | $\mathrm{Cl}_{0,n}$ | division algebra | centre |
 |---|---|---|---|
 | $0$ | $M_{2^{n/2}}(F)$ | $F$ | $F$ |
 | $1$ | $M_{2^{(n-1)/2}}(F(\sqrt{-1}))$ | $F(\sqrt{-1})$ | $F(\sqrt{-1})$ |
@@ -178,12 +178,12 @@ The classification of the algebras translates directly into a classification of 
 **Theorem.** Let $(V,q)$ be a non-degenerate quadratic space of dimension $n$ over a field $F$ of characteristic not $2$, with volume element $\omega$ of an orthogonal basis and $\delta=\omega^{2}=(-1)^{n(n-1)/2}q(e_1)\cdots q(e_n)\in F^{\times}$, whose class modulo squares does not depend on the basis. Then
 
 - if $n$ is even, $\mathrm{Cl}(V,q)$ is central simple over $F$, and it has exactly one isomorphism class of irreducible module;
-- if $n$ is odd and $\delta$ is not a square in $F$, the center is the quadratic field $F(\sqrt{\delta})$ and $\mathrm{Cl}(V,q)$ is central simple over that field, hence simple, and again has exactly one isomorphism class of irreducible module;
-- if $n$ is odd and $\delta$ is a square in $F$, the center is $F\times F$ and $\mathrm{Cl}(V,q)\cong A\times A$ with $A$ simple; there are then exactly two isomorphism classes of irreducible module, of the same dimension over the same division algebra, exchanged by the volume element.
+- if $n$ is odd and $\delta$ is not a square in $F$, the centre is the quadratic field $F(\sqrt{\delta})$ and $\mathrm{Cl}(V,q)$ is central simple over that field, hence simple, and again has exactly one isomorphism class of irreducible module;
+- if $n$ is odd and $\delta$ is a square in $F$, the centre is $F\times F$ and $\mathrm{Cl}(V,q)\cong A\times A$ with $A$ simple; there are then exactly two isomorphism classes of irreducible module, of the same dimension over the same division algebra, exchanged by the volume element.
 
 In the simple cases the algebra is $M_k(D)$ with $k$ and the division algebra $D$ read from the eightfold table, and the irreducible module is $D^k$. Over $\mathbb{R}$ the second case is exactly $d=p-q\equiv3,7\bmod 8$, where $D=\mathbb{C}$, and the third is $d\equiv1,5\bmod 8$, where the two irreducible modules are those of the two factors; this is why the table displays a single matrix algebra in the classes $3,7$ and a product in the classes $1,5$.
 
-**Proof.** For $n$ even the volume element anticommutes with every generator and the center is $F$; for $n$ odd the volume element commutes with every generator, so the center is the subalgebra $F[\omega]\cong F[x]/(x^{2}-\delta)$, which is a field when $\delta\notin F^{2}$ and is $F\times F$ when $\delta\in F^{2}$. An algebra whose center is a field and which has no proper nonzero two-sided ideal is central simple over that field, and Artin–Wedderburn then gives the uniqueness of its simple module. In the split case the two central idempotents $\tfrac12(1\pm\omega/\sqrt{\delta})$ exhibit $\mathrm{Cl}(V,q)$ as the product of the two ideals they generate; each factor is simple by the same argument, and the grade involution, which negates $\omega$ because $n$ is odd, is an isomorphism between the two factors, so their simple modules have the same dimension.
+**Proof.** For $n$ even the volume element anticommutes with every generator and the centre is $F$; for $n$ odd the volume element commutes with every generator, so the centre is the subalgebra $F[\omega]\cong F[x]/(x^{2}-\delta)$, which is a field when $\delta\notin F^{2}$ and is $F\times F$ when $\delta\in F^{2}$. An algebra whose centre is a field and which has no proper nonzero two-sided ideal is central simple over that field, and Artin–Wedderburn then gives the uniqueness of its simple module. In the split case the two central idempotents $\tfrac12(1\pm\omega/\sqrt{\delta})$ exhibit $\mathrm{Cl}(V,q)$ as the product of the two ideals they generate; each factor is simple by the same argument, and the grade involution, which negates $\omega$ because $n$ is odd, is an isomorphism between the two factors, so their simple modules have the same dimension.
 
 **The spinor module over $\mathbb{R}$.** Over $F=\mathbb{R}$ the type $D$ is one of $\mathbb{R},\mathbb{C},\mathbb{H}$, and the real dimension of the irreducible module is $k\dim_{\mathbb{R}}D$. For the definite forms these dimensions are the classical ones of the spin representations, and they are computed from the table: for $\mathrm{Cl}_{0,n}$ with $n\equiv 0\bmod 8$ the module is real of dimension $2^{n/2}$; with $n\equiv 1\bmod 8$ it is complex of dimension $2^{(n-1)/2}$; with $n\equiv 2\bmod 8$ it is quaternionic of dimension $2^{(n-2)/2}$; and so on around the eight cases. The pattern of dimensions and types is the "eightfold way" in the sense of the different kinds of spinor, and the reality conditions that distinguish them are not covered here.
 
@@ -236,7 +236,7 @@ The even subalgebra satisfies $\mathrm{Cl}^0_{p,q}\cong\mathrm{Cl}_{p,q-1}\cong\
 | $M_k(D)$ | Matrix algebra of size $k$ over the division algebra $D$ |
 | $\mathbb{C}\mathrm{l}_n$ | Complex Clifford algebra, periodic of period two |
 | $\omega=e_1\cdots e_n$ | Volume element |
-| $\delta=\omega^{2}=(-1)^{n(n-1)/2}q(e_1)\cdots q(e_n)$ | Square of the volume element; decides whether the center is a field or $F\times F$ when $n$ is odd |
+| $\delta=\omega^{2}=(-1)^{n(n-1)/2}q(e_1)\cdots q(e_n)$ | Square of the volume element; decides whether the centre is a field or $F\times F$ when $n$ is odd |
 | $\mathrm{Cl}_{8,0}\cong\mathrm{Cl}_{0,8}\cong M_{16}(F)$ | Bott periodicity algebra |
 
 

@@ -218,15 +218,15 @@ These operations are well-defined precisely because $\mathrm{I}$ is an ideal.
 
 ## Part V: The Structure of Lie Algebras
 
-### The Center
+### The Centre
 
-The **center** of a Lie algebra $\mathrm{G}$ is the set of elements that bracket to zero with every element of $\mathrm{G}$:
+The **centre** of a Lie algebra $\mathrm{G}$ is the set of elements that bracket to zero with every element of $\mathrm{G}$:
 
 $$
 Z(\mathrm{G}) = \{z \in \mathrm{G} : [z, v] = 0 \text{ for all } v \in \mathrm{G}\}.
 $$
 
-The center is always an abelian ideal of $\mathrm{G}$.
+The centre is always an abelian ideal of $\mathrm{G}$.
 
 ### The Derived Subalgebra
 
@@ -346,7 +346,7 @@ This is the reason Lie algebras were introduced in the first place. Sophus Lie, 
 
 **Every associative algebra is a Lie algebra** when equipped with the commutator bracket. This applies in particular to the matrix algebras, the endomorphism algebras and the enveloping algebras; the Clifford algebras are the instance that belongs to Part II.
 
-**The structure theory** of Lie algebras includes subalgebras, ideals, the center, the derived subalgebra, solvable and nilpotent Lie algebras, and simple Lie algebras.
+**The structure theory** of Lie algebras includes subalgebras, ideals, the centre, the derived subalgebra, solvable and nilpotent Lie algebras, and simple Lie algebras.
 
 **Representations** of Lie algebras are homomorphisms into $\mathrm{GL}(V)$. They are the way Lie algebras act on other mathematical objects.
 

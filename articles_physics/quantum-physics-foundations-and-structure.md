@@ -210,7 +210,7 @@ $$
 B^3 = \{\mathbf{r} \in \mathbb{R}^3 : |\mathbf{r}| \leq 1\}.
 $$
 
-The center $\mathbf{r} = 0$ is the maximally mixed state; the boundary sphere is the set of pure states.
+The centre $\mathbf{r} = 0$ is the maximally mixed state; the boundary sphere is the set of pure states.
 
 The Bloch sphere provides a geometric representation of a qubit that is both intuitive and useful. Rotations of the sphere correspond to unitary operations on the qubit (up to a sign), and the distance between two points corresponds to the distinguishability of the corresponding states.
 

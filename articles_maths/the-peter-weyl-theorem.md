@@ -138,7 +138,7 @@ $$
 
 under $f \mapsto (\hat f(\pi))$, the target being the algebraic direct sum of full matrix algebras; equivalently the group von Neumann algebra $L(K) = \lambda(K)''$ is the direct sum $\bigoplus_\pi \operatorname{End}(\mathcal{H}_\pi)$, a type I von Neumann algebra.
 
-**Proof.** The convolution theorem gives the homomorphism; injectivity is the completeness of the coefficient algebra (a function whose transform vanishes is orthogonal to every matrix coefficient); the image of the center of $L^1(K)$ consists of the scalar operators, and the whole map is onto the algebraic direct sum because the matrix units $e^\pi_{ij}$ have transforms supported on $\mathcal{H}_\pi$. The von Neumann algebra statement is the weak closure of the image, namely the direct sum of the finite-dimensional factors.
+**Proof.** The convolution theorem gives the homomorphism; injectivity is the completeness of the coefficient algebra (a function whose transform vanishes is orthogonal to every matrix coefficient); the image of the centre of $L^1(K)$ consists of the scalar operators, and the whole map is onto the algebraic direct sum because the matrix units $e^\pi_{ij}$ have transforms supported on $\mathcal{H}_\pi$. The von Neumann algebra statement is the weak closure of the image, namely the direct sum of the finite-dimensional factors.
 
 ### Separation of Points and the Gelfand–Raĭkov Property
 

@@ -1,4 +1,4 @@
-# __The Center of the Biquaternion Algebra as the Classical Sector__
+# __The Centre of the Biquaternion Algebra as the Classical Sector__
 
 ## Introduction
 
@@ -33,7 +33,7 @@ $$
 $$
 The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
 
-## The Center: Definition and Computation
+## The Centre: Definition and Computation
 
 **Definition.** The centre of $\mathbb{B}$ is the set of elements that commute with every element,
 $$
@@ -85,7 +85,7 @@ $$
 $$
 and its unit is $e_0$. As a real algebra, $Z(\mathbb{B})\cong\mathbb{C}$; as a complex algebra, $Z(\mathbb{B})\cong\mathbb{C}$. It is the largest subalgebra of $\mathbb{B}$ that is commutative *and* central at once.
 
-## Five Characterizations of the Center
+## Five Characterizations of the Centre
 
 The centre can be described from five directions, and the equivalence of the descriptions is what makes it canonical rather than conventional.
 
@@ -144,7 +144,7 @@ which equals $\tilde{H}\tilde{K}$ if and only if $[\tilde{H},\tilde{K}]=0$. The 
 
 The absence of central projections is therefore a genuine algebraic limitation, and it is the structural reason that the framework's classical sector is minimal. A reader who expects the two sectors, or the two spin components, to furnish superselection labels will not find them in the centre; the centre contains only the scalars.
 
-## The Center as the Classical Sector
+## The Centre as the Classical Sector
 
 The limitations of the preceding section are structural, and they do not diminish the sense in which the centre **is** the classical sector. That sense is made precise by four properties of central elements, each of which is a classical marker.
 
@@ -203,7 +203,7 @@ because an element commuting with every projector $\tilde\Pi(\hat{n})$ for every
 
 **Relation to the quantum–classical divide.** The companion article *The Quantum–Classical Divide in the Biquaternion Framework* treats the divide dynamically and statistically. The algebraic identification supplied here is its structural backdrop: the divide is not a direct-sum decomposition of $\mathbb{B}$ into a quantum part and a classical part, because $\mathbb{B}$ is a factor and admits no such central splitting. It is instead the distinction between the canonical centre — the classical parameters — and the state- or context-dependent MASAs, which supply the classical bits. A theory written over $\mathbb{B}$ has a classical sector at every context, and it has no context-free classical sector beyond the scalars. This is the honest position, and it is the reason the framework cannot manufacture superselection labels out of its own centre.
 
-## What the Center Cannot Do
+## What the Centre Cannot Do
 
 The identification of the centre with the classical sector is exact, and its exactness includes the statement of what it excludes. Four things the centre cannot supply should be recorded, because each is a natural expectation that the algebra does not meet.
 
@@ -217,7 +217,7 @@ The identification of the centre with the classical sector is exact, and its exa
 
 **The correct summary of the limitations.** The centre is the largest subalgebra on which the algebra becomes commutative **and** which is invariant under all of the algebra's symmetries. Those two requirements together force it to be the scalars. If one relaxes the invariance requirement, one obtains the MASAs, which are large enough to carry classical bits but are context-dependent; if one relaxes the commutativity requirement, one obtains the whole algebra, which is quantum. The centre is the unique compromise that is both commutative and canonical, and its very uniqueness is what makes it small. This trade-off — canonicity against size — is the algebraic reason that a quantum theory has only a minimal context-free classical sector, and it is the structural lesson the framework's catalogue of obstructions draws from the present identification.
 
-## The Center in the Commutant Picture, and in the Equations
+## The Centre in the Commutant Picture, and in the Equations
 
 Four further roles of the centre place it inside the framework's standard machinery.
 
@@ -256,6 +256,37 @@ The tensor product multiplies the centres, and this is the algebraic origin of t
 The article proves that the centre is trivial as an operator algebra and that the framework therefore has no intrinsic superselection structure. Read together with the block structure of *Relations Between Subspaces*, the statement sharpens. The algebra carries **two $\mathbb{Z}_2$ decompositions** — the half split $\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ and the sector split $\mathbb{M}_-\oplus\mathbb{M}_+$ — and multiplication by the central imaginary $i$ **exchanges both of them**, so the two structures cannot be aligned: no choice of one real slice makes both splits simultaneously the even and odd parts.
 
 The reading is that the framework carries "two independent superselections" in the sense of two independent $\mathbb{Z}_2$ decompositions, and the caution is exact. Neither is a superselection in the technical sense, since a superselection is a central projection and the centre has none; and the sector split is not a grading either, the obstruction $O15$ of *What the Biquaternion Algebra Cannot Do* recording that the two sectors do not form an algebra grading. The two splits are symmetries of the block decomposition, not classical labels, and the reading is offered with that boundary. The owners are *Relations Between Subspaces* for the block structure and the failure of a grading, and this article for the triviality of the centre.
+
+## Physical Readings
+
+A reader who expects a superselection rule between the material and the informational sectors finds here the
+reason there is none and the weaker rule that is present.
+
+- **Neither $\mathbb{Z}_2$ decomposes the theory.** The half split $\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ and
+  the sector split $\mathbb{M}_-\oplus\mathbb{M}_+$ both have the shape of a
+  superselection rule and neither is one: a superselection sector is a central projection of the observable
+  algebra, and the only central projections here are $0$ and $e_0$. The reading is a **no-go with a shape**:
+  the framework's two splits are **gradings of the vector space** and are mixed by multiplication, so they
+  are not partitions of the theory. Boundary: the owners are this article's *Central Simple Structure and the
+  Absence of Superselection* and the obstruction $O15$ of *What the Biquaternion Algebra Cannot Do*.
+- **The spin $\mathbb{Z}_2$ is gauged, not superselecting.** The double cover $\{\pm e_0\}$ acts as
+  $\pm\mathrm{id}$ according to the module, and the two signs are **identified** by the covering rather than
+  separating the theory, so it is the opposite of a superselection: a superselection rule says two signs are
+  unobservably distinct, while the covering says they are two descriptions of one state. Owner: *Biquaternion
+  Rotations and Lorentz Transformations*.
+- **What selects is the real structure, not the algebra.** The material sector is the fixed space of the real
+  structure $\flat$, and a Hermitian observable is a real-form-equivariant element, so **no Hermitian
+  observable carries a material element into an informational one**. That is the physical superselection the
+  framework has, and it is **weaker** than the algebraic one: it is a statement about the real form of the
+  observable algebra and not about a central projection, and it realises the reading "the split is a
+  superselection structure of a real form so that no observable operation crosses it" of *Cross-Sector
+  Coupling in the Biquaternion Framework: a Catalogue of the Maps Between the Sectors*.
+- **The antilinear operations are the only natural crossers.** The operations that can relate the two sectors
+  without being observables are the antilinear ones — the real structure $\flat$ and the conjugate-linear
+  operations of *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* and *Charge
+  Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form* —
+  precisely the operations the corpus denies to be observables. The reading is that the material–informational
+  relation is carried by the discrete, antilinear operations and not by the observables.
 
 ## Summary
 

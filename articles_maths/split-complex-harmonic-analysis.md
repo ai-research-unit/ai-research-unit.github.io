@@ -253,7 +253,7 @@ $$
 Mf(A) = \sup_{r > 0} \frac{1}{|B(A, r)|} \int_{B(A, r)} \|f(B)\|_E \, dB,
 $$
 
-where $B(A, r)$ is the Euclidean ball of radius $r$ centered at $A$, and $|B(A, r)|$ is its area.
+where $B(A, r)$ is the Euclidean ball of radius $r$ centred at $A$, and $|B(A, r)|$ is its area.
 
 ### The Maximal Inequality
 

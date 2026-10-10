@@ -334,7 +334,7 @@ The boost is therefore reproduced by $\tilde\Lambda^{-1}\tilde F\tilde\Lambda$, 
 
 1. **The general Lorentz law of $\tilde F$.** Determine the biquaternion map that reproduces the standard transformation of $\mathbf E$ and $\mathbf B$ for a general rotor (a boost composed with a rotation). Show whether it can be written as $\tilde F\mapsto T\!\left(\tilde\Lambda\,T^{-1}(\tilde F)\,\tilde\Lambda^{*}\right)$ for a fixed invertible linear map $T$ on $\mathrm{Vect}(\mathbb B)$, and identify $T$ if it exists. The exercise above shows only that $T$ is not the identity and that no single adjoint ordering works with the parents' rotors.
 
-2. **Duality and the gauge $U(1)$.** The gauge principle article identifies the center of $\mathbb B$ as $\mathbb C_{\mathbb B}$ and its unitary part as the abelian gauge group of the biquaternionic Maxwell field. The duality rotation here is multiplication by an element $e^{-i\theta}$ of that same $U(1)$. Is the duality symmetry the same $U(1)$, a different one, or the same group acting on a different representation? The parent does not ask this; the answer is not obvious, because duality acts on the field strength and the gauge phase on the potential.
+2. **Duality and the gauge $U(1)$.** The gauge principle article identifies the centre of $\mathbb B$ as $\mathbb C_{\mathbb B}$ and its unitary part as the abelian gauge group of the biquaternionic Maxwell field. The duality rotation here is multiplication by an element $e^{-i\theta}$ of that same $U(1)$. Is the duality symmetry the same $U(1)$, a different one, or the same group acting on a different representation? The parent does not ask this; the answer is not obvious, because duality acts on the field strength and the gauge phase on the potential.
 
 3. **Duality and the energy–momentum tensor.** Using the construction of the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, show that $T^{\mu\nu}$ is invariant under duality, and explain why this is consistent with the invariance of $W$ and $\mathbf S$ but does not follow from it component by component.
 
@@ -366,7 +366,7 @@ Two defects in the parent are recorded. First, the parent's equation $\bar{\math
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$, $e_je_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex-scalar subspace (center) |
+| $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex-scalar subspace (centre) |
 | ${}^{\natural}, \bar{\cdot}, {}^{*} = ({}^{\natural})^{\,*}$ | Quaternion, complex, and Hermitian conjugations |
 | $\tilde\nabla, \tilde\nabla^{\natural}, \Box = \tilde\nabla\tilde\nabla^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\tilde\Lambda \in \mathbb{B}$, $\tilde\Lambda\tilde\Lambda^{\natural} = e_0$ | Lorentz rotor (unit-norm biquaternion) |

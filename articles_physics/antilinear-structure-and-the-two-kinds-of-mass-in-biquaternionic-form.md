@@ -17,7 +17,7 @@ The article is organised as follows. A section fixes what antilinear means in th
 
 ## What Antilinear Means Here
 
-The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and scalar imaginary $i$ generating the center together with $e_0$. An element is a sum with complex coefficients,
+The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and scalar imaginary $i$ generating the centre together with $e_0$. An element is a sum with complex coefficients,
 
 $$
 \tilde{Q} = (a_0 + i b_0)e_0 + (a_1 + i b_1)e_1 + (a_2 + i b_2)e_2 + (a_3 + i b_3)e_3 , \qquad a_\mu, b_\mu \in \mathbb{R},
@@ -27,7 +27,7 @@ so $\mathbb{B}$ has real dimension $8$ and complex dimension $4$.
 
 Two involutions generate the rest.
 
-**Quaternion conjugation** reverses the vector part and fixes the center:
+**Quaternion conjugation** reverses the vector part and fixes the centre:
 
 $$
 \tilde{Q}^{\natural} = (a_0 + ib_0)e_0 - (a_1 + ib_1)e_1 - (a_2 + ib_2)e_2 - (a_3 + ib_3)e_3 .
@@ -54,12 +54,12 @@ Both are anti-automorphisms; the second carries a sign, $(\tilde{A}\tilde{B})^\f
 
 | involution | action on generators | $\mathbb{C}$-linearity | character | fixed space |
 |---|---|---|---|---|
-| $\tilde{Q}^{\natural}$ | $e_k \mapsto -e_k$, $i \mapsto i$ | linear | anti-automorphism | $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ (center), real dim $2$ |
+| $\tilde{Q}^{\natural}$ | $e_k \mapsto -e_k$, $i \mapsto i$ | linear | anti-automorphism | $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ (centre), real dim $2$ |
 | $\bar{\tilde{Q}}$ | $e_k \mapsto e_k$, $i \mapsto -i$ | antilinear | automorphism | $\mathbb{H}_{\mathbb{B}}$, real dim $4$ |
 | $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | $e_k \mapsto -e_k$, $i \mapsto -i$ | antilinear | anti-automorphism | $\mathbb{M}_+$, real dim $4$ |
 | $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$ | $e_k \mapsto -e_k$, $i \mapsto -i$, with a sign | antilinear | anti-automorphism with twist | $\mathbb{M}_-$, real dim $4$ |
 
-Four involutions, four distinct fixed spaces, of real dimensions $2, 4, 4, 4$. The two sectors of the framework are the last two rows, and they are the fixed spaces of *antilinear* maps. The real-quaternion sector $\mathbb{H}_{\mathbb{B}}$ is also antilinear, and the center is the fixed space of the one linear involution. Nothing in the table is a sign variant of anything else: each row has its own fixed space, and the fixed spaces are what the framework builds on.
+Four involutions, four distinct fixed spaces, of real dimensions $2, 4, 4, 4$. The two sectors of the framework are the last two rows, and they are the fixed spaces of *antilinear* maps. The real-quaternion sector $\mathbb{H}_{\mathbb{B}}$ is also antilinear, and the centre is the fixed space of the one linear involution. Nothing in the table is a sign variant of anything else: each row has its own fixed space, and the fixed spaces are what the framework builds on.
 
 On the two sectors $\flat$ acts by a sign, and this is the fact the rest of the article uses:
 
@@ -211,7 +211,7 @@ $$
 
 a double cover of $SO(1,3)\times U(1)$: the spin group extended by a central circle. It is **not** the complexification of $\mathrm{Spin}(1,3)$ — that is the larger $\mathrm{Spin}(1,3)_{\mathbb{C}}$, of real dimension twelve — and the looser name is sometimes used for it; the definition above is the one used here. $W_3$ is the integral class obstructing its existence, and the group is available exactly when $w_2$ is the mod $2$ reduction of an integral class. The Clifford action of $\mathrm{Cl}_{1,3}$ on the Dirac module is projective, realising a Lorentz transformation $\Lambda$ by $\pm S(\Lambda)$; that is why the acting group is the double cover $\mathrm{Spin}(1,3)$, and $\mathrm{Spin}^c$ is the central extension that adds the circle. The extra factor is **central** in $\mathrm{Spin}^c$, and it acts on the Dirac module by the same scalar on both chiral halves.
 
-**The framework's central $U(1)$ is that factor.** The gauge principle article localizes the unitary part of the center — the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, of real dimension $2$ — whose unitary elements are the phases $\lambda = e^{i\theta}e_0$, and the minimal-coupling article writes the covariant derivative $D = \tilde{\nabla} + (iq/\hbar)\tilde{A}$ for exactly that phase. The phase is central in $\mathbb{B}$, and $\gamma_5$ — which anticommutes with every generator, and so commutes with every even element — is central in the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$; the two therefore commute, and the phase acts with the same phase on the two chiral halves. The framework's $U(1)$ is **vector-like**, and this is structural rather than an artifact of the representation. It is the electromagnetic $U(1)$.
+**The framework's central $U(1)$ is that factor.** The gauge principle article localizes the unitary part of the centre — the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, of real dimension $2$ — whose unitary elements are the phases $\lambda = e^{i\theta}e_0$, and the minimal-coupling article writes the covariant derivative $D = \tilde{\nabla} + (iq/\hbar)\tilde{A}$ for exactly that phase. The phase is central in $\mathbb{B}$, and $\gamma_5$ — which anticommutes with every generator, and so commutes with every even element — is central in the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$; the two therefore commute, and the phase acts with the same phase on the two chiral halves. The framework's $U(1)$ is **vector-like**, and this is structural rather than an artifact of the representation. It is the electromagnetic $U(1)$.
 
 **Which spinors can carry it.** A spinor can be rotated by the central phase and remain a spinor of its own type only when its defining condition survives the rotation. The Dirac module imposes no condition, and $\psi\mapsto e^{i\alpha}\psi$ is a symmetry of the free equation, so the Dirac spinor — with linearly independent left and right components — carries the $U(1)$ and is charged. The Majorana spinor is the fixed-point set of the module's antilinear real structure, $\psi = \mathcal{C}\bar{\psi}^{T}$, and $\mathcal{C}$ is conjugate-linear, so
 
@@ -348,7 +348,7 @@ In every one of these uses the coupling pairs the field with its conjugate, and 
 | $\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^\flat = \tilde{Q}\}$ | Anti-Hermitian (material) sector, real dim $4$ |
 | $\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}$ | Hermitian (informational) sector, real dim $4$ |
 | $\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\}$ | Real-quaternion sector, real dim $4$ |
-| $\mathbb{C}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^{\natural} = \tilde{Q}\}$ | Center, real dim $2$ |
+| $\mathbb{C}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^{\natural} = \tilde{Q}\}$ | Centre, real dim $2$ |
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its conjugate; $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | The Dirac mass: linear, chirality-off-diagonal |
 | $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ | The retired equation; spacelike dispersion, not a mass term |

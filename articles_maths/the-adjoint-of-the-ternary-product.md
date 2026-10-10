@@ -148,7 +148,7 @@ The diagonal $\Theta_{X,X}(Z)=XX^{*}Z$ is self-adjoint for every $X$, and its pa
 
 ### The Biquaternion Algebra
 
-Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the quaternionic conjugation of the basis with conjugated complex coefficients, so that $\varsigma$ is the conjugation and $*$ is an anti-automorphism with $1^{*}=1$; the algebra is the $2\times2$ complex matrix algebra by *Biquaternion 2×2 Matrix Element Representation*, and the statements of the previous case transfer under that isomorphism. The ternary operator of a pair has the operator of the swapped pair as its adjoint, the diagonal is self-adjoint, and the Hermitian criterion reads $x\star y=y\star x$ in the biquaternion algebra, the same condition as in $M_2(\mathbb{C})$ because the derived product and the involution are carried across by the isomorphism.
+Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the quaternionic conjugation of the basis with conjugated complex coefficients, so that $\varsigma$ is the conjugation and $*$ is an anti-automorphism with $1^{*}=1$; the algebra is the $2\times2$ complex matrix algebra by *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, and the statements of the previous case transfer under that isomorphism. The ternary operator of a pair has the operator of the swapped pair as its adjoint, the diagonal is self-adjoint, and the Hermitian criterion reads $x\star y=y\star x$ in the biquaternion algebra, the same condition as in $M_2(\mathbb{C})$ because the derived product and the involution are carried across by the isomorphism.
 
 ## Summary
 

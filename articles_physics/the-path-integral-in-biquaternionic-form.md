@@ -126,7 +126,7 @@ Because each phase factor is central, it commutes with every element of $\mathbb
 
 ### The sector chain
 
-The three facts above arrange themselves into a chain that is worth stating separately, and labelling for what it is. The exponent of the phase is an element of the **material sector** $\mathbb{M}_-$; the phase itself is an element of the **center** $\mathbb{C}_{\mathbb{B}}$; the amplitude it produces is central; and the state built from the amplitude, $\tilde{\rho}=\psi\psi^\dagger$, is an element of the **informational sector** $\mathbb{M}_+$. The path integral's phase is thus the point at which a quantity defined along a material-sector trajectory (the action, $\int L\,dt$) is converted, through the central complex structure, into an amplitude that yields an informational-sector state.
+The three facts above arrange themselves into a chain that is worth stating separately, and labelling for what it is. The exponent of the phase is an element of the **material sector** $\mathbb{M}_-$; the phase itself is an element of the **centre** $\mathbb{C}_{\mathbb{B}}$; the amplitude it produces is central; and the state built from the amplitude, $\tilde{\rho}=\psi\psi^\dagger$, is an element of the **informational sector** $\mathbb{M}_+$. The path integral's phase is thus the point at which a quantity defined along a material-sector trajectory (the action, $\int L\,dt$) is converted, through the central complex structure, into an amplitude that yields an informational-sector state.
 
 That chain is a structural reading of the algebra, not a derivation of anything. The algebra does not say that the action *must* be a real scalar; it says that if the action is a real scalar, its phase is central and its exponent lies in $\mathbb{M}_-$.
 
@@ -144,9 +144,9 @@ so the norm is not preserved. A path integral built on this phase would not repr
 $$e^{e_3\theta}\;\longmapsto\;\cos\theta\,I_2-i\sin\theta\,\sigma_3=\operatorname{diag}\!\big(e^{-i\theta},\,e^{+i\theta}\big),$$
 so it multiplies the two components by opposite phases. It is a **relative** phase, that is, a spin rotation, not the single global phase a path is supposed to contribute. A genuinely global phase must be central.
 
-**The choice is extra input.** The central imaginary is supplied by the algebra: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains $\mathbb{C}$ by construction, and within the center the roots of $-1$ are exactly $\pm i$. A real non-central root is a point of the Bloch sphere, and using one fixes a preferred spin axis that the algebra does not supply. The same observation is made by Adler's quaternionic quantum physics, where a complex structure must be chosen as additional input.
+**The choice is extra input.** The central imaginary is supplied by the algebra: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains $\mathbb{C}$ by construction, and within the centre the roots of $-1$ are exactly $\pm i$. A real non-central root is a point of the Bloch sphere, and using one fixes a preferred spin axis that the algebra does not supply. The same observation is made by Adler's quaternionic quantum physics, where a complex structure must be chosen as additional input.
 
-**An honest qualification.** A *fixed* non-central root $J$ does not destroy interference: two paths with phases $e^{J S_1/\hbar}$ and $e^{J S_2/\hbar}$ still combine to $2\cos(\Delta S/2\hbar)$ times a unit element of the plane $\operatorname{span}\{e_0,J\}$. What fails is not interference but **canonicity and uniformity**: the phase lives in a chosen complex plane rather than the center, the amplitude is a quaternion rather than a complex number, and the plane is an extra input. The Schrödinger article reaches the same verdict for the same reason, and this article inherits it rather than re-deriving it.
+**An honest qualification.** A *fixed* non-central root $J$ does not destroy interference: two paths with phases $e^{J S_1/\hbar}$ and $e^{J S_2/\hbar}$ still combine to $2\cos(\Delta S/2\hbar)$ times a unit element of the plane $\operatorname{span}\{e_0,J\}$. What fails is not interference but **canonicity and uniformity**: the phase lives in a chosen complex plane rather than the centre, the amplitude is a quaternion rather than a complex number, and the plane is an extra input. The Schrödinger article reaches the same verdict for the same reason, and this article inherits it rather than re-deriving it.
 
 ## The Propagator and Its Composition
 
@@ -167,7 +167,7 @@ which is the stationary-phase result: the phase is the classical action $S_{\mat
 The kernel is thus of the form stated above, $K_0=\mathcal{K}_0\,e_0$ with $\mathcal{K}_0\in\mathbb{C}$, and its squared modulus is the classical spreading density,
 $$|K_0|^2=\frac{m}{2\pi\hbar T}.$$
 
-**The measure factor.** The appearance of $\sqrt{i}$ in the prefactor is worth a remark. The square root of the central $i$ is central — it is $\pm e^{i\pi/4}$, one of the two roots of $i$ in the complex line — so the measure factor does not leave the center. It is two-valued, and the composition property below chooses its branch; the algebra itself does not. This is one instance of the general fact that the algebra supplies the phase and not the normalization.
+**The measure factor.** The appearance of $\sqrt{i}$ in the prefactor is worth a remark. The square root of the central $i$ is central — it is $\pm e^{i\pi/4}$, one of the two roots of $i$ in the complex line — so the measure factor does not leave the centre. It is two-valued, and the composition property below chooses its branch; the algebra itself does not. This is one instance of the general fact that the algebra supplies the phase and not the normalization.
 
 **Composition.** The semigroup property of $K_0$ is a Gaussian (Fresnel) convolution. With $A=im/(2\hbar T_2)$, $B=im/(2\hbar T_1)$, the standard Fresnel integral
 
@@ -257,7 +257,7 @@ $$
 
 with no non-central element anywhere, exactly as for the full kernel. Under the Wick rotation of the previous section, $\sqrt{2\pi i\hbar}$ becomes $\sqrt{2\pi\hbar}$ and the prefactor becomes real and positive, while the unit-circle phase becomes the decaying weight.
 
-**What this adds, and where the gap remains.** The algebra supplies the square root $\sqrt{i}$ inside the center, so the factor $1/\sqrt{2\pi i\hbar}$ — and with it the $\pm\pi/2$ phases of the Maslov index — is an operation performed on the central element rather than on a quantity whose imaginary unit has to be chosen. It also makes the reality of the prefactor structural. It does **not** supply the determinant: the second variation is the Hessian of an ordinary real action, and the fluctuations are real displacements in the material sector's configuration space. The fluctuation operator is therefore the same kind of external object as the measure, and the assessment of the next section applies to it unchanged.
+**What this adds, and where the gap remains.** The algebra supplies the square root $\sqrt{i}$ inside the centre, so the factor $1/\sqrt{2\pi i\hbar}$ — and with it the $\pm\pi/2$ phases of the Maslov index — is an operation performed on the central element rather than on a quantity whose imaginary unit has to be chosen. It also makes the reality of the prefactor structural. It does **not** supply the determinant: the second variation is the Hessian of an ordinary real action, and the fluctuations are real displacements in the material sector's configuration space. The fluctuation operator is therefore the same kind of external object as the measure, and the assessment of the next section applies to it unchanged.
 
 ## The Canonical Commutation Relations
 
@@ -310,7 +310,7 @@ one factor of the square root of the metric determinant per spatial slice. This 
 - A **location for the phase exponent**. The exponent $iS/\hbar$ lies in the material sector $\mathbb{M}_-$, along the same $ict$ direction as the propagator's $i\epsilon$ and the thermal analyticity strip — the same direction the Wick rotation turns real.
 - A **name for the phase generator**. The generator $ie_0$ is the central element that exchanges the two sectors, $i\mathbb{M}_\pm=\mathbb{M}_\mp$.
 - A **bridge**. The Wick rotation is exhibited as the transfer $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$, which is exactly the operation that converts the oscillatory phase into a decaying weight.
-- A **central square root**. The semiclassical prefactor contains $\sqrt{2\pi i\hbar}$; the square root is taken inside the center, so the $\pm\tfrac{\pi}{2}$ phases of the Maslov index are operations on the central $i$ rather than on a quantity whose imaginary unit must first be chosen, and the reality of the prefactor after the Wick rotation is structural.
+- A **central square root**. The semiclassical prefactor contains $\sqrt{2\pi i\hbar}$; the square root is taken inside the centre, so the $\pm\tfrac{\pi}{2}$ phases of the Maslov index are operations on the central $i$ rather than on a quantity whose imaginary unit must first be chosen, and the reality of the prefactor after the Wick rotation is structural.
 
 **What remains open in the framework.**
 
@@ -355,7 +355,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Scalar imaginary, central, $i^2=-e_0$ |
-| $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_\mathbb{R}\{e_0,ie_0\}$ | Center of $\mathbb{B}$; home of the path-integral phase |
+| $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_\mathbb{R}\{e_0,ie_0\}$ | Centre of $\mathbb{B}$; home of the path-integral phase |
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector; home of the phase exponent $iS/\hbar$ |
 | $\mathbb{M}_+$ | Hermitian (informational) sector; home of the state $\tilde\rho=\psi\psi^\dagger$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace; image of the Wick rotation |

@@ -6,13 +6,13 @@ The Standard Model's fermions come in **three generations** (families), each an 
 
 This article asks what the biquaternion framework says about the number. The answer is short and is stated at the outset.
 
-- **Established.** The framework carries a generation index as a **multiplicity factor**: a spectrum of $N_g$ generations is a module $\Delta\otimes\mathbb{C}^{N_g}$ (or a direct sum of $N_g$ copies of $\Delta$), on which the algebra acts as $\mathbb{B}$ on the module factor and trivially on the multiplicity factor. The algebra's invariants — its dimension, its center, its trace, its sectors — are independent of $N_g$, and so are the anomaly cancellation conditions.
+- **Established.** The framework carries a generation index as a **multiplicity factor**: a spectrum of $N_g$ generations is a module $\Delta\otimes\mathbb{C}^{N_g}$ (or a direct sum of $N_g$ copies of $\Delta$), on which the algebra acts as $\mathbb{B}$ on the module factor and trivially on the multiplicity factor. The algebra's invariants — its dimension, its centre, its trace, its sectors — are independent of $N_g$, and so are the anomaly cancellation conditions.
 - **Not established.** The algebra does not fix $N_g$. Its representation theory has no room for a preferred integer; the number appears only as the dimension of a multiplicity space on which the algebra acts trivially, and nothing in $\mathbb{B}$, in its modules, or in its real structure selects $3$. The framework accommodates the three generations; it does not explain them.
 - **A false lead, addressed.** The algebra has three imaginary units $e_1,e_2,e_3$, and it is tempting to identify them with the three generations. The article explains why that identification is not available: the $e_k$ are the spatial directions (and the $\mathrm{SU}(2)$ generators), they transform under the Lorentz and gauge groups, and a generation label must be inert under them. The three units and the three generations are different threes.
 
 The article is organised as follows. A section recalls how the Standard Model counts generations. A section shows how the framework carries a generation index. A section exhibits the invariants that are $N_g$-independent and concludes that the algebra does not fix the number. A section collects the constraints that do touch $N_g$. A section disposes of the "three imaginary units" identification. A closing section separates what is supplied, transcribed, and missing.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_1e_2=e_3$ and cyclic, and central scalar imaginary $i$, $i^2=-1$; as an algebra $\mathbb{B}\cong M_2(\mathbb{C})$ and $\dim_{\mathbb{R}}\mathbb{B}=8$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), each of real dimension four; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The irrep of $\mathbb{B}$ is two-dimensional complex, denoted $S=\mathbb{C}^2$; the Dirac module is $\Delta=S\oplus\bar{S}$ with $S=(\tfrac12,0)$ and $\bar{S}=(0,\tfrac12)$, and $\dim_{\mathbb{C}}\Delta=4$. The trace is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. A **generation index** $a=1,\dots,N_g$ is carried by a multiplicity space $\mathcal{F}=\mathbb{C}^{N_g}$, and the $N_g$-generation fermion space is $\Delta\otimes\mathcal{F}$. The flavour matrices of the companion article on the CKM matrix are operators on $\mathcal{F}$. Standard-model notation — the $Z$ width, the gauge quantum numbers, the CKM parameters — is used where standard physics is named, and is not framework structure.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_1e_2=e_3$ and cyclic, and central scalar imaginary $i$, $i^2=-1$; as an algebra $\mathbb{B}\cong M_2(\mathbb{C})$ and $\dim_{\mathbb{R}}\mathbb{B}=8$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), each of real dimension four; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The irrep of $\mathbb{B}$ is two-dimensional complex, denoted $S=\mathbb{C}^2$; the Dirac module is $\Delta=S\oplus\bar{S}$ with $S=(\tfrac12,0)$ and $\bar{S}=(0,\tfrac12)$, and $\dim_{\mathbb{C}}\Delta=4$. The trace is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. A **generation index** $a=1,\dots,N_g$ is carried by a multiplicity space $\mathcal{F}=\mathbb{C}^{N_g}$, and the $N_g$-generation fermion space is $\Delta\otimes\mathcal{F}$. The flavour matrices of the companion article on the CKM matrix are operators on $\mathcal{F}$. Standard-model notation — the $Z$ width, the gauge quantum numbers, the CKM parameters — is used where standard physics is named, and is not framework structure.
 
 The framework results used here are those of the companion articles:
 
@@ -94,20 +94,20 @@ Every entry is fixed by the algebra alone, and none contains $N_g$. A framework 
 
 ## The Tensor Structure and the Trace
 
-**The full algebra and its center.** With $N_g$ generations the algebra acting on $\mathcal{V}=\Delta\otimes\mathcal{F}$ is
+**The full algebra and its centre.** With $N_g$ generations the algebra acting on $\mathcal{V}=\Delta\otimes\mathcal{F}$ is
 
 $$
 \mathbb{B}\otimes M_{N_g}(\mathbb{C}) \;\cong\; M_2(\mathbb{C})\otimes M_{N_g}(\mathbb{C})
 \;\cong\; M_{2N_g}(\mathbb{C}),
 $$
 
-and its center is the tensor product of the centers,
+and its centre is the tensor product of the centres,
 
 $$
 Z\big(\mathbb{B}\otimes M_{N_g}(\mathbb{C})\big) = \mathbb{C}_{\mathbb{B}}\otimes I_{N_g} \;\cong\; \mathbb{C} .
 $$
 
-A single copy of the center therefore survives: the algebra's central phase acts on every generation in the same way, and there is no central phase that distinguishes one generation from another. A generation-dependent phase would have to live in $I_\Delta\otimes M_{N_g}(\mathbb{C})$, i.e. in a broken flavour symmetry, not in the center. This is the algebraic statement of the neutrality of the framework's central structure with respect to generations, and it is the reason the companion article on the CKM matrix must put the CP-violating phase in the flavour factor rather than in the center.
+A single copy of the centre therefore survives: the algebra's central phase acts on every generation in the same way, and there is no central phase that distinguishes one generation from another. A generation-dependent phase would have to live in $I_\Delta\otimes M_{N_g}(\mathbb{C})$, i.e. in a broken flavour symmetry, not in the centre. This is the algebraic statement of the neutrality of the framework's central structure with respect to generations, and it is the reason the companion article on the CKM matrix must put the CP-violating phase in the flavour factor rather than in the centre.
 
 **The trace.** The framework's trace formula applies to the enlarged space by factorisation. For $\tilde{P}\otimes M$ and $\tilde{H}\otimes N$,
 
@@ -189,7 +189,7 @@ and the number of phases vanishes for $N_g=1$ and $N_g=2$ and is one for $N_g=3$
 
 **A family symmetry would be discrete or continuous.** If the generations are related by symmetry, that symmetry is an operator on the multiplicity factor. Continuous flavour symmetries are constrained by the observed mixing (the smallest mixing angles are not zero, so any continuous family symmetry is broken and its gaugeable versions are few), and the surviving candidates are usually **discrete**: a group $G_f$ acting on the three-dimensional flavour space $\mathbb{C}^3$, with $A_4$, $S_4$, $T'$, and $\Delta(27)$ the most studied. The observed leptonic mixing, which is close to the tri-bimaximal pattern, is the usual motivation.
 
-**What the framework can say about a discrete family group.** A discrete group acting on $\mathcal{F}=\mathbb{C}^{N_g}$ is a subgroup of $U(N_g)$, and it is not part of the framework's algebra. The framework's own discrete structures — the sign choices in the real structure, the central $i$, the conjugation $\flat$ — act on the module factor or on the center, not on the multiplicity factor; none of them is a family symmetry, and none of them has an action that permutes generation labels. A discrete family group can therefore be **imposed** on the framework as an additional structure on $\mathcal{F}$, exactly as it is imposed on the Standard Model, but it is not derived from $\mathbb{B}$. In particular, the existence of a family group with a three-dimensional representation is a statement about the group, not about the algebra, and it does not derive $N_g$.
+**What the framework can say about a discrete family group.** A discrete group acting on $\mathcal{F}=\mathbb{C}^{N_g}$ is a subgroup of $U(N_g)$, and it is not part of the framework's algebra. The framework's own discrete structures — the sign choices in the real structure, the central $i$, the conjugation $\flat$ — act on the module factor or on the centre, not on the multiplicity factor; none of them is a family symmetry, and none of them has an action that permutes generation labels. A discrete family group can therefore be **imposed** on the framework as an additional structure on $\mathcal{F}$, exactly as it is imposed on the Standard Model, but it is not derived from $\mathbb{B}$. In particular, the existence of a family group with a three-dimensional representation is a statement about the group, not about the algebra, and it does not derive $N_g$.
 
 **The near-degenerate patterns.** The observed pattern of leptonic mixing — two large angles and one small — is sometimes read as evidence for a discrete family symmetry with a three-dimensional irrep, and the group-theoretic fact that the smallest faithful irrep of many such groups has dimension three is offered as a reason for three generations. The reading is a hypothesis, and it presupposes the number it would explain: a three-dimensional irrep exists because the flavour space was taken to be three-dimensional. The framework can host such a hypothesis; it cannot confirm it, and the article records it as an open, framework-external possibility.
 
@@ -254,7 +254,7 @@ is the left-right symmetric gauge group, with the two weak factors sitting insid
 
 2. **A fifth force or a flavour symmetry.** If the three generations are related by a symmetry, the symmetry acts on $\mathcal{F}$ and the framework must accommodate it as an algebra acting on the multiplicity factor. Whether such a flavour algebra can be built from the framework's objects, and whether it is broken by the mass matrices, is not settled.
 
-3. **The role of the center.** The center $\mathbb{C}_{\mathbb{B}}$ acts as a single central phase on every generation; a flavour-dependent phase would require an operator outside the center, i.e. a broken flavour symmetry. Whether the framework's center can be used to constrain the flavour structure at all is a question for the companion article on the CKM matrix.
+3. **The role of the centre.** The centre $\mathbb{C}_{\mathbb{B}}$ acts as a single central phase on every generation; a flavour-dependent phase would require an operator outside the centre, i.e. a broken flavour symmetry. Whether the framework's centre can be used to constrain the flavour structure at all is a question for the companion article on the CKM matrix.
 
 4. **Why three, if three is empirical.** If $N_g$ is a multiplicity with no algebraic origin, then the value three is either a coincidence of the observed world or a consequence of physics outside the framework. The framework takes the latter position and states the negative result.
 
@@ -271,7 +271,7 @@ The constraints that do touch the number are inherited from the Standard Model: 
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$, $\dim_{\mathbb{R}}=8$ |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ cyclic |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors, each $\dim_{\mathbb{R}}=4$ |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Center of the algebra |
+| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Centre of the algebra |
 | $S=\mathbb{C}^2=(\tfrac12,0)$ | The algebra's irrep; left-handed Weyl module |
 | $\Delta=S\oplus\bar{S}$ | Dirac module, $\dim_{\mathbb{C}}=4$ |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) space |

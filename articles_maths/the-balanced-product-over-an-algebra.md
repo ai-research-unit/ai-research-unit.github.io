@@ -7,7 +7,7 @@ The tensor product of modules over a commutative ring is built from bilinear map
 
 The conventions are those of *Modules over an Algebra*: $R$ is a commutative ring with identity, $A$ is a unital associative $R$-algebra, and ${}_A M_B$ denotes an $(A,B)$-bimodule. The balanced product is written $M\otimes_A N$ with $M$ a right $A$-module and $N$ a left $A$-module, so that the ring symbol appears on the side common to the two factors. When $A=R$ is commutative this reduces to the ordinary tensor product of *Modules* §13 and *Vector Spaces*, and the reader may consult those articles for the commutative theory.
 
-Two points of substance are developed here. The first is that the balanced relation $ma\otimes n=m\otimes an$ is precisely what survives of scalar movement, and that the second of the two candidate ways of letting $A$ act on the balanced product of two bimodules — through the left action on the second factor — exists exactly on the center $Z(A)$, where it agrees with the action through the first factor whenever the bimodules have matching left and right central actions. This is the sense in which the balanced product is central rather than merely linear. The second is that the base ring $R$, being central in $A$, always supplies $M\otimes_A N$ with an $R$-module structure, so the balanced product is never less than linear over $R$ even when it is not an $A$-module.
+Two points of substance are developed here. The first is that the balanced relation $ma\otimes n=m\otimes an$ is precisely what survives of scalar movement, and that the second of the two candidate ways of letting $A$ act on the balanced product of two bimodules — through the left action on the second factor — exists exactly on the centre $Z(A)$, where it agrees with the action through the first factor whenever the bimodules have matching left and right central actions. This is the sense in which the balanced product is central rather than merely linear. The second is that the base ring $R$, being central in $A$, always supplies $M\otimes_A N$ with an $R$-module structure, so the balanced product is never less than linear over $R$ even when it is not an $A$-module.
 
 ## Balanced Maps
 
@@ -171,9 +171,9 @@ $$
     \lambda_2(a)(m\otimes n)=m\otimes an
 $$
 
-    defines a group endomorphism of $M\otimes_A N$ if and only if $a \in Z(A)$; restricted to the center it makes $M\otimes_A N$ a $Z(A)$-module.
+    defines a group endomorphism of $M\otimes_A N$ if and only if $a \in Z(A)$; restricted to the centre it makes $M\otimes_A N$ a $Z(A)$-module.
 
-3. Let $a \in Z(A)$. The actions $\lambda_1(a)$ and $\lambda_2(a)$ agree whenever $am=ma$ for all $m \in M$ and $an=na$ for all $n \in N$, that is whenever $a$ acts on $M$ and on $N$ from the left and from the right in the same way; both hold when $M$ and $N$ are the regular bimodules ${}_A A_A$, so the two actions then agree on the whole of $Z(A)$, while for a general bimodule the agreement may fail. The elements through which the second factor may act form exactly the center $Z(A)$, and no larger subalgebra of $A$ acts through that factor.
+3. Let $a \in Z(A)$. The actions $\lambda_1(a)$ and $\lambda_2(a)$ agree whenever $am=ma$ for all $m \in M$ and $an=na$ for all $n \in N$, that is whenever $a$ acts on $M$ and on $N$ from the left and from the right in the same way; both hold when $M$ and $N$ are the regular bimodules ${}_A A_A$, so the two actions then agree on the whole of $Z(A)$, while for a general bimodule the agreement may fail. The elements through which the second factor may act form exactly the centre $Z(A)$, and no larger subalgebra of $A$ acts through that factor.
 
 *Proof.* (1) The map $M\times N\to M\otimes_A N$, $(m,n)\mapsto am\otimes n$, is additive and balanced, since
 
@@ -189,7 +189,7 @@ $$
 (ma')\otimes an=m\otimes a(a'n)
 $$
 
-agrees with the balanced reduction of the left-hand side, which is $m\otimes a'(an)=m\otimes(a'a)n$. Agreement for all $m,n,a'$ requires $aa'=a'a$ for all $a'$, i.e. $a \in Z(A)$; taking $M=N=A$ shows the condition is necessary. For central $a$ the two reductions $m\otimes(aa')n$ and $m\otimes(a'a)n$ coincide, so $\lambda_2(a)$ is defined; and $\lambda_2(ab)=\lambda_2(a)\lambda_2(b)$ for central $a,b$, so the center acts on $M\otimes_A N$.
+agrees with the balanced reduction of the left-hand side, which is $m\otimes a'(an)=m\otimes(a'a)n$. Agreement for all $m,n,a'$ requires $aa'=a'a$ for all $a'$, i.e. $a \in Z(A)$; taking $M=N=A$ shows the condition is necessary. For central $a$ the two reductions $m\otimes(aa')n$ and $m\otimes(a'a)n$ coincide, so $\lambda_2(a)$ is defined; and $\lambda_2(ab)=\lambda_2(a)\lambda_2(b)$ for central $a,b$, so the centre acts on $M\otimes_A N$.
 
 (3) For central $a$ the difference of the two endomorphisms sends $m\otimes n$ to $am\otimes n-m\otimes an$, and this vanishes as soon as $am=ma$ and $an=na$: then $am\otimes n=ma\otimes n=m\otimes an$ by the balanced relation. For the regular bimodules $M=N=A$ one has $am=ma$ and $an=na$ for every central $a$ — that is what centrality says in the regular bimodule — so the two actions agree on the whole of $Z(A)$; and for $N=A$ the identification $M\otimes_A A\cong M$ carries the value of the difference on $m\otimes 1$ to $am-ma$, so agreement there forces $am=ma$ for every $m$. No larger subalgebra of $A$ acts through the second factor, by the necessity in (2).
 
@@ -251,7 +251,7 @@ $$
 
 is a left $F[G]$-module by §Bimodules and the Tensor Product, the **induced module** . The balanced relation expresses the identification of the $H$-action with the scalar multiplication in the middle algebra, and the adjunction of §The Tensor–Hom Adjunction is Frobenius reciprocity. This is the standard model calculation for the balanced product and is used.
 
-**(f) Bimodules over the center.** If $A$ is an $R$-algebra and $M$, $N$ are $A$-bimodules, then by the proposition of §Forced Centrality the balanced product $M\otimes_A N$ is a $Z(A)$-module, and it is a module over $A$ through an outer factor whenever one of the factors carries a $(B,A)$- or $(A,C)$-bimodule structure with $B$ or $C$ larger than $Z(A)$. This is the situation in deformation theory and in the Hochschild theory of $A$.
+**(f) Bimodules over the centre.** If $A$ is an $R$-algebra and $M$, $N$ are $A$-bimodules, then by the proposition of §Forced Centrality the balanced product $M\otimes_A N$ is a $Z(A)$-module, and it is a module over $A$ through an outer factor whenever one of the factors carries a $(B,A)$- or $(A,C)$-bimodule structure with $B$ or $C$ larger than $Z(A)$. This is the situation in deformation theory and in the Hochschild theory of $A$.
 
 ## Summary
 
@@ -274,7 +274,7 @@ Centrality is forced by the balanced relation. The left action of $A$ on $M\otim
 | $M\otimes_A A\cong M$, $A\otimes_A N\cong N$ | unit isomorphisms |
 | $(M\otimes_B N)\otimes_C P\cong M\otimes_B(N\otimes_C P)$ | associativity |
 | $\operatorname{Tor}_i^A(M,N)$ | derived functors measuring failure of left exactness |
-| $Z(A)$ | center of $A$, the forced algebra of scalars |
+| $Z(A)$ | centre of $A$, the forced algebra of scalars |
 | $\operatorname{Hom}_B(M\otimes_A N,P)\cong\operatorname{Hom}_A(N,\operatorname{Hom}_B(M,P))$ | tensor–hom adjunction |
 | $\operatorname{Ind}_H^G V=F[G]\otimes_{F[H]}V$ | induced module |
 | $F[G]$ | group algebra |

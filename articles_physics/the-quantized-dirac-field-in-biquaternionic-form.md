@@ -283,7 +283,7 @@ S_F(p)=\frac{i(\not p+m)}{p^2-m^2+i\epsilon}
 =-\frac{i(\not p+m)}{\tilde k\tilde k^{\natural}+m^2-i\epsilon}.
 $$
 
-The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_0$ lies in the center and along the $ict$ axis of the material sector. The operator field's two-point function is thus a module-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.
+The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_0$ lies in the centre and along the $ict$ axis of the material sector. The operator field's two-point function is thus a module-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.
 
 ## What Is Standard and What Is the Algebra's
 
@@ -332,7 +332,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; center |
+| $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; centre |
 | $\tilde{Q}^\flat=-\tilde{Q}^{*}$ | Anti-Hermitian conjugate; the algebra's real structure, not the mass |
 | $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and d'Alembertian |
 | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ | Massive biquaternion Dirac equation (linear chiral pair) |

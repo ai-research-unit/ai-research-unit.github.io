@@ -10,7 +10,7 @@ The biquaternion content of the Schrödinger path integral is therefore a statem
 
 The article is organised as follows. The next section derives the transition kernel from the evolution operator, computes the short-time kernel, and takes the Trotter limit to the sum over paths. The third and fourth sections evaluate the free and oscillator kernels exactly and verify their composition. The fifth shows how the kernel reproduces the biquaternion Schrödinger equation in the infinitesimal-time limit. The sixth obtains the semiclassical kernel and its van Vleck determinant. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{C}_{\mathbb{B}}$ is the center; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the Hamiltonian of a scalar particle is $\tilde H=[-\frac{\hbar^2}{2m}\nabla^2+V(\mathbf x)]e_0$, central. The coordinate $\mathbf x$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the Hamiltonian of a scalar particle is $\tilde H=[-\frac{\hbar^2}{2m}\nabla^2+V(\mathbf x)]e_0$, central. The coordinate $\mathbf x$ is the argument of the field.
 
 ## From the State-Vector Equation to a Sum over Paths
 
@@ -155,7 +155,7 @@ $$
 A=\frac{im}{2\hbar T_2},\quad B=\frac{im}{2\hbar T_1},
 $$
 
-and which was verified numerically on a superposition of two Gaussian packets to a relative error of order $10^{-14}$ at three time pairs. The composition is the statement that the sum over paths factorises at an intermediate time, and in the biquaternion reading it is a statement about the center: the product of two central kernels is central, and the classical action of the two flights adds.
+and which was verified numerically on a superposition of two Gaussian packets to a relative error of order $10^{-14}$ at three time pairs. The composition is the statement that the sum over paths factorises at an intermediate time, and in the biquaternion reading it is a statement about the centre: the product of two central kernels is central, and the classical action of the two flights adds.
 
 ## The Harmonic Oscillator
 
@@ -281,7 +281,7 @@ K(\mathbf x_f,t_f;\mathbf x_i,t_i)
 \ =\ A_{\mathrm{WKB}}\,e^{\,iS_{\mathrm{cl}}/\hbar},
 $$
 
-where the determinant is the van Vleck determinant, the same amplitude that the transport equation of the semiclassical wave-function method produces. In the biquaternion reading the semiclassical kernel is central for the same reason as the exact kernel: the action is a real scalar, the determinant is real, and the prefactor is a function of the central $i$ and $\hbar$. The square root $\sqrt{i}$ in $(2\pi i\hbar)^{-3/2}$ is taken inside the center, which is where the Maslov phases $\pm\frac{\pi}{2}$ and $\pm\frac{\pi}{4}$ come from; the companion article on the path integral develops that point, and the free kernel and the oscillator kernel above are the exact cases in which the semiclassical form is exact (the free kernel everywhere, the oscillator kernel away from caustics).
+where the determinant is the van Vleck determinant, the same amplitude that the transport equation of the semiclassical wave-function method produces. In the biquaternion reading the semiclassical kernel is central for the same reason as the exact kernel: the action is a real scalar, the determinant is real, and the prefactor is a function of the central $i$ and $\hbar$. The square root $\sqrt{i}$ in $(2\pi i\hbar)^{-3/2}$ is taken inside the centre, which is where the Maslov phases $\pm\frac{\pi}{2}$ and $\pm\frac{\pi}{4}$ come from; the companion article on the path integral develops that point, and the free kernel and the oscillator kernel above are the exact cases in which the semiclassical form is exact (the free kernel everywhere, the oscillator kernel away from caustics).
 
 ### Caustics and the higher orders
 
@@ -296,7 +296,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 - **A central kernel, made manifest.** The Hamiltonian is central, so $\tilde K=K\,e_0$ and the path integral acts on the state module as scalar multiplication. The entire Schrödinger path integral for a spin-0 particle is the scalar path integral tensored with the identity on $\mathbb{C}^2$, and the module orientation of the initial state is propagated unchanged.
 - **The phase's status, delegated and used.** The centrality of the phase and the sector location of the exponent are established by the companion article *The Path Integral in Biquaternionic Form*; this article uses them without re-deriving them, and adds the kernel-theoretic consequences.
 - **The oscillator kernel as a central deformation.** The whole one-parameter family $K_\omega$ is central, and the free kernel is its $\omega\to0$ limit; the family contains the free kernel, the oscillator kernel, and (after Wick rotation) the Mehler kernel, all as central elements.
-- **The square root of the central $i$.** The fluctuation prefactor $(m/2\pi i\hbar\varepsilon)^{3/2}$ and the van Vleck factor $(2\pi i\hbar)^{-3/2}$ involve $\sqrt{i}$; the root is taken inside the center, so the Maslov phases are phases of a central element rather than of a chosen complex structure.
+- **The square root of the central $i$.** The fluctuation prefactor $(m/2\pi i\hbar\varepsilon)^{3/2}$ and the van Vleck factor $(2\pi i\hbar)^{-3/2}$ involve $\sqrt{i}$; the root is taken inside the centre, so the Maslov phases are phases of a central element rather than of a chosen complex structure.
 
 **What remains open.**
 
@@ -345,7 +345,7 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_j^2=-e_0$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}$ | Center; home of the phase and the kernel |
+| $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the phase and the kernel |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $\tilde H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_0$ | Central Hamiltonian |

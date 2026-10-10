@@ -16,7 +16,7 @@ In the standard formalism the Bloch ball is assembled state by state: one takes 
 
 The article is organized as follows. First the Hermitian subspace, its trace, and its biquaternion norm are recalled, together with the light cone and the zero divisors. Then the trace-one hyperplane is described and coordinatized by the Bloch vector. Then the Bloch ball is obtained as the slice of the future cone by that hyperplane, and the positivity of a state is identified with its causality. Then the pure states are characterized as the boundary of the ball — idempotents, extreme rays, and zero divisors at trace one — and the mixed states as its interior. Then purity, the Bloch radius, entropy, and fidelity are expressed in these terms. The article closes with the symmetries of the slice, with the mirror reading that places the ball against the material sector and its light cone and separates the two actor groups that the one action admits, with what the picture shows, and with open questions.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The four fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the center of $\mathbb{B}$), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), and the two complementary four-dimensional subspaces $\mathbb{M}_+$ (Hermitian) and $\mathbb{M}_-$ (anti-Hermitian), with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The four fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the centre of $\mathbb{B}$), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), and the two complementary four-dimensional subspaces $\mathbb{M}_+$ (Hermitian) and $\mathbb{M}_-$ (anti-Hermitian), with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.
 
 ## The Hermitian Subspace and the Biquaternion Norm
 
@@ -28,7 +28,7 @@ $$
 \tilde{H} = h_0\,e_0 + i\,\mathbf{h}, \qquad h_0 \in \mathbb{R}, \qquad \mathbf{h} = h_1 e_1 + h_2 e_2 + h_3 e_3,
 $$
 
-where $\mathbf{h}$ is a pure real quaternion, identified with the vector $(h_1, h_2, h_3) \in \mathbb{R}^3$. The scalar part $h_0 e_0$ lies in the center $\mathbb{C}_{\mathbb{B}}$; here it is real, and the imaginary vector part $i\mathbf{h}$ carries the three remaining real coordinates. A natural basis of $\mathbb{M}_+$ over $\mathbb{R}$ is
+where $\mathbf{h}$ is a pure real quaternion, identified with the vector $(h_1, h_2, h_3) \in \mathbb{R}^3$. The scalar part $h_0 e_0$ lies in the centre $\mathbb{C}_{\mathbb{B}}$; here it is real, and the imaginary vector part $i\mathbf{h}$ carries the three remaining real coordinates. A natural basis of $\mathbb{M}_+$ over $\mathbb{R}$ is
 
 $$
 \{e_0,\; i e_1,\; i e_2,\; i e_3\},
@@ -124,7 +124,7 @@ so the Hilbert–Schmidt geometry of the slice is the Euclidean geometry of $\ma
 
 ### The Slice Lemma
 
-The intersection of an affine hyperplane $h_0 = c$ with the closed future cone is easy to describe. If $c > 0$, the future condition $h_0 \geq 0$ is automatic, the causal condition reduces to $|\mathbf{h}| \leq c$, and the apex is excluded; the intersection is a closed three-dimensional ball of radius $c$ in $\mathbf{h}$-coordinates, centered at $\mathbf{h} = 0$. If $c = 0$ the intersection degenerates to the single point at the apex, and if $c < 0$ the intersection with the future cone is empty.
+The intersection of an affine hyperplane $h_0 = c$ with the closed future cone is easy to describe. If $c > 0$, the future condition $h_0 \geq 0$ is automatic, the causal condition reduces to $|\mathbf{h}| \leq c$, and the apex is excluded; the intersection is a closed three-dimensional ball of radius $c$ in $\mathbf{h}$-coordinates, centred at $\mathbf{h} = 0$. If $c = 0$ the intersection degenerates to the single point at the apex, and if $c < 0$ the intersection with the future cone is empty.
 
 For the trace-one hyperplane $c = \tfrac{1}{2}$, the ball has radius $\tfrac{1}{2}$ in $\mathbf{h}$-coordinates, equivalently radius $1$ in the Bloch coordinate $\mathbf{r} = 2\mathbf{h}$. Explicitly, the biquaternion norm on the slice is
 
@@ -235,13 +235,13 @@ $$
 
 a convex combination of the two complementary pure states along the Bloch direction $\hat{\mathbf{r}}$. This is the algebraic statement that every mixed state is a statistical mixture of two orthogonal pure states, with weights determined by the radius.
 
-The center of the ball is the **maximally mixed state**
+The centre of the ball is the **maximally mixed state**
 
 $$
 \mathbf{r} = 0, \qquad \tilde{\rho} = \tfrac{1}{2} e_0 ,
 $$
 
-with equal eigenvalues $\tfrac{1}{2}, \tfrac{1}{2}$; it is the barycenter of the ball and the only state invariant under all rotations of the boundary sphere. It is the state of minimal purity and maximal entropy.
+with equal eigenvalues $\tfrac{1}{2}, \tfrac{1}{2}$; it is the barycentre of the ball and the only state invariant under all rotations of the boundary sphere. It is the state of minimal purity and maximal entropy.
 
 The affine structure of the slice matches the convex structure of the state space. If $\tilde{\rho}_i = \tfrac{1}{2}(e_0 + i\mathbf{r}_i)$ are states and $p_i \geq 0$ with $\sum_i p_i = 1$, then
 
@@ -265,7 +265,7 @@ $$
 \mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}\bigl(1 + |\mathbf{r}|^2\bigr),
 $$
 
-which ranges from $\tfrac{1}{2}$ at the center of the ball ($|\mathbf{r}| = 0$) to $1$ on the boundary ($|\mathbf{r}| = 1$). Inverting,
+which ranges from $\tfrac{1}{2}$ at the centre of the ball ($|\mathbf{r}| = 0$) to $1$ on the boundary ($|\mathbf{r}| = 1$). Inverting,
 
 $$
 |\mathbf{r}| = \sqrt{2\,\mathrm{Tr}(\tilde{\rho}^2) - 1},
@@ -279,7 +279,7 @@ $$
 S_{\mathrm{lin}}(\tilde{\rho}) = 1 - \mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}\bigl(1 - |\mathbf{r}|^2\bigr) = 2\,N(\tilde{\rho}) ,
 $$
 
-which vanishes on the boundary and is maximal, equal to $\tfrac{1}{2}$, at the center. The last equality is worth emphasis: **the biquaternion norm is, up to the factor $2$, the linear entropy on the trace-one hyperplane.** The quadratic form whose cone cuts out the state space is the same form that measures how mixed a state is. The reason mixedness has a biquaternion-norm expression is that both are governed by the same quantity $\lambda_+ \lambda_- = N(\tilde{\rho})$.
+which vanishes on the boundary and is maximal, equal to $\tfrac{1}{2}$, at the centre. The last equality is worth emphasis: **the biquaternion norm is, up to the factor $2$, the linear entropy on the trace-one hyperplane.** The quadratic form whose cone cuts out the state space is the same form that measures how mixed a state is. The reason mixedness has a biquaternion-norm expression is that both are governed by the same quantity $\lambda_+ \lambda_- = N(\tilde{\rho})$.
 
 Finally, the Euclidean geometry of the slice gives the trace pairing a direct metrical meaning on states. The squared Hilbert–Schmidt distance between $\tilde{\rho}$ and $\tilde{\sigma}$ is
 
@@ -293,7 +293,7 @@ $$
 D\bigl(\tilde{\rho}, \tfrac{1}{2}e_0\bigr) = \tfrac{1}{2}\bigl|\mathbf{r}\bigr| .
 $$
 
-The Bloch radius is thus twice the trace distance to the center of the ball — another expression of the same fact, that the radius is the state's purity.
+The Bloch radius is thus twice the trace distance to the centre of the ball — another expression of the same fact, that the radius is the state's purity.
 
 ## Entropy
 
@@ -311,13 +311,13 @@ $$
 
 which depends on the state only through $r$, not through the direction $\hat{\mathbf{r}}$. This is the geometric statement that entropy is a function of the radius: the level sets of entropy on the Bloch ball are the concentric spheres, and two states are equally mixed precisely when they have the same radius.
 
-On the boundary, $r = 1$, the eigenvalues are $1$ and $0$, and the entropy vanishes: pure states carry no entropy. At the center, $r = 0$, both eigenvalues are $\tfrac{1}{2}$ and the entropy is $\log 2$, its maximum on the ball. Between them, $S$ decreases strictly with $r$: differentiating the expression above,
+On the boundary, $r = 1$, the eigenvalues are $1$ and $0$, and the entropy vanishes: pure states carry no entropy. At the centre, $r = 0$, both eigenvalues are $\tfrac{1}{2}$ and the entropy is $\log 2$, its maximum on the ball. Between them, $S$ decreases strictly with $r$: differentiating the expression above,
 
 $$
 \frac{dS}{dr} = -\frac{1}{2}\log\frac{1+r}{1-r} < 0 \qquad (0 < r < 1),
 $$
 
-so entropy decreases monotonically from the center to the boundary, in step with the increase of purity. Entropy and purity therefore carry the same information on a qubit — both are functions of $|\mathbf{r}|$, and each determines the other — the entropy being the steeper, logarithmically scaled version.
+so entropy decreases monotonically from the centre to the boundary, in step with the increase of purity. Entropy and purity therefore carry the same information on a qubit — both are functions of $|\mathbf{r}|$, and each determines the other — the entropy being the steeper, logarithmically scaled version.
 
 Because the logarithm is the spectral logarithm on the positive cone, the trace form of the entropy is unambiguous for interior states: writing $\log\tilde{\rho} = \log\lambda_+\, \tilde\Pi_+(\hat{\mathbf{r}}) + \log\lambda_-\, \tilde\Pi_-(\hat{\mathbf{r}})$, one has $-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = S(\tilde{\rho})$, consistent with $\mathrm{Tr} = 2\,\mathrm{Sc}$.
 
@@ -414,7 +414,7 @@ so **positivity of a state is the causal condition of the four-vector it mirrors
 
 <!-- PHYSICAL READING — one cone, not two cones in correspondence. On the trace-one slice the positive cone of the informational sector is exactly the image of the causal future of the material sector under $-\tfrac{i}{2}$: the map sends $ct$ to $h_0 = ct/2$ and $\mathbf{x}$ to $\mathbf{h} = -\mathbf{x}/2$, so $h_0 - |\mathbf{h}| = (ct - |\mathbf{x}|)/2$. The statement is that a qubit state IS a timelike four-vector normalized to $ct = 1$ and read from inside: positivity of the operator is the timelike condition of the four-vector, and purity is nullness. Do not write that the two cones are "analogous" or "in correspondence"; they are one cone. -->
 
-<!-- INFORMATIONAL READING — mixedness is the timelike deficit. The center of the ball, $\mathbf{r} = 0$, mirrors $\tilde{Q} = ict\,e_0$ at $ct = 1$, which is the four-velocity of a particle at rest in units $c = 1$; the boundary of the ball mirrors the light cone. Since the linear entropy satisfies $S_{\mathrm{lin}} = 2N(\tilde{\rho})$ and $N(\tilde{Q})$ is the interval, the linear entropy of a state is $-\tfrac{1}{2}N(\tilde{Q})$ of its mirror: purity is nullness and mixedness is the timelike deficit. Reading mixedness as "how timelike the mirror is" is a reading of the dictionary and not a new result; the identity it rests on, $N(\tilde{\rho}) = -\tfrac{1}{4}N(\tilde{Q})$, is exact. -->
+<!-- INFORMATIONAL READING — mixedness is the timelike deficit. The centre of the ball, $\mathbf{r} = 0$, mirrors $\tilde{Q} = ict\,e_0$ at $ct = 1$, which is the four-velocity of a particle at rest in units $c = 1$; the boundary of the ball mirrors the light cone. Since the linear entropy satisfies $S_{\mathrm{lin}} = 2N(\tilde{\rho})$ and $N(\tilde{Q})$ is the interval, the linear entropy of a state is $-\tfrac{1}{2}N(\tilde{Q})$ of its mirror: purity is nullness and mixedness is the timelike deficit. Reading mixedness as "how timelike the mirror is" is a reading of the dictionary and not a new result; the identity it rests on, $N(\tilde{\rho}) = -\tfrac{1}{4}N(\tilde{Q})$, is exact. -->
 
 ### The Whole Timelike Cone, Not Only the Slice
 
@@ -428,7 +428,7 @@ both non-negative for $ct > 0$ and both non-positive for $ct < 0$. The sign of t
 
 <!-- CONVENTION — the sheet is selected by the trace, not by the cone. Both timelike cones of $\mathbb{M}_-$ map into the region $N(\tilde{H}) \geq 0$, which is why positivity alone cannot distinguish the future sheet from the past. The past sheet maps to the negative definite elements with trace $-1$, which are Hermitian, of definite trace, and not states. This is the precise reason for the open question recorded at the end of this article: whether the past cone and the negative-trace elements acquire a state reading is a question about the trace normalization, not about the cone. -->
 
-The maximally mixed state is the image the map singles out. It is $\tilde{\rho} = \tfrac{1}{2}e_0$, the center of the ball, and its mirror on the trace-one slice is $\tilde{Q} = i\,e_0$: timelike, of the largest interval on that slice, and equal to the four-velocity of a particle at rest divided by $c$. At the other end the idempotents, the boundary of the ball, mirror the null four-vectors. So the ordering of the ball by purity is the ordering of the timelike cone by the interval, read in reverse: the least pure state mirrors the most timelike four-vector, and the pure states mirror the light cone.
+The maximally mixed state is the image the map singles out. It is $\tilde{\rho} = \tfrac{1}{2}e_0$, the centre of the ball, and its mirror on the trace-one slice is $\tilde{Q} = i\,e_0$: timelike, of the largest interval on that slice, and equal to the four-velocity of a particle at rest divided by $c$. At the other end the idempotents, the boundary of the ball, mirror the null four-vectors. So the ordering of the ball by purity is the ordering of the timelike cone by the interval, read in reverse: the least pure state mirrors the most timelike four-vector, and the pure states mirror the light cone.
 
 **Reading (decoherence as inward motion).** The dictionary has a process reading. The pure states are the boundary of the ball and the light cone of the material sector; the maximally mixed state is the centre and the rest four-vector. A decoherence process moves a state from the boundary toward the centre, and under the mirror map that is motion from the null boundary into the **causal interior**, from a lightlike four-vector toward the timelike rest vector. Because the linear entropy is $S_{\mathrm{lin}} = 2N(\tilde{\rho}) = -\tfrac{1}{2}N(\tilde{Q})$, an increase in entropy is exactly the growth of the timelike interval of the mirror, so **entropy increase tracks the inward motion** on the causal side. The reading is a reading of the dictionary and not a new theorem: the dictionary is static and exact, the motion is the added interpretation, and the algebra supplies no rate and no mechanism for it.
 
@@ -499,7 +499,7 @@ $$
 \;\Longleftrightarrow\;
 \Phi_{\tilde{U}} \ \text{is an algebra automorphism}
 \;\Longleftrightarrow\;
-\Phi_{\tilde{U}} \ \text{fixes the center}
+\Phi_{\tilde{U}} \ \text{fixes the centre}
 \;\Longleftrightarrow\;
 \Phi_{\tilde{U}} \ \text{preserves the trace}.
 $$
@@ -516,7 +516,7 @@ $$
 \tfrac{1}{2}e_0 \;\longmapsto\; \tfrac{1}{2}\bigl(\cosh\phi\,e_0 + i\sinh\phi\,\hat{\mathbf{n}}\bigr),
 $$
 
-of trace $\cosh\phi$, a positive definite element of $\mathbb{M}_+$ that is not a state. Not fixing the center is not preserving the trace, and not preserving the trace is leaving the slice. The Lorentz group acts on the cone of the informational sector; the group that acts on its state space is the rotation group. That a qubit carries rotations and no boost is then not an assumption imported from quantum theory: it is the statement that the trace, the normalization of a state, is not a Lorentz invariant.
+of trace $\cosh\phi$, a positive definite element of $\mathbb{M}_+$ that is not a state. Not fixing the centre is not preserving the trace, and not preserving the trace is leaving the slice. The Lorentz group acts on the cone of the informational sector; the group that acts on its state space is the rotation group. That a qubit carries rotations and no boost is then not an assumption imported from quantum theory: it is the statement that the trace, the normalization of a state, is not a Lorentz invariant.
 
 <!-- CONVENTION — the two actors are different groups, and the unitary is not the general Lorentz transformation. The formula $\tilde{A}\tilde{Q}\tilde{A}^{*}$ is the corpus's rotor conjugation, defined on $\mathbb{B}$ in *Biquaternion Rotations and Lorentz Transformations* and already proved there to preserve both sectors and the norm; cite that article (or *Biquaternion Norm and Invertibility*, which states the automorphism criterion) rather than presenting the formula as new here, and do not cite *The Lorentz Transformation as a Biquaternionic Rotation*, which sits later in the series. On $\mathbb{M}_-$ the unit-norm rotor gives all of $SO^{+}(1,3)$, boosts included; the unitary gives only the rotations $SO(3)$, since conjugation by a unitary fixes the scalar part. Do not write that the same group acts on both sides, and do not drop the qualifier when saying the quantum action is "also a Lorentz transformation" — it is a rotation. The corpus rotor sign is $\tilde{\Lambda}=\cosh(\phi/2)e_0 + i\sinh(\phi/2)\hat{\mathbf{n}}$; this article uses that sign. Verified on 100 elements: $\tilde{\Lambda}^{*}=\tilde{\Lambda}$, $N=1$, $\det\Phi_{\tilde{\Lambda}}=1$, $\Phi_{\tilde{\Lambda}}(e_0)=\cosh\phi\,e_0+i\sinh\phi\,\hat{\mathbf{n}}$ noncentral; a boost fails multiplicativity ($\Phi(BC)\neq\Phi(B)\Phi(C)$) while a real rotor satisfies it; the same rotor on $\mathbb{M}_+$ moves $100/100$ states off trace one; a unitary fixes $h_0$ and $e_0$, preserves $|\mathbf{r}|$, and induces an orthogonal $R$ with $\det R=+1$; and the equivalence unitary $\Leftrightarrow$ $\tilde{A}^{*}=\tilde{A}^{-1}$ $\Leftrightarrow$ automorphism held with $0/100$ disagreements. The polar word names the two actors: on 100 random unit-norm elements, $\tilde\Lambda=\tilde{B}\hat q$ with $\tilde B$ Hermitian positive of norm one and $\hat q$ a unit real quaternion, so the unit-norm slice is the Cartan decomposition of $SL(2,\mathbb{C})$; the polar criterion $\tilde B=e_0 \Leftrightarrow \tilde Q\tilde Q^{*}$ is a positive real multiple of $e_0$ held with $0/100$ disagreements; a unit-norm element is unitary exactly when its boost factor is trivial, $0/100$ disagreements; and the intersection of the two classes is the rotors, $Sp(1)=SU(2)$. The boost factor itself is always Hermitian, hence in $\mathbb{M}_+$. Write the boost factor as $\tilde{B}$ with the article's tilde, not $B$, which is the ball $B^3$. -->
 
@@ -566,9 +566,9 @@ $$
 
 the intersection is the closed unit ball $|\mathbf{r}| \leq 1$, the **Bloch ball**, whose boundary is the intersection with the null cone.
 
-The pure states are the boundary of the ball. Equivalently, they are the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$, the rank-one projections, the extreme rays of the positive cone, and the zero divisors of $\mathbb{B}$ at trace one; the boundary is parametrized by the Bloch sphere $S^2$. The mixed states are the interior, with eigenvalues $\tfrac{1}{2}(1 \pm |\mathbf{r}|)$; the maximally mixed state is the center $\mathbf{r} = 0$.
+The pure states are the boundary of the ball. Equivalently, they are the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$, the rank-one projections, the extreme rays of the positive cone, and the zero divisors of $\mathbb{B}$ at trace one; the boundary is parametrized by the Bloch sphere $S^2$. The mixed states are the interior, with eigenvalues $\tfrac{1}{2}(1 \pm |\mathbf{r}|)$; the maximally mixed state is the centre $\mathbf{r} = 0$.
 
-Purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$, so the Bloch radius is a measure of purity, and the linear entropy is $1 - \mathrm{Tr}(\tilde{\rho}^2) = 2N(\tilde{\rho})$, twice the biquaternion norm. The von Neumann entropy depends only on $|\mathbf{r}|$, vanishing on the boundary and maximal, equal to $\log 2$, at the center. The Uhlmann transition probability has the closed form $\tfrac{1}{2}\bigl(1 + \mathbf{r}\cdot\mathbf{s} + \sqrt{(1-|\mathbf{r}|^2)(1-|\mathbf{s}|^2)}\bigr)$, reducing on the boundary to $\cos^2(\theta/2)$. In every case the state space, its purity stratification, its entropy, and its fidelity are read off from the biquaternion norm and the trace on $\mathbb{M}_+$, without additional postulates.
+Purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$, so the Bloch radius is a measure of purity, and the linear entropy is $1 - \mathrm{Tr}(\tilde{\rho}^2) = 2N(\tilde{\rho})$, twice the biquaternion norm. The von Neumann entropy depends only on $|\mathbf{r}|$, vanishing on the boundary and maximal, equal to $\log 2$, at the centre. The Uhlmann transition probability has the closed form $\tfrac{1}{2}\bigl(1 + \mathbf{r}\cdot\mathbf{s} + \sqrt{(1-|\mathbf{r}|^2)(1-|\mathbf{s}|^2)}\bigr)$, reducing on the boundary to $\cos^2(\theta/2)$. In every case the state space, its purity stratification, its entropy, and its fidelity are read off from the biquaternion norm and the trace on $\mathbb{M}_+$, without additional postulates.
 
 The ball has a mirror reading in the material sector. The map $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ carries $\mathbb{M}_-$ onto $\mathbb{M}_+$, sends the material four-vector $ict\,e_0 + \mathbf{x}$ to $\tfrac{1}{2}(ct\,e_0 - i\mathbf{x})$, and satisfies $\mathrm{Tr}(\tilde{H}) = ct$ and $N(\tilde{H}) = -\tfrac{1}{4}N(\tilde{Q})$. The image is a state exactly at $ct = 1$, where it is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $\mathbf{r} = -\mathbf{x}$. On that slice the map turns positivity of a state into the causal condition $ct \geq |\mathbf{x}|$: the ball is the trace-one slice of the timelike cone, the pure states are its lightlike elements, and the maximally mixed state is the rest four-vector. The future cone maps onto the positive elements and the past cone onto the negative definite ones, so the trace sign, not the sign of the norm, selects the state sheet — which is why the past cone has no state reading here. Both readings use the one action $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$, with a unit-norm rotor as actor on the material side and a unitary element on the informational side. The two actors are different groups: the unit-norm rotor gives the full Lorentz group, boosts included, while the unitary gives only the rotations of the ball, because unitarity is exactly the condition that preserves the trace and the trace-one slice is the state space. What the map is not is an algebra isomorphism: $i$ is not multiplicative, so $(i\tilde{Q})(i\tilde{Y}) = -\tilde{Q}\tilde{Y} \neq i(\tilde{Q}\tilde{Y})$; within a sector the product reverses the order, $(\tilde{Q}\tilde{Y})^{*} = \tilde{Y}\tilde{Q}$, so a product of two material elements need not be material, while the commutator always lands in $\mathbb{M}_-$. The two sectors are anti-isometric real quadratic spaces with $N(i\tilde{Q}) = -N(\tilde{Q})$, not isomorphic algebras.
 
@@ -579,7 +579,7 @@ The ball has a mirror reading in the material sector. The map $\tilde{H} = -\tfr
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\mathbb{C}_{\mathbb{B}}$ | Complex subspace (center), fixed points of quaternion conjugation |
+| $\mathbb{C}_{\mathbb{B}}$ | Complex subspace (centre), fixed points of quaternion conjugation |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, fixed points of complex conjugation |
 | $\mathbb{M}_+$ | Hermitian subspace, fixed points of ${}^{*}$ |
 | $\mathbb{M}_-$, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ | Anti-Hermitian subspace, fixed points of $\flat$ |

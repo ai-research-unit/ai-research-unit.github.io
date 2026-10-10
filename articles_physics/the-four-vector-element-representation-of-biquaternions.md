@@ -8,7 +8,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3 = \sum_{\mu = 0}^{3} Q_\mu e_\mu, \qquad Q_\mu \in \mathbb{C},
 $$
 
-which identifies $\mathbb{B}$ with the coordinate space $\mathbb{C}^4$. The realization supplies a space and no action: the action is the $4 \times 4$ matrix of left multiplication in *The 4×4 Regular Matrix Element Representation of Biquaternions* and the $2 \times 2$ matrices of *The 2×2 Matrix Element Representation of Biquaternions*. This article treats the coefficient space, the column and the dual row, the component form of the product, the four conjugations in coordinates, the six distinguished subspaces as coordinate conditions, and the biquaternion norm with its two real restrictions.
+which identifies $\mathbb{B}$ with the coordinate space $\mathbb{C}^4$. The realization supplies a space and no action: the action is the $4 \times 4$ matrix of left multiplication in *The 4×4 Regular Matrix Element Representation of Biquaternions* and the $2 \times 2$ matrices of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. This article treats the coefficient space, the column and the dual row, the component form of the product, the four conjugations in coordinates, the six distinguished subspaces as coordinate conditions, and the biquaternion norm with its two real restrictions.
 
 The conventions are those of *Conventions in the Biquaternion Universe*, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, the scalar imaginary $i$ commutes with every unit, and the conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{*}$. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The physical dictionary writes a general element as a material coordinate plus an informational coordinate,
 
@@ -33,7 +33,7 @@ The index position is fixed by this definition. The component $Q^0$ is the **sca
 
 **Proof.** The map sends the basis $e_0, e_1, e_2, e_3$ to the standard basis of $\mathbb{C}^4$ and is extended by linearity; it is bijective on bases, and the action of a complex scalar on the coefficients is the same on both sides.
 
-The coefficient space is **not** the simple module of the algebra. The simple module has complex dimension $2$ and is the carrier of the spinor of the corpus; it is treated in *The 2×2 Matrix Element Representation of Biquaternions*. The number $4$ recurs there and in *The 4×4 Regular Matrix Element Representation of Biquaternions* for two different reasons, and neither is a coincidence: the coefficient space is the algebra itself, of complex dimension $4$, and the regular representation is the algebra acting on itself, so its matrix is $4 \times 4$ for the same count.
+The coefficient space is **not** the simple module of the algebra. The simple module has complex dimension $2$ and is the carrier of the spinor of the corpus; it is treated in *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. The number $4$ recurs there and in *The 4×4 Regular Matrix Element Representation of Biquaternions* for two different reasons, and neither is a coincidence: the coefficient space is the algebra itself, of complex dimension $4$, and the regular representation is the algebra acting on itself, so its matrix is $4 \times 4$ for the same count.
 
 ### The Real and Imaginary Parts
 
@@ -222,7 +222,7 @@ $$
 
 | Subspace | Coordinate condition | Algebraic name | Physical name | real dim |
 |---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $Q^1 = Q^2 = Q^3 = 0$ | center | complex time sector | $2$ |
+| $\mathbb{C}_{\mathbb{B}}$ | $Q^1 = Q^2 = Q^3 = 0$ | centre | complex time sector | $2$ |
 | $\mathrm{Vect}(\mathbb{B})$ | $Q^0 = 0$ | vector | complex space sector | $6$ |
 | $\mathbb{H}_{\mathbb{B}}$ | $Q^0, Q^1, Q^2, Q^3 \in \mathbb{R}$ | quaternion | real sector | $4$ |
 | $i\mathbb{H}_{\mathbb{B}}$ | $Q^0, Q^1, Q^2, Q^3 \in i\mathbb{R}$ | antiquaternion | imaginary sector | $4$ |

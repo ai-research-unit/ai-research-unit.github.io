@@ -154,7 +154,7 @@ that is, the derived product is Hermitian. The diagonal $\Theta_{X,X}(Z)=XX^{*}Z
 
 ### The Biquaternion Algebra
 
-Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the quaternionic conjugation of the basis with conjugated complex coefficients, so that $\varsigma$ is the complex conjugation and $*$ is an anti-automorphism with $1^{*}=1$; the algebra is $M_{2}(\mathbb{C})$ by *Biquaternion 2×2 Matrix Element Representation*, and the statements of the previous case transfer under that isomorphism. The pair operator of a pair has the operator of the swapped pair as its adjoint, the diagonal is self-adjoint, and the Hermitian criterion reads $x\star y=y\star x$ in the biquaternion algebra, the same condition as in $M_{2}(\mathbb{C})$ because the derived product and the involution are carried across by the isomorphism.
+Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the quaternionic conjugation of the basis with conjugated complex coefficients, so that $\varsigma$ is the complex conjugation and $*$ is an anti-automorphism with $1^{*}=1$; the algebra is $M_{2}(\mathbb{C})$ by *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, and the statements of the previous case transfer under that isomorphism. The pair operator of a pair has the operator of the swapped pair as its adjoint, the diagonal is self-adjoint, and the Hermitian criterion reads $x\star y=y\star x$ in the biquaternion algebra, the same condition as in $M_{2}(\mathbb{C})$ because the derived product and the involution are carried across by the isomorphism.
 
 ## Summary
 

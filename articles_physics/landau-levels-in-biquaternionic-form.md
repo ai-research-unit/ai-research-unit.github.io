@@ -14,7 +14,7 @@ so the field strength is a central element of the algebra even though the field 
 
 The article is organised as follows. The next section sets up the minimal coupling in the biquaternion framework and derives the central commutator for the field strength. The third section solves the problem in the Landau gauge, reducing it to a shifted harmonic oscillator. The fourth treats the symmetric gauge, the guiding centre, and the angular momentum. The fifth counts the degeneracy and identifies the flux quantum. The sixth states precisely what is absent because the particle has spin 0. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}$ is the center; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. Gaussian units are used, with the electric charge denoted $q$ and the mechanical momentum distinguished from the canonical momentum.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. Gaussian units are used, with the electric charge denoted $q$ and the mechanical momentum distinguished from the canonical momentum.
 
 ## The Charged Particle in the Biquaternion Framework
 
@@ -142,7 +142,7 @@ $$
 =\hbar\omega_c\left(a^\dagger a+\tfrac12\right)e_0 .
 $$
 
-The algebra is thus the canonical oscillator algebra in the center, and the standard ladder argument applies: from $[\tilde H_\perp,a^\dagger]=\hbar\omega_c\,a^\dagger e_0$ and $a^\dagger a\ge0$, the spectrum is $\hbar\omega_c(n+\frac12)$ with $n=0,1,2,\dots$, the state $a|0\rangle=0$ being the ground state. The zero-point energy $\frac12\hbar\omega_c$ is the floor of the transverse motion, and the spacing is the cyclotron quantum. This derivation exhibits the Landau spectrum as a consequence of one central commutator; the differential-equation route of the previous subsection is its coordinate-space image. (For $q<0$ the two operators are interchanged and the same algebra holds.)
+The algebra is thus the canonical oscillator algebra in the centre, and the standard ladder argument applies: from $[\tilde H_\perp,a^\dagger]=\hbar\omega_c\,a^\dagger e_0$ and $a^\dagger a\ge0$, the spectrum is $\hbar\omega_c(n+\frac12)$ with $n=0,1,2,\dots$, the state $a|0\rangle=0$ being the ground state. The zero-point energy $\frac12\hbar\omega_c$ is the floor of the transverse motion, and the spacing is the cyclotron quantum. This derivation exhibits the Landau spectrum as a consequence of one central commutator; the differential-equation route of the previous subsection is its coordinate-space image. (For $q<0$ the two operators are interchanged and the same algebra holds.)
 
 ## The Symmetric Gauge and the Guiding Centre
 
@@ -220,7 +220,7 @@ $$
 \Phi_0=2\pi\ell_B^2 B=\frac{hc}{|q|}.
 $$
 
-The flux quantum is thus the central area of one guiding-centre cell, and the degeneracy is the number of such cells in the sample. In the framework the statement is that the two central commutators fix the energy spacing and the state count, and the algebra of the center contains all of it.
+The flux quantum is thus the central area of one guiding-centre cell, and the degeneracy is the number of such cells in the sample. In the framework the statement is that the two central commutators fix the energy spacing and the state count, and the algebra of the centre contains all of it.
 
 ## Spin: What Is Not Here
 
@@ -234,21 +234,21 @@ This is the sharpest illustration in the subcategory of what "spin 0" buys. The 
 
 **What the biquaternion notation provides.**
 
-- **The field strength as a central commutator.** $[\tilde\pi_x,\tilde\pi_y]=i\hbar qB/c\,e_0$ places the magnetic field in the center of the algebra, which is the precise algebraic reason the spin-0 problem is a scalar oscillator problem and why no Zeeman term appears.
+- **The field strength as a central commutator.** $[\tilde\pi_x,\tilde\pi_y]=i\hbar qB/c\,e_0$ places the magnetic field in the centre of the algebra, which is the precise algebraic reason the spin-0 problem is a scalar oscillator problem and why no Zeeman term appears.
 - **A central Hamiltonian and a spectator module.** The minimal coupling multiplies $e_0$ term by term; the Hamiltonian is central; the creation and annihilation operators are central; the module factor is constant in every Landau state. The gauge transformation shifts the central part of the operator algebra only.
 - **The two central ladders.** The energy ladder and the degeneracy ladder are both central oscillator algebras; the first is the spectrum, the second is the flux degeneracy. The framework exhibits them as the same algebraic structure, one raising energy and one raising angular momentum.
-- **The flux quantum from a commutator.** The count $AB/\Phi_0$ follows from the central canonical commutator with effective Planck constant $\hbar qB/c$, and the framework records the count as a property of the center.
+- **The flux quantum from a commutator.** The count $AB/\Phi_0$ follows from the central canonical commutator with effective Planck constant $\hbar qB/c$, and the framework records the count as a property of the centre.
 
 **What remains open.**
 
-- **The many-body problem.** The integer and fractional quantum Hall effects require interacting electrons and the associated many-body Hilbert space; the framework's statements about the single-particle center do not extend to them, and nothing here addresses fractional statistics or the Laughlin wave function.
+- **The many-body problem.** The integer and fractional quantum Hall effects require interacting electrons and the associated many-body Hilbert space; the framework's statements about the single-particle centre do not extend to them, and nothing here addresses fractional statistics or the Laughlin wave function.
 - **Geometry and curvature.** Landau levels on curved surfaces or in non-uniform fields involve a position-dependent field strength; whether the centrality of the commutator survives in a useful form is not explored here.
 - **The relativistic problem.** The relativistic Landau problem, with the Dirac or Klein–Gordon equation, has a different spectrum (including the zero mode) and belongs to the relativistic categories; only the non-relativistic spin-0 problem is treated here.
 - **Empirical content.** As elsewhere, whether the reformulation distinguishes itself from scalar Landau-level quantum physics is open.
 
 ## Open Questions
 
-**1. Is the flux degeneracy an algebraic invariant of the center?** The count $AB/\Phi_0$ follows from the central commutator and the boundary conditions. Whether the framework gives a gauge-invariant algebraic derivation of the count without choosing a gauge is not established here.
+**1. Is the flux degeneracy an algebraic invariant of the centre?** The count $AB/\Phi_0$ follows from the central commutator and the boundary conditions. Whether the framework gives a gauge-invariant algebraic derivation of the count without choosing a gauge is not established here.
 
 **2. Does the guiding-centre algebra have a sector reading?** The guiding-centre operators are central and commute with the Hamiltonian; their relation to the material and informational sectors is not explored.
 
@@ -283,7 +283,7 @@ Each level is degenerate with multiplicity $N_\phi=AB/\Phi_0$, the number of flu
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_j^2=-e_0$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}$ | Center; home of the field strength and the spectrum |
+| $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the field strength and the spectrum |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace; home of $\mathbf B$ and $\mathbf A$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
@@ -313,4 +313,4 @@ Each level is degenerate with multiplicity $N_\phi=AB/\Phi_0$, the number of flu
 - J. K. Jain, *Composite Fermions* (Cambridge, 2007), for the fractional quantum Hall states and the filling factor.
 - C. Cohen-Tannoudji, B. Diu, and F. Laloë, *Quantum Mechanics* (Wiley, 1977), for the harmonic oscillator and the symmetric-gauge angular momentum treatment.
 - L. D. Landau and E. M. Lifshitz, *Statistical Physics, Part 1* (Pergamon, 1980), for the Landau diamagnetism.
-- P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the biquaternion algebra and its center.
+- P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the biquaternion algebra and its centre.

@@ -160,7 +160,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 ### Basic Representations
 
-- [Biquaternion 2×2 Matrix Element Representation](../articles_maths/biquaternion-2x2-matrix-element-representation.html)
+- [Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/biquaternion-2x2-matrix-element-representation-m2c.html)
 - [Biquaternion 4×4 Regular Matrix Element Representation](../articles_maths/biquaternion-4x4-regular-matrix-element-representation.html)
 - [Biquaternion Polar Element Representation](../articles_maths/biquaternion-polar-element-representation.html)
 - [Biquaternion Partial Polar Element Representations](../articles_maths/biquaternion-partial-polar-element-representations.html)

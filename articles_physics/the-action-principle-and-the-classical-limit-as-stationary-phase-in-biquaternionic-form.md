@@ -29,7 +29,7 @@ $$
 S[\tilde q]=\int_{t_1}^{t_2}L(\tilde q,\dot{\tilde q},t)\,dt .
 $$
 
-Because $L$ takes values in the center $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$, the value of $S$ is a complex scalar and its phase $e^{iS/\hbar}$ is well defined. This is not automatic for a non-central Lagrangian, and it is the first reason the biquaternion formulation is convenient for the stationary-phase statement: the exponent is a scalar.
+Because $L$ takes values in the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$, the value of $S$ is a complex scalar and its phase $e^{iS/\hbar}$ is well defined. This is not automatic for a non-central Lagrangian, and it is the first reason the biquaternion formulation is convenient for the stationary-phase statement: the exponent is a scalar.
 
 ### The Domain of the Principle: Discrete and Continuous
 

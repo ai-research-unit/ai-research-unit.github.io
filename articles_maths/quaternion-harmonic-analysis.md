@@ -264,7 +264,7 @@ whenever the integral converges. This is the convolution on the additive group $
 
 ### Basic Properties
 
-**Non-commutativity.** The convolution is not commutative in general, because $\mathbb{H}$ is not commutative: $f * g \neq g * f$ in general. It is commutative only when one of the functions takes values in the center of $\mathbb{H}$, which is $\mathbb{R}$.
+**Non-commutativity.** The convolution is not commutative in general, because $\mathbb{H}$ is not commutative: $f * g \neq g * f$ in general. It is commutative only when one of the functions takes values in the centre of $\mathbb{H}$, which is $\mathbb{R}$.
 
 **Associativity.** $(f * g) * h = f * (g * h)$.
 
@@ -404,7 +404,7 @@ $$
 Mf(\tilde q) = \sup_{r > 0} \frac{1}{|B(\tilde q, r)|} \int_{B(\tilde q, r)} |f(r)| \, dr,
 $$
 
-where $B(\tilde q, r)$ is the Euclidean ball of radius $r$ centered at $\tilde q$, and $|B(\tilde q, r)|$ is its volume.
+where $B(\tilde q, r)$ is the Euclidean ball of radius $r$ centred at $\tilde q$, and $|B(\tilde q, r)|$ is its volume.
 
 ### The Maximal Inequality
 

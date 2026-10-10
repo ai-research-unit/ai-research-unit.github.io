@@ -250,7 +250,7 @@ $$
 \mathrm{Sc}\!\left(\boldsymbol{\nabla}\tilde{u}\right) = -\sum_i\partial_iu_i = -\boldsymbol{\nabla}\cdot\mathbf{u},
 $$
 
-obtained from $\boldsymbol{\nabla}\tilde{u} = \sum_{i,j}e_ie_j\partial_iu_j$: only the terms with $i = j$ contribute to the center, and $e_i^2 = -e_0$. The divergence-free condition is therefore the vanishing of the central part of $\boldsymbol{\nabla}\tilde{u}$, a scalar statement, while the remainder of $\boldsymbol{\nabla}\tilde{u}$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
+obtained from $\boldsymbol{\nabla}\tilde{u} = \sum_{i,j}e_ie_j\partial_iu_j$: only the terms with $i = j$ contribute to the centre, and $e_i^2 = -e_0$. The divergence-free condition is therefore the vanishing of the central part of $\boldsymbol{\nabla}\tilde{u}$, a scalar statement, while the remainder of $\boldsymbol{\nabla}\tilde{u}$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the vector-part algebra and the commutator $[\tilde{H},\tilde{K}] = -2(\mathbf{h}\times\mathbf{k})$ used in these manipulations.
 
 ### The Energy of a Mode
@@ -304,7 +304,7 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ | Center of $\mathbb{B}$ (the scalars) |
+| $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ | Centre of $\mathbb{B}$ (the scalars) |
 | $\mathrm{Sc}(\cdot)$ | Scalar (central) part |
 | $\tilde{\Lambda} = \cos(\theta/2) + \sin(\theta/2)\hat{\mathbf{n}}$ | Rotation rotor, a real unit quaternion |
 | $\mathbf{v}' = \tilde{\Lambda}\mathbf{v}\tilde{\Lambda}^{\natural}$ | Rotor action on a vector |

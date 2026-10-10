@@ -28,7 +28,7 @@ $$
 \mathbb{C}[e_1] = \{a e_0 + b e_1 : a, b \in \mathbb{C}\} = \mathrm{span}_{\mathbb{R}}\{e_0, e_1, i e_0, i e_1\} \cong \mathbb{C} \times \mathbb{C},
 $$
 
-the largest commutative subalgebra in which $e_1$ is the imaginary unit; the coefficient structure similarly singles out $\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$. These two structures give two inequivalent notions of holomorphy, distinguished in §*Regular Functions: Single-Plane versus Hypercomplex*: no single complex structure reduces the four real variables to one. Finally, $\mathbb{B}$ is a simple algebra whose center is $\mathbb{C}_{\mathbb{B}}$, and its biquaternion norm vanishes exactly on the zero divisors and the origin.
+the largest commutative subalgebra in which $e_1$ is the imaginary unit; the coefficient structure similarly singles out $\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$. These two structures give two inequivalent notions of holomorphy, distinguished in §*Regular Functions: Single-Plane versus Hypercomplex*: no single complex structure reduces the four real variables to one. Finally, $\mathbb{B}$ is a simple algebra whose centre is $\mathbb{C}_{\mathbb{B}}$, and its biquaternion norm vanishes exactly on the zero divisors and the origin.
 
 ## The Cauchy–Riemann Operator and Its Conjugate
 

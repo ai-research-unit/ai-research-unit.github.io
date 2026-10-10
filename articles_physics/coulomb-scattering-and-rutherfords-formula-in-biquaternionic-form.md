@@ -14,7 +14,7 @@ This article treats the continuum of the same central potential whose bound stat
 
 The article is organised as follows. The next section states the Coulomb problem in the biquaternion framework and fixes the Coulomb parameter. The third section carries out the partial-wave decomposition, writes the radial equation, and exhibits the regular Coulomb function and the Coulomb phase. The fourth obtains the scattering amplitude and Rutherford's formula. The fifth gives the Born approximation, evaluates the first Born amplitude, and explains why its modulus is already exact. The sixth treats the long-range tail and the energy dependence of the Coulomb phase. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the center; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; the Hamiltonian is $\tilde H=[-\frac{\hbar^2}{2m}\nabla^2+V(r)]e_0$, central; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $r$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; the Hamiltonian is $\tilde H=[-\frac{\hbar^2}{2m}\nabla^2+V(r)]e_0$, central; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $r$ is the argument of the field.
 
 ## The Coulomb Problem in Biquaternion Form
 
@@ -247,7 +247,7 @@ The biquaternion framework has nothing to add to this argument except the observ
 
 The phase $e^{-i\eta\ln\sin^2(\theta/2)}$ and the phase $2\sigma_0$ are both energy dependent, through $\eta=\alpha/\hbar v$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical signature of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.
 
-In the biquaternion reading these are central phases: $e^{-i\eta\ln\sin^2(\theta/2)}$ and $e^{2i\sigma_0}$ are elements of the center's unit circle $U(1)\subset\mathbb{C}_{\mathbb{B}}$, of the same kind as the free phase $e^{iS/\hbar}$ and the path-integral phase $e^{iS/\hbar}$. They multiply the amplitude without touching the module. The framework's unitary-versus-rotor distinction applies: these are unitary central phases, not unit-norm rotors.
+In the biquaternion reading these are central phases: $e^{-i\eta\ln\sin^2(\theta/2)}$ and $e^{2i\sigma_0}$ are elements of the centre's unit circle $U(1)\subset\mathbb{C}_{\mathbb{B}}$, of the same kind as the free phase $e^{iS/\hbar}$ and the path-integral phase $e^{iS/\hbar}$. They multiply the amplitude without touching the module. The framework's unitary-versus-rotor distinction applies: these are unitary central phases, not unit-norm rotors.
 
 ### The scattering length and the infrared analogy
 
@@ -308,7 +308,7 @@ The biquaternion content is centrality: the potential couples only to the scalar
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_j^2=-e_0$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}$ | Center; home of the amplitude and the phases |
+| $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the amplitude and the phases |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $V(r)=\alpha/r$, $\alpha=Z_1Z_2e^2$ | Coulomb potential, central |
@@ -339,4 +339,4 @@ The biquaternion content is centrality: the potential couples only to the scalar
 - R. H. Dalitz, "On higher Born approximations in potential scattering," *Proceedings of the Royal Society A* **206** (1951) 509–520, for the Coulomb potential as the case in which the first Born approximation gives the exact cross section.
 - C. J. Joachain, *Quantum Collision Theory* (North-Holland, 1975), for the Coulomb partial-wave sum, the long-range phase, and screening corrections.
 - H. A. Bethe and E. E. Salpeter, *Quantum Mechanics of One- and Two-Electron Atoms* (Springer, 1957), for the Coulomb wave functions and the continuum states.
-- P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the biquaternion algebra and its center.
+- P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the biquaternion algebra and its centre.

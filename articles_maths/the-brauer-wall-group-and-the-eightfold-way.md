@@ -13,7 +13,7 @@ The Witt-group material used here — quadratic spaces, orthogonal sums, hyperbo
 
 The ungraded prototype fixes the pattern that the graded group generalises.
 
-**Definition.** A finite-dimensional $F$-algebra $A$ is **central simple** if its center is $F\cdot1$ and its only two-sided ideals are $\{0\}$ and $A$. Two central simple algebras are **Morita equivalent** if their categories of modules are equivalent; equivalently, if $A\cong M_m(D)$ and $B\cong M_n(D)$ for the same division algebra $D$. The **Brauer group** $\mathrm{Br}(F)$ is the set of Morita classes of central simple $F$-algebras, with product induced by the tensor product and unit the class of $F$.
+**Definition.** A finite-dimensional $F$-algebra $A$ is **central simple** if its centre is $F\cdot1$ and its only two-sided ideals are $\{0\}$ and $A$. Two central simple algebras are **Morita equivalent** if their categories of modules are equivalent; equivalently, if $A\cong M_m(D)$ and $B\cong M_n(D)$ for the same division algebra $D$. The **Brauer group** $\mathrm{Br}(F)$ is the set of Morita classes of central simple $F$-algebras, with product induced by the tensor product and unit the class of $F$.
 
 **Theorem.** $\mathrm{Br}(F)$ is a group; if $F$ is algebraically closed then $\mathrm{Br}(F)=0$; and
 
@@ -29,7 +29,7 @@ The Brauer group is the right home for the *ungraded* Clifford algebra: an even-
 
 ## Graded Algebras and Graded Morita Equivalence
 
-**Definition.** A **graded algebra** is an $F$-algebra $A$ together with a direct sum decomposition $A=A^0\oplus A^1$ such that $A^iA^j\subseteq A^{i+j}$ for $i,j\in\mathbb{Z}/2$. It is **graded central simple** if its **graded center** — the set of homogeneous elements $z$ with $zx=(-1)^{|x||z|}xz$ for every homogeneous $x$ — is exactly $F$, and it has no proper nonzero graded two-sided ideals. The **graded tensor product** $A\hat\otimes B$ has underlying space $A\otimes B$ with product
+**Definition.** A **graded algebra** is an $F$-algebra $A$ together with a direct sum decomposition $A=A^0\oplus A^1$ such that $A^iA^j\subseteq A^{i+j}$ for $i,j\in\mathbb{Z}/2$. It is **graded central simple** if its **graded centre** — the set of homogeneous elements $z$ with $zx=(-1)^{|x||z|}xz$ for every homogeneous $x$ — is exactly $F$, and it has no proper nonzero graded two-sided ideals. The **graded tensor product** $A\hat\otimes B$ has underlying space $A\otimes B$ with product
 
 $$
 (a\otimes b)(a'\otimes b')=(-1)^{|b||a'|}(aa')\otimes(bb').
@@ -43,7 +43,7 @@ A Clifford algebra is the model example: $\mathrm{Cl}(V,q)$ is graded central si
 
 **Proof.** The graded tensor product is associative and commutative up to a canonical graded isomorphism — the sign in the product only affects the isomorphism, not the graded Morita class — and it has the unit $F$. Inverses exist by the graded analogue of the opposite-algebra argument. A trivially graded algebra is graded central simple exactly when it is central simple, and the graded tensor product of two trivially graded algebras is their ordinary tensor product, so the trivially graded classes form a subgroup isomorphic to $\mathrm{Br}(F)$. The Clifford class map is well defined on graded Morita classes because a non-degenerate Clifford algebra is graded central simple.
 
-**Remark.** The difference between $\mathrm{Br}$ and $\mathrm{BW}$ is not merely bookkeeping. Neither $\mathbb{C}$ nor $\mathbb{D}$ is central simple over $\mathbb{R}$ — the center of $\mathbb{C}$ is $\mathbb{C}$ itself, and $\mathbb{D}=\mathbb{R}\times\mathbb{R}$ is a product of two fields — yet $\mathrm{Cl}_{0,1}=\mathbb{C}$ and $\mathrm{Cl}_{1,0}=\mathbb{D}$ are perfectly good graded central simple real algebras; the grading remembers the odd generator that the ungraded structure forgets. This is why the graded group is cyclic of order eight while the ungraded one is of order two.
+**Remark.** The difference between $\mathrm{Br}$ and $\mathrm{BW}$ is not merely bookkeeping. Neither $\mathbb{C}$ nor $\mathbb{D}$ is central simple over $\mathbb{R}$ — the centre of $\mathbb{C}$ is $\mathbb{C}$ itself, and $\mathbb{D}=\mathbb{R}\times\mathbb{R}$ is a product of two fields — yet $\mathrm{Cl}_{0,1}=\mathbb{C}$ and $\mathrm{Cl}_{1,0}=\mathbb{D}$ are perfectly good graded central simple real algebras; the grading remembers the odd generator that the ungraded structure forgets. This is why the graded group is cyclic of order eight while the ungraded one is of order two.
 
 ## The Clifford Classes
 

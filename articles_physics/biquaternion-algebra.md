@@ -26,7 +26,7 @@ $$
 
 The algebra can be viewed in two equivalent ways, depending on which scalars are allowed.
 
-**As a $\mathbb{C}$-algebra.** The tensor product $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is naturally a module over $\mathbb{C}$, with the complex scalars acting on the first factor. In this view, $\mathbb{B}$ is a **four-dimensional algebra over $\mathbb{C}$**: its complex basis is $\{e_0, e_1, e_2, e_3\}$, multiplication is $\mathbb{C}$-bilinear, and the algebra is associative and unital with unit $e_0$. Its center is $\mathbb{C}$, and it is isomorphic to the algebra $M_2(\mathbb{C})$ of $2\times2$ complex matrices.
+**As a $\mathbb{C}$-algebra.** The tensor product $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is naturally a module over $\mathbb{C}$, with the complex scalars acting on the first factor. In this view, $\mathbb{B}$ is a **four-dimensional algebra over $\mathbb{C}$**: its complex basis is $\{e_0, e_1, e_2, e_3\}$, multiplication is $\mathbb{C}$-bilinear, and the algebra is associative and unital with unit $e_0$. Its centre is $\mathbb{C}$, and it is isomorphic to the algebra $M_2(\mathbb{C})$ of $2\times2$ complex matrices.
 
 **As an $\mathbb{R}$-algebra.** Forgetting the $\mathbb{C}$-module structure, the same set $\mathbb{B}$ is a **real vector space of dimension $8$**, with real basis $\{e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3\}$. The multiplication is $\mathbb{R}$-bilinear, and the scalar imaginary $i$ is now an element of the algebra, central but not a scalar.
 
@@ -102,7 +102,7 @@ The four coordinates $ct, x, y, z$ and the four coordinates $ct', x', y', z'$ ar
 
 The algebra $\mathbb{B}$ is associative, non-commutative and unital, in both views. It is **not a division algebra**: it has zero divisors, and the study of them is the subject of *Biquaternion Zero Divisors*. In the physics of the series the zero divisors are not a pathology; they are the light cone, and the physical reading is worked out in *The Light Cone as the Biquaternion Zero-Divisor Cone*.
 
-The **center** is $\mathbb{C}$ in both views, with a subtlety worth naming. As a $\mathbb{C}$-algebra, the center is the scalar copy of $\mathbb{C}$ spanned by $e_0$: an element is central exactly when it commutes with every quaternion unit, and those are the $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{C}$. As an $\mathbb{R}$-algebra, the same center is a real vector space of dimension 2, spanned by $e_0$ and $ie_0$. It is the complex time sector of the series, and it carries both time coordinates of the dictionary and no spatial direction.
+The **centre** is $\mathbb{C}$ in both views, with a subtlety worth naming. As a $\mathbb{C}$-algebra, the centre is the scalar copy of $\mathbb{C}$ spanned by $e_0$: an element is central exactly when it commutes with every quaternion unit, and those are the $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{C}$. As an $\mathbb{R}$-algebra, the same centre is a real vector space of dimension 2, spanned by $e_0$ and $ie_0$. It is the complex time sector of the series, and it carries both time coordinates of the dictionary and no spatial direction.
 
 ### Multiplication
 
@@ -199,7 +199,7 @@ an anti-automorphism only up to the sign. This is the algebraic reason the mater
 
 ## The Six Subspaces
 
-The three commuting involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ each split $\mathbb{B}$ into a fixed space and an anti-fixed space. The **six** subspaces so obtained are the distinguished real subspaces of the algebra: four of dimension 4, together with the two-dimensional **center** and the six-dimensional **vector subspace**. The fourth conjugation produces no further subspace, as explained above.
+The three commuting involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ each split $\mathbb{B}$ into a fixed space and an anti-fixed space. The **six** subspaces so obtained are the distinguished real subspaces of the algebra: four of dimension 4, together with the two-dimensional **centre** and the six-dimensional **vector subspace**. The fourth conjugation produces no further subspace, as explained above.
 
 The table gives each subspace under its **algebraic** name, from the property that defines it, and its **physical** name, from the role it plays in the series; the physical interpretation is a column of the same table because in this series it is part of the definition of the object.
 
@@ -310,7 +310,7 @@ Both summands are real vector spaces of dimension 4, and their direct sum is the
 
 **This is the decomposition the physics is organised by.** The two summands are the informational sector and the material sector, and each of them holds a four-position whole: the informational coordinate $ct'\,e_0 + i\mathbf{x}'$ lies in $\mathbb{M}_+$ and the material coordinate $ict\,e_0 + \mathbf{x}$ lies in $\mathbb{M}_-$. The decomposition is a vector-space decomposition and not an algebra decomposition: $\mathbb{M}_+$ and $\mathbb{M}_-$ are not subalgebras, as the witnesses above show, so the split is a split of the objects and not of the products.
 
-## The Center and Vector Decomposition
+## The Centre and Vector Decomposition
 
 The quaternion conjugation is the third commuting involution. Its eigenspaces are the centre $\mathbb{C}_{\mathbb{B}}$ (eigenvalue $+1$) and the vector subspace $\mathrm{Vect}(\mathbb{B})$ (eigenvalue $-1$), of real dimensions 2 and 6. Every biquaternion therefore decomposes uniquely as
 
@@ -576,7 +576,7 @@ The biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathb
 
 It carries four natural conjugations, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and $\flat = -{}^{*}$, of which the first three are commuting involutions and form the Klein four-group together with the identity. The **six** distinguished real subspaces are the eigenspaces of those three involutions:
 
-- the **center** $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$, of dimension 2, fixed by ${}^{\natural}$, a subalgebra isomorphic to $\mathbb{C}$; the complex time sector, carrying $ct'$ and $ict$;
+- the **centre** $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$, of dimension 2, fixed by ${}^{\natural}$, a subalgebra isomorphic to $\mathbb{C}$; the complex time sector, carrying $ct'$ and $ict$;
 - the **vector subspace** $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : Q_0 = 0\}$, of dimension 6, the anti-fixed space of ${}^{\natural}$, the kernel of the scalar part and the derived subspace $[\mathbb{B},\mathbb{B}]$; the complex space sector, carrying $x,y,z$ and $ix',iy',iz'$;
 - the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, of dimension 4, fixed by $\bar{\cdot}$, the subalgebra isomorphic to $\mathbb{H}$; the real sector, carrying $ct',x,y,z$;
 - the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$, of dimension 4, the anti-fixed space of $\bar{\cdot}$, an $\mathbb{H}_{\mathbb{B}}$-module but not a subalgebra; the imaginary sector, carrying $ict,ix',iy',iz'$;

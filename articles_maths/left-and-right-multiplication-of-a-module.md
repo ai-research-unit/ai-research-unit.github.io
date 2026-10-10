@@ -218,7 +218,7 @@ A left $A$-module $M$ carries, for each $a \in A$, the $R$-linear operator $L_a(
 | $\operatorname{Ann}_A(M)$ | annihilator of $M$, the kernel of $\rho$ |
 | ${}_A A$, $A_A$ | left and right regular modules |
 | $A^{\mathrm{op}}$ | opposite algebra, product $a \cdot_{\mathrm{op}} b = ba$ |
-| $Z(A)$ | center of $A$ |
+| $Z(A)$ | centre of $A$ |
 | $L_A'$ | centralizer of $L_A$ in $\operatorname{End}_R(M)$ |
 
 ## Further Reading

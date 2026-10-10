@@ -126,7 +126,7 @@ $$
 
 a double cone with apex at the origin. The nonzero elements of this cone are **zero divisors** of $\mathbb{B}$ (see the companion article on biquaternion zero divisors). The complement of the cone has three connected components: the space-like region, together with the two components of the time-like region, future and past.
 
-**Not a division algebra.** The presence of the zero divisor cone means that $\mathbb{M}_-$ is not a division algebra: there are nonzero elements of $\mathbb{M}_-$ that have no inverse. The physical significance of this is discussed below.
+**Not an algebra, and no inverse on the cone.** $\mathbb{M}_-$ is a real four-dimensional *subspace*, not a subalgebra: the product of two of its elements lies in general in neither sector, so the question whether $\mathbb{M}_-$ is a division algebra does not arise. The invariant statement is about the elements. A nonzero $\tilde{Q}\in\mathbb{M}_-$ on the cone has **no inverse in $\mathbb{B}$**, because inversion is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ and the cone is exactly $N(\tilde{Q}) = 0$; a nonzero element of $\mathbb{M}_-$ off the cone is a unit of $\mathbb{B}$. The physical significance of this is discussed below.
 
 **Basis of the four-dimensional real space.** Every element of $\mathbb{M}_-$ is uniquely written as a linear combination of $ie_0, e_1, e_2, e_3$ with real coefficients. We may therefore identify $\mathbb{M}_-$ with $\mathbb{R}^4$, with the quadratic form $N$ corresponding to the Minkowski metric in the $(ict, x, y, z)$ convention.
 

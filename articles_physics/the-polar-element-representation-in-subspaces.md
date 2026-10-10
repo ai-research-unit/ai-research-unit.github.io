@@ -14,16 +14,16 @@ The restriction is not a cosmetic exercise, because each subspace is the fixed s
 
 | subspace | real dim | biquaternion norm | phase | boost | rotor |
 |---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ — center | 2 | complex, anisotropic | free | $e_0$ | $\pm e_0$ |
+| $\mathbb{C}_{\mathbb{B}}$ — centre | 2 | complex, anisotropic | free | $e_0$ | $\pm e_0$ |
 | $\mathrm{Vect}(\mathbb{B})$ — vector subspace | 6 | complex, indefinite | free | boost about $\mathbf{v}\times\mathbf{w}$ | unit vector in the plane of $\mathbf{v}$ and $\mathbf{w}$ |
 | $\mathbb{H}_{\mathbb{B}}$ — quaternions | 4 | positive definite | $0$ | $e_0$ | free in $\mathrm{Sp}(1)$ |
 | $i\mathbb{H}_{\mathbb{B}}$ — antiquaternions | 4 | negative definite | $\pi/2$ | $e_0$ | free in $\mathrm{Sp}(1)$ |
 | $\mathbb{M}_+$ — informational sector | 4 | real, indefinite | $0$ or $\pi/2$ | the boost, explicit | $\pm e_0$ or a direction |
 | $\mathbb{M}_-$ — material sector | 4 | real, indefinite | $0$ or $\pi/2$ | the boost, explicit | $\pm e_0$ or a direction |
 
-The conventions are those of *Conventions in the Biquaternion Universe*: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ with $\Phi(e_0) = I$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI$; $\mathbb{C}_{\mathbb{B}}$ is the center; $\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar part; $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the home of the rotations; $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation, its imaginary half; $\mathbb{M}_+$ is the fixed space of Hermitian conjugation, the home of the boosts; and $\mathbb{M}_-$ is the anti-fixed space of Hermitian conjugation, with $Q_0 = iq'_0$ and $Q_k$ real, the home of the four-vectors. Every numerical value below was recomputed in double precision; the residuals of the identities quoted are below $2\times10^{-12}$.
+The conventions are those of *Conventions in the Biquaternion Universe*: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ with $\Phi(e_0) = I$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar part; $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the home of the rotations; $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation, its imaginary half; $\mathbb{M}_+$ is the fixed space of Hermitian conjugation, the home of the boosts; and $\mathbb{M}_-$ is the anti-fixed space of Hermitian conjugation, with $Q_0 = iq'_0$ and $Q_k$ real, the home of the four-vectors. Every numerical value below was recomputed in double precision; the residuals of the identities quoted are below $2\times10^{-12}$.
 
-The six restrictions are taken one at a time in the sections that follow, in the order in which the framework names the subspaces — center, vector, quaternion, antiquaternion, informational, material — and each part is built the same way: it opens with the element and its biquaternion norm, states which of the four factors survive, gives the surviving factors explicitly, and closes with worked examples. Where a subspace's defining condition needs a computation of its own — the boost axis and the orthogonality of the rotor in the vector subspace, the two branches of each sector — that computation is a subsection of the part. Three further sections close the article, each a comparison across all six: the biquaternion norm as the single object that decides the phase, the count of the dimensions each factor accounts for, and the four coordinate blocks, on which the six restrictions have to agree element by element.
+The six restrictions are taken one at a time in the sections that follow, in the order in which the framework names the subspaces — centre, vector, quaternion, antiquaternion, informational, material — and each part is built the same way: it opens with the element and its biquaternion norm, states which of the four factors survive, gives the surviving factors explicitly, and closes with worked examples. Where a subspace's defining condition needs a computation of its own — the boost axis and the orthogonality of the rotor in the vector subspace, the two branches of each sector — that computation is a subsection of the part. Three further sections close the article, each a comparison across all six: the biquaternion norm as the single object that decides the phase, the count of the dimensions each factor accounts for, and the four coordinate blocks, on which the six restrictions have to agree element by element.
 
 ## The Four Factors and the Two Criteria
 
@@ -55,7 +55,7 @@ The last identity is the one that decides the whole of what follows, because it 
 
 *Proof.* Let $\tilde{Q}\tilde{Q}^{*} = ce_0$ with $c > 0$. Then $B^2 = (c/r^2)e_0$, a positive real multiple of the unit; the unique Hermitian positive square root of such an element is the positive real multiple $\sqrt{c/r^2}\,e_0$ of the unit, and $N(B) = 1$ forces $\sqrt{c/r^2} = 1$ and $B = e_0$. Conversely $B = e_0$ gives $\tilde{Q}\tilde{Q}^{*} = r^2e_0$.
 
-In the matrix picture the criterion reads $\Phi(\tilde{Q})\Phi(\tilde{Q})^\dagger = \lambda I$ with $\lambda > 0$: the boost factor is trivial exactly when the element is, up to a scale, a **unitary** matrix rather than a general invertible one. That is a condition on the element alone, and it is satisfied on three of the six subspaces for every element — the center and the two halves — on the vector subspace only for a parallel pair, and on the two sectors only in the two exceptional cases computed below.
+In the matrix picture the criterion reads $\Phi(\tilde{Q})\Phi(\tilde{Q})^\dagger = \lambda I$ with $\lambda > 0$: the boost factor is trivial exactly when the element is, up to a scale, a **unitary** matrix rather than a general invertible one. That is a condition on the element alone, and it is satisfied on three of the six subspaces for every element — the centre and the two halves — on the vector subspace only for a parallel pair, and on the two sectors only in the two exceptional cases computed below.
 
 ### Criterion for the Rotor
 
@@ -78,11 +78,11 @@ The two counts are the ones the section *Where the Dimensions Go* distributes ov
 
 The two classes are not the same kind of object. $\mathcal{U}$ is closed under multiplication and under inversion, since a product of two positive multiples of unitary elements is again one, so it is a group — $\mathbb{R}_{>0}\times U(2)$, with the central phase as its circle and the rotor group as its three-sphere. $\mathcal{H}$ is not closed: $\Phi(\tilde{Q}_1\tilde{Q}_2)$ is a product of two Hermitian positive definite matrices, and such a product is Hermitian exactly when the two factors commute, so two boosts about different axes leave the class as soon as they are composed, and only co-axial ones stay in it.
 
-Read on the six subspaces, the membership follows from the same two products. The center lies in both classes. The quaternion and antiquaternion subspaces lie inside $\mathcal{U}$ and meet $\mathcal{H}$ only in the center, since every element of those halves has a real biquaternion norm and hence a trivial boost factor, and a nontrivial rotor. The vector subspace lies inside $\mathcal{U}$ exactly on the parallel pairs $\mathbf{v}\parallel\mathbf{w}$ and never inside $\mathcal{H}$ away from the center. And a sector lies inside $\mathcal{H}$ exactly on its definite branch, the branch on which the rotor is the discrete sign, and inside $\mathcal{U}$ only on the center and on the line $a = 0$, the line on which its Hermitian product degenerates to a scalar.
+Read on the six subspaces, the membership follows from the same two products. The centre lies in both classes. The quaternion and antiquaternion subspaces lie inside $\mathcal{U}$ and meet $\mathcal{H}$ only in the centre, since every element of those halves has a real biquaternion norm and hence a trivial boost factor, and a nontrivial rotor. The vector subspace lies inside $\mathcal{U}$ exactly on the parallel pairs $\mathbf{v}\parallel\mathbf{w}$ and never inside $\mathcal{H}$ away from the centre. And a sector lies inside $\mathcal{H}$ exactly on its definite branch, the branch on which the rotor is the discrete sign, and inside $\mathcal{U}$ only on the centre and on the line $a = 0$, the line on which its Hermitian product degenerates to a scalar.
 
-### The Two Classes Meet in the Center
+### The Two Classes Meet in the Centre
 
-An element of both classes has $B = e_0$ and $\hat{q} = \pm e_0$, hence $\tilde{Q} = \pm\rho e_0 = \pm re^{i\alpha}e_0$, so the intersection is the nonzero part of the center,
+An element of both classes has $B = e_0$ and $\hat{q} = \pm e_0$, hence $\tilde{Q} = \pm\rho e_0 = \pm re^{i\alpha}e_0$, so the intersection is the nonzero part of the centre,
 
 $$
 \mathcal{U}\cap\mathcal{H} = \mathbb{C}_{\mathbb{B}}\setminus\{0\} , \qquad \dim_{\mathbb{R}}\left(\mathcal{U}\cap\mathcal{H}\right) = 2 .
@@ -105,17 +105,17 @@ The matrix representative makes the criteria computable at a glance. With $\Phi(
 
 All six classes are closed under the map $\tilde{Q}\mapsto\tilde{Q}\tilde{Q}^{*}$, and the resulting matrices are what the following sections compute.
 
-## The Center Subspace $\mathbb{C}_{\mathbb{B}}$: the Modulus and the Free Phase
+## The Centre Subspace $\mathbb{C}_{\mathbb{B}}$: the Modulus and the Free Phase
 
 ### The Element and Its Biquaternion Norm
 
-The center is the set of complex scalars, $\tilde{Q} = ze_0$ with $z\in\mathbb{C}$, $z\neq0$. It is two-dimensional over the reals, and its biquaternion norm is the complex anisotropic form
+The centre is the set of complex scalars, $\tilde{Q} = ze_0$ with $z\in\mathbb{C}$, $z\neq0$. It is two-dimensional over the reals, and its biquaternion norm is the complex anisotropic form
 
 $$
 N(\tilde{Q}) = z^2 , \qquad r = |z| ,
 $$
 
-whose argument is $2\arg z$. The biquaternion norm vanishes only at $z = 0$: the center carries no zero divisor other than the origin, and the representation is defined on $\mathbb{C}_{\mathbb{B}}\setminus\{0\}$.
+whose argument is $2\arg z$. The biquaternion norm vanishes only at $z = 0$: the centre carries no zero divisor other than the origin, and the representation is defined on $\mathbb{C}_{\mathbb{B}}\setminus\{0\}$.
 
 ### Which Factors Survive
 
@@ -133,7 +133,7 @@ $$
 \hat{q} = \frac{z}{\rho} = \begin{cases} +e_0 , & \arg z\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right] , \\ -e_0 , & \arg z\in\left(\tfrac{\pi}{2},\pi\right]\cup\left(-{\pi},-\tfrac{\pi}{2}\right] ,\end{cases}
 $$
 
-the two lines being $\rho = z$ and $\rho = -z$. The polar representation of a biquaternion in the center is therefore the polar form of the complex number $z$: the phase is **free**, and it is the argument of the element itself, taken modulo the branch of $\pi$. The two rotors have nothing to act on and reduce to the element $-e_0$ of the kernel of the two-to-one map, and the boundary case $\arg z = -\pi/2$ is the one on which the branch matters: for $\tilde{Q} = -2ie_0$ the phase is pulled from $-\pi/2$ to $+\pi/2$ and the sign is carried by the rotor.
+the two lines being $\rho = z$ and $\rho = -z$. The polar representation of a biquaternion in the centre is therefore the polar form of the complex number $z$: the phase is **free**, and it is the argument of the element itself, taken modulo the branch of $\pi$. The two rotors have nothing to act on and reduce to the element $-e_0$ of the kernel of the two-to-one map, and the boundary case $\arg z = -\pi/2$ is the one on which the branch matters: for $\tilde{Q} = -2ie_0$ the phase is pulled from $-\pi/2$ to $+\pi/2$ and the sign is carried by the rotor.
 
 The matrix statement is the same one: $\Phi(\tilde{Q}) = zI$ is a scalar matrix, its positive Hermitian polar factor is $|z|I$, and the unitary polar factor is the number $z/|z|$ read as $\pm I$ after the branch of the square root has absorbed the sign.
 
@@ -158,7 +158,7 @@ $$
 \tilde{Q} = \mathbf{v} + i\,\mathbf{w} , \qquad \mathbf{v},\mathbf{w}\in\mathbb{R}^3 , \qquad N(\tilde{Q}) = |\mathbf{v}|^2 - |\mathbf{w}|^2 + 2i\,\mathbf{v}\cdot\mathbf{w} , \qquad \operatorname{Sc}(\tilde{Q}) = 0 .
 $$
 
-The biquaternion norm is complex and indefinite, so the phase is free here exactly as it is on the center; it vanishes on the four-dimensional complex null cone $|\mathbf{v}| = |\mathbf{w}|$, $\mathbf{v}\cdot\mathbf{w} = 0$, and the representation is defined on the complement of that cone. In the matrix picture the subspace is the traceless class, $\Phi(\tilde{Q}) = \left(w_k - iv_k\right)\sigma_k$.
+The biquaternion norm is complex and indefinite, so the phase is free here exactly as it is on the centre; it vanishes on the four-dimensional complex null cone $|\mathbf{v}| = |\mathbf{w}|$, $\mathbf{v}\cdot\mathbf{w} = 0$, and the representation is defined on the complement of that cone. In the matrix picture the subspace is the traceless class, $\Phi(\tilde{Q}) = \left(w_k - iv_k\right)\sigma_k$.
 
 ### Which Factors Survive
 
@@ -168,7 +168,7 @@ $$
 \tilde{Q}\tilde{Q}^{*} = \left(|\mathbf{v}|^2 + |\mathbf{w}|^2\right)e_0 + 2i\left(\mathbf{v}\times\mathbf{w}\right) ,
 $$
 
-which is a positive scalar only when $\mathbf{v}\times\mathbf{w} = 0$. Hence the boost factor is trivial **exactly when the two vectors are parallel**, and in that case $\tilde{Q} = z\hat{\mathbf{v}}$ with $z = |\mathbf{v}|\pm i|\mathbf{w}|$ according to the relative sign, so the element is a complex multiple of a single real direction, $N(\tilde{Q}) = z^2$, and on the line $\mathbb{R}\{\mathbf{v}\}$ the representation is the representation of the center. When the two vectors are not parallel the boost factor is
+which is a positive scalar only when $\mathbf{v}\times\mathbf{w} = 0$. Hence the boost factor is trivial **exactly when the two vectors are parallel**, and in that case $\tilde{Q} = z\hat{\mathbf{v}}$ with $z = |\mathbf{v}|\pm i|\mathbf{w}|$ according to the relative sign, so the element is a complex multiple of a single real direction, $N(\tilde{Q}) = z^2$, and on the line $\mathbb{R}\{\mathbf{v}\}$ the representation is the representation of the centre. When the two vectors are not parallel the boost factor is
 
 $$
 B = \frac{\sqrt{\left(|\mathbf{v}|^2+|\mathbf{w}|^2\right)e_0 + 2i\left(\mathbf{v}\times\mathbf{w}\right)}}{\sqrt{|N(\tilde{Q})|}} = \cosh\varphi\,e_0 + i\sinh\varphi\,\frac{\mathbf{v}\times\mathbf{w}}{|\mathbf{v}\times\mathbf{w}|} ,
@@ -420,7 +420,7 @@ The phase is $\alpha = \tfrac12\arg N(\tilde{Q})$, so the phase is constant on a
 | $\mathbb{M}_+$ | $a^2-s^2$, real indefinite | $0$ or $\pi$ | $0$ or $\pi/2$ |
 | $\mathbb{M}_-$ | $s^2-a^2$, real indefinite | $0$ or $\pi$ | $0$ or $\pi/2$ |
 
-The rule is therefore: **the phase is frozen when the biquaternion norm is definite, two-valued when the biquaternion norm is real indefinite, and free when the biquaternion norm is complex.** The center and the vector subspace are the two subspaces with a complex biquaternion norm, and they are the two on which the phase is a genuine coordinate. The two halves, whose biquaternion norms have signature $(4,0)$ and $(0,4)$, are the subspaces on which the phase is a constant — the two constants being the two angles $0$ and $\pi/2$ that distinguish a real from a purely imaginary real quaternion. The two sectors, on which the biquaternion norm is a real indefinite quadratic form, are the subspaces on which the phase is a two-valued label, and the label is the causal character of the element: on $\mathbb{M}_+$ the pattern is the reverse of that on $\mathbb{M}_-$, where $\alpha = 0$ for a spacelike and $\alpha = \pi/2$ for a timelike element.
+The rule is therefore: **the phase is frozen when the biquaternion norm is definite, two-valued when the biquaternion norm is real indefinite, and free when the biquaternion norm is complex.** The centre and the vector subspace are the two subspaces with a complex biquaternion norm, and they are the two on which the phase is a genuine coordinate. The two halves, whose biquaternion norms have signature $(4,0)$ and $(0,4)$, are the subspaces on which the phase is a constant — the two constants being the two angles $0$ and $\pi/2$ that distinguish a real from a purely imaginary real quaternion. The two sectors, on which the biquaternion norm is a real indefinite quadratic form, are the subspaces on which the phase is a two-valued label, and the label is the causal character of the element: on $\mathbb{M}_+$ the pattern is the reverse of that on $\mathbb{M}_-$, where $\alpha = 0$ for a spacelike and $\alpha = \pi/2$ for a timelike element.
 
 The same table decides where the representation fails. The biquaternion norm vanishes only where the quadratic form is isotropic:
 
@@ -432,7 +432,7 @@ The same table decides where the representation fails. The biquaternion norm van
 | $\mathbb{M}_+$ | the cone $|a| = s$ | fails on the cone |
 | $\mathbb{M}_-$ | the light cone $s = |a|$ | fails on the light cone |
 
-The two halves and the center carry no zero divisors other than the origin, which is the corpus's statement that the degeneracy of the algebra lies in the sectors and in the vector subspace. The null cones are the boundaries between the two branches of the phase in the sectors: crossing the light cone in $\mathbb{M}_-$ is crossing from $\alpha = 0$ to $\alpha = \pi/2$, and the representation fails exactly at the crossing because the two branches meet at $r = 0$. In the vector subspace the null cone is the four-dimensional cone $|\mathbf{v}| = |\mathbf{w}|$, $\mathbf{v}\cdot\mathbf{w} = 0$, on which the two vectors are the real and imaginary parts of a null complex vector; there the boost factor and the rotor both blow up, and the element is a zero divisor, as in the sectors.
+The two halves and the centre carry no zero divisors other than the origin, which is the corpus's statement that the degeneracy of the algebra lies in the sectors and in the vector subspace. The null cones are the boundaries between the two branches of the phase in the sectors: crossing the light cone in $\mathbb{M}_-$ is crossing from $\alpha = 0$ to $\alpha = \pi/2$, and the representation fails exactly at the crossing because the two branches meet at $r = 0$. In the vector subspace the null cone is the four-dimensional cone $|\mathbf{v}| = |\mathbf{w}|$, $\mathbf{v}\cdot\mathbf{w} = 0$, on which the two vectors are the real and imaginary parts of a null complex vector; there the boost factor and the rotor both blow up, and the element is a zero divisor, as in the sectors.
 
 ## Where the Dimensions Go
 
@@ -449,7 +449,7 @@ Each row below is the count of the real dimensions of the subspace, distributed 
 | $\mathbb{M}_-$, timelike | $4$ | $1$ | $0$ (fixed $\pi/2$) | $3$ | $0$ (discrete $\pm e_0$) |
 | $\mathbb{M}_-$, spacelike | $4$ | $1$ | $0$ (fixed $0$) | $1$ (the rapidity) | $2$ (the direction) |
 
-Only the vector subspace carries the phase as a dimension of its own together with a nontrivial boost and a nontrivial rotor, and this is why it is the largest of the six. On the center only the modulus survives; on the two halves the boost is absent and the rotor absorbs everything but the scale; on the two sectors either the rotor or the boost is reduced to a single number or to a direction. No subspace carries the four factors independently, and the counting above is the exact statement of the dependencies.
+Only the vector subspace carries the phase as a dimension of its own together with a nontrivial boost and a nontrivial rotor, and this is why it is the largest of the six. On the centre only the modulus survives; on the two halves the boost is absent and the rotor absorbs everything but the scale; on the two sectors either the rotor or the boost is reduced to a single number or to a direction. No subspace carries the four factors independently, and the counting above is the exact statement of the dependencies.
 
 ## The Four Blocks
 
@@ -468,7 +468,7 @@ are the intersections of the six subspaces, and each block lies in three of them
 | $X_{\mathrm{m}}$ | $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$ | $\mathbf{x}$ | $|\mathbf{x}|$ | $0$ | $e_0$ | $\hat{\mathbf{x}}$ |
 | $X_{\mathrm{i}}$ | $\mathrm{Vect}(\mathbb{B})$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ | $i\mathbf{w}$ | $|\mathbf{w}|$ | $\pi/2$ | $e_0$ | $\hat{\mathbf{w}}$ |
 
-Every entry satisfies the restrictions of each subspace that contains it. On $T_{\mathrm{i}}$ the center gives $\hat{q} = \pm e_0$, the quaternion subspace gives $\hat{q} = \tilde{Q}/|\tilde{Q}| = \pm e_0$, and the informational sector with $s = 0$ gives $m = 0$, hence $B = e_0$ and $\hat{q} = \operatorname{sign}(a)e_0$; the three readings are the same. On $X_{\mathrm{m}}$ the vector subspace reading has $\mathbf{w} = 0$, which is the degenerate case $\mathbf{v}\times\mathbf{w} = 0$, hence $B = e_0$; the quaternion reading gives the rotor $\hat{\mathbf{x}}$; and the material-sector reading with $a = 0$ gives the spacelike rotor $\hat{\mathbf{v}} = \hat{\mathbf{x}}$ with the trivial boost $B = e_0$; the three readings are the same. On $X_{\mathrm{i}}$ the vector, antiquaternion and informational readings agree the same way, with the phase $\pi/2$ and the rotor $\hat{\mathbf{w}}$ in all three. The blocks are therefore the elements on which all the applicable simplifications hold at once, and the table is a consistency check of the six sections above rather than a new computation.
+Every entry satisfies the restrictions of each subspace that contains it. On $T_{\mathrm{i}}$ the centre gives $\hat{q} = \pm e_0$, the quaternion subspace gives $\hat{q} = \tilde{Q}/|\tilde{Q}| = \pm e_0$, and the informational sector with $s = 0$ gives $m = 0$, hence $B = e_0$ and $\hat{q} = \operatorname{sign}(a)e_0$; the three readings are the same. On $X_{\mathrm{m}}$ the vector subspace reading has $\mathbf{w} = 0$, which is the degenerate case $\mathbf{v}\times\mathbf{w} = 0$, hence $B = e_0$; the quaternion reading gives the rotor $\hat{\mathbf{x}}$; and the material-sector reading with $a = 0$ gives the spacelike rotor $\hat{\mathbf{v}} = \hat{\mathbf{x}}$ with the trivial boost $B = e_0$; the three readings are the same. On $X_{\mathrm{i}}$ the vector, antiquaternion and informational readings agree the same way, with the phase $\pi/2$ and the rotor $\hat{\mathbf{w}}$ in all three. The blocks are therefore the elements on which all the applicable simplifications hold at once, and the table is a consistency check of the six sections above rather than a new computation.
 
 ## Physical Readings
 
@@ -476,7 +476,7 @@ The two criteria read as the framework's tests of positivity and of Hermiticity:
 
 ## Summary
 
-Restricted to the six distinguished subspaces, the polar representation $\tilde{Q} = re^{i\alpha}B\hat{q}$ loses one or more of its factors, and the loss is computable from the involution that defines the subspace. The scale is always the square root of the absolute value of the determinant, and it never degenerates except on the null cones. The phase is half the argument of the biquaternion norm: it is a free coordinate on the center and on the vector subspace, where the biquaternion norm is complex; it is frozen at $0$ on the real quaternion subspace and at $\pi/2$ on the antiquaternion subspace, where the biquaternion norm is definite; and it is a two-valued label of the causal character of the element on the two sectors, where the biquaternion norm is real indefinite. The boost factor is trivial exactly on the subspaces and on the elements for which $\tilde{Q}\tilde{Q}^{*}$ is a positive scalar: that is every element of the center, every parallel pair $\mathbf{v}\parallel\mathbf{w}$ in the vector subspace, and every element of the two halves; it is the exceptional case of a vanishing time coordinate, $a = 0$, or a vanishing vector part, in the sectors. The rotor is a central sign exactly when $\tilde{Q}/\rho$ is Hermitian: that is the center, and one branch of each sector — the definite branch of the informational sector and the timelike branch of the material sector — while on the other branch it is a pure unit vector, the direction of the element. The vector subspace exhibits the rotor relative to the boost, with the scalar part vanishing exactly when the two axes are orthogonal; on the two halves the rotor is free and the boost is absent, so the halves exhibit the rotor alone; and the sectors exhibit the boost alone and reduce the rotor to a sign or to a direction. The six restrictions together exhaust the ways in which the four factors can depend on one another, and the biquaternion norm — positive definite, negative definite, real indefinite, complex anisotropic, complex indefinite — is what decides which way each subspace goes. Read over the whole algebra rather than on one subspace, the two criteria cut two classes out of the nonzero elements: the boost-free elements, which are the positive multiples of the unitary elements and form a group, and the rotor-free elements, which are the complex multiples of the Hermitian definite ones and do not. Each class has five real dimensions, and they meet exactly in the center, the count $5+5-8 = 2$ closing against the eight real dimensions of the group of units; on the unit-norm slice they become the rotor group and the boosts with a discrete sign, the two halves of the Cartan decomposition.
+Restricted to the six distinguished subspaces, the polar representation $\tilde{Q} = re^{i\alpha}B\hat{q}$ loses one or more of its factors, and the loss is computable from the involution that defines the subspace. The scale is always the square root of the absolute value of the determinant, and it never degenerates except on the null cones. The phase is half the argument of the biquaternion norm: it is a free coordinate on the centre and on the vector subspace, where the biquaternion norm is complex; it is frozen at $0$ on the real quaternion subspace and at $\pi/2$ on the antiquaternion subspace, where the biquaternion norm is definite; and it is a two-valued label of the causal character of the element on the two sectors, where the biquaternion norm is real indefinite. The boost factor is trivial exactly on the subspaces and on the elements for which $\tilde{Q}\tilde{Q}^{*}$ is a positive scalar: that is every element of the centre, every parallel pair $\mathbf{v}\parallel\mathbf{w}$ in the vector subspace, and every element of the two halves; it is the exceptional case of a vanishing time coordinate, $a = 0$, or a vanishing vector part, in the sectors. The rotor is a central sign exactly when $\tilde{Q}/\rho$ is Hermitian: that is the centre, and one branch of each sector — the definite branch of the informational sector and the timelike branch of the material sector — while on the other branch it is a pure unit vector, the direction of the element. The vector subspace exhibits the rotor relative to the boost, with the scalar part vanishing exactly when the two axes are orthogonal; on the two halves the rotor is free and the boost is absent, so the halves exhibit the rotor alone; and the sectors exhibit the boost alone and reduce the rotor to a sign or to a direction. The six restrictions together exhaust the ways in which the four factors can depend on one another, and the biquaternion norm — positive definite, negative definite, real indefinite, complex anisotropic, complex indefinite — is what decides which way each subspace goes. Read over the whole algebra rather than on one subspace, the two criteria cut two classes out of the nonzero elements: the boost-free elements, which are the positive multiples of the unitary elements and form a group, and the rotor-free elements, which are the complex multiples of the Hermitian definite ones and do not. Each class has five real dimensions, and they meet exactly in the centre, the count $5+5-8 = 2$ closing against the eight real dimensions of the group of units; on the unit-norm slice they become the rotor group and the boosts with a discrete sign, the two halves of the Cartan decomposition.
 
 ## Summary of Notation
 
@@ -490,7 +490,7 @@ Restricted to the six distinguished subspaces, the polar representation $\tilde{
 | $\hat{q} = \pm e_0 \iff \tilde{Q}/\rho$ Hermitian | the criterion for a trivial rotor |
 | $B = e_0 \iff \tilde{Q}\tilde{Q}^{*}\in\mathbb{R}_{>0}e_0$ | the criterion for a trivial boost |
 | $\mathcal{U}$, $\mathcal{H}$ | the boost-free and the rotor-free classes, $B=e_0$ and $\hat{q}=\pm e_0$; five real dimensions each, meeting exactly in $\mathbb{C}_{\mathbb{B}}\setminus\{0\}$ |
-| $\mathbb{C}_{\mathbb{B}}$ | the center |
+| $\mathbb{C}_{\mathbb{B}}$ | the centre |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, $\operatorname{Sc}(\tilde{Q}) = 0$ |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | real quaternion subspace, antiquaternion subspace |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | informational and material sectors |
@@ -507,7 +507,7 @@ Restricted to the six distinguished subspaces, the polar representation $\tilde{
 
 - *The Polar Element Representation of Biquaternions* (`articles_physics/the-polar-element-representation-of-biquaternions.md`), for the theorem, the four factors, the algorithm and the uniqueness, the determinant, the interval and the light cone.
 - *Relations Between Subspaces* (`articles_physics/relations-between-subspaces.md`), for the six subspaces, the involutions, the four blocks, the intersections and the biquaternion norm of each subspace.
-- *The Four Other Remarkable Subspaces* (`articles_physics/the-four-other-remarkable-subspaces.md`), for the center, the vector subspace, the quaternion and the anti-quaternion subspace: their dimensions over the reals and over the complex numbers and the coordinates each carries.
+- *The Four Other Remarkable Subspaces* (`articles_physics/the-four-other-remarkable-subspaces.md`), for the centre, the vector subspace, the quaternion and the anti-quaternion subspace: their dimensions over the reals and over the complex numbers and the coordinates each carries.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (`articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md`), for the boosts and the information reading.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* (`articles_physics/the-anti-hermitian-subspace-m-as-the-material-sector.md`), for the four-vectors and the light cone.
-- *The 2×2 Matrix Element Representation of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-of-biquaternions.md`), for the matrix classes of the six subspaces and $\det\Phi(\tilde{Q}) = N(\tilde{Q})$.
+- *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the matrix classes of the six subspaces and $\det\Phi(\tilde{Q}) = N(\tilde{Q})$.

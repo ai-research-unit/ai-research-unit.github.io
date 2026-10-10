@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A particle of integer spin is, in Wigner's classification, a state that transforms under the rotation group in a representation of dimension $2s+1$: one state for $s=0$, three for $s=1$, five for $s=2$. The spin-$0$ case is realized in the biquaternion framework by the center $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$, on which the rotations act trivially; the spin-$\tfrac12$ case by the left ideal that carries the fundamental representation, treated in the companion subcategory on spin $\tfrac12$. The present article treats the integer-spin cases, and its central claim is that the **spin-one** representation is not merely compatible with the biquaternion algebra but is *the same object as* a natural operation inside it: the adjoint action of the rotation algebra on the vector part of the material sector $\mathbb{M}_-$ is, on the nose, the three-dimensional spin-one representation.
+A particle of integer spin is, in Wigner's classification, a state that transforms under the rotation group in a representation of dimension $2s+1$: one state for $s=0$, three for $s=1$, five for $s=2$. The spin-$0$ case is realized in the biquaternion framework by the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$, on which the rotations act trivially; the spin-$\tfrac12$ case by the left ideal that carries the fundamental representation, treated in the companion subcategory on spin $\tfrac12$. The present article treats the integer-spin cases, and its central claim is that the **spin-one** representation is not merely compatible with the biquaternion algebra but is *the same object as* a natural operation inside it: the adjoint action of the rotation algebra on the vector part of the material sector $\mathbb{M}_-$ is, on the nose, the three-dimensional spin-one representation.
 
 This identification is the framework's own contribution, and it is the reason the subcategory is organized around the material sector rather than around a separate internal space. The algebra does not have to be told what a vector is, nor how the rotation group acts on one, in order to produce the spin-one triplet: the quaternion multiplication already does it, and the diagonalization of the adjoint action already produces the circular and longitudinal polarizations that the massive vector field needs.
 
@@ -12,7 +12,7 @@ The article is organized as follows. The rotation algebra is constructed as the 
 - Companion article *The Photon in Biquaternionic Form*, for the massless helicity states, the circular polarization basis, and the removal of the longitudinal state.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the Fock construction and the proof that the ladder algebra is not native to $\mathbb{B}$.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the connection between integer spin and bosonic exchange symmetry.
-- Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar case and the trivial action of the rotations on the center.
+- Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar case and the trivial action of the rotations on the centre.
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the two massless polarizations and the first-class constraint structure.
 - Companion article *Canonical Quantization of the Biquaternion Proca Field*, for the massive vector field whose three on-shell polarizations are the weight basis of this article.
 - Companion article *Canonical Quantization of the Biquaternion Graviton Field*, for the rank-two instance of the tensor-power construction, where the trace removal is performed on the symmetric square of the material vector.
@@ -29,7 +29,7 @@ $$
 R_Q:\;\tilde{Q}\longmapsto Q\tilde{Q}Q^{-1}=\bar{Q}\tilde{Q}Q
 $$
 
-is an algebra automorphism that fixes the center, hence fixes $i$, and preserves the division of $\mathbb{B}$ into $\mathbb{M}_-$ and $\mathbb{M}_+$: conjugation preserves the Hermiticity type, so the material sector is mapped to itself. Writing $Q=e^{\theta\,e_k/2}$ with $\theta$ the rotation angle about the $k$-th axis, the infinitesimal generator of the map is the inner derivation
+is an algebra automorphism that fixes the centre, hence fixes $i$, and preserves the division of $\mathbb{B}$ into $\mathbb{M}_-$ and $\mathbb{M}_+$: conjugation preserves the Hermiticity type, so the material sector is mapped to itself. Writing $Q=e^{\theta\,e_k/2}$ with $\theta$ the rotation angle about the $k$-th axis, the infinitesimal generator of the map is the inner derivation
 
 $$
 \delta_k\tilde{Q} = \tfrac{\theta}{2}\,[e_k,\tilde{Q}] = \tfrac{\theta}{2}\,\mathrm{ad}_{e_k}\tilde{Q} .
@@ -183,7 +183,7 @@ $$
 \mathbf{S}_k = \tfrac12\mathrm{ad}_{ie_k},
 $$
 
-with $\mathbf{S}$ the adjoint action acting on the material index. The two commute, because $\mathbf{L}$ acts on the argument and $\mathbf{S}$ on the value, and the total generators satisfy the same algebra. The scalar field of the companion spin-$0$ subcategory has $\mathbf{S}=0$ because its values lie in the center; the spin-$\tfrac12$ field has $\mathbf{S}$ equal to the left-ideal action of the companion subcategory. The integer-spin field of spin one is the first case in which the internal action is the adjoint action, and the reason is that the field is a material **vector**, the representation of $\mathbb{B}$ that the algebra naturally acts on by bracketing.
+with $\mathbf{S}$ the adjoint action acting on the material index. The two commute, because $\mathbf{L}$ acts on the argument and $\mathbf{S}$ on the value, and the total generators satisfy the same algebra. The scalar field of the companion spin-$0$ subcategory has $\mathbf{S}=0$ because its values lie in the centre; the spin-$\tfrac12$ field has $\mathbf{S}$ equal to the left-ideal action of the companion subcategory. The integer-spin field of spin one is the first case in which the internal action is the adjoint action, and the reason is that the field is a material **vector**, the representation of $\mathbb{B}$ that the algebra naturally acts on by bracketing.
 
 The decomposition of the material sector, $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0\}\oplus V$, is the decomposition of the field into a spin-$0$ piece and a spin-$1$ piece under the internal action. For the Proca field this is not a decomposition into independent physical fields — the constraint structure of the massive vector theory ties the two together, and the spin-$0$ component $A_0$ is not independent — but it is the correct transformation law of the components.
 

@@ -46,7 +46,7 @@ $$
 M(\tilde{\rho}) = \tfrac{1}{2}\bigl(I_2 + \mathbf{r}\cdot\boldsymbol{\sigma}\bigr),
 $$
 
-whose eigenvalues are $\tfrac12(1\pm|\mathbf{r}|)$. Positivity, $M(\tilde{\rho})\geq0$, is therefore equivalent to $|\mathbf{r}|\leq1$, and the states form the Bloch ball. The boundary $|\mathbf{r}|=1$ is the set of pure states; the center $\mathbf{r}=0$ is the maximally mixed state $\tilde{\rho} = \tfrac12 e_0$.
+whose eigenvalues are $\tfrac12(1\pm|\mathbf{r}|)$. Positivity, $M(\tilde{\rho})\geq0$, is therefore equivalent to $|\mathbf{r}|\leq1$, and the states form the Bloch ball. The boundary $|\mathbf{r}|=1$ is the set of pure states; the centre $\mathbf{r}=0$ is the maximally mixed state $\tilde{\rho} = \tfrac12 e_0$.
 
 ### Purity and the deviation from idempotency
 
@@ -93,7 +93,7 @@ $$
 N(\tilde{\rho}) = \tfrac{1}{4}\bigl(1 - |\mathbf{r}|^2\bigr)e_0 ,
 $$
 
-a scalar element of the center. Three readings of this single identity organize the rest of the article:
+a scalar element of the centre. Three readings of this single identity organize the rest of the article:
 
 - $N(\tilde{\rho})\geq0$ is positivity, with equality exactly on the pure states; the biquaternion norm's zero set is the boundary of the Bloch ball, the zero-divisor cone of $\mathbb{M}_+$.
 - Comparing with the deviation from idempotency, $\tilde{\rho}^2-\tilde{\rho} = -N(\tilde{\rho})e_0$: **the mixedness of a state is minus its biquaternion norm**. There is no other mixedness parameter.
@@ -189,11 +189,11 @@ $$
 0 \;\leq\; S(\tilde{\rho}) \;\leq\; \log 2 ,
 $$
 
-with $S=0$ exactly on the pure states (the zero divisors of the biquaternion norm) and $S=\log 2$ exactly at the maximally mixed state, the unique maximizer. The upper bound is the dimension of the module in nats, $\log\dim_{\mathbb{C}}S = \log2$, and it is attained at the center of the Bloch ball, which is also the point where the biquaternion norm takes its maximal value $\tfrac14$ on the trace-one slice.
+with $S=0$ exactly on the pure states (the zero divisors of the biquaternion norm) and $S=\log 2$ exactly at the maximally mixed state, the unique maximizer. The upper bound is the dimension of the module in nats, $\log\dim_{\mathbb{C}}S = \log2$, and it is attained at the centre of the Bloch ball, which is also the point where the biquaternion norm takes its maximal value $\tfrac14$ on the trace-one slice.
 
 ### Monotonicity and the cone
 
-Define the "radial" coordinate $\rho_{\mathrm{B}} = |\mathbf{r}| = \sqrt{1-4N}$. Radial contraction of the state toward the center — the operation $\mathbf{r}\mapsto(1-p)\mathbf{r}$ for $0\leq p\leq1$, which is depolarization — strictly increases $N$ and strictly increases $S$ for any state with $\mathbf{r}\neq0$. Radial expansion toward the boundary strictly decreases both. In the language of the cone, moving the state deeper into the positive cone (larger $N$) increases its entropy; approaching the zero-divisor cone ($N\to0$) decreases it to zero. Entropy is thus a monotone coordinate on the cone slice, and the pure states form its boundary.
+Define the "radial" coordinate $\rho_{\mathrm{B}} = |\mathbf{r}| = \sqrt{1-4N}$. Radial contraction of the state toward the centre — the operation $\mathbf{r}\mapsto(1-p)\mathbf{r}$ for $0\leq p\leq1$, which is depolarization — strictly increases $N$ and strictly increases $S$ for any state with $\mathbf{r}\neq0$. Radial expansion toward the boundary strictly decreases both. In the language of the cone, moving the state deeper into the positive cone (larger $N$) increases its entropy; approaching the zero-divisor cone ($N\to0$) decreases it to zero. Entropy is thus a monotone coordinate on the cone slice, and the pure states form its boundary.
 
 ### Concavity
 

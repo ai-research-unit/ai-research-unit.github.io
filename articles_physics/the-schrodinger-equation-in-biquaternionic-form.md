@@ -34,7 +34,7 @@ $$
 \mathbb{C}_{\mathbb{B}} = \{Q_0\,e_0 : Q_0 \in \mathbb{C}\} = \operatorname{span}_{\mathbb{R}}\{e_0, i\,e_0\},
 $$
 
-a copy of the complex line embedded as the scalar part, and it is the center of $\mathbb{B}$. Within it the roots of $-1$ are exactly $\pm i$: the scalar imaginary is not "one root of $-1$ among many" but *the* central one.
+a copy of the complex line embedded as the scalar part, and it is the centre of $\mathbb{B}$. Within it the roots of $-1$ are exactly $\pm i$: the scalar imaginary is not "one root of $-1$ among many" but *the* central one.
 
 ### The quaternion units and the non-central roots
 
@@ -64,7 +64,7 @@ so $i$ carries $\mathbb{M}_+$ out of itself; it is not an operator on $\mathbb{M
 
 | Object | Where it lives | Central? | Role |
 |---|---|---|---|
-| Scalar imaginary $i$ | $\mathbb{C}_{\mathbb{B}}$, the center | Yes | Complex structure of the state module; the $i$ of the Schrödinger equation |
+| Scalar imaginary $i$ | $\mathbb{C}_{\mathbb{B}}$, the centre | Yes | Complex structure of the state module; the $i$ of the Schrödinger equation |
 | Quaternion units $e_j$ | $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ (pure real) | No | Rotation generators, state axes |
 | Non-central roots $\hat{\mu}$ | $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$, unit sphere | No | Bloch-sphere axes; idempotent directions |
 | Complex structure of the state module | Acts on $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$ | — | Left multiplication by the central $i$; not a structure on $\mathbb{M}_+$ |
@@ -196,7 +196,7 @@ $$
 \quad\text{for all Hermitian } \tilde{H}.
 $$
 
-Taking $\tilde{H} = e_0$ gives $J^\dagger = -J$, so $J$ must be anti-Hermitian; the condition then becomes $\tilde{H}J = J\tilde{H}$ for every Hermitian $\tilde{H}$. Take $\tilde{H} = i\,e_j$ with $j = 1,2,3$, which is Hermitian: since $i$ is central, the condition reads $e_jJ = Je_j$, so $J$ commutes with the quaternion units. Writing $J = \sum_\mu q_\mu e_\mu$, the relations $e_1J = Je_1$ and $e_2J = Je_2$ give $q_2 = q_3 = 0$ and then $q_1 = 0$, leaving $J = q_0e_0$ with $q_0 \in \mathbb{C}$. The centralizer of the quaternion units is therefore the center $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_0, ie_0\}$: $J$ is central. Then $J^2 = -e_0$ gives $q_0^2 = -1$, so $q_0 = \pm i$. Thus the scalar imaginary is the *unique* choice, up to sign, that makes the equation norm-preserving for every Hermitian Hamiltonian.
+Taking $\tilde{H} = e_0$ gives $J^\dagger = -J$, so $J$ must be anti-Hermitian; the condition then becomes $\tilde{H}J = J\tilde{H}$ for every Hermitian $\tilde{H}$. Take $\tilde{H} = i\,e_j$ with $j = 1,2,3$, which is Hermitian: since $i$ is central, the condition reads $e_jJ = Je_j$, so $J$ commutes with the quaternion units. Writing $J = \sum_\mu q_\mu e_\mu$, the relations $e_1J = Je_1$ and $e_2J = Je_2$ give $q_2 = q_3 = 0$ and then $q_1 = 0$, leaving $J = q_0e_0$ with $q_0 \in \mathbb{C}$. The centralizer of the quaternion units is therefore the centre $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_0, ie_0\}$: $J$ is central. Then $J^2 = -e_0$ gives $q_0^2 = -1$, so $q_0 = \pm i$. Thus the scalar imaginary is the *unique* choice, up to sign, that makes the equation norm-preserving for every Hermitian Hamiltonian.
 
 **A counterexample for a quaternion unit.** Take $J = e_3$ (a root of $-1$) and the Hermitian $\tilde{H} = i\,e_1$. Then
 
@@ -291,7 +291,7 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_j^2 = -e_0$ |
 | $i$ | Scalar imaginary, central, $i^2 = -e_0$ |
-| $\mathbb{C}_{\mathbb{B}}$ | Complex subspace $\operatorname{span}_{\mathbb{R}}\{e_0, ie_0\}$; the center |
+| $\mathbb{C}_{\mathbb{B}}$ | Complex subspace $\operatorname{span}_{\mathbb{R}}\{e_0, ie_0\}$; the centre |
 | $\mathbb{M}_+$ | Hermitian subspace (observables): $i\hbar\,\partial_t\psi = \tilde{H}\psi$ has $\tilde{H} \in \mathbb{M}_+$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (generators): $\tilde{G} = -i\tilde{H}/\hbar \in \mathbb{M}_-$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; home of the unit pure quaternions $\hat{\mu}$ |

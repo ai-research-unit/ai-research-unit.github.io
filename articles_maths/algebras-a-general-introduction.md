@@ -226,15 +226,15 @@ $$
 
 for all $u, v \in A$. Commutativity is a strong condition.
 
-### The Center
+### The Centre
 
-The **center** of an algebra $A$ over a commutative ring $R$ is the set of elements that commute with every element of $A$:
+The **centre** of an algebra $A$ over a commutative ring $R$ is the set of elements that commute with every element of $A$:
 
 $$
 Z(A) = \{z \in A : zv = vz \text{ for all } v \in A\}.
 $$
 
-For an associative algebra $A$, the center is a commutative subalgebra of $A$ over $R$.
+For an associative algebra $A$, the centre is a commutative subalgebra of $A$ over $R$.
 
 ### Units and Zero Divisors
 

@@ -1,10 +1,10 @@
-# __The 2×2 Matrix Operator Representation of Biquaternions__
+# __The 2×2 Matrix Operator Representation $M_2(\mathbb{C})$ of Biquaternions__
 
 ## Introduction
 
 Physically this is the realization in which the Lorentz transformation of a four-vector is the congruence of the Hermitian matrix that represents it, which is the standard matrix form of the transformation written elsewhere in the corpus with rotors.
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$, with $\Phi(e_k) = -i\sigma_k$, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ and $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$, is that of *The 2×2 Matrix Element Representation of Biquaternions*, together with the simple module $V = \mathbb{C}^2$ on which the matrices act and which carries the two chiralities of the framework.
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$, with $\Phi(e_k) = -i\sigma_k$, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ and $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$, is that of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, together with the simple module $V = \mathbb{C}^2$ on which the matrices act and which carries the two chiralities of the framework.
 
 The element article answers *what is* $\tilde{Q}$ by displaying its matrix. This article answers *what does* $\tilde{Q}$ *do*, and it answers it in the smallest space that carries an action at all: the algebra is $M_2(\mathbb{C})$, and the Hermitian sandwich of *Biquaternion Rotations and Lorentz Transformations* acts on it by the **congruence**
 

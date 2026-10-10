@@ -420,7 +420,7 @@ $$
 \ge \frac{1}{4\pi}.
 $$
 
-Equivalently, for any centers $a_0, \xi_0 \in \mathbb{R}$ the same lower bound holds with $(a - a_0)^2$ and $(\xi - \xi_0)^2$.
+Equivalently, for any centres $a_0, \xi_0 \in \mathbb{R}$ the same lower bound holds with $(a - a_0)^2$ and $(\xi - \xi_0)^2$.
 
 **Proof.** By translation and modulation one may take $a_0 = \xi_0 = 0$. Integration by parts and Plancherel give
 

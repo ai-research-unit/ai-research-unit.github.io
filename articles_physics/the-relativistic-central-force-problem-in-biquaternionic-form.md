@@ -22,7 +22,7 @@ with $p=c^2L^2\omega^2/(\kappa E)$ and the eccentricity fixed by the energy. The
 
 The article is deliberately parallel to its non-relativistic counterparts. *Central Forces and the Classical Kepler Problem in Biquaternionic Form* solves the inverse-square orbit and exhibits the Runge–Lenz vector; *The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form* develops its symmetry algebra; *The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form* fixes the algebraic criterion for a force to be central and derives Binet's equation. The present article re-derives the relativistic orbit equation from the mass-shell relation rather than importing it, and it locates the one structural difference between the two problems: the relativistic mass is a function of the state, so the effective force is not central in the non-relativistic sense and the closed orbit opens into a precessing one.
 
-The companion article *The Central Scalar Field: Classical Dynamics in the Biquaternion Center* supplies the field-theoretic origin of the potential treated here: the static field of a central scalar source is the $1/r$ potential, and a test particle in it is the problem of this article.
+The companion article *The Central Scalar Field: Classical Dynamics in the Biquaternion Centre* supplies the field-theoretic origin of the potential treated here: the static field of a central scalar source is the $1/r$ potential, and a test particle in it is the problem of this article.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\varepsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Position, momentum, force and angular momentum are real vectors in the three-space $\operatorname{span}\{e_1,e_2,e_3\}\subset\mathbb{M}_-$; the energy, the potential and the rest mass are central scalars, real multiples of $e_0$. For two real vectors,
 $$
@@ -314,7 +314,7 @@ What survives is a rotating-frame quantity: the vector constructed from the coni
 
 **The reciprocal length.** The turning-point analysis, the eccentricity and the precession all use $u=1/r$ and $\hat{\mathbf{r}}=\mathbf{r}/|\mathbf{r}|$. Normalization is a nonlinear operation that the finite algebra does not implement, and the orbit equation is an equation for the reciprocal radius, not for an element of the algebra.
 
-**The deformation parameter's dynamics.** The algebra contains $\kappa$ and $L$ and therefore the combination $\kappa^2/(c^2L^2)$, but it does not by itself fix the value of $\kappa$ or prefer the inverse-square law. The field-theoretic origin of $\kappa$ is the subject of the companion article *The Central Scalar Field: Classical Dynamics in the Biquaternion Center*, and the value remains a parameter of the theory.
+**The deformation parameter's dynamics.** The algebra contains $\kappa$ and $L$ and therefore the combination $\kappa^2/(c^2L^2)$, but it does not by itself fix the value of $\kappa$ or prefer the inverse-square law. The field-theoretic origin of $\kappa$ is the subject of the companion article *The Central Scalar Field: Classical Dynamics in the Biquaternion Centre*, and the value remains a parameter of the theory.
 
 ## Open Questions
 

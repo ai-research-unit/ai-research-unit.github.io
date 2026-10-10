@@ -14,7 +14,7 @@ Throughout, $c$ denotes the speed of light in the medium, and the biquaternion a
 
 ## The Three Subspaces of $\mathbb{B}$
 
-The biquaternion algebra $\mathbb{B}$ is cut into six distinguished real subspaces: the two-dimensional center $\mathbb{C}_{\mathbb{B}}$, the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$, and the four four-dimensional ones — the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the informational sector $\mathbb{M}_+$ and the material sector $\mathbb{M}_-$. Three of the four-dimensional subspaces are involved in the Wick rotation and are recalled here. All three are real vector spaces of dimension 4, and all three are subspaces of the same algebra.
+The biquaternion algebra $\mathbb{B}$ is cut into six distinguished real subspaces: the two-dimensional centre $\mathbb{C}_{\mathbb{B}}$, the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$, and the four four-dimensional ones — the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the informational sector $\mathbb{M}_+$ and the material sector $\mathbb{M}_-$. Three of the four-dimensional subspaces are involved in the Wick rotation and are recalled here. All three are real vector spaces of dimension 4, and all three are subspaces of the same algebra.
 
 **The quaternion subspace $\mathbb{H}_{\mathbb{B}}$.** An element has the form
 
@@ -215,7 +215,7 @@ The reading predicts a split of applications into those that transfer harmlessly
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $i\mathbb{H}_{\mathbb{B}}$ | The center, the vector subspace, and the remaining four-dimensional subspace; not involved in the Wick rotation |
+| $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $i\mathbb{H}_{\mathbb{B}}$ | The centre, the vector subspace, and the remaining four-dimensional subspace; not involved in the Wick rotation |
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace: signature $(4, 0)$, elliptic |
 | $\mathbb{M}_+$ | Informational sector: signature $(1, 3)$, mirror hyperbolic |
 | $\mathbb{M}_-$ | Material sector: signature $(3, 1)$, hyperbolic |

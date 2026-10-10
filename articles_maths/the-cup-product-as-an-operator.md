@@ -113,7 +113,7 @@ which holds in particular for every class $\varphi$ of even degree and for every
 
 *Proof.* The relation $L_\varphi L_\psi = (-1)^{|\varphi||\psi|}L_\psi L_\varphi$ of the previous section is exactly the assertion that the honest commutator of the two operators is zero precisely when the sign is trivial; the description of the graded bicommutant is the same computation with the sign retained, giving $T(\varphi)=(-1)^{|T||\varphi|}\varphi\smile T(1)$ for a graded-commuting $T$. $\square$
 
-So the graded commutativity of the cohomology is precisely the statement that the left action is central in the graded sense, and the honest center of the operator algebra consists of the multiplications by the classes of even degree together with the odd classes whose multiplication vanishes.
+So the graded commutativity of the cohomology is precisely the statement that the left action is central in the graded sense, and the honest centre of the operator algebra consists of the multiplications by the classes of even degree together with the odd classes whose multiplication vanishes.
 
 ## The Product as the Diagonal Operator
 

@@ -14,7 +14,7 @@ The article states each boundary, computes what can be computed, and marks the r
 
 The article is organised as follows. The next section sets up squeezing inside the algebra and verifies the squeezed-vacuum uncertainty product. The third section explains why the module cannot be squeezed centrally and where spin squeezing lives. The fourth treats contractions and the degeneration of the biquaternion norm. The fifth treats q-deformations, Clifford and octonionic enlargements, and infinite-dimensional or non-unitary extensions. The sixth collects the boundary statements, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the center; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the biquaternion norm is $N(x)=x\bar x$.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the biquaternion norm is $N(x)=x\bar x$.
 
 ## Squeezing Inside the Algebra
 
@@ -104,7 +104,7 @@ Both rows reproduce the closed forms to eight decimals, and the product is $\hba
 
 ### The biquaternion reading of the squeeze
 
-The whole squeezing construction lives in the center. The generator is $\tfrac12(\bar\xi a^2-\xi a^{\dagger2})$, a central anti-Hermitian element; the squeeze operator is a central unitary; the quadrature dilation is a central automorphism; the squeezed vacuum's Gaussian envelope is a central real function; the uncertainty product is fixed by a central commutator. In the framework's vocabulary, squeezing is an operation of the **classical sector** on the envelope: it is a symmetry of the central oscillator algebra that changes the shape of the state without changing its module content. This is why squeezing appears in the spin-0 subcategory at all, and it is the sense in which it is "inside" the algebra.
+The whole squeezing construction lives in the centre. The generator is $\tfrac12(\bar\xi a^2-\xi a^{\dagger2})$, a central anti-Hermitian element; the squeeze operator is a central unitary; the quadrature dilation is a central automorphism; the squeezed vacuum's Gaussian envelope is a central real function; the uncertainty product is fixed by a central commutator. In the framework's vocabulary, squeezing is an operation of the **classical sector** on the envelope: it is a symmetry of the central oscillator algebra that changes the shape of the state without changing its module content. This is why squeezing appears in the spin-0 subcategory at all, and it is the sense in which it is "inside" the algebra.
 
 ### Composition and two-mode squeezing
 
@@ -266,7 +266,7 @@ q-deformations, with $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}\to2J_3$ as $
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_j^2=-e_0$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}$ | Center; home of the squeeze operator |
+| $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the squeeze operator |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |

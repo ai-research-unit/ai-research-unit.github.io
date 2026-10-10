@@ -41,7 +41,7 @@ The last two inequalities are used constantly: they say that convergence of comp
 
 ### Balls and Neighborhoods
 
-The **open ball** of radius $r > 0$ centered at $A_0$ is
+The **open ball** of radius $r > 0$ centred at $A_0$ is
 
 $$
 B(A_0, r) = \{A \in \mathbb{C} : |A - A_0| < r\}.
@@ -351,7 +351,7 @@ $$
 
 ### Power Series
 
-A **power series** centered at $A_0$ is
+A **power series** centred at $A_0$ is
 
 $$
 \sum_{n=0}^\infty c_n (A - A_0)^n, \qquad c_n \in \mathbb{C}.

@@ -19,9 +19,9 @@ $$
 a(b+c)=ab+ac, \qquad (a+b)c=ac+bc, \qquad r(ab)=(ra)b=a(rb),
 $$
 
-for all $a,b,c \in A$ and $r \in R$. The algebra is **associative** if $(ab)c=a(bc)$ for all $a,b,c$, and **unital** if there is $1_A \in A$ with $1_A a = a 1_A = a$ for all $a$. The unit is unique when it exists. Multiplication by the base ring is recovered from the unit, $ra = (r 1_A)a$, so the $R$-module structure is determined by the ring structure together with the structural map $R \to Z(A)$, $r \mapsto r1_A$, which lands in the center. Thus a unital $R$-algebra is the same thing as a ring $A$ together with a unital ring homomorphism $R \to Z(A)$.
+for all $a,b,c \in A$ and $r \in R$. The algebra is **associative** if $(ab)c=a(bc)$ for all $a,b,c$, and **unital** if there is $1_A \in A$ with $1_A a = a 1_A = a$ for all $a$. The unit is unique when it exists. Multiplication by the base ring is recovered from the unit, $ra = (r 1_A)a$, so the $R$-module structure is determined by the ring structure together with the structural map $R \to Z(A)$, $r \mapsto r1_A$, which lands in the centre. Thus a unital $R$-algebra is the same thing as a ring $A$ together with a unital ring homomorphism $R \to Z(A)$.
 
-The center of $A$ is
+The centre of $A$ is
 
 $$
 Z(A)=\{z \in A : za=az \text{ for all } a \in A\}.
@@ -137,7 +137,7 @@ $$
 
 for all $a \in A$ and $m,m' \in M$. Since $A$ is an $R$-algebra, every $A$-linear map is $R$-linear, but the converse fails, and the gap between the two notions is not covered here. The **kernel** $\ker f$ and **image** $\operatorname{im} f$ are submodules of $M$ and $N$; $f$ is injective if and only if $\ker f=0$; the **cokernel** is $N/\operatorname{im} f$; and $f$ is an **isomorphism** if it is bijective, in which case the inverse is automatically $A$-linear and we write $M \cong N$.
 
-The set $\operatorname{Hom}_A(M,N)$ of $A$-linear maps is an abelian group under pointwise addition, with zero the zero map. It carries no natural left $A$-module structure when $A$ is noncommutative: the attempt $(af)(m)=a f(m)$ fails to be $A$-linear, since $(af)(bm)=a f(bm)=ab f(m)$ while $b(af)(m)=ba f(m)$, and these differ unless $a$ and $b$ commute. What is available is a module structure over the center. If $z \in Z(A)$ then $(zf)(m)=f(zm)$ defines the same map as $(zf)(m)=z f(m)$, and this makes $\operatorname{Hom}_A(M,N)$ a module over $Z(A)$, hence in particular an $R$-module. More generally, if ${}_B M_A$ is a $(B,A)$-bimodule then $\operatorname{Hom}_A(M,N)$ is a left $B$-module by $(bf)(m)=f(bm)$, the bimodule axiom providing the $A$-linearity of $bf$.
+The set $\operatorname{Hom}_A(M,N)$ of $A$-linear maps is an abelian group under pointwise addition, with zero the zero map. It carries no natural left $A$-module structure when $A$ is noncommutative: the attempt $(af)(m)=a f(m)$ fails to be $A$-linear, since $(af)(bm)=a f(bm)=ab f(m)$ while $b(af)(m)=ba f(m)$, and these differ unless $a$ and $b$ commute. What is available is a module structure over the centre. If $z \in Z(A)$ then $(zf)(m)=f(zm)$ defines the same map as $(zf)(m)=z f(m)$, and this makes $\operatorname{Hom}_A(M,N)$ a module over $Z(A)$, hence in particular an $R$-module. More generally, if ${}_B M_A$ is a $(B,A)$-bimodule then $\operatorname{Hom}_A(M,N)$ is a left $B$-module by $(bf)(m)=f(bm)$, the bimodule axiom providing the $A$-linearity of $bf$.
 
 The **endomorphism ring** $\operatorname{End}_A(M)=\operatorname{Hom}_A(M,M)$ is a unital associative ring under composition, its unit the identity, and it is an $R$-algebra through $R \to Z(\operatorname{End}_A(M))$. Its group of units is the **automorphism group** $\operatorname{Aut}_A(M)$. Both are studied .
 
@@ -261,7 +261,7 @@ Two algebras $A$ and $B$ are **Morita equivalent** when their module categories 
 
 Fix a commutative ring $R$ and a unital associative $R$-algebra $A$. A left $A$-module is an abelian group with an action of $A$ satisfying the four axioms, equivalently a unital ring homomorphism $A \to \operatorname{End}_{\mathbb{Z}}(M)$; a left module is automatically an $R$-module because $R$ acts through the unit. Left, right and bimodules are distinguished when $A$ is noncommutative, and passing to $A^{\mathrm{op}}$ converts one side into the other. Submodules, quotient modules and $A$-linear maps are defined by the same clauses as for a commutative ring, and the three isomorphism theorems hold; the submodules of the regular module ${}_A A$ are the left ideals, so cyclic modules are the quotients $A/L$, and simple modules are the quotients $A/\mathrm{M}$ by maximal left ideals.
 
-The endomorphism ring $\operatorname{End}_A(M)$ is an $R$-algebra but not in general an $A$-module, only a module over the center; the regular module has $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ and $\operatorname{Aut}_A({}_A A)\cong A^{\times}$ by right multiplication. Schur's lemma makes $\operatorname{End}_A(S)$ a division ring for a simple $S$. Free modules are direct sums of ${}_A A$, projective modules are their direct summands, and the idempotents of $A$ produce projective modules $Ae$; over a division algebra every module is free, while over the matrix algebra $M_n(F)$ the simple module $S=F^n$ is projective and not free. Nakayama's lemma holds over noncommutative rings for ideals inside the Jacobson radical. The modules form an abelian $R$-linear category $\operatorname{Mod}(A)$, and the guiding equivalence relation on algebras is Morita equivalence, under which $A$ and $M_n(A)$ have the same module theory.
+The endomorphism ring $\operatorname{End}_A(M)$ is an $R$-algebra but not in general an $A$-module, only a module over the centre; the regular module has $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ and $\operatorname{Aut}_A({}_A A)\cong A^{\times}$ by right multiplication. Schur's lemma makes $\operatorname{End}_A(S)$ a division ring for a simple $S$. Free modules are direct sums of ${}_A A$, projective modules are their direct summands, and the idempotents of $A$ produce projective modules $Ae$; over a division algebra every module is free, while over the matrix algebra $M_n(F)$ the simple module $S=F^n$ is projective and not free. Nakayama's lemma holds over noncommutative rings for ideals inside the Jacobson radical. The modules form an abelian $R$-linear category $\operatorname{Mod}(A)$, and the guiding equivalence relation on algebras is Morita equivalence, under which $A$ and $M_n(A)$ have the same module theory.
 
 ## Summary of Notation
 
@@ -272,7 +272,7 @@ The endomorphism ring $\operatorname{End}_A(M)$ is an $R$-algebra but not in gen
 | $A$ | unital associative $R$-algebra, generally noncommutative |
 | $A^{\mathrm{op}}$ | opposite algebra, product $a \cdot_{\mathrm{op}} b = ba$ |
 | $A^{\times}$ | group of units of $A$ |
-| $Z(A)$ | center of $A$ |
+| $Z(A)$ | centre of $A$ |
 | $1_A$ | unit of $A$ |
 | $M$, $N$, $P$ | left $A$-modules |
 | $M_A$ | right $A$-module |

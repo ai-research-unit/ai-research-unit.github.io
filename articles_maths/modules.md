@@ -88,7 +88,7 @@ which is well defined because $N$ is closed under scalars. The **natural project
 
 A map $f:M \to N$ of left $R$-modules is **$R$-linear** (a **homomorphism**) if $f(m+m')=f(m)+f(m')$ and $f(rm)=rf(m)$; it is an **isomorphism** if bijective, written $M \cong N$. Its **kernel** $\ker f=\{m : f(m)=0\}$ and **image** $\operatorname{im} f=\{f(m)\}$ are submodules of $M$ and $N$, $f$ is injective if and only if $\ker f=0$, and its **cokernel** is $N/\operatorname{im} f$. The set $\operatorname{Hom}_R(M,N)$ is an abelian group, and $\operatorname{End}_R(M)=\operatorname{Hom}_R(M,M)$ is a ring under composition with unit group $\operatorname{Aut}_R(M)$.
 
-When $R$ is commutative, $\operatorname{Hom}_R(M,N)$ is an $R$-module via $(rf)(m)=rf(m)=f(rm)$. For noncommutative $R$ there is in general no natural $R$-module structure, only the abelian group (and a module structure over the center); this is one reason the series works over commutative rings.
+When $R$ is commutative, $\operatorname{Hom}_R(M,N)$ is an $R$-module via $(rf)(m)=rf(m)=f(rm)$. For noncommutative $R$ there is in general no natural $R$-module structure, only the abelian group (and a module structure over the centre); this is one reason the series works over commutative rings.
 
 ## 7. The Isomorphism Theorems
 

@@ -199,19 +199,19 @@ and the **full group $\mathrm{C}^*$-algebra** $C^*(G)$ is the completion of $L^1
 
 Let $G$ be locally compact abelian, so that $\Delta \equiv 1$ and $f^*(x) = \overline{f(-x)}$. Then $L^1(G)$ is a commutative Banach $*$-algebra and its Gelfand transform is the Fourier transform: the spectrum of $L^1(G)$ is $G^\vee$, and for $\chi \in G^\vee$ the corresponding character is $f \mapsto \hat f(\chi) = \int f(x)\overline{\chi(x)}dx$. The convolution theorem $\widehat{f*g} = \hat f\hat g$ is the homomorphism property of the Gelfand transform, and the involution satisfies $\widehat{f^*}(\chi) = \overline{\hat f(\chi)}$. The completion of $L^1(G)$ in the $\mathrm{C}^*$-norm is $C^*(G) \cong C_0(G^\vee)$, with the Gelfand transform as the isomorphism. This is *Harmonic Analysis on Groups*, §The Algebra of the Transform, and it is the exact commutative case of the correspondence between the algebra and the group.
 
-### The Center and the Central Characters
+### The Centre and the Central Characters
 
-**Theorem.** For a unimodular group $G$, the center of $L^1(G)$ is
+**Theorem.** For a unimodular group $G$, the centre of $L^1(G)$ is
 
 $$
 Z(L^1(G)) = \{f \in L^1(G) : f(xy) = f(yx) \text{ for almost all } x,y \in G\},
 $$
 
-the closed subspace of functions invariant under conjugation; for abelian $G$, $Z(L^1(G)) = L^1(G)$. The nonzero complex homomorphisms of the center are the **central characters**, and for a compact or a type I group they are in bijection with the unitary dual.
+the closed subspace of functions invariant under conjugation; for abelian $G$, $Z(L^1(G)) = L^1(G)$. The nonzero complex homomorphisms of the centre are the **central characters**, and for a compact or a type I group they are in bijection with the unitary dual.
 
 **Proof.** $f$ is central iff $f*g = g*f$ for every $g \in L^1(G)$. Testing against a $g$ concentrated in a small neighbourhood of a point $z$ gives $f(z^{-1}x) = f(xz^{-1})$ for almost all $x$, which is the conjugation invariance $f(xy) = f(yx)$ after $z = y^{-1}$. Conversely conjugation invariance gives centrality by the same change of variable. The statement about central characters is the spectral theory of the commutative Banach algebra $Z(L^1(G))$ together with the description of its characters by irreducible representations; for compact groups the central characters are the normalised characters $\chi_\pi/d_\pi$ of *Analysis on Compact Groups*.
 
-**Remark (the abelian side is the whole center).** For $G$ abelian the center is the whole algebra and its Gelfand spectrum is $G^\vee$; for a compact group the center is the algebra of class functions and its spectrum is the dual; for a general unimodular type I group the center is described by the Plancherel measure. The center is thus the bridge between the commutative and the non-commutative pictures.
+**Remark (the abelian side is the whole centre).** For $G$ abelian the centre is the whole algebra and its Gelfand spectrum is $G^\vee$; for a compact group the centre is the algebra of class functions and its spectrum is the dual; for a general unimodular type I group the centre is described by the Plancherel measure. The centre is thus the bridge between the commutative and the non-commutative pictures.
 
 ## Examples
 
@@ -227,7 +227,7 @@ the multiplication of the **group algebra** $\ell^1(G)$; the involution is $f^*(
 
 ### Compact Groups
 
-For $G = K$ compact with normalised Haar measure, $G$ is unimodular, the involution is $f^*(k) = \overline{f(k^{-1})}$, and the algebra $L^1(K)$ has a transform into $\bigoplus_{\pi\in\operatorname{Irr}(K)}\operatorname{End}(\mathcal{H}_\pi)$ which is injective with dense image; it is commutative exactly when $K$ is abelian, in which case it is the algebra of *Analysis on Compact Groups*, §The Fourier Transform on a Compact Group. The center is the algebra of class functions, and its characters are the irreducible characters.
+For $G = K$ compact with normalised Haar measure, $G$ is unimodular, the involution is $f^*(k) = \overline{f(k^{-1})}$, and the algebra $L^1(K)$ has a transform into $\bigoplus_{\pi\in\operatorname{Irr}(K)}\operatorname{End}(\mathcal{H}_\pi)$ which is injective with dense image; it is commutative exactly when $K$ is abelian, in which case it is the algebra of *Analysis on Compact Groups*, §The Fourier Transform on a Compact Group. The centre is the algebra of class functions, and its characters are the irreducible characters.
 
 ### The Line, the Torus and Euclidean Space
 
@@ -245,7 +245,7 @@ and the involution is $f^*(a,b) = a\,\overline{f(a^{-1},-b/a)}$ because $\Delta(
 
 ## Summary
 
-For a locally compact group $G$ with left Haar measure $dx$ and modular function $\Delta$ (the convention $\mu(Ag)=\Delta(g)\mu(A)$, $d\mu_R=\Delta^{-1}d\mu_L$, $\int f(x^{-1})dx=\int f(x)\Delta(x)^{-1}dx$ of *Locally Compact Groups and Haar Measure*), the convolution $(f*g)(x)=\int f(y)g(y^{-1}x)dy$ makes $L^1(G)$ a Banach algebra with $\|f*g\|_1\le\|f\|_1\|g\|_1$ and Young's inequality $\|f*g\|_r\le\|f\|_p\|g\|_q$ for $1/p+1/q=1+1/r$; the involution $f^*(x)=\overline{f(x^{-1})}\Delta(x)^{-1}$ makes it a Banach $*$-algebra with isometric involution, $(f*g)^*=g^* * f^*$. It is commutative iff $G$ is abelian and unital iff $G$ is discrete. Every $L^1(G)$ has a normalised two-sided approximate identity; it has an approximately invariant one if and only if $G$ is amenable (Reiter's property $P_1$). Nondegenerate $*$-representations of $L^1(G)$ are exactly the continuous unitary representations of $G$, through $\pi(f)=\int f(g)U(g)dg$, and this correspondence makes the unitary representation theory of $G$ a chapter of the spectral theory of a Banach $*$-algebra. The completions are the reduced group $\mathrm{C}^*$-algebra $C^*_r(G)$, the full $C^*(G)$ with canonical surjection onto it, and the group von Neumann algebra $L(G)=\lambda(G)''=\rho(G)'$, which for discrete $G$ is finite with trace $\langle a\delta_e,\delta_e\rangle$ and for compact $G$ is $\bigoplus_\pi\operatorname{End}(\mathcal{H}_\pi)$. In the abelian case the Gelfand transform is the Fourier transform and $C^*(G)\cong C_0(G^\vee)$; the center is the algebra of conjugation-invariant functions, whose characters are the central characters. The examples are the discrete group algebra $\ell^1(G)$, the compact case, $\mathbb{R}^n$ and $T^n$, and the affine group, which exhibits the modular factor in the involution and the failure of amenability.
+For a locally compact group $G$ with left Haar measure $dx$ and modular function $\Delta$ (the convention $\mu(Ag)=\Delta(g)\mu(A)$, $d\mu_R=\Delta^{-1}d\mu_L$, $\int f(x^{-1})dx=\int f(x)\Delta(x)^{-1}dx$ of *Locally Compact Groups and Haar Measure*), the convolution $(f*g)(x)=\int f(y)g(y^{-1}x)dy$ makes $L^1(G)$ a Banach algebra with $\|f*g\|_1\le\|f\|_1\|g\|_1$ and Young's inequality $\|f*g\|_r\le\|f\|_p\|g\|_q$ for $1/p+1/q=1+1/r$; the involution $f^*(x)=\overline{f(x^{-1})}\Delta(x)^{-1}$ makes it a Banach $*$-algebra with isometric involution, $(f*g)^*=g^* * f^*$. It is commutative iff $G$ is abelian and unital iff $G$ is discrete. Every $L^1(G)$ has a normalised two-sided approximate identity; it has an approximately invariant one if and only if $G$ is amenable (Reiter's property $P_1$). Nondegenerate $*$-representations of $L^1(G)$ are exactly the continuous unitary representations of $G$, through $\pi(f)=\int f(g)U(g)dg$, and this correspondence makes the unitary representation theory of $G$ a chapter of the spectral theory of a Banach $*$-algebra. The completions are the reduced group $\mathrm{C}^*$-algebra $C^*_r(G)$, the full $C^*(G)$ with canonical surjection onto it, and the group von Neumann algebra $L(G)=\lambda(G)''=\rho(G)'$, which for discrete $G$ is finite with trace $\langle a\delta_e,\delta_e\rangle$ and for compact $G$ is $\bigoplus_\pi\operatorname{End}(\mathcal{H}_\pi)$. In the abelian case the Gelfand transform is the Fourier transform and $C^*(G)\cong C_0(G^\vee)$; the centre is the algebra of conjugation-invariant functions, whose characters are the central characters. The examples are the discrete group algebra $\ell^1(G)$, the compact case, $\mathbb{R}^n$ and $T^n$, and the affine group, which exhibits the modular factor in the involution and the failure of amenability.
 
 ## Summary of Notation
 
@@ -265,7 +265,7 @@ For a locally compact group $G$ with left Haar measure $dx$ and modular function
 | $C^*_r(G)$ | Reduced group $\mathrm{C}^*$-algebra, closure of $\lambda(L^1(G))$ |
 | $C^*(G)$ | Full group $\mathrm{C}^*$-algebra, enveloping norm |
 | $L(G) = \lambda(G)'' = \rho(G)'$ | Group von Neumann algebra |
-| $Z(L^1(G))$ | Center, the conjugation-invariant functions (unimodular $G$) |
+| $Z(L^1(G))$ | Centre, the conjugation-invariant functions (unimodular $G$) |
 | $\hat f(\chi) = \int_G f\overline\chi\,dx$ | Gelfand transform in the abelian case |
 | $\ell^1(G)$ | Group algebra of a discrete group |
 | $\tau(a) = \langle a\delta_e,\delta_e\rangle$ | Trace on $L(G)$, $G$ discrete |

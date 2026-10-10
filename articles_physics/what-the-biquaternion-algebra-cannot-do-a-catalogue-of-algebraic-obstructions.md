@@ -36,7 +36,7 @@ An item enters this catalogue only if it satisfies three conditions, and the con
 
 The catalogue is deliberately non-relativistic and structural. Obstructions that belong to the spin-specific articles — the absence of a spin-1 analogue of the quaternion triple, for instance — and obstructions that belong to the informational articles — no-cloning, the absence of a universal NOT — are not repeated here. Where an obstruction is a standard theorem about matrix algebras rather than a peculiarity of $\mathbb{B}$, it is cited as standard.
 
-## I. Obstructions of Commutativity and the Center
+## I. Obstructions of Commutativity and the Centre
 
 ### O1. There is no canonical maximal commutative subalgebra
 
@@ -62,7 +62,7 @@ so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $
 
 **Remedy.** Adjoin a label algebra, or work on an enlarged algebra $\mathbb{B}\bar{\otimes}\mathbb{A}$ whose centre is larger; alternatively realise the labels on modules and states rather than in the algebra. An obstruction of this kind is a statement about $\mathbb{B}$ and not about the framework's ability to *describe* superselection once a label algebra is supplied.
 
-### O3. The center acts trivially on the state space
+### O3. The centre acts trivially on the state space
 
 **Statement.** The kernel of the action of the invertible group $\mathbb{B}^\times$ on the projective state space is the centre, $\mathbb{C}^\times e_0$. Hence no central data is observable at the level of states.
 

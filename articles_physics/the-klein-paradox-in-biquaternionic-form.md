@@ -113,7 +113,7 @@ The resolution of the apparent paradox is a matter of particle number, not of th
 
 ## The Biquaternion Reading
 
-### The potential acts on the center, the mass on the chiralities
+### The potential acts on the centre, the mass on the chiralities
 
 Two algebraic facts organise the problem, and they were established in the companion articles. The potential term is central — a scalar multiple of $e_0$ — so it acts trivially on the state module and only shifts the mass shell. The mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, the one term that couples the two minimal left ideals. The two ingredients of the Klein problem therefore act in orthogonal places: the potential is a central shift, the mass is a chirality mixing. The paradox is not caused by either alone but by the fact that the central shift can move the frequency past the mass gap, into the region where the two mass-shell roots exchange their roles.
 

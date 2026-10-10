@@ -72,14 +72,14 @@ Before the decomposition can be read correctly, it is necessary to separate thre
 
 ### As a Rotation Module: $\mathbb{B} = D^{(0)}\oplus D^{(1)}$
 
-The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\natural}$ with $\tilde{\Lambda}\in\mathbb{H}_{\mathbb{B}}$ a real unit quaternion. Under this action the center $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ is pointwise fixed and the traceless part $\mathrm{SL}_2(\mathbb{C}) = \{Q_1e_1+Q_2e_2+Q_3e_3\}$ transforms as a vector:
+The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\natural}$ with $\tilde{\Lambda}\in\mathbb{H}_{\mathbb{B}}$ a real unit quaternion. Under this action the centre $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ is pointwise fixed and the traceless part $\mathrm{SL}_2(\mathbb{C}) = \{Q_1e_1+Q_2e_2+Q_3e_3\}$ transforms as a vector:
 
 $$
 \mathbb{B} = D^{(0)}\oplus D^{(1)} \qquad\text{(as a complex rotation module)},
 \qquad 1 + 3 = 4 .
 $$
 
-The weight spectrum confirms it, and it also shows why only integral $l$ can occur. The action is rotor conjugation, and $-\tilde{\Lambda}$ gives the same conjugation as $\tilde{\Lambda}$, so this action factors through the rotation group $SO(3)$ and cannot see the double cover: every irreducible representation it can contain has integral angular momentum. (The half-integral representations are not excluded from the algebra, but they cannot appear from this action; they appear from the *left multiplication* discussed in the next subsection.) For a rotation about a fixed axis, the center is fixed, the axis element is fixed, and the two combinations transverse to the axis are eigenvectors with phases $e^{\mp i\theta}$; the weights are $0$, $0$, $+1$, $-1$, and there is no weight $\pm2$ state that a $D^{(2)}$ would require. Equivalently, the character of the conjugation action equals
+The weight spectrum confirms it, and it also shows why only integral $l$ can occur. The action is rotor conjugation, and $-\tilde{\Lambda}$ gives the same conjugation as $\tilde{\Lambda}$, so this action factors through the rotation group $SO(3)$ and cannot see the double cover: every irreducible representation it can contain has integral angular momentum. (The half-integral representations are not excluded from the algebra, but they cannot appear from this action; they appear from the *left multiplication* discussed in the next subsection.) For a rotation about a fixed axis, the centre is fixed, the axis element is fixed, and the two combinations transverse to the axis are eigenvectors with phases $e^{\mp i\theta}$; the weights are $0$, $0$, $+1$, $-1$, and there is no weight $\pm2$ state that a $D^{(2)}$ would require. Equivalently, the character of the conjugation action equals
 
 $$
 2 + 2\cos\theta = \chi_0(\theta) + \chi_1(\theta),
@@ -253,7 +253,7 @@ In every case the pattern is the same: the *generators* and the *values* are fin
 
 The multipole tower is infinite and the biquaternion algebra is finite, and there is no contradiction. The tower is the decomposition of the infinite-dimensional space of angular functions, $L^2(S^2) = \bigoplus_{l\geq0} D^{(l)}$, and it is a property of the **field**, a function of position. The algebra is the finite-dimensional **value space**, of complex dimension four, isomorphic to $M_2(\mathbb{C})$, and it is a property of each individual value of the field.
 
-As a rotation module the algebra is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$: its center is the trivial representation and its vector part is the vector representation, with weights $0, 0, \pm1$ and character $2+2\cos\theta = \chi_0+\chi_1$. It contains no weight-$\pm2$ state and hence no $D^{(2)}$. Its elements can carry the monopole and the dipole, and no higher multipole. Its product cannot create higher multipoles either, because $\mathbf{u}\mathbf{v} = -\mathbf{u}\cdot\mathbf{v} + \mathbf{u}\times\mathbf{v}$ keeps only the $D^{(0)}$ and $D^{(1)}$ channels of $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$; and its gradient satisfies $\boldsymbol{\nabla}\boldsymbol{\nabla} = -\Delta\,e_0$, so the composition of two derivatives also keeps only the trace.
+As a rotation module the algebra is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$: its centre is the trivial representation and its vector part is the vector representation, with weights $0, 0, \pm1$ and character $2+2\cos\theta = \chi_0+\chi_1$. It contains no weight-$\pm2$ state and hence no $D^{(2)}$. Its elements can carry the monopole and the dipole, and no higher multipole. Its product cannot create higher multipoles either, because $\mathbf{u}\mathbf{v} = -\mathbf{u}\cdot\mathbf{v} + \mathbf{u}\times\mathbf{v}$ keeps only the $D^{(0)}$ and $D^{(1)}$ channels of $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$; and its gradient satisfies $\boldsymbol{\nabla}\boldsymbol{\nabla} = -\Delta\,e_0$, so the composition of two derivatives also keeps only the trace.
 
 The tower lives in the function space, in the symmetric traceless tensor powers $\operatorname{Sym}^l_0(D^{(1)})\cong D^{(l)}$, in the harmonic polynomials $r^lY_l^m$, in the differential-operator algebra, and in the universal enveloping algebra $U(\mathrm{SU}(2))$, all infinite-dimensional; and the multipole moments are functionals of the source, not elements of the value algebra. A general no-go statement follows by dimension counting: no finite-dimensional complex algebra on which the rotation group acts by automorphisms can contain $D^{(l)}$ for all $l$ as subquotients of its rotation module, because a finite-dimensional module has only finitely many composition factors and the $D^{(l)}$ are pairwise non-isomorphic. Enlarging the algebra buys finitely many higher orders and no more — $M_3(\mathbb{C})$ contains $D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ but costs the two-dimensional spinor module — and only an infinite-dimensional algebra carries the whole tower.
 
@@ -266,7 +266,7 @@ The finite algebra is finite because it is the local value space; the tower is i
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\dim_{\mathbb{C}} = 4$, $\cong M_2(\mathbb{C})$ |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$, $e_ie_j = -\delta_{ij}e_0+\epsilon_{ijk}e_k$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ | Center of $\mathbb{B}$ (the scalars) |
+| $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ | Centre of $\mathbb{B}$ (the scalars) |
 | $\mathrm{Tr}(\cdot)$ | Matrix trace, $\mathrm{Tr}(e_0) = 2$ (the conventions article) |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde{\Lambda}\in\mathbb{H}_{\mathbb{B}}$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ | Rotation rotor, acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\natural}$ |

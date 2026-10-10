@@ -27,7 +27,7 @@ Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $
 - Companion article *Modules over the General Plain Algebra of Biquaternions*, for the algebra as a complex algebra and its modules, whose $V$-modules are a different family from the rotation representations $D^{(l)}$ used here.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion and the fields $\mathbf{E}$ and $\mathbf{H}$.
 
-The article's thesis can be stated at once. The biquaternion algebra, regarded as a representation space of the rotation group — the group acting by rotor conjugation — is the direct sum $D^{(0)}\oplus D^{(1)}$ of the trivial representation and the vector representation, and nothing more. Its **elements** can therefore carry the monopole (a central scalar) and the dipole (a vector), and its **product** never leaves that sum either, because $\mathbf{u}\mathbf{v} = -\mathbf{u}\cdot\mathbf{v} + \mathbf{u}\times\mathbf{v}$ keeps only the dot and the cross product. The **quadrupole** is the first moment that is not an algebra element: it is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it lives in the symmetric traceless square of the vector part rather than in the algebra itself. The quadrupole **interaction energy**, by contrast, is a scalar, and therefore is always an element of the center $\mathbb{C}_{\mathbb{B}}$. The distinction between the moment, which is a tensor, and its interaction, which is a scalar, organises the article and the two that follow it.
+The article's thesis can be stated at once. The biquaternion algebra, regarded as a representation space of the rotation group — the group acting by rotor conjugation — is the direct sum $D^{(0)}\oplus D^{(1)}$ of the trivial representation and the vector representation, and nothing more. Its **elements** can therefore carry the monopole (a central scalar) and the dipole (a vector), and its **product** never leaves that sum either, because $\mathbf{u}\mathbf{v} = -\mathbf{u}\cdot\mathbf{v} + \mathbf{u}\times\mathbf{v}$ keeps only the dot and the cross product. The **quadrupole** is the first moment that is not an algebra element: it is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it lives in the symmetric traceless square of the vector part rather than in the algebra itself. The quadrupole **interaction energy**, by contrast, is a scalar, and therefore is always an element of the centre $\mathbb{C}_{\mathbb{B}}$. The distinction between the moment, which is a tensor, and its interaction, which is a scalar, organises the article and the two that follow it.
 
 ## The Multipole Expansion of a Localised Source
 
@@ -188,7 +188,7 @@ For the multipole problem it is convenient to work with the real vector $\mathbf
 
 ### The Monopole
 
-The monopole moment is a scalar, and in the algebra it is the central element $q\,e_0 \in \mathbb{C}_{\mathbb{B}}$. Under a rotation the center is pointwise fixed, which is the algebraic statement that the monopole is the $D^{(0)}$ representation. The monopole interaction energy $q\Phi(0)$ is likewise a central scalar.
+The monopole moment is a scalar, and in the algebra it is the central element $q\,e_0 \in \mathbb{C}_{\mathbb{B}}$. Under a rotation the centre is pointwise fixed, which is the algebraic statement that the monopole is the $D^{(0)}$ representation. The monopole interaction energy $q\Phi(0)$ is likewise a central scalar.
 
 ### The Dipole
 
@@ -279,7 +279,7 @@ $$
 W_{quad} = -\tfrac16\,Q_{ij}T_{ij} = \tfrac16\,Q_{ij}\,\partial_i\partial_j\Phi(0).
 $$
 
-**It is a scalar.** Like every interaction energy, $W_{quad}$ is a single number, hence an element of the center $\mathbb{C}_{\mathbb{B}}$. The algebra has no difficulty with the *value* of the quadrupole interaction. Its difficulty is with the *moment*, and that is the subject of the next section.
+**It is a scalar.** Like every interaction energy, $W_{quad}$ is a single number, hence an element of the centre $\mathbb{C}_{\mathbb{B}}$. The algebra has no difficulty with the *value* of the quadrupole interaction. Its difficulty is with the *moment*, and that is the subject of the next section.
 
 ## Why the Quadrupole Is Not an Algebra Element
 
@@ -310,14 +310,14 @@ and the quaternion product projects onto the first two summands, discarding the 
 
 ### The Algebra Contains Only $D^{(0)}$ and $D^{(1)}$
 
-The same conclusion follows from the structure of the algebra itself. Under the rotor-conjugation action of the rotation group, $\mathbb{B}$ decomposes into the center, spanned by $e_0$, and the vector part, spanned by $e_1, e_2, e_3$. The center is invariant, so it is $D^{(0)}$; the vector part transforms as a vector, so it is $D^{(1)}$:
+The same conclusion follows from the structure of the algebra itself. Under the rotor-conjugation action of the rotation group, $\mathbb{B}$ decomposes into the centre, spanned by $e_0$, and the vector part, spanned by $e_1, e_2, e_3$. The centre is invariant, so it is $D^{(0)}$; the vector part transforms as a vector, so it is $D^{(1)}$:
 
 $$
 \mathbb{B} = D^{(0)}\oplus D^{(1)} \quad\text{(as a complex representation of the rotations)},
 \qquad 1 + 3 = 4 .
 $$
 
-The weight spectrum confirms that nothing else can be present. For a rotation about the axis $e_3$, the center is fixed, $e_3$ is fixed, and the combinations $e_1\pm ie_2$ are eigenvectors with phases $e^{\mp i\theta}$. The algebra therefore contains states only of weights $0$ and $\pm1$, and a $D^{(2)}$ representation would require a state of weight $\pm2$. There is none. The character of the conjugation action has been computed directly and equals $2 + 2\cos\theta = \chi_0(\theta) + \chi_1(\theta)$, the sum of the spin-$0$ and spin-$1$ characters, with no $D^{(2)}$ term $\chi_2 = 1 + 2\cos\theta + 2\cos2\theta$. Since $-\tilde{\Lambda}$ acts on a vector exactly as $\tilde{\Lambda}$ does, the conjugation action factors through $SO(3)$ and can carry only integral angular momentum. In the normalisation in which the vector part carries weights $\pm1$ — that is, with the generator $J_3 = -i\tfrac12\mathrm{ad}_{e_3}$ — the generator has the eigenvalue spectrum $\{0, 0, +1, -1\}$ on $\mathbb{B}$: a doubly degenerate zero, together with a single $+1$ and a single $-1$. A quadrupole, which would carry weight $\pm2$, has no place to sit.
+The weight spectrum confirms that nothing else can be present. For a rotation about the axis $e_3$, the centre is fixed, $e_3$ is fixed, and the combinations $e_1\pm ie_2$ are eigenvectors with phases $e^{\mp i\theta}$. The algebra therefore contains states only of weights $0$ and $\pm1$, and a $D^{(2)}$ representation would require a state of weight $\pm2$. There is none. The character of the conjugation action has been computed directly and equals $2 + 2\cos\theta = \chi_0(\theta) + \chi_1(\theta)$, the sum of the spin-$0$ and spin-$1$ characters, with no $D^{(2)}$ term $\chi_2 = 1 + 2\cos\theta + 2\cos2\theta$. Since $-\tilde{\Lambda}$ acts on a vector exactly as $\tilde{\Lambda}$ does, the conjugation action factors through $SO(3)$ and can carry only integral angular momentum. In the normalisation in which the vector part carries weights $\pm1$ — that is, with the generator $J_3 = -i\tfrac12\mathrm{ad}_{e_3}$ — the generator has the eigenvalue spectrum $\{0, 0, +1, -1\}$ on $\mathbb{B}$: a doubly degenerate zero, together with a single $+1$ and a single $-1$. A quadrupole, which would carry weight $\pm2$, has no place to sit.
 
 ### Where the Quadrupole Does Live
 
@@ -334,7 +334,7 @@ The same conclusion can be read off the second derivative. From $\boldsymbol{\na
 
 ### The Invariant Statement
 
-It is worth stating the conclusion in the form the physics demands. A multipole moment is an *invariant of the source*: an integral over the source, a functional of the charge distribution. It is not an element of the value algebra of the field. The moments of order $l = 0$ and $l = 1$ happen to coincide with the two irreducible pieces of the algebra — the center and the vector part — and so can be written as single biquaternions. The moments of order $l \geq 2$ cannot: they are tensors, functionals of the source, or, equivalently, coefficients in the angular expansion of a scalar field. The quadrupole is the first moment at which the finite dimension of the algebra becomes visible in the physics.
+It is worth stating the conclusion in the form the physics demands. A multipole moment is an *invariant of the source*: an integral over the source, a functional of the charge distribution. It is not an element of the value algebra of the field. The moments of order $l = 0$ and $l = 1$ happen to coincide with the two irreducible pieces of the algebra — the centre and the vector part — and so can be written as single biquaternions. The moments of order $l \geq 2$ cannot: they are tensors, functionals of the source, or, equivalently, coefficients in the angular expansion of a scalar field. The quadrupole is the first moment at which the finite dimension of the algebra becomes visible in the physics.
 
 This is not a defect of the framework. It is the same finite-dimensionality that the companion article on the Poisson bracket identifies as the obstruction to the canonical Heisenberg algebra inside $\mathbb{B}$:
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the trace obstruction that blocks the canonical bracket inside the finite-dimensional algebra.
@@ -347,7 +347,7 @@ The static field of a bounded source is expanded in multipole moments, one order
 
 The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are **elements of the algebra**, and the dipole interaction $-\mathbf{p}\cdot\mathbf{E} = \mathrm{Sc}(\tilde{p}\tilde{\mathbf{E}})$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is **not** an algebra element: the quaternion product of two vectors, $\mathbf{u}\mathbf{v} = -\mathbf{u}\cdot\mathbf{v} + \mathbf{u}\times\mathbf{v}$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{Sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.
 
-The quadrupole **interaction** is a scalar and therefore lies in the center: with the external field source-free at the source, $W_{quad} = -\frac16 Q_{ij}T_{ij} = \frac16 Q_{ij}\partial_i\partial_j\Phi(0)$, the contraction of two $D^{(2)}$ objects. The interaction energy is an element of the algebra even though the moment is not.
+The quadrupole **interaction** is a scalar and therefore lies in the centre: with the external field source-free at the source, $W_{quad} = -\frac16 Q_{ij}T_{ij} = \frac16 Q_{ij}\partial_i\partial_j\Phi(0)$, the contraction of two $D^{(2)}$ objects. The interaction energy is an element of the algebra even though the moment is not.
 
 The multipole tower is infinite because the angular structure of a field on the sphere is infinite-dimensional; the algebra is finite because it is the value algebra of a two-state, four-vector structure. The first order at which the difference shows is the quadrupole.
 
@@ -359,7 +359,7 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ | Center of $\mathbb{B}$ (the scalars) |
+| $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ | Centre of $\mathbb{B}$ (the scalars) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\tilde{\Lambda}\in\mathbb{H}_{\mathbb{B}}^1$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ | Rotation rotor, acting on a vector by $\mathbf{v}\mapsto\tilde{\Lambda}\mathbf{v}\tilde{\Lambda}^{\natural}$ |
 | $\tilde{\nabla} = e_0\partial_{ict} + \boldsymbol{\nabla}$ | Biquaternionic gradient |

@@ -46,11 +46,11 @@ $$
 \mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}.
 $$
 
-The algebra $\mathbb{B}$ is eight-dimensional over $\mathbb{R}$ and four-dimensional over $\mathbb{C}$, with the multiplication extended $\mathbb{C}$-bilinearly from that of $\mathbb{H}$. Its center is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$.
+The algebra $\mathbb{B}$ is eight-dimensional over $\mathbb{R}$ and four-dimensional over $\mathbb{C}$, with the multiplication extended $\mathbb{C}$-bilinearly from that of $\mathbb{H}$. Its centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$.
 
 Nothing else is posited. In particular, no conjugation other than the two that the base supplies (${}^{\natural}$ from $\mathbb{H}$ and the real structure below) is assumed; no pairing, trace, norm, subspace, root of $-1$, or polar form is assumed.
 
-**The isomorphism type is a theorem, the algebra is a posit.** The type of the algebra is not free: over $\mathbb{C}$ a finite-dimensional unital associative algebra that is simple with center $\mathbb{C}$ is a full matrix algebra, and dimension $4=2^2$ forces $\mathbb{B}\cong M_2(\mathbb{C})$. So *that* the algebra is $M_2(\mathbb{C})$ is derived from (B1) and (B2); *which* algebra is posited is the content of the posits. This distinction is used throughout: derivedness of a *type* does not make the object derived.
+**The isomorphism type is a theorem, the algebra is a posit.** The type of the algebra is not free: over $\mathbb{C}$ a finite-dimensional unital associative algebra that is simple with centre $\mathbb{C}$ is a full matrix algebra, and dimension $4=2^2$ forces $\mathbb{B}\cong M_2(\mathbb{C})$. So *that* the algebra is $M_2(\mathbb{C})$ is derived from (B1) and (B2); *which* algebra is posited is the content of the posits. This distinction is used throughout: derivedness of a *type* does not make the object derived.
 
 **The quaternion basis is a presentation.** The units $e_1,e_2,e_3$ are a choice of orthonormal unit pure imaginary triple. Automorphisms of $\mathbb{H}$ (conjugation by $g\in\mathbb{H}$ with $g\bar g=e_0$) rotate the triple among themselves. The individual units are therefore presentations, while the subspaces they determine — for instance the pure imaginary subspace $\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ and its multiples by $i$ — are derived. The same distinction governs $i$ below.
 
@@ -244,15 +244,15 @@ the Born-rule expectation value. This is an application of the derived trace, no
 
 The scalar imaginary deserves its own section because it is the one element whose status is genuinely ambiguous, and because the framework uses it both as a scalar (in the $\mathbb{C}$-algebra view) and as an element of the algebra (in the $\mathbb{R}$-algebra view).
 
-**$i$ is not in $\mathbb{H}$.** The algebra $\mathbb{H}$ is four-dimensional with center $\mathbb{R}e_0$, and no element of $\mathbb{H}$ outside $\mathbb{R}e_0$ is central; in particular there is no central square root of $-1$ in $\mathbb{H}$, since $e_1,e_2,e_3$ are not central. So $i$ cannot be derived from the quaternion algebra alone. This is the sense in which the complexification is a genuine posit: it is not a consequence of (B1).
+**$i$ is not in $\mathbb{H}$.** The algebra $\mathbb{H}$ is four-dimensional with centre $\mathbb{R}e_0$, and no element of $\mathbb{H}$ outside $\mathbb{R}e_0$ is central; in particular there is no central square root of $-1$ in $\mathbb{H}$, since $e_1,e_2,e_3$ are not central. So $i$ cannot be derived from the quaternion algebra alone. This is the sense in which the complexification is a genuine posit: it is not a consequence of (B1).
 
-**Given the algebra, $i$ is determined up to sign.** Regard $\mathbb{B}$ as a real algebra. Its center is
+**Given the algebra, $i$ is determined up to sign.** Regard $\mathbb{B}$ as a real algebra. Its centre is
 
 $$
 Z(\mathbb{B})=\{z\in\mathbb{B}\ :\ z\tilde Q=\tilde Q z \text{ for all }\tilde Q\}=\operatorname{span}_{\mathbb{R}}\{e_0,i\},
 $$
 
-which is a copy of $\mathbb{C}$ inside $\mathbb{B}$; this is read off from the requirement that a central element commute with $e_1,e_2,e_3$, which forces its vector coefficients to vanish. The elements of the center that square to $-e_0$ are exactly the solutions of $z_0^2=-1$ for $z=z_0e_0$ among these, namely
+which is a copy of $\mathbb{C}$ inside $\mathbb{B}$; this is read off from the requirement that a central element commute with $e_1,e_2,e_3$, which forces its vector coefficients to vanish. The elements of the centre that square to $-e_0$ are exactly the solutions of $z_0^2=-1$ for $z=z_0e_0$ among these, namely
 
 $$
 z=\pm i.
@@ -311,7 +311,7 @@ The results are collected in one place. The statuses are those of the criterion,
 | The real structure $\bar{\cdot}$ | Derived from the complexification | Canonical $\mathbb{C}$-antilinear involution with fixed set $\mathbb{H}_{\mathbb{B}}$. |
 | The quaternion units $e_1,e_2,e_3$ | Presentation | A basis of the pure imaginary subspace; rotated by automorphisms of $\mathbb{H}$. |
 | The real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ | Derived | Fixed set of $\bar{\cdot}$. |
-| The complex subspace $\mathbb{C}_{\mathbb{B}}$ | Derived | Center of $\mathbb{B}$; fixed set of ${}^{\natural}$. |
+| The complex subspace $\mathbb{C}_{\mathbb{B}}$ | Derived | Centre of $\mathbb{B}$; fixed set of ${}^{\natural}$. |
 | Hermitian conjugation ${}^{*}$ | Derived (rigid) | Defined as ${}^{\natural}\circ\bar{\cdot}$. |
 | Anti-Hermitian conjugation $\flat$ | Derived (rigid) | Defined as $-{}^{*}$; the central sign is a definitional convention, not a presentation — no automorphism of the base moves it. |
 | The sectors $\mathbb{M}_+,\mathbb{M}_-$ | Derived | Eigenspaces of the derived involution ${}^{*}$. |
@@ -347,7 +347,7 @@ The one gap is left visible rather than closed. The complexification — equival
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation; derived |
 | ${}^{\flat}=-{}^{*}$ | Anti-Hermitian conjugation; derived up to sign |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; fixed set of $\bar{\cdot}$ |
-| $\mathbb{C}_{\mathbb{B}}$ | Complex subspace; center; fixed set of ${}^{\natural}$ |
+| $\mathbb{C}_{\mathbb{B}}$ | Complex subspace; centre; fixed set of ${}^{\natural}$ |
 | $\mathbb{M}_+$ | Hermitian subspace: real scalar, imaginary vector |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace: imaginary scalar, real vector |
 | $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; derived |
@@ -361,6 +361,6 @@ The one gap is left visible rather than closed. The complexification — equival
 - *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the automorphism group $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})=PGL(2,\mathbb{C})$ and the conjugate-linear coset, which are the source of the non-uniqueness of the real structure used in "The Stipulated Base."
 - *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the classification of the roots of $-1$ on which the polar representations depend.
 - *The Polar Element Representation in Subspaces* (`articles_physics/the-polar-element-representation-in-subspaces.md`), for the Hamilton, complex and Cartan representations whose status as derived constructions is settled here.
-- *The 2×2 Matrix Element Representation of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-of-biquaternions.md`), for the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ used to exhibit the real forms $\mathbb{H}_{\mathbb{B}}$ and $M_2(\mathbb{R})$; *The Clifford Algebra Representation* (`articles_maths/the-clifford-algebra-representation.md`), for the Clifford realization; and *Biquaternion Twisted Spinor Operator Representation* (`articles_maths/biquaternion-twisted-spinor-operator-representation.md`), for the spinor realization.
-- *Algebras: A General Introduction* (`articles_maths/algebras-a-general-introduction.md`), for the notions of algebra, center, simplicity, and base change that the criterion and the base presuppose.
+- *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ used to exhibit the real forms $\mathbb{H}_{\mathbb{B}}$ and $M_2(\mathbb{R})$; *The Clifford Algebra Representation* (`articles_maths/the-clifford-algebra-representation.md`), for the Clifford realization; and *Biquaternion Twisted Spinor Operator Representation* (`articles_maths/biquaternion-twisted-spinor-operator-representation.md`), for the spinor realization.
+- *Algebras: A General Introduction* (`articles_maths/algebras-a-general-introduction.md`), for the notions of algebra, centre, simplicity, and base change that the criterion and the base presuppose.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (`articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md`) and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* (`articles_physics/the-anti-hermitian-subspace-m-as-the-material-sector.md`), for the physical interpretations that this article records as posits rather than derivations.

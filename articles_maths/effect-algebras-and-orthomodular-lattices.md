@@ -222,7 +222,7 @@ $$
 
 A **block** is a maximal set of pairwise compatible elements; a block is a Boolean sub-effect-algebra.
 
-**Theorem.** Every orthomodular lattice is the union of its blocks, and the center
+**Theorem.** Every orthomodular lattice is the union of its blocks, and the centre
 
 $$
 Z(L) = \{\alpha \in L : \alpha \leftrightarrow \beta \text{ for every } \beta \in L\}
@@ -230,15 +230,15 @@ $$
 
 of an orthomodular lattice is a Boolean algebra.
 
-**Proof.** In an orthomodular lattice, two elements are compatible exactly when they generate a Boolean subalgebra, and every element belongs to a maximal such subalgebra, so the blocks cover $L$. The center consists of the elements compatible with all others, so the sublattice it generates is Boolean; the verification is the standard center theorem for orthomodular lattices.
+**Proof.** In an orthomodular lattice, two elements are compatible exactly when they generate a Boolean subalgebra, and every element belongs to a maximal such subalgebra, so the blocks cover $L$. The centre consists of the elements compatible with all others, so the sublattice it generates is Boolean; the verification is the standard centre theorem for orthomodular lattices.
 
-**Example.** The projection lattice $P(H)$ is irreducible for $\dim H \geq 2$, its center being $\{0, I\}$; its blocks are the Boolean algebras of projections lying in a maximal commutative subalgebra of the operator algebra, and the spectral theorem states that every projection lies in one of them. The standard effect algebra $\mathcal{E}(H)$ contains $P(H)$ as its sharp elements, and the projections of $\mathcal{E}(H)$ are exactly the elements $\alpha$ with $\alpha = \alpha^2$. The operator algebra, its norm and its commutative subalgebras belong to *Operator Algebras*; only the compatibility and the block structure are used here.
+**Example.** The projection lattice $P(H)$ is irreducible for $\dim H \geq 2$, its centre being $\{0, I\}$; its blocks are the Boolean algebras of projections lying in a maximal commutative subalgebra of the operator algebra, and the spectral theorem states that every projection lies in one of them. The standard effect algebra $\mathcal{E}(H)$ contains $P(H)$ as its sharp elements, and the projections of $\mathcal{E}(H)$ are exactly the elements $\alpha$ with $\alpha = \alpha^2$. The operator algebra, its norm and its commutative subalgebras belong to *Operator Algebras*; only the compatibility and the block structure are used here.
 
 ## Summary
 
 An ortholattice is a bounded lattice with an order-reversing involution $\alpha \mapsto \alpha^{\perp}$ satisfying $\alpha \wedge \alpha^{\perp} = 0$ and $\alpha \vee \alpha^{\perp} = 1$; it is orthomodular when $\alpha \leq \beta$ implies $\beta = \alpha \vee (\alpha^{\perp}\wedge \beta)$, and an orthomodular lattice is a Boolean algebra exactly when it is distributive. The projection lattice $P(H)$ of a Hilbert space is the standard orthomodular lattice; it is distributive only for $\dim H \leq 1$, and for $\dim H \geq 2$ its failure of distributivity is witnessed already by three lines in a plane. An effect algebra is a set with a partial commutative associative sum, a top $1$ and an orthosupplement $\alpha'$ with $\alpha \oplus \alpha' = 1$; every orthomodular lattice is an effect algebra with the sum equal to the join on orthogonal pairs, and the lattice-ordered effect algebras with the Riesz decomposition property are exactly the MV-algebras, so the Boolean algebras are the common distributive case.
 
-The effects of a von Neumann algebra, the self-adjoint elements with spectrum in $[0,1]$, form the standard effect algebra $\mathcal{E}(M)$, in which the projections are the idempotent elements and form the orthomodular lattice $P(M)$; the operators and their norm belong to functional analysis, and the present article uses only the order and the partial sum. States are the additive functionals to $[0,1]$; on the unit interval the identity is the only state, and on the projection lattice of a Hilbert space of dimension at least three Gleason's theorem identifies the states with the density operators. The compatibility relation organises an orthomodular lattice into Boolean blocks, its center is a Boolean algebra, and every orthomodular lattice is covered by its blocks. The Boolean system thus supports one algebra and no analysis, and the non-distributive generalisations of this article are its widest purely algebraic extension, the analysis entering only through the operator-algebra models of Part III.
+The effects of a von Neumann algebra, the self-adjoint elements with spectrum in $[0,1]$, form the standard effect algebra $\mathcal{E}(M)$, in which the projections are the idempotent elements and form the orthomodular lattice $P(M)$; the operators and their norm belong to functional analysis, and the present article uses only the order and the partial sum. States are the additive functionals to $[0,1]$; on the unit interval the identity is the only state, and on the projection lattice of a Hilbert space of dimension at least three Gleason's theorem identifies the states with the density operators. The compatibility relation organises an orthomodular lattice into Boolean blocks, its centre is a Boolean algebra, and every orthomodular lattice is covered by its blocks. The Boolean system thus supports one algebra and no analysis, and the non-distributive generalisations of this article are its widest purely algebraic extension, the analysis entering only through the operator-algebra models of Part III.
 
 ## Summary of Notation
 
@@ -257,7 +257,7 @@ The effects of a von Neumann algebra, the self-adjoint elements with spectrum in
 | $\beta \ominus \alpha$ | Difference, the unique $\gamma$ with $\alpha \oplus \gamma = \beta$ when $\alpha \leq \beta$ |
 | $\mathcal{E}(M)$, $\mathcal{E}(H)$ | Standard effect algebra of the effects, $\{\alpha : 0 \leq \alpha \leq 1\}$ |
 | $\alpha \leftrightarrow \beta$ | Compatibility |
-| $Z(E)$ | Center, the elements compatible with everything |
+| $Z(E)$ | Centre, the elements compatible with everything |
 | $S(E)$ | State space |
 | $H$ | A Hilbert space over $\mathbb{K} \in \{\mathbb{R}, \mathbb{C}\}$ |
 

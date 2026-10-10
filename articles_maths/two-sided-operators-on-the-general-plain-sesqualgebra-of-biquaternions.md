@@ -148,7 +148,7 @@ $$
 U = \{\,\tilde{Q}\in\mathbb{B} : \tilde{Q}^{*}\tilde{Q} = e_{0}\,\}.
 $$
 
-In the matrix model $\mathbb{B}\cong M_{2}(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation* the dagger is the conjugate transpose, so $U$ is the unitary group $U(2)$ of real dimension four, with determinant-one part $\mathrm{SU}(2)$ (*The Unitary Slice and the Compact Real Form with Hermitian Adjoint*, *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*).
+In the matrix model $\mathbb{B}\cong M_{2}(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* the dagger is the conjugate transpose, so $U$ is the unitary group $U(2)$ of real dimension four, with determinant-one part $\mathrm{SU}(2)$ (*The Unitary Slice and the Compact Real Form with Hermitian Adjoint*, *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*).
 
 **Theorem (the unitary two-sided operators).** For $\tilde{Q}\in\mathbb{B}$, the operator $\Theta_{\tilde{Q}}$ is unitary, $\langle\Theta_{\tilde{Q}}\tilde S,\Theta_{\tilde{Q}}\tilde P\rangle_{*}=\langle\tilde S,\tilde P\rangle_{*}$ for all $\tilde P,\tilde S$, if and only if $\tilde{Q}^{*}\tilde{Q}$ is a central scalar of modulus one:
 
@@ -188,7 +188,7 @@ $$
 \Theta_{\tilde{Q}}(e_{0}) = e_{0} \iff \tilde{Q}\in U .
 $$
 
-In the matrix model $\Phi(\Theta_{\tilde{Q}}(e_{0})) = M M^{\dagger}$ is the Gram matrix of the columns of $M=\Phi(\tilde{Q})$ (*Biquaternion 2×2 Matrix Element Representation*).
+In the matrix model $\Phi(\Theta_{\tilde{Q}}(e_{0})) = M M^{\dagger}$ is the Gram matrix of the columns of $M=\Phi(\tilde{Q})$ (*Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*).
 
 *Proof.* The first display is the definition; $\tilde{Q}\tilde{Q}^{*}$ is Hermitian because $(\tilde{Q}\tilde{Q}^{*})^{\dagger}=\tilde{Q}\tilde{Q}^{*}$; positivity is the positivity of the Gram matrix; and $\tilde{Q}\tilde{Q}^{*}=e_{0}$ is the defining condition of the slice.
 

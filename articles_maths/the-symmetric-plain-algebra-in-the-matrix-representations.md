@@ -233,7 +233,7 @@ In the $2\times2$ model the block's product becomes the symmetrisation of the ma
 ## Further Reading
 
 - *The General Plain Algebra in the $2\times2$ Matrix Representation* and *The General Plain Algebra in the $4\times4$ Regular Matrix Representation*, for the two models.
-- *Biquaternion 2×2 Matrix Element Representation* and *Biquaternion 4×4 Regular Matrix Element Representation*, for the element tables of the models.
+- *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* and *Biquaternion 4×4 Regular Matrix Element Representation*, for the element tables of the models.
 - *Biquaternion Objects and Their Matrix Correspondences*, for the correspondence between the objects and the matrices.
 - *Biquaternion Idempotents and Projections* and *Biquaternion Ideals and Peirce Decomposition*, for the idempotents, the projectors and the minimal left ideals.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, *The Trace Form and the Invariance of the Symmetric Plain Algebra* and *The Multiplication Operators of the Symmetric Plain Algebra*, for the coordinate statements transported here.

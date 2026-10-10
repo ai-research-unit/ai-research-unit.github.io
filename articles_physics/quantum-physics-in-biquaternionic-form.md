@@ -10,14 +10,6 @@ For the case of a single qubit, the framework reproduces the standard formalism:
 
 The article is organized as follows. First the Hermitian subspace $\mathbb{M}_+$ and the two forms that survive on it (the Hermitian form, which is the trace pairing up to a factor of $2$, and the general quaternionic bilinear form $N$ whose quadratic form is the biquaternion norm) are recalled. Then the pure states are identified with the idempotents of $\mathbb{M}_+$, and the mixed states with the elements of the Bloch ball. Then the observables are identified with the general Hermitian elements, and the Born rule is derived from the trace formula. Then the dynamics is described, in the Schrödinger and Heisenberg pictures, in terms of rotor conjugation. Then measurement is described as an algebraic operation. Then the purity, entropy, and fidelity of states are expressed in the framework. Then the symmetries are discussed. Then the ten-point checklist is applied. Then the compatibility of the framework with relativity is developed in a section of its own. The article closes with what is structural and what is new, and with open questions.
 
-**Note on the isomorphism convention.** Throughout this article, the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is taken to be the one that satisfies $e_j e_k = \sum_l \epsilon_{jkl}\, e_l$ for $j,k \in \{1,2,3\}$ with $j \neq k$ (the standard quaternion convention used in the algebraic articles of this series). Explicitly, the quaternion units map to
-
-$$
-e_0 \mapsto I_2, \quad e_1 \mapsto -i\sigma_1, \quad e_2 \mapsto -i\sigma_2, \quad e_3 \mapsto -i\sigma_3,
-$$
-
-where $\sigma_1, \sigma_2, \sigma_3$ are the Pauli matrices and $i$ is the standard imaginary unit of $\mathbb{C} \subset M_2(\mathbb{C})$ (the image of the scalar imaginary of $\mathbb{B}$ under the isomorphism). Under this convention, a Hermitian element $\tilde{H} = h_0 e_0 + i\mathbf{h}$ maps to $h_0 I + \mathbf{h}\cdot\boldsymbol{\sigma}$, and the idempotent $\tilde\Pi_+(\hat{\mu})$ maps to the standard spin-up projector along $\hat{\mu}$.
-
 ## The Hermitian Subspace
 
 An element of $\mathbb{M}_+$ has the form
@@ -131,7 +123,7 @@ where $\hat{\mu} = \mu_1 e_1 + \mu_2 e_2 + \mu_3 e_3$ is a unit pure real quater
 
 The **parametrization** is by the unit sphere $S^2 \subset \mathbb{R}^3$: the direction $\hat{\mu}$ determines the idempotent $\tilde\Pi_+(\hat{\mu})$ uniquely, and the complementary idempotent $\tilde\Pi_-(\hat{\mu}) = \tilde\Pi_+(-\hat{\mu})$ corresponds to the opposite direction.
 
-**Identification with standard states.** Under the isomorphism of this article, the idempotent $\tilde\Pi_+(\hat{\mu})$ maps to the standard pure state
+**Identification with standard states.** Under the series isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $e_k\mapsto-i\sigma_k$ (*Conventions in the Biquaternion Universe*), the idempotent $\tilde\Pi_+(\hat{\mu})$ maps to the standard pure state
 
 $$
 |\hat{\mu}+\rangle\langle\hat{\mu}+|,
@@ -165,7 +157,7 @@ $$
 B^3 = \{\mathbf{r} \in \mathbb{R}^3 : |\mathbf{r}| \leq 1\}.
 $$
 
-The pure states form the boundary sphere $|\mathbf{r}| = 1$; the maximally mixed state is at the center.
+The pure states form the boundary sphere $|\mathbf{r}| = 1$; the maximally mixed state is at the centre.
 
 **A structural observation.** The positivity condition $|\mathbf{r}| \leq 1$ is equivalent to the condition $N(\tilde{\rho}) \geq 0$ on the biquaternion norm of $\mathbb{B}$:
 

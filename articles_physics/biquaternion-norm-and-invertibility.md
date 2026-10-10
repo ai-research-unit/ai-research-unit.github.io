@@ -263,7 +263,7 @@ a group under multiplication with identity $e_0$.
 
 **Lie group structure.** $\mathbb{B}^\times$ is a real Lie group of dimension $8$, corresponding to $\mathrm{GL}(2,\mathbb{C})$, a complex Lie group of complex dimension 4. Its Lie algebra is $\mathbb{B}$ itself, with the commutator bracket $[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$.
 
-**Center.** The center of $\mathbb{B}^\times$ is $\mathbb{C}^\times$, the nonzero complex scalars, since the center of $\mathbb{B}$ is $\mathbb{C}$. Physically, the center is the two-dimensional complex time sector minus the origin; the central elements act as the identity operator on the algebra up to scale, which is the algebraic form of the statement that an overall complex scale carries no direction.
+**Centre.** The centre of $\mathbb{B}^\times$ is $\mathbb{C}^\times$, the nonzero complex scalars, since the centre of $\mathbb{B}$ is $\mathbb{C}$. Physically, the centre is the two-dimensional complex time sector minus the origin; the central elements act as the identity operator on the algebra up to scale, which is the algebraic form of the statement that an overall complex scale carries no direction.
 
 ### The Inverse Map
 
@@ -422,7 +422,7 @@ The Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is a Hermitian biquaternion, an elem
 
 The invertibility criterion is $N(\tilde{Q})\neq0$, with inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$. On the material sector it says that a four-vector is invertible exactly when it is not null. For a unit-norm element — every rotor — the inverse is the quaternion conjugate, $\tilde{Q}^{-1} = \tilde{Q}^{\natural}$, and this coincides with the dagger exactly for the unitary rotors, the rotation rotors; a boost rotor is Hermitian and its dagger is itself, not its inverse.
 
-The group of units $\mathbb{B}^\times$ is open, connected and isomorphic to $\mathrm{GL}(2,\mathbb{C})$, a real Lie group of dimension 8 with Lie algebra $\mathbb{B}$ and center $\mathbb{C}^\times$. The algebra is partitioned into the zero element, the invertible elements and the zero divisors, and this is the partition of four-vectors into the null ones and the rest. Of the six subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a cone each, with three-component complements; and $\mathrm{Vect}(\mathbb{B})$ contains the complex nilpotent cone of codimension 2, whose complement is connected.
+The group of units $\mathbb{B}^\times$ is open, connected and isomorphic to $\mathrm{GL}(2,\mathbb{C})$, a real Lie group of dimension 8 with Lie algebra $\mathbb{B}$ and centre $\mathbb{C}^\times$. The algebra is partitioned into the zero element, the invertible elements and the zero divisors, and this is the partition of four-vectors into the null ones and the rest. Of the six subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a cone each, with three-component complements; and $\mathrm{Vect}(\mathbb{B})$ contains the complex nilpotent cone of codimension 2, whose complement is connected.
 
 The zero divisors are studied in *Biquaternion Zero Divisors*, and the classification of the roots of $-1$ that underlies the idempotent classification in *Biquaternion Square Roots of Minus One, Zero and Plus One*.
 

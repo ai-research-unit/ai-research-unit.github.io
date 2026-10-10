@@ -7,7 +7,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$
 
 The plan is to recall the dagger of the biquaternion algebra, to identify the general sandwich with the dagger sandwich already used in the corpus, to read off the general identities of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* in the coordinates of the involution lattice, to compute the two sectors and the unitary slice, to see that the dagger of this algebra is a positive involution in the sense of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*, and to identify the slice as $U(2)$ with determinant-one part $\mathrm{Spin}(3)$. The article carries an example and points to the corpus for the applications.
 
-The algebra is *Biquaternions as a Vector Space over $\mathbb{C}$* and *The Clifford Algebra Representation*; the four conjugations are *The Group of Involutions*; the matrix model is *Biquaternion 2×2 Matrix Element Representation*; the Hermitian and anti-Hermitian subspaces are *Introduction to the Six Subspaces*; the dagger sandwich and its Lorentzian application are *Biquaternion Rotations and Lorentz Transformations*; the general operator is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; and the general forms, positivity and slice are *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*, *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* and *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*.
+The algebra is *Biquaternions as a Vector Space over $\mathbb{C}$* and *The Clifford Algebra Representation*; the four conjugations are *The Group of Involutions*; the matrix model is *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*; the Hermitian and anti-Hermitian subspaces are *Introduction to the Six Subspaces*; the dagger sandwich and its Lorentzian application are *Biquaternion Rotations and Lorentz Transformations*; the general operator is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; and the general forms, positivity and slice are *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*, *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* and *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*.
 
 ## The Dagger of the Biquaternion Algebra
 
@@ -78,7 +78,7 @@ is the general similarity statement of *The Hermitian Sandwich on a Hermitian Al
 
 ## The Unitary Slice of the Biquaternion Algebra
 
-**Theorem.** The unitary slice of $\mathbb{B}$ is the unitary group $U(2)$ under the identification $\mathbb{B}\cong M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation*, and its determinant-one part is $\mathrm{SU}(2)\cong\mathrm{Spin}(3)$.
+**Theorem.** The unitary slice of $\mathbb{B}$ is the unitary group $U(2)$ under the identification $\mathbb{B}\cong M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, and its determinant-one part is $\mathrm{SU}(2)\cong\mathrm{Spin}(3)$.
 
 **Proof.** The matrix model sends ${}^{*}$ to the conjugate transpose of a matrix, since its fixed space is the space of Hermitian matrices $\mathbb{M}_+$; the condition $x^{\dagger}x = 1$ is therefore the condition that the matrix be unitary, so the slice is $U(2)$, and the determinant-one part is $SU(2)$, which is $\mathrm{Spin}(3)$.
 

@@ -41,7 +41,7 @@ The notation $j$ is chosen deliberately. In the complex algebra the imaginary un
 
 ### The Real Algebra View
 
-Unlike the biquaternion algebra, which is a complex algebra and a real algebra at once, the split complex algebra has a single ground field. It is a **two-dimensional algebra over $\mathbb{R}$**: its basis is $\{1, j\}$, every element is a real linear combination of the two basis elements, and the multiplication is $\mathbb{R}$-bilinear. The center is all of $\mathbb{D}$, because the algebra is commutative.
+Unlike the biquaternion algebra, which is a complex algebra and a real algebra at once, the split complex algebra has a single ground field. It is a **two-dimensional algebra over $\mathbb{R}$**: its basis is $\{1, j\}$, every element is a real linear combination of the two basis elements, and the multiplication is $\mathbb{R}$-bilinear. The centre is all of $\mathbb{D}$, because the algebra is commutative.
 
 There is no second ground field to pass to, and no scalar imaginary inside the algebra. This is the first of the systematic differences from the four-dimensional members of the family, and it is the reason the subspace lattice below collapses.
 

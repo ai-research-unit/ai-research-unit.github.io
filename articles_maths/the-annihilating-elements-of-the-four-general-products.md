@@ -195,7 +195,7 @@ The set $\{c = 0\}$ is not the isotropic cone of the general plain bilinear form
 - *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four general products and their scalar–vector forms.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the property table, the four idempotent sets, the four square-root problems and the four unit entries.
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm form, the quadratic space, the invertibility criterion and the group of units.
-- *Biquaternion 2×2 Matrix Element Representation* (`articles_maths/biquaternion-2x2-matrix-element-representation.md`), for the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, the trace and the singular matrices.
+- *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/biquaternion-2x2-matrix-element-representation-m2c.md`), for the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, the trace and the singular matrices.
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the two families, the cone and the classification.
 - *The Nilpotents and the Zero Divisors of the Quaternionic Product* (`articles_maths/the-nilpotents-and-the-zero-divisors-of-the-quaternionic-product.md`), for the square-zero set of the natural product and the coincidence of its two annihilators.
 - *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the square-zero subfamily of the fourth product.

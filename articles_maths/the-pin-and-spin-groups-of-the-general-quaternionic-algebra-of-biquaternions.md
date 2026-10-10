@@ -24,7 +24,7 @@ $$
 
 **Remark (the two constituents and the real shadow).** $\mathrm{Pin}$ is the disjoint union $\mathrm{Spin}\sqcup\{N=-1\}$: the norm-one shell, a complex hypersurface of complex dimension $3$, and the norm-minus-one shell, its $i$-translate, since $N(i\tilde A)=i^{2}N(\tilde A)=-N(\tilde A)$ and the two shells are the same set moved by the central scalar $i$. On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the norm is positive definite, $N(\tilde Q)=\sum_\mu q_\mu^{2}\geq0$, so only the condition $N=1$ is met there, on the norm-one set $S^{3}\cong SU(2)\cong\mathrm{Spin}(3)$, and no element of $\mathbb{H}_{\mathbb{B}}$ has norm minus one; the norm-minus-one elements need the imaginary directions, the simplest being $ie_0$. On the complex algebra both shells meet the null cone.
 
-**Proposition (the matrix identifications).** Under the isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation*, with $\det\Phi(\tilde A)=N(\tilde A)$,
+**Proposition (the matrix identifications).** Under the isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, with $\det\Phi(\tilde A)=N(\tilde A)$,
 
 $$
 \mathrm{Spin}\cong SL_2(\mathbb{C}),\qquad

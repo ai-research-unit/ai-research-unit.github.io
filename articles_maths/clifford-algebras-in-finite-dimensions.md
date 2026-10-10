@@ -278,14 +278,14 @@ So the square of the volume element is a scalar, determined by the discriminant 
 
 This is a finite-dimensional phenomenon: it depends on the existence of a basis and on the rank $n$.
 
-## 16. The Center
+## 16. The Centre
 
-The **center** of $Cl(M, Q)$ is the set of elements that commute with every element. In finite dimensions:
+The **centre** of $Cl(M, Q)$ is the set of elements that commute with every element. In finite dimensions:
 
-- If $n$ is even, the center is $R$ (the scalars).
-- If $n$ is odd, the center is $R \oplus R\omega$, where $\omega$ is the volume element.
+- If $n$ is even, the centre is $R$ (the scalars).
+- If $n$ is odd, the centre is $R \oplus R\omega$, where $\omega$ is the volume element.
 
-So the Clifford algebra is central exactly when $n$ is even. When $n$ is odd, the volume element provides a non-trivial central element, and the center is $R \oplus R\omega$, isomorphic to $R[t]/(t^2 - \omega^2)$. The algebra decomposes as a product of two subalgebras precisely when $\omega^2$ is a square in $R$, since such a splitting needs a non-trivial idempotent of the center; this holds when the discriminant is a square, but not otherwise — for $Cl(\mathbb{R}^3)$ one has $\omega^2 = -1$, the center is $\mathbb{C}$, and the algebra is the simple algebra $M_2(\mathbb{C})$. This is the source of the difference between the even and odd cases in the classification.
+So the Clifford algebra is central exactly when $n$ is even. When $n$ is odd, the volume element provides a non-trivial central element, and the centre is $R \oplus R\omega$, isomorphic to $R[t]/(t^2 - \omega^2)$. The algebra decomposes as a product of two subalgebras precisely when $\omega^2$ is a square in $R$, since such a splitting needs a non-trivial idempotent of the centre; this holds when the discriminant is a square, but not otherwise — for $Cl(\mathbb{R}^3)$ one has $\omega^2 = -1$, the centre is $\mathbb{C}$, and the algebra is the simple algebra $M_2(\mathbb{C})$. This is the source of the difference between the even and odd cases in the classification.
 
 ---
 
@@ -474,7 +474,7 @@ The non-degenerate factor is a Clifford algebra of rank $\dim(M/\mathrm{rad}(Q))
 
 **The rank** of $Cl(M, Q)$ over $R$ is $2^n$, where $n = \operatorname{rank} M$. A basis is given by the products of generators with strictly increasing indices.
 
-**The volume element** $\omega = e_1 \cdots e_n$ satisfies $\omega^2 = (-1)^{n(n-1)/2} Q(e_1) \cdots Q(e_n) \cdot 1$. It is central when $n$ is odd, and central up to sign when $n$ is even. The center of the Clifford algebra is $R$ when $n$ is even and $R \oplus R\omega$ when $n$ is odd.
+**The volume element** $\omega = e_1 \cdots e_n$ satisfies $\omega^2 = (-1)^{n(n-1)/2} Q(e_1) \cdots Q(e_n) \cdot 1$. It is central when $n$ is odd, and central up to sign when $n$ is even. The centre of the Clifford algebra is $R$ when $n$ is even and $R \oplus R\omega$ when $n$ is odd.
 
 **The algebra decomposes** into an even part and an odd part. The even part is a subalgebra, and the odd part is a module over it. In finite dimensions, the even subalgebra is itself a Clifford algebra: $Cl^+(M, Q) \cong Cl(M', Q')$ with $\operatorname{rank} M' = \operatorname{rank} M - 1$. This reduction is the basis of the inductive computation of Clifford algebras.
 

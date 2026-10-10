@@ -90,7 +90,7 @@ $$
 \tilde{K}_2 = \sqrt{p}\,\tilde\Pi_-(\hat{\mathbf{n}}),
 $$
 
-whose normalization $\sum_l \tilde{K}_l^{*} \tilde{K}_l = (1-p)e_0 + p(\tilde\Pi_+ + \tilde\Pi_-) = e_0$ holds because the idempotents are Hermitian and complementary. The channel is **unital**: it fixes the maximally mixed state $\tilde{\rho} = \tfrac12 e_0$, so it is not a depolarizing map that pushes states toward the center; it is a map that pushes them toward an *axis*.
+whose normalization $\sum_l \tilde{K}_l^{*} \tilde{K}_l = (1-p)e_0 + p(\tilde\Pi_+ + \tilde\Pi_-) = e_0$ holds because the idempotents are Hermitian and complementary. The channel is **unital**: it fixes the maximally mixed state $\tilde{\rho} = \tfrac12 e_0$, so it is not a depolarizing map that pushes states toward the centre; it is a map that pushes them toward an *axis*.
 
 On the Bloch vector the channel acts by
 

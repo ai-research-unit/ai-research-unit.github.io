@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article constructs the faithful two-dimensional matrix representation of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ and identifies the dual numbers with a commutative subalgebra of the $2\times2$ matrices. It follows *Dual-Numbers Algebra* for the conventions, *Dual-Numbers Norm and Invertibility* for the norm, and *Dual-Number Subspaces* for the two distinguished submodules. Its structural model is *Biquaternion 2×2 Matrix Element Representation*, in which the biquaternion algebra is identified with the full matrix algebra $M_2(\mathbb{C})$; the dual algebra is identified only with a commutative subalgebra, and the comparison at the end records the difference.
+This article constructs the faithful two-dimensional matrix representation of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ and identifies the dual numbers with a commutative subalgebra of the $2\times2$ matrices. It follows *Dual-Numbers Algebra* for the conventions, *Dual-Numbers Norm and Invertibility* for the norm, and *Dual-Number Subspaces* for the two distinguished submodules. Its structural model is *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, in which the biquaternion algebra is identified with the full matrix algebra $M_2(\mathbb{C})$; the dual algebra is identified only with a commutative subalgebra, and the comparison at the end records the difference.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the geometric specialisation is $R = \mathbb{R}$, and then the algebra is written $\mathbb{D}'$. A general dual number is
 
@@ -145,9 +145,9 @@ The two conventions are related by transpose, $[u] = \Phi(u)^{\mathsf{T}}$, and 
 
 ## Structural Consequences
 
-### Commutativity and the Center
+### Commutativity and the Centre
 
-The image is commutative, so $\Phi$ cannot be surjective onto $M_2(R)$ unless the base ring is the zero ring; the image is a proper subalgebra of dimension two inside the four-dimensional $M_2(R)$. The center of the image is the whole image, and the centralizer of a non-scalar element $aI + a'E$, $a' \neq 0$, is exactly the image; the centralizer of a scalar matrix is all of $M_2(R)$.
+The image is commutative, so $\Phi$ cannot be surjective onto $M_2(R)$ unless the base ring is the zero ring; the image is a proper subalgebra of dimension two inside the four-dimensional $M_2(R)$. The centre of the image is the whole image, and the centralizer of a non-scalar element $aI + a'E$, $a' \neq 0$, is exactly the image; the centralizer of a scalar matrix is all of $M_2(R)$.
 
 ### Units
 

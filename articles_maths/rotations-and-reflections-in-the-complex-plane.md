@@ -111,7 +111,7 @@ In the quaternion algebra the unit group acts on the pure imaginary subspace thi
 
 **Proof.** Complex multiplication is commutative, so $u A u^{-1} = A u u^{-1} = A$.
 
-The reason is structural and not a defect of the choice of $u$: conjugation by a fixed element acts trivially on the center, and in a commutative algebra every element is central, so the inner automorphism group is trivial. For $\mathbb{C}$ the algebra automorphism group is even smaller than one might expect.
+The reason is structural and not a defect of the choice of $u$: conjugation by a fixed element acts trivially on the centre, and in a commutative algebra every element is central, so the inner automorphism group is trivial. For $\mathbb{C}$ the algebra automorphism group is even smaller than one might expect.
 
 **Theorem.** The group of $\mathbb{R}$-algebra automorphisms of $\mathbb{C}$ is
 
@@ -357,7 +357,7 @@ Every orientation-preserving isometry with $u = 1$ is a translation, and with $u
 
 The unit circle $U(1) = \{u : \lvert u\rvert = 1\}$ is a compact connected abelian group, isomorphic to $\mathbb{R}/2\pi\mathbb{Z}$ via $\theta \mapsto e^{i\theta}$, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ by the polar decomposition.
 
-Multiplication by a unit, $R_u(A) = uA$, is an $\mathbb{R}$-linear isometry fixing the origin, the rotation through the angle $\theta$ when $u = e^{i\theta}$; it has determinant $1$ and trace $2\cos\theta$, and its eigenvalues are $e^{\pm i\theta}$. The map $u \mapsto R_u$ is an isomorphism $U(1) \cong SO(2)$. The sandwich $A \mapsto uAu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the center. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the multiplication together with the norm $N(A) = A\bar A$. Multiplication, not conjugation, is the natural action.
+Multiplication by a unit, $R_u(A) = uA$, is an $\mathbb{R}$-linear isometry fixing the origin, the rotation through the angle $\theta$ when $u = e^{i\theta}$; it has determinant $1$ and trace $2\cos\theta$, and its eigenvalues are $e^{\pm i\theta}$. The map $u \mapsto R_u$ is an isomorphism $U(1) \cong SO(2)$. The sandwich $A \mapsto uAu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the centre. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the multiplication together with the norm $N(A) = A\bar A$. Multiplication, not conjugation, is the natural action.
 
 The reflections are the maps $S_u(A) = u\bar A$; each is an orientation-reversing involution with a line of fixed points through the origin, the line at angle $\alpha$ when $u = e^{2i\alpha}$. They form the coset $U(1)\bar{\cdot}$, they are all conjugate to complex conjugation, and the composition of two reflections is the rotation $S_u \circ S_v = R_{u\bar v}$: reflections in lines at angles $\alpha$ and $\beta$ compose to the rotation through $2(\alpha - \beta)$. Cartan–Dieudonné in dimension two states that every element of $O(2)$ is a product of at most two reflections.
 
