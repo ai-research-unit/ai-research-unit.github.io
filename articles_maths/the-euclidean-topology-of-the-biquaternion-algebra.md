@@ -44,9 +44,9 @@ $$
 
 and the constant $\sqrt{2}$ cannot be lowered.
 
-**Proof.** Under the algebra isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, which is a linear isometry up to the factor $\sqrt2$, one has $\|\Phi(\tilde{T})\|_F=\sqrt2\|\tilde{T}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm. The Frobenius norm is submultiplicative, so
+**Proof.** Under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, which is a linear isometry up to the factor $\sqrt2$, one has $\|\mathsf{M}_2(\tilde{T})\|_F=\sqrt2\|\tilde{T}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm. The Frobenius norm is submultiplicative, so
 $$
-\sqrt2\,\|\tilde{Q}\tilde{R}\|_E=\|\Phi(\tilde{Q})\Phi(\tilde{R})\|_F\leq\|\Phi(\tilde{Q})\|_F\|\Phi(\tilde{R})\|_F=2\|\tilde{Q}\|_E\|\tilde{R}\|_E,
+\sqrt2\,\|\tilde{Q}\tilde{R}\|_E=\|\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{R})\|_F\leq\|\mathsf{M}_2(\tilde{Q})\|_F\|\mathsf{M}_2(\tilde{R})\|_F=2\|\tilde{Q}\|_E\|\tilde{R}\|_E,
 $$
 which is the inequality. For sharpness take $\tilde{Q}=\tilde{R}=e_0+ie_1$: then $\tilde{Q}^{2}=2e_0+2ie_1$ and $\|\tilde{Q}\|_E^{2}=2$, $\|\tilde{Q}^{2}\|_E=2\sqrt2$, so $\|\tilde{Q}^{2}\|_E=\sqrt2\,\|\tilde{Q}\|_E^{2}$.
 
@@ -63,7 +63,7 @@ $$
 
 Moreover, for every unitary biquaternion $\tilde{U}$ the inner conjugation $\Theta_{\tilde{U}}(\tilde{T})=\tilde{U}\tilde{T}\tilde{U}^{*}$ is a Euclidean isometry.
 
-**Proof.** A central multiplier scales every coefficient by $A$, and the three conjugations $\natural$, $\bar{\cdot}$, ${}^{*}$ (together with the reversal $\flat=-{}^{*}$) permute the coefficients among $\pm Q_\mu$ and $\pm\bar Q_\mu$, preserving $\sum_\mu|Q_\mu|^{2}$. For the last statement, $\Phi$ carries $\Theta_{\tilde{U}}$ to $M\mapsto M_{\tilde{U}}XM_{\tilde{U}}^{\dagger}$ with $M_{\tilde{U}}$ unitary, and the Frobenius norm is invariant under unitary similarity.
+**Proof.** A central multiplier scales every coefficient by $A$, and the three conjugations $\natural$, $\bar{\cdot}$, ${}^{*}$ (together with the reversal $\flat=-{}^{*}$) permute the coefficients among $\pm Q_\mu$ and $\pm\bar Q_\mu$, preserving $\sum_\mu|Q_\mu|^{2}$. For the last statement, $\mathsf{M}_2$ carries $\Theta_{\tilde{U}}$ to $M\mapsto M_{\tilde{U}}XM_{\tilde{U}}^{\dagger}$ with $M_{\tilde{U}}$ unitary, and the Frobenius norm is invariant under unitary similarity.
 
 ## The Contractibility of the Algebra
 

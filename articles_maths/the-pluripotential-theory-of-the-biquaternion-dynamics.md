@@ -8,7 +8,7 @@ The Green's function and its conditional existence are *The Escape Radius and th
 
 The article owns the Monge–Ampère current of the biquaternion map, the invariance of the equilibrium measure under the map, the product form on the idempotent plane, the mass-loss phenomenon at the cone, and the statement of the open questions.
 
-**Standing convention.** $F=F_{\tilde C}$ is the quadratic family in the general plain bilinear product, $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, $F^*$ the pullback on functions and currents, $d$ the algebraic degree $2$, and $k=4$ the complex dimension of the model.
+**Standing convention.** $F=F_{\tilde C}$ is the quadratic family in the general plain bilinear product, $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, $F^*$ the pullback on functions and currents, $d$ the algebraic degree $2$, and $k=4$ the complex dimension of the model.
 
 ## The Classical Framework
 

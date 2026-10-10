@@ -36,7 +36,7 @@ $$
 and in the $4\times4$ regular representation the determinant is its square and the trace is four times the scalar part,
 
 $$
-\det\operatorname{mat}_4(\tilde{Q}) = N(\tilde{Q})^2 , \qquad \operatorname{Tr}\operatorname{mat}_4(\tilde{Q}) = 4Q_0 .
+\det\mathsf{M}_4(\tilde{Q}) = N(\tilde{Q})^2 , \qquad \operatorname{Tr}\mathsf{M}_4(\tilde{Q}) = 4Q_0 .
 $$
 
 The modulus of the polar representation is $\rho = re^{i\alpha} = \sqrt{N(\tilde{Q})}$, so the scale and the phase are the polar form of the determinant:
@@ -266,6 +266,7 @@ The polar form reads as the four physical factors of an element: a scale, a cent
 The four factors are read as the **four moduli of a scattering amplitude**: the scale is the magnitude, the phase the global phase, the boost the velocity of the frame and the rotor the spin rotation, so the polar word is the amplitude-rotation decomposition a scattering computation performs. The reading is offered as a labelled analogy with *The S-Matrix in Biquaternionic Form* and *Thomson and Compton Scattering: The Biquaternion Polarization Algebra*, where the same four objects appear as the polarisation and phase data of a scattering process. One further reading of the form can be named.
 
 - **Singular-value reading.** The matrix image has the singular-value decomposition $\Phi(\tilde Q)=P\Sigma V^{\dagger}$, and the framework's polar pair is that decomposition read physically: the positive factor is the Hermitian factor, whose eigenvalues are the two singular values $\sigma_1,\sigma_2$, and the unitary factor is the rotor. The scale is the geometric mean of the singular values, $r=\sqrt{\sigma_1\sigma_2}=\sqrt{\lvert N(\tilde Q)\rvert}$, and the boost is their anisotropy, so a frame change decomposes into a magnitude, a phase, an anisotropy and a turn. Boundary: the boost factor exists only outside the cone, so the reading covers the invertible off-cone elements and not the lightlike ones.
+- **Rest-frame reading.** The boost factor exists only outside the cone, so a lightlike element has no polar form at all: read physically, a null element has **no rest frame**, and the little group of a null direction is the $U(1)$ of the helicity phase rather than the rotation group of a rest frame, which is the group-theoretic form of the same exclusion. Boundary: the absence of a rest frame for a null four-momentum is owned by *The Photon as a Null Element: What the Cone Derives and What It Does Not*, and the little group and its phase by *The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase*; the reading adds the polar-form statement of the two and no new group.
 
 ## Summary
 
@@ -277,7 +278,7 @@ The polar representation of a biquaternion is $r e^{i\alpha}B\hat{q}$, and in th
 |---|---|
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | a biquaternion, $Q_\mu\in\mathbb{C}$ |
 | $N(\tilde{Q}) = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ | the biquaternion norm, the determinant of the $2\times2$ representative |
-| $\det\operatorname{mat}_4(\tilde{Q}) = N(\tilde{Q})^2$, $\operatorname{Tr}\operatorname{mat}_4(\tilde{Q}) = 4Q_0$ | determinant and trace of the $4\times4$ regular representative |
+| $\det\mathsf{M}_4(\tilde{Q}) = N(\tilde{Q})^2$, $\operatorname{Tr}\mathsf{M}_4(\tilde{Q}) = 4Q_0$ | determinant and trace of the $4\times4$ regular representative |
 | $\rho = re^{i\alpha} = \sqrt{N(\tilde{Q})}$ | the complex modulus |
 | $r$ | the scale, $|\det\Phi|^{1/2}$ |
 | $e^{i\alpha}$ | the central phase, $\alpha = \tfrac12\arg\det\Phi$ |

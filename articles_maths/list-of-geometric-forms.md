@@ -18,7 +18,7 @@ The bilinear form is the basic datum: a rule linear in each argument, represente
 | a bilinear form $B : M \times M \to R$ | bilinearity; the Gram matrix $G_{ij} = B(e_i,e_j)$ in a basis, with $G \mapsto P^TGP$ under a change of basis | *Bilinear Forms* |
 | the radical $\operatorname{rad}(B)$ | $\{u : B(u,v) = 0 \ \forall v\}$; the form is non-degenerate when the radical is zero | *Bilinear Forms* |
 | the rank $\operatorname{rank}(B)$ | the rank of the Gram matrix; the discriminant $\Delta(B) = \det G \in F^\times/(F^\times)^2$ | *Bilinear Forms* |
-| the orthogonal direct sum $B_1 \perp B_2$ | the form on $M_1 \oplus M_2$ with $B(M_1,M_2) = 0$; the operation of the classification | *Bilinear Forms* |
+| the orthogonal direct sum $B_1 \perp B_2$ | the form on $M_1 \oplus \mathsf{M}_2$ with $B(M_1,\mathsf{M}_2) = 0$; the operation of the classification | *Bilinear Forms* |
 | the isometry group $\operatorname{Isom}(M,B)$ | the linear maps preserving $B$; $\operatorname{O}(M,B)$ in the symmetric case, $\operatorname{Sp}(M,B)$ in the alternating case | *Bilinear Forms*; *List of Classical Geometric Groups* |
 | a $\sigma$-sesquilinear form | linear in one argument and $\sigma$-linear in the other for an involution $\sigma$ of the ring | *Hilbert Algebras* |
 | a Hermitian form $s(x,y)$ | $s(x,y) = \sigma(s(y,x))$; the diagonal $q(x) = s(x,x)$ is a quadratic form over the fixed ring | *Hilbert Algebras* |

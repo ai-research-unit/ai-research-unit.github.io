@@ -17,8 +17,7 @@ The article keeps to the algebra. It defers the interval, the four-momentum and 
 Biquaternion Zero-Divisor Cone* and *Causality and the Light Cone as an Information Barrier in
 Biquaternionic Form*; the states and the Bloch ball to *The States the Indefinite Metric Cannot Normalise* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; the
 measurement cone to *POVMs and the Positive Cone in Biquaternionic Form*; and the comparison of the four
-scalar forms to *The Four General Products and Their Physical Readings: the Two Algebras and the Two
-Sesqualgebras*.
+scalar forms to *The Four General Products and Their Physical Readings*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
 $e_k^{2}=-e_0$, $e_1e_2=e_3$, central $i$ with $i^{2}=-1$. An element is $\tilde Q=Q_0e_0+\mathbf Q$ with
@@ -91,8 +90,7 @@ One element therefore carries a **probability metric** and a **causal metric** a
 conjugations: the first is positive and makes the module Hilbert-like, the second is indefinite and makes
 it Minkowski-like, and the algebra needs both. The four-general-product grid reads the same two
 conjugations as the two slots, and the coefficient $\varepsilon$ of a scalar form survives exactly when
-the two slots agree (*The Four General Products and Their Physical Readings: the Two Algebras and the Two
-Sesqualgebras*). The physical content of the pair of squares is this: positivity of the dagger is a
+the two slots agree (*The Four General Products and Their Physical Readings*). The physical content of the pair of squares is this: positivity of the dagger is a
 **Euclidean** theorem, and the interval is the **Lorentzian** structure of the same element.
 
 ## The Two Invariants of the Square

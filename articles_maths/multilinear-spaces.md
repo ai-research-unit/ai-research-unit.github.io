@@ -157,12 +157,12 @@ for an arbitrary index set $A$, and the same holds in every variable.
 
 ### Additivity and Induced Maps
 
-For fixed $M_2,\dots,M_n$ the construction $M_1 \mapsto M_1 \otimes_R M_2 \otimes_R \cdots \otimes_R M_n$ is a functor: an $R$-linear $u:M_1 \to N_1$ induces $u \otimes \operatorname{id}\otimes \cdots \otimes \operatorname{id}$. The functor is additive, $(u+u')\otimes \operatorname{id} = u\otimes \operatorname{id} + u'\otimes \operatorname{id}$, and it preserves identity and composition. It preserves direct sums and cokernels, and it need not preserve kernels, exactly as for two factors.
+For fixed $\mathsf{M}_2,\dots,M_n$ the construction $M_1 \mapsto M_1 \otimes_R \mathsf{M}_2 \otimes_R \cdots \otimes_R M_n$ is a functor: an $R$-linear $u:M_1 \to N_1$ induces $u \otimes \operatorname{id}\otimes \cdots \otimes \operatorname{id}$. The functor is additive, $(u+u')\otimes \operatorname{id} = u\otimes \operatorname{id} + u'\otimes \operatorname{id}$, and it preserves identity and composition. It preserves direct sums and cokernels, and it need not preserve kernels, exactly as for two factors.
 
-**Theorem.** The functor $-\otimes_R M_2 \otimes_R \cdots \otimes_R M_n$ is right exact: if $M_1' \to M_1 \to M_1'' \to 0$ is exact, then so is
+**Theorem.** The functor $-\otimes_R \mathsf{M}_2 \otimes_R \cdots \otimes_R M_n$ is right exact: if $M_1' \to M_1 \to M_1'' \to 0$ is exact, then so is
 
 $$
-M_1'\otimes_R M_2\otimes_R\cdots\otimes_R M_n \longrightarrow M_1\otimes_R M_2\otimes_R\cdots\otimes_R M_n \longrightarrow M_1''\otimes_R M_2\otimes_R\cdots\otimes_R M_n \longrightarrow 0 .
+M_1'\otimes_R \mathsf{M}_2\otimes_R\cdots\otimes_R M_n \longrightarrow M_1\otimes_R \mathsf{M}_2\otimes_R\cdots\otimes_R M_n \longrightarrow M_1''\otimes_R \mathsf{M}_2\otimes_R\cdots\otimes_R M_n \longrightarrow 0 .
 $$
 
 *Proof.* For $n=2$ this is the right exactness of the balanced product, proved in the companion article on flatness and exactness. For larger $n$, associate the tensor product so that the varying factor is the first argument of a two-factor product whose second factor is the tensor product of the remaining modules, and apply the case $n=2$.

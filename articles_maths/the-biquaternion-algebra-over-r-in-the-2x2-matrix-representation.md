@@ -3,35 +3,35 @@
 
 ## Introduction
 
-The reading group *Topology on the Biquaternions as an Algebra over $\mathbb{R}$* forgets the complex structure of the algebra and reads it as a real algebra of dimension eight. Its form is the **trace form** $\tau(\tilde{P},\tilde{Q})=\operatorname{Tr}(L_{\tilde{P}}L_{\tilde{Q}})$, the canonical symmetric bilinear form of *The Trace Form of the Real Biquaternion Algebra*, which is eight times the realification of the general plain bilinear form, $\tau=8\,\mathrm{Re}\langle\cdot,\cdot\rangle$, and its grammar is the realification of the four complex forms of *The Realification of the Four Forms*, of signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$. This article reads that group through the $2\times2$ matrix realization $\Phi$ of *Introduction to the $2\times2$ Matrix Representation of Biquaternions*, and it is the first of the two representation articles of the group; the companion *The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Matrix Representation* repeats the reading on the real regular representation.
+The reading group *Topology on the Biquaternions as an Algebra over $\mathbb{R}$* forgets the complex structure of the algebra and reads it as a real algebra of dimension eight. Its form is the **trace form** $\tau(\tilde{P},\tilde{Q})=\operatorname{Tr}(L_{\tilde{P}}L_{\tilde{Q}})$, the canonical symmetric bilinear form of *The Trace Form of the Real Biquaternion Algebra*, which is eight times the realification of the general plain bilinear form, $\tau=8\,\mathrm{Re}\langle\cdot,\cdot\rangle$, and its grammar is the realification of the four complex forms of *The Realification of the Four Forms*, of signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$. This article reads that group through the $2\times2$ matrix realization $\mathsf{M}_2$ of *Introduction to the $2\times2$ Matrix Representation of Biquaternions*, and it is the first of the two representation articles of the group; the companion *The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Matrix Representation* repeats the reading on the real regular representation.
 
-The real reading of the model is the realification $M_2(\mathbb{C})\cong\mathbb{R}^8$, in which the complex structure is the multiplication by the scalar matrix $iI$ and the eight real coordinates are the real and imaginary parts of the four matrix entries. The trace form is the real trace pairing $\tau(\tilde{P},\tilde{Q})=4\,\mathrm{Re}\operatorname{Tr}(\Phi(\tilde{P})\Phi(\tilde{Q}))$, and the four realified forms are the real parts of the four pairings of the model, whose signatures are the four rows of the signature table.
+The real reading of the model is the realification $M_2(\mathbb{C})\cong\mathbb{R}^8$, in which the complex structure is the multiplication by the scalar matrix $iI$ and the eight real coordinates are the real and imaginary parts of the four matrix entries. The trace form is the real trace pairing $\tau(\tilde{P},\tilde{Q})=4\,\mathrm{Re}\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q}))$, and the four realified forms are the real parts of the four pairings of the model, whose signatures are the four rows of the signature table.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; the real basis is $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$. All matrix claims of this article are recomputed in the verification script of the pass.
 
 ## The Realification of the Model
 
-**The real structure.** $\Phi$ is $\mathbb{C}$-linear, hence $\mathbb{R}$-linear, and it is an isomorphism of real algebras
+**The real structure.** $\mathsf{M}_2$ is $\mathbb{C}$-linear, hence $\mathbb{R}$-linear, and it is an isomorphism of real algebras
 
 $$
-\Phi:\mathbb{B}\longrightarrow M_2(\mathbb{C})\cong\mathbb{R}^8 ,
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C})\cong\mathbb{R}^8 ,
 $$
 
-the real dimension being eight on both sides. The complex structure of the algebra is the operator $J:\tilde{Q}\mapsto i\tilde{Q}$, and in the model it is the multiplication by the scalar matrix $iI$; the coefficient conjugation is the complex conjugation of the matrix, $\Phi(\bar{\tilde{Q}})=\overline{\Phi(\tilde{Q})}$.
+the real dimension being eight on both sides. The complex structure of the algebra is the operator $J:\tilde{Q}\mapsto i\tilde{Q}$, and in the model it is the multiplication by the scalar matrix $iI$; the coefficient conjugation is the complex conjugation of the matrix, $\mathsf{M}_2(\bar{\tilde{Q}})=\overline{\mathsf{M}_2(\tilde{Q})}$.
 
-**The real basis.** The eight elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ form a real basis of the algebra, and their images under $\Phi$ form a real basis of the model; in this basis the product is real bilinear and the complex structure $i$ acts on the last four coordinates alone.
+**The real basis.** The eight elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ form a real basis of the algebra, and their images under $\mathsf{M}_2$ form a real basis of the model; in this basis the product is real bilinear and the complex structure $i$ acts on the last four coordinates alone.
 
 ## The Trace Form in the Model
 
 **Theorem (the trace form as a real trace pairing).** For all biquaternions,
 
 $$
-\tau(\tilde{P},\tilde{Q})=\operatorname{Tr}(L_{\tilde{P}}L_{\tilde{Q}})=8\,\mathrm{Re}\langle\tilde{P},\tilde{Q}\rangle = 4\,\mathrm{Re}\operatorname{Tr}\bigl(\Phi(\tilde{P})\Phi(\tilde{Q})\bigr),
+\tau(\tilde{P},\tilde{Q})=\operatorname{Tr}(L_{\tilde{P}}L_{\tilde{Q}})=8\,\mathrm{Re}\langle\tilde{P},\tilde{Q}\rangle = 4\,\mathrm{Re}\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})\bigr),
 $$
 
 the real trace pairing of the matrices, with the factor $4$ in place of the factor $8$ because the complex trace identity carries the factor $2$.
 
-*Proof.* $\tau(\tilde{P},\tilde{Q})=8\,\mathrm{Re}\,\mathrm{Sc}(\tilde{P}\tilde{Q})$ by the trace-form theorem, and $\mathrm{Re}\operatorname{Tr}(\Phi(\tilde{P})\Phi(\tilde{Q}))=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{P}\tilde{Q})$ by the complex trace identity; the two factors $8$ and $4$ differ by the factor $2$ of that identity.
+*Proof.* $\tau(\tilde{P},\tilde{Q})=8\,\mathrm{Re}\,\mathrm{Sc}(\tilde{P}\tilde{Q})$ by the trace-form theorem, and $\mathrm{Re}\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q}))=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{P}\tilde{Q})$ by the complex trace identity; the two factors $8$ and $4$ differ by the factor $2$ of that identity.
 
 **Theorem (the diagonal and the signature).** With $\tilde{Q}=\sum_\mu(q_\mu+iq'_\mu)e_\mu$,
 
@@ -41,14 +41,14 @@ $$
 
 so the form has signature $(4,4)$ on the eight real coordinates: the four real parts of the coefficients $q_\mu$ carry the sign $\varepsilon_\mu$ and the four imaginary parts carry the opposite sign. The form is the realified general plain bilinear form rescaled by $8$, so its Gram matrix is the block matrix of *The Realification of the Four Forms* rescaled by $8$, and its null cone is the realified cone of the general plain bilinear form.
 
-**Invariance.** The trace form is invariant under the automorphisms of the algebra: for every unit $\tilde{A}$ and all biquaternions, $\tau(\tilde{A}\tilde{P}\tilde{A}^{-1},\tilde{A}\tilde{Q}\tilde{A}^{-1})=\tau(\tilde{P},\tilde{Q})$, which in the model is the invariance of the real trace pairing under simultaneous conjugation by $\Phi(\tilde{A})$.
+**Invariance.** The trace form is invariant under the automorphisms of the algebra: for every unit $\tilde{A}$ and all biquaternions, $\tau(\tilde{A}\tilde{P}\tilde{A}^{-1},\tilde{A}\tilde{Q}\tilde{A}^{-1})=\tau(\tilde{P},\tilde{Q})$, which in the model is the invariance of the real trace pairing under simultaneous conjugation by $\mathsf{M}_2(\tilde{A})$.
 
 ## The Four Realified Forms in the Model
 
 The four complex forms of the matrix model have real parts, and the four real quadratic forms on the eight real coordinates are
 
 $$
-\mathrm{Re}\operatorname{Tr}\bigl(\Phi(\tilde{P})\Phi(\tilde{Q})\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\Phi(\tilde{P})\operatorname{adj}\Phi(\tilde{Q})\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\Phi(\tilde{P})^{\dagger}\Phi(\tilde{Q})\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\operatorname{adj}\Phi(\tilde{P})^{\dagger}\Phi(\tilde{Q})\bigr),
+\mathrm{Re}\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{P})\operatorname{adj}\mathsf{M}_2(\tilde{Q})\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{P})^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr),\quad \mathrm{Re}\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{P})^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr),
 $$
 
 the trace pairings of the plain, adjugated, conjugate-transposed and adjugated conjugate-transposed products. Their signatures are the four signatures of the group: $(4,4)$ for the general plain bilinear form, $(4,4)$ split for the general quaternionic bilinear form, $(8,0)$ for the general plain sesquilinear form, and $(2,6)$ for the general quaternionic sesquilinear form. The first of the four is the trace form of this group up to the factor $4$, and the others are the realified readings recorded in *The Realification of the Four Forms*.
@@ -65,14 +65,14 @@ the trace pairings of the plain, adjugated, conjugate-transposed and adjugated c
 
 ## Summary
 
-The real reading of the $2\times2$ model is the realification $M_2(\mathbb{C})\cong\mathbb{R}^8$, in which the complex structure is multiplication by $iI$ and the coefficient conjugation is the conjugation of the matrix. The group's trace form is the real trace pairing $\tau(\tilde{P},\tilde{Q})=4\operatorname{Re}\operatorname{Tr}(\Phi(\tilde{P})\Phi(\tilde{Q}))=8\operatorname{Re}\langle\tilde{P},\tilde{Q}\rangle$, the realified general plain bilinear form rescaled by $8$, of signature $(4,4)$ and invariant under the automorphisms of the algebra. The four realified forms of the group are the real parts of the four pairings of the model, with the signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$ of *The Realification of the Four Forms*, and the Minkowski form of signature $(1,3)$ is the form of the Lorentzian slice of the algebra.
+The real reading of the $2\times2$ model is the realification $M_2(\mathbb{C})\cong\mathbb{R}^8$, in which the complex structure is multiplication by $iI$ and the coefficient conjugation is the conjugation of the matrix. The group's trace form is the real trace pairing $\tau(\tilde{P},\tilde{Q})=4\operatorname{Re}\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q}))=8\operatorname{Re}\langle\tilde{P},\tilde{Q}\rangle$, the realified general plain bilinear form rescaled by $8$, of signature $(4,4)$ and invariant under the automorphisms of the algebra. The four realified forms of the group are the real parts of the four pairings of the model, with the signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$ of *The Realification of the Four Forms*, and the Minkowski form of signature $(1,3)$ is the form of the Lorentzian slice of the algebra.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $M_2(\mathbb{C})\cong\mathbb{R}^8$ | the realification of the model, complex structure $iI$ |
-| $\tau(\tilde{P},\tilde{Q})=4\operatorname{Re}\operatorname{Tr}(\Phi(\tilde{P})\Phi(\tilde{Q}))$ | the trace form of the group |
+| $\tau(\tilde{P},\tilde{Q})=4\operatorname{Re}\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q}))$ | the trace form of the group |
 | $\tau=8\operatorname{Re}\langle\cdot,\cdot\rangle$ | the trace form as the realified general plain bilinear form rescaled |
 | $\tau(\tilde{Q},\tilde{Q})=8\sum_\mu\varepsilon_\mu(q_\mu^2-q'_\mu{}^2)$ | the diagonal, signature $(4,4)$ |
 | $(4,4),(4,4),(8,0),(2,6)$ | the signatures of the four realified forms |

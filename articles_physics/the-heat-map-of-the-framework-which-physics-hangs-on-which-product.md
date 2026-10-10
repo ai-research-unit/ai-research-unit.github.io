@@ -10,8 +10,7 @@ every entry of its map is a citation of an article that owns the result, and its
 statement of the dependency, the entry that does **not** appear in the map, and the questions the map
 leaves open.
 
-This article is the index of the second head category, and it sits beside *The Four General Products and
-Their Physical Readings: the Two Algebras and the Two Sesqualgebras*, which owns the four products and
+This article is the index of the second head category, and it sits beside *The Four General Products and Their Physical Readings*, which owns the four products and
 their readings and states that the naming of the four jobs is the framework's claim and not a consequence
 of the algebra. The twelve operations are *The 12 Products of the Biquaternion Complex Space*, and the
 three decompositions of the algebra are *Relations Between Subspaces*. The map below reads those results
@@ -136,7 +135,7 @@ whether the polar scale is a field or a gauge choice.
 
 ## Further Reading
 
-- *The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*, for
+- *The Four General Products and Their Physical Readings*, for
   the four products, the four readings and the statement of what is claimed and what is not.
 - *The 12 Products of the Biquaternion Complex Space*, for the twelve operations and their laws.
 - *Conventions in the Biquaternion Universe*, for the four forms, the two classes the exchange makes and

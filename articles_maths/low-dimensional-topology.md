@@ -31,7 +31,7 @@ $$
 
 ## Three-Manifolds: Prime Decomposition and the Torus Decomposition
 
-**Definition.** A connected sum decomposition $M\cong M_1\# M_2$ is **trivial** if one factor is $S^3$. A closed three-manifold is **prime** if it is not $S^3$ and every connected sum decomposition is trivial. A three-manifold is **irreducible** if every embedded $2$-sphere bounds a ball; irreducible implies prime, and the only prime manifold that is not irreducible is $S^2\times S^1$.
+**Definition.** A connected sum decomposition $M\cong M_1\# \mathsf{M}_2$ is **trivial** if one factor is $S^3$. A closed three-manifold is **prime** if it is not $S^3$ and every connected sum decomposition is trivial. A three-manifold is **irreducible** if every embedded $2$-sphere bounds a ball; irreducible implies prime, and the only prime manifold that is not irreducible is $S^2\times S^1$.
 
 **Theorem (Kneser; Milnor; prime decomposition).** Every compact oriented three-manifold $M$ is a connected sum
 
@@ -186,7 +186,7 @@ The combinatorial models of a three-manifold are the Heegaard splittings, unique
 |---|---|
 | $M$, $N$ | Compact (usually closed oriented) manifolds of dimension two, three or four |
 | $g$, $k$, $b$, $\chi$ | Genus of an orientable surface, genus of a non-orientable surface, boundary count, Euler characteristic $\chi=2-2g-b$ |
-| $M_1\# M_2$ | Connected sum; prime and irreducible three-manifolds |
+| $M_1\# \mathsf{M}_2$ | Connected sum; prime and irreducible three-manifolds |
 | $L(p,q)$ | Lens space $S^3/(\mathbb{Z}/p)$; Seifert fibred over $S^2$ |
 | $T^2\times I$, $\Sigma$ | Splitting tori of the JSJ decomposition; Heegaard surface |
 | $H_i$, $\Sigma_g$ | Handlebodies; genus-$g$ Heegaard splitting $M=H_0\cup_\Sigma H_1$ |

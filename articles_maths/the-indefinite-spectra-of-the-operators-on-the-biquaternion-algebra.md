@@ -6,19 +6,19 @@ The spectral theory of the Hermitian adjoint on the biquaternion algebra gives t
 
 The general theory is *Spectral Theory on Krein Spaces* and *Definitizable Operators and the Krein–Naĭmark Theorem*; the definite counterpart is *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*; the operator classes are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*; the element spectra that the operator spectra are read from are *Biquaternion Spectral Theory*; and the symmetry is *The Fundamental Symmetry of the Biquaternion Algebra*.
 
-**Conventions.** $T^{\dagger}=JT^{*}J$ with $J={}^{\natural}$; $\Theta_{\tilde{Q}}(\tilde{P})=\tilde{Q}\tilde{P}\tilde{Q}^{\dagger}$, $L_{\tilde{Q}}$, $R_{\tilde{Q}}$; $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix model, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\det\Phi(\tilde{Q})$; and the spectra are those of the operators as complex-linear endomorphisms of the four-dimensional complex space $\mathbb{B}$. The Kronecker forms of the definite article are used: $L_{\tilde{Q}}\leftrightarrow\Phi(\tilde{Q})\otimes I$ and $R_{\tilde{R}}\leftrightarrow I\otimes\Phi(\tilde{R})^{\mathsf T}$.
+**Conventions.** $T^{\dagger}=JT^{*}J$ with $J={}^{\natural}$; $\Theta_{\tilde{Q}}(\tilde{P})=\tilde{Q}\tilde{P}\tilde{Q}^{\dagger}$, $L_{\tilde{Q}}$, $R_{\tilde{Q}}$; $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix model, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\det\mathsf{M}_2(\tilde{Q})$; and the spectra are those of the operators as complex-linear endomorphisms of the four-dimensional complex space $\mathbb{B}$. The Kronecker forms of the definite article are used: $L_{\tilde{Q}}\leftrightarrow\mathsf{M}_2(\tilde{Q})\otimes I$ and $R_{\tilde{R}}\leftrightarrow I\otimes\mathsf{M}_2(\tilde{R})^{\mathsf T}$.
 
 ## The Spectral Rules of the Definite Case
 
 The following rules are quoted from the sibling article and are the input to everything below.
 
-- $\mathrm{spec}(L_{\tilde{Q}})=\mathrm{spec}(\Phi(\tilde{Q}))$ with each eigenvalue of multiplicity two, and the same for $R_{\tilde{Q}}$.
-- If $\Phi(\tilde{Q})$ is diagonalisable with eigenvalues $\lambda_1,\lambda_2$, then
+- $\mathrm{spec}(L_{\tilde{Q}})=\mathrm{spec}(\mathsf{M}_2(\tilde{Q}))$ with each eigenvalue of multiplicity two, and the same for $R_{\tilde{Q}}$.
+- If $\mathsf{M}_2(\tilde{Q})$ is diagonalisable with eigenvalues $\lambda_1,\lambda_2$, then
 $$
 \mathrm{spec}\bigl(\Theta_{\tilde{Q}}\bigr)=\{\lambda_i\bar\lambda_j\}_{i,j=1}^{2}.
 $$
 
-**Proof.** These are the Kronecker forms $L_{\tilde{Q}}=\Phi(\tilde{Q})\otimes I$, $R_{\tilde{R}}=I\otimes\Phi(\tilde{R})^{\mathsf T}$ and $\Theta_{\tilde{Q}}=\Phi(\tilde{Q})\otimes\overline{\Phi(\tilde{Q})}$ of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, whose spectra are the sums and products of the spectra of the factors.
+**Proof.** These are the Kronecker forms $L_{\tilde{Q}}=\mathsf{M}_2(\tilde{Q})\otimes I$, $R_{\tilde{R}}=I\otimes\mathsf{M}_2(\tilde{R})^{\mathsf T}$ and $\Theta_{\tilde{Q}}=\mathsf{M}_2(\tilde{Q})\otimes\overline{\mathsf{M}_2(\tilde{Q})}$ of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, whose spectra are the sums and products of the spectra of the factors.
 
 ## The $J$-Self-Adjoint Left and Right Multiplications
 
@@ -32,7 +32,7 @@ so the spectrum is real and the operator is a real scalar.
 
 **Proof.** The criterion is that of *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*, §*The $J$-Adjoint of the Three Families*; a scalar multiple of the identity has the single eigenvalue $t$ with multiplicity $\dim_{\mathbb{C}}\mathbb{B}=4$.
 
-**Remark (why there is no non-real case here).** A real quaternion $\tilde{Q}=t+\sum_kq_ke_k$ has the two eigenvalues $\lambda=t+i|\mathbf{q}|$ and $\bar\lambda$ of $\Phi(\tilde{Q})$ (*Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*), so $\mathrm{spec}(L_{\tilde{Q}})=\{\lambda,\bar\lambda\}$ with multiplicity two each; but such an $L_{\tilde{Q}}$ is $J$-self-adjoint only when $\mathbf{q}=0$, in which case the pair collapses to the real double eigenvalue $t$. The non-real pair is a $J$-self-adjoint spectrum only for operators outside the left-multiplication family. The same statement holds for $R_{\tilde{R}}$.
+**Remark (why there is no non-real case here).** A real quaternion $\tilde{Q}=t+\sum_kq_ke_k$ has the two eigenvalues $\lambda=t+i|\mathbf{q}|$ and $\bar\lambda$ of $\mathsf{M}_2(\tilde{Q})$ (*Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*), so $\mathrm{spec}(L_{\tilde{Q}})=\{\lambda,\bar\lambda\}$ with multiplicity two each; but such an $L_{\tilde{Q}}$ is $J$-self-adjoint only when $\mathbf{q}=0$, in which case the pair collapses to the real double eigenvalue $t$. The non-real pair is a $J$-self-adjoint spectrum only for operators outside the left-multiplication family. The same statement holds for $R_{\tilde{R}}$.
 
 **Proof.** The eigenvalues of a real quaternion are those of its $2\times2$ matrix, computed in *Biquaternion Spectral Theory*; the collapse is the criterion above.
 
@@ -57,7 +57,7 @@ $$
 $$
 \Theta_{\tilde V}^{2}(\tilde{P})=\tilde V^{2}\tilde P(\tilde V^{\dagger})^{2}=|\langle\tilde V,\tilde V\rangle_{\natural}|^{2}\tilde P,
 $$
-so $\Theta_{\tilde V}^{2}=|\langle\tilde V,\tilde V\rangle_{\natural}|^{2}\mathrm{id}$. If $\langle\tilde V,\tilde V\rangle_{\natural}\neq0$ the matrix $\Phi(\tilde V)$ is traceless with $\Phi(\tilde V)^{2}=-\langle\tilde V,\tilde V\rangle_{\natural}I$, hence diagonalisable with the eigenvalues $\pm i\sqrt{\langle\tilde V,\tilde V\rangle_{\natural}}$, and the product rule gives $\{|N|,|N|,-|N|,-|N|\}$. If $\langle\tilde V,\tilde V\rangle_{\natural}=0$ then $\tilde V^{2}=0$ and $(\tilde V^{\dagger})^{2}=0$, so $\Theta_{\tilde V}^{2}=0$; the single eigenvalue is $0$ with multiplicity four.
+so $\Theta_{\tilde V}^{2}=|\langle\tilde V,\tilde V\rangle_{\natural}|^{2}\mathrm{id}$. If $\langle\tilde V,\tilde V\rangle_{\natural}\neq0$ the matrix $\mathsf{M}_2(\tilde V)$ is traceless with $\mathsf{M}_2(\tilde V)^{2}=-\langle\tilde V,\tilde V\rangle_{\natural}I$, hence diagonalisable with the eigenvalues $\pm i\sqrt{\langle\tilde V,\tilde V\rangle_{\natural}}$, and the product rule gives $\{|N|,|N|,-|N|,-|N|\}$. If $\langle\tilde V,\tilde V\rangle_{\natural}=0$ then $\tilde V^{2}=0$ and $(\tilde V^{\dagger})^{2}=0$, so $\Theta_{\tilde V}^{2}=0$; the single eigenvalue is $0$ with multiplicity four.
 
 **Corollary (the sandwich is definitizable except at the null elements).** A $J$-self-adjoint sandwich is diagonalisable, with real spectrum, exactly when it is not the sandwich of a null vector $\tilde V$ with $\langle\tilde V,\tilde V\rangle_{\natural}=0$; in that case its spectrum is the real pair $\pm|\langle\tilde Q,\tilde Q\rangle_{\natural}|$ with the inertia $(4,0)$ or $(2,2)$, and the operator is definitizable in the sense of *Definitizable Operators and the Krein–Naĭmark Theorem*.
 
@@ -91,7 +91,7 @@ $$
 \mathrm{spec}(T)=\{2i,\,-2i,\,0,\,0\}.
 $$
 
-**Proof.** $J$-self-adjointness is $(L_{\tilde{Q}})^{\dagger}+(R_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}+L_{\bar{\tilde{Q}}}$, which for $\tilde{Q}=e_1$ (real coefficients) returns $L_{e_1}+R_{e_1}$; the sum is a "Sylvester" operator, and the rule $\mathrm{spec}(L_{\tilde{Q}}+R_{\tilde{Q}})=\{\lambda_i+\lambda_j\}$ for the eigenvalues $\lambda_i$ of $\Phi(\tilde{Q})$ (*The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, §*The Spectrum of the Sylvester Operator*) applied to $\Phi(e_1)=i\sigma_1$ with eigenvalues $\pm i$ gives $\{i+i,i-i,-i+i,-i-i\}=\{2i,0,0,-2i\}$.
+**Proof.** $J$-self-adjointness is $(L_{\tilde{Q}})^{\dagger}+(R_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}+L_{\bar{\tilde{Q}}}$, which for $\tilde{Q}=e_1$ (real coefficients) returns $L_{e_1}+R_{e_1}$; the sum is a "Sylvester" operator, and the rule $\mathrm{spec}(L_{\tilde{Q}}+R_{\tilde{Q}})=\{\lambda_i+\lambda_j\}$ for the eigenvalues $\lambda_i$ of $\mathsf{M}_2(\tilde{Q})$ (*The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, §*The Spectrum of the Sylvester Operator*) applied to $\mathsf{M}_2(e_1)=i\sigma_1$ with eigenvalues $\pm i$ gives $\{i+i,i-i,-i+i,-i-i\}=\{2i,0,0,-2i\}$.
 
 **Remark.** The spectrum is non-real and symmetric about the real axis, exactly as the general theory of *Spectral Theory on Krein Spaces* predicts, and the operator is $J$-self-adjoint but not definitizable; it is therefore a $J$-self-adjoint operator of the algebra to which the Krein–Naĭmark theory does not apply, in contrast with the sandwiches of §*The $J$-Self-Adjoint Sandwiches*.
 
@@ -99,7 +99,7 @@ $$
 
 **A central scalar.** $\tilde{Q}=t e_0$, $t\in\mathbb{R}$: $L_{\tilde{Q}}$ is $J$-self-adjoint with spectrum $\{t\}$ of multiplicity four.
 
-**A real quaternion.** $\tilde{Q}=\tfrac12+\tfrac{\sqrt3}{2}e_1$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=1$ and the eigenvalues of $\Phi(\tilde{Q})$ are $e^{\pm i\pi/3}$; $L_{\tilde{Q}}$ is a unit-norm element, but it is **not** $J$-self-adjoint, and its spectrum $\{e^{\pm i\pi/3}\}$ is not the $J$-self-adjoint spectrum. It is $J$-unitary as a sandwich, by $|N|=1$.
+**A real quaternion.** $\tilde{Q}=\tfrac12+\tfrac{\sqrt3}{2}e_1$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=1$ and the eigenvalues of $\mathsf{M}_2(\tilde{Q})$ are $e^{\pm i\pi/3}$; $L_{\tilde{Q}}$ is a unit-norm element, but it is **not** $J$-self-adjoint, and its spectrum $\{e^{\pm i\pi/3}\}$ is not the $J$-self-adjoint spectrum. It is $J$-unitary as a sandwich, by $|N|=1$.
 
 **A vector sandwich of nonzero norm.** $\tilde{Q}=e_1$: $\mathrm{spec}(\Theta_{e_1})=\{1,1,-1,-1\}$, inertia $(2,2)$; the operator is $J$-self-adjoint and $J$-unitary.
 
@@ -118,7 +118,7 @@ For the Krein adjoint $T^{\dagger}=JT^{*}J$ the $J$-self-adjoint operators of th
 | Symbol | Meaning |
 |---|---|
 | $T^{\dagger}=JT^{*}J$ | The Krein adjoint |
-| $\mathrm{spec}(L_{\tilde{Q}})=\mathrm{spec}(\Phi(\tilde{Q}))$ (twice) | Rule for the left multiplication |
+| $\mathrm{spec}(L_{\tilde{Q}})=\mathrm{spec}(\mathsf{M}_2(\tilde{Q}))$ (twice) | Rule for the left multiplication |
 | $L_{\tilde{Q}}$ $J$-self-adjoint $\iff\tilde{Q}\in\mathbb{R}e_0$, spectrum $\{t\}$ (mult. 4) | The left-multiplication case |
 | $\mathrm{spec}(\Theta_{\zeta e_0})=\{\lvert\zeta\rvert^{2}\}$ (mult. 4), inertia $(4,0)$ | The central regime |
 | $\mathrm{spec}(\Theta_{\tilde V})=\{\pm\lvert \langle\tilde V,\tilde V\rangle_{\natural}\rvert\}$ (mult. 2), inertia $(2,2)$ | The vector regime |

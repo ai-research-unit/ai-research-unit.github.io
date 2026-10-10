@@ -132,7 +132,7 @@ For $a=J$ one has $\alpha(a)=J$, so $a\alpha(a)=J^2=1$ and $\Sigma^{\alpha}_{J,J
 
 For $a=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ one computes $\alpha(a)=\begin{pmatrix}1&-1\\0&1\end{pmatrix}$ and $a\alpha(a)=I$, so $a$ lies in $\mathrm{R}(A)$; $\Sigma^{\alpha}_{a,a^{-1}}$ is a signed reflection, self-adjoint by the corollary, and an isometry by the theorem. Taking the element star $X^{*}=X^{\dagger}_{\text{Herm}}$ the adjoint transpose, the unitary elements are the matrices with $X^{*}X=XX^{*}=I$, and for such a $u$ the sandwich $\Sigma^{\alpha}_{u,u^{*}}$ is isometric, the explicit verification being the multiplication of the two $2\times2$ matrices.
 
-**Verified.** The adjoint formula $(\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}$ was checked on the four basis elements of $M_2(K)$ for the trace form and the grade involution $\alpha(X)=JXJ^{-1}$; the self-adjointness of $\Sigma^{\alpha}_{a,a^{-1}}$ was checked for $a=J$ and for $a=\begin{pmatrix}1&1\\0&1\end{pmatrix}$; the isometry condition was checked to be $ba=1$.
+**Verified.** The adjoint formula $(\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}$ was checked on the four basis elements of $\mathsf{M}_2(K)$ for the trace form and the grade involution $\alpha(X)=JXJ^{-1}$; the self-adjointness of $\Sigma^{\alpha}_{a,a^{-1}}$ was checked for $a=J$ and for $a=\begin{pmatrix}1&1\\0&1\end{pmatrix}$; the isometry condition was checked to be $ba=1$.
 
 ## Summary
 

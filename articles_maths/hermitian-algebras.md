@@ -48,7 +48,7 @@ $$
 
 **Proof.** Apply the axiom to the pair $(y^{\dagger}, x^{\dagger})$ and use $y^{\dagger}x^{\dagger} = (xy)^{\dagger}$, obtaining $\langle (xy)^{\dagger}, z\rangle = \langle x^{\dagger}, yz\rangle$; reading the axiom on the pair $(x^{\dagger},y)$ gives the displayed relation. The non-degeneracy of the form is what makes the adjoint unique.
 
-**Remark (a third identity is not equivalent).** The identity $\langle xy,z\rangle = \langle x, zy^{\dagger}\rangle$ is sometimes listed as a third equivalent form of the axiom. It is not a consequence of it, even for a non-degenerate form: the compatible form $\tau(xGy^{\dagger})$ with $G = \operatorname{diag}(1,-1)$ on $M_2$ fails it on $307\,008$ of the $531\,441$ triples of matrices with entries in $\{-1,0,1\}$, while the trace form $\tau(xy^{\dagger})$ satisfies it because $(zy^{\dagger})^{\dagger} = yz^{\dagger}$ and the trace is cyclic. The identity is an extra hypothesis, and it is discussed in *Sesqualgebras with a Form*.
+**Remark (a third identity is not equivalent).** The identity $\langle xy,z\rangle = \langle x, zy^{\dagger}\rangle$ is sometimes listed as a third equivalent form of the axiom. It is not a consequence of it, even for a non-degenerate form: the compatible form $\tau(xGy^{\dagger})$ with $G = \operatorname{diag}(1,-1)$ on $\mathsf{M}_2$ fails it on $307\,008$ of the $531\,441$ triples of matrices with entries in $\{-1,0,1\}$, while the trace form $\tau(xy^{\dagger})$ satisfies it because $(zy^{\dagger})^{\dagger} = yz^{\dagger}$ and the trace is cyclic. The identity is an extra hypothesis, and it is discussed in *Sesqualgebras with a Form*.
 
 **Proposition.** Let $L_x : A \to A$ be the left multiplication $L_x(y) = xy$ and let $R_x(y) = yx$ be the right multiplication. Then
 

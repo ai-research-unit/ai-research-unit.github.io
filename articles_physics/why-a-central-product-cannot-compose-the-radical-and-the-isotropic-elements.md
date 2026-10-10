@@ -35,7 +35,7 @@ radical, the isotropic elements and the Jordan failure, in their algebraic form,
 the restriction of the coefficient to each, are *The Six Subspaces under the Symmetric Quaternionic
 Algebra of Biquaternions*; and the two bilinear forms of the algebra, with their Gram matrices and their
 signature table, are *Comparison Between the Four General Products* and
-*The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*.
+*The Four General Products and Their Physical Readings*.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$; an
@@ -222,7 +222,7 @@ $N$ is the indefinite Minkowski form $(3,1)$ and $B$ the definite negative Eucli
 passage between the two is the passage between the interval and the Euclidean square, and it is the sign
 the natural conjugation inserts. The signatures on the six subspaces are *The Six Subspaces under the
 Symmetric Quaternionic Algebra of Biquaternions* and the transversal table of
-*The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*. The centre
+*The Four General Products and Their Physical Readings*. The centre
 and vector rows are read as the real part of the coefficient, the two coefficients there being complex.
 
 ## The Reading: Why a Central Product Cannot Compose
@@ -335,7 +335,7 @@ isotropic elements and Jordan witness are
 restrictions are *The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*; the
 operation itself is the companion *The Quaternion Form as a Product: the Scalar Coupling of Two Material
 Operations*; and the two forms are *Comparison Between the Four General Products* and
-*The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*.
+*The Four General Products and Their Physical Readings*.
 
 ## Summary of Notation
 
@@ -380,5 +380,4 @@ Operations*; and the two forms are *Comparison Between the Four General Products
   and the four forms.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* and *Zero Divisors as a
   Physical Locus in Biquaternionic Form*, for the cone.
-- Companion article *The Four General Products and Their Physical Readings: the Two Algebras and the Two
-  Sesqualgebras*, for the signature table.
+- Companion article *The Four General Products and Their Physical Readings*, for the signature table.

@@ -115,7 +115,7 @@ For a locally free $\mathcal{F}$ of rank one the operator sheaf is $\mathcal{E}n
 
 ### The Locally Free Sheaf of Rank Two
 
-For a locally free $\mathcal{F}$ of rank two the operator sheaf is locally free of rank four and locally $M_2(\mathcal{O}_X)$; on a trivializing cover an operator is a two-by-two matrix of local functions, its trace is a function and its determinant is defined on the units. The sheaf $\mathcal{E}nd(\mathcal{F})$ is an Azumaya algebra of degree two when $X$ is a scheme, and over the complex numbers the reduction modulo the trace gives the traceless part, a locally free sheaf of rank three; the traceless operators are the local structure of the Lie algebra $\mathfrak{sl}_2$ attached to the rank-two bundle.
+For a locally free $\mathcal{F}$ of rank two the operator sheaf is locally free of rank four and locally $\mathsf{M}_2(\mathcal{O}_X)$; on a trivializing cover an operator is a two-by-two matrix of local functions, its trace is a function and its determinant is defined on the units. The sheaf $\mathcal{E}nd(\mathcal{F})$ is an Azumaya algebra of degree two when $X$ is a scheme, and over the complex numbers the reduction modulo the trace gives the traceless part, a locally free sheaf of rank three; the traceless operators are the local structure of the Lie algebra $\mathfrak{sl}_2$ attached to the rank-two bundle.
 
 ## Summary
 

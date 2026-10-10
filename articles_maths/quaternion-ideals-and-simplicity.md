@@ -43,7 +43,7 @@ The argument uses nothing about the specific multiplication of $\mathbb{H}$; it 
 
 *Proof.* A two-sided ideal is in particular a left ideal, so the absence of proper left ideals is the absence of proper two-sided ideals. The condition $A^2\neq 0$ holds because $1\neq 0$ and $1\cdot1 = 1$.
 
-**Remark.** The simplicity of $\mathbb{H}$ is inherited by every scalar extension in a precise sense: if $K$ is a field extension of $F$, then $\mathbb{H}\otimes_F K$ is either a division algebra over $K$ and hence simple, or it is isomorphic to the matrix algebra $M_2(K)$, which is simple as a ring as well. In both cases the simplicity survives the extension, although the division property does not.
+**Remark.** The simplicity of $\mathbb{H}$ is inherited by every scalar extension in a precise sense: if $K$ is a field extension of $F$, then $\mathbb{H}\otimes_F K$ is either a division algebra over $K$ and hence simple, or it is isomorphic to the matrix algebra $\mathsf{M}_2(K)$, which is simple as a ring as well. In both cases the simplicity survives the extension, although the division property does not.
 
 ## The Quaternion Algebra as a Central Simple Algebra
 

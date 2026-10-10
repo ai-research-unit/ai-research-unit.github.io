@@ -68,7 +68,7 @@ $$
 \omega(L_{\tilde Q})=\langle\xi,\tilde Q\rangle=\mathrm{Sc}(\tilde Q)=Q_0 ,
 $$
 
-and it is tracial, $\omega(L_{\tilde Q}L_{\tilde R})=(QR)_0=(RQ)_0=\omega(L_{\tilde R}L_{\tilde Q})$, because $\mathrm{Sc}(\tilde Q\tilde R)=\mathrm{Sc}(\tilde R\tilde Q)$; the functional $\mathrm{Sc}$ is the normalised trace of $\mathbb{B}$, $2\,\mathrm{Sc}(\tilde Q)=\mathrm{Tr}\,\Phi(\tilde Q)$ in the matrix model. So the vector state of the unit **is the trace**, and the modular flow of the pair is the identity flow. The triviality is a property of the vector and not of the algebra: $\mathcal{M}\cong M_2(\mathbb{C})$ is a factor whose trace is not the vector state of a general $\xi$, and a cyclic and separating vector other than a scalar multiple of $e_0$ carries a non-tracial vector state and hence a non-trivial modular operator.
+and it is tracial, $\omega(L_{\tilde Q}L_{\tilde R})=(QR)_0=(RQ)_0=\omega(L_{\tilde R}L_{\tilde Q})$, because $\mathrm{Sc}(\tilde Q\tilde R)=\mathrm{Sc}(\tilde R\tilde Q)$; the functional $\mathrm{Sc}$ is the normalised trace of $\mathbb{B}$, $2\,\mathrm{Sc}(\tilde Q)=\mathrm{Tr}\,\mathsf{M}_2(\tilde Q)$ in the matrix model. So the vector state of the unit **is the trace**, and the modular flow of the pair is the identity flow. The triviality is a property of the vector and not of the algebra: $\mathcal{M}\cong M_2(\mathbb{C})$ is a factor whose trace is not the vector state of a general $\xi$, and a cyclic and separating vector other than a scalar multiple of $e_0$ carries a non-tracial vector state and hence a non-trivial modular operator.
 
 ## The Modular Conjugation and the Two Sides
 
@@ -100,7 +100,7 @@ $$
 
 ### The Modular Pair of the Algebra
 
-The pair $(\mathcal{M},\xi)$ with $\mathcal{M}=\{L_{\tilde Q}\}$, $\xi=e_0$, has $\omega=\mathrm{Sc}$ as its vector state, the trace itself, $S(\tilde Q)=\tilde Q^{*}$, $\Delta=\mathrm{id}$, $\jmath={}^{*}$, and the trivial flow. In the matrix model $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ (*Biquaternion Objects and Their Matrix Correspondences*), the star is the conjugate transpose, so $S$ acts by $\Phi(\tilde Q)\mapsto\Phi(\tilde Q)^{*}$, and the modular conjugation exchanges the left and the right matrix multiplications.
+The pair $(\mathcal{M},\xi)$ with $\mathcal{M}=\{L_{\tilde Q}\}$, $\xi=e_0$, has $\omega=\mathrm{Sc}$ as its vector state, the trace itself, $S(\tilde Q)=\tilde Q^{*}$, $\Delta=\mathrm{id}$, $\jmath={}^{*}$, and the trivial flow. In the matrix model $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ (*Biquaternion Objects and Their Matrix Correspondences*), the star is the conjugate transpose, so $S$ acts by $\mathsf{M}_2(\tilde Q)\mapsto\mathsf{M}_2(\tilde Q)^{*}$, and the modular conjugation exchanges the left and the right matrix multiplications.
 
 ### The Forced Failure on the Krein Space
 

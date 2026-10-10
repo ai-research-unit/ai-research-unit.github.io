@@ -196,7 +196,7 @@ $$
 M_p = m\left(1+\frac{3}{2\alpha}\sum_{l=0}^{p} l^4\right),
 $$
 
-which is a formula found earlier by Barut (1980) by quite different arguments. It gives $M_0=m_e$, $M_1=m_\mu$, $M_2=m_\tau$, and a fourth state $M_3\approx2.0\times10^4\,m_e\approx10.3$ GeV that has not been observed. The projector values $\beta=0,\pi,\pi/2,3\pi/2$ are read as the electron, positron, muon and antimuon respectively — the **discrete phase of the spinor-to-field map becomes a discrete mass**.
+which is a formula found earlier by Barut (1980) by quite different arguments. It gives $M_0=m_e$, $M_1=m_\mu$, $\mathsf{M}_2=m_\tau$, and a fourth state $M_3\approx2.0\times10^4\,m_e\approx10.3$ GeV that has not been observed. The projector values $\beta=0,\pi,\pi/2,3\pi/2$ are read as the electron, positron, muon and antimuon respectively — the **discrete phase of the spinor-to-field map becomes a discrete mass**.
 
 ### The numbers the formula gives
 

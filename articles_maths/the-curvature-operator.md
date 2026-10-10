@@ -164,7 +164,7 @@ $$
 
 **Example (the model spaces).** On the round sphere of radius $r$ the operator is $\frac{1}{r^2}\mathrm{id}$; on Euclidean space it is $0$; on hyperbolic space of curvature $-1/r^2$ it is $-\frac{1}{r^2}\mathrm{id}$. The sphere is the operator with all eigenvalues equal and positive, the hyperbolic space the one with all eigenvalues equal and negative, and the flat space the one with all eigenvalues zero, which is the operator form of the three model geometries.
 
-**Example (a product).** For a Riemannian product $M_1\times M_2$ the curvature vanishes on the bivectors that mix the two factors, and on the bivectors inside one factor it is the operator of that factor; so the curvature operator is block diagonal with the two operators $\mathcal{R}_1, \mathcal{R}_2$ and a zero block. On $\mathbb{R}\times S^n$ the operator is positive semidefinite with a one-dimensional kernel, on the mixed bivectors, and the sectional curvature is nonnegative but vanishes on the planes spanned by the flat direction and a tangent vector of the sphere.
+**Example (a product).** For a Riemannian product $M_1\times \mathsf{M}_2$ the curvature vanishes on the bivectors that mix the two factors, and on the bivectors inside one factor it is the operator of that factor; so the curvature operator is block diagonal with the two operators $\mathcal{R}_1, \mathcal{R}_2$ and a zero block. On $\mathbb{R}\times S^n$ the operator is positive semidefinite with a one-dimensional kernel, on the mixed bivectors, and the sectional curvature is nonnegative but vanishes on the planes spanned by the flat direction and a tangent vector of the sphere.
 
 ## Summary
 

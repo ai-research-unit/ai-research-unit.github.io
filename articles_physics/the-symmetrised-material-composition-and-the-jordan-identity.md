@@ -84,8 +84,7 @@ The ordinary product is recovered from the two halves,
 $\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q$, and neither half determines the
 other: the symmetric half is one operation of the twelve, and the antisymmetric half is another. The
 pairing of the two halves is the pairing of the two bands of this family, and the comparison of the four general
-products and their parts is *The Four General Products and Their Physical Readings: the Two Algebras and the Two
-Sesqualgebras*.
+products and their parts is *The Four General Products and Their Physical Readings*.
 
 ## The Operation and Its Class
 

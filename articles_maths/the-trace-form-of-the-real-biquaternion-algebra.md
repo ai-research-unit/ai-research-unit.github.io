@@ -100,13 +100,13 @@ $$
 
 The trace form is the natural form of the **real** algebra, available before any complex product is singled out, and it is not an independent fifth form: it reproduces the realified general plain bilinear form with the normalisation $8$. Its relation to the four forms is the comparison of *The Realification of the Four Forms*: it has the Gram matrix $\operatorname{diag}(\mathrm{D},-\mathrm{D})$ of the general plain bilinear realification, and it is not the realified general quaternionic bilinear form, whose Gram matrix is $\operatorname{diag}(\mathrm{I}_{4},-\mathrm{I}_{4})$.
 
-The contrast with the **Hilbert–Schmidt form** of the matrix model fixes the role of the trace. In the realization $\Phi:\mathbb{B}\to M_{2}(\mathbb{C})$ the Hilbert–Schmidt pairing is
+The contrast with the **Hilbert–Schmidt form** of the matrix model fixes the role of the trace. In the realization $\mathsf{M}_2:\mathbb{B}\to M_{2}(\mathbb{C})$ the Hilbert–Schmidt pairing is
 
 $$
-\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde P)^{\dagger}\Phi(\tilde Q)\bigr)=\langle\tilde P,\tilde Q\rangle_{*\mathbb{R}},
+\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)^{\dagger}\mathsf{M}_2(\tilde Q)\bigr)=\langle\tilde P,\tilde Q\rangle_{*\mathbb{R}},
 $$
 
-the **positive definite** form of the realified Hermitian form; the trace form drops the adjoint and reads the plain trace product $\tfrac12\operatorname{Tr}(\Phi(\tilde P)\Phi(\tilde Q))$, of signature $(4,4)$. The difference is exactly the difference between the Hermitian realification $\mathrm{I}_{8}$ and the general plain bilinear realification $\operatorname{diag}(\mathrm{D},-\mathrm{D})$: the adjoint turns the indefinite split form into the Euclidean one. The two forms are compared form by form in *The Matrix Representation and the Biquaternion Dynamics*, and the matrix trace bridge $\mathrm{Sc}(\tilde P\tilde Q)=\tfrac12\operatorname{Tr}(\Phi(\tilde P)\Phi(\tilde Q))$ is the same identity at the level of elements.
+the **positive definite** form of the realified Hermitian form; the trace form drops the adjoint and reads the plain trace product $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$, of signature $(4,4)$. The difference is exactly the difference between the Hermitian realification $\mathrm{I}_{8}$ and the general plain bilinear realification $\operatorname{diag}(\mathrm{D},-\mathrm{D})$: the adjoint turns the indefinite split form into the Euclidean one. The two forms are compared form by form in *The Matrix Representation and the Biquaternion Dynamics*, and the matrix trace bridge $\mathrm{Sc}(\tilde P\tilde Q)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$ is the same identity at the level of elements.
 
 ## Worked Examples
 
@@ -133,7 +133,7 @@ The trace form of the real biquaternion algebra is $\tau(\tilde P,\tilde Q)=\ope
 | $(4,4)$ | its signature |
 | $\tau=8\,\mathrm{Re}\langle\cdot,\cdot\rangle$ | its identity with the realified general plain bilinear form |
 | $\tau(\sigma\tilde P,\sigma\tilde Q)=\tau(\tilde P,\tilde Q)$ | invariance under the automorphisms, hence under the units |
-| $\tfrac12\operatorname{Tr}(\Phi(\tilde P)^{\dagger}\Phi(\tilde Q))$ | the Hilbert–Schmidt contrast, the realified Hermitian form |
+| $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)^{\dagger}\mathsf{M}_2(\tilde Q))$ | the Hilbert–Schmidt contrast, the realified Hermitian form |
 
 ## Further Reading
 

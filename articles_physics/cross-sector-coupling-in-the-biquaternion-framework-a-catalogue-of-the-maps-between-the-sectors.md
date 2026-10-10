@@ -76,8 +76,7 @@ and it is the minimal instance of a cross-sector coupling supplied by the produc
 deliberately weak: it is a map and not an evolution, and the product of *two* material elements is not
 informational — it carries a rotation part in $\mathbb{M}_-$ and a boost part in $\mathbb{M}_+$, so it
 lies in neither sector. The square is the coupling; the product is not. The identity is owned by *The
-Interval as the Square and the Charge of the Material Composition*, and the grid-level pointer by *The
-Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*.
+Interval as the Square and the Charge of the Material Composition*, and the grid-level pointer by *The Four General Products and Their Physical Readings*.
 Recomputed on $100$ random material elements: central, real, and equal to $N(\tilde{Q})e_0$ on $100$ of
 $100$; on $100$ random pairs of material elements the product lies in neither sector on $100$ of $100$.
 
@@ -234,8 +233,7 @@ two halves of one statement.
 
 - **Bridge reading.** Each positive entry is a bridge of a different kind — a map, a bijection, an
   action, a pairing — and no two entries are the same bridge. Boundary: the reading names the shape of
-  each bridge and supplies no dynamics; the grid-level comparison is *The Four General Products and Their
-  Physical Readings: the Two Algebras and the Two Sesqualgebras*.
+  each bridge and supplies no dynamics; the grid-level comparison is *The Four General Products and Their Physical Readings*.
 - **Boundary reading.** The superselection entry is the statement that the bridges are not observables.
   Read with the positive entries, it says that a coupling can be algebraic and unobservable at once: the
   square exists and no measurement uses it to prepare a coherence between the sectors. Boundary: the
@@ -285,5 +283,5 @@ each of its instances owned by an article that proves it.
   square map and its real-scalar image.
 - *The Material-Informational Split as a Superselection Structure in Biquaternionic Form*, companion
   article, for the negative statement and its real-form reading.
-- *The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*,
+- *The Four General Products and Their Physical Readings*,
   companion article, for the grid-level comparison of the four products.

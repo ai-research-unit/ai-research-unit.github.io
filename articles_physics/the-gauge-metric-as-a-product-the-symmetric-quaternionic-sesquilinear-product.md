@@ -470,7 +470,7 @@ the reason the two symmetric sesquilinear products do not divide the state side 
 - Mathematics article *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.md`), for the form read as the multiplication of the block, its two Gram matrices, its isotropic elements and its invariance under the block.
 - Companion article *The Fourth Product and Its Indefinite Metric*, for the metric whose scalar part this product carries.
 - Companion article *The States the Indefinite Metric Cannot Normalise*, for the states that are null for that metric.
-- Companion article *The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*, for the map of the four general products and the four jobs.
+- Companion article *The Four General Products and Their Physical Readings*, for the map of the four general products and the four jobs.
 - Companion article *Mass, Rank and the Positivity of the Dagger*, for the positivity of the probability form and the state cone.
 - Companion article *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*, for the antisymmetric half of the same row.
 - Companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* (`articles_physics/the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.md`), named for the eikonal equation that the **lightlike pairing** reading does not claim.

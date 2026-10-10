@@ -139,7 +139,7 @@ For the quaternionic product the construction has nothing to attach to. The only
 
 The quaternionic column is this article; the comparison article owns the table, and the present article supplies only the proof of its second column and the displacement reading of the first and third.
 
-**The matrix reading.** In the model $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ with $\Phi(e_0) = I$ the two idempotents of the quaternionic product are $\Phi(0) = 0$ and $\Phi(e_0) = I$; the projections of the matrix algebra, the images $\Phi(\tilde\Pi_+(\hat\mu))$, are idempotents of the plain product and have quaternionic square $\Phi(0) = 0$. The invertible element of the model is $I$ alone among idempotents, in agreement with the norm computation above. The matrix model is *The General Quaternionic Algebra in the $2\times2$ Matrix Representation*.
+**The matrix reading.** In the model $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_0) = I$ the two idempotents of the quaternionic product are $\mathsf{M}_2(0) = 0$ and $\mathsf{M}_2(e_0) = I$; the projections of the matrix algebra, the images $\mathsf{M}_2(\tilde\Pi_+(\hat\mu))$, are idempotents of the plain product and have quaternionic square $\mathsf{M}_2(0) = 0$. The invertible element of the model is $I$ alone among idempotents, in agreement with the norm computation above. The matrix model is *The General Quaternionic Algebra in the $2\times2$ Matrix Representation*.
 
 ## Summary
 

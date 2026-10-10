@@ -236,7 +236,7 @@ The cost is linear in the number of levels minus one. The $\tfrac32$ case requir
 
 ## What the Algebra's Virtues Become
 
-The qubit's most characteristic results are properties of $M_2$ rather than of quantum theory in general, and each of them degrades in a way that can be stated exactly.
+The qubit's most characteristic results are properties of $\mathsf{M}_2$ rather than of quantum theory in general, and each of them degrades in a way that can be stated exactly.
 
 | Structure | Qubit, from $\mathbb{B}=M_2(\mathbb{C})$ | Qutrit, in $\mathrm{Sym}^2V$ |
 |---|---|---|

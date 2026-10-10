@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The reading group *Topology on the Introduction to the General Quaternionic Sesqualgebra of Biquaternions* reads the algebra through the **general quaternionic sesquilinear form** $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{P}^{\natural*}\tilde{Q})=\sum_\mu\varepsilon_\mu\overline{P_\mu}Q_\mu$, the Krein form of *The Krein Gram Matrix and the Restrictions of the Form*, and through the **general quaternionic sesquilinear product** $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}^{*}$ that it polarises. This article reads that group through the $2\times2$ matrix realization $\Phi$ of *Introduction to the $2\times2$ Matrix Representation of Biquaternions*, and it is the first of the two representation articles of the group; the companion *The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Representation* repeats the reading on the left regular representation.
+The reading group *Topology on the Introduction to the General Quaternionic Sesqualgebra of Biquaternions* reads the algebra through the **general quaternionic sesquilinear form** $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{P}^{\natural*}\tilde{Q})=\sum_\mu\varepsilon_\mu\overline{P_\mu}Q_\mu$, the Krein form of *The Krein Gram Matrix and the Restrictions of the Form*, and through the **general quaternionic sesquilinear product** $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}^{*}$ that it polarises. This article reads that group through the $2\times2$ matrix realization $\mathsf{M}_2$ of *Introduction to the $2\times2$ Matrix Representation of Biquaternions*, and it is the first of the two representation articles of the group; the companion *The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Representation* repeats the reading on the left regular representation.
 
 The two conjugations of the algebra are the two matrix operations of the model: the natural conjugation is the **adjugate** and the Hermitian conjugation is the **conjugate transpose**. The form of the group is therefore the adjugated conjugate-transpose pairing of the matrices, the **Krein form** of signature $(2,6)$ over $\mathbb{R}$ and $(1,3)$ over $\mathbb{C}$, and the product is the matrix product with the adjugate in the first slot and the conjugate transpose in the second. The natural conjugation $J={}^{\natural}$ is the fundamental symmetry of the form, and in the model it is the adjugation.
 
@@ -14,21 +14,21 @@ The two conjugations of the algebra are the two matrix operations of the model: 
 **Definition.** The **matrix realization** is the $\mathbb{C}$-linear isomorphism
 
 $$
-\Phi:\mathbb{B}\longrightarrow M_2(\mathbb{C}),\qquad \Phi(e_0)=I,\qquad \Phi(e_k)=-i\sigma_k ,
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),\qquad \mathsf{M}_2(e_0)=I,\qquad \mathsf{M}_2(e_k)=-i\sigma_k ,
 $$
 
 with the invariants and the two conjugations
 
 $$
-\operatorname{Tr}\Phi(\tilde{Q})=2Q_0,\qquad \det\Phi(\tilde{Q})=\sum_\mu Q_\mu^2,\qquad \Phi(\tilde{Q}^{\natural})=\operatorname{adj}\Phi(\tilde{Q}),\qquad \Phi(\tilde{Q}^{*})=\Phi(\tilde{Q})^{\dagger} .
+\operatorname{Tr}\mathsf{M}_2(\tilde{Q})=2Q_0,\qquad \det \mathsf{M}_2(\tilde{Q})=\sum_\mu Q_\mu^2,\qquad \mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q}),\qquad \mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger} .
 $$
 
-Both conjugations are needed here, and the model keeps them apart: the adjugate is the conjugate of the transpose by the fixed matrix $\Phi(-e_2)$ of determinant one, and the conjugate transpose is the other.
+Both conjugations are needed here, and the model keeps them apart: the adjugate is the conjugate of the transpose by the fixed matrix $\mathsf{M}_2(-e_2)$ of determinant one, and the conjugate transpose is the other.
 
 **The three conjugations.** The two conjugations of the group are joined by the coefficientwise complex conjugation, which in the model is neither the adjugate nor the conjugate transpose but their composite,
 
 $$
-\Phi(\overline{\tilde{Q}})=\operatorname{adj}\bigl(\Phi(\tilde{Q})^{\dagger}\bigr)=\varepsilon\,\overline{\Phi(\tilde{Q})}\,\varepsilon^{-1},\qquad \varepsilon=\Phi(-e_2)=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
+\mathsf{M}_2(\overline{\tilde{Q}})=\operatorname{adj}\bigl(\mathsf{M}_2(\tilde{Q})^{\dagger}\bigr)=\varepsilon\,\overline{\mathsf{M}_2(\tilde{Q})}\,\varepsilon^{-1},\qquad \varepsilon=\mathsf{M}_2(-e_2)=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
 $$
 
 The adjugate is $\mathbb{C}$-linear and anti-multiplicative, the conjugate transpose is conjugate-linear and anti-multiplicative, and their composite is conjugate-linear and multiplicative.
@@ -38,20 +38,20 @@ The adjugate is $\mathbb{C}$-linear and anti-multiplicative, the conjugate trans
 **Theorem (the product is the adjugated conjugate-transposed matrix product).** For all biquaternions,
 
 $$
-\Phi(\tilde{P}\star\tilde{Q})=\operatorname{adj}\Phi(\tilde{P})\,\Phi(\tilde{Q})^{\dagger} ,
+\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q})^{\dagger} ,
 $$
 
 the ordinary matrix product with the adjugate in the first slot and the conjugate transpose in the second.
 
 *Proof.* $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}^{*}$, the realization is multiplicative, and it carries the two conjugations to the adjugate and the conjugate transpose.
 
-**The square.** At $\tilde{P}=\tilde{Q}$ the theorem gives $\Phi(\tilde{Q}\star\tilde{Q})=\operatorname{adj}\Phi(\tilde{Q})\Phi(\tilde{Q})^{\dagger}$, which is neither positive semidefinite nor scalar in general; the element theory of the product is that of *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*, whose matrix reading is the product of the adjugate with the conjugate transpose.
+**The square.** At $\tilde{P}=\tilde{Q}$ the theorem gives $\mathsf{M}_2(\tilde{Q}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})^{\dagger}$, which is neither positive semidefinite nor scalar in general; the element theory of the product is that of *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*, whose matrix reading is the product of the adjugate with the conjugate transpose.
 
 **The fundamental symmetry.** The natural conjugation $J={}^{\natural}$ is an involution commuting with the complex coefficients, and in the model it is the adjugation; it is self-adjoint for the Krein form and it splits the algebra into its $+1$ and $-1$ eigenspaces, the Hermitian and anti-Hermitian subspaces.
 
 ## The Four General Products in Matrices
 
-**Theorem (the four matrix forms).** Under $\Phi$ the four general products of the algebra read
+**Theorem (the four matrix forms).** Under $\mathsf{M}_2$ the four general products of the algebra read
 
 | product | rule on $\mathbb{B}$ | matrix form |
 |---|---|---|
@@ -60,21 +60,21 @@ the ordinary matrix product with the adjugate in the first slot and the conjugat
 | general plain sesquilinear (sibling) | $\tilde{P}\tilde{Q}^{*}$ | $M(P)M(Q)^{\dagger}$ |
 | general quaternionic sesquilinear | $\tilde{P}^{\natural}\tilde{Q}^{*}$ | $\operatorname{adj}M(P)\,M(Q)^{\dagger}$ |
 
-where $M(\tilde{X})=\Phi(\tilde{X})$. The four general products are the four ways of inserting the two conjugations into the two slots of the matrix product, and the fourth carries one adjugate and one conjugate transpose. It is the sesquilinear one: the first factor enters linearly and the second conjugate-linearly,
+where $M(\tilde{X})=\mathsf{M}_2(\tilde{X})$. The four general products are the four ways of inserting the two conjugations into the two slots of the matrix product, and the fourth carries one adjugate and one conjugate transpose. It is the sesquilinear one: the first factor enters linearly and the second conjugate-linearly,
 
 $$
-\Phi\bigl((\lambda\tilde{P})\star\tilde{Q}\bigr)=\lambda\,\Phi(\tilde{P}\star\tilde{Q}),\qquad \Phi\bigl(\tilde{P}\star(\lambda\tilde{Q})\bigr)=\bar\lambda\,\Phi(\tilde{P}\star\tilde{Q}),
+\mathsf{M}_2\bigl((\lambda\tilde{P})\star\tilde{Q}\bigr)=\lambda\,\mathsf{M}_2(\tilde{P}\star\tilde{Q}),\qquad \mathsf{M}_2\bigl(\tilde{P}\star(\lambda\tilde{Q})\bigr)=\bar\lambda\,\mathsf{M}_2(\tilde{P}\star\tilde{Q}),
 $$
 
 a product with two adjugates being $\mathbb{C}$-bilinear and one with two daggers conjugate-bilinear. Substituting the transpose form of the adjugate, $\operatorname{adj}(X)=\varepsilon X^{\mathsf{T}}\varepsilon^{-1}$, the product is
 
 $$
-\Phi(\tilde{P}\star\tilde{Q})=\varepsilon\,\Phi(\tilde{P})^{\mathsf{T}}\,\varepsilon^{-1}\,\Phi(\tilde{Q})^{\dagger},
+\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\varepsilon\,\mathsf{M}_2(\tilde{P})^{\mathsf{T}}\,\varepsilon^{-1}\,\mathsf{M}_2(\tilde{Q})^{\dagger},
 $$
 
 the plain **transpose** inserted in the first factor and the **conjugate transpose** in the second.
 
-**The trace and the determinant of a value.** For $Z=\Phi(\tilde{P}\star\tilde{Q})$,
+**The trace and the determinant of a value.** For $Z=\mathsf{M}_2(\tilde{P}\star\tilde{Q})$,
 
 $$
 \operatorname{Tr}Z=2\mathrm{Sc}(\tilde{P}\star\tilde{Q})=2\bigl(P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr),\qquad \det Z=\langle\tilde{P},\tilde{P}\rangle_{\natural}\overline{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}},
@@ -84,7 +84,7 @@ so the determinant of a value is the norm of the first factor times the conjugat
 
 ## The Idempotents in Matrices
 
-**Theorem (the matrix idempotent equation).** An element $\tilde{\Pi}$ is idempotent for the multiplication if and only if its matrix $M=\Phi(\tilde{\Pi})$ satisfies
+**Theorem (the matrix idempotent equation).** An element $\tilde{\Pi}$ is idempotent for the multiplication if and only if its matrix $M=\mathsf{M}_2(\tilde{\Pi})$ satisfies
 
 $$
 \operatorname{adj}(M)\,M^{\dagger}=M .
@@ -98,30 +98,30 @@ $$
 \tilde{\Pi}\longleftrightarrow M=U\operatorname{diag}(\omega,\omega^{2})U^{\dagger},\qquad U\in U(2).
 $$
 
-*Proof.* A norm-one idempotent satisfies $M^{\dagger}=M^{2}$; applying the dagger gives $(M^{\dagger})^{2}=M$, and substituting yields $M^{4}=M$, so $M^{3}=I$ for the invertible $M$. Then $MM^{\dagger}=MM^{2}=M^{3}=I$ and $M^{\dagger}M=I$, so $M$ is unitary of determinant one, and a unitary matrix with $M^{3}=I$ and $\det M=1$ has spectrum $\{1,1\}$ or $\{\omega,\omega^{2}\}$; the first case is $M=I$, the identity $\tilde{\Pi}=e_0$, and the second, by the spectral theorem, is the displayed unitary conjugacy class. Conversely each matrix of the class satisfies $M^{\dagger}=M^{2}$, $M^{3}=I$ and $\det M=1$, hence $\operatorname{adj}(M)M^{\dagger}=\det(M)M^{-1}M^{2}=M$. The trace of $\operatorname{diag}(\omega,\omega^{2})$ is $\omega+\omega^{2}=-1$, so $Q_0=-\tfrac12$; $\operatorname{adj}(M^{\dagger})=\operatorname{adj}(M^{2})=\operatorname{adj}(M)^{2}=M^{-2}=M$ gives $\Phi(\overline{\tilde{\Pi}})=\Phi(\tilde{\Pi})$, so the three vector coordinates are real; and unitarity gives $\sum_\mu|Q_\mu|^{2}=1$, so $|Q_1|^{2}+|Q_2|^{2}+|Q_3|^{2}=\tfrac34$. The class is connected of real dimension two, the family of the idempotents. $\square$
+*Proof.* A norm-one idempotent satisfies $M^{\dagger}=M^{2}$; applying the dagger gives $(M^{\dagger})^{2}=M$, and substituting yields $M^{4}=M$, so $M^{3}=I$ for the invertible $M$. Then $MM^{\dagger}=MM^{2}=M^{3}=I$ and $M^{\dagger}M=I$, so $M$ is unitary of determinant one, and a unitary matrix with $M^{3}=I$ and $\det M=1$ has spectrum $\{1,1\}$ or $\{\omega,\omega^{2}\}$; the first case is $M=I$, the identity $\tilde{\Pi}=e_0$, and the second, by the spectral theorem, is the displayed unitary conjugacy class. Conversely each matrix of the class satisfies $M^{\dagger}=M^{2}$, $M^{3}=I$ and $\det M=1$, hence $\operatorname{adj}(M)M^{\dagger}=\det(M)M^{-1}M^{2}=M$. The trace of $\operatorname{diag}(\omega,\omega^{2})$ is $\omega+\omega^{2}=-1$, so $Q_0=-\tfrac12$; $\operatorname{adj}(M^{\dagger})=\operatorname{adj}(M^{2})=\operatorname{adj}(M)^{2}=M^{-2}=M$ gives $\mathsf{M}_2(\overline{\tilde{\Pi}})=\mathsf{M}_2(\tilde{\Pi})$, so the three vector coordinates are real; and unitarity gives $\sum_\mu|Q_\mu|^{2}=1$, so $|Q_1|^{2}+|Q_2|^{2}+|Q_3|^{2}=\tfrac34$. The class is connected of real dimension two, the family of the idempotents. $\square$
 
-**Corollary (the order-three matrices).** The matrix of a nontrivial idempotent satisfies $M^{3}=I$, $M^{\dagger}=M^{2}=M^{-1}$ and $\det M=1$; consequently $\operatorname{Tr}M=-1$ and the characteristic polynomial is $\lambda^{2}+\lambda+1$. The nontrivial idempotents are therefore units, and they are disjoint from the zero divisors: in the model they are unitary matrices of order three, while the zero divisors are the singular matrices, $N(\tilde{Q})=\det\Phi(\tilde{Q})=0$. This is the sharpest contrast with the sibling general plain sesquilinear product, where the nontrivial idempotents are the rank-one Hermitian projections and are singular.
+**Corollary (the order-three matrices).** The matrix of a nontrivial idempotent satisfies $M^{3}=I$, $M^{\dagger}=M^{2}=M^{-1}$ and $\det M=1$; consequently $\operatorname{Tr}M=-1$ and the characteristic polynomial is $\lambda^{2}+\lambda+1$. The nontrivial idempotents are therefore units, and they are disjoint from the zero divisors: in the model they are unitary matrices of order three, while the zero divisors are the singular matrices, $N(\tilde{Q})=\det \mathsf{M}_2(\tilde{Q})=0$. This is the sharpest contrast with the sibling general plain sesquilinear product, where the nontrivial idempotents are the rank-one Hermitian projections and are singular.
 
 ## The Associator and the Operators in Matrices
 
-**Theorem (the associator).** With $M(\tilde{X})=\Phi(\tilde{X})$, the associator of the product has the matrix form
+**Theorem (the associator).** With $M(\tilde{X})=\mathsf{M}_2(\tilde{X})$, the associator of the product has the matrix form
 
 $$
-\Phi\bigl([\tilde{P},\tilde{Q},\tilde{R}]\bigr)=\operatorname{adj}\bigl(M(Q)^{\dagger}\bigr)M(P)M(R)^{\dagger}-\operatorname{adj}M(P)\,M(R)\,\operatorname{adj}\bigl(M(Q)^{\dagger}\bigr),
+\mathsf{M}_2\bigl([\tilde{P},\tilde{Q},\tilde{R}]\bigr)=\operatorname{adj}\bigl(M(Q)^{\dagger}\bigr)M(P)M(R)^{\dagger}-\operatorname{adj}M(P)\,M(R)\,\operatorname{adj}\bigl(M(Q)^{\dagger}\bigr),
 $$
 
-using $\Phi(\overline{\tilde{Q}})=\operatorname{adj}(M(Q)^{\dagger})$, $\Phi(\tilde{P}^{\natural})=\operatorname{adj}M(P)$ and $\Phi(\tilde{R}^{*})=M(R)^{\dagger}$; the associator vanishes exactly when the two products agree. It is the difference of two products of three matrices, each mixing the adjugate and the dagger and reading the factors in a different order, $Q,P,R$ against $P,R,Q$, so it is not the commutator of any single pair.
+using $\mathsf{M}_2(\overline{\tilde{Q}})=\operatorname{adj}(M(Q)^{\dagger})$, $\mathsf{M}_2(\tilde{P}^{\natural})=\operatorname{adj}M(P)$ and $\mathsf{M}_2(\tilde{R}^{*})=M(R)^{\dagger}$; the associator vanishes exactly when the two products agree. It is the difference of two products of three matrices, each mixing the adjugate and the dagger and reading the factors in a different order, $Q,P,R$ against $P,R,Q$, so it is not the commutator of any single pair.
 
 **Theorem (the multiplication operators).** For every $\tilde{A}$ and $\tilde{X}$,
 
 $$
-\Phi\bigl(L_{\tilde{A}}(\tilde{X})\bigr)=\operatorname{adj}M(A)\,M(X)^{\dagger},\qquad \Phi\bigl(R_{\tilde{A}}(\tilde{X})\bigr)=\operatorname{adj}M(X)\,M(A)^{\dagger},
+\mathsf{M}_2\bigl(L_{\tilde{A}}(\tilde{X})\bigr)=\operatorname{adj}M(A)\,M(X)^{\dagger},\qquad \mathsf{M}_2\bigl(R_{\tilde{A}}(\tilde{X})\bigr)=\operatorname{adj}M(X)\,M(A)^{\dagger},
 $$
 
 and the composition of two left multiplications is
 
 $$
-\Phi\bigl(L_{\tilde{A}}L_{\tilde{B}}(\tilde{X})\bigr)=\operatorname{adj}M(A)\,M(X)\,\bigl(\operatorname{adj}M(B)\bigr)^{\dagger},
+\mathsf{M}_2\bigl(L_{\tilde{A}}L_{\tilde{B}}(\tilde{X})\bigr)=\operatorname{adj}M(A)\,M(X)\,\bigl(\operatorname{adj}M(B)\bigr)^{\dagger},
 $$
 
 a matrix product with $M(X)$ in the middle, which is the matrix form of the two-sided multiplication and the reason the composition leaves the class of the multiplication operators: the left multiplication carries a dagger on $M(X)$ and the composition does not. Since $\bigl(\operatorname{adj}M(B)\bigr)^{\dagger}=M(\overline{\tilde{B}})$, this agrees with the value $\operatorname{adj}M(A)\,M(X)\,M(\overline{\tilde{B}})$ predicted by the composition law of the group.
@@ -131,12 +131,12 @@ a matrix product with $M(X)$ in the middle, which is the matrix form of the two-
 **Theorem (the adjugated conjugate-transpose pairing).** For all biquaternions,
 
 $$
-\langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\Phi(\tilde{P})^{\dagger}\Phi(\tilde{Q})\bigr),
+\langle\tilde{P},\tilde{Q}\rangle_{\natural*} = \tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{P})^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr),
 $$
 
 the pairing in which the conjugate transpose of the first argument is adjugated.
 
-*Proof.* $\operatorname{adj}\Phi(\tilde{P})^{\dagger}=\Phi(\tilde{P}^{\natural})^{\dagger}=\Phi((\tilde{P}^{\natural})^{*})=\Phi(\bar{\tilde{P}})$, since $(\tilde{P}^{\natural})^{*}=\bar{\tilde{P}}$ is the coefficient conjugate; the right-hand side is then $\tfrac12\operatorname{Tr}(\Phi(\bar{\tilde{P}})\Phi(\tilde{Q}))=\mathrm{Sc}(\bar{\tilde{P}}\tilde{Q})=\sum_\mu\varepsilon_\mu\overline{P_\mu}Q_\mu$.
+*Proof.* $\operatorname{adj}\mathsf{M}_2(\tilde{P})^{\dagger}=\mathsf{M}_2(\tilde{P}^{\natural})^{\dagger}=\mathsf{M}_2((\tilde{P}^{\natural})^{*})=\mathsf{M}_2(\bar{\tilde{P}})$, since $(\tilde{P}^{\natural})^{*}=\bar{\tilde{P}}$ is the coefficient conjugate; the right-hand side is then $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\bar{\tilde{P}})\mathsf{M}_2(\tilde{Q}))=\mathrm{Sc}(\bar{\tilde{P}}\tilde{Q})=\sum_\mu\varepsilon_\mu\overline{P_\mu}Q_\mu$.
 
 **Theorem (the diagonal).** On the diagonal,
 
@@ -156,25 +156,25 @@ the Krein invariant of the element; it is positive on the centre, negative on th
 
 **A positive and a negative element.** Let $\tilde{P}=2e_0+e_1$ and $\tilde{Q}=e_0+2e_1$. Then $\langle\tilde{P},\tilde{P}\rangle_{\natural*}=4-1=3>0$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1-4=-3<0$, so the form is indefinite and the two types occur on the axis elements alone.
 
-**A basis element.** Let $\tilde{P}=e_1$ and $\tilde{Q}=e_0$. Then $\tilde{P}\star\tilde{Q}=e_1^{\natural}e_0^{*}=-e_1$, and in the model $\operatorname{adj}\Phi(e_1)\Phi(e_0)^{\dagger}=-\Phi(e_1)$, as the product theorem requires; the diagonal of the form is $\langle e_1,e_1\rangle_{\natural*}=-1$.
+**A basis element.** Let $\tilde{P}=e_1$ and $\tilde{Q}=e_0$. Then $\tilde{P}\star\tilde{Q}=e_1^{\natural}e_0^{*}=-e_1$, and in the model $\operatorname{adj}\mathsf{M}_2(e_1)\mathsf{M}_2(e_0)^{\dagger}=-\mathsf{M}_2(e_1)$, as the product theorem requires; the diagonal of the form is $\langle e_1,e_1\rangle_{\natural*}=-1$.
 
 ## Summary
 
-The $2\times2$ realization keeps the two conjugations apart, the natural conjugation as the adjugate and the Hermitian conjugation as the conjugate transpose, with the coefficientwise conjugation as the adjugate of the dagger; so the general quaternionic sesquilinear product is the adjugated conjugate-transposed matrix product, $\Phi(\tilde{P}\star\tilde{Q})=\operatorname{adj}\Phi(\tilde{P})\Phi(\tilde{Q})^{\dagger}=\varepsilon\Phi(\tilde{P})^{\mathsf{T}}\varepsilon^{-1}\Phi(\tilde{Q})^{\dagger}$, the fourth of the four general products and the only sesquilinear one. Its idempotents satisfy $\operatorname{adj}(M)M^{\dagger}=M$; the nontrivial ones have norm one and satisfy $M^{3}=I$, $M^{\dagger}=M^{2}=M^{-1}$, $\operatorname{Tr}M=-1$, and they are exactly the unitary conjugates of $\operatorname{diag}(\omega,\omega^{2})$, the family of the group, disjoint from the zero divisors, which are the singular matrices. The associator is $\operatorname{adj}(M(Q)^{\dagger})M(P)M(R)^{\dagger}-\operatorname{adj}M(P)M(R)\operatorname{adj}(M(Q)^{\dagger})$, and the left and right multiplications are $\operatorname{adj}M(A)M(X)^{\dagger}$ and $\operatorname{adj}M(X)M(A)^{\dagger}$. The general quaternionic sesquilinear form of the group is the adjugated conjugate-transpose pairing $\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde{P})^{\dagger}\Phi(\tilde{Q}))=\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$, whose diagonal is $\sum_\mu\varepsilon_\mu|Q_\mu|^2$, positive on the centre and negative on the vector subspace, of complex inertia $(1,3)$ and real signature $(2,6)$, with the real cone of real dimension $7$ as null set and the indefinite unitary group $U(1,3)$ as automorphism group, of realification $O(2,6)$. The natural conjugation is the fundamental symmetry, and in the model it is the adjugation.
+The $2\times2$ realization keeps the two conjugations apart, the natural conjugation as the adjugate and the Hermitian conjugation as the conjugate transpose, with the coefficientwise conjugation as the adjugate of the dagger; so the general quaternionic sesquilinear product is the adjugated conjugate-transposed matrix product, $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})^{\dagger}=\varepsilon \mathsf{M}_2(\tilde{P})^{\mathsf{T}}\varepsilon^{-1}\mathsf{M}_2(\tilde{Q})^{\dagger}$, the fourth of the four general products and the only sesquilinear one. Its idempotents satisfy $\operatorname{adj}(M)M^{\dagger}=M$; the nontrivial ones have norm one and satisfy $M^{3}=I$, $M^{\dagger}=M^{2}=M^{-1}$, $\operatorname{Tr}M=-1$, and they are exactly the unitary conjugates of $\operatorname{diag}(\omega,\omega^{2})$, the family of the group, disjoint from the zero divisors, which are the singular matrices. The associator is $\operatorname{adj}(M(Q)^{\dagger})M(P)M(R)^{\dagger}-\operatorname{adj}M(P)M(R)\operatorname{adj}(M(Q)^{\dagger})$, and the left and right multiplications are $\operatorname{adj}M(A)M(X)^{\dagger}$ and $\operatorname{adj}M(X)M(A)^{\dagger}$. The general quaternionic sesquilinear form of the group is the adjugated conjugate-transpose pairing $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde{P})^{\dagger}\mathsf{M}_2(\tilde{Q}))=\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$, whose diagonal is $\sum_\mu\varepsilon_\mu|Q_\mu|^2$, positive on the centre and negative on the vector subspace, of complex inertia $(1,3)$ and real signature $(2,6)$, with the real cone of real dimension $7$ as null set and the indefinite unitary group $U(1,3)$ as automorphism group, of realification $O(2,6)$. The natural conjugation is the fundamental symmetry, and in the model it is the adjugation.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\Phi(\tilde{Q})$ | the $2\times2$ matrix of the realization, $\operatorname{Tr}\Phi(\tilde{Q})=2Q_0$ |
-| $\Phi(\tilde{Q}^{\natural})=\operatorname{adj}\Phi(\tilde{Q})$, $\Phi(\tilde{Q}^{*})=\Phi(\tilde{Q})^{\dagger}$ | the natural conjugation is the adjugate, the Hermitian conjugation the conjugate transpose |
-| $\Phi(\overline{\tilde{Q}})=\operatorname{adj}(\Phi(\tilde{Q})^{\dagger})=\varepsilon\overline{\Phi(\tilde{Q})}\varepsilon^{-1}$ | the coefficientwise conjugation is the adjugate of the dagger |
-| $\Phi(\tilde{P}\star\tilde{Q})=\operatorname{adj}\Phi(\tilde{P})\Phi(\tilde{Q})^{\dagger}$ | the general quaternionic sesquilinear product, the fourth of the four general products |
+| $\mathsf{M}_2(\tilde{Q})$ | the $2\times2$ matrix of the realization, $\operatorname{Tr}\mathsf{M}_2(\tilde{Q})=2Q_0$ |
+| $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$, $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$ | the natural conjugation is the adjugate, the Hermitian conjugation the conjugate transpose |
+| $\mathsf{M}_2(\overline{\tilde{Q}})=\operatorname{adj}(\mathsf{M}_2(\tilde{Q})^{\dagger})=\varepsilon\overline{\mathsf{M}_2(\tilde{Q})}\varepsilon^{-1}$ | the coefficientwise conjugation is the adjugate of the dagger |
+| $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})^{\dagger}$ | the general quaternionic sesquilinear product, the fourth of the four general products |
 | $\operatorname{adj}(M)M^{\dagger}=M$ | the matrix idempotent equation |
 | $U\operatorname{diag}(\omega,\omega^{2})U^{\dagger}$ | the family of idempotents as a unitary orbit |
 | $\operatorname{adj}(M(Q)^{\dagger})M(P)M(R)^{\dagger}-\operatorname{adj}M(P)M(R)\operatorname{adj}(M(Q)^{\dagger})$ | the associator in matrices |
 | $\operatorname{adj}M(A)M(X)^{\dagger}$, $\operatorname{adj}M(X)M(A)^{\dagger}$ | the left and the right multiplication |
-| $\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde{P})^{\dagger}\Phi(\tilde{Q}))=\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$ | the general quaternionic sesquilinear form |
+| $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde{P})^{\dagger}\mathsf{M}_2(\tilde{Q}))=\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$ | the general quaternionic sesquilinear form |
 | $(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$ | the inertia and the real signature |
 | $U(1,3)$, $O(2,6)$ | the automorphism group and its realification |
 

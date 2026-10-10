@@ -88,8 +88,7 @@ so the antisymmetric plain product is the **halved commutator**,
 $[\tilde P,\tilde Q]=2\tilde P\wedge\tilde Q$. The two bands differ by the factor of two in each slot and
 by nothing else. The
 symmetric band is *The Symmetrised Material Composition and the Jordan Identity*; the comparison of the
-four general products and their parts is *The Four General Products and Their Physical Readings: the Two Algebras and the
-Two Sesqualgebras*.
+four general products and their parts is *The Four General Products and Their Physical Readings*.
 
 ## The Cross Product and the Jacobi Identity
 

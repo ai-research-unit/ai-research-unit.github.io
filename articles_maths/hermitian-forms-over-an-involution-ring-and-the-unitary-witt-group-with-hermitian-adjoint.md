@@ -29,7 +29,7 @@ for all $x, y \in M$ and $a, b \in R$. The case $\varepsilon = 1$ is a **Hermiti
 
 ### Hyperbolic and Metabolic Forms
 
-**Definition.** The **hyperbolic** $\varepsilon$-Hermitian form on $M \oplus M^{*}$ is $h\bigl((x,\phi),(y,\psi)\bigr) = \phi(y) + \varepsilon\,c(\psi(x))$, and a form is **metabolic** if it has a submodule $N$ with $N = N^{\perp}$. The **orthogonal sum** $h_1\perp h_2$ is the form on $M_1\oplus M_2$ vanishing across the summands.
+**Definition.** The **hyperbolic** $\varepsilon$-Hermitian form on $M \oplus M^{*}$ is $h\bigl((x,\phi),(y,\psi)\bigr) = \phi(y) + \varepsilon\,c(\psi(x))$, and a form is **metabolic** if it has a submodule $N$ with $N = N^{\perp}$. The **orthogonal sum** $h_1\perp h_2$ is the form on $M_1\oplus \mathsf{M}_2$ vanishing across the summands.
 
 **Definition.** The **even Witt group** $W^{\varepsilon}(R,c)$ of a ring with involution is the Grothendieck group of the monoid of nonsingular $\varepsilon$-Hermitian forms under orthogonal sum, modulo the subgroup of metabolic forms; the **Grothendieck–Witt group** $GW^{\varepsilon}(R,c)$ is the corresponding group before the metabolic forms are divided out, so that $GW \to W$ is the quotient by the hyperbolic subgroup. The classical theory is in *The Witt Group and the Grothendieck–Witt Ring*.
 

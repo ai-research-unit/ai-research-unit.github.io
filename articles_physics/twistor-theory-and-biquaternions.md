@@ -68,7 +68,7 @@ Because $\mathbb{B}\cong M_2(\mathbb{C})$ and $T\cong\mathbb{C}^4$ are both four
 
 The first line is the statement that the algebra is a module over itself; the second is the vector representation carried by the material sector $\mathbb{M}_-$; the third is the twistor (Dirac) module. All three are four-complex-dimensional, and they are pairwise non-isomorphic: $S\otimes\bar{S}$ is irreducible of dimension four, while the other two are reducible and their simple summands have different multiplicities or different chiralities. **Dimension alone does not identify twistor space with the algebra, and no $SL(2,\mathbb{C})$-equivariant isomorphism does.**
 
-The concrete form of the third line is worth recording, because it is the precise sense in which the twistor module is the Dirac module written with the conformal action. If $\tilde{\Lambda}\in SL(2,\mathbb{C})$ has image $A=\Phi(\tilde{\Lambda})$, then on $Z=(\omega,\pi)$ the Lorentz action is
+The concrete form of the third line is worth recording, because it is the precise sense in which the twistor module is the Dirac module written with the conformal action. If $\tilde{\Lambda}\in SL(2,\mathbb{C})$ has image $A=\mathsf{M}_2(\tilde{\Lambda})$, then on $Z=(\omega,\pi)$ the Lorentz action is
 
 $$
 \omega \longmapsto A\,\omega, \qquad \pi \longmapsto (A^\dagger)^{-1}\,\pi.
@@ -82,7 +82,7 @@ A related caution concerns the symbol $i$. In the framework, $i$ is the **scalar
 
 The two programmes do agree on one substantive geometric fact: the null cone is the fundamental object, and it is controlled by the two-component spinor.
 
-On the biquaternion side, the biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ vanishes exactly on the zero divisors, and the nonzero null elements are exactly the rank-one matrices. Projectivising, the null cone of $\mathbb{B}$ is a cone over the **Segre quadric** $\mathbb{P}^1\times\mathbb{P}^1 \subset \mathbb{PT}$, and its two rulings are the two families of chiral spinor lines — the primed and unprimed spinor lines. This is the content of the mathematics articles *The Null Quadric and Its Projective Geometry* and *The Topology of the Zero-Divisor Cone*, and it is not repeated here.
+On the biquaternion side, the biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$ vanishes exactly on the zero divisors, and the nonzero null elements are exactly the rank-one matrices. Projectivising, the null cone of $\mathbb{B}$ is a cone over the **Segre quadric** $\mathbb{P}^1\times\mathbb{P}^1 \subset \mathbb{PT}$, and its two rulings are the two families of chiral spinor lines — the primed and unprimed spinor lines. This is the content of the mathematics articles *The Null Quadric and Its Projective Geometry* and *The Topology of the Zero-Divisor Cone*, and it is not repeated here.
 
 On the twistor side, the same projective space and the same spinor lines appear, now carrying the metric. The incidence relation makes the null separation of two points a statement about the intersection of two lines: the null cone at $x$ is swept out by the points $y$ whose lines $L_y$ meet $L_x$, and this is exactly the condition $\det(x-y)=0$. The Klein correspondence is the dictionary between the two descriptions of the same projective geometry.
 
@@ -247,7 +247,7 @@ The word carries a third sense, and that one is the classical object. In Kassand
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix realization; $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$ (read list) |
+| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix realization; $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$ (read list) |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector), fixed points of $\flat$ |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector), fixed points of ${}^{*}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, fixed points of complex conjugation |

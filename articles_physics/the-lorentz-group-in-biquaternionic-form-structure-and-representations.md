@@ -29,12 +29,12 @@ where $\tilde{\Lambda}^{\natural}$ is the quaternion conjugate. It acts on the m
 $$
 \tilde{Q}\ \longmapsto\ \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*},\qquad \tilde{Q}\in\mathbb{M}_-.
 $$
-The set of unit-norm biquaternions is a group under biquaternion multiplication; under the algebra isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ (with $\Phi(e_k)=-i\sigma_k$ and $\Phi(i)=iI_2$) it is exactly
+The set of unit-norm biquaternions is a group under biquaternion multiplication; under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ (with $\mathsf{M}_2(e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$) it is exactly
 $$
 SL(2,\mathbb{C})=\{\tilde{\Lambda}\in\mathbb{B}:\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0\}
 \;\cong\;\{g\in M_2(\mathbb{C}):\det g=1\},
 $$
-because the biquaternion norm is the determinant, $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\Phi(\tilde{Q})$ (see the companion article on the biquaternion algebra and its matrix representation).
+because the biquaternion norm is the determinant, $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$ (see the companion article on the biquaternion algebra and its matrix representation).
 
 Two families of rotors have a direct geometric meaning.
 
@@ -51,7 +51,7 @@ $$
 $$
 a real quaternion of unit norm, lying in $\mathbb{H}_{\mathbb{B}}$. The distinction between the two is exactly the factor of $i$ in the vector part: $(\hat{\mathbf n})^2=-e_0$ for a rotation, $(i\hat{\mathbf u})^2=+e_0$ for a boost.
 
-The group $\Phi^{-1}(SU(2))=SL(2,\mathbb{C})\cap\mathbb{H}_{\mathbb{B}}$ of unit real quaternions is the group of rotations; it is the double cover of $SO(3)$. The sets
+The group $\mathsf{M}_2^{-1}(SU(2))=SL(2,\mathbb{C})\cap\mathbb{H}_{\mathbb{B}}$ of unit real quaternions is the group of rotations; it is the double cover of $SO(3)$. The sets
 $$
 \mathcal{B}=\{\text{Hermitian unit-norm biquaternions}\}\subset\mathbb{M}_+,
 \qquad
@@ -107,7 +107,7 @@ The unit-norm group is the kernel of the norm inside the full group of units. Th
 $$
 \mathbb{B}^{\times}=\{\tilde{Q}:N(\tilde{Q})\neq0\}\cong GL_2(\mathbb{C}),
 $$
-the group of invertible matrices under $\Phi$, of real dimension $8$, with centre $\mathbb{C}^{\times}$; the unit-norm subgroup $SL(2,\mathbb{C})=\mathbb{B}^{\times}_1$ is the kernel of the norm, and the unitary biquaternions $\tilde{Q}^{*}\tilde{Q}=e_0$ form the maximal compact subgroup $U(2)$.
+the group of invertible matrices under $\mathsf{M}_2$, of real dimension $8$, with centre $\mathbb{C}^{\times}$; the unit-norm subgroup $SL(2,\mathbb{C})=\mathbb{B}^{\times}_1$ is the kernel of the norm, and the unitary biquaternions $\tilde{Q}^{*}\tilde{Q}=e_0$ form the maximal compact subgroup $U(2)$.
 
 Physically the unit group is the whole linear group of the framework: $GL_2(\mathbb{C})$ is the group of invertible biquaternions, its centre $\mathbb{C}^{\times}$ is the complex phase that every conjugation ignores and the norm only sees through its modulus, and the unit-norm subgroup is the Lorentz group of the preceding sections.
 
@@ -365,7 +365,7 @@ Consequently:
 - If $m+n\in\mathbb{Z}$, the element $-e_0$ acts trivially, and the representation descends to a genuine representation of the Lorentz group $SO^+(1,3)$. This is the **integer-spin** (tensor) case: $(0,0)$, $(\tfrac12,\tfrac12)$, $(1,0)$, $(1,1)$, and so on.
 - If $m+n\in\tfrac12+\mathbb{Z}$, the element $-e_0$ acts as $-\mathrm{id}$, and the representation does **not** descend: it is a genuine **spin representation** of the double cover $SL(2,\mathbb{C})$. This is the **half-integer-spin** case: $(\tfrac12,0)$, $(0,\tfrac12)$, $(\tfrac32,0)$, and so on.
 
-The defining spinor $(\tfrac12,0)$ is the simplest example: $\Phi(-e_0)=-I_2$, so $\pm\tilde{\Lambda}$ act differently on every spinor, whereas they act identically on every four-vector. In particular a rotation by $2\pi$, which is $e_0$ in the four-vector representation, is $-e_0$ on the spinor module; a rotation by $4\pi$ is the identity on both. The spinor therefore carries a genuine two-valued representation, and the sign of a spinor is a degree of freedom invisible to any four-vector. The companion article on the spinor module develops the spinor action and the bilinear pairings in detail; the point recorded here is its representation-theoretic classification.
+The defining spinor $(\tfrac12,0)$ is the simplest example: $\mathsf{M}_2(-e_0)=-I_2$, so $\pm\tilde{\Lambda}$ act differently on every spinor, whereas they act identically on every four-vector. In particular a rotation by $2\pi$, which is $e_0$ in the four-vector representation, is $-e_0$ on the spinor module; a rotation by $4\pi$ is the identity on both. The spinor therefore carries a genuine two-valued representation, and the sign of a spinor is a degree of freedom invisible to any four-vector. The companion article on the spinor module develops the spinor action and the bilinear pairings in detail; the point recorded here is its representation-theoretic classification.
 
 ## Unitary Representations
 

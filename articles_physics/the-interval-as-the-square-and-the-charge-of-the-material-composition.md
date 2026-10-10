@@ -36,7 +36,7 @@ the expression of the interval itself, the mass shell, the four-velocity and the
 Norm and Invertibility*; the identification of the vanishing set of $N$ with the light cone to *The Light
 Cone as the Biquaternion Zero-Divisor Cone* and to *Zero Divisors as a Physical Locus in Biquaternionic
 Form*; the interval-one group to *The Lorentz Group as Biquaternion Norm Automorphisms*; and the
-comparison of this product's scalar form with the other three to *The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*. Every result read below is proved in the
+comparison of this product's scalar form with the other three to *The Four General Products and Their Physical Readings*. Every result read below is proved in the
 mathematics study whose entry point is *The Mathematical Study of Biquaternions*, and is cited there
 rather than re-derived.
 
@@ -458,7 +458,7 @@ closure under the two-element product, and a word of three operations has no bra
 interval, the mass shell, the four-velocity and the inverse are owned by *Biquaternion Norm and
 Invertibility*; the cone by *The Light Cone as the Biquaternion Zero-Divisor Cone* and *Zero Divisors as a
 Physical Locus in Biquaternionic Form*; the interval-one group by *The Lorentz Group as Biquaternion Norm
-Automorphisms*; and the comparison of the four general products by *The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*.
+Automorphisms*; and the comparison of the four general products by *The Four General Products and Their Physical Readings*.
 
 ## Summary of Notation
 

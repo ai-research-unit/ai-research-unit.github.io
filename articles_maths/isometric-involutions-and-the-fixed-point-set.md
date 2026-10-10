@@ -88,7 +88,7 @@ where $y$ are the normal coordinates and $g_\Sigma$ is the induced metric of $\S
 
 **Example (the fixed set of the antipodal map).** The antipodal map of the sphere has no fixed point, so its fixed set is empty and it is a free involution; the fixed set of the reflection in a great subsphere is that subsphere; the fixed set of the reflection in a great hypersphere is the hypersphere, and the fixed set of the reflection in a great circle of $S^3$ is that circle. The mirrors of the sphere are exactly the great subspheres, which are the totally geodesic submanifolds.
 
-**Example (the symmetric square).** On the product $M\times M$ the exchange involution has the diagonal $\Delta = \{(x,x)\}$ as its fixed set, a totally geodesic submanifold isometric to $M$ and of codimension $\dim M$; the quotient is the symmetric square and the diagonal is the singular locus. On a product $M_1\times M_2$ with a reflection $\sigma_1$ of the first factor, the fixed set is $\Sigma_1\times M_2$ and the involution is $\sigma_1\times\mathrm{id}$; the fixed set of a product involution is the product of the fixed sets.
+**Example (the symmetric square).** On the product $M\times M$ the exchange involution has the diagonal $\Delta = \{(x,x)\}$ as its fixed set, a totally geodesic submanifold isometric to $M$ and of codimension $\dim M$; the quotient is the symmetric square and the diagonal is the singular locus. On a product $M_1\times \mathsf{M}_2$ with a reflection $\sigma_1$ of the first factor, the fixed set is $\Sigma_1\times \mathsf{M}_2$ and the involution is $\sigma_1\times\mathrm{id}$; the fixed set of a product involution is the product of the fixed sets.
 
 ## Summary
 

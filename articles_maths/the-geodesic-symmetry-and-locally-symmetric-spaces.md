@@ -110,7 +110,7 @@ with the tangent spaces identified by $d\sigma_p$, and at the centre it conjugat
 
 **Example (the flat torus).** The flat torus $\mathbb{T}^n = \mathbb{R}^n/\mathbb{Z}^n$ is locally symmetric, since it is flat and flatness gives $\nabla R = 0$; but the local symmetry $x\mapsto 2p-x$ of the Euclidean space does not descend to the torus, because it does not commute with the translations of the lattice in general. The torus is therefore locally symmetric and not symmetric, and its simply connected cover $\mathbb{R}^n$ is the symmetric space of which it is a quotient, which is the corollary above read on the simplest example.
 
-**Example (a product).** A product $M_1\times M_2$ of symmetric spaces is symmetric: the symmetry at $(p_1, p_2)$ is the product $\sigma_{p_1}\times\sigma_{p_2}$, whose differential is $-\mathrm{id}$ on each factor, hence $-\mathrm{id}$ on the sum. The decomposable symmetric spaces are the products of the irreducible ones, and the irreducibility of the symmetric space coincides with the irreducibility of the holonomy representation, which is the de Rham decomposition read on this class of examples.
+**Example (a product).** A product $M_1\times \mathsf{M}_2$ of symmetric spaces is symmetric: the symmetry at $(p_1, p_2)$ is the product $\sigma_{p_1}\times\sigma_{p_2}$, whose differential is $-\mathrm{id}$ on each factor, hence $-\mathrm{id}$ on the sum. The decomposable symmetric spaces are the products of the irreducible ones, and the irreducibility of the symmetric space coincides with the irreducibility of the holonomy representation, which is the de Rham decomposition read on this class of examples.
 
 ## Summary
 

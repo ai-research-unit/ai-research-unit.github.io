@@ -200,7 +200,7 @@ an identity verified in the standard realization of $\mathbb{O}$, so a nonvanish
 
 The octet can always be embedded if the carrier is enlarged. The algebra of $2\times2$ matrices over $\mathbb{B}$ is
 $$
-M_2(\mathbb{B})\cong M_2(M_2(\mathbb{C}))\cong M_4(\mathbb{C}),
+M_2(\mathbb{B})\cong \mathsf{M}_2(M_2(\mathbb{C}))\cong M_4(\mathbb{C}),
 $$
 and the unitary group of $\mathbb{C}^4$ contains $U(3)$ and hence $SU(3)$ as a block-diagonal subgroup,
 $$

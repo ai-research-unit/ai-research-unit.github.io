@@ -22,16 +22,16 @@ Three isomorphisms generate the classification. The first is the recursive step,
 **Theorem (the recursion).** For all $p,q\ge 0$ there is an algebra isomorphism
 
 $$
-\mathrm{Cl}_{p+1,q+1}\cong M_2\bigl(\mathrm{Cl}_{p,q}\bigr).
+\mathrm{Cl}_{p+1,q+1}\cong \mathsf{M}_2\bigl(\mathrm{Cl}_{p,q}\bigr).
 $$
 
-**Proof.** The form $\operatorname{diag}(+1,-1)$ on a two-dimensional space has Clifford algebra $\mathrm{Cl}_{1,1}\cong M_2(F)$, computed directly in the previous article: its generators act as the matrices $\sigma_3=\operatorname{diag}(1,-1)$ and $\tau=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, which together with the identity and their product $\sigma_3\tau=-\sigma_1$ span $M_2(F)$. The graded tensor product decomposition of an orthogonal sum gives $\mathrm{Cl}_{p+1,q+1}\cong\mathrm{Cl}_{p,q}\,\hat{\otimes}\,\mathrm{Cl}_{1,1}$, and the isomorphism with $M_2(\mathrm{Cl}_{p,q})$ is displayed by the following assignment. Let $e_1,\dots,e_n$ generate $\mathrm{Cl}_{p,q}$ and let $f_1,f_2$ generate the hyperbolic plane, with $f_1^2=+1$, $f_2^2=-1$ and $f_1f_2=-f_2f_1$. In $2\times2$ matrices over $\mathrm{Cl}_{p,q}$, with $\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, put
+**Proof.** The form $\operatorname{diag}(+1,-1)$ on a two-dimensional space has Clifford algebra $\mathrm{Cl}_{1,1}\cong M_2(F)$, computed directly in the previous article: its generators act as the matrices $\sigma_3=\operatorname{diag}(1,-1)$ and $\tau=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, which together with the identity and their product $\sigma_3\tau=-\sigma_1$ span $M_2(F)$. The graded tensor product decomposition of an orthogonal sum gives $\mathrm{Cl}_{p+1,q+1}\cong\mathrm{Cl}_{p,q}\,\hat{\otimes}\,\mathrm{Cl}_{1,1}$, and the isomorphism with $\mathsf{M}_2(\mathrm{Cl}_{p,q})$ is displayed by the following assignment. Let $e_1,\dots,e_n$ generate $\mathrm{Cl}_{p,q}$ and let $f_1,f_2$ generate the hyperbolic plane, with $f_1^2=+1$, $f_2^2=-1$ and $f_1f_2=-f_2f_1$. In $2\times2$ matrices over $\mathrm{Cl}_{p,q}$, with $\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, put
 
 $$
 \Phi(e_i)=e_i\,\sigma_1,\qquad \Phi(f_1)=\sigma_3,\qquad \Phi(f_2)=\tau .
 $$
 
-Each image squares to the value of its form on the corresponding generator times the identity, and any two images anticommute, by $\sigma_1^2=\sigma_3^2=1$, $\tau^2=-1$ and the anticommutations $\sigma_1\sigma_3=-\sigma_3\sigma_1$, $\sigma_1\tau=-\tau\sigma_1$, $\sigma_3\tau=-\tau\sigma_3$; hence $\Phi$ extends to an algebra homomorphism by the universal property. Its image contains $I\sigma_3$, $I\tau$, $I\sigma_1=-(I\sigma_3)(I\tau)$ and $e_iI=-\Phi(e_i)\Phi(f_1)\Phi(f_2)$, since $\sigma_3\tau=-\sigma_1$ and $\sigma_1^2=1$; these generate $M_2(\mathrm{Cl}_{p,q})$, both sides have dimension $2^{n+2}$, so $\Phi$ is an isomorphism.
+Each image squares to the value of its form on the corresponding generator times the identity, and any two images anticommute, by $\sigma_1^2=\sigma_3^2=1$, $\tau^2=-1$ and the anticommutations $\sigma_1\sigma_3=-\sigma_3\sigma_1$, $\sigma_1\tau=-\tau\sigma_1$, $\sigma_3\tau=-\tau\sigma_3$; hence $\Phi$ extends to an algebra homomorphism by the universal property. Its image contains $I\sigma_3$, $I\tau$, $I\sigma_1=-(I\sigma_3)(I\tau)$ and $e_iI=-\Phi(e_i)\Phi(f_1)\Phi(f_2)$, since $\sigma_3\tau=-\sigma_1$ and $\sigma_1^2=1$; these generate $\mathsf{M}_2(\mathrm{Cl}_{p,q})$, both sides have dimension $2^{n+2}$, so $\Phi$ is an isomorphism.
 
 The same argument with the rank-two forms gives the following two identities, which express the "stabilisation" of a Clifford algebra by a hyperbolic plane.
 
@@ -44,7 +44,7 @@ $$
 
 These are the graded tensor product decomposition read with $\mathrm{Cl}_{2,0}=M_2(F)$ and $\mathrm{Cl}_{0,2}=\mathbb{H}$; they are *graded* tensor products, not ordinary ones. The distinction is essential: the ordinary tensor product $\mathrm{Cl}_{2,0}\otimes\mathrm{Cl}_{2,0}=M_4(F)$ is not $\mathrm{Cl}_{4,0}=M_2(\mathbb{H})$, whereas the graded tensor product $\mathrm{Cl}_{2,0}\hat\otimes\mathrm{Cl}_{2,0}\cong\mathrm{Cl}_{4,0}$ is correct by definition. The odd part of a Clifford algebra carries a sign in every exchange, and it is exactly this sign that produces period eight rather than the naive multiplicativity.
 
-**Low-rank instances.** The recursion gives $\mathrm{Cl}_{2,2}\cong M_2(\mathrm{Cl}_{1,1})=M_4(F)$, $\mathrm{Cl}_{3,3}\cong M_2(\mathrm{Cl}_{2,2})=M_8(F)$, and $\mathrm{Cl}_{4,4}\cong M_2(\mathrm{Cl}_{3,3})=M_{16}(F)$, consistent with the table below.
+**Low-rank instances.** The recursion gives $\mathrm{Cl}_{2,2}\cong \mathsf{M}_2(\mathrm{Cl}_{1,1})=M_4(F)$, $\mathrm{Cl}_{3,3}\cong \mathsf{M}_2(\mathrm{Cl}_{2,2})=M_8(F)$, and $\mathrm{Cl}_{4,4}\cong \mathsf{M}_2(\mathrm{Cl}_{3,3})=M_{16}(F)$, consistent with the table below.
 
 ## Real Bott Periodicity
 
@@ -76,7 +76,7 @@ are eight real $16\times16$ matrices, pairwise anticommuting, the $A_j$ of squar
 
 ## The Two Definite Tables
 
-The classification is now reduced to the eight values of $n$ modulo $8$ in each of the two definite families. The following tables record them; all entries are verified from the recursion $\mathrm{Cl}_{p+1,q+1}\cong M_2(\mathrm{Cl}_{p,q})$, the rank-two cases, and the periodicity $\mathrm{Cl}_{n+8,0}\cong M_{16}(\mathrm{Cl}_{n,0})$.
+The classification is now reduced to the eight values of $n$ modulo $8$ in each of the two definite families. The following tables record them; all entries are verified from the recursion $\mathrm{Cl}_{p+1,q+1}\cong \mathsf{M}_2(\mathrm{Cl}_{p,q})$, the rank-two cases, and the periodicity $\mathrm{Cl}_{n+8,0}\cong M_{16}(\mathrm{Cl}_{n,0})$.
 
 **The family $\mathrm{Cl}_{n,0}$.** Here $e_i^2=+1$.
 
@@ -104,7 +104,7 @@ The classification is now reduced to the eight values of $n$ modulo $8$ in each 
 | $6$ | $M_{2^{n/2}}(F)$ | $F$ | $F$ |
 | $7$ | $M_{2^{(n-1)/2}}(F)\times M_{2^{(n-1)/2}}(F)$ | $F$ | $F\times F$ |
 
-For example $\mathrm{Cl}_{0,1}\cong F(\sqrt{-1})$, $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, $\mathrm{Cl}_{0,3}\cong\mathbb{H}\times\mathbb{H}$, $\mathrm{Cl}_{0,4}\cong M_2(\mathbb{H})$, $\mathrm{Cl}_{0,5}\cong M_4(F(\sqrt{-1}))$, $\mathrm{Cl}_{0,6}\cong M_8(F)$, $\mathrm{Cl}_{0,7}\cong M_8(F)\times M_8(F)$, $\mathrm{Cl}_{0,8}\cong M_{16}(F)$; and $\mathrm{Cl}_{1,0}\cong F\times F$, $\mathrm{Cl}_{2,0}\cong M_2(F)$, $\mathrm{Cl}_{3,0}\cong M_2(F(\sqrt{-1}))$, $\mathrm{Cl}_{4,0}\cong M_2(\mathbb{H})$, $\mathrm{Cl}_{5,0}\cong M_2(\mathbb{H})\times M_2(\mathbb{H})$, $\mathrm{Cl}_{6,0}\cong M_4(\mathbb{H})$, $\mathrm{Cl}_{7,0}\cong M_8(F(\sqrt{-1}))$, $\mathrm{Cl}_{8,0}\cong M_{16}(F)$. Over $\mathbb{R}$ this is the classical table; the two families are the two columns of the eightfold way.
+For example $\mathrm{Cl}_{0,1}\cong F(\sqrt{-1})$, $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, $\mathrm{Cl}_{0,3}\cong\mathbb{H}\times\mathbb{H}$, $\mathrm{Cl}_{0,4}\cong M_2(\mathbb{H})$, $\mathrm{Cl}_{0,5}\cong M_4(F(\sqrt{-1}))$, $\mathrm{Cl}_{0,6}\cong M_8(F)$, $\mathrm{Cl}_{0,7}\cong M_8(F)\times M_8(F)$, $\mathrm{Cl}_{0,8}\cong M_{16}(F)$; and $\mathrm{Cl}_{1,0}\cong F\times F$, $\mathrm{Cl}_{2,0}\cong M_2(F)$, $\mathrm{Cl}_{3,0}\cong \mathsf{M}_2(F(\sqrt{-1}))$, $\mathrm{Cl}_{4,0}\cong M_2(\mathbb{H})$, $\mathrm{Cl}_{5,0}\cong M_2(\mathbb{H})\times M_2(\mathbb{H})$, $\mathrm{Cl}_{6,0}\cong M_4(\mathbb{H})$, $\mathrm{Cl}_{7,0}\cong M_8(F(\sqrt{-1}))$, $\mathrm{Cl}_{8,0}\cong M_{16}(F)$. Over $\mathbb{R}$ this is the classical table; the two families are the two columns of the eightfold way.
 
 ## The General Classification
 
@@ -124,7 +124,7 @@ $$
 
 Consequently $\mathrm{Cl}_{p,q}$ is determined up to isomorphism by the total dimension $2^n$ together with the class of $d$ modulo $8$.
 
-**Proof.** If $p\ge q$, apply the recursion $q$ times to reduce $\mathrm{Cl}_{p,q}$ to $\mathrm{Cl}_{p-q,0}$: each application removes one positive and one negative generator and multiplies by $M_2$. If $q>p$, the same reduction in the other order reaches $\mathrm{Cl}_{0,q-p}$. The dependence on $d\bmod 8$ is the periodicity of the two definite tables, and the total dimension fixes the size of the matrix algebra.
+**Proof.** If $p\ge q$, apply the recursion $q$ times to reduce $\mathrm{Cl}_{p,q}$ to $\mathrm{Cl}_{p-q,0}$: each application removes one positive and one negative generator and multiplies by $\mathsf{M}_2$. If $q>p$, the same reduction in the other order reaches $\mathrm{Cl}_{0,q-p}$. The dependence on $d\bmod 8$ is the periodicity of the two definite tables, and the total dimension fixes the size of the matrix algebra.
 
 **The eightfold table.** Collecting the two definite tables and the reduction gives the following complete list of types. The symbol $n$ is the total dimension and $d=p-q$.
 
@@ -147,7 +147,7 @@ $$
 
 the splitting into two matrix factors being the additional information carried by the classes $d\equiv1,5$. This is the reason the Clifford algebras are said to be periodic of period eight: the type of the algebra returns to itself after eight sign changes, the matrix size absorbing an overall factor.
 
-**Example.** In the mixed case $\mathrm{Cl}_{1,3}$ one has $n=4$, $d=-2$, so $d\bmod 8=6$ and the table gives $M_{2^{(n-2)/2}}(\mathbb{H})=M_2(\mathbb{H})$, the algebra of the Clifford layer of the biquaternion articles. Its even subalgebra is $\mathrm{Cl}_{3,0}\cong M_2(F(\sqrt{-1}))\cong\mathbb{B}$, as the recursion below shows.
+**Example.** In the mixed case $\mathrm{Cl}_{1,3}$ one has $n=4$, $d=-2$, so $d\bmod 8=6$ and the table gives $M_{2^{(n-2)/2}}(\mathbb{H})=M_2(\mathbb{H})$, the algebra of the Clifford layer of the biquaternion articles. Its even subalgebra is $\mathrm{Cl}_{3,0}\cong \mathsf{M}_2(F(\sqrt{-1}))\cong\mathbb{B}$, as the recursion below shows.
 
 ## The Even Subalgebra
 
@@ -215,7 +215,7 @@ $$
 \mathrm{Cl}_{p+8,q}\cong M_{16}(\mathrm{Cl}_{p,q})\cong \mathrm{Cl}_{p,q+8}.
 $$
 
-The recursion $\mathrm{Cl}_{p+1,q+1}\cong M_2(\mathrm{Cl}_{p,q})$ reduces the general classification to the two definite families, and an orthogonal direct sum decomposition reduces $\mathrm{Cl}_{p,q}$ to $M_{2^{\min(p,q)}}$ over the definite algebra $\mathrm{Cl}_{|p-q|,0}$ or $\mathrm{Cl}_{0,|p-q|}$. The type is therefore governed by $d=p-q$ modulo $8$ — the parity of $n=p+q$ being determined by it — and the eight classes form the eightfold way: real matrix algebras for $d\equiv0,2$, quaternionic for $d\equiv4,6$, complex for $d\equiv3,7$, and split into two factors for $d\equiv1,5$.
+The recursion $\mathrm{Cl}_{p+1,q+1}\cong \mathsf{M}_2(\mathrm{Cl}_{p,q})$ reduces the general classification to the two definite families, and an orthogonal direct sum decomposition reduces $\mathrm{Cl}_{p,q}$ to $M_{2^{\min(p,q)}}$ over the definite algebra $\mathrm{Cl}_{|p-q|,0}$ or $\mathrm{Cl}_{0,|p-q|}$. The type is therefore governed by $d=p-q$ modulo $8$ — the parity of $n=p+q$ being determined by it — and the eight classes form the eightfold way: real matrix algebras for $d\equiv0,2$, quaternionic for $d\equiv4,6$, complex for $d\equiv3,7$, and split into two factors for $d\equiv1,5$.
 
 The even subalgebra satisfies $\mathrm{Cl}^0_{p,q}\cong\mathrm{Cl}_{p,q-1}\cong\mathrm{Cl}_{q,p-1}$; passing to it advances the eightfold class by one, so the spinor type is periodic of period eight. Over a complex ground field the classification collapses to period two, with $\mathbb{C}\mathrm{l}_{2m}\cong M_{2^m}(\mathbb{C})$ and $\mathbb{C}\mathrm{l}_{2m+1}\cong M_{2^m}(\mathbb{C})\times M_{2^m}(\mathbb{C})$. The irreducible module of a simple Clifford algebra is unique, and its dimension and division algebra are read off the eightfold table; this is the module that carries the spin representation.
 

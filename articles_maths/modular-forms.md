@@ -164,9 +164,9 @@ the sum over the orbits of the points of $\mathbb{H}^*$, where $\operatorname{or
 $$
 \operatorname{ord}_\infty f + \tfrac12\operatorname{ord}_if + \tfrac13\operatorname{ord}_\rho f + \sum_{P\neq i,\rho}\operatorname{ord}_Pf = \frac{k}{12},
 $$
-and consequently $M_k(\Gamma(1))\neq0$ only for even $k$, with $M_0$ the constants, $M_2 = 0$, and $\dim M_k = \lfloor k/12\rfloor+1$ for even $k\geq4$ with $k\not\equiv2\pmod{12}$, while $\dim M_k = \lfloor k/12\rfloor$ for $k\equiv2\pmod{12}$.
+and consequently $M_k(\Gamma(1))\neq0$ only for even $k$, with $M_0$ the constants, $\mathsf{M}_2 = 0$, and $\dim M_k = \lfloor k/12\rfloor+1$ for even $k\geq4$ with $k\not\equiv2\pmod{12}$, while $\dim M_k = \lfloor k/12\rfloor$ for $k\equiv2\pmod{12}$.
 
-**Proof.** The valence formula is the statement; the dimension is obtained by counting the possible orders of vanishing of a form of weight $k$: a cusp form has $\operatorname{ord}_\infty f\geq1$, a form vanishing at $i$ contributes $1/2$ and one vanishing at $\rho$ contributes $1/3$, and the integrality of the resulting count forces the exceptional congruence. The vanishing of $M_2$ follows because every positive contribution to the valency sum is at least $\frac13$, while the sum required for a form of weight $2$ is $\frac{2}{12} = \frac16$; no nonzero form of weight $2$ can therefore exist.
+**Proof.** The valence formula is the statement; the dimension is obtained by counting the possible orders of vanishing of a form of weight $k$: a cusp form has $\operatorname{ord}_\infty f\geq1$, a form vanishing at $i$ contributes $1/2$ and one vanishing at $\rho$ contributes $1/3$, and the integrality of the resulting count forces the exceptional congruence. The vanishing of $\mathsf{M}_2$ follows because every positive contribution to the valency sum is at least $\frac13$, while the sum required for a form of weight $2$ is $\frac{2}{12} = \frac16$; no nonzero form of weight $2$ can therefore exist.
 
 **Corollary (the dimension in general).** For a congruence subgroup $\Gamma$ and even $k\geq4$ the Eisenstein subspace of $M_k(\Gamma)$ has dimension $\nu_\infty$, one form for each cusp, obtained by averaging the Eisenstein series of the cusps over the cosets of $\Gamma$; hence
 $$
@@ -288,11 +288,11 @@ $$
 $$
 and for the standard form $Q(x) = x^2$ the series is $\theta(z) = \sum_{n\in\mathbb{Z}}q^{n^2}$.
 
-**Theorem.** If $Q$ is integral of even rank $n$ and its associated bilinear form is even unimodular, then $\theta_Q$ is a modular form of weight $n/2$ for $\Gamma(1)$. In particular $\theta\in M_{1/2}(\Gamma_0(4),\chi)$ with the multiplier $\chi$ of the theta function, and $\theta^4\in M_2(\Gamma_0(4))$ is the Eisenstein series of weight $2$ with
+**Theorem.** If $Q$ is integral of even rank $n$ and its associated bilinear form is even unimodular, then $\theta_Q$ is a modular form of weight $n/2$ for $\Gamma(1)$. In particular $\theta\in M_{1/2}(\Gamma_0(4),\chi)$ with the multiplier $\chi$ of the theta function, and $\theta^4\in \mathsf{M}_2(\Gamma_0(4))$ is the Eisenstein series of weight $2$ with
 $$
 \theta(z)^4 = \sum_{n\geq0}r_4(n)q^n, \qquad r_4(n) = 8\sum_{\substack{d\mid n\\ 4\nmid d}}d .
 $$
-**Proof sketch.** The transformation law of the theta series is the Poisson summation formula of *Zeta Functions*, which gives $\theta(-1/z) = (z/i)^{1/2}\theta(z)$ with the principal branch of the square root; that law is the automorphy with the multiplier $\chi$. The fourth power kills the multiplier, and $\dim M_2(\Gamma_0(4)) = 2$ forces it to be an Eisenstein series; comparing the first coefficients gives the four-square formula.
+**Proof sketch.** The transformation law of the theta series is the Poisson summation formula of *Zeta Functions*, which gives $\theta(-1/z) = (z/i)^{1/2}\theta(z)$ with the principal branch of the square root; that law is the automorphy with the multiplier $\chi$. The fourth power kills the multiplier, and $\dim \mathsf{M}_2(\Gamma_0(4)) = 2$ forces it to be an Eisenstein series; comparing the first coefficients gives the four-square formula.
 
 **Example.** The formula gives $r_4(1) = 8$, $r_4(2) = 24$, $r_4(3) = 32$, $r_4(4) = 24$: for $n=2$ the representations are the permutations of $(\pm1,\pm1,0,0)$, of which there are $24$, and for $n=4$ the representations are the eight of $(\pm2,0,0,0)$ and the sixteen of $(\pm1,\pm1,\pm1,\pm1)$, again $24$. The agreement with the formula is the classical theorem of Jacobi on the four-square numbers.
 

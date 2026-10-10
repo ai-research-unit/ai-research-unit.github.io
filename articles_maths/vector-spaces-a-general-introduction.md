@@ -251,10 +251,10 @@ for some $r \geq 0$ and $n_1, \ldots, n_k \geq 2$.
 When $R = \mathbb{D}$, the split complex numbers, the theory of $\mathbb{D}$-modules is more subtle because $\mathbb{D}$ has zero divisors. A $\mathbb{D}$-module need not be free, and torsion can occur. But since $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$ as a ring, every $\mathbb{D}$-module decomposes as a pair of $\mathbb{R}$-vector spaces:
 
 $$
-M \cong M_1 \times M_2
+M \cong M_1 \times \mathsf{M}_2
 $$
 
-where $M_1$ and $M_2$ are real vector spaces. This reduces the theory of $\mathbb{D}$-modules to the theory of real vector spaces.
+where $M_1$ and $\mathsf{M}_2$ are real vector spaces. This reduces the theory of $\mathbb{D}$-modules to the theory of real vector spaces.
 
 ---
 

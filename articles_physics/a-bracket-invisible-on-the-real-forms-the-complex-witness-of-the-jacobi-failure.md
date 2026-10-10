@@ -36,8 +36,7 @@ Antisymmetric Quaternionic Sesqualgebra*; the comparison of the failing brackets
 Sesqualgebra in the Matrix Representations*; the subspaces to *The Six Subspaces under the Antisymmetric
 Quaternionic Sesqualgebra of Biquaternions*; the negative reading to *The Gauge Group Ceiling: Why the
 Biquaternion Algebra Reaches SU(2) but Not SU(3)* and *What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions*; and
-the obstruction's place in the map of the four general products to *The Four General Products and Their Physical Readings:
-the Two Algebras and the Two Sesqualgebras*.
+the obstruction's place in the map of the four general products to *The Four General Products and Their Physical Readings*.
 
 **Conventions.** As in the companion articles of this block:
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$,
@@ -312,4 +311,4 @@ that is the reading the band closes with.
 - Companion article *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*, for the product whose failure this is.
 - Companion article *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the negative reading and the reach of the internal action.
 - Companion article *What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions*, for the catalogue of the algebra's obstructions.
-- Companion article *The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*, for the map that places the failing brackets among the twelve operations.
+- Companion article *The Four General Products and Their Physical Readings*, for the map that places the failing brackets among the twelve operations.

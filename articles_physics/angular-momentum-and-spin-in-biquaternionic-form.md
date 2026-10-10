@@ -6,16 +6,16 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$
 
 The scope is the angular momentum of non-relativistic quantum physics: the orbital angular momentum operator, the spin operator, the total operator, the Casimir, the ladder operators, the addition of angular momenta with the resulting Clebsch–Gordan structure, and the realisation of rotations by unit quaternions. The parent article treated the single spin-1/2 in detail; here the spin is one ingredient in a general algebraic scheme, and the genuinely new content is the algebra of angular momenta and their addition. The article closes by stating explicitly which results are standard quantum physics rewritten in biquaternion language and which are consequences of the biquaternion algebra itself.
 
-Two conventions of the corpus are used throughout. The isomorphism $\Phi: \mathbb{B} \to M_2(\mathbb{C})$ is the one fixed in the companion articles,
+Two conventions of the corpus are used throughout. The isomorphism $\mathsf{M}_2: \mathbb{B} \to M_2(\mathbb{C})$ is the one fixed in the companion articles,
 
 $$
-\Phi(e_0) = I_2, \qquad \Phi(e_k) = -i\sigma_k, \qquad \Phi(i) = iI_2,
+\mathsf{M}_2(e_0) = I_2, \qquad \mathsf{M}_2(e_k) = -i\sigma_k, \qquad \mathsf{M}_2(i) = iI_2,
 $$
 
 where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and $i$ on the right is the complex unit of $M_2(\mathbb{C})$. It follows that
 
 $$
-\Phi(i e_k) = \sigma_k, \qquad \Phi\bigl(h_0 e_0 + i h_k e_k\bigr) = h_0 I_2 + h_k \sigma_k .
+\mathsf{M}_2(i e_k) = \sigma_k, \qquad \mathsf{M}_2\bigl(h_0 e_0 + i h_k e_k\bigr) = h_0 I_2 + h_k \sigma_k .
 $$
 
 The scalar imaginary is $i$, the quaternion basis satisfies $e_0=1$, $e_k^2=-e_0$, and $e_j e_k = \epsilon_{jkl}\,e_l$ for $j\neq k$. The reduced Planck constant $\hbar$ is written explicitly; the algebra literature often sets $\hbar=1$, and the commutation relation quoted in the scope, $[L_i,L_j]=i\epsilon_{ijk}L_k$, is the $\hbar=1$ form of the relations below.
@@ -124,10 +124,10 @@ $$
 
 which are exactly the standard orbital angular momentum operators. This is the biquaternion expression of the vector formula $\mathbf{L} = \mathbf{r}\times\mathbf{p}$: the cross product is the vector part of a quaternion product, and only the replacement $\mathbf{p}\to -i\hbar\nabla$ is needed. The scalar part, $i\hbar\,\mathbf{r}\cdot\nabla$, is the radial (divergence) term and carries no angular information.
 
-For the algebra of components it is convenient to use the representatives in $\mathbb{M}_+$ that $\Phi$ assigns to each operator. Extending $\Phi$ coefficient-wise to biquaternion-valued operators, the scalar operator $\hat{L}_k$ corresponds to
+For the algebra of components it is convenient to use the representatives in $\mathbb{M}_+$ that $\mathsf{M}_2$ assigns to each operator. Extending $\mathsf{M}_2$ coefficient-wise to biquaternion-valued operators, the scalar operator $\hat{L}_k$ corresponds to
 
 $$
-\tilde{L}_k = \hat{L}_k\, e_0 , \qquad \Phi(\tilde{L}_k) = \hat{L}_k \otimes I_2 .
+\tilde{L}_k = \hat{L}_k\, e_0 , \qquad \mathsf{M}_2(\tilde{L}_k) = \hat{L}_k \otimes I_2 .
 $$
 
 The element $\tilde L_k$ is Hermitian, since $\hat L_k$ is Hermitian and $e_0$ is central, so it plays the role of an observable. The orbital operators satisfy
@@ -157,15 +157,15 @@ Note the structural asymmetry between orbital and spin angular momentum. The orb
 
 ## The Spin Operators Under the Isomorphism
 
-The parent article developed the single spin-1/2 in detail; we recall only what is needed for the angular-momentum algebra. Under $\Phi$, the spin operators $S_k = \tfrac{\hbar}{2}\sigma_k$ correspond to the Hermitian elements
+The parent article developed the single spin-1/2 in detail; we recall only what is needed for the angular-momentum algebra. Under $\mathsf{M}_2$, the spin operators $S_k = \tfrac{\hbar}{2}\sigma_k$ correspond to the Hermitian elements
 
 $$
-\tilde{S}_k = \tfrac{\hbar}{2}\, i e_k \in \mathbb{M}_+, \qquad \Phi(\tilde{S}_k) = \tfrac{\hbar}{2}\sigma_k = S_k .
+\tilde{S}_k = \tfrac{\hbar}{2}\, i e_k \in \mathbb{M}_+, \qquad \mathsf{M}_2(\tilde{S}_k) = \tfrac{\hbar}{2}\sigma_k = S_k .
 $$
 
 The three cases are collected in the following table, together with the ladder combinations $\tilde S_\pm = \tilde S_1 \pm i\tilde S_2$.
 
-| Standard operator | Biquaternion element | Image under $\Phi$ |
+| Standard operator | Biquaternion element | Image under $\mathsf{M}_2$ |
 |---|---|---|
 | $S_1 = \tfrac{\hbar}{2}\sigma_1$ | $\tilde S_1 = \tfrac{\hbar}{2} i e_1$ | $\tfrac{\hbar}{2}\sigma_1$ |
 | $S_2 = \tfrac{\hbar}{2}\sigma_2$ | $\tilde S_2 = \tfrac{\hbar}{2} i e_2$ | $\tfrac{\hbar}{2}\sigma_2$ |
@@ -219,7 +219,7 @@ The **total angular-momentum operator** is the sum of the orbital and spin parts
 
 $$
 \tilde{J}_k = \tilde{L}_k + \tilde{S}_k = \hat{L}_k\,e_0 + \tfrac{\hbar}{2}\,i e_k ,
-\qquad \Phi(\tilde{J}_k) = \hat{L}_k\,I_2 + \tfrac{\hbar}{2}\sigma_k .
+\qquad \mathsf{M}_2(\tilde{J}_k) = \hat{L}_k\,I_2 + \tfrac{\hbar}{2}\sigma_k .
 $$
 
 Because the two parts commute and each satisfies the angular-momentum algebra, so does the sum:
@@ -234,7 +234,7 @@ The **spin–orbit operator** is the scalar contraction of the two vector operat
 
 $$
 \tilde{L}_k \tilde{S}_k = \hat{L}_k \cdot \tfrac{\hbar}{2} i e_k = \tfrac{i\hbar}{2}\,\hat{L}_k e_k,
-\qquad \Phi(\tilde{L}_k\tilde{S}_k) = \tfrac{\hbar}{2}\,\hat{L}_k\sigma_k = \mathbf{\hat{L}}\cdot\mathbf{S}.
+\qquad \mathsf{M}_2(\tilde{L}_k\tilde{S}_k) = \tfrac{\hbar}{2}\,\hat{L}_k\sigma_k = \mathbf{\hat{L}}\cdot\mathbf{S}.
 $$
 
 Its eigenvalues follow from the Casimir identity $\mathbf{L}\cdot\mathbf{S} = \tfrac{1}{2}(J^2 - L^2 - S^2)$: on a state of definite $l$ and total $j = l\pm\tfrac12$,
@@ -402,7 +402,7 @@ It is useful to separate the two kinds of result that the article contains.
 
 ## Summary
 
-Angular momentum in the biquaternion framework is organised by the isomorphism $\Phi(e_k)=-i\sigma_k$, under which the spin operators $S_k=\tfrac{\hbar}{2}\sigma_k$ correspond to the Hermitian elements $\tilde S_k=\tfrac{\hbar}{2}ie_k\in\mathbb{M}_+$. The rotation generators lie in the Lie algebra $\mathbb{M}_-$ and, for spatial rotations, in the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where they are $-\tfrac12e_k$; their exponentials are the unit real quaternions, which are the group $SU(2)$.
+Angular momentum in the biquaternion framework is organised by the isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, under which the spin operators $S_k=\tfrac{\hbar}{2}\sigma_k$ correspond to the Hermitian elements $\tilde S_k=\tfrac{\hbar}{2}ie_k\in\mathbb{M}_+$. The rotation generators lie in the Lie algebra $\mathbb{M}_-$ and, for spatial rotations, in the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where they are $-\tfrac12e_k$; their exponentials are the unit real quaternions, which are the group $SU(2)$.
 
 The orbital angular momentum operator is the vector part of the quaternionic product $\tilde r\tilde p$ of position and momentum, with components $\hat L_k=-i\hbar\epsilon_{klm}x_l\partial_m$ and Hermitian representatives $\tilde L_k=\hat L_ke_0$. The spin operators generate the same algebra internally, and the commutation relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ follow directly from the quaternion multiplication rule, the square $e_k^2=-e_0$, and $i^2=-1$. The pure-spin Casimir is the central element $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$; the total Casimir $\tilde J^2$ takes the value $j(j+1)\hbar^2$ on coupled states with $j=l\pm\tfrac12$.
 
@@ -418,10 +418,10 @@ The spin ladder operators are nilpotent and null in the biquaternion norm, and h
 | $\mathbb{M}_-$ | Anti-Hermitian subspace, Lie algebra of the unitary group |
 | $\mathbb{M}_+$ | Hermitian subspace, observables and states |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace, home of the rotation rotors |
-| $\Phi(e_k)=-i\sigma_k$, $\Phi(ie_k)=\sigma_k$ | Isomorphism with $M_2(\mathbb{C})$ |
+| $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(ie_k)=\sigma_k$ | Isomorphism with $M_2(\mathbb{C})$ |
 | $\hat{L}_k=-i\hbar\epsilon_{klm}x_l\partial_m$ | Orbital angular momentum operator |
 | $\tilde{L}_k=\hat{L}_ke_0$ | Biquaternion representative of $\hat L_k$ (Hermitian) |
-| $\tilde{S}_k=\tfrac{\hbar}{2}ie_k$ | Spin operators in $\mathbb{M}_+$, $\Phi(\tilde S_k)=\tfrac{\hbar}{2}\sigma_k$ |
+| $\tilde{S}_k=\tfrac{\hbar}{2}ie_k$ | Spin operators in $\mathbb{M}_+$, $\mathsf{M}_2(\tilde S_k)=\tfrac{\hbar}{2}\sigma_k$ |
 | $\tilde{J}_k=\tilde{L}_k+\tilde{S}_k$ | Total angular momentum |
 | $\tilde{J}_\pm=\tilde{J}_1\pm i\tilde{J}_2$ | Ladder operators |
 | $\tilde{J}^2=\sum_k\tilde{J}_k^2$ | Casimir operator, eigenvalue $j(j+1)\hbar^2$ |

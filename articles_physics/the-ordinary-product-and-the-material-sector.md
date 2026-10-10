@@ -29,7 +29,7 @@ definite form has no light cone, so $B$ cannot decide which events can influence
 is the sign that separates the material sector from the informational one, and that sign is the whole of
 its physical content.
 
-The algebra carries three other products, each read in its own block and compared in *The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*; this article needs the
+The algebra carries three other products, each read in its own block and compared in *The Four General Products and Their Physical Readings*; this article needs the
 ordinary one alone. The properties of $B$ — its symmetry, its non-degeneracy, its Gram matrix and its
 restriction to the six distinguished subspaces — are the mathematics of *The Four Pairings of the
 Biquaternion Algebra* and *The Six Subspaces under the General Plain Algebra of Biquaternions*, and are cited rather than
@@ -407,7 +407,6 @@ distinctions are labelled throughout: what is proved is the algebra, what is pro
   sector and its own physics.
 - Companion article *Biquaternion Norm and Invertibility*, for the interval, the light cone and the mass
   shell.
-- Companion article *The Four General Products and Their Physical Readings: the Two Algebras and the Two
-  Sesqualgebras*, for the comparison of the four general products and the full restriction table.
+- Companion article *The Four General Products and Their Physical Readings*, for the comparison of the four general products and the full restriction table.
 - Companion article *The Interval as the Square and the Charge of the Material Composition*, for the interval read as the
   square of a product.

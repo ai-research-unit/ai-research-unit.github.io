@@ -73,7 +73,7 @@ The finite-dimensional case is the rotation group. For $\mathfrak g=\mathfrak{so
 $$
 \{x,y\}=z,\qquad \{y,z\}=x,\qquad \{z,x\}=y ,
 $$
-the structure constants of $\mathfrak{so}(3)$; the Casimir is $x^2+y^2+z^2$, whose level sets are the spheres, and the symplectic leaves are the concentric spheres and the origin. With the Hamiltonian $H=\frac12(M_1^2/I_1+M_2^2/I_2+M_3^2/I_3)$ of a rigid body with moments of inertia $I$, the Lie–Poisson equation is
+the structure constants of $\mathfrak{so}(3)$; the Casimir is $x^2+y^2+z^2$, whose level sets are the spheres, and the symplectic leaves are the concentric spheres and the origin. With the Hamiltonian $H=\frac12(M_1^2/I_1+\mathsf{M}_2^2/I_2+M_3^2/I_3)$ of a rigid body with moments of inertia $I$, the Lie–Poisson equation is
 $$
 \dot M=\mathrm{ad}^*_{I^{-1}M}M=I^{-1}M\times M ,
 $$

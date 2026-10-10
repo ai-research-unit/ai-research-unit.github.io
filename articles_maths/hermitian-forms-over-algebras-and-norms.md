@@ -44,7 +44,7 @@ The quaternion algebra is a composition algebra because its norm is multiplicati
 
 **Definition.** For a central simple $R$-algebra $A$ the **reduced norm** $N = \operatorname{Nrd}$ is the multiplicative polynomial map defined by the determinant of the regular representation, and the **reduced trace** $T = \operatorname{Trd}$ is its polarisation.
 
-**Proposition.** The reduced norm is multiplicative, $N(xy) = N(x)N(y)$. For an algebra of **degree two** — a quaternion algebra, $M_2$, or the biquaternion algebra — the reduced norm is a quadratic form and its polarisation is the bilinear form
+**Proposition.** The reduced norm is multiplicative, $N(xy) = N(x)N(y)$. For an algebra of **degree two** — a quaternion algebra, $\mathsf{M}_2$, or the biquaternion algebra — the reduced norm is a quadratic form and its polarisation is the bilinear form
 
 $$
 B(x,y) = \tfrac{1}{2}\bigl(N(x+y) - N(x) - N(y)\bigr) = T\bigl(x\,\operatorname{adj}(y)\bigr),
@@ -52,9 +52,9 @@ $$
 
 the reduced trace against the adjugate. It is **not** the Hermitian form $h(x,y) = T(xy^{*})$. For degree $n \geq 3$ the reduced norm is a form of degree $n$ and its full polarisation is $n$-linear, of which $T(x\operatorname{adj}(y))$ is only the quadratic part.
 
-**Proof.** Multiplicativity is the multiplicativity of the determinant. For the polarisation on $M_2$, $\det(X+Y) = \det X + \det Y + \tau(X\operatorname{adj}Y)$ directly; for $n \geq 3$ the expansion $\det(X+Y) = \det X + \sum_{ij}X_{ij}\operatorname{adj}(Y)_{ji} + \dots$ has the higher-degree terms that the dots conceal. The last clause is the identity of the two quadratic forms on $M_2$ checked below.
+**Proof.** Multiplicativity is the multiplicativity of the determinant. For the polarisation on $\mathsf{M}_2$, $\det(X+Y) = \det X + \det Y + \tau(X\operatorname{adj}Y)$ directly; for $n \geq 3$ the expansion $\det(X+Y) = \det X + \sum_{ij}X_{ij}\operatorname{adj}(Y)_{ji} + \dots$ has the higher-degree terms that the dots conceal. The last clause is the identity of the two quadratic forms on $\mathsf{M}_2$ checked below.
 
-**Remark.** The two forms are genuinely different in the layer, and the difference is the whole point of the degree-2 structure. On $M_2$ with $X = E_{11}$ and $Y = E_{22}$ the Hermitian form gives $h(X,Y) = \tau(XY^{*}) = 0$ while the polarisation of the determinant gives $B(X,Y) = 1$: the Hermitian form sees the two matrices as orthogonal, the norm form does not. A Hermitian form is a degree-2 structure *chosen* on the algebra; the reduced norm is a degree-2 structure *given* by the algebra. The two coincide only in the algebras in which the adjugate is the dagger, that is, in the dimensions where the inverse is the conjugate transpose.
+**Remark.** The two forms are genuinely different in the layer, and the difference is the whole point of the degree-2 structure. On $\mathsf{M}_2$ with $X = E_{11}$ and $Y = E_{22}$ the Hermitian form gives $h(X,Y) = \tau(XY^{*}) = 0$ while the polarisation of the determinant gives $B(X,Y) = 1$: the Hermitian form sees the two matrices as orthogonal, the norm form does not. A Hermitian form is a degree-2 structure *chosen* on the algebra; the reduced norm is a degree-2 structure *given* by the algebra. The two coincide only in the algebras in which the adjugate is the dagger, that is, in the dimensions where the inverse is the conjugate transpose.
 
 **Proposition.** For an involution of the first kind the reduced norm is invariant, $N(x^{*}) = N(x)$, and the norm form is quadratic; for an involution of the second kind it is twisted, $N(x^{*}) = \varsigma(N(x))$, and the norm form is Hermitian in the sense of *The Sesquilinear Form and the Conjugation*.
 
@@ -74,7 +74,7 @@ the parity twist of the **blade form** $\operatorname{Sc}(x^{r}y)$ of *The Blade
 
 **Proposition.** The norm form is definite exactly in the extreme cases, positive definite when $q$ is **negative** definite, because the dagger inserts the parity sign; and it is **not** multiplicative from dimension three on: $N(x) = N(y) = 1$ but $N(xy) = -3$ for the elements $x = y = 1 + e_{1} + e_{23}$ of $\mathrm{Cl}_{3,0}$.
 
-**Proof.** The diagonal is the computation of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, $\operatorname{Sc}(x^{\dagger}y) = \sum_{I}(-1)^{|I|}(\prod_{i\in I}e_{i}^{2})a_{I}b_{I}$; the coefficients $(-1)^{|I|}\prod_{i\in I}e_{i}^{2}$ are $\pm1$, and they are all $+1$ exactly when every $e_{i}^{2} = -1$, that is when $q$ is negative definite. For the failure, in $\mathrm{Cl}_{3,0}$ the element $x = 1 + e_{1} + e_{23}$ has $x^{\dagger}x = 1 - 2e_{123}$, so $N(x) = 1$; squaring, $x^{2} = 1 + 2e_{1} + 2e_{23} + 2e_{123}$, and $N(x^{2}) = 1 - 4 - 4 + 4 = -3$ while $N(x)^{2} = 1$. The multiplicativity holds in dimension two, where the algebra is the quaternion algebra or $M_2$, and on the versors below.
+**Proof.** The diagonal is the computation of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, $\operatorname{Sc}(x^{\dagger}y) = \sum_{I}(-1)^{|I|}(\prod_{i\in I}e_{i}^{2})a_{I}b_{I}$; the coefficients $(-1)^{|I|}\prod_{i\in I}e_{i}^{2}$ are $\pm1$, and they are all $+1$ exactly when every $e_{i}^{2} = -1$, that is when $q$ is negative definite. For the failure, in $\mathrm{Cl}_{3,0}$ the element $x = 1 + e_{1} + e_{23}$ has $x^{\dagger}x = 1 - 2e_{123}$, so $N(x) = 1$; squaring, $x^{2} = 1 + 2e_{1} + 2e_{23} + 2e_{123}$, and $N(x^{2}) = 1 - 4 - 4 + 4 = -3$ while $N(x)^{2} = 1$. The multiplicativity holds in dimension two, where the algebra is the quaternion algebra or $\mathsf{M}_2$, and on the versors below.
 
 **Corollary.** The Clifford algebra is not a composition algebra in the norm of the dagger; the norm is multiplicative on the **versors**, $N(xy) = N(x)N(y)$ for $x, y$ in the Clifford group, which is the multiplicative structure of *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*, and the failure on the general element is the algebraic reason the norm form of a Clifford algebra is a quadratic form *with* a group rather than a composition form.
 
@@ -107,7 +107,7 @@ On $\mathbb{B} = M_2(\mathbb{C})$ the reduced norm is the determinant and the no
 
 - The **norm map** of the algebra is $N(x) = xx^{*}$ and its polarisation is the trace form $\tfrac{1}{2}(xy^{*}+yx^{*})$; the diagonal of the form is $q(x) = \varphi(x^{*}x)$, which is the functional of the norm, $q(x) = \varphi(N(x))$, for a cyclic functional such as the trace.
 - The quaternion norm $N(x) = a^{2}-\alpha b^{2}-\beta c^{2}+\alpha\beta d^{2}$ is multiplicative, so the quaternion algebra is a composition algebra; its polarisation is the trace form, and the norm-one group is the compact group of the definite case.
-- The reduced norm of a central simple algebra is multiplicative and its polarisation is the reduced trace against the adjugate; it is in general **not** the Hermitian form of the dagger, as $M_2$ shows.
+- The reduced norm of a central simple algebra is multiplicative and its polarisation is the reduced trace against the adjugate; it is in general **not** the Hermitian form of the dagger, as $\mathsf{M}_2$ shows.
 - For an involution of the first kind the reduced norm is invariant, for one of the second kind it is twisted by $\varsigma$.
 - The norm of a Clifford algebra is the blade form, positive definite over a real base with $q$ positive definite, but it is not multiplicative: the multiplications hold on the versors of the Clifford group.
 - The **algebraic norm** is a map into the base ring and is Algebra; the **topological norm** is the selection of positive real values and is Part II.

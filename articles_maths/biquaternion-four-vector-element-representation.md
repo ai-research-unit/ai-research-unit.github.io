@@ -56,10 +56,10 @@ $$
 The column is the transcribed form of the same object, and it is convenient because the product of biquaternions is bilinear. For a fixed $\tilde{Q}$, the map $\tilde{R} \mapsto \tilde{Q} \tilde{R}$ sends coefficients linearly to coefficients, so it is a $\mathbb{C}$-linear endomorphism of the coefficient space, and with the column convention it is written as a $4 \times 4$ matrix acting on the column of $\tilde{R}$,
 
 $$
-\tilde{Q} \tilde{R} \longleftrightarrow \operatorname{mat}_4(\tilde{Q}) \, R .
+\tilde{Q} \tilde{R} \longleftrightarrow \mathsf{M}_4(\tilde{Q}) \, R .
 $$
 
-The matrix $\operatorname{mat}_4(\tilde{Q})$ is the matrix of left multiplication, each entry of which is a single coefficient of $\tilde{Q}$ carrying a sign and none of which is a sum of coefficients, and it is constructed and verified in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*, below this article. The present article records only that the product rule admits this reading; the operator itself is not developed here.
+The matrix $\mathsf{M}_4(\tilde{Q})$ is the matrix of left multiplication, each entry of which is a single coefficient of $\tilde{Q}$ carrying a sign and none of which is a sum of coefficients, and it is constructed and verified in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*, below this article. The present article records only that the product rule admits this reading; the operator itself is not developed here.
 
 **Remark (the row is the dual).** The row $Q^{\mathsf{T}}$ is the element of the dual space associated with $Q$ by the standard pairing, and it is **not** a further realization of the algebra. The dual of a left module is a right module, so the row carries the *right* action: an element $\varphi \in \operatorname{Hom}_{\mathbb{C}}(\mathbb{B}, \mathbb{C})$ is multiplied on the right by the rule $(\varphi \cdot \tilde{Q})(\tilde{R}) = \varphi(\tilde{Q}\tilde{R})$. The row associated with $\tilde{Q}$ and the column associated with $\tilde{R}$ are related by transposition dressed with quaternion conjugation: the transpose of the left matrix is the left matrix of the quaternion conjugate, so transposition carries the row picture to the column picture of the conjugate. This is the one place where the row must be stated, and it is stated once; the identity, and the sense in which the right action is the contragredient of the left one, are proved in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*, below this article.
 
@@ -276,7 +276,7 @@ The product in components has scalar part $Q^0 R^0 - \sum_k Q^k R^k$ and vector 
 | $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ | Four-vector; $Q^0 = Q_0$, $(Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3)$ |
 | $Q$, $Q^{\mathsf{T}}$ | Column and row of the four-vector |
 | $a^\mu, b^\mu$ | Real and imaginary parts of the components, $Q^\mu = a^\mu + i b^\mu$ |
-| $\operatorname{mat}_4(\tilde{Q})$ | Matrix of left multiplication on the coefficient space, constructed in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$* |
+| $\mathsf{M}_4(\tilde{Q})$ | Matrix of left multiplication on the coefficient space, constructed in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$* |
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |
 | ${}^{\natural}$ | Quaternion conjugation, negates the vector components |
 | $\bar{\cdot}$ | Complex conjugation, conjugates every component |

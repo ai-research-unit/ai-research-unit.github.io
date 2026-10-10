@@ -112,7 +112,7 @@ $$
 N(\tilde P\tilde Q)=N(\tilde P)\,N(\tilde Q).
 $$
 
-*Proof.* Under the matrix representation $\Phi:\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(e_k)=-i\sigma_k$, the algebraic norm is the determinant, $N(\tilde Q)=\det\Phi(\tilde Q)$, as the computation of the determinant of $\Phi(\tilde Q)=Q_0\mathrm I-i\sum_kQ_k\sigma_k$ shows. The map $\Phi$ is an algebra homomorphism and the determinant is multiplicative, so $N$ is. $\square$
+*Proof.* Under the matrix representation $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_k)=-i\sigma_k$, the algebraic norm is the determinant, $N(\tilde Q)=\det\mathsf{M}_2(\tilde Q)$, as the computation of the determinant of $\mathsf{M}_2(\tilde Q)=Q_0\mathrm I-i\sum_kQ_k\sigma_k$ shows. The map $\mathsf{M}_2$ is an algebra homomorphism and the determinant is multiplicative, so $N$ is. $\square$
 
 The algebraic norm is the **reduced norm** of the algebra, it is the only multiplicative one of the four, and it is the biquaternion algebraic norm of *Biquaternion Norm and Invertibility*: an element is invertible if and only if $N(\tilde Q)\neq0$, and the unit group is the norm-one group $\{N(\tilde Q)=1\}$, a non-compact real $6$-manifold homotopy equivalent to $S^{3}$.
 

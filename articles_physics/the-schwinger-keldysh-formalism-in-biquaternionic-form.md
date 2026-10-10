@@ -119,7 +119,7 @@ G^K=4 ,
 $$
 with the $qq$ entry exactly $0$ (to machine precision) and the off-diagonal entries exactly $G^R$ and $G^A$. The two off-diagonal entries are transposes of each other in the matrix-valued (spinor) case, where they are not central; for a scalar biquaternion field they are central scalars.
 
-**Biquaternion content.** Each entry of $\hat{\mathcal G}$ is a module object. For a scalar field the entries are central scalars times the identity on the module and the matrix is the standard one taken twice (the sector copies); for a spinor field the entries are $M_2$-valued in the spinor module and the matrix is not diagonal in the module index. The vanishing of the $qq$ entry is a branch-space fact and holds in both cases; the module structure multiplies it entrywise.
+**Biquaternion content.** Each entry of $\hat{\mathcal G}$ is a module object. For a scalar field the entries are central scalars times the identity on the module and the matrix is the standard one taken twice (the sector copies); for a spinor field the entries are $\mathsf{M}_2$-valued in the spinor module and the matrix is not diagonal in the module index. The vanishing of the $qq$ entry is a branch-space fact and holds in both cases; the module structure multiplies it entrywise.
 
 ## Equilibrium and the Fluctuation–Dissipation Relation
 

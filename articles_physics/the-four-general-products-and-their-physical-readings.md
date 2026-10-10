@@ -1,4 +1,4 @@
-# __The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras__
+# __The Four General Products and Their Physical Readings__
 
 ## Introduction
 
@@ -19,8 +19,9 @@ the two properties a physical theory cares about most.
 
 - The **second slot** decides whether the operation is a **composition** or a **pairing**. Read
   without a conjugation it is $\mathbb{C}$-bilinear and can be iterated; read with the star it is
-  sesquilinear and can only be evaluated. It is the slot that separates the two **algebras** from the
-  two **sesqualgebras**, and that is exactly the two-and-two division of the corpus.
+  sesquilinear and can only be evaluated. It is the slot that separates the two **general algebras** from the
+  two **general sesqualgebras**, and that is exactly the two-and-two division of the corpus's four general
+  products.
 - The **first slot** decides whether $e_0$ is a **right** identity, whether the induced form is
   **definite on each sector** or indefinite there, and it **toggles** the coefficient $\varepsilon$ of
   the scalar form. Since the second slot toggles $\varepsilon$ too, the coefficient survives exactly in
@@ -35,6 +36,17 @@ is the Born pairing. The general quaternionic sesquilinear product is **gauge**,
 and its ternary product is not a state space. Each of the four readings is labelled in §*The Four
 Readings* and in §*The Ledger*, and none of them is proved here: what is proved is the grid, and the
 reading is what the framework does with it.
+
+**Precision: the two algebras and the two sesqualgebras of the title are the general ones.** The
+biquaternion space carries **twelve** products, and with them twelve algebraic structures: each of the four
+general products splits into a symmetric and an antisymmetric part, giving six $\mathbb{C}$-bilinear and six
+sesquilinear operations, that is **six algebras over $\mathbb{C}$ and six sesqualgebras over
+$(\mathbb{C},\bar{\cdot})$** (*The 12 Products of the Biquaternion Complex Space*, *The 12 Algebraic
+Structures over the Biquaternion $\mathbb{C}$ Space*). This article, and the four blocks it maps, read the
+**general** structures alone: the two **general** algebras and the two **general** sesqualgebras among the
+six of each kind. The other eight structures are the symmetric and antisymmetric parts of the four general
+products, and they enter here only through the reading of §*The Four Readings* that the twelve are the four
+general products together with the two halves of each.
 
 The mathematics of the four general products, of their scalar and vector parts, of their comparison and of their
 scalar forms is *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products*, *Comparison Between the Four General Products* and *The Four Pairings of the
@@ -162,11 +174,15 @@ of the algebra and not a redundancy of naming, and reading the unused twelve as 
 **not** supported. What the transpose does supply is the reason the four are closed in the bilinear row and
 the reason the corpus conjugates in the sesquilinear one.
 
-**The two and two by which the corpus names its objects is the column split.** When the second slot is
+**The two and two by which the corpus names its four general objects is the column split.** When the second slot is
 read without a conjugation the product is $\mathbb{C}$-bilinear and defines on $\mathbb{B}$ the
 structure of an **algebra over $\mathbb{C}$**; when it carries the star the product is
 $\mathbb{C}$-linear in the first factor and conjugate-linear in the second and defines the structure of
-a **sesqualgebra over $\mathbb{C}$**. This is the split made in *Comparison Between the Four General Products*, and it is the reason the corpus has the four objects *Introduction to the General Plain Algebra of
+a **sesqualgebra over $\mathbb{C}$**. The two-and-two is the column split of the four **general** products
+alone: since each of the four splits further into a symmetric and an antisymmetric part, the space carries
+**six algebras and six sesqualgebras** in all (*The 12 Algebraic Structures over the Biquaternion
+$\mathbb{C}$ Space*), of which the two columns of the grid are the two **general** members of each kind. This
+is the split made in *Comparison Between the Four General Products*, and it is the reason the corpus has the four objects *Introduction to the General Plain Algebra of
 Biquaternions*, *Introduction to the General Quaternionic Algebra of Biquaternions*, *Introduction to the
 General Plain Sesqualgebra of Biquaternions* and *Introduction to the General Quaternionic Sesqualgebra of
 Biquaternions* and not one object with four general products.
@@ -296,10 +312,11 @@ is the biquaternion norm. The interval, the mass shell, the four-velocity and th
 interval is read off a product rather than attached to the space, and that the product is selected by
 its slots.
 
-## The Two Algebras
+## The Two General Algebras
 
 The two products whose second slot is trivial are $\mathbb{C}$-bilinear, and they are the multiplication
-of an **algebra over $\mathbb{C}$** in the sense the corpus uses. Both have a left identity, and both
+of an **algebra over $\mathbb{C}$** in the sense the corpus uses — the two **general** algebras among the
+six the space carries, the general plain and the general quaternionic algebra. Both have a left identity, and both
 induce a bilinear form by squaring.
 
 **The plain product $\tilde P\tilde Q$** is the only associative one and the only one with a two-sided
@@ -324,17 +341,18 @@ returns when an element is squared is the interval, so the light cone, the mass 
 of the norm are read off it. The companion block is its subject, and the interval identity above is its
 opening statement.
 
-**What the two algebras have in common is the second slot.** Both are bilinear, so both can be composed
+**What the two general algebras have in common is the second slot.** Both are bilinear, so both can be composed
 with themselves; both have a left identity, so both admit a notion of an operation acting on the
 algebra; and each satisfies exactly one law that the other does not — associativity for the first, the
 scalar square for the second. They are the two ways a product can be a *rule for combining*, and the
 framework uses them for the two things a rule for combining can describe: how operations compose, and
 how an element is measured against the interval.
 
-## The Two Sesqualgebras
+## The Two General Sesqualgebras
 
 The two products whose second slot carries the star are conjugate-linear in the second factor, and they
-are the multiplication of a **sesqualgebra over $\mathbb{C}$**. Neither has a left identity, and both
+are the multiplication of a **sesqualgebra over $\mathbb{C}$** — the two **general** sesqualgebras among the
+six the space carries, the general plain and the general quaternionic sesqualgebra. Neither has a left identity, and both
 induce a Hermitian form.
 
 **The sesquilinear product $\tilde P\tilde Q^{*}$** has a right identity and no left one, and it is the
@@ -355,7 +373,7 @@ four four-dimensional subspaces, so it is a Krein form. The physical reading is 
 of **gauge**: it is the pairing of an indefinite-metric structure, in which positivity is replaced by a
 sign, and it is the standard form of the fourth product in the theory of sesqualgebras.
 
-**What the two sesqualgebras have in common is the second slot**, exactly as before. Both are
+**What the two general sesqualgebras have in common is the second slot**, exactly as before. Both are
 sesquilinear, so both are pairings rather than compositions and neither can be iterated unambiguously —
 the associativity of both fails, and it fails on explicit basis triples recorded in *Comparison Between
 the Four General Products*. Neither has a left identity. They differ in the first slot, and the
@@ -601,13 +619,13 @@ description, and the four forms supply exactly one candidate for each. What cann
 other assignment of the four is possible.
 
 **Reading (four jobs and two halves).** Each of the four general products splits into a symmetric and an
-antisymmetric half, so the twelve products of the space can be read as **four jobs times two halves**: a
-**magnitude half** (the symmetric part, which carries the form, the interval and the pairing) and an
-**order half** (the antisymmetric part, which carries the bracket and the obstruction) attached to each
-job. The reading is thin, and is offered as one because the selection is severe: only two of the twelve
-satisfy a classical identity, the antisymmetric plain bilinear product being a Lie bracket and the
-symmetric plain bilinear product a Jordan product, and every other half is a structure without a classical
-identity of its own. So the grid's twelve are not twelve equivalent structures but four jobs, each with a
+antisymmetric half, so the twelve products of the space are the four general products together with the
+two halves of each: a **magnitude half** (the symmetric part, which carries the form, the interval and
+the pairing) and an **order half** (the antisymmetric part, which carries the bracket and the
+obstruction) attached to each job. The reading is thin, and is offered as one because the selection is
+severe: only two of the twelve satisfy a classical identity, the antisymmetric plain bilinear product
+being a Lie bracket and the symmetric plain bilinear product a Jordan product, and every other half is a
+structure without a classical identity of its own. So the grid's twelve are not twelve equivalent structures but four jobs, each with a
 metric half and an order half, of which only the two halves that close are classical. The claim that this
 is a selection principle is the framework's and is not proved; the count and the two exceptional halves
 are. The twelve themselves are *The 12 Products of the Biquaternion Complex Space* and the two that pass
@@ -878,11 +896,11 @@ so no single product carries both; and that the two sectors are coupled algebrai
 $\mathbb{M}_-\to\mathbb{M}_+$, the one cross-sector map the grid supplies. Two more are added as
 labelled readings: that the dial ${}^{\natural}$ is a **change of frame**, the quaternionic product being
 the plain product in the conjugated frame, so the metric is what the frame change moves; and that the
-twelve products are **four jobs times two halves**, a magnitude half and an order half per job, of which
-only the two classical halves close. One point is added as a **remark and not a reading**: the twelve
-unused slot pairs are *not* transposes or conjugates of the four used ones, so the grid of four is a
-genuine restriction of the algebra and not a redundancy of naming. Three further readings are
-added at the block level: that the associator of the fourth product reads as the **curvature** of the
+twelve products are **the four general products together with the two halves of each**, a magnitude half
+and an order half per job, of which only the two classical halves close. One point is added as a **remark
+and not a reading**: the twelve unused slot pairs are *not* transposes or conjugates of the four used
+ones, so the grid of four is a genuine restriction of the algebra and not a redundancy of naming. Three
+further readings are added at the block level: that the associator of the fourth product reads as the **curvature** of the
 pairing, its values the local holonomies of a multiplication that does not compose; that the metric, the
 absence of a unit and the failure of the Jordan triple identity are the first slot's work, while the
 non-associativity and the non-closure are shared with the sibling readings that conjugate a single slot;
@@ -913,8 +931,10 @@ read through ${}^{\natural}$ the form becomes indefinite on each sector, so a me
 $\varepsilon$ is cancelled in the bilinear row and supplied in the sesquilinear one. Associativity
 requires both slots trivial, and the square of an element is scalar for exactly one of the four, the
 quaternionic product, whose square is the interval $N(\tilde Q)e_0$. The two-and-two division by the
-second slot is therefore the corpus's division into two **algebras over $\mathbb{C}$** and two
-**sesqualgebras over $\mathbb{C}$**, and the two blocks of each pair are the two values of the first
+second slot is therefore the division of the four general products into two **general algebras over
+$\mathbb{C}$** and two **general sesqualgebras over $\mathbb{C}$** — the space itself carrying six algebras
+and six sesqualgebras, of which these four are the general members (*The 12 Algebraic Structures over the
+Biquaternion $\mathbb{C}$ Space*) — and the two blocks of each pair are the two values of the first
 slot. Reading the grid physically, the four general products are the four jobs a relativistic quantum theory
 needs — composition, causality, probability and gauge — with the plain product associative and
 two-sidedly unital, the quaternionic product carrying the interval, the sesquilinear product carrying
@@ -943,6 +963,7 @@ physics menu are these four objects, and this article is their map.
 | $\mathbb{M}_-$ | Material sector, the anti-Hermitian real four-space; the four forms read $(-,-,-,-)$, $(-,+,+,+)$, $(+,+,+,+)$, $(+,-,-,-)$ |
 | $\mathbb{M}_+$ | Informational sector, the Hermitian real four-space; the four forms read $(+,+,+,+)$, $(+,-,-,-)$, $(+,+,+,+)$, $(+,-,-,-)$ |
 | $N(\tilde Q)=\sum_\mu Q_\mu^{2}$ | The biquaternion norm; scalar only for the quaternionic product |
+| six algebras / six sesqualgebras | the twelve structures the space carries; the four general products are the two **general** algebras and the two **general** sesqualgebras among them |
 
 ## Further Reading
 

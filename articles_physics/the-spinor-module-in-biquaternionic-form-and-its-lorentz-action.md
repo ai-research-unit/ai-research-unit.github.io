@@ -35,26 +35,26 @@ $$
 We fix the realization that is used throughout the series. With $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ and $Q_\mu \in \mathbb{C}$,
 
 $$
-\Phi:\;\; \tilde{Q} \;\longmapsto\;
+\mathsf{M}_2:\;\; \tilde{Q} \;\longmapsto\;
 \begin{pmatrix}
 Q_0 - iQ_3 & -iQ_1 - Q_2\\[2pt]
 -iQ_1 + Q_2 & Q_0 + iQ_3
 \end{pmatrix},
 \qquad
-\Phi(e_0) = I_2,\quad \Phi(e_k) = -i\sigma_k,\quad \Phi(i) = i I_2,
+\mathsf{M}_2(e_0) = I_2,\quad \mathsf{M}_2(e_k) = -i\sigma_k,\quad \mathsf{M}_2(i) = i I_2,
 $$
 
-where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and, as in the companion article *Quantum Physics in Biquaternionic Form*, the $i$ on the right is the standard imaginary unit of $\mathbb{C}\subset M_2(\mathbb{C})$ (the image of the scalar imaginary of $\mathbb{B}$). Under this convention $i e_k$ corresponds to $\sigma_k$, and the quaternion relations $e_j e_k = \sum_l \epsilon_{jkl}e_l$ hold on both sides. Two properties of $\Phi$ are used repeatedly:
+where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and, as in the companion article *Quantum Physics in Biquaternionic Form*, the $i$ on the right is the standard imaginary unit of $\mathbb{C}\subset M_2(\mathbb{C})$ (the image of the scalar imaginary of $\mathbb{B}$). Under this convention $i e_k$ corresponds to $\sigma_k$, and the quaternion relations $e_j e_k = \sum_l \epsilon_{jkl}e_l$ hold on both sides. Two properties of $\mathsf{M}_2$ are used repeatedly:
 
 $$
-\Phi(\tilde{Q}\tilde{R}) = \Phi(\tilde{Q})\Phi(\tilde{R}), \qquad
-\det\Phi(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = N(\tilde{Q}),
+\mathsf{M}_2(\tilde{Q}\tilde{R}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{R}), \qquad
+\det\mathsf{M}_2(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = N(\tilde{Q}),
 $$
 
 so that the **biquaternion norm** of $\mathbb{B}$ is the determinant. The isomorphism also intertwines Hermitian conjugation with the conjugate transpose,
 
 $$
-\Phi(\tilde{Q}^{*}) = \Phi(\tilde{Q})^{\dagger},
+\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger},
 $$
 
 where the ${}^{*}$ on the right is the matrix conjugate transpose. In particular $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices and $\mathbb{M}_+$ to the Hermitian matrices.
@@ -67,7 +67,7 @@ $$
 S = \mathbb{C}^2 = \left\{\psi = \begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix} : \psi_1,\psi_2 \in \mathbb{C}\right\},
 $$
 
-on which $\mathbb{B}$ acts by matrix multiplication through $\Phi$. This is the **spinor module**. Its elements are the **spinors**. As a complex vector space $\dim_{\mathbb{C}} S = 2$; regarded as a real vector space by restriction of scalars it is four-dimensional, and Schur's lemma gives $\operatorname{End}_{\mathbb{B}}(S) = \mathbb{C}$, so $S$ is of complex type. A spinor is an element of the module $S$; it is not an element of the algebra $\mathbb{B}$. The distinction is worth keeping: the algebra acts, the module is acted upon.
+on which $\mathbb{B}$ acts by matrix multiplication through $\mathsf{M}_2$. This is the **spinor module**. Its elements are the **spinors**. As a complex vector space $\dim_{\mathbb{C}} S = 2$; regarded as a real vector space by restriction of scalars it is four-dimensional, and Schur's lemma gives $\operatorname{End}_{\mathbb{B}}(S) = \mathbb{C}$, so $S$ is of complex type. A spinor is an element of the module $S$; it is not an element of the algebra $\mathbb{B}$. The distinction is worth keeping: the algebra acts, the module is acted upon.
 
 Every finite-dimensional $\mathbb{B}$-module is a direct sum of copies of $S$. In particular, the left regular module is
 
@@ -82,7 +82,7 @@ of complex dimension four. The module $S$ is the carrier of the **defining repre
 Writing a spinor as a column vector, the action of a general biquaternion is
 
 $$
-\psi \;\longmapsto\; \Phi(\tilde{Q})\,\psi
+\psi \;\longmapsto\; \mathsf{M}_2(\tilde{Q})\,\psi
 =
 \begin{pmatrix}
 (Q_0 - iQ_3)\psi_1 + (-iQ_1 - Q_2)\psi_2\\[2pt]
@@ -90,7 +90,7 @@ $$
 \end{pmatrix}.
 $$
 
-The action is $\mathbb{C}$-linear in $\psi$ and compatible with the algebra product, $\Phi(\tilde{Q})(\Phi(\tilde{R})\psi) = \Phi(\tilde{Q}\tilde{R})\psi$; this compatibility is the module structure. The algebra is exactly the algebra of all $\mathbb{C}$-linear endomorphisms of $S$: $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$.
+The action is $\mathbb{C}$-linear in $\psi$ and compatible with the algebra product, $\mathsf{M}_2(\tilde{Q})(\mathsf{M}_2(\tilde{R})\psi) = \mathsf{M}_2(\tilde{Q}\tilde{R})\psi$; this compatibility is the module structure. The algebra is exactly the algebra of all $\mathbb{C}$-linear endomorphisms of $S$: $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$.
 
 ## The Spinor Module as a Left Ideal
 
@@ -126,7 +126,7 @@ E_{11} = p,\quad E_{12} = x,\quad E_{21} = y,\quad E_{22} = q,
 px = x = xq,\quad qy = y = yp,\quad xy = p,\quad yx = q.
 $$
 
-Under $\Phi$, $p$ and $q$ are the diagonal matrix units and $\mathbb{B}p$ is the space of matrices whose only nonzero column is the first. A convenient basis of the left ideal is
+Under $\mathsf{M}_2$, $p$ and $q$ are the diagonal matrix units and $\mathbb{B}p$ is the space of matrices whose only nonzero column is the first. A convenient basis of the left ideal is
 
 $$
 \{p,\; y\}, \qquad y = e_2 p = \frac{i e_1 + e_2}{2},
@@ -141,10 +141,10 @@ $$
 The coordinate map $\tilde{\psi}\leftrightarrow(\psi_1,\psi_2)^{T}$ is an isomorphism of $\mathbb{B}$-modules: for every $\tilde{Q}\in\mathbb{B}$,
 
 $$
-\tilde{Q}\tilde{\psi} = \psi_1(\tilde{Q}p) + \psi_2(\tilde{Q}y) \;\longleftrightarrow\; \Phi(\tilde{Q})\begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}.
+\tilde{Q}\tilde{\psi} = \psi_1(\tilde{Q}p) + \psi_2(\tilde{Q}y) \;\longleftrightarrow\; \mathsf{M}_2(\tilde{Q})\begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}.
 $$
 
-For example $e_3 p = -i p$ and $e_3 y = i y$, matching $\Phi(e_3) = \operatorname{diag}(-i,i)$; and $e_1 p = -i y$, matching the first column of $\Phi(e_1)=-i\sigma_1$. The two minimal left ideals $\mathbb{B}p$ and $\mathbb{B}q$ are both isomorphic to $S$; the algebra is simple, so all its simple modules are isomorphic.
+For example $e_3 p = -i p$ and $e_3 y = i y$, matching $\mathsf{M}_2(e_3) = \operatorname{diag}(-i,i)$; and $e_1 p = -i y$, matching the first column of $\mathsf{M}_2(e_1)=-i\sigma_1$. The two minimal left ideals $\mathbb{B}p$ and $\mathbb{B}q$ are both isomorphic to $S$; the algebra is simple, so all its simple modules are isomorphic.
 
 This ideal model is the precise sense in which "the spinor module lies inside $\mathbb{B}$": a spinor is an element of the algebra that lies in the minimal left ideal $\mathbb{B}p$, and the algebra acts on it by left multiplication. It is not an arbitrary biquaternion.
 
@@ -164,12 +164,12 @@ $$
 
 is the **right-handed Weyl spinor** module. These are the two **chiral halves**.
 
-Concretely, both modules are carried by $\mathbb{C}^2$, but with different actions. If $\tilde{\Lambda}\in SL(2,\mathbb{C})$ and $g = \Phi(\tilde{\Lambda})$, then
+Concretely, both modules are carried by $\mathbb{C}^2$, but with different actions. If $\tilde{\Lambda}\in SL(2,\mathbb{C})$ and $g = \mathsf{M}_2(\tilde{\Lambda})$, then
 
 $$
 \text{left-handed:}\quad \psi \;\longmapsto\; g\,\psi,
 \qquad\qquad
-\text{right-handed:}\quad \chi \;\longmapsto\; \Phi(\tilde{\Lambda}^{*})\,\chi,
+\text{right-handed:}\quad \chi \;\longmapsto\; \mathsf{M}_2(\tilde{\Lambda}^{*})\,\chi,
 $$
 
 where $\tilde{\Lambda}^{*}$ is the complex conjugate of the biquaternion (conjugation of its four coefficients). The second action is the conjugate of the first: since $\tilde{\Lambda}\mapsto\tilde{\Lambda}^{*}$ is an automorphism of $SL(2,\mathbb{C})$, the assignment is a genuine representation, and it is equivalent to the entrywise-conjugate action $g\mapsto\bar{g}$ (the two differ by conjugation with the invariant tensor $\epsilon$ introduced below). The chiral halves are exchanged by parity, and they are **not isomorphic** as complex representations of $SL(2,\mathbb{C})$.
@@ -192,7 +192,7 @@ $$
 \Delta = S \oplus \bar{S} = \left(\tfrac{1}{2},0\right)\oplus\left(0,\tfrac{1}{2}\right), \qquad \dim_{\mathbb{C}}\Delta = 4,
 $$
 
-on which $SL(2,\mathbb{C})$ acts block-diagonally by $g\oplus\Phi(\tilde{\Lambda}^{*})$. Its four complex components are the four components of the Dirac spinor, and its two blocks are the left- and right-handed Weyl spinors. A biquaternion, regarded as a $2\times2$ matrix, may be read as a pair of column spinors, which is the sense in which the algebra itself displays a pair of Weyl spinors; the two columns are two copies of $S$, and it is the pairing of $S$ with its conjugate that constitutes the Dirac module.
+on which $SL(2,\mathbb{C})$ acts block-diagonally by $g\oplus\mathsf{M}_2(\tilde{\Lambda}^{*})$. Its four complex components are the four components of the Dirac spinor, and its two blocks are the left- and right-handed Weyl spinors. A biquaternion, regarded as a $2\times2$ matrix, may be read as a pair of column spinors, which is the sense in which the algebra itself displays a pair of Weyl spinors; the two columns are two copies of $S$, and it is the pairing of $S$ with its conjugate that constitutes the Dirac module.
 
 ## The Unit-Norm Biquaternions and the Double Cover
 
@@ -202,7 +202,7 @@ $$
 SL(2,\mathbb{C}) \;=\; \{\tilde{\Lambda}\in\mathbb{B} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\},
 $$
 
-which under $\Phi$ is exactly $\{g\in GL_2(\mathbb{C}) : \det g = 1\}$, because the biquaternion norm is the determinant. It is a simply connected complex Lie group of complex dimension $3$ (real dimension $6$), with Lie algebra $\mathrm{SL}(2,\mathbb{C})$, the traceless $2\times2$ complex matrices.
+which under $\mathsf{M}_2$ is exactly $\{g\in GL_2(\mathbb{C}) : \det g = 1\}$, because the biquaternion norm is the determinant. It is a simply connected complex Lie group of complex dimension $3$ (real dimension $6$), with Lie algebra $\mathrm{SL}(2,\mathbb{C})$, the traceless $2\times2$ complex matrices.
 
 The subgroups relevant to the series sit inside it as follows:
 
@@ -238,7 +238,7 @@ and $SL(2,\mathbb{C})$ is the **double cover** of the restricted Lorentz group.
 The spinor action is by contrast **faithful**. On $S$, the element $-e_0$ acts as
 
 $$
-\Phi(-e_0) = -I_2,
+\mathsf{M}_2(-e_0) = -I_2,
 $$
 
 so $\pm\tilde{\Lambda}$ act differently on every spinor. The defining representation therefore does **not** descend to $SO^{+}(1,3)$: it is a genuine representation of the double cover. This is the exact sense in which the spinor action and the four-vector action differ by the double cover.
@@ -250,7 +250,7 @@ so $\pm\tilde{\Lambda}$ act differently on every spinor. The defining representa
 The Lorentz group acts on the spinor module by **left multiplication**:
 
 $$
-\psi \;\longmapsto\; \tilde{\Lambda}\,\psi \;=\; \Phi(\tilde{\Lambda})\,\psi,
+\psi \;\longmapsto\; \tilde{\Lambda}\,\psi \;=\; \mathsf{M}_2(\tilde{\Lambda})\,\psi,
 \qquad \tilde{\Lambda}\in SL(2,\mathbb{C}),\quad \psi\in S.
 $$
 
@@ -267,16 +267,16 @@ No conjugation appears. This is the defining feature of the spinor representatio
 For a boost along $\hat{\mathbf{u}}$ with rapidity $\psi$,
 
 $$
-\Phi(\tilde{\Lambda}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\hat{\mathbf{u}}\cdot\boldsymbol{\sigma},
+\mathsf{M}_2(\tilde{\Lambda}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\hat{\mathbf{u}}\cdot\boldsymbol{\sigma},
 $$
 
-as follows from $\Phi(i\hat{\mathbf{u}}) = \hat{\mathbf{u}}\cdot\boldsymbol{\sigma}$. For $\hat{\mathbf{u}} = \hat{\mathbf{e}}_3$ this is the diagonal matrix $\operatorname{diag}(e^{\psi/2},e^{-\psi/2})$, which stretches one spinor component and contracts the other. For a rotation about $\hat{\mathbf{n}}$ by angle $\theta$,
+as follows from $\mathsf{M}_2(i\hat{\mathbf{u}}) = \hat{\mathbf{u}}\cdot\boldsymbol{\sigma}$. For $\hat{\mathbf{u}} = \hat{\mathbf{e}}_3$ this is the diagonal matrix $\operatorname{diag}(e^{\psi/2},e^{-\psi/2})$, which stretches one spinor component and contracts the other. For a rotation about $\hat{\mathbf{n}}$ by angle $\theta$,
 
 $$
-\Phi(\tilde{R}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\hat{\mathbf{n}}\cdot\boldsymbol{\sigma},
+\mathsf{M}_2(\tilde{R}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\hat{\mathbf{n}}\cdot\boldsymbol{\sigma},
 $$
 
-the standard $SU(2)$ rotation matrix. A rotation by $2\pi$ sends $\Phi(\tilde{R})$ to $-I_2$: it is the identity in the four-vector representation but not on the spinor module. A rotation by $4\pi$ is the identity on both.
+the standard $SU(2)$ rotation matrix. A rotation by $2\pi$ sends $\mathsf{M}_2(\tilde{R})$ to $-I_2$: it is the identity in the four-vector representation but not on the spinor module. A rotation by $4\pi$ is the identity on both.
 
 ### The Infinitesimal Action
 
@@ -286,7 +286,7 @@ $$
 \mathrm{SL}(2,\mathbb{C}) = \operatorname{span}_{\mathbb{R}}\{\,e_1,e_2,e_3\,\} \;\oplus\; \operatorname{span}_{\mathbb{R}}\{\,ie_1,ie_2,ie_3\,\},
 $$
 
-the first summand being the rotations (the compact subalgebra $\mathrm{SU}(2)\cong\mathrm{SO}(3)$ and $\mathbb{H}_{\mathbb{B}}$) and the second the boosts (the non-compact part, in $\mathbb{M}_+$). Under $\Phi$,
+the first summand being the rotations (the compact subalgebra $\mathrm{SU}(2)\cong\mathrm{SO}(3)$ and $\mathbb{H}_{\mathbb{B}}$) and the second the boosts (the non-compact part, in $\mathbb{M}_+$). Under $\mathsf{M}_2$,
 
 $$
 e_k \longmapsto -i\sigma_k, \qquad i e_k \longmapsto \sigma_k,
@@ -336,7 +336,7 @@ It is invariant exactly when $g^{*}g = I_2$, i.e. on the compact subgroup $SU(2)
 
 ### The Mixed Pairing
 
-There is, however, an invariant pairing between the two chiral halves. Let $\psi\in S$ transform as $\psi\mapsto g\psi$ and let $\chi\in\bar{S}$ transform as $\chi\mapsto\Phi(\tilde{\Lambda}^{*})\chi$. Then the sesquilinear pairing
+There is, however, an invariant pairing between the two chiral halves. Let $\psi\in S$ transform as $\psi\mapsto g\psi$ and let $\chi\in\bar{S}$ transform as $\chi\mapsto\mathsf{M}_2(\tilde{\Lambda}^{*})\chi$. Then the sesquilinear pairing
 
 $$
 b(\psi,\chi) = \psi^{\dagger}\chi
@@ -345,9 +345,9 @@ $$
 is invariant. Indeed,
 
 $$
-b(g\psi,\, \Phi(\tilde{\Lambda}^{*})\chi)
-= \psi^{\dagger}\, \Phi(\tilde{\Lambda})^{\dagger}\,\Phi(\tilde{\Lambda}^{*})\,\chi
-= \psi^{\dagger}\,\Phi\!\left(\tilde{\Lambda}^{*}\tilde{\Lambda}^{*}\right)\chi
+b(g\psi,\, \mathsf{M}_2(\tilde{\Lambda}^{*})\chi)
+= \psi^{\dagger}\, \mathsf{M}_2(\tilde{\Lambda})^{\dagger}\,\mathsf{M}_2(\tilde{\Lambda}^{*})\,\chi
+= \psi^{\dagger}\,\mathsf{M}_2\!\left(\tilde{\Lambda}^{*}\tilde{\Lambda}^{*}\right)\chi
 = \psi^{\dagger}\chi,
 $$
 
@@ -399,7 +399,7 @@ The transformation laws are collected in the following table.
 
 The pairings above are invariant under the full $SL(2,\mathbb{C})$ or under its maximal compact subgroup. A third pairing, indefinite rather than definite, is invariant exactly under the rank-one subgroup $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ — the double cover of $SO(1,2)$ and the dynamical group of the oscillator's squeezings — and it is the one that models the hyperboloids of three-dimensional Minkowski space on the same module.
 
-**The indefinite pairing.** With the Pauli matrices of the matrix realisation $\Phi(e_k)=-i\sigma_k$ established above, put
+**The indefinite pairing.** With the Pauli matrices of the matrix realisation $\mathsf{M}_2(e_k)=-i\sigma_k$ established above, put
 $$
 [u|v]=u^{\dagger}\sigma_3v=\bar u_1v_1-\bar u_2v_2 .
 $$
@@ -524,8 +524,8 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix realization, $\Phi(e_k)=-i\sigma_k$ |
-| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \det\Phi(\tilde{Q})$ | Biquaternion norm |
+| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix realization, $\mathsf{M}_2(e_k)=-i\sigma_k$ |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \det\mathsf{M}_2(\tilde{Q})$ | Biquaternion norm |
 | $S = \mathbb{C}^2$ | Spinor module (unique simple module), $\dim_{\mathbb{C}}S=2$ |
 | $V_1 = (\tfrac12,0)$ | Left-handed Weyl (defining) representation |
 | $\bar{S} = \overline{V_1} = (0,\tfrac12)$ | Right-handed Weyl (conjugate) representation |

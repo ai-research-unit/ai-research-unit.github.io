@@ -196,7 +196,7 @@ The statement is the dimension-$6$ companion of the corollary above, and its pro
 **Remark (the index, read from the form).** When $\phi_B$ is isotropic, the index of $B$ is read from the type of isotropy, and the three cases exhaust the values the index can take:
 
 1. $B \cong M_4(F)$, of index $1$, exactly when $\phi_B$ is hyperbolic, that is $\phi_B \cong \langle 1, -1, 1, -1, 1, -1\rangle$;
-2. $B \cong M_2(D)$ for a quaternion division algebra $D$, of index $2$, exactly when $\phi_B$ is isotropic but not hyperbolic, equivalently $\phi_B \cong \langle 1, -1, e, f, g, h\rangle$ with the four-dimensional form $\langle e, f, g, h\rangle$ anisotropic;
+2. $B \cong \mathsf{M}_2(D)$ for a quaternion division algebra $D$, of index $2$, exactly when $\phi_B$ is isotropic but not hyperbolic, equivalently $\phi_B \cong \langle 1, -1, e, f, g, h\rangle$ with the four-dimensional form $\langle e, f, g, h\rangle$ anisotropic;
 3. $B$ is a division algebra, of index $4$, exactly when $\phi_B$ is anisotropic.
 
 **Remark (isomorphism).** Two biquaternion algebras over $F$ are isomorphic as $F$-algebras if and only if their Albert forms are **similar**, that is, isometric up to multiplication by a scalar from $F^\times$. This is the dimension-$6$ companion of the statement that two quaternion algebras are isomorphic exactly when their norm forms are isometric.

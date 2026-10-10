@@ -27,7 +27,7 @@ Four statements organize the article. The first three are the levels at which th
 
 **Boundaries.** This is a group-theoretic and geometric article. The spinor module, its one-sided action, and the representation theory of the group belong to the sibling category on relativistic quantum theory and to the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; they are not developed here. The topology of the cover, and the composition law of boosts in detail, belong to the companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*. The structure and the finite-dimensional representations of the group as such are treated in *The Lorentz Group in Biquaternionic Form — Structure and Representations*; this article's subject is the characterization of the group by the form.
 
-**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ (the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $\Phi(e_0) = I_2$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$. The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$.
+**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ (the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_0) = I_2$, $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$. The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$.
 
 ## The Biquaternion Norm as a Quadratic Form
 
@@ -98,19 +98,19 @@ of complex dimension six, with connected component $SO(4,\mathbb{C}) = O(4,\math
 
 ## The Determinant Realization and the Complex Group
 
-The matrix realization makes the form and its automorphisms concrete. With $\Phi$ as in the conventions,
+The matrix realization makes the form and its automorphisms concrete. With $\mathsf{M}_2$ as in the conventions,
 
 $$
-\Phi(\tilde{Q}) =
+\mathsf{M}_2(\tilde{Q}) =
 \begin{pmatrix}
 Q_0 - iQ_3 & -iQ_1 - Q_2\\
 -iQ_1 + Q_2 & Q_0 + iQ_3
 \end{pmatrix},
 \qquad
-\det\Phi(\tilde{Q}) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 = N(\tilde{Q}).
+\det\mathsf{M}_2(\tilde{Q}) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 = N(\tilde{Q}).
 $$
 
-The biquaternion norm **is the determinant**, and $\Phi$ is an isomorphism of $\mathbb{C}$-algebras. The verification of the determinant identity is a direct expansion; it was also checked numerically on random biquaternions, with $\det\Phi(\tilde{Q})$ and $N(\tilde{Q})$ agreeing to machine precision.
+The biquaternion norm **is the determinant**, and $\mathsf{M}_2$ is an isomorphism of $\mathbb{C}$-algebras. The verification of the determinant identity is a direct expansion; it was also checked numerically on random biquaternions, with $\det\mathsf{M}_2(\tilde{Q})$ and $N(\tilde{Q})$ agreeing to machine precision.
 
 The determinant is a quadratic form on the four-dimensional space $M_2(\mathbb{C})$, and its automorphism group is classical. Consider the map
 
@@ -311,7 +311,7 @@ $$
 
 preserving the complex quadratic form $\sigma = z_1^2+z_2^2+z_3^2 = -\det\tilde{V}$. This $\sigma$ is the source's "3D complex metric". Stronger invariants come from the trace: $\det\tilde{Q}$ is preserved by the inner action, so $z_0$ and $\sigma = z_0^2-\det\tilde{Q}$ are invariants of the algebra automorphisms, which is why the whole construction is built from $z_0$ and $\sigma$.
 
-The source's matrix realization differs from the $\Phi$ of the conventions above. It is the assignment
+The source's matrix realization differs from the $\mathsf{M}_2$ of the conventions above. It is the assignment
 
 $$
 \tilde{Q}\ \longmapsto\
@@ -564,7 +564,7 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
 | $B(\tilde{Q},\tilde{R}) = \sum_\mu Q_\mu R_\mu$ | Polar (symmetric bilinear) form, matrix $G=I_4$ |
 | $O(4,\mathbb{C}),\ SO(4,\mathbb{C})$ | Complex automorphism group of $N$; its identity component |
-| $\Phi:\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(e_k)=-i\sigma_k$, $N=\det\Phi$ | Matrix realization; biquaternion norm is the determinant |
+| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_k)=-i\sigma_k$, $N=\det\mathsf{M}_2$ | Matrix realization; biquaternion norm is the determinant |
 | $T_{\tilde{A},\tilde{B}}:\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ | General norm-preserving complex map |
 | $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$ | Complex group |
 | $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ | Algebra automorphism group; the diagonal of $SO(4,\mathbb{C})$; as a real group $SO^+(1,3)$ |

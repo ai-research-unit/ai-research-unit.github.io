@@ -155,7 +155,7 @@ $$
 \tilde\Pi_+(\hat e_3)=\tfrac12(e_0+ie_3)=\tilde\Pi_1 , \qquad \tilde\Pi_+(-\hat e_3)=\tfrac12(e_0-ie_3)=\tilde\Pi_2 ,
 $$
 
-and they are the images under $\Phi$ of the two diagonal matrix units of the matrix model: $\tilde\Pi_+(\hat e_3)$ corresponds to $E_{11}$ and $\tilde\Pi_+(-\hat e_3)$ to $E_{22}$, as the transport of *Biquaternion $2\times2$ Matrix Element Representation* records. Since the equalities are equalities in the algebra, they hold for the multiplication $\star$ as well, a Hermitian element having the same square in the two products.
+and they are the images under $\mathsf{M}_2$ of the two diagonal matrix units of the matrix model: $\tilde\Pi_+(\hat e_3)$ corresponds to $E_{11}$ and $\tilde\Pi_+(-\hat e_3)$ to $E_{22}$, as the transport of *Biquaternion $2\times2$ Matrix Element Representation* records. Since the equalities are equalities in the algebra, they hold for the multiplication $\star$ as well, a Hermitian element having the same square in the two products.
 
 ## The Contrast with the Algebra
 
@@ -225,17 +225,17 @@ by the multiplication of the basis, so the sum is $\tfrac14(4e_0+2\sqrt2\,ie_1+2
 
 ## The Matrix Model
 
-**Proposition.** Under the isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of *Biquaternion $2\times2$ Matrix Element Representation*, which satisfies $\Phi(\tilde Q^{*})=\Phi(\tilde Q)^{\dagger}$ and $\Phi(\tilde P\tilde Q^{*})=\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}$, the projections are the rank-one Hermitian idempotents of the matrix algebra,
+**Proposition.** Under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *Biquaternion $2\times2$ Matrix Element Representation*, which satisfies $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$ and $\mathsf{M}_2(\tilde P\tilde Q^{*})=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$, the projections are the rank-one Hermitian idempotents of the matrix algebra,
 
 $$
-\Phi\bigl(\tilde\Pi_+(\hat\mu)\bigr)=\tfrac12\bigl(I+i\Phi(\hat\mu)\bigr) ,
+\mathsf{M}_2\bigl(\tilde\Pi_+(\hat\mu)\bigr)=\tfrac12\bigl(I+i\mathsf{M}_2(\hat\mu)\bigr) ,
 $$
 
 and the family is the set of the rank-one Hermitian idempotents of $M_2(\mathbb{C})$.
 
-**Proof.** The image of a Hermitian idempotent is Hermitian, $\Phi(\tilde\Pi)^{\dagger}=\Phi(\tilde\Pi^{*})=\Phi(\tilde\Pi)$, and idempotent, $\Phi(\tilde\Pi)^{2}=\Phi(\tilde\Pi^{2})=\Phi(\tilde\Pi)$. The image of $\tilde\Pi_+(\hat\mu)$ is computed from $\Phi(\tilde Q)=\sum_\mu Q_\mu\Phi(e_\mu)$ on the coordinates of §*The Projections*, and $\Phi(i\hat\mu)=i\Phi(\hat\mu)$ because $\Phi$ is $\mathbb{C}$-linear. The matrices $i\Phi(e_1),i\Phi(e_2),i\Phi(e_3)$ are Hermitian, traceless and $i\Phi(e_k)^{2}=I$, and they form a real basis of the traceless Hermitian matrices; hence $i\Phi(\hat\mu)=\sum_k\hat\mu_k\,i\Phi(e_k)$ is traceless Hermitian with square $(\hat\mu,\hat\mu)I$, and for $(\hat\mu,\hat\mu)=1$ the element $\tfrac12(I+i\Phi(\hat\mu))$ is a Hermitian idempotent of rank one because its trace is one. Conversely every rank-one Hermitian idempotent of $M_2(\mathbb{C})$ is $\tfrac12(I+H)$ with $H$ traceless Hermitian and $H^{2}=I$, and every such $H$ is $i\Phi(\hat\mu)$ for a real vector $\hat\mu$ with $(\hat\mu,\hat\mu)=1$. $\square$
+**Proof.** The image of a Hermitian idempotent is Hermitian, $\mathsf{M}_2(\tilde\Pi)^{\dagger}=\mathsf{M}_2(\tilde\Pi^{*})=\mathsf{M}_2(\tilde\Pi)$, and idempotent, $\mathsf{M}_2(\tilde\Pi)^{2}=\mathsf{M}_2(\tilde\Pi^{2})=\mathsf{M}_2(\tilde\Pi)$. The image of $\tilde\Pi_+(\hat\mu)$ is computed from $\mathsf{M}_2(\tilde Q)=\sum_\mu Q_\mu\mathsf{M}_2(e_\mu)$ on the coordinates of §*The Projections*, and $\mathsf{M}_2(i\hat\mu)=i\mathsf{M}_2(\hat\mu)$ because $\mathsf{M}_2$ is $\mathbb{C}$-linear. The matrices $i\mathsf{M}_2(e_1),i\mathsf{M}_2(e_2),i\mathsf{M}_2(e_3)$ are Hermitian, traceless and $i\mathsf{M}_2(e_k)^{2}=I$, and they form a real basis of the traceless Hermitian matrices; hence $i\mathsf{M}_2(\hat\mu)=\sum_k\hat\mu_k\,i\mathsf{M}_2(e_k)$ is traceless Hermitian with square $(\hat\mu,\hat\mu)I$, and for $(\hat\mu,\hat\mu)=1$ the element $\tfrac12(I+i\mathsf{M}_2(\hat\mu))$ is a Hermitian idempotent of rank one because its trace is one. Conversely every rank-one Hermitian idempotent of $M_2(\mathbb{C})$ is $\tfrac12(I+H)$ with $H$ traceless Hermitian and $H^{2}=I$, and every such $H$ is $i\mathsf{M}_2(\hat\mu)$ for a real vector $\hat\mu$ with $(\hat\mu,\hat\mu)=1$. $\square$
 
-**Remark.** The matrix image is the standard rank-one projection of a two-dimensional space, and the parametrisation by the real vectors $\hat\mu$ with $(\hat\mu,\hat\mu)=1$ is the parametrisation of those projections by the traceless Hermitian involutions. The standard pair is $\Phi(\tilde\Pi_1)=E_{11}$ and $\Phi(\tilde\Pi_2)=E_{22}$.
+**Remark.** The matrix image is the standard rank-one projection of a two-dimensional space, and the parametrisation by the real vectors $\hat\mu$ with $(\hat\mu,\hat\mu)=1$ is the parametrisation of those projections by the traceless Hermitian involutions. The standard pair is $\mathsf{M}_2(\tilde\Pi_1)=E_{11}$ and $\mathsf{M}_2(\tilde\Pi_2)=E_{22}$.
 
 ## Summary
 
@@ -264,8 +264,8 @@ a family parametrised by the real unit vectors, whose scalar part is the sum of 
 | $\mathbb{M}_+,\mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
 | $\tilde\Pi(\xi)=\tfrac12(e_0+\xi i)$, $\xi^{2}=-e_0$ | the idempotents of the algebra |
 | $0,\ e_0$ | the trivial idempotents, common to the two products |
-| $\Phi$ | the isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(\tilde Q^{*})=\Phi(\tilde Q)^{\dagger}$ |
-| $E_{11},E_{22}$ | the diagonal matrix units, $\Phi(\tilde\Pi_1),\Phi(\tilde\Pi_2)$ |
+| $\mathsf{M}_2$ | the isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$ |
+| $E_{11},E_{22}$ | the diagonal matrix units, $\mathsf{M}_2(\tilde\Pi_1),\mathsf{M}_2(\tilde\Pi_2)$ |
 
 ## Further Reading
 

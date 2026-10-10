@@ -203,19 +203,19 @@ $$
 [x, y] = xy - yx.
 $$
 
-The submodule $M_2$ of bivectors is closed under the commutator:
+The submodule $\mathsf{M}_2$ of bivectors is closed under the commutator:
 
 $$
-[M_2, M_2] \subseteq M_2.
+[\mathsf{M}_2, \mathsf{M}_2] \subseteq \mathsf{M}_2.
 $$
 
-So $M_2$, equipped with the commutator bracket, is a Lie subalgebra of $Cl(M, Q)$. In the non-degenerate case, $M_2$ is isomorphic to the orthogonal Lie algebra $\mathrm{SO}(M, Q)$:
+So $\mathsf{M}_2$, equipped with the commutator bracket, is a Lie subalgebra of $Cl(M, Q)$. In the non-degenerate case, $\mathsf{M}_2$ is isomorphic to the orthogonal Lie algebra $\mathrm{SO}(M, Q)$:
 
 $$
-M_2 \cong \mathrm{SO}(M, Q).
+\mathsf{M}_2 \cong \mathrm{SO}(M, Q).
 $$
 
-**The degenerate case.** If $Q$ is degenerate, the bivectors involving radical elements are nilpotent, and the Lie algebra $\mathrm{SO}(M, Q)$ is replaced by a more complicated object. The spin group does not exist in the usual sense, because the radical elements do not have inverses. The bivectors involving radical elements generate a nilpotent ideal in $M_2$, and the quotient of $M_2$ by this ideal is the Lie algebra of the non-degenerate part.
+**The degenerate case.** If $Q$ is degenerate, the bivectors involving radical elements are nilpotent, and the Lie algebra $\mathrm{SO}(M, Q)$ is replaced by a more complicated object. The spin group does not exist in the usual sense, because the radical elements do not have inverses. The bivectors involving radical elements generate a nilpotent ideal in $\mathsf{M}_2$, and the quotient of $\mathsf{M}_2$ by this ideal is the Lie algebra of the non-degenerate part.
 
 ---
 
@@ -409,10 +409,10 @@ These signs depend only on $k$ modulo 4, not on the ring.
 The Clifford algebra of a direct sum of two modules with quadratic forms is the graded tensor product of the Clifford algebras of the summands:
 
 $$
-Cl(M_1 \oplus M_2, Q_1 \oplus Q_2) \cong Cl(M_1, Q_1) \hat{\otimes} Cl(M_2, Q_2).
+Cl(M_1 \oplus \mathsf{M}_2, Q_1 \oplus Q_2) \cong Cl(M_1, Q_1) \hat{\otimes} Cl(\mathsf{M}_2, Q_2).
 $$
 
-In the graded tensor product, odd elements from the two factors anticommute, rather than commute. This ensures that the images of $v_1 \in M_1$ and $v_2 \in M_2$ anticommute, as required by the Clifford relations.
+In the graded tensor product, odd elements from the two factors anticommute, rather than commute. This ensures that the images of $v_1 \in M_1$ and $v_2 \in \mathsf{M}_2$ anticommute, as required by the Clifford relations.
 
 ## 25. Why This Matters
 
@@ -443,11 +443,11 @@ This is the form in which the classification is usually stated. The scalars $a_i
 The graded tensor product has a subtlety: the parity of an element in the tensor product is the sum of the parities of its factors. This is compatible with the $\mathbb{Z}/2$-grading of the Clifford algebra:
 
 $$
-Cl^0(M_1 \oplus M_2) \cong Cl^0(M_1) \otimes Cl^0(M_2) \oplus Cl^1(M_1) \otimes Cl^1(M_2),
+Cl^0(M_1 \oplus \mathsf{M}_2) \cong Cl^0(M_1) \otimes Cl^0(\mathsf{M}_2) \oplus Cl^1(M_1) \otimes Cl^1(\mathsf{M}_2),
 $$
 
 $$
-Cl^1(M_1 \oplus M_2) \cong Cl^0(M_1) \otimes Cl^1(M_2) \oplus Cl^1(M_1) \otimes Cl^0(M_2).
+Cl^1(M_1 \oplus \mathsf{M}_2) \cong Cl^0(M_1) \otimes Cl^1(\mathsf{M}_2) \oplus Cl^1(M_1) \otimes Cl^0(\mathsf{M}_2).
 $$
 
 So the even part of the tensor product is not the tensor product of the even parts: it also includes the tensor product of the odd parts. This is a consequence of the graded structure, and it is the reason the classification of Clifford algebras is periodic rather than simply multiplicative.

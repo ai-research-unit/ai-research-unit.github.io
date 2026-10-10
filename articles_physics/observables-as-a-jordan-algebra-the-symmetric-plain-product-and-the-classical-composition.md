@@ -196,8 +196,7 @@ reading.
 The identity of the two forms on the observables is the reason the block is compatible with the
 probability structure of the frame: the classical composition and the Born pairing share their form on
 the observables. That coincidence is a statement about $\mathbb{M}_+$ alone; on $\mathbb{M}_-$ the two
-differ by sign, and the comparison is *The Four General Products and Their Physical Readings: the Two Algebras and
-the Two Sesqualgebras*.
+differ by sign, and the comparison is *The Four General Products and Their Physical Readings*.
 
 ## The Classical Composition
 

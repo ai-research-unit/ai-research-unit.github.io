@@ -141,7 +141,7 @@ $$
 
 *Proof.* $\bigl(a[\,]b\bigr)\bigl((c[\,]d)(\tilde R)\bigr)=a\,c\,\tilde R\,d\,b=(ac)\tilde R(db)$. Verified on random operators to $10^{-13}$. In the unit basis the rule expands as $e_n[\,]e_m\circ e_p[\,]e_q=(e_ne_p)[\,](e_qe_m)$, whose right-hand side is a linear combination of basis operators through the multiplication table of the imaginary units.
 
-**Remark (the regular operators).** The operator $e_n[\,]e_m$ is the composite $\operatorname{mat}_4(e_n)\operatorname{mat}_4^{R}(e_m)$ of a left and a right regular action, and the sixteen of them are the Conway basis of the operator space; their coordinates in the regular basis are computed in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*.
+**Remark (the regular operators).** The operator $e_n[\,]e_m$ is the composite $\mathsf{M}_4(e_n)\mathsf{M}_4^{R}(e_m)$ of a left and a right regular action, and the sixteen of them are the Conway basis of the operator space; their coordinates in the regular basis are computed in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*.
 
 ### The Three Classical Functions
 

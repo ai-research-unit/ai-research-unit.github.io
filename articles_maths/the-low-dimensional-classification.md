@@ -153,10 +153,10 @@ $$
 \sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}
 $$
 
-satisfy $\sigma_k^2=I$ and $\sigma_j\sigma_k=-\sigma_k\sigma_j$ for $j\neq k$. By the universal property the assignment $e_k\mapsto\sigma_k$ extends to a homomorphism of $F$-algebras $\mathrm{Cl}_{3,0}\to M_2(F(\sqrt{-1}))$, over a field $F$ of characteristic not $2$ in which $-1$ is not a square, so that $F(\sqrt{-1})$ is two-dimensional over $F$; it is surjective, because the images together with the identity span the four-dimensional algebra $M_2(F(\sqrt{-1}))$ over $F(\sqrt{-1})$, and both sides have dimension $8$ over $F$. Therefore
+satisfy $\sigma_k^2=I$ and $\sigma_j\sigma_k=-\sigma_k\sigma_j$ for $j\neq k$. By the universal property the assignment $e_k\mapsto\sigma_k$ extends to a homomorphism of $F$-algebras $\mathrm{Cl}_{3,0}\to \mathsf{M}_2(F(\sqrt{-1}))$, over a field $F$ of characteristic not $2$ in which $-1$ is not a square, so that $F(\sqrt{-1})$ is two-dimensional over $F$; it is surjective, because the images together with the identity span the four-dimensional algebra $\mathsf{M}_2(F(\sqrt{-1}))$ over $F(\sqrt{-1})$, and both sides have dimension $8$ over $F$. Therefore
 
 $$
-\mathrm{Cl}_{3,0}\cong M_2(F(\sqrt{-1}))=\mathbb{C}\mathrm{l}_2,
+\mathrm{Cl}_{3,0}\cong \mathsf{M}_2(F(\sqrt{-1}))=\mathbb{C}\mathrm{l}_2,
 $$
 
 the last identification being the standard isomorphism of the complex Clifford algebra $\mathbb{C}\mathrm{l}_2$ with the complex $2\times2$ matrices, understood over $F=\mathbb{R}$, where the hypothesis on $-1$ holds. When $-1$ is a square in $F$ the volume element can be rescaled to square $+1$, the centre becomes $F\times F$, and the algebra splits; the split entries of the table below then apply.
@@ -187,7 +187,7 @@ $$
 \mathrm{Cl}_{1,2}\cong\mathrm{Cl}_{0,2}\,\hat{\otimes}\,\mathrm{Cl}_{1,0}\cong\mathbb{H}\,\hat{\otimes}\,\mathbb{D}, \qquad \mathrm{Cl}_{2,1}\cong\mathrm{Cl}_{1,1}\,\hat{\otimes}\,\mathrm{Cl}_{1,0}.
 $$
 
-The graded tensor product is not the ordinary tensor product of the underlying algebras: the Koszul sign makes $\mathbb{H}\,\hat{\otimes}\,\mathbb{D}$ simple, isomorphic to $M_2(\mathbb{C})$, whereas $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{H}\times\mathbb{H}$ has two factors. Computing the algebra directly, $\mathrm{Cl}_{1,2}\cong\mathrm{Cl}_{3,0}\cong M_2(F(\sqrt{-1}))$ by the identity $\mathrm{Cl}_{p+1,q}\cong\mathrm{Cl}_{q+1,p}$, its volume element having $\omega^2=(-1)^3(+1)(-1)(-1)=-1$ and hence centre $F(\sqrt{-1})$. For $\mathrm{Cl}_{2,1}$ one has $\omega^2=(-1)^3(+1)(+1)(-1)=+1$, so the centre is $F\times F$ and the algebra is split: $\mathrm{Cl}_{2,1}\cong M_2(F)\times M_2(F)$, in agreement with the graded tensor product $\mathrm{Cl}_{1,1}\hat\otimes\mathrm{Cl}_{1,0}\cong M_2(F)\hat\otimes(F\times F)$. The table below summarises the cases of dimension at most three.
+The graded tensor product is not the ordinary tensor product of the underlying algebras: the Koszul sign makes $\mathbb{H}\,\hat{\otimes}\,\mathbb{D}$ simple, isomorphic to $M_2(\mathbb{C})$, whereas $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{H}\times\mathbb{H}$ has two factors. Computing the algebra directly, $\mathrm{Cl}_{1,2}\cong\mathrm{Cl}_{3,0}\cong \mathsf{M}_2(F(\sqrt{-1}))$ by the identity $\mathrm{Cl}_{p+1,q}\cong\mathrm{Cl}_{q+1,p}$, its volume element having $\omega^2=(-1)^3(+1)(-1)(-1)=-1$ and hence centre $F(\sqrt{-1})$. For $\mathrm{Cl}_{2,1}$ one has $\omega^2=(-1)^3(+1)(+1)(-1)=+1$, so the centre is $F\times F$ and the algebra is split: $\mathrm{Cl}_{2,1}\cong M_2(F)\times M_2(F)$, in agreement with the graded tensor product $\mathrm{Cl}_{1,1}\hat\otimes\mathrm{Cl}_{1,0}\cong M_2(F)\hat\otimes(F\times F)$. The table below summarises the cases of dimension at most three.
 
 **Remark.** The passage from $\mathrm{Cl}_{1,1}\cong M_2(F)$ to $\mathrm{Cl}_{1,2}\cong M_2(\mathbb{C})$ and from $\mathrm{Cl}_{2,0}\cong M_2(F)$ to $\mathrm{Cl}_{2,1}\cong M_2(F)\times M_2(F)$ shows that adjoining a generator of square $+1$ to a common real matrix algebra splits it into two factors, while adjoining a generator of square $-1$ complexifies it. This is the local form of the periodicity.
 
@@ -275,9 +275,9 @@ The following table collects the cases of dimension at most three over a field $
 | $\mathrm{Cl}_{2,0}$ | $M_2(F)$ | $4$ | yes | $F$ |
 | $\mathrm{Cl}_{1,1}$ | $M_2(F)$ | $4$ | yes | $F$ |
 | $\mathrm{Cl}_{0,2}$ | $\mathbb{H}$ | $4$ | yes | $F$ |
-| $\mathrm{Cl}_{3,0}$ | $M_2(F(\sqrt{-1}))$ | $8$ | yes | $F(\sqrt{-1})$ |
+| $\mathrm{Cl}_{3,0}$ | $\mathsf{M}_2(F(\sqrt{-1}))$ | $8$ | yes | $F(\sqrt{-1})$ |
 | $\mathrm{Cl}_{2,1}$ | $M_2(F)\times M_2(F)$ | $8$ | no | $F\times F$ |
-| $\mathrm{Cl}_{1,2}$ | $M_2(F(\sqrt{-1}))$ | $8$ | yes | $F(\sqrt{-1})$ |
+| $\mathrm{Cl}_{1,2}$ | $\mathsf{M}_2(F(\sqrt{-1}))$ | $8$ | yes | $F(\sqrt{-1})$ |
 | $\mathrm{Cl}_{0,3}$ | $\mathbb{H}\times\mathbb{H}$ | $8$ | no | $F\times F$ |
 
 The table is stated for a field of characteristic not $2$ in which $-1$ is not a square and in which the quaternion algebra $(-1,-1)_F$ is a division algebra; this is the case $F=\mathbb{R}$. Over a general field of characteristic not $2$ the entries $F(\sqrt{-1})$, $\mathbb{H}$ and $\mathbb{H}\times\mathbb{H}$ are replaced by the corresponding split forms, each under its own hypothesis: $F(\sqrt{-1})\cong F\times F$ when $-1$ is a square in $F$, and the quaternion algebra $(-1,-1)_F\cong M_2(F)$ when it splits, as it does over every finite field of odd characteristic. The two hypotheses are independent: over a finite field the quaternion algebra always splits, whether or not $-1$ is a square there. The mixed entries are governed by the volume element, whose square is the discriminant of the centre: the centre of $\mathrm{Cl}_{3,0}$ and of $\mathrm{Cl}_{1,2}$ is $F(\sqrt{-1})$, so these become $M_2(F)\times M_2(F)$ exactly when $-1$ is a square in $F$, while $\mathrm{Cl}_{0,3}$ is the product $(-1,-1)_F\times(-1,-1)_F$, with centre $F\times F$ in every case, and becomes $M_2(F)\times M_2(F)$ exactly when the quaternion algebra splits. The resulting tables over such a field are read from the general classification.
@@ -286,7 +286,7 @@ Echoing the one-dimensional case, one has $\mathrm{Cl}_{1,0}\cong\mathbb{D}$ and
 
 ## Summary
 
-The Clifford algebras of small non-degenerate quadratic forms are computed directly. In one dimension the sign of the form decides everything: $\mathrm{Cl}_{1,0}\cong F\times F=\mathbb{D}$ and $\mathrm{Cl}_{0,1}\cong F(\sqrt{-1})$. In two dimensions the negative definite form gives the quaternion algebra $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, while $\mathrm{Cl}_{2,0}\cong\mathrm{Cl}_{1,1}\cong M_2(F)$ are split and isomorphic to one another. In three dimensions $\mathrm{Cl}_{3,0}\cong M_2(F(\sqrt{-1}))$ is the complex $2\times2$ matrix algebra, identified with the biquaternion algebra $\mathbb{B}$ through the generators $\gamma_k\mapsto ie_k$; $\mathrm{Cl}_{1,2}$ is the same matrix algebra; and the two algebras with a central volume element of square $+1$, namely $\mathrm{Cl}_{0,3}\cong\mathbb{H}\times\mathbb{H}$ and $\mathrm{Cl}_{2,1}\cong M_2(F)\times M_2(F)$, split into two factors.
+The Clifford algebras of small non-degenerate quadratic forms are computed directly. In one dimension the sign of the form decides everything: $\mathrm{Cl}_{1,0}\cong F\times F=\mathbb{D}$ and $\mathrm{Cl}_{0,1}\cong F(\sqrt{-1})$. In two dimensions the negative definite form gives the quaternion algebra $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, while $\mathrm{Cl}_{2,0}\cong\mathrm{Cl}_{1,1}\cong M_2(F)$ are split and isomorphic to one another. In three dimensions $\mathrm{Cl}_{3,0}\cong \mathsf{M}_2(F(\sqrt{-1}))$ is the complex $2\times2$ matrix algebra, identified with the biquaternion algebra $\mathbb{B}$ through the generators $\gamma_k\mapsto ie_k$; $\mathrm{Cl}_{1,2}$ is the same matrix algebra; and the two algebras with a central volume element of square $+1$, namely $\mathrm{Cl}_{0,3}\cong\mathbb{H}\times\mathbb{H}$ and $\mathrm{Cl}_{2,1}\cong M_2(F)\times M_2(F)$, split into two factors.
 
 The even subalgebra of $\mathrm{Cl}(V,q)$ is again a Clifford algebra, with rank reduced by one, whenever a generator of square $-1$ is available; this recursion is the computational origin of the classification and is the reason the pattern is periodic rather than merely multiplicative.
 

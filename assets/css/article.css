@@ -86,24 +86,25 @@
    The menus use more levels than an article does, and each level has one job.
    Prominence decreases with depth, so the top band is always the most visible:
      h2               chapter        ## Biquaternions      dark, 2px rule
-     h3 + a link      article entry  ### <a …>Title</a>     blue link
      h3 (no link)     category band  ### Theory            filled band
      h4               topic band     #### The Forms        bar, 3px
      h5               sub-topic tag  ##### Form            bar, 2px
-   A label and an entry are both `###`, and they are told apart structurally:
-   an entry wraps its title in a link, a label has no link — 1643/1643 against
-   221/221, no exception. So the category band is selected by `:not(:has(a))`,
-   and the menu needs no `-`, `--` or `---` in the source: the hashes alone
-   carry the level.
-   Every band rule is scoped to a menu page by `:has(> h3 > a)`. That test is
-   exact: no article in the corpus has a link inside an `h3`, so an article
-   page never matches and its own headings keep their plain style.
+     p > a (only)     article entry  <a …>Title</a>        blue link
+   A heading is a label and nothing else: every `##`, `###`, `####` and `#####`
+   of a menu is a title. An article entry is not a heading, it is a paragraph
+   whose only element child is the link, so the level is carried by the markup
+   itself and the menu needs no `-`, `--` or `---` in the source either.
+   Every band rule is scoped to a menu page by `:has(> h4)`. That test is exact:
+   the menus are the only pages that use the topic-band level — no article and no
+   other root page contains an `h4` — so an article page never matches and its own
+   headings keep their plain style. The invariant to preserve is that the menus
+   are the only pages carrying an `h4`.
    The bands carry no `text-transform`: the level is told by size, by the
    accent bar and by the fill, so case in the source is shown as written. */
 /* Level 3 — the category band. The strongest label signal in the menu: a
    filled band with a thick accent bar, larger and darker than anything under
    it, so it always outranks the topic and sub-topic bands it contains. */
-.article-body:has(> h3 > a) > h3:not(:has(a)) {
+.article-body:has(> h4) > h3:not(:has(a)) {
   font-family: var(--font-ui);
   font-size: 1.5rem;
   font-weight: 700;
@@ -117,7 +118,7 @@
 /* Level 4 — the topic band. Same size as the article titles (--size-h3), so it
    is never smaller than the entries it holds; it sits one notch down by the
    thinner bar and the missing fill. */
-.article-body:has(> h3 > a) > h4 {
+.article-body:has(> h4) > h4 {
   font-family: var(--font-ui);
   font-size: var(--size-h3);
   font-weight: 700;
@@ -129,7 +130,7 @@
 }
 /* Level 5 — the sub-topic tag. Same size as the article titles, told apart by
    the thinnest bar and the grey tone. Bar thickness separates the three bands. */
-.article-body:has(> h3 > a) > h5 {
+.article-body:has(> h4) > h5 {
   font-family: var(--font-ui);
   font-size: var(--size-h3);
   font-weight: 700;
@@ -138,6 +139,17 @@
   border-left: 2px solid var(--color-accent);
   margin-top: 1.2rem;
   margin-bottom: 0.3rem;
+}
+/* The article entry. A paragraph whose only element child is the link, so a
+   prose paragraph that happens to contain a link is not caught. Size and weight
+   are the old entry level (`--size-h3`, weight 600): the entry reads as before,
+   it is only no longer a heading. */
+.article-body:has(> h4) > p:has(> a:only-child) {
+  font-family: var(--font-ui);
+  font-size: var(--size-h3);
+  font-weight: 600;
+  margin-top: 0.15rem;
+  margin-bottom: 0.35rem;
 }
 .article-body h1 strong,
 .article-body h2 strong,

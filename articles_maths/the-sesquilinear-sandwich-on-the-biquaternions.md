@@ -148,7 +148,7 @@ $$
 
 In the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ of *Biquaternion $2\times2$ Matrix Element Representation*, the rank of an element is $0$, $1$ or $2$, and the possible ranks of a sandwich are $0$, $1$, $2$ and $4$.
 
-**Proof.** Each parameter has rank $0$, $1$ or $2$ in the two-by-two model. The ordinary two-sided multiplication by a matrix of rank $r$ on the left and a matrix of rank $s$ on the right has image of dimension $rs$, the standard rank identity $\dim(A M_2 B)=(\operatorname{rank}A)(\operatorname{rank}B)$; the sandwich has the same image by the proposition above, and the conjugation is a bijection. $\square$
+**Proof.** Each parameter has rank $0$, $1$ or $2$ in the two-by-two model. The ordinary two-sided multiplication by a matrix of rank $r$ on the left and a matrix of rank $s$ on the right has image of dimension $rs$, the standard rank identity $\dim(A \mathsf{M}_2 B)=(\operatorname{rank}A)(\operatorname{rank}B)$; the sandwich has the same image by the proposition above, and the conjugation is a bijection. $\square$
 
 **Corollary (the rank table).** With rank $2$ read as *a unit* and rank $1$ as *a zero divisor*,
 

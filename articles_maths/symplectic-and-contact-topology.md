@@ -89,7 +89,7 @@ which has $n+1$ facets; the projective space is the quotient of $\mathbb{C}^{n+1
 
 In dimension four the gauge-theoretic invariants enter, and the constraints they impose make the symplectic topology of four-manifolds a genuinely rigid subject.
 
-**Theorem (Taubes; constraints on symplectic four-manifolds).** Let $M$ be a closed symplectic four-manifold. Then $b_2^+(M)\geq1$, and the Seiberg–Witten invariants of $M$ are nontrivial: the class of the canonical bundle of a compatible almost complex structure is a basic class, with Seiberg–Witten invariant $\pm1$ in the chamber determined by the symplectic form; when $b_2^+(M)>1$ there is no chamber dependence and $M$ is minimal in the sense of the classification of complex surfaces under the natural extension of the Kodaira classification. In particular $M$ does not split as a connected sum $M_1\# M_2$ with both $b_2^+\geq1$.
+**Theorem (Taubes; constraints on symplectic four-manifolds).** Let $M$ be a closed symplectic four-manifold. Then $b_2^+(M)\geq1$, and the Seiberg–Witten invariants of $M$ are nontrivial: the class of the canonical bundle of a compatible almost complex structure is a basic class, with Seiberg–Witten invariant $\pm1$ in the chamber determined by the symplectic form; when $b_2^+(M)>1$ there is no chamber dependence and $M$ is minimal in the sense of the classification of complex surfaces under the natural extension of the Kodaira classification. In particular $M$ does not split as a connected sum $M_1\# \mathsf{M}_2$ with both $b_2^+\geq1$.
 
 **Proof sketch.** The Seiberg–Witten equations of Part III depend on a metric and a perturbing form; Taubes takes the perturbation to be a large multiple of the symplectic form $\omega$, and the limiting behaviour of the solutions is governed by the pseudoholomorphic curves of the compatible almost complex structure. The invariants are computed in terms of the symplectic form, and their nonvanishing gives the stated constraint. The analysis is that of the Seiberg–Witten moduli space.
 
@@ -97,7 +97,7 @@ In dimension four the gauge-theoretic invariants enter, and the constraints they
 
 **Proof sketch.** The construction is a symplectic generalisation of the standard handlebody realisation of a presentation: symplectic $1$-handles and $2$-handles are glued to a symplectic base along Legendrian and contact boundary pieces, and the effect of each handle on the fundamental group is exactly that of the topological handle. The resulting manifold is symplectic by a gluing theorem for symplectic structures across contact-type boundaries.
 
-**Theorem (Gompf; symplectic sums).** Let $M_1, M_2$ be closed symplectic four-manifolds containing symplectic surfaces $\Sigma_1, \Sigma_2$ of the same genus and opposite self-intersection number; then the symplectic sum $M_1\#_\Sigma M_2$ is symplectic. The construction produces symplectic manifolds with prescribed fundamental group, Euler characteristic and signature, and it is the source of most known non-Kähler symplectic four-manifolds.
+**Theorem (Gompf; symplectic sums).** Let $M_1, \mathsf{M}_2$ be closed symplectic four-manifolds containing symplectic surfaces $\Sigma_1, \Sigma_2$ of the same genus and opposite self-intersection number; then the symplectic sum $M_1\#_\Sigma \mathsf{M}_2$ is symplectic. The construction produces symplectic manifolds with prescribed fundamental group, Euler characteristic and signature, and it is the source of most known non-Kähler symplectic four-manifolds.
 
 **Proof sketch.** Remove tubular neighbourhoods of the surfaces and glue the resulting boundary three-manifolds, which are circle bundles over the surfaces with contact structures by Boothby–Wang; the gluing is carried out so that the symplectic forms agree along the boundary by the symplectic neighbourhood theorem.
 
@@ -160,7 +160,7 @@ In the presence of a torus action the symplectic structure reduces to a Delzant 
 | $T^n$, $\mu$, $\Delta=\mu(M)$ | Torus action, moment map and moment polytope of a symplectic toric manifold |
 | Delzant polytope | Simple rational polytope with primitive facet normals forming a lattice basis at each vertex |
 | $b_2^\pm$ | Dimensions of the positive and negative eigenspaces of the intersection form on $H^2$ of a four-manifold |
-| Symplectic sum | $M_1\#_\Sigma M_2$ along symplectic surfaces of opposite self-intersection |
+| Symplectic sum | $M_1\#_\Sigma \mathsf{M}_2$ along symplectic surfaces of opposite self-intersection |
 | Symplectic filling | $(W,\omega)$ with $\partial W=M$ and $\omega|_\xi$ positive; Stein and Weinstein variants |
 
 

@@ -118,7 +118,7 @@ with kernel $\langle\sigma\rangle$; an isometry of the quotient lifts to $M$ loc
 
 **Example (the reflection quotient).** The reflection of $\mathbb{R}^n$ in a hyperplane is an isometric involution whose fixed set is the hyperplane, and the quotient is the half-space with the Euclidean metric; the singular locus is the boundary, and the quotient is a Riemannian manifold with boundary rather than a manifold. The same construction on the sphere gives the hemisphere, and on a general manifold with a totally geodesic hypersurface gives the manifold cut along it. The inverse operation, the doubling of a manifold with a totally geodesic boundary, is the passage back to $M$.
 
-**Example (the involution of a product).** On a product $M_1 \times M_2$ the exchange $\sigma(x_1, x_2) = (x_2, x_1)$ is an isometric involution when the two factors are isometric; its fixed set is the diagonal, and the quotient is the symmetric square $(M_1\times M_1)/\sigma$, a Riemannian orbifold with the diagonal as singular locus. The quotient of a product by a reflection in a factor is a product of a half-space with the other factor.
+**Example (the involution of a product).** On a product $M_1 \times \mathsf{M}_2$ the exchange $\sigma(x_1, x_2) = (x_2, x_1)$ is an isometric involution when the two factors are isometric; its fixed set is the diagonal, and the quotient is the symmetric square $(M_1\times M_1)/\sigma$, a Riemannian orbifold with the diagonal as singular locus. The quotient of a product by a reflection in a factor is a product of a half-space with the other factor.
 
 ## Summary
 

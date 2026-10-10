@@ -56,24 +56,24 @@ The naive scheme therefore costs sixteen complex multiplications, or **sixty-fou
 
 ## The Bilinear Product: Sixty-Four to Twenty-Four
 
-The reduction rests on writing the four coefficients of the product as fixed linear combinations of **eight** products of linear combinations of the input coefficients. Four of the eight are the "corner" products of individual components; the other four are Hadamard products, that is products of the two vectors $(M_0,M_1,M_2,M_3)$ and $(N_0,N_1,N_2,N_3)$ with the four rows of the Sylvester sign matrix of order four.
+The reduction rests on writing the four coefficients of the product as fixed linear combinations of **eight** products of linear combinations of the input coefficients. Four of the eight are the "corner" products of individual components; the other four are Hadamard products, that is products of the two vectors $(M_0,M_1,\mathsf{M}_2,M_3)$ and $(N_0,N_1,N_2,N_3)$ with the four rows of the Sylvester sign matrix of order four.
 
 In the corpus's basis the scheme reads as follows. Let $\tilde{M} = M_0e_0 + \dots + M_3e_3$ and $\tilde{N} = N_0e_0 + \dots + N_3e_3$ with complex coefficients, and let the four Hadamard products be
 
 $$
-H_1 = (M_0+M_1+M_2+M_3)(N_0+N_1+N_2+N_3),
+H_1 = (M_0+M_1+\mathsf{M}_2+M_3)(N_0+N_1+N_2+N_3),
 $$
 $$
-H_2 = (M_0+M_1-M_2-M_3)(N_0+N_1-N_2-N_3),
+H_2 = (M_0+M_1-\mathsf{M}_2-M_3)(N_0+N_1-N_2-N_3),
 $$
 $$
-H_3 = (M_0-M_1+M_2-M_3)(N_0-N_1+N_2-N_3),
+H_3 = (M_0-M_1+\mathsf{M}_2-M_3)(N_0-N_1+N_2-N_3),
 $$
 $$
-H_4 = (M_0-M_1-M_2+M_3)(N_0-N_1-N_2+N_3),
+H_4 = (M_0-M_1-\mathsf{M}_2+M_3)(N_0-N_1-N_2+N_3),
 $$
 
-and let the four corner products be $P_{00} = M_0N_0$, $P_{32} = M_3N_2$, $P_{13} = M_1N_3$, $P_{21} = M_2N_1$. Then the coefficients $Q_\mu$ of the product satisfy
+and let the four corner products be $P_{00} = M_0N_0$, $P_{32} = M_3N_2$, $P_{13} = M_1N_3$, $P_{21} = \mathsf{M}_2N_1$. Then the coefficients $Q_\mu$ of the product satisfy
 
 $$
 4Q_0 = 8P_{00} - (H_1+H_2+H_3+H_4),
@@ -90,7 +90,7 @@ $$
 
 The scheme uses eight coefficient products and nothing else: the Hadamard combinations supply each coefficient with the sign pattern of one Sylvester row, and the four corner products cancel the diagonal contributions that the Hadamard products carry along with them. The factors of two and four are the price of that cancellation; they are additions and scalings, which the count treats as free.
 
-This is the corpus transcription of the source's scheme, which is stated there in the reversed vector-unit order. The source writes it as eight intermediate products $P_1,\dots,P_8$, with the four coefficient products $P_1 = M_1N_1$, $P_2 = M_4N_3$, $P_3 = M_2N_4$, $P_4 = M_3N_2$ in its own numbering and the four Hadamard products $P_5,\dots,P_8$ of the same shape as $H_1,\dots,H_4$, and it gives the four coefficients as $Q_1 = 2P_1 - \tfrac14(P_5+P_6+P_7+P_8)$ and its three companions with the sign patterns $+\,+\,--\,$, $\,+\,-+\,-$ and $\,+\,\,--\,+$. The two forms differ only by the relabelling of the vector units; both were recomputed here and both reproduce the direct product exactly.
+This is the corpus transcription of the source's scheme, which is stated there in the reversed vector-unit order. The source writes it as eight intermediate products $P_1,\dots,P_8$, with the four coefficient products $P_1 = M_1N_1$, $P_2 = M_4N_3$, $P_3 = \mathsf{M}_2N_4$, $P_4 = M_3N_2$ in its own numbering and the four Hadamard products $P_5,\dots,P_8$ of the same shape as $H_1,\dots,H_4$, and it gives the four coefficients as $Q_1 = 2P_1 - \tfrac14(P_5+P_6+P_7+P_8)$ and its three companions with the sign patterns $+\,+\,--\,$, $\,+\,-+\,-$ and $\,+\,\,--\,+$. The two forms differ only by the relabelling of the vector units; both were recomputed here and both reproduce the direct product exactly.
 
 Each of the eight intermediate products is a complex multiplication, so the bilinear scheme alone costs $8\times4 = 32$ real multiplications, against the naive sixty-four. **Gauss's three-multiplication rule** for complex numbers,
 

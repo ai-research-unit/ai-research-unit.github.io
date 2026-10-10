@@ -218,7 +218,7 @@ The equivalence of 2 and 4 gives $\dim \operatorname{rad}(B) = \dim M - \operato
 
 ### Restriction and Orthogonal Direct Sums
 
-**Definition.** Let $M_1, M_2$ be $R$-modules carrying bilinear forms $B_1, B_2$. The **orthogonal direct sum** $B_1 \perp B_2$ is the form on $M_1 \oplus M_2$ defined by
+**Definition.** Let $M_1, \mathsf{M}_2$ be $R$-modules carrying bilinear forms $B_1, B_2$. The **orthogonal direct sum** $B_1 \perp B_2$ is the form on $M_1 \oplus \mathsf{M}_2$ defined by
 
 $$
 (B_1 \perp B_2)\bigl((u_1, u_2), (v_1, v_2)\bigr) = B_1(u_1, v_1) + B_2(u_2, v_2).
@@ -226,7 +226,7 @@ $$
 
 **Proposition.** The orthogonal direct sum $B_1 \perp B_2$ is symmetric, skew-symmetric or alternating if and only if both summands are. It is non-degenerate if and only if both summands are, and its Gram matrix in the concatenated basis is the block sum $\operatorname{diag}(G_1, G_2)$.
 
-**Proof.** The symmetry statements are immediate. The subspace $M_1$ is orthogonal to $M_2$, so the radical of $B_1 \perp B_2$ is $\operatorname{rad}(B_1) \oplus \operatorname{rad}(B_2)$, and the map to the dual is the direct sum of the two maps. Hence it is an isomorphism exactly when both factors are. The Gram matrix is block diagonal by construction.
+**Proof.** The symmetry statements are immediate. The subspace $M_1$ is orthogonal to $\mathsf{M}_2$, so the radical of $B_1 \perp B_2$ is $\operatorname{rad}(B_1) \oplus \operatorname{rad}(B_2)$, and the map to the dual is the direct sum of the two maps. Hence it is an isomorphism exactly when both factors are. The Gram matrix is block diagonal by construction.
 
 The restriction of a non-degenerate form to a general submodule need not be non-degenerate. Over a field, however, the situation is controlled.
 
@@ -334,7 +334,7 @@ On a free module of finite rank a form is represented by its **Gram matrix** $G_
 
 The **radical** $\operatorname{rad}(B) = \{u : B(u, v) = 0 \ \forall v\}$ is the kernel of the map $M \to M^*$, $u \mapsto B(u, -)$. The form is **non-degenerate** when this map is an isomorphism; over a free module of finite rank this means $\det G$ is a unit of $R$. Over a field in finite dimension the conditions collapse: non-degeneracy, vanishing of the radical, invertibility of the Gram matrix, and $\operatorname{rank}(B) = \dim M$ are equivalent, and $\dim \operatorname{rad}(B) = \dim M - \operatorname{rank}(B)$. Over a general ring and in infinite dimension they do not: a form can have zero radical and still be degenerate.
 
-The **orthogonal direct sum** $B_1 \perp B_2$ on $M_1 \oplus M_2$ is non-degenerate exactly when both summands are, and its Gram matrix is block diagonal. A non-degenerate alternating form has even rank, and over a field it has a **symplectic basis** $e_1, \ldots, e_m, f_1, \ldots, f_m$ with $B(e_i, f_j) = \delta_{ij}$; the case of rank two is the **symplectic plane**, which is not the quadratic hyperbolic plane. Isometries are the linear isomorphisms preserving $B$; they form the group $\operatorname{O}(M, B)$ for symmetric $B$ and $\operatorname{Sp}(M, B)$ for alternating $B$. The **discriminant** $\Delta(B) = \det G \in F^\times/(F^\times)^2$ is a congruence invariant of a non-degenerate symmetric form over a field.
+The **orthogonal direct sum** $B_1 \perp B_2$ on $M_1 \oplus \mathsf{M}_2$ is non-degenerate exactly when both summands are, and its Gram matrix is block diagonal. A non-degenerate alternating form has even rank, and over a field it has a **symplectic basis** $e_1, \ldots, e_m, f_1, \ldots, f_m$ with $B(e_i, f_j) = \delta_{ij}$; the case of rank two is the **symplectic plane**, which is not the quadratic hyperbolic plane. Isometries are the linear isomorphisms preserving $B$; they form the group $\operatorname{O}(M, B)$ for symmetric $B$ and $\operatorname{Sp}(M, B)$ for alternating $B$. The **discriminant** $\Delta(B) = \det G \in F^\times/(F^\times)^2$ is a congruence invariant of a non-degenerate symmetric form over a field.
 
 ## Summary of Notation
 

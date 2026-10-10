@@ -84,7 +84,7 @@ For the non-central element $a=J$ one has $\alpha(J)=J$, and $\ell_J(X)=J\alpha(
 
 For the non-central element $a=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ one has $\alpha(a)=\begin{pmatrix}1&-1\\0&1\end{pmatrix}\neq a$, and at $X=I$ one has $\ell_a(I)=a$ while $(\ell_a)^{\dagger}(I)=\varrho_{\alpha(a)}(I)=\alpha(a)$, so $\ell_a$ is not self-adjoint; and $a^{2}\neq1$, so it is not an isometry either.
 
-**Verified.** The adjoint formula $(\ell_a)^{\dagger}=\varrho_{\alpha(a)}$ was checked on the four basis elements of $M_2(K)$ for the trace form and $\alpha(X)=JXJ^{-1}$; the self-adjointness criterion (central and even) and the isometry criterion (central, $a^{2}=1$) were checked against the three examples above, in which $\ell_I$ is self-adjoint and isometric, and $\ell_J$, $\ell_a$ with $a=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ are neither.
+**Verified.** The adjoint formula $(\ell_a)^{\dagger}=\varrho_{\alpha(a)}$ was checked on the four basis elements of $\mathsf{M}_2(K)$ for the trace form and $\alpha(X)=JXJ^{-1}$; the self-adjointness criterion (central and even) and the isometry criterion (central, $a^{2}=1$) were checked against the three examples above, in which $\ell_I$ is self-adjoint and isometric, and $\ell_J$, $\ell_a$ with $a=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ are neither.
 
 ## Summary
 

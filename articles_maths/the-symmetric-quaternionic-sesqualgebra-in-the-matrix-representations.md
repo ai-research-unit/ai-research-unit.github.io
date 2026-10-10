@@ -18,10 +18,10 @@ $$
 \Phi(\tilde P\star\tilde Q)=\tfrac12\bigl(\mathrm{adj}\,\Phi(\tilde P)\,\Phi(\tilde Q)^{\dagger}+\Phi(\tilde Q)^{\dagger}\,\mathrm{adj}\,\Phi(\tilde P)\bigr).
 $$
 
-In the four-by-four regular model the left regular matrix $\operatorname{mat}_4(\tilde Q)$ satisfies $\operatorname{mat}_4(\tilde Q^{\natural})=\operatorname{mat}_4(\tilde Q)^{T}$ and $\operatorname{mat}_4(\tilde Q^{*})=\operatorname{mat}_4(\tilde Q)^{\dagger}$, and the same symmetrisation appears:
+In the four-by-four regular model the left regular matrix $\mathsf{M}_4(\tilde Q)$ satisfies $\mathsf{M}_4(\tilde Q^{\natural})=\mathsf{M}_4(\tilde Q)^{T}$ and $\mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger}$, and the same symmetrisation appears:
 
 $$
-\operatorname{mat}_4(\tilde P\star\tilde Q)=\tfrac12\bigl(\operatorname{mat}_4(\tilde P)^{T}\operatorname{mat}_4(\tilde Q)^{\dagger}+\operatorname{mat}_4(\tilde Q)^{\dagger}\operatorname{mat}_4(\tilde P)^{T}\bigr).
+\mathsf{M}_4(\tilde P\star\tilde Q)=\tfrac12\bigl(\mathsf{M}_4(\tilde P)^{T}\mathsf{M}_4(\tilde Q)^{\dagger}+\mathsf{M}_4(\tilde Q)^{\dagger}\mathsf{M}_4(\tilde P)^{T}\bigr).
 $$
 
 The article computes the trace and the rank of the two matrix forms, the determinant, the diagonal and its deformation, and the matrix form of the Krein form $K$ with its Gram matrix and its indefinite cone.
@@ -102,20 +102,20 @@ a non-scalar matrix, non-scalar exactly when the mixed term $Q_0\overline{\mathb
 **Theorem (the product formula).** In the regular representation,
 
 $$
-\operatorname{mat}_4(\tilde P\star\tilde Q)=\tfrac12\bigl(\operatorname{mat}_4(\tilde P)^{T}\operatorname{mat}_4(\tilde Q)^{\dagger}+\operatorname{mat}_4(\tilde Q)^{\dagger}\operatorname{mat}_4(\tilde P)^{T}\bigr).
+\mathsf{M}_4(\tilde P\star\tilde Q)=\tfrac12\bigl(\mathsf{M}_4(\tilde P)^{T}\mathsf{M}_4(\tilde Q)^{\dagger}+\mathsf{M}_4(\tilde Q)^{\dagger}\mathsf{M}_4(\tilde P)^{T}\bigr).
 $$
 
-*Proof.* The left regular matrix is multiplicative, $\operatorname{mat}_4(\tilde X\tilde Y)=\operatorname{mat}_4(\tilde X)\operatorname{mat}_4(\tilde Y)$, and it carries the natural conjugation to the transpose and the star conjugation to the conjugate transpose; applying it to the two orders gives the display. The formula was checked on fifty random pairs. $\square$
+*Proof.* The left regular matrix is multiplicative, $\mathsf{M}_4(\tilde X\tilde Y)=\mathsf{M}_4(\tilde X)\mathsf{M}_4(\tilde Y)$, and it carries the natural conjugation to the transpose and the star conjugation to the conjugate transpose; applying it to the two orders gives the display. The formula was checked on fifty random pairs. $\square$
 
 **Theorem (the invariants).** For all biquaternions,
 
 $$
-\mathrm{Tr}\,\operatorname{mat}_4(\tilde P\star\tilde Q)=4K(\tilde P,\tilde Q),
+\mathrm{Tr}\,\mathsf{M}_4(\tilde P\star\tilde Q)=4K(\tilde P,\tilde Q),
 \qquad
-\det\operatorname{mat}_4(\tilde P\star\tilde Q)=N(\tilde P\star\tilde Q)^{2},
+\det\mathsf{M}_4(\tilde P\star\tilde Q)=N(\tilde P\star\tilde Q)^{2},
 $$
 
-and the rank of $\operatorname{mat}_4(\tilde P\star\tilde Q)$ is four exactly when $N(\tilde P\star\tilde Q)\neq0$.
+and the rank of $\mathsf{M}_4(\tilde P\star\tilde Q)$ is four exactly when $N(\tilde P\star\tilde Q)\neq0$.
 
 *Proof.* The trace of the regular matrix is four times the scalar part, so the trace of the half-sum is $4K$; the determinant of the regular matrix is $N(\tilde X)^{2}$, so the determinant of the value is $N(\tilde P\star\tilde Q)^{2}$; and a four-by-four matrix has rank four exactly when its determinant is nonzero. $\square$
 
@@ -131,7 +131,7 @@ $$
 K(\tilde P,\tilde Q)=\tfrac12\,\mathrm{Tr}\bigl(\mathrm{adj}\,\Phi(\tilde P)\,\Phi(\tilde Q)^{\dagger}\bigr),
 $$
 
-with Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis; in the regular model the same form is read from the trace of the regular matrices, $\mathrm{Tr}\,\operatorname{mat}_4(\tilde P\star\tilde Q)=4K(\tilde P,\tilde Q)$.
+with Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis; in the regular model the same form is read from the trace of the regular matrices, $\mathrm{Tr}\,\mathsf{M}_4(\tilde P\star\tilde Q)=4K(\tilde P,\tilde Q)$.
 
 *Proof.* The first display is the trace theorem; the Gram matrix is the matrix of $K$ on the coefficient basis. In the regular model the trace of the product is $4K$, which recovers $K$ up to the factor of the dimension. $\square$
 
@@ -163,7 +163,7 @@ a cone through the origin whose elements are exactly the values $\Phi(\tilde P)$
 
 ## Summary
 
-In the two-by-two model the block is the symmetrisation of the twisted matrix product, $\Phi(\tilde P\star\tilde Q)=\tfrac12(\mathrm{adj}\,\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}+\Phi(\tilde Q)^{\dagger}\mathrm{adj}\,\Phi(\tilde P))$, with trace $2K$, determinant $N(\tilde P\star\tilde Q)$ and rank two off the degeneracy set. In the four-by-four regular model the same symmetrisation reads $\operatorname{mat}_4(\tilde P\star\tilde Q)=\tfrac12(\operatorname{mat}_4(\tilde P)^{T}\operatorname{mat}_4(\tilde Q)^{\dagger}+\operatorname{mat}_4(\tilde Q)^{\dagger}\operatorname{mat}_4(\tilde P)^{T})$, with trace $4K$, determinant $N(\tilde P\star\tilde Q)^{2}$ and rank four off the degeneracy set. The diagonal is the scalar matrix of the form value minus the matrix of the mixed term; on the two witnesses $e_1$ and $e_1+ie_2$ it is the scalar matrices $-I$ and $-2I$, and the deformation away from the scalar matrices appears at $e_0+e_1$, where the matrix is $\begin{pmatrix}0&2i\\2i&0\end{pmatrix}$. The Krein form is $K(\tilde P,\tilde Q)=\tfrac12\mathrm{Tr}(\mathrm{adj}\,\Phi(\tilde P)\Phi(\tilde Q)^{\dagger})$, with Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis, and its indefinite cone maps into the matrices of zero form value.
+In the two-by-two model the block is the symmetrisation of the twisted matrix product, $\Phi(\tilde P\star\tilde Q)=\tfrac12(\mathrm{adj}\,\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}+\Phi(\tilde Q)^{\dagger}\mathrm{adj}\,\Phi(\tilde P))$, with trace $2K$, determinant $N(\tilde P\star\tilde Q)$ and rank two off the degeneracy set. In the four-by-four regular model the same symmetrisation reads $\mathsf{M}_4(\tilde P\star\tilde Q)=\tfrac12(\mathsf{M}_4(\tilde P)^{T}\mathsf{M}_4(\tilde Q)^{\dagger}+\mathsf{M}_4(\tilde Q)^{\dagger}\mathsf{M}_4(\tilde P)^{T})$, with trace $4K$, determinant $N(\tilde P\star\tilde Q)^{2}$ and rank four off the degeneracy set. The diagonal is the scalar matrix of the form value minus the matrix of the mixed term; on the two witnesses $e_1$ and $e_1+ie_2$ it is the scalar matrices $-I$ and $-2I$, and the deformation away from the scalar matrices appears at $e_0+e_1$, where the matrix is $\begin{pmatrix}0&2i\\2i&0\end{pmatrix}$. The Krein form is $K(\tilde P,\tilde Q)=\tfrac12\mathrm{Tr}(\mathrm{adj}\,\Phi(\tilde P)\Phi(\tilde Q)^{\dagger})$, with Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis, and its indefinite cone maps into the matrices of zero form value.
 
 ## Summary of Notation
 
@@ -171,9 +171,9 @@ In the two-by-two model the block is the symmetrisation of the twisted matrix pr
 |---|---|
 | $\Phi(\tilde Q)=Q_0I-i\sum_kQ_k\sigma_k$ | the two-by-two model; $\Phi({}^{\natural})=\mathrm{adj}$, $\Phi({}^{*})={}^{\dagger}$ |
 | $\Phi(\tilde P\star\tilde Q)=\tfrac12(\mathrm{adj}\,\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}+\Phi(\tilde Q)^{\dagger}\mathrm{adj}\,\Phi(\tilde P))$ | the block in the two-by-two model |
-| $\operatorname{mat}_4(\tilde P\star\tilde Q)=\tfrac12(\operatorname{mat}_4(\tilde P)^{T}\operatorname{mat}_4(\tilde Q)^{\dagger}+\operatorname{mat}_4(\tilde Q)^{\dagger}\operatorname{mat}_4(\tilde P)^{T})$ | the block in the regular model |
+| $\mathsf{M}_4(\tilde P\star\tilde Q)=\tfrac12(\mathsf{M}_4(\tilde P)^{T}\mathsf{M}_4(\tilde Q)^{\dagger}+\mathsf{M}_4(\tilde Q)^{\dagger}\mathsf{M}_4(\tilde P)^{T})$ | the block in the regular model |
 | $\mathrm{Tr}\,\Phi(\tilde P\star\tilde Q)=2K$, $\det\Phi=N$ | trace and determinant in the two-by-two model |
-| $\mathrm{Tr}\,\operatorname{mat}_4(\tilde P\star\tilde Q)=4K$, $\det\operatorname{mat}_4=N^{2}$ | trace and determinant in the regular model |
+| $\mathrm{Tr}\,\mathsf{M}_4(\tilde P\star\tilde Q)=4K$, $\det\mathsf{M}_4=N^{2}$ | trace and determinant in the regular model |
 | $\Phi(\tilde Q\star\tilde Q)=K(\tilde Q,\tilde Q)I-\Phi(Q_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{Q})$ | the diagonal in the model |
 | $\Phi(e_1\star e_1)=-I$, $\Phi((e_1+ie_2)\star(e_1+ie_2))=-2I$, $\Phi((e_0+e_1)\star(e_0+e_1))=2i\sigma_1$ | the two scalar witnesses and the non-scalar witness |
 | $K(\tilde P,\tilde Q)=\tfrac12\mathrm{Tr}(\mathrm{adj}\,\Phi(\tilde P)\Phi(\tilde Q)^{\dagger})$ | the form in the model; Gram $E=\mathrm{diag}(1,-1,-1,-1)$ |

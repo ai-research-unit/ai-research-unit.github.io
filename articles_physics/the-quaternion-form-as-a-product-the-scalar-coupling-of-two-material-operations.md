@@ -41,7 +41,7 @@ the Symmetric Quaternionic Algebra* and are the subject of the companion article
 Cannot Compose: the Radical and the Isotropic Elements*; the operators and the matrix models are
 *The Multiplication Operators of the Symmetric Quaternionic Algebra* and *The Symmetric Quaternionic
 Algebra in the Matrix Representations*. The comparison of this operation with the other three rows is
-*The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras*, and it is
+*The Four General Products and Their Physical Readings*, and it is
 cited and not redone.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
@@ -313,8 +313,7 @@ returns the interval of a material operation faithfully and returns **no** notio
 central-valued pairing is not a state and is not a probability. That role belongs to the sesquilinear row
 of the algebra, not to this one. The forms on the six subspaces, with their signatures, are
 *The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions* and the transversal
-signature table of *The Four General Products and Their Physical Readings: the Two Algebras and the Two
-Sesqualgebras*.
+signature table of *The Four General Products and Their Physical Readings*.
 
 ## The Reading: a Central Value Is the Scalar of a Comparison
 
@@ -415,8 +414,7 @@ Jordan identity with its witness, and the boundary of the coefficient against th
 companion article *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements*; the
 coefficient read as a form is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*;
 the six subspaces are *The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*; and
-the comparison of the four rows is *The Four General Products and Their Physical Readings: the Two Algebras and
-the Two Sesqualgebras*, none of them redone here.
+the comparison of the four rows is *The Four General Products and Their Physical Readings*, none of them redone here.
 
 ## Summary of Notation
 
@@ -463,8 +461,7 @@ the Two Sesqualgebras*, none of them redone here.
 - Companion article *The Ordinary Product and the Material Sector*, for the form $B$ and the plain row.
 - Companion article *The Symmetrised Material Composition and the Jordan Identity*, for the symmetrised
   plain product (SPA), the Jordan-product contrast of this operation.
-- Companion article *The Four General Products and Their Physical Readings: the Two Algebras and the Two
-  Sesqualgebras*, for the transversal comparison and the signature table.
+- Companion article *The Four General Products and Their Physical Readings*, for the transversal comparison and the signature table.
 - Companion article *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements*, for
   the radical, the isotropic elements and the Jordan witness read physically.
 - Companion article *The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator*,
