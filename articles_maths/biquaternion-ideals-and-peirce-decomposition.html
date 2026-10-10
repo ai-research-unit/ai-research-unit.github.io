@@ -57,7 +57,7 @@
 <p>Because the biquaternions carry both a complex and a real structure, every statement is tagged with the field over which it is made. The sections before the last work over $\mathbb{C}$; §<em>The Real Structure</em> discusses the $\mathbb{R}$-view, where the ideal lattice itself is unchanged but the real structure leaves further traces. The notation follows the article on biquaternion algebra: $e_0$ is the unit, $e_1, e_2, e_3$ are the quaternion units with $e_1 e_2 = e_3$, $i$ is the central scalar imaginary, and a general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. The definitions of the article on rings apply to the noncommutative algebra $\mathbb{B}$, where "left" and "right" must be distinguished.</p>
 <h2 id="ideals-in-an-algebra">Ideals in an Algebra</h2>
 <p>Let $A$ be an associative unital algebra over a field $k$. An additive subgroup $I \subseteq A$ is a <strong>left ideal</strong> if $A I \subseteq I$, a <strong>right ideal</strong> if $I A \subseteq I$, and a <strong>two-sided ideal</strong> if it is both. The distinction matters only when $A$ is noncommutative; for $\mathbb{B}$ the three notions genuinely differ. The ideals $0$ and $A$ are called trivial.</p>
-<p>A base-field remark will be used repeatedly. If $A I \subseteq I$, then $I$ is automatically a $k$-subspace, since $\lambda \tilde R = (\lambda 1) \tilde R \in I$ for $\lambda \in k$, $\tilde R \in I$, as $\lambda 1 \in A$. So the left ideals of a unital algebra do not depend on which field of scalars inside the centre is used to view it; in particular the ideal lattice of $\mathbb{B}$ is the same in the $\mathbb{C}$-view and the $\mathbb{R}$-view (§<em>The Real Structure</em>).</p>
+<p>A base-field remark will be used repeatedly. If $A I \subseteq I$, then $I$ is automatically a $k$-subspace, since $\lambda \tilde Q = (\lambda 1) \tilde Q \in I$ for $\lambda \in k$, $\tilde Q \in I$, as $\lambda 1 \in A$. So the left ideals of a unital algebra do not depend on which field of scalars inside the centre is used to view it; in particular the ideal lattice of $\mathbb{B}$ is the same in the $\mathbb{C}$-view and the $\mathbb{R}$-view (§<em>The Real Structure</em>).</p>
 <p>For a two-sided ideal $I$, the <strong>quotient algebra</strong> $A/I$ is the set of cosets with the induced operations, well defined precisely because $I$ absorbs multiplication on both sides. Kernels of algebra homomorphisms are two-sided ideals, and the first isomorphism theorem gives $A/\ker\varphi \cong \operatorname{im}\varphi$. For a left ideal only, $A/I$ is still a left $A$-module but not in general an algebra. Thus the left ideals govern module theory and the two-sided ideals govern quotient algebras.</p>
 <h2 id="the-two-sided-ideals-simplicity-of-math44">The Two-Sided Ideals: Simplicity of $\mathbb{B}$</h2>
 <p><strong>Theorem.</strong> Over $\mathbb{C}$, the only two-sided ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$. Equivalently, $\mathbb{B}$ is a <strong>simple</strong> $\mathbb{C}$-algebra.</p>
@@ -88,17 +88,17 @@ $$</p>
 \tilde\Pi_1 = \frac{e_0 + i e_3}{2}, \qquad \tilde\Pi_2 = \frac{e_0 - i e_3}{2}
 $$</p>
 <p>satisfy $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = 0$ and $\tilde\Pi_1 + \tilde\Pi_2 = e_0$. They are primitive, and they generate the off-diagonal elements of the next section.</p>
-<p>The classification of the idempotents of $\mathbb{B}$ — the trivial idempotents, the bijection with the roots of $-1$, the Hermitian projections and the dimension of the idempotent set — is the subject of <em>Biquaternion Idempotents and Projections</em>.</p>
+<p>The classification of the idempotents of $\mathbb{B}$ — the trivial idempotents, the bijection with the roots of $-1$, the Hermitian projections and the dimension of the idempotent set — is the subject of <em>Idempotents of the General Plain Algebra</em>.</p>
 <h2 id="the-off-diagonal-elements">The Off-Diagonal Elements</h2>
 <p>The two off-diagonal corners are spanned by the elements</p>
 <p>$$
-\tilde R = \frac{i e_1 - e_2}{2}, \qquad \tilde T = \frac{i e_1 + e_2}{2}.
+\tilde\Upsilon_1 = \frac{i e_1 - e_2}{2}, \qquad \tilde\Upsilon_2 = \frac{i e_1 + e_2}{2}.
 $$</p>
-<p>Then $\{\tilde\Pi_1, \tilde R, \tilde T, \tilde\Pi_2\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$, and the multiplication is</p>
+<p>Then $\{\tilde\Pi_1, \tilde\Upsilon_1, \tilde\Upsilon_2, \tilde\Pi_2\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$, and the multiplication is</p>
 <p>$$
-\tilde\Pi_1\tilde R = \tilde R = \tilde R\tilde\Pi_2, \qquad \tilde\Pi_2\tilde T = \tilde T = \tilde T\tilde\Pi_1, \qquad \tilde R\tilde T = \tilde\Pi_1, \qquad \tilde T\tilde R = \tilde\Pi_2,
+\tilde\Pi_1\tilde\Upsilon_1 = \tilde\Upsilon_1 = \tilde\Upsilon_1\tilde\Pi_2, \qquad \tilde\Pi_2\tilde\Upsilon_2 = \tilde\Upsilon_2 = \tilde\Upsilon_2\tilde\Pi_1, \qquad \tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1, \qquad \tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2,
 $$</p>
-<p>together with $\tilde R\tilde\Pi_1 = \tilde\Pi_2\tilde R = \tilde\Pi_1\tilde T = 0$, $\tilde T\tilde\Pi_2 = 0$, and $\tilde R^2 = \tilde T^2 = 0$.</p>
+<p>together with $\tilde\Upsilon_1\tilde\Pi_1 = \tilde\Pi_2\tilde\Upsilon_1 = \tilde\Pi_1\tilde\Upsilon_2 = 0$, $\tilde\Upsilon_2\tilde\Pi_2 = 0$, and $\tilde\Upsilon_1^2 = \tilde\Upsilon_2^2 = 0$.</p>
 <h2 id="the-peirce-decomposition">The Peirce Decomposition</h2>
 <p>The <strong>Peirce decomposition</strong> is the decomposition of an algebra relative to a family of orthogonal idempotents; it is the algebraic form of a block decomposition of a matrix.</p>
 <p><strong>One idempotent.</strong> Let $e \in A$ be idempotent and $f = 1-e$. Every $a \in A$ expands as $a = eae + eaf + fae + faf$, giving the direct sum</p>
@@ -117,27 +117,27 @@ $$</p>
 $$</p>
 <p>and by the multiplication table of §<em>The Off-Diagonal Elements</em> each summand is one-dimensional over $\mathbb{C}$:</p>
 <p>$$
-\tilde\Pi_1\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde\Pi_1, \qquad \tilde\Pi_1\mathbb{B}\tilde\Pi_2 = \mathbb{C}\tilde R, \qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde T, \qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_2 = \mathbb{C}\tilde\Pi_2.
+\tilde\Pi_1\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde\Pi_1, \qquad \tilde\Pi_1\mathbb{B}\tilde\Pi_2 = \mathbb{C}\tilde\Upsilon_1, \qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde\Upsilon_2, \qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_2 = \mathbb{C}\tilde\Pi_2.
 $$</p>
 <p>So the Peirce decomposition of $\mathbb{B}$ is</p>
 <p>$$
-\mathbb{B} = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde R \oplus \mathbb{C}\tilde T \oplus \mathbb{C}\tilde\Pi_2.
+\mathbb{B} = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Upsilon_1 \oplus \mathbb{C}\tilde\Upsilon_2 \oplus \mathbb{C}\tilde\Pi_2.
 $$</p>
 <p>The diagonal part $\tilde\Pi_1\mathbb{B}\tilde\Pi_1 \oplus \tilde\Pi_2\mathbb{B}\tilde\Pi_2 = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Pi_2$ is a two-dimensional commutative subalgebra isomorphic to $\mathbb{C} \times \mathbb{C}$. Each diagonal corner is a division ring, namely $\mathbb{C}$, which is the primitivity criterion of §<em>Idempotents and Orthogonal Idempotents</em>.</p>
 <p>A <strong>null (light-cone) variant</strong> of the same split is used in <em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em>. The idempotents there are the uniform nullquaternions $N = \tfrac12(1, \mathbf n)$ and $\bar N = \tfrac12(1, -\mathbf n)$, and the two Peirce components of a biquaternion are its <strong>signed parts</strong>, whose sign the source reads as the chirality of the Weyl spinor. The pair is orthogonal and complete in the article's own product — the <strong>outer</strong> product, for which $N \odot N = N$, $\bar N \odot \bar N = \bar N$, $N \odot \bar N = 0$ and $N + \bar N = e_0$ — and the article's matrix isomorphism carries the outer product to the ordinary matrix product and $N, \bar N$ to the two standard diagonal idempotents. It is the same orthogonal pair as above, transported to the light-cone coordinates with the product changed; these same elements are <strong>not</strong> idempotent under the Hamilton product of this article, so the chiral split is naturally stated in that paper's algebra rather than in this one.</p>
 <h2 id="the-decomposition-into-minimal-left-and-right-ideals">The Decomposition into Minimal Left and Right Ideals</h2>
 <p>The two idempotents group the basis into one-sided ideals in a second way. The two <strong>left ideals</strong> $\mathbb{B}\tilde\Pi_1, \mathbb{B}\tilde\Pi_2$ and the two <strong>right ideals</strong> $\tilde\Pi_1\mathbb{B}, \tilde\Pi_2\mathbb{B}$ are one-sided, and</p>
 <p>$$
-\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2 = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde T) \oplus (\mathbb{C}\tilde R \oplus \mathbb{C}\tilde\Pi_2),
+\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2 = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Upsilon_2) \oplus (\mathbb{C}\tilde\Upsilon_1 \oplus \mathbb{C}\tilde\Pi_2),
 $$</p>
 <p>$$
-\mathbb{B} = \tilde\Pi_1\mathbb{B} \oplus \tilde\Pi_2\mathbb{B} = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde R) \oplus (\mathbb{C}\tilde T \oplus \mathbb{C}\tilde\Pi_2).
+\mathbb{B} = \tilde\Pi_1\mathbb{B} \oplus \tilde\Pi_2\mathbb{B} = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Upsilon_1) \oplus (\mathbb{C}\tilde\Upsilon_2 \oplus \mathbb{C}\tilde\Pi_2).
 $$</p>
-<p>The first exhibits $\mathbb{B}$ as a direct sum of the two minimal left ideals; the second exhibits it as a direct sum of the two minimal right ideals. The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\Pi_1$ with $\tilde R$ and $\tilde\Pi_2$ with $\tilde T$, whereas the left-ideal decomposition groups $\tilde\Pi_1$ with $\tilde T$ and $\tilde\Pi_2$ with $\tilde R$. Each left ideal is two-dimensional over $\mathbb{C}$; each right ideal is its dual. Since $\mathbb{B}$ is simple, a one-sided ideal is never two-sided; for instance $\mathbb{B}\tilde\Pi_1$ is not stable under right multiplication by $\tilde R$.</p>
-<p><strong>Why the sum is direct, and the dimensions.</strong> Every $\tilde{Q} \in \mathbb{B}$ satisfies $\tilde{Q} = \tilde{Q}(\tilde\Pi_1 + \tilde\Pi_2) = \tilde{Q}\tilde\Pi_1 + \tilde{Q}\tilde\Pi_2$, so the two left ideals span. Their intersection is zero: if $\tilde{Q}\tilde\Pi_1 = \tilde{P}\tilde\Pi_2$, then multiplying on the right by $\tilde\Pi_1$ and using $\tilde\Pi_1^2 = \tilde\Pi_1$ and $\tilde\Pi_2\tilde\Pi_1 = 0$ gives $\tilde{Q}\tilde\Pi_1 = 0$. The basis above reads $\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde T$, of dimension $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$, with $\mathbb{B}\tilde\Pi_2 = \mathbb{C}\tilde R \oplus \mathbb{C}\tilde\Pi_2$ for the second; together they account for $4 + 4 = 8 = \dim_{\mathbb{R}} \mathbb{B}$. Each is a minimal left ideal, by the primitivity of $\tilde\Pi_1$ and $\tilde\Pi_2$ (§<em>Idempotents and Orthogonal Idempotents</em>, §<em>Minimal Left and Right Ideals</em>).</p>
-<p><strong>The module structure.</strong> With the basis $\{\tilde\Pi_1, \tilde T\}$ the left $\mathbb{B}$-module $\mathbb{B}\tilde\Pi_1$ is $\mathbb{C}^2$, and the central element $i$ acts on it as the scalar $i$:
+<p>The first exhibits $\mathbb{B}$ as a direct sum of the two minimal left ideals; the second exhibits it as a direct sum of the two minimal right ideals. The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\Pi_1$ with $\tilde\Upsilon_1$ and $\tilde\Pi_2$ with $\tilde\Upsilon_2$, whereas the left-ideal decomposition groups $\tilde\Pi_1$ with $\tilde\Upsilon_2$ and $\tilde\Pi_2$ with $\tilde\Upsilon_1$. Each left ideal is two-dimensional over $\mathbb{C}$; each right ideal is its dual. Since $\mathbb{B}$ is simple, a one-sided ideal is never two-sided; for instance $\mathbb{B}\tilde\Pi_1$ is not stable under right multiplication by $\tilde\Upsilon_1$.</p>
+<p><strong>Why the sum is direct, and the dimensions.</strong> Every $\tilde{Q} \in \mathbb{B}$ satisfies $\tilde{Q} = \tilde{Q}(\tilde\Pi_1 + \tilde\Pi_2) = \tilde{Q}\tilde\Pi_1 + \tilde{Q}\tilde\Pi_2$, so the two left ideals span. Their intersection is zero: if $\tilde{Q}\tilde\Pi_1 = \tilde{P}\tilde\Pi_2$, then multiplying on the right by $\tilde\Pi_1$ and using $\tilde\Pi_1^2 = \tilde\Pi_1$ and $\tilde\Pi_2\tilde\Pi_1 = 0$ gives $\tilde{Q}\tilde\Pi_1 = 0$. The basis above reads $\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Upsilon_2$, of dimension $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$, with $\mathbb{B}\tilde\Pi_2 = \mathbb{C}\tilde\Upsilon_1 \oplus \mathbb{C}\tilde\Pi_2$ for the second; together they account for $4 + 4 = 8 = \dim_{\mathbb{R}} \mathbb{B}$. Each is a minimal left ideal, by the primitivity of $\tilde\Pi_1$ and $\tilde\Pi_2$ (§<em>Idempotents and Orthogonal Idempotents</em>, §<em>Minimal Left and Right Ideals</em>).</p>
+<p><strong>The module structure.</strong> With the basis $\{\tilde\Pi_1, \tilde\Upsilon_2\}$ the left $\mathbb{B}$-module $\mathbb{B}\tilde\Pi_1$ is $\mathbb{C}^2$, and the central element $i$ acts on it as the scalar $i$:
 $$
-i\,(\alpha \tilde\Pi_1 + \beta \tilde T) = (i\alpha)\tilde\Pi_1 + (i\beta)\tilde T .
+i\,(\alpha \tilde\Pi_1 + \beta \tilde\Upsilon_2) = (i\alpha)\tilde\Pi_1 + (i\beta)\tilde\Upsilon_2 .
 $$
 So the simple module underlying each minimal left ideal is the standard two-dimensional one, with $i$ acting by the identity matrix.</p>
 <h2 id="minimal-left-and-right-ideals">Minimal Left and Right Ideals</h2>
@@ -160,7 +160,7 @@ $$</p>
 <ul>
 <li>$\mathbb{B}$ has no nonzero <strong>nilpotent two-sided ideals</strong>; the nilradical is zero.</li>
 <li>It has no nonzero nilpotent left or right ideals either, since such an ideal generates a nonzero nilpotent two-sided ideal.</li>
-<li>The absence of a radical is not the absence of nilpotent <strong>elements</strong>: $\tilde R^2 = \tilde T^2 = 0$ (§<em>The Off-Diagonal Elements</em>), yet the left ideal generated by $\tilde R$ is not nilpotent.</li>
+<li>The absence of a radical is not the absence of nilpotent <strong>elements</strong>: $\tilde\Upsilon_1^2 = \tilde\Upsilon_2^2 = 0$ (§<em>The Off-Diagonal Elements</em>) — nilpotents of the biquaternion layer, written $\tilde\Upsilon_1$ and $\tilde\Upsilon_2$ for the two particular units and $\tilde\Upsilon$ where the class is what is meant (§<em>The nilpotent convention</em> of <em>Conventions in Mathematics</em>) — yet the left ideal generated by $\tilde\Upsilon_1$ is not nilpotent.</li>
 <li>Every left $\mathbb{B}$-module is semisimple.</li>
 </ul>
 <h2 id="the-real-structure">The Real Structure</h2>
@@ -265,8 +265,8 @@ $$</p>
 <td>Orthogonal idempotents, $\tilde\Pi_1+\tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = 0$</td>
 </tr>
 <tr>
-<td>$\tilde R, \tilde T$</td>
-<td>Nilpotent off-diagonal elements, $\tilde R = \tfrac{i e_1 - e_2}{2}$, $\tilde T = \tfrac{i e_1 + e_2}{2}$, $\tilde R^2 = \tilde T^2 = 0$</td>
+<td>$\tilde\Upsilon_1, \tilde\Upsilon_2$</td>
+<td>Nilpotent off-diagonal elements, $\tilde\Upsilon_1 = \tfrac{i e_1 - e_2}{2}$, $\tilde\Upsilon_2 = \tfrac{i e_1 + e_2}{2}$, $\tilde\Upsilon_1^2 = \tilde\Upsilon_2^2 = 0$</td>
 </tr>
 <tr>
 <td>$\mathbb{B}\tilde\Pi_1 \cong \mathbb{C}^2$</td>

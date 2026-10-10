@@ -62,17 +62,17 @@ $$</p>
 <p>$$
 \mathrm{Tr}(\tilde{\rho}\tilde{\sigma}) = \tfrac{1}{2}\bigl(1 + \mathbf{r}\cdot\mathbf{s}\bigr), \qquad \tilde{\sigma} = \tfrac{1}{2}\bigl(e_0 + i\mathbf{s}\bigr),
 $$</p>
-<p>the squared Hilbert–Schmidt distance is $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2) = \tfrac{1}{2}|\mathbf{r}-\mathbf{s}|^2$, the Uhlmann transition probability is $\tfrac{1}{2}(1 + \mathbf{r}\cdot\mathbf{s} + \sqrt{(1-|\mathbf{r}|^2)(1-|\mathbf{s}|^2)})$, and convex combinations act on Bloch vectors by the same weights. The pure states are the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$ with $|\hat{\boldsymbol{\mu}}| = 1$, forming the boundary sphere, and the maximally mixed state is the centre $\mathbf{r} = 0$.</p>
+<p>the squared Hilbert–Schmidt distance is $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2) = \tfrac{1}{2}|\mathbf{r}-\mathbf{s}|^2$, the Uhlmann transition probability is $\tfrac{1}{2}(1 + \mathbf{r}\cdot\mathbf{s} + \sqrt{(1-|\mathbf{r}|^2)(1-|\mathbf{s}|^2)})$, and convex combinations act on Bloch vectors by the same weights. The pure states are the idempotents $\tilde\Pi_{1,2}(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$ with $|\hat{\boldsymbol{\mu}}| = 1$, forming the boundary sphere, and the maximally mixed state is the centre $\mathbf{r} = 0$.</p>
 <p><strong>What is to be shown.</strong> Six problems: (1) the parametrisation of a mixed state by its Bloch vector; (2) purity, linear entropy, and von Neumann entropy for explicit states; (3) the geometry of convex combinations; (4) the metric and distinguishability structure; (5) the centre and the boundary; (6) when two Bloch vectors give identical or orthogonal states. Each is solved in full, and numerical values are given where they aid the check.</p>
 <h2 id="problem-1-parametrising-a-mixed-state-by-its-bloch-vector">Problem 1: Parametrising a Mixed State by Its Bloch Vector</h2>
 <p><strong>Problem.</strong> (a) A qubit is prepared by mixing the spin-up and spin-down states along the $z$-axis with probabilities $\tfrac34$ and $\tfrac14$. Write the state in the form $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ and read off $\mathbf{r}$. (b) Conversely, for $\mathbf{r} = \tfrac12(e_1 + e_2)$, write $\tilde{\rho}$ and its spectral decomposition. (c) Verify that under the isomorphism $e_j \mapsto -i\sigma_j$ the state maps to $\tfrac12(I + \mathbf{r}\cdot\boldsymbol{\sigma})$, and identify the components $r_k$.</p>
 <p><strong>Solution.</strong> (a) The two pure states along $\pm z$ are the idempotents</p>
 <p>$$
-\tilde\Pi_+(e_3) = \tfrac{1}{2}\bigl(e_0 + i e_3\bigr), \qquad \tilde\Pi_-(e_3) = \tilde\Pi_+(-e_3) = \tfrac{1}{2}\bigl(e_0 - i e_3\bigr).
+\tilde\Pi_1(e_3) = \tfrac{1}{2}\bigl(e_0 + i e_3\bigr), \qquad \tilde\Pi_2(e_3) = \tilde\Pi_1(-e_3) = \tfrac{1}{2}\bigl(e_0 - i e_3\bigr).
 $$</p>
 <p>The mixture is a convex combination, so its Bloch vector is the same weighted combination of $e_3$ and $-e_3$:</p>
 <p>$$
-\tilde{\rho} = \tfrac34 \tilde\Pi_+(e_3) + \tfrac14 \tilde\Pi_-(e_3)
+\tilde{\rho} = \tfrac34 \tilde\Pi_1(e_3) + \tfrac14 \tilde\Pi_2(e_3)
 = \tfrac{3}{8}\bigl(e_0 + ie_3\bigr) + \tfrac{1}{8}\bigl(e_0 - ie_3\bigr)
 = \tfrac12 e_0 + \tfrac14 i e_3
 = \tfrac12\Bigl(e_0 + i\,\tfrac12 e_3\Bigr).
@@ -84,13 +84,13 @@ $$</p>
 $$</p>
 <p>With $\hat{\mathbf{r}} = \mathbf{r}/|\mathbf{r}| = (e_1 + e_2)/\sqrt2$ and $\lambda_\pm = \tfrac12(1 \pm 1/\sqrt2)$, the spectral decomposition is</p>
 <p>$$
-\tilde{\rho} = \lambda_+ \tilde\Pi_+(\hat{\mathbf{r}}) + \lambda_- \tilde\Pi_-(\hat{\mathbf{r}}),
+\tilde{\rho} = \lambda_+ \tilde\Pi_1(\hat{\mathbf{r}}) + \lambda_- \tilde\Pi_2(\hat{\mathbf{r}}),
 \qquad
-\tilde\Pi_\pm(\hat{\mathbf{r}}) = \tfrac12\bigl(e_0 \pm i\hat{\mathbf{r}}\bigr).
+\tilde\Pi_{1,2}(\hat{\mathbf{r}}) = \tfrac12\bigl(e_0 \pm i\hat{\mathbf{r}}\bigr).
 $$</p>
 <p>This is correct because the two idempotents reconstruct the state,</p>
 <p>$$
-\lambda_+ \tilde\Pi_+(\hat{\mathbf{r}}) + \lambda_- \tilde\Pi_-(\hat{\mathbf{r}})
+\lambda_+ \tilde\Pi_1(\hat{\mathbf{r}}) + \lambda_- \tilde\Pi_2(\hat{\mathbf{r}})
 = \tfrac12(\lambda_+ + \lambda_-)e_0 + \tfrac12(\lambda_+ - \lambda_-) i\hat{\mathbf{r}}
 = \tfrac12 e_0 + \tfrac{1}{2\sqrt2}\, i\,\frac{e_1 + e_2}{\sqrt2}
 = \tfrac12 e_0 + \tfrac14 i(e_1 + e_2),
@@ -209,7 +209,7 @@ $$</p>
 <p>$$
 \tilde{\rho} = \tfrac12 e_0,
 $$</p>
-<p>the maximally mixed state. Its purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1+0) = \tfrac12$, the minimum on the ball; its linear entropy is $\tfrac12$, the maximum; its biquaternion norm is $\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14 e_0$, whose scalar coefficient $\tfrac14$ is the largest attainable on the slice; and its von Neumann entropy is $\log 2$, the maximum. In the spectral form it is the equal mixture $\tfrac12\tilde\Pi_+(\hat{\boldsymbol{\mu}}) + \tfrac12\tilde\Pi_-(\hat{\boldsymbol{\mu}})$ of the complementary idempotents along <strong>any</strong> axis, and it is the unique state invariant under the full unitary group $U(2)$, which acts on the ball by rotations. It is also the barycentre: the uniform average of the pure states over the boundary sphere is</p>
+<p>the maximally mixed state. Its purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1+0) = \tfrac12$, the minimum on the ball; its linear entropy is $\tfrac12$, the maximum; its biquaternion norm is $\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14 e_0$, whose scalar coefficient $\tfrac14$ is the largest attainable on the slice; and its von Neumann entropy is $\log 2$, the maximum. In the spectral form it is the equal mixture $\tfrac12\tilde\Pi_1(\hat{\boldsymbol{\mu}}) + \tfrac12\tilde\Pi_2(\hat{\boldsymbol{\mu}})$ of the complementary idempotents along <strong>any</strong> axis, and it is the unique state invariant under the full unitary group $U(2)$, which acts on the ball by rotations. It is also the barycentre: the uniform average of the pure states over the boundary sphere is</p>
 <p>$$
 \frac{1}{4\pi}\int_{S^2}\tilde\Pi(\hat{\boldsymbol{\mu}})\,d\Omega
 = \tfrac12\Bigl(e_0 + i\,\frac{1}{4\pi}\int_{S^2}\hat{\boldsymbol{\mu}}\,d\Omega\Bigr)
@@ -224,7 +224,7 @@ $$</p>
 <p>$$
 \tilde{\rho}^2 - \tilde{\rho} = \tfrac14\bigl(|\mathbf{r}|^2 - 1\bigr)e_0,
 $$</p>
-<p>vanishes exactly there, so a boundary state is an idempotent, hence a rank-one projection; and its eigenvalues are $\lambda_\pm = 1, 0$, so its purity is $1$ and its entropy $0$. The boundary is parametrized by the unit sphere $S^2$: $\mathbf{r} = \hat{\boldsymbol{\mu}}$ gives the idempotent $\tilde\Pi_+(\hat{\boldsymbol{\mu}})$, and $-\hat{\boldsymbol{\mu}}$ gives its orthogonal complement $\tilde\Pi_-(\hat{\boldsymbol{\mu}})$, with $\tilde\Pi_+ + \tilde\Pi_- = e_0$ and $\tilde\Pi_+\tilde\Pi_- = 0$.</p>
+<p>vanishes exactly there, so a boundary state is an idempotent, hence a rank-one projection; and its eigenvalues are $\lambda_\pm = 1, 0$, so its purity is $1$ and its entropy $0$. The boundary is parametrized by the unit sphere $S^2$: $\mathbf{r} = \hat{\boldsymbol{\mu}}$ gives the idempotent $\tilde\Pi_1(\hat{\boldsymbol{\mu}})$, and $-\hat{\boldsymbol{\mu}}$ gives its orthogonal complement $\tilde\Pi_2(\hat{\boldsymbol{\mu}})$, with $\tilde\Pi_1 + \tilde\Pi_2 = e_0$ and $\tilde\Pi_1\tilde\Pi_2 = 0$.</p>
 <p>A boundary state is an <strong>extreme point</strong> of the ball. Suppose $\tilde{P} = \lambda\tilde{\rho}_1 + (1-\lambda)\tilde{\rho}_2$ with $0 < \lambda < 1$. Then $\mathbf{r} = \lambda\mathbf{r}_1 + (1-\lambda)\mathbf{r}_2$ with $|\mathbf{r}_1|, |\mathbf{r}_2| \leq 1$ and $|\mathbf{r}| = 1$. By the strict convexity of the Euclidean norm, equality $|\mathbf{r}| = 1$ forces $\mathbf{r}_1 = \mathbf{r}_2 = \mathbf{r}$, so $\tilde{\rho}_1 = \tilde{\rho}_2 = \tilde{P}$: no boundary state is a nontrivial mixture. Conversely, every interior state is a nontrivial mixture (Problem 3), so the extreme points of the ball are exactly the pure states.</p>
 <p>(c) On the trace-one hyperplane an element $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ has eigenvalues $\lambda_\pm = \tfrac12(1 \pm |\mathbf{r}|)$. If $|\mathbf{r}| > 1$ then $\lambda_- = \tfrac12(1 - |\mathbf{r}|) < 0$, so $\tilde{\rho}$ is Hermitian of trace one but not positive semidefinite, and is not a state. Its biquaternion norm is $\tfrac14(1 - |\mathbf{r}|^2)e_0$ with negative scalar coefficient, so it lies in the spacelike region outside the future cone. For instance $\mathbf{r} = 2e_3$ gives $\lambda_\pm = \tfrac32, -\tfrac12$. The ball $|\mathbf{r}| \leq 1$ is thus exactly the positivity domain on the slice.</p>
 <h2 id="problem-6-identical-and-orthogonal-states">Problem 6: Identical and Orthogonal States</h2>
@@ -245,7 +245,7 @@ $$</p>
 \mathrm{Tr}\bigl(\tilde\Pi(\hat{\boldsymbol{\mu}})\tilde\Pi(\hat{\boldsymbol{\nu}})\bigr)
 = \tfrac12\bigl(1 + \hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\nu}}\bigr) = \cos^2\frac{\theta}{2},
 $$</p>
-<p>where $\theta$ is the angle between the Bloch directions. It equals $1$ for $\theta = 0$ (identical states) and $0$ for $\theta = \pi$ (orthogonal states, $\hat{\boldsymbol{\nu}} = -\hat{\boldsymbol{\mu}}$). Equivalently, $\hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\nu}} = -1$, the same condition as in (b). As a concrete check, take $\hat{\boldsymbol{\mu}} = e_3$, $\hat{\boldsymbol{\nu}} = -e_3$: then $\tilde\Pi_+(e_3)\tilde\Pi_-(e_3) = 0$ and $\mathrm{Tr}(\tilde\Pi_+(e_3)\tilde\Pi_-(e_3)) = \tfrac12(1 - 1) = 0$, while $\tilde\Pi_+ + \tilde\Pi_- = e_0$.</p>
+<p>where $\theta$ is the angle between the Bloch directions. It equals $1$ for $\theta = 0$ (identical states) and $0$ for $\theta = \pi$ (orthogonal states, $\hat{\boldsymbol{\nu}} = -\hat{\boldsymbol{\mu}}$). Equivalently, $\hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\nu}} = -1$, the same condition as in (b). As a concrete check, take $\hat{\boldsymbol{\mu}} = e_3$, $\hat{\boldsymbol{\nu}} = -e_3$: then $\tilde\Pi_1(e_3)\tilde\Pi_2(e_3) = 0$ and $\mathrm{Tr}(\tilde\Pi_1(e_3)\tilde\Pi_2(e_3)) = \tfrac12(1 - 1) = 0$, while $\tilde\Pi_1 + \tilde\Pi_2 = e_0$.</p>
 <p>(d) For general states the relevant overlap is the Uhlmann transition probability,</p>
 <p>$$
 T(\tilde{\rho},\tilde{\sigma})
@@ -306,7 +306,7 @@ $$</p>
 <td>State with Bloch vector $\mathbf{r}$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac12(e_0 \pm i\hat{\boldsymbol{\mu}})$</td>
+<td>$\tilde\Pi_{1,2}(\hat{\boldsymbol{\mu}}) = \tfrac12(e_0 \pm i\hat{\boldsymbol{\mu}})$</td>
 <td>Pure-state idempotent, $|\hat{\boldsymbol{\mu}}| = 1$</td>
 </tr>
 <tr>

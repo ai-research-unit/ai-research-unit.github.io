@@ -150,7 +150,15 @@ $$</p>
 $$</p>
 <p><em>Proof.</em> A scalar $s$ maps to $sI$, whose trace is $2s$ and which is scalar; a pure quaternion $\mathbf{q}$ maps to $-i(q_1\sigma_1+q_2\sigma_2+q_3\sigma_3)$, a traceless matrix. The trace vanishes exactly when $Q_0 = 0$, the vector condition.</p>
 <p><strong>Corollary.</strong> In matrix terms the decomposition is the splitting of $\iota(\mathbb{H})$ into its scalar part and its traceless part, and after complexification the algebra splits as $M_2(\mathbb{C}) = \mathbb{C}I\oplus\mathrm{SL}_2(\mathbb{C})$; the scalar subspace is the one-dimensional centre and the vector subspace the three-dimensional traceless summand.</p>
-<p><em>Proof.</em> The splitting $M = \tfrac12(\operatorname{tr}M)I + (M-\tfrac12(\operatorname{tr}M)I)$ separates the scalar and traceless parts, and the image of a quaternion under $\iota$ has trace twice its scalar coordinate.</p>
+<p><em>Proof.</em> The splitting $M = \tfrac12(\operatorname{tr}M)I + (M-\tfrac12(\operatorname{tr}M)I)$ separates the scalar and traceless parts, and the image of a quaternion under $\iota$ has trace twice its scalar coordinate. For the quaternion $2+3\mathbf{i}+4\mathbf{j}+5\mathbf{k}$ the two pieces are</p>
+<p>$$
+\iota(2+3\mathbf{i}+4\mathbf{j}+5\mathbf{k})=\begin{pmatrix}2-5i&-4-3i\\4-3i&2+5i\end{pmatrix},\qquad \operatorname{tr}=4 ,
+$$</p>
+<p>$$
+\mathbb{R}I\text{-part}=2I=\begin{pmatrix}2&0\\0&2\end{pmatrix},\qquad
+\text{traceless part}=\begin{pmatrix}-5i&-4-3i\\4-3i&5i\end{pmatrix},
+$$</p>
+<p>the second of trace $0$, the two adding to the image.</p>
 <h2 id="a-worked-image">A Worked Image</h2>
 <p><strong>Example.</strong> For the element</p>
 <p>$$
@@ -165,7 +173,7 @@ $$</p>
 \operatorname{tr}\iota(\tilde q) = 2 = 2q_0, \qquad \det\iota(\tilde q) = (1-3i)(1+3i) - (1-2i)(-1-2i) = 10 - (-5) = 15 = N(\tilde q).
 $$</p>
 <p>The determinant is the quaternion norm and the trace is twice the scalar part, as the general theorem requires.</p>
-<h2 id="the-absence-of-a-math157-real-representation">The Absence of a $2\times2$ Real Representation</h2>
+<h2 id="the-absence-of-a-math161-real-representation">The Absence of a $2\times2$ Real Representation</h2>
 <p><strong>Theorem.</strong> There is no injective algebra homomorphism $\mathbb{H}\to M_2(\mathbb{R})$.</p>
 <p><em>Proof.</em> Suppose $\varphi : \mathbb{H}\to M_2(\mathbb{R})$ were injective. Then its image is a four-dimensional subalgebra of the four-dimensional algebra $M_2(\mathbb{R})$, hence all of $M_2(\mathbb{R})$, so $\mathbb{H}$ would be isomorphic to $M_2(\mathbb{R})$. But $M_2(\mathbb{R})$ has zero divisors — the matrix $\begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ is non-zero and squares to zero — while $\mathbb{H}$ has none, a contradiction.</p>
 <p><strong>Corollary.</strong> The quaternion algebra is not isomorphic to any full matrix algebra over $\mathbb{R}$, and the smallest faithful matrix representation over $\mathbb{R}$ is the four-dimensional one $L : \mathbb{H}\to M_4(\mathbb{R})$ of <em>Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$</em>. The $2\times2$ representation exists only after the coefficient field is enlarged to $\mathbb{C}$.</p>
@@ -178,7 +186,7 @@ $$</p>
 <p>and it therefore has a $2\times2$ matrix representation over a commutative ring without any extension of coefficients.</p>
 <p><em>Proof.</em> The biquaternion algebra is the complexification of the quaternion algebra, so the isomorphism of this article is an equality of the algebra with $M_2(\mathbb{C})$.</p>
 <p><strong>Theorem.</strong> The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ is not isomorphic to a full $2\times2$ matrix algebra over any commutative ring.</p>
-<p><em>Proof.</em> The split-complex numbers decompose as $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ through the idempotents $\Pi_\pm = \tfrac12(1\pm j)$, so $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$. A ring of the form $M_2(k)$ with $k$ commutative has no non-trivial central idempotent, since its centre is the scalar matrices; the product $\mathbb{H}\oplus\mathbb{H}$ has the two central idempotents $(1,0)$ and $(0,1)$. Hence $\mathbb{H}_{\mathbb{D}}$ is not isomorphic to any $M_2(k)$.</p>
+<p><em>Proof.</em> The split-complex numbers decompose as $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ through the idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$, so $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$. A ring of the form $M_2(k)$ with $k$ commutative has no non-trivial central idempotent, since its centre is the scalar matrices; the product $\mathbb{H}\oplus\mathbb{H}$ has the two central idempotents $(1,0)$ and $(0,1)$. Hence $\mathbb{H}_{\mathbb{D}}$ is not isomorphic to any $M_2(k)$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>

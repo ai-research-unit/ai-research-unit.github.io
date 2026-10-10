@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article treats the multiplicative size of a split-complex number: the <strong>norm</strong> $N(A) = A\bar{A} = a^2-a'^2$, its multiplicativity, the region on which it vanishes, and the invertibility criterion it supplies. It is the two-dimensional member of the family of articles on the norm, and its counterpart is <em>Biquaternion Norm and Invertibility</em>; the four-dimensional case has a complex-valued norm that can vanish on a large cone, while here the form is real and indefinite of signature $(1,1)$, and its vanishing set is a pair of lines.</p>
 <p>The organisation follows the biquaternion article. The norm is defined and shown multiplicative; it is shown <strong>not</strong> to be definite, and its square root $|N|^{1/2}$ is shown to be a modulus only up to a sign, which produces the two regimes that recur throughout the category. The Euclidean form is then separated from the norm, as in the four-dimensional case, and the invertibility of an element is reduced to the non-vanishing of the norm. The group of units, its four components and its non-compactness are established, the elements are classified in three ways, and the distribution of the invertible elements among the distinguished subspaces is tabulated.</p>
-<p>The conventions are those of <em>Split-Complex Algebra</em>: the basis is $1$, $j$, with $j^2 = +1$, a general element is $A = a + j a'$ with $a = \operatorname{Re}A$ and $a' = \operatorname{Im}A$, the conjugate is $\bar{A} = a-j a'$, and the idempotent basis is $\Pi_\pm = \tfrac12(1\pm j)$ with $A = A_+\Pi_1 + A_-\Pi_2$, $A_\pm = a\pm a'$. The modulus $\rho = \sqrt{|N(A)|}$ is defined in this article as the positive scale carried by the polar factorisation. Every numerical claim below was recomputed in double precision.</p>
+<p>The conventions are those of <em>Split-Complex Algebra</em>: the basis is $1$, $j$, with $j^2 = +1$, a general element is $A = a + j a'$ with $a = \operatorname{Re}A$ and $a' = \operatorname{Im}A$, the conjugate is $\bar{A} = a-j a'$, and the idempotent basis is $\Pi_{1,2} = \tfrac12(1\pm j)$ with $A = A_+\Pi_1 + A_-\Pi_2$, $A_\pm = a\pm a'$. The modulus $\rho = \sqrt{|N(A)|}$ is defined in this article as the positive scale carried by the polar factorisation. Every numerical claim below was recomputed in double precision.</p>
 <h2 id="the-norm">The Norm</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>norm</strong> of a split-complex number $A = a + j a'$ is</p>
@@ -131,7 +131,7 @@ $$</p>
 <p>$$
 \mathrm{Cl}^+(1,1)=\langle 1,\omega\rangle\cong\mathbb{R}\oplus\mathbb{R}\cong\mathbb{D}, \qquad \mathrm{Cl}(1,1)\cong M_2(\mathbb{R}).
 $$</p>
-<p>So the split-complex algebra is the even Clifford algebra of its own norm, and the full Clifford algebra is the algebra of real $2\times2$ matrices. The two isotropic lines are the two eigenspaces of $\omega$, and the idempotents $\Pi_\pm$ are its spectral projections.</p>
+<p>So the split-complex algebra is the even Clifford algebra of its own norm, and the full Clifford algebra is the algebra of real $2\times2$ matrices. The two isotropic lines are the two eigenspaces of $\omega$, and the idempotents $\Pi_{1,2}$ are its spectral projections.</p>
 <h3 id="the-modulus-and-the-two-regimes">The Modulus and the Two Regimes</h3>
 <p><strong>Definition.</strong> The <strong>modulus</strong> of $A$ is</p>
 <p>$$
@@ -408,12 +408,12 @@ $$</p>
 <td>Idempotent coordinates, $A = A_+\Pi_1 + A_-\Pi_2$</td>
 </tr>
 <tr>
-<td>$\Pi_\pm = (1\pm j)/2$</td>
+<td>$\Pi_{1,2} = (1\pm j)/2$</td>
 <td>Idempotents</td>
 </tr>
 <tr>
 <td>$\mathcal{N} = \{N=0\}$</td>
-<td>Isotropic cone, the two null lines $\mathbb{R}\Pi_\pm$</td>
+<td>Isotropic cone, the two null lines $\mathbb{R}\Pi_{1,2}$</td>
 </tr>
 <tr>
 <td>$\rho = \sqrt{|N(A)|} = \sqrt{|A_+A_-|}$</td>

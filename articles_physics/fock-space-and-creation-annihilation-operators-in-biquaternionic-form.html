@@ -163,20 +163,20 @@ $$</p>
 <h3 id="the-explicit-operators">The Explicit Operators</h3>
 <p>The single mode is already in the corpus. The harmonic oscillator article constructs the two-level truncation of a mode,</p>
 <p>$$
-\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2),\qquad
-\tilde a_{\mathrm{tr}}^\dagger=\tfrac12(ie_1+e_2),\qquad
-\tilde N_{\mathrm{tr}}=\tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}}=\tfrac12(e_0-ie_3),
+\tilde\Upsilon_1=\tfrac12(ie_1-e_2),\qquad
+\tilde\Upsilon_2=\tfrac12(ie_1+e_2),\qquad
+\tilde N_{\mathrm{tr}}=\tilde\Upsilon_2\tilde\Upsilon_1=\tfrac12(e_0-ie_3),
 $$</p>
-<p>and reads them as an unfaithful truncation of a <strong>bosonic</strong> oscillator: the commutator is $[\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger]=ie_3\ne e_0$, which is a failure of the bosonic canonical relation. That reading is correct, and nothing here contradicts it. Asked the fermionic question instead, the same operators answer exactly. Direct computation gives</p>
+<p>and reads them as an unfaithful truncation of a <strong>bosonic</strong> oscillator: the commutator is $[\tilde\Upsilon_1,\tilde\Upsilon_2]=ie_3\ne e_0$, which is a failure of the bosonic canonical relation. That reading is correct, and nothing here contradicts it. Asked the fermionic question instead, the same operators answer exactly. Direct computation gives</p>
 <p>$$
-\tilde a_{\mathrm{tr}}^2=0,\qquad (\tilde a_{\mathrm{tr}}^\dagger)^2=0,\qquad
-\{\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger\}=e_0,\qquad
+\tilde\Upsilon_1^2=0,\qquad (\tilde\Upsilon_2)^2=0,\qquad
+\{\tilde\Upsilon_1,\tilde\Upsilon_2\}=e_0,\qquad
 \tilde N_{\mathrm{tr}}^2=\tilde N_{\mathrm{tr}},
 $$</p>
 <p>so the truncated ladder satisfies the <strong>fermionic</strong> canonical anticommutation relations with no truncation error at all. The operators are the angular-momentum article's spin ladder up to the factor $\hbar$, $\tilde S_+=\tfrac{\hbar}{2}(ie_1-e_2)$; the annihilation and creation operators of the single mode are the spin-raising and spin-lowering operators of the informational sector. Under the isomorphism $\Phi(e_k)=-i\sigma_k$ they have the images</p>
 <p>$$
-\Phi(\tilde a_{\mathrm{tr}})=|0\rangle\langle1|,\qquad
-\Phi(\tilde a_{\mathrm{tr}}^\dagger)=|1\rangle\langle0|,\qquad
+\Phi(\tilde\Upsilon_1)=|0\rangle\langle1|,\qquad
+\Phi(\tilde\Upsilon_2)=|1\rangle\langle0|,\qquad
 \Phi(\tilde N_{\mathrm{tr}})=|1\rangle\langle1|,\qquad
 \Phi(ie_3)=\sigma_3,
 $$</p>
@@ -189,11 +189,11 @@ $$</p>
 <p>$$
 (-1)^F=e_0-2\tilde N_{\mathrm{tr}}=ie_3,
 $$</p>
-<p>which is Hermitian, squares to $e_0$, and satisfies $(-1)^F\tilde a_{\mathrm{tr}}(-1)^F=-\tilde a_{\mathrm{tr}}$ and $(-1)^F\tilde N_{\mathrm{tr}}(-1)^F=\tilde N_{\mathrm{tr}}$. The $\mathbb{Z}/2$ grading the Dirac quantization article had to impose on the mode algebra is, for one mode, realized <strong>inside</strong> $\mathbb{B}$: it is the inner automorphism by the Hermitian involution $(-1)^F\in\mathbb{M}_+$, and its odd subspace is the two-complex-dimensional span of the ladder and its adjoint.
+<p>which is Hermitian, squares to $e_0$, and satisfies $(-1)^F\tilde\Upsilon_1(-1)^F=-\tilde\Upsilon_1$ and $(-1)^F\tilde N_{\mathrm{tr}}(-1)^F=\tilde N_{\mathrm{tr}}$. The $\mathbb{Z}/2$ grading the Dirac quantization article had to impose on the mode algebra is, for one mode, realized <strong>inside</strong> $\mathbb{B}$: it is the inner automorphism by the Hermitian involution $(-1)^F\in\mathbb{M}_+$, and its odd subspace is the two-complex-dimensional span of the ladder and its adjoint.
 - <strong>The grading is not unique.</strong> The choice $ie_3$ is the choice of a mode; for any unit pure quaternion $\hat\mu$ the element $i\hat\mu$ is Hermitian, squares to $e_0$, and defines a grading whose odd part consists of the ladder operators in the corresponding plane, with $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-i\hat\mu)$. This was checked on $\hat\mu=(e_1+e_2+e_3)/\sqrt3$, a direction chosen after the claim rather than the $e_3$ direction that suggested it. The family is parametrized by the unit pure quaternions, that is, by a two-sphere, with $\hat\mu$ and $-\hat\mu$ giving the same grading.</p>
 <h3 id="what-the-capacity-statement-does-and-does-not-say">What the Capacity Statement Does and Does Not Say</h3>
 <p>It does say that the fermionic canonical anticommutation relations, the one-mode number operator, the vacuum projector, and the fermion-parity grading all exist as elements of $\mathbb{B}$, and that this is forced by the dimension count rather than chosen: one mode saturates the algebra, so no other choice of single mode is inequivalent, and no second mode can be added.</p>
-<p>It does not say that the framework <strong>derives</strong> fermionic statistics, or statistics at all. The anticommutation relations are imposed on $\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger$; the identification exhibits a realization, not a derivation. Whether the framework selects the fermionic structure, or merely happens to have the dimension that hosts one fermionic mode, is the open question of the article and is recorded as such in the closing section. The dimension coincidence $4=4$ is exact but it is a coincidence of dimensions until something more is said.</p>
+<p>It does not say that the framework <strong>derives</strong> fermionic statistics, or statistics at all. The anticommutation relations are imposed on $\tilde\Upsilon_1,\tilde\Upsilon_2$; the identification exhibits a realization, not a derivation. Whether the framework selects the fermionic structure, or merely happens to have the dimension that hosts one fermionic mode, is the open question of the article and is recorded as such in the closing section. The dimension coincidence $4=4$ is exact but it is a coincidence of dimensions until something more is said.</p>
 <h2 id="the-bosonic-case">The Bosonic Case</h2>
 <p>A bosonic mode is a pair satisfying $[\tilde a,\tilde a^\dagger]=e_0$. In a finite-dimensional algebra this is impossible for a reason that does not depend on $\mathbb{B}$. A canonical commutator would have to be a central scalar, $[\tilde a,\tilde a^\dagger]=c\,e_0$; but the trace of a commutator vanishes, so</p>
 <p>$$
@@ -257,7 +257,7 @@ $$</p>
 <h2 id="what-this-article-establishes-and-what-it-does-not">What This Article Establishes and What It Does Not</h2>
 <p><strong>Established, and recomputed here.</strong></p>
 <ul>
-<li>The single fermionic mode is realized in $\mathbb{B}$: $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$ and $\tilde a_{\mathrm{tr}}^\dagger=\tfrac12(ie_1+e_2)$ satisfy $\{\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger\}=e_0$ and are nilpotent, with $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$ idempotent.</li>
+<li>The single fermionic mode is realized in $\mathbb{B}$: $\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$ and $\tilde\Upsilon_2=\tfrac12(ie_1+e_2)$ satisfy $\{\tilde\Upsilon_1,\tilde\Upsilon_2\}=e_0$ and are nilpotent, with $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$ idempotent.</li>
 <li>The one-mode Fock space is the fundamental module of $\mathbb{B}$, and $\mathbb{B}$ is its endomorphism algebra.</li>
 <li>Fermion parity for one mode is the element $(-1)^F=ie_3\in\mathbb{M}_+$, and conjugation by it is the $\mathbb{Z}/2$ grading; the grading is defined by the choice of a unit pure quaternion, a two-sphere of choices.</li>
 <li>The capacity of $\mathbb{B}$ is one fermionic mode: $N$ modes generate $M_{2^N}(\mathbb{C})$, of dimension $4^N$, which exceeds four for $N\ge2$.</li>
@@ -342,11 +342,11 @@ $$</p>
 <td>Photon number (transverse sum)</td>
 </tr>
 <tr>
-<td>$\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$</td>
+<td>$\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$</td>
 <td>Single-mode annihilation operator in $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\tilde a_{\mathrm{tr}}^\dagger=\tfrac12(ie_1+e_2)$</td>
+<td>$\tilde\Upsilon_2=\tfrac12(ie_1+e_2)$</td>
 <td>Single-mode creation operator in $\mathbb{B}$</td>
 </tr>
 <tr>
@@ -358,7 +358,7 @@ $$</p>
 <td>Fermion parity (single mode); conjugation is the $\mathbb{Z}/2$ grading</td>
 </tr>
 <tr>
-<td>$\{\tilde a_{\mathrm{tr}},\tilde a_{\mathrm{tr}}^\dagger\}=e_0$</td>
+<td>$\{\tilde\Upsilon_1,\tilde\Upsilon_2\}=e_0$</td>
 <td>Canonical anticommutator, realized in $\mathbb{B}$</td>
 </tr>
 <tr>

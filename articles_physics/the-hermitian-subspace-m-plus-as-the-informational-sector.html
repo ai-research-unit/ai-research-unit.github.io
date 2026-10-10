@@ -243,7 +243,7 @@ $$</p>
 <h3 id="reversible-versus-irreversible-actions">Reversible Versus Irreversible Actions</h3>
 <p>The elements of $\mathbb{M}_+$ include two important classes.</p>
 <p><strong>Unit-norm elements</strong> ($\tilde{Q}\tilde{Q}^{\natural} = e_0$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the biquaternion norm and act by <strong>reversible</strong> transformations. Examples: the boost biquaternions $\tilde{\Lambda}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^{*} = e_0$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.</p>
-<p><strong>Idempotent elements</strong> ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the biquaternion norm (unless $\tilde{Q} = e_0$). They act by <strong>irreversible</strong> projections: $\tilde{Q}_- \mapsto \tilde{P}\tilde{Q}_-\tilde{P}$. Examples: the pure-state projectors $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$. These correspond to quantum-mechanical measurements.</p>
+<p><strong>Idempotent elements</strong> ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the biquaternion norm (unless $\tilde{Q} = e_0$). They act by <strong>irreversible</strong> projections: $\tilde{Q}_- \mapsto \tilde{P}\tilde{Q}_-\tilde{P}$. Examples: the pure-state projectors $\tilde\Pi_{1,2}(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$. These correspond to quantum-mechanical measurements.</p>
 <p>The <strong>dichotomy between reversible and irreversible actions</strong> is intrinsic to the structure of $\mathbb{M}_+$: it is the biquaternion version of the fundamental dichotomy of quantum information theory between unitary evolution and measurement.</p>
 <p>Both ends of the dichotomy have their physics names, and both are owned by later articles, but the statements belong here. The idempotent end is <strong>decoherence</strong>: the irreversible projection of a state onto an idempotent is the algebraic form of a measurement, and the projection onto a minimal left ideal is what a measurement completes. The distinguished projection of the sector is the <strong>vacuum</strong> of a single fermionic mode, the minimal idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, which is simultaneously a pure state, a rank-one projector and a zero divisor. The two are <em>Decoherence as Idempotent Projection</em> and <em>The Biquaternion Vacuum as a Minimal Idempotent</em>.</p>
 <h3 id="the-trace-formula">The Trace Formula</h3>
@@ -255,7 +255,7 @@ $$</p>
 <p>$$
 \langle \tilde{Q} \rangle_{\tilde{P}} = h_0 + \hat{\boldsymbol\mu}\cdot\mathbf{h},
 $$</p>
-<p>which is the standard spin-1/2 expectation value along the direction $\hat{\boldsymbol\mu}$. For an idempotent and a state the same pairing is the <strong>probability formula</strong> $p_\pm=\mathrm{Tr}(\tilde\Pi_\pm(\hat{\mathbf{n}})\tilde\rho)=\tfrac12(1\pm\hat{\mathbf{n}}\cdot\mathbf{r})$; the derivation of the rule from the algebra, and its comparison with the postulate it replaces, are <em>The Born Rule as a Trace Formula — Derivation and Comparison</em>.</p>
+<p>which is the standard spin-1/2 expectation value along the direction $\hat{\boldsymbol\mu}$. For an idempotent and a state the same pairing is the <strong>probability formula</strong> $p_\pm=\mathrm{Tr}(\tilde\Pi_{1,2}(\hat{\mathbf{n}})\tilde\rho)=\tfrac12(1\pm\hat{\mathbf{n}}\cdot\mathbf{r})$; the derivation of the rule from the algebra, and its comparison with the postulate it replaces, are <em>The Born Rule as a Trace Formula — Derivation and Comparison</em>.</p>
 <p>What the trace form gives is the probability formula; what it does not give is the identification of those numbers with physical frequencies. The framework relocates the Born rule from a postulate to a property of the pairing; it does not remove the interpretive step. The idea answers the axiomatic status of the Born rule in the structural sense and not in the operational sense, and that separation is stated in the article just cited.</p>
 <h3 id="the-four-forms-on-the-sector-and-the-absence-of-an-area-pairing">The Four Forms on the Sector, and the Absence of an Area Pairing</h3>
 <p>The four forms of <em>Conventions in the Biquaternion Universe</em> are read on $\mathbb{M}_+$ in <em>Remarkable Subspaces and the Four Forms</em>, and the reading says in one line what the informational sector is not: <strong>the sector carries no area pairing.</strong></p>
@@ -282,13 +282,13 @@ $$</p>
 <h3 id="the-spectral-decomposition">The Spectral Decomposition</h3>
 <p>Every Hermitian element has a spectrum read off in closed form. Write $\tilde{Q} = h_0e_0 + i\mathbf{h}$ with $h_0$ real and $\mathbf{h}$ a real vector, and let $\hat{\mathbf{h}} = \mathbf{h}/|\mathbf{h}|$ for $\mathbf{h}\neq0$. Then</p>
 <p>$$
-\tilde{Q} = \left(h_0 + |\mathbf{h}|\right)\tilde\Pi_+(\hat{\mathbf{h}}) + \left(h_0 - |\mathbf{h}|\right)\tilde\Pi_-(\hat{\mathbf{h}}),
+\tilde{Q} = \left(h_0 + |\mathbf{h}|\right)\tilde\Pi_1(\hat{\mathbf{h}}) + \left(h_0 - |\mathbf{h}|\right)\tilde\Pi_2(\hat{\mathbf{h}}),
 $$</p>
 <p>with the two idempotents of §<em>The Idempotents</em> along the axis $\hat{\mathbf{h}}$. The two coefficients are the <strong>eigenvalues</strong>,</p>
 <p>$$
 \lambda_\pm = h_0 \pm |\mathbf{h}|,
 $$</p>
-<p>real, and the two idempotents are the <strong>eigenprojectors</strong>, $\tilde{Q}\tilde\Pi_\pm = \lambda_\pm\tilde\Pi_\pm$. Because $\tilde\Pi_+ + \tilde\Pi_- = e_0$ and $\tilde\Pi_+\tilde\Pi_- = 0$, the pair is a resolution of the identity, and the formula is a genuine spectral decomposition: every Hermitian element of $\mathbb{M}_+$ is a real combination of two orthogonal idempotents, and the decomposition degenerates to $h_0$ alone exactly when $\mathbf{h} = 0$. The trace and the biquaternion norm read</p>
+<p>real, and the two idempotents are the <strong>eigenprojectors</strong>, $\tilde{Q}\tilde\Pi_{1,2} = \lambda_\pm\tilde\Pi_{1,2}$. Because $\tilde\Pi_1 + \tilde\Pi_2 = e_0$ and $\tilde\Pi_1\tilde\Pi_2 = 0$, the pair is a resolution of the identity, and the formula is a genuine spectral decomposition: every Hermitian element of $\mathbb{M}_+$ is a real combination of two orthogonal idempotents, and the decomposition degenerates to $h_0$ alone exactly when $\mathbf{h} = 0$. The trace and the biquaternion norm read</p>
 <p>$$
 \mathrm{Tr}(\tilde{Q}) = 2h_0 = \lambda_+ + \lambda_-, \qquad N(\tilde{Q}) = h_0^2 - |\mathbf{h}|^2 = \lambda_+\lambda_-,
 $$</p>
@@ -296,11 +296,11 @@ $$</p>
 <h3 id="the-positive-cone-and-the-bloch-ball">The Positive Cone and the Bloch Ball</h3>
 <p>An element $\tilde{Q} \in \mathbb{M}_+$ is <strong>positive</strong> when it is $\tilde{R}^{*}\tilde{R}$ for some $\tilde{R}$, equivalently when its spectrum lies in $[0,\infty)$, equivalently, by the decomposition above, when $h_0 \geq |\mathbf{h}|$. The positive elements form a cone with apex at the origin, and its interior is the set of Hermitian elements with strictly positive spectrum. The one-parameter family through the identity is the <strong>trace-one slice</strong>: with $\tilde\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$ one has $\mathrm{Tr}(\tilde\rho) = 1$, and writing $\mathbf{r} = r\hat{\boldsymbol\mu}$ the spectral decomposition gives</p>
 <p>$$
-\tilde\rho = \frac{1+r}{2}\,\tilde\Pi_+(\hat{\boldsymbol\mu}) + \frac{1-r}{2}\,\tilde\Pi_-(\hat{\boldsymbol\mu}),
+\tilde\rho = \frac{1+r}{2}\,\tilde\Pi_1(\hat{\boldsymbol\mu}) + \frac{1-r}{2}\,\tilde\Pi_2(\hat{\boldsymbol\mu}),
 $$</p>
 <p>so <strong>$\tilde\rho$ is positive exactly when $|\mathbf{r}| \leq 1$</strong>. This is an iff, and its two ends are the two ends of the ball:</p>
 <ul>
-<li>$|\mathbf{r}| = 1$: one eigenvalue is $1$ and the other $0$, the element is an idempotent $\tilde\Pi_\pm(\hat{\boldsymbol\mu})$, a <strong>pure state</strong>; these points are the two-sphere of §<em>The Idempotents</em>.</li>
+<li>$|\mathbf{r}| = 1$: one eigenvalue is $1$ and the other $0$, the element is an idempotent $\tilde\Pi_{1,2}(\hat{\boldsymbol\mu})$, a <strong>pure state</strong>; these points are the two-sphere of §<em>The Idempotents</em>.</li>
 <li>$|\mathbf{r}| = 0$: $\tilde\rho = \tfrac{1}{2}e_0$, the <strong>maximally mixed</strong> state.</li>
 </ul>
 <p>The intermediate values $0 < |\mathbf{r}| < 1$ are the <strong>mixed states</strong>, and the whole set is the <strong>Bloch ball</strong>, the unit ball of the three-dimensional real vector part. The convexity is manifest in the formula: $\tilde\rho$ is a convex combination of two orthogonal idempotents with weights $(1\pm r)/2$, which sum to $1$. The pure states form the boundary sphere and the mixed states the interior, so that a state is pure exactly when it is idempotent — the two notions coincide in the sector and nowhere else. Because $\mathbb{M}_+$ is a real vector space of dimension $4$ and the trace-one condition is one real equation, the state space is three-dimensional, as it must be for a two-state system.</p>
@@ -426,13 +426,13 @@ $$</p>
 <h3 id="the-idempotents">The Idempotents</h3>
 <p>The <strong>idempotents</strong> of $\mathbb{B}$ of the form</p>
 <p>$$
-\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}\left(e_0 \pm i\hat{\boldsymbol\mu}\right), \qquad \hat{\boldsymbol\mu}^2 = -e_0, \; \hat{\boldsymbol\mu} \text{ a real unit pure quaternion},
+\tilde\Pi_{1,2}(\hat{\boldsymbol\mu}) = \tfrac{1}{2}\left(e_0 \pm i\hat{\boldsymbol\mu}\right), \qquad \hat{\boldsymbol\mu}^2 = -e_0, \; \hat{\boldsymbol\mu} \text{ a real unit pure quaternion},
 $$</p>
 <p>lie in $\mathbb{M}_+$: their scalar part $\tfrac{1}{2}$ is real, and their vector part $\pm \tfrac{1}{2} i \hat{\boldsymbol\mu}$ is purely imaginary. They satisfy:</p>
 <ul>
-<li><strong>Hermitian:</strong> $\tilde\Pi_\pm^{*} = \tilde\Pi_\pm$, since $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) \in \mathbb{M}_+$.</li>
-<li><strong>Idempotent:</strong> $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$.</li>
-<li><strong>Unit trace:</strong> $\mathrm{Tr}(\tilde\Pi_\pm) = 2\,\mathrm{Sc}(\tilde\Pi_\pm) = 1$.</li>
+<li><strong>Hermitian:</strong> $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, since $\tilde\Pi_{1,2}(\hat{\boldsymbol\mu}) \in \mathbb{M}_+$.</li>
+<li><strong>Idempotent:</strong> $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$.</li>
+<li><strong>Unit trace:</strong> $\mathrm{Tr}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$.</li>
 </ul>
 <p>These are the biquaternion analogues of <strong>pure-state density matrices</strong> of quantum physics. They are the natural "states" of the informational sector.</p>
 <p><strong>Why they are idempotent.</strong> The single fact behind the whole family is the sign</p>
@@ -441,19 +441,19 @@ $$</p>
 $$</p>
 <p>which is the opposite of the material sector's $\mathbf{q}^2 = -|\mathbf{q}|^2e_0$ for a real vector $\mathbf{q}$. With it,</p>
 <p>$$
-\tilde\Pi_\pm^2 = \tfrac{1}{4}\left(e_0 \pm 2i\hat{\boldsymbol\mu} + (i\hat{\boldsymbol\mu})^2\right) = \tfrac{1}{4}\left(e_0 \pm 2i\hat{\boldsymbol\mu} + e_0\right) = \tilde\Pi_\pm .
+\tilde\Pi_{1,2}^2 = \tfrac{1}{4}\left(e_0 \pm 2i\hat{\boldsymbol\mu} + (i\hat{\boldsymbol\mu})^2\right) = \tfrac{1}{4}\left(e_0 \pm 2i\hat{\boldsymbol\mu} + e_0\right) = \tilde\Pi_{1,2} .
 $$</p>
 <p>The two minus signs cancel: the minus from $i^2$ and the minus from the square of a real vector. In the material sector there is only the second of them, so the corresponding combination is not idempotent — $\tfrac{1}{2}(e_0 + \mathbf{q})$ fails, and indeed $\mathbb{M}_-$ contains no nontrivial idempotent at all. This one sign is why the idempotents, the positive cone and the spectral decomposition all live in $\mathbb{M}_+$ and not in $\mathbb{M}_-$.</p>
 <p><strong>Orthogonality and completeness.</strong> The two idempotents along one axis are complementary and orthogonal,</p>
 <p>$$
-\tilde\Pi_+(\hat{\boldsymbol\mu}) + \tilde\Pi_-(\hat{\boldsymbol\mu}) = e_0, \qquad \tilde\Pi_+(\hat{\boldsymbol\mu})\,\tilde\Pi_-(\hat{\boldsymbol\mu}) = \tilde\Pi_-\tilde\Pi_+ = 0,
+\tilde\Pi_1(\hat{\boldsymbol\mu}) + \tilde\Pi_2(\hat{\boldsymbol\mu}) = e_0, \qquad \tilde\Pi_1(\hat{\boldsymbol\mu})\,\tilde\Pi_2(\hat{\boldsymbol\mu}) = \tilde\Pi_2\tilde\Pi_1 = 0,
 $$</p>
 <p>because $\tfrac{1}{4}\left(e_0 + i\hat{\boldsymbol\mu}\right)\left(e_0 - i\hat{\boldsymbol\mu}\right) = \tfrac{1}{4}\left(e_0 - (i\hat{\boldsymbol\mu})^2\right) = 0$. The pair is a <strong>complete orthogonal pair</strong>, a frame of the algebra, and it is what the spectral decomposition of §<em>The Spectral Decomposition</em> is written in.</p>
 <p><strong>Every pure state is a zero divisor.</strong> The biquaternion norm of the idempotent vanishes identically on the sphere,</p>
 <p>$$
-N\!\left(\tilde\Pi_\pm(\hat{\boldsymbol\mu})\right) = \tfrac{1}{4}\left(e_0 - (i\hat{\boldsymbol\mu})^2\right) = \tfrac{1}{4}\left(e_0 - e_0\right) = 0,
+N\!\left(\tilde\Pi_{1,2}(\hat{\boldsymbol\mu})\right) = \tfrac{1}{4}\left(e_0 - (i\hat{\boldsymbol\mu})^2\right) = \tfrac{1}{4}\left(e_0 - e_0\right) = 0,
 $$</p>
-<p>as the product $\tilde\Pi_+\tilde\Pi_- = 0$ already witnesses with both factors nonzero. So the pure states sit on the zero-divisor cone, while a general mixed state does not: the norm is $N(\tilde\rho) = \tfrac{1}{4}(1 - r^2)$ for $\tilde\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$.</p>
+<p>as the product $\tilde\Pi_1\tilde\Pi_2 = 0$ already witnesses with both factors nonzero. So the pure states sit on the zero-divisor cone, while a general mixed state does not: the norm is $N(\tilde\rho) = \tfrac{1}{4}(1 - r^2)$ for $\tilde\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$.</p>
 <h3 id="the-hermitian-forms">The Hermitian Forms</h3>
 <p>For any biquaternion $\tilde{Q} \in \mathbb{B}$, the <strong>Hermitian form</strong></p>
 <p>$$
@@ -484,7 +484,7 @@ The Hermitian form is the natural "weight" or "energy" of the state $\tilde{Q}$,
 <td>Lorentz boost rotor</td>
 </tr>
 <tr>
-<td>Idempotent $\tilde\Pi_\pm(\hat{\boldsymbol\mu})$</td>
+<td>Idempotent $\tilde\Pi_{1,2}(\hat{\boldsymbol\mu})$</td>
 <td>Hermitian, idempotent, trace 1</td>
 <td>Pure state / projector</td>
 </tr>
@@ -510,9 +510,9 @@ The Hermitian form is the natural "weight" or "energy" of the state $\tilde{Q}$,
 <p>The informational sector reads as the state space, as the carrier of the informational time and as one half of a clock. The state-space reading is the article's own: the idempotents are the pure states, the Bloch ball is the mixtures and the positive sesquilinear form is the probability. The temporal reading is that the real scalar coefficient $ct'$ is the informational projection of the central coordinate $z = ct' + i\,ct$, so an element of $\mathbb{M}_+$ carries one projection of the clock and its partner in $\mathbb{M}_-$ carries the other (<em>Each Sector Is the Other's Clock: the Sector Exchange as Relational Time</em>).</p>
 <p>Two further readings of the state space can be named. Read as <strong>quantum logic</strong>, the idempotents of $\mathbb{M}_+$ are the sharp effects and the partial order of effects makes the sector an effect algebra, and its failure to be a Boolean lattice is the framework's form of contextuality, the obstruction appearing at two qubits and not in the two-dimensional module (<em>Effect Algebras and Orthomodular Lattices</em>, <em>Contextuality and the Kochen–Specker Theorem in Biquaternionic Form</em>). Read as <strong>information geometry</strong>, the positive sesquilinear form induces a statistical distance on the states — the Fubini–Study metric on the boundary of the ball and the Bures metric inside it — and the Fisher information of a measurement is the same form read on a family of states, so the sector carries a metric on states as well as a probability (<em>The Fubini–Study Geometry and the Biquaternion Norm</em>, <em>Fisher Information and the Biquaternion Norm</em>). Boundary: both readings are of the state space as it is; neither adds a measurement postulate, and the identification of the probabilities with frequencies remains the corpus's standing interpretive step.</p>
 <h2 id="summary">Summary</h2>
-<p>The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its biquaternion norm has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$, and the Hermitian forms $\tilde{Q}\tilde{Q}^{*}$.</p>
+<p>The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its biquaternion norm has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde\Pi_{1,2}(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$, and the Hermitian forms $\tilde{Q}\tilde{Q}^{*}$.</p>
 <p>The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^{*}$. The action is linear, preserves $\mathbb{M}_-$, and preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm. The natural dichotomy between unit-norm and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement, the idempotent end being the decoherence of a measurement and the minimal idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ the vacuum of a single fermionic mode.</p>
-<p>Two further structures are carried by the sector and are developed above. Every Hermitian element has a <strong>spectral decomposition</strong> $\tilde{Q} = (h_0 + |\mathbf{h}|)\tilde\Pi_+(\hat{\mathbf{h}}) + (h_0 - |\mathbf{h}|)\tilde\Pi_-(\hat{\mathbf{h}})$ into two orthogonal idempotents, with real eigenvalues $h_0 \pm |\mathbf{h}|$, and the <strong>positive elements</strong> are those with $h_0 \geq |\mathbf{h}|$. On the trace-one slice the positive elements are exactly the $\tilde\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, the <strong>Bloch ball</strong>: the boundary sphere is the pure states, the interior the mixed states, and the centre the maximally mixed state. The whole family rests on one sign, $(i\hat{\boldsymbol\mu})^2 = +e_0$, which is what makes a Hermitian vector square to $+1$ and the corresponding combination idempotent.</p>
+<p>Two further structures are carried by the sector and are developed above. Every Hermitian element has a <strong>spectral decomposition</strong> $\tilde{Q} = (h_0 + |\mathbf{h}|)\tilde\Pi_1(\hat{\mathbf{h}}) + (h_0 - |\mathbf{h}|)\tilde\Pi_2(\hat{\mathbf{h}})$ into two orthogonal idempotents, with real eigenvalues $h_0 \pm |\mathbf{h}|$, and the <strong>positive elements</strong> are those with $h_0 \geq |\mathbf{h}|$. On the trace-one slice the positive elements are exactly the $\tilde\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, the <strong>Bloch ball</strong>: the boundary sphere is the pure states, the interior the mixed states, and the centre the maximally mixed state. The whole family rests on one sign, $(i\hat{\boldsymbol\mu})^2 = +e_0$, which is what makes a Hermitian vector square to $+1$ and the corresponding combination idempotent.</p>
 <p>The product of two elements of one sector is governed by a single rule: the two brackets always land in <strong>opposite</strong> sectors — on two elements of one sector the <strong>commutator</strong> lands in $\mathbb{M}_-$ and the <strong>anticommutator</strong> in $\mathbb{M}_+$, and on two elements of different sectors the two are exchanged — since ${}^{*}$ is an anti-automorphism. $\mathbb{M}_+$ is therefore a Jordan algebra for the anticommutator and $\mathbb{M}_-$ a Lie algebra for the commutator, and neither sector is closed under the other bracket. The square of an element of either sector always lies in $\mathbb{M}_+$, which is why a square can never witness the failure of closure.</p>
 <p>A third structure is the <strong>absence</strong> of one. Read as pairings, the four forms restricted to $\mathbb{M}_+$ are all real-valued, so the sector carries <strong>no area pairing and no conjugate pair of its own</strong>: no two of its directions are exchanged by the central imaginary, and its pairings are symmetric, the probability $H$ and the Euclidean square of signature $(4,0)$, together with the interval $N$ of signature $(1,3)$, and the two sesquilinear forms coincide with the two bilinear ones because the Hermitian conjugation fixes the sector pointwise. The alternating companion that the four forms carry on the complex time and the complex space sector is identically zero here, and the same holds on the material sector: <strong>the two physical sectors are the phase-free ones, and the area pairing belongs to the complex sectors</strong> (<em>Remarkable Subspaces and the Four Forms</em>, <em>Other Remarkable Subspaces</em>).</p>
 <p>The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of quantum information theory for a two-state system. The idempotents are pure-state density matrices, the Hermitian elements are observables, the unitary elements are gates, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\mathrm{Sc}(\tilde{P}\tilde{Q}) = 2\langle\tilde{P},\tilde{Q}\rangle$ is the Born rule. The structural correspondence is not an analogy: it is the same mathematics, expressed in the biquaternion algebra.</p>
@@ -555,7 +555,7 @@ The Hermitian form is the natural "weight" or "energy" of the state $\tilde{Q}$,
 <td>Lorentz rotor (unit-norm biquaternion)</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$</td>
+<td>$\tilde\Pi_{1,2}(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$</td>
 <td>Idempotent (pure-state projector) of unit trace</td>
 </tr>
 <tr>

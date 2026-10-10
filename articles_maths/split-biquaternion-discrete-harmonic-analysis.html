@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces harmonic analysis for split-biquaternion-valued sequences. It follows the elementary functions article, which defined the split biquaternion exponential, and it uses the division theory articles, which characterized the zero divisors as the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$.</p>
 <p>The treatment is purely mathematical. The goal is to define the discrete split-biquaternion Fourier transform, establish its basic properties, show how it decomposes into ordinary complex Fourier transforms via the idempotent decomposition, and identify the points where the split biquaternion structure creates genuinely new phenomena. The continuous analogue is the subject of the companion article on split biquaternion continuous harmonic analysis.</p>
-<p>The key structural fact is the <strong>idempotent decomposition</strong>: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, and the idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ commute with everything. So every power-series function of a split biquaternion, including the Fourier kernel, decomposes into two copies of the corresponding quaternion function, one for each idempotent component. This is the fundamental simplification relative to the biquaternion case.</p>
+<p>The key structural fact is the <strong>idempotent decomposition</strong>: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, and the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ commute with everything. So every power-series function of a split biquaternion, including the Fourier kernel, decomposes into two copies of the corresponding quaternion function, one for each idempotent component. This is the fundamental simplification relative to the biquaternion case.</p>
 <p>Unlike the biquaternion case, the split biquaternion Fourier kernel is <strong>not</strong> defined by the split complex unit $j$, which is the only scalar candidate in the algebra. The unit $j$ satisfies $j^2 = +1$, not $j^2 = -1$, so the exponential $e^{j\theta} = \cosh\theta + j\sinh\theta$ is hyperbolic, not trigonometric. The Fourier kernel in the split biquaternion case is therefore defined by an element whose square is $-1$ in each idempotent component, and the kernel is the pair of the quaternion Fourier kernels of the two components.</p>
 <p>Throughout, a split biquaternion is written</p>
 <p>$$
@@ -65,7 +65,7 @@ $$</p>
 <p>$$
 \tilde{Q}_+ = \sum_{\mu=0}^{3} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu=0}^{3} (q_\mu - q'_\mu) e_\mu.
 $$</p>
-<p>The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$, with $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$.</p>
+<p>The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$.</p>
 <p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel of each idempotent component is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split biquaternion roots of minus one.</p>
 <h2 id="the-fourier-kernel">The Fourier Kernel</h2>
 <h3 id="definition">Definition</h3>
@@ -81,7 +81,7 @@ $$</p>
 <p>where the exponential is the split biquaternion exponential and $\rho$ is viewed as an element of $\mathbb{H}_{\mathbb{D}}$ via the embedding $\mathbb{H} \hookrightarrow \mathbb{H}_{\mathbb{D}}$.</p>
 <p>In the idempotent basis, the kernel decomposes:</p>
 <p>$$
-W_N(n, u) = \exp\left(-2\pi \rho \frac{nu}{N}\right) \tilde\Pi_+ + \exp\left(-2\pi \rho \frac{nu}{N}\right) \tilde\Pi_-,
+W_N(n, u) = \exp\left(-2\pi \rho \frac{nu}{N}\right) \tilde\Pi_1 + \exp\left(-2\pi \rho \frac{nu}{N}\right) \tilde\Pi_2,
 $$</p>
 <p>because the same root $\rho$ is used in both components. The kernel is the same in each idempotent component, so the split biquaternion kernel is the diagonal embedding of the quaternion kernel.</p>
 <p>Since $\rho^2 = -1$, the kernel takes the closed form</p>
@@ -148,7 +148,7 @@ $$</p>
 <p>which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$.</p>
 <p><strong>The transform is not invertible on signals containing zero-divisor samples.</strong> If some $f[n]$ is a zero divisor, the inverse may not reproduce it. The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known; it depends on the cancellations in the sum.</p>
 <h3 id="invertibility-in-the-idempotent-basis">Invertibility in the Idempotent Basis</h3>
-<p>The invertibility condition is cleaner in the idempotent basis. Writing $f[n] = f_+[n] \tilde\Pi_+ + f_-[n] \tilde\Pi_-$ with $f_\pm[n] \in \mathbb{H}$, the sample $f[n]$ is invertible if and only if both components $f_+[n]$ and $f_-[n]$ are nonzero. So the transform is invertible on a signal if and only if, for every $n$, both idempotent components of $f[n]$ are nonzero.</p>
+<p>The invertibility condition is cleaner in the idempotent basis. Writing $f[n] = f_+[n] \tilde\Pi_1 + f_-[n] \tilde\Pi_2$ with $f_\pm[n] \in \mathbb{H}$, the sample $f[n]$ is invertible if and only if both components $f_+[n]$ and $f_-[n]$ are nonzero. So the transform is invertible on a signal if and only if, for every $n$, both idempotent components of $f[n]$ are nonzero.</p>
 <p>This is a <strong>linear</strong> condition in the idempotent basis, in contrast to the quadratic condition in the biquaternion case. The reason is that the split biquaternion algebra is semisimple, and the invertibility criterion is the pair of the invertibility criteria in the two quaternion components.</p>
 <h3 id="symmetry-of-the-spectrum">Symmetry of the Spectrum</h3>
 <p>For a signal $f$ that takes values in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ (i.e., all coefficients are real) and a root $\rho$, the spectrum satisfies a <strong>conjugate symmetry</strong> analogous to the Hermitian symmetry of the ordinary Fourier transform of a real signal.</p>
@@ -167,13 +167,13 @@ $$</p>
 <p>The symmetry is the split biquaternion analogue of the Hermitian symmetry $F[-u] = F[u]^*$ of the ordinary Fourier transform of a real signal. It is the basis for reconstructing a real signal from half of its spectrum.</p>
 <h2 id="factorization-into-complex-fourier-transforms">Factorization into Complex Fourier Transforms</h2>
 <h3 id="the-idempotent-decomposition-of-the-transform">The Idempotent Decomposition of the Transform</h3>
-<p>The transform decomposes in the idempotent basis. Writing $f[n] = f_+[n] \tilde\Pi_+ + f_-[n] \tilde\Pi_-$ and using the fact that the kernel is the same in both components,</p>
+<p>The transform decomposes in the idempotent basis. Writing $f[n] = f_+[n] \tilde\Pi_1 + f_-[n] \tilde\Pi_2$ and using the fact that the kernel is the same in both components,</p>
 <p>$$
-F[u] = \left(\sum_{n=0}^{N-1} W_N(n, u) f_+[n]\right) \tilde\Pi_+ + \left(\sum_{n=0}^{N-1} W_N(n, u) f_-[n]\right) \tilde\Pi_-.
+F[u] = \left(\sum_{n=0}^{N-1} W_N(n, u) f_+[n]\right) \tilde\Pi_1 + \left(\sum_{n=0}^{N-1} W_N(n, u) f_-[n]\right) \tilde\Pi_2.
 $$</p>
 <p>So the transform is the pair of the <strong>quaternion Fourier transforms</strong> of the two idempotent components:</p>
 <p>$$
-F[u] = F_+[u] \tilde\Pi_+ + F_-[u] \tilde\Pi_-,
+F[u] = F_+[u] \tilde\Pi_1 + F_-[u] \tilde\Pi_2,
 $$</p>
 <p>where $F_\pm[u] = \sum_{n=0}^{N-1} W_N(n, u) f_\pm[n]$ is the quaternion Fourier transform of the component $f_\pm$.</p>
 <p>This is the fundamental simplification: the split biquaternion Fourier transform reduces to <strong>two independent quaternion Fourier transforms</strong>, one for each idempotent component. The transform is not a new operation; it is the quaternion Fourier transform applied to each of the two components separately.</p>
@@ -205,7 +205,7 @@ $$</p>
 <ol>
 <li><strong>Idempotent decomposition.</strong> Decompose each sample $f[n]$ into its two idempotent components $f_+[n]$ and $f_-[n]$.</li>
 <li><strong>Quaternion Fourier transform.</strong> Apply the quaternion Fourier transform to each component. This requires four complex Fourier transforms per component (for a general quaternion-valued sequence).</li>
-<li><strong>Reassemble.</strong> Combine the two transformed components into the split biquaternion spectrum $F[u] = F_+[u] \tilde\Pi_+ + F_-[u] \tilde\Pi_-$.</li>
+<li><strong>Reassemble.</strong> Combine the two transformed components into the split biquaternion spectrum $F[u] = F_+[u] \tilde\Pi_1 + F_-[u] \tilde\Pi_2$.</li>
 </ol>
 <p>The cost is eight complex FFTs of size $N$, which is $O(N \log N)$, as opposed to the naive evaluation, which is $O(N^2)$.</p>
 <p>If the signal takes values in the quaternion subspace, only four complex FFTs are needed. If it takes values in the split complex subspace, only two are needed.</p>
@@ -257,7 +257,7 @@ $$</p>
 <h2 id="the-vanishing-norm-issue">The Vanishing-Norm Issue</h2>
 <h3 id="samples-of-vanishing-norm">Samples of Vanishing Norm</h3>
 <p>A sample $f[n]$ with $N(f[n]) = 0$ is a zero divisor. Such samples have the property that they cannot necessarily be recovered from the transform.</p>
-<p>In the idempotent basis, a sample $f[n] = f_+[n] \tilde\Pi_+ + f_-[n] \tilde\Pi_-$ has vanishing norm if and only if $f_+[n] = 0$ or $f_-[n] = 0$. So the vanishing-norm samples are exactly the samples with a vanishing idempotent component.</p>
+<p>In the idempotent basis, a sample $f[n] = f_+[n] \tilde\Pi_1 + f_-[n] \tilde\Pi_2$ has vanishing norm if and only if $f_+[n] = 0$ or $f_-[n] = 0$. So the vanishing-norm samples are exactly the samples with a vanishing idempotent component.</p>
 <h3 id="consequences-for-the-transform">Consequences for the Transform</h3>
 <ul>
 <li><strong>The transform is not necessarily invertible on signals containing zero-divisor samples.</strong></li>
@@ -340,7 +340,7 @@ $$</p>
 <td>Split complex unit, central, $j^2 = +1$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$</td>
+<td>$\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$</td>
 <td>Idempotents of $\mathbb{D}$</td>
 </tr>
 <tr>
@@ -348,7 +348,7 @@ $$</p>
 <td>General split biquaternion</td>
 </tr>
 <tr>
-<td>$\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$</td>
+<td>$\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$</td>
 <td>Idempotent components</td>
 </tr>
 <tr>

@@ -71,7 +71,7 @@ $$</p>
 <p>defines a norm on $X$, equivalent to $\lVert\cdot\rVert$, for which $\theta$ is isometric, $\lVert\theta x\rVert_{\theta} = \lVert x\rVert_{\theta}$; the norms coincide exactly when $\theta$ is already isometric for $\lVert\cdot\rVert$.</p>
 <p><strong>Proof.</strong> The supremum is a norm because it is the supremum of two norms, and it is equivalent because $\lVert x\rVert \leq \lVert x\rVert_{\theta} \leq \max(1, \lVert\theta\rVert)\lVert x\rVert$. Invariance is the computation of <em>Locally Convex Spaces with an Involution</em>: $\lVert\theta x\rVert_{\theta} = \sup(\lVert\theta x\rVert, \lVert\theta^{2}x\rVert) = \sup(\lVert\theta x\rVert, \lVert x\rVert) = \lVert x\rVert_{\theta}$. The equality case is the preceding proposition.</p>
 <h2 id="the-fixed-and-negated-subspaces">The Fixed and Negated Subspaces</h2>
-<p><strong>Proposition (closedness and the inherited norm).</strong> The fixed subspace $X^{\theta}$ and the negated subspace $X^{-}$ are closed subspaces of $X$, and each is a normed space for the restriction of the norm; in the antilinear case $X^{\theta}$ is a real normed space. When $2$ is invertible the averaging maps $\pi_{\pm} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and the direct sum</p>
+<p><strong>Proposition (closedness and the inherited norm).</strong> The fixed subspace $X^{\theta}$ and the negated subspace $X^{-}$ are closed subspaces of $X$, and each is a normed space for the restriction of the norm; in the antilinear case $X^{\theta}$ is a real normed space. When $2$ is invertible the averaging maps $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and the direct sum</p>
 <p>$$
 X = X^{\theta} \oplus X^{-}
 $$</p>
@@ -82,7 +82,7 @@ $$</p>
 \max\bigl(\lVert x_{+}\rVert_{\theta}, \lVert x_{-}\rVert_{\theta}\bigr) \leq \lVert x\rVert_{\theta} \leq \lVert x_{+}\rVert_{\theta} + \lVert x_{-}\rVert_{\theta} ,
 $$</p>
 <p>and the two inequalities are equalities on the summands; the direct sum norm $\lVert x_{+}\rVert_{\theta} + \lVert x_{-}\rVert_{\theta}$ and $\lVert x\rVert_{\theta}$ are equivalent, with the fixed and negated subspaces isometric to the summands.</p>
-<p><strong>Proof.</strong> $\pi_{\pm}$ are contractions for the invariant norm, since $\lVert\pi_{\pm}x\rVert_{\theta} = \sup(\lVert\pi_{\pm}x\rVert, \lVert\theta\pi_{\pm}x\rVert) = \sup(\lVert\pi_{\pm}x\rVert, \lVert\pi_{\pm}x\rVert) = \lVert\pi_{\pm}x\rVert \leq \lVert x\rVert_{\theta}$, giving the lower bound; the upper bound is the triangle inequality. On a summand $\theta$ acts by $\pm\mathrm{id}$, so $\lVert\cdot\rVert_{\theta}$ and $\lVert\cdot\rVert$ agree there.</p>
+<p><strong>Proof.</strong> $\pi_{1,2}$ are contractions for the invariant norm, since $\lVert\pi_{1,2}x\rVert_{\theta} = \sup(\lVert\pi_{1,2}x\rVert, \lVert\theta\pi_{1,2}x\rVert) = \sup(\lVert\pi_{1,2}x\rVert, \lVert\pi_{1,2}x\rVert) = \lVert\pi_{1,2}x\rVert \leq \lVert x\rVert_{\theta}$, giving the lower bound; the upper bound is the triangle inequality. On a summand $\theta$ acts by $\pm\mathrm{id}$, so $\lVert\cdot\rVert_{\theta}$ and $\lVert\cdot\rVert$ agree there.</p>
 <h2 id="the-transposed-involution-and-the-dual-norm">The Transposed Involution and the Dual Norm</h2>
 <p><strong>Definition.</strong> The <strong>transposed involution</strong> of $\theta$ on the dual $X^{*}$ is $\theta'(\varphi) = \varphi \circ \theta$; it is an involution of the same kind, and it is continuous for the dual norm.</p>
 <p><strong>Theorem (the transpose has the same norm).</strong> For a continuous involution $\theta$,</p>
@@ -141,7 +141,7 @@ $$</p>
 <td>Fixed and negated subspaces, normed</td>
 </tr>
 <tr>
-<td>$\pi_{\pm} = \frac12(\mathrm{id}\pm\theta)$</td>
+<td>$\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$</td>
 <td>Averaging projections</td>
 </tr>
 <tr>

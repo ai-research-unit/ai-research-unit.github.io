@@ -53,7 +53,7 @@
         <h1 id="the-idempotent-decomposition-and-the-split-fractal"><strong>The Idempotent Decomposition and the Split Fractal</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion algebra is simple, so its only central idempotents are $0$ and $e_0$; its non-central idempotents are nevertheless the algebraic form of the splitting of an element into two halves, and the halving is what turns a part of the biquaternion dynamics into a product of two complex dynamics. The decomposition is the Peirce decomposition of the algebra with respect to a primitive idempotent: the space splits into four Peirce components, the two diagonal components are the two halves, and the two off-diagonal components couple them. On the two-dimensional complex subalgebra spanned by the idempotent and its complement the two halves are independent, the map splits into two ordinary complex quadratic maps, and the fractal is the product of two complex Julia sets; off that subalgebra the halves interact and the fractal is not a product.</p>
-<p>The idempotents, their classification and the bijection with the roots of $-1$ are <em>Biquaternion Idempotents and Projections</em>; the ideals, the Peirce decomposition and the minimal left ideals are <em>Biquaternion Ideals and Peirce Decomposition</em>; the matrix model and the rank-one elements are <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>; the commutative-plane theorem is <em>The Biquaternion Mandelbrot Set and the Connectedness Locus</em>; the exact slices are <em>The Slices of the Biquaternion Julia Sets</em>; the simplification by central idempotents is <em>The Clifford Decomposition of the Split-Biquaternion Fractals</em> on the split side.</p>
+<p>The idempotents, their classification and the bijection with the roots of $-1$ are <em>Idempotents of the General Plain Algebra</em>; the ideals, the Peirce decomposition and the minimal left ideals are <em>Biquaternion Ideals and Peirce Decomposition</em>; the matrix model and the rank-one elements are <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>; the commutative-plane theorem is <em>The Biquaternion Mandelbrot Set and the Connectedness Locus</em>; the exact slices are <em>The Slices of the Biquaternion Julia Sets</em>; the simplification by central idempotents is <em>The Clifford Decomposition of the Split-Biquaternion Fractals</em> on the split side.</p>
 <p>The article owns the Peirce decomposition of an element, the identification of the two halves, the diagonal model in which the halves are the two entries of a diagonal matrix, the split fractal and its product structure, and the statement that the full biquaternion fractal is not the product.</p>
 <p><strong>Standing convention.</strong> $\tilde\Pi$ is a primitive idempotent, $\tilde\Pi'=e_0-\tilde\Pi$ its complement, and the four Peirce components of an element $\tilde Q$ are</p>
 <p>$$
@@ -96,14 +96,14 @@ $$</p>
 <h2 id="the-split-biquaternion-contrast">The Split-Biquaternion Contrast</h2>
 <p><strong>Proposition (the centrality of the split idempotents).</strong> In the split-biquaternion algebra the idempotents</p>
 <p>$$
-\tilde\Pi_\pm=\tfrac12(e_0\pm j)
+\tilde\Pi_{3,4}=\tfrac12(e_0\pm j)
 $$</p>
 <p>are <strong>central</strong>, $j$ being the central element with $j^2=1$, and the algebra factors as the direct sum of two ideals,</p>
 <p>$$
-\mathbb{H}_{\mathbb{D}}=\mathbb{H}\tilde\Pi_+\oplus\mathbb{H}\tilde\Pi_- , \qquad \mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H},
+\mathbb{H}_{\mathbb{D}}=\mathbb{H}\tilde\Pi_3\oplus\mathbb{H}\tilde\Pi_4 , \qquad \mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H},
 $$</p>
 <p>through central idempotents, so that the decomposition is one of the algebra and of every element and splits the dynamics globally, not on a slice. Then every quadratic map is the pair of two quaternion quadratic maps, the fractal is the product of two quaternion Julia sets, and there is no coupling term. <strong>The biquaternion case is the case of non-central idempotents: the splitting is real but local; the split-biquaternion case is the case of central idempotents: the splitting is global.</strong> The contrast is developed in <em>The Clifford Decomposition of the Split-Biquaternion Fractals</em>.</p>
-<p><strong>Proof.</strong> $j$ is central with $j^2=1$, so $\tilde\Pi_\pm$ are central idempotents with $\tilde\Pi_++\tilde\Pi_-=e_0$ and $\tilde\Pi_+\tilde\Pi_-=0$; the Chinese-remainder decomposition of the algebra follows. In $\mathbb{B}$, by contrast, no non-trivial central idempotent exists because the algebra is simple (<em>Biquaternion Ideals and Peirce Decomposition</em>).</p>
+<p><strong>Proof.</strong> $j$ is central with $j^2=1$, so $\tilde\Pi_{3,4}$ are central idempotents with $\tilde\Pi_3+\tilde\Pi_4=e_0$ and $\tilde\Pi_3\tilde\Pi_4=0$; the Chinese-remainder decomposition of the algebra follows. In $\mathbb{B}$, by contrast, no non-trivial central idempotent exists because the algebra is simple (<em>Biquaternion Ideals and Peirce Decomposition</em>).</p>
 <h2 id="summary">Summary</h2>
 <p>The Peirce decomposition of a biquaternion with respect to a primitive idempotent has four components, which in the matrix model are exactly the four entries of the matrix; the two diagonal components are the halves of the element and the two off-diagonal ones are the coupling. On the idempotent plane the map splits into two independent complex quadratic maps, the filled Julia set is the product of two complex filled Julia sets and the split fractal is that product; the plane is the largest subalgebra on which the dynamics is a product. Off the plane the entries of the square show the coupling: the diagonal entries evolve with the off-diagonal product as a parameter, the off-diagonal entries are multiplied by the trace, and the full fractal is strictly larger than its diagonal slices and not a product. The contrast with the split-biquaternion algebra is sharp: there the idempotents are central, the algebra factors globally, and the fractal is a product of two quaternion Julia sets with no coupling at all.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -144,14 +144,14 @@ $$</p>
 <td>the trace, the coupling multiplier</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm=\tfrac12(e_0\pm j)$</td>
+<td>$\tilde\Pi_{3,4}=\tfrac12(e_0\pm j)$</td>
 <td>the central idempotents of the split-biquaternion algebra</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><em>Biquaternion Idempotents and Projections</em> (<code>articles_maths/biquaternion-idempotents-and-projections.md</code>), for the idempotents, their classification and the standard pair.</li>
+<li><em>Idempotents of the General Plain Algebra</em> (<code>articles_maths/idempotents-of-the-general-plain-algebra.md</code>), for the idempotents, their classification and the standard pair.</li>
 <li><em>Biquaternion Ideals and Peirce Decomposition</em> (<code>articles_maths/biquaternion-ideals-and-peirce-decomposition.md</code>), for the ideals and the Peirce decomposition used here.</li>
 <li><em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> (<code>articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md</code>), for the matrix model and the identification of the components with the entries.</li>
 <li><em>The Slices of the Biquaternion Julia Sets</em> (<code>articles_maths/the-slices-of-the-biquaternion-julia-sets.md</code>), for the placement of the split fractal among the slices.</li>

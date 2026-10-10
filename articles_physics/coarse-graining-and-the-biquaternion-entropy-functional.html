@@ -64,7 +64,7 @@ $$</p>
 <p>where $h$ is the binary entropy function. The entropy vanishes exactly on the null cone, that is, exactly on the zero divisors; it is maximal at the maximally mixed state; and it measures the depth of the state inside the future cone of the biquaternion norm. The functional and the biquaternion norm are thus the same information, read as a number and as a quadratic form.</p>
 <p>Two functionals appear below and must be kept apart, because the whole subject turns on the difference. The <strong>spectral</strong> value $\mathcal{S}(\tilde{\rho})$ is a property of the state and is invariant under reversible rotor flow; it is the fine-grained reference. The <strong>coarse-grained</strong> value $\mathcal{S}(\Phi(\tilde{\rho}))$ is the entropy of the image of the state under a coarse-graining $\Phi$, and it is this second number that increases under a coarse-graining. The second law, in this language, is the statement that a coarse-graining is a contraction of the Bloch ball, so that the entropy of the image is never less than the entropy of the state. The two are reconciled by the fact that the fine-grained value is the <em>minimum</em> over all preparations of the state, and hence the least coarse description the state admits.</p>
 <p>The treatment is <strong>classical</strong>. The entropy here is the Shannon entropy of a coarse description, and the functional is the classical one throughout. The functional $\mathcal{S}$ coincides numerically, on the matrix representative of $\tilde{\rho}$, with the von Neumann entropy of that $2\times 2$ density matrix, and the reader should not be misled by the coincidence: the von Neumann entropy as such, and the entropies attached to POVMs and to entanglement, belong to the informational subcategory of the sibling quantum category, where the companion article <em>Von Neumann Entropy and the Biquaternion Norm</em> develops them, and they are not developed here. Where the quantum reading is used, it is used as a bound, and it is identified as such.</p>
-<p>The probabilities the functional is built from are themselves trace pairings. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm = \mathrm{Tr}(\tilde\Pi_\pm(\hat{\mathbf{r}})\tilde{\rho})$, and the companion article <em>The Born Rule as a Trace Formula — Derivation and Comparison</em> derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.</p>
+<p>The probabilities the functional is built from are themselves trace pairings. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\hat{\mathbf{r}})\tilde{\rho})$, and the companion article <em>The Born Rule as a Trace Formula — Derivation and Comparison</em> derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.</p>
 <p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, normalised by $\mathrm{Tr}(e_0) = 2$; and the trace formula for a state and an observable is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$.</p>
 <h2 id="the-state-space-of-the-informational-sector">The State Space of the Informational Sector</h2>
 <p>A state of the informational sector is an element</p>
@@ -81,9 +81,9 @@ $$</p>
 $$</p>
 <p>so that the states form the <strong>Bloch ball</strong>; the pure states are its boundary sphere. A pure state is an idempotent,</p>
 <p>$$
-\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}\left(e_0 \pm i\,\hat{\boldsymbol{\mu}}\right), \qquad |\hat{\boldsymbol{\mu}}| = 1, \qquad \tilde\Pi_\pm^2 = \tilde\Pi_\pm ,
+\tilde\Pi_{1,2}(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}\left(e_0 \pm i\,\hat{\boldsymbol{\mu}}\right), \qquad |\hat{\boldsymbol{\mu}}| = 1, \qquad \tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2} ,
 $$</p>
-<p>and conversely every idempotent of $\mathbb{M}_+$ has this form. The complementary idempotents are orthogonal and complete, $\tilde\Pi_+\tilde\Pi_- = 0$ and $\tilde\Pi_+ + \tilde\Pi_- = e_0$.</p>
+<p>and conversely every idempotent of $\mathbb{M}_+$ has this form. The complementary idempotents are orthogonal and complete, $\tilde\Pi_1\tilde\Pi_2 = 0$ and $\tilde\Pi_1 + \tilde\Pi_2 = e_0$.</p>
 <h3 id="the-biquaternion-norm-of-a-state">The Biquaternion Norm of a State</h3>
 <p>The biquaternion norm of the algebra is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On the state it evaluates to a scalar multiple of the identity:</p>
 <p>$$
@@ -118,14 +118,14 @@ $$</p>
 <h3 id="definition-from-the-spectral-decomposition">Definition from the Spectral Decomposition</h3>
 <p>The logarithm of a state is evaluated with the idempotents. Writing $\hat{\mathbf{r}} = \mathbf{r}/|\mathbf{r}|$ for a state with $\mathbf{r} \neq 0$, the spectral decomposition of the state in its own basis is</p>
 <p>$$
-\tilde{\rho} = \lambda_+\, \tilde\Pi_+(\hat{\mathbf{r}}) + \lambda_-\, \tilde\Pi_-(\hat{\mathbf{r}}), \qquad
+\tilde{\rho} = \lambda_+\, \tilde\Pi_1(\hat{\mathbf{r}}) + \lambda_-\, \tilde\Pi_2(\hat{\mathbf{r}}), \qquad
 \lambda_\pm = \tfrac{1}{2}\left(1 \pm |\mathbf{r}|\right),
 $$</p>
 <p>as one verifies directly from the definitions of the idempotents. The eigenvalues $\lambda_\pm$ are the classical probabilities of the two pointer outcomes in the eigenbasis, they are non-negative for $|\mathbf{r}| \le 1$, and they sum to one. The functional calculus of the algebra then gives</p>
 <p>$$
-\log\tilde{\rho} = \left(\log\lambda_+\right)\tilde\Pi_+(\hat{\mathbf{r}}) + \left(\log\lambda_-\right)\tilde\Pi_-(\hat{\mathbf{r}}),
+\log\tilde{\rho} = \left(\log\lambda_+\right)\tilde\Pi_1(\hat{\mathbf{r}}) + \left(\log\lambda_-\right)\tilde\Pi_2(\hat{\mathbf{r}}),
 $$</p>
-<p>which is the principal branch on the positive part of $\mathbb{M}_+$; on the general algebra the logarithm is multivalued, and positivity of the state removes the ambiguity by fixing the branch. Multiplying and taking the scalar part, using $\mathrm{Sc}(\tilde\Pi_\pm) = \tfrac{1}{2}$, gives $\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = \tfrac{1}{2}(\lambda_+\log\lambda_+ + \lambda_-\log\lambda_-)$, and therefore</p>
+<p>which is the principal branch on the positive part of $\mathbb{M}_+$; on the general algebra the logarithm is multivalued, and positivity of the state removes the ambiguity by fixing the branch. Multiplying and taking the scalar part, using $\mathrm{Sc}(\tilde\Pi_{1,2}) = \tfrac{1}{2}$, gives $\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = \tfrac{1}{2}(\lambda_+\log\lambda_+ + \lambda_-\log\lambda_-)$, and therefore</p>
 <p>$$
 \mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}\!\left(\tilde{\rho}\log\tilde{\rho}\right)
 = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_- .
@@ -136,7 +136,7 @@ $$</p>
 h(x) = -\frac{1+x}{2}\log\frac{1+x}{2} - \frac{1-x}{2}\log\frac{1-x}{2},
 $$</p>
 <p>with the boundary values $h(0) = \log 2$ and $h(1) = 0$.</p>
-<p>The evaluation is stable under the same computation in the full algebra. For the interior state obtained by superposing two orthogonal pure states with equal weight, $\tilde{\rho} = \tfrac{1}{2}\left(\tilde\Pi_+(e_1) + \tilde\Pi_+(e_2)\right)$, one has $\mathbf{r} = \tfrac{1}{2}(e_1 + e_2)$, $|\mathbf{r}| = 1/\sqrt{2}$, and the two routes agree:</p>
+<p>The evaluation is stable under the same computation in the full algebra. For the interior state obtained by superposing two orthogonal pure states with equal weight, $\tilde{\rho} = \tfrac{1}{2}\left(\tilde\Pi_1(e_1) + \tilde\Pi_1(e_2)\right)$, one has $\mathbf{r} = \tfrac{1}{2}(e_1 + e_2)$, $|\mathbf{r}| = 1/\sqrt{2}$, and the two routes agree:</p>
 <p>$$
 \mathcal{S} = -2\,\mathrm{Sc}\!\left(\tilde{\rho}\log\tilde{\rho}\right) = 0.4164955307\ldots,
 $$</p>
@@ -188,9 +188,9 @@ $$</p>
 <li><strong>Trace preservation.</strong> $\mathrm{Tr}(\Phi(\tilde{\rho})) = \mathrm{Tr}(\tilde{\rho})$, so that a state is sent to a state. Equivalently the dual map fixes the identity, $\Phi^{*}(e_0) = e_0$.</li>
 <li><strong>Idempotency and unitality.</strong> $\Phi \circ \Phi = \Phi$ and $\Phi(e_0) = e_0$. The first says that coarse-graining twice is coarse-graining once: once a distinction has been discarded, it cannot be discarded again. The second says that the maximally mixed state is already as coarse as the description can be, so it is fixed.</li>
 </ul>
-<p>A linear, completely positive, trace-preserving, idempotent, unital map is a <strong>conditional expectation</strong>: it projects the state space onto the states of a commutative subalgebra, the subalgebra of the quantities the description retains. For a single qubit the commutative subalgebras of $\mathbb{B}$ are two-dimensional, generated by a pair of orthogonal idempotents, and the conditional expectation onto the subalgebra generated by $\tilde\Pi_\pm(\hat{\mathbf{n}})$ is the fully dephasing map</p>
+<p>A linear, completely positive, trace-preserving, idempotent, unital map is a <strong>conditional expectation</strong>: it projects the state space onto the states of a commutative subalgebra, the subalgebra of the quantities the description retains. For a single qubit the commutative subalgebras of $\mathbb{B}$ are two-dimensional, generated by a pair of orthogonal idempotents, and the conditional expectation onto the subalgebra generated by $\tilde\Pi_{1,2}(\hat{\mathbf{n}})$ is the fully dephasing map</p>
 <p>$$
-\Phi_{\hat{\mathbf{n}}}(\tilde{\rho}) = \tilde\Pi_+(\hat{\mathbf{n}})\,\tilde{\rho}\,\tilde\Pi_+(\hat{\mathbf{n}}) + \tilde\Pi_-(\hat{\mathbf{n}})\,\tilde{\rho}\,\tilde\Pi_-(\hat{\mathbf{n}}) .
+\Phi_{\hat{\mathbf{n}}}(\tilde{\rho}) = \tilde\Pi_1(\hat{\mathbf{n}})\,\tilde{\rho}\,\tilde\Pi_1(\hat{\mathbf{n}}) + \tilde\Pi_2(\hat{\mathbf{n}})\,\tilde{\rho}\,\tilde\Pi_2(\hat{\mathbf{n}}) .
 $$</p>
 <p>This is the map of the companion article <em>Decoherence as Idempotent Projection</em> at $p = 1$. On the Bloch vector it acts by</p>
 <p>$$
@@ -284,7 +284,7 @@ $$</p>
 <p>$$
 \mathcal{S}(\tilde{\rho}) \le H(w) ,
 $$</p>
-<p>with equality exactly for the spectral ensemble, whose states are the two eigenprojectors $\tilde\Pi_\pm(\hat{\mathbf{r}})$ with weights $\lambda_\pm$. The fine-grained entropy is therefore the <strong>minimum over preparations</strong> — the least coarse description the state admits. A partition of the pure-state sphere into cells is one preparation among many; merging cells lowers $H$ but changes the mean state, so the comparison is not between $H$ and the entropy of the <em>same</em> state. The invariant entropy of the state is the infimum, and the coarse-grained entropies are the values above it.</p>
+<p>with equality exactly for the spectral ensemble, whose states are the two eigenprojectors $\tilde\Pi_{1,2}(\hat{\mathbf{r}})$ with weights $\lambda_\pm$. The fine-grained entropy is therefore the <strong>minimum over preparations</strong> — the least coarse description the state admits. A partition of the pure-state sphere into cells is one preparation among many; merging cells lowers $H$ but changes the mean state, so the comparison is not between $H$ and the entropy of the <em>same</em> state. The invariant entropy of the state is the infimum, and the coarse-grained entropies are the values above it.</p>
 <p>The identity is verified on the three-point ensemble</p>
 <p>$$
 w = (0.5,\,0.3,\,0.2), \qquad \hat{\boldsymbol{\mu}} = (e_1,\,e_2,\,-e_3),
@@ -341,7 +341,7 @@ $$</p>
 <td>State of the informational sector, Bloch vector $\mathbf{r}$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$</td>
+<td>$\tilde\Pi_{1,2}(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$</td>
 <td>Idempotent (pure state, rank-one projector)</td>
 </tr>
 <tr>
@@ -369,7 +369,7 @@ $$</p>
 <td>Purity</td>
 </tr>
 <tr>
-<td>$\log\tilde{\rho} = (\log\lambda_+)\tilde\Pi_+(\hat{\mathbf{r}}) + (\log\lambda_-)\tilde\Pi_-(\hat{\mathbf{r}})$</td>
+<td>$\log\tilde{\rho} = (\log\lambda_+)\tilde\Pi_1(\hat{\mathbf{r}}) + (\log\lambda_-)\tilde\Pi_2(\hat{\mathbf{r}})$</td>
 <td>Logarithm of a state, $|\mathbf{r}|<1$</td>
 </tr>
 <tr>
@@ -389,7 +389,7 @@ $$</p>
 <td>Coarse-graining (conditional expectation)</td>
 </tr>
 <tr>
-<td>$\Phi_{\hat{\mathbf{n}}}(\tilde{\rho}) = \tilde\Pi_+\tilde{\rho}\tilde\Pi_+ + \tilde\Pi_-\tilde{\rho}\tilde\Pi_-$</td>
+<td>$\Phi_{\hat{\mathbf{n}}}(\tilde{\rho}) = \tilde\Pi_1\tilde{\rho}\tilde\Pi_1 + \tilde\Pi_2\tilde{\rho}\tilde\Pi_2$</td>
 <td>Pointer coarse-graining along $\hat{\mathbf{n}}$</td>
 </tr>
 <tr>

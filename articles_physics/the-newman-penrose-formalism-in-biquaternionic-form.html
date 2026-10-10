@@ -81,7 +81,7 @@ $$</p>
 <p>Two features of (1) are worth naming because they are the source of most sign errors in this subject. First, the tetrad is <strong>not</strong> an orthonormal frame: its legs are null, so the metric in tetrad components is off-diagonal, and the completeness relation that inverts (1) carries the off-diagonal signs. Second, $l$ and $n$ are real four-vectors while $m$ and $\bar m$ are complex conjugates; the tetrad is a basis of the complexified material sector, of complex dimension four, not of the real $\mathbb{M}_-$.</p>
 <p>The tetrad legs are labelled in the order $(e_1, e_2, e_3, e_4) = (l, n, m, \bar m)$ when a tetrad index is needed. Greek letters $\mu,\nu,\dots$ run over the coordinate directions of the material sector, and tetrad indices $a,b,\dots$ over the four legs.</p>
 <h2 id="the-null-tetrad-as-a-frame-of-zero-divisors">The Null Tetrad as a Frame of Zero Divisors</h2>
-<p>The framework's criterion for a zero divisor is a statement about the biquaternion norm. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $N(\tilde Q)=0$, and under the isomorphism $\Phi$ the nonzero zero divisors are exactly the rank-one matrices (<em>Biquaternion Zero Divisors</em>). Restricted to the material sector, $N(\tilde Q) = -q_0^2+q_1^2+q_2^2+q_3^2$, so a nonzero element of $\mathbb{M}_-$ is a zero divisor exactly when its four-vector is null. The Newman–Penrose construction asks for four null vectors; the framework has a name for them already.</p>
+<p>The framework's criterion for a zero divisor is a statement about the biquaternion norm. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $N(\tilde Q)=0$, and under the isomorphism $\Phi$ the nonzero zero divisors are exactly the rank-one matrices (<em>Zero Divisors of the General Plain Algebra</em>). Restricted to the material sector, $N(\tilde Q) = -q_0^2+q_1^2+q_2^2+q_3^2$, so a nonzero element of $\mathbb{M}_-$ is a zero divisor exactly when its four-vector is null. The Newman–Penrose construction asks for four null vectors; the framework has a name for them already.</p>
 <p>Take the tetrad</p>
 <p>$$
 l = \frac{i}{\sqrt2}e_0 - \frac{1}{\sqrt2}e_3, \qquad
@@ -109,7 +109,7 @@ $$</p>
 <p>where $E_{ij}$ has $1$ in position $(i,j)$ and $0$ elsewhere. Each image has rank one, so the zero-divisor property is visible by rank as well as by norm.</p>
 <p>Equation (3) is the precise sense in which the null tetrad is native to the algebra. Up to the common factor $\sqrt2\,i$, the Newman–Penrose tetrad <strong>is</strong> the matrix-unit basis of $\mathbb{B}\cong M_2(\mathbb{C})$. The spinor-module article already names that basis:</p>
 <p>$$
-p = \tfrac12(e_0+ie_3), \quad q = \tfrac12(e_0-ie_3), \quad x = \tfrac12(ie_1-e_2), \quad y = \tfrac12(ie_1+e_2),
+p = \tfrac12(e_0+ie_3), \quad q = \tfrac12(e_0-ie_3), \quad \tilde\Upsilon_1 = \tfrac12(ie_1-e_2), \quad \tilde\Upsilon_2 = \tfrac12(ie_1+e_2),
 $$</p>
 <p>with $\Phi(p)=E_{11}$, $\Phi(q)=E_{22}$, $\Phi(x)=E_{12}$, $\Phi(y)=E_{21}$, and with $p,q$ the primitive orthogonal idempotents: $p^2=p$, $q^2=q$, $pq=qp=0$. Therefore</p>
 <p>$$
@@ -121,9 +121,9 @@ $$</p>
 <p>$$
 \langle l,n\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(p\,\bar q) = -2\,\mathrm{Sc}(p^2) = -1 ,
 $$</p>
-<p>and because $\bar y = -y$ and $xy = p$ in the matrix-unit relations,</p>
+<p>and because $\bar{\tilde\Upsilon_2} = -\tilde\Upsilon_2$ and $\tilde\Upsilon_1\tilde\Upsilon_2 = p$ in the matrix-unit relations,</p>
 <p>$$
-\langle m,\bar m\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(x\,\bar y) = 2\,\mathrm{Sc}(xy) = 2\,\mathrm{Sc}(p) = +1 .
+\langle m,\bar m\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(\tilde\Upsilon_1\,\bar{\tilde\Upsilon_2}) = 2\,\mathrm{Sc}(\tilde\Upsilon_1\tilde\Upsilon_2) = 2\,\mathrm{Sc}(p) = +1 .
 $$</p>
 <p>The mixed products vanish because the off-diagonal units have vanishing scalar part, $\mathrm{Sc}(x)=\mathrm{Sc}(y)=0$, and the relevant products are off-diagonal matrix units. All ten inner products were recomputed from (4); the result is the off-diagonal tetrad metric</p>
 <p>$$
@@ -353,7 +353,7 @@ $$</p>
 <td>normalized spinor dyad, $\varepsilon(o,\iota)=1$</td>
 </tr>
 <tr>
-<td>$p,q,x,y$</td>
+<td>$p,q,\tilde\Upsilon_1,\tilde\Upsilon_2$</td>
 <td>matrix units $E_{11},E_{22},E_{12},E_{21}$ in $\mathbb{B}$</td>
 </tr>
 <tr>
@@ -413,7 +413,7 @@ $$</p>
 <li><em>Gravitational Waves in Biquaternionic Form</em>, for the null wave vector and the component count $10\to6\to2$ that the null tetrad is used to organise.</li>
 <li><em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, for the spinor module $S$, the matrix units $p,q,x,y$, the symplectic form, and the left and right actions on which the dyad construction rests.</li>
 <li><em>The Null Quadric and Its Projective Geometry</em>, for the null cone as the zero-divisor cone, the rank-one description, and the factorization of null biquaternions into mixed spinors.</li>
-<li><em>Biquaternion Zero Divisors</em>, for the biquaternion-norm criterion and the classification of zero divisors used throughout.</li>
+<li><em>Zero Divisors of the General Plain Algebra</em>, for the biquaternion-norm criterion and the classification of zero divisors used throughout.</li>
 <li><em>The Spinor-Helicity Formalism and Biquaternions</em>, for the factorization of a null momentum into a spinor bilinear, of which the null tetrad is the four-legged version.</li>
 <li><em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, for the material sector, its biquaternion norm, and the identification of its null cone with the zero divisors.</li>
 <li><em>Spinors</em>, for the two-component spinor conventions.</li>

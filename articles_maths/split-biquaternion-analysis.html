@@ -61,11 +61,11 @@
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$</p>
 <p>The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$, with $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.</p>
-<p>The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is</p>
+<p>The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is</p>
 <p>$$
-\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2,
 $$</p>
-<p>with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.</p>
+<p>with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quaternions.</p>
 <h2 id="the-metric-structure-of-math15">The Metric Structure of $\mathbb{H}_{\mathbb{D}}$</h2>
 <h3 id="the-euclidean-norm">The Euclidean Norm</h3>
 <p>The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is a real vector space of dimension $8$. The <strong>Euclidean norm</strong> is</p>
@@ -298,9 +298,9 @@ $$</p>
 $$</p>
 <p>This contains terms that couple the four components of $\tilde{U}$ to the partial derivatives.</p>
 <h3 id="the-operators-in-the-idempotent-basis">The Operators in the Idempotent Basis</h3>
-<p>Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the differential operators can be expressed in the idempotent basis. For a function $\tilde{F} = \tilde{F}_+ \tilde\Pi_+ + \tilde{F}_- \tilde\Pi_-$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts componentwise:</p>
+<p>Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the differential operators can be expressed in the idempotent basis. For a function $\tilde{F} = \tilde{F}_+ \tilde\Pi_1 + \tilde{F}_- \tilde\Pi_2$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts componentwise:</p>
 <p>$$
-\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) \tilde\Pi_+ + (\tilde{\nabla} \tilde{F}_-) \tilde\Pi_-,
+\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) \tilde\Pi_1 + (\tilde{\nabla} \tilde{F}_-) \tilde\Pi_2,
 $$</p>
 <p>where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way.</p>
 <p>So the split biquaternion analysis is the quaternion analysis applied to each of the two idempotent components separately. This is the cleanest way to understand the structure of the theory, and it is a consequence of the semisimple structure of the algebra.</p>
@@ -327,7 +327,7 @@ $$</p>
 <p>$$
 \{\xi \in \mathbb{H}_{\mathbb{D}} : \xi^2 = -1\} \cong \mathbb{S}^2 \times \mathbb{S}^2.
 $$</p>
-<p>The isomorphism is given by $\xi \mapsto (\mu_+, \mu_-)$, where $\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-$ and $\mu_\pm$ are unit pure real quaternions.</p>
+<p>The isomorphism is given by $\xi \mapsto (\mu_+, \mu_-)$, where $\xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2$ and $\mu_\pm$ are unit pure real quaternions.</p>
 <p>The parametrisation $\xi \mapsto (\mu_+, \mu_-)$ is a regular parametrisation: its differential has rank $4$ everywhere, because the two-sphere is a manifold and the parametrisation is a product of the two identity maps. So the root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is a compact four-dimensional embedded submanifold, isomorphic to $\mathbb{S}^2 \times \mathbb{S}^2$. The proof of regularity uses the derivative, and for that reason the manifold statement is placed here in the analysis rather than in the algebraic article <em>Split-Biquaternion Roots of Minus One</em>, where the root set is determined only as a set.</p>
 <h3 id="comparison-with-the-biquaternion-root-set">Comparison with the Biquaternion Root Set</h3>
 <p>The biquaternion root set has dimension 4 (the non-trivial family is four-dimensional, and the degenerate families are lower-dimensional). So both root sets have dimension 4, but their structures are different: the biquaternion root set is a four-dimensional stratified space with a more complicated topology, while the split biquaternion root set is the product of two two-spheres.</p>
@@ -399,7 +399,7 @@ $$</p>
 <td>Split complex unit, central, $j^2 = +1$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$, $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$</td>
+<td>$\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$, $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$</td>
 <td>Idempotents of $\mathbb{D}$</td>
 </tr>
 <tr>
@@ -423,7 +423,7 @@ $$</p>
 <td>Split-Biquaternion norm</td>
 </tr>
 <tr>
-<td>$\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$</td>
+<td>$\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$</td>
 <td>Idempotent components</td>
 </tr>
 <tr>

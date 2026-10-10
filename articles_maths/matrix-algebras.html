@@ -63,7 +63,18 @@ $$</p>
 <p>$$
 E_{ij}E_{kl} = \delta_{jk}E_{il},
 $$</p>
-<p>where $\delta_{jk}$ is $1$ if $j = k$ and $0$ otherwise.</p>
+<p>where $\delta_{jk}$ is $1$ if $j = k$ and $0$ otherwise. For $n = 2$ the four units are the matrices</p>
+<p>$$
+E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad
+E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad
+E_{21}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\quad
+E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix},
+$$</p>
+<p>and the rule reads concretely</p>
+<p>$$
+E_{12}E_{21}=\begin{pmatrix}0&1\\0&0\end{pmatrix}\begin{pmatrix}0&0\\1&0\end{pmatrix}=\begin{pmatrix}1&0\\0&0\end{pmatrix}=E_{11},\qquad
+E_{12}E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix}\begin{pmatrix}0&1\\0&0\end{pmatrix}=\begin{pmatrix}0&0\\0&0\end{pmatrix}=0 .
+$$</p>
 <p><em>Proof.</em> The matrix $E_{ij}E_{kl}$ has entry in position $(p,q)$ equal to $\sum_r (E_{ij})_{pr}(E_{kl})_{rq} = \sum_r \delta_{ip}\delta_{jr}\delta_{kr}\delta_{lq} = \delta_{jr}\delta_{kr}\delta_{ip}\delta_{lq}$. The sum over $r$ collapses to $\delta_{jk}$, so the entry is $\delta_{jk}\delta_{ip}\delta_{lq}$, which is the $(p,q)$-entry of $\delta_{jk}E_{il}$.</p>
 <p>Two consequences are used constantly. First, $E_{ij}E_{jl} = E_{il}$, so any matrix unit is the product of two others; second, $E_{ij}E_{kl} = 0$ whenever $j \neq k$, so there are many zero-divisor pairs as soon as $n \geq 2$, and $M_n(R)$ is not a domain. The matrix units satisfy $E_{ij} = E_{ik}E_{kj}$ for every $k$, which is the identity that makes the ideal theory of $M_n(R)$ trivial.</p>
 <h2 id="the-algebra-as-an-endomorphism-algebra">The Algebra as an Endomorphism Algebra</h2>
@@ -81,7 +92,15 @@ $$</p>
 <p>$$
 \det A = \sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_{i=1}^n A_{i,\sigma(i)} \in R .
 $$</p>
-<p>Both are polynomial functions of the entries, so they are defined over any commutative ring.</p>
+<p>Both are polynomial functions of the entries, so they are defined over any commutative ring. For $n = 2$, with $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ and $B = \begin{pmatrix} a' & b' \\ c' & d' \end{pmatrix}$, they read</p>
+<p>$$
+\operatorname{Tr} A = a + d, \qquad \det A = ad - bc,
+$$</p>
+<p>$$
+AB=\begin{pmatrix} a & b \\ c & d \end{pmatrix}\begin{pmatrix} a' & b' \\ c' & d' \end{pmatrix}=\begin{pmatrix} aa'+bc' & ab'+bd' \\ ca'+dc' & cb'+dd' \end{pmatrix},\qquad
+\operatorname{Tr}(AB)=\operatorname{Tr}(BA)=aa'+bc'+cb'+dd',
+$$</p>
+<p>the last identity exhibiting the cyclic invariance on the entries.</p>
 <p><strong>Proposition (properties).</strong> For $A, B \in M_n(R)$:</p>
 <ol>
 <li>$\operatorname{Tr}(A+B) = \operatorname{Tr}A + \operatorname{Tr}B$ and $\operatorname{Tr}(\lambda A) = \lambda\operatorname{Tr}A$;</li>
@@ -124,7 +143,14 @@ $$</p>
 = \delta_{ji'}\delta_{lk'}\, \Phi\bigl(E_{ij'}\otimes E_{kl'}\bigr)
 = \delta_{ji'}\delta_{lk'}\, E_{(i,k),(j',l')},
 $$</p>
-<p>which is exactly the product $E_{(i,k),(j,l)}E_{(i',k'),(j',l')}$; and it sends $I_m\otimes I_n$ to $I_{mn}$.</p>
+<p>which is exactly the product $E_{(i,k),(j,l)}E_{(i',k'),(j',l')}$; and it sends $I_m\otimes I_n$ to $I_{mn}$. For $m = n = 2$ the formula reads on the units</p>
+<p>$$
+E_{12}\otimes E_{21}
+=\begin{pmatrix}0&1\\0&0\end{pmatrix}\otimes\begin{pmatrix}0&0\\1&0\end{pmatrix}
+=\begin{pmatrix}0&0&0&0\\0&0&1&0\\0&0&0&0\\0&0&0&0\end{pmatrix}
+=E_{(1,2),(2,1)}=E_{2,3},
+$$</p>
+<p>the index $(1,2)$ being the integer $(1-1)\cdot 2 + 2 = 2$ and $(2,1)$ the integer $3$.</p>
 <p>The formula is the algebraic statement that the tensor product of two matrix algebras is again a matrix algebra, of size the product of the sizes; the two factors embed as the subalgebras of matrices acting on the two tensor legs, and the two images commute. Iterating, $M_{n_1}(k)\otimes\dots\otimes M_{n_r}(k) \cong M_{n_1\cdots n_r}(k)$. The construction is the matrix case of the tensor product of algebras in <em>Tensor Products of Algebras</em>.</p>
 <h2 id="the-regular-module">The Regular Module</h2>
 <p>$M_n(k)$ is a left module over itself in the evident way, the <strong>regular module</strong>. The standard basis of $k^n$ as a column vector gives</p>
@@ -132,7 +158,7 @@ $$</p>
 M_n(k) = I_{V_1} \oplus \dots \oplus I_{V_n},
 $$</p>
 <p>where $V_j = ke_j$ is the $j$-th coordinate line and $I_{V_j}$ is the minimal left ideal of matrices supported in the $j$-th column. Each $I_{V_j}$ is isomorphic to the simple module $k^n$ (column vectors), so the regular module is a direct sum of $n$ copies of the unique simple left module; this is the concrete form of the Wedderburn structure theory: $M_n(k)$ is the matrix algebra over the division ring $k$, and its regular module is $n$ copies of the unique simple module $k^n$. The same decomposition with $k$ replaced by a division ring $D$ describes $M_n(D)$, the general simple finite-dimensional algebra, whose simple module is $D^n$.</p>
-<h2 id="the-case-math193">The Case $n = 2$</h2>
+<h2 id="the-case-math207">The Case $n = 2$</h2>
 <p>For $n = 2$ the algebra is four-dimensional, with basis $E_{11}, E_{12}, E_{21}, E_{22}$ and multiplication</p>
 <p>$$
 E_{11}^2 = E_{11}, \quad E_{22}^2 = E_{22}, \quad E_{12}^2 = E_{21}^2 = 0, \quad E_{11}E_{22} = E_{22}E_{11} = 0,
@@ -155,7 +181,14 @@ $$</p>
 <p>$$
 \langle A, B\rangle = \operatorname{Tr}(AB)
 $$</p>
-<p>is symmetric, associative in the sense that $\langle AB, C\rangle = \langle A, BC\rangle$, and non-degenerate.</p>
+<p>is symmetric, associative in the sense that $\langle AB, C\rangle = \langle A, BC\rangle$, and non-degenerate. In the basis $(E_{11},E_{12},E_{21},E_{22})$ of $M_2(k)$ its Gram matrix is</p>
+<p>$$
+\bigl(\langle E_{ij},E_{kl}\rangle\bigr)
+=\bigl(\operatorname{Tr}(E_{ij}E_{kl})\bigr)
+=\bigl(\delta_{jk}\delta_{il}\bigr)
+=\begin{pmatrix} 1&0&0&0\\ 0&0&1&0\\ 0&1&0&0\\ 0&0&0&1 \end{pmatrix},
+$$</p>
+<p>of rank $4$ and signature $(3,1)$, the general count for $M_n$ being $\bigl(\tfrac{n^2+n}{2},\tfrac{n^2-n}{2}\bigr)$.</p>
 <p><em>Proof.</em> Symmetry is $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$. Associativity is $\operatorname{Tr}((AB)C) = \operatorname{Tr}(A(BC))$. For non-degeneracy, suppose $\langle A, B\rangle = 0$ for all $B$; taking $B = E_{ji}$ gives $\operatorname{Tr}(AE_{ji}) = A_{ij} = 0$ for all $i,j$, hence $A = 0$.</p>
 <p>The trace form is the concrete case of the non-degenerate associative form that makes $M_n(k)$ a <strong>symmetric Frobenius algebra</strong>, and it can be used in place of the matrix units in many arguments, for instance to identify the dual of $M_n(k)$ with itself.</p>
 <p><strong>Theorem (Skolem–Noether, standard).</strong> Every $k$-algebra automorphism $\varphi$ of $M_n(k)$ is inner: there is $P \in \mathrm{GL}_n(k)$ with</p>

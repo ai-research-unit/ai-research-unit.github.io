@@ -75,7 +75,7 @@ $$</p>
 <p>$$
 \tilde{\rho}^2 = \tilde{\rho} \qquad \Longleftrightarrow \qquad |\mathbf{r}| = 1 .
 $$</p>
-<p>For $\mathbf{r} \neq 0$ the pure state is the rank-one projector $\tilde\Pi_+(\hat{\mathbf{r}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{r}})$, with $\hat{\mathbf{r}} = \mathbf{r}/|\mathbf{r}|$ a unit pure real quaternion; the complementary idempotent $\tilde\Pi_-(\hat{\mathbf{r}}) = \tfrac{1}{2}(e_0 - i\hat{\mathbf{r}})$ corresponds to the antipodal point. The pure states are the boundary sphere of the Bloch ball, which is also the trace-one slice of the future light cone of the biquaternion norm, since</p>
+<p>For $\mathbf{r} \neq 0$ the pure state is the rank-one projector $\tilde\Pi_1(\hat{\mathbf{r}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{r}})$, with $\hat{\mathbf{r}} = \mathbf{r}/|\mathbf{r}|$ a unit pure real quaternion; the complementary idempotent $\tilde\Pi_2(\hat{\mathbf{r}}) = \tfrac{1}{2}(e_0 - i\hat{\mathbf{r}})$ corresponds to the antipodal point. The pure states are the boundary sphere of the Bloch ball, which is also the trace-one slice of the future light cone of the biquaternion norm, since</p>
 <p>$$
 N(\tilde{\rho}) = \tfrac{1}{4}\left(1 - |\mathbf{r}|^2\right)e_0 .
 $$</p>
@@ -97,22 +97,22 @@ $$</p>
 <p>The companion article <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em> constructs the canonical coherence-destroying channel and works out its properties. We recall its results and apply them.</p>
 <p>Let $\hat{\mathbf{n}}$ be a unit pure real quaternion and let</p>
 <p>$$
-\tilde\Pi_+(\hat{\mathbf{n}}) = \tfrac{1}{2}\left(e_0 + i\hat{\mathbf{n}}\right), \qquad
-\tilde\Pi_-(\hat{\mathbf{n}}) = \tfrac{1}{2}\left(e_0 - i\hat{\mathbf{n}}\right)
+\tilde\Pi_1(\hat{\mathbf{n}}) = \tfrac{1}{2}\left(e_0 + i\hat{\mathbf{n}}\right), \qquad
+\tilde\Pi_2(\hat{\mathbf{n}}) = \tfrac{1}{2}\left(e_0 - i\hat{\mathbf{n}}\right)
 $$</p>
 <p>be the complementary idempotents along $\hat{\mathbf{n}}$. For $p \in [0,1]$ the <strong>dephasing channel</strong> along $\hat{\mathbf{n}}$ is</p>
 <p>$$
 \Phi^{\mathrm{deph}}_p(\tilde{\rho})
 = (1-p)\,\tilde{\rho}
-+ p\left(\tilde\Pi_+\,\tilde{\rho}\,\tilde\Pi_+ + \tilde\Pi_-\,\tilde{\rho}\,\tilde\Pi_-\right).
++ p\left(\tilde\Pi_1\,\tilde{\rho}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{\rho}\,\tilde\Pi_2\right).
 $$</p>
 <p>It is completely positive and trace preserving, with Kraus operators</p>
 <p>$$
 \tilde{K}_0 = \sqrt{1-p}\,e_0, \qquad
-\tilde{K}_1 = \sqrt{p}\,\tilde\Pi_+(\hat{\mathbf{n}}), \qquad
-\tilde{K}_2 = \sqrt{p}\,\tilde\Pi_-(\hat{\mathbf{n}}),
+\tilde{K}_1 = \sqrt{p}\,\tilde\Pi_1(\hat{\mathbf{n}}), \qquad
+\tilde{K}_2 = \sqrt{p}\,\tilde\Pi_2(\hat{\mathbf{n}}),
 $$</p>
-<p>whose normalization $\sum_l \tilde{K}_l^{*} \tilde{K}_l = (1-p)e_0 + p(\tilde\Pi_+ + \tilde\Pi_-) = e_0$ holds because the idempotents are Hermitian and complementary. The channel is <strong>unital</strong>: it fixes the maximally mixed state $\tilde{\rho} = \tfrac12 e_0$, so it is not a depolarizing map that pushes states toward the centre; it is a map that pushes them toward an <em>axis</em>.</p>
+<p>whose normalization $\sum_l \tilde{K}_l^{*} \tilde{K}_l = (1-p)e_0 + p(\tilde\Pi_1 + \tilde\Pi_2) = e_0$ holds because the idempotents are Hermitian and complementary. The channel is <strong>unital</strong>: it fixes the maximally mixed state $\tilde{\rho} = \tfrac12 e_0$, so it is not a depolarizing map that pushes states toward the centre; it is a map that pushes them toward an <em>axis</em>.</p>
 <p>On the Bloch vector the channel acts by</p>
 <p>$$
 \boxed{\;\mathbf{r} \;\longmapsto\; \mathbf{r}' = (1-p)\,\mathbf{r} + p\,(\hat{\mathbf{n}}\cdot\mathbf{r})\,\hat{\mathbf{n}}.\;}
@@ -144,9 +144,9 @@ $$</p>
 $$</p>
 <p>Its image is the <strong>diameter</strong> of the Bloch ball along $\hat{\mathbf{n}}$: the set of states with $\mathbf{r} \parallel \hat{\mathbf{n}}$. It is non-unitary and it is idempotent, $(\Phi^{\mathrm{deph}}_1)^2 = \Phi^{\mathrm{deph}}_1$. It is also <strong>measure-and-forget</strong>: measuring the observable $\alpha = i\hat{\mathbf{n}}$ and discarding the outcome leaves precisely</p>
 <p>$$
-p_+\,\tilde\Pi_+ + p_-\,\tilde\Pi_- = \Phi^{\mathrm{deph}}_1(\tilde{\rho}),
+p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = \Phi^{\mathrm{deph}}_1(\tilde{\rho}),
 \qquad
-p_\pm = \mathrm{Tr}(\tilde\Pi_\pm \tilde{\rho}) = \tfrac12\left(1 \pm \hat{\mathbf{n}}\cdot\mathbf{r}\right),
+p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2} \tilde{\rho}) = \tfrac12\left(1 \pm \hat{\mathbf{n}}\cdot\mathbf{r}\right),
 $$</p>
 <p>the classical mixture of the two pointer outcomes. Full dephasing is a non-selective measurement: it records the populations $p_\pm$ and destroys the coherences, but it does not select one of the two outcomes. The output is a mixture, not a pure state.</p>
 <h2 id="from-the-bloch-sphere-into-the-ball">From the Bloch Sphere into the Ball</h2>
@@ -167,7 +167,7 @@ $$</p>
 S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-,
 $$</p>
 <p>which is a decreasing function of $|\mathbf{r}|$, increases strictly for any state with $r_\perp \neq 0$.</p>
-<p>Two features of this trajectory matter for the projection question. First, the state leaves the sphere unless $r_\perp = 0$, i.e., unless it was already in the pointer basis. A generic pure state becomes mixed, and the idempotent it started as is deformed into a non-idempotent element; the only idempotents that survive full dephasing are the two pointer states $\tilde\Pi_\pm(\hat{\mathbf{n}})$, at $r_\parallel = \pm1$. Second, the trajectory has a limit but the limit is reached only asymptotically: for every finite $t$ with $0 < e^{-\Gamma t} < 1$, the transverse component is nonzero and the state is not in the image of the fully dephasing map. The "projection" onto the pointer axis is the $t \to \infty$ endpoint of a contraction, not an operation performed at any finite time.</p>
+<p>Two features of this trajectory matter for the projection question. First, the state leaves the sphere unless $r_\perp = 0$, i.e., unless it was already in the pointer basis. A generic pure state becomes mixed, and the idempotent it started as is deformed into a non-idempotent element; the only idempotents that survive full dephasing are the two pointer states $\tilde\Pi_{1,2}(\hat{\mathbf{n}})$, at $r_\parallel = \pm1$. Second, the trajectory has a limit but the limit is reached only asymptotically: for every finite $t$ with $0 < e^{-\Gamma t} < 1$, the transverse component is nonzero and the state is not in the image of the fully dephasing map. The "projection" onto the pointer axis is the $t \to \infty$ endpoint of a contraction, not an operation performed at any finite time.</p>
 <p>At full strength $p=1$, and only then, the contraction is total: the transverse component is annihilated, the image is the pointer diameter, and the map fixes its image pointwise. That is the precise sense in which the end product of complete decoherence is a projection of the Bloch ball onto a diameter. For $0 < p < 1$, the map is an <em>affine contraction toward that diameter</em>: its image is a squashed ellipsoid, strictly larger than the diameter, and its fixed-point set is the diameter itself.</p>
 <h2 id="is-decoherence-a-projection">Is Decoherence a Projection?</h2>
 <p>We can now separate the senses cleanly.</p>
@@ -177,9 +177,9 @@ $$</p>
 <h3 id="sense-2-full-dephasing-is-an-idempotent-channel">Sense 2: Full dephasing is an idempotent channel</h3>
 <p>At $p = 1$ the channel itself is idempotent, and the projection metaphor becomes exact in a strong operator-algebraic sense. Write $A$ for the complex span of the two pointer idempotents,</p>
 <p>$$
-A = \left\{ z_+\,\tilde\Pi_+(\hat{\mathbf{n}}) + z_-\,\tilde\Pi_-(\hat{\mathbf{n}}) \;:\; z_\pm \in \mathbb{C} \right\},
+A = \left\{ z_+\,\tilde\Pi_1(\hat{\mathbf{n}}) + z_-\,\tilde\Pi_2(\hat{\mathbf{n}}) \;:\; z_\pm \in \mathbb{C} \right\},
 $$</p>
-<p>a two-dimensional commutative ${}^{*}$-subalgebra of $\mathbb{B}$, isomorphic to $\mathbb{C} \oplus \mathbb{C}$ — the algebra of operators diagonal in the pointer basis. Then $\Phi^{\mathrm{deph}}_1$ has the following properties, all of them direct consequences of $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_- = 0$, and $\tilde\Pi_+ + \tilde\Pi_- = e_0$:</p>
+<p>a two-dimensional commutative ${}^{*}$-subalgebra of $\mathbb{B}$, isomorphic to $\mathbb{C} \oplus \mathbb{C}$ — the algebra of operators diagonal in the pointer basis. Then $\Phi^{\mathrm{deph}}_1$ has the following properties, all of them direct consequences of $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, and $\tilde\Pi_1 + \tilde\Pi_2 = e_0$:</p>
 <ol>
 <li><strong>Idempotent:</strong> $(\Phi^{\mathrm{deph}}_1)^2 = \Phi^{\mathrm{deph}}_1$.</li>
 <li><strong>Trace preserving:</strong> $\mathrm{Tr}(\Phi^{\mathrm{deph}}_1(\tilde{Q})) = \mathrm{Tr}(\tilde{Q})$.</li>
@@ -189,29 +189,29 @@ $$</p>
 </ol>
 <p>Properties 1–5 are the defining properties of the <strong>trace-preserving conditional expectation</strong> onto $A$. Because the trace pairing $\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0k_0 + \mathbf{h}\cdot\mathbf{k})$ is positive definite on $\mathbb{M}_+$, property 5 says that, restricted to Hermitian elements, $\Phi^{\mathrm{deph}}_1$ is exactly the <strong>orthogonal projection</strong> of $\mathbb{M}_+$ onto the Hermitian part of $A$, namely $\mathrm{span}_{\mathbb{R}}\{e_0, i\hat{\mathbf{n}}\}$: it is the closest pointer-diagonal operator to $\tilde{Q}$ in the Hilbert–Schmidt geometry. Equivalently, in the pointer basis,</p>
 <p>$$
-\Phi^{\mathrm{deph}}_1(\tilde{\rho}) = \mathrm{Tr}\!\left(\tilde\Pi_+(\hat{\mathbf{n}})\,\tilde{\rho}\right)\tilde\Pi_+(\hat{\mathbf{n}}) + \mathrm{Tr}\!\left(\tilde\Pi_-(\hat{\mathbf{n}})\,\tilde{\rho}\right)\tilde\Pi_-(\hat{\mathbf{n}}),
+\Phi^{\mathrm{deph}}_1(\tilde{\rho}) = \mathrm{Tr}\!\left(\tilde\Pi_1(\hat{\mathbf{n}})\,\tilde{\rho}\right)\tilde\Pi_1(\hat{\mathbf{n}}) + \mathrm{Tr}\!\left(\tilde\Pi_2(\hat{\mathbf{n}})\,\tilde{\rho}\right)\tilde\Pi_2(\hat{\mathbf{n}}),
 $$</p>
 <p>the diagonal part of $\tilde{\rho}$ in that basis. This is the strongest sense in which "idempotent projection" is a correct description: full dephasing <em>is</em> a projection, in the exact sense of a trace-preserving conditional expectation, and its image is the set of states diagonal in the pointer basis.</p>
 <h3 id="sense-3-partial-dephasing-is-a-contraction-not-a-projection">Sense 3: Partial dephasing is a contraction, not a projection</h3>
 <p>For $0 < p < 1$, none of the above survives as a characterization of a projection. The map is not idempotent. Its fixed points are the pointer diameter, but its image is strictly larger than that diameter: it is a strict contraction of the Bloch ball toward the pointer diameter, with the transverse component merely damped rather than annihilated.</p>
 <p>There is a further, sharper way to see that it is not a projection, which also locates the irreversibility precisely. As a linear map on the Bloch vector, the transverse eigenvalue of $\Phi^{\mathrm{deph}}_p$ is $1-p \neq 0$, so $\Phi^{\mathrm{deph}}_p$ is <strong>mathematically invertible</strong> for every $p < 1$; its inverse simply scales the transverse components back up by $1/(1-p)$. But that inverse is <strong>not a channel</strong>: scaling transverse components <em>up</em> by more than one maps some states outside the Bloch ball, so the inverse is not positive, hence not completely positive. Dephasing for $0<p<1$ is therefore invertible as a linear map and irreversible as a physical process. Irreversibility here is not the same as mathematical non-invertibility; it is the failure of the inverse to be a valid quantum operation. Only at $p=1$ does the map become genuinely non-invertible — rank-deficient in the transverse direction — and it is exactly there that it also becomes a projection. The projection metaphor and true irreversibility arrive together, at full dephasing.</p>
 <p>Two further caveats complete the honest accounting.</p>
-<p>First, the non-selective character. Full dephasing is a <em>measurement without selection</em>: it produces the mixture $p_+\tilde\Pi_+ + p_-\tilde\Pi_-$ and does not choose between the outcomes. It is a projection in the operator-algebraic sense, not a collapse onto a single idempotent. The selective update $\tilde{\rho} \mapsto \tilde\Pi_+$, discussed in <em>Quantum Physics in Biquaternionic Form</em>, is a different operation; decoherence as such does not perform it.</p>
-<p>Second, idempotency alone does not single out dephasing. The completely depolarizing map at full strength, $\tilde{\rho} \mapsto \tfrac12 e_0$, is also idempotent and trace preserving, and it is a conditional expectation onto the scalars. In general, a trace-preserving idempotent channel on a qubit is a conditional expectation onto a ${}^{*}$-subalgebra of $\mathbb{B}$ (its Hermitian part lying in $\mathbb{M}_+$), and the nontrivial possibilities are the pointer subalgebras $A = \mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\tilde\Pi_-$ (dephasing in some basis) and the scalars $\mathbb{C}e_0$ (full depolarization), together with the identity. So "idempotent projection" is a class, not a synonym for decoherence; what distinguishes dephasing within that class is that its fixed algebra is non-central, i.e., it selects a basis rather than erasing all directions alike.</p>
+<p>First, the non-selective character. Full dephasing is a <em>measurement without selection</em>: it produces the mixture $p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ and does not choose between the outcomes. It is a projection in the operator-algebraic sense, not a collapse onto a single idempotent. The selective update $\tilde{\rho} \mapsto \tilde\Pi_1$, discussed in <em>Quantum Physics in Biquaternionic Form</em>, is a different operation; decoherence as such does not perform it.</p>
+<p>Second, idempotency alone does not single out dephasing. The completely depolarizing map at full strength, $\tilde{\rho} \mapsto \tfrac12 e_0$, is also idempotent and trace preserving, and it is a conditional expectation onto the scalars. In general, a trace-preserving idempotent channel on a qubit is a conditional expectation onto a ${}^{*}$-subalgebra of $\mathbb{B}$ (its Hermitian part lying in $\mathbb{M}_+$), and the nontrivial possibilities are the pointer subalgebras $A = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Pi_2$ (dephasing in some basis) and the scalars $\mathbb{C}e_0$ (full depolarization), together with the identity. So "idempotent projection" is a class, not a synonym for decoherence; what distinguishes dephasing within that class is that its fixed algebra is non-central, i.e., it selects a basis rather than erasing all directions alike.</p>
 <h2 id="pointer-basis-and-einselection">Pointer Basis and Einselection</h2>
 <p>The dephasing channel is specified by a single unit vector $\hat{\mathbf{n}}$, and everything in the preceding section — the pointer subalgebra, the fixed set, the surviving idempotents — is organized around the basis it defines. This is the framework's rendering of the <strong>pointer basis</strong> and <strong>einselection</strong>, and it is worth stating exactly how far it goes.</p>
 <p>The algebra supports the following statements once $\hat{\mathbf{n}}$ is fixed.</p>
 <ul>
-<li><strong>The pointer basis is a commutative subalgebra.</strong> The two idempotents $\tilde\Pi_\pm(\hat{\mathbf{n}})$ commute and generate $A \cong \mathbb{C}\oplus\mathbb{C}$. These are the minimal projections of $A$, and they are the only pure states fixed by the channel: the states on the pointer diameter that are pure are exactly $\mathbf{r} = \pm\hat{\mathbf{n}}$.</li>
-<li><strong>The pointer states are the robust states.</strong> Under $\Phi^{\mathrm{deph}}_p$, the fixed states for every $p \in (0,1]$ are exactly the pointer-diagonal states $r_\perp = 0$; the populations of the pointer idempotents are invariants, $p_\pm = \mathrm{Tr}(\tilde\Pi_\pm\tilde{\rho})$, while the coherences between them decay. The pointer states are the states whose measurement statistics are unaffected by the channel; superpositions are not.</li>
-<li><strong>The channel is invariant under the pointer phase rotation.</strong> $\Phi^{\mathrm{deph}}_p$ commutes with conjugation by $e^{-i\theta\alpha}$, $\alpha = i\hat{\mathbf{n}}$, the one-parameter group of unitaries that fixes $\tilde\Pi_\pm(\hat{\mathbf{n}})$. The symmetry group of the pointer basis is the $U(1)$ generated by the pointer observable $\alpha = i\hat{\mathbf{n}}$; the pointer idempotents are precisely the pure states invariant under it.</li>
+<li><strong>The pointer basis is a commutative subalgebra.</strong> The two idempotents $\tilde\Pi_{1,2}(\hat{\mathbf{n}})$ commute and generate $A \cong \mathbb{C}\oplus\mathbb{C}$. These are the minimal projections of $A$, and they are the only pure states fixed by the channel: the states on the pointer diameter that are pure are exactly $\mathbf{r} = \pm\hat{\mathbf{n}}$.</li>
+<li><strong>The pointer states are the robust states.</strong> Under $\Phi^{\mathrm{deph}}_p$, the fixed states for every $p \in (0,1]$ are exactly the pointer-diagonal states $r_\perp = 0$; the populations of the pointer idempotents are invariants, $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho})$, while the coherences between them decay. The pointer states are the states whose measurement statistics are unaffected by the channel; superpositions are not.</li>
+<li><strong>The channel is invariant under the pointer phase rotation.</strong> $\Phi^{\mathrm{deph}}_p$ commutes with conjugation by $e^{-i\theta\alpha}$, $\alpha = i\hat{\mathbf{n}}$, the one-parameter group of unitaries that fixes $\tilde\Pi_{1,2}(\hat{\mathbf{n}})$. The symmetry group of the pointer basis is the $U(1)$ generated by the pointer observable $\alpha = i\hat{\mathbf{n}}$; the pointer idempotents are precisely the pure states invariant under it.</li>
 </ul>
 <p>What the algebra does <strong>not</strong> supply is which $\hat{\mathbf{n}}$ is selected. The direction is an input to the dephasing channel, not an output of it. In the physical account of einselection, $\hat{\mathbf{n}}$ is determined by the system–environment interaction: the environment couples to a particular observable, and the pointer basis is the eigenbasis of that observable, the basis in which the interaction is diagonal. The biquaternion framework represents the <em>consequence</em> of that coupling — the channel $\Phi^{\mathrm{deph}}_p$ and the subalgebra $A$ — but it contains no dynamics of system–environment coupling from which $\hat{\mathbf{n}}$ could be derived. The framework therefore supports the <em>structure</em> of einselection (a preferred commutative subalgebra, stable idempotents, decaying coherences) without deriving the <em>selection</em> (why that subalgebra). That limitation is intrinsic to the operational reading, in which the channel is the data and the environment is not described.</p>
 <h2 id="relation-to-the-quantumclassical-divide">Relation to the Quantum–Classical Divide</h2>
 <p>The companion article <em>The Quantum–Classical Divide in the Biquaternion Framework</em> expresses the operational criterion of Korolkova, Sánchez-Soto, and Leuchs in the language of this series: quantum non-separability is signalled by <strong>two idempotents</strong> acting on the two partitions (two projective measurements), classical non-separability by <strong>one idempotent and one unitary</strong> (one measurement, one filter). The article closes by asking whether the <em>number of available idempotents</em> can itself be a dynamical variable — whether a configuration can lose an idempotent measurement channel through decoherence.</p>
 <p>The dephasing channel answers that question in a precise and limited way. Two observations.</p>
 <p>First, full dephasing <em>is</em> the operation the classical side of the criterion uses. At $p=1$, $\Phi^{\mathrm{deph}}_1$ is a non-selective idempotent operation on the partition: it is a projective measurement followed by discarding the outcome. An idempotent acting on one partition, with a unitary filter on the other, is exactly the classical pattern $\tilde{U}_A \otimes \tilde\Pi_B$ of the divide article. So the fully decohered partition has, operationally, the classical profile: its only idempotent measurements are the commuting pointer ones, and its remaining structure is a classical probability distribution over them.</p>
-<p>Second, partial dephasing explains how a partition gets there. For $0<p<1$, the coherence that the quantum case requires — the transverse Bloch components, which make two non-commuting measurements jointly informative — is damped but not erased. The map is a contraction toward the pointer diameter, and for every $0<p\le1$ the only pure states in its image are the two pointer idempotents; in the coarse-grained description, therefore, the idempotents surviving on a decohered partition are $\tilde\Pi_\pm(\hat{\mathbf{n}})$, which commute and span only a commutative subalgebra, so no two <em>incompatible</em> idempotents remain and the partition's state space has become a classical simplex. In this operational sense the count of usable idempotents is indeed dynamical, as the divide article conjectured.</p>
+<p>Second, partial dephasing explains how a partition gets there. For $0<p<1$, the coherence that the quantum case requires — the transverse Bloch components, which make two non-commuting measurements jointly informative — is damped but not erased. The map is a contraction toward the pointer diameter, and for every $0<p\le1$ the only pure states in its image are the two pointer idempotents; in the coarse-grained description, therefore, the idempotents surviving on a decohered partition are $\tilde\Pi_{1,2}(\hat{\mathbf{n}})$, which commute and span only a commutative subalgebra, so no two <em>incompatible</em> idempotents remain and the partition's state space has become a classical simplex. In this operational sense the count of usable idempotents is indeed dynamical, as the divide article conjectured.</p>
 <p>Two qualifications keep this honest. First, decoherence does not remove the idempotents from the algebra; it removes the <em>coherences between them</em> from the state. The non-commuting idempotents still exist mathematically; what fails is that a decohered state can still be used to violate the kind of joint-measurement structure the quantum case needs. Second, the divide article's structural refinement — that quantum non-separability lives in a <em>fundamental</em> element of $\mathbb{M}_+^{\otimes n}$ while classical non-separability lives in a <em>derived</em> coherence matrix — is echoed here but with a caveat. Decoherence makes the reduced/system state a classical probability distribution over pointer idempotents, which has the profile of a derived element. But by Stinespring dilation the full system-plus-environment state remains a fundamental state of a larger algebra; the classicality is a feature of the discarded description, not of the world. The framework can express that, but it does not supply the environment that would make it a physical statement rather than a formal one.</p>
 <h2 id="collective-dephasing-and-the-decoherence-free-singlet">Collective Dephasing and the Decoherence-Free Singlet</h2>
 <p>A source in the literature closes with the claim that a maximally entangled system "remains immune to decoherence" (Obojska, <em>Journal of Physics Communications</em> <strong>4</strong> (2020) 055018). The claim is half right. The half that is right is a standard fact that the channel picture of this article states exactly, and the distinction that makes it half right is the distinction between <strong>collective</strong> and <strong>local</strong> noise.</p>
@@ -297,7 +297,7 @@ $$</p>
 <td>State with Bloch vector $\mathbf{r}$, $|\mathbf{r}|\leq1$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm(\hat{\mathbf{n}}) = \tfrac12(e_0 \pm i\hat{\mathbf{n}})$</td>
+<td>$\tilde\Pi_{1,2}(\hat{\mathbf{n}}) = \tfrac12(e_0 \pm i\hat{\mathbf{n}})$</td>
 <td>Pointer idempotents (pure states along $\hat{\mathbf{n}}$)</td>
 </tr>
 <tr>
@@ -325,11 +325,11 @@ $$</p>
 <td>Dephasing channel of strength $p \in [0,1]$ along $\hat{\mathbf{n}}$</td>
 </tr>
 <tr>
-<td>$\Phi^{\mathrm{deph}}_p(\tilde{\rho}) = (1-p)\tilde{\rho} + p(\tilde\Pi_+\tilde{\rho}\tilde\Pi_+ + \tilde\Pi_-\tilde{\rho}\tilde\Pi_-)$</td>
+<td>$\Phi^{\mathrm{deph}}_p(\tilde{\rho}) = (1-p)\tilde{\rho} + p(\tilde\Pi_1\tilde{\rho}\tilde\Pi_1 + \tilde\Pi_2\tilde{\rho}\tilde\Pi_2)$</td>
 <td>Dephasing action on states</td>
 </tr>
 <tr>
-<td>$\tilde{K}_0 = \sqrt{1-p}\,e_0,\ \tilde{K}_{1,2} = \sqrt{p}\,\tilde\Pi_\pm$</td>
+<td>$\tilde{K}_0 = \sqrt{1-p}\,e_0,\ \tilde{K}_{1,2} = \sqrt{p}\,\tilde\Pi_{1,2}$</td>
 <td>Kraus operators of dephasing</td>
 </tr>
 <tr>
@@ -353,7 +353,7 @@ $$</p>
 <td>Singlet; decoherence-free for collective dephasing</td>
 </tr>
 <tr>
-<td>$A = \mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\tilde\Pi_-$</td>
+<td>$A = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Pi_2$</td>
 <td>Pointer (commutative) subalgebra</td>
 </tr>
 <tr>

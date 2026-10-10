@@ -95,10 +95,10 @@ $$</p>
 <p><em>Proof.</em> The unitarity of $\mathrm{id}+\epsilon T$ reads $(\mathrm{id}+\epsilon T)^{\dagger}(\mathrm{id}+\epsilon T)=\mathrm{id}+\epsilon(T+T^{\dagger})$ to first order, which is $\mathrm{id}$ exactly when $T+T^{\dagger}=0$; the group axioms of the unitary sheaf are the dagger laws.</p>
 <p><strong>Theorem (involutions and the eigensheaf decomposition).</strong> Let $T$ be unitary with $T^2=\mathrm{id}$. Then $T$ is self-adjoint, $T^{\dagger}=T$, and if $2$ is invertible the sheaf decomposes as the direct sum of the eigensheaves</p>
 <p>$$
-\mathcal{F}=\mathcal{F}_+\oplus\mathcal{F}_-,\qquad \mathcal{F}_{\pm}=\ker(T\mp\mathrm{id}),\qquad \pi_{\pm}=\tfrac12(\mathrm{id}\pm T),
+\mathcal{F}=\mathcal{F}_+\oplus\mathcal{F}_-,\qquad \mathcal{F}_{\pm}=\ker(T\mp\mathrm{id}),\qquad \pi_{1,2}=\tfrac12(\mathrm{id}\pm T),
 $$</p>
-<p>the projections being morphisms of sheaves with $\pi_++\pi_-=\mathrm{id}$ and $\pi_+\pi_-=0$.</p>
-<p><em>Proof.</em> From $T^{\dagger}T=\mathrm{id}$ and $T^2=\mathrm{id}$ we get $T^{\dagger}=T^{\dagger}TT=(T^{\dagger}T)T=T$, so $T$ is self-adjoint. The projections $\pi_{\pm}$ are idempotent and orthogonal because $T^2=\mathrm{id}$, and they exhibit the sheaf as the direct sum of their images.</p>
+<p>the projections being morphisms of sheaves with $\pi_1+\pi_2=\mathrm{id}$ and $\pi_1\pi_2=0$.</p>
+<p><em>Proof.</em> From $T^{\dagger}T=\mathrm{id}$ and $T^2=\mathrm{id}$ we get $T^{\dagger}=T^{\dagger}TT=(T^{\dagger}T)T=T$, so $T$ is self-adjoint. The projections $\pi_{1,2}$ are idempotent and orthogonal because $T^2=\mathrm{id}$, and they exhibit the sheaf as the direct sum of their images.</p>
 <p><strong>Theorem (the agreement of the two layers).</strong> Let $u$ be an equivariant structure of order two on $\mathcal{F}$, as in <em>The Involution on the Structure Sheaf</em>, compatible with the Hermitian structure: $\langle u(s),u(t)\rangle=\sigma(\langle s,t\rangle)$. Then $u$ is a self-adjoint unitary endomorphism, the fixed eigensheaf $\mathcal{F}_+$ is the fixed sheaf of the element involution and the anti-invariant eigensheaf $\mathcal{F}_-$ is the anti-invariant sheaf; the element involution and the operator adjoint agree, and the equivariant structure is a $\ast$-representation of the two-element group. Without the compatibility hypothesis the two structures differ: the element involution need not be self-adjoint, and its fixed sheaf need not be the $+1$-eigensheaf of the adjoint.</p>
 <p><em>Proof.</em> The compatibility condition is exactly $\langle u(s),t\rangle=\langle s,u(t)\rangle$ by the Hermitian symmetry, so $u^{\dagger}=u$; the eigensheaves are the fixed and anti-invariant sheaves of the element involution by their definition, and on the endomorphisms commuting with $u$ the adjoint acts blockwise as the element involution does. The hypothesis is a genuine restriction on the pairing, and without it the two fixed objects differ, as the matrix model of the next section shows.</p>
 <p><strong>Example (the matrix model).</strong> For the free sheaf $\mathcal{O}_X^n$, the Hermitian endomorphisms are the matrices with $A^{\dagger}=A$ for the conjugate transpose, the skew ones those with $A^{\dagger}=-A$, the unitary ones those with $A^{\dagger}A=AA^{\dagger}=\mathrm{id}$, and an involution is a unitary matrix with $A^2=\mathrm{id}$; the eigensheaf decomposition is the decomposition into the $+1$ and $-1$ eigenspaces. The example is the matrix model of the classification.</p>
@@ -166,7 +166,7 @@ $$</p>
 <td>decomposition when $2$ is invertible; Jordan structure on $\mathcal{H}$, Lie structure on $\mathcal{S}$</td>
 </tr>
 <tr>
-<td>$\mathcal{F}=\mathcal{F}_+\oplus\mathcal{F}_-$, $\pi_{\pm}=\frac12(\mathrm{id}\pm T)$</td>
+<td>$\mathcal{F}=\mathcal{F}_+\oplus\mathcal{F}_-$, $\pi_{1,2}=\frac12(\mathrm{id}\pm T)$</td>
 <td>eigensheaf decomposition of an involution $T$; $T^2=\mathrm{id}$</td>
 </tr>
 <tr>

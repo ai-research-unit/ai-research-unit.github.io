@@ -113,16 +113,23 @@ $$</p>
 \gamma^0 = \begin{pmatrix} 0 & I_2 \\ I_2 & 0 \end{pmatrix}, \qquad
 \gamma^k = \begin{pmatrix} 0 & \sigma_k \\ -\sigma_k & 0 \end{pmatrix},
 $$</p>
-<p>which is the usual <strong>mostly-minus</strong> block representation, the one used in the parent article, whose block construction is $\gamma^0 = \bigl(\begin{smallmatrix}0 & e_0\\ e_0 & 0\end{smallmatrix}\bigr)$, $\gamma^k = \bigl(\begin{smallmatrix}0 & ie_k\\ -ie_k & 0\end{smallmatrix}\bigr)$, identical to the form used here.</p>
+<p>which is the usual <strong>mostly-minus</strong> block representation, the one used in the parent article, whose block construction is $\gamma^0 = \bigl(\begin{smallmatrix}0 & e_0\\ e_0 & 0\end{smallmatrix}\bigr)$, $\gamma^k = \bigl(\begin{smallmatrix}0 & ie_k\\ -ie_k & 0\end{smallmatrix}\bigr)$, identical to the form used here. Written out entry by entry the four generators are</p>
+<p>$$
+\gamma^0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma^1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},\qquad
+\gamma^2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
+\gamma^3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix}.
+$$</p>
 <p>Direct multiplication in this representation gives $(\gamma^0)^2 = +I_4$, $(\gamma^k)^2 = -I_4$, and $\gamma^\mu\gamma^\nu = -\gamma^\nu\gamma^\mu$ for $\mu \neq \nu$, that is, $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$. The pseudoscalar is</p>
 <p>$$
-\omega = \gamma^0\gamma^1\gamma^2\gamma^3 = \mathrm{diag}(i,i,-i,-i),
+\omega = \gamma^0\gamma^1\gamma^2\gamma^3 = \mathrm{diag}(i,i,-i,-i)
+=\begin{pmatrix}i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&-i\end{pmatrix},
 $$</p>
 <p>with $\omega^2 = -I_4$, and it commutes with every even element and anticommutes with every generator:</p>
 <p>$$
 \omega\gamma^\mu = -\gamma^\mu\omega, \qquad \omega\Phi(\tilde{Q}) = \Phi(\tilde{Q})\omega \quad (\tilde{Q} \in \mathbb{B}).
 $$</p>
-<h2 id="the-isomorphism-math122-is-the-even-subalgebra">The Isomorphism: $\mathbb{B}$ is the Even Subalgebra</h2>
+<h2 id="the-isomorphism-math123-is-the-even-subalgebra">The Isomorphism: $\mathbb{B}$ is the Even Subalgebra</h2>
 <h3 id="the-map">The map</h3>
 <p>The biquaternion algebra is identified with the even subalgebra of $\mathrm{Cl}_{1,3}$ — the algebra of the metric $g = \mathrm{diag}(+1,-1,-1,-1)$ — by the $\mathbb{R}$-linear map $\Phi$ defined on the quaternion basis by</p>
 <p>$$
@@ -279,6 +286,14 @@ $$</p>
 \Phi(e_1) = \gamma^2\gamma^3, \quad \Phi(e_2) = \gamma^3\gamma^1, \quad \Phi(e_3) = \gamma^1\gamma^2, \qquad
 \Phi(ie_1) = \gamma^0\gamma^1, \quad \Phi(ie_2) = \gamma^0\gamma^2, \quad \Phi(ie_3) = \gamma^0\gamma^3 .
 $$</p>
+<p>The two representative entries, written out, are</p>
+<p>$$
+\Phi(e_1)=\gamma^2\gamma^3=\begin{pmatrix}-i\sigma_1&0\\0&-i\sigma_1\end{pmatrix}
+=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
+\Phi(ie_1)=\gamma^0\gamma^1=\begin{pmatrix}-\sigma_1&0\\0&\sigma_1\end{pmatrix}
+=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix},
+$$</p>
+<p>so the quaternion unit $e_1$ becomes $-i\sigma_1$ block-diagonally and $ie_1$ becomes the two blocks with opposite signs, the positive sign on the second.</p>
 <p>The only sign in the dictionary is the minus on $\Phi(i) = -\omega$, and it is the single sign the correspondence leaves free. The reason the mixed pattern of the opposite-generator convention does not arise is visible in the products:</p>
 <p>$$
 (\gamma^2\gamma^3)(\gamma^3\gamma^1) = +\gamma^1\gamma^2, \qquad
@@ -350,14 +365,14 @@ $$</p>
 <p>This is checked on the whole real basis. On the spacelike bivectors it reads $\omega(\gamma^2\gamma^3) = -\gamma^0\gamma^1$, $\omega(\gamma^3\gamma^1) = -\gamma^0\gamma^2$, $\omega(\gamma^1\gamma^2) = -\gamma^0\gamma^3$: multiplication by the pseudoscalar exchanges the spacelike and timelike bivector subspaces, which is the algebraic content of the Hodge duality of the bivectors in four dimensions. Since the dictionary maps the spacelike group to the quaternion units and the timelike group to the imaginary quaternion units, the operation is simply "multiply by $-i$" — equivalently "multiply by $i$ and reverse orientation".</p>
 <h2 id="vectors-and-the-odd-part">Vectors and the Odd Part</h2>
 <p>The biquaternion algebra is the <strong>even</strong> subalgebra, so the generators $\gamma^\mu$ themselves are not biquaternions. They are, however, obtained from the even part by multiplication by a single fixed odd element, and this gives the dictionary of the odd part.</p>
-<h3 id="the-generators-as-matrices-over-math268">The generators as matrices over $\mathbb{B}$</h3>
+<h3 id="the-generators-as-matrices-over-math273">The generators as matrices over $\mathbb{B}$</h3>
 <p>In the representation fixed above the odd generators are $2\times 2$ matrices with entries in $\mathbb{B}$:</p>
 <p>$$
 \gamma^0 = \begin{pmatrix} 0 & e_0 \\ e_0 & 0 \end{pmatrix}, \qquad
 \gamma^k = \begin{pmatrix} 0 & i\,e_k \\ -i\,e_k & 0 \end{pmatrix}, \qquad k = 1,2,3 .
 $$</p>
 <p>The corresponding <strong>trivectors</strong> $\gamma^\mu\gamma^\nu\gamma^\rho$ ($\mu < \nu < \rho$) are the other odd elements (of degree three); there are four of them.</p>
-<h3 id="the-odd-part-is-math274-times-the-even-part">The odd part is $\gamma^0$ times the even part</h3>
+<h3 id="the-odd-part-is-math279-times-the-even-part">The odd part is $\gamma^0$ times the even part</h3>
 <p>Every odd element is $\gamma^0$ times an even element. On the four-vectors this is explicit:</p>
 <p>$$
 x_0\gamma^0 + x_1\gamma^1 + x_2\gamma^2 + x_3\gamma^3
@@ -422,7 +437,8 @@ $$</p>
 <h3 id="the-chirality-operator">The chirality operator</h3>
 <p>The chirality operator of the Dirac algebra is</p>
 <p>$$
-\gamma_5 = i_{\mathrm{Cl}}\,\omega = i_{\mathrm{Cl}}\,\gamma^0\gamma^1\gamma^2\gamma^3, \qquad \gamma_5 = \mathrm{diag}(-1,-1,1,1),
+\gamma_5 = i_{\mathrm{Cl}}\,\omega = i_{\mathrm{Cl}}\,\gamma^0\gamma^1\gamma^2\gamma^3, \qquad \gamma_5 = \mathrm{diag}(-1,-1,1,1)
+=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
 $$</p>
 <p>where $i_{\mathrm{Cl}}$ is the scalar imaginary of the <strong>complexified</strong> Clifford algebra, not the biquaternion imaginary. The two are different objects: the biquaternion imaginary $i$ has image $-\omega$ under $\Phi$, so in the dictionary</p>
 <p>$$
@@ -439,7 +455,12 @@ $$</p>
 <p>$$
 \tilde\Pi_{L,R} = \tfrac{1}{2}\bigl(I_4 \pm \gamma_5\bigr) \;=\; \Phi_{\mathbb{C}}\!\left(\tfrac{1}{2}\bigl(e_0 \mp i_{\mathrm{Cl}}\, i\bigr)\right),
 $$</p>
-<p>each of rank $2$ in the $4\times 4$ representation. Direct multiplication gives</p>
+<p>each of rank $2$ in the $4\times 4$ representation, that is, the two diagonal matrices</p>
+<p>$$
+\tilde\Pi_L = \tfrac12\bigl(I_4+\gamma_5\bigr)=\begin{pmatrix}0&0&0&0\\0&0&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+\tilde\Pi_R = \tfrac12\bigl(I_4-\gamma_5\bigr)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix},
+$$</p>
+<p>written in the checks below as $\tilde\Pi_1,\tilde\Pi_2$ in the same order. Direct multiplication gives</p>
 <p>$$
 \tilde\Pi_1^2 = \tilde\Pi_1, \qquad \tilde\Pi_2^2 = \tilde\Pi_2, \qquad \tilde\Pi_1\tilde\Pi_2 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = I_4, \qquad \mathrm{Tr}\,\tilde\Pi_{1,2} = 2 .
 $$</p>
@@ -497,7 +518,7 @@ $$</p>
 <h2 id="two-ways-the-algebra-carries-physics-multiplication-and-conjugation">Two Ways the Algebra Carries Physics: Multiplication and Conjugation</h2>
 <p>The dictionary so far has mapped objects; it is worth stating the two ways an element of $\mathbb{B}$ is <em>used</em>, because they are not interchangeable, and the difference is the source of the framework's most persistent obstruction.</p>
 <p><strong>One element, two readings.</strong> Because $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, the algebra is the endomorphism algebra of its own unique simple module, $\mathbb{B} = \mathrm{End}(S)$ with $S$ of complex dimension two. Every element is therefore at once an <strong>object</strong> of the algebra and a <strong>linear operator</strong> on $S$. The two mechanisms are those two readings.</p>
-<p><strong>Mechanism one: multiplication, on the module.</strong> A spinor is an element of the minimal left ideal $S = \mathbb{B}p$, $p = \tfrac12(e_0+ie_3)$, and $\mathbb{B}$ acts on it by left multiplication, $\psi\mapsto \rho(\tilde B)\psi$. Since $\mathbb{B} = \mathrm{End}(S)$, <em>every</em> complex-linear operator on the spinor module is some biquaternion, and this mechanism carries the whole half-integer-spin sector: the Dirac field, its two Weyl halves, the chirality projectors (central idempotents of the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$ itself), the mass $m$ and the central phase $\lambda = e^{i\theta}$ (central elements), and the gradient $\tilde{\nabla}$ when it acts on a field.</p>
+<p><strong>Mechanism one: multiplication, on the module.</strong> A spinor is an element of the minimal left ideal $S = \mathbb{B}\tilde\Pi_1$, $\tilde\Pi_1 = \tfrac12(e_0+ie_3)$, and $\mathbb{B}$ acts on it by left multiplication, $\psi\mapsto \rho(\tilde B)\psi$. Since $\mathbb{B} = \mathrm{End}(S)$, <em>every</em> complex-linear operator on the spinor module is some biquaternion, and this mechanism carries the whole half-integer-spin sector: the Dirac field, its two Weyl halves, the chirality projectors (central idempotents of the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$ itself), the mass $m$ and the central phase $\lambda = e^{i\theta}$ (central elements), and the gradient $\tilde{\nabla}$ when it acts on a field.</p>
 <p><strong>Mechanism two: conjugation, on the algebra.</strong> A four-vector is not in the module but in the algebra: the material sector $\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$. A Lorentz transformation acts on it by the rotor conjugation</p>
 <p>$$
 \tilde{Q} \;\mapsto\; \tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^{*},
@@ -673,7 +694,7 @@ $$</p>
 <td>Real-quaternion and complex subspaces</td>
 </tr>
 <tr>
-<td>$S = \mathbb{B}p$, $p=\tfrac12(e_0+ie_3)$</td>
+<td>$S = \mathbb{B}\tilde\Pi_1$, $\tilde\Pi_1=\tfrac12(e_0+ie_3)$</td>
 <td>The simple (spinor) module; $\mathbb{B}=\mathrm{End}(S)$</td>
 </tr>
 <tr>

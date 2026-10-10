@@ -64,7 +64,7 @@ $$</p>
 <p>$$
 \tilde{Q}_+ = \sum_{\mu=0}^{3} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu=0}^{3} (q_\mu - q'_\mu) e_\mu.
 $$</p>
-<p>The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$, with $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$.</p>
+<p>The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$.</p>
 <p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split biquaternion roots of minus one.</p>
 <h2 id="the-fourier-kernel">The Fourier Kernel</h2>
 <h3 id="definition">Definition</h3>
@@ -154,13 +154,13 @@ $$</p>
 $$</p>
 <h2 id="factorization-into-quaternion-and-complex-fourier-transforms">Factorization into Quaternion and Complex Fourier Transforms</h2>
 <h3 id="the-idempotent-decomposition-of-the-transform">The Idempotent Decomposition of the Transform</h3>
-<p>The transform decomposes in the idempotent basis. Writing $f(t) = f_+(t) \tilde\Pi_+ + f_-(t) \tilde\Pi_-$ and using the fact that the kernel is the same in both components,</p>
+<p>The transform decomposes in the idempotent basis. Writing $f(t) = f_+(t) \tilde\Pi_1 + f_-(t) \tilde\Pi_2$ and using the fact that the kernel is the same in both components,</p>
 <p>$$
-F(\omega) = \left(\int_{-\infty}^{\infty} W(t, \omega) f_+(t) \, dt\right) \tilde\Pi_+ + \left(\int_{-\infty}^{\infty} W(t, \omega) f_-(t) \, dt\right) \tilde\Pi_-.
+F(\omega) = \left(\int_{-\infty}^{\infty} W(t, \omega) f_+(t) \, dt\right) \tilde\Pi_1 + \left(\int_{-\infty}^{\infty} W(t, \omega) f_-(t) \, dt\right) \tilde\Pi_2.
 $$</p>
 <p>So the transform is the pair of the <strong>quaternion Fourier transforms</strong> of the two idempotent components:</p>
 <p>$$
-F(\omega) = F_+(\omega) \tilde\Pi_+ + F_-(\omega) \tilde\Pi_-,
+F(\omega) = F_+(\omega) \tilde\Pi_1 + F_-(\omega) \tilde\Pi_2,
 $$</p>
 <p>where $F_\pm(\omega) = \int_{-\infty}^{\infty} W(t, \omega) f_\pm(t) \, dt$ is the quaternion Fourier transform of the component $f_\pm$.</p>
 <p>This is the fundamental simplification: the split biquaternion Fourier transform reduces to <strong>two independent quaternion Fourier transforms</strong>, one for each idempotent component.</p>
@@ -268,9 +268,9 @@ $$</p>
 <h3 id="the-general-principle">The General Principle</h3>
 <p>The general principle is that the continuous Fourier transform <strong>diagonalizes the constant-coefficient differential operators</strong> on the four-dimensional subspaces. The symbol of the operator is a split-biquaternion-valued function of the frequency variables, and the solutions of the operator equation are determined by the support of the transform on the zero set of the symbol.</p>
 <h3 id="the-operators-in-the-idempotent-basis">The Operators in the Idempotent Basis</h3>
-<p>In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $\tilde{F} = \tilde{F}_+ \tilde\Pi_+ + \tilde{F}_- \tilde\Pi_-$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts as</p>
+<p>In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $\tilde{F} = \tilde{F}_+ \tilde\Pi_1 + \tilde{F}_- \tilde\Pi_2$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts as</p>
 <p>$$
-\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) \tilde\Pi_+ + (\tilde{\nabla} \tilde{F}_-) \tilde\Pi_-,
+\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) \tilde\Pi_1 + (\tilde{\nabla} \tilde{F}_-) \tilde\Pi_2,
 $$</p>
 <p>where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way. So the split biquaternion analysis is the quaternion analysis applied to each of the two idempotent components separately, and the Fourier transform diagonalizes the operators in each component.</p>
 <h2 id="the-vanishing-norm-issue">The Vanishing-Norm Issue</h2>
@@ -353,7 +353,7 @@ $$</p>
 <td>Split complex unit, central, $j^2 = +1$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$</td>
+<td>$\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$</td>
 <td>Idempotents of $\mathbb{D}$</td>
 </tr>
 <tr>
@@ -361,7 +361,7 @@ $$</p>
 <td>General split biquaternion</td>
 </tr>
 <tr>
-<td>$\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$</td>
+<td>$\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$</td>
 <td>Idempotent components</td>
 </tr>
 <tr>

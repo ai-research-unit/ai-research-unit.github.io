@@ -74,7 +74,7 @@ $$</p>
 <p><strong>Proof.</strong> By the square lemma of <em>Idempotents of the Quaternionic Product</em>, $\tilde Q\star\tilde Q = N(\tilde Q)e_0$, and $e_0 \neq 0$, so the left side vanishes exactly when the coefficient $N(\tilde Q)$ does. $\square$</p>
 <p>The criterion for a zero divisor of the algebra is the companion statement.</p>
 <p><strong>Theorem (unit criterion).</strong> An element $\tilde Q$ of $\mathbb{B}$ is a unit if and only if $N(\tilde Q) \neq 0$, and if $N(\tilde Q) = 0$ with $\tilde Q \neq 0$ then $\tilde Q$ is a zero divisor of the algebra; the inverse is $\tilde Q^{-1} = \tilde Q^{\natural}/N(\tilde Q)$ when it exists.</p>
-<p><strong>Proof.</strong> The natural conjugation satisfies $\tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q = N(\tilde Q)e_0$ and is an anti-automorphism, so if $N(\tilde Q)\neq0$ the displayed element is a two-sided inverse. If $N(\tilde Q)=0$ and $\tilde Q\neq0$, then $\tilde Q^{\natural}\neq0$ and $\tilde Q^{\natural}\tilde Q = 0$ exhibits a nonzero product equal to zero. The detail is <em>Biquaternion Norm and Invertibility</em> and <em>Biquaternion Zero Divisors</em>. $\square$</p>
+<p><strong>Proof.</strong> The natural conjugation satisfies $\tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q = N(\tilde Q)e_0$ and is an anti-automorphism, so if $N(\tilde Q)\neq0$ the displayed element is a two-sided inverse. If $N(\tilde Q)=0$ and $\tilde Q\neq0$, then $\tilde Q^{\natural}\neq0$ and $\tilde Q^{\natural}\tilde Q = 0$ exhibits a nonzero product equal to zero. The detail is <em>Biquaternion Norm and Invertibility</em> and <em>Zero Divisors of the General Plain Algebra</em>. $\square$</p>
 <p>Combining the two theorems gives the equivalence that names the article.</p>
 <p><strong>Theorem (square-zero elements are the zero divisors).</strong> For a nonzero $\tilde Q \in \mathbb{B}$,</p>
 <p>$$
@@ -83,16 +83,17 @@ $$</p>
 <p>The square-zero elements of $\star$ are therefore $0$ together with the whole zero-divisor set of the algebra.</p>
 <p><strong>Proof.</strong> By the square-zero theorem $\tilde Q\star\tilde Q = 0$ is $N(\tilde Q) = 0$, and by the unit criterion $N(\tilde Q) = 0$ is exactly the zero-divisor condition for $\tilde Q \neq 0$. $\square$</p>
 <p>This is the sharpest contrast of the group with the associative multiplication. There the square is $\tilde Q\tilde Q = Q_0^2e_0 + 2Q_0\mathbf Q + \mathbf Q^2$, and its vanishing forces $Q_0 = 0$ and $(\mathbf Q,\mathbf Q) = 0$: the square-zero elements of the plain product are the <strong>pure</strong> isotropic vectors, a real cone of dimension four, and they are a proper subset of the zero divisors (<em>Comparison Between the Four General Products</em> §<em>The Squares, the Idempotents and the Roots</em>). Reading the first slot through ${}^{\natural}$ removes the scalar term from the square — the two copies of $Q_0\mathbf Q$ cancel and the scalar part becomes the signless sum — and the square-zero set expands to the whole zero-divisor cone.</p>
-<p><strong>Example.</strong> The Hermitian projector $\tilde\Pi_+(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ over a real unit vector $\hat\mu$ has norm
+<p><strong>Example.</strong> The Hermitian projector $\tilde\Pi_1(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ over a real unit vector $\hat\mu$ has norm
 $$
-N(\tilde\Pi_+) = \tfrac14\bigl(1+(i\hat\mu,i\hat\mu)\bigr) = \tfrac14\bigl(1-(\hat\mu,\hat\mu)\bigr) = 0 ,
+N(\tilde\Pi_1) = \tfrac14\bigl(1+(i\hat\mu,i\hat\mu)\bigr) = \tfrac14\bigl(1-(\hat\mu,\hat\mu)\bigr) = 0 ,
 $$
-in agreement with the square $\tilde\Pi_+\star\tilde\Pi_+ = 0$ of the previous article. It is a zero divisor of the algebra, and its plain square is the projector itself; the two products see the same element as a projector and as a nilpotent.</p>
+in agreement with the square $\tilde\Pi_1\star\tilde\Pi_1 = 0$ of the previous article. It is a zero divisor of the algebra, and its plain square is the projector itself; the two products see the same element as a projector and as a nilpotent.</p>
 <h2 id="the-cone-of-norm-zero">The Cone of Norm Zero</h2>
 <p><strong>Definition.</strong> The <strong>nilpotent cone</strong> of the quaternionic product is the vanishing set of the norm,</p>
 <p>$$
 C = \{\tilde Q \in \mathbb{B} : N(\tilde Q) = 0\} = \{\tilde Q : \tilde Q\star\tilde Q = 0\} .
 $$</p>
+<p>A single square-zero element, being an element known to be nilpotent, is written $\tilde\Upsilon$ where the nilpotency is the point — the upper-case glyph of the biquaternion layer (§<em>The nilpotent convention</em> of <em>Conventions in Mathematics</em>) — and the generic $\tilde Q$ is kept in the statements that hold for every element.</p>
 <p><strong>Proposition (shape).</strong> The cone $C$ is a real algebraic cone of real dimension $6$ in the real eight-dimensional space $\mathbb{B}$, and it is not a real subspace.</p>
 <p><strong>Proof.</strong> With $Q_\mu = q_\mu + iq'_\mu$ the real and imaginary parts, $N = \sum_\mu Q_\mu^2 = \sum_\mu (q_\mu^2 - q'_\mu{}^2) + 2i\sum_\mu q_\mu q'_\mu$ is one complex equation, that is two real equations, and the set is a cone because $N$ is homogeneous of degree two; the two equations are independent off $0$, so the real dimension is $8-2 = 6$. For the failure of linearity, the elements $e_1+ie_2$ and $e_1-ie_2$ both have norm $1-1 = 0$, while their sum $2e_1$ has norm $4$. $\square$</p>
 <p><strong>Corollary.</strong> The cone is closed under multiplication by the product and under multiplication by complex scalars: for any $\tilde P$ and any $\tilde Q$ with $N(\tilde Q) = 0$,</p>
@@ -101,7 +102,7 @@ N(\tilde P\star\tilde Q) = N(\tilde P)N(\tilde Q) = 0 ,
 $$</p>
 <p>so the cone together with $0$ is a multiplicative set, and it is closed under multiplication by every element on either side.</p>
 <p><strong>Proof.</strong> The biquaternion norm is multiplicative for the plain product and invariant under ${}^{\natural}$, so $N(\tilde P^{\natural}\tilde Q) = N(\tilde P^{\natural})N(\tilde Q) = N(\tilde P)N(\tilde Q)$ (<em>Biquaternion Norm and Invertibility</em> §<em>Multiplicativity</em>); the statement follows on evaluating at $N(\tilde Q) = 0$. $\square$</p>
-<p><strong>The two families of zero divisors.</strong> The cone was described in the algebra by <em>Biquaternion Zero Divisors</em> as the union of two families: the <strong>pure</strong> zero divisors, the vectors $\mathbf P \neq 0$ with $(\mathbf P,\mathbf P)=0$, and the <strong>non-pure</strong> ones, the complex multiples of the Hermitian projectors. In the quaternionic product the distinction is invisible at the level of the square — every element of the cone has square zero, pure or not — but it is visible at the level of the plain square: a pure zero divisor has $\mathbf P^2 = -(\mathbf P,\mathbf P)e_0 = 0$, while a non-pure one, being a multiple of a projector, has a nonzero plain square. The displacement of the previous article is this sentence read in reverse: the nontrivial idempotents of the algebra, which are the non-pure zero divisors, are exactly the Hermitian projectors that the quaternionic square sends to $0$.</p>
+<p><strong>The two families of zero divisors.</strong> The cone was described in the algebra by <em>Zero Divisors of the General Plain Algebra</em> as the union of two families: the <strong>pure</strong> zero divisors, the vectors $\mathbf P \neq 0$ with $(\mathbf P,\mathbf P)=0$, and the <strong>non-pure</strong> ones, the complex multiples of the Hermitian projectors. In the quaternionic product the distinction is invisible at the level of the square — every element of the cone has square zero, pure or not — but it is visible at the level of the plain square: a pure zero divisor has $\mathbf P^2 = -(\mathbf P,\mathbf P)e_0 = 0$, while a non-pure one, being a multiple of a projector, has a nonzero plain square. The displacement of the previous article is this sentence read in reverse: the nontrivial idempotents of the algebra, which are the non-pure zero divisors, are exactly the Hermitian projectors that the quaternionic square sends to $0$.</p>
 <h2 id="the-annihilators">The Annihilators</h2>
 <p><strong>Definition.</strong> For $\tilde Q \in \mathbb{B}$ the <strong>left annihilator</strong> and the <strong>right annihilator</strong> with respect to $\star$ are</p>
 <p>$$
@@ -218,7 +219,7 @@ $$</p>
 <td>the nilpotent cone, the square-zero set</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_+(\hat\mu) = \tfrac12(e_0+i\hat\mu)$</td>
+<td>$\tilde\Pi_1(\hat\mu) = \tfrac12(e_0+i\hat\mu)$</td>
 <td>the Hermitian projector over a real unit vector $\hat\mu$</td>
 </tr>
 <tr>

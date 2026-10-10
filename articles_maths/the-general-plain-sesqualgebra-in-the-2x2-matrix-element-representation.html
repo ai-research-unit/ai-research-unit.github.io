@@ -200,7 +200,16 @@ $$</p>
 <p>$$
 \mathbb{B}^{\times}\cong GL_2(\mathbb{C}),\qquad \{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=1\}\cong SL_2(\mathbb{C}),
 $$</p>
-<p>and their unitary slices are $U(2)$ and $SU(2)$, with $SU(2)\cong\mathrm{Spin}(3)$ and $SU(2)/\{\pm I\}\cong SO(3)$. The unit-norm group is the group that acts on the Hermitian subspace by $*$-congruence, $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$, which in the model is $X\mapsto AXA^{\dagger}$ on the Hermitian matrices.</p>
+<p>and their unitary slices are $U(2)$ and $SU(2)$, with $SU(2)\cong\mathrm{Spin}(3)$ and $SU(2)/\{\pm I\}\cong SO(3)$. The unit-norm group is the group that acts on the Hermitian subspace by $*$-congruence, $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$, which in the model is $X\mapsto AXA^{\dagger}$ on the Hermitian matrices. Three representatives in the model are</p>
+<p>$$
+A=\begin{pmatrix}1&1\\0&1\end{pmatrix},\quad \det A=1\ (\text{the unit-norm group}),\qquad
+U=i\sigma_1=\begin{pmatrix}0&i\\i&0\end{pmatrix},\quad \det U=1,\ UU^{\dagger}=I_2\ (\text{the unitary slice}),
+$$</p>
+<p>$$
+\begin{pmatrix}e^{i\theta}&0\\0&e^{-i\theta}\end{pmatrix}\in SU(2),\qquad\text{and}\qquad
+A\,\sigma_3\,A^{\dagger}=\begin{pmatrix}1&1\\0&1\end{pmatrix}\begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}1&0\\1&1\end{pmatrix}=\begin{pmatrix}0&-1\\-1&-1\end{pmatrix},
+$$</p>
+<p>the last Hermitian as the congruence action requires.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <p><strong>A definite element.</strong> Let $\tilde{Q}=e_0+ie_1$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{*}=|1|^2+|i|^2=2$ and $\lVert \mathsf{M}_2(\tilde{Q})\rVert_F=2=\sqrt2\cdot\sqrt2$; the element is a zero divisor of the plain product, yet it is not isotropic for the general plain sesquilinear form, and its matrix is singular.</p>
 <p><strong>A Hermitian element.</strong> Let $\tilde{Q}=e_0+ie_3$, so $Q_0=1$, $Q_3=i$. Then the coefficients of $\tilde{Q}^{*}$ are $\varepsilon_\mu\overline{Q_\mu}=(1,0,0,(-1)(-i))=Q_\mu$, so $\tilde{Q}^{*}=\tilde{Q}$ and the element is Hermitian; in the model $\mathsf{M}_2(\tilde{Q})=I+\sigma_3=\operatorname{diag}(2,0)$, a Hermitian matrix, and $\langle\tilde{Q},\tilde{Q}\rangle_{*}=2=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q})^{\dagger}\mathsf{M}_2(\tilde{Q}))$.</p>

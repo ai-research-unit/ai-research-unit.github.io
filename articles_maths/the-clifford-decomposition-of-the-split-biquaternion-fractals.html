@@ -83,16 +83,16 @@ $$</p>
 <p><strong>Proof.</strong> The Hadamard change of variables $\tilde Q_\pm=\tilde A\pm\tilde B$ carries $\tilde B=0$ to $\tilde Q_+=\tilde Q_-=\tilde A$, the diagonal; the slice of the product $K_{\tilde C_+}\times K_{\tilde C_-}$ with the diagonal is the intersection. For an even parameter $j\tilde B=0$ gives $\tilde C_+=\tilde C_-=\tilde C$.</p>
 <p><strong>Corollary (the even slice is not the whole fractal).</strong> For an even parameter the quaternion fractal appears twice in a picture of the split-biquaternion fractal, once in the even slice and once in the odd slice, and the two slices are exchanged by the symmetry of the volume element below; for a general parameter the even slice is the intersection $K_{\tilde C_+}\cap K_{\tilde C_-}$ of the two quaternion filled Julia sets.</p>
 <h2 id="the-two-decompositions-and-their-relation">The Two Decompositions and Their Relation</h2>
-<p><strong>Proposition (Hadamard relation).</strong> The idempotent decomposition $\tilde Q=\tilde Q_+\tilde\Pi_++\tilde Q_-\tilde\Pi_-$ and the parity decomposition $\tilde Q=\tilde A+j\tilde B$ are related by the Hadamard transform $\tilde Q_\pm=\tilde A\pm\tilde B$, an orthogonal change of coordinates with the matrix $\tfrac1{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}$.</p>
-<p><strong>Proof.</strong> Direct computation from $\tilde\Pi_\pm=\tfrac12(e_0\pm j)$ and the centrality of $j$: $\tilde Q\tilde\Pi_+=(\tilde A+j\tilde B)\tilde\Pi_+=(\tilde A+\tilde B)\tilde\Pi_+$.</p>
-<p><strong>Remark (the two decompositions split different things).</strong> The idempotent decomposition splits the algebra into two isomorphic ideals $\mathbb{H}\tilde\Pi_\pm$, and it is the decomposition that makes the quadratic family a product of two quaternion families. The parity decomposition splits the algebra into the even subalgebra and the odd module, and it is the decomposition that makes the quaternion algebra appear as a subalgebra. <strong>The first decomposes the dynamics, the second locates a division algebra inside it, and the two are Hadamard-equivalent as decompositions of the underlying real space and very different as decompositions of the dynamics.</strong></p>
+<p><strong>Proposition (Hadamard relation).</strong> The idempotent decomposition $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$ and the parity decomposition $\tilde Q=\tilde A+j\tilde B$ are related by the Hadamard transform $\tilde Q_\pm=\tilde A\pm\tilde B$, an orthogonal change of coordinates with the matrix $\tfrac1{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}$.</p>
+<p><strong>Proof.</strong> Direct computation from $\tilde\Pi_{1,2}=\tfrac12(e_0\pm j)$ and the centrality of $j$: $\tilde Q\tilde\Pi_1=(\tilde A+j\tilde B)\tilde\Pi_1=(\tilde A+\tilde B)\tilde\Pi_1$.</p>
+<p><strong>Remark (the two decompositions split different things).</strong> The idempotent decomposition splits the algebra into two isomorphic ideals $\mathbb{H}\tilde\Pi_{1,2}$, and it is the decomposition that makes the quadratic family a product of two quaternion families. The parity decomposition splits the algebra into the even subalgebra and the odd module, and it is the decomposition that makes the quaternion algebra appear as a subalgebra. <strong>The first decomposes the dynamics, the second locates a division algebra inside it, and the two are Hadamard-equivalent as decompositions of the underlying real space and very different as decompositions of the dynamics.</strong></p>
 <h2 id="the-volume-element-and-the-chiral-halves">The Volume Element and the Chiral Halves</h2>
 <p><strong>Proposition (the eigenvalues of the volume element).</strong> The volume element $\omega=E_1E_2E_3=-j$ is central with $\omega^2=e_0$, and it acts on the two idempotents by</p>
 <p>$$
-\omega\tilde\Pi_+=-\tilde\Pi_+, \qquad \omega\tilde\Pi_-=+\tilde\Pi_- .
+\omega\tilde\Pi_1=-\tilde\Pi_1, \qquad \omega\tilde\Pi_2=+\tilde\Pi_2 .
 $$</p>
-<p>So the two ideals $\mathbb{H}\tilde\Pi_\pm$ are the eigenspaces of the volume element with the eigenvalues $\mp1$, and they are the two chiral halves of the algebra.</p>
-<p><strong>Proof.</strong> $j$ is central and $j^2=e_0$, so $\omega=-j$ is central with $\omega^2=e_0$; the action on the idempotents is $-j\tilde\Pi_+ = -\tfrac12(j+j^2)=-\tfrac12(j+1)=-\tilde\Pi_+$ and $-j\tilde\Pi_-=-\tfrac12(j-1)=+\tilde\Pi_-$.</p>
+<p>So the two ideals $\mathbb{H}\tilde\Pi_{1,2}$ are the eigenspaces of the volume element with the eigenvalues $\mp1$, and they are the two chiral halves of the algebra.</p>
+<p><strong>Proof.</strong> $j$ is central and $j^2=e_0$, so $\omega=-j$ is central with $\omega^2=e_0$; the action on the idempotents is $-j\tilde\Pi_1 = -\tfrac12(j+j^2)=-\tfrac12(j+1)=-\tilde\Pi_1$ and $-j\tilde\Pi_2=-\tfrac12(j-1)=+\tilde\Pi_2$.</p>
 <p><strong>Corollary (the complexification and the two chiral summands).</strong> The complexified algebra splits as $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}\cong\mathbb{B}\oplus\mathbb{B}$, the two summands being the two chiral halves, each isomorphic to the biquaternion algebra; the parity and the chirality together are the two gradings of the complexification.</p>
 <p><strong>Theorem (the symmetry by the volume element).</strong> Multiplication by $j$ is an isometry of the Euclidean norm and satisfies</p>
 <p>$$
@@ -142,7 +142,7 @@ $$</p>
 <td>the Hadamard transform</td>
 </tr>
 <tr>
-<td>$\mathbb{H}\tilde\Pi_\pm$</td>
+<td>$\mathbb{H}\tilde\Pi_{1,2}$</td>
 <td>the two chiral halves, of volume eigenvalue $\mp1$</td>
 </tr>
 </tbody>

@@ -129,14 +129,14 @@ $$</p>
 <p><strong>Proof.</strong> The inverse on a sequence approaching a null point along a null direction is unbounded, and other functions built from $\tilde q^{-1}$ acquire directional limits; the removable-singularity theorem of one complex variable requires a normed division algebra and fails here. The distributional treatment of the singularities is the subject of <em>Split-Quaternion Integration</em>.</p>
 <h2 id="the-calculus-in-the-peirce-coordinates">The Calculus in the Peirce Coordinates</h2>
 <p>The idempotents of the algebra give coordinates in which the algebraic operations become explicit, and they turn the calculus into a coordinatewise calculus.</p>
-<p><strong>Definition.</strong> With $\tilde\pi_{\pm} = \tfrac12(1 \pm e_2)$, the <strong>Peirce coordinates</strong> of $\tilde q$ are</p>
+<p><strong>Definition.</strong> With $\tilde\pi_{1,2} = \tfrac12(1 \pm e_2)$, the <strong>Peirce coordinates</strong> of $\tilde q$ are</p>
 <p>$$
 \tilde q = \sum_{\epsilon,\eta \in \{+,-\}} \tilde\pi_\epsilon\, \tilde q\, \tilde\pi_\eta,
 $$</p>
 <p>and the four components $\tilde\pi_\epsilon \tilde q \tilde\pi_\eta$ are one-dimensional real subspaces.</p>
 <p><strong>Theorem (The Peirce Coordinates Are the Matrix Entries of the Adapted Model).</strong> The map</p>
 <p>$$
-\tilde q \longmapsto \big(\tilde\pi_+\tilde q\tilde\pi_+,\ \tilde\pi_+\tilde q\tilde\pi_-,\ \tilde\pi_-\tilde q\tilde\pi_+,\ \tilde\pi_-\tilde q\tilde\pi_-\big)
+\tilde q \longmapsto \big(\tilde\pi_1\tilde q\tilde\pi_1,\ \tilde\pi_1\tilde q\tilde\pi_2,\ \tilde\pi_2\tilde q\tilde\pi_1,\ \tilde\pi_2\tilde q\tilde\pi_2\big)
 $$</p>
 <p>is a linear isomorphism of $\mathbb{H}_{\mathrm{s}}$ with the four lines, and the components multiply as the matrix units: for any $\tilde q, \tilde p$,</p>
 <p>$$
@@ -145,14 +145,14 @@ $$</p>
 <p>and, when $\eta = \eta'$, the product is $\tilde\pi_\epsilon (\tilde q \tilde\pi_\eta \tilde p) \tilde\pi_{\epsilon'}$, which lies in the line $\tilde\pi_\epsilon\mathbb{H}_{\mathrm{s}}\tilde\pi_{\epsilon'}$. The coordinates are therefore a presentation of the algebra as a matrix algebra.</p>
 <p>Written in the basis $1, e_1, e_2, e_3$, the four components of $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ are</p>
 <p>$$
-\tilde\pi_+\tilde q\tilde\pi_+ = (q_0+q_2)\,\tilde\pi_+, \qquad \tilde\pi_-\tilde q\tilde\pi_- = (q_0-q_2)\,\tilde\pi_-, \qquad \tilde\pi_+\tilde q\tilde\pi_- = \tfrac{q_1-q_3}{2}(e_1-e_3), \qquad \tilde\pi_-\tilde q\tilde\pi_+ = \tfrac{q_1+q_3}{2}(e_1+e_3).
+\tilde\pi_1\tilde q\tilde\pi_1 = (q_0+q_2)\,\tilde\pi_1, \qquad \tilde\pi_2\tilde q\tilde\pi_2 = (q_0-q_2)\,\tilde\pi_2, \qquad \tilde\pi_1\tilde q\tilde\pi_2 = \tfrac{q_1-q_3}{2}(e_1-e_3), \qquad \tilde\pi_2\tilde q\tilde\pi_1 = \tfrac{q_1+q_3}{2}(e_1+e_3).
 $$</p>
 <p>The Peirce coordinates of an element are the four numbers</p>
 <p>$$
 (q_0+q_2,\ q_0-q_2,\ q_1-q_3,\ q_1+q_3),
 $$</p>
-<p>which are the two eigenvalues of the diagonal projections, $\tilde\pi_+\tilde q\tilde\pi_+ = (q_0+q_2)\tilde\pi_+$ and $\tilde\pi_-\tilde q\tilde\pi_- = (q_0-q_2)\tilde\pi_-$, together with the two off-diagonal corner coefficients $q_1-q_3$ and $q_1+q_3$; they are a linear change of the standard coordinates $(q_0,q_1,q_2,q_3)$.</p>
-<p><strong>Proof.</strong> The decomposition of the identity $1 = \tilde\pi_+ + \tilde\pi_-$ with $\tilde\pi_+\tilde\pi_- = \tilde\pi_-\tilde\pi_+ = 0$ gives the direct sum, and the dimension count gives one dimension per Peirce space; the vanishing of the mixed products is $\tilde\pi_\eta \tilde\pi_{\eta'} = 0$ for $\eta \neq \eta'$. The displayed components are read off the multiplication table: $\tilde\pi_+\tilde\pi_+ = \tilde\pi_+$, $\tilde\pi_\pm e_2 \tilde\pi_\pm = \pm \tilde\pi_\pm$, $\tilde\pi_+e_1\tilde\pi_+ = \tilde\pi_+e_3\tilde\pi_+ = \tilde\pi_-e_1\tilde\pi_- = \tilde\pi_-e_3\tilde\pi_- = 0$, $\tilde\pi_+e_1\tilde\pi_- = \tfrac12(e_1-e_3)$, $\tilde\pi_+e_3\tilde\pi_- = -\tfrac12(e_1-e_3)$, $\tilde\pi_-e_1\tilde\pi_+ = \tilde\pi_-e_3\tilde\pi_+ = \tfrac12(e_1+e_3)$. The Peirce coordinates are read off the multiplication table, and they are a linear change of the standard coordinates.</p>
+<p>which are the two eigenvalues of the diagonal projections, $\tilde\pi_1\tilde q\tilde\pi_1 = (q_0+q_2)\tilde\pi_1$ and $\tilde\pi_2\tilde q\tilde\pi_2 = (q_0-q_2)\tilde\pi_2$, together with the two off-diagonal corner coefficients $q_1-q_3$ and $q_1+q_3$; they are a linear change of the standard coordinates $(q_0,q_1,q_2,q_3)$.</p>
+<p><strong>Proof.</strong> The decomposition of the identity $1 = \tilde\pi_1 + \tilde\pi_2$ with $\tilde\pi_1\tilde\pi_2 = \tilde\pi_2\tilde\pi_1 = 0$ gives the direct sum, and the dimension count gives one dimension per Peirce space; the vanishing of the mixed products is $\tilde\pi_\eta \tilde\pi_{\eta'} = 0$ for $\eta \neq \eta'$. The displayed components are read off the multiplication table: $\tilde\pi_1\tilde\pi_1 = \tilde\pi_1$, $\tilde\pi_{1,2} e_2 \tilde\pi_{1,2} = \pm \tilde\pi_{1,2}$, $\tilde\pi_1e_1\tilde\pi_1 = \tilde\pi_1e_3\tilde\pi_1 = \tilde\pi_2e_1\tilde\pi_2 = \tilde\pi_2e_3\tilde\pi_2 = 0$, $\tilde\pi_1e_1\tilde\pi_2 = \tfrac12(e_1-e_3)$, $\tilde\pi_1e_3\tilde\pi_2 = -\tfrac12(e_1-e_3)$, $\tilde\pi_2e_1\tilde\pi_1 = \tilde\pi_2e_3\tilde\pi_1 = \tfrac12(e_1+e_3)$. The Peirce coordinates are read off the multiplication table, and they are a linear change of the standard coordinates.</p>
 <p><strong>Corollary (Partial Derivatives and Smoothness).</strong> A function $f$ of the split-quaternion variable is smooth in the sense of this article exactly when its four Peirce components are smooth functions of the four Peirce coordinates; the partial derivatives with respect to the Peirce coordinates are the components of the derivative, and every operator of the preceding section is a first-order operator with constant coefficients in these coordinates.</p>
 <p><strong>Proof.</strong> The map to the Peirce coordinates is a linear isomorphism, hence a diffeomorphism, and the definition of smoothness is transported along it; the operators have constant coefficients in the coordinates $(q_0,q_1,q_2,q_3)$ and therefore in the linear coordinates.</p>
 <h2 id="comparison-with-the-quaternion-and-split-complex-cases">Comparison with the Quaternion and Split-Complex Cases</h2>

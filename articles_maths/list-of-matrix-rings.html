@@ -57,7 +57,19 @@
 <p>A ring-theoretic point governs the naming throughout. The object is a <strong>matrix ring</strong> when the row reads $M_n(R)$ over a commutative ring or $M_n(D)$ over a division ring, and a <strong>matrix algebra</strong> when the row reads it over a field and the algebra structure is what matters; the article that introduces the object is <em>Matrix Algebras</em>, and the rows for $M_n(R)$ and its structure point there whatever name the row uses.</p>
 <p>This article introduces nothing and proves nothing. It records examples and non-examples side by side, a non-example being a ring that is not a matrix ring in the sense of the list, with the failure named and the article that records it.</p>
 <h2 id="the-matrix-ring-and-its-matrix-units">The Matrix Ring and Its Matrix Units</h2>
-<p>For a commutative ring $R$ and $n \geq 1$, the matrix ring $M_n(R)$ is the ring of $n \times n$ matrices with the usual addition and multiplication. Its additive basis is the set of matrix units, and the multiplication table of the units is the source of every structural fact below.</p>
+<p>For a commutative ring $R$ and $n \geq 1$, the matrix ring $M_n(R)$ is the ring of $n \times n$ matrices with the usual addition and multiplication. Its additive basis is the set of matrix units, and the multiplication table of the units is the source of every structural fact below. For $n = 2$ the four units are</p>
+<p>$$
+E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad
+E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad
+E_{21}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\quad
+E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix},
+$$</p>
+<p>and the two products $E_{12}E_{21}$ and $E_{21}E_{12}$ read</p>
+<p>$$
+E_{12}E_{21}=\begin{pmatrix}0&1\\0&0\end{pmatrix}\begin{pmatrix}0&0\\1&0\end{pmatrix}=\begin{pmatrix}1&0\\0&0\end{pmatrix}=E_{11},\qquad
+E_{21}E_{12}=\begin{pmatrix}0&0\\1&0\end{pmatrix}\begin{pmatrix}0&1\\0&0\end{pmatrix}=\begin{pmatrix}0&0\\0&1\end{pmatrix}=E_{22},
+$$</p>
+<p>which differ, and $E_{12}E_{12}=0$ while $E_{12}\neq 0$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>

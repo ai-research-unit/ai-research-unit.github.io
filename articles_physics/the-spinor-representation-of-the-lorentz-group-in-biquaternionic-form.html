@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form"><strong>The Spinor Representation of the Lorentz Group in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The companion articles have established the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as the home of the Lorentz rotors, and the spinor module $S=\mathbb{C}^2$, realized inside the algebra as the minimal left ideal $\mathbb{B}p$, as the module on which those rotors act one-sidedly. The present article treats the <strong>spinor representation</strong> as a representation in its own right: what it is, which representations sit beside it, and — the question this article is written to answer — how far the finite-dimensional representation theory of $SL(2,\mathbb{C})$ can be carried by the algebra $\mathbb{B}$ before a larger carrier is required.</p>
+<p>The companion articles have established the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as the home of the Lorentz rotors, and the spinor module $S=\mathbb{C}^2$, realized inside the algebra as the minimal left ideal $\mathbb{B}\tilde\Pi_1$, as the module on which those rotors act one-sidedly. The present article treats the <strong>spinor representation</strong> as a representation in its own right: what it is, which representations sit beside it, and — the question this article is written to answer — how far the finite-dimensional representation theory of $SL(2,\mathbb{C})$ can be carried by the algebra $\mathbb{B}$ before a larger carrier is required.</p>
 <p>Three claims organize the discussion. First, the spinor representation is the defining two-dimensional representation $(\tfrac12,0)$, and its complex conjugate $(0,\tfrac12)$ is the second, inequivalent fundamental representation; these two are the two <strong>chiralities</strong>, and they are the only two-dimensional irreducible representations. Second, the four-vector representation $(\tfrac12,\tfrac12)$ is the tensor product of the two chiralities, and the algebra $\mathbb{B}$ itself carries it, under conjugation rather than under multiplication. Third, the algebra stops there: the higher $(j,j')$ representations are not carried by $\mathbb{B}$ and each requires a larger module built from tensor powers of the spinor module.</p>
 <p>The third claim is the one with content, and it is checked rather than assumed. The two parents already classify the finite-dimensional representations by the pair $(j,j')$ and develop the module and its bilinear pairings; neither asks which of those representations the algebra can actually carry. That is the subject of the last two sections.</p>
 <p>Notation is that of the read-list companions. The quaternion basis is $e_0=1,e_1,e_2,e_3$, with $e_k^2=-e_0$ and $e_1e_2=e_3$; the scalar imaginary is $i$, commuting with the quaternion units; $\mathbb{M}_-$ is the anti-Hermitian subspace (the material sector, home of the four-vectors), $\mathbb{M}_+$ the Hermitian subspace (the informational sector), $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace, and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The algebra isomorphism is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(ie_k)=\sigma_k$, and the biquaternion norm is the determinant, $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$. The trace pairing on the Hermitian sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
@@ -66,7 +66,7 @@ $$</p>
 \psi \;\longmapsto\; \mathsf{M}_2(\tilde{\Lambda})\,\psi,
 \qquad \tilde{\Lambda}\in SL(2,\mathbb{C}),\quad \psi\in S .
 $$</p>
-<p>This is the <strong>spinor representation</strong> of the Lorentz group. Its carrier $S$ is the unique simple module of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$, realized inside $\mathbb{B}$ as the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$; the detailed construction, together with the bilinear pairings on $S$, belongs to the companion article on the spinor module and is used here without repetition.</p>
+<p>This is the <strong>spinor representation</strong> of the Lorentz group. Its carrier $S$ is the unique simple module of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$, realized inside $\mathbb{B}$ as the minimal left ideal $\mathbb{B}\tilde\Pi_1$ with $\tilde\Pi_1=\tfrac12(e_0+ie_3)$; the detailed construction, together with the bilinear pairings on $S$, belongs to the companion article on the spinor module and is used here without repetition.</p>
 <p>Three properties of the representation are worth stating at once, because they distinguish it from the representations a physics reader meets first.</p>
 <p><strong>It is irreducible.</strong> Since $\mathbb{B}$ is simple, it has exactly one simple module up to isomorphism, and Schur's lemma gives $\mathrm{End}_{\mathbb{B}}(S)=\mathbb{C}$. The module $S$ carries no proper submodule, so the spinor representation is irreducible.</p>
 <p><strong>It is faithful.</strong> The kernel of the action is trivial: $\mathsf{M}_2(-e_0)=-I_2$, so $\pm\tilde{\Lambda}$ act differently on every spinor. This is in contrast with the four-vector action $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ on $\mathbb{M}_-$, whose kernel is $\{\pm e_0\}$. The spinor representation is a representation of the double cover $SL(2,\mathbb{C})$ that does <strong>not</strong> descend to $SO^+(1,3)$.</p>
@@ -98,7 +98,7 @@ S=\left(\tfrac12,0\right)\ncong\left(0,\tfrac12\right)=\bar{S}.
 $$</p>
 <p>One of the two $\mathrm{SU}(2)$ halves acts as spin $\tfrac12$ on $S$ and trivially on the conjugate half; on $\bar{S}$ the roles are interchanged. That a Weyl spinor has spin $\tfrac12$ under the rotation group and is annihilated by one of the two chiral Casimirs is exactly this statement.</p>
 <p>A dimension count confirms that the two chiralities exhaust the elementary cases. An irreducible representation labelled $(j,j')$ has complex dimension $(2j+1)(2j'+1)$. Setting this equal to $2$ forces either $j=0,j'=\tfrac12$ or $j=\tfrac12,j'=0$. So $(0,\tfrac12)$ and $(\tfrac12,0)$ are the only two-dimensional irreducible representations, and every fundamental representation of the Lorentz group is one of the two chiralities.</p>
-<p>Two cautions belong here, and both are developed in the companion on the spinor module. First, the two chiralities are <strong>not</strong> the two minimal left ideals $\mathbb{B}p$ and $\mathbb{B}q$: because $\mathbb{B}$ is simple, both ideals are isomorphic to $S$, and left multiplication acts by the <em>same</em> representation on each. Second, the right-handed chirality is <strong>not</strong> obtained by right multiplication either: as a right module $\mathbb{B}\cong S^{*}\oplus S^{*}$, and the dual of the defining representation is equivalent to it, $S^{*}\cong S$, via the invariant tensor $\epsilon$ ($g^{T}\epsilon g=\epsilon$ for $\det g=1$). The chirality distinction is therefore invisible to the complex algebra and requires the real structure — complex conjugation — to be seen. The <strong>Dirac spinor</strong> is the direct sum of the two halves, $\Delta=S\oplus\bar{S}=(\tfrac12,0)\oplus(0,\tfrac12)$, of complex dimension $4$.</p>
+<p>Two cautions belong here, and both are developed in the companion on the spinor module. First, the two chiralities are <strong>not</strong> the two minimal left ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$: because $\mathbb{B}$ is simple, both ideals are isomorphic to $S$, and left multiplication acts by the <em>same</em> representation on each. Second, the right-handed chirality is <strong>not</strong> obtained by right multiplication either: as a right module $\mathbb{B}\cong S^{*}\oplus S^{*}$, and the dual of the defining representation is equivalent to it, $S^{*}\cong S$, via the invariant tensor $\epsilon$ ($g^{T}\epsilon g=\epsilon$ for $\det g=1$). The chirality distinction is therefore invisible to the complex algebra and requires the real structure — complex conjugation — to be seen. The <strong>Dirac spinor</strong> is the direct sum of the two halves, $\Delta=S\oplus\bar{S}=(\tfrac12,0)\oplus(0,\tfrac12)$, of complex dimension $4$.</p>
 <h2 id="the-vector-representation-is-the-tensor-product-of-the-two-chiralities">The Vector Representation Is the Tensor Product of the Two Chiralities</h2>
 <p>The two fundamental representations combine into the four-vector representation. With $S$ carrying $(\tfrac12,0)$ and $\bar{S}$ carrying $(0,\tfrac12)$, the outer tensor product is</p>
 <p>$$
@@ -160,7 +160,7 @@ $$</p>
 <td>$(\tfrac12,0)$</td>
 <td>$2$</td>
 <td>left-handed Weyl spinor</td>
-<td>$S=\mathbb{B}p$</td>
+<td>$S=\mathbb{B}\tilde\Pi_1$</td>
 </tr>
 <tr>
 <td>$(0,\tfrac12)$</td>
@@ -281,8 +281,8 @@ with the left-handed chirality appearing with multiplicity two. The right-handed
 <td>Biquaternion norm</td>
 </tr>
 <tr>
-<td>$p=\tfrac12(e_0+ie_3)$</td>
-<td>Primitive idempotent; $\mathbb{B}p\cong S$</td>
+<td>$\tilde\Pi_1=\tfrac12(e_0+ie_3)$</td>
+<td>Primitive idempotent; $\mathbb{B}\tilde\Pi_1\cong S$</td>
 </tr>
 <tr>
 <td>$S=\mathbb{C}^2$</td>

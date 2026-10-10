@@ -99,7 +99,7 @@ M(\tilde{H}) = \begin{pmatrix} h_0 + h_3 & h_1 - ih_2 \\ h_1 + ih_2 & h_0 - h_3 
 $$</p>
 <p>Acting on $|u\rangle = (u_1, u_2)^{\mathsf T}\in S$, this is the ordinary Hermitian operator of the two-level system. The rank-one idempotent along the unit direction $\hat{\mu}$ maps to</p>
 <p>$$
-M\bigl(\tilde\Pi_+(\hat{\mu})\bigr) = \tfrac12\begin{pmatrix} 1+\mu_3 & \mu_1 - i\mu_2 \\ \mu_1 + i\mu_2 & 1-\mu_3 \end{pmatrix},
+M\bigl(\tilde\Pi_1(\hat{\mu})\bigr) = \tfrac12\begin{pmatrix} 1+\mu_3 & \mu_1 - i\mu_2 \\ \mu_1 + i\mu_2 & 1-\mu_3 \end{pmatrix},
 $$</p>
 <p>whose image is the ray of the spinor $(\cos\!\frac{\theta}{2}, e^{i\varphi}\sin\!\frac{\theta}{2})^{\mathsf T}$ with $\hat{\mu} = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$. Conversely, given a unit spinor of that form, the algebra element $\tfrac12(e_0 + i\hat{\mu})$ is recovered. The two descriptions carry exactly the same data.</p>
 <h3 id="the-hermitian-subspace">The Hermitian subspace</h3>
@@ -141,9 +141,9 @@ $$</p>
 <p>is a bijection. This is the biquaternion form of the standard correspondence between pure states and rays.</p>
 <p>In the basis of the algebra the pure states are the elements</p>
 <p>$$
-\tilde\Pi_\pm(\hat{\mu}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\mu}\bigr), \qquad \hat{\mu}\in\mathbb{R}^3,\ |\hat{\mu}|=1 ,
+\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\mu}\bigr), \qquad \hat{\mu}\in\mathbb{R}^3,\ |\hat{\mu}|=1 ,
 $$</p>
-<p>the two antipodal idempotents of the direction $\hat{\mu}$. Each satisfies $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$ and $\mathrm{Tr}(\tilde\Pi_\pm)=1$, and the matrix image is $\tfrac12(I_2 \pm \hat{\mu}\cdot\boldsymbol{\sigma})$. The family of rays is therefore parametrized by the unit sphere $S^2$, and the two idempotents of a direction are the antipodal points of the Bloch sphere.</p>
+<p>the two antipodal idempotents of the direction $\hat{\mu}$. Each satisfies $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$ and $\mathrm{Tr}(\tilde\Pi_{1,2})=1$, and the matrix image is $\tfrac12(I_2 \pm \hat{\mu}\cdot\boldsymbol{\sigma})$. The family of rays is therefore parametrized by the unit sphere $S^2$, and the two idempotents of a direction are the antipodal points of the Bloch sphere.</p>
 <h3 id="the-general-state-and-the-trace-pairing">The general state and the trace pairing</h3>
 <p>A general state is a positive trace-one element of $\mathbb{M}_+$,</p>
 <p>$$
@@ -161,7 +161,7 @@ $$</p>
 <h3 id="mixed-states-and-the-density-operator-correspondence">Mixed states and the density-operator correspondence</h3>
 <p>A general state $\tilde\rho$ is a convex combination of pure states,</p>
 <p>$$
-\tilde{\rho} = \lambda_+\,\tilde\Pi_+(\hat{\mathbf{r}}) + \lambda_-\,\tilde\Pi_-(\hat{\mathbf{r}}),
+\tilde{\rho} = \lambda_+\,\tilde\Pi_1(\hat{\mathbf{r}}) + \lambda_-\,\tilde\Pi_2(\hat{\mathbf{r}}),
 \qquad \lambda_\pm = \tfrac{1}{2}\bigl(1\pm|\mathbf{r}|\bigr),
 $$</p>
 <p>when $\mathbf{r}\neq0$, and is the maximally mixed state $\tfrac12 e_0$ when $\mathbf{r}=0$. This is the spectral decomposition on the module: the two eigenvectors are the rays of $\hat{\mathbf{r}}$ and $-\hat{\mathbf{r}}$. The correspondence is exactly the ordinary one between a density operator and its eigenvectors, expressed in the algebra. The Bloch ball is the image of the trace-one positive cone, and its boundary is the set of rank-one projectors; the companion article <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em> develops that geometry from the biquaternion norm, and it is recalled below only as far as the module requires.</p>
@@ -187,7 +187,7 @@ r_k = \mathrm{Tr}(\tilde{\rho}\,ie_k) = \langle \sigma_k\rangle ,
 $$</p>
 <p>so the state is reconstructed from three real numbers obtained by measuring the three Pauli observables. Equivalently, since</p>
 <p>$$
-p_k^{\pm} = \mathrm{Tr}\bigl(\tilde{\rho}\,\tilde\Pi_\pm(\hat{e}_k)\bigr) = \tfrac12\bigl(1 \pm r_k\bigr),
+p_k^{\pm} = \mathrm{Tr}\bigl(\tilde{\rho}\,\tilde\Pi_{1,2}(\hat{e}_k)\bigr) = \tfrac12\bigl(1 \pm r_k\bigr),
 $$</p>
 <p>the three pairs of outcome probabilities determine $\mathbf{r}$ and hence the state. This is the elementary tomographic completeness of the three coordinate measurements, and it is the module-level content of the mutually unbiased bases of a qubit. The module carries no further state parameters: it has complex dimension two, its rays are parametrized by two real angles, and its states by three real numbers.</p>
 <h2 id="what-the-module-supplies-and-what-it-does-not">What the Module Supplies and What It Does Not</h2>
@@ -214,7 +214,7 @@ $$</p>
 <p><strong>5. Empirical contact.</strong> As for the whole framework, a reformulation of the qubit's carrier predicts nothing that ordinary quantum physics does not. The module's nativeness is a statement about how the formalism hangs together, not a new observable.</p>
 <h2 id="summary">Summary</h2>
 <p>The elementary informational unit of the biquaternion framework is the defining module of the algebra. Because $\mathbb{B}\cong M_2(\mathbb{C})$ is a simple finite-dimensional complex algebra, it has a unique simple left module $S=\mathbb{C}^2$, the column space, and every irreducible representation is equivalent to the action on $S$. The qubit is therefore native to the algebra: it is what the algebra is a matrix algebra of, not a Hilbert space adjoined to it.</p>
-<p>On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ correspond bijectively to the rays of $S$, and are exactly the pure states; the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule and coincides with the module expectation value $\langle u|\hat{H}|u\rangle$. A general state $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$ is a positive trace-one element with spectral decomposition into two rays, and the biquaternion norm $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the trace-one slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.</p>
+<p>On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ correspond bijectively to the rays of $S$, and are exactly the pure states; the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule and coincides with the module expectation value $\langle u|\hat{H}|u\rangle$. A general state $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$ is a positive trace-one element with spectral decomposition into two rays, and the biquaternion norm $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the trace-one slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.</p>
 <p>What the module does not supply is the composition rule for several qubits: the tensor product $\mathbb{B}\otimes\mathbb{B}$ and its four-dimensional module are an additional structure. That, and not the definition of the unit, is where the framework's informational assumptions become substantive.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -266,7 +266,7 @@ $$</p>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$</td>
+<td>$\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$</td>
 <td>Rank-one idempotents (pure states)</td>
 </tr>
 <tr>

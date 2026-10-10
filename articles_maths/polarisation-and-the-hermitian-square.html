@@ -102,7 +102,11 @@ $$</p>
 <p>The quadratic datum is therefore strictly finer than the bilinear one when $2$ is not invertible: a <strong>quadratic refinement</strong> of the form is a function $q$ with $q(x+y) - q(x) - q(y) = h(x,y)$, and it is an extra structure. The characteristic-two examples, including the Hermitian-and-skew-Hermitian-not-alternating form over $\mathbb{F}_{2}$, are worked in <em>The Sesquilinear Form and the Conjugation</em>; the quadratic forms themselves are <em>Quadratic Forms and Polarisation</em>.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="the-matrices">The Matrices</h3>
-<p>On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the diagonal is $q(X) = \tau(XX^{*}) = \sum_{ij}|X_{ij}|^{2}$, the square of the Frobenius norm, and the polarisation recovers $\tau(XY^{*} + YX^{*}) = 2\operatorname{Re}\tau(XY^{*})$. The form is Hermitian, its trace form is the real symmetric form of the real and imaginary parts of the trace pairing, and its skew part is the alternating form $\mathrm{i}\operatorname{Im}\tau(XY^{*})$.</p>
+<p>On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the diagonal is $q(X) = \tau(XX^{*}) = \sum_{ij}|X_{ij}|^{2}$, the square of the Frobenius norm, and the polarisation recovers $\tau(XY^{*} + YX^{*}) = 2\operatorname{Re}\tau(XY^{*})$. The form is Hermitian, its trace form is the real symmetric form of the real and imaginary parts of the trace pairing, and its skew part is the alternating form $\mathrm{i}\operatorname{Im}\tau(XY^{*})$. The smallest instance shows the square and its trace at once:</p>
+<p>$$
+X=\begin{pmatrix}1&i\\0&2\end{pmatrix},\qquad XX^{*}=\begin{pmatrix}2&2i\\-2i&4\end{pmatrix},\qquad q(X)=\tau(XX^{*})=6=\lvert1\rvert^{2}+\lvert i\rvert^{2}+\lvert0\rvert^{2}+\lvert2\rvert^{2},
+$$</p>
+<p>the matrix $XX^{*}$ Hermitian positive semi-definite, as a Hermitian square must be.</p>
 <h3 id="the-real-and-the-complex-reading">The Real and the Complex Reading</h3>
 <p>Over $\mathbb{R}$ with the trivial involution every Hermitian form is symmetric and the polarisation is a bijection when $2$ is invertible. Over $\mathbb{C}$ it is not: the diagonal of a Hermitian form sees $\operatorname{Re}h$ and never $\operatorname{Im}h$, and the pair $(\operatorname{Re}h, \operatorname{Im}h)$ is the pair (symmetric, alternating) of the real reading. The transfer between the two readings is <em>Real Forms and the Signature</em>.</p>
 <h3 id="the-biquaternion-form">The Biquaternion Form</h3>

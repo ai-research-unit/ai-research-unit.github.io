@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="split-complex-integration"><strong>Split-Complex Integration</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article develops integration for functions of one split complex variable. It follows <em>Split Complex Analysis</em>, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows <em>Split-Complex Algebra</em> for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_\pm = \tfrac12(1 \pm j)$, the conjugation $\bar A$, and the norm $N(A) = A\bar A = a^2 - a'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.</p>
+<p>This article develops integration for functions of one split complex variable. It follows <em>Split Complex Analysis</em>, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows <em>Split-Complex Algebra</em> for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_{1,2} = \tfrac12(1 \pm j)$, the conjugation $\bar A$, and the norm $N(A) = A\bar A = a^2 - a'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.</p>
 <p>The base ring throughout is $\mathbb{D}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The <strong>vanishing</strong> statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The <strong>representation</strong> statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\zeta - A)$ of the formula is defined only where $\zeta - A$ is a unit, and the set where it is not is not the point $A$ but the two lines through $A$; no contour that surrounds $A$ avoids them.</p>
 <p>No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in <em>Split Complex Analysis</em>, and the operator notation $\partial_A, \partial_{\bar A}$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$, $\mathbb{D}'$, $\mathbb{H}$ and $\mathbb{B}$, is the subject of <em>Hypercomplex Integration</em>.</p>
 <p>Notation: $A = a + ja'$ with $a, a' \in \mathbb{R}$, $\bar A = a - ja'$, and $\|A\|_E = \sqrt{a^2 + a'^2}$. The idempotent coordinates are</p>
@@ -117,7 +117,7 @@ $$</p>
 \int_\gamma f(A)\,dA = \Pi_1 \int_{\gamma_+} f_+(A_+)\,dA_+ + \Pi_2 \int_{\gamma_-} f_-(A_-)\,dA_-,
 $$</p>
 <p>where $\gamma_\pm(t) = a(\gamma(t)) \pm a'(\gamma(t))$ are the projected paths and each integral on the right is an ordinary real line integral.</p>
-<p><strong>Proof.</strong> Since $dA = \Pi_1\,dA_+ + \Pi_2\,dA_-$ and $\Pi_1 \Pi_2 = \Pi_2 \Pi_1 = 0$, $\Pi_\pm^2 = \Pi_\pm$, the product $f(A)\,dA$ splits as $f_+(A_+)\,\Pi_1\,dA_+ + f_-(A_-)\,\Pi_2\,dA_-$. Integrating the two summands separately gives the stated identity.</p>
+<p><strong>Proof.</strong> Since $dA = \Pi_1\,dA_+ + \Pi_2\,dA_-$ and $\Pi_1 \Pi_2 = \Pi_2 \Pi_1 = 0$, $\Pi_{1,2}^2 = \Pi_{1,2}$, the product $f(A)\,dA$ splits as $f_+(A_+)\,\Pi_1\,dA_+ + f_-(A_-)\,\Pi_2\,dA_-$. Integrating the two summands separately gives the stated identity.</p>
 <p>So a split complex contour integral is exactly a pair of real line integrals, one for each idempotent, and the two are independent of each other. This is the source of both the strength and the weakness of the theory.</p>
 <h2 id="the-cauchyriemann-operator-in-idempotent-coordinates">The Cauchy–Riemann Operator in Idempotent Coordinates</h2>
 <h3 id="the-operator-and-its-conjugate">The Operator and Its Conjugate</h3>
@@ -152,7 +152,7 @@ $$</p>
 <p>$$
 \partial_{\bar A} f = (\Pi_2\partial_+ + \Pi_1\partial_-)(f_+\Pi_1 + f_-\Pi_2) = (\partial_+ f_-)\,\Pi_2 + (\partial_- f_+)\,\Pi_1,
 $$</p>
-<p>because $\Pi_2 \Pi_1 = \Pi_1 \Pi_2 = 0$ and $\Pi_\pm^2 = \Pi_\pm$. The two idempotents are independent, so this vanishes if and only if $\partial_+ f_- = 0$ and $\partial_- f_+ = 0$, that is, if and only if $f_-$ is locally a function of $A_-$ alone and $f_+$ of $A_+$ alone.</p>
+<p>because $\Pi_2 \Pi_1 = \Pi_1 \Pi_2 = 0$ and $\Pi_{1,2}^2 = \Pi_{1,2}$. The two idempotents are independent, so this vanishes if and only if $\partial_+ f_- = 0$ and $\partial_- f_+ = 0$, that is, if and only if $f_-$ is locally a function of $A_-$ alone and $f_+$ of $A_+$ alone.</p>
 <p><strong>Corollary (the derivative in idempotent coordinates).</strong> If $f$ is split complex differentiable, then</p>
 <p>$$
 f'(A) = \frac{\partial f}{\partial A} = f_+'(A_+)\,\Pi_1 + f_-'(A_-)\,\Pi_2,
@@ -417,7 +417,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Pi_1 = \tfrac12(1+j), \ \Pi_2 = \tfrac12(1-j)$</td>
-<td>Idempotents, $\Pi_\pm^2 = \Pi_\pm$, $\Pi_1\Pi_2 = 0$</td>
+<td>Idempotents, $\Pi_{1,2}^2 = \Pi_{1,2}$, $\Pi_1\Pi_2 = 0$</td>
 </tr>
 <tr>
 <td>$A = A_+\Pi_1 + A_-\Pi_2$, $A_+ = a+a'$, $A_- = a-a'$</td>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Definitions for the Study of the 12 Algebraic Structures — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="definitions-for-the-study-of-the-12-algebraic-structures"><strong>Definitions for the Study of the 12 Algebraic Structures</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article collects, in one place, the definitions of the classes of elements and of the derived operations with which the twelve algebraic structures of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> are studied. It is a definitions article: each notion is stated for a general product, and its statement is then read on the products of the space. It follows the article that names the twelve structures and precedes the articles that study them, so that each of the twelve cites one owner for its vocabulary rather than restating it.</p>
+<p>The point of collecting them is that <strong>every definition is relative to a product</strong>, and this is easy to lose when each structure is read on its own. The words <em>zero divisor</em>, <em>idempotent</em>, <em>nilpotent</em>, <em>unit</em> each name an equation, and the equation names a product; an element that satisfies the equation of one product need not satisfy that of another. The definitions are therefore stated for a general product $\star$, and every statement that singles out a product names it.</p>
+<p><strong>Conventions.</strong> The complex space is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_0=1,e_1,e_2,e_3$ and central imaginary $i$, and an element is $\tilde P=P_0e_0+\mathbf P$ with $\mathbf P=\sum_{k=1}^{3}P_ke_k$, $P_\mu\in\mathbb{C}$. The natural conjugation is ${}^{\natural}$, the star is ${}^{*}$, and the four general products are
+$$
+\tilde P\tilde Q,\qquad \tilde P^{\natural}\tilde Q,\qquad \tilde P\tilde Q^{*},\qquad \tilde P^{\natural}\tilde Q^{*}.
+$$
+The <strong>generic product</strong> is written $\star$; the <strong>general plain bilinear product</strong>, the multiplication of the algebra, is written $\tilde P\tilde Q$. Unqualified, a class is taken in the general plain bilinear product, and where another product is meant it is named. The twelve products are the four general products and their symmetric and antisymmetric parts.</p>
+<ul>
+<li>The elements, the basis and the four conjugations are <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>.</li>
+<li>The four general products, their co-ordinate forms and the tables of the twelve are <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> and <em>The 12 Products of the Biquaternion Complex Space</em>.</li>
+<li>The twelve structures and their three-letter names are <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</li>
+<li>The general algebra vocabulary — the unit, the inverse, the Peirce decomposition — is <em>Unital Algebras</em>, and the corpus-wide readings of the words are <em>Conventions in Mathematics</em>.</li>
+</ul>
+<p>This article defines. It states the relativity of the definitions as the principle it is, and it proves the one structural fact the definitions turn on, the transport of §<em>Transport Along an Isomorphism</em>; every specialization is cited to the article that owns it.</p>
+<hr />
+<h2 id="1-the-product-its-slots-and-its-class">1. The Product, its Slots and its Class</h2>
+<p>A <strong>product</strong> on $\mathbb{B}$ is a map
+$$
+\star \;:\; \mathbb{B}\times\mathbb{B}\longrightarrow\mathbb{B},
+$$
+and the twelve products of the space are its instances. A product is read by its <strong>two slots</strong>: the first slot is read either as it stands (<strong>plain</strong>, letter $\mathrm P$) or through the natural conjugation (<strong>quaternionic</strong>, letter $\mathrm Q$), and the second slot is read either as it stands (the <strong>algebra</strong>, letter $\mathrm A$) or through the star (the <strong>sesqualgebra</strong>, letter $\mathrm S$). The four general products are the four combinations, and each of their symmetric and antisymmetric parts is one of the twelve.</p>
+<p><strong>Definition (class of a product).</strong> A product $\star$ is read in each slot through an involution: it is $\sigma$-semilinear in the first slot and $\varsigma$-semilinear in the second,
+$$
+\star(\lambda x,y)=\sigma(\lambda)\star(x,y),\qquad \star(x,\lambda y)=\varsigma(\lambda)\star(x,y),
+$$
+where each of $\sigma,\varsigma$ is the identity or the complex conjugation. The product is <strong>$\mathbb{C}$-bilinear</strong> when both are the identity, and <strong>sesquilinear</strong> when the second slot carries the conjugation; the first slot carries one too or not according to the family. Of the four general products only the plain bilinear is $\mathbb{C}$-bilinear, the quaternionic bilinear carries the conjugation in the first slot, the plain sesquilinear in the second, and the quaternionic sesquilinear in both.</p>
+<p><strong>Definition (the laws of a product).</strong> A product $\star$ is <strong>associative</strong> when $(x\star y)\star z=x\star(y\star z)$ for all $x,y,z$; <strong>commutative</strong> when $x\star y=y\star x$; <strong>alternating</strong> when $x\star x=0$ for every $x$, which for a bilinear product is equivalent to anticommutativity, $x\star y=-y\star x$. It satisfies the <strong>Jacobi identity</strong> when $x\star(y\star z)+y\star(z\star x)+z\star(x\star y)=0$, and the <strong>Jordan identity</strong> when $(x\star x)\star(y\star x)=\bigl((x\star x)\star y\bigr)\star x$. The laws decide which classical structure the product defines, and the reading of the twelve one by one is <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<h3 id="the-relativity-of-the-definitions">The Relativity of the Definitions</h3>
+<p>Every class below is defined by an equation whose symbol is the product, so the product is part of the definition and not a background convention.</p>
+<p><strong>Principle (relativity).</strong> Let $\star$ be a product and let $\mathcal E_\star(x)$ be any equation in the element $x$ whose only operation is $\star$ and whose constants are fixed elements or scalars. The class of solutions of $\mathcal E_\star$ depends on $\star$: replacing the product replaces the equation and can replace the class.</p>
+<p>The definitions of this article are all of that form — $\tilde Q\star\tilde R=0$ for the zero divisor, $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ for the idempotent, $\tilde\Upsilon\star\tilde\Upsilon=0$ for the nilpotent, and so on — and none of them is a property of the element alone. The word is therefore always read with <em>of</em>: a zero divisor <strong>of</strong> $\star$, an idempotent <strong>of</strong> $\star$. Two products may select the same class and two may not, and when they do not the difference is a computation, of which §9 gives the table for the four general products.</p>
+<h3 id="transport-along-an-isomorphism">Transport Along an Isomorphism</h3>
+<p>The relativity has one structural counterpart, which is why two products may share a class without sharing the equation.</p>
+<p><strong>Proposition (transport).</strong> Let $\star$ and $\star'$ be two products on $\mathbb{B}$ and let $\theta$ be a bijection of $\mathbb{B}$ with
+$$
+\theta(x\star y)=\theta(x)\star'\theta(y) \qquad\text{for all } x,y .
+$$
+Then $\theta$ carries every class of §2 to §5 from $\star$ onto the corresponding class of $\star'$: the $\star$-units onto the $\star'$-units, the $\star$-invertible elements onto the $\star'$-invertible elements with $\theta(x^{-1})=\theta(x)^{-1}$, the $\star$-idempotents onto the $\star'$-idempotents, the $\star$-nilpotents onto the $\star'$-nilpotents, and the $\star$-zero divisors onto the $\star'$-zero divisors.</p>
+<p><strong>Proof.</strong> Apply $\theta$ to the defining equation and use multiplicativity. If $x\star x=x$ then $\theta(x)\star'\theta(x)=\theta(x\star x)=\theta(x)$; if $x\star x=0$ then $\theta(x)\star'\theta(x)=\theta(0)=0$; if $x\star y=0$ with $x,y\neq0$ then $\theta(x)\star'\theta(y)=0$ with $\theta(x),\theta(y)\neq0$; and if $e$ is a unit of $\star$ then $\theta(e)\star'\theta(x)=\theta(e\star x)=\theta(x)$ and $\theta(x)\star'\theta(e)=\theta(x)$, so $\theta(e)$ is a two-sided unit of $\star'$, from which $x\star y=y\star x=e$ gives $\theta(x)\star'\theta(y)=\theta(e)$. $\square$</p>
+<p>Two products related by such a $\theta$ have the same element theory up to $\theta$, and the definitions of this article cannot separate them. Two products not so related may differ on every class, which is what §9 computes for the four general products. The relations among the four general products under the conjugations, and the question of which pairs are isomorphic in this sense, are <em>Relations Between the Four General Products</em>.</p>
+<hr />
+<h2 id="2-the-unit-and-the-inverse">2. The Unit and the Inverse</h2>
+<p><strong>Definition (unit of a product).</strong> Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a <strong>left unit of $\star$</strong> when $e\star x=x$ for every $x$; a <strong>right unit of $\star$</strong> when $x\star e=x$ for every $x$; and a <strong>two-sided unit of $\star$</strong>, or an <strong>identity of $\star$</strong>, when it is both. A product that has a two-sided unit is <strong>unital</strong>. A two-sided unit, when it exists, is unique.</p>
+<p><strong>Definition (inverse).</strong> Let $\star$ be a product with a two-sided unit $e$. An element $x$ is <strong>left-invertible of $\star$</strong> when there is $y$ with $y\star x=e$; <strong>right-invertible</strong> when there is $y$ with $x\star y=e$; and <strong>invertible of $\star$</strong> when there is $y$ with $x\star y=y\star x=e$. Such a $y$ is an <strong>inverse of $x$ of $\star$</strong>, written $x^{-1}$. In an associative unital product the inverse is unique and the invertible elements form the <strong>group of units</strong>.</p>
+<p>The inverse is defined by an equation in $\star$, so it is relative to the product in the same way as the classes of §3 to §5: the inverse element of $x$ for one product is not the inverse for another, and the symbol $x^{-1}$ is read only with the product in force.</p>
+<p><strong>The four general products.</strong> Only one of the four has a two-sided unit.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>left unit</th>
+<th>right unit</th>
+<th>two-sided unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\tilde Q$</td>
+<td>$e_0$</td>
+<td>$e_0$</td>
+<td>$e_0$</td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q$</td>
+<td>$e_0$</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde Q^{*}$</td>
+<td>none</td>
+<td>$e_0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is verified on the identity equations and it is the unit table of <em>Comparison Between the Four General Products</em>. Three of the four products are therefore not unital, and for them the group of units is not available; what survives is the one-sided inverse, and its equations are in <em>The Zero Divisors and the Four General Products</em>, §<em>The One-Sided Inverse Equations</em>.</p>
+<p>The general reading, for an associative unital algebra, is <em>Unital Algebras</em>; the invertibility criterion of the plain product, $\tilde P$ invertible exactly when the central square $c(\tilde P)=\sum_\mu P_\mu^{2}$ is nonzero, is <em>Biquaternion Norm and Invertibility</em>.</p>
+<hr />
+<h2 id="3-the-zero-divisor-and-the-annihilator">3. The Zero Divisor and the Annihilator</h2>
+<p><strong>Definition (zero divisor of a product).</strong> Let $\star$ be a product on $\mathbb{B}$ and let $\tilde Q\in\mathbb{B}$. The element $\tilde Q$ is a <strong>left zero divisor of $\star$</strong> when $\tilde Q\neq0$ and there is a nonzero $\tilde R$ with $\tilde Q\star\tilde R=0$; a <strong>right zero divisor of $\star$</strong> when $\tilde Q\neq0$ and there is a nonzero $\tilde R$ with $\tilde R\star\tilde Q=0$; and a <strong>zero divisor of $\star$</strong> when it is one or the other. It is a <strong>two-sided zero divisor of $\star$</strong> when it is both.</p>
+<p>Both elements are required to be nonzero, and that is essential: the origin is not a zero divisor of any product, even though $0\star\tilde R=0$ for every $\tilde R$.</p>
+<p><strong>Definition (annihilator).</strong> Let $\star$ be a product and let $\tilde Q$ be a zero divisor of $\star$. The <strong>left annihilator</strong> and the <strong>right annihilator</strong> of $\tilde Q$ in $\star$ are the sets
+$$
+A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\}.
+$$
+They are the kernels of the two one-sided multiplications of §7, they are nonzero exactly when $\tilde Q$ is a zero divisor of the corresponding side, and an element is a two-sided zero divisor exactly when both are nonzero.</p>
+<p><strong>Definition (regular element).</strong> An element of a unital product that is neither a left nor a right zero divisor is <strong>regular</strong>.</p>
+<p>Written on the four general products, the definition of a left zero divisor is one of $\tilde Q\tilde R=0$, $\tilde Q^{\natural}\tilde R=0$, $\tilde Q\tilde R^{*}=0$, $\tilde Q^{\natural}\tilde R^{*}=0$, and the definition of a right zero divisor is the same with the factors exchanged. The eight equations are the four definitions, and the equation is the whole of the definition. For the biquaternion algebra the four definitions select one and the same set,
+$$
+\{\tilde Q\neq0:\ c(\tilde Q)=0\},
+$$
+a fact about the algebra and not a property of the definitions, proved in <em>The Zero Divisors and the Four General Products</em>, §<em>The Four Zero-Divisor Sets Coincide</em>. <strong>The word is <em>coincide</em>, not <em>independent</em>:</strong> the four products are four definitions, and their agreement is a theorem. The criterion $c(\tilde Q)=0$ for the plain product, the two families and their structure are <em>Zero Divisors of the General Plain Algebra</em>; the annihilators of one zero divisor, which do depend on the product, are in the same article of the four products and in <em>The Annihilating Elements of the Four General Products</em>.</p>
+<hr />
+<h2 id="4-the-idempotent-the-projection-and-the-peirce-decomposition">4. The Idempotent, the Projection and the Peirce Decomposition</h2>
+<p><strong>Definition (idempotent of a product).</strong> Let $\star$ be a product on $\mathbb{B}$. An element $\tilde\Pi$ is an <strong>idempotent of $\star$</strong> when
+$$
+\tilde\Pi\star\tilde\Pi=\tilde\Pi .
+$$
+The origin and, when the product is unital, the unit are idempotents of every product: they are the <strong>trivial idempotents</strong>, and the others are <strong>nontrivial</strong>. The set of the idempotents of $\star$ is its <strong>idempotent set</strong>.</p>
+<p><strong>Definition (orthogonal, complete, primitive).</strong> Idempotents $\tilde\Pi,\tilde\Pi'$ of an associative product are <strong>orthogonal</strong> when $\tilde\Pi\star\tilde\Pi'=\tilde\Pi'\star\tilde\Pi=0$; a family is <strong>pairwise orthogonal</strong> when $\tilde\Pi_i\star\tilde\Pi_j=0$ for $i\neq j$, and <strong>complete</strong> when in addition $\sum_i\tilde\Pi_i$ is the unit. A nontrivial idempotent is <strong>primitive</strong> when it is not the sum of two nonzero orthogonal idempotents, and for a semisimple algebra $\tilde\Pi$ is primitive exactly when $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ is a division ring.</p>
+<p><strong>Definition (projection).</strong> When the product is the multiplication of a $*$-algebra, an idempotent $\tilde\Pi$ with $\tilde\Pi^{*}=\tilde\Pi$ is a <strong>projection</strong>; with the plain product and the star, the projections are the <strong>orthogonal projections</strong>, and the associated decomposition of §<em>The Peirce Decomposition</em> is an orthogonal direct sum.</p>
+<p><strong>Definition (Peirce decomposition).</strong> Let the product be associative with unit, and let $\tilde\Pi$ be an idempotent. The <strong>Peirce decomposition</strong> of the algebra relative to $\tilde\Pi$ is the splitting of the regular module into the four pieces indexed by the pair $(\tilde\Pi,1-\tilde\Pi)$; its two diagonal pieces are the <strong>corner algebras</strong> $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ and $(1-\tilde\Pi)\star\mathbb{B}\star(1-\tilde\Pi)$.</p>
+<p>The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$, the natural product has the trivial idempotents alone, the plain sesquilinear product has the Hermitian idempotents, and the quaternionic sesquilinear product has the family $-\tfrac12e_0+\mu$. The table is in <em>The Zero Divisors and the Four General Products</em>, §<em>The Square, the Idempotents and the Units</em>; the classification for the plain product is <em>Idempotents of the General Plain Algebra</em>, the general theory is <em>Unital Algebras</em>, and the Peirce decomposition of the biquaternion algebra is <em>Biquaternion Ideals and Peirce Decomposition</em>.</p>
+<hr />
+<h2 id="5-the-nilpotent">5. The Nilpotent</h2>
+<p><strong>Definition (nilpotent of a product).</strong> Let $\star$ be a product on $\mathbb{B}$. An element $\tilde\Upsilon$ is <strong>nilpotent of $\star$</strong> when some power of it vanishes,
+$$
+\tilde\Upsilon^{\star k}=0 \quad\text{for some } k\geq1 ,
+$$
+the power being read in the sense of §6. The least such $k$ is the <strong>index of nilpotency</strong>, and an element of index two, $\tilde\Upsilon\star\tilde\Upsilon=0$ with $\tilde\Upsilon\neq0$, is a <strong>square-zero element of $\star$</strong>. The origin is a nilpotent, the trivial one, and the article is concerned with the others.</p>
+<p>The nilpotent is the root of $0$ in the sense of §6. In the plain product the index is two or nothing — an element with vanishing cube already has vanishing square, so the nonzero nilpotents there are exactly the square-zero elements (<em>Nilpotents of the General Plain Algebra</em>) — but the index is not bounded by two in every product of the twelve, and the square-zero element is the case the comparison of the four general products is made in.</p>
+<p>The square-zero sets of the four general products differ, and the difference is sharp.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>square-zero elements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\tilde Q$</td>
+<td>the pure isotropic cone $\{P_0=0,\ (\mathbf P,\mathbf P)=0\}$</td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q$</td>
+<td>the whole zero-divisor cone $\{c=0\}$</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde Q^{*}$</td>
+<td>the origin alone</td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>the solutions of $\overline{\tilde P}\tilde P=0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is verified on the squares and is the table of <em>The Square-Zero Elements of the Four General Products</em>, where the four sets, their chain $Z_1\subseteq Z_2$, $Z_4\subseteq Z_2$, $Z_3=\{0\}$ and their incomparable pair are proved. <strong>The implication "nilpotent implies zero divisor" is not uniform</strong>: it holds for the plain product and the natural product, and it fails for the plain sesquilinear product, whose only square-zero element is the origin. It is a statement of a product and not of the twelve.</p>
+<hr />
+<h2 id="6-powers-the-square-and-the-roots">6. Powers, the Square and the Roots</h2>
+<p><strong>Definition (power).</strong> Let $\star$ be a product. The <strong>square</strong> of an element is $\tilde P^{\star2}=\tilde P\star\tilde P$. When $\star$ is associative the higher powers are unambiguous, $\tilde P^{\star k}=\tilde P\star\cdots\star\tilde P$, and they obey $\tilde P^{\star(i+j)}=\tilde P^{\star i}\star\tilde P^{\star j}$; when $\star$ is not associative the notation needs a bracketing, and the <strong>left-nested reading</strong> is $\tilde P^{\star k}=\bigl(\cdots\bigl((\tilde P\star\tilde P)\star\tilde P\bigr)\cdots\star\tilde P\bigr)$. Of the four general products only the plain one is associative, so only there is $\tilde P^{\star k}$ bracketing-free.</p>
+<p><strong>Definition (root of a central value).</strong> Let $\lambda\in\mathbb{C}$. A <strong>root of $\lambda$ in $\star$</strong> is a nonzero element with
+$$
+\tilde P\star\tilde P=\lambda e_0 .
+$$
+The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$: the roots of $-1$ are the imaginary units, the roots of $+1$ are the involutions, and the roots of $0$ are the nonzero nilpotents of §5.</p>
+<p><strong>Definition (square root of an element).</strong> For an element $a\in\mathbb{B}$, a <strong>square root of $a$ in $\star$</strong> is an element with $\tilde P\star\tilde P=a$; the roots of a central value are the special case $a=\lambda e_0$.</p>
+<p>The reading of the roots of $-1$, of $0$ and of $+1$ in the plain product, and the classification of the roots of a general element, are <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em> and <em>Biquaternion Square Roots of a General Element</em>. The idempotents of §4 are the roots of $+1$ halved: the map $\xi\mapsto\tfrac12(e_0+\xi)$ carries the roots of $+1$ onto the idempotents of the plain product, and the nilpotents of §5 are the roots of $0$.</p>
+<hr />
+<h2 id="7-the-derived-operations">7. The Derived Operations</h2>
+<p><strong>Definition (the commutator and the symmetrisation).</strong> For a product $\star$,
+$$
+[x,y]_\star=x\star y-y\star x , \qquad x\circ_\star y=x\star y+y\star x ,
+$$
+and the <strong>symmetric part</strong> and the <strong>antisymmetric part</strong> of the product are $\tfrac12(x\star y+y\star x)$ and $\tfrac12(x\star y-y\star x)$. Each of the four general products splits into its two parts, and the split is the source of the twelve: four general products, three operations to a family. The method and the class-preserving exchange are <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em> and <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>.</p>
+<p><strong>Definition (the associator and the ternary product).</strong> For a product $\star$,
+$$
+(x,y,z)_\star=(x\star y)\star z-x\star(y\star z)
+$$
+is the <strong>associator</strong>, and the <strong>ternary product</strong> is the trilinear operation $x\star y\star z$ read with the same bracketing. The product is associative exactly when the associator vanishes identically, so the associator is the obstruction to associativity and, through it, to the unambiguous power of §6.</p>
+<p><strong>Definition (the two identities).</strong> The <strong>Jacobi identity</strong> and the <strong>Jordan identity</strong> of §1 are the statements that single out the two classical non-associative structures among the twelve; the two, their witnesses and the failure of the other six parts are <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, §<em>The Two That Are Lie and Jordan Products</em>, and <em>Jordan Algebras</em>.</p>
+<p><strong>Definition (left and right multiplication).</strong> For $a\in\mathbb{B}$,
+$$
+L_a^{\star}(x)=a\star x , \qquad R_a^{\star}(x)=x\star a .
+$$
+They are the two one-sided multiplications of §3, their kernels are the two annihilators, and their composition measures the failure of associativity and of multiplicativity. <strong>Definition (sandwich).</strong> For a product with a two-sided unit and an involution, the <strong>sandwich</strong> of $a$ is the two-sided operator $x\mapsto a\star x\star a^{*}$. The operators of the biquaternion algebra are <em>Two-Sided Operators on the General Plain Algebra of Biquaternions</em>, <em>One-Sided Operators on the General Plain Algebra of Biquaternions</em> and <em>The Left and Right Multiplications of the General Quaternionic Sesquilinear Product</em>.</p>
+<p><strong>Definition (derivation).</strong> An operator $D$ on $\mathbb{B}$ is a <strong>derivation of $\star$</strong> when $D(x\star y)=Dx\star y+x\star Dy$ for all $x,y$.</p>
+<hr />
+<h2 id="8-the-form-theoretic-classes">8. The Form-Theoretic Classes</h2>
+<p>The classes so far are those of the multiplication alone. The structures also carry forms and norms, and the definitions they use are collected here in the same product-relative spirit; the forms themselves are <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> and the norms <em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<p><strong>Definition (centre and commutant).</strong> The <strong>commutant</strong> of a subset $S\subseteq\mathbb{B}$ in a product $\star$ is $\{x: x\star s=s\star x\ \text{for all }s\in S\}$; the <strong>centre</strong> is the commutant of the whole space. For the plain product the centre is the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ (<em>Introduction to the General Plain Algebra of Biquaternions</em>).</p>
+<p><strong>Definition (isotropic element, radical).</strong> Let $\langle\cdot,\cdot\rangle$ be a form on $\mathbb{B}$. An element is <strong>isotropic</strong> for the form when $\langle x,x\rangle=0$, and the <strong>radical</strong> is the set of elements orthogonal to the whole space. The isotropic elements of the four forms are <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>, and the isotropic cone of the quaternionic product is <em>The Isotropic Structure of the General Quaternionic Algebra</em>.</p>
+<p><strong>Definition (adjoint, Hermitian, normal).</strong> Let $\langle\cdot,\cdot\rangle$ be a form with an involution ${}^{*}$. The <strong>adjoint of $a$</strong> is the element $a^{\dagger}$ with $\langle a\star x,y\rangle=\langle x,a^{\dagger}\star y\rangle$; an element is <strong>Hermitian</strong> when $a^{\dagger}=a$, <strong>anti-Hermitian</strong> when $a^{\dagger}=-a$, and <strong>normal</strong> when $a\star a^{\dagger}=a^{\dagger}\star a$. The four adjoints of the two algebras and the two sesqualgebras are worked in <em>The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples</em>; the trace form is <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em>, and the invariant form of the antisymmetric product is <em>The Killing Form of the Antisymmetric Plain Algebra</em>.</p>
+<hr />
+<h2 id="9-the-dictionary-the-classes-and-the-four-general-products">9. The Dictionary: The Classes and the Four General Products</h2>
+<p>The four general products are four definitions to a class, and the table says which of the four agree. The entry <em>coincide</em> means that the four definitions select one and the same subset of $\mathbb{B}$; <em>differ</em> means that they do not, and the specializing article carries the sets.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class of §</th>
+<th>$\tilde P\tilde Q$</th>
+<th>$\tilde P^{\natural}\tilde Q$</th>
+<th>$\tilde P\tilde Q^{*}$</th>
+<th>$\tilde P^{\natural}\tilde Q^{*}$</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unit</td>
+<td>$e_0$ two-sided</td>
+<td>left only</td>
+<td>right only</td>
+<td>none</td>
+<td>differ</td>
+</tr>
+<tr>
+<td>zero divisor</td>
+<td>$\{c=0\}\setminus\{0\}$</td>
+<td>same</td>
+<td>same</td>
+<td>same</td>
+<td><strong>coincide</strong></td>
+</tr>
+<tr>
+<td>idempotent</td>
+<td>$\tfrac12(e_0+\xi i)$</td>
+<td>the trivial pair</td>
+<td>the Hermitian ones</td>
+<td>$-\tfrac12e_0+\mu$</td>
+<td>differ</td>
+</tr>
+<tr>
+<td>square-zero</td>
+<td>the pure cone</td>
+<td>the whole cone</td>
+<td>$\{0\}$</td>
+<td>$\{\overline{\tilde P}\tilde P=0\}$</td>
+<td>differ</td>
+</tr>
+<tr>
+<td>annihilator of a fixed zero divisor</td>
+<td>one plane</td>
+<td>another</td>
+<td>another</td>
+<td>another</td>
+<td>differ</td>
+</tr>
+<tr>
+<td>invertibility</td>
+<td>$c\neq0$</td>
+<td>no two-sided notion</td>
+<td>no two-sided notion</td>
+<td>no two-sided notion</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>The one row on which the four products agree is the zero-divisor set. It is the reason the zero divisor is the subject of a synthesis article of its own, <em>The Zero Divisors and the Four General Products</em>, and it is the exception that proves the rule of §<em>The Relativity of the Definitions</em>: the definitions are four, and their agreement in this one row is a theorem about the biquaternion algebra, not a feature of the definitions. Every other row shows the four products separating, and each is computed in <em>The Annihilating Elements of the Four General Products</em> and <em>Comparison Between the Four General Products</em>.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>A definition of the element theory names a product. This article states, once and for a general product $\star$, the unit and the inverses of a product; the left, right and two-sided zero divisor and the two annihilators; the idempotent, its orthogonal, complete and primitive families and the projection; the nilpotent, its index and the square-zero element; the powers and their bracketing, the root of a central value and the square root of an element; the commutator and the symmetrisation with the two parts of a product; the associator and the ternary product with the two classical identities; the left and right multiplications, the sandwich and the derivation; and the centre, the commutant, the isotropic element, the radical and the adjoint. Each is then read on the products of the space, and the dictionary of §9 records that the zero-divisor set is the single row on which the four general products agree, while the units, the idempotents, the square-zero elements and the annihilators separate them.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\star$</td>
+<td>a general product, one of the twelve, with the class of §1</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde Q$</td>
+<td>the general plain bilinear product, the multiplication of the algebra</td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>the other three general products</td>
+</tr>
+<tr>
+<td>$e$</td>
+<td>a unit; left, right or two-sided, per §2</td>
+</tr>
+<tr>
+<td>$x^{-1}$</td>
+<td>the inverse of $x$, read in the product in force</td>
+</tr>
+<tr>
+<td>$c(\tilde P)=\sum_\mu P_\mu^{2}$</td>
+<td>the central square, deciding the zero divisor of the plain product</td>
+</tr>
+<tr>
+<td>$A_\star(\tilde Q),B_\star(\tilde Q)$</td>
+<td>the left and the right annihilator of $\tilde Q$ in $\star$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi$</td>
+<td>an idempotent; $\tilde\Pi^{*}=\tilde\Pi$ makes it a projection</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon$</td>
+<td>a nilpotent of the plain product; index two, hence square-zero</td>
+</tr>
+<tr>
+<td>$[x,y]_\star$, $x\circ_\star y$</td>
+<td>the commutator and the symmetrisation of $\star$</td>
+</tr>
+<tr>
+<td>$(x,y,z)_\star$</td>
+<td>the associator of $\star$</td>
+</tr>
+<tr>
+<td>$L_a^{\star},R_a^{\star}$</td>
+<td>the left and the right multiplication by $a$ in $\star$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$</td>
+<td>the centre of the plain product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The 12 Products of the Biquaternion Complex Space</em> and <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, for the products and the structures the definitions here serve, and for the tables of the laws, the units and the images.</li>
+<li><em>The Zero Divisors and the Four General Products</em>, for the product-relative definition read on the four products, the coincidence of the four zero-divisor sets, and the product-dependent readings of the annihilators, the square, the idempotents and the units.</li>
+<li><em>Zero Divisors of the General Plain Algebra</em>, <em>Idempotents of the General Plain Algebra</em> and <em>Nilpotents of the General Plain Algebra</em>, for the three element classes of the plain product.</li>
+<li><em>The Square-Zero Elements of the Four General Products</em> and <em>The Annihilating Elements of the Four General Products</em>, for the two readings of §5 and §9 that the four products decide.</li>
+<li><em>Unital Algebras</em> and <em>Conventions in Mathematics</em>, for the general algebra vocabulary and the corpus-wide readings of the words, and <em>Biquaternions as a Vector Space over $\mathbb{C}$</em> for the elements and the conjugations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

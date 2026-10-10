@@ -116,13 +116,13 @@ $$</p>
 <h3 id="measurement-on-one-subsystem">Measurement on one subsystem</h3>
 <p>To extract classical information from a bipartite quantum state one must measure. A projective measurement on $B$ along a direction $\hat{n}$ has idempotents</p>
 <p>$$
-\tilde{\Pi}_\pm = \tfrac12\bigl(e_0 \pm i\hat{n}\cdot\hat{\mathbf{e}}\bigr) \quad\text{on }B,
+\tilde{\Pi}_{1,2} = \tfrac12\bigl(e_0 \pm i\hat{n}\cdot\hat{\mathbf{e}}\bigr) \quad\text{on }B,
 \qquad
- e_0\otimes\tilde{\Pi}_\pm \ \text{on } AB ,
+ e_0\otimes\tilde{\Pi}_{1,2} \ \text{on } AB ,
 $$</p>
-<p>with outcomes of probability $p_\pm = \mathrm{Tr}[(e_0\otimes\tilde{\Pi}_\pm)\tilde{\rho}_{AB}]$ and conditional states of $A$</p>
+<p>with outcomes of probability $p_\pm = \mathrm{Tr}[(e_0\otimes\tilde{\Pi}_{1,2})\tilde{\rho}_{AB}]$ and conditional states of $A$</p>
 <p>$$
-\tilde{\rho}_{A|\pm} = \frac{\mathrm{Tr}_B\bigl[(e_0\otimes\tilde{\Pi}_\pm)\tilde{\rho}_{AB}(e_0\otimes\tilde{\Pi}_\pm)\bigr]}{p_\pm}.
+\tilde{\rho}_{A|\pm} = \frac{\mathrm{Tr}_B\bigl[(e_0\otimes\tilde{\Pi}_{1,2})\tilde{\rho}_{AB}(e_0\otimes\tilde{\Pi}_{1,2})\bigr]}{p_\pm}.
 $$</p>
 <p>The conditional entropy of $A$ given the measurement is $S(A|\{\tilde{\Pi}\}) = \sum_\pm p_\pm S(\tilde{\rho}_{A|\pm})$, and the <strong>classical mutual information</strong> extractable by that measurement is</p>
 <p>$$
@@ -305,7 +305,7 @@ $$</p>
 <td>Quantum mutual information</td>
 </tr>
 <tr>
-<td>$\tilde{\Pi}_\pm = \tfrac12(e_0\pm i\hat{n}\cdot\hat{\mathbf{e}})$</td>
+<td>$\tilde{\Pi}_{1,2} = \tfrac12(e_0\pm i\hat{n}\cdot\hat{\mathbf{e}})$</td>
 <td>Projective measurement on $B$</td>
 </tr>
 <tr>

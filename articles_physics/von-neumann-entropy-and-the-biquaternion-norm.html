@@ -121,13 +121,13 @@ $$</p>
 <h3 id="the-spectrum">The spectrum</h3>
 <p>The state has a spectral decomposition into the two complementary idempotents along its Bloch direction. Writing $\hat{\mathbf{r}} = \mathbf{r}/|\mathbf{r}|$ for $\mathbf{r}\neq0$,</p>
 <p>$$
-\tilde{\rho} = \lambda_+\,\tilde\Pi_+(\hat{\mathbf{r}}) + \lambda_-\,\tilde\Pi_-(\hat{\mathbf{r}}),
+\tilde{\rho} = \lambda_+\,\tilde\Pi_1(\hat{\mathbf{r}}) + \lambda_-\,\tilde\Pi_2(\hat{\mathbf{r}}),
 \qquad
-\tilde\Pi_\pm(\hat{\mathbf{r}}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\mathbf{r}}\bigr),
+\tilde\Pi_{1,2}(\hat{\mathbf{r}}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\mathbf{r}}\bigr),
 \qquad
 \lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\mathbf{r}|\bigr).
 $$</p>
-<p>The two projectors are idempotent, Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_- = 0$, $\tilde\Pi_+ + \tilde\Pi_- = e_0$. Their traces are one, and the trace pairing gives $\mathrm{Tr}(\tilde\Pi_\pm\tilde{\rho}) = \lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\mathbf{r}|$ and $\lambda_+ + \lambda_- = 1$.</p>
+<p>The two projectors are idempotent, Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$. Their traces are one, and the trace pairing gives $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho}) = \lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\mathbf{r}|$ and $\lambda_+ + \lambda_- = 1$.</p>
 <h3 id="entropy-as-a-function-of-the-biquaternion-norm">Entropy as a function of the biquaternion norm</h3>
 <p>The <strong>von Neumann entropy</strong> is</p>
 <p>$$
@@ -148,7 +148,7 @@ $$</p>
 <h3 id="the-logarithm-as-an-element-of-the-algebra">The logarithm as an element of the algebra</h3>
 <p>The standard formula can also be written algebraically. On the interior of the Bloch ball the state has full rank, so its real logarithm exists and lies in $\mathbb{M}_+$:</p>
 <p>$$
-\log \tilde{\rho} = \log\lambda_+\, \tilde\Pi_+(\hat{\mathbf{r}}) + \log\lambda_-\, \tilde\Pi_-(\hat{\mathbf{r}}) .
+\log \tilde{\rho} = \log\lambda_+\, \tilde\Pi_1(\hat{\mathbf{r}}) + \log\lambda_-\, \tilde\Pi_2(\hat{\mathbf{r}}) .
 $$</p>
 <p>Multiplying by $\tilde{\rho}$ and taking the scalar part,</p>
 <p>$$
@@ -258,7 +258,7 @@ $$</p>
 <td>State with Bloch vector $\mathbf{r}$, $|\mathbf{r}|\le1$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm(\hat{\mathbf{r}}) = \tfrac12(e_0\pm i\hat{\mathbf{r}})$</td>
+<td>$\tilde\Pi_{1,2}(\hat{\mathbf{r}}) = \tfrac12(e_0\pm i\hat{\mathbf{r}})$</td>
 <td>Spectral idempotents of the state</td>
 </tr>
 <tr>

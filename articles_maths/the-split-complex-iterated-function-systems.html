@@ -61,12 +61,12 @@
 <p>$$
 [u] = \begin{pmatrix} p & q \\ q & p \end{pmatrix}, \qquad u = p+jq ,
 $$</p>
-<p>of which the eigenvalues are $u_+ = p+q$ and $u_- = p-q$ with eigenvectors $\Pi_+$ and $\Pi_-$, and the singular values $|u_+|, |u_-|$. The map $S$ is a Euclidean contraction exactly when</p>
+<p>of which the eigenvalues are $u_+ = p+q$ and $u_- = p-q$ with eigenvectors $\Pi_1$ and $\Pi_2$, and the singular values $|u_+|, |u_-|$. The map $S$ is a Euclidean contraction exactly when</p>
 <p>$$
 \max\{|u_+|, |u_-|\} < 1 ,
 $$</p>
 <p>that is, exactly when both idempotent coordinates of $u$ lie in $(-1,1)$; the determinant of the linear part is $u_+u_- = N(u)$.</p>
-<p><strong>Proof.</strong> The matrix of multiplication by $p+jq$ is read off from $(p+jq)(1) = p+jq$ and $(p+jq)(j) = q+pj$; it is symmetric with trace $2p$ and determinant $p^2-q^2 = N(u)$, and its eigenvalues are $p\pm q$ with the eigenvectors $\Pi_\pm$. A symmetric matrix has the singular values equal to the absolute values of the eigenvalues, and the Euclidean operator norm is the largest singular value. The contraction condition follows.</p>
+<p><strong>Proof.</strong> The matrix of multiplication by $p+jq$ is read off from $(p+jq)(1) = p+jq$ and $(p+jq)(j) = q+pj$; it is symmetric with trace $2p$ and determinant $p^2-q^2 = N(u)$, and its eigenvalues are $p\pm q$ with the eigenvectors $\Pi_{1,2}$. A symmetric matrix has the singular values equal to the absolute values of the eigenvalues, and the Euclidean operator norm is the largest singular value. The contraction condition follows.</p>
 <h3 id="the-contraction-must-be-euclidean">The Contraction Must Be Euclidean</h3>
 <p><strong>Theorem (the $N$-preserving maps do not contract).</strong> A similarity preserving the form $N$ up to sign has $|N(u)| = 1$, equivalently $|u_+u_-| = 1$, and then</p>
 <p>$$
@@ -134,7 +134,7 @@ $$
 $$
 the larger of the two factor dimensions; the box counting of a sampled orbit at the scales $3^{-n}$ gives counts growing like $2^n$, confirming it. The example shows that the anisotropy of the linear part lets the two coordinate factors have different dimensions, and that the attractor carries the larger of the two: the second dimension is not added, because the two coordinates share the coding. The values were recomputed.</p>
 <h2 id="the-null-cone">The Null Cone</h2>
-<p><strong>Definition.</strong> The <strong>null cone</strong> of $\mathbb{D}$ is $\mathcal{N} = \{N = 0\} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, the union of the two coordinate axes $z_+ = 0$ and $z_- = 0$ of the idempotent plane.</p>
+<p><strong>Definition.</strong> The <strong>null cone</strong> of $\mathbb{D}$ is $\mathcal{N} = \{N = 0\} = \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$, the union of the two coordinate axes $z_+ = 0$ and $z_- = 0$ of the idempotent plane.</p>
 <p><strong>Theorem (the trace of the null cone on the attractor).</strong> The attractor meets the null cone exactly in the points whose coding has one coordinate equal to $0$,</p>
 <p>$$
 \Lambda \cap \mathcal{N} = \varphi^{-1}\Bigl(\Lambda \cap \bigl(\{0\}\times\Lambda_-\bigr)\Bigr) \cup \varphi^{-1}\Bigl(\Lambda \cap \bigl(\Lambda_+\times\{0\}\bigr)\Bigr) ,

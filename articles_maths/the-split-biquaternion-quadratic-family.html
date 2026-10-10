@@ -55,11 +55,11 @@
 <p>The split-biquaternion quadratic family is the map $\tilde Q\mapsto\tilde Q^2+\tilde C$ in the split-biquaternion algebra $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$, and it differs from the biquaternion family in one structural respect that decides everything: the idempotents of $\mathbb{H}_{\mathbb{D}}$ are central, so they decompose the algebra, the map and the parameter at once, and the family is the product of two ordinary quaternion quadratic families. The biquaternion algebra, with its non-central idempotents, splits the dynamics only on a slice and couples the two halves through the off-diagonal blocks; the split-biquaternion algebra has no coupling at all. The whole of the split-biquaternion fractal theory is therefore the quaternion theory of the preceding thread, read on two factors, and the article states the reduction, the escape dichotomy, the filled Julia set and the Julia set as products, the norm and the zero divisors in the product picture, and the symmetry of the family.</p>
 <p>The split-biquaternion algebra, its conjugations, its central idempotents and its isomorphism with $\mathbb{H}\oplus\mathbb{H}$ are <em>Split-Biquaternion Algebra</em>, <em>Split-Biquaternion Idempotents and Projections</em> and <em>Split-Biquaternion Ideals and Peirce Decomposition</em>; the $\mathbb{D}$-valued norm and the units are <em>Split-Biquaternion Norm and Invertibility</em>; the zero divisors are <em>Split-Biquaternion Zero Divisors</em>; the Clifford description is <em>Complex Split-Biquaternions and the Clifford Algebra Cl(3)</em>. The quaternion quadratic family and its theory are <em>The Quaternion Quadratic Map and Its Julia Sets</em>, <em>The Escape Radius and the Green's Function for Quaternions</em> and <em>The Quaternion Mandelbrot Set</em>; the indefinite four-dimensional neighbour is <em>The Split-Quaternion Quadratic Map and Its Julia Sets</em>. No physics is invoked.</p>
 <p>The article owns the idempotent splitting of the family, the transport of the orbit to a pair of quaternion orbits, the escape dichotomy in product form, the filled Julia set and the Julia set of the split-biquaternion family, the critical orbit and the connectedness reduction, the norm and the zero divisors, and the symmetry. It does not re-derive the quaternion theory it quotes.</p>
-<p><strong>Standing convention.</strong> $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ with central split unit $j$, $j^2=+1$, $\tilde\Pi_\pm=\tfrac12(e_0\pm j)$, and</p>
+<p><strong>Standing convention.</strong> $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ with central split unit $j$, $j^2=+1$, $\tilde\Pi_{1,2}=\tfrac12(e_0\pm j)$, and</p>
 <p>$$
-\tilde Q=\tilde Q_+\tilde\Pi_++\tilde Q_-\tilde\Pi_-, \qquad \tilde Q_\pm=\tilde Q\tilde\Pi_\pm\in\mathbb{H} .
+\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2, \qquad \tilde Q_\pm=\tilde Q\tilde\Pi_{1,2}\in\mathbb{H} .
 $$</p>
-<p>The quadratic family is $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ in the split-biquaternion product, $\tilde C_\pm=\tilde C\tilde\Pi_\pm$, and $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{H}_{\mathbb{D}}\cong\mathbb{R}^8$.</p>
+<p>The quadratic family is $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ in the split-biquaternion product, $\tilde C_\pm=\tilde C\tilde\Pi_{1,2}$, and $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{H}_{\mathbb{D}}\cong\mathbb{R}^8$.</p>
 <h2 id="the-idempotent-splitting">The Idempotent Splitting</h2>
 <p><strong>Proposition (the splitting of the family).</strong> The central idempotents give an algebra isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$, $\tilde Q\mapsto(\tilde Q_+,\tilde Q_-)$, which is an isometry in the scaled sense</p>
 <p>$$
@@ -69,7 +69,7 @@ $$</p>
 <p>$$
 F_{\tilde C}\;\longleftrightarrow\; (\tilde Q_+,\tilde Q_-)\longmapsto\bigl(\tilde Q_+^2+\tilde C_+,\ \tilde Q_-^2+\tilde C_-\bigr) .
 $$</p>
-<p><strong>Proof.</strong> $\tilde\Pi_\pm$ are central idempotent orthogonal projectors with $\tilde\Pi_++\tilde\Pi_-=e_0$ and $\tilde\Pi_+\tilde\Pi_-=0$, so the Chinese-remainder decomposition $\tilde Q=\tilde Q_+\tilde\Pi_++\tilde Q_-\tilde\Pi_-$ is an algebra isomorphism onto $\mathbb{H}\oplus\mathbb{H}$ (<em>Split-Biquaternion Ideals and Peirce Decomposition</em>). Writing $\tilde Q=\tilde A+j\tilde B$ with $\tilde A,\tilde B\in\mathbb{H}$ gives $\tilde Q_\pm=\tilde A\pm\tilde B$, a Hadamard change of coordinates, whence the norm identity. Squaring is componentwise because the idempotents are central: $\tilde Q^2=\tilde Q_+^2\tilde\Pi_++\tilde Q_-^2\tilde\Pi_-$ since the cross terms carry $\tilde\Pi_+\tilde\Pi_-=0$.</p>
+<p><strong>Proof.</strong> $\tilde\Pi_{1,2}$ are central idempotent orthogonal projectors with $\tilde\Pi_1+\tilde\Pi_2=e_0$ and $\tilde\Pi_1\tilde\Pi_2=0$, so the Chinese-remainder decomposition $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$ is an algebra isomorphism onto $\mathbb{H}\oplus\mathbb{H}$ (<em>Split-Biquaternion Ideals and Peirce Decomposition</em>). Writing $\tilde Q=\tilde A+j\tilde B$ with $\tilde A,\tilde B\in\mathbb{H}$ gives $\tilde Q_\pm=\tilde A\pm\tilde B$, a Hadamard change of coordinates, whence the norm identity. Squaring is componentwise because the idempotents are central: $\tilde Q^2=\tilde Q_+^2\tilde\Pi_1+\tilde Q_-^2\tilde\Pi_2$ since the cross terms carry $\tilde\Pi_1\tilde\Pi_2=0$.</p>
 <p><strong>Corollary (the orbit is a pair of quaternion orbits).</strong> $F_{\tilde C}^{\,n}(\tilde Q)$ corresponds to the pair $(f_{\tilde C_+}^{\,n}(\tilde Q_+),f_{\tilde C_-}^{\,n}(\tilde Q_-))$, the iterates of the quaternion quadratic maps $f_{\tilde c}(\tilde q)=\tilde q^2+\tilde c$ of the two parameters $\tilde C_\pm$.</p>
 <p><strong>Proof.</strong> Induction on $n$ from the proposition.</p>
 <p><strong>Remark (no coupling).</strong> In the biquaternion algebra the idempotents are non-central and the splitting survives only on the idempotent plane, with a coupling given by the off-diagonal entries (<em>The Idempotent Decomposition and the Split Fractal</em>). In the split-biquaternion algebra the idempotents are central, the splitting is of the algebra and of the family, and there is no coupling. <strong>The split-biquaternion fractal theory is the only one of the two in which the dynamics is exactly a product, and every simplification of the subject follows from this single fact.</strong></p>
@@ -96,9 +96,9 @@ $$</p>
 <h2 id="the-norm-the-zero-divisors-and-the-critical-orbit">The Norm, the Zero Divisors and the Critical Orbit</h2>
 <p><strong>Proposition (units and zero divisors).</strong> A split biquaternion is a unit if and only if both $\tilde Q_\pm$ are non-zero quaternions; the zero divisors are the union of the two ideals</p>
 <p>$$
-\mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_- =\{\tilde Q_-=0\}\cup\{\tilde Q_+=0\} ,
+\mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2 =\{\tilde Q_-=0\}\cup\{\tilde Q_+=0\} ,
 $$</p>
-<p>each of real dimension four. The $\mathbb{D}$-valued norm is $\tilde Q\tilde Q^{\natural}=\tilde Q_+\tilde Q_+^{\natural}\tilde\Pi_++\tilde Q_-\tilde Q_-^{\natural}\tilde\Pi_-$.</p>
+<p>each of real dimension four. The $\mathbb{D}$-valued norm is $\tilde Q\tilde Q^{\natural}=\tilde Q_+\tilde Q_+^{\natural}\tilde\Pi_1+\tilde Q_-\tilde Q_-^{\natural}\tilde\Pi_2$.</p>
 <p><strong>Proof.</strong> $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ is a product of division algebras; an element of a product is a unit if and only if both components are, and it is a zero divisor if and only if one component is zero (<em>Split-Biquaternion Zero Divisors</em>). The norm computation is the idempotent-basis form of the norm (<em>Split-Biquaternion Norm and Invertibility</em>).</p>
 <p><strong>Proposition (the derivative and the critical orbit).</strong> The derivative of the split-biquaternion family is the block-diagonal pair of the derivatives of the two quaternion factors, so the family is a local diffeomorphism exactly where both quaternion factors are, that is, off the union of the two hyperplanes $\{\operatorname{Re}\tilde Q_+=0\}$ and $\{\operatorname{Re}\tilde Q_-=0\}$ (<em>The Quaternion Quadratic Map and Its Julia Sets</em>, §<em>The Critical Point</em>). The critical orbit used for the connectedness locus is the orbit of $\tilde Q=0$, which is the pair of the quaternion critical orbits $0,\tilde C_\pm,(\tilde C_\pm)^2+\tilde C_\pm,\dots$.</p>
 <p><strong>Proof.</strong> The derivative of a componentwise map is block-diagonal in the idempotent coordinates, with the two quaternion derivatives as blocks; a block-diagonal map is invertible exactly when both blocks are, and the quaternion quadratic map is a local diffeomorphism off the hyperplane of the pure vectors, so the product is a local diffeomorphism off the union of the two hyperplanes. The critical orbit of each factor is the orbit of $0$ by the convention of the quaternion thread, in which the orbit of $0$ is the critical orbit of the invariant complex slice; the orbit of the pair $(0,0)$ is therefore the pair of the quaternion critical orbits (<em>The Quaternion Mandelbrot Set</em>).</p>
@@ -121,7 +121,7 @@ $$</p>
 <p><strong>Remark (the reading of the square).</strong> The formula $\tilde Q\mapsto\tilde Q^2$ is read here with the split-biquaternion algebra product, the associative product of the algebra and the only reading under which the idempotents are central and the family factors into two quaternion families. The other bilinear products carried by the underlying real space give different maps, whose reading is the subject of the biquaternion thread and is not the family of this article; <strong>the split-biquaternion family is defined by the algebra product, and the statement is the product decomposition proved above.</strong></p>
 <p><strong>Remark (the open questions).</strong> The split-biquaternion thread is the least developed of the eight fractal threads of the corpus, and the article records what is open: the monogenic and regular function theory of the split-biquaternion maps, which would play the role of holomorphy for the biquaternion family; the Fatou theory of the family away from the two ideals; the exact dimension of the product fractal at a non-scalar parameter, which needs the dimension of the quaternion Julia sets; and the extension of the systems and the pluripotential theory to the split case, where the $\mathbb{D}$-valued norm replaces the complex norm.</p>
 <h2 id="summary">Summary</h2>
-<p>The split-biquaternion quadratic family is, by the centrality of the idempotents $\tilde\Pi_\pm=\tfrac12(e_0\pm j)$, exactly the product of two quaternion quadratic families, with the norm identity $\|\tilde Q\|_E^2=\tfrac12(\|\tilde Q_+\|^2+\|\tilde Q_-\|^2)$; the orbit is the pair of the quaternion orbits and there is no coupling. The escape lemma of the quaternion factors gives the escape dichotomy for the product, the filled Julia set is the product $K_{\tilde C_+}\times K_{\tilde C_-}$, the Julia set is the boundary of the product $(J_+\times K_-)\cup(K_+\times J_-)$, and every product property of the fractal is inherited. The units are the pairs of non-zero quaternions and the zero divisors are the two four-dimensional ideals, so the zero divisors of the split-biquaternion algebra do not obstruct the escape radius, in contrast with the biquaternion case. The critical orbit is the pair of the quaternion critical orbits and the connectedness locus is the square $\mathcal{M}_{\mathbb{H}}\times\mathcal{M}_{\mathbb{H}}$ of the quaternion connectedness locus. The symmetry group is the product of the automorphism groups of the two factors together with the swap.</p>
+<p>The split-biquaternion quadratic family is, by the centrality of the idempotents $\tilde\Pi_{1,2}=\tfrac12(e_0\pm j)$, exactly the product of two quaternion quadratic families, with the norm identity $\|\tilde Q\|_E^2=\tfrac12(\|\tilde Q_+\|^2+\|\tilde Q_-\|^2)$; the orbit is the pair of the quaternion orbits and there is no coupling. The escape lemma of the quaternion factors gives the escape dichotomy for the product, the filled Julia set is the product $K_{\tilde C_+}\times K_{\tilde C_-}$, the Julia set is the boundary of the product $(J_+\times K_-)\cup(K_+\times J_-)$, and every product property of the fractal is inherited. The units are the pairs of non-zero quaternions and the zero divisors are the two four-dimensional ideals, so the zero divisors of the split-biquaternion algebra do not obstruct the escape radius, in contrast with the biquaternion case. The critical orbit is the pair of the quaternion critical orbits and the connectedness locus is the square $\mathcal{M}_{\mathbb{H}}\times\mathcal{M}_{\mathbb{H}}$ of the quaternion connectedness locus. The symmetry group is the product of the automorphism groups of the two factors together with the swap.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -140,15 +140,15 @@ $$</p>
 <td>the central split unit</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm=\tfrac12(e_0\pm j)$</td>
+<td>$\tilde\Pi_{1,2}=\tfrac12(e_0\pm j)$</td>
 <td>the central idempotents</td>
 </tr>
 <tr>
-<td>$\tilde Q_\pm=\tilde Q\tilde\Pi_\pm\in\mathbb{H}$</td>
+<td>$\tilde Q_\pm=\tilde Q\tilde\Pi_{1,2}\in\mathbb{H}$</td>
 <td>the two quaternion components</td>
 </tr>
 <tr>
-<td>$\tilde C_\pm=\tilde C\tilde\Pi_\pm$</td>
+<td>$\tilde C_\pm=\tilde C\tilde\Pi_{1,2}$</td>
 <td>the two quaternion parameters</td>
 </tr>
 <tr>
@@ -164,7 +164,7 @@ $$</p>
 <td>the connectedness locus</td>
 </tr>
 <tr>
-<td>$\mathbb{H}\tilde\Pi_\pm$</td>
+<td>$\mathbb{H}\tilde\Pi_{1,2}$</td>
 <td>the two ideals of zero divisors</td>
 </tr>
 </tbody>

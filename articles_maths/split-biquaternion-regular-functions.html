@@ -71,7 +71,7 @@ $$</p>
 $$</p>
 <p>On the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ this is the quaternion Cauchy–Riemann operator of Fueter's theory; on the full algebra it acts coefficientwise, and on the idempotent decomposition it splits as</p>
 <p>$$
-\tilde{\nabla}\tilde{F} = \left(\tilde{\nabla}\tilde{F}_+\right)\tilde\Pi_+ + \left(\tilde{\nabla}\tilde{F}_-\right)\tilde\Pi_- ,
+\tilde{\nabla}\tilde{F} = \left(\tilde{\nabla}\tilde{F}_+\right)\tilde\Pi_1 + \left(\tilde{\nabla}\tilde{F}_-\right)\tilde\Pi_2 ,
 $$</p>
 <p>where on the right $\tilde{\nabla}$ is the quaternion operator acting on each idempotent component.</p>
 <p><strong>Theorem.</strong> The operator factors the scalar d'Alembertian:</p>
@@ -110,7 +110,7 @@ $$</p>
 <p><strong>Corollary.</strong> The idempotent components of a regular function are separately regular, $\tilde{\nabla}\tilde{F}_\pm = 0$, and hence separately harmonic; regularity on the full algebra is thus the pair of quaternionic regularities, and the theory splits along the two halves. This is the analytic form of the algebra decomposition, and it is a genuine difference from the biquaternion case, where the algebra is simple and no such splitting exists.</p>
 <h2 id="the-role-of-the-zero-divisors">The Role of the Zero Divisors</h2>
 <p>In the complex theory the variable ranges over a field and every nonzero element is invertible; in the split biquaternion algebra this fails, and every failure of the complex analogy on the full algebra is traceable to the zero divisors.</p>
-<p><strong>The inverse is local.</strong> The naive quotient $\tilde{A}/\tilde{Q} = \tilde{A}\tilde{Q}^{\natural}N(\tilde{Q})^{-1}$ requires $N(\tilde{Q})$ to be a unit of $\mathbb{D}$, that is requires $\tilde{Q}$ to lie off the zero divisor locus $Z = \mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_-$, the union of the two four-dimensional ideals. On $Z$ there is no inverse and no difference quotient, and since $Z$ has dimension four rather than being a hypersurface, the naive definition of differentiability with respect to the variable fails on a positive-dimensional set. This is the reason the standard definition of regularity uses four real variables rather than one algebra variable, exactly as in the biquaternion case.</p>
+<p><strong>The inverse is local.</strong> The naive quotient $\tilde{A}/\tilde{Q} = \tilde{A}\tilde{Q}^{\natural}N(\tilde{Q})^{-1}$ requires $N(\tilde{Q})$ to be a unit of $\mathbb{D}$, that is requires $\tilde{Q}$ to lie off the zero divisor locus $Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$, the union of the two four-dimensional ideals. On $Z$ there is no inverse and no difference quotient, and since $Z$ has dimension four rather than being a hypersurface, the naive definition of differentiability with respect to the variable fails on a positive-dimensional set. This is the reason the standard definition of regularity uses four real variables rather than one algebra variable, exactly as in the biquaternion case.</p>
 <p><strong>The kernel is local.</strong> The Cauchy kernel $\tilde{G} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is defined off the origin, but its regularity rests on the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|_E^2 e_0$ which holds only where the coefficients are real. On the full algebra, where $N(\tilde{Q})$ is split complex, the corresponding homogeneous kernel is $\tilde{Q}^{\natural}N(\tilde{Q})^{-1}$ up to a power, and it is undefined on the zero divisor locus; on an indefinite subspace it is not a fundamental solution, and the characteristic set of the operator is the null cone there.</p>
 <p><strong>The characteristic set.</strong> On an indefinite subspace the principal symbol vanishes on the null cone of the relevant real form, so the operator factors a wave operator there rather than the Laplacian; the null cone is simultaneously the characteristic set, a subset of the zero divisor locus, and the place where the kernel ceases to be regular. Every regular function on the full algebra therefore obeys its equations on the complement of $Z$, and any integral representation must restrict either to the quaternion subspace, where $Z$ is empty, or to domains avoiding $Z$.</p>
 <h2 id="the-relation-to-the-biquaternion-case-and-to-clifford-analysis">The Relation to the Biquaternion Case and to Clifford Analysis</h2>
@@ -172,7 +172,7 @@ $$</p>
 <td>Euclidean norm squared</td>
 </tr>
 <tr>
-<td>$Z = \mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_-$</td>
+<td>$Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$</td>
 <td>Zero divisor locus</td>
 </tr>
 <tr>

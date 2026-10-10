@@ -60,14 +60,14 @@
 <p>$$
 \left[(\tilde Q_+,\tilde Q_-), (\tilde P_+,\tilde P_-)\right] = \left([\tilde Q_+,\tilde P_+], [\tilde Q_-,\tilde P_-]\right) ,
 $$</p>
-<p>so that the two halves $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ are commuting ideals and $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ as Lie algebras.</p>
+<p>so that the two halves $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ are commuting ideals and $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ as Lie algebras.</p>
 <p><strong>Proof.</strong> The decomposition is a ring direct sum, so the commutator of pairs is the pair of commutators.</p>
 <p><strong>Corollary.</strong> The centre of the Lie algebra is $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cong \mathbb{D}$, of dimension $2$; the derived algebra is $[\mathbb{H}_{\mathbb{D}}, \mathbb{H}_{\mathbb{D}}] = \mathrm{Im}\,\mathbb{H} \oplus \mathrm{Im}\,\mathbb{H} \cong \mathrm{SO}(3) \oplus \mathrm{SO}(3) \cong \mathrm{SO}(4)$, of dimension $6$; and</p>
 <p>$$
 \mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^2 \oplus \mathrm{SO}(3) \oplus \mathrm{SO}(3) ,
 $$</p>
 <p>a reductive Lie algebra whose semisimple part is $\mathrm{SO}(4)$.</p>
-<p><strong>Proof.</strong> In the quaternion Lie algebra $\mathbb{H}$ the commutator of two elements is the vector product of their vector parts, so the centre is $\mathbb{R}e_0$ and the derived algebra is $\mathrm{Im}\,\mathbb{H} \cong \mathrm{SU}(2) \cong \mathrm{SO}(3)$; taking two copies, the centre is $\mathbb{R} \tilde\Pi_+ \oplus \mathbb{R} \tilde\Pi_- = \mathbb{D} e_0$ and the derived algebra is the sum of the two copies of $\mathrm{SO}(3)$. The isomorphism $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$ is standard.</p>
+<p><strong>Proof.</strong> In the quaternion Lie algebra $\mathbb{H}$ the commutator of two elements is the vector product of their vector parts, so the centre is $\mathbb{R}e_0$ and the derived algebra is $\mathrm{Im}\,\mathbb{H} \cong \mathrm{SU}(2) \cong \mathrm{SO}(3)$; taking two copies, the centre is $\mathbb{R} \tilde\Pi_1 \oplus \mathbb{R} \tilde\Pi_2 = \mathbb{D} e_0$ and the derived algebra is the sum of the two copies of $\mathrm{SO}(3)$. The isomorphism $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$ is standard.</p>
 <h2 id="the-exponential">The Exponential</h2>
 <h3 id="the-series-and-the-closed-form">The Series and the Closed Form</h3>
 <p><strong>Definition.</strong> For $\tilde Q \in \mathbb{H}_{\mathbb{D}}$ the <strong>exponential</strong> is $\exp(\tilde Q) = \sum_{n\geq0} \tilde Q^n/n!$, and it converges for every $\tilde Q$ because the algebra is finite-dimensional.</p>
@@ -100,7 +100,7 @@ $$</p>
 <h2 id="the-norm-one-group">The Norm-One Group</h2>
 <p><strong>Definition.</strong> The <strong>norm-one group</strong> of the algebra is $G_1 = \{ \tilde{S} \in \mathbb{H}_{\mathbb{D}} : N(\tilde{S}) = e_0 \}$.</p>
 <p><strong>Theorem.</strong> $G_1 = S^3 \times S^3 \cong \mathrm{Spin}(4)$, a compact connected six-dimensional Lie group.</p>
-<p><strong>Proof.</strong> Since $N(\tilde{S}) = N_+(\tilde{S})\tilde\Pi_+ + N_-(\tilde{S})\tilde\Pi_-$ and $N_\pm(\tilde{S}) = |\tilde{S}_\pm|^2$, the condition $N(\tilde{S}) = e_0$ is the pair $|\tilde{S}_+| = |\tilde{S}_-| = 1$, so $G_1$ is the product of two unit spheres, and $S^3\times S^3 \cong \mathrm{Spin}(4)$ is the standard double cover of $SO(4)$.</p>
+<p><strong>Proof.</strong> Since $N(\tilde{S}) = N_+(\tilde{S})\tilde\Pi_1 + N_-(\tilde{S})\tilde\Pi_2$ and $N_\pm(\tilde{S}) = |\tilde{S}_\pm|^2$, the condition $N(\tilde{S}) = e_0$ is the pair $|\tilde{S}_+| = |\tilde{S}_-| = 1$, so $G_1$ is the product of two unit spheres, and $S^3\times S^3 \cong \mathrm{Spin}(4)$ is the standard double cover of $SO(4)$.</p>
 <p>The norm-one group is the compact part of the unit group: every unit is a positive real scale in each component times an element of $G_1$.</p>
 <h2 id="the-hyperbolic-and-elliptic-subgroups">The Hyperbolic and Elliptic Subgroups</h2>
 <h3 id="the-elliptic-subgroups">The Elliptic Subgroups</h3>
@@ -114,7 +114,7 @@ $$</p>
 <h2 id="polar-and-exponential-parametrisation">Polar and Exponential Parametrisation</h2>
 <p><strong>Theorem.</strong> Every nonzero $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$ has a componentwise polar form</p>
 <p>$$
-\tilde{Q} = r_+ \hat{q}_+ \tilde\Pi_+ + r_- \hat{q}_- \tilde\Pi_- , \qquad r_\pm = |\tilde{Q}_\pm| > 0 , \ \ \hat{q}_\pm \in S^3 ,
+\tilde{Q} = r_+ \hat{q}_+ \tilde\Pi_1 + r_- \hat{q}_- \tilde\Pi_2 , \qquad r_\pm = |\tilde{Q}_\pm| > 0 , \ \ \hat{q}_\pm \in S^3 ,
 $$</p>
 <p>and every unit has an exponential parametrisation $\tilde{Q} = \exp(\tilde P)$ with $\tilde P = (\tilde P_+, \tilde P_-)$ and $\tilde P_\pm$ in the quaternion logarithm of $\tilde{Q}_\pm$.</p>
 <p><strong>Proof.</strong> Apply the polar form and the logarithm of a nonzero quaternion in each half.</p>
@@ -177,7 +177,7 @@ $$</p>
 <td>Pairs of quaternions $2\pi k\hat{\mathbf{u}}$</td>
 </tr>
 <tr>
-<td>$\tilde{Q} = r_+\hat{q}_+ \tilde\Pi_+ + r_-\hat{q}_- \tilde\Pi_-$</td>
+<td>$\tilde{Q} = r_+\hat{q}_+ \tilde\Pi_1 + r_-\hat{q}_- \tilde\Pi_2$</td>
 <td>Componentwise polar form</td>
 </tr>
 </tbody>

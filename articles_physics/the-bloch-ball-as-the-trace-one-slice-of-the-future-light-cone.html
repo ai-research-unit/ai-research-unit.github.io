@@ -197,11 +197,11 @@ $$</p>
 $$</p>
 <p>and $\tilde{\rho}$ is idempotent if and only if $|\mathbf{r}| = 1$. The idempotents of trace one have the form</p>
 <p>$$
-\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\boldsymbol{\mu}}\bigr), \qquad |\hat{\boldsymbol{\mu}}| = 1 ,
+\tilde\Pi_{1,2}(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\boldsymbol{\mu}}\bigr), \qquad |\hat{\boldsymbol{\mu}}| = 1 ,
 $$</p>
 <p>and are the rank-one projections of $\mathbb{M}_+$; under the isomorphism they are the standard spin-up and spin-down projectors along $\hat{\boldsymbol{\mu}}$. The boundary is thus parametrized by the unit sphere $S^2 \subset \mathbb{R}^3$, with $\hat{\boldsymbol{\mu}}$ and $-\hat{\boldsymbol{\mu}}$ giving the complementary idempotents:</p>
 <p>$$
-\tilde\Pi_+(\hat{\boldsymbol{\mu}}) + \tilde\Pi_-(\hat{\boldsymbol{\mu}}) = e_0, \qquad \tilde\Pi_+(\hat{\boldsymbol{\mu}})\tilde\Pi_-(\hat{\boldsymbol{\mu}}) = 0 .
+\tilde\Pi_1(\hat{\boldsymbol{\mu}}) + \tilde\Pi_2(\hat{\boldsymbol{\mu}}) = e_0, \qquad \tilde\Pi_1(\hat{\boldsymbol{\mu}})\tilde\Pi_2(\hat{\boldsymbol{\mu}}) = 0 .
 $$</p>
 <p><strong>Zero divisors.</strong> On the boundary $N(\tilde{\rho}) = 0$ with $\tilde{\rho} \neq 0$, so $\tilde{\rho}$ is a zero divisor of $\mathbb{B}$. Conversely, a positive trace-one element of $\mathbb{M}_+$ that is a zero divisor has vanishing biquaternion norm, hence $|\mathbf{r}| = 1$, hence is pure. Within the trace-one hyperplane of $\mathbb{M}_+$, therefore,</p>
 <p>$$
@@ -221,7 +221,7 @@ $$</p>
 $$</p>
 <p>both strictly positive and summing to one. The spectral decomposition is</p>
 <p>$$
-\tilde{\rho} = \lambda_+ \tilde\Pi_+(\hat{\mathbf{r}}) + \lambda_- \tilde\Pi_-(\hat{\mathbf{r}}), \qquad \hat{\mathbf{r}} = \frac{\mathbf{r}}{|\mathbf{r}|},
+\tilde{\rho} = \lambda_+ \tilde\Pi_1(\hat{\mathbf{r}}) + \lambda_- \tilde\Pi_2(\hat{\mathbf{r}}), \qquad \hat{\mathbf{r}} = \frac{\mathbf{r}}{|\mathbf{r}|},
 $$</p>
 <p>a convex combination of the two complementary pure states along the Bloch direction $\hat{\mathbf{r}}$. This is the algebraic statement that every mixed state is a statistical mixture of two orthogonal pure states, with weights determined by the radius.</p>
 <p>The centre of the ball is the <strong>maximally mixed state</strong></p>
@@ -277,7 +277,7 @@ $$</p>
 \frac{dS}{dr} = -\frac{1}{2}\log\frac{1+r}{1-r} < 0 \qquad (0 < r < 1),
 $$</p>
 <p>so entropy decreases monotonically from the centre to the boundary, in step with the increase of purity. Entropy and purity therefore carry the same information on a qubit — both are functions of $|\mathbf{r}|$, and each determines the other — the entropy being the steeper, logarithmically scaled version.</p>
-<p>Because the logarithm is the spectral logarithm on the positive cone, the trace form of the entropy is unambiguous for interior states: writing $\log\tilde{\rho} = \log\lambda_+\, \tilde\Pi_+(\hat{\mathbf{r}}) + \log\lambda_-\, \tilde\Pi_-(\hat{\mathbf{r}})$, one has $-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = S(\tilde{\rho})$, consistent with $\mathrm{Tr} = 2\,\mathrm{Sc}$.</p>
+<p>Because the logarithm is the spectral logarithm on the positive cone, the trace form of the entropy is unambiguous for interior states: writing $\log\tilde{\rho} = \log\lambda_+\, \tilde\Pi_1(\hat{\mathbf{r}}) + \log\lambda_-\, \tilde\Pi_2(\hat{\mathbf{r}})$, one has $-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = S(\tilde{\rho})$, consistent with $\mathrm{Tr} = 2\,\mathrm{Sc}$.</p>
 <h2 id="fidelity-and-transition-probability">Fidelity and Transition Probability</h2>
 <p>For two pure states, the <strong>transition probability</strong> is the trace pairing computed above,</p>
 <p>$$
@@ -288,7 +288,7 @@ $$</p>
 <p>$$
 T(\tilde{\rho},\tilde{\sigma}) = \Bigl(\mathrm{Tr}\sqrt{\sqrt{\tilde{\rho}}\;\tilde{\sigma}\sqrt{\tilde{\rho}}}\,\Bigr)^{2}.
 $$</p>
-<p>All square roots here are the positive square roots within $\mathbb{M}_+$: since $\tilde{\rho}$ is a convex combination of complementary idempotents, $\sqrt{\tilde{\rho}} = \sqrt{\lambda_+}\,\tilde\Pi_+(\hat{\mathbf{r}}) + \sqrt{\lambda_-}\,\tilde\Pi_-(\hat{\mathbf{r}})$ lies in $\mathbb{M}_+$, and the same holds for the inner square root. In Bloch coordinates the expression evaluates to the closed form</p>
+<p>All square roots here are the positive square roots within $\mathbb{M}_+$: since $\tilde{\rho}$ is a convex combination of complementary idempotents, $\sqrt{\tilde{\rho}} = \sqrt{\lambda_+}\,\tilde\Pi_1(\hat{\mathbf{r}}) + \sqrt{\lambda_-}\,\tilde\Pi_2(\hat{\mathbf{r}})$ lies in $\mathbb{M}_+$, and the same holds for the inner square root. In Bloch coordinates the expression evaluates to the closed form</p>
 <p>$$
 T(\tilde{\rho},\tilde{\sigma}) = \tfrac{1}{2}\Bigl(1 + \mathbf{r}\cdot\mathbf{s} + \sqrt{\bigl(1 - |\mathbf{r}|^2\bigr)\bigl(1 - |\mathbf{s}|^2\bigr)}\Bigr).
 $$</p>
@@ -509,7 +509,7 @@ $$</p>
 \tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\mathbf{r}\bigr),
 $$</p>
 <p>the intersection is the closed unit ball $|\mathbf{r}| \leq 1$, the <strong>Bloch ball</strong>, whose boundary is the intersection with the null cone.</p>
-<p>The pure states are the boundary of the ball. Equivalently, they are the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$, the rank-one projections, the extreme rays of the positive cone, and the zero divisors of $\mathbb{B}$ at trace one; the boundary is parametrized by the Bloch sphere $S^2$. The mixed states are the interior, with eigenvalues $\tfrac{1}{2}(1 \pm |\mathbf{r}|)$; the maximally mixed state is the centre $\mathbf{r} = 0$.</p>
+<p>The pure states are the boundary of the ball. Equivalently, they are the idempotents $\tilde\Pi_{1,2}(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$, the rank-one projections, the extreme rays of the positive cone, and the zero divisors of $\mathbb{B}$ at trace one; the boundary is parametrized by the Bloch sphere $S^2$. The mixed states are the interior, with eigenvalues $\tfrac{1}{2}(1 \pm |\mathbf{r}|)$; the maximally mixed state is the centre $\mathbf{r} = 0$.</p>
 <p>Purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$, so the Bloch radius is a measure of purity, and the linear entropy is $1 - \mathrm{Tr}(\tilde{\rho}^2) = 2N(\tilde{\rho})$, twice the biquaternion norm. The von Neumann entropy depends only on $|\mathbf{r}|$, vanishing on the boundary and maximal, equal to $\log 2$, at the centre. The Uhlmann transition probability has the closed form $\tfrac{1}{2}\bigl(1 + \mathbf{r}\cdot\mathbf{s} + \sqrt{(1-|\mathbf{r}|^2)(1-|\mathbf{s}|^2)}\bigr)$, reducing on the boundary to $\cos^2(\theta/2)$. In every case the state space, its purity stratification, its entropy, and its fidelity are read off from the biquaternion norm and the trace on $\mathbb{M}_+$, without additional postulates.</p>
 <p>The ball has a mirror reading in the material sector. The map $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ carries $\mathbb{M}_-$ onto $\mathbb{M}_+$, sends the material four-vector $ict\,e_0 + \mathbf{x}$ to $\tfrac{1}{2}(ct\,e_0 - i\mathbf{x})$, and satisfies $\mathrm{Tr}(\tilde{H}) = ct$ and $N(\tilde{H}) = -\tfrac{1}{4}N(\tilde{Q})$. The image is a state exactly at $ct = 1$, where it is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $\mathbf{r} = -\mathbf{x}$. On that slice the map turns positivity of a state into the causal condition $ct \geq |\mathbf{x}|$: the ball is the trace-one slice of the timelike cone, the pure states are its lightlike elements, and the maximally mixed state is the rest four-vector. The future cone maps onto the positive elements and the past cone onto the negative definite ones, so the trace sign, not the sign of the norm, selects the state sheet — which is why the past cone has no state reading here. Both readings use the one action $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$, with a unit-norm rotor as actor on the material side and a unitary element on the informational side. The two actors are different groups: the unit-norm rotor gives the full Lorentz group, boosts included, while the unitary gives only the rotations of the ball, because unitarity is exactly the condition that preserves the trace and the trace-one slice is the state space. What the map is not is an algebra isomorphism: $i$ is not multiplicative, so $(i\tilde{Q})(i\tilde{Y}) = -\tilde{Q}\tilde{Y} \neq i(\tilde{Q}\tilde{Y})$; within a sector the product reverses the order, $(\tilde{Q}\tilde{Y})^{*} = \tilde{Y}\tilde{Q}$, so a product of two material elements need not be material, while the commutator always lands in $\mathbb{M}_-$. The two sectors are anti-isometric real quadratic spaces with $N(i\tilde{Q}) = -N(\tilde{Q})$, not isomorphic algebras.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -574,7 +574,7 @@ $$</p>
 <td>State, Bloch vector $\mathbf{r}$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$</td>
+<td>$\tilde\Pi_{1,2}(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$</td>
 <td>Idempotent (pure state), $|\hat{\boldsymbol{\mu}}| = 1$</td>
 </tr>
 <tr>

@@ -61,7 +61,18 @@
 $$</p>
 <p>so $X\mapsto X^{*}$ is the adjoint involution of $M_n(R)$ determined by $\Phi$ and $\sigma$; for $\Phi = I$ it is $X\mapsto \sigma(X)^{\mathrm t}$, and for $\sigma = \mathrm{id}$ and $\Phi = I$ it is the transpose.</p>
 <p><strong>Proof.</strong> $\langle Xx,y\rangle = \sigma(Xx)^{\mathrm t}\Phi y = \sigma(x)^{\mathrm t}\sigma(X)^{\mathrm t}\Phi y = \sigma(x)^{\mathrm t}\Phi(\Phi^{-1}\sigma(X)^{\mathrm t}\Phi)y = \langle x, X^{*}y\rangle$. The four laws are those of <em>Involutions of the Endomorphism Ring</em>.</p>
-<p><strong>Proposition (self-adjoint and skew-adjoint).</strong> The <strong>self-adjoint</strong> matrices are those with $\sigma(X)^{\mathrm t}\Phi = \Phi X$, equivalently $X^{*} = X$; the <strong>skew-adjoint</strong> ones are those with $X^{*} = -X$. With $2$ invertible the ring is the sum of the two, and for $\Phi = I$ they are the matrices with $\sigma(X)^{\mathrm t} = \pm X$, the Hermitian and skew-Hermitian matrices of the coefficient involution.</p>
+<p><strong>Example (degree two).</strong> For $n = 2$, $\sigma$ the complex conjugation and $\Phi = \operatorname{diag}(1,-1)$, the adjoint of</p>
+<p>$$
+X=\begin{pmatrix}i&1\\0&2\end{pmatrix}
+$$</p>
+<p>is</p>
+<p>$$
+X^{*}=\Phi^{-1}\sigma(X)^{\mathrm t}\Phi
+=\begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}-i&0\\1&2\end{pmatrix}\begin{pmatrix}1&0\\0&-1\end{pmatrix}
+=\begin{pmatrix}-i&0\\-1&2\end{pmatrix},
+$$</p>
+<p>the middle factor being $\sigma(X)^{\mathrm t}$; and with $\Phi = I$ the same involution is the conjugate transpose, $X^{*} = \begin{pmatrix}-i&0\\1&2\end{pmatrix}$.</p>
+<p><strong>Proposition (self-adjoint and skew-adjoint).</strong> The <strong>self-adjoint</strong> matrices are those with $\sigma(X)^{\mathrm t}\Phi = \Phi X$, equivalently $X^{*} = X$; the <strong>skew-adjoint</strong> ones are those with $X^{*} = -X$. For $\Phi = \operatorname{diag}(1,-1)$ the self-adjoint matrices are $\begin{pmatrix}a&b\\-\bar b&d\end{pmatrix}$ with $a,d$ real, the matrix $\Phi$ itself among them. With $2$ invertible the ring is the sum of the two, and for $\Phi = I$ they are the matrices with $\sigma(X)^{\mathrm t} = \pm X$, the Hermitian and skew-Hermitian matrices of the coefficient involution.</p>
 <p><strong>Proof.</strong> $X^{*} = X$ is $\Phi^{-1}\sigma(X)^{\mathrm t}\Phi = X$, i.e. $\sigma(X)^{\mathrm t}\Phi = \Phi X$; the rest is <em>Involutive Rings</em> applied to the adjoint involution.</p>
 <p><strong>Proposition (the unitary group).</strong> The matrices with</p>
 <p>$$
@@ -79,10 +90,14 @@ $$</p>
 <p><strong>Corollary (the two involutions).</strong> The adjoint involution $X\mapsto\sigma(X)^{\mathrm t}$ of $\Phi = I$ and the transpose involution $X\mapsto X^{\mathrm t}$ of <em>Matrix Rings with an Involution</em> agree exactly when $\sigma = \mathrm{id}$; for a nontrivial $\sigma$ the adjoint involution is of the second kind and its self-adjoint matrices are the Hermitian ones.</p>
 <p><strong>Proof.</strong> Comparison of the two formulas; the kind is read off from the action on the centre $R\cdot I$, where $\sigma(X)^{\mathrm t}$ acts by $\sigma$ on the scalars.</p>
 <h2 id="examples">Examples</h2>
-<p><strong>(a) The real orthogonal case.</strong> $R = \mathbb{R}$, $\sigma = \mathrm{id}$, $\Phi = I$: $X^{*} = X^{\mathrm t}$, the self-adjoint matrices are the symmetric ones, and $U_n$ is the orthogonal group.</p>
-<p><strong>(b) The complex unitary case.</strong> $R = \mathbb{C}$, $\sigma$ the conjugation, $\Phi = I$: $X^{*} = \overline{X}^{\mathrm t}$, the self-adjoint matrices are the Hermitian ones, and $U_n$ is the unitary group. The adjoint involution is of the second kind.</p>
-<p><strong>(c) The symplectic case.</strong> $\Phi = J$ with $J^{\mathrm t} = -J$, $J^2 = -1$: $X^{*} = -JX^{\mathrm t}J$ and $U_n$ is the symplectic group of <em>Matrix Rings with an Involution</em>.</p>
-<p><strong>(d) The indefinite case.</strong> $\Phi = \operatorname{diag}(1,\dots,1,-1,\dots,-1)$: the self-adjoint matrices are the Hermitian matrices of a signature, and the unitary group is the corresponding indefinite unitary group; the signature is a Part II invariant and is only named here.</p>
+<p><strong>(a) The real orthogonal case.</strong> $R = \mathbb{R}$, $\sigma = \mathrm{id}$, $\Phi = I$: $X^{*} = X^{\mathrm t}$, the self-adjoint matrices are the symmetric ones, $\begin{pmatrix}1&2\\2&3\end{pmatrix}$ among them against the skew-adjoint $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, and $U_n$ is the orthogonal group.</p>
+<p><strong>(b) The complex unitary case.</strong> $R = \mathbb{C}$, $\sigma$ the conjugation, $\Phi = I$: $X^{*} = \overline{X}^{\mathrm t}$, the self-adjoint matrices are the Hermitian ones, and $U_n$ is the unitary group. For $n = 2$ the Pauli matrix</p>
+<p>$$
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}
+$$</p>
+<p>is Hermitian, and $\tfrac{1}{\sqrt2}\begin{pmatrix}1&-1\\1&1\end{pmatrix}$ is unitary. The adjoint involution is of the second kind.</p>
+<p><strong>(c) The symplectic case.</strong> $\Phi = J$ with $J^{\mathrm t} = -J$, $J^2 = -1$, in the degree-two model $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$: $X^{*} = -JX^{\mathrm t}J$, the self-adjoint matrices are the scalar matrices, $-JX^{\mathrm t}J=X$ being equivalent to $X=\lambda I$, so that the matrix $J$ and its multiples are skew-adjoint, and $U_n$ is the symplectic group of <em>Matrix Rings with an Involution</em>.</p>
+<p><strong>(d) The indefinite case.</strong> $\Phi = \operatorname{diag}(1,\dots,1,-1,\dots,-1)$, in the degree-two model $\Phi=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$: the self-adjoint matrices are the Hermitian matrices of a signature, and the unitary group is the corresponding indefinite unitary group; the signature is a Part II invariant and is only named here.</p>
 <h2 id="summary">Summary</h2>
 <p>In the matrix ring with a coefficient involution $\sigma$ and an invertible Gram matrix $\Phi$, the adjoint is $X^{*} = \Phi^{-1}\sigma(X)^{\mathrm t}\Phi$, defined by the sesquilinear form $\langle x,y\rangle = \sigma(x)^{\mathrm t}\Phi y$; for $\Phi = I$ it is $\sigma(X)^{\mathrm t}$. The self-adjoint matrices satisfy $\sigma(X)^{\mathrm t}\Phi = \Phi X$, the skew-adjoint ones the same with the opposite sign, and the unitary group $U_n(R,\Phi,\sigma) = \{X : X^{*}X = XX^{*} = I\}$ is the group of matrices preserving the form; the transpose, the orthogonal, the symplectic and the unitary groups are the cases $\Phi = I$ with $\sigma = \mathrm{id}$, a symmetric $\Phi$, an antisymmetric $\Phi$, and $R = \mathbb{C}$ with the conjugation. Under the trace pairing $\beta(X,Y) = \tau(XY)$ the adjoint of the left multiplication is the right multiplication and $\tau(X^{*}) = \sigma(\tau(X))$, so the trace pairing restricts to a symmetric form on the self-adjoint part.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
