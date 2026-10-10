@@ -122,7 +122,7 @@ where $\hat{\mu} = \mu_1 e_1 + \mu_2 e_2 + \mu_3 e_3$ is a unit pure real quater
 
 The **parametrization** is by the unit sphere $S^2 \subset \mathbb{R}^3$: the direction $\hat{\mu}$ determines the idempotent $\tilde\Pi_+(\hat{\mu})$ uniquely, and the complementary idempotent $\tilde\Pi_-(\hat{\mu}) = \tilde\Pi_+(-\hat{\mu})$ corresponds to the opposite direction.
 
-**Identification with standard states.** Under the series isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $e_k\mapsto-i\sigma_k$ (*Conventions in the Biquaternion Universe*), the idempotent $\tilde\Pi_+(\hat{\mu})$ maps to the standard pure state
+**Identification with standard states.** Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $e_k\mapsto-i\sigma_k$ (*Conventions in the Biquaternion Universe*), the idempotent $\tilde\Pi_+(\hat{\mu})$ maps to the standard pure state
 
 $$
 |\hat{\mu}+\rangle\langle\hat{\mu}+|,
@@ -661,4 +661,3 @@ The extension to many qubits, the second-quantized version, the connection to qu
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for the POVM and Kraus formalism.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Clifford algebra formulation of spin.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric algebra approach to quantum physics.
-
