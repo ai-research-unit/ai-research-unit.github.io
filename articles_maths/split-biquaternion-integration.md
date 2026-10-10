@@ -11,13 +11,13 @@ Every claim is either proved or stated as a definition. Where a computation is l
 
 The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$, its conjugations, its four fixed-point subspaces, the Euclidean norm, the split-biquaternion gradient $\tilde{\nabla}$, the quaternion conjugate $\tilde{\nabla}^{\natural}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, and the convective derivative $\tilde{D}$ are assumed from the preceding articles.
 
-The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
+The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
 $$
-\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2,
 $$
 
-with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.
+with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quaternions.
 
 ## The Integral of a Split-Biquaternion-Valued Function
 
@@ -93,10 +93,10 @@ and similarly for $v_\mu$. So each component is bounded by $M \cdot \mathrm{vol}
 
 ### The Integral in the Idempotent Basis
 
-Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the integral can be computed in the idempotent basis. Writing $\tilde{F} = \tilde{F}_+ \tilde\Pi_+ + \tilde{F}_- \tilde\Pi_-$ with $\tilde{F}_\pm \in \mathbb{H}$,
+Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the integral can be computed in the idempotent basis. Writing $\tilde{F} = \tilde{F}_+ \tilde\Pi_1 + \tilde{F}_- \tilde\Pi_2$ with $\tilde{F}_\pm \in \mathbb{H}$,
 
 $$
-\int_\Omega \tilde{F} \, dV = \left(\int_\Omega \tilde{F}_+ \, dV\right) \tilde\Pi_+ + \left(\int_\Omega \tilde{F}_- \, dV\right) \tilde\Pi_-,
+\int_\Omega \tilde{F} \, dV = \left(\int_\Omega \tilde{F}_+ \, dV\right) \tilde\Pi_1 + \left(\int_\Omega \tilde{F}_- \, dV\right) \tilde\Pi_2,
 $$
 
 where each of the two integrals is the quaternion-valued integral of the corresponding component. So the integration of split-biquaternion-valued functions reduces to the integration of two quaternion-valued functions, one for each idempotent component.
@@ -363,7 +363,7 @@ Rearranging gives the stated formula.
 
 ### The Cauchy Integral Formula in the Idempotent Basis
 
-In the idempotent basis, the Cauchy integral formula decomposes into two copies of the quaternion Cauchy integral formula. Writing $\tilde{F} = \tilde{F}_+ \tilde\Pi_+ + \tilde{F}_- \tilde\Pi_-$ and $\tilde{G} = \tilde{G}_+ \tilde\Pi_+ + \tilde{G}_- \tilde\Pi_-$,
+In the idempotent basis, the Cauchy integral formula decomposes into two copies of the quaternion Cauchy integral formula. Writing $\tilde{F} = \tilde{F}_+ \tilde\Pi_1 + \tilde{F}_- \tilde\Pi_2$ and $\tilde{G} = \tilde{G}_+ \tilde\Pi_1 + \tilde{G}_- \tilde\Pi_2$,
 
 $$
 \tilde{F}_\pm(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}_\pm(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}_\pm(\tilde{Q}) \, dS(\tilde{Q}) - \frac{1}{2\pi^2} \int_\Omega \tilde{G}_\pm(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}\tilde{F}_\pm)(\tilde{Q}) \, dV(\tilde{Q}),
@@ -448,7 +448,7 @@ for any $\tilde{Q}_0$ outside the singularities.
 In the idempotent basis, the residue decomposes into two quaternion residues:
 
 $$
-\mathrm{Res}(\tilde{F}, \tilde{Q}_0) = \mathrm{Res}(\tilde{F}_+, \tilde{Q}_0) \tilde\Pi_+ + \mathrm{Res}(\tilde{F}_-, \tilde{Q}_0) \tilde\Pi_-,
+\mathrm{Res}(\tilde{F}, \tilde{Q}_0) = \mathrm{Res}(\tilde{F}_+, \tilde{Q}_0) \tilde\Pi_1 + \mathrm{Res}(\tilde{F}_-, \tilde{Q}_0) \tilde\Pi_2,
 $$
 
 where each of the two residues is the quaternion residue of the corresponding component. So the split biquaternion residue theory is the pair of the quaternion residue theories, one for each component.
@@ -518,12 +518,12 @@ The **fundamental solution** of the gradient operator is $\tilde{G}(\tilde{Q}) =
 | $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
-| $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$, $F_\mu = u_\mu + j v_\mu$ | Split complex coefficients and values |
 | ${}^{\natural}, \bar{\cdot}, {}^\dagger, {}^\flat$ | The four conjugations |
 | $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
-| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
+| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
 | $V$ | A four-dimensional real subspace, coordinates $Q_0, \dots, Q_3$ |
 | $\Omega \subset V$ | Domain of integration |
 | $\partial \Omega$ | Boundary of $\Omega$ |

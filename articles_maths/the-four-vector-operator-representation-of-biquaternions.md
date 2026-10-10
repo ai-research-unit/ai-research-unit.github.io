@@ -4,7 +4,7 @@
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_j e_k = -e_k e_j$ for $j \neq k$, and with a central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, written in the four-vector realization as the quadruple $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ of *The Four-Vector Element Representation of Biquaternions*.
 
-That article answers the question *what is* $\tilde{Q}$: it is a quadruple of complex coefficients, with a product rule, four conjugations, six distinguished subspaces and a biquaternion norm. This article answers the question *what does* $\tilde{Q}$ *do*: the element is used as an operator through the Hermitian sandwich
+That article answers the question *what is* $\tilde{Q}$: it is a quadruple of complex coefficients, with a product rule, four conjugations, remarkable subspaces and a biquaternion norm. This article answers the question *what does* $\tilde{Q}$ *do*: the element is used as an operator through the Hermitian sandwich
 
 $$
 \mathrm{H}_{\tilde{Q}}(\tilde U) = \tilde{Q}\,\tilde U\,\tilde{Q}^{*},
@@ -72,7 +72,7 @@ $$
 \bigl(\tilde{Q}\tilde{Q}^{*}\bigr)^i = \overline{Q^0}Q^i - Q^0\overline{Q^i} - (\mathbf{Q}\times(\mathbf{Q})^{\natural})^i .
 $$
 
-The scalar component is the sum of the squared moduli of the four coefficients, a non-negative real that vanishes only for $\tilde{Q} = 0$; it is the value at the operand of the positive general plain sesquilinear form $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})$ of *Introduction to the Six Subspaces*. The vector components are purely imaginary, as the four-vector table of the six subspaces requires of a Hermitian element: the image of the identity is Hermitian for every $\tilde{Q}$, and it is central, hence a multiple of $e_0$, exactly when the vector components vanish.
+The scalar component is the sum of the squared moduli of the four coefficients, a non-negative real that vanishes only for $\tilde{Q} = 0$; it is the value at the operand of the positive general plain sesquilinear form $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})$ of *Introduction to the Remarkable Subspaces*. The vector components are purely imaginary, as the four-vector table of the remarkable subspaces requires of a Hermitian element: the image of the identity is Hermitian for every $\tilde{Q}$, and it is central, hence a multiple of $e_0$, exactly when the vector components vanish.
 
 **Proposition (the image of the vector basis).** For $k = 1,2,3$,
 
@@ -118,7 +118,7 @@ The **centre is not preserved**. Taking $\tilde U = e_0$ gives $\tilde V = \tild
 
 The **vector subspace is not preserved** either. Taking $\tilde U = e_k$ gives an image whose scalar component is displayed above, and that component does not vanish in general.
 
-The **two Hermitian sectors are preserved**. If $\tilde{U}^{*} = \tilde U$ then $(\tilde{Q}\tilde U\tilde{Q}^{*})^{\dagger} = \tilde{Q}\tilde U\tilde{Q}^{*}$, and in coordinates the Hermitian condition on $\tilde U$ is $U^0 \in \mathbb{R}$ and $\mathbf{U} \in i\mathbb{R}^3$, which is a condition on the components of $\tilde U$ alone and is therefore inherited by the image. The same computation with $\tilde{U}^{*} = -\tilde U$ gives the anti-Hermitian sector. The invariant subspaces of the operator are treated in *Biquaternion Rotations and Lorentz Transformations*, and their six-subspace table is not repeated here.
+The **two Hermitian sectors are preserved**. If $\tilde{U}^{*} = \tilde U$ then $(\tilde{Q}\tilde U\tilde{Q}^{*})^{\dagger} = \tilde{Q}\tilde U\tilde{Q}^{*}$, and in coordinates the Hermitian condition on $\tilde U$ is $U^0 \in \mathbb{R}$ and $\mathbf{U} \in i\mathbb{R}^3$, which is a condition on the components of $\tilde U$ alone and is therefore inherited by the image. The same computation with $\tilde{U}^{*} = -\tilde U$ gives the anti-Hermitian sector. The invariant subspaces of the operator are treated in *Biquaternion Rotations and Lorentz Transformations*, and their remarkable-subspace table is not repeated here.
 
 ## The Two Regimes in Coordinates
 

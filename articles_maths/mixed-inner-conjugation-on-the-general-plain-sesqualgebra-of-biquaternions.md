@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and with complex conjugation $\bar{\cdot}$. The two are the $\mathbb{C}$-independent order-two conjugations of the algebra: $\bar{\cdot}$ is the $\mathbb{C}$-antilinear automorphism $i\mapsto-i$, $e_k\mapsto e_k$ which is the **grade involution** of the Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ is the $\mathbb{C}$-antilinear anti-automorphism negating both signs, the map whose fixed space is the Hermitian subspace $\mathbb{M}_+$ and whose form is the positive definite one of the theory (*The Clifford Algebra Representation*, *Introduction to the Six Subspaces*).
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and with complex conjugation $\bar{\cdot}$. The two are the $\mathbb{C}$-independent order-two conjugations of the algebra: $\bar{\cdot}$ is the $\mathbb{C}$-antilinear automorphism $i\mapsto-i$, $e_k\mapsto e_k$ which is the **grade involution** of the Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ is the $\mathbb{C}$-antilinear anti-automorphism negating both signs, the map whose fixed space is the Hermitian subspace $\mathbb{M}_+$ and whose form is the positive definite one of the theory (*The Clifford Algebra Representation*, *Introduction to the Remarkable Subspaces*).
 
 An element $\tilde{Q}$ of the algebra acts on the algebra in four ways, according to whether the **left** factor is twisted by $\bar{\cdot}$ and whether the **right** factor is inverted or dagged:
 

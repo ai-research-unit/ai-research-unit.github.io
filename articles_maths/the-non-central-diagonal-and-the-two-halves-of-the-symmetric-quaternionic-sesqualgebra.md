@@ -176,4 +176,4 @@ The diagonal of the block is the real element $\tilde Q\star\tilde Q=K(\tilde Q,
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form $K$ appearing as the scalar part of the diagonal.
 - *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the isotropic elements, of which the square-zero family is a part.
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm $N$.
-- *The Six Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the closure of the six subspaces under the product.
+- *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the closure of the remarkable subspaces under the product.

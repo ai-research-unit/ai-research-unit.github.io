@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The complex algebra $\mathbb{C}$, regarded as a two-dimensional algebra over $\mathbb{R}$, carries exactly one nontrivial involution, complex conjugation, and beside it the identity. Each of the two involutions determines a fixed subspace and an anti-fixed subspace, and the algebra splits as their direct sum. The whole of this article is the analysis of those subspaces: their bases, their dimensions, their closure properties, the quadratic form they inherit, and the sense in which they are the one-dimensional analogue of the six-subspace lattice of the biquaternion algebra $\mathbb{B}$.
+The complex algebra $\mathbb{C}$, regarded as a two-dimensional algebra over $\mathbb{R}$, carries exactly one nontrivial involution, complex conjugation, and beside it the identity. Each of the two involutions determines a fixed subspace and an anti-fixed subspace, and the algebra splits as their direct sum. The whole of this article is the analysis of those subspaces: their bases, their dimensions, their closure properties, the quadratic form they inherit, and the sense in which they are the one-dimensional analogue of the remarkable-subspace lattice of the biquaternion algebra $\mathbb{B}$.
 
-The algebra and its conventions are those of the companion article *Complex Algebra*: the basis is $1$, $i$ with $i^2 = -1$, a general element is $A = a + i a'$, and the norm is $N(A) = A\bar{A} = a^2 + a'^2$. The algebra is a field, so it has no proper ideals and no zero divisors; the biquaternion algebra $\mathbb{B}$ is the four-dimensional complex algebra whose six distinguished subspaces are the model this article is measured against, and the difference between the two lattices is the point. The two involutions are treated in the article *Complex Automorphisms and Derivations*, where they are the automorphism group of the algebra; here they are used only to cut the algebra into subspaces.
+The algebra and its conventions are those of the companion article *Complex Algebra*: the basis is $1$, $i$ with $i^2 = -1$, a general element is $A = a + i a'$, and the norm is $N(A) = A\bar{A} = a^2 + a'^2$. The algebra is a field, so it has no proper ideals and no zero divisors; the biquaternion algebra $\mathbb{B}$ is the four-dimensional complex algebra whose remarkable subspaces are the model this article is measured against, and the difference between the two lattices is the point. The two involutions are treated in the article *Complex Automorphisms and Derivations*, where they are the automorphism group of the algebra; here they are used only to cut the algebra into subspaces.
 
 ## The Involutions and the Two Decompositions
 
@@ -89,7 +89,7 @@ $$
 \mathbb{R}_{\mathbb{C}} = \langle 1 \rangle, \qquad i\mathbb{R}_{\mathbb{C}} = \langle i \rangle,
 $$
 
-and these are the **coordinate blocks** of $\mathbb{C}$. There are two of them, each of dimension one, and each of the two subspaces is a single block; no subspace of the lattice is a sum of two blocks. This is the structural difference from the biquaternion algebra, whose eight real coordinates form four blocks $\langle e_0 \rangle$, $\langle e_1, e_2, e_3 \rangle$, $\langle i e_1, i e_2, i e_3 \rangle$, $\langle i e_0 \rangle$ from which the six subspaces are assembled.
+and these are the **coordinate blocks** of $\mathbb{C}$. There are two of them, each of dimension one, and each of the two subspaces is a single block; no subspace of the lattice is a sum of two blocks. This is the structural difference from the biquaternion algebra, whose eight real coordinates form four blocks $\langle e_0 \rangle$, $\langle e_1, e_2, e_3 \rangle$, $\langle i e_1, i e_2, i e_3 \rangle$, $\langle i e_0 \rangle$ from which the remarkable subspaces are assembled.
 
 The block description makes the intersection and sum arithmetic below immediate: two subspaces meet nontrivially only if they share a block, and here the only shared blocks are the blocks they are.
 
@@ -190,7 +190,7 @@ The complex algebra carries exactly one nontrivial involution, complex conjugati
 
 The real subspace is closed under multiplication and is a field isomorphic to $\mathbb{R}$; the imaginary subspace is not closed, since the product of two of its elements is real, $(i a')(i b') = -a' b'$. The two subspaces meet only in the origin and together span the algebra. They are the two coordinate blocks of the real basis, and multiplication by $i$ exchanges them.
 
-The lattice is the two-member shadow of the six-subspace lattice of the biquaternion algebra: the two blocks $\langle 1 \rangle$ and $\langle i \rangle$ of the two coordinates replace the four blocks of the eight real coordinates of $\mathbb{B}$, and the four involutions of $\mathbb{B}$ collapse to the single nontrivial involution of $\mathbb{C}$. The commutator bracket vanishes identically because the algebra is commutative, so the vector subspace of $\mathbb{B}$ and its Lie-algebra structure have no analogue here; that absent slot is the commutativity of the field.
+The lattice is the two-member shadow of the remarkable-subspace lattice of the biquaternion algebra: the two blocks $\langle 1 \rangle$ and $\langle i \rangle$ of the two coordinates replace the four blocks of the eight real coordinates of $\mathbb{B}$, and the four involutions of $\mathbb{B}$ collapse to the single nontrivial involution of $\mathbb{C}$. The commutator bracket vanishes identically because the algebra is commutative, so the vector subspace of $\mathbb{B}$ and its Lie-algebra structure have no analogue here; that absent slot is the commutativity of the field.
 
 ## Summary of Notation
 

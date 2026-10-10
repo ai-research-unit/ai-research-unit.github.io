@@ -19,7 +19,7 @@ Each coefficient splits as $Q_\mu = q_\mu + j q'_\mu$ with real $q_\mu, q'_\mu$,
 
 ### Real and Split-Imaginary Parts of the Components
 
-Writing each coefficient through the idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ gives $Q_\mu = Q_{\mu +} \tilde\Pi_+ + Q_{\mu -} \tilde\Pi_-$ with
+Writing each coefficient through the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ gives $Q_\mu = Q_{\mu +} \tilde\Pi_1 + Q_{\mu -} \tilde\Pi_2$ with
 
 $$
 Q_{\mu +} = q_\mu + q'_\mu , \qquad Q_{\mu -} = q_\mu - q'_\mu ,
@@ -123,7 +123,7 @@ $$
 \sum_\mu (q_\mu + q'_\mu)^2 \neq 0 \quad \text{and} \quad \sum_\mu (q_\mu - q'_\mu)^2 \neq 0 .
 $$
 
-**Proof.** Under the Peirce decomposition $N(\tilde{Q}) = N_+ \tilde\Pi_+ + N_- \tilde\Pi_-$ with $N_\pm = \sum_\mu (q_\mu \pm q'_\mu)^2$, the number $N(\tilde{Q})$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ exactly when both components are nonzero; since each is a sum of squares of reals, this means each is strictly positive.
+**Proof.** Under the Peirce decomposition $N(\tilde{Q}) = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \sum_\mu (q_\mu \pm q'_\mu)^2$, the number $N(\tilde{Q})$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ exactly when both components are nonzero; since each is a sum of squares of reals, this means each is strictly positive.
 
 The criterion shows directly that the **zero divisors** are the elements whose split-biquaternion norm vanishes in exactly one of the two idempotent components, that is the elements with $\sum_\mu (q_\mu+q'_\mu)^2 = 0$ or $\sum_\mu (q_\mu-q'_\mu)^2 = 0$, which are the two four-dimensional subspaces $Z_\pm$ of *Split-Biquaternion Zero Divisors*. In the four-vector picture the zero divisors are thus the coefficient quadruples lying in one of the two real four-dimensional subspaces defined by $\sum_\mu(q_\mu\pm q'_\mu)^2 = 0$.
 

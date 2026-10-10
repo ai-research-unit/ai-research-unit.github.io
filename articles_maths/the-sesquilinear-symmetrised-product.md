@@ -186,7 +186,7 @@ For $A = \mathbb{H}$ with the quaternion conjugation over the datum $(\mathbb{R}
 
 ### The Biquaternion Case
 
-For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the symmetrised star-product is the Jordan product of the biquaternion block, and the Hermitian part it fills is a Jordan algebra of degree two, read in *The 12 Products of the Biquaternion Complex Space* and *The Six Subspaces and the Four General Products*. The biquaternion layer is the worked case in which all of the operations of this article, the product, the derived product, the symmetrisation and the difference bracket, are computed on a basis of eight elements.
+For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the symmetrised star-product is the Jordan product of the biquaternion block, and the Hermitian part it fills is a Jordan algebra of degree two, read in *The 12 Products of the Biquaternion Complex Space* and *Remarkable Subspaces and the Four General Products*. The biquaternion layer is the worked case in which all of the operations of this article, the product, the derived product, the symmetrisation and the difference bracket, are computed on a basis of eight elements.
 
 ### The Other Exchange, and the Other Symmetric Half
 

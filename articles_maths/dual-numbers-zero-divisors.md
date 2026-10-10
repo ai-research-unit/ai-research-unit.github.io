@@ -175,7 +175,7 @@ $$
 | $R_{\mathbb{D}'}$ | $a$, $a \in R$ | $a$ | none |
 | $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ | $\varepsilon a'$, $a' \in R$ | $0$ | all $a' \neq 0$ |
 
-So the zero divisors are concentrated in one of the two eigenspaces of dual conjugation and absent from the other. There is no intermediate distribution: unlike the biquaternion case, where the zero divisors are spread over six distinguished subspaces of dimensions three, four and six and a generic zero divisor lies in none of them, here every zero divisor lies in the single infinitesimal submodule.
+So the zero divisors are concentrated in one of the two eigenspaces of dual conjugation and absent from the other. There is no intermediate distribution: unlike the biquaternion case, where the zero divisors are spread over remarkable subspaces of dimensions three, four and six and a generic zero divisor lies in none of them, here every zero divisor lies in the single infinitesimal submodule.
 
 ## Comparison with the Split Complex and Split Biquaternion Cases
 

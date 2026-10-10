@@ -13,7 +13,7 @@ That scalar part is a nonnegative real number, and it vanishes only at $\tilde Q
 
 The cone is the biquaternion instance of the algebraic positive cone of *Hermitian Squares and the Algebraic Positive Cone*, the cone of the sums of the squares $x^{*}x$ of an involutive algebra; the sesquilinear square is the derived square $x\star x=xx^{*}$ of that article, so the two cones are the same set. In the biquaternion case the second square $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ also carries the name, and the caution is the one *Introduction to the General Plain Sesqualgebra of Biquaternions* records: the two squares agree on the real subspace and differ elsewhere, and only the first one is the square of the multiplication.
 
-The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*, whose §*The Squares and the Positive Cone* states the form of the square and its scalar part, and of *Sesqualgebras*. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, the zero divisors of the algebra are *Biquaternion Zero Divisors*, and the six distinguished subspaces against which the cone is placed are *The Six Subspaces and the Four General Products*. The general theory that the article reads is *Hermitian Squares and the Algebraic Positive Cone*, and the order it defines is the preorder of that article on the biquaternion algebra.
+The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*, whose §*The Squares and the Positive Cone* states the form of the square and its scalar part, and of *Sesqualgebras*. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, the zero divisors of the algebra are *Biquaternion Zero Divisors*, and the remarkable subspaces against which the cone is placed are *Remarkable Subspaces and the Four General Products*. The general theory that the article reads is *Hermitian Squares and the Algebraic Positive Cone*, and the order it defines is the preorder of that article on the biquaternion algebra.
 
 ## The Square of an Element
 
@@ -207,9 +207,9 @@ and the skew-Hermitian elements are exactly the elements of the form $\tilde Q-\
 
 **Remark.** The cone is a cone of the positive half and crosses the negative half only at the origin, which is the element-level form of the properness proved above.
 
-### The Cone Among the Six Subspaces
+### The Cone Among the Remarkable Subspaces
 
-The six distinguished subspaces of *The Six Subspaces and the Four General Products* place the cone as follows: it lies in the Hermitian subspace $\mathbb{M}_+$, its intersection with the centre is the nonnegative real multiples of the unit, and it meets the anti-Hermitian subspace only at the origin. The scalar part and the trace are the two readings of the same projection, and the cone is the part of $\mathbb{M}_+$ on which they are nonnegative.
+The remarkable subspaces of *Remarkable Subspaces and the Four General Products* place the cone as follows: it lies in the Hermitian subspace $\mathbb{M}_+$, its intersection with the centre is the nonnegative real multiples of the unit, and it meets the anti-Hermitian subspace only at the origin. The scalar part and the trace are the two readings of the same projection, and the cone is the part of $\mathbb{M}_+$ on which they are nonnegative.
 
 | set | description | the cone inside it |
 |---|---|---|

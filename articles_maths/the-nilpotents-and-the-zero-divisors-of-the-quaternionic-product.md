@@ -55,11 +55,11 @@ The square-zero elements of $\star$ are therefore $0$ together with the whole ze
 
 This is the sharpest contrast of the group with the associative multiplication. There the square is $\tilde Q\tilde Q = Q_0^2e_0 + 2Q_0\mathbf Q + \mathbf Q^2$, and its vanishing forces $Q_0 = 0$ and $(\mathbf Q,\mathbf Q) = 0$: the square-zero elements of the plain product are the **pure** isotropic vectors, a real cone of dimension four, and they are a proper subset of the zero divisors (*Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*). Reading the first slot through ${}^{\natural}$ removes the scalar term from the square — the two copies of $Q_0\mathbf Q$ cancel and the scalar part becomes the signless sum — and the square-zero set expands to the whole zero-divisor cone.
 
-**Example.** The Hermitian projector $\tilde\Pi_+(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ over a real unit vector $\hat\mu$ has norm
+**Example.** The Hermitian projector $\tilde\Pi_1(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ over a real unit vector $\hat\mu$ has norm
 $$
-N(\tilde\Pi_+) = \tfrac14\bigl(1+(i\hat\mu,i\hat\mu)\bigr) = \tfrac14\bigl(1-(\hat\mu,\hat\mu)\bigr) = 0 ,
+N(\tilde\Pi_1) = \tfrac14\bigl(1+(i\hat\mu,i\hat\mu)\bigr) = \tfrac14\bigl(1-(\hat\mu,\hat\mu)\bigr) = 0 ,
 $$
-in agreement with the square $\tilde\Pi_+\star\tilde\Pi_+ = 0$ of the previous article. It is a zero divisor of the algebra, and its plain square is the projector itself; the two products see the same element as a projector and as a nilpotent.
+in agreement with the square $\tilde\Pi_1\star\tilde\Pi_1 = 0$ of the previous article. It is a zero divisor of the algebra, and its plain square is the projector itself; the two products see the same element as a projector and as a nilpotent.
 
 ## The Cone of Norm Zero
 
@@ -176,7 +176,7 @@ In the general quaternionic bilinear product the square of an element is the cen
 | $N(\tilde Q) = \tilde Q^{\natural}\tilde Q = \sum_\mu Q_\mu^2$ | the norm of the algebra |
 | $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of this group |
 | $C = \{\tilde Q : N(\tilde Q) = 0\}$ | the nilpotent cone, the square-zero set |
-| $\tilde\Pi_+(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ | the Hermitian projector over a real unit vector $\hat\mu$ |
+| $\tilde\Pi_1(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ | the Hermitian projector over a real unit vector $\hat\mu$ |
 | $\mathrm{Ann}_\ell(\tilde Q)$, $\mathrm{Ann}_r(\tilde Q)$ | the left and the right annihilator of $\tilde Q$ for the product $\star$ |
 | $\mathrm{Ann}(\tilde Q)$ | their common value, the two-sided annihilator |
 

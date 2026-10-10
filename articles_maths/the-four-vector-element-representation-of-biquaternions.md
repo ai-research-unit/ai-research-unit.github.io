@@ -9,11 +9,11 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3 = \sum_{\mu = 0}^{3} Q_\mu e_\mu, \qquad Q_\mu \in \mathbb{C}.
 $$
 
-The algebra, its four conjugations, its six distinguished subspaces and its biquaternion norm are those of the companion article *Biquaternions as a Vector Space over $\mathbb{C}$*, and nothing of that structure is re-derived here except where the coordinate realization requires it.
+The algebra, its four conjugations, its remarkable subspaces and its biquaternion norm are those of the companion article *Biquaternions as a Vector Space over $\mathbb{C}$*, and nothing of that structure is re-derived here except where the coordinate realization requires it.
 
 This article presents the **four-vector realization** of $\mathbb{B}$: the biquaternion read off as its list of four complex coefficients. The word *representation* is used here in the sense of a concrete realization of the algebra as computable objects, the sense in which the companion article *The Clifford Algebra Representation* uses it, and not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The technical sense is the subject of *Modules over the General Plain Algebra of Biquaternions*. The distinction matters for the articles of this group: the present article is a realization only, because it supplies a space and no action, while the companion articles *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, below this article, are realizations and representations at once, because each comes with an action on a vector space. This article supplies the coordinate space on which the operator of the third article is written.
 
-The article owns the coefficient space, the column and the row, the component form of the product, the conjugations in coordinates, the six distinguished subspaces as coordinate conditions, and the biquaternion norm with its two real restrictions. It deliberately does not treat the matrix of multiplication on this space, which belongs to *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, below this article; it does not treat the polar forms, which are the subject of *Biquaternion Partial Polar Element Representations*; and it introduces no physical vocabulary. The components below are complex numbers, the scalar and vector components are named for the algebra, and the words *time* and *space* would name an analogy with the four-vector of a physical theory and nothing more.
+The article owns the coefficient space, the column and the row, the component form of the product, the conjugations in coordinates, the remarkable subspaces as coordinate conditions, and the biquaternion norm with its two real restrictions. It deliberately does not treat the matrix of multiplication on this space, which belongs to *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, below this article; it does not treat the polar forms, which are the subject of *Biquaternion Partial Polar Element Representations*; and it introduces no physical vocabulary. The components below are complex numbers, the scalar and vector components are named for the algebra, and the words *time* and *space* would name an analogy with the four-vector of a physical theory and nothing more.
 
 ## The Coefficient Space
 
@@ -35,7 +35,7 @@ The coefficient space $\mathbb{C}^4$ is **not** the simple module of $\mathbb{B}
 
 ### Real and Imaginary Parts of the Components
 
-Each complex component splits into its real and imaginary parts, $Q^\mu = a^\mu + i b^\mu$ with $a^\mu, b^\mu \in \mathbb{R}$, and the real coordinates $a^0, a^1, a^2, a^3, b^0, b^1, b^2, b^3$ identify the coefficient space with $\mathbb{R}^8$. This is the coordinate form of the real vector space underlying $\mathbb{B}$. Two of the six distinguished subspaces are read directly from the split: the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the set of quadruples with $b^\mu = 0$, and its multiple $i\mathbb{H}_{\mathbb{B}}$ is the set with $a^\mu = 0$. The other four subspaces mix the real and imaginary parts, because the involutions that define them combine with the scalar imaginary in different ways.
+Each complex component splits into its real and imaginary parts, $Q^\mu = a^\mu + i b^\mu$ with $a^\mu, b^\mu \in \mathbb{R}$, and the real coordinates $a^0, a^1, a^2, a^3, b^0, b^1, b^2, b^3$ identify the coefficient space with $\mathbb{R}^8$. This is the coordinate form of the real vector space underlying $\mathbb{B}$. Two of the remarkable subspaces are read directly from the split: the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the set of quadruples with $b^\mu = 0$, and its multiple $i\mathbb{H}_{\mathbb{B}}$ is the set with $a^\mu = 0$. The other four subspaces mix the real and imaginary parts, because the involutions that define them combine with the scalar imaginary in different ways.
 
 The decomposition $\tilde{Q} = \tilde{Q}_r + i\tilde{Q}_i$ with $\tilde{Q}_r = \sum_\mu a^\mu e_\mu$ and $\tilde{Q}_i = \sum_\mu b^\mu e_\mu$ both in $\mathbb{H}_{\mathbb{B}}$ is the decomposition into the quaternion and anti-quaternion parts, and it is the real-linear splitting $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ of the coordinate space. The biquaternion norm does not decompose over the real coordinates: its real part is $\sum_\mu \bigl( (a^\mu)^2 - (b^\mu)^2 \bigr)$ and its imaginary part is $2\sum_\mu a^\mu b^\mu$, both real quadratic forms in eight variables, and the squared Euclidean length of the quadruple is $\sum_\mu |Q^\mu|^2 = \sum_\mu \bigl( (a^\mu)^2 + (b^\mu)^2 \bigr)$, a positive definite quadratic form on $\mathbb{R}^8$. The definite form is the scalar part of the general plain sesquilinear form of the biquaternion, treated in *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, below this article.
 
@@ -152,11 +152,11 @@ $$
 
 and each is an involution. The Hermitian part $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*})$ has four-vector $(2, \, -i, \, 0, \, i)$, a real scalar component and purely imaginary vector components, as the table of subspaces requires.
 
-## The Six Distinguished Subspaces
+## Remarkable Subspaces
 
-Each involution cuts out a fixed subspace and an anti-fixed subspace, and the three involutions together produce six real subspaces of $\mathbb{B}$. Each of the six has its own article in the **Focus on Subspaces** group of the series, where its algebra, norm and intersections are developed; the present section records only the coordinate form, which is what the four-vector reading makes visible.
+Each involution cuts out a fixed subspace and an anti-fixed subspace, and the three involutions together produce the remarkable real subspaces of $\mathbb{B}$. Each of the remarkable subspaces has its own article in the **Focus on Subspaces** group of the series, where its algebra, norm and intersections are developed; the present section records only the coordinate form, which is what the four-vector reading makes visible.
 
-**Definition.** The six **distinguished subspaces** are
+**Definition.** The **remarkable subspaces** are
 
 $$
 \mathbb{C}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^{\natural} = \tilde{Q}\}, \qquad \mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : \tilde{Q}^{\natural} = -\tilde{Q}\},
@@ -172,7 +172,7 @@ $$
 
 The scalar subspace $\mathbb{C}_{\mathbb{B}}$ is the centre, $\mathrm{Vect}(\mathbb{B})$ is the vector subspace, $\mathbb{H}_{\mathbb{B}}$ is the subspace of real quaternions and $i\mathbb{H}_{\mathbb{B}}$ its multiple by the scalar imaginary.
 
-**Proposition (coordinate conditions).** In terms of the four-vector $Q^\mu$, the six subspaces are characterized as follows.
+**Proposition (coordinate conditions).** In terms of the four-vector $Q^\mu$, the remarkable subspaces are characterized as follows.
 
 | Subspace | Coordinate condition | Name |
 |---|---|---|
@@ -185,7 +185,7 @@ The scalar subspace $\mathbb{C}_{\mathbb{B}}$ is the centre, $\mathrm{Vect}(\mat
 
 **Proof.** The conditions are the componentwise reading of the four displayed conjugation rules of the previous section. For $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$, quaternion conjugation fixes the scalar component and negates each vector component. For $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, complex conjugation fixes or negates each coefficient according to whether it is real or purely imaginary. For $\mathbb{M}_+$ and $\mathbb{M}_-$, Hermitian conjugation conjugates and then negates the vector components, so the fixed vectors have a real scalar component and purely imaginary vector components, and the anti-fixed vectors have a purely imaginary scalar component and real vector components.
 
-The table shows that the three decompositions of $\mathbb{B}$ recorded in *Decompositions Along the Six Subspaces* read in coordinates as the splitting of a quadruple into its real and imaginary parts in each of three ways:
+The table shows that the three decompositions of $\mathbb{B}$ recorded in *Decompositions Along the Remarkable Subspaces* read in coordinates as the splitting of a quadruple into its real and imaginary parts in each of three ways:
 
 $$
 \mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}) = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}} = \mathbb{M}_+ \oplus \mathbb{M}_- .
@@ -263,7 +263,7 @@ and multiplication by $i$ reverses its sign, $\langle i\tilde{Q},i\tilde{Q}\rang
 
 The four-vector realization reads a biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ as its quadruple of complex coefficients $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$, with $Q^0 = Q_0$ and $(Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3)$. It is a $\mathbb{C}$-linear isomorphism onto $\mathbb{C}^4$, and it supplies the space on which the operator of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* acts. The column is the transcribed form of the quadruple, the row is the dual carrying the right action and is not a further representation, and the transpose that relates the two is dressed with quaternion conjugation.
 
-The product in components has scalar part $Q^0 R^0 - \sum_k Q^k R^k$ and vector part $Q^0 R^i + R^0 Q^i + \sum_{j,k} \epsilon^{ijk} Q^j R^k$; the Levi-Civita term is the only trace of non-commutativity. The three conjugations act by negating the vector components, conjugating every component, and doing both; the six distinguished subspaces are the resulting coordinate conditions, three fixed spaces and three anti-fixed spaces. The biquaternion norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2$, with all four signs positive because each quaternion unit squares to $-e_0$ and the cross terms cancel; it is a complex quadratic form in general, and it becomes a real indefinite form of signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$, the two exchanged by $\langle i\tilde{Q},i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
+The product in components has scalar part $Q^0 R^0 - \sum_k Q^k R^k$ and vector part $Q^0 R^i + R^0 Q^i + \sum_{j,k} \epsilon^{ijk} Q^j R^k$; the Levi-Civita term is the only trace of non-commutativity. The three conjugations act by negating the vector components, conjugating every component, and doing both; the remarkable subspaces are the resulting coordinate conditions, three fixed spaces and three anti-fixed spaces. The biquaternion norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2$, with all four signs positive because each quaternion unit squares to $-e_0$ and the cross terms cancel; it is a complex quadratic form in general, and it becomes a real indefinite form of signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$, the two exchanged by $\langle i\tilde{Q},i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
 
 ## Summary of Notation
 
@@ -282,7 +282,7 @@ The product in components has scalar part $Q^0 R^0 - \sum_k Q^k R^k$ and vector 
 | $\bar{\cdot}$ | Complex conjugation, conjugates every component |
 | ${}^{*} = {}^{\natural} \circ \bar{\cdot}$ | Hermitian conjugation |
 | ${}^{\flat} = -{}^{*}$ | Anti-Hermitian conjugation |
-| $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The six distinguished subspaces |
+| $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The remarkable subspaces |
 | $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm, multiplicative |
 | $O(1,3)$, $O(3,1)$ | Orthogonal groups of the restrictions to $\mathbb{M}_+$, $\mathbb{M}_-$ |
 

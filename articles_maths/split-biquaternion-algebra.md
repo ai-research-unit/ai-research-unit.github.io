@@ -5,7 +5,7 @@
 
 This article introduces the split biquaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the natural conjugations.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$.
 
 Throughout this article, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, and the split complex unit is written $j$, with $j^2 = +1$. The unit $j$ commutes with the quaternion units: $j e_k = e_k j$ for $k = 0, 1, 2, 3$.
 
@@ -74,29 +74,29 @@ The isomorphism is given by the **idempotent decomposition**, which is the most 
 Define the idempotents
 
 $$
-\tilde\Pi_+ = \tfrac{1}{2}(1 + j), \qquad \tilde\Pi_- = \tfrac{1}{2}(1 - j).
+\tilde\Pi_1 = \tfrac{1}{2}(1 + j), \qquad \tilde\Pi_2 = \tfrac{1}{2}(1 - j).
 $$
 
 They satisfy
 
 $$
-\tilde\Pi_+^2 = \tilde\Pi_+, \qquad \tilde\Pi_-^2 = \tilde\Pi_-, \qquad \tilde\Pi_+ \tilde\Pi_- = \tilde\Pi_- \tilde\Pi_+ = 0, \qquad \tilde\Pi_+ + \tilde\Pi_- = 1.
+\tilde\Pi_1^2 = \tilde\Pi_1, \qquad \tilde\Pi_2^2 = \tilde\Pi_2, \qquad \tilde\Pi_1 \tilde\Pi_2 = \tilde\Pi_2 \tilde\Pi_1 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = 1.
 $$
 
 Every split biquaternion is written uniquely in the idempotent basis as
 
 $$
-\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2,
 $$
 
 where $\tilde{Q}_\pm \in \mathbb{H}$ are ordinary quaternions, given by
 
 $$
-\tilde{Q}_+ = \tilde{Q} \tilde\Pi_+ = Q_0' + Q_1' e_1 + Q_2' e_2 + Q_3' e_3,
+\tilde{Q}_+ = \tilde{Q} \tilde\Pi_1 = Q_0' + Q_1' e_1 + Q_2' e_2 + Q_3' e_3,
 $$
 
 $$
-\tilde{Q}_- = \tilde{Q} \tilde\Pi_- = Q_0'' + Q_1'' e_1 + Q_2'' e_2 + Q_3'' e_3,
+\tilde{Q}_- = \tilde{Q} \tilde\Pi_2 = Q_0'' + Q_1'' e_1 + Q_2'' e_2 + Q_3'' e_3,
 $$
 
 with real coefficients $Q_\mu', Q_\mu'' \in \mathbb{R}$.
@@ -109,7 +109,7 @@ $$
 
 is an algebra isomorphism, where the multiplication on $\mathbb{H} \oplus \mathbb{H}$ is componentwise. This is the **idempotent decomposition** of the split biquaternion algebra.
 
-The isomorphism is the reason the algebra is semisimple. It is not simple, because the two summands $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ are nontrivial two-sided ideals.
+The isomorphism is the reason the algebra is semisimple. It is not simple, because the two summands $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ are nontrivial two-sided ideals.
 
 ### The Clifford Structure
 
@@ -149,7 +149,7 @@ $$
 
 which is central with square $+1$; the Clifford idempotents $\tfrac12(1 \pm E_1E_2E_3) = \tfrac12(1 \mp j)$ are the idempotents $\tilde\Pi_\mp$ of the idempotent decomposition, with the index reversed.
 
-*Proof.* The monomials are the eight elements $\tilde\Pi_\pm$ times the quaternion basis and are independent; the product is immediate from $j^2=1$, $e_1e_2=e_3$ and $e_3^2=-1$. $\square$
+*Proof.* The monomials are the eight elements $\tilde\Pi_{1,2}$ times the quaternion basis and are independent; the product is immediate from $j^2=1$, $e_1e_2=e_3$ and $e_3^2=-1$. $\square$
 
 **Proposition (the complexification).** The complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}$ is the complex Clifford algebra
 
@@ -360,18 +360,18 @@ The idempotent decomposition is the second natural decomposition of $\mathbb{H}_
 Every split biquaternion is written uniquely as
 
 $$
-\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2,
 $$
 
-where $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ are the idempotents, and $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$.
+where $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are the idempotents, and $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$.
 
 This gives the direct sum decomposition
 
 $$
-\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-,
+\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2,
 $$
 
-where $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ are the two ideals of $\mathbb{H}_{\mathbb{D}}$, each isomorphic to $\mathbb{H}$. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{H}_{\mathbb{D}}$ of real dimension 8.
+where $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ are the two ideals of $\mathbb{H}_{\mathbb{D}}$, each isomorphic to $\mathbb{H}$. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{H}_{\mathbb{D}}$ of real dimension 8.
 
 The isomorphism
 
@@ -407,7 +407,7 @@ where $\mathbb{M}_+$ is the Hermitian subspace and $\mathbb{M}_-$ is the anti-He
 
 The quaternion decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \oplus j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+ \oplus \mathbb{M}_-$ are two different decompositions of the same eight-dimensional real vector space. They are associated with two different involutions: the quaternion decomposition is associated with the split complex conjugation $\bar{\cdot}$, and the Hermitian decomposition is associated with the Hermitian conjugation ${}^{*}$.
 
-The two decompositions are related by multiplication by the split complex unit $j$, which maps $\mathbb{M}_+$ to $\mathbb{M}_-$ and vice versa. The idempotent decomposition is a third decomposition, associated with the idempotents $\tilde\Pi_\pm$, and it is the one that reveals the semisimple structure of the algebra.
+The two decompositions are related by multiplication by the split complex unit $j$, which maps $\mathbb{M}_+$ to $\mathbb{M}_-$ and vice versa. The idempotent decomposition is a third decomposition, associated with the idempotents $\tilde\Pi_{1,2}$, and it is the one that reveals the semisimple structure of the algebra.
 
 ## The Lie Algebra Structure
 
@@ -423,11 +423,11 @@ The Lie algebra structure of $\mathbb{H}_{\mathbb{D}}$ is the direct sum of two 
 
 The split biquaternion algebra is the tensor product $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the split complex algebra and the quaternion algebra. It is an eight-dimensional real algebra, non-commutative and associative, with zero divisors. It is not a division algebra, and it is not simple, but it is semisimple.
 
-The algebra is isomorphic to the direct sum $\mathbb{H} \oplus \mathbb{H}$ via the idempotent decomposition $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$, where $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ are the idempotents of the split complex algebra. This is the most important structural fact about the algebra.
+The algebra is isomorphic to the direct sum $\mathbb{H} \oplus \mathbb{H}$ via the idempotent decomposition $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$, where $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are the idempotents of the split complex algebra. This is the most important structural fact about the algebra.
 
 There are four natural conjugations: quaternion conjugation, split complex conjugation, Hermitian conjugation, and anti-Hermitian conjugation. Each has a fixed-point set, which is a four-dimensional real subspace (or two-dimensional in the case of the split complex subspace). The four subspaces are the split complex subspace, the quaternion subspace, the Hermitian subspace, and the anti-Hermitian subspace.
 
-There are three natural decompositions of the algebra: the quaternion decomposition $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \oplus j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the idempotent decomposition $\mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$, and the Hermitian decomposition $\mathbb{M}_+ \oplus \mathbb{M}_-$.
+There are three natural decompositions of the algebra: the quaternion decomposition $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \oplus j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the idempotent decomposition $\mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$, and the Hermitian decomposition $\mathbb{M}_+ \oplus \mathbb{M}_-$.
 
 The quadratic form, the inner product, the norm and the Euclidean norm are a form and a distance; they are developed in *Split-Biquaternion Norm and Invertibility*, where the invertibility criterion and the group of units are also established.
 
@@ -441,8 +441,8 @@ The quadratic form, the inner product, the norm and the Euclidean norm are a for
 | $e_0 = 1$ | Identity |
 | $e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
 | $j$ | Split complex unit, $j^2 = +1$, commutes with $e_k$ |
-| $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
-| $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
+| $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
+| $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
 | $Q_0$ | Split scalar part |
@@ -456,8 +456,8 @@ The quadratic form, the inner product, the norm and the Euclidean norm are a for
 | $\mathbb{M}_+$ | Hermitian subspace |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace |
 | $\tilde{Q}_{\mathrm{H}}, \tilde{Q}_{\mathrm{A}}$ | Hermitian and anti-Hermitian parts of $\tilde{Q}$ |
-| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components of $\tilde{Q}$, in $\mathbb{H}$ |
-| $\mathbb{H} \tilde\Pi_+, \mathbb{H} \tilde\Pi_-$ | Idempotent ideals |
+| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components of $\tilde{Q}$, in $\mathbb{H}$ |
+| $\mathbb{H} \tilde\Pi_1, \mathbb{H} \tilde\Pi_2$ | Idempotent ideals |
 
 ## Further Reading
 

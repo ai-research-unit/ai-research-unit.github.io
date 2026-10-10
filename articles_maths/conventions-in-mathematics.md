@@ -146,13 +146,23 @@ The dagger is the **general adjoint**: it acts on an operator and not on an elem
 
 ### The idempotent convention
 
-The convention above fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the corpus uses it throughout.
+The convention of *The element and its coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the corpus uses it throughout.
 
 An **idempotent** of the algebra is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$; a **projector** is a Hermitian idempotent, $\tilde\Pi^{*} = \tilde\Pi$, and the rank-one projectors of $\mathbb{M}_+$, the Hermitian subspace, are the **pure states**,
 
 $$
-\tilde\Pi_\pm(\hat\mu) = \tfrac{1}{2}\bigl(e_0 \pm i\,\hat\mu\bigr), \qquad \hat\mu \in \mathbb{R}^3,\ |\hat\mu| = 1 .
+\tilde\Pi_{1,2}(\hat\mu) = \tfrac{1}{2}\bigl(e_0 \pm i\,\hat\mu\bigr), \qquad \hat\mu \in \mathbb{R}^3,\ |\hat\mu| = 1 .
 $$
+
+The standard pair of the algebra is
+
+$$
+\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3), \qquad \tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3), \qquad \tilde\Pi_1 + \tilde\Pi_2 = e_0, \qquad \tilde\Pi_1\tilde\Pi_2 = 0 ,
+$$
+
+and the two nilpotent matrix units of its Peirce decomposition are $\tilde R = \tfrac12(ie_1 - e_2)$ and $\tilde T = \tfrac12(ie_1 + e_2)$. The lower-case letters $p, q$ for the standard pair are retired, and a minimal left ideal is written $\mathbb{B}\tilde\Pi_1$ and never $\mathbb{B}p$; the classification, the Peirce decomposition and the basis $\{\tilde\Pi_1, \tilde T\}$ are those of *Biquaternion Idempotents and Projections* and *Biquaternion Ideals and Peirce Decomposition*.
+
+The family $\tilde\Pi_{1,2}(\hat\mu)$, written with its argument, is the two-sphere of pure states of the algebra in view; the central idempotents $\tfrac12(1\pm j)$ of the split-complex algebra are the separate pair $\tilde\Pi_{3,4}$.
 
 The involution here is the star on the elements, as *The conjugations and the adjoint* fixes it, and *Conventions in the Biquaternion Universe* writes the same involution with the same star, $\tilde\Pi^{*} = \tilde\Pi$: the two corpora agree on the mark, and it is the dagger that is confined to the operators.
 
@@ -197,7 +207,7 @@ The conventions are of two kinds: the mathematical notation, and the working con
 
 A generic element of a number system is written as a linear combination of the basis with its coefficients in
 the scalar sector of the system, the biquaternion element being $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$
-with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter of its own: $\alpha, \beta$ for the Booleans, $n, m$ for the naturals and the integers, $a, b, c$ for the rationals and the reals, and $A = a + ia'$, $B = b + ib'$ for the commutative two-parameter systems. The notation is fixed here above all for the conjugations, which is where the corpus has the most marks to keep apart, and for the number systems, whose glyphs carry two bits each. An algebra with a degree-2 form carries an intrinsic conjugate, the map that negates its vectors and fixes its scalars; it is written with a **natural sign**. The involution of the base extends to the coefficients and is written with a **bar**. Their composite is the Hermitian anti-automorphism that makes the algebra a Hilbert algebra, written with a **star**; its negative is the **anti-Hermitian** conjugation, written **flat**; and the **dagger** is the adjoint, which on the elements of a Hilbert algebra names the same map as the star. The star and the bar commute, $^{*} = \bar{\cdot}\circ{}^{\natural} = {}^{\natural}\circ\bar{\cdot}$, the flat is $\flat = -{}^{*}$, and $\{\mathrm{id}, \bar{\cdot}, {}^{\natural}, {}^{*}\}$ is a Klein four-group while the flat stands outside it. On a base whose involution is the identity the bar is the identity map and the star coincides with the natural sign.
+with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter of its own: $\alpha, \beta$ for the Booleans, $n, m$ for the naturals and the integers, $a, b, c$ for the rationals and the reals, and $A = a + ia'$, $B = b + ib'$ for the commutative two-parameter systems. The notation is fixed here above all for the conjugations, which is where the corpus has the most marks to keep apart, and for the number systems, whose glyphs carry two bits each. An algebra with a degree-2 form carries an intrinsic conjugate, the map that negates its vectors and fixes its scalars; it is written with a **natural sign**. The involution of the base extends to the coefficients and is written with a **bar**. Their composite is the Hermitian anti-automorphism that makes the algebra a Hilbert algebra, written with a **star**; its negative is the **anti-Hermitian** conjugation, written **flat**; and the **dagger** is the adjoint of an operator, written on operators and never on the elements. The star and the bar commute, $^{*} = \bar{\cdot}\circ{}^{\natural} = {}^{\natural}\circ\bar{\cdot}$, the flat is $\flat = -{}^{*}$, and $\{\mathrm{id}, \bar{\cdot}, {}^{\natural}, {}^{*}\}$ is a Klein four-group while the flat stands outside it. On a base whose involution is the identity the bar is the identity map and the star coincides with the natural sign.
 
 On the number systems the **case** records whether the commuting scalar sector is larger than the reals and the **tilde** records the presence of the quaternionic factor, and the two are read independently: $a$ is real, $A$ complex or split-complex or dual, $\tilde q$ quaternion or split-quaternion, and $\tilde Q$ biquaternion or split-biquaternion. The **idempotents** carry a symbol of their own: $\tilde\Pi$ is an idempotent, a projector or a pure state, and the minimal left ideal it generates, while $\tilde P$ is the generic element of a statement that holds for every element. The upper-case tilde is thus split between two roles, and the split is deliberate.
 
@@ -218,6 +228,7 @@ The working conventions are the corpus's own. Every article is registered in exa
 | $\alpha, \beta$; $n, m$; $a, b, c$ | the generic elements of the Booleans, the naturals and the integers, and the rationals and the reals |
 | $A = a + ia'$, $B = b + ib'$ | the generic element of a commutative two-parameter system, with $j$ or $\varepsilon$ in place of $i$, and the imaginary coefficient carrying a prime |
 | $\tilde\Pi$ | an idempotent, a projector or a pure state, and the minimal left ideal it generates |
+| $\tilde\Pi_1, \tilde\Pi_2$ | the standard orthogonal idempotents, $\tilde\Pi_1 = \tfrac{1}{2}(e_0+ie_3)$, $\tilde\Pi_2 = \tfrac{1}{2}(e_0-ie_3)$ |
 | $\tilde P$ | the generic element of the algebra, in a statement that holds for every element |
 | `- Theory`, `- Operator Theory`, `- * Theory`, `- * Operator Theory` | the four groups of a category, in that order |
 | `- Applications` | the group that closes a category with the concrete instances of its structure |

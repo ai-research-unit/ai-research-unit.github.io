@@ -156,7 +156,7 @@ $$
 
 This is the **split imaginary subspace** $j\mathbb{R}_{\mathbb{D}}$, a real vector space of dimension $1$. It is not a subalgebra: $(j a')^2 = a'^2 \in \mathbb{R}_{\mathbb{D}}$, which is not in $j\mathbb{R}_{\mathbb{D}}$ unless $a' = 0$. The form it carries is treated in *Split-Complex Norm and Invertibility*.
 
-There is only one non-trivial fixed-point set and one non-trivial anti-fixed-point set, because there is only one non-trivial involution. The six-subspace lattice of the biquaternion algebra therefore has no analogue here: the involution lattice of $\mathbb{D}$ is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines.
+There is only one non-trivial fixed-point set and one non-trivial anti-fixed-point set, because there is only one non-trivial involution. The remarkable-subspace lattice of the biquaternion algebra therefore has no analogue here: the involution lattice of $\mathbb{D}$ is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines.
 
 ### The Idempotent Basis
 

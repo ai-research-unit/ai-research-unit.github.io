@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article introduces the analysis of biquaternion-valued functions. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its six distinguished subspaces, and it follows the article on biquaternion norm and invertibility, which defined the norm, the Hermitian form, and the Euclidean norm. The goal here is to define limits, continuity, and differentiation for biquaternion-valued functions, and to establish the differential operators that will be used in later applications.
+This article introduces the analysis of biquaternion-valued functions. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its remarkable subspaces, and it follows the article on biquaternion norm and invertibility, which defined the norm, the Hermitian form, and the Euclidean norm. The goal here is to define limits, continuity, and differentiation for biquaternion-valued functions, and to establish the differential operators that will be used in later applications.
 
 The treatment is purely mathematical. The independent variables are four real parameters — the coordinates of a four-dimensional real subspace of $\mathbb{B}$. They are independent of any physical interpretation. The complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
 
@@ -508,7 +508,7 @@ The **biquaternionic gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial/\parti
 
 The approach is closely related to Fueter's quaternionic analysis and to Clifford analysis. The generalization to the biquaternion algebra includes the complex coefficients and the four conjugations, which enrich the structure.
 
-The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian subspace $\mathbb{M}_-$, is treated in *The Six Subspaces and the Analysis*, where these four are the real forms beside the two complex subspaces. The integral theory, including the Cauchy integral formula, is the subject of the companion article on biquaternion integration.
+The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian subspace $\mathbb{M}_-$, is treated in *Remarkable Subspaces and the Analysis*, where these four are the real forms beside the two complex subspaces. The integral theory, including the Cauchy integral formula, is the subject of the companion article on biquaternion integration.
 
 ## Summary of Notation
 
@@ -530,7 +530,7 @@ The specialization to specific four-dimensional subspaces, including the quatern
 
 ## Further Reading
 
-- *The Six Subspaces and the Analysis* (`articles_maths/the-six-subspaces-and-the-analysis.md`), for the restriction of these operators to the six distinguished subspaces, the second-order operator as the operator of the norm, and the ellipticity dichotomy.
+- *Remarkable Subspaces and the Analysis* (`articles_maths/remarkable-subspaces-and-the-analysis.md`), for the restriction of these operators to the remarkable subspaces, the second-order operator as the operator of the norm, and the ellipticity dichotomy.
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the original formulation.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.
 - R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.

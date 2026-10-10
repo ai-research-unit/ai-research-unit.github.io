@@ -49,7 +49,7 @@ and it preserves the degree modulo two, $(\mathrm{Cl}^k)^{\dagger}\subseteq\math
 
 *Proof.* The coefficient conjugation is a $\mathbb{C}$-antilinear automorphism that acts on the coefficients and not on the degree; the quaternion conjugation of the algebra is the reversion of the even slot, which reverses the order of the factors, so on a product $\tilde{P}\tilde{Q}$ one has $(\tilde{P}\tilde{Q})^{*}=\tilde{Q}^{*}\tilde{P}^{*}$; a product of $k$ generators is sent to a product of $k$ generators. For the odd slot this is the definition used in *The Reflection Read in the Hermitian Pairing* below.
 
-**The two sectors of the corpus, in the language of the dagger.** The fixed and anti-fixed loci of the dagger are the two distinguished subspaces,
+**The two sectors of the corpus, in the language of the dagger.** The fixed and anti-fixed loci of the dagger are the two remarkable subspaces,
 
 $$
 \mathbb{M}_+=\{x:x^{*}=x\}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\},\qquad

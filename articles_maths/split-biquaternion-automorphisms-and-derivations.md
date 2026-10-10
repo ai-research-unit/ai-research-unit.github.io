@@ -5,7 +5,7 @@
 
 The **split biquaternion algebra** is $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$, an eight-dimensional real algebra isomorphic to $\mathbb{H} \oplus \mathbb{H}$. It carries two structures distinguished by the ground ring: over the split complex algebra $\mathbb{D}$ it is a free $\mathbb{D}$-algebra of rank $4$, and over $\mathbb{R}$ the same set is an eight-dimensional real algebra. This article describes its algebra **automorphisms** and its **derivations**, over each ground structure, and compares them with the biquaternion case. The algebra and its decomposition are used from *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the split complex unit and the idempotents are those of *Split-Complex Algebra*.
 
-We use the conventions of the split biquaternion algebra: the basis $\{e_0,e_1,e_2,e_3\}$ with $e_k^2 = -e_0$; the central split complex unit $j$ with $j^2 = +1$; the idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian); and the four distinguished subspaces $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. A general element is $\tilde{Q} = A + jB$ with $A, B \in \mathbb{H}$.
+We use the conventions of the split biquaternion algebra: the basis $\{e_0,e_1,e_2,e_3\}$ with $e_k^2 = -e_0$; the central split complex unit $j$ with $j^2 = +1$; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian); and the four distinguished subspaces $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. A general element is $\tilde{Q} = A + jB$ with $A, B \in \mathbb{H}$.
 
 No physics is invoked and no new results are claimed. Everything below is the standard structure theory of a product of two quaternion algebras.
 
@@ -13,7 +13,7 @@ No physics is invoked and no new results are claimed. Everything below is the st
 
 Two structural facts govern the whole article.
 
-**The centre.** The centre of $\mathbb{H}_{\mathbb{D}}$ is $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{D} e_0 = \mathrm{span}_{\mathbb{R}}\{e_0, je_0\}$, a real two-dimensional algebra isomorphic to $\mathbb{D}$, with the idempotents $\tilde\Pi_\pm$ as its two nontrivial idempotents. Hence $\mathbb{H}_{\mathbb{D}}$ is **not** central over $\mathbb{R}$: its centre is strictly larger than $\mathbb{R}e_0$.
+**The centre.** The centre of $\mathbb{H}_{\mathbb{D}}$ is $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{D} e_0 = \mathrm{span}_{\mathbb{R}}\{e_0, je_0\}$, a real two-dimensional algebra isomorphic to $\mathbb{D}$, with the idempotents $\tilde\Pi_{1,2}$ as its two nontrivial idempotents. Hence $\mathbb{H}_{\mathbb{D}}$ is **not** central over $\mathbb{R}$: its centre is strictly larger than $\mathbb{R}e_0$.
 
 **The two halves.** The algebra is a product of two copies of the quaternion division algebra, $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$, the isomorphism sending $\tilde{Q}$ to the pair $(\tilde{Q}_+, \tilde{Q}_-)$ of its idempotent components. It is **semisimple but not simple**: the two factors are its minimal two-sided ideals. Every automorphism and every derivation must respect this splitting, up to the one permutation that interchanges the two factors.
 
@@ -25,7 +25,7 @@ Throughout this section the ground ring is $\mathbb{D}$, and an automorphism is 
 
 **Theorem.** $\mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) \cong SO(3) \times SO(3)$.
 
-**Proof.** A $\mathbb{D}$-linear automorphism fixes the centre $\mathbb{D}$ pointwise, hence fixes the idempotents $\tilde\Pi_\pm$ and preserves each of the two factors $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$. On each factor it is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$, and every such automorphism is inner, by the Skolem–Noether theorem for the division algebra $\mathbb{H}$: it is $\iota_{u}(\tilde q) = u \tilde q u^{-1}$ for some $u \in \mathbb{H}^\times$, depending only on $u$ modulo the central scalars $\mathbb{R}^\times$. Thus the automorphisms of the first factor form $\mathbb{H}^\times / \mathbb{R}^\times \cong S^3/\{\pm 1\} = SO(3)$, and likewise for the second, giving the product.
+**Proof.** A $\mathbb{D}$-linear automorphism fixes the centre $\mathbb{D}$ pointwise, hence fixes the idempotents $\tilde\Pi_{1,2}$ and preserves each of the two factors $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$. On each factor it is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$, and every such automorphism is inner, by the Skolem–Noether theorem for the division algebra $\mathbb{H}$: it is $\iota_{u}(\tilde q) = u \tilde q u^{-1}$ for some $u \in \mathbb{H}^\times$, depending only on $u$ modulo the central scalars $\mathbb{R}^\times$. Thus the automorphisms of the first factor form $\mathbb{H}^\times / \mathbb{R}^\times \cong S^3/\{\pm 1\} = SO(3)$, and likewise for the second, giving the product.
 
 **Corollary.** As a Lie group, $\mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}})$ has dimension $6$ and is connected and compact.
 
@@ -35,13 +35,13 @@ Throughout this section the ground ring is $\mathbb{D}$, and an automorphism is 
 
 Now the ground ring is $\mathbb{R}$, so automorphisms need only be $\mathbb{R}$-linear, and the group is strictly larger.
 
-**Automorphisms preserve the centre.** If $\sigma$ is an $\mathbb{R}$-algebra automorphism and $A$ is central then $\sigma(A)$ is central, so $\sigma$ restricts to an $\mathbb{R}$-algebra automorphism of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cong \mathbb{D}$. Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has exactly two $\mathbb{R}$-algebra automorphisms, the identity and the swap $\tilde\Pi_+ \leftrightarrow \tilde\Pi_-$, restriction gives a homomorphism
+**Automorphisms preserve the centre.** If $\sigma$ is an $\mathbb{R}$-algebra automorphism and $A$ is central then $\sigma(A)$ is central, so $\sigma$ restricts to an $\mathbb{R}$-algebra automorphism of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cong \mathbb{D}$. Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has exactly two $\mathbb{R}$-algebra automorphisms, the identity and the swap $\tilde\Pi_1 \leftrightarrow \tilde\Pi_2$, restriction gives a homomorphism
 
 $$
 \rho : \mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}}) \longrightarrow \mathrm{Aut}_{\mathbb{R}}(\mathbb{D}) \cong \mathbb{Z}/2 .
 $$
 
-**The kernel is the $\mathbb{D}$-linear part.** An automorphism lies in $\ker\rho$ exactly when it fixes the centre pointwise, equivalently when it fixes $\tilde\Pi_+$ and $\tilde\Pi_-$ and so preserves each factor. Hence $\ker\rho = \mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) \cong SO(3)\times SO(3)$, the group of the previous section, consisting of the inner automorphisms.
+**The kernel is the $\mathbb{D}$-linear part.** An automorphism lies in $\ker\rho$ exactly when it fixes the centre pointwise, equivalently when it fixes $\tilde\Pi_1$ and $\tilde\Pi_2$ and so preserves each factor. Hence $\ker\rho = \mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) \cong SO(3)\times SO(3)$, the group of the previous section, consisting of the inner automorphisms.
 
 **The swap coset.** The map
 
@@ -79,7 +79,7 @@ $$
 
 **Theorem.** $\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) \cong \mathrm{SO}(3) \oplus \mathrm{SO}(3) \cong \mathrm{SO}(4)$, a real Lie algebra of dimension $6$, and every derivation is inner.
 
-**Proof.** A derivation $D$ fixes each central idempotent: from $D(\tilde\Pi_+) = D(\tilde\Pi_+^2) = \tilde\Pi_+D(\tilde\Pi_+) + D(\tilde\Pi_+)\tilde\Pi_+$ and the centrality of $D(\tilde\Pi_+)$ one obtains $D(\tilde\Pi_+) = 0$, and similarly $D(\tilde\Pi_-) = 0$. Hence $D$ kills no element of the form $\tilde Q_+ \tilde\Pi_+$ into the other factor and, by the Leibniz rule, preserves the splitting; so $D$ acts as a derivation of $\mathbb{H}$ on the first factor and one on the second, and
+**Proof.** A derivation $D$ fixes each central idempotent: from $D(\tilde\Pi_1) = D(\tilde\Pi_1^2) = \tilde\Pi_1D(\tilde\Pi_1) + D(\tilde\Pi_1)\tilde\Pi_1$ and the centrality of $D(\tilde\Pi_1)$ one obtains $D(\tilde\Pi_1) = 0$, and similarly $D(\tilde\Pi_2) = 0$. Hence $D$ kills no element of the form $\tilde Q_+ \tilde\Pi_1$ into the other factor and, by the Leibniz rule, preserves the splitting; so $D$ acts as a derivation of $\mathbb{H}$ on the first factor and one on the second, and
 
 $$
 \mathrm{Der}(\mathbb{H}_{\mathbb{D}}) \cong \mathrm{Der}(\mathbb{H}) \oplus \mathrm{Der}(\mathbb{H}) .
@@ -100,7 +100,7 @@ an isomorphism of Lie algebras because $[\mathrm{ad}_a,\mathrm{ad}_b] = \mathrm{
 **An explicit basis.** The derivations $A_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$, $k = 1,2,3$, act on the two factors simultaneously, each as $\mathrm{ad}_{e_k}$, and satisfy $[A_1,A_2] = A_3$ together with its cyclic permutations; the companion derivations $\tfrac{1}{2}\mathrm{ad}_{je_k}$ act with opposite signs on the two factors. Their combinations
 
 $$
-D_k^{+} = \tfrac{1}{2}\left(A_k + \tfrac{1}{2}\mathrm{ad}_{je_k}\right) = \tfrac{1}{2}\mathrm{ad}_{e_k \tilde\Pi_+}, \qquad D_k^{-} = \tfrac{1}{2}\left(A_k - \tfrac{1}{2}\mathrm{ad}_{je_k}\right) = \tfrac{1}{2}\mathrm{ad}_{e_k \tilde\Pi_-}
+D_k^{+} = \tfrac{1}{2}\left(A_k + \tfrac{1}{2}\mathrm{ad}_{je_k}\right) = \tfrac{1}{2}\mathrm{ad}_{e_k \tilde\Pi_1}, \qquad D_k^{-} = \tfrac{1}{2}\left(A_k - \tfrac{1}{2}\mathrm{ad}_{je_k}\right) = \tfrac{1}{2}\mathrm{ad}_{e_k \tilde\Pi_2}
 $$
 
 act on the first and on the second factor respectively and vanish on the other, and each triple satisfies $[D_1^{\pm},D_2^{\pm}] = D_3^{\pm}$ together with its cyclic permutations. The six elements $D_k^{\pm}$ are linearly independent and form a real basis of the six-dimensional derivation algebra.
@@ -111,9 +111,9 @@ act on the first and on the second factor respectively and vanish on the other, 
 
 **An inner automorphism.** For $u = e_1$ in the first factor, $\sigma(\tilde Q_+,\tilde Q_-) = (e_1 \tilde Q_+ e_1^{-1}, \tilde Q_-)$ has $e_1^{-1} = -e_1$, so it fixes $e_1$ and reverses the signs of $e_2$ and $e_3$ in the first factor while leaving the second untouched: $\sigma(e_2,0) = (-e_2,0)$, $\sigma(e_3,0) = (-e_3,0)$.
 
-**A derivation.** Take $D = D_3^{+} = \tfrac{1}{2}\mathrm{ad}_{e_3 \tilde\Pi_+}$, acting on the first factor alone. Its exponential acts by $\exp(tD)(e_1,0) = (\cos t\,e_1 + \sin t\,e_2, 0)$, matching $A(e^{te_3/2},0)$; the second factor is fixed, because $\mathrm{ad}_{e_3\tilde\Pi_+}$ acts as zero there.
+**A derivation.** Take $D = D_3^{+} = \tfrac{1}{2}\mathrm{ad}_{e_3 \tilde\Pi_1}$, acting on the first factor alone. Its exponential acts by $\exp(tD)(e_1,0) = (\cos t\,e_1 + \sin t\,e_2, 0)$, matching $A(e^{te_3/2},0)$; the second factor is fixed, because $\mathrm{ad}_{e_3\tilde\Pi_1}$ acts as zero there.
 
-**A derivation that mixes nothing.** Any $a = a_+ \tilde\Pi_+ + a_- \tilde\Pi_-$ gives the pair $\mathrm{ad}_a = (\mathrm{ad}_{a_+}, \mathrm{ad}_{a_-})$, and $\mathrm{ad}_a$ depends only on $a$ modulo the centre: adding a central element changes neither component.
+**A derivation that mixes nothing.** Any $a = a_+ \tilde\Pi_1 + a_- \tilde\Pi_2$ gives the pair $\mathrm{ad}_a = (\mathrm{ad}_{a_+}, \mathrm{ad}_{a_-})$, and $\mathrm{ad}_a$ depends only on $a$ modulo the centre: adding a central element changes neither component.
 
 ## Summary
 
@@ -126,7 +126,7 @@ The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$ of 
 | $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H} \cong \mathbb{H}\oplus\mathbb{H}$ | Split biquaternion algebra; product of two quaternion algebras |
 | $e_0,e_1,e_2,e_3$ | Algebra basis, $e_0 = 1$, $e_k^2 = -e_0$ |
 | $j$ | Central split complex unit, $j^2 = +1$ |
-| $\tilde\Pi_\pm = \tfrac{1}{2}(1\pm j)$ | Central idempotents, the two factors |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$ | Central idempotents, the two factors |
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \mathrm{span}_{\mathbb{R}}\{e_0, je_0\}$ | Centre of the algebra |
 | $\tilde{Q} \mapsto (\tilde{Q}_+,\tilde{Q}_-)$ | Isomorphism to $\mathbb{H}\oplus\mathbb{H}$ |
 | ${}^{\natural}, \bar\cdot, {}^{*}, {}^{\flat}$ | Quaternion, split complex, Hermitian, anti-Hermitian conjugations |
@@ -135,7 +135,7 @@ The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$ of 
 | $c(\tilde{Q}) = \bar{\tilde{Q}}$ | Factor swap, the outer real automorphism |
 | $\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) = \mathrm{Der}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) \cong \mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$ | Derivation algebra |
 | $\mathrm{ad}_a(\tilde Q) = a\tilde Q - \tilde Q a$ | Inner derivation |
-| $D_k^{\pm} = \tfrac{1}{2}\mathrm{ad}_{e_k \tilde\Pi_\pm}$ | Derivation basis: $D_k^{+}$ acts on the first factor, $D_k^{-}$ on the second, $[D_1^{\pm},D_2^{\pm}]=D_3^{\pm}$ |
+| $D_k^{\pm} = \tfrac{1}{2}\mathrm{ad}_{e_k \tilde\Pi_{1,2}}$ | Derivation basis: $D_k^{+}$ acts on the first factor, $D_k^{-}$ on the second, $[D_1^{\pm},D_2^{\pm}]=D_3^{\pm}$ |
 
 ## Further Reading
 

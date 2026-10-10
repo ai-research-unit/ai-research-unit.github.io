@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion norm fixes the interval of the framework, the light cone on which it vanishes and the group of the transformations that preserve it; this article studies it and the invertibility of the elements it decides, and reads both physically. It follows the physics algebra article, which defined the algebra, its conjugations, its six distinguished subspaces and the coordinate dictionary, and it uses the same notation throughout.
+The biquaternion norm fixes the interval of the framework, the light cone on which it vanishes and the group of the transformations that preserve it; this article studies it and the invertibility of the elements it decides, and reads both physically. It follows the physics algebra article, which defined the algebra, its conjugations, its remarkable subspaces and the coordinate dictionary, and it uses the same notation throughout.
 
 The biquaternion norm is the object the series calls the **level-1 form**, and it is the reason the framework is written the way it is. It is multiplicative, it is complex-valued in general, and it vanishes on a set of nonzero elements. Multiplicativity is what makes a unit-norm element a transformation that preserves an interval; the complex value is what lets one algebraic object carry the metric of the material sector and the opposite signature on the informational sector; and the vanishing set is the light cone. Invertibility is then the algebraic counterpart of being off the cone, and the group of units is the group of the transformations of the series.
 
@@ -289,7 +289,7 @@ A **division algebra** is one in which every nonzero element is invertible, equi
 
 ## Distribution of the Invertible Elements
 
-The criterion is the same in all six subspaces: invertible if and only if the biquaternion norm is nonzero. The distribution is read off physically subspace by subspace.
+The criterion is the same in all remarkable subspaces: invertible if and only if the biquaternion norm is nonzero. The distribution is read off physically subspace by subspace.
 
 ### The Complex Time Sector $\mathbb{C}_{\mathbb{B}}$
 
@@ -367,7 +367,7 @@ The light cone itself is the zero-divisor set, and its elements are the null fou
 
 ### Summary of the Distribution
 
-- $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain **no** zero divisors: every nonzero element is invertible. The first two are the subalgebras among the six and the division algebras; $i\mathbb{H}_{\mathbb{B}}$ is a module and not a subalgebra, but its nonzero elements are invertible in $\mathbb{B}$.
+- $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain **no** zero divisors: every nonzero element is invertible. The first two are the subalgebras among the remarkable subspaces and the division algebras; $i\mathbb{H}_{\mathbb{B}}$ is a module and not a subalgebra, but its nonzero elements are invertible in $\mathbb{B}$.
 - $\mathbb{M}_-$ and $\mathbb{M}_+$ each contain a cone of zero divisors, and the invertible elements form the complement, with three connected components each: the physical light cone of the material sector, and its informational counterpart.
 - $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, of real codimension 2, whose complement is connected.
 
@@ -379,7 +379,7 @@ Over $\mathbb{C}$ a non-degenerate quadratic form has no signature; signature ap
 $$
 \operatorname{Re}N=\sum_{\mu=0}^{3}\bigl(q_\mu^2-(q'_\mu)^2\bigr),\qquad \operatorname{Im}N=2\sum_{\mu=0}^{3} q_\mu q'_\mu .
 $$
-Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate of signature $(4,4)$, a **split** (neutral) signature; in the real basis $e_\mu,ie_\mu$ its matrix is $\operatorname{diag}(1,1,1,1,-1,-1,-1,-1)$. The six distinguished real subspaces give six real forms, whose signatures are the ones read off sector by sector in *Distribution of the Invertible Elements*:
+Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate of signature $(4,4)$, a **split** (neutral) signature; in the real basis $e_\mu,ie_\mu$ its matrix is $\operatorname{diag}(1,1,1,1,-1,-1,-1,-1)$. The remarkable real subspaces give six real forms, whose signatures are the ones read off sector by sector in *Distribution of the Invertible Elements*:
 
 | Real subspace | $N$ restricted | Signature |
 |---|---|---|
@@ -392,7 +392,7 @@ Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate
 
 Each is a real slice whose complexification is $(\mathbb{B},N)$; the definite forms are $(4,0)$ and $(0,4)$, the indefinite ones $(1,3)$ and $(3,1)$, the neutral ones $(1,1)$ and $(3,3)$. The sign is the choice of geometry, the datum the geometry of *Biquaternion Lorentzian and Conformal Geometry* is organised by.
 
-Beyond the six distinguished subspaces, a mixed real subspace carries a signature of its own. The one the geometry uses is the **split form of signature $(2,2)$**,
+Beyond the remarkable subspaces, a mixed real subspace carries a signature of its own. The one the geometry uses is the **split form of signature $(2,2)$**,
 $$
 W=\operatorname{span}_{\mathbb{R}}\{e_0,e_1,ie_2,ie_3\},\qquad N|_W=a^2+b^2-c^2-d^2 \quad \text{for } a e_0+b e_1+ci e_2+di e_3,
 $$
@@ -422,7 +422,7 @@ The Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is a Hermitian biquaternion, an elem
 
 The invertibility criterion is $N(\tilde{Q})\neq0$, with inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$. On the material sector it says that a four-vector is invertible exactly when it is not null. For a unit-norm element — every rotor — the inverse is the quaternion conjugate, $\tilde{Q}^{-1} = \tilde{Q}^{\natural}$, and this coincides with the dagger exactly for the unitary rotors, the rotation rotors; a boost rotor is Hermitian and its dagger is itself, not its inverse.
 
-The group of units $\mathbb{B}^\times$ is open, connected and isomorphic to $\mathrm{GL}(2,\mathbb{C})$, a real Lie group of dimension 8 with Lie algebra $\mathbb{B}$ and centre $\mathbb{C}^\times$. The algebra is partitioned into the zero element, the invertible elements and the zero divisors, and this is the partition of four-vectors into the null ones and the rest. Of the six subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a cone each, with three-component complements; and $\mathrm{Vect}(\mathbb{B})$ contains the complex nilpotent cone of codimension 2, whose complement is connected.
+The group of units $\mathbb{B}^\times$ is open, connected and isomorphic to $\mathrm{GL}(2,\mathbb{C})$, a real Lie group of dimension 8 with Lie algebra $\mathbb{B}$ and centre $\mathbb{C}^\times$. The algebra is partitioned into the zero element, the invertible elements and the zero divisors, and this is the partition of four-vectors into the null ones and the rest. Of the remarkable subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a cone each, with three-component complements; and $\mathrm{Vect}(\mathbb{B})$ contains the complex nilpotent cone of codimension 2, whose complement is connected.
 
 The zero divisors are studied in *Biquaternion Zero Divisors*, and the classification of the roots of $-1$ that underlies the idempotent classification in *Biquaternion Square Roots of Minus One, Zero and Plus One*.
 

@@ -140,7 +140,7 @@ The trace and the determinant are real, in agreement with the theorem; the matri
 
 **Example (a physical boost).** For the rotor $\tilde{Q} = \tfrac53e_0 + \tfrac43ie_3$ of *Biquaternion Rotations and Lorentz Transformations*, of norm one and of rapidity $\psi = 2\ln 3$, the matrix is $\Phi(\tilde{Q}) = \mathrm{diag}(3,\tfrac13)$, so the operator has the four eigenvalues $9, 1, 1, \tfrac19$, of determinant $1 = \lvert N\rvert^{4}$ and trace $\tfrac{100}{9} = 4(\tfrac53)^{2}$; the eigenvalue $9 = e^{\psi}$ is the doubled rapidity, the operand having stored $3 = e^{\psi/2}$.
 
-**The operator group.** Restricted to the unit-norm slice, the set of operators is the image of $SL(2,\mathbb{C})$ and is the Lorentz group with kernel $\{\pm e_0\}$; over all units it is the set of dilated Lorentz transformations $\mathbb{R}_{>0} \times SO^{+}(1,3)$, and it has lost the phase circle. The geometric statement, the action on the six subspaces and the orbits are *Biquaternion Rotations and Lorentz Transformations* and *The Sandwich Action in Subspaces*.
+**The operator group.** Restricted to the unit-norm slice, the set of operators is the image of $SL(2,\mathbb{C})$ and is the Lorentz group with kernel $\{\pm e_0\}$; over all units it is the set of dilated Lorentz transformations $\mathbb{R}_{>0} \times SO^{+}(1,3)$, and it has lost the phase circle. The geometric statement, the action on the remarkable subspaces and the orbits are *Biquaternion Rotations and Lorentz Transformations* and *The Sandwich Action in Subspaces*.
 
 ## The Case $N(\tilde{Q}) = 0$
 

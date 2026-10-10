@@ -65,7 +65,7 @@ The self-duality is what makes the trace pairing the natural pairing of measurem
 
 ### Extremal rays and the pure states
 
-The extreme rays of $C_+$ are the rays through the rank-one projectors $\tilde\Pi_+(\hat{\mu}) = \tfrac12(e_0+i\hat{\mu})$ and their positive multiples; every positive element is a non-negative combination of these. On the trace-one slice — the intersection of $C_+$ with the affine hyperplane $\mathrm{Tr}(\tilde{\rho}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the trace-one slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.
+The extreme rays of $C_+$ are the rays through the rank-one projectors $\tilde\Pi_1(\hat{\mu}) = \tfrac12(e_0+i\hat{\mu})$ and their positive multiples; every positive element is a non-negative combination of these. On the trace-one slice — the intersection of $C_+$ with the affine hyperplane $\mathrm{Tr}(\tilde{\rho}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the trace-one slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.
 
 ## Effects
 
@@ -99,7 +99,7 @@ $$
 \tilde{E}^2 = \tilde{E} \quad\Longleftrightarrow\quad \tilde{E}\in\mathrm{ext}[0,e_0],
 $$
 
-i.e. the elements $a_0 = 1$ with $|\mathbf{a}|=0$ (the identity) and $a_0 = \tfrac12$ with $|\mathbf{a}| = \tfrac12$ (the rank-one projectors). A **projective measurement** uses only these extreme effects; a general measurement uses interior effects, which are convex combinations $\tilde{E} = t\tilde\Pi_+ + (1-t)\tilde\Pi_-$ of orthogonal idempotents. An interior effect is a "soft" outcome: it responds partially to both alternatives, which is exactly what allows a measurement to have more outcomes than the dimension.
+i.e. the elements $a_0 = 1$ with $|\mathbf{a}|=0$ (the identity) and $a_0 = \tfrac12$ with $|\mathbf{a}| = \tfrac12$ (the rank-one projectors). A **projective measurement** uses only these extreme effects; a general measurement uses interior effects, which are convex combinations $\tilde{E} = t\tilde\Pi_1 + (1-t)\tilde\Pi_2$ of orthogonal idempotents. An interior effect is a "soft" outcome: it responds partially to both alternatives, which is exactly what allows a measurement to have more outcomes than the dimension.
 
 ### The Born rule for effects
 
@@ -159,19 +159,19 @@ This is **Naimark's dilation theorem**, the measurement analogue of Stinespring'
 
 ### The trine POVM
 
-Let $\hat{n}_k$, $k=1,2,3$, be three unit vectors in the equatorial plane at $120^\circ$ from one another, so that $\sum_k\hat{n}_k = 0$ and $\sum_k\tilde\Pi_+(\hat{n}_k) = \tfrac32 e_0$. Define
+Let $\hat{n}_k$, $k=1,2,3$, be three unit vectors in the equatorial plane at $120^\circ$ from one another, so that $\sum_k\hat{n}_k = 0$ and $\sum_k\tilde\Pi_1(\hat{n}_k) = \tfrac32 e_0$. Define
 
 $$
-\tilde{E}_k = \tfrac{2}{3}\,\tilde\Pi_+(\hat{n}_k), \qquad k=1,2,3 .
+\tilde{E}_k = \tfrac{2}{3}\,\tilde\Pi_1(\hat{n}_k), \qquad k=1,2,3 .
 $$
 
 Each $\tilde{E}_k$ is an effect — its coefficients are $a_0 = \tfrac13$ and $|\mathbf{a}| = \tfrac13$, on the boundary of the interval — and they resolve the identity:
 
 $$
-\sum_{k=1}^{3}\tilde{E}_k = \tfrac{2}{3}\sum_{k=1}^{3}\tilde\Pi_+(\hat{n}_k) = \tfrac{2}{3}\cdot\tfrac{3}{2}e_0 = e_0 .
+\sum_{k=1}^{3}\tilde{E}_k = \tfrac{2}{3}\sum_{k=1}^{3}\tilde\Pi_1(\hat{n}_k) = \tfrac{2}{3}\cdot\tfrac{3}{2}e_0 = e_0 .
 $$
 
-The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{\rho}_k = \tilde\Pi_+(\hat{n}_k)$, the probability of correctly identifying the state is
+The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{\rho}_k = \tilde\Pi_1(\hat{n}_k)$, the probability of correctly identifying the state is
 
 $$
 P_{\mathrm{succ}} = \frac{1}{3}\sum_{k=1}^{3}\mathrm{Tr}(\tilde{\rho}_k\tilde{E}_k)
@@ -270,7 +270,7 @@ and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde
 | $\tilde{E}_y = \tilde{M}_y^{*}\tilde{M}_y$ | Kraus form of an effect |
 | $\tilde{\rho}_y = \tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}/p_y$ | Post-measurement state |
 | $\tilde{E}_y = V^\dagger\tilde{F}_yV$ | Naimark dilation |
-| $\tilde{E}_k = \tfrac23\tilde\Pi_+(\hat{n}_k)$ | Trine POVM |
+| $\tilde{E}_k = \tfrac23\tilde\Pi_1(\hat{n}_k)$ | Trine POVM |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading

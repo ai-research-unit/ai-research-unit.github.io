@@ -37,7 +37,7 @@ $$
 $$
 so the state space is the Bloch ball $|\mathbf{r}|\leq1$, and the pure states are its boundary. The pure-state idempotents are
 $$
-\tilde\Pi_\pm(\hat{\mu}) = \tfrac12\bigl(e_0 \pm i\hat{\mu}\bigr), \qquad |\hat{\mu}| = 1,
+\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12\bigl(e_0 \pm i\hat{\mu}\bigr), \qquad |\hat{\mu}| = 1,
 $$
 and the Born pairing is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
 
@@ -296,7 +296,7 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 | $S = \mathbb{C}^2$ | Defining (spinor) module, the qubit carrier |
 | $|u\rangle\in S$ | State vector (spinor) |
 | $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ | State, Bloch vector $\mathbf{r}$, $|\mathbf{r}|\leq1$ |
-| $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ | Pure-state idempotent |
+| $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ | Pure-state idempotent |
 | $\tilde{\Lambda}$, $N(\tilde{\Lambda}) = 1$ | Unit-norm biquaternion, element of $SL(2,\mathbb{C})$ |
 | $SU(2)$ | Unit real quaternions, unitary subgroup |
 | $z = u_1/u_0$ | Möbius coordinate on the pure-state sphere $\mathbb{CP}^1$ |

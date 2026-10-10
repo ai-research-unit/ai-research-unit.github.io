@@ -6,7 +6,7 @@ The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}
 
 The consequences are of a different kind from the bilinear case. Associativity is not available: a sesqualgebra of full type with a nontrivial involution is **never** associative, by the collapse theorem of *Sesqualgebras*, and $\mathbb{B}$ is of full type. What survives is the structure that does not need associativity: a unit on one side alone, an involution that exchanges the two slots, the ternary product $\tilde P\tilde Q^{*}\tilde R$ with the algebraic $J^{*}$-algebra it defines, the two halves of the algebra cut out by the involution, the squares that generate the positive cone, and the simplicity of the product as an ideal-theoretic object.
 
-Three boundaries are stated at once. The product is not defined here, and neither are the four general products as a family: the coordinate rule and the four names are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the comparison of their properties is *Comparison Between the Four General Products*. The same space read as an algebra and the question of its base rings are *Introduction to the General Plain Algebra of Biquaternions* and, with the real scalars, *Biquaternions as an Algebra over $\mathbb{R}$*, and neither is repeated here. And the elements, the basis, the conjugations and the six distinguished subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*, *Introduction to the Six Subspaces* and *Decompositions Along the Six Subspaces*; the subspaces are named here only as the two halves the involution cuts out.
+Three boundaries are stated at once. The product is not defined here, and neither are the four general products as a family: the coordinate rule and the four names are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the comparison of their properties is *Comparison Between the Four General Products*. The same space read as an algebra and the question of its base rings are *Introduction to the General Plain Algebra of Biquaternions* and, with the real scalars, *Biquaternions as an Algebra over $\mathbb{R}$*, and neither is repeated here. And the elements, the basis, the conjugations and the remarkable subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*, *Introduction to the Remarkable Subspaces* and *Decompositions Along the Remarkable Subspaces*; the subspaces are named here only as the two halves the involution cuts out.
 
 One word on the two scalar rules, because they are weaker than they look. They admit a product as soon as it is additive in each variable and sesquilinear for **some** involution of $\mathbb{C}$, so they admit all four general products of $\mathbb{B}$: the two bilinear ones for the trivial involution and the two carrying the star for the conjugation. The corresponding row of *Comparison Between the Four General Products* is therefore read with the definition and with nothing added, and it reads no, no, yes, yes: **both** products carrying the star are multiplications of a sesqualgebra over $\mathbb{C}$ with the conjugation, and the two bilinear ones are the trivial-involution collapse of the same definition. The section *Which of the Four Is a Sesquilinear Multiplication* draws that conclusion and then decides the sharper question, which of the four general products is the **derived operation** $\tilde X\star\tilde Y=\tilde X\tilde Y^{*}$ of the algebra $\mathbb{B}$ with its conjugate-linear involution; the answer is the general plain sesquilinear product alone, and that is the product this article is about.
 
@@ -153,7 +153,7 @@ $$
 
 **Remark.** The identity is the sesquilinear counterpart of the commutativity of a bilinear product: it does not make the product commutative, since $\tilde Q \star \tilde P$ is the transposed product of *The Sesquilinear Product* and not the value on the same ordered pair, but it does make the involution exchange the two arguments, and it is the reason the two halves below fit together. In the notation of the general theory it is the statement that the product is Hermitian-symmetric with respect to the involution.
 
-### The Two Halves Are the Distinguished Subspaces
+### The Two Halves Are the Remarkable Subspaces
 
 **Theorem.** The sets
 
@@ -167,11 +167,11 @@ $$
 H(\mathbb{B}) = \mathbb{M}_+ , \qquad S(\mathbb{B}) = \mathbb{M}_- ,
 $$
 
-and they are the fixed and the anti-fixed subspaces of ${}^{*}$; in particular $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ is the Hermitian decomposition of *Decompositions Along the Six Subspaces* and *Introduction to the Six Subspaces*.
+and they are the fixed and the anti-fixed subspaces of ${}^{*}$; in particular $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ is the Hermitian decomposition of *Decompositions Along the Remarkable Subspaces* and *Introduction to the Remarkable Subspaces*.
 
 **Proof.** The two definitions are the definitions of the fixed and anti-fixed sets of the involution ${}^{*}$ of the algebra, that is, of the Hermitian and the anti-Hermitian subspaces of *Biquaternions as a Vector Space over $\mathbb{C}$*; the decomposition into the two halves is the order-two property of the involution, in the form of *Hermitian and Skew-Hermitian Elements*. $\square$
 
-**Remark.** This is the first place where the sesquilinear reading meets the six distinguished subspaces: two of the six, $\mathbb{M}_+$ and $\mathbb{M}_-$, are the halves that the involution ${}^{*}$ of the sesquilinear datum cuts out, while the other four are the halves of the other conjugations (*Comparison of the Six Subspaces*). The pairing is not an analogy: the fixed and anti-fixed sets of an involution are the two halves of any sesqualgebra, and here they carry their corpus names.
+**Remark.** This is the first place where the sesquilinear reading meets the remarkable subspaces: two of the remarkable subspaces, $\mathbb{M}_+$ and $\mathbb{M}_-$, are the halves that the involution ${}^{*}$ of the sesquilinear datum cuts out, while the other four are the halves of the other conjugations (*Comparison of the Remarkable Subspaces*). The pairing is not an analogy: the fixed and anti-fixed sets of an involution are the two halves of any sesqualgebra, and here they carry their corpus names.
 
 ### The Other Exchange, and the Scalar and the Vector Part
 
@@ -222,7 +222,7 @@ a sum fixed by the complex conjugation.
 
 **Corollary.** The finite sums of the squares $\tilde Q \star \tilde Q$ are the elements of the **algebraic positive cone** $C(\mathbb{B})$ of *Hermitian Squares and the Algebraic Positive Cone*, and $\tilde Q \star \tilde Q = \tilde Q\tilde Q^{*}$ is the element the involution attaches to $\tilde Q$. The cone is generated by the squares of the sesquilinear product as much as by the squares of the involution, the two generating sets coinciding.
 
-**Caution on the two squares.** The square $\tilde Q\tilde Q^{*}$ of the sesquilinear multiplication is not the other square of the algebra, $\tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^{2}$, which is built on the $\mathbb{C}$-linear conjugation ${}^{\natural}$, is central, and vanishes exactly on the zero divisors; it is the central scalar on which invertibility turns (*Introduction to the Six Subspaces*). The square $\tilde Q\tilde Q^{*}$ is fixed by the involution ${}^{*}$ and its scalar part is the sum of the modulus squares displayed above. The two agree when all four coordinates are real, that is on the quaternion subspace, where the two conjugations coincide, and differ in general.
+**Caution on the two squares.** The square $\tilde Q\tilde Q^{*}$ of the sesquilinear multiplication is not the other square of the algebra, $\tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^{2}$, which is built on the $\mathbb{C}$-linear conjugation ${}^{\natural}$, is central, and vanishes exactly on the zero divisors; it is the central scalar on which invertibility turns (*Introduction to the Remarkable Subspaces*). The square $\tilde Q\tilde Q^{*}$ is fixed by the involution ${}^{*}$ and its scalar part is the sum of the modulus squares displayed above. The two agree when all four coordinates are real, that is on the quaternion subspace, where the two conjugations coincide, and differ in general.
 
 ## The Sesqualgebra as an Object
 
@@ -239,14 +239,14 @@ a sum fixed by the complex conjugation.
 **Proposition.** An element is idempotent for the sesquilinear multiplication, $\tilde Q \star \tilde Q = \tilde Q$, if and only if it is a Hermitian idempotent of the algebra; hence the idempotents of the multiplication are $0$, $e_0$, and the **pure states**
 
 $$
-\tilde\Pi_+(\hat\mu) = \tfrac12\bigl(e_0 + i\hat\mu\bigr) , \qquad \hat\mu \in \mathbb{R}^{3}, \ |\hat\mu| = 1 ,
+\tilde\Pi_1(\hat\mu) = \tfrac12\bigl(e_0 + i\hat\mu\bigr) , \qquad \hat\mu \in \mathbb{R}^{3}, \ |\hat\mu| = 1 ,
 $$
 
 indexed by the real unit vectors (*Conventions in Mathematics*, *Biquaternion Idempotents and Projections*).
 
 **Proof.** If $\tilde Q \star \tilde Q = \tilde Q$ then $\tilde Q\tilde Q^{*} = \tilde Q$, and applying ${}^{*}$ gives $\tilde Q\tilde Q^{*} = \tilde Q^{*}$ because the square is Hermitian, so $\tilde Q = \tilde Q^{*}$; hence $\tilde Q\tilde Q^{*} = \tilde Q^{2}$ and $\tilde Q$ is an idempotent of the algebra, Hermitian. Conversely a Hermitian idempotent satisfies $\tilde Q \star \tilde Q = \tilde Q\tilde Q^{*} = \tilde Q^{2} = \tilde Q$. The Hermitian idempotents of $\mathbb{B}$ are classified in *Biquaternion Idempotents and Projections*: the idempotents are the elements $\tfrac12(e_0 + \xi i)$ with $\xi$ a root of $-1$, and the Hermitian ones are those of the **real root** family, $\xi = \pm\mu$ with $\mu$ a unit pure real quaternion, that is the elements $\tfrac12(e_0 \pm \mu i)$, together with the trivial idempotents $0$ and $e_0$. $\square$
 
-**Remark.** The unit $e_0$ is idempotent on both sides, and each $\tilde\Pi_+(\hat\mu)$ is idempotent for the multiplication while being a Hermitian idempotent of the algebra, a pure state of *Biquaternion Idempotents and Projections*; the sesquilinear multiplication therefore has the same idempotents as the algebra has Hermitian ones, and none besides. The idempotents of the algebra that are not Hermitian, the non-trivial-root family of *Biquaternion Idempotents and Projections*, are **not** idempotent for the multiplication.
+**Remark.** The unit $e_0$ is idempotent on both sides, and each $\tilde\Pi_1(\hat\mu)$ is idempotent for the multiplication while being a Hermitian idempotent of the algebra, a pure state of *Biquaternion Idempotents and Projections*; the sesquilinear multiplication therefore has the same idempotents as the algebra has Hermitian ones, and none besides. The idempotents of the algebra that are not Hermitian, the non-trivial-root family of *Biquaternion Idempotents and Projections*, are **not** idempotent for the multiplication.
 
 ## The Four General Products and the Sesquilinear Structure
 
@@ -332,7 +332,7 @@ $$
 \boxed{\ \text{With the general plain sesquilinear product, } \mathbb{B} \text{ is a sesquilinear } \mathbb{C}\text{-algebra, neither associative nor commutative, with a right unit and the involution } {}^{*}. \ }
 $$
 
-The product has the unit $e_0$ on the right and none on the left, the left action by $e_0$ being the involution; it is neither associative nor commutative, by the collapse theorem, with the witnesses $(e_0,e_1,e_1)$ and $(e_1,e_2)$; the involution exchanges the two slots, $(\tilde P \star \tilde Q)^{*} = \tilde Q \star \tilde P$; the Hermitian and skew-Hermitian elements are the two distinguished subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$; the ternary product $\tilde P\tilde Q^{*}\tilde R$ makes $\mathbb{B}$ an algebraic $J^{*}$-algebra and recovers the multiplication and the involution by inserting the unit; the square $\tilde Q \star \tilde Q$ is fixed by the involution and its scalar part is the sum of the modulus squares of the coordinates; the two-sided ideals are $0$ and $\mathbb{B}$; and the idempotents of the multiplication are the Hermitian idempotents of the algebra.
+The product has the unit $e_0$ on the right and none on the left, the left action by $e_0$ being the involution; it is neither associative nor commutative, by the collapse theorem, with the witnesses $(e_0,e_1,e_1)$ and $(e_1,e_2)$; the involution exchanges the two slots, $(\tilde P \star \tilde Q)^{*} = \tilde Q \star \tilde P$; the Hermitian and skew-Hermitian elements are the two remarkable subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$; the ternary product $\tilde P\tilde Q^{*}\tilde R$ makes $\mathbb{B}$ an algebraic $J^{*}$-algebra and recovers the multiplication and the involution by inserting the unit; the square $\tilde Q \star \tilde Q$ is fixed by the involution and its scalar part is the sum of the modulus squares of the coordinates; the two-sided ideals are $0$ and $\mathbb{B}$; and the idempotents of the multiplication are the Hermitian idempotents of the algebra.
 
 Among the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, **both** products carrying the star are multiplications of a sesqualgebra over $\mathbb{C}$ with the conjugation, and the general plain sesquilinear product is the only one that is the **derived operation** $\tilde X\star\tilde Y=\tilde X\tilde Y^{*}$ of $\mathbb{B}$ with the conjugate-linear involution ${}^{*}$, in the sense of the two conditions (i) and (ii) of §*Which of the Four Is a Sesquilinear Multiplication*. The general quaternionic sesquilinear product shares the involution in the second slot and fails (ii), reading the first factor through the $\mathbb{C}$-linear ${}^{\natural}$ as well, and equivalently it has no right unit; the two bilinear products have $\sigma = \mathrm{id}$ and fail (i). The conjugation that does this is the star, the conjugate-linear involution; the natural sign ${}^{\natural}$ is $\mathbb{C}$-linear, so a second slot carrying it gives a bilinear product, which is the caution of *Sesqualgebras* made explicit on the biquaternion algebra. The row of *Comparison Between the Four General Products* that names the sesquilinear kind is read with the definition and not with the derived form, and it holds for both star-products; the derived form is the sharper property proved in this article.
 
@@ -353,7 +353,7 @@ Among the four general products of *The Four General Products of the Biquaternio
 | $\{\tilde P,\tilde Q,\tilde R\} = \tilde P\tilde Q^{*}\tilde R$ | the ternary product, the $J^{*}$-structure |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and the anti-Hermitian halves, $H(\mathbb{B})$ and $S(\mathbb{B})$ |
 | $C(\mathbb{B})$ | the algebraic positive cone, the sums of the squares $\tilde Q \star \tilde Q$ |
-| $\tilde\Pi_+(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ | the idempotents of the multiplication, $\hat\mu$ a real unit vector |
+| $\tilde\Pi_1(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ | the idempotents of the multiplication, $\hat\mu$ a real unit vector |
 
 ## Further Reading
 

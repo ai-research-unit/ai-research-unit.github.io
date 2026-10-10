@@ -73,13 +73,13 @@ The entropy is a function of the single algebraic invariant $N(\tilde{\rho})$, w
 
 The entropy can equally be read off from the Born pairing, which is the framework's primitive. For the two idempotents along the Bloch direction,
 $$
-\tilde\Pi_\pm = \tfrac12\bigl(e_0 \pm i\mathbf{r}/|\mathbf{r}|\bigr),
+\tilde\Pi_{1,2} = \tfrac12\bigl(e_0 \pm i\mathbf{r}/|\mathbf{r}|\bigr),
 \qquad
-\tilde\Pi_\pm^2 = \tilde\Pi_\pm,\quad \tilde\Pi_+\tilde\Pi_- = 0,\quad \tilde\Pi_+ + \tilde\Pi_- = e_0 ,
+\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2},\quad \tilde\Pi_1\tilde\Pi_2 = 0,\quad \tilde\Pi_1 + \tilde\Pi_2 = e_0 ,
 $$
 the Born weights of the state are the trace pairings
 $$
-w_\pm = \frac{\mathrm{Tr}(\tilde{\rho}\tilde\Pi_\pm)}{\mathrm{Tr}(\tilde\Pi_\pm)} = \frac{1\pm|\mathbf{r}|}{2},
+w_\pm = \frac{\mathrm{Tr}(\tilde{\rho}\tilde\Pi_{1,2})}{\mathrm{Tr}(\tilde\Pi_{1,2})} = \frac{1\pm|\mathbf{r}|}{2},
 \qquad w_+ + w_- = 1 ,
 $$
 and the von Neumann entropy is the Shannon entropy of these two weights,

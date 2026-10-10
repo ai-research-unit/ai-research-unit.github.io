@@ -217,5 +217,5 @@ The four general products of the biquaternion algebra are one multiplication wit
 - *The Signed Sandwich on a Clifford Algebra* (`articles_maths/the-signed-sandwich-on-a-clifford-algebra.md`), for the ordinary sandwich, its minus sign and the repair by the grade involution
 - *Two-Sided Operators with the Signed Product* (`articles_maths/two-sided-operators-with-the-signed-product.md`), for the signed family, its twisted composition law and its coset structure
 - *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.md`), for the parameter insertion in the biquaternion model
-- *The Six Subspaces and the Four General Products* (`articles_maths/the-six-subspaces-and-the-four-general-products.md`), for the four general products read on the six distinguished real subspaces
+- *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the four general products read on the remarkable real subspaces
 - *Biquaternion Versors and the Orthogonal Group* (`articles_maths/biquaternion-versors-and-the-orthogonal-group.md`), for the parity, the determinant and the Lorentz group

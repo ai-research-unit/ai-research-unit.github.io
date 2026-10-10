@@ -26,9 +26,9 @@ Matching the matrix form $\Phi(\tilde{Q})=uv^{T}$ of *The 2×2 Matrix Element Re
 
 ## Spinors as the Minimal Left Ideals
 
-The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$, where $\tilde\Pi_\pm=\tfrac12(e_0\pm i\hat{\mathbf{u}})$ are a complete pair of orthogonal idempotents (*Biquaternion Idempotents and Projections*, *Biquaternion Ideals and Peirce Decomposition*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
+The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, where $\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\hat{\mathbf{u}})$ are a complete pair of orthogonal idempotents (*Biquaternion Idempotents and Projections*, *Biquaternion Ideals and Peirce Decomposition*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
 $$
-\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-,
+\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2,
 $$
 so that the module of the spin representation is realised inside the algebra as a minimal left ideal. The two ideals themselves are not the chiral halves: each of them complexifies to the sum $S_+\oplus S_-$ of the two chiral spaces. The chirality belongs to the algebra, $\mathbb{B}\cong\Delta^+\otimes\Delta^-$, and the two families of null planes of the quadric are the projectivisations of the two chiral spaces $\Delta^\pm$. The construction of the module is *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Simple Module*, and *Biquaternion Ideals and Peirce Decomposition*; only the identification with the ideals is used here.
 
@@ -76,7 +76,7 @@ The two Clifford structures of the algebra give two different spinor modules, an
 
 The spin geometry of the biquaternion algebra rests on the identification of the algebra with an even Clifford algebra. The spinor module is the natural module of $M_2(\mathbb{C})$, of complex dimension $2$; it carries the Clifford multiplication $c(\gamma_k)=\sigma_k$, $c(\omega)=iI$, so the volume element acts as a scalar and does not grade the module; the chiral halves appear only on complexification, where they are the $\pm i$ eigenspaces of $c(\omega)$, and the reality type is complex, so there is no Majorana spinor. Its two chiral halves $\Delta^\pm$ are the two simple summands of the even part, and a biquaternion is the mixed spinor $A_\alpha{}^{\dot\beta}\in\Delta^+\otimes\Delta^-$. The null condition on a mixed spinor is factorisability, $A_\alpha{}^{\dot\beta}=\phi_\alpha\pi^{\dot\beta}$, and the two rulings of the null quadric — the primed and unprimed spinor lines — are the families traced by fixing one factor.
 
-The module is realised inside the algebra as a minimal left ideal, the algebra being the direct sum $\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ of the two ideals cut out by a complete pair of orthogonal idempotents; the two ideals are isomorphic, and each of them complexifies to $S_+\oplus S_-$, so neither is itself a chiral half. The Dirac operator is the constant-coefficient operator $D=\sum_\mu e_\mu\partial_\mu$ with $D^2=\Box$, defined by the Clifford multiplication alone and invariant under the motions of the form. Its analytic theory is in Analysis and the general theory in Part IV, both cited.
+The module is realised inside the algebra as a minimal left ideal, the algebra being the direct sum $\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ of the two ideals cut out by a complete pair of orthogonal idempotents; the two ideals are isomorphic, and each of them complexifies to $S_+\oplus S_-$, so neither is itself a chiral half. The Dirac operator is the constant-coefficient operator $D=\sum_\mu e_\mu\partial_\mu$ with $D^2=\Box$, defined by the Clifford multiplication alone and invariant under the motions of the form. Its analytic theory is in Analysis and the general theory in Part IV, both cited.
 
 The algebra carries two Clifford structures, and with them two spinor modules: the module of Minkowski space, from $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$, and the module of the algebra as a quadratic space, from $\mathrm{Cl}(\mathbb{B},N)$. Both are two-dimensional over $\mathbb{C}$; the algebra is the even Clifford algebra of the one quadratic space and a quadratic space in its own right, and it is the bridge between the two.
 
@@ -93,8 +93,8 @@ The algebra carries two Clifford structures, and with them two spinor modules: t
 | $\mathbb{B}\cong\Delta^+\otimes\Delta^-$ | Biquaternion as a mixed spinor |
 | $A_\alpha{}^{\dot\beta}=\phi_\alpha\pi^{\dot\beta}$ | Factorisation of a null biquaternion |
 | $\ell_{[\phi]}\cong\mathbb{P}(\Delta^-)$, $m_{[\pi]}\cong\mathbb{P}(\Delta^+)$ | The two rulings, as the primed and unprimed spinor lines |
-| $\tilde\Pi_\pm$ | Complete pair of orthogonal idempotents; $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ |
-| $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$ | Minimal left ideal; the module of the spin representation |
+| $\tilde\Pi_{1,2}$ | Complete pair of orthogonal idempotents; $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ |
+| $\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$ | Minimal left ideal; the module of the spin representation |
 | $D=\sum_\mu e_\mu\partial_\mu$ | Dirac operator; $D^2=\Box$ |
 | $\mathrm{Cl}(\mathbb{B},N)\cong\mathrm{Cl}_4(\mathbb{C})$ | Clifford algebra of the biquaternion norm; even part holds the two chiralities |
 | $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ | The algebra as the even Clifford algebra of Minkowski space |

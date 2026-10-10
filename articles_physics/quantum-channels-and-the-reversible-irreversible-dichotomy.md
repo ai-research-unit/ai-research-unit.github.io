@@ -16,7 +16,7 @@ The conventions are those of the companion articles: the quaternion basis $e_0 =
 
 ## The State Space and the Trace Pairing
 
-A state of the informational sector is an element $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ of $\mathbb{M}_+$ with $\mathbf{r} \in \mathbb{R}^3$, positive if and only if $|\mathbf{r}| \leq 1$. The states form the Bloch ball, whose boundary is the set of pure states; these are exactly the idempotents $\tilde\Pi_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$, with $\hat{\mu}$ a unit pure real quaternion. Every state has trace one, $\mathrm{Tr}(\tilde{\rho}) = 2\,\mathrm{Sc}(\tilde{\rho}) = 1$.
+A state of the informational sector is an element $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ of $\mathbb{M}_+$ with $\mathbf{r} \in \mathbb{R}^3$, positive if and only if $|\mathbf{r}| \leq 1$. The states form the Bloch ball, whose boundary is the set of pure states; these are exactly the idempotents $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$, with $\hat{\mu}$ a unit pure real quaternion. Every state has trace one, $\mathrm{Tr}(\tilde{\rho}) = 2\,\mathrm{Sc}(\tilde{\rho}) = 1$.
 
 An observable is a general Hermitian element $\tilde{H} = h_0 e_0 + i\mathbf{h}$, and the **trace pairing**
 
@@ -165,28 +165,28 @@ with $\tilde{H} \in \mathbb{M}_+$ Hermitian, $\tilde{L}_k \in \mathbb{B}$ arbitr
 
 ### Definition and Kraus Form
 
-Dephasing destroys the phase coherence between the two eigenstates of a chosen direction without changing their populations. Let $\hat{\mathbf{n}}$ be a unit pure real quaternion and $\tilde\Pi_+(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{n}})$, $\tilde\Pi_-(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 - i\hat{\mathbf{n}})$ the complementary idempotents along $\hat{\mathbf{n}}$. For $p \in [0,1]$, the **dephasing channel** along $\hat{\mathbf{n}}$ is
+Dephasing destroys the phase coherence between the two eigenstates of a chosen direction without changing their populations. Let $\hat{\mathbf{n}}$ be a unit pure real quaternion and $\tilde\Pi_1(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{n}})$, $\tilde\Pi_2(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 - i\hat{\mathbf{n}})$ the complementary idempotents along $\hat{\mathbf{n}}$. For $p \in [0,1]$, the **dephasing channel** along $\hat{\mathbf{n}}$ is
 
 $$
 \Phi^{\mathrm{deph}}_p(\tilde{\rho})
 = (1-p)\,\tilde{\rho}
-+ p\left(\tilde\Pi_+\,\tilde{\rho}\,\tilde\Pi_+ + \tilde\Pi_-\,\tilde{\rho}\,\tilde\Pi_-\right).
++ p\left(\tilde\Pi_1\,\tilde{\rho}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{\rho}\,\tilde\Pi_2\right).
 $$
 
-It is completely positive and trace preserving with the three Kraus operators $\tilde{K}_0 = \sqrt{1-p}\,e_0$, $\tilde{K}_1 = \sqrt{p}\,\tilde\Pi_+(\hat{\mathbf{n}})$, $\tilde{K}_2 = \sqrt{p}\,\tilde\Pi_-(\hat{\mathbf{n}})$: because the idempotents are Hermitian, $\tilde{K}_1^{*}\tilde{K}_1 + \tilde{K}_2^{*}\tilde{K}_2 = p(\tilde\Pi_+ + \tilde\Pi_-) = p\,e_0$, and the normalization sums to $(1-p)e_0 + p\,e_0 = e_0$.
+It is completely positive and trace preserving with the three Kraus operators $\tilde{K}_0 = \sqrt{1-p}\,e_0$, $\tilde{K}_1 = \sqrt{p}\,\tilde\Pi_1(\hat{\mathbf{n}})$, $\tilde{K}_2 = \sqrt{p}\,\tilde\Pi_2(\hat{\mathbf{n}})$: because the idempotents are Hermitian, $\tilde{K}_1^{*}\tilde{K}_1 + \tilde{K}_2^{*}\tilde{K}_2 = p(\tilde\Pi_1 + \tilde\Pi_2) = p\,e_0$, and the normalization sums to $(1-p)e_0 + p\,e_0 = e_0$.
 
 ### The Bloch Vector Formula
 
-Put $\alpha = i\hat{\mathbf{n}}$, so that $\tilde\Pi_\pm = \tfrac{1}{2}(e_0 \pm \alpha)$ with $\alpha^\dagger = \alpha$ and $\alpha^2 = e_0$. A direct expansion gives
+Put $\alpha = i\hat{\mathbf{n}}$, so that $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \alpha)$ with $\alpha^\dagger = \alpha$ and $\alpha^2 = e_0$. A direct expansion gives
 
 $$
-\tilde\Pi_+\,\tilde{Q}\,\tilde\Pi_+ + \tilde\Pi_-\,\tilde{Q}\,\tilde\Pi_- = \tfrac{1}{2}\left(\tilde{Q} + \alpha\,\tilde{Q}\,\alpha\right),
+\tilde\Pi_1\,\tilde{Q}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Q}\,\tilde\Pi_2 = \tfrac{1}{2}\left(\tilde{Q} + \alpha\,\tilde{Q}\,\alpha\right),
 $$
 
 since the cross terms cancel between the two projectors. For a state $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$, the elementary products are $\alpha\,e_0\,\alpha = \alpha^2 = e_0$ and $\alpha\,(i\mathbf{r})\,\alpha = -i\,\hat{\mathbf{n}}\,\mathbf{r}\,\hat{\mathbf{n}} = -i(\mathbf{r} - 2(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}})$, using $\hat{\mathbf{n}}\,\mathbf{r}\,\hat{\mathbf{n}} = \mathbf{r} - 2(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$. Combining,
 
 $$
-\tilde\Pi_+\tilde{\rho}\tilde\Pi_+ + \tilde\Pi_-\tilde{\rho}\tilde\Pi_-
+\tilde\Pi_1\tilde{\rho}\tilde\Pi_1 + \tilde\Pi_2\tilde{\rho}\tilde\Pi_2
 = \tfrac{1}{2}\left(e_0 + i(\hat{\mathbf{n}}\cdot\mathbf{r})\,\hat{\mathbf{n}}\right),
 $$
 
@@ -205,9 +205,9 @@ The transverse components of the Bloch vector are multiplied by $1-p$, while the
 At $p = 0$ the channel is the identity, a reversible unitary evolution. At $p = 1$ it is **full dephasing**, $\Phi^{\mathrm{deph}}_1(\tilde{\rho}) = \tfrac{1}{2}(e_0 + i(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}})$, whose image is the diameter of the Bloch ball along $\hat{\mathbf{n}}$; it is idempotent, $(\Phi^{\mathrm{deph}}_1)^2 = \Phi^{\mathrm{deph}}_1$, and non-unitary. Full dephasing is **measure-and-forget**: measuring $\alpha = i\hat{\mathbf{n}}$ and discarding the outcome leaves the average state
 
 $$
-p_+\,\tilde\Pi_+ + p_-\,\tilde\Pi_- = \Phi^{\mathrm{deph}}_1(\tilde{\rho}),
+p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = \Phi^{\mathrm{deph}}_1(\tilde{\rho}),
 \qquad
-p_\pm = \mathrm{Tr}(\tilde\Pi_\pm\tilde{\rho}) = \tfrac{1}{2}\left(1 \pm \hat{\mathbf{n}}\cdot\mathbf{r}\right),
+p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho}) = \tfrac{1}{2}\left(1 \pm \hat{\mathbf{n}}\cdot\mathbf{r}\right),
 $$
 
 as a direct computation confirms. The three-Kraus form shows that $\Phi^{\mathrm{deph}}_p$ is a convex mixture, with weight $p$, of this measurement channel and the identity; since the identity is reversible and full dephasing is not, the channel set is convex with its reversible elements among its extreme points.
@@ -298,7 +298,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ | State of the informational sector |
 | $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | Observable / Hamiltonian |
-| $\tilde\Pi_\pm(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 \pm i\hat{\mathbf{n}})$ | Idempotents (pure states) |
+| $\tilde\Pi_{1,2}(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 \pm i\hat{\mathbf{n}})$ | Idempotents (pure states) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $\Phi(\tilde{\rho}) = \sum_l \tilde{K}_l\tilde{\rho}\tilde{K}_l^{*}$ | Kraus representation of a channel |
 | $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_0$ | Trace-preservation condition |

@@ -217,7 +217,7 @@ For $A = \mathbb{H}$ with the quaternion conjugation over $(\mathbb{R},\mathrm{i
 
 ### The Biquaternion Algebra
 
-For $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the star-involution the commutator makes $\mathbb{B}$ a Lie algebra over $\mathbb{C}$, isomorphic to $\mathfrak{gl}(2,\mathbb{C})$, with the trace-free part isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, and the skew-Hermitian elements form the Lie subalgebra $\mathbb{M}_{-}$ of *The Six Subspaces and the Four General Products* and *The 12 Products of the Biquaternion Complex Space*. That layer also exhibits the failure of the theorem above: of the four antisymmetrisations of the four general products of the biquaternion algebra exactly the commutator satisfies Jacobi, the star-bracket failing it at the triple $(e_1,e_2,ie_3)$ with the value $4ie_0$.
+For $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the star-involution the commutator makes $\mathbb{B}$ a Lie algebra over $\mathbb{C}$, isomorphic to $\mathfrak{gl}(2,\mathbb{C})$, with the trace-free part isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, and the skew-Hermitian elements form the Lie subalgebra $\mathbb{M}_{-}$ of *Remarkable Subspaces and the Four General Products* and *The 12 Products of the Biquaternion Complex Space*. That layer also exhibits the failure of the theorem above: of the four antisymmetrisations of the four general products of the biquaternion algebra exactly the commutator satisfies Jacobi, the star-bracket failing it at the triple $(e_1,e_2,ie_3)$ with the value $4ie_0$.
 
 ## Summary
 

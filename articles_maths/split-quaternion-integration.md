@@ -181,26 +181,26 @@ the distribution obtained by applying $D$ to the fundamental solution of the wav
 **Theorem (The Kernel of the Vector Operator).** The kernel of $D$ is large. For every smooth scalar function $h$ of one variable,
 
 $$
-D\big(\tilde\pi_+\, h(q_1-q_3)\big) = 0 \qquad\text{and}\qquad D\big(h(q_1+q_3)\,\tilde\pi_-\big) = 0 ,
+D\big(\tilde\pi_1\, h(q_1-q_3)\big) = 0 \qquad\text{and}\qquad D\big(h(q_1+q_3)\,\tilde\pi_2\big) = 0 ,
 $$
 
-with $\tilde\pi_\pm = \tfrac12(1\pm e_2)$ the idempotents. Both families contain nonzero compactly supported functions: $\tilde\pi_+\chi(q_1-q_3)$ with $\chi$ a smooth bump vanishes outside a strip and is not zero.
+with $\tilde\pi_{1,2} = \tfrac12(1\pm e_2)$ the idempotents. Both families contain nonzero compactly supported functions: $\tilde\pi_1\chi(q_1-q_3)$ with $\chi$ a smooth bump vanishes outside a strip and is not zero.
 
 **Proof.** The products of a generator with an idempotent are
 
 $$
-e_1\tilde\pi_+ = e_3\tilde\pi_+ = \tfrac12(e_1+e_3), \qquad e_2\tilde\pi_+ = \tilde\pi_+, \qquad e_1\tilde\pi_- = -e_3\tilde\pi_- = \tfrac12(e_1-e_3), \qquad e_2\tilde\pi_- = -\tilde\pi_- ,
+e_1\tilde\pi_1 = e_3\tilde\pi_1 = \tfrac12(e_1+e_3), \qquad e_2\tilde\pi_1 = \tilde\pi_1, \qquad e_1\tilde\pi_2 = -e_3\tilde\pi_2 = \tfrac12(e_1-e_3), \qquad e_2\tilde\pi_2 = -\tilde\pi_2 ,
 $$
 
 so for a scalar function $h$
 
 $$
-D(\tilde\pi_+h) = \tfrac12(e_1+e_3)\big(\partial_{q_1}h+\partial_{q_3}h\big) + \tilde\pi_+\,\partial_{q_2}h, \qquad D(h\tilde\pi_-) = \tfrac12(e_1-e_3)\big(\partial_{q_1}h-\partial_{q_3}h\big) - \tilde\pi_-\,\partial_{q_2}h ,
+D(\tilde\pi_1h) = \tfrac12(e_1+e_3)\big(\partial_{q_1}h+\partial_{q_3}h\big) + \tilde\pi_1\,\partial_{q_2}h, \qquad D(h\tilde\pi_2) = \tfrac12(e_1-e_3)\big(\partial_{q_1}h-\partial_{q_3}h\big) - \tilde\pi_2\,\partial_{q_2}h ,
 $$
 
-and both right-hand sides vanish for the stated $h$, since $\partial_{q_2}h = 0$ and $\partial_{q_1}h = \mp\partial_{q_3}h$ for $h = h(q_1\mp q_3)$. The four elements $\tilde\pi_+$, $\tilde\pi_-$, $\tfrac12(e_1+e_3)$, $\tfrac12(e_1-e_3)$ occurring here are a basis of the algebra, so the two identities are read off the multiplication table and are exact.
+and both right-hand sides vanish for the stated $h$, since $\partial_{q_2}h = 0$ and $\partial_{q_1}h = \mp\partial_{q_3}h$ for $h = h(q_1\mp q_3)$. The four elements $\tilde\pi_1$, $\tilde\pi_2$, $\tfrac12(e_1+e_3)$, $\tfrac12(e_1-e_3)$ occurring here are a basis of the algebra, so the two identities are read off the multiplication table and are exact.
 
-**Corollary (Consequences of the Kernel).** No unique continuation, no identity theorem, no maximum principle and no Liouville theorem hold for the solutions of $Df = 0$: the function $\tilde\pi_+\chi(q_1-q_3)$ with $\chi$ supported in $[1,2]$ is a nonzero solution vanishing on the open half-space $q_1-q_3<1$, so the zero set of a nonzero solution can have interior points and no rigidity of the elliptic type survives.
+**Corollary (Consequences of the Kernel).** No unique continuation, no identity theorem, no maximum principle and no Liouville theorem hold for the solutions of $Df = 0$: the function $\tilde\pi_1\chi(q_1-q_3)$ with $\chi$ supported in $[1,2]$ is a nonzero solution vanishing on the open half-space $q_1-q_3<1$, so the zero set of a nonzero solution can have interior points and no rigidity of the elliptic type survives.
 
 **Corollary (No Right Inverse).** There is no identity $f = E_D*(Df)$ valid for all compactly supported smooth $f$, and therefore no Cauchy–Pompeiu formula of the elliptic type: the identity would give $f = E_D*0 = 0$ for the nonzero compactly supported solutions of the kernel theorem.
 
@@ -275,7 +275,7 @@ There is no Cauchy integral formula: the candidate kernel $(\tilde q-\tilde p)^{
 | $E$ | the fundamental solution of $\Box_{(2,1)}$, supported on the cone | *Distributions and Fundamental Solutions* |
 | $E_D = DE$ | the fundamental solution of $D$ | this article |
 | $f = D(E_D*f)$ | the inversion on the left | this article |
-| $\tilde\pi_+h(q_1-q_3)$, $h(q_1+q_3)\tilde\pi_-$ | the two families in the kernel of $D$ | this article |
+| $\tilde\pi_1h(q_1-q_3)$, $h(q_1+q_3)\tilde\pi_2$ | the two families in the kernel of $D$ | this article |
 | $C$, $\partial C$ | the future cone and the light cone | *Split-Quaternion Geometry* |
 
 ## Further Reading

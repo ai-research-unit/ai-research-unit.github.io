@@ -136,7 +136,7 @@ $$
 
 **Proof.** The condition $\bar A = A$ is $a' = 0$, and $\bar A = -A$ is $a = 0$; the two sets are the coordinate axes, of dimension one each.
 
-The two conditions partition the two real coordinates, so the decomposition $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ is the splitting of the pair $(a,a')$ into its two components. The two subspaces are the two coordinate blocks $\langle 1 \rangle$ and $\langle i \rangle$ of *Complex Subspaces*. In the four-vector realization the six subspaces are the coordinate conditions on four complex components, some of them mixing the real and imaginary parts; here there are two conditions on two real components, and no mixing is possible.
+The two conditions partition the two real coordinates, so the decomposition $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ is the splitting of the pair $(a,a')$ into its two components. The two subspaces are the two coordinate blocks $\langle 1 \rangle$ and $\langle i \rangle$ of *Complex Subspaces*. In the four-vector realization the remarkable subspaces are the coordinate conditions on four complex components, some of them mixing the real and imaginary parts; here there are two conditions on two real components, and no mixing is possible.
 
 ## The Norm
 

@@ -259,7 +259,7 @@ symmetrisation of two material operations leaves the sector.
 
 *Proof.* The anticommutator of two anti-Hermitian elements is Hermitian and the commutator is
 anti-Hermitian, as the display records; the closure failure is the case
-$ie_0\bullet ie_0=(ie_0)^{2}=-e_0$ of *The Six Subspaces under the Symmetric Plain Algebra of
+$ie_0\bullet ie_0=(ie_0)^{2}=-e_0$ of *Remarkable Subspaces under the Symmetric Plain Algebra of
 Biquaternions*. Verified on random pairs of $\mathbb{M}_-$ elements.
 
 **Proposed reading, labelled as such.** The symmetrised plain product is read as the **order-free

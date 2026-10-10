@@ -5,7 +5,7 @@
 
 This article determines the solutions of the equation $\xi^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.
 
-The split-quaternion algebra, its basis, its vector subspace $V$, its central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_\pm$ and its conjugation are assumed from *Split-Quaternion Algebra*; the metrical reading of $N$ is in *Split-Quaternion Norm and Invertibility*. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
+The split-quaternion algebra, its basis, its vector subspace $V$, its central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its conjugation are assumed from *Split-Quaternion Algebra*; the metrical reading of $N$ is in *Split-Quaternion Norm and Invertibility*. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
 
 ## The Equation and the Reduction to the Vector Subspace
 
@@ -127,9 +127,9 @@ $$
 p_+ = \tfrac{1}{2}(1 + \eta), \qquad p_- = \tfrac{1}{2}(1 - \eta)
 $$
 
-are idempotents with $p_+ + p_- = 1$ and $p_+ p_- = 0$, and they are zero divisors. The idempotents $\tilde\pi_\pm$ of (*Split-Quaternion Algebra*, §*The Idempotents*) are the case $\eta = e_2$. Conversely every non-scalar idempotent of $\mathbb{H}_{\mathrm{s}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.
+are idempotents with $p_+ + p_- = 1$ and $p_+ p_- = 0$, and they are zero divisors. The idempotents $\tilde\pi_{1,2}$ of (*Split-Quaternion Algebra*, §*The Idempotents*) are the case $\eta = e_2$. Conversely every non-scalar idempotent of $\mathbb{H}_{\mathrm{s}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.
 
-**Proof.** The identities are the same computation as for $\tilde\pi_\pm$: $\big(\tfrac12(1\pm\eta)\big)^2 = \tfrac14(1 \pm 2\eta + \eta^2) = \tfrac12(1\pm\eta)$, and the products and the sum follow from $\eta^2=1$. The product that decides the zero divisor is
+**Proof.** The identities are the same computation as for $\tilde\pi_{1,2}$: $\big(\tfrac12(1\pm\eta)\big)^2 = \tfrac14(1 \pm 2\eta + \eta^2) = \tfrac12(1\pm\eta)$, and the products and the sum follow from $\eta^2=1$. The product that decides the zero divisor is
 
 $$
 \Big(\tfrac12(1+\eta)\Big)\overline{\Big(\tfrac12(1+\eta)\Big)} = \tfrac14(1+\eta)(1-\eta) = \tfrac14(1-\eta^2) = 0,
@@ -186,7 +186,7 @@ Each solution is a vector of the vector subspace with $\operatorname{Sc} = 0$ an
 
 The solutions form a single conjugacy class, the class of $e_1$; the stabiliser of $e_1$ is its centraliser $\mathbb{C}^{\times}$, so the root set is the homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$, of real dimension two. The group $U \cong \mathrm{SL}_2(\mathbb{R})$ acts with two orbits, the two components, and each component is a copy of the hyperbolic plane $\mathrm{SL}_2(\mathbb{R})/SO(2)$.
 
-The roots of $+1$ play the companion role: they are $\pm 1$ together with the level set $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $\tilde\pi_\pm$ are the case $\eta = e_2$. Every solution of $\xi^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected two-dimensional set and the homogeneous space is $Sp(1)/U(1)$; the biquaternion case is a later system of Part V, named and pointed forward.
+The roots of $+1$ play the companion role: they are $\pm 1$ together with the level set $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $\tilde\pi_{1,2}$ are the case $\eta = e_2$. Every solution of $\xi^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected two-dimensional set and the homogeneous space is $Sp(1)/U(1)$; the biquaternion case is a later system of Part V, named and pointed forward.
 
 ## Summary of Notation
 

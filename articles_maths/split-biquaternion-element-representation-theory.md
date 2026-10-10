@@ -14,7 +14,7 @@ The algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H
 - the real numbers $\mathbb{R}$, over which $\mathbb{H}_{\mathbb{D}}$ has dimension $8$;
 - the split complex algebra $\mathbb{D}$, over which it is a free module of rank $4$ and a $\mathbb{D}$-algebra.
 
-The idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ of the centre give the **Peirce decomposition** of every module, and are the key to the whole theory. Because $\tilde\Pi_+ + \tilde\Pi_- = 1$ and $\tilde\Pi_+ \tilde\Pi_- = 0$, the algebra splits as a product
+The idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ of the centre give the **Peirce decomposition** of every module, and are the key to the whole theory. Because $\tilde\Pi_1 + \tilde\Pi_2 = 1$ and $\tilde\Pi_1 \tilde\Pi_2 = 0$, the algebra splits as a product
 
 $$
 \varphi : \mathbb{H}_{\mathbb{D}} \longrightarrow \mathbb{H} \oplus \mathbb{H} , \qquad \varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) ,
@@ -23,16 +23,16 @@ $$
 and every left $\mathbb{H}_{\mathbb{D}}$-module $M$ splits as
 
 $$
-M = \tilde\Pi_+ M \oplus \tilde\Pi_- M ,
+M = \tilde\Pi_1 M \oplus \tilde\Pi_2 M ,
 $$
 
-with $\tilde\Pi_\pm$ acting as the two projections. On $\tilde\Pi_+ M$ the algebra acts through the first factor $\mathbb{H}$, and on $\tilde\Pi_- M$ through the second.
+with $\tilde\Pi_{1,2}$ acting as the two projections. On $\tilde\Pi_1 M$ the algebra acts through the first factor $\mathbb{H}$, and on $\tilde\Pi_2 M$ through the second.
 
 ## Representations over the Split Complex Numbers
 
-**Theorem.** A left $\mathbb{H}_{\mathbb{D}}$-module is the same thing as a pair $(M_+, M_-)$ of left $\mathbb{H}$-modules, and the passage to the pair is by $M \mapsto (\tilde\Pi_+ M, \tilde\Pi_- M)$.
+**Theorem.** A left $\mathbb{H}_{\mathbb{D}}$-module is the same thing as a pair $(M_+, M_-)$ of left $\mathbb{H}$-modules, and the passage to the pair is by $M \mapsto (\tilde\Pi_1 M, \tilde\Pi_2 M)$.
 
-**Proof.** For a left $\mathbb{H}_{\mathbb{D}}$-module $M$, the central idempotents $\tilde\Pi_\pm$ act as commuting projections with $\tilde\Pi_+ + \tilde\Pi_- = 1$, giving the direct sum decomposition, and each piece is stable under the algebra, which acts through the corresponding factor of $\mathbb{H} \oplus \mathbb{H}$. Conversely two $\mathbb{H}$-modules $M_+, M_-$ form an $\mathbb{H}_{\mathbb{D}}$-module $M_+ \oplus M_-$ with $(\tilde{Q}_+, \tilde{Q}_-)(m_+, m_-) = (\tilde{Q}_+ m_+, \tilde{Q}_- m_-)$, and the two constructions are inverse.
+**Proof.** For a left $\mathbb{H}_{\mathbb{D}}$-module $M$, the central idempotents $\tilde\Pi_{1,2}$ act as commuting projections with $\tilde\Pi_1 + \tilde\Pi_2 = 1$, giving the direct sum decomposition, and each piece is stable under the algebra, which acts through the corresponding factor of $\mathbb{H} \oplus \mathbb{H}$. Conversely two $\mathbb{H}$-modules $M_+, M_-$ form an $\mathbb{H}_{\mathbb{D}}$-module $M_+ \oplus M_-$ with $(\tilde{Q}_+, \tilde{Q}_-)(m_+, m_-) = (\tilde{Q}_+ m_+, \tilde{Q}_- m_-)$, and the two constructions are inverse.
 
 Since the quaternion algebra $\mathbb{H}$ is a division algebra, every $\mathbb{H}$-module is free: the category $\mathbb{H}\text{-}\mathrm{Mod}$ is the category of free $\mathbb{H}$-modules, and its simple objects are the one-dimensional $\mathbb{H}$-modules, isomorphic to $\mathbb{H}$ itself.
 
@@ -48,7 +48,7 @@ each of real dimension $4$, and each isomorphic as an $\mathbb{H}$-module to $\m
 
 The **regular representation** is therefore the regular bimodule $\mathbb{H}_{\mathbb{D}}$, which as a left module is $S_+ \oplus S_-$. By Wedderburn's theorem the algebra is isomorphic to the product of the endomorphism rings of its simple modules, $\mathbb{H} \oplus \mathbb{H}$, which is the splitting already used.
 
-The two minimal two-sided ideals $\mathbb{H}\tilde\Pi_\pm$, viewed as left $\mathbb{D}$-modules, are projective but not free: each is a direct summand of the free $\mathbb{D}$-module $\mathbb{H}_{\mathbb{D}}$, while the annihilator of $\mathbb{H}\tilde\Pi_+$ contains $j-1$ and that of $\mathbb{H}\tilde\Pi_-$ contains $j+1$, so neither is free, a free $\mathbb{D}$-module being faithful.
+The two minimal two-sided ideals $\mathbb{H}\tilde\Pi_{1,2}$, viewed as left $\mathbb{D}$-modules, are projective but not free: each is a direct summand of the free $\mathbb{D}$-module $\mathbb{H}_{\mathbb{D}}$, while the annihilator of $\mathbb{H}\tilde\Pi_1$ contains $j-1$ and that of $\mathbb{H}\tilde\Pi_2$ contains $j+1$, so neither is free, a free $\mathbb{D}$-module being faithful.
 
 ## Schur's Lemma and Intertwiners
 
@@ -58,11 +58,11 @@ $$
 \operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_+, S_-) = \operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_-, S_+) = 0 , \qquad \operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S_\pm) \cong \mathbb{H}^{\mathrm{op}} \cong \mathbb{H} .
 $$
 
-**Proof.** Schur's lemma is standard. Because a homomorphism preserves the action of the central idempotents, it must carry $\tilde\Pi_+ T$ to $\tilde\Pi_+ T$ and vanishes on the other summand; hence a homomorphism $S_+ \to S_-$ vanishes, and one $S_+ \to S_+$ is an $\mathbb{H}$-linear endomorphism of the free rank-one module $\mathbb{H}$, that is right multiplication by a quaternion, which is $\mathbb{H}^{\mathrm{op}}$.
+**Proof.** Schur's lemma is standard. Because a homomorphism preserves the action of the central idempotents, it must carry $\tilde\Pi_1 T$ to $\tilde\Pi_1 T$ and vanishes on the other summand; hence a homomorphism $S_+ \to S_-$ vanishes, and one $S_+ \to S_+$ is an $\mathbb{H}$-linear endomorphism of the free rank-one module $\mathbb{H}$, that is right multiplication by a quaternion, which is $\mathbb{H}^{\mathrm{op}}$.
 
-The division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$ is the analogue of the field $\mathbb{C}$ appearing in the biquaternion case through $\mathbb{B} \cong M_2(\mathbb{C})$. The non-isomorphism of the two simple modules is the module-theoretic expression of the fact that $\tilde\Pi_+ \mathbb{H}_{\mathbb{D}} \tilde\Pi_- = 0$.
+The division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$ is the analogue of the field $\mathbb{C}$ appearing in the biquaternion case through $\mathbb{B} \cong M_2(\mathbb{C})$. The non-isomorphism of the two simple modules is the module-theoretic expression of the fact that $\tilde\Pi_1 \mathbb{H}_{\mathbb{D}} \tilde\Pi_2 = 0$.
 
-**Corollary.** The algebra is a product of two division algebras and is therefore **not simple**: each of the two simple modules spans a distinct two-sided ideal, and these are the two minimal two-sided ideals $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ of *Split-Biquaternion Ideals and Peirce Decomposition*.
+**Corollary.** The algebra is a product of two division algebras and is therefore **not simple**: each of the two simple modules spans a distinct two-sided ideal, and these are the two minimal two-sided ideals $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ of *Split-Biquaternion Ideals and Peirce Decomposition*.
 
 ## Real Element Representations
 
@@ -152,7 +152,7 @@ is the replacement of the simple algebra $M_2(\mathbb{C})$ by the product of two
 
 ## Summary
 
-The split biquaternion algebra is a free $\mathbb{D}$-module of rank $4$ and a real algebra of dimension $8$, isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ by the Peirce decomposition along its central idempotents $\tilde\Pi_\pm$. Its module category is the product of two copies of the category of $\mathbb{H}$-modules, so it is semisimple with zero radical, has composition length two over itself, and possesses exactly two simple left modules $S_\pm$, each of real dimension $4$ and isomorphic to $\mathbb{H}$. The two minimal ideals, viewed as $\mathbb{D}$-modules, are projective but not free. Schur's lemma gives intertwiners $\operatorname{Hom}(S_+,S_-) = 0$ and division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$, in place of the field $\mathbb{C}$ of the biquaternion case, and the algebra is not simple, its two minimal two-sided ideals being the spans of the simple modules. A real representation is classified by a pair of multiplicities $(a,b)$, irreducible only for $(1,0)$ and $(0,1)$, and the regular representation is $(1,1)$. The group of units is $\mathbb{H}^{\times} \times \mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$, and the norm-one group is $S^3 \times S^3 \cong \mathrm{Spin}(4)$; finite-dimensional representations of the unit group are the exterior tensor products of representations of the two copies of $\mathbb{R}_{>0} \times SU(2)$, indexed by a character exponent and a spin for each factor. The defining representation is the four-dimensional action on a simple module, and no faithful irreducible representation exists. The tensor product of two left modules is not naturally a left module, since the only candidate action is bilinear in the algebra element and fails to factor through it, so the tensor products belong to the unit group, where they follow the Clebsch–Gordan rule factor by factor on the two $SU(2)$'s. The whole theory is the biquaternion theory with the simple algebra $M_2(\mathbb{C})$ replaced by the product of two division algebras.
+The split biquaternion algebra is a free $\mathbb{D}$-module of rank $4$ and a real algebra of dimension $8$, isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ by the Peirce decomposition along its central idempotents $\tilde\Pi_{1,2}$. Its module category is the product of two copies of the category of $\mathbb{H}$-modules, so it is semisimple with zero radical, has composition length two over itself, and possesses exactly two simple left modules $S_\pm$, each of real dimension $4$ and isomorphic to $\mathbb{H}$. The two minimal ideals, viewed as $\mathbb{D}$-modules, are projective but not free. Schur's lemma gives intertwiners $\operatorname{Hom}(S_+,S_-) = 0$ and division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$, in place of the field $\mathbb{C}$ of the biquaternion case, and the algebra is not simple, its two minimal two-sided ideals being the spans of the simple modules. A real representation is classified by a pair of multiplicities $(a,b)$, irreducible only for $(1,0)$ and $(0,1)$, and the regular representation is $(1,1)$. The group of units is $\mathbb{H}^{\times} \times \mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$, and the norm-one group is $S^3 \times S^3 \cong \mathrm{Spin}(4)$; finite-dimensional representations of the unit group are the exterior tensor products of representations of the two copies of $\mathbb{R}_{>0} \times SU(2)$, indexed by a character exponent and a spin for each factor. The defining representation is the four-dimensional action on a simple module, and no faithful irreducible representation exists. The tensor product of two left modules is not naturally a left module, since the only candidate action is bilinear in the algebra element and fails to factor through it, so the tensor products belong to the unit group, where they follow the Clebsch–Gordan rule factor by factor on the two $SU(2)$'s. The whole theory is the biquaternion theory with the simple algebra $M_2(\mathbb{C})$ replaced by the product of two division algebras.
 
 ## Summary of Notation
 
@@ -160,12 +160,12 @@ The split biquaternion algebra is a free $\mathbb{D}$-module of rank $4$ and a r
 |---|---|
 | $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$ |
 | $\mathbb{D}, \mathbb{H}, \mathbb{R}$ | The split complex, quaternion and real ground structures |
-| $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ | Central idempotents, the Peirce projections |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Central idempotents, the Peirce projections |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Isomorphism to $\mathbb{H} \oplus \mathbb{H}$ |
 | $S_+, S_-$ | The two simple left modules, each $\cong \mathbb{H}$, dimension $4$ |
 | $M = a S_+ \oplus b S_-$ | Classification of real representations by multiplicities |
 | $\operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S_\pm) \cong \mathbb{H}$ | Division ring of the simple module |
-| $\mathbb{H}\tilde\Pi_\pm$ | Minimal two-sided ideals, projective but not free as $\mathbb{D}$-modules |
+| $\mathbb{H}\tilde\Pi_{1,2}$ | Minimal two-sided ideals, projective but not free as $\mathbb{D}$-modules |
 | $\mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times}$ | Group of units |
 | $\{ \tilde{Q} : N(\tilde{Q}) = 1 \} = S^3 \times S^3$ | Norm-one group |
 | $\rho_{(n_1,n_2)}$ | Irreducible unit-group representation, spin $(n_1/2, n_2/2)$ |

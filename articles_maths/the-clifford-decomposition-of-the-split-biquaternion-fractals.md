@@ -56,23 +56,23 @@ For an even parameter $\tilde C\in\mathrm{Cl}^0$ one has $\tilde C_+=\tilde C_-=
 
 ## The Two Decompositions and Their Relation
 
-**Proposition (Hadamard relation).** The idempotent decomposition $\tilde Q=\tilde Q_+\tilde\Pi_++\tilde Q_-\tilde\Pi_-$ and the parity decomposition $\tilde Q=\tilde A+j\tilde B$ are related by the Hadamard transform $\tilde Q_\pm=\tilde A\pm\tilde B$, an orthogonal change of coordinates with the matrix $\tfrac1{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}$.
+**Proposition (Hadamard relation).** The idempotent decomposition $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$ and the parity decomposition $\tilde Q=\tilde A+j\tilde B$ are related by the Hadamard transform $\tilde Q_\pm=\tilde A\pm\tilde B$, an orthogonal change of coordinates with the matrix $\tfrac1{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}$.
 
-**Proof.** Direct computation from $\tilde\Pi_\pm=\tfrac12(e_0\pm j)$ and the centrality of $j$: $\tilde Q\tilde\Pi_+=(\tilde A+j\tilde B)\tilde\Pi_+=(\tilde A+\tilde B)\tilde\Pi_+$.
+**Proof.** Direct computation from $\tilde\Pi_{1,2}=\tfrac12(e_0\pm j)$ and the centrality of $j$: $\tilde Q\tilde\Pi_1=(\tilde A+j\tilde B)\tilde\Pi_1=(\tilde A+\tilde B)\tilde\Pi_1$.
 
-**Remark (the two decompositions split different things).** The idempotent decomposition splits the algebra into two isomorphic ideals $\mathbb{H}\tilde\Pi_\pm$, and it is the decomposition that makes the quadratic family a product of two quaternion families. The parity decomposition splits the algebra into the even subalgebra and the odd module, and it is the decomposition that makes the quaternion algebra appear as a subalgebra. **The first decomposes the dynamics, the second locates a division algebra inside it, and the two are Hadamard-equivalent as decompositions of the underlying real space and very different as decompositions of the dynamics.**
+**Remark (the two decompositions split different things).** The idempotent decomposition splits the algebra into two isomorphic ideals $\mathbb{H}\tilde\Pi_{1,2}$, and it is the decomposition that makes the quadratic family a product of two quaternion families. The parity decomposition splits the algebra into the even subalgebra and the odd module, and it is the decomposition that makes the quaternion algebra appear as a subalgebra. **The first decomposes the dynamics, the second locates a division algebra inside it, and the two are Hadamard-equivalent as decompositions of the underlying real space and very different as decompositions of the dynamics.**
 
 ## The Volume Element and the Chiral Halves
 
 **Proposition (the eigenvalues of the volume element).** The volume element $\omega=E_1E_2E_3=-j$ is central with $\omega^2=e_0$, and it acts on the two idempotents by
 
 $$
-\omega\tilde\Pi_+=-\tilde\Pi_+, \qquad \omega\tilde\Pi_-=+\tilde\Pi_- .
+\omega\tilde\Pi_1=-\tilde\Pi_1, \qquad \omega\tilde\Pi_2=+\tilde\Pi_2 .
 $$
 
-So the two ideals $\mathbb{H}\tilde\Pi_\pm$ are the eigenspaces of the volume element with the eigenvalues $\mp1$, and they are the two chiral halves of the algebra.
+So the two ideals $\mathbb{H}\tilde\Pi_{1,2}$ are the eigenspaces of the volume element with the eigenvalues $\mp1$, and they are the two chiral halves of the algebra.
 
-**Proof.** $j$ is central and $j^2=e_0$, so $\omega=-j$ is central with $\omega^2=e_0$; the action on the idempotents is $-j\tilde\Pi_+ = -\tfrac12(j+j^2)=-\tfrac12(j+1)=-\tilde\Pi_+$ and $-j\tilde\Pi_-=-\tfrac12(j-1)=+\tilde\Pi_-$.
+**Proof.** $j$ is central and $j^2=e_0$, so $\omega=-j$ is central with $\omega^2=e_0$; the action on the idempotents is $-j\tilde\Pi_1 = -\tfrac12(j+j^2)=-\tfrac12(j+1)=-\tilde\Pi_1$ and $-j\tilde\Pi_2=-\tfrac12(j-1)=+\tilde\Pi_2$.
 
 **Corollary (the complexification and the two chiral summands).** The complexified algebra splits as $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}\cong\mathbb{B}\oplus\mathbb{B}$, the two summands being the two chiral halves, each isomorphic to the biquaternion algebra; the parity and the chirality together are the two gradings of the complexification.
 
@@ -105,7 +105,7 @@ The split-biquaternion algebra is the Clifford algebra $\mathrm{Cl}(0,3)$, grade
 | $\mathrm{Cl}^0=\mathbb{H}$, $\mathrm{Cl}^1=j\mathbb{H}$ | the even part and the odd part |
 | $\tilde Q=\tilde A+j\tilde B$ | the parity decomposition |
 | $\tilde Q_\pm=\tilde A\pm\tilde B$ | the Hadamard transform |
-| $\mathbb{H}\tilde\Pi_\pm$ | the two chiral halves, of volume eigenvalue $\mp1$ |
+| $\mathbb{H}\tilde\Pi_{1,2}$ | the two chiral halves, of volume eigenvalue $\mp1$ |
 
 ## Further Reading
 

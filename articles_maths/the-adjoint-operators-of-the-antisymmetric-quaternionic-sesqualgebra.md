@@ -176,4 +176,4 @@ The left multiplication $L_{\tilde A}\tilde R=\mathbf{A}\times\overline{\mathbf{
 - *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for the conjugate cross product and its cone.
 - *The Krein Gram Matrix and the Restrictions of the Form*, for the form and the vector subspace.
 - *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, for the general construction of a part.
-- *The Antisymmetric Quaternionic Sesqualgebra in the Matrix Representations*, for the same operators in the two matrix models.
+- *The Antisymmetric Quaternionic Sesqualgebra in the $2\times2$ and $4\times4$ Matrix Element Representations*, for the same operators in the two matrix models.

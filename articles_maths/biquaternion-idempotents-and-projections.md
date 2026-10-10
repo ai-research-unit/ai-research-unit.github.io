@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The algebra article defined the biquaternion algebra $\mathbb{B}$, its conjugations and its six distinguished real subspaces. This article treats the **idempotents** of $\mathbb{B}$ — the elements satisfying $\tilde\Pi^2 = \tilde\Pi$ — and the projections and direct sum decompositions they carry.
+The algebra article defined the biquaternion algebra $\mathbb{B}$, its conjugations and its remarkable real subspaces. This article treats the **idempotents** of $\mathbb{B}$ — the elements satisfying $\tilde\Pi^2 = \tilde\Pi$ — and the projections and direct sum decompositions they carry.
 
 Idempotents are the algebraic form of a projection, and in $\mathbb{B}$ they do four separate jobs at once:
 
@@ -15,7 +15,7 @@ The material here was previously distributed over the article on ideals, the art
 
 **Placement.** The article is second in the Algebra group, after the algebra and before the ideals, the roots of $-1$ and the zero divisors, because all of those use the idempotents. Its own proofs use only the algebra article: the roots of $-1$ enter as a parameter set whose classification is quoted from *Biquaternion Square Roots of Minus One, Zero and Plus One*, and the relations to the zero divisors and to the ideals are forward pointers.
 
-**Conventions.** The algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_1 e_2 = e_3$, and central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$; the scalar part is $Q_0$ and $\mathbf{B}$ denotes a pure biquaternion, $\mathbf{B} = B_1 e_1 + B_2 e_2 + B_3 e_3$. On pure elements the product is $\mathbf{A}\mathbf{B} = -\sum_{k} A_k B_k\, e_0 + \mathbf{A}\times\mathbf{B}$, so that a pure element satisfies $\mathbf{B}^2 = -(\sum_k B_k^2) e_0$. The product throughout is the general plain bilinear product $\tilde{Q}\tilde{R}$, the multiplication of the algebra — the only one of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* that is associative and two-sidedly unital, and the one the equation $\tilde\Pi^2 = \tilde\Pi$ presupposes. The other three products carry idempotents of their own, which are not these: $0$ and $e_0$ for the general quaternionic bilinear product, the Hermitian idempotents (the pure states) for the general plain sesquilinear product, and the elements $-\tfrac12 e_0 + \mu$ with $\mu$ in the real vector subspace and $(\mu,\mu)=\tfrac34$ for the general quaternionic sesquilinear product, each read in its own article — *Introduction to the General Quaternionic Algebra of Biquaternions*, *Introduction to the General Plain Sesqualgebra of Biquaternions*, *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The four sets are tabulated in *Comparison Between the Four General Products*. That the product $\tilde{Q}\tilde{Q}^{\natural}$ decides invertibility, and the forms it defines, belong to *Biquaternion Norm and Invertibility*. The six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian sectors $\mathbb{M}_+$ and $\mathbb{M}_-$.
+**Conventions.** The algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_1 e_2 = e_3$, and central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$; the scalar part is $Q_0$ and $\mathbf{B}$ denotes a pure biquaternion, $\mathbf{B} = B_1 e_1 + B_2 e_2 + B_3 e_3$. On pure elements the product is $\mathbf{A}\mathbf{B} = -\sum_{k} A_k B_k\, e_0 + \mathbf{A}\times\mathbf{B}$, so that a pure element satisfies $\mathbf{B}^2 = -(\sum_k B_k^2) e_0$. The product throughout is the general plain bilinear product $\tilde{Q}\tilde{R}$, the multiplication of the algebra — the only one of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* that is associative and two-sidedly unital, and the one the equation $\tilde\Pi^2 = \tilde\Pi$ presupposes. The other three products carry idempotents of their own, which are not these: $0$ and $e_0$ for the general quaternionic bilinear product, the Hermitian idempotents (the pure states) for the general plain sesquilinear product, and the elements $-\tfrac12 e_0 + \mu$ with $\mu$ in the real vector subspace and $(\mu,\mu)=\tfrac34$ for the general quaternionic sesquilinear product, each read in its own article — *Introduction to the General Quaternionic Algebra of Biquaternions*, *Introduction to the General Plain Sesqualgebra of Biquaternions*, *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The four sets are tabulated in *Comparison Between the Four General Products*. That the product $\tilde{Q}\tilde{Q}^{\natural}$ decides invertibility, and the forms it defines, belong to *Biquaternion Norm and Invertibility*. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian sectors $\mathbb{M}_+$ and $\mathbb{M}_-$.
 
 ## Idempotents in an Algebra
 
@@ -104,7 +104,7 @@ The classification is a classification of the idempotents only because the roots
 **Theorem.** The map
 
 $$
-\xi \longmapsto \tilde\Pi_+(\xi), \qquad \tilde\Pi_+(\xi) = \tfrac{1}{2}(e_0 + \xi i),
+\xi \longmapsto \tilde\Pi_1(\xi), \qquad \tilde\Pi_1(\xi) = \tfrac{1}{2}(e_0 + \xi i),
 $$
 
 is a **bijection** from the set of roots of $-1$ onto the set of idempotents of $\mathbb{B}$.
@@ -112,18 +112,18 @@ is a **bijection** from the set of roots of $-1$ onto the set of idempotents of 
 **Proof.** *Well defined:* if $\xi^2 = -1$, then
 
 $$
-\tilde\Pi_+(\xi)^2 = \tfrac{1}{4}(e_0 + \xi i)^2 = \tfrac{1}{4}(e_0 + 2\xi i + \xi^2 i^2) = \tfrac{1}{4}(e_0 + 2\xi i + 1) = \tfrac{1}{2}(e_0 + \xi i) = \tilde\Pi_+(\xi),
+\tilde\Pi_1(\xi)^2 = \tfrac{1}{4}(e_0 + \xi i)^2 = \tfrac{1}{4}(e_0 + 2\xi i + \xi^2 i^2) = \tfrac{1}{4}(e_0 + 2\xi i + 1) = \tfrac{1}{2}(e_0 + \xi i) = \tilde\Pi_1(\xi),
 $$
 
-where $\xi^2 i^2 = (-1)(-1) = 1$ and $e_0$ commutes with $\xi i$. *Injective:* $\tilde\Pi_+(\xi) = \tilde\Pi_+(\xi')$ gives $\xi i = \xi' i$, hence $\xi = \xi'$. *Surjective:* the classification theorem says every idempotent is $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ for some root $\xi$, and $\tilde\Pi_-(\xi) = \tfrac{1}{2}(e_0 - \xi i) = \tilde\Pi_+(-\xi)$, while $-\xi$ is again a root of $-1$.
+where $\xi^2 i^2 = (-1)(-1) = 1$ and $e_0$ commutes with $\xi i$. *Injective:* $\tilde\Pi_1(\xi) = \tilde\Pi_1(\xi')$ gives $\xi i = \xi' i$, hence $\xi = \xi'$. *Surjective:* the classification theorem says every idempotent is $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ for some root $\xi$, and $\tilde\Pi_2(\xi) = \tfrac{1}{2}(e_0 - \xi i) = \tilde\Pi_1(-\xi)$, while $-\xi$ is again a root of $-1$.
 
 Consequently the **complementary pairs** $\{\tilde\Pi, e_0 - \tilde\Pi\}$ of idempotents are in bijection with the roots of $-1$ modulo the sign identification $\xi \sim -\xi$, since
 
 $$
-\tilde\Pi_+(-\xi) = \tfrac{1}{2}(e_0 - \xi i) = e_0 - \tilde\Pi_+(\xi).
+\tilde\Pi_1(-\xi) = \tfrac{1}{2}(e_0 - \xi i) = e_0 - \tilde\Pi_1(\xi).
 $$
 
-Thus $\tilde\Pi_+(\xi)$ and $\tilde\Pi_+(-\xi)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\xi, -\xi\}$.
+Thus $\tilde\Pi_1(\xi)$ and $\tilde\Pi_1(-\xi)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\xi, -\xi\}$.
 
 Substituting the classification of $\xi$ of *Biquaternion Square Roots of Minus One, Zero and Plus One* gives the three families of idempotents:
 
@@ -163,7 +163,7 @@ $$
 \tilde{Q} = 2 Q_0 \tilde\Pi, \qquad \tilde\Pi = \frac{\tilde{Q}}{2 Q_0}.
 $$
 
-The derivation, from the square relation $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$ that the non-pure family satisfies, together with the structure of the two families and their distribution among the six subspaces, is the subject of *Biquaternion Zero Divisors*, which follows this article.
+The derivation, from the square relation $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$ that the non-pure family satisfies, together with the structure of the two families and their distribution among the remarkable subspaces, is the subject of *Biquaternion Zero Divisors*, which follows this article.
 
 ## The Dimension of the Set of Idempotents
 
@@ -191,7 +191,7 @@ Every idempotent is either trivial or of the form $\tilde\Pi = \tfrac{1}{2} e_0 
 | $\tilde\Pi = \Pi_0 e_0 + \boldsymbol{\Pi}$ | Scalar part $\Pi_0 \in \mathbb{C}$ and pure vector part $\boldsymbol{\Pi}$ of an element of $\mathbb{B}$ |
 | $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3)$ | The standard orthogonal idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$ |
 | $\xi$ | A root of $-1$, $\xi^2 = -1$ |
-| $\tilde\Pi_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)$ | The idempotent of the root $\xi$; $\xi \mapsto \tilde\Pi_+(\xi)$ is a bijection |
+| $\tilde\Pi_1(\xi) = \tfrac{1}{2}(e_0 + \xi i)$ | The idempotent of the root $\xi$; $\xi \mapsto \tilde\Pi_1(\xi)$ is a bijection |
 | $\mathbb{B}\tilde\Pi_1$, $\mathbb{B}\tilde\Pi_2$ | The two minimal left ideals |
 | $\mathbf{A}\mathbf{B} = -\sum_k A_k B_k\,e_0 + \mathbf{A}\times\mathbf{B}$ | Product of two pure elements; $\mathbf{B}^2 = -(\sum_k B_k^2)e_0$ |
 | $\mathbb{M}_+$ | Hermitian subspace, containing the Hermitian idempotents |

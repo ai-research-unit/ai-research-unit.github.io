@@ -5,7 +5,7 @@
 
 This article studies the zero divisors of the split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$. It follows the article on split biquaternion norm and invertibility, which established the criterion for invertibility and the three-way classification of the elements of $\mathbb{H}_{\mathbb{D}}$. The goal here is to characterize the zero divisors, to describe their structure, and to compare them with the zero divisors of the split complex algebra and of the biquaternion algebra.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, and its three decompositions. The split-biquaternion norm, its idempotent-basis form, and the reduced norm are used from *Split-Biquaternion Norm and Invertibility*.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, and its three decompositions. The split-biquaternion norm, its idempotent-basis form, and the reduced norm are used from *Split-Biquaternion Norm and Invertibility*.
 
 Throughout, a split biquaternion is written
 
@@ -15,13 +15,13 @@ $$
 
 The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$, where $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$.
 
-The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
+The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
 $$
-\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2,
 $$
 
-with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.
+with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quaternions.
 
 ## Definition and Criterion
 
@@ -43,13 +43,13 @@ $$
 \tilde{Q} \neq 0 \quad \text{and} \quad (\tilde{Q}_+ = 0 \ \text{or}\ \tilde{Q}_- = 0).
 $$
 
-**Proof.** In the idempotent basis the product is $\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde{R}_- \tilde\Pi_-$, so $\tilde{Q} \tilde{R} = 0$ if and only if $\tilde{Q}_+ \tilde{R}_+ = 0$ and $\tilde{Q}_- \tilde{R}_- = 0$. If $\tilde{Q}_+ = 0$ and $\tilde{Q} \neq 0$, then $\tilde{Q}_- \neq 0$, and $\tilde{R} = \tilde\Pi_+ \neq 0$ satisfies $\tilde{Q} \tilde{R} = 0$, so $\tilde{Q}$ is a zero divisor. Conversely, if $\tilde{Q} \tilde{R} = 0$ with $\tilde{R} \neq 0$, then $\tilde{R}_+ \neq 0$ or $\tilde{R}_- \neq 0$; in the first case $\tilde{Q}_+ \tilde{R}_+ = 0$ with $\tilde{R}_+ \neq 0$ forces $\tilde{Q}_+ = 0$, since $\mathbb{H}$ is a division algebra, and in the second case $\tilde{Q}_- = 0$.
+**Proof.** In the idempotent basis the product is $\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde{R}_- \tilde\Pi_2$, so $\tilde{Q} \tilde{R} = 0$ if and only if $\tilde{Q}_+ \tilde{R}_+ = 0$ and $\tilde{Q}_- \tilde{R}_- = 0$. If $\tilde{Q}_+ = 0$ and $\tilde{Q} \neq 0$, then $\tilde{Q}_- \neq 0$, and $\tilde{R} = \tilde\Pi_1 \neq 0$ satisfies $\tilde{Q} \tilde{R} = 0$, so $\tilde{Q}$ is a zero divisor. Conversely, if $\tilde{Q} \tilde{R} = 0$ with $\tilde{R} \neq 0$, then $\tilde{R}_+ \neq 0$ or $\tilde{R}_- \neq 0$; in the first case $\tilde{Q}_+ \tilde{R}_+ = 0$ with $\tilde{R}_+ \neq 0$ forces $\tilde{Q}_+ = 0$, since $\mathbb{H}$ is a division algebra, and in the second case $\tilde{Q}_- = 0$.
 
 **Remark.** The split-biquaternion norm is not the criterion: it is anisotropic, so $N(\tilde{Q}) = 0$ forces $\tilde{Q} = 0$ (this is proved in *Split-Biquaternion Norm and Invertibility*). The zero divisor condition is **linear** in the idempotent basis.
 
 ### The Criterion in the Idempotent Basis
 
-In the idempotent basis the criterion is simply the vanishing of one component. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,
+In the idempotent basis the criterion is simply the vanishing of one component. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ with $\tilde{Q}_\pm \in \mathbb{H}$,
 
 $$
 \tilde{Q} \text{ is a zero divisor} \iff \tilde{Q} \neq 0 \text{ and } (\tilde{Q}_+ = 0 \text{ or } \tilde{Q}_- = 0).
@@ -75,7 +75,7 @@ $$
 
 Each of these is a **four-dimensional real linear subspace** of $\mathbb{H}_{\mathbb{D}}$.
 
-**$Z_+$.** An element of $Z_+$ satisfies $\tilde{Q} \tilde\Pi_+ = 0$, i.e., $\tilde{Q}(1 + j) = 0$. Writing $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu \in \mathbb{D}$, the condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 - j$. Since the ideal generated by $1 - j$ in $\mathbb{D}$ is the one-dimensional real subspace $\mathbb{R}(1 - j)$, the condition is
+**$Z_+$.** An element of $Z_+$ satisfies $\tilde{Q} \tilde\Pi_1 = 0$, i.e., $\tilde{Q}(1 + j) = 0$. Writing $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu \in \mathbb{D}$, the condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 - j$. Since the ideal generated by $1 - j$ in $\mathbb{D}$ is the one-dimensional real subspace $\mathbb{R}(1 - j)$, the condition is
 
 $$
 Q_\mu = t_\mu (1 - j), \qquad t_\mu \in \mathbb{R}.
@@ -83,7 +83,7 @@ $$
 
 There are four real parameters $t_0, t_1, t_2, t_3$, so $Z_+$ is four-dimensional. It is isomorphic to $\mathbb{H}$ via the map $\tilde{Q} \mapsto (t_0, t_1, t_2, t_3)$.
 
-**$Z_-$.** An element of $Z_-$ satisfies $\tilde{Q} \tilde\Pi_- = 0$, i.e., $\tilde{Q}(1 - j) = 0$. The condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 + j$:
+**$Z_-$.** An element of $Z_-$ satisfies $\tilde{Q} \tilde\Pi_2 = 0$, i.e., $\tilde{Q}(1 - j) = 0$. The condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 + j$:
 
 $$
 Q_\mu = s_\mu (1 + j), \qquad s_\mu \in \mathbb{R}.
@@ -197,7 +197,7 @@ In $\mathbb{B}$, the zero divisors split into nilpotents (pure case) and complex
 Indeed, if $\tilde{Q} \in Z_+$ with $\tilde{Q} \neq 0$, then $\tilde{Q}_+ = 0$ and $\tilde{Q}_- \neq 0$, so
 
 $$
-\tilde{Q}^2 = \tilde{Q}_-^2 \tilde\Pi_-,
+\tilde{Q}^2 = \tilde{Q}_-^2 \tilde\Pi_2,
 $$
 
 which is nonzero because $\tilde{Q}_- \neq 0$ and $\mathbb{H}$ is a division algebra. So $\tilde{Q}^2 \neq 0$, and $\tilde{Q}$ is not nilpotent.
@@ -253,14 +253,14 @@ In all cases, the zero divisors lie in the two subspaces $Z_+$ and $Z_-$, and th
 
 Each of $Z_+$ and $Z_-$ is a **left ideal** and a **right ideal** of $\mathbb{H}_{\mathbb{D}}$. Indeed:
 
-- If $\tilde{Q} \in Z_+$ and $\tilde{R} \in \mathbb{H}_{\mathbb{D}}$, then $(\tilde{Q} \tilde{R}) \tilde\Pi_+ = \tilde{Q} (\tilde{R} \tilde\Pi_+) = \tilde{Q} \tilde\Pi_+ \tilde{R}_+ = 0 \cdot \tilde{R}_+ = 0$, so $\tilde{Q} \tilde{R} \in Z_+$. So $Z_+$ is a right ideal.
-- Similarly, $(\tilde{R} \tilde{Q}) \tilde\Pi_+ = \tilde{R} (\tilde{Q} \tilde\Pi_+) = 0$, so $\tilde{R} \tilde{Q} \in Z_+$. So $Z_+$ is a left ideal.
+- If $\tilde{Q} \in Z_+$ and $\tilde{R} \in \mathbb{H}_{\mathbb{D}}$, then $(\tilde{Q} \tilde{R}) \tilde\Pi_1 = \tilde{Q} (\tilde{R} \tilde\Pi_1) = \tilde{Q} \tilde\Pi_1 \tilde{R}_+ = 0 \cdot \tilde{R}_+ = 0$, so $\tilde{Q} \tilde{R} \in Z_+$. So $Z_+$ is a right ideal.
+- Similarly, $(\tilde{R} \tilde{Q}) \tilde\Pi_1 = \tilde{R} (\tilde{Q} \tilde\Pi_1) = 0$, so $\tilde{R} \tilde{Q} \in Z_+$. So $Z_+$ is a left ideal.
 
-So $Z_+$ and $Z_-$ are two-sided ideals of $\mathbb{H}_{\mathbb{D}}$. This is the algebraic content of the idempotent decomposition: the two ideals $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ are the two summands of the semisimple algebra.
+So $Z_+$ and $Z_-$ are two-sided ideals of $\mathbb{H}_{\mathbb{D}}$. This is the algebraic content of the idempotent decomposition: the two ideals $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ are the two summands of the semisimple algebra.
 
 ### The Idempotents
 
-The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde P$ with $\tilde P^2 = \tilde P$. In the idempotent basis, an element $\tilde P = \tilde P_+ \tilde\Pi_+ + \tilde P_- \tilde\Pi_-$ is idempotent if and only if
+The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde P$ with $\tilde P^2 = \tilde P$. In the idempotent basis, an element $\tilde P = \tilde P_+ \tilde\Pi_1 + \tilde P_- \tilde\Pi_2$ is idempotent if and only if
 
 $$
 \tilde P_+^2 = \tilde P_+, \qquad \tilde P_-^2 = \tilde P_-.
@@ -269,19 +269,19 @@ $$
 In the quaternion algebra $\mathbb{H}$, the idempotents are only $0$ and $1$. So the idempotents of $\mathbb{H}_{\mathbb{D}}$ are the four elements
 
 $$
-0, \qquad \tilde\Pi_+, \qquad \tilde\Pi_-, \qquad \tilde\Pi_+ + \tilde\Pi_- = 1.
+0, \qquad \tilde\Pi_1, \qquad \tilde\Pi_2, \qquad \tilde\Pi_1 + \tilde\Pi_2 = 1.
 $$
 
-These are the only idempotents. The two nontrivial idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are the ones associated with the two ideals $Z_-$ and $Z_+$ respectively (note the reversal: $\tilde\Pi_+$ is annihilated by $Z_+$, i.e., $\tilde\Pi_+ \in Z_-$).
+These are the only idempotents. The two nontrivial idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ are the ones associated with the two ideals $Z_-$ and $Z_+$ respectively (note the reversal: $\tilde\Pi_1$ is annihilated by $Z_+$, i.e., $\tilde\Pi_1 \in Z_-$).
 
-Each of the idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ is a zero divisor, because $\tilde\Pi_+ \tilde\Pi_- = 0$ with both $\tilde\Pi_+$ and $\tilde\Pi_-$ nonzero.
+Each of the idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ is a zero divisor, because $\tilde\Pi_1 \tilde\Pi_2 = 0$ with both $\tilde\Pi_1$ and $\tilde\Pi_2$ nonzero.
 
 ### The Annihilators
 
 For an element $\tilde{Q} \in Z_+$ (i.e., $\tilde{Q}_+ = 0$), the left annihilator is
 
 $$
-\{\tilde{R} : \tilde{R} \tilde{Q} = 0\} = \{\tilde{R} : \tilde{R} \tilde{Q}_- \tilde\Pi_- = 0\} = \{\tilde{R} : \tilde{R}_- \tilde{Q}_- = 0\}.
+\{\tilde{R} : \tilde{R} \tilde{Q} = 0\} = \{\tilde{R} : \tilde{R} \tilde{Q}_- \tilde\Pi_2 = 0\} = \{\tilde{R} : \tilde{R}_- \tilde{Q}_- = 0\}.
 $$
 
 Since $\mathbb{H}$ is a division algebra and $\tilde{Q}_- \neq 0$ (unless $\tilde{Q} = 0$), the condition is $\tilde{R}_- = 0$, i.e., $\tilde{R} \in Z_-$. So the left annihilator of a nonzero element of $Z_+$ is $Z_-$ itself.
@@ -289,12 +289,12 @@ Since $\mathbb{H}$ is a division algebra and $\tilde{Q}_- \neq 0$ (unless $\tild
 Similarly, the right annihilator of a nonzero element of $Z_+$ is $Z_-$. If $\tilde{Q} \in Z_+$ with $\tilde{Q} \neq 0$, then $\tilde{Q}_+ = 0$ and $\tilde{Q}_- \neq 0$, and the product $\tilde{Q} \tilde{R}$ in the idempotent basis is
 
 $$
-\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde{R}_- \tilde\Pi_- = \tilde{Q}_- \tilde{R}_- \tilde\Pi_-.
+\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde{R}_- \tilde\Pi_2 = \tilde{Q}_- \tilde{R}_- \tilde\Pi_2.
 $$
 
 So $\tilde{Q} \tilde{R} = 0$ if and only if $\tilde{Q}_- \tilde{R}_- = 0$, which (since $\mathbb{H}$ is a division algebra and $\tilde{Q}_- \neq 0$) is equivalent to $\tilde{R}_- = 0$, i.e., $\tilde{R} \in Z_-$.
 
-So the annihilator of a nonzero element of $Z_+$ is $Z_-$ on both sides: the two annihilators agree, and they are the other component of the zero divisor set, not the component containing the element. Indeed $\tilde\Pi_+ \in Z_-$ annihilates every element of $Z_+$, while the elements of $Z_+$ do not annihilate one another.
+So the annihilator of a nonzero element of $Z_+$ is $Z_-$ on both sides: the two annihilators agree, and they are the other component of the zero divisor set, not the component containing the element. Indeed $\tilde\Pi_1 \in Z_-$ annihilates every element of $Z_+$, while the elements of $Z_+$ do not annihilate one another.
 
 By symmetry, the annihilator of a nonzero element of $Z_-$ is $Z_+$ on both sides.
 
@@ -304,7 +304,7 @@ The union $Z_+ \cup Z_-$ is a real algebraic variety: it is the union of the two
 
 ### The Set Is Not Defined by the Split-Biquaternion Norm
 
-The zero divisor set is not detected by the split-biquaternion norm: the split-biquaternion norm $N$ is anisotropic, so $N(\tilde{Q}) = 0$ forces $\tilde{Q} = 0$ and the zero divisor set is not the null set of $N$. The reason is that $N$ takes values in $\mathbb{D}$, which is not a field: the element $\tilde{Q} = \tilde\Pi_+$ has $N(\tilde{Q}) = \tilde\Pi_+$, a nonzero zero divisor of $\mathbb{D}$, yet $\tilde{Q}\tilde\Pi_- = 0$ makes $\tilde{Q}$ a zero divisor of $\mathbb{H}_{\mathbb{D}}$. The defining form of the set, the reduced norm, and the proof of the anisotropy are in *Split-Biquaternion Norm and Invertibility*.
+The zero divisor set is not detected by the split-biquaternion norm: the split-biquaternion norm $N$ is anisotropic, so $N(\tilde{Q}) = 0$ forces $\tilde{Q} = 0$ and the zero divisor set is not the null set of $N$. The reason is that $N$ takes values in $\mathbb{D}$, which is not a field: the element $\tilde{Q} = \tilde\Pi_1$ has $N(\tilde{Q}) = \tilde\Pi_1$, a nonzero zero divisor of $\mathbb{D}$, yet $\tilde{Q}\tilde\Pi_2 = 0$ makes $\tilde{Q}$ a zero divisor of $\mathbb{H}_{\mathbb{D}}$. The defining form of the set, the reduced norm, and the proof of the anisotropy are in *Split-Biquaternion Norm and Invertibility*.
 
 ### The Set Is Not a Quadric
 
@@ -316,7 +316,7 @@ The zero divisors of the split biquaternion algebra are the nonzero elements wit
 $$
 \tilde{Q} \text{ is a zero divisor} \iff \tilde{Q} \neq 0 \text{ and } (\tilde{Q}_+ = 0 \text{ or } \tilde{Q}_- = 0).
 $$
-The condition is **linear** in the idempotent basis, and the zero divisor set is the union of the two four-dimensional real subspaces $Z_+$ and $Z_-$, which meet only at the origin. Each is a two-sided ideal of $\mathbb{H}_{\mathbb{D}}$, and the annihilator of a nonzero element of one component is the other component on both sides. The only idempotents are $0$, $\tilde\Pi_+$, $\tilde\Pi_-$, and $e_0$; the two nontrivial ones are zero divisors, and there are no nonzero nilpotents.
+The condition is **linear** in the idempotent basis, and the zero divisor set is the union of the two four-dimensional real subspaces $Z_+$ and $Z_-$, which meet only at the origin. Each is a two-sided ideal of $\mathbb{H}_{\mathbb{D}}$, and the annihilator of a nonzero element of one component is the other component on both sides. The only idempotents are $0$, $\tilde\Pi_1$, $\tilde\Pi_2$, and $e_0$; the two nontrivial ones are zero divisors, and there are no nonzero nilpotents.
 
 The criterion is not the vanishing of the split-biquaternion norm. The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ is anisotropic, so it vanishes only at the origin and does not detect the zero divisors; the detecting quantity is the **reduced norm**
 $$
@@ -333,9 +333,9 @@ The union $Z_+ \cup Z_-$ is a reducible real algebraic variety with two irreduci
 | $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
-| $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
-| $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
-| $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$ | Idempotent decomposition |
+| $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
+| $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
+| $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ | Idempotent decomposition |
 | $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm |
 | $N_{\mathbb{H}}(\tilde{Q}_\pm)$ | Ordinary quaternion norm of an idempotent component |
 | $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^*$ | Reduced norm (determinant) |

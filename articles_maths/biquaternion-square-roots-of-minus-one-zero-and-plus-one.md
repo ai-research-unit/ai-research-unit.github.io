@@ -10,7 +10,7 @@ $$
 
 It relates to *Biquaternion Idempotents and Projections* through the bijection between the roots of $-1$ and the idempotents established in §*The Relation to the Idempotents*. The goal here is to state the classification precisely and to prove it. The classification of $\tilde P^2 = \tilde Q$ for an arbitrary $\tilde Q \in \mathbb{B}$, by the same vector–scalar split and free of Clifford algebras, is the subject of *Biquaternion Square Roots of a General Element*; the three cases treated here are its degenerate data, and the algorithm is deliberately not reproduced, since these three sets are small enough to be found directly.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations and its six distinguished subspaces.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations and its remarkable subspaces.
 
 Throughout this article, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, and the scalar imaginary is written $i$, so that it does not collide with the quaternion units. A general biquaternion is written
 
@@ -348,7 +348,7 @@ The three sets also differ in kind. The roots of $-1$ are two isolated elements 
 The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$: the map
 
 $$
-\tilde P \longmapsto \tilde\Pi_+(\tilde P) = \tfrac{1}{2}(e_0 + \tilde P i)
+\tilde P \longmapsto \tilde\Pi_1(\tilde P) = \tfrac{1}{2}(e_0 + \tilde P i)
 $$
 
 is a bijection from the set of roots of $-1$ onto the set of idempotents, under which the complementary pairs $\{\tilde\Pi, e_0 - \tilde\Pi\}$ correspond to the classes $\{\tilde P, -\tilde P\}$, and under which the three families of roots give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and the idempotents lying in none of the four four-dimensional subspaces. The construction of the idempotent, the proof of the bijection and the projection interpretation are the subject of *Biquaternion Idempotents and Projections*.
@@ -385,7 +385,7 @@ The square roots of $0$ are the element $0$ together with the pure biquaternions
 
 The square roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: $\tilde P_+ = \tilde P i$. They are not used in the idempotent classification, but they appear in the theory of the biquaternion exponential.
 
-The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \tilde P i$. The map $\tilde P \mapsto \tilde\Pi_+(\tilde P) = \tfrac{1}{2}(e_0 + \tilde P i)$ is a bijection from the roots of $-1$ to the idempotents; complementary pairs of idempotents correspond to roots modulo the sign identification $\tilde P \sim -\tilde P$. The non-trivial idempotents form a four-real-parameter family, and are used in the classification of the non-pure zero divisors. The roots themselves are units, and they lie in the group of units $\mathbb{B}^\times$.
+The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \tilde P i$. The map $\tilde P \mapsto \tilde\Pi_1(\tilde P) = \tfrac{1}{2}(e_0 + \tilde P i)$ is a bijection from the roots of $-1$ to the idempotents; complementary pairs of idempotents correspond to roots modulo the sign identification $\tilde P \sim -\tilde P$. The non-trivial idempotents form a four-real-parameter family, and are used in the classification of the non-pure zero divisors. The roots themselves are units, and they lie in the group of units $\mathbb{B}^\times$.
 
 ## Summary of Notation
 

@@ -190,14 +190,14 @@ that is, exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{B})$
 
 ### The Isotopy with the Two by Two Matrices
 
-**Remark (degree two and the matrix model).** The block is a special Jordan algebra of degree two, and it is **isotopic** to the symmetrised matrix algebra $M_2(\mathbb{C})^{+}$: the isomorphism $\Phi$ of *The General Plain Algebra in the $2\times2$ Matrix Representation* carries the symmetric plain product to the symmetrised matrix product, $\Phi(\tilde Q\bullet\tilde R)=\tfrac12(\Phi(\tilde Q)\Phi(\tilde R)+\Phi(\tilde R)\Phi(\tilde Q))$, and carries the generic trace to the matrix trace and the generic norm to the determinant,
+**Remark (degree two and the matrix model).** The block is a special Jordan algebra of degree two, and it is **isotopic** to the symmetrised matrix algebra $M_2(\mathbb{C})^{+}$: the isomorphism $\Phi$ of *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* carries the symmetric plain product to the symmetrised matrix product, $\Phi(\tilde Q\bullet\tilde R)=\tfrac12(\Phi(\tilde Q)\Phi(\tilde R)+\Phi(\tilde R)\Phi(\tilde Q))$, and carries the generic trace to the matrix trace and the generic norm to the determinant,
 
 $$
 T(\tilde Q)=2Q_0=\operatorname{Tr}\Phi(\tilde Q),\qquad
 N(\tilde Q)=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q).
 $$
 
-Two Jordan algebras of degree two whose norm forms are carried to one another by an invertible linear map are isotopic, so the block is isotopic to the degree-two matrix algebra, and its quadratic identity is the Cayley–Hamilton identity of the $2\times2$ matrices. **The degree-two structure of the block is the degree-two structure of the matrices**, and the correspondence is read in full in *The Symmetric Plain Algebra in the Matrix Representations*. Verified on the matrix model.
+Two Jordan algebras of degree two whose norm forms are carried to one another by an invertible linear map are isotopic, so the block is isotopic to the degree-two matrix algebra, and its quadratic identity is the Cayley–Hamilton identity of the $2\times2$ matrices. **The degree-two structure of the block is the degree-two structure of the matrices**, and the correspondence is read in full in *The Symmetric Plain Algebra in the $2\times2$ and $4\times4$ Matrix Element Representations*. Verified on the matrix model.
 
 ## Summary
 
@@ -224,4 +224,4 @@ The symmetric plain algebra is a commutative unital Jordan algebra of degree two
 - *Biquaternion Zero Divisors*, for the zero divisors and the structure of the isotropic set.
 - *Biquaternion Square Roots of Minus One, Zero and Plus One*, for the classification of the roots of $-1$ and the families of idempotents.
 - *The 12 Products of the Biquaternion Complex Space*, for the degree-two reading and the placement of the block.
-- *The General Plain Algebra in the $2\times2$ Matrix Representation*, for the matrix model and the isotopy with the symmetrised matrices.
+- *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, for the matrix model and the isotopy with the symmetrised matrices.

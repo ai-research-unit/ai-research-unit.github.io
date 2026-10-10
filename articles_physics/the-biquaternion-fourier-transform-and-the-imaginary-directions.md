@@ -169,7 +169,7 @@ which vanishes on the light cone, so that the interval acts as a multiplier, the
 ## Further Reading
 
 - *Biquaternion Discrete Harmonic Analysis* and *Biquaternion Continuous Harmonic Analysis* — the mathematics of the transform: the kernel, the transform pair, the factorisation into complex transforms, the convolution and the Z transform, the relation to the gradient and the d'Alembertian, the two-unit kernel, and the failure of positivity for the transform of a measure.
-- *Conventions in the Biquaternion Universe* — the central imaginary as one generator on the six subspaces; the phase, the duality rotation, the Wick rotation and the exchange of the two sectors as its restrictions.
+- *Conventions in the Biquaternion Universe* — the central imaginary as one generator on the remarkable subspaces; the phase, the duality rotation, the Wick rotation and the exchange of the two sectors as its restrictions.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the informational reading of the imaginary vector part and the positive form that repairs the positivity.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the material coordinate and the interval.
 - *The Interval as the Square and the Charge of the Material Composition* and *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell* — the interval as a square, the mass shell as a level set and as a fibre of the natural square.

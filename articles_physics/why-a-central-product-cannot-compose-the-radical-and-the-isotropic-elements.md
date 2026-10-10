@@ -31,8 +31,8 @@ commutativity, the absence of a unit and the diagonal as the interval are the co
 *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations*; the class, the image
 and the sixteen products are *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*; the
 radical, the isotropic elements and the Jordan failure, in their algebraic form, are
-*The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the six subspaces, with
-the restriction of the coefficient to each, are *The Six Subspaces under the Symmetric Quaternionic
+*The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the remarkable subspaces, with
+the restriction of the coefficient to each, are *Remarkable Subspaces under the Symmetric Quaternionic
 Algebra of Biquaternions*; and the two bilinear forms of the algebra, with their Gram matrices and their
 signature table, are *Comparison Between the Four General Products* and
 *The Four General Products and Their Physical Readings*.
@@ -200,7 +200,7 @@ $N$, the scalar part of $\tilde P^{\natural}\tilde Q$. A reader who follows the 
 coupling written $B$ there. The object is the same; only the letter changes. In this chapter the
 coefficient is $N$ and $B$ is the plain form throughout.
 
-**The two forms read differently on the six subspaces.** Because the difference is the sign of the vector
+**The two forms read differently on the remarkable subspaces.** Because the difference is the sign of the vector
 part, the two forms agree where the vector part vanishes and on the balanced vector subspace, and differ
 on the four four-dimensional subspaces, where they exchange their signatures.
 
@@ -220,7 +220,7 @@ signatures: $N$ has on $\mathbb{H}_{\mathbb{B}}$ the signature $B$ has on $\math
 $i\mathbb{H}_{\mathbb{B}}$ the signature $B$ has on $\mathbb{M}_-$. On the material sector in particular
 $N$ is the indefinite Minkowski form $(3,1)$ and $B$ the definite negative Euclidean form $(0,4)$; the
 passage between the two is the passage between the interval and the Euclidean square, and it is the sign
-the natural conjugation inserts. The signatures on the six subspaces are *The Six Subspaces under the
+the natural conjugation inserts. The signatures on the remarkable subspaces are *Remarkable Subspaces under the
 Symmetric Quaternionic Algebra of Biquaternions* and the transversal table of
 *The Four General Products and Their Physical Readings*. The centre
 and vector rows are read as the real part of the coefficient, the two coefficients there being complex.
@@ -284,7 +284,7 @@ trivial radical, $\mathrm{Rad}(\bullet)=\{0\}$, with the Gram matrix $I_4$; the 
 vanishing set of $N$, the zero divisors and the material light cone; the absence of a unit, with $e_0$ as
 the projection onto the scalar part; the failure of the Jordan identity at the witness
 $(\tilde X,\tilde Y)=(e_1,e_1)$, the two sides $0$ and $e_0$; the coefficient $N$ and not $B$; the
-signatures $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ of $N$ on the six subspaces and the same list with
+signatures $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ of $N$ on the remarkable subspaces and the same list with
 $(4,0)$ and $(0,4)$ at the two sectors for $B$.
 
 **Readings.** That the radical is the set of pairs the coupling does not separate and is trivial; that
@@ -323,7 +323,7 @@ from an associative product and from no other. The coefficient is the general **
 form $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, **not** the general plain bilinear
 form $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$, the two differing by the sign of the vector
 part alone; the two read $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ and
-$(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$ on the six subspaces, agreeing on the centre and the vector
+$(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$ on the remarkable subspaces, agreeing on the centre and the vector
 subspace and exchanging signatures on the other four. The reading is that a product whose image is
 the **centre** returns a number, and a number **compares and does not compose**: the operation is the
 scalar coupling of the material row, non-degenerate, and it is not an algebra with a unit, not a Jordan
@@ -331,8 +331,8 @@ algebra and not a state. Because no unit and no Jordan identity is available, no
 masses can be assembled from this row — the diagonal gives the interval, but not an interval *operator* —
 and the observable structure must come from the informational, sesquilinear row. The algebraic radical,
 isotropic elements and Jordan witness are
-*The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the six-subspace
-restrictions are *The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*; the
+*The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the remarkable-subspace
+restrictions are *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*; the
 operation itself is the companion *The Quaternion Form as a Product: the Scalar Coupling of Two Material
 Operations*; and the two forms are *Comparison Between the Four General Products* and
 *The Four General Products and Their Physical Readings*.
@@ -350,7 +350,7 @@ Operations*; and the two forms are *Comparison Between the Four General Products
 | $e_0\bullet\tilde Q=Q_0e_0$ | the projection onto the scalar part; there is no unit |
 | $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | the general quaternionic bilinear form, the coefficient |
 | $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$ | the general plain bilinear form; not the coefficient |
-| $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ | the signatures of $N$ on the six subspaces |
+| $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ | the signatures of $N$ on the remarkable subspaces |
 
 ## Further Reading
 
@@ -362,9 +362,9 @@ Operations*; and the two forms are *Comparison Between the Four General Products
 - Mathematics article *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*
   (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for
   the radical, the isotropic elements and the Jordan witness.
-- Mathematics article *The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*
-  (`articles_maths/the-six-subspaces-under-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for
-  the restriction of the coefficient to the six subspaces.
+- Mathematics article *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*
+  (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for
+  the restriction of the coefficient to the remarkable subspaces.
 - Mathematics article *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*
   (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the class
   and the image.

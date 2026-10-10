@@ -5,7 +5,7 @@
 
 This article studies the zero divisors of the split-quaternion algebra. It defines them, proves the criterion $N(\tilde q) = 0$ that identifies them with the null cone, exhibits the two families of minimal one-sided ideals into which the zero divisor set splits, proves the existence of nonzero nilpotents, and describes the distribution of the zero divisors among the distinguished subspaces.
 
-The split-quaternion algebra, its central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and its idempotents $\tilde\pi_\pm$ and subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from *Split-Quaternion Algebra*, and the metrical reading of $N$ from *Split-Quaternion Norm and Invertibility*. The invertibility criterion is assumed from *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*; it is not re-proved here. The ideal theory of $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is assumed from *Split-Quaternion Ideals and Peirce Decomposition*. Nothing physical is invoked.
+The split-quaternion algebra, its central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and its idempotents $\tilde\pi_{1,2}$ and subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from *Split-Quaternion Algebra*, and the metrical reading of $N$ from *Split-Quaternion Norm and Invertibility*. The invertibility criterion is assumed from *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*; it is not re-proved here. The ideal theory of $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is assumed from *Split-Quaternion Ideals and Peirce Decomposition*. Nothing physical is invoked.
 
 ## Definition and Criterion
 
@@ -65,9 +65,9 @@ each parametrised by the projective line, are the **two families**; the two fami
 
 **Proof.** Every zero-divisor line consists of the multiples of one zero divisor, which by the preceding theorem has a two-dimensional annihilator in each family; the incidence is that of the one-sided ideals of $M_2(\mathbb{R})$ (*Split-Quaternion Ideals and Peirce Decomposition*).
 
-**Corollary (The Minimal Ideals Are Members of the Families).** Both minimal left ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_\pm$ are members of the family $\mathcal{K}$, and both minimal right ideals $\tilde\pi_\pm\mathbb{H}_{\mathrm{s}}$ are members of the family $\mathcal{R}$.
+**Corollary (The Minimal Ideals Are Members of the Families).** Both minimal left ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$ are members of the family $\mathcal{K}$, and both minimal right ideals $\tilde\pi_{1,2}\mathbb{H}_{\mathrm{s}}$ are members of the family $\mathcal{R}$.
 
-**Proof.** A left ideal is closed under left multiplication, so $\mathbb{H}_{\mathrm{s}}\tilde\pi_\pm$ is the left annihilator of a zero-divisor line; it is a two-dimensional minimal left ideal by *Split-Quaternion Ideals and Peirce Decomposition*. The right ideals are the images of left ideals under the conjugation and lie in $\mathcal{R}$.
+**Proof.** A left ideal is closed under left multiplication, so $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$ is the left annihilator of a zero-divisor line; it is a two-dimensional minimal left ideal by *Split-Quaternion Ideals and Peirce Decomposition*. The right ideals are the images of left ideals under the conjugation and lie in $\mathcal{R}$.
 
 **Corollary (The Anti-Automorphism $\tau$ Swaps the Families).** The assignment on the generators
 
@@ -127,14 +127,14 @@ The zero divisors are distributed over the distinguished subspaces as follows. T
 | $V$ | the nonzero vectors with $q_1^2 = q_2^2 + q_3^2$ | the level set $N = 0$, a two-dimensional cone, every nonzero point of which is nilpotent |
 | $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | the nonzero multiples of $1 \pm e_2$ | two zero-divisor lines |
 | $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | the nonzero multiples of $1 \pm e_3$ | two zero-divisor lines |
-| $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$, $\tilde\pi_\pm \mathbb{H}_{\mathrm{s}}$ | the whole subspace minus the origin | four minimal one-sided ideals |
-| $\tilde\pi_\pm$ themselves | $\tilde\pi_+$ and $\tilde\pi_-$ | the two non-central idempotents |
+| $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ | the whole subspace minus the origin | four minimal one-sided ideals |
+| $\tilde\pi_{1,2}$ themselves | $\tilde\pi_1$ and $\tilde\pi_2$ | the two non-central idempotents |
 
 The table is completed by the following observations.
 
 **The vector subspace.** On $V$ the zero divisors are exactly the lightlike vectors, and by *Nonzero Nilpotents* they are exactly the nonzero nilpotents. Every zero divisor of $V$ has square zero; this is peculiar to the traceless part and does not hold in the whole algebra.
 
-**The idempotents.** The idempotents $\tilde\pi_\pm = \tfrac12(1 \pm e_2)$ are zero divisors with $\tilde\pi_+ \tilde\pi_- = 0$; they are not nilpotent, since $\tilde\pi_\pm^2 = \tilde\pi_\pm \neq 0$. Together with $0$ and $1$ they are two of the idempotents of the algebra: the general non-scalar idempotent is $\tfrac12(1 \pm \eta)$ for a root $\eta$ of $+1$ in the vector subspace, a one-sheeted hyperboloid's worth of idempotents, as recorded in *Split-Quaternion Roots of Minus One*.
+**The idempotents.** The idempotents $\tilde\pi_{1,2} = \tfrac12(1 \pm e_2)$ are zero divisors with $\tilde\pi_1 \tilde\pi_2 = 0$; they are not nilpotent, since $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2} \neq 0$. Together with $0$ and $1$ they are two of the idempotents of the algebra: the general non-scalar idempotent is $\tfrac12(1 \pm \eta)$ for a root $\eta$ of $+1$ in the vector subspace, a one-sheeted hyperboloid's worth of idempotents, as recorded in *Split-Quaternion Roots of Minus One*.
 
 **The splitting.** The zero divisor set is the union of the planes of the two families of *The Two Families*. The nilpotent set is the two-dimensional subcone of $V$, and the non-scalar idempotents form a further two-dimensional set of points of the zero divisor set lying outside that subcone.
 
@@ -159,7 +159,7 @@ The algebra has nonzero nilpotents: a nonzero element is nilpotent exactly when 
 | $\mathcal{K}_L$, $\mathcal{R}_L$ | the left and right annihilators of a zero-divisor line $L$ | this article |
 | $\tau$ | the anti-automorphism $e_1 \mapsto -e_1$, $e_2, e_3 \mapsto e_2, e_3$ | this article |
 | nilpotent | nonzero $\tilde q$ with $\tilde q^2 = 0$ | this article |
-| $\tilde\pi_\pm = \tfrac12(1 \pm e_2)$ | the non-central idempotents | *Split-Quaternion Algebra* |
+| $\tilde\pi_{1,2} = \tfrac12(1 \pm e_2)$ | the non-central idempotents | *Split-Quaternion Algebra* |
 | $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ | the central product, formed algebraically; the metrical reading is in *Split-Quaternion Norm and Invertibility* | *Split-Quaternion Algebra* |
 
 ## Further Reading

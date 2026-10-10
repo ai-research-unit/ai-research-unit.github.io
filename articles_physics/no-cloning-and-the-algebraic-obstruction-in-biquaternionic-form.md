@@ -115,7 +115,7 @@ The trace pairing is $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)) = \tfrac12$, s
 
 ### Cloning versus copying
 
-For an orthogonal family — for instance the two states of any idempotent basis $\{\tilde\Pi_+(\hat{\mu}),\tilde\Pi_-(\hat{\mu})\}$ — cloning is possible: the unitary that copies in that basis, $\tilde{U}(|0\rangle\otimes|0\rangle)=|0\rangle\otimes|0\rangle$, $\tilde{U}(|1\rangle\otimes|0\rangle)=|1\rangle\otimes|1\rangle$, does the job. This is not quantum cloning but classical copying in a known basis, and it uses no information about the state beyond the bit that distinguishes the two orthogonal alternatives. The theorem's content is that the ability to copy in one basis confers no ability to copy in any other.
+For an orthogonal family — for instance the two states of any idempotent basis $\{\tilde\Pi_1(\hat{\mu}),\tilde\Pi_2(\hat{\mu})\}$ — cloning is possible: the unitary that copies in that basis, $\tilde{U}(|0\rangle\otimes|0\rangle)=|0\rangle\otimes|0\rangle$, $\tilde{U}(|1\rangle\otimes|0\rangle)=|1\rangle\otimes|1\rangle$, does the job. This is not quantum cloning but classical copying in a known basis, and it uses no information about the state beyond the bit that distinguishes the two orthogonal alternatives. The theorem's content is that the ability to copy in one basis confers no ability to copy in any other.
 
 ## The Obstruction is Linearity
 

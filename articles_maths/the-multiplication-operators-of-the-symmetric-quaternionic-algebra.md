@@ -22,7 +22,7 @@ the left multiplications of an algebra.
 The operation and its formula are *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*; the
 form $B$ and its role as the coefficient are *The Quaternion Form as a Product on the Symmetric Quaternionic
 Algebra*; the derivation layer of a general algebra is *Automorphisms and Derivations of Algebras*; the matrix models are
-*The Symmetric Quaternionic Algebra in the Matrix Representations*. Nothing of the enriched layer of Part II is used.
+*The Symmetric Quaternionic Algebra in the $2\times2$ and $4\times4$ Matrix Element Representations*. Nothing of the enriched layer of Part II is used.
 
 **Conventions.** The basis is $e_0,e_1,e_2,e_3$; the product is $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$
 with $B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$; an operator is written as a $4\times4$ matrix in the
@@ -282,5 +282,6 @@ to be $0$; the derivation algebra is the $3$-dimensional space $\{De_0=0,\ D^{\m
 - *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the form $B$, its Gram matrix and its non-degeneracy
 - *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* (`articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md`) and *One-Sided Operators on the General Quaternionic Algebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.md`), for the left multiplications of the parent product
 - *Automorphisms and Derivations of Algebras* (`articles_maths/automorphisms-and-derivations-of-algebras.md`), for the general theory of a derivation and its inner part
-- *The Symmetric Quaternionic Algebra in the Matrix Representations* (`articles_maths/the-symmetric-quaternionic-algebra-in-the-matrix-representations.md`), for the same operators in the two matrix models
-- *The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the product on the six subspaces
+- *The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-symmetric-quaternionic-algebra-in-the-2x2-matrix-element-representation.md`), for the same operators in the realization
+- *The Symmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-symmetric-quaternionic-algebra-in-the-4x4-matrix-element-representation.md`), for the same operators in the regular model
+- *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the product on the remarkable subspaces

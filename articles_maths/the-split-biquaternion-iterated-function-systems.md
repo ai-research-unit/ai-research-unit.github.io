@@ -8,11 +8,11 @@ The split-biquaternion algebra, its idempotents and its norm are *Split-Biquater
 
 The article owns the operator norm of a split-biquaternion generator, the contraction criterion, the product attractor and the sum of the dimensions, the parity structure of the generator list, and the zero-divisor generators. It does not re-derive the classical theory or the quaternion systems.
 
-**Standing convention.** $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_++\tilde Q_-\tilde\Pi_-$, and a left-affine generator is $f_i(\tilde Q)=\tilde A_i\tilde Q+\tilde B_i$ with $\tilde A_i=\tilde A_i^+\tilde\Pi_++\tilde A_i^-\tilde\Pi_-$; $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{R}^8$ and $|\cdot|$ the quaternion modulus.
+**Standing convention.** $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, and a left-affine generator is $f_i(\tilde Q)=\tilde A_i\tilde Q+\tilde B_i$ with $\tilde A_i=\tilde A_i^+\tilde\Pi_1+\tilde A_i^-\tilde\Pi_2$; $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{R}^8$ and $|\cdot|$ the quaternion modulus.
 
 ## The Operator Norm and the Contraction Criterion
 
-**Proposition (the operator norm).** For $\tilde A=\tilde A_+\tilde\Pi_++\tilde A_-\tilde\Pi_-$ the operator norm of left multiplication is
+**Proposition (the operator norm).** For $\tilde A=\tilde A_+\tilde\Pi_1+\tilde A_-\tilde\Pi_2$ the operator norm of left multiplication is
 
 $$
 \|L_{\tilde A}\|=\max\bigl(|\tilde A_+|,\ |\tilde A_-|\bigr) ,
@@ -52,9 +52,9 @@ $$
 
 ## Zero-Divisor Generators
 
-**Proposition (a zero divisor can multiply a contraction).** Let $\tilde A=\tilde A_+\tilde\Pi_+$ be a zero divisor, so $\tilde A_-=0$. Then $\|L_{\tilde A}\|=|\tilde A_+|$ and the generator $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is a contraction whenever $|\tilde A_+|<1$, with image contained in the ideal $\mathbb{H}\tilde\Pi_+$.
+**Proposition (a zero divisor can multiply a contraction).** Let $\tilde A=\tilde A_+\tilde\Pi_1$ be a zero divisor, so $\tilde A_-=0$. Then $\|L_{\tilde A}\|=|\tilde A_+|$ and the generator $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is a contraction whenever $|\tilde A_+|<1$, with image contained in the ideal $\mathbb{H}\tilde\Pi_1$.
 
-**Proof.** The operator norm formula with $\tilde A_-=0$; the image of $L_{\tilde A}$ is contained in $\mathbb{H}\tilde\Pi_+$ because $\tilde A_-\tilde Q_-=0$ kills the second component. No invertibility of $\tilde A$ is required for the attractor theorem, which needs only the contraction.
+**Proof.** The operator norm formula with $\tilde A_-=0$; the image of $L_{\tilde A}$ is contained in $\mathbb{H}\tilde\Pi_1$ because $\tilde A_-\tilde Q_-=0$ kills the second component. No invertibility of $\tilde A$ is required for the attractor theorem, which needs only the contraction.
 
 **Remark (the contrast with the biquaternion systems).** In the biquaternion algebra a zero-divisor multiplier is a contraction whose image avoids a direction, and the image subspace can be a proper complex subspace; here a zero-divisor multiplier kills one whole idempotent factor, so the attractor of the system is contained in the corresponding ideal and is a copy of a quaternion attractor. **The zero divisors of the split-biquaternion algebra act coordinatewise, and their effect on a system is the loss of one factor, not a collapse of the norm.**
 
@@ -87,7 +87,7 @@ The split-biquaternion iterated function systems reduce to quaternion systems on
 | $K=K^+\times K^-$ | the attractor |
 | $s_\pm$ | the two quaternion similarity dimensions |
 | $s_++s_-$ | the dimension of the split-biquaternion attractor |
-| $\mathbb{H}\tilde\Pi_\pm$ | the ideals reached by zero-divisor generators |
+| $\mathbb{H}\tilde\Pi_{1,2}$ | the ideals reached by zero-divisor generators |
 
 ## Further Reading
 

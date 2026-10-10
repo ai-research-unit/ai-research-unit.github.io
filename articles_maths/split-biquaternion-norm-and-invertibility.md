@@ -5,7 +5,7 @@
 
 This article studies the split-biquaternion norm of the algebra and the invertibility of its elements. It follows the article on split biquaternion algebra, which defined the algebra, its four conjugations, and its four fixed-point subspaces. The goal here is to define the split-biquaternion norm and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding article, together with its four conjugations, its four fixed-point subspaces, and its three decompositions.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding article, together with its four conjugations, its four fixed-point subspaces, and its three decompositions.
 
 Throughout, a split biquaternion is written
 
@@ -15,13 +15,13 @@ $$
 
 The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$, where $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$.
 
-The idempotents of the split complex algebra are denoted $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
+The idempotents of the split complex algebra are denoted $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
 $$
-\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-,
+\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2,
 $$
 
-with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.
+with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quaternions.
 
 ## The Split-Biquaternion Norm
 
@@ -79,10 +79,10 @@ $$
 
 ### The Split-Biquaternion Norm in the Idempotent Basis
 
-In the idempotent basis, the split-biquaternion norm takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,
+In the idempotent basis, the split-biquaternion norm takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ with $\tilde{Q}_\pm \in \mathbb{H}$,
 
 $$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-,
+N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_1 + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_2,
 $$
 
 where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \tilde{Q}^{\natural}_\pm$ is the ordinary quaternion norm of $\tilde{Q}_\pm$, which is a non-negative real number.
@@ -278,7 +278,7 @@ $$
 
 so $N(\tilde{Q})$ is invertible in $\mathbb{D}$, with inverse $N(\tilde{Q}^{-1})$.
 
-**Remark.** The hypothesis is not simply $\tilde{Q} \neq 0$, nor $N(\tilde{Q}) \neq 0$, which is the same thing by anisotropy. For $\tilde{Q} = \tilde\Pi_+$ one has $N(\tilde{Q}) = \tilde\Pi_+$, a nonzero zero divisor of $\mathbb{D}$, and $\tilde\Pi_+$ is a zero divisor of $\mathbb{H}_{\mathbb{D}}$, since $\tilde\Pi_+ \tilde\Pi_- = 0$.
+**Remark.** The hypothesis is not simply $\tilde{Q} \neq 0$, nor $N(\tilde{Q}) \neq 0$, which is the same thing by anisotropy. For $\tilde{Q} = \tilde\Pi_1$ one has $N(\tilde{Q}) = \tilde\Pi_1$, a nonzero zero divisor of $\mathbb{D}$, and $\tilde\Pi_1$ is a zero divisor of $\mathbb{H}_{\mathbb{D}}$, since $\tilde\Pi_1 \tilde\Pi_2 = 0$.
 
 ### The Inverse Formula
 
@@ -292,10 +292,10 @@ This is the split biquaternion analogue of the formula $\tilde q^{-1} = \tilde q
 
 ### The Criterion in the Idempotent Basis
 
-The invertibility criterion takes a particularly simple form in the idempotent basis. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,
+The invertibility criterion takes a particularly simple form in the idempotent basis. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ with $\tilde{Q}_\pm \in \mathbb{H}$,
 
 $$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-.
+N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_1 + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_2.
 $$
 
 Since $N_{\mathbb{H}}(\tilde{Q}_\pm)$ are non-negative real numbers, $N(\tilde{Q})$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ if and only if both of its components are nonzero:
@@ -304,7 +304,7 @@ $$
 N_{\mathbb{H}}(\tilde{Q}_+) \neq 0 \quad \text{and} \quad N_{\mathbb{H}}(\tilde{Q}_-) \neq 0.
 $$
 
-Mere non-vanishing of $N(\tilde{Q})$ would require only one component to be nonzero, and that is not sufficient, as the example $\tilde{Q} = \tilde\Pi_+$ above shows. Since $\mathbb{H}$ is a division algebra, $N_{\mathbb{H}}(\tilde{Q}_\pm) \neq 0$ if and only if $\tilde{Q}_\pm \neq 0$. So the invertibility criterion is
+Mere non-vanishing of $N(\tilde{Q})$ would require only one component to be nonzero, and that is not sufficient, as the example $\tilde{Q} = \tilde\Pi_1$ above shows. Since $\mathbb{H}$ is a division algebra, $N_{\mathbb{H}}(\tilde{Q}_\pm) \neq 0$ if and only if $\tilde{Q}_\pm \neq 0$. So the invertibility criterion is
 
 $$
 \tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
@@ -324,13 +324,13 @@ $$
 
 requires $N(\tilde{Q})$ to be invertible in $\mathbb{D}$, not merely nonzero: since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors, when $\tilde{Q}$ is a zero divisor the value $N(\tilde{Q})$ is a nonzero zero divisor of $\mathbb{D}$ and $N(\tilde{Q})^{-1}$ does not exist.
 
-In the idempotent basis the inverse of a unit of $\mathbb{D}$ is computed componentwise. Writing $N(\tilde{Q}) = N_+ \tilde\Pi_+ + N_- \tilde\Pi_-$ with $N_\pm = N_{\mathbb{H}}(\tilde{Q}_\pm) \in \mathbb{R}$,
+In the idempotent basis the inverse of a unit of $\mathbb{D}$ is computed componentwise. Writing $N(\tilde{Q}) = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = N_{\mathbb{H}}(\tilde{Q}_\pm) \in \mathbb{R}$,
 
 $$
-N(\tilde{Q})^{-1} = \frac{\tilde\Pi_+}{N_+} + \frac{\tilde\Pi_-}{N_-} = \frac{N(\tilde{Q})^*}{\Delta(\tilde{Q})},
+N(\tilde{Q})^{-1} = \frac{\tilde\Pi_1}{N_+} + \frac{\tilde\Pi_2}{N_-} = \frac{N(\tilde{Q})^*}{\Delta(\tilde{Q})},
 $$
 
-where $N(\tilde{Q})^* = N_- \tilde\Pi_+ + N_+ \tilde\Pi_-$ is the split complex conjugate of $N(\tilde{Q})$. Substituting into $\tilde{Q}^{-1} = \tilde{Q}^{\natural} N(\tilde{Q})^{-1}$ expresses the inverse through the **reduced norm**
+where $N(\tilde{Q})^* = N_- \tilde\Pi_1 + N_+ \tilde\Pi_2$ is the split complex conjugate of $N(\tilde{Q})$. Substituting into $\tilde{Q}^{-1} = \tilde{Q}^{\natural} N(\tilde{Q})^{-1}$ expresses the inverse through the **reduced norm**
 
 $$
 \Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^* \in \mathbb{R},
@@ -366,7 +366,7 @@ $$
 \tilde{Q} \tilde{Q}^{\natural} = 8 e_0, \qquad \tilde{Q}^{-1} = \tfrac{1}{8} \tilde{Q}^{\natural} = \tfrac{1}{8}\big(1 - 2 e_1 - e_2\big) + \tfrac{j}{8}\big(1 + e_2\big).
 $$
 
-The criterion is not the naive one $N(\tilde{Q}) \neq 0$. For $\tilde P = \tilde\Pi_+$ one has $N(\tilde\Pi_+) = \tilde\Pi_+ \neq 0$, yet $\tilde\Pi_+$ is a zero divisor, because $\tilde\Pi_+$ is a nonzero non-unit of $\mathbb{D}$ and so does not lie in $\mathbb{D}^\times$. In the idempotent basis $N_{\mathbb{H}}(\tilde{Q}_+) = N_{\mathbb{H}}(\tilde{Q}_-) = 8$, so $N(\tilde{Q}) = 8\tilde\Pi_+ + 8\tilde\Pi_- = 8$, matching the direct computation.
+The criterion is not the naive one $N(\tilde{Q}) \neq 0$. For $\tilde P = \tilde\Pi_1$ one has $N(\tilde\Pi_1) = \tilde\Pi_1 \neq 0$, yet $\tilde\Pi_1$ is a zero divisor, because $\tilde\Pi_1$ is a nonzero non-unit of $\mathbb{D}$ and so does not lie in $\mathbb{D}^\times$. In the idempotent basis $N_{\mathbb{H}}(\tilde{Q}_+) = N_{\mathbb{H}}(\tilde{Q}_-) = 8$, so $N(\tilde{Q}) = 8\tilde\Pi_1 + 8\tilde\Pi_2 = 8$, matching the direct computation.
 
 ### Corollaries
 
@@ -563,9 +563,9 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\|\tilde{Q}\|_E = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | Inverse |
 | $\mathbb{H}_{\mathbb{D}}^\times$ | Group of units |
-| $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
-| $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
-| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
+| $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
+| $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
+| $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | Split complex subspace |
 | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Quaternion subspace |
 | $\mathbb{M}_+$ | Hermitian subspace |

@@ -77,18 +77,18 @@ Hence the two diagonal entries evolve by $a\mapsto a^2+bc$ and $d\mapsto cb+d^2$
 **Proposition (the centrality of the split idempotents).** In the split-biquaternion algebra the idempotents
 
 $$
-\tilde\Pi_\pm=\tfrac12(e_0\pm j)
+\tilde\Pi_{3,4}=\tfrac12(e_0\pm j)
 $$
 
 are **central**, $j$ being the central element with $j^2=1$, and the algebra factors as the direct sum of two ideals,
 
 $$
-\mathbb{H}_{\mathbb{D}}=\mathbb{H}\tilde\Pi_+\oplus\mathbb{H}\tilde\Pi_- , \qquad \mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H},
+\mathbb{H}_{\mathbb{D}}=\mathbb{H}\tilde\Pi_3\oplus\mathbb{H}\tilde\Pi_4 , \qquad \mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H},
 $$
 
 through central idempotents, so that the decomposition is one of the algebra and of every element and splits the dynamics globally, not on a slice. Then every quadratic map is the pair of two quaternion quadratic maps, the fractal is the product of two quaternion Julia sets, and there is no coupling term. **The biquaternion case is the case of non-central idempotents: the splitting is real but local; the split-biquaternion case is the case of central idempotents: the splitting is global.** The contrast is developed in *The Clifford Decomposition of the Split-Biquaternion Fractals*.
 
-**Proof.** $j$ is central with $j^2=1$, so $\tilde\Pi_\pm$ are central idempotents with $\tilde\Pi_++\tilde\Pi_-=e_0$ and $\tilde\Pi_+\tilde\Pi_-=0$; the Chinese-remainder decomposition of the algebra follows. In $\mathbb{B}$, by contrast, no non-trivial central idempotent exists because the algebra is simple (*Biquaternion Ideals and Peirce Decomposition*).
+**Proof.** $j$ is central with $j^2=1$, so $\tilde\Pi_{3,4}$ are central idempotents with $\tilde\Pi_3+\tilde\Pi_4=e_0$ and $\tilde\Pi_3\tilde\Pi_4=0$; the Chinese-remainder decomposition of the algebra follows. In $\mathbb{B}$, by contrast, no non-trivial central idempotent exists because the algebra is simple (*Biquaternion Ideals and Peirce Decomposition*).
 
 ## Summary
 
@@ -105,7 +105,7 @@ The Peirce decomposition of a biquaternion with respect to a primitive idempoten
 | $K_{C_1}\times K_{C_2}$ | the split fractal, a product of complex filled Julia sets |
 | $a,b,c,d$ | the four matrix entries |
 | $a+d$ | the trace, the coupling multiplier |
-| $\tilde\Pi_\pm=\tfrac12(e_0\pm j)$ | the central idempotents of the split-biquaternion algebra |
+| $\tilde\Pi_{3,4}=\tfrac12(e_0\pm j)$ | the central idempotents of the split-biquaternion algebra |
 
 ## Further Reading
 

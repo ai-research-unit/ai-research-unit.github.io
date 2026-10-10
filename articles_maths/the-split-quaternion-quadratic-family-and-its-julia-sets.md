@@ -82,7 +82,7 @@ The inner automorphisms form the group of all automorphisms of the algebra over 
 
 *Proof.* The restriction is a polynomial map with coefficients in the subalgebra, and the isomorphism carries it to the standard quadratic map of the target algebra, as in the definite case. $\square$
 
-**Proposition (the two real orbits of the idempotent decomposition).** Let $c\in\mathbb{D}_2=\operatorname{span}\{e_0,e_2\}$ and let $\tilde\pi_\pm=\tfrac12(e_0\pm e_2)$ be the idempotents, with $A=A_+\tilde\pi_++A_-\tilde\pi_-$ for $A\in\mathbb{D}_2$. Then the split-complex orbit of a point of $\mathbb{D}_2$ is the pair of real orbits
+**Proposition (the two real orbits of the idempotent decomposition).** Let $c\in\mathbb{D}_2=\operatorname{span}\{e_0,e_2\}$ and let $\tilde\pi_{1,2}=\tfrac12(e_0\pm e_2)$ be the idempotents, with $A=A_+\tilde\pi_1+A_-\tilde\pi_2$ for $A\in\mathbb{D}_2$. Then the split-complex orbit of a point of $\mathbb{D}_2$ is the pair of real orbits
 
 $$
 A_{\pm}^{(n+1)}=\bigl(A_\pm^{(n)}\bigr)^2+C_\pm , \qquad A_\pm^{(0)}=\text{the components of } A , \quad C_\pm=\text{the components of } c .
@@ -90,9 +90,9 @@ $$
 
 Thus **a split-complex quadratic orbit is two real quadratic orbits, one in each idempotent direction**; and in the complex case $N(\mathbf c)>0$ the corresponding statement is a single complex orbit.
 
-*Proof.* The idempotents satisfy $\tilde\pi_+^2=\tilde\pi_+$, $\tilde\pi_-^2=\tilde\pi_-$ and $\tilde\pi_+\tilde\pi_-=0$ by *Split-Quaternion Ideals and Peirce Decomposition*, and the algebra $\mathbb{D}_2$ is the direct sum $\mathbb{R}\tilde\pi_+\oplus\mathbb{R}\tilde\pi_-$; squaring is componentwise in this basis, $(A_+\tilde\pi_++A_-\tilde\pi_-)^2=A_+^2\tilde\pi_++A_-^2\tilde\pi_-$, and adding $c$ adds the components. The direct computation is recorded in the companion file. The complex case has no real idempotents, and its orbit is the single complex orbit. $\square$
+*Proof.* The idempotents satisfy $\tilde\pi_1^2=\tilde\pi_1$, $\tilde\pi_2^2=\tilde\pi_2$ and $\tilde\pi_1\tilde\pi_2=0$ by *Split-Quaternion Ideals and Peirce Decomposition*, and the algebra $\mathbb{D}_2$ is the direct sum $\mathbb{R}\tilde\pi_1\oplus\mathbb{R}\tilde\pi_2$; squaring is componentwise in this basis, $(A_+\tilde\pi_1+A_-\tilde\pi_2)^2=A_+^2\tilde\pi_1+A_-^2\tilde\pi_2$, and adding $c$ adds the components. The direct computation is recorded in the companion file. The complex case has no real idempotents, and its orbit is the single complex orbit. $\square$
 
-**Remark (no decomposition in the full algebra).** The idempotent decomposition is a statement about the split-complex subalgebra and not about the algebra: for a general $\tilde q$ the components $\tilde q\tilde\pi_\pm$ do not multiply independently, since $\tilde q\tilde\pi_+\cdot\tilde q\tilde\pi_-=\tilde q\tilde\pi_+\tilde q\tilde\pi_-$ need not vanish, and the direct computation gives the $e_1$ and $e_3$ components of $\tilde q^2$ as $2q_0q_1$ and $2q_0q_3$, which vanish only on the coordinate planes. **The decomposition of the menu is therefore the split-complex one and is not available for the whole family**; it is the correct tool exactly when the parameter and the point lie in the same split-complex plane, and it is the tool used in the next article for the spacelike connectedness locus.
+**Remark (no decomposition in the full algebra).** The idempotent decomposition is a statement about the split-complex subalgebra and not about the algebra: for a general $\tilde q$ the components $\tilde q\tilde\pi_{1,2}$ do not multiply independently, since $\tilde q\tilde\pi_1\cdot\tilde q\tilde\pi_2=\tilde q\tilde\pi_1\tilde q\tilde\pi_2$ need not vanish, and the direct computation gives the $e_1$ and $e_3$ components of $\tilde q^2$ as $2q_0q_1$ and $2q_0q_3$, which vanish only on the coordinate planes. **The decomposition of the menu is therefore the split-complex one and is not available for the whole family**; it is the correct tool exactly when the parameter and the point lie in the same split-complex plane, and it is the tool used in the next article for the spacelike connectedness locus.
 
 ## Comparison with the Neighbouring Families
 
@@ -125,7 +125,7 @@ The split-quaternion quadratic map $f_c(\tilde q)=\tilde q^2+c$ is the pattern o
 | $K_c$, $J_c=\partial K_c$ | Filled Julia set (bounded orbits); Julia set |
 | $\operatorname{Ad}_{\tilde u}$ | Inner automorphism; group $\operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$ |
 | $\mathbb{R}[c]=\operatorname{span}\{e_0,c\}$ | Subalgebra of the parameter and the critical orbit |
-| $\tilde\pi_\pm=\tfrac12(e_0\pm e_2)$ | Idempotents of the split-complex plane |
+| $\tilde\pi_{1,2}=\tfrac12(e_0\pm e_2)$ | Idempotents of the split-complex plane |
 | $C_\pm$, $A_\pm$ | Components in the idempotent directions |
 
 ## Further Reading

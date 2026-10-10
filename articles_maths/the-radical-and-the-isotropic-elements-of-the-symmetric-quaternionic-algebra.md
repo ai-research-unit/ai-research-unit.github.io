@@ -15,16 +15,15 @@ $\mathbb{B}$.
 The article is the second of the block of $\mathrm{SQA}$; it assumes the operation and its formula from
 *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*, the centrality from *The Symmetrised
 Quaternionic Product and the Hermitian Subspace*, and the norm, its polarisation and its isotropic cone from
-*Biquaternion Norm and Invertibility* and *Biquaternion Zero Divisors*. The six subspaces are treated in the
-companion article *The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*, and the form
+*Biquaternion Norm and Invertibility* and *Biquaternion Zero Divisors*. The remarkable subspaces are treated in the
+companion article *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*, and the form
 reader is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*.
 
 **Conventions.** The operation is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$,
 equal to $B(\tilde P,\tilde Q)e_0$; the coefficient $B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ is the
 quaternion form, and $N(\tilde Q)=B(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$ is its diagonal; the quaternionic
-bracket is $[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$. The six
-subspaces are $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$,
-$i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Introduction to the Six Subspaces*.
+bracket is $[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$. The remarkable subspaces are $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$,
+$i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*.
 
 ## The Product as a Pairing with Values in the Centre
 
@@ -198,7 +197,7 @@ composition with the bracket.
 
 The identification of the isotropic elements with the zero divisors makes the element theory of the operation
 a small chapter of the zero-divisor geometry of $\mathbb{B}$, which is algebraic: the cone $N=0$ is a quadric
-cone, cut by the six distinguished subspaces into the pieces recorded in *The Six Subspaces under the
+cone, cut by the remarkable subspaces into the pieces recorded in *Remarkable Subspaces under the
 Symmetric Quaternionic Algebra of Biquaternions*. On the two definite rows $\mathbb{H}_{\mathbb{B}}$ and
 $i\mathbb{H}_{\mathbb{B}}$ the norm is strictly signed and the cone meets the row only at the origin; on the
 vector subspace the cone is the pure zero-divisor cone; on the two Hermitian subspaces the cone is their real
@@ -209,7 +208,7 @@ or of $i\mathbb{H}_{\mathbb{B}}$ is isotropic for $\star$.
 
 *Proof.* On $\mathbb{H}_{\mathbb{B}}$ the form is positive definite, $N=\sum_\mu q_\mu^2\ge0$, vanishing only
 at the origin; on $i\mathbb{H}_{\mathbb{B}}$ it is negative definite, $N=-\sum_\mu(q'_\mu)^2\le0$, vanishing
-only at the origin (*The Six Subspaces under the General Quaternionic Algebra of Biquaternions*). $\square$
+only at the origin (*Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*). $\square$
 
 **Remark (the radical again, from the subspaces).** The triviality of the radical is compatible with a large
 isotropic cone, and the two are read on the Gram data: the form has Gram matrix $I_4$, which is invertible and
@@ -229,7 +228,7 @@ witnesses are $e_0+ie_1$ on the Hermitian subspace and $e_1+ie_2$ on the vector 
 elements are exactly the isotropic ones; the idempotents are $0$ and $e_0$ alone; the derived law collapses,
 the commutator of $\star$ being identically zero; the associative law does not collapse, the associator being
 $B(\tilde P,\tilde Q)R_0-P_0B(\tilde Q,\tilde R)$ times $e_0$, nonzero at $e_1,e_1,e_0$; and the ternary
-object $B([\tilde P,\tilde R]_{\natural},\tilde Q)e_0$ does not vanish. The two definite rows of the six
+object $B([\tilde P,\tilde R]_{\natural},\tilde Q)e_0$ does not vanish. The two definite rows of the remarkable subspaces
 contain no isotropic element.
 
 ## Summary of Notation
@@ -244,7 +243,7 @@ contain no isotropic element.
 | $[\tilde P,\tilde Q]_{\natural}$ | the quaternionic bracket $\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$ |
 | $[\tilde P,\tilde Q]_{\star}$ | the commutator of the operation, identically zero |
 | $T(\tilde P,\tilde Q,\tilde R)=B([\tilde P,\tilde R]_{\natural},\tilde Q)e_0$ | the ternary object of the operation |
-| $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the six distinguished subspaces |
+| $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable subspaces |
 
 ## Further Reading
 
@@ -252,5 +251,5 @@ contain no isotropic element.
 - *The Symmetrised Quaternionic Product and the Hermitian Subspace* (`articles_maths/the-symmetrised-quaternionic-product-and-the-hermitian-subspace.md`), for the centrality and the coefficient in full
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`) and *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the norm, its polarisation and the isotropic cone
 - *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the idempotents of the algebra and their contrast with the idempotents of $\mathrm{SQA}$
-- *The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the isotropic elements on each subspace
+- *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the isotropic elements on each subspace
 - *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the operators $L^{\star}_{\tilde A}$ in full

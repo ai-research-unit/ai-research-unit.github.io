@@ -169,11 +169,11 @@ $e_0$ and the vector part is a complex vector in
 $\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$; neither annihilates the other, and the two are read in the
 same element. Neither is the whole of the value, and neither was assigned the name of a part by the split.
 
-**The strain reading of the value.** The two projections have the shapes of the two elementary deformations of a frame, and the correspondence is exact. The scalar part is a **trace**, $K=\mathrm{Sc}(\tilde P\bullet\tilde Q)$, and a trace read on a frame is a **conformal factor**: it changes the scale and leaves the directions alone. The vector part is **traceless** — it is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$ and carries no $e_0$ component — and a traceless symmetric part read on a frame is a **shear**: it changes the shape and leaves the volume. The symmetric gauge product is therefore read as a **frame-deformation operator**: its value is one scale and one shape, and the statement that the value lies in no subspace of the six is the statement that a genuine deformation mixes the two grades. The reading is bounded by the same caution as the theorem it dresses: one value has at most a scalar and a vector part, and it is the **image** of the operation, not one of its values, whose real span is the whole algebra.
+**The strain reading of the value.** The two projections have the shapes of the two elementary deformations of a frame, and the correspondence is exact. The scalar part is a **trace**, $K=\mathrm{Sc}(\tilde P\bullet\tilde Q)$, and a trace read on a frame is a **conformal factor**: it changes the scale and leaves the directions alone. The vector part is **traceless** — it is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$ and carries no $e_0$ component — and a traceless symmetric part read on a frame is a **shear**: it changes the shape and leaves the volume. The symmetric gauge product is therefore read as a **frame-deformation operator**: its value is one scale and one shape, and the statement that the value lies in no subspace of the remarkable subspaces is the statement that a genuine deformation mixes the two grades. The reading is bounded by the same caution as the theorem it dresses: one value has at most a scalar and a vector part, and it is the **image** of the operation, not one of its values, whose real span is the whole algebra.
 
 **The mixed term as the sector-mixing term.** The vector part of the value is where the two sectors meet, and it is worth naming it. The vector part is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$, and its components run over the six real directions of the vector subspace, three of them material ($e_k$) and three informational ($ie_k$); the scalar part $K$ couples only same-grade coefficients, and the mixed term is what couples the **scalar coefficient of one argument to the vector coefficients of the other**. The symmetric gauge product is therefore the algebraic seat of the framework's **matter–information mixing**: the term the corpus reads in the imaginary part of the biquaternion norm as the coupling of the material and informational sectors is carried here by the vector part of the value, and the **centrality criterion** of the band — $Q_0\overline{Q_k}\in i\mathbb{R}$ for every $k$ — is the **no-mixing** condition under which the coupling vanishes and the value returns to the centre. The name is the article's; the algebra of the term is the theorem above.
 
-**The duality rotation is not the split.** A caution, because two operations of the corpus are easy to conflate here. Multiplication by the central imaginary $i$ is the **electric–magnetic duality rotation** of the field strength, and it exchanges the real and the imaginary sectors (*The Four Other Remarkable Subspaces*); it is **not** the symmetric-versus-antisymmetric split of a product, which is the exchange of the two arguments adapted to the class. The duality rotation is an operation on an element of the algebra; the split is an operation on a product of two. The two coincide on nothing in general, and the corpus keeps them apart.
+**The duality rotation is not the split.** A caution, because two operations of the corpus are easy to conflate here. Multiplication by the central imaginary $i$ is the **electric–magnetic duality rotation** of the field strength, and it exchanges the real and the imaginary sectors (*Other Remarkable Subspaces*); it is **not** the symmetric-versus-antisymmetric split of a product, which is the exchange of the two arguments adapted to the class. The duality rotation is an operation on an element of the algebra; the split is an operation on a product of two. The two coincide on nothing in general, and the corpus keeps them apart.
 
 ### The Contrast with the Plain Sesquilinear Row
 
@@ -182,12 +182,12 @@ The two rows of sesqualgebra products are read against each other, and the contr
 | row | symmetric part | antisymmetric part | the symmetric value |
 |---|---|---|---|
 | plain sesquilinear $\mathrm{GPS}$ | $\mathrm{SPS}=\mathrm{Sc}(\tilde P\tilde Q^{*})=H(\tilde P,\tilde Q)$ | $\mathrm{APS}=\mathrm{Vect}(\tilde P\tilde Q^{*})$ | central, in $\mathbb{C}_{\mathbb{B}}$ |
-| quaternionic sesquilinear $\mathrm{GQS}$ | $\mathrm{SQS}=\tilde P\bullet\tilde Q$ | $\mathrm{AQS}=\mathbf{P}\times\overline{\mathbf{Q}}$ | scalar part $K$, vector part the mixed term, in no subspace of the six |
+| quaternionic sesquilinear $\mathrm{GQS}$ | $\mathrm{SQS}=\tilde P\bullet\tilde Q$ | $\mathrm{AQS}=\mathbf{P}\times\overline{\mathbf{Q}}$ | scalar part $K$, vector part the mixed term, in no subspace of the remarkable subspaces |
 
 The plain symmetric part is **central-valued** and its diagonal is the positive Hermitian form
 $H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\mathbf{Q}\rvert^{2}$; the quaternionic symmetric part is
 **not central-valued**, its scalar part is the **indefinite** form $K$, and its value lies in no one of the
-six subspaces. This is the first appearance of the tension the band carries: the two symmetric
+remarkable subspaces. This is the first appearance of the tension the band carries: the two symmetric
 sesquilinear products do not divide the state side between them, because only one of the two has a
 positivity to divide. The plain one is the state row; the quaternionic one is not.
 
@@ -282,7 +282,7 @@ coefficients and $(2,6)$ over the real parameters, the isometry group $U(1,3)$, 
 symmetry $J={}^{\natural}$, the natural conjugation, that turns the indefinite form into the definite one.
 The metric itself, its signature and its Klein–Gupta–Bleuler reading are *The Fourth Product and Its
 Indefinite Metric*; the form read as the multiplication of the block, with its two Gram matrices, its
-isotropic elements, its restriction to the six subspaces and its invariance under the block, is *The Krein
+isotropic elements, its restriction to the remarkable subspaces and its invariance under the block, is *The Krein
 Form as a Product on the Symmetric Quaternionic Sesqualgebra*; and here the point is only that the pairing
 is **a product**, and that the product's scalar part is where the metric lives.
 
@@ -376,7 +376,7 @@ Four further readings of the symmetric gauge product are recorded here, each und
 ## The Limits
 
 - **The article does not supply the metric.** The signature, the inertia, the fundamental symmetry and the
-  isometry group are *The Fourth Product and Its Indefinite Metric*; the restrictions to the six subspaces
+  isometry group are *The Fourth Product and Its Indefinite Metric*; the restrictions to the remarkable subspaces
   are *The Krein Gram Matrix and the Restrictions of the Form*. This article reads the symmetric half as a
   product and locates the metric in its scalar part.
 - **The article does not claim positivity.** The operation has an indefinite scalar part, and the
@@ -401,10 +401,10 @@ product. The symmetric half is conjugate-commutative, sesquilinear over $(\mathb
 neither commutative nor associative; $e_0\bullet\tilde Q=\tilde Q^{*}$ and
 $\tilde Q\bullet e_0=\tilde Q^{\natural}$, so there is no unit on either side; it fails the Jordan identity
 at $x=y=e_1$, with the two sides $-e_0$ and $e_0$; its diagonal at $e_0+e_1$ is $-2e_1$, not central; its
-value lies in no one of the six subspaces for a general pair and the real span of its values is the whole algebra. Recomputed on $100$
+value lies in no one of the remarkable subspaces for a general pair and the real span of its values is the whole algebra. Recomputed on $100$
 random pairs and on the named witnesses, and reproduced from *Introduction to the Symmetric Quaternionic
 Sesqualgebra of Biquaternions*, *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic
-Sesqualgebra*, *The Six Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* and *The 12 Products of the Biquaternion Complex Space*.
+Sesqualgebra*, *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* and *The 12 Products of the Biquaternion Complex Space*.
 
 **Reading.** That the symmetric half is the invariant indefinite pairing of the gauge structure, that its
 scalar part is the Krein form and its vector part the mixed term, and that the two projections of its
@@ -436,7 +436,7 @@ neither annihilates the other. The operation is **conjugate-commutative** and se
 $(\mathbb{C},\bar{\cdot})$, it is neither commutative nor associative, it has **no unit** — the two
 one-sided actions of $e_0$ are the two conjugations — and it **fails the Jordan identity** at
 $x=y=e_1$, where the two sides are $-e_0$ and $e_0$. Its diagonal at $e_0+e_1$ is $-2e_1$, off the centre,
-and its values lie in no one of the six subspaces for a general pair. The **metric word is earned** as the indefiniteness of
+and its values lie in no one of the remarkable subspaces for a general pair. The **metric word is earned** as the indefiniteness of
 the scalar part: $K$ has the signature $(1,3)$ over the complex coefficients, positive on the centre and
 negative on the vector subspace, with fundamental symmetry ${}^{\natural}$ and isometry group $U(1,3)$. It
 is **not** earned as a norm: the pairing has no positivity, no distance and no length, and the metric is

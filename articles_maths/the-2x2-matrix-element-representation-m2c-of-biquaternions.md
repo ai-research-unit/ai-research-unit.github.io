@@ -2,15 +2,15 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its six distinguished subspaces and its norm $N$ are those of *Biquaternions as a Vector Space over $\mathbb{C}$*, *Introduction to the Six Subspaces* and *Biquaternion Norm and Invertibility*.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its remarkable subspaces and its norm $N$ are those of *Biquaternions as a Vector Space over $\mathbb{C}$*, *Introduction to the Remarkable Subspaces* and *Biquaternion Norm and Invertibility*.
 
-The **matrix realization** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, the theorem that it is an algebra isomorphism, the trace $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$ and the determinant $\det \mathsf{M}_2(\tilde Q)=N(\tilde Q)$, and the six distinguished subspaces as matrix conditions are *Introduction to the 2×2 Matrix Representation of Biquaternions*; they are used here and not restated. The term representation is used in both senses at once, the concrete realization of the algebra and the technical representation on a vector space.
+The **matrix realization** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, the theorem that it is an algebra isomorphism, the trace $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$ and the determinant $\det \mathsf{M}_2(\tilde Q)=N(\tilde Q)$, and the remarkable subspaces as matrix conditions are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; they are used here and not restated. The term representation is used in both senses at once, the concrete realization of the algebra and the technical representation on a vector space.
 
 This article is the further development of that realization. It owns the rank-one elements and the outer product, the characteristic polynomial and the spectrum, the Cayley–Hamilton identity, the matrix form of the four conjugations, the simple module $V$, the matrix units with the projective line, and the structural consequences of the isomorphism. It does not treat the spinor reading of $V$, which belongs to *Biquaternion Spin Geometry*; it does not re-derive the Clifford identification of *The Clifford Algebra Representation*; and it does not reprove the classification of the simple modules or Schur's lemma, which belong to *Modules over the General Plain Algebra of Biquaternions*. No physical vocabulary is used: the matrices below are not gamma matrices and the module is not a spinor of a physical field.
 
 ## The Rank-One Elements and the Outer Product
 
-The invertibility corollary of *Introduction to the 2×2 Matrix Representation of Biquaternions* says that the zero divisors are the nonzero singular matrices; the matrix form also says what such a matrix is.
+The invertibility corollary of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* says that the zero divisors are the nonzero singular matrices; the matrix form also says what such a matrix is.
 
 **Proposition.** For $\tilde{Q}\neq0$ the following are equivalent: $N(\tilde{Q})=0$; $\mathsf{M}_2(\tilde{Q})$ is singular; $\mathsf{M}_2(\tilde{Q})$ is an outer product
 $$
@@ -38,7 +38,7 @@ $$
 
 so the spectrum is $\{Q_0 + iB,\; Q_0 - iB\}$ with $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$, the trace is $2Q_0$, and the determinant is $N(\tilde{Q})$.
 
-**Proof.** For a $2 \times 2$ matrix the characteristic polynomial is $\lambda^2 - \operatorname{Tr}(M)\lambda + \det(M)$, and $\operatorname{Tr}\mathsf{M}_2(\tilde{Q}) = 2Q_0$, $\det \mathsf{M}_2(\tilde{Q}) = N(\tilde{Q})$ by the trace-and-determinant proposition of *Introduction to the 2×2 Matrix Representation of Biquaternions*. The eigenvalues are the two roots $Q_0 \pm \sqrt{Q_0^2 - N(\tilde{Q})}$, and $Q_0^2 - N(\tilde{Q}) = -(Q_1^2 + Q_2^2 + Q_3^2) = -B^2$.
+**Proof.** For a $2 \times 2$ matrix the characteristic polynomial is $\lambda^2 - \operatorname{Tr}(M)\lambda + \det(M)$, and $\operatorname{Tr}\mathsf{M}_2(\tilde{Q}) = 2Q_0$, $\det \mathsf{M}_2(\tilde{Q}) = N(\tilde{Q})$ by the trace-and-determinant proposition of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. The eigenvalues are the two roots $Q_0 \pm \sqrt{Q_0^2 - N(\tilde{Q})}$, and $Q_0^2 - N(\tilde{Q}) = -(Q_1^2 + Q_2^2 + Q_3^2) = -B^2$.
 
 **Remark (similarity).** Two biquaternions are similar, $\tilde{Q}' = S\tilde{Q}S^{-1}$ with $S$ invertible, exactly when their matrices are similar, so the spectrum is a similarity invariant. The similarity classification, the eigenvalue dichotomy, and the resolvent are the subject of *Biquaternion Spectral Theory*, which also records the several inequivalent meanings of "spectrum".
 
@@ -50,7 +50,7 @@ $$
 \tilde{Q}^2 - 2Q_0\,\tilde{Q} + N(\tilde{Q})\,e_0 = 0 .
 $$
 
-**Proof.** Cayley–Hamilton for the $2 \times 2$ matrix $\mathsf{M}_2(\tilde{Q})$ reads $\mathsf{M}_2(\tilde{Q})^2 - \operatorname{Tr}\mathsf{M}_2(\tilde{Q})\,\mathsf{M}_2(\tilde{Q}) + \det \mathsf{M}_2(\tilde{Q})\,I = 0$. Substituting the trace and the determinant of *Introduction to the 2×2 Matrix Representation of Biquaternions*, $\operatorname{Tr}\mathsf{M}_2(\tilde{Q}) = 2Q_0$ and $\det \mathsf{M}_2(\tilde{Q}) = N(\tilde{Q})$, and transporting back along the injective map $\mathsf{M}_2$ gives the identity.
+**Proof.** Cayley–Hamilton for the $2 \times 2$ matrix $\mathsf{M}_2(\tilde{Q})$ reads $\mathsf{M}_2(\tilde{Q})^2 - \operatorname{Tr}\mathsf{M}_2(\tilde{Q})\,\mathsf{M}_2(\tilde{Q}) + \det \mathsf{M}_2(\tilde{Q})\,I = 0$. Substituting the trace and the determinant of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, $\operatorname{Tr}\mathsf{M}_2(\tilde{Q}) = 2Q_0$ and $\det \mathsf{M}_2(\tilde{Q}) = N(\tilde{Q})$, and transporting back along the injective map $\mathsf{M}_2$ gives the identity.
 
 **Remark.** This is the identity that reduces every power of $\tilde{Q}$ to a combination of $e_0$ and $\tilde{Q}$, and it is the starting point for the closed forms of the exponential and the trigonometric functions in *Biquaternion Elementary Functions*.
 
@@ -202,7 +202,7 @@ The matrix realization places the structure of $\mathbb{B}$ in view, and the con
 
 **Theorem (simple, central, with prescribed centre).** The algebra $\mathbb{B}$ is simple; its centre is the scalar subspace $\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$, isomorphic to $\mathbb{C}$; and $\mathbb{B}$ is central simple over $\mathbb{C}$.
 
-**Proof.** Simplicity and the centre are the two corollaries after the isomorphism theorem of *Introduction to the 2×2 Matrix Representation of Biquaternions*. Central simple means simple with centre exactly the base field, and the centre is $\mathbb{C} e_0 \cong \mathbb{C}$.
+**Proof.** Simplicity and the centre are the two corollaries after the isomorphism theorem of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. Central simple means simple with centre exactly the base field, and the centre is $\mathbb{C} e_0 \cong \mathbb{C}$.
 
 **Theorem (endomorphism algebra).** The isomorphism $\mathsf{M}_2$ identifies $\mathbb{B}$ with the endomorphism algebra of the two-dimensional complex space $V$, so that $\mathbb{B} = \operatorname{End}_{\mathbb{C}}(V)$ under the identification.
 
@@ -210,13 +210,13 @@ The matrix realization places the structure of $\mathbb{B}$ in view, and the con
 
 **Corollary (zero divisors).** The zero divisors of $\mathbb{B}$ are exactly the nonzero elements $\tilde{Q}$ with $\det \mathsf{M}_2(\tilde{Q}) = N(\tilde{Q}) = 0$, that is, the nonzero elements whose matrix is singular. In matrix terms they are the elements of rank one, and they form the nonzero part of the determinantal variety $\det = 0$.
 
-**Proof.** A nonzero matrix over a field is singular exactly when it is a zero divisor in the matrix algebra, and rank is one for the nonzero singular $2 \times 2$ matrices. The identification with the vanishing of the determinant $N$ is the determinant statement of *Introduction to the 2×2 Matrix Representation of Biquaternions*.
+**Proof.** A nonzero matrix over a field is singular exactly when it is a zero divisor in the matrix algebra, and rank is one for the nonzero singular $2 \times 2$ matrices. The identification with the vanishing of the determinant $N$ is the determinant statement of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*.
 
 Taken together, the three statements say that $\mathbb{B}$ is the full endomorphism algebra of a two-dimensional complex space, and that all of its one-sided ideal structure and all of its degeneracies are the corresponding structure of $M_2(\mathbb{C})$ transported along a fixed linear isomorphism. The classification of the conjugations, the trace and the determinant, and the module $V$ are the parts of that transport that the companion articles use.
 
 ## Summary
 
-The matrix realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Representation of Biquaternions* identifies $\mathbb{B}$ with $M_2(\mathbb{C})$, with trace $2Q_0$ and determinant $N(\tilde{Q})$; on that identification the present article develops the element theory. A nonzero null element, $N(\tilde{Q}) = 0$, is a singular matrix and hence a rank-one outer product $\mathsf{M}_2(\tilde{Q}) = uv^{T}$. The characteristic polynomial is $\lambda^2 - 2Q_0\lambda + N(\tilde{Q})$ and the Cayley–Hamilton identity is $\tilde{Q}^2 - 2Q_0\tilde{Q} + N(\tilde{Q})e_0 = 0$, so every power reduces to a combination of $e_0$ and $\tilde{Q}$. Quaternion conjugation is the adjugate, Hermitian conjugation is the conjugate transpose, and complex conjugation is **not** entrywise: it is dressed with the antisymmetric matrix $\epsilon = i\sigma_2 = \mathsf{M}_2(-e_2)$, as $\mathsf{M}_2(\bar{\tilde{Q}}) = \epsilon(\mathsf{M}_2(\tilde{Q}))^{\natural}\epsilon^{-1}$. The six distinguished subspaces are the scalar, traceless, quaternionic, anti-quaternionic, Hermitian and anti-Hermitian matrices. The algebra is simple with centre the scalar matrices and is the full endomorphism algebra of the simple module $V = \mathbb{C}^2$ of complex dimension $2$, on which it acts by matrix multiplication; the minimal left ideals are the column spaces, and $V$ is the only simple module. The two dimensions $2$ of the module and $2$ of the matrix are the same two, because the algebra is the endomorphism algebra of the module.
+The matrix realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* identifies $\mathbb{B}$ with $M_2(\mathbb{C})$, with trace $2Q_0$ and determinant $N(\tilde{Q})$; on that identification the present article develops the element theory. A nonzero null element, $N(\tilde{Q}) = 0$, is a singular matrix and hence a rank-one outer product $\mathsf{M}_2(\tilde{Q}) = uv^{T}$. The characteristic polynomial is $\lambda^2 - 2Q_0\lambda + N(\tilde{Q})$ and the Cayley–Hamilton identity is $\tilde{Q}^2 - 2Q_0\tilde{Q} + N(\tilde{Q})e_0 = 0$, so every power reduces to a combination of $e_0$ and $\tilde{Q}$. Quaternion conjugation is the adjugate, Hermitian conjugation is the conjugate transpose, and complex conjugation is **not** entrywise: it is dressed with the antisymmetric matrix $\epsilon = i\sigma_2 = \mathsf{M}_2(-e_2)$, as $\mathsf{M}_2(\bar{\tilde{Q}}) = \epsilon(\mathsf{M}_2(\tilde{Q}))^{\natural}\epsilon^{-1}$. The remarkable subspaces are the scalar, traceless, quaternionic, anti-quaternionic, Hermitian and anti-Hermitian matrices. The algebra is simple with centre the scalar matrices and is the full endomorphism algebra of the simple module $V = \mathbb{C}^2$ of complex dimension $2$, on which it acts by matrix multiplication; the minimal left ideals are the column spaces, and $V$ is the only simple module. The two dimensions $2$ of the module and $2$ of the matrix are the same two, because the algebra is the endomorphism algebra of the module.
 
 ## Summary of Notation
 
@@ -227,7 +227,7 @@ The matrix realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Repres
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | Developed form, $Q_\mu \in \mathbb{C}$ |
 | $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ | Four-vector of *The Four-Vector Element Representation of Biquaternions* |
-| $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$ | Matrix realization of *Introduction to the 2×2 Matrix Representation of Biquaternions*, $\mathsf{M}_2(e_0) = I$, $\mathsf{M}_2(e_k) = -i\sigma_k$ |
+| $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$ | Matrix realization of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, $\mathsf{M}_2(e_0) = I$, $\mathsf{M}_2(e_k) = -i\sigma_k$ |
 | $\sigma_1, \sigma_2, \sigma_3$ | Pauli matrices, a shorthand for the images of $e_1, e_2, e_3$ |
 | $N(\tilde{Q}) = \det \mathsf{M}_2(\tilde{Q}) = \sum_\mu Q_\mu^2$ | The determinant of the matrix, the norm |
 | $\mathsf{M}_2(\tilde{Q}) = uv^{T}$ | Rank-one form of a nonzero null element, $N(\tilde{Q}) = 0$; the columns $u = (\alpha,\beta)^{T}$ and $v = (\gamma,\delta)^{T}$ are nonzero and determined up to $(\lambda u,\lambda^{-1}v)$ |
@@ -237,7 +237,7 @@ The matrix realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Repres
 | $H_2(\mathbb{C})$ | Hermitian $2 \times 2$ matrices, the image of $\mathbb{M}_+$ under $\mathsf{M}_2$ |
 | $\mathrm{SL}(2,\mathbb{C})$ | Traceless matrices, the image $\mathsf{M}_2(\mathrm{Vect}(\mathbb{B}))$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugations |
-| $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The six distinguished subspaces |
+| $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The remarkable subspaces |
 | $V = \mathbb{C}^2$ | Simple left $\mathbb{B}$-module, complex dimension $2$ |
 | $S = \operatorname{Res}_{\mathbb{C}/\mathbb{R}} V$ | Restriction of scalars, real dimension $4$ |
 | $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3)$ | Orthogonal idempotents, $\mathsf{M}_2(\tilde\Pi_1) = E_{11}$, $\mathsf{M}_2(\tilde\Pi_2) = E_{22}$ |
@@ -246,7 +246,7 @@ The matrix realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Repres
 
 ## Further Reading
 
-- *Introduction to the 2×2 Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.md`), for the map, the isomorphism, the trace and the determinant, and the six subspace conditions
+- *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the map, the isomorphism, the trace and the determinant, and the remarkable subspace conditions
 
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the structure of the full matrix algebra, its centre, its simplicity and its idempotents.
 - Frank W. Anderson and Kent R. Fuller, *Rings and Categories of Modules*, 2nd edition (Springer, 1992), for the simple modules of a semisimple algebra and the classification of minimal left ideals.
@@ -254,5 +254,5 @@ The matrix realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Repres
 - John Voight, *Quaternion Algebras*, Graduate Texts in Mathematics 288 (Springer, 2021), for the relation between quaternion algebras, their complexification and the matrix algebra.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the matrix realizations of the complexified quaternions.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the explicit matrix model of the biquaternions and its invariants.
-- *The General Plain Algebra in the $2\times2$ Matrix Representation* (`articles_maths/the-general-plain-algebra-in-the-2x2-matrix-representation.md`), the first of the four articles reading the four forms on the $2\times2$ matrix, each with the structure attached to its form.
-- *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-representation-of-biquaternions.md`), for the six distinguished subspaces read in this model and in the regular one at once, and for the block-diagonal bridge between them
+- *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation.md`), the first of the four articles reading the four forms on the $2\times2$ matrix, each with the structure attached to its form.
+- *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md`), for the remarkable subspaces read in this model and in the regular one at once, and for the block-diagonal bridge between them

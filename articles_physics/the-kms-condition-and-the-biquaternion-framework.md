@@ -10,7 +10,7 @@ The material sector $\mathbb{M}_-$ of the biquaternion algebra is such a framewo
 
 The article is organized as follows. First the KMS condition is recalled as established physics, for both bosons and fermions. Then the role of imaginary time in the condition is made explicit. Then the material sector $\mathbb{M}_-$ is recalled, and the naturalness of imaginary time in this sector is discussed. Then the KMS condition is stated in the biquaternion language, and the structural fit is analyzed. The article closes with the status of the reading and with directions for future work.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with its six distinguished subspaces as in the basic algebra article; the three used here are the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the material sector $\mathbb{M}_-$, and the informational sector $\mathbb{M}_+$. Throughout, $c$ denotes the speed of light in the medium, and $\hbar$ and $k_B$ are the reduced Planck constant and Boltzmann's constant.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with its remarkable subspaces as in the basic algebra article; the three used here are the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the material sector $\mathbb{M}_-$, and the informational sector $\mathbb{M}_+$. Throughout, $c$ denotes the speed of light in the medium, and $\hbar$ and $k_B$ are the reduced Planck constant and Boltzmann's constant.
 
 ## The KMS Condition
 

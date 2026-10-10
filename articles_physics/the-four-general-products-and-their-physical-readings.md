@@ -43,8 +43,7 @@ general products splits into a symmetric and an antisymmetric part, giving six $
 sesquilinear operations, that is **six algebras over $\mathbb{C}$ and six sesqualgebras over
 $(\mathbb{C},\bar{\cdot})$** (*The 12 Products of the Biquaternion Complex Space*, *The 12 Algebraic
 Structures over the Biquaternion $\mathbb{C}$ Space*). This article, and the four blocks it maps, read the
-**general** structures alone: the two **general** algebras and the two **general** sesqualgebras among the
-six of each kind. The other eight structures are the symmetric and antisymmetric parts of the four general
+**general** structures alone: the two **general** algebras and the two **general** sesqualgebras among the six of each kind. The other eight structures are the symmetric and antisymmetric parts of the four general
 products, and they enter here only through the reading of §*The Four Readings* that the twelve are the four
 general products together with the two halves of each.
 
@@ -52,11 +51,11 @@ The mathematics of the four general products, of their scalar and vector parts, 
 scalar forms is *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products*, *Comparison Between the Four General Products* and *The Four Pairings of the
 Biquaternion Algebra*, and the slot construction itself, with the two theorems that the second slot
 decides the composition and the first the form, is *The Four General Products and Their Two Slots: the Two
-Algebras and the Two Sesqualgebras*. The signature table of the four scalar forms on the six subspaces,
+Algebras and the Two Sesqualgebras*. The signature table of the four scalar forms on the remarkable subspaces,
 which is where the effect of the first slot on the form is quantified, compares the four blocks with one
-another and so belongs to this article rather than to any of them; it is in §*The Six Subspaces*. The
+another and so belongs to this article rather than to any of them; it is in §*Remarkable Subspaces*. The
 field of $B$ alone is *The Ordinary Product and the Material Sector*, the entry article of the block of
-the algebra over $\mathbb{C}$, where the restriction of $B$ to the six subspaces is read.
+the algebra over $\mathbb{C}$, where the restriction of $B$ to the remarkable subspaces is read.
 
 **This article is also the place where the four are compared with one another.** Each block reads one
 product and one form, compares its own product with its sibling, and does not re-tabulate the grid; the
@@ -223,8 +222,7 @@ $\mathbb{M}_+$ — while $N$ and $K$ are indefinite on each sector; and only $N$
 spacetime, on $\mathbb{M}_-$ and with the opposite signs on $\mathbb{M}_+$. Read instead on the whole
 real space, where the four are the forms of *The Four Pairings of the Biquaternion Algebra*, only $H$ is
 definite, and $B$, $N$ and $K$ are indefinite, of signatures $(4,4)$, $(4,4)$ and $(2,6)$. The full
-table on the six subspaces, with the Gram matrices and the isotropic structures, is in §*The Six
-Subspaces*; the two sectors read above are its material and informational columns, and nothing else is
+table on the remarkable subspaces, with the Gram matrices and the isotropic structures, is in §*Remarkable Subspaces*; the two sectors read above are its material and informational columns, and nothing else is
 claimed here.
 
 **The sector signs are checkable on one element.** Writing $\tilde Q=(ict,x,y,z)$ on $\mathbb{M}_-$ and
@@ -255,7 +253,7 @@ properties the corpus tabulates, and the rule in the last column is the reason.
 The table gathers the rows of the property table of *Comparison Between the Four General Products*
 — bilinearity, the two identities, the monoid of the left multiplications and associativity — read by
 slot rather than by column, together with the two form rows of *The Four Pairings of the Biquaternion
-Algebra* and the restriction table of §*The Six Subspaces*, and the row of the scalar square, which is
+Algebra* and the restriction table of §*Remarkable Subspaces*, and the row of the scalar square, which is
 the property selected in *Introduction to the General Quaternionic Algebra of Biquaternions*. The table is the
 article's central claim in tabular form, and it says that the two slots carry two independent
 structures:
@@ -315,8 +313,7 @@ its slots.
 ## The Two General Algebras
 
 The two products whose second slot is trivial are $\mathbb{C}$-bilinear, and they are the multiplication
-of an **algebra over $\mathbb{C}$** in the sense the corpus uses — the two **general** algebras among the
-six the space carries, the general plain and the general quaternionic algebra. Both have a left identity, and both
+of an **algebra over $\mathbb{C}$** in the sense the corpus uses — the two **general** algebras among the six the space carries, the general plain and the general quaternionic algebra. Both have a left identity, and both
 induce a bilinear form by squaring.
 
 **The plain product $\tilde P\tilde Q$** is the only associative one and the only one with a two-sided
@@ -351,8 +348,7 @@ how an element is measured against the interval.
 ## The Two General Sesqualgebras
 
 The two products whose second slot carries the star are conjugate-linear in the second factor, and they
-are the multiplication of a **sesqualgebra over $\mathbb{C}$** — the two **general** sesqualgebras among the
-six the space carries, the general plain and the general quaternionic sesqualgebra. Neither has a left identity, and both
+are the multiplication of a **sesqualgebra over $\mathbb{C}$** — the two **general** sesqualgebras among the six the space carries, the general plain and the general quaternionic sesqualgebra. Neither has a left identity, and both
 induce a Hermitian form.
 
 **The sesquilinear product $\tilde P\tilde Q^{*}$** has a right identity and no left one, and it is the
@@ -411,10 +407,9 @@ identities are the companion, at the level of forms, of *Relations Between the F
 | **first slot $=\mathrm{id}$** | $B$, symmetric, **definite on each sector** | $H$, Hermitian, **positive definite everywhere** |
 | **first slot $={}^{\natural}$** | $N$, symmetric, **indefinite** | $K$, Hermitian, **indefinite** |
 
-### The Six Subspaces
+### Remarkable Subspaces
 
-The two-sector collapse below is the coarse reading. The fine reading places the four forms on the six
-distinguished real subspaces at once, and it is the table from which each block takes its own row. A
+The two-sector collapse below is the coarse reading. The fine reading places the four forms on the remarkable real subspaces at once, and it is the table from which each block takes its own row. A
 restriction is read by choosing a real basis of the subspace and recording the signature of the
 restricted form. On the four four-dimensional subspaces all four forms are real-valued, because those
 subspaces contain both halves of each coefficient. On the centre and on the vector subspace, which are
@@ -481,7 +476,7 @@ with the diagonal signs of the table. The identities hold to machine precision, 
 diagonals of $B,N,H,K$ are $(-1,-1,-1,-1)$, $(-1,1,1,1)$, $(1,1,1,1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_-$
 and $(1,1,1,1)$, $(1,-1,-1,-1)$, $(1,1,1,1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_+$, reproducing the inertias
 $(0,4)$, $(3,1)$, $(4,0)$, $(1,3)$ on $\mathbb{M}_-$ and $(4,0)$, $(1,3)$, $(4,0)$, $(1,3)$ on
-$\mathbb{M}_+$. These are the two sector rows of the table of §*The Six Subspaces*; what is added here
+$\mathbb{M}_+$. These are the two sector rows of the table of §*Remarkable Subspaces*; what is added here
 is the last column, which compares the rows with each other.
 
 **The two rows under the sector exchange.** Multiplication by the central imaginary carries
@@ -508,7 +503,7 @@ it preserves. The two flips are the sign reversal of the interval and of the com
 the two signatures $(3,1)$ against $(1,3)$ and $(0,4)$ against $(4,0)$; the two invariants are the
 probability and the indefinite gauge metric, which is why a probability carries no sign of the sector
 while a metric carries it. The exchange is the framework's Wick rotation
-(*The Four Other Remarkable Subspaces*), and this is its statement at the level of the forms.
+(*Other Remarkable Subspaces*), and this is its statement at the level of the forms.
 
 **Remark (verified).** The four identities were checked on $100$ random pairs of general complex
 elements, not only on the sectors, and hold identically; on a sector they reduce to the row relations
@@ -606,7 +601,7 @@ Three further readings of the grid are recorded here, each under a name of its o
 
 - **Twelve-to-ten measure.** The fall of the twelve operations to ten on the real part is read as a **measure of the complex structure** the grid carries: two distinctions are lost when the coefficients are restricted to the reals, and the count $12$ against $10$ is the algebraic size of the complex structure of the framework. The reading is the grid-level counterpart of *classical blindness* in *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure*, and its boundary is that the count is a count of operations and not a measure of a physical complexification.
 - **Involution grid.** The four general products are read as the **four cells the two slots admit**: the identity or the natural conjugation ${}^{\natural}$ in the first slot and the identity or the star ${}^{*}$ in the second, and never ${}^{*}$ in the first nor ${}^{\natural}$ in the second, which is the rule of §*The Two Slots*. The name makes the grid a single object with two dials and not a list of four constructions. Its boundary is the corpus's own: the twelve unused slot pairs are not transposes or conjugates of the four used ones, so the grid of four is a genuine restriction of the algebra and not a redundancy of naming, and the four cells are therefore **not** the orbit of one product under the two involutions.
-- **Dial principle.** The rule that the first slot's natural conjugation decides between the definite form of the state side and the indefinite form of the transformation side is read as the **dial principle** of the framework: one dial separates the state side from the transformation side of the whole grid, and the two metrics of a single element are its two outcomes. The name is given here so that the principle can be cited as a single rule; the boundary is that the principle is a statement about the forms and not a derivation of the two jobs. The dial is a **reflection** — it negates the three vector coordinates and fixes the scalar direction, so it is a change of frame in the strict sense — and it is the algebraic sibling, and not the equal, of the framework's **Wick rotation**, which is multiplication by the central imaginary and a quarter-turn exchange of the two sectors (*The Four Other Remarkable Subspaces*, *The Wick Rotation in the Biquaternion Universe*). The dial is an involution and the Wick rotation has order four; the rotation is central and therefore commutes with the multiplication, while the dial is an anti-automorphism that reverses the order of a product and acts on one argument of it. Only the dial is a slot of a product, and it is that slot — and not the rotation — that the grid's metric is made of.
+- **Dial principle.** The rule that the first slot's natural conjugation decides between the definite form of the state side and the indefinite form of the transformation side is read as the **dial principle** of the framework: one dial separates the state side from the transformation side of the whole grid, and the two metrics of a single element are its two outcomes. The name is given here so that the principle can be cited as a single rule; the boundary is that the principle is a statement about the forms and not a derivation of the two jobs. The dial is a **reflection** — it negates the three vector coordinates and fixes the scalar direction, so it is a change of frame in the strict sense — and it is the algebraic sibling, and not the equal, of the framework's **Wick rotation**, which is multiplication by the central imaginary and a quarter-turn exchange of the two sectors (*Other Remarkable Subspaces*, *The Wick Rotation in the Biquaternion Universe*). The dial is an involution and the Wick rotation has order four; the rotation is central and therefore commutes with the multiplication, while the dial is an anti-automorphism that reverses the order of a product and acts on one argument of it. Only the dial is a slot of a product, and it is that slot — and not the rotation — that the grid's metric is made of.
 
 ## The Four Readings
 
@@ -725,11 +720,11 @@ has proved, and none adds a theorem.
   real slice is physical**. The reading is a reading of the sector structure and not a resolution. **Caution
   on the word:** the corpus uses *Wick rotation* in two ways, and the generator is the first and not the
   second. Multiplication by $i$ is the exchange of the real and imaginary sectors and the quarter turn of
-  the complex time, which *The Four Other Remarkable Subspaces* names the Wick rotation; the analytic
+  the complex time, which *Other Remarkable Subspaces* names the Wick rotation; the analytic
   continuation $t\mapsto-i\tau$ of *The Wick Rotation in the Biquaternion Universe* is a **relabeling** of
   the time coordinate that holds the space real, is real-linear, and is not the multiplication by $i$. The
   two share the temporal sign flip and the time axis and diverge off it; the whole reading is
-  *Conventions in the Biquaternion Universe*, §*The Central Map and Its Six Restrictions*.
+  *Conventions in the Biquaternion Universe*, §*The Central Map and Its Restrictions*.
 - **Phase and duality are one central $U(1)$.** The complex-time sector carries the global phase, the
   complex-space sector carries the field strength, and multiplication by the central $i$ is at once the phase
   rotation and the **duality rotation** of the field. Reading: one central $U(1)$ does both jobs.
@@ -887,7 +882,7 @@ $K(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q^{*})$, and on the two secto
 $K=\pm N$ with the sign of the sector, so that on a sector only two of the four forms are independent;
 the restrictions read negative definite, $(3,1)$, positive definite and $(1,3)$ on $\mathbb{M}_-$ and
 positive definite, $(1,3)$, positive definite and $(1,3)$ on $\mathbb{M}_+$. The full restriction table
-of §*The Six Subspaces* is the companion statement: $H$ is positive definite on all six subspaces, each
+of §*Remarkable Subspaces* is the companion statement: $H$ is positive definite on all remarkable subspaces, each
 indefinite bilinear form is definite on exactly one pair of the four-dimensional subspaces, and $K$ has
 the same signature $(1,3)$ on all four of them. The fourth product is non-associative: its associator is
 nonzero on $256$ of the $512$ triples of the eight-element basis, at the clean witnesses $(e_0,e_0,e_1)$,
@@ -956,8 +951,7 @@ an indefinite Krein form with no identity on either side and a ternary product t
 triple. The four scalar forms are one bilinear form read through the two involutions, and on a sector
 the two sesquilinear forms are the two bilinear ones up to the sign of that sector, so that on a sector
 the four reduce to two; the comparisons that cross the grid belong here, in §*The Four Forms Compared*
-and §*The Six Subspaces*, which carries the full restriction table of the four forms on the six
-subspaces, and each block reads only its own product and its own form. The four subcategories of the
+and §*Remarkable Subspaces*, which carries the full restriction table of the four forms on the remarkable subspaces, and each block reads only its own product and its own form. The four subcategories of the
 physics menu are these four objects, and this article is their map.
 
 ## Summary of Notation
@@ -1012,9 +1006,8 @@ physics menu are these four objects, and this article is their map.
 - Mathematics article *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*
   (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the
   sign of the square on the two sectors, $\tilde Q\star\tilde Q=\pm N(\tilde Q)e_0$.
-- Companion article *The Ordinary Product and the Material Sector*, for the form $B$ alone on the six
-  subspaces.
-- Companion articles *The Interval as the Square and the Charge of the Material Composition*, *Mass, Rank and the Positivity of the Dagger* and *The Fourth Product and Its Indefinite Metric*, for $N$, $H$ and $K$ on the six subspaces, and for the interval identity and the physical
+- Companion article *The Ordinary Product and the Material Sector*, for the form $B$ alone on the remarkable subspaces.
+- Companion articles *The Interval as the Square and the Charge of the Material Composition*, *Mass, Rank and the Positivity of the Dagger* and *The Fourth Product and Its Indefinite Metric*, for $N$, $H$ and $K$ on the remarkable subspaces, and for the interval identity and the physical
   reading of the quaternionic product.
 - Companion article *The Mathematical Study of Biquaternions*, whose Algebra block this article
   accompanies and whose entries carry the mathematics menu.

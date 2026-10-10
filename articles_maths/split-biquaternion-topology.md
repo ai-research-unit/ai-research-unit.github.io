@@ -71,7 +71,7 @@ the last being $\pi_3(S^3)\oplus\pi_3(S^3)$ by the Künneth and Hurewicz theorem
 
 ## The Boundary of the Polar Decomposition
 
-The componentwise polar form $\tilde{Q} = r_+\hat{q}_+ \tilde\Pi_+ + r_-\hat{q}_- \tilde\Pi_-$ of *Split-Biquaternion Exponential and Lie Group Structure* is defined for every element whose two components are nonzero, that is on the complement of the zero divisor set $Z = Z_+\cup Z_-$, and it fails exactly where a component vanishes. The two sets $Z_+ = \{\tilde{Q}_+ = 0\}$ and $Z_- = \{\tilde{Q}_- = 0\}$ are four-dimensional subspaces of the algebra, each homotopy equivalent to $S^3$, and their union is the **failure surface** of the polar decomposition:
+The componentwise polar form $\tilde{Q} = r_+\hat{q}_+ \tilde\Pi_1 + r_-\hat{q}_- \tilde\Pi_2$ of *Split-Biquaternion Exponential and Lie Group Structure* is defined for every element whose two components are nonzero, that is on the complement of the zero divisor set $Z = Z_+\cup Z_-$, and it fails exactly where a component vanishes. The two sets $Z_+ = \{\tilde{Q}_+ = 0\}$ and $Z_- = \{\tilde{Q}_- = 0\}$ are four-dimensional subspaces of the algebra, each homotopy equivalent to $S^3$, and their union is the **failure surface** of the polar decomposition:
 
 $$
 Z = \left\{ \tilde{Q} : \tilde{Q}_+ = 0 \ \text{or}\ \tilde{Q}_- = 0 \right\} , \qquad Z_\pm \simeq S^3 .

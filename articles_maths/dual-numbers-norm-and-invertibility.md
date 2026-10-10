@@ -317,7 +317,7 @@ $$
 \mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad A = a + \varepsilon a',
 $$
 
-the norm reads $N(A) = (\operatorname{Re} A)^2$, and invertibility depends only on the component in the real submodule. This is why the group of units is a direct product: the multiplicative structure of $\mathbb{D}'_R$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. The biquaternion analogue, in which the four conjugations and their six subspaces control the distribution, is in *Biquaternion Norm and Invertibility*; in the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.
+the norm reads $N(A) = (\operatorname{Re} A)^2$, and invertibility depends only on the component in the real submodule. This is why the group of units is a direct product: the multiplicative structure of $\mathbb{D}'_R$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. The biquaternion analogue, in which the four conjugations and their remarkable subspaces control the distribution, is in *Biquaternion Norm and Invertibility*; in the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.
 
 ## Comparison with the Split Complex and Biquaternion Cases
 

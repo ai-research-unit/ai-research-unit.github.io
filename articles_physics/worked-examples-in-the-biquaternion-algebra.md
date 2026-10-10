@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article works the computations of the biquaternion algebra out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the six distinguished subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the general subject of *Biquaternion Idempotents and Projections*; here they are only exhibited. The physical reading is attached to each computation, so that the dictionary of *The Four-Vector Element Representation of Biquaternions* and of *Conventions in the Biquaternion Universe* can be checked arithmetically.
+This article works the computations of the biquaternion algebra out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the remarkable subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the general subject of *Biquaternion Idempotents and Projections*; here they are only exhibited. The physical reading is attached to each computation, so that the dictionary of *The Four-Vector Element Representation of Biquaternions* and of *Conventions in the Biquaternion Universe* can be checked arithmetically.
 
 **Notation.** A biquaternion is written in developed form
 $$
@@ -28,9 +28,9 @@ The table is the quaternion table, but the coefficients are now complex and the 
 
 In physics these eight real components are the eight real numbers a general element carries, and the four complex components $Q_\mu=q_\mu+iq'_\mu$ split each into a "material" and an "informational" part according to the sector dictionary: the coefficients of an element of the material sector are pure imaginary in the time slot and real in the space slots, and conversely for the informational sector.
 
-## The Six Subspaces on a Concrete Element
+## Remarkable Subspaces on a Concrete Element
 
-The six distinguished real subspaces are the fixed and anti-fixed spaces of the three commuting involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}={}^{\natural}\circ\bar{\cdot}$; the fourth conjugation $\flat=-{}^{*}$ has the same two eigenspaces as ${}^{*}$ with the roles exchanged, so it contributes no further subspaces. On the fixed element:
+The remarkable real subspaces are the fixed and anti-fixed spaces of the three commuting involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}={}^{\natural}\circ\bar{\cdot}$; the fourth conjugation $\flat=-{}^{*}$ has the same two eigenspaces as ${}^{*}$ with the roles exchanged, so it contributes no further subspaces. On the fixed element:
 
 | Subspace | Defining condition | Component of $\tilde{Q}$ |
 |---|---|---|
@@ -68,7 +68,7 @@ $$
 $$
 \tilde{Q}^{\flat}=-\tilde{Q}^{*}=-(2-i)e_0+(1+i)e_1+3e_2-ie_3 .
 $$
-Each is an involution, and the Klein group is visible in $\tilde{Q}^{*}=\tilde{Q}^{\natural}\bar{\cdot}=\tilde{Q}^{*{}^{\natural}}$; the fourth conjugation satisfies $(\tilde{Q}^{*})^{\flat}=-\tilde{Q}$, so it is the composition of ${}^{*}$ with the central sign $-1$. The fixed points of each involution give the six subspaces above: for instance the Hermitian part of $\tilde{Q}$ is $\tfrac12(\tilde{Q}+\tilde{Q}^{*})=2e_0-ie_1+ie_3$, which agrees with the table.
+Each is an involution, and the Klein group is visible in $\tilde{Q}^{*}=\tilde{Q}^{\natural}\bar{\cdot}=\tilde{Q}^{*{}^{\natural}}$; the fourth conjugation satisfies $(\tilde{Q}^{*})^{\flat}=-\tilde{Q}$, so it is the composition of ${}^{*}$ with the central sign $-1$. The fixed points of each involution give the remarkable subspaces above: for instance the Hermitian part of $\tilde{Q}$ is $\tfrac12(\tilde{Q}+\tilde{Q}^{*})=2e_0-ie_1+ie_3$, which agrees with the table.
 
 **Physical reading.** The quaternion conjugation reverses the spatial part and leaves the time slot, so it is the **spatial reversal** of the four-vector; the complex conjugation conjugates the coefficients $Q_\mu=q_\mu+iq'_\mu$, so it exchanges the material and informational readings of each slot and is the **sector exchange**; the Hermitian conjugation is the composition, the adjoint of a four-vector, and it is the involution that selects the observables.
 
@@ -107,11 +107,11 @@ Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients. Moreover $
 
 ## Physical Readings
 
-The computations read as the framework's calibration set. The multiplication table is the product law of the physical objects; the six subspaces exhibited on one element are the six readings of one four-vector; the four conjugations applied to it are the four forms; and the idempotents are the pure states. Read as a calibration, the article is where the vocabulary of the series is checked against a single element, so it is also the place where the readings of the other articles can be tested against one another.
+The computations read as the framework's calibration set. The multiplication table is the product law of the physical objects; the remarkable subspaces exhibited on one element are the readings of one four-vector; the four conjugations applied to it are the four forms; and the idempotents are the pure states. Read as a calibration, the article is where the vocabulary of the series is checked against a single element, so it is also the place where the readings of the other articles can be tested against one another.
 
 ## Summary
 
-The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}=-{}^{*}$ act on it as listed. The element has norm $N(\tilde{Q})=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_1,\tilde\Pi_2$ satisfy $\tilde\Pi_1\tilde\Pi_2=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ with each summand minimal; the pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is an explicit zero-divisor pair, both factors null.
+The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the remarkable subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}=-{}^{*}$ act on it as listed. The element has norm $N(\tilde{Q})=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_1,\tilde\Pi_2$ satisfy $\tilde\Pi_1\tilde\Pi_2=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ with each summand minimal; the pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is an explicit zero-divisor pair, both factors null.
 
 ## Summary of Notation
 
@@ -122,7 +122,7 @@ The multiplication of $\mathbb{B}$ is the quaternion table with complex coeffici
 | $i$ | Central complex unit, $i^2=-1$ |
 | $\mathrm{Sc}\,\tilde{Q}=Q_0$, $\mathbf{Q}=\sum_{k=1}^3Q_ke_k$ | Scalar and vector parts |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}={}^{\natural}\circ\bar{\cdot}$, ${}^{\flat}=-{}^{*}$ | The four conjugations |
-| $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | The six subspaces |
+| $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | The remarkable subspaces |
 | $\tilde\Pi_1=\tfrac12(e_0+ie_3),\ \tilde\Pi_2=\tfrac12(e_0-ie_3)$ | Orthogonal primitive idempotents; chiral projectors |
 | $N(\tilde{Q})=11+2i$ | Norm of the fixed element; nonzero, so a unit |
 | $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/N(\tilde{Q})$ | Inverse of the fixed element |

@@ -6,7 +6,7 @@ This article is one of a series of **worked exercises** that illustrate quantum 
 
 The immediately preceding exercise, *Exercise: The Reduced State of an Entangled Subsystem*, introduced the partial trace $\mathrm{Tr}_2$ and computed the reduced state of the singlet. That exercise is about the **state**; it observed, in passing, that the reduced state $\tfrac12 e_0$ has von Neumann entropy $\log 2$. The present exercise is about that number. It poses the computation of the **entanglement entropy** of a general pure two-qubit state, works the solution by two routes — the Schmidt decomposition, and the partial trace in $\mathbb{B}\otimes\mathbb{B}$ — and closes with further problems left to the reader. The reduced state of the singlet is used here only as a limiting case, and its computation is not repeated.
 
-The exercise applies three results of the parent articles and assumes them without rederivation: the partial trace $\mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b)$ and its mirror $\mathrm{Tr}_1(a\otimes b)=b\,\mathrm{Tr}_\mathbb{B}(a)$, established in *Entangled Subsystems in the Biquaternion Framework* and *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*; the single-qubit spectral decomposition and entropy of *Quantum Physics in Biquaternionic Form*, namely $\tilde{\rho}=\lambda_+\tilde\Pi_+(\hat{\mathbf{r}})+\lambda_-\tilde\Pi_-(\hat{\mathbf{r}})$ with $\lambda_\pm=\tfrac12(1\pm|\mathbf{r}|)$ and $S(\tilde{\rho})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-$; and the Bell idempotent basis $P_\epsilon$ of *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*. The article also takes up one of the open questions of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — whether the candidate entropy functional $S(\tilde{\rho})=-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ is correct — and reports what the recomputation gives, including the point at which the candidate's domain ends.
+The exercise applies three results of the parent articles and assumes them without rederivation: the partial trace $\mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b)$ and its mirror $\mathrm{Tr}_1(a\otimes b)=b\,\mathrm{Tr}_\mathbb{B}(a)$, established in *Entangled Subsystems in the Biquaternion Framework* and *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*; the single-qubit spectral decomposition and entropy of *Quantum Physics in Biquaternionic Form*, namely $\tilde{\rho}=\lambda_+\tilde\Pi_1(\hat{\mathbf{r}})+\lambda_-\tilde\Pi_2(\hat{\mathbf{r}})$ with $\lambda_\pm=\tfrac12(1\pm|\mathbf{r}|)$ and $S(\tilde{\rho})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-$; and the Bell idempotent basis $P_\epsilon$ of *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*. The article also takes up one of the open questions of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — whether the candidate entropy functional $S(\tilde{\rho})=-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ is correct — and reports what the recomputation gives, including the point at which the candidate's domain ends.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, and in particular $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ for idempotent $\tilde{P}$ and Hermitian $\tilde{H}$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, with $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$. Throughout, $\log$ denotes the natural logarithm, and
 
@@ -252,8 +252,8 @@ The parent article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational S
 Let $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ be a state with $0<|\mathbf{r}|<1$. Its eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\mathbf{r}|)$, both positive, and its spectral decomposition is
 
 $$
-\tilde{\rho}=\lambda_+\,\tilde\Pi_+(\hat{\mathbf{r}})
-+\lambda_-\,\tilde\Pi_-(\hat{\mathbf{r}}),
+\tilde{\rho}=\lambda_+\,\tilde\Pi_1(\hat{\mathbf{r}})
++\lambda_-\,\tilde\Pi_2(\hat{\mathbf{r}}),
 \qquad \hat{\mathbf{r}}=\mathbf{r}/|\mathbf{r}| .
 $$
 
@@ -263,19 +263,19 @@ $$
 \log\tilde{\rho}
 =\tfrac12\log(\lambda_+\lambda_-)\,e_0
 +\tfrac{i}{2}\log\frac{\lambda_+}{\lambda_-}\,\hat{\mathbf{r}}
-=\log\lambda_+\,\tilde\Pi_+(\hat{\mathbf{r}})
-+\log\lambda_-\,\tilde\Pi_-(\hat{\mathbf{r}}).
+=\log\lambda_+\,\tilde\Pi_1(\hat{\mathbf{r}})
++\log\lambda_-\,\tilde\Pi_2(\hat{\mathbf{r}}).
 $$
 
-The two expressions agree because $\tfrac12(e_0\pm i\hat{\mathbf{r}})=\tilde\Pi_\pm(\hat{\mathbf{r}})$ and because $\log(\lambda_+\lambda_-)=2\log R$, $\log(\lambda_+/\lambda_-)=2\Theta/i$ in the notation of that article. Multiplying and taking the scalar part,
+The two expressions agree because $\tfrac12(e_0\pm i\hat{\mathbf{r}})=\tilde\Pi_{1,2}(\hat{\mathbf{r}})$ and because $\log(\lambda_+\lambda_-)=2\log R$, $\log(\lambda_+/\lambda_-)=2\Theta/i$ in the notation of that article. Multiplying and taking the scalar part,
 
 $$
 \tilde{\rho}\log\tilde{\rho}
-=\lambda_+\log\lambda_+\,\tilde\Pi_+(\hat{\mathbf{r}})
-+\lambda_-\log\lambda_-\,\tilde\Pi_-(\hat{\mathbf{r}}),
+=\lambda_+\log\lambda_+\,\tilde\Pi_1(\hat{\mathbf{r}})
++\lambda_-\log\lambda_-\,\tilde\Pi_2(\hat{\mathbf{r}}),
 $$
 
-since the idempotents are orthogonal. Using $\mathrm{Sc}(\tilde\Pi_\pm)=\tfrac12$,
+since the idempotents are orthogonal. Using $\mathrm{Sc}(\tilde\Pi_{1,2})=\tfrac12$,
 
 $$
 2\,\mathrm{Sc}\!\left(\tilde{\rho}\log\tilde{\rho}\right)

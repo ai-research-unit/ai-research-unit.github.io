@@ -16,7 +16,7 @@ $$
 \tilde{P}\tilde{Q},\qquad \tilde{P}^{\natural}\tilde{Q},\qquad \tilde{P}\tilde{Q}^{*},\qquad \tilde{P}^{\natural}\tilde{Q}^{*}.
 $$
 
-The scalar part is $\mathrm{Sc}(\tilde{Q})=Q_0$, and for a product of two elements the scalar part is $\mathrm{Sc}(\tilde{P}\tilde{Q})=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$. The Gram matrix of a form is written in the basis $e_0,e_1,e_2,e_3$, so that $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ and $\mathrm{I}_4$ are the two matrices that occur. The real coordinates are $Q_\mu=q_\mu+iq'_\mu$; the **Hermitian subspace** $\mathbb{M}_+$ and the **anti-Hermitian subspace** $\mathbb{M}_-$ are the fixed spaces of ${}^{*}$ and of $\flat=-{}^{*}$, real subspaces of dimension four (*The Six Subspaces and the Four General Products*), and a form is called **definite on a sector** when it is definite as a real form on each of them.
+The scalar part is $\mathrm{Sc}(\tilde{Q})=Q_0$, and for a product of two elements the scalar part is $\mathrm{Sc}(\tilde{P}\tilde{Q})=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$. The Gram matrix of a form is written in the basis $e_0,e_1,e_2,e_3$, so that $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ and $\mathrm{I}_4$ are the two matrices that occur. The real coordinates are $Q_\mu=q_\mu+iq'_\mu$; the **Hermitian subspace** $\mathbb{M}_+$ and the **anti-Hermitian subspace** $\mathbb{M}_-$ are the fixed spaces of ${}^{*}$ and of $\flat=-{}^{*}$, real subspaces of dimension four (*Remarkable Subspaces and the Four General Products*), and a form is called **definite on a sector** when it is definite as a real form on each of them.
 
 ## The Four General Products in Coordinates
 

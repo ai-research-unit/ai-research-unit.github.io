@@ -14,7 +14,7 @@ The article owns the statement of the **extension problem**, the reason the cent
 candidate readings. It owns no new theorem. The centre and its triviality are *The Centre of the Biquaternion
 Algebra as the Classical Sector*; the ceiling $U(2)$ is *The Gauge Group Ceiling: Why the Biquaternion
 Algebra Reaches SU(2) but Not SU(3)*; the generator is *Conventions in the Biquaternion
-Universe*, §*The Central Map and Its Six Restrictions*; the discrete charge the compact phase
+Universe*, §*The Central Map and Its Restrictions*; the discrete charge the compact phase
 carries is *Particle Types, Discrete Charge and Three-Particle Couplings*; and the placement of the gauge row among the products is *The Heat Map
 of the Framework: Which Physics Hangs on Which Product*.
 
@@ -148,7 +148,7 @@ does not contain.
 - *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the ceiling, the
   Cartan decomposition and the enlargements that pass it.
 - *Conventions in the Biquaternion Universe*, for the central phase as
-  one generator on six subspaces.
+  one generator on remarkable subspaces.
 - *Particle Types, Discrete Charge and Three-Particle Couplings*, for the compact slice and the discrete
   charge.
 - *Grand Unification and the Biquaternion Algebra Ceiling*, for the constructive reading of the obstruction.

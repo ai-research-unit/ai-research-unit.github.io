@@ -218,7 +218,7 @@ and the four composition laws of §*The Two Families Together* say that this act
 
 ### The Projections
 
-**Example.** Let $\tilde\Pi=\tilde\Pi_+(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ be a projection of *Projections of the Biquaternion Sesqualgebra*, of rank one in the matrix model, and consider $S_{\tilde\Pi,\tilde\Pi}$. Its image is $\tilde\Pi\mathbb{B}\tilde\Pi^{*}$, of dimension $1$, so the sandwich of a projection with itself is a rank-one conjugate-linear operator; the same holds for $S_{\tilde\Pi,\tilde\Pi^{\perp}}$ with $\tilde\Pi^{\perp}=e_0-\tilde\Pi$. The two projections $\tilde\Pi$ and $\tilde\Pi^{\perp}$ are idempotents of the multiplication, so that $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ and $S_{\tilde\Pi,e_0}=L_{\tilde\Pi}$ fixes $\tilde\Pi$.
+**Example.** Let $\tilde\Pi=\tilde\Pi_1(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ be a projection of *Projections of the Biquaternion Sesqualgebra*, of rank one in the matrix model, and consider $S_{\tilde\Pi,\tilde\Pi}$. Its image is $\tilde\Pi\mathbb{B}\tilde\Pi^{*}$, of dimension $1$, so the sandwich of a projection with itself is a rank-one conjugate-linear operator; the same holds for $S_{\tilde\Pi,\tilde\Pi^{\perp}}$ with $\tilde\Pi^{\perp}=e_0-\tilde\Pi$. The two projections $\tilde\Pi$ and $\tilde\Pi^{\perp}$ are idempotents of the multiplication, so that $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ and $S_{\tilde\Pi,e_0}=L_{\tilde\Pi}$ fixes $\tilde\Pi$.
 
 **Proof.** The rank of $\tilde\Pi$ is one, so the rank theorem gives $\operatorname{rank}S_{\tilde\Pi,\tilde\Pi}=1$; the identity $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ is the idempotence of the projection, and $S_{\tilde\Pi,e_0}=L_{\tilde\Pi}$ is §*Two Elementary Values*. $\square$
 

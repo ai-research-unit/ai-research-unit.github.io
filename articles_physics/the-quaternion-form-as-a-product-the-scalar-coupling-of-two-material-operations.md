@@ -40,7 +40,7 @@ isotropic elements and the failure of the Jordan identity are *The Radical and t
 the Symmetric Quaternionic Algebra* and are the subject of the companion article *Why a Central Product
 Cannot Compose: the Radical and the Isotropic Elements*; the operators and the matrix models are
 *The Multiplication Operators of the Symmetric Quaternionic Algebra* and *The Symmetric Quaternionic
-Algebra in the Matrix Representations*. The comparison of this operation with the other three rows is
+Algebra in the $2\times2$ and $4\times4$ Matrix Element Representations*. The comparison of this operation with the other three rows is
 *The Four General Products and Their Physical Readings*, and it is
 cited and not redone.
 
@@ -62,7 +62,7 @@ chapter — it is the symmetrisation of whichever product is in play, so the pla
 $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ and this block writes
 $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$, a different
 operation — and this block's antisymmetrisation is written $\wedge_{\natural}$, where the plain row writes
-$\wedge$ for the cross product $\mathbf P\times\mathbf Q$. The six distinguished subspaces are the centre
+$\wedge$ for the cross product $\mathbf P\times\mathbf Q$. The remarkable subspaces are the centre
 $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace
 $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian sector
 $\mathbb{M}_+$ and the material sector $\mathbb{M}_-$.
@@ -311,8 +311,8 @@ Minkowski form of signature $(3,1)$ and on the informational sector to $(1,3)$. 
 positive cone, and a form with no positive cone selects no state and no probability. The operation
 returns the interval of a material operation faithfully and returns **no** notion of a positive norm; a
 central-valued pairing is not a state and is not a probability. That role belongs to the sesquilinear row
-of the algebra, not to this one. The forms on the six subspaces, with their signatures, are
-*The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions* and the transversal
+of the algebra, not to this one. The forms on the remarkable subspaces, with their signatures, are
+*Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions* and the transversal
 signature table of *The Four General Products and Their Physical Readings*.
 
 ## The Reading: a Central Value Is the Scalar of a Comparison
@@ -413,7 +413,7 @@ and does not compose** and selects no state. The radical and the isotropic eleme
 Jordan identity with its witness, and the boundary of the coefficient against the form $B$ are the
 companion article *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements*; the
 coefficient read as a form is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*;
-the six subspaces are *The Six Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*; and
+the remarkable subspaces are *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*; and
 the comparison of the four rows is *The Four General Products and Their Physical Readings*, none of them redone here.
 
 ## Summary of Notation
@@ -432,7 +432,7 @@ the comparison of the four rows is *The Four General Products and Their Physical
 | $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$ | the general plain bilinear form, the coefficient of the plain row |
 | $N(\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$ | the biquaternion norm, the diagonal of the coupling |
 | $ict\,e_0+\mathbf x$ | the material coordinate; $\tilde Q\bullet\tilde Q=-c^{2}t^{2}+\mathbf x^{2}$ |
-| $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the six distinguished subspaces |
+| $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable subspaces |
 
 ## Further Reading
 

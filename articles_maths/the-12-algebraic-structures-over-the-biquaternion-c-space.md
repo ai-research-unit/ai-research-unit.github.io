@@ -121,7 +121,7 @@ Its product is the **symmetric quaternionic sesquilinear product**, the symmetri
 $$
 \tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*}+\tilde{Q}^{*}\tilde{P}^{\natural}\bigr)=\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}.
 $$
-Its decomposition is the scalar part $P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$ and the vector part $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$. The multiplication is conjugate-commutative, it is not a Jordan product, it has no unit, and its values lie in no subspace of the six.
+Its decomposition is the scalar part $P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$ and the vector part $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$. The multiplication is conjugate-commutative, it is not a Jordan product, it has no unit, and its values lie in no subspace of the remarkable subspaces.
 
 ### The Antisymmetric Quaternionic Sesqualgebra (AQS)
 
@@ -135,7 +135,7 @@ Its decomposition is the scalar part $0$ and the vector part $\mathbf{P}\times\o
 
 Of the twelve, exactly two structures carry the product of one of the two classical nonassociative algebras, and both belong to the plain family. A symmetrisation is a **Jordan** product only when it satisfies the Jordan identity, an antisymmetrisation a **Lie** product only when it satisfies the Jacobi identity, and of the twelve exactly one of each meets its identity. The two are these:
 
-- $\mathrm{APA}$ is alternating and satisfies the Jacobi identity, so its product is a **Lie** product; it is the Lie algebra of *The Unitary Lie Algebra*, with the vector subspace as a Lie subalgebra isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, the quaternion subspace as $\mathbb{R}e_0\oplus\mathfrak{su}(2)$ and the anti-Hermitian subspace as $\mathfrak{u}(2)$, whose derived algebra is $\mathfrak{su}(2)$ (*The Six Subspaces and the Four General Products*).
+- $\mathrm{APA}$ is alternating and satisfies the Jacobi identity, so its product is a **Lie** product; it is the Lie algebra of *The Unitary Lie Algebra*, with the vector subspace as a Lie subalgebra isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, the quaternion subspace as $\mathbb{R}e_0\oplus\mathfrak{su}(2)$ and the anti-Hermitian subspace as $\mathfrak{u}(2)$, whose derived algebra is $\mathfrak{su}(2)$ (*Remarkable Subspaces and the Four General Products*).
 - $\mathrm{SPA}$ is commutative and satisfies the Jordan identity, so its product is a **Jordan** product; it is the special Jordan algebra of degree two, and its Hermitian subspace is the Hermitian Jordan algebra $J(\mathbb{B})$.
 
 The other six parts fail the identity of their kind, and each failure is witnessed on a single triple or a single element:

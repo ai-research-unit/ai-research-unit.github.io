@@ -6,13 +6,13 @@ A spin-$j$ state has $2j+1$ complex amplitudes, and up to normalization and an o
 
 This article treats the Majorana representation in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles. The construction is standard and is reproduced exactly; what the framework contributes is the placement of the star map within the algebra of idempotents and spinors, and the unification of three objects that the framework treats separately:
 
-1. **The idempotent.** For spin-1/2 the Majorana star is the unit vector $\hat{n}$ of the idempotent $\tilde\Pi_+(\hat{n}) = \tfrac12(e_0+i\hat{n})$; the Bloch vector and the single Majorana star are the same object.
+1. **The idempotent.** For spin-1/2 the Majorana star is the unit vector $\hat{n}$ of the idempotent $\tilde\Pi_1(\hat{n}) = \tfrac12(e_0+i\hat{n})$; the Bloch vector and the single Majorana star are the same object.
 2. **The spinor and its stereographic coordinate.** The star is the image of the ratio $\zeta = \psi_2/\psi_1$ of the two spinor components under inverse stereographic projection. The map from spinor to star is two-to-one, and the lost phase is exactly the geometric phase of the preceding articles.
 3. **The rotor.** The constellation rotates under a rotation of the physical system by the Möbius action of $SU(2)$ on $\zeta$, which is the spinor lift of the $SO(3)$ rotation of the sphere. In the algebra the two are the two faces of a single element of $\mathbb{H}_{\mathbb{B}}$.
 
 The article develops the spin-1/2 case fully, states the general construction because it is the standard setting in which the $2j=1$ case is understood, and treats the symmetric states of $N$ spin-1/2 particles as the natural multi-spin extension. The total angular momentum of those symmetric states is $\ge 1$ for $N\ge2$, and the representation theory of spin $1$ and above belongs to the neighbouring subcategory; here the constituent spins are spin-1/2 throughout.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_\pm(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\Phi$ with $ie_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\Phi$ with $ie_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the two-state system and the Bloch sphere.
@@ -44,7 +44,7 @@ a complex number (or $\infty$ at the south pole). It is invariant under the over
 The idempotent of the state is
 
 $$
-\tilde\Pi_+(\hat{n}) = \frac{\psi\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
+\tilde\Pi_1(\hat{n}) = \frac{\psi\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
 \qquad
 \hat{n} = \frac{1}{1+|\zeta|^2}\left(2\,\mathrm{Re}\,\zeta,\;2\,\mathrm{Im}\,\zeta,\;1-|\zeta|^2\right),
 $$
@@ -83,11 +83,11 @@ $$
 z = \frac{c_{-1/2}}{c_{1/2}} = \frac{\psi_2}{\psi_1} = \zeta,
 $$
 
-which is exactly the stereographic coordinate of the star. The state is a single point on the sphere. The Majorana representation of a spin-1/2 is therefore the Bloch sphere, and the two are not merely analogous: the star **is** the Bloch vector, and the idempotent $\tilde\Pi_+(\hat{n})$ is the state's own projector.
+which is exactly the stereographic coordinate of the star. The state is a single point on the sphere. The Majorana representation of a spin-1/2 is therefore the Bloch sphere, and the two are not merely analogous: the star **is** the Bloch vector, and the idempotent $\tilde\Pi_1(\hat{n})$ is the state's own projector.
 
 ### Coherent States and the Coincidence Limit
 
-A **spin coherent state** is the state obtained by rotating the north-pole state, $|\theta,\phi\rangle = \tilde{R}(\theta,\phi)|\!\uparrow\rangle$; its star is the single point $(\theta,\phi)$. In the algebra it is the idempotent $\tilde\Pi_+(\hat{n}(\theta,\phi))$, and the rotor $\tilde{R}$ is the unit real quaternion taking $e_3$ to $\hat{n}$. For spin $j$ the coherent state has all $2j$ stars coincident at that point; the spin-1/2 case is the degenerate instance in which there is only one star to coincide with itself.
+A **spin coherent state** is the state obtained by rotating the north-pole state, $|\theta,\phi\rangle = \tilde{R}(\theta,\phi)|\!\uparrow\rangle$; its star is the single point $(\theta,\phi)$. In the algebra it is the idempotent $\tilde\Pi_1(\hat{n}(\theta,\phi))$, and the rotor $\tilde{R}$ is the unit real quaternion taking $e_3$ to $\hat{n}$. For spin $j$ the coherent state has all $2j$ stars coincident at that point; the spin-1/2 case is the degenerate instance in which there is only one star to coincide with itself.
 
 ## Rotational Covariance
 
@@ -208,7 +208,7 @@ The same overlap is the measurement probability. If a spin is prepared with star
 
 $$
 P(+|\hat{n},\hat{m}) = \bigl|\langle\psi_{\hat{m}}|\psi_{\hat{n}}\rangle\bigr|^2 = \cos^2\frac{\Theta}{2}
-= \mathrm{Tr}\!\left(\tilde\Pi_+(\hat{m})\,\tilde\Pi_+(\hat{n})\right),
+= \mathrm{Tr}\!\left(\tilde\Pi_1(\hat{m})\,\tilde\Pi_1(\hat{n})\right),
 $$
 
 with $\Theta$ the angle between the two stars. The Stern–Gerlach statistics are therefore a statement about the geometry of the sphere of stars: the probability depends only on the angle between the preparation star and the measurement star, and the trace pairing recovers it. The companion exercises *Exercise: Measuring Spin Along an Arbitrary Direction* and *Exercise: Successive Measurements of Spin* work the same formula; the Majorana picture shows that the standard textbook expression is a geometric overlap, and that the entire one-off computation is a dot product on the star sphere.
@@ -217,7 +217,7 @@ The angle $\Theta$ between the stars also fixes the relative geometric phase of 
 
 ### Orthogonality and the Antipode
 
-Two spin-1/2 states are orthogonal precisely when their stars are antipodal: $\Theta = \pi$ gives $\cos^2(\Theta/2) = 0$. The antipodal map is not a rotation of the sphere — it reverses orientation — so it is not induced by any rotor; it is realised by the antiunitary spin flip $\psi\mapsto -i\sigma_y\psi^*$, which acts on the stereographic coordinate as $\zeta\mapsto -1/\bar{\zeta}$ and carries the state to its orthogonal partner. A genuine rotation reaches the antipode only exceptionally: $\sigma_z$ is a rotation through $\pi$ about $\hat{z}$ and sends $\hat{n}$ to $(-n_x,-n_y,n_z)$, which is the antipode only for a star on the equator. A measurement along $\hat{m} = -\hat{n}$ has unit probability of the opposite outcome, and the two orthogonal states whose stars are antipodal form a basis. In the algebra the antipode of $\hat{n}$ is the other idempotent, $\tilde\Pi_-(\hat{n}) = \tilde\Pi_+(-\hat{n}) = e_0 - \tilde\Pi_+(\hat{n})$, so the two orthogonal states are the complementary idempotents of a single axis.
+Two spin-1/2 states are orthogonal precisely when their stars are antipodal: $\Theta = \pi$ gives $\cos^2(\Theta/2) = 0$. The antipodal map is not a rotation of the sphere — it reverses orientation — so it is not induced by any rotor; it is realised by the antiunitary spin flip $\psi\mapsto -i\sigma_y\psi^*$, which acts on the stereographic coordinate as $\zeta\mapsto -1/\bar{\zeta}$ and carries the state to its orthogonal partner. A genuine rotation reaches the antipode only exceptionally: $\sigma_z$ is a rotation through $\pi$ about $\hat{z}$ and sends $\hat{n}$ to $(-n_x,-n_y,n_z)$, which is the antipode only for a star on the equator. A measurement along $\hat{m} = -\hat{n}$ has unit probability of the opposite outcome, and the two orthogonal states whose stars are antipodal form a basis. In the algebra the antipode of $\hat{n}$ is the other idempotent, $\tilde\Pi_2(\hat{n}) = \tilde\Pi_1(-\hat{n}) = e_0 - \tilde\Pi_1(\hat{n})$, so the two orthogonal states are the complementary idempotents of a single axis.
 
 ### Mixed States Have No Constellation
 
@@ -229,7 +229,7 @@ The Majorana representation is a representation of **pure** states; a mixed stat
 
 **What the algebra organises.**
 
-- **The star is an idempotent axis.** For spin-1/2 the Majorana star is the vector $\hat{n}$ of $\tilde\Pi_+(\hat{n})$; the idempotent, the Bloch vector and the star are one object in three names. The framework does not add a new representation for spin-1/2; it identifies the standard one with its own fundamental object.
+- **The star is an idempotent axis.** For spin-1/2 the Majorana star is the vector $\hat{n}$ of $\tilde\Pi_1(\hat{n})$; the idempotent, the Bloch vector and the star are one object in three names. The framework does not add a new representation for spin-1/2; it identifies the standard one with its own fundamental object.
 - **The two-to-one map is the double cover.** The spinor-to-star map loses the phase, and the phase is the central part of the rotor; the covering $\mathbb{H}_{\mathbb{B}}\to SO(3)$ is the algebraic form of the two-to-one correspondence.
 - **Covariance is rotor conjugation.** The rigid rotation of the constellation is conjugation of the idempotent by a unit real quaternion; the Möbius action on $\zeta$ is its coordinate expression.
 - **The many-spin constellation is symmetric states of spin-1/2 constituents.** The degree-$N$ polynomial of a symmetric $N$-spin-1/2 state is the algebraic home of the constellation picture, and the associated total-spin representation theory is delegated to the neighbouring subcategory.
@@ -258,7 +258,7 @@ $$
 \hat{n} = \frac{1}{1+|\zeta|^2}\left(2\,\mathrm{Re}\,\zeta,\,2\,\mathrm{Im}\,\zeta,\,1-|\zeta|^2\right).
 $$
 
-The star **is** the Bloch vector; the state is $\tilde\Pi_+(\hat{n}) = \tfrac12(e_0+i\hat{n})$. The map from spinor to star is two-to-one: the overall phase of the spinor, which is the geometric phase, is discarded, and the star is blind to it.
+The star **is** the Bloch vector; the state is $\tilde\Pi_1(\hat{n}) = \tfrac12(e_0+i\hat{n})$. The map from spinor to star is two-to-one: the overall phase of the spinor, which is the geometric phase, is discarded, and the star is blind to it.
 
 Under a rotation, the spinor transforms by $SU(2)$ and the star by the Möbius transformation $\zeta\mapsto(a^*\zeta-b^*)/(b\zeta+a)$; the constellation rotates rigidly, and this covariance is the defining property of the representation. In the algebra the rotation is conjugation by a unit real quaternion $\tilde{R}\in\mathbb{H}_{\mathbb{B}}$, with the star as the image of the idempotent and the spinor phase as the central part.
 
@@ -274,7 +274,7 @@ For $N$ spin-1/2 particles in the symmetric subspace the constellation has $N$ s
 | $\mathbb{M}_+$ | Hermitian (informational) subspace |
 | $\mathbb{H}_{\mathbb{B}}$ | Unit real quaternions; the rotation rotors |
 | $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$ | Spin-1/2 operator |
-| $\tilde\Pi_\pm(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$ | Idempotent; the state of a spin-1/2 |
+| $\tilde\Pi_{1,2}(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$ | Idempotent; the state of a spin-1/2 |
 | $\hat{n} = \mathbf{r}$ | Bloch vector; the single Majorana star |
 | $\zeta = \psi_2/\psi_1 = \tan\tfrac{\theta}{2}e^{i\phi}$ | Stereographic coordinate |
 | $P_\psi(z)$ | Majorana polynomial of degree $2j$ |

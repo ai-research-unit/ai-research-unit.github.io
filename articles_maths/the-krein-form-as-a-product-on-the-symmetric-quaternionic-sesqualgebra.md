@@ -18,7 +18,7 @@ $$
 
 the **Krein form** of the corpus, and the vector part of the block is the mixed term alone. So the block is the form $K$ enlarged by one vector term: the map $\tilde Q\mapsto\tilde Q\star\tilde Q$ has real scalar part $K(\tilde Q,\tilde Q)$ and vector part $-2\mathrm{Re}(Q_0\overline{\mathbf{Q}})$, and the block is a product whose *values* carry $K$ as their scalar part and whose *scalar part* is $K$. That is the sense in which the form is a product: the form is the scalar component of a multiplication, and the multiplication is the smallest symmetric sesquilinear product whose scalar component is $K$.
 
-The form $K$ itself, its Gram matrices, its restrictions and its cone are *The Krein Gram Matrix and the Restrictions of the Form* and *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the four pairings of the algebra are *The Four Pairings of the Biquaternion Algebra*; the indefinite positivity of the algebra is *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*; the six subspaces are *The Six Subspaces under the General Quaternionic Sesqualgebra of Biquaternions*; the comparison of the four forms of the row is *Comparison Between the Four General Products*; and the product whose scalar part is read here is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*. The invariance that does hold, the adjoint relation of the block, is used in *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
+The form $K$ itself, its Gram matrices, its restrictions and its cone are *The Krein Gram Matrix and the Restrictions of the Form* and *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the four pairings of the algebra are *The Four Pairings of the Biquaternion Algebra*; the indefinite positivity of the algebra is *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*; the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions*; the comparison of the four forms of the row is *Comparison Between the Four General Products*; and the product whose scalar part is read here is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*. The invariance that does hold, the adjoint relation of the block, is used in *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
 
 **Conventions.** $\tilde Q=\sum_\mu Q_\mu e_\mu$; $\varepsilon=(1,-1,-1,-1)$; $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ is $\mathbb{C}$-linear in the first argument and $\bar{\cdot}$-semilinear in the second. The real basis is $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and the coefficient basis is $e_0,e_1,e_2,e_3$ over $\mathbb{C}$.
 
@@ -68,9 +68,9 @@ a real algebraic cone of real dimension seven through the origin, of real codime
 
 **Remark (isotropy is wider than square zero).** The isotropic set is exactly the set of elements whose square has zero scalar part; the square-zero set also asks for the vanishing of the vector part. So square zero is a condition on the element, isotropy a condition on its scalar part alone, and $e_0+e_1$ separates the two: it is isotropic, and its square is $-2e_1$.
 
-## The Restriction to the Six Subspaces
+## The Restriction to the Remarkable Subspaces
 
-**Theorem (the six restrictions).** The form $K$ restricts to the six distinguished real subspaces with the following signatures:
+**Theorem (the restrictions).** The form $K$ restricts to the remarkable real subspaces with the following signatures:
 
 | Subspace | $K$ on the subspace | Rank over $\mathbb{R}$ | Signature |
 |---|---|---|---|
@@ -138,7 +138,7 @@ The two agree term by term: the natural conjugation sends $\overline{\tilde X}\t
 
 **Theorem (the Hermitian and anti-Hermitian restrictions).** On $\mathbb{M}_{+}$ and on $\mathbb{M}_{-}$ the form $K$ restricts to the same real bilinear form of signature $(1,3)$, and on each of them it is the Krein form of a real four-space with one positive and three negative directions.
 
-*Proof.* The two restrictions were computed in the table of §*The Restriction to the Six Subspaces*: on both, the coefficients are real up to the factor $i$ and the form reads $p_0q_0-\sum_kp_kq_k$, of signature $(1,3)$. $\square$
+*Proof.* The two restrictions were computed in the table of §*The Restriction to the Remarkable Subspaces*: on both, the coefficients are real up to the factor $i$ and the form reads $p_0q_0-\sum_kp_kq_k$, of signature $(1,3)$. $\square$
 
 **Theorem (the four scalar parts).** The four symmetric parts of the four general products have the scalar parts
 
@@ -174,7 +174,7 @@ The first two are the two symmetric bilinear forms of the algebra and the last t
 
 ## Summary
 
-The scalar part of the block is the Krein form $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, Hermitian, with $K(\tilde Q,\tilde Q)=|Q_0|^{2}-\sum_k|Q_k|^{2}$ real. Its Gram matrix is $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis and $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ in the real basis; its inertia is $(1,3)$, its real signature $(2,6)$, its rank four over $\mathbb{C}$ and eight over $\mathbb{R}$, and its radical is zero. Its isotropic cone is $\{|P_0|^{2}=\sum_k|P_k|^{2}\}$, of real dimension seven and real codimension one, and on the six subspaces it restricts to $(2,0)$ on the centre, $(0,6)$ on the vector subspace, and $(1,3)$ on each of the four real four-dimensional subspaces. It is not invariant under the block; the defect is $\mathrm{Sc}(\mathrm{SPA}(\overline{\tilde P},\tilde A)\mathrm{SPA}(\tilde Q,\overline{\tilde A}))-K(\tilde P,\tilde Q)$, and the compatibility that holds is the adjoint relation $K(\tilde A\star\tilde X,\tilde Y)=\overline{K(\tilde X,\tilde A^{\natural}\star\tilde Y)}$. Of the four scalar parts of the row, $K$ and $H=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ are the two Hermitian forms, of opposite sign in the vector term, and they collapse onto the two bilinear forms on the real quaternion subspace.
+The scalar part of the block is the Krein form $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, Hermitian, with $K(\tilde Q,\tilde Q)=|Q_0|^{2}-\sum_k|Q_k|^{2}$ real. Its Gram matrix is $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis and $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ in the real basis; its inertia is $(1,3)$, its real signature $(2,6)$, its rank four over $\mathbb{C}$ and eight over $\mathbb{R}$, and its radical is zero. Its isotropic cone is $\{|P_0|^{2}=\sum_k|P_k|^{2}\}$, of real dimension seven and real codimension one, and on the remarkable subspaces it restricts to $(2,0)$ on the centre, $(0,6)$ on the vector subspace, and $(1,3)$ on each of the four real four-dimensional subspaces. It is not invariant under the block; the defect is $\mathrm{Sc}(\mathrm{SPA}(\overline{\tilde P},\tilde A)\mathrm{SPA}(\tilde Q,\overline{\tilde A}))-K(\tilde P,\tilde Q)$, and the compatibility that holds is the adjoint relation $K(\tilde A\star\tilde X,\tilde Y)=\overline{K(\tilde X,\tilde A^{\natural}\star\tilde Y)}$. Of the four scalar parts of the row, $K$ and $H=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ are the two Hermitian forms, of opposite sign in the vector term, and they collapse onto the two bilinear forms on the real quaternion subspace.
 
 ## Summary of Notation
 
@@ -195,7 +195,7 @@ The scalar part of the block is the Krein form $K(\tilde P,\tilde Q)=\mathrm{Sc}
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four pairings of which $K$ is one.
 - *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the isotropic structure of the form.
 - *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md`), for the indefinite positivity and the cone.
-- *The Six Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the six subspaces and the restrictions of the forms.
+- *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the remarkable subspaces and the restrictions of the forms.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product whose scalar part is the form.
 - *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the square-zero family, which lies inside the isotropic cone.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the four scalar parts and their comparison.

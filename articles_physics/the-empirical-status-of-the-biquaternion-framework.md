@@ -264,7 +264,7 @@ The main result is therefore negative, and meant to be: the framework currently 
 | $c=1/\sqrt{\epsilon\mu}$ | Local speed of light in the medium |
 | $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Vacuum speed of light |
 | $\tilde{\nabla}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, d'Alembertian |
-| $\tilde\Pi_\pm=\tfrac12(e_0\pm i\hat{\mu})$ | Idempotent (pure state) |
+| $\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\hat{\mu})$ | Idempotent (pure state) |
 | $\tilde{H}=h_0e_0+i\mathbf{h}$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\mathbb{B}\cong M_2(\mathbb{C})$ | The algebra is the standard complex $2\times2$ algebra |

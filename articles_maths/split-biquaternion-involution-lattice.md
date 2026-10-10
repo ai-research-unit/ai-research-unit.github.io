@@ -128,7 +128,7 @@ The fixed spaces are related by inclusion with the coordinate blocks, in the fol
 | the one-dimensional lines | $\langle e_0\rangle$, $\langle je_0\rangle$ |
 | the origin | $0$ |
 
-The lattice is not a chain, and it is not closed under sum, being the union of the three decompositions of the algebra rather than a single distributive lattice. Its skeleton is the three decompositions of the first table of *Split-Biquaternion Relations Between Subspaces*, and the diagram records how the six distinct fixed and anti-fixed spaces sit over the four coordinate blocks. The comparison with the biquaternion lattice is the replacement of the complex scalar line $\langle ie_0\rangle$ by the split scalar line $\langle je_0\rangle$, and of the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ by the isometric copy $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$.
+The lattice is not a chain, and it is not closed under sum, being the union of the three decompositions of the algebra rather than a single distributive lattice. Its skeleton is the three decompositions of the first table of *Split-Biquaternion Relations Between Subspaces*, and the diagram records how the remarkable subspaces distinct fixed and anti-fixed spaces sit over the four coordinate blocks. The comparison with the biquaternion lattice is the replacement of the complex scalar line $\langle ie_0\rangle$ by the split scalar line $\langle je_0\rangle$, and of the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ by the isometric copy $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$.
 
 ## Involutions on the Involution Group
 
@@ -169,7 +169,7 @@ The fixed spaces of the four conjugations are the four subspaces of *Split-Biqua
 
 ### The Geometry on the Labelled Spaces
 
-Geometrically the four conjugations are four linear involutions of $\mathbb{R}^8$, and their fixed and anti-fixed spaces are the four invariant planes of the lattice. The orbit of a point under the Klein four group has size $1$, $2$ or $4$, according to the dimension of the stabiliser, and the geometric content of the lattice is that the four invariant planes are the axes along which the group acts; the reduction to four labelled spaces is the geometric form of the reduction from the six subspaces of $\mathbb{B}$ to the four here.
+Geometrically the four conjugations are four linear involutions of $\mathbb{R}^8$, and their fixed and anti-fixed spaces are the four invariant planes of the lattice. The orbit of a point under the Klein four group has size $1$, $2$ or $4$, according to the dimension of the stabiliser, and the geometric content of the lattice is that the four invariant planes are the axes along which the group acts; the reduction to four labelled spaces is the geometric form of the reduction from the remarkable subspaces of $\mathbb{B}$ to the four here.
 
 ## Summary
 

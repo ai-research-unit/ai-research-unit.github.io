@@ -4,7 +4,7 @@
 
 The biquaternion quadratic map is holomorphic for the complex structure of the algebra, so it has a complex derivative, a Jacobian, a critical set and a local inverse, and the local theory of holomorphic dynamics begins there. The article computes the Jacobian, identifies the critical set and the critical values, defines the Fatou set and the Julia set for the biquaternion map, proves that for a central parameter the two definitions of the Julia set coincide through the eigenvalues, and describes the local picture at the critical set. The several-variable theory differs from the one-variable theory in that the Fatou set and the Julia set can be defined in several inequivalent ways, and the article keeps the definitions apart and states which equivalences are proved.
 
-The quadratic family, its critical set and its derivative are *The Biquaternion Quadratic Map and Its Julia Sets*; the matrix model and the operator reading of the derivative are *The Matrix Representation and the Biquaternion Dynamics*; the cone and the singular Julia set are *The Zero Divisors and the Singular Julia Sets*; the Green's function and the equilibrium measure are *The Escape Radius and the Green's Function for the Biquaternions* and *The Pluripotential Theory of the Biquaternion Dynamics*. The general theory is *The Fatou Components and the Classification of the Dynamics* and *Several Complex Variables*.
+The quadratic family, its critical set and its derivative are *The Biquaternion Quadratic Map and Its Julia Sets*; the matrix model and the operator reading of the derivative are *The Matrix Element Representation and the Biquaternion Dynamics*; the cone and the singular Julia set are *The Zero Divisors and the Singular Julia Sets*; the Green's function and the equilibrium measure are *The Escape Radius and the Green's Function for the Biquaternions* and *The Pluripotential Theory of the Biquaternion Dynamics*. The general theory is *The Fatou Components and the Classification of the Dynamics* and *Several Complex Variables*.
 
 The article owns the Jacobian and its determinant, the local biholomorphism off the critical set, the definition of the Fatou and Julia sets, the central-parameter theorem identifying the two Julia sets, the fixed-point multiplier computation, and the local picture at the cone. It does not re-derive the derivative.
 
@@ -26,7 +26,7 @@ whose determinant, in the coordinates of the model, is $4\,N(\tilde Q)\,(2Q_0)^2
 
 **Proof.** $\det dF|_{\tilde Q}\neq0$ exactly off $\Sigma(\mathbb{B})$, and the inverse function theorem for holomorphic maps of several variables applies.
 
-**Remark (the derivative is an operator and the Jacobian is its determinant).** The derivative is the sum of two multiplication operators and not a multiplication; this is why the critical set is read from the pair of eigenvalues of the model and not from the element alone (*The Matrix Representation and the Biquaternion Dynamics*, §*The Warning: Elements and Operators*). **The Jacobian vanishes on the union of the zero-divisor cone and the vector subspace, and nowhere else.**
+**Remark (the derivative is an operator and the Jacobian is its determinant).** The derivative is the sum of two multiplication operators and not a multiplication; this is why the critical set is read from the pair of eigenvalues of the model and not from the element alone (*The Matrix Element Representation and the Biquaternion Dynamics*, §*The Warning: Elements and Operators*). **The Jacobian vanishes on the union of the zero-divisor cone and the vector subspace, and nowhere else.**
 
 ## The Critical Set, the Critical Values and the Local Picture
 
@@ -106,7 +106,7 @@ The biquaternion quadratic map is holomorphic, its derivative at a point is the 
 ## Further Reading
 
 - *The Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.md`), for the family and the critical set.
-- *The Matrix Representation and the Biquaternion Dynamics* (`articles_maths/the-matrix-representation-and-the-biquaternion-dynamics.md`), for the operator reading of the derivative.
+- *The Matrix Element Representation and the Biquaternion Dynamics* (`articles_maths/the-matrix-element-representation-and-the-biquaternion-dynamics.md`), for the operator reading of the derivative.
 - *The Zero Divisors and the Singular Julia Sets* (`articles_maths/the-zero-divisors-and-the-singular-julia-sets.md`), for the cone and the singular part of the fractal.
 - *The Fatou Components and the Classification of the Dynamics* (`articles_maths/the-fatou-components-and-the-classification-of-the-dynamics.md`), for the one-variable classification the central-parameter theorem reproduces.
 - *Several Complex Variables* (`articles_maths/several-complex-variables.md`), for the several-variable definitions kept apart here.

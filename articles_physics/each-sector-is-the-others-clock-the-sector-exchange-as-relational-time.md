@@ -6,7 +6,7 @@ The framework has no external time parameter. The material time is the imaginary
 
 The answer, in one sentence: the exchange supplies the reference of a clock and its period, and it supplies neither the arrow nor the rate. The three readings that follow from that sentence are these. The two times are the real and the imaginary parts of one central coordinate, so the material time is not defined against anything outside the algebra but against the phase of the informational sector — each sector is the other's clock. The exchange is a quarter turn of the plane of that coordinate, so a tick is a quarter turn and the period of the clock is a full central rotation. And the exchange is invertible and of order four, so the algebra offers both senses of the rotation and no rule that selects one; the direction of the tick remains a choice of slice, which is the framework's problem of time.
 
-The article is kinematic throughout. It reads the central map that *Conventions in the Biquaternion Universe* identifies as one generator on six subspaces, and it reads it on the one carrier that is a time. What it adds to that map is the clock, the reference that the clock supplies, and the exact statement of what a clock needs and does not get.
+The article is kinematic throughout. It reads the central map that *Conventions in the Biquaternion Universe* identifies as one generator on remarkable subspaces, and it reads it on the one carrier that is a time. What it adds to that map is the clock, the reference that the clock supplies, and the exact statement of what a clock needs and does not get.
 
 ## The Two Times in One Plane
 
@@ -26,7 +26,7 @@ $$
 
 with $t, \mathbf{x}, t', \mathbf{x}'$ real. The verification of the two inclusions is the pair of computations in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the reading of the coefficients is the $ict$ dictionary of *Conventions in the Biquaternion Universe*.
 
-The centre of the algebra is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$, and it is the complex time sector of *The Four Other Remarkable Subspaces*. The two times are its two real coordinates: writing
+The centre of the algebra is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$, and it is the complex time sector of *Other Remarkable Subspaces*. The two times are its two real coordinates: writing
 
 $$
 z = ct' + i\,ct,
@@ -144,10 +144,10 @@ The accounting of a clock is partial, and the two missing entries are the ones t
 
 ## Further Reading
 
-- *Conventions in the Biquaternion Universe* — the basis, the conjugations, the six subspaces, the $ict$ dictionary, the four forms, and the exchange read on the metric.
-- *Conventions in the Biquaternion Universe* — the one generator, its six restrictions, the complex time plane, the order four of the rotation, and the statement that the algebra offers no rule that selects a slice.
+- *Conventions in the Biquaternion Universe* — the basis, the conjugations, the remarkable subspaces, the $ict$ dictionary, the four forms, and the exchange read on the metric.
+- *Conventions in the Biquaternion Universe* — the one generator, its restrictions, the complex time plane, the order four of the rotation, and the statement that the algebra offers no rule that selects a slice.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the two sectors the exchange relates, and the coefficient dictionaries used above.
-- *The Four Other Remarkable Subspaces* — the complex time sector, the complex space sector, the real and imaginary sectors, and the exchange of the real and imaginary sectors as the Wick rotation.
+- *Other Remarkable Subspaces* — the complex time sector, the complex space sector, the real and imaginary sectors, and the exchange of the real and imaginary sectors as the Wick rotation.
 - *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form* — signals as null displacements, the radar method, Einstein synchronisation, the $k$-factor, clock transport and the twin effect: the local clocks, their rates and their synchronisation.
 - *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* — the same exchange read on the informational direction, with the two biquaternion norms as the two ledgers.
 - *The Schrödinger Equation in Biquaternionic Form* — the kinematic sector equation that a rate of change of an informational state requires, and the place a physical duration enters the framework.

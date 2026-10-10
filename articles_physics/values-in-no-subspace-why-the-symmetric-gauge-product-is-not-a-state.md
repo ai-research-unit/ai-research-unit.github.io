@@ -8,15 +8,14 @@ sesquilinear product returns a central number; the symmetric plain sesquilinear 
 returns a **central** element, and its diagonal is the positive Hermitian form that the framework uses as
 its probability. The symmetric half of the fourth product, $\tilde P\bullet\tilde Q$ of *The Gauge Metric
 as a Product: the Symmetric Quaternionic Sesquilinear Product*, does something else. Its value carries a
-complex scalar part and a complex vector part side by side, and it lies in **no one of the six
-distinguished subspaces** of the algebra. That single fact is why the band's product is **not a state**.
+complex scalar part and a complex vector part side by side, and it lies in **no one of the remarkable subspaces** of the algebra. That single fact is why the band's product is **not a state**.
 This article states it, computes the non-central diagonal that goes with it, and sets it against the plain
 symmetric sesquilinear product, which is central-valued and positive and which is the state row.
 
 The article owns the subspace reading of the symmetric half: where its values lie, where its diagonal
-lies, and the contrast that follows. It defers the six subspaces themselves and their decompositions to
-*Relations Between Subspaces* and *The Four Other Remarkable Subspaces*; the closure of the six under the
-product to the mathematics article *The Six Subspaces under the Symmetric Quaternionic Sesqualgebra of
+lies, and the contrast that follows. It defers the remarkable subspaces themselves and their decompositions to
+*Relations Between Subspaces* and *Other Remarkable Subspaces*; the closure of the remarkable subspaces under the
+product to the mathematics article *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of
 Biquaternions*; the form $K$ and its restrictions to *The Krein Gram Matrix and the Restrictions of the
 Form*; the diagonal as an element to *The Non-Central Diagonal and the Two Halves of the Symmetric
 Quaternionic Sesqualgebra*; and the state side to *Mass, Rank and the Positivity of the Dagger* and *Why
@@ -34,10 +33,10 @@ $\varepsilon=(1,-1,-1,-1)$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and
 $\mathbb{M}_-=\{Q^{\flat}=Q\}$, with $\flat=-{}^{*}$. All conventions are those of *Conventions in the
 Biquaternion Universe*.
 
-## The Six Subspaces, Named
+## Remarkable Subspaces, Named
 
-The phrase *in no subspace* means nothing until the six are named. The algebra is eight-dimensional over
-$\mathbb{R}$, and it carries six distinguished real subspaces, the fixed and anti-fixed spaces of the
+The phrase *in no subspace* means nothing until the remarkable subspaces are named. The algebra is eight-dimensional over
+$\mathbb{R}$, and it carries remarkable real subspaces, the fixed and anti-fixed spaces of the
 three commuting involutions.
 
 | subspace | real dim | defining condition | basis |
@@ -49,18 +48,18 @@ three commuting involutions.
 | informational $\mathbb{M}_+$ | $4$ | $Q_0$ real, $\mathbf{Q}$ purely imaginary | $\{e_0,ie_1,ie_2,ie_3\}$ |
 | material $\mathbb{M}_-$ | $4$ | $Q_0$ purely imaginary, $\mathbf{Q}$ real | $\{ie_0,e_1,e_2,e_3\}$ |
 
-The six are the fixed spaces of the involutions ${}^{\natural}$, $-{}^{\natural}$, $\bar{\cdot}$,
+The remarkable subspaces are the fixed spaces of the involutions ${}^{\natural}$, $-{}^{\natural}$, $\bar{\cdot}$,
 $-\bar{\cdot}$, ${}^{*}$ and $\flat$ (*Relations Between Subspaces*), and each carries the product in its
 own way. The centre, the real quaternion subspace and the informational sector are **closed**; the vector
 subspace maps into the centre, the antiquaternion subspace into the real quaternion subspace, and the
 material sector into the informational sector; and the image of the product is not confined to any of
-them — the real span of its values is the **whole algebra**. The closure table is *The Six Subspaces under the
+them — the real span of its values is the **whole algebra**. The closure table is *Remarkable Subspaces under the
 Symmetric Quaternionic Sesqualgebra of Biquaternions* and is cited, not re-derived.
 
 ## The Value Lies in No Subspace
 
 **Theorem (the value is in no subspace).** For a general pair the value $\tilde P\bullet\tilde Q$ lies in
-none of the six subspaces.
+none of the remarkable subspaces.
 
 *Proof.* The value is
 $[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$.
@@ -79,11 +78,11 @@ $$
 $$
 
 The scalar part $1+i$ is neither real nor purely imaginary, and the vector part $-(1+i)e_1$ is nonzero, so
-the value is in none of the six. Verified on the witness and on $100$ random pairs with distinct
+the value is in none of the remarkable subspaces. Verified on the witness and on $100$ random pairs with distinct
 arguments, all of which gave a value outside all six.
 
 **What the theorem does and does not say.** It says that the image of the product is contained in no one of
-the six subspaces. It does **not** say that every value is outside every subspace: at
+the remarkable subspaces. It does **not** say that every value is outside every subspace: at
 $\tilde P=e_0$ the value is the star, $\tilde Q^{*}$, which lies in the informational sector; at a pair
 of vectors the value can lie in the centre; and every **diagonal** value $\tilde Q\bullet\tilde Q$ is a real
 quaternion and so lies in $\mathbb{H}_{\mathbb{B}}$, a fact the next section uses. The datum is about the
@@ -187,15 +186,14 @@ Product*.
 
 Three further readings of the same theorem are recorded here, each under a name of its own and each labelled a reading rather than a theorem; the theorem they name is the body's.
 
-- **Sector correlation.** That the value leaves all six subspaces is read positively as a **correlation between sectors**: an element outside every distinguished subspace is one that no single sector can hold, so the symmetric gauge product couples the sectors rather than staying inside one. The name is the positive face of the theorem, and its boundary is the article's: the algebra supplies the escape, and it supplies no measure of the correlation.
+- **Sector correlation.** That the value leaves all remarkable subspaces is read positively as a **correlation between sectors**: an element outside every remarkable subspace is one that no single sector can hold, so the symmetric gauge product couples the sectors rather than staying inside one. The name is the positive face of the theorem, and its boundary is the article's: the algebra supplies the escape, and it supplies no measure of the correlation.
 - **Mixing generator.** The element $e_0+e_1$ is the **minimal mixing element**, and its non-central diagonal $-2e_1$ witnesses the mixing; the centrality criterion $Q_0\overline{Q_k}\in i\mathbb{R}$ is the no-mixing condition. The reading is the value-side counterpart of the sector-mixing term of *The Gauge Metric as a Product: the Symmetric Quaternionic Sesquilinear Product*, named here because it is the element that carries it.
 - **No state by locality.** The absence of the value from every subspace is read as an obstruction of a **local** kind to the state reading: a state is localised in a sector — the informational sector — and a value that is in no sector cannot be localised there, so it is not a state. The name keeps the negative reading attached to a locality condition on the value rather than to a defect of the product, and it is the sharpest form of the article's *not a state* conclusion.
 
 ## The Limits
 
 - **A value in no subspace is a datum about the algebra and not a claim that the object is unphysical.**
-  The theorem has no physical negative content: it says that the value is not confined to a distinguished
-  subspace, and it does not say that the value is not a perfectly good element of the algebra.
+  The theorem has no physical negative content: it says that the value is not confined to a remarkable subspace, and it does not say that the value is not a perfectly good element of the algebra.
 - **An indefinite scalar part is a signature and not a failure.** The Krein form is the object the gauge
   side needs; its indefiniteness is the metric and not a defect of the product that carries it.
 - **The diagonal that is not central is not a pathology.** The non-centrality is the algebraic trace of the
@@ -207,7 +205,7 @@ Three further readings of the same theorem are recorded here, each under a name 
 ## The Ledger
 
 **Proved, and recomputed.** The value of the symmetric quaternionic sesquilinear product lies in no one of
-the six subspaces for a pair of distinct generic arguments, and the real span of its values is the whole algebra; the
+the remarkable subspaces for a pair of distinct generic arguments, and the real span of its values is the whole algebra; the
 witness $\tilde P=(1+i)e_0$, $\tilde Q=e_0+e_1$ gives $(1+i)(e_0-e_1)$ outside all six, and $100$ random
 pairs with distinct arguments gave $100$ values outside all six. The diagonal is an exception of a definite
 kind: it is always a real quaternion, hence always in $\mathbb{H}_{\mathbb{B}}$, and never leaves it. The
@@ -217,7 +215,7 @@ $Q_0\overline{Q_k}\in i\mathbb{R}$ for each $k$; at $e_1$ it is $-e_0$ and at $e
 both central, and at $e_0+e_1$ it is $-2e_1$, not central. The plain symmetric sesquilinear product is
 central-valued and its diagonal is $H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\mathbf{Q}\rvert^{2}$,
 positive off the origin. Recomputed on the named witnesses and on $100$ random pairs, and reproduced from
-*The Six Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions*, *The Non-Central
+*Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions*, *The Non-Central
 Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* and *The Krein Gram Matrix and the
 Restrictions of the Form*.
 
@@ -238,7 +236,7 @@ The values lying in no subspace read as the framework's criterion for what can b
 
 ## Summary
 
-The symmetric quaternionic sesquilinear product has values in **no one of the six subspaces** of the
+The symmetric quaternionic sesquilinear product has values in **no one of the remarkable subspaces** of the
 algebra: its value carries the scalar part $K$ and the vector part $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$
 side by side, and the real span of its values is the whole algebra. Its diagonal
 $\tilde Q\bullet\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$ is
@@ -258,7 +256,7 @@ never a norm.
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\bullet\tilde Q$ | the symmetric quaternionic sesquilinear product, $\mathrm{SQS}$ |
-| $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the six distinguished subspaces |
+| $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable subspaces |
 | $\tilde P\bullet\tilde Q=[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$ | the value; in no subspace |
 | $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$ | the Krein form; the scalar part of the value |
 | $\tilde Q\bullet\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$ | the diagonal; real element |
@@ -270,12 +268,12 @@ never a norm.
 
 ## Further Reading
 
-- Mathematics article *The Six Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the closure pattern of the six and the fact that a general value spans the algebra.
-- Mathematics article *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form $K$ and its restrictions to the six subspaces.
+- Mathematics article *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the closure pattern of the remarkable subspaces and the fact that a general value spans the algebra.
+- Mathematics article *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form $K$ and its restrictions to the remarkable subspaces.
 - Mathematics article *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal, the criterion of centrality and the witnesses.
 - Companion article *The Gauge Metric as a Product: the Symmetric Quaternionic Sesquilinear Product*, for the product whose values these are.
-- Companion article *Relations Between Subspaces*, for the six subspaces, their bases and their intersections.
-- Companion article *The Four Other Remarkable Subspaces*, for the subspaces treated on their own terms.
+- Companion article *Relations Between Subspaces*, for the remarkable subspaces, their bases and their intersections.
+- Companion article *Other Remarkable Subspaces*, for the subspaces treated on their own terms.
 - Companion article *Mass, Rank and the Positivity of the Dagger*, for the state cone and the positivity that this product does not supply.
 - Companion article *Why the Fourth Product Is a Gauge Structure and Not a State Space*, for the no-go that closes the block.
 - Companion article *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*, for the antisymmetric half of the same row.

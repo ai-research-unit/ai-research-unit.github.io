@@ -188,7 +188,7 @@ $$
 
 *Proof.* The formula $\kappa=-2\,\mathbf{P}\cdot\mathbf{Q}$ restricted to a real direction is a sum of
 squares with the sign of the direction, negative for real vector coefficients and positive for imaginary
-ones; the scalar direction contributes zero. Verified on the six bases. This is the six-restriction table
+ones; the scalar direction contributes zero. Verified on the bases. This is the restriction table
 of *The Killing Form of the Antisymmetric Plain Algebra*.
 
 **Proposed reading, labelled as such.** The **sign of the Killing form is the compact–non-compact
@@ -248,7 +248,7 @@ generators of the Lorentz group:
   and Lorentz Transformations* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
 
 The complex vector subspace is exactly the sector the corpus calls the home of the Lorentz generators, and
-the assignment of the two triples to rotations and boosts is *The Four Other Remarkable Subspaces*.
+the assignment of the two triples to rotations and boosts is *Other Remarkable Subspaces*.
 
 **Proposition (the angular-momentum operators).** The adjoint actions of the imaginary vector units,
 
@@ -393,7 +393,7 @@ the angular momentum of a material field.
 - Mathematics article *Derivations of a Lie Algebra*, for the general theory of the derivations.
 - Companion article *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*, for the
   bracket, the Jacobi identity and the rotation triple.
-- Companion article *The Four Other Remarkable Subspaces*, for the complex space sector as the home of
+- Companion article *Other Remarkable Subspaces*, for the complex space sector as the home of
   the Lorentz generators.
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the physical angular momentum,
   the spin, the ladder operators and the representations.

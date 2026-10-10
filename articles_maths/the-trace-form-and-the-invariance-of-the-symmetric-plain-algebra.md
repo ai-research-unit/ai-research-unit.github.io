@@ -8,9 +8,9 @@ $$
 \tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q}),
 $$
 
-the scalar part of the product of the two elements. This article reads the form, its identity with the scalar part of the plain product, its Gram matrix, its **invariance** $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$, the operator traces built from it, and its restriction to the six subspaces.
+the scalar part of the product of the two elements. This article reads the form, its identity with the scalar part of the plain product, its Gram matrix, its **invariance** $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$, the operator traces built from it, and its restriction to the remarkable subspaces.
 
-The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ of *The Four Pairings of the Biquaternion Algebra*, which the associativity of the plain product makes invariant, and its operator theory is *Association and the Transpose on the Biquaternion Algebra* and *Two-Sided Operators on the General Plain Algebra of Biquaternions*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the six subspaces are the subject of *The Six Subspaces under the General Plain Algebra of Biquaternions*; the form is used here with the product and not re-derived.
+The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ of *The Four Pairings of the Biquaternion Algebra*, which the associativity of the plain product makes invariant, and its operator theory is *Association and the Transpose on the Biquaternion Algebra* and *Two-Sided Operators on the General Plain Algebra of Biquaternions*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces under the General Plain Algebra of Biquaternions*; the form is used here with the product and not re-derived.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$, and $(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$. The scalar part is $\mathrm{Sc}(\tilde Q)=Q_0$; the general plain bilinear form is $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$, and $\tau$ denotes it read as the trace form of the block. The multiplication operator of the block is $L^{\bullet}_{\tilde P}\tilde Q=\tilde P\bullet\tilde Q$, and $L_{\tilde P},R_{\tilde P}$ are the left and right operators of the plain product, still with the halved product and the unhalved ones distinguished as in *The Multiplication Operators of the Symmetric Plain Algebra*.
 
@@ -169,11 +169,11 @@ It is the linear form $\operatorname{Tr}\bigl(L^{\bullet}_{\tilde Q}\bigr)/2$, a
 
 **Remark (the two symmetric functions).** The trace functional and the generic norm are the two coefficients of the quadratic identity, and they are recovered from the trace form and the unit: $T(\tilde Q)=2\tau(\tilde Q,e_0)$ and $N(\tilde Q)=2\tau(\tilde Q,e_0)^2-\tau(\tilde Q,\tilde Q)$. **The trace form, the unit and the polarisation carry the whole degree-two structure of the block.** Verified on the coordinate rule.
 
-## The Restriction to the Six Subspaces
+## The Restriction to the Remarkable Subspaces
 
-### The Six Restriction Matrices
+### The Restriction Matrices
 
-The trace form is the general plain bilinear form, so its restrictions to the six subspaces of *Introduction to the Six Subspaces* are those of *The Six Subspaces under the General Plain Algebra of Biquaternions*, read here as the restrictions of the trace form of the block:
+The trace form is the general plain bilinear form, so its restrictions to the remarkable subspaces of *Introduction to the Remarkable Subspaces* are those of *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, read here as the restrictions of the trace form of the block:
 
 | Subspace | Natural real basis | Restriction matrix | Signature | Rank |
 |---|---|---|---|---|
@@ -184,15 +184,15 @@ The trace form is the general plain bilinear form, so its restrictions to the si
 | Hermitian $\mathbb{M}_+$ | $e_0,ie_1,ie_2,ie_3$ | $\mathrm{I}_4=\operatorname{diag}(1,1,1,1)$ | $(4,0)$ | $4$ |
 | Anti-Hermitian $\mathbb{M}_-$ | $ie_0,e_1,e_2,e_3$ | $-\mathrm{I}_4=\operatorname{diag}(-1,-1,-1,-1)$ | $(0,4)$ | $4$ |
 
-The matrices are the same six as in *The Six Subspaces under the General Plain Algebra of Biquaternions*, because the trace form is the general plain bilinear form; the table is reproduced here with the reading of the block.
+The matrices are the same six as in *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, because the trace form is the general plain bilinear form; the table is reproduced here with the reading of the block.
 
 ### The Isotropic Cones of the Restrictions
 
-**Remark (the restriction and the cone of the block).** The restricted form is **non-degenerate on each of the six subspaces**, of ranks $2,6,4,4,4,4$, and the four indefinite rows carry isotropic cones of real dimensions $1,5,3,3$ with the null elements $e_0+ie_0$, $e_1+ie_1$, $e_0+e_1$ and $ie_0+ie_1$. The two definite rows, the Hermitian and the anti-Hermitian, carry no isotropic vector. **The isotropic cone of the restriction is the intersection of the subspace with the cone of the form**, and it must not be confused with the isotropic cone of the generic norm: on the quaternion subspace, for instance, the trace form has the cone of signature $(1,3)$ computed here, while the generic norm $\sum_\mu Q_\mu^2$ vanishes on that subspace only at the origin. Verified on the six restricted forms.
+**Remark (the restriction and the cone of the block).** The restricted form is **non-degenerate on each of the remarkable subspaces**, of ranks $2,6,4,4,4,4$, and the four indefinite rows carry isotropic cones of real dimensions $1,5,3,3$ with the null elements $e_0+ie_0$, $e_1+ie_1$, $e_0+e_1$ and $ie_0+ie_1$. The two definite rows, the Hermitian and the anti-Hermitian, carry no isotropic vector. **The isotropic cone of the restriction is the intersection of the subspace with the cone of the form**, and it must not be confused with the isotropic cone of the generic norm: on the quaternion subspace, for instance, the trace form has the cone of signature $(1,3)$ computed here, while the generic norm $\sum_\mu Q_\mu^2$ vanishes on that subspace only at the origin. Verified on the restricted forms.
 
 ## Summary
 
-The trace form of the symmetric plain algebra is $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$, which is the scalar part of the plain product and the general plain bilinear form. It is $\mathbb{C}$-bilinear, symmetric and non-degenerate, with Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ on the basis and realified signature $(4,4)$; it is invariant, $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$, which is the associativity of the plain product read on the Jordan product, and its polarisation recovers the quadratic trace, the generic trace $T(\tilde Q)=2\tau(\tilde Q,e_0)$ and the generic norm $N(\tilde Q)=2\tau(\tilde Q,e_0)^2-\tau(\tilde Q,\tilde Q)$, hence the product. The multiplication operator is $L^{\bullet}_{\tilde P}=\tfrac12(L_{\tilde P}+R_{\tilde P})$, of trace $4P_0=2T(\tilde P)$ and determinant $P_0^2N(\tilde P)$, and the operator trace is $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\mathbf{P},\mathbf{Q})=2\tau(\tilde P,\tilde Q)+\tfrac12T(\tilde P)T(\tilde Q)$. On the six subspaces the restrictions are those of the general plain bilinear form, of ranks $2,6,4,4,4,4$ and signatures $(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$.
+The trace form of the symmetric plain algebra is $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$, which is the scalar part of the plain product and the general plain bilinear form. It is $\mathbb{C}$-bilinear, symmetric and non-degenerate, with Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ on the basis and realified signature $(4,4)$; it is invariant, $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$, which is the associativity of the plain product read on the Jordan product, and its polarisation recovers the quadratic trace, the generic trace $T(\tilde Q)=2\tau(\tilde Q,e_0)$ and the generic norm $N(\tilde Q)=2\tau(\tilde Q,e_0)^2-\tau(\tilde Q,\tilde Q)$, hence the product. The multiplication operator is $L^{\bullet}_{\tilde P}=\tfrac12(L_{\tilde P}+R_{\tilde P})$, of trace $4P_0=2T(\tilde P)$ and determinant $P_0^2N(\tilde P)$, and the operator trace is $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\mathbf{P},\mathbf{Q})=2\tau(\tilde P,\tilde Q)+\tfrac12T(\tilde P)T(\tilde Q)$. On the remarkable subspaces the restrictions are those of the general plain bilinear form, of ranks $2,6,4,4,4,4$ and signatures $(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$.
 
 ## Summary of Notation
 
@@ -205,13 +205,13 @@ The trace form of the symmetric plain algebra is $\tau(\tilde P,\tilde Q)=\mathr
 | $N(\tilde Q)=2\tau(\tilde Q,e_0)^2-\tau(\tilde Q,\tilde Q)$ | the generic norm |
 | $L^{\bullet}_{\tilde P}=\tfrac12(L_{\tilde P}+R_{\tilde P})$ | the multiplication operator of the block |
 | $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\mathbf{P},\mathbf{Q})$ | the operator trace |
-| $(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$ | the signatures of the six restrictions |
+| $(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$ | the signatures of the restrictions |
 
 ## Further Reading
 
 - *The Four Pairings of the Biquaternion Algebra*, for the general plain bilinear form, its coefficient matrix $D$ and its comparison with the other three forms.
 - *Association and the Transpose on the Biquaternion Algebra*, for the associativity of the plain form and its operator theory.
 - *Two-Sided Operators on the General Plain Algebra of Biquaternions*, for the left and right operators whose half-sum is the multiplication operator of the block.
-- *The Six Subspaces under the General Plain Algebra of Biquaternions*, for the restrictions of the form to the six subspaces.
+- *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, for the restrictions of the form to the remarkable subspaces.
 - *The Realification of the Four Forms*, for the realified signature $(4,4)$.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, for the generic trace, the generic norm and the quadratic identity.

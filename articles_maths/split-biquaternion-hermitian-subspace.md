@@ -142,7 +142,7 @@ So the isotropic cone of the Hermitian form is **not** the zero divisor set: eve
 
 **Proof.** Let $\tilde{Q} = q_0 e_0 + j\mathbf{u}$ satisfy $\tilde{Q}^2 = \tilde{Q}$. Comparing with the square formula, $2 q_0 \mathbf{u} = \mathbf{u}$ and $q_0^2 - |\mathbf{u}|^2 = q_0$. If $\mathbf{u} = 0$, then $q_0 \in \{0, 1\}$. If $\mathbf{u} \neq 0$, then $q_0 = \tfrac{1}{2}$ and $q_0^2 - |\mathbf{u}|^2 = q_0$ gives $|\mathbf{u}|^2 = -\tfrac{1}{4}$, impossible.
 
-The nontrivial idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ of $\mathbb{H}_{\mathbb{D}}$ are **not** Hermitian, since $\tilde\Pi_+^\dagger = \tilde\Pi_-$; they lie in the split complex subspace, not in $\mathbb{M}_+$. This is the opposite of the biquaternion situation, where the nontrivial idempotents are Hermitian and lie in $\mathbb{M}_+$; the reason is again that there is no central scalar imaginary here.
+The nontrivial idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ of $\mathbb{H}_{\mathbb{D}}$ are **not** Hermitian, since $\tilde\Pi_1^\dagger = \tilde\Pi_2$; they lie in the split complex subspace, not in $\mathbb{M}_+$. This is the opposite of the biquaternion situation, where the nontrivial idempotents are Hermitian and lie in $\mathbb{M}_+$; the reason is again that there is no central scalar imaginary here.
 
 ## The Image in the Two Halves
 

@@ -72,7 +72,7 @@ $$
 
 It is Euclidean in the precise sense that this coordinate isomorphism is a linear bijection carrying the norm of §1 to the Euclidean norm of $\mathbb{R}^{8}$ and the balls $B(\tilde{Q},r)$ to the Euclidean balls, so the open sets are those of the usual metric topology of $\mathbb{R}^{8}$ and of nothing else.
 
-The topology is the usual one of a finite-dimensional real space: Hausdorff, second countable, locally compact, complete, path connected, and with the Heine–Borel property that a subset is compact exactly when it is closed and bounded (*Metric, Uniform and Complete Spaces*). It is also the topology inherited from any faithful finite-dimensional real representation: the regular representation gives a linear injection $\mathbb{B}\hookrightarrow M_4(\mathbb{R})$ (*The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Matrix Representation*), and the topology defined above is the subspace topology of the operator norm there, by §2.
+The topology is the usual one of a finite-dimensional real space: Hausdorff, second countable, locally compact, complete, path connected, and with the Heine–Borel property that a subset is compact exactly when it is closed and bounded (*Metric, Uniform and Complete Spaces*). It is also the topology inherited from any faithful finite-dimensional real representation: the regular representation gives a linear injection $\mathbb{B}\hookrightarrow M_4(\mathbb{R})$ (*The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*), and the topology defined above is the subspace topology of the operator norm there, by §2.
 
 The norm of §1 is the topological norm: it is the norm that defines the topology of §3, and by §2 every other norm of the space gives the same topology.
 
@@ -84,7 +84,7 @@ $$
 \lVert\tilde{P}\tilde{Q}\rVert\leq\sqrt{2}\,\lVert\tilde{P}\rVert\,\lVert\tilde{Q}\rVert .
 $$
 
-**Proof.** Under the $2\times2$ realization $\Phi$ of *The Matrix Representation and the Biquaternion Dynamics*, one has $\Phi(\tilde{P}\tilde{Q})=\Phi(\tilde{P})\Phi(\tilde{Q})$ and $\lVert\Phi(\tilde{Q})\rVert_F=\sqrt{2}\,\lVert\tilde{Q}\rVert$, with $\lVert\cdot\rVert_F$ the Frobenius norm. Frobenius norm is submultiplicative, so
+**Proof.** Under the $2\times2$ realization $\Phi$ of *The Matrix Element Representation and the Biquaternion Dynamics*, one has $\Phi(\tilde{P}\tilde{Q})=\Phi(\tilde{P})\Phi(\tilde{Q})$ and $\lVert\Phi(\tilde{Q})\rVert_F=\sqrt{2}\,\lVert\tilde{Q}\rVert$, with $\lVert\cdot\rVert_F$ the Frobenius norm. Frobenius norm is submultiplicative, so
 
 $$
 \lVert\tilde{P}\tilde{Q}\rVert=\tfrac{1}{\sqrt2}\lVert\Phi(\tilde{P})\Phi(\tilde{Q})\rVert_F
@@ -103,5 +103,5 @@ The space of biquaternions is a real vector space of dimension eight. It carries
 - *Normed and Banach Spaces* (`articles_maths/normed-and-banach-spaces.md`), the norm, the equivalence of norms and the uniqueness of the topology in finite dimension; *Comparison of Norms and Invertibility* (`articles_maths/comparison-of-norms-and-invertibility.md`).
 - *Metric, Uniform and Complete Spaces* (`articles_maths/metric-uniform-and-complete-spaces.md`), the metric, the completeness and the compactness properties of §3; *Banach and Hilbert Spaces* (`articles_maths/banach-and-hilbert-spaces.md`).
 - *Topological Algebras and Banach Algebras* (`articles_maths/topological-algebras-and-banach-algebras.md`), the continuity of the product and the openness of the group of units.
-- *Biquaternions as an Algebra over $\mathbb{R}$* (`articles_maths/biquaternions-as-an-algebra-over-r.md`), the real algebra and its real basis; *The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Matrix Representation* (`articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-matrix-representation.md`).
-- *The Matrix Representation and the Biquaternion Dynamics* (`articles_maths/the-matrix-representation-and-the-biquaternion-dynamics.md`), the realization $\Phi$ and $\lVert\Phi(\tilde{Q})\rVert_F=\sqrt2\lVert\tilde{Q}\rVert$.
+- *Biquaternions as an Algebra over $\mathbb{R}$* (`articles_maths/biquaternions-as-an-algebra-over-r.md`), the real algebra and its real basis; *The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-matrix-element-representation.md`).
+- *The Matrix Element Representation and the Biquaternion Dynamics* (`articles_maths/the-matrix-element-representation-and-the-biquaternion-dynamics.md`), the realization $\Phi$ and $\lVert\Phi(\tilde{Q})\rVert_F=\sqrt2\lVert\tilde{Q}\rVert$.

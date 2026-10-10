@@ -115,10 +115,10 @@ and the finite distance along a path is the integral of $ds$. The metric is inva
 
 ### The Spectral Family
 
-The state carries a natural classical distribution: its two eigenvalues in its own basis. Write $\hat{\mathbf{r}} = \mathbf{r}/|\mathbf{r}|$ for a state with $\mathbf{r}\neq0$ and let $\tilde\Pi_\pm(\hat{\mathbf{r}})$ be the corresponding idempotents, so that
+The state carries a natural classical distribution: its two eigenvalues in its own basis. Write $\hat{\mathbf{r}} = \mathbf{r}/|\mathbf{r}|$ for a state with $\mathbf{r}\neq0$ and let $\tilde\Pi_{1,2}(\hat{\mathbf{r}})$ be the corresponding idempotents, so that
 
 $$
-\tilde{\rho} = \lambda_+\tilde\Pi_+(\hat{\mathbf{r}}) + \lambda_-\tilde\Pi_-(\hat{\mathbf{r}}), \qquad
+\tilde{\rho} = \lambda_+\tilde\Pi_1(\hat{\mathbf{r}}) + \lambda_-\tilde\Pi_2(\hat{\mathbf{r}}), \qquad
 \lambda_\pm = \tfrac{1}{2}\left(1\pm|\mathbf{r}|\right).
 $$
 
@@ -142,7 +142,7 @@ $$
 \boxed{\;F_r(r) = \frac{1}{1-r^2} = \frac{1}{4\,\mathrm{Sc}\,N(\tilde{\rho})}.\;}
 $$
 
-**The Fisher information of the spectral family is the reciprocal of the biquaternion norm.** This is the central identity of the article, and it is a statement about the algebra: the denominator $1-r^2$ is the scalar part of the biquaternion norm of the state, read from $N(\tilde{\rho}) = \tfrac{1}{4}(1-r^2)e_0$, so the whole expression is a function of the state's quadratic invariant. The evaluation is elementary and was checked on the interior superposition $\tilde{\rho} = \tfrac{1}{2}(\tilde\Pi_+(e_1)+\tilde\Pi_+(e_2))$, where $r^2 = \tfrac{1}{2}$, $N(\tilde{\rho}) = \tfrac{1}{8}e_0$, and both sides give $2$.
+**The Fisher information of the spectral family is the reciprocal of the biquaternion norm.** This is the central identity of the article, and it is a statement about the algebra: the denominator $1-r^2$ is the scalar part of the biquaternion norm of the state, read from $N(\tilde{\rho}) = \tfrac{1}{4}(1-r^2)e_0$, so the whole expression is a function of the state's quadratic invariant. The evaluation is elementary and was checked on the interior superposition $\tilde{\rho} = \tfrac{1}{2}(\tilde\Pi_1(e_1)+\tilde\Pi_1(e_2))$, where $r^2 = \tfrac{1}{2}$, $N(\tilde{\rho}) = \tfrac{1}{8}e_0$, and both sides give $2$.
 
 ### The Information Metric of the Sector
 
@@ -273,7 +273,7 @@ The bound also explains the rank-one degeneracy of the classical metric from the
 
 ## What Is Derived and What Is Imported
 
-**Derived from the algebra.** The biquaternion norm of a difference, $N(\tilde{\rho}-\tilde{\sigma}) = -\tfrac{1}{4}|\mathbf{r}-\mathbf{s}|^2 e_0$, and its equivalence with the trace-pairing distance; the spectral decomposition of the state and the eigenvalue pair $(\lambda_+,\lambda_-)$; the Fisher information of the spectral family, $F_r = 1/(1-r^2)$; the identification of that denominator with the biquaternion-norm defect, $F_r = 1/(4\,\mathrm{Sc}\,N(\tilde{\rho}))$; the rank-one information metric $g_{ij} = \hat{r}_i\hat{r}_j/(1-r^2)$; the general measurement formula; and the Fisher–Rao distance $\arcsin r$ with the finite boundary distance $\pi/2$. All of these are worked out in the basis and, where numerical, checked on the interior superposition $\tfrac{1}{2}(\tilde\Pi_+(e_1)+\tilde\Pi_+(e_2))$ rather than on a pure state.
+**Derived from the algebra.** The biquaternion norm of a difference, $N(\tilde{\rho}-\tilde{\sigma}) = -\tfrac{1}{4}|\mathbf{r}-\mathbf{s}|^2 e_0$, and its equivalence with the trace-pairing distance; the spectral decomposition of the state and the eigenvalue pair $(\lambda_+,\lambda_-)$; the Fisher information of the spectral family, $F_r = 1/(1-r^2)$; the identification of that denominator with the biquaternion-norm defect, $F_r = 1/(4\,\mathrm{Sc}\,N(\tilde{\rho}))$; the rank-one information metric $g_{ij} = \hat{r}_i\hat{r}_j/(1-r^2)$; the general measurement formula; and the Fisher–Rao distance $\arcsin r$ with the finite boundary distance $\pi/2$. All of these are worked out in the basis and, where numerical, checked on the interior superposition $\tfrac{1}{2}(\tilde\Pi_1(e_1)+\tilde\Pi_1(e_2))$ rather than on a pure state.
 
 **Imported from standard mathematics and physics.** The definition of the classical Fisher information and its reparametrisation invariance; the Cramér–Rao bound; the theorem that the Fisher information is the Hessian of the relative entropy; the Braunstein–Caves bound and the formula for the quantum Fisher information of a pure-state family, with the symmetric-logarithmic-derivative normalization $\mathrm{Tr}(\tilde{\rho}L^2)$ and the factor of four that relates it to the Bures metric of the standard geometry; and the Bures and Fubini–Study metrics. Each is transcribed as standard.
 

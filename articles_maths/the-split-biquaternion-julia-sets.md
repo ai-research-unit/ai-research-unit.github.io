@@ -8,7 +8,7 @@ The family and its reduction are *The Split-Biquaternion Quadratic Family*; the 
 
 The article owns the topology of the split-biquaternion Julia set as a product, the description of its components and dust, the split-complex scalar slice and its square connectedness locus, the solid-of-revolution description of the factors, the symmetry of the fractal, and the comparison with the biquaternion case.
 
-**Standing convention.** $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_++\tilde Q_-\tilde\Pi_-$, $\tilde\Pi_\pm=\tfrac12(e_0\pm j)$; $K_{\tilde C}=K_{\tilde C_+}\times K_{\tilde C_-}$ and $J_{\tilde C}=\partial K_{\tilde C}$; for a quaternion parameter $\tilde c\in\mathbb{H}$ the filled Julia set and the Julia set of $f_{\tilde c}(\tilde q)=\tilde q^2+\tilde c$ are written $K_{\tilde c}$ and $J_{\tilde c}$.
+**Standing convention.** $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, $\tilde\Pi_{1,2}=\tfrac12(e_0\pm j)$; $K_{\tilde C}=K_{\tilde C_+}\times K_{\tilde C_-}$ and $J_{\tilde C}=\partial K_{\tilde C}$; for a quaternion parameter $\tilde c\in\mathbb{H}$ the filled Julia set and the Julia set of $f_{\tilde c}(\tilde q)=\tilde q^2+\tilde c$ are written $K_{\tilde c}$ and $J_{\tilde c}$.
 
 ## The Product Structure of the Fractal
 
@@ -51,7 +51,7 @@ $$
 
 ## The Split-Complex Scalar Slice
 
-**Theorem (the $\mathbb{D}$-line).** Let $\tilde C=\lambda e_0$ with $\lambda\in\mathbb{D}$, and write $\lambda=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ with $\lambda_\pm\in\mathbb{R}$. Then $\tilde C_\pm=\lambda_\pm e_0$ are real, and the connectedness locus of the family restricted to the $\mathbb{D}$-line is the square
+**Theorem (the $\mathbb{D}$-line).** Let $\tilde C=\lambda e_0$ with $\lambda\in\mathbb{D}$, and write $\lambda=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with $\lambda_\pm\in\mathbb{R}$. Then $\tilde C_\pm=\lambda_\pm e_0$ are real, and the connectedness locus of the family restricted to the $\mathbb{D}$-line is the square
 
 $$
 \bigl\{\lambda\in\mathbb{D} : K_{\lambda e_0} \text{ connected}\bigr\}\;=\;\{\lambda : \lambda_+\in[-2,\tfrac14],\ \lambda_-\in[-2,\tfrac14]\} ,
@@ -97,7 +97,7 @@ and for a $\mathbb{D}$-scalar parameter the symmetry is the full product of the 
 
 ## Comparison with the Biquaternion Case
 
-**Remark (product against coupling).** The biquaternion fractal restricted to the idempotent plane is a product, and off the plane it is coupled; the split-biquaternion fractal is a product everywhere. The comparison is exact: the central idempotents of the split-biquaternion algebra give $\mathbb{H}_{\mathbb{D}}=\mathbb{H}\tilde\Pi_+\oplus\mathbb{H}\tilde\Pi_-$ as a direct sum of two ideals, whereas the idempotents of the biquaternion algebra give only the Peirce decomposition of the space with a non-zero off-diagonal block. **One algebra is a product, the other is a simple algebra, and the fractal theory is a product theory in the first case and an irreducible one in the second.**
+**Remark (product against coupling).** The biquaternion fractal restricted to the idempotent plane is a product, and off the plane it is coupled; the split-biquaternion fractal is a product everywhere. The comparison is exact: the central idempotents of the split-biquaternion algebra give $\mathbb{H}_{\mathbb{D}}=\mathbb{H}\tilde\Pi_1\oplus\mathbb{H}\tilde\Pi_2$ as a direct sum of two ideals, whereas the idempotents of the biquaternion algebra give only the Peirce decomposition of the space with a non-zero off-diagonal block. **One algebra is a product, the other is a simple algebra, and the fractal theory is a product theory in the first case and an irreducible one in the second.**
 
 **Remark (what the split side cannot have).** The split-biquaternion algebra is not a division algebra and its $\mathbb{D}$-valued norm is indefinite, so its fractal theory has zero divisors and no natural pluripotential theory; the fractal is a product and the analysis is the quaternion analysis on two factors. The biquaternion algebra has a complex structure and a pluripotential theory, and pays for it with the coupling and the cone. **Neither algebra contains the other, and the two threads are the two resolutions of the quadratic family over the quaternions.**
 
@@ -114,7 +114,7 @@ The split-biquaternion Julia set is the boundary of the product of two quaternio
 | $K_{\tilde c}$, $J_{\tilde c}$ | the quaternion filled Julia set and Julia set |
 | $K_c^{\mathbb{C}}$ | the complex filled Julia set of $z\mapsto z^2+c$ |
 | $[-2,\tfrac14]$ | the real (and quaternion, on the real line) connectedness interval |
-| $\lambda=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ | the split-complex scalar parameter |
+| $\lambda=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ | the split-complex scalar parameter |
 | $\mathrm{Sym}(J_{\tilde C})$ | the symmetry group of the fractal |
 
 ## Further Reading

@@ -45,32 +45,32 @@ The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is simple, hence sem
 Put
 
 $$
-\tilde\pi_+ = \tfrac{1}{2}(1 + e_2), \qquad \tilde\pi_- = \tfrac{1}{2}(1 - e_2).
+\tilde\pi_1 = \tfrac{1}{2}(1 + e_2), \qquad \tilde\pi_2 = \tfrac{1}{2}(1 - e_2).
 $$
 
-Since $e_2^2 = +1$, one has $\tilde\pi_+^2 = \tilde\pi_+$, $\tilde\pi_-^2 = \tilde\pi_-$ and
+Since $e_2^2 = +1$, one has $\tilde\pi_1^2 = \tilde\pi_1$, $\tilde\pi_2^2 = \tilde\pi_2$ and
 
 $$
-\tilde\pi_+ \tilde\pi_- = \tilde\pi_- \tilde\pi_+ = \tfrac{1}{4}(1 - e_2^2) = 0, \qquad \tilde\pi_+ + \tilde\pi_- = 1.
+\tilde\pi_1 \tilde\pi_2 = \tilde\pi_2 \tilde\pi_1 = \tfrac{1}{4}(1 - e_2^2) = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1.
 $$
 
-So $\tilde\pi_+$ and $\tilde\pi_-$ are orthogonal idempotents summing to the unit. They are **not central**: the element $e_1$ anticommutes with $e_2$, hence
+So $\tilde\pi_1$ and $\tilde\pi_2$ are orthogonal idempotents summing to the unit. They are **not central**: the element $e_1$ anticommutes with $e_2$, hence
 
 $$
-e_1 \tilde\pi_+ = \tfrac{1}{2}(e_1 + e_3), \qquad \tilde\pi_+ e_1 = \tfrac{1}{2}(e_1 - e_3),
+e_1 \tilde\pi_1 = \tfrac{1}{2}(e_1 + e_3), \qquad \tilde\pi_1 e_1 = \tfrac{1}{2}(e_1 - e_3),
 $$
 
-and the two differ, which is the non-centrality of $\tilde\pi_\pm$ in the algebra; the two idempotents are the idempotents of the split-complex subalgebra $\operatorname{span}\{1, e_2\}$.
+and the two differ, which is the non-centrality of $\tilde\pi_{1,2}$ in the algebra; the two idempotents are the idempotents of the split-complex subalgebra $\operatorname{span}\{1, e_2\}$.
 
-Neither is central: an element commuting with $\tilde\pi_+$ commutes with $e_2 = 2\tilde\pi_+ - 1$, and the centraliser of $e_2$ in $\mathbb{H}_{\mathrm{s}}$ is the split-complex plane $\operatorname{span}\{1, e_2\}$, since $e_1$ and $e_3$ anticommute with $e_2$. Both idempotents are primitive: if $\tilde\pi_+ = p + q$ with $p, q$ orthogonal idempotents, then $p$ and $q$ commute with $\tilde\pi_+$ and so lie in $\operatorname{span}\{1, e_2\}$, whose only idempotents are $0, 1, \tilde\pi_+, \tilde\pi_-$, and no nontrivial orthogonal pair among these sums to $\tilde\pi_+$. Unlike the biquaternion case, where the two idempotents are the diagonal idempotents on which the central unit acts, here the two idempotents carry opposite eigenvalues of $e_2$, namely $\tilde\pi_+ e_2 = \tilde\pi_+$ and $\tilde\pi_- e_2 = -\tilde\pi_-$.
+Neither is central: an element commuting with $\tilde\pi_1$ commutes with $e_2 = 2\tilde\pi_1 - 1$, and the centraliser of $e_2$ in $\mathbb{H}_{\mathrm{s}}$ is the split-complex plane $\operatorname{span}\{1, e_2\}$, since $e_1$ and $e_3$ anticommute with $e_2$. Both idempotents are primitive: if $\tilde\pi_1 = p + q$ with $p, q$ orthogonal idempotents, then $p$ and $q$ commute with $\tilde\pi_1$ and so lie in $\operatorname{span}\{1, e_2\}$, whose only idempotents are $0, 1, \tilde\pi_1, \tilde\pi_2$, and no nontrivial orthogonal pair among these sums to $\tilde\pi_1$. Unlike the biquaternion case, where the two idempotents are the diagonal idempotents on which the central unit acts, here the two idempotents carry opposite eigenvalues of $e_2$, namely $\tilde\pi_1 e_2 = \tilde\pi_1$ and $\tilde\pi_2 e_2 = -\tilde\pi_2$.
 
-Left multiplication by $e_1, e_2, e_3$ acts on $\tilde\pi_+$ as
+Left multiplication by $e_1, e_2, e_3$ acts on $\tilde\pi_1$ as
 
 $$
-e_2 \tilde\pi_+ = \tilde\pi_+, \qquad e_1 \tilde\pi_+ = \tfrac{1}{2}(e_1 + e_3), \qquad e_3 \tilde\pi_+ = \tfrac{1}{2}(e_3 + e_1) = e_1 \tilde\pi_+,
+e_2 \tilde\pi_1 = \tilde\pi_1, \qquad e_1 \tilde\pi_1 = \tfrac{1}{2}(e_1 + e_3), \qquad e_3 \tilde\pi_1 = \tfrac{1}{2}(e_3 + e_1) = e_1 \tilde\pi_1,
 $$
 
-so the four general products $e_\mu \tilde\pi_+$ reduce to $\tilde\pi_+$ and $e_1 \tilde\pi_+$, and $\{\tilde\pi_+, e_1 \tilde\pi_+\}$ spans $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$ over $\mathbb{R}$. The analogous identities for $\tilde\pi_-$ read $e_2 \tilde\pi_- = -\tilde\pi_-$ and $e_3 \tilde\pi_- = -\tfrac{1}{2}(e_1 - e_3) = -e_1 \tilde\pi_-$, so $\{\tilde\pi_-, e_1 \tilde\pi_-\}$ spans $\mathbb{H}_{\mathrm{s}} \tilde\pi_-$.
+so the four general products $e_\mu \tilde\pi_1$ reduce to $\tilde\pi_1$ and $e_1 \tilde\pi_1$, and $\{\tilde\pi_1, e_1 \tilde\pi_1\}$ spans $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$ over $\mathbb{R}$. The analogous identities for $\tilde\pi_2$ read $e_2 \tilde\pi_2 = -\tilde\pi_2$ and $e_3 \tilde\pi_2 = -\tfrac{1}{2}(e_1 - e_3) = -e_1 \tilde\pi_2$, so $\{\tilde\pi_2, e_1 \tilde\pi_2\}$ spans $\mathbb{H}_{\mathrm{s}} \tilde\pi_2$.
 
 ## The Classification of the Idempotents
 
@@ -130,7 +130,7 @@ $$
 \tilde\pi(-\eta) = \tfrac{1}{2}(1 - \eta) = 1 - \tilde\pi(\eta).
 $$
 
-Thus $\tilde\pi(\eta)$ and $\tilde\pi(-\eta)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\eta, -\eta\}$. The two standard idempotents $\tilde\pi_\pm$ are the pair of the class $\{\pm e_2\}$.
+Thus $\tilde\pi(\eta)$ and $\tilde\pi(-\eta)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\eta, -\eta\}$. The two standard idempotents $\tilde\pi_{1,2}$ are the pair of the class $\{\pm e_2\}$.
 
 ## Idempotents as Projections
 
@@ -151,15 +151,15 @@ and equally $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi \oplus 
 For the standard pair this reads
 
 $$
-\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_+ \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_-, \qquad
-\mathbb{H}_{\mathrm{s}} \tilde\pi_+ = \operatorname{span}\{\tilde\pi_+, e_1 \tilde\pi_+\}, \qquad
-\mathbb{H}_{\mathrm{s}} \tilde\pi_- = \operatorname{span}\{\tilde\pi_-, e_1 \tilde\pi_-\},
+\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2, \qquad
+\mathbb{H}_{\mathrm{s}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, e_1 \tilde\pi_1\}, \qquad
+\mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, e_1 \tilde\pi_2\},
 $$
 
-each summand of real dimension $2$. The decomposition is a decomposition of the underlying module. It is **not** an algebra decomposition: since $\tilde\pi_+$ is not central, the off-diagonal product $\tilde\pi_+ \mathbb{H}_{\mathrm{s}} \tilde\pi_-$ does not vanish. Indeed
+each summand of real dimension $2$. The decomposition is a decomposition of the underlying module. It is **not** an algebra decomposition: since $\tilde\pi_1$ is not central, the off-diagonal product $\tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_2$ does not vanish. Indeed
 
 $$
-\tilde\pi_+ e_3 \tilde\pi_- = \tfrac{1}{2}(e_3 - e_1) \neq 0,
+\tilde\pi_1 e_3 \tilde\pi_2 = \tfrac{1}{2}(e_3 - e_1) \neq 0,
 $$
 
 so an element of the first summand times an element of the second need not lie in either, and the sum is not closed as a product of subalgebras. This is the precise sense in which a non-central idempotent gives a module splitting without giving an algebra splitting; the algebra-level decomposition of a central idempotent, in which the off-diagonal corners vanish and the sum is a product of algebras, does not occur in the simple algebra $\mathbb{H}_{\mathrm{s}}$.
@@ -175,7 +175,7 @@ $$
 and both factors are nonzero unless $\tilde\pi$ is $0$ or $1$. The direct verification is the product
 
 $$
-\tilde\pi_\pm \bar{\tilde\pi}_\pm = \tfrac{1}{4}(1 \pm e_2)(1 \mp e_2) = \tfrac{1}{4}(1 - e_2^2) = 0,
+\tilde\pi_{1,2} \bar{\tilde\pi}_\pm = \tfrac{1}{4}(1 \pm e_2)(1 \mp e_2) = \tfrac{1}{4}(1 - e_2^2) = 0,
 $$
 
 and for a general non-scalar idempotent $\tilde\pi = \tfrac{1}{2}(1+\eta)$ with $\eta \in V$ and $\eta^2 = 1$,
@@ -191,18 +191,18 @@ so the whole idempotent family lies on the zero divisor set $\{\tilde q : \tilde
 **Proposition.** The left ideals
 
 $$
-\mathbb{H}_{\mathrm{s}} \tilde\pi_+ = \{\tilde q \tilde\pi_+ : \tilde q \in \mathbb{H}_{\mathrm{s}}\}, \qquad \mathbb{H}_{\mathrm{s}} \tilde\pi_- = \{\tilde q \tilde\pi_- : \tilde q \in \mathbb{H}_{\mathrm{s}}\}
+\mathbb{H}_{\mathrm{s}} \tilde\pi_1 = \{\tilde q \tilde\pi_1 : \tilde q \in \mathbb{H}_{\mathrm{s}}\}, \qquad \mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \{\tilde q \tilde\pi_2 : \tilde q \in \mathbb{H}_{\mathrm{s}}\}
 $$
 
-satisfy $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_+ \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_-$ as left $\mathbb{H}_{\mathrm{s}}$-modules, and each has real dimension $2$ and is a minimal left ideal.
+satisfy $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2$ as left $\mathbb{H}_{\mathrm{s}}$-modules, and each has real dimension $2$ and is a minimal left ideal.
 
-**Proof.** Every $\tilde q$ satisfies $\tilde q = \tilde q(\tilde\pi_+ + \tilde\pi_-) = \tilde q \tilde\pi_+ + \tilde q \tilde\pi_-$, and the intersection of the two ideals is zero because $\tilde\pi_+ \tilde\pi_- = 0$: if $\tilde q \tilde\pi_+ = \tilde p \tilde\pi_-$ then multiplying on the right by $\tilde\pi_+$ gives $\tilde q \tilde\pi_+ = 0$. For the dimension, the reduction $e_3 \tilde\pi_+ = e_1 \tilde\pi_+$ above shows that the four general products $e_\mu \tilde\pi_+$ lie in $\operatorname{span}\{\tilde\pi_+, e_1 \tilde\pi_+\}$, and the two are independent, so $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$ has dimension $2$; the two summands then span $2 + 2 = 4 = \dim_{\mathbb{R}} \mathbb{H}_{\mathrm{s}}$. Minimality is the standard fact that the left ideal generated by a primitive idempotent of a ring is a minimal left ideal (*Rings*), applied to the primitive idempotent $\tilde\pi_+$.
+**Proof.** Every $\tilde q$ satisfies $\tilde q = \tilde q(\tilde\pi_1 + \tilde\pi_2) = \tilde q \tilde\pi_1 + \tilde q \tilde\pi_2$, and the intersection of the two ideals is zero because $\tilde\pi_1 \tilde\pi_2 = 0$: if $\tilde q \tilde\pi_1 = \tilde p \tilde\pi_2$ then multiplying on the right by $\tilde\pi_1$ gives $\tilde q \tilde\pi_1 = 0$. For the dimension, the reduction $e_3 \tilde\pi_1 = e_1 \tilde\pi_1$ above shows that the four general products $e_\mu \tilde\pi_1$ lie in $\operatorname{span}\{\tilde\pi_1, e_1 \tilde\pi_1\}$, and the two are independent, so $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$ has dimension $2$; the two summands then span $2 + 2 = 4 = \dim_{\mathbb{R}} \mathbb{H}_{\mathrm{s}}$. Minimality is the standard fact that the left ideal generated by a primitive idempotent of a ring is a minimal left ideal (*Rings*), applied to the primitive idempotent $\tilde\pi_1$.
 
 **Proposition.** Each minimal left ideal is a two-dimensional real vector space, and the two ideals are isomorphic to one another as left $\mathbb{H}_{\mathrm{s}}$-modules.
 
-**Proof.** Every element of $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$ is uniquely $\alpha \tilde\pi_+ + \beta e_1 \tilde\pi_+$ with $\alpha, \beta \in \mathbb{R}$, so the assignment $\alpha \tilde\pi_+ + \beta e_1 \tilde\pi_+ \mapsto (\alpha, \beta)$ is a bijection onto $\mathbb{R}^2$, exhibiting the ideal as a two-dimensional real vector space. Left multiplication by $\tilde q'$ sends $\tilde q \tilde\pi_+$ to $(\tilde q' \tilde q) \tilde\pi_+$, again an element of $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$, with coordinates linear in $(\alpha, \beta)$; hence it is an isomorphism of left $\mathbb{H}_{\mathrm{s}}$-modules. The same argument applies to $\tilde\pi_-$; since the algebra is simple, all its simple left modules are isomorphic, so the two ideals are isomorphic.
+**Proof.** Every element of $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$ is uniquely $\alpha \tilde\pi_1 + \beta e_1 \tilde\pi_1$ with $\alpha, \beta \in \mathbb{R}$, so the assignment $\alpha \tilde\pi_1 + \beta e_1 \tilde\pi_1 \mapsto (\alpha, \beta)$ is a bijection onto $\mathbb{R}^2$, exhibiting the ideal as a two-dimensional real vector space. Left multiplication by $\tilde q'$ sends $\tilde q \tilde\pi_1$ to $(\tilde q' \tilde q) \tilde\pi_1$, again an element of $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$, with coordinates linear in $(\alpha, \beta)$; hence it is an isomorphism of left $\mathbb{H}_{\mathrm{s}}$-modules. The same argument applies to $\tilde\pi_2$; since the algebra is simple, all its simple left modules are isomorphic, so the two ideals are isomorphic.
 
-The two ideals here are the two minimal left ideals of the projective line of left ideals of *Split-Quaternion Ideals and Peirce Decomposition*, where the Peirce corners and the matrix units are computed. The corresponding right ideals are $\tilde\pi_+ \mathbb{H}_{\mathrm{s}}$ and $\tilde\pi_- \mathbb{H}_{\mathrm{s}}$.
+The two ideals here are the two minimal left ideals of the projective line of left ideals of *Split-Quaternion Ideals and Peirce Decomposition*, where the Peirce corners and the matrix units are computed. The corresponding right ideals are $\tilde\pi_1 \mathbb{H}_{\mathrm{s}}$ and $\tilde\pi_2 \mathbb{H}_{\mathrm{s}}$.
 
 ## The Dimension of the Set of Idempotents
 
@@ -220,19 +220,19 @@ $$
 
 are likewise non-central, but for a different reason: $\mathbb{B}$ is simple, so its only central idempotents are $0$ and $e_0$, and the nontrivial idempotents are obtained from the roots of $-1$ by $\xi \mapsto \tfrac{1}{2}(e_0 + \xi i)$ written with the central unit $i$ of $\mathbb{B}$. The biquaternion idempotents are therefore parametrised by the roots of $-1$, a set of real dimension $4$, whereas the split-quaternion idempotents are parametrised by the roots of $+1$ in $V$, a level set of real dimension $2$.
 
-The algebra in which the idempotents are genuinely **central** is not $\mathbb{B}$ but the eight-dimensional split-biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, whose central split-complex unit $j$ carries the idempotents $e_\pm = \tfrac{1}{2}(1 \pm j)$. Those are central, they commute with every element, and their complementary pair decomposes $\mathbb{H}_{\mathbb{D}}$ as a product of two algebras. Nothing of this kind occurs in $\mathbb{H}_{\mathrm{s}}$: its idempotents are non-central, and the companion article *Split-Quaternion Ideals and Peirce Decomposition* records that the corresponding decomposition is a module decomposition and not an algebra decomposition. The same central-idempotent phenomenon is what the commutative split-complex algebra $\mathbb{D}$ exhibits, and the split-quaternion idempotents $\tilde\pi_\pm$ are precisely the images of the idempotents of $\mathbb{D}$ inside the non-commutative algebra $\mathbb{H}_{\mathrm{s}}$, where they cease to be central.
+The algebra in which the idempotents are genuinely **central** is not $\mathbb{B}$ but the eight-dimensional split-biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, whose central split-complex unit $j$ carries the idempotents $e_\pm = \tfrac{1}{2}(1 \pm j)$. Those are central, they commute with every element, and their complementary pair decomposes $\mathbb{H}_{\mathbb{D}}$ as a product of two algebras. Nothing of this kind occurs in $\mathbb{H}_{\mathrm{s}}$: its idempotents are non-central, and the companion article *Split-Quaternion Ideals and Peirce Decomposition* records that the corresponding decomposition is a module decomposition and not an algebra decomposition. The same central-idempotent phenomenon is what the commutative split-complex algebra $\mathbb{D}$ exhibits, and the split-quaternion idempotents $\tilde\pi_{1,2}$ are precisely the images of the idempotents of $\mathbb{D}$ inside the non-commutative algebra $\mathbb{H}_{\mathrm{s}}$, where they cease to be central.
 
 ## Summary
 
 An idempotent of $\mathbb{H}_{\mathrm{s}}$ is an element $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$. The algebra has the standard orthogonal idempotents
 
 $$
-\tilde\pi_+ = \tfrac{1}{2}(1 + e_2), \qquad \tilde\pi_- = \tfrac{1}{2}(1 - e_2), \qquad \tilde\pi_+ \tilde\pi_- = 0, \qquad \tilde\pi_+ + \tilde\pi_- = 1,
+\tilde\pi_1 = \tfrac{1}{2}(1 + e_2), \qquad \tilde\pi_2 = \tfrac{1}{2}(1 - e_2), \qquad \tilde\pi_1 \tilde\pi_2 = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1,
 $$
 
-which are non-central and primitive, carrying opposite eigenvalues of $e_2$. They give the module decomposition $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_+ \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_-$ into two minimal left ideals, each of real dimension $2$.
+which are non-central and primitive, carrying opposite eigenvalues of $e_2$. They give the module decomposition $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2$ into two minimal left ideals, each of real dimension $2$.
 
-Every idempotent is either trivial ($0$ or $1$) or of the form $\tilde\pi = \tfrac{1}{2}(1 + \eta)$ with $\eta \in V$ and $\eta^2 = 1$, equivalently $N(\eta) = -1$; the map $\eta \mapsto \tfrac{1}{2}(1+\eta)$ is a bijection from the roots of $+1$ in the vector subspace onto the non-scalar idempotents, under which complementary pairs correspond to the classes $\{\eta, -\eta\}$. Every non-scalar idempotent is a zero divisor with $N(\tilde\pi) = 0$, and none is nilpotent. The idempotents and their complements split the underlying module as $\mathbb{H}_{\mathrm{s}} = \tilde\pi\mathbb{H}_{\mathrm{s}} \oplus (1-\tilde\pi)\mathbb{H}_{\mathrm{s}}$, but not as an algebra, because the off-diagonal Peirce corner does not vanish; $\tilde\pi_+ e_3 \tilde\pi_- = \tfrac{1}{2}(e_3 - e_1) \neq 0$. The idempotents of the algebra are exactly the idempotents of its split-complex subalgebras; in particular $\tilde\pi_\pm$ are the idempotents of the subalgebra $\mathbb{D}_2 = \operatorname{span}\{1, e_2\} \cong \mathbb{D}$.
+Every idempotent is either trivial ($0$ or $1$) or of the form $\tilde\pi = \tfrac{1}{2}(1 + \eta)$ with $\eta \in V$ and $\eta^2 = 1$, equivalently $N(\eta) = -1$; the map $\eta \mapsto \tfrac{1}{2}(1+\eta)$ is a bijection from the roots of $+1$ in the vector subspace onto the non-scalar idempotents, under which complementary pairs correspond to the classes $\{\eta, -\eta\}$. Every non-scalar idempotent is a zero divisor with $N(\tilde\pi) = 0$, and none is nilpotent. The idempotents and their complements split the underlying module as $\mathbb{H}_{\mathrm{s}} = \tilde\pi\mathbb{H}_{\mathrm{s}} \oplus (1-\tilde\pi)\mathbb{H}_{\mathrm{s}}$, but not as an algebra, because the off-diagonal Peirce corner does not vanish; $\tilde\pi_1 e_3 \tilde\pi_2 = \tfrac{1}{2}(e_3 - e_1) \neq 0$. The idempotents of the algebra are exactly the idempotents of its split-complex subalgebras; in particular $\tilde\pi_{1,2}$ are the idempotents of the subalgebra $\mathbb{D}_2 = \operatorname{span}\{1, e_2\} \cong \mathbb{D}$.
 
 ## Summary of Notation
 
@@ -240,14 +240,14 @@ Every idempotent is either trivial ($0$ or $1$) or of the form $\tilde\pi = \tfr
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ | *Split-Quaternion Algebra* |
 | $\tilde\pi$ | a general idempotent, $\tilde\pi^2 = \tilde\pi$ | this article |
-| $\tilde\pi_+ = \tfrac{1}{2}(1 + e_2)$, $\tilde\pi_- = \tfrac{1}{2}(1 - e_2)$ | the standard orthogonal idempotents, $\tilde\pi_+ + \tilde\pi_- = 1$ | this article |
+| $\tilde\pi_1 = \tfrac{1}{2}(1 + e_2)$, $\tilde\pi_2 = \tfrac{1}{2}(1 - e_2)$ | the standard orthogonal idempotents, $\tilde\pi_1 + \tilde\pi_2 = 1$ | this article |
 | $\eta$ | a root of $+1$ in $V$, $\eta^2 = 1$, $N(\eta) = -1$ | this article |
 | $\tilde\pi(\eta) = \tfrac{1}{2}(1 + \eta)$ | the idempotent of the root $\eta$; $\eta \mapsto \tilde\pi(\eta)$ is a bijection | this article |
-| $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$, $\tilde\pi_\pm \mathbb{H}_{\mathrm{s}}$ | the minimal left and right ideals, each $\cong \mathbb{R}^2$ | this article |
-| $\tilde\pi_+ \mathbb{H}_{\mathrm{s}} \tilde\pi_-$ | the off-diagonal Peirce corner, nonzero | this article |
+| $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ | the minimal left and right ideals, each $\cong \mathbb{R}^2$ | this article |
+| $\tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_2$ | the off-diagonal Peirce corner, nonzero | this article |
 | $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ | the central product, formed and evaluated algebraically; the metrical reading is in *Split-Quaternion Norm and Invertibility* | this article |
 | $S = \mathbb{R}\cdot 1$, $V = \operatorname{span}\{e_1,e_2,e_3\}$ | the scalar and vector subspaces | *Split-Quaternion Algebra* |
-| $\mathbb{D}_2 = \operatorname{span}\{1, e_2\}$ | the split-complex subalgebra carrying $\tilde\pi_\pm$ | *Split-Quaternion Algebra* |
+| $\mathbb{D}_2 = \operatorname{span}\{1, e_2\}$ | the split-complex subalgebra carrying $\tilde\pi_{1,2}$ | *Split-Quaternion Algebra* |
 | $e_\pm = \tfrac{1}{2}(1 \pm j)$ | the idempotents of the split-complex algebra $\mathbb{D}$ | *Split-Complex Algebra* |
 
 ## Further Reading

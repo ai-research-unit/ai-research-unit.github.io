@@ -65,7 +65,7 @@ $$
 $$
 together with the standard Lorentz brackets for $[M_{\mu\nu},M_{\rho\sigma}]$. These relations were recomputed on two independent polynomial test functions by direct commutator of the vector fields, with no failures.
 
-**Where the generators live.** The six Lorentz generators $J_k=e_k$ and $K_k=ie_k$ are elements of $\mathbb{B}$, and the companion article builds the whole finite-dimensional Lorentz representation theory from them. The other nine generators above are differential operators on the coordinates, not elements of $\mathbb{B}$. This split — six inside the algebra, nine outside — is the theme of the sections that follow; the dilation is a partial exception, expressible by a non-unit biquaternion, and the translations and special conformal transformations are the genuinely external part.
+**Where the generators live.** The remarkable subspaces Lorentz generators $J_k=e_k$ and $K_k=ie_k$ are elements of $\mathbb{B}$, and the companion article builds the whole finite-dimensional Lorentz representation theory from them. The other nine generators above are differential operators on the coordinates, not elements of $\mathbb{B}$. This split — six inside the algebra, nine outside — is the theme of the sections that follow; the dilation is a partial exception, expressible by a non-unit biquaternion, and the translations and special conformal transformations are the genuinely external part.
 
 ### How the Group Entered Physics
 

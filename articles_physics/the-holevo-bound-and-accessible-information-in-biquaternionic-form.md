@@ -195,7 +195,7 @@ Let the ensemble be two orthogonal pure states with equal weights,
 
 $$
 p_0 = p_1 = \tfrac12, \qquad
-\tilde{\rho}_0 = \tilde\Pi_+(\hat{e}_3), \qquad \tilde{\rho}_1 = \tilde\Pi_-(\hat{e}_3) .
+\tilde{\rho}_0 = \tilde\Pi_1(\hat{e}_3), \qquad \tilde{\rho}_1 = \tilde\Pi_2(\hat{e}_3) .
 $$
 
 The average state is $\tilde{\rho}^{\natural} = \tfrac12 e_0$, with Bloch vector $\bar{\mathbf{r}} = 0$ and biquaternion norm $\tfrac14 e_0$, so
@@ -204,7 +204,7 @@ $$
 \chi = S(\tfrac12 e_0) = \log 2 .
 $$
 
-The projective measurement in the basis $\{\tilde\Pi_\pm(\hat{e}_3)\}$ gives $p(y|x) = \delta_{xy}$, a noiseless channel, so $I(X:Y) = \log 2 = H(X)$. The bound is saturated: $I_{\mathrm{acc}} = \chi = \log2$. This is the maximal value for a qubit, and it is attained exactly when the ensemble is an orthogonal decomposition with weights equal to the probabilities of a projective measurement.
+The projective measurement in the basis $\{\tilde\Pi_{1,2}(\hat{e}_3)\}$ gives $p(y|x) = \delta_{xy}$, a noiseless channel, so $I(X:Y) = \log 2 = H(X)$. The bound is saturated: $I_{\mathrm{acc}} = \chi = \log2$. This is the maximal value for a qubit, and it is attained exactly when the ensemble is an orthogonal decomposition with weights equal to the probabilities of a projective measurement.
 
 ### Two non-orthogonal pure states
 

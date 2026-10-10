@@ -21,8 +21,7 @@ slots being indistinguishable.
 The algebraic facts are the closure, the Jordan identity, the positive definiteness of the trace form on
 the sector and its invariance. The mathematics is *The Symmetric and Antisymmetric Parts of an Algebra
 Product* for the splitting, *Introduction to the Symmetric Plain Algebra of Biquaternions* for the
-operation, *The Trace Form and the Invariance of the Symmetric Plain Algebra* for the form, and *The Six
-Subspaces under the Symmetric Plain Algebra of Biquaternions* for the sector structure. The Jordan
+operation, *The Trace Form and the Invariance of the Symmetric Plain Algebra* for the form, and *Remarkable Subspaces under the Symmetric Plain Algebra of Biquaternions* for the sector structure. The Jordan
 algebra itself is *Jordan Algebras*, and its special class is *Special and Exceptional Jordan Algebras*.
 
 The conventions are those of the companion article. The algebra is
@@ -46,7 +45,7 @@ $$
 $$
 
 The result holds for every pair, and the operation restricted to the sector is an operation **of** the
-sector. Verified on $100$ random pairs. This is the closure cell of *The Six Subspaces under the Symmetric
+sector. Verified on $100$ random pairs. This is the closure cell of *Remarkable Subspaces under the Symmetric
 Plain Algebra of Biquaternions*.
 
 **Proposition.** The material sector $\mathbb{M}_-$ is **not** closed under the symmetrised plain product,
@@ -116,9 +115,9 @@ and the positivity condition $h_0^{2}+(\mathbf{h},\mathbf{h})\geq\lvert 2h_0\rve
 is the identity $(h_0^{2}-(\mathbf{h},\mathbf{h}))^{2}\geq0$.
 
 *Proof.* The spectral form of a Hermitian element is
-$\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ with $\lambda_\pm=h_0\pm\lvert\mathbf{h}\rvert$ real
-and $\tilde\Pi_\pm$ orthogonal idempotents of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational
-Sector*; squaring gives $\tilde Q^{2}=\lambda_+^{2}\tilde\Pi_++\lambda_-^{2}\tilde\Pi_-$, a combination of
+$\tilde Q=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with $\lambda_\pm=h_0\pm\lvert\mathbf{h}\rvert$ real
+and $\tilde\Pi_{1,2}$ orthogonal idempotents of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational
+Sector*; squaring gives $\tilde Q^{2}=\lambda_+^{2}\tilde\Pi_1+\lambda_-^{2}\tilde\Pi_2$, a combination of
 the same idempotents with non-negative coefficients, hence positive. The coordinate display and the
 inequality were recomputed.
 
@@ -326,7 +325,7 @@ are the closure, the positivity and the invariance, and none of the three readin
   one.
 - Mathematics article *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the form,
   its symmetry, its non-degeneracy and its invariance.
-- Mathematics article *The Six Subspaces under the Symmetric Plain Algebra of Biquaternions*, for the
+- Mathematics article *Remarkable Subspaces under the Symmetric Plain Algebra of Biquaternions*, for the
   closure of the sector and the failure of closure of the others.
 - Mathematics article *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain
   Algebra*, for the square, the polarisation and the Jordan inverse.

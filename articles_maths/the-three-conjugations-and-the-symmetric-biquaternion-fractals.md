@@ -4,9 +4,9 @@
 
 The biquaternion algebra carries four conjugations, and the quadratic map is equivariant under three of them — the fourth relates the even family to the odd one — so each of the three that fixes the parameter is a symmetry of the corresponding Julia set. This gives a family of symmetric fractals, one for each subgroup of the group of involutions that can occur as a stabiliser, and it organises the pictures of the subject by their symmetry rather than by their coordinates. Two further symmetries are present at every parameter: the central inversion, because the square of an element is unchanged when the element is negated, and the identity, and the two together with the conjugations form the full symmetry group the elementary theory detects.
 
-The four conjugations, their fixed subspaces and the involution group are *The Group of Involutions*; the six distinguished subspaces are *Introduction to the Six Subspaces*; the quadratic family and the equivariance theorem are *The Biquaternion Quadratic Map and Its Julia Sets*; the slices are *The Slices of the Biquaternion Julia Sets*; the quaternion and complex fractal pictures are *The Quaternion Quadratic Map and Its Julia Sets* and *The Julia Sets of a Complex Polynomial*.
+The four conjugations, their fixed subspaces and the involution group are *The Group of Involutions*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*; the quadratic family and the equivariance theorem are *The Biquaternion Quadratic Map and Its Julia Sets*; the slices are *The Slices of the Biquaternion Julia Sets*; the quaternion and complex fractal pictures are *The Quaternion Quadratic Map and Its Julia Sets* and *The Julia Sets of a Complex Polynomial*.
 
-The article owns the three conjugations used for symmetry (the fourth is excluded, with the reason), the equivariance restated for the group, the classification of the stabiliser and the resulting symmetric families, the extra central inversion, and the identification of the symmetry subspaces with the distinguished subspaces. It does not re-derive the conjugations or the equivariance.
+The article owns the three conjugations used for symmetry (the fourth is excluded, with the reason), the equivariance restated for the group, the classification of the stabiliser and the resulting symmetric families, the extra central inversion, and the identification of the symmetry subspaces with the remarkable subspaces. It does not re-derive the conjugations or the equivariance.
 
 **Standing convention.** ${}^{\natural}$ is quaternion conjugation, $\bar{\cdot}$ complex conjugation, ${}^{*}$ Hermitian conjugation and $\flat$ anti-Hermitian conjugation, so that ${}^{*}={}^{\natural}\bar{\cdot}$, $\flat=-{}^{*}$, and the four maps form the group of involutions $G=\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$. $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$.
 
@@ -48,7 +48,7 @@ where $\mathrm{id}$ acts as the identity and $-\mathrm{id}$ as $\tilde Q\mapsto-
 4. $\{\mathrm{id},{}^{*}\}$, when $\tilde C$ is a non-central element fixed by Hermitian conjugation, that is $\tilde C\in\mathbb{M}_+$ with $\tilde C\notin\mathbb{C}e_0$.
 5. $\{\mathrm{id}\}$, otherwise.
 
-**Proof.** The fixed subspace of ${}^{\natural}$ is the centre, of $\bar{\cdot}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and of ${}^{*}$ the Hermitian sector $\mathbb{M}_+$ (*The Group of Involutions*, *Introduction to the Six Subspaces*). An element fixed by a set of involutions lies in the intersection of their fixed subspaces; the intersections are $\mathbb{C}e_0\cap\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_0$, $\mathbb{C}e_0$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{B}$, for the five cases, and the real central elements are exactly the real multiples of $e_0$.
+**Proof.** The fixed subspace of ${}^{\natural}$ is the centre, of $\bar{\cdot}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and of ${}^{*}$ the Hermitian sector $\mathbb{M}_+$ (*The Group of Involutions*, *Introduction to the Remarkable Subspaces*). An element fixed by a set of involutions lies in the intersection of their fixed subspaces; the intersections are $\mathbb{C}e_0\cap\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_0$, $\mathbb{C}e_0$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{B}$, for the five cases, and the real central elements are exactly the real multiples of $e_0$.
 
 **Theorem (the even symmetry).** For every parameter, $\mathcal K_{\tilde C}$ and $J_{\tilde C}$ are invariant under $\tilde Q\mapsto-\tilde Q$, and the full symmetry group of the two sets contains $\Gamma_{\tilde C}$.
 
@@ -66,7 +66,7 @@ according as the parameter is a real central element, a non-real central element
 
 **Proof.** Immediate from the two theorems above; the orders are those of the products.
 
-**Remark (the names are the fixed subspaces).** The five families are named by the symmetry subspace that contains the parameter, and each family is symmetric about the distinguished subspaces of the algebra: the real central fractals about the centre, the quaternion subspace, the Hermitian sector and the vector part; the central fractals about the centre; the quaternion-symmetric fractals about the quaternion subspace; the Hermitian-symmetric ones about the Hermitian sector. **The symmetry axes of the biquaternion fractals are the six distinguished subspaces**, and the classification above is the statement that the parameter lies on the intersection of the axes it preserves.
+**Remark (the names are the fixed subspaces).** The five families are named by the symmetry subspace that contains the parameter, and each family is symmetric about the remarkable subspaces of the algebra: the real central fractals about the centre, the quaternion subspace, the Hermitian sector and the vector part; the central fractals about the centre; the quaternion-symmetric fractals about the quaternion subspace; the Hermitian-symmetric ones about the Hermitian sector. **The symmetry axes of the biquaternion fractals are the remarkable subspaces**, and the classification above is the statement that the parameter lies on the intersection of the axes it preserves.
 
 ## The Central Slice and the Mirror
 
@@ -90,7 +90,7 @@ So the Julia set of the complex quadratic map and that of its conjugate paramete
 
 ## Summary
 
-The quadratic map is equivariant under three of the four conjugations, and the fourth is excluded because it is an anti-automorphism only up to sign and relates the even family to the odd one. The conjugations that fix the parameter form the stabiliser, a subgroup of the Klein group, and with the central inversion — present at every parameter because the square is even — they generate the symmetry group of the Julia set. The stabiliser is the full group for a real central parameter, the subgroup $\{\mathrm{id},{}^{\natural}\}$ for a non-real central parameter, $\{\mathrm{id},\bar{\cdot}\}$ for a non-central real quaternion, $\{\mathrm{id},{}^{*}\}$ for a non-central Hermitian element, and the trivial group otherwise; the five cases are the five symmetric families, with the symmetry axes the six distinguished subspaces. On the central slice, complex conjugation acts as the mirror carrying $J_C$ to $J_{\bar C}$, so a non-real central parameter shows its Julia set without its mirror. Every biquaternion Julia set is antipodally symmetric, and the quaternion picture is a slice of these symmetries.
+The quadratic map is equivariant under three of the four conjugations, and the fourth is excluded because it is an anti-automorphism only up to sign and relates the even family to the odd one. The conjugations that fix the parameter form the stabiliser, a subgroup of the Klein group, and with the central inversion — present at every parameter because the square is even — they generate the symmetry group of the Julia set. The stabiliser is the full group for a real central parameter, the subgroup $\{\mathrm{id},{}^{\natural}\}$ for a non-real central parameter, $\{\mathrm{id},\bar{\cdot}\}$ for a non-central real quaternion, $\{\mathrm{id},{}^{*}\}$ for a non-central Hermitian element, and the trivial group otherwise; the five cases are the five symmetric families, with the symmetry axes the remarkable subspaces. On the central slice, complex conjugation acts as the mirror carrying $J_C$ to $J_{\bar C}$, so a non-real central parameter shows its Julia set without its mirror. Every biquaternion Julia set is antipodally symmetric, and the quaternion picture is a slice of these symmetries.
 
 ## Summary of Notation
 
@@ -100,7 +100,7 @@ The quadratic map is equivariant under three of the four conjugations, and the f
 | $G=\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ | the group of involutions |
 | $G_{\tilde C}$ | the stabiliser of the parameter |
 | $\Gamma_{\tilde C}=G_{\tilde C}\times\{\pm\mathrm{id}\}$ | the even symmetry group |
-| $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the six distinguished subspaces |
+| $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable subspaces |
 | $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ | the quadratic family |
 | $J_{\tilde C}$, $\mathcal K_{\tilde C}$ | the Julia set and the filled Julia set |
 
@@ -110,4 +110,4 @@ The quadratic map is equivariant under three of the four conjugations, and the f
 - *The Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.md`), for the equivariance theorem and the central-parameter reduction.
 - *The Slices of the Biquaternion Julia Sets* (`articles_maths/the-slices-of-the-biquaternion-julia-sets.md`), for the central, real and quaternion slices whose symmetries are read here.
 - *The Quaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-quaternion-quadratic-map-and-its-julia-sets.md`), for the quaternion pictures and their classical symmetries.
-- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the distinguished subspaces that are the symmetry axes.
+- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces that are the symmetry axes.

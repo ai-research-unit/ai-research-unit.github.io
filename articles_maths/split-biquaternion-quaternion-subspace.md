@@ -115,7 +115,7 @@ Among the four distinguished subspaces, the quaternion subspace is the one on wh
 
 **Proof.** The split-biquaternion norm is positive definite, so $N(\tilde{Q}) = 0$ only at the origin; the inverse formula is the standard quaternion inverse and is verified directly.
 
-The **idempotents** of the subspace are the solutions of $\tilde{Q}^2 = \tilde{Q}$. Since the subspace is a division algebra, the only idempotents are $0$ and $1$: they are the trivial idempotents, and they lie in the centre. The four idempotents of $\mathbb{H}_{\mathbb{D}}$ are $0, \tilde\Pi_+, \tilde\Pi_-, 1$, and the two nontrivial ones lie in the split complex subspace, not here.
+The **idempotents** of the subspace are the solutions of $\tilde{Q}^2 = \tilde{Q}$. Since the subspace is a division algebra, the only idempotents are $0$ and $1$: they are the trivial idempotents, and they lie in the centre. The four idempotents of $\mathbb{H}_{\mathbb{D}}$ are $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and the two nontrivial ones lie in the split complex subspace, not here.
 
 ## The Image in the Two Halves
 

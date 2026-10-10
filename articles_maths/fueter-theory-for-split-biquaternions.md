@@ -38,7 +38,7 @@ The factorization makes $\tilde{\nabla}$ a square root of the Laplacian: with $\
 The two conditions differ because the algebra is noncommutative; left-regular functions are stable under right multiplication by quaternion constants and right-regular functions under left multiplication, neither being stable on the other side in general. On the full algebra the operator is the idempotent-split pair of quaternion operators, so a function is regular if and only if both of its idempotent components are regular:
 
 $$
-\tilde{\nabla}\tilde{F} = \left(\tilde{\nabla}\tilde{F}_+\right)\tilde\Pi_+ + \left(\tilde{\nabla}\tilde{F}_-\right)\tilde\Pi_- = 0 \iff \tilde{\nabla}\tilde{F}_+ = \tilde{\nabla}\tilde{F}_- = 0 .
+\tilde{\nabla}\tilde{F} = \left(\tilde{\nabla}\tilde{F}_+\right)\tilde\Pi_1 + \left(\tilde{\nabla}\tilde{F}_-\right)\tilde\Pi_2 = 0 \iff \tilde{\nabla}\tilde{F}_+ = \tilde{\nabla}\tilde{F}_- = 0 .
 $$
 
 ### The Componentwise System
@@ -143,7 +143,7 @@ For real Taylor coefficients, term-by-term application of $\Delta_4$ gives the i
 
 On the quaternion subspace the theory is the classical one with split biquaternion coefficients, because the subspace is a division algebra: $N(\tilde{Q}) = \sum_\mu q_\mu^2$ is positive definite, so every nonzero element is invertible and the fundamental solution $\tilde{G} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is regular off the origin. This is the definite case of the firmest kind: the Cauchy theory there has a single singularity, the origin.
 
-On the full algebra the coefficient ring is the split complex algebra $\mathbb{D}$ rather than the complex field, and this changes the geometry of the singular set without changing the equations. The zero divisors are the union $Z = \mathbb{H}\tilde\Pi_+ \cup \mathbb{H}\tilde\Pi_-$ of the two four-dimensional ideals, so the singular set of the naive inverse is a union of two linear subspaces rather than the quadric hypersurface of the biquaternion case. In particular the Fueter operator is elliptic over the real coordinates of a four-dimensional subspace, but the pointwise inversion of $\tilde{Q}$ fails on $Z$, and a domain for the Cauchy theory of the full algebra must avoid $Z$, not merely the origin. On the indefinite subspaces the second-order operator is the wave operator of signature $(3,1)$ or $(1,3)$, so the axial coefficients satisfy a wave-type system rather than a Laplace system; the null cone of the relevant real form is the characteristic set.
+On the full algebra the coefficient ring is the split complex algebra $\mathbb{D}$ rather than the complex field, and this changes the geometry of the singular set without changing the equations. The zero divisors are the union $Z = \mathbb{H}\tilde\Pi_1 \cup \mathbb{H}\tilde\Pi_2$ of the two four-dimensional ideals, so the singular set of the naive inverse is a union of two linear subspaces rather than the quadric hypersurface of the biquaternion case. In particular the Fueter operator is elliptic over the real coordinates of a four-dimensional subspace, but the pointwise inversion of $\tilde{Q}$ fails on $Z$, and a domain for the Cauchy theory of the full algebra must avoid $Z$, not merely the origin. On the indefinite subspaces the second-order operator is the wave operator of signature $(3,1)$ or $(1,3)$, so the axial coefficients satisfy a wave-type system rather than a Laplace system; the null cone of the relevant real form is the characteristic set.
 
 ## The Relation to the Biquaternion and Split Quaternion Theories
 
@@ -170,7 +170,7 @@ The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ and its conjug
 | $I$, $\mathbb{C}_I = \mathbb{R}+I\mathbb{R}$ | Imaginary unit, $I^2 = -1$; slice |
 | $A, B$ | Axial coefficients, $\tilde{F} = A(q_0,\rho) + \hat{\mathbf{q}}B(q_0,\rho)$ |
 | $\tilde{f}_0$, $\Delta_4\tilde{f}_0$ | Axial extension of $f_0$ and its Fueter-induced function |
-| $Z = \mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_-$ | Zero divisor locus of the full algebra |
+| $Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$ | Zero divisor locus of the full algebra |
 | $\mathrm{Cl}_{0,n}$, $\mathrm{Cl}_{0,3}^{+}$ | Clifford algebras; $\mathbb{H}$ is $\mathrm{Cl}_{0,3}^{+}$ |
 
 ## Further Reading

@@ -8,7 +8,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3 = \sum_{\mu = 0}^{3} Q_\mu e_\mu, \qquad Q_\mu \in \mathbb{C},
 $$
 
-which identifies $\mathbb{B}$ with the coordinate space $\mathbb{C}^4$. The realization supplies a space and no action: the action is the $4 \times 4$ matrix of left multiplication in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* and the $2 \times 2$ matrices of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. This article treats the coefficient space, the column and the dual row, the component form of the product, the four conjugations in coordinates, the six distinguished subspaces as coordinate conditions, and the biquaternion norm with its two real restrictions.
+which identifies $\mathbb{B}$ with the coordinate space $\mathbb{C}^4$. The realization supplies a space and no action: the action is the $4 \times 4$ matrix of left multiplication in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* and the $2 \times 2$ matrices of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. This article treats the coefficient space, the column and the dual row, the component form of the product, the four conjugations in coordinates, the remarkable subspaces as coordinate conditions, and the biquaternion norm with its two real restrictions.
 
 The conventions are those of *Conventions in the Biquaternion Universe*, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, the scalar imaginary $i$ commutes with every unit, and the conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{*}$. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The physical dictionary writes a general element as a material coordinate plus an informational coordinate,
 
@@ -49,7 +49,7 @@ $$
 \mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}
 $$
 
-is the real-and-imaginary split of the coefficients read coordinate by coordinate. The other four distinguished subspaces mix the real and imaginary parts, because the involutions that define them combine with the scalar imaginary in different ways; they are tabulated below.
+is the real-and-imaginary split of the coefficients read coordinate by coordinate. The other four remarkable subspaces mix the real and imaginary parts, because the involutions that define them combine with the scalar imaginary in different ways; they are tabulated below.
 
 The biquaternion norm does not decompose over these eight real coordinates. Its real part is $\sum_\mu \big( (q^\mu)^2 - ({q'}^\mu)^2 \big)$ and its imaginary part is $2\sum_\mu q^\mu {q'}^\mu$, both real quadratic forms in eight variables, and the positive-definite form $\sum_\mu \big( (q^\mu)^2 + ({q'}^\mu)^2 \big)$ is the squared Euclidean length of the quadruple. That last form is the Hermitian form $\sum_\mu |Q^\mu|^2$ of the algebra, and it is a different object from the biquaternion norm: the biquaternion norm is general plain bilinear and can vanish on a nonzero element, while the Hermitian form is positive definite.
 
@@ -186,11 +186,11 @@ and each is an involution. The Hermitian part $\tfrac12(\tilde{Q} + \tilde{Q}^{*
 
 **Consequences for the physical coordinates.** The conjugation rules are the coordinate form of the statement that the material coordinates are the imaginary part of the quadruple and the informational ones its real part. Quaternion conjugation keeps the material scalar and negates the material vector; complex conjugation conjugates every coefficient and so exchanges the role of informational and material in each slot; Hermitian conjugation does both, and its fixed quadruples are exactly those with a real scalar component and purely imaginary vector components, the informational four-vectors. The anti-fixed quadruples of ${}^{*}$ are the material four-vectors, and this is the sense in which $\flat$ is the real structure of the framework.
 
-## The Six Distinguished Subspaces
+## Remarkable Subspaces
 
-Each involution cuts out a fixed subspace and an anti-fixed subspace, and the three involutions together produce six real subspaces of $\mathbb{B}$.
+Each involution cuts out a fixed subspace and an anti-fixed subspace, and the three involutions together produce the remarkable real subspaces of $\mathbb{B}$.
 
-Each of the six is displayed below as a chain of three quadruples: in the complex coefficients $Q^0, Q^1, Q^2, Q^3$; in the real parameters $q_\mu, q'_\mu$ of the split $Q_\mu = q_\mu + iq'_\mu$; and in the physical coordinates. The dictionary from the real parameters to the physical names is one and the same for all six,
+Each of the remarkable subspaces is displayed below as a chain of three quadruples: in the complex coefficients $Q^0, Q^1, Q^2, Q^3$; in the real parameters $q_\mu, q'_\mu$ of the split $Q_\mu = q_\mu + iq'_\mu$; and in the physical coordinates. The dictionary from the real parameters to the physical names is one and the same for all six,
 
 $$
 q_0 = ct', \quad q'_0 = ct, \quad q_1 = x, \quad q_2 = y, \quad q_3 = z, \quad q'_1 = x', \quad q'_2 = y', \quad q'_3 = z' ,
@@ -198,7 +198,7 @@ $$
 
 the unprimed slot carrying the informational time $ct'$ and the material space $\mathbf{x}$, the primed slot the material time $ct$ and the informational space $\mathbf{x}'$.
 
-**Definition.** The six **distinguished subspaces** are
+**Definition.** The **remarkable subspaces** are
 
 $$
 \mathbb{C}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^{\natural} = \tilde{Q}\}, \qquad \mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : \tilde{Q}^{\natural} = -\tilde{Q}\},
@@ -212,7 +212,7 @@ $$
 \mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}, \qquad \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{\flat} = \tilde{Q}\}.
 $$
 
-**Proposition (coordinate conditions).** In terms of the four-vector $Q^\mu$ the six subspaces are characterized as follows.
+**Proposition (coordinate conditions).** In terms of the four-vector $Q^\mu$ the remarkable subspaces are characterized as follows.
 
 | Subspace | Coordinate condition | Algebraic name | Physical name | real dim |
 |---|---|---|---|---|
@@ -245,7 +245,7 @@ with $Q_0 = q_0 + iq'_0$, $q_0 = ct'$ and $q'_0 = ct$, and the biquaternion norm
 
 ### The Vector Subspace $\mathrm{Vect}(\mathbb{B})$
 
-Six-real-dimensional and purely spatial, the only one of the six that is not four- or two-dimensional. The scalar coefficient vanishes and each of the three vector coefficients is one material spatial coordinate together with one informational coordinate:
+Six-real-dimensional and purely spatial, the only one of the remarkable subspaces that is not four- or two-dimensional. The scalar coefficient vanishes and each of the three vector coefficients is one material spatial coordinate together with one informational coordinate:
 
 $$
 \tilde{Q} = Q_1e_1 + Q_2e_2 + Q_3e_3 \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (0,\ Q_1,\ Q_2,\ Q_3) = (0,\ q_1 + iq'_1,\ q_2 + iq'_2,\ q_3 + iq'_3) = (0,\ x + ix',\ y + iy',\ z + iz'),
@@ -427,7 +427,7 @@ The four complex coordinates are read as a **spacetime event carrying an interna
 
 The four-vector representation reads a biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ as its quadruple of complex coefficients $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$, with $Q^0 = Q_0$ the scalar component and $(Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3)$ the vector components. It is a $\mathbb{C}$-linear isomorphism onto $\mathbb{C}^4$, of complex dimension four and real dimension eight, and it supplies the space on which the regular operator of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* is written. Physically, each complex coefficient carries one material and one informational coordinate: $Q^0 = ct' + ict$ and $Q^k = x_k + ix'_k$, so that the material four-vector is the quadruple $(ict, x, y, z)$ with a purely imaginary scalar entry, that is $Q^0 = iq'_0$ with $q'_0 = ct$.
 
-The product in components has scalar part $Q^0R^0 - \sum_k Q^kR^k$ and vector part $Q^0R^i + R^0Q^i + \sum_{j,k}\epsilon^{ijk}Q^jR^k$, and the Levi-Civita term is the only trace of non-commutativity; the commutator is twice the cross product of the vector parts and lies in the complex space sector. The three involutions ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ act by negating the vector components, conjugating every component, and doing both, and the six distinguished subspaces are the resulting coordinate conditions: the informational sector is the quadruples with real scalar component and purely imaginary vector components, the material sector the transpose of that condition. The biquaternion norm is $\sum_\mu (Q^\mu)^2$, with all four signs positive on $\mathbb{C}^4$ because each quaternion unit squares to $-e_0$ and the cross terms cancel; it restricts to signature $(3,1)$ on the material sector, where it is the Minkowski interval $-c^2t^2 + \mathbf{x}^2$, and to signature $(1,3)$ on the informational sector, and it vanishes exactly on the zero divisors, which are the light cone.
+The product in components has scalar part $Q^0R^0 - \sum_k Q^kR^k$ and vector part $Q^0R^i + R^0Q^i + \sum_{j,k}\epsilon^{ijk}Q^jR^k$, and the Levi-Civita term is the only trace of non-commutativity; the commutator is twice the cross product of the vector parts and lies in the complex space sector. The three involutions ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ act by negating the vector components, conjugating every component, and doing both, and the remarkable subspaces are the resulting coordinate conditions: the informational sector is the quadruples with real scalar component and purely imaginary vector components, the material sector the transpose of that condition. The biquaternion norm is $\sum_\mu (Q^\mu)^2$, with all four signs positive on $\mathbb{C}^4$ because each quaternion unit squares to $-e_0$ and the cross terms cancel; it restricts to signature $(3,1)$ on the material sector, where it is the Minkowski interval $-c^2t^2 + \mathbf{x}^2$, and to signature $(1,3)$ on the informational sector, and it vanishes exactly on the zero divisors, which are the light cone.
 
 The four-vectors of relativistic physics are the material elements: the four-position with biquaternion norm the interval, the four-velocity with biquaternion norm the constant $-c^2$, the four-momentum with biquaternion norm $-m^2c^2$ on the mass shell, the four-current and four-potential with their respective biquaternion norms, and the gradient, whose biquaternion norm is the d'Alembertian $\Box = \partial_{ict}^2 + \Delta$. The index on $Q^\mu$ is never raised or lowered, because the coefficient space carries no metric of its own; the $ict$ convention carries the metric in the coefficient, and the explicit metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ is the level-2 form used when a contraction is written out.
 
@@ -445,7 +445,7 @@ The four-vectors of relativistic physics are the material elements: the four-pos
 | $\mathsf{M}_4^{L}(\tilde{Q})$, $\mathsf{M}_4^{R}(\tilde{Q})$ | Matrices of left and right multiplication, constructed in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; $\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}^{\natural})$ |
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |
 | $\tilde{Q}^{\natural}, \tilde{Q}^{*}, \tilde{Q}^{*}, \tilde{Q}^{\flat} = -\tilde{Q}^{*}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugation |
-| $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The six distinguished subspaces; coordinate conditions in the table above |
+| $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The remarkable subspaces; coordinate conditions in the table above |
 | $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | The biquaternion norm, the diagonal of the general quaternionic bilinear form and multiplicative; Gram matrix $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}^4$, signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$ |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | The inverse in coordinates |
 | $c$, $c_0$ | Speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and its vacuum value |

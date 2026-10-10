@@ -31,8 +31,8 @@ its physical content.
 
 The algebra carries three other products, each read in its own block and compared in *The Four General Products and Their Physical Readings*; this article needs the
 ordinary one alone. The properties of $B$ — its symmetry, its non-degeneracy, its Gram matrix and its
-restriction to the six distinguished subspaces — are the mathematics of *The Four Pairings of the
-Biquaternion Algebra* and *The Six Subspaces under the General Plain Algebra of Biquaternions*, and are cited rather than
+restriction to the remarkable subspaces — are the mathematics of *The Four Pairings of the
+Biquaternion Algebra* and *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, and are cited rather than
 proved.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$,
@@ -184,9 +184,9 @@ like elements carries no imaginary part, and an imaginary part is the mark of a 
 operation with an informational state.** *Verified on $100$ random pairs, max deviation
 $8.9\times10^{-16}$.*
 
-## The Sector Sign on the Six Subspaces
+## The Sector Sign on the Remarkable Subspaces
 
-Besides the two sectors the algebra carries four other distinguished real subspaces, and $B$ has a
+Besides the two sectors the algebra carries four other remarkable real subspaces, and $B$ has a
 different signature on two of them. On the **centre** $\mathbb{C}_{\mathbb{B}}$ and the **vector
 subspace** $\mathrm{Vect}(\mathbb{B})$, which are complex lines in each coordinate, the pairing of a real
 direction with its imaginary companion is purely imaginary, and it is the real part of the form that is
@@ -397,9 +397,9 @@ distinctions are labelled throughout: what is proved is the algebra, what is pro
 - Mathematics article *The Four Pairings of the Biquaternion Algebra*
   (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms, their Gram
   matrices and their signatures.
-- Mathematics article *The Six Subspaces under the General Plain Algebra of Biquaternions*
-  (`articles_maths/the-six-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), for the restriction of $B$ to
-  the six subspaces.
+- Mathematics article *Remarkable Subspaces under the General Plain Algebra of Biquaternions*
+  (`articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), for the restriction of $B$ to
+  the remarkable subspaces.
 - Mathematics article *Biquaternion Ideals and Peirce Decomposition*
   (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the decomposition a reference
   projection induces.

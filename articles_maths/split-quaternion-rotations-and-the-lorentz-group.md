@@ -211,7 +211,7 @@ The adjoint action on the distinguished subspaces is as follows.
 | a line $\mathbb{R} v \subset V$ | a line $\mathbb{R}\,\Theta(g)v$ | yes as a class | the sign of $N(v)$ is preserved |
 | $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | a conjugate split-complex plane | only if $g$ normalises it | automorphisms permute the split-complex planes |
 | $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | a conjugate split-complex plane | only if $g$ normalises it | as above |
-| $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$ | a minimal left ideal | only if $g$ normalises it | idempotents map to idempotents |
+| $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$ | a minimal left ideal | only if $g$ normalises it | idempotents map to idempotents |
 
 The first three rows are the content of the preceding sections. The remaining rows record that an automorphism sends a subalgebra to a subalgebra of the same isomorphism type: the split-complex planes are permuted among their conjugates, since the split Cartan subalgebras of $M_2(\mathbb{R})$ are conjugate, and a unit normalises a given plane exactly when it preserves the pair of isotropic lines of that plane. The idempotents form a single orbit-like set under the automorphism group and the minimal left ideals are permuted accordingly; this is developed alongside the idempotent theory in *Split-Quaternion Ideals and Peirce Decomposition*.
 

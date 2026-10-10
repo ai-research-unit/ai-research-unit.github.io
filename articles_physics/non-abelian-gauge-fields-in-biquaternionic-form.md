@@ -134,7 +134,7 @@ $$
 
 This is the adjoint transformation law, and it is the central statement of the article.
 
-**$F$ is not gauge invariant.** Taking the trace of the transformation law, $\mathrm{Tr}(F'_{\mu\nu}) = \mathrm{Tr}(F_{\mu\nu})$, so the *trace* of each component is invariant; but the component itself is rotated by $U$ and changes. This was verified on all six independent components $(0,1),(0,2),(0,3),(1,2),(1,3),(2,3)$ on a generic non-commuting connection: the residual of $F'_{\mu\nu} = UF_{\mu\nu}U^{-1}$ was of order $10^{-11}$, while the change $F'_{\mu\nu} - F_{\mu\nu}$ was of order unity for every component. Two of the six, the spatial pair $(1,3)$ and the mixed pair $(0,1)$, are quoted here precisely because the abelian habit is strongest on the spatial pairs, where the commutator term vanishes and one might expect invariance by analogy with the curl:
+**$F$ is not gauge invariant.** Taking the trace of the transformation law, $\mathrm{Tr}(F'_{\mu\nu}) = \mathrm{Tr}(F_{\mu\nu})$, so the *trace* of each component is invariant; but the component itself is rotated by $U$ and changes. This was verified on all six independent components $(0,1),(0,2),(0,3),(1,2),(1,3),(2,3)$ on a generic non-commuting connection: the residual of $F'_{\mu\nu} = UF_{\mu\nu}U^{-1}$ was of order $10^{-11}$, while the change $F'_{\mu\nu} - F_{\mu\nu}$ was of order unity for every component. Two of the remarkable subspaces, the spatial pair $(1,3)$ and the mixed pair $(0,1)$, are quoted here precisely because the abelian habit is strongest on the spatial pairs, where the commutator term vanishes and one might expect invariance by analogy with the curl:
 
 $$
 F'_{13} \neq F_{13}, \qquad F'_{01} \neq F_{01},

@@ -141,7 +141,7 @@ which blows up as the denominator tends to zero, and the limit depends on the di
 
 The idempotents of the algebra give coordinates in which the algebraic operations become explicit, and they turn the calculus into a coordinatewise calculus.
 
-**Definition.** With $\tilde\pi_{\pm} = \tfrac12(1 \pm e_2)$, the **Peirce coordinates** of $\tilde q$ are
+**Definition.** With $\tilde\pi_{1,2} = \tfrac12(1 \pm e_2)$, the **Peirce coordinates** of $\tilde q$ are
 
 $$
 \tilde q = \sum_{\epsilon,\eta \in \{+,-\}} \tilde\pi_\epsilon\, \tilde q\, \tilde\pi_\eta,
@@ -152,7 +152,7 @@ and the four components $\tilde\pi_\epsilon \tilde q \tilde\pi_\eta$ are one-dim
 **Theorem (The Peirce Coordinates Are the Matrix Entries of the Adapted Model).** The map
 
 $$
-\tilde q \longmapsto \big(\tilde\pi_+\tilde q\tilde\pi_+,\ \tilde\pi_+\tilde q\tilde\pi_-,\ \tilde\pi_-\tilde q\tilde\pi_+,\ \tilde\pi_-\tilde q\tilde\pi_-\big)
+\tilde q \longmapsto \big(\tilde\pi_1\tilde q\tilde\pi_1,\ \tilde\pi_1\tilde q\tilde\pi_2,\ \tilde\pi_2\tilde q\tilde\pi_1,\ \tilde\pi_2\tilde q\tilde\pi_2\big)
 $$
 
 is a linear isomorphism of $\mathbb{H}_{\mathrm{s}}$ with the four lines, and the components multiply as the matrix units: for any $\tilde q, \tilde p$,
@@ -166,7 +166,7 @@ and, when $\eta = \eta'$, the product is $\tilde\pi_\epsilon (\tilde q \tilde\pi
 Written in the basis $1, e_1, e_2, e_3$, the four components of $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ are
 
 $$
-\tilde\pi_+\tilde q\tilde\pi_+ = (q_0+q_2)\,\tilde\pi_+, \qquad \tilde\pi_-\tilde q\tilde\pi_- = (q_0-q_2)\,\tilde\pi_-, \qquad \tilde\pi_+\tilde q\tilde\pi_- = \tfrac{q_1-q_3}{2}(e_1-e_3), \qquad \tilde\pi_-\tilde q\tilde\pi_+ = \tfrac{q_1+q_3}{2}(e_1+e_3).
+\tilde\pi_1\tilde q\tilde\pi_1 = (q_0+q_2)\,\tilde\pi_1, \qquad \tilde\pi_2\tilde q\tilde\pi_2 = (q_0-q_2)\,\tilde\pi_2, \qquad \tilde\pi_1\tilde q\tilde\pi_2 = \tfrac{q_1-q_3}{2}(e_1-e_3), \qquad \tilde\pi_2\tilde q\tilde\pi_1 = \tfrac{q_1+q_3}{2}(e_1+e_3).
 $$
 
 The Peirce coordinates of an element are the four numbers
@@ -175,9 +175,9 @@ $$
 (q_0+q_2,\ q_0-q_2,\ q_1-q_3,\ q_1+q_3),
 $$
 
-which are the two eigenvalues of the diagonal projections, $\tilde\pi_+\tilde q\tilde\pi_+ = (q_0+q_2)\tilde\pi_+$ and $\tilde\pi_-\tilde q\tilde\pi_- = (q_0-q_2)\tilde\pi_-$, together with the two off-diagonal corner coefficients $q_1-q_3$ and $q_1+q_3$; they are a linear change of the standard coordinates $(q_0,q_1,q_2,q_3)$.
+which are the two eigenvalues of the diagonal projections, $\tilde\pi_1\tilde q\tilde\pi_1 = (q_0+q_2)\tilde\pi_1$ and $\tilde\pi_2\tilde q\tilde\pi_2 = (q_0-q_2)\tilde\pi_2$, together with the two off-diagonal corner coefficients $q_1-q_3$ and $q_1+q_3$; they are a linear change of the standard coordinates $(q_0,q_1,q_2,q_3)$.
 
-**Proof.** The decomposition of the identity $1 = \tilde\pi_+ + \tilde\pi_-$ with $\tilde\pi_+\tilde\pi_- = \tilde\pi_-\tilde\pi_+ = 0$ gives the direct sum, and the dimension count gives one dimension per Peirce space; the vanishing of the mixed products is $\tilde\pi_\eta \tilde\pi_{\eta'} = 0$ for $\eta \neq \eta'$. The displayed components are read off the multiplication table: $\tilde\pi_+\tilde\pi_+ = \tilde\pi_+$, $\tilde\pi_\pm e_2 \tilde\pi_\pm = \pm \tilde\pi_\pm$, $\tilde\pi_+e_1\tilde\pi_+ = \tilde\pi_+e_3\tilde\pi_+ = \tilde\pi_-e_1\tilde\pi_- = \tilde\pi_-e_3\tilde\pi_- = 0$, $\tilde\pi_+e_1\tilde\pi_- = \tfrac12(e_1-e_3)$, $\tilde\pi_+e_3\tilde\pi_- = -\tfrac12(e_1-e_3)$, $\tilde\pi_-e_1\tilde\pi_+ = \tilde\pi_-e_3\tilde\pi_+ = \tfrac12(e_1+e_3)$. The Peirce coordinates are read off the multiplication table, and they are a linear change of the standard coordinates.
+**Proof.** The decomposition of the identity $1 = \tilde\pi_1 + \tilde\pi_2$ with $\tilde\pi_1\tilde\pi_2 = \tilde\pi_2\tilde\pi_1 = 0$ gives the direct sum, and the dimension count gives one dimension per Peirce space; the vanishing of the mixed products is $\tilde\pi_\eta \tilde\pi_{\eta'} = 0$ for $\eta \neq \eta'$. The displayed components are read off the multiplication table: $\tilde\pi_1\tilde\pi_1 = \tilde\pi_1$, $\tilde\pi_{1,2} e_2 \tilde\pi_{1,2} = \pm \tilde\pi_{1,2}$, $\tilde\pi_1e_1\tilde\pi_1 = \tilde\pi_1e_3\tilde\pi_1 = \tilde\pi_2e_1\tilde\pi_2 = \tilde\pi_2e_3\tilde\pi_2 = 0$, $\tilde\pi_1e_1\tilde\pi_2 = \tfrac12(e_1-e_3)$, $\tilde\pi_1e_3\tilde\pi_2 = -\tfrac12(e_1-e_3)$, $\tilde\pi_2e_1\tilde\pi_1 = \tilde\pi_2e_3\tilde\pi_1 = \tfrac12(e_1+e_3)$. The Peirce coordinates are read off the multiplication table, and they are a linear change of the standard coordinates.
 
 **Corollary (Partial Derivatives and Smoothness).** A function $f$ of the split-quaternion variable is smooth in the sense of this article exactly when its four Peirce components are smooth functions of the four Peirce coordinates; the partial derivatives with respect to the Peirce coordinates are the components of the derivative, and every operator of the preceding section is a first-order operator with constant coefficients in these coordinates.
 

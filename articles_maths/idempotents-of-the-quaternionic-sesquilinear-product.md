@@ -130,7 +130,7 @@ since $\xi$ is a unit pure quaternion and $(\xi,\xi) = 1$. The element is nonzer
 The sibling general plain sesquilinear product $\tilde P\tilde Q^{*}$ is the derived operation of the algebra with its star conjugation (*Introduction to the General Plain Sesqualgebra of Biquaternions*). Its idempotents are exactly the Hermitian idempotents of the algebra,
 
 $$
-\tilde\Pi_+(\hat\mu) = \tfrac12\bigl(e_0 + i\hat\mu\bigr) , \qquad \hat\mu \in \mathbb{R}^{3} , \quad \lvert\hat\mu\rvert = 1 ,
+\tilde\Pi_1(\hat\mu) = \tfrac12\bigl(e_0 + i\hat\mu\bigr) , \qquad \hat\mu \in \mathbb{R}^{3} , \quad \lvert\hat\mu\rvert = 1 ,
 $$
 
 the pure states of *Biquaternion Idempotents and Projections*.
@@ -138,7 +138,7 @@ the pure states of *Biquaternion Idempotents and Projections*.
 **Proposition.** Every nontrivial idempotent of the sibling sesquilinear product is isotropic for this multiplication,
 
 $$
-\tilde\Pi_+(\hat\mu) \star \tilde\Pi_+(\hat\mu) = 0 .
+\tilde\Pi_1(\hat\mu) \star \tilde\Pi_1(\hat\mu) = 0 .
 $$
 
 **Proof.** Let $\tilde H = \tfrac12(e_0 + i\hat\mu)$ with $\hat\mu$ a real unit vector; it is Hermitian, $\tilde H^{*} = \tilde H$, and its coordinates are $H_0 = \tfrac12$, $H_k = \tfrac{i}{2}\hat\mu_k$. Its norm is $N(\tilde H) = \tfrac14 - \tfrac14\sum_k\hat\mu_k^{2} = 0$, as for the plain product. For a Hermitian element $\overline{\tilde H} = \tilde H^{\natural}$, and the square of the multiplication is $(\overline{\tilde H}\tilde H)^{\natural}$ up to the identity of the next article of this group, *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*; here the direct computation is closed: $\tilde H \star \tilde H = \tilde H^{\natural}\tilde H^{*} = \tilde H^{\natural}\tilde H = N(\tilde H)e_0 = 0$, the $\natural$-product of an element with its conjugate being the central scalar $N(\tilde H)e_0$ (*Introduction to the General Quaternionic Algebra of Biquaternions* §*The Square and the Elements It Distinguishes*). $\square$
@@ -254,7 +254,7 @@ and each non-trivial idempotent has norm $1$, so that it is a unit of the algebr
 | $\hat\mu = \mu / \lvert\mu\rvert$ | the real unit direction |
 | $N(\tilde\Pi(\mu)) = 1$ | every nontrivial idempotent is a unit |
 | $\tilde\Pi(\mu)^{-1} = \tilde\Pi(\mu)^{\natural} = -\tfrac12 e_0 - \mu$ | the inverse of a nontrivial idempotent |
-| $\tilde\Pi_+(\hat\mu) = \tfrac12(e_0 + i\hat\mu)$ | the idempotents of the sibling sesquilinear product, isotropic here |
+| $\tilde\Pi_1(\hat\mu) = \tfrac12(e_0 + i\hat\mu)$ | the idempotents of the sibling sesquilinear product, isotropic here |
 | $\rho$ | the rotation of the vector subspace induced by conjugation by a unit quaternion |
 
 ## Further Reading

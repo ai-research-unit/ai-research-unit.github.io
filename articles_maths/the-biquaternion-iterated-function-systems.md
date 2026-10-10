@@ -4,7 +4,7 @@
 
 An iterated function system on a complete metric space is a finite family of contractions, and its attractor is the unique non-empty compact set invariant under the family. In the biquaternion algebra the linear part of an affine map can multiply on the left, on the right, or on both sides, because the algebra is not commutative, so the biquaternion iterated function systems form three nested families and the contraction condition is read from the operator norms of left and right multiplication rather than from the biquaternion norm. The subject is the constructive half of the category: where the quadratic dynamics is not contracting and its fractal is defined as a boundary, an iterated function system is contracting by hypothesis and its fractal is defined as an invariant set, and the two meet in the inverse branches of the square.
 
-The algebra and the four general products are *Introduction to the General Plain Algebra of Biquaternions* and *The Four General Products of the Biquaternion $\mathbb{C}$ Space*; the conjugations and their fixed subspaces are *The Group of Involutions*; the norm comparison is *The Matrix Representation and the Biquaternion Dynamics*; the zero divisors are *The Zero Divisors and the Singular Julia Sets*; the classical theory of the systems, the open set condition and the similarity dimension are *Fractal Geometry* of Part IV.
+The algebra and the four general products are *Introduction to the General Plain Algebra of Biquaternions* and *The Four General Products of the Biquaternion $\mathbb{C}$ Space*; the conjugations and their fixed subspaces are *The Group of Involutions*; the norm comparison is *The Matrix Element Representation and the Biquaternion Dynamics*; the zero divisors are *The Zero Divisors and the Singular Julia Sets*; the classical theory of the systems, the open set condition and the similarity dimension are *Fractal Geometry* of Part IV.
 
 The article owns the three kinds of affine map, the contraction criterion, the attractor theorem, the similarity case with real quaternionic multipliers, the inverse-branch system of the quadratic map and the degeneracy of the square root at the cone. It does not re-derive the classical theory and does not treat the dimension of the quadratic fractal, which is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
 
@@ -30,7 +30,7 @@ The three families are nested; a left-affine map is two-sided with $\tilde C=e_0
 
 **Proposition (the Lipschitz constant).** The map $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is Lipschitz with constant $\|L_{\tilde A}\|$, and $\|L_{\tilde A}\|\le\sqrt2\,\|\tilde A\|_E$. It is a contraction exactly when $\|L_{\tilde A}\|<1$.
 
-**Proof.** $\|f(\tilde P)-f(\tilde Q)\|_E=\|\tilde A(\tilde P-\tilde Q)\|_E\le\|L_{\tilde A}\|\|\tilde P-\tilde Q\|_E$ by definition of the operator norm, and the estimate $\|L_{\tilde A}\|\le\sqrt2\|\tilde A\|_E$ is the norm comparison of *The Matrix Representation and the Biquaternion Dynamics*.
+**Proof.** $\|f(\tilde P)-f(\tilde Q)\|_E=\|\tilde A(\tilde P-\tilde Q)\|_E\le\|L_{\tilde A}\|\|\tilde P-\tilde Q\|_E$ by definition of the operator norm, and the estimate $\|L_{\tilde A}\|\le\sqrt2\|\tilde A\|_E$ is the norm comparison of *The Matrix Element Representation and the Biquaternion Dynamics*.
 
 **Theorem (the similarity multipliers).** Let $\tilde A$ be a real quaternion of positive norm, $\tilde A\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde A)=\rho^2$ with $\rho>0$. Then left multiplication by $\tilde A$ is a similarity of the eight-dimensional space with ratio $\rho$,
 
@@ -109,7 +109,7 @@ The affine maps of the biquaternion algebra are of three kinds, left-affine, rig
 ## Further Reading
 
 - *Fractal Geometry* (`articles_maths/fractal-geometry.md`) and *Iterated Function Systems in the Complex Plane* (`articles_maths/iterated-function-systems-in-the-complex-plane.md`), for the attractor theorem, the open set condition and the similarity dimension used here.
-- *The Matrix Representation and the Biquaternion Dynamics* (`articles_maths/the-matrix-representation-and-the-biquaternion-dynamics.md`), for the norm comparison that gives the Lipschitz bound.
+- *The Matrix Element Representation and the Biquaternion Dynamics* (`articles_maths/the-matrix-element-representation-and-the-biquaternion-dynamics.md`), for the norm comparison that gives the Lipschitz bound.
 - *Biquaternion Square Roots of a General Element* (`articles_maths/biquaternion-square-roots-of-a-general-element.md`), for the square root and its branches.
 - *The Zero Divisors and the Singular Julia Sets* (`articles_maths/the-zero-divisors-and-the-singular-julia-sets.md`), for the cone on which the branches collapse.
 - *The Hausdorff Dimension of the Biquaternion Julia Sets* (`articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.md`), for the dimension of the quadratic fractal as against the systems.

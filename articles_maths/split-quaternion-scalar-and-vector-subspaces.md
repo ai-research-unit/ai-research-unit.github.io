@@ -156,10 +156,10 @@ So each split-complex subalgebra meets $S$ in the scalar line and $V$ in a singl
 
 ### The Minimal Ideals
 
-The minimal left ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$ and the minimal right ideals $\tilde\pi_\pm \mathbb{H}_{\mathrm{s}}$ each meet $S$ and $V$:
+The minimal left ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$ and the minimal right ideals $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ each meet $S$ and $V$:
 
 $$
-\mathbb{H}_{\mathrm{s}} \tilde\pi_+ \cap S = \{0\}, \qquad \mathbb{H}_{\mathrm{s}} \tilde\pi_+ \cap V = \mathbb{R} e_1 \tilde\pi_+ = \mathbb{R}\cdot\tfrac{1}{2}(e_1 + e_3),
+\mathbb{H}_{\mathrm{s}} \tilde\pi_1 \cap S = \{0\}, \qquad \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \cap V = \mathbb{R} e_1 \tilde\pi_1 = \mathbb{R}\cdot\tfrac{1}{2}(e_1 + e_3),
 $$
 
 and similarly for the other three ideals. The full intersections are in *Split-Quaternion Relations Between Subspaces*.

@@ -14,7 +14,7 @@ Throughout, $c$ denotes the speed of light in the medium, and the biquaternion a
 
 ## The Three Subspaces of $\mathbb{B}$
 
-The biquaternion algebra $\mathbb{B}$ is cut into six distinguished real subspaces: the two-dimensional centre $\mathbb{C}_{\mathbb{B}}$, the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$, and the four four-dimensional ones — the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the informational sector $\mathbb{M}_+$ and the material sector $\mathbb{M}_-$. Three of the four-dimensional subspaces are involved in the Wick rotation and are recalled here. All three are real vector spaces of dimension 4, and all three are subspaces of the same algebra.
+The biquaternion algebra $\mathbb{B}$ is cut into remarkable real subspaces: the two-dimensional centre $\mathbb{C}_{\mathbb{B}}$, the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$, and the four four-dimensional ones — the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the informational sector $\mathbb{M}_+$ and the material sector $\mathbb{M}_-$. Three of the four-dimensional subspaces are involved in the Wick rotation and are recalled here. All three are real vector spaces of dimension 4, and all three are subspaces of the same algebra.
 
 **The quaternion subspace $\mathbb{H}_{\mathbb{B}}$.** An element has the form
 

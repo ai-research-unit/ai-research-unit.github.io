@@ -7,7 +7,7 @@ This article collects explicit computations in the split-quaternion algebra $\ma
 
 The article is a companion to the structural articles of the category. Its purpose is to put the abstract statements on concrete elements, so that the reader can carry each of them back to a computation. It introduces no new result; the statements it illustrates are those of *Split-Quaternion Algebra*, *Split-Quaternion Idempotents and Projections*, *Split-Quaternion Zero Divisors*, *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Rotations and the Lorentz Group*.
 
-**Conventions.** A split-quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_0, q_1, q_2, q_3 \in \mathbb{R}$ and the products $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$. Its conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and its central product is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$, formed and evaluated algebraically and read metrically in *Split-Quaternion Norm and Invertibility*. The elements $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$ are the standard idempotents.
+**Conventions.** A split-quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_0, q_1, q_2, q_3 \in \mathbb{R}$ and the products $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$. Its conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and its central product is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$, formed and evaluated algebraically and read metrically in *Split-Quaternion Norm and Invertibility*. The elements $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm e_2)$ are the standard idempotents.
 
 ## The Basis Products
 
@@ -93,33 +93,33 @@ on which the sign pair $(\alpha, \rho)$ is $(+,+)$, $(-,+)$ and $(+,-)$ respecti
 
 ## The Idempotents and the Two Minimal Left Ideals
 
-**Example (the standard idempotents).** With $\tilde\pi_+ = \tfrac{1}{2}(1 + e_2)$ and $\tilde\pi_- = \tfrac{1}{2}(1 - e_2)$,
+**Example (the standard idempotents).** With $\tilde\pi_1 = \tfrac{1}{2}(1 + e_2)$ and $\tilde\pi_2 = \tfrac{1}{2}(1 - e_2)$,
 
 $$
-\tilde\pi_+^2 = \tfrac{1}{4}(1 + 2e_2 + e_2^2) = \tfrac{1}{4}(2 + 2e_2) = \tilde\pi_+,
+\tilde\pi_1^2 = \tfrac{1}{4}(1 + 2e_2 + e_2^2) = \tfrac{1}{4}(2 + 2e_2) = \tilde\pi_1,
 $$
 
-and $\tilde\pi_-^2 = \tilde\pi_-$ likewise. Moreover
+and $\tilde\pi_2^2 = \tilde\pi_2$ likewise. Moreover
 
 $$
-\tilde\pi_+ \tilde\pi_- = \tfrac{1}{4}(1 - e_2^2) = 0, \qquad \tilde\pi_+ + \tilde\pi_- = 1, \qquad N(\tilde\pi_+) = N(\tilde\pi_-) = 0 .
+\tilde\pi_1 \tilde\pi_2 = \tfrac{1}{4}(1 - e_2^2) = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1, \qquad N(\tilde\pi_1) = N(\tilde\pi_2) = 0 .
 $$
 
-They are not central, since $e_1 \tilde\pi_+ = \tfrac{1}{2}(e_1 + e_3)$ while $\tilde\pi_+ e_1 = \tfrac{1}{2}(e_1 - e_3)$.
+They are not central, since $e_1 \tilde\pi_1 = \tfrac{1}{2}(e_1 + e_3)$ while $\tilde\pi_1 e_1 = \tfrac{1}{2}(e_1 - e_3)$.
 
-**Example (the two minimal left ideals).** The reductions $e_2 \tilde\pi_+ = \tilde\pi_+$ and $e_3 \tilde\pi_+ = \tfrac{1}{2}(e_3 + e_1) = e_1 \tilde\pi_+$ give
-
-$$
-\mathbb{H}_{\mathrm{s}} \tilde\pi_+ = \operatorname{span}\{\tilde\pi_+, e_1 \tilde\pi_+\} = \operatorname{span}\big\{\tfrac{1}{2}(1 + e_2),\, \tfrac{1}{2}(e_1 + e_3)\big\},
-$$
+**Example (the two minimal left ideals).** The reductions $e_2 \tilde\pi_1 = \tilde\pi_1$ and $e_3 \tilde\pi_1 = \tfrac{1}{2}(e_3 + e_1) = e_1 \tilde\pi_1$ give
 
 $$
-\mathbb{H}_{\mathrm{s}} \tilde\pi_- = \operatorname{span}\{\tilde\pi_-, e_1 \tilde\pi_-\} = \operatorname{span}\big\{\tfrac{1}{2}(1 - e_2),\, \tfrac{1}{2}(e_1 - e_3)\big\},
+\mathbb{H}_{\mathrm{s}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, e_1 \tilde\pi_1\} = \operatorname{span}\big\{\tfrac{1}{2}(1 + e_2),\, \tfrac{1}{2}(e_1 + e_3)\big\},
 $$
 
-each of real dimension $2$, with $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_+ \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_-$. The four spanning elements are the vectors $\tilde\pi_+$, $\tilde p = \tfrac{1}{2}(e_1+e_3)$, $\tilde\pi_-$, $-\tilde q = \tfrac{1}{2}(e_1-e_3)$ of the matrix-unit basis $\{\tilde\pi_+, \tilde q, \tilde p, \tilde\pi_-\}$ of *Split-Quaternion Ideals and Peirce Decomposition*.
+$$
+\mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, e_1 \tilde\pi_2\} = \operatorname{span}\big\{\tfrac{1}{2}(1 - e_2),\, \tfrac{1}{2}(e_1 - e_3)\big\},
+$$
 
-**Example (the split-complex subalgebra).** The idempotents lie in the subalgebra $\operatorname{span}\{1, e_2\} \cong \mathbb{D}$, and in that commutative algebra they are central; in $\mathbb{H}_{\mathrm{s}}$ they are not, and the decomposition they give is a decomposition of modules and not of algebras, because $\tilde\pi_+ e_3 \tilde\pi_- = \tfrac{1}{2}(e_3 - e_1) \neq 0$.
+each of real dimension $2$, with $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2$. The four spanning elements are the vectors $\tilde\pi_1$, $\tilde p = \tfrac{1}{2}(e_1+e_3)$, $\tilde\pi_2$, $-\tilde q = \tfrac{1}{2}(e_1-e_3)$ of the matrix-unit basis $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ of *Split-Quaternion Ideals and Peirce Decomposition*.
+
+**Example (the split-complex subalgebra).** The idempotents lie in the subalgebra $\operatorname{span}\{1, e_2\} \cong \mathbb{D}$, and in that commutative algebra they are central; in $\mathbb{H}_{\mathrm{s}}$ they are not, and the decomposition they give is a decomposition of modules and not of algebras, because $\tilde\pi_1 e_3 \tilde\pi_2 = \tfrac{1}{2}(e_3 - e_1) \neq 0$.
 
 ## Explicit Zero-Divisor Pairs
 
@@ -141,10 +141,10 @@ so $e_1 + e_3$ is a nonzero nilpotent and the pair $(e_1+e_3, e_1+e_3)$ is a zer
 
 Every nilpotent lies in the vector subspace $V$ and on the level set $N = 0$, $q_1^2 = q_2^2 + q_3^2$; the element $1 + e_2$ shows that the zero divisor set is strictly larger than the nilpotent set, since $(1+e_2)^2 = 2(1+e_2) \neq 0$.
 
-**Example (a mixed pair).** The idempotent $\tilde\pi_-$ annihilates $1 + e_2$:
+**Example (a mixed pair).** The idempotent $\tilde\pi_2$ annihilates $1 + e_2$:
 
 $$
-(1 + e_2) \tilde\pi_- = 2 \tilde\pi_+ \tilde\pi_- = 0,
+(1 + e_2) \tilde\pi_2 = 2 \tilde\pi_1 \tilde\pi_2 = 0,
 $$
 
 a pair in which neither factor is a nilpotent.
@@ -176,7 +176,7 @@ The action of a unit on the vector subspace by conjugation, the elliptic and hyp
 
 The basis products are collected in one table, and the multiplication table determines the algebra. The three involutions — conjugation, the principal involution $\alpha$ and the reversal $\rho$ — are diagonalisable; their individual eigenspaces and their common refinement $\mathbb{R}\cdot 1 \oplus \operatorname{span}\{e_1,e_2\} \oplus \mathbb{R} e_3$ are listed, and the plane $\operatorname{span}\{e_1,e_2\}$ does not split further.
 
-The idempotents $\tilde\pi_\pm$ are verified to be orthogonal, complete and of zero norm, and they give the two minimal left ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm = \operatorname{span}\{\tilde\pi_\pm, e_1 \tilde\pi_\pm\}$. Explicit zero-divisor pairs are $(1+e_2)(1-e_2) = 0$, $(1+e_3)(1-e_3) = 0$, the nilpotent $(e_1+e_3)^2 = 0$, and the mixed pair $(1+e_2)\tilde\pi_- = 0$. The unit criterion is carried through on four elements: $2+e_1$ (positive norm), $1+e_1+e_2$ (norm one), $e_2$ (negative norm), and the non-unit $1+e_3$ (zero norm). The action of the unit group on the vector subspace is not worked here; it is the subject of *Split-Quaternion Rotations and the Lorentz Group*.
+The idempotents $\tilde\pi_{1,2}$ are verified to be orthogonal, complete and of zero norm, and they give the two minimal left ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2} = \operatorname{span}\{\tilde\pi_{1,2}, e_1 \tilde\pi_{1,2}\}$. Explicit zero-divisor pairs are $(1+e_2)(1-e_2) = 0$, $(1+e_3)(1-e_3) = 0$, the nilpotent $(e_1+e_3)^2 = 0$, and the mixed pair $(1+e_2)\tilde\pi_2 = 0$. The unit criterion is carried through on four elements: $2+e_1$ (positive norm), $1+e_1+e_2$ (norm one), $e_2$ (negative norm), and the non-unit $1+e_3$ (zero norm). The action of the unit group on the vector subspace is not worked here; it is the subject of *Split-Quaternion Rotations and the Lorentz Group*.
 
 ## Summary of Notation
 
@@ -185,8 +185,8 @@ The idempotents $\tilde\pi_\pm$ are verified to be orthogonal, complete and of z
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | a general split-quaternion | *Split-Quaternion Algebra* |
 | ${}^{\natural}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Algebra* |
-| $\tilde\pi_\pm = \tfrac{1}{2}(1\pm e_2)$ | the standard idempotents | *Split-Quaternion Idempotents and Projections* |
-| $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$ | the two minimal left ideals | *Split-Quaternion Idempotents and Projections* |
+| $\tilde\pi_{1,2} = \tfrac{1}{2}(1\pm e_2)$ | the standard idempotents | *Split-Quaternion Idempotents and Projections* |
+| $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$ | the two minimal left ideals | *Split-Quaternion Idempotents and Projections* |
 | $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ | the central product, formed and evaluated algebraically | *Split-Quaternion Algebra* |
 | $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ | the inverse of a unit | *Split-Quaternion Norm and Invertibility* |
 

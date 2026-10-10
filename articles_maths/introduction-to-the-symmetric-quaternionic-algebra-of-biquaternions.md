@@ -19,7 +19,7 @@ restate either: it takes the operation as given, names it $\star$, and reads it 
 named structure, the **symmetric quaternionic algebra** $\mathrm{SQA}$, whose row in the catalogue is
 *The 12 Products of the Biquaternion Complex Space*. The five companion articles of the
 block read the same operation through the form it carries (*The Quaternion Form as a Product on the Symmetric
-Quaternionic Algebra*), on the six distinguished subspaces (*The Six Subspaces under the Symmetric
+Quaternionic Algebra*), on the remarkable subspaces (*Remarkable Subspaces under the Symmetric
 Quaternionic Algebra of Biquaternions*), through its multiplication operators (*The Multiplication Operators
 of the Symmetric Quaternionic Algebra*), and in the two matrix models (*The Symmetric Quaternionic Algebra in
 the Matrix Representations*).
@@ -32,7 +32,7 @@ algebra it makes is far from the associative one and far from a Jordan one. The 
 verb *collapse* are the two threads: the operation collapses the whole algebra onto its central line.
 
 **Boundaries.** The product $\tilde P^{\natural}\tilde Q$ and the four general products are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, their comparison is *Comparison Between the Four General Products*, their relations are
-*Relations Between the Four General Products*; the six subspaces are *Introduction to the Six Subspaces*;
+*Relations Between the Four General Products*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*;
 the norm and the isotropy are *Biquaternion Norm and Invertibility* and *Biquaternion Zero Divisors*; the Jordan
 theory is *Jordan Algebras*; the general splitting is the two parts articles. Nothing of the enriched layer of Part II is used here.
 
@@ -200,7 +200,7 @@ $\square$
 exactly the **isotropic** elements $N(\tilde Q)=0$, that is the zero divisors of *Biquaternion Zero
 Divisors*. The cone is the affine cone over the quadric
 $\{[Q_0:Q_1:Q_2:Q_3]:\sum_\mu Q_\mu^2=0\}$ of $\mathbb{P}^3(\mathbb{C})$, of complex dimension $2$ in the
-projective space and $3$ in the algebra. Its study on the six subspaces is *The Six Subspaces under the
+projective space and $3$ in the algebra. Its study on the remarkable subspaces is *Remarkable Subspaces under the
 Symmetric Quaternionic Algebra of Biquaternions*, and the elements of the cone with a vanishing scalar part are the
 pure zero divisors.
 

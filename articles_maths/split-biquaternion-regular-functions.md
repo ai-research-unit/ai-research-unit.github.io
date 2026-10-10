@@ -34,7 +34,7 @@ $$
 On the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ this is the quaternion Cauchy–Riemann operator of Fueter's theory; on the full algebra it acts coefficientwise, and on the idempotent decomposition it splits as
 
 $$
-\tilde{\nabla}\tilde{F} = \left(\tilde{\nabla}\tilde{F}_+\right)\tilde\Pi_+ + \left(\tilde{\nabla}\tilde{F}_-\right)\tilde\Pi_- ,
+\tilde{\nabla}\tilde{F} = \left(\tilde{\nabla}\tilde{F}_+\right)\tilde\Pi_1 + \left(\tilde{\nabla}\tilde{F}_-\right)\tilde\Pi_2 ,
 $$
 
 where on the right $\tilde{\nabla}$ is the quaternion operator acting on each idempotent component.
@@ -103,7 +103,7 @@ The converse fails: $Q_0$ is harmonic but $\tilde{\nabla}Q_0 = e_0 \neq 0$. On t
 
 In the complex theory the variable ranges over a field and every nonzero element is invertible; in the split biquaternion algebra this fails, and every failure of the complex analogy on the full algebra is traceable to the zero divisors.
 
-**The inverse is local.** The naive quotient $\tilde{A}/\tilde{Q} = \tilde{A}\tilde{Q}^{\natural}N(\tilde{Q})^{-1}$ requires $N(\tilde{Q})$ to be a unit of $\mathbb{D}$, that is requires $\tilde{Q}$ to lie off the zero divisor locus $Z = \mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_-$, the union of the two four-dimensional ideals. On $Z$ there is no inverse and no difference quotient, and since $Z$ has dimension four rather than being a hypersurface, the naive definition of differentiability with respect to the variable fails on a positive-dimensional set. This is the reason the standard definition of regularity uses four real variables rather than one algebra variable, exactly as in the biquaternion case.
+**The inverse is local.** The naive quotient $\tilde{A}/\tilde{Q} = \tilde{A}\tilde{Q}^{\natural}N(\tilde{Q})^{-1}$ requires $N(\tilde{Q})$ to be a unit of $\mathbb{D}$, that is requires $\tilde{Q}$ to lie off the zero divisor locus $Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$, the union of the two four-dimensional ideals. On $Z$ there is no inverse and no difference quotient, and since $Z$ has dimension four rather than being a hypersurface, the naive definition of differentiability with respect to the variable fails on a positive-dimensional set. This is the reason the standard definition of regularity uses four real variables rather than one algebra variable, exactly as in the biquaternion case.
 
 **The kernel is local.** The Cauchy kernel $\tilde{G} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is defined off the origin, but its regularity rests on the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|_E^2 e_0$ which holds only where the coefficients are real. On the full algebra, where $N(\tilde{Q})$ is split complex, the corresponding homogeneous kernel is $\tilde{Q}^{\natural}N(\tilde{Q})^{-1}$ up to a power, and it is undefined on the zero divisor locus; on an indefinite subspace it is not a fundamental solution, and the characteristic set of the operator is the null cone there.
 
@@ -134,7 +134,7 @@ The split biquaternion Cauchy–Riemann operator $\tilde{\nabla} = \sum_\mu e_\m
 | $\tilde{\nabla}\tilde{F} = 0$ | Left-regular (monogenic) condition |
 | $\tilde{G} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Cauchy kernel on the quaternion subspace |
 | $\|\tilde{Q}\|_E^2 = \sum_\mu(q_\mu^2+q'^2_\mu)$ | Euclidean norm squared |
-| $Z = \mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_-$ | Zero divisor locus |
+| $Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$ | Zero divisor locus |
 | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Quaternion subspace, a division algebra |
 
 ## Further Reading

@@ -15,7 +15,7 @@ $$
 \mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3 ,
 $$
 
-the **quaternion subspace** (*Introduction to the Six Subspaces* §*The Quaternion Subspace*). Its elements are the real quaternions: the four coefficients are real, and the subspace is the fixed space of complex conjugation, $\bar{\tilde P} = \tilde P$ if and only if $\tilde P \in \mathbb{H}_{\mathbb{B}}$. On it the natural conjugation acts as the quaternion conjugate, $h^{\natural} = \bar h$, which fixes the real line alone; the fixed set of ${}^{\natural}$ on the whole algebra is the centre, not the subspace.
+the **quaternion subspace** (*Introduction to the Remarkable Subspaces* §*The Quaternion Subspace*). Its elements are the real quaternions: the four coefficients are real, and the subspace is the fixed space of complex conjugation, $\bar{\tilde P} = \tilde P$ if and only if $\tilde P \in \mathbb{H}_{\mathbb{B}}$. On it the natural conjugation acts as the quaternion conjugate, $h^{\natural} = \bar h$, which fixes the real line alone; the fixed set of ${}^{\natural}$ on the whole algebra is the centre, not the subspace.
 
 The article establishes four things. First, the subspace is closed under the product, and the restriction is the familiar operation of putting the first factor into its quaternion conjugate,
 
@@ -39,7 +39,7 @@ where $\bar h$ is the quaternion conjugate of $h$.
 
 **Corollary (the subspace is a real algebra with a left unit only).** $\mathbb{H}_{\mathbb{B}}$ is a four-dimensional real algebra under $\star$, with $e_0$ as a left unit, $e_0\star g = g$, and no right unit, $h\star e_0 = \bar h$, which differs from $h$ as soon as the vector part of $h$ is nonzero. In particular the subspace is closed under $\star$ but is not the quaternion algebra: the element $h = i$ gives $i\star e_0 = -i$ whereas $i e_0 = i$.
 
-**Remark (the source of the restriction).** All four general products of the chapter restrict to the quaternion subspace (*The Six Subspaces and the Four General Products*): on real quaternions they read $hg$, $\bar hg$, $h\bar g$ and $\bar h\bar g = \overline{gh}$. The three non-associative ones are the three isotopes of the quaternion algebra by the three nontrivial maps among the identity and the two conjugations, and only the first is associative. The product of this group is the one with the conjugation in the first slot, and its restriction $\bar hg$ is the isotope by the quaternion conjugation. The isotope reading was introduced for the whole algebra in *Introduction to the General Quaternionic Algebra of Biquaternions* and used in the first three articles of this group; here it is the only reading, the twisting map being an involution of the algebra.
+**Remark (the source of the restriction).** All four general products of the chapter restrict to the quaternion subspace (*Remarkable Subspaces and the Four General Products*): on real quaternions they read $hg$, $\bar hg$, $h\bar g$ and $\bar h\bar g = \overline{gh}$. The three non-associative ones are the three isotopes of the quaternion algebra by the three nontrivial maps among the identity and the two conjugations, and only the first is associative. The product of this group is the one with the conjugation in the first slot, and its restriction $\bar hg$ is the isotope by the quaternion conjugation. The isotope reading was introduced for the whole algebra in *Introduction to the General Quaternionic Algebra of Biquaternions* and used in the first three articles of this group; here it is the only reading, the twisting map being an involution of the algebra.
 
 ## The Two Smaller Real Subspaces
 
@@ -135,9 +135,9 @@ $$
 h\circ g = \tfrac12\bigl(\bar h g + \bar g h\bigr) = \langle h,g\rangle\,e_0 ,
 $$
 
-the definite inner product placed on the real line, a commutative operation with no vector part. It is not a Jordan algebra: at $h = g = e_1$ its two sides in the Jordan identity are $e_0$ and $0$, which is the failure computed for the whole algebra in *The Symmetrised Quaternionic Product and the Hermitian Subspace* and recorded for the subspace in *The Six Subspaces and the Four General Products*.
+the definite inner product placed on the real line, a commutative operation with no vector part. It is not a Jordan algebra: at $h = g = e_1$ its two sides in the Jordan identity are $e_0$ and $0$, which is the failure computed for the whole algebra in *The Symmetrised Quaternionic Product and the Hermitian Subspace* and recorded for the subspace in *Remarkable Subspaces and the Four General Products*.
 
-**Not a Lie algebra.** The antisymmetrisation $[h,g]_{\star} = \bar hg-\bar gh$ stays inside the subspace, but it fails the Jacobi identity; at the triple $(e_0,e_1,e_2)$ the cyclic sum of the three brackets is a nonzero multiple of $e_3$ (*The Six Subspaces and the Four General Products*, and *The 12 Products of the Biquaternion Complex Space* for the whole algebra).
+**Not a Lie algebra.** The antisymmetrisation $[h,g]_{\star} = \bar hg-\bar gh$ stays inside the subspace, but it fails the Jacobi identity; at the triple $(e_0,e_1,e_2)$ the cyclic sum of the three brackets is a nonzero multiple of $e_3$ (*Remarkable Subspaces and the Four General Products*, and *The 12 Products of the Biquaternion Complex Space* for the whole algebra).
 
 **What it is.** The restricted product is the isotope of the quaternion division algebra by its conjugation: closed, with a left unit and no right one, non-associative, with the classical positive element theory of the division algebra, and with the opposite quaternion algebra as the monoid of its left multiplications. It is the classical picture of the batch, and the article that follows reads the same product in the matrix model.
 

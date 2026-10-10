@@ -8,22 +8,22 @@ operation is the coefficient $B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$
 (*Introduction to the Symmetric Quaternionic Algebra of Biquaternions*). This article reads the coefficient
 as the **form that the block carries**: it identifies it, computes its Gram matrix and its rank, its
 realification and its signature, its invariance under the product and the failure of that invariance, its
-restriction to the six distinguished subspaces, and its relation to the Hermitian form $H$ of the algebra.
+restriction to the remarkable subspaces, and its relation to the Hermitian form $H$ of the algebra.
 
 The form $B$ is the quaternion form named in the catalogue *The 12 Products of the Biquaternion Complex Space*, and it is the general quaternionic bilinear one of the four pairings of *The Four
 Pairings of the Biquaternion Algebra*; its diagonal is the norm of *Biquaternion
-Norm and Invertibility*, and on the six subspaces its restrictions and their signatures are
-*The Six Subspaces under the General Quaternionic Algebra of Biquaternions*, whose table is quoted here and
+Norm and Invertibility*, and on the remarkable subspaces its restrictions and their signatures are
+*Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*, whose table is quoted here and
 not recomputed. The article therefore owns the reading of the form **as the form of the product** — the Gram
-data, the invariance question and the coincidence with $H$ — and cites the norm article and the six-subspace
+data, the invariance question and the coincidence with $H$ — and cites the norm article and the remarkable-subspace
 article for the form itself. The Hermitian form $H$ is *Biquaternion Norm and Invertibility*; the invariance
 question for a symmetric product is *Jordan Algebras*; the matrix reading of the same form is
-*The Symmetric Quaternionic Algebra in the Matrix Representations*.
+*The Symmetric Quaternionic Algebra in the $2\times2$ and $4\times4$ Matrix Element Representations*.
 
 **Conventions.** The operation is $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$ with
 $B(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$; the norm is $N(\tilde Q)=B(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$;
 the Hermitian form is $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$; the real basis
-of the algebra is $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ over $\mathbb{R}$; the six subspaces are
+of the algebra is $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ over $\mathbb{R}$; the remarkable subspaces are
 $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$,
 $\mathbb{M}_+$ and $\mathbb{M}_-$.
 
@@ -93,7 +93,7 @@ $i\mathbb{H}_{\mathbb{B}}$ is negative definite of signature $(0,4)$.
 imaginary companion is purely imaginary and drops from the realification, while $B(ie_\mu,ie_\nu)=-B(e_\mu,e_\nu)$;
 the two blocks are $+I_4$ and $-I_4$ and the interleaved reading is the same matrix permuted. On
 $\mathbb{H}_{\mathbb{B}}$ the form is $\sum_\mu q_\mu^2$ with $q_\mu$ real, positive definite; on
-$i\mathbb{H}_{\mathbb{B}}$ it is the negative. The computation is the one of *The Six Subspaces under the
+$i\mathbb{H}_{\mathbb{B}}$ it is the negative. The computation is the one of *Remarkable Subspaces under the
 General Quaternionic Algebra of Biquaternions*. $\square$
 
 **Remark (a complex form, read twice over the reals).** The signature $(4,4)$ is that of a complex bilinear
@@ -165,10 +165,10 @@ symmetric form that is invariant under a commutative product and has a unit is t
 Jordan algebra; here there is no unit and the invariance fails, which is the form-theoretic face of the
 failure of the Jordan identity (*Jordan Algebras*).
 
-## The Restriction to the Six Subspaces
+## The Restriction to the Remarkable Subspaces
 
-The restrictions of $B$ to the six distinguished subspaces are the restrictions of the quaternion form
-computed in *The Six Subspaces under the General Quaternionic Algebra of Biquaternions*, whose table is
+The restrictions of $B$ to the remarkable subspaces are the restrictions of the quaternion form
+computed in *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*, whose table is
 quoted here; the present article adds only their reading through the product. Here $A,B\in\mathbb{C}$, $h,g$
 are real quaternions, $a_0,b_0\in\mathbb{R}$ and $\mathbf p,\mathbf q\in\mathbb{R}^3$ are real vectors.
 
@@ -181,12 +181,12 @@ are real quaternions, $a_0,b_0\in\mathbb{R}$ and $\mathbf p,\mathbf q\in\mathbb{
 | $\mathbb{M}_+$ | $a_0e_0+i\mathbf p$, $b_0e_0+i\mathbf q$ | $a_0b_0-(\mathbf p,\mathbf q)$ | $4$ | $(1,3)$ | the elements $a_0e_0+i\mathbf p$ with $a_0^2=(\mathbf p,\mathbf p)$ |
 | $\mathbb{M}_-$ | $ia_0e_0+\mathbf p$, $ib_0e_0+\mathbf q$ | $(\mathbf p,\mathbf q)-a_0b_0$ | $4$ | $(3,1)$ | the elements $\mathbf p+ia_0e_0$ with $(\mathbf p,\mathbf p)=a_0^2$ |
 
-**Remark (the product on each restriction).** On every one of the six the product of two elements is a
+**Remark (the product on each restriction).** On every one of the remarkable subspaces the product of two elements is a
 multiple of $e_0$ read through the displayed coefficient, and the square of an element is the value of the
 restricted diagonal. The two definite rows have no isotropic element; the centre has none for the complex
 form although its realification has the two real isotropic lines; the vector subspace carries the pure
 zero-divisor cone; and the two Hermitian subspaces carry their real light cones. The product has no unit on
-any of the six, since it has none on the whole algebra.
+any of the remarkable subspaces, since it has none on the whole algebra.
 
 ## The Coincidence with the Hermitian Form on the Real Part
 
@@ -244,7 +244,7 @@ collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
 | $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ | the Hermitian form of $\mathbb{B}$ |
 | $G=I_4$ | the Gram matrix of $B$ in the basis $e_0,e_1,e_2,e_3$ |
 | $\operatorname{diag}(I_4,-I_4)$, signature $(4,4)$ | the realification of $B$ |
-| $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ | the six signatures of the restrictions to the six subspaces |
+| $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ | the signatures of the restrictions to the remarkable subspaces |
 | $L^{\star}_{\tilde A}$, $\operatorname{Tr}(L^{\star}_{\tilde A})=A_0$ | the left multiplication and its trace |
 | $B(\tilde P\star\tilde Q,\tilde R)=B(\tilde P,\tilde Q\star\tilde R)$ | the invariance that fails |
 
@@ -253,6 +253,6 @@ collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the quaternion form among the four pairings
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the quaternion form beside the other three coefficients
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm, the polarisation and the Hermitian form
-- *The Six Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the restriction Gram matrices and the signatures
+- *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the restriction Gram matrices and the signatures
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the radical and the isotropic elements
 - *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the adjoint with respect to $B$ and the groups preserving it

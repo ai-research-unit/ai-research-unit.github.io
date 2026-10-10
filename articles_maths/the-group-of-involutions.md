@@ -4,7 +4,7 @@
 
 The biquaternion algebra carries two distinguished involutive anti-automorphisms, the **Hermitian conjugation** ${}^{*}$ and the **quaternion conjugation** ${}^{\natural}$. They commute, and together with the identity and their composite, the complex conjugation $\bar{\cdot}$, they form a group of order four, the **Klein four-group** $V_{4}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$. This article treats the two maps and the group they generate: the two composition rules, the Cayley table, the subgroups, the place of the fourth conjugation, the reversal, outside the group, the composition table that includes the reversal, and the orbits of the group on the algebra.
 
-The formulas of the four conjugations and the algebra itself are *Biquaternions as a Vector Space over $\mathbb{C}$*; the lattice of the fixed spaces they produce is *Comparison of the Six Subspaces*; and the six subspaces, one to a section, are *Introduction to the Six Subspaces*. None of these is repeated here.
+The formulas of the four conjugations and the algebra itself are *Biquaternions as a Vector Space over $\mathbb{C}$*; the lattice of the fixed spaces they produce is *Comparison of the Remarkable Subspaces*; and the remarkable subspaces, one to a section, are *Introduction to the Remarkable Subspaces*. None of these is repeated here.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$, the coefficients complex; units $e_0=1$ and $e_k^{2}=-e_0$; central scalar imaginary $i$; sign vector $\varepsilon=(1,-1,-1,-1)$. On the coefficients the four involutions act by
 
@@ -186,6 +186,6 @@ The biquaternion algebra carries two commuting involutive anti-automorphisms of 
 ## Further Reading
 
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, its basis and its four conjugations
-- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six fixed spaces of the four involutions, one to a section
-- *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the relations between the six fixed spaces and the lattice they form
+- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable fixed spaces of the four involutions, one to a section
+- *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the relations between the remarkable fixed spaces and the lattice they form
 - *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the matrix picture in which the extra involution is the coefficient conjugation composed with the conjugate transpose

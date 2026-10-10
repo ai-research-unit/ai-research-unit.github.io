@@ -19,7 +19,7 @@ $$
 
 with the **sign vector** $\varepsilon=(1,-1,-1,-1)$ of the coefficient basis, so that the general plain bilinear form is the four terms $P_0Q_0-P_1Q_1-P_2Q_2-P_3Q_3$ and the Gram matrix of $\tau$ is the block matrix of *The Realification of the Four Forms* rescaled by $8$, its signature is the signature $(4,4)$ of that block matrix, and its null cone is the realified cone of the general plain bilinear form. The factor $8$ is the real dimension of the carrier of the regular representation, and the same form read on the complex four-dimensional module carries the factor $4$ instead. The trace form is therefore the regular-representation reading of the general plain bilinear form, and its interest is exactly that: it reaches the signature $(4,4)$ and the invariance under the algebra automorphisms from the ring structure alone.
 
-**Boundary.** The four complex forms, their Gram matrices, their adjoints and their automorphism groups are *The Four Pairings of the Biquaternion Algebra* and the $2\times2$ and $4\times4$ representation articles of the four layers; their realified reading is *The Realification of the Four Forms*, whose signature table this article compares with. The Hilbert–Schmidt form of the matrix model, with the adjoint in the trace, is *The Matrix Representation and the Biquaternion Dynamics*, and the regular representation itself is *Modules over the General Plain Algebra of Biquaternions*.
+**Boundary.** The four complex forms, their Gram matrices, their adjoints and their automorphism groups are *The Four Pairings of the Biquaternion Algebra* and the $2\times2$ and $4\times4$ representation articles of the four layers; their realified reading is *The Realification of the Four Forms*, whose signature table this article compares with. The Hilbert–Schmidt form of the matrix model, with the adjoint in the trace, is *The Matrix Element Representation and the Biquaternion Dynamics*, and the regular representation itself is *Modules over the General Plain Algebra of Biquaternions*.
 
 ## The Left Multiplication and the Trace
 
@@ -76,7 +76,7 @@ $$
 
 **Remark (why the factor is eight).** The trace form is read on the regular representation, whose carrier is the algebra itself, of real dimension eight. The same construction on the complex four-dimensional module $\mathbb{B}\cong\mathbb{C}^{4}$ gives the complex trace $\operatorname{Tr}_{\mathbb{C}}(L_{\tilde P}L_{\tilde Q})=4\,\langle\tilde P,\tilde Q\rangle$, whose real part is $4\,\mathrm{Re}\langle\tilde P,\tilde Q\rangle$; the real trace is twice the real part of the complex trace, $8=2\cdot4$. The factor is the dimension of the carrier, and the form is the same.
 
-**Corollary (the same null cone as the general plain bilinear realification).** The trace form has the null cone $\{\mathrm{Re}\sum_\mu\varepsilon_\mu Q_\mu^{2}=0\}$ of real dimension $7$, the maximal totally isotropic subspaces of real dimension $4$, and the same definite and indefinite rows on the six distinguished subspaces, all rescaled by $8$ from the realified general plain bilinear form of *The Realification of the Four Forms*.
+**Corollary (the same null cone as the general plain bilinear realification).** The trace form has the null cone $\{\mathrm{Re}\sum_\mu\varepsilon_\mu Q_\mu^{2}=0\}$ of real dimension $7$, the maximal totally isotropic subspaces of real dimension $4$, and the same definite and indefinite rows on the remarkable subspaces, all rescaled by $8$ from the realified general plain bilinear form of *The Realification of the Four Forms*.
 
 ## The Invariance
 
@@ -106,7 +106,7 @@ $$
 \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)^{\dagger}\mathsf{M}_2(\tilde Q)\bigr)=\langle\tilde P,\tilde Q\rangle_{*\mathbb{R}},
 $$
 
-the **positive definite** form of the realified Hermitian form; the trace form drops the adjoint and reads the plain trace product $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$, of signature $(4,4)$. The difference is exactly the difference between the Hermitian realification $\mathrm{I}_{8}$ and the general plain bilinear realification $\operatorname{diag}(\mathrm{D},-\mathrm{D})$: the adjoint turns the indefinite split form into the Euclidean one. The two forms are compared form by form in *The Matrix Representation and the Biquaternion Dynamics*, and the matrix trace bridge $\mathrm{Sc}(\tilde P\tilde Q)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$ is the same identity at the level of elements.
+the **positive definite** form of the realified Hermitian form; the trace form drops the adjoint and reads the plain trace product $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$, of signature $(4,4)$. The difference is exactly the difference between the Hermitian realification $\mathrm{I}_{8}$ and the general plain bilinear realification $\operatorname{diag}(\mathrm{D},-\mathrm{D})$: the adjoint turns the indefinite split form into the Euclidean one. The two forms are compared form by form in *The Matrix Element Representation and the Biquaternion Dynamics*, and the matrix trace bridge $\mathrm{Sc}(\tilde P\tilde Q)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$ is the same identity at the level of elements.
 
 ## Worked Examples
 
@@ -138,7 +138,7 @@ The trace form of the real biquaternion algebra is $\tau(\tilde P,\tilde Q)=\ope
 ## Further Reading
 
 - *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the four realified forms and the signature table the trace form is compared with
-- *The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Matrix Representation* (`articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-matrix-representation.md`), for the trace bridge and the Hilbert–Schmidt form
+- *The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-matrix-element-representation.md`), for the trace bridge and the Hilbert–Schmidt form
 - *Modules over the General Plain Algebra of Biquaternions* (`articles_maths/modules-over-the-general-plain-algebra-of-biquaternions.md`), for the regular representation
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the general plain bilinear form the trace form reproduces and for the four Gram matrices of the complex forms compared with the realified ones
 - *Bilinear Forms* (`articles_maths/bilinear-forms.md`) and *Quadratic Forms and Polarisation* (`articles_maths/quadratic-forms-and-polarisation.md`), for the general theory of bilinear forms, non-degeneracy and Sylvester's law

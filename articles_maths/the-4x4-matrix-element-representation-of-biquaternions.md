@@ -4,9 +4,9 @@
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its four-vector coordinates are those of *Biquaternions as a Vector Space over $\mathbb{C}$* and *The Four-Vector Element Representation of Biquaternions*.
 
-Two $4\times4$ matrices carry the multiplication of $\mathbb{B}$ in the basis $e_0, e_1, e_2, e_3$. The **left regular matrix** $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix whose $m$-th column is the coordinate column of the product $\tilde Q e_m$; the **right regular matrix** $\mathsf{M}_4^{R}(\tilde Q)$ is the matrix whose $m$-th column is the coordinate column of the product $e_m \tilde Q$. Both are complex $4\times4$ matrices, both carry a letter, and neither is the default: the companion article *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* writes $\mathsf{M}_4$ for $\mathsf{M}_4^{L}$, and the letter $L$ is restored here so that the two stand on the same footing.
+Two $4\times4$ matrices carry the multiplication of $\mathbb{B}$ in the basis $e_0, e_1, e_2, e_3$. The **left regular matrix** $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix whose $m$-th column is the coordinate column of the product $\tilde Q e_m$; the **right regular matrix** $\mathsf{M}_4^{R}(\tilde Q)$ is the matrix whose $m$-th column is the coordinate column of the product $e_m \tilde Q$. Both are complex $4\times4$ matrices, both carry a letter, and neither is the default: the companion article *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* writes $\mathsf{M}_4$ for $\mathsf{M}_4^{L}$, and the letter $L$ is restored here so that the two stand on the same footing.
 
-The **left regular matrix** $\mathsf{M}_4^{L}(\tilde Q)$ in the basis $e_0,e_1,e_2,e_3$, its multiplicativity and injectivity, the trace $\operatorname{Tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_0$ and the determinant $\det\mathsf{M}_4^{L}(\tilde Q)=N(\tilde Q)^2$, and the six distinguished subspaces in the regular model are *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions*; they are used here and not restated.
+The **left regular matrix** $\mathsf{M}_4^{L}(\tilde Q)$ in the basis $e_0,e_1,e_2,e_3$, its multiplicativity and injectivity, the trace $\operatorname{Tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_0$ and the determinant $\det\mathsf{M}_4^{L}(\tilde Q)=N(\tilde Q)^2$, and the remarkable subspaces in the regular model are *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; they are used here and not restated.
 
 The image of the left regular matrix is written $M_4(\mathbb{C})_L$: it is the subspace of $M_4(\mathbb{C})$ of the matrices $\mathsf{M}_4^{L}(\tilde Q)$, of complex dimension $4$ inside the $16$ of $M_4(\mathbb{C})$, and it is the object of this article.
 
@@ -33,7 +33,7 @@ Q_3 & -Q_2 & Q_1 & Q_0
 \end{pmatrix}.
 $$
 
-This is the Cayley matrix of *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions*, written $\mathsf{M}_4(\tilde Q)$ there; every entry is a single coefficient of $\tilde Q$ with a sign, and no entry is a sum of two or more coefficients.
+This is the Cayley matrix of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, written $\mathsf{M}_4(\tilde Q)$ there; every entry is a single coefficient of $\tilde Q$ with a sign, and no entry is a sum of two or more coefficients.
 
 **Proposition (the left regular matrix is multiplicative).** For all $\tilde{P}, \tilde{Q} \in \mathbb{B}$,
 
@@ -41,7 +41,7 @@ $$
 \mathsf{M}_4^{L}(\tilde{P})\,\mathsf{M}_4^{L}(\tilde{Q}) = \mathsf{M}_4^{L}(\tilde{P}\tilde{Q}), \qquad \mathsf{M}_4^{L}(\tilde{Q}) = 0 \iff \tilde{Q} = 0,
 $$
 
-so the assignment is an injective algebra homomorphism, of complex dimension $4$; its trace is $4Q_0$ and its determinant is $N(\tilde{Q})^2$. The proof and the six subspace conditions are those of the companion article and are not repeated.
+so the assignment is an injective algebra homomorphism, of complex dimension $4$; its trace is $4Q_0$ and its determinant is $N(\tilde{Q})^2$. The proof and the remarkable subspace conditions are those of the companion article and are not repeated.
 
 **Definition (the right regular matrix).** The **right regular matrix** is the assignment written $\mathsf{M}_4^{R}$. It converts a biquaternion into a $4 \times 4$ complex matrix,
 
@@ -60,7 +60,7 @@ Q_3 & Q_2 & -Q_1 & Q_0
 \end{pmatrix}.
 $$
 
-**Proposition (the right regular matrix).** The columns are the images $e_m \tilde{Q}$, and one expands as in the left case of *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* with the factors in the opposite order. Alternatively, since each $e_m$ is either $e_0$ or one of the $e_k$, and $e_k e_j = -e_j e_k$ for $j \neq k$, the matrix is the transpose of the left matrix conjugated by the fixed sign matrix of the next section, $\mathsf{M}_4^{R}(\tilde{Q}) = D\,\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf T}D$, and direct computation of the four general products confirms the display.
+**Proposition (the right regular matrix).** The columns are the images $e_m \tilde{Q}$, and one expands as in the left case of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* with the factors in the opposite order. Alternatively, since each $e_m$ is either $e_0$ or one of the $e_k$, and $e_k e_j = -e_j e_k$ for $j \neq k$, the matrix is the transpose of the left matrix conjugated by the fixed sign matrix of the next section, $\mathsf{M}_4^{R}(\tilde{Q}) = D\,\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf T}D$, and direct computation of the four general products confirms the display.
 
 **Theorem (the right regular matrix is anti-multiplicative).** For all $\tilde{Q}, \tilde{R} \in \mathbb{B}$,
 
@@ -302,7 +302,7 @@ $$
 \mathsf{M}'_4(A_0, A_1, A_2, A_3) = \begin{pmatrix} A_0 & A_1 & A_2 & A_3 \\ A_1 & A_0 & -iA_3 & iA_2 \\ A_2 & iA_3 & A_0 & -iA_1 \\ A_3 & -iA_2 & iA_1 & A_0 \end{pmatrix}
 $$
 
-is a multiplicative realization of $\mathbb{B}$. Its first row and column coincide, since $\mathsf{M}'_4$ is symmetric in the coefficients, which the Cayley matrix of *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* is not; the price is the scalar imaginary scattered through the lower block. The change of basis is what makes the squares $+e_0$: the generators of this realization are the elements $ie_k$, not the $e_k$, and the difference is a change of orientation, the two choices being interchanged by the coefficient conjugation, not two different algebras.
+is a multiplicative realization of $\mathbb{B}$. Its first row and column coincide, since $\mathsf{M}'_4$ is symmetric in the coefficients, which the Cayley matrix of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* is not; the price is the scalar imaginary scattered through the lower block. The change of basis is what makes the squares $+e_0$: the generators of this realization are the elements $ie_k$, not the $e_k$, and the difference is a change of orientation, the two choices being interchanged by the coefficient conjugation, not two different algebras.
 
 **The realization is equivalent to the regular one.** Both are faithful four-dimensional linear realizations of $\mathbb{B} \cong M_2(\mathbb{C})$, and by the module structure of the section above every such realization is two copies of the simple module, $V \oplus V$; so an invertible intertwining matrix exists, and one was exhibited and checked on $100$ random elements, with maximum residual $1.9 \times 10^{-15}$. Nothing in the representation theory of the two distinguishes them, and everything the corpus says about the regular representation as a module carries over.
 
@@ -361,7 +361,7 @@ that is, $DM$ is skew-symmetric; the second form is the defining condition for a
 
 **Proof.** Direct verification on the three matrices $ie_1, ie_2, ie_3$ of the realization, entry by entry and exactly, in each of the three equivalent forms. $\square$
 
-The relation is a statement about the form and its orthogonal group, and the difference between it and the plain statement "$M$ is skew-symmetric" is the whole content: the three matrices are not skew in the plain sense, and it is $D$, not $I$, that makes them skew. Two real forms live here and they are different objects. The **general quaternionic bilinear form** $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \operatorname{Sc}(\tilde{P}\tilde{Q}^{\natural})$ is $\mathbb{C}$-bilinear and indefinite of signature $(4,4)$ on the eight-dimensional $\mathbb{B}_{\mathbb{R}}$, and it vanishes on the null elements; it is the form *of the algebra*, and it is owned by *The General Quaternionic Algebra in the $4\times4$ Matrix Representation*. The **Minkowski form** above is a real form of signature $(1,3)$ on the four-dimensional real slice spanned by $e_0, ie_1, ie_2, ie_3$, and it is the form *of the realization's real slice*, with orthogonal group $O(1,3)$; it is not a form of the eight-dimensional realification, whose four realified forms have signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$ (*The Realification of the Four Forms*).
+The relation is a statement about the form and its orthogonal group, and the difference between it and the plain statement "$M$ is skew-symmetric" is the whole content: the three matrices are not skew in the plain sense, and it is $D$, not $I$, that makes them skew. Two real forms live here and they are different objects. The **general quaternionic bilinear form** $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \operatorname{Sc}(\tilde{P}\tilde{Q}^{\natural})$ is $\mathbb{C}$-bilinear and indefinite of signature $(4,4)$ on the eight-dimensional $\mathbb{B}_{\mathbb{R}}$, and it vanishes on the null elements; it is the form *of the algebra*, and it is owned by *The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*. The **Minkowski form** above is a real form of signature $(1,3)$ on the four-dimensional real slice spanned by $e_0, ie_1, ie_2, ie_3$, and it is the form *of the realization's real slice*, with orthogonal group $O(1,3)$; it is not a form of the eight-dimensional realification, whose four realified forms have signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$ (*The Realification of the Four Forms*).
 
 ## The Sixteen Products and the Biparavectors
 
@@ -438,7 +438,7 @@ $$
 
 ## Summary
 
-The left regular matrix $\mathsf{M}_4^{L}$ of *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* is the Cayley matrix of the left multiplication, with its multiplicativity, its trace $4Q_0$ and its determinant $N(\tilde{Q})^2$ recorded there. Its transpose is the left regular matrix of the quaternion conjugate, $\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}^{\natural})$.
+The left regular matrix $\mathsf{M}_4^{L}$ of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* is the Cayley matrix of the left multiplication, with its multiplicativity, its trace $4Q_0$ and its determinant $N(\tilde{Q})^2$ recorded there. Its transpose is the left regular matrix of the quaternion conjugate, $\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}^{\natural})$.
 
 The right regular matrix $\mathsf{M}_4^{R}$, whose $m$-th column is the coordinate column of $e_m\tilde Q$, is anti-multiplicative and is the regular representation of the opposite algebra. The naive identity $\mathsf{M}_4^{R}(\tilde{Q}) = \mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\tilde{Q}^{\natural}$ is the same statement, since $\mathsf{M}_4^{L}(\tilde{Q}^{\natural})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q})$ — while what holds is $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}D = D\mathsf{M}_4^{L}(\tilde{Q}^{\natural})D$ with $D = \operatorname{diag}(-1,1,1,1)$. The difference $\mathsf{M}_4^{L} - \mathsf{M}_4^{R}$ vanishes exactly on the centre $\mathbb{C}_{\mathbb{B}}$, and its $m$-th column is the coordinate column of $[\tilde Q, e_m]$; that is the precise sense in which left and right differ because the algebra is non-commutative.
 
@@ -456,7 +456,7 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | Developed form, $Q_\mu \in \mathbb{C}$ |
 | $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ | Four-vector; $Q^0 = Q_0$, $(Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3)$ |
 | $\operatorname{col}(\tilde S)$ | Coordinate column of $\tilde S$ in the basis $e_0, e_1, e_2, e_3$ |
-| $\mathsf{M}_4^{L}(\tilde{Q})$ | Left regular matrix, whose $m$-th column is $\operatorname{col}(\tilde Q e_m)$; written $\mathsf{M}_4(\tilde{Q})$ in *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* |
+| $\mathsf{M}_4^{L}(\tilde{Q})$ | Left regular matrix, whose $m$-th column is $\operatorname{col}(\tilde Q e_m)$; written $\mathsf{M}_4(\tilde{Q})$ in *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* |
 | $\mathsf{M}_4^{R}(\tilde{Q})$ | Right regular matrix, whose $m$-th column is $\operatorname{col}(e_m \tilde Q)$ |
 | $D = \operatorname{diag}(-1,1,1,1)$ | Fixed sign matrix of the transposition theorem, $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}D$, and matrix of the Minkowski form of the second realization, $M^{\mathsf T} = -DMD$ |
 | $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ | The norm; $\det\mathsf{M}_4^{L}(\tilde{Q}) = N(\tilde{Q})^2$ |
@@ -482,7 +482,7 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 
 ## Further Reading
 
-- *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-representation-of-biquaternions.md`), for the left regular matrix, its Cayley form, the multiplicativity, the trace and the determinant, and the six subspace conditions
+- *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md`), for the left regular matrix, its Cayley form, the multiplicativity, the trace and the determinant, and the remarkable subspace conditions
 
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the regular representation of an algebra and the identification of its centralizer.
 - Charles W. Curtis and Irving Reiner, *Representation Theory of Finite Groups and Associative Algebras* (Interscience, 1962), for the regular module, its decomposition into minimal left ideals and the double centralizer theorem.
@@ -490,7 +490,7 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 - William Fulton and Joe Harris, *Representation Theory: A First Course*, Graduate Texts in Mathematics 129 (Springer, 1991), for the regular representation as the direct sum of the simple modules with multiplicity equal to their dimensions.
 - John Voight, *Quaternion Algebras*, Graduate Texts in Mathematics 288 (Springer, 2021), for the regular representation of a quaternion algebra and its complexification.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the Cayley matrix of quaternion multiplication and its transpose.
-- *The General Plain Algebra in the $4\times4$ Matrix Representation* (`articles_maths/the-general-plain-algebra-in-the-4x4-matrix-representation.md`), the first of the four articles reading the four forms on the regular matrix, each with the structure attached to its form.
+- *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-plain-algebra-in-the-4x4-matrix-element-representation.md`), the first of the four articles reading the four forms on the regular matrix, each with the structure attached to its form.
 - D. H. Gottlieb, "Eigenbundles, Quaternions, and Berry's Phase," arXiv:math/0304281 [math.AT] (2003), for the second $4 \times 4$ realization and the map $m(A) = A A^{\natural}$ of the section above; the paper's $4 \times 4$ matrices are Example 5 and the map $m(A) = A A^{\natural}$ is its section 5.
 - D. H. Gottlieb, "Maxwell's equations" (1 August 2004, 12 pp.), for the matrix formulation of Maxwell's equations in which the field matrix is $A_0 I + cF$ of the realization above, the dual form in which the derivatives stand in the matrix and the field in the column, and the identity $\mathsf{M}'^{R}_4 = \mathsf{M}'_4{}^{\mathsf{T}}$ which holds there without a sign matrix; cited for the identification of the second realization with the matrices of the Maxwell literature and for the transposition remark of that section. Its section 5 is the source of the sixteen-product basis and the biparavectors of the section above: the coefficient formula $a_{ij} = \tfrac14\operatorname{tr}(ME_iE_j^{\mathsf{T}})$, the orthogonality of the basis for the trace, and the reading of the products as the tensor square of the algebra acting on itself on both sides. The paper's potential-level equations (13) and (14) are recorded in *Maxwell's Equations in Biquaternionic Form* with their vector parts corrected.
 

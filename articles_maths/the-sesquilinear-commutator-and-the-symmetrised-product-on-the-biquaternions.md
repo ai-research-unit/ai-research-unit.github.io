@@ -124,7 +124,7 @@ where the brackets on the right are the ordinary commutator of the algebra.
 **Theorem.** The Jacobi identity for the sesquilinear bracket fails on $\mathbb{B}$. With the three Hermitian elements
 
 $$
-\tilde P=\tfrac12(e_0+ie_3)=\tilde\Pi_+(\hat e_3) , \qquad \tilde Q=\tfrac12(e_0-ie_3)=\tilde\Pi_+(-\hat e_3) , \qquad \tilde H=ie_1 ,
+\tilde P=\tfrac12(e_0+ie_3)=\tilde\Pi_1(\hat e_3) , \qquad \tilde Q=\tfrac12(e_0-ie_3)=\tilde\Pi_1(-\hat e_3) , \qquad \tilde H=ie_1 ,
 $$
 
 the Jacobi sum is
@@ -234,7 +234,7 @@ $$
 With
 
 $$
-\tilde X=\tfrac12(ie_1-e_2) , \qquad \tilde Y=\tfrac12(e_0-ie_3)=\tilde\Pi_+(-\hat e_3) ,
+\tilde X=\tfrac12(ie_1-e_2) , \qquad \tilde Y=\tfrac12(e_0-ie_3)=\tilde\Pi_1(-\hat e_3) ,
 $$
 
 the two sides are
@@ -296,7 +296,7 @@ The bilinear commutator $\tilde P\tilde Q-\tilde Q\tilde P$ and the bilinear sym
 
 ## Summary
 
-The sesquilinear multiplication splits as $\tilde P\star\tilde Q=\tilde P\circ\tilde Q+\tfrac12[\tilde P,\tilde Q]_\varsigma$ into the symmetrised product and the sesquilinear commutator, both $\mathbb{R}$-bilinear and no more, $\mathbb{R}$ being the fixed field of the conjugation. The commutator is antisymmetric, takes its values in the skew-Hermitian half, and is the negative of the ordinary commutator on that half, so the skew-Hermitian half is a Lie algebra over $\mathbb{R}$, the unitary Lie algebra; its Jacobi identity fails on the whole algebra, with the three-Hermitian-element witness $\tilde\Pi_+(\hat e_3),\tilde\Pi_+(-\hat e_3),ie_1$ giving $2e_2$, because the outer brackets obey the symmetrised rule on the skew-Hermitian values.
+The sesquilinear multiplication splits as $\tilde P\star\tilde Q=\tilde P\circ\tilde Q+\tfrac12[\tilde P,\tilde Q]_\varsigma$ into the symmetrised product and the sesquilinear commutator, both $\mathbb{R}$-bilinear and no more, $\mathbb{R}$ being the fixed field of the conjugation. The commutator is antisymmetric, takes its values in the skew-Hermitian half, and is the negative of the ordinary commutator on that half, so the skew-Hermitian half is a Lie algebra over $\mathbb{R}$, the unitary Lie algebra; its Jacobi identity fails on the whole algebra, with the three-Hermitian-element witness $\tilde\Pi_1(\hat e_3),\tilde\Pi_1(-\hat e_3),ie_1$ giving $2e_2$, because the outer brackets obey the symmetrised rule on the skew-Hermitian values.
 
 The symmetrised product is the polarisation of the square, takes its values in the Hermitian half, has scalar part the real part of the Hermitian form, and agrees with the plain symmetrisation on the Hermitian half, where it is a Jordan algebra; off the half the Jordan identity fails, with the witness $\tilde X=\tfrac12(ie_1-e_2)$, $\tilde Y=\tfrac12(e_0-ie_3)$ giving $\tfrac{i}{4}e_1$ against $0$. On the basis the symmetrised product is $\delta_{\mu\nu}e_0$ and the commutator of two vector basis elements is $-2$ times their cross product. The two bilinear operations of *The 12 Products of the Biquaternion Complex Space* are the $\mathbb{C}$-bilinear case, with their identities everywhere; the sesquilinear operations carry them on the two halves alone.
 
@@ -312,7 +312,7 @@ The symmetrised product is the polarisation of the square, takes its values in t
 | $[\tilde h,\tilde h']_\varsigma=[\tilde h,\tilde h']$ | the bracket on the Hermitian half |
 | $[\tilde s,\tilde s']_\varsigma=-[\tilde s,\tilde s']$ | the bracket on the skew-Hermitian half, the unitary Lie algebra |
 | $(\tilde h\circ\tilde h')\circ(\tilde h\circ\tilde h)=\tilde h\circ(\tilde h'\circ(\tilde h\circ\tilde h))$ | the Jordan identity, on $\mathbb{M}_+$ |
-| $\tilde\Pi_+(\hat e_3),\tilde\Pi_+(-\hat e_3),ie_1$ | the Hermitian triple whose Jacobi sum is $2e_2$ |
+| $\tilde\Pi_1(\hat e_3),\tilde\Pi_1(-\hat e_3),ie_1$ | the Hermitian triple whose Jacobi sum is $2e_2$ |
 | $\tfrac12(ie_1-e_2),\tfrac12(e_0-ie_3)$ | the pair whose Jordan identity fails, $\tfrac{i}{4}e_1$ against $0$ |
 | $e_\mu\circ e_\nu=\delta_{\mu\nu}e_0$ | the symmetrised product on the basis |
 | $[e_j,e_k]_\varsigma=-2\,e_j\times e_k$ | the commutator on the vector basis |

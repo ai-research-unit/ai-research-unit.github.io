@@ -158,7 +158,7 @@ Every distinguished subspace of the algebra inherits a form, and the inherited f
 | $\mathbb{R}[e_1] = \operatorname{span}\{1,e_1\}$ | $q_0^2 + q_1^2$ | definite; a copy of the complex plane as a metric plane |
 | $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | $q_0^2 - q_2^2$, signature $(1,1)$ | two null lines, $\mathbb{R}(1\pm e_2)$; the unit hyperbola $q_0^2 - q_2^2 = 1$ |
 | $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | $q_0^2 - q_3^2$, signature $(1,1)$ | two null lines, $\mathbb{R}(1\pm e_3)$ |
-| $\mathbb{H}_{\mathrm{s}}\tilde\pi_\pm$, $\tilde\pi_\pm\mathbb{H}_{\mathrm{s}}$ | identically zero | isotropic planes, ruling the quadric |
+| $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$, $\tilde\pi_{1,2}\mathbb{H}_{\mathrm{s}}$ | identically zero | isotropic planes, ruling the quadric |
 
 **Theorem (The Two-Dimensional Geometries).** On each split-complex subalgebra the inherited form has signature $(1,1)$; the null lines are the lines $\mathbb{R}(1\pm e_2)$ and $\mathbb{R}(1\pm e_3)$, and they are the two isotropic lines of the subalgebra. The isometry group of the subalgebra form is the group $O(1,1)$ of hyperbolic rotations, acting on the hyperbola $q_0^2 - q_2^2 = 1$ with two orbits, the two branches; the distance on a branch is the logarithm of the ratio of the two coordinates in the null basis. The subalgebra $\mathbb{R}[e_1]$ is definite, its form is positive definite, and its geometry is Euclidean; its unit circle is the compact group $SO(2)$ of the elliptic subgroup of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*.
 

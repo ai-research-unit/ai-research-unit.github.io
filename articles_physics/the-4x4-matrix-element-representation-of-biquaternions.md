@@ -38,7 +38,7 @@ Q_3 & -Q_2 & Q_1 & Q_0
 \end{pmatrix},
 $$
 
-the Cayley matrix of *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions*. Each entry is a single coefficient of $\tilde{Q}$ carrying a sign, and **no entry is a sum of two or more coefficients**, because in this basis every product of basis elements is one basis element times a sign.
+the Cayley matrix of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. Each entry is a single coefficient of $\tilde{Q}$ carrying a sign, and **no entry is a sum of two or more coefficients**, because in this basis every product of basis elements is one basis element times a sign.
 
 **Proof (the general matrix).** The columns are the products $\tilde{Q}e_m$ expressed in the basis. For $m = 0$ the image is $\tilde{Q}$ itself, giving the first column $(Q_0, Q_1, Q_2, Q_3)$. For $m = k \geq 1$ one uses $e_0e_k = e_k$ and $e_je_k = \epsilon^{ijk}e_i$ for $j \neq k$ with $\{i,j,k\} = \{1,2,3\}$, so that
 
@@ -439,9 +439,9 @@ $$
 
 because the two chiral blocks are similar and each carries one factor. This is the algebraic content of the square root: a first-order matrix acting on the spinor module has the second-order d'Alembertian as determinant, and the doubling of the regular module is where the two chiral copies of the first-order matrix come from. The conventions of the mass term are those of *Conventions in the Biquaternion Universe*, and the wave equations built on it are the subject of the wave-mechanics articles.
 
-## The Six Subspaces
+## Remarkable Subspaces
 
-Each of the algebra's six distinguished subspaces has its own simplified regular matrix, obtained by substituting that subspace's parametrisation into the general matrix of the first section. The parametrisations are those of *Conventions in the Biquaternion Universe*: the complex coefficients are $Q_\mu = q_\mu + iq'_\mu$ with $q_\mu, q'_\mu$ real, and the physical coordinates are $ct, \mathbf{x}$ on the material side and $ct', \mathbf{x}'$ on the informational one.
+Each of the algebra's remarkable subspaces has its own simplified regular matrix, obtained by substituting that subspace's parametrisation into the general matrix of the first section. The parametrisations are those of *Conventions in the Biquaternion Universe*: the complex coefficients are $Q_\mu = q_\mu + iq'_\mu$ with $q_\mu, q'_\mu$ real, and the physical coordinates are $ct, \mathbf{x}$ on the material side and $ct', \mathbf{x}'$ on the informational one.
 
 Each subspace is displayed as a three-step chain: the general matrix in the complex coefficients $Q_\mu$, the same matrix with that subspace's real parameters substituted, and the same matrix in the physical coordinates, under the one dictionary
 
@@ -463,7 +463,7 @@ $$
 \operatorname{Tr}\mathsf{M}_4^{L} = 4(ct' + ict), \qquad \det\mathsf{M}_4^{L} = (ct' + ict)^4 .
 $$
 
-It is the locus on which left and right multiplication coincide, which is what the corollary *the difference vanishes exactly on the centre* says on the six subspaces: the centre is exactly where $\mathsf{M}_4^{L}(\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q})$.
+It is the locus on which left and right multiplication coincide, which is what the corollary *the difference vanishes exactly on the centre* says on the remarkable subspaces: the centre is exactly where $\mathsf{M}_4^{L}(\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q})$.
 
 **The vector subspace $\mathrm{Vect}(\mathbb{B})$.** The scalar coefficient vanishes, $Q_0 = 0$, so the matrix is traceless, and the chain runs over the three complex spatial coefficients,
 

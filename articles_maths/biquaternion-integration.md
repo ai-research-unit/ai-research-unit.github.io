@@ -10,7 +10,7 @@ The treatment is purely mathematical. The independent variables are four real pa
 
 Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.
 
-The biquaternion algebra $\mathbb{B}$, its conjugations, its six distinguished subspaces, the Euclidean norm, the biquaternionic gradient $\tilde{\nabla}$, the quaternion conjugate $\tilde{\nabla}^{\natural}$, the d'Alembertian $\Box$, and the convective derivative $\tilde{D}$ are assumed from the preceding articles.
+The biquaternion algebra $\mathbb{B}$, its conjugations, its remarkable subspaces, the Euclidean norm, the biquaternionic gradient $\tilde{\nabla}$, the quaternion conjugate $\tilde{\nabla}^{\natural}$, the d'Alembertian $\Box$, and the convective derivative $\tilde{D}$ are assumed from the preceding articles.
 
 ## The Integral of a Biquaternion-Valued Function
 

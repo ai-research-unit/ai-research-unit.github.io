@@ -21,7 +21,7 @@ This article establishes:
 5. **The double cover is visible in the path integral.** The coherent-state integral is over the sphere of idempotents and loses the phase; the spinor integral is over the double cover and retains it. The Wess–Zumino term is the obstruction to writing the action purely in terms of the idempotent.
 6. **Topological consequences.** The Wess–Zumino term is a topological term whose coefficient is the spin; it controls spin tunnelling and the quenching of the tunnelling amplitude, and it is the same object as the curvature quantisation of the geometric-phase articles.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_\pm(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\Phi$ with $ie_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\Phi$ with $ie_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the path integral in the algebra and its classical limit.
@@ -41,7 +41,7 @@ $$
 \zeta = \tan\frac{\theta}{2}\,e^{i\phi},
 $$
 
-so that $|\zeta\rangle$ has Bloch vector $\hat{n}(\zeta)$ and its idempotent is $\tilde\Pi_+(\hat{n})$. The parameter $\zeta$ ranges over $\mathbb{CP}^1$ — the sphere of directions — with the north pole at $\zeta = 0$ and the south pole at $\zeta = \infty$. The two-component spinor $(\cos\tfrac{\theta}{2},\,\sin\tfrac{\theta}{2}e^{i\phi})$ is the lift of $|\zeta\rangle$ to the double cover, as in the Majorana construction.
+so that $|\zeta\rangle$ has Bloch vector $\hat{n}(\zeta)$ and its idempotent is $\tilde\Pi_1(\hat{n})$. The parameter $\zeta$ ranges over $\mathbb{CP}^1$ — the sphere of directions — with the north pole at $\zeta = 0$ and the south pole at $\zeta = \infty$. The two-component spinor $(\cos\tfrac{\theta}{2},\,\sin\tfrac{\theta}{2}e^{i\phi})$ is the lift of $|\zeta\rangle$ to the double cover, as in the Majorana construction.
 
 ### The Overlap and the Measure
 
@@ -199,7 +199,7 @@ which is precisely the stereographic coordinate of the Majorana construction. Th
 
 ### The Biquaternion Reading
 
-In the algebra the coherent state is the idempotent $\tilde\Pi_+(\hat{n}(z))$, so the coherent-state path integral is an integral over the sphere of idempotents, with the trace pairing supplying the energy $\mathrm{Tr}(\tilde{P}\tilde{H})$. The spinor integral is the lift to the double cover. The saddle point is a rotor in $\mathbb{H}_{\mathbb{B}}$ — the unit real quaternion that carries $\hat{n}_0$ into $\hat{n}(t)$ — and the Wess–Zumino term is the central phase of that rotor along the path. The biquaternion algebra thus holds both integrals at once: the idempotent is the point, the spinor is the lift, and the geometric phase is the fibre.
+In the algebra the coherent state is the idempotent $\tilde\Pi_1(\hat{n}(z))$, so the coherent-state path integral is an integral over the sphere of idempotents, with the trace pairing supplying the energy $\mathrm{Tr}(\tilde{P}\tilde{H})$. The spinor integral is the lift to the double cover. The saddle point is a rotor in $\mathbb{H}_{\mathbb{B}}$ — the unit real quaternion that carries $\hat{n}_0$ into $\hat{n}(t)$ — and the Wess–Zumino term is the central phase of that rotor along the path. The biquaternion algebra thus holds both integrals at once: the idempotent is the point, the spinor is the lift, and the geometric phase is the fibre.
 
 ## Topological Consequences
 
@@ -263,7 +263,7 @@ one half the oriented solid angle: the geometric phase. This was verified numeri
 
 The saddle point of $S$ is the classical Larmor precession $\dot{\mathbf{r}} = \gamma\,\mathbf{r}\times\mathbf{B}$, obtained from the symplectic form $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\phi$ and the classical Zeeman energy $\langle\tilde{H}\rangle = -\tfrac{\hbar\omega_L}{2}\hat{n}\cdot\hat{n}_0$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\bar\psi\psi=1$, related to the coherent-state form by $\zeta = \psi_2/\psi_1$.
 
-In the biquaternion algebra the coherent-state integral is an integral over the sphere of idempotents $\tilde\Pi_+(\hat{n})$ with energy $\mathrm{Tr}(\tilde{P}\tilde{H})$, and the spinor integral is its lift to the double cover; the Wess–Zumino term is the central phase of the rotor along the path. The term is topological: the symplectic form of the sphere is not exact, its total integral has magnitude $2\pi\hbar$, and the coefficient of the term is the spin. For a half-integer spin this makes the tunnelling instanton action imaginary by an odd multiple of $i\pi$, quenching the tunnelling between opposite classical states.
+In the biquaternion algebra the coherent-state integral is an integral over the sphere of idempotents $\tilde\Pi_1(\hat{n})$ with energy $\mathrm{Tr}(\tilde{P}\tilde{H})$, and the spinor integral is its lift to the double cover; the Wess–Zumino term is the central phase of the rotor along the path. The term is topological: the symplectic form of the sphere is not exact, its total integral has magnitude $2\pi\hbar$, and the coefficient of the term is the spin. For a half-integer spin this makes the tunnelling instanton action imaginary by an odd multiple of $i\pi$, quenching the tunnelling between opposite classical states.
 
 ## Summary of Notation
 

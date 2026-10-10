@@ -11,7 +11,7 @@ This article treats both effects in the biquaternion algebra $\mathbb{B} = \math
 3. **The Stark effect is linear for degenerate levels and quadratic otherwise.** The linear Stark effect is the spectrum of $-dE\,ie_1$ at an exact degeneracy, $\pm dE$; the quadratic Stark effect is the second-order shift of a non-degenerate pair, $\Delta E = -(dE)^2/\hbar\omega_0 = -\tfrac12\alpha E^2$, with $\alpha = 2d^2/\hbar\omega_0$.
 4. **The difference is diagonal versus off-diagonal coupling.** The magnetic coupling is diagonal in the energy basis because a spin-1/2 carries a permanent magnetic dipole; the electric coupling is off-diagonal because a state of definite parity has no permanent electric dipole. The first gives a first-order (linear) shift; the second gives a second-order (quadratic) shift or, at a degeneracy, a first-order splitting between the two mixed states.
 
-The notation is the series notation: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, $\tilde{H} = h_0e_0 + i\mathbf{h}$ with eigenvalues $h_0\pm|\mathbf{h}|$, and $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+The notation is the series notation: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, $\tilde{H} = h_0e_0 + i\mathbf{h}$ with eigenvalues $h_0\pm|\mathbf{h}|$, and $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the spin observable and its coupling to a field.
@@ -45,10 +45,10 @@ is the Larmor frequency. In the series convention $\tilde{S}_k = \tfrac{\hbar}{2
 The observable $\tilde{H}_Z$ has the spectral decomposition
 
 $$
-\tilde{H}_Z = -\frac{\hbar\omega_L}{2}\,\tilde\Pi_+(\hat{n}) + \frac{\hbar\omega_L}{2}\,\tilde\Pi_-(\hat{n}),
+\tilde{H}_Z = -\frac{\hbar\omega_L}{2}\,\tilde\Pi_1(\hat{n}) + \frac{\hbar\omega_L}{2}\,\tilde\Pi_2(\hat{n}),
 $$
 
-because $\hat{n}_k\tilde{S}_k\tilde\Pi_\pm(\hat{n}) = \pm\tfrac{\hbar}{2}\tilde\Pi_\pm(\hat{n})$ and $\tilde{H}_Z\propto\hat{n}_k\tilde{S}_k$. The two eigenvalues are
+because $\hat{n}_k\tilde{S}_k\tilde\Pi_{1,2}(\hat{n}) = \pm\tfrac{\hbar}{2}\tilde\Pi_{1,2}(\hat{n})$ and $\tilde{H}_Z\propto\hat{n}_k\tilde{S}_k$. The two eigenvalues are
 
 $$
 E_\pm = \pm\frac{\hbar\omega_L}{2},
@@ -60,7 +60,7 @@ $$
 \Delta E_{\mathrm{Zeeman}} = \hbar|\omega_L| = \hbar|\gamma|B,
 $$
 
-linear in the field and independent of its direction. The direction $\hat{n}$ enters only through the two eigenstates $\tilde\Pi_\pm(\hat{n})$: rotating the field rotates the eigenbasis on the Bloch sphere but leaves the two energy levels fixed. This is a clean algebraic statement: a traceless Hermitian element of $\mathbb{M}_+$ has eigenvalues $\pm|\mathbf{h}|$, and $|\mathbf{h}|$ depends on the magnitude of the vector part alone.
+linear in the field and independent of its direction. The direction $\hat{n}$ enters only through the two eigenstates $\tilde\Pi_{1,2}(\hat{n})$: rotating the field rotates the eigenbasis on the Bloch sphere but leaves the two energy levels fixed. This is a clean algebraic statement: a traceless Hermitian element of $\mathbb{M}_+$ has eigenvalues $\pm|\mathbf{h}|$, and $|\mathbf{h}|$ depends on the magnitude of the vector part alone.
 
 For an electron, $\gamma = -g_e\mu_B/\hbar$ with $g_e\approx2.0023$; the two levels are separated by $\hbar|\omega_L| = g_e\mu_B B$. The magnitude of the splitting, and with it the numerical value of the gyromagnetic ratio, is external data: the algebra supplies the two-dimensional spectral structure and the isotropy, not the value of $\gamma$. The spin g-factor close to 2 is a relativistic (Dirac) result and belongs to the relativistic companion series; the orbital g-factor and the Landé factor for coupled $L$–$S$ systems belong to the companion article *Angular Momentum and Spin in Biquaternionic Form*.
 
@@ -123,9 +123,9 @@ $$
 E_\pm = \pm\,dE,
 $$
 
-a **linear** Stark splitting. The eigenstates are $\tilde\Pi_\pm(\hat{x})$, the equal superpositions of the two parity eigenstates, which carry opposite permanent dipole moments $\pm d$ along $\hat{x}$ and are therefore shifted linearly by the field. This is the situation of the hydrogen $n=2$ manifold, where the $2s$ and $2p$ states are degenerate and the Stark effect is linear; the degeneracy is what permits a permanent dipole moment to exist in the field direction.
+a **linear** Stark splitting. The eigenstates are $\tilde\Pi_{1,2}(\hat{x})$, the equal superpositions of the two parity eigenstates, which carry opposite permanent dipole moments $\pm d$ along $\hat{x}$ and are therefore shifted linearly by the field. This is the situation of the hydrogen $n=2$ manifold, where the $2s$ and $2p$ states are degenerate and the Stark effect is linear; the degeneracy is what permits a permanent dipole moment to exist in the field direction.
 
-In the algebra the linear Stark effect is nothing but the spectral decomposition of a traceless Hermitian element with a vector part along the field axis: $\tilde{H}_S = -dE\,ie_1 = -dE\,(\tilde\Pi_+(\hat{x})-\tilde\Pi_-(\hat{x}))$, so the two eigenvalues are $\mp dE$ and the two eigenstates are the two idempotents of the field axis. The essential input is the degeneracy; without it the two idempotents are not degenerate and the linear splitting is modified, as the next subsection shows.
+In the algebra the linear Stark effect is nothing but the spectral decomposition of a traceless Hermitian element with a vector part along the field axis: $\tilde{H}_S = -dE\,ie_1 = -dE\,(\tilde\Pi_1(\hat{x})-\tilde\Pi_2(\hat{x}))$, so the two eigenvalues are $\mp dE$ and the two eigenstates are the two idempotents of the field axis. The essential input is the degeneracy; without it the two idempotents are not degenerate and the linear splitting is modified, as the next subsection shows.
 
 ### Quadratic Stark and the Polarizability
 
@@ -252,7 +252,7 @@ $$
 \qquad \omega_L = \gamma B,
 $$
 
-with the spectral decomposition $\tilde{H}_Z = -\tfrac{\hbar\omega_L}{2}\tilde\Pi_+(\hat{n}) + \tfrac{\hbar\omega_L}{2}\tilde\Pi_-(\hat{n})$ and linear, isotropic splitting $\Delta E = \hbar|\omega_L| = \hbar|\gamma|B$. The field direction selects the eigenbasis $\tilde\Pi_\pm(\hat{n})$ and not the eigenvalues.
+with the spectral decomposition $\tilde{H}_Z = -\tfrac{\hbar\omega_L}{2}\tilde\Pi_1(\hat{n}) + \tfrac{\hbar\omega_L}{2}\tilde\Pi_2(\hat{n})$ and linear, isotropic splitting $\Delta E = \hbar|\omega_L| = \hbar|\gamma|B$. The field direction selects the eigenbasis $\tilde\Pi_{1,2}(\hat{n})$ and not the eigenvalues.
 
 The **Stark coupling** is off-diagonal in the energy basis, $\tilde{H}_S = -E\,d\,ie_1$ in a two-level truncation, and its effect depends on the degeneracy. For a degenerate pair it gives the linear Stark splitting $E_\pm = \pm Ed$, the exact spectrum of a traceless Hermitian element with the vector part along the field. For a non-degenerate pair with splitting $\hbar\omega_0$ it gives $E_\pm = \pm\sqrt{(\hbar\omega_0/2)^2+(Ed)^2}$, whose expansion is the quadratic Stark shift
 

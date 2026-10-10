@@ -140,19 +140,19 @@ The distinguished subspaces of the algebra correspond to the following subspaces
 | $V = \operatorname{span}\{e_1,e_2,e_3\}$ | $\mathrm{SL}_2(\mathbb{R})$ | the traceless matrices |
 | $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | $\left\{\begin{pmatrix}p & q \\ q & p\end{pmatrix}\right\}$ | the symmetric matrices with equal diagonal |
 | $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | $\left\{\begin{pmatrix}p & 0 \\ 0 & q\end{pmatrix}\right\}$ | the diagonal matrices |
-| $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$, $\tilde\pi_+ \mathbb{H}_{\mathrm{s}}$ | $K_{\ell_w}$, $R_{\ell_v}$ | maximal isotropic subspaces |
-| $\mathbb{H}_{\mathrm{s}} \tilde\pi_-$, $\tilde\pi_- \mathbb{H}_{\mathrm{s}}$ | $K_{\ell_v}$, $R_{\ell_w}$ | maximal isotropic subspaces |
+| $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$, $\tilde\pi_1 \mathbb{H}_{\mathrm{s}}$ | $K_{\ell_w}$, $R_{\ell_v}$ | maximal isotropic subspaces |
+| $\mathbb{H}_{\mathrm{s}} \tilde\pi_2$, $\tilde\pi_2 \mathbb{H}_{\mathrm{s}}$ | $K_{\ell_v}$, $R_{\ell_w}$ | maximal isotropic subspaces |
 
 The last row is the dictionary of (*Split-Quaternion Zero Divisors*, §*The Two Families*), where $\ell_v$ and $\ell_w$ are the lines spanned by $(1,1)$ and $(1,-1)$ and the subspaces $R_\ell$, $K_\ell$ are the two families of maximal isotropic subspaces. The table shows that the algebra and the matrix algebra carry the same structure: the scalar part is the trace part, the vector part is the traceless part, the split-complex subalgebra $\mathbb{D}_3$ is the diagonal subalgebra, and the minimal ideals are the isotropic subspaces.
 
 **Corollary (The Idempotents in the Model).** The idempotents of the algebra correspond to the idempotent matrices of rank one together with $0$ and $I$. In particular
 
 $$
-\Phi(\tilde\pi_+) = \tfrac12 \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}, \qquad
-\Phi(\tilde\pi_-) = \tfrac12 \begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix},
+\Phi(\tilde\pi_1) = \tfrac12 \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}, \qquad
+\Phi(\tilde\pi_2) = \tfrac12 \begin{pmatrix} 1 & -1 \\ -1 & 1 \end{pmatrix},
 $$
 
-two rank-one projections, and $\Phi(\tilde\pi_+) + \Phi(\tilde\pi_-) = I$ with $\Phi(\tilde\pi_+) \Phi(\tilde\pi_-) = 0$.
+two rank-one projections, and $\Phi(\tilde\pi_1) + \Phi(\tilde\pi_2) = I$ with $\Phi(\tilde\pi_1) \Phi(\tilde\pi_2) = 0$.
 
 **Proof.** The images are computed from the formula for $\Phi$, and the identities are the images of the identities of (*Split-Quaternion Algebra*, §*The Idempotents*). The classification of idempotents is that of *Split-Quaternion Roots of Minus One*, §*The Relation to the Idempotents and to the Zero Divisors*.
 

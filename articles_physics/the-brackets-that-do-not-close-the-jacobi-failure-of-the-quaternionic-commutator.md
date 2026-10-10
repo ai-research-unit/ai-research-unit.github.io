@@ -177,7 +177,7 @@ which carry a scalar part into the vector subspace. The three smallest witnesses
 $(e_0,e_1,e_2),(e_0,e_1,e_3),(e_0,e_2,e_3)$; the corpus's canonical witness is the first, with cyclic sum
 $-e_3$.
 
-**Remark (on the six subspaces).** The identity holds on the centre and on the vector subspace and fails
+**Remark (on the remarkable subspaces).** The identity holds on the centre and on the vector subspace and fails
 on the four four-dimensional subspaces. It holds on the vector subspace because there the operation is
 the cross product, which is a Lie bracket; it fails on every subspace that mixes the scalar and vector
 directions, which is exactly where the mixed terms live.

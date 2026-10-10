@@ -228,7 +228,7 @@ charge is **labelled speculation**, requiring a dynamical argument this article 
   pairings side by side.
 - Companion article *Mass, Rank and the Positivity of the Dagger*, for the positive
   definite form and its cone.
-- Companion article *The Four Other Remarkable Subspaces*, for the sign patterns of the involutions on
+- Companion article *Other Remarkable Subspaces*, for the sign patterns of the involutions on
   the form.
 - Companion article *The Mathematical Study of Biquaternions*, the physics entry point to the
   mathematical study under which this block sits; its *Biquaternions as a Sesqualgebra over

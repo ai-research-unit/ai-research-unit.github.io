@@ -5,7 +5,7 @@
 
 This article classifies the finite-dimensional real representations of the split-quaternion algebra, proves that the algebra is semisimple and has exactly one irreducible representation up to equivalence, computes its representation ring, relates the algebra's representations to the representations of the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ and to the double cover of the Lorentz group of signature $(2,1)$, and compares the result with the quaternion case.
 
-The split-quaternion algebra, its matrix model $\Phi$, its idempotents $\tilde\pi_\pm$, its vector subspace $V$ and its simplicity are assumed from *Split-Quaternion Algebra*. The defining module and the irreducibility of the defining representation are assumed from *Split-Quaternion Matrix Element Representations*, §*The Defining Module*. The matrix algebra $M_2(\mathbb{R})$, its matrix units and its modules are assumed from *Matrix Algebras*; the highest-weight classification of the finite-dimensional $\mathrm{SL}_2$-modules is assumed from *Representations of Lie Algebras*, and the tensor conventions of this category for the comparison come from *Quaternion Element Representations*. The double cover is stated here and proved in *Split-Quaternion Rotations and the Lorentz Group*; the homogeneous spaces are treated in *Split-Quaternions and Hyperbolic Geometry*. Nothing physical is invoked.
+The split-quaternion algebra, its matrix model $\Phi$, its idempotents $\tilde\pi_{1,2}$, its vector subspace $V$ and its simplicity are assumed from *Split-Quaternion Algebra*. The defining module and the irreducibility of the defining representation are assumed from *Split-Quaternion Matrix Element Representations*, §*The Defining Module*. The matrix algebra $M_2(\mathbb{R})$, its matrix units and its modules are assumed from *Matrix Algebras*; the highest-weight classification of the finite-dimensional $\mathrm{SL}_2$-modules is assumed from *Representations of Lie Algebras*, and the tensor conventions of this category for the comparison come from *Quaternion Element Representations*. The double cover is stated here and proved in *Split-Quaternion Rotations and the Lorentz Group*; the homogeneous spaces are treated in *Split-Quaternions and Hyperbolic Geometry*. Nothing physical is invoked.
 
 ## Representations of $\mathbb{H}_{\mathrm{s}}$
 
@@ -35,15 +35,15 @@ It is the representation on the four-dimensional space $\mathbb{H}_{\mathrm{s}}$
 
 The idempotents give a decomposition of every representation.
 
-**Theorem (The Idempotent Splitting).** Let $M$ be a representation and let $\tilde\pi_\pm = \tfrac12(1 \pm e_2)$ be the non-central idempotents. Then
+**Theorem (The Idempotent Splitting).** Let $M$ be a representation and let $\tilde\pi_{1,2} = \tfrac12(1 \pm e_2)$ be the non-central idempotents. Then
 
 $$
-M = \tilde\pi_+ M \oplus \tilde\pi_- M
+M = \tilde\pi_1 M \oplus \tilde\pi_2 M
 $$
 
-as real vector spaces. In the case of the simple module the summands are the eigenspaces of $\Phi(e_2)$ on $\mathbb{R}^2$, the lines $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$, and in the algebra the corresponding objects are the minimal ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_\pm$.
+as real vector spaces. In the case of the simple module the summands are the eigenspaces of $\Phi(e_2)$ on $\mathbb{R}^2$, the lines $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$, and in the algebra the corresponding objects are the minimal ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$.
 
-**Proof.** The identities $\tilde\pi_+ + \tilde\pi_- = 1$ and $\tilde\pi_+\tilde\pi_- = 0$ give $v = \tilde\pi_+v + \tilde\pi_-v$ for every $v$, so the sum is all of $M$; and if $v \in \tilde\pi_+M \cap \tilde\pi_-M$, say $v = \tilde\pi_+v'$, then $v = \tilde\pi_+v$ because $\tilde\pi_+^2 = \tilde\pi_+$, while $v = \tilde\pi_-v''$ gives $\tilde\pi_+v = \tilde\pi_+\tilde\pi_-v'' = 0$; hence $v = 0$ and the sum is direct. Both summands are invariant under $\tilde\pi_+$ and $\tilde\pi_-$, since $\tilde\pi_\pm^2 = \tilde\pi_\pm$ and $\tilde\pi_+\tilde\pi_- = 0$. For the last statement, $\Phi(\tilde\pi_+)$ and $\Phi(\tilde\pi_-)$ are the rank-one projections of (*Split-Quaternion Matrix Element Representations*, §*The Image as a Linear Subspace*), with images $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$.
+**Proof.** The identities $\tilde\pi_1 + \tilde\pi_2 = 1$ and $\tilde\pi_1\tilde\pi_2 = 0$ give $v = \tilde\pi_1v + \tilde\pi_2v$ for every $v$, so the sum is all of $M$; and if $v \in \tilde\pi_1M \cap \tilde\pi_2M$, say $v = \tilde\pi_1v'$, then $v = \tilde\pi_1v$ because $\tilde\pi_1^2 = \tilde\pi_1$, while $v = \tilde\pi_2v''$ gives $\tilde\pi_1v = \tilde\pi_1\tilde\pi_2v'' = 0$; hence $v = 0$ and the sum is direct. Both summands are invariant under $\tilde\pi_1$ and $\tilde\pi_2$, since $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2}$ and $\tilde\pi_1\tilde\pi_2 = 0$. For the last statement, $\Phi(\tilde\pi_1)$ and $\Phi(\tilde\pi_2)$ are the rank-one projections of (*Split-Quaternion Matrix Element Representations*, §*The Image as a Linear Subspace*), with images $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$.
 
 ## Classification
 
@@ -214,7 +214,7 @@ The Lie algebra $\mathrm{SL}_2(\mathbb{R}) = V$ with the commutator has a strict
 | $(\mathbb{R}^2)^{\oplus d}$ | the general finite-dimensional representation | this article |
 | $M$ | a general finite-dimensional representation (module) | this article |
 | $\lambda$, $\varrho$ | the left and right regular representations | this article |
-| $\tilde\pi_\pm$ | the non-central idempotents and their splitting | *Split-Quaternion Algebra* |
+| $\tilde\pi_{1,2}$ | the non-central idempotents and their splitting | *Split-Quaternion Algebra* |
 | $\operatorname{End}_{\mathbb{H}_{\mathrm{s}}}(\mathbb{R}^2) = \mathbb{R}$ | Schur's lemma; the algebra is split | this article |
 | $R(\mathbb{H}_{\mathrm{s}}) \cong \mathbb{Z}$ | the representation ring, product $m\cdot n = 2mn$ | this article |
 | $\mathbb{H}_{\mathrm{s}}\text{-}\mathbf{mod} \simeq \mathbf{Vect}_{\mathbb{R}}$ | Morita equivalence | this article |

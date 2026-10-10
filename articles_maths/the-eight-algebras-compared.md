@@ -38,9 +38,9 @@ The first column carries the thing being compared — the invariant, the propert
 
 The two systems that name the category are distinguished once, in *The Number Systems as Clifford Algebras*, and the distinction is used throughout.
 
-**The biquaternions** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ are the complexification of the quaternions. They are four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$, they carry a central scalar imaginary $i$ with $i^2 = -1$ commuting with the quaternion units, and they are isomorphic to the matrix algebra $M_2(\mathbb{C})$ (as in *Introduction to the 2×2 Matrix Representation of Biquaternions*, §*The Representation*). They are simple but not a division algebra: the norm is complex-valued and vanishes on a cone of real codimension two.
+**The biquaternions** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ are the complexification of the quaternions. They are four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$, they carry a central scalar imaginary $i$ with $i^2 = -1$ commuting with the quaternion units, and they are isomorphic to the matrix algebra $M_2(\mathbb{C})$ (as in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Representation*). They are simple but not a division algebra: the norm is complex-valued and vanishes on a cone of real codimension two.
 
-**The split biquaternions** $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ are the tensor product of the split complex algebra with the quaternions. They are also eight-dimensional over $\mathbb{R}$, they carry a central split complex unit $j$ with $j^2 = +1$ commuting with the quaternion units, and they are isomorphic to the direct sum $\mathbb{H} \oplus \mathbb{H}$ by the idempotent decomposition along $\tilde\Pi_\pm = \tfrac12(1 \pm j)$ (as in *Split-Biquaternion Algebra*, §*The Algebra Structure*). They are neither simple nor a division algebra, but they are semisimple; their norm is split complex-valued.
+**The split biquaternions** $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ are the tensor product of the split complex algebra with the quaternions. They are also eight-dimensional over $\mathbb{R}$, they carry a central split complex unit $j$ with $j^2 = +1$ commuting with the quaternion units, and they are isomorphic to the direct sum $\mathbb{H} \oplus \mathbb{H}$ by the idempotent decomposition along $\tilde\Pi_{1,2} = \tfrac12(1 \pm j)$ (as in *Split-Biquaternion Algebra*, §*The Algebra Structure*). They are neither simple nor a division algebra, but they are semisimple; their norm is split complex-valued.
 
 The two systems are built on the same quaternion algebra and differ in the central field adjoined, and every contrast between them in this category traces back to that one difference: $\mathbb{C}$ is a field and $\mathbb{D}$ is not.
 
@@ -138,7 +138,7 @@ The category compares the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{D}, \m
 | $i$ | the central scalar imaginary of $\mathbb{B}$, $i^2=-1$ |
 | $j$ | the central split complex unit of $\mathbb{H}_{\mathbb{D}}$, $j^2=+1$ |
 | $\varepsilon$ | the dual unit of $\mathbb{D}'$, $\varepsilon^2=0$ |
-| $\tilde\Pi_\pm=\tfrac12(1\pm j)$ | the idempotents of $\mathbb{D}$ and of $\mathbb{H}_{\mathbb{D}}$ |
+| $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$ | the idempotents of $\mathbb{D}$ and of $\mathbb{H}_{\mathbb{D}}$ |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$, ${}^{\flat}$ | quaternion, complex, Hermitian and anti-Hermitian conjugation |
 | $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | the norm |
 | $\operatorname{Aut}$, $\operatorname{Der}$ | the automorphism group and derivation space |

@@ -33,7 +33,7 @@ with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar 
 $$
 N(\tilde{H})=\bigl(h_0^2-|\mathbf{h}|^2\bigr)e_0 .
 $$
-A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; a pure state is the idempotent $\tilde\Pi_\pm(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$, with matrix units $x=\tfrac12(ie_1-e_2)$, $y=\tfrac12(ie_1+e_2)$ and basis $\{p,y\}$. The unit quaternions act on the Bloch sphere by rotations.
+A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; a pure state is the idempotent $\tilde\Pi_{1,2}(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$, with matrix units $x=\tfrac12(ie_1-e_2)$, $y=\tfrac12(ie_1+e_2)$ and basis $\{p,y\}$. The unit quaternions act on the Bloch sphere by rotations.
 
 ## The State Space and Its Two Forms
 

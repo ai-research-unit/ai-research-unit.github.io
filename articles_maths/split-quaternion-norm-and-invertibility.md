@@ -5,7 +5,7 @@
 
 This article studies the split-quaternion norm, its isotropy, and the invertibility theory it determines. It proves the criterion that an element is invertible exactly when its split-quaternion norm does not vanish, describes the group of units, classifies the elements, and describes how the invertible elements are distributed among the distinguished subspaces.
 
-The split-quaternion algebra, its basis, its conjugation ${}^{\natural}$, its split-quaternion norm $N$, its idempotents $\tilde\pi_\pm$ and its subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from *Split-Quaternion Algebra* and are not redefined. The zero divisor set is treated separately in *Split-Quaternion Zero Divisors*, and the roots of $-1$ in *Split-Quaternion Roots of Minus One*. Nothing physical is invoked.
+The split-quaternion algebra, its basis, its conjugation ${}^{\natural}$, its split-quaternion norm $N$, its idempotents $\tilde\pi_{1,2}$ and its subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from *Split-Quaternion Algebra* and are not redefined. The zero divisor set is treated separately in *Split-Quaternion Zero Divisors*, and the roots of $-1$ in *Split-Quaternion Roots of Minus One*. Nothing physical is invoked.
 
 ## The Split-Quaternion Norm
 
@@ -197,13 +197,13 @@ The invertible elements are those with $q_0^2 \neq q_2^2$; the non-invertible no
 
 ### The Minimal Left and Right Ideals
 
-On the two minimal left ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$, every element is a zero divisor or zero.
+On the two minimal left ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, every element is a zero divisor or zero.
 
-**Proposition.** For every $\tilde q \in \mathbb{H}_{\mathrm{s}}$, $N(\tilde q\tilde\pi_\pm) = N(\tilde q)N(\tilde\pi_\pm) = 0$. Hence $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$ and $\mathbb{H}_{\mathrm{s}} \tilde\pi_-$ are **totally isotropic**: they contain no invertible element other than the origin. The same statement holds for the two minimal right ideals $\tilde\pi_+ \mathbb{H}_{\mathrm{s}}$ and $\tilde\pi_- \mathbb{H}_{\mathrm{s}}$.
+**Proposition.** For every $\tilde q \in \mathbb{H}_{\mathrm{s}}$, $N(\tilde q\tilde\pi_{1,2}) = N(\tilde q)N(\tilde\pi_{1,2}) = 0$. Hence $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$ and $\mathbb{H}_{\mathrm{s}} \tilde\pi_2$ are **totally isotropic**: they contain no invertible element other than the origin. The same statement holds for the two minimal right ideals $\tilde\pi_1 \mathbb{H}_{\mathrm{s}}$ and $\tilde\pi_2 \mathbb{H}_{\mathrm{s}}$.
 
-**Proof.** $N(\tilde\pi_\pm) = \tfrac14 N(1 \pm e_2) = \tfrac14(1 - 1) = 0$, and multiplicativity gives $N(\tilde q\tilde\pi_\pm) = N(\tilde q) \cdot 0 = 0$.
+**Proof.** $N(\tilde\pi_{1,2}) = \tfrac14 N(1 \pm e_2) = \tfrac14(1 - 1) = 0$, and multiplicativity gives $N(\tilde q\tilde\pi_{1,2}) = N(\tilde q) \cdot 0 = 0$.
 
-So each of the four two-dimensional subspaces $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$, $\tilde\pi_\pm \mathbb{H}_{\mathrm{s}}$ consists entirely of zero divisors together with the origin.
+So each of the four two-dimensional subspaces $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ consists entirely of zero divisors together with the origin.
 
 ### Summary of the Distribution
 
@@ -213,7 +213,7 @@ So each of the four two-dimensional subspaces $\mathbb{H}_{\mathrm{s}} \tilde\pi
 | $V$ | $3$ | $q_1^2 - q_2^2 - q_3^2$, signature $(2,1)$ | the light cone $q_1^2 = q_2^2 + q_3^2$ |
 | $\mathbb{D}_2$ | $2$ | $q_0^2 - q_2^2$, signature $(1,1)$ | $\mathbb{R}(1 \pm e_2) \setminus \{0\}$ |
 | $\mathbb{D}_3$ | $2$ | $q_0^2 - q_3^2$, signature $(1,1)$ | $\mathbb{R}(1 \pm e_3) \setminus \{0\}$ |
-| $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$, $\tilde\pi_\pm \mathbb{H}_{\mathrm{s}}$ | $2$ | identically $0$ | the whole subspace minus the origin |
+| $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ | $2$ | identically $0$ | the whole subspace minus the origin |
 
 The invertible elements are the complement of the null cone $\{N = 0\}$, an open dense set of full measure. They form two connected components, $\{N > 0\}$ and $\{N < 0\}$.
 
@@ -233,7 +233,7 @@ The split-quaternion norm is $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$, of s
 
 A nonzero element is invertible exactly when $N(\tilde q) \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$; it is a zero divisor exactly when $N(\tilde q) = 0$. The group of units is $\{N \neq 0\}$, the norm-one subgroup is $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{N = \pm 1\} = U \sqcup (-U)$ has two components. The units form the two connected components $\{N > 0\}$ and $\{N < 0\}$.
 
-The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are units; in $V$ the units are the spacelike and timelike vectors and the zero divisors are the light cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$, $\tilde\pi_\pm \mathbb{H}_{\mathrm{s}}$ are totally isotropic. In the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
+The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are units; in $V$ the units are the spacelike and timelike vectors and the zero divisors are the light cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ are totally isotropic. In the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
 
 ## Summary of Notation
 
@@ -248,7 +248,7 @@ The classification of the elements is a dichotomy plus the zero element: inverti
 | $\{N = \pm 1\}$ | the two split-quaternion norm levels, $U$ and $-U$ | this article |
 | $P = \{N > 0\}$, $Q = \{N < 0\}$ | the two components of the units | this article |
 | $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ | the scalar, vector and split-complex subspaces | *Split-Quaternion Algebra* |
-| $\tilde\pi_\pm = \tfrac12(1 \pm e_2)$ | the non-central idempotents | *Split-Quaternion Algebra* |
+| $\tilde\pi_{1,2} = \tfrac12(1 \pm e_2)$ | the non-central idempotents | *Split-Quaternion Algebra* |
 | spacelike, timelike, lightlike | the sign of $N$ on $V$ | this article |
 | $\mathbb{H}$ | the real quaternions | *Quaternion Algebra* |
 | $\mathbb{H}_{\mathbb{D}}$ | the split-biquaternions, a later Part V system | *The Number Systems as Clifford Algebras* |

@@ -31,7 +31,7 @@ Jacobi Failure*; the physics of polarisation and of spin to
 *Observables, Gauge Generators and the Chirality of the Internal Action*; the states to *The States the
 Indefinite Metric Cannot Normalise*; and the algebra to the mathematics articles *Introduction to the
 Antisymmetric Quaternionic Sesqualgebra of Biquaternions*, *The Conjugate Cross Product and the Jacobi
-Failure of the Antisymmetric Quaternionic Sesqualgebra*, *The Six Subspaces under the Antisymmetric
+Failure of the Antisymmetric Quaternionic Sesqualgebra*, *Remarkable Subspaces under the Antisymmetric
 Quaternionic Sesqualgebra of Biquaternions*, *The Sesquilinear Pairing of the Antisymmetric Quaternionic
 Sesqualgebra* and *The 12 Products of the Biquaternion Complex Space*.
 
@@ -68,7 +68,7 @@ $$
 
 The value is a **pure vector** and its image is therefore the vector subspace
 $\mathrm{Vect}(\mathbb{B})=\{Q_0=0\}$; this is the sharpest difference from its symmetric companion
-$\tilde P\bullet\tilde Q$, whose values lie in no one of the six subspaces for a general pair. Verified on
+$\tilde P\bullet\tilde Q$, whose values lie in no one of the remarkable subspaces for a general pair. Verified on
 $100$ random pairs.
 
 ### The Coordinate Rule
@@ -338,7 +338,7 @@ the subject of the companion article of the band.
 - Mathematics article *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the rule, the class, the coordinate form and the conjugate-alternation.
 - Mathematics article *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra* (`articles_maths/the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.md`), for the diagonal and the failure of the Jacobi identity.
 - Mathematics article *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the placement of AQS among the twelve and its laws.
-- Mathematics article *The Six Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-antisymmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the behaviour of the operation on the six subspaces.
+- Mathematics article *Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-antisymmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the behaviour of the operation on the remarkable subspaces.
 - Mathematics article *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra* (`articles_maths/the-sesquilinear-pairing-of-the-antisymmetric-quaternionic-sesqualgebra.md`), for the pairing of a value with a third element, the Gram matrix of the basis pairs, the forms invariant under the block and the trace form.
 - Companion article *The Gauge Metric as a Product: the Symmetric Quaternionic Sesquilinear Product*, for the symmetric half of the same row.
 - Companion article *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure*, for the failure of the bracket to close.

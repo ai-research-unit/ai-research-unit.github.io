@@ -132,4 +132,4 @@ The completely positive maps of the biquaternion algebra are exactly the sums of
 - *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), for the fixed-point operator of a completely positive map.
 - *Bilinear Operators on a Hermitian Module with Hermitian Adjoint* (`articles_maths/bilinear-operators-on-a-hermitian-module-with-hermitian-adjoint.md`), for the operators built from two spinors, which are the rank-one elements behind the Kraus sums.
 - *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/hermitian-modules-over-a-hermitian-algebra-with-hermitian-adjoint.md`), for the module picture of the positive cone.
-- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for $\mathbb{M}_+$ itself and for the Hermitian idempotents.
+- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for $\mathbb{M}_+$ itself and for the Hermitian idempotents.

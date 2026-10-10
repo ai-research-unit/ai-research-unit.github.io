@@ -168,7 +168,7 @@ The three answer sets are summarised in one table.
 | $\tilde P^{2}=+e_0$ | $\pm e_0$ | $(\mathbf P,\mathbf P)=-1$ | involution $J$ | a reality condition |
 
 **Which subspace carries which answer.** The three meanings are separated by the subspace in which the
-root is sought, and the table reads together with the six distinguished subspaces.
+root is sought, and the table reads together with the remarkable subspaces.
 
 - Sought in the **centre** $\mathbb{C}_{\mathbb{B}}$, the roots are the central ones: $\pm ie_0$ for
   $-1$ and $\pm e_0$ for $+1$, the two complex structures and the two trivial involutions.

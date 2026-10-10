@@ -354,6 +354,6 @@ their monoid by *The Left Multiplications of the Quaternionic Product and the Op
   *Decoherence as Idempotent Projection*, for the states and for the measurement.
 - Companion article *The Material-Informational Split as a Superselection Structure in Biquaternionic
   Form*, for the two-sector split by the Hermitian conjugation.
-- Companion article *Relations Between Subspaces*, for the six subspaces and the real–imaginary split.
+- Companion article *Relations Between Subspaces*, for the remarkable subspaces and the real–imaginary split.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the one-sided units and the
   non-associativity of the conjugating products on a quaternion algebra.

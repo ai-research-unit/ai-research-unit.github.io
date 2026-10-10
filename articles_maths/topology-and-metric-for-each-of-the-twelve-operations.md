@@ -30,7 +30,7 @@ with $\varepsilon=(1,-1,-1,-1)$. They are the **general plain bilinear form**, t
   a complex-valued quadratic form on $\mathbb{B}\cong\mathbb{C}^{4}$; it is **multiplicative**, $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)$, it is the reduced norm $\det\Phi(\tilde Q)$, and its zeros are exactly the zero divisors. It is the norm of the algebra in the algebraic sense (a norm on an algebra need only be multiplicative), and it is what the corpus calls the semi-norm of the literature: of the analytic axioms it keeps only the sign, since it is complex-valued and not positive definite and the scaling axiom fails for complex $\lambda$. The **Euclidean norm** $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}=\bigl(\mathrm{Sc}(\tilde Q\tilde Q^{*})\bigr)^{1/2}$ is a genuine norm, positive definite and homogeneous, and it is **not** multiplicative. So the two are complementary: the multiplicative one is indefinite, the definite one is not multiplicative. When this article says "a norm" of the analytic kind it means $\lVert\cdot\rVert_E$; the biquaternion norm is always named in full.
 - **Realification, not *real form*.** Reading a complex form on the $8$ real coordinates is called here the **realification** of the form, and the resulting real form is its real part. The phrase "real form" is avoided for this, because in Lie theory a *real form* of a complex Lie algebra is a real Lie algebra whose complexification returns it, a different notion.
 
-The **Euclidean norm** is $\lVert\tilde{Q}\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$. The two parts of a product $f$ are $f_{+}=\tfrac12(f+E(f))$ and $f_{-}=\tfrac12(f-E(f))$, with $E(f)(\tilde{P},\tilde{Q})=f(\tilde{Q},\tilde{P})$, and the twelve codes $\mathrm{GPA},\mathrm{SPA},\mathrm{APA},\mathrm{GQA},\mathrm{SQA},\mathrm{AQA},\mathrm{GPS},\mathrm{SPS},\mathrm{APS},\mathrm{GQS},\mathrm{SQS},\mathrm{AQS}$ are those of *The 12 Products of the Biquaternion Complex Space*. The vector subspace, the centre and the two sectors $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ are those of *Introduction to the Six Subspaces*.
+The **Euclidean norm** is $\lVert\tilde{Q}\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$. The two parts of a product $f$ are $f_{+}=\tfrac12(f+E(f))$ and $f_{-}=\tfrac12(f-E(f))$, with $E(f)(\tilde{P},\tilde{Q})=f(\tilde{Q},\tilde{P})$, and the twelve codes $\mathrm{GPA},\mathrm{SPA},\mathrm{APA},\mathrm{GQA},\mathrm{SQA},\mathrm{AQA},\mathrm{GPS},\mathrm{SPS},\mathrm{APS},\mathrm{GQS},\mathrm{SQS},\mathrm{AQS}$ are those of *The 12 Products of the Biquaternion Complex Space*. The vector subspace, the centre and the two sectors $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ are those of *Introduction to the Remarkable Subspaces*.
 
 ## The Scalar Part, and the Two Facts That Distribute the Twelve
 
@@ -179,7 +179,7 @@ The operation is $\tilde{P}^{\natural}\tilde{Q}^{*}$, both slots read through a 
 
 ### SQS — symmetric quaternionic sesqualgebra
 
-The operation is the half-sum $\tfrac12(\tilde{P}^{\natural}\tilde{Q}^{*}+\tilde{Q}^{\natural}\tilde{P}^{*})$, whose values lie in no subspace of the six. By Fact 2 its scalar part is the half-sum of the Krein form with its conjugate, a **real** form of signature $(2,6)$: at $\tilde{P}=\tilde{Q}$ it reads
+The operation is the half-sum $\tfrac12(\tilde{P}^{\natural}\tilde{Q}^{*}+\tilde{Q}^{\natural}\tilde{P}^{*})$, whose values lie in no subspace of the remarkable subspaces. By Fact 2 its scalar part is the half-sum of the Krein form with its conjugate, a **real** form of signature $(2,6)$: at $\tilde{P}=\tilde{Q}$ it reads
 
 $$
 p_0^{2}+p_0^{\prime2}-p_1^{2}-p_1^{\prime2}-p_2^{2}-p_2^{\prime2}-p_3^{2}-p_3^{\prime2},
@@ -193,7 +193,7 @@ the real part of the Krein form, indefinite with one positive and three negative
 
 ### AQS — antisymmetric quaternionic sesqualgebra
 
-The operation is the half-difference $\tfrac12(\tilde{P}^{\natural}\tilde{Q}^{*}-\tilde{Q}^{\natural}\tilde{P}^{*})$, whose values lie in no subspace of the six. By Fact 2 its scalar part is the half-difference of the Krein form with its conjugate, purely imaginary, and divided by the central imaginary it is the **alternating form of the Krein form**,
+The operation is the half-difference $\tfrac12(\tilde{P}^{\natural}\tilde{Q}^{*}-\tilde{Q}^{\natural}\tilde{P}^{*})$, whose values lie in no subspace of the remarkable subspaces. By Fact 2 its scalar part is the half-difference of the Krein form with its conjugate, purely imaginary, and divided by the central imaginary it is the **alternating form of the Krein form**,
 
 $$
 \omega_{\natural}(\tilde{P},\tilde{Q})=p'_0q_0-p_0q'_0-p'_1q_1+p_1q'_1-p'_2q_2+p_2q'_2-p'_3q_3+p_3q'_3 ,
@@ -259,7 +259,7 @@ The consequences are these, and they are the mathematical form of a familiar sta
 - A **group of motions of the indefinite kind cannot preserve a positive definite form**. In the sector above, the forms invariant under the full six-dimensional algebra are a one-parameter family, all of them of inertia $(3,1)$, and every one of them is indefinite. So of the four restrictions, the two that are preserved by the whole algebra are exactly the two indefinite ones: the definite metric of the sector is preserved only by the rotations, and the indefinite metric is the one the full algebra of motions fixes.
 - **The operation of the twelve that carries the definite metric** is $\mathrm{SPS}$, and it is also the operation of the plain sesquilinear row, whose antisymmetric companion $\mathrm{APS}$ takes its values in the sector just examined. The definite metric and the indefinite one are companions in one row of the table, which is why the same twelve operations support both readings.
 
-The reading of the last two items in the rest of the corpus is *Biquaternion Automorphisms and Derivations*, where the group of the indefinite form appears as the automorphism group of the algebra, and *Biquaternion Lorentzian and Conformal Geometry*; the mathematics of the sector is *The Six Subspaces under the General Quaternionic Algebra of Biquaternions* and *The Six Subspaces under the General Plain Sesqualgebra of Biquaternions*.
+The reading of the last two items in the rest of the corpus is *Biquaternion Automorphisms and Derivations*, where the group of the indefinite form appears as the automorphism group of the algebra, and *Biquaternion Lorentzian and Conformal Geometry*; the mathematics of the sector is *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* and *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions*.
 
 ## Summary
 
@@ -269,12 +269,12 @@ The twelve operations on the biquaternion space carry **one topology** and **ten
 
 - *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve names, their products, their laws and their images
 - *Topology in the Space of Biquaternions* (`articles_maths/topology-in-the-space-of-biquaternions.md`), for the one topology that all twelve share
-- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms, their Gram matrices, their signatures, their isometry groups and their restrictions to the six subspaces, and for row 1 of the table
+- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms, their Gram matrices, their signatures, their isometry groups and their restrictions to the remarkable subspaces, and for row 1 of the table
 - *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four general products whose scalar parts are the four forms
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`) and *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for rows 3 and 4, the sphere $S^{7}$ and the normed-algebra inequality
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`) and *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for rows 6 and 7 and the hyperboloids
 - *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for the symmetry of the Krein form and the fundamental decomposition
 - *The Killing Form Operator* (`articles_maths/the-killing-form-operator.md`) and *The Unitary Lie Algebra* (`articles_maths/the-unitary-lie-algebra.md`), for the bracket of $\mathrm{APA}$ and its Killing form
-- *The Six Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`) and *The Six Subspaces under the General Plain Sesqualgebra of Biquaternions* (`articles_maths/the-six-subspaces-under-the-general-plain-sesqualgebra-of-biquaternions.md`), for the restrictions of §*The Definite and the Indefinite*
-- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the centre, the vector subspace and the two sectors named in the Conventions
+- *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`) and *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra-of-biquaternions.md`), for the restrictions of §*The Definite and the Indefinite*
+- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the centre, the vector subspace and the two sectors named in the Conventions
 - *Biquaternion Lorentzian and Conformal Geometry* (`articles_maths/biquaternion-lorentzian-and-conformal-geometry.md`) and *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the reading of the indefinite metric of the sector and of the group that preserves it

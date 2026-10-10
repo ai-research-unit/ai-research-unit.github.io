@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}$ is a real vector space of dimension eight, and its topology is the one its linear structure forces; every topological statement of the corpus is made in that topology. This article develops the Euclidean structure of that space: the linear isometry onto $\mathbb{R}^{8}$ and the flat Riemannian metric; the norm, which is the one that defines the topology; the normed-algebra inequality with its sharp constant; the contractibility of the algebra and of its six distinguished subspaces; and the Euclidean unit sphere $S^{7}_{E}$, which is a genuine sphere but is not a group and contains zero divisors.
+The biquaternion algebra $\mathbb{B}$ is a real vector space of dimension eight, and its topology is the one its linear structure forces; every topological statement of the corpus is made in that topology. This article develops the Euclidean structure of that space: the linear isometry onto $\mathbb{R}^{8}$ and the flat Riemannian metric; the norm, which is the one that defines the topology; the normed-algebra inequality with its sharp constant; the contractibility of the algebra and of its remarkable subspaces; and the Euclidean unit sphere $S^{7}_{E}$, which is a genuine sphere but is not a group and contains zero divisors.
 
-The topology itself — the definitions, the equivalence of norms and the uniqueness of the topology in finite dimension — is built in *Topology in the Space of Biquaternions*. The group of units as a topological group is *The Biquaternion Unit Group as a Topological Group*; the zero divisors, the singular cone and its projective geometry are *The Null Quadric and Its Projective Geometry*; and the matrix reading of the Euclidean norm is *The Matrix Representation and the Biquaternion Dynamics*.
+The topology itself — the definitions, the equivalence of norms and the uniqueness of the topology in finite dimension — is built in *Topology in the Space of Biquaternions*. The group of units as a topological group is *The Biquaternion Unit Group as a Topological Group*; the zero divisors, the singular cone and its projective geometry are *The Null Quadric and Its Projective Geometry*; and the matrix reading of the Euclidean norm is *The Matrix Element Representation and the Biquaternion Dynamics*.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with units $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$, and a general element $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The Euclidean norm is the coordinate norm $\|\tilde{Q}\|_E=\bigl(\sum_\mu|Q_\mu|^{2}\bigr)^{1/2}$.
 
@@ -80,7 +80,7 @@ $$
 \mathbb{M}_{+}\cong\mathbb{M}_{-}\cong\mathbb{R}^{4}.
 $$
 
-**Proof.** Each is a linear subspace of $\mathbb{B}$, and the homotopy above preserves it. The dimensions are those of *Comparison of the Six Subspaces*.
+**Proof.** Each is a linear subspace of $\mathbb{B}$, and the homotopy above preserves it. The dimensions are those of *Comparison of the Remarkable Subspaces*.
 
 **Corollary.** Every map into $\mathbb{B}$ is null-homotopic, and $\mathbb{B}$ carries no topological obstruction of its own; the topology of the algebra is entirely the topology of its distinguished subsets — the unit group, the singular cone and the spheres.
 
@@ -118,7 +118,7 @@ The real inner product $(\cdot,\cdot)_{\mathbb{R}}$ makes $\mathbb{B}$ a Euclide
 
 ## Summary
 
-The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coefficient map is a linear isometry $\mathbb{B}\cong\mathbb{R}^{8}$. Multiplication satisfies the sharp inequality $\|\tilde{Q}\tilde{R}\|_E\leq\sqrt2\|\tilde{Q}\|_E\|\tilde{R}\|_E$, and central multipliers, the conjugations and inner conjugations by unitary elements are Euclidean isometries. The algebra is contractible, as is each of its six distinguished subspaces, so every map into $\mathbb{B}$ is null-homotopic. The Euclidean unit sphere $S^{7}_{E}$ is a genuine $S^{7}$ but is not a group and contains zero divisors; its intersection with the singular cone is a compact $5$-manifold, the link. The level sets of the algebra that carry a group structure are treated in *The Biquaternion Unit Group as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*.
+The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coefficient map is a linear isometry $\mathbb{B}\cong\mathbb{R}^{8}$. Multiplication satisfies the sharp inequality $\|\tilde{Q}\tilde{R}\|_E\leq\sqrt2\|\tilde{Q}\|_E\|\tilde{R}\|_E$, and central multipliers, the conjugations and inner conjugations by unitary elements are Euclidean isometries. The algebra is contractible, as is each of its remarkable subspaces, so every map into $\mathbb{B}$ is null-homotopic. The Euclidean unit sphere $S^{7}_{E}$ is a genuine $S^{7}$ but is not a group and contains zero divisors; its intersection with the singular cone is a compact $5$-manifold, the link. The level sets of the algebra that carry a group structure are treated in *The Biquaternion Unit Group as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*.
 
 ## Summary of Notation
 
@@ -138,6 +138,6 @@ The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coe
 - *Topology in the Space of Biquaternions* (`articles_maths/topology-in-the-space-of-biquaternions.md`), for the definitions, the equivalence of norms and the uniqueness of the topology used here
 - *The Topology of the Zero-Divisor Cone* (`articles_maths/the-topology-of-the-zero-divisor-cone.md`), for the zero divisors, their cone and the link used here
 - *The Unitary Group of the Biquaternion Algebra* (`articles_maths/the-unitary-group-of-the-biquaternion-algebra.md`), for the group of the unitary elements and the retraction of the group of units onto it
-- *The General Plain Sesqualgebra in the $2\times2$ Matrix Representation* (`articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-representation.md`), for the matrix reading of $\|\cdot\|_E$
+- *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the matrix reading of $\|\cdot\|_E$
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the invertibility criterion and the group of units
 - John B. Conway, *A Course in Functional Analysis*, 2nd edition (Springer, 1990), for the finite-dimensional inner-product-space facts used here

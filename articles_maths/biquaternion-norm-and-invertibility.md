@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This article studies the biquaternion norm of the algebra and the invertibility of its elements. It follows the basic algebra article, which defined the algebra, its conjugations, and its six distinguished subspaces. The goal here is to define the biquaternion norm and polarise it, to read the algebra as a complex quadratic space, to tabulate the real forms and their signatures, to record the associated Clifford algebra, to define the Euclidean norm from the general plain sesquilinear form, to establish the criterion for invertibility, and to describe the group of units.
+This article studies the biquaternion norm of the algebra and the invertibility of its elements. It follows the basic algebra article, which defined the algebra, its conjugations, and its remarkable subspaces. The goal here is to define the biquaternion norm and polarise it, to read the algebra as a complex quadratic space, to tabulate the real forms and their signatures, to record the associated Clifford algebra, to define the Euclidean norm from the general plain sesquilinear form, to establish the criterion for invertibility, and to describe the group of units.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations, its six distinguished subspaces and its general plain sesquilinear form.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations, its remarkable subspaces and its general plain sesquilinear form.
 
 Throughout this article, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, and the scalar imaginary is written $i$, so that it does not collide with the quaternion units. A general biquaternion is written
 
@@ -180,7 +180,7 @@ Over $\mathbb{C}$ a non-degenerate quadratic form has no signature; signature ap
 $$
 \operatorname{Re}N=\sum_{\mu=0}^{3}\bigl(q_\mu^2-(q'_\mu)^2\bigr),\qquad \operatorname{Im}N=2\sum_{\mu=0}^{3} q_\mu q'_\mu .
 $$
-Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate of signature $(4,4)$, a **split** (neutral) signature; in the real basis $e_\mu,ie_\mu$ its matrix is $\operatorname{diag}(1,1,1,1,-1,-1,-1,-1)$. The six distinguished real subspaces $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ (the eigenspaces of the three involutions ${}^{\natural},\bar{\cdot},{}^{*}$ of the basic algebra article) give six real forms:
+Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate of signature $(4,4)$, a **split** (neutral) signature; in the real basis $e_\mu,ie_\mu$ its matrix is $\operatorname{diag}(1,1,1,1,-1,-1,-1,-1)$. The remarkable real subspaces $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ (the eigenspaces of the three involutions ${}^{\natural},\bar{\cdot},{}^{*}$ of the basic algebra article) give six real forms:
 
 | Real subspace | $N$ restricted | Signature |
 |---|---|---|
@@ -193,7 +193,7 @@ Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate
 
 Each is a real slice whose complexification is $(\mathbb{B},N)$. The full realification is split; the Lorentzian slice is $\mathbb{M}_+$, and up to sign $\mathbb{M}_-$.
 
-Beyond the six distinguished subspaces, a mixed real subspace carries a signature of its own. The one the geometry uses is the **split form of signature $(2,2)$**,
+Beyond the remarkable subspaces, a mixed real subspace carries a signature of its own. The one the geometry uses is the **split form of signature $(2,2)$**,
 $$
 W=\operatorname{span}_{\mathbb{R}}\{e_0,e_1,ie_2,ie_3\},\qquad N|_W=a^2+b^2-c^2-d^2 \quad \text{for } a e_0+b e_1+ci e_2+di e_3,
 $$
@@ -331,7 +331,7 @@ The biquaternion algebra $\mathbb{B}$ contains zero divisors, so it is **not** a
 
 ## Distribution of the Invertible Elements
 
-We now examine how the invertible elements are distributed among the six distinguished subspaces of $\mathbb{B}$ defined in the basic algebra article. The criterion is the same in all cases: an element is invertible if and only if its biquaternion norm is nonzero.
+We now examine how the invertible elements are distributed among the remarkable subspaces of $\mathbb{B}$ defined in the basic algebra article. The criterion is the same in all cases: an element is invertible if and only if its biquaternion norm is nonzero.
 
 ### The Complex Subspace $\mathbb{C}_{\mathbb{B}}$
 
@@ -455,9 +455,9 @@ On all three components, the biquaternion norm is nonzero.
 
 ### Summary of the Distribution
 
-Of the six distinguished subspaces of $\mathbb{B}$:
+Of the remarkable subspaces of $\mathbb{B}$:
 
-- $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain **no** zero divisors: every nonzero element of each is invertible. The first two are subalgebras, and they are the division algebras among the six; $i\mathbb{H}_{\mathbb{B}}$ is an $\mathbb{H}_{\mathbb{B}}$-module and not a subalgebra, but its nonzero elements are invertible in $\mathbb{B}$.
+- $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain **no** zero divisors: every nonzero element of each is invertible. The first two are subalgebras, and they are the division algebras among the remarkable subspaces; $i\mathbb{H}_{\mathbb{B}}$ is an $\mathbb{H}_{\mathbb{B}}$-module and not a subalgebra, but its nonzero elements are invertible in $\mathbb{B}$.
 - $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a light cone of zero divisors, and the invertible elements form the complement of the cone, with three connected components each.
 - $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone of zero divisors, and the invertible elements form a connected complement.
 
@@ -503,7 +503,7 @@ The biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q} 
 
 The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$. The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. The group of units $\mathbb{B}^\times$ is an open, connected subset of $\mathbb{B}$, and is a topological group of real dimension $8$ with centre $\mathbb{C}^\times$; its topology is in *The Biquaternion Unit Group as a Topological Group* and its Lie structure in *Biquaternion Lie Group and Exponential Structure*.
 
-The algebra $\mathbb{B}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the six distinguished subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors at all; $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a light cone of zero divisors, the invertible elements in each forming a complement of the cone with three connected components; and $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, whose complement is connected.
+The algebra $\mathbb{B}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the remarkable subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors at all; $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a light cone of zero divisors, the invertible elements in each forming a complement of the cone with three connected components; and $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, whose complement is connected.
 
 The zero divisors themselves are studied in the article on biquaternion zero divisors, and the classification of the roots of $-1$ that underlies the idempotent classification is studied in the article on biquaternion roots of minus one.
 
