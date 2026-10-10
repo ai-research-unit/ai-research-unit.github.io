@@ -170,8 +170,6 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [Topology in the Space of Biquaternions](../articles_maths/topology-in-the-space-of-biquaternions.html)
 
-*(The plain topology is above: *Topology in the Space of Biquaternions* fixes the space and its one topology, *The Topology of the Zero-Divisor Cone* the singular set, and *Topology of the Cones and Level Sets* the topology that the four forms and the norm carry and prove themselves. A second group, *Topology of the Groups and Slices*, collects the articles that quote a compactness fact rather than establish it. The sub-categories below are parked on the maths side under `### ERROR`: they now hold the algebra of the four forms and the operators, organised by the four general products, which is geometry and not topology.)*
-
 ### Topology of the Biquaternion Algebra
 
 - [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html)
