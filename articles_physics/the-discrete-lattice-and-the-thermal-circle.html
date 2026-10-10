@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Discrete Lattice and the Thermal Circle — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-discrete-lattice-and-the-thermal-circle"><strong>The Discrete Lattice and the Thermal Circle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The corpus has two disciplines of discreteness, and they have never been compared. The <strong>algebraic</strong>
+discipline is the discrete lattice: the integral structures of the algebra, the Lipschitz and Hurwitz orders,
+and the finite groups of units attached to them — the quaternion group of order eight, the binary tetrahedral
+group of order twenty-four and the binary polyhedral groups — all owned by <em>Biquaternion Orders and Finite
+Groups of Units</em>. The <strong>analytic</strong> discipline is the thermal circle: the imaginary-time compactification and
+the discrete Matsubara frequencies, owned by <em>The Matsubara Formalism in Biquaternionic Form</em>. The lattice is
+static and algebraic, the circle is thermal and analytic, and this article states the one principle that
+produces both.</p>
+<p>The article owns the comparison and the principle, and no theorem. The orders and their unit groups are the
+orders article; the frequencies, the circle and the KMS condition are the Matsubara article, <em>The KMS
+Condition and the Biquaternion Framework</em> and <em>Thermal Time and the Modular Flow in the Biquaternion
+Framework</em>; the central phase whose compactification the thermal circle realises is <em>The Central
+Rotation: Phase, Duality and the Wick Rotation as One Generator</em>; the clock structure is <em>Each Sector Is the
+Other's Clock: the Sector Exchange as Relational Time</em>; and the discrete charge is <em>Particle Types, Discrete
+Charge and Three-Particle Couplings</em>.</p>
+<p><strong>Conventions.</strong> $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_0\}\cong U(2)$ is the unitary slice,
+$Sp(1)\cong SU(2)$ its real-quaternion part; the thermal circle is the compact imaginary-time direction of
+circumference $\beta\hbar$, and the Matsubara frequencies are $\omega_n=2\pi n/\beta\hbar$.</p>
+<h2 id="one-principle">One Principle</h2>
+<p>The principle is a single sentence and it covers both disciplines.</p>
+<blockquote>
+<p><strong>Every discreteness in the corpus is the Pontryagin dual of a compactness.</strong></p>
+</blockquote>
+<p>A discrete abelian group is the character group of a compact abelian group, and conversely. The corpus's
+discrete data all sit on compact groups, and the discrete datum is the labelling of a representation of that
+compact group — equivalently, of a character of a compact dual. Four instances, one per discipline and two
+that bridge them:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>compact object</th>
+<th>its discreteness</th>
+<th>the corpus's reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the central phase $U(1)$</td>
+<td>the integer phase winding</td>
+<td>the discrete charge label (<em>Particle Types</em>)</td>
+</tr>
+<tr>
+<td>the internal group $U(2)$, compact</td>
+<td>its irreducible labels</td>
+<td>internal quantum numbers, the discrete charge</td>
+</tr>
+<tr>
+<td>the thermal circle, circumference $\beta\hbar$</td>
+<td>the Matsubara frequencies $\omega_n=2\pi n/\beta\hbar$</td>
+<td>the thermal spectrum (<em>The Matsubara Formalism</em>)</td>
+</tr>
+<tr>
+<td>the unit sphere $Sp(1)\cong SU(2)$, compact</td>
+<td>its finite subgroups and the orders above them</td>
+<td>the finite unit groups and the discrete lattice (<em>Biquaternion Orders</em>)</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first two rows are the same mechanism read at two sizes: the compactness of the phase is why angular
+momentum and charge are discrete, and the internal group being compact is why its labels are discrete. The
+third row is thermal: the imaginary-time direction is a <strong>circle</strong>, a compact direction, and its character
+group is $\mathbb{Z}$, the Matsubara lattice. The fourth row is algebraic: the unit sphere is compact, and a
+discrete subgroup of a compact group is finite, so the lattice of units is finite and the orders are the
+integral lattices inside the compact group.</p>
+<h2 id="the-lattice-and-the-circle-as-two-duals">The Lattice and the Circle as Two Duals</h2>
+<p>The principle sharpens when the two disciplines are set side by side, because they are duals of <strong>one</strong>
+compact object and <strong>two different</strong> ones at once.</p>
+<p><strong>One object.</strong> The thermal circle is the central phase at finite temperature. The Matsubara analytic
+continuation $t\mapsto-i\tau$ turns the time direction into the imaginary direction, and the imaginary
+direction is the central phase: the KMS condition is the statement of periodicity in that phase, and the
+modular flow it generates is the central rotation. So the circle whose dual is the Matsubara lattice is the
+central phase compactified, and the discrete thermal spectrum and the discrete charge label are two
+characters of one compact phase. That is the unification the article's title names: <strong>the lattice and the
+circle are dual readings of the compact central phase, one in the temperature and one in the charge.</strong></p>
+<p><strong>Two objects.</strong> The comparison also shows where the disciplines differ, and the difference is exact. The
+algebraic lattice is a lattice of <strong>invertible elements</strong> inside the <strong>real compact group</strong> $Sp(1)$: it is
+discrete because the group it sits in is compact and its elements are separated. The thermal lattice is
+discrete because its dual — the circle — is compact, and it is a lattice of <strong>frequencies</strong>, not of
+elements. So the two discretenesses are dual in the same sense and are not the same lattice: one is a
+subgroup of a compact group, the other is the character group of a compact group. The first is <strong>finite</strong>;
+the second is <strong>infinite and periodic</strong>. The corpus has a finite lattice and an infinite lattice, related to
+two compactnesses of different origins, and the article states both rather than conflating them.</p>
+<h2 id="where-the-two-meet-the-orders-at-finite-temperature">Where the Two Meet: The Orders at Finite Temperature</h2>
+<p>The comparison suggests exactly one meeting point, and the article states it as a programme. The orders
+article's finite unit groups are the discrete subgroups of the compact unit sphere, and the Matsubara
+article's lattice is the dual of the compact imaginary-time circle. A finite-temperature reading of the
+orders would require the discrete unit group to be a <strong>spectrum</strong> — the set of excitations the imaginary-time
+circle supports — and the corpus supplies no such statement; the identification of the order's units with a
+thermal partition function is not made anywhere, and the article records the gap rather than proposing a
+formula. What is available is the shape: both are "discreteness from compactness", so a thermal reading of
+the lattice would be a partition function whose spectrum is the unit group, and whether such a function is
+the algebra's is open.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<ul>
+<li><strong>Discreteness is a consequence of compactness, never a postulate.</strong> The reading is that every discrete
+  label of the framework — charge, angular momentum, Matsubara frequency, unit lattice — is discrete because
+  some group in its construction is compact, so the framework never has to impose a discretisation. Owner:
+  the four articles of the table.</li>
+<li><strong>The thermal circle is the central phase.</strong> The reading is that the imaginary time of the Wick rotation and
+  the central phase of the algebra are one compact direction, so the Matsubara formalism is the central
+  rotation at finite temperature. Owner: <em>The Matsubara Formalism in Biquaternionic Form</em> and <em>The Central
+  Rotation</em>.</li>
+<li><strong>A finite lattice and an infinite lattice, one principle.</strong> The reading is that the finite unit groups and
+  the infinite Matsubara lattice are the two dual faces of the compactness principle, one a subgroup and one
+  a character group, so the corpus's two disciplines of discreteness are one principle with two duals.
+  Boundary: a statement of the principle, and the thermal reading of the orders is left open.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The corpus's discrete data fall into two disciplines: the algebraic lattice of orders and finite unit groups
+in the compact real unit sphere, and the thermal lattice of Matsubara frequencies dual to the compact
+imaginary-time circle. This article states the one principle that produces both — every discreteness is the
+Pontryagin dual of a compactness — and tables its four instances: the compact central phase, the compact
+internal group, the thermal circle and the compact unit sphere. The two disciplines meet in the central
+phase, which is the thermal circle at finite temperature, and they differ in that the algebraic lattice is a
+finite subgroup while the thermal lattice is an infinite character group. A thermal reading of the orders is
+named as a gap and not proposed as a formula.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$U(1)=e^{i\theta}e_0$</td>
+<td>the compact central phase, dual to the integer charge lattice</td>
+</tr>
+<tr>
+<td>$U\cong U(2)$</td>
+<td>the compact unitary slice, whose irreducible labels are the internal quantum numbers</td>
+</tr>
+<tr>
+<td>$\omega_n=2\pi n/\beta\hbar$</td>
+<td>the Matsubara frequencies, the dual lattice of the thermal circle</td>
+</tr>
+<tr>
+<td>$Sp(1)\cong SU(2)$</td>
+<td>the compact real unit sphere, in which the orders and their finite unit groups sit</td>
+</tr>
+<tr>
+<td>$\beta\hbar$</td>
+<td>the circumference of the thermal circle</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Biquaternion Orders and Finite Groups of Units</em>, for the orders, the finite unit groups and the infinite
+  unit group of the complex order.</li>
+<li><em>The Matsubara Formalism in Biquaternionic Form</em>, for the thermal circle, the Matsubara frequencies and the
+  partition function.</li>
+<li><em>The KMS Condition and the Biquaternion Framework</em> and <em>Thermal Time and the Modular Flow in the
+  Biquaternion Framework</em>, for the KMS periodicity and the modular flow.</li>
+<li><em>The Central Rotation: Phase, Duality and the Wick Rotation as One Generator</em>, for the central phase that
+  the thermal circle realises.</li>
+<li><em>Particle Types, Discrete Charge and Three-Particle Couplings</em>, for the discrete charge from the compact
+  group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

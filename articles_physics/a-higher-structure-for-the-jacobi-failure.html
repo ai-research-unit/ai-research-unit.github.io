@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Higher Structure for the Jacobi Failure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-higher-structure-for-the-jacobi-failure"><strong>A Higher Structure for the Jacobi Failure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Three brackets of the corpus fail the Jacobi identity, and each failure is owned by its own article: the
+antisymmetrised quaternionic product, <em>The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic
+Commutator</em>; the antisymmetric quaternionic <strong>sesqui</strong>linear product, <em>The Conjugate Cross Product and the
+Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra</em>; and the bracket of the state space,
+<em>Interference without a Lie Algebra: the Jacobi Failure in the State Space</em>. Each owner states the failure,
+locates it (the associator defect of the parent product, and the complex witness off the real forms) and
+draws the negative consequence, that the operation cannot be the Lie algebra of a group. None states the
+<strong>positive</strong> reading of the same data, and that is what this article adds: a bracket that fails Jacobi and a
+product that fails associativity are not merely operations that are not Lie algebras; they are the <strong>first
+terms of a higher structure</strong>, and the failure measurements the corpus already has are the low operations of
+that structure.</p>
+<p>The article owns the reading and the programme, and no theorem. The higher algebra itself is
+<em>A-Infinity and L-Infinity Algebras</em> of the mathematics corpus, which owns the higher Jacobi identities, the
+operations $\ell_n$ of degree $2-n$ and the statement that $\ell_3$ and the higher operations measure the
+deviation from a strict graded Lie algebra. The failure results are the three owners named above, together
+with <em>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra</em> and <em>The
+Associator and the Ternary Product of the Quaternionic Product</em>. The gauge reading of the failure is <em>The
+Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</em>.</p>
+<p><strong>Conventions.</strong> The quaternionic product is $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, its
+antisymmetrisation $\tilde P\wedge_{\natural}\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$, and
+the associator of the parent is
+$(\tilde P,\tilde Q,\tilde R)=(\tilde P\star\tilde Q)\star\tilde R-\tilde P\star(\tilde Q\star\tilde R)$.</p>
+<h2 id="two-failures-one-shape">Two Failures, One Shape</h2>
+<p>The two failures have the same shape and it is the shape of a <strong>ternary residue</strong>.</p>
+<ul>
+<li><strong>The associativity failure.</strong> The plain product is associative — recomputed on $100$ of $100$ random
+  triples — and the quaternionic product is not: the associator $(\tilde P,\tilde Q,\tilde R)$ is nonzero on
+  $100$ of $100$ random triples. The failure of associativity of a product is measured by a <strong>ternary</strong>
+  operation, and it is that ternary operation which appears as the associator defect of the antisymmetrised
+  bracket.</li>
+<li><strong>The Jacobi failure.</strong> The cyclic sum
+  $\tilde P\wedge_{\natural}(\tilde Q\wedge_{\natural}\tilde R)+\tilde Q\wedge_{\natural}(\tilde R\wedge_{\natural}\tilde P)+\tilde R\wedge_{\natural}(\tilde P\wedge_{\natural}\tilde Q)$
+  does not vanish; on the owner's witness it is a pure vector, and the same ternary combination
+  $\ell_2(\ell_2(\tilde P,\tilde Q),\tilde R)+\ell_2(\ell_2(\tilde Q,\tilde R),\tilde P)+\ell_2(\ell_2(\tilde R,\tilde P),\tilde Q)$
+  of the parent product is nonzero on that witness.</li>
+</ul>
+<p>Both failures therefore produce a nonzero <strong>ternary</strong> object from a binary operation, and the corpus's
+finding that the failure is not removable — the closure of the bracket is a vector space and not an algebra,
+and the defect does not shrink on closing again, recomputed by bracketing the defect with a further basis
+element and finding it still nonzero — is the statement that the ternary residue is <strong>structural</strong> and not a
+bad choice of generators.</p>
+<h2 id="the-higher-structure-reading">The Higher-Structure Reading</h2>
+<p>In the standard theory, a binary operation whose defining identity holds only up to a higher operation is the
+first layer of an <strong>$A_\infty$- or $L_\infty$-algebra</strong>: a graded module with a differential $\ell_1$, a
+bracket or product $\ell_2$, and operations $\ell_3,\ell_4,\dots$ of descending degree satisfying the higher
+Jacobi identities, with $\ell_3$ measuring the deviation from strictness. The reading this article states is
+that the corpus's two failures are exactly the data of the first two layers of such a structure:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corpus object</th>
+<th>higher-structure role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the quaternionic product $\star$</td>
+<td>the binary $\ell_2$ (or $m_2$), not associative</td>
+</tr>
+<tr>
+<td>the associator $(\tilde P,\tilde Q,\tilde R)$</td>
+<td>the ternary $\ell_3$ (or $m_3$), the associativity defect</td>
+</tr>
+<tr>
+<td>the Jacobi sum of $\wedge_{\natural}$</td>
+<td>the failure of $\ell_2$ to close, i.e. the same $\ell_3$ read on the bracket</td>
+</tr>
+<tr>
+<td>"the closure defect does not shrink"</td>
+<td>the statement that the residue is $\ell_3$-valued and not removable by $\ell_1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The reading is <strong>labelled as a programme and not as a result</strong>, and the distinction is sharp: the corpus has
+the failures and the ternary objects, and it does <strong>not</strong> have the completion. To exhibit the algebra as an
+$A_\infty$- or $L_\infty$-algebra one must fix a grading, assign the degrees $\lvert\ell_2\rvert$,
+$\lvert\ell_3\rvert$, choose the signs of the higher Jacobi identities, and verify them; and then verify
+whether the higher identities force a further $\ell_4$. None of that is done here or in the owners, and the
+article says so.</p>
+<p>Two completions are available and they are not equivalent. The <strong>$L_\infty$ completion</strong> takes the bracket
+as $\ell_2$ and the Jacobi defect as the failure to be repaired by $\ell_3$; the leading candidate is one of
+the corpus's own brackets, the quaternionic commutator or the conjugate cross product. The <strong>$A_\infty$
+completion</strong> takes the quaternionic product as $m_2$ and the associator as $m_3$. The choice matters because
+the two structures have different signs and different physical vocabularies — the bracket is a symmetry
+object and the product is a composition object — and the article does not choose.</p>
+<h2 id="what-the-reading-would-buy">What the Reading Would Buy</h2>
+<p>The reading is worth stating because it changes the status of the failures in two places.</p>
+<p><strong>The gauge reading.</strong> The corpus's conclusion from the Jacobi failure is that the bracket cannot be the Lie
+algebra of an internal group, which is a negative statement and one half of the gauge ceiling. On the
+higher-structure reading the conclusion is sharper: an internal symmetry whose bracket closes only up to a
+ternary operation is a <strong>higher</strong> symmetry — the first layer of a $2$-group or a higher group — rather than
+no symmetry at all, and the failure measures which higher correction the symmetry requires. The reading is a
+programme and not a claim, and the ceiling remains a theorem about the strict group.</p>
+<p><strong>The curvature reading.</strong> The corpus already reads the associator of the fourth product as a
+curvature-like frame deformation, and the Jacobi failure of the conjugate cross product as a
+field-strength-like pairing. On the higher-structure reading the two readings are the same statement at
+different levels: the associator is the ternary operation, the curvature is its geometric name, and a
+bracket whose defect is the curvature is the bracket of a non-flat connection. The owner of the curvature
+readings is the fourth-product article of the grid.</p>
+<h2 id="what-is-not-claimed">What Is Not Claimed</h2>
+<ul>
+<li>The article does not claim that $\mathbb{B}$ <strong>is</strong> an $L_\infty$- or $A_\infty$-algebra. It claims that
+  the failures the corpus has measured are the first two layers of one, and that the completion is an open
+  construction.</li>
+<li>It does not claim that the reading removes the obstruction, changes the ceiling or produces a group. A
+  higher structure is not a group, and the group the algebra reaches is still $U(2)$.</li>
+<li>It does not claim a sign, a degree or a $\mathbb{Z}$-grading. The grading of an $L_\infty$ structure on
+  $\mathbb{B}$ is part of the open construction and is not fixed by the failure data.</li>
+</ul>
+<h2 id="physical-readings">Physical Readings</h2>
+<ul>
+<li><strong>The failure is structural, not accidental.</strong> The reading is that the two failures are the low operations
+  of one higher structure, so the corpus's negative results are the first measurements of a positive object.
+  Boundary: a labelled programme, and the higher algebra belongs to <em>A-Infinity and L-Infinity Algebras</em>.</li>
+<li><strong>A non-closing bracket is a higher symmetry.</strong> The reading is that an obstruction that resists closure is
+  the algebraic signature of a symmetry that is higher rather than a symmetry that is absent. Boundary: the
+  strict group remains $U(2)$, and the reading does not enlarge it.</li>
+<li><strong>The associator is the curvature.</strong> The reading is that the ternary residue is the geometric curvature of
+  the multiplication, and that the corpus's curvature readings of the associator and of the Jacobi defect are
+  one statement at two levels. Boundary: the curvature readings are the grid article's, cited.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>Three brackets of the corpus fail Jacobi and the quaternionic product fails associativity; the failures
+produce a nonzero ternary residue, the residue is not removable under closure, and each failure is owned by
+its own article as a negative result. This article adds the positive reading: a product failing associativity
+and a bracket failing Jacobi are the first two layers of an $A_\infty$- or $L_\infty$-type higher structure,
+whose $\ell_2$ is the product or bracket and whose $\ell_3$ is the associator defect. The reading is a
+programme and not a result: the grading, the degrees, the signs and the higher identities are not fixed, the
+completion is not constructed, and the strict group the algebra reaches remains $U(2)$. Two completions —
+bracket-first and product-first — are named and neither is chosen.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$</td>
+<td>the quaternionic product, non-associative, the binary operation of the reading</td>
+</tr>
+<tr>
+<td>$(\tilde P,\tilde Q,\tilde R)$</td>
+<td>the associator of the parent product, the ternary residue</td>
+</tr>
+<tr>
+<td>$\wedge_{\natural}$</td>
+<td>the antisymmetrised quaternionic product, whose Jacobi sum does not vanish</td>
+</tr>
+<tr>
+<td>$\ell_1,\ell_2,\ell_3$</td>
+<td>the differential, the bracket or product, and the ternary operation of a higher structure</td>
+</tr>
+<tr>
+<td>$m_2,m_3$</td>
+<td>the product and the associativity defect in the $A_\infty$ vocabulary</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>A-Infinity and L-Infinity Algebras</em>, for the higher operations, the higher Jacobi identities and the role
+  of $\ell_3$ as the deviation from strictness.</li>
+<li><em>The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator</em>, for the failure, its
+  witness and its reading as an obstruction.</li>
+<li><em>The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra</em>, for
+  the sesquilinear failure.</li>
+<li><em>Interference without a Lie Algebra: the Jacobi Failure in the State Space</em>, for the failure on the state
+  side and its reading as interference.</li>
+<li><em>The Associator and the Ternary Product of the Quaternionic Product</em>, for the associator that appears as
+  the ternary operation.</li>
+<li><em>The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</em>, for the strict group
+  that the reading does not enlarge.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The 2×2 Matrix Element Representation of Biquaternions — Biquaternion Universe</title>
+  <title>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -50,7 +50,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-22-matrix-element-representation-of-biquaternions"><strong>The 2×2 Matrix Element Representation of Biquaternions</strong></h1>
+        <h1 id="the-22-matrix-element-representation-math0-of-biquaternions"><strong>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>2×2 matrix realization</strong> is the form in which a biquaternion is a $2\times2$ complex matrix; it is the form that carries the spin, the qubit, the Bell states, the Dirac equation and the Fock space of the corpus. Algebraically, the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic, as a complex algebra, to the algebra of $2 \times 2$ complex matrices,</p>
 <p>$$
@@ -134,7 +134,7 @@ $$</p>
 <p>$$
 \mathrm{Tr}(\tilde{Q}) = (Q_0 - i Q_3) + (Q_0 + i Q_3) = 2 Q_0 .
 $$</p>
-<p>So the scalar part of a biquaternion is a matrix trace, and the traceless matrices are the vector parts. This is why the center subspace is the scalar matrices: an element commutes with everything exactly when its matrix is a multiple of the identity.</p>
+<p>So the scalar part of a biquaternion is a matrix trace, and the traceless matrices are the vector parts. This is why the centre subspace is the scalar matrices: an element commutes with everything exactly when its matrix is a multiple of the identity.</p>
 <p>The factor $2$ — not $1$ — is a consequence of $\Phi(e_0) = I_2$ and not a normalisation: it comes with the four basis images and cannot be divided out. Restricting neither argument to $\mathbb{M}_+$, the identity reads</p>
 <p>$$
 \mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2) = 2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2) \qquad \text{for all } \tilde{Q}_1, \tilde{Q}_2 \in \mathbb{B},
@@ -223,14 +223,14 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The four basis images $\Phi(e_\mu)$ are the ones displayed in <em>The Representation</em>; no Pauli matrix is needed to write any of the matrices down. Each subspace is then taken in its turn below: the center subspace, the vector subspace, the quaternion subspace, the antiquaternion subspace, the informational subspace and the material subspace. The vector subspace is the only one of the six that is not four- or two-dimensional. The conventions article calls $\mathbb{M}_+$ and $\mathbb{M}_-$ the informational and material <em>sectors</em>; here, with all six on the same footing, they are called subspaces like the other four.</p>
+<p>The four basis images $\Phi(e_\mu)$ are the ones displayed in <em>The Representation</em>; no Pauli matrix is needed to write any of the matrices down. Each subspace is then taken in its turn below: the centre subspace, the vector subspace, the quaternion subspace, the antiquaternion subspace, the informational subspace and the material subspace. The vector subspace is the only one of the six that is not four- or two-dimensional. The conventions article calls $\mathbb{M}_+$ and $\mathbb{M}_-$ the informational and material <em>sectors</em>; here, with all six on the same footing, they are called subspaces like the other four.</p>
 <p>Each subspace is displayed as a three-step chain: the matrix in the complex coefficients $Q_\mu$, the same matrix with that subspace's real parameters substituted, and the same matrix in the physical coordinates, under the one dictionary</p>
 <p>$$
 q_0 = ct', \quad q'_0 = ct, \quad q_1 = x, \quad q_2 = y, \quad q_3 = z, \quad q'_1 = x', \quad q'_2 = y', \quad q'_3 = z' ,
 $$</p>
 <p>the unprimed slot carrying the informational time $ct'$ and the material space $\mathbf{x}$, the primed slot the material time $ct$ and the informational space $\mathbf{x}'$.</p>
-<h3 id="the-center-subspace-math172">The Center Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
-<p>The center subspace, the fixed space of quaternion conjugation ${}^{\natural}$: the elements $Q_0e_0$ with $Q_0$ complex, carried onto the scalar matrices,</p>
+<h3 id="the-centre-subspace-math173">The Centre Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
+<p>The centre subspace, the fixed space of quaternion conjugation ${}^{\natural}$: the elements $Q_0e_0$ with $Q_0$ complex, carried onto the scalar matrices,</p>
 <p>$$
 \Phi(\tilde{Q}) = Q_0\,\Phi(e_0) = \begin{pmatrix} Q_0 & 0 \\ 0 & Q_0 \end{pmatrix}
 = \begin{pmatrix} q_0 + iq'_0 & 0 \\ 0 & q_0 + iq'_0 \end{pmatrix}
@@ -241,19 +241,19 @@ $$</p>
 \tilde{Q} = q_0e_0 + q'_0(ie_0) = ct'\,e_0 + ict\,e_0 ,
 $$</p>
 <p>the informational time and the material time. It is the only one of the six of real dimension two, and the only commutative one; the vector subspace and the four four-dimensional ones are the rest.</p>
-<h3 id="the-vector-subspace-math183">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
-<p>The complement of the center subspace: the elements with no scalar part, those with $\mathrm{Sc}(\tilde{Q}) = 0$, carried onto the <strong>traceless</strong> matrices,</p>
+<h3 id="the-vector-subspace-math184">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
+<p>The complement of the centre subspace: the elements with no scalar part, those with $\mathrm{Sc}(\tilde{Q}) = 0$, carried onto the <strong>traceless</strong> matrices,</p>
 <p>$$
 \Phi(\tilde{Q}) = \begin{pmatrix} -iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & iQ_3 \end{pmatrix}
 = \begin{pmatrix} -i(q_3 + iq'_3) & -i(q_1 + iq'_1) - (q_2 + iq'_2) \\ -i(q_1 + iq'_1) + (q_2 + iq'_2) & i(q_3 + iq'_3) \end{pmatrix}
 = \begin{pmatrix} -i(z + iz') & -i(x + ix') - (y + iy') \\ -i(x + ix') + (y + iy') & i(z + iz') \end{pmatrix}, \qquad \mathrm{Tr}\,\Phi = 0 .
 $$</p>
-<p>Its image is exactly $\mathrm{SL}(2,\mathbb{C})$, the traceless complex matrices, so the third split $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ of the relations article reads here as the trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\Phi(e_0) \oplus \mathrm{SL}(2,\mathbb{C})$: scalar part against traceless part. It is the <strong>anti-fixed space</strong> of quaternion conjugation, the elements with $\tilde{Q}^{\natural} = -\tilde{Q}$, whose fixed space is the center subspace above; equivalently it is the kernel of the scalar part. It is the only one of the six that is six-dimensional, being three-dimensional over $\mathbb{C}$. Under the commutator it is closed, $[\mathrm{SL}_2,\mathrm{SL}_2] \subseteq \mathrm{SL}_2$, and indeed it is the derived subspace $[\mathbb{B},\mathbb{B}]$; under multiplication it is not — the product of two traceless matrices need not be traceless, since $\mathrm{Tr}(M^2) = -2\det M$. Its six real parameters are the two spatial blocks together,</p>
+<p>Its image is exactly $\mathrm{SL}(2,\mathbb{C})$, the traceless complex matrices, so the third split $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ of the relations article reads here as the trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\Phi(e_0) \oplus \mathrm{SL}(2,\mathbb{C})$: scalar part against traceless part. It is the <strong>anti-fixed space</strong> of quaternion conjugation, the elements with $\tilde{Q}^{\natural} = -\tilde{Q}$, whose fixed space is the centre subspace above; equivalently it is the kernel of the scalar part. It is the only one of the six that is six-dimensional, being three-dimensional over $\mathbb{C}$. Under the commutator it is closed, $[\mathrm{SL}_2,\mathrm{SL}_2] \subseteq \mathrm{SL}_2$, and indeed it is the derived subspace $[\mathbb{B},\mathbb{B}]$; under multiplication it is not — the product of two traceless matrices need not be traceless, since $\mathrm{Tr}(M^2) = -2\det M$. Its six real parameters are the two spatial blocks together,</p>
 <p>$$
 \tilde{Q} = q_1e_1 + q_2e_2 + q_3e_3 + q'_1(ie_1) + q'_2(ie_2) + q'_3(ie_3) = \mathbf{x} + i\mathbf{x}' ,
 $$</p>
-<p>so its real and imaginary parts are the material and the informational space block, $\mathrm{Vect}(\mathbb{B}) = X_{\mathrm{m}} \oplus X_{\mathrm{i}}$: it takes one spatial block from $\mathbb{M}_+$ and one from $\mathbb{M}_-$, the spatial counterpart of the center subspace's two temporal blocks. Reading its entries back off the traceless matrix returns the three complex coefficients $Q_k = q_k + iq'_k$, whose real and imaginary parts are the two spatial vectors. Its determinant is the biquaternion norm with the scalar term dropped, $\det = Q_1^2 + Q_2^2 + Q_3^2$.</p>
-<h3 id="the-quaternion-subspace-math200">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
+<p>so its real and imaginary parts are the material and the informational space block, $\mathrm{Vect}(\mathbb{B}) = X_{\mathrm{m}} \oplus X_{\mathrm{i}}$: it takes one spatial block from $\mathbb{M}_+$ and one from $\mathbb{M}_-$, the spatial counterpart of the centre subspace's two temporal blocks. Reading its entries back off the traceless matrix returns the three complex coefficients $Q_k = q_k + iq'_k$, whose real and imaginary parts are the two spatial vectors. Its determinant is the biquaternion norm with the scalar term dropped, $\det = Q_1^2 + Q_2^2 + Q_3^2$.</p>
+<h3 id="the-quaternion-subspace-math201">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
 <p>The real-quaternion subspace, the fixed space of complex conjugation $\bar{\cdot}$: the elements with all four $q_\mu$ real, carried from the basis $\{e_0, e_1, e_2, e_3\}$ onto the four basis images themselves,</p>
 <p>$$
 \big\{\, \Phi(e_0),\ \Phi(e_1),\ \Phi(e_2),\ \Phi(e_3) \,\big\},
@@ -274,7 +274,7 @@ $$</p>
 \det = |z|^2 + |w|^2 = q_0^2 + q_1^2 + q_2^2 + q_3^2 ,
 $$</p>
 <p>a sum of squares, which vanishes only at the zero element. This is a four-<strong>real</strong>-dimensional set, not the four-dimensional complex space of all matrices with $z, w \in \mathbb{C}$, and on it the determinant is <strong>definite</strong> — which is the matrix reason $\mathbb{H}$ is a division algebra while $\mathbb{B}$ is not. Removing the complex coefficients from the algebra makes the biquaternion norm positive definite, and that is all that separates the two cases.</p>
-<h3 id="the-antiquaternion-subspace-math224">The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-antiquaternion-subspace-math225">The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
 <p>The anti-fixed space of complex conjugation: the elements with all four $q'_\mu$ real, carried from the basis $\{ie_0, ie_1, ie_2, ie_3\}$ onto $i$ times the four basis images,</p>
 <p>$$
 \big\{\, i\Phi(e_0),\ i\Phi(e_1),\ i\Phi(e_2),\ i\Phi(e_3) \,\big\}.
@@ -291,7 +291,7 @@ $$</p>
 $$</p>
 <p>with the same double duty of the letter $z'$, resolved there too by the combination $q'_0 - iq'_3$.</p>
 <p>The determinant changes sign with the factor, $\det = -((q'_0)^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2)$, <strong>negative definite</strong> — the exact mirror of the definite form on $\mathbb{H}_{\mathbb{B}}$. Together the two images exhaust $M_2(\mathbb{C})$, so the real-and-imaginary split of the algebra is, in matrix language, the split of $M_2(\mathbb{C})$ into the quaternion matrices and $i$ times them.</p>
-<h3 id="the-informational-subspace-math246">The Informational Subspace $\mathbb{M}_+$</h3>
+<h3 id="the-informational-subspace-math247">The Informational Subspace $\mathbb{M}_+$</h3>
 <p>The Hermitian subspace, the fixed space of ${}^{*}$: the elements with $q_0, q'_1, q'_2, q'_3$ real, carried from the basis $\{e_0, ie_1, ie_2, ie_3\}$ onto the four matrices</p>
 <p>$$
 \big\{\, \Phi(e_0),\ i\Phi(e_1),\ i\Phi(e_2),\ i\Phi(e_3) \,\big\}
@@ -313,7 +313,7 @@ $$</p>
 \det\Phi(\tilde{Q}) = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 ,
 $$</p>
 <p>the mirror interval of signature $(1,3)$, read on the informational coordinate $(ct')\,e_0 + i\,x'\,e_1 + i\,y'\,e_2 + i\,z'\,e_3$, that is $q_0 = ct'$, $q'_1 = x'$, $q'_2 = y'$, $q'_3 = z'$.</p>
-<h3 id="the-material-subspace-math265">The Material Subspace $\mathbb{M}_-$</h3>
+<h3 id="the-material-subspace-math266">The Material Subspace $\mathbb{M}_-$</h3>
 <p>The anti-Hermitian subspace, the fixed space of $\flat$: the elements with $q'_0, q_1, q_2, q_3$ real, carried from the basis $\{ie_0, e_1, e_2, e_3\}$ onto the four matrices</p>
 <p>$$
 \big\{\, i\Phi(e_0),\ \Phi(e_1),\ \Phi(e_2),\ \Phi(e_3) \,\big\}
@@ -337,8 +337,8 @@ $$</p>
 <p>the Minkowski interval of signature $(3,1)$: the $ict$ metric of the corpus, read on the material four-position of the companion article, $\tilde{Q} = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$, that is $q'_0 = ct$, $q_1 = x$, $q_2 = y$, $q_3 = z$, giving $-(ct)^2 + \mathbf{x}^2$. This is the most economical place to see why the material subspace is the <strong>anti</strong>-Hermitian one: the anti-Hermitian matrices are exactly those on which the determinant comes out with one minus sign.</p>
 <h3 id="how-they-fit-together">How They Fit Together</h3>
 <p>The relations among the subspaces — the three splits, their intersections, and the pairs that span the algebra — are worked out in <em>Relations Between Subspaces</em>. Two consequences are used repeatedly in this article and are recorded here.</p>
-<p><strong>The three splits cross.</strong> The split $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ is the trace decomposition and is not four-plus-four at all: it separates the two-dimensional center subspace from the six-dimensional traceless part. The other two splits, the real-and-imaginary split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ and the sector split $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, are both four-plus-four, and neither refines the other. Each of $\mathbb{M}_+$ and $\mathbb{M}_-$ takes its scalar from one half and its vectors from the other, which is why the prime pattern is three-and-one rather than four-and-none. Multiplication by the central $i$ exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$, and exchanges the two halves.</p>
-<p><strong>Two of the six are subalgebras.</strong> $\mathbb{C}_{\mathbb{B}}$ is closed under multiplication; $\mathrm{Vect}(\mathbb{B})$ is closed under the commutator but not under the product; $\mathbb{H}_{\mathbb{B}}$ is closed under multiplication; and $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_\pm$ are neither — the product of two Hermitian matrices is Hermitian only when they commute. The center subspace meets $\mathbb{M}_+$ and $\mathbb{M}_-$ in the two central lines, $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$ and $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$, and every element splits as a Hermitian plus an anti-Hermitian part, $\tilde{Q} = \tfrac12(\tilde{Q} + \tilde{Q}^{*}) + \tfrac12(\tilde{Q} - \tilde{Q}^{*})$, the two parts differing by the factor $i$ that carries $\mathbb{M}_-$ into $\mathbb{M}_+$.</p>
+<p><strong>The three splits cross.</strong> The split $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ is the trace decomposition and is not four-plus-four at all: it separates the two-dimensional centre subspace from the six-dimensional traceless part. The other two splits, the real-and-imaginary split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ and the sector split $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, are both four-plus-four, and neither refines the other. Each of $\mathbb{M}_+$ and $\mathbb{M}_-$ takes its scalar from one half and its vectors from the other, which is why the prime pattern is three-and-one rather than four-and-none. Multiplication by the central $i$ exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$, and exchanges the two halves.</p>
+<p><strong>Two of the six are subalgebras.</strong> $\mathbb{C}_{\mathbb{B}}$ is closed under multiplication; $\mathrm{Vect}(\mathbb{B})$ is closed under the commutator but not under the product; $\mathbb{H}_{\mathbb{B}}$ is closed under multiplication; and $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_\pm$ are neither — the product of two Hermitian matrices is Hermitian only when they commute. The centre subspace meets $\mathbb{M}_+$ and $\mathbb{M}_-$ in the two central lines, $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$ and $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$, and every element splits as a Hermitian plus an anti-Hermitian part, $\tilde{Q} = \tfrac12(\tilde{Q} + \tilde{Q}^{*}) + \tfrac12(\tilde{Q} - \tilde{Q}^{*})$, the two parts differing by the factor $i$ that carries $\mathbb{M}_-$ into $\mathbb{M}_+$.</p>
 <h2 id="the-ideals-as-columns-and-the-spinor-module">The Ideals as Columns and the Spinor Module</h2>
 <p>The matrix form makes the algebra's ideal structure a statement about columns. The idempotents</p>
 <p>$$
@@ -458,7 +458,7 @@ $$</p>
 <ul>
 <li>The signs are forced: $e_k^2 = -e_0$ requires the factor $i$, and $e_1e_2 = +e_3$ requires the minus sign. Both are checked by multiplying the four basis matrices. The equivalent statement, that the images of the Hermitian elements are Hermitian, is why the Hermitian elements of the algebra are its observables.</li>
 <li>The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_0$, and the determinant <strong>is</strong> the biquaternion norm, $\det(\tilde{Q}) = N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$. Invertibility, multiplicativity of the norm, and the zero divisors as rank-one (singular) matrices $\Phi(\tilde{Q}) = uv^{T}$ all follow.</li>
-<li>The subspaces of the algebra are the center subspace $\mathbb{C}_{\mathbb{B}}$, $Q_0e_0 \mapsto Q_0\Phi(e_0)$, the only one of the six of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-(q'_0)^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_0e_0 + iq'_ke_k$ mapped to a Hermitian matrix, $\det = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (\mathbf{x}')^2$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_0e_0 + q_ke_k$ mapped to $i$ times a Hermitian matrix, $\det = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \mathbf{x}^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.</li>
+<li>The subspaces of the algebra are the centre subspace $\mathbb{C}_{\mathbb{B}}$, $Q_0e_0 \mapsto Q_0\Phi(e_0)$, the only one of the six of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-(q'_0)^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_0e_0 + iq'_ke_k$ mapped to a Hermitian matrix, $\det = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (\mathbf{x}')^2$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_0e_0 + q_ke_k$ mapped to $i$ times a Hermitian matrix, $\det = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \mathbf{x}^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.</li>
 <li>The minimal left ideals are the matrix <strong>columns</strong>: $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_3)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.</li>
 <li>Quaternion conjugation is the adjugate $\epsilon M^{\mathsf T}\epsilon^{-1}$ and complex conjugation is $\epsilon\overline{M}\epsilon^{-1}$; both are dressed by the antisymmetric form $\epsilon = \Phi(-e_2)$. Hermitian conjugation is the conjugate transpose and $\flat = -{}^{*}$ is its negative, neither of them dressed. Entrywise conjugation of $M$ on its own is not the image of any involution of the algebra.</li>
 <li>The physics is read off the matrices: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k \mapsto \tfrac{\hbar}{2}\Phi(ie_k)$; the pure states are the rank-one projectors $\tilde\Pi_\pm(\hat{\boldsymbol\mu})$ and are the null elements $N(\tilde{P}) = 0$; the density matrix $\rho = \tfrac12\big(\Phi(e_0) + r_k\Phi(ie_k)\big)$ has $r_k = \mathrm{Tr}\big(\rho\,\Phi(ie_k)\big)$ on the Bloch ball.</li>
@@ -531,11 +531,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}$</td>
-<td>The center subspace: $Q_0e_0 \mapsto Q_0\Phi(e_0)$, the scalar matrices; parameters $q_0, q'_0$ with $q_0 = ct'$ and $q'_0 = ct$</td>
+<td>The centre subspace: $Q_0e_0 \mapsto Q_0\Phi(e_0)$, the scalar matrices; parameters $q_0, q'_0$ with $q_0 = ct'$ and $q'_0 = ct$</td>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B})$</td>
-<td>The vector subspace, the complement of the center subspace: $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \begin{pmatrix} -iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & iQ_3\end{pmatrix}$, the traceless matrices $\mathrm{SL}(2,\mathbb{C})$; the anti-fixed space of quaternion conjugation, closed under the commutator and equal to the derived subspace $[\mathbb{B},\mathbb{B}]$</td>
+<td>The vector subspace, the complement of the centre subspace: $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \begin{pmatrix} -iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & iQ_3\end{pmatrix}$, the traceless matrices $\mathrm{SL}(2,\mathbb{C})$; the anti-fixed space of quaternion conjugation, closed under the commutator and equal to the derived subspace $[\mathbb{B},\mathbb{B}]$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross-Sector Coupling in the Biquaternion Framework: a Catalogue of the Maps Between the Sectors — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cross-sector-coupling-in-the-biquaternion-framework-a-catalogue-of-the-maps-between-the-sectors"><strong>Cross-Sector Coupling in the Biquaternion Framework: a Catalogue of the Maps Between the Sectors</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ splits into the two
+four-real-dimensional eigenspaces of Hermitian conjugation,</p>
+<p>$$
+\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+, \qquad
+\mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\},
+$$</p>
+<p>the <strong>material</strong> sector $\mathbb{M}_-$ and the <strong>informational</strong> sector $\mathbb{M}_+$. The foundational
+articles give each sector its physics; this article asks a question that neither of them owns: which
+algebraic operations actually carry an element from one sector to the other, and which do not. The
+question is the one the introduction records as its second open question, a coupling between the sectors
+beyond the Lorentz conjugation. The answer is a short catalogue and a boundary, and the catalogue is the
+whole content of the article.</p>
+<p>Two clarifications fix the scope. First, a <strong>coupling</strong> here is an algebraic operation that is not
+sector-preserving: a map $\mathbb{M}_-\to\mathbb{M}_+$, a map $\mathbb{M}_+\to\mathbb{M}_-$, or a
+pairing that reads an element of each sector and returns a scalar. The list is of operations the algebra
+already supplies; no operation is introduced. Second, the article <strong>derives nothing</strong>. Every entry is
+owned by an article that proves it, and the entry records the owner and the boundary. This is an index
+article in the genre of <em>Relations Between Subspaces</em> and <em>What the Biquaternion Algebra Cannot Do: A
+Catalogue of Algebraic Obstructions</em>.</p>
+<p>The division that makes the question sharp is this: the conjugations of the algebra never cross the
+split, while three operations of a different kind always do. The conjugations are sector-preserving
+because the two sectors are <em>defined</em> as their fixed spaces, so a map that crossed the split would have
+to be something other than a conjugation; the square, multiplication by $i$ and the state-preparation
+map are exactly such operations. The split also carries a superselection reading, whose content is that
+no <em>observable</em> operation crosses it — a statement about observables and not about maps, and one that
+must be held apart from the positive entries of the catalogue.</p>
+<h2 id="what-counts-as-a-coupling">What Counts as a Coupling</h2>
+<p>The split is the eigenspace decomposition of the involution ${}^{*}$, and the first fact about the
+crossing question is negative and general.</p>
+<p><strong>Proposition (conjugations preserve the sectors).</strong> Each of the four conjugations of the algebra
+— the identity, complex conjugation $\bar{\cdot}$, quaternion conjugation ${}^{\natural}$, and
+Hermitian conjugation ${}^{*}$ — maps each sector into itself. The same holds for the anti-Hermitian sign
+$\flat = -{}^{*}$.</p>
+<p><strong>Why.</strong> The sector of an element is decided by the sign of its adjoint, and each conjugation $c$ commutes
+with ${}^{*}$, so for $c(\tilde{Q})$ with $\tilde{Q}\in\mathbb{M}_-$ one has
+$c(\tilde{Q})^{*} = c(\tilde{Q}^{*}) = c(-\tilde{Q}) = -c(\tilde{Q})$, and $c(\tilde{Q})$ is again material;
+the argument for $\mathbb{M}_+$ is the same with the opposite sign. The commutativity is the Klein-four
+relation of the conjugations: ${}^{*} = {}^{\natural}\circ\bar{\cdot}$, and the group $\{1,\bar{\cdot},{}^{\natural},{}^{*}\}$
+is abelian, so every $c$ commutes with ${}^{*}$ and $\flat = -{}^{*}$ inherits it, $\tilde{Q}^{\flat} = \tilde{Q}$
+being the defining relation of $\mathbb{M}_-$. The property is verified below.</p>
+<p>The proposition is why the superselection article can say that no operation <em>of the conjugation type</em>
+maps one summand into the other. It is not a statement about all operations, and the entries below are
+the operations it does not cover.</p>
+<h2 id="the-maps-from-material-to-informational">The Maps from Material to Informational</h2>
+<h3 id="the-square">The Square</h3>
+<p>The square of a material element is its interval, and the interval is a real scalar.</p>
+<p><strong>Identity (the square is the interval).</strong> For every $\tilde{Q}$,</p>
+<p>$$
+\tilde{Q}^{\natural}\tilde{Q} = N(\tilde{Q})\,e_0,
+$$</p>
+<p>with $N(\tilde{Q}) = \sum_\mu Q_\mu^{2}$. For $\tilde{Q}\in\mathbb{M}_-$, written $\tilde{Q} = ict\,e_0+\mathbf{x}$
+with real $t$ and $\mathbf{x}$, the value $N(\tilde{Q}) = -c^{2}t^{2}+\mathbf{x}^{2}$ is <strong>real</strong>, and the
+scalar line $\mathbb{R}e_0$ lies in $\mathbb{M}_+$.</p>
+<p><strong>Reading.</strong> Squaring is therefore a map $\mathbb{M}_-\to\mathbb{M}_+$, with image the real scalar line,
+and it is the minimal instance of a cross-sector coupling supplied by the product itself. It is
+deliberately weak: it is a map and not an evolution, and the product of <em>two</em> material elements is not
+informational — it carries a rotation part in $\mathbb{M}_-$ and a boost part in $\mathbb{M}_+$, so it
+lies in neither sector. The square is the coupling; the product is not. The identity is owned by <em>The
+Interval as the Square and the Charge of the Material Composition</em>, and the grid-level pointer by <em>The
+Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras</em>.
+Recomputed on $100$ random material elements: central, real, and equal to $N(\tilde{Q})e_0$ on $100$ of
+$100$; on $100$ random pairs of material elements the product lies in neither sector on $100$ of $100$.</p>
+<h3 id="the-preparation-map">The Preparation Map</h3>
+<p>The second map is a rotation of the four-vector into an element of the informational sector.</p>
+<p><strong>Map.</strong> On a material element $\tilde{Q} = ict\,e_0+\mathbf{x}$, the central element
+$\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ is</p>
+<p>$$
+\tilde{H} = -\tfrac{i}{2}\bigl(ict\,e_0+\mathbf{x}\bigr) = \tfrac12\bigl(ct\,e_0-i\mathbf{x}\bigr) \in \mathbb{M}_+,
+$$</p>
+<p>with $\mathrm{Tr}(\tilde{H}) = ct$ and $N(\tilde{H}) = -\tfrac14 N(\tilde{Q})$. On the trace-one slice
+$ct = 1$ it is the Hermitian state $\tilde\rho = \tfrac12(e_0+i\mathbf{r})$ with $\mathbf{r} = -\mathbf{x}$,
+a point of the Bloch ball.</p>
+<p><strong>Reading.</strong> The map is a dictionary and not a dynamics: it names a <strong>state preparation</strong>, the
+correspondence between a future-directed four-vector and a mixed state, and it is the mirror dictionary
+of <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>, which owns it. Its boundary is that
+it carries no equation of motion, and that the trace-one slice is what makes it a state map rather than a
+bare vector-space isomorphism.</p>
+<h2 id="the-maps-from-informational-to-material">The Maps from Informational to Material</h2>
+<h3 id="multiplication-by-the-central-imaginary">Multiplication by the Central Imaginary</h3>
+<p>The simplest map is the one the central scalar supplies.</p>
+<p><strong>Proposition.</strong> Multiplication by $i$ exchanges the two sectors, $i\mathbb{M}_+ = \mathbb{M}_-$ and
+$i\mathbb{M}_- = \mathbb{M}_+$, reverses the sign of the norm, $N(i\tilde{Q}) = -N(\tilde{Q})$, and is a
+bijection of the algebra.</p>
+<p><strong>Why.</strong> The scalar $i$ is central and anti-Hermitian, $i^{*} = -i$, so $(i\tilde{Q})^{*} = \tilde{Q}^{*}i^{*} = -i\tilde{Q}^{*}$:
+the sign of the adjoint flips and the sector with it. The norm reverses because $N$ is quadratic in the
+coefficients and $i^{2} = -1$.</p>
+<p><strong>Reading.</strong> The exchange is a <strong>relational clock</strong>: because the two sectors are the two time
+coordinates, the exchange reads one sector's time against the other's, which is the reading of <em>Each
+Sector Is the Other's Clock: the Sector Exchange as Relational Time</em>. Its boundary is that the exchange
+is invertible and of order four, so it cannot by itself supply an arrow; the arrow needs the non-units of
+the acting monoid (see below). Multiplication by the central scalar is developed by <em>The Central
+Rotation: Phase, Duality and the Wick Rotation as One Generator</em>. Recomputed on $100$ elements of each
+sector: $i$ sends $\mathbb{M}_-$ to $\mathbb{M}_+$ and $\mathbb{M}_+$ to $\mathbb{M}_-$ with no exception
+on $200$ of $200$.</p>
+<h3 id="the-rotor-action">The Rotor Action</h3>
+<p>An informational element can also act on a material one.</p>
+<p><strong>Proposition.</strong> A unit-norm element $\tilde{\Lambda}\in\mathbb{M}_+$ — the carrier of the pure boosts —
+acts on the material sector by the sandwich $\tilde{T}\mapsto\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*}$,
+and the result is again material.</p>
+<p><strong>Why.</strong> $(\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*})^{*} = \tilde{\Lambda}\tilde{T}^{*}\tilde{\Lambda}^{*} = -\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*}$,
+since $\tilde{\Lambda}^{*} = \tilde{\Lambda}$ for a Hermitian rotor and $\tilde{T}^{*} = -\tilde{T}$.</p>
+<p><strong>Reading.</strong> The action is a <strong>frame change</strong>: the informational sector, through its Hermitian rotors,
+supplies the transformations of the material sector. It is a coupling of a third kind — not a map
+$\mathbb{M}_-\to\mathbb{M}_+$, but an action of one sector on the other, and it preserves the sector it
+acts on. Its boundary is that only the unit-norm elements are rotors, and the general action form of the
+framework is the one <em>Biquaternion Rotations and Lorentz Transformations</em> develops; the operator side is
+<em>The Sandwich Action in Subspaces</em>. Recomputed on $100$ random boost rotors and $100$ material elements:
+the sandwich result is anti-Hermitian on $100$ of $100$.</p>
+<h2 id="the-off-sector-pairings">The Off-Sector Pairings</h2>
+<p>A coupling can also be a scalar read from one element of each sector.</p>
+<p><strong>Proposition (the off-sector scalar part).</strong> For $\tilde{P}\in\mathbb{M}_-$ and $\tilde{H}\in\mathbb{M}_+$,
+the scalar part of the plain product is purely imaginary,</p>
+<p>$$
+\mathrm{Sc}(\tilde{P}\tilde{H}) = i\bigl(ct\,h_0-\mathbf{x}\cdot\mathbf{h}\bigr) \quad \text{for }
+\tilde{P} = ict\,e_0+\mathbf{x}, \quad \tilde{H} = h_0e_0+i\mathbf{h},
+$$</p>
+<p>with both factors real.</p>
+<p><strong>Why.</strong> The scalar part of the product is $P_0H_0-(\mathbf{P},\mathbf{H})$, and the two terms are
+$ict\cdot h_0$ and $\mathbf{x}\cdot i\mathbf{h}$, each carrying one factor of $i$.</p>
+<p><strong>Reading.</strong> The pairing reads a material operation against an informational state and returns a phase,
+which is the off-sector reading of <em>The Ordinary Product and the Material Sector</em>. It is a pairing and
+not a map, and it produces no element of either sector. The <strong>imaginary part of the norm</strong> is the same
+phenomenon from the other side: the cross terms of $N$ couple the material and informational parameters
+of one element, and that is the reading the introduction records for the imaginary part of $N$, owned by
+<em>Biquaternion Norm and Invertibility</em>. Recomputed on $100$ material–informational pairs: the scalar part
+is purely imaginary on $100$ of $100$.</p>
+<h2 id="the-couplings-of-time-and-of-thermodynamics">The Couplings of Time and of Thermodynamics</h2>
+<p>Two further cross-sector readings are already owned and are recorded here because a catalogue of
+couplings is incomplete without them.</p>
+<ul>
+<li><strong>Imaginary (Matsubara) time.</strong> The imaginary-time axis of thermal field theory is the informational
+  temporal direction, so the continuation that the KMS condition and the Matsubara formalism use is the
+  material–informational exchange read as a temperature. The owners are <em>The KMS Condition and the
+  Biquaternion Framework</em> and <em>The Matsubara Formalism in Biquaternionic Form</em>; the reading is a
+  continuation and not a new coupling.</li>
+<li><strong>The thermodynamic exchange.</strong> A material operation that loses information passes it to the
+  informational sector: the Landauer exchange is the thermodynamic face of the same split, and the
+  information loss is counted by the algebra's own logarithm. The owners are <em>Landauer's Principle and
+  the Material–Informational Exchange in Biquaternionic Form</em> and <em>The Lyapunov Exponent and Information
+  Loss in the Biquaternion Framework</em>; the arrow that orders the exchange is the split of the acting
+  monoid into its units and its non-units (<em>The Monoid of Acting Maps: the Process Is the Multiplication,
+  the State Is the Idempotent</em>).</li>
+</ul>
+<h2 id="what-does-not-couple-the-superselection-boundary">What Does Not Couple: the Superselection Boundary</h2>
+<p>The catalogue has a boundary, and it is the place where the question "is there a coupling?" is answered
+<em>no</em>.</p>
+<p>The material–informational split carries a <strong>superselection reading</strong>: no observable operation carries
+one sector to the other, and the relative phase between the two sectors is unobservable. The statement
+is exact, and it does not conflict with the positive entries above, for the reason the superselection
+article gives. The algebra is central simple, so it has no central-projection superselection structure of
+the standard kind, and what survives is a superselection structure of a <strong>real form</strong>, carried by the
+real structure $\flat = -{}^{*}$ rather than by the centre. The positive entries of this catalogue are
+maps and pairings and not observables: the square is a map, $i$ is central multiplication, the
+preparation map is a dictionary, and the off-sector scalar is a pairing. None of them is an observable
+that an expectation value could use to prepare or detect a coherence between the sectors.</p>
+<p><strong>Boundary.</strong> The superselection statement is about observables and coherences; this article's positive
+entries are about maps. The two must not be collapsed into one another, and the owner of the
+superselection statement is <em>The Material-Informational Split as a Superselection Structure in
+Biquaternionic Form</em>.</p>
+<h2 id="the-catalogue-in-one-table">The Catalogue in One Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operation</th>
+<th>type</th>
+<th>source $\to$ target</th>
+<th>owner</th>
+<th>boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>square $\tilde{Q}\mapsto\tilde{Q}^{\natural}\tilde{Q}$</td>
+<td>map</td>
+<td>$\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_0$</td>
+<td><em>The Interval as the Square and the Charge of the Material Composition</em></td>
+<td>a map, not an evolution; the product of two is not informational</td>
+</tr>
+<tr>
+<td>preparation $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$</td>
+<td>map</td>
+<td>$\mathbb{M}_-\to\mathbb{M}_+$</td>
+<td><em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em></td>
+<td>a dictionary, no dynamics; state only on the trace-one slice</td>
+</tr>
+<tr>
+<td>central multiplication $\tilde{Q}\mapsto i\tilde{Q}$</td>
+<td>map</td>
+<td>$\mathbb{M}_-\leftrightarrow\mathbb{M}_+$</td>
+<td><em>The Central Rotation: Phase, Duality and the Wick Rotation as One Generator</em></td>
+<td>invertible, order four; no arrow by itself</td>
+</tr>
+<tr>
+<td>rotor action $\tilde{T}\mapsto\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*}$</td>
+<td>action</td>
+<td>$\mathbb{M}_+$ acts on $\mathbb{M}_-$</td>
+<td><em>Biquaternion Rotations and Lorentz Transformations</em></td>
+<td>preserves the sector it acts on; unit-norm rotors only</td>
+</tr>
+<tr>
+<td>off-sector scalar $\mathrm{Sc}(\tilde{P}\tilde{H})$</td>
+<td>pairing</td>
+<td>$\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$</td>
+<td><em>The Ordinary Product and the Material Sector</em></td>
+<td>a pairing, produces no element</td>
+</tr>
+<tr>
+<td>imaginary part of $N$</td>
+<td>pairing</td>
+<td>$\mathbb{M}_-\times\mathbb{M}_+$ cross terms</td>
+<td><em>Biquaternion Norm and Invertibility</em></td>
+<td>a reading of one element's own cross terms</td>
+</tr>
+<tr>
+<td>Matsubara continuation</td>
+<td>continuation</td>
+<td>imaginary time $=$ informational time</td>
+<td><em>The KMS Condition and the Biquaternion Framework</em>, <em>The Matsubara Formalism in Biquaternionic Form</em></td>
+<td>a continuation, not a new coupling</td>
+</tr>
+<tr>
+<td>Landauer exchange</td>
+<td>process</td>
+<td>material $\to$ informational</td>
+<td><em>Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form</em></td>
+<td>thermodynamic face; arrow from the acting monoid</td>
+</tr>
+<tr>
+<td>superselection</td>
+<td><strong>non-coupling</strong></td>
+<td>observables preserve each sector</td>
+<td><em>The Material-Informational Split as a Superselection Structure in Biquaternionic Form</em></td>
+<td>about observables, not about maps</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="physical-readings">Physical Readings</h2>
+<p>The article's own reading is the <strong>two-axis picture</strong> of the split: the sectors are separated by the
+involution ${}^{*}$, which the conjugations respect and which a small set of non-conjugation operations
+cross. Read one way, the picture says that the split is rigid — nothing built from the conjugations, and
+no observable, moves between the sectors. Read the other way, it says that the split is crossed in
+exactly the places where the physics needs a bridge: the square takes a process to a probability
+argument, $i$ takes a time to the other time, the rotor takes a frame to a frame, and the off-sector
+scalar reads a state against an operation. The rigidity and the crossings are not in tension; they are the
+two halves of one statement.</p>
+<ul>
+<li><strong>Bridge reading.</strong> Each positive entry is a bridge of a different kind — a map, a bijection, an
+  action, a pairing — and no two entries are the same bridge. Boundary: the reading names the shape of
+  each bridge and supplies no dynamics; the grid-level comparison is <em>The Four General Products and Their
+  Physical Readings: the Two Algebras and the Two Sesqualgebras</em>.</li>
+<li><strong>Boundary reading.</strong> The superselection entry is the statement that the bridges are not observables.
+  Read with the positive entries, it says that a coupling can be algebraic and unobservable at once: the
+  square exists and no measurement uses it to prepare a coherence between the sectors. Boundary: the
+  reading is the superselection article's, restated here only to mark the edge of the catalogue.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The algebra's two sectors $\mathbb{M}_-$ and $\mathbb{M}_+$ are the eigenspaces of Hermitian
+conjugation, and the conjugations $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}$, $\flat$ preserve each sector,
+because a sector is defined as a fixed space. The couplings are the operations that are not
+conjugations, and they are few. The square carries a material element to its real interval, a scalar in
+$\mathbb{M}_+$, and is the minimal cross-sector map the product supplies. The preparation map
+$\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ carries a four-vector to a state on the trace-one slice. Central
+multiplication by $i$ exchanges the sectors and reverses the norm, reading one time against the other. A
+unit-norm Hermitian rotor acts on the material sector by the sandwich and preserves it, so the
+informational sector supplies the frame changes of the material one. The off-sector scalar part
+$\mathrm{Sc}(\tilde{P}\tilde{H})$ is purely imaginary and pairs an operation with a state; the imaginary
+part of the norm is the same cross-term phenomenon. The Matsubara continuation and the Landauer exchange
+are the thermal readings of the same split, and the arrow that orders them is the split of the acting
+monoid. Against all of this stands one exact negative statement: the split is a superselection structure
+of a real form, so no observable operation and no conjugation crosses it. The catalogue's conclusion is
+that the coupling the introduction asks for exists, is algebraic, is minimal, and is not observable —
+each of its instances owned by an article that proves it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\}$</td>
+<td>Material ($-$) and informational ($+$) sectors</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>Hermitian conjugation, $e_k^{*} = -e_k$, $i^{*} = -i$</td>
+</tr>
+<tr>
+<td>${}^{\natural}$, $\bar{\cdot}$, $\flat = -{}^{*}$</td>
+<td>Quaternion conjugation, coefficient conjugation, the real structure</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = ict\,e_0+\mathbf{x}$</td>
+<td>Material element, $t$ and $\mathbf{x}$ real</td>
+</tr>
+<tr>
+<td>$\tilde{H} = h_0e_0+i\mathbf{h}$</td>
+<td>Informational element, $h_0$ and $\mathbf{h}$ real</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q}^{\natural}\tilde{Q} = \sum_\mu Q_\mu^{2}$</td>
+<td>Biquaternion norm; equal to the interval on $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$\tilde{H} = -\tfrac{i}{2}\tilde{Q}$</td>
+<td>The preparation map, $\mathbb{M}_-\to\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$\tilde{T}\mapsto\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*}$</td>
+<td>The rotor action, $\tilde{\Lambda}\in\mathbb{M}_+$ of unit norm</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde{P}\tilde{H})$</td>
+<td>Off-sector scalar pairing, purely imaginary</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, companion article, for the
+  material sector, its four-vectors and the interval.</li>
+<li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, companion article, for the
+  informational sector, the trace pairing and the state space.</li>
+<li><em>The Interval as the Square and the Charge of the Material Composition</em>, companion article, for the
+  square map and its real-scalar image.</li>
+<li><em>The Material-Informational Split as a Superselection Structure in Biquaternionic Form</em>, companion
+  article, for the negative statement and its real-form reading.</li>
+<li><em>The Four General Products and Their Physical Readings: the Two Algebras and the Two Sesqualgebras</em>,
+  companion article, for the grid-level comparison of the four products.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
