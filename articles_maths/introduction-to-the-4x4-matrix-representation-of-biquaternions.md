@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 This article is the first reading of the **regular representation**: the algebra acting on itself on the left, and the $4\times4$ matrix of that action in the coefficient basis. It belongs to the linear algebra of the algebra, beside the $2\times2$ reading of *Introduction to the 2×2 Matrix Representation of Biquaternions*: where the $2\times2$ realization exhibits the algebra inside $M_2(\mathbb{C})$, the regular realization writes the multiplication itself as a matrix, and the six distinguished subspaces reappear as six matrix conditions. It is the first realization of the algebra that is reducible, the coefficient space splitting into two copies of the simple module.
 
-This article owns the operator, its matrix in the basis, the multiplicativity, the **determinant** and the **trace**, the six subspace conditions, and the comparison with the $2\times2$ model. The further development — the right multiplication, the transposition relation between the two representations, the module structure and the decomposition, the double centralizer, the $8\times8$ real form and the second realization — is *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*.
+This article owns the operator, its matrix in the basis, the multiplicativity, the **determinant** and the **trace**, the six subspace conditions, and the comparison with the $2\times2$ model. The further development — the right multiplication, the transposition relation between the two representations, the module structure and the decomposition, the double centralizer, the $8\times8$ real form and the second realization — is *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 ## The Regular Representation
 
@@ -55,9 +55,9 @@ $$
 \mathsf{M}_4(e_1)\mathsf{M}_4(e_2)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}=\mathsf{M}_4(e_3),
 $$
 
-and the other products give $\mathsf{M}_4(e_2)\mathsf{M}_4(e_3)=\mathsf{M}_4(e_1)$ and $\mathsf{M}_4(e_3)\mathsf{M}_4(e_1)=\mathsf{M}_4(e_2)$, reproducing $e_1e_2=e_3$ with its cyclic companions; reversing the order of the factors reverses the sign of each product, reproducing $e_ie_j=-e_je_i$ for $i\neq j$. Those relations are the whole multiplication table of the units, so the correspondence of bases is an isomorphism of algebras and not a formal analogy. Write $\operatorname{col}(\tilde S)$ for the coordinate column of $\tilde S$; then the matrix acts on columns by $\mathsf{M}_4(\tilde Q)\operatorname{col}(\tilde S)=\operatorname{col}(\tilde Q\tilde S)$, which is the column convention of *Biquaternion Four-Vector Element Representation*.
+and the other products give $\mathsf{M}_4(e_2)\mathsf{M}_4(e_3)=\mathsf{M}_4(e_1)$ and $\mathsf{M}_4(e_3)\mathsf{M}_4(e_1)=\mathsf{M}_4(e_2)$, reproducing $e_1e_2=e_3$ with its cyclic companions; reversing the order of the factors reverses the sign of each product, reproducing $e_ie_j=-e_je_i$ for $i\neq j$. Those relations are the whole multiplication table of the units, so the correspondence of bases is an isomorphism of algebras and not a formal analogy. Write $\operatorname{col}(\tilde S)$ for the coordinate column of $\tilde S$; then the matrix acts on columns by $\mathsf{M}_4(\tilde Q)\operatorname{col}(\tilde S)=\operatorname{col}(\tilde Q\tilde S)$, which is the column convention of *The Four-Vector Element Representation of Biquaternions*.
 
-**Remark (the same four for a different reason).** The matrix above is $4\times4$, and the coefficient space of *Biquaternion Four-Vector Element Representation* has complex dimension $4$. These are the same four for the same reason and not by coincidence: the algebra has complex dimension $4$ and the regular representation is the algebra acting on itself, so the space and the index set of the matrix are the same object.
+**Remark (the same four for a different reason).** The matrix above is $4\times4$, and the coefficient space of *The Four-Vector Element Representation of Biquaternions* has complex dimension $4$. These are the same four for the same reason and not by coincidence: the algebra has complex dimension $4$ and the regular representation is the algebra acting on itself, so the space and the index set of the matrix are the same object.
 
 **Example.** For $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the regular matrix is
 
@@ -70,7 +70,7 @@ i&-3&1-i&2+i
 \end{pmatrix}.
 $$
 
-The column of $\tilde{R}=e_0+e_1$, namely $R=(1,1,0,0)$, is carried to the column $(1+2i,3,3+i,-3+i)$, which is the four-vector of the product $\tilde{Q}\tilde{R}$ computed by the component formula of *Biquaternion Four-Vector Element Representation*.
+The column of $\tilde{R}=e_0+e_1$, namely $R=(1,1,0,0)$, is carried to the column $(1+2i,3,3+i,-3+i)$, which is the four-vector of the product $\tilde{Q}\tilde{R}$ computed by the component formula of *The Four-Vector Element Representation of Biquaternions*.
 
 ## The Representation Is a Homomorphism
 
@@ -190,7 +190,7 @@ and each block has trace $2Q_0$ and determinant $\Delta(\tilde Q)$.
 
 ## Summary
 
-The left regular representation $\mathsf{M}_4$ sends $\tilde Q$ to the matrix of left multiplication by $\tilde Q$ in the coefficient basis, a matrix whose entries are the four coefficients up to sign and whose first column is the four-vector of $\tilde Q$. It is an injective algebra homomorphism, so $\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde R)=\mathsf{M}_4(\tilde Q\tilde R)$. The trace of the matrix is $4Q_0$ and the determinant is the square of the $2\times2$ determinant of the same element, the doubled trace and the squared determinant of the $2\times2$ model. The six distinguished subspaces become six matrix conditions: scalar, traceless, real, purely imaginary, Hermitian and anti-Hermitian matrices, the same six that hold in the $2\times2$ model, the two differing only in that the $2\times2$ determinant sees the sign on the anti-quaternion subspace while the regular one sees only its square. The right multiplication, the transposition relation, the module decomposition, the double centralizer, the $8\times8$ real form and the second realization are the further development and belong to *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*.
+The left regular representation $\mathsf{M}_4$ sends $\tilde Q$ to the matrix of left multiplication by $\tilde Q$ in the coefficient basis, a matrix whose entries are the four coefficients up to sign and whose first column is the four-vector of $\tilde Q$. It is an injective algebra homomorphism, so $\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde R)=\mathsf{M}_4(\tilde Q\tilde R)$. The trace of the matrix is $4Q_0$ and the determinant is the square of the $2\times2$ determinant of the same element, the doubled trace and the squared determinant of the $2\times2$ model. The six distinguished subspaces become six matrix conditions: scalar, traceless, real, purely imaginary, Hermitian and anti-Hermitian matrices, the same six that hold in the $2\times2$ model, the two differing only in that the $2\times2$ determinant sees the sign on the anti-quaternion subspace while the regular one sees only its square. The right multiplication, the transposition relation, the module decomposition, the double centralizer, the $8\times8$ real form and the second realization are the further development and belong to *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 ## Summary of Notation
 
@@ -210,6 +210,6 @@ The left regular representation $\mathsf{M}_4$ sends $\tilde Q$ to the matrix of
 
 ## Further Reading
 
-- *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/biquaternion-4x4-matrix-element-representation.md`), for the right multiplication, the transposition relation, the module structure and reducibility, the double centralizer, the real form and the second realization
+- *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/the-4x4-matrix-element-representation-of-biquaternions.md`), for the right multiplication, the transposition relation, the module structure and reducibility, the double centralizer, the real form and the second realization
 - *Introduction to the 2×2 Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.md`), for the companion realization, its trace $2Q_0$ and its determinant
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the two minimal left ideals and the Peirce basis used in the block form of the regular matrix

@@ -141,7 +141,7 @@ $$
 
 *Proof.* $\bigl(a[\,]b\bigr)\bigl((c[\,]d)(\tilde R)\bigr)=a\,c\,\tilde R\,d\,b=(ac)\tilde R(db)$. Verified on random operators to $10^{-13}$. In the unit basis the rule expands as $e_n[\,]e_m\circ e_p[\,]e_q=(e_ne_p)[\,](e_qe_m)$, whose right-hand side is a linear combination of basis operators through the multiplication table of the imaginary units.
 
-**Remark (the regular operators).** The operator $e_n[\,]e_m$ is the composite $\mathsf{M}_4(e_n)\mathsf{M}_4^{R}(e_m)$ of a left and a right regular action, and the sixteen of them are the Conway basis of the operator space; their coordinates in the regular basis are computed in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*.
+**Remark (the regular operators).** The operator $e_n[\,]e_m$ is the composite $\mathsf{M}_4(e_n)\mathsf{M}_4^{R}(e_m)$ of a left and a right regular action, and the sixteen of them are the Conway basis of the operator space; their coordinates in the regular basis are computed in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 ### The Three Classical Functions
 
@@ -159,7 +159,7 @@ $$
 S\{s\}=D\{s_1^2,s_2^2,s_3^2\}-\tfrac12\,s[\,]s .
 $$
 
-The first is antisymmetric, the second diagonal, the third diagonal-less symmetric; the three families span the traceless part of the operator space, and their coordinate forms in the regular basis are computed in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*.
+The first is antisymmetric, the second diagonal, the third diagonal-less symmetric; the three families span the traceless part of the operator space, and their coordinate forms in the regular basis are computed in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 **Remark (the source's sign).** The source writes the symmetric function with the two terms in the opposite order, $S\{s\}=\tfrac12 s[\,]s-D\{s_1^2,s_2^2,s_3^2\}$; the two conventions differ by an overall sign, and the corpus fixes the sign as written above.
 
@@ -252,5 +252,5 @@ The biquaternion algebra acts on itself from the left and from the right, and th
 - A. Gsponer, "Explicit closed-form parametrization of SU(3) and SU(4) in terms of complex quaternions and elementary functions," arXiv:math-ph/0211056v2, 2002, §2–4, for the Conway operators $e_n[\,]e_m$, the composition and association rules, the functions $A\{a\}$, $D\{d\}$, $S\{s\}$ and their $4\times4$ matrix displays (10′)–(13′), the rule $G^{-1}=G^{+\approx}=G^{\dagger}$ for the group elements, and the remark that the quaternion method loses power from three to four dimensions.
 - A. W. Conway, "Quaternions and matrices," *Proceedings of the Royal Irish Academy* **A 50** (1945) 98–130, and J. L. Synge, "Quaternions, Lorentz transformations, and the Conway–Dirac–Eddington matrices," *Communications of the Dublin Institute for Advanced Studies* **A 21** (1972), for the Conway operator calculus in its original form.
 - B. Fauser, "On the equivalence of Daviau's space Clifford algebraic, Hestenes' and Parra's formulations of (real) Dirac theory," arXiv:hep-th/9908200, 1999, §1–2, for the enveloping algebra $P^{\mathrm e}\cong P\otimes P^{\mathrm T}$, the sandwich action, the statement that the left and right actions are of the same type, and the caution on the iso-spin reading.
-- The companion articles of this series: *The Operators on an Algebra*, *Modules over the General Plain Algebra of Biquaternions*, *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*, *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, and *Universal Enveloping Algebras* (the Lie-theoretic construction, distinct from this one).
+- The companion articles of this series: *The Operators on an Algebra*, *Modules over the General Plain Algebra of Biquaternions*, *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, and *Universal Enveloping Algebras* (the Lie-theoretic construction, distinct from this one).
 - The physics articles that use the reading: *The Daviau Map and the Space Clifford Formulation of the Dirac Equation*, *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*, and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.

@@ -514,6 +514,19 @@ while a metric carries it. The exchange is the framework's Wick rotation
 elements, not only on the sectors, and hold identically; on a sector they reduce to the row relations
 $H=\pm B$ and $K=\pm N$ above.
 
+**The exchange-invariant square.** A quantity built from a **tensor square** of a bilinear form,
+$N(\tilde{P}_1,\tilde{Q}_1)N(\tilde{P}_2,\tilde{Q}_2)$, is built from two factors that the exchange
+reverses, so the exchange multiplies it by $(-1)(-1)=+1$: the tensor square of a bilinear form is
+therefore **invariant** under the sector exchange and carries no sign of the sector, while a tensor
+square of a sesquilinear form is invariant for the opposite reason, each factor being fixed. The
+correlation structure of a two-qubit state is built from the bilinear row alone, so it sits **outside**
+the four-row grid rather than in one of its cells, and the two-qubit articles are indexed by the tensor
+square and not by a row. Recomputed on $100$ random pairs:
+$N(i\tilde{P}_1,i\tilde{Q}_1)N(i\tilde{P}_2,i\tilde{Q}_2)=N(\tilde{P}_1,\tilde{Q}_1)N(\tilde{P}_2,\tilde{Q}_2)$
+on $100$ of $100$. Boundary: the identity states which sign the exchange carries and says nothing about
+the size of the correlation, which is computed in *Quantum Discord and Correlations Beyond Entanglement
+in Biquaternionic Form* and *Two Spin-Half Particles in Biquaternionic Form*.
+
 ### The Reading
 
 The comparison is what makes the four readings of §*The Four Readings* precise, and it adds three
@@ -916,7 +929,7 @@ The algebra fixes the grid and the signs; it does not fix the names.
 
 ## Physical Readings
 
-Two transversal readings can be added to the map. The sector exchange sorts the four products into two classes, the two bilinear products moving with the Wick exchange and the two sesquilinear products not, and a change of the local complex structure does the same, so the sorting itself is the framework's invariant criterion (*Conventions in the Biquaternion Universe*). And the exchange read as a clock adds a reading of the temporal product: the quarter turn of the complex time sector is the tick, whose reference and period are supplied and whose arrow and rate are not (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*).
+Three transversal readings can be added to the map. The sector exchange sorts the four products into two classes, the two bilinear products moving with the Wick exchange and the two sesquilinear products not, and a change of the local complex structure does the same, so the sorting itself is the framework's invariant criterion (*Conventions in the Biquaternion Universe*). And the exchange read as a clock adds a reading of the temporal product: the quarter turn of the complex time sector is the tick, whose reference and period are supplied and whose arrow and rate are not (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). A third reading is the exchange-invariant tensor square: because a tensor square of a bilinear form carries no sign of the sector, the framework's correlations are **between** the rows and not inside one of them, entanglement is not a fifth job, and the partial trace of a subsystem lives on the tensor square rather than on a row.
 
 ## Summary
 

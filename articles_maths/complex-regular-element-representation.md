@@ -207,7 +207,7 @@ $$
 \mathsf{M}_4^{\mathbb{B}} = \mathsf{M}_2^{\mathbb{C}} \otimes_{\mathbb{R}} \mathsf{M}_4^{\mathbb{H}}, \qquad \dim_{\mathbb{R}} = 2 \times 4 = 8,
 $$
 
-which is the $4 \times 4$ complex regular representation of $\mathbb{B}$ read over $\mathbb{R}$. Equivalently, writing an element of $\mathbb{B}$ as $\sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$, the complex Cayley factor $\mathsf{M}_2^{\mathbb{C}}$ acts on each coefficient and the quaternion Cayley factor $\mathsf{M}_4^{\mathbb{H}}$ acts on the index $\mu$; the two combine into the Cayley matrix of *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*.
+which is the $4 \times 4$ complex regular representation of $\mathbb{B}$ read over $\mathbb{R}$. Equivalently, writing an element of $\mathbb{B}$ as $\sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$, the complex Cayley factor $\mathsf{M}_2^{\mathbb{C}}$ acts on each coefficient and the quaternion Cayley factor $\mathsf{M}_4^{\mathbb{H}}$ acts on the index $\mu$; the two combine into the Cayley matrix of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 The lower end of the same hierarchy is the $2 \times 2$ complex representation of the quaternions. Since $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{C} \cong M_2(\mathbb{C})$, the quaternion regular representation, of real dimension $4$, complexifies to the $2 \times 2$ complex representation
 

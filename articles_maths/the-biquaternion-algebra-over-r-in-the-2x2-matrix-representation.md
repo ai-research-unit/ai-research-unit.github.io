@@ -53,7 +53,7 @@ $$
 
 the trace pairings of the plain, adjugated, conjugate-transposed and adjugated conjugate-transposed products. Their signatures are the four signatures of the group: $(4,4)$ for the general plain bilinear form, $(4,4)$ split for the general quaternionic bilinear form, $(8,0)$ for the general plain sesquilinear form, and $(2,6)$ for the general quaternionic sesquilinear form. The first of the four is the trace form of this group up to the factor $4$, and the others are the realified readings recorded in *The Realification of the Four Forms*.
 
-**The Minkowski form.** The second real $4\times4$ realization of *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$* lives on the real span of $e_0,ie_1,ie_2,ie_3$, and its Minkowski form, of signature $(1,3)$, is recorded in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*, §*A Second $4 \times 4$ Realization, and the Multiplicative Map*; it is the form of the Lorentzian slice of the algebra, not a form of the eight-dimensional realification.
+**The Minkowski form.** The second real $4\times4$ realization of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* lives on the real span of $e_0,ie_1,ie_2,ie_3$, and its Minkowski form, of signature $(1,3)$, is recorded in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, §*A Second $4 \times 4$ Realization, and the Multiplicative Map*; it is the form of the Lorentzian slice of the algebra, not a form of the eight-dimensional realification.
 
 ## Worked Examples
 

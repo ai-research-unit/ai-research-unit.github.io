@@ -116,7 +116,7 @@ and the associated bilinear form is the standard Euclidean inner product $\mathr
 
 *Proof.* The sum of four squares of real numbers is non-negative and vanishes only at the origin; the remaining statements are the definitions.
 
-## Relation to the Biquaternion Four-Vector Element Representation
+## Relation to the The Four-Vector Element Representation of Biquaternions
 
 In the biquaternion algebra the four coordinates are complex numbers and the coordinate map is an isomorphism $\mathbb{B}\to\mathbb{C}^4$; the four-vector representation there carries the complex conjugate on each coordinate and an indefinite norm, because the complex norm is not positive. The two representations share their bookkeeping — the coordinate vector, the dual row, the component product and the two subspaces — and differ in the field of the coordinates and in the sign pattern of the quaternion norm.
 
@@ -129,7 +129,7 @@ In the biquaternion algebra the four coordinates are complex numbers and the coo
 | Sign pattern of $N$ | four positive signs | indefinite, values in $\mathbb{C}$ |
 | Inner product | Euclidean, positive definite | Hermitian, indefinite |
 
-The table makes the point of the comparison: the quaternion coordinate description is the real one, with four positive signs, and it becomes the biquaternion description by extending the coordinate field. The extra structure of the biquaternion case — the further conjugation and the indefinite form — is exactly what the complexification supplies, and it is not available over $\mathbb{R}$. The biquaternion account is in *Biquaternion Four-Vector Element Representation*.
+The table makes the point of the comparison: the quaternion coordinate description is the real one, with four positive signs, and it becomes the biquaternion description by extending the coordinate field. The extra structure of the biquaternion case — the further conjugation and the indefinite form — is exactly what the complexification supplies, and it is not available over $\mathbb{R}$. The biquaternion account is in *The Four-Vector Element Representation of Biquaternions*.
 
 ## Summary
 

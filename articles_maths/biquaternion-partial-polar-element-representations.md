@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *Biquaternion Polar Element Representation* writes a biquaternion with non-vanishing norm as four factors,
+The companion article *The Polar Element Representation of Biquaternions* writes a biquaternion with non-vanishing norm as four factors,
 
 $$
 \tilde{Q} = r\,e^{i\alpha}\,B\,\hat{q} ,
@@ -479,7 +479,7 @@ The three named representations are also distinguished by their behaviour under 
 
 ## Further Reading
 
-- *Biquaternion Polar Element Representation* (`articles_maths/biquaternion-polar-element-representation.md`), for the four factors, the modulus $\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, the algorithm and the domain.
+- *The Polar Element Representation of Biquaternions* (`articles_maths/the-polar-element-representation-of-biquaternions.md`), for the four factors, the modulus $\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, the algorithm and the domain.
 - *Biquaternion Elementary Functions* (`articles_maths/biquaternion-elementary-functions.md`), for the exponential, the logarithm and the power functions, which fix the parameters of the Hamilton representation and carry its multivaluedness.
 - *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the classification of the roots of $-1$ and the constraints on the Hamilton axis.
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the null cone on which all four representations fail.

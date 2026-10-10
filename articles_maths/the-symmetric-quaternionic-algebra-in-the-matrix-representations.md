@@ -6,7 +6,7 @@ The symmetric quaternionic multiplication is the central-valued operation
 $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$ (*Introduction to the Symmetric Quaternionic Algebra of
 Biquaternions*). This article reads the operation in the two matrix models of the algebra: the **$2\times2$
 model** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *Introduction to the 2×2 Matrix Representation of
-Biquaternions*, and the **$4\times4$ regular model** $\mathsf{M}_4$ of *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*. In each, the product of two elements becomes the symmetrisation of a matrix product, the
+Biquaternions*, and the **$4\times4$ regular model** $\mathsf{M}_4$ of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. In each, the product of two elements becomes the symmetrisation of a matrix product, the
 matrix of the quaternion conjugation acts on it, and the value is a scalar matrix whose coefficient is the
 quaternion form $B$; the article records the trace and the rank of the resulting endomorphism and the matrix
 form of the form.
@@ -16,7 +16,7 @@ determinant $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, the matrix of the conjugat
 representation are those of the cited articles and are used here, not restated. The form $B$ and its Gram matrix are
 *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*; the operators are *The Multiplication
 Operators of the Symmetric Quaternionic Algebra*; the normal forms of the singular matrices are *Biquaternion
-2×2 Matrix Element Representation* and *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*. Nothing of
+2×2 Matrix Element Representation* and *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. Nothing of
 the enriched layer is used.
 
 **Conventions.** The product is $\tilde P\star\tilde Q=B(\tilde P,\tilde Q)e_0$ with
@@ -38,7 +38,7 @@ $$
 
 *Proof.* The realisations of the two summands of $\tilde P\star\tilde Q$ are
 $\mathsf{M}_2(\tilde P^{\natural}\tilde Q)=\mathsf{M}_2(\tilde P^{\natural})\mathsf{M}_2(\tilde Q)=\operatorname{adj}(\mathsf{M}_2(\tilde P))\mathsf{M}_2(\tilde Q)$ and its exchange, since $\mathsf{M}_2$ is an algebra isomorphism and
-the image of the conjugation is the adjugate (*Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*). The half-sum
+the image of the conjugation is the adjugate (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). The half-sum
 is the image of the product, and it equals $\mathsf{M}_2(B(\tilde P,\tilde Q)e_0)=B(\tilde P,\tilde Q)I_2$ because the
 value is central. $\square$
 
@@ -73,7 +73,7 @@ isotropic $\tilde A$, the trace being $\tilde A_0$ in either case). $\square$
 
 **Remark (the adjugate is the conjugation).** The matrix of the quaternion conjugation in the model is the
 adjugate, $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}(\mathsf{M}_2(\tilde Q))=\epsilon\mathsf{M}_2(\tilde Q)^{\mathsf T}\epsilon^{-1}$
-with $\epsilon=i\sigma_2$ (*Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*). The symmetrisation is therefore
+with $\epsilon=i\sigma_2$ (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). The symmetrisation is therefore
 read on the pair as the half-sum of the two products in which one factor is adorned with the conjugation, and
 the identity $\operatorname{adj}(\mathsf{M}_2(\tilde P))\mathsf{M}_2(\tilde Q)+\operatorname{adj}(\mathsf{M}_2(\tilde Q))\mathsf{M}_2(\tilde P)=2B(\tilde P,\tilde Q)I_2$
 is the matrix form of the centrality of the operation. The vectors of the kernel of the endomorphism are the matrices $X$ with
@@ -161,7 +161,7 @@ $\operatorname{Tr}(\operatorname{adj}(\mathsf{M}_2(\tilde P))\mathsf{M}_2(\tilde
 
 *Proof.* $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$ is the trace-and-determinant theorem of *Introduction to the 2×2
 Matrix Representation of Biquaternions*, and $\det\mathsf{M}_4(\tilde Q)=N(\tilde Q)^2$ is the determinant of the
-left regular representation (*Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*); the two vanish together with $N$. The Gram matrix is the table of
+left regular representation (*The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*); the two vanish together with $N$. The Gram matrix is the table of
 *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*. $\square$
 
 **Remark (the definite rows in the models).** Under $\mathsf{M}_2$ the definite rows are read through the subspace
@@ -170,7 +170,7 @@ space of complex conjugation, is the set of elements with real coefficients, on 
 definite, and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is its image under the multiplication by
 $i$, on which the form is negative definite. The Hermitian subspace $\mathbb{M}_+$, the fixed space of Hermitian
 conjugation, is realised by the matrices equal to their conjugate transpose, and the form has signature
-$(1,3)$ on it. The correspondence is the one of *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* and
+$(1,3)$ on it. The correspondence is the one of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and
 *Introduction to the 2×2 Matrix Representation of Biquaternions*, which own the subspace conditions.
 
 ## Worked Examples
@@ -227,8 +227,8 @@ Hermitian subspaces are read through the subspace conditions of the two represen
 ## Further Reading
 
 - *Introduction to the 2×2 Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.md`), for the realisation, the trace and the determinant
-- *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/biquaternion-2x2-matrix-element-representation-m2c.md`), for the adjugate and the singular elements
-- *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/biquaternion-4x4-matrix-element-representation.md`), for the regular model and its determinant
+- *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the adjugate and the singular elements
+- *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/the-4x4-matrix-element-representation-of-biquaternions.md`), for the regular model and its determinant
 - *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the form $B$ and its Gram matrix
 - *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the operators transported by the models
 - *Introduction to the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the operation itself

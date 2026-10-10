@@ -44,7 +44,7 @@ $$
 
 and the constant $\sqrt{2}$ cannot be lowered.
 
-**Proof.** Under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, which is a linear isometry up to the factor $\sqrt2$, one has $\|\mathsf{M}_2(\tilde{T})\|_F=\sqrt2\|\tilde{T}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm. The Frobenius norm is submultiplicative, so
+**Proof.** Under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, which is a linear isometry up to the factor $\sqrt2$, one has $\|\mathsf{M}_2(\tilde{T})\|_F=\sqrt2\|\tilde{T}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm. The Frobenius norm is submultiplicative, so
 $$
 \sqrt2\,\|\tilde{Q}\tilde{R}\|_E=\|\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{R})\|_F\leq\|\mathsf{M}_2(\tilde{Q})\|_F\|\mathsf{M}_2(\tilde{R})\|_F=2\|\tilde{Q}\|_E\|\tilde{R}\|_E,
 $$

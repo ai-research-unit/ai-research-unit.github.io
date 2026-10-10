@@ -231,7 +231,7 @@ Over the complex field the quaternion algebra becomes the matrix algebra $M_2(\m
 | Transpose | $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$ | $\mathsf{M}_4(\tilde Q)^{T} = \mathsf{M}_4(\tilde{Q}^{\natural})$ |
 | Commutant | $\mathsf{M}_4^{R}(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$ | $\mathsf{M}_4^{R}(\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ |
 
-The pattern is the same in both columns, with the complex field replacing the real one and the matrix size doubling in the real counting; the determinant acquires the complex values of the biquaternion norm, and its vanishing locus is the null cone rather than the origin. The biquaternion account is in *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*.
+The pattern is the same in both columns, with the complex field replacing the real one and the matrix size doubling in the real counting; the determinant acquires the complex values of the biquaternion norm, and its vanishing locus is the null cone rather than the origin. The biquaternion account is in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 ## Summary
 

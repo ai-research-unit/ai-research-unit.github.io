@@ -66,7 +66,7 @@ $$
 \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}, \qquad z = q_0 + iq_1, \quad w = q_2 + iq_3 ,
 $$
 
-to $q = z + we_2$, and it is carried by the corpus in *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* — with $z = q_0 - iq_3$, $w = -q_2 - iq_1$ there, a different choice of the compact splitting — as the matrix form of the **real-quaternion subspace** $\mathbb{H}_{\mathbb{B}}$. Three things are true of it, each checked.
+to $q = z + we_2$, and it is carried by the corpus in *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* — with $z = q_0 - iq_3$, $w = -q_2 - iq_1$ there, a different choice of the compact splitting — as the matrix form of the **real-quaternion subspace** $\mathbb{H}_{\mathbb{B}}$. Three things are true of it, each checked.
 
 - It is multiplicative on the real quaternions: a hundred random pairs give a largest discrepancy of $10^{-15}$, machine precision.
 - It is **not** multiplicative on the complex quaternions: a hundred random pairs give a largest discrepancy of order $3\times10^1$. The reason is structural and not accidental: the entries $-\bar w$ and $\bar z$ use complex conjugation, which is antilinear, and an antilinear operation cannot commute with the central $i$ of a complex-linear multiplication. The Kravchenko–Shapiro form is a representation of $\mathbb{H}$ over $\mathbb{C}$, not of $\mathbb{B}$.

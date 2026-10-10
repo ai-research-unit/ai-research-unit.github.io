@@ -12,7 +12,7 @@ The algebra, its four conjugations, its six distinguished real subspaces $\mathb
 
 This article presents the **Clifford algebra representation** of $\mathbb{B}$: the biquaternion written as an element of the **even subalgebra** $\mathrm{Cl}_{1,3}^+$ of the Clifford algebra of the Minkowski quadratic form of signature $(1,3)$, and also, in the second and smaller identification, as the whole of the three-generator Clifford algebra $\mathrm{Cl}_{3,0}$. The realization is real: it identifies the eight real dimensions of $\mathbb{B}$ with the eight real dimensions of $\mathrm{Cl}_{1,3}^+$, and this is why it belongs to the reading of the algebra as an **algebra over $\mathbb{R}$**.
 
-The article owns the generators and their form, the even part with its grade basis, the explicit dictionary between the biquaternion units and the bivectors, the second identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ with the volume element as the central scalar imaginary, the four Clifford grades against the biquaternion components, the identification of the four conjugations with the intrinsic maps of the Clifford algebra, and the biquaternion norm read on the Clifford side. The matrix realizations of the same algebra are *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* and *Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$*; the action of the algebra on two-component spinors is *Biquaternion Spin Geometry*.
+The article owns the generators and their form, the even part with its grade basis, the explicit dictionary between the biquaternion units and the bivectors, the second identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ with the volume element as the central scalar imaginary, the four Clifford grades against the biquaternion components, the identification of the four conjugations with the intrinsic maps of the Clifford algebra, and the biquaternion norm read on the Clifford side. The matrix realizations of the same algebra are *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; the action of the algebra on two-component spinors is *Biquaternion Spin Geometry*.
 
 **Conventions.** The generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with the mostly-minus form $g = \mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma^0)^2 = +I_4$ and $(\gamma^j)^2 = -I_4$ for $j = 1,2,3$. The pseudoscalar is $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$. The biquaternion units $e_\mu$ and the scalar imaginary $i$ are the objects being placed; the gamma matrices are the objects doing the placing. Every claim below was recomputed in exact arithmetic on explicit $4\times 4$ gamma matrices over the Gaussian rationals, and the multiplicativity was checked on six exact random pairs.
 
@@ -209,7 +209,7 @@ $$
 
 **Corollary.** $\mathrm{Cl}_{1,3}^+$ is isomorphic to $M_2(\mathbb{C})$ as a real algebra.
 
-*Proof.* The isomorphism carries $\mathbb{B}$ to $\mathrm{Cl}_{1,3}^+$, and $\mathbb{B} \cong M_2(\mathbb{C})$ by the $2\times2$ realization of *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*; composing the two gives the claim. $\square$
+*Proof.* The isomorphism carries $\mathbb{B}$ to $\mathrm{Cl}_{1,3}^+$, and $\mathbb{B} \cong M_2(\mathbb{C})$ by the $2\times2$ realization of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; composing the two gives the claim. $\square$
 
 
 ## Why the Realization Is Useful
@@ -269,7 +269,7 @@ so that all six bivectors correspond to the quaternion units with the positive s
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra and its conjugations
 - *Biquaternions as an Algebra over $\mathbb{R}$* (`articles_maths/biquaternions-as-an-algebra-over-r.md`), for the algebra read over the real field
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm and the real subspaces it restricts to
-- *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/biquaternion-2x2-matrix-element-representation-m2c.md`), for the matrix realization and the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$
+- *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the matrix realization and the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$
 - *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the six subspaces, the coordinate blocks and their reading as sums of grades
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations as an abstract group
 - *Biquaternion Spin Geometry* (`articles_maths/biquaternion-spin-geometry.md`), for the action of the algebra on spinors

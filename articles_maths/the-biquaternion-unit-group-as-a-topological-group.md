@@ -7,7 +7,7 @@ The group of units $\mathbb{B}^\times$ of the biquaternion algebra is the set of
 
 The article is one of the three the boundary draws out of the former joint treatment of the Lie theory: the Lie algebra is *The 12 Products of the Biquaternion Complex Space* in Algebra, the Lie-group theory and the exponential are *Biquaternion Lie Group and Exponential Structure* in Analysis, and this article owns the algebraic group of units together with the topological statements that can be read from the group alone. The topology of the group is *The Unitary Group of the Biquaternion Algebra*; the Euclidean ambient space is *The Euclidean Topology of the Biquaternion Algebra*; the zero divisors and their cone are *Biquaternion Zero Divisors*; and the invertibility criterion and the distribution of the units over the six subspaces are *Biquaternion Norm and Invertibility*.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. An element is a **unit** when it is invertible in $\mathbb{B}$; the invertibility criterion and the explicit inverse are *Biquaternion Norm and Invertibility*. Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$, and the matrix realisation is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, carrying ${}^{\natural}$ to the adjugate and ${}^{*}$ to the conjugate transpose.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. An element is a **unit** when it is invertible in $\mathbb{B}$; the invertibility criterion and the explicit inverse are *Biquaternion Norm and Invertibility*. Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$, and the matrix realisation is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, carrying ${}^{\natural}$ to the adjugate and ${}^{*}$ to the conjugate transpose.
 
 ---
 
@@ -47,7 +47,7 @@ and the real dimension of the group is the sum $6+2=8$.
 
 **Remark (no splitting along the centre).** The sequence does not split by the central circle: the restriction of $\det$ to $\mathbb{C}^\times e_0$ is the squaring map $A\mapsto A^{2}$, which is two-to-one, and not an isomorphism. A splitting is supplied instead by the real directions.
 
-**Proposition (the matrix identifications).** Under the isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* the determinant gives
+**Proposition (the matrix identifications).** Under the isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* the determinant gives
 
 $$
 \mathbb{B}^\times\cong GL_2(\mathbb{C}),\qquad \mathbb{B}^\times_1\cong SL_2(\mathbb{C}),\qquad \mathbb{C}^\times e_0\cong \mathbb{C}^\times I,
@@ -162,5 +162,5 @@ The group of units $\mathbb{B}^\times$ is the complement of the singular cone in
 - *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the Euclidean sphere and the contractibility of the ambient space
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the invertibility criterion, the inverse formula and the distribution of the units
 - *The Topology of the Zero-Divisor Cone* (`articles_maths/the-topology-of-the-zero-divisor-cone.md`), for the zero divisors and their cone as the topological boundary of the group of units
-- *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/biquaternion-2x2-matrix-element-representation-m2c.md`), for the matrix model and the determinant
+- *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the matrix model and the determinant
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations: An Elementary Introduction* (Springer, 2nd ed. 2015).

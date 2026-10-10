@@ -14,7 +14,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Introduction to the Six Subspaces](../articles_maths/introduction-to-the-six-subspaces.html)
 - [Decompositions Along the Six Subspaces](../articles_maths/decompositions-along-the-six-subspaces.html)
 - [Comparison of the Six Subspaces](../articles_maths/comparison-of-the-six-subspaces.html)
-- [Introduction to the Biquaternion Four-Vector Representation](../articles_maths/biquaternion-four-vector-element-representation.html)
+- [The Four-Vector Element Representation of Biquaternions](../articles_maths/the-four-vector-element-representation-of-biquaternions.html)
 - [Introduction to the 2×2 Matrix Representation of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-representation-of-biquaternions.html)
 - [Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-representation-of-biquaternions.html)
 
@@ -160,9 +160,9 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 ### Basic Representations
 
-- [Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/biquaternion-2x2-matrix-element-representation-m2c.html)
-- [Biquaternion 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/biquaternion-4x4-matrix-element-representation.html)
-- [Biquaternion Polar Element Representation](../articles_maths/biquaternion-polar-element-representation.html)
+- [The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.html)
+- [The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/the-4x4-matrix-element-representation-of-biquaternions.html)
+- [The Polar Element Representation of Biquaternions](../articles_maths/the-polar-element-representation-of-biquaternions.html)
 - [Biquaternion Partial Polar Element Representations](../articles_maths/biquaternion-partial-polar-element-representations.html)
 
 ## Topology
@@ -257,8 +257,8 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Biquaternion Higher Special Functions](../articles_maths/biquaternion-higher-special-functions.html)
 - [Biquaternion Discrete Harmonic Analysis](../articles_maths/biquaternion-discrete-harmonic-analysis.html)
 - [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html)
-- [Biquaternion Four-Vector Operator Representation](../articles_maths/biquaternion-four-vector-operator-representation.html)
-- [Biquaternion Twisted Spinor Operator Representation](../articles_maths/biquaternion-twisted-spinor-operator-representation.html)
+- [The Four-Vector Operator Representation of Biquaternions](../articles_maths/the-four-vector-operator-representation-of-biquaternions.html)
+- [The Twisted Spinor Operator Representation of Biquaternions](../articles_maths/the-twisted-spinor-operator-representation-of-biquaternions.html)
 - [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html)
 - [Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.html)
 - [The Indefinite Spectra of the Operators on the Biquaternion Algebra](../articles_maths/the-indefinite-spectra-of-the-operators-on-the-biquaternion-algebra.html)

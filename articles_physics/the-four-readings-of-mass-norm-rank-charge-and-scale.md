@@ -16,8 +16,7 @@ imaginary, *Mass, Rank and the Positivity of the Dagger* for the rank and the po
 Types, Discrete Charge and Three-Particle Couplings* for the compact slice and the discrete charge, and
 *The Polar Element Representation of Biquaternions* for the polar scale, with the dilation reading in
 *Conformal Invariance and the Massless Limit in Biquaternionic Form*. The fourth-product and sesquilinear
-forms are *Conventions in the Biquaternion Universe*, and the map of which physics hangs on which product is
-*The Heat Map of the Framework: Which Physics Hangs on Which Product*.
+forms are *Conventions in the Biquaternion Universe*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, basis $e_0,e_1,e_2,e_3$, units
 $e_k^2=-e_0$; materials $\mathbb{M}_-$ with the four-position
@@ -152,5 +151,3 @@ left out.
   charge, and for the continuous rapidity of the non-compact directions.
 - *The Polar Element Representation of Biquaternions* and *Conformal Invariance and the Massless Limit in
   Biquaternionic Form*, for the polar scale and its dilation reading.
-- *The Heat Map of the Framework: Which Physics Hangs on Which Product*, for the placement of the four
-  readings among the products.

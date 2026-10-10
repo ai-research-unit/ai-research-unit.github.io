@@ -151,7 +151,7 @@ Over $\mathbb{C}$ the dimension of a subalgebra is necessarily even, and the rea
 
 Over $\mathbb{R}$ the parity restriction is gone. The unital subalgebra $\mathbb{R} e_0$ has real dimension one, and the three-dimensional subalgebra $A = \mathbb{R}\{e_0, e_1+ie_2, ie_1-e_2\}$ of the previous section is of a dimension that the complex reading cannot produce. The dimension of a real subalgebra is thus not restricted to the even numbers, and the reason is the failure of the converse of "a complex subspace is a real subspace".
 
-**Remark (dimensions five and six also occur).** The three-dimensional example is the extreme case, but it is not the only odd or non-basis dimension. Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$* the upper triangular matrices are a subalgebra of real dimension six, and the matrices of the form
+**Remark (dimensions five and six also occur).** The three-dimensional example is the extreme case, but it is not the only odd or non-basis dimension. Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* the upper triangular matrices are a subalgebra of real dimension six, and the matrices of the form
 $$
 \begin{pmatrix} a & b \\ 0 & d \end{pmatrix}, \qquad a, b \in \mathbb{C},\ d \in \mathbb{R},
 $$

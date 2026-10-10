@@ -1,4 +1,4 @@
-# __Biquaternion Polar Element Representation__
+# __The Polar Element Representation of Biquaternions__
 
 ## Introduction
 

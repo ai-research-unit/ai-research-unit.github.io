@@ -1,4 +1,4 @@
-# __Biquaternion 2×2 Matrix Element Representation $M_2(\mathbb{C})$__
+# __The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions__
 
 ## Introduction
 
@@ -226,7 +226,7 @@ The matrix realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Repres
 | $e_0, e_1, e_2, e_3$ | Algebra basis, $e_0 = 1$, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | Developed form, $Q_\mu \in \mathbb{C}$ |
-| $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ | Four-vector of *Biquaternion Four-Vector Element Representation* |
+| $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ | Four-vector of *The Four-Vector Element Representation of Biquaternions* |
 | $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$ | Matrix realization of *Introduction to the 2×2 Matrix Representation of Biquaternions*, $\mathsf{M}_2(e_0) = I$, $\mathsf{M}_2(e_k) = -i\sigma_k$ |
 | $\sigma_1, \sigma_2, \sigma_3$ | Pauli matrices, a shorthand for the images of $e_1, e_2, e_3$ |
 | $N(\tilde{Q}) = \det \mathsf{M}_2(\tilde{Q}) = \sum_\mu Q_\mu^2$ | The determinant of the matrix, the norm |

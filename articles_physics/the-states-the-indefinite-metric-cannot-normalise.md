@@ -148,6 +148,7 @@ Four further readings of the same computation are recorded here, each under a na
 - The gauge metric is not the state-space inner product: the states are normalised by $H$, and $K$ is the indefinite pairing of the gauge corner.
 - Isotropy is not special to the states: the $K$-null set is a cone of real dimension seven and contains elements that are not zero divisors, such as $e_0+e_1$, as well as elements that are, such as $e_0+ie_1$. What is special to the pure states is the triple coincidence of the $K$-null set, the zero-divisor cone and the trace-one slice.
 - The reading of the order-three projections as an internal three-valued label is a **speculation**, labelled; it is not a claim that a measurement in the framework is three-valued.
+- Whether the fundamental pairing of the framework is the trace at the informational sector with $H$ or a pairing at the material sector with $K$ is **open**; this article's position is that the states are normalised by $H$ and that $K$ is the metric of the gauge corner, and that position is stated rather than derived (*The Born Rule as a Trace Formula — Derivation and Comparison*).
 
 ## The Ledger
 
