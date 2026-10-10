@@ -41,7 +41,13 @@ an isomorphism of $\mathbb{C}$-algebras.
 
 ## The Images of the Basis
 
-**Theorem.** The isomorphism $\mathsf{M}_2$ can be fixed by
+The isomorphism is written $\mathsf{M}_2$. It converts a quaternion into a $2 \times 2$ complex matrix,
+
+$$
+\mathsf{M}_2 : \mathbb{H}\otimes_{\mathbb{R}}\mathbb{C} \longrightarrow M_2(\mathbb{C}),
+$$
+
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity. The quaternion units are assigned the matrices
 
 $$
 \mathsf{M}_2(e_0) = I, \quad \mathsf{M}_2(e_1) = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \quad \mathsf{M}_2(e_2) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad \mathsf{M}_2(e_3) = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},

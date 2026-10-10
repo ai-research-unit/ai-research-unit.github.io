@@ -137,7 +137,13 @@ The main result of the framework so far is that the biquaternion algebra **conta
 
 ### Relativity in $\mathbb{M}_-$
 
-The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **proper orthochronous Lorentz group** $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the **group of biquaternions of unit norm** in $\mathbb{B}$:
+A point of the material sector is written in the coordinates of relativistic physics as
+
+$$
+\tilde{Q} = ic\,t\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 \in \mathbb{M}_-,
+$$
+
+the imaginary time $ic\,t$ together with the three real spatial coordinates $x, y, z$. The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **proper orthochronous Lorentz group** $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the **group of biquaternions of unit norm** in $\mathbb{B}$:
 
 $$
 SL(2,\mathbb{C}) \;\cong\; \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}.
@@ -155,7 +161,13 @@ The relativistic wave equations — **Maxwell's equations** and the **Dirac equa
 
 ### Quantum Physics in $\mathbb{M}_+$
 
-The informational sector $\mathbb{M}_+$ is, exactly, the operator algebra of a two-state quantum system. This is established in the companion article *Quantum Physics in Biquaternionic Form*, and it can be summarized as follows.
+A point of the informational sector is written in its own coordinates as
+
+$$
+\tilde{Q} = (ct')\,e_0 + (ix')\,e_1 + (iy')\,e_2 + (iz')\,e_3 \in \mathbb{M}_+,
+$$
+
+the real time $ct'$ together with the three imaginary spatial coordinates $ix', iy', iz'$. The informational sector $\mathbb{M}_+$ is, exactly, the operator algebra of a two-state quantum system. This is established in the companion article *Quantum Physics in Biquaternionic Form*, and it can be summarized as follows.
 
 - The **idempotents** in $\mathbb{M}_+$, of the form $\tilde\Pi_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, are the pure states of a qubit. They parametrize the Bloch sphere $S^2$.
 - The **positive trace-one elements** in $\mathbb{M}_+$, of the form $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, are the mixed states, parametrizing the Bloch ball.

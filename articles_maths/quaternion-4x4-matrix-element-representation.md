@@ -13,13 +13,22 @@ Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2
 
 ## The Left Regular Representation
 
-**Definition.** The **left regular representation** is the map $L : \mathbb{H}\to\operatorname{End}_F(\mathbb{H})$ sending $\tilde q$ to the endomorphism $L_{\tilde q}(\tilde r) = \tilde q \tilde r$. The **Cayley matrix** of $\tilde q$ is the matrix of $L_{\tilde q}$ in the basis $(e_0,e_1,e_2,e_3)$.
+**Definition.** The **left regular matrix** is the isomorphism written $\mathsf{M}_4$. It converts a quaternion into a $4 \times 4$ matrix over $F$,
 
-**Theorem.** The map $\mathsf{M}_4$ is an injective algebra homomorphism: $\mathsf{M}_4(p+\tilde q) = \mathsf{M}_4(p)+\mathsf{M}_4(\tilde q)$, $\mathsf{M}_4(p\tilde q) = \mathsf{M}_4(p)\mathsf{M}_4(\tilde q)$, $\mathsf{M}_4(1) = \mathrm{id}$, and $\mathsf{M}_4$ is injective. Its image is a four-dimensional subalgebra of $M_4(F)$ isomorphic to $\mathbb{H}$.
+$$
+\mathsf{M}_4 : \mathbb{H} \longrightarrow M_4(F),
+$$
 
-*Proof.* Left multiplication is $F$-linear, and associativity gives $\mathsf{M}_4(p)L_{\tilde q}(\tilde r) = p(\tilde q \tilde r) = (p\tilde q)\tilde r = L_{p\tilde q}(\tilde r)$. If $\mathsf{M}_4(\tilde q) = 0$ then $\tilde q = L_{\tilde q}(1) = 0$, so $\mathsf{M}_4$ is injective; the image is a subalgebra of dimension $\dim\mathbb{H} = 4$.
+and it is fixed by its values on the basis, the rest following by $F$-linearity. The **Cayley matrix** of $\tilde q$ is its image, the matrix of left multiplication in the basis $(e_0,e_1,e_2,e_3)$, whose $m$-th column is the coordinate column of the product $\tilde q e_m$. The quaternion units are assigned the matrices
 
-**Theorem (Cayley matrix).** For $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the Cayley matrix of left multiplication is
+$$
+\mathsf{M}_4(e_0)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\quad
+\mathsf{M}_4(e_1)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\quad
+\mathsf{M}_4(e_2)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\quad
+\mathsf{M}_4(e_3)=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+$$
+
+and a general quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ therefore maps to
 
 $$
 \mathsf{M}_4(\tilde q) = \begin{pmatrix}
@@ -30,13 +39,27 @@ q_3 & -q_2 & q_1 & q_0
 \end{pmatrix}.
 $$
 
-*Proof.* The columns are $L_{\tilde q}(e_k) = \tilde q e_k$. Direct multiplication gives
+Each entry is a single coefficient of $\tilde q$ carrying a sign, and no entry is a sum of two or more coefficients.
+
+*Proof (the general matrix).* The columns are $\tilde q e_k$. Direct multiplication gives
 
 $$
 \tilde q e_0 = \tilde q, \quad \tilde q e_1 = -q_1+q_0e_1+q_3e_2-q_2e_3, \quad \tilde q e_2 = -q_2-q_3e_1+q_0e_2+q_1e_3, \quad \tilde q e_3 = -q_3+q_2e_1-q_1e_2+q_0e_3,
 $$
 
 which are the four columns of the displayed matrix.
+
+**The check.** The assignment is the right one because the four matrices multiply as the four units do. Squaring a vector image, $\mathsf{M}_4(e_k)^2=-I_4$, so $e_k^2=-e_0$ is reproduced; multiplying the first two,
+
+$$
+\mathsf{M}_4(e_1)\mathsf{M}_4(e_2)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}=\mathsf{M}_4(e_3),
+$$
+
+and the other products give $\mathsf{M}_4(e_2)\mathsf{M}_4(e_3)=\mathsf{M}_4(e_1)$ and $\mathsf{M}_4(e_3)\mathsf{M}_4(e_1)=\mathsf{M}_4(e_2)$, reproducing $e_1e_2=e_3$ with its cyclic companions; reversing the order of the factors reverses the sign of each product, reproducing $e_ie_j=-e_je_i$ for $i\neq j$. Those relations are the whole multiplication table of the units, so the correspondence of bases is an isomorphism of algebras and not a formal analogy.
+
+**Theorem.** The map $\mathsf{M}_4$ is an injective algebra homomorphism: $\mathsf{M}_4(p+\tilde q) = \mathsf{M}_4(p)+\mathsf{M}_4(\tilde q)$, $\mathsf{M}_4(p\tilde q) = \mathsf{M}_4(p)\mathsf{M}_4(\tilde q)$, $\mathsf{M}_4(1) = \mathrm{id}$, and $\mathsf{M}_4$ is injective. Its image is a four-dimensional subalgebra of $M_4(F)$ isomorphic to $\mathbb{H}$.
+
+*Proof.* Left multiplication is $F$-linear, and associativity gives associativity of the matrix images; if $\mathsf{M}_4(\tilde q) = 0$ then its first column, which is the column of $\tilde q$, vanishes, so $\tilde q = 0$ and $\mathsf{M}_4$ is injective; the image is a subalgebra of dimension $\dim\mathbb{H} = 4$.
 
 **Proposition.** The Cayley matrix is the sum of a scalar and a skew-symmetric part,
 
@@ -212,7 +235,7 @@ The pattern is the same in both columns, with the complex field replacing the re
 
 ## Summary
 
-The left regular representation $L_{\tilde q}(\tilde r) = \tilde q \tilde r$ is an injective algebra homomorphism $\mathbb{H}\to M_4(F)$, whose matrix in the basis $(e_0,e_1,e_2,e_3)$ is the Cayley matrix displayed above; it is the sum $q_0I+\Omega_q$ of a scalar and a skew-symmetric part, it multiplies as the quaternions do, $\mathsf{M}_4(p)\mathsf{M}_4(\tilde q) = \mathsf{M}_4(p\tilde q)$, and it carries units to invertible matrices with $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural})/N(\tilde q)$.
+The left regular matrix is an injective algebra homomorphism $\mathbb{H}\to M_4(F)$, whose matrix in the basis $(e_0,e_1,e_2,e_3)$ is the Cayley matrix displayed above; it is the sum $q_0I+\Omega_q$ of a scalar and a skew-symmetric part, it multiplies as the quaternions do, $\mathsf{M}_4(p)\mathsf{M}_4(\tilde q) = \mathsf{M}_4(p\tilde q)$, and it carries units to invertible matrices with $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural})/N(\tilde q)$.
 
 The determinant and trace of the Cayley matrix are $\det \mathsf{M}_4(\tilde q) = N(\tilde q)^2$ and $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0$, computed from the identity $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = N(\tilde q)I$ that also shows $\mathsf{M}_4(\tilde q)$ to be a positive multiple of an orthogonal matrix. Transposition is quaternion conjugation, $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, and the three involutions of the algebra act by the four sign combinations $\pm \mathsf{M}_4(\tilde q),\pm \mathsf{M}_4(\tilde q)^{T}$ of the Cayley matrix.
 

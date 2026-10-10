@@ -17,13 +17,33 @@ with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\
 
 ### Definition
 
-**Definition.** The **matrix representation** of $\mathbb{D}'_R$ is the map
+**Definition.** The **matrix representation** of $\mathbb{D}'_R$ is the isomorphism written $\Phi$. It converts a dual number into a $2 \times 2$ matrix over $R$,
 
 $$
-\Phi : \mathbb{D}'_R \longrightarrow M_2(R), \qquad \Phi(a + \varepsilon a') = \begin{pmatrix} a & a' \\ 0 & a \end{pmatrix}.
+\Phi : \mathbb{D}'_R \longrightarrow M_2(R),
+$$
+
+and it is fixed by its values on the basis, the rest following by $R$-linearity. The unit and the infinitesimal element are assigned the matrices
+
+$$
+\Phi(1) = I = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad \Phi(\varepsilon) = J = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix},
+$$
+
+so that on a general dual number $A = a + \varepsilon a'$,
+
+$$
+\Phi(a + \varepsilon a') = \begin{pmatrix} a & a' \\ 0 & a \end{pmatrix}.
 $$
 
 The matrix $\Phi(A)$ is the **matrix of** $A$; its diagonal entry is the real part and its strictly upper-triangular entry is the infinitesimal part.
+
+**The check.** The assignment is the right one because the two matrices multiply as the two units do. The square of the infinitesimal image vanishes,
+
+$$
+\Phi(\varepsilon)^2 = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}^2 = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix} = \Phi(\varepsilon^2),
+$$
+
+reproducing $\varepsilon^2 = 0$, and $\Phi(1)^2 = \Phi(1)$ reproduces $1^2 = 1$; those relations are the whole multiplication table of $\mathbb{D}'_R$, so the correspondence of bases is an isomorphism of algebras and not a formal analogy.
 
 ### Linearity and the Identity
 

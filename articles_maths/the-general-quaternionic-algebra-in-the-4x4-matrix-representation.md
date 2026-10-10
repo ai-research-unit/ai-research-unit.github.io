@@ -11,13 +11,13 @@ The regular representation has one advantage over the $2\times2$ realization in 
 
 ## The Representation
 
-**Definition.** The **left regular representation** is the algebra homomorphism
+**Definition.** The **left regular matrix** is the isomorphism written $\mathsf{M}_4$. It converts a biquaternion into a $4 \times 4$ complex matrix,
 
 $$
-\mathsf{M}_4:\mathbb{B}\longrightarrow M_4(\mathbb{C}),\qquad L_{\tilde{Q}}(\tilde{R})=\tilde{Q}\tilde{R},
+\mathsf{M}_4:\mathbb{B}\longrightarrow M_4(\mathbb{C}),
 $$
 
-with $\mathsf{M}_4(\tilde{Q})$ the $4\times4$ matrix of left multiplication in the basis $e_0,e_1,e_2,e_3$; the right regular representation is $R_{\tilde{Q}}(\tilde{R})=\tilde{R}\tilde{Q}$. The representation satisfies
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_0,e_1,e_2,e_3$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. The **right regular matrix** $\mathsf{M}_4^{R}(\tilde{Q})$ is defined the same way with the product in the opposite order, its $m$-th column being the coordinate column of $e_m\tilde{Q}$. The representation satisfies
 
 $$
 \mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})=\mathsf{M}_4(\tilde{P}\tilde{Q}),\qquad \mathsf{M}_4(\tilde{Q}^{\natural})=\mathsf{M}_4(\tilde{Q})^{\mathsf{T}},\qquad \mathsf{M}_4^{R}(\tilde{Q})=E\,\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}E ,

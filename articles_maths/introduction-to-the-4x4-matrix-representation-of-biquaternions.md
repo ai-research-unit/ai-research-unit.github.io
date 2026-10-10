@@ -10,16 +10,24 @@ This article owns the operator, its matrix in the basis, the multiplicativity, t
 
 ## The Regular Representation
 
-**Definition.** The **left regular representation** of $\mathbb{B}$ is the map
+**Definition.** The **left regular matrix** is the isomorphism written $\mathsf{M}_4$. It converts a biquaternion into a $4 \times 4$ complex matrix,
 
 $$
-L:\mathbb{B}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
-L_{\tilde Q}(\tilde R)=\tilde Q\tilde R .
+\mathsf{M}_4:\mathbb{B}\longrightarrow M_4(\mathbb{C}),
 $$
 
-For each $\tilde Q$ the map $\tilde R\mapsto\tilde Q\tilde R$ is $\mathbb{C}$-linear, because the multiplication is bilinear, so $L_{\tilde Q}$ is a $\mathbb{C}$-linear endomorphism of the four-dimensional space $\mathbb{B}$. Its matrix in the basis $e_0,e_1,e_2,e_3$ is written $\mathsf{M}_4(\tilde Q)$, and it acts on the column $R=(R_0,R_1,R_2,R_3)$, and the product $\tilde Q\tilde R$ corresponds to the matrix product $\mathsf{M}_4(\tilde Q)R$.
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity. The quaternion units are assigned the matrices
 
-**Proposition.** In the basis $e_0,e_1,e_2,e_3$,
+$$
+\mathsf{M}_4(e_0)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\quad
+\mathsf{M}_4(e_1)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\quad
+\mathsf{M}_4(e_2)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\quad
+\mathsf{M}_4(e_3)=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+$$
+
+with $\mathsf{M}_4(ie_\mu)=i\,\mathsf{M}_4(e_\mu)$ on the central scalar $\mathbb{C}_{\mathbb{B}}$.
+
+A general biquaternion $\tilde Q=\sum_\mu Q_\mu e_\mu$ therefore maps to
 
 $$
 \mathsf{M}_4(\tilde Q)=
@@ -33,7 +41,21 @@ $$
 
 Each entry is a single coefficient of $\tilde Q$ carrying a sign, and **no entry is a sum of two or more coefficients**, because in this basis each product of basis elements is one basis element times a sign. The first column is the four-vector $(Q_0,Q_1,Q_2,Q_3)$ of $\tilde Q$.
 
-**Proof.** The columns are the images $L_{\tilde Q}(e_m)=\tilde Qe_m$ written in the basis. For $m=0$ the image is $\tilde Q$, giving the first column. For $m=k\geq1$, using $e_je_k=\epsilon^{ijk}e_i$ for $j\neq k$, one gets $L_{\tilde Q}(e_k)=Q_0e_k-Q_ke_0+\sum_{j\neq k}\epsilon^{ijk}Q_je_i$, and expanding with $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ gives the displayed columns. $\square$
+**Proof (the general matrix).** The columns are the products $\tilde Qe_m$ written in the basis. For $m=0$ the image is $\tilde Q$, giving the first column. For $m=k\geq1$, using $e_je_k=\epsilon^{ijk}e_i$ for $j\neq k$, one gets $\tilde Qe_k=Q_0e_k-Q_ke_0+\sum_{j\neq k}\epsilon^{ijk}Q_je_i$, and expanding with $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ gives the displayed columns.
+
+**The check.** The assignment is the right one because the four matrices multiply as the four units do. Squaring a vector image,
+
+$$
+\mathsf{M}_4(e_1)^2=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}^2=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}=-\mathsf{M}_4(e_0),
+$$
+
+and the same holds for $\mathsf{M}_4(e_2)$ and $\mathsf{M}_4(e_3)$; so $e_k^2=-e_0$ is reproduced. Multiplying the first two,
+
+$$
+\mathsf{M}_4(e_1)\mathsf{M}_4(e_2)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}=\mathsf{M}_4(e_3),
+$$
+
+and the other products give $\mathsf{M}_4(e_2)\mathsf{M}_4(e_3)=\mathsf{M}_4(e_1)$ and $\mathsf{M}_4(e_3)\mathsf{M}_4(e_1)=\mathsf{M}_4(e_2)$, reproducing $e_1e_2=e_3$ with its cyclic companions; reversing the order of the factors reverses the sign of each product, reproducing $e_ie_j=-e_je_i$ for $i\neq j$. Those relations are the whole multiplication table of the units, so the correspondence of bases is an isomorphism of algebras and not a formal analogy. Write $\operatorname{col}(\tilde S)$ for the coordinate column of $\tilde S$; then the matrix acts on columns by $\mathsf{M}_4(\tilde Q)\operatorname{col}(\tilde S)=\operatorname{col}(\tilde Q\tilde S)$, which is the column convention of *Biquaternion Four-Vector Element Representation*.
 
 **Remark (the same four for a different reason).** The matrix above is $4\times4$, and the coefficient space of *Biquaternion Four-Vector Element Representation* has complex dimension $4$. These are the same four for the same reason and not by coincidence: the algebra has complex dimension $4$ and the regular representation is the algebra acting on itself, so the space and the index set of the matrix are the same object.
 
@@ -54,9 +76,9 @@ The column of $\tilde{R}=e_0+e_1$, namely $R=(1,1,0,0)$, is carried to the colum
 
 **Theorem (multiplicativity).** For all $\tilde Q,\tilde R\in\mathbb{B}$, $\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde R)=\mathsf{M}_4(\tilde Q\tilde R)$. Hence $\mathsf{M}_4$ is an algebra homomorphism, and the coefficient space is a left $\mathbb{B}$-module under it.
 
-**Proof.** Both sides are $\mathbb{C}$-linear in the second factor and are computed on the basis: for every $m$, associativity gives $L_{\tilde Q}(L_{\tilde R}(e_m))=\tilde Q(\tilde Re_m)=(\tilde Q\tilde R)e_m=L_{\tilde Q\tilde R}(e_m)$. $\square$
+**Proof.** Both sides are computed on the basis: for every $m$, associativity gives $\tilde Q(\tilde Re_m)=(\tilde Q\tilde R)e_m$, so the two matrices agree on every column $\operatorname{col}(e_m)$ and hence everywhere. $\square$
 
-**Corollary (injectivity).** The map $\mathsf{M}_4$ is injective, so the algebra is realized faithfully; indeed $\mathsf{M}_4(\tilde Q)=0$ forces $L_{\tilde Q}(e_0)=\tilde Q=0$, and the first column alone recovers the four coefficients.
+**Corollary (injectivity).** The map $\mathsf{M}_4$ is injective, so the algebra is realized faithfully; indeed $\mathsf{M}_4(\tilde Q)=0$ forces its first column, which is the column of $\tilde Q$, to vanish, and the first column alone recovers the four coefficients.
 
 The two orders differ, and the example $\tilde Q=e_0+e_1$, $\tilde R=e_0+e_2$ shows it: the products $\tilde Q\tilde R=e_0+e_1+e_2+e_3$ and $\tilde R\tilde Q=e_0+e_1+e_2-e_3$ have first columns $(1,1,1,1)$ and $(1,1,1,-1)$, so $\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde R)\neq\mathsf{M}_4(\tilde R)\mathsf{M}_4(\tilde Q)$, exactly as $\tilde Q\tilde R\neq\tilde R\tilde Q$.
 
@@ -174,7 +196,7 @@ The left regular representation $\mathsf{M}_4$ sends $\tilde Q$ to the matrix of
 
 | Symbol | Meaning |
 |---|---|
-| $L_{\tilde Q}(\tilde R)=\tilde Q\tilde R$ | the left regular representation |
+| $\mathsf{M}_4(\tilde Q)\operatorname{col}(\tilde R)=\operatorname{col}(\tilde Q\tilde R)$ | the left regular matrix |
 | $M_4(\mathbb{C})_L=\operatorname{image}\mathsf{M}_4=\{\mathsf{M}_4(\tilde Q)\}$ | the regular matrices, the subspace of complex dimension $4$ inside $M_4(\mathbb{C})$ |
 | $\mathsf{M}_4(\tilde Q)=\begin{pmatrix}Q_0&-Q_1&-Q_2&-Q_3\\Q_1&Q_0&-Q_3&Q_2\\Q_2&Q_3&Q_0&-Q_1\\Q_3&-Q_2&Q_1&Q_0\end{pmatrix}$ | its matrix in the basis $e_0,e_1,e_2,e_3$ |
 | $\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde R)=\mathsf{M}_4(\tilde Q\tilde R)$ | multiplicativity |

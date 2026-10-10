@@ -12,7 +12,13 @@ The two models are *The General Plain Algebra in the $2\times2$ Matrix Represent
 
 ### The Model
 
-**Theorem (the defining representation).** There is a $\mathbb{C}$-algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with
+**Theorem (the defining representation).** There is a $\mathbb{C}$-algebra isomorphism written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,
+
+$$
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),
+$$
+
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity:
 
 $$
 \mathsf{M}_2(e_0)=\mathrm{I}_2,\qquad \mathsf{M}_2(e_1)=-i\sigma_1,\qquad \mathsf{M}_2(e_2)=-i\sigma_2,\qquad \mathsf{M}_2(e_3)=-i\sigma_3,

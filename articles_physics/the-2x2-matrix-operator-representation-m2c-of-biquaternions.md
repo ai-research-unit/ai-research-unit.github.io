@@ -12,6 +12,14 @@ $$
 X \longmapsto M X M^{\dagger}, \qquad M = \mathsf{M}_2(\tilde{Q}) .
 $$
 
+The operator is written $\operatorname{H}$. It converts a biquaternion into a $\mathbb{C}$-linear map of the matrix algebra,
+
+$$
+\operatorname{H} : \mathbb{B} \longrightarrow \operatorname{End}_{\mathbb{C}}\bigl(M_2(\mathbb{C})\bigr) \cong M_4(\mathbb{C}), \qquad \operatorname{H}_{\tilde{Q}}(X) = \mathsf{M}_2(\tilde{Q})\,X\,\mathsf{M}_2(\tilde{Q})^{\dagger},
+$$
+
+and each such map is fixed by its values on the basis of $M_2(\mathbb{C})$, the rest following by $\mathbb{C}$-linearity in the operand $X$. It is **quadratic** in the acting element $\tilde{Q}$ and not linear, so the operator is not the image of an element; it is the same operator as in *The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions*, read here in the matrix algebra.
+
 This is the realization in which the operator is a single familiar operation of matrix algebra, and in which the two regimes of the operator — invertible congruence, or collapse — become the two cases of the rank of one matrix.
 
 The article owns the identification of the sandwich with the congruence, the fact that $\mathsf{M}_2$ carries the dagger to the conjugate transpose, the preservation of rank, the scaling of the determinant, the preservation of the two Hermitian sectors, the positive Hermitian form attached to the identity, and the separation of the two regimes at the level of $\mathsf{M}_2(\tilde{Q})$, including the collapse of a null congruence onto one Hermitian line. The component computation of the same operator is *The Four-Vector Operator Representation of Biquaternions*; its matrix on the coefficient space, with the determinant $\lvert N\rvert^{4}$ and the trace $4\lvert Q_0\rvert^{2}$, is *The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions*; the module side belongs to another coordinate system and is not repeated here. The module $V$ and the left action of the algebra on it are cited from the element article and not re-derived.

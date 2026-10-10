@@ -11,13 +11,15 @@ The natural conjugation is the characteristic operation of the group, and in the
 
 ## The Representation
 
-**Definition.** The **matrix realization** is the $\mathbb{C}$-linear isomorphism
+**Definition.** The **matrix realization** is the isomorphism written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,
 
 $$
-\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),\qquad \mathsf{M}_2(e_0)=I,\qquad \mathsf{M}_2(e_k)=-i\sigma_k ,
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),
 $$
 
-so that $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix} Q_0-iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & Q_0+iQ_3\end{pmatrix}$. Its two invariants and its two conjugations are
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: $\mathsf{M}_2(e_0)=I$ on the identity and $\mathsf{M}_2(e_k)=-i\sigma_k$ on the three vector units.
+
+On a general element it reads $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix} Q_0-iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & Q_0+iQ_3\end{pmatrix}$. Its two invariants and its two conjugations are
 
 $$
 \operatorname{Tr}\mathsf{M}_2(\tilde{Q})=2Q_0,\qquad \det \mathsf{M}_2(\tilde{Q})=N(\tilde{Q})=\sum_\mu Q_\mu^2,\qquad \mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q}),\qquad \mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger} .

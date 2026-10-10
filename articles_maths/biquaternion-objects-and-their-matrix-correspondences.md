@@ -14,13 +14,13 @@ The two maps are written down first, then tabulated, then read one object at a t
 
 The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0,e_1,e_2,e_3$ and central imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, and the norm is $N(\tilde{Q})=\sum_\mu Q_\mu^2$. On the algebra, ${}^{\dagger}$ denotes Hermitian conjugation, the composition of quaternion conjugation with complex conjugation, with fixed space the Hermitian sector $\mathbb{M}_+$ and anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$.
 
-The map
+The isomorphism is written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,
 
 $$
-\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C})
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),
 $$
 
-is the $\mathbb{C}$-algebra isomorphism fixed on the basis by
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity:
 
 $$
 \mathsf{M}_2(e_0)=I,\qquad
@@ -48,14 +48,13 @@ $$
 
 ### The Left Regular Map $\mathsf{M}_4$
 
-The map
+The left regular matrix is the isomorphism written $\mathsf{M}_4$. It converts a biquaternion into a $4 \times 4$ complex matrix,
 
 $$
-L:\mathbb{B}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
-L_{\tilde{Q}}(\tilde{R})=\tilde{Q}\tilde{R}
+\mathsf{M}_4:\mathbb{B}\longrightarrow M_4(\mathbb{C}),
 $$
 
-writes left multiplication by $\tilde{Q}$ as a linear operator on the four-dimensional space $\mathbb{B}$. In the basis $e_0,e_1,e_2,e_3$ the matrix has the images $\tilde{Q}e_m$ for columns, and its functionals are
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_0,e_1,e_2,e_3$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. Its functionals are
 
 $$
 \operatorname{tr}\mathsf{M}_4(\tilde{Q})=4Q_0,\qquad
@@ -333,7 +332,7 @@ The algebra $\mathbb{B}$ has one algebra isomorphism $\mathsf{M}_2$ onto $M_2(\m
 | $\tilde{\Lambda}$ | a rotor, an element of the norm-one group $\mathbb{B}^{\times}_1$, acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ |
 | $g$ | a unit, an element of $\mathbb{B}^{\times}$, acting on the algebra by conjugation |
 | $\mathsf{M}_2$ | the algebra isomorphism $\mathbb{B}\to M_2(\mathbb{C})$ |
-| $\mathsf{M}_4$ | the left regular map, $L_{\tilde{Q}}(\tilde{R})=\tilde{Q}\tilde{R}$ |
+| $\mathsf{M}_4$ | the left regular matrix, $\mathsf{M}_4(\tilde{Q})\operatorname{col}(\tilde{R})=\operatorname{col}(\tilde{Q}\tilde{R})$ |
 | $N$ | the biquaternion norm $\sum_\mu Q_\mu^2$ |
 | ${}^{\dagger}$ | Hermitian conjugation; fixed space $\mathbb{M}_+$, anti-fixed space $\mathbb{M}_-$ |
 | $\mathbb{B}^{\times}$ | the invertible elements, $N\neq0$ |

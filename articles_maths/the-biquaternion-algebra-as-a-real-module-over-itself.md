@@ -30,22 +30,24 @@ The action satisfies the module axioms because the multiplication of $\mathbb{B}
 
 ## The Left Regular Representation
 
-**Definition.** The **left regular representation** of the real algebra is the map
+**Definition.** The **real regular matrix** is the isomorphism written $\mathsf{M}_4^{\mathbb{R}}$. It converts a biquaternion into an $8 \times 8$ real matrix,
+
 $$
-L^{\mathbb{R}} : \mathbb{B} \longrightarrow \operatorname{End}_{\mathbb{R}}(\mathbb{B}), \qquad L^{\mathbb{R}}_{\tilde Q}(\tilde R) = \tilde Q\tilde R .
+\mathsf{M}_4^{\mathbb{R}} : \mathbb{B} \longrightarrow M_8(\mathbb{R}),
 $$
-It is a unital $\mathbb{R}$-algebra homomorphism, and in the real basis its matrix is the $8 \times 8$ real matrix of the operator $\tilde R \mapsto \tilde Q\tilde R$.
+
+and it is fixed by its values on the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, the rest following by $\mathbb{R}$-linearity. Its $m$-th column is the coordinate column of the product $\tilde Q b_m$ of the basis element $b_m$, so it is the matrix of left multiplication $\tilde R \mapsto \tilde Q\tilde R$ in that basis, a unital $\mathbb{R}$-algebra homomorphism.
 
 **Theorem (the real matrix is the realification of the complex one).** Write $\mathsf{M}_4(\tilde Q) = A + iB$ for the $4 \times 4$ complex Cayley matrix of $\tilde Q$, with $A$ and $B$ real $4 \times 4$ matrices. Then in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$,
 $$
 \mathsf{M}_4^{\mathbb{R}}(\tilde Q) = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}.
 $$
 
-**Proof.** Multiplication by $i$ commutes with the product, so the operator $L^{\mathbb{R}}_{\tilde Q}$ is complex-linear and the $4 \times 4$ complex matrix $\mathsf{M}_4(\tilde Q)$ describes it. The real basis is the complex basis $e_0,e_1,e_2,e_3$ followed by its multiple by $i$; in that ordering an operator with complex matrix $A + iB$ acts on a real coordinate column by the block matrix $\begin{pmatrix} A & -B \\ B & A\end{pmatrix}$, because $i(x + iy) = -y + ix$. $\square$
+**Proof.** Multiplication by $i$ commutes with the product, so left multiplication by $\tilde Q$ is complex-linear and the $4 \times 4$ complex matrix $\mathsf{M}_4(\tilde Q)$ describes it. The real basis is the complex basis $e_0,e_1,e_2,e_3$ followed by its multiple by $i$; in that ordering an operator with complex matrix $A + iB$ acts on a real coordinate column by the block matrix $\begin{pmatrix} A & -B \\ B & A\end{pmatrix}$, because $i(x + iy) = -y + ix$. $\square$
 
 **Corollary.** The map $\mathsf{M}_4^{\mathbb{R}}$ is an injective unital $\mathbb{R}$-algebra homomorphism, $\mathsf{M}_4^{\mathbb{R}}(\tilde P\tilde Q) = \mathsf{M}_4^{\mathbb{R}}(\tilde P)\mathsf{M}_4^{\mathbb{R}}(\tilde Q)$, and its image is an eight-dimensional real subalgebra of $M_8(\mathbb{R})$ isomorphic to $\mathbb{B}$.
 
-**Proof.** Multiplicativity of $\mathsf{M}_4^{\mathbb{R}}$ is associativity of the product; injectivity is $\mathsf{M}_4^{\mathbb{R}}(\tilde Q) = 0 \Rightarrow L^{\mathbb{R}}_{\tilde Q}(e_0) = \tilde Q = 0$; the image is a subalgebra because $\mathsf{M}_4^{\mathbb{R}}$ is a homomorphism, and it has dimension eight because the map is injective on an eight-dimensional space. $\square$
+**Proof.** Multiplicativity of $\mathsf{M}_4^{\mathbb{R}}$ is associativity of the product; injectivity is $\mathsf{M}_4^{\mathbb{R}}(\tilde Q) = 0$, whose first column is the column of $\tilde Q$, so $\tilde Q = 0$; the image is a subalgebra because $\mathsf{M}_4^{\mathbb{R}}$ is a homomorphism, and it has dimension eight because the map is injective on an eight-dimensional space. $\square$
 
 ## The Determinant and the Trace
 

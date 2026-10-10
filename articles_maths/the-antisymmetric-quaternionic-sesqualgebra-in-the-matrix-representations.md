@@ -12,12 +12,13 @@ The product the block splits is *The General Quaternionic Sesqualgebra in the $2
 
 ### The Model and Its Conjugations
 
-**Definition.** The **$2\times2$ realization** is the $\mathbb{C}$-linear isomorphism
+**Definition.** The **$2\times2$ realization** is the isomorphism written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,
 
 $$
-\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),\qquad
-\mathsf{M}_2(e_0)=I,\qquad\mathsf{M}_2(e_k)=-i\sigma_k,
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),
 $$
+
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: $\mathsf{M}_2(e_0)=I$ and $\mathsf{M}_2(e_k)=-i\sigma_k$,
 
 with $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$, where $\operatorname{adj}$ is the adjugate and ${}^{\dagger}$ the conjugate transpose.
 
@@ -93,7 +94,13 @@ $$
 
 ### The Model and Its Conjugations
 
-**Definition.** The **left regular representation** $\mathsf{M}_4$ sends $\tilde Q$ to the matrix of the left multiplication $\tilde R\mapsto\tilde Q\tilde R$ of the plain product, with $\mathsf{M}_4(\tilde Q^{\natural})=\mathsf{M}_4(\tilde Q)^{T}$, $\mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger}$, and $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=4Q_0$.
+**Definition.** The **left regular matrix** is the isomorphism written $\mathsf{M}_4$. It converts a biquaternion into a $4 \times 4$ complex matrix,
+
+$$
+\mathsf{M}_4:\mathbb{B}\longrightarrow M_4(\mathbb{C}),
+$$
+
+its $m$-th column being the coordinate column of the left multiplication $\tilde R\mapsto\tilde Q\tilde R$ of the plain product in the basis $e_0,e_1,e_2,e_3$; it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity, and it satisfies $\mathsf{M}_4(\tilde Q^{\natural})=\mathsf{M}_4(\tilde Q)^{T}$, $\mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger}$, and $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=4Q_0$.
 
 *Proof.* The regular representation of an associative algebra is multiplicative, and the two conjugations are the transpose and the conjugate transpose of the matrix, as in *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions*. Verified on the generators.
 

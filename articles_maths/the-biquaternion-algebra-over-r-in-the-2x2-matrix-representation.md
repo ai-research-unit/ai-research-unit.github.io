@@ -11,7 +11,7 @@ The real reading of the model is the realification $M_2(\mathbb{C})\cong\mathbb{
 
 ## The Realification of the Model
 
-**The real structure.** $\mathsf{M}_2$ is $\mathbb{C}$-linear, hence $\mathbb{R}$-linear, and it is an isomorphism of real algebras
+**The real structure.** The isomorphism is written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix, hence into a real element of $M_2(\mathbb{C})\cong\mathbb{R}^8$; it is fixed by its values on the basis of $\mathbb{B}$ over $\mathbb{C}$, the rest following by $\mathbb{C}$-linearity. It is an isomorphism of real algebras
 
 $$
 \mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C})\cong\mathbb{R}^8 ,

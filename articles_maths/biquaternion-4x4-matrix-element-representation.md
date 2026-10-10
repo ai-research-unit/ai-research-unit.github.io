@@ -16,7 +16,13 @@ One comparative item is added beyond the representation itself: a second $4 \tim
 
 ## The Left and the Right Regular Matrices
 
-**Definition (the left regular matrix).** In the basis $e_0, e_1, e_2, e_3$, the $m$-th column of $\mathsf{M}_4^{L}(\tilde Q)$ is the coordinate column of $\tilde Q e_m$:
+**Definition (the left regular matrix).** The **left regular matrix** is the isomorphism written $\mathsf{M}_4^{L}$. It converts a biquaternion into a $4 \times 4$ complex matrix,
+
+$$
+\mathsf{M}_4^{L} : \mathbb{B} \longrightarrow M_4(\mathbb{C}),
+$$
+
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity. In the basis $e_0, e_1, e_2, e_3$, the $m$-th column of $\mathsf{M}_4^{L}(\tilde Q)$ is the coordinate column of $\tilde Q e_m$:
 
 $$
 \mathsf{M}_4^{L}(\tilde{Q}) = \begin{pmatrix}
@@ -37,7 +43,13 @@ $$
 
 so the assignment is an injective algebra homomorphism, of complex dimension $4$; its trace is $4Q_0$ and its determinant is $N(\tilde{Q})^2$. The proof and the six subspace conditions are those of the companion article and are not repeated.
 
-**Definition (the right regular matrix).** In the same basis, the $m$-th column of $\mathsf{M}_4^{R}(\tilde Q)$ is the coordinate column of $e_m \tilde Q$:
+**Definition (the right regular matrix).** The **right regular matrix** is the assignment written $\mathsf{M}_4^{R}$. It converts a biquaternion into a $4 \times 4$ complex matrix,
+
+$$
+\mathsf{M}_4^{R} : \mathbb{B} \longrightarrow M_4(\mathbb{C}),
+$$
+
+also fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity. In the same basis, the $m$-th column of $\mathsf{M}_4^{R}(\tilde Q)$ is the coordinate column of $e_m \tilde Q$:
 
 $$
 \mathsf{M}_4^{R}(\tilde{Q}) = \begin{pmatrix}

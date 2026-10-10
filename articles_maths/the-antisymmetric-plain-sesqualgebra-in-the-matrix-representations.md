@@ -19,16 +19,17 @@ The setting and the notation are those of *Introduction to the Antisymmetric Pla
 
 ## The Models
 
-**Recall (the $2\times2$ realization).** The matrix realization of *Introduction to the 2×2 Matrix Representation of Biquaternions* is the $\mathbb{C}$-linear isomorphism
+**Recall (the $2\times2$ realization).** The matrix realization of *Introduction to the 2×2 Matrix Representation of Biquaternions* is the isomorphism written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,
 
 $$
-\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),\qquad
-\mathsf{M}_2(e_0)=I,\qquad \mathsf{M}_2(e_k)=-i\sigma_k,
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),
 $$
+
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: $\mathsf{M}_2(e_0)=I$ and $\mathsf{M}_2(e_k)=-i\sigma_k$,
 
 with $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$, $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$, $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$ and $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)=\sum_\mu Q_\mu^2$. It is a $*$-isomorphism, and it carries the Hermitian conjugation of the algebra to the conjugate transpose of the matrices.
 
-**Recall (the left regular representation).** The left regular representation of *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* is $L_{\tilde Q}(\tilde R)=\tilde Q\tilde R$ read in the basis $e_0,e_1,e_2,e_3$, with
+**Recall (the left regular matrix).** The left regular matrix of *Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions* is $\mathsf{M}_4(\tilde Q)$, whose $m$-th column is the coordinate column of the product $\tilde Q e_m$ in the basis $e_0,e_1,e_2,e_3$; it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity, and it satisfies
 
 $$
 \mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger},\qquad

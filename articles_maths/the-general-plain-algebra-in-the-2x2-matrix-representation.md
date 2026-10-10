@@ -11,13 +11,13 @@ The plain product becomes the matrix product under $\mathsf{M}_2$, and the gener
 
 ## The Representation
 
-**Definition.** The **matrix realization** is the $\mathbb{C}$-linear isomorphism
+**Definition.** The **matrix realization** is the isomorphism written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,
 
 $$
-\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),\qquad \mathsf{M}_2(e_0)=I,\qquad \mathsf{M}_2(e_k)=-i\sigma_k ,
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),
 $$
 
-with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices, so that
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: $\mathsf{M}_2(e_0)=I$ on the identity and $\mathsf{M}_2(e_k)=-i\sigma_k$ on the three vector units. The matrices $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices, and on a general element
 
 $$
 \mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_0-iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & Q_0+iQ_3 \end{pmatrix} .

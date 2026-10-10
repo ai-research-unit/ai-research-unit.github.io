@@ -17,21 +17,42 @@ $$
 
 The representation is **faithful** by definition, since injectivity is required; its **image** is the subalgebra $\Psi(\mathbb{H}_{\mathrm{s}})$.
 
-**Definition.** The **defining representation** of $\mathbb{H}_{\mathrm{s}}$ is the isomorphism
+**Definition.** The **defining representation** of $\mathbb{H}_{\mathrm{s}}$ is the isomorphism written $\Phi$. It converts a split quaternion into a $2 \times 2$ real matrix,
 
 $$
-\Phi(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = \begin{pmatrix} q_0 - q_3 & q_2 - q_1 \\ q_1 + q_2 & q_0 + q_3 \end{pmatrix}
+\Phi : \mathbb{H}_{\mathrm{s}} \longrightarrow M_2(\mathbb{R}),
 $$
 
-of the model, whose values on the generators are
+and it is fixed by its values on the basis, the rest following by $\mathbb{R}$-linearity. The generators are assigned the matrices
 
 $$
 \Phi(1) = I, \quad \Phi(e_1) = J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad
 \Phi(e_2) = K = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
-\Phi(e_3) = D = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}.
+\Phi(e_3) = D = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix},
+$$
+
+so that on a general element
+
+$$
+\Phi(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = \begin{pmatrix} q_0 - q_3 & q_2 - q_1 \\ q_1 + q_2 & q_0 + q_3 \end{pmatrix}.
 $$
 
 The defining representation is the model in which every statement of this article is computed.
+
+**The check.** The assignment is the right one because the four matrices multiply as the four generators do. Squaring the vector images,
+
+$$
+\Phi(e_1)^2 = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} = -\Phi(1), \qquad
+\Phi(e_2)^2 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \Phi(1),
+$$
+
+and the same gives $\Phi(e_3)^2 = \Phi(1)$; so $e_1^2 = -1$, $e_2^2 = e_3^2 = 1$ are reproduced. Multiplying the first two,
+
+$$
+\Phi(e_1)\Phi(e_2) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix} = \Phi(e_3),
+$$
+
+reproducing $e_1e_2 = e_3$. Those relations are the whole multiplication table of $\mathbb{H}_{\mathrm{s}}$, so the correspondence of bases is an isomorphism of algebras and not a formal analogy.
 
 ## Existence
 

@@ -11,7 +11,13 @@ The regular representation has the advantage that the transposition is the opera
 
 ## The Representation
 
-**Definition.** The **left regular representation** is the algebra homomorphism $L_{\tilde{Q}}(\tilde{R})=\tilde{Q}\tilde{R}$, with $\mathsf{M}_4(\tilde{Q})$ the $4\times4$ matrix of left multiplication in the basis $e_0,e_1,e_2,e_3$. It satisfies
+**Definition.** The **left regular matrix** is the isomorphism written $\mathsf{M}_4$. It converts a biquaternion into a $4 \times 4$ complex matrix,
+
+$$
+\mathsf{M}_4:\mathbb{B}\longrightarrow M_4(\mathbb{C}),
+$$
+
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_0,e_1,e_2,e_3$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. It satisfies
 
 $$
 \mathsf{M}_4(\tilde{Q}^{\natural})=\mathsf{M}_4(\tilde{Q})^{\mathsf{T}},\qquad \mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger},\qquad \operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_0,\qquad \det\mathsf{M}_4(\tilde{Q})=N(\tilde{Q})^2 ,
