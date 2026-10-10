@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remarkable Subspaces under the General Plain Algebra of Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions"><strong>Remarkable Subspaces under the General Plain Algebra of Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The general plain bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ of <em>The Four Pairings of the Biquaternion Algebra</em> meets the remarkable real subspaces of <em>Introduction to the Remarkable Subspaces</em> — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. On each of the remarkable subspaces the realified form is a real symmetric form, and this article reads its matrix, its signature, its definite or indefinite character, its isotropic lines, its automorphism group, and the orthogonality that relates the remarkable subspaces.</p>
+<p>The form is used, not re-derived. Its definition, its coefficient Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ and its comparison with the other three forms are the matter of <em>The Four Pairings of the Biquaternion Algebra</em>, and its realified signature $(4,4)$ is the matter of <em>The Realification of the Four Forms</em>; the remarkable subspaces and their bases are the matter of <em>Introduction to the Remarkable Subspaces</em>; and the companion reading of the same remarkable subspaces by the general quaternionic bilinear form is <em>Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions</em>. The other three forms on the same remarkable subspaces are <em>Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions</em>, <em>Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions</em> and <em>Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions</em>. This article owns the restrictions themselves and the structure of each one.</p>
+<h2 id="the-restriction-matrices">The Restriction Matrices</h2>
+<p>The scalar part of the product is diagonal on the units, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ with $\varepsilon=(1,-1,-1,-1)$, so the restriction of the form to each subspace is diagonal in its natural real basis, and the six matrices are read at once.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Natural real basis</th>
+<th>Restriction matrix</th>
+<th>Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Centre $\mathbb{C}_{\mathbb{B}}$</td>
+<td>$e_0,\,ie_0$</td>
+<td>$\begin{pmatrix}1&0\\0&-1\end{pmatrix}$</td>
+<td>$(1,1)$</td>
+</tr>
+<tr>
+<td>Vector $\mathrm{Vect}(\mathbb{B})$</td>
+<td>$e_1,e_2,e_3,\,ie_1,ie_2,ie_3$</td>
+<td>$\operatorname{diag}(-1,-1,-1,1,1,1)$</td>
+<td>$(3,3)$</td>
+</tr>
+<tr>
+<td>Quaternion $\mathbb{H}_{\mathbb{B}}$</td>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$ie_0,ie_1,ie_2,ie_3$</td>
+<td>$-D=\operatorname{diag}(-1,1,1,1)$</td>
+<td>$(3,1)$</td>
+</tr>
+<tr>
+<td>Hermitian $\mathbb{M}_+$</td>
+<td>$e_0,ie_1,ie_2,ie_3$</td>
+<td>$\mathrm{I}_4=\operatorname{diag}(1,1,1,1)$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>Anti-Hermitian $\mathbb{M}_-$</td>
+<td>$ie_0,e_1,e_2,e_3$</td>
+<td>$-\mathrm{I}_4=\operatorname{diag}(-1,-1,-1,-1)$</td>
+<td>$(0,4)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> Each entry is the value of the realified form, that is the real part of $\langle f_i,f_j\rangle$, on two elements of the stated basis; on the four real subspaces the form is already real-valued, and on the two complex subspaces the real part is the realified form. On the quaternion basis $(e_0,e_1,e_2,e_3)$ the values are $1,-1,-1,-1$; on the anti-quaternion basis $(ie_0,ie_1,ie_2,ie_3)$ they are $-\varepsilon_\mu$, that is $-1,1,1,1$, because $\langle ie_\mu,ie_\nu\rangle=-\varepsilon_\mu\delta_{\mu\nu}$ by the $\mathbb{C}$-bilinearity and $i^2=-1$; on the centre the two entries are $1$ and $-1$; and on the vector subspace the three entries from the real directions $e_1,e_2,e_3$ are $-1$ and the three from the imaginary directions $ie_1,ie_2,ie_3$ are $+1$, since only the sign vector distinguishes them. The two Hermitian rows are the two bases on which the form is definite, and their matrices are therefore $\pm\mathrm{I}_4$. All six bases are orthogonal for the form, so every matrix is diagonal. Verified on the restricted Gram matrices.</p>
+<p><strong>Remark (the signature is not the dimension).</strong> No subspace is totally isotropic: the restricted form is non-degenerate on each of the remarkable subspaces, because each displayed matrix is invertible. The two definite rows have no isotropic vector, and the four indefinite rows have isotropic vectors; their isotropic sets are computed next.</p>
+<h2 id="the-definite-rows-and-the-maximal-definite-subspaces">The Definite Rows and the Maximal Definite Subspaces</h2>
+<p>Two of the rows are definite. On the <strong>Hermitian subspace</strong> the form is positive definite, of signature $(4,0)$; on the <strong>anti-Hermitian subspace</strong> it is negative definite, of signature $(0,4)$. The two are exchanged by the central scalar,</p>
+<p>$$
+\langle i\tilde P,i\tilde Q\rangle=-\langle\tilde P,\tilde Q\rangle,
+$$</p>
+<p>which reverses the sign of the form and therefore exchanges the positive definite subspace $\mathbb{M}_+$ with the negative definite subspace $\mathbb{M}_-$.</p>
+<p>The realified form of the whole algebra has signature $(4,4)$, so its maximal positive definite dimension and its maximal negative definite dimension are both $4$. The Hermitian subspace, of real dimension $4$ and positive definite, is therefore a <strong>maximal positive definite subspace</strong>, and the anti-Hermitian subspace is a <strong>maximal negative definite subspace</strong>; neither can be enlarged while remaining definite. The centre is a definite plane only in the hyperbolic sense — its form $(1,1)$ is neither positive nor negative definite — and the quaternion and vector subspaces contain both signs.</p>
+<p><strong>Remark (the two polarisations of the realified form).</strong> A real form of signature $(p,q)$ carries a maximal positive definite subspace of dimension $p$ and a maximal negative definite subspace of dimension $q$, and the two are orthogonal complements. Here that general statement reads: $\mathbb{M}_+$ is a maximal positive definite subspace, $\mathbb{M}_-$ is a maximal negative definite subspace, the two are orthogonal and $\mathbb{M}_+\perp\mathbb{M}_-=\mathbb{B}$, and on the splitting of an element into its Hermitian and anti-Hermitian parts the diagonal is the sum of the two restricted diagonals, the first non-negative and the second non-positive.</p>
+<h2 id="the-isotropic-lines-of-the-indefinite-rows">The Isotropic Lines of the Indefinite Rows</h2>
+<p>The four indefinite rows are $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(1,3)$ on the quaternion subspace and $(3,1)$ on the anti-quaternion subspace. On each the isotropic set is a cone through the origin, of real dimension one less than the subspace, and one null element on each row exhibits it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Signature</th>
+<th>Null element</th>
+<th>Null cone, real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Centre</td>
+<td>$(1,1)$</td>
+<td>$e_0+ie_0$</td>
+<td>$1$, the two lines $\mathbb{R}(e_0\pm ie_0)$</td>
+</tr>
+<tr>
+<td>Vector</td>
+<td>$(3,3)$</td>
+<td>$e_1+ie_1$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>Quaternion</td>
+<td>$(1,3)$</td>
+<td>$e_0+e_1$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Anti-quaternion</td>
+<td>$(3,1)$</td>
+<td>$ie_0+ie_1$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> Each element is null by the restricted form of its row: on the centre $q_0^2-(q'_0)^2$ gives $1-1=0$ at $e_0+ie_0$; on the vector subspace $(q'_1)^2-q_1^2$ gives $1-1=0$ at $e_1+ie_1$; on the quaternion subspace $q_0^2-q_1^2$ gives $1-1=0$ at $e_0+e_1$; and on the anti-quaternion subspace $-(q'_0)^2+(q'_1)^2$ gives $-1+1=0$ at $ie_0+ie_1$. On an indefinite form of signature $(p,q)$ the isotropic set is a cone of real dimension equal to the dimension of the space minus one, because the diagonal is a non-constant homogeneous polynomial of degree two and its zero set has codimension one; the four dimensions follow. On the centre, of dimension two, the cone is the pair of real lines $\mathbb{R}(e_0+ie_0)$ and $\mathbb{R}(e_0-ie_0)$. Verified on the four rows.</p>
+<p><strong>Remark (the isotropic cones are not the null quadric).</strong> These four cones lie inside the null quadric $\mathcal{Q}=\{\langle\tilde Q,\tilde Q\rangle=0\}$ of the whole algebra, which is of real dimension $6$ and has the apex as its only singularity. The centre meets $\mathcal{Q}$ in two real lines, the quaternion subspace in a cone of real dimension $3$, and the vector and anti-quaternion subspaces in cones of dimension $5$ and $3$. The zero-divisor cone is a different quadric and meets the remarkable subspaces differently; the two cones agree on the Hermitian and anti-Hermitian subspaces only at the origin, since those rows are definite. On the quaternion subspace, for instance, the zero-divisor condition is $\sum_\mu Q_\mu^2=q_0^2+q_1^2+q_2^2+q_3^2=0$, which on the real quaternions holds only at the origin, while the general plain bilinear null cone is the $(1,3)$ cone computed above; on that subspace the two cones are as different as they can be.</p>
+<h2 id="the-automorphism-groups-of-the-restrictions">The Automorphism Groups of the Restrictions</h2>
+<p><strong>Definition.</strong> For each subspace $V$ of the remarkable subspaces, the <strong>automorphism group of the restriction</strong> is the group of real-linear maps of $V$ preserving the restriction of the form,</p>
+<p>$$
+\mathrm{Isom}\bigl(V,\langle\cdot,\cdot\rangle\bigr)=\{S\in GL_{\mathbb{R}}(V):\langle Sv,Sw\rangle=\langle v,w\rangle\text{ for all }v,w\in V\}.
+$$</p>
+<p>It is the real orthogonal group of the signature of the restriction.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Signature</th>
+<th>Automorphism group</th>
+<th>Real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Centre</td>
+<td>$(1,1)$</td>
+<td>$O(1,1)$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>Vector</td>
+<td>$(3,3)$</td>
+<td>$O(3,3)$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>Quaternion</td>
+<td>$(1,3)$</td>
+<td>$O(1,3)$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>Anti-quaternion</td>
+<td>$(3,1)$</td>
+<td>$O(3,1)\cong O(1,3)$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>Hermitian</td>
+<td>$(4,0)$</td>
+<td>$O(4)$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>Anti-Hermitian</td>
+<td>$(0,4)$</td>
+<td>$O(4)$</td>
+<td>$6$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The orthogonal group of a form of signature $(p,q)$ with $p+q=n$ has real dimension $n(n-1)/2$, the dimension of its Lie algebra of anisotropic matrices, which gives the last column: $1$ for $n=2$, $6$ for $n=4$ and $15$ for $n=6$.</p>
+<p><strong>Remark (the real automorphism group against the complex one).</strong> On the centre and the vector subspace, which are complex subspaces of the algebra, the largest $\mathbb{C}$-linear group preserving the subspace and the form is the smaller complex orthogonal group $O_1(\mathbb{C})$ on the centre and $O_3(\mathbb{C})$ on the vector subspace, of real dimensions $0$ and $6$; the real automorphism groups $O(1,1)$ and $O(3,3)$ of the table are larger because a real-linear form preservation need not respect the complex structure. On the four real subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ the two groups coincide: a real automorphism of the restriction extends by complex linearity to an automorphism of the algebra preserving the subspace, and conversely. This is why the rows $O(1,3)$ and $O(4)$ of the table are the real forms of $O_4(\mathbb{C})$ of <em>The Four Pairings of the Biquaternion Algebra</em>, §<em>The Forms in Comparison</em>, while $O(1,1)$ and $O(3,3)$ are not.</p>
+<p><strong>Remark (the four real-subspace rows are the real forms of the complex form).</strong> The four real subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ each span the complex algebra over $\mathbb{C}$, so each restriction is a real form of a general plain bilinear form on $\mathbb{B}$: on $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ the complexification is a form congruent to $D$, of real form $O(1,3)$, and on $\mathbb{M}_+$ and $\mathbb{M}_-$ it is a form congruent to $\mathrm{I}_4$, of real form $O(4)$. Over $\mathbb{C}$ the matrices $D$ and $\mathrm{I}_4$ are congruent, so all four are real forms of the same complex form, and the apparent variety of the four restrictions is the variety of the real forms of one complex form and not of four different complex forms.</p>
+<h2 id="the-orthogonal-splitting-of-the-centre-and-the-vector-subspace">The Orthogonal Splitting of the Centre and the Vector Subspace</h2>
+<p>The form is diagonal in the natural bases, so the centre and the vector subspace are mutually orthogonal and complementary:</p>
+<p>$$
+\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B}),\qquad
+\langle\tilde Q,\tilde R\rangle=\langle\tilde Q_0,\tilde R_0\rangle+\langle\tilde Q_1,\tilde R_1\rangle,
+$$</p>
+<p>where $\tilde Q_0,\tilde R_0$ are the centre parts and $\tilde Q_1,\tilde R_1$ the vector parts. The realified form is the orthogonal sum of its restrictions, and the signatures add: $(1,1)\perp(3,3)=(4,4)$ is the signature of the whole realified form. The centre has isotropic lines and the vector subspace has an isotropic cone of dimension $5$, so the splitting is not into definite pieces; the definite pieces are the Hermitian and anti-Hermitian subspaces of the previous section.</p>
+<p><strong>Remark (three orthogonal splittings).</strong> The realified form is diagonal on three pairs of complementary subspaces, and each pair gives an orthogonal decomposition of the algebra: $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\perp i\mathbb{H}_{\mathbb{B}}$, of signatures $(1,3)\perp(3,1)$; $\mathbb{B}=\mathbb{M}_+\perp\mathbb{M}_-$, of signatures $(4,0)\perp(0,4)$; and $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B})$, of signatures $(1,1)\perp(3,3)$. The three decompositions add to the same $(4,4)$ and are the three readings of the one split form.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>The quaternion row in coordinates.</strong> On the quaternion subspace with $\tilde Q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$ and $\tilde R$ likewise, the restriction is $\langle\tilde Q,\tilde R\rangle=q_0r_0-q_1r_1-q_2r_2-q_3r_3$, the scalar product of signature $(1,3)$: the real scalar direction is positive and the three vector directions are negative.</p>
+<p><strong>The Hermitian row in coordinates.</strong> On the Hermitian subspace with $\tilde Q=q_0e_0+q'_1ie_1+q'_2ie_2+q'_3ie_3$ the restriction is $\langle\tilde Q,\tilde R\rangle=q_0r_0+q'_1r'_1+q'_2r'_2+q'_3r'_3$, the standard positive definite inner product of $\mathbb{R}^4$; on the anti-Hermitian subspace the same formula is negative, and the two are the two definite rows.</p>
+<p><strong>The vector null cone.</strong> On the vector subspace the restriction is $\sum_k((q'_k)^2-q_k^2)$, so the null cone is $\{\sum_k q_k^2=\sum_k(q'_k)^2\}$, of real dimension $5$; it contains the totally isotropic real plane $\mathrm{span}_{\mathbb{R}}\{e_1+ie_1,e_2+ie_2\}$, and indeed $\mathrm{span}_{\mathbb{R}}\{e_k+ie_k:k=1,2,3\}$ is totally isotropic of real dimension $3$, the maximum for signature $(3,3)$.</p>
+<p><strong>The centre's two lines.</strong> On the centre the restriction is $q_0^2-(q'_0)^2$, whose null set is the two real lines $\mathbb{R}(e_0+ie_0)$ and $\mathbb{R}(e_0-ie_0)$; the two are the isotropic lines of the hyperbolic plane $(1,1)$ and are exchanged by multiplication by $i$.</p>
+<p><strong>The two definite rows have no null element.</strong> On the Hermitian subspace the diagonal is the sum of four squares, $q_0^2+(q'_1)^2+(q'_2)^2+(q'_3)^2$, which vanishes only at the origin, and on the anti-Hermitian subspace the diagonal is its negative; the two definite rows therefore contribute no null line to the null quadric, which is why the isotropic lines above are four and not six.</p>
+<p><strong>The anti-quaternion row.</strong> On the anti-quaternion subspace the restriction is $-(q'_0)^2+(q'_1)^2+(q'_2)^2+(q'_3)^2$, the mirror of the quaternion row; the null element $ie_0+ie_1$ spans one of its null lines, and the row is the sign-mirror $(3,1)$ of the quaternion row $(1,3)$.</p>
+<p><strong>An automorphism of the centre.</strong> The hyperbolic rotation $e_0\mapsto\cosh u\,e_0+\sinh u\,ie_0$, $ie_0\mapsto\sinh u\,e_0+\cosh u\,ie_0$ preserves $q_0^2-(q'_0)^2$ for every real $u$; it generates the one-parameter group $O(1,1)$ of real dimension $1$, and it is the two-dimensional model of the hyperbolic rotation of the quaternion row.</p>
+<p><strong>An automorphism of the quaternion row.</strong> The hyperbolic rotation $e_0\mapsto\cosh u\,e_0+\sinh u\,e_1$, $e_1\mapsto\sinh u\,e_0+\cosh u\,e_1$ with $e_2,e_3$ fixed preserves the $(1,3)$ restriction of the quaternion subspace, and it is one of the generators of $O(1,3)$; together with the rotations of the vector subspace it generates the identity component of the group.</p>
+<h2 id="summary">Summary</h2>
+<p>On the remarkable real subspaces the general plain bilinear form carries the restrictions $\begin{pmatrix}1&0\\0&-1\end{pmatrix}$ on the centre, $\operatorname{diag}(-1,-1,-1,1,1,1)$ on the vector subspace, $D$ on the quaternion subspace, $-D$ on the anti-quaternion subspace, $\mathrm{I}_4$ on the Hermitian subspace and $-\mathrm{I}_4$ on the anti-Hermitian subspace, of signatures $(1,1)$, $(3,3)$, $(1,3)$, $(3,1)$, $(4,0)$ and $(0,4)$. The Hermitian subspace is the maximal positive definite one and the anti-Hermitian the maximal negative definite one, both of dimension $4$, the two definite rows of the realified signature $(4,4)$. The four indefinite rows have isotropic cones of real dimensions $1$, $5$, $3$ and $3$, with the null elements $e_0+ie_0$, $e_1+ie_1$, $e_0+e_1$ and $ie_0+ie_1$. The automorphism groups are $O(1,1)$, $O(3,3)$, $O(1,3)$, $O(3,1)$, $O(4)$ and $O(4)$, of real dimensions $1$, $15$, $6$, $6$, $6$ and $6$. The centre and the vector subspace are orthogonal complements. The same remarkable subspaces under the other three pairings are <em>Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions</em>, <em>Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions</em> and <em>Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions</em>, where the transposition of this table with the general quaternionic bilinear one is read on the four real forms.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde P,\tilde Q\rangle=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$</td>
+<td>the restricted form on each subspace</td>
+</tr>
+<tr>
+<td>$(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$</td>
+<td>the signatures</td>
+</tr>
+<tr>
+<td>$D$, $-D$, $\mathrm{I}_4$, $-\mathrm{I}_4$</td>
+<td>the quaternion, anti-quaternion, Hermitian and anti-Hermitian restriction matrices</td>
+</tr>
+<tr>
+<td>$e_0+ie_0$, $e_1+ie_1$, $e_0+e_1$, $ie_0+ie_1$</td>
+<td>the null elements of the four indefinite rows</td>
+</tr>
+<tr>
+<td>$O(1,1)$, $O(3,3)$, $O(1,3)$, $O(3,1)$, $O(4)$</td>
+<td>the automorphism groups of the restrictions</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B})$</td>
+<td>the orthogonal splitting of the algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}\perp i\mathbb{H}_{\mathbb{B}}$</td>
+<td>the split $(1,3)\perp(3,1)$ of the algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+\perp\mathbb{M}_-$</td>
+<td>the split $(4,0)\perp(0,4)$ of the algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Remarkable Subspaces</em> (<code>articles_maths/introduction-to-the-remarkable-subspaces.md</code>), for the remarkable real subspaces and their bases</li>
+<li><em>Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md</code>), for the companion table of the same remarkable subspaces</li>
+<li><em>Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra-of-biquaternions.md</code>), <em>Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions</em> (<code>articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.md</code>) and <em>Remarkable Subspaces under the Real Biquaternion Algebra</em> (<code>articles_maths/remarkable-subspaces-under-the-real-biquaternion-algebra.md</code>), for the same remarkable subspaces under the other readings</li>
+<li><em>The Four Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the form, its coefficient Gram matrix $D$, its null quadric, its value-one set and the four forms on the remarkable subspaces, side by side</li>
+<li><em>The Realification of the Four Forms</em> (<code>articles_maths/the-realification-of-the-four-forms.md</code>), for the realified signature $(4,4)$ of the form and the four realified tables side by side</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

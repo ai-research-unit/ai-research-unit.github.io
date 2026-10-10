@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetric-plain-algebra-in-the-math0-matrix-element-representation-math1"><strong>The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of <em>Introduction to the Symmetric Plain Algebra of Biquaternions</em>. This article reads the block in the $2\times2$ realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of <em>The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>; it is the first of the two representation articles of the block, and its companion <em>The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</em> repeats the reading on the left regular representation.</p>
+<p>The transport is short because the symmetrisation of the plain product becomes the symmetrisation of the matrix product: the plain product is the matrix product, so the block's product is the half-sum of a matrix and its exchanged product. What the model adds is the matrix reading of every notion at once — the square as an ordinary matrix square, the quadratic identity as the Cayley–Hamilton identity, the idempotents as ordinary projectors, the isotropic cone as the singular matrices, the elements of square zero as the nilpotent matrices, the trace form as a scaled matrix trace — and the matrix list of the idempotents and of the non-isotropic elements.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$; an element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the generic norm is $N(\tilde Q)=\sum_\mu Q_\mu^2$ and the trace form is $\tau(\tilde P,\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$. The $2\times2$ realization is $\mathsf{M}_2(e_0)=I$ and $\mathsf{M}_2(e_k)=-i\sigma_k$ with the Pauli matrices $\sigma_k$, an isomorphism of algebras with $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$, $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$ and $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$.</p>
+<h2 id="the-symmetrisation-of-the-matrix-product">The Symmetrisation of the Matrix Product</h2>
+<p><strong>Theorem.</strong> The block's product becomes the symmetrisation of the matrix product:</p>
+<p>$$
+\mathsf{M}_2\bigl(\tilde P\bullet\tilde Q\bigr)=\tfrac12\bigl(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)+\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde P)\bigr).
+$$</p>
+<p><em>Proof.</em> $\mathsf{M}_2$ is an algebra isomorphism, so $\mathsf{M}_2(\tilde P\bullet\tilde Q)=\tfrac12\bigl(\mathsf{M}_2(\tilde P\tilde Q)+\mathsf{M}_2(\tilde Q\tilde P)\bigr)=\tfrac12\bigl(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)+\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde P)\bigr)$. Verified on the model. $\square$</p>
+<p><strong>Remark (the block and the model).</strong> The block is the image under $\mathsf{M}_2$ of the symmetrized matrix algebra, and the isomorphism of <em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em> with the symmetrised matrices is this transport. The model is faithful and minimal, and it turns the block into the symmetrisation of the matrix algebra $M_2(\mathbb{C})$.</p>
+<h2 id="the-square-and-the-polarisation">The Square and the Polarisation</h2>
+<p><strong>Theorem (the square).</strong> The square of the block is the matrix square:</p>
+<p>$$
+\mathsf{M}_2\bigl(\tilde Q\bullet\tilde Q\bigr)=\mathsf{M}_2(\tilde Q)^2 .
+$$</p>
+<p><em>Proof.</em> The square of the block is the plain square $\tilde Q^2$ by <em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>, and the model is multiplicative on the plain product. Verified on the model. $\square$</p>
+<p><strong>Theorem (the Cayley–Hamilton identity).</strong> The block's quadratic identity is the <strong>Cayley–Hamilton identity</strong>:</p>
+<p>$$
+\mathsf{M}_2(\tilde Q)^2-2Q_0\mathsf{M}_2(\tilde Q)+N(\tilde Q)I=0,\qquad
+\lambda^2-2Q_0\lambda+N(\tilde Q)=0,
+$$</p>
+<p>the second display being the characteristic polynomial of $\mathsf{M}_2(\tilde Q)$.</p>
+<p><em>Proof.</em> Apply $\mathsf{M}_2$ to the quadratic identity $\tilde Q\bullet\tilde Q-T(\tilde Q)\tilde Q+N(\tilde Q)e_0=0$ and use $\mathsf{M}_2(e_0)=I$, $\mathsf{M}_2(\tilde Q\bullet\tilde Q)=\mathsf{M}_2(\tilde Q)^2$, $T(\tilde Q)=2Q_0$ and $\mathsf{M}_2(\tilde Q)^2-2Q_0\mathsf{M}_2(\tilde Q)+N(\tilde Q)I=0$, whose left side is the characteristic polynomial of the $2\times2$ matrix $\mathsf{M}_2(\tilde Q)$ by Cayley–Hamilton. Verified on the model. $\square$</p>
+<p><strong>Theorem (the quadratic form and the trace form).</strong> The quadratic trace and the trace form become scaled matrix traces:</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde Q\bullet\tilde Q\bigr)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q)^2\bigr),\qquad
+\tau(\tilde P,\tilde Q)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)\bigr).
+$$</p>
+<p><em>Proof.</em> $\mathrm{Sc}(\tilde Q^2)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde Q)^2)$ is the trace pairing of the $2\times2$ model evaluated on $\tilde Q=\tilde P$; for the general form, $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=\tfrac12\bigl(\mathrm{Sc}(\tilde P\tilde Q)+\mathrm{Sc}(\tilde Q\tilde P)\bigr)=\mathrm{Sc}(\tilde P\tilde Q)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$. Verified on the model. $\square$</p>
+<p><strong>Remark (the polarisation on the matrices).</strong> The quadratic form $\tilde Q\mapsto\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde Q)^2)$ polarises to the bilinear form $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$, and the product is recovered from the square by polarisation: $\mathsf{M}_2(\tilde P\bullet\tilde Q)=\tfrac12\bigl(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)+\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde P)\bigr)$, equivalently $\tfrac12$ times the polarisation of the matrix square. <strong>The whole degree-two structure of the block is the Cayley–Hamilton structure of the $2\times2$ matrices</strong>; the polarisation that recovers the product from the form is <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em>. Verified on the model.</p>
+<h2 id="the-idempotents">The Idempotents</h2>
+<p><strong>Theorem (the projectors).</strong> The non-trivial idempotents of the block are the <strong>projectors</strong> of rank one, and for a root $\xi$ of $-1$,</p>
+<p>$$
+\mathsf{M}_2\bigl(\tfrac12(e_0+\xi i)\bigr)=\tfrac12\bigl(I+J\bigr),\qquad J=i\mathsf{M}_2(\xi),\qquad J^2=I .
+$$</p>
+<p><em>Proof.</em> $\mathsf{M}_2(\xi)^2=\mathsf{M}_2(\xi^2)=\mathsf{M}_2(-e_0)=-I$, so $J^2=i^2\mathsf{M}_2(\xi)^2=(-1)(-I)=I$; hence $\mathsf{M}_2(\tilde\Pi)^2=\tfrac14(I+J)^2=\tfrac14(2I+2J)=\tfrac12(I+J)=\mathsf{M}_2(\tilde\Pi)$, so the image is idempotent with eigenvalues $1,0$, that is a projector of rank one, of trace $\operatorname{Tr}\mathsf{M}_2(\tilde\Pi)=2\Pi_0=1$. Verified on the model. $\square$</p>
+<p><strong>Theorem (the Hermitian projectors).</strong> The Hermitian idempotents are the <strong>Hermitian projectors</strong>: for a unit real vector $\hat\mu$ in $\mathbb{R}^3$,</p>
+<p>$$
+\mathsf{M}_2\bigl(\tfrac12(e_0+i\hat\mu)\bigr)=\tfrac12\bigl(I+i\mathsf{M}_2(\hat\mu)\bigr)
+$$</p>
+<p>is a self-adjoint projector of the model, of kernel the complementary minimal left ideal.</p>
+<p><em>Proof.</em> The Hermitian conjugation satisfies $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$ in the model, so a Hermitian element has a Hermitian matrix; a Hermitian idempotent therefore has a Hermitian projector with $\mathsf{M}_2(\tilde\Pi)^2=\mathsf{M}_2(\tilde\Pi)$ and $\mathsf{M}_2(\tilde\Pi)^{\dagger}=\mathsf{M}_2(\tilde\Pi)$. The kernel and the image are the two minimal left ideals of the Peirce decomposition of <em>Biquaternion Ideals and Peirce Decomposition</em>. Verified on the model. $\square$</p>
+<p><strong>Remark (the model separates the families).</strong> The trivial idempotents are the scalar projectors $0$ and $I$; the Hermitian idempotents are the rank-one projectors $\tfrac12(I+J)$ with $J$ a Hermitian involution of trace $0$; and the non-Hermitian idempotents are the rank-one projectors $\tfrac12(I+J)$ with $J=i\mathsf{M}_2(\xi)$ for a non-real root $\xi$, whose involution is not Hermitian. <strong>The three families of idempotents are the three families of rank-one projectors of $M_2(\mathbb{C})$ cut by the involution.</strong> Verified on the model.</p>
+<h2 id="the-isotropic-cone">The Isotropic Cone</h2>
+<p><strong>Theorem (the determinant and the norm).</strong> The generic norm is a determinant:</p>
+<p>$$
+\det\mathsf{M}_2(\tilde Q)=N(\tilde Q).
+$$</p>
+<p><em>Proof.</em> The determinant of the $2\times2$ model is $N$ by <em>The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>. Verified on the model. $\square$</p>
+<p><strong>Theorem (the isotropic elements).</strong> The isotropic cone of the block is the set of <strong>singular matrices</strong>:</p>
+<p>$$
+N(\tilde Q)=0\iff \mathsf{M}_2(\tilde Q)\ \text{singular}.
+$$</p>
+<p><em>Proof.</em> $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$; a matrix is singular exactly when its determinant vanishes. Verified on the model. $\square$</p>
+<p><strong>Remark (the rank of the isotropic matrices).</strong> A non-zero isotropic element has a non-zero singular matrix; it is of <strong>rank one</strong>, hence of the form $uv^{\mathsf T}$. <strong>The isotropic cone of the block is the cone of the rank-one matrices in the model</strong>, and the zero divisors are the rank-one matrices; the description of <em>Biquaternion Zero Divisors</em> and <em>The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> is the same list. Verified on the model.</p>
+<p><strong>Theorem (the elements of square zero).</strong> The elements of square zero are exactly the <strong>nilpotent</strong> matrices:</p>
+<p>$$
+\tilde Q\bullet\tilde Q=0\iff\mathsf{M}_2(\tilde Q)^2=0\iff\mathsf{M}_2(\tilde Q)\ \text{nilpotent}.
+$$</p>
+<p><em>Proof.</em> $\mathsf{M}_2(\tilde Q\bullet\tilde Q)=\mathsf{M}_2(\tilde Q)^2$ by the transport of the square, so the square of the block vanishes exactly when the matrix square vanishes, and a $2\times2$ matrix with vanishing square is nilpotent; a nilpotent $2\times2$ matrix is either zero or of rank one with vanishing trace. Verified on the model. $\square$</p>
+<p><strong>Remark (the isotropic matrices split into the nilpotent and the non-nilpotent).</strong> The isotropic cone is the union of the origin, the <strong>nilpotent</strong> matrices, which are the images of the elements of square zero, and the <strong>singular non-nilpotent</strong> matrices, which are the images of the isotropic elements that are not of square zero. The element $e_1+ie_2$ is of square zero, and $\mathsf{M}_2(e_1+ie_2)=\begin{pmatrix}0&-2i\\0&0\end{pmatrix}$ is nilpotent of trace $0$; the element $e_0+ie_1$ is isotropic without being of square zero, and $\mathsf{M}_2(e_0+ie_1)=\begin{pmatrix}1&1\\1&1\end{pmatrix}$ is singular of rank one and of trace $2$, not nilpotent. <strong>The two model descriptions of the isotropic cone are the nilpotent matrices together with the singular matrices of non-zero trace.</strong> Verified on the witnesses.</p>
+<h2 id="the-trace-form-and-the-operators">The Trace Form and the Operators</h2>
+<p><strong>Theorem (the multiplication operator).</strong> The multiplication operator of the block becomes the <strong>symmetrised multiplication</strong> of the matrix:</p>
+<p>$$
+\mathsf{M}_2\bigl(L^{\bullet}_{\tilde A}\tilde Q\bigr)=\tfrac12\bigl(\mathsf{M}_2(\tilde A)\mathsf{M}_2(\tilde Q)+\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde A)\bigr),
+$$</p>
+<p>so the operator $L^{\bullet}_{\tilde A}$ is carried to the map $M\mapsto\tfrac12(\mathsf{M}_2(\tilde A)M+M\mathsf{M}_2(\tilde A))$ on $M_2(\mathbb{C})$.</p>
+<p><em>Proof.</em> Apply $\mathsf{M}_2$ to $L^{\bullet}_{\tilde A}\tilde Q=\tfrac12(\tilde A\tilde Q+\tilde Q\tilde A)$ and use the multiplicativity of $\mathsf{M}_2$. Verified on the model. $\square$</p>
+<p><strong>Theorem (the invariants of the operator).</strong> The trace and the determinant of the operator are the matrix invariants</p>
+<p>$$
+\operatorname{Tr}\bigl(L^{\bullet}_{\tilde A}\bigr)=2\operatorname{Tr}\mathsf{M}_2(\tilde A)=4A_0,\qquad
+\det\bigl(L^{\bullet}_{\tilde A}\bigr)=A_0^2N(\tilde A),
+$$</p>
+<p>and the operator trace is $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\mathbf{P},\mathbf{Q})$ in the coefficient basis.</p>
+<p><em>Proof.</em> The operator is the sum of the two maps $M\mapsto\tfrac12\mathsf{M}_2(\tilde A)M$ and $M\mapsto\tfrac12 M\mathsf{M}_2(\tilde A)$. On $M_2(\mathbb{C})$ the map $M\mapsto AM$ has trace $2\operatorname{Tr}A$, so each half has trace $\operatorname{Tr}\mathsf{M}_2(\tilde A)=2A_0$ and the sum has trace $4A_0$; the determinant $A_0^2N(\tilde A)$ is that of <em>The Multiplication Operators of the Symmetric Plain Algebra</em> and the operator trace $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\mathbf{P},\mathbf{Q})$ that of <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em>, both recomputed in the model. Verified on the model. $\square$</p>
+<p><strong>Remark (the two operators and the two traces).</strong> The multiplication operator of the block is the <strong>average of the two one-sided matrix multiplications</strong>, and the trace of that average is the trace of the matrix and not twice it; the operator trace is</p>
+<p>$$
+\operatorname{Tr}\bigl(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q}\bigr)=4P_0Q_0-2(\mathbf{P},\mathbf{Q})=2\tau(\tilde P,\tilde Q)+\tfrac12T(\tilde P)T(\tilde Q),
+$$</p>
+<p>which is not a multiple of the trace form $\tau(\tilde P,\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$, since the two coefficient pairs $(4,-2)$ and $(1,-1)$ are not proportional. <strong>The operator trace is not the trace form</strong>, and it agrees with the trace of the product of the two plain operators, $\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=4\tau(\tilde P,\tilde Q)$, exactly when $(\mathbf{P},\mathbf{Q})=0$; the two differ at $\tilde P=\tilde Q=e_1$, where the operator trace is $-2$ against $4\tau=-4$. <strong>The model carries the operators to the symmetrised matrix multiplications and the trace form to the half trace of the matrix square</strong>, and the transport agrees with the coordinate computation. Verified on the model with random pairs and on the witnesses.</p>
+<h2 id="the-derivations-and-the-automorphisms">The Derivations and the Automorphisms</h2>
+<p><strong>Theorem (the derivations).</strong> The inner derivations are the <strong>matrix commutators</strong>:</p>
+<p>$$
+\mathsf{M}_2\bigl(\tfrac14\operatorname{ad}_{\tilde C}\tilde X\bigr)=\tfrac14\bigl[\mathsf{M}_2(\tilde C),\mathsf{M}_2(\tilde X)\bigr],
+$$</p>
+<p>so the derivation algebra of the block is carried to the commutator algebra of the trace-zero matrices, $\mathfrak{sl}(2,\mathbb{C})$.</p>
+<p><em>Proof.</em> $\operatorname{ad}_{\tilde C}=L_{\tilde C}-R_{\tilde C}$ and $\mathsf{M}_2(L_{\tilde C}\tilde X-R_{\tilde C}\tilde X)=\mathsf{M}_2(\tilde C\tilde X-\tilde X\tilde C)=\mathsf{M}_2(\tilde C)\mathsf{M}_2(\tilde X)-\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde C)=[\mathsf{M}_2(\tilde C),\mathsf{M}_2(\tilde X)]$; the trace-zero matrices are the commutators, and the factor $\tfrac14$ is the one of <em>The Multiplication Operators of the Symmetric Plain Algebra</em>. Verified on the model. $\square$</p>
+<p><strong>Theorem (the automorphisms).</strong> The automorphisms are the <strong>conjugations</strong> and the <strong>transposition-like maps</strong>:</p>
+<p>$$
+\mathsf{M}_2\bigl(\operatorname{Ad}_{\tilde A}\tilde X\bigr)=\mathsf{M}_2(\tilde A)\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde A)^{-1},\qquad
+\operatorname{adj}\mathsf{M}_2(\tilde X)=J_0\,\mathsf{M}_2(\tilde X)^{\mathsf T}J_0^{-1},\qquad
+J_0=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+$$</p>
+<p>for a unit $\tilde A$, and with the natural conjugation read on the matrix as $\mathsf{M}_2(\tilde X^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde X)$.</p>
+<p><em>Proof.</em> The inner automorphism is the conjugation by the unit by <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, and $\mathsf{M}_2$ is multiplicative. The natural conjugation satisfies $\mathsf{M}_2(\tilde X^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde X)$ with $\operatorname{adj}M=(\operatorname{Tr}M)I-M$; for a $2\times2$ matrix $\operatorname{adj}M=J_0M^{\mathsf T}J_0^{-1}$, so the natural conjugation is the transpose composed with the conjugation by the alternating matrix, an anti-automorphism of the matrix product and an automorphism of the symmetrised product. Verified on the model. $\square$</p>
+<p><strong>Remark (the model and the two groups).</strong> The automorphism group of the block is the inner conjugations together with the natural conjugation, of dimension three, with the commutator algebra of the trace-zero matrices as Lie algebra; the structure group of <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, the norm similarities, is the larger group carried to the <strong>similarities of the determinant</strong> of the matrix model,</p>
+<p>$$
+\Gamma=\bigl\{g:\det\mathsf{M}_2(g\tilde X)=\nu(g)\det\mathsf{M}_2(\tilde X)\bigr\},
+$$</p>
+<p>of dimension seven. <strong>In the model the automorphisms are the conjugations and the adjugate-conjugates, and the structure group is the group of determinant similarities</strong>; the derivations are the commutators with the trace-zero matrices. Verified on the model.</p>
+<h2 id="the-matrices">The Matrices</h2>
+<p><strong>The generators.</strong> The realization is fixed on the basis by four matrices:</p>
+<p>$$
+\mathsf{M}_2(e_0)=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
+\mathsf{M}_2(e_1)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+\mathsf{M}_2(e_2)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+\mathsf{M}_2(e_3)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+$$</p>
+<p>The general element is the matrix $\mathsf{M}_2(\tilde Q)$ of trace $2Q_0$ and determinant $N(\tilde Q)$.</p>
+<p><strong>The product, entry by entry.</strong> The block's product is the <strong>anticommutator</strong> of the matrices,</p>
+<p>$$
+\mathsf{M}_2(\tilde P\bullet\tilde Q)=\tfrac12\bigl\{\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)\bigr\}
+=\tfrac12\bigl(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)+\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde P)\bigr),
+$$</p>
+<p>and on the unit $e_1$ the square is the negative identity of the model,</p>
+<p>$$
+\mathsf{M}_2(e_1)^2=\begin{pmatrix}0&-i\\-i&0\end{pmatrix}^2=\begin{pmatrix}-1&0\\0&-1\end{pmatrix}=-I=-\mathsf{M}_2(e_0).
+$$</p>
+<p><strong>The idempotents, entry by entry.</strong> At the vector unit $e_1$ the idempotent $\tfrac12(e_0+ie_1)$ is the rank-one projector</p>
+<p>$$
+\mathsf{M}_2\bigl(\tfrac12(e_0+ie_1)\bigr)=\tfrac12\bigl(I+i\mathsf{M}_2(e_1)\bigr)
+=\tfrac12\begin{pmatrix}1&1\\1&1\end{pmatrix}
+=\begin{pmatrix}\tfrac12&\tfrac12\\\tfrac12&\tfrac12\end{pmatrix},
+$$</p>
+<p>of trace one, the projector onto the line spanned by $(1,1)^{\mathsf T}$; at $e_2$ and $e_3$ the same construction gives the other two rank-one projectors of the model.</p>
+<p><strong>The isotropic cone, entry by entry.</strong> The element $e_1+ie_2$ is of square zero and its matrix is nilpotent, $\mathsf{M}_2(e_1+ie_2)=\begin{pmatrix}0&-2i\\0&0\end{pmatrix}$ of vanishing square; the element $e_0+ie_1$ is isotropic without being of square zero and its matrix is the rank-one matrix $\mathsf{M}_2(e_0+ie_1)=\begin{pmatrix}1&1\\1&1\end{pmatrix}$ of trace two. <strong>The two kinds of isotropic element are the two kinds of singular matrix</strong>, the nilpotent and the singular of non-zero trace, and the model separates them by the trace.</p>
+<h2 id="summary">Summary</h2>
+<p>In the $2\times2$ model the block's product becomes the symmetrisation of the matrix product, $\mathsf{M}_2(\tilde P\bullet\tilde Q)=\tfrac12(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)+\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde P))$, the square becomes the matrix square, and the quadratic identity becomes the Cayley–Hamilton identity $\mathsf{M}_2(\tilde Q)^2-2Q_0\mathsf{M}_2(\tilde Q)+N(\tilde Q)I=0$. The idempotents are the rank-one projectors $\tfrac12(I+i\mathsf{M}_2(\xi))$ over the roots of $-1$, Hermitian for the real roots and not Hermitian otherwise. The generic norm is the determinant, $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, so the isotropic cone is the set of singular matrices and the elements of square zero are the nilpotent matrices; the isotropic cone is the nilpotent matrices together with the singular matrices of non-zero trace, the witnesses being $e_1+ie_2$ and $e_0+ie_1$. The trace form is the half trace of the matrix product, $\tau(\tilde P,\tilde Q)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$, the multiplication operator is the averaged one-sided matrix multiplication of trace $2\operatorname{Tr}\mathsf{M}_2(\tilde A)=4A_0$ and determinant $A_0^2N(\tilde A)$, the derivations are the commutators with the trace-zero matrices, and the automorphisms are the conjugations together with the adjugate-conjugate of the natural conjugation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2(e_0)=I$, $\mathsf{M}_2(e_k)=-i\sigma_k$</td>
+<td>the $2\times2$ realization, an algebra isomorphism</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde P\bullet\tilde Q)=\tfrac12(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)+\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde P))$</td>
+<td>the block's product in the model</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde Q)^2-2Q_0\mathsf{M}_2(\tilde Q)+N(\tilde Q)I=0$</td>
+<td>the Cayley–Hamilton identity</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tfrac12(e_0+\xi i))=\tfrac12(I+i\mathsf{M}_2(\xi))$</td>
+<td>the idempotents as projectors</td>
+</tr>
+<tr>
+<td>$\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$</td>
+<td>the generic norm as a determinant</td>
+</tr>
+<tr>
+<td>$\tau(\tilde P,\tilde Q)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$</td>
+<td>the trace form as a matrix trace</td>
+</tr>
+<tr>
+<td>$\tfrac14\operatorname{ad}_{\tilde C}\leftrightarrow\tfrac14[\mathsf{M}_2(\tilde C),\cdot]$</td>
+<td>the inner derivations as commutators</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde X^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde X)$</td>
+<td>the natural conjugation as the adjugate</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> (<code>articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation.md</code>), for the model.</li>
+<li><em>The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</em> (<code>articles_maths/the-symmetric-plain-algebra-in-the-4x4-matrix-element-representation.md</code>), for the reading on the left regular representation.</li>
+<li><em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> (<code>articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md</code>), for the element tables of the model.</li>
+<li><em>Biquaternion Objects and Their Matrix Correspondences</em> (<code>articles_maths/biquaternion-objects-and-their-matrix-correspondences.md</code>), for the correspondence between the objects and the matrices.</li>
+<li><em>Biquaternion Idempotents and Projections</em> and <em>Biquaternion Ideals and Peirce Decomposition</em>, for the idempotents, the projectors and the minimal left ideals.</li>
+<li><em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>, <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em> and <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, for the coordinate statements transported here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

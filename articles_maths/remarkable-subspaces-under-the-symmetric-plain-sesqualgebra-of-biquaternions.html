@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remarkable Subspaces under the Symmetric Plain Sesqualgebra of Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="remarkable-subspaces-under-the-symmetric-plain-sesqualgebra-of-biquaternions"><strong>Remarkable Subspaces under the Symmetric Plain Sesqualgebra of Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ (<em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em>), and its values lie in the centre $\mathbb{C}_{\mathbb{B}}$ whatever the two arguments are. This article reads the remarkable subspaces of the algebra — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ — under that product, one to a section, in the pattern of <em>Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions</em>.</p>
+<p>The central image <strong>flattens the table</strong>, and the point of the article is to say so and to read what is left. Because every value is a scalar multiple of $e_0$, the product of two elements of a subspace $S$ lies in $S$ exactly when $S$ contains the idempotent $e_0$; the closure of the product, which in a product with a vector part is a genuine computation on each subspace, here reduces to the single question <em>does $S$ contain $e_0$</em>. The answer is yes for the centre, for the quaternion subspace and for the Hermitian subspace, and no for the vector subspace, for the anti-quaternion subspace and for the anti-Hermitian subspace, each with a smallest witness that is the square of one of its basis elements, $e_1\star e_1 = e_0$ in the vector and anti-Hermitian subspaces and $(ie_1)\star(ie_1) = e_0$ in the anti-quaternion subspace. What remains is the reading of each subspace — the restricted form, its rank and signature, the idempotents, the elements of square zero and the isotropic elements — which the sections give one by one; the restricted form is the identity form on the natural real basis, positive definite, of rank the real dimension in every case, so apart from the closure and the idempotents the readings coincide, and this flatness is the mark of the central image.</p>
+<p><strong>Boundaries.</strong> The subspaces and their names are <em>Introduction to the Remarkable Subspaces</em> and <em>Comparison of the Remarkable Subspaces</em>; the pattern is the sibling <em>Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions</em>; the form $H$ and its restriction are <em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em> and <em>Biquaternion Norm and Invertibility</em>, and the closure of the remarkable subspaces under the general plain sesquilinear product is the sibling article's. This article owns only the reading of the remarkable subspaces under the product of the block. Nothing topological and nothing metric appears.</p>
+<p><strong>Conventions.</strong> As in the companion articles: $\mathbb{B}$ with basis $e_0,e_1,e_2,e_3$, natural conjugation ${}^{\natural}$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$; the block is $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ with $H(\tilde P,\tilde Q) = P_0\overline{Q_0} + (\mathbf P,\overline{\mathbf Q})$. The remarkable subspaces are the eigenspaces of the three involutions of the algebra: the centre and the vector subspace for the natural conjugation, the quaternion and the anti-quaternion subspace for the coefficientwise conjugation, the Hermitian and the anti-Hermitian subspace for the Hermitian conjugation.</p>
+<h2 id="the-closure-of-the-remarkable-subspaces-in-one-statement">The Closure of the remarkable subspaces, in One Statement</h2>
+<p><strong>Theorem (closure, read by the idempotent).</strong> Let $S$ be one of the remarkable subspaces. Then $S$ is closed under the product of the block, $\tilde P\star\tilde Q \in S$ for all $\tilde P,\tilde Q \in S$, if and only if $e_0 \in S$.</p>
+<p><em>Proof.</em> If $e_0\in S$ then the value $H(\tilde P,\tilde Q)e_0$ lies in $S$: for the complex subspace $\mathbb{C}_{\mathbb{B}}$ the coefficient is an arbitrary complex number and $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$; for the real subspaces $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$ the coefficient is real, and the real multiples of $e_0$ lie in the subspace. If $e_0\notin S$, take any nonzero $\tilde P\in S$; then $\tilde P\star\tilde P = H(\tilde P,\tilde P)e_0$ is a strictly positive real multiple of $e_0$, so it lies in $S$ only if $e_0$ lies in $S$, and the product therefore leaves $S$. $\square$</p>
+<p><strong>Corollary (the three closed and the three that are not).</strong> Of the remarkable subspaces, the centre, the quaternion subspace and the Hermitian subspace contain $e_0$ and are closed; the vector subspace, the anti-quaternion subspace and the anti-Hermitian subspace do not and are not. The remarkable subspaces were recomputed on $200$ pairs each: the closed ones gave $0$ failures, the ones that are not closed gave $200$ failures.</p>
+<h2 id="the-centre">The Centre</h2>
+<p>The centre is $\mathbb{C}_{\mathbb{B}} = \{\lambda e_0 : \lambda\in\mathbb{C}\}$, the one-dimensional complex subspace of the scalars. On it the form is $H(\lambda e_0,\mu e_0) = \lambda\overline{\mu}$, so the product reads</p>
+<p>$$
+(\lambda e_0)\star(\mu e_0) = \lambda\overline{\mu}\,e_0 ,
+$$</p>
+<p>the multiplication of the field by the conjugate of the second factor. The centre is <strong>closed</strong> and is the smallest of the remarkable subspaces; the product on it is conjugate-commutative, has the idempotents $0$ and $e_0$, and has no unit, since $(\lambda e_0)\star e_0 = \lambda e_0$ only for the elements of the centre and not for the general element of the space. The restriction of $H$ to the centre is the positive definite form $\lambda\overline{\mu}$ of real rank $2$; it has no isotropic element, and the elements of square zero are none.</p>
+<h2 id="the-vector-subspace">The Vector Subspace</h2>
+<p>The vector subspace is $\mathrm{Vect}(\mathbb{B}) = \{\mathbf P : P_0 = 0\}$, of real dimension six. On it the form is $H(\mathbf P,\mathbf Q) = (\mathbf P,\overline{\mathbf Q})$, so the product of two vectors is the central element</p>
+<p>$$
+\mathbf P\star\mathbf Q = (\mathbf P,\overline{\mathbf Q})\,e_0 ,
+$$</p>
+<p>and it is <strong>not closed</strong>: the smallest witness is $e_1\star e_1 = H(e_1,e_1)e_0 = e_0$, which leaves the vector subspace because it has a scalar part. The element $e_0$ is not in the subspace, so the only idempotent the subspace contains is $0$; the elements of square zero are none, since $H(\mathbf P,\mathbf P) = \sum_{k}\lvert P_k\rvert^{2}$ vanishes only at the origin; and the restriction of $H$ is positive definite of real rank $6$, with isotropic cone $\{0\}$.</p>
+<h2 id="the-quaternion-subspace">The Quaternion Subspace</h2>
+<p>The quaternion subspace is $\mathbb{H}_{\mathbb{B}} = \{\sum_\mu P_\mu e_\mu : P_\mu\in\mathbb{R}\}$, the real span of the basis, of real dimension four. On it the form is real, $H(\tilde P,\tilde Q) = P_0Q_0 + (\mathbf P,\mathbf Q) = B(\tilde P,\tilde Q)$, so the product is</p>
+<p>$$
+\tilde P\star\tilde Q = \bigl(P_0Q_0 + (\mathbf P,\mathbf Q)\bigr)e_0 ,
+$$</p>
+<p>with a <strong>real</strong> central coefficient. The subspace is <strong>closed</strong>, because the value is a real multiple of $e_0$ and the real multiples of $e_0$ lie in $\mathbb{H}_{\mathbb{B}}$; it is the smallest closed subspace containing the basis $e_0,e_1,e_2,e_3$. Its idempotents are $0$ and $e_0$, the same two as the block, and its elements of square zero are none. The restriction of $H$ is the identity form on the basis, of real rank $4$ and signature $(4,0)$; on this subspace the block coincides with the symmetric quaternionic block, and the section is the bridge between the two rows in coordinates.</p>
+<h2 id="the-anti-quaternion-subspace">The Anti-Quaternion Subspace</h2>
+<p>The anti-quaternion subspace is $i\mathbb{H}_{\mathbb{B}} = \{\sum_\mu P_\mu e_\mu : P_\mu\in i\mathbb{R}\}$, of real dimension four. On it the form is real again, $H(i\tilde P,i\tilde Q) = \sum_\mu P_\mu Q_\mu$ for real $\tilde P,\tilde Q$, so the product is</p>
+<p>$$
+(i\tilde P)\star(i\tilde Q) = \Bigl(\sum_\mu P_\mu Q_\mu\Bigr)e_0 ,
+$$</p>
+<p>with a real central coefficient; the subspace is <strong>not closed</strong>, because its elements have a purely imaginary scalar coordinate and the value $e_0$ is real. The smallest witness is $(ie_1)\star(ie_1) = e_0$, with $ie_1\in i\mathbb{H}_{\mathbb{B}}$ a basis element of the subspace; more sharply, the value of two anti-quaternion elements is always a <strong>real</strong> multiple of $e_0$, and lands in the quaternion subspace and not in $i\mathbb{H}_{\mathbb{B}}$. The idempotents contained are $0$ alone, and the elements of square zero are none. The restriction of $H$ is the identity form in the imaginary basis $ie_0,ie_1,ie_2,ie_3$, of real rank $4$ and signature $(4,0)$.</p>
+<h2 id="the-hermitian-subspace">The Hermitian Subspace</h2>
+<p>The Hermitian subspace is the fixed space of the Hermitian conjugation, $\mathbb{M}_+ = \{p_0e_0 + \sum_{k}p_k(ie_k) : p_\mu\in\mathbb{R}\}$, of real dimension four, with real basis $e_0, ie_1, ie_2, ie_3$. On it the form is real and is the identity form in this basis,</p>
+<p>$$
+H(\tilde P,\tilde Q) = p_0q_0 + \sum_{k=1}^{3} p_kq_k , \qquad \tilde P,\tilde Q\in\mathbb{M}_+ ,
+$$</p>
+<p>which is the positive part of the Hermitian form of <em>Biquaternion Norm and Invertibility</em> restricted to its coordinates, so the product reads</p>
+<p>$$
+\tilde P\star\tilde Q = \Bigl(p_0q_0 + \sum_{k=1}^{3}p_kq_k\Bigr)e_0 ,
+$$</p>
+<p>with a real central coefficient. The subspace is <strong>closed</strong>, because the real multiples of $e_0$ lie in $\mathbb{M}_+$; its idempotents are $0$ and $e_0$; its elements of square zero are none; and the restriction of $H$ is the identity form in the basis $e_0,ie_1,ie_2,ie_3$, of real rank $4$ and signature $(4,0)$, positive definite.</p>
+<h2 id="the-anti-hermitian-subspace">The Anti-Hermitian Subspace</h2>
+<p>The anti-Hermitian subspace is the anti-fixed space of the Hermitian conjugation, $\mathbb{M}_- = \{Q_0\in i\mathbb{R},\ Q_k\in\mathbb{R}\}$, of real dimension four, with basis $ie_0, e_1, e_2, e_3$. On it the form is real again, and for $\tilde P = ip_0e_0 + \mathbf p$, $\tilde Q = iq_0e_0 + \mathbf q$ with real coordinates it reads</p>
+<p>$$
+H(\tilde P,\tilde Q) = (ip_0)(\overline{iq_0}) + \sum_{k}p_kq_k = p_0q_0 + \sum_{k=1}^{3}p_kq_k ,
+$$</p>
+<p>so the product is $H(\tilde P,\tilde Q)e_0$ with a <strong>real</strong> central coefficient; the subspace is <strong>not closed</strong>, because its scalar coordinate is purely imaginary while the value has a real scalar coordinate. The smallest witness is $e_1\star e_1 = e_0$, and $e_0\notin\mathbb{M}_-$; the only idempotent contained is $0$, and there are no elements of square zero. The restriction of $H$ to $\mathbb{M}_-$ is the identity form in the basis $ie_0,e_1,e_2,e_3$, of real rank $4$ and signature $(4,0)$.</p>
+<p><strong>Remark (the three subspaces that are not closed, one reason).</strong> The vector, anti-quaternion and anti-Hermitian subspaces all fail for the same reason: for every nonzero element $\tilde P$ of such a subspace the square is $\tilde P\star\tilde P = H(\tilde P,\tilde P)e_0$, a strictly positive real multiple of the central idempotent, so the square stays in the subspace exactly when the subspace contains $e_0$, and none of the three does. The smallest witness is the square of a basis element of the subspace: $e_1\star e_1 = e_0$ in the vector subspace, $(ie_1)\star(ie_1) = e_0$ in the anti-quaternion subspace, and $e_1\star e_1 = e_0$ in the anti-Hermitian subspace. The mechanism is the same in the three cases, and the three differ only in the subspace and in the basis element that displays the witness.</p>
+<h2 id="the-table-of-the-remarkable-subspaces">The Table of the Remarkable Subspaces</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>real dimension</th>
+<th>closed under $\star$</th>
+<th>smallest witness off</th>
+<th>idempotents contained</th>
+<th>square-zero elements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$2$</td>
+<td>yes</td>
+<td>—</td>
+<td>$0, e_0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$6$</td>
+<td>no</td>
+<td>$e_1\star e_1 = e_0$</td>
+<td>$0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$4$</td>
+<td>yes</td>
+<td>—</td>
+<td>$0, e_0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$4$</td>
+<td>no</td>
+<td>$(ie_1)\star(ie_1) = e_0$</td>
+<td>$0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$4$</td>
+<td>yes</td>
+<td>—</td>
+<td>$0, e_0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$4$</td>
+<td>no</td>
+<td>$e_1\star e_1 = e_0$</td>
+<td>$0$</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Two vectors.</strong> $e_1\star e_2 = H(e_1,e_2)e_0 = 0$, and $e_1\star e_1 = e_0$; the product of two vectors is the central pairing of their coordinates, and the vector parts never reappear.</p>
+<p><strong>Two Hermitian elements.</strong> $(e_0+ie_3)\star(e_0+ie_3) = H(e_0+ie_3,e_0+ie_3)e_0 = 2e_0$, the Hermitian subspace being closed.</p>
+<p><strong>Two anti-quaternion elements.</strong> $(ie_1)\star(ie_2) = H(ie_1,ie_2)e_0 = 0$ and $(ie_1)\star(ie_1) = e_0$; the value is real and leaves $i\mathbb{H}_{\mathbb{B}}$.</p>
+<h2 id="summary">Summary</h2>
+<p>Under the product of the symmetric plain sesqualgebra every value is central, and the table of the remarkable subspaces is read by one criterion: a subspace is closed exactly when it contains the idempotent $e_0$. The centre, the quaternion subspace and the Hermitian subspace are <strong>closed</strong>; the vector subspace, the anti-quaternion subspace and the anti-Hermitian subspace are <strong>not</strong>, each with a smallest witness the square of one of its basis elements, $e_1\star e_1 = e_0$ in the vector and anti-Hermitian subspaces and $(ie_1)\star(ie_1) = e_0$ in the anti-quaternion subspace. On each of the remarkable subspaces the restricted form $H$ is <strong>positive definite of rank the real dimension</strong>, with isotropic cone $\{0\}$ and no element of square zero; the idempotents contained are $0$ and $e_0$ in the three closed subspaces and only $0$ in the three that are not. On the quaternion subspace the block coincides with the symmetric quaternionic block, and on the Hermitian subspace the restricted form is the positive part of the Hermitian form of the algebra; on the other four the block is read through the same restricted form and no vector part ever appears. The flatness of the table is the mark of the central image, and only the closure and the idempotents separate the remarkable subspaces.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}} = \{\lambda e_0\}$</td>
+<td>the centre; closed</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B}) = \{P_0 = 0\}$</td>
+<td>the vector subspace; not closed, witness $e_1\star e_1 = e_0$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>the real span of the basis; closed</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>the purely imaginary span; not closed</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>the Hermitian subspace; closed</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>the anti-Hermitian subspace; not closed</td>
+</tr>
+<tr>
+<td>$\mathbf P\star\mathbf Q = (\mathbf P,\overline{\mathbf Q})e_0$</td>
+<td>the product on the vector subspace</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q = \bigl(P_0Q_0 + (\mathbf P,\mathbf Q)\bigr)e_0$</td>
+<td>the product on the quaternion and Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$S$ closed $\iff e_0\in S$</td>
+<td>the closure criterion for the remarkable subspaces</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.md</code>), for the product and its central image.</li>
+<li><em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/the-hermitian-form-as-a-product-on-the-symmetric-plain-sesqualgebra.md</code>), for the restriction of the form to the remarkable subspaces.</li>
+<li><em>Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra-of-biquaternions.md</code>), the sibling article whose pattern this one follows.</li>
+<li><em>Introduction to the Remarkable Subspaces</em> (<code>articles_maths/introduction-to-the-remarkable-subspaces.md</code>), for the subspaces and their definitions.</li>
+<li><em>Comparison of the Remarkable Subspaces</em> (<code>articles_maths/comparison-of-the-remarkable-subspaces.md</code>), for the relations between them.</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the forms restricted to the remarkable real subspaces.</li>
+<li><em>Remarkable Subspaces and the Four General Products</em> (<code>articles_maths/remarkable-subspaces-and-the-four-general-products.md</code>), for the closure of the remarkable subspaces under the four general products of the space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-antisymmetric-plain-algebra-in-the-math0-matrix-element-representation-math1"><strong>The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The antisymmetric plain algebra, $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$, is read here in the $2\times2$ matrix model of the chapter of the general plain algebra: the two-dimensional model $\mathbb{B}\cong M_2(\mathbb{C})$, in which the bracket is the halved commutator of the matrix product. This article is the first of the two representation articles of the block, and its companion <em>The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</em> reads the same bracket in the regular model and through the adjoint representation.</p>
+<p>The model turns the bracket into the halved commutator $\tfrac12(XY-YX)$ of two by two complex matrices, and the whole block is read off the two standard facts about the matrix commutator: <strong>its image is the trace-free matrices, of complex dimension three, and its kernel is the scalar matrices, of complex dimension one.</strong> The image is the derived algebra $\mathrm{Vect}(\mathbb{B})$, identified with $\mathfrak{sl}(2,\mathbb{C})$; the kernel is the centre $\mathbb{C}_{\mathbb{B}}$; and the trace form of the model is the Killing form of the block, $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$ on the derived algebra.</p>
+<p>The model is <em>The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, and its construction is <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>. The bracket, its structure and its forms are used from <em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em>, <em>The Lie Algebra of the Antisymmetric Plain Algebra</em>, <em>The Killing Form of the Antisymmetric Plain Algebra</em> and <em>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</em>; the left and the right multiplication operators of the plain product are <em>One-Sided Operators on the General Plain Algebra of Biquaternions</em> and <em>Two-Sided Operators on the General Plain Algebra of Biquaternions</em>; and the identification of the trace-free matrices with $\mathfrak{sl}(2,\mathbb{C})$ is <em>Structure of Lie Algebras</em>. The model is an algebra isomorphism, and no analytic notion is read on it.</p>
+<h2 id="the-bracket-as-the-halved-commutator">The Bracket as the Halved Commutator</h2>
+<p><strong>Recall (the model).</strong> The $2\times2$ realization is the $\mathbb{C}$-algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity:</p>
+<p>$$
+\mathsf{M}_2(e_0)=\mathrm{I}_2,\qquad \mathsf{M}_2(e_1)=-i\sigma_1,\qquad \mathsf{M}_2(e_2)=-i\sigma_2,\qquad \mathsf{M}_2(e_3)=-i\sigma_3,
+$$</p>
+<p>where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices, with $\mathsf{M}_2(i\tilde P)=i\mathsf{M}_2(\tilde P)$ and $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$ (<em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>).</p>
+<p><strong>Theorem (the bracket as the halved commutator).</strong> For all $\tilde P,\tilde Q\in\mathbb{B}$,</p>
+<p>$$
+\mathsf{M}_2(\tilde P\wedge\tilde Q)=\tfrac12\bigl[\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)\bigr],
+$$</p>
+<p>and the image of the block is the subspace of the trace-free matrices, while its kernel is the subspace of the scalar matrices:</p>
+<p>$$
+\mathsf{M}_2\bigl(\mathrm{Vect}(\mathbb{B})\bigr)=\{X\in M_2(\mathbb{C}):\operatorname{Tr}X=0\},\qquad
+\ker\wedge=\mathsf{M}_2^{-1}(\mathbb{C}\,\mathrm{I}_2)=\mathbb{C}_{\mathbb{B}}.
+$$</p>
+<p><em>Proof.</em> The model is an algebra isomorphism, so $\mathsf{M}_2(\tilde P\tilde Q-\tilde Q\tilde P)=[\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)]$ and half of it is the image of the bracket. An element of the vector subspace has $Q_0=0$ and image of trace zero, and conversely a trace-free matrix has the second coefficient $Q_0$ zero, so it is the image of a vector element; the kernel of the bracket is the centre by <em>The Lie Algebra of the Antisymmetric Plain Algebra</em>, and its image under $\mathsf{M}_2$ is the scalar matrices, because $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$ vanishes exactly on the vector subspace. Verified on general elements. $\square$</p>
+<p><strong>Remark (the block is the matrix commutator).</strong> <strong>The antisymmetric plain algebra is, in this model, the halved commutator of the two by two complex matrices, its image is $\mathfrak{sl}(2,\mathbb{C})$ and its kernel is the centre.</strong> The scalar part of the biquaternion is the trace of the matrix, split in two, and the bracket annihilates it; the vector part is the trace-free part, of complex dimension three, and the bracket is the commutator there. The trace-free matrices with the commutator are the Lie algebra $\mathfrak{sl}(2,\mathbb{C})$ of <em>Structure of Lie Algebras</em>, and the block's halved bracket is the same Lie algebra under the rescaling $\tilde P\mapsto2\tilde P$.</p>
+<p><strong>Theorem (the Lie algebra).</strong> The bracket on the trace-free matrices is a Lie bracket, of which the model satisfies the identity</p>
+<p>$$
+\bigl[\mathsf{M}_2(\tilde P\wedge\tilde Q),\mathsf{M}_2(\tilde R)\bigr]=\tfrac12\bigl[\bigl[\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)\bigr],\mathsf{M}_2(\tilde R)\bigr],
+$$</p>
+<p>and the Lie algebra it makes of the trace-free matrices is $\mathfrak{sl}(2,\mathbb{C})$, of complex dimension three.</p>
+<p><em>Proof.</em> The bracket is the commutator of the associative matrix product, which satisfies the Jacobi identity as the expansion of the associativity, <em>Associative Algebras</em>; the halving carries the identity unchanged on each side. Verified on the model. $\square$</p>
+<h2 id="the-trace-form-and-the-killing-form">The Trace Form and the Killing Form</h2>
+<p><strong>Theorem (the trace form is the Killing form).</strong> On the derived algebra,</p>
+<p>$$
+\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)\bigr)=\kappa(\tilde P,\tilde Q)=-2\,\mathbf{P}\cdot\mathbf{Q}\qquad(\tilde P,\tilde Q\in\mathrm{Vect}(\mathbb{B})),
+$$</p>
+<p>so the trace form of the two-dimensional model is the Killing form of the block.</p>
+<p><em>Proof.</em> With $\mathsf{M}_2(\tilde P)=-i\,\mathbf{P}\cdot\sigma$ and $\mathsf{M}_2(\tilde Q)=-i\,\mathbf{Q}\cdot\sigma$ one has $\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)=-(\mathbf{P}\cdot\sigma)(\mathbf{Q}\cdot\sigma)=-(\mathbf{P}\cdot\mathbf{Q})\mathrm{I}_2-i(\mathbf{P}\times\mathbf{Q})\cdot\sigma$, whose trace is $-2\,\mathbf{P}\cdot\mathbf{Q}$ because the Pauli matrices are trace-free; this is the formula of <em>The Killing Form of the Antisymmetric Plain Algebra</em>. Verified on general elements. $\square$</p>
+<p><strong>Remark (the two objects of the block).</strong> The model is the smallest faithful representation of the derived algebra, of complex dimension two, and its trace form is the invariant form itself: <strong>the two objects of the block, the bracket and the form, are in this model the commutator and the trace. The identification is the reason the block is called the Lie block.</strong> The scalar matrices, the kernel, are the centre; the trace-free matrices, the image, are the derived algebra; and the two are the two-dimensional model of the decomposition $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>A bracket of two units, in matrices.</strong> $\mathsf{M}_2(e_1)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix}$, $\mathsf{M}_2(e_2)=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ and $\tfrac12[\mathsf{M}_2(e_1),\mathsf{M}_2(e_2)]=\mathsf{M}_2(e_3)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}$: the halved commutator in the two-dimensional model.</p>
+<p><strong>The trace.</strong> $\operatorname{Tr}\mathsf{M}_2(e_1)=0$ and $\operatorname{Tr}\mathsf{M}_2(e_0)=2$: the vector part is trace-free, the centre is the trace direction, split in two.</p>
+<p><strong>A scalar matrix.</strong> $\mathsf{M}_2(ie_0)=i\mathrm{I}_2$, and $\mathsf{M}_2(ie_0\wedge e_1)=0$: the central element is the scalar matrix, and it is in the kernel of the bracket.</p>
+<p><strong>The trace form.</strong> $\operatorname{Tr}(\mathsf{M}_2(e_1)\mathsf{M}_2(e_2))=0$ and $\operatorname{Tr}(\mathsf{M}_2(e_1)\mathsf{M}_2(e_1))=-2$: the trace form on the trace-free matrices is the Gram matrix $\operatorname{diag}(-2,-2,-2)$, the Killing form of the block.</p>
+<h2 id="the-matrices">The Matrices</h2>
+<p><strong>The generators.</strong> The realization is fixed on the basis by four matrices:</p>
+<p>$$
+\mathsf{M}_2(e_0)=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
+\mathsf{M}_2(e_1)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+\mathsf{M}_2(e_2)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+\mathsf{M}_2(e_3)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+$$</p>
+<p>and on a general element by the matrix $\mathsf{M}_2(\tilde Q)$ of trace $2Q_0$ and determinant $N(\tilde Q)$.</p>
+<p><strong>The bracket, entry by entry.</strong> The cross-product relation $\tilde P\wedge\tilde Q$ is the halved commutator, and on the pair of units $e_1,e_2$ it is the matrix identity</p>
+<p>$$
+\tfrac12\bigl[\mathsf{M}_2(e_1),\mathsf{M}_2(e_2)\bigr]
+=\tfrac12\left(
+\begin{pmatrix}0&-i\\-i&0\end{pmatrix}\begin{pmatrix}0&-1\\1&0\end{pmatrix}
+-\begin{pmatrix}0&-1\\1&0\end{pmatrix}\begin{pmatrix}0&-i\\-i&0\end{pmatrix}
+\right)
+=\tfrac12\begin{pmatrix}-2i&0\\0&2i\end{pmatrix}
+=\begin{pmatrix}-i&0\\0&i\end{pmatrix}=\mathsf{M}_2(e_3),
+$$</p>
+<p>which is $e_1\wedge e_2=e_3$ read in the entries.</p>
+<p><strong>The image, entry by entry.</strong> The bracket is pure vector, so every value is traceless in the model: $\operatorname{Tr}\mathsf{M}_2(e_3)=(-i)+(i)=0$, and the image is the space of traceless matrices, of complex dimension three, that is $\mathfrak{sl}(2,\mathbb{C})$; the image is the two-dimensional module on which the Casimir acts by the scalar $\tfrac38$ of <em>The Killing Form of the Antisymmetric Plain Algebra</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>In the two-dimensional model $\mathbb{B}\cong M_2(\mathbb{C})$ the antisymmetric plain algebra is the halved commutator $\mathsf{M}_2(\tilde P\wedge\tilde Q)=\tfrac12[\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)]$, with image the trace-free matrices, identified with $\mathfrak{sl}(2,\mathbb{C})$ and with the derived algebra, and kernel the scalar matrices, identified with the centre; the trace form of the model is the Killing form of the block, $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))=-2\,\mathbf{P}\cdot\mathbf{Q}$ on the derived algebra. The model identifies the derived algebra with $\mathfrak{sl}(2,\mathbb{C})$ as its defining representation, and it exhibits the decomposition $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$ as a kernel and an image.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$</td>
+<td>the two-dimensional model, $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(ie_0)=i\mathrm{I}_2$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde P\wedge\tilde Q)=\tfrac12[\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)]$</td>
+<td>the bracket as the halved matrix commutator</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\mathrm{Vect}(\mathbb{B}))=\{X:\operatorname{Tr}X=0\}\cong\mathfrak{sl}(2,\mathbb{C})$</td>
+<td>the image, the derived algebra</td>
+</tr>
+<tr>
+<td>$\ker\wedge=\mathsf{M}_2^{-1}(\mathbb{C}\mathrm{I}_2)=\mathbb{C}_{\mathbb{B}}$</td>
+<td>the kernel, the centre</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))=\kappa(\tilde P,\tilde Q)$</td>
+<td>the trace form is the Killing form on the derived algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> (<code>articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md</code>), for the construction of the model</li>
+<li><em>The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> (<code>articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation.md</code>), for the plain product in the model</li>
+<li><em>The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</em> (<code>articles_maths/the-antisymmetric-plain-algebra-in-the-4x4-matrix-element-representation.md</code>), for the reading on the regular model and its adjoint representation</li>
+<li><em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.md</code>), for the bracket and the cross-product formula</li>
+<li><em>The Lie Algebra of the Antisymmetric Plain Algebra</em> (<code>articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra.md</code>), for the centre, the derived algebra and the identification with $\mathfrak{sl}(2,\mathbb{C})$</li>
+<li><em>The Killing Form of the Antisymmetric Plain Algebra</em> (<code>articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.md</code>), for the invariant form and its constant relation to the plain form</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

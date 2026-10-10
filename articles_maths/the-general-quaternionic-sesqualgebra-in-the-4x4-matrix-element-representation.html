@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-general-quaternionic-sesqualgebra-in-the-math0-matrix-element-representation-math1"><strong>The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The left regular representation $\mathsf{M}_4$ of <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> carries the two conjugations of the algebra as two matrix operations: the natural conjugation is the <strong>transposition</strong>, $\mathsf{M}_4(\tilde{Q}^{\natural})=\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}$, and the Hermitian conjugation is the <strong>conjugate transpose</strong>, $\mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger}$. This article is the companion of <em>The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, and it reads the group <em>Topology on the Introduction to the General Quaternionic Sesqualgebra of Biquaternions</em> on the regular matrices: the general quaternionic sesquilinear product becomes the transposed conjugate-transposed product, and the Krein form becomes the adjugated conjugate-transpose pairing of the regular matrices, of signature $(2,6)$ and with the adjugate appearing as the scalar factor $N(\tilde{P})$.</p>
+<p>The regular representation has the advantage that the transposition is the operation it already carries, so the fundamental symmetry $J={}^{\natural}$ needs no adjugate here: it is the plain transposition of the regular matrix. The adjugate appears only in the form, where it contributes the factor $N(\tilde{P})$, and on the norm-one slice that factor is one and the pairing is exactly twice the general quaternionic sesquilinear form.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; product $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}^{*}$. All matrix claims of this article are recomputed in the verification script of the pass.</p>
+<h2 id="the-representation">The Representation</h2>
+<p><strong>Definition.</strong> The <strong>left regular matrix</strong> is the isomorphism written $\mathsf{M}_4$. It converts a biquaternion into a $4 \times 4$ complex matrix,</p>
+<p>$$
+\mathsf{M}_4:\mathbb{B}\longrightarrow M_4(\mathbb{C}),
+$$</p>
+<p>and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_0,e_1,e_2,e_3$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. It satisfies</p>
+<p>$$
+\mathsf{M}_4(\tilde{Q}^{\natural})=\mathsf{M}_4(\tilde{Q})^{\mathsf{T}},\qquad \mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger},\qquad \operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_0,\qquad \det\mathsf{M}_4(\tilde{Q})=N(\tilde{Q})^2 ,
+$$</p>
+<p>so the model carries the natural conjugation as the transposition and the Hermitian conjugation as the conjugate transpose.</p>
+<h2 id="the-general-quaternionic-sesquilinear-product-in-the-regular-representation">The General Quaternionic Sesquilinear Product in the Regular Representation</h2>
+<p><strong>Theorem (the transposed conjugate-transposed product).</strong> For all biquaternions,</p>
+<p>$$
+\mathsf{M}_4(\tilde{P}\star\tilde{Q})=\mathsf{M}_4(\tilde{P})^{\mathsf{T}}\,\mathsf{M}_4(\tilde{Q})^{\dagger} ,
+$$</p>
+<p>the product of the transposed first factor with the conjugate-transposed second factor.</p>
+<p><em>Proof.</em> $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}^{*}$, the representation is multiplicative, and it carries the two conjugations to the transposition and the conjugate transpose.</p>
+<p><strong>The fundamental symmetry.</strong> The natural conjugation $J={}^{\natural}$ is the transposition on the regular matrices, $\mathsf{M}_4(\tilde{Q}^{\natural})=\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}$; it is an involution, it is self-adjoint for the Krein form, and its two eigenspaces are the Hermitian and anti-Hermitian subspaces, carried to the symmetric and antisymmetric parts of the regular matrix. The $J$-unitary operators are characterised in the coefficient basis by $\mathsf{M}_4(\tilde{Q})^{*}E\mathsf{M}_4(\tilde{Q})=E$.</p>
+<h2 id="the-general-quaternionic-sesquilinear-form-in-the-regular-representation">The General Quaternionic Sesquilinear Form in the Regular Representation</h2>
+<p><strong>Theorem (the adjugated conjugate-transpose pairing of the regular matrices).</strong> For all biquaternions,</p>
+<p>$$
+\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_4(\tilde{P})^{\dagger}\mathsf{M}_4(\tilde{Q})\bigr) = 2\,\overline{N(\tilde{P})}\,\langle\tilde{P},\tilde{Q}\rangle_{\natural*} ,
+$$</p>
+<p>the general quaternionic sesquilinear form of the algebra multiplied by twice the conjugate of the norm.</p>
+<p><em>Proof.</em> $\operatorname{adj}\mathsf{M}_4(\tilde{P})=N(\tilde{P})\mathsf{M}_4(\tilde{P}^{\natural})$ because $\det\mathsf{M}_4(\tilde{P})=N(\tilde{P})^2$ and $\mathsf{M}_4(\tilde{P})^{-1}=\mathsf{M}_4(\tilde{P}^{\natural})/N(\tilde{P})$; taking conjugate transposes and multiplying gives $\operatorname{adj}\mathsf{M}_4(\tilde{P})^{\dagger}\mathsf{M}_4(\tilde{Q})=\overline{N(\tilde{P})}\,\mathsf{M}_4(\tilde{P}^{\natural})\mathsf{M}_4(\tilde{P})^{\dagger}\mathsf{M}_4(\tilde{Q})$, and the trace identity $\operatorname{Tr}\mathsf{M}_4(\tilde{R})=4\,\mathrm{Sc}(\tilde{R})$ gives the stated factor.</p>
+<p><strong>Corollary (the norm-one slice).</strong> On the group $N=1$ the identity is $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_4(\tilde{P})^{\dagger}\mathsf{M}_4(\tilde{Q}))=2\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$, exactly twice the general quaternionic sesquilinear form, as in the $2\times2$ representation.</p>
+<p><strong>The diagonal and the signature.</strong> On the diagonal the factor is $\overline{N(\tilde{Q})}$, so the form is $\sum_\mu\varepsilon_\mu|Q_\mu|^2$ up to that factor; it has complex inertia $(1,3)$ and real signature $(2,6)$ on the coefficient space, and its isotropic set is the real cone $\sum_\mu\varepsilon_\mu|Q_\mu|^2=0$, of real dimension $7$, distinct from the set of singular regular matrices.</p>
+<p><strong>The automorphism group.</strong> The form is the general quaternionic sesquilinear form of signature $(1,3)$, so its automorphism group is $U(1,3)$; the operators that preserve it are the $J$-unitary operators of <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions</em>, and the realification has automorphism group $O(2,6)$.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>The identity.</strong> Let $\tilde{Q}=e_0$. Then $\mathsf{M}_4(e_0)=I_4$, $\operatorname{adj}I_4=I_4$ and $N(e_0)=1$, so the identity reads $\tfrac12\operatorname{Tr}(I_4)=2=2\langle e_0,e_0\rangle_{\natural*}$.</p>
+<p><strong>A transposed element.</strong> Let $\tilde{Q}=e_1$. Then $\mathsf{M}_4(e_1)^{\mathsf{T}}=\mathsf{M}_4(e_1^{\natural})=-\mathsf{M}_4(e_1)$, so the transposition is realised as a sign change, and $\langle e_1,e_1\rangle_{\natural*}=-1$.</p>
+<p><strong>A Krein-isotropic unit.</strong> Let $\tilde{Q}=e_0+e_1$. Then $N(\tilde{Q})=2\neq0$, so $\tilde{Q}$ is a unit and the regular matrix is invertible, while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1-1=0$: the element is isotropic for the Krein form and a unit, which the general plain sesquilinear form of the other group does not allow.</p>
+<h2 id="the-matrices">The Matrices</h2>
+<p><strong>The generators.</strong> The regular model is fixed on the basis by four matrices:</p>
+<p>$$
+\mathsf{M}_4(e_0)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+\mathsf{M}_4(e_1)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+$$
+$$
+\mathsf{M}_4(e_2)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+\mathsf{M}_4(e_3)=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+$$</p>
+<p>A general element is the block matrix</p>
+<p>$$
+\mathsf{M}_4(\tilde Q)=\begin{pmatrix}A&B\\-B&A\end{pmatrix},\qquad
+A=\begin{pmatrix}Q_0&-Q_1\\Q_1&Q_0\end{pmatrix},\qquad
+B=\begin{pmatrix}-Q_2&-Q_3\\-Q_3&Q_2\end{pmatrix},
+$$</p>
+<p>The general element has trace $4Q_0$ and determinant $N(\tilde Q)^2$.</p>
+<p><strong>The two conjugations, entry by entry.</strong> The transposition and the conjugate transpose agree on the real vector units, which are traceless and anti-Hermitian, $\mathsf{M}_4(e_1)^{\mathsf T}=-\mathsf{M}_4(e_1)=\mathsf{M}_4(e_1)^{\dagger}$; they separate in general, $\mathsf{M}_4(\tilde Q)^{\mathsf T}=\mathsf{M}_4(\tilde Q^{\natural})$ against $\mathsf{M}_4(\tilde Q)^{\dagger}=\mathsf{M}_4(\tilde Q^{*})$, that is $X^{\mathsf T}=\tfrac12(\operatorname{Tr}X)I_4-X$ against the conjugate of that expression.</p>
+<p><strong>The product, entry by entry.</strong> The product is the transposed conjugate-transposed product, and at the pair $e_1,e_2$ the two sign changes cancel,</p>
+<p>$$
+\mathsf{M}_4(e_1\star e_2)=\mathsf{M}_4(e_1)^{\mathsf T}\mathsf{M}_4(e_2)^{\dagger}
+=(-\mathsf{M}_4(e_1))(-\mathsf{M}_4(e_2))=\mathsf{M}_4(e_1)\mathsf{M}_4(e_2)=\mathsf{M}_4(e_3),
+$$</p>
+<p>which is $e_1\star e_2=e_1^{\natural}e_2^{*}=(-e_1)(-e_2)=e_3$, as in the realization.</p>
+<p><strong>The product of a unit with the identity, entry by entry.</strong> The identity is a right unit and not a left one, $I_4\star Y=Y^{\dagger}$ against $Y\star I_4=Y$, and at $Y=\mathsf{M}_4(e_1)$ the left action returns the negative, $\mathsf{M}_4(e_1)^{\dagger}=-\mathsf{M}_4(e_1)$.</p>
+<p><strong>The four words.</strong> The four general products are the four ways of inserting the two conjugations into the two slots of the matrix product, and each is a word in the two regular matrices $X=\mathsf{M}_4(\tilde P)$, $Y=\mathsf{M}_4(\tilde Q)$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>first slot</th>
+<th>second slot</th>
+<th>the word</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plain</td>
+<td>$X$</td>
+<td>$Y$</td>
+<td>$XY$</td>
+</tr>
+<tr>
+<td>general quaternionic</td>
+<td>$X^{\mathsf T}$</td>
+<td>$Y$</td>
+<td>$X^{\mathsf T}Y$</td>
+</tr>
+<tr>
+<td>general plain sesquilinear</td>
+<td>$X$</td>
+<td>$Y^{\dagger}$</td>
+<td>$XY^{\dagger}$</td>
+</tr>
+<tr>
+<td>general quaternionic sesquilinear</td>
+<td>$X^{\mathsf T}$</td>
+<td>$Y^{\dagger}$</td>
+<td>$X^{\mathsf T}Y^{\dagger}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>the transposition replacing the adjugate of the realization and the fourth word carrying one transposition and one conjugate transpose.</p>
+<p><strong>The form, entry by entry.</strong> The form is the adjugated conjugate-transpose pairing of the regular matrices, $\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_4(\tilde P)^{\dagger}\mathsf{M}_4(\tilde Q)\bigr)=2\overline{N(\tilde P)}\langle\tilde P,\tilde Q\rangle_{\natural*}$, and at the pair $e_1,e_1$, where the norm is one, it reads $\tfrac12\operatorname{Tr}(\mathsf{M}_4(e_1)\mathsf{M}_4(e_1))=\tfrac12\operatorname{Tr}(-I_4)=-2=2\langle e_1,e_1\rangle_{\natural*}$, the factor two being the ratio of the traces of the two models.</p>
+<h2 id="summary">Summary</h2>
+<p>The left regular representation carries the natural conjugation as the transposition and the Hermitian conjugation as the conjugate transpose, so the general quaternionic sesquilinear product is the transposed conjugate-transposed product $\mathsf{M}_4(\tilde{P}\star\tilde{Q})=\mathsf{M}_4(\tilde{P})^{\mathsf{T}}\mathsf{M}_4(\tilde{Q})^{\dagger}$, whose fundamental symmetry is the plain transposition. The general quaternionic sesquilinear form of the group is the adjugated conjugate-transpose pairing $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_4(\tilde{P})^{\dagger}\mathsf{M}_4(\tilde{Q}))=2\overline{N(\tilde{P})}\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$, which on the norm-one slice is exactly twice the form; it has complex inertia $(1,3)$ and real signature $(2,6)$, its isotropic set is the real cone of real dimension $7$, and its automorphism group is the indefinite unitary group $U(1,3)$, of realification $O(2,6)$. The invariants of the regular matrix are the trace $4Q_0$ and the determinant $N(\tilde{Q})^2$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_4(\tilde{Q})$</td>
+<td>the $4\times4$ regular matrix, $\operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_0$, $\det\mathsf{M}_4(\tilde{Q})=N(\tilde{Q})^2$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4(\tilde{Q}^{\natural})=\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}$</td>
+<td>the natural conjugation is the transposition, the fundamental symmetry</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4(\tilde{P}\star\tilde{Q})=\mathsf{M}_4(\tilde{P})^{\mathsf{T}}\mathsf{M}_4(\tilde{Q})^{\dagger}$</td>
+<td>the general quaternionic sesquilinear product</td>
+</tr>
+<tr>
+<td>$\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_4(\tilde{P})^{\dagger}\mathsf{M}_4(\tilde{Q}))=2\overline{N(\tilde{P})}\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$</td>
+<td>the general quaternionic sesquilinear form on the regular matrices</td>
+</tr>
+<tr>
+<td>$(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$</td>
+<td>the inertia and the real signature</td>
+</tr>
+<tr>
+<td>$U(1,3)$, $O(2,6)$</td>
+<td>the automorphism group and its realification</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> (<code>articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md</code>), for the representation and its first properties</li>
+<li><em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> (<code>articles_maths/the-4x4-matrix-element-representation-of-biquaternions.md</code>), for the further reading of the regular representation</li>
+<li><em>The Krein Gram Matrix and the Restrictions of the Form</em> (<code>articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md</code>), for the form on the algebra</li>
+<li><em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions</em> (<code>articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra-of-biquaternions.md</code>), for the operators of the form</li>
+<li><em>The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> (<code>articles_maths/the-general-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.md</code>), for the companion reading of the group</li>
+<li><em>Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions</em> (<code>articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.md</code>), for the restriction theory of the form</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

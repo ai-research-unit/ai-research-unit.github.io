@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetric Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetric-quaternionic-sesqualgebra-in-the-math0-matrix-element-representation-math1"><strong>The Symmetric Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra has two matrix models, the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ and the regular representation on the four complex coefficients, and this article writes the symmetric quaternionic sesquilinear product in the second. In the four-by-four regular model the left regular matrix $\mathsf{M}_4(\tilde Q)$ satisfies $\mathsf{M}_4(\tilde Q^{\natural})=\mathsf{M}_4(\tilde Q)^{\mathsf T}$ and $\mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger}$, and the block, being the half-sum of the two orders, becomes the <strong>symmetrisation of the twisted matrix product</strong>:</p>
+<p>$$
+\mathsf{M}_4(\tilde P\star\tilde Q)=\tfrac12\bigl(\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde Q)^{\dagger}+\mathsf{M}_4(\tilde Q)^{\dagger}\mathsf{M}_4(\tilde P)^{\mathsf T}\bigr).
+$$</p>
+<p>This article is the second of the two representation articles of the block, and its companion <em>The Symmetric Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> reads the same symmetrisation on the realization. The article computes the trace, the determinant and the rank of the regular matrix form, and the matrix form of the Krein form $K$, whose Gram matrix and indefinite cone live in the $2\times2$ companion.</p>
+<p>The model is <em>The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</em>; the form $K$ is <em>The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra</em>; the diagonal and its centrality are <em>The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra</em>; and the product is <em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em>.</p>
+<p><strong>Conventions.</strong> $M^{\mathsf T}$ is the transpose and $M^{\dagger}$ the conjugate transpose; $N(\tilde Q)=\tilde Q^{\natural}\tilde Q=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$ is the norm and $\det\mathsf{M}_4(\tilde Q)=N(\tilde Q)^{2}$; the coefficient basis is $e_0,e_1,e_2,e_3$.</p>
+<h2 id="the-four-by-four-regular-model">The Four-by-Four Regular Model</h2>
+<p><strong>Theorem (the product formula).</strong> In the regular representation,</p>
+<p>$$
+\mathsf{M}_4(\tilde P\star\tilde Q)=\tfrac12\bigl(\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde Q)^{\dagger}+\mathsf{M}_4(\tilde Q)^{\dagger}\mathsf{M}_4(\tilde P)^{\mathsf T}\bigr).
+$$</p>
+<p><em>Proof.</em> The left regular matrix is multiplicative, $\mathsf{M}_4(\tilde X\tilde Y)=\mathsf{M}_4(\tilde X)\mathsf{M}_4(\tilde Y)$, and it carries the natural conjugation to the transpose and the star conjugation to the conjugate transpose; applying it to the two orders of $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ gives the display. Verified on random pairs. $\square$</p>
+<p><strong>Theorem (the invariants).</strong> For all biquaternions,</p>
+<p>$$
+\operatorname{Tr}\mathsf{M}_4(\tilde P\star\tilde Q)=4K(\tilde P,\tilde Q),
+\qquad
+\det\mathsf{M}_4(\tilde P\star\tilde Q)=N(\tilde P\star\tilde Q)^{2},
+$$</p>
+<p>and the rank of $\mathsf{M}_4(\tilde P\star\tilde Q)$ is four exactly when $N(\tilde P\star\tilde Q)\neq0$.</p>
+<p><em>Proof.</em> The trace of the regular matrix is four times the scalar part, so the trace of the half-sum is $4K$; the determinant of the regular matrix is $N(\tilde X)^{2}$, so the determinant of the value is $N(\tilde P\star\tilde Q)^{2}$; and a four-by-four matrix has rank four exactly when its determinant is nonzero. Verified on the model. $\square$</p>
+<p><strong>Corollary (the trace of the operator in the model).</strong> The trace of the value is the same invariant in the two models up to the factor of the model: it is $2K$ in the two-by-two model and $4K$ in the four-by-four model.</p>
+<p><em>Proof.</em> The two displays of the trace theorems, here and in the companion article. $\square$</p>
+<p><strong>Remark (the diagonal in the regular model).</strong> The diagonal is read in the regular model by applying $\mathsf{M}_4$ to the diagonal form $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$ of <em>The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra</em>: $\mathsf{M}_4(\tilde Q\star\tilde Q)=K(\tilde Q,\tilde Q)I_4-\mathsf{M}_4(Q_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{Q})$, the scalar matrix of the form value minus the matrix of the mixed term. On the vector witnesses $e_1$ and $e_1+ie_2$ the mixed term vanishes and the value is the scalar matrix $-I_4$ or $-2I_4$; the deformation away from the scalar matrices appears at $e_0+e_1$, as in the companion article.</p>
+<h2 id="the-matrix-form-of-math41-and-its-cone">The Matrix Form of $K$ and Its Cone</h2>
+<p><strong>Theorem (the form in the model).</strong> In the regular model the Krein form is read from the trace of the regular matrices,</p>
+<p>$$
+K(\tilde P,\tilde Q)=\tfrac14\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde Q)^{\dagger}\bigr),
+$$</p>
+<p>the trace of the <strong>one-order</strong> twisted product, the first term of the symmetrised block; equivalently $\operatorname{Tr}\mathsf{M}_4(\tilde P\star\tilde Q)=4K(\tilde P,\tilde Q)$ for the symmetrised block.</p>
+<p><em>Proof.</em> The trace of the regular matrix is four times the scalar part, so $\operatorname{Tr}(\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde Q)^{\dagger})=\operatorname{Tr}\mathsf{M}_4(\tilde P^{\natural}\tilde Q^{*})=4K(\tilde P,\tilde Q)$. $\square$</p>
+<p><strong>Remark (the indefinite cone in the regular model).</strong> The image of the isotropic cone of $K$ under $\mathsf{M}_4$ is the set of regular matrices $\{\mathsf{M}_4(\tilde P):\ |P_0|^{2}=\sum_{k=1}^{3}|P_k|^{2}\}$, a cone through the origin whose elements are exactly the values $\mathsf{M}_4(\tilde P)$ with $\operatorname{Tr}\mathsf{M}_4(\tilde P^{\natural}\tilde P^{*})=0$; the cone and the Gram matrix $E=\operatorname{diag}(1,-1,-1,-1)$ are read in the $2\times2$ companion and in <em>The Krein Gram Matrix and the Restrictions of the Form</em>.</p>
+<p><strong>Remark.</strong> The matrix form of the form is the transpose-twisted trace pairing; the indefinite cone is the cone of the elements of zero form value, mapped into the matrix algebra. The form itself, its Gram matrix and its cone, independently of the models, are in <em>The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra</em> and <em>The Krein Gram Matrix and the Restrictions of the Form</em>.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>A diagonal in the model.</strong> $e_1\star e_1=-e_0$: $\mathsf{M}_4=-I_4$, trace $-4=4K(e_1,e_1)=4(-1)$, determinant $1=N(-e_0)^{2}=1$, rank four.</p>
+<p><strong>A null diagonal.</strong> $(e_1+ie_2)\star(e_1+ie_2)=-2e_0$: $\mathsf{M}_4=-2I_4$, trace $-8=4(-2)$, determinant $16=N(-2e_0)^{2}=16$.</p>
+<p><strong>The non-scalar diagonal.</strong> $(e_0+e_1)\star(e_0+e_1)=-2e_1$: $\mathsf{M}_4=-2\mathsf{M}_4(e_1)$, trace $0=4K(e_0+e_1,e_0+e_1)=4\cdot0$, determinant $4=N(-2e_1)^{2}=4$.</p>
+<p><strong>A vanishing product in the model.</strong> $e_2\star e_1=0$: $\mathsf{M}_4=0$, trace $0$, rank zero.</p>
+<p><strong>The form recovered.</strong> $K(e_0,e_1)=0$: $\tfrac14\operatorname{Tr}(\mathsf{M}_4(e_0)^{\mathsf T}\mathsf{M}_4(e_1)^{\dagger})=\tfrac14\operatorname{Tr}\mathsf{M}_4(-e_1)=0$, $-e_1$ being traceless in the regular model.</p>
+<p><strong>The cone.</strong> $e_0+e_1$ is isotropic: $|1|^{2}=|1|^{2}$, and $\mathsf{M}_4(e_0+e_1)$ lies in the image cone.</p>
+<h2 id="the-matrices">The Matrices</h2>
+<p><strong>The generators.</strong> The regular model is fixed on the basis by four matrices:</p>
+<p>$$
+\mathsf{M}_4(e_0)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+\mathsf{M}_4(e_1)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+$$
+$$
+\mathsf{M}_4(e_2)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+\mathsf{M}_4(e_3)=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+$$</p>
+<p>A general element is the block matrix</p>
+<p>$$
+\mathsf{M}_4(\tilde Q)=\begin{pmatrix}A&B\\-B&A\end{pmatrix},\qquad
+A=\begin{pmatrix}Q_0&-Q_1\\Q_1&Q_0\end{pmatrix},\qquad
+B=\begin{pmatrix}-Q_2&-Q_3\\-Q_3&Q_2\end{pmatrix},
+$$</p>
+<p>The general element has trace $4Q_0$ and determinant $N(\tilde Q)^2$.</p>
+<p><strong>The twisted product, entry by entry.</strong> The block is the symmetrisation of the transposed conjugate-transposed product, and at the pair $e_1,e_1$ the product is the negative identity,</p>
+<p>$$
+\mathsf{M}_4(e_1)^{\mathsf T}\mathsf{M}_4(e_1)^{\dagger}
+=(-\mathsf{M}_4(e_1))(-\mathsf{M}_4(e_1))=\mathsf{M}_4(e_1)^2=-I_4=\mathsf{M}_4(e_1\star e_1),
+$$</p>
+<p>since $e_1\star e_1=-e_0$; and at the pair $e_1+ie_2,\,e_1+ie_2$ the symmetrised value is the scalar matrix $-2I_4=K(e_1+ie_2,e_1+ie_2)I_4$, the same scalar $-2$ as in the realization, the two models differing only in the size of the matrix.</p>
+<p><strong>The two models.</strong> At the vector witnesses, where the mixed term $Q_0\overline{\mathbf Q}+\overline{Q_0}\mathbf Q$ vanishes, the symmetrised value is the scalar matrix of the Krein form in both models, with the adjugate in the first slot of the realization and the transpose in the first slot of the regular model; away from those witnesses the value is the scalar matrix of the form minus the matrix of the mixed term, the deformation of <em>The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra</em>. The entrywise value $-I_4$ at the vector unit $e_1$ is the same statement in the regular model as the value $-I$ in the realization.</p>
+<h2 id="summary">Summary</h2>
+<p>In the four-by-four regular model the block is the symmetrisation of the twisted matrix product, $\mathsf{M}_4(\tilde P\star\tilde Q)=\tfrac12(\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde Q)^{\dagger}+\mathsf{M}_4(\tilde Q)^{\dagger}\mathsf{M}_4(\tilde P)^{\mathsf T})$, with trace $4K$, determinant $N(\tilde P\star\tilde Q)^{2}$ and rank four off the degeneracy set. The diagonal is the scalar matrix of the form value minus the matrix of the mixed term; on the two witnesses $e_1$ and $e_1+ie_2$ it is the scalar matrices $-I_4$ and $-2I_4$, and the deformation away from the scalar matrices appears at $e_0+e_1$. The Krein form is read from the trace of the regular matrices, $\operatorname{Tr}\mathsf{M}_4(\tilde P\star\tilde Q)=4K(\tilde P,\tilde Q)$, and its indefinite cone maps into the regular matrices of zero form value; the Gram matrix $E=\operatorname{diag}(1,-1,-1,-1)$ is read in the $2\times2$ companion.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_4(\tilde Q)$</td>
+<td>the left regular representation; $\mathsf{M}_4({}^{\natural})={}^{\mathsf T}$, $\mathsf{M}_4({}^{*})={}^{\dagger}$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4(\tilde P\star\tilde Q)=\tfrac12(\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde Q)^{\dagger}+\mathsf{M}_4(\tilde Q)^{\dagger}\mathsf{M}_4(\tilde P)^{\mathsf T})$</td>
+<td>the block in the regular model</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}\mathsf{M}_4(\tilde P\star\tilde Q)=4K$, $\det\mathsf{M}_4=N^{2}$</td>
+<td>trace and determinant in the regular model</td>
+</tr>
+<tr>
+<td>$K(\tilde P,\tilde Q)=\tfrac14\operatorname{Tr}(\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde Q)^{\dagger})$</td>
+<td>the form read from the regular trace</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</em> (<code>articles_maths/the-general-quaternionic-sesqualgebra-in-the-4x4-matrix-element-representation.md</code>), for the regular model.</li>
+<li><em>The Symmetric Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> (<code>articles_maths/the-symmetric-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.md</code>), for the reading on the realization, the diagonal and the Gram matrix.</li>
+<li><em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md</code>), for the product written in the models.</li>
+<li><em>The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md</code>), for the diagonal, its centrality and the witnesses.</li>
+<li><em>The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.md</code>), for the form $K$, its Gram matrix and its cone.</li>
+<li><em>The Krein Gram Matrix and the Restrictions of the Form</em> (<code>articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md</code>), for the Gram matrix of the form.</li>
+<li><em>The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.md</code>), for the operators of the block and their traces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

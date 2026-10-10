@@ -77,7 +77,7 @@ Q_2 & Q_3 & Q_0 & -Q_1 \\
 Q_3 & -Q_2 & Q_1 & Q_0
 \end{pmatrix},
 $$</p>
-<p>the Cayley matrix of <em>Introduction to the 4×4 Matrix Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. Each entry is a single coefficient of $\tilde{Q}$ carrying a sign, and <strong>no entry is a sum of two or more coefficients</strong>, because in this basis every product of basis elements is one basis element times a sign.</p>
+<p>the Cayley matrix of <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. Each entry is a single coefficient of $\tilde{Q}$ carrying a sign, and <strong>no entry is a sum of two or more coefficients</strong>, because in this basis every product of basis elements is one basis element times a sign.</p>
 <p><strong>Proof (the general matrix).</strong> The columns are the products $\tilde{Q}e_m$ expressed in the basis. For $m = 0$ the image is $\tilde{Q}$ itself, giving the first column $(Q_0, Q_1, Q_2, Q_3)$. For $m = k \geq 1$ one uses $e_0e_k = e_k$ and $e_je_k = \epsilon^{ijk}e_i$ for $j \neq k$ with $\{i,j,k\} = \{1,2,3\}$, so that</p>
 <p>$$
 \tilde{Q}e_k = Q_0e_k + Q_ke_k^2 + \sum_{j \neq k} Q_je_je_k = Q_0e_k - Q_ke_0 + \sum_{j \neq k} \epsilon^{ijk}Q_je_i .
@@ -369,8 +369,8 @@ $$</p>
 \det\mathsf{M}_4^{L}(\tilde{\nabla}) = \Box^2 ,
 $$</p>
 <p>because the two chiral blocks are similar and each carries one factor. This is the algebraic content of the square root: a first-order matrix acting on the spinor module has the second-order d'Alembertian as determinant, and the doubling of the regular module is where the two chiral copies of the first-order matrix come from. The conventions of the mass term are those of <em>Conventions in the Biquaternion Universe</em>, and the wave equations built on it are the subject of the wave-mechanics articles.</p>
-<h2 id="the-six-subspaces">The Six Subspaces</h2>
-<p>Each of the algebra's six distinguished subspaces has its own simplified regular matrix, obtained by substituting that subspace's parametrisation into the general matrix of the first section. The parametrisations are those of <em>Conventions in the Biquaternion Universe</em>: the complex coefficients are $Q_\mu = q_\mu + iq'_\mu$ with $q_\mu, q'_\mu$ real, and the physical coordinates are $ct, \mathbf{x}$ on the material side and $ct', \mathbf{x}'$ on the informational one.</p>
+<h2 id="remarkable-subspaces">Remarkable Subspaces</h2>
+<p>Each of the algebra's remarkable subspaces has its own simplified regular matrix, obtained by substituting that subspace's parametrisation into the general matrix of the first section. The parametrisations are those of <em>Conventions in the Biquaternion Universe</em>: the complex coefficients are $Q_\mu = q_\mu + iq'_\mu$ with $q_\mu, q'_\mu$ real, and the physical coordinates are $ct, \mathbf{x}$ on the material side and $ct', \mathbf{x}'$ on the informational one.</p>
 <p>Each subspace is displayed as a three-step chain: the general matrix in the complex coefficients $Q_\mu$, the same matrix with that subspace's real parameters substituted, and the same matrix in the physical coordinates, under the one dictionary</p>
 <p>$$
 q_0 = ct', \quad q'_0 = ct, \quad q_1 = x, \quad q_2 = y, \quad q_3 = z, \quad q'_1 = x', \quad q'_2 = y', \quad q'_3 = z' ,
@@ -384,7 +384,7 @@ $$</p>
 <p>$$
 \operatorname{Tr}\mathsf{M}_4^{L} = 4(ct' + ict), \qquad \det\mathsf{M}_4^{L} = (ct' + ict)^4 .
 $$</p>
-<p>It is the locus on which left and right multiplication coincide, which is what the corollary <em>the difference vanishes exactly on the centre</em> says on the six subspaces: the centre is exactly where $\mathsf{M}_4^{L}(\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q})$.</p>
+<p>It is the locus on which left and right multiplication coincide, which is what the corollary <em>the difference vanishes exactly on the centre</em> says on the remarkable subspaces: the centre is exactly where $\mathsf{M}_4^{L}(\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q})$.</p>
 <p><strong>The vector subspace $\mathrm{Vect}(\mathbb{B})$.</strong> The scalar coefficient vanishes, $Q_0 = 0$, so the matrix is traceless, and the chain runs over the three complex spatial coefficients,</p>
 <p>$$
 \mathsf{M}_4^{L}(\tilde{Q}) = \begin{pmatrix} 0 & -Q_1 & -Q_2 & -Q_3 \\ Q_1 & 0 & -Q_3 & Q_2 \\ Q_2 & Q_3 & 0 & -Q_1 \\ Q_3 & -Q_2 & Q_1 & 0 \end{pmatrix}

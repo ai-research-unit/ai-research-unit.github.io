@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetric-plain-algebra-in-the-math0-matrix-element-representation-math1"><strong>The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of <em>Introduction to the Symmetric Plain Algebra of Biquaternions</em>. This article reads the block in the $4\times4$ left regular representation $\mathsf{M}_4$ of <em>The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</em>; it is the second of the two representation articles of the block, and its companion <em>The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> repeats the reading on the realization $\mathsf{M}_2$.</p>
+<p>The transport is short because the symmetrisation of the plain product becomes the symmetrisation of the regular matrix product: the plain product is the matrix product, so the block's product is the half-sum of a regular matrix and its exchanged product. What the regular model adds is the matrix reading of every notion at once — the square as an ordinary matrix square, the quadratic identity as a degree-two factor of the squared characteristic polynomial, the idempotents as regular projectors, the isotropic cone as the singular matrices, the elements of square zero as the nilpotent matrices, the trace form as a quarter of the matrix trace — and the squared characteristic polynomial in which the regular matrix sees the quadratic identity twice.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$; an element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the generic norm is $N(\tilde Q)=\sum_\mu Q_\mu^2$ and the trace form is $\tau(\tilde P,\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$. The regular representation is $L_{\tilde Q}(\tilde R)=\tilde Q\tilde R$, with $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=4Q_0$, $\det\mathsf{M}_4(\tilde Q)=N(\tilde Q)^2$, $\mathsf{M}_4^{R}(\tilde Q)=E\mathsf{M}_4(\tilde Q)^{\mathsf T}E$ and $\mathsf{M}_4(\tilde Q^{\natural})=\mathsf{M}_4(\tilde Q)^{\mathsf T}$. The matrices $\mathsf{M}_4(\tilde Q)$ and $\mathsf{M}_4^{R}(\tilde Q)$ are the plain and right regular matrices of <em>The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</em>.</p>
+<h2 id="the-symmetrisation-of-the-regular-matrix-product">The Symmetrisation of the Regular Matrix Product</h2>
+<p><strong>Theorem.</strong> The block's product becomes the symmetrisation of the regular matrix product:</p>
+<p>$$
+\mathsf{M}_4\bigl(\tilde P\bullet\tilde Q\bigr)=\tfrac12\bigl(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)+\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde P)\bigr),\qquad
+\mathsf{M}_4^{R}\bigl(\tilde P\bullet\tilde Q\bigr)=\tfrac12\bigl(\mathsf{M}_4^{R}(\tilde P)\mathsf{M}_4^{R}(\tilde Q)+\mathsf{M}_4^{R}(\tilde Q)\mathsf{M}_4^{R}(\tilde P)\bigr).
+$$</p>
+<p><em>Proof.</em> $\mathsf{M}_4$ is an algebra homomorphism, $\mathsf{M}_4(\tilde P\bullet\tilde Q)=\tfrac12(\mathsf{M}_4(\tilde P\tilde Q)+\mathsf{M}_4(\tilde Q\tilde P))=\tfrac12(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)+\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde P))$, and the same computation holds for $\mathsf{M}_4^{R}$. Verified on the model. $\square$</p>
+<p><strong>Remark (the regular model and its invariants).</strong> The $4\times4$ model is the direct sum of two copies of the $2\times2$ realization, carried by the coefficient space. <strong>The model turns the block into the symmetrisation of the regular matrix algebra</strong>, and its invariants are the dimension multiples of the ones of the realization: the trace is $4Q_0$ against $2Q_0$ and the determinant is $N^2$ against $N$. The relation of the two transports is read in <em>Biquaternion Objects and Their Matrix Correspondences</em>.</p>
+<h2 id="the-square-and-the-polarisation">The Square and the Polarisation</h2>
+<p><strong>Theorem (the square).</strong> The square of the block is the matrix square:</p>
+<p>$$
+\mathsf{M}_4\bigl(\tilde Q\bullet\tilde Q\bigr)=\mathsf{M}_4(\tilde Q)^2 .
+$$</p>
+<p><em>Proof.</em> The square of the block is the plain square $\tilde Q^2$ by <em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>, and the model is multiplicative on the plain product. Verified on the model. $\square$</p>
+<p><strong>Remark (the regular matrix and the squared polynomial).</strong> The characteristic polynomial of the regular matrix is the <strong>square</strong> of the quadratic:</p>
+<p>$$
+\det\bigl(\lambda I-\mathsf{M}_4(\tilde Q)\bigr)=\bigl(\lambda^2-2Q_0\lambda+N(\tilde Q)\bigr)^2,
+$$</p>
+<p>because the regular module is the direct sum of the two copies of the simple module, so each eigenvalue of $\mathsf{M}_2(\tilde Q)$ occurs twice. The trace $4Q_0$ and the determinant $N^2$ of $\mathsf{M}_4(\tilde Q)$ are the two coefficients of the squared polynomial that the dimension allows to be read; <strong>the quadratic identity is a degree-two statement in the model, and the regular matrix sees it twice.</strong> The quadratic identity itself is carried by the transport of the square, $\mathsf{M}_4(\tilde Q)^2-2Q_0\mathsf{M}_4(\tilde Q)+N(\tilde Q)I=0$. Verified on the model.</p>
+<p><strong>Theorem (the quadratic form and the trace form).</strong> The quadratic trace and the trace form become scaled matrix traces:</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde Q\bullet\tilde Q\bigr)=\tfrac14\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde Q)^2\bigr),\qquad
+\tau(\tilde P,\tilde Q)=\tfrac14\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)\bigr).
+$$</p>
+<p><em>Proof.</em> $\mathrm{Sc}(\tilde Q^2)=\tfrac14\operatorname{Tr}(\mathsf{M}_4(\tilde Q)^2)$ is the trace pairing of the regular model evaluated on $\tilde Q=\tilde P$, because $\operatorname{Tr}\mathsf{M}_4(\tilde Q^2)=4\operatorname{Sc}(\tilde Q^2)$; for the general form, $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$ and $\tfrac14\operatorname{Tr}(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q))=\mathrm{Sc}(\tilde P\tilde Q)$. The trace of the regular matrices is four times the form. Verified on the model. $\square$</p>
+<p><strong>Remark (the polarisation on the matrices).</strong> The quadratic form $\tilde Q\mapsto\tfrac14\operatorname{Tr}(\mathsf{M}_4(\tilde Q)^2)$ polarises to the bilinear form $\tfrac14\operatorname{Tr}(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q))$, and the product is recovered from the square by polarisation: $\mathsf{M}_4(\tilde P\bullet\tilde Q)=\tfrac12\bigl(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)+\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde P)\bigr)$, equivalently $\tfrac12$ times the polarisation of the regular matrix square. <strong>The degree-two structure of the block is the Cayley–Hamilton structure of the regular matrices</strong>, and the polarisation that recovers the product from the form is <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em>. Verified on the model.</p>
+<h2 id="the-idempotents-in-the-regular-model">The Idempotents in the Regular Model</h2>
+<p><strong>Theorem.</strong> An idempotent $\tilde\Pi$ gives the regular projector $\mathsf{M}_4(\tilde\Pi)$ of trace $4\Pi_0=2$ and rank two, with the eigenvalues $1,1,0,0$; the two copies of the simple module carry one projector each.</p>
+<p><em>Proof.</em> $\mathsf{M}_4(\tilde\Pi)^2=\mathsf{M}_4(\tilde\Pi)$ by the transport of the square, so the regular matrix is a projector, of trace $\operatorname{Tr}\mathsf{M}_4(\tilde\Pi)=4\Pi_0=2$ for a non-trivial idempotent; the regular module is the direct sum of the two copies of the simple module, and on each copy the projector has rank one, so the rank is two and the eigenvalues are $1,1,0,0$. Verified on the model. $\square$</p>
+<p><strong>Remark (the regular projector and the realization).</strong> The regular projector is the direct sum of the two rank-one projectors $\mathsf{M}_2(\tilde\Pi)$ of the two copies of the simple module, and it is why the trace doubles and the rank doubles with respect to the $2\times2$ realization. The Hermitian idempotents give the Hermitian regular projectors, and the non-Hermitian ones the non-Hermitian regular projectors, by the transport of the two conjugations; the Peirce decomposition is that of <em>Biquaternion Ideals and Peirce Decomposition</em>. Verified on the model.</p>
+<h2 id="the-isotropic-cone">The Isotropic Cone</h2>
+<p><strong>Theorem (the determinant and the norm).</strong> The generic norm is a determinant:</p>
+<p>$$
+\det\mathsf{M}_4(\tilde Q)=N(\tilde Q)^2 .
+$$</p>
+<p><em>Proof.</em> The determinant of the regular matrix is the square of the determinant of the realization, because the regular module is the direct sum of the two copies of the simple module. Verified on the model. $\square$</p>
+<p><strong>Theorem (the isotropic elements).</strong> The isotropic cone of the block is the set of <strong>singular matrices</strong>:</p>
+<p>$$
+N(\tilde Q)=0\iff\mathsf{M}_4(\tilde Q)\ \text{singular}.
+$$</p>
+<p><em>Proof.</em> $\det\mathsf{M}_4(\tilde Q)=N(\tilde Q)^2$; a matrix is singular exactly when its determinant vanishes. Verified on the model. $\square$</p>
+<p><strong>Remark (the rank of the isotropic matrices).</strong> A non-zero isotropic element has a non-zero singular matrix of <strong>rank two</strong>, the two copies of the simple module carrying one vanishing direction each. <strong>The isotropic cone of the block is the cone of the rank-two matrices of the regular model</strong>, and the zero divisors are the rank-two matrices; the description of <em>Biquaternion Zero Divisors</em> is the same list. Verified on the model.</p>
+<p><strong>Theorem (the elements of square zero).</strong> The elements of square zero are exactly the <strong>nilpotent</strong> matrices:</p>
+<p>$$
+\tilde Q\bullet\tilde Q=0\iff\mathsf{M}_4(\tilde Q)^2=0 .
+$$</p>
+<p><em>Proof.</em> $\mathsf{M}_4(\tilde Q\bullet\tilde Q)=\mathsf{M}_4(\tilde Q)^2$ by the transport of the square, so the square of the block vanishes exactly when the regular matrix square vanishes; the regular matrix has vanishing square exactly when its two simple blocks do, so the two conditions agree. Verified on the model. $\square$</p>
+<p><strong>Remark (the isotropic matrices split into the nilpotent and the non-nilpotent).</strong> The isotropic cone is the union of the origin, the <strong>nilpotent</strong> matrices, which are the images of the elements of square zero, and the <strong>singular non-nilpotent</strong> matrices, which are the images of the isotropic elements that are not of square zero. The element $e_1+ie_2$ is of square zero, and $\mathsf{M}_4(e_1+ie_2)$ is nilpotent of trace $0$ and of rank two; the element $e_0+ie_1$ is isotropic without being of square zero, and $\mathsf{M}_4(e_0+ie_1)$ is singular of rank two and of trace $4$, not nilpotent. <strong>The model description of the isotropic cone is the nilpotent matrices together with the singular matrices of non-zero trace.</strong> Verified on the witnesses.</p>
+<h2 id="the-trace-form-and-the-operators">The Trace Form and the Operators</h2>
+<p><strong>Theorem (the multiplication operator).</strong> The multiplication operator of the block becomes the <strong>symmetrised multiplication</strong> of the regular matrix:</p>
+<p>$$
+\mathsf{M}_4\bigl(L^{\bullet}_{\tilde A}\tilde Q\bigr)=\tfrac12\bigl(\mathsf{M}_4(\tilde A)\mathsf{M}_4(\tilde Q)+\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde A)\bigr),
+$$</p>
+<p>so the operator $L^{\bullet}_{\tilde A}$ is carried to the map $M\mapsto\tfrac12(\mathsf{M}_4(\tilde A)M+M\mathsf{M}_4(\tilde A))$ on the image of $\mathsf{M}_4$.</p>
+<p><em>Proof.</em> Apply $\mathsf{M}_4$ to $L^{\bullet}_{\tilde A}\tilde Q=\tfrac12(\tilde A\tilde Q+\tilde Q\tilde A)$ and use the multiplicativity of $\mathsf{M}_4$. Verified on the model. $\square$</p>
+<p><strong>Theorem (the invariants of the operator).</strong> The trace and the determinant of the operator are the matrix invariants</p>
+<p>$$
+\operatorname{Tr}\bigl(L^{\bullet}_{\tilde A}\bigr)=\operatorname{Tr}\mathsf{M}_4(\tilde A)=4A_0,\qquad
+\det\bigl(L^{\bullet}_{\tilde A}\bigr)=A_0^2N(\tilde A).
+$$</p>
+<p><em>Proof.</em> The operator is the sum of the two maps $M\mapsto\tfrac12\mathsf{M}_4(\tilde A)M$ and $M\mapsto\tfrac12 M\mathsf{M}_4(\tilde A)$. On the four-dimensional space each one-sided map has trace $\operatorname{Tr}\mathsf{M}_4(\tilde A)=4A_0$, so each half has trace $2A_0$ and the sum has trace $4A_0$; the determinant $A_0^2N(\tilde A)$ is that of <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, recomputed in the model. Verified on the model. $\square$</p>
+<p><strong>Remark (the operator and the trace form).</strong> The multiplication operator of the block is the <strong>average of the two one-sided regular matrix multiplications</strong>, and its trace is the trace of the regular matrix and not twice it. The trace form is a quarter of the matrix trace of the product, $\tau(\tilde P,\tilde Q)=\tfrac14\operatorname{Tr}(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q))$, while the trace of the product of the two plain operators is $\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=4\tau(\tilde P,\tilde Q)$; the two agree in the model exactly when the operator trace coincides with the form. <strong>The model carries the operators to the symmetrised regular matrix multiplications and the trace form to a quarter of the trace of the matrix product</strong>, and the transport agrees with the coordinate computation. Verified on the model with random pairs.</p>
+<h2 id="the-derivations-and-the-automorphisms">The Derivations and the Automorphisms</h2>
+<p><strong>Theorem (the derivations).</strong> The inner derivations are the <strong>matrix commutators</strong>:</p>
+<p>$$
+\mathsf{M}_4\bigl(\tfrac14\operatorname{ad}_{\tilde C}\tilde X\bigr)=\tfrac14\bigl[\mathsf{M}_4(\tilde C),\mathsf{M}_4(\tilde X)\bigr],
+$$</p>
+<p>so the derivation algebra of the block is carried to the commutator algebra of the trace-zero regular matrices, of complex dimension three.</p>
+<p><em>Proof.</em> $\operatorname{ad}_{\tilde C}=L_{\tilde C}-R_{\tilde C}$ and $\mathsf{M}_4(L_{\tilde C}\tilde X-R_{\tilde C}\tilde X)=\mathsf{M}_4(\tilde C\tilde X-\tilde X\tilde C)=\mathsf{M}_4(\tilde C)\mathsf{M}_4(\tilde X)-\mathsf{M}_4(\tilde X)\mathsf{M}_4(\tilde C)=[\mathsf{M}_4(\tilde C),\mathsf{M}_4(\tilde X)]$; the factor $\tfrac14$ is the one of <em>The Multiplication Operators of the Symmetric Plain Algebra</em>. Verified on the model. $\square$</p>
+<p><strong>Theorem (the automorphisms).</strong> The automorphisms are the <strong>conjugations</strong> and the <strong>transposition-like maps</strong>:</p>
+<p>$$
+\mathsf{M}_4\bigl(\operatorname{Ad}_{\tilde A}\tilde X\bigr)=\mathsf{M}_4(\tilde A)\mathsf{M}_4(\tilde X)\mathsf{M}_4(\tilde A)^{-1},\qquad
+\mathsf{M}_4(\tilde X^{\natural})=\mathsf{M}_4(\tilde X)^{\mathsf T},
+$$</p>
+<p>for a unit $\tilde A$, where the natural conjugation is read on the regular matrix as the transpose.</p>
+<p><em>Proof.</em> The inner automorphism is the conjugation by the unit by <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, and $\mathsf{M}_4$ is multiplicative. The natural conjugation satisfies $\mathsf{M}_4(\tilde X^{\natural})=\mathsf{M}_4(\tilde X)^{\mathsf T}$ by the transpose identity of the regular model; the transpose is an anti-automorphism of the matrix product and an automorphism of the symmetrised regular product. Verified on the model. $\square$</p>
+<p><strong>Remark (the regular model and the two groups).</strong> The automorphism group of the block is the inner conjugations together with the natural conjugation, of dimension three, with the commutator algebra of the trace-zero regular matrices as Lie algebra; the structure group of <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, the norm similarities, is the larger group carried to the <strong>similarities of the determinant</strong> of the regular model,</p>
+<p>$$
+\Gamma=\bigl\{g:\det\mathsf{M}_4(g\tilde X)=\nu(g)\det\mathsf{M}_4(\tilde X)\bigr\},
+$$</p>
+<p>of dimension seven. <strong>In the model the automorphisms are the conjugations and the transposes, and the structure group is the group of determinant similarities</strong>; the derivations are the commutators with the trace-zero regular matrices. Verified on the model.</p>
+<h2 id="the-matrices">The Matrices</h2>
+<p><strong>The generators.</strong> The regular model is fixed on the basis by four matrices:</p>
+<p>$$
+\mathsf{M}_4(e_0)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+\mathsf{M}_4(e_1)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+$$
+$$
+\mathsf{M}_4(e_2)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+\mathsf{M}_4(e_3)=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+$$</p>
+<p>A general element is the block matrix</p>
+<p>$$
+\mathsf{M}_4(\tilde Q)=\begin{pmatrix}A&B\\-B&A\end{pmatrix},\qquad
+A=\begin{pmatrix}Q_0&-Q_1\\Q_1&Q_0\end{pmatrix},\qquad
+B=\begin{pmatrix}-Q_2&-Q_3\\-Q_3&Q_2\end{pmatrix},
+$$</p>
+<p>The general element has trace $4Q_0$ and determinant $N(\tilde Q)^2$.</p>
+<p><strong>The product, entry by entry.</strong> The block's product is the <strong>anticommutator</strong> of the regular matrices,</p>
+<p>$$
+\mathsf{M}_4(\tilde P\bullet\tilde Q)=\tfrac12\bigl\{\mathsf{M}_4(\tilde P),\mathsf{M}_4(\tilde Q)\bigr\}
+=\tfrac12\bigl(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)+\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde P)\bigr),
+$$</p>
+<p>and on the unit $e_1$ the square is the negative identity of the regular model,</p>
+<p>$$
+\mathsf{M}_4(e_1)^2=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}^2=-I_4=-\mathsf{M}_4(e_0).
+$$</p>
+<p><strong>The idempotents, entry by entry.</strong> The idempotent $\tfrac12(e_0+ie_1)$ is the projector</p>
+<p>$$
+\mathsf{M}_4\bigl(\tfrac12(e_0+ie_1)\bigr)=\tfrac12\bigl(I_4+i\mathsf{M}_4(e_1)\bigr),
+\qquad
+i\mathsf{M}_4(e_1)=\begin{pmatrix}0&-i&0&0\\i&0&0&0\\0&0&0&-i\\0&0&i&0\end{pmatrix},
+$$</p>
+<p>whose involution squares to $I_4$, so that the value is a projector of rank two and trace two; <strong>the rank and the trace of the projector are one in the realization and two in the regular model</strong>, the two values of $\tfrac12\operatorname{Tr}\mathsf{M}(\tilde Q)$ on the same element.</p>
+<p><strong>The isotropic cone, entry by entry.</strong> The element $e_1+ie_2$ is of square zero and its regular matrix is $\mathsf{M}_4(e_1+ie_2)=\mathsf{M}_4(e_1)+i\mathsf{M}_4(e_2)$, of vanishing square; the element $e_0+ie_1$ is isotropic without being of square zero and its regular matrix is $I_4+i\mathsf{M}_4(e_1)$, of rank two and trace four, not nilpotent. As in the realization, the two kinds of isotropic element are the two kinds of singular regular matrix.</p>
+<h2 id="summary">Summary</h2>
+<p>In the $4\times4$ regular model the block's product becomes the symmetrisation of the regular matrix product, $\mathsf{M}_4(\tilde P\bullet\tilde Q)=\tfrac12(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)+\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde P))$, the square becomes the matrix square, and the regular matrix's characteristic polynomial is the square of the quadratic, $\det(\lambda I-\mathsf{M}_4(\tilde Q))=(\lambda^2-2Q_0\lambda+N(\tilde Q))^2$. The idempotents give the regular projectors of trace two and rank two, the two copies of the simple module carrying one projector each. The generic norm is the determinant, $\det\mathsf{M}_4(\tilde Q)=N(\tilde Q)^2$, so the isotropic cone is the set of singular matrices of rank two and the elements of square zero are the nilpotent matrices; the isotropic cone is the nilpotent matrices together with the singular matrices of non-zero trace, the witnesses being $e_1+ie_2$ and $e_0+ie_1$. The trace form is a quarter of the trace of the matrix product, $\tau(\tilde P,\tilde Q)=\tfrac14\operatorname{Tr}(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q))$, the multiplication operator is the averaged one-sided regular matrix multiplication of trace $\operatorname{Tr}\mathsf{M}_4(\tilde A)=4A_0$ and determinant $A_0^2N(\tilde A)$, the derivations are the commutators with the trace-zero regular matrices, and the automorphisms are the conjugations together with the transpose of the natural conjugation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\tilde Q}(\tilde R)=\tilde Q\tilde R$</td>
+<td>the $4\times4$ left regular representation</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4(\tilde P\bullet\tilde Q)=\tfrac12(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)+\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde P))$</td>
+<td>the block's product in the model</td>
+</tr>
+<tr>
+<td>$\det(\lambda I-\mathsf{M}_4(\tilde Q))=(\lambda^2-2Q_0\lambda+N(\tilde Q))^2$</td>
+<td>the squared characteristic polynomial</td>
+</tr>
+<tr>
+<td>$\det\mathsf{M}_4(\tilde Q)=N(\tilde Q)^2$</td>
+<td>the generic norm as a determinant</td>
+</tr>
+<tr>
+<td>$\tau(\tilde P,\tilde Q)=\tfrac14\operatorname{Tr}(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q))$</td>
+<td>the trace form as a matrix trace</td>
+</tr>
+<tr>
+<td>$\tfrac14\operatorname{ad}_{\tilde C}\leftrightarrow\tfrac14[\mathsf{M}_4(\tilde C),\cdot]$</td>
+<td>the inner derivations as commutators</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4(\tilde X^{\natural})=\mathsf{M}_4(\tilde X)^{\mathsf T}$</td>
+<td>the natural conjugation as the transpose</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</em> (<code>articles_maths/the-general-plain-algebra-in-the-4x4-matrix-element-representation.md</code>), for the model.</li>
+<li><em>The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> (<code>articles_maths/the-symmetric-plain-algebra-in-the-2x2-matrix-element-representation.md</code>), for the reading on the realization.</li>
+<li><em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> (<code>articles_maths/the-4x4-matrix-element-representation-of-biquaternions.md</code>), for the element tables of the model.</li>
+<li><em>Biquaternion Objects and Their Matrix Correspondences</em> (<code>articles_maths/biquaternion-objects-and-their-matrix-correspondences.md</code>), for the correspondence between the objects and the matrices.</li>
+<li><em>Biquaternion Idempotents and Projections</em> and <em>Biquaternion Ideals and Peirce Decomposition</em>, for the idempotents, the projectors and the minimal left ideals.</li>
+<li><em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>, <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em> and <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, for the coordinate statements transported here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
