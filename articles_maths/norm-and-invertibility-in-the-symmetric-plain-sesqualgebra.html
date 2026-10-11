@@ -52,87 +52,85 @@
       <div class="article-body">
         <h1 id="norm-and-invertibility-in-the-symmetric-plain-sesqualgebra"><strong>Norm and Invertibility in the Symmetric Plain Sesqualgebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ on the biquaternion space, the Hermitian form $H$ read as a multiplication (<em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em>). This article studies the two notions that the general plain algebra attaches to its multiplication and that the block, having no unit, cannot inherit unchanged: the <strong>norm</strong> of an element and its <strong>invertibility</strong>.</p>
-<p>A norm and an inverse name a product. The definitions are relative and are stated once for a general product in <em>Definitions for the Study of the 12 Algebraic Structures</em>; here they are read on the block. The block is <strong>not unital</strong>: it has no two-sided unit, and consequently no inverse, no group of units and no division structure, and the sections that would carry them state the <strong>absence</strong>. What the block does carry is a <strong>norm</strong>, the diagonal of the Hermitian form, and the norm is the substitute the block uses. In the general plain algebra the norm decides invertibility; here the analogous statement is a <strong>definiteness</strong>: the norm of the block vanishes only at the origin.</p>
-<p><strong>Placement.</strong> The article is the second entry of the <em>Common Theory</em> section of the block, after <em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em> and after <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>, and it precedes the articles on the zero divisors and on the roots of the central values. It uses the product and the class of the introduction, the definitions of the relative notions, and the positivity of the form.</p>
-<p><strong>Boundaries.</strong> The product, its class, its table and its placement among the twelve structures are <em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em>. The form $H$, its Gram matrix, its positivity and its cone are <em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em> and <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>; the norm and the invertibility of the parent product are <em>Norm and Invertibility in the General Plain Algebra</em>. The definitions of the unit, the inverse, the group of units, the norm and the relative notions are <em>Definitions for the Study of the 12 Algebraic Structures</em>, and the four general products with their units are <em>Comparison Between the Four General Products</em>. The operators of the block, the group of linear maps that preserve $H$ and its algebra, are <em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>. Nothing topological and nothing metric appears.</p>
-<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2 = e_3$, and central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$; the natural conjugation is $\tilde{Q}^{\natural} = \sum_\mu \varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon = (1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The product of the block is</p>
+<p>The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ on the biquaternion space, the Hermitian form $H$ read as a multiplication (<em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em>). This article studies the algebraic norm that the block carries and the invertibility that it does not.</p>
+<p>A norm and an inverse name a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of <em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em>. For the block the form is $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)$ and its diagonal is</p>
 <p>$$
-\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0, \qquad H(\tilde P,\tilde Q) = \sum_{\mu=0}^{3}P_\mu\overline{Q_\mu},
+H(\tilde Q)=H(\tilde Q,\tilde Q)=\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2},
 $$</p>
-<p>and it is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$: $\mathbb{C}$-linear in the first argument and conjugate-linear in the second. The <strong>norm</strong> of the block is the diagonal of $H$, written $N(\tilde{Q}) = H(\tilde{Q},\tilde{Q})$.</p>
+<p>the symmetric plain sesquilinear algebraic norm, <strong>real and positive definite</strong>, one of the four algebraic norms of the space and not one of the other three. The two arities of the letter are one object: with two arguments the form, with one argument its diagonal.</p>
+<p>The invertibility is where the article records an <strong>absence</strong>. The block is <strong>not unital</strong>: every value of the product is central, so it has no two-sided unit, and consequently no inverse, no group of units and no division structure. Its algebraic norm does <strong>not</strong> repair the absence: $H$ is positive definite, so $H(\tilde Q)=0$ exactly at $\tilde Q=0$, the block has no nonzero isotropic vector and no invertible element, and its element classification is two-way, the origin and everything else. The article states the absence, then the algebraic norm, then the failure of multiplicativity and the polarisation.</p>
+<p><strong>Boundaries.</strong> The product, its class and its table are <em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em>; the relative definitions of the unit, the inverse and the group of units are <em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>The Unit and the Inverse</em>, and the four general products with their units are <em>Comparison Between the Four General Products</em>. The definition of the algebraic norm as the diagonal of a form and the three other algebraic norms are <em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em>; the algebraic norm of the plain product is $B$, a different form, and its theory is <em>Norm and Invertibility in the General Plain Algebra</em>. The form $H$, its Gram matrix, its positivity and its cone are <em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em> and <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>; the zero divisors are <em>Zero Divisors of the Symmetric Plain Sesqualgebra</em>; the operators of the block are <em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>. Nothing topological and nothing metric appears.</p>
+<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$; the natural conjugation is $\tilde{Q}^{\natural} = \sum_\mu \varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon = (1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The product of the block is $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ with $H(\tilde P,\tilde Q) = \sum_{\mu=0}^{3}P_\mu\overline{Q_\mu}$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$; the <strong>algebraic norm of the block</strong> is its diagonal $H(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$.</p>
 <h2 id="the-relative-notions">The Relative Notions</h2>
 <p>The word <em>unit</em>, the word <em>inverse</em> and the word <em>group of units</em> name a product, so the definitions are stated once for a general product and then read on the products of this space; they are in <em>Definitions for the Study of the 12 Algebraic Structures</em>.</p>
 <p><strong>Definition (recalled).</strong> Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a <strong>left unit of $\star$</strong> when $e\star\tilde{Q} = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$, a <strong>right unit</strong> when $\tilde{Q}\star e = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$, and a <strong>two-sided unit</strong>, or an <strong>identity</strong>, when it is both. When a two-sided unit $e$ exists, an element $\tilde{Q}$ is <strong>invertible of $\star$</strong> when there is a $\tilde{R}$ with $\tilde{Q}\star\tilde{R} = \tilde{R}\star\tilde{Q} = e$, the element $\tilde{R}$ being the <strong>inverse of $\tilde{Q}$ of $\star$</strong>; the <strong>group of units of $\star$</strong> is the set of the invertible elements, a group under $\star$. When no two-sided unit exists, the three notions are empty and the group of units is not defined.</p>
 <p>Throughout this article the product is the symmetric plain sesqualgebra $\star$, and another product is named where it is meant.</p>
 <h2 id="the-absence-of-a-unit">The Absence of a Unit</h2>
 <p><strong>Theorem (the block has no unit).</strong> The block has no left unit and no right unit: there is no element $e$ with $e\star\tilde{Q} = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$, and none with $\tilde{Q}\star e = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$. Hence there is no two-sided unit either.</p>
-<p><em>Proof.</em> Every value of the product is central, $e\star\tilde{Q} = H(e,\tilde{Q})e_0 \in \mathbb{C}e_0$. The element $e_1$ is not central, so $e\star e_1 \neq e_1$ for every $e$, and $e_1\star e \neq e_1$ for every $e$; there is therefore no left unit and no right unit, and so no two-sided unit. In particular the idempotent $e_0$ is not a unit: $e_0\star e_1 = H(e_0,e_1)e_0 = 0$, since the basis is orthonormal for $H$.</p>
-<p><strong>Remark (the reason is the image).</strong> The failure is structural and not an accident of one candidate: a product whose image is the central line cannot reproduce an element with a vector part, and the block has non-central elements. The same reason deprives the symmetric quaternionic product of a unit, while the symmetric plain product, whose image is the whole space, has the unit $e_0$.</p>
+<p><em>Proof.</em> Every value of the product is central, $e\star\tilde{Q} = H(e,\tilde{Q})e_0 \in \mathbb{C}e_0$. The element $e_1$ is not central, so $e\star e_1 \neq e_1$ for every $e$, and $e_1\star e \neq e_1$ for every $e$; there is therefore no left unit, no right unit and no two-sided unit. In particular the idempotent $e_0$ is not a unit: $e_0\star e_1 = H(e_0,e_1)e_0 = 0$, since the basis is orthonormal for $H$.</p>
+<p><strong>Remark (the reason is the image).</strong> The failure is structural: a product whose image is the central line cannot reproduce an element with a vector part, and the block has non-central elements. The same reason deprives the symmetric quaternionic product of a unit, while the symmetric plain product, whose image is the whole space, has the unit $e_0$.</p>
 <h2 id="the-absence-of-an-inverse-and-of-the-group-of-units">The Absence of an Inverse and of the Group of Units</h2>
 <p><strong>Theorem (no element is invertible, and there is no group of units).</strong> No element of $\mathbb{B}$ is invertible of $\star$, and the group of units of $\star$ is not defined.</p>
 <p><em>Proof.</em> The notions of §<em>The Relative Notions</em> presuppose a two-sided unit, and §<em>The Absence of a Unit</em> shows that the block has none; the definition is therefore empty. There is no invertible element and no inverse formula.</p>
-<p><strong>Remark (what the block does not have).</strong> The block has no unit, no inverse, no group of units, no division structure and no three-way classification of the elements into the zero, the invertible and the zero divisors; its element classification is two-way and is read in §<em>The Substitute for the Invertibility Criterion</em>. The invertible elements of the plain product are read in <em>Norm and Invertibility in the General Plain Algebra</em>, and the block neither inherits them nor carries a substitute group.</p>
-<h2 id="the-norm-of-the-block">The Norm of the Block</h2>
-<p><strong>Definition.</strong> The <strong>norm of the block</strong> of an element $\tilde{Q}$ is the diagonal of the Hermitian form,</p>
+<p><strong>Remark (what the block does not have).</strong> The block has no unit, no inverse, no group of units, no division structure and no three-way classification of the elements into the zero, the invertible and the zero divisors; its element classification is two-way and is read in §<em>The Absence of a Criterion from the Algebraic Norm</em>. The block neither inherits the invertible elements of another product nor carries a substitute group of its own elements.</p>
+<h2 id="the-algebraic-norm-of-the-block">The Algebraic Norm of the Block</h2>
+<p><strong>Definition.</strong> The <strong>algebraic norm of the block</strong> is the diagonal of the scalar-part form of the product,</p>
 <p>$$
-N(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2} \in \mathbb{R}_{\geq 0},
+H(\tilde{Q}) = \mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr) = H(\tilde{Q},\tilde{Q}) = \sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2} \in \mathbb{R}_{\geq 0},
 $$</p>
 <p>a real non-negative number, and it is the coefficient of the square of the element,</p>
 <p>$$
-\tilde{Q}\star\tilde{Q} = N(\tilde{Q})e_0 .
+\tilde{Q}\star\tilde{Q} = H(\tilde{Q})e_0 .
 $$</p>
-<p>The equation names the product $\star$: the norm is relative to the product, and the norm of the general plain <strong>algebra</strong> is $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2}$, a different quadratic form (<em>Norm and Invertibility in the General Plain Algebra</em>). The diagonal of the general plain <strong>sesquilinear</strong> form is this same $N$, since the product of the block is that form read as a multiplication, so the norm separates the block from the plain algebra and not from the sesquilinear parent.</p>
+<p>The equation names the product $\star$: the algebraic norm is relative to the product, and the algebraic norms of the other three rows are different quadratic maps on the same space (<em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em>).</p>
 <p><strong>Basic properties.</strong> Each is a direct reading of the definition.</p>
 <ul>
-<li>$N(\tilde{Q})$ is a <strong>real</strong> number, $\overline{N(\tilde{Q})} = N(\tilde{Q})$, because each $\lvert Q_\mu\rvert^{2}$ is real.</li>
-<li>$N(\tilde{Q})$ is <strong>non-negative</strong>, and $N(\tilde{Q}) = 0$ exactly at $\tilde{Q} = 0$; the form $N$ is <strong>positive definite</strong>, of signature $(8,0)$ on the real space underlying $\mathbb{B}$.</li>
-<li>$N$ is <strong>invariant under the three conjugations</strong>, $N(\tilde{Q}^{\natural}) = N(\overline{\tilde{Q}}) = N(\tilde{Q}^{*}) = N(\tilde{Q})$, because each conjugation preserves the moduli $\lvert Q_\mu\rvert$ of the coordinates.</li>
-<li>$N$ is <strong>homogeneous of degree two</strong> over the reals but not over $\mathbb{C}$: $N(\lambda\tilde{Q}) = \lvert\lambda\rvert^{2}N(\tilde{Q})$ for $\lambda\in\mathbb{C}$.</li>
-<li>$N$ is the <strong>polarisation source</strong> of $H$: the form $H$ is recovered from $N$ in §<em>The Polarisation of the Norm</em>.</li>
+<li>$H(\tilde{Q})$ is a <strong>real</strong> number, $\overline{H(\tilde{Q})} = H(\tilde{Q})$, because each $\lvert Q_\mu\rvert^{2}$ is real.</li>
+<li>$H(\tilde{Q})$ is <strong>non-negative</strong>, and $H(\tilde{Q}) = 0$ exactly at $\tilde{Q} = 0$; the quadratic form is <strong>positive definite</strong>, of signature $(8,0)$ on the real space underlying $\mathbb{B}$.</li>
+<li>$H$ is <strong>invariant under the three conjugations</strong>, $H(\tilde{Q}^{\natural}) = H(\overline{\tilde{Q}}) = H(\tilde{Q}^{*}) = H(\tilde{Q})$, because each conjugation preserves the moduli $\lvert Q_\mu\rvert$ of the coordinates.</li>
+<li>$H$ is <strong>homogeneous of degree two</strong> over the reals but not over $\mathbb{C}$: $H(\lambda\tilde{Q}) = \lvert\lambda\rvert^{2}H(\tilde{Q})$ for $\lambda\in\mathbb{C}$.</li>
+<li>$H$ is the <strong>polarisation source</strong> of the form $H(\tilde P,\tilde Q)$, recovered from the diagonal in §<em>The Polarisation of the Algebraic Norm</em>.</li>
 </ul>
-<p><strong>Proposition (the Gram matrix and the square map).</strong> On the basis $e_0,e_1,e_2,e_3$ the form $H$ has Gram matrix the identity, $H(e_\mu,e_\nu) = \delta_{\mu\nu}$, so $N(e_\mu) = 1$; the square map $\tilde{Q}\mapsto\tilde{Q}\star\tilde{Q}$ has image the real ray $\mathbb{R}_{\geq 0}e_0$ and is surjective onto it.</p>
-<p><em>Proof.</em> The Gram statement is $H(e_\mu,e_\nu) = \sum_\sigma (e_\mu)_\sigma\overline{(e_\nu)_\sigma} = \delta_{\mu\nu}$, and the square display gives the image. The ray is attained since $\tilde{Q} = \sqrt{\lambda}e_0$ gives $N(\tilde{Q}) = \lambda$ for $\lambda\geq 0$.</p>
+<p><strong>Proposition (the Gram matrix and the square map).</strong> On the basis $e_0,e_1,e_2,e_3$ the form has Gram matrix the identity, $H(e_\mu,e_\nu) = \delta_{\mu\nu}$, so $H(e_\mu) = 1$; the square map $\tilde{Q}\mapsto\tilde{Q}\star\tilde{Q}$ has image the real ray $\mathbb{R}_{\geq 0}e_0$ and is surjective onto it.</p>
+<p><em>Proof.</em> The Gram statement is $H(e_\mu,e_\nu) = \sum_\sigma (e_\mu)_\sigma\overline{(e_\nu)_\sigma} = \delta_{\mu\nu}$, and the square display gives the image. The ray is attained since $\tilde{Q} = \sqrt{\lambda}e_0$ gives $H(\tilde{Q}) = \lambda$ for $\lambda\geq 0$.</p>
 <h2 id="the-failure-of-multiplicativity">The Failure of Multiplicativity</h2>
-<p>The norm of the general plain algebra is multiplicative, $N(\tilde P\tilde Q) = N(\tilde P)N(\tilde Q)$ (<em>Norm and Invertibility in the General Plain Algebra</em>). The norm of the block is <strong>not</strong> multiplicative, and the defect is exactly the failure of the form to be resolved by the norms of its two arguments.</p>
-<p><strong>Theorem (the norm of a product).</strong> For all $\tilde P,\tilde Q$,</p>
+<p><strong>Theorem (the algebraic norm of a product).</strong> For all $\tilde P,\tilde Q$,</p>
 <p>$$
-N(\tilde P\star\tilde Q) = \lvert H(\tilde P,\tilde Q)\rvert^{2},
+H(\tilde P\star\tilde Q) = \lvert H(\tilde P,\tilde Q)\rvert^{2},
 $$</p>
-<p>the square of the modulus of the form on the two arguments; consequently $N(\tilde P\star\tilde Q) = N(\tilde P)N(\tilde Q)$ exactly when the two arguments are linearly dependent over $\mathbb{C}$.</p>
-<p><em>Proof.</em> The product is central, $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$, and $N(\lambda e_0) = \lvert\lambda\rvert^{2}$. So the norm of the product is $\lvert H(\tilde P,\tilde Q)\rvert^{2}$. For the equality case, the quadratic form $t\mapsto N(\tilde P - t\tilde Q)\geq 0$ in the complex variable $t$ has discriminant $N(\tilde P)N(\tilde Q) - \lvert H(\tilde P,\tilde Q)\rvert^{2}$, so this quantity is non-negative, and the vanishing of the discriminant is the vanishing of the form at its minimising argument, that is the proportionality of $\tilde P$ and $\tilde Q$.</p>
+<p>the square of the modulus of the form on the two arguments; consequently $H(\tilde P\star\tilde Q) = H(\tilde P)H(\tilde Q)$ exactly when the two arguments are linearly dependent over $\mathbb{C}$.</p>
+<p><em>Proof.</em> The product is central, $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$, and $H(\lambda e_0) = \lvert\lambda\rvert^{2}$. So the algebraic norm of the product is $\lvert H(\tilde P,\tilde Q)\rvert^{2}$. For the equality case, the quadratic form $t\mapsto H(\tilde P - t\tilde Q)\geq 0$ in the complex variable $t$ has discriminant $H(\tilde P)H(\tilde Q) - \lvert H(\tilde P,\tilde Q)\rvert^{2}$, so this quantity is non-negative, and the vanishing of the discriminant is the vanishing of the form at its minimising argument, that is the proportionality of $\tilde P$ and $\tilde Q$.</p>
 <p><strong>Corollary (the defect is the discriminant).</strong> For all $\tilde P,\tilde Q$,</p>
 <p>$$
-N(\tilde P)N(\tilde Q) - N(\tilde P\star\tilde Q) = N(\tilde P)N(\tilde Q) - \lvert H(\tilde P,\tilde Q)\rvert^{2} \geq 0,
+H(\tilde P)H(\tilde Q) - H(\tilde P\star\tilde Q) = H(\tilde P)H(\tilde Q) - \lvert H(\tilde P,\tilde Q)\rvert^{2} \geq 0,
 $$</p>
-<p>with equality exactly when $\tilde P$ and $\tilde Q$ are linearly dependent. The norm is therefore <strong>submultiplicative</strong> and multiplicative exactly on linearly dependent pairs.</p>
-<p><strong>Remark (the identity that replaces multiplicativity).</strong> The block has one exact multiplicativity, read on the form rather than on the norm: for all $\tilde P,\tilde Q,\tilde R$,</p>
+<p>with equality exactly when $\tilde P$ and $\tilde Q$ are linearly dependent. The algebraic norm is therefore <strong>submultiplicative</strong> and multiplicative exactly on linearly dependent pairs.</p>
+<p><strong>Remark (the identity that replaces multiplicativity).</strong> The block has one exact multiplicativity, read on the form rather than on the algebraic norm: for all $\tilde P,\tilde Q,\tilde R$,</p>
 <p>$$
 H(\tilde P\star\tilde Q,\tilde R) = H(\tilde P,\tilde Q)\,H(e_0,\tilde R),
 $$</p>
-<p>and dually $H(\tilde R,\tilde P\star\tilde Q) = H(\tilde R,e_0)\overline{H(\tilde P,\tilde Q)}$. The first factor $H(\tilde P,\tilde Q)$ is the coefficient of the product, the second is the evaluation of the form on the unit idempotent; the product is central, so the form evaluates it only through that one coefficient.</p>
-<p><strong>Remark (the norm is multiplicative on the centre).</strong> On the central line the block is the field rule $(\lambda e_0)\star(\mu e_0) = \lambda\overline{\mu}e_0$ and the norm is the squared modulus, $N(\lambda e_0) = \lvert\lambda\rvert^{2}$; on central elements the norm is multiplicative in the plain sense, $N\bigl((\lambda e_0)\star(\mu e_0)\bigr) = N(\lambda e_0)N(\mu e_0)$, because $\mathbb{C}e_0$ is a field. Multiplicativity holds on the centre and fails off it, and the failure is measured by the corollary.</p>
-<h2 id="the-polarisation-of-the-norm">The Polarisation of the Norm</h2>
-<p><strong>Theorem (the polarisation).</strong> The polar form of the quadratic map $N$ is twice the real part of $H$,</p>
+<p>and dually $H(\tilde R,\tilde P\star\tilde Q) = H(\tilde R,e_0)\overline{H(\tilde P,\tilde Q)}$. The first factor $H(\tilde P,\tilde Q)$ is the coefficient of the product, the second is the evaluation of the form on the idempotent $e_0$; the product is central, so the form evaluates it only through that one coefficient.</p>
+<p><strong>Remark (the algebraic norm is multiplicative on the centre).</strong> On the central line the block is the field rule $(\lambda e_0)\star(\mu e_0) = \lambda\overline{\mu}e_0$ and the algebraic norm is the squared modulus, $H(\lambda e_0) = \lvert\lambda\rvert^{2}$; on central elements it is multiplicative, $H\bigl((\lambda e_0)\star(\mu e_0)\bigr) = H(\lambda e_0)H(\mu e_0)$, because $\mathbb{C}e_0$ is a field. Multiplicativity holds on the centre and fails off it, and the failure is measured by the corollary.</p>
+<h2 id="the-polarisation-of-the-algebraic-norm">The Polarisation of the Algebraic Norm</h2>
+<p><strong>Theorem (the polarisation).</strong> The polar form of the quadratic map $H$ is twice the real part of the sesquilinear form,</p>
 <p>$$
-N(\tilde P + \tilde Q) - N(\tilde P) - N(\tilde Q) = 2\Re H(\tilde P,\tilde Q),
+H(\tilde P + \tilde Q) - H(\tilde P) - H(\tilde Q) = 2\Re H(\tilde P,\tilde Q),
 $$</p>
-<p>and the full Hermitian form is recovered from the norm by</p>
+<p>and the full Hermitian form is recovered from the algebraic norm by</p>
 <p>$$
-H(\tilde P,\tilde Q) = \tfrac{1}{4}\sum_{k=0}^{3}i^{k}\,N(\tilde P + i^{k}\tilde Q).
+H(\tilde P,\tilde Q) = \tfrac{1}{4}\sum_{k=0}^{3}i^{k}\,H(\tilde P + i^{k}\tilde Q).
 $$</p>
-<p><em>Proof.</em> The first display expands $N(\tilde P+\tilde Q) = N(\tilde P)+N(\tilde Q)+H(\tilde P,\tilde Q)+\overline{H(\tilde P,\tilde Q)}$. For the second, insert the four values $k = 0,1,2,3$ and use $N(\tilde P + i^k\tilde Q) = N(\tilde P)+N(\tilde Q)+2\Re\bigl(i^{-k}H(\tilde P,\tilde Q)\bigr)$; the four coefficients $1,i,-1,-i$ average to the real and imaginary parts of $H$, giving $H$.</p>
-<p><strong>Remark (the polarisation is the Hermitian one).</strong> The second display is the polarisation of a sesquilinear form and not of a bilinear one: the four coefficients are the fourth roots of unity, not the pair $\pm1$ of the symmetric polarisation, which is the form of the Hermitian symmetry $H(\tilde Q,\tilde P) = \overline{H(\tilde P,\tilde Q)}$. The first display extracts only the real part, because the diagonal $N$ of a Hermitian form is real; the imaginary part is carried by the four-term display. This is the sense in which the norm of the block polarises to $H$ and not to the symmetric bilinear form of the parent.</p>
-<h2 id="the-substitute-for-the-invertibility-criterion">The Substitute for the Invertibility Criterion</h2>
-<p><strong>Theorem (the criterion of the block).</strong> For $\tilde{Q}\in\mathbb{B}$,</p>
+<p><em>Proof.</em> The first display expands $H(\tilde P+\tilde Q) = H(\tilde P)+H(\tilde Q)+H(\tilde P,\tilde Q)+\overline{H(\tilde P,\tilde Q)}$. For the second, insert the four values $k = 0,1,2,3$ and use $H(\tilde P + i^k\tilde Q) = H(\tilde P)+H(\tilde Q)+2\Re\bigl(i^{-k}H(\tilde P,\tilde Q)\bigr)$; the four coefficients $1,i,-1,-i$ average to the real and imaginary parts of $H$, giving $H$.</p>
+<p><strong>Remark (the polarisation is the Hermitian one).</strong> The second display is the polarisation of a sesquilinear form and not of a bilinear one: the four coefficients are the fourth roots of unity, not the pair $\pm1$ of the symmetric polarisation, which is the form of the Hermitian symmetry $H(\tilde Q,\tilde P) = \overline{H(\tilde P,\tilde Q)}$. The first display extracts only the real part, because the diagonal $H$ of a Hermitian form is real; the imaginary part is carried by the four-term display.</p>
+<h2 id="the-absence-of-a-criterion-from-the-algebraic-norm">The Absence of a Criterion from the Algebraic Norm</h2>
+<p><strong>Theorem (the algebraic norm does not decide invertibility).</strong> The block has no invertible element, so no criterion can name one; and its algebraic norm has no nonzero zero:</p>
 <p>$$
-N(\tilde{Q}) = 0 \quad\Longleftrightarrow\quad \tilde{Q} = 0 .
+H(\tilde{Q}) = 0 \quad\Longleftrightarrow\quad \tilde{Q} = 0 .
 $$</p>
-<p><em>Proof.</em> $N(\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$ is a sum of non-negative reals, vanishing exactly when every $Q_\mu$ vanishes.</p>
-<p><strong>Remark (what replaces the criterion).</strong> In the general plain algebra the criterion of invertibility reads $N(\tilde{Q})\neq0$ and separates the invertible elements from the zero divisors, the three-way classification (<em>Norm and Invertibility in the General Plain Algebra</em>). The block has no invertible element, and its criterion reads instead that the norm never vanishes off the origin: the block has <strong>no nonzero element of zero norm</strong>, or, in the vocabulary of forms, <strong>no nonzero isotropic vector</strong> for $H$ (the origin alone is isotropic). The block's element classification is therefore two-way, the zero element and the non-zero elements, and the non-zero elements are all of one kind, the zero divisors of <em>Zero Divisors of the Symmetric Plain Sesqualgebra</em>. The definiteness is the reason, and it is the exact opposite of the general plain algebra, whose norm $c(\tilde{Q}) = \sum_\mu Q_\mu^{2}$ vanishes on the nonzero isotropic cone.</p>
-<p><strong>Corollary (the substitute for the group of units).</strong> The block has no group of units; the set that replaces it is the group of the linear maps of $\mathbb{B}$ that preserve the form $H$, together with its algebra, and it is read as a group of linear maps in <em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>. The block carries no subgroup of its own elements to play that role, since it has no invertible element.</p>
+<p><em>Proof.</em> The first clause is the theorem on the absence of the inverse. The equivalence is the positive definiteness: $H(\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$ is a sum of non-negative reals, vanishing exactly when every $Q_\mu$ vanishes.</p>
+<p><strong>Remark (what replaces the criterion).</strong> A criterion would equate the invertible elements with the complement of a hypersurface of the algebraic norm. For the block the algebraic norm is definite, it vanishes only at the origin, and it therefore separates nothing: the block has <strong>no nonzero element of zero algebraic norm</strong>, or, in the vocabulary of forms, <strong>no nonzero isotropic vector</strong>. Its element classification is two-way, the zero element and the non-zero elements, and the non-zero elements are all of one kind, the zero divisors of <em>Zero Divisors of the Symmetric Plain Sesqualgebra</em>. The definiteness is the exact opposite of the general plain product, whose algebraic norm $B$ is indefinite and does not decide invertibility either (<em>Norm and Invertibility in the General Plain Algebra</em>).</p>
+<p><strong>Corollary (the substitute for the group of units).</strong> The block has no group of units; the set that replaces it is the group of the linear maps of $\mathbb{B}$ that preserve the form $H$, together with its algebra, and it is read in <em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>. The block carries no subgroup of its own elements to play that role, since it has no invertible element.</p>
 <h2 id="the-comparison-with-the-general-plain-algebra">The Comparison with the General Plain Algebra</h2>
-<p>The two products separate on every clause of the definition, and the table collects the separation.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -143,19 +141,19 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>norm</td>
-<td>$\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2}$, complex</td>
-<td>$H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$, real non-negative</td>
+<td>algebraic norm</td>
+<td>$B(\tilde{Q}) = \mathrm{Sc}(\tilde Q\tilde Q) = Q_0^2-(\mathbf Q,\mathbf Q)$, complex, indefinite</td>
+<td>$H(\tilde{Q}) = \mathrm{Sc}(\tilde Q\star\tilde Q) = \sum_\mu\lvert Q_\mu\rvert^{2}$, real, definite</td>
 </tr>
 <tr>
-<td>multiplicativity</td>
-<td>$N(\tilde P\tilde Q) = N(\tilde P)N(\tilde Q)$</td>
-<td>$N(\tilde P\star\tilde Q) = \lvert H(\tilde P,\tilde Q)\rvert^{2}$, no multiplicativity</td>
+<td>multiplicativity of the algebraic norm</td>
+<td>$B$ not multiplicative</td>
+<td>$H$ submultiplicative, $H(\tilde P\star\tilde Q) = \lvert H(\tilde P,\tilde Q)\rvert^{2}$</td>
 </tr>
 <tr>
-<td>definiteness</td>
-<td>indefinite, isotropic cone $\{c = 0\}$</td>
-<td>definite, no nonzero isotropic vector</td>
+<td>isotropic vectors</td>
+<td>the complex cone of $B$</td>
+<td>none but the origin</td>
 </tr>
 <tr>
 <td>unit</td>
@@ -164,19 +162,23 @@ $$</p>
 </tr>
 <tr>
 <td>invertible elements</td>
-<td>norm non-zero, a group</td>
+<td>defined; not read from $B$</td>
 <td>none</td>
 </tr>
 <tr>
 <td>zero divisors</td>
-<td>the norm cone, non-zero</td>
+<td>a proper subset</td>
 <td>every non-zero element</td>
 </tr>
 </tbody>
 </table></div>
-<p>The parent is unital, its invertibility criterion is the non-vanishing of a multiplicative norm, and its zero divisors are a proper subset. The block is non-unital, its criterion is the non-vanishing of a definite norm, and its zero divisors are the whole complement of the origin; the two structures disagree at every clause above, and the disagreement is not a defect of the block but the shape of a rank-one product.</p>
+<p>The parent is unital and the block is not; the two products carry <strong>different</strong> algebraic norms, $B$ and $H$, and neither algebraic norm decides invertibility: the parent has invertible elements that its algebraic norm $B$ does not see, and the block has no invertible element at all. The last three rows are the absence and the shape of a rank-one product.</p>
 <h2 id="summary">Summary</h2>
-<p>The symmetric plain sesqualgebra $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ has <strong>no unit</strong>, because every value of the product is central and $\mathbb{B}$ has non-central elements; consequently it has <strong>no inverse</strong>, <strong>no group of units</strong> and no division structure, and the relative definitions are empty. Its <strong>norm</strong> is the diagonal of the Hermitian form, $N(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2} = $ the coefficient of $\tilde{Q}\star\tilde{Q}$, a real non-negative definite quadratic form of signature $(8,0)$, invariant under the three conjugations. The norm is <strong>not multiplicative</strong>: $N(\tilde P\star\tilde Q) = \lvert H(\tilde P,\tilde Q)\rvert^{2}$, the defect is the discriminant $N(\tilde P)N(\tilde Q) - \lvert H(\tilde P,\tilde Q)\rvert^{2}\geq 0$, vanishing exactly on linearly dependent pairs, and the norm is multiplicative on the centre alone. What replaces multiplicativity is the exact identity $H(\tilde P\star\tilde Q,\tilde R) = H(\tilde P,\tilde Q)H(e_0,\tilde R)$. The norm polarises to the Hermitian form, $\Re H$ at the symmetric step and $H$ at the four-term display. What replaces the invertibility criterion is the <strong>definiteness</strong>, $N(\tilde{Q}) = 0\Leftrightarrow\tilde{Q} = 0$: the block has no nonzero isotropic vector and no invertible element, its element classification is two-way, and the complement of the origin is the zero-divisor set.</p>
+<p>The symmetric plain sesqualgebra $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ has <strong>no unit</strong>, because every value of the product is central and $\mathbb{B}$ has non-central elements; consequently it has <strong>no inverse</strong>, <strong>no group of units</strong> and no division structure, and the relative definitions are empty. It carries one algebraic norm, the diagonal of its scalar-part form,</p>
+<p>$$
+H(\tilde{Q}) = \mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr) = \sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2},
+$$</p>
+<p>a real non-negative definite quadratic map of signature $(8,0)$, invariant under the three conjugations. The algebraic norm is <strong>not multiplicative</strong>: $H(\tilde P\star\tilde Q) = \lvert H(\tilde P,\tilde Q)\rvert^{2}$, the defect is the discriminant $H(\tilde P)H(\tilde Q) - \lvert H(\tilde P,\tilde Q)\rvert^{2}\geq 0$, vanishing exactly on linearly dependent pairs, and multiplicativity holds on the centre alone. What replaces it is the exact identity $H(\tilde P\star\tilde Q,\tilde R) = H(\tilde P,\tilde Q)H(e_0,\tilde R)$, and the algebraic norm polarises to the Hermitian form, $\Re H$ at the symmetric step and $H$ at the four-term display. The <strong>absence of a criterion</strong> is the definiteness, $H(\tilde{Q}) = 0\Leftrightarrow\tilde{Q} = 0$: the block has no nonzero isotropic vector and no invertible element, and its element classification is two-way.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -192,30 +194,30 @@ $$</p>
 </tr>
 <tr>
 <td>$H(\tilde P,\tilde Q) = \sum_\mu P_\mu\overline{Q_\mu}$</td>
-<td>the Hermitian form defining the block</td>
+<td>the Hermitian form defining the block, the scalar-part form of the product</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$</td>
-<td>the norm of the block, the coefficient of the square</td>
+<td>$H(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>the algebraic norm of the block, one of the four algebraic norms of the space</td>
 </tr>
 <tr>
-<td>$\tilde{Q}\star\tilde{Q} = N(\tilde{Q})e_0$</td>
+<td>$\tilde{Q}\star\tilde{Q} = H(\tilde{Q})e_0$</td>
 <td>the square map, image $\mathbb{R}_{\geq0}e_0$</td>
 </tr>
 <tr>
-<td>$N(\tilde P\star\tilde Q) = \lvert H(\tilde P,\tilde Q)\rvert^{2}$</td>
-<td>the norm of a product</td>
+<td>$H(\tilde P\star\tilde Q) = \lvert H(\tilde P,\tilde Q)\rvert^{2}$</td>
+<td>the algebraic norm of a product</td>
 </tr>
 <tr>
 <td>$H(\tilde P\star\tilde Q,\tilde R) = H(\tilde P,\tilde Q)H(e_0,\tilde R)$</td>
 <td>the identity that replaces multiplicativity</td>
 </tr>
 <tr>
-<td>$H(\tilde P,\tilde Q) = \tfrac14\sum_k i^{k}N(\tilde P + i^{k}\tilde Q)$</td>
-<td>the Hermitian polarisation of the norm</td>
+<td>$H(\tilde P,\tilde Q) = \tfrac14\sum_k i^{k}H(\tilde P + i^{k}\tilde Q)$</td>
+<td>the Hermitian polarisation of the algebraic norm</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = 0\Leftrightarrow\tilde{Q} = 0$</td>
+<td>$H(\tilde{Q}) = 0\Leftrightarrow\tilde{Q} = 0$</td>
 <td>the definiteness, the substitute for the criterion</td>
 </tr>
 <tr>
@@ -226,9 +228,11 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md</code>), for the definition of the algebraic norm as the diagonal of a form and the four algebraic norms of the space.</li>
+<li><em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-forms-over-the-biquaternion-c-space.md</code>), for the Hermitian form $H$ and the table of the four forms.</li>
 <li><em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.md</code>), for the product, its class, its table and its placement among the twelve structures.</li>
-<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), for the relative notions of the unit, the inverse, the group of units and the norm, and for their four-product dictionary.</li>
-<li><em>Norm and Invertibility in the General Plain Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md</code>), for the norm and the invertibility of the parent product, the multiplicativity and the isotropic cone.</li>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), §<em>The Unit and the Inverse</em>, for the relative notions of the unit, the inverse and the group of units.</li>
+<li><em>Norm and Invertibility in the General Plain Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md</code>), for the algebraic norm $B$ of the plain product, which is not the form $H$ of this article.</li>
 <li><em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/the-hermitian-form-as-a-product-on-the-symmetric-plain-sesqualgebra.md</code>), for the form $H$ read as the product, its Gram matrix, its positivity and its restriction to the remarkable subspaces.</li>
 <li><em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the positivity and the cone of $H$.</li>
 <li><em>Zero Divisors of the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/zero-divisors-of-the-symmetric-plain-sesqualgebra.md</code>), for the zero-divisor set that is the complement of the origin.</li>
