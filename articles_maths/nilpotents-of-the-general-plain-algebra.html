@@ -82,21 +82,29 @@ $$</p>
 <p><strong>Corollary.</strong> Every nilpotent is pure, and every nonzero nilpotent is a zero divisor. Its only nonzero power relation is $\tilde\Upsilon^{2}=0$, the central zero, so its powers stop at the second.</p>
 <p>The criterion separates the class sharply: the nilpotents are the elements of the vector subspace (the kernel of the scalar part) whose vector part is isotropic for the complex bilinear form. An element with a nonzero scalar part is never nilpotent, however small its central square.</p>
 <h2 id="the-nilpotent-cone">The Nilpotent Cone</h2>
-<p>The set of nilpotents is the vanishing set of the two conditions of the criterion, and it is a cone. In the complex coordinates $\mathbf P=(P_1,P_2,P_3)$ the single complex equation $(\mathbf P,\mathbf P)=P_1^{2}+P_2^{2}+P_3^{2}=0$ is two real equations, and writing $P_k=p_k+ip_k'$ with real $p_k,p_k'$ they are</p>
+<p>The set of nilpotents is the vanishing set of the two conditions of the criterion, and it is a cone. The vector part of a nilpotent is a complex vector $\mathbf P=(P_1,P_2,P_3)$, and its coefficients split into a real and an imaginary part, $P_k=p_k+ip'_k$ with real $p_k,p'_k$ (§<em>The element and its coefficients</em> of <em>Conventions in Mathematics</em>), so that the vector part splits into two real vector parts carrying the central imaginary on the second,</p>
 <p>$$
-p_1^{2}+p_2^{2}+p_3^{2}=p_1'^{2}+p_2'^{2}+p_3'^{2},\qquad p_1p_1'+p_2p_2'+p_3p_3'=0 .
+\mathbf P=\mathbf p+i\mathbf p',\qquad \mathbf p=\sum_{k=1}^{3}p_ke_k,\qquad \mathbf p'=\sum_{k=1}^{3}p'_ke_k .
 $$</p>
+<p>The single complex equation $(\mathbf P,\mathbf P)=P_1^{2}+P_2^{2}+P_3^{2}=0$ is then the two real equations</p>
+<p>$$
+\mathbf p\cdot\mathbf p=\mathbf p'\cdot\mathbf p',\qquad \mathbf p\cdot\mathbf p'=0 ,
+$$</p>
+<p>that is $\sum_kp_k^{2}=\sum_kp'^{2}_k$ and $\sum_kp_kp'_k=0$: the two real parts of a nilpotent have equal length and are orthogonal.</p>
 <p><strong>Proposition (the cone).</strong> The nilpotents form the <strong>nilpotent cone</strong></p>
 <p>$$
 \{\tilde\Upsilon=P_1e_1+P_2e_2+P_3e_3 : P_1^{2}+P_2^{2}+P_3^{2}=0\},
 $$</p>
 <p>a complex cone of complex dimension two and real dimension four, a four-real-parameter family. Its nonzero elements are written</p>
 <p>$$
-\tilde\Upsilon=r(\hat u+i\hat v),\qquad r>0,
+\tilde\Upsilon=\mathbf p+i\mathbf p',\qquad \lvert\mathbf p\rvert=\lvert\mathbf p'\rvert,\qquad \mathbf p\cdot\mathbf p'=0 ,
 $$</p>
-<p>where $\hat u,\hat v$ is an orthonormal pair of real unit vectors and $(\hat u,\hat v)$ is read in the real Euclidean sense.</p>
-<p><strong>Proof.</strong> The first is the criterion. The complex equation cuts a complex-quadric cone in $\mathbb{C}^{3}$, of complex dimension two; as a real cone it is the two real equations displayed, whose independence away from the origin gives real dimension four. For the parametrisation, the two real equations say that the real part $\boldsymbol{\rho}=r\hat u$ and the imaginary part $\boldsymbol{\rho}'=r\hat v$ have equal length and are orthogonal, which is the stated form; conversely such a pair satisfies both.</p>
-<p>The cone is stable under complex scaling, $\tilde\Upsilon\mapsto\lambda\tilde\Upsilon$ for $\lambda\in\mathbb{C}$, because the isotropy condition is homogeneous of degree two; it is stable under the star, which conjugates the two real parts; and the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$, the other element of the same line. The parameter $r$ is the common length of the two real parts, and the pair $(\hat u,\hat v)$ is determined up to the simultaneous sign change $(\hat u,\hat v)\mapsto(-\hat u,-\hat v)$.</p>
+<p>and equivalently, with $r>0$ the common length and $\hat{\mathbf p},\hat{\mathbf p}'$ the two real unit directions,</p>
+<p>$$
+\tilde\Upsilon=r(\hat{\mathbf p}+i\hat{\mathbf p}'),\qquad r>0,\qquad \lvert\hat{\mathbf p}\rvert=\lvert\hat{\mathbf p}'\rvert=1,\qquad \hat{\mathbf p}\cdot\hat{\mathbf p}'=0 .
+$$</p>
+<p><strong>Proof.</strong> The first is the criterion. The complex equation cuts a complex-quadric cone in $\mathbb{C}^{3}$, of complex dimension two; as a real cone it is the two real equations displayed, whose independence away from the origin gives real dimension four. For the parametrisation, the two real equations say that the real part $\mathbf p=r\hat{\mathbf p}$ and the imaginary part $\mathbf p'=r\hat{\mathbf p}'$ have equal length and are orthogonal, which is the stated form; conversely such a pair satisfies both.</p>
+<p>The cone is stable under complex scaling, $\tilde\Upsilon\mapsto\lambda\tilde\Upsilon$ for $\lambda\in\mathbb{C}$, because the isotropy condition is homogeneous of degree two; it is stable under the star, which conjugates the two real parts; and the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$, the other element of the same line. The parameter $r$ is the common length of the two real parts, and the pair $(\hat{\mathbf p},\hat{\mathbf p}')$ is determined up to the simultaneous sign change $(\hat{\mathbf p},\hat{\mathbf p}')\mapsto(-\hat{\mathbf p},-\hat{\mathbf p}')$.</p>
 <h2 id="index-two">Index Two</h2>
 <p><strong>Theorem (no higher index).</strong> For the general plain algebra, $\tilde P^{3}=0$ exactly when $\tilde P^{2}=0$. Every nilpotent is of index two, and the algebra carries none of index three or more.</p>
 <p><strong>Proof.</strong> The cube follows from the displayed square,</p>
@@ -122,21 +130,21 @@ $$</p>
 <thead>
 <tr>
 <th>conjugation</th>
-<th>effect on a nilpotent $\tilde\Upsilon=r(\hat u+i\hat v)$</th>
+<th>effect on a nilpotent $\tilde\Upsilon=r(\hat{\mathbf p}+i\hat{\mathbf p}')$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>natural, ${}^{\natural}$</td>
-<td>$-\tilde\Upsilon=-r(\hat u+i\hat v)$, a nilpotent</td>
+<td>$-\tilde\Upsilon=-r(\hat{\mathbf p}+i\hat{\mathbf p}')$, a nilpotent</td>
 </tr>
 <tr>
 <td>star, ${}^{*}$</td>
-<td>$\overline{\tilde\Upsilon}=r(\hat u-i\hat v)$, a nilpotent</td>
+<td>$\overline{\tilde\Upsilon}=r(\hat{\mathbf p}-i\hat{\mathbf p}')$, a nilpotent</td>
 </tr>
 <tr>
 <td>Hermitian, ${}^{\natural}\circ{}^{*}={}^{*}\circ{}^{\natural}=\overline{\cdot}$</td>
-<td>$-\overline{\tilde\Upsilon}=-r(\hat u-i\hat v)$, a nilpotent</td>
+<td>$-\overline{\tilde\Upsilon}=-r(\hat{\mathbf p}-i\hat{\mathbf p}')$, a nilpotent</td>
 </tr>
 <tr>
 <td>reversal</td>
@@ -144,8 +152,8 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The star fixes no nonzero nilpotent: a star-fixed element has real coefficients, and a pure real vector with $(\mathbf P,\mathbf P)=p_1^{2}+p_2^{2}+p_3^{2}=0$ vanishes, since the three squares are nonnegative. So the star pairs the nilpotents two by two, exactly as it pairs the nonzero roots of $-1$ that are not Hermitian (<em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em>). The class is a cone, and each conjugation is a real-linear bijection of the cone onto itself.</p>
-<p>The real and imaginary parts make the same point. Writing $\tilde\Upsilon=\boldsymbol{\rho}+i\boldsymbol{\rho}'$ with $\boldsymbol{\rho},\boldsymbol{\rho}'$ real pure vectors, the nilpotency is the pair of real equations of §<em>The Nilpotent Cone</em>: the two real parts of a nilpotent are orthogonal and of equal length. This is a real condition, and the class is real-algebraically defined even though the algebra is complex.</p>
+<p>The star fixes no nonzero nilpotent: a star-fixed element has real coefficients, and a pure real vector $\mathbf p$ with $\mathbf p\cdot\mathbf p=p_1^{2}+p_2^{2}+p_3^{2}=0$ vanishes, since the three squares are nonnegative. So the star pairs the nilpotents two by two, exactly as it pairs the nonzero roots of $-1$ that are not Hermitian (<em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em>). The class is a cone, and each conjugation is a real-linear bijection of the cone onto itself.</p>
+<p>The real and imaginary parts make the same point. Writing $\tilde\Upsilon=\mathbf p+i\mathbf p'$ with $\mathbf p,\mathbf p'$ real pure vectors, the nilpotency is the pair of real equations of §<em>The Nilpotent Cone</em>: the two real parts of a nilpotent are orthogonal and of equal length. This is a real condition, and the class is real-algebraically defined even though the algebra is complex.</p>
 <h2 id="the-matrix-model">The Matrix Model</h2>
 <p>In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> the criterion becomes the linear algebra of a trace-free singular matrix.</p>
 <p><strong>Theorem.</strong> Under the isomorphism $\Phi$ with $\Phi(\tilde P)=P_0\mathrm{I}_2-iP_1\sigma_1-iP_2\sigma_2-iP_3\sigma_3$ the following coincide: $\tilde P$ is a nilpotent; $\Phi(\tilde P)$ is a nonzero nilpotent matrix; $\Phi(\tilde P)$ is trace-free, $\mathrm{tr}\,\Phi(\tilde P)=2P_0=0$, and singular, $\det\Phi(\tilde P)=c(\tilde P)=0$.</p>
@@ -198,7 +206,7 @@ $$</p>
 </table></div>
 <p>The entries are forced: the centre, the quaternion subspace and the anti-quaternion subspace consist of units and $0$ and carry no zero divisor; in the two Hermitian subspaces the square of an element is $2a_0\tilde Q$ and the Hermitian part of a nilpotent is $0$, so a Hermitian nilpotent vanishes. The vector subspace is thus the only remarkable subspace with a nonzero nilpotent, and every nonzero nilpotent lies in it. The vector subspace is not a subalgebra, but it is exactly the union of the scalar multiples of the nilpotents together with the origin, as the criterion shows.</p>
 <h2 id="summary">Summary</h2>
-<p>The nilpotents of the general plain algebra are the nonzero elements of vanishing square. The criterion is $P_0=0$ and $(\mathbf P,\mathbf P)=0$, so every nilpotent is pure and its vector part is isotropic for the complex bilinear form; the class is the nilpotent cone, a complex cone of complex dimension two and real dimension four, parametrised as $r(\hat u+i\hat v)$ over orthonormal pairs of real unit vectors. The algebra has no nilpotent of index three: $\tilde P^{3}=0$ exactly when $\tilde P^{2}=0$, so index two is the only index, and the powers of a nilpotent stop at the second.</p>
+<p>The nilpotents of the general plain algebra are the nonzero elements of vanishing square. The criterion is $P_0=0$ and $(\mathbf P,\mathbf P)=0$, so every nilpotent is pure and its vector part is isotropic for the complex bilinear form; the class is the nilpotent cone, a complex cone of complex dimension two and real dimension four, parametrised as $r(\hat{\mathbf p}+i\hat{\mathbf p}')$ over orthonormal pairs of real unit vectors. The algebra has no nilpotent of index three: $\tilde P^{3}=0$ exactly when $\tilde P^{2}=0$, so index two is the only index, and the powers of a nilpotent stop at the second.</p>
 <p>Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor and the ideal it generates is its own annihilator; the nilpotents are the pure family of the zero-divisor set, the non-pure family being the complex multiples of the nontrivial idempotents, and the two classes meet only at $0$. The star preserves the nilpotent set and fixes none of it, the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$, and in the model $M_2(\mathbb{C})$ the nilpotents are the nonzero trace-free singular matrices, the conjugates of the strictly triangular Jordan block, with the two off-diagonal Peirce units as the standard pair. Of the remarkable subspaces only the vector subspace contains one, and it contains all of them.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -234,7 +242,11 @@ $$</p>
 <td>the nilpotent cone, $\{P_0=0,\ (\mathbf P,\mathbf P)=0\}$</td>
 </tr>
 <tr>
-<td>$r(\hat u+i\hat v)$</td>
+<td>$\mathbf p,\mathbf p'$</td>
+<td>the two real vector parts of a nilpotent, $\tilde\Upsilon=\mathbf p+i\mathbf p'$ with $P_k=p_k+ip'_k$, of equal length and orthogonal</td>
+</tr>
+<tr>
+<td>$r(\hat{\mathbf p}+i\hat{\mathbf p}')$</td>
 <td>the parametrisation of the cone over orthonormal real unit pairs</td>
 </tr>
 </tbody>

@@ -186,6 +186,7 @@ conjugations, and the symbol of the idempotents.</p>
 <th>System</th>
 <th>Name</th>
 <th>Generic element</th>
+<th>Scalar–vector decomposition</th>
 <th>Coefficients</th>
 </tr>
 </thead>
@@ -195,11 +196,13 @@ conjugations, and the symbol of the idempotents.</p>
 <td>Booleans</td>
 <td>$\alpha, \beta, \dots$</td>
 <td>—</td>
+<td>—</td>
 </tr>
 <tr>
 <td>$\mathbb{N}$</td>
 <td>naturals</td>
 <td>$n, m, \dots$</td>
+<td>—</td>
 <td>—</td>
 </tr>
 <tr>
@@ -207,11 +210,13 @@ conjugations, and the symbol of the idempotents.</p>
 <td>integers</td>
 <td>$n, m, \dots$</td>
 <td>—</td>
+<td>—</td>
 </tr>
 <tr>
 <td>$\mathbb{Q}$</td>
 <td>rationals</td>
 <td>$a, b, c, \dots$</td>
+<td>—</td>
 <td>—</td>
 </tr>
 <tr>
@@ -219,58 +224,67 @@ conjugations, and the symbol of the idempotents.</p>
 <td>reals</td>
 <td>$a, b, c$</td>
 <td>—</td>
+<td>—</td>
 </tr>
 <tr>
 <td>$\mathbb{C}$</td>
 <td>complex numbers</td>
 <td>$A = a + ia'$, $B = b + ib'$</td>
+<td>scalar $a$, vector $ia'$</td>
 <td>real, $a, a'$</td>
 </tr>
 <tr>
 <td>$\mathbb{D}$</td>
 <td>split-complex numbers</td>
 <td>$A = a + ja'$, $B = b + jb'$</td>
+<td>scalar $a$, vector $ja'$</td>
 <td>real, $a, a'$</td>
 </tr>
 <tr>
 <td>$\mathbb{D}'$</td>
 <td>dual numbers</td>
 <td>$A = a + \varepsilon a'$, $B = b + \varepsilon b'$</td>
+<td>scalar $a$, vector $\varepsilon a'$</td>
 <td>real, $a, a'$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}$</td>
 <td>quaternions</td>
 <td>$\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$</td>
+<td>$q_0e_0 + \mathbf q$, $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$</td>
 <td>real</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathrm{s}}$</td>
 <td>split-quaternions</td>
 <td>$\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$</td>
+<td>$q_0e_0 + \mathbf q$, $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$</td>
 <td>real</td>
 </tr>
 <tr>
 <td>$\mathbb{B}$</td>
 <td>biquaternions</td>
 <td>$\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$</td>
+<td>$Q_0e_0 + \mathbf Q$, $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{C}$</td>
 <td>complex, $Q_\mu = q_\mu + iq'_\mu$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{D}}$</td>
 <td>split-biquaternions</td>
 <td>$\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$</td>
+<td>$Q_0e_0 + \mathbf Q$, $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{D}$</td>
 <td>split-complex, $Q_\mu = q_\mu + jq'_\mu$</td>
 </tr>
 <tr>
 <td>$\mathbb{O}$</td>
 <td>octonions</td>
 <td>$\tilde o = o_0e_0 + o_1e_1 + \cdots + o_7e_7$</td>
+<td>$o_0e_0 + \mathbf o$, $\mathbf o = o_1e_1 + \cdots + o_7e_7$</td>
 <td>real</td>
 </tr>
 </tbody>
 </table></div>
-<p>Four rules are read off the table. <strong>A complex element carries a majuscule</strong>, $A$ or $B$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. <strong>The second coordinate of a complex element carries a prime</strong>, $A = a + ia'$, with $j$ in place of $i$ for the split-complex numbers and $\varepsilon$ for the dual numbers. <strong>The four quaternionic elements carry a tilde</strong>: lower case for the quaternions and the split-quaternions, $\tilde q$, and upper case for the biquaternions and the split-biquaternions, $\tilde Q$. And <strong>the arithmetic systems and the reals carry a letter that is theirs alone</strong>: $\alpha, \beta$ the Booleans, $n, m$ the naturals and the integers, and $a, b, c$ the rationals and the reals — a letter, no prime, no tilde, no coefficient sector, since these elements are not written as linear combinations.</p>
+<p>Five rules are read off the table. <strong>A complex element carries a majuscule</strong>, $A$ or $B$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. <strong>The second coordinate of a complex element carries a prime</strong>, $A = a + ia'$, with $j$ in place of $i$ for the split-complex numbers and $\varepsilon$ for the dual numbers. <strong>The four quaternionic elements carry a tilde</strong>: lower case for the quaternions and the split-quaternions, $\tilde q$, and upper case for the biquaternions and the split-biquaternions, $\tilde Q$. And <strong>the arithmetic systems and the reals carry a letter that is theirs alone</strong>: $\alpha, \beta$ the Booleans, $n, m$ the naturals and the integers, and $a, b, c$ the rationals and the reals — a letter, no prime, no tilde, no coefficient sector, since these elements are not written as linear combinations. Finally, <strong>the element is a scalar part plus a vector part</strong>: the scalar part is carried by the unit — $1$ in the commutative two-parameter systems, $e_0$ in the quaternionic and octonionic ones — and the vector part by the remaining basis directions, assembled in the bold letter $\mathbf q$, $\mathbf Q$ or $\mathbf o$, so that $\tilde Q = Q_0e_0 + \mathbf Q$ is written in the coefficients according to the system; the two are the fixed and the anti-fixed spaces of the intrinsic conjugate, and the arithmetic systems, which are not written as linear combinations, have no vector part.</p>
 <p>For the biquaternions, whose basis is $e_0, e_1, e_2, e_3$ with $e_0 = 1$ the unit,</p>
 <p>$$
 \tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3, \qquad Q_\mu = q_\mu + iq'_\mu,

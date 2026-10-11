@@ -52,49 +52,49 @@
       <div class="article-body">
         <h1 id="split-quaternion-roots-of-minus-one"><strong>Split-Quaternion Roots of Minus One</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article determines the solutions of the equation $\xi^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.</p>
+<p>This article determines the solutions of the equation $\tilde\xi^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.</p>
 <p>The split-quaternion algebra, its basis, its vector subspace $V$, its central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its conjugation are assumed from <em>Split-Quaternion Algebra</em>; the metrical reading of $N$ is in <em>Split-Quaternion Norm and Invertibility</em>. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Zero Divisors</em>; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in <em>Split-Quaternions and Hyperbolic Geometry</em>, and the double cover of the Lorentz group that acts on it in <em>Split-Quaternion Rotations and the Lorentz Group</em>. Nothing physical is invoked.</p>
 <h2 id="the-equation-and-the-reduction-to-the-vector-subspace">The Equation and the Reduction to the Vector Subspace</h2>
-<p><strong>Theorem (The Solutions).</strong> Let $\xi = q_0 + \mathbf{u}$ with $q_0 \in \mathbb{R}$ and $\mathbf{u} \in V$. Then $\xi^2 = -1$ if and only if</p>
+<p><strong>Theorem (The Solutions).</strong> Let $\tilde\xi = q_0 + \mathbf{u}$ with $q_0 \in \mathbb{R}$ and $\mathbf{u} \in V$. Then $\tilde\xi^2 = -1$ if and only if</p>
 <p>$$
 q_0 = 0 \quad \text{and} \quad N(\mathbf{u}) = 1 .
 $$</p>
 <p>Hence the solution set is</p>
 <p>$$
-\mathcal{R}_{-1} = \{\xi \in V : N(\xi) = 1\} = \{b e_1 + q_2 e_2 + q_3 e_3 : q_1^2 - q_2^2 - q_3^2 = 1\},
+\mathcal{R}_{-1} = \{\tilde\xi \in V : N(\tilde\xi) = 1\} = \{b e_1 + q_2 e_2 + q_3 e_3 : q_1^2 - q_2^2 - q_3^2 = 1\},
 $$</p>
 <p>a subset of the vector subspace. No solution has a nonzero scalar part.</p>
-<p><strong>Proof.</strong> For an element of $V$ the square is $-\!N$ times the identity, by (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Split-Quaternion Norm</em>); so for $\xi = q_0 + \mathbf{u}$,</p>
+<p><strong>Proof.</strong> For an element of $V$ the square is $-\!N$ times the identity, by (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Split-Quaternion Norm</em>); so for $\tilde\xi = q_0 + \mathbf{u}$,</p>
 <p>$$
-\xi^2 = q_0^2 + 2q_0\mathbf{u} + \mathbf{u}^2 = \big(q_0^2 - N(\mathbf{u})\big) + 2q_0\mathbf{u},
+\tilde\xi^2 = q_0^2 + 2q_0\mathbf{u} + \mathbf{u}^2 = \big(q_0^2 - N(\mathbf{u})\big) + 2q_0\mathbf{u},
 $$</p>
-<p>where the first parenthesis is scalar and the second term is a vector. The equation $\xi^2 = -1$ splits into the two equations</p>
+<p>where the first parenthesis is scalar and the second term is a vector. The equation $\tilde\xi^2 = -1$ splits into the two equations</p>
 <p>$$
 q_0^2 - N(\mathbf{u}) = -1, \qquad 2q_0\mathbf{u} = 0 .
 $$</p>
-<p>If $q_0 \neq 0$ the second equation gives $\mathbf{u} = 0$, and the first then gives $q_0^2 = -1$, which has no real solution. Hence $q_0 = 0$, and the first equation becomes $-N(\mathbf{u}) = -1$, that is $N(\mathbf{u}) = 1$. Conversely these two conditions give $\xi^2 = -N(\xi) = -1$.</p>
+<p>If $q_0 \neq 0$ the second equation gives $\mathbf{u} = 0$, and the first then gives $q_0^2 = -1$, which has no real solution. Hence $q_0 = 0$, and the first equation becomes $-N(\mathbf{u}) = -1$, that is $N(\mathbf{u}) = 1$. Conversely these two conditions give $\tilde\xi^2 = -N(\tilde\xi) = -1$.</p>
 <p><strong>Corollary (The Root Set Is the Level Set $N = 1$).</strong> The solution set is a two-dimensional subset of the three-dimensional vector space $V$, namely the level set $N = 1$ in $V$, with two components</p>
 <p>$$
 \mathcal{R}_{-1} = \{b^2 - q_2^2 - q_3^2 = 1\} = \{b \geq 1\} \cup \{b \leq -1\},
 $$</p>
 <p>the two components being distinguished by the sign of the coefficient $q_1$ of $e_1$. The set is not connected, and each component is diffeomorphic to a plane.</p>
 <p><strong>Proof.</strong> The two components are the intersections of the level set with the closed half-spaces $q_1 \geq 1$ and $q_1 \leq -1$; on the first, $q_1 = \sqrt{1 + q_2^2 + q_3^2}$, and the map $(\xi_2, \xi_3) \mapsto \big(\sqrt{1 + \xi_2^2 + \xi_3^2}, \xi_2, \xi_3\big)$ is a diffeomorphism from $\mathbb{R}^2$ onto it, and similarly for the second.</p>
-<p>The solutions therefore have $N(\xi) = 1$, so by the invertibility criterion every solution is a <strong>unit</strong> and none is a zero divisor. This is the first point of contact with <em>Split-Quaternion Zero Divisors</em> and it is taken up again in <em>The Relation to the Idempotents and to the Zero Divisors</em> below.</p>
+<p>The solutions therefore have $N(\tilde\xi) = 1$, so by the invertibility criterion every solution is a <strong>unit</strong> and none is a zero divisor. This is the first point of contact with <em>Split-Quaternion Zero Divisors</em> and it is taken up again in <em>The Relation to the Idempotents and to the Zero Divisors</em> below.</p>
 <h2 id="identification-with-the-complex-structures-of-the-plane">Identification with the Complex Structures of the Plane</h2>
-<p><strong>Theorem (The Root Set Is the Level Set $N = 1$).</strong> The solutions of $\xi^2 = -1$ are exactly the vectors of the vector subspace with $N = 1$:</p>
+<p><strong>Theorem (The Root Set Is the Level Set $N = 1$).</strong> The solutions of $\tilde\xi^2 = -1$ are exactly the vectors of the vector subspace with $N = 1$:</p>
 <p>$$
-\mathcal{R}_{-1} = \{\xi \in V : N(\xi) = 1\},
+\mathcal{R}_{-1} = \{\tilde\xi \in V : N(\tilde\xi) = 1\},
 $$</p>
-<p>the level set $q_1^2 - q_2^2 - q_3^2 = 1$; every solution has $\operatorname{Sc}\xi = 0$ and $N(\xi) = 1$, and conversely.</p>
-<p><strong>Proof.</strong> Write $\xi = \xi_0 + \mathbf v$ with $\xi_0 \in S$ and $\mathbf v \in V$. Then $\xi^2 = \xi_0^2 + 2\xi_0\mathbf v + \mathbf v^2 = \xi_0^2 + 2\xi_0\mathbf v - N(\mathbf v)$; this equals $-1$ exactly when the $V$-component $2\xi_0\mathbf v$ vanishes, so $\xi_0 = 0$ or $\mathbf v = 0$. If $\mathbf v = 0$ then $\xi_0^2 = -1$, impossible over $\mathbb{R}$; hence $\xi_0 = 0$ and the $S$-component gives $-N(\mathbf v) = -1$, that is $N(\xi) = 1$. Conversely $\xi \in V$ with $N(\xi) = 1$ has $\xi^2 = -N(\xi) = -1$.</p>
-<p><strong>Corollary (The Root Set as Complex Lines).</strong> For each solution $\xi$, the subalgebra generated by $\xi$ is</p>
+<p>the level set $q_1^2 - q_2^2 - q_3^2 = 1$; every solution has $\operatorname{Sc}\tilde\xi = 0$ and $N(\tilde\xi) = 1$, and conversely.</p>
+<p><strong>Proof.</strong> Write $\tilde\xi = \xi_0 + \mathbf v$ with $\xi_0 \in S$ and $\mathbf v \in V$. Then $\tilde\xi^2 = \xi_0^2 + 2\xi_0\mathbf v + \mathbf v^2 = \xi_0^2 + 2\xi_0\mathbf v - N(\mathbf v)$; this equals $-1$ exactly when the $V$-component $2\xi_0\mathbf v$ vanishes, so $\xi_0 = 0$ or $\mathbf v = 0$. If $\mathbf v = 0$ then $\xi_0^2 = -1$, impossible over $\mathbb{R}$; hence $\xi_0 = 0$ and the $S$-component gives $-N(\mathbf v) = -1$, that is $N(\tilde\xi) = 1$. Conversely $\tilde\xi \in V$ with $N(\tilde\xi) = 1$ has $\tilde\xi^2 = -N(\tilde\xi) = -1$.</p>
+<p><strong>Corollary (The Root Set as Complex Lines).</strong> For each solution $\tilde\xi$, the subalgebra generated by $\tilde\xi$ is</p>
 <p>$$
-\mathbb{R}[\xi] = \{p + q\xi : p, q \in \mathbb{R}\} \cong \mathbb{C},
+\mathbb{R}[\tilde\xi] = \{p + q\tilde\xi : p, q \in \mathbb{R}\} \cong \mathbb{C},
 $$</p>
-<p>a copy of the complex numbers inside $\mathbb{H}_{\mathrm{s}}$, and every subalgebra of $\mathbb{H}_{\mathrm{s}}$ isomorphic to $\mathbb{C}$ arises in this way. The correspondence is two-to-one: $-\xi$ is again a solution and $\mathbb{R}[-\xi] = \mathbb{R}[\xi]$, so the map $\xi \mapsto \mathbb{R}[\xi]$ induces a bijection between the antipodal pairs $\{\pm\xi\}$ and the copies of $\mathbb{C}$, the two members of a pair lying on the two different components.</p>
-<p><strong>Proof.</strong> $\xi^2 = -1$ gives the isomorphism $p + q\xi \mapsto p + \mathrm{i}q$; conversely a subalgebra isomorphic to $\mathbb{C}$ is generated over $\mathbb{R}$ by an element with square $-1$, which is a solution, so the map is onto. For the fibres: the elements of $\mathbb{R}[\xi]$ with square $-1$ are the $p + q\xi$ with $pq = 0$ and $p^2 - q^2 = -1$, that is $p = 0$, $q = \pm1$, namely $\pm\xi$; and $\xi$ and $-\xi$ lie on the two sheets, their coefficients of $e_1$ being opposite.</p>
+<p>a copy of the complex numbers inside $\mathbb{H}_{\mathrm{s}}$, and every subalgebra of $\mathbb{H}_{\mathrm{s}}$ isomorphic to $\mathbb{C}$ arises in this way. The correspondence is two-to-one: $-\tilde\xi$ is again a solution and $\mathbb{R}[-\tilde\xi] = \mathbb{R}[\tilde\xi]$, so the map $\tilde\xi \mapsto \mathbb{R}[\tilde\xi]$ induces a bijection between the antipodal pairs $\{\pm\tilde\xi\}$ and the copies of $\mathbb{C}$, the two members of a pair lying on the two different components.</p>
+<p><strong>Proof.</strong> $\tilde\xi^2 = -1$ gives the isomorphism $p + q\tilde\xi \mapsto p + \mathrm{i}q$; conversely a subalgebra isomorphic to $\mathbb{C}$ is generated over $\mathbb{R}$ by an element with square $-1$, which is a solution, so the map is onto. For the fibres: the elements of $\mathbb{R}[\tilde\xi]$ with square $-1$ are the $p + q\tilde\xi$ with $pq = 0$ and $p^2 - q^2 = -1$, that is $p = 0$, $q = \pm1$, namely $\pm\tilde\xi$; and $\tilde\xi$ and $-\tilde\xi$ lie on the two sheets, their coefficients of $e_1$ being opposite.</p>
 <h2 id="the-root-set-as-a-conjugacy-class">The Root Set as a Conjugacy Class</h2>
-<p><strong>Theorem (A Single Conjugacy Class).</strong> All solutions of $\xi^2 = -1$ are conjugate to one another under the group of units:</p>
+<p><strong>Theorem (A Single Conjugacy Class).</strong> All solutions of $\tilde\xi^2 = -1$ are conjugate to one another under the group of units:</p>
 <p>$$
 \mathcal{R}_{-1} = \{g e_1 g^{-1} : g \in \mathbb{H}_{\mathrm{s}}^{\times}\} .
 $$</p>
@@ -137,11 +137,11 @@ $$</p>
 $$</p>
 <p>so $\eta$ lies in the $-1$ eigenspace of the conjugation, which is $V$; and $\eta^2 = 4p^2 - 4p + 1 = 1$. The element $p$ is recovered from $\eta$ as $\tfrac12(1+\eta)$, so the correspondence is bijective.</p>
 <h3 id="the-roots-are-not-zero-divisors">The Roots Are Not Zero Divisors</h3>
-<p><strong>Theorem (Disjointness and Generation).</strong> No solution of $\xi^2 = -1$ is a zero divisor. However, every solution generates a zero divisor by multiplication by an idempotent: for each solution $\xi$ and each idempotent $p$ of a root of $+1$, the product $\xi p$ is a nonzero zero divisor, since</p>
+<p><strong>Theorem (Disjointness and Generation).</strong> No solution of $\tilde\xi^2 = -1$ is a zero divisor. However, every solution generates a zero divisor by multiplication by an idempotent: for each solution $\tilde\xi$ and each idempotent $p$ of a root of $+1$, the product $\tilde\xi p$ is a nonzero zero divisor, since</p>
 <p>$$
-N(\xi p) = N(\xi) N(p) = 1 \cdot 0 = 0 .
+N(\tilde\xi p) = N(\tilde\xi) N(p) = 1 \cdot 0 = 0 .
 $$</p>
-<p><strong>Proof.</strong> $N(\xi) = 1 \neq 0$, so $\xi$ is a unit and not a zero divisor, by <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>. The product $\xi p$ is nonzero because $\xi$ is invertible and $p \neq 0$, and its split-quaternion norm is zero by multiplicativity and the vanishing of $N(p)$.</p>
+<p><strong>Proof.</strong> $N(\tilde\xi) = 1 \neq 0$, so $\tilde\xi$ is a unit and not a zero divisor, by <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>. The product $\tilde\xi p$ is nonzero because $\tilde\xi$ is invertible and $p \neq 0$, and its split-quaternion norm is zero by multiplicativity and the vanishing of $N(p)$.</p>
 <p>The picture is therefore the following. The roots of $+1$ in $V$ form the level set $N = -1$ and produce the idempotents, which are zero divisors and split the algebra; the roots of $-1$ form the level set $N = 1$, produce the copies of $\mathbb{C}$, and are units. The two loci are disjoint level sets in the same three-dimensional space $V$, one cut out by $N = -1$ and one by $N = 1$.</p>
 <h2 id="comparison-with-the-quaternion-and-biquaternion-cases">Comparison with the Quaternion and Biquaternion Cases</h2>
 <h3 id="the-quaternion-case">The Quaternion Case</h3>
@@ -157,8 +157,8 @@ $$</p>
 <tbody>
 <tr>
 <td>equation</td>
-<td>$\xi^2 = -1$</td>
-<td>$\xi^2 = -1$</td>
+<td>$\tilde\xi^2 = -1$</td>
+<td>$\tilde\xi^2 = -1$</td>
 </tr>
 <tr>
 <td>solution set</td>
@@ -189,12 +189,12 @@ $$</p>
 </table></div>
 <p>The quaternion column is the standard description of the pure imaginary units with $N = 1$, recorded in <em>Quaternion Algebra</em>, §<em>Basic Properties</em>: for a pure quaternion $\mathbf{u}$ one has $\mathbf{u}^2 = -N(\mathbf{u})$, so the solutions are the elements of the level set $\{N = 1\}$ of the imaginary part. The compactness of the quaternion case and the connectivity of the two components in the split case are topological statements and belong to <em>Split-Quaternion Topology</em>; what is used here is the algebraic statement that the solutions are the complex structures of a plane, which in the quaternion case are the complex structures of the imaginary three-space and in the split case are those of a real two-space.</p>
 <h3 id="the-biquaternion-case">The Biquaternion Case</h3>
-<p>The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table is a later system of Part V, treated under Biquaternions, and nothing of it is used here. One structural remark is available from the conventions alone: $\mathbb{B}$ is an algebra over the field $\mathbb{C}$, and the equation $\xi^2 = -1$ over a complex algebra has the two central solutions $\xi = \pm i$ in addition to whatever further solutions the embedded real structure supplies; the root set is therefore strictly larger there, and its classification belongs to the later category. The present article is complete for the algebra over $\mathbb{R}$.</p>
+<p>The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table is a later system of Part V, treated under Biquaternions, and nothing of it is used here. One structural remark is available from the conventions alone: $\mathbb{B}$ is an algebra over the field $\mathbb{C}$, and the equation $\tilde\Xi^2 = -1$ over a complex algebra has the two central solutions $\tilde\Xi = \pm i$ in addition to whatever further solutions the embedded real structure supplies; the root set is therefore strictly larger there, and its classification belongs to the later category. The present article is complete for the algebra over $\mathbb{R}$.</p>
 <h2 id="summary">Summary</h2>
-<p>The solutions of $\xi^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $N(\xi) = 1$, that is, the points of the level set $q_1^2 - q_2^2 - q_3^2 = 1$; no solution has a nonzero scalar part, and every solution has $N = 1$, so every solution is a unit and none is a zero divisor.</p>
-<p>Each solution is a vector of the vector subspace with $\operatorname{Sc} = 0$ and $N = 1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is two-to-one, $\xi$ and $-\xi$ generating the same copy, so that the antipodal pairs correspond bijectively to the copies of $\mathbb{C}$, one point of each pair on each sheet.</p>
+<p>The solutions of $\tilde\xi^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $N(\tilde\xi) = 1$, that is, the points of the level set $q_1^2 - q_2^2 - q_3^2 = 1$; no solution has a nonzero scalar part, and every solution has $N = 1$, so every solution is a unit and none is a zero divisor.</p>
+<p>Each solution is a vector of the vector subspace with $\operatorname{Sc} = 0$ and $N = 1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is two-to-one, $\tilde\xi$ and $-\tilde\xi$ generating the same copy, so that the antipodal pairs correspond bijectively to the copies of $\mathbb{C}$, one point of each pair on each sheet.</p>
 <p>The solutions form a single conjugacy class, the class of $e_1$; the stabiliser of $e_1$ is its centraliser $\mathbb{C}^{\times}$, so the root set is the homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$, of real dimension two. The group $U \cong \mathrm{SL}_2(\mathbb{R})$ acts with two orbits, the two components, and each component is a copy of the hyperbolic plane $\mathrm{SL}_2(\mathbb{R})/SO(2)$.</p>
-<p>The roots of $+1$ play the companion role: they are $\pm 1$ together with the level set $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $\tilde\pi_{1,2}$ are the case $\eta = e_2$. Every solution of $\xi^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected two-dimensional set and the homogeneous space is $Sp(1)/U(1)$; the biquaternion case is a later system of Part V, named and pointed forward.</p>
+<p>The roots of $+1$ play the companion role: they are $\pm 1$ together with the level set $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $\tilde\pi_{1,2}$ are the case $\eta = e_2$. Every solution of $\tilde\xi^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected two-dimensional set and the homogeneous space is $Sp(1)/U(1)$; the biquaternion case is a later system of Part V, named and pointed forward.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -206,12 +206,12 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\xi^2 = -1$</td>
+<td>$\tilde\xi^2 = -1$</td>
 <td>the equation of the article</td>
 <td>this article</td>
 </tr>
 <tr>
-<td>$\mathcal{R}_{-1} = \{\xi \in V : N(\xi) = 1\}$</td>
+<td>$\mathcal{R}_{-1} = \{\tilde\xi \in V : N(\tilde\xi) = 1\}$</td>
 <td>the solution set</td>
 <td>this article</td>
 </tr>

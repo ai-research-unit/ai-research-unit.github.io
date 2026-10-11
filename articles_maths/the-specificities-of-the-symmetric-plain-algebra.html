@@ -52,82 +52,119 @@
       <div class="article-body">
         <h1 id="the-specificities-of-the-symmetric-plain-algebra"><strong>The Specificities of the Symmetric Plain Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Of the twelve algebraic structures that the complex space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries, exactly one makes it a <strong>Jordan algebra</strong>: the <strong>symmetric plain product</strong> $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of <em>Introduction to the Symmetric Plain Algebra of Biquaternions</em>, the multiplication named $\mathrm{SPA}$ in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. Every structural result of the block belongs to it alone — the generic trace and norm, the quadratic representation, the cubic Peirce identity and the Jordan Peirce decomposition — and this article states the exact reason, in one pair of laws, and then separates the twelve.</p>
-<p>The reason is not commutativity as such but the conjunction of commutativity with the <strong>Jordan identity</strong>. The sentence "an element satisfies a generic minimal polynomial of degree two" is a statement about the multiplication operator $L^{\circ}_{\tilde X}$, and it is the <strong>operator identity</strong></p>
+<p>The symmetric plain product is the commutative half of the plain product of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$,</p>
 <p>$$
-L^{\circ}_{\tilde X}\circ L^{\circ}_{\tilde X^{\circ2}}=L^{\circ}_{\tilde X^{\circ2}}\circ L^{\circ}_{\tilde X}\qquad\text{for every }\tilde X
+\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P),
 $$</p>
-<p>that carries it; for a commutative product this identity is exactly the Jordan identity, and among the twelve the symmetric plain product is the only commutative structure that satisfies it. Each of the eleven others is built from the plain product by twisting a slot with a conjugation or by (anti)symmetrising, and the four general products are not commutative, the two antisymmetric non-alternating parts fail the identity, the symmetric quaternionic product is commutative and fails the identity, and the two symmetric sesquilinear products are conjugate-commutative and fail it, so the failure is a structural consequence of how the twelve are made and not the accident of one witness.</p>
-<p>The consequence is the point of the article. Only in the symmetric plain algebra are the generic trace and norm, the quadratic representation, the cubic Peirce identity and the Jordan Peirce decomposition available as <strong>theorems</strong>. The identity itself holds elsewhere — at every element of the associative general plain product, at every element of the general quaternionic product, whose square is central, and vacuously for the two alternating antisymmetrisations — but no other structure carries the theory, because the criterion is the conjunction of the identity with commutativity and none of those four structures is commutative. The one genuine border case is the symmetric quaternionic product, whose product is commutative but whose operators fail the identity; it is <em>The Specificities of the Symmetric Quaternionic Algebra</em> and is stated here only as the boundary of the criterion.</p>
-<p><strong>Placement.</strong> The article is the closing entry of the <em>Specific Theory</em> section of the block, after <em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em> and after the Common Theory articles <em>Norm and Invertibility in the Symmetric Plain Algebra</em>, <em>Zero Divisors of the Symmetric Plain Algebra</em>, <em>Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Algebra</em>, <em>Square Roots of a General Element in the Symmetric Plain Algebra</em>, <em>Idempotents of the Symmetric Plain Algebra</em> and <em>Nilpotents of the Symmetric Plain Algebra</em>, whose results it reads back as consequences of one law. It is the twin of <em>The Specificities of the General Plain Algebra</em>, which states left alternativity as the criterion of the parent product and proves that the symmetric plain product fails it; the two are read together, and the pair of criteria is the reason the block and its parent share the square and share nothing of the operator theory.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$. The product written $\circ$ is a generic one, its identity stated at each use, and $\tilde X^{\circ2}=\tilde X\circ\tilde X$. The <strong>left multiplication</strong> of a product $\circ$ by $\tilde X$ is $L^{\circ}_{\tilde X}:\tilde Y\mapsto\tilde X\circ\tilde Y$, and $\mathrm{id}$ is the identity operator. An <strong>idempotent</strong> is an element equal to its square, a <strong>projector</strong> is an idempotent operator; the two levels are never interchanged. The twelve structures are coded as in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>: the four rows $\mathrm{G/A}$ with $\mathrm P$ or $\mathrm Q$ and $\mathrm A$ or $\mathrm S$, as $\mathrm{GPA},\mathrm{SPA},\mathrm{APA}$ and so on.</p>
-<h2 id="the-criterion">The Criterion</h2>
-<p><strong>Definition (the Jordan product law).</strong> A product $\circ$ satisfies the <strong>Jordan product law</strong>, and is called a <strong>Jordan product</strong>, when it is <strong>commutative</strong>,</p>
+<p>the multiplication of <em>Introduction to the Symmetric Plain Algebra of Biquaternions</em>. It makes the complex space a commutative unital Jordan algebra, and of the twelve structures of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> it is the only one that is a Jordan product. What is specific to the block is the structure a Jordan product carries and an arbitrary commutative product does not: a square that is the plain square, a multiplication operator that is the symmetric half of the two plain multiplications, a quadratic identity of degree two with a generic trace, a generic norm and an inverse, a quadratic representation, and a Peirce theory at the idempotents. Each is an explicit computation on the four coordinates, and each is developed below in the block's own terms.</p>
+<p>The block is exact in the opposite sense as well. The Jordan law is weaker than associativity, so the block does not inherit the parent's operator calculus: no non-trivial idempotent gives a projector, a square-zero element gives an operator of index three rather than a square-zero operator, the Peirce decomposition is cubic rather than quadratic, and the invertible elements form no group. Those absences are stated with the theorems they accompany, and §<em>The Isolation among the Twelve</em> names the one law from which the theorems and the absences both follow.</p>
+<p><strong>Placement.</strong> The article closes the <em>Specific Theory</em> section of the block, after <em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>, whose element theory it reads as a consequence of the law, and after the Common Theory articles <em>Norm and Invertibility in the Symmetric Plain Algebra</em>, <em>Zero Divisors of the Symmetric Plain Algebra</em>, <em>Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Algebra</em>, <em>Square Roots of a General Element in the Symmetric Plain Algebra</em>, <em>Idempotents of the Symmetric Plain Algebra</em> and <em>Nilpotents of the Symmetric Plain Algebra</em>. The trace form of the block is <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em>, its operators are <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, and the plain product it symmetrises is <em>Introduction to the General Plain Algebra of Biquaternions</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$, and $(\mathbf{Q},\mathbf{Q})=\sum_kQ_k^2$. The plain product is juxtaposition $\tilde P\tilde Q$; the product of the block is $\bullet$, the symmetrisation above, and $\tilde X^{\bullet2}=\tilde X\bullet\tilde X$. The natural conjugation is $\tilde Q^{\natural}=Q_0e_0-\mathbf{Q}$, and the biquaternion norm is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$. The <strong>left multiplication</strong> of the block is $L^{\bullet}_{\tilde X}:\tilde Y\mapsto\tilde X\bullet\tilde Y$, and $L_{\tilde X},R_{\tilde X}$ without a mark are the plain left and right multiplications. An <strong>idempotent</strong> is an element equal to its square, a <strong>projector</strong> an idempotent operator.</p>
+<h2 id="the-product-and-its-square">The Product and Its Square</h2>
+<p><strong>Proposition (the shape of the product).</strong> For $\tilde P=P_0e_0+\mathbf{P}$ and $\tilde Q=Q_0e_0+\mathbf{Q}$,</p>
 <p>$$
-\tilde X\circ\tilde Y=\tilde Y\circ\tilde X\qquad\text{for all }\tilde X,\tilde Y,
+\tilde P\bullet\tilde Q=\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]e_0+P_0\mathbf{Q}+Q_0\mathbf{P}.
 $$</p>
-<p>and satisfies the <strong>Jordan identity</strong></p>
+<p><em>Proof.</em> The plain product is $\tilde P\tilde Q=[P_0Q_0-(\mathbf{P},\mathbf{Q})]e_0+P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q}$, with $\mathbf{P}\times\mathbf{Q}$ the cross product of the vector parts; the reverse product carries $-\mathbf{P}\times\mathbf{Q}$ in its place, and the half-sum is the display.</p>
+<p>The block is therefore <strong>the plain product with the cross term dropped</strong>, and the cross term is exactly the antisymmetric part of the plain product.</p>
+<p><strong>Proposition (square, commutativity, unit).</strong> The block is commutative, unital with unit $e_0$, and</p>
 <p>$$
-(\tilde X^{\circ2}\circ\tilde Y)\circ\tilde X=\tilde X^{\circ2}\circ(\tilde Y\circ\tilde X)\qquad\text{for all }\tilde X,\tilde Y.
+\tilde Q\bullet\tilde Q=\tilde Q^2=\bigl[Q_0^2-(\mathbf{Q},\mathbf{Q})\bigr]e_0+2Q_0\mathbf{Q}.
 $$</p>
-<p>A commutative algebra whose product is a Jordan product is a <strong>Jordan algebra</strong>.</p>
-<p><strong>Theorem (the criterion).</strong> For a commutative product the Jordan identity is equivalent to the operator identity</p>
+<p><em>Proof.</em> Commutativity is read on the shape of the product, and $e_0\bullet\tilde Q=\tfrac12(e_0\tilde Q+\tilde Qe_0)=\tilde Q$. The cross product cancels on the diagonal, $\mathbf{Q}\times\mathbf{Q}=0$, so $\tilde Q\bullet\tilde Q=\tilde Q\tilde Q$, and the displayed form is the plain square.</p>
+<p><strong>Corollary (the square of the block is the square of the algebra).</strong> Because the antisymmetric part of the plain product is alternating, it vanishes on the diagonal and carries none of the square. <strong>The square of the block and the square of the algebra are the same map</strong>, so the idempotents, the nilpotents, the square roots and the spectrum of the block are those of the algebra, and the generic norm of §<em>The Degree-Two Structure</em> is the algebraic norm. The block and the algebra part company at the product and not at the square.</p>
+<p><strong>Proposition (the block is not associative).</strong></p>
 <p>$$
-L^{\circ}_{\tilde X}\circ L^{\circ}_{\tilde X^{\circ2}}=L^{\circ}_{\tilde X^{\circ2}}\circ L^{\circ}_{\tilde X}\qquad\text{for every }\tilde X .
+e_1\bullet(e_1\bullet e_2)=0,\qquad (e_1\bullet e_1)\bullet e_2=-e_2 .
 $$</p>
-<p><em>Proof.</em> Suppose first the Jordan identity. Write it as $(\tilde X^{\circ2}\circ\tilde Y)\circ\tilde X=\tilde X^{\circ2}\circ(\tilde Y\circ\tilde X)$ and use commutativity twice, $(\tilde X^{\circ2}\circ\tilde Y)\circ\tilde X=\tilde X\circ(\tilde X^{\circ2}\circ\tilde Y)$ and $\tilde Y\circ\tilde X=\tilde X\circ\tilde Y$; the identity becomes $\tilde X\circ(\tilde X^{\circ2}\circ\tilde Y)=\tilde X^{\circ2}\circ(\tilde X\circ\tilde Y)$, that is $L^{\circ}_{\tilde X}L^{\circ}_{\tilde X^{\circ2}}\tilde Y=L^{\circ}_{\tilde X^{\circ2}}L^{\circ}_{\tilde X}\tilde Y$ for every $\tilde Y$, which is the operator identity. Conversely the operator identity, evaluated at $\tilde Y$ and read with the two commutativities in reverse, is the Jordan identity.</p>
-<p><strong>Corollary (the block satisfies the law).</strong> The symmetric plain product is commutative and satisfies the Jordan identity, so it is a Jordan product, and its algebra is a commutative unital Jordan algebra over $\mathbb{C}$:</p>
+<p><em>Proof.</em> $e_1\bullet e_1=e_1^2=-e_0$ and $e_1\bullet e_2=\tfrac12(e_1e_2+e_2e_1)=\tfrac12(e_3-e_3)=0$. The left side is then $e_1\bullet0=0$ and the right side is $(-e_0)\bullet e_2=-e_2$.</p>
+<p><strong>Proposition (polarisation).</strong></p>
 <p>$$
-(\tilde P\bullet\tilde Q)\bullet(\tilde P\bullet\tilde P)=\tilde P\bullet\bigl(\tilde Q\bullet(\tilde P\bullet\tilde P)\bigr),\qquad
-L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde P^{\bullet2}}=L^{\bullet}_{\tilde P^{\bullet2}}L^{\bullet}_{\tilde P}.
+\tilde P\bullet\tilde Q=\tfrac12\bigl((\tilde P+\tilde Q)^{\bullet2}-\tilde P^{\bullet2}-\tilde Q^{\bullet2}\bigr).
 $$</p>
-<p><em>Proof.</em> The product $\bullet$ is the symmetrisation, $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$, of the plain product, which is associative, so the algebra is Jordan-admissible by the theorem <em>Every associative algebra is Jordan-admissible</em> of <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>: the symmetrisation is a Jordan product, commutative and satisfying the Jordan identity, and the display is the nested form of the identity. The plain unit $e_0$ is a two-sided unit of the symmetrisation, $e_0\bullet\tilde P=\tfrac12(e_0\tilde P+\tilde Pe_0)=\tilde P$, so the Jordan algebra is unital.</p>
-<h2 id="the-operator-identity-of-the-idempotents">The Operator Identity of the Idempotents</h2>
-<p>The model of this pair of articles states its criterion as an identity of the operators of the <strong>idempotents</strong>; the block's criterion is stated at every element, and its content at an idempotent is the <strong>cubic Peirce identity</strong> and the decomposition it produces.</p>
-<p><strong>Corollary (the cubic Peirce identity).</strong> Let $\tilde\Pi$ be an idempotent of the block. Then</p>
+<p><em>Proof.</em> The product is $\mathbb{C}$-bilinear and commutative, so the square of a sum expands as the sum of the two squares and twice the product.</p>
+<p>So the quadratic map $\tilde Q\mapsto\tilde Q^{\bullet2}$, together with the linear structure, determines the product; the square is the primitive object and the product is its polarisation.</p>
+<h2 id="the-multiplication-operator">The Multiplication Operator</h2>
+<p><strong>Proposition (the operator is the symmetric half).</strong> For every $\tilde A$,</p>
+<p>$$
+L^{\bullet}_{\tilde A}=\tfrac12\bigl(L_{\tilde A}+R_{\tilde A}\bigr).
+$$</p>
+<p><em>Proof.</em> $L^{\bullet}_{\tilde A}\tilde Y=\tilde A\bullet\tilde Y=\tfrac12(\tilde A\tilde Y+\tilde Y\tilde A)=\tfrac12(L_{\tilde A}+R_{\tilde A})\tilde Y$, and the identity of maps follows.</p>
+<p>The operator of the block is thus the mean of a plain left and a plain right multiplication, and the two compose with cross terms; this is the exact sense in which the block is a symmetrisation of the parent's operator theory and not a restriction of it.</p>
+<p><strong>Theorem (the operator identity of the block).</strong> The block satisfies</p>
+<p>$$
+L^{\bullet}_{\tilde X}L^{\bullet}_{\tilde X^{\bullet2}}=L^{\bullet}_{\tilde X^{\bullet2}}L^{\bullet}_{\tilde X}\qquad\text{for every }\tilde X,
+$$</p>
+<p>equivalently the Jordan identity $(\tilde X^{\bullet2}\bullet\tilde Y)\bullet\tilde X=\tilde X^{\bullet2}\bullet(\tilde Y\bullet\tilde X)$.</p>
+<p><em>Proof.</em> The block is the symmetrisation of the associative plain product, so it is Jordan-admissible by <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>; the Jordan identity is that admissibility, and for a commutative product it is equivalent to the operator identity, the two sides being $L^{\bullet}_{\tilde X}L^{\bullet}_{\tilde X^{\bullet2}}\tilde Y$ and $L^{\bullet}_{\tilde X^{\bullet2}}L^{\bullet}_{\tilde X}\tilde Y$ after commutativity is used twice.</p>
+<p><strong>Proposition (the block fails left alternativity).</strong></p>
+<p>$$
+e_1\bullet(e_1\bullet e_2)=0\neq-e_2=(e_1\bullet e_1)\bullet e_2 .
+$$</p>
+<p><em>Proof.</em> From the non-associativity display above. Left alternativity is the demand $L^{\bullet}_{\tilde X}{}^{2}=L^{\bullet}_{\tilde X^{\bullet2}}$ at every element, and this is its failure.</p>
+<p><strong>Corollary (no projector from a non-trivial idempotent).</strong> A non-trivial idempotent $\tilde\Pi$ satisfies $L^{\bullet}_{\tilde\Pi}{}^{2}\neq L^{\bullet}_{\tilde\Pi}$. The unit alone gives a projector, $L^{\bullet}_{e_0}=\mathrm{id}$, and the origin gives the zero operator.</p>
+<p><em>Proof.</em> Write the idempotent as $\tilde\Pi=\tfrac12(e_0+\mathbf u)$ with $\mathbf u$ a pure root of $+1$, so $\mathbf u^2=e_0$ and the scalar coordinate of $\mathbf u$ vanishes; then $L^{\bullet}_{\tilde\Pi}=\tfrac12(\mathrm{id}+L^{\bullet}_{\mathbf u})$. If $L^{\bullet}_{\tilde\Pi}$ were a projector, squaring and comparing would give $(L^{\bullet}_{\mathbf u})^{2}=\mathrm{id}$. But for a pure $\mathbf u$ the square of its operator is $L^{\bullet}_{\mathbf u}{}^{2}\tilde Y=Y_0-(\mathbf u,\mathbf{W})\mathbf u$, which vanishes at every vector $\mathbf W$ of the two-dimensional complex subspace orthogonal to $\mathbf u$; such a $\mathbf W$ is nonzero, so $(L^{\bullet}_{\mathbf u})^{2}\neq\mathrm{id}$ and $L^{\bullet}_{\tilde\Pi}$ is not a projector.</p>
+<p><strong>Proposition (a square-zero element gives an operator of index three).</strong> For a pure isotropic $\tilde\Upsilon$, that is $Q_0=0$ and $(\mathbf{Q},\mathbf{Q})=0$, the operator $L^{\bullet}_{\tilde\Upsilon}$ satisfies $L^{\bullet}_{\tilde\Upsilon}{}^{2}\neq0$ and $L^{\bullet}_{\tilde\Upsilon}{}^{3}=0$, with image not contained in the kernel; the witness is $\tilde\Upsilon=e_1+ie_2$.</p>
+<p><em>Proof.</em> <em>Nilpotents of the Symmetric Plain Algebra</em>: the elements of square zero are exactly the pure isotropic vectors, and their left multiplication has the stated index, the image $\mathrm{span}\{e_0,\tilde\Upsilon\}$ not lying in the kernel.</p>
+<p>So the block has neither of the two operator constructions of the parent: an idempotent produces no projector and a square-zero element produces no flag. Both failures are the failure of left alternativity, and neither is repaired by any choice of element.</p>
+<h2 id="the-idempotents-and-the-cubic-peirce-theory">The Idempotents and the Cubic Peirce Theory</h2>
+<p><strong>Proposition (the idempotents of the block).</strong> The idempotents $\tilde\Pi\bullet\tilde\Pi=\tilde\Pi$ are the idempotents of the plain product: the origin, the unit $e_0$, and the elements</p>
+<p>$$
+\tilde\Pi=\tfrac12(e_0+\mathbf u),\qquad \mathbf u\ \text{pure},\ \mathbf u^2=e_0,
+$$</p>
+<p>equivalently $\tilde\Pi=\tfrac12(e_0+\boldsymbol{\xi}i)$ with $\boldsymbol{\xi}$ a pure root of $-1$; they are read off the quadratic identity at integral trace, $(T,N)=(0,0)$, $(2,1)$ and $(1,0)$, so that the non-trivial idempotents are exactly the isotropic ones.</p>
+<p><em>Proof.</em> The square of the block is the plain square, so the equation is $\tilde\Pi^2=\tilde\Pi$, classified in <em>Idempotents of the Symmetric Plain Algebra</em>; the quadratic identity of §<em>The Degree-Two Structure</em> is then evaluated at the three traces.</p>
+<p><strong>Corollary (the cubic Peirce identity).</strong> For every idempotent $\tilde\Pi$,</p>
 <p>$$
 L^{\bullet}_{\tilde\Pi}\bigl(2L^{\bullet}_{\tilde\Pi}-\mathrm{id}\bigr)\bigl(L^{\bullet}_{\tilde\Pi}-\mathrm{id}\bigr)=0,
 $$</p>
-<p>equivalently $2L^{\bullet}_{\tilde\Pi}{}^{3}-3L^{\bullet}_{\tilde\Pi}{}^{2}+L^{\bullet}_{\tilde\Pi}=0$, and the eigenvalues of $L^{\bullet}_{\tilde\Pi}$ lie in $\{0,\tfrac12,1\}$.</p>
-<p><strong>Corollary (the Jordan Peirce decomposition).</strong> For a non-trivial idempotent $\tilde\Pi$ the space splits as</p>
+<p>equivalently $2L^{\bullet}_{\tilde\Pi}{}^{3}-3L^{\bullet}_{\tilde\Pi}{}^{2}+L^{\bullet}_{\tilde\Pi}=0$; the eigenvalues of $L^{\bullet}_{\tilde\Pi}$ lie in $\{0,\tfrac12,1\}$.</p>
+<p><em>Proof.</em> <em>Idempotents of the Symmetric Plain Algebra</em>, verified at the witness $\tilde\Pi=\tfrac12(e_0+ie_1)$, whose operator has the eigenvalues $0$, $\tfrac12$ and $1$.</p>
+<p><strong>Corollary (the Jordan Peirce decomposition).</strong> For a non-trivial idempotent,</p>
 <p>$$
 \mathbb{B}=\mathbb{B}_{1}\oplus\mathbb{B}_{1/2}\oplus\mathbb{B}_{0},\qquad
 \mathbb{B}_{\lambda}=\{\tilde Y:\tilde\Pi\bullet\tilde Y=\lambda\tilde Y\},
 $$</p>
-<p>with $\mathbb{B}_1=\mathbb{C}\tilde\Pi$, $\mathbb{B}_0=\mathbb{C}(e_0-\tilde\Pi)$ and $\dim\mathbb{B}_{1/2}=2$.</p>
-<p><em>Proof.</em> Both are <em>Idempotents of the Symmetric Plain Algebra</em>; the eigenvalue statement is verified there on the witness $\tilde\Pi=\tfrac12(e_0+ie_1)$, whose operator has eigenvalues $0,\tfrac12,1$ and whose Peirce dimensions are $1,2,1$.</p>
-<p><strong>Remark (the contrast with the model).</strong> The model's criterion, left alternativity, is the condition $L^{\circ}_{\tilde X}{}^{2}=L^{\circ}_{\tilde X^{\circ2}}$ for every $\tilde X$, and its corollary is that an idempotent gives a <strong>projector</strong>, $L^{\circ}_{\tilde\Pi}{}^{2}=L^{\circ}_{\tilde\Pi}$, with an image, a kernel and a Peirce calculus of corners and ideals. The block satisfies the weaker Jordan law and <strong>fails left alternativity</strong>: the witness is $e_1$ against $e_2$, $(e_1\bullet e_1)\bullet e_2=-e_2$ against $e_1\bullet(e_1\bullet e_2)=0$ (<em>Introduction to the Symmetric Plain Algebra of Biquaternions</em>). So in the block no non-trivial idempotent gives a projector, the unit alone does, and the Peirce calculus is the cubic one above and not the quadratic one. The two criteria are the two halves of the same comparison: the block is the Jordan algebra of the pair and the parent is the associative one, and each fails the other's law.</p>
-<h2 id="the-eleven-failures">The Eleven Failures</h2>
-<p>The twelve structures are generated from the plain product by three independent operations — the twist of the first slot, the twist of the second slot, and the (anti)symmetrisation — and this is why the symmetric plain product stands alone.</p>
-<p><strong>Theorem (the symmetric plain product is the only Jordan product).</strong> Of the twelve structures of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, the symmetric plain product is the only one that is commutative and satisfies the Jordan identity.</p>
-<p><em>Proof.</em> The four general products are $\tilde X\circ\tilde Y=\theta(\tilde X)\phi(\tilde Y)$ with $\theta$ the identity or the natural conjugation ${}^{\natural}$ and $\phi$ the identity or the star ${}^{*}$ (<em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>); each family contributes the product, its symmetrisation and its antisymmetrisation. The proof is the case analysis of the four subsections below: the four general products are non-commutative; the four antisymmetric parts are non-commutative; the symmetric quaternionic product is commutative but fails the Jordan identity; and the two symmetric sesquilinear products are only conjugate-commutative and fail the Jordan identity. The symmetric plain product is commutative and satisfies the identity.</p>
-<h3 id="the-four-general-products-are-not-commutative">The Four General Products Are Not Commutative</h3>
-<p><strong>Proposition.</strong> None of the four general products is commutative.</p>
-<p><em>Proof.</em> The plain product: $e_1e_2=e_3$ and $e_2e_1=-e_3$. The general quaternionic product $\tilde X\circ\tilde Y=\tilde X^{\natural}\tilde Y$: $e_0\circ e_1=e_1$ and $e_1\circ e_0=-e_1$. The general plain sesquilinear product $\tilde X\circ\tilde Y=\tilde X\tilde Y^{*}$: $e_0\circ e_1=-e_1$ and $e_1\circ e_0=e_1$. The general quaternionic sesquilinear product: $e_0\circ ie_1=ie_1$ and $ie_1\circ e_0=-ie_1$. Each pair differs.</p>
-<p>The failure is structural: the twist of a slot by a conjugation is an anti-automorphism, and an anti-automorphism in a slot reverses the order of the product. The general plain product is <em>associative</em>, so it satisfies the Jordan identity, and it is excluded from the criterion by commutativity alone.</p>
-<h3 id="the-four-antisymmetric-parts-are-not-commutative">The Four Antisymmetric Parts Are Not Commutative</h3>
-<p><strong>Proposition.</strong> None of the four antisymmetric parts is commutative, and the two that are alternating satisfy the Jordan identity vacuously.</p>
-<p><em>Proof.</em> The antisymmetric plain product: $e_1\wedge e_2=e_3$ and $e_2\wedge e_1=-e_3$. The antisymmetric quaternionic product: $e_0\circ e_1=e_1$ and $e_1\circ e_0=-e_1$. The antisymmetric plain sesquilinear product: $e_0\circ e_1=-e_1$ and $e_1\circ e_0=e_1$. The antisymmetric quaternionic sesquilinear product: $e_1\circ e_2=e_3$ and $e_2\circ e_1=-e_3$. The first and the second are alternating, $\tilde X\circ\tilde X=0$ for every $\tilde X$, so $\tilde X^{\circ2}=0$ and the Jordan identity reads $0=0$; the last two are conjugate-alternating and do not vanish on the diagonal.</p>
-<p>This is the fine point of the comparison and it is stated exactly. <strong>The Jordan identity alone does not isolate the block</strong>: the associative general plain product satisfies it by associativity, the general quaternionic product satisfies it because its square is central, and the two alternating antisymmetrisations satisfy it vacuously. What isolates the block is the <strong>conjunction</strong> with commutativity, and it is the conjunction that the definition names.</p>
-<h3 id="the-symmetric-quaternionic-product-is-commutative-but-fails-the-jordan-identity">The Symmetric Quaternionic Product Is Commutative but Fails the Jordan Identity</h3>
-<p><strong>Proposition.</strong> The symmetric quaternionic product $\tilde X\circ\tilde Y=\tfrac12(\tilde X^{\natural}\tilde Y+\tilde Y^{\natural}\tilde X)$ is commutative and fails the Jordan identity at $\tilde X=e_1$:</p>
+<p>with $\mathbb{B}_1=\mathbb{C}\tilde\Pi$ of dimension one, $\mathbb{B}_0=\mathbb{C}(e_0-\tilde\Pi)$ of dimension one and $\dim\mathbb{B}_{1/2}=2$. At $\tilde\Pi=\tfrac12(e_0+ie_1)$ the three dimensions are $1,2,1$.</p>
+<p><em>Proof.</em> <em>Idempotents of the Symmetric Plain Algebra</em>; the dimensions are the multiplicities computed there.</p>
+<p>This is the Peirce theory of the block, and it is <strong>cubic</strong>: the decomposition is into one middle space, not into a pair of off-diagonal corners. There are no corner subalgebras, the complementary idempotent $e_0-\tilde\Pi$ contributes the line $\mathbb{B}_0$ and not a second central piece, and the middle space is a single two-dimensional space carrying no product of its own. The quadratic Peirce calculus is the parent's, and it is not available here.</p>
+<h2 id="the-degree-two-structure">The Degree-Two Structure</h2>
+<p><strong>Theorem (the quadratic identity).</strong> Every element satisfies</p>
 <p>$$
-(\tilde X^{\circ2}\circ\tilde X)\circ\tilde X=0,\qquad \tilde X^{\circ2}\circ(\tilde X\circ\tilde X)=e_0,\qquad \tilde X=e_1 .
+\tilde Q^{\bullet2}-T(\tilde Q)\tilde Q+N(\tilde Q)e_0=0,\qquad
+T(\tilde Q)=2Q_0,\qquad N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2 .
 $$</p>
-<p><em>Proof.</em> $e_1^{\natural}e_1=-e_1^2=e_0$, so $e_1\circ e_1=e_0$; then $e_1\circ e_1=e_0$ gives $(\tilde X^{\circ2}\circ\tilde X)\circ\tilde X=(e_0\circ e_1)\circ e_1$, and $e_0\circ e_1=\tfrac12(e_0^{\natural}e_1+e_1^{\natural}e_0)=\tfrac12(e_1-e_1)=0$, so the left side is $0\circ e_1=0$; while $\tilde X^{\circ2}\circ(\tilde X\circ\tilde X)=e_0\circ e_0=e_0$. The two differ.</p>
-<p><strong>Remark (why this is the border case).</strong> The symmetric quaternionic product is commutative and its values are central, so its operators are scalars times plain operators with a conjugated index; the identity fails because the conjugate index is carried by a product that is not commutative. It is the closest of the eleven to the block, and it is <em>The Specificities of the Symmetric Quaternionic Algebra</em>.</p>
-<h3 id="the-two-symmetric-sesquilinear-products-fail-the-jordan-identity">The Two Symmetric Sesquilinear Products Fail the Jordan Identity</h3>
-<p><strong>Proposition.</strong> The symmetric plain sesquilinear product and the symmetric quaternionic sesquilinear product are conjugate-commutative and not commutative, and they fail the Jordan identity at $\tilde X=e_1$:</p>
+<p><em>Proof.</em> On the square of §<em>The Product and Its Square</em> and $T(\tilde Q)\tilde Q=2Q_0^2e_0+2Q_0\mathbf{Q}$, the difference is $\bigl(Q_0^2-(\mathbf{Q},\mathbf{Q})-2Q_0^2+N(\tilde Q)\bigr)e_0$, and the coefficient vanishes because $N(\tilde Q)=Q_0^2+(\mathbf{Q},\mathbf{Q})$.</p>
+<p>The functional $T$ is the <strong>generic trace</strong> of the block and $N$ its <strong>generic norm</strong>; the identity is the generic minimal polynomial, <strong>of degree two</strong>, so the block is a Jordan algebra of degree two. The discriminant is</p>
 <p>$$
-(\tilde X^{\circ2}\circ\tilde X)\circ\tilde X=0,\qquad
-\tilde X^{\circ2}\circ(\tilde X\circ\tilde X)=e_0\quad(\mathrm{SPS}),
-(\tilde X^{\circ2}\circ\tilde X)\circ\tilde X=-e_0,\qquad
-\tilde X^{\circ2}\circ(\tilde X\circ\tilde X)=e_0\quad(\mathrm{SQS}),
+T(\tilde Q)^2-4N(\tilde Q)=-4(\mathbf{Q},\mathbf{Q}),
 $$</p>
-<p>at $\tilde X=e_1$.</p>
-<p><em>Proof.</em> For the symmetric plain sesquilinear product $e_1\circ e_1=H(e_1,e_1)e_0=e_0$, and $e_0\circ e_1=H(e_0,e_1)e_0=0$, so the left side is $(e_0\circ e_1)\circ e_1=0$; while $e_1\circ e_1=e_0$ gives $e_0\circ e_0=H(e_0,e_0)e_0=e_0$. For the symmetric quaternionic sesquilinear product the symmetric square of $e_1$ is $-e_0$, so the left side is $((-e_0)\circ e_1)\circ e_1=-e_0$ and the right is $(-e_0)\circ(-e_0)=e_0$, the sesquilinear form of that row being the anti-Hermitian one. The failure of commutativity is the failure of the conjugate-commutativity, $e_1\circ ie_1=\mp ie_0$ against $ie_1\circ e_1=\pm ie_0$.</p>
-<h2 id="the-verdicts">The Verdicts</h2>
-<p>The twelve structures are compared below. The second column is the criterion's first clause, the third its second, and the fourth the witness of the failure for the eleven; for the three commutative failures (SQA, SPS and SQS) the witness is the element $\tilde X=e_1$ and the fourth column lists the two sides of the identity, and "$--$" is the block.</p>
+<p>which vanishes exactly on the isotropic cone of the vector part; there the two generic roots coincide, and the element $e_1+ie_2$ is the witness with a nonzero vector part.</p>
+<p><strong>Theorem (the inverse).</strong> An element with $N(\tilde Q)\neq0$ is invertible in the Jordan sense, with</p>
+<p>$$
+\tilde Q^{-1}=\frac{2Q_0e_0-\tilde Q}{N(\tilde Q)}=\frac{\tilde Q^{\natural}}{N(\tilde Q)},
+$$</p>
+<p>which is the inverse of the algebra; the invertibility criterion is $N(\tilde Q)\neq0$.</p>
+<p><em>Proof.</em> Dividing the quadratic identity by $N(\tilde Q)$ exhibits $(T(\tilde Q)e_0-\tilde Q)/N(\tilde Q)$ as a Jordan inverse, and $T(\tilde Q)e_0-\tilde Q=2Q_0e_0-\tilde Q=\tilde Q^{\natural}$; the formula of the associative inverse is <em>Norm and Invertibility in the General Plain Algebra</em>.</p>
+<p><strong>Theorem (the quadratic representation).</strong> For $U_{\tilde P}\tilde Q=2(\tilde P\bullet\tilde Q)\bullet\tilde P-\tilde P^{\bullet2}\bullet\tilde Q$,</p>
+<p>$$
+N\bigl(U_{\tilde P}\tilde Q\bigr)=N(\tilde P)^2N(\tilde Q),
+$$</p>
+<p>while $N$ itself is not multiplicative, $N(\tilde P\bullet\tilde Q)\neq N(\tilde P)N(\tilde Q)$ in general.</p>
+<p><em>Proof.</em> <em>Norm and Invertibility in the Symmetric Plain Algebra</em>, where the failure of multiplicativity and its replacement by the quadratic representation are proved on the coordinates.</p>
+<p><strong>Corollary (the block is not a division Jordan algebra).</strong> The isotropic cone $\{N(\tilde Q)=0\}$ is the union of the origin and the zero-divisor cone of the algebra, so the norm form is <strong>non-degenerate but isotropic</strong>, of realified signature $(4,4)$; it is the Hermitian form, and not the norm form, that is definite. The elements of square zero are the <strong>pure</strong> isotropic vectors, a proper subset of the cone, and $e_0+ie_1$ separates the two notions: $N(e_0+ie_1)=0$ while $(e_0+ie_1)^{\bullet2}=2e_0+2ie_1\neq0$.</p>
+<p><em>Proof.</em> <em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>, where the cone, the signature and the separation are computed.</p>
+<h2 id="what-the-block-does-not-inherit">What the Block Does Not Inherit</h2>
+<p>Three things the parent product has are absent, and the absences belong to the block's description as much as its theorems.</p>
+<ul>
+<li><strong>No projector calculus.</strong> A non-trivial idempotent does not give a projector (§<em>The Multiplication Operator</em>), so there is no image–kernel splitting of the type $\mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_0-\tilde\Pi)\mathbb{B}$ and no ideal generated by an idempotent. The unit gives the identity operator and the origin the zero operator, and those are the only projectors produced by idempotents.</li>
+<li><strong>No associative Peirce calculus.</strong> The Peirce theory is the cubic one of §<em>The Idempotents and the Cubic Peirce Theory</em>: one middle space, no corners, no matrix units, and no module theory over the algebra. The element theory of the block — the generic trace and norm, the inverse, the quadratic representation — is the substitute, and it is a different subject.</li>
+<li><strong>No group of units.</strong> The invertible elements are not closed under $\bullet$: the pair $e_1,e_2$ is invertible, $N(e_1)=N(e_2)=1$, with product $e_1\bullet e_2=0$. The block also has its own zero-divisor set, strictly larger than the algebra's isotropic cone, and it is <strong>not</strong> the complement of the invertible elements: $e_1$ is a zero divisor, $e_1\bullet e_2=0$, and yet is invertible. The criterion $\det L^{\bullet}_{\tilde Q}=Q_0^2N(\tilde Q)=0$ is <em>Zero Divisors of the Symmetric Plain Algebra</em>, and it separates the two notions.</li>
+</ul>
+<h2 id="the-isolation-among-the-twelve">The Isolation among the Twelve</h2>
+<p>One law separates the block from the other eleven structures, and it is stated here to close the article, not to enumerate them. The block is <strong>commutative</strong> and satisfies the <strong>Jordan identity</strong>, equivalently the operator identity of §<em>The Multiplication Operator</em>; a commutative product with the Jordan identity is a <strong>Jordan product</strong>, and the block is the only Jordan product of the twelve.</p>
+<p><strong>Theorem.</strong> Of the twelve structures of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, the symmetric plain product is the only one that is commutative and satisfies the Jordan identity.</p>
+<p><em>Proof.</em> The twelve are generated from the plain product by twisting a slot with a conjugation or by (anti)symmetrising, and each of the three operations destroys at least one clause of the criterion. The four general products are non-commutative, the four antisymmetric parts are non-commutative, the symmetric quaternionic product is commutative but fails the identity, and the two symmetric sesquilinear products are only conjugate-commutative and fail the identity. The block is commutative by construction and satisfies the identity by Jordan-admissibility, so it alone meets both clauses.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -212,26 +249,9 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The table records theorems and not coincidences. The Jordan identity holds outside the block as well — at every element of the associative general plain product by associativity, at every element of the general quaternionic product because its square is central, and vacuously at every element of the two alternating antisymmetrisations — and none of these carries a theory, because the criterion is the conjunction of the identity with commutativity, which the four lack.</p>
-<h2 id="what-the-criterion-delivers">What the Criterion Delivers</h2>
-<p>Only for the symmetric plain product does the criterion hold at every element, and the whole structural theory of the block is its consequence.</p>
-<ul>
-<li><strong>The generic trace and norm.</strong> Every element satisfies the quadratic identity $\tilde X^{\bullet2}-T(\tilde X)\tilde X+N(\tilde X)e_0=0$ with $T(\tilde X)=2X_0$ and $N(\tilde X)=\tilde X\tilde X^{\natural}$ (<em>Norm and Invertibility in the Symmetric Plain Algebra</em>); the identity is the generic minimal polynomial of a degree-two Jordan algebra and it is unavailable in the eleven.</li>
-<li><strong>The Jordan inverse.</strong> The inverse is the one of the two Jordan equations, and the criterion is $N\neq0$; the naive equation alone is degenerate on the isotropic cone, the element $e_1+ie_2$ being the witness.</li>
-<li><strong>The quadratic representation.</strong> The norm is not multiplicative and is replaced by $N(U_{\tilde X}\tilde Y)=N(\tilde X)^2N(\tilde Y)$.</li>
-<li><strong>The cubic Peirce identity and the decomposition</strong> of §<em>The Operator Identity of the Idempotents</em>.</li>
-<li><strong>The structure algebra.</strong> The derivations and the inner derivations of the block, the automorphism group and the structure group as groups of linear maps, with their Lie algebras (<em>The Multiplication Operators of the Symmetric Plain Algebra</em>).</li>
-</ul>
-<p><strong>Remark (what the criterion does not deliver).</strong> Three things the parent product has are absent, and the absence is stated and not filled. There is <strong>no projector calculus</strong>: a non-trivial idempotent of the block does not give a projector, the unit alone does. There is <strong>no associative Peirce calculus</strong>: no corner subalgebras, no ideal lattice, no module theory of the associative kind; the Jordan Peirce decomposition is the form the Jordan theory allows and it is a single middle space, not a pair. There is <strong>no group of units under the product</strong>: the invertible elements are not closed under $\bullet$, the pair $e_1,e_2$ being invertible with product $0$. All three are consequences of the loss of associativity, and all three are the exact content of the contrast with <em>The Specificities of the General Plain Algebra</em>.</p>
-<h2 id="the-boundary-of-the-criterion">The Boundary of the Criterion</h2>
-<p>Two statements are easily confused and are kept apart here.</p>
-<ol>
-<li><strong>As a law, the conjunction is exactly the threshold.</strong> Commutativity with the Jordan identity, equivalently commutativity with the operator identity at every element, is satisfied by the symmetric plain product and by no other of the twelve.</li>
-<li><strong>Read at the elements rather than as a law, the identity holds outside the block too.</strong> An operator $L^{\circ}_{\tilde X}$ may satisfy $L^{\circ}_{\tilde X}L^{\circ}_{\tilde X^{\circ2}}=L^{\circ}_{\tilde X^{\circ2}}L^{\circ}_{\tilde X}$ in a structure that is not a Jordan product, at one element or at every one, because the criterion demands the identity together with commutativity and the identity alone is not exclusive. The structured cases are the associative general plain product, where the identity holds at every element by associativity, the general quaternionic product, where it holds at every element because the square is central, and the two alternating antisymmetrisations, where it holds vacuously; none of the four is commutative. The symmetric quaternionic product is the case where the product is commutative and the identity still fails.</li>
-</ol>
-<p><strong>Remark (the sharp form of the specificity).</strong> The correct exclusive statement is therefore not that no other structure satisfies the Jordan identity, but that no other structure is a <strong>Jordan product</strong>: the symmetric plain algebra is the only commutative structure of the twelve in which the operator of the square commutes with the operator. This is why the generic norm, the Jordan inverse, the quadratic representation and the Peirce decomposition are properties of the symmetric plain product and are not transferable, and it is the reason the twelve are not twelve copies of one theory but one theory with eleven deformations, the symmetric plain product being the degree-two Jordan deformation of the plain one.</p>
+<p>Two fine points, kept because they are about the law and not about the list. The Jordan identity <strong>alone</strong> does not isolate the block: it holds at every element of the associative general plain product, at every element of the general quaternionic product, whose square is central, and vacuously at every element of the two alternating antisymmetrisations. What excludes those four is the <strong>commutativity</strong> clause, and it is the conjunction that the definition names. So the correct exclusive statement is that no other structure is a Jordan product, and not that no other structure satisfies the identity.</p>
 <h2 id="summary">Summary</h2>
-<p>The symmetric plain product is the only one of the twelve structures of the complex space that is a <strong>Jordan product</strong>, that is commutative and satisfying the Jordan identity. The Jordan identity is equivalent, for a commutative product, to the operator identity $L^{\circ}_{\tilde X}L^{\circ}_{\tilde X^{\circ2}}=L^{\circ}_{\tilde X^{\circ2}}L^{\circ}_{\tilde X}$ for every $\tilde X$; its content at an idempotent is the cubic Peirce identity $L^{\bullet}_{\tilde\Pi}(2L^{\bullet}_{\tilde\Pi}-\mathrm{id})(L^{\bullet}_{\tilde\Pi}-\mathrm{id})=0$ and the Jordan Peirce decomposition $\mathbb{B}=\mathbb{C}\tilde\Pi\oplus\mathbb{B}_{1/2}\oplus\mathbb{C}(e_0-\tilde\Pi)$. The parent product, the general plain one, fails the criterion by commutativity though it is associative, and the block fails instead the parent's own criterion, left alternativity: so no non-trivial idempotent of the block gives a projector, and the Peirce calculus is cubic and not quadratic. The eleven failures are structural: the four general products are non-commutative, the four antisymmetric parts are non-commutative with two of them satisfying the identity vacuously, the symmetric quaternionic product is commutative but fails the identity at $e_1$ with the sides $0$ and $e_0$, and the two symmetric sesquilinear products are conjugate-commutative and fail it. The correct exclusive statement is about the law and not about isolated elements, and the whole structural theory of the block — the degree-two generic trace and norm, the Jordan inverse, the quadratic representation, the cubic Peirce identity and the structure algebra — is its consequence; the projector calculus, the associative Peirce calculus and the group of units are the three things it does not have.</p>
+<p>The symmetric plain product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ is the plain product with the cross term dropped, $\tilde P\bullet\tilde Q=[P_0Q_0-(\mathbf{P},\mathbf{Q})]e_0+P_0\mathbf{Q}+Q_0\mathbf{P}$, commutative and unital, with the plain square, $\tilde Q^{\bullet2}=[Q_0^2-(\mathbf{Q},\mathbf{Q})]e_0+2Q_0\mathbf{Q}$. Its multiplication operator is the symmetric half $L^{\bullet}_{\tilde A}=\tfrac12(L_{\tilde A}+R_{\tilde A})$ of the two plain multiplications, and it satisfies the operator identity $L^{\bullet}_{\tilde X}L^{\bullet}_{\tilde X^{\bullet2}}=L^{\bullet}_{\tilde X^{\bullet2}}L^{\bullet}_{\tilde X}$, equivalent to the Jordan identity. The block fails left alternativity at $e_1,e_2$, and therefore yields no projector from a non-trivial idempotent and no flag from a square-zero element, whose operator has index three instead. Its idempotents are $0$, $e_0$ and the isotropic $\tfrac12(e_0+\mathbf u)$ with $\mathbf u$ a pure root of $+1$; at a non-trivial idempotent the operator obeys the cubic Peirce identity with eigenvalues $0,\tfrac12,1$ and the space splits as $\mathbb{C}\tilde\Pi\oplus\mathbb{B}_{1/2}\oplus\mathbb{C}(e_0-\tilde\Pi)$ with dimensions $1,2,1$. The block is of degree two: every element satisfies $\tilde Q^{\bullet2}-T(\tilde Q)\tilde Q+N(\tilde Q)e_0=0$ with $T=2Q_0$ and $N=\sum_\mu Q_\mu^2$, its inverse is $\tilde Q^{\natural}/N(\tilde Q)$, its norm obeys $N(U_{\tilde P}\tilde Q)=N(\tilde P)^2N(\tilde Q)$ though it is not multiplicative, and the isotropic cone makes it a non-division Jordan algebra with pure isotropic elements of square zero proper inside the cone. The block inherits none of the parent's projector calculus, associative Peirce calculus or group of units, and its zero-divisor set is larger than the non-invertible elements. Of the twelve structures it is the only Jordan product, the four general and four antisymmetric products failing by non-commutativity, the symmetric quaternionic product by the identity, and the two symmetric sesquilinear products by both clauses read in the conjugate sense.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -242,28 +262,48 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\circ$</td>
-<td>a generic product, specified at each use</td>
+<td>$\bullet$</td>
+<td>the symmetric plain product, the block's multiplication</td>
 </tr>
 <tr>
-<td>$\tilde X^{\circ2}=\tilde X\circ\tilde X$</td>
-<td>the square of the generic product</td>
+<td>$\tilde P\bullet\tilde Q=[P_0Q_0-(\mathbf{P},\mathbf{Q})]e_0+P_0\mathbf{Q}+Q_0\mathbf{P}$</td>
+<td>the shape of the product</td>
 </tr>
 <tr>
-<td>$L^{\circ}_{\tilde X}:\tilde Y\mapsto\tilde X\circ\tilde Y$</td>
-<td>the left multiplication</td>
+<td>$\tilde Q^{\bullet2}=\tilde Q^2$</td>
+<td>the square, the plain square</td>
 </tr>
 <tr>
-<td>$L^{\circ}_{\tilde X}L^{\circ}_{\tilde X^{\circ2}}=L^{\circ}_{\tilde X^{\circ2}}L^{\circ}_{\tilde X}$</td>
-<td>the operator identity of the criterion</td>
+<td>$L^{\bullet}_{\tilde A}=\tfrac12(L_{\tilde A}+R_{\tilde A})$</td>
+<td>the multiplication operator of the block</td>
+</tr>
+<tr>
+<td>$L^{\bullet}_{\tilde X}L^{\bullet}_{\tilde X^{\bullet2}}=L^{\bullet}_{\tilde X^{\bullet2}}L^{\bullet}_{\tilde X}$</td>
+<td>the operator identity, equivalent to the Jordan identity</td>
+</tr>
+<tr>
+<td>$\tfrac12(e_0+\mathbf u)$, $\mathbf u^2=e_0$ pure</td>
+<td>the non-trivial idempotents</td>
 </tr>
 <tr>
 <td>$L^{\bullet}_{\tilde\Pi}(2L^{\bullet}_{\tilde\Pi}-\mathrm{id})(L^{\bullet}_{\tilde\Pi}-\mathrm{id})=0$</td>
-<td>the cubic Peirce identity</td>
+<td>the cubic Peirce identity, eigenvalues $0,\tfrac12,1$</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_1\oplus\mathbb{B}_{1/2}\oplus\mathbb{B}_0$</td>
-<td>the Jordan Peirce decomposition, of dimensions $1,2,1$</td>
+<td>the Jordan Peirce decomposition, dimensions $1,2,1$</td>
+</tr>
+<tr>
+<td>$T(\tilde Q)=2Q_0$, $N(\tilde Q)=\sum_\mu Q_\mu^2$</td>
+<td>the generic trace and the generic norm</td>
+</tr>
+<tr>
+<td>$\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$</td>
+<td>the Jordan inverse, the algebra inverse</td>
+</tr>
+<tr>
+<td>$\{N(\tilde Q)=0\}$</td>
+<td>the isotropic cone, the origin and the zero-divisor cone</td>
 </tr>
 <tr>
 <td>$\mathrm{GPA}\dots\mathrm{AQS}$</td>
@@ -273,12 +313,12 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the Jordan identity, the operator identity, the cubic Peirce identity and the Peirce decomposition.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the Jordan identity, the operator identity, the cubic Peirce identity and the degree-two theory.</li>
 <li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the left and the right multiplications and the alternative laws.</li>
-<li><em>The Specificities of the General Plain Algebra</em> (<code>articles_maths/the-specificities-of-the-general-plain-algebra.md</code>), the model, for the left alternativity the block fails.</li>
-<li><em>The Specificities of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.md</code>), for the border case, whose product is commutative and whose operators fail the identity.</li>
-<li><em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the twelve operations and the row table.</li>
-<li><em>The Symmetric and Antisymmetric Parts of an Algebra Product</em> (<code>articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md</code>), for the Jordan-admissibility of an associative algebra and the nested form of the Jordan identity.</li>
+<li><em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em> (<code>articles_maths/the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.md</code>), for the element theory the law delivers.</li>
+<li><em>The Multiplication Operators of the Symmetric Plain Algebra</em> (<code>articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra.md</code>), for the operators, the derivations and the structure algebra.</li>
+<li><em>The Symmetric and Antisymmetric Parts of an Algebra Product</em> (<code>articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md</code>), for the Jordan-admissibility of an associative algebra.</li>
+<li><em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the twelve operations and the isolation table.</li>
 </ul>
       </div>
     </main>

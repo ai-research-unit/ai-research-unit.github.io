@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Operators of the Quaternionic Product: the Opposite Monoid and the Norm — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-operators-of-the-quaternionic-product-the-opposite-monoid-and-the-norm"><strong>The Operators of the Quaternionic Product: the Opposite Monoid and the Norm</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the operator article of the general quaternionic algebra, the algebra of <em>The Interval as the Square
+and the Charge of the Material Composition</em>. Its product is the general quaternionic bilinear product</p>
+<p>$$
+\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q ,
+$$</p>
+<p>the second of the four general products of the biquaternion complex space (<em>The Four General Products of the
+Biquaternion $\mathbb{C}$ Space</em>; <em>Introduction to the General Quaternionic Algebra of Biquaternions</em>), built with the
+<strong>natural</strong> conjugation in the first slot and not with the Hermitian one. The operators of the band are the maps that
+attach an element to an argument:</p>
+<p>$$
+L_{\tilde P}(\tilde X)=\tilde P\star\tilde X,\qquad
+R_{\tilde P}(\tilde X)=\tilde X\star\tilde P,\qquad
+\varrho_{\tilde P}(\tilde X)=\tilde X\tilde P^{\natural} .
+$$</p>
+<p>The first is the <strong>left multiplication</strong> of the product and the second is its <strong>right multiplication</strong>; the third is
+the <strong>twisted right multiplication</strong>, the closed mirror of the left family. The two-sided operators of the band are the
+products $L_{\tilde P}\varrho_{\tilde Q}$. The composition laws of the two families, and the reading of a multiplication
+as a process, belong to <em>The Left Multiplications of the Quaternionic Product and the Opposite Monoid</em> and to <em>The
+Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent</em>. This article states the one
+thing the composition laws do not: <strong>which form the operators are adjoint for, and what that adjoint does</strong>.</p>
+<p>The answer is one sentence. The form of the band is the general quaternionic bilinear form</p>
+<p>$$
+N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q),
+$$</p>
+<p>of Gram matrix $I_4$, the polar form of the biquaternion norm, and the adjoint for it — written ${}^{N}$ and called the
+<strong>quaternionic adjoint</strong> — <strong>keeps the side</strong> and carries the <strong>parameter</strong> through the natural conjugation:</p>
+<p>$$
+\bigl(L_{\tilde P}\bigr)^{N}=L_{\tilde P^{\natural}},\qquad
+\bigl(\varrho_{\tilde P}\bigr)^{N}=\varrho_{\tilde P^{\natural}} .
+$$</p>
+<p>Every type criterion of the band is therefore a criterion on <strong>one</strong> parameter. This is the sharp contrast with the
+general plain algebra, whose form is the scalar part of its own product, whose adjoint is the transpose, and whose
+transpose <strong>swaps the two sides</strong> (<em>The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich</em>). The
+consequences multiply. The self-adjoint and the skew-adjoint one-sided operators are cut out by the sign character of
+the natural conjugation, so both sectors are populated — the centre and the vector subspace — where the plain row has a
+trivial skew sector. The norm enters every criterion: a multiplication scales the form by the norm of its parameter, the
+determinant of a multiplication is the square of that norm, and the form-preserving one-sided operators are the norm-one
+slice, a rich group. The two-sided operator of the band selected by the conjugation is <strong>quadratic</strong> in its parameter and
+is multiplicative up to the norm for <strong>every</strong> parameter, whereas the plain two-sided operator obeys only a partial law
+and then only when the product of its two parameters is central. The criteria and their proofs are the mathematics of
+<em>One-Sided Operators on the General Quaternionic Algebra of Biquaternions</em> and <em>Two-Sided Operators on the General
+Quaternionic Algebra of Biquaternions</em>; the composition law is the mathematics of <em>The Left Multiplications of the
+Quaternionic Product and the Opposite Monoid</em>; the article reads them.</p>
+<p>Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$,
+$e_k^{2}=-e_0$ and central imaginary $i$; a general element is $\tilde Q=Q_0e_0+\mathbf Q$ with the vector part
+$\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$. Juxtaposition is the <strong>plain</strong>, associative product. The conjugations are the
+coefficientwise $\bar{\cdot}$, the natural ${\natural}$ fixing $i$ and negating $e_1,e_2,e_3$, and the Hermitian
+${}^{*}=\bar{\cdot}\circ{\natural}$; the sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$. The product
+of the band is written $\star$, and it is read through the natural conjugation alone. The form is the one displayed
+above, of Gram matrix $I_4$; it is cited, never re-proved, and on the material sector $\mathbb{M}_-$ it is the interval
+$-c^{2}t^{2}+\mathbf x^{2}$, of signature $(3,1)$ (<em>Biquaternion Norm and Invertibility</em>). Its diagonal is the
+<strong>biquaternion norm</strong></p>
+<p>$$
+N(\tilde Q)=N(\tilde Q,\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2},
+$$</p>
+<p>central, multiplicative, $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)$, and an element is a unit of the plain algebra
+exactly when $N(\tilde Q)\neq0$. The adjoint for the form is written ${}^{N}$, so that
+$\langle T\tilde P,\tilde Q\rangle_{\natural}=\langle\tilde P,T^{N}\tilde Q\rangle_{\natural}$ by definition; the
+Hermitian adjoint is written ${}^{*}$ and belongs to the probability band.</p>
+<h2 id="the-two-multiplications-and-their-composition">The Two Multiplications and Their Composition</h2>
+<p>The product attaches three operators to an element, and the two families of the band are its left and its twisted right
+multiplications.</p>
+<p><strong>Definition (the multiplications of the product).</strong> For $\tilde P\in\mathbb{B}$, the <strong>left multiplication</strong> and the
+<strong>right multiplication</strong> of $\star$ are the $\mathbb{C}$-linear maps on $\mathbb{B}$</p>
+<p>$$
+L_{\tilde P}(\tilde X)=\tilde P\star\tilde X=\tilde P^{\natural}\tilde X ,\qquad
+R_{\tilde P}(\tilde X)=\tilde X\star\tilde P=\tilde X^{\natural}\tilde P ,
+$$</p>
+<p>and the <strong>twisted right multiplication</strong> is the $\mathbb{C}$-linear map $\varrho_{\tilde P}(\tilde X)=\tilde X\tilde P^{\natural}$.
+The left multiplication is the plain left multiplication by the <strong>conjugated</strong> element, $L_{\tilde P}=L^{\mathrm{plain}}_{\tilde P^{\natural}}$,
+and the twisted right multiplication is the plain right multiplication by it, $\varrho_{\tilde P}=R^{\mathrm{plain}}_{\tilde P^{\natural}}$.</p>
+<p><strong>Theorem (the composition law).</strong> For all $\tilde P,\tilde R$,</p>
+<p>$$
+L_{\tilde P}\circ L_{\tilde R}=L_{\tilde R\tilde P},\qquad
+\varrho_{\tilde P}\circ\varrho_{\tilde R}=\varrho_{\tilde P\tilde R},
+$$</p>
+<p>the product on the right being the <strong>plain</strong> product of the algebra; the two laws are opposite, the left family
+reversing the order and the twisted right family preserving it.</p>
+<p><em>Proof.</em> The laws are <em>The Left Multiplications of the Quaternionic Product and the Opposite Monoid</em>, §<em>The Left
+Multiplications</em> and §<em>The Right Multiplications</em>. In one line each,
+$L_{\tilde P}L_{\tilde R}(\tilde X)=\tilde P^{\natural}(\tilde R^{\natural}\tilde X)=(\tilde P^{\natural}\tilde R^{\natural})\tilde X=(\tilde R\tilde P)^{\natural}\tilde X$,
+the last step being the anti-automorphism property of ${\natural}$, $\tilde P^{\natural}\tilde R^{\natural}=(\tilde R\tilde P)^{\natural}$;
+and $\varrho_{\tilde P}\varrho_{\tilde R}(\tilde X)=\tilde X\tilde R^{\natural}\tilde P^{\natural}=\tilde X(\tilde P\tilde R)^{\natural}$.
+The order reversal is exactly the anti-automorphism: it is not the associativity of $\star$, which fails, but the
+associativity of the plain product read through ${\natural}$.</p>
+<p><strong>Corollary (the two monoids).</strong> The set $M_L=\{L_{\tilde P}\}$ is a monoid with identity $L_{e_0}=\mathrm{id}$, and the
+assignment $\tilde P\mapsto L_{\tilde P}$ is an <strong>injective anti-isomorphism of monoids</strong> from the multiplicative monoid
+of the plain algebra onto $M_L$,</p>
+<p>$$
+M_L\cong\mathbb{B}^{\mathrm{op}},
+$$</p>
+<p>the opposite monoid. The set $M_R=\{\varrho_{\tilde P}\}$ is a monoid with identity $\varrho_{e_0}=\mathrm{id}$ and
+$\tilde P\mapsto\varrho_{\tilde P}$ is an <strong>isomorphism</strong> $M_R\cong\mathbb{B}$. Where the anti-isomorphism lies is in the
+natural conjugation: it is the anti-automorphism, and only it, that reverses the order of a composite.</p>
+<p><em>Proof.</em> Closure and the identities are read off the laws: $L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$ is again a
+left multiplication, and $L_{e_0}(\tilde X)=e_0^{\natural}\tilde X=\tilde X$. Injectivity is read at $e_0$,
+$L_{\tilde P}(e_0)=\tilde P^{\natural}$, which recovers $\tilde P$. The group of units of $M_L$ is the unit group of the
+plain algebra with the reversed law, and an operator $L_{\tilde P}$ is invertible exactly when $N(\tilde P)\neq0$.</p>
+<p><strong>Proposition (the product has no two-sided unit).</strong> The element $e_0$ is a <strong>left</strong> unit of $\star$,
+$e_0\star\tilde Q=\tilde Q$, and there is <strong>no right</strong> unit: the right action of the identity is the natural
+conjugation, $\tilde Q\star e_0=\tilde Q^{\natural}$, which differs from $\tilde Q$ for every non-central $\tilde Q$. The
+product therefore has no two-sided unit and is unital on one side alone, and the right multiplication $R_{\tilde P}$ of
+the product does not close under composition: $R_{\tilde P}R_{\tilde Q}(\tilde X)=\tilde Q^{\natural}\tilde X\tilde P$.
+The monoids $M_L$ and $M_R$ nevertheless contain the two-sided identity $\mathrm{id}$.</p>
+<p><em>Proof.</em> The unit statements are the two evaluations $e_0^{\natural}=e_0$ and $\tilde Q^{\natural}e_0=\tilde Q^{\natural}$;
+a right unit $u$ would satisfy $\tilde X^{\natural}u=\tilde X$ for all $\tilde X$, and at $\tilde X=e_0$ this forces
+$u=e_0$, which then fails at a pure $\tilde X$. The non-closure is <em>The Left Multiplications of the Quaternionic Product
+and the Opposite Monoid</em>, §<em>The Right Multiplications</em>, with the witness $R_{e_1}R_{e_1}(e_0)=e_0$ and
+$R_{e_1}R_{e_1}(e_1)=e_1$, whereas a right multiplication of the product with value $e_0$ at $e_0$ is $R_{e_0}$, which
+sends $e_1$ to $-e_1$.</p>
+<p><strong>Read as a physical statement.</strong> The orientation of the composition is the operator form of the orientation of the
+material composition: the first slot is read through the natural conjugation and the second as it stands, so an element
+attached on the left and the same element attached on the right are different operations, and only the left attachment
+composes on the nose. The composition of two left multiplications is a left multiplication — the operations of the band
+form a monoid and compose associatively — although the product of two elements does not associate. The reading is the
+corpus's: <strong>the process is the map and the state is the idempotent</strong> (<em>The Monoid of Acting Maps</em>), and here the process
+is the opposite monoid, the element being only a representative read through the conjugation.</p>
+<p><strong>Theorem (the mixed composites span the endomorphism algebra).</strong> For all $\tilde P,\tilde Q$ the mixed composites
+commute and close,</p>
+<p>$$
+L_{\tilde P}\circ\varrho_{\tilde Q}=\varrho_{\tilde Q}\circ L_{\tilde P},\qquad
+L_{\tilde P}\circ\varrho_{\tilde Q}(\tilde X)=\tilde P^{\natural}\tilde X\tilde Q^{\natural},
+$$</p>
+<p>and their complex span is the whole endomorphism algebra
+$\operatorname{span}_{\mathbb{C}}\{L_{\tilde P}\varrho_{\tilde Q}\}=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of
+complex dimension sixteen.</p>
+<p><em>Proof.</em> Commutation and closure are the plain associativity read in the two-sided regular representation, and the span
+is <em>The Left Multiplications of the Quaternionic Product and the Opposite Monoid</em>, §<em>The Mixed Compositions</em>: the
+sixteen operators $L_{e_m}\varrho_{e_n}$ are the products of the two bases $\{L_{e_m}\}$ and $\{\varrho_{e_n}\}$ of the
+left and the right regular representation and are linearly independent, so they already span all of
+$\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The two-sided family itself is the image of the decomposable tensors of
+$\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{op}}$, the linearisation of the pair $(\tilde P,\tilde Q)$; a sum of
+two-sided operators is two-sided only when the corresponding tensor is decomposable, and a general endomorphism of the
+frame is such a sum and not a single two-sided product.</p>
+<p><strong>Read as a physical statement.</strong> The two-sided operations of the band are closed under composition and generate every
+linear operation of the frame: the failure of associativity of the product is invisible at the level of the operators,
+which generate the full endomorphism algebra. What the product loses by its twisting of the first slot it recovers in
+its operator algebra, and the two-sided operator is again the carrier of the general linear action on the frame, as it
+is for the plain product. The reading is a naming of a proved algebraic fact and is labelled so.</p>
+<h2 id="the-adjoint-of-the-quaternionic-form-keeps-the-sides">The Adjoint of the Quaternionic Form Keeps the Sides</h2>
+<p><strong>Theorem (the adjoints for the quaternionic form).</strong> For all $\tilde P,\tilde X,\tilde Y\in\mathbb{B}$,</p>
+<p>$$
+\bigl\langle L_{\tilde P}\tilde X,\tilde Y\bigr\rangle_{\natural}=\bigl\langle\tilde X,L_{\tilde P^{\natural}}\tilde Y\bigr\rangle_{\natural},
+\qquad\text{that is}\qquad
+\bigl(L_{\tilde P}\bigr)^{N}=L_{\tilde P^{\natural}},
+$$</p>
+<p>and the same for the twisted right multiplication, $(\varrho_{\tilde P})^{N}=\varrho_{\tilde P^{\natural}}$.</p>
+<p><em>Proof.</em> The adjoints are <em>One-Sided Operators on the General Quaternionic Algebra of Biquaternions</em>, §<em>The Adjoints
+for the Bilinear Form</em>. In one line,
+$\langle L_{\tilde P}\tilde X,\tilde Y\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde X\tilde Y^{\natural})$,
+and by the cyclicity of the scalar part this equals
+$\mathrm{Sc}(\tilde X\tilde Y^{\natural}\tilde P^{\natural})=\mathrm{Sc}(\tilde X(\tilde P\tilde Y)^{\natural})=\langle\tilde X,L_{\tilde P^{\natural}}\tilde Y\rangle_{\natural}$,
+using $\tilde P^{\natural}\tilde Y^{\natural}=(\tilde P\tilde Y)^{\natural}$. The right case is the same computation with
+the factors in the other order.</p>
+<p><strong>Corollary (the adjoint keeps the side and conjugates the parameter).</strong> The adjoint of a left multiplication is a left
+multiplication, the adjoint of a twisted right multiplication is a twisted right multiplication, and in both cases the
+parameter is carried through the natural conjugation. The adjoint therefore maps each family onto itself and preserves
+the side, and it acts on the parameter by ${\natural}$ and on nothing else.</p>
+<p><em>Proof.</em> Immediate from the theorem, and the involution ${}^{\natural}$ of order two makes the adjoint an involution on
+each family, $((L_{\tilde P})^{N})^{N}=L_{\tilde P}$.</p>
+<p><strong>Read as a physical statement.</strong> The pairing of the band is the interval, and transporting an operation across it
+leaves the side alone: an operation attached before an argument is still attached before it afterwards, and only the
+parameter is conjugated. This is the operator content of the statement that the interval is the invariant form of a
+single attachment, so the form remembers the side on which an operation stands and forgets nothing of it. The contrast
+with the composition band is total: there the form is the scalar part of the product and cannot tell a left attachment
+from a right one, and its adjoint is the swap. That the swap belongs to the plain form alone is the reason no type
+criterion of the general plain algebra is a criterion on one parameter, while every type criterion of this band is; the
+comparison of the four adjoints is the crossing reader <em>The Operators of the Twelve Structures: Multiplication, Adjoint
+and Bracket</em>, which is not one of the twelve.</p>
+<h2 id="the-types-of-the-operators">The Types of the Operators</h2>
+<p><strong>Definition (the types).</strong> For a form $\varphi$ on $\mathbb{B}$, an operator $T$ is <strong>$\varphi$-self-adjoint</strong> when
+$T^{\varphi}=T$, <strong>$\varphi$-skew-adjoint</strong> when $T^{\varphi}=-T$, and <strong>$\varphi$-preserving</strong> when
+$\varphi(T\tilde X,T\tilde Y)=\varphi(\tilde X,\tilde Y)$ for all $\tilde X,\tilde Y$. Here $\varphi$ is the
+quaternionic form $N$ and $T^{\varphi}$ is the quaternionic adjoint ${}^{N}$ of the previous section.</p>
+<p><strong>Corollary (the one-sided types).</strong> The left multiplication $L_{\tilde P}$ is $N$-self-adjoint exactly for a
+<strong>central</strong> parameter, $N$-skew-adjoint exactly for a <strong>pure</strong> parameter, and $N$-preserving exactly for a parameter of
+<strong>norm one</strong>, $N(\tilde P)=1$; the twisted right multiplication $\varrho_{\tilde P}$ obeys the same three criteria on the
+same parameter. Each criterion is a criterion on the single parameter.</p>
+<p><em>Proof.</em> By the injectivity of the parameter map, $L_{\tilde P^{\natural}}=L_{\tilde P}$ is $\tilde P^{\natural}=\tilde P$,
+that is $\tilde P$ central, and $L_{\tilde P^{\natural}}=-L_{\tilde P}=L_{-\tilde P}$ is $\tilde P^{\natural}=-\tilde P$,
+that is $\tilde P$ pure; the preservation criterion is the scaling of the form below, $N(L_{\tilde P}\tilde X)=N(\tilde P)N(\tilde X)$,
+which is the identity for all $\tilde X$ exactly when $N(\tilde P)=1$. The two statements are <em>One-Sided Operators on the
+General Quaternionic Algebra of Biquaternions</em>, §<em>The Adjoints for the Bilinear Form</em>, §<em>The Norm and the Determinant of
+a Multiplication</em>.</p>
+<p><strong>Corollary (the two-sided types).</strong> The twisted two-sided operator $\Theta_{\tilde A}=L_{\tilde A^{\natural}}\varrho_{\tilde A}$,
+the map $\Theta_{\tilde A}(\tilde X)=\tilde A\tilde X\tilde A^{\natural}$, has adjoint
+$(\Theta_{\tilde A})^{N}=\Theta_{\tilde A^{\natural}}$; it is $N$-self-adjoint exactly when
+$\tilde A^{\natural}=\pm\tilde A$, that is exactly when the parameter lies in the <strong>centre or the vector subspace</strong>,
+$\mathbb{C}_{\mathbb{B}}\cup\mathrm{Vect}(\mathbb{B})$, and <strong>no</strong> nonzero $\Theta_{\tilde A}$ is $N$-skew-adjoint.</p>
+<p><em>Proof.</em> The adjoint is <em>Two-Sided Operators on the General Quaternionic Algebra of Biquaternions</em>, §<em>The Adjoint</em>: the
+adjoint of a product is the product of the adjoints in reverse order and the factors commute, giving
+$(\Theta_{\tilde A})^{N}=(\varrho_{\tilde A})^{N}(L_{\tilde A^{\natural}})^{N}=\varrho_{\tilde A^{\natural}}L_{\tilde A}=\Theta_{\tilde A^{\natural}}$.
+Self-adjointness is $\Theta_{\tilde A^{\natural}}=\Theta_{\tilde A}$, and injectivity up to sign gives
+$\tilde A^{\natural}=\pm\tilde A$, the two eigenspaces of the natural conjugation; the skew sector collapses by the
+computation of the same proposition. The parameter map is injective up to the sign of its argument, so the criterion is
+a criterion on one parameter and not on a pair.</p>
+<p><strong>Read as a physical statement.</strong> The two populated sectors are the two ways a single parameter can be symmetric for the
+interval: a central parameter gives a self-adjoint multiplication, a pure parameter gives a skew-adjoint one, and a
+mixed parameter gives neither. The skew family is the vector subspace, of real dimension three, and it is the operator
+form of the statement that the material directions and the time direction are read by the interval with opposite signs;
+unlike the composition band, where the skew sector is trivial and no generator appears, this band carries a
+three-dimensional family of skew-adjoint multiplications. That family does not close under composition, the product of
+two pure parameters being mixed in general, so the generators of the band are read through the bracket of the
+antisymmetric band and not through the multiplication. All of this is a reading of a proved algebraic criterion and is
+labelled so.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>parameter $\tilde P$</th>
+<th>subalgebra</th>
+<th>$L_{\tilde P}$ is $N$-self-adjoint</th>
+<th>$N$-skew-adjoint</th>
+<th>$N$-preserving</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>central, $\tilde P=\lambda e_0$</td>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>yes</td>
+<td>only $\tilde P=0$</td>
+<td>$N(\tilde P)=1$</td>
+</tr>
+<tr>
+<td>pure, $\tilde P=\mathbf P$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>only $\tilde P=0$</td>
+<td>yes</td>
+<td>$N(\tilde P)=1$</td>
+</tr>
+<tr>
+<td>mixed, $\tilde P=a_0e_0+\mathbf P$</td>
+<td>—</td>
+<td>no</td>
+<td>no</td>
+<td>$N(\tilde P)=1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table collects the one-sided criterion; the two-sided criterion of the second corollary is one row deeper and is
+read as: self-adjoint for a parameter in the centre or the vector subspace, skew-adjoint never, and preserving exactly
+for $N(\tilde A)=\pm1$.</p>
+<h2 id="the-symmetries-of-the-form-and-of-the-product">The Symmetries of the Form and of the Product</h2>
+<p><strong>Proposition (the conformal factor and the determinant).</strong> For all $\tilde P,\tilde X$,</p>
+<p>$$
+N\bigl(L_{\tilde P}\tilde X\bigr)=N(\tilde P)\,N(\tilde X),\qquad
+\det L_{\tilde P}=N(\tilde P)^{2},
+$$</p>
+<p>and the same two identities hold for $\varrho_{\tilde P}$.</p>
+<p><em>Proof.</em> The first is the multiplicativity of the norm, $N(\tilde P^{\natural}\tilde X)=N(\tilde P^{\natural})N(\tilde X)=N(\tilde P)N(\tilde X)$
+with $N(\tilde P^{\natural})=N(\tilde P)$; the determinant is <em>One-Sided Operators on the General Quaternionic Algebra
+of Biquaternions</em>, §<em>The Norm and the Determinant of a Multiplication</em>, where the multiplication is the Kronecker
+product of the matrix $\Phi(\tilde P)$ with $I_2$ and the determinant is $\det\Phi(\tilde P)^{2}=N(\tilde P)^{2}$.</p>
+<p><strong>Corollary (the form-preserving operators).</strong> The one-sided operators preserving the quaternionic form are exactly the
+left and the twisted right multiplications by a parameter of <strong>norm one</strong>, and their group is the norm-one slice, of
+complex dimension three; a multiplication by a parameter of norm $-1$ reverses the sign of the form. A twisted
+two-sided operator $\Theta_{\tilde A}$ preserves the form exactly when $N(\tilde A)=\pm1$, the norm-one part being the
+inner automorphisms and the whole set the pin group.</p>
+<p><em>Proof.</em> The condition is $N(\tilde P)=1$ from the conformal factor, and $N(\Theta_{\tilde A}\tilde X)=N(\tilde A)^{2}N(\tilde X)$
+for the two-sided case, <em>Two-Sided Operators on the General Quaternionic Algebra of Biquaternions</em>, §<em>Automorphisms</em>.
+The norm-one slice is closed under the plain product by multiplicativity of the norm, and it is the slice whose
+elements the corpus reads as the Lorentz transformations on $\mathbb{M}_-$; the group of two-sided form-preserving
+operators is the biquaternion pin group (<em>The Pin and Spin Groups of the General Quaternionic Algebra of
+Biquaternions</em>).</p>
+<p><strong>Theorem (the quadratic two-sided operator and its multiplication law).</strong> The twisted two-sided operator
+$\Theta_{\tilde A}=\tilde A\,[\,]\,\tilde A^{\natural}$ is <strong>quadratic</strong> in its parameter,
+$\Theta_{\lambda\tilde A}=\lambda^{2}\Theta_{\tilde A}$ and $\Theta_{-\tilde A}=\Theta_{\tilde A}$, and it satisfies</p>
+<p>$$
+\Theta_{\tilde A}\circ\Theta_{\tilde B}=\Theta_{\tilde A\tilde B},\qquad
+\Theta_{\tilde A}(\tilde Y)\,\Theta_{\tilde A}(\tilde Z)=N(\tilde A)\,\Theta_{\tilde A}(\tilde Y\tilde Z)
+\qquad\text{for every }\tilde A .
+$$</p>
+<p><em>Proof.</em> The composition and the multiplication law are <em>Two-Sided Operators on the General Quaternionic Algebra of
+Biquaternions</em>, §<em>The Multiplication Law</em>: the multiplication law is the one line
+$\tilde A\tilde Y\tilde A^{\natural}\tilde A\tilde Z\tilde A^{\natural}=\tilde A\tilde YN(\tilde A)\tilde Z\tilde A^{\natural}$,
+which uses $\tilde A^{\natural}\tilde A=N(\tilde A)e_0$, and the norm is central and may be moved out. This holds for
+<strong>every</strong> parameter, since $\tilde A^{\natural}\tilde A=N(\tilde A)$ is central always and no centrality of a product of
+two parameters is required.</p>
+<p><strong>Corollary (the multiplicative operators).</strong> The two-sided operators of the band that are <strong>strictly</strong> multiplicative,
+$T(\tilde Y)T(\tilde Z)=T(\tilde Y\tilde Z)$, are exactly those with the two slots inverse,
+$L_{\tilde P}\varrho_{\tilde Q}$ with $\tilde P\tilde Q=e_0$, and these are the inner automorphisms
+$\mathrm{Ad}_{\tilde P^{\natural}}$; the family multiplicative <strong>up to a scalar</strong> is exactly the family whose slot
+product is central, the scalar being $(\tilde P\tilde Q)^{\natural}$; and the twisted two-sided operators are, up to
+scalars, exactly the multiplicative-up-to-a-scalar family.</p>
+<p><em>Proof.</em> The plain criterion is <em>Two-Sided Operators on the General Quaternionic Algebra of Biquaternions</em>, §<em>When a
+Product $L_aR_b$ Is Two-Sided</em>: the product is multiplicative up to the inserted scalar $\tilde B\tilde A$, so here up to
+$(\tilde P\tilde Q)^{\natural}$, central exactly when $\tilde P\tilde Q$ is, and equal to $e_0$ exactly when
+$\tilde P\tilde Q=e_0$. With $\tilde Q=\tilde P^{-1}$ the operator is exactly the inner automorphism
+$\mathrm{Ad}_{\tilde P^{\natural}}$, which is the scalar multiple $N(\tilde P)^{-1}\Theta_{\tilde P^{\natural}}$ of the
+twisted two-sided operator.</p>
+<p><strong>Read as a physical statement.</strong> The interval scales by the norm of a multiplying parameter, so the multiplication of
+the band is a <strong>conformal</strong> map of the interval with conformal factor the norm, and the form-preserving ones are exactly
+the norm-one parameters, the Lorentz transformations. The determinant reading is the same statement squared, and it
+fixes the invertibility of the operator by the norm of the parameter. The multiplication law is the second reading: the
+composition of a two-sided operator with itself is the operator again, up to the norm of the parameter as a scalar, and
+this is unconditional in the band while the composition band carried it only when the product of the two parameters was
+central. The <strong>norm is the scalar of the composition</strong>: it is what the product of the two slots leaves behind, and it is
+the only obstruction to a two-sided operation being an automorphism. The readings are named <strong>norm conformality</strong> and
+<strong>unconditional multiplicativity</strong> and are labelled as readings.</p>
+<h2 id="the-operators-acting-on-the-state-space">The Operators Acting on the State Space</h2>
+<p>The operators of the band act on the state space of the corpus, and since $L_{\tilde P}=L^{\mathrm{plain}}_{\tilde P^{\natural}}$
+their action is the plain action with the parameter conjugated. Let $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}$
+be the minimal left ideal, with $\tilde\Pi_2=e_0-\tilde\Pi_1$ the complementary idempotent and
+$\mathbb{B}\tilde\Pi_2=\mathbb{C}\{\tilde\Pi_2,\tilde\Upsilon_1\}$ the complement, as in <em>The Spinor Space as a Module
+and as a Hilbert Space</em> and <em>The Complementary Space of the Spinor Space and Its Physical Meaning</em>.</p>
+<p><strong>Proposition (the left actions exhaust the operators of the state space).</strong> The map
+$\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(S)$, $\tilde P\mapsto L_{\tilde P}|_{S}$, is an isomorphism: the plain
+algebra acts faithfully on its defining module $S$ of complex dimension two, and both spaces have complex dimension
+four, so the four plain left multiplications by the basis elements form a $\mathbb{C}$-basis of
+$\operatorname{End}_{\mathbb{C}}(S)$. The four of the band differ from that basis only by the signs of the vector
+directions,</p>
+<p>$$
+L_{e_0}=\mathrm{id},\qquad L_{e_k}=-L^{\mathrm{plain}}_{e_k}\quad(k=1,2,3),
+$$</p>
+<p>the signs entering because the left multiplication reads its parameter through the conjugation; they are therefore a
+basis as well, and every operator of the state space is a left multiplication of the band.</p>
+<p><em>Proof.</em> The module $S=\mathbb{B}\tilde\Pi_1$, its complex dimension two and the faithfulness of the left action are <em>The
+Spinor Space as a Module and as a Hilbert Space</em> and <em>Biquaternion Objects and Their Matrix Correspondences</em>; the
+equality $L_{\tilde P}=L^{\mathrm{plain}}_{\tilde P^{\natural}}$ together with $e_\mu^{\natural}=\varepsilon_\mu e_\mu$
+and $\varepsilon=(1,-1,-1,-1)$ is the isotope identity of <em>The Specificities of the General Quaternionic Algebra</em>,
+§<em>The Isotope Identity</em>.</p>
+<p><strong>Proposition (the projectors, and the swap of the two ideals).</strong> The left multiplication $L_{\tilde P}$ is a projector
+exactly when $\tilde P$ is a plain idempotent; and for the two minimal idempotents, whose natural conjugates are
+exchanged, $\tilde\Pi_1^{\natural}=\tilde\Pi_2$ and $\tilde\Pi_2^{\natural}=\tilde\Pi_1$,
+$L_{\tilde\Pi_1}=L^{\mathrm{plain}}_{\tilde\Pi_2}$ is the plain projector onto the <strong>complementary</strong> ideal
+$\mathbb{B}\tilde\Pi_2$, while $L_{\tilde\Pi_2}=L^{\mathrm{plain}}_{\tilde\Pi_1}$ is the plain projector onto $S$; the
+two are orthogonal, $L_{\tilde\Pi_1}L_{\tilde\Pi_2}=0$. In particular the element $\tilde\Pi_1$ is a <strong>nilpotent</strong> of the
+band's own product, $\tilde\Pi_1\star\tilde\Pi_1=N(\tilde\Pi_1)e_0=0$, while the operator it defines is a projector: the
+band realises a projector on an element of vanishing square.</p>
+<p><em>Proof.</em> The projector criterion is <em>The Specificities of the General Quaternionic Algebra</em>, §<em>The Projectors</em>: the
+faithfulness of the parameter map reduces $L_{\tilde P}^{2}=L_{\tilde P}$ to $(\tilde P^{\natural})^{2}=\tilde P^{\natural}$,
+and ${\natural}$ permutes the plain idempotents, so the elements are exactly the plain idempotents. The exchange
+$\tilde\Pi_1^{\natural}=\tilde\Pi_2$ is the computation $\tfrac12(e_0+ie_3)^{\natural}=\tfrac12(e_0-ie_3)=\tilde\Pi_2$, and
+the nilpotence is the same specificities article, $N(\tilde\Pi_1)=0$ on a nontrivial plain idempotent.</p>
+<p><strong>Proposition (the twisted right actions are the commutant).</strong> A twisted right multiplication commutes with every left
+one, so it is a $\mathbb{B}$-linear map of $S$ into itself or into the complement; the operators commuting with every
+left multiplication are exactly the twisted right multiplications, and the operators commuting with both families are the
+central scalars. A central element gives the same left and twisted right action, the scalar multiplication by its scalar
+part.</p>
+<p><em>Proof.</em> The commutation is the mixed law of the first section, and the double-centraliser statement is <em>One-Sided
+Operators on the General Quaternionic Algebra of Biquaternions</em>, §<em>The Two Multiplications</em>. The nilpotent twisted right
+multiplications carrying $S$ onto the complement are the plain ones of <em>The Complementary Space of the Spinor Space and
+Its Physical Meaning</em>.</p>
+<p><strong>Read as a physical statement.</strong> The left actions of the band are the observables on the state space, and every
+operator of the state space is one of them, with the parameter read through the conjugation — the state space sees the
+element only through its conjugate. The projectors are the plain ones, and the two diagonal projectors of the state
+space and of its complement are <strong>exchanged</strong> by the conjugation: the band's own left multiplication by the minimal
+idempotent projects onto the other ideal. This is a physical sharpening of the statement that the band's product
+recognises almost none of its own projectors: the element whose square vanishes defines the projector, and the element
+whose left multiplication projects is the conjugate of a plain idempotent. The readings are named <strong>conjugated
+observables</strong> and <strong>exchanged ideals</strong> and are labelled as readings.</p>
+<h2 id="the-sandwich-and-the-inner-automorphism">The Sandwich and the Inner Automorphism</h2>
+<p><strong>Proposition (one conjugation, two parametrisations).</strong> For every <strong>unit</strong> $\tilde A$,</p>
+<p>$$
+\Theta_{\tilde A}=N(\tilde A)\,\mathrm{Ad}_{\tilde A},\qquad
+\mathrm{Ad}_{\tilde A}(\tilde X)=\tilde A\tilde X\tilde A^{-1},
+$$</p>
+<p>so the twisted two-sided operator is the inner automorphism scaled by the norm; the two operators agree exactly on the
+<strong>norm-one</strong> parameters, and there and alone.</p>
+<p><em>Proof.</em> The factorisation is <em>Two-Sided Operators on the General Quaternionic Algebra of Biquaternions</em>, §<em>The Sign and
+the Inverse</em>: it is $\tilde A^{\natural}=N(\tilde A)\tilde A^{-1}$ read in the right factor, the norm being central. The
+two agree exactly when the scalar is one, that is $N(\tilde A)=1$.</p>
+<p><strong>Corollary (the two operators and the form).</strong> The twisted two-sided operator scales the quaternionic form by the
+factor $N(\tilde A)^{2}$, $N(\Theta_{\tilde A}\tilde X,\Theta_{\tilde A}\tilde Y)=N(\tilde A)^{2}N(\tilde X,\tilde Y)$,
+while the inner automorphism preserves it <strong>exactly</strong>,
+$N(\mathrm{Ad}_{\tilde A}\tilde X,\mathrm{Ad}_{\tilde A}\tilde Y)=N(\tilde X,\tilde Y)$, being an isometry of the form
+for every unit; on the norm-one slice the two operators coincide, and there the scaling of $\Theta$ is the identity too.
+Off the slice they differ by the central scalar $N(\tilde A)$, which is the whole content of the word <em>twisted</em>: the
+sandwich is the inner automorphism continued to the units of all norms by the conjugation in place of the inverse.</p>
+<p><em>Proof.</em> The scaling of $\Theta$ by $N(\tilde A)^{2}$ is the automorphisms proposition of the previous section; for
+$\mathrm{Ad}$ it is the multiplicativity of the norm,
+$N(\tilde A\tilde X\tilde A^{-1})=N(\tilde A)N(\tilde X)N(\tilde A)^{-1}=N(\tilde X)$, which by polarisation is the
+preservation of the bilinear form; equality on the slice is the proposition.</p>
+<p><strong>Read as a physical statement.</strong> The band attaches a conjugation to an element in two ways, by the inverse and by the
+natural conjugate, and the two coincide exactly on the norm-one slice, which is the Lorentz group. The Lorentz action on
+the material sector is therefore the inner automorphism, and it is also the twisted two-sided operator, because the
+Lorentz parameters are precisely those of norm one; the two differ off the slice by the norm, and the norm is the mass
+parameter of the material sector. This is the operator form of the corpus's division of the parameters into the
+norm-one motions and the rest, and it is a reading and not a derivation: the Lorentz action itself and the double cover
+are <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
+<h2 id="a-worked-case">A Worked Case</h2>
+<p>Take one mixed parameter of norm two,</p>
+<p>$$
+\tilde A=e_0+e_1,\qquad N(\tilde A)=2,\qquad \tilde A^{\natural}=e_0-e_1,\qquad \tilde A^{2}=2e_1 .
+$$</p>
+<p>The left multiplication by the parameter is the plain left multiplication by its conjugate, and it reads</p>
+<p>$$
+L_{\tilde A}(e_0)=e_0-e_1,\qquad L_{\tilde A}(e_1)=e_0+e_1,\qquad L_{\tilde A}(e_2)=e_2-e_3 ,
+$$</p>
+<p>so the composition law reads on $e_1$,
+$L_{\tilde A}L_{\tilde A}(e_1)=2e_0=L_{\tilde A^{2}}(e_1)=L_{2e_1}(e_1)$, the parameter on the right being the plain
+square. The adjoint keeps the left side and conjugates the parameter, displayed on the basis pair $(e_0,e_1)$:</p>
+<p>$$
+\bigl\langle L_{\tilde A}e_0,e_1\bigr\rangle_{\natural}=-1=\bigl\langle e_0,L_{\tilde A^{\natural}}e_1\bigr\rangle_{\natural},
+\qquad L_{\tilde A^{\natural}}=L_{e_0-e_1} .
+$$</p>
+<p>The parameter is mixed, so $L_{\tilde A}$ is neither self-adjoint nor skew-adjoint, and its norm two scales the form by
+two, so it is not form-preserving. By contrast, the pure parameter $\tilde V=e_1$ has norm one and gives a
+skew-adjoint and form-preserving multiplication, the two properties the two criteria promise at once.</p>
+<p>The twisted two-sided operator of the same parameter is $\Theta_{\tilde A}=2\,\mathrm{Ad}_{\tilde A}$, and on the basis
+it is</p>
+<p>$$
+\Theta_{\tilde A}(e_0)=2e_0,\qquad \Theta_{\tilde A}(e_1)=2e_1,\qquad
+\Theta_{\tilde A}(e_2)=2e_3,\qquad \Theta_{\tilde A}(e_3)=-2e_2 ,
+$$</p>
+<p>a scaling by two on the plane $\mathbb{C}\{e_0,e_1\}$ and twice a quarter turn on the plane $\mathbb{C}\{e_2,e_3\}$. The
+quadraticity is visible at once, $\Theta_{2\tilde A}=4\,\Theta_{\tilde A}$, and the multiplication law holds for this
+parameter with $N(\tilde A)=2$ as its scalar: for $\tilde Y=(1,2,3,4)$ and $\tilde Z=e_1$ the two sides of
+$\Theta_{\tilde A}(\tilde Y)\Theta_{\tilde A}(\tilde Z)=2\,\Theta_{\tilde A}(\tilde Y\tilde Z)$ are both $(-8,4,12,16)$.
+The operator is not form-preserving, since its parameter has norm two, and it is not an automorphism, in agreement with
+the criterion.</p>
+<p>The causal division is displayed by three material four-vectors and one Lorentz parameter. With the material sector
+convention $\tilde T=ict\,e_0+\mathbf x$ and $c=1$,</p>
+<p>$$
+N(5ie_0+3e_1)=-16,\qquad N(3ie_0+3e_1)=0,\qquad N(3ie_0+5e_1)=16,
+$$</p>
+<p>the first <strong>timelike</strong>, the second <strong>null</strong>, on the causal cone, and the third <strong>spacelike</strong>. A boost parameter of norm
+one, $\tilde\Lambda=\cosh u\,e_0+\sinh u\,ie_1$, has $N(\tilde\Lambda)=1$, and its left multiplication is a
+form-preserving operator: $N(L_{\tilde\Lambda}(5ie_0+3e_1))=N(5ie_0+3e_1)=-16$ for every $u$, the interval of the
+timelike four-vector unchanged.</p>
+<p><strong>A numerical check.</strong> The two composition laws, the mixed commutation, the sixteen-dimensional span, the isotope
+identity, the three adjoints, the one-sided type criteria on random, central, pure and null parameters, the two-sided
+self-adjointness criterion $\tilde A^{\natural}=\pm\tilde A$, the quadraticity and the multiplication law of $\Theta$,
+the identity $\Theta_{\tilde A}=N(\tilde A)\mathrm{Ad}_{\tilde A}$ with the agreement on the norm-one slice, and the
+projector criterion with the exchange $\tilde\Pi_1^{\natural}=\tilde\Pi_2$ were all recomputed outside the repository to
+machine precision; the numerical values of the worked case, the three causal signs and the boost preserving the interval
+were checked element by element.</p>
+<h2 id="the-bound">The Bound</h2>
+<p>The article states one cell of the grid of the twelve operator rows, and the boundary of the cell is what it must
+declare.</p>
+<ul>
+<li><strong>The composition laws and the opposite monoid are not proved here.</strong> They are <em>The Left Multiplications of the
+  Quaternionic Product and the Opposite Monoid</em>, and the reading of the multiplication as a process belongs to <em>The
+  Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent</em>.</li>
+<li><strong>The isotope identity and the projectors are not re-derived here.</strong> The dictionary $L_{\tilde P}=L^{\mathrm{plain}}_{\tilde P^{\natural}}$,
+  the projector criterion and the square-zero projectors are <em>The Specificities of the General Quaternionic Algebra</em>.</li>
+<li><strong>The adjoints, the norm and the determinant are not re-proved here.</strong> They are <em>One-Sided Operators on the General
+  Quaternionic Algebra of Biquaternions</em>, whose content the article applies through its two corollaries.</li>
+<li><strong>The sandwich is not re-read here.</strong> The quadraticity, the multiplication law up to the norm, the injectivity up to
+  sign and the pin and spin groups are <em>Two-Sided Operators on the General Quaternionic Algebra of Biquaternions</em> and
+  <em>The Pin and Spin Groups of the General Quaternionic Algebra of Biquaternions</em>.</li>
+<li><strong>The physical adjoint is not this adjoint.</strong> Self-adjointness for the quaternionic form is not hermiticity; the
+  observables and the gauge generators are the self-adjoint and the skew-adjoint operators for the Hermitian form of the
+  probability band, and they are <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>. The dagger
+  layer of the same multiplications is <em>One-Sided Operators on the General Plain Sesqualgebra of Biquaternions</em> and
+  <em>Mixed Inner Conjugation on the General Plain Sesqualgebra of Biquaternions</em>.</li>
+<li><strong>The bracket and the generators are not here.</strong> The skew-adjoint family of the band is read through the bracket of the
+  antisymmetric quaternionic band, which owns the structure of the generators.</li>
+<li><strong>The four adjoints are not compared here.</strong> The comparison, block against block, is the crossing reader <em>The Operators
+  of the Twelve Structures: Multiplication, Adjoint and Bracket</em>, which is not one of the twelve; this article declares
+  only the quaternionic column.</li>
+<li><strong>The metric, the mass shell and the invertibility are the companion articles' business.</strong> The interval and the
+  biquaternion norm, the units and the zero divisors are <em>Biquaternion Norm and Invertibility</em>; the mass shell, the rank
+  and the positivity of the dagger are <em>Mass, Rank and the Positivity of the Dagger</em>; the interval read as the square of
+  the material composition is <em>The Interval as the Square and the Charge of the Material Composition</em>, and the
+  orientation of the composition is <em>Why the Material Composition Is Oriented and Cannot Measure</em>. This article owns
+  none of them.</li>
+<li><strong>The state space is used, not studied.</strong> The module $S$ and its complement are the two sibling articles of the band,
+  used here only for the action of the operators.</li>
+</ul>
+<p><strong>What the framework does not claim.</strong> The reading does not derive the Lorentz transformation, the light cone or the
+mass shell from the operator calculus; it reads the three causal classes of the parameters that the corpus already uses.
+It does not identify a physical symmetry with the inner automorphisms; it states that the symmetries of the interval
+inside this family are the norm-one multiplications and their two-sided companions. And it does not claim that the
+operator calculus of the twelve rows is one calculus: the swap of the sides belongs to the plain form alone.</p>
+<h2 id="the-ledger">The Ledger</h2>
+<p><strong>Proved.</strong> The left multiplications of the quaternionic product are $L_{\tilde P}(\tilde X)=\tilde P^{\natural}\tilde X$,
+the plain left multiplications by the conjugated parameter, and they compose by the <strong>reversed</strong> law
+$L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$, so that $M_L\cong\mathbb{B}^{\mathrm{op}}$ is a monoid
+anti-isomorphic to the plain multiplicative monoid, the anti-isomorphism lying in the natural conjugation; the twisted
+right multiplications $\varrho_{\tilde P}(\tilde X)=\tilde X\tilde P^{\natural}$ compose by the <strong>direct</strong> law and are a
+monoid isomorphic to $\mathbb{B}$; the right multiplications of the product do not close; the product has a left unit
+and no right unit, hence no two-sided unit; the mixed composites commute and span the whole endomorphism algebra, of
+complex dimension sixteen; the adjoint for the quaternionic form is $(L_{\tilde P})^{N}=L_{\tilde P^{\natural}}$, keeps
+the side and conjugates the parameter; a one-sided operator is self-adjoint exactly for a central parameter,
+skew-adjoint exactly for a pure one, and form-preserving exactly for norm one, and each multiplication scales the form
+by the norm of its parameter with $\det L_{\tilde P}=N(\tilde P)^{2}$; the twisted two-sided operator
+$\Theta_{\tilde A}=L_{\tilde A^{\natural}}\varrho_{\tilde A}$ is quadratic in its parameter and multiplicative up to
+$N(\tilde A)$ for every parameter, its adjoint is $\Theta_{\tilde A^{\natural}}$, it is self-adjoint exactly for a
+parameter in the centre or the vector subspace and never skew-adjoint, it preserves the form exactly for
+$N(\tilde A)=\pm1$, and it equals $N(\tilde A)\mathrm{Ad}_{\tilde A}$ on the units, agreeing with the inner automorphism
+exactly on the norm-one slice; the strictly multiplicative two-sided operators are the inner automorphisms, and the
+multiplicative-up-to-a-scalar ones are exactly the scalar multiples of the twisted two-sided operators; and the left
+actions restricted to the state space are a basis of its operators, differing from the plain basis only by the sign of
+the vector directions, with the two diagonal projectors exchanged by the natural conjugation.</p>
+<p><strong>Readings.</strong> That the adjoint of the band is the <strong>parameter conjugation on one side</strong>, so that the interval can tell a
+left attachment from a right one and a type is a property of a single parameter; that the norm is the <strong>conformal factor</strong>
+of a multiplication and the <strong>scalar of the two-sided composition</strong>, and that its sign partitions the parameters into the
+timelike, the null and the spacelike; that the <strong>null parameters are the causal cone</strong> and the norm-one parameters are the
+Lorentz transformations; that the two-sided operator is <strong>quadratic</strong> in its parameter and <strong>defined on every element</strong>,
+where the inner automorphism needs the inverse; that the skew-adjoint family is the vector subspace, a generator-like
+family that does not close under composition; and that the process of the band is the opposite monoid, the element being
+only a representative read through the conjugation. Each is the framework's naming of a proved algebraic fact and is
+labelled as such.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<p>The operators of the quaternionic product read as the two ways of attaching a material operation to an element —
+through the interval on the first slot, as it stands on the second — and as the conjugation sandwich of the band. The
+job word of the band is <strong>causality</strong>, and the operator layer supplies its four statements. The invariant form of the
+band is the <strong>interval</strong>, the general quaternionic bilinear form of signature
+$(3,1)$ on the material sector; the operators that preserve it are exactly the multiplications by a parameter of norm
+one, and they are the <strong>Lorentz transformations</strong>. The set of parameters on which the interval vanishes is the <strong>causal
+cone</strong> — the lightlike parameters, the zero divisors of the plain algebra — and the left multiplication by a null
+parameter collapses the form, $N(L_{\tilde P}\tilde X)=0$ for every $\tilde X$, which is the operator picture of
+lightlike propagation. The sign of the norm multiplies under the composition, so the division of the parameters into
+the timelike, the null and the spacelike is compatible with the product, and this is the <strong>causal division</strong> of the
+parameters: the band's own composition law carries the causal character of a product as the product of the causal
+characters, the table of the four cells being <em>The Interval as the Square and the Charge of the Material Composition</em>.
+The second reading is architectural: the composition of the band defines a monoid of operators and not an algebra, the
+product being unital on one side alone; the operations compose and the elements do not, which is the operator form of
+the orientation of the material composition and of its refusal to measure. The third reading is the
+two-sided one. The sandwich of the band is the conjugation sandwich $\tilde X\mapsto\tilde A\tilde X\tilde A^{\natural}$,
+quadratic in its parameter and defined on every element, and it is the inner automorphism scaled by the norm; on the
+norm-one slice — the Lorentz parameters — it is the inner automorphism, so the Lorentz action is the sandwich, while off
+the slice the two differ by the norm, which is the mass. The fourth reading is the type criterion: the symmetric
+multiplications are those by a central or a pure parameter, so the two observable-like sectors of the band are the
+central direction and the three spatial directions of the vector subspace, and the skew-adjoint family is the vector
+subspace itself — the operator picture of the one positive and the three negative directions of the interval. All four
+are readings of the proved operator facts and are labelled as readings, not as derivations.</p>
+<h2 id="summary">Summary</h2>
+<p>The operators of the quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ are the left
+multiplication $L_{\tilde P}(\tilde X)=\tilde P^{\natural}\tilde X$, the right multiplication
+$R_{\tilde P}(\tilde X)=\tilde X^{\natural}\tilde P$ and the twisted right multiplication
+$\varrho_{\tilde P}(\tilde X)=\tilde X\tilde P^{\natural}$, with the two-sided operators $L_{\tilde P}\varrho_{\tilde Q}$.
+The left family composes by the <strong>reversed</strong> law $L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$, so it is a monoid
+$M_L\cong\mathbb{B}^{\mathrm{op}}$ anti-isomorphic to the plain multiplicative monoid, the anti-isomorphism lying in the
+natural conjugation; the twisted right family composes by the <strong>direct</strong> law and is a monoid isomorphic to
+$\mathbb{B}$; the right multiplication of the product does not close; the product has a left unit and no right unit, so
+no two-sided unit; and the mixed composites commute and span the whole endomorphism algebra of complex dimension
+sixteen. The form of the band is the general quaternionic bilinear form
+$N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ of Gram matrix $I_4$, the polar form of the norm, and its
+adjoint — the <strong>quaternionic adjoint</strong> ${}^{N}$ — <strong>keeps the side</strong> and carries the <strong>parameter</strong> through the natural
+conjugation: $(L_{\tilde P})^{N}=L_{\tilde P^{\natural}}$ and $(\varrho_{\tilde P})^{N}=\varrho_{\tilde P^{\natural}}$.
+Every type criterion is therefore a criterion on <strong>one</strong> parameter: a one-sided operator is self-adjoint exactly for a
+central parameter, skew-adjoint exactly for a pure one, and form-preserving exactly for norm one, each multiplication
+scaling the form by the norm of its parameter with determinant the square of that norm. The twisted two-sided operator
+$\Theta_{\tilde A}=\tilde A[\,]\tilde A^{\natural}$ is <strong>quadratic</strong> in its parameter and <strong>multiplicative up to the norm
+for every parameter</strong>, $\Theta_{\tilde A}(\tilde Y)\Theta_{\tilde A}(\tilde Z)=N(\tilde A)\Theta_{\tilde A}(\tilde Y\tilde Z)$,
+where the plain two-sided operator carried only a partial law and then only when the product of the two parameters was
+central; its adjoint is $\Theta_{\tilde A^{\natural}}$, it is self-adjoint exactly for a parameter in the centre or the
+vector subspace and never skew-adjoint, it preserves the form exactly for $N(\tilde A)=\pm1$, and it equals
+$N(\tilde A)\mathrm{Ad}_{\tilde A}$ on the units, agreeing with the inner automorphism exactly on the norm-one slice. On
+the state space the left actions exhaust the operators of the module up to the sign of the vector directions, the
+twisted right actions are the commutant, and the two diagonal projectors are exchanged by the conjugation. Read on the
+interval, the band is the causality band: the
+invariant form is the interval of signature $(3,1)$, its null set the causal cone, the norm-one parameters are the
+Lorentz transformations, and the division of the parameters by the sign of the norm is the causal division.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion complex space, basis $e_0=1,e_1,e_2,e_3$</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$</td>
+<td>the general quaternionic bilinear product of the band</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde Q$</td>
+<td>the plain, associative product of the algebra</td>
+</tr>
+<tr>
+<td>$L_{\tilde P}(\tilde X)=\tilde P\star\tilde X=\tilde P^{\natural}\tilde X$</td>
+<td>the left multiplication; the plain left multiplication by $\tilde P^{\natural}$</td>
+</tr>
+<tr>
+<td>$R_{\tilde P}(\tilde X)=\tilde X\star\tilde P=\tilde X^{\natural}\tilde P$</td>
+<td>the right multiplication of the product; it does not close</td>
+</tr>
+<tr>
+<td>$\varrho_{\tilde P}(\tilde X)=\tilde X\tilde P^{\natural}$</td>
+<td>the twisted right multiplication, the closed mirror</td>
+</tr>
+<tr>
+<td>$L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$</td>
+<td>the reversed composition law; $M_L\cong\mathbb{B}^{\mathrm{op}}$</td>
+</tr>
+<tr>
+<td>$\varrho_{\tilde P}\varrho_{\tilde R}=\varrho_{\tilde P\tilde R}$</td>
+<td>the direct composition law; $M_R\cong\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$L_{\tilde P}\varrho_{\tilde Q}(\tilde X)=\tilde P^{\natural}\tilde X\tilde Q^{\natural}$</td>
+<td>the two-sided operators; span $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, dimension sixteen</td>
+</tr>
+<tr>
+<td>$N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$</td>
+<td>the general quaternionic bilinear form, Gram $I_4$; the interval on $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$</td>
+<td>the biquaternion norm; unit exactly when $N\neq0$</td>
+</tr>
+<tr>
+<td>${}^{N}$</td>
+<td>the quaternionic adjoint, $(L_{\tilde P})^{N}=L_{\tilde P^{\natural}}$; keeps the side</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde A}=L_{\tilde A^{\natural}}\varrho_{\tilde A}$</td>
+<td>the twisted two-sided operator, $\tilde A\tilde X\tilde A^{\natural}$; quadratic in $\tilde A$</td>
+</tr>
+<tr>
+<td>$(\Theta_{\tilde A})^{N}=\Theta_{\tilde A^{\natural}}$</td>
+<td>the adjoint of the sandwich</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde A}(\tilde Y)\Theta_{\tilde A}(\tilde Z)=N(\tilde A)\Theta_{\tilde A}(\tilde Y\tilde Z)$</td>
+<td>multiplicativity up to the norm, for every parameter</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde A}=N(\tilde A)\mathrm{Ad}_{\tilde A}$</td>
+<td>the sandwich against the inner automorphism, on the units</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Left Multiplications of the Quaternionic Product and the Opposite Monoid</em> (<code>articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md</code>), for the composition laws, the opposite monoid and the mixed composites.</li>
+<li><em>One-Sided Operators on the General Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/one-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.md</code>), for the adjoints for the quaternionic form, the types, the norm and the determinant of a multiplication.</li>
+<li><em>Two-Sided Operators on the General Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.md</code>), for the twisted two-sided operator, its quadraticity, its multiplication law and its adjoint.</li>
+<li><em>The Specificities of the General Quaternionic Algebra</em> (<code>articles_maths/the-specificities-of-the-general-quaternionic-algebra.md</code>), for the isotope identity and the projectors, and <em>Introduction to the General Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md</code>), for the product and its elementary laws.</li>
+<li><em>The Pin and Spin Groups of the General Quaternionic Algebra of Biquaternions</em>, for the groups cut out by the norm, and <em>The Four Pairings of the Biquaternion Algebra</em>, for the form and its adjoint.</li>
+<li>The band articles: <em>The Interval as the Square and the Charge of the Material Composition</em>, for the interval, the mass shell and the closed causal cone, and <em>Why the Material Composition Is Oriented and Cannot Measure</em>, for the orientation, the one-sided unit and the opposite monoid read physically.</li>
+<li><em>The Spinor Space as a Module and as a Hilbert Space</em> and <em>The Complementary Space of the Spinor Space and Its Physical Meaning</em>, for the state space the operators act on.</li>
+<li><em>The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich</em>, the sibling operator article of the composition band, and <em>The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket</em>, the crossing reader of the twelve.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

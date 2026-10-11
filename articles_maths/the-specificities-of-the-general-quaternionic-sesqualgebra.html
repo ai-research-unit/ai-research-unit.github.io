@@ -65,7 +65,7 @@ $$</p>
 <p>$$
 \bigl(\tilde P\star\tilde Q\bigr)^{*} = \tilde Q\,\overline{\tilde P} ,
 $$</p>
-<p>equivalently the factorization $\tilde P\star\tilde Q = (\overline{\tilde Q}\tilde P)^{\natural}$. The block is the only one of the twelve structures satisfying it, and it is the identity, and not the pair of actions, that is the law: the two actions are a consequence of the identity, while the symmetrisation $\mathrm{SQS}$ shares them and fails the identity. The article states the identity as the criterion, proves it, and runs the <strong>eleven comparisons</strong>: for each of the other structures a basis pair is exhibited at which the two sides differ. It then collects the consequences, which are the specificities of the block: the parities of the two slots (linear in the first, conjugate-linear in the second), the absence of projectors and of square-zero operators, the square and the Krein form, the idempotents which are units of the plain algebra, and the failure of the Jordan triple identity.</p>
+<p>equivalently the factorization $\tilde P\star\tilde Q = (\overline{\tilde Q}\tilde P)^{\natural}$. The block is the only one of the twelve structures satisfying it, and it is the identity, and not the pair of actions, that is the law: the two actions are a consequence of the identity, while the symmetrisation $\mathrm{SQS}$ shares them and fails the identity. The article states the identity as the criterion, proves it, and isolates the block among the twelve. It then collects the consequences, which are the specificities of the block: the parities of the two slots (linear in the first, conjugate-linear in the second), the absence of projectors and of square-zero operators, the square and the Krein form, the idempotents which are units of the plain algebra, and the failure of the Jordan triple identity.</p>
 <p><strong>Placement.</strong> The article is the fifth entry, and the synthesis, of the <em>Specific Theory</em> section of the general quaternionic sesqualgebra, after <em>The Two One-Sided Actions and the Absence of a Unit</em>, <em>The Left and Right Multiplications of the General Quaternionic Sesquilinear Product</em>, <em>The Associator of the General Quaternionic Sesquilinear Product</em> and <em>The Ternary Product and the Failure of the Jordan Triple Identity</em>. Its twins are <em>The Specificities of the General Plain Algebra</em>, which states the left-alternativity criterion of the plain product, and <em>The Specificities of the General Quaternionic Algebra</em>, which states the isotope criterion of the natural product; the three criteria are the three ways in which one of the four general products can be singled out.</p>
 <p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0 = 1, e_1, e_2, e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. Juxtaposition is the <strong>plain</strong> product, $\star$ is the general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, the natural conjugation ${}^{\natural}$ lying in the first slot and the star ${}^{*}$ in the second, and the subscript of an operator is the element it is indexed by. The natural conjugation is ${}^{\natural}$, $\tilde Q^{\natural} = Q_0-\mathbf Q$; the star is ${}^{*}$, $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$; and $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$ is the Hermitian conjugation; all three fix $e_0$. The <strong>central square</strong> is $c(\tilde Q) = \sum_\mu Q_\mu^2$ with $c(\tilde Q)e_0 = \tilde Q\tilde Q^{\natural}$; the <strong>sandwich</strong> of the pair $(A,B)$ is the map $\tilde X\mapsto A\tilde X B$ of the plain product.</p>
 <h2 id="the-law">The Law</h2>
@@ -79,93 +79,45 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> <em>The block satisfies the law.</em> The identity $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ and the relation $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$ give $\tilde P\star\tilde Q = \tilde P^{\natural}\overline{\tilde Q^{\natural}}$, and ${}^{\natural}$ is an anti-automorphism of the plain product, so $\tilde P^{\natural}\overline{\tilde Q^{\natural}} = (\overline{\tilde Q}\tilde P)^{\natural}$, since $\natural(\overline{\tilde Q}) = \overline{\tilde Q^{\natural}}$. That is the factorization. Applying ${}^{*}$ to it, and using that ${}^{*}$ is an anti-automorphism of the plain product fixing $e_0$, gives $(\tilde P\star\tilde Q)^{*} = ((\overline{\tilde Q}\tilde P)^{\natural})^{*} = (\overline{\tilde Q}\tilde P)^{\natural*} = \overline{\overline{\tilde Q}\tilde P} = \overline{\overline{\tilde Q}}\,\bar P = \tilde Q\bar P$, the star identity. At $\tilde Q = e_0$ it gives $(\tilde P\star e_0)^{*} = \bar P$, that is $\tilde P\star e_0 = \bar P^{*} = \tilde P^{\natural}$; at $\tilde P = e_0$ it gives $(e_0\star\tilde Q)^{*} = \tilde Q$, that is $e_0\star\tilde Q = \tilde Q^{*}$. So the two actions are the stated ones.</p>
 <p><em>The identity forces the block.</em> Conversely, let $\star$ satisfy the star identity. Setting $\tilde Q = e_0$ gives $(\tilde P\star e_0)^{*} = e_0\bar P = \bar P$, hence $\tilde P\star e_0 = \bar P^{*} = \tilde P^{\natural}$, and setting $\tilde P = e_0$ gives $(e_0\star\tilde Q)^{*} = \tilde Q\bar e_0 = \tilde Q$, hence $e_0\star\tilde Q = \tilde Q^{*}$. So the star identity implies the two actions, and the two actions are therefore <strong>necessary</strong> conditions. They are <strong>not sufficient</strong>: the symmetrisation $\mathrm{SQS}$ of the block, the half-sum $\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ of <em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em>, has the same two actions, and the identity fails at $(\tilde P,\tilde Q) = (e_1,e_2)$, where the left side is the star of $\mathrm{SQS}(e_1,e_2) = 0$, that is $0$, and the right side is $e_2\bar e_1 = -e_3$. The four general products of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> are the case in which a simple reading of the actions settles the identity: they are $\tilde P\star\tilde Q = \theta(\tilde P)\phi(\tilde Q)$ with $\theta\in\{\mathrm{id},{}^{\natural}\}$ in the first slot and $\phi\in\{\mathrm{id},{}^{*}\}$ in the second, the right action $\tilde P\star e_0 = \theta(\tilde P)$ is $\tilde P^{\natural}$ exactly when $\theta = {}^{\natural}$, and the left action $e_0\star\tilde Q = \phi(\tilde Q)$ is $\tilde Q^{*}$ exactly when $\phi = {}^{*}$; among the four the identity selects the product $(\theta,\phi) = ({}^{\natural},{}^{*})$, which is the block. The eight derived parts are not of that form, and for them the identity is tested directly in the section below, where every structure other than the block is given a basis pair at which the two sides differ.</p>
-<h2 id="the-eleven-comparisons">The Eleven Comparisons</h2>
-<p>The test is the <strong>star identity</strong> $\bigl(\tilde P\star\tilde Q\bigr)^{*} = \tilde Q\overline{\tilde P}$. For each of the eleven structures other than the block one basis pair is exhibited at which the two sides differ; the block is added for completeness, its two sides coinciding at every pair. The eight derived parts are the symmetric and antisymmetric parts $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{SQS}$ and $\mathrm{AQS}$ of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, constructed in <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>: the four bilinear parts are the half-sum and the half-difference of the two orders of $\tilde P\tilde Q$ and of $\tilde P^{\natural}\tilde Q$, and the four sesquilinear parts are the scalar and the vector part of the sibling $\tilde P\tilde Q^{*}$ and the half-sum and the half-difference of the two orders $\tilde P^{\natural}\tilde Q^{*}$ and $\tilde Q^{*}\tilde P^{\natural}$ of the block.</p>
+<h2 id="the-isolation-among-the-twelve">The Isolation among the Twelve</h2>
+<p>The test is the <strong>star identity</strong> $(\tilde P\star\tilde Q)^{*}=\tilde Q\overline{\tilde P}$. The eight derived parts are the symmetric and antisymmetric parts of the four general products (<em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>), and the four general products are the readings $\tilde P\star\tilde Q=\theta(\tilde P)\phi(\tilde Q)$ with $\theta\in\{\mathrm{id},{}^{\natural}\}$ in the first slot and $\phi\in\{\mathrm{id},{}^{*}\}$ in the second.</p>
+<p><strong>Theorem (the isolation).</strong> Of the twelve structures of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, the block is the only one satisfying the star identity.</p>
+<p><em>Proof.</em> The four general products are settled by their slots: the right action $\tilde P\star e_0=\theta(\tilde P)$ is $\tilde P^{\natural}$ exactly when $\theta={}^{\natural}$, and the left action $e_0\star\tilde Q=\phi(\tilde Q)$ is $\tilde Q^{*}$ exactly when $\phi={}^{*}$; the two actions are necessary for the identity, and among the four general products they select the block alone. The eight derived parts are not of that form, and each fails the identity on a basis pair: the symmetric part SPA and the three other general products give $-e_1$ at $(e_0,e_1)$ or $(e_1,e_0)$ where $e_1$ is required; the four antisymmetrisations APA, AQA, APS and AQS vanish at the pair of units $(e_0,e_0)$ where $e_0$ is required; SQA and SPS vanish at $(e_0,e_1)$ where $e_1$ is required; and the symmetrisation SQS of the block, the only one that survives the pair of units, is removed by the vector pair $(e_1,e_2)$, where its value vanishes and the right side is $-e_3$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>structure</th>
-<th>$(\tilde P,\tilde Q)$</th>
-<th>$\bigl(\tilde P\star\tilde Q\bigr)^{*}$</th>
-<th>$\tilde Q\overline{\tilde P}$</th>
+<th>the failure of the star identity</th>
+<th>the structures</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde P\tilde Q$</td>
-<td>$(e_0,e_1)$</td>
-<td>$-e_1$</td>
-<td>$e_1$</td>
+<td>$-e_1$ at $(e_0,e_1)$, $e_1$ required</td>
+<td>GPA, GQA, SPA</td>
 </tr>
 <tr>
-<td>$\tilde P^{\natural}\tilde Q$</td>
-<td>$(e_0,e_1)$</td>
-<td>$-e_1$</td>
-<td>$e_1$</td>
+<td>$-e_1$ at $(e_1,e_0)$, $e_1$ required</td>
+<td>GPS</td>
 </tr>
 <tr>
-<td>$\tilde P\tilde Q^{*}$</td>
-<td>$(e_1,e_0)$</td>
-<td>$-e_1$</td>
-<td>$e_1$</td>
+<td>$0$ at $(e_0,e_0)$, $e_0$ required</td>
+<td>APA, AQA, APS, AQS</td>
 </tr>
 <tr>
-<td>$\mathrm{SPA}$, the symmetric part of $\tilde P\tilde Q$</td>
-<td>$(e_0,e_1)$</td>
-<td>$-e_1$</td>
-<td>$e_1$</td>
+<td>$0$ at $(e_0,e_1)$, $e_1$ required</td>
+<td>SQA, SPS</td>
 </tr>
 <tr>
-<td>$\mathrm{APA}$, the antisymmetric part of $\tilde P\tilde Q$</td>
-<td>$(e_0,e_0)$</td>
-<td>$0$</td>
-<td>$e_0$</td>
+<td>$0$ at $(e_1,e_2)$, $-e_3$ required</td>
+<td>SQS</td>
 </tr>
 <tr>
-<td>$\mathrm{SQA}$, the symmetric part of $\tilde P^{\natural}\tilde Q$</td>
-<td>$(e_0,e_1)$</td>
-<td>$0$</td>
-<td>$e_1$</td>
-</tr>
-<tr>
-<td>$\mathrm{AQA}$, the antisymmetric part of $\tilde P^{\natural}\tilde Q$</td>
-<td>$(e_0,e_0)$</td>
-<td>$0$</td>
-<td>$e_0$</td>
-</tr>
-<tr>
-<td>$\mathrm{SPS}$, the symmetric part of $\tilde P\tilde Q^{*}$</td>
-<td>$(e_0,e_1)$</td>
-<td>$0$</td>
-<td>$e_1$</td>
-</tr>
-<tr>
-<td>$\mathrm{APS}$, the antisymmetric part of $\tilde P\tilde Q^{*}$</td>
-<td>$(e_0,e_0)$</td>
-<td>$0$</td>
-<td>$e_0$</td>
-</tr>
-<tr>
-<td>$\mathrm{SQS}$, the symmetric part of $\tilde P^{\natural}\tilde Q^{*}$</td>
-<td>$(e_1,e_2)$</td>
-<td>$0$</td>
-<td>$-e_3$</td>
-</tr>
-<tr>
-<td>$\mathrm{AQS}$, the antisymmetric part of $\tilde P^{\natural}\tilde Q^{*}$</td>
-<td>$(e_0,e_0)$</td>
-<td>$0$</td>
-<td>$e_0$</td>
-</tr>
-<tr>
-<td>$\tilde P^{\natural}\tilde Q^{*}$</td>
-<td>any</td>
-<td>equal</td>
-<td>equal</td>
+<td><strong>equal at every pair</strong></td>
+<td><strong>GQS</strong></td>
 </tr>
 </tbody>
 </table></div>
-<p>All eleven fail, and four basis pairs suffice. The three general products other than the block, together with $\mathrm{SPA}$, give $-e_1$ where $e_1$ is required: $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$ and $\mathrm{SPA}$ at $(e_0,e_1)$, and $\tilde P\tilde Q^{*}$ at $(e_1,e_0)$; $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$ and $\mathrm{AQS}$ vanish at the pair of units $(e_0,e_0)$, where $e_0$ is required; and $\mathrm{SQA}$ and $\mathrm{SPS}$ vanish at $(e_0,e_1)$, where $e_1$ is required. The last, the symmetrisation $\mathrm{SQS}$ of the block, is the only one that survives the pair of units, and it is removed by the vector pair $(e_1,e_2)$, where its value vanishes and the right side is $-e_3$. The block is the only row with two equal entries, and the criterion is proved.</p>
+<p>The block is the only row whose two entries agree, and the criterion is proved. The symmetrisation SQS is the nearest structure: it shares the two actions of $e_0$ with the block and fails the identity, which is why the law is the identity and not the pair of actions.</p>
 <h2 id="the-parities-of-the-slots-and-the-absence-of-projectors">The Parities of the Slots and the Absence of Projectors</h2>
 <p><strong>Theorem (the parities of the two slots).</strong> The block is $\mathbb{C}$-<strong>linear in the first slot</strong> and <strong>conjugate-linear in the second</strong>:</p>
 <p>$$
@@ -219,7 +171,7 @@ $$</p>
 <li><strong>No projector, no square-zero operator, no monoid of left multiplications.</strong> The left multiplications are conjugate-linear, their composites are the linear sandwiches, the right multiplications are linear, and the parity obstruction removes the projectors and the square-zero operators of both families. The operator-level reading is <em>The Left and Right Multiplications of the General Quaternionic Sesquilinear Product</em>, and the sandwich $A^{\natural}(\cdot)\overline{B}$ is the composite of two left multiplications.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ is the unique one of the twelve structures on the biquaternion space satisfying the star identity $(\tilde P\star\tilde Q)^{*} = \tilde Q\overline{\tilde P}$, equivalently the unique one that factors as $\tilde P\star\tilde Q = (\overline{\tilde Q}\tilde P)^{\natural}$. Its two actions of $e_0$ follow by specialization, $\tilde P\star e_0 = \tilde P^{\natural}$ and $e_0\star\tilde Q = \tilde Q^{*}$, and they are necessary conditions only: the symmetrisation $\mathrm{SQS}$ shares them and fails the identity. The eleven comparisons exhibit, for each of the other structures, a basis pair at which the two sides differ, and the four general products are settled among themselves by the two actions.</p>
+<p>The general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ is the unique one of the twelve structures on the biquaternion space satisfying the star identity $(\tilde P\star\tilde Q)^{*} = \tilde Q\overline{\tilde P}$, equivalently the unique one that factors as $\tilde P\star\tilde Q = (\overline{\tilde Q}\tilde P)^{\natural}$. Its two actions of $e_0$ follow by specialization, $\tilde P\star e_0 = \tilde P^{\natural}$ and $e_0\star\tilde Q = \tilde Q^{*}$, and they are necessary conditions only: the symmetrisation $\mathrm{SQS}$ shares them and fails the identity. The isolation exhibits, for each of the other structures, a basis pair at which the two sides differ, and the four general products are settled among themselves by the two actions.</p>
 <p>The consequences are the specificities of the block. The product is linear in the first slot and conjugate-linear in the second, the left multiplication is $L_{\tilde P}(\tilde X) = \tilde P^{\natural}\tilde X^{*}$ with composite the linear sandwich $L_{\tilde P}L_{\tilde R}(\tilde X) = \tilde P^{\natural}\tilde X\overline{\tilde R}$, the right multiplication $R_{\tilde P}(\tilde X) = \tilde X^{\natural}\tilde P^{*}$ is linear, and the parity obstruction removes every projector and every square-zero operator, in contrast to the plain and the natural products. The square is the natural conjugate of the plain product, its scalar part is the Krein form of signature $(2,6)$, and its vanishing cuts out, beyond the origin, the family $c(\hat\mu+i)$ in the non-pure part of the cone. The nontrivial idempotents are the family $-\tfrac12e_0+\mu$ with $\sum_k\mu_k^2 = \tfrac34$, and they are units of the plain algebra while the block has no unit. The ternary product fails the Jordan triple identity at a basis quintuple, and the first-slot conjugation is the common source of the criterion, the sign vector of the scalar form, the absence of a unit and the failure of the identity. The block has the element theory of the sesquilinear structures and none of their operator theory.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

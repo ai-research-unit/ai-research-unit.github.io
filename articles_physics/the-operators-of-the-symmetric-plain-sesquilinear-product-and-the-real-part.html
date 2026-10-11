@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Operators of the Symmetric Plain Sesquilinear Product and the Real Part — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-operators-of-the-symmetric-plain-sesquilinear-product-and-the-real-part"><strong>The Operators of the Symmetric Plain Sesquilinear Product and the Real Part</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the operator article of the SPS band, the band of positivity. Its product is the symmetric part of the plain sesquilinear product of the biquaternion algebra, the sesquilinear product $\tilde P\tilde Q^{*}$ symmetrised under the natural conjugation ${}^{\natural}$:</p>
+<p>$$
+\tilde P\star\tilde Q=\tfrac12\bigl(\tilde P\tilde Q^{*}+(\tilde P\tilde Q^{*})^{\natural}\bigr).
+$$</p>
+<p>The product is <strong>symmetric</strong> — the symmetric part of the parent product $\tilde P\tilde Q^{*}$ under ${}^{\natural}$ — and <strong>sesquilinear</strong>, and its value is central and computed by a Hermitian form,</p>
+<p>$$
+\tilde P\star\tilde Q=H(\tilde P,\tilde Q)\,e_0,\qquad H(\tilde P,\tilde Q)=\sum_{\mu=0}^{3}P_\mu\overline{Q_\mu},
+$$</p>
+<p>the identity in which the whole block is read (<em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em>; the form is <em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em>). The operators of the block are the two maps that attach an element to an argument on the left and on the right:</p>
+<p>$$
+L^{\star}_{\tilde A}\tilde R=\tilde A\star\tilde R=H(\tilde A,\tilde R)\,e_0,\qquad R^{\star}_{\tilde A}\tilde R=\tilde R\star\tilde A=H(\tilde R,\tilde A)\,e_0 .
+$$</p>
+<p>Because the product is sesquilinear, the left family is <strong>conjugate-linear</strong> and the right family is <strong>$\mathbb{C}$-linear</strong>; because the value is central and the form's symmetry is the conjugate symmetry $H(\tilde R,\tilde A)=\overline{H(\tilde A,\tilde R)}$, the two families are the pointwise conjugates of one another. The operator theory of the family, its rank, image, kernel, traces and composition laws, is <em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>, and the general adjoint rules are <em>The Sesquilinear Adjoint Operator</em>; this article reads them for the band and states the one thing the composition laws do not: <strong>which form the operators are adjoint for, and what that adjoint does to the parameter</strong>.</p>
+<p>The answer is one sentence. The form is the Hermitian form $H$ of the band, whose symmetry is the <strong>conjugate</strong> symmetry $H(\tilde Q,\tilde P)=\overline{H(\tilde P,\tilde Q)}$; its adjoint is therefore an adjoint of <strong>conjugation</strong> type and it <strong>keeps the side</strong> of the family instead of exchanging the two sides as the transpose of the GPA band does. Every type criterion of the block is a consequence, and each is a criterion on the <strong>single parameter</strong> $\tilde A$: a left multiplication is self-adjoint exactly when its parameter is central, a right multiplication exactly when its parameter is a <strong>real</strong> central scalar. The one feature peculiar to the SPS row is that the family is <strong>rank one</strong>, and it sharpens the contrast with the GPA row to a negative answer: off the central parameters the adjoint of a one-sided operator is <strong>not a multiplication of the block at all</strong>. With the GPS band, this band owns the <strong>physical</strong> adjoint — the Hermitian adjoint whose fixed points are the observables — and not a transpose.</p>
+<p><strong>What the band owns and what it cites.</strong> The positivity of the product, the cone of the operation, the reality of the diagonal and the classical composition are the business of the two sibling articles, <em>The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing</em> and <em>Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone</em>; they are cited and not repeated. The positivity of the dagger and the Hermitian cone $\{\tilde Q\tilde Q^{*}\}$ are the mathematics of <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em> and <em>The Positive Cone of an Involutive Algebra</em>, and the physics of the positivity of the band is <em>Mass, Rank and the Positivity of the Dagger</em>, which owns that positivity. The rank-one family, the traces and the composition laws are <em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>; the parity, the twisted rule and the adjoint rules of the class are <em>The Sesquilinear Adjoint Operator</em> and <em>The Adjoint of the Sesquilinear Sandwich</em>; the contrast with the bilinear central sibling is <em>The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra</em>. The crossing of the twelve rows is <em>The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket</em>, which is not one of the twelve.</p>
+<p><strong>The questions of the block.</strong> The article follows the model of the operator article of the general plain product and answers its five questions in the band's own algebra: the <strong>composition</strong> of the two families; the <strong>adjoint</strong> — which form, and what the adjoint does to the parameter and to the side; the <strong>types</strong> — self-adjoint, skew-adjoint, form-preserving, multiplicative, and the adjoint of the sandwich; the <strong>action</strong> on the state space; and the <strong>reading</strong> under the job word of the band, positivity. Every algebraic statement is a theorem owned by one of the mathematics articles cited in the text and is followed by its reading.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$; a general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\mathbf Q$ with complex coefficients. The natural conjugation ${}^{\natural}$ fixes $i$ and negates $e_1,e_2,e_3$; the coefficientwise conjugation $\overline{\cdot}$ conjugates the four coefficients; the Hermitian conjugation is ${}^{*}=\overline{\cdot}\circ{}^{\natural}$, so that $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ with $\varepsilon=(1,-1,-1,-1)$. The form $H$ is linear in the first argument and conjugate-linear in the second, and it is positive definite: $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$, strictly positive off zero. The adjoint of a conjugate-linear operator $T$ is the map $T^{\dagger}$ with $H(T\tilde R,\tilde S)=\overline{H(\tilde R,T^{\dagger}\tilde S)}$ for all $\tilde R,\tilde S$, the twisted rule of the sesquilinear class; the adjoint of a $\mathbb{C}$-linear operator is the ordinary map with $H(T\tilde R,\tilde S)=H(\tilde R,T^{\dagger}\tilde S)$.</p>
+<h2 id="the-two-multiplications-and-their-composition">The Two Multiplications and Their Composition</h2>
+<p><strong>Definition.</strong> For $\tilde A\in\mathbb{B}$ the <strong>left</strong> and the <strong>right multiplication</strong> by $\tilde A$ are the maps</p>
+<p>$$
+L^{\star}_{\tilde A}\tilde R=H(\tilde A,\tilde R)e_0,\qquad R^{\star}_{\tilde A}\tilde R=H(\tilde R,\tilde A)e_0 .
+$$</p>
+<p><strong>Theorem (the parity and the conjugate relation).</strong> The left family is conjugate-linear in its argument and the right family is $\mathbb{C}$-linear,</p>
+<p>$$
+L^{\star}_{\tilde A}(\lambda\tilde R)=\overline{\lambda}\,L^{\star}_{\tilde A}\tilde R,\qquad R^{\star}_{\tilde A}(\lambda\tilde R)=\lambda\,R^{\star}_{\tilde A}\tilde R ,
+$$</p>
+<p>and the two families are the pointwise conjugates of one another, $R^{\star}_{\tilde A}\tilde R=\overline{L^{\star}_{\tilde A}\tilde R}$, that is $R^{\star}_{\tilde A}=\overline{L^{\star}_{\tilde A}}$ with the bar on the value.</p>
+<p><em>Proof.</em> The linearity in a slot of the operator is the linearity of the form in the corresponding slot of the product, and the product is $\mathbb{C}$-linear in its first slot and conjugate-linear in its second. For the relation, $H(\tilde R,\tilde A)=\overline{H(\tilde A,\tilde R)}$ by the conjugate symmetry of $H$, and the value is central, so conjugating the value conjugates the operator. (<em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>, §<em>The Operators and Their Linearity</em>.)</p>
+<p><strong>Read as a physical statement.</strong> The two attachments of an operation to a state are <strong>not of the same kind</strong>: the left attachment is conjugate-linear and the right one is linear, because the product puts the conjugation on the side that the left multiplication uses. The symmetry of the product is what ties them: the right multiplication is the conjugate of the left one, so a single parametrised operation is read once on each side and the two readings are mirror images. This is the operator form of the conjugate-commutative law $\tilde Q\star\tilde P=\overline{\tilde P\star\tilde Q}$ of the band (<em>The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra</em>).</p>
+<p><strong>Theorem (rank one, image the centre, kernel a hyperplane).</strong> For $\tilde A\neq0$ each of $L^{\star}_{\tilde A}$ and $R^{\star}_{\tilde A}$ has <strong>rank one</strong>, its image being the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$; the kernel of each is the hyperplane $\{\tilde R:H(\tilde A,\tilde R)=0\}$, of complex dimension three and real dimension six; neither is injective and each is surjective onto the centre.</p>
+<p><em>Proof.</em> Every value is a complex multiple of $e_0$, and $H(\tilde A,\cdot\,)$ is a nonzero conjugate-linear functional for $\tilde A\neq0$, so its image is $\mathbb{C}e_0$ and its kernel is a hyperplane. (<em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>, §<em>Rank, Image and Kernel</em>.)</p>
+<p><strong>Read as a physical statement.</strong> A multiplication of this band never produces a direction: it reads a number off the argument and places it in the centre. The block sees only the scalar part of a state, which is the operator content of the statement that the values of the product are probability values and lie in the centre (the sibling <em>Why Probability Values Are Central</em>). No operator of the block has an image containing a vector part, and the block therefore carries no internal rotation: the rotations of the state space are not multiplications of this product.</p>
+<p><strong>Theorem (the composition laws).</strong> For all $\tilde A,\tilde B\in\mathbb{B}$,</p>
+<p>$$
+L^{\star}_{\tilde A}L^{\star}_{\tilde B}=A_0\,R^{\star}_{\tilde B},\qquad
+R^{\star}_{\tilde A}R^{\star}_{\tilde B}=\overline{A_0}\,R^{\star}_{\tilde B},\qquad
+L^{\star}_{\tilde A}R^{\star}_{\tilde B}=A_0\,L^{\star}_{\tilde B},\qquad
+R^{\star}_{\tilde A}L^{\star}_{\tilde B}=\overline{A_0}\,L^{\star}_{\tilde B},
+$$</p>
+<p>where $A_0=H(\tilde A,e_0)$ is the scalar part of $\tilde A$. The family is closed under composition, and the assignment $\tilde A\mapsto L^{\star}_{\tilde A}$ is <strong>not multiplicative</strong>: $L^{\star}_{\tilde A}L^{\star}_{\tilde B}\neq L^{\star}_{\tilde A\star\tilde B}$ unless $A_0=0$.</p>
+<p><em>Proof.</em> $L^{\star}_{\tilde A}L^{\star}_{\tilde B}\tilde R=H(\tilde A,H(\tilde B,\tilde R)e_0)e_0=\overline{H(\tilde B,\tilde R)}\,H(\tilde A,e_0)e_0=A_0H(\tilde R,\tilde B)e_0$, and the other three are the same computation with the conjugation placed by the second slot; the failure of multiplicativity is the displayed identity against $L^{\star}_{A_0e_0}$, since $\tilde A\star\tilde B=H(\tilde A,\tilde B)e_0$. (<em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>, §<em>The Composition and the Failure of Multiplicativity</em>.)</p>
+<p><strong>Read as a physical statement.</strong> The composite of two operations of the band is a <strong>scalar multiple of a one-sided operation</strong>, the scalar being the form of the first parameter with the identity: composition reads the form. The family composes like the scalars it computes, which is the operator form of the centrality of the value; a scalar part vanishes and the composite vanishes with it, so the semigroup of the block collapses whenever the leading parameter has no central part. This is the sharpest difference from the associative unital GPA row, where the two families are genuine multiplications with $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$ and the operators are invertible at invertible parameters: here there is no operator algebra, only a rank-one family closed under composition.</p>
+<h3 id="the-traces">The Traces</h3>
+<p><strong>Theorem (the traces).</strong> In the basis $e_0,e_1,e_2,e_3$,</p>
+<p>$$
+\operatorname{Tr}\bigl(R^{\star}_{\tilde A}\bigr)=H(e_0,\tilde A)=\overline{A_0},\qquad \operatorname{Tr}\bigl(L^{\star}_{\tilde A}\bigr)=H(\tilde A,e_0)=A_0 ,
+$$</p>
+<p>the first the ordinary trace of the $\mathbb{C}$-linear operator, the second the trace of the conjugate-linear operator in the conjugate-linear convention; the real-linear trace of $L^{\star}_{\tilde A}$ is $0$.</p>
+<p><em>Proof.</em> The matrix of $R^{\star}_{\tilde A}$ has the single nonzero row $R^{\star}_{\tilde A}(e_j)=H(e_j,\tilde A)e_0$, whose diagonal entry is $H(e_0,\tilde A)=\overline{A_0}$; the conjugate-linear $L^{\star}_{\tilde A}$ has $L^{\star}_{\tilde A}(e_0)=A_0e_0$, read as its trace in the conjugate-linear convention, while as a real-linear map its matrix has real trace zero. (<em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>, §<em>The Traces</em>.)</p>
+<p><strong>Read as a physical statement.</strong> The trace of a right multiplication is conjugate-linear in the parameter and the trace of a left one is linear, the trace-level mark of the sesquilinear class; the bilinear quaternionic sibling has both traces linear, and the difference is the conjugation carried by the second slot of the product. The trace is the one scalar of the operator that is a value of the band's form on the parameter, and it vanishes whenever the parameter has no central part, so a purely vector parameter gives a traceless operator.</p>
+<h2 id="the-adjoint-of-the-hermitian-form-conjugates-the-parameter">The Adjoint of the Hermitian Form Conjugates the Parameter</h2>
+<p><strong>Theorem (the adjoint of the right multiplication).</strong> For all $\tilde A,\tilde S\in\mathbb{B}$ the adjoint of the right multiplication with respect to $H$ is</p>
+<p>$$
+\bigl(R^{\star}_{\tilde A}\bigr)^{\dagger}\tilde S=S_0\,\tilde A ,
+$$</p>
+<p>the image of the argument's scalar part, and the map is $\mathbb{C}$-linear, as the adjoint of a linear operator must be.</p>
+<p><em>Proof.</em> The right multiplication is $\mathbb{C}$-linear, so the linear rule applies: $H(R^{\star}_{\tilde A}\tilde X,\tilde Y)=H(\tilde X,\tilde A)\overline{Y_0}$ and $H(\tilde X,Y_0\tilde A)=\overline{Y_0}\,H(\tilde X,\tilde A)$, the two scalars commuting; the form is non-degenerate, so the adjoint is the map displayed. (<em>The Sesquilinear Adjoint Operator</em>, §<em>The Adjoint of a Linear Operator</em>.)</p>
+<p><strong>Theorem (the adjoint of the left multiplication).</strong> For all $\tilde A,\tilde S\in\mathbb{B}$ the adjoint of the left multiplication is</p>
+<p>$$
+\bigl(L^{\star}_{\tilde A}\bigr)^{\dagger}\tilde S=\overline{S_0}\,\tilde A ,
+$$</p>
+<p>a <strong>conjugate-linear</strong> map, as the adjoint of a conjugate-linear operator must be; it is neither $L^{\star}_{\tilde A}$ nor $R^{\star}_{\tilde A}$, and it is not a multiplication of the block.</p>
+<p><em>Proof.</em> By the twisted rule, $H(L^{\star}_{\tilde A}\tilde R,\tilde S)=\overline{H(\tilde R,\overline{S_0}\tilde A)}$ for all $\tilde R,\tilde S$, by the conjugate symmetry of $H$ and the centrality of the value; the map $\tilde S\mapsto\overline{S_0}\tilde A$ is neither central-valued nor a multiplication of the block. (<em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>, §<em>The Adjoint of the Left Multiplication</em>.)</p>
+<p><strong>Read as a physical statement.</strong> The adjoint is taken for the Hermitian form of the band, whose symmetry is the <strong>conjugate</strong> symmetry; so its adjoint is an adjoint of conjugation type, and it <strong>keeps the side</strong> of the family: the adjoint of the linear right multiplication is again linear, the adjoint of the conjugate-linear left multiplication is again conjugate-linear, and the parity is preserved. This is the opposite of the GPA band, where the form is bilinear, the adjoint is a transpose, and the transpose of a left multiplication is a right one; there the sides swap and the type criteria are criteria on a pair. Here each side is stable under the adjoint operation, and the type criteria are criteria on the one parameter $\tilde A$ — the contrast between the conjugation adjoint and the transposition adjoint, read on a single block (<em>The Sesquilinear Adjoint Operator</em>, §<em>The Two Adjoints of a Conjugate-Linear Operator</em>).</p>
+<p><strong>Theorem (the adjoint on the central parameters, and the negative answer off them).</strong> On the central parameters the adjoint re-enters the family and reads as the coefficientwise conjugation of the parameter with the side kept,</p>
+<p>$$
+\bigl(R^{\star}_{ae_0}\bigr)^{\dagger}=R^{\star}_{\overline{a}\,e_0},\qquad a\in\mathbb{C},
+$$</p>
+<p>while off the central parameters the adjoint leaves the family altogether: although $R^{\star}_{\tilde A}$ is a multiplication of the block for every $\tilde A$, its adjoint $\tilde S\mapsto S_0\tilde A$ is a multiplication of the block exactly when $\tilde A$ is central, and only there does it re-enter the family as $R^{\star}_{\overline{a}e_0}$.</p>
+<p><em>Proof.</em> Self-adjointness of the adjoint formula: $H(R^{\star}_{ae_0}\tilde X,\tilde Y)=\overline{a}\,X_0\overline{Y_0}$ and $H(\tilde X,R^{\star}_{\overline{a}e_0}\tilde Y)=\overline{\overline{a}Y_0}\,X_0=aX_0\overline{Y_0}$ agree. Off the centre the map $\tilde S\mapsto S_0\tilde A$ has image the complex line $\mathbb{C}\tilde A$, which is not the centre, while every multiplication of the block is central-valued; hence the adjoint is not a multiplication. (<em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>, §<em>The Adjoint of the Left Multiplication</em>; <em>The Operators of the Twelve Structures</em>, §<em>The Adjoint</em>.)</p>
+<p><strong>Read as a physical statement.</strong> This is the price of the band's rank-one structure, and it is a <strong>negative answer</strong> stated as a fact. Where the parameter is a central scalar — the only place where the operation is a genuine multiplication of the block — the adjoint conjugates the scalar and keeps the side, so a real scalar gives a self-adjoint operator and an imaginary one gives a skew-adjoint operator. Where the parameter carries a vector part, the adjoint is still defined and still keeps the parity, but it is the rank-one map that multiplies the argument's scalar part by the parameter; it is no longer a multiplication of the block. The conjugate-linearity of the operator and the conjugate-linearity of the form cannot be matched by a multiplication of the row, and the failure is the operator expression of the sesquilinearity (<em>The Operators of the Twelve Structures</em>, §<em>The Adjoint</em>).</p>
+<p><strong>Theorem (the adjoint of the sandwich).</strong> For the parent sesquilinear product the two-sided operator is the <strong>sandwich</strong> $S_{\tilde A,\tilde B}(\tilde X)=\tilde A\tilde X^{*}\tilde B$, conjugate-linear in its argument, and its adjoint is the sandwich with the parameters exchanged,</p>
+<p>$$
+S^{\dagger}_{\tilde A,\tilde B}=S_{\tilde B,\tilde A},
+$$</p>
+<p>while the ordinary two-sided multiplication $T_{\tilde A,\tilde B}(\tilde X)=\tilde A\tilde X\tilde B$ is $\mathbb{C}$-linear and its adjoint conjugates each parameter and keeps the order, $T^{\dagger}_{\tilde A,\tilde B}=T_{\tilde A^{*},\tilde B^{*}}$.</p>
+<p><em>Proof.</em> By the twisted rule for the conjugate-linear sandwich and the linear rule for the two-sided multiplication, both against the pairing $H(\tilde X,\tilde Y)=\mathrm{Sc}(\tilde X\tilde Y^{*})$; the transposition of the pair for the sandwich is the trace of the involution that the sandwich already carries in its middle slot. (<em>The Adjoint of the Sesquilinear Sandwich</em>, §<em>The Adjoint of the Sandwich</em>; <em>The Sesquilinear Sandwich Operator</em>.)</p>
+<p><strong>Read as a physical statement.</strong> The two-sided operator of the parent product splits according to where the conjugation sits: the ordinary two-sided multiplication conjugates its two parameters and keeps their order, and the sandwich, which puts the involution in the middle slot, has nothing left to conjugate in the pair, so its adjoint trades the two slots. The band's own two-sided operator, $L^{\star}_{\tilde A}R^{\star}_{\tilde B}$, is a scalar multiple of a one-sided operator and its adjoint is read from the two cases above; it never is a sandwich of the parent product and never is a multiplication of the block.</p>
+<h3 id="the-contrast-with-the-sibling-rows">The Contrast with the Sibling Rows</h3>
+<p>The adjoint of this band is one of the adjoint operations of the twelve rows, and the comparison isolates it.</p>
+<ul>
+<li><strong>GPA, the plain bilinear row.</strong> The form is $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$, the adjoint is the <strong>transpose</strong>, and the transpose of a left multiplication is a <strong>right</strong> one, $(L_{\tilde A})^{\approx}=R_{\tilde A}$: the sides <strong>swap</strong>, and the type criterion is a criterion on a pair of parameters.</li>
+<li><strong>GPS, the general plain sesquilinear row.</strong> The left multiplication $L_{\tilde A}\tilde X=\tilde A\tilde X^{*}$ is conjugate-linear and its adjoint is the sandwich $S_{1,\tilde A}$, while the linear <strong>right</strong> multiplication obeys $R^{\dagger}_{\tilde B}=R_{\tilde B^{*}}$: on the linear family the adjoint <strong>conjugates the parameter and keeps the side</strong>. This is the class pattern, and it is the pattern the SPS block realizes only on its central parameters.</li>
+<li><strong>The quaternionic symmetric row, SQS.</strong> The adjoint is $K(L^{\star}_{\tilde A}\tilde X,\tilde Y)=\overline{K(\tilde X,L^{\star}_{\tilde A^{\natural}}\tilde Y)}$, the natural conjugation ${\natural}$ of the parameter with the side kept, and the family is closed under the adjoint; the form is indefinite and the ranks are $0$, $4$, $6$ and $8$, not one.</li>
+<li><strong>SPS, this band.</strong> The adjoint conjugates and keeps the side, and on the central parameters it is the coefficientwise conjugation of the parameter, $\bigl(R^{\star}_{ae_0}\bigr)^{\dagger}=R^{\star}_{\overline{a}e_0}$; off the centre it leaves the family, because the block's multiplications are rank one with central image.</li>
+</ul>
+<p><strong>Read as a physical statement.</strong> The class of the sesquilinear products is the class of the <strong>conjugating, side-keeping</strong> adjoint, and the four rows display it with four different fates. The plain bilinear row is the exception, the one whose adjoint is a transpose and swaps; the quaternionic symmetric row realizes the pattern and stays in the family; the general sesquilinear row realizes it on its linear half; and the symmetric plain sesquilinear row realizes it on the centre and loses it off the centre, the rank-one structure of the block being what prevents the multiplications from carrying the conjugating adjoint. The comparison of the twelve columns is the crossing reader <em>The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket</em>, and the table there records for this row exactly the words "not a multiplication".</p>
+<h2 id="the-types-of-the-operators">The Types of the Operators</h2>
+<p><strong>Theorem (the types of the left family).</strong> For $\tilde A\in\mathbb{B}$,</p>
+<p>$$
+L^{\star}_{\tilde A}\ \text{self-adjoint}\iff\tilde A\in\mathbb{C}_{\mathbb{B}},\qquad L^{\star}_{\tilde A}\ \text{skew-adjoint}\iff\tilde A=0 .
+$$</p>
+<p><em>Proof.</em> Self-adjointness is $H(\tilde A,\tilde X)\overline{Y_0}=\overline{X_0}\,H(\tilde A,\tilde Y)$ for all $\tilde X,\tilde Y$ by the twisted rule; at $\tilde Y=e_0$ this reads $H(\tilde A,\tilde X)=A_0\overline{X_0}$ for all $\tilde X$, so $\tilde A=A_0e_0$ is central, and then the identity holds for every complex $A_0$. Skew-adjointness gives $H(\tilde A,\tilde X)=-A_0\overline{X_0}$ for all $\tilde X$, so $\tilde A$ is central with $A_0=0$, that is $\tilde A=0$. (<em>The Sesquilinear Adjoint Operator</em>, §<em>The Twisted Rule</em>.)</p>
+<p><strong>Theorem (the types of the right family).</strong> For $\tilde A\in\mathbb{B}$,</p>
+<p>$$
+R^{\star}_{\tilde A}\ \text{self-adjoint}\iff\tilde A\in\mathbb{R}_{\mathbb{B}},\qquad R^{\star}_{\tilde A}\ \text{skew-adjoint}\iff\tilde A\in i\mathbb{R}_{\mathbb{B}},
+$$</p>
+<p>where $\mathbb{R}_{\mathbb{B}}=\mathbb{R}e_0$ and $i\mathbb{R}_{\mathbb{B}}=i\mathbb{R}e_0$.</p>
+<p><em>Proof.</em> Self-adjointness is $H(\tilde X,\tilde A)\overline{Y_0}=\overline{X_0}\,H(\tilde Y,\tilde A)$ for all $\tilde X,\tilde Y$ by the linear rule; at $\tilde Y=e_0$ this reads $\overline{A_0}\,X_0=A_0X_0$ for all $\tilde X$, so $\tilde A=A_0e_0$ is central with $A_0$ real, and then the identity holds. Skew-adjointness reads $\overline{A_0}X_0=-A_0X_0$ at $\tilde Y=e_0$, so $A_0=-\overline{A_0}$ is purely imaginary. (<em>The Sesquilinear Adjoint Operator</em>, §<em>The Adjoint of a Linear Operator</em>.)</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>self-adjoint</th>
+<th>skew-adjoint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L^{\star}_{\tilde A}$</td>
+<td>$\tilde A\in\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\tilde A=0$</td>
+</tr>
+<tr>
+<td>$R^{\star}_{\tilde A}$</td>
+<td>$\tilde A\in\mathbb{R}_{\mathbb{B}}$</td>
+<td>$\tilde A\in i\mathbb{R}_{\mathbb{B}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read as a physical statement.</strong> The self-adjoint operators are the <strong>observables</strong>, and this band, with GPS, owns the physical adjoint: its adjoint is the Hermitian adjoint for the positive form of the band, whose fixed points are the observables and whose skew fixed points are the generators. Two features distinguish the band's observables from the GPS ones. First, the self-adjointness of a one-sided operator is a criterion on the parameter and not a consequence of the parameter lying in a sector: the criterion is <strong>centrality</strong>, not Hermiticity, so a Hermitian but non-central parameter such as $e_0+ie_1$ gives a right multiplication that is <strong>not</strong> self-adjoint, in contrast with the GPS row, where every Hermitian parameter gives a self-adjoint left multiplication. Second, the reality of the parameter is a <strong>condition</strong> and not an automatic consequence for the left family: a self-adjoint <em>right</em> operator has an automatically real central parameter, while a self-adjoint <em>left</em> operator may have any complex central parameter, because a conjugate-linear operator can be self-adjoint with a complex multiple of itself. The observables of the band are therefore the real multiples of the projection $\tilde X\mapsto X_0e_0$ onto the central scalar part — the operators that read the probability off a state — together with the complex multiples of its conjugate for the left family.</p>
+<h2 id="the-symmetries-of-the-form-and-of-the-product">The Symmetries of the Form and of the Product</h2>
+<p>The symmetries of the band are three questions and they are taken in turn: which operators preserve the <strong>form</strong>, which preserve the <strong>product</strong>, and which preserve the <strong>cone</strong> of the operation.</p>
+<h3 id="the-form-preserving-operators">The Form-Preserving Operators</h3>
+<p><strong>Theorem (the form-preserving operators).</strong> The group $G_H$ of $\mathbb{C}$-linear bijections of $\mathbb{B}$ preserving $H$ has the matrix condition $T^{\mathsf H}T=I_4$ in the basis $e_0,e_1,e_2,e_3$; its Lie algebra is the space of the $\mathbb{C}$-linear endomorphisms $X$ with $X^{\mathsf H}+X=0$, the skew endomorphisms. <strong>No</strong> nonzero one-sided multiplication of the block preserves $H$.</p>
+<p><em>Proof.</em> Preservation is $H(T\tilde P,T\tilde Q)=H(\tilde P,\tilde Q)$ for all $\tilde P,\tilde Q$, which in the basis is $T^{\mathsf H}T=I_4$; the Lie algebra is read by the dual-number computation $S=I+\varepsilon X$. A one-sided multiplication is rank one, and a form-preserving map is invertible, so no nonzero one-sided multiplication preserves the definite form $H$. (<em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>, §<em>The Group of Linear Maps Preserving the Form</em>.)</p>
+<h3 id="the-multiplicative-operators">The Multiplicative Operators</h3>
+<p><strong>Theorem (the multiplicative operators).</strong> A $\mathbb{C}$-linear bijection $T$ is an automorphism of the product, $T(\tilde P\star\tilde Q)=T\tilde P\star T\tilde Q$, if and only if it preserves $H$ and fixes the idempotent $e_0$:</p>
+<p>$$
+\operatorname{Aut}(\star)=\{\,T\in G_H:Te_0=e_0\,\}.
+$$</p>
+<p>No operator of the block is multiplicative: the two-sided operators $L^{\star}_{\tilde A}R^{\star}_{\tilde B}=A_0L^{\star}_{\tilde B}$ and $R^{\star}_{\tilde A}L^{\star}_{\tilde B}=\overline{A_0}L^{\star}_{\tilde B}$ are rank one and therefore not invertible, while a multiplicative bijection is invertible by definition. The multiplicative operators are the external elements of $G_H$ fixing $e_0$, the unitary group of the complement of the central line.</p>
+<p><em>Proof.</em> If $T\in G_H$ with $Te_0=e_0$ then $T(\tilde P\star\tilde Q)=H(\tilde P,\tilde Q)e_0=T\tilde P\star T\tilde Q$, so $T$ is multiplicative; conversely a multiplicative $T$ has $Te_0=c_0e_0$ with $c_0=\lvert c_0\rvert^{2}$, so $c_0\in\{0,1\}$ and invertibility forces $c_0=1$, whence $T\in G_H$ and $Te_0=e_0$. A two-sided operator of the block is a scalar multiple of a rank-one one-sided operator, so it is not invertible and not multiplicative. (<em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>, §<em>The Group of Linear Maps Preserving the Form, and Its Lie Algebra</em>.)</p>
+<h3 id="the-cone-of-the-operation">The Cone of the Operation</h3>
+<p><strong>Theorem (the cone of the operation and its preservers).</strong> The cone of the operation, the set of the diagonal values $\tilde Q\star\tilde Q$ of the block, is the closed positive central ray $\mathbb{R}_{\ge0}e_0$, and a one-sided multiplication of the block maps that ray into itself if and only if the scalar part of its parameter is real and non-negative:</p>
+<p>$$
+L^{\star}_{\tilde A}(\mathbb{R}_{\ge0}e_0)\subseteq\mathbb{R}_{\ge0}e_0\iff A_0\in\mathbb{R}_{\ge0},\qquad R^{\star}_{\tilde A}\ \text{likewise}\iff A_0\in\mathbb{R}_{\ge0}.
+$$</p>
+<p><em>Proof.</em> $L^{\star}_{\tilde A}(te_0)=tA_0e_0$ and $R^{\star}_{\tilde A}(te_0)=t\overline{A_0}e_0$ for $t\ge0$, so the image lies in the ray exactly when $A_0$ is real and non-negative. (<em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>; the cone of the operation is the sibling <em>Why Probability Values Are Central</em>.)</p>
+<p><strong>Read as a physical statement.</strong> The symmetries of the band are two different things and neither is an operator of the block. The symmetry of the <strong>form</strong> is the unitary group $G_H$ of the coefficient space, the isometries of the positive form $H$; the symmetry of the <strong>product</strong> is the subgroup fixing the identity, the unitaries of the complement of the central line; and the two-sided operators of the block preserve neither, because they are rank one. The physical positivity of the band is carried by the <strong>cone of the operation</strong>, the positive central ray of probability values, and the operators of the block that keep the ray inside itself are exactly those whose parameter has a non-negative real scalar part — a condition on the parameter and not on the operator's rank. This is the operator-level form of the statement that the operation is probability read as a product: its values are non-negative real numbers, its preservers are the parameters with a non-negative real part, and the identity of the dagger and the Hermitian cone which give the positivity its involution belong to the sibling articles and to the mathematics of the positive cone (<em>The Positive Cone of an Involutive Algebra</em>; <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>).</p>
+<h2 id="the-operators-acting-on-the-state-space">The Operators Acting on the State Space</h2>
+<p>The state space of the band is the <strong>informational sector</strong> $\mathbb{M}_+$, taken on its trace-one slice — the positive Hermitian elements $\tilde\varrho$ with $\mathrm{Tr}(\tilde\varrho)=1$, that is $\mathrm{Sc}(\tilde\varrho)=\tfrac12$, the Bloch ball — and the form $H$ is the band's Born pairing on it, one half of the trace pairing on that side (<em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>; the two siblings own the state reading and the cone).</p>
+<p><strong>Proposition (the action collapses to the centre).</strong> For every parameter $\tilde A$ and every state $\tilde\varrho$,</p>
+<p>$$
+L^{\star}_{\tilde A}\tilde\varrho=H(\tilde A,\tilde\varrho)e_0,\qquad R^{\star}_{\tilde A}\tilde\varrho=H(\tilde\varrho,\tilde A)e_0 ,
+$$</p>
+<p>central values whose two readings are conjugate. The operators therefore do not move the state space: they evaluate the Born pairing and place its value in the centre. The self-adjoint right observables $\tilde A=ae_0$, $a\in\mathbb{R}$, act as $\tilde\varrho\mapsto a\,\varrho_0e_0$, reading the scalar part of the state.</p>
+<p><em>Proof.</em> The definitions give the values, and the centrality, conjugate relation and rank-one statements of the preceding sections give the rest; on the trace-one slice $\mathrm{Sc}(\tilde\varrho)=\tfrac12$ and the observable $R^{\star}_{ae_0}$ returns $\tfrac{a}{2}e_0$. (<em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>; <em>The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing</em>.)</p>
+<p><strong>Read as a physical statement.</strong> The operators of the band are the <strong>measurement functionals</strong> of the state space, not its transformations. A multiplication reads the Born pairing of a parameter with a state and returns a probability value in the centre; it carries no direction, so it never maps a state to a state, and the composite of two such readings is a scalar multiple of a reading. The self-adjoint ones are exactly the real multiples of the trace functional, the observables that return a real number; the positivity of the diagonal $H(\tilde\varrho,\tilde\varrho)=\sum_\mu\lvert\varrho_\mu\rvert^{2}$ and the reality of the pairing $H(\tilde\varrho,\tilde\sigma)=\overline{H(\tilde\sigma,\tilde\varrho)}$ are the sibling statements that make the returned number a probability. With the GPS band the state side of the framework is owned here, and the operator content is that a multiplication of the band is a <strong>question asked of a state</strong>, whose answer is a central number, and never a motion of the state.</p>
+<h3 id="the-born-pairing-through-the-operators">The Born Pairing through the Operators</h3>
+<p>The pairing of two states is a value of the form and the multiplication reads it:</p>
+<p>$$
+H(\tilde\varrho,\tilde\sigma)=\tfrac12\operatorname{Tr}\bigl(\tilde\varrho\star\tilde\sigma\bigr),\qquad R^{\star}_{\tilde\varrho}\tilde\sigma=H(\tilde\varrho,\tilde\sigma)e_0 ,
+$$</p>
+<p>so multiplication by one state on another returns the Born pairing as a central value; on two pure states $\tilde\Pi_\mu=\tfrac12(e_0+i\boldsymbol\mu\!\cdot\!\mathbf e)$ and $\tilde\Pi_\nu$ this is $H(\tilde\Pi_\mu,\tilde\Pi_\nu)=\tfrac14(1+\boldsymbol\mu\!\cdot\!\boldsymbol\nu)$, the trace form of the two-by-two state.</p>
+<p><strong>Read as a physical statement.</strong> The probability of a measurement is the Born pairing written as a rank-one operator: the parameter is the tested state, the argument is the prepared state, and the answer is the central number. The conjugation in the second slot is why the pairing is conjugate-symmetric, so the answer given on the left and the answer given on the right are conjugates, and on the state side the two coincide and are real, which is what makes the returned number a probability. The form is positive definite, so no state has a vanishing self-pairing, and the operators of the band never return a negative probability.</p>
+<p><strong>Proposition (the kernel on the state space).</strong> For $\tilde A\neq0$ the kernel of $L^{\star}_{\tilde A}$ meets the state space in the states orthogonal to the parameter,</p>
+<p>$$
+\ker L^{\star}_{\tilde A}\cap\{\text{states}\}=\{\tilde\varrho:H(\tilde A,\tilde\varrho)=0\},
+$$</p>
+<p>the hyperplane section of the Bloch ball by the plane perpendicular to $\tilde A$; the operator returns the value zero exactly on that section.</p>
+<p><em>Proof.</em> Immediate from the kernel statement of the operator, and the state space is the trace-one slice of $\mathbb{M}_+$. (<em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>; <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>.)</p>
+<p><strong>Read as a physical statement.</strong> A vanishing probability is the orthogonality of the prepared state to the tested parameter, and the level sets of a reading are the planes of the Bloch ball perpendicular to the parameter. The rank-one family of the band therefore separates the state space by orthogonality: two parameters with the same ray give the same kernel, and the operator sees the ray of the parameter and its scalar, not the parameter itself.</p>
+<h2 id="the-sandwich-and-the-inner-automorphism">The Sandwich and the Inner Automorphism</h2>
+<p>The sandwich of the parent sesquilinear product is the two-sided operator $S_{\tilde A,\tilde B}(\tilde X)=\tilde A\tilde X^{*}\tilde B$, and the block's own two-sided operator is $L^{\star}_{\tilde A}R^{\star}_{\tilde B}=A_0L^{\star}_{\tilde B}$, a scalar multiple of a one-sided one. The two are compared here because the model's sandwich against the inner automorphism has its analogue in the two-sided operators.</p>
+<p><strong>Theorem (the block's two-sided operators are never automorphisms).</strong> For all $\tilde A,\tilde B$,</p>
+<p>$$
+L^{\star}_{\tilde A}R^{\star}_{\tilde B}=A_0\,L^{\star}_{\tilde B},\qquad R^{\star}_{\tilde A}L^{\star}_{\tilde B}=\overline{A_0}\,L^{\star}_{\tilde B},\qquad L^{\star}_{\tilde A}R^{\star}_{\tilde A}=A_0\,L^{\star}_{\tilde A},
+$$</p>
+<p>so every two-sided operator of the block is rank one and no two-sided operator of the block is a multiplication of the block or an automorphism of its product.</p>
+<p><em>Proof.</em> Read the composition laws with the order of the two factors as displayed; the diagonal two-sided operator $L^{\star}_{\tilde Q}R^{\star}_{\tilde Q}=Q_0L^{\star}_{\tilde Q}$ is rank one. An automorphism is invertible, and a rank-one operator is not. (<em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>, §<em>The Composition and the Failure of Multiplicativity</em>; the automorphisms are the elements of $G_H$ fixing $e_0$.)</p>
+<p><strong>Read as a physical statement.</strong> The GPA sandwich is the inner automorphism and coincides with it on the unitary parameters; the SPS block has no such object. Its sandwich degenerates to a scalar multiple of a one-sided operator, and the automorphisms of its product are <strong>external</strong> unitaries fixing the identity — not multiplications by elements of the block at all. The inversion is therefore a statement about the block: the associative row acts on itself by its own elements, and this central-valued row cannot, because its multiplications are rank one, and its symmetries have to be brought in from outside the block. This is the deepest difference between the composition band and the positivity band on the operator side.</p>
+<h3 id="the-parent-sandwich-on-a-state">The Parent Sandwich on a State</h3>
+<p>On a state $\tilde\varrho$, which is Hermitian, the parent sandwich is $\tilde A\tilde\varrho^{*}\tilde B=\tilde A\tilde\varrho\tilde B$, and on the identity it gives $S_{\tilde A,\tilde B^{*}}(e_0)=\tilde A\tilde B^{*}$, whose scalar part is the band's value:</p>
+<p>$$
+S_{\tilde A,\tilde B^{*}}(e_0)=\tilde A\tilde B^{*},\qquad \mathrm{Sc}\bigl(\tilde A\tilde B^{*}\bigr)e_0=\tilde A\star\tilde B .
+$$</p>
+<p><em>Proof.</em> $\tilde B^{**}=\tilde B$ and $e_0^{*}=e_0$, so $S_{\tilde A,\tilde B^{*}}(e_0)=\tilde A e_0^{*}\tilde B^{*}=\tilde A\tilde B^{*}$, and its scalar part is $H(\tilde A,\tilde B)$, the value of the product. (<em>The Sesquilinear Sandwich Operator</em>; <em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>.)</p>
+<p><strong>Read as a physical statement.</strong> The band's product is the <strong>central shadow</strong> of the parent sandwich: where the parent two-sided operator returns an element, the band returns the scalar part of that element, because the band keeps only the probability and discards the rest. The adjoint of the parent sandwich transposes the two parameters, and the band's value — the scalar part of the sandwich on the identity — inherits the conjugate symmetry $H(\tilde B,\tilde A)=\overline{H(\tilde A,\tilde B)}$, so the band's operator theory is the parent theory projected onto the centre.</p>
+<h2 id="a-worked-case">A Worked Case</h2>
+<p>Take a material parameter and a state parameter, and read the four operator families on one element.</p>
+<p>$$
+\tilde A=ie_0+2e_1,\qquad H(\tilde A,\tilde A)=5,\qquad \tilde A\star\tilde A=5e_0,\qquad \tilde A^{2}=-5e_0+4ie_1 .
+$$</p>
+<p>On the identity the two one-sided operators give</p>
+<p>$$
+L^{\star}_{\tilde A}e_0=H(\tilde A,e_0)e_0=ie_0,\qquad R^{\star}_{\tilde A}e_0=H(e_0,\tilde A)e_0=-ie_0 ,
+$$</p>
+<p>the two conjugates, and their adjoints give</p>
+<p>$$
+\bigl(L^{\star}_{\tilde A}\bigr)^{\dagger}e_0=\overline{(e_0)_0}\,\tilde A=\tilde A,\qquad \bigl(R^{\star}_{\tilde A}\bigr)^{\dagger}e_0=(e_0)_0\,\tilde A=\tilde A ,
+$$</p>
+<p>the parameter itself, on the line $\mathbb{C}\tilde A$ and not in the centre: the parameter is not central, so neither operator is self-adjoint, and the adjoints are not multiplications of the block.</p>
+<p>Take next a <strong>Hermitian but non-central</strong> parameter and a <strong>real central</strong> one:</p>
+<p>$$
+\tilde\Lambda=e_0+ie_1\in\mathbb{M}_+,\qquad \tilde A'=\tfrac12 e_0 .
+$$</p>
+<p>The right multiplication by $\tilde\Lambda$ is <strong>not</strong> self-adjoint, although $\tilde\Lambda$ lies in the Hermitian sector, while the right multiplication by the real central $\tilde A'$ <strong>is</strong> self-adjoint, with</p>
+<p>$$
+R^{\star}_{\tilde A'}\tilde\varrho=\tfrac12\varrho_0e_0
+$$</p>
+<p>on a state $\tilde\varrho$. This is the criterion on the parameter and not on the sector: centrality for the left family, real centrality for the right.</p>
+<p>Take a second parameter $\tilde B=e_0+e_2$ and read a <strong>composition</strong> and the <strong>parent sandwich</strong> on the worked element:</p>
+<p>$$
+L^{\star}_{\tilde A}L^{\star}_{\tilde B}=i\,R^{\star}_{\tilde B},\qquad A_0=i,\qquad S_{\tilde A,\tilde B^{*}}(e_0)=\tilde A\tilde B^{*}=ie_0+2e_1-ie_2-2e_3 ,
+$$</p>
+<p>whose scalar part $\mathrm{Sc}(\tilde A\tilde B^{*})=i$ is the band's value $H(\tilde A,\tilde B)=i$. The composite of the two readings is the reading by $\tilde B$ scaled by the modulus-one scalar $i$, and the parent sandwich returns an element whose scalar part is that value; the band keeps the scalar part and discards the vector part $2e_1-ie_2-2e_3$.</p>
+<p>Take finally two <strong>pure states</strong> and read the Born pairing through the operators:</p>
+<p>$$
+\tilde\Pi_\mu=\tfrac12(e_0+i\boldsymbol\mu\!\cdot\!\mathbf e),\qquad
+H(\tilde\Pi_\mu,\tilde\Pi_\nu)=\tfrac14(1+\boldsymbol\mu\!\cdot\!\boldsymbol\nu),\qquad
+2\,H(\tilde\Pi_\mu,\tilde\Pi_\nu)=\cos^{2}\!\tfrac{\theta}{2},
+$$</p>
+<p>where $\theta$ is the Bloch angle between $\boldsymbol\mu$ and $\boldsymbol\nu$. The product $\tilde\Pi_\mu\star\tilde\Pi_\nu=H(\tilde\Pi_\mu,\tilde\Pi_\nu)e_0$ is the central real number, its real part is the transition probability, and the multiplication $R^{\star}_{\tilde\Pi_\mu}$ reads it off the state $\tilde\Pi_\nu$.</p>
+<p><strong>A numerical check.</strong> For random elements the identity $\tilde P\star\tilde Q=H(\tilde P,\tilde Q)e_0$ holds to machine precision on one hundred pairs (maximum error $0$). The conjugate relation $R^{\star}_{\tilde A}=\overline{L^{\star}_{\tilde A}}$ and the parity $L^{\star}_{\tilde A}(\lambda\tilde R)=\overline{\lambda}L^{\star}_{\tilde A}\tilde R$, $R^{\star}_{\tilde A}(\lambda\tilde R)=\lambda R^{\star}_{\tilde A}\tilde R$ hold to $8.0\times10^{-16}$ on one hundred random pairs; the four composition laws hold exactly (error $0$); the two adjoint formulas hold to $8.0\times10^{-16}$ and $5.0\times10^{-16}$; the sandwich adjoint $S^{\dagger}_{\tilde A,\tilde B}=S_{\tilde B,\tilde A}$ holds to $2.2\times10^{-15}$ while $T^{\dagger}_{\tilde A,\tilde B}=T_{\tilde A^{*},\tilde B^{*}}$ holds to $2.8\times10^{-15}$. The type criteria were checked on the parameters $e_0$, $e_1$, $e_3$, $ie_0$, $ie_1$, $\tfrac12e_0$, $2e_0$, $e_0+ie_1$, $e_1+ie_2$ and $ie_0+2e_1$: the left family is self-adjoint exactly for $e_0$, $ie_0$, $\tfrac12e_0$ and $2e_0$ (the central ones) and skew-adjoint for none of them except the zero parameter, and the right family is self-adjoint exactly for $e_0$, $\tfrac12e_0$, $2e_0$ (real central) and skew-adjoint exactly for $ie_0$ (imaginary central). The cone criterion $A_0\in\mathbb{R}_{\ge0}$ was checked on the scalar parameters: $e_0$, $2e_0$ and a zero-scalar vector parameter preserve the ray, while $ie_0$ and $-\tfrac12e_0$ do not. The right multiplication by the Hermitian non-central $e_0+ie_1$ fails self-adjointness on every probe tested, and the real rank of $L^{\star}_{e_1+e_2}$ is $2$, the rank recorded for the SPS row of the crossing article. The Born identity $2H(\tilde\Pi_\mu,\tilde\Pi_\nu)=\cos^{2}(\theta/2)$ was checked on four Bloch vectors and their six pairs.</p>
+<h2 id="the-bound">The Bound</h2>
+<p>The article states one cell of the grid of the twelve operator rows, and the boundary of the cell is what it must declare. Several of the statements are another article's, and they are cited rather than re-derived.</p>
+<ul>
+<li><strong>The positivity of the product and the cone.</strong> The positivity of the diagonal, the reading of $H$ as the real part of the Born pairing, the reality of the pairing and the one-dimensional cone of the operation are <em>The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing</em> and <em>Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone</em>. This article states the operator-level preservers of the cone and not the cone itself.</li>
+<li><strong>The positivity of the dagger.</strong> The involution and the Hermitian cone $\{\tilde Q\tilde Q^{*}\}$, the polar decomposition and the Cartan involution are <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>, <em>The Positive Cone of an Involutive Algebra</em> and <em>Positivity and the Positive Cone of a Hermitian Form</em>, and the physics of the positivity is <em>Mass, Rank and the Positivity of the Dagger</em>; the present band's job word names that positivity, which belongs to those articles and not here.</li>
+<li><strong>The rank, the traces and the composition laws.</strong> They are <em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em> and are applied, not re-proved; the present article adds the adjoint of the right multiplication, the type criteria, the central-parameter conjugation law and the cone criterion.</li>
+<li><strong>The adjoint of the sandwich and the twisted rule.</strong> They are <em>The Adjoint of the Sesquilinear Sandwich</em> and <em>The Sesquilinear Adjoint Operator</em>; the whole class is treated there against the pairing $H(x,y)=\mathrm{Sc}(xy^{*})$.</li>
+<li><strong>The bilinear contrast.</strong> The symmetric quaternionic sibling <em>The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra</em> is invoked only for the difference of the parity and the traces; the two symmetric sesquilinear products are compared in the crossing article.</li>
+<li><strong>The twelve rows.</strong> The comparison, block against block, is the crossing reader <em>The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket</em>, which is not one of the twelve; this article declares only the SPS column.</li>
+<li><strong>The bracket and the generators.</strong> The band has no bracket and no generator of its own: the antisymmetric plain sesquilinear row APS owns the bracket of the plain sesquilinear family, and the generators of the framework are the skew-adjoint operators for the positive form, read in <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>, not here.</li>
+<li><strong>The exponential and the group.</strong> The block carries no one-parameter group: the left family has no nonzero skew-adjoint element and the right family only the purely imaginary central ones, whose exponentials are central phases; the unitaries and the internal rotations are the external elements of $G_H$ and are cited, not generated here.</li>
+<li><strong>The order and the transition probability.</strong> The order of the observables by their real parameter and the transition probability of two pure states are read here at the operator level; the physical transition probability, its comparison with the trace formula and its use in the update are the siblings and <em>The Born Rule as a Trace Formula — Derivation and Comparison</em>.</li>
+</ul>
+<p><strong>What the framework does not claim.</strong> The article does not derive the measurement rule, the state space or the Born pairing from the operator calculus; it reads the parametrisations the siblings already use. It does not claim that a self-adjoint operator of the block is a self-adjoint operator in the sense of the ordinary linear theory: the left family is conjugate-linear and its self-adjoint elements form a <strong>complex</strong> vector space, a feature of the twisted rule and not a physical statement about observables in general. It does not claim that the external unitaries fixing $e_0$ act on the state space; they are the automorphisms of the product, not multiplications by elements of the block. And it does not claim that the block generates anything: the rank-one family carries no generator and no one-parameter group, and the infinitesimal structure of the framework belongs to the antisymmetric band.</p>
+<h2 id="the-ledger">The Ledger</h2>
+<p><strong>Proved.</strong> The one-sided operators $L^{\star}_{\tilde A}\tilde R=H(\tilde A,\tilde R)e_0$ and $R^{\star}_{\tilde A}\tilde R=H(\tilde R,\tilde A)e_0$ are conjugate-linear and $\mathbb{C}$-linear respectively, they are pointwise conjugates, and each is rank one with image the centre and kernel the hyperplane $H(\tilde A,\cdot\,)=0$; the composition laws are $L^{\star}_{\tilde A}L^{\star}_{\tilde B}=A_0R^{\star}_{\tilde B}$, $R^{\star}_{\tilde A}R^{\star}_{\tilde B}=\overline{A_0}R^{\star}_{\tilde B}$, $L^{\star}_{\tilde A}R^{\star}_{\tilde B}=A_0L^{\star}_{\tilde B}$ and $R^{\star}_{\tilde A}L^{\star}_{\tilde B}=\overline{A_0}L^{\star}_{\tilde B}$, so the family is closed and the assignment is not multiplicative; the adjoint for the Hermitian form $H$ is $\bigl(R^{\star}_{\tilde A}\bigr)^{\dagger}\tilde S=S_0\tilde A$ on the right and $\bigl(L^{\star}_{\tilde A}\bigr)^{\dagger}\tilde S=\overline{S_0}\tilde A$ on the left, both of parity preserved and side kept, and on the central parameters it is the conjugation of the parameter, $\bigl(R^{\star}_{ae_0}\bigr)^{\dagger}=R^{\star}_{\overline{a}e_0}$; off the central parameters the adjoint leaves the family, which is the negative answer of the block; the type criteria are $\tilde A$ central for the self-adjoint left family and only the zero parameter for its skew sector, and $\tilde A$ real central for the self-adjoint right family and $\tilde A$ purely imaginary central for its skew sector, so the observables are the operators that read the central scalar part and the parameter type is a condition rather than a consequence; no nonzero one-sided operator preserves $H$, the form-preserving group is $G_H$ with $T^{\mathsf H}T=I_4$, the multiplicative operators are the elements of $G_H$ fixing $e_0$, and the two-sided operators of the block are rank one and never automorphisms; the cone of the operation is the positive central ray and a one-sided multiplication preserves it exactly for a parameter with a non-negative real scalar part; the sandwich of the parent product has adjoint $S^{\dagger}_{\tilde A,\tilde B}=S_{\tilde B,\tilde A}$ and the ordinary two-sided multiplication has adjoint $T^{\dagger}_{\tilde A,\tilde B}=T_{\tilde A^{*},\tilde B^{*}}$; and on the state space every multiplication evaluates the Born pairing and returns a central value.</p>
+<p><strong>Readings.</strong> That the adjoint of this band is the <strong>physical</strong> adjoint — the Hermitian adjoint for the positive form — and not a transpose, and that it keeps the side because the form's symmetry is conjugation; that its fixed points, the observables, are the real multiples of the projection onto the central scalar part, so an observable here reads a probability and does not transform a state; that the type criterion is a criterion on the single parameter — centrality for the left family, real centrality for the right — in contrast with the GPA row whose criterion is a criterion on the product of two parameters because its adjoint swaps the sides; that the block has no invertible operator, so it acts by questions and not by motions, and its symmetries are external unitaries; and that the cone of the operation, the positive central ray, is preserved exactly by the parameters with a non-negative real scalar part, the operator-level form of the positivity of the band. Each is the framework's naming of a proved algebraic fact and is labelled as such.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<p>The operators of the symmetric plain sesquilinear product read as the <strong>readings of probability</strong>: the two ways of asking a parameter of a state, and the central number that answers. Under the band's job word, positivity, four readings follow from the adjoint, and a fifth from the rank of the family.</p>
+<ul>
+<li><strong>The real part of the Born pairing.</strong> The product returns the Hermitian form $H$ of the pair, and the multiplication $R^{\star}_{\tilde A}$ returns it as a central value; on the state side that value is one half of the trace pairing, $\tfrac12\operatorname{Tr}(\tilde\varrho\tilde\sigma)$, and it is the central half of the parent amplitude $\tilde\varrho\tilde\sigma^{*}$, whose vector half is the phase of the companion band. The operator is therefore the <strong>value</strong> of the pairing, and the reading of the pairing as a probability is the operator's central value.</li>
+<li><strong>The positivity of the diagonal.</strong> $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}\ge0$, with equality only at zero; the operator $L^{\star}_{\tilde Q}$ therefore returns a non-negative number on the state $\tilde Q$, and the band's positivity is the positivity of the diagonal of the form, the sibling result that makes the returned number a probability and not a mere scalar.</li>
+<li><strong>The order of the observables.</strong> The self-adjoint operators are the real multiples of the central projection, and they are ordered by their real parameter: the greater the real multiple, the greater the value returned on every state, because the projection is positive. The order of the observables of the band is therefore the order of the real numbers, which is the sharpest form of the statement that the band reads probabilities and nothing else.</li>
+<li><strong>Why the symmetry of the product makes the pairing real.</strong> On the state side both elements are Hermitian, and there the operation is the whole of the plain product, $\tilde P\star\tilde Q=\mathrm{Sc}(\tilde P\tilde Q)e_0=H(\tilde P,\tilde Q)e_0$ for $\tilde P,\tilde Q\in\mathbb{M}_+$, whose scalar part is commutative, $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\mathrm{Sc}(\tilde Q\tilde P)=H(\tilde Q,\tilde P)$. Combined with the conjugate symmetry $H(\tilde Q,\tilde P)=\overline{H(\tilde P,\tilde Q)}$ this forces $H(\tilde P,\tilde Q)=\overline{H(\tilde P,\tilde Q)}$, a <strong>real</strong> number. The symmetry of the product on the state side is exactly what makes the pairing real there, and that is why the operators of the band return real observables: the symmetry of the product and the reality of the pairing on the state side are the same fact read on the values and on the operators.</li>
+<li><strong>The absence of a motion.</strong> The rank-one operators never carry a state to a state, so the operator calculus of the band is a calculus of <strong>questions</strong> and not of motions: no observable and no generator of the band moves a state, and the transformation of a state in the framework is the sandwich of the parent block and not a multiplication of this band. This is the operator content of the separation between the positivity band and the composition band, and the reason the two bands own different halves of the one action form.</li>
+</ul>
+<p>Read on the state space, the two families are the two readings of a single question, conjugate to one another; read on the parameter, the adjoint is the conjugation that returns the parameter and keeps its side; read on the cone, the operators that preserve the ray of probabilities are the parameters with a non-negative real part; and read on the rank, the block asks and never moves. The positivity of the band is the whole content of the block, and the block says it with rank-one operators and no motion.</p>
+<h2 id="summary">Summary</h2>
+<p>The operators of the symmetric plain sesquilinear product, $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q^{*}+(\tilde P\tilde Q^{*})^{\natural})=H(\tilde P,\tilde Q)e_0$, are $L^{\star}_{\tilde A}\tilde R=H(\tilde A,\tilde R)e_0$ and $R^{\star}_{\tilde A}\tilde R=H(\tilde R,\tilde A)e_0$. The <strong>left</strong> family is conjugate-linear and the <strong>right</strong> family is $\mathbb{C}$-linear, and they are pointwise conjugates; every nonzero operator has <strong>rank one</strong>, image the centre and kernel the hyperplane $H(\tilde A,\cdot\,)=0$. The <strong>composition</strong> laws are $L^{\star}_{\tilde A}L^{\star}_{\tilde B}=A_0R^{\star}_{\tilde B}$, $R^{\star}_{\tilde A}R^{\star}_{\tilde B}=\overline{A_0}R^{\star}_{\tilde B}$, $L^{\star}_{\tilde A}R^{\star}_{\tilde B}=A_0L^{\star}_{\tilde B}$ and $R^{\star}_{\tilde A}L^{\star}_{\tilde B}=\overline{A_0}L^{\star}_{\tilde B}$, so the family is closed and the assignment is <strong>not multiplicative</strong>.</p>
+<p>The <strong>adjoint</strong> is taken for the Hermitian form $H$, and it is $\bigl(R^{\star}_{\tilde A}\bigr)^{\dagger}\tilde S=S_0\tilde A$ on the right and $\bigl(L^{\star}_{\tilde A}\bigr)^{\dagger}\tilde S=\overline{S_0}\tilde A$ on the left: it <strong>conjugates</strong> the parameter and <strong>keeps the side</strong>, preserving the parity, against the GPA band whose transpose swaps the two sides. On the central parameters it is the conjugation of the parameter, $\bigl(R^{\star}_{ae_0}\bigr)^{\dagger}=R^{\star}_{\overline{a}e_0}$; off them it leaves the family, which is the block's negative answer. The <strong>type criteria</strong> are criteria on the single parameter: $L^{\star}_{\tilde A}$ is self-adjoint exactly for central $\tilde A$ and skew-adjoint only at zero, and $R^{\star}_{\tilde A}$ is self-adjoint exactly for real central $\tilde A$ and skew-adjoint exactly for purely imaginary central $\tilde A$. The self-adjoint operators are the <strong>observables</strong>, and with the GPS band this band owns the physical adjoint; a self-adjoint right operator has an automatically real parameter, while a self-adjoint left operator may have a complex one, so the parameter type is a condition and not a consequence.</p>
+<p>The <strong>symmetries</strong> are external: no nonzero one-sided operator preserves $H$, the form-preserving group is $G_H$ with $T^{\mathsf H}T=I_4$, and the multiplicative operators are the elements of $G_H$ fixing $e_0$; every two-sided operator of the block is rank one and never an automorphism. The <strong>cone</strong> of the operation is the positive central ray, preserved exactly by the parameters with a non-negative real scalar part. The <strong>sandwich</strong> of the parent product has adjoint $S^{\dagger}_{\tilde A,\tilde B}=S_{\tilde B,\tilde A}$ and the ordinary two-sided multiplication has adjoint $T^{\dagger}_{\tilde A,\tilde B}=T_{\tilde A^{*},\tilde B^{*}}$. On the <strong>state space</strong> every multiplication evaluates the Born pairing and returns a central value, so the operators are questions asked of a state and not motions of it. The band's <strong>positivity</strong> is the positivity of the diagonal of $H$, the reality of the pairing on the state side forced by the commutativity of the product there, and the order of the observables by their real parameters.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=H(\tilde P,\tilde Q)e_0$</td>
+<td>the symmetric plain sesquilinear product</td>
+</tr>
+<tr>
+<td>$H(\tilde P,\tilde Q)=\sum_\mu P_\mu\overline{Q_\mu}$</td>
+<td>the Hermitian form of the band; positive definite</td>
+</tr>
+<tr>
+<td>$L^{\star}_{\tilde A}\tilde R=H(\tilde A,\tilde R)e_0$</td>
+<td>the left multiplication; conjugate-linear</td>
+</tr>
+<tr>
+<td>$R^{\star}_{\tilde A}\tilde R=H(\tilde R,\tilde A)e_0$</td>
+<td>the right multiplication; $\mathbb{C}$-linear</td>
+</tr>
+<tr>
+<td>$R^{\star}_{\tilde A}=\overline{L^{\star}_{\tilde A}}$</td>
+<td>the two families are pointwise conjugate</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$, $\{H(\tilde A,\cdot\,)=0\}$</td>
+<td>the image and the kernel of a nonzero operator; rank one</td>
+</tr>
+<tr>
+<td>$L^{\star}_{\tilde A}L^{\star}_{\tilde B}=A_0R^{\star}_{\tilde B}$, etc.</td>
+<td>the four composition laws</td>
+</tr>
+<tr>
+<td>$L^{\star}_{\tilde A}L^{\star}_{\tilde B}\neq L^{\star}_{\tilde A\star\tilde B}$</td>
+<td>the failure of multiplicativity</td>
+</tr>
+<tr>
+<td>$\bigl(R^{\star}_{\tilde A}\bigr)^{\dagger}\tilde S=S_0\tilde A$</td>
+<td>the adjoint of the right multiplication; linear</td>
+</tr>
+<tr>
+<td>$\bigl(L^{\star}_{\tilde A}\bigr)^{\dagger}\tilde S=\overline{S_0}\tilde A$</td>
+<td>the adjoint of the left multiplication; conjugate-linear</td>
+</tr>
+<tr>
+<td>$\bigl(R^{\star}_{ae_0}\bigr)^{\dagger}=R^{\star}_{\overline{a}e_0}$</td>
+<td>the adjoint on the central parameters; conjugates, keeps the side</td>
+</tr>
+<tr>
+<td>$L^{\star}_{\tilde A}$ self-adjoint $\iff$ $\tilde A\in\mathbb{C}_{\mathbb{B}}$</td>
+<td>the type criterion of the left family</td>
+</tr>
+<tr>
+<td>$R^{\star}_{\tilde A}$ self-adjoint $\iff$ $\tilde A\in\mathbb{R}_{\mathbb{B}}$</td>
+<td>the type criterion of the right family; the observables</td>
+</tr>
+<tr>
+<td>$G_H$, $T^{\mathsf H}T=I_4$</td>
+<td>the form-preserving group; no one-sided operator is in it</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(\star)=\{T\in G_H:Te_0=e_0\}$</td>
+<td>the multiplicative operators; external unitaries</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\ge0}e_0$</td>
+<td>the cone of the operation; preserved iff $A_0\in\mathbb{R}_{\ge0}$</td>
+</tr>
+<tr>
+<td>$S^{\dagger}_{\tilde A,\tilde B}=S_{\tilde B,\tilde A}$</td>
+<td>the adjoint of the sesquilinear sandwich; transposes the pair</td>
+</tr>
+<tr>
+<td>$T^{\dagger}_{\tilde A,\tilde B}=T_{\tilde A^{*},\tilde B^{*}}$</td>
+<td>the adjoint of the two-sided multiplication; conjugates, keeps the order</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/the-multiplication-operators-of-the-symmetric-plain-sesqualgebra.md</code>), for the operators, the parity, the rank, the traces, the adjoint of the left multiplication, the composition laws and the group preserving the form.</li>
+<li><em>The Sesquilinear Adjoint Operator</em> (<code>articles_maths/the-sesquilinear-adjoint-operator.md</code>), for the pairing, the two parities, the parity obstruction and the twisted rule.</li>
+<li><em>The Adjoint of the Sesquilinear Sandwich</em> (<code>articles_maths/the-adjoint-of-the-sesquilinear-sandwich.md</code>), for the adjoint of the sandwich and its contrast with the linear family.</li>
+<li><em>The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.md</code>), for the bilinear central sibling and the difference of the traces.</li>
+<li><em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/the-hermitian-form-as-a-product-on-the-symmetric-plain-sesqualgebra.md</code>) and <em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.md</code>), for the product and the form.</li>
+<li><em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), <em>The Positive Cone of an Involutive Algebra</em> (<code>articles_maths/the-positive-cone-of-an-involutive-algebra.md</code>) and <em>Positivity and the Positive Cone of a Hermitian Form</em> (<code>articles_maths/positivity-and-the-positive-cone-of-a-hermitian-form.md</code>), for the positivity of the dagger and the cone; the physics of the positivity is <em>Mass, Rank and the Positivity of the Dagger</em> (<code>articles_physics/mass-rank-and-the-positivity-of-the-dagger.md</code>).</li>
+<li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> (<code>articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md</code>) and <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em> (<code>articles_physics/the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.md</code>), for the state space and its trace-one slice.</li>
+<li><em>The Born Rule as a Trace Formula — Derivation and Comparison</em> (<code>articles_physics/the-born-rule-as-a-trace-formula-derivation-and-comparison.md</code>), for the Born pairing that the operators read.</li>
+<li>The siblings of the band: <em>The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing</em> (<code>articles_physics/the-hermitian-form-as-a-product-positivity-and-the-real-part-of-the-born-pairing.md</code>) and <em>Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone</em> (<code>articles_physics/why-probability-values-are-central-the-symmetric-sesquilinear-product-and-its-cone.md</code>).</li>
+<li><em>The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket</em> (<code>articles_physics/the-operators-of-the-twelve-structures-multiplication-adjoint-and-bracket.md</code>), for the comparison of the twelve rows, of which this article is the SPS column.</li>
+<li><em>Conventions in the Biquaternion Universe</em> (<code>articles_physics/conventions-in-the-biquaternion-universe.md</code>), for the conjugations, the basis and the form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

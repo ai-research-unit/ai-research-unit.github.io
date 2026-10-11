@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="the-specificities-of-the-general-plain-sesqualgebra"><strong>The Specificities of the General Plain Sesqualgebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The general plain sesqualgebra is the operation $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ on the biquaternion space, the general plain sesquilinear product read as a multiplication (<em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>). As an element-theoretic object the block is poor: it has a right unit and no left one, no invertible element in the strict sense, no root of $-1$ and no root of $0$, and its only idempotents are the Hermitian ones. As an <strong>operator-theoretic</strong> object it is the opposite, and in a way that no other structure of the twelve reproduces. This article isolates that way, states it as a <strong>criterion</strong>, and tests the criterion against the eleven.</p>
+<p>The general plain sesqualgebra is the operation $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ on the biquaternion space, the general plain sesquilinear product read as a multiplication (<em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>). As an element-theoretic object the block is poor: it has a right unit and no left one, no invertible element in the strict sense, no root of $-1$ and no root of $0$, and its only idempotents are the Hermitian ones. As an <strong>operator-theoretic</strong> object it is the opposite, and in a way that no other structure of the twelve reproduces. This article isolates that way and states it as a <strong>criterion</strong> of the block.</p>
 <p>The criterion is a <strong>composition law of the right multiplications</strong>, and it is an identity about the product itself:</p>
 <p>$$
 \text{(C)}\qquad R^{\star}_{\tilde P}R^{\star}_{\tilde Q}=R^{\star}_{\tilde P\tilde Q}\qquad\text{for all }\tilde P,\tilde Q,
@@ -88,51 +88,10 @@ $$</p>
 <p><em>Proof.</em> By the dictionary $R^{\star}_{\tilde P}R^{\star}_{\tilde Q}=R_{\tilde P^{*}}R_{\tilde Q^{*}}=R_{\tilde Q^{*}\tilde P^{*}}$, the plain composition law being the reversed one. And $\tilde Q^{*}\tilde P^{*}=(\tilde P\tilde Q)^{*}$, because ${}^{*}$ is an anti-automorphism; so the composite is $R_{(\tilde P\tilde Q)^{*}}=R^{\star}_{\tilde P\tilde Q}$, which is the display.</p>
 <p><strong>Corollary (the right multiplications form a monoid).</strong> The family $\{R^{\star}_{\tilde P}:\tilde P\in\mathbb{B}\}$ is stable under composition, and the assignment $\tilde P\mapsto R^{\star}_{\tilde P}$ is a <strong>monoid isomorphism</strong> from the multiplicative monoid $(\mathbb{B},\cdot)$ onto it, in the <strong>forward</strong> order. Consequently the block's right multiplications are a copy of the plain multiplicative monoid, and not of its opposite.</p>
 <p><em>Proof.</em> The law gives closure and the multiplicativity of the assignment; it is injective by the faithfulness of the dictionary, and it is onto its image by construction. The forward order is the law itself, as opposed to the plain law $R_{\tilde P}R_{\tilde Q}=R_{\tilde Q\tilde P}$.</p>
-<p><strong>Remark (why the block and no other).</strong> Exactly three of the twelve structures carry a one-sided composition law, and the table of §<em>The Eleven Comparisons</em> records which. The plain product carries it on both sides, forward on the left and reversed on the right; the general quaternionic product carries it on the left and reversed; the block carries it on the right and forward. The block is the structure in which the forward order is carried by the <strong>right</strong> multiplications, and this is exactly the statement that the twist sits in the second slot and is an anti-automorphism: the conjugation in $\tilde P\tilde Q^{*}$ reverses the order of the plain product, and the reversal, read on the right multiplications, undoes the reversal of the composition. In the nine remaining structures neither side closes, and the reason is the same in every case: a derived part mixes the two slots, and the two products that are not the plain one conjugate a slot, which turns a one-sided multiplication into an operator carrying two independent parameters. The left multiplications of the block do not form a monoid, because the twist is in the slot a left multiplication reads: $L^{\star}_{\tilde P}L^{\star}_{\tilde Q}=L_{\tilde P}\eta L_{\tilde Q}\eta=L_{\tilde P}R_{\tilde Q^{*}}$, a <strong>mixed</strong> operator of the two independent parameters $\tilde P,\tilde Q$, which is a two-sided operator only in the diagonal case $\tilde Q=\lambda\tilde P^{*}$ (<em>Mixed Inner Conjugation on the General Plain Sesqualgebra of Biquaternions</em>), and is not the left multiplication of the block at any single element in general.</p>
-<h2 id="the-eleven-comparisons">The Eleven Comparisons</h2>
-<p><strong>Theorem (the specificity).</strong> Of the twelve structures of <em>The 12 Products of the Biquaternion Complex Space</em>, the general plain sesqualgebra is the only one that satisfies the right-composition law in the forward order.</p>
-<p><em>Proof.</em> The block satisfies it by the criterion. The other eleven are disposed of in the two tables below: the three other general products give the reversed law or no law, and the eight derived parts give no law. Since every structure of the twelve is one of these, the block alone is left.</p>
-<h3 id="the-four-general-products">The Four General Products</h3>
-<p>The four general products are $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$ (<em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>). Their one-sided multiplications are computed from the composition of the plain ones, and the result is the following.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>product</th>
-<th>$R^{\circ}_{\tilde P}(\tilde X)$</th>
-<th>right law</th>
-<th>left law</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\tilde P\tilde Q$</td>
-<td>$\tilde X\tilde P$</td>
-<td>reversed</td>
-<td><strong>forward</strong></td>
-</tr>
-<tr>
-<td>$\tilde P^{\natural}\tilde Q$</td>
-<td>$\tilde X^{\natural}\tilde P$</td>
-<td>none</td>
-<td>reversed</td>
-</tr>
-<tr>
-<td>$\tilde P\tilde Q^{*}$</td>
-<td>$\tilde X\tilde P^{*}$</td>
-<td><strong>forward</strong></td>
-<td>none</td>
-</tr>
-<tr>
-<td>$\tilde P^{\natural}\tilde Q^{*}$</td>
-<td>$\tilde X^{\natural}\tilde P^{*}$</td>
-<td>none</td>
-<td>none</td>
-</tr>
-</tbody>
-</table></div>
-<p>The plain product is associative, so its left multiplications form the monoid in the forward order and its right multiplications form the anti-isomorphic monoid, $R_{\tilde P}R_{\tilde Q}=R_{\tilde Q\tilde P}$. The general quaternionic product conjugates the first slot, so its left multiplication is the plain one at the conjugated index and the family is again an anti-isomorphic monoid, while a right multiplication reads the second slot alone and does not compose. The general quaternionic sesquilinear product conjugates <strong>both</strong> slots, and the two conjugations fail to cancel on either side. Only the twist that sits in the second slot <strong>alone</strong>, that is the block, gives the forward law on the right, because the conjugation there is read on the parameter of a right multiplication and reverses the plain order once.</p>
-<h3 id="the-eight-derived-parts">The Eight Derived Parts</h3>
-<p>The eight derived parts are the symmetric and antisymmetric parts of the four general products, $\tfrac12(\tilde P\circ\tilde Q\pm\tilde Q\circ\tilde P)$, and they are <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em> and <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>. Each of the eight fails the law on both sides, and the reason is structural rather than accidental: a multiplication of a symmetrised product mixes the two slots, $R^{\circ}_{\tilde P}(\tilde X)=\tfrac12(\tilde X\circ\tilde P\pm\tilde P\circ\tilde X)$, so the composite of two of them is a sum of four products and is not a single multiplication at any element in general.</p>
+<p><strong>Remark (why the block and no other).</strong> Exactly three of the twelve structures carry a one-sided composition law, and the table of §<em>The Isolation among the Twelve</em> records which. The plain product carries it on both sides, forward on the left and reversed on the right; the general quaternionic product carries it on the left and reversed; the block carries it on the right and forward. The block is the structure in which the forward order is carried by the <strong>right</strong> multiplications, and this is exactly the statement that the twist sits in the second slot and is an anti-automorphism: the conjugation in $\tilde P\tilde Q^{*}$ reverses the order of the plain product, and the reversal, read on the right multiplications, undoes the reversal of the composition. In the nine remaining structures neither side closes, and the reason is the same in every case: a derived part mixes the two slots, and the two products that are not the plain one conjugate a slot, which turns a one-sided multiplication into an operator carrying two independent parameters. The left multiplications of the block do not form a monoid, because the twist is in the slot a left multiplication reads: $L^{\star}_{\tilde P}L^{\star}_{\tilde Q}=L_{\tilde P}\eta L_{\tilde Q}\eta=L_{\tilde P}R_{\tilde Q^{*}}$, a <strong>mixed</strong> operator of the two independent parameters $\tilde P,\tilde Q$, which is a two-sided operator only in the diagonal case $\tilde Q=\lambda\tilde P^{*}$ (<em>Mixed Inner Conjugation on the General Plain Sesqualgebra of Biquaternions</em>), and is not the left multiplication of the block at any single element in general.</p>
+<h2 id="the-isolation-among-the-twelve">The Isolation among the Twelve</h2>
+<p><strong>Theorem (the specificity).</strong> Of the twelve structures of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, the general plain sesqualgebra is the only one whose right multiplications satisfy the right-composition law in the <strong>forward</strong> order.</p>
+<p><em>Proof.</em> The block satisfies it by §<em>The Criterion</em>. The other eleven are the three remaining general products together with the eight parts got by symmetrising or antisymmetrising the four. The three general products are disposed of by the table below: $\tilde P\tilde Q$ carries the forward law on the left and the reversed law on the right, $\tilde P^{\natural}\tilde Q$ carries the reversed law on the left, $\tilde P\tilde Q^{*}$ is the block, and $\tilde P^{\natural}\tilde Q^{*}$ conjugates both slots and closes on neither side. Each of the eight derived parts mixes the two slots in its multiplication, $R^{\circ}_{\tilde P}(\tilde X)=\tfrac12(\tilde X\circ\tilde P\pm\tilde P\circ\tilde X)$, so the composite of two of them is a sum of four products and is not a single multiplication at any element in general.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -145,30 +104,30 @@ $$</p>
 <tbody>
 <tr>
 <td>general</td>
-<td>$\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>GPA, GQA, <strong>GPS</strong>, GQS</td>
 <td>reversed, none, <strong>forward</strong>, none</td>
 <td>forward, reversed, none, none</td>
 </tr>
 <tr>
 <td>symmetric</td>
-<td>$\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$</td>
+<td>SPA, SQA, SPS, SQS</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>antisymmetric</td>
-<td>$\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$</td>
+<td>APA, AQA, APS, AQS</td>
 <td>none</td>
 <td>none</td>
 </tr>
 </tbody>
 </table></div>
-<p>Exactly three of the twelve structures carry a one-sided law, and each of them on one side or the other, or on both sides in the plain case: the plain product (forward on the left, reversed on the right), the general quaternionic product (reversed, on the left) and the block (forward, on the right). The block is the unique cell with a <strong>forward right</strong> law, and the table is the specificity: the twelve structures carry exactly two one-sided families with a monoid law on the right, stable under composition, the plain one and the block, and they carry them in opposite orders.</p>
+<p>Only three of the twelve carry a one-sided law, each on one side: the plain product (forward on the left, reversed on the right), the general quaternionic product (reversed, on the left) and the block (forward, on the right). The block is the unique one whose law is on the right and in the forward order, and the reason is that its twist sits in the second slot alone and is an anti-automorphism: the conjugation reverses the order of the plain product, and that reversal, read on the right multiplications, undoes the reversal of the plain composition. In the nine others neither side closes, because a derived part mixes the two slots or because a product conjugates a slot. The left multiplications of the block close nowhere either, because the twist is in the slot a left multiplication reads: $L^{\star}_{\tilde P}L^{\star}_{\tilde Q}=L_{\tilde P}\eta L_{\tilde Q}\eta=L_{\tilde P}R_{\tilde Q^{*}}$, a <strong>mixed</strong> operator of the two independent parameters $\tilde P,\tilde Q$, a two-sided operator only in the diagonal case $\tilde Q=\lambda\tilde P^{*}$ (<em>Mixed Inner Conjugation on the General Plain Sesqualgebra of Biquaternions</em>).</p>
 <h2 id="the-projectors">The Projectors</h2>
 <p><strong>Theorem (the projector criterion).</strong> The operator $R^{\star}_{\tilde P}$ is a projector if and only if $\tilde P$ is an idempotent of the plain product, and the operator $L^{\star}_{\tilde P}$ is a projector if and only if $\tilde P=0$.</p>
 <p><em>Proof.</em> By the composition law $R^{\star}_{\tilde P}{}^{2}=R^{\star}_{\tilde P\tilde P}$, and by faithfulness the equality $R^{\star}_{\tilde P}{}^{2}=R^{\star}_{\tilde P}$ is $\tilde P\tilde P=\tilde P$. For the left side, $L^{\star}_{\tilde P}$ is conjugate-linear, and its composite with itself is $\mathbb{C}$-linear; a conjugate-linear operator equal to a $\mathbb{C}$-linear one is zero, so $L^{\star}_{\tilde P}{}^{2}=L^{\star}_{\tilde P}$ forces $L^{\star}_{\tilde P}=0$, that is $\tilde P=0$ by faithfulness.</p>
-<p><strong>Corollary (the family of projectors, and the disowning).</strong> The elements whose right multiplication is a projector are the plain idempotents: $0$, $e_0$ and the family $\tfrac12(e_0+\xi)$ over the pure roots $\xi$ of $+1$, of complex dimension two. The idempotents of the block itself are only the <strong>Hermitian</strong> ones, $0$, $e_0$ and the $\tfrac12(e_0+i\hat\mu)$ over the real unit vectors $\hat\mu$, a family of real dimension two.</p>
-<p><em>Proof.</em> By the criterion and by <em>Idempotents of the General Plain Algebra</em>, whose idempotents are $0$, $e_0$ and the $\tfrac12(e_0+\xi)$ with $\xi^{2}=e_0$. The idempotents of the block are computed in <em>Idempotents of the General Plain Sesqualgebra</em>: they are the Hermitian idempotents of the algebra, $0$, $e_0$ and the $\tfrac12(e_0+i\hat\mu)$.</p>
+<p><strong>Corollary (the family of projectors, and the disowning).</strong> The elements whose right multiplication is a projector are the plain idempotents: $0$, $e_0$ and the family $\tfrac12(e_0+\tilde\Xi)$ over the pure roots $\tilde\Xi$ of $+1$, of complex dimension two. The idempotents of the block itself are only the <strong>Hermitian</strong> ones, $0$, $e_0$ and the $\tfrac12(e_0+i\hat\mu)$ over the real unit vectors $\hat\mu$, a family of real dimension two.</p>
+<p><em>Proof.</em> By the criterion and by <em>Idempotents of the General Plain Algebra</em>, whose idempotents are $0$, $e_0$ and the $\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Xi^{2}=e_0$. The idempotents of the block are computed in <em>Idempotents of the General Plain Sesqualgebra</em>: they are the Hermitian idempotents of the algebra, $0$, $e_0$ and the $\tfrac12(e_0+i\hat\mu)$.</p>
 <p><strong>Remark (the mirror of the general quaternionic case).</strong> The block has a full complex two-dimensional family of projectors and recognizes as its own idempotents only the real two-dimensional Hermitian subfamily; the general quaternionic product has the same full family of projectors on the <strong>left</strong> and the same two idempotents. The two articles are the two sides of one phenomenon, the isotope with a conjugated index: the projectors come from the plain idempotents, and the idempotents of the structure are the elements whose own square is themselves, which the conjugation generally destroys. The count of the projectors is that of <em>One-Sided Operators on the General Plain Sesqualgebra of Biquaternions</em>, read through the dictionary.</p>
 <h2 id="the-one-sided-ideals">The One-Sided Ideals</h2>
 <p><strong>Theorem (the right ideals coincide and the left ones do not).</strong> Let $I$ be a subspace of $\mathbb{B}$. Then</p>
