@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An **unstable state** is a state that is not an eigenstate of the Hamiltonian that governs it. A system prepared in it does not remain in it, and the probability of finding the system still in the initial state decreases with time. The decrease is measured by the **survival probability**, and its rate is the **decay rate**. The unstable state is one of the few objects in quantum theory whose natural description is not a real number: the state settles onto a **complex energy**, whose imaginary part is the inverse lifetime.
+An **unstable state** is a state that is not an eigenstate of the Hamiltonian that governs it. A system prepared in it does not remain in it, and the probability of finding the system still in the initial state falls away from one. That probability is the **survival probability**, and the rate of its fall is the **decay rate**. The unstable state is one of the few objects in quantum theory whose natural description is not a real number: it is described by a **complex energy** whose imaginary part is half the width of the state, the width being the inverse lifetime.
 
 This article treats the unstable state in the biquaternion framework of this series. It answers two questions.
 
@@ -169,19 +169,19 @@ The centrality is not a coincidence of the models treated below. It is a consequ
 The state module splits into two orthogonal summands, and a Hamiltonian that couples them can be written in the corresponding block form. Let $\tilde\Pi$ be the idempotent of one summand and $S=S_1\oplus S_2$ the splitting $S_1=\tilde\Pi S$, $S_2=(e_0-\tilde\Pi)S$. In the module basis, with $\tilde H$ Hermitian, the matrix image of the Hamiltonian is
 
 $$
-H = \begin{pmatrix} H_{\mathrm{c}} & V \\ V^{\dagger} & H_{\mathrm{nc}}\end{pmatrix},
+H = \begin{pmatrix} H_{\mathrm{c}} & V \\ V^{*} & H_{\mathrm{nc}}\end{pmatrix},
 $$
 
-where $H_{\mathrm{c}}$ governs the first slot, $H_{\mathrm{nc}}$ the second, and $V$ is the part of the Hamiltonian that connects them — the non-central coupling in the slot basis. The block identity of *The Resolvent Operator*, applied to this splitting, gives the Green's function of the first slot its reduced form,
+where $H_{\mathrm{c}}$ governs the first slot, $H_{\mathrm{nc}}$ the second, and $V$ is the off-diagonal entry through which the two are coupled — the entry into which the non-central part $i\mathbf{h}$ of $\tilde H$ enters. The block identity of *The Resolvent Operator*, applied to this splitting, gives the Green's function of the first slot its reduced form,
 
 $$
-G_{\mathrm{c}}(z) = \Bigl(z - H_{\mathrm{c}} - V\frac{1}{z-H_{\mathrm{nc}}}V^{\dagger}\Bigr)^{-1}
+G_{\mathrm{c}}(z) = \Bigl(z - H_{\mathrm{c}} - V\frac{1}{z-H_{\mathrm{nc}}}V^{*}\Bigr)^{-1}
 = \bigl(z - H_{\mathrm{c}} - \Sigma_{\mathrm{nc}}(z)\bigr)^{-1},
 \qquad
-\Sigma_{\mathrm{nc}}(z) = V\frac{1}{z-H_{\mathrm{nc}}}V^{\dagger}.
+\Sigma_{\mathrm{nc}}(z) = V\frac{1}{z-H_{\mathrm{nc}}}V^{*}.
 $$
 
-The coupling $V$ has disappeared from the first slot and reappeared as the energy-dependent addition $\Sigma_{\mathrm{nc}}(z)$. Its entire effect on the first slot is that addition, and if $H_{\mathrm{c}}$ is central then the effective Hamiltonian of the first slot, $H_{\mathrm{c}}+\Sigma_{\mathrm{nc}}(z)$, is central as well.
+The coupling $V$ has disappeared from the first slot and reappeared as the energy-dependent addition $\Sigma_{\mathrm{nc}}(z)$. Its entire effect on the first slot is that addition; and because the two slots are one-dimensional, the entries of the block matrix are complex numbers of the centre, so $\Sigma_{\mathrm{nc}}(z)$ is central, and with it the effective Hamiltonian of the first slot, $H_{\mathrm{c}}+\Sigma_{\mathrm{nc}}(z)$.
 
 ### The complex effective potential
 
@@ -247,7 +247,7 @@ The article therefore states an approximation with its window, not a law. It mak
 **What the algebra adds.**
 
 - **The pole is central.** The width and the level shift are the imaginary and real parts of one complex number of the centre, and this holds whatever non-central coupling is present. The lifetime is a central quantity even when the state is not the module's only content.
-- **The non-central coupling is not an independent channel.** A coupling that connects the two slots of the module can be eliminated, and its effect on the surviving slot is an effective central self-energy. The framework thus says in its own terms why a complex effective potential is not an extra degree of freedom but the trace of a removed one.
+- **The coupling between the slots is not an independent channel.** A coupling that connects the two slots of the module can be eliminated, and its effect on the surviving slot is an effective central self-energy. The framework thus says in its own terms why a complex effective potential is not an extra degree of freedom but the trace of a removed one.
 - **The two sheets and the branch.** The centrality of the pole and the conjugate symmetry together give the unstable state its place: the first sheet carries no complex pole, and the decaying complex number sits on the second sheet, with its mirror partner on the conjugate (advanced) sheet. The algebra's antiunitary structure supplies the pairing; the boundary condition supplies the choice of sheet.
 
 **What the algebra does not add.**
@@ -274,7 +274,7 @@ The coupling of the state to a continuum displaces the pole of the reduced resol
 
 The pole is a **complex number of the centre**. Hermiticity gives $G(\bar z)=G(z)^{\dagger}$ and its scalar reduction $G_{00}(\bar z)=\overline{G_{00}(z)}$, so a complex pole cannot sit on the first sheet; the decaying number at $E_0+\Delta-\tfrac{i}{2}\Gamma$ and its mirror at $E_0+\Delta+\tfrac{i}{2}\Gamma$ are the two second sheets, and the retarded boundary condition keeps the decaying one — the Krein-space pairing of *Spectral Theory on Krein Spaces*, split here across the sheets of the energy plane. The self-energy is a scalar function of the central variable, and the level shift, the width, the pole and the lifetime $\tau=\hbar/\Gamma$ are all central, whatever non-central part the Hamiltonian carries. This is the theorem behind the fifth limit — the norm-preserving unit is central — read at the level of a displaced pole.
 
-A coupling between the two slots of the module is eliminated by the block identity of *The Resolvent Operator*: relative to an orthogonal splitting $S=S_1\oplus S_2$ the Green's function of the first slot is $(z-H_{\mathrm{c}}-\Sigma_{\mathrm{nc}})^{-1}$ with $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{\dagger}$. When the eliminated slot is discrete the addition is a real level shift; when it carries a continuum the addition is complex and the effective central potential is absorptive. This is the framework's form of the optical potential, and it explains why an effective potential must be allowed to be complex.
+A coupling between the two slots of the module is eliminated by the block identity of *The Resolvent Operator*: relative to an orthogonal splitting $S=S_1\oplus S_2$ the Green's function of the first slot is $(z-H_{\mathrm{c}}-\Sigma_{\mathrm{nc}})^{-1}$ with $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{*}$. When the eliminated slot is discrete the addition is a real level shift; when it carries a continuum the addition is complex and the effective central potential is absorptive. This is the framework's form of the optical potential, and it explains why an effective potential must be allowed to be complex.
 
 The soluble case is the discrete state coupled to a continuum with no continuum–continuum coupling, whose reduced equation is one scalar equation with the band logarithm $\rho\ln((z+B)/(z-B))$ as its continuum term. The model, the width, the second-sheet placement and the intermediate-time exponential are transcribed from the external literature; the rules of this article were recomputed on the module image, and the checks are listed in the ledger above. The decay law $P(t)\simeq e^{-\Gamma t/\hbar}$ holds over an intermediate window bounded below by the inverse bandwidth, where the exact quadratic start governs, and above by the continuum threshold, where a power law replaces it.
 
@@ -298,7 +298,8 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\Gamma=2\pi\lvert V_0\rvert^{2}\rho$ | Golden Rule width |
 | $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$ | Pole on the second sheet |
 | $\tau=\hbar/\Gamma$ | Lifetime |
-| $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{\dagger}$ | Effective self-energy of an eliminated slot |
+| $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{*}$ | Effective self-energy of an eliminated slot |
+| $H_{\mathrm{c}},H_{\mathrm{nc}},V$ | Entries of the slot block matrix; $V$ couples the two slots |
 | $\rho(E)$ | Density of continuum states |
 | $B$ | Half-width of the band |
 | $\mathrm{Tr}=2\,\mathrm{Sc}$ | Trace convention |

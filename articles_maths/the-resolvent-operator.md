@@ -136,9 +136,9 @@ $$
 \Bigl((A-\lambda)-B(D-\lambda)^{-1}C\Bigr)u_1 = v_1-B(D-\lambda)^{-1}v_2 ,
 $$
 
-so the first component of the solution is determined by the inverse of $S(\lambda)$ applied to the right-hand side, and the displayed blocks for $u_1$ and $u_2$ follow by back-substitution. Every entry is bounded on the domain on which $S(\lambda)^{-1}$ and $(D-\lambda)^{-1}$ are defined, and the two are defined together, which gives the equivalence with $\lambda\in\rho(L)$.
+so the first component of the solution is determined by the inverse of $S(\lambda)$ applied to the right-hand side, and the displayed blocks for $u_1$ and $u_2$ follow by back-substitution. Conversely, if $S(\lambda)$ is invertible then these formulas define a two-sided inverse of $L-\lambda$, so $\lambda\in\rho(L)$; and if $S(\lambda)$ is not invertible then $S(\lambda)u_1=v_1$ has no solution for some $v_1$, so $(L-\lambda)u=(v_1,0)$ has none either and $L-\lambda$ is not surjective. Hence, for $\lambda\in\rho(D)$, the point $\lambda$ lies in $\rho(L)$ exactly when $S(\lambda)$ is invertible.
 
-**Corollary (the reduced equation and the eigenvalues).** Let $\lambda\in\rho(D)$. Then the eigenvalues of $L$ at which $\lambda\notin\sigma(D)$ are exactly the zeros of the **reduced equation**
+**Corollary (the reduced equation and the eigenvalues).** Let $\lambda\in\rho(D)$. Then $\lambda$ is an eigenvalue of $L$ exactly when it is a zero of the **reduced equation**
 
 $$
 \det\bigl((A-\lambda)-B(D-\lambda)^{-1}C\bigr) = 0 ,
@@ -158,7 +158,7 @@ The continuation of the reduced equation across the cut therefore acquires a zer
 
 *Proof.* For self-adjoint $D$ the Sokhotski–Plemelj formula gives $(D-E-i0^{+})^{-1}=P(D-E)^{-1}+i\pi\delta(D-E)$, and the difference of the two boundary values is the displayed jump; the invertibility off the axis is that of $L-\lambda$, and the zero of the continued equation and its identification as the resonance pole follow from the corollary above applied on the second sheet.
 
-**Remark (why the reduction is used).** The block identity is the algebraic content of the projection methods of scattering theory: it is how a degree of freedom that is coupled to a subspace and then removed reappears in that subspace as an energy-dependent addition, real where the removed spectrum is discrete and complex where it is continuous. It is the general form of the elimination used for a non-central block in the physics article cited above, and of the Feshbach and Schur complements in the reading below.
+**Remark (why the reduction is used).** The block identity is the algebraic content of the projection methods of scattering theory: it is how a degree of freedom that is coupled to a subspace and then removed reappears in that subspace as an energy-dependent addition, real where the removed spectrum is discrete and complex where it is continuous. It is the general form of the elimination of the second slot in the physics article cited above, and of the Feshbach and Schur complements in the reading below.
 
 ## The Self-Adjoint Case
 
