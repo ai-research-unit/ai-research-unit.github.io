@@ -107,8 +107,7 @@ evaluation is bounded, in <em>Banach and Hilbert Spaces</em>, later in this Part
 $k_y(x)=\langle k_y,k_x\rangle$ and hence $K(x,y)=\langle k_y,k_x\rangle$; the kernel is Hermitian because
 $\overline{K(y,x)}=\overline{\langle k_x,k_y\rangle}=\langle k_y,k_x\rangle=K(x,y)$, and positive definite
 because $\sum_{i,j}\overline{c_i}c_jK(x_i,x_j)=\lVert\sum_ic_ik_{x_i}\rVert^2\geq0$. If $g$ is orthogonal
-to every $k_x$ then $g(x)=\langle g,k_x\rangle=0$ for every $x$, so $g=0$ and the span is dense.
-$\blacksquare$</p>
+to every $k_x$ then $g(x)=\langle g,k_x\rangle=0$ for every $x$, so $g=0$ and the span is dense.</p>
 <p>The identity $\|k_x\|^2=\langle k_x,k_x\rangle=K(x,x)$ gives the bound the continuous evaluation requires,
 $$
 \lvert f(x)\rvert=\lvert\langle f,k_x\rangle\rvert\leq\lVert f\rVert\sqrt{K(x,x)} .
@@ -142,22 +141,21 @@ $k_x\mapsto K(\cdot,x)$ is well defined: if $k_x-k_y\in N$ then
 $\langle k_x-k_y,k_z\rangle=K(z,x)-K(z,y)=0$ for every $z$, and $K(\cdot,x)=K(\cdot,y)$ as functions
 because $K$ is positive definite and hence Hermitian. The reproducing property holds on $H_0$ by the
 definition of the form and extends to the completion by continuity, the map $f\mapsto f(x)=\langle f,k_x\rangle$
-being continuous in $f$. $\blacksquare$</p>
+being continuous in $f$.</p>
 <p><strong>Theorem (uniqueness).</strong> If $H$ and $H'$ are two reproducing kernel Hilbert spaces on $X$ with the same
 kernel $K$, then the map $k_x\mapsto k_x'$ extends to a unique isometric isomorphism $H\to H'$ carrying each
 $k_x$ to $k_x'$; in particular the space $H_K$ of the construction is the unique reproducing kernel Hilbert
 space with kernel $K$.</p>
 <p><strong>Proof.</strong> The linear map defined on $H_0$ by $\sum c_ik_{x_i}\mapsto\sum c_ik_{x_i}'$ preserves the inner
 product, since both are given by the same kernel values $K(x_j,x_i)$; it therefore extends by continuity and
-density to an isometry, and the isometry is onto because the image contains the dense span of the $k_x'$.
-$\blacksquare$</p>
+density to an isometry, and the isometry is onto because the image contains the dense span of the $k_x'$.</p>
 <h3 id="aronszajns-theorem">Aronszajn's Theorem</h3>
 <p><strong>Theorem (Aronszajn).</strong> The map $K\mapsto H_K$ is a bijection between the positive definite kernels on a
 set $X$ and the reproducing kernel Hilbert spaces on $X$, up to isometry fixing each kernel vector; the
 inverse map is $H\mapsto\langle k_y,k_x\rangle$ of the preceding section.</p>
 <p><strong>Proof.</strong> Given $H$, the kernel $K(x,y)=\langle k_y,k_x\rangle$ is positive definite and $H$ reproduces it.
 Given $K$, the construction produces $H_K$, whose kernel is $K$ again: the kernel of $H_K$ is
-$\langle k_y,k_x\rangle=K(x,y)$. The uniqueness is the theorem above. $\blacksquare$</p>
+$\langle k_y,k_x\rangle=K(x,y)$. The uniqueness is the theorem above.</p>
 <p>Thus positive definite kernels and reproducing kernel spaces are the same data, and the previous article's
 Kolmogorov decomposition is exactly this construction: the Kolmogorov vectors are the kernel vectors
 $k_x$, and the abstract Hilbert space they span is realised here as a space of functions by the reading
@@ -207,7 +205,7 @@ and if $f_n\to f$ in norm then $f_n\to f$ pointwise, uniformly on every set on w
 convergence of a norm-bounded sequence in a dense subset to a pointwise limit is pointwise convergence to the
 limit in $H$.</p>
 <p><strong>Proof.</strong> The bound is the identity $f(x)=\langle f,k_x\rangle$ and Cauchy–Schwarz with
-$\lVert k_x\rVert^2=K(x,x)$; the convergence is the bound applied to $f_n-f$. $\blacksquare$</p>
+$\lVert k_x\rVert^2=K(x,x)$; the convergence is the bound applied to $f_n-f$.</p>
 <p><strong>Theorem (the kernel of a subspace).</strong> If $H_1\subseteq H_2$ are reproducing kernel Hilbert spaces on $X$
 with the same inner product, with kernels $K_1,K_2$, then $K_2-K_1$ is a positive definite kernel, and it is
 the reproducing kernel of the orthogonal complement $H_2\ominus H_1$ whenever that complement has continuous
@@ -215,8 +213,7 @@ evaluation.</p>
 <p><strong>Proof.</strong> For each $x$ the projection $Pk^2_x$ of the kernel vector of $H_2$ at $x$ onto $H_1$ is the
 representer in $H_1$ of the evaluation at $x$, hence equals $k^1_x$; therefore the vector
 $k^2_x-k^1_x$ lies in the complement and
-$\langle k^2_y-k^1_y,k^2_x-k^1_x\rangle=K_2(x,y)-K_1(x,y)$, which is positive definite as a Gram kernel.
-$\blacksquare$</p>
+$\langle k^2_y-k^1_y,k^2_x-k^1_x\rangle=K_2(x,y)-K_1(x,y)$, which is positive definite as a Gram kernel.</p>
 <h2 id="the-kernel-and-the-integral-operator">The Kernel and the Integral Operator</h2>
 <p><strong>Theorem (finite and countable case).</strong> Let $X$ be a finite or countable set with counting measure and let
 $K$ be a Hermitian kernel on $X$. Then $K$ is positive definite if and only if the integral operator $T_K$
@@ -229,7 +226,7 @@ operator is positive.</p>
 <p><strong>Proof.</strong> The displayed identity is the definition of $T_K$ in the countable case; the positivity of $K$
 and of $T_K$ are the same condition. The general measure-theoretic statement — a kernel is positive definite
 exactly when its integral operator is self-adjoint and positive — is <em>Hermitian Kernels and the Integral
-Operator</em>, later in this group, where the operator and the kernel are matched. $\blacksquare$</p>
+Operator</em>, later in this group, where the operator and the kernel are matched.</p>
 <h2 id="summary">Summary</h2>
 <p>A reproducing kernel Hilbert space is a Hilbert space of functions in which evaluation at every point is a
 bounded linear functional; the Riesz representers $k_x$ of the evaluations define the reproducing kernel

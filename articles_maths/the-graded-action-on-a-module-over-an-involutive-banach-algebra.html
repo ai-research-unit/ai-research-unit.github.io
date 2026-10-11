@@ -74,7 +74,7 @@ $$</p>
 \pi(r\cdot m) = \alpha(r)\cdot\pi(m) , \qquad \text{and for homogeneous } r , \quad \pi(r\cdot m) = (-1)^{\lvert r\rvert}\,r\cdot\pi(m) ,
 $$</p>
 <p>where $\lvert r\rvert$ is the parity of a homogeneous $r$. Equivalently $\pi \circ L_r = L_{\alpha(r)}\circ\pi$ and $L_r\circ\pi = \pi\circ L_{\alpha(r)}$ for the plain action $L_r(m) = r\cdot m$. Hence $\pi$ is $A^0$-linear but not $A$-linear unless $A^1 = 0$.</p>
-<p><strong>Proof.</strong> The identity is the defining property of the parity operator; for homogeneous $r$ with $\alpha(r) = (-1)^{\lvert r\rvert}r$ it reads $\pi(r\cdot m) = (-1)^{\lvert r\rvert}r\cdot\pi(m)$. For even $r$ the equation reads $\pi(r\cdot m) = r\cdot\pi(m)$, which is $A^0$-linearity; for odd $r$ it reads $\pi(r\cdot m) = -r\cdot\pi(m)$, which contradicts $A$-linearity when the odd part is nonzero. $\square$</p>
+<p><strong>Proof.</strong> The identity is the defining property of the parity operator; for homogeneous $r$ with $\alpha(r) = (-1)^{\lvert r\rvert}r$ it reads $\pi(r\cdot m) = (-1)^{\lvert r\rvert}r\cdot\pi(m)$. For even $r$ the equation reads $\pi(r\cdot m) = r\cdot\pi(m)$, which is $A^0$-linearity; for odd $r$ it reads $\pi(r\cdot m) = -r\cdot\pi(m)$, which contradicts $A$-linearity when the odd part is nonzero.</p>
 <p><strong>Proposition (the sign rule and the failure of associativity).</strong> For all $r,s \in A$ and $m \in M$,</p>
 <p>$$
 r\star(s\star m) = \bigl(r\,\alpha(s)\bigr)\cdot m , \qquad (rs)\star m = (rs)\cdot\pi(m) ,
@@ -84,7 +84,7 @@ $$</p>
 \ell_r^\pi\circ\pi = L_r , \qquad \pi\circ\ell_r^\pi = L_{\alpha(r)} , \qquad \text{so} \quad \pi\ell_r^\pi = (-1)^{\lvert r\rvert}\,\ell_r^\pi\pi ,
 $$</p>
 <p>and an odd element produces an operator anticommuting with $\pi$, an even element one commuting with $\pi$.</p>
-<p><strong>Proof.</strong> $r\star(s\star m) = r\star(s\cdot\pi(m)) = r\cdot\pi(s\cdot\pi(m)) = r\cdot\alpha(s)\cdot\pi^2(m) = r\alpha(s)\cdot m$; $(rs)\star m = rs\cdot\pi(m)$. The two agree for all $m$ exactly when $r\alpha(s) = rs$ as operators, that is $\alpha(s) = s$; this for every $r$ and every $s$ is $A = A^0$. For the sign rule, $\ell_r^\pi\pi(m) = r\cdot\pi^2(m) = r\cdot m$ and $\pi\ell_r^\pi(m) = \pi(r\cdot\pi(m)) = \alpha(r)\cdot\pi^2(m) = \alpha(r)\cdot m$, so $\pi\ell_r^\pi = L_{\alpha(r)} = (-1)^{\lvert r\rvert}L_r = (-1)^{\lvert r\rvert}\ell_r^\pi\pi$ for homogeneous $r$. $\square$</p>
+<p><strong>Proof.</strong> $r\star(s\star m) = r\star(s\cdot\pi(m)) = r\cdot\pi(s\cdot\pi(m)) = r\cdot\alpha(s)\cdot\pi^2(m) = r\alpha(s)\cdot m$; $(rs)\star m = rs\cdot\pi(m)$. The two agree for all $m$ exactly when $r\alpha(s) = rs$ as operators, that is $\alpha(s) = s$; this for every $r$ and every $s$ is $A = A^0$. For the sign rule, $\ell_r^\pi\pi(m) = r\cdot\pi^2(m) = r\cdot m$ and $\pi\ell_r^\pi(m) = \pi(r\cdot\pi(m)) = \alpha(r)\cdot\pi^2(m) = \alpha(r)\cdot m$, so $\pi\ell_r^\pi = L_{\alpha(r)} = (-1)^{\lvert r\rvert}L_r = (-1)^{\lvert r\rvert}\ell_r^\pi\pi$ for homogeneous $r$.</p>
 <p><strong>Remark (the honest sign rule).</strong> The graded action is the correct notion of an action twisted by the grading; the price is that it is not an action of the algebra but an action of the graded algebra in the sense of superalgebras: odd elements act as odd operators, and the sign rule $\pi\ell_r^\pi\pi = (-1)^{\lvert r\rvert}\ell_r^\pi$ is the statement that the operator is even or odd according to the parity of the element. The associative rewriting is recovered on the even part, which is the honest domain of the twisted action.</p>
 <h2 id="the-operators-the-elements-produce">The Operators the Elements Produce</h2>
 <p><strong>Proposition (the regular module).</strong> For $M = A$ with the regular action $r\cdot m = rm$ and $\pi = \alpha$, the graded multiplication is the signed left multiplication,</p>
@@ -92,7 +92,7 @@ $$</p>
 \ell_r^\pi(m) = r\,\alpha(m) = \ell_r(m) ,
 $$</p>
 <p>and the graded action of $A$ on itself is the signed left multiplication of <em>The Signed Left Multiplication on an Involutive Banach Algebra</em>.</p>
-<p><strong>Proof.</strong> Substituting $M = A$, $r\cdot m = rm$ and $\pi = \alpha$ gives $\ell_r^\pi(m) = r\alpha(m) = \ell_r(m)$; the compatibility $\pi(r\cdot m) = \alpha(r)\cdot\pi(m)$ is the multiplicativity of $\alpha$. $\square$</p>
+<p><strong>Proof.</strong> Substituting $M = A$, $r\cdot m = rm$ and $\pi = \alpha$ gives $\ell_r^\pi(m) = r\alpha(m) = \ell_r(m)$; the compatibility $\pi(r\cdot m) = \alpha(r)\cdot\pi(m)$ is the multiplicativity of $\alpha$.</p>
 <p><strong>Proposition (the even and the odd operators).</strong> For $r \in A^0$ the operator $\ell_r^\pi$ preserves each of $M^0$ and $M^1$:</p>
 <p>$$
 \ell_r^\pi = r\cdot \text{ on } M^0 , \qquad \ell_r^\pi = -r\cdot \text{ on } M^1 ;
@@ -101,14 +101,14 @@ $$</p>
 <p>$$
 \lVert\ell_r^\pi\rVert \leq \lVert r\rVert\,\lVert\pi\rVert .
 $$</p>
-<p><strong>Proof.</strong> On $M^0$, $\pi = \mathrm{id}$, so $\ell_r^\pi(m) = r\cdot m$; on $M^1$, $\pi = -\mathrm{id}$, so $\ell_r^\pi(m) = -r\cdot m$. For odd $r$, $\pi(\ell_r^\pi(m)) = \alpha(r)\cdot m = -r\cdot m$, so $\ell_r^\pi(m) \in M^1$ when $m \in M^0$ and in $M^0$ when $m \in M^1$. Boundedness is the composition of $L_r$ with $\pi$. $\square$</p>
+<p><strong>Proof.</strong> On $M^0$, $\pi = \mathrm{id}$, so $\ell_r^\pi(m) = r\cdot m$; on $M^1$, $\pi = -\mathrm{id}$, so $\ell_r^\pi(m) = -r\cdot m$. For odd $r$, $\pi(\ell_r^\pi(m)) = \alpha(r)\cdot m = -r\cdot m$, so $\ell_r^\pi(m) \in M^1$ when $m \in M^0$ and in $M^0$ when $m \in M^1$. Boundedness is the composition of $L_r$ with $\pi$.</p>
 <h2 id="topology-and-completion">Topology and Completion</h2>
 <p><strong>Proposition (continuity and the completed grading).</strong> The parity operator $\pi$ is a topological automorphism of the additive group of $M$, hence a homeomorphism, with $\lVert\pi\rVert < +\infty$; the graded action is continuous as a map $A \times M \to M$; and if $M$ is graded, the completion of $M$ is the direct sum of the completions of its parts,</p>
 <p>$$
 \widehat{M} = \widehat{M^0} \oplus \widehat{M^1} ,
 $$</p>
 <p>the parity operator extending to the completion as the sign change of the two summands.</p>
-<p><strong>Proof.</strong> $\pi$ is a continuous additive involution, so it is a homeomorphism with inverse itself; the graded action is the composite of the continuous action with $\pi$, hence continuous. For a graded $M$, the projections $p_0 = \tfrac12(\mathrm{id}+\pi)$ and $p_1 = \tfrac12(\mathrm{id}-\pi)$ are continuous when $2$ is invertible, so the grading is a topological direct sum and the completion of a direct sum is the direct sum of the completions. $\square$</p>
+<p><strong>Proof.</strong> $\pi$ is a continuous additive involution, so it is a homeomorphism with inverse itself; the graded action is the composite of the continuous action with $\pi$, hence continuous. For a graded $M$, the projections $p_0 = \tfrac12(\mathrm{id}+\pi)$ and $p_1 = \tfrac12(\mathrm{id}-\pi)$ are continuous when $2$ is invertible, so the grading is a topological direct sum and the completion of a direct sum is the direct sum of the completions.</p>
 <p><strong>Example (a graded Banach module).</strong> Let $A = A^0\oplus A^1$ be a graded Banach algebra and let $M = A^n$ with the componentwise action and the parity operator acting by $\alpha$ on each component. Then the graded action is componentwise the signed left multiplication, and the odd elements exchange the even and the odd parts of the module.</p>
 <p><strong>Example (the sup-norm module).</strong> Let $A = C(X,\mathbb{K})$ with the grading by a clopen subset $E$, so that $\alpha(f) = (2\chi - 1)f$, and let $M = C(X,\mathbb{K})$ with the parity operator $\pi(g) = (2\chi' - 1)g$ for another clopen subset $E'$. The compatibility $\pi(fg) = \alpha(f)\pi(g)$ holds exactly when the sign functions satisfy $\chi'\chi_E = \chi_E\chi'$ on the supports, that is when the two clopen subsets are compatible, and then the graded action is $f\star g = f(2\chi' - 1)g$.</p>
 <h2 id="summary">Summary</h2>

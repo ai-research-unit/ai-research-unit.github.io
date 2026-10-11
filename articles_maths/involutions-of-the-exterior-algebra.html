@@ -58,7 +58,7 @@
 <p><strong>Definition.</strong> An <strong>involution</strong> of $A$ is a $K$-linear map $\varphi$ with $\varphi^2=\mathrm{id}$ and $\varphi(xy)=\varphi(x)\varphi(y)$; an <strong>anti-involution</strong> is a linear map $\varphi$ with $\varphi^2=\mathrm{id}$ and $\varphi(xy)=\varphi(y)\varphi(x)$. An involution or anti-involution is <strong>graded</strong> when it preserves the homogeneous degree and <strong>reversing</strong> when it sends $A^k$ to $A^{m-k}$.</p>
 <p><strong>Definition.</strong> A linear map $\varphi$ is a <strong>signed identity</strong> when it acts on each homogeneous component by a scalar, $\varphi(x)=\epsilon_kx$ for $x\in A^k$.</p>
 <p><strong>Proposition.</strong> A signed identity is an involution exactly when every $\epsilon_k=\pm1$; it is an algebra automorphism exactly when $\epsilon_k=\epsilon_1^{k}$ for all $k$, and then it is the identity if $\epsilon_1=1$ and the grade involution if $\epsilon_1=-1$.</p>
-<p><strong>Proof.</strong> An involution requires $\epsilon_k^2=1$; multiplicativity requires $\epsilon_{j+k}=\epsilon_j\epsilon_k$, which for a multiplicative family forces $\epsilon_k=\epsilon_1^k$; and then $\epsilon_1^2=1$ gives $\epsilon_1=\pm1$. $\square$</p>
+<p><strong>Proof.</strong> An involution requires $\epsilon_k^2=1$; multiplicativity requires $\epsilon_{j+k}=\epsilon_j\epsilon_k$, which for a multiplicative family forces $\epsilon_k=\epsilon_1^k$; and then $\epsilon_1^2=1$ gives $\epsilon_1=\pm1$.</p>
 <p><strong>Corollary.</strong> The only degree-preserving algebra involutions of the exterior algebra that act by a scalar on each component are the identity and the grade involution; every other order-two automorphism of the exterior algebra arises from an order-two automorphism of $V$ and is not a signed identity unless it is one of these two.</p>
 <h2 id="the-grade-involution">The Grade Involution</h2>
 <p><strong>Definition.</strong> The <strong>grade involution</strong> is</p>
@@ -66,7 +66,7 @@
 \alpha(x)=(-1)^k x\qquad (x\in A^k).
 $$</p>
 <p><strong>Proposition.</strong> $\alpha$ is an algebra automorphism, $\alpha^2=\mathrm{id}$, and it is the unique automorphism of $A$ that extends the map $v\mapsto-v$ on $V$.</p>
-<p><strong>Proof.</strong> Multiplicativity is $\alpha(xy)=(-1)^{|x|+|y|}xy=\alpha(x)\alpha(y)$; the extension statement follows because $V=A^1$ determines the signs $\epsilon_k=(-1)^k$ and hence $\alpha$. $\square$</p>
+<p><strong>Proof.</strong> Multiplicativity is $\alpha(xy)=(-1)^{|x|+|y|}xy=\alpha(x)\alpha(y)$; the extension statement follows because $V=A^1$ determines the signs $\epsilon_k=(-1)^k$ and hence $\alpha$.</p>
 <p><strong>Corollary.</strong> The fixed algebra of $\alpha$ is the even part $A^{\mathrm{even}}$ and its anti-fixed part is the odd part $A^{\mathrm{odd}}$; $\alpha$ is the grade involution of the $\mathbb{Z}/2$-grading of $A$, in the sense of <em>Superalgebras and Graded Structures</em>.</p>
 <h2 id="reversion-and-the-reversal">Reversion and the Reversal</h2>
 <p><strong>Definition.</strong> The <strong>reversion</strong> $r$ is the linear map determined on products by</p>
@@ -77,9 +77,9 @@ $$</p>
 <p>$$
 r(x)=(-1)^{k(k-1)/2}x,\qquad \alpha r(x)=(-1)^{k(k+1)/2}x .
 $$</p>
-<p><strong>Proof.</strong> Reversing the order of $k$ factors takes $k(k-1)/2$ transpositions of neighbours, each contributing $-1$ by the graded commutativity of the wedge product; composing with $\alpha$ adds the sign $(-1)^k$, and $k(k-1)/2+k=k(k+1)/2$. $\square$</p>
+<p><strong>Proof.</strong> Reversing the order of $k$ factors takes $k(k-1)/2$ transpositions of neighbours, each contributing $-1$ by the graded commutativity of the wedge product; composing with $\alpha$ adds the sign $(-1)^k$, and $k(k-1)/2+k=k(k+1)/2$.</p>
 <p><strong>Theorem.</strong> The reversion is an anti-involution, $r(xy)=r(y)r(x)$ and $r^2=\mathrm{id}$; so is the reversal; and $\alpha$ commutes with $r$. The three maps $\mathrm{id},\alpha,r,\alpha r$ form a group isomorphic to $(\mathbb{Z}/2)^2$ under composition.</p>
-<p><strong>Proof.</strong> Reversion reverses the order of each wedge of factors, so it converts a product into the product in the reverse order; applying it twice restores the order; the reversal is the composite of two commuting order-two maps; the group table is immediate. $\square$</p>
+<p><strong>Proof.</strong> Reversion reverses the order of each wedge of factors, so it converts a product into the product in the reverse order; applying it twice restores the order; the reversal is the composite of two commuting order-two maps; the group table is immediate.</p>
 <p><strong>Corollary.</strong> The signs $(-1)^k$, $(-1)^{k(k-1)/2}$ and $(-1)^{k(k+1)/2}$ distinguish the three non-identity members on the homogeneous components, and they agree on the even part; on the odd part the grade involution is $-1$, while reversion is $-1$ for $k\equiv2,3\pmod 4$.</p>
 <h2 id="the-hodge-star-named">The Hodge Star, Named</h2>
 <p><strong>Remark (forward reference).</strong> When $V$ carries a nondegenerate symmetric bilinear form and an orientation, the Hodge star $\star$ is a linear map reversing the degree, $\star:A^k\to A^{m-k}$, determined by $\alpha\wedge\star\beta=\langle\alpha,\beta\rangle\theta$ for the volume element $\theta$; it is an involution up to the sign $(-1)^{k(m-k)}$ and it is not an algebra homomorphism or anti-homomorphism. Its theory, its square, the real and the complex structures it defines on the exterior algebra and the relative positions of $\star$ with $\alpha,r,\alpha r$ are the subject of <em>The Hodge Star and the Real Structure of the Exterior Algebra</em>; the form and the orientation are not used here.</p>
@@ -120,7 +120,6 @@ $$</p>
 </tbody>
 </table></div>
 <p>so $\alpha$ negates the vectors and fixes the top element, $r$ fixes the vectors and negates the top element, and $\alpha r$ negates both. The anti-involution property of $r$ is visible on $e_1e_2$: $r(e_1e_2)=e_2\wedge e_1=-e_1e_2=r(e_2)r(e_1)$.</p>
-<p><strong>Verified.</strong> The table was recomputed from the signs $(-1)^k$, $(-1)^{k(k-1)/2}$, $(-1)^{k(k+1)/2}$ and checked against the products of the basis elements; the anti-involution property was checked on all products of basis elements.</p>
 <h2 id="summary">Summary</h2>
 <p>The exterior algebra $A=\Lambda^\bullet V$ carries the order-two maps $\alpha,r,\alpha r$: the <strong>grade involution</strong> $\alpha$, the unique algebra automorphism extending $v\mapsto-v$, acting by $(-1)^k$ on $A^k$; the <strong>reversion</strong> $r$, the anti-automorphism reversing the order of the factors, acting by $(-1)^{k(k-1)/2}$; and the <strong>reversal</strong> $\alpha r$, acting by $(-1)^{k(k+1)/2}$. They form a group $(\mathbb{Z}/2)^2$ and agree on the even part. Among the degree-preserving algebra involutions acting by a scalar on each component, only the identity and $\alpha$ occur; the reversion and the reversal are anti-involutions. The <strong>Hodge star</strong> is the degree-reversing order-two-up-to-sign map that needs a symmetric bilinear form and an orientation, and it is named here and treated in <em>The Hodge Star and the Real Structure of the Exterior Algebra</em>. For the exterior algebra of a two-dimensional space the three maps are displayed by their action on the basis.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

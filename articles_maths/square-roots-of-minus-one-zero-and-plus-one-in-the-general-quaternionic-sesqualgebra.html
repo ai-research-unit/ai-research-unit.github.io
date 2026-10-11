@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Roots of Minus One, Zero and Plus One in the General Quaternionic Sesqualgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="square-roots-of-minus-one-zero-and-plus-one-in-the-general-quaternionic-sesqualgebra"><strong>Square Roots of Minus One, Zero and Plus One in the General Quaternionic Sesqualgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$, and a <strong>root</strong> of the value $\lambda$ in a product $\star$ is a nonzero element with $\tilde P\star\tilde P = \lambda e_0$, the definition being <em>Definitions for the Study of the 12 Algebraic Structures</em> §6. This article gives the roots of $-1$, $0$ and $+1$ in the <strong>general quaternionic sesquilinear product</strong></p>
+<p>$$
+\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*}
+$$</p>
+<p>of <em>Introduction to the General Quaternionic Sesqualgebra of Biquaternions</em>. The value $0$ returns the nilpotents of the block, which are classified in <em>Nilpotents of the General Quaternionic Sesqualgebra</em>; the value $-1$ gives the imaginary units and the value $+1$ the involutions, and the three are treated together because one computation produces all three, the central square.</p>
+<p>The point of the article is that the three classes are <strong>disjoint readings of one family</strong>. The root set of $\lambda$ is empty unless $\lambda$ is real, and for real $\lambda$ it is the family $\tilde P = c(\hat\mu+it)$, one complex scalar, one real direction and one real slope $t$, tied by the single equation $(t^2-1)\lvert c\rvert^2 = \lambda$, together with the central circle of the pure scalar roots when $\lambda>0$. The value $-1$ selects the slopes with $t^2<1$, the value $+1$ the slopes with $t^2>1$ and the central circle, and the value $0$ the two slopes $t = \pm1$. The comparison with the plain algebra, where the roots of $+1$ are the idempotent parameters $\tfrac12(e_0+\xi)$, is drawn at §<em>The Three Values and the Plain Product</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0 = 1, e_1, e_2, e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. An element is $\tilde Q = Q_0e_0+\mathbf Q$. The natural conjugation is $\tilde Q^{\natural} = Q_0-\mathbf Q$, the star is $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$, and $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$. The <strong>central square</strong> is $c(\tilde Q) = \sum_\mu Q_\mu^2$, with $c(\tilde Q)e_0 = \tilde Q\tilde Q^{\natural}$. The <strong>scalar part</strong> and the <strong>vector part</strong> of $\tilde Q$ are $Q_0$ and $\mathbf Q$. The product is $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second; juxtaposition is the general plain bilinear product. A <strong>root of $\lambda$</strong> is a nonzero $\tilde P$ with $\tilde P\star\tilde P = \lambda e_0$.</p>
+<h2 id="the-reduction-of-the-root-equation">The Reduction of the Root Equation</h2>
+<p><strong>Proposition (the central square of a root).</strong> For every $\tilde P$,</p>
+<p>$$
+\tilde P\star\tilde P = \bigl(\overline{\tilde P}\,\tilde P\bigr)^{\natural} ,
+$$</p>
+<p>so $\tilde P$ is a root of $\lambda$ if and only if $\overline{\tilde P}\tilde P = \lambda e_0$; in particular the equation $\tilde P\star\tilde P = \lambda e_0$ forces $\lambda\in\mathbb{R}$.</p>
+<p><strong>Proof.</strong> The identity is the one of <em>The Square of the General Quaternionic Sesquilinear Product and the Two Halves</em>, proved on the coordinates. Its scalar part is the <strong>Krein form</strong> $\mathrm{Sc}(\overline{\tilde P}\tilde P) = \sum_\mu \varepsilon_\mu\lvert P_\mu\rvert^2$ with $\varepsilon = (1,-1,-1,-1)$, a real number; the scalar part of the left side is therefore real, and the scalar part of $\lambda e_0$ is $\lambda$, whence $\lambda\in\mathbb{R}$.</p>
+<p><strong>Proposition (the coordinate system).</strong> Write $\tilde P = a+\mathbf u$ with $a = x_0+iy_0$, $x_0,y_0\in\mathbb{R}$, and $\mathbf u = \mathbf p+i\mathbf q$, $\mathbf p,\mathbf q\in\mathbb{R}^3$. Then $\tilde P\star\tilde P = \lambda e_0$ if and only if</p>
+<p>$$
+x_0^2+y_0^2-\lvert\mathbf p\rvert^2-\lvert\mathbf q\rvert^2 = \lambda , \qquad x_0\mathbf p+y_0\mathbf q = 0 , \qquad \mathbf p\times\mathbf q = 0 .
+$$</p>
+<p><strong>Proof.</strong> The plain product $\overline{\tilde P}\tilde P = (\overline{a}+\overline{\mathbf u})(a+\mathbf u)$ has scalar part $x_0^2+y_0^2-\lvert\mathbf p\rvert^2-\lvert\mathbf q\rvert^2$, real vector part $2(x_0\mathbf p+y_0\mathbf q)$ and imaginary vector part $2i\,\mathbf p\times\mathbf q$, as the computation of §<em>The Square-Zero Equation</em> of <em>Nilpotents of the General Quaternionic Sesqualgebra</em> records; setting the three parts equal to those of $\lambda e_0$ gives the system.</p>
+<h2 id="the-root-set-of-a-central-value">The Root Set of a Central Value</h2>
+<p><strong>Theorem (the roots of a central value).</strong> Let $\lambda\in\mathbb{C}$. The value $\lambda$ has a root in $\star$ if and only if $\lambda\in\mathbb{R}$, and then the nonzero roots are exactly</p>
+<p>$$
+\tilde P = c\bigl(\hat\mu + it\bigr) , \qquad c\in\mathbb{C}^{*} , \quad \hat\mu\in\mathbb{R}^3 , \quad \sum_{k=1}^{3}\hat\mu_k^2 = 1 , \quad t\in\mathbb{R} , \quad (t^2-1)\lvert c\rvert^2 = \lambda ,
+$$</p>
+<p>together with, when $\lambda>0$, the <strong>central circle</strong> of the scalar roots $\tilde P = ae_0$ with $\lvert a\rvert^2 = \lambda$.</p>
+<p><strong>Proof.</strong> Let $\tilde P = a+\mathbf u$ satisfy the coordinate system. The equation $\mathbf p\times\mathbf q = 0$ makes the real vectors $\mathbf p$ and $\mathbf q$ parallel. When $\mathbf u = 0$ the system reduces to $\lvert a\rvert^2 = \lambda$, so $\lambda>0$ and $a$ runs over the circle $\lvert a\rvert^2 = \lambda$; the value $\lambda = 0$ gives $a = 0$, which is not a root because a root is nonzero. When $\mathbf u \neq 0$ one writes $\mathbf u = c\hat\mu$ with $c\in\mathbb{C}^{*}$ and $\hat\mu$ a real unit vector, and the equation $x_0\mathbf p+y_0\mathbf q = 0$ becomes $\operatorname{Re}(\overline{a}c) = 0$; when $a \neq 0$ this says $c = ita$ with $t\in\mathbb{R}$, and when $a = 0$ the same relation holds with the parameter $t = 0$, the first equation giving $\lvert c\rvert^2 = -\lambda$. Substituting $a = itc$ into the first equation gives $(t^2-1)\lvert c\rvert^2 = \lambda$, and the parametrization $a = itc$, $\mathbf u = c\hat\mu$ is $\tilde P = c(\hat\mu+it)$. The family is well parametrized: for $\lambda\neq0$ the modulus $\lvert c\rvert$ is determined by $t$ through the displayed equation, while the argument of $c$ and the direction $\hat\mu$ are free.</p>
+<p><strong>Corollary (the shape of the root set and its dimension).</strong> For $\lambda\neq0$ the root set is a real four-dimensional family, $t$ of one real parameter, the argument of $c$ of one and the direction $\hat\mu$ of two, with $\lvert c\rvert$ determined by $t$; for $\lambda>0$ it carries in addition the real one-dimensional central circle; and for $\lambda = 0$ the family is the square-zero set of <em>Nilpotents of the General Quaternionic Sesqualgebra</em>, of real dimension four.</p>
+<p><strong>Proof.</strong> The parameter count is the one stated, and at $\lambda = 0$ the equation $(t^2-1)\lvert c\rvert^2 = 0$ gives $t = \pm1$, so the family is $c(\hat\mu\pm i)$, the square-zero set of the cited article.</p>
+<h2 id="the-three-values">The Three Values</h2>
+<p><strong>Theorem (the roots of $-1$).</strong> The roots of $-1$ in $\star$ are exactly</p>
+<p>$$
+\tilde P = c\bigl(\hat\mu + it\bigr) , \qquad c\in\mathbb{C}^{*} , \quad \lvert t\rvert<1 , \quad \lvert c\rvert^2 = \frac{1}{1-t^2} , \qquad \lvert\hat\mu\rvert = 1 ,
+$$</p>
+<p>a real four-dimensional family; the three basis vectors $e_1$, $e_2$, $e_3$ are roots, and no root of $-1$ is a pure scalar.</p>
+<p><strong>Proof.</strong> The value is negative, so the central circle is absent and $(t^2-1)\lvert c\rvert^2 = -1$ forces $t^2<1$ and $\lvert c\rvert^2 = 1/(1-t^2)$. The element $e_k = 1\cdot(\hat\mu+it)$ with $\hat\mu = e_k$, $t = 0$ has $\lvert c\rvert^2 = 1$ and $(t^2-1)\lvert c\rvert^2 = -1$, so it is a root; the same computation shows $\lvert t\rvert<1$, so the scalar part $itc$ is not the whole element and the roots are not scalars.</p>
+<p><strong>Theorem (the roots of $0$).</strong> The roots of $0$ in $\star$ are exactly the square-zero elements $c(\hat\mu\pm i)$, $c\in\mathbb{C}^{*}$, $\lvert\hat\mu\rvert = 1$; they are the nilpotents of <em>Nilpotents of the General Quaternionic Sesqualgebra</em>, they form a real four-dimensional family, and every one of them is a zero divisor.</p>
+<p><strong>Proof.</strong> Set $\lambda = 0$ in the theorem of §<em>The Root Set of a Central Value</em>, and quote the classification of the square-zero elements.</p>
+<p><strong>Theorem (the roots of $+1$).</strong> The roots of $+1$ in $\star$ are exactly the central circle $\lvert a\rvert^2 = 1$ together with the family</p>
+<p>$$
+\tilde P = c\bigl(\hat\mu + it\bigr) , \qquad c\in\mathbb{C}^{*} , \quad \lvert t\rvert>1 , \quad \lvert c\rvert^2 = \frac{1}{t^2-1} , \qquad \lvert\hat\mu\rvert = 1 ,
+$$</p>
+<p>a real four-dimensional family beside the circle; the elements $e_0$ and $i$ are roots, and no root of $+1$ is square-zero.</p>
+<p><strong>Proof.</strong> The value is positive, so the central circle is present and is read off the case $\mathbf u = 0$; the family is $(t^2-1)\lvert c\rvert^2 = 1$, with $t^2>1$. The elements $e_0$ and $i$ are the scalar roots of modulus one. A square-zero element would give $\lambda = 0$, so it is not a root of $+1$.</p>
+<h2 id="the-units-and-the-zero-divisors-among-the-roots">The Units and the Zero Divisors among the Roots</h2>
+<p><strong>Theorem (the interleaving).</strong> Let $\tilde P$ be a root of the real value $\lambda$. Then</p>
+<p>$$
+c(\tilde P) = c^2\,(1-t^2)
+$$</p>
+<p>in the parametrization $\tilde P = c(\hat\mu+it)$, and for the scalar roots $c(ae_0) = a^2$. Consequently a root of $-1$ or of $+1$ is a <strong>unit of the plain algebra</strong>, $c(\tilde P)\neq0$, while a root of $0$ is a zero divisor, $c(\tilde P) = 0$.</p>
+<p><strong>Proof.</strong> The central square of $c(\hat\mu+it)$ is $c^2$ times the sum of the squares of the four coordinates of $\hat\mu+it$, which is $\sum_k\hat\mu_k^2 + (it)^2 = 1-t^2$; for the scalar root it is $a^2$. The criterion of invertibility of the plain algebra is $c\neq0$ (<em>Norm and Invertibility in the General Quaternionic Sesqualgebra</em>), so a root of $-1$ or of $+1$ is a unit of the plain algebra and a root of $0$ is a zero divisor. On the family the value $\lambda = (t^2-1)\lvert c\rvert^2$ has the sign of the real factor $t^2-1$, negative on $\lvert t\rvert<1$ and positive on $\lvert t\rvert>1$, and it vanishes at $t = \pm1$; the scalar circle carries the positive values.</p>
+<p>So the three classes are read from one scalar: the roots of $-1$ and of $+1$ are units of the plain algebra, and the roots of $0$ are the zero divisors, in the sharp form of the interleaving of <em>The Square-Zero Elements of the Four General Products</em>.</p>
+<h2 id="the-three-values-and-the-plain-product">The Three Values and the Plain Product</h2>
+<p>The plain algebra reads the three values as the imaginary units, the involutions and the nilpotent cone: the roots of $-1$ are the elements with $\xi^2 = -e_0$, a family of complex dimension two, the roots of $+1$ the involutions with $\xi^2 = e_0$, and the idempotents are the roots of $+1$ halved, $\tfrac12(e_0+\xi)$ (<em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em>, <em>Idempotents of the General Plain Algebra</em>). The GQS keeps the names and changes the sets. The roots of $-1$ here are not the pure isotropic family of the plain product; the roots of $+1$ here are <strong>not</strong> the idempotent parameters of $\star$, because the idempotents of the block are the family $-\tfrac12e_0+\mu$ with $\lvert\mu\rvert^2 = \tfrac34$ (<em>Idempotents of the General Quaternionic Sesqualgebra</em>), while a root of $+1$ satisfies $\tilde P\star\tilde P = e_0$. The roots of $0$ are the square-zero elements, and in the plain product they are the pure isotropic cone; the block moves them to the non-pure family. The roots of $+1$ and the idempotents of the block meet at $e_0$ alone: an element that is both satisfies $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ and $\tilde\Pi\star\tilde\Pi = e_0$, so $\tilde\Pi = e_0$, and $e_0$ is an idempotent and a root of $+1$; the element $0$ is an idempotent of the block but it is excluded from the roots, which are nonzero by definition. The three values therefore name three classes of the block that are <strong>not</strong> the plain classes of the same name, and the comparison is the one of <em>The Square Roots of a Central Value in the Four General Products</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A root of the central value $\lambda$ in the general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ is a nonzero element with $\tilde P\star\tilde P = \lambda e_0$, and the square reduces to $\tilde P\star\tilde P = (\overline{\tilde P}\tilde P)^{\natural}$. The scalar part of the square is the Krein form $\sum_\mu\varepsilon_\mu\lvert P_\mu\rvert^2$ with $\varepsilon = (1,-1,-1,-1)$, so no root exists unless $\lambda$ is real.</p>
+<p>For real $\lambda$ the roots are the family $\tilde P = c(\hat\mu+it)$ with $(t^2-1)\lvert c\rvert^2 = \lambda$, of real dimension four, together with the central circle $\lvert a\rvert^2 = \lambda$ when $\lambda>0$. The value $-1$ takes the slopes $\lvert t\rvert<1$, with $\lvert c\rvert^2 = 1/(1-t^2)$, and contains $e_1,e_2,e_3$; the value $0$ takes the slopes $t = \pm1$ and is the square-zero family $c(\hat\mu\pm i)$; the value $+1$ takes the slopes $\lvert t\rvert>1$, with $\lvert c\rvert^2 = 1/(t^2-1)$, beside the central circle, and contains $e_0$ and $i$. The central square of a root is $c(\tilde P) = c^2(1-t^2)$, so the roots of $-1$ and of $+1$ are units of the plain algebra and the roots of $0$ are zero divisors, and the three classes are not the plain classes of the same name.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$</td>
+<td>the general quaternionic sesquilinear product</td>
+</tr>
+<tr>
+<td>root of $\lambda$</td>
+<td>a nonzero $\tilde P$ with $\tilde P\star\tilde P = \lambda e_0$</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde P = (\overline{\tilde P}\tilde P)^{\natural}$</td>
+<td>the reduction of the square</td>
+</tr>
+<tr>
+<td>$\sum_\mu\varepsilon_\mu\lvert P_\mu\rvert^2$, $\varepsilon = (1,-1,-1,-1)$</td>
+<td>the Krein form, the scalar part of $\overline{\tilde P}\tilde P$</td>
+</tr>
+<tr>
+<td>$c(\hat\mu+it)$, $(t^2-1)\lvert c\rvert^2 = \lambda$</td>
+<td>the root family, $\lvert\hat\mu\rvert = 1$</td>
+</tr>
+<tr>
+<td>central circle, $\lvert a\rvert^2 = \lambda$</td>
+<td>the scalar roots, present only for $\lambda>0$</td>
+</tr>
+<tr>
+<td>$c(\tilde P) = c^2(1-t^2)$</td>
+<td>the central square of a root</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), for the root of a central value and the three values of the biquaternion algebra.</li>
+<li><em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em> (<code>articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md</code>), for the plain reading of the three values, against which this article's sets are compared.</li>
+<li><em>Nilpotents of the General Quaternionic Sesqualgebra</em> (<code>articles_maths/nilpotents-of-the-general-quaternionic-sesqualgebra.md</code>), for the roots of $0$, the square-zero family $c(\hat\mu+i)$.</li>
+<li><em>The Square Roots of a Central Value in the Four General Products</em> (<code>articles_maths/the-square-roots-of-a-central-value-in-the-four-general-products.md</code>), for the four-way comparison of the root sets.</li>
+<li><em>Idempotents of the General Quaternionic Sesqualgebra</em> (<code>articles_maths/idempotents-of-the-general-quaternionic-sesqualgebra.md</code>), for the idempotent family $-\tfrac12e_0+\mu$, which is not the halved root family of $+1$.</li>
+<li><em>The Square of the General Quaternionic Sesquilinear Product and the Two Halves</em> (<code>articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md</code>), for the identity $\tilde P\star\tilde P = (\overline{\tilde P}\tilde P)^{\natural}$ and the Krein scalar part.</li>
+<li><em>Norm and Invertibility in the General Quaternionic Sesqualgebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-quaternionic-sesqualgebra.md</code>), for the criterion of invertibility of the plain algebra used in §<em>The Units and the Zero Divisors among the Roots</em>.</li>
+<li><em>Conventions in Mathematics</em> (<code>articles_maths/conventions-in-mathematics.md</code>), for the notation and the article format.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

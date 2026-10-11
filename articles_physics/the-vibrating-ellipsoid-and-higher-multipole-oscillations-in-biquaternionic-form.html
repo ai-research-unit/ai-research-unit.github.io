@@ -76,7 +76,7 @@ $$</p>
 <p>$$
 \mathbf{v} \;\longmapsto\; \mathbf{v}' = \tilde{\Lambda}\,\mathbf{v}\,\tilde{\Lambda}^{\natural} .
 $$</p>
-<p>The action has been verified against the standard rotation matrix $R(\theta,\hat{\mathbf{n}})$ on thirty random axis–angle pairs: the image of a vector equals $R\mathbf{v}$ to $10^{-10}$, and the norm $\mathbf{v}\cdot\mathbf{v}$ is preserved to machine precision. The composition law is</p>
+<p>The composition law is</p>
 <p>$$
 \tilde{\Lambda}_2\tilde{\Lambda}_1 \;\longleftrightarrow\; R_2R_1 ,
 $$</p>
@@ -159,7 +159,7 @@ $$</p>
 Q_{ij} = q_p\left(3d_ia_j + 3d_ja_i - 2(\mathbf{d}\cdot\mathbf{a})\,\delta_{ij}\right),
 $$</p>
 <p>verified for random $\mathbf{a}, \mathbf{d}$ with residuals below $10^{-13}$ and vanishing trace. The quadrupole is thus built from <strong>products of two vectors</strong>, $d_i a_j + d_j a_i$; the symmetric traceless part of such a product is exactly what the quaternion product of two vectors discards. Each individual dipole is a vector and an algebra element, and the quadrupole is a bilinear object over that same vector part, living in $\operatorname{Sym}^2_0(D^{(1)})\cong D^{(2)}$ rather than in $\mathbb{B}$. The two-dipole picture is the physical face of the algebraic statement of the preceding article: the algebra can hold each of the two dipoles separately, and it cannot hold the quadrupole that their product forms. Whether the pole strength $q_p$ is a charge, as in the electromagnetic setting of the preceding article, or a mass, as in the gravitational setting used here, is immaterial to the decomposition, since only the kernel enters it.</p>
-<h2 id="the-rotating-ellipsoid-and-the-math183-oscillation">The Rotating Ellipsoid and the $2\Omega$ Oscillation</h2>
+<h2 id="the-rotating-ellipsoid-and-the-math179-oscillation">The Rotating Ellipsoid and the $2\Omega$ Oscillation</h2>
 <h3 id="body-frame-and-lab-frame">Body Frame and Lab Frame</h3>
 <p>A rotating non-axisymmetric body is a second and distinct source of an oscillating quadrupole. Let the body frame carry the constant quadrupole $Q^{(b)} = \mathrm{diag}(\lambda_1, \lambda_2, \lambda_3)$ with $\lambda_1+\lambda_2+\lambda_3 = 0$, and let the body rotate about the $e_3$ axis with constant angular speed $\Omega$. The lab-frame moment is the rotor conjugate,</p>
 <p>$$
@@ -167,7 +167,7 @@ Q^{(lab)}_{ij}(t) = R_{ik}(t)\,R_{jl}(t)\,Q^{(b)}_{kl},
 \qquad
 \tilde{\Lambda}(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\,e_3 .
 $$</p>
-<h3 id="the-math189-frequency">The $2\Omega$ Frequency</h3>
+<h3 id="the-math185-frequency">The $2\Omega$ Frequency</h3>
 <p>Carrying out the rotation about $e_3$ gives, with the rotation matrix $R = R_3(\Omega t)$ and $Q^{(lab)} = RQ^{(b)}R^{\mathsf{T}}$,</p>
 <p>$$
 \begin{aligned}
@@ -180,7 +180,7 @@ Q^{(lab)}_{xy}(t) &= (\lambda_1-\lambda_2)\sin(\Omega t)\cos(\Omega t)
 Q^{(lab)}_{zz}(t) &= \lambda_3 , \qquad Q^{(lab)}_{xz} = Q^{(lab)}_{yz} = 0 .
 \end{aligned}
 $$</p>
-<p>Every component is a constant plus a term at $2\Omega$. The identities have been verified at four times to machine precision. The moment therefore oscillates at <strong>twice</strong> the rotation frequency,</p>
+<p>Every component is a constant plus a term at $2\Omega$. The moment therefore oscillates at <strong>twice</strong> the rotation frequency,</p>
 <p>$$
 \omega_{quad} = 2\Omega ,
 $$</p>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Realification of the Antisymmetric Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-realification-of-the-antisymmetric-quaternionic-algebra"><strong>The Realification of the Antisymmetric Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Antisymmetric Quaternionic Algebra is one of the twelve algebraic structures that the biquaternion space of $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries, the structure $\mathrm{AQA}$ of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. Its product, the antisymmetric quaternionic bilinear product, is
+$$
+\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q,
+$$
+and this article owns it read over $\mathbb{R}$: the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$.</p>
+<p>The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the two rules for forms, the table of the four effects and the dictionary of the statements about the ring and of the statements about the scalars are <em>The Realification and the Effect of the Change of Scalars</em>; This article gives what is specific to this product: its real bilinear reading and the properties that do not move, the law of its second slot over the centre, the realification of the two forms the block carries, its real operators, and the features that only the real reading shows.</p>
+<h2 id="the-product-read-over-math7">The Product Read over $\mathbb{R}$</h2>
+<p>The product is antisymmetric quaternionic bilinear over $\mathbb{C}$, hence $\mathbb{R}$-bilinear, by §<em>The Effect on the Twelve Algebraic Structures</em> of <em>The Realification and the Effect of the Change of Scalars</em>. It is therefore an <strong>$\mathbb{R}$-algebra</strong> on $\mathbb{R}^8$ in the broad sense, the sense of a module with a bilinear multiplication. In that algebra alternation holds, the Jacobi identity fails, there is no unit, and the scalar part vanishes.</p>
+<p>Every ring-theoretic property of the product is the same in the two readings, by the dictionary of the same article, §<em>The Four Effects on a Structure</em>: a condition written with the addition, the product, $e_0$ and quantification over the elements is a statement about the ring, and the change of scalars leaves the additive group, the product and the identity untouched. The vanishing of the square, the alternation, the absence of a unit on either side, the vanishing of the scalar part and the failure of the Jacobi identity are of that kind, and the witness of the failure is the same in the two readings: the cyclic sum of the block is a polynomial identity with integer coefficients in the structure constants, so the triple $(e_0,e_1,e_2)$ of the complex basis has the cyclic sum $-e_3$ over $\mathbb{R}$ as well (<em>Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions</em>, §<em>The Jacobi Identity</em>).</p>
+<p>What the real reading adds is the real shape of the objects the product carries. The image of the product is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three and <strong>real dimension six</strong>, and the centre $\mathbb{C}_{\mathbb{B}}$, of real dimension two, meets it at the origin alone: the two dimensions are the two readings of one subspace. The features that the real reading brings and the complex reading does not are gathered in §<em>What Is Specific to the Real Reading</em>.</p>
+<h2 id="the-second-slot-and-the-centre">The Second Slot and the Centre</h2>
+<p>Over $\mathbb{C}$ the product is $\mathbb{C}$-bilinear, so it is an <strong>algebra</strong> and not a sesqualgebra, and its second slot is $\mathbb{C}$-linear. Read over $\mathbb{R}$, the product remains $\mathbb{R}$-bilinear and its second slot is $\mathbb{C}_{\mathbb{B}}$-linear: by §<em>The Realification of a Linear Map</em> of <em>The Realification and the Effect of the Change of Scalars</em>, the left multiplication commutes with the complex structure,
+$$
+L_{\tilde X}J=JL_{\tilde X},\qquad J=L_i ,
+$$
+which is the criterion for $\mathbb{C}_{\mathbb{B}}$-linearity. The passage therefore <strong>does not change the kind</strong> of this product: it is an algebra over $\mathbb{C}$ and an algebra over $\mathbb{R}$, with the same linearity of the second slot once the centre is named as the field.</p>
+<p>In the real basis the criterion takes a block form. The matrix of $L_{\tilde X}$ in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ is
+$$
+\begin{pmatrix} A & -B \\ B & A \end{pmatrix},
+$$
+the matrix of a $\mathbb{C}$-linear map in a real basis adapted to a complex structure, where $A+iB$ is its matrix in the complex basis $e_0,e_1,e_2,e_3$; the shape commutes with $J=\begin{pmatrix}0&-\mathrm{I}\\ \mathrm{I}&0\end{pmatrix}$. The matrix of the block is displayed in this form in <em>The Adjoint Operators of the Antisymmetric Quaternionic Algebra</em>, §<em>The Left Multiplication Operator</em>.</p>
+<h2 id="the-forms-the-block-carries-over-math35">The Forms the Block Carries over $\mathbb{R}$</h2>
+<p>The form of an operation is its scalar part (<em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>), and the scalar part of the value is zero here, every value of the block being a pure vector; the table of <em>The 12 Products of the Biquaternion Complex Space</em> carries the entry $[0]$ in the scalar-part column of its row. The product therefore carries the <strong>zero form</strong>, counted as no form rather than as a fifth, and there is nothing for the realification of a form to act on; the coefficient form of the block, the bilinear form that would read that scalar part, is the zero form (<em>The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</em>, §<em>The Trace Form Vanishes</em>).</p>
+<p>The block does carry two two-argument objects of its own, and they are read off the invariance condition and the operators in <em>The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</em>: the invariant form
+$$
+\varphi(\tilde P,\tilde Q)=P_0Q_0 ,
+$$
+the unique $\mathbb{C}$-bilinear form invariant under the block, of rank one over $\mathbb{C}$ and of radical the vector subspace; and the operator trace form
+$$
+K(\tilde A,\tilde B)=\operatorname{Tr}\bigl(L_{\tilde A}L_{\tilde B}\bigr)=3A_0B_0-2\sum_{k=1}^{3}A_kB_k ,
+$$
+non-degenerate over $\mathbb{C}$ and <strong>not</strong> invariant. Both are symmetric $\mathbb{C}$-bilinear, and a symmetric bilinear form over $\mathbb{C}$ is classified by its rank alone, so each realifies by the first of the two rules of §<em>The Realification of a Form</em> of <em>The Realification and the Effect of the Change of Scalars</em>: the real part and the imaginary part of the form are two real symmetric bilinear forms, the realified Gram matrix consists of two opposite blocks $\operatorname{diag}(D,-D)$, with $D$ the Gram matrix of the complex form, and a complex form of rank $r$ realifies to the <strong>split</strong> signature $(r,r)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>complex reading</th>
+<th>realified signature</th>
+<th>radical over $\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varphi$</td>
+<td>symmetric $\mathbb{C}$-bilinear, complex rank $1$, radical the vector subspace</td>
+<td>$(1,1)$</td>
+<td>the realified vector subspace, real dimension $6$</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>symmetric $\mathbb{C}$-bilinear, complex rank $4$, radical $0$</td>
+<td>$(4,4)$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>On the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ the realified Gram matrices are
+$$
+\operatorname{diag}(1,0,0,0,-1,0,0,0),
+\qquad
+\operatorname{diag}(3,-2,-2,-2,-3,2,2,2).
+$$
+The first is the realification of the invariant form, whose entries are $1$ at $e_0$, $-1$ at $ie_0$ and zero elsewhere; the second is the realification of the operator trace form, non-degenerate, and it fails invariance exactly as $K$ does, at the triple $(e_0,e_1,e_1)$ with the value $-4$.</p>
+<p>The complex structure reverses both realifications,
+$$
+\Phi_{\mathbb{R}}(J\tilde P,J\tilde Q)=-\Phi_{\mathbb{R}}(\tilde P,\tilde Q),
+$$
+the sign of the bilinear slot, and the two Gram matrices above are the two opposite blocks $D$ and $-D$ of the same rule. The signatures are the split ones of the table, $(1,1)$ and $(4,4)$. Neither realified form is one of the four forms of <em>The Realification of the Four Forms</em>, which are the forms of the space and not of the block, and the failure of $\operatorname{Re}K$ is the same obstruction as the Jacobi failure.</p>
+<h2 id="the-real-operators">The Real Operators</h2>
+<p>The left and the right multiplications by an element are the maps
+$$
+L_{\tilde X}:\tilde Y\mapsto\tilde X\diamond\tilde Y,\qquad R_{\tilde X}:\tilde Y\mapsto\tilde Y\diamond\tilde X,
+$$
+and over $\mathbb{R}$ they are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$, by §<em>The Realification of a Linear Map</em> of <em>The Realification and the Effect of the Change of Scalars</em>. Because the second slot is $\mathbb{C}_{\mathbb{B}}$-linear, the left multiplication is $\mathbb{C}_{\mathbb{B}}$-linear as well, and its real trace is twice the real part of its complex trace; the complex trace of the block is $3X_0$, the sum of the three diagonal entries $X_0$ on the vector lines (<em>The Adjoint Operators of the Antisymmetric Quaternionic Algebra</em>, §<em>The Trace, the Rank and the Characteristic Polynomial</em>), so
+$$
+\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde X}\bigr)=2\operatorname{Re}\operatorname{Tr}_{\mathbb{C}}\bigl(L_{\tilde X}\bigr)=6\operatorname{Re}X_0 .
+$$
+The factor is six and not the eight of the general plain algebra, whose regular representation has the complex trace $4\,\mathrm{Sc}$ and the real trace $8\operatorname{Re}\mathrm{Sc}$: for this block the scalar line does not contribute to the trace, and the three vector lines contribute one $X_0$ each.</p>
+<p>The real rank of $L_{\tilde X}$ is twice its complex rank, and the complex rank is three for a general element, two on the isotropic cone $N(\tilde X)=X_0^2+X_1^2+X_2^2+X_3^2=0$ off the origin, and zero at the origin (<em>The Adjoint Operators of the Antisymmetric Quaternionic Algebra</em>, §<em>The Kernel and the Image</em>). The real rank is therefore six, four and zero, and the real annihilator of the operator grows from real dimension two to real dimension four as the element crosses into the cone.</p>
+<p>At the element $e_0$ the operator is the element-level specificity of the block read over $\mathbb{R}$: the left multiplication is the projection onto the realification of the vector subspace,
+$$
+L_{e_0}\tilde X=\mathbf X,\qquad L_{e_0}^2=L_{e_0},\qquad R_{e_0}=-L_{e_0},
+$$
+it has real rank six, its image is the realification of $\mathrm{Vect}(\mathbb{B})$ and its kernel is the realification of the centre, of real dimension two. The identity and its interpretation are <em>The Specificities of the Antisymmetric Quaternionic Algebra</em>. The block's own invariant form is too degenerate to determine the adjoint of a multiplication operator (<em>The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</em>, §<em>The Adjoint of the Operator with Respect to a Form</em>), and the operators of the plain algebra over $\mathbb{R}$, with the adjoints the four realified forms give them, belong to the real reading of the ring (§<em>What Is Specific to the Real Reading</em> of <em>The Realification of the General Plain Algebra</em>).</p>
+<h2 id="what-is-specific-to-the-real-reading">What Is Specific to the Real Reading</h2>
+<p>Four features appear in the real reading of the block and not in its complex reading.</p>
+<p><strong>The real subalgebras that are not complex subspaces.</strong> Over $\mathbb{C}$ a subalgebra of the block is a complex subspace, hence of even real dimension, and the complex reading sees only those. Over $\mathbb{R}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_0,e_1,e_2,e_3\}$, of real dimension four, is a subalgebra (<em>Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions</em>, §<em>The Quaternion Subspace</em>), and its image
+$$
+\mathbb{R}\{e_1,e_2,e_3\}=\bigl\{\tilde Q=\mathbf Q,\ \mathbf Q\ \text{with real coefficients}\bigr\}
+$$
+is a subalgebra as well, of real dimension three: on the vector subspace the operation is the negative of the cross product (<em>Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions</em>, §<em>The Vector Subspace</em>), so the value of two real pure vectors is a real pure vector again. Neither of the two is a complex subspace, the element $ie_1$ leaving both, and the three-dimensional one has no counterpart in the complex reading at all. Closedness is not automatic for a real subspace: $\mathbb{R}\{e_1,e_2\}$ is not a subalgebra, since $e_1\diamond e_2=-e_3$ leaves it; and the anti-quaternion, Hermitian and anti-Hermitian subspaces fail closure, each with its own smallest witness (<em>Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions</em>). The general statement is the subspace row of the table of the four effects: a real subspace closed under the product need not be closed under $J$, so the real reading has more subalgebras than the complex one (<em>The Realification and the Effect of the Change of Scalars</em>, §<em>The Four Effects on a Structure</em>).</p>
+<p><strong>The coincidence on the real part.</strong> On the real part of the space, the real span of $e_0,e_1,e_2,e_3$, exactly two pairs of the catalogue coincide, the antisymmetric plain product with the antisymmetric quaternionic sesquilinear product and the symmetric quaternionic product with the symmetric plain sesquilinear product, so ten operations are seen there. The block is not one of the coincident pairs: it remains distinct from each of the other eleven operations on the real part and on the whole real space.</p>
+<p><strong>The trace factor.</strong> The complex trace of a left multiplication is $3X_0$ and the real trace is $6\operatorname{Re}X_0$; the factor six is the doubling of the realification applied to the complex trace, and it is not the eight of the regular representation of the plain algebra, the scalar line contributing nothing to this trace. The complex reading shows the trace and hides its real factor; the real reading shows both.</p>
+<p><strong>The conjugate-linear automorphism.</strong> The coefficientwise conjugation $\bar{\cdot}$ is an automorphism of the block over $\mathbb{R}$: it is $\mathbb{R}$-linear, and the structure constants of the operation are real, so
+$$
+\overline{\tilde P\diamond\tilde Q}=\bar{\tilde P}\diamond\bar{\tilde Q} .
+$$
+It is conjugate-linear, so it is not an automorphism over $\mathbb{C}$, and composing it with the $\mathbb{C}$-linear automorphism group (<em>The Adjoint Operators of the Antisymmetric Quaternionic Algebra</em>, §<em>The Automorphism Group and the Structure Group</em>) gives the conjugate-linear coset $\bar{\cdot}\,\mathrm{Aut}_{\mathbb{C}}$ of the real automorphism group, which the complex reading does not see. The natural conjugation is not an automorphism of the block: at $(e_1,e_2)$ it gives ${}^{\natural}(e_1\diamond e_2)=e_3$ while ${}^{\natural}e_1\diamond{}^{\natural}e_2=-e_3$; the block reads its real automorphisms through the coefficientwise conjugation and not through the natural one.</p>
+<h2 id="summary">Summary</h2>
+<p>The Antisymmetric Quaternionic Algebra read over $\mathbb{R}$ is the same product on the same elements, an $\mathbb{R}$-algebra on $\mathbb{R}^8$ in which alternation holds, the square vanishes, there is no unit and the Jacobi identity fails with the witness $(e_0,e_1,e_2)$ of the complex reading; its second slot is $\mathbb{C}_{\mathbb{B}}$-linear, and its left multiplications have the block shape of a $\mathbb{C}$-linear map with real trace $6\operatorname{Re}X_0$. The product carries no form, its scalar part vanishing; the two forms the block does carry, the invariant form $\varphi$ of rank one and the operator trace form $K$, realify to the real symmetric bilinear forms of rank two and signature $(1,1)$, of radical the realified vector subspace, and of signature $(4,4)$ with zero radical, both reversed by the complex structure. At $e_0$ the left multiplication is the projection onto the realified vector subspace, of real rank six and of kernel the realification of the centre. In the real reading the block has subalgebras that are not complex subspaces, among them the real pure vectors $\mathbb{R}\{e_1,e_2,e_3\}$ of real dimension three; the real part of the space sees ten of the twelve operations, the block not being one of the two coincident pairs; and the coefficientwise conjugation is an automorphism of the block over $\mathbb{R}$ and not over $\mathbb{C}$, so the real automorphism group carries the conjugate-linear coset. The passage changes nothing of the product itself; it changes the field, the dimension and the linear structure, and for this product it adds the real reading of its two forms and of its operators.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)$</td>
+<td>the product of the Antisymmetric Quaternionic Algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^8$</td>
+<td>the realification of $\mathbb{B}$, the eight real basis elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$</td>
+<td>the centre, the field of scalars $\mathbb{C}$ carried by the ring</td>
+</tr>
+<tr>
+<td>$J=L_i$</td>
+<td>the complex structure, multiplication by $i$, of square $-1$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_0,e_1,e_2,e_3\}$</td>
+<td>the quaternion subspace, a subalgebra of real dimension four</td>
+</tr>
+<tr>
+<td>$\varphi(\tilde P,\tilde Q)=P_0Q_0$</td>
+<td>the invariant form of the block, of rank one, of realified signature $(1,1)$</td>
+</tr>
+<tr>
+<td>$K(\tilde A,\tilde B)=\operatorname{Tr}(L_{\tilde A}L_{\tilde B})=3A_0B_0-2\sum_kA_kB_k$</td>
+<td>the operator trace form, non-degenerate, of realified signature $(4,4)$</td>
+</tr>
+<tr>
+<td>$L_{\tilde X}$, $R_{\tilde X}$</td>
+<td>the left and the right multiplications, $\mathbb{R}$-linear on $\mathbb{R}^8$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}_{\mathbb{R}}(L_{\tilde X})=6\operatorname{Re}X_0$</td>
+<td>the real trace, twice the real part of the complex trace $3X_0$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>the coefficientwise conjugation, an $\mathbb{R}$-algebra automorphism of the block and not a $\mathbb{C}$-algebra one</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Realification and the Effect of the Change of Scalars</em> (<code>articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md</code>), for the general construction, the two rules of the realification of a form and the table of the four effects.</li>
+<li><em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the twelve structures and the families of the table of the twelve, of which the block of this article is the entry $\mathrm{AQA}$.</li>
+<li><em>The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</em> (<code>articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.md</code>), for the form $\varphi$, the vanishing of the coefficient form and the operator trace form $K$, whose realifications this article reads.</li>
+<li><em>Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/remarkable-subspaces-under-the-antisymmetric-quaternionic-algebra-of-biquaternions.md</code>), for the closure of the centre, the vector subspace and the quaternion subspace, the failure of closure of the other three, and the subspace that is the image of the whole operation.</li>
+<li><em>The Adjoint Operators of the Antisymmetric Quaternionic Algebra</em> (<code>articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md</code>), for the matrix, the trace $3X_0$, the rank and the kernel of the left multiplication, cited here in the real basis.</li>
+<li><em>The Realification of the Four Forms</em> (<code>articles_maths/the-realification-of-the-four-forms.md</code>), for the four Gram matrices and the four signatures of the realified forms of the space, against which the two realified forms of this block are placed.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

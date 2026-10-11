@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Specificities of the Symmetric Quaternionic Sesqualgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-specificities-of-the-symmetric-quaternionic-sesqualgebra"><strong>The Specificities of the Symmetric Quaternionic Sesqualgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article isolates the block among the twelve structures of the biquaternion complex space by a single
+law, the law of being <strong>$K$-Hermitian</strong>, and it runs the eleven comparisons. The block is the symmetric
+quaternionic sesquilinear product
+$\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ of
+<em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em>; the twelve structures and their
+four general products are the subject of <em>The 12 Products of the Biquaternion Complex Space</em>, and the model
+of the method is <em>The Specificities of the General Plain Algebra</em>, which isolates the plain product by left
+alternativity and runs the same eleven comparisons. The twin articles are
+<em>The Specificities of the General Quaternionic Algebra</em> and <em>The Specificities of the Symmetric Quaternionic
+Algebra</em>.</p>
+<p>The law has two clauses, and each is an identity in the product. The first is the <strong>conjugate-symmetry</strong>
+$\tilde P\star\tilde Q=\overline{\tilde Q\star\tilde P}$, which is to say that the product is fixed by the
+adapted exchange of <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>; the second is that
+the <strong>scalar part is the Krein form</strong>, $\mathrm{Sc}(\tilde P\star\tilde Q)=K(\tilde P,\tilde Q)$, the form
+of <em>Introduction to the General Quaternionic Sesqualgebra of Biquaternions</em> and <em>The Krein Gram Matrix and
+the Restrictions of the Form</em>. The theorem of the article is that among the twelve structures the block is
+the only one satisfying both clauses, each clause alone being satisfied by another structure: the plain
+sesquilinear symmetric part satisfies the first and not the second, and the general quaternionic sesquilinear
+product satisfies the second and not the first. The law is therefore sharp, and the two structures that
+border it are named and used as the witnesses of the sharpness.</p>
+<p>The product is <em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em>; its diagonal is
+<em>The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra</em>; its element theory
+is <em>Norm and Invertibility in the Symmetric Quaternionic Sesqualgebra</em>, <em>Zero Divisors of the Symmetric
+Quaternionic Sesqualgebra</em>, <em>Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic
+Sesqualgebra</em>, <em>Square Roots of a General Element in the Symmetric Quaternionic Sesqualgebra</em>,
+<em>Idempotents of the Symmetric Quaternionic Sesqualgebra</em> and <em>Nilpotents of the Symmetric Quaternionic
+Sesqualgebra</em>; and its operators are <em>The Multiplication Operators of the Symmetric Quaternionic
+Sesqualgebra</em>, where the $K$-adjointness that the law delivers is computed.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
+$e_k^2=-e_0$ and $e_1e_2=e_3$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
+scalar imaginary $i$; $\mathbf Q=\sum_kQ_ke_k$; $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$; ${}^{\natural}$ negates
+$e_1,e_2,e_3$ and fixes the coefficients, $\bar{\cdot}$ conjugates the coefficients, and
+${}^{*}={}^{\natural}\circ\bar{\cdot}$; $\mathrm{Sc}(\tilde X)=X_0$ is the scalar part;
+$\varepsilon=(1,-1,-1,-1)$; and</p>
+<p>$$
+K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}
+=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})
+$$</p>
+<p>is the Krein form. The twelve structures are the four general products
+$\mathrm{GPA},\mathrm{GQA},\mathrm{GPS},\mathrm{GQS}$, their four symmetric parts
+$\mathrm{SPA},\mathrm{SQA},\mathrm{SPS},\mathrm{SQS}$ and their four antisymmetric parts
+$\mathrm{APA},\mathrm{AQA},\mathrm{APS},\mathrm{AQS}$, with the two first rows bilinear and the two last
+rows sesquilinear, as in <em>The 12 Products of the Biquaternion Complex Space</em>.
+Throughout, the block is $\mathrm{SQS}$, and the products of the twelve are written with their three-letter
+names.</p>
+<h2 id="the-law-being-math25-hermitian">The Law: Being $K$-Hermitian</h2>
+<p><strong>Definition ($K$-Hermitian product).</strong> A product $\circ$ on $\mathbb{B}$ is <strong>$K$-Hermitian</strong> when the two
+identities</p>
+<p>$$
+\text{(C1)}\quad \tilde P\circ\tilde Q=\overline{\tilde Q\circ\tilde P},
+\qquad
+\text{(C2)}\quad \mathrm{Sc}\bigl(\tilde P\circ\tilde Q\bigr)=K(\tilde P,\tilde Q)
+$$</p>
+<p>hold for all $\tilde P,\tilde Q\in\mathbb{B}$. The first is the <strong>conjugate-symmetry</strong> of the product, the
+second is the <strong>scalar-part identity</strong>.</p>
+<p><strong>Remark (the two clauses read one at a time).</strong> The clause (C1) says that the product is fixed by the
+adapted exchange $f\mapsto\overline{f\circ E}$, the transposition composed with the coefficientwise
+conjugation, which is the exchange that keeps the sesqualgebra class
+(<em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>). The clause (C2) says that the scalar
+part of the product is the form $K$ and not another of the four forms of the row, the complex bilinear form,
+the plain Hermitian form or the plain bilinear form. Each clause is an identity in $\tilde P,\tilde Q$ and
+each is invariant under the change of the product, so they can be tested one structure at a time.</p>
+<p><strong>Theorem (the block is $K$-Hermitian).</strong> The block satisfies (C1) and (C2).</p>
+<p><em>Proof.</em> The scalar–vector form of <em>Introduction to the Symmetric Quaternionic Sesqualgebra of
+Biquaternions</em> is</p>
+<p>$$
+\tilde P\star\tilde Q=\bigl[P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P;
+$$</p>
+<p>the bracket is $K(\tilde P,\tilde Q)$ and is the scalar part, which is (C2). For (C1), conjugate the product with the arguments exchanged and use that the two
+conjugations are anti-automorphisms of the plain product: the scalar bracket is fixed because $K$ is
+Hermitian, and the vector part $-Q_0\overline{\mathbf P}-\overline{Q_0}\mathbf P$ is the same as the vector
+part of $\tilde P\star\tilde Q$. So $\overline{\tilde Q\star\tilde P}=\tilde P\star\tilde Q$.</p>
+<h2 id="the-criterion">The Criterion</h2>
+<p><strong>Theorem (the specificity).</strong> Among the twelve structures of the biquaternion complex space, the block
+$\mathrm{SQS}$ is the only $K$-Hermitian product.</p>
+<p><em>Proof.</em> The block is $K$-Hermitian by the theorem of §<em>The Law</em>, so it remains to test the eleven others,
+which is done one structure at a time in §<em>The Eleven Comparisons</em>; each fails at least one of the two
+clauses, and the failure is exhibited by a named pair.</p>
+<p>The remainder of the article is the comparison. The verdict is collected in the table of §<em>The Table of the
+Twelve</em>.</p>
+<h2 id="the-eleven-comparisons">The Eleven Comparisons</h2>
+<p>Every comparison is a computation with the multiplication table
+$e_0\circ e_0=e_0$, $e_0\circ e_k=e_k\circ e_0=-e_k$, $e_k\circ e_k=-e_0$ and
+$e_j\circ e_k=0$ for distinct $j,k\in\{1,2,3\}$ of the block,
+together with the analogous tables of the eleven other structures read from <em>The 12 Products of the
+Biquaternion Complex Space</em>; only the values needed for the failure are recorded. Three witnesses suffice
+throughout: the pair $(ie_1,e_1)$, where a bilinear product reverses the imaginary unit and the two sides of
+(C1) are $\mp ie_0$; the pair $(e_1,e_2)$, where the two sides of (C1) are the opposite signs of $e_3$; and
+the elements $ie_1$ and $e_1$, where the bilinear and the definite forms differ from $K$.</p>
+<p><strong>The four general products.</strong></p>
+<ul>
+<li>$\mathrm{GPA}(\tilde P,\tilde Q)=\tilde P\tilde Q$: (C1) fails at $(ie_1,e_1)$, where
+  $\mathrm{GPA}(ie_1,e_1)=-ie_0$ while $\overline{\mathrm{GPA}(e_1,ie_1)}=ie_0$; (C2) fails, since
+  $\mathrm{GPA}$ is bilinear, at $ie_1$, where $\mathrm{Sc}(\mathrm{GPA}(ie_1,ie_1))=1$ while
+  $K(ie_1,ie_1)=-1$.</li>
+<li>$\mathrm{GQA}(\tilde P,\tilde Q)=\tilde P^{\natural}\tilde Q$: (C1) fails at $(ie_1,e_1)$, the two sides
+  being $ie_0$ and $-ie_0$; (C2) fails at $e_1$, where $\mathrm{Sc}(\mathrm{GQA}(e_1,e_1))=1$ while
+  $K(e_1,e_1)=-1$.</li>
+<li>$\mathrm{GPS}(\tilde P,\tilde Q)=\tilde P\tilde Q^{*}$: (C1) fails at $(e_1,e_2)$, the two sides being
+  $-e_3$ and $e_3$; (C2) fails at $e_1$, where $\mathrm{Sc}(\mathrm{GPS}(e_1,e_1))=1\neq-1$.</li>
+<li>$\mathrm{GQS}(\tilde P,\tilde Q)=\tilde P^{\natural}\tilde Q^{*}$: (C1) fails at $(e_1,e_2)$, the two
+  sides being $e_3$ and $-e_3$; (C2) holds, since $\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=K(\tilde P,\tilde Q)$ by the multiplication table.</li>
+</ul>
+<p><strong>The four symmetric parts.</strong></p>
+<ul>
+<li>$\mathrm{SPA}(\tilde P,\tilde Q)=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$: (C1) fails at $(ie_1,e_1)$,
+  the two sides being $-ie_0$ and $ie_0$; (C2) fails at $ie_1$, with $1\neq-1$.</li>
+<li>$\mathrm{SQA}(\tilde P,\tilde Q)=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$: (C1)
+  fails at $(ie_1,e_1)$, the two sides being $ie_0$ and $-ie_0$; (C2) fails at $e_1$, with $1\neq-1$.</li>
+<li>$\mathrm{SPS}(\tilde P,\tilde Q)=\tfrac12(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}})$: (C1)
+  holds, the product being a symmetric part under the adapted exchange; (C2) fails at $e_1$, where the
+  scalar part of $\mathrm{SPS}$ is the definite form $|P_0|^2+\lVert\mathbf P\rVert^2$, equal to $1$ there,
+  while $K(e_1,e_1)=-1$.</li>
+<li>$\mathrm{SQS}$: both clauses, by the theorem of §<em>The Law</em>.</li>
+</ul>
+<p><strong>The four antisymmetric parts.</strong> Each is the skew-conjugate-symmetric companion of its general product,
+$\mathrm{A}(P,Q)=-\overline{\mathrm{A}(Q,P)}$; if (C1) held as well then the two relations would give
+$\mathrm{A}(P,Q)=0$ for all pairs, which is false, so (C1) fails for all four. And each fails (C2), since
+the scalar part of all four vanishes identically: for $\mathrm{APA}$ and $\mathrm{AQA}$ because
+$\mathrm{Sc}(\tilde P\tilde Q)=\mathrm{Sc}(\tilde Q\tilde P)$; for $\mathrm{APS}$ because the two halves
+$PQ^*$ and $\overline{QP^*}$ have the same scalar part,
+$\mathrm{Sc}(\overline{\tilde Q\tilde P^*})=\mathrm{Sc}(\tilde P\tilde Q^*)$; for $\mathrm{AQS}$ because
+$\mathrm{Sc}(\mathrm{GQS})$ is the Hermitian form $K$ and
+$\mathrm{Sc}(\mathrm{AQS})=\tfrac12\bigl(K(P,Q)-\overline{K(Q,P)}\bigr)=0$. In every case the value at
+$e_1$ is $0$ while $K(e_1,e_1)=-1$.</p>
+<h2 id="the-table-of-the-twelve">The Table of the Twelve</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>(C1) conjugate-symmetry</th>
+<th>(C2) scalar part $K$</th>
+<th>$K$-Hermitian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}$</td>
+<td>fails at $(ie_1,e_1)$</td>
+<td>fails at $ie_1$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>fails at $(ie_1,e_1)$</td>
+<td>fails at $e_1$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathrm{GPS}$</td>
+<td>fails at $(e_1,e_2)$</td>
+<td>fails at $e_1$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathrm{GQS}$</td>
+<td>fails at $(e_1,e_2)$</td>
+<td>holds</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$</td>
+<td>fails at $(ie_1,e_1)$</td>
+<td>fails at $ie_1$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}$</td>
+<td>fails at $(ie_1,e_1)$</td>
+<td>fails at $e_1$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathrm{SPS}$</td>
+<td>holds</td>
+<td>fails at $e_1$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathrm{SQS}$</td>
+<td>holds</td>
+<td>holds</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>$\mathrm{APA}$</td>
+<td>fails (skew)</td>
+<td>fails at $e_1$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathrm{AQA}$</td>
+<td>fails (skew)</td>
+<td>fails at $e_1$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathrm{APS}$</td>
+<td>fails (skew)</td>
+<td>fails at $e_1$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathrm{AQS}$</td>
+<td>fails (skew)</td>
+<td>fails at $e_1$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the whole content of the theorem: the block is the single row with both entries present.</p>
+<h2 id="the-boundary-of-the-criterion">The Boundary of the Criterion</h2>
+<p>The criterion is sharp, and the sharpness is named.</p>
+<p><strong>Theorem (each clause alone is satisfied by another structure).</strong> Deleting (C1) admits the general
+quaternionic sesquilinear product $\mathrm{GQS}$; deleting (C2) admits the symmetric plain sesquilinear part
+$\mathrm{SPS}$.</p>
+<p><em>Proof.</em> $\mathrm{GQS}$ satisfies (C2) and fails (C1) (§<em>The Eleven Comparisons</em>), and $\mathrm{SPS}$
+satisfies (C1) and fails (C2).</p>
+<p>The two boundary structures are the companions of the block in the sesquilinear row: $\mathrm{GQS}$ is the
+product of which the block is the symmetric part, and $\mathrm{SPS}$ is the symmetric part of the plain
+sesquilinear product. The block is their meeting point: it has the scalar part of the first and the symmetry
+of the second.</p>
+<h2 id="what-the-criterion-delivers">What the Criterion Delivers</h2>
+<p><strong>The scalar part is the form, not a value.</strong> The clause (C2) makes the scalar projection of the product the
+Krein form, so the diagonal of the block is
+$\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q$; the
+non-centrality of the diagonal, the shape of the idempotents and the square-zero cone all follow from that
+one formula, as in <em>The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic
+Sesqualgebra</em>, <em>Idempotents of the Symmetric Quaternionic Sesqualgebra</em> and <em>Nilpotents of the Symmetric
+Quaternionic Sesqualgebra</em>.</p>
+<p><strong>The $K$-adjoint of the multiplication.</strong> The clause (C1), together with the natural conjugation as the
+compatibility involution, gives the operator identity</p>
+<p>$$
+K\bigl(L^{\star}_{\tilde A}\tilde X,\tilde Y\bigr)
+=\overline{K\bigl(\tilde X,L^{\star}_{\tilde A^{\natural}}\tilde Y\bigr)} ,
+$$</p>
+<p>so the adjoint of the left multiplication by $\tilde A$ with respect to $K$ is the left multiplication by
+$\tilde A^{\natural}$; the identity is computed in <em>The Multiplication Operators of the Symmetric
+Quaternionic Sesqualgebra</em>, and it is the operator form of the law.</p>
+<p><strong>The element theory is governed by the law.</strong> The two clauses fix the scalar part and the exchange; the
+class of an element of the block — regular, pure zero divisor, non-pure zero divisor — is then decided by
+the scalar coordinate $Q_0$ and the central square $c(\tilde Q)$, and not by the form $K$, as in <em>Zero
+Divisors of the Symmetric Quaternionic Sesqualgebra</em>.</p>
+<p><strong>The boundary.</strong> A product with the scalar part $K$ but without the symmetry, such as $\mathrm{GQS}$, has a
+diagonal whose vector part carries the cross product in addition to the mixed term; a product with the
+symmetry but without the scalar part $K$, such as $\mathrm{SPS}$, has a central diagonal. The block is the
+unique product whose diagonal keeps the mixed term and the form at once, with neither the extra cross term
+of the first boundary nor the vanishing vector part of the second.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>The block at the witness $e_0,e_1$.</strong> $\mathrm{SQS}(e_0,e_1)=-e_1$ and
+$\overline{\mathrm{SQS}(e_1,e_0)}=\overline{-e_1}=-e_1$, so (C1) holds; and
+$\mathrm{Sc}(\mathrm{SQS}(e_0,e_1))=0=K(e_0,e_1)$, so (C2) holds.</p>
+<p><strong>The boundary $\mathrm{GQS}$ at the witness $(e_1,e_2)$.</strong>
+$\mathrm{GQS}(e_1,e_2)=e_3$ while $\overline{\mathrm{GQS}(e_2,e_1)}=\overline{-e_3}=-e_3$, so (C1) fails and
+the product is not $K$-Hermitian; its scalar part is $K$, as (C2) requires.</p>
+<p><strong>The boundary $\mathrm{SPS}$ at the witness $e_1$.</strong>
+$\mathrm{Sc}(\mathrm{SPS}(e_1,e_1))=1$ while $K(e_1,e_1)=-1$, so (C2) fails; the product is
+conjugate-symmetric, as (C1) requires. Its diagonal is central,
+$\mathrm{SPS}(\tilde Q,\tilde Q)=\bigl(|Q_0|^2+\lVert\mathbf Q\rVert^2\bigr)e_0$.</p>
+<p><strong>A bilinear structure at a complex witness.</strong> $\mathrm{SPA}(ie_1,ie_1)=(ie_1)^2=e_0$, with scalar part
+$1$, while $K(ie_1,ie_1)=-1$: a bilinear product cannot see the modulus of a complex coefficient, and its
+scalar part is the complex bilinear form and never the Hermitian form $K$.</p>
+<h2 id="summary">Summary</h2>
+<p>The block is isolated among the twelve structures of the biquaternion complex space by the law of being
+$K$-Hermitian: the product is conjugate-symmetric,
+$\tilde P\star\tilde Q=\overline{\tilde Q\star\tilde P}$, and its scalar part is the Krein form,
+$\mathrm{Sc}(\tilde P\star\tilde Q)=K(\tilde P,\tilde Q)$. The block satisfies both clauses; the eleven other
+structures each fail at least one, the failures being read at the pairs $(ie_1,e_1)$ and $(e_1,e_2)$ and at
+the elements $e_1$ and $ie_1$. The criterion is sharp: deleting the conjugate-symmetry admits the general quaternionic sesquilinear
+product $\mathrm{GQS}$, and deleting the scalar-part identity admits the symmetric plain sesquilinear part
+$\mathrm{SPS}$; the block is the meeting point of the two, with the scalar part of the first and the symmetry
+of the second. The law delivers the diagonal formula with the Krein form in its scalar part, the
+$K$-adjointness of the left multiplications, $L^{\star}_{\tilde A}{}^{\dagger}=L^{\star}_{\tilde A^{\natural}}$,
+and the element theory in which the class of an element is decided by the scalar coordinate and the central
+square.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SQS}$</td>
+<td>the block, the symmetric quaternionic sesquilinear product</td>
+</tr>
+<tr>
+<td>$\tilde P\circ\tilde Q=\overline{\tilde Q\circ\tilde P}$</td>
+<td>the clause (C1), conjugate-symmetry</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde P\circ\tilde Q)=K(\tilde P,\tilde Q)$</td>
+<td>the clause (C2), the scalar-part identity</td>
+</tr>
+<tr>
+<td>$K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$</td>
+<td>the Krein form, the scalar part of the block</td>
+</tr>
+<tr>
+<td>$\mathrm{GQS}$</td>
+<td>the boundary of (C1): scalar part $K$, no symmetry</td>
+</tr>
+<tr>
+<td>$\mathrm{SPS}$</td>
+<td>the boundary of (C2): conjugate-symmetric, definite scalar part</td>
+</tr>
+<tr>
+<td>$K(L^{\star}_{\tilde A}\tilde X,\tilde Y)=\overline{K(\tilde X,L^{\star}_{\tilde A^{\natural}}\tilde Y)}$</td>
+<td>the $K$-adjointness delivered by the law</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Specificities of the General Plain Algebra</em> (<code>articles_maths/the-specificities-of-the-general-plain-algebra.md</code>), the model of the method, where left alternativity isolates the plain product among the twelve.</li>
+<li><em>The Specificities of the General Quaternionic Algebra</em> (<code>articles_maths/the-specificities-of-the-general-quaternionic-algebra.md</code>) and <em>The Specificities of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.md</code>), the twin articles, for the operator laws of the two neighbouring structures.</li>
+<li><em>The 12 Products of the Biquaternion Complex Space</em> (<code>articles_maths/the-12-products-of-the-biquaternion-complex-space.md</code>), for the twelve structures, their four general products and their parts.</li>
+<li><em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em> (<code>articles_maths/the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.md</code>), for the adapted exchange that the clause (C1) names.</li>
+<li><em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md</code>), for the product, its scalar part and its diagonal.</li>
+<li><em>The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.md</code>), for the $K$-adjointness and the operators of the block.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

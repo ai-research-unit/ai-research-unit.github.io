@@ -58,7 +58,7 @@
 <h2 id="involution-of-a-commutative-algebra">Involution of a Commutative Algebra</h2>
 <h3 id="the-two-notions-coincide">The Two Notions Coincide</h3>
 <p><strong>Proposition.</strong> Let $A$ be a commutative unital $R$-algebra. A map $\sigma : A\to A$ is an anti-automorphism of order two if and only if it is an automorphism of order two. Hence the involutions of a commutative algebra are exactly its involutive automorphisms, and the distinction of <em>Involutive Algebras</em> between the involution and the involutive automorphism is void.</p>
-<p><em>Proof.</em> In a commutative algebra $ba = ab$, so multiplicativity and anti-multiplicativity are the same condition. $\square$</p>
+<p><em>Proof.</em> In a commutative algebra $ba = ab$, so multiplicativity and anti-multiplicativity are the same condition.</p>
 <p><strong>Definition.</strong> An <strong>involutive commutative algebra</strong> is a commutative unital $R$-algebra $A$ with an $R$-algebra automorphism $\sigma$ of order two; its <strong>fixed subalgebra</strong> is $A^\sigma = \{a : \sigma(a) = a\}$, its <strong>skew part</strong> is $A^- = \{a : \sigma(a) = -a\}$, and an element of $A^\sigma$ is <strong>symmetric</strong>.</p>
 <h3 id="the-decomposition">The Decomposition</h3>
 <p><strong>Theorem.</strong> If $2$ is invertible in $R$, then</p>
@@ -66,12 +66,12 @@
 A = A^\sigma \oplus A^- , \qquad \sigma(a^\sigma + a^-) = a^\sigma - a^- ,
 $$</p>
 <p>and both summands are $A^\sigma$-submodules of $A$.</p>
-<p><em>Proof.</em> The projections $a\mapsto\tfrac12(a+\sigma(a))$ and $a\mapsto\tfrac12(a-\sigma(a))$ are $A^\sigma$-linear and split the identity; their images are $A^\sigma$ and $A^-$. $\square$</p>
+<p><em>Proof.</em> The projections $a\mapsto\tfrac12(a+\sigma(a))$ and $a\mapsto\tfrac12(a-\sigma(a))$ are $A^\sigma$-linear and split the identity; their images are $A^\sigma$ and $A^-$.</p>
 <p><strong>Proposition.</strong> The fixed subalgebra is a subalgebra of $A$, and it is generated as an $R$-algebra by the images $\tfrac12(a+\sigma(a))$ of the generators of $A$; the skew part is an $A^\sigma$-module and it is closed under the commutator trivially, while</p>
 <p>$$
 A^-\cdot A^- \subseteq A^\sigma , \qquad A^\sigma\cdot A^- \subseteq A^- .
 $$</p>
-<p><em>Proof.</em> Products of fixed elements are fixed and the skew part is carried by the sign rule: $(-1)(-1) = +1$, $(+1)(-1) = -1$; these are the inclusions. $\square$</p>
+<p><em>Proof.</em> Products of fixed elements are fixed and the skew part is carried by the sign rule: $(-1)(-1) = +1$, $(+1)(-1) = -1$; these are the inclusions.</p>
 <p><strong>Corollary (the square of a skew element).</strong> For $t \in A^-$ one has $t^2 \in A^\sigma$; the skew part obeys the parity rule $A^-\cdot A^-\subseteq A^\sigma$, and $A$ is generated over $A^\sigma$ by $A^-$ together with $A^\sigma$ itself.</p>
 <h3 id="the-quadratic-model">The Quadratic Model</h3>
 <p><strong>Theorem.</strong> Suppose $A = A^\sigma\oplus A^-$ and $A^- = A^\sigma t$ is a free $A^\sigma$-module of rank one with $\sigma(t) = -t$. Then $t^2 \in A^\sigma$, every element of $A$ is uniquely $a^\sigma + b^\sigma t$ with $a^\sigma, b^\sigma \in A^\sigma$, and</p>
@@ -79,7 +79,7 @@ $$</p>
 (a^\sigma + b^\sigma t)(c^\sigma + d^\sigma t) = (a^\sigma c^\sigma + b^\sigma d^\sigma t^2) + (a^\sigma d^\sigma + b^\sigma c^\sigma)t .
 $$</p>
 <p>Thus $A$ is a <strong>quadratic algebra</strong> over $A^\sigma$ in the sense of the extension of scalars, and $\sigma$ is the nontrivial automorphism of the quadratic pair; when $A$ is a field, $A/A^\sigma$ is a quadratic extension.</p>
-<p><em>Proof.</em> $t^2$ is fixed by the sign rule $A^-\cdot A^-\subseteq A^\sigma$; the multiplication formula is bilinearity and $t^2 \in A^\sigma$; uniqueness of the coordinates is the directness of the sum. $\square$</p>
+<p><em>Proof.</em> $t^2$ is fixed by the sign rule $A^-\cdot A^-\subseteq A^\sigma$; the multiplication formula is bilinearity and $t^2 \in A^\sigma$; uniqueness of the coordinates is the directness of the sum.</p>
 <h2 id="the-descent-to-the-self-adjoint-part">The Descent to the Self-Adjoint Part</h2>
 <h3 id="semilinear-modules-and-the-self-adjoint-part">Semilinear Modules and the Self-Adjoint Part</h3>
 <p><strong>Definition.</strong> Let $(A,\sigma)$ be an involutive commutative algebra. A <strong>$\sigma$-semilinear involution</strong> of an $A$-module $M$ is an additive map $\tau : M \to M$ with</p>
@@ -88,7 +88,7 @@ $$</p>
 $$</p>
 <p>The <strong>self-adjoint part</strong> of $(M,\tau)$ is $H(M) = \{m \in M : \tau(m) = m\}$.</p>
 <p><strong>Proposition.</strong> $H(M)$ is an $A^\sigma$-submodule of $M$, and the map $h\mapsto h$ identifies it with a subset of $M$ on which $A^\sigma$ acts; if $2$ is invertible then $M = H(M)\oplus S(M)$ with $S(M) = \{m : \tau(m) = -m\}$, as $A^\sigma$-modules, and $\tau$ is the multiplication by $-1$ on the skew part.</p>
-<p><em>Proof.</em> If $a \in A^\sigma$ and $h \in H(M)$ then $\tau(ah) = \sigma(a)\tau(h) = ah$, so $H(M)$ is an $A^\sigma$-submodule; the projections $\tfrac12(m\pm\tau(m))$ give the decomposition as in the algebra case. $\square$</p>
+<p><em>Proof.</em> If $a \in A^\sigma$ and $h \in H(M)$ then $\tau(ah) = \sigma(a)\tau(h) = ah$, so $H(M)$ is an $A^\sigma$-submodule; the projections $\tfrac12(m\pm\tau(m))$ give the decomposition as in the algebra case.</p>
 <h3 id="the-descent">The Descent</h3>
 <p><strong>Theorem (descent).</strong> Let $(A,\sigma)$ be an involutive commutative algebra with $A = A^\sigma\oplus A^-$ and $A^-$ generated by a single element $t$ with $\sigma(t) = -t$ and $t^2 \in A^\sigma$ invertible or, more generally, with $A$ faithfully flat over $A^\sigma$. Then the functors</p>
 <p>$$
@@ -96,7 +96,7 @@ $$</p>
 \Psi : N \longmapsto N\otimes_{A^\sigma}A \ \text{ with } \ \tau(n\otimes a) = n\otimes\sigma(a) ,
 $$</p>
 <p>are inverse equivalences between the category of $A$-modules with $\sigma$-semilinear involution and the category of $A^\sigma$-modules.</p>
-<p><em>Proof.</em> $\Phi\Psi(N) = H(N\otimes_{A^\sigma}A)$ is $N$ when $A$ is faithfully flat over $A^\sigma$ with the separating element $t$: a self-adjoint element $n\otimes1 + n'\otimes t$ of $N\otimes A$ is fixed precisely when $n'\otimes t = 0$ and equals a pure tensor $n\otimes1$, using $t^2\in A^\sigma$ and flatness. Conversely $\Psi\Phi(M) = H(M)\otimes_{A^\sigma}A\to M$ is the multiplication map, which is an isomorphism because $M = H(M)\oplus S(M)$ and $S(M) = t\,H(M)$ for the quadratic model. The two composites are the identities on objects, and they are natural in the morphisms, which are the $A$-linear maps commuting with $\tau$ and the $A^\sigma$-linear maps respectively. $\square$</p>
+<p><em>Proof.</em> $\Phi\Psi(N) = H(N\otimes_{A^\sigma}A)$ is $N$ when $A$ is faithfully flat over $A^\sigma$ with the separating element $t$: a self-adjoint element $n\otimes1 + n'\otimes t$ of $N\otimes A$ is fixed precisely when $n'\otimes t = 0$ and equals a pure tensor $n\otimes1$, using $t^2\in A^\sigma$ and flatness. Conversely $\Psi\Phi(M) = H(M)\otimes_{A^\sigma}A\to M$ is the multiplication map, which is an isomorphism because $M = H(M)\oplus S(M)$ and $S(M) = t\,H(M)$ for the quadratic model. The two composites are the identities on objects, and they are natural in the morphisms, which are the $A$-linear maps commuting with $\tau$ and the $A^\sigma$-linear maps respectively.</p>
 <p><strong>Corollary (the classical case).</strong> If $A = K$ is a field, a quadratic extension of $F = A^\sigma$ with nontrivial automorphism $\sigma$, then the descent is the classical Galois descent: a $K$-linear space with a $\sigma$-semilinear involution is the scalar extension of its self-adjoint $F$-subspace, and $\dim_F H(M) = \dim_K M$. This is the <strong>descent to the self-adjoint part</strong>.</p>
 <p><strong>Corollary (the fixed subalgebra of a tensor product).</strong> For an $A^\sigma$-algebra $B$, the $A$-algebra $B\otimes_{A^\sigma}A$ carries the involution $\sigma_B = \mathrm{id}\otimes\sigma$, and its fixed subalgebra is $B\otimes_{A^\sigma}A^\sigma = B$; the descent recovers $B$.</p>
 <h2 id="examples">Examples</h2>

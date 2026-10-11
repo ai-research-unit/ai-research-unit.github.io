@@ -70,7 +70,7 @@ $$</p>
 <p>$$
 L_{a+b} = L_a + L_b, \qquad L_{ab} = L_a \circ L_b = L_b \circ L_a, \qquad L_{ra} = rL_a, \qquad L_1 = \mathrm{id}_A .
 $$</p>
-<p><em>Proof.</em> Each identity is checked on an element $x$: $L_{a+b}(x) = (a+b)x = ax + bx$, $L_{ab}(x) = (ab)x = a(bx) = L_a(L_b x)$, $L_{ra}(x) = (ra)x = r(ax) = (rL_a)(x)$, and $L_1(x) = x$. Commutativity gives $L_aL_b = L_{ab} = L_{ba} = L_bL_a$. $\square$</p>
+<p><em>Proof.</em> Each identity is checked on an element $x$: $L_{a+b}(x) = (a+b)x = ax + bx$, $L_{ab}(x) = (ab)x = a(bx) = L_a(L_b x)$, $L_{ra}(x) = (ra)x = r(ax) = (rL_a)(x)$, and $L_1(x) = x$. Commutativity gives $L_aL_b = L_{ab} = L_{ba} = L_bL_a$.</p>
 <p><strong>Corollary.</strong> The image $L(A) = \{L_a : a \in A\}$ is a commutative subalgebra of $\operatorname{End}_R(A)$ with identity $L_1$, and $L : A \to L(A)$ is a surjective $R$-algebra homomorphism. If $A$ is unital then $L$ is injective, because $L_a = 0$ forces $a = L_a(1) = 0$; hence</p>
 <p>$$
 A \cong L(A)
@@ -86,7 +86,7 @@ $$</p>
 \{T \in \operatorname{End}_R(A) : T L_a = L_a T \ \text{for all } a \in A\} = L(A) .
 $$</p>
 <p>Equivalently, every $A$-linear endomorphism of the regular module $A$ is a multiplication operator, and $A \cong \operatorname{End}_A(A)$.</p>
-<p><em>Proof.</em> An operator $T$ commutes with every $L_a$ precisely when $T(ax) = a\,T(x)$ for all $a, x$, which is $A$-linearity of the regular module; putting $a = x$ gives $T(a) = a\,T(1) = L_{T(1)}(a)$, so $T = L_b$ with $b = T(1)$. Conversely every $L_b$ is $A$-linear by associativity. Here the unit is again used, in the evaluation at $1$. $\square$</p>
+<p><em>Proof.</em> An operator $T$ commutes with every $L_a$ precisely when $T(ax) = a\,T(x)$ for all $a, x$, which is $A$-linearity of the regular module; putting $a = x$ gives $T(a) = a\,T(1) = L_{T(1)}(a)$, so $T = L_b$ with $b = T(1)$. Conversely every $L_b$ is $A$-linear by associativity. Here the unit is again used, in the evaluation at $1$.</p>
 <p><strong>Corollary.</strong> When $A$ is free of finite rank over the field $k$, the subalgebra $L(A)$ is a maximal commutative subalgebra of $\operatorname{End}_k(A)$: it equals its own centralizer and is commutative. The double centralizer theorem for the regular module therefore terminates at the first step.</p>
 <p><strong>Remark.</strong> For a non-commutative algebra the two families $L(A)$ and $R(A)$ are different, they commute with one another, and each is the other's centralizer in the appropriate sense; the coincidence above is peculiar to the commutative case, and it is why one representation suffices here.</p>
 <h2 id="the-interaction-with-derivations">The Interaction with Derivations</h2>
@@ -95,7 +95,7 @@ $$</p>
 <p>$$
 \delta \circ L_a = L_{\delta(a)} + L_a \circ \delta, \qquad \text{equivalently} \qquad [\delta, L_a] = L_{\delta(a)} .
 $$</p>
-<p><em>Proof.</em> Apply both sides to $x$: $\delta(ax) = \delta(a)x + a\delta(x) = L_{\delta(a)}(x) + L_a(\delta x)$. $\square$</p>
+<p><em>Proof.</em> Apply both sides to $x$: $\delta(ax) = \delta(a)x + a\delta(x) = L_{\delta(a)}(x) + L_a(\delta x)$.</p>
 <p><strong>Corollary.</strong> The $R$-linear map $\operatorname{Der}_R(A) \to L(A)$, $\delta \mapsto L_{\delta(a)}$ for a fixed $a$, is the restriction of the adjoint action of $\operatorname{Der}_R(A)$ on the operator algebra; on the whole of $L(A)$ the derivation acts by $L_b \mapsto L_{\delta(b)}$, and this is the derivation of the commutative algebra $L(A) \cong A$ carried across the isomorphism. In particular the derivation space depends only on the algebra structure of $A$, as it must.</p>
 <p><strong>Example.</strong> For $A = R[x]$ the derivations form the free module $R[x]\partial_x$ of rank one, and $[\partial_x, L_f] = L_{f'}$ where $f' = \partial_x f$ is the formal derivative. The operator identity $[\partial_x, L_f] = L_{f'}$ is the operator form of the product rule.</p>
 <h2 id="characters-and-the-gelfand-transform">Characters and the Gelfand Transform</h2>
@@ -110,10 +110,10 @@ $$</p>
 \chi \circ L_a = \chi(a)\,\chi ,
 $$</p>
 <p>that is, $\chi$ is a linear functional on $A$ that is an eigenvector of the transposed operator $L_a^{\mathsf T}$ with eigenvalue $\chi(a)$. Equivalently, the ideal $\ker\chi$ is a maximal ideal of $A$ and $A/\ker\chi \cong R$.</p>
-<p><em>Proof.</em> $\chi(L_a x) = \chi(ax) = \chi(a)\chi(x) = \chi(a)\,\chi(x)$; the quotient statement is the first isomorphism theorem for algebras, and $\ker\chi$ is maximal because $A/\ker\chi$ is a subalgebra of the field $R$ (or of $R$ itself) containing $1$. $\square$</p>
+<p><em>Proof.</em> $\chi(L_a x) = \chi(ax) = \chi(a)\chi(x) = \chi(a)\,\chi(x)$; the quotient statement is the first isomorphism theorem for algebras, and $\ker\chi$ is maximal because $A/\ker\chi$ is a subalgebra of the field $R$ (or of $R$ itself) containing $1$.</p>
 <p>The eigenvalue assigned to $a$ by the character is forced: a character is a multiplicative functional, and the eigenvalues of the family are exactly the values of the characters.</p>
 <p><strong>Proposition (simultaneous triangularisation).</strong> Suppose $A$ is a finitely generated free $R$-module and that the characters separate the elements of $A$, in the sense that $\chi(a) = 0$ for all $\chi$ forces $a = 0$. Then the family $L(A)$ is <strong>simultaneously diagonalisable</strong> in a suitable extension of scalars: there is a basis of $A \otimes_R S$ over a ring $S$ in which every $L_a$ is diagonal, with the diagonal entries the values $\chi(a)$.</p>
-<p><em>Proof.</em> The hypothesis exhibits $A$ as a subalgebra of the algebra of functions $\mathfrak X(A) \to R$ and hence of a product of copies of $R$, one for each character; in the corresponding idempotent decomposition $A \otimes_R S \cong \prod_\chi S$, the operator $L_a$ is multiplication by the scalar $\chi(a)$ in the $\chi$-th coordinate. $\square$</p>
+<p><em>Proof.</em> The hypothesis exhibits $A$ as a subalgebra of the algebra of functions $\mathfrak X(A) \to R$ and hence of a product of copies of $R$, one for each character; in the corresponding idempotent decomposition $A \otimes_R S \cong \prod_\chi S$, the operator $L_a$ is multiplication by the scalar $\chi(a)$ in the $\chi$-th coordinate.</p>
 <p>For a finite-dimensional reduced commutative algebra over an algebraically closed field $k$, the characters are exactly the $k$-algebra homomorphisms into $k$, they separate points, and the proposition reduces to the classical diagonalisation of a commuting family of diagonalisable operators.</p>
 <h3 id="the-gelfand-transform">The Gelfand Transform</h3>
 <p><strong>Definition.</strong> The <strong>Gelfand transform</strong> of $A$ is the map</p>
@@ -126,7 +126,7 @@ $$</p>
 \Gamma(L_a x) = \Gamma(a)\,\Gamma(x), \qquad \text{that is} \qquad \widehat{ax} = \hat a\,\hat x ,
 $$</p>
 <p>where $\hat a = \Gamma(a)$.</p>
-<p><em>Proof.</em> For $a, b \in A$ and a character $\chi$, $\Gamma(a+b)(\chi) = \chi(a+b) = \chi(a)+\chi(b)$ and $\Gamma(ab)(\chi) = \chi(ab) = \chi(a)\chi(b) = \Gamma(a)(\chi)\Gamma(b)(\chi)$, so $\Gamma$ is additive and multiplicative; $\Gamma(1)(\chi) = 1$. The second display is the defining property $\chi(ax) = \chi(a)\chi(x)$. $\square$</p>
+<p><em>Proof.</em> For $a, b \in A$ and a character $\chi$, $\Gamma(a+b)(\chi) = \chi(a+b) = \chi(a)+\chi(b)$ and $\Gamma(ab)(\chi) = \chi(ab) = \chi(a)\chi(b) = \Gamma(a)(\chi)\Gamma(b)(\chi)$, so $\Gamma$ is additive and multiplicative; $\Gamma(1)(\chi) = 1$. The second display is the defining property $\chi(ax) = \chi(a)\chi(x)$.</p>
 <p>The kernel of $\Gamma$ is the <strong>Jacobson radical</strong> — the intersection of the maximal ideals, that is, the elements annihilated by every character — and $\Gamma$ is injective exactly when the characters separate points, which is the hypothesis of the triangularisation proposition. For a reduced algebra of finite type over a field the radical vanishes and the transform is injective.</p>
 <p><strong>Remark (what is deferred).</strong> The transform is treated here as an algebraic homomorphism into a ring of functions. Its analytic theory — that when $R = \mathbb{C}$ and $A$ carries a norm the character set becomes a compact space, the transform is an isometry, and it is an isomorphism onto the algebra of continuous functions for a suitable class of algebras — needs the distance of Part II and the limit of Part III. The reader will find it in <em>Topological Algebras and the Gelfand Transform</em> and <em>Banach Algebras</em>; nothing of it is used here.</p>
 <h2 id="worked-examples">Worked Examples</h2>
@@ -164,7 +164,7 @@ $$</p>
 <p>$$
 T(L_a x, y) = T(x, L_a y) \qquad \text{for all } a, x, y \in A .
 $$</p>
-<p><em>Proof.</em> $T(L_a x, y) = \operatorname{tr}(L_{(ax)y}) = \operatorname{tr}(L_{a(xy)}) = T(x, ay) = T(x, L_a y)$, using associativity of $A$ in the middle. $\square$</p>
+<p><em>Proof.</em> $T(L_a x, y) = \operatorname{tr}(L_{(ax)y}) = \operatorname{tr}(L_{a(xy)}) = T(x, ay) = T(x, L_a y)$, using associativity of $A$ in the middle.</p>
 <p><strong>Corollary.</strong> The family $L(A)$ is a commutative subalgebra of the space of operators self-adjoint for $T$. When $T$ is non-degenerate the adjoint operation makes $\operatorname{End}_R(A)$ an algebra with an involution, and $L(A)$ lies in its self-adjoint part; the involution is developed in the <code>* Operator Theory</code> group of this category, where the pairing and the adjoint are read with the involution of the elements.</p>
 <p><strong>Example.</strong> For $A = k^n$ the multiplication operator $L_a$ with $a = (a_1, \dots, a_n)$ is the diagonal matrix $\operatorname{diag}(a_1, \dots, a_n)$, and $T(a,b) = \sum_i a_i b_i$; the trace pairing is the standard bilinear form on $k^n$. For $A = \mathbb D$ above, $T(a+bj, c+dj) = 2(ac+bd)$ by the matrix form of $L$, the factor $2$ being the rank.</p>
 <h2 id="summary">Summary</h2>

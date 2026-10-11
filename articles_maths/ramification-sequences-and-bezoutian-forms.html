@@ -127,7 +127,7 @@ $$</p>
 <p>$$
 \frac{r(t)}{g(t)} = t^{-1}\left(\sum_{i=1}^n\frac{r(\alpha_i)}{g'(\alpha_i)}\right) + O(t^{-2}),
 $$</p>
-<p>while $\deg r < n$ and $g$ monic of degree $n$ give $\frac{r(t)}{g(t)} = r_{n-1}t^{-1} + O(t^{-2})$, where $r_{n-1}$ is the coefficient of $t^{n-1}$ in $r$. Comparing the coefficients of $t^{-1}$ gives the first identity, and the second is the definition of the trace of $y(\theta)/g'(\theta)$. $\square$</p>
+<p>while $\deg r < n$ and $g$ monic of degree $n$ give $\frac{r(t)}{g(t)} = r_{n-1}t^{-1} + O(t^{-2})$, where $r_{n-1}$ is the coefficient of $t^{n-1}$ in $r$. Comparing the coefficients of $t^{-1}$ gives the first identity, and the second is the definition of the trace of $y(\theta)/g'(\theta)$.</p>
 <h3 id="the-bezoutian-form-of-a-pair">The Bezoutian Form of a Pair</h3>
 <p><strong>Definition.</strong> Let $g \in F[t]$ be monic of degree $n$ and square-free and let $f \in F[t]$ be coprime to $g$. The <strong>Bezoutian form</strong> of $f$ modulo $g$ is the quadratic form</p>
 <p>$$
@@ -148,7 +148,7 @@ q_{f h^2, g} \cong q_{f,g} \ \text{ via } x \mapsto hx, \qquad q_{cf,g} = c\,q_{
 $$</p>
 <p>on $E_g$. In particular $B(f/g)$ depends on $f$ only through its class in $E_g^\times/E_g^{\times 2}$, and the element $R(f/g)$ of the definition above is therefore attached to the pair in a way compatible with the form.</p>
 <p><strong>Theorem (non-degeneracy).</strong> Let $g \in F[t]$ be monic and square-free and $f \in F[t]$ coprime to $g$. Then the Bezoutian form $q_{f,g}$ is non-degenerate. It is degenerate for every $f$ sharing a factor with $g$.</p>
-<p><strong>Proof for $n = 1$.</strong> Here $g = t + c$ and $\theta = -c$, so $E_g = F$, $s_g$ is the identity of $F$, and $q_{f,g}(x) = f(-c)x^2$. This is non-degenerate exactly when $f(-c) \neq 0$, that is, exactly when $t + c$ does not divide $f$. The general case is the theorem of Becher and Raczek, and is quoted. $\square$</p>
+<p><strong>Proof for $n = 1$.</strong> Here $g = t + c$ and $\theta = -c$, so $E_g = F$, $s_g$ is the identity of $F$, and $q_{f,g}(x) = f(-c)x^2$. This is non-degenerate exactly when $f(-c) \neq 0$, that is, exactly when $t + c$ does not divide $f$. The general case is the theorem of Becher and Raczek, and is quoted.</p>
 <p>The non-degeneracy is the reason the Bezoutian is taken over the square-free $g$ and the coprime $f$: the form is then a genuine element of the Witt group, and its triviality is a meaningful condition.</p>
 <p><strong>Remark (the classical Bezoutian).</strong> The name of the form is that of the classical <strong>Bezoutian</strong> of the pair, the polynomial</p>
 <p>$$
@@ -191,7 +191,7 @@ $$</p>
 <p>$$
 a_2\langle\!\langle a_1a_2, b\rangle\!\rangle = \langle a_2, -a_1a_2^2, -a_2b, a_1a_2^2b\rangle \cong \langle a_2, -a_1, -a_2b, a_1b\rangle,
 $$</p>
-<p>the two entries $-a_1a_2^2$ and $a_1a_2^2b$ being the square multiples $-a_1$ and $a_1b$ of the corresponding entries, and the multiset of square classes is the same one. Hence the two forms are isometric up to the scalar, as claimed. $\square$</p>
+<p>the two entries $-a_1a_2^2$ and $a_1a_2^2b$ being the square multiples $-a_1$ and $a_1b$ of the corresponding entries, and the multiset of square classes is the same one. Hence the two forms are isometric up to the scalar, as claimed.</p>
 <h2 id="the-criterion-of-becher-and-raczek">The Criterion of Becher and Raczek</h2>
 <p><strong>Theorem (the criterion).</strong> Let $g \in F[t]$ be monic and square-free and let $f \in F[t]$ be coprime to $g$, and let $R(f/g) \in R_2(F)$ be the sequence of the pair. Then $R(f/g)$ is represented by a symbol if and only if</p>
 <p>$$
@@ -202,8 +202,8 @@ $$</p>
 <p>$$
 \partial\big(\{g_1, a_1\} + \{g_2, a_2\}\big) \neq \partial(\sigma) \qquad \text{for every symbol } \sigma \in k_2(F(t)).
 $$</p>
-<p><strong>Proof.</strong> Write $\rho = \partial(\{g_1,a_1\}+\{g_2,a_2\}) \in R_2(F)$. The hypotheses on the $a_i$ give $\operatorname{Supp}(\rho) = \{p \in P : p \text{ divides } g_1g_2\}$ and $\deg(\rho) = \deg g_1 + \deg g_2$. If a symbol $\sigma$ had $\partial(\sigma) = \rho$, then by the structure of the sequences of symbols there would be polynomials $f, h$ and a square-free $g$, pairwise coprime, with $g = g_1g_2$, such that $\sigma = \{f, gh\}$ and $\partial(\sigma) = R(f/g)$; the criterion would give $B(f/g) = 0$. Moreover $R(f/g_1) + R(f/g_2) = R(f/g) = \partial(\sigma) = \rho = R(a_1/g_1) + R(a_2/g_2)$, because the support of $R(f/g)$ splits into the places dividing $g_1$ and those dividing $g_2$; comparing the entries at the places dividing $g_i$ gives $R(f/g_i) = R(a_i/g_i)$, that is, $a_if$ is a square modulo $g_i$. The lemma then gives $B(f/g) \sim [\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle]$, so $a_2\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle$ is hyperbolic and the form $\langle 1, -a_1a_2\rangle$ represents $g_2(0)$, against the hypothesis. $\square$</p>
-<h2 id="the-example-over-math324">The Example over $\mathbb{Q}$</h2>
+<p><strong>Proof.</strong> Write $\rho = \partial(\{g_1,a_1\}+\{g_2,a_2\}) \in R_2(F)$. The hypotheses on the $a_i$ give $\operatorname{Supp}(\rho) = \{p \in P : p \text{ divides } g_1g_2\}$ and $\deg(\rho) = \deg g_1 + \deg g_2$. If a symbol $\sigma$ had $\partial(\sigma) = \rho$, then by the structure of the sequences of symbols there would be polynomials $f, h$ and a square-free $g$, pairwise coprime, with $g = g_1g_2$, such that $\sigma = \{f, gh\}$ and $\partial(\sigma) = R(f/g)$; the criterion would give $B(f/g) = 0$. Moreover $R(f/g_1) + R(f/g_2) = R(f/g) = \partial(\sigma) = \rho = R(a_1/g_1) + R(a_2/g_2)$, because the support of $R(f/g)$ splits into the places dividing $g_1$ and those dividing $g_2$; comparing the entries at the places dividing $g_i$ gives $R(f/g_i) = R(a_i/g_i)$, that is, $a_if$ is a square modulo $g_i$. The lemma then gives $B(f/g) \sim [\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle]$, so $a_2\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle$ is hyperbolic and the form $\langle 1, -a_1a_2\rangle$ represents $g_2(0)$, against the hypothesis.</p>
+<h2 id="the-example-over-math320">The Example over $\mathbb{Q}$</h2>
 <p>Take $F = \mathbb{Q}$, $a = 2$, $b = 3$, and</p>
 <p>$$
 g_1 = t^2+3t+2 = (t+1)(t+2), \qquad g_2 = t^2+2t+2 = (t+1)^2+1,

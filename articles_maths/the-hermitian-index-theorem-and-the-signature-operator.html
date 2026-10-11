@@ -90,7 +90,7 @@ $$</p>
 <p>$$
 \operatorname{ind}(\bar\partial_E+\bar\partial_E^{*})=\sum_{q=0}^{n}(-1)^{q}\dim H^{q}(X,E)=\chi(X,E) .
 $$</p>
-<p><strong>Proof.</strong> The Dolbeault theorem is the $(0,q)$-form version of the de Rham theorem, and the two operators $\bar\partial_E$ and $\bar\partial_E^{*}$ are formal adjoints with respect to the Hermitian structures, so the harmonic representatives of the cohomology are the kernel of the operator and the index is the alternating sum of the cohomology dimensions. The elliptic regularity that upgrades the formal argument to a theorem is that of Part III; the statement is the Dolbeault theorem and the Hodge decomposition for the $\bar\partial$-operator, of <em>Hermitian Metrics and the Hodge Theory</em>. $\square$</p>
+<p><strong>Proof.</strong> The Dolbeault theorem is the $(0,q)$-form version of the de Rham theorem, and the two operators $\bar\partial_E$ and $\bar\partial_E^{*}$ are formal adjoints with respect to the Hermitian structures, so the harmonic representatives of the cohomology are the kernel of the operator and the index is the alternating sum of the cohomology dimensions. The elliptic regularity that upgrades the formal argument to a theorem is that of Part III; the statement is the Dolbeault theorem and the Hodge decomposition for the $\bar\partial$-operator, of <em>Hermitian Metrics and the Hodge Theory</em>.</p>
 <h2 id="the-hermitian-index-theorem">The Hermitian Index Theorem</h2>
 <p><strong>Theorem (Hirzebruch–Riemann–Roch).</strong> Let $X$ be a compact complex manifold and let $E$ be a Hermitian holomorphic bundle of rank $r$. Then</p>
 <p>$$
@@ -100,7 +100,7 @@ $$</p>
 <p>$$
 \chi(X,E)=\int_{X}\Bigl(\sum_{k}\operatorname{ch}_k(E)\Bigr)\prod_{j=1}^{n}\frac{x_j}{1-e^{-x_j}} .
 $$</p>
-<p><strong>Proof sketch.</strong> The symbol of the Dolbeault operator is the $(0,q)$-part of the Clifford multiplication by $\xi$; its class in $K$-theory is the difference $[\Lambda^{0,\bullet}T^{*}X]\otimes[E]$, whose Chern character is $\operatorname{ch}(E)\operatorname{td}(TX)$ by the splitting principle and the multiplicativity of $\operatorname{ch}$; the Atiyah–Singer theorem then computes the index as the integral of the Chern character against the Todd class. The general theorem is in <em>The Atiyah–Singer Index Theorem and K-Theory</em>, and the Chern–Weil forms are those of <em>Chern Classes of a Hermitian Bundle</em>. $\square$</p>
+<p><strong>Proof sketch.</strong> The symbol of the Dolbeault operator is the $(0,q)$-part of the Clifford multiplication by $\xi$; its class in $K$-theory is the difference $[\Lambda^{0,\bullet}T^{*}X]\otimes[E]$, whose Chern character is $\operatorname{ch}(E)\operatorname{td}(TX)$ by the splitting principle and the multiplicativity of $\operatorname{ch}$; the Atiyah–Singer theorem then computes the index as the integral of the Chern character against the Todd class. The general theorem is in <em>The Atiyah–Singer Index Theorem and K-Theory</em>, and the Chern–Weil forms are those of <em>Chern Classes of a Hermitian Bundle</em>.</p>
 <p><strong>Corollary (the classical cases).</strong> For a compact Riemann surface $X$ of genus $g$ and a line bundle $L$ the theorem gives</p>
 <p>$$
 \chi(X,L)=\deg L+1-g,
@@ -111,7 +111,7 @@ $$</p>
 \chi(X,E)=(-1)^{n}\chi(X,E^{*}\otimes K_X),
 $$</p>
 <p>the Euler-characteristic form of Serre duality, with $K_X=\Lambda^{n}T^{1,0*}X$ the canonical bundle; the individual dimensions are paired by $H^{q}(X,E)^{\vee}\cong H^{n-q}(X,E^{*}\otimes K_X)$.</p>
-<h2 id="the-math73-genus-and-the-signature">The $\chi_y$-Genus and the Signature</h2>
+<h2 id="the-math71-genus-and-the-signature">The $\chi_y$-Genus and the Signature</h2>
 <p>The Dolbeault indices of the bundles $\Omega^{p}=\Lambda^{p}T^{1,0*}X$ assemble into a single genus, and its specialisations include the signature.</p>
 <p><strong>Definition.</strong> The <strong>$\chi_y$-genus</strong> of a compact complex manifold $X$ is</p>
 <p>$$
@@ -132,7 +132,7 @@ $$</p>
 \chi_1(X)=\int_{X}\prod_{j=1}^{n}x_j\coth x_j=\int_{X}L(TX)=\sigma(X),
 $$</p>
 <p>the signature of $X$; its value at $y=0$ is the Todd genus $\int\prod\frac{x_j}{1-e^{-x_j}}$ and its value at $y=-1$ is the Euler characteristic $\int\prod x_j$.</p>
-<p><strong>Proof sketch.</strong> The genus $\sum_p\chi(\Omega^p)y^p$ is multiplicative for products and additive for the twisted Dolbeault complexes, so it is a genus with a power series determined by its values on the projective spaces; evaluating the resulting product at $y=1$ gives $\frac{x(1+e^{-2x})}{1-e^{-2x}}=x\coth x$, whose product is the $L$-class of <em>The Signature Operator</em>, and at $y=0$ the Todd factor; at $y=-1$ the limit is the Euler factor $\prod x_j$. Since the $\chi_y$-genus is independent of the description, the value $y=1$ is the signature by the Hodge index theorem, $\sigma=\sum_{p,q}(-1)^{p}h^{p,q}=\sum_p\chi(\Omega^p)$ of <em>Polarised Hodge Structures and the Hodge–Riemann Relations</em>. $\square$</p>
+<p><strong>Proof sketch.</strong> The genus $\sum_p\chi(\Omega^p)y^p$ is multiplicative for products and additive for the twisted Dolbeault complexes, so it is a genus with a power series determined by its values on the projective spaces; evaluating the resulting product at $y=1$ gives $\frac{x(1+e^{-2x})}{1-e^{-2x}}=x\coth x$, whose product is the $L$-class of <em>The Signature Operator</em>, and at $y=0$ the Todd factor; at $y=-1$ the limit is the Euler factor $\prod x_j$. Since the $\chi_y$-genus is independent of the description, the value $y=1$ is the signature by the Hodge index theorem, $\sigma=\sum_{p,q}(-1)^{p}h^{p,q}=\sum_p\chi(\Omega^p)$ of <em>Polarised Hodge Structures and the Hodge–Riemann Relations</em>.</p>
 <p><strong>Corollary (the signature operator and the Chern character).</strong> The complexified exterior algebra splits as $\Lambda^{k}T^{*}_{\mathbb{C}}X=\bigoplus_{p+q=k}\Lambda^{p,q}T^{*}X$, and the signature operator of the underlying real manifold, restricted to this splitting, is the operator whose index is the $y=1$ value of the $\chi_y$-genus; equivalently, the index of the signature operator is</p>
 <p>$$
 \sigma(X)=\int_{X}\operatorname{ch}\bigl(\textstyle\bigoplus_{p}\Lambda^{p}T^{1,0*}X\bigr)\Bigr|_{y=1}\ ,

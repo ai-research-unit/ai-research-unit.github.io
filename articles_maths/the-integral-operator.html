@@ -126,7 +126,7 @@ and compute formally and then justify by Fubini–Tonelli applied to the absolut
 integral, which the estimate above bounds:
 $$
 (T_KT_Lf)(x)=\int_ZK(x,z)\Bigl(\int_YL(z,y)f(y)\,d\nu(y)\Bigr)d\lambda(z)
-=\int_Y\Bigl(\int_ZK(x,z)L(z,y)\,d\lambda(z)\Bigr)f(y)\,d\nu(y)=(T_{K\star L}f)(x). \qquad\blacksquare
+=\int_Y\Bigl(\int_ZK(x,z)L(z,y)\,d\lambda(z)\Bigr)f(y)\,d\nu(y)=(T_{K\star L}f)(x).
 $$</p>
 <p><strong>Proposition (the kernel product is associative).</strong> For kernels
 $K\in L^2(X\times W)$, $L\in L^2(W\times Z)$ and $M\in L^2(Z\times Y)$ one has
@@ -135,7 +135,7 @@ kernels on $X$ form an associative algebra under $\star$ with the kernel
 $K_0(x,y)$ of the identity of the algebra acting as unit wherever such a kernel exists.</p>
 <p><strong>Proof.</strong> Both sides are the triple integral $\iiint K(x,w)L(w,z)M(z,y)\,dw\,dz$ over the product, which
 is finite almost everywhere by two applications of Cauchy–Schwarz and is symmetric in the bracketing by
-Fubini–Tonelli. Bilinearity is linearity of the integral. $\blacksquare$</p>
+Fubini–Tonelli. Bilinearity is linearity of the integral.</p>
 <h3 id="examples">Examples</h3>
 <p><strong>Example (rank-one kernels).</strong> For $u\in L^2(X,\mu)$ and $v\in L^2(Y,\nu)$ put
 $K(x,y)=u(x)\overline{v(y)}$. Then
@@ -158,7 +158,7 @@ the form $K(x,y)=k(x-y)$ with $k\in L^1(\mathbb R^n)$ gives
 $(T_Kf)(x)=\int k(x-y)f(y)\,dy=(k*f)(x)$, a <strong>convolution operator</strong>. These are the kernels whose
 operators commute with all translations, and they are the subject of <em>Convolution Operators</em>, the next
 article of this group.</p>
-<h2 id="boundedness-on-math84">Boundedness on $L^2$</h2>
+<h2 id="boundedness-on-math83">Boundedness on $L^2$</h2>
 <h3 id="the-square-integrable-kernel">The Square-Integrable Kernel</h3>
 <p><strong>Theorem (the Hilbert–Schmidt bound).</strong> If $K\in L^2(X\times Y,\mu\otimes\nu)$, then $T_K$ maps
 $L^2(Y,\nu)$ boundedly into $L^2(X,\mu)$, with
@@ -176,7 +176,7 @@ $$
 =\lVert K\rVert_{L^2(X\times Y)}^2\lVert f\rVert_2^2 .
 $$
 The operator is linear and defined on all of $L^2(Y,\nu)$ by this estimate, so it is bounded with the
-stated bound. $\blacksquare$</p>
+stated bound.</p>
 <p>The inequality is the reason the square-integrable kernels are the class the corpus works with: the
 operator norm is controlled by a double integral, and every kernel that satisfies $\lVert K\rVert_2<\infty$
 defines a bounded operator with no further hypothesis.</p>
@@ -201,13 +201,13 @@ $$
 \lVert T_Kf\rVert_p^p\leq C^{p/q}\int_X\int_XK(x,y)\lvert f(y)\rvert^p\,d\mu(y)\,d\mu(x)
 \leq C^{p/q}\,C\lVert f\rVert_p^p=C^p\lVert f\rVert_p^p ,
 $$
-since $p/q+1=p$. $\blacksquare$</p>
+since $p/q+1=p$.</p>
 <p><strong>Remark.</strong> The test also holds with two weights: if $p_0,q_0>0$ are measurable and
 $\int_XK(x,y)q_0(y)\,dy\leq Cp_0(x)$, $\int_XK(x,y)p_0(x)\,dx\leq Cq_0(y)$ almost everywhere, then $T_K$ is
 bounded on the weighted space $L^p(p_0^p\,d\mu)$ with the same constant. The unweighted statement is the
 one used in this corpus, and the weighted one is recorded because the kernel of a Riemann–Liouville
 fractional integral satisfies it.</p>
-<h3 id="kernels-in-math124-and-the-young-bound">Kernels in $L^1$ and the Young Bound</h3>
+<h3 id="kernels-in-math121-and-the-young-bound">Kernels in $L^1$ and the Young Bound</h3>
 <p><strong>Theorem (Young).</strong> Let $K(x,y)=k(x-y)$ on $\mathbb R^n$ with $k\in L^1(\mathbb R^n)$. Then for
 $1\leq p\leq\infty$,
 $$
@@ -215,7 +215,7 @@ $$
 $$</p>
 <p><strong>Proof.</strong> For $p=1$ the inequality is Fubini, $p=\infty$ the trivial bound, and for $1<p<\infty$ it is
 Minkowski's integral inequality applied to
-$\lvert k*f\rvert(x)\leq\int\lvert k(y)\rvert\lvert f(x-y)\rvert\,dy$. $\blacksquare$</p>
+$\lvert k*f\rvert(x)\leq\int\lvert k(y)\rvert\lvert f(x-y)\rvert\,dy$.</p>
 <p>The Young bound is the reason a kernel that decays like an integrable function gives a bounded operator
 even when it is not square-integrable: $k$ may be the Poisson kernel, which lies in $L^1$ and not in $L^2$.
 The two hypotheses of this section overlap and neither contains the other; the square-integrable case is
@@ -247,7 +247,7 @@ $$
 =\iint K(x,y)\overline{e_i(x)}\,f_j(y)\,d\mu(x)\,d\nu(y)=\langle T_Kf_j,e_i\rangle
 $$
 holds by Fubini–Tonelli, the integrand being summable. Parseval's identity in $L^2(X\times Y)$ gives the
-statement, and the basis-independence is the basis-independence of the Parseval sum. $\blacksquare$</p>
+statement, and the basis-independence is the basis-independence of the Parseval sum.</p>
 <h3 id="the-ideal-property">The Ideal Property</h3>
 <p><strong>Theorem.</strong> Let $K\in L^2(X\times Z)$ and $L\in L^2(Z\times Y)$. Then $K\star L\in L^2(X\times Y)$ and
 $$
@@ -256,7 +256,7 @@ $$
 Consequently the Hilbert–Schmidt operators are closed under composition and under multiplication on either
 side by an integral operator, and the composition of two Hilbert–Schmidt operators is Hilbert–Schmidt.</p>
 <p><strong>Proof.</strong> The first two statements are the composition theorem of the first section together with the
-estimate $\lVert K\star L\rVert_2\leq\lVert K\rVert_2\lVert L\rVert_2$ proved there. $\blacksquare$</p>
+estimate $\lVert K\star L\rVert_2\leq\lVert K\rVert_2\lVert L\rVert_2$ proved there.</p>
 <p><strong>Remark.</strong> The Hilbert–Schmidt operators form a two-sided ideal of the algebra of bounded operators on
 $L^2$, and this is where the general theory begins; the concrete statement above is all that the corpus
 uses before <em>Banach and Hilbert Spaces</em>, later in this Part, where the ideal is placed in the algebra
@@ -290,7 +290,7 @@ $$
 \leq2\lVert S-S_n\rVert+\lVert S_nf_m-S_nf_{m'}\rVert ,
 $$
 and choosing $n$ first and then $m,m'$ large makes both terms small. Hence $Sf_m$ is Cauchy, and the
-diagonal subsequence converges; $S$ is compact. $\blacksquare$</p>
+diagonal subsequence converges; $S$ is compact.</p>
 <p><strong>Corollary.</strong> Every Hilbert–Schmidt integral operator is compact, and so is every finite-rank operator.
 The Hilbert–Schmidt norm is not the operator norm: the family $K_N$ converges to $K$ in the
 Hilbert–Schmidt norm and therefore in the operator norm, and the limit is compact although a general

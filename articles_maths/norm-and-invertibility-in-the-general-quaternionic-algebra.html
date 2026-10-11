@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norm and Invertibility in the General Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="norm-and-invertibility-in-the-general-quaternionic-algebra"><strong>Norm and Invertibility in the General Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article studies the <strong>algebraic norm</strong> of the biquaternion algebra read through the general quaternionic bilinear product, and it settles what invertibility means for that product.</p>
+<p>A norm is relative to a product, and the one of this article is defined by the square: the general quaternionic product has the property that the square of every element is a scalar element, and its norm is the scalar that the square produces. The norm is then the same quadratic form as the one of the plain product, and it is multiplicative for $\star$; what is new is not the form but the reading, because the square of the plain product is not central in general and the norm of the plain product is not the coefficient of the plain square.</p>
+<p>The inverse is where the two products separate. The definition of an inverse, stated once in <em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>The Unit and the Inverse</em>, presupposes a product with a <strong>two-sided unit</strong>, and the general quaternionic product has a <strong>left unit</strong> alone. The consequence is stated and not filled: no element of $\mathbb{B}$ is invertible of $\star$, the product has no group of units of its own, and the word has no reading for it. What survives is the pair of one-sided inverse equations relative to the left unit $e_0$, and the article computes them: the two have the same unique solution, $(\tilde P^{-1})^{\natural}$, exactly when the norm is non-zero, and neither has a solution when the norm vanishes. The criterion is therefore the norm, exactly as for the plain product, and the difference between the two products lies in the object and not in the criterion.</p>
+<p><strong>Boundaries.</strong> The norm and the invertibility criterion of the plain product are <em>Norm and Invertibility in the General Plain Algebra</em>, and the invertibility criterion is used here only through its specialisation $\tilde P$ invertible exactly when $N(\tilde P)\neq0$. The zero divisors are <em>Zero Divisors of the General Quaternionic Algebra</em>, where the set $\{N=0\}\setminus\{0\}$ is characterised as a set; the one-sided inverse equations of the four general products side by side, and the tabulation of their solutions, are <em>The Zero Divisors and the Four General Products</em>, §<em>The One-Sided Inverse Equations</em>, whose table is quoted and not restated. The product and its element theory are <em>Introduction to the General Quaternionic Algebra of Biquaternions</em>; the left multiplications and the monoid they form are <em>The Left Multiplications of the Quaternionic Product and the Opposite Monoid</em>; and the signatures of the norm on the remarkable subspaces are <em>Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$, with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product $\tilde P\tilde Q$, and the product of this article is the general quaternionic bilinear product</p>
+<p>$$
+\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q ,
+$$</p>
+<p>with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\mathbf Q$ and $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$ the vector part. An element is $\tilde Q=Q_0e_0+\mathbf Q$, and $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ is the complex bilinear form of the vector parts.</p>
+<h2 id="the-norm-of-the-product">The Norm of the Product</h2>
+<h3 id="definition">Definition</h3>
+<p>For a general product, the <strong>norm</strong> is the scalar coefficient of the square when the square is central, and this is the definition the article uses.</p>
+<p><strong>Definition.</strong> Let $\star$ be a product on $\mathbb{B}$ whose square lands in the scalar line $\mathbb{C}e_0$. The <strong>norm of $\star$</strong> is the function $N$ defined by</p>
+<p>$$
+\tilde Q\star\tilde Q=N(\tilde Q)\,e_0 .
+$$</p>
+<p>Throughout this article the product is the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, whose square is central, and the norm means the norm of that product.</p>
+<p><strong>Proposition.</strong> For every $\tilde Q\in\mathbb{B}$,</p>
+<p>$$
+\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=N(\tilde Q)\,e_0 , \qquad N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q) .
+$$</p>
+<p><strong>Proof.</strong> The first display is the definition of the product at equal arguments; the scalar–vector form of <em>Introduction to the General Quaternionic Algebra of Biquaternions</em> gives $\tilde Q^{\natural}\tilde Q=(Q_0-\mathbf Q)(Q_0+\mathbf Q)=Q_0^2-\mathbf Q^2$, and $\mathbf Q^2=-(\mathbf Q,\mathbf Q)$ for a vector part. The same scalar is produced in the two orders, $\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}$, because the computation read the other way, $(Q_0+\mathbf Q)(Q_0-\mathbf Q)=Q_0^2-\mathbf Q^2$, gives the same value.</p>
+<p>The norm is therefore an element of $\mathbb{C}$ and not a length: it is the value of a quadratic form on the complex space $\mathbb{B}$, and its vanishing set is a cone and not a sphere.</p>
+<h3 id="the-polarisation">The Polarisation</h3>
+<p><strong>Proposition.</strong> The polar form of the norm is the scalar coefficient of the symmetrised product. Writing</p>
+<p>$$
+N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q) ,
+$$</p>
+<p>one has</p>
+<p>$$
+N(\tilde P+\tilde Q)-N(\tilde P)-N(\tilde Q)=2N(\tilde P,\tilde Q) , \qquad
+\tilde P\star\tilde Q+\tilde Q\star\tilde P=2N(\tilde P,\tilde Q)\,e_0 .
+$$</p>
+<p><strong>Proof.</strong> The scalar–vector form of $\tilde P+\tilde Q$ gives $N(\tilde P+\tilde Q)=N(\tilde P)+N(\tilde Q)+2N(\tilde P,\tilde Q)$; and $\tilde P\star\tilde Q+\tilde Q\star\tilde P=(\tilde P^{\natural}\tilde Q)+(\tilde P^{\natural}\tilde Q)^{\natural}$ has scalar part twice $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=N(\tilde P,\tilde Q)$ and vanishing vector part, by the symmetry computation of the introduction.</p>
+<p>The symmetric half read as an operation, with its centrality, its coefficient on the remarkable subspaces and its Jordan reading, is <em>The Symmetrised Quaternionic Product and the Hermitian Subspace</em>, which owns the symmetrisation; the proposition above is the same statement read as the polarisation of the quadratic form of the norm.</p>
+<h3 id="multiplicativity">Multiplicativity</h3>
+<p><strong>Proposition.</strong> The norm is multiplicative for the product,</p>
+<p>$$
+N(\tilde P\star\tilde Q)=N(\tilde P)\,N(\tilde Q) ,
+$$</p>
+<p>and it is invariant under the natural conjugation, $N(\tilde P^{\natural})=N(\tilde P)$.</p>
+<p><strong>Proof.</strong> Since $\natural$ is an anti-automorphism and an involution, $(\tilde P^{\natural}\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural\natural}=\tilde Q^{\natural}\tilde P$, so</p>
+<p>$$
+N(\tilde P\star\tilde Q)=(\tilde P^{\natural}\tilde Q)^{\natural}(\tilde P^{\natural}\tilde Q)=\tilde Q^{\natural}\tilde P\tilde P^{\natural}\tilde Q=\tilde Q^{\natural}N(\tilde P)\tilde Q=N(\tilde P)\,\tilde Q^{\natural}\tilde Q=N(\tilde P)\,N(\tilde Q) ,
+$$</p>
+<p>using that $N(\tilde P)$ is central. For the invariance, $N(\tilde P^{\natural})=\tilde P^{\natural}(\tilde P^{\natural})^{\natural}=\tilde P^{\natural}\tilde P=N(\tilde P)$.</p>
+<p>The multiplicativity is the same statement as the multiplicativity of the plain norm, and it has the same proofs; it is recorded here because the square of this product is the norm, whereas the square of the plain product is the norm only on the vector part of the element.</p>
+<p><strong>Corollary.</strong> The vanishing set of the norm is stable under the product: if $N(\tilde Q)=0$ then $N(\tilde P\star\tilde Q)=0$ for every $\tilde P$, and the same with the factors exchanged.</p>
+<h2 id="the-unit-and-the-absence-of-the-inverse">The Unit and the Absence of the Inverse</h2>
+<p><strong>Definition.</strong> Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a <strong>left unit of $\star$</strong> when $e\star x=x$ for every $x$, a <strong>right unit</strong> when $x\star e=x$ for every $x$, and a <strong>two-sided unit</strong>, or <strong>identity</strong>, when it is both; and if $\star$ has a two-sided unit $e$, an element $x$ is <strong>invertible of $\star$</strong> when there is a $y$ with $x\star y=y\star x=e$. The definitions are <em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>The Unit and the Inverse</em>, and they name the product at every step.</p>
+<p>The unit of the general quaternionic product is settled in <em>Introduction to the General Quaternionic Algebra of Biquaternions</em>, and it is recalled here because the inverse depends on it.</p>
+<p><strong>Proposition (the unit).</strong> The element $e_0$ is a left unit of $\star$ and the only one; there is no right unit; hence there is no two-sided unit.</p>
+<p><strong>Proof.</strong> $e_0\star\tilde Q=e_0^{\natural}\tilde Q=e_0\tilde Q=\tilde Q$, and a left unit $\tilde E$ reads $\tilde E^{\natural}=e_0$ at $\tilde Q=e_0$, whence $\tilde E=e_0$. The equation $\tilde P\star\tilde E=\tilde P$ at $\tilde P=e_0$ forces $\tilde E=e_0$, and at $\tilde P=e_1$ reads $e_1\star e_0=-e_1\neq e_1$; so there is no right unit.</p>
+<p><strong>Absence (the inverse).</strong> The quaternionic product has no two-sided unit, so the definition of the inverse has no reading for it: <strong>no element of $\mathbb{B}$ is invertible of $\star$</strong>, and the product has no group of units. What the article computes in the next section is the pair of one-sided equations relative to the left unit $e_0$; it is not an inverse theory of the product, and it is never called one.</p>
+<h2 id="the-one-sided-inverse-equations">The One-Sided Inverse Equations</h2>
+<p>Relative to a left unit $e_0$ the two halves of the inverse equation remain meaningful, and they are the definition of the one-sided invertibility of the product.</p>
+<p><strong>Definition.</strong> Let $\tilde P\in\mathbb{B}$. An element $\tilde R$ with $\tilde P\star\tilde R=e_0$ is a <strong>right inverse</strong> of $\tilde P$ relative to $e_0$, and an element $\tilde L$ with $\tilde L\star\tilde P=e_0$ is a <strong>left inverse</strong> of $\tilde P$ relative to $e_0$. The element $\tilde P$ is <strong>right-invertible</strong> when it has a right inverse and <strong>left-invertible</strong> when it has a left inverse.</p>
+<p><strong>Theorem (the one-sided equations).</strong> For every $\tilde P\in\mathbb{B}$ the two equations</p>
+<p>$$
+\tilde P\star\tilde X=e_0 , \qquad \tilde X\star\tilde P=e_0
+$$</p>
+<p>have a solution exactly when $N(\tilde P)\neq0$, and then each has the <strong>same unique</strong> solution,</p>
+<p>$$
+\tilde X=(\tilde P^{-1})^{\natural}=\frac{\tilde P^{\natural\natural}}{N(\tilde P^{\natural})}=\frac{\tilde P}{N(\tilde P)} ,
+$$</p>
+<p>where $\tilde P^{-1}=\tilde P^{\natural}/N(\tilde P)$ is the inverse of the plain product. When $N(\tilde P)=0$ neither equation has a solution.</p>
+<p><strong>Proof.</strong> The first equation is $\tilde P^{\natural}\tilde X=e_0$, a plain-product equation with the fixed right-hand side $e_0$; composing on the left with the plain inverse of $\tilde P^{\natural}$, legitimate exactly when that element is invertible, gives $\tilde X=(\tilde P^{\natural})^{-1}$. The plain algebra is associative, so the solution is unique when it exists. Now $\tilde P^{\natural}$ is a unit of the plain product exactly when $N(\tilde P^{\natural})\neq0$, that is exactly when $N(\tilde P)\neq0$, and its inverse is $(\tilde P^{\natural})^{-1}=(\tilde P^{\natural})^{\natural}/N(\tilde P^{\natural})=\tilde P/N(\tilde P)=(\tilde P^{-1})^{\natural}$. This proves the statement for the first equation. For the second, $\tilde X\star\tilde P=\tilde X^{\natural}\tilde P=e_0$; composing on the right with the plain inverse of $\tilde P$ gives $\tilde X^{\natural}=\tilde P^{-1}$, hence $\tilde X=(\tilde P^{-1})^{\natural}$, the same element, and the same invertibility condition. If $N(\tilde P)=0$ and $\tilde P\neq0$ then $\tilde P^{\natural}$ is a zero divisor of the plain product, so the equation $\tilde P^{\natural}\tilde X=e_0$ has no solution; and if $\tilde P=0$ the equations read $0=e_0$, also with no solution.</p>
+<p><strong>Remark.</strong> The common solution is the natural conjugate of the plain inverse, and not the plain inverse itself. The coincidence of the two one-sided solutions, and the fact that they are given by the plain inverse of the conjugated element, are the whole content of the table of <em>The Zero Divisors and the Four General Products</em> §<em>The One-Sided Inverse Equations</em> read on this product; the table is quoted there and the computation is the one above.</p>
+<p><strong>Corollary.</strong> The element $\tilde P$ is left-invertible and right-invertible relative to $e_0$ exactly when $N(\tilde P)\neq0$, and then one and the same element, $(\tilde P^{-1})^{\natural}$, serves as both a left inverse and a right inverse:</p>
+<p>$$
+\tilde P\star(\tilde P^{-1})^{\natural}=e_0=(\tilde P^{-1})^{\natural}\star\tilde P .
+$$</p>
+<p><strong>Proof.</strong> The theorem gives the two solutions and they are equal. The displayed identity is the theorem at that element, using $\tilde P\star\tilde R=\tilde P^{\natural}(\tilde P^{-1})^{\natural}=(\tilde P^{-1}\tilde P)^{\natural}=e_0$ and $(\tilde P^{-1})^{\natural}\star\tilde P=(\tilde P^{-1})^{\natural\natural}\tilde P=\tilde P^{-1}\tilde P=e_0$.</p>
+<p>The corollary is a statement about the left unit $e_0$ and not an inverse of the product, because the product has no right unit: the equation it solves uses $e_0$ on the right, where $e_0$ is not a right unit, so the solution is a one-sided object of each equation and not an inverse in the sense of <em>Definitions for the Study of the 12 Algebraic Structures</em>.</p>
+<h2 id="the-criterion">The Criterion</h2>
+<p><strong>Theorem (the criterion for the general quaternionic product).</strong> For a nonzero $\tilde P\in\mathbb{B}$ the following are equivalent:</p>
+<ol>
+<li>$N(\tilde P)\neq0$;</li>
+<li>$\tilde P$ is a unit of the plain product, with $\tilde P^{-1}=\tilde P^{\natural}/N(\tilde P)$;</li>
+<li>the two one-sided equations of §<em>The One-Sided Inverse Equations</em> have a solution.</li>
+</ol>
+<p>They are equivalent to the single negative statement that $\tilde P$ is a zero divisor of the algebra if and only if $N(\tilde P)=0$.</p>
+<p><strong>Proof.</strong> The equivalence of (1) and (2) is the invertibility criterion of the plain product (<em>Norm and Invertibility in the General Plain Algebra</em>), whose central square is the same $N$. The equivalence of (1) and (3) is the theorem of the preceding section. For the last clause, $\tilde P\neq0$ with $N(\tilde P)=0$ is a zero divisor of the algebra, and conversely (<em>Zero Divisors of the General Quaternionic Algebra</em>).</p>
+<p>The criterion has the same form as the criterion of the plain product because the norm is the same quadratic form; what changes is that the plain product converts it into "invertible" and this product converts it into "soluble on one side".</p>
+<h2 id="the-three-way-classification">The Three-Way Classification</h2>
+<p>The elements of $\mathbb{B}$ fall into three classes according to the value of the norm, and the classes are the ones of the plain algebra with the inverse column replaced by the one-sided column.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition on $N(\tilde P)$</th>
+<th>condition on $\tilde P$</th>
+<th>under the plain product</th>
+<th>under the quaternionic product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N(\tilde P)\neq0$</td>
+<td>none</td>
+<td>a unit</td>
+<td>the one-sided equations soluble, with the common solution $(\tilde P^{-1})^{\natural}$</td>
+</tr>
+<tr>
+<td>$N(\tilde P)=0$</td>
+<td>$\tilde P=0$</td>
+<td>the zero element</td>
+<td>the zero element</td>
+</tr>
+<tr>
+<td>$N(\tilde P)=0$</td>
+<td>$\tilde P\neq0$</td>
+<td>a zero divisor</td>
+<td>a zero divisor, with neither one-sided equation soluble</td>
+</tr>
+</tbody>
+</table></div>
+<p>The classification is a classification of the elements by their behaviour in the two products, and the middle column is quoted from <em>Zero Divisors of the General Plain Algebra</em>, §<em>The Three-Way Classification</em>; the third column is this article.</p>
+<h2 id="the-group-of-units-and-why-there-is-none">The Group of Units, and Why There Is None</h2>
+<p>Let $\mathbb{B}^{\times}=\{\tilde P:N(\tilde P)\neq0\}$ be the set of the elements on which the norm does not vanish.</p>
+<p><strong>Proposition.</strong> The set $\mathbb{B}^{\times}$ is the group of units of the plain product, it contains $e_0$, and it is stable under the quaternionic product. It is <strong>not</strong> a group under $\star$: the product has no two-sided unit and it is not associative, so $\mathbb{B}^{\times}$ with $\star$ is a set with a left unit in which every left translation is a bijection, and nothing more.</p>
+<p><strong>Proof.</strong> The first clause is the plain invertibility criterion. Stability under $\star$ is the multiplicativity of the norm: $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)\neq0$. The absence of a two-sided unit is §<em>The Unit and the Absence of the Inverse</em>, and the failure of associativity is <em>Introduction to the General Quaternionic Algebra of Biquaternions</em>; a group requires both, so there is none. Finally, the left translation $\tilde X\mapsto\tilde P\star\tilde X=L^{\mathrm{plain}}_{\tilde P^{\natural}}(\tilde X)$ is a plain left multiplication by a unit and is therefore a bijection, and the same holds on the right by the multiplicativity read in the other order.</p>
+<p><strong>Corollary (the group of the left multiplications).</strong> The left multiplications $L_{\tilde P}$ with $\tilde P\in\mathbb{B}^{\times}$ are the invertible left multiplications of the product; they form a group under composition, and the map $\tilde P\mapsto L_{\tilde P}$ is an anti-isomorphism of $\mathbb{B}^{\times}$ onto it. The monoid law $L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$ and the failure of the right family are <em>The Left Multiplications of the Quaternionic Product and the Opposite Monoid</em>.</p>
+<p><strong>Proof.</strong> $L_{\tilde P}=L^{\mathrm{plain}}_{\tilde P^{\natural}}$ is invertible exactly when $\tilde P^{\natural}$, hence $\tilde P$, is a plain unit; the composition law is the one cited, and it reverses the order, so the map is an anti-isomorphism onto its image, which is stable under composition and inversion.</p>
+<p>This is the precise sense in which the product "has a group of units" only on the operator side. The set $\mathbb{B}^{\times}$ carries the inverse of the plain product, and it is the index set of the invertible operators; the product $\star$ does not make it a group.</p>
+<h2 id="the-norm-on-the-remarkable-subspaces">The Norm on the Remarkable Subspaces</h2>
+<p>The norm is the quadratic form of the algebra, so its restriction to the remarkable subspaces is a form with a signature, and the sign decides which subspaces carry elements of norm zero. The signatures are computed in <em>Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions</em> and are quoted here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>remarkable subspace</th>
+<th>signature of $N$</th>
+<th>elements of norm zero</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$, the centre</td>
+<td>$(1,1)$</td>
+<td>$0$ alone</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$, the vector subspace</td>
+<td>$(3,3)$</td>
+<td>the isotropic cone of the vector subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, the quaternion subspace</td>
+<td>$(4,0)$</td>
+<td>$0$ alone</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace</td>
+<td>$(0,4)$</td>
+<td>$0$ alone</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{+}$, the Hermitian subspace</td>
+<td>$(1,3)$</td>
+<td>the isotropic cone of $\mathbb{M}_{+}$, all of it non-pure</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{-}$, the anti-Hermitian subspace</td>
+<td>$(3,1)$</td>
+<td>the isotropic cone of $\mathbb{M}_{-}$, all of it non-pure</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Corollary.</strong> Every nonzero element of the quaternion subspace and of the anti-quaternion subspace is a unit of the plain product and satisfies both one-sided equations of $\star$. The other four subspaces contain nonzero elements of norm zero; on those the criterion fails and neither one-sided equation is soluble, and they are zero divisors of the algebra.</p>
+<p><strong>Proof.</strong> The norm is definite on the quaternion and the anti-quaternion subspaces and indefinite on the other four, by the table; the criterion of §<em>The Criterion</em> converts the values into the two statements. On a pure element the norm is $(\mathbf P,\mathbf P)$ and on a Hermitian element it is $|a_0|^2-|\mathbf b|^2$ in the coordinates of the subspace, so every zero of the norm in $\mathbb{M}_{+}$ or in $\mathbb{M}_{-}$ has non-zero scalar part, that is, is non-pure.</p>
+<h2 id="summary">Summary</h2>
+<p>The general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ has a central square, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ with $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q)$, and this scalar is the <strong>norm</strong> of the product: the same quadratic form as the norm of the plain algebra, with polar form the scalar coefficient $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ of the symmetrised product and with the multiplicative law $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$.</p>
+<p>The product has the left unit $e_0$ and no right one, hence no two-sided unit, and the definition of the inverse, which requires one, applies to no element: <strong>there is no invertible element and no group of units of the quaternionic product</strong>. What survives is the pair of one-sided equations relative to $e_0$: both have the same unique solution, $(\tilde P^{-1})^{\natural}=\tilde P/N(\tilde P)$, exactly when $N(\tilde P)\neq0$, and neither has a solution when $N(\tilde P)=0$. The criterion is thus the norm, as for the plain product, and the elements of non-vanishing norm form the plain group of units $\mathbb{B}^{\times}$, stable under $\star$ and carrying the invertible left multiplications, without being a group of the product. On the quaternion and the anti-quaternion subspaces the norm is definite and every nonzero element is a unit of the plain product; on the centre, the vector, the Hermitian and the anti-Hermitian subspaces it is indefinite and they carry the zero divisors.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>the basis, $e_0$ the identity, $e_k$ the quaternion units</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_0e_0+\mathbf Q$</td>
+<td>an element and its scalar–vector split</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$</td>
+<td>the general quaternionic bilinear product</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=\sum_\mu Q_\mu^2$</td>
+<td>the norm, the scalar of the square, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$</td>
+</tr>
+<tr>
+<td>$N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$</td>
+<td>the polar form of the norm</td>
+</tr>
+<tr>
+<td>$e_0$</td>
+<td>the left unit of $\star$; there is no right unit, hence no two-sided one</td>
+</tr>
+<tr>
+<td>$\tilde P^{-1}=\tilde P^{\natural}/N(\tilde P)$</td>
+<td>the inverse of the plain product</td>
+</tr>
+<tr>
+<td>$(\tilde P^{-1})^{\natural}$</td>
+<td>the common solution of the two one-sided equations of $\star$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\times}=\{N\neq0\}$</td>
+<td>the plain group of units, stable under $\star$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_{+},\mathbb{M}_{-}$</td>
+<td>the remarkable subspaces</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the norm and the one-sided inverses of a non-associative algebra.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for a quadratic form defined by a product and the polarisation of its multiplicative law.</li>
+<li><em>Norm and Invertibility in the General Plain Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md</code>), for the norm of the algebra, the polarisation, the multiplicativity and the invertibility criterion.</li>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), §<em>The Unit and the Inverse</em>, for the definitions of the unit, the two-sided inverse and the one-sided inverse.</li>
+<li><em>Zero Divisors of the General Quaternionic Algebra</em> (<code>articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md</code>), for the set $\{N=0\}\setminus\{0\}$, its criterion and its annihilators.</li>
+<li><em>The Zero Divisors and the Four General Products</em> (<code>articles_maths/the-zero-divisors-and-the-four-general-products.md</code>), for the one-sided inverse equations of the four general products tabulated side by side.</li>
+<li><em>The Left Multiplications of the Quaternionic Product and the Opposite Monoid</em> (<code>articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md</code>), for the monoid law of the left multiplications and the group of its invertible elements.</li>
+<li><em>Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md</code>), for the signatures of the norm on the six subspaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

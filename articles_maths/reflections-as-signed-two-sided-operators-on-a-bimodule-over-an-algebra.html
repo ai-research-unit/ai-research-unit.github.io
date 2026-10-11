@@ -70,23 +70,23 @@ $$</p>
 r_u\,r_v=\operatorname{conj}_{u\alpha(v)} \qquad (u,v \in A^{\times}),
 $$</p>
 <p>where $\operatorname{conj}_w(x)=wxw^{-1}$. The product of two reflections is therefore an inner conjugation, and it is a reflection only when it can be rewritten in the form $r_w$; in general the reflections are not closed under composition.</p>
-<p><em>Proof.</em> The inverse is the corollary on invertibility of <em>The Signed Sandwich on a Bimodule over an Algebra</em>. For the product, the composition law gives $r_ur_v=S_{u\alpha(v),\,\alpha(v^{-1})u^{-1}}$; since $\alpha(v^{-1})=\alpha(v)^{-1}$ the second parameter is $\alpha(v)^{-1}u^{-1}=(u\alpha(v))^{-1}$, so the composite is the unsigned diagonal sandwich $S_{w,w^{-1}}$ with $w=u\alpha(v)$, that is $\operatorname{conj}_w$. A reflection as a set of operators is the image of $A^{\times}$ under $u\mapsto r_u$, which need not be a subgroup. $\square$</p>
+<p><em>Proof.</em> The inverse is the corollary on invertibility of <em>The Signed Sandwich on a Bimodule over an Algebra</em>. For the product, the composition law gives $r_ur_v=S_{u\alpha(v),\,\alpha(v^{-1})u^{-1}}$; since $\alpha(v^{-1})=\alpha(v)^{-1}$ the second parameter is $\alpha(v)^{-1}u^{-1}=(u\alpha(v))^{-1}$, so the composite is the unsigned diagonal sandwich $S_{w,w^{-1}}$ with $w=u\alpha(v)$, that is $\operatorname{conj}_w$. A reflection as a set of operators is the image of $A^{\times}$ under $u\mapsto r_u$, which need not be a subgroup.</p>
 <h3 id="the-criterion">The criterion</h3>
 <p><strong>Theorem.</strong> For $u \in A^{\times}$ the operator $r_u$ is a reflection if and only if $u\alpha(u) \in C_A(M)$:</p>
 <p>$$
 r_u^{2}=\operatorname{conj}_{u\alpha(u)}=\mathrm{id}_M \iff u\,\alpha(u) \in C_A(M).
 $$</p>
 <p>When the condition holds, $r_u$ is the inner automorphism $\operatorname{conj}_{u\alpha(u)}$ of order two; when it fails, $r_u$ is not a reflection, its order being whatever the order of the coset of $u\alpha(u)$ in $A^{\times}/C_A(M)^{\times}$ is.</p>
-<p><em>Proof.</em> The square is $\operatorname{conj}_{u\alpha(u)}$ by the proposition, and an inner conjugation is the identity exactly when the conjugating element commutes with every element of $M$, which is the definition of $C_A(M)$. If the condition fails, the square is a nontrivial inner conjugation, so $r_u$ is not of order two and is not a reflection. Its order may be finite or infinite: $\operatorname{conj}_w^{k}=\operatorname{conj}_{w^{k}}$ is the identity exactly when $w^{k} \in C_A(M)$, and a unit outside $C_A(M)$ may still have a power inside it. $\square$</p>
+<p><em>Proof.</em> The square is $\operatorname{conj}_{u\alpha(u)}$ by the proposition, and an inner conjugation is the identity exactly when the conjugating element commutes with every element of $M$, which is the definition of $C_A(M)$. If the condition fails, the square is a nontrivial inner conjugation, so $r_u$ is not of order two and is not a reflection. Its order may be finite or infinite: $\operatorname{conj}_w^{k}=\operatorname{conj}_{w^{k}}$ is the identity exactly when $w^{k} \in C_A(M)$, and a unit outside $C_A(M)$ may still have a power inside it.</p>
 <p>The theorem names the units that realise reflections.</p>
 <p><strong>Definition.</strong> A unit $u \in A^{\times}$ <strong>acts by an involution</strong> when the signed inner conjugation $r_u$ is an involution, that is, when $u\alpha(u) \in C_A(M)$.</p>
 <p>Thus the reflections are exactly the operators $r_u$ with $u$ acting by an involution, and the correspondence to be studied is between the reflections and the cosets of these units.</p>
-<h3 id="the-special-case-math52">The special case $u\alpha(u)=1$</h3>
+<h3 id="the-special-case-math50">The special case $u\alpha(u)=1$</h3>
 <p><strong>Proposition.</strong> If $u\alpha(u)=1$, that is $\alpha(u)=u^{-1}$, then $u$ acts by an involution and</p>
 <p>$$
 r_u(x)=u\,\alpha(x)\,u^{-1}=u\,\alpha(x)\,\alpha(u)=u\,\alpha(xu).
 $$</p>
-<p><em>Proof.</em> $\alpha(u)=u^{-1}$ gives $u\alpha(u)=1 \in C_A(M)$, so the criterion holds; the displayed rewriting uses $u^{-1}=\alpha(u)$ and the automorphism property $\alpha(a)\alpha(b)=\alpha(ab)$. $\square$</p>
+<p><em>Proof.</em> $\alpha(u)=u^{-1}$ gives $u\alpha(u)=1 \in C_A(M)$, so the criterion holds; the displayed rewriting uses $u^{-1}=\alpha(u)$ and the automorphism property $\alpha(a)\alpha(b)=\alpha(ab)$.</p>
 <p>The elements with $\alpha(u)=u^{-1}$ are the <strong>$\alpha$-antisymmetric</strong> units; they always act by an involution, and they form a subgroup of $A^{\times}$ when the centre contains a suitable element, as the examples show.</p>
 <h2 id="the-correspondence">The Correspondence</h2>
 <h3 id="the-map-from-units-to-reflections">The map from units to reflections</h3>
@@ -95,11 +95,11 @@ $$</p>
 r_u=r_v \iff v^{-1}u \in C_A(M).
 $$</p>
 <p>Consequently the map $u \mapsto r_u$ is constant on the right cosets of the subgroup $C_A(M)^{\times}=C_A(M)\cap A^{\times}$ and separates distinct cosets; its image is the set of reflections, and the criterion "$u$ acts by an involution" depends only on the coset.</p>
-<p><em>Proof.</em> $r_u=r_v$ says $u\alpha(x)u^{-1}=v\alpha(x)v^{-1}$ for all $x$, that is $w\alpha(x)w^{-1}=\alpha(x)$ with $w=v^{-1}u$, that is $w\alpha(x)=\alpha(x)w$ for all $x$. Since $\alpha$ is bijective on $M$ this says $wy=yw$ for all $y \in M$, which is $w \in C_A(M)$. The subgroup statement is the proposition below, and the dependence on the coset is the proposition after it. $\square$</p>
+<p><em>Proof.</em> $r_u=r_v$ says $u\alpha(x)u^{-1}=v\alpha(x)v^{-1}$ for all $x$, that is $w\alpha(x)w^{-1}=\alpha(x)$ with $w=v^{-1}u$, that is $w\alpha(x)=\alpha(x)w$ for all $x$. Since $\alpha$ is bijective on $M$ this says $wy=yw$ for all $y \in M$, which is $w \in C_A(M)$. The subgroup statement is the proposition below, and the dependence on the coset is the proposition after it.</p>
 <p><strong>Proposition.</strong> $C_A(M)$ is a subalgebra of $A$ containing $Z(A)$, and $C_A(M)^{\times}$ is a subgroup of $A^{\times}$.</p>
-<p><em>Proof.</em> $C_A(M)$ is closed under addition, multiplication and the scalars, and contains the centre because central elements commute with everything. If $w \in C_A(M)$ is a unit then $w^{-1}x=w^{-1}xww^{-1}=w^{-1}wxw^{-1}=xw^{-1}$ for all $x$, so $w^{-1} \in C_A(M)$; hence the units of $C_A(M)$ form a subgroup of $A^{\times}$. $\square$</p>
+<p><em>Proof.</em> $C_A(M)$ is closed under addition, multiplication and the scalars, and contains the centre because central elements commute with everything. If $w \in C_A(M)$ is a unit then $w^{-1}x=w^{-1}xww^{-1}=w^{-1}wxw^{-1}=xw^{-1}$ for all $x$, so $w^{-1} \in C_A(M)$; hence the units of $C_A(M)$ form a subgroup of $A^{\times}$.</p>
 <p><strong>Proposition.</strong> If $u$ acts by an involution and $c \in C_A(M)^{\times}$, then $uc$ acts by an involution and $r_{uc}=r_u$.</p>
-<p><em>Proof.</em> $r_{uc}=r_u$ by the theorem, since $u^{-1}(uc)=c \in C_A(M)$; and the criterion is a property of the operator $r_u$, so it holds at $uc$ as well. $\square$</p>
+<p><em>Proof.</em> $r_{uc}=r_u$ by the theorem, since $u^{-1}(uc)=c \in C_A(M)$; and the criterion is a property of the operator $r_u$, so it holds at $uc$ as well.</p>
 <h3 id="the-quotient-description">The quotient description</h3>
 <p>The correspondence is therefore a bijection of sets</p>
 <p>$$
@@ -107,27 +107,27 @@ $$</p>
 $$</p>
 <p>sending the coset of $u$ to $r_u$. For a faithful bimodule $C_A(M)=Z(A)$ and the correspondence is between reflections and the cosets of $Z(A)^{\times}$ in the units that act by an involution.</p>
 <p><strong>Corollary (the faithful case).</strong> If $M$ is faithful over $A$, then $r_u=r_v$ exactly when $v^{-1}u \in Z(A)$, and $r_u$ is a reflection exactly when $u\alpha(u) \in Z(A)$.</p>
-<p><em>Proof.</em> $C_A(M)=Z(A)$ when $M$ is faithful, by the definition of the centralizer. $\square$</p>
+<p><em>Proof.</em> $C_A(M)=Z(A)$ when $M$ is faithful, by the definition of the centralizer.</p>
 <h3 id="the-elements-of-order-two">The elements of order two</h3>
 <p><strong>Proposition.</strong> Suppose $\alpha(u)=u$ and $u^{2} \in C_A(M)$. Then $u$ acts by an involution and $r_u=\operatorname{conj}_u$. In particular every involution $u$ of $A$ with $u^{2}=1$ that commutes with the action on $M$ realises a reflection.</p>
-<p><em>Proof.</em> $u\alpha(u)=u^{2} \in C_A(M)$; and $r_u(x)=u\alpha(x)u^{-1}=uxu^{-1}$ because $\alpha(u)=u$, so $r_u=\operatorname{conj}_u$, whose square is $\operatorname{conj}_{u^{2}}=\mathrm{id}$. $\square$</p>
+<p><em>Proof.</em> $u\alpha(u)=u^{2} \in C_A(M)$; and $r_u(x)=u\alpha(x)u^{-1}=uxu^{-1}$ because $\alpha(u)=u$, so $r_u=\operatorname{conj}_u$, whose square is $\operatorname{conj}_{u^{2}}=\mathrm{id}$.</p>
 <h2 id="the-degenerate-cases">The Degenerate Cases</h2>
 <h3 id="failure-of-the-involution-property">Failure of the involution property</h3>
 <p>The first failure is the non-involutive operator.</p>
 <p><strong>Proposition.</strong> If $u\alpha(u) \notin C_A(M)$ then $r_u$ is not a reflection: its square is the nontrivial inner conjugation $\operatorname{conj}_{u\alpha(u)}$, so $r_u^{2}\neq\mathrm{id}_M$. Its order is the order of the class of $u\alpha(u)$ in $A^{\times}/C_A(M)^{\times}$ and may be finite or infinite.</p>
-<p><em>Proof.</em> Immediate from the criterion and the computation of the powers of $\operatorname{conj}_w$, namely $\operatorname{conj}_w^{k}=\operatorname{conj}_{w^{k}}$. $\square$</p>
+<p><em>Proof.</em> Immediate from the criterion and the computation of the powers of $\operatorname{conj}_w$, namely $\operatorname{conj}_w^{k}=\operatorname{conj}_{w^{k}}$.</p>
 <p><strong>Example.</strong> Let $A=M_2(k)$ with $\alpha=\mathrm{id}$, $M=A$, and $u=E_{12}+I$. Then $u^{2}=I+2E_{12}\notin Z(A)=C_A(M)$, so $r_u=\operatorname{conj}_u$ has $r_u^{2}=\operatorname{conj}_{u^{2}}\neq\mathrm{id}$: the operator has infinite order and the unit does not act by an involution.</p>
 <h3 id="failure-of-uniqueness">Failure of uniqueness</h3>
 <p>The second failure is the non-faithful module.</p>
 <p><strong>Proposition.</strong> If $C_A(M) \supsetneq Z(A)$ — for instance when $M$ is not faithful, or when the action of $A$ on $M$ factors through a quotient with a larger centre — then there are units $u \neq v$ with $r_u=r_v$: the element is not recoverable from the reflection.</p>
-<p><em>Proof.</em> Take $v=uc$ with $c \in C_A(M)^{\times}$, $c \neq 1$. Then $v \neq u$ but $r_v=r_u$ by the theorem. $\square$</p>
+<p><em>Proof.</em> Take $v=uc$ with $c \in C_A(M)^{\times}$, $c \neq 1$. Then $v \neq u$ but $r_v=r_u$ by the theorem.</p>
 <p><strong>Example.</strong> Let $A=M_2(k)$ act on $M=k^2$ through the quotient $k$ — that is, $A$ acts by scalars through an algebra homomorphism $A \to k$ — so that every element of $M_2(k)$ acts as a scalar and $C_A(M)$ is the whole algebra. Then every unit of $A$ realises the same signed inner conjugation on $M$, and the correspondence collapses: the reflection is one operator and the class of realising units is all of $A^{\times}$.</p>
 <h3 id="the-trivial-grade-involution">The trivial grade involution</h3>
 <p><strong>Proposition.</strong> If $\alpha=\mathrm{id}$ then the criterion is $u^{2} \in C_A(M)$, the correspondence sends $u$ to $\operatorname{conj}_u$, and the reflections are the inner conjugations by units with $u^{2} \in C_A(M)$.</p>
-<p><em>Proof.</em> $u\alpha(u)=u^{2}$ and $r_u(x)=uxu^{-1}$ when $\alpha=\mathrm{id}$. $\square$</p>
+<p><em>Proof.</em> $u\alpha(u)=u^{2}$ and $r_u(x)=uxu^{-1}$ when $\alpha=\mathrm{id}$.</p>
 <h3 id="the-trivial-action-of-the-grade-involution">The trivial action of the grade involution</h3>
 <p><strong>Proposition.</strong> If $\alpha$ fixes every element of $M$ then $r_u=\operatorname{conj}_u$ for every $u$, whatever $\alpha$ does on $A$; the signed and the unsigned inner conjugations coincide, and the criterion reduces to $u^{2} \in C_A(M)$.</p>
-<p><em>Proof.</em> $\alpha(x)=x$ for $x \in M$, so $r_u(x)=uxu^{-1}$, and $u\alpha(u)$ acts on $M$ as $u^{2}$. $\square$</p>
+<p><em>Proof.</em> $\alpha(x)=x$ for $x \in M$, so $r_u(x)=uxu^{-1}$, and $u\alpha(u)$ acts on $M$ as $u^{2}$.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>(a) The regular bimodule.</strong> For $M={}_A A_A$ the bimodule is faithful and $C_A(M)=Z(A)$; the reflections are the $r_u$ with $u\alpha(u) \in Z(A)$, and $r_u=r_v$ exactly when $v^{-1}u \in Z(A)$. This is the criterion of the ring-level article, now read as a statement about cosets.</p>
 <p><strong>(b) The matrix algebra with an even/odd grading.</strong> For $A=M_2(k)$, $J=\operatorname{diag}(1,-1)$, $\alpha(X)=JXJ^{-1}$, and $M=A$, the unit $u=E_{12}+E_{21}$ has $\alpha(u)=-u$ and $u^{2}=I$, so $u\alpha(u)=-I \in Z(A)$ and $r_u$ is a reflection; the units $-u$ and $u$ realise the same reflection because $(-u)^{-1}u=-I \in Z(A)$.</p>

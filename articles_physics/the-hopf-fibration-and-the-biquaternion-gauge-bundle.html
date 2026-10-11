@@ -117,19 +117,18 @@ $$</p>
 <p>$$
 \pi(U) \;=\; U e_3 \bar U , \qquad U\in S^3 .
 $$</p>
-<p>Three elementary properties were verified on random unit quaternions, and together they are the fibration.</p>
 <p><strong>The image lies in the base.</strong> For $U\bar U=e_0$,</p>
 <p>$$
 \bigl(Ue_3\bar U\bigr)^2=Ue_3\bar U\,Ue_3\bar U=Ue_3e_3\bar U=-Ue_0\bar U=-e_0 ,
 $$</p>
-<p>so $Ue_3\bar U$ is a unit pure-imaginary quaternion: the map lands in $S^2$. The computation used only $\bar U U=e_0$, $e_3^2=-e_0$ and associativity. On $2000$ random unit quaternions the scalar part was at most $5.6\times10^{-17}$ in absolute value and the norm departed from $1$ by at most $4.4\times10^{-16}$.</p>
+<p>so $Ue_3\bar U$ is a unit pure-imaginary quaternion: the map lands in $S^2$. The computation used only $\bar U U=e_0$, $e_3^2=-e_0$ and associativity.</p>
 <p><strong>The fibres are circles.</strong> The map is invariant under right multiplication by the stabiliser,</p>
 <p>$$
 \pi\bigl(U g\bigr) = U g e_3 \bar g \bar U = U e_3 \bar U = \pi(U),
 \qquad
 g\in \mathrm{Stab}(e_3) ,
 $$</p>
-<p>because $g$ commutes with $e_3$ and $\bar g=g^{-1}$. The preimage of a point is therefore a coset, hence a circle, and the whole preimage of a point is exhausted by it: for any two solutions, $U_2 e_3\bar U_2=U_1e_3\bar U_1$ implies $U_1^{-1}U_2\in\mathrm{Stab}(e_3)$. On $500$ random unit quaternions and random phases the invariance held to $4.4\times10^{-16}$. The map $\pi$ is thus a submersion from a three-manifold onto a two-manifold with one-dimensional fibres, and it is a fibre bundle.</p>
+<p>because $g$ commutes with $e_3$ and $\bar g=g^{-1}$. The preimage of a point is therefore a coset, hence a circle, and the whole preimage of a point is exhausted by it: for any two solutions, $U_2 e_3\bar U_2=U_1e_3\bar U_1$ implies $U_1^{-1}U_2\in\mathrm{Stab}(e_3)$. The map $\pi$ is thus a submersion from a three-manifold onto a two-manifold with one-dimensional fibres, and it is a fibre bundle.</p>
 <p><strong>Example.</strong> The identity maps to the north pole, $\pi(e_0)=e_3$, and its fibre is exactly the stabiliser, $\pi(\cos\alpha\,e_0+\sin\alpha\,e_3)=e_3$, verified to $2.2\times10^{-16}$. The fibre over any rotated pole is a rotated circle.</p>
 <p>This is the <strong>Hopf fibration</strong>. The characteristic groups of the three spaces are</p>
 <p>$$
@@ -148,7 +147,7 @@ U_N(\theta,\phi)=\cos\tfrac{\theta}{2}\,e_0+\sin\tfrac{\theta}{2}\bigl(\sin\phi\
 \qquad
 U_S(\theta,\phi)=\cos\tfrac{\theta}{2}\bigl(\cos\phi\,e_0-\sin\phi\,e_3\bigr)+\sin\tfrac{\theta}{2}\,e_2 ,
 $$</p>
-<p>where $\exp(\alpha e_a)=\cos\alpha\,e_0+\sin\alpha\,e_a$. Both are unit real quaternions, and both project to the same point of the base, $\pi(U_N)=\pi(U_S)$, verified to $4.4\times10^{-16}$ over $4000$ random angle pairs; the $\phi$-dependent part of each carries the factor $\sin\tfrac\theta2$ or $\cos\tfrac\theta2$ that vanishes at the pole where $\phi$ is undefined, which is exactly what makes each section regular on its own patch. The two are related on the overlap by a single-valued transition function,</p>
+<p>where $\exp(\alpha e_a)=\cos\alpha\,e_0+\sin\alpha\,e_a$. Both are unit real quaternions, and both project to the same point of the base, $\pi(U_N)=\pi(U_S)$; the $\phi$-dependent part of each carries the factor $\sin\tfrac\theta2$ or $\cos\tfrac\theta2$ that vanishes at the pole where $\phi$ is undefined, which is exactly what makes each section regular on its own patch. The two are related on the overlap by a single-valued transition function,</p>
 <p>$$
 U_N(\theta,\phi) \;=\; U_S(\theta,\phi)\,g_{SN}(\phi),
 \qquad
@@ -214,7 +213,7 @@ $$</p>
 <h2 id="what-is-the-algebras-and-what-is-imported">What Is the Algebra's and What Is Imported</h2>
 <p>The article's structural result is best stated as a division.</p>
 <ul>
-<li><strong>Algebraic, and derived here.</strong> The total space $S^3$ is the biquaternion-norm level set of $\mathbb H_{\mathbb B}$; the base $S^2$ is the idempotent manifold of $\mathbb M_+$; the fibre is the stabiliser $U(1)_{e_3}\subset SU(2)\subset\mathbb H_{\mathbb B}$, which is isomorphic to, but distinct from, the centre's unit circle $U(1)_{\mathbb C_{\mathbb B}}\subset\mathbb C_{\mathbb B}$; the Hopf map is the adjoint action $U\mapsto Ue_3\bar U$; the transition function and its winding are computed from the algebra; the first Chern number is one; and the local connection is the abelian connection of <em>The Gauge Principle in Biquaternionic Form</em>, with curvature $iF$. The instanton boundary map is in $SU(2)\subset\mathbb H_{\mathbb B}$ and its winding is $\pi_3(SU(2))=\mathbb Z$. None of these is imported.</li>
+<li><strong>Algebraic, and derived here.</strong> The total space $S^3$ is the biquaternion-norm level set of $\mathbb H_{\mathbb B}$; the base $S^2$ is the Hermitian idempotent sphere of $\mathbb M_+$; the fibre is the stabiliser $U(1)_{e_3}\subset SU(2)\subset\mathbb H_{\mathbb B}$, which is isomorphic to, but distinct from, the centre's unit circle $U(1)_{\mathbb C_{\mathbb B}}\subset\mathbb C_{\mathbb B}$; the Hopf map is the adjoint action $U\mapsto Ue_3\bar U$; the transition function and its winding are computed from the algebra; the first Chern number is one; and the local connection is the abelian connection of <em>The Gauge Principle in Biquaternionic Form</em>, with curvature $iF$. The instanton boundary map is in $SU(2)\subset\mathbb H_{\mathbb B}$ and its winding is $\pi_3(SU(2))=\mathbb Z$. None of these is imported.</li>
 <li><strong>Standard topology, transcribed.</strong> The classification of principal bundles by homotopy classes of maps into the classifying space, the Chern–Weil construction of characteristic classes, and the existence of the invariant connection are standard results of fibre-bundle theory; the article uses them rather than deriving them. The Hopf bundle's nontriviality and $c_1=1$ are classical.</li>
 <li><strong>Imported from physics.</strong> The identification of the Chern number with an electric or magnetic charge requires the electromagnetic coupling; the quantisation in units of $\hbar$, the dynamical action, and the identification of the connection with a physical vector potential are quantum-mechanical and dynamical inputs. The algebra is a classical complexified structure and contains no $\hbar$; it supplies the home of the gauge freedom, and quantum physics supplies the quantum. This is the same division recorded in <em>The Magnetic Monopole in Biquaternionic Form</em>.</li>
 </ul>
@@ -264,7 +263,7 @@ $$</p>
 </tr>
 <tr>
 <td>$S^2=\{\hat\mu\in\mathbb H_{\mathbb B}:\hat\mu^2=-e_0\}$</td>
-<td>Unit pure-imaginary sphere $=$ idempotent manifold of $\mathbb M_+$</td>
+<td>Unit pure-imaginary sphere $=$ Hermitian idempotent sphere of $\mathbb M_+$</td>
 </tr>
 <tr>
 <td>$\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$</td>

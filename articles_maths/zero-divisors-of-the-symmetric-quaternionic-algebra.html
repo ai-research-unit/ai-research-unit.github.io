@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero Divisors of the Symmetric Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="zero-divisors-of-the-symmetric-quaternionic-algebra"><strong>Zero Divisors of the Symmetric Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The general plain algebra, the general quaternionic algebra and their two sesquilinear companions share one zero-divisor set on the biquaternion space, the vanishing of the constant term of the characteristic polynomial, and that set is a proper subset of the space (<em>Zero Divisors of the General Plain Algebra</em>). The symmetric quaternionic multiplication behaves differently: <strong>every nonzero element is a zero divisor of it</strong>. That is the point of this article, and it is the sharpest of the divergences of the block from its parent.</p>
+<p>The article states the definition of the zero divisor relative to the product, proves the criterion that makes the whole punctured space the zero-divisor set, computes the annihilator of an element as an explicit hyperplane, separates the two families the block uses, places the set with respect to the remarkable subspaces, and compares it with the set of the four general products, which is strictly smaller. The block has no regular element apart from $0$; the two-sided annihilator of the product is nevertheless $\{0\}$, because the product is non-degenerate, and the distinction between <em>the annihilator of an element</em> and <em>the annihilator of the product</em> is the technical heart of the article.</p>
+<p><strong>Boundaries.</strong> The general definition of the zero divisor, of the annihilator and of the regular element is <em>Definitions for the Study of the 12 Algebraic Structures</em> §<em>The Zero Divisor and the Annihilator</em>; the zero-divisor sets of the four general products are <em>Zero Divisors of the General Plain Algebra</em> and <em>Comparison Between the Four General Products</em>; the square-zero elements are <em>Nilpotents of the Symmetric Quaternionic Algebra</em>; the isotropic cone and its two families are <em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em>; the subspaces are <em>Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$; a general element is $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$ and $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$. The <strong>symmetric quaternionic multiplication</strong> is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)=N(\tilde P,\tilde Q)e_0$ with $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$, and its diagonal is $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2$; the operation is also written $\bullet$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$, and the Hermitian subspaces are $\mathbb{M}_+$ and $\mathbb{M}_-$.</p>
+<h2 id="the-general-definition">The General Definition</h2>
+<p><strong>Definition (zero divisor of a product).</strong> Let $\star$ be a product on $\mathbb{B}$ and let $\tilde Q\in\mathbb{B}$. The element $\tilde Q$ is a <strong>left zero divisor of $\star$</strong> when $\tilde Q\neq0$ and there is a nonzero $\tilde R$ with $\tilde Q\star\tilde R=0$; a <strong>right zero divisor</strong> when $\tilde Q\neq0$ and there is a nonzero $\tilde R$ with $\tilde R\star\tilde Q=0$; a <strong>zero divisor</strong> when it is one or the other; and a <strong>two-sided zero divisor</strong> when it is both. An element of a unital product that is neither a left nor a right zero divisor is <strong>regular</strong>.</p>
+<p>Throughout this article the product is the <strong>symmetric quaternionic product</strong> of the block; a zero divisor, an annihilator or a regular element, written without qualification, is one of that product. Since the product is commutative, its left and right notions coincide, and every zero divisor of the block is two-sided; the words are kept nonetheless, because the comparison with the parent uses them.</p>
+<h2 id="the-criterion-and-the-annihilator">The Criterion and the Annihilator</h2>
+<p><strong>Theorem (everything nonzero is a zero divisor).</strong> The zero-divisor set of the block is the whole punctured space,</p>
+<p>$$
+\mathcal{Z}_{\star}=\mathbb{B}\setminus\{0\},
+$$</p>
+<p>and the block has no regular element apart from $0$.</p>
+<p><em>Proof.</em> Let $\tilde Q\neq0$. The form is non-degenerate with radical $\{0\}$ (<em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em>), so there is an $\tilde R$ with $N(\tilde Q,\tilde R)\neq0$. If $N(\tilde Q)=0$ then $\tilde Q\star\tilde Q=N(\tilde Q)e_0=0$, and $\tilde Q$ annihilates itself. If $N(\tilde Q)\neq0$, put</p>
+<p>$$
+\tilde X=\tilde R-\frac{N(\tilde Q,\tilde R)}{N(\tilde Q)}\,\tilde Q .
+$$</p>
+<p>Then $N(\tilde Q,\tilde X)=N(\tilde Q,\tilde R)-\frac{N(\tilde Q,\tilde R)}{N(\tilde Q)}N(\tilde Q,\tilde Q)=0$, so $\tilde Q\star\tilde X=0$, and $\tilde X\neq0$ because $N(\tilde Q,\tilde X)=0\neq N(\tilde Q,\tilde R)$. In both cases $\tilde Q$ is a zero divisor. Conversely $0$ is excluded by the definition, and no other element is excluded.</p>
+<p><strong>Corollary (the annihilator is a hyperplane).</strong> For $\tilde Q\neq0$ the left and right annihilators coincide and are</p>
+<p>$$
+\operatorname{Ann}(\tilde Q)=\{\tilde X: N(\tilde Q,\tilde X)=0\}=\tilde Q^{\perp},
+$$</p>
+<p>a $\mathbb{C}$-linear hyperplane of complex dimension three and real dimension six; the element $\tilde Q$ belongs to it exactly when $N(\tilde Q)=0$, that is exactly when it is isotropic. The annihilator of the product in the space,</p>
+<p>$$
+\{\tilde Q:\tilde Q\star\tilde X=0\ \text{for every }\tilde X\}=\{0\},
+$$</p>
+<p>is zero, and the two annihilators must not be confused: the product is non-degenerate, every element is nonetheless a zero divisor, and the reason is that a non-degenerate form on a space of dimension greater than one always has a nonzero orthogonal for a given nonzero element.</p>
+<p><em>Proof.</em> The annihilator is the orthogonal of $\tilde Q$ for $N$, and the orthogonal of a nonzero element of a non-degenerate form is a hyperplane; $\tilde Q\in\tilde Q^{\perp}$ is the equation $N(\tilde Q,\tilde Q)=N(\tilde Q)=0$; the annihilator of the product is the radical of the form, which is $\{0\}$.</p>
+<p><strong>Corollary (the product is a perfect pairing).</strong> The blocked multiplication $\mathbb{B}\times\mathbb{B}\to\mathbb{C}e_0$, $(\tilde P,\tilde Q)\mapsto\tilde P\star\tilde Q$, has rank one in the sense of the image and full rank four in the sense of the pairing: its image is the central line, and its left radical and right radical are both $\{0\}$.</p>
+<h2 id="the-two-families">The Two Families</h2>
+<p>The set is the whole punctured space, and the block classifies its elements by the two families of the isotropic structure.</p>
+<p><strong>Definition.</strong> The <strong>isotropic family</strong> is the set $\{\tilde Q: N(\tilde Q)=0,\ \tilde Q\neq0\}$; the <strong>non-isotropic family</strong> is its complement in the set, $\{\tilde Q: N(\tilde Q)\neq0\}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the family</th>
+<th>the defining equation</th>
+<th>the annihilator</th>
+<th>the self-product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>isotropic</td>
+<td>$N(\tilde Q)=0$</td>
+<td>a hyperplane through $\tilde Q$</td>
+<td>$\tilde Q\star\tilde Q=0$</td>
+</tr>
+<tr>
+<td>non-isotropic</td>
+<td>$N(\tilde Q)\neq0$</td>
+<td>a hyperplane not through $\tilde Q$</td>
+<td>$\tilde Q\star\tilde Q\neq0$, central</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two families behave differently in the product: an isotropic element annihilates itself and is a nilpotent of index two (<em>Nilpotents of the Symmetric Quaternionic Algebra</em>), while a non-isotropic element is annihilated by the hyperplane orthogonal to it and by nothing outside it, and its square is the nonzero central element $N(\tilde Q)e_0$.</p>
+<p><strong>Remark (the other split, and the one the block uses).</strong> A second split suggests itself by analogy with the parent, the split by the scalar part into the elements with $Q_0=0$ and those with $Q_0\neq0$. The two splits are different here, and the block uses the isotropic one. In the parent the pure family <em>is</em> the nilpotent family (<em>Zero Divisors of the General Plain Algebra</em>); in the block a pure element $\tilde Q=\mathbf Q$ is a zero divisor like every other, but it is square-zero only when it is isotropic, $\tilde Q\star\tilde Q=(\mathbf Q,\mathbf Q)e_0$, and otherwise its square is a nonzero central element. The pure family is therefore not the nilpotent family of the block, and the identification of the two, valid in the parent, fails here.</p>
+<h2 id="the-set-and-the-remarkable-subspaces">The Set and the Remarkable Subspaces</h2>
+<p><strong>Proposition (the set and its size).</strong> The zero-divisor set $\mathcal{Z}_{\star}=\mathbb{B}\setminus\{0\}$ is of complex dimension four and real dimension eight; its isotropic part is the punctured cone $\{N=0\}\setminus\{0\}$ of complex dimension three and real dimension six, and its non-isotropic part is the complement of the cone.</p>
+<p><strong>The map to the hyperplanes.</strong> The assignment $\tilde Q\mapsto\operatorname{Ann}(\tilde Q)=\tilde Q^{\perp}$ is a surjection of the punctured space onto the set of hyperplanes of $\mathbb{B}$, with fibres the punctured complex lines, since a non-degenerate form identifies $\mathbb{B}$ with its dual: the family of zero divisors of the block is not a proper subvariety but the space itself, endowed with the map to its hyperplanes.</p>
+<p><strong>The remarkable subspaces.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the subspace</th>
+<th>the isotropic elements</th>
+<th>the zero divisors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the centre $\mathbb{C}_{\mathbb{B}}$</td>
+<td>none but $0$</td>
+<td>all nonzero: $\lambda e_0\star e_k=0$ for every $k$</td>
+</tr>
+<tr>
+<td>the vector subspace $\mathrm{Vect}(\mathbb{B})$</td>
+<td>the cone $(\mathbf Q,\mathbf Q)=0$</td>
+<td>all nonzero</td>
+</tr>
+<tr>
+<td>the quaternion subspace $\mathbb{H}_{\mathbb{B}}$</td>
+<td>none but $0$, the diagonal being definite there</td>
+<td>all nonzero</td>
+</tr>
+<tr>
+<td>the Hermitian subspaces $\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>the light cones, of real dimension three</td>
+<td>all nonzero</td>
+</tr>
+</tbody>
+</table></div>
+<p>A nonzero central element annihilates the whole vector subspace, since $\lambda e_0\star\mathbf Q=\lambda\mathbf Q_0e_0=0$; the centre is accordingly contained in the set not merely as a subset but as its most degenerate part. The subspaces and their isotropic cones are <em>Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions</em> and <em>Introduction to the Remarkable Subspaces</em>.</p>
+<h2 id="the-comparison-with-the-other-products">The Comparison with the Other Products</h2>
+<p><strong>Theorem (the four general products share a proper set).</strong> The four general products of the space have one and the same zero-divisor set, the set of elements of vanishing constant term of the characteristic polynomial, equivalently $\{\tilde Q: N(\tilde Q)=0\}\setminus\{0\}$ for the plain product, and it contains no non-isotropic element (<em>Zero Divisors of the General Plain Algebra</em>, <em>Comparison Between the Four General Products</em>).</p>
+<p><strong>Corollary (the block's set strictly contains the parent's).</strong></p>
+<p>$$
+\{N=0\}\setminus\{0\}=\mathcal{Z}_{\tilde P\tilde Q}=\mathcal{Z}_{\tilde P^{\natural}\tilde Q}=\mathcal{Z}_{\tilde P\tilde Q^{*}}=\mathcal{Z}_{\tilde P^{\natural}\tilde Q^{*}}\subsetneq\mathbb{B}\setminus\{0\}=\mathcal{Z}_{\star},
+$$</p>
+<p>the inclusion being strict. The witness of the strictness is the element $e_0$: it is a unit of the plain product, hence not a zero divisor of it, and it is a zero divisor of the block, because $e_0\star e_1=0$ with $e_1\neq0$. The difference is thus not a borderline effect but the statement that the block has no regular element at all.</p>
+<p><strong>The other halves, for the record.</strong> The block is not alone in the maximal case: six of the twelve structures have the whole punctured space as their zero-divisor set. The two antisymmetrisations of the algebra family, $\mathrm{APA}$ and $\mathrm{AQA}$, are alternating, $\tilde X\star\tilde X=0$ for the operation of the row, so every nonzero element is a zero divisor of them. The two sesquilinear partners $\mathrm{APS}$ and $\mathrm{AQS}$ are maximal for an explicit witness for every nonzero $\tilde P$: the element $\tilde Q=\overline{\tilde P}$ gives $\tilde P\tilde Q^{*}=\tilde P\tilde P^{\natural}=N(\tilde P)e_0$ for $\mathrm{APS}$, and the element $\tilde Q=\tilde P^{*}$ gives $\tilde P^{\natural}\tilde Q^{*}=\tilde P^{\natural}\tilde P=N(\tilde P)e_0$ for $\mathrm{AQS}$, both values central, which the vector-part reading of $\mathrm{APS}$ and of $\mathrm{AQS}$ sends to $0$; and the two central-valued operations, the block and the symmetric plain sesquilinear product $\mathrm{SPS}$, whose value is $H(\tilde P,\tilde Q)e_0$ with $H$ non-degenerate, are maximal by the argument of §<em>The Criterion</em>. The other six hold a proper set: the four general products share $\{N=0\}\setminus\{0\}$, the symmetric plain product has $e_0$ regular, since $\tilde P\bullet e_0=\tilde P$ never vanishes for $\tilde P\neq0$, and the symmetric quaternionic sesquilinear product, whose value carries a vector part, is read in its own article. The reading structure by structure is <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, and the exact column of the definitions is <em>Definitions for the Study of the 12 Algebraic Structures</em> §<em>The Dictionary: The Classes and the Four General Products</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>Relative to the symmetric quaternionic product, an element is a zero divisor exactly when it is nonzero: $\mathcal{Z}_{\star}=\mathbb{B}\setminus\{0\}$, and the block has no regular element apart from $0$. The criterion is the non-degeneracy of the form $N$: for $\tilde Q\neq0$ the element $\tilde X=\tilde R-\frac{N(\tilde Q,\tilde R)}{N(\tilde Q)}\tilde Q$, or $\tilde X=\tilde Q$ when $N(\tilde Q)=0$, is a nonzero annihilator. The annihilator of a nonzero element is the hyperplane $\tilde Q^{\perp}$ of complex dimension three, the element lies in its own annihilator exactly when it is isotropic, and the annihilator of the product is $\{0\}$ because the form has no radical; the product is a perfect pairing with image the central line. The two families are the isotropic one, $N=0$, whose elements are square-zero and which is the block's second family of nilpotents, and the non-isotropic one, $N\neq0$; the split by the scalar part, valid in the parent, is not the split the block uses. The four general products share the proper set $\{N=0\}\setminus\{0\}$, which the block's set strictly contains, the witness of the strictness being the unit $e_0$ of the parent, which is a zero divisor of the block; the block is not the only one of the twelve in the maximal case, the antisymmetrisations of the algebra family and the sesquilinear partners $\mathrm{APS}$ and $\mathrm{AQS}$ being maximal too, and the symmetric plain product is not among them.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$</td>
+<td>the symmetric quaternionic multiplication</td>
+</tr>
+<tr>
+<td>$N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$</td>
+<td>the form of the block</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$</td>
+<td>the diagonal of the form, the norm of the parent</td>
+</tr>
+<tr>
+<td>$\mathcal{Z}_{\star}=\mathbb{B}\setminus\{0\}$</td>
+<td>the zero-divisor set of the block</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}(\tilde Q)=\tilde Q^{\perp}$</td>
+<td>the two-sided annihilator of a nonzero element, a hyperplane</td>
+</tr>
+<tr>
+<td>$N=0$, $N\neq0$</td>
+<td>the isotropic family, the non-isotropic family</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), for the general definition of the zero divisor, the annihilator and the regular element.</li>
+<li><em>Zero Divisors of the General Plain Algebra</em> (<code>articles_maths/zero-divisors-of-the-general-plain-algebra.md</code>), for the zero-divisor set of the parent and its two families.</li>
+<li><em>Comparison Between the Four General Products</em> (<code>articles_maths/comparison-between-the-four-general-products.md</code>), for the coincidence of the four sets.</li>
+<li><em>Norm and Invertibility in the Symmetric Quaternionic Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-symmetric-quaternionic-algebra.md</code>), for the form, its non-degeneracy and the non-isotropic class.</li>
+<li><em>Nilpotents of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/nilpotents-of-the-symmetric-quaternionic-algebra.md</code>), for the isotropic family as the square-zero elements.</li>
+<li><em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md</code>), for the radical of the product and the isotropic cone.</li>
+<li><em>Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-algebra-of-biquaternions.md</code>), for the isotropic elements of the subspaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -96,7 +96,7 @@ linear operators on the space of functions; the representation is faithful on a 
 function of two distinct values.</p>
 <p><strong>Proof.</strong> $(\tau_g\tau_hf)(x)=\tau_hf(g^{-1}x)=f(h^{-1}g^{-1}x)=f((gh)^{-1}x)=(\tau_{gh}f)(x)$ by the
 inverse law $(gh)^{-1}=h^{-1}g^{-1}$, and the rest is immediate. If $g\neq h$, a function separating $g^{-1}x$
-from $h^{-1}x$ at some point $x$ is moved differently by the two. $\blacksquare$</p>
+from $h^{-1}x$ at some point $x$ is moved differently by the two.</p>
 <h3 id="isometry-and-unitarity">Isometry and Unitarity</h3>
 <p><strong>Theorem.</strong> On $L^p(\mathbb R^n)$, $1\leq p\leq\infty$, the translation is an isometry,
 $\lVert\tau_yf\rVert_p=\lVert f\rVert_p$, by the translation invariance of Lebesgue measure; on
@@ -104,8 +104,7 @@ $L^2(\mathbb R^n)$ it is a unitary operator, $\tau_y^\dagger\tau_y=\tau_y\tau_y^
 $\tau_y^\dagger=\tau_{-y}=\tau_y^{-1}$ and $\langle\tau_yf,\tau_yg\rangle=\langle f,g\rangle$.</p>
 <p><strong>Proof.</strong> The change of variable $x\mapsto x+y$ preserves Lebesgue measure, so $\int\lvert f(x-y)\rvert^pdx=\int\lvert f\rvert^p$;
 the inner product identity is the polarisation, and the adjoint is computed from
-$\langle\tau_yf,g\rangle=\int f(x-y)\overline{g(x)}dx=\int f(u)\overline{g(u+y)}du=\langle f,\tau_{-y}g\rangle$.
-$\blacksquare$</p>
+$\langle\tau_yf,g\rangle=\int f(x-y)\overline{g(x)}dx=\int f(u)\overline{g(u+y)}du=\langle f,\tau_{-y}g\rangle$.</p>
 <p>On a group with a measure, the same proof needs the measure to be invariant under the left action, which is
 the defining property of the Haar measure; this is why the general theory belongs to <em>Locally Compact Groups
 and Haar Measure</em>, and why only groups with an explicit invariant measure — the Euclidean spaces, the
@@ -120,7 +119,7 @@ $p=\infty$ with the supremum norm the statement is false.</p>
 continuous compactly supported function, for which the statement is uniform continuity, and using the
 density; the translation-invariance of the norm gives the difference form. For $p=\infty$ the indicator of a
 half-line is moved by the translation by an amount bounded away from $0$ in the supremum norm, so the
-statement fails. $\blacksquare$</p>
+statement fails.</p>
 <p><strong>Remark (the strong operator topology).</strong> The theorem says that $y\mapsto\tau_y$ is continuous when the
 space of operators carries the strong operator topology, the topology of pointwise convergence, but not
 when it carries the operator-norm topology: $\lVert\tau_y-\mathrm{id}\rVert=\sqrt2$ for every $y\neq0$ on
@@ -147,7 +146,7 @@ on $\mathcal S$, and $\mathcal S$ is a core. The identification with the Fourier
 $\mathcal F(-\partial_j)\mathcal F^{-1}=M_{-2\pi i\xi_j}$, the differentiation identity of the Fourier
 article with a sign. The exponential identity and the closedness are the content of Stone's theorem for a
 strongly continuous one-parameter unitary group, in <em>Semigroups and Evolution Equations</em>, later in this
-Part. $\blacksquare$</p>
+Part.</p>
 <p><strong>Corollary.</strong> The finite differences $\tau_{te_j}-\mathrm{id}$ approximate the generator, and
 $\tau_{te_j}=\mathrm{id}+tA_j+o(t)$; the forward difference $\Delta_h=\tau_{-h}-\mathrm{id}$ is the discrete
 analogue of $A_j$, and the two are related by $\Delta_{te_j}=t\partial_j+o(t)=-tA_j+o(t)$ on the domain
@@ -164,7 +163,7 @@ $$
 Consequently the characters simultaneously diagonalise the whole representation, and the algebra generated
 by the translations is commutative.</p>
 <p><strong>Proof.</strong> $\tau_ge_\xi(x)=e_\xi(x-g)=e_\xi(x)e_\xi(-g)=\overline{e_\xi(g)}e_\xi(x)$, using
-$e_\xi(-g)=\overline{e_\xi(g)}$ for a character. $\blacksquare$</p>
+$e_\xi(-g)=\overline{e_\xi(g)}$ for a character.</p>
 <h3 id="the-spectrum">The Spectrum</h3>
 <p><strong>Theorem.</strong> On $L^2(\mathbb R^n)$ the translation $\tau_y$ is unitary; for $y=0$ it is the identity, and for
 $y\neq0$ its spectrum is the whole unit circle, $\sigma(\tau_y)=\mathbb T$, and it has no eigenvalues. On a
@@ -177,7 +176,7 @@ essential range of $m$, and for $y\neq0$ the function $\xi\mapsto e^{-2\pi iy\cd
 so the essential range is $\mathbb T$. An eigenvalue would require $e_y$ to be constant on a set of positive
 measure, which it is not. On a finite group the characters form an orthonormal basis and the eigenvalues are
 $\overline{\chi(g)}$, roots of unity; on $\ell^2(\mathbb Z)$ the shift equation $Sf=\lambda f$ gives
-$f_n=\lambda^{-n}f_0$, which is square-summable only if $f=0$, whatever $\lambda$. $\blacksquare$</p>
+$f_n=\lambda^{-n}f_0$, which is square-summable only if $f=0$, whatever $\lambda$.</p>
 <p><strong>Corollary (the diagonalisation).</strong> On a finite abelian group the translation operators are diagonal in
 the character basis; on $\mathbb R^n$ and on $\mathbb Z$ the characters diagonalise the representation in
 the sense of the spectral theorem or of the Gelfand transform, but the diagonalising functions are not
@@ -191,7 +190,7 @@ operators $T_k$ with $k\in L^1$ are exactly the translation-invariant operators 
 <p><strong>Proof.</strong> This is the translation-invariance theorem of <em>Convolution Operators</em>, the previous article of
 this group: the Fourier operator carries the translations into the multiplications by the characters, and
 an operator commuting with all of them is a multiplication operator. The analysis case is the measure
-algebra. $\blacksquare$</p>
+algebra.</p>
 <h3 id="translation-as-the-atoms-of-convolution">Translation as the Atoms of Convolution</h3>
 <p><strong>Theorem.</strong> For $k\in L^1(\mathbb R^n)$ the convolution operator is a superposition of translations,
 $$
@@ -202,7 +201,7 @@ translations in the strong operator topology is the algebra of translation-invar
 <p><strong>Proof.</strong> The identity is the definition of the convolution in the two-variable form, and the convergence
 is Minkowski's integral inequality, $\lVert\int k(y)\tau_yf\,dy\rVert_p\leq\lVert k\rVert_1\lVert f\rVert_p$;
 the closure statement is the theorem above together with the density of the profiles in the multipliers
-that are transforms of measures. $\blacksquare$</p>
+that are transforms of measures.</p>
 <h2 id="the-general-locally-compact-group">The General Locally Compact Group</h2>
 <p>The definitions of this article use only the group operation and an invariant measure. On a locally compact
 group $G$ with left Haar measure $\mu$, the left translation $(\tau_gf)(x)=f(g^{-1}x)$ is an isometry of

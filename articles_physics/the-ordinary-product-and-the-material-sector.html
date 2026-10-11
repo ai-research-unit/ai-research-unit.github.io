@@ -129,10 +129,10 @@ Biquaternions</em>). Three of
 its properties then carry their physical names.</p>
 <ul>
 <li>Associativity is composability: $\tilde P(\tilde Q\tilde R)=(\tilde P\tilde Q)\tilde R$, so a chain of
-  operations can be bracketed at will.</li>
+operations can be bracketed at will.</li>
 <li>The unit $e_0$ is the identity operation: $e_0\tilde Q=\tilde Qe_0=\tilde Q$.</li>
 <li>Non-commutativity is order dependence: two operations need not commute, and the commutator
-  $[\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P$ measures the failure.</li>
+$[\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P$ measures the failure.</li>
 </ul>
 <p>What is proved is the associativity, the unit and the non-commutativity; what is proposed is that they be
 read as the composition, the identity and the order of operations.</p>
@@ -156,7 +156,7 @@ material operations composes to an element with one part in each sector: the inf
 order-independent half $\tfrac12\{\tilde P,\tilde Q\}$, and the order dependence is carried by the
 material half $\tfrac12[\tilde P,\tilde Q]$, which changes sign when the two operations are
 exchanged.</p>
-<p><strong>Remark (verified).</strong> On $100$ random pairs $\tilde P,\tilde Q$ of $\mathbb{M}_-$ the anticommutator
+<p><strong>Remark (verified).</strong>
 $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ is fixed by the dagger and the commutator
 $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ is anti-fixed, both to machine precision, and their sum is
 the composite $\tilde P\tilde Q$.</p>
@@ -181,7 +181,7 @@ $$</p>
 material" and to say "$B$ is negative on it" are the same statement. The sign of $B(\tilde Q,\tilde Q)$ is the same for every element of a sector, so it is invisible to a
 computation that stays inside one sector; on a pair the form returns a varying real number, and it is the
 sign of its diagonal that marks the sector, with no metric content at all.</p>
-<p><strong>Remark (verified).</strong> On $100$ random elements of $\mathbb{M}_-$ the value $B(\tilde Q,\tilde Q)$ is
+<p><strong>Remark (verified).</strong>
 real and strictly negative, and on $100$ random elements of $\mathbb{M}_+$ it is real and strictly
 positive; the Gram matrices on the two bases are exactly $-\mathrm{I}_4$ and $+\mathrm{I}_4$.</p>
 <p><strong>Proposed reading, labelled as such.</strong> Under the composition the four material directions are
@@ -197,8 +197,8 @@ real; off them it is complex, and its imaginary part is exactly the pairing of t
 $\mathrm{Im}\,B(\tilde P,\tilde Q)=\mathrm{Im}\,\mathrm{Sc}(\tilde P_-\tilde Q_++\tilde P_+\tilde Q_-)$,
 so $B$ is real exactly when the two elements lie in the same sector. Read physically, <strong>a composition of
 like elements carries no imaginary part, and an imaginary part is the mark of a composition of a material
-operation with an informational state.</strong> <em>Verified on $100$ random pairs, max deviation
-$8.9\times10^{-16}$.</em></p>
+operation with an informational state.</strong>
+$8.9\times10^{-16}$.*</p>
 <h2 id="the-sector-sign-on-the-remarkable-subspaces">The Sector Sign on the Remarkable Subspaces</h2>
 <p>Besides the two sectors the algebra carries four other remarkable real subspaces, and $B$ has a
 different signature on two of them. On the <strong>centre</strong> $\mathbb{C}_{\mathbb{B}}$ and the <strong>vector
@@ -278,7 +278,7 @@ component that flips the projection into its complement. What is proved is the a
 material idempotent; the identification of the resolved and unresolved parts with the measured and
 unmeasured components is a reading. The idempotent in physics is owned by <em>The Biquaternion Vacuum as a
 Minimal Idempotent</em> and <em>Decoherence as Idempotent Projection</em>, and the decomposition that the projection
-induces is the mathematics of <em>Biquaternion Ideals and Peirce Decomposition</em>.</p>
+induces is the mathematics of <em>Ideals and Peirce Decomposition of the General Plain Algebra</em>.</p>
 <p><strong>Remark (verified).</strong> On unit Euclidean elements of $\mathbb{M}_-$ the residual
 $\lVert\tilde\Pi^{2}-\tilde\Pi\rVert_E$ is at least $\sqrt2$, so the idempotent equation fails on the
 whole sector and its failure is bounded away from zero. On the other side $\tfrac12(e_0\pm ie_k)$ is
@@ -326,15 +326,15 @@ negative on $\mathbb{M}_-$ and positive on $\mathbb{M}_+$.</p>
 <p>The article states one cell of the grid of four, and the boundary of the cell is what it must declare.</p>
 <ul>
 <li><strong>$B$ is not the metric.</strong> It is definite on each sector and has no cone there, so it cannot define the
-  causal structure. The metric is the interval, of signature $(-,+,+,+)$ on $\mathbb{M}_-$.</li>
+causal structure. The metric is the interval, of signature $(-,+,+,+)$ on $\mathbb{M}_-$.</li>
 <li><strong>$B$ is not the interval.</strong> The interval, the mass shell, the four-velocity and invertibility are the
-  level data of the general quaternionic bilinear form, owned by <em>Biquaternion Norm and Invertibility</em>; the worked
-  case shows the two forms giving different numbers on the same element.</li>
+level data of the general quaternionic bilinear form, owned by <em>Biquaternion Norm and Invertibility</em>; the worked
+case shows the two forms giving different numbers on the same element.</li>
 <li><strong>$B$ is not positivity.</strong> The positive definite form of the state space and of the Born pairing is the
-  Hermitian form of the sesqualgebra block, which is $+B$ on $\mathbb{M}_+$ and $-B$ on $\mathbb{M}_-$;
-  positivity is blind to the sector.</li>
+Hermitian form of the sesqualgebra block, which is $+B$ on $\mathbb{M}_+$ and $-B$ on $\mathbb{M}_-$;
+positivity is blind to the sector.</li>
 <li><strong>$B$ is not the Krein form.</strong> The indefinite metric of the fourth corner restricts to $(1,3)$ on all
-  four four-dimensional subspaces and so does not separate them.</li>
+four four-dimensional subspaces and so does not separate them.</li>
 </ul>
 <p><strong>What the framework does not claim.</strong> The reading does not say which physical operation an element
 represents, does not derive the Lorentz transformation or the measurement update from the ordinary
@@ -453,29 +453,29 @@ distinctions are labelled throughout: what is proved is the algebra, what is pro
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the quaternion algebra, its
-  scalar part and its relation to $M_2(\mathbb{C})$.</li>
+scalar part and its relation to $M_2(\mathbb{C})$.</li>
 <li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the complex and real structures
-  on the biquaternion algebra and the sectors of the Hermitian conjugation.</li>
+on the biquaternion algebra and the sectors of the Hermitian conjugation.</li>
 <li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the spacetime
-  metric of signature $(-,+,+,+)$ and its contrast with a definite form.</li>
+metric of signature $(-,+,+,+)$ and its contrast with a definite form.</li>
 <li>Claude Itzykson and Jean-Bernard Zuber, <em>Quantum Field Theory</em> (McGraw–Hill, 1980), for the four-vector,
-  the interval and the mass shell of the material sector.</li>
+the interval and the mass shell of the material sector.</li>
 <li>Mathematics article <em>The Four Pairings of the Biquaternion Algebra</em>
-  (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the four forms, their Gram
-  matrices and their signatures.</li>
+(<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the four forms, their Gram
+matrices and their signatures.</li>
 <li>Mathematics article <em>Remarkable Subspaces under the General Plain Algebra of Biquaternions</em>
-  (<code>articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.md</code>), for the restriction of $B$ to
-  the remarkable subspaces.</li>
-<li>Mathematics article <em>Biquaternion Ideals and Peirce Decomposition</em>
-  (<code>articles_maths/biquaternion-ideals-and-peirce-decomposition.md</code>), for the decomposition a reference
-  projection induces.</li>
+(<code>articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.md</code>), for the restriction of $B$ to
+the remarkable subspaces.</li>
+<li>Mathematics article <em>Ideals and Peirce Decomposition of the General Plain Algebra</em>
+(<code>articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.md</code>), for the decomposition a reference
+projection induces.</li>
 <li>Companion article <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, for the material
-  sector and its own physics.</li>
+sector and its own physics.</li>
 <li>Companion article <em>Biquaternion Norm and Invertibility</em>, for the interval, the light cone and the mass
-  shell.</li>
+shell.</li>
 <li>Companion article <em>The Four General Products and Their Physical Readings</em>, for the comparison of the four general products and the full restriction table.</li>
 <li>Companion article <em>The Interval as the Square and the Charge of the Material Composition</em>, for the interval read as the
-  square of a product.</li>
+square of a product.</li>
 </ul>
       </div>
     </main>

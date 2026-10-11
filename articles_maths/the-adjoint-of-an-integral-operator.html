@@ -112,8 +112,7 @@ $TT^\dagger=T^\dagger T$.</p>
 <p><strong>Proof.</strong> The properties are those of the adjoint of a bounded operator in <em>Banach and Hilbert Spaces</em>,
 later in this Part, and are quoted from there; the anti-multiplicativity is the computation
 $\langle STf,g\rangle=\langle Tf,S^\dagger g\rangle=\langle f,T^\dagger S^\dagger g\rangle$, and the
-isometry is $\lVert T^\dagger\rVert=\sup_{\lVert g\rVert=1}\sup_{\lVert f\rVert=1}\lvert\langle Tf,g\rangle\rvert=\lVert T\rVert$.
-$\blacksquare$</p>
+isometry is $\lVert T^\dagger\rVert=\sup_{\lVert g\rVert=1}\sup_{\lVert f\rVert=1}\lvert\langle Tf,g\rangle\rvert=\lVert T\rVert$.</p>
 <p><strong>Remark (the marks).</strong> By <em>Conventions in Mathematics</em> the <strong>dagger</strong> names the adjoint of an operator and
 the <strong>star</strong> names the involution of an element, the layer of the <code>* Theory</code> group. The two are distinct
 structures, and the identity $T_K^\dagger=T_{K^*}$ below is the statement that, for integral operators, the
@@ -142,7 +141,7 @@ $$
 $$
 the middle integral being $(T_{K^{\mathrm t}}g)(y)$ with the kernel $K(y,x)$; the Hilbert case replaces $g$ by
 $\bar g$ throughout and produces $\overline{K(y,x)}$. The two differ by the conjugation on the second slot,
-which is exactly the relation $K^*=\overline{K^{\mathrm t}}$. $\blacksquare$</p>
+which is exactly the relation $K^*=\overline{K^{\mathrm t}}$.</p>
 <h2 id="the-adjoint-of-an-integral-operator_1">The Adjoint of an Integral Operator</h2>
 <h3 id="the-kernel-of-the-adjoint">The Kernel of the Adjoint</h3>
 <p><strong>Theorem (the adjoint kernel).</strong> Let $K\in L^2(X\times X)$ and let $T_K$ be the integral operator of $K$,
@@ -160,7 +159,7 @@ $$
 $$
 and the inner integral is $(T_{K^*}g)(y)$ with $K^*(y,x)=\overline{K(x,y)}$, that is
 $K^*(x,y)=\overline{K(y,x)}$. The uniqueness of the adjoint identifies $T_K^\dagger$ with $T_{K^*}$, and the
-norm identity is the substitution $x\leftrightarrow y$. $\blacksquare$</p>
+norm identity is the substitution $x\leftrightarrow y$.</p>
 <p><strong>Corollary (the Hermitian case).</strong> The following are equivalent: $T_K$ is self-adjoint; $K^*=K$, that is
 $K(y,x)=\overline{K(x,y)}$ for almost every $(x,y)$; and the sesquilinear form
 $(f,g)\mapsto\langle T_Kf,g\rangle$ is Hermitian, $\langle T_Kf,g\rangle=\overline{\langle T_Kg,f\rangle}$.
@@ -168,7 +167,7 @@ In particular a real kernel is self-adjoint exactly when it is symmetric, $K(y,x
 <p><strong>Proof.</strong> The first two are equivalent by the theorem and the uniqueness of the kernel of a Hilbert–Schmidt
 operator; the Hermitian property of the form is the polarisation of self-adjointness and is the kernel form
 of the Hermitian condition, as in the <code>* Theory</code> article. For a real kernel, $\overline{K(x,y)}=K(x,y)$, so
-$K^*=K$ is $K(y,x)=K(x,y)$. $\blacksquare$</p>
+$K^*=K$ is $K(y,x)=K(x,y)$.</p>
 <h3 id="the-involution-on-the-operators">The Involution on the Operators</h3>
 <p><strong>Theorem.</strong> The map $T\mapsto T^\dagger$ restricted to the integral operators is the conjugate transport of
 the kernel involution: on the class of integral operators with $L^2$ kernels,
@@ -181,7 +180,7 @@ and it is an isometry of the Hilbert–Schmidt class onto itself.</p>
 <p><strong>Proof.</strong> The first identity is the theorem above; the anti-multiplicativity is the property of the adjoint
 of a bounded operator, read on the kernels through the correspondence
 $\langle T_K,T_L\rangle_{\mathrm{HS}}=\iint K\bar L$ of the <code>* Theory</code> article; the involution property
-$T^{\dagger\dagger}=T$ and the isometry are the same properties transported. $\blacksquare$</p>
+$T^{\dagger\dagger}=T$ and the isometry are the same properties transported.</p>
 <p><strong>Example (the Volterra operator).</strong> The Volterra operator $Vf(x)=\int_0^xf(y)\,dy$ has the kernel
 $K(x,y)=\mathbf 1_{0\leq y\leq x}$, and its adjoint has the kernel
 $K^*(x,y)=\mathbf 1_{0\leq x\leq y}$, so that
@@ -215,7 +214,7 @@ $T$ is self-adjoint exactly when $K$ is Hermitian as a distribution.</p>
 <p><strong>Proof.</strong> The Schwartz kernel theorem of <em>The Schwartz Kernel Theorem</em>, later in this Part, provides the
 kernel; the computation of the previous sections carries over with the pairings of test functions against
 distributions, and the Hermitian condition is the distributional form of $K^*=K$, as in <em>Positive Definite
-Distributions</em>, the <code>* Theory</code> article. $\blacksquare$</p>
+Distributions</em>, the <code>* Theory</code> article.</p>
 <p><strong>Remark (unbounded operators).</strong> An unbounded operator has an adjoint only after its domain is fixed, and
 the adjoint may be densely defined and closed without the original being so; the distinction between a
 symmetric operator and a self-adjoint one, which coincide for bounded operators, is exactly the failure of

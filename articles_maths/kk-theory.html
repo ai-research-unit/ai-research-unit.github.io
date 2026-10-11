@@ -65,7 +65,7 @@
 <p><strong>Definition.</strong> A bounded operator $T : H_1\to H_2$ between Hilbert spaces is <strong>Fredholm</strong> if $\ker T$ and $\ker T^*$ are finite-dimensional, and then its <strong>index</strong> is the integer $\operatorname{ind}(T) = \dim\ker T - \dim\ker T^*$. The Fredholm operators form an open set, the index is locally constant and homotopy invariant on them, and $\operatorname{ind}(T)$ is unchanged by compact perturbations.</p>
 <p><strong>Proposition (rank-nullity and the index).</strong> Let $T : H_1\to H_2$ be a bounded operator between finite-dimensional Hilbert spaces. Then $T$ is Fredholm and $\operatorname{ind}(T) = \dim H_1-\dim H_2$; this is the rank-nullity theorem.</p>
 <p><strong>Proof.</strong> Let $r$ be the rank of $T$; then $\dim\ker T = \dim H_1 - r$ and $\dim\ker T^* = \dim H_2 - r$, since $\ker T^*$ is the orthogonal complement of the image of $T$, whose dimension is $\dim H_2 - r$; the difference is $\dim H_1-\dim H_2$.</p>
-<p><strong>Example (numeric verification).</strong> The identity of the proposition has been verified for $300$ random integer matrices $T : \mathbb{C}^n\to\mathbb{C}^m$ with $1 \leq n,m\leq 6$: computing the rank by exact rational Gaussian elimination, the difference $\dim\ker T-\dim\ker T^*$ equals $n-m$ in every case. The consequence recorded below is that a finite-dimensional Kasparov $\mathbb{C}$-$\mathbb{C}$-module has class equal to its graded dimension.</p>
+<p>The consequence recorded below is that a finite-dimensional Kasparov $\mathbb{C}$-$\mathbb{C}$-module has class equal to its graded dimension.</p>
 <h3 id="kasparov-modules">Kasparov Modules</h3>
 <p><strong>Definition.</strong> Let $A$ and $B$ be $\mathrm{C}^*$-algebras. A <strong>Kasparov $(A,B)$-module</strong> is a countably generated graded Hilbert $B$-module $E = E^0\oplus E^1$, together with a graded $*$-homomorphism $\phi : A\to\mathcal{L}_B(E)$ and an odd self-adjoint operator $F\in\mathcal{L}_B(E)$ such that for every $a\in A$ the operators</p>
 <p>$$
@@ -77,7 +77,7 @@ $$</p>
 <p><strong>Proposition (homotopy).</strong> Two Kasparov $(A,B)$-modules $(E_0,\phi_0,F_0)$ and $(E_1,\phi_1,F_1)$ are <strong>homotopic</strong> if there is a Kasparov $\bigl(A,C([0,1],B)\bigr)$-module restricting to them at the two endpoints. Homotopy is an equivalence relation, and it is preserved by the operations that add a degenerate module.</p>
 <p><strong>Proof.</strong> Reflexivity and symmetry are immediate from the definitions, and transitivity follows by concatenating the parameter intervals and using that a Kasparov module over $C([0,1],B)$ pulls back along the two inclusions and along any reparametrisation of $[0,1]$; the addition of a degenerate summand is a homotopy through the modules $(E\oplus E',\phi\oplus\phi', tF\oplus F')$. This is standard.</p>
 <hr />
-<h2 id="the-bivariant-group-math160">The Bivariant Group $KK(A,B)$</h2>
+<h2 id="the-bivariant-group-math155">The Bivariant Group $KK(A,B)$</h2>
 <h3 id="definition-and-group-structure">Definition and Group Structure</h3>
 <p><strong>Definition.</strong> The <strong>Kasparov group</strong> $KK(A,B)$ is the set of homotopy classes of Kasparov $(A,B)$-modules, with the class of $(E,\phi,F)$ written $[(E,\phi,F)]$. It is made into an abelian group by the direct sum,</p>
 <p>$$
@@ -131,7 +131,7 @@ $$</p>
 <p>$$
 [(E,\phi,F)] = \dim E^0 - \dim E^1 .
 $$</p>
-<p><strong>Proof.</strong> The self-adjoint odd operator has the form $F = \begin{pmatrix}0&v^*\\v&0\end{pmatrix}$ with $v : E^0\to E^1$, and the compactness conditions are automatic; the class of the module is the index of $v$, which by the rank-nullity identity of the proposition above equals $\dim E^0-\dim E^1$, independently of $v$ and hence well defined on homotopy classes. The computation has been verified for $300$ random integer matrices of all sizes $1\leq n,m\leq6$ with exact rational rank computations.</p>
+<p><strong>Proof.</strong> The self-adjoint odd operator has the form $F = \begin{pmatrix}0&v^*\\v&0\end{pmatrix}$ with $v : E^0\to E^1$, and the compactness conditions are automatic; the class of the module is the index of $v$, which by the rank-nullity identity of the proposition above equals $\dim E^0-\dim E^1$, independently of $v$ and hence well defined on homotopy classes.</p>
 <p><strong>Example (the sum and the sign).</strong> The graded dimensions add under direct sum and change sign under the reversal of the grading, matching the group structure of $KK(\mathbb{C},\mathbb{C})$. A degenerate $\mathbb{C}$-$\mathbb{C}$-module has $v$ invertible, hence $\dim E^0 = \dim E^1$ and graded dimension $0$, consistently with its being the neutral element of the group; conversely the modules with $v$ of index $n$ represent the class $n$.</p>
 <h3 id="the-commutative-case">The Commutative Case</h3>
 <p><strong>Theorem (the commutative case; standard).</strong> For a compact Hausdorff space $X$ and any separable $\mathrm{C}^*$-algebra $B$ one has $KK(\mathbb{C},C(X))\cong K^0(X)$ and $KK(C(X),\mathbb{C})\cong K_0(C(X))\cong K^0(X)$, the groups of <em>Topological K-Theory</em>; more generally $KK(C(X),\mathbb{C})$ is Kasparov's $K$-homology of $X$, and the Kasparov product</p>

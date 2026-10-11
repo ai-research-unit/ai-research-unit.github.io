@@ -78,7 +78,7 @@ $$</p>
 $$</p>
 <p>for $n \geq 1$, and $\partial_0 = 0$; the <strong>incidence number</strong> of a facet $\tau$ of an $n$-simplex $\sigma$ is the coefficient of $[\tau]$ in $\partial_n[\sigma]$, equal to $\pm 1$ and written $[\sigma:\tau]$.</p>
 <p><strong>Proposition.</strong> The incidence number is well defined independently of the orientations chosen for $\sigma$ and $\tau$: reversing the orientation of $\sigma$ or of $\tau$ changes both sides by the same sign.</p>
-<p><em>Proof.</em> Reversing the orientation of $\sigma$ negates $\partial_n[\sigma]$ and hence every coefficient; reversing the orientation of a facet negates that one generator, and the coefficient of that generator changes sign together with the generator. A transposition of two vertices of $\sigma$ reverses the orientation of all the facets except the two omitted by the transposition, and the formula is compatible. $\square$</p>
+<p><em>Proof.</em> Reversing the orientation of $\sigma$ negates $\partial_n[\sigma]$ and hence every coefficient; reversing the orientation of a facet negates that one generator, and the coefficient of that generator changes sign together with the generator. A transposition of two vertices of $\sigma$ reverses the orientation of all the facets except the two omitted by the transposition, and the formula is compatible.</p>
 <p>So the boundary is a matrix of incidence signs against the facet relation, and the matrix depends on the orientations only through the convention that a simplex and its reverse are negatives.</p>
 <h3 id="the-boundary-matrix">The Boundary Matrix</h3>
 <p><strong>Definition.</strong> Order the $n$-simplices of a finite $K$ and the $(n-1)$-simplices, and let $A_n$ be the $|K_{n-1}| \times |K_n|$ matrix with entries</p>
@@ -94,7 +94,7 @@ $$</p>
 \partial_{n-1}\partial_n = 0, \qquad \text{equivalently} \qquad A_{n-1}A_n = 0 ,
 $$</p>
 <p>the second as a matrix identity over $R$.</p>
-<p><em>Proof.</em> The terms of $\partial\partial[v_0,\dots,v_n]$ are indexed by ordered pairs of omitted vertices $i < j$; omitting $v_i$ then $v_j$ gives sign $(-1)^i(-1)^j$ and omitting $v_j$ then $v_i$ gives sign $(-1)^{j-1}(-1)^i$, and the two terms are the same oriented simplex with opposite signs, so they cancel; this is the computation of <em>Simplicial and Singular Homology</em>, and it is exactly the statement that the products of the incidence matrices vanish. $\square$</p>
+<p><em>Proof.</em> The terms of $\partial\partial[v_0,\dots,v_n]$ are indexed by ordered pairs of omitted vertices $i < j$; omitting $v_i$ then $v_j$ gives sign $(-1)^i(-1)^j$ and omitting $v_j$ then $v_i$ gives sign $(-1)^{j-1}(-1)^i$, and the two terms are the same oriented simplex with opposite signs, so they cancel; this is the computation of <em>Simplicial and Singular Homology</em>, and it is exactly the statement that the products of the incidence matrices vanish.</p>
 <p>The square-zero property has the operator content that the boundary is <strong>nilpotent of index two</strong>, so the complex has an intrinsic chain of subspaces $C_n \supseteq Z_n \supseteq B_n \supseteq 0$; a square-zero operator is the simplest instance of the contractibility criterion of the cone of <em>The Suspension Operator</em>, and every complex of this Part is built from such operators.</p>
 <h2 id="cycles-boundaries-and-the-homology">Cycles, Boundaries and the Homology</h2>
 <h3 id="the-kernel-and-the-image">The Kernel and the Image</h3>
@@ -116,7 +116,7 @@ $$</p>
 <p>$$
 \chi(K) = \sum_n (-1)^n \dim_F C_n(K;F) = \sum_n (-1)^n \dim_F H_n^\Delta(K;F).
 $$</p>
-<p><em>Proof.</em> The rank-nullity theorem applied to $\partial_n$ gives $\dim\ker\partial_n = \dim C_n - \operatorname{rank}A_n$, and the rank-nullity theorem applied to $\partial_{n+1}$ restricted to its image gives $\dim H_n = \dim\ker\partial_n - \operatorname{rank}A_{n+1}$; substituting gives the first formula. The alternating sum of the dimensions is invariant under passing between the two short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to 0$ and $0 \to B_n \to Z_n \to H_n \to 0$, the ranks telescoping, which is the Euler–Poincaré formula. $\square$</p>
+<p><em>Proof.</em> The rank-nullity theorem applied to $\partial_n$ gives $\dim\ker\partial_n = \dim C_n - \operatorname{rank}A_n$, and the rank-nullity theorem applied to $\partial_{n+1}$ restricted to its image gives $\dim H_n = \dim\ker\partial_n - \operatorname{rank}A_{n+1}$; substituting gives the first formula. The alternating sum of the dimensions is invariant under passing between the two short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to 0$ and $0 \to B_n \to Z_n \to H_n \to 0$, the ranks telescoping, which is the Euler–Poincaré formula.</p>
 <p>The first formula is the operator form of the computation: the Betti numbers of a finite complex are the differences of the dimensions and the ranks of the incidence matrices, so the boundary operator computes the homology by pure linear algebra.</p>
 <h3 id="the-smith-normal-form-and-the-torsion">The Smith Normal Form and the Torsion</h3>
 <p><strong>Theorem.</strong> Let $R$ be a principal ideal domain and let $K$ be finite. Then the homology is the direct sum of a free part and a torsion part,</p>
@@ -128,7 +128,7 @@ $$</p>
 \beta_n = \operatorname{rank}C_n - \operatorname{rank}A_n - \operatorname{rank}A_{n+1},
 $$</p>
 <p>and the invariant factors $d^{(n)}_j$ are the non-unit invariant factors of the Smith normal form of $A_{n+1}$. The free part is the rank over the field of fractions, the torsion is generated by the elementary divisors greater than one, and the whole computation is the Smith normal form of the two boundary matrices at each degree.</p>
-<p><em>Proof.</em> The structure theorem for finitely generated modules over a principal ideal domain applied to the cokernel of the restriction of $\partial_{n+1}$ into $Z_n$; the Smith normal form diagonalises $A_{n+1}$ by invertible row and column operations, and the kernel and cokernel are read from the diagonal, the rank formula being the rank-nullity over the fraction field. $\square$</p>
+<p><em>Proof.</em> The structure theorem for finitely generated modules over a principal ideal domain applied to the cokernel of the restriction of $\partial_{n+1}$ into $Z_n$; the Smith normal form diagonalises $A_{n+1}$ by invertible row and column operations, and the kernel and cokernel are read from the diagonal, the rank formula being the rank-nullity over the fraction field.</p>
 <p>The torsion of the homology is thus a property of the incidence matrix of the next degree: a non-unit invariant factor of $\partial_{n+1}$ produces a cyclic summand of $H_n$. For the projective plane with its minimal triangulation the boundary matrix of degree two has determinant $\pm 2$, and the resulting $H_1 \cong \mathbb{Z}/2$ is the standard instance.</p>
 <h2 id="the-coboundary-and-the-dual-complex">The Coboundary and the Dual Complex</h2>
 <h3 id="the-dual-modules">The Dual Modules</h3>
@@ -146,7 +146,7 @@ $$</p>
 (\delta^{n-1})_{\sigma,\tau} = (A_n)_{\tau,\sigma} = [\sigma:\tau],
 $$</p>
 <p>and $\delta\delta = 0$ because $A_n A_{n-1}$ is the transpose of $A_{n-1}A_n = 0$; hence the cochain complex is the transpose of the chain complex, and the cohomology is computed by the same matrices with the maps transposed.</p>
-<p><em>Proof.</em> The evaluation pairing identifies a cochain with its coordinates, and the identity $\langle\delta\alpha,c\rangle=\langle\alpha,\partial c\rangle$ reads as the transpose relation of the matrices. The square-zero identity is the transpose of the chain one. $\square$</p>
+<p><em>Proof.</em> The evaluation pairing identifies a cochain with its coordinates, and the identity $\langle\delta\alpha,c\rangle=\langle\alpha,\partial c\rangle$ reads as the transpose relation of the matrices. The square-zero identity is the transpose of the chain one.</p>
 <p>So the dual operator of the simplicial complex is the transpose matrix, and the passage between homology and cohomology is the passage between a matrix and its transpose: the kernel of the transpose computes the cocycles, and the universal coefficient theorem of <em>Cohomology and the Universal Coefficient Theorem</em> relates the two graded modules. This is the operator-layer form of the duality between chains and cochains, and it is why the simplicial cohomology of a finite complex is read from the incidence matrices already used for the homology.</p>
 <h2 id="naturality-and-the-simplicial-maps">Naturality and the Simplicial Maps</h2>
 <h3 id="simplicial-maps-and-the-chain-map">Simplicial Maps and the Chain Map</h3>
@@ -156,14 +156,14 @@ $$</p>
 $$</p>
 <p>read as zero when the images are not distinct and with the orientation induced by the ordering otherwise, extended $R$-linearly.</p>
 <p><strong>Theorem.</strong> A simplicial map is a chain map of the simplicial complexes, $\phi_{n-1}\partial_n = \partial_n\phi_n$; the assignment is functorial, and it induces maps $H_n^\Delta(\phi) : H_n^\Delta(K;R) \to H_n^\Delta(L;R)$. The chain map is compatible with the operators of <em>The Boundary Operator</em>: it intertwines the boundaries, the augmentations and, by duality, the coboundaries.</p>
-<p><em>Proof.</em> Both sides evaluated on a simplex are the alternating sum of the images of its facets, and the images of the facets are the facets of the image; the functoriality is that $(\psi\circ\phi)_n = \psi_n\circ\phi_n$ for simplicial maps. The induced map on homology is that of any chain map. $\square$</p>
+<p><em>Proof.</em> Both sides evaluated on a simplex are the alternating sum of the images of its facets, and the images of the facets are the facets of the image; the functoriality is that $(\psi\circ\phi)_n = \psi_n\circ\phi_n$ for simplicial maps. The induced map on homology is that of any chain map.</p>
 <h3 id="the-hopf-trace-formula">The Hopf Trace Formula</h3>
 <p><strong>Theorem.</strong> Let $\phi : K \to K$ be a simplicial map of a finite complex and let $\phi_n$ be its chain map. Then the <strong>Lefschetz number</strong></p>
 <p>$$
 L(\phi) = \sum_n (-1)^n \operatorname{tr}(\phi_n) = \sum_n (-1)^n \operatorname{tr}\bigl(H_n^\Delta(\phi)\bigr)
 $$</p>
 <p>depends only on the induced maps on homology, the equality being the <strong>Hopf trace formula</strong>.</p>
-<p><em>Proof.</em> The alternating sum of the traces is invariant under passing between the two short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to 0$ and $0\to B_n\to Z_n\to H_n\to 0$ of $\phi$-stable spaces, the same telescoping as in the Euler characteristic; it is the operator form of the additivity of the trace over an exact sequence. $\square$</p>
+<p><em>Proof.</em> The alternating sum of the traces is invariant under passing between the two short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to 0$ and $0\to B_n\to Z_n\to H_n\to 0$ of $\phi$-stable spaces, the same telescoping as in the Euler characteristic; it is the operator form of the additivity of the trace over an exact sequence.</p>
 <p>The Lefschetz number is thus an invariant of the homology of the simplicial map and not of the chain level, and it is the boundary-operator form of the fixed-point index. The topological fixed-point theorem that reads from $L(\phi)\neq 0$ the existence of a fixed point of the geometric realisation, and the degree theory on which it rests, are the subject of <em>Degree Theory and the Brouwer Fixed Point Theorem</em>, where the Lefschetz number is a degree and the sign of the permutation of the fixed simplices is the local index.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (the boundary of a triangle).</strong> Let $K$ be the three edges of a $2$-simplex. Then $C_1$ is free of rank three and $C_0$ of rank three, and the cycle $[v_0v_1]+[v_1v_2]+[v_2v_0]$ has zero boundary while the boundaries of $C_1$ are generated by the differences $[v_i]-[v_0]$; hence $H_1^\Delta\cong R$ and $H_0^\Delta\cong R$, the homology of a circle, as recorded in <em>Simplicial and Singular Homology</em>.</p>

@@ -78,7 +78,7 @@ $$</p>
 \delta L = \frac{\partial L}{\partial u^i}\delta u^i + L^\mu_i\,\partial_\mu\delta u^i
 = \Bigl(\frac{\partial L}{\partial u^i} - \partial_\mu L^\mu_i\Bigr)\delta u^i + \partial_\mu\bigl(L^\mu_i\,\delta u^i\bigr),
 $$</p>
-<p>which is the stated identity. ∎</p>
+<p>which is the stated identity.</p>
 <p>The identity splits the change of the density into a piece that vanishes on shell — the equations of motion contracted with the variation — and a piece that is a divergence, the boundary current $\Theta^\mu$. Everything below is that identity read with a different kind of variation.</p>
 <p><strong>Stationarity.</strong> Integrating the identity over $\Omega$ and requiring $S$ to be stationary under variations vanishing on the boundary gives $\int E_i\delta u^i=0$ for every such variation, hence $E_i=0$ by the fundamental lemma of the calculus of variations. If the variation does not vanish on the boundary, the boundary term $\oint\Theta^\mu\,d\Sigma_\mu$ is the natural boundary condition. The variational derivation is the subject of <em>The Calculus of Variations</em>; what is added here is the classification of the symmetries.</p>
 <p><strong>Definition.</strong> A variation is a <strong>symmetry of the action up to a divergence</strong> when the density changes by a divergence,</p>
@@ -105,7 +105,7 @@ $$</p>
 <p>$$
 \alpha\,\partial_\mu F^\mu = \alpha\,E_i\xi^i + \alpha\,\partial_\mu\bigl(L^\mu_i\xi^i\bigr),
 $$</p>
-<p>and cancelling the common factor $\alpha$ gives $E_i\xi^i = \partial_\mu(F^\mu - L^\mu_i\xi^i) = -\partial_\mu j^\mu$. ∎</p>
+<p>and cancelling the common factor $\alpha$ gives $E_i\xi^i = \partial_\mu(F^\mu - L^\mu_i\xi^i) = -\partial_\mu j^\mu$.</p>
 <p><strong>The conserved charge.</strong> If the current falls off fast enough at spatial infinity, the <strong>Noether charge</strong></p>
 <p>$$
 Q = \int j^0\,d^{m-1}x
@@ -158,7 +158,7 @@ $$</p>
 <p>$$
 \int\Bigl(b^i_\alpha E_i - \partial_\mu\bigl(a^{i\mu}_\alpha E_i\bigr)\Bigr)\varepsilon^\alpha\,d^mx = 0 ,
 $$</p>
-<p>for every compactly supported $\varepsilon^\alpha$. The fundamental lemma then gives the stated identity for each $\alpha$. The higher-order form follows by integrating by parts $k$ times, at each step producing the factor $(-1)^k$. ∎</p>
+<p>for every compactly supported $\varepsilon^\alpha$. The fundamental lemma then gives the stated identity for each $\alpha$. The higher-order form follows by integrating by parts $k$ times, at each step producing the factor $(-1)^k$.</p>
 <p>Three features of the theorem are worth stating before the examples, because each is a place where the first theorem is misapplied.</p>
 <p><strong>The identity is off shell.</strong> It holds whether or not the fields solve the equations, and on the solutions both sides vanish trivially, since every term carries an $E_i$. It is therefore not a conservation law: it supplies no quantity that is constant for the solutions, because it is empty for the solutions. What it supplies is a relation between the components of the equations.</p>
 <p><strong>It says the equations are not independent.</strong> If the $N$ fields are subject to $q$ identities of the second kind, then at most $N-q$ of the equations are independent. The system is degenerate; the solution set is a union of orbits of the local symmetry, and a gauge condition — a further condition that selects one representative from each orbit — is needed before a unique evolution is determined by initial data.</p>
@@ -185,7 +185,7 @@ $$</p>
 <p>$$
 \partial_\nu\partial_\mu F^{\mu\nu} \equiv 0 ,
 $$</p>
-<p>which is the antisymmetry of $F^{\mu\nu}$ contracted with the symmetric pair $\partial_\nu\partial_\mu$. The identity was checked on a random smooth off-shell potential by finite differences, with residual exactly $0$ against a scale of $2$.</p>
+<p>which is the antisymmetry of $F^{\mu\nu}$ contracted with the symmetric pair $\partial_\nu\partial_\mu$.</p>
 <p><strong>What the identity does.</strong> The four equations $E^\nu=0$ are subject to one identity, so only three are independent. In the $3+1$ split the time component $\nu=0$ is Gauss's law, an equation with no time derivative, and the spatial components are the evolution equations; the identity is what ties the time derivative of the constraint to the divergence of the evolution equations, so that the constraint, once imposed, is preserved. Counting the degrees of freedom, four equations less one identity less one gauge freedom leaves two, the two polarizations of the free field, which is the count the corpus's <em>Canonical Quantization of the Biquaternion Maxwell Field</em> reproduces from the constraint algebra.</p>
 <p><strong>The source is forced to be conserved.</strong> Sourcing the equation, $E^\nu = j^\nu$, and taking the divergence, gives</p>
 <p>$$
@@ -208,7 +208,7 @@ $$</p>
 <p>$$
 -\,E_B - \partial_\nu E^{A_\nu} \equiv 0 ,
 $$</p>
-<p>and substitution gives $m^2\partial_\nu(A^\nu+\partial^\nu B) - m^2\partial_\nu(A^\nu+\partial^\nu B) - \partial_\nu\partial_\mu F^{\mu\nu}$, which vanishes by the same antisymmetry as before. The identity was checked on random smooth off-shell fields, with residual $9\times10^{-14}$ against a scale of $3.7$.</p>
+<p>and substitution gives $m^2\partial_\nu(A^\nu+\partial^\nu B) - m^2\partial_\nu(A^\nu+\partial^\nu B) - \partial_\nu\partial_\mu F^{\mu\nu}$, which vanishes by the same antisymmetry as before.</p>
 <p><strong>The rigid current and the correction term.</strong> The rigid subgroup, the shift of $B$, has the first-theorem current $j^\mu_{(B)} = L^\mu_B\,b_B = -m^2(A^\mu+\partial^\mu B)$, conserved on shell. Off shell the two theorems combine into the exact statement</p>
 <p>$$
 j^\mu_{(B)} + a^{A_\nu,\mu}E_{A_\nu} = -m^2\bigl(A^\mu+\partial^\mu B\bigr) + \bigl(\partial_\lambda F^{\lambda\mu} - m^2(A^\mu+\partial^\mu B)\bigr) = \partial_\lambda F^{\lambda\mu},

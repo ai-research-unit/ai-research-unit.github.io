@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilpotents of the General Quaternionic Sesqualgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="nilpotents-of-the-general-quaternionic-sesqualgebra"><strong>Nilpotents of the General Quaternionic Sesqualgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra carries four general products on its complex space, and this article treats the <strong>nilpotents</strong> of the fourth, the <strong>general quaternionic sesquilinear product</strong></p>
+<p>$$
+\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
+$$</p>
+<p>whose rule and table are <em>Introduction to the General Quaternionic Sesqualgebra of Biquaternions</em>. A nilpotent is defined by a product, so the class belongs to the product; the definition for a general product $\star$, the index and the square-zero element are quoted from <em>Definitions for the Study of the 12 Algebraic Structures</em>, and the four-way comparison of the square-zero sets is <em>The Square-Zero Elements of the Four General Products</em>. What this article owns is the <strong>GQS</strong> square-zero family: the criterion, the parametrization, the real dimension, the non-purity and the contrast with the plain nilpotent cone.</p>
+<p>The block is the one of the twelve whose nilpotents are <strong>not</strong> the plain ones and <strong>not</strong> the natural ones. The square-zero set of the plain product is the pure isotropic cone, of real dimension four; that of the natural product is the whole zero-divisor cone, of real dimension six; that of the general plain sesquilinear product is the origin alone. The GQS square-zero set is a fourth object, a real four-dimensional family lying in the <strong>non-pure</strong> part of the cone, incomparable with the plain cone and the proper part of the natural cone. This is the reading of the fourth row of the table of <em>The Square-Zero Elements of the Four General Products</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0 = 1, e_1, e_2, e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. An element is $\tilde Q = Q_0e_0 + \mathbf Q$, $\mathbf Q = \sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural} = Q_0-\mathbf Q$, the star is $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$, and the Hermitian conjugation is $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$. The <strong>central square</strong> is $c(\tilde Q) = \sum_\mu Q_\mu^2$, with $c(\tilde Q)e_0 = \tilde Q\tilde Q^{\natural}$. The product is $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second; juxtaposition $\tilde P\tilde Q$ is the general plain bilinear product, the multiplication of the algebra. The dot and cross products of vector parts are the general plain bilinear ones, and $\hat\mu$ denotes a real unit vector, $\sum_k\hat\mu_k^2 = 1$.</p>
+<h2 id="the-nilpotent-of-the-product">The Nilpotent of the Product</h2>
+<p><strong>Definition (nilpotent of a product, quoted).</strong> Let $\star$ be a product on $\mathbb{B}$. An element $\tilde\Upsilon$ is a <strong>nilpotent of $\star$</strong> when some power of it vanishes, $\tilde\Upsilon^{\star k} = 0$ for some $k\geq1$, the power being read left-nested, $\tilde\Upsilon^{\star k} = (\cdots((\tilde\Upsilon\star\tilde\Upsilon)\star\tilde\Upsilon)\cdots\star\tilde\Upsilon)$; the least such $k$ is the <strong>index of nilpotency</strong>; and an element of index two, $\tilde\Upsilon\star\tilde\Upsilon = 0$ with $\tilde\Upsilon \neq 0$, is a <strong>square-zero element of $\star$</strong>. The origin is the trivial nilpotent. The definition is <em>Definitions for the Study of the 12 Algebraic Structures</em> §5 and §6.</p>
+<p>Throughout this article the product is $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, and, unqualified, <strong>nilpotent</strong> and <strong>square-zero element</strong> mean nilpotent of $\star$ and square-zero element of $\star$. The index-two family is the class the article classifies, and its relation to the higher index is stated at §<em>The Index</em>.</p>
+<h2 id="the-square-zero-equation">The Square-Zero Equation</h2>
+<p><strong>Proposition (the reduction).</strong> For every $\tilde Q$,</p>
+<p>$$
+\tilde Q\star\tilde Q = \bigl(\overline{\tilde Q}\,\tilde Q\bigr)^{\natural} ,
+$$</p>
+<p>so $\tilde Q\star\tilde Q = 0$ if and only if $\overline{\tilde Q}\,\tilde Q = 0$.</p>
+<p><strong>Proof.</strong> $\tilde Q\star\tilde Q = \tilde Q^{\natural}\tilde Q^{*}$, and $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$, so $\tilde Q^{\natural}\tilde Q^{*} = \tilde Q^{\natural}\overline{\tilde Q^{\natural}}$. The map ${}^{\natural}$ is an anti-automorphism of the plain product, so $\tilde Q^{\natural}\overline{\tilde Q^{\natural}} = \bigl(\overline{\tilde Q^{\natural}}\,\tilde Q^{\natural}\bigr)^{\natural}$; and $\overline{\tilde Q^{\natural}} = \tilde Q^{*}$, $\overline{(\tilde Q^{\natural})^{\natural}} = \overline{\tilde Q}$, giving $\bigl(\tilde Q^{*}\tilde Q\bigr)^{\natural}$. The two readings $\tilde Q^{\natural}\overline{\tilde Q^{\natural}}$ and $\overline{\tilde Q}\tilde Q$ are the same element because $\overline{\tilde Q}\tilde Q = \overline{\tilde Q^{\natural}}\tilde Q^{\natural}$ up to the involution $\natural$ of the plain product, and applying $\natural$ to the vanishing equation is an equivalence. The identity is the one of <em>The Square of the General Quaternionic Sesquilinear Product and the Two Halves</em>, where it is proved on the coordinates.</p>
+<p><strong>Proposition (the coordinate equations).</strong> Write $\tilde Q = a + \mathbf u$ with $a = x_0+iy_0$ and $\mathbf u = \mathbf p+i\mathbf q$, where $x_0,y_0\in\mathbb{R}$ and $\mathbf p,\mathbf q\in\mathbb{R}^3$. Then $\tilde Q\star\tilde Q = 0$ if and only if</p>
+<p>$$
+x_0^2+y_0^2 = \lvert\mathbf p\rvert^2+\lvert\mathbf q\rvert^2 , \qquad x_0\mathbf p+y_0\mathbf q = 0 , \qquad \mathbf p\times\mathbf q = 0 .
+$$</p>
+<p><strong>Proof.</strong> The plain product $\overline{\tilde Q}\tilde Q = (\overline{a}+\overline{\mathbf u})(a+\mathbf u)$ has scalar part $\lvert a\rvert^2-(\overline{\mathbf u},\mathbf u)$ and vector part $\overline{a}\mathbf u+a\overline{\mathbf u}+\overline{\mathbf u}\times\mathbf u$. With $\overline{a} = x_0-iy_0$ and $\overline{\mathbf u} = \mathbf p-i\mathbf q$ one computes $\overline{a}\mathbf u+a\overline{\mathbf u} = 2(x_0\mathbf p+y_0\mathbf q)$, a real vector, and $\overline{\mathbf u}\times\mathbf u = 2i\,\mathbf p\times\mathbf q$. The scalar part is $x_0^2+y_0^2-\lvert\mathbf p\rvert^2-\lvert\mathbf q\rvert^2$, and the vanishing of the scalar part and of the real and imaginary parts of the vector part is the displayed system.</p>
+<h2 id="the-classification">The Classification</h2>
+<p><strong>Theorem (the square-zero elements).</strong> The square-zero elements of $\star$ are exactly the elements</p>
+<p>$$
+\tilde\Upsilon = c\bigl(\hat\mu + i\bigr) , \qquad c\in\mathbb{C}^{*} , \qquad \hat\mu\in\mathbb{R}^3 , \qquad \sum_{k=1}^{3}\hat\mu_k^2 = 1 ,
+$$</p>
+<p>together with the origin; equivalently, $\tilde\Upsilon = c\,(1 + i\hat\nu)$ over the complex numbers $c$ and the real unit vectors $\hat\nu$, and the two parametrizations agree under $\hat\nu\mapsto-\hat\mu$ and $c\mapsto ic$.</p>
+<p><strong>Proof.</strong> Let $\tilde Q = a+\mathbf u$ satisfy the coordinate system. The third equation $\mathbf p\times\mathbf q = 0$ says that the real vectors $\mathbf p$ and $\mathbf q$ are linearly dependent; when $\mathbf q = 0$ this is automatic and it holds trivially when $\mathbf p = 0$. If $\mathbf p$ and $\mathbf q$ are not both zero they are parallel to a common real unit vector $\hat\mu$, so $\mathbf u = c\,\hat\mu$ for a complex number $c$, and the second equation becomes $\operatorname{Re}(\overline{a}c)\,\hat\mu = 0$, that is $\operatorname{Re}(\overline{a}c) = 0$. When $a \neq 0$ this says that $c$ is a real multiple of $ia$, $c = ita$ with $t\in\mathbb{R}$; substituting into the first equation gives $\lvert a\rvert^2 = t^2\lvert a\rvert^2$, so $t^2 = 1$ and $c = \pm ia$; then $\tilde Q = a\pm ia\hat\mu = \pm ia(\hat\mu\mp i)$, of the displayed form. When $a = 0$ the first equation gives $\lvert c\rvert^2 = 0$, that is $c = 0$ and $\tilde Q = 0$, which is excluded for a square-zero element. The two parametrizations are related by $c(\hat\mu+i) = ic\,(1-i\hat\mu) = ic\,(1+i(-\hat\mu))$. Since $\hat\mu+i$ has square zero and the set is stable under the multiplication by a complex scalar (the scalar $c$ is central), every displayed element is square-zero, which proves the equivalence.</p>
+<p><strong>Corollary (the real dimension and the two readings).</strong> The square-zero elements form a real four-dimensional family, $c$ of two real parameters and $\hat\mu$ of two; and every square-zero element is <strong>non-pure</strong>,</p>
+<p>$$
+\Upsilon_0 = ic \neq 0 ,
+$$</p>
+<p>so the family lies in the non-pure part $Q_0\neq0$ of the zero-divisor cone.</p>
+<p><strong>Proof.</strong> The parametrization has $\mathbb{C}^{*}$ of real dimension two and the unit vectors $\hat\mu$ of real dimension two, and the scalar part of $c(\hat\mu+i)$ is $ic$, which vanishes only for $c = 0$.</p>
+<p><strong>Example.</strong> The elements $e_0+ie_1$, $e_0+ie_2$, $e_0+ie_3$ are square-zero, as are $ie_0\pm e_k$; the general member is $c(\hat\mu+i)$. The element $e_1+ie_2$ is <strong>not</strong> square-zero: its square is $-2e_0-2ie_3$, computed from the criterion $\overline{\tilde Q}\tilde Q = -2e_0+2ie_3$.</p>
+<p>The classification answers the two questions that a square-zero theory asks. The <strong>parametrization</strong> is a complex line over each real direction, $c(\hat\mu+i)$ with $\hat\mu$ over the real unit vectors and $c$ over the complex scalars, so the family is the union of the complex lines based at the real unit directions, of real dimension four, and the square of every member of the family is the origin. The non-purity is the striking point: the square-zero elements of the plain product are pure, of vanishing scalar part, while here every one of them has scalar part $ic$, so the two square-zero sets share only the origin.</p>
+<h2 id="the-index">The Index</h2>
+<p><strong>Proposition (the cube of a square-zero element vanishes).</strong> If $\tilde\Upsilon\star\tilde\Upsilon = 0$ then $\tilde\Upsilon^{\star 3} = 0$ and every higher left-nested power vanishes; the index of a nonzero square-zero element is two.</p>
+<p><strong>Proof.</strong> $\tilde\Upsilon^{\star 3} = (\tilde\Upsilon\star\tilde\Upsilon)\star\tilde\Upsilon = 0\star\tilde\Upsilon = 0$, and the higher powers begin with a factor that already vanishes.</p>
+<p><strong>Remark (the higher index).</strong> The classification above is the classification of the index-two family, the family of the square-zero elements, which is the family of the fourth row of <em>The Square-Zero Elements of the Four General Products</em>. Whether the block has a nilpotent of index three, an element with $\tilde\Upsilon\star\tilde\Upsilon\neq0$ and $(\tilde\Upsilon\star\tilde\Upsilon)\star\tilde\Upsilon = 0$, is not claimed here: the reduction of the higher equation is the pair $\tilde\Upsilon\star\tilde\Upsilon = \tilde Z\neq0$ with $\tilde Z\star\tilde\Upsilon = 0$, the second equation forcing $c(\tilde\Upsilon) = 0$ by the zero-divisor criterion of the plain algebra; the computations performed do not exhibit a solution, and the question is recorded as unsettled in the companion notes of the article. The definitions article records that the index is not bounded by two in every product of the twelve; for the block the only index settled here is two.</p>
+<h2 id="the-nilpotents-and-the-zero-divisors">The Nilpotents and the Zero Divisors</h2>
+<p><strong>Theorem (the square-zero elements are two-sided zero divisors).</strong> Every nonzero square-zero element $\tilde\Upsilon$ satisfies $\tilde\Upsilon\star\tilde\Upsilon = 0$, so it is a zero divisor of $\star$ with itself as partner on both sides, and it lies in the zero-divisor cone</p>
+<p>$$
+c(\tilde\Upsilon) = 0 .
+$$</p>
+<p><strong>Proof.</strong> The relation $\tilde\Upsilon\star\tilde\Upsilon = 0$ is the product of the element with itself and exhibits the partner; the cone is the criterion of <em>Zero Divisors of the General Quaternionic Sesqualgebra</em>, and $\overline{\tilde\Upsilon}\tilde\Upsilon = 0$ implies $c(\tilde\Upsilon) = 0$.</p>
+<p>The family is therefore a real four-dimensional subfamily of the real six-dimensional cone, and it is a <strong>proper</strong> subfamily: the pure zero divisor $e_1+ie_2$ of the cone is not square-zero. This is the difference between the block and the plain algebra. There, nilpotents and zero divisors are related by the criterion of the cone and every nilpotent is pure; here the nilpotents are exactly the square-zero elements, they lie in the non-pure family, and the cone is split into a pure part, where the square-zero condition is never met, and a non-pure part, where it cuts out the proper subfamily $c(\hat\mu+i)$.</p>
+<h2 id="summary">Summary</h2>
+<p>The nilpotents of the general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ are the elements whose square vanishes. The square reduces to the natural conjugate of the plain product, $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$, so the square-zero equation is $\overline{\tilde Q}\tilde Q = 0$, whose coordinates are $x_0^2+y_0^2 = \lvert\mathbf p\rvert^2+\lvert\mathbf q\rvert^2$, $x_0\mathbf p+y_0\mathbf q = 0$ and $\mathbf p\times\mathbf q = 0$ for $\tilde Q = x_0+iy_0+\mathbf p+i\mathbf q$.</p>
+<p>The square-zero elements are exactly the family $c(\hat\mu+i)$ over the complex numbers $c$ and the real unit vectors $\hat\mu$, equivalently the family $c(1+i\hat\nu)$; the family is real four-dimensional, it is the union of the complex lines based at the real unit directions, and every nonzero member is <strong>non-pure</strong>, with scalar part $ic$. Every square-zero element is a two-sided zero divisor with itself as partner, the family is a proper real four-dimensional subfamily of the real six-dimensional zero-divisor cone, and it is incomparable with the plain nilpotent cone because the plain square-zero elements are pure; the two square-zero sets share only the origin. The index of a nonzero square-zero element is two, and the question of a nilpotent of index three is left unsettled.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$</td>
+<td>the general quaternionic sesquilinear product</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon$</td>
+<td>a nilpotent, $\tilde\Upsilon\star\tilde\Upsilon = 0$</td>
+</tr>
+<tr>
+<td>$\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$</td>
+<td>the reduction of the square</td>
+</tr>
+<tr>
+<td>$c(\tilde Q) = \sum_\mu Q_\mu^2$</td>
+<td>the central square, $c(\tilde Q)e_0 = \tilde Q\tilde Q^{\natural}$</td>
+</tr>
+<tr>
+<td>$c(\hat\mu+i)$, $c\in\mathbb{C}^{*}$, $\hat\mu$ real unit</td>
+<td>the square-zero family; equivalently $c(1+i\hat\nu)$</td>
+</tr>
+<tr>
+<td>$\Upsilon_0 = ic$</td>
+<td>the scalar part of a square-zero element, non-zero</td>
+</tr>
+<tr>
+<td>$\mathbf p\times\mathbf q = 0$, $x_0\mathbf p+y_0\mathbf q = 0$</td>
+<td>the vector equations of the square-zero system</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), for the definition of the nilpotent, the index, the left-nested power and the square-zero element.</li>
+<li><em>The Square-Zero Elements of the Four General Products</em> (<code>articles_maths/the-square-zero-elements-of-the-four-general-products.md</code>), for the four square-zero sets, the chain and the incomparability this article reads in the fourth row.</li>
+<li><em>Nilpotents of the General Plain Algebra</em> (<code>articles_maths/nilpotents-of-the-general-plain-algebra.md</code>), for the plain nilpotent cone, pure and of real dimension four, against which the GQS family is compared.</li>
+<li><em>Nilpotents of the General Quaternionic Algebra</em> (<code>articles_maths/nilpotents-of-the-general-quaternionic-algebra.md</code>), for the natural product's square-zero set, the whole zero-divisor cone.</li>
+<li><em>Zero Divisors of the General Quaternionic Sesqualgebra</em> (<code>articles_maths/zero-divisors-of-the-general-quaternionic-sesqualgebra.md</code>), for the cone, its two families and the criterion.</li>
+<li><em>The Square of the General Quaternionic Sesquilinear Product and the Two Halves</em> (<code>articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md</code>), for the identity $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$.</li>
+<li><em>Introduction to the General Quaternionic Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-general-quaternionic-sesqualgebra-of-biquaternions.md</code>), for the product and its table.</li>
+<li><em>Conventions in Mathematics</em> (<code>articles_maths/conventions-in-mathematics.md</code>), for the notation and the article format.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

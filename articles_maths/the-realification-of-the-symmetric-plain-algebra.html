@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Realification of the Symmetric Plain Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-realification-of-the-symmetric-plain-algebra"><strong>The Realification of the Symmetric Plain Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Symmetric Plain Algebra is one of the twelve algebraic structures that the biquaternion space of $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries, the structure carried by the product
+$$
+\tilde P\circ\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr),
+$$
+which over $\mathbb{C}$ is the symmetric plain bilinear structure of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. Read over $\mathbb{R}$, the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.</p>
+<p>The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the doubling of the dimension, the complex structure $J$ and the table of the four effects are <em>The Realification and the Effect of the Change of Scalars</em>; This article gives what is specific to this product: its real bilinear reading, the law of its second slot over the centre, the realification of the form it carries and the signature that follows, and its real operators.</p>
+<h2 id="the-product-read-over-math8">The Product Read over $\mathbb{R}$</h2>
+<p>The product is symmetric plain bilinear over $\mathbb{C}$ and $\mathbb{R}$-bilinear over $\mathbb{R}$, by §<em>The Effect on the Twelve Algebraic Structures</em> of <em>The Realification and the Effect of the Change of Scalars</em>. It is therefore an <strong>$\mathbb{R}$-algebra</strong> on $\mathbb{R}^8$ in the broad sense, the sense of a module with a bilinear multiplication. In that algebra commutativity holds, associativity fails, the Jordan identity holds, and $e_0$ is a two-sided unit.</p>
+<p>Every ring-theoretic property of the product is the same in the two readings, by the dictionary of the same article: a condition written with the addition, the product, $e_0$ and quantification over the elements is a statement about the ring and does not move when the scalars are restricted to $\mathbb{R}$. What the real reading adds to this product is the following. It is the symmetrisation of the general plain product, so its scalar part is that of $B$ and it keeps the same form; its associativity fails while its Jordan identity holds, which makes it the one symmetric product of the twelve that is a Jordan algebra.</p>
+<h2 id="the-second-slot-and-the-centre">The Second Slot and the Centre</h2>
+<p>Over $\mathbb{C}$ the product is $\mathbb{C}$-bilinear, so it is an <strong>algebra</strong> and not a sesqualgebra, and its second slot is $\mathbb{C}$-linear. Read over $\mathbb{R}$, the product remains $\mathbb{R}$-bilinear and its second slot is $\mathbb{C}_{\mathbb{B}}$-linear: by §<em>The Realification of a Linear Map</em> of <em>The Realification and the Effect of the Change of Scalars</em>, the left multiplication $L$ by a central element $\lambda\in\mathbb{C}_{\mathbb{B}}$ commutes with the complex structure, $LJ=JL$, which is the criterion for $\mathbb{C}_{\mathbb{B}}$-linearity. The passage therefore <strong>does not change the kind</strong> of this product: it is an algebra over $\mathbb{C}$ and an algebra over $\mathbb{R}$, with the same linearity of the second slot once the centre is named as the field.</p>
+<p>In the real basis the criterion takes a block form. If the complex matrix of the product on a $\mathbb{C}$-basis is $A+iB$, the real matrix on the doubled basis is
+$$
+\begin{pmatrix}A&-B\\ B&A\end{pmatrix},
+$$
+the shape that commutes with $J=\begin{pmatrix}0&-\mathrm{I}\\ \mathrm{I}&0\end{pmatrix}$.</p>
+<h2 id="the-realified-form">The Realified Form</h2>
+<p>The product carries the general plain bilinear $B$ form, the scalar part of the general product of its family, quoted from <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>:
+$$
+B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)
+$$
+Over $\mathbb{C}$ it is a symmetric bilinear form; a nondegenerate symmetric bilinear form over $\mathbb{C}$ is classified by its rank alone, so its realification is not the doubling of a complex inertia but the <strong>split</strong> pair described in §<em>The Realification of a Form</em> of <em>The Realification and the Effect of the Change of Scalars</em>: the real part $\operatorname{Re}\Phi$ and the imaginary part $\operatorname{Im}\Phi$ are two real symmetric bilinear forms, and on the identification $\mathbb{R}^8$ the realification has signature
+$$
+(4,4),
+$$
+on the basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$. On the realifications the complex structure reverses the form,
+$$
+\Phi_{\mathbb{R}}(JP,JQ)=-\Phi_{\mathbb{R}}(P,Q),
+$$
+which is the same statement as the two opposite blocks $\mathrm{D}$ and $-\mathrm{D}$ of its Gram matrix. The instance is the row general plain bilinear $B$ of the table of <em>The Realification of the Four Forms</em>, §<em>The Four Gram Matrices</em>.</p>
+<h2 id="the-real-operators">The Real Operators</h2>
+<p>The left and the right multiplications by an element are the maps
+$$
+L_{\tilde X}:\tilde Y\mapsto\tilde X\circ\tilde Y,\qquad R_{\tilde X}:\tilde Y\mapsto\tilde Y\circ\tilde X,
+$$
+and over $\mathbb{R}$ they are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$, by §<em>The Realification of a Linear Map</em> of <em>The Realification and the Effect of the Change of Scalars</em>. Because the second slot is $\mathbb{C}_{\mathbb{B}}$-linear, the left multiplication is $\mathbb{C}_{\mathbb{B}}$-linear as well, and its real trace is twice the real part of its complex trace, $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde X})=8\operatorname{Re}\mathrm{Sc}(\tilde X)$.</p>
+<h2 id="summary">Summary</h2>
+<p>The Symmetric Plain Algebra read over $\mathbb{R}$ is the same product on the same elements, an $\mathbb{R}$-algebra on $\mathbb{R}^8$ in which commutativity holds, associativity fails, the Jordan identity holds, and $e_0$ is a two-sided unit. Its second slot is $\mathbb{C}_{\mathbb{B}}$-linear. It carries the general plain bilinear $B$ form, whose realification has signature (4,4). The passage changes nothing of the product itself; it changes the field, the dimension and the linear structure, and for this product it adds the real reading of the form it carries and of its operators.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\circ\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)$</td>
+<td>the product of the Symmetric Plain Algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^8$</td>
+<td>the realification of $\mathbb{B}$, the eight real basis elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>the centre, the field of scalars $\mathbb{C}$ carried by the ring</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>the complex structure, multiplication by $i$, of square $-1$</td>
+</tr>
+<tr>
+<td>$L_{\tilde X}$, $R_{\tilde X}$</td>
+<td>the left and the right multiplications, $\mathbb{R}$-linear on $\mathbb{R}^8$</td>
+</tr>
+<tr>
+<td>$\Phi_{\mathbb{R}}$</td>
+<td>the realification of the form $B$, of signature (4,4)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Realification and the Effect of the Change of Scalars</em> (<code>articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md</code>), for the general construction, the two rules of the realification of a form and the table of the four effects.</li>
+<li><em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the twelve structures and the columns of the table of the twelve, of which this article is the real reading of one row.</li>
+<li><em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-forms-over-the-biquaternion-c-space.md</code>), for the general plain bilinear form $B$, the first of the four whose realification is tabulated.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

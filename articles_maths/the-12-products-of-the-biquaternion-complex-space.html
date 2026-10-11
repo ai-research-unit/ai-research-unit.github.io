@@ -125,7 +125,7 @@ $$</p>
 <p>$$
 \tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}+\tilde{Q}^{\natural}\tilde{P}\bigr)=\bigl[P_0Q_0+(\mathbf{P},\mathbf{Q})\bigr].
 $$</p>
-<p>The quaternion form $B(\tilde{P},\tilde{Q})=P_0Q_0+(\mathbf{P},\mathbf{Q})$ of <em>Comparison Between the Four General Products</em> read as a product; its scalar part is $B$ and its vector part is zero. It is commutative, its values lie in the centre $\mathbb{C}_{\mathbb{B}}$ — it compares two elements and returns a multiple of $e_0$ — and it has no unit. It is <strong>not</strong> a Jordan product.</p>
+<p>The quaternion form $N(\tilde{P},\tilde{Q})=P_0Q_0+(\mathbf{P},\mathbf{Q})$ of <em>Comparison Between the Four General Products</em> read as a product; its scalar part is $N$ and its vector part is zero. It is commutative, its values lie in the centre $\mathbb{C}_{\mathbb{B}}$ — it compares two elements and returns a multiple of $e_0$ — and it has no unit. It is <strong>not</strong> a Jordan product.</p>
 <h3 id="the-antisymmetric-quaternionic-bilinear-product">The Antisymmetric Quaternionic Bilinear Product</h3>
 <p>The antisymmetric part of the general quaternionic bilinear product above.</p>
 <p>$$
@@ -151,7 +151,7 @@ It is sesquilinear over $(\mathbb{C},\bar{\cdot})$, $\mathbb{C}$-linear in the f
 =\mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{*}\bigr)
 =\bigl[P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})\bigr].
 $$</p>
-<p>The value $\tilde{P}\tilde{Q}^{*}$ has scalar part $H=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ and vector part $-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$; the conjugate transpose sends the value to its conjugate with the vector part negated, $\overline{\tilde{Q}\tilde{P}^{*}}=(\tilde{P}\tilde{Q}^{*})^{\natural}$, so the half-sum keeps the scalar part and cancels the vector part. The operation is the <strong>Hermitian form</strong> $H(\tilde{P},\tilde{Q})=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ of <em>Biquaternion Norm and Invertibility</em> read as a product, and it is <strong>central</strong>: its values lie in the centre $\mathbb{C}_{\mathbb{B}}$. It is <strong>conjugate-commutative</strong>, $s(\tilde{P},\tilde{Q})=\overline{s(\tilde{Q},\tilde{P})}$, rather than commutative, and it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, conjugate-linear in the second argument. Its diagonal is the square read through the form, $s(\tilde{Q},\tilde{Q})=H(\tilde{Q},\tilde{Q})=|Q_0|^{2}+(\mathbf{Q},\overline{\mathbf{Q}})$, which is real and strictly positive off the origin. Being central-valued it has no unit, and it <strong>fails</strong> the Jordan identity on the whole space, with witness $x=y=e_1$, where the two sides are $0$ and $e_0$.</p>
+<p>The value $\tilde{P}\tilde{Q}^{*}$ has scalar part $H=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ and vector part $-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$; the conjugate transpose sends the value to its conjugate with the vector part negated, $\overline{\tilde{Q}\tilde{P}^{*}}=(\tilde{P}\tilde{Q}^{*})^{\natural}$, so the half-sum keeps the scalar part and cancels the vector part. The operation is the <strong>Hermitian form</strong> $H(\tilde{P},\tilde{Q})=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ of <em>Norm and Invertibility in the General Plain Algebra</em> read as a product, and it is <strong>central</strong>: its values lie in the centre $\mathbb{C}_{\mathbb{B}}$. It is <strong>conjugate-commutative</strong>, $s(\tilde{P},\tilde{Q})=\overline{s(\tilde{Q},\tilde{P})}$, rather than commutative, and it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, conjugate-linear in the second argument. Its diagonal is the square read through the form, $s(\tilde{Q},\tilde{Q})=H(\tilde{Q},\tilde{Q})=|Q_0|^{2}+(\mathbf{Q},\overline{\mathbf{Q}})$, which is real and strictly positive off the origin. Being central-valued it has no unit, and it <strong>fails</strong> the Jordan identity on the whole space, with witness $x=y=e_1$, where the two sides are $0$ and $e_0$.</p>
 <h3 id="the-antisymmetric-plain-sesquilinear-product">The Antisymmetric Plain Sesquilinear Product</h3>
 <p>The antisymmetric part of the general plain sesquilinear product above, under the conjugate transpose.</p>
 <p>$$
@@ -417,8 +417,7 @@ asked of them, fails there as well, on $32$ of the $64$ pairs for each.</p>
 <p><strong>Two cautions.</strong> The counts are counts on a chosen basis and are not invariants of the operation; they are
 given as the shape of each failure and they change with the basis. And each identity is tested in the single
 form the corpus declares, the Jordan identity in its two-variable form and not in a rearrangement that
-coincides with it at $y=x$ alone, which would answer a weaker question; the forms are therefore written out.
-Recomputed on the basis, and on random complex pairs and triples.</p>
+coincides with it at $y=x$ alone, which would answer a weaker question; the forms are therefore written out.</p>
 <hr />
 <h2 id="summary">Summary</h2>
 <p>The complex space of the biquaternion algebra carries four general products, and each is split into a symmetric and an antisymmetric part by an exchange that keeps the class, so it carries the twelve products. The exchange is the plain interchange of the two arguments for the two $\mathbb{C}$-bilinear families and the conjugate transpose, the interchange followed by the coefficientwise conjugation of the value, for the two sesquilinear families. Each of the twelve is the multiplication of an algebraic structure of its own kind; the names, the codes and the structures are read in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
@@ -473,7 +472,7 @@ Recomputed on the basis, and on random complex pairs and triples.</p>
 <td>the antisymmetric part of a sesquilinear product</td>
 </tr>
 <tr>
-<td>$B(\tilde{P},\tilde{Q})=P_0Q_0+(\mathbf{P},\mathbf{Q})$</td>
+<td>$N(\tilde{P},\tilde{Q})=P_0Q_0+(\mathbf{P},\mathbf{Q})$</td>
 <td>the quaternion form, the scalar part of the symmetric quaternionic bilinear product</td>
 </tr>
 <tr>

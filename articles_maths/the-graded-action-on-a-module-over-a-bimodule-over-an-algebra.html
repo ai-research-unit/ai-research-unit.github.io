@@ -75,14 +75,14 @@ $$</p>
 \alpha(am)=\alpha(a)\,\alpha(m) \qquad (a \in A,\ m \in M).
 $$</p>
 <p>Conversely, a map $\alpha$ with these properties determines the grading by $A_i=\{a : \alpha(a)=(-1)^{i}a\}$ and $M_j=\{m : \alpha(m)=(-1)^{j}m\}$.</p>
-<p><em>Proof.</em> $\alpha$ is linear and $\alpha(ab)=(-1)^{i+j}ab=\alpha(a)\alpha(b)$ for $a \in A_i$, $b \in A_j$, so it is an automorphism; $\alpha^{2}=\mathrm{id}$ because $(-1)^{2i}=1$. For the compatibility, $a \in A_i$ and $m \in M_j$ have $am \in M_{i+j}$, and both sides of $\alpha(am)=\alpha(a)\alpha(m)$ equal $(-1)^{i+j}am$. The converse is the eigenspace decomposition of an involution when $2$ is invertible. $\square$</p>
+<p><em>Proof.</em> $\alpha$ is linear and $\alpha(ab)=(-1)^{i+j}ab=\alpha(a)\alpha(b)$ for $a \in A_i$, $b \in A_j$, so it is an automorphism; $\alpha^{2}=\mathrm{id}$ because $(-1)^{2i}=1$. For the compatibility, $a \in A_i$ and $m \in M_j$ have $am \in M_{i+j}$, and both sides of $\alpha(am)=\alpha(a)\alpha(m)$ equal $(-1)^{i+j}am$. The converse is the eigenspace decomposition of an involution when $2$ is invertible.</p>
 <p>Thus a graded module over a graded algebra is the same thing as a module with a compatible grade involution, which is the structure used by the two signed articles cited above; the grading and the involution are two descriptions of one datum.</p>
 <h3 id="the-action-is-even">The action is even</h3>
 <p><strong>Proposition.</strong> The action homomorphism $\rho : A \to \operatorname{End}_R(M)$ carries $A_i$ into the operators of parity $i$:</p>
 <p>$$
 a \in A_i \implies L_a(M_j) \subseteq M_{i+j}.
 $$</p>
-<p><em>Proof.</em> This is the compatibility $A_iM_j \subseteq M_{i+j}$ read as a statement about the image of the left multiplication. $\square$</p>
+<p><em>Proof.</em> This is the compatibility $A_iM_j \subseteq M_{i+j}$ read as a statement about the image of the left multiplication.</p>
 <p>The action of a graded algebra on a graded module is therefore <strong>even</strong>: it preserves the degree, $\deg(am)=\deg a+\deg m$ for homogeneous $a$ and $m$.</p>
 <h2 id="the-sign-rule">The Sign Rule</h2>
 <h3 id="the-koszul-sign">The Koszul sign</h3>
@@ -96,7 +96,7 @@ $$</p>
 <p>$$
 \alpha\,T\,\alpha^{-1}=(-1)^{\deg T}\,T .
 $$</p>
-<p><em>Proof.</em> $\alpha L_a\alpha^{-1}(m)=\alpha(a\,\alpha^{-1}(m))=\alpha(a)m=(-1)^{\deg a}am=(-1)^{\deg a}L_a(m)$. For a homogeneous $T$ of parity $i$ and $m \in M_j$, $T(m) \in M_{i+j}$ and $\alpha T\alpha^{-1}(m)=(-1)^{j}\alpha(T(m))=(-1)^{j}(-1)^{i+j}T(m)=(-1)^{i}T(m)$. $\square$</p>
+<p><em>Proof.</em> $\alpha L_a\alpha^{-1}(m)=\alpha(a\,\alpha^{-1}(m))=\alpha(a)m=(-1)^{\deg a}am=(-1)^{\deg a}L_a(m)$. For a homogeneous $T$ of parity $i$ and $m \in M_j$, $T(m) \in M_{i+j}$ and $\alpha T\alpha^{-1}(m)=(-1)^{j}\alpha(T(m))=(-1)^{j}(-1)^{i+j}T(m)=(-1)^{i}T(m)$.</p>
 <p>This is the exact sense in which the grade involution imposes a sign on the operators: conjugation by $\alpha$ multiplies an operator of parity $i$ by $(-1)^{i}$, so the two-sided operators of the signed sandwich are exactly the operators twisted by that sign.</p>
 <h3 id="from-a-graded-left-module-to-a-graded-bimodule">From a graded left module to a graded bimodule</h3>
 <p>A graded left module carries a canonical right action, and the sign rule is what makes it associative.</p>
@@ -113,9 +113,9 @@ $$</p>
 (m\cdot b)\cdot c=m\cdot(bc), \qquad a\,(m\cdot b)=(am)\cdot b .
 $$</p>
 <p>Consequently $M$ is a graded $(A,A)$-bimodule, and each $R_b$ is $R$-linear of parity $\deg b$.</p>
-<p><em>Proof.</em> For the associativity, $(m\cdot b)\cdot c=(-1)^{\deg c(\deg m+\deg b)}(-1)^{\deg b\deg m}c\,b\,m$ and $m\cdot(bc)=(-1)^{(\deg b+\deg c)\deg m}(bc)m$; the two exponents differ by $\deg b\deg c$, and graded-commutativity of $A$ supplies exactly that sign, $cb=(-1)^{\deg b\deg c}bc$. For the compatibility, $a(m\cdot b)=(-1)^{\deg b\deg m}a\,b\,m$ and $(am)\cdot b=(-1)^{\deg b(\deg a+\deg m)}b\,a\,m$, whose exponents differ again by $\deg a\deg b$, supplied by graded-commutativity. The parity is read from $R_b(M_j) \subseteq M_{j+\deg b}$. $\square$</p>
+<p><em>Proof.</em> For the associativity, $(m\cdot b)\cdot c=(-1)^{\deg c(\deg m+\deg b)}(-1)^{\deg b\deg m}c\,b\,m$ and $m\cdot(bc)=(-1)^{(\deg b+\deg c)\deg m}(bc)m$; the two exponents differ by $\deg b\deg c$, and graded-commutativity of $A$ supplies exactly that sign, $cb=(-1)^{\deg b\deg c}bc$. For the compatibility, $a(m\cdot b)=(-1)^{\deg b\deg m}a\,b\,m$ and $(am)\cdot b=(-1)^{\deg b(\deg a+\deg m)}b\,a\,m$, whose exponents differ again by $\deg a\deg b$, supplied by graded-commutativity. The parity is read from $R_b(M_j) \subseteq M_{j+\deg b}$.</p>
 <p><strong>Corollary.</strong> $R_b=L_b\alpha^{\deg b}$, that is, $R_b=L_b$ for even $b$ and $R_b=L^{\alpha}_b=L_b\alpha$ for odd $b$.</p>
-<p><em>Proof.</em> For $b$ even, $R_b(m)=bm=L_b(m)$; for $b$ odd, $R_b(m)=(-1)^{\deg m}bm=b\,\alpha(m)=L_b(\alpha(m))$. $\square$</p>
+<p><em>Proof.</em> For $b$ even, $R_b(m)=bm=L_b(m)$; for $b$ odd, $R_b(m)=(-1)^{\deg m}bm=b\,\alpha(m)=L_b(\alpha(m))$.</p>
 <p>The theorem is the precise form of the assertion that the grading imposes a sign: without the sign $(-1)^{\deg b\deg m}$ the right action would not be associative, and without graded-commutativity even the signed formula fails.</p>
 <h3 id="the-two-sided-operators-and-their-parity">The two-sided operators and their parity</h3>
 <p><strong>Proposition.</strong> Let ${}_A M_A$ be a graded bimodule with the Koszul right action, and let $S_{a,b}=L_aR_b$ be the unsigned sandwich of <em>The Signed Sandwich on a Bimodule over an Algebra</em>. Then</p>
@@ -123,7 +123,7 @@ $$</p>
 S_{a,b}(M_j) \subseteq M_{j+\deg a+\deg b}, \qquad \alpha\,S_{a,b}\,\alpha^{-1}=(-1)^{\deg a+\deg b}\,S_{a,b},
 $$</p>
 <p>and $S_{a,b}=L_{ab}\alpha^{\deg b}$. The signed sandwich $S^{\alpha}_{a,b}=S_{a,b}\alpha$ has the same parity $\deg a+\deg b$ and obeys the same sign rule.</p>
-<p><em>Proof.</em> $R_b(M_j) \subseteq M_{j+\deg b}$ and $L_a(M_{j+\deg b}) \subseteq M_{j+\deg b+\deg a}$; the sign rule is the proposition above applied to the operator of parity $\deg a+\deg b$. The identity $S_{a,b}=L_aR_b=L_aL_b\alpha^{\deg b}=L_{ab}\alpha^{\deg b}$ uses the corollary. $\square$</p>
+<p><em>Proof.</em> $R_b(M_j) \subseteq M_{j+\deg b}$ and $L_a(M_{j+\deg b}) \subseteq M_{j+\deg b+\deg a}$; the sign rule is the proposition above applied to the operator of parity $\deg a+\deg b$. The identity $S_{a,b}=L_aR_b=L_aL_b\alpha^{\deg b}=L_{ab}\alpha^{\deg b}$ uses the corollary.</p>
 <p>Since $\alpha$ has parity $0$ but acts on odd elements by $-1$, the signed sandwich $S^{\alpha}_{a,b}$ is the unsigned one with the middle factor sign-flipped on the odd part; this is the operator form of the Koszul sign, and it agrees with the composition rule of <em>The Signed Sandwich on a Bimodule over an Algebra</em>.</p>
 <h2 id="the-graded-endomorphism-algebra">The Graded Endomorphism Algebra</h2>
 <h3 id="the-grading-of-the-operators">The grading of the operators</h3>
@@ -132,7 +132,7 @@ $$</p>
 \operatorname{End}_R(M)=\operatorname{End}_R(M)_{\bar0}\oplus\operatorname{End}_R(M)_{\bar1}, \qquad \operatorname{End}_R(M)_i=\{T : T(M_j) \subseteq M_{i+j}\}.
 $$</p>
 <p><strong>Proposition.</strong> $\operatorname{End}_R(M)$ is a graded $R$-algebra: $\operatorname{End}_i\operatorname{End}_j \subseteq \operatorname{End}_{i+j}$, the identity is even, and $L_a$ has parity $\deg a$. The grade involution acts on it by conjugation, $T\mapsto\alpha T\alpha^{-1}$, and this is an algebra automorphism of order two whose eigenvalue on $\operatorname{End}_i$ is $(-1)^{i}$.</p>
-<p><em>Proof.</em> If $S$ has parity $i$ and $T$ has parity $j$, then $ST(M_k)\subseteq S(M_{j+k})\subseteq M_{i+j+k}$, so $\operatorname{End}_i\operatorname{End}_j\subseteq\operatorname{End}_{i+j}$; the identity preserves each $M_j$. The parity of $L_a$ is the proposition on the action. The conjugation is an automorphism because $\alpha$ is invertible, and its eigenvalue is the sign rule above. $\square$</p>
+<p><em>Proof.</em> If $S$ has parity $i$ and $T$ has parity $j$, then $ST(M_k)\subseteq S(M_{j+k})\subseteq M_{i+j+k}$, so $\operatorname{End}_i\operatorname{End}_j\subseteq\operatorname{End}_{i+j}$; the identity preserves each $M_j$. The parity of $L_a$ is the proposition on the action. The conjugation is an automorphism because $\alpha$ is invertible, and its eigenvalue is the sign rule above.</p>
 <h3 id="the-graded-commutator">The graded commutator</h3>
 <p>The graded endomorphism algebra carries a signed commutator, and the sign rule is the statement that the action is a homomorphism of graded algebras for it.</p>
 <p><strong>Definition.</strong> For homogeneous operators $S,T$ the <strong>graded commutator</strong> is</p>
@@ -144,7 +144,7 @@ $$</p>
 [S,TT']=[S,T]T'+(-1)^{\deg S\,\deg T}T[S,T'],
 $$</p>
 <p>and an even operator $T$ is $A$-linear exactly when $[T,L_a]=0$ for all homogeneous $a$.</p>
-<p><em>Proof.</em> The alternation is a rewriting of the definition. The derivation identity is the Leibniz rule with the Koszul sign inserted before moving $T$ past $S$, checked by expanding both sides. For the last clause, an even $T$ has $\deg T=0$, so $[T,L_a]=TL_a-L_aT$, whose vanishing is $A$-linearity by <em>Module Endomorphisms</em>; for an odd $T$ the graded bracket carries the sign $(-1)^{\deg a}$ and its vanishing is a twisted condition, not $A$-linearity. $\square$</p>
+<p><em>Proof.</em> The alternation is a rewriting of the definition. The derivation identity is the Leibniz rule with the Koszul sign inserted before moving $T$ past $S$, checked by expanding both sides. For the last clause, an even $T$ has $\deg T=0$, so $[T,L_a]=TL_a-L_aT$, whose vanishing is $A$-linearity by <em>Module Endomorphisms</em>; for an odd $T$ the graded bracket carries the sign $(-1)^{\deg a}$ and its vanishing is a twisted condition, not $A$-linearity.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>(a) The exterior algebra.</strong> Let $A=\Lambda(V)$ with the usual $\mathbb{Z}/2$-grading by degree parity: it is graded-commutative, so every graded left module acquires the Koszul right action and becomes a graded bimodule. The sign $(-1)^{\deg b\deg m}$ is the sign of the exterior product, and the grade involution is the parity operator.</p>
 <p><strong>(b) A Clifford algebra.</strong> Let $A$ be the Clifford algebra of a quadratic space, graded by the parity of the number of generators. It is not graded-commutative in general, so the Koszul right action of the theorem is available only on modules where the obstruction $bc-(-1)^{\deg b\deg c}cb$ acts trivially; the sign rule for the operators still holds, because it only uses the grade involution.</p>

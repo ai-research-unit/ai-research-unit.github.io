@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="square-roots-of-minus-one-zero-and-plus-one-in-the-general-quaternionic-algebra"><strong>Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article classifies the square roots of the three central values $-1$, $0$ and $+1$ in the general quaternionic bilinear product.</p>
+<p>The equation $\tilde P\star\tilde P=\lambda e_0$ names a product, and throughout this article the square is the one of the general quaternionic product $\tilde P^{\natural}\tilde Q$; the root is relative to it, and the plain square of the same element is a different object. The whole of the problem is decided by one identity: the square of every element of this product is already the central element $N(\tilde P)e_0$, so the three special values are the three level sets of the norm,</p>
+<p>$$
+\tilde P\star\tilde P=-e_0 \iff N(\tilde P)=-1 , \qquad
+\tilde P\star\tilde P=0 \iff N(\tilde P)=0 , \qquad
+\tilde P\star\tilde P=e_0 \iff N(\tilde P)=1 ,
+$$</p>
+<p>and each is a nondegenerate complex quadric, of complex dimension three and real dimension six. The article gives the three sets, their dimension, their families and their standard elements, and it reads them against the three sets of the plain product, where the same three values have a different shape because the plain square is scalar only on the vector part.</p>
+<p><strong>Boundaries.</strong> The square, the norm and the idempotents of the algebra are <em>Introduction to the General Plain Algebra of Biquaternions</em>, <em>Norm and Invertibility in the General Plain Algebra</em>, <em>Idempotents of the General Plain Algebra</em> and <em>Nilpotents of the General Plain Algebra</em>; the three special values for the plain product are their own article, <em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em>, and the plain case is quoted here and not reproved. The four root problems of the four general products side by side, and the criterion by which a root of a non-zero value is a unit, are <em>The Square Roots of a Central Value in the Four General Products</em>; this article owns the block reading of the three values and the families inside them. The norm and the one-sided theory are <em>Norm and Invertibility in the General Quaternionic Algebra</em>, and the zero divisors, which are the roots of $0$, are <em>Zero Divisors of the General Quaternionic Algebra</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$, with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product and $\star$ the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\mathbf Q$. An element is $\tilde P=P_0e_0+\mathbf P$ with $\mathbf P=\sum_{k=1}^{3}P_ke_k$, the <strong>norm</strong> is $N(\tilde P)=\sum_\mu P_\mu^2=P_0^2+(\mathbf P,\mathbf P)$, and $(\mathbf P,\mathbf P)=\sum_kP_k^2$ is the complex bilinear form of the vector part. A <strong>central value</strong> is an element $\lambda e_0$ with $\lambda\in\mathbb{C}$, and $\hat\mu$ denotes a real unit vector of $\mathbb{R}^3$.</p>
+<h2 id="the-problem-and-its-reduction">The Problem and Its Reduction</h2>
+<p><strong>Definition.</strong> Let $\lambda\in\mathbb{C}$. A <strong>square root of the central value $\lambda$</strong> in the general quaternionic product is an element $\tilde P$ with</p>
+<p>$$
+\tilde P\star\tilde P=\lambda e_0 .
+$$</p>
+<p>The root is relative to the product, and this article uses the one of $\star$ throughout; the general definition of the square and of the roots of a central value is <em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>Powers, the Square and the Roots</em>.</p>
+<p><strong>Theorem (the reduction).</strong> For every $\tilde P\in\mathbb{B}$,</p>
+<p>$$
+\tilde P\star\tilde P=\lambda e_0 \iff N(\tilde P)=\lambda .
+$$</p>
+<p><strong>Proof.</strong> The square is $N(\tilde P)e_0$ by §<em>The Square Lies in the Scalar Line</em> of <em>Introduction to the General Quaternionic Algebra of Biquaternions</em>, and $e_0\neq0$.</p>
+<p>The reduction is a single complex equation in the four complex coordinates, and it holds for every $\lambda$ at once. It has no case split and no vanishing condition: the plain product reduces the same problem to the pair $P_0^2-(\mathbf P,\mathbf P)=\lambda$, $2P_0\mathbf P=0$, whose second equation forces $P_0=0$ or $\mathbf P=0$ and produces the central pair and the vector family (<em>Square Roots of a General Element in the General Plain Algebra</em>); the quaternionic square is central for every element, so the second equation does not arise and the root set is the quadric itself.</p>
+<p><strong>Corollary (the three special values).</strong> The roots of $-1$, of $0$ and of $+1$ are the level sets of the norm,</p>
+<p>$$
+\{\tilde P:N(\tilde P)=-1\} , \qquad \{\tilde P:N(\tilde P)=0\} , \qquad \{\tilde P:N(\tilde P)=1\} .
+$$</p>
+<h2 id="the-roots-of-minus-one">The Roots of Minus One</h2>
+<h3 id="statement">Statement</h3>
+<p><strong>Theorem.</strong> The roots of $-1$ in the general quaternionic product are the solutions of</p>
+<p>$$
+N(\tilde P)=P_0^2+(\mathbf P,\mathbf P)=-1 .
+$$</p>
+<p>The set is a nondegenerate complex quadric of complex dimension three, hence of real dimension six. It contains the two central roots $\pm i$ and the elements $i\hat\mu$ over the real unit vectors; writing $P_\mu=p_\mu+ip'_\mu$ with $p_\mu,p'_\mu$ real, its two real equations are</p>
+<p>$$
+\sum_{\mu=0}^{3}\bigl(p_\mu^2-p'^2_\mu\bigr)=-1 , \qquad \sum_{\mu=0}^{3}p_\mu p'_\mu=0 ,
+$$</p>
+<p>a family of real dimension six.</p>
+<p><strong>Proof.</strong> The criterion is the reduction. With $P_\mu=p_\mu+ip'_\mu$ the equation $N=\sum_\mu(p_\mu^2-p'^2_\mu)+2i\sum_\mu p_\mu p'_\mu=-1$ is the pair of real equations displayed, which is two independent real equations on eight real coordinates; the gradient of $N$ does not vanish on the level set, so the quadric is nondegenerate off the origin and has real dimension $8-2=6$. The elements $\pm i$ have $N=(\pm i)^2=-1$; and for a real unit vector $\hat\mu$ the element $i\hat\mu$ has $(\mathbf P,\mathbf P)=(i\hat\mu,i\hat\mu)=-\sum_k\hat\mu_k^2=-1$ and $P_0=0$, so it satisfies the equation.</p>
+<h3 id="the-families">The Families</h3>
+<p>The roots of $-1$ split into three entries according to the vector part, and the split is the one of the plain classification with the two real directions exchanged.</p>
+<ul>
+<li><strong>The central roots $\pm i$.</strong> These have $\mathbf P=0$ and $P_0=\pm i$, and $P_0^2=-1$. They are the two elements of the root set in the centre $\mathbb{C}_{\mathbb{B}}$.</li>
+<li><strong>The imaginary vector roots.</strong> These have $P_0=0$ and $\mathbf P$ a pure complex vector with $(\mathbf P,\mathbf P)=-1$. The real solutions are the elements $i\hat\mu$ over the real unit vectors, a quadric of real dimension two in the vector subspace with signature $(3,3)$; the complex solutions form a family of real dimension four, the solutions of $\sum_kp_k^2-\sum_kp'^2_k=-1$ with $\sum_kp_kp'_k=0$.</li>
+<li><strong>The mixed roots.</strong> These have both $P_0$ and the vector part nonzero, and they fill the rest of the quadric.</li>
+</ul>
+<p>The contrast with the plain product is a change of sign in the vector direction. The plain square of a pure element is $-(\mathbf P,\mathbf P)e_0$, so there the real unit vectors are roots of $-1$ and the imaginary ones of $+1$; here the sign is removed by the conjugation in the first slot, so the <strong>real</strong> unit vectors are roots of $+1$ and the <strong>imaginary</strong> ones, $i\hat\mu$, are roots of $-1$. The central roots $\pm i$ are common to the two products, the scalar line being fixed by the conjugation.</p>
+<h3 id="verification">Verification</h3>
+<p>The two central roots and the imaginary vector roots are read from the norm directly. For the mixed family the equations above are the general pair, and the elements whose vector part has real and imaginary parts $\mathbf p,\mathbf p'$ with $|\mathbf p|=r$, $|\mathbf p'|=s$ and $\mathbf p\perp\mathbf p'$ have $N=p_0^2+r^2-s^2$ when $P_0=p_0$ is real; the value $-1$ is reached for every real $p_0$ by choosing $r,s$ with $s^2-r^2=1+p_0^2$, so the mixed family is non-empty over every real scalar. The parametrics confirm the real dimension six.</p>
+<h2 id="the-roots-of-zero">The Roots of Zero</h2>
+<p><strong>Theorem.</strong> The roots of $0$ in the general quaternionic product are the elements of the <strong>zero-divisor cone</strong>,</p>
+<p>$$
+\{\tilde P:\tilde P\star\tilde P=0\}=\{\tilde P:N(\tilde P)=0\}=C ,
+$$</p>
+<p>a real cone of real dimension six. It consists of the origin, the <strong>pure</strong> isotropic elements $\boldsymbol\rho+i\boldsymbol\rho'$ with $\boldsymbol\rho\perp\boldsymbol\rho'$ and $|\boldsymbol\rho|=|\boldsymbol\rho'|$, and the <strong>non-pure</strong> elements $\tilde P=2P_0\tilde\Pi$ over the nontrivial idempotents $\tilde\Pi$ of the plain product.</p>
+<p><strong>Proof.</strong> The criterion is the reduction. The shape and the two families are <em>Zero Divisors of the General Quaternionic Algebra</em>, §<em>The Zero Divisor Set</em> and §<em>The Two Families of Zero Divisors</em>.</p>
+<p>The root set of $0$ is the whole nilpotent cone of the product, the largest of the four general products, and it contains the root set of $0$ of the plain product, which is the pure isotropic cone of real dimension four (<em>Nilpotents of the General Plain Algebra</em>). The two standard roots are $e_1+ie_2$, which is pure, and $e_0+ie_1$, which is not; the second is twice the Hermitian idempotent, whose plain square is itself.</p>
+<h2 id="the-roots-of-plus-one">The Roots of Plus One</h2>
+<p><strong>Theorem.</strong> The roots of $+1$ in the general quaternionic product are the solutions of</p>
+<p>$$
+N(\tilde P)=P_0^2+(\mathbf P,\mathbf P)=1 .
+$$</p>
+<p>The set is a nondegenerate complex quadric of complex dimension three, hence of real dimension six. It contains the two central roots $\pm e_0$ and the elements $\hat\mu$ over the real unit vectors, and its families are the mirror of the roots of $-1$ under multiplication by $i$.</p>
+<p><strong>Proof.</strong> The criterion is the reduction, and the quadric is nondegenerate by the same argument as for $-1$. The elements $\pm e_0$ have $N=1$; a real unit vector $\hat\mu$ has $(\mathbf P,\mathbf P)=\sum_k\hat\mu_k^2=1$ and $P_0=0$. Multiplication by $i$ acts as $\tilde P\mapsto i\tilde P$ and multiplies the norm by $i^2=-1$, so it is a bijection of the roots of $-1$ onto the roots of $+1$ and accounts for the displayed families.</p>
+<p><strong>Corollary.</strong> The roots of $+1$ are exactly the products $i\tilde P$ of the roots of $-1$ with $i$, and the roots of $-1$ are exactly the products $i\tilde P$ of the roots of $+1$ with $i$. The two sets are the two halves of the level set $N=\pm1$ under the complex structure.</p>
+<h2 id="the-three-sets-compared">The Three Sets Compared</h2>
+<p>The three special values are the three sign choices of the norm, and their three sets are read side by side with the plain product's three sets.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>value</th>
+<th>the general quaternionic product</th>
+<th>the general plain product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$-1$</td>
+<td>$N=-1$, one quadric of real dimension $6$; contains $\pm i$ and the imaginary vector roots $i\hat\mu$</td>
+<td>the central pair $\pm i$, the real vector roots $\hat\mu$, and a four-parameter family</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$N=0$, the whole zero-divisor cone of real dimension $6$</td>
+<td>the pure isotropic cone of real dimension $4$, together with $0$</td>
+</tr>
+<tr>
+<td>$+1$</td>
+<td>$N=1$, one quadric of real dimension $6$; contains $\pm e_0$ and the real vector roots $\hat\mu$</td>
+<td>the products $i\tilde P$ of the roots of $-1$ with $i$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The quaternionic column is this article. The plain column is quoted from <em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em>, and the case-by-case comparison of the four general products, with the criterion by which the roots of a non-zero value are units, is <em>The Square Roots of a Central Value in the Four General Products</em>.</p>
+<p>Two structural differences are worth naming. The plain root sets are stratified by the vanishing of the scalar part, because the plain square is scalar only on the vector part; the quaternionic root sets are single quadrics, because the quaternionic square is always scalar. And the plain roots of $-1$ carry the idempotents and the plain roots of $0$ carry only the nilpotents, whereas here the roots of $-1$ are a quadric with no element of the algebra attached, the idempotents of the product being the trivial ones alone, and the roots of $0$ carry the whole zero-divisor set, nilpotents and idempotent multiples together.</p>
+<h2 id="the-relation-to-the-idempotents">The Relation to the Idempotents</h2>
+<p>The plain classification of the idempotents is a bijection from the plain roots of $-1$ to the idempotents, $\xi\mapsto\tfrac12(e_0+\xi i)$ (<em>Idempotents of the General Plain Algebra</em>). In the general quaternionic product that bijection has no analogue: the idempotents of the product are $0$ and $e_0$ alone, and they are the roots of $0$ and of $+1$ respectively, not of $-1$.</p>
+<p>Two statements record what happens instead. First, the <strong>roots of $-1$ are not the idempotent parameters</strong>: the idempotent equation of the product is $\tilde Q\star\tilde Q=\tilde Q$, which forces $\tilde Q$ to be central, hence $0$ or $e_0$, and neither is a root of $-1$. Second, the <strong>plain idempotents are roots of $0$ of the product</strong>: for a nontrivial plain idempotent $\tilde\Pi=\tfrac12(e_0+\xi i)$,</p>
+<p>$$
+\tilde\Pi\star\tilde\Pi=N(\tilde\Pi)e_0=0 ,
+$$</p>
+<p>because a nontrivial idempotent is a zero divisor of the plain product and has vanishing norm; so the bijection of the plain product sends the plain roots of $-1$ to the <strong>roots of $0$</strong> of this product, and not to its roots of $-1$. The displacement is the subject of <em>Idempotents of the General Quaternionic Algebra</em>.</p>
+<h2 id="the-relation-to-the-zero-divisors">The Relation to the Zero Divisors</h2>
+<p>The roots of $0$ are the zero divisors together with the origin: for a nonzero $\tilde P$, $\tilde P\star\tilde P=0$ is exactly the condition $N(\tilde P)=0$, which is the criterion for $\tilde P$ to be a zero divisor of the product (<em>Zero Divisors of the General Quaternionic Algebra</em>). The roots of $-1$ and of $+1$ have non-vanishing norm $N=\pm1$, so they are units of the plain product, and they are never zero divisors; in particular the equations $\tilde P\star\tilde X=e_0$ and $\tilde X\star\tilde P=e_0$ are soluble for them and insoluble for the roots of $0$ (<em>Norm and Invertibility in the General Quaternionic Algebra</em>). Across the four general products the same statement holds once a root exists: a root of a non-zero central value is a unit and a non-zero root of $0$ is a zero divisor (<em>The Square Roots of a Central Value in the Four General Products</em>).</p>
+<h2 id="summary">Summary</h2>
+<p>In the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ the square is always central, $\tilde P\star\tilde P=N(\tilde P)e_0$, so the roots of the three special values are the three level sets of the norm and each is a nondegenerate complex quadric of real dimension six. The roots of $-1$ are the solutions of $N=-1$; they contain the central pair $\pm i$, the imaginary vector roots $i\hat\mu$ over the real unit vectors, and a mixed family, and their real and imaginary vector directions are the ones the plain product assigns to the opposite value. The roots of $0$ are the whole zero-divisor cone, of real dimension six, the union of the pure isotropic elements and the complex multiples of the nontrivial plain idempotents. The roots of $+1$ are the solutions of $N=1$; they contain the central pair $\pm e_0$ and the real vector roots $\hat\mu$, and they are the image of the roots of $-1$ under multiplication by $i$. The plain bijection from the roots of $-1$ to the idempotents has no analogue here: the idempotents of the product are $0$ and $e_0$ alone, and the plain idempotents are roots of $0$ of the product. The roots of $\pm1$ are units of the algebra, and the roots of $0$ are its zero divisors.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$</td>
+<td>the general quaternionic bilinear product</td>
+</tr>
+<tr>
+<td>$N(\tilde P)=\sum_\mu P_\mu^2=P_0^2+(\mathbf P,\mathbf P)$</td>
+<td>the norm</td>
+</tr>
+<tr>
+<td>$\lambda e_0$</td>
+<td>a central value</td>
+</tr>
+<tr>
+<td>$N(\tilde P)=\lambda$</td>
+<td>the reduced form of the root equation</td>
+</tr>
+<tr>
+<td>$\pm i$</td>
+<td>the central roots of $-1$</td>
+</tr>
+<tr>
+<td>$i\hat\mu$</td>
+<td>the imaginary vector roots of $-1$ over the real unit vectors $\hat\mu$</td>
+</tr>
+<tr>
+<td>$\hat\mu$</td>
+<td>the real vector roots of $+1$</td>
+</tr>
+<tr>
+<td>$C=\{N=0\}$</td>
+<td>the zero-divisor cone, the roots of $0$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$</td>
+<td>the Hermitian idempotent, a root of $0$ of the product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the square roots of a central value in an algebra with a quadratic form.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the isotropic vectors and the quadratic form $\sum_\mu Q_\mu^2$ of the complex quaternion algebra.</li>
+<li><em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em> (<code>articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md</code>), for the same three values in the plain product, with their stratification by the scalar part.</li>
+<li><em>The Square Roots of a Central Value in the Four General Products</em> (<code>articles_maths/the-square-roots-of-a-central-value-in-the-four-general-products.md</code>), for the four root problems side by side and the criterion by which a root of a non-zero value is a unit.</li>
+<li><em>Norm and Invertibility in the General Quaternionic Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md</code>), for the norm, the multiplicativity and the one-sided equations.</li>
+<li><em>Zero Divisors of the General Quaternionic Algebra</em> (<code>articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md</code>), for the cone, its two families and the annihilators.</li>
+<li><em>Idempotents of the General Quaternionic Algebra</em> (<code>articles_maths/idempotents-of-the-general-quaternionic-algebra.md</code>), for the idempotents $0$ and $e_0$ and the displacement of the plain idempotents into the roots of $0$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

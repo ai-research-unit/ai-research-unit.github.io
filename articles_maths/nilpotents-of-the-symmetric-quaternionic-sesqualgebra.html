@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilpotents of the Symmetric Quaternionic Sesqualgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="nilpotents-of-the-symmetric-quaternionic-sesqualgebra"><strong>Nilpotents of the Symmetric Quaternionic Sesqualgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article classifies the nilpotents of the block, the symmetric quaternionic sesquilinear product
+$\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ of
+<em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em>. It follows
+<em>Zero Divisors of the Symmetric Quaternionic Sesqualgebra</em> and reads the first named class of the block; the
+second, the idempotents, is <em>Idempotents of the Symmetric Quaternionic Sesqualgebra</em>.</p>
+<p>The nilpotent is the solution of an equation in the product, and the product is part of the definition: it
+is stated once for a general product in <em>Definitions for the Study of the 12 Algebraic Structures</em>,
+§<em>The Nilpotent</em>, and read on the products of the space. The unqualified word means the nilpotent of the
+block. The block is not associative, so a power needs a bracketing, and the left-nested reading is used
+throughout; the first statement of the article is that the ambiguity does not matter here, because no
+element of the block has a vanishing cube without having a vanishing square. So the block has nilpotents of
+index two only, and the nilpotent of the block is the <strong>square-zero element</strong>.</p>
+<p>The product is <em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em>; the diagonal
+$\tilde Q\star\tilde Q$ is <em>The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic
+Sesqualgebra</em>; the zero divisors are <em>Zero Divisors of the Symmetric Quaternionic Sesqualgebra</em>; the roots
+of the central value $0$ are read in <em>Square Roots of Minus One, Zero and Plus One in the Symmetric
+Quaternionic Sesqualgebra</em>; the nilpotents of the plain product are <em>Nilpotents of the General Plain
+Algebra</em>; and the square-zero sets of the four general products are <em>The Square-Zero Elements of the Four
+General Products</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
+$e_k^2=-e_0$ and $e_1e_2=e_3$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
+scalar imaginary $i$; $\mathbf Q=\sum_kQ_ke_k$; $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$; ${}^{\natural}$ negates
+$e_1,e_2,e_3$ and fixes the coefficients, $\bar{\cdot}$ conjugates the coefficients, and
+${}^{*}={}^{\natural}\circ\bar{\cdot}$; $\mathbb{H}_{\mathbb{B}}$ is the real quaternion subspace. The
+diagonal is $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q$
+with $K(\tilde Q,\tilde Q)=|Q_0|^2-\sum_k|Q_k|^2$, and it is a real quaternion for every $\tilde Q$.
+Throughout this article the product is the block.</p>
+<h2 id="definition">Definition</h2>
+<p><strong>Definition (nilpotent of a product).</strong> Let $\star$ be a product on $\mathbb{B}$ and let $\tilde\Upsilon$
+be an element. It is <strong>nilpotent of $\star$</strong> when some power vanishes,</p>
+<p>$$
+\tilde\Upsilon^{\star k}=0 \quad\text{for some } k\geq1 ,
+$$</p>
+<p>the power being the left-nested reading
+$\tilde\Upsilon^{\star k}=(\cdots((\tilde\Upsilon\star\tilde\Upsilon)\star\tilde\Upsilon)\cdots\star\tilde\Upsilon)$
+of <em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>Powers, the Square and the Roots</em>. The
+least such $k$ is the <strong>index of nilpotency</strong>; an element of index two,
+$\tilde\Upsilon\star\tilde\Upsilon=0$ with $\tilde\Upsilon\neq0$, is a <strong>square-zero element of $\star$</strong>.</p>
+<p>This is <em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>The Nilpotent</em>. Unqualified, the
+product is the block, and the nilpotent of the block is the solution of
+$\tilde\Upsilon^{\star k}=0$ for some $k$. The origin is the trivial nilpotent and is excluded from the
+classification.</p>
+<h2 id="the-index-is-two">The Index Is Two</h2>
+<p><strong>Theorem (the only index is two).</strong> For every element $\tilde P$ of the block,</p>
+<p>$$
+\tilde P\star(\tilde P\star\tilde P)=0
+\qquad\Longleftrightarrow\qquad
+(\tilde P\star\tilde P)\star\tilde P=0
+\qquad\Longleftrightarrow\qquad
+\tilde P\star\tilde P=0 .
+$$</p>
+<p><em>Proof.</em> Suppose $\tilde P\star(\tilde P\star\tilde P)=0$ and put
+$\tilde S=\tilde P\star\tilde P$. The diagonal formula gives $\tilde S=\sigma e_0+\mathbf V$ with
+$\sigma=K(\tilde P,\tilde P)$ a real number and
+$\mathbf V=-P_0\overline{\mathbf P}-\overline{P_0}\mathbf P$ a real vector, so $\tilde S$ is a real
+quaternion: $\tilde S^{\natural}=\tilde S$ and $\overline{\tilde S}=\tilde S$. The equation
+$\tilde P\star\tilde S=0$ is, in the scalar–vector form with $\tilde S$ real,</p>
+<p>$$
+P_0\sigma=(\mathbf P,\mathbf V),
+\qquad
+P_0\mathbf V+\sigma\mathbf P=\mathbf 0 ,
+$$</p>
+<p>where $(\mathbf P,\mathbf V)$ is the complex bilinear dot product of the two vectors.</p>
+<p>If $P_0=0$ then the second display is $\sigma\mathbf P=\mathbf 0$; if $\mathbf P=\mathbf 0$ then
+$\tilde P=0$ and $\tilde S=0$, while if $\mathbf P\neq\mathbf 0$ then $\sigma=0$, but for $P_0=0$ the
+diagonal is $\tilde S=K(\tilde P,\tilde P)e_0=-\lVert\mathbf P\rVert^2e_0$, whose vector part
+$\mathbf V$ vanishes and whose scalar $\sigma$ is $-\lVert\mathbf P\rVert^2$, so $\sigma=0$ forces
+$\tilde P=0$. Hence no solution with $P_0=0$ except $\tilde P=0$.</p>
+<p>If $P_0\neq0$, substitute $\mathbf V=-P_0\overline{\mathbf P}-\overline{P_0}\mathbf P$ into the second
+display: it reads $-P_0^2\overline{\mathbf P}+\bigl(\sigma-|P_0|^2\bigr)\mathbf P=\mathbf 0$, that is
+$P_0^2\overline{\mathbf P}=\bigl(\sigma-|P_0|^2\bigr)\mathbf P=-\lVert\mathbf P\rVert^2\mathbf P$,
+the last step because $\sigma=K(\tilde P,\tilde P)=|P_0|^2-\lVert\mathbf P\rVert^2$. If $\mathbf P=\mathbf 0$
+then $\tilde P=P_0e_0$ is central, the first display reads $P_0|P_0|^2=0$, and $P_0\neq0$ is a
+contradiction. If $\mathbf P\neq\mathbf 0$, take the Hermitian norm of both sides of
+$P_0^2\overline{\mathbf P}=-\lVert\mathbf P\rVert^2\mathbf P$: it gives
+$|P_0|^4\lVert\mathbf P\rVert^2=\lVert\mathbf P\rVert^6$, hence $|P_0|^2=\lVert\mathbf P\rVert^2$, so
+$\sigma=0$ and, from the second display, $P_0\mathbf V=-\sigma\mathbf P=\mathbf 0$, that is
+$\mathbf V=\mathbf 0$; then $\tilde S=\sigma e_0+\mathbf V=0$. Hence $\tilde S=0$ in every case.</p>
+<p>So $\tilde P\star(\tilde P\star\tilde P)=0$ forces $\tilde P\star\tilde P=0$; the converse is immediate.
+The right-nested statement is conjugate-commutative, $(\tilde P\star\tilde P)\star\tilde P=\overline{\tilde P\star(\tilde P\star\tilde P)}$, so it vanishes exactly when the left-nested product
+does.</p>
+<p><strong>Corollary.</strong> Every nilpotent of the block has index two, and the nonzero nilpotents of the block are
+exactly its square-zero elements.</p>
+<p><em>Proof.</em> By the theorem a vanishing left-nested cube is already a vanishing square, so the powers stop at
+two and "some power vanishes" is the same as "the square vanishes".</p>
+<h2 id="the-square-zero-elements">The Square-Zero Elements</h2>
+<p><strong>Theorem (the square-zero set of the block).</strong> The square-zero elements of the block are</p>
+<p>$$
+\alpha\bigl(e_0+i\boldsymbol\mu\bigr),
+\qquad
+\alpha\in\mathbb{C}^{\times},\quad
+\boldsymbol\mu\in\mathbb{R}^3,\quad
+\lVert\boldsymbol\mu\rVert=1 ,
+$$</p>
+<p>together with the origin.</p>
+<p><em>Proof.</em> Let $\tilde P=\alpha e_0+\mathbf x$. If $\alpha=0$ the diagonal is
+$\tilde P\star\tilde P=K(\tilde P,\tilde P)e_0=-\lVert\mathbf x\rVert^2e_0$, which vanishes only for
+$\mathbf x=\mathbf 0$. If $\alpha\neq0$, the diagonal is central exactly when
+$\alpha\overline{\mathbf x}\in i\mathbb{R}^3$; write $\alpha\overline{x_k}=-ic_k$ with $c_k\in\mathbb{R}$,
+so $x_k=i c_k/\overline{\alpha}=i\alpha c_k/|\alpha|^2$ and
+$\lVert\mathbf x\rVert^2=\lVert\mathbf c\rVert^2/|\alpha|^2$. Then
+$\tilde P\star\tilde P=K(\tilde P,\tilde P)e_0$ with
+$K(\tilde P,\tilde P)=|\alpha|^2-\lVert\mathbf x\rVert^2$, which vanishes exactly when
+$\lVert\mathbf c\rVert^2=|\alpha|^4$. Writing $\mathbf c=|\alpha|^2\boldsymbol\mu$ with
+$\boldsymbol\mu\in\mathbb{R}^3$ a unit vector, the element is
+$\tilde P=\alpha e_0+i\alpha\boldsymbol\mu=\alpha(e_0+i\boldsymbol\mu)$, and every such element has
+$K=|\alpha|^2(1-\lVert\boldsymbol\mu\rVert^2)=0$ and vanishing vector part.</p>
+<p><strong>Corollary (the shape of the set).</strong> The nonzero nilpotents are a real cone of real dimension four: the
+parameter $\alpha$ runs over the punctured plane, of real dimension two, and the direction
+$\boldsymbol\mu$ over the unit sphere, of real dimension two.</p>
+<p><strong>Corollary (the diagonal witness).</strong> $\tilde P=e_0+ie_1$ is a nilpotent, the simplest one with $\alpha=1$
+and $\boldsymbol\mu=e_1$; it has $\lVert\boldsymbol\mu\rVert=1$. The element $e_1$ is not a nilpotent, since
+$e_1\star e_1=-e_0$, though it is a pure zero divisor.</p>
+<h2 id="the-nilpotents-and-the-zero-divisors">The Nilpotents and the Zero Divisors</h2>
+<p><strong>Theorem (a nilpotent is a zero divisor).</strong> Every nonzero nilpotent of the block is a zero divisor, and it
+annihilates itself on both sides: $\tilde\Upsilon\star\tilde\Upsilon=0$, so the pair
+$(\tilde\Upsilon,\tilde\Upsilon)$ exhibits it as a two-sided zero divisor.</p>
+<p><em>Proof.</em> The relation $\tilde\Upsilon\star\tilde\Upsilon=0$ is the product of $\tilde\Upsilon$ with itself
+on either side; both factors are nonzero by hypothesis. The two-sidedness is
+<em>Zero Divisors of the Symmetric Quaternionic Sesqualgebra</em>.</p>
+<p><strong>Theorem (the nilpotents are non-pure zero divisors).</strong> A nilpotent
+$\tilde\Upsilon=\alpha(e_0+i\boldsymbol\mu)$ has scalar part $\alpha\neq0$ and central square
+$c(\tilde\Upsilon)=\alpha^2(1-\lVert\boldsymbol\mu\rVert^2)=0$; so it is a zero divisor of the block by the
+non-pure criterion, and it is not in the pure family.</p>
+<p><em>Proof.</em> $c(\alpha(e_0+i\boldsymbol\mu))=\alpha^2\bigl(1+\lVert i\boldsymbol\mu\rVert^2\bigr)=\alpha^2(1-\lVert\boldsymbol\mu\rVert^2)=0$ because $\lVert\boldsymbol\mu\rVert=1$.</p>
+<p>The inclusion is strict: $c$ vanishes on the whole non-pure family $\{Q_0\neq0,\ c(\tilde Q)=0\}$, and the
+element</p>
+<p>$$
+e_0+e_1+i\sqrt2\,e_2
+$$</p>
+<p>has $Q_0=1$ and $c=1+1-2=0$, so it is a non-pure zero divisor, yet its square is $-2e_0-2e_1\neq0$;
+equivalently it annihilates the nonzero $e_0-e_1+i\sqrt2\,e_2$ without being square-zero. So the
+square-zero cone is a <em>proper</em> subset of the non-pure family, and the two must not be identified.</p>
+<p>The class is thus strictly smaller than the zero-divisor set: the zero divisors include the whole vector
+subspace, of real dimension six, while the nilpotents are a real cone of real dimension four. The
+difference is the subject of §<em>Comparison</em> of <em>Zero Divisors of the Symmetric Quaternionic Sesqualgebra</em>.</p>
+<h2 id="the-nilpotents-and-the-idempotents">The Nilpotents and the Idempotents</h2>
+<p><strong>Theorem (the two classes meet only at the origin).</strong> No nonzero element of the block is both a nilpotent
+and an idempotent.</p>
+<p><em>Proof.</em> If $\tilde X\star\tilde X=\tilde X$ and $\tilde X\star\tilde X=0$, then $\tilde X=0$.</p>
+<p>This is the two-family statement of the block. The zero-divisor set splits into the nilpotents
+$\alpha(e_0+i\boldsymbol\mu)$, whose square vanishes, and the remaining elements of the non-pure family,
+$Q_0\neq0$, $c(\tilde Q)=0$, whose square does not vanish (the witness $e_0+e_1+i\sqrt2\,e_2$); while the idempotents
+$-\tfrac12e_0+\boldsymbol\mu$ are regular and lie outside the zero-divisor set altogether. The contrast
+with the plain product is exact: there the nontrivial idempotents are zero divisors and the nilpotents are
+the pure family, while here the nilpotents are non-pure and the idempotents are regular.</p>
+<h2 id="the-conjugations">The Conjugations</h2>
+<p>The three conjugations act on the nilpotent cone by permuting its parameters, and the cone is invariant
+under each of them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>conjugation</th>
+<th>value on $\tilde\Upsilon=\alpha(e_0+i\boldsymbol\mu)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>natural ${}^{\natural}$</td>
+<td>$\alpha(e_0-i\boldsymbol\mu)$, the direction reversed</td>
+</tr>
+<tr>
+<td>complex $\bar{\cdot}$</td>
+<td>$\overline{\alpha}(e_0-i\boldsymbol\mu)$, the direction reversed and the coefficient conjugated</td>
+</tr>
+<tr>
+<td>star ${}^{*}={}^{\natural}\circ\bar{\cdot}$</td>
+<td>$\overline{\alpha}(e_0+i\boldsymbol\mu)$, the coefficient conjugated</td>
+</tr>
+</tbody>
+</table></div>
+<p>Every value is again of the form $\alpha'(e_0+i\boldsymbol\mu')$ with $\alpha'\in\mathbb{C}^{\times}$ and
+$\boldsymbol\mu'$ a real unit vector, so each conjugation is a bijection of the cone onto itself; the star
+fixes the direction and conjugates the coefficient, and it fixes a nonzero nilpotent exactly when $\alpha$
+is real. The class is a real cone of real dimension four, and it is decomposed into the orbits of the star
+by the real-valued coefficient.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>The simplest nilpotent.</strong> $\tilde\Upsilon=e_0+ie_1$: $\tilde\Upsilon\star\tilde\Upsilon=0$, so the index
+is two; the left-nested cube is $\tilde\Upsilon\star(\tilde\Upsilon\star\tilde\Upsilon)=\tilde\Upsilon\star0=0$.</p>
+<p><strong>A nilpotent with a complex coefficient.</strong> $\tilde\Upsilon=(1+i)(e_0+ie_2)$: by the theorem the square
+vanishes; the scalar part is $1+i$ and the central square is $0$.</p>
+<p><strong>A pure element of square zero inside the vector subspace.</strong> The origin alone: a pure element
+$\mathbf P\neq0$ has $\tilde P\star\tilde P=-\lVert\mathbf P\rVert^2e_0\neq0$, so the vector subspace
+contains no nonzero nilpotent of the block, in contrast with the plain product, whose nilpotent cone lies
+there.</p>
+<p><strong>A pure zero divisor that is not a nilpotent.</strong> $\tilde P=e_1$: it is a zero divisor of the block, since
+$e_1\star e_2=0$, and it is not a nilpotent, since $e_1\star e_1=-e_0$.</p>
+<h2 id="summary">Summary</h2>
+<p>The nilpotent of the block has index two and no other: $\tilde P\star(\tilde P\star\tilde P)=0$ holds
+exactly when $\tilde P\star\tilde P=0$, so the nonzero nilpotents are the square-zero elements, and they are</p>
+<p>$$
+\alpha(e_0+i\boldsymbol\mu),
+\qquad
+\alpha\in\mathbb{C}^{\times},\quad
+\boldsymbol\mu\in\mathbb{R}^3,\quad
+\lVert\boldsymbol\mu\rVert=1 ,
+$$</p>
+<p>a real cone of real dimension four. Every nonzero nilpotent is a non-pure zero divisor that annihilates
+itself on both sides; the nilpotents are strictly smaller than the zero-divisor set, whose pure family is
+the whole vector subspace. No nonzero nilpotent is an idempotent, the two named classes of the block meeting
+only at the origin; the nontrivial idempotents are regular and lie outside the zero-divisor set. The three
+conjugations permute the cone, the star conjugating the coefficient and fixing the direction.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Upsilon$</td>
+<td>a nilpotent of the block; index two, hence square-zero</td>
+</tr>
+<tr>
+<td>$\tilde P\star(\tilde P\star\tilde P)=0\Leftrightarrow\tilde P\star\tilde P=0$</td>
+<td>the index-two theorem</td>
+</tr>
+<tr>
+<td>$\alpha(e_0+i\boldsymbol\mu)$</td>
+<td>the nonzero nilpotents, a real cone of dimension four</td>
+</tr>
+<tr>
+<td>$c(\tilde\Upsilon)=\sum_\mu\Upsilon_\mu^2=0$</td>
+<td>the central square, vanishing on the nilpotents</td>
+</tr>
+<tr>
+<td>$\{\tilde Q\neq0:Q_0=0\}$</td>
+<td>the pure zero divisors, containing no nonzero nilpotent</td>
+</tr>
+<tr>
+<td>$K(\tilde Q,\tilde Q)=|Q_0|^2-\lVert\mathbf Q\rVert^2$</td>
+<td>the scalar part of the diagonal</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), §<em>The Nilpotent</em> and §<em>Powers, the Square and the Roots</em>, for the definition, the index and the left-nested power of a non-associative product.</li>
+<li><em>The Square-Zero Elements of the Four General Products</em> (<code>articles_maths/the-square-zero-elements-of-the-four-general-products.md</code>), for the square-zero set of the product whose symmetric part is the block.</li>
+<li><em>Nilpotents of the General Plain Algebra</em> (<code>articles_maths/nilpotents-of-the-general-plain-algebra.md</code>), for the pure nilpotent cone of the plain product.</li>
+<li><em>Zero Divisors of the Symmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md</code>), for the criterion and the two families that the nilpotents sit inside.</li>
+<li><em>Idempotents of the Symmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/idempotents-of-the-symmetric-quaternionic-sesqualgebra.md</code>), for the class disjoint from the nilpotents.</li>
+<li><em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md</code>), for the product and its diagonal.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -76,7 +76,7 @@ $$</p>
 <p>$$
 (\bar\Psi\Phi)(\bar\Phi\Psi) = \tfrac14 \sum_A \mathrm{Re}\bigl(\bar\Psi q^A\Psi\bigr)\, \mathrm{Re}\bigl(\bar\Phi q_A\Phi\bigr) , \qquad q_A \in \{1, q^\mu, q^{\mu\nu}, \dots\} ,
 $$</p>
-<p>with "the coefficient $\tfrac14$ derives from $\mathrm{Tr}_{\mathbb H}(q^Aq_A) = 2$", was checked here on 100 random real-quaternion pairs. With the four units $\{1,i,j,k\}$ and the same-argument bilinears the source uses, the coefficient that reproduces the left-hand side is <strong>one</strong>, not $\tfrac14$; the printed coefficient leaves a residual of order 3, and the identity is exact only with coefficient 1:</p>
+<p>With the four units $\{1,i,j,k\}$ and the same-argument bilinears the source uses, the coefficient that reproduces the left-hand side is <strong>one</strong>, not $\tfrac14$; the printed coefficient leaves a residual of order 3, and the identity is exact only with coefficient 1:</p>
 <p>$$
 (\bar\Psi\Phi)(\bar\Phi\Psi) = \sum_{A\in\{1,i,j,k\}} \mathrm{Re}\bigl(\bar\Psi q_A\Psi\bigr)\, \mathrm{Re}\bigl(\bar\Phi q_A\Phi\bigr) .
 $$</p>
@@ -100,7 +100,7 @@ $$</p>
 e^a{}_\mu = \kappa^{-1}\mathrm{ReTr}_{\text{spinor}}\bigl(\bar u\,\gamma^a u\bigr)\,i k_\mu = \kappa^{-1}k_\mu\,\mathrm{Re}\bigl(i\,\bar u\gamma^a u\bigr) .
 $$</p>
 <p>The vector current $\bar u\gamma^a u$ is real for any Dirac spinor, so its real part times $i$ vanishes identically. The composite tetrad is therefore <strong>zero</strong> for every plane-wave spinor, verified here to $8\times 10^{-17}$ on four independent spinors, and the induced metric $g_{\mu\nu} = \eta_{ab}e^a{}_\mu e^b{}_\nu$ is the zero metric. The construction does not merely fail to be a tetrad — it assigns no geometry at all to the free Dirac field, which is the only field the paper's action contains before the constraints are imposed. No check in the paper detects this, and Section 4.2's "Example verification" does not evaluate Eq. (4).</p>
-<p><strong>The defined torsion has no time–space components.</strong> The source's $T^\rho{}_{\mu\nu}$ is built from $\tfrac12[q_\mu,q_\nu]$, and $[q_0,q_i] = 0$ for the units, so $T^\rho{}_{0i} = 0$ for every spinor, verified here at residual exactly zero on 100 random spinors. A third of the torsion components are identically zero. The object the same section matches it to, $\sigma^\rho{}_{\mu\nu} = \bar\Psi\gamma^{[\rho}\gamma_\mu\gamma_{\nu]}\Psi$, is <em>totally antisymmetric</em> and has exactly those components nonzero. So Eq. (5) and the Einstein–Cartan matching of Section 4.4 contradict each other, and it is the matching that carries the claim that the source reproduces Einstein–Cartan.</p>
+<p><strong>The defined torsion has no time–space components.</strong> A third of the torsion components are identically zero. The object the same section matches it to, $\sigma^\rho{}_{\mu\nu} = \bar\Psi\gamma^{[\rho}\gamma_\mu\gamma_{\nu]}\Psi$, is <em>totally antisymmetric</em> and has exactly those components nonzero. So Eq. (5) and the Einstein–Cartan matching of Section 4.4 contradict each other, and it is the matching that carries the claim that the source reproduces Einstein–Cartan.</p>
 <p><strong>The couplings do not close dimensionally.</strong> The source gives the tetrad a factor $\kappa^{-1}$ and the contorsion a factor $\kappa$ while setting both couplings to the same $\kappa = 8\pi G$. With the canonical dimension $[\Psi] = M^{3/2}$ and $[G] = M^{-2}$, the tetrad composite has dimension $M^6$ where a tetrad must be dimensionless, and the contorsion composite has dimension $M^2$ where a contorsion must have dimension $M$. Equivalently, only one assignment of powers can be right and the source uses two.</p>
 <p><strong>The constrained action does not constrain.</strong> The master action of Section 5,</p>
 <p>$$
@@ -149,12 +149,12 @@ $$</p>
 <p>$$
 \mathrm{Tr}\bigl[\gamma_5\gamma_\rho\gamma_\lambda\gamma^{\mu\nu}\bigr] = 4\,\epsilon_{\rho\lambda}{}^{\mu\nu} ,
 $$</p>
-<p>as printed (with loose index heights). Checked here in the corpus's conventions with all indices lowered and $\gamma_{\mu\nu} = \tfrac12[\gamma_\mu,\gamma_\nu]$ the source's own definition, the trace is</p>
+<p>as printed (with loose index heights).</p>
 <p>$$
 \mathrm{Tr}\bigl[\gamma_5\gamma_\rho\gamma_\lambda\gamma_{\mu\nu}\bigr] = 4i\,\epsilon_{\rho\lambda\mu\nu} ,
 $$</p>
 <p>verified at residual exactly zero over all index quadruples. The printed identity is missing the factor $i$, and the chain built on it inherits the omission.</p>
-<p>The second error is structural. The appendix evaluates $B_{\lambda\mu\nu} = \bar\Psi\gamma_\lambda\gamma_{\mu\nu}\Psi$, finds that "the only nonzero contribution comes from the axial-vector channel", and concludes $B_{\lambda\mu\nu} = \bar\Psi\gamma_5\gamma_\rho\Psi\,\epsilon^\rho{}_{\lambda\mu\nu}$. But this object is <strong>not totally antisymmetric</strong>: verified on 100 random spinors, the antisymmetry relation $\bar\Psi\gamma_{\lambda}\gamma_{\mu\nu}\Psi = -\bar\Psi\gamma_{\mu}\gamma_{\lambda\nu}\Psi$ fails with residual of order 7. It cannot therefore equal the axial channel times a totally antisymmetric epsilon. What does hold, exactly, is the statement for the antisymmetrised projection,</p>
+<p>The second error is structural. The appendix evaluates $B_{\lambda\mu\nu} = \bar\Psi\gamma_\lambda\gamma_{\mu\nu}\Psi$, finds that "the only nonzero contribution comes from the axial-vector channel", and concludes $B_{\lambda\mu\nu} = \bar\Psi\gamma_5\gamma_\rho\Psi\,\epsilon^\rho{}_{\lambda\mu\nu}$. It cannot therefore equal the axial channel times a totally antisymmetric epsilon. What does hold, exactly, is the statement for the antisymmetrised projection,</p>
 <p>$$
 \bar\Psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\Psi = i\,\epsilon_{\lambda\mu\nu\rho}\,\bar\Psi\gamma_5\gamma^\rho\Psi ,
 $$</p>

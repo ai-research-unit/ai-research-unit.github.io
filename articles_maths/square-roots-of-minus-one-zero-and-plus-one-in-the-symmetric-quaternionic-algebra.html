@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="square-roots-of-minus-one-zero-and-plus-one-in-the-symmetric-quaternionic-algebra"><strong>Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A root of a central value $\lambda$ in a product is a nonzero element with $\tilde P\star\tilde P=\lambda e_0$ (<em>Definitions for the Study of the 12 Algebraic Structures</em> §<em>Powers, the Square and the Roots</em>). In the symmetric quaternionic product the square is always central, $\tilde P\star\tilde P=N(\tilde P)e_0$, so the equation is the single scalar equation $N(\tilde P)=\lambda$ for the quadratic form $N(\tilde P)=\sum_{\mu=0}^{3}P_\mu^2$ (<em>Norm and Invertibility in the Symmetric Quaternionic Algebra</em>). The three values the algebra singles out — $-1$, $0$ and $+1$ — therefore give three level sets of one quadratic form, and this article computes them, compares them, and reads their relations to the idempotents of the block and to its zero divisors.</p>
+<p>The reduction is total in the block, in the sense that the vector part enters only through the single scalar $(\mathbf P,\mathbf P)$ and never through a vector equation; the three sets are consequently <strong>quadric hypersurfaces of complex dimension three</strong>, one of which, the level $0$, is a cone. The article gives the common reduction, the three sets with their parametrisations and their examples, the three-set comparison through the scaling of the form, and the two relations at the end: the roots of $0$ are exactly the square-zero elements, hence exactly the zero divisors of the parent algebra, while the correspondence between the roots and the idempotents of the block fails.</p>
+<p><strong>Boundaries.</strong> The classification of the roots of a general element is <em>Square Roots of a General Element in the Symmetric Quaternionic Algebra</em>; the square-zero elements and their index are <em>Nilpotents of the Symmetric Quaternionic Algebra</em>; the idempotents are <em>Idempotents of the Symmetric Quaternionic Algebra</em>; the isotropic cone and its families are <em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em>; the three parallel classifications in the parent are <em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em>, and the general definitions are the definitions article.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$, and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde P=P_0e_0+\mathbf P$, and $(\mathbf P,\mathbf P)=\sum_{k=1}^{3}P_k^2$ may vanish without $\mathbf P$ vanishing. The <strong>symmetric quaternionic multiplication</strong> is $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$, and its diagonal is $N(\tilde P)=N(\tilde P,\tilde P)=\sum_{\mu=0}^{3}P_\mu^2$; the operation is also written $\bullet$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, and the subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_\pm$ are those of <em>Introduction to the Remarkable Subspaces</em>.</p>
+<h2 id="the-common-reduction">The Common Reduction</h2>
+<p><strong>Theorem (the reduction).</strong> For every $\lambda\in\mathbb{C}$, the equation $\tilde P\star\tilde P=\lambda e_0$ is equivalent to the single scalar equation</p>
+<p>$$
+N(\tilde P)=P_0^2+(\mathbf P,\mathbf P)=\lambda ,
+$$</p>
+<p>so that every root set is a level set of the diagonal form: the natural conjugation and the sign leave each level set in place, while the star and the Hermitian conjugation carry the level set of $\lambda$ onto the level set of $\overline{\lambda}$.</p>
+<p><em>Proof.</em> The square is $N(\tilde P)e_0$ by the definition of the product; comparing coefficients of the basis gives the scalar equation, since $N$ depends only on the four coefficients squared and not on their order. The natural conjugation replaces $\mathbf P$ by $-\mathbf P$ and leaves the scalar part, so $N(\tilde P^{\natural})=N(\tilde P)$; the star conjugates the four coefficients and negates the vector part, and the Hermitian conjugation conjugates all four, so both give $N(\tilde P^{*})=N(\overline{\tilde P})=\overline{N(\tilde P)}$.</p>
+<p><strong>Corollary (the three equations).</strong> The roots of $-1$, of $0$ and of $+1$ are</p>
+<p>$$
+\{\tilde P: N(\tilde P)=-1\},\qquad\{\tilde P: N(\tilde P)=0\},\qquad\{\tilde P: N(\tilde P)=1\},
+$$</p>
+<p>three level sets of the same quadratic form, pairwise disjoint, and each invariant under the three conjugations. The description of the sets does not involve the order of the coefficients: the block's root problem is a problem of a quadratic form and not of a multiplication.</p>
+<p><strong>Remark (the shape of the level sets).</strong> For $\lambda\neq0$ the level set is an affine hyperquadric of $\mathbb{C}^4$ — the zero set of the nonsingular quadratic polynomial $N-\lambda$ — of complex dimension three and real dimension six; for $\lambda=0$ it is the isotropic cone of the form, a quadric cone of the same dimensions with vertex $0$. Throughout the article the words <em>quadric</em> and <em>cone</em> name these algebraic sets and nothing else.</p>
+<h2 id="the-roots-of-minus-one">The Roots of Minus One</h2>
+<p><strong>Theorem (parametrisation of the roots of $-1$).</strong> The roots of $-1$ are exactly the elements</p>
+<p>$$
+\tilde P=P_0e_0+\mathbf P,\qquad P_0^2=-1-(\mathbf P,\mathbf P).
+$$</p>
+<p>Over each vector part $\mathbf P$ the solutions are the square roots of $-1-(\mathbf P,\mathbf P)$: two of them, $P_0$ and $-P_0$, when $(\mathbf P,\mathbf P)\neq-1$, and the single value $P_0=0$ when $(\mathbf P,\mathbf P)=-1$. The set has complex dimension three; it is nonempty, it contains the two central roots $\pm ie_0$, and it contains no isotropic element.</p>
+<p><em>Proof.</em> The reduction gives $P_0^2+(\mathbf P,\mathbf P)=-1$; for fixed $\mathbf P$ with $-1-(\mathbf P,\mathbf P)\neq0$ there are exactly two values of $P_0$; for the exceptional $\mathbf P$ with $(\mathbf P,\mathbf P)=-1$ the value $P_0=0$ gives the root $\tilde P=\mathbf P$, drawn by the same formula with the double value $0$. An isotropic root would satisfy $N(\tilde P)=0\neq-1$. The value $(\mathbf P,\mathbf P)=-1$ is attained, for instance at $\mathbf P=ie_1$, and there the root $ie_1$ has vanishing scalar part.</p>
+<p><strong>Examples.</strong> $\tilde P=ie_0$: $N=-1$. $\tilde P=ie_1$: $N=(i)^2=-1$. $\tilde P=e_1$: $N=1$, a root of $+1$ and not of $-1$. $\tilde P=e_0+e_1$: $N=1+1=2$, a root of neither.</p>
+<p><strong>Remark (the two central roots).</strong> The only central roots of $-1$ are $\pm ie_0$, since a central element is $\lambda e_0$ with $\lambda^2=-1$. The central roots are the ones that the idempotent correspondence of the parent uses, and it is exactly they that the block cannot use, as §<em>The Relation to the Idempotents</em> shows.</p>
+<h2 id="the-roots-of-zero">The Roots of Zero</h2>
+<p><strong>Theorem (the roots of zero are the square-zero elements).</strong> The set $\{\tilde P: N(\tilde P)=0\}$ is exactly the set of nonzero elements whose square vanishes in the block, $\tilde P\star\tilde P=0$, and it is the punctured isotropic cone of <em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em>: a cone of complex dimension three, real dimension six, with the two families of the isotropic structure.</p>
+<p><em>Proof.</em> $\tilde P\star\tilde P=N(\tilde P)e_0$ vanishes exactly when $N(\tilde P)=0$; the cone and its families are the ones computed in the Specific Theory entry.</p>
+<p><strong>Examples.</strong> $\tilde P=e_0+ie_1$: $N=1+(i)^2=0$ and $\tilde P\star\tilde P=0$. $\tilde P=e_1+ie_2$: $N=1-1=0$. $\tilde P=e_1+ie_1=(1+i)e_1$: $N=(1+i)^2=2i\neq0$.</p>
+<p><strong>Corollary.</strong> Every root of $0$ is an isotropic element, hence a zero divisor of the <em>parent</em> plain product, and a nilpotent of index two of the block; the block's own zero-divisor set is larger and contains the non-isotropic elements as well (<em>Zero Divisors of the Symmetric Quaternionic Algebra</em>).</p>
+<h2 id="the-roots-of-plus-one">The Roots of Plus One</h2>
+<p><strong>Theorem (the roots of $+1$).</strong> The roots of $+1$ are the elements with $N(\tilde P)=1$. The set has complex dimension three and contains the four basis elements $e_0,e_1,e_2,e_3$ and the level set $N=1$ read on the two Hermitian subspaces; it is the level set of the diagonal used in <em>Norm and Invertibility in the Symmetric Quaternionic Algebra</em> as the analogue of the norm-one group of an associative unital product.</p>
+<p><em>Proof.</em> The reduction gives the equation; the four basis elements have $N=1$ by the table $N(e_\mu,e_\nu)=\delta_{\mu\nu}$; the level set is an affine hyperquadric because $1\neq0$.</p>
+<p><strong>Examples.</strong> $e_0\star e_0=e_0$ and $e_k\star e_k=e_0$, so the four basis elements are roots. $ie_1$ is a root of $-1$ and not of $+1$. On the Hermitian subspace $\mathbb{M}_+$, an element $q_0e_0+i(q_1e_1+q_2e_2+q_3e_3)$ with real $q$ has $N=q_0^2-q_1^2-q_2^2-q_3^2$, so the roots of $+1$ there are the elements of the level set of that form, and the roots of $0$ the light cone.</p>
+<h2 id="the-three-sets">The Three Sets</h2>
+<p><strong>Proposition (the three sets in one display).</strong> On every complex line $\mathbb{C}\tilde P$ through the origin, the three equations read $t^2N(\tilde P)=\lambda$ for $\tilde P=t\tilde A$, since $N(t\tilde A)=t^2N(\tilde A)$:</p>
+<ul>
+<li>if $N(\tilde A)=0$ the line lies in the cone $\{N=0\}$ and meets neither of the other two levels;</li>
+<li>if $N(\tilde A)\neq0$ and $\lambda\neq0$ the line meets the level $\{N=\lambda\}$ in the two points $t=\pm\sqrt{\lambda/N(\tilde A)}$;</li>
+<li>if $N(\tilde A)\neq0$ and $\lambda=0$ the line meets the cone only at the origin.</li>
+</ul>
+<p>Consequently the two non-central levels are carried onto one another by the scalings, the scaling $\tilde P\mapsto\mu\tilde P$ carrying $\{N=\lambda\}$ onto $\{N=\mu^2\lambda\}$, and the three sets are pairwise disjoint and cover the level set $\{N\in\{-1,0,1\}\}$.</p>
+<p><em>Proof.</em> The display is the homogeneity $N(t\tilde A)=t^2N(\tilde A)$ of the diagonal; the two solutions of $t^2=\lambda/N(\tilde A)$ give two points unless $\lambda=0$; disjointness is that a scalar has one of the three values and not two.</p>
+<p><strong>Remark (the sizes).</strong> The two non-central levels are affine hyperquadrics of complex dimension three; the cone is their common asymptotic object at the origin, because $N$ is homogeneous; and the scaling $\tilde P\mapsto\lambda\tilde P$ carries the level $1$ onto the level $\lambda^2$ for every $\lambda$, so the family of non-central levels is a single orbit of the scalings and the three values $-1$, $+1$ and any other nonzero value give algebraically isomorphic sets.</p>
+<h2 id="the-relation-to-the-idempotents-and-to-the-zero-divisors">The Relation to the Idempotents and to the Zero Divisors</h2>
+<p><strong>Theorem (the affine map, and the failure of the bijection).</strong> In the block the map</p>
+<p>$$
+\tilde P\ \longmapsto\ \tilde\Pi=\tfrac12(e_0+\tilde P)
+$$</p>
+<p>carries the roots of $+1$ that are <strong>central</strong> — that is $\tilde P=\pm e_0$ — onto the idempotents $e_0$ and $0$, and it carries <strong>no other root of $+1$</strong> to an idempotent. There is therefore no bijection between the roots of $\pm1$ and the idempotents of the block.</p>
+<p><em>Proof.</em> $\tilde\Pi\star\tilde\Pi=\tfrac14(e_0\star e_0+2\tilde P\star e_0+\tilde P\star\tilde P)=\tfrac14\bigl(1+2P_0+N(\tilde P)\bigr)e_0$, while $\tilde\Pi=\tfrac12e_0+\tfrac12\tilde P$. The two are equal only if $\tilde P$ is central, $\tilde P=P_0e_0$, and then the equality reads $\tfrac14(1+2P_0+P_0^2)=\tfrac12(1+P_0)$, that is $(1+P_0)(P_0-1)=0$, or $P_0^2=1$. For a central root of $+1$ the value $P_0=1$ gives $\tilde\Pi=e_0$ and $P_0=-1$ gives $\tilde\Pi=0$; for a non-central root of $+1$, of which the level set is full, no value of the scalar part repairs the failure.</p>
+<p><strong>The parent's map, and why it fails here.</strong> In the parent the map acts on the roots of $-1$ through $\tilde\Pi=\tfrac12(e_0+\xi i)$, because the product is associative and unital and because $(\xi i)^2=1$ results from $\xi^2=-1$ and $i^2=-1$ (<em>Idempotents of the General Plain Algebra</em>). In the block the associativity and the unit are absent, and for a pure root $\xi$, with $N(\xi)=1$, the same element $\xi i$ has $N(\xi i)=i^2N(\xi)=-1$, so that the block reads it as a root of $-1$ and not of $+1$; the computation of $\tilde\Pi\star\tilde\Pi$ stops at the central element $\tfrac12(1+P_0)e_0$ and cannot produce the vector part of $\tilde\Pi$.</p>
+<p><strong>The relation to the zero divisors.</strong> The roots of $0$ are exactly the isotropic elements, hence exactly the square-zero elements of the block and exactly the zero divisors of the parent algebra: $\{N=0\}\setminus\{0\}=\mathcal{Z}_{\tilde P\tilde Q}$ (<em>Zero Divisors of the Symmetric Quaternionic Algebra</em>). The block's own zero-divisor set is the whole punctured space, so the roots of $0$ are a proper subset of it, and the equality of the two notions, valid in the parent, fails in the same way as the bijection with the idempotents.</p>
+<h2 id="summary">Summary</h2>
+<p>In the symmetric quaternionic product the square is the diagonal of the form, $\tilde P\star\tilde P=N(\tilde P)e_0$ with $N(\tilde P)=P_0^2+(\mathbf P,\mathbf P)$, so the roots of $-1$, of $0$ and of $+1$ are the three level sets $N=-1$, $N=0$ and $N=1$ of one quadratic form: a pair of affine hyperquadrics of complex dimension three and the cone between them, pairwise disjoint, invariant under the three conjugations, and related by the scaling $\tilde P\mapsto\mu\tilde P$ with $N(\mu\tilde P)=\mu^2N(\tilde P)$. The roots of $-1$ are parametrised by $P_0^2=-1-(\mathbf P,\mathbf P)$ and contain the two central roots $\pm ie_0$; the roots of $0$ are exactly the square-zero elements and the isotropic cone, hence exactly the zero divisors of the parent algebra; the roots of $+1$ contain the four basis elements and the level set $N=1$ on the Hermitian subspaces. The affine map $\tilde\Pi=\tfrac12(e_0+\tilde P)$ of the parent carries only the two central roots of $+1$ to the idempotents $e_0$ and $0$ and no other, so the bijection between the roots and the idempotents fails in the block; and the identification of the roots of $0$ with the zero divisors holds only for the parent and not for the block, whose zero-divisor set is the whole punctured space.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$</td>
+<td>the symmetric quaternionic multiplication</td>
+</tr>
+<tr>
+<td>$N(\tilde P)=P_0^2+(\mathbf P,\mathbf P)=\sum_\mu P_\mu^2$</td>
+<td>the diagonal of the form, the norm of the parent</td>
+</tr>
+<tr>
+<td>$N=-1$, $N=0$, $N=1$</td>
+<td>the roots of $-1$, of $0$, of $+1$</td>
+</tr>
+<tr>
+<td>$(\mathbf P,\mathbf P)=0$</td>
+<td>the cone condition of the vector part for the level $0$</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>the four roots of $+1$ of the basis</td>
+</tr>
+<tr>
+<td>$\pm ie_0$</td>
+<td>the two central roots of $-1$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi=\tfrac12(e_0+\tilde P)$</td>
+<td>the affine map of the parent, defined but not bijective in the block</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), for the general definition of a root of a central value.</li>
+<li><em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em> (<code>articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md</code>), for the parallel classification in the parent.</li>
+<li><em>Square Roots of a General Element in the Symmetric Quaternionic Algebra</em> (<code>articles_maths/square-roots-of-a-general-element-in-the-symmetric-quaternionic-algebra.md</code>), for the radicands that are not central.</li>
+<li><em>Nilpotents of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/nilpotents-of-the-symmetric-quaternionic-algebra.md</code>), for the roots of $0$ as the square-zero elements of index two.</li>
+<li><em>Idempotents of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/idempotents-of-the-symmetric-quaternionic-algebra.md</code>), for the failure of the bijection.</li>
+<li><em>Norm and Invertibility in the Symmetric Quaternionic Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-symmetric-quaternionic-algebra.md</code>), for the diagonal and the non-isotropic class.</li>
+<li><em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md</code>), for the cone and its two families.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

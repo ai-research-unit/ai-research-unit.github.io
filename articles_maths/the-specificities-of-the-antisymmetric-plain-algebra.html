@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Specificities of the Antisymmetric Plain Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-specificities-of-the-antisymmetric-plain-algebra"><strong>The Specificities of the Antisymmetric Plain Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Of the twelve algebraic structures that the complex space
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries, exactly one carries the classical
+theory of a <strong>Lie algebra</strong>: the <strong>antisymmetric plain multiplication</strong>
+$\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$ of
+<em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em>, the multiplication named
+$\mathrm{APA}$ in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. Every
+structural result of the block belongs to it alone — the centre and the quotient, the derived
+algebra and its identification with $\mathfrak{sl}(2,\mathbb{C})$, the invariant form, the Cartan
+criteria and the Casimir element, the enveloping algebra and the matrix models — and this article
+states the exact reason, in one law, and then separates the twelve.</p>
+<p>The reason is the <strong>Leibniz identity</strong>, the statement that the left multiplication
+$L^{\star}_{\tilde X}$ is a derivation of the product for every element. For an alternating product
+that identity is equivalent to the <strong>Jacobi identity</strong>, and the block is the only one of the twelve
+structures on which it holds at every element; equivalently, the block is the only <strong>Lie product</strong>
+among the twelve. Each of the eleven others is built from the four general products by twisting a
+slot with a conjugation or by (anti)symmetrising, and the ten non-alternating structures fail the
+identity directly, on a witness, the criterion of the alternating case being unavailable to them;
+the one other alternating structure, $\mathrm{AQA}$, fails it because it fails the Jacobi identity
+that the alternating case requires.</p>
+<p>The consequence is the point of the article. Only in the antisymmetric plain algebra are the centre
+and the quotient, the derived algebra, the Killing form, the Cartan criteria, the Casimir element,
+the enveloping algebra and the matrix models available as <strong>theorems</strong>. Elsewhere single elements do
+behave well — the zero element gives the zero operator in all twelve, and in the associative general
+plain product the commutator $\mathrm{ad}_{\tilde X}=L_{\tilde X}-R_{\tilde X}$ is a derivation for
+every element though $L_{\tilde X}$ is not — and no other structure carries the theory. The one
+genuine boundary case is the antisymmetric quaternionic product, whose bracket is alternating but
+which fails the Jacobi identity; it is <em>The Jacobi Failure and the Associator Defect of the
+Antisymmetric Quaternionic Algebra</em>, and it is stated here only as the boundary of the criterion.</p>
+<p><strong>Placement.</strong> The article is the closing entry of the <em>Specific Theory</em> section of the block, after
+<em>The Lie Algebra of the Antisymmetric Plain Algebra</em> and after the seven Common Theory articles
+<em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em>, <em>Norm and Invertibility in the
+Antisymmetric Plain Algebra</em>, <em>Zero Divisors of the Antisymmetric Plain Algebra</em>, <em>Square Roots of
+Minus One, Zero and Plus One in the Antisymmetric Plain Algebra</em>, <em>Square Roots of a General Element
+in the Antisymmetric Plain Algebra</em>, <em>Idempotents of the Antisymmetric Plain Algebra</em> and <em>Nilpotents
+of the Antisymmetric Plain Algebra</em>, whose results it reads back as consequences of one law. It is
+the twin of <em>The Specificities of the Symmetric Plain Algebra</em>, which states commutativity with the
+Jordan identity as the criterion of the other half of the plain product and proves that the
+symmetric plain product alone satisfies it; the two halves of the plain product are the two unique
+structures of the twelve, the symmetric plain algebra the only Jordan product and the antisymmetric
+plain algebra the only Lie product.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis
+$e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$. The product written $\star$ is
+a generic one, its identity stated at each use. The <strong>left multiplication</strong> of a product $\star$ by
+$\tilde X$ is $L^{\star}_{\tilde X}:\tilde Y\mapsto\tilde X\star\tilde Y$, and the <strong>adjoint map</strong> is
+$\mathrm{ad}^{\star}_{\tilde X}\tilde Y=\tilde X\star\tilde Y-\tilde Y\star\tilde X$, so that for an
+alternating product $\mathrm{ad}^{\star}_{\tilde X}=2L^{\star}_{\tilde X}$. The twelve structures are
+coded as in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>: the code has
+three letters, the first $\mathrm G$, $\mathrm S$ or $\mathrm A$ for the general product or its
+symmetrisation or antisymmetrisation, the second $\mathrm P$ or $\mathrm Q$ for the plain or the
+quaternionic row, and the third $\mathrm A$ or $\mathrm S$ for the algebra or sesqualgebra class,
+as in $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$.</p>
+<h2 id="the-criterion">The Criterion</h2>
+<p><strong>Definition (the Leibniz identity).</strong> Let $\star$ be a product on $\mathbb{B}$. The product
+satisfies the <strong>Leibniz identity</strong> when
+$$
+L^{\star}_{\tilde X}(\tilde Y\star\tilde Z)=(L^{\star}_{\tilde X}\tilde Y)\star\tilde Z
++\tilde Y\star(L^{\star}_{\tilde X}\tilde Z)\qquad\text{for all }\tilde X,\tilde Y,\tilde Z,
+$$
+equivalently
+$$
+\tilde X\star(\tilde Y\star\tilde Z)=(\tilde X\star\tilde Y)\star\tilde Z
++\tilde Y\star(\tilde X\star\tilde Z)\qquad\text{for all }\tilde X,\tilde Y,\tilde Z .
+$$
+The operator $L^{\star}_{\tilde X}$ is then a <strong>derivation</strong> of $\star$ for every $\tilde X$.</p>
+<p><strong>Theorem (the criterion).</strong> Let $\star$ be an <strong>alternating</strong> product. Then $\star$ satisfies the
+Leibniz identity if and only if it satisfies the Jacobi identity.</p>
+<p><em>Proof.</em> Write
+$$
+\Lambda(\tilde X,\tilde Y,\tilde Z)=\tilde X\star(\tilde Y\star\tilde Z)
+-(\tilde X\star\tilde Y)\star\tilde Z-\tilde Y\star(\tilde X\star\tilde Z)
+$$
+for the Leibniz defect and
+$$
+J(\tilde X,\tilde Y,\tilde Z)=(\tilde X\star\tilde Y)\star\tilde Z
++(\tilde Y\star\tilde Z)\star\tilde X+(\tilde Z\star\tilde X)\star\tilde Y
+$$
+for the cyclic sum. Alternation reverses each of the last two products, so the Leibniz defect is
+$$
+\Lambda=-(\tilde Y\star\tilde Z)\star\tilde X-(\tilde X\star\tilde Y)\star\tilde Z
++(\tilde X\star\tilde Z)\star\tilde Y .
+$$
+The last summand is $-(\tilde Z\star\tilde X)\star\tilde Y$ by the alternation of the two inner
+factors, $(\tilde X\star\tilde Z)=-(\tilde Z\star\tilde X)$, so the bracket is exactly
+$-J(\tilde X,\tilde Y,\tilde Z)$. Hence $\Lambda$ vanishes identically if and only if $J$ does,
+which is the criterion. Computed exactly on general elements of $\mathbb{Q}(i)$ coefficients and
+on triples of the units.</p>
+<p><strong>Corollary (the block satisfies the law).</strong> The antisymmetric plain multiplication is alternating
+and satisfies the Jacobi identity, so it satisfies the Leibniz identity: every left multiplication
+of the block is a derivation,
+$$
+L_{\tilde X}(\tilde Y\wedge\tilde Z)=(L_{\tilde X}\tilde Y)\wedge\tilde Z
++\tilde Y\wedge(L_{\tilde X}\tilde Z),\qquad
+L_{\tilde X}\tilde Y=\tilde X\wedge\tilde Y .
+$$</p>
+<p><em>Proof.</em> The alternation and the Jacobi identity are <em>Introduction to the Antisymmetric Plain
+Algebra of Biquaternions</em>; the criterion above turns them into the Leibniz identity. The direct
+reason is <em>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</em>: the
+adjoint $\mathrm{ad}_{\tilde X}=2L_{\tilde X}$ is a derivation because the bracket is the
+half-commutator of an associative product, and the halving carries the Leibniz rule of the
+associativity to the block.</p>
+<h2 id="the-operator-identity-and-the-adjoint-representation">The Operator Identity and the Adjoint Representation</h2>
+<p><strong>Proposition (the adjoint reading).</strong> For an alternating product $\star$ and every $\tilde X$,
+$$
+\mathrm{ad}^{\star}_{\tilde X}=2L^{\star}_{\tilde X},
+$$
+so the Leibniz identity is the statement that the adjoint maps of $\star$ are derivations of
+$\star$; for the block this is the statement that the left multiplications, which are the adjoint
+maps of the block's own bracket, form a representation of the bracket by derivations,
+$$
+\mathrm{ad}^{\wedge}_{\tilde X\wedge\tilde Y}=[\mathrm{ad}^{\wedge}_{\tilde X},\mathrm{ad}^{\wedge}_{\tilde Y}],
+\qquad
+\mathrm{ad}^{\wedge}_{\tilde X}(\tilde Y\wedge\tilde Z)
+=\mathrm{ad}^{\wedge}_{\tilde X}\tilde Y\wedge\tilde Z+\tilde Y\wedge\mathrm{ad}^{\wedge}_{\tilde X}\tilde Z ,
+\qquad
+\mathrm{ad}^{\wedge}_{\tilde X}=L_{\tilde X}=\tilde X\wedge\cdot .
+$$</p>
+<p><em>Proof.</em> For an alternating product the adjoint is twice the left multiplication,
+$\mathrm{ad}^{\star}_{\tilde X}=2L^{\star}_{\tilde X}$, because
+$\tilde X\star\tilde Y-\tilde Y\star\tilde X=2\,\tilde X\star\tilde Y$. The bracket's own operator
+is the halved adjoint $\mathrm{ad}^{\wedge}_{\tilde X}=L_{\tilde X}$, and its two identities are
+the operator form of the Jacobi identity, $[L_{\tilde X},L_{\tilde Y}]=L_{\tilde X\wedge\tilde Y}$,
+and the Leibniz identity carried to the bracket. The doubled adjoint carries the factor two
+throughout,
+$$
+\mathrm{ad}_{\tilde X\wedge\tilde Y}=\tfrac12\,[\mathrm{ad}_{\tilde X},\mathrm{ad}_{\tilde Y}],
+$$
+which is the identity of the source article read with the doubled adjoint. Both are
+<em>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</em>, where the two
+adjoints are kept apart.</p>
+<p><strong>Corollary (the kernel and the image).</strong> The adjoint representation of the block has kernel the
+centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ and image the inner derivations, identified with the
+derived algebra $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$:
+$$
+\ker\mathrm{ad}=\mathbb{C}_{\mathbb{B}},\qquad
+\operatorname{Inn}(\mathfrak{g})=\{\mathrm{ad}_{\tilde P}\}
+=\{\mathrm{ad}_{\mathbf P}:\mathbf{P}\in\mathrm{Vect}(\mathbb{B})\}\cong\mathfrak{sl}(2,\mathbb{C}).
+$$</p>
+<p><em>Proof.</em> An adjoint vanishes exactly when the element brackets to zero with everything, which is
+the centre $\mathbb{C}_{\mathbb{B}}$ (<em>The Lie Algebra of the Antisymmetric Plain Algebra</em>,
+§<em>The Centre of the Bracket</em>); the image is the inner derivations, of complex dimension three
+(<em>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</em>,
+§<em>The Inner Derivations</em>).</p>
+<h2 id="the-eleven-failures">The Eleven Failures</h2>
+<p>The twelve structures are generated from the four general products by three independent operations
+— the twist of the first slot, the twist of the second slot, and the (anti)symmetrisation — and this
+is why the antisymmetric plain product stands alone. Each subsection below exhibits a triple
+$\tilde X,\tilde Y,\tilde Z$ at which the Leibniz defect</p>
+<p>$$
+\Lambda=L^{\star}_{\tilde X}(\tilde Y\star\tilde Z)-(L^{\star}_{\tilde X}\tilde Y)\star\tilde Z-\tilde Y\star(L^{\star}_{\tilde X}\tilde Z)
+$$</p>
+<p>is nonzero; the values are those of the verification, on the units and on general complex elements.</p>
+<h3 id="the-four-general-products">The Four General Products</h3>
+<p><strong>Proposition.</strong> None of the four general products satisfies the Leibniz identity. The defect at
+the triple $(e_1,e_1,e_1)$ is $e_1$ for the plain product, $-e_1$ for the general quaternionic
+product, $e_1$ for the general plain sesquilinear product and $-e_1$ for the general quaternionic
+sesquilinear product.</p>
+<p><em>Proof.</em> The four products are read on the units from their coordinate forms
+(<em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>); the defect
+$e_1\star(e_1\star e_1)-(e_1\star e_1)\star e_1-e_1\star(e_1\star e_1)$ is evaluated there. The
+failure is structural: the four products are not alternating, $e_1\star e_1=\pm e_0\neq0$, so the
+criterion of §<em>The Criterion</em> does not apply to them and the identity is a genuine condition, which
+they fail.</p>
+<h3 id="the-four-symmetric-parts">The Four Symmetric Parts</h3>
+<p><strong>Proposition.</strong> None of the four symmetric parts satisfies the Leibniz identity. The defect is
+$e_1$ for the symmetric plain product at $(e_1,e_1,e_1)$, $e_0$ for the symmetric quaternionic
+product at $(e_0,e_1,e_1)$, $e_0$ for the symmetric plain sesquilinear product at $(e_0,e_1,e_1)$,
+and $-e_1$ for the symmetric quaternionic sesquilinear product at $(e_1,e_1,e_1)$.</p>
+<p><em>Proof.</em> The symmetric parts are bilinear or sesquilinear symmetrisations of the general products
+(<em>The Symmetric and Antisymmetric Parts of an Algebra Product</em> and <em>The Symmetric and Antisymmetric
+Parts of a Sesqualgebra Product</em>); the defects are computed on the units. The four are not
+alternating, so the criterion does not reduce the identity to the Jacobi identity for them, and the
+identity fails directly.</p>
+<h3 id="the-three-remaining-antisymmetric-parts">The Three Remaining Antisymmetric Parts</h3>
+<p><strong>Proposition.</strong> None of the three remaining antisymmetric parts satisfies the Leibniz identity. The
+defect is $e_3$ for the antisymmetric quaternionic product at $(e_0,e_1,e_2)$, $-e_3$ for the
+antisymmetric plain sesquilinear product at $(e_0,e_1,e_2)$, and $2ie_2$ for the antisymmetric
+quaternionic sesquilinear product at $(e_1,e_2,ie_1)$.</p>
+<p><em>Proof.</em> The antisymmetric quaternionic product is alternating, so by the criterion its Leibniz
+defect equals the negative of its cyclic sum, and its cyclic sum is nonzero at $(e_0,e_1,e_2)$,
+where it equals $-e_3$; the defect is therefore $e_3$. The antisymmetric plain sesquilinear product
+is not alternating, and its defect at $(e_0,e_1,e_2)$ is $-e_3$; the antisymmetric quaternionic
+sesquilinear product is not alternating either, and its defect at $(e_1,e_2,ie_1)$ is $2ie_2$. The
+three failures are the three non-plain antisymmetric parts of the catalogue, and each is the
+subject of its own article.</p>
+<h2 id="the-verdicts">The Verdicts</h2>
+<p>The twelve structures are compared below. The second column is the alternation, read over the
+complex coefficients; the third the Jacobi identity; the fourth the Leibniz identity, which for an
+alternating product is equivalent to the third by §<em>The Criterion</em>; and the fifth the witness of
+the Leibniz failure, omitted for the block, which is the criterion.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>alternating</th>
+<th>Jacobi</th>
+<th>Leibniz identity</th>
+<th>witness of the Leibniz failure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPA</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>$(e_1,e_1,e_1)\mapsto e_1$</td>
+</tr>
+<tr>
+<td>SPA</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>$(e_1,e_1,e_1)\mapsto e_1$</td>
+</tr>
+<tr>
+<td>APA</td>
+<td><strong>yes</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>yes</strong></td>
+<td>— (the criterion)</td>
+</tr>
+<tr>
+<td>GQA</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>$(e_1,e_1,e_1)\mapsto -e_1$</td>
+</tr>
+<tr>
+<td>SQA</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>$(e_0,e_1,e_1)\mapsto e_0$</td>
+</tr>
+<tr>
+<td>AQA</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>$(e_0,e_1,e_2)\mapsto e_3$</td>
+</tr>
+<tr>
+<td>GPS</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>$(e_1,e_1,e_1)\mapsto e_1$</td>
+</tr>
+<tr>
+<td>SPS</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>$(e_0,e_1,e_1)\mapsto e_0$</td>
+</tr>
+<tr>
+<td>APS</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>$(e_0,e_1,e_2)\mapsto -e_3$</td>
+</tr>
+<tr>
+<td>GQS</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>$(e_1,e_1,e_1)\mapsto -e_1$</td>
+</tr>
+<tr>
+<td>SQS</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>$(e_1,e_1,e_1)\mapsto -e_1$</td>
+</tr>
+<tr>
+<td>AQS</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>$(e_1,e_2,ie_1)\mapsto 2ie_2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table records theorems and not coincidences. <strong>The block is the only structure whose every left
+multiplication is a derivation</strong>, and it is at once the only alternating structure that satisfies
+the Jacobi identity and, therefore, the only Lie product among the twelve. The one other alternating
+structure, $\mathrm{AQA}$, fails the criterion through its Jacobi failure, with the witness
+$(e_0,e_1,e_2)$ of the catalogue; the ten non-alternating structures fail it directly. Single
+elements of the other structures do give derivations — the zero element gives the zero operator in
+all twelve, and every commutator is a derivation for the associative general plain product — and
+none of those examples carries a theory, because a theory needs the law at every element and not a
+case of it.</p>
+<h2 id="what-the-criterion-delivers">What the Criterion Delivers</h2>
+<p>Only for the antisymmetric plain product does the criterion hold at every element, and the whole
+Lie theory of the block is its consequence. Alternation is shared with $\mathrm{AQA}$, and it is the
+criterion — the Jacobi identity, equivalently the Leibniz identity — that separates the block from
+$\mathrm{AQA}$ and from the ten others.</p>
+<ul>
+<li><strong>The bracket is a Lie algebra.</strong> The block is alternating and satisfies the Jacobi identity, so
+$(\mathbb{B},\wedge)$ is a complex Lie algebra, the complexification of the cross product of
+$\mathbb{R}^{3}$.</li>
+<li><strong>The centre and the quotient.</strong> The centre is the central line $\mathbb{C}_{\mathbb{B}}$ and the
+quotient is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three
+(<em>The Lie Algebra of the Antisymmetric Plain Algebra</em>).</li>
+<li><strong>The derived algebra and the identifications.</strong> The derived algebra is $\mathrm{Vect}(\mathbb{B})$,
+isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, with the real form $\mathfrak{su}(2)$ on the
+anti-Hermitian subspace (<em>The Lie Algebra of the Antisymmetric Plain Algebra</em>).</li>
+<li><strong>The invariant form.</strong> The Killing form is $\kappa(\tilde P,\tilde Q)=-2\,\mathbf{P}\cdot\mathbf{Q}$,
+invariant and symmetric, of radical the centre; read on it the Cartan criteria give that the
+algebra is not semisimple, its radical being the centre, and that its derived algebra
+$\mathfrak{sl}(2,\mathbb{C})$ is simple; the form produces the Casimir element
+(<em>The Killing Form of the Antisymmetric Plain Algebra</em>).</li>
+<li><strong>The derivations and the adjoint representation.</strong> Every adjoint is a derivation, the inner
+derivations are the adjoints of the vector subspace, and the outer derivations are computed in
+<em>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</em>.</li>
+<li><strong>The enveloping algebra and the matrix models.</strong> The universal enveloping algebra of the bracket
+is <em>The Lie Algebra of the Antisymmetric Plain Algebra</em>, and the two matrix models are
+<em>The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>
+and <em>The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation
+$M_4(\mathbb{C})_L$</em>, faithful on the derived algebra and with the centre as kernel.</li>
+</ul>
+<p><strong>Remark (alternation and the criterion).</strong> Two different laws are in force in the block, and they
+are kept apart. <strong>Alternation</strong> is the law that makes the square of every element vanish, and it is
+what the element-theory articles of the block record: the roots of $0$ are the whole punctured
+space, the idempotent set is the origin, the nilpotents are the whole space and the zero divisors
+are the whole punctured space (<em>Norm and Invertibility in the Antisymmetric Plain Algebra</em> and its
+companions).
+<strong>The criterion</strong> — the Jacobi identity, equivalently the Leibniz identity — is the further law
+that makes the bracket a Lie bracket, and it is what the specific theory of the block records. The
+two are independent: $\mathrm{AQA}$ is alternating and not Lie, and the associative general plain
+product is Lie-admissible — its commutator is a Lie bracket — while being neither alternating nor
+a Lie product in the sense fixed here.</p>
+<h2 id="the-boundary-of-the-criterion">The Boundary of the Criterion</h2>
+<p>Two statements are easily confused and are kept apart here.</p>
+<ol>
+<li><strong>As a law, the Leibniz identity is exactly the threshold.</strong> The statement that
+$L^{\star}_{\tilde X}$ is a derivation for every $\tilde X$, equivalently that the product is a
+Lie product in the presence of alternation, is satisfied by the antisymmetric plain product and
+by no other of the twelve.</li>
+<li><strong>As a statement about one element, the identity can hold outside the block.</strong> An operator
+$L^{\star}_{\tilde X}$ may be a derivation in a structure that is not a Lie product, because the
+identity is then demanded at one element and not at all of them. The zero element gives the zero
+operator, a derivation, in all twelve; in the associative general plain product the derivation is
+the commutator $\mathrm{ad}_{\tilde X}=L_{\tilde X}-R_{\tilde X}$, the difference of the two
+multiplications and not $L_{\tilde X}$ alone, and it exists for every element; and the derived
+subalgebra $\mathrm{Vect}(\mathbb{B})$ of the antisymmetric quaternionic product is a Lie algebra
+under the restriction, although the product on the whole space is not (<em>The Jacobi Failure and the
+Associator Defect of the Antisymmetric Quaternionic Algebra</em>).</li>
+</ol>
+<p><strong>Remark (the sharp form of the specificity).</strong> The correct exclusive statement is therefore that
+the antisymmetric plain algebra is the only structure of the twelve <strong>all of whose left
+multiplications are derivations</strong>, equivalently the only Lie product; not that no other structure has
+an element whose left multiplication is a derivation. This is why the centre, the derived algebra,
+the Killing form, the Casimir element and the enveloping algebra are properties of the antisymmetric
+plain product and are not transferable, and it is the reason the twelve are not twelve copies of one
+theory but one theory with eleven deformations, the antisymmetric plain product being the Lie
+deformation of the plain one.</p>
+<h2 id="summary">Summary</h2>
+<p>The antisymmetric plain multiplication is the only one of the twelve structures of the complex space
+whose every left multiplication is a derivation, equivalently the only <strong>Lie product</strong>: the Leibniz
+identity, at every element,</p>
+<p>$$
+L_{\tilde X}(\tilde Y\star\tilde Z)=(L_{\tilde X}\tilde Y)\star\tilde Z+\tilde Y\star(L_{\tilde X}\tilde Z) .
+$$</p>
+<p>For an alternating product that identity is
+equivalent to the Jacobi identity, the Leibniz defect being the negative of the cyclic sum,
+$\Lambda=-J$; the block satisfies both, and the other eleven fail both, the ten non-alternating
+structures directly and the one other alternating structure, $\mathrm{AQA}$, through its Jacobi
+failure at $(e_0,e_1,e_2)$. The criterion is the exact reason the Lie theory of the block — the
+centre and the quotient, the derived algebra isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, the Killing
+form of radical the centre, the Cartan criteria, the Casimir element, the enveloping algebra and the
+matrix models — is a theory and not a collection of examples: it holds at every element and at no
+other structure of the twelve, and the correct exclusive statement is about the law and not about
+isolated elements.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\star$</td>
+<td>a generic product, specified at each use</td>
+</tr>
+<tr>
+<td>$L^{\star}_{\tilde X}:\tilde Y\mapsto\tilde X\star\tilde Y$</td>
+<td>the left multiplication of a product</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}^{\star}_{\tilde X}\tilde Y=\tilde X\star\tilde Y-\tilde Y\star\tilde X$</td>
+<td>the adjoint map, equal to $2L^{\star}_{\tilde X}$ for an alternating product</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}^{\wedge}_{\tilde X}=L_{\tilde X}=\tilde X\wedge\cdot$</td>
+<td>the adjoint of the block's own bracket, the halved adjoint</td>
+</tr>
+<tr>
+<td>$L^{\star}_{\tilde X}(\tilde Y\star\tilde Z)=(L^{\star}_{\tilde X}\tilde Y)\star\tilde Z+\tilde Y\star(L^{\star}_{\tilde X}\tilde Z)$</td>
+<td>the Leibniz identity, the criterion</td>
+</tr>
+<tr>
+<td>$\Lambda=-J$</td>
+<td>the Leibniz defect is the negative of the cyclic sum, for an alternating product</td>
+</tr>
+<tr>
+<td>$\mathrm{GPA}\dots\mathrm{AQS}$</td>
+<td>the twelve structures, coded as in <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em></td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$</td>
+<td>the kernel of the adjoint representation, the centre of the bracket</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$</td>
+<td>the image of the adjoint representation, the inner derivations</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the left and right multiplications, the derivations and the Lie-admissible algebras.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Interscience, 1962), for the Jacobi identity, the adjoint representation and the Killing form.</li>
+<li><em>The Symmetric and Antisymmetric Parts of an Algebra Product</em> (<code>articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md</code>), for the split of a product into its two halves and the Lie-admissibility of a commutator.</li>
+<li><em>The Specificities of the Symmetric Plain Algebra</em> (<code>articles_maths/the-specificities-of-the-symmetric-plain-algebra.md</code>), the twin of this article, for the criterion of the other half of the plain product.</li>
+<li><em>The Lie Algebra of the Antisymmetric Plain Algebra</em> (<code>articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra.md</code>), for the centre, the derived algebra and the enveloping algebra the criterion delivers.</li>
+<li><em>The Killing Form of the Antisymmetric Plain Algebra</em> (<code>articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.md</code>), for the invariant form, the Cartan criteria and the Casimir element.</li>
+<li><em>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</em> (<code>articles_maths/the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.md</code>), for the adjoint maps, the inner and the outer derivations.</li>
+<li><em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the twelve operations and the row table.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

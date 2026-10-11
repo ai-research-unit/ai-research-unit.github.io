@@ -69,13 +69,13 @@ $$</p>
 <p>$$
 L_a^{\dagger} = L_a .
 $$</p>
-<p><em>Proof.</em> This is <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em>; the associativity is the statement $T(L_ax,z) = T(x,L_az)$, which is exactly the self-adjointness of $L_a$ by the uniqueness of the adjoint. $\square$</p>
+<p><em>Proof.</em> This is <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em>; the associativity is the statement $T(L_ax,z) = T(x,L_az)$, which is exactly the self-adjointness of $L_a$ by the uniqueness of the adjoint.</p>
 <h3 id="the-grade-involution-is-an-isometry">The Grade Involution Is an Isometry</h3>
 <p><strong>Theorem.</strong> The grade involution $\alpha$ preserves the trace form,</p>
 <p>$$
 T(\alpha x,\alpha y) = T(x,y) , \qquad \text{hence} \qquad T(\alpha x,y) = T(x,\alpha y) , \qquad \alpha^{\dagger} = \alpha .
 $$</p>
-<p><em>Proof.</em> For an automorphism $\varphi$ of $J$ one has $L_{\varphi a} = \varphi L_a\varphi^{-1}$; with $\varphi = \alpha$ and the trace invariant under conjugation, $T(\alpha x,\alpha y) = \operatorname{tr}(L_{\alpha(x\bullet y)}) = \operatorname{tr}(\alpha L_{x\bullet y}\alpha^{-1}) = \operatorname{tr}(L_{x\bullet y}) = T(x,y)$. Replacing $y$ by $\alpha y$ and using $\alpha^2 = \mathrm{id}$ gives $T(\alpha x,y) = T(x,\alpha y)$, which is the defining relation of the adjoint $\alpha^{\dagger} = \alpha$. $\square$</p>
+<p><em>Proof.</em> For an automorphism $\varphi$ of $J$ one has $L_{\varphi a} = \varphi L_a\varphi^{-1}$; with $\varphi = \alpha$ and the trace invariant under conjugation, $T(\alpha x,\alpha y) = \operatorname{tr}(L_{\alpha(x\bullet y)}) = \operatorname{tr}(\alpha L_{x\bullet y}\alpha^{-1}) = \operatorname{tr}(L_{x\bullet y}) = T(x,y)$. Replacing $y$ by $\alpha y$ and using $\alpha^2 = \mathrm{id}$ gives $T(\alpha x,y) = T(x,\alpha y)$, which is the defining relation of the adjoint $\alpha^{\dagger} = \alpha$.</p>
 <p><strong>Corollary (the quadratic representation).</strong> The quadratic representations are self-adjoint, $U_a^{\dagger} = U_a$ and $U_{a,b}^{\dagger} = U_{a,b}$, because they are polynomials in the self-adjoint left multiplications and the symmetrisation preserves self-adjointness.</p>
 <h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
 <h3 id="the-main-computation">The Main Computation</h3>
@@ -83,21 +83,21 @@ $$</p>
 <p>$$
 \bigl(\Sigma^{\alpha}_{a,b}\bigr)^{\dagger} = \bigl(U_{a,b}\circ\alpha\bigr)^{\dagger} = U_{\alpha(a),\alpha(b)}\circ\alpha = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} .
 $$</p>
-<p><em>Proof.</em> The adjoint is anti-multiplicative, $(\Phi\circ\Psi)^{\dagger} = \Psi^{\dagger}\circ\Phi^{\dagger}$, so $(U_{a,b}\circ\alpha)^{\dagger} = \alpha^{\dagger}\circ U_{a,b}^{\dagger} = \alpha\circ U_{a,b}$. Since $\alpha$ is an automorphism, $\alpha\,U_{a,b}\,\alpha^{-1} = U_{\alpha(a),\alpha(b)}$, that is $\alpha\,U_{a,b} = U_{\alpha(a),\alpha(b)}\,\alpha$; substituting gives the displayed sandwich. The symmetry $U_{a,b} = U_{b,a}$ of the quadratic representation leaves the parameter order, so only the images under $\alpha$ intervene. $\square$</p>
+<p><em>Proof.</em> The adjoint is anti-multiplicative, $(\Phi\circ\Psi)^{\dagger} = \Psi^{\dagger}\circ\Phi^{\dagger}$, so $(U_{a,b}\circ\alpha)^{\dagger} = \alpha^{\dagger}\circ U_{a,b}^{\dagger} = \alpha\circ U_{a,b}$. Since $\alpha$ is an automorphism, $\alpha\,U_{a,b}\,\alpha^{-1} = U_{\alpha(a),\alpha(b)}$, that is $\alpha\,U_{a,b} = U_{\alpha(a),\alpha(b)}\,\alpha$; substituting gives the displayed sandwich. The symmetry $U_{a,b} = U_{b,a}$ of the quadratic representation leaves the parameter order, so only the images under $\alpha$ intervene.</p>
 <p><strong>Corollary (the special-algebra form).</strong> On a special Jordan algebra the unsigned sandwich $S_{a,b}(x) = axb$ has the unsigned adjoint $S^{\dagger}_{a,b}$ given by the same rule at the images of the parameters when the ambient algebra is commutative, and its symmetrisation $\Sigma^{\alpha}_{a,b}$ has the adjoint $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ by the theorem; the adjoint of the signed sandwich is again a signed sandwich.</p>
 <h3 id="the-diagonal-signed-sandwich">The Diagonal Signed Sandwich</h3>
 <p><strong>Theorem.</strong> The diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1}$ has as symmetrisation the twisted quadratic representation $U_u\circ\alpha$, whose adjoint is</p>
 <p>$$
 \bigl(U_u\circ\alpha\bigr)^{\dagger} = U_{\alpha(u)}\circ\alpha .
 $$</p>
-<p><em>Proof.</em> Apply the theorem with $a = b = u$ and $U_{u,u} = U_u$. $\square$</p>
+<p><em>Proof.</em> Apply the theorem with $a = b = u$ and $U_{u,u} = U_u$.</p>
 <p><strong>Corollary.</strong> The adjoint of the signed conjugation $x\mapsto u\alpha(x)u^{-1}$ is the signed conjugation by $\alpha(u)$; in particular the reflection at a symmetry is self-adjoint exactly when $\alpha(u) = u$, which is the content of <em>The Signed Adjoint of the Reflection on a Jordan Algebra</em>.</p>
 <h2 id="unitarity">Unitarity</h2>
 <p><strong>Theorem (the unitarity condition).</strong> The signed sandwich is unitary with respect to the adjoint, $(\Sigma^{\alpha}_{a,b})^{\dagger}\Sigma^{\alpha}_{a,b} = \Sigma^{\alpha}_{a,b}(\Sigma^{\alpha}_{a,b})^{\dagger} = \mathrm{id}$, exactly when the quadratic representation is an involution:</p>
 <p>$$
 U_{a,b}^2 = \mathrm{id} .
 $$</p>
-<p><em>Proof.</em> $\Sigma^{\alpha}_{a,b}{}^{\dagger}\Sigma^{\alpha}_{a,b} = U_{\alpha(a),\alpha(b)}\alpha\,U_{a,b}\alpha = U_{\alpha(a),\alpha(b)}U_{\alpha(a),\alpha(b)}\alpha^2 = U_{\alpha(a),\alpha(b)}^2$, and similarly $\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{a,b}{}^{\dagger} = U_{a,b}^2$; the two are the identity together exactly when $U_{a,b}^2 = \mathrm{id}$, equivalently $U_{\alpha(a),\alpha(b)}^2 = \mathrm{id}$. $\square$</p>
+<p><em>Proof.</em> $\Sigma^{\alpha}_{a,b}{}^{\dagger}\Sigma^{\alpha}_{a,b} = U_{\alpha(a),\alpha(b)}\alpha\,U_{a,b}\alpha = U_{\alpha(a),\alpha(b)}U_{\alpha(a),\alpha(b)}\alpha^2 = U_{\alpha(a),\alpha(b)}^2$, and similarly $\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{a,b}{}^{\dagger} = U_{a,b}^2$; the two are the identity together exactly when $U_{a,b}^2 = \mathrm{id}$, equivalently $U_{\alpha(a),\alpha(b)}^2 = \mathrm{id}$.</p>
 <p><strong>Corollary.</strong> The unitarity condition $U_{a,b}^2 = \mathrm{id}$ is the Jordan form of the element condition $u^{*}u = uu^{*} = 1$; for the diagonal sandwich it reads $U_u^2 = \mathrm{id}$, the statement that the twisted quadratic representation is an involution, and it holds for the symmetries.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (the identity grade involution).</strong> For $\alpha = \mathrm{id}$ the signed sandwich is the unsigned one $\Sigma^{\alpha}_{a,b} = U_{a,b}$ and the adjoint is $U_{a,b}^{\dagger} = U_{a,b}$, so every unsigned sandwich is self-adjoint; the unitary ones are those with $U_{a,b}^2 = \mathrm{id}$.</p>

@@ -62,14 +62,14 @@
 $$</p>
 <p>sending $x$ to the functional $y\mapsto\kappa(x,y)$. Its kernel is the <strong>radical of the form</strong>, $\ker\kappa^{\flat}=\{x:\kappa(x,y)=0\text{ for all }y\}=\mathrm{G}^{\perp}$.</p>
 <p><strong>Proposition.</strong> The operator $\kappa^{\flat}$ is linear, and it is injective exactly when $\kappa$ is nondegenerate; when it is injective it is an isomorphism because $\dim\mathrm{G}=\dim\mathrm{G}^*$.</p>
-<p><strong>Proof.</strong> Linearity is bilinearity; the kernel is the radical by definition, and injectivity of a linear map between spaces of equal finite dimension is bijectivity. $\square$</p>
+<p><strong>Proof.</strong> Linearity is bilinearity; the kernel is the radical by definition, and injectivity of a linear map between spaces of equal finite dimension is bijectivity.</p>
 <h3 id="equivariance-for-the-adjoint-and-the-coadjoint-actions">Equivariance for the Adjoint and the Coadjoint Actions</h3>
 <p><strong>Proposition.</strong> The operator $\kappa^{\flat}$ is a morphism of $\mathrm{G}$-modules for the adjoint action on $\mathrm{G}$ and the coadjoint action on $\mathrm{G}^*$:</p>
 <p>$$
 \kappa^{\flat}(\operatorname{ad}_x y)=-\operatorname{ad}_x^{*}\,\kappa^{\flat}(y),
 $$</p>
 <p>where $\operatorname{ad}_x^{*}$ is the transpose of $\operatorname{ad}_x$.</p>
-<p><strong>Proof.</strong> Evaluate both sides on $z$: the left is $\kappa([x,y],z)$, the right is $-\kappa(y,[x,z])$, and the invariance $\kappa([x,y],z)=\kappa(x,[y,z])$ gives their equality. $\square$</p>
+<p><strong>Proof.</strong> Evaluate both sides on $z$: the left is $\kappa([x,y],z)$, the right is $-\kappa(y,[x,z])$, and the invariance $\kappa([x,y],z)=\kappa(x,[y,z])$ gives their equality.</p>
 <p><strong>Corollary.</strong> The kernel and the image of $\kappa^{\flat}$ are stable, respectively, under the adjoint and the coadjoint actions; in particular the radical is an ideal of $\mathrm{G}$, which is the statement recorded in <em>Structure of Lie Algebras</em>.</p>
 <h2 id="invariance-as-an-operator-identity">Invariance as an Operator Identity</h2>
 <p><strong>Theorem.</strong> For every $x\in\mathrm{G}$ the operator $\operatorname{ad}_x$ is skew with respect to $\kappa$:</p>
@@ -80,15 +80,15 @@ $$</p>
 <p>$$
 \kappa^{\flat}\circ\operatorname{ad}_x=-\operatorname{ad}_x^{*}\circ\kappa^{\flat}.
 $$</p>
-<p><strong>Proof.</strong> The invariance identity gives $\kappa([x,y],z)=\kappa(x,[y,z])$ and $\kappa(y,[x,z])=\kappa([y,x],z)=-\kappa([x,y],z)$; adding, the two terms cancel. The commuting-square form is the same identity read through the definition of $\kappa^{\flat}$. $\square$</p>
+<p><strong>Proof.</strong> The invariance identity gives $\kappa([x,y],z)=\kappa(x,[y,z])$ and $\kappa(y,[x,z])=\kappa([y,x],z)=-\kappa([x,y],z)$; adding, the two terms cancel. The commuting-square form is the same identity read through the definition of $\kappa^{\flat}$.</p>
 <p><strong>Corollary.</strong> The adjoint representation lands in the operators preserving the form: the image of $\operatorname{ad}:\mathrm{G}\to\operatorname{End}_K(\mathrm{G})$ lies in the Lie subalgebra of the operators $T$ with $\kappa(Ty,z)+\kappa(y,Tz)=0$. When $\kappa$ is nondegenerate and written in a basis, the matrices of the $\operatorname{ad}_x$ are antisymmetric with respect to the coefficient matrix of $\kappa$.</p>
 <p><strong>Remark.</strong> The corollary names the orthogonal algebra of the form; the orthogonal Lie algebras, their classification and their representation theory belong to the symmetric algebras of this Part and are not used here. Only the operator statement above is used, and no metric reading is taken.</p>
 <h2 id="the-semisimplicity-criterion-as-an-operator-statement">The Semisimplicity Criterion as an Operator Statement</h2>
 <p><strong>Theorem.</strong> Let $K$ have characteristic zero. Then $\mathrm{G}$ is semisimple if and only if the Killing form operator $\kappa^{\flat}$ is injective; equivalently, the radical of the form is zero.</p>
-<p><strong>Proof.</strong> Cartan's criterion for semisimplicity, recorded in <em>Structure of Lie Algebras</em>, states that $\mathrm{G}$ is semisimple if and only if $\kappa$ is nondegenerate; by the first proposition nondegeneracy is the injectivity of $\kappa^{\flat}$. $\square$</p>
+<p><strong>Proof.</strong> Cartan's criterion for semisimplicity, recorded in <em>Structure of Lie Algebras</em>, states that $\mathrm{G}$ is semisimple if and only if $\kappa$ is nondegenerate; by the first proposition nondegeneracy is the injectivity of $\kappa^{\flat}$.</p>
 <p><strong>Corollary.</strong> For semisimple $\mathrm{G}$ the map $\kappa^{\flat}:\mathrm{G}\to\mathrm{G}^*$ is an isomorphism of $\mathrm{G}$-modules with the actions of the previous section, so the adjoint and the coadjoint representations are equivalent; the inverse $(\kappa^{\flat})^{-1}:\mathrm{G}^*\to\mathrm{G}$ transfers the form to the dual and is used to build the Casimir operator.</p>
 <p><strong>Proposition.</strong> The radical of the form is stable under derivations: if $D$ is a derivation of $\mathrm{G}$ then $\kappa(Dx,y)+\kappa(x,Dy)=0$, so $D$ preserves $\kappa$, and $\kappa^{\flat}\circ D=-D^{*}\circ\kappa^{\flat}$; for $\mathrm{G}$ semisimple every derivation is inner, and the statement reduces to the skewness of $\operatorname{ad}_x$.</p>
-<p><strong>Proof.</strong> The identity $\operatorname{tr}([D,\operatorname{ad}_x]\operatorname{ad}_y)+\operatorname{tr}(\operatorname{ad}_x[D,\operatorname{ad}_y])=0$, valid for any derivation because $[D,\operatorname{ad}_x]=\operatorname{ad}_{Dx}$, gives the invariance; the inner case is the previous theorem. $\square$</p>
+<p><strong>Proof.</strong> The identity $\operatorname{tr}([D,\operatorname{ad}_x]\operatorname{ad}_y)+\operatorname{tr}(\operatorname{ad}_x[D,\operatorname{ad}_y])=0$, valid for any derivation because $[D,\operatorname{ad}_x]=\operatorname{ad}_{Dx}$, gives the invariance; the inner case is the previous theorem.</p>
 <h2 id="the-casimir-operator-and-the-laplacian">The Casimir Operator and the Laplacian</h2>
 <p><strong>Definition.</strong> Let $\mathrm{G}$ be semisimple, let $x_1,\dots,x_m$ be a basis and let $x^1,\dots,x^m$ be the basis determined by $\kappa(x_i,x^j)=\delta_i^j$. The <strong>Casimir operator</strong> is</p>
 <p>$$
@@ -96,9 +96,9 @@ C=\sum_{i=1}^{m}x_ix^i\in U(\mathrm{G}),
 $$</p>
 <p>and its image in $\operatorname{End}_K(V)$ under a representation $\rho$ is the <strong>Laplacian of the representation</strong>, $\Omega=\sum_i\rho(x_i)\rho(x^i)$.</p>
 <p><strong>Theorem.</strong> The element $C$ is independent of the choice of basis, it lies in the centre of $U(\mathrm{G})$, and the Laplacian commutes with the image of the representation; on an irreducible finite-dimensional representation the Laplacian is a scalar.</p>
-<p><strong>Proof.</strong> A change of basis changes the two bases by inverse matrices, whose contributions cancel in the sum; centrality and the commuting property, with the scalar statement, are established in <em>The Casimir Operator</em>. $\square$</p>
+<p><strong>Proof.</strong> A change of basis changes the two bases by inverse matrices, whose contributions cancel in the sum; centrality and the commuting property, with the scalar statement, are established in <em>The Casimir Operator</em>.</p>
 <p><strong>Remark.</strong> The operator $\kappa^{\flat}$ is what makes the sum basis-free: it identifies $\mathrm{G}$ with $\mathrm{G}^*$, so a sum over a basis of $\mathrm{G}$ and the dual basis is an invariant element. The Laplacian is the operator form of the Casimir element and is used in <em>The Casimir Operator</em> and in <em>Representations of Lie Algebras</em>.</p>
-<h2 id="worked-case-math94">Worked Case: $\mathrm{sl}(2,K)$</h2>
+<h2 id="worked-case-math88">Worked Case: $\mathrm{sl}(2,K)$</h2>
 <p>Let $\mathrm{G}=\mathrm{sl}(2,K)$ with basis $e,h,f$ and the bracket $[h,e]=2e$, $[h,f]=-2f$, $[e,f]=h$. The Killing form is</p>
 <p>$$
 \kappa=\begin{pmatrix}0&0&4\\0&8&0\\4&0&0\end{pmatrix}
@@ -108,7 +108,6 @@ $$</p>
 C=\tfrac14 ef+\tfrac18 h^2+\tfrac14 fe=\tfrac14\left(ef+fe+\tfrac12h^2\right),
 $$</p>
 <p>which acts on the irreducible representation of highest weight $n$ by the scalar $\tfrac18 n(n+2)$, the value recorded in <em>The Casimir Operator</em>.</p>
-<p><strong>Verified.</strong> The matrix of $\kappa$ was recomputed from the brackets by hand and by exact elimination over $\mathbb{Q}$; the skewness $\kappa(\operatorname{ad}_x y,z)+\kappa(y,\operatorname{ad}_x z)=0$ was checked on the three basis elements and the pairing of the Casimir eigenvalue with the dimension of the representation was checked against the data of <em>The Casimir Operator</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The Killing form defines the <strong>Killing form operator</strong> $\kappa^{\flat}:\mathrm{G}\to\mathrm{G}^*$, $x\mapsto\kappa(x,-)$, whose kernel is the radical of the form. It is a morphism of $\mathrm{G}$-modules with a sign, $\kappa^{\flat}(\operatorname{ad}_x y)=-\operatorname{ad}_x^{*}\kappa^{\flat}(y)$, and this is the invariance of $\kappa$; equivalently every $\operatorname{ad}_x$ is skew for $\kappa$, $\kappa(\operatorname{ad}_x y,z)+\kappa(y,\operatorname{ad}_x z)=0$, so the adjoint representation lands in the operators preserving the form, and the derivations preserve $\kappa$ as well. By Cartan's criterion, recorded in <em>Structure of Lie Algebras</em>, the algebra is semisimple exactly when $\kappa^{\flat}$ is injective, and then $\kappa^{\flat}$ is an isomorphism of $\mathrm{G}$-modules between the adjoint and the coadjoint representations. The isomorphism makes the Casimir operator $C=\sum x_ix^i$ and the Laplacian $\Omega=\sum\rho(x_i)\rho(x^i)$ basis-free invariant operators, central in $U(\mathrm{G})$ and scalar on irreducibles, as in <em>The Casimir Operator</em>. For $\mathrm{sl}(2,K)$ the form is nondegenerate with matrix displayed above, and the Laplacian acts on the representation of highest weight $n$ by $\tfrac12 n(n+2)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

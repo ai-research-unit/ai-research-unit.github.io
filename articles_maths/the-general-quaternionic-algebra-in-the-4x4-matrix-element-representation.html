@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The left regular representation $\mathsf{M}_4$ of <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> carries the algebra acting on itself, and it makes the natural conjugation ${}^{\natural}$ visible as the <strong>transposition</strong> of the regular matrix, $\mathsf{M}_4(\tilde{Q}^{\natural})=\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}$. This article is the companion of <em>The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, and it reads the group <em>Topology on the Introduction to the General Quaternionic Algebra of Biquaternions</em> on the regular matrices: the quaternionic product becomes the product of the transposed regular matrix with the second factor, and the general quaternionic bilinear form becomes the trace pairing with the transposed second factor, with the factor $2$ that the dimension of the module brings.</p>
 <p>The regular representation has one advantage over the $2\times2$ realization in this group: the characteristic operation ${}^{\natural}$ is a transposition, and the transposition is the operation that the regular matrix already carries. The general quaternionic bilinear form therefore needs no adjugate, and the determinant of the regular matrix is the square of the norm, the two factors being the two copies of the simple module.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$; the quaternionic product $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}$ with norm $N(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. All matrix claims of this article are recomputed in the verification script of the pass.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$; the quaternionic product $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}$ with norm $N(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.</p>
 <h2 id="the-representation">The Representation</h2>
 <p><strong>Definition.</strong> The <strong>left regular matrix</strong> is the isomorphism written $\mathsf{M}_4$. It converts a biquaternion into a $4 \times 4$ complex matrix,</p>
 <p>$$
@@ -168,7 +168,7 @@ $$</p>
 <p><strong>The four traces.</strong> The four products are four matrix traces, and the four forms of the algebra are read from them:</p>
 <p>$$
 \tfrac14\operatorname{Tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
-\tfrac14\operatorname{Tr}(X^{\mathsf T}Y)=B(\tilde P,\tilde Q),\qquad
+\tfrac14\operatorname{Tr}(X^{\mathsf T}Y)=N(\tilde P,\tilde Q),\qquad
 \tfrac14\operatorname{Tr}(XY^{\dagger})=H(\tilde P,\tilde Q),\qquad
 \tfrac14\operatorname{Tr}(X^{\mathsf T}Y^{\dagger})=K(\tilde P,\tilde Q),
 $$</p>

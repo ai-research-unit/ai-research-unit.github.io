@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilpotents of the Symmetric Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="nilpotents-of-the-symmetric-quaternionic-algebra"><strong>Nilpotents of the Symmetric Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A nilpotent of a product is an element some power of which vanishes, the index being the least such power, and a square-zero element is one of index two (<em>Definitions for the Study of the 12 Algebraic Structures</em> §<em>The Nilpotent</em>). In the symmetric quaternionic block the powers of an element are central from the square on, and one formula governs all of them:</p>
+<p>$$
+\tilde\Upsilon^{\star k}=N(\tilde\Upsilon)\,\Upsilon_0^{\,k-2}\,e_0\qquad(k\geq2),
+$$</p>
+<p>the powers being read in the left-nested sense. The block is therefore one of the products of the twelve whose nilpotent index is not bounded by two: its nilpotents have index two or index three, and the two families are a cone and a vector subspace. This article computes the powers, states the criterion, separates the two index classes, computes the square-zero set, relates the nilpotents to the zero divisors and to the idempotents, records the behaviour under the three conjugations, and reads the whole in the $2\times2$ matrix model.</p>
+<p><strong>Boundaries.</strong> The general definition of the nilpotent and of the square-zero element is the definitions article; the square-zero elements of the four general products and their comparison are <em>The Square-Zero Elements of the Four General Products</em> and <em>Comparison Between the Four General Products</em>; the zero divisors are <em>Zero Divisors of the Symmetric Quaternionic Algebra</em>; the idempotents are <em>Idempotents of the Symmetric Quaternionic Algebra</em>; the roots of $0$ are <em>Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra</em>; the matrix models are <em>The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> and its $4\times4$ companion.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and central scalar imaginary $i$; a general element is $\tilde Q=Q_0e_0+\mathbf Q$ with $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$. The <strong>symmetric quaternionic multiplication</strong> is $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ and diagonal $N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2$; it is also written $\bullet$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$.</p>
+<h2 id="the-general-definition">The General Definition</h2>
+<p><strong>Definition (nilpotent of a product).</strong> Let $\star$ be a product on $\mathbb{B}$. An element $\tilde\Upsilon$ is <strong>nilpotent of $\star$</strong> when</p>
+<p>$$
+\tilde\Upsilon^{\star k}=0\quad\text{for some }k\geq1,
+$$</p>
+<p>the power being the left-nested one when $\star$ is not associative; the least such $k$ is the <strong>index of nilpotency</strong>, and an element of index two, $\tilde\Upsilon\star\tilde\Upsilon=0$ with $\tilde\Upsilon\neq0$, is a <strong>square-zero element</strong>.</p>
+<p>Throughout this article the product is the <strong>symmetric quaternionic product</strong> of the block, and a nilpotent, an index or a square-zero element, written without qualification, is one of that product. The block is not associative, so the bracketing of a power matters a priori and is fixed to the left-nested reading; for this product the right-nested reading gives the same value, because $\tilde\Upsilon\star(\tilde\Upsilon\star\tilde\Upsilon)=\Upsilon_0N(\tilde\Upsilon)e_0$ by the same computation as below.</p>
+<h2 id="the-powers-of-an-element">The Powers of an Element</h2>
+<p><strong>Theorem (the powers).</strong> For every $\tilde\Upsilon$ and every $k\geq2$,</p>
+<p>$$
+\tilde\Upsilon^{\star k}=N(\tilde\Upsilon)\,\Upsilon_0^{\,k-2}\,e_0=\Upsilon_0^{\,k-2}\bigl(\tilde\Upsilon\star\tilde\Upsilon\bigr).
+$$</p>
+<p><em>Proof.</em> For $k=2$ the formula is $\tilde\Upsilon^{\star2}=N(\tilde\Upsilon)e_0$, the square of the block. Assume it for $k$; then $\tilde\Upsilon^{\star(k+1)}=\tilde\Upsilon^{\star k}\star\tilde\Upsilon=N(\tilde\Upsilon)\Upsilon_0^{k-2}e_0\star\tilde\Upsilon=N(\tilde\Upsilon)\Upsilon_0^{k-2}\cdot\Upsilon_0e_0=N(\tilde\Upsilon)\Upsilon_0^{k-1}e_0$, which is the formula at $k+1$; the displayed equality with $\Upsilon_0^{k-2}(\tilde\Upsilon\star\tilde\Upsilon)$ is the same computation reversed.</p>
+<p><strong>Corollary (the index is at most three).</strong> The index of nilpotency of a nilpotent of the block is two or three, and the higher powers vanish as soon as $N(\tilde\Upsilon)\Upsilon_0=0$.</p>
+<p><em>Proof.</em> The formula shows that $\tilde\Upsilon^{\star3}=N(\tilde\Upsilon)\Upsilon_0e_0$; if this vanishes then every later power vanishes by the formula, and if it does not vanish then no power vanishes, because $\Upsilon_0^{k-2}$ is a power of a nonzero scalar.</p>
+<h2 id="the-criterion-and-the-index">The Criterion and the Index</h2>
+<p><strong>Theorem (the nilpotents and their index).</strong> An element $\tilde\Upsilon$ is a nilpotent of the block if and only if</p>
+<p>$$
+N(\tilde\Upsilon)=0\quad\text{or}\quad\Upsilon_0=0,
+$$</p>
+<p>that is if and only if it is isotropic or pure. The index is two on the first family, the isotropic cone, and three on the pure non-isotropic family $\{\Upsilon_0=0,\ N\neq0\}$.</p>
+<p><em>Proof.</em> By the formula $\tilde\Upsilon^{\star3}=N(\tilde\Upsilon)\Upsilon_0e_0$, a nilpotent of index three satisfies $N(\tilde\Upsilon)\Upsilon_0=0$ with $\Upsilon_0\neq0$, hence $N=0$, which is already the index two case; so the index three case is $\Upsilon_0=0$ and $N\neq0$, where the cube is zero while the square is $N e_0\neq0$. Conversely if $N=0$ the square is zero (index two, if $\tilde\Upsilon\neq0$), and if $\Upsilon_0=0$ the cube is zero.</p>
+<p><strong>Corollary (the nilpotent set).</strong></p>
+<p>$$
+\{\text{nilpotents of the block}\}=\{N=0\}\cup\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3,
+$$</p>
+<p>the union of the isotropic cone and the vector subspace, and the two meet in the pure isotropic elements, which are of index two. The set is the union of a quadric cone of complex dimension three and a linear subspace of complex dimension three.</p>
+<h2 id="the-square-zero-set">The Square-Zero Set</h2>
+<p><strong>Theorem (the square-zero elements are the isotropic elements).</strong> The square-zero elements of the block are exactly the nonzero isotropic elements,</p>
+<p>$$
+\{\tilde\Upsilon:\tilde\Upsilon\star\tilde\Upsilon=0,\ \tilde\Upsilon\neq0\}=\{N=0\}\setminus\{0\},
+$$</p>
+<p>the punctured isotropic cone of complex dimension three and real dimension six, with the two families of <em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em>. They are exactly the roots of $0$ of the block and exactly the zero divisors of the parent algebra.</p>
+<p><em>Proof.</em> $\tilde\Upsilon\star\tilde\Upsilon=N(\tilde\Upsilon)e_0$ vanishes exactly when $N(\tilde\Upsilon)=0$, and $0$ is excluded by the definition; the identification with the roots of $0$ and with the zero divisors of the parent is <em>Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra</em> and <em>Zero Divisors of the Symmetric Quaternionic Algebra</em>.</p>
+<p><strong>Examples.</strong> $\tilde\Upsilon=e_0+ie_1$: $N=0$, index two. $\tilde\Upsilon=e_1$: pure, $N=1$, index three, since $e_1\star e_1=e_0$ and $e_1\star e_0=0$. $\tilde\Upsilon=e_1+e_2$: pure, $N=2$, index three. $\tilde\Upsilon=e_0+e_1$: $N=2$ and $\Upsilon_0=1$, not a nilpotent.</p>
+<h2 id="the-relation-to-the-zero-divisors-and-to-the-idempotents">The Relation to the Zero Divisors and to the Idempotents</h2>
+<p><strong>Proposition (the nilpotents are zero divisors, and they are far from exhausting them).</strong> Every nonzero nilpotent of the block is a zero divisor of it, since the block's zero-divisor set is the whole punctured space; conversely the non-isotropic, non-pure elements, for instance $e_0$, are zero divisors and not nilpotents. The implication <em>nilpotent implies zero divisor</em> therefore holds trivially in the block, and the converse fails in the sharpest possible way.</p>
+<p><em>Proof.</em> <em>Zero Divisors of the Symmetric Quaternionic Algebra</em> gives $\mathcal{Z}_{\star}=\mathbb{B}\setminus\{0\}$; the criterion above excludes $e_0$ from the nilpotents since $N(e_0)=1$ and its scalar part is $1$.</p>
+<p><strong>Proposition (the nilpotents and the idempotents meet only at the origin).</strong> The only element of the block that is both an idempotent and a nilpotent is $0$. The idempotent $e_0$ is not a nilpotent, all its powers being $e_0$, and the square-zero elements are not idempotents, since $\tilde\Upsilon\star\tilde\Upsilon=0$ and $\tilde\Upsilon\star\tilde\Upsilon=\tilde\Upsilon$ give $\tilde\Upsilon=0$.</p>
+<p><em>Proof.</em> The classification of the idempotents is <em>Idempotents of the Symmetric Quaternionic Algebra</em>, where they are shown to be $0$ and $e_0$; the two statements displayed are immediate.</p>
+<p><strong>Remark (the two families the index separates).</strong> The block's two nilpotent families are not the parent's two zero-divisor families. In the parent the nilpotents are the pure isotropic elements and the non-pure zero divisors are the idempotent multiples (<em>Zero Divisors of the General Plain Algebra</em>); in the block the index two family is the whole isotropic cone — pure or not — and the index three family is the pure anisotropic part of the vector subspace, which in the parent consists of units and of no zero divisor at all. The block thus produces nilpotents of an index the parent does not have, and it produces them on elements that the parent regards as regular.</p>
+<h2 id="the-conjugations">The Conjugations</h2>
+<p><strong>Theorem (the nilpotent set is invariant).</strong> The three conjugations preserve the nilpotent set and its two index families:</p>
+<p>$$
+N(\tilde\Upsilon^{\natural})=N(\tilde\Upsilon),\qquad N(\tilde\Upsilon^{*})=\overline{N(\tilde\Upsilon)},\qquad
+(\Upsilon^{\natural})_0=\Upsilon_0,\qquad (\Upsilon^{*})_0=\overline{\Upsilon_0},
+$$</p>
+<p>so $\Upsilon_0=0$ is preserved by ${}^{\natural}$ and by ${}^{*}$, and $N=0$ by ${}^{\natural}$ and by the Hermitian conjugation, while ${}^{*}$ preserves $N=0$ by conjugating the value.</p>
+<p><em>Proof.</em> The natural conjugation negates the vector part, the star conjugates all four coefficients and negates the vector part; the identities for $N$ are those of <em>Norm and Invertibility in the Symmetric Quaternionic Algebra</em>, and a vanishing scalar or form is preserved by the sign or conjugation of the value.</p>
+<p><strong>Corollary.</strong> The square-zero set and the vector subspace are each stable under the three conjugations, and the index of a nilpotent is unchanged by them.</p>
+<h2 id="the-matrix-model">The Matrix Model</h2>
+<p><strong>Theorem (the two invariants of the model).</strong> In the realization $M_2(\mathbb{C})$ of the algebra, the matrix of a general element is</p>
+<p>$$
+\mathsf M(\tilde Q)=\begin{pmatrix} Q_0-iQ_3 & -Q_2-iQ_1\\ Q_2-iQ_1 & Q_0+iQ_3\end{pmatrix},
+$$</p>
+<p>with</p>
+<p>$$
+\operatorname{Tr}\mathsf M(\tilde Q)=2Q_0,\qquad \det\mathsf M(\tilde Q)=N(\tilde Q),
+$$</p>
+<p>the natural conjugation being the adjugate; and the symmetric quaternionic product of two elements is the symmetrisation of the adjugated matrix product, with value the scalar matrix $N(\tilde P,\tilde Q)I_2$.</p>
+<p><em>Proof.</em> The trace is $2Q_0$ by inspection; the determinant is $(Q_0-iQ_3)(Q_0+iQ_3)-(-Q_2-iQ_1)(Q_2-iQ_1)=Q_0^2+Q_3^2+Q_1^2+Q_2^2=N(\tilde Q)$; the product statement is the definition of the block read through the realization of <em>The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>: in the model the plain product is the matrix product, the natural conjugation is the adjugate, and $\tfrac12\bigl(\operatorname{adj}\mathsf M(\tilde P)\mathsf M(\tilde Q)+\operatorname{adj}\mathsf M(\tilde Q)\mathsf M(\tilde P)\bigr)=N(\tilde P,\tilde Q)I_2$.</p>
+<p><strong>Corollary (the nilpotents of the block in the matrix model).</strong> An element of the block is a nilpotent exactly when its matrix is <strong>trace-free or singular</strong>,</p>
+<p>$$
+\Upsilon_0=0\ \text{or}\ N(\tilde\Upsilon)=0\iff \operatorname{Tr}\mathsf M(\tilde\Upsilon)=0\ \text{or}\ \det\mathsf M(\tilde\Upsilon)=0,
+$$</p>
+<p>the index two family being the singular matrices and the index three family the trace-free nonsingular ones. The contrast with the parent is exact: the nilpotents of the plain algebra are the matrices that are simultaneously trace-free and singular (<em>Nilpotents of the General Plain Algebra</em>), and the block replaces the <em>and</em> by an <em>or</em>, one factor for each of its two nilpotent families.</p>
+<h2 id="summary">Summary</h2>
+<p>In the symmetric quaternionic block the powers of an element are central from the square on, $\tilde\Upsilon^{\star k}=N(\tilde\Upsilon)\Upsilon_0^{k-2}e_0$ for $k\geq2$, so an element is nilpotent exactly when it is isotropic, $N=0$, or pure, $\Upsilon_0=0$; the index is two on the isotropic cone and three on the pure non-isotropic part of the vector subspace, and the index is bounded by three. The square-zero elements are exactly the nonzero isotropic elements, hence exactly the roots of $0$ and the zero divisors of the parent algebra, while the block's own zero-divisor set is larger; the nilpotents and the idempotents of the block meet only at the origin; the nilpotent set and its two families are stable under the three conjugations. In the $2\times2$ model the trace of the matrix of $\tilde Q$ is $2Q_0$ and its determinant is $N(\tilde Q)$, so the block's nilpotents are the matrices that are trace-free or singular, against the parent's nilpotents, which are the matrices that are both.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$</td>
+<td>the symmetric quaternionic multiplication</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=\sum_\mu Q_\mu^2$</td>
+<td>the diagonal of the form</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon^{\star k}=N\Upsilon_0^{k-2}e_0$</td>
+<td>the $k$-th power, $k\geq2$</td>
+</tr>
+<tr>
+<td>$N=0$</td>
+<td>the square-zero family, index two, the isotropic cone</td>
+</tr>
+<tr>
+<td>$\Upsilon_0=0$, $N\neq0$</td>
+<td>the index three family, the pure anisotropic vectors</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}\mathsf M=2Q_0$, $\det\mathsf M=N$</td>
+<td>the two invariants of the $2\times2$ model</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), for the general definition of the nilpotent, the index and the square-zero element.</li>
+<li><em>Nilpotents of the General Plain Algebra</em> (<code>articles_maths/nilpotents-of-the-general-plain-algebra.md</code>), for the parent's nilpotents, their index and their matrix characterisation.</li>
+<li><em>The Square-Zero Elements of the Four General Products</em> (<code>articles_maths/the-square-zero-elements-of-the-four-general-products.md</code>), for the square-zero sets of the four general products.</li>
+<li><em>Zero Divisors of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra.md</code>), for the maximal zero-divisor set of the block.</li>
+<li><em>Idempotents of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/idempotents-of-the-symmetric-quaternionic-algebra.md</code>), for the two idempotents and the disjointness from the nilpotents.</li>
+<li><em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md</code>), for the isotropic cone and its two families.</li>
+<li><em>The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> (<code>articles_maths/the-symmetric-quaternionic-algebra-in-the-2x2-matrix-element-representation.md</code>), for the realization used here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

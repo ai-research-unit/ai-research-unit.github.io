@@ -186,7 +186,7 @@ $$</p>
 -\frac{q\hbar}{2m}\boldsymbol\sigma\cdot\mathbf B\ \longleftrightarrow\ -\frac{q\hbar}{2m}\,i\mathbf B\ \in\ \mathbb M_+ ,
 $$</p>
 <p>the Hermitian element of the informational sector, exactly as the parent states. The kinetic and electrostatic terms multiply the identity and map to the scalar part $(\boldsymbol\pi^2/2m)e_0$ and $q\Phi e_0$ of $\mathbb M_+$.</p>
-<p><em>Numerical checks.</em> The Pauli identity of Step 3 was verified with random complex vectors against $2\times2$ matrices, maximum error $8.9\times10^{-15}$ over $1000$ samples. The commutator identity of Step 2 was verified by finite differences on a grid with $\mathbf A=(-y,0,0)$, for which $\mathbf B=(0,0,1)$; the operator identity $[\pi_x,\pi_y]\psi=iqB_z\psi$ was confirmed at five test points with a maximum absolute error $4.8\times10^{-3}$, consistent with the second-order truncation error of the central difference.</p>
+<p><em>Numerical checks.</em> The commutator identity of Step 2 was verified by finite differences on a grid with $\mathbf A=(-y,0,0)$, for which $\mathbf B=(0,0,1)$; the operator identity $[\pi_x,\pi_y]\psi=iqB_z\psi$ was confirmed at five test points with a maximum absolute error $4.8\times10^{-3}$, consistent with the second-order truncation error of the central difference.</p>
 <h2 id="problem-3-the-spinorbit-and-darwin-terms-at-the-next-order">Problem 3: The spin–orbit and Darwin terms at the next order</h2>
 <p><strong>Statement.</strong> Extend the elimination to the next order in $1/c$ and obtain the relativistic kinetic correction, the Darwin term, and the spin–orbit coupling.</p>
 <p><strong>Solution.</strong> This order is <em>not</em> contained in the parent article, which stops at the leading Pauli Hamiltonian. It is obtained by the second Foldy–Wouthuysen step.</p>
@@ -234,7 +234,7 @@ $$</p>
 \Delta E_{\rm D}=\frac{m(Z\alpha)^4}{2n^3}\quad(\ell=0),\qquad \Delta E_{\rm D}=0\quad(\ell\neq0),
 $$</p>
 <p>with the exact Dirac shift $\Delta E_{\rm exact}=-\dfrac{m(Z\alpha)^4}{2n^3}\Big[\dfrac{1}{j+\tfrac12}-\dfrac{3}{4n}\Big]$. Evaluating all of these with exact rational arithmetic for every level with $n\le6$ (36 levels, both $j=\ell\pm\tfrac12$), the sum $\Delta E_{\rm kin}+\Delta E_{\rm SO}+\Delta E_{\rm D}$ equals $\Delta E_{\rm exact}$ in every case, with difference exactly $0$. An independent one-dimensional Foldy–Wouthuysen expansion, carried out symbolically to order $m^{-3}$ in a purely scalar potential, reproduces the four coefficients $1,+\tfrac12,+\tfrac18,-\tfrac18$ for $V$, $\boldsymbol\pi^2/2m$, $\nabla^2V/(8m^2c^2)$ and $-(\boldsymbol\sigma\cdot\boldsymbol\pi)^4/(8m^3c^2)$ respectively. The Darwin sign is therefore $+\hbar^2\nabla^2V/(8m^2c^2)$, equivalently $-(q\hbar^2/8m^2c^2)\nabla\cdot\mathbf E$.</p>
-<h2 id="problem-4-hermiticity-and-the-math187-decomposition">Problem 4: Hermiticity and the $\mathbb M_\pm$ decomposition</h2>
+<h2 id="problem-4-hermiticity-and-the-math184-decomposition">Problem 4: Hermiticity and the $\mathbb M_\pm$ decomposition</h2>
 <p><strong>Statement.</strong> Check the Hermiticity of every term and determine which terms lie in $\mathbb M_+$.</p>
 <p><strong>Solution.</strong></p>
 <p><em>Step 1: Hermiticity.</em> Each term of the Hamiltonian of Problem 3 is Hermitian:</p>

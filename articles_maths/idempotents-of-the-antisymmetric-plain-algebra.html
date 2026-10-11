@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idempotents of the Antisymmetric Plain Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="idempotents-of-the-antisymmetric-plain-algebra"><strong>Idempotents of the Antisymmetric Plain Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The idempotent is defined by an equation in which the product occurs, so it is a class of the
+product and not of the space (<em>Definitions for the Study of the 12 Algebraic Structures</em>,
+§<em>The Idempotent, the Projection and the Peirce Decomposition</em>). The block of this article is the
+antisymmetric plain multiplication
+$$
+\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf{P}\times\mathbf{Q},
+$$
+the cross product of the two vector parts, which is alternating (<em>Introduction to the
+Antisymmetric Plain Algebra of Biquaternions</em>). The article determines its idempotent set and
+states the consequences of its being as small as possible.</p>
+<p>The answer is the extreme absence. The idempotent equation of the block is
+$\tilde\Pi\wedge\tilde\Pi=\tilde\Pi$; its left side is zero for every element, and the equation
+therefore reduces to $0=\tilde\Pi$. <strong>The block has one idempotent, the origin</strong>, which is the
+trivial idempotent of every product; it has <strong>no nontrivial idempotent</strong>, hence no orthogonal
+family, no primitive idempotent and no projection, and no Peirce decomposition. The unit $e_0$ of
+the ambient algebra is not an idempotent of the block, the block being a bracket and not a
+product. The comparison with the parent product is the comparison of the origin alone with the
+idempotent family $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$, a set of real dimension four,
+and the two companion articles that the vanishing square
+makes equal are <em>Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain
+Algebra</em> and <em>Nilpotents of the Antisymmetric Plain Algebra</em>, which are cited.</p>
+<h2 id="the-notion-and-its-product">The Notion and Its Product</h2>
+<p><strong>Definition (idempotent of a product).</strong> Let $\star$ be a product on $\mathbb{B}$. An element
+$\tilde\Pi$ is an <strong>idempotent of $\star$</strong> when
+$$
+\tilde\Pi\star\tilde\Pi=\tilde\Pi .
+$$
+The origin and, when the product is unital, the unit are idempotents of every product; they are
+the <strong>trivial idempotents</strong>, and the others are <strong>nontrivial</strong>
+(<em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>The Idempotent, the Projection and
+the Peirce Decomposition</em>).</p>
+<p>Throughout this article the product is the <strong>antisymmetric plain multiplication</strong> $\wedge$, and
+unqualified, <em>idempotent</em> means an idempotent of $\wedge$. The idempotent is the root of $+1$ in
+the scaled sense of the definitions article, and the block's roots of $+1$ are treated in <em>Square
+Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra</em>; the idempotent sets of
+the four general products, and the table that compares them, are <em>The Zero Divisors and the Four
+General Products</em>, §<em>The Square, the Idempotents and the Units</em>.</p>
+<h2 id="the-criterion">The Criterion</h2>
+<p><strong>Theorem (the idempotent set).</strong> The idempotent equation of the block is satisfied by the origin
+alone,
+$$
+\{\tilde\Pi:\tilde\Pi\wedge\tilde\Pi=\tilde\Pi\}=\{0\}.
+$$</p>
+<p><em>Proof.</em> The block is alternating, $\tilde X\wedge\tilde X=0$ for every $\tilde X$, by
+<em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em>; read at $\tilde X=\tilde\Pi$
+this gives $\tilde\Pi\wedge\tilde\Pi=0$. The idempotent equation becomes $0=\tilde\Pi$, whose only
+solution is the origin. The origin is an idempotent indeed, $0\wedge0=0=0$.</p>
+<p>The criterion is the whole of the computation, because the left side of the equation is
+identically zero and the equation constrains the right side alone. Every candidate idempotent is
+excluded at once, and no coordinate computation is needed.</p>
+<p><strong>Corollary (no nontrivial idempotent).</strong> The block has no nontrivial idempotent. In particular
+the unit $e_0$ of the ambient algebra is not an idempotent of the block:
+$e_0\wedge e_0=\mathbf{0}\times\mathbf{0}=0\neq e_0$.</p>
+<p><em>Proof.</em> A nontrivial idempotent is one different from the origin and, when the product is unital,
+from the unit; the theorem says that the origin is the only idempotent, so there is no nontrivial
+one. The element $e_0$ satisfies $e_0\wedge e_0=0$ and $0\neq e_0$, so it is not an idempotent of
+the block, although it is the unit of the parent product.</p>
+<p>The equation is read in the product and not in the algebra, and the block is not the plain
+product. The element $e_0$ is an idempotent of the parent and not of the block; the origin is an
+idempotent of both, being the trivial idempotent of every product.</p>
+<h2 id="the-absence-of-the-projector-and-of-the-peirce-calculus">The Absence of the Projector and of the Peirce Calculus</h2>
+<p><strong>Proposition (no nontrivial projector).</strong> The only idempotent of the block is the origin, whose
+left multiplication operator is the zero operator. The block therefore carries no nontrivial
+projector: there is no nonzero idempotent element whose multiplication operator is a nonzero
+idempotent operator.</p>
+<p><em>Proof.</em> By the theorem the only idempotent element is the origin, and $L_0=0$; the zero operator
+is a projector, but there is no other idempotent element to produce one.</p>
+<p><strong>Proposition (no Peirce decomposition).</strong> The block has no Peirce decomposition relative to a
+nontrivial idempotent, because it has no nontrivial idempotent.</p>
+<p><em>Proof.</em> The Peirce decomposition is defined relative to an idempotent of an associative product
+and presupposes a nontrivial one; the block has none. The definitions article states the
+construction for an associative unital product, and neither the associativity nor a nontrivial
+idempotent is available here.</p>
+<p><strong>Remark.</strong> The vanishing square makes the two levels of the idempotent theory collapse onto the
+trivial one. An idempotent of an alternating product cannot exist off the origin, because the
+square of every element vanishes; the block is the extreme case of the collapse, and the Peirce
+calculus, the ideals and the module theory built from idempotents have no entry point in it.
+These constructions belong to the plain product and to its blocks.</p>
+<h2 id="the-comparison-with-the-parent-product">The Comparison with the Parent Product</h2>
+<p><strong>Remark (the parent idempotents).</strong> The parent general plain bilinear product is associative and
+unital, and its idempotents are the elements $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$,
+a set of real dimension four that contains the trivial pair, the images of the degenerate roots
+$\xi=\pm i$; the family carries the left ideals, the direct sum decompositions and the Peirce
+decomposition (<em>Idempotents of the General Plain Algebra</em>). The block is the antisymmetric half of
+that product, and the comparison is the comparison of a one-point set with a family: the block
+keeps the trivial idempotent and loses every other, and it loses with them the entire idempotent
+calculus. The two sets are read against each other in the dictionary of the four general products,
+where the idempotent is one of the rows on which the four products separate
+(<em>Definitions for the Study of the 12 Algebraic Structures</em>, §9), and the four idempotent sets
+themselves are <em>The Zero Divisors and the Four General Products</em>,
+§<em>The Square, the Idempotents and the Units</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>For the antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$ the
+idempotent equation $\tilde\Pi\wedge\tilde\Pi=\tilde\Pi$ reduces to $0=\tilde\Pi$, because the
+block is alternating; the block has one idempotent, the origin, and no nontrivial idempotent. The
+unit $e_0$ of the ambient algebra is not an idempotent of the block, the block being a bracket. No
+orthogonal family, no primitive idempotent, no projection and no Peirce decomposition exists, and
+the only projector the block carries is the zero operator, from the origin. The comparison with
+the parent product is the comparison of the origin alone with the family
+$\tfrac12(e_0+\xi i)$ over the roots of $-1$, and the idempotent calculus — the left ideals, the
+direct sum decompositions, the Peirce decomposition — belongs to the parent and not to the block.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$</td>
+<td>the antisymmetric plain multiplication, the operation $\mathrm{APA}$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi\wedge\tilde\Pi=\tilde\Pi$</td>
+<td>the idempotent equation, equivalent to $0=\tilde\Pi$</td>
+</tr>
+<tr>
+<td>$\{0\}$</td>
+<td>the idempotent set of the block, the trivial idempotent alone</td>
+</tr>
+<tr>
+<td>$L_{\tilde\Pi}$</td>
+<td>the left multiplication operator of an idempotent, the zero operator at the origin</td>
+</tr>
+<tr>
+<td>$\tfrac12(e_0+\xi i)$</td>
+<td>the idempotents of the parent product, over the roots $\xi$ of $-1$, absent from the block</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), for the idempotent of a general product, the projection and the Peirce decomposition, and for the relativity of the definition</li>
+<li><em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.md</code>), for the operation, its alternation and its table</li>
+<li><em>Idempotents of the General Plain Algebra</em> (<code>articles_maths/idempotents-of-the-general-plain-algebra.md</code>), for the idempotent family of the parent product, against which the block's origin alone is read</li>
+<li><em>Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra</em> (<code>articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-plain-algebra.md</code>), for the roots of $+1$, which are the idempotents in the scaled sense</li>
+<li><em>Nilpotents of the Antisymmetric Plain Algebra</em> (<code>articles_maths/nilpotents-of-the-antisymmetric-plain-algebra.md</code>), for the other face of the same vanishing square</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

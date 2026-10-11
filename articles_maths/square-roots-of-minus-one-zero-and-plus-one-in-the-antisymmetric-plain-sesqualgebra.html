@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-plain-sesqualgebra"><strong>Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article solves the three central root equations of the antisymmetric plain sesqualgebra $\mathrm{APS}$,</p>
+<p>$$
+\tilde P\diamond\tilde P=-e_0,\qquad
+\tilde P\diamond\tilde P=0,\qquad
+\tilde P\diamond\tilde P=+e_0,
+$$</p>
+<p>for the product $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})$ of <em>Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions</em>.</p>
+<p>The answer is a <strong>parity</strong>, and it removes two thirds of the question. Every value of the block is a pure vector, so its scalar part vanishes; the values $-e_0$ and $+e_0$ are central with scalar part $-1$ and $+1$, so the two equations are contradictory for <strong>every</strong> element and the block has <strong>no root of $-1$ and no root of $+1$</strong>. The remaining equation, the root of $0$, asks for the elements of vanishing square: these are the nonzero square-zero elements, and they form a proper quadric in the block, the complex cone on the real unit sphere of the quaternion subspace. The definition of the root, of the index and of the square-zero element is <em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>Powers, the Square and the Roots</em> and §<em>The Nilpotent</em>; throughout this article the square is the square of $\diamond$ and, unqualified, <strong>root</strong> means a root in $\diamond$.</p>
+<p>The root of $0$ is one half of the nilpotent theory of the block, and it is developed as such in <em>Nilpotents of the Antisymmetric Plain Sesqualgebra</em>; the criterion for the vanishing of the diagonal and the quadric it traces are <em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>, and they are quoted here rather than recomputed. The three central values in the four general products are <em>The Square Roots of a Central Value in the Four General Products</em>, and the general classification of the square roots of an arbitrary element is <em>Square Roots of a General Element in the Antisymmetric Plain Sesqualgebra</em>; the present article is the central specialisation of that classification. The roots of $-1$ and $+1$ in the plain algebra, and the idempotent that the root of $+1$ halves, are <em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em> and <em>Idempotents of the General Plain Algebra</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$; an element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$. The projection $\operatorname{Vect}$ removes the scalar part and has kernel the centre $\mathbb{C}_{\mathbb{B}}$, and its image is the vector subspace $\operatorname{Vect}(\mathbb{B})$; the conjugations are ${}^{\natural}$, the coefficientwise $\bar{\cdot}$ and the star ${}^{*}$, and the parent sesquilinear product is $\tilde P\tilde Q^{*}$. The element $\tilde\Upsilon$ denotes a nilpotent of the biquaternion layer, and the square-zero element is the case of index two (<em>Conventions in Mathematics</em>, §<em>The nilpotent convention</em>).</p>
+<h2 id="the-equation-and-the-definition">The Equation and the Definition</h2>
+<p>A root of a central value belongs to a product, and the definition is stated for a general product in <em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>Powers, the Square and the Roots</em>.</p>
+<p><strong>Definition (root of a central value).</strong> Let $\star$ be a product on $\mathbb{B}$ and let $\lambda\in\mathbb{C}$. A <strong>root of $\lambda$ in $\star$</strong> is a nonzero element $\tilde P$ with</p>
+<p>$$
+\tilde P\star\tilde P=\lambda e_0 .
+$$</p>
+<p>The root of $0$ is a nonzero nilpotent of index two, and the roots of $+1$ halve into the idempotents, the map $\xi\mapsto\tfrac12(e_0+\xi)$ carrying a root $\xi$ of $+1$ to an idempotent.</p>
+<p>Written on the block, the equation is</p>
+<p>$$
+\tilde P\diamond\tilde P=\lambda e_0 ,
+\qquad
+\tilde P\diamond\tilde P=\operatorname{Vect}\bigl(\tilde P\tilde P^{*}\bigr).
+$$</p>
+<p>The left member is a <strong>value of the block</strong> and the right member is a <strong>central element</strong>, and that opposition is the whole content of the next section.</p>
+<h2 id="the-parity-obstruction">The Parity Obstruction</h2>
+<p><strong>Theorem (no root of $-1$ and no root of $+1$).</strong> For every $\tilde P$ the value $\tilde P\diamond\tilde P$ is a pure vector, and no pure vector is a nonzero central element. Consequently the equations $\tilde P\diamond\tilde P=-e_0$ and $\tilde P\diamond\tilde P=+e_0$ have no solution, and the block has neither a root of $-1$ nor a root of $+1$.</p>
+<p><em>Proof.</em> The value $\tilde P\diamond\tilde P$ lies in the image of the block, which is the vector subspace $\operatorname{Vect}(\mathbb{B})$, so its scalar part vanishes. The element $\lambda e_0$ with $\lambda\neq0$ is central with scalar part $\lambda$, and the centre meets the vector subspace at the origin; hence $\operatorname{Vect}(\tilde P\tilde P^{*})=\lambda e_0$ with $\lambda\neq0$ is impossible. The case $\lambda=0$ is not excluded by the parity and is treated in the next section.</p>
+<p>The obstruction is not the non-vanishing of the diagonal, and the distinction is worth keeping. A root of $+1$ would need the diagonal to be the central element $e_0$, and it is the <strong>centrality</strong> that fails, not the non-vanishing; the diagonal may vanish, and it does so on the quadric of the next section, and a vanishing diagonal is the root of $0$ and not of $\pm1$.</p>
+<p><strong>Remark (the reading against the parent).</strong> The same parity governs the two siblings. In the general plain sesquilinear product $\tilde P\tilde Q^{*}$ the square is $\tilde P\tilde P^{*}$, which is Hermitian and generally has a nonvanishing scalar part, so the central equations are not immediately contradictory; in the block the projection is applied before the equation, and the scalar part is removed. The three central values of the four general products, and the contrast of the plain product, whose roots of $-1$ fill a quadric and whose roots of $+1$ halve into the idempotents, are <em>The Square Roots of a Central Value in the Four General Products</em>.</p>
+<h2 id="the-roots-of-zero">The Roots of Zero</h2>
+<p>The equation $\tilde P\diamond\tilde P=0$ is the equation of the <strong>square-zero element</strong> of the block, and its solutions are the nonzero nilpotents.</p>
+<p><strong>Theorem (the roots of $0$).</strong> A nonzero element $\tilde P$ satisfies $\tilde P\diamond\tilde P=0$ if and only if the plain product $\tilde P\tilde P^{*}$ is central, that is if and only if</p>
+<p>$$
+\tilde P\tilde P^{*}\in\mathbb{C}_{\mathbb{B}}
+\iff
+\operatorname{Vect}\bigl(\tilde P\tilde P^{*}\bigr)=0 ,
+$$</p>
+<p>and the roots of $0$ are exactly the nonzero elements of this set. The set is the <strong>complex cone on the real unit sphere</strong> of the quaternion subspace,</p>
+<p>$$
+\bigl\{\tilde P\neq0:\ \tilde P\tilde P^{*}\ \text{central}\bigr\},
+$$</p>
+<p>of real dimension five, and it contains the centre, the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$.</p>
+<p><em>Proof.</em> By definition $\tilde P\diamond\tilde P=\operatorname{Vect}(\tilde P\tilde P^{*})$, which vanishes exactly when $\tilde P\tilde P^{*}$ is central. The identification of the set, its parametrisation and its dimension are <em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>, where the criterion is computed; the three subspaces are read from the real basis, on which the diagonal vanishes identically, $e_\mu\diamond e_\mu=0$.</p>
+<p><strong>Corollary (the three central values).</strong> The block carries the nonzero roots of $0$ and no other root of a central value. The three equations read</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>central value $\lambda$</th>
+<th>equation</th>
+<th>solutions in the block</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$-1$</td>
+<td>$\tilde P\diamond\tilde P=-e_0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$\tilde P\diamond\tilde P=0$</td>
+<td>the nonzero square-zero elements, a real five-dimensional cone</td>
+</tr>
+<tr>
+<td>$+1$</td>
+<td>$\tilde P\diamond\tilde P=+e_0$</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rows are the parity theorem and the theorem above; the middle row is quoted from the Specific Theory article named.</p>
+<p><strong>Remark (no idempotent by halving).</strong> The idempotents of the plain algebra are the halves of its roots of $+1$, $\tilde\Pi=\tfrac12(e_0+\xi)$. The construction needs the root $\xi$ of $+1$ and the unit $e_0$, and the block supplies neither: it has no root of $+1$ by the parity, and it has no unit by the absence recorded in <em>Norm and Invertibility in the Antisymmetric Plain Sesqualgebra</em>. The idempotents of the block are therefore not produced by the halving map, and they are computed directly in <em>Idempotents of the Antisymmetric Plain Sesqualgebra</em>: the only one is the origin.</p>
+<h2 id="the-comparison-with-the-other-products">The Comparison with the Other Products</h2>
+<p>The parity is shared by the antisymmetric blocks and not by the general products, and the root-of-$0$ set separates the three antisymmetric blocks one from another.</p>
+<h3 id="the-three-central-values-in-the-four-general-products">The Three Central Values in the Four General Products</h3>
+<p>In the four general products the equation $\tilde P\star\tilde P=\lambda e_0$ is not contradictory, and the roots are computed product by product in <em>The Square Roots of a Central Value in the Four General Products</em>. The plain product has a quadric of roots of $-1$ and the idempotents among its roots of $+1$; the natural product has the same two; the plain sesquilinear product has the Hermitian roots; and the quaternionic sesquilinear product has the family already quoted. The block is not among the four, and the parity that removes both signs is its own.</p>
+<h3 id="the-two-failing-siblings">The Two Failing Siblings</h3>
+<p>Among the antisymmetrisations the parity holds for all three, and the root-of-$0$ set distinguishes them. The bilinear sibling $\mathrm{APA}=\mathbf{P}\times\mathbf{Q}$ is <strong>alternating</strong>, so $\tilde P\star\tilde P=0$ for every element and the root-of-$0$ set is the whole space with the origin removed. The quaternionic sesquilinear sibling $\mathrm{AQS}=\mathbf{P}\times\overline{\mathbf{Q}}$ has the diagonal $\mathbf{P}\times\overline{\mathbf{P}}$, which vanishes exactly when the two real parts of $\mathbf{P}$ are linearly dependent; its diagonal reads the vector part alone and leaves the scalar part free, so its root-of-$0$ set is the union of the complex planes $\mathbb{C}e_0\oplus\mathbb{C}\mathbf v$ over the real directions $\mathbf v$, of real dimension six. The block's set is the smaller one, the real five-dimensional cone on the real unit sphere, because the block's projection constrains the scalar part as well.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>$\tilde P\star\tilde P$</th>
+<th>roots of $0$</th>
+<th>roots of $\pm1$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{APA}$</td>
+<td>$0$ identically</td>
+<td>all nonzero elements, real dimension eight</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathrm{AQA}$</td>
+<td>$0$ identically</td>
+<td>all nonzero elements, real dimension eight</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathrm{AQS}$</td>
+<td>$\mathbf{P}\times\overline{\mathbf{P}}$</td>
+<td>pairs with dependent real parts, real dimension six</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathrm{APS}$</td>
+<td>$\operatorname{Vect}(\tilde P\tilde P^{*})$</td>
+<td>the cone on the real unit sphere, real dimension five</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p>The bilinear and the quaternionic bilinear siblings $\mathrm{APA}$ and $\mathrm{AQA}$ are alternating, so their diagonal vanishes identically; the two sesquilinear siblings $\mathrm{APS}$ and $\mathrm{AQS}$ have a nonvanishing diagonal, and $\mathrm{AQS}$, whose diagonal reads the vector part alone, is the larger of the two sets, against the block, whose projection constrains the scalar part as well. The dimensions are the ones recorded for the sets in the sibling articles, and the block's is the one of <em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The equation $\tilde P\diamond\tilde P=\lambda e_0$ is contradictory for both nonzero central values, because every value of the block is a pure vector and $\pm e_0$ are central: the block has <strong>no root of $-1$ and no root of $+1$</strong>. The obstruction is the centrality and not the non-vanishing of the diagonal, and it is a parity of the scalar part.</p>
+<p>For $\lambda=0$ the roots are the nonzero elements with $\tilde P\tilde P^{*}$ central, that is the nonzero square-zero elements, and they form the complex cone on the real unit sphere of the quaternion subspace, of real dimension five, the centre, the real quaternion subspace and the anti-quaternion subspace lying inside it; the criterion and the quadric are <em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>, and the class is <em>Nilpotents of the Antisymmetric Plain Sesqualgebra</em>.</p>
+<p>The four general products have roots of the two nonzero central values, and their roots are <em>The Square Roots of a Central Value in the Four General Products</em>; the parity is shared with the three antisymmetric blocks, and the root-of-$0$ set separates them, the two alternating blocks filling the whole space and the quaternionic sesquilinear block carrying a real six-dimensional quadric against the block's real five-dimensional cone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\diamond\tilde P=\operatorname{Vect}(\tilde P\tilde P^{*})$</td>
+<td>the diagonal of the block, a pure vector</td>
+</tr>
+<tr>
+<td>$\lambda e_0$</td>
+<td>the central value, with $\lambda\in\mathbb{C}$</td>
+</tr>
+<tr>
+<td>root of $\lambda$ in $\diamond$</td>
+<td>a nonzero $\tilde P$ with $\tilde P\diamond\tilde P=\lambda e_0$</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde P^{*}\in\mathbb{C}_{\mathbb{B}}$</td>
+<td>the criterion for the vanishing of the diagonal, hence for a root of $0$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$</td>
+<td>the real quaternion, anti-quaternion and central subspaces, inside the square-zero set</td>
+</tr>
+<tr>
+<td>$\mathrm{AQA}$, $\mathrm{AQS}$</td>
+<td>the alternating and the quaternionic sesquilinear siblings, with the same parity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), §<em>Powers, the Square and the Roots</em> and §<em>The Nilpotent</em>, for the root of a central value and the square-zero element.</li>
+<li><em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em> (<code>articles_maths/the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.md</code>), for the criterion for the vanishing of the diagonal and the quadric it traces.</li>
+<li><em>Nilpotents of the Antisymmetric Plain Sesqualgebra</em> (<code>articles_maths/nilpotents-of-the-antisymmetric-plain-sesqualgebra.md</code>), for the square-zero class, its index and its conjugations.</li>
+<li><em>The Square Roots of a Central Value in the Four General Products</em> (<code>articles_maths/the-square-roots-of-a-central-value-in-the-four-general-products.md</code>), for the roots of $-1$, $0$ and $+1$ in the four general products.</li>
+<li><em>Square Roots of a General Element in the Antisymmetric Plain Sesqualgebra</em> (<code>articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-plain-sesqualgebra.md</code>), for the classification of which the three central values are the degenerate data.</li>
+<li><em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em> (<code>articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md</code>), for the same three equations in the plain product.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

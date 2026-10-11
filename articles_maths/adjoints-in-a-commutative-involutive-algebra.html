@@ -61,32 +61,32 @@
 <p>$$
 B(Fx,y) = B(x,F^{\dagger}y) \qquad \text{for all } x, y \in A .
 $$</p>
-<p><em>Proof.</em> The map $y\mapsto B(F\,\cdot\,,y)$ is $R$-linear, so it is an element of the dual of $A$; non-degeneracy identifies the dual with $A$ through $z\mapsto B(\,\cdot\,,z)$, so there is a unique $z$ with $B(Fx,y) = B(x,z)$ for all $x$; put $F^{\dagger}y = z$. The assignment is additive and $R$-linear in $F$ and in $y$ because $B$ is bilinear. $\square$</p>
+<p><em>Proof.</em> The map $y\mapsto B(F\,\cdot\,,y)$ is $R$-linear, so it is an element of the dual of $A$; non-degeneracy identifies the dual with $A$ through $z\mapsto B(\,\cdot\,,z)$, so there is a unique $z$ with $B(Fx,y) = B(x,z)$ for all $x$; put $F^{\dagger}y = z$. The assignment is additive and $R$-linear in $F$ and in $y$ because $B$ is bilinear.</p>
 <h3 id="the-adjoint-involution">The Adjoint Involution</h3>
 <p><strong>Theorem.</strong> The map ${}^{\dagger} : \operatorname{End}_R(A)\to\operatorname{End}_R(A)$ is additive, $R$-linear, of order two, and anti-multiplicative:</p>
 <p>$$
 (F+G)^{\dagger} = F^{\dagger}+G^{\dagger}, \qquad (\lambda F)^{\dagger} = \lambda F^{\dagger}, \qquad (FG)^{\dagger} = G^{\dagger}F^{\dagger}, \qquad (F^\dagger)^\dagger = F .
 $$</p>
 <p>Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{End}_R(A)$, in the sense of <em>Involutive Algebras</em>.</p>
-<p><em>Proof.</em> Additivity and $R$-linearity are the bilinearity of $B$; the order two is the reflexivity: $B(Fx,y) = B(x,F^{\dagger}y) = B((F^\dagger)^\dagger x,y)$ gives $(F^\dagger)^\dagger = F$ by non-degeneracy; the anti-multiplicativity is $B(FGx,y) = B(Gx,F^{\dagger}y) = B(x,G^{\dagger}F^{\dagger}y)$. $\square$</p>
+<p><em>Proof.</em> Additivity and $R$-linearity are the bilinearity of $B$; the order two is the reflexivity: $B(Fx,y) = B(x,F^{\dagger}y) = B((F^\dagger)^\dagger x,y)$ gives $(F^\dagger)^\dagger = F$ by non-degeneracy; the anti-multiplicativity is $B(FGx,y) = B(Gx,F^{\dagger}y) = B(x,G^{\dagger}F^{\dagger}y)$.</p>
 <h2 id="the-adjoint-involution-and-the-self-adjoint-part">The Adjoint Involution and the Self-Adjoint Part</h2>
 <h3 id="self-adjoint-and-skew-adjoint-operators">Self-Adjoint and Skew-Adjoint Operators</h3>
 <p><strong>Definition.</strong> An operator $F$ is <strong>self-adjoint</strong> when $F^{\dagger} = F$, <strong>skew-adjoint</strong> when $F^{\dagger} = -F$, and <strong>unitary</strong> when $F^{\dagger}F = FF^{\dagger} = 1$; the set of the self-adjoint operators is $E^+$ and the set of the skew-adjoint operators is $E^-$, with $E = \operatorname{End}_R(A)$.</p>
 <p><strong>Proposition.</strong> The self-adjoint operators form a Jordan algebra under $F\bullet G = \tfrac12(FG+GF)$ and the skew-adjoint operators form a Lie algebra under the commutator; $E = E^+\oplus E^-$ when $2$ is invertible, and the unitary operators form a group.</p>
-<p><em>Proof.</em> This is <em>Involutive Algebras</em> applied to the involution ${}^{\dagger}$ of $E$: the fixed set is closed under the symmetrised product, the anti-fixed under the commutator, and the units fixed up to the inverse form the unitary group. $\square$</p>
+<p><em>Proof.</em> This is <em>Involutive Algebras</em> applied to the involution ${}^{\dagger}$ of $E$: the fixed set is closed under the symmetrised product, the anti-fixed under the commutator, and the units fixed up to the inverse form the unitary group.</p>
 <h3 id="the-adjoint-of-a-multiplication">The Adjoint of a Multiplication</h3>
 <p><strong>Theorem.</strong> For every $a \in A$ the adjoint of the multiplication $L_a$ is the multiplication by the image of $a$ under the involution:
 $$
 L_a^{\dagger} = L_{\sigma(a)} .
 $$</p>
-<p><em>Proof.</em> $B(L_ax,y) = B(ax,y) = B(x,\sigma(a)y) = B(x,L_{\sigma(a)}y)$ for all $x,y$, so $L_{\sigma(a)}$ satisfies the defining relation of the adjoint, and the adjoint is unique. $\square$</p>
+<p><em>Proof.</em> $B(L_ax,y) = B(ax,y) = B(x,\sigma(a)y) = B(x,L_{\sigma(a)}y)$ for all $x,y$, so $L_{\sigma(a)}$ satisfies the defining relation of the adjoint, and the adjoint is unique.</p>
 <p><strong>Corollary (consistency with the induced involution).</strong> The restriction of the adjoint involution ${}^{\dagger}$ to the multiplication operators is the induced involution of <em>Involutions of the Multiplication Operators</em>: $L_a^{\dagger} = L_a^{*}$. Hence the fixed part of the multiplication algebra is the multiplication algebra of the fixed subalgebra, and the two constructions of the involution of $\operatorname{Mult}(A)$ coincide.</p>
 <p><strong>Corollary (normality).</strong> Every multiplication operator is normal with respect to ${}^{\dagger}$,
 $$
 L_aL_a^{\dagger} = L_{a\sigma(a)} = L_a^{\dagger}L_a ,
 $$
 because the algebra is commutative; the multiplication operators therefore lie in the <strong>normal</strong> part of $\operatorname{End}_R(A)$, and $L_a$ is self-adjoint exactly when $\sigma(a) = a$ and skew-adjoint exactly when $\sigma(a) = -a$.</p>
-<p><em>Proof.</em> $L_aL_a^{\dagger} = L_aL_{\sigma(a)} = L_{a\sigma(a)}$ and $L_a^{\dagger}L_a = L_{\sigma(a)}L_a = L_{\sigma(a)a}$, and $a\sigma(a) = \sigma(a)a$. $\square$</p>
+<p><em>Proof.</em> $L_aL_a^{\dagger} = L_aL_{\sigma(a)} = L_{a\sigma(a)}$ and $L_a^{\dagger}L_a = L_{\sigma(a)}L_a = L_{\sigma(a)a}$, and $a\sigma(a) = \sigma(a)a$.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (the coordinate algebra).</strong> Let $A = R^n$ with the standard pairing $B(x,y) = \sum_ix_iy_i$ and let $\sigma$ be an involution of $A$ permuting or negating the coordinates. Then the adjoint of an operator $F$, represented by a matrix, is $F^{\dagger} = \sigma F^{\mathsf{T}}\sigma^{-1}$, that is, the transpose composed with the coordinate involution on both sides. The multiplications $L_a$ for $a$ a diagonal matrix are diagonal, and $L_a^{\dagger} = L_{\sigma(a)}$ is the diagonal matrix with the permuted or negated diagonal, confirming the theorem.</p>
 <p><strong>Example (the polynomial ring).</strong> Let $A = R[x]$ with $\sigma(x) = -x$ and let $B$ be the $R$-bilinear pairing with $B(x^i,x^j) = \delta_{ij}$, reflexive and non-degenerate on the polynomials of bounded degree; then $L_x^{\dagger} = L_{-x} = -L_x$, so the multiplication by $x$ is skew-adjoint, and the multiplication by $x^2$ is self-adjoint. The fixed subalgebra of the multiplication operators is the multiplication by the even polynomials.</p>

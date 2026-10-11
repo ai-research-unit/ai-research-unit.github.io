@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Roots of a General Element in the Symmetric Plain Sesqualgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="square-roots-of-a-general-element-in-the-symmetric-plain-sesqualgebra"><strong>Square Roots of a General Element in the Symmetric Plain Sesqualgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ on the biquaternion space (<em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em>). This article determines the <strong>square roots</strong> of a general element: the elements $\tilde P$ with $\tilde P\star\tilde P = \tilde A$, for an arbitrary $\tilde A\in\mathbb{B}$.</p>
+<p>The whole classification follows from one structural fact. The square of an element is always in the <strong>centre</strong>: $\tilde P\star\tilde P = N(\tilde P)e_0$ with $N(\tilde P) = \sum_\mu\lvert P_\mu\rvert^{2}$ a real non-negative number (<em>Norm and Invertibility in the Symmetric Plain Sesqualgebra</em>). The equation $\tilde P\star\tilde P = \tilde A$ therefore has no solution unless $\tilde A$ is central, and when $\tilde A = \lambda e_0$ the equation is the scalar one $N(\tilde P) = \lambda$, solvable exactly when $\lambda$ is a non-negative real. The <strong>image of the square map</strong> is the real ray $\mathbb{R}_{\geq0}e_0$, and the square roots of a point of that ray form the norm quadric at the corresponding value. Non-central elements have no square root, the negative reals have none, and the non-real complex numbers have none.</p>
+<p><strong>Placement.</strong> The article is the fifth entry of the <em>Common Theory</em> section of the block, after the three central values and before the idempotents. It uses the product and the class of the introduction, the norm and the square map of <em>Norm and Invertibility in the Symmetric Plain Sesqualgebra</em>, and the three central values of <em>Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra</em>.</p>
+<p><strong>Boundaries.</strong> The product, its class and its placement are <em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em>; the relative definition of the square root and the general reduction are <em>Definitions for the Study of the 12 Algebraic Structures</em> and <em>Square Roots of a General Element in the General Plain Algebra</em>. The three central values of the block are <em>Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra</em>, and those of the parent are the article of the same title in the general plain algebra. Nothing topological and nothing metric appears.</p>
+<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the natural conjugation is $\tilde{Q}^{\natural} = \sum_\mu\varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon = (1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \sum_\mu\overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The product of the block is</p>
+<p>$$
+\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0, \qquad H(\tilde P,\tilde Q) = \sum_{\mu=0}^{3}P_\mu\overline{Q_\mu},
+$$</p>
+<p>and the norm is $N(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$. The <strong>centre</strong> of $\mathbb{B}$ is the line $\mathbb{C}e_0 = \mathbb{C}_{\mathbb{B}}$.</p>
+<h2 id="the-reduction">The Reduction</h2>
+<p><strong>Definition (recalled).</strong> A <strong>square root</strong> of $\tilde A\in\mathbb{B}$ in the block is an element $\tilde P$ with $\tilde P\star\tilde P = \tilde A$. The definition is that of <em>Definitions for the Study of the 12 Algebraic Structures</em>, read on the product $\star$; a square root of a central element is also a <strong>root</strong> when it is required to be nonzero, the distinction being the one of the article on the three central values.</p>
+<p><strong>Theorem (the square is central).</strong> For every $\tilde P\in\mathbb{B}$,</p>
+<p>$$
+\tilde P\star\tilde P = N(\tilde P)e_0, \qquad N(\tilde P) = \sum_{\mu=0}^{3}\lvert P_\mu\rvert^{2} \in \mathbb{R}_{\geq0}.
+$$</p>
+<p>Consequently the square map $\tilde P\mapsto\tilde P\star\tilde P$ has its image in the real ray $\mathbb{R}_{\geq0}e_0$, and the equation $\tilde P\star\tilde P = \tilde A$ has no solution unless $\tilde A$ lies in that ray.</p>
+<p><em>Proof.</em> The display is the square map of <em>Norm and Invertibility in the Symmetric Plain Sesqualgebra</em>: the product is the central value $H(\tilde P,\tilde P)e_0$ and $H(\tilde P,\tilde P) = \sum_\mu\lvert P_\mu\rvert^{2}$ is real and non-negative. The image statement is immediate from the display; for the necessity, if $\tilde P\star\tilde P = \tilde A$ then $\tilde A = N(\tilde P)e_0$, which is a central element with a real non-negative coefficient, so a non-central $\tilde A$ or a central $\tilde A$ with a non-real or negative coefficient is excluded.</p>
+<p><strong>Remark (why the obstruction is total).</strong> The square map is not surjective, and its failure is not a matter of one value: the image is a ray inside a complex line, so the square misses all of the vector subspace $\mathrm{Vect}(\mathbb{B})$, all of the imaginary central line $i\mathbb{R}e_0$, and the negative central ray. In the plain product the square map has a much larger image, and the description of that image is the classification of the parent, <em>Square Roots of a General Element in the General Plain Algebra</em>. The rank-one shape of the block is the reason for the difference, and it is the reason the block's classification is a single scalar equation.</p>
+<h2 id="the-image-of-the-square-map">The Image of the Square Map</h2>
+<p><strong>Theorem (the image is the real ray).</strong> The image of the square map of the block is exactly the set of the central elements with a real non-negative coefficient,</p>
+<p>$$
+\{\tilde P\star\tilde P : \tilde P\in\mathbb{B}\} = \mathbb{R}_{\geq0}e_0 = \{\lambda e_0 : \lambda\in\mathbb{R}, \lambda\geq0\}.
+$$</p>
+<p><em>Proof.</em> The inclusion is the reduction. For the converse, every positive value is attained, $N(\sqrt{\lambda}e_0) = \lambda$ for $\lambda\geq0$, and the value $0$ is attained at the origin.</p>
+<p><strong>Corollary (the square map is a quadric onto a ray).</strong> The square map is a positive definite quadratic map on the $8$-real-dimensional space $\mathbb{B}$ with a one-real-dimensional image; its fibres are the level sets $\{N = \lambda\}$ for $\lambda\geq0$, the fibre at $0$ being the single point $\{0\}$ and each fibre at a positive value being a quadric of real dimension seven.</p>
+<h2 id="the-roots-of-a-central-value">The Roots of a Central Value</h2>
+<p><strong>Theorem (the square roots of a central value).</strong> Let $\lambda\in\mathbb{C}$ and let $\tilde A = \lambda e_0$. The square roots of $\tilde A$ in the block are the elements of norm $\lambda$,</p>
+<p>$$
+\{\tilde P\in\mathbb{B} : N(\tilde P) = \lambda\},
+$$</p>
+<p>and the set is as follows: empty for $\lambda\notin\mathbb{R}$ and for $\lambda<0$; the single point $\{0\}$ for $\lambda = 0$; and the real quadric of real dimension seven for $\lambda>0$. Passing to the roots of the article on the three central values, the nonzero elements of the last set are the roots of $\lambda$, and the point $0$ is a square root of $0$ but not a root of $0$.</p>
+<p><em>Proof.</em> The reduction turns the equation into $N(\tilde P) = \lambda$, and the discussion of the three cases is the corollary of the reduction in <em>Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra</em>. The dimension is that of a positive level set of a definite quadratic form on an eight-real-dimensional space.</p>
+<p><strong>Corollary (the three central values).</strong> At $\lambda = -1$, $0$ and $+1$ the theorem reproduces the three sets of the article on the central values: the empty set, the empty set of roots (the point $0$ being excluded), and the norm-one quadric. The present article extends the trichotomy to every central value.</p>
+<h2 id="the-classification">The Classification</h2>
+<p>The square roots of a general element $\tilde A$ are collected in one table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the element $\tilde A$</th>
+<th>square roots of $\tilde A$</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>non-central, $\tilde A\notin\mathbb{C}e_0$</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>central with non-real coefficient, $\tilde A = \lambda e_0$, $\lambda\notin\mathbb{R}$</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>central with negative coefficient, $\tilde A = \lambda e_0$, $\lambda<0$</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>the origin, $\tilde A = 0$</td>
+<td>$\{0\}$</td>
+<td>one point</td>
+</tr>
+<tr>
+<td>central with positive coefficient, $\tilde A = \lambda e_0$, $\lambda>0$</td>
+<td>$\{N = \lambda\}$</td>
+<td>real dimension seven</td>
+</tr>
+</tbody>
+</table></div>
+<p>Only one row carries a genuine family, and the family is the orbit of any one of its elements under the group of the linear maps that preserve $H$; the roots of the central values of the previous article are the nonzero entries of the last row.</p>
+<p><strong>Corollary (the criterion for the existence of a square root).</strong> An element $\tilde A$ has a square root in the block exactly when it is a central element with a real non-negative coefficient, that is exactly when $\tilde A$ lies in the ray $\mathbb{R}_{\geq0}e_0$.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>A central value.</strong> The element $\tilde A = 3e_0$ has the square roots $\{\tilde P : N(\tilde P) = 3\}$, a real quadric of real dimension seven; the element $\tilde P = \sqrt{3}e_0$ is one of them, and so is $\tilde P = \sqrt{3}e_1$, since $N(\sqrt{3}e_1) = 3$.</p>
+<p><strong>A non-central value.</strong> The element $\tilde A = e_1$ has no square root, because the square of every element is central and $e_1$ is not. Likewise $\tilde A = ie_0$ has none, because the coefficient must be real.</p>
+<p><strong>A negative value.</strong> The element $\tilde A = -e_0$ has no square root, because a square is a non-negative multiple of $e_0$. This is the statement of the rootlessness of $-1$ read for the square map instead of the root set.</p>
+<p><strong>The origin.</strong> The element $\tilde A = 0$ has the single square root $0$; the block has no nonzero square-zero element, so the square map reaches the origin once. The element $e_0 + ie_1$ is not a square root of the origin, since $N(e_0 + ie_1) = 2$.</p>
+<h2 id="the-relation-to-the-idempotents-and-to-the-other-central-values">The Relation to the Idempotents and to the Other Central Values</h2>
+<p>The <strong>idempotents</strong> of the block are $0$ and $e_0$ (<em>Idempotents of the Symmetric Plain Sesqualgebra</em>). They are square roots of themselves: $0$ is the square root of $0$ at the origin, and $e_0$ is the square root of $e_0$ at the value $\lambda = 1$. No other element of the norm-one quadric is idempotent, so the idempotents are a two-point subset of the union of the fibres of the square map, and the fibre at $1$ is the quadric of the roots of $+1$.</p>
+<p>The <strong>three central values</strong> $\lambda = -1, 0, +1$ are the entries of the article <em>Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra</em>, and the present article is its extension to all values: the root sets there are the nonzero elements of the fibres here, and the fibre at the origin is the point $0$ that the root set of $0$ excludes.</p>
+<p>The <strong>parent</strong> is <em>Square Roots of a General Element in the General Plain Algebra</em>: there the reduction is not a single scalar equation but a system, and the square map has a rich image. The block's reduction is the collapse of that system to the norm, and the collapse is the reason the block's classification is a single row of a quadric.</p>
+<h2 id="summary">Summary</h2>
+<p>The square of an element of the symmetric plain sesqualgebra is central, $\tilde P\star\tilde P = N(\tilde P)e_0$ with $N(\tilde P) = \sum_\mu\lvert P_\mu\rvert^{2}\geq0$, so the equation of the square root $\tilde P\star\tilde P = \tilde A$ is solvable exactly when $\tilde A$ is a central element with a <strong>real non-negative</strong> coefficient, and then it reduces to the scalar equation $N(\tilde P) = \lambda$. The <strong>image of the square map</strong> is the real ray $\mathbb{R}_{\geq0}e_0$. The square roots of $\tilde A = \lambda e_0$ are empty for $\lambda\notin\mathbb{R}$ and for $\lambda<0$, the single point $\{0\}$ for $\lambda = 0$, and the norm quadric $\{N = \lambda\}$, a real quadric of real dimension seven, for $\lambda>0$. Non-central $\tilde A$ has no square root. The three central values of the previous article are the special cases $\lambda = -1$, $0$, $+1$; the idempotents $0$ and $e_0$ are the square roots of themselves; and the parent's classification, a system, collapses here to a single scalar equation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$</td>
+<td>the product of the block</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>the norm of the block, real and non-negative</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde P = N(\tilde P)e_0$</td>
+<td>the square map, always central</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\geq0}e_0$</td>
+<td>the image of the square map, the non-negative central ray</td>
+</tr>
+<tr>
+<td>$\{N = \lambda\}$</td>
+<td>the square roots of $\lambda e_0$, a quadric of real dimension seven for $\lambda>0$</td>
+</tr>
+<tr>
+<td>$\{0\}$</td>
+<td>the single square root of the origin</td>
+</tr>
+<tr>
+<td>$\varnothing$</td>
+<td>the square roots of a non-central, a non-real central or a negative central element</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$</td>
+<td>the centre of $\mathbb{B}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Symmetric Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.md</code>), for the product, its class and its placement.</li>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), for the relative definition of the square root and the root.</li>
+<li><em>Norm and Invertibility in the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/norm-and-invertibility-in-the-symmetric-plain-sesqualgebra.md</code>), for the norm and the square map.</li>
+<li><em>Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-symmetric-plain-sesqualgebra.md</code>), for the three central values, which are the special cases of the present classification.</li>
+<li><em>Square Roots of a General Element in the General Plain Algebra</em> (<code>articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md</code>), for the classification of the parent, which is a system and not a scalar equation.</li>
+<li><em>Idempotents of the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/idempotents-of-the-symmetric-plain-sesqualgebra.md</code>), for the idempotents, which are square roots of themselves.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

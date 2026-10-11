@@ -78,7 +78,7 @@ $$</p>
 e_k^{\text{source}} = i\,e_k^{\text{corpus}},
 $$</p>
 <p>which is the replacement that turns Hamilton's rule into the paper's: on vectors, the paper's product is the Pauli product $\mathbf{u}_1\cdot\mathbf{u}_2 + i\,\mathbf{u}_1\times\mathbf{u}_2$, with <strong>both</strong> the dot and the cross term of opposite sign to the corpus's Hamilton product. The same convention and the same caution are recorded in <em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em>, and the reader is referred there for the worked comparison. Two consequences matter here.</p>
-<p><strong>The dictionary.</strong> An element the paper writes as $(s,\mathbf{u})$ is the corpus's element $(s, i\mathbf{u})$. So the paper's vector coefficients $E_k$ enter the corpus's vector slots as $iE_k$. The paper's $e_1, e_2, e_3$ are the corpus's $ie_1, ie_2, ie_3$ — that is, the basis $e_0, x, y, z$ with $x = ie_1$ and so on, whose vector units square to $+e_0$, which is the basis of <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. The identification is exact and was recomputed.</p>
+<p><strong>The dictionary.</strong> An element the paper writes as $(s,\mathbf{u})$ is the corpus's element $(s, i\mathbf{u})$. So the paper's vector coefficients $E_k$ enter the corpus's vector slots as $iE_k$. The paper's $e_1, e_2, e_3$ are the corpus's $ie_1, ie_2, ie_3$ — that is, the basis $e_0, x, y, z$ with $x = ie_1$ and so on, whose vector units square to $+e_0$, which is the basis of <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>.</p>
 <p><strong>The norm.</strong> The paper's square modulus, $\mathcal{B}\bar{\mathcal{B}} = s^2 - \mathbf{u}^2$, is <strong>indefinite</strong> in this basis: the "unitary" biquaternions, $\mathcal{B}\bar{\mathcal{B}} = 1$, are those with $s^2 - \lvert\mathbf{u}\rvert^2 = 1$, not those on a sphere. In the corpus's Hamilton basis the same expression would read $s^2 + \lvert\mathbf{u}\rvert^2$, because the vector units square to $-e_0$ there; the sign is the dictionary's, and the caution is repeated here because the paper's Lorentz group is built on the indefinite form.</p>
 <p>The algebra is $\mathbb{C}\otimes\mathbb{H}$, isomorphic to the $2\times2$ complex matrices and therefore carrying zero divisors; the corpus's <em>Zero Divisors of the General Plain Algebra</em> and <em>The Null Cone</em> treat them, and the null field $F^2 = 0$ of the twisting section is one of them.</p>
 <h3 id="the-field-and-the-lorentz-action">The Field, and the Lorentz Action</h3>
@@ -192,7 +192,7 @@ $$</p>
 <p>The converse fails, and the counting says why. The six real quantities $\partial_t\mathbf{E}$ and $\partial_t\mathbf{H}$ enter the four equations (7.5) linearly. Assembling the coefficient matrix at a point and reducing it gives <strong>rank four</strong> at every one of $100$ random configurations, with the equations independent. Four independent equations for six unknowns leave a two-dimensional kernel: two directions of the time derivative of the field are unconstrained at every point of space-time, and a solution is therefore not determined by its spatial data.</p>
 <p>This is the sharpest statement the corpus can make about the paper, and it is the reason the phrase in the abstract — that the principle "presupposes the existence [of] more general nonlinear field equations" — is true in one direction only. The conservation principle does admit the wider system, and Maxwell sits inside it. The wider system does not select Maxwell, and it is not a field theory in Maxwell's sense, since it is not a determination of the evolution. What it is, exactly, is the energy–momentum balance of the field, and no more.</p>
 <h3 id="every-plane-wave-null-or-not">Every Plane Wave, Null or Not</h3>
-<p>The free directions have a visible consequence. Over $100$ random complex amplitudes $\mathbf{A}$ and random real frequency–wave-vector pairs $(\omega, \mathbf{k})$, the field</p>
+<p>The free directions have a visible consequence.</p>
 <p>$$
 F = \mathbf{A}\,e^{i(\omega t - \mathbf{k}\cdot\mathbf{r})}, \qquad \mathbf{A} \in \mathbb{C}^3, \quad \omega \in \mathbb{R}, \quad \mathbf{k} \in \mathbb{R}^3,
 $$</p>
@@ -274,8 +274,8 @@ $$</p>
 <p>The paper's section 11 asks when the energy flow of the field swirls. The twist is the rotor of the Umov–Poynting vector,</p>
 <p>$$
 \Omega = \nabla\times\mathbf{S} = \nabla\times[\mathbf{E}\,\mathbf{H}]
-        = (\nabla\cdot\mathbf{H} + \mathbf{H}\cdot\nabla)\mathbf{E}
-        - (\nabla\cdot\mathbf{E} + \mathbf{E}\cdot\nabla)\mathbf{H},
+= (\nabla\cdot\mathbf{H} + \mathbf{H}\cdot\nabla)\mathbf{E}
+- (\nabla\cdot\mathbf{E} + \mathbf{E}\cdot\nabla)\mathbf{H},
 \tag{11.1}
 $$</p>
 <p>the standard identity written with the paper's brackets missing; it is correct. The class it studies is the <strong>flat normal field</strong>: one whose electric and magnetic parts are equal in magnitude, perpendicular to each other, and confined to a fixed plane $P$. Such a field is a <strong>null</strong> field, $F^2 = 0$, and it is a plane wave's local shape. Its general form is the paper's (11.2),</p>
@@ -289,7 +289,6 @@ $$</p>
 \Omega = 2f\,(\mathbf{b}f_x - \mathbf{a}f_y),
 \tag{11.4}
 $$</p>
-<p>which was verified as an identity over $100$ random configurations to $1.8 \times 10^{-15}$: the twist depends on $f$ alone and not on the phase $\varphi$ at all.</p>
 <h3 id="where-the-claim-fails">Where the Claim Fails</h3>
 <p>Two things here are wrong.</p>
 <p><strong>The printed closed form of the field, (11.3), does not follow from (11.2).</strong> The paper writes "(11.2) … another way as $F = (\mathbf{a}e^{i\varphi} + \mathbf{b}e^{-i\varphi})f$". Substituting (11.2) gives instead</p>
@@ -315,7 +314,7 @@ $$</p>
 <p>The two pairs are independent: one fixes the propagation along the normal, the other is a Cauchy–Riemann pair for $\ln f$ and $\varphi$ in the plane, solvable precisely when $\ln f$ is planar-harmonic. Both can hold at once, which is why a Maxwell field with a twisting flow exists — for instance every field of the paper's own family $f = f_1(t+z)f_2(x,y)$ with $\varphi$ independent of $z$ and $(f_2, \varphi)$ a Cauchy–Riemann pair in the plane. The contrast the paper wanted is therefore not between linear and nonlinear solutions but between <em>planar-uniform</em> and <em>planar-varying</em> ones, and the corpus has not found a way to keep the paper's reading.</p>
 <p>Given the strength of that finding, the rest of the section's apparatus is recorded for completeness and not relied upon: the running wave $f_1(t\pm z)$, the reading of the twist as a vortex structure of the energy flow, and the conclusion that nonlinearity "manifests itself as the ability to form vortex structures" are all the paper's, and all rest on a dichotomy that the counterexample removes.</p>
 <h2 id="what-is-verified-and-what-is-not">What Is Verified and What Is Not</h2>
-<p>Every claim below was recomputed on $100$ random configurations by exact pointwise algebra, integer-free aside from the floating-point evaluation, in the fields and derivatives of the flat normal, plane-wave, Coulomb and Maxwell constructions used throughout the article. No external source was consulted for the mathematics.</p>
+<p>No external source was consulted for the mathematics.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>

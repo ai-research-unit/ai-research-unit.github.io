@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The reading group <em>Topology on the Introduction to the General Quaternionic Algebra of Biquaternions</em> reads the algebra through the <strong>general quaternionic bilinear form</strong> $\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})=\sum_\mu P_\mu Q_\mu$ and through the <strong>quaternionic product</strong> $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}$ that form polarises, whose algebra is <em>Introduction to the General Quaternionic Algebra of Biquaternions</em>. This article reads that group through the $2\times2$ matrix realization $\mathsf{M}_2$ of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, and it is the first of the two representation articles of the group; the companion <em>The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</em> repeats the reading on the left regular representation.</p>
 <p>The natural conjugation is the characteristic operation of the group, and in the model it is the <strong>adjugate</strong>: $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$. The quaternionic product is therefore the ordinary matrix product with the adjugate inserted in the first slot, $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q})$, and the general quaternionic bilinear form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\operatorname{adj}\mathsf{M}_2(\tilde{Q}))$. The determinant is the norm, so the whole element theory of the group is read off the determinant of the matrix.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; the quaternionic product is $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}$ and its norm is $N(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. All matrix claims are recomputed in the verification script of the pass.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; the quaternionic product is $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}$ and its norm is $N(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.</p>
 <h2 id="the-representation">The Representation</h2>
 <p><strong>Definition.</strong> The <strong>matrix realization</strong> is the isomorphism written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,</p>
 <p>$$
@@ -82,7 +82,7 @@ $$</p>
 <p>$$
 \operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\beta(\tilde{P},\tilde{Q}),\qquad \det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
 $$</p>
-<p><em>Proof.</em> The determinant is multiplicative and $\det\operatorname{adj}(A)=\det A$, so $\det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\det \mathsf{M}_2(\tilde{P})\det \mathsf{M}_2(\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. For the trace, $\operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\mathrm{Sc}(\tilde{P}\star\tilde{Q})$ by the trace identity, and the scalar part of $\tilde{P}^{\natural}\tilde{Q}$ is $P_0Q_0+(\mathbf{P},\mathbf{Q})=\beta(\tilde{P},\tilde{Q})$. $\square$</p>
+<p><em>Proof.</em> The determinant is multiplicative and $\det\operatorname{adj}(A)=\det A$, so $\det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\det \mathsf{M}_2(\tilde{P})\det \mathsf{M}_2(\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. For the trace, $\operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\mathrm{Sc}(\tilde{P}\star\tilde{Q})$ by the trace identity, and the scalar part of $\tilde{P}^{\natural}\tilde{Q}$ is $P_0Q_0+(\mathbf{P},\mathbf{Q})=\beta(\tilde{P},\tilde{Q})$.</p>
 <p><strong>The square and the idempotents.</strong> The square of the product is the scalar matrix of the determinant,</p>
 <p>$$
 \mathsf{M}_2(\tilde{Q}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})=\det \mathsf{M}_2(\tilde{Q})\,I=N(\tilde{Q})\,I ,
@@ -94,7 +94,7 @@ $$</p>
 <p>$$
 (A\star'B)\star'C-A\star'(B\star'C)=\operatorname{adj}(B)AC-\operatorname{adj}(BA)C=\bigl(\operatorname{adj}(B)A-\operatorname{adj}(BA)\bigr)C ,
 $$</p>
-<p>the failure of the transpose-conjugation to be multiplicative in the same order: the adjugate sends $BA$ to $\operatorname{adj}(A)\operatorname{adj}(B)$, whereas the first term carries the transposed $B$ past $A$ without reversing. This is the matrix form of the closed form $[\tilde{P},\tilde{Q},\tilde{R}]=(\tilde{Q}^{\natural}\tilde{P}-\tilde{P}^{\natural}\tilde{Q}^{\natural})\tilde{R}$ of the group, and the non-associativity of the product is the elementary fact that a transpose does not commute with a product.</p>
+<p>the failure of the transpose-conjugation to be multiplicative in the same order: the adjugate sends $BA$ to $\operatorname{adj}(A)\operatorname{adj}(B)$, whereas the first term carries the transposed $N$ past $A$ without reversing. This is the matrix form of the closed form $[\tilde{P},\tilde{Q},\tilde{R}]=(\tilde{Q}^{\natural}\tilde{P}-\tilde{P}^{\natural}\tilde{Q}^{\natural})\tilde{R}$ of the group, and the non-associativity of the product is the elementary fact that a transpose does not commute with a product.</p>
 <h2 id="the-general-quaternionic-bilinear-form-in-the-model">The General Quaternionic Bilinear Form in the Model</h2>
 <p><strong>Theorem (the adjugated trace pairing).</strong> For all biquaternions,</p>
 <p>$$
@@ -147,7 +147,7 @@ $$</p>
 =\begin{pmatrix}1&0\\0&1\end{pmatrix}=N(e_1)I,
 $$</p>
 <p>which is $\mathsf{M}_2(e_1\star e_1)$ with $N(e_1)=1$.</p>
-<p><strong>The form, entry by entry.</strong> The general quaternionic bilinear form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(X\operatorname{adj}Y)$, and at the pair $e_1,e_1$ the trace reads the unit, $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(e_1)\mathsf{M}_2(e_1))=\tfrac12\operatorname{Tr}I=1=B(e_1,e_1)$.</p>
+<p><strong>The form, entry by entry.</strong> The general quaternionic bilinear form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(X\operatorname{adj}Y)$, and at the pair $e_1,e_1$ the trace reads the unit, $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(e_1)\mathsf{M}_2(e_1))=\tfrac12\operatorname{Tr}I=1=N(e_1,e_1)$.</p>
 <p><strong>The four words.</strong> The twelve operations of the two chapters are built from four products, and each product is a word in the two matrices $X=\mathsf{M}_2(\tilde P)$ and $Y=\mathsf{M}_2(\tilde Q)$ and in the two involutions of the model, the adjugate and the conjugate transpose:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -189,7 +189,7 @@ $$</p>
 <p><strong>The four traces.</strong> The four products are four matrix traces, and the four forms of the algebra are read from them:</p>
 <p>$$
 \tfrac12\operatorname{Tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
-\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y)=B(\tilde P,\tilde Q),\qquad
+\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y)=N(\tilde P,\tilde Q),\qquad
 \tfrac12\operatorname{Tr}(XY^{\dagger})=H(\tilde P,\tilde Q),\qquad
 \tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y^{\dagger})=K(\tilde P,\tilde Q),
 $$</p>

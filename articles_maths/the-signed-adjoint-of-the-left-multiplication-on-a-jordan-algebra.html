@@ -70,13 +70,13 @@ $$</p>
 <p>$$
 \bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_{\alpha(a)} .
 $$</p>
-<p><em>Proof.</em> The associativity of the trace form says $T(L_ax,y) = T(x,L_ay)$, so $L_a^{\dagger} = L_a$; the grade involution is an isometry, $T(\alpha x,y) = T(x,\alpha y)$, so $\alpha^{\dagger} = \alpha$. Hence $(\ell^{\alpha}_a)^{\dagger} = (L_a\circ\alpha)^{\dagger} = \alpha^{\dagger}\circ L_a^{\dagger} = \alpha\circ L_a$. Since $\alpha$ is an automorphism, $\alpha L_a = L_{\alpha(a)}\alpha$, so $\alpha\circ L_a = L_{\alpha(a)}\circ\alpha = \ell^{\alpha}_{\alpha(a)}$. $\square$</p>
+<p><em>Proof.</em> The associativity of the trace form says $T(L_ax,y) = T(x,L_ay)$, so $L_a^{\dagger} = L_a$; the grade involution is an isometry, $T(\alpha x,y) = T(x,\alpha y)$, so $\alpha^{\dagger} = \alpha$. Hence $(\ell^{\alpha}_a)^{\dagger} = (L_a\circ\alpha)^{\dagger} = \alpha^{\dagger}\circ L_a^{\dagger} = \alpha\circ L_a$. Since $\alpha$ is an automorphism, $\alpha L_a = L_{\alpha(a)}\alpha$, so $\alpha\circ L_a = L_{\alpha(a)}\circ\alpha = \ell^{\alpha}_{\alpha(a)}$.</p>
 <h3 id="self-adjointness">Self-Adjointness</h3>
 <p><strong>Proposition.</strong> The signed left multiplication is self-adjoint exactly when its parameter is fixed by the grade involution:</p>
 <p>$$
 \bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_a \iff \alpha(a) = a .
 $$</p>
-<p><em>Proof.</em> The adjoint is $\ell^{\alpha}_{\alpha(a)}$; the two are equal exactly when $L_{\alpha(a)} = L_a$, which for a non-degenerate trace form holds exactly when $\alpha(a) = a$. $\square$</p>
+<p><em>Proof.</em> The adjoint is $\ell^{\alpha}_{\alpha(a)}$; the two are equal exactly when $L_{\alpha(a)} = L_a$, which for a non-degenerate trace form holds exactly when $\alpha(a) = a$.</p>
 <p><strong>Corollary.</strong> The signed left multiplication by an <strong>even</strong> element is self-adjoint and coincides with the unsigned left multiplication, $\ell^{\alpha}_a = L_a$ for $a$ even; for an odd element $\ell^{\alpha}_a = L_a\circ\alpha$ is the negative of the ordinary action conjugated by $\alpha$ on the argument, and it is not self-adjoint.</p>
 <h3 id="unitarity">Unitarity</h3>
 <p><strong>Theorem.</strong> The signed left multiplication is unitary with respect to the adjoint exactly when the unsigned left multiplication is an involution:</p>
@@ -84,14 +84,14 @@ $$</p>
 \bigl(\ell^{\alpha}_a\bigr)^{\dagger}\ell^{\alpha}_a = \ell^{\alpha}_a\bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \mathrm{id} \iff L_a^2 = \mathrm{id} ,
 $$</p>
 <p>that is, exactly when $a$ is a <strong>symmetry</strong>.</p>
-<p><em>Proof.</em> $\ell^{\alpha\dagger}_a\ell^{\alpha}_a = \ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a = L_{\alpha(a)}\alpha L_a\alpha = L_{\alpha(a)}L_{\alpha(a)}\alpha^2 = L_{\alpha(a)}^2$, and similarly $\ell^{\alpha}_a\ell^{\alpha\dagger}_a = L_a^2$; the two are the identity exactly when $L_a^2 = L_{\alpha(a)}^2 = \mathrm{id}$, which is the symmetry condition. $\square$</p>
+<p><em>Proof.</em> $\ell^{\alpha\dagger}_a\ell^{\alpha}_a = \ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a = L_{\alpha(a)}\alpha L_a\alpha = L_{\alpha(a)}L_{\alpha(a)}\alpha^2 = L_{\alpha(a)}^2$, and similarly $\ell^{\alpha}_a\ell^{\alpha\dagger}_a = L_a^2$; the two are the identity exactly when $L_a^2 = L_{\alpha(a)}^2 = \mathrm{id}$, which is the symmetry condition.</p>
 <h2 id="relation-to-the-signed-sandwich">Relation to the Signed Sandwich</h2>
 <p><strong>Theorem.</strong> The signed sandwich is the product of a signed and an unsigned one-sided action, $S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, and its adjoint is</p>
 <p>$$
 \bigl(S^{\alpha}_{a,b}\bigr)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}\rho_{\alpha(b)} ,
 $$</p>
 <p>which is the signed sandwich $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ after the symmetrisation, in agreement with <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>.</p>
-<p><em>Proof.</em> The anti-multiplicativity of the adjoint gives $(S^{\alpha}_{a,b})^{\dagger} = (\rho_b\ell^{\alpha}_a)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}L_{\alpha(b)}$; the symmetrisation of $\rho_b\ell^{\alpha}_a$ over the outer parameter is the signed sandwich $U_{a,b}\circ\alpha$, and its adjoint is $U_{\alpha(a),\alpha(b)}\circ\alpha$ by <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>. $\square$</p>
+<p><em>Proof.</em> The anti-multiplicativity of the adjoint gives $(S^{\alpha}_{a,b})^{\dagger} = (\rho_b\ell^{\alpha}_a)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}L_{\alpha(b)}$; the symmetrisation of $\rho_b\ell^{\alpha}_a$ over the outer parameter is the signed sandwich $U_{a,b}\circ\alpha$, and its adjoint is $U_{\alpha(a),\alpha(b)}\circ\alpha$ by <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>.</p>
 <p><strong>Corollary.</strong> The adjoint of the one-sided layer and the adjoint of the two-sided layer are the same rule at the images of the parameters; the signed left multiplication is thus the one-sided case of the signed sandwich adjoint, exactly as in the associative case of <em>The Signed Adjoint of the Left Multiplication on a Ring</em>.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (the identity grade involution).</strong> For $\alpha = \mathrm{id}$ the signed left multiplication is the unsigned one, $\ell^{\alpha}_a = L_a$, which is self-adjoint for every $a$; the unitarity condition is $L_a^2 = \mathrm{id}$, the symmetry condition, and it holds for the symmetries.</p>

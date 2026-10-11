@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilpotents of the Antisymmetric Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="nilpotents-of-the-antisymmetric-quaternionic-algebra"><strong>Nilpotents of the Antisymmetric Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The nilpotent is defined by an equation in which the product occurs, so it is a class of the
+product and not of the space (<em>Definitions for the Study of the 12 Algebraic Structures</em>,
+§<em>The Nilpotent</em>). The block of this article is the antisymmetric quaternionic multiplication
+$$
+\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)
+=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
+$$
+which is alternating and without a unit (<em>Introduction to the Antisymmetric Quaternionic Algebra
+of Biquaternions</em>). The article determines its nilpotent set and its index.</p>
+<p>The answer is total. The block is alternating, so $\tilde\Upsilon\diamond\tilde\Upsilon=0$ for
+every element, and therefore <strong>every element of $\mathbb{B}$ is a nilpotent of the block, of
+index two when it is nonzero and of index one at the origin</strong>; the square-zero set is the punctured
+space, and no element has index three or more. The nilpotent set of the block is thus the whole
+space, the largest set a nilpotent class can be, and it strictly contains the nilpotent cone of
+the parent quaternionic product, which is the zero-divisor cone $c=0$ and a proper cone. The
+square-zero set is at once the zero-divisor set of the block and the root set of $0$, and the two
+companion articles are cited. The higher powers are read with the left-nested bracketing of the
+definitions, since the block is not associative.</p>
+<h2 id="the-notion-and-its-product">The Notion and Its Product</h2>
+<p><strong>Definition (nilpotent of a product).</strong> Let $\star$ be a product on $\mathbb{B}$. An element
+$\tilde\Upsilon$ is <strong>nilpotent of $\star$</strong> when some power of it vanishes,
+$$
+\tilde\Upsilon^{\star k}=0 \quad\text{for some } k\geq1 ,
+$$
+the power being the left-nested reading
+$\tilde\Upsilon^{\star k}=\bigl(\cdots\bigl((\tilde\Upsilon\star\tilde\Upsilon)\star\tilde\Upsilon\bigr) \cdots\star\tilde\Upsilon\bigr)$ when the product is not associative. The least such $k$ is the
+<strong>index of nilpotency</strong>, and an element of index two, $\tilde\Upsilon\star\tilde\Upsilon=0$ with
+$\tilde\Upsilon\neq0$, is a <strong>square-zero element of $\star$</strong>. The origin is the trivial
+nilpotent.</p>
+<p>Throughout this article the product is the <strong>antisymmetric quaternionic multiplication</strong>
+$\diamond$, and unqualified, <em>nilpotent</em> means a nilpotent of the block. The nilpotents of the
+general plain product, to which the block is compared, are <em>Nilpotents of the General Plain
+Algebra</em>; the nilpotent cone of the parent quaternionic product is <em>The Nilpotents and the Zero
+Divisors of the Quaternionic Product</em>.</p>
+<h2 id="the-criterion">The Criterion</h2>
+<p><strong>Theorem (the criterion for the block).</strong> Every element of $\mathbb{B}$ is a nilpotent of the
+antisymmetric quaternionic multiplication. Equivalently, the nilpotent set of the block is the
+whole space, and the square-zero set is the punctured space.</p>
+<p><em>Proof.</em> The block is alternating, $\tilde\Upsilon\diamond\tilde\Upsilon=0$ for every element
+$\tilde\Upsilon$, by <em>Introduction to the Antisymmetric Quaternionic Algebra of
+Biquaternions</em>; the square therefore vanishes, so the element is nilpotent of index at most two,
+and it is of index exactly two when it is nonzero. The set of the elements whose square vanishes
+is the whole space, and the square-zero set, which excludes the origin, is the same space without
+it.</p>
+<p>The criterion is the alternation of the product read as an element statement, and it is met by
+every element, the origin included. There is no hypothesis on the element, no scalar part and no
+vector part to test: the equation $\tilde\Upsilon\diamond\tilde\Upsilon=0$ is an identity of the
+block and not a condition on $\tilde\Upsilon$.</p>
+<h2 id="the-index">The Index</h2>
+<p><strong>Proposition (index two, and no higher index).</strong> For every element $\tilde\Upsilon$ and every
+$k\geq2$ the left-nested power vanishes,
+$$
+\tilde\Upsilon^{\diamond k}=0 \quad (k\geq2),
+$$
+and the index of a nonzero element is exactly two while the index of the origin is one. The
+block carries no nilpotent of index three or more.</p>
+<p><em>Proof.</em> The left-nested square is $\tilde\Upsilon\diamond\tilde\Upsilon=0$; the third power is
+$\bigl(\tilde\Upsilon\diamond\tilde\Upsilon\bigr)\diamond\tilde\Upsilon =0\diamond\tilde\Upsilon=0$, and each higher power is formed from a vanishing power and therefore
+vanishes again. A nonzero element has a nonvanishing first power and a vanishing second power,
+so its index is exactly two; the origin has vanishing first power, so its index is one.</p>
+<p>The boundedness of the index is a second sense in which the block is extreme. In the general
+plain algebra the index is two or nothing, and an element is a nilpotent exactly on the pure
+isotropic cone; here the index is two for every nonzero element, and the membership test is
+vacuous. The block has the largest nilpotent set and the smallest positive index.</p>
+<h2 id="the-relation-to-the-zero-divisors">The Relation to the Zero Divisors</h2>
+<p><strong>Proposition (every nonzero nilpotent is a two-sided zero divisor).</strong> Every nonzero nilpotent
+$\tilde\Upsilon$ of the block satisfies $\tilde\Upsilon\diamond\tilde\Upsilon=0$ on both sides,
+so it lies in its own left annihilator and in its own right annihilator, and it is a two-sided
+zero divisor with itself as the annihilating partner.</p>
+<p><em>Proof.</em> The square is zero by the criterion, so the element is a partner of itself on the left
+and on the right; the partner is nonzero because the nilpotent is, and the definition of the
+zero divisor is met (<em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>The Zero
+Divisor and the Annihilator</em>). The annihilators of the two sides coincide by the alternation of
+the block (<em>Zero Divisors of the Antisymmetric Quaternionic Algebra</em>).</p>
+<p>The implication <em>nilpotent implies zero divisor</em> therefore holds for the block at every nonzero
+nilpotent: the nilpotent set is the whole space, the zero-divisor set is the punctured space, and
+the two differ by the origin alone, which is the trivial nilpotent and is excluded from the zero
+divisors by their definition. Of the four general products the implication holds for two and fails
+for one, at the plain sesquilinear product whose only square-zero element is the origin
+(<em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>The Nilpotent</em>); for the block it holds at every
+element other than the origin, the origin being the trivial nilpotent and not a zero divisor.</p>
+<h2 id="the-relation-to-the-idempotents">The Relation to the Idempotents</h2>
+<p><strong>Remark (the two classes meet at the origin).</strong> No nonzero element of the block is both an
+idempotent and a nilpotent. The idempotent set of the block is the origin alone
+(<em>Idempotents of the Antisymmetric Quaternionic Algebra</em>), so an idempotent of the block is the
+origin, which is the trivial nilpotent; and a nonzero nilpotent has vanishing square while a
+nonzero idempotent would satisfy $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi\neq0$. The two classes
+therefore meet at the origin and nowhere else.</p>
+<p>The statement is the sharp form of a general fact. In an associative unital product the
+idempotents and the nilpotents are disjoint outside the origin, and in the block they are the
+origin and the whole space, the two extremes that the definitions allow: the smallest idempotent
+set and the largest nilpotent set.</p>
+<h2 id="the-conjugations-and-the-matrix-model">The Conjugations and the Matrix Model</h2>
+<p><strong>Proposition (the conjugations preserve the nilpotent class).</strong> The natural conjugation
+${}^{\natural}$, the complex conjugation $\overline{\cdot}$ and the star ${}^{*}$ carry the
+nilpotent set of the block onto itself, the set being the whole space; and on the values of the
+block the natural conjugation acts as the negative of the identity,
+$$
+(\tilde P\diamond\tilde Q)^{\natural}=-\tilde P\diamond\tilde Q .
+$$</p>
+<p><em>Proof.</em> The nilpotent set is the whole space, so a bijection carries it onto itself. For the
+display, the natural conjugation is an anti-automorphism of the plain product, so
+$(\tilde P^{\natural}\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$; applying it to the two
+terms of the definition of the block gives
+$\tfrac12(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q)=-\tilde P\diamond\tilde Q$.</p>
+<p><strong>Remark (the matrix model).</strong> In either matrix model of the block the square of an element
+vanishes, so the matrix of the square is the zero matrix and the nilpotent set is the whole
+matrix space: $\mathsf{M}(\tilde P\diamond\tilde P)=\mathsf{M}(0)=0$ for every $\tilde P$, in the
+$2\times2$ model and in the $4\times4$ model alike (<em>The Antisymmetric Quaternionic Algebra in
+the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, <em>The Antisymmetric Quaternionic
+Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$</em>). The matrix models
+therefore carry no nilpotent condition beyond the vanishing of the square.</p>
+<h2 id="the-relation-to-the-parent-product">The Relation to the Parent Product</h2>
+<p><strong>Remark (the parent's nilpotent cone).</strong> The parent quaternionic product
+$\tilde P^{\natural}\tilde Q$ has the square $\tilde P^{\natural}\tilde P=N(\tilde P)e_0$, so
+its square-zero set is the norm cone $N(\tilde P)=0$, which is the zero-divisor cone, a proper
+cone of the space; its nilpotents are the square-zero elements of that cone, the index being two
+there by the central-square identity (<em>The Nilpotents and the Zero Divisors of the Quaternionic
+Product</em>). The block is the parent with the scalar part removed, and with the scalar part removed
+the square of the parent, which was a central reading of the norm, becomes the zero of the block:
+the parent's cone widens to the whole space, and the parent's index two is kept by every nonzero
+element. The block's nilpotent set strictly contains the parent's, and the difference is the
+complement of the cone, on which the parent's square is a nonzero central value and the block's
+square is zero.</p>
+<h2 id="summary">Summary</h2>
+<p>For the antisymmetric quaternionic multiplication $\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ every element is a nilpotent: the square
+$\tilde\Upsilon\diamond\tilde\Upsilon$ vanishes identically, the square-zero set is the punctured
+space, the index of a nonzero element is exactly two and no element has index three or more. The
+nilpotent set is therefore the whole space, and it strictly contains the nilpotent cone
+$N(\tilde\Upsilon)=0$ of the parent quaternionic product, which is the zero-divisor cone. Every
+nonzero nilpotent is a two-sided zero divisor with itself as the annihilating partner, and the
+implication <em>nilpotent implies zero divisor</em> holds for the block at every element other than the
+origin; the
+nilpotents and the idempotents meet at the origin alone, the idempotent set being the origin. The
+conjugations carry the class onto itself, and on the values of the block the natural conjugation
+acts as the negative of the identity; in either matrix model the square is the zero matrix.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$</td>
+<td>the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon\diamond\tilde\Upsilon=0$</td>
+<td>the criterion, the vanishing square of every element</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the nilpotent set of the block, the whole space</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>the index of nilpotency of every nonzero element</td>
+</tr>
+<tr>
+<td>$N(\tilde\Upsilon)=\sum_\mu\Upsilon_\mu^{2}$</td>
+<td>the norm of the parent product, whose vanishing cone is the parent's nilpotent set</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), for the nilpotent, the index of nilpotency, the square-zero element and the relativity of the definitions to the product</li>
+<li><em>Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md</code>), for the operation, its alternation and its table</li>
+<li><em>Zero Divisors of the Antisymmetric Quaternionic Algebra</em> (<code>articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra.md</code>), for the coincidence of the square-zero set with the zero-divisor set and for the annihilators</li>
+<li><em>Idempotents of the Antisymmetric Quaternionic Algebra</em> (<code>articles_maths/idempotents-of-the-antisymmetric-quaternionic-algebra.md</code>), for the idempotent set, the origin alone, which meets the nilpotents at the origin</li>
+<li><em>Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra</em> (<code>articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-quaternionic-algebra.md</code>), for the root set of $0$, which is the square-zero set</li>
+<li><em>Nilpotents of the General Quaternionic Algebra</em> (<code>articles_maths/nilpotents-of-the-general-quaternionic-algebra.md</code>), for the nilpotent cone of the parent product</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

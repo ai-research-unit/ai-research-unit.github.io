@@ -62,7 +62,7 @@
 \sigma_k = \sigma|_{\operatorname{Sym}^k(M)} : \operatorname{Sym}^k(M)\to\operatorname{Sym}^k(M), \qquad \sigma_k(v_1\cdots v_k) = \sigma_M(v_1)\cdots\sigma_M(v_k).
 $$</p>
 <p><strong>Theorem.</strong> $\sigma_k$ is well defined, $R$-linear, and an involution of the power: $\sigma_k^2 = \mathrm{id}$. The map $\sigma_k$ is the $k$-th symmetric power of the map $\sigma_M$, and the induced involution $\sigma$ of the symmetric algebra is the direct sum of the $\sigma_k$.</p>
-<p><em>Proof.</em> The products of $k$ elements span the power and the relations are preserved by the multiplicativity of the induced involution, so $\sigma$ restricts as displayed; $\sigma_k^2 = \mathrm{id}$ is the restriction of $\sigma^2 = \mathrm{id}$; the direct-sum statement is the degree preservation. $\square$</p>
+<p><em>Proof.</em> The products of $k$ elements span the power and the relations are preserved by the multiplicativity of the induced involution, so $\sigma$ restricts as displayed; $\sigma_k^2 = \mathrm{id}$ is the restriction of $\sigma^2 = \mathrm{id}$; the direct-sum statement is the degree preservation.</p>
 <p><strong>Corollary.</strong> The involution $\sigma_k$ is a linear map of the power of order two, so the power splits as the direct sum of its eigenvalue-one and eigenvalue-minus-one parts when $2$ is invertible:</p>
 <p>$$
 \operatorname{Sym}^k(M) = \operatorname{Sym}^k(M)^+ \oplus \operatorname{Sym}^k(M)^- .
@@ -75,13 +75,13 @@ $$</p>
 \sigma_k(m) = (-1)^{j}m, \qquad j = \#\{i : v_i \in M^-\},
 $$</p>
 <p>the number of the factors drawn from the anti-fixed part. Hence a monomial is symmetric exactly when it has an even number of anti-fixed factors, and skew exactly when the number is odd.</p>
-<p><em>Proof.</em> $\sigma_M(v_i) = v_i$ for a factor in $M^+$ and $\sigma_M(v_i) = -v_i$ for a factor in $M^-$, so $\sigma_M(v_1)\cdots\sigma_M(v_k) = (-1)^j v_1\cdots v_k$. $\square$</p>
+<p><em>Proof.</em> $\sigma_M(v_i) = v_i$ for a factor in $M^+$ and $\sigma_M(v_i) = -v_i$ for a factor in $M^-$, so $\sigma_M(v_1)\cdots\sigma_M(v_k) = (-1)^j v_1\cdots v_k$.</p>
 <p><strong>Corollary (dimension count).</strong> Let $M$ be free with $p$ fixed and $q$ anti-fixed basis elements, so $M = M^+\oplus M^-$ with $\dim M^+ = p$, $\dim M^- = q$. The <strong>character</strong> of $\sigma_k$ and the two generating functions are</p>
 <p>$$
 \sum_{k\ge0}\operatorname{tr}(\sigma_k)\,t^k = \frac{1}{(1-t)^p(1+t)^q}, \qquad
 \sum_{k\ge0}\dim\operatorname{Sym}^k(M)^\pm\,t^k = \frac12\left(\frac{1}{(1-t)^{p+q}} \pm \frac{1}{(1-t)^p(1+t)^q}\right).
 $$</p>
-<p><em>Proof.</em> A monomial $u^a v^b$ with $u$ in the fixed basis (degree $a$) and $v$ in the anti-fixed basis (degree $b$) has eigenvalue $(-1)^b$, so the trace generating function sums $(-1)^b t^{a+b}$ over the monomials, which is $\bigl(\sum_a t^a\bigr)^p\bigl(\sum_b(-t)^b\bigr)^q = 1/((1-t)^p(1+t)^q)$. The fixed and the skew parts are the $\pm1$-eigenspaces, with the projectors $\tfrac12(\mathrm{id}\pm\sigma)$, giving the second formula from the first and the total generating function $1/(1-t)^{p+q}$. $\square$</p>
+<p><em>Proof.</em> A monomial $u^a v^b$ with $u$ in the fixed basis (degree $a$) and $v$ in the anti-fixed basis (degree $b$) has eigenvalue $(-1)^b$, so the trace generating function sums $(-1)^b t^{a+b}$ over the monomials, which is $\bigl(\sum_a t^a\bigr)^p\bigl(\sum_b(-t)^b\bigr)^q = 1/((1-t)^p(1+t)^q)$. The fixed and the skew parts are the $\pm1$-eigenspaces, with the projectors $\tfrac12(\mathrm{id}\pm\sigma)$, giving the second formula from the first and the total generating function $1/(1-t)^{p+q}$.</p>
 <h2 id="the-decomposition">The Decomposition</h2>
 <h3 id="the-two-eigenspaces">The Two Eigenspaces</h3>
 <p><strong>Theorem.</strong> With $M = M^+\oplus M^-$ and $2$ invertible, the symmetric and the skew parts of the power are</p>
@@ -90,14 +90,14 @@ $$</p>
 \operatorname{Sym}^k(M)^- = \operatorname{span}_R\{v_1\cdots v_k : \#\{i : v_i\in M^-\} \ \text{odd}\},
 $$</p>
 <p>and the projections onto the two summands are $\tfrac12(\mathrm{id}\pm\sigma_k)$. The symmetric part is spanned by the products of the fixed elements together with the products with pairs of anti-fixed elements, and the skew part is spanned by the products with an odd number of anti-fixed factors.</p>
-<p><em>Proof.</em> The eigenvalue formula gives the spanning sets, and the projectors split the identity by $\sigma_k^2 = \mathrm{id}$. $\square$</p>
+<p><em>Proof.</em> The eigenvalue formula gives the spanning sets, and the projectors split the identity by $\sigma_k^2 = \mathrm{id}$.</p>
 <h3 id="the-sum-over-the-degrees">The Sum Over the Degrees</h3>
 <p><strong>Theorem.</strong> The fixed subalgebra of the symmetric algebra is the direct sum of the symmetric parts of the powers,</p>
 <p>$$
 \operatorname{Sym}(M)^\sigma = \bigoplus_{k\ge0}\operatorname{Sym}^k(M)^+ ,
 $$</p>
 <p>and it is a graded subalgebra of $\operatorname{Sym}(M)$; the skew elements form the complementary graded submodule $\bigoplus_k\operatorname{Sym}^k(M)^-$, which is not a subalgebra but satisfies $\operatorname{Sym}(M)^-\cdot\operatorname{Sym}(M)^-\subseteq\operatorname{Sym}(M)^+$.</p>
-<p><em>Proof.</em> The induced involution preserves the degree, so the fixed set is the sum of the fixed sets of the pieces; the fixed set of an algebra automorphism is a subalgebra; the products of two skew monomials have an even number of anti-fixed factors, hence are fixed. $\square$</p>
+<p><em>Proof.</em> The induced involution preserves the degree, so the fixed set is the sum of the fixed sets of the pieces; the fixed set of an algebra automorphism is a subalgebra; the products of two skew monomials have an even number of anti-fixed factors, hence are fixed.</p>
 <p><strong>Corollary.</strong> The fixed subalgebra is the commutant of the involution inside the symmetric algebra: $\operatorname{Sym}(M)^\sigma$ is generated by $M^+$ and by the products of pairs of elements of $M^-$, matching the description of <em>The Symmetric Algebra of a Module with an Involution</em>.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (the swapped basis).</strong> Let $M = R^2$ with basis $e_1, e_2$ and $\sigma_M$ exchanging them, and let $2$ be invertible. Then $M^+ = R(e_1+e_2)$ and $M^- = R(e_1-e_2)$, so $p = q = 1$. The character is $1/((1-t)(1+t)) = 1/(1-t^2)$, giving $\operatorname{tr}(\sigma_k) = 1$ for even $k$ and $0$ for odd $k$; the generating functions are $\tfrac12\bigl(1/(1-t)^2 \pm 1/(1-t^2)\bigr)$. In degree two, $\operatorname{Sym}^2(M)$ has basis $e_1^2, e_1e_2, e_2^2$, the symmetric part is spanned by $e_1e_2$ and $e_1^2+e_2^2$, and the skew part by $e_1^2-e_2^2$; the dimensions $2$ and $1$ agree with the generating function, whose $t^2$-coefficient is $\tfrac12(3\pm1)$.</p>
