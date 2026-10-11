@@ -5,7 +5,7 @@
 
 This article builds the model of the hyperbolic plane on the split-quaternion algebra. It presents the hyperboloid model on the timelike sheet of the vector subspace, records the unit condition and the two-sheeted structure, identifies the upper half-plane and the disc as models of the sheet in which the group acts by fractional linear transformations, classifies the isometries, and relates the model to the rotations and the Lorentz group of the system and to the hyperbolic geometry of Part II.
 
-The split-quaternion algebra, its vector subspace $V$, its split-quaternion norm is assumed from *Split-Quaternion Algebra*; the roots of $\xi^2 = -1$ and the conjugacy-class description of the root set from *Split-Quaternion Roots of Minus One*; the adjoint action, the double cover and the elliptic, hyperbolic and parabolic one-parameter subgroups from *Split-Quaternion Rotations and the Lorentz Group*; and the induced metrics on the hyperboloids from *Split-Quaternion Geometry*, which supplies the geometry of the two forms. The hyperbolic plane itself, its models, its geodesics and its isometry classification are those of *Hyperbolic Geometry* and *Hyperbolic Rotations*; this article does not rebuild them, it realises them. Nothing physical is invoked.
+The split-quaternion algebra, its vector subspace $V$, its split-quaternion norm is assumed from *Split-Quaternion Algebra*; the roots of $\tilde\xi^2 = -1$ and the conjugacy-class description of the root set from *Split-Quaternion Roots of Minus One*; the adjoint action, the double cover and the elliptic, hyperbolic and parabolic one-parameter subgroups from *Split-Quaternion Rotations and the Lorentz Group*; and the induced metrics on the hyperboloids from *Split-Quaternion Geometry*, which supplies the geometry of the two forms. The hyperbolic plane itself, its models, its geodesics and its isometry classification are those of *Hyperbolic Geometry* and *Hyperbolic Rotations*; this article does not rebuild them, it realises them. Nothing physical is invoked.
 
 ## The Hyperboloid Model
 
@@ -31,7 +31,7 @@ and the isometry group is $\mathrm{PSL}_2(\mathbb{R})$, acting by the adjoint ac
 
 **Proof.** The induced metric and its curvature are (*Split-Quaternion Geometry*, §*The Unit Hyperboloids and Their Metrics*), where it is also shown that the induced form is definite on the sheet and that the geodesics are the central sections. The distance formula is the standard one for a hyperboloid model: for $v = w$ both sides are $1 = \cosh 0$, and for distinct points in the same sheet $B(v,w) \geq 1$ because the sheet lies in the closed half-space $q_1 \geq 1$ and $B(e_1,w) = w_1 \geq 1$, with the general case following by transitivity. The group action is the double cover of *Split-Quaternion Rotations and the Lorentz Group*, §*The Double Cover of $\mathrm{SO}^{+}(2,1)$*, and the identification of the quotient with the hyperbolic plane is *Hyperbolic Geometry*.
 
-The model is the hyperboloid model of the hyperbolic plane, and the vector space in which it sits is the vector subspace of the algebra, of signature $(2,1)$; the points of the model are precisely the solutions of $\xi^2 = -1$ in the sheet, by *Split-Quaternion Roots of Minus One*, §*The Equation and the Reduction to the Vector Subspace*.
+The model is the hyperboloid model of the hyperbolic plane, and the vector space in which it sits is the vector subspace of the algebra, of signature $(2,1)$; the points of the model are precisely the solutions of $\tilde\xi^2 = -1$ in the sheet, by *Split-Quaternion Roots of Minus One*, §*The Equation and the Reduction to the Vector Subspace*.
 
 ## The Unit Condition and the Two-Sheeted Structure
 
@@ -39,7 +39,7 @@ The model is the hyperboloid model of the hyperbolic plane, and the vector space
 
 **Proof.** The two sheets are the intersections with the half-spaces $q_1>0$ and $q_1<0$, each diffeomorphic to a plane by *Split-Quaternion Roots of Minus One*, §*The Equation and the Reduction to the Vector Subspace*. Both $v \mapsto -v$ and the conjugation reverse the sign of $q_1$; the conjugation reverses it because the fixed-point decomposition $v = \operatorname{Sc}(v) + \operatorname{Vec}(v)$ with $\bar{v} = -v$ for $v \in V$ by (*Split-Quaternion Algebra*, §*The Two Eigenspaces*). The adjoint action of $e_2$ sends $e_1$ to $-e_1$ by the computation of *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*, and has norm $-1$; the connected group $\mathrm{SO}^{+}(2,1)$ cannot exchange the two sheets because it cannot leave the connected component of the identity in the full isometry group, whose other components exchange the sheets.
 
-**Corollary (The Unit Condition Selects an Orientation).** A hyperbolic-plane point on the split-quaternions is a split-quaternion $\xi$ with $\xi \in V$ and $N(\xi) = 1$ together with the choice of a sheet; the choice of sheet is the choice of orientation of the plane, and the group $\mathrm{PSL}_2(\mathbb{R})$ acts on each sheet.
+**Corollary (The Unit Condition Selects an Orientation).** A hyperbolic-plane point on the split-quaternions is a split-quaternion $\tilde\xi$ with $\tilde\xi \in V$ and $N(\tilde\xi) = 1$ together with the choice of a sheet; the choice of sheet is the choice of orientation of the plane, and the group $\mathrm{PSL}_2(\mathbb{R})$ acts on each sheet.
 
 **Proof.** Immediate from the two-sheeted structure and the transitivity of $\mathrm{PSL}_2(\mathbb{R})$ on each sheet.
 
@@ -49,13 +49,13 @@ The unit condition is therefore not simply $N = 1$ but "$N = 1$ and one sheet", 
 
 An explicit map identifies the sheet with the upper half-plane.
 
-**Definition.** For $\xi = q_1 e_1 + q_2 e_2 + q_3 e_3$ in the timelike sheet define
+**Definition.** For $\tilde\xi = q_1 e_1 + q_2 e_2 + q_3 e_3$ in the timelike sheet define
 
 $$
-\zeta(\xi) = \frac{q_2 - q_1}{q_3 + i} = \frac{(q_2-q_1)(q_3-i)}{1 + q_3^2} \in \mathbb{C},
+\zeta(\tilde\xi) = \frac{q_2 - q_1}{q_3 + i} = \frac{(q_2-q_1)(q_3-i)}{1 + q_3^2} \in \mathbb{C},
 $$
 
-the ratio of the components of a complex eigenvector of $\xi$ for the eigenvalue $i$.
+the ratio of the components of a complex eigenvector of $\tilde\xi$ for the eigenvalue $i$.
 
 **Theorem (The Eigenline Model).** The map $\zeta$ is a bijection from the timelike sheet onto the upper half-plane
 
@@ -66,13 +66,13 @@ $$
 with
 
 $$
-\operatorname{Im}\zeta(\xi) = \frac{q_1 - q_2}{1 + q_3^2} > 0,
+\operatorname{Im}\zeta(\tilde\xi) = \frac{q_1 - q_2}{1 + q_3^2} > 0,
 $$
 
 and it is equivariant: for $g \in \mathrm{SL}_2(\mathbb{R})$ acting by the fractional linear transformation $A \mapsto (\alpha A + \beta)/(\gamma A + \delta)$,
 
 $$
-\zeta(g \xi g^{-1}) = \frac{\alpha\,\zeta(\xi) + \beta}{\gamma\,\zeta(\xi) + \delta}.
+\zeta(g \tilde\xi g^{-1}) = \frac{\alpha\,\zeta(\tilde\xi) + \beta}{\gamma\,\zeta(\tilde\xi) + \delta}.
 $$
 
 The metric on the sheet is carried to the hyperbolic metric of the half-plane, $\mathrm{d}s^2 = |\mathrm{d}\zeta|^2/(\operatorname{Im}\zeta)^2$, and the two-sheeted structure corresponds to the pair consisting of the upper and the lower half-planes.
@@ -83,7 +83,7 @@ $$
 M(A) = \begin{pmatrix} a/a' & -(a^2+a'^2)/a' \\ 1/a' & -a/a' \end{pmatrix},
 $$
 
-which is traceless with determinant $1$; the element $\xi \in V$ associated with $M(A)$ then has $N(\xi) = \det M(A) = 1$ and $q_1 > 0$, so it lies in the sheet, and $(A,1)$ is an eigenvector of $\xi$ for $i$, so $\zeta(\xi) = A$. The two constructions are inverse, so $\zeta$ is a bijection. *Equivariance.* The eigenvector of $g\xi g^{-1}$ for the eigenvalue $i$ is $g$ applied to the eigenvector of $\xi$, and the action of $g$ on the ratios of components of eigenvectors is exactly the fractional linear transformation displayed. *The metric.* The metric $-B$ on the sheet is invariant under the adjoint action, and the half-plane metric is invariant under the fractional linear action; the two metrics are proportional and agree at the point $\zeta = i$, so they agree.
+which is traceless with determinant $1$; the element $\tilde\xi \in V$ associated with $M(A)$ then has $N(\tilde\xi) = \det M(A) = 1$ and $q_1 > 0$, so it lies in the sheet, and $(A,1)$ is an eigenvector of $\tilde\xi$ for $i$, so $\zeta(\tilde\xi) = A$. The two constructions are inverse, so $\zeta$ is a bijection. *Equivariance.* The eigenvector of $g\tilde\xi g^{-1}$ for the eigenvalue $i$ is $g$ applied to the eigenvector of $\tilde\xi$, and the action of $g$ on the ratios of components of eigenvectors is exactly the fractional linear transformation displayed. *The metric.* The metric $-B$ on the sheet is invariant under the adjoint action, and the half-plane metric is invariant under the fractional linear action; the two metrics are proportional and agree at the point $\zeta = i$, so they agree.
 
 The formula for $\zeta$ is the explicit form of the general statement of *Split-Quaternion Roots of Minus One*, §*The Root Set as a Homogeneous Space*: the root set is the homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$, whose two components are the two copies of the hyperbolic plane, here presented as the upper and lower half-planes.
 
@@ -131,9 +131,9 @@ The three types correspond to the three classes of the adjoint action of the uni
 
 **Proof.** The classification of elements of $\mathrm{SL}_2(\mathbb{R})$ by trace is the standard one, treated in *Hyperbolic Geometry* and in *Hyperbolic Rotations*; the translation to the vector subspace is the fixed-direction computation of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups* and §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*.
 
-**Corollary (The Isometry Types and the Roots of $\pm 1$).** The elliptic one-parameter subgroups are generated by the solutions of $\xi^2 = -1$, which are the points of the sheet; the hyperbolic subgroups are generated by the solutions of $\eta^2 = +1$ lying in $V$, which are spacelike vectors of norm $-1$ and not points of the sheet; the parabolic subgroups are generated by the nilpotents.
+**Corollary (The Isometry Types and the Roots of $\pm 1$).** The elliptic one-parameter subgroups are generated by the solutions of $\tilde\xi^2 = -1$, which are the points of the sheet; the hyperbolic subgroups are generated by the solutions of $\eta^2 = +1$ lying in $V$, which are spacelike vectors of norm $-1$ and not points of the sheet; the parabolic subgroups are generated by the nilpotents.
 
-**Proof.** The three statements are the classification of the one-parameter subgroups, all three types being treated in the corollary of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*, together with the identification of the sheet with the solutions of $\xi^2 = -1$.
+**Proof.** The three statements are the classification of the one-parameter subgroups, all three types being treated in the corollary of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*, together with the identification of the sheet with the solutions of $\tilde\xi^2 = -1$.
 
 ## The Relation to the Rotations and the Lorentz Group
 
@@ -171,11 +171,11 @@ in the disc model they are obtained from these by the Cayley transform, and in t
 
 ## Summary
 
-The hyperbolic plane is realised on the split-quaternion algebra by the timelike sheet $\mathbb{H}^{+}$ of the hyperboloid $N = 1$ in the vector subspace, with the metric $-B$ of constant curvature $-1$, the distance given by $\cosh d(v,w) = B(v,w)$, and the isometry group $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ acting by the adjoint action. The sheet is the homogeneous space $\mathrm{PSL}_2(\mathbb{R})/SO(2)$, the points of the model are the solutions of $\xi^2 = -1$ lying in the sheet, and the geodesics are the central sections.
+The hyperbolic plane is realised on the split-quaternion algebra by the timelike sheet $\mathbb{H}^{+}$ of the hyperboloid $N = 1$ in the vector subspace, with the metric $-B$ of constant curvature $-1$, the distance given by $\cosh d(v,w) = B(v,w)$, and the isometry group $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ acting by the adjoint action. The sheet is the homogeneous space $\mathrm{PSL}_2(\mathbb{R})/SO(2)$, the points of the model are the solutions of $\tilde\xi^2 = -1$ lying in the sheet, and the geodesics are the central sections.
 
 The unit condition is $N = 1$ together with a choice of sheet; the level set has two sheets, exchanged by $v \mapsto -v$, by the conjugation and by any unit of norm $-1$, and preserved by the identity component of the isometry group. The two sheets correspond to the upper and the lower half-planes.
 
-The models are explicit. The eigenline map $\zeta(\xi) = (q_2-q_1)/(q_3+i)$ is a bijection from the sheet onto the upper half-plane with inverse given by the traceless determinant-one element $M(A)$, and it intertwines the adjoint action with the fractional linear action of $\mathrm{SL}_2(\mathbb{R})$; the metric becomes $|\mathrm{d}\zeta|^2/(\operatorname{Im}\zeta)^2$. The Cayley transform carries the half-plane to the disc with the metric $4|\mathrm{d}w|^2/(1-|w|^2)^2$ and the conjugated matrix action. The isometries are classified by the trace into elliptic, hyperbolic and parabolic types, matching the three classes of one-parameter subgroups generated by the roots of $-1$, the roots of $+1$ and the nilpotents. The ideal boundary is the projective null cone of the vector subspace, a circle, and the full null quadric of the algebra, a torus, is the larger projective object.
+The models are explicit. The eigenline map $\zeta(\tilde\xi) = (q_2-q_1)/(q_3+i)$ is a bijection from the sheet onto the upper half-plane with inverse given by the traceless determinant-one element $M(A)$, and it intertwines the adjoint action with the fractional linear action of $\mathrm{SL}_2(\mathbb{R})$; the metric becomes $|\mathrm{d}\zeta|^2/(\operatorname{Im}\zeta)^2$. The Cayley transform carries the half-plane to the disc with the metric $4|\mathrm{d}w|^2/(1-|w|^2)^2$ and the conjugated matrix action. The isometries are classified by the trace into elliptic, hyperbolic and parabolic types, matching the three classes of one-parameter subgroups generated by the roots of $-1$, the roots of $+1$ and the nilpotents. The ideal boundary is the projective null cone of the vector subspace, a circle, and the full null quadric of the algebra, a torus, is the larger projective object.
 
 ## Summary of Notation
 
@@ -185,7 +185,7 @@ The models are explicit. The eigenline map $\zeta(\xi) = (q_2-q_1)/(q_3+i)$ is a
 | $-B$ on $\mathbb{H}^{+}$ | the hyperbolic metric of curvature $-1$ | *Split-Quaternion Geometry* |
 | $\cosh d(v,w) = B(v,w)$ | the hyperbolic distance on the sheet | this article |
 | $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ | the isometry group | *Split-Quaternion Rotations and the Lorentz Group* |
-| $\zeta(\xi) = (q_2-q_1)/(q_3+i)$ | the eigenline map to the upper half-plane | this article |
+| $\zeta(\tilde\xi) = (q_2-q_1)/(q_3+i)$ | the eigenline map to the upper half-plane | this article |
 | $\mathbb{H}$ | the upper half-plane | *Hyperbolic Geometry* |
 | $M(A)$ | the traceless determinant-one matrix of a point of the half-plane | this article |
 | $w = (\zeta-i)/(\zeta+i)$ | the Cayley transform to the disc | this article |

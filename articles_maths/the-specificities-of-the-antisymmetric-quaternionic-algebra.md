@@ -31,8 +31,8 @@ $$
 is realised by the multiplication by a single element, the element being the unit of the ambient
 algebra, which is not a unit of the block. The criterion is stated as the identity
 $L_{e_0}=P_{\mathrm{Vect}}$, it is proved equivalent to the projector classification
-$L_{\tilde X}^{2}=L_{\tilde X}\Leftrightarrow\tilde X\in\{0,e_0\}$, and it is tested on the other
-eleven structures. The model is *The Specificities of the General Plain Algebra*, which states
+$L_{\tilde X}^{2}=L_{\tilde X}\Leftrightarrow\tilde X\in\{0,e_0\}$, and it isolates the block among the
+twelve structures. The model is *The Specificities of the General Plain Algebra*, which states
 left alternativity as its criterion; the twinned articles are *The Specificities of the General
 Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic Algebra*.
 
@@ -45,9 +45,8 @@ Biquaternions*, the classification of the operators of *The Adjoint Operators of
 Antisymmetric Quaternionic Algebra*, the invariant form of *The Invariant Bilinear Forms of the
 Antisymmetric Quaternionic Algebra*, and the vanishing of the alternating centre of *The Jacobi
 Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*; and it proves, for
-the block, the row that *The Specificities of the General Plain Algebra* records in its table:
-*the unit, whose operator is the projection onto the vector subspace*. The eleven comparisons
-below are the other rows of that table read against this one.
+the block, the criterion that isolates it, the unit multiplying as the projection onto the vector
+subspace.
 
 ## Conventions
 
@@ -143,73 +142,23 @@ it vanishes — are the image and the kernel of the multiplication by one elemen
 is the unit of the ambient algebra. No other structure of the twelve has this: elsewhere the
 splitting, when it exists, is carried by an idempotent, a family, or not at all.
 
-## The Eleven Comparisons
+## The Isolation among the Twelve
 
-The table gives, for each of the twelve structures $\star$, the left multiplication by the
-algebra unit $e_0$ and the elements whose left multiplication is a projector. The two columns are
-read from the twelve operations of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$
-Space*; the rows of $\mathrm{GPA}$, $\mathrm{GQA}$ and $\mathrm{SQA}$ are the theorems of *The
-Specificities of the General Plain Algebra*, of *The Specificities of the General Quaternionic
-Algebra* and of *The Specificities of the Symmetric Quaternionic Algebra*. The zero operator is a
-projector, so the origin belongs to every row and is listed only where the whole class is trivial;
-the structures in which the multiplication by the unit vanishes give the zero operator on a whole
-subspace, and the row names that subspace.
+The criterion of the block is the projector classification of §*The Projector Classification*: the only projectors are the zero operator and the projection onto the vector subspace, the latter at the unit $e_0$, and the splitting of §*The Splitting Realised by One Element* is carried by the multiplication of that one element.
 
-| structure $\star$ | $L_{e_0}$ | the elements whose $L$ is a projector |
-|---|---|---|
-| GPA | the identity | every idempotent, by left alternativity |
-| GQA | the identity | the plain idempotents, with the index conjugated |
-| SPA | the identity | $e_0$ alone, with the origin |
-| SQA | the projection onto the centre | the elements of scalar coordinate $1$, with the origin |
-| APA | zero | the centre, whose operator is the zero operator |
-| AQA | the projection onto the vector subspace | the origin and $e_0$ |
-| GPS | the star, conjugate-linear | the origin alone |
-| GQS | the star, conjugate-linear | the origin alone |
-| SPS | a conjugate-linear map | the origin alone |
-| SQS | the star, conjugate-linear | the origin alone |
-| APS | a conjugate-linear map | the origin alone |
-| AQS | zero | the centre, whose operator is the zero operator |
+**Theorem (the isolation).** Of the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the block is the only one in which the left multiplication by the algebra unit is the projection onto the vector subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde X=\mathbf X$ for every $\tilde X$; the element is $\tilde E=e_0$, uniquely.
 
-**Theorem (the uniqueness).** Of the twelve structures, the block is the only one in which the
-left multiplication by the algebra unit is a projector whose image is the vector subspace, and
-the only one admitting an element $\tilde E$ with
-$$
-\tilde E\star\tilde X=\mathbf X
-$$
-for every $\tilde X$. The element is $\tilde E=e_0$, and the image of the multiplication is the
-vector subspace.
+*Proof.* The block's entry is the governing identity. For the other eleven, group them by the action of the unit. In GPA, GQA and SPA the unit acts as the identity, whose image is the whole space and not the vector subspace; in SQA it acts as the projection onto the centre; in APA and AQS it acts as zero. In the six sesquilinear structures the left multiplication by $e_0$ is conjugate-linear or zero, and a conjugate-linear map is not the $\mathbb{C}$-linear projection onto the vector subspace; a conjugate-linear $L$ with $L^{2}=L$ is linear and conjugate-linear at once, hence zero, so in the six the only projector is the zero operator. For the element $\tilde E$, the equation at $\tilde X=e_0$ reads $\tilde E\star e_0=0$; in GPA, SPA and GPS this forces $\tilde E=0$, in GQA, GQS and SQS it forces $\tilde E^{\natural}=0$, and in SQA and SPS it forces $E_0e_0=0$, none compatible with the value $\mathbf X$ at a pure $\tilde X$; in APA and AQS the value at $e_0$ vanishes identically and the pure values are the cross products $\mathbf E\times\mathbf X$ and $\mathbf E\times\overline{\mathbf X}$, which lie in the orthogonal plane of $\mathbf E$; and in APS the value at $e_0$, which is $\mathbf E$, forces $\tilde E=E_0e_0$, after which the values at $e_1$ and at $ie_1$ force the contradictory $E_0=-1$ and $E_0=1$. Inside the block the element is unique: at $\tilde X=e_0$ the equation gives $-\mathbf E=0$, so $\mathbf E=0$, and at a pure $\tilde X$ it gives $E_0\tilde X=\tilde X$, so $E_0=1$.
 
-*Proof.* The block's entry is the governing identity. For the other eleven, read the table. In
-GPA, GQA and SPA the unit acts as the identity, whose image is the whole space and not the vector
-subspace; in SQA it acts as the projection onto the centre, whose image is the centre; in APA and
-AQS it acts as zero. In the six sesquilinear structures the left multiplication by $e_0$ is
-conjugate linear or zero, and a conjugate-linear map is not the $\mathbb{C}$-linear projection
-onto the vector subspace; where it is zero, as in AQS, the image is not the vector subspace either.
-A conjugate-linear map $L$ with $L^{2}=L$ would be linear and conjugate-linear at once, hence
-zero, so in the six the only projector is the zero operator, and the elements whose operator
-vanishes are the origin alone in the five products whose value reads a conjugate-linear slot and
-the centre in AQS.
+| the action of the unit $e_0$ | the structures |
+|---|---|
+| the identity | GPA, GQA, SPA |
+| the projection onto the centre | SQA |
+| a nonzero conjugate-linear map | GPS, GQS, SPS, SQS, APS |
+| zero | APA, AQS |
+| **the projection onto the vector subspace** | **AQA** |
 
-For the element $\tilde E$ the equation $\tilde E\star\tilde X=\mathbf X$ at $\tilde X=e_0$ reads
-$\tilde E\star e_0=0$, and $\tilde E\star e_0$ is $\tilde E$ in GPA, SPA and GPS, $\tilde E^{\natural}$
-in GQA, GQS and SQS, and $E_0e_0$ in SQA and SPS. In the eight the equation therefore forces
-$\tilde E=0$, or $E_0=0$ with the image inside the centre, and at a pure $\tilde X$ the left side is
-then zero or central where $\mathbf X$ is not; in APA and AQS the value at $e_0$ vanishes identically
-and the pure values are the cross products $\mathbf E\times\mathbf X$
-in APA and $\mathbf E\times\overline{\mathbf X}$ in AQS, which lie in the orthogonal plane of
-$\mathbf E$; and in APS the value at $e_0$, which is $\mathbf E$, forces $\tilde E=E_0e_0$, after
-which the values at $e_1$ and at $ie_1$ force the contradictory $E_0=-1$ and $E_0=1$. No structure other than the block admits $\tilde E$, and
-inside the block the element is unique, as the faithfulness of its multiplication shows: at
-$\tilde X=e_0$ the equation gives $-\mathbf E=0$, so $\mathbf E=0$, and at a pure vector
-$\tilde X$ it gives $E_0\tilde X=\tilde X$, so $E_0=1$.
-
-The comparison separates the twelve in one line. In five structures the unit acts as the identity
-or as the zero operator, in one it acts as the projection onto the centre, in five it acts through
-a conjugate-linear map, and in one — the block — it acts as the projection onto the vector
-subspace. The
-block is alone in its row, and the reason is the two mixed terms $P_0\mathbf Q-Q_0\mathbf P$ that
-it carries and that the plain antisymmetrisation does not: those terms make the unit act on the
-scalar direction and so turn its multiplication into a proper projection.
+The block is alone in its class, and the reason is the two mixed terms $P_0\mathbf Q-Q_0\mathbf P$ that it carries and that the plain antisymmetrisation does not: those terms make the unit act on the scalar direction and so turn its multiplication into a proper projection.
 
 ## The Other Criteria Fail Here
 
@@ -249,8 +198,7 @@ is the following short list, and the block carries nothing more.
 
 The block is thus the structure in which the projector survives as a single element and not as a
 family, and in which the splitting of the space is a statement about one multiplication. This is
-the exact sense of its row in the table of the twelve: the unit carries the projector, the
-projector is the projection onto the vector subspace, and there is no other.
+the exact sense of its isolation among the twelve: the unit carries the projector, the projector is the projection onto the vector subspace, and there is no other.
 
 ## Summary
 
@@ -262,9 +210,7 @@ have. The projection is the canonical splitting $\mathbb{B}=\mathrm{Vect}(\mathb
 being the image of the block and a left ideal and the centre its kernel. The block is the only
 one of the twelve in which the algebra unit multiplies as the projection onto the vector
 subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde X=\mathbf X$
-for every $\tilde X$, the element being $e_0$ uniquely; the other eleven give the identity, the
-projection onto the centre, the zero operator or a conjugate-linear map at the unit, and none of
-them gives this projection. The alternativity criterion of the plain algebra and the rank-one
+for every $\tilde X$, the element being $e_0$ uniquely; the other eleven give the identity, the projection onto the centre, the zero operator or a conjugate-linear map at the unit, and none of them gives this projection. The alternativity criterion of the plain algebra and the rank-one
 criterion of the symmetric quaternionic algebra both fail for the block, and the criterion stated
 here is its own. What the block delivers is two projectors, one splitting and one left ideal, and
 no Peirce calculus.
@@ -283,7 +229,7 @@ no Peirce calculus.
 
 ## Further Reading
 
-- *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra.md`), for the criterion of left alternativity, the table of the twelve and the row this article proves
+- *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra.md`), for the criterion of left alternativity, the model of the family
 - *The Specificities of the General Quaternionic Algebra* (`articles_maths/the-specificities-of-the-general-quaternionic-algebra.md`), for the first border case, where the projectors are indexed by the plain idempotents
 - *The Specificities of the Symmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.md`), for the second border case, the hyperplane of rank-one projections onto the centre
 - *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its image, the one-sided action of the unit and the absence of a unit

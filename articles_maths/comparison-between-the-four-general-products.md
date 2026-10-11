@@ -128,7 +128,7 @@ These are the four diagonals of *The Four Pairings of the Biquaternion Algebra*,
 
 | problem | $\tilde P\tilde P = \tilde P$ | $\tilde P^{\natural}\tilde P = \tilde P$ | $\tilde P\tilde P^{*} = \tilde P$ | $\tilde P^{\natural}\tilde P^{*} = \tilde P$ |
 |---|---|---|---|---|
-| idempotents | $0$, $e_0$, and $\tfrac12(e_0 + \xi i)$ for a root $\xi$ of $-e_0$ | $0$ and $e_0$ alone | $0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0 + i\hat\mu)$ with $\hat\mu$ a real unit vector | $0$, $e_0$, and $-\tfrac12 e_0 + \mu$ for a real $\mu$ of the vector subspace with $(\mu,\mu) = \tfrac34$ |
+| idempotents | $0$, $e_0$, and $\tfrac12(e_0 + \tilde\Xi i)$ for a root $\tilde\Xi$ of $-e_0$ | $0$ and $e_0$ alone | $0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0 + i\hat\mu)$ with $\hat\mu$ a real unit vector | $0$, $e_0$, and $-\tfrac12 e_0 + \mu$ for a real $\mu$ of the vector subspace with $(\mu,\mu) = \tfrac34$ |
 
 The four columns are four different sets. The first is infinite and is the one the rest of the category uses; the second is the smallest possible, the two trivial idempotents; the third is the family of the pure states of *Idempotents of the General Plain Algebra*; the fourth is a family of a different kind, lying in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$.
 

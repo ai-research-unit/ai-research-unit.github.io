@@ -128,9 +128,44 @@ $$
 
 the plain, the quaternionic, the Hermitian and the Krein form, in the two slots the table of the words prescribes.
 
+## The Peirce Spaces in the Representation
+
+The Peirce decomposition of *Ideals and Peirce Decomposition of the General Plain Algebra* reads the algebra on the four elements
+
+$$
+\tilde\Pi_1 = \tfrac12(e_0 + ie_3), \qquad \tilde\Upsilon_1 = \tfrac12(ie_1 - e_2), \qquad \tilde\Upsilon_2 = \tfrac12(ie_1 + e_2), \qquad \tilde\Pi_2 = \tfrac12(e_0 - ie_3),
+$$
+
+whose four complex lines $\mathbb{C}\tilde\Pi_1, \mathbb{C}\tilde\Upsilon_1, \mathbb{C}\tilde\Upsilon_2, \mathbb{C}\tilde\Pi_2$ are the Peirce spaces. Write $E_{ij}$ for the **matrix unit**, the matrix with $1$ in position $(i,j)$ and $0$ elsewhere. The realization carries the four lines to the four matrix units, displayed in full,
+
+$$
+\mathsf{M}_2(\tilde\Pi_1)=\begin{pmatrix}1&0\\0&0\end{pmatrix}=E_{11},\qquad
+\mathsf{M}_2(\tilde\Upsilon_1)=\begin{pmatrix}0&1\\0&0\end{pmatrix}=E_{12},
+$$
+$$
+\mathsf{M}_2(\tilde\Upsilon_2)=\begin{pmatrix}0&0\\1&0\end{pmatrix}=E_{21},\qquad
+\mathsf{M}_2(\tilde\Pi_2)=\begin{pmatrix}0&0\\0&1\end{pmatrix}=E_{22}.
+$$
+
+The Peirce decomposition of an element is therefore the decomposition of its matrix into its four entries. The Peirce coordinates of the algebra (*Ideals and Peirce Decomposition of the General Plain Algebra*, §*The Peirce Coordinates*) are
+
+$$
+a_{11} = Q_0 - iQ_3, \qquad a_{12} = -iQ_1 - Q_2, \qquad a_{21} = -iQ_1 + Q_2, \qquad a_{22} = Q_0 + iQ_3,
+$$
+
+so that
+
+$$
+\mathsf{M}_2(\tilde Q) = \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22}\end{pmatrix}.
+$$
+
+The two diagonal corners are the diagonal entries, the two mixed corners the off-diagonal ones, and the Peirce table of the algebra is the table $E_{ij}E_{kl} = \delta_{jk}E_{il}$ of the matrix units (*Matrix Algebras*, §*Matrix Units*).
+
+Two readings follow from the identification. The idempotents $\tilde\Pi_1, \tilde\Pi_2$ are the diagonal matrix units, a pair of orthogonal rank-one projectors summing to $I$, and the nilpotents $\tilde\Upsilon_1, \tilde\Upsilon_2$ the off-diagonal ones, with $\mathsf{M}_2(\tilde\Upsilon_1)^2 = \mathsf{M}_2(\tilde\Upsilon_2)^2 = 0$, $\mathsf{M}_2(\tilde\Upsilon_1)\mathsf{M}_2(\tilde\Upsilon_2) = E_{11}$ and $\mathsf{M}_2(\tilde\Upsilon_2)\mathsf{M}_2(\tilde\Upsilon_1) = E_{22}$. The corners are the compressions $\mathsf{M}_2(\tilde\Pi_i\mathbb{B}\tilde\Pi_j) = \mathbb{C}E_{ij}$, so the two minimal left ideals are the two columns, $\mathsf{M}_2(\mathbb{B}\tilde\Pi_1) = \mathbb{C}E_{11}\oplus\mathbb{C}E_{21}$ and $\mathsf{M}_2(\mathbb{B}\tilde\Pi_2) = \mathbb{C}E_{12}\oplus\mathbb{C}E_{22}$, with the two rows for the right ideals; this is the matrix reading of *Ideals and Peirce Decomposition of the General Plain Algebra*, §*The Matrix Model*.
+
 ## Summary
 
-The matrix realization $\mathsf{M}_2$ turns the plain product of the algebra into the matrix product, by the isomorphism theorem $\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})=\mathsf{M}_2(\tilde{P}\tilde{Q})$, and the scalar part into the half trace, $\mathrm{Sc}(\tilde{R}\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{R})\mathsf{M}_2(\tilde{S}))$. The general plain bilinear form of the group is therefore the plain trace pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q}))$, whose diagonal is the general plain bilinear form $\sum_\mu\varepsilon_\mu Q_\mu^2$ of the element, whose coefficient Gram matrix is the sign matrix $E$, of real signature $(4,4)$, whose null set is the isotropic cone of real dimension $6$, and whose automorphism group is $O_4(\mathbb{C})$ on the coefficients and $O(4,4)$ on the realification. The units are $GL_2(\mathbb{C})$, the zero divisors are the singular matrices, and the trace and determinant are the two invariants $2Q_0$ and $\sum_\mu Q_\mu^2$.
+The matrix realization $\mathsf{M}_2$ turns the plain product of the algebra into the matrix product, by the isomorphism theorem $\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})=\mathsf{M}_2(\tilde{P}\tilde{Q})$, and the scalar part into the half trace, $\mathrm{Sc}(\tilde{R}\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{R})\mathsf{M}_2(\tilde{S}))$. The general plain bilinear form of the group is therefore the plain trace pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q}))$, whose diagonal is the general plain bilinear form $\sum_\mu\varepsilon_\mu Q_\mu^2$ of the element, whose coefficient Gram matrix is the sign matrix $E$, of real signature $(4,4)$, whose null set is the isotropic cone of real dimension $6$, and whose automorphism group is $O_4(\mathbb{C})$ on the coefficients and $O(4,4)$ on the realification. The units are $GL_2(\mathbb{C})$, the zero divisors are the singular matrices, and the trace and determinant are the two invariants $2Q_0$ and $\sum_\mu Q_\mu^2$. The Peirce spaces are the four matrix entries: the realization carries the four Peirce lines to the four matrix units, so the Peirce coordinates are the entries of the matrix and the two minimal left ideals are its two columns.
 
 ## Summary of Notation
 
@@ -142,6 +177,7 @@ The matrix realization $\mathsf{M}_2$ turns the plain product of the algebra int
 | $E=\operatorname{diag}(1,-1,-1,-1)$ | the coefficient Gram matrix, real signature $(4,4)$ |
 | $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ | the isotropic cone, of real dimension $6$ |
 | $O_4(\mathbb{C})$, $O(4,4)$ | the automorphism group and its realification |
+| $E_{ij}$ | the matrix unit; the images of the Peirce basis, $\mathsf{M}_2(\tilde\Pi_1)=E_{11}$, $\mathsf{M}_2(\tilde\Upsilon_1)=E_{12}$, $\mathsf{M}_2(\tilde\Upsilon_2)=E_{21}$, $\mathsf{M}_2(\tilde\Pi_2)=E_{22}$ |
 
 ## Further Reading
 
@@ -151,3 +187,4 @@ The matrix realization $\mathsf{M}_2$ turns the plain product of the algebra int
 - *Association and the Transpose on the General Plain Algebra* (`articles_maths/association-and-the-transpose-on-the-general-plain-algebra.md`), for the operators of this group
 - *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-plain-algebra-in-the-4x4-matrix-element-representation.md`), for the companion reading of the group
 - *Remarkable Subspaces under the General Plain Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), for the restriction theory of the form
+- *Ideals and Peirce Decomposition of the General Plain Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.md`), for the Peirce decomposition read here on the matrices

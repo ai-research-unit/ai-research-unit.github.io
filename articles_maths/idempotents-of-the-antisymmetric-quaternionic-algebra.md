@@ -96,7 +96,7 @@ Algebra*.
 
 **Remark (the scaled root).** For the general plain product the idempotents are the roots of
 $+1$ read in the scaled sense, the plain product carrying the family
-$\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$ (*Definitions for the Study of the 12
+$\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$ (*Definitions for the Study of the 12
 Algebraic Structures*, §*The Idempotent, the Projection and the Peirce Decomposition* and
 §*Powers, the Square and the Roots*). The block has no root of $+1$
 (*Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra*), and

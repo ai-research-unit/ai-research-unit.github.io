@@ -2,19 +2,19 @@
 
 ## Introduction
 
-The equation $\tilde P\wedge\tilde P=\tilde A$ names the product in which the square is read, so
+The equation $\tilde\Xi\wedge\tilde\Xi=\tilde A$ names the product in which the square is read, so
 the square root is relative to it (*Definitions for the Study of the 12 Algebraic Structures*,
 §*Powers, the Square and the Roots*). The block of this article is the antisymmetric plain
 multiplication
 $$
-\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf{P}\times\mathbf{Q},
+\tilde\Xi\wedge\tilde Q=\tfrac12\bigl(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi\bigr)=\mathbf\Xi\times\mathbf{Q},
 $$
 the cross product of the two vector parts, which is alternating (*Introduction to the
 Antisymmetric Plain Algebra of Biquaternions*). The article solves the equation for every right
 side $\tilde A$ and determines the image of the square map of the block.
 
 The outcome is the extreme degeneration of the equation. Since the block is alternating, the
-square of every element is zero, $\tilde P\wedge\tilde P=0$, so the equation reads $0=\tilde A$.
+square of every element is zero, $\tilde\Xi\wedge\tilde\Xi=0$, so the equation reads $0=\tilde A$.
 It has a solution exactly when $\tilde A=0$, and then **every** element of $\mathbb{B}$ is a square
 root; for every nonzero $\tilde A$ it has no solution. **The square map of the block is the zero
 map**: its image is the origin alone and its kernel is the whole space. The special case of a
@@ -27,9 +27,9 @@ General Plain Algebra*.
 ## The Notion and Its Product
 
 **Definition (square root of an element).** Let $\star$ be a product on $\mathbb{B}$ and let
-$\tilde A\in\mathbb{B}$. A **square root of $\tilde A$ in $\star$** is an element $\tilde P$ with
+$\tilde A\in\mathbb{B}$. A **square root of $\tilde A$ in $\star$** is an element $\tilde\Xi$ with
 $$
-\tilde P\star\tilde P=\tilde A .
+\tilde\Xi\star\tilde\Xi=\tilde A .
 $$
 The roots of a central value are the special case $\tilde A=\lambda e_0$
 (*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*).
@@ -37,40 +37,40 @@ The roots of a central value are the special case $\tilde A=\lambda e_0$
 Throughout this article the product is the **antisymmetric plain multiplication** $\wedge$, and
 unqualified, *square root* means a square root of the block. The right side is an arbitrary
 element of $\mathbb{B}$, and the article determines, for each $\tilde A$, whether the set
-$\{\tilde P:\tilde P\wedge\tilde P=\tilde A\}$ is empty or not. The square map of the block is the
+$\{\tilde\Xi:\tilde\Xi\wedge\tilde\Xi=\tilde A\}$ is empty or not. The square map of the block is the
 specialisation to the block of the general square of *The Symmetric and Antisymmetric Parts of an
 Algebra Product*; it is the map
 $$
-\mathrm{sq}:\mathbb{B}\longrightarrow\mathbb{B},\qquad \mathrm{sq}(\tilde P)=\tilde P\wedge\tilde P .
+\mathrm{sq}:\mathbb{B}\longrightarrow\mathbb{B},\qquad \mathrm{sq}(\tilde\Xi)=\tilde\Xi\wedge\tilde\Xi .
 $$
 
 ## The Reduction
 
-**Proposition (the reduction).** For every element $\tilde P$,
+**Proposition (the reduction).** For every element $\tilde\Xi$,
 $$
-\mathrm{sq}(\tilde P)=\tilde P\wedge\tilde P=0 ,
+\mathrm{sq}(\tilde\Xi)=\tilde\Xi\wedge\tilde\Xi=0 ,
 $$
-so the equation $\tilde P\wedge\tilde P=\tilde A$ is equivalent to the equation $0=\tilde A$,
-uniformly in $\tilde P$.
+so the equation $\tilde\Xi\wedge\tilde\Xi=\tilde A$ is equivalent to the equation $0=\tilde A$,
+uniformly in $\tilde\Xi$.
 
 *Proof.* The block is alternating, $\tilde X\wedge\tilde X=0$ for every $\tilde X$, by
-*Introduction to the Antisymmetric Plain Algebra of Biquaternions*; read at $\tilde X=\tilde P$
+*Introduction to the Antisymmetric Plain Algebra of Biquaternions*; read at $\tilde X=\tilde\Xi$
 this is the display. Substituting the display into the square-root equation, whose left side is
-$\mathrm{sq}(\tilde P)$, gives $0=\tilde A$.
+$\mathrm{sq}(\tilde\Xi)$, gives $0=\tilde A$.
 
 The reduction is the whole of the computation, because the left side takes no value other than
 zero. No coordinate computation is needed, and the equation carries no information about the
-unknown $\tilde P$: it constrains the right side alone.
+unknown $\tilde\Xi$: it constrains the right side alone.
 
 ## The Square Roots of the Origin
 
 **Theorem (the square roots of $0$).** The square roots of the origin are all the elements of the
 space,
 $$
-\{\tilde P:\mathrm{sq}(\tilde P)=0\}=\mathbb{B}.
+\{\tilde\Xi:\mathrm{sq}(\tilde\Xi)=0\}=\mathbb{B}.
 $$
 
-*Proof.* The reduction gives $\mathrm{sq}(\tilde P)=0$ for every $\tilde P$, so every element is a
+*Proof.* The reduction gives $\mathrm{sq}(\tilde\Xi)=0$ for every $\tilde\Xi$, so every element is a
 square root of the origin, and the set is the whole space.
 
 The set is the kernel of the square map, and it is the whole space; it contains the origin, which
@@ -82,11 +82,11 @@ block has square roots at all, and it has as many as the space allows.
 ## The Square Roots of the Nonzero Elements
 
 **Theorem (the square roots of a nonzero element).** Let $\tilde A\neq0$. The equation
-$\tilde P\wedge\tilde P=\tilde A$ has no solution; equivalently, no nonzero element of
+$\tilde\Xi\wedge\tilde\Xi=\tilde A$ has no solution; equivalently, no nonzero element of
 $\mathbb{B}$ has a square root in the block.
 
 *Proof.* The reduction reads the equation as $0=\tilde A$, and $0\neq\tilde A$ by hypothesis, so
-the equation fails for every $\tilde P$. Every element is therefore a square root of the origin
+the equation fails for every $\tilde\Xi$. Every element is therefore a square root of the origin
 and of nothing else.
 
 The absence is the absence of a nonzero value of the square map. The block removes the scalar part
@@ -116,30 +116,30 @@ vanishes and the element does not, and no higher power is needed.
 ## The Comparison with the Parent Product
 
 **Remark (the parent square roots).** The parent general plain bilinear product is associative and
-unital, and its square-root equation $\tilde P^{2}=\tilde A$ is a genuine classification, whose
+unital, and its square-root equation $\tilde\Xi^{2}=\tilde A$ is a genuine classification, whose
 central case has three proper families
 (*Square Roots of a General Element in the General Plain Algebra*; *Square Roots of Minus One,
 Zero and Plus One in the General Plain Algebra*). The block is the antisymmetric half of that
 product, and the comparison is the comparison of a square map that is zero with a square map that
 is not: the parent's square map is the identity-block combination
-$\tilde P^{2}=2P_0\tilde P-\bigl[P_0^{2}+(\mathbf P,\mathbf P)\bigr]e_0$, whose image and kernel
+$\tilde\Xi^{2}=2\Xi_0\tilde\Xi-\bigl[\Xi_0^{2}+(\mathbf\Xi,\mathbf\Xi)\bigr]e_0$, whose image and kernel
 are proper, and the block's square map is the zero map, whose image is the origin and whose kernel
 is the whole space. The only right side of which the block has square roots is the origin, and
 there it has more than the parent: the parent's square roots of the origin are the origin together
 with the pure isotropic cone, while the block's are the whole space.
 
 **Remark (the removal of the scalar part).** The parent's square carries a central part,
-$P_0^{2}-(\mathbf P,\mathbf P)$, and a vector part $2P_0\mathbf P$; the block removes the scalar
+$\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi)$, and a vector part $2\Xi_0\mathbf\Xi$; the block removes the scalar
 part of the product, and with it the central part of the square. The equation
-$\tilde P\wedge\tilde P=\tilde A$ is the parent's square-root equation
+$\tilde\Xi\wedge\tilde\Xi=\tilde A$ is the parent's square-root equation
 with the central coordinate deleted, and with the central coordinate deleted the equation collapses
 to the statement that $\tilde A$ has no central coordinate. This is the same degeneration the
 root sets of the three central values record, read for an arbitrary right side.
 
 ## Summary
 
-For the antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$ the
-square of every element vanishes, so the equation $\tilde P\wedge\tilde P=\tilde A$ reads
+For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\mathbf\Xi\times\mathbf{Q}$ the
+square of every element vanishes, so the equation $\tilde\Xi\wedge\tilde\Xi=\tilde A$ reads
 $0=\tilde A$ and is independent of the unknown. It has a solution exactly when $\tilde A=0$, and
 then every element of $\mathbb{B}$ is a square root; for every nonzero $\tilde A$ it has no
 solution. The square map of the block is the zero map, of image the origin and kernel the whole
@@ -153,12 +153,12 @@ have no counterpart in the block.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
-| $\mathrm{sq}(\tilde P)=\tilde P\wedge\tilde P=0$ | the square map of the block, the zero map |
-| $\tilde P\wedge\tilde P=\tilde A$ | the square-root equation, equivalent to $0=\tilde A$ |
+| $\tilde\Xi\wedge\tilde Q=\tfrac12(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi)=\mathbf\Xi\times\mathbf{Q}$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\mathrm{sq}(\tilde\Xi)=\tilde\Xi\wedge\tilde\Xi=0$ | the square map of the block, the zero map |
+| $\tilde\Xi\wedge\tilde\Xi=\tilde A$ | the square-root equation, equivalent to $0=\tilde A$ |
 | $\mathbb{B}$ | the square roots of the origin, the kernel of the square map |
 | $\{0\}$ | the image of the square map, the only right side with square roots |
-| $N(\tilde P)=P_0^{2}+(\mathbf P,\mathbf P)$ | the norm of the parent product, the central part of $\tilde P\tilde P^{\natural}$; the parent square's own central part is $P_0^{2}-(\mathbf P,\mathbf P)$ |
+| $N(\tilde\Xi)=\Xi_0^{2}+(\mathbf\Xi,\mathbf\Xi)$ | the algebraic norm of the parent product, the central part of $\tilde\Xi\tilde\Xi^{\natural}$; the parent square's own central part is $\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi)$ |
 
 ## Further Reading
 

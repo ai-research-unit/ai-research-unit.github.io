@@ -142,11 +142,11 @@ therefore carry no nilpotent condition beyond the vanishing of the square.
 
 **Remark (the parent's nilpotent cone).** The parent quaternionic product
 $\tilde P^{\natural}\tilde Q$ has the square $\tilde P^{\natural}\tilde P=N(\tilde P)e_0$, so
-its square-zero set is the norm cone $N(\tilde P)=0$, which is the zero-divisor cone, a proper
+its square-zero set is the cone $N(\tilde P)=0$ of its algebraic norm, which is the zero-divisor cone, a proper
 cone of the space; its nilpotents are the square-zero elements of that cone, the index being two
 there by the central-square identity (*The Nilpotents and the Zero Divisors of the Quaternionic
 Product*). The block is the parent with the scalar part removed, and with the scalar part removed
-the square of the parent, which was a central reading of the norm, becomes the zero of the block:
+the square of the parent, which was a central reading of the parent's algebraic norm, becomes the zero of the block:
 the parent's cone widens to the whole space, and the parent's index two is kept by every nonzero
 element. The block's nilpotent set strictly contains the parent's, and the difference is the
 complement of the cone, on which the parent's square is a nonzero central value and the block's
@@ -174,7 +174,7 @@ acts as the negative of the identity; in either matrix model the square is the z
 | $\tilde\Upsilon\diamond\tilde\Upsilon=0$ | the criterion, the vanishing square of every element |
 | $\mathbb{B}$ | the nilpotent set of the block, the whole space |
 | $2$ | the index of nilpotency of every nonzero element |
-| $N(\tilde\Upsilon)=\sum_\mu\Upsilon_\mu^{2}$ | the norm of the parent product, whose vanishing cone is the parent's nilpotent set |
+| $N(\tilde\Upsilon)=\sum_\mu\Upsilon_\mu^{2}$ | the algebraic norm of the parent product, whose vanishing cone is the parent's nilpotent set |
 
 ## Further Reading
 

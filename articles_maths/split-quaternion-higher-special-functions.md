@@ -25,14 +25,14 @@ converges absolutely for $|\tilde q| < R/\sqrt{2}$ in the Euclidean norm of the 
 
 **Proof.** The bound $|a_n\tilde q^n| \leq (\sqrt{2})^n |a_n|\,|\tilde q|^n$ of *Split-Quaternion Analysis*, §*The Metric Structure*, reduces the convergence to the real majorant series.
 
-**Theorem (The Reduction on a Plane).** If $\tilde q$ lies in a commutative subalgebra $\operatorname{span}\{1,\xi\}$ with $\xi^2 = \pm1$, then
+**Theorem (The Reduction on a Plane).** If $\tilde q$ lies in a commutative subalgebra $\operatorname{span}\{1,\tilde\xi\}$ with $\tilde\xi^2 = \pm1$, then
 
 $$
-F(\tilde q) = F(s + t\xi) = \tfrac12\big(F(s+t) + F(s-t)\big) + \tfrac12\big(F(s+t) - F(s-t)\big)\,\xi \quad (\xi^2=1),
+F(\tilde q) = F(s + t\tilde\xi) = \tfrac12\big(F(s+t) + F(s-t)\big) + \tfrac12\big(F(s+t) - F(s-t)\big)\,\tilde\xi \quad (\tilde\xi^2=1),
 $$
 
 $$
-F(\tilde q) = \tfrac12\big(F(s+it) + F(s-it)\big) + \tfrac1{2i}\big(F(s+it) - F(s-it)\big)\,\xi \quad (\xi^2=-1),
+F(\tilde q) = \tfrac12\big(F(s+it) + F(s-it)\big) + \tfrac1{2i}\big(F(s+it) - F(s-it)\big)\,\tilde\xi \quad (\tilde\xi^2=-1),
 $$
 
 with the second formula understood through its real series. In particular, in the null coordinates $\tilde q = p\,n_+ + q\,n_-$ of the split-complex plane the value is
@@ -121,18 +121,18 @@ $$
 J_\nu(p\,n_+ + q\,n_-) = J_\nu(p)\,n_+ + J_\nu(q)\,n_- .
 $$
 
-On an element $v \in V$ with $v^2 = \sigma u^2$, where $u = \sqrt{|v^2|} \geq 0$ and $\sigma = \pm1$ is the sign of the square, put $\xi = v/u$, so that $\xi^2 = \sigma$; then
+On an element $v \in V$ with $v^2 = \sigma u^2$, where $u = \sqrt{|v^2|} \geq 0$ and $\sigma = \pm1$ is the sign of the square, put $\tilde\xi = v/u$, so that $\tilde\xi^2 = \sigma$; then
 
 $$
-J_\nu(v) = \begin{cases} \xi^\nu\, I_\nu(u), & \sigma = -1 \ (\text{that is } N(v) > 0),\\ \xi^\nu\, J_\nu(u), & \sigma = +1 \ (\text{that is } N(v) < 0),\end{cases}
+J_\nu(v) = \begin{cases} \tilde\xi^\nu\, I_\nu(u), & \sigma = -1 \ (\text{that is } N(v) > 0),\\ \tilde\xi^\nu\, J_\nu(u), & \sigma = +1 \ (\text{that is } N(v) < 0),\end{cases}
 $$
 
 where $I_\nu$ is the modified Bessel function, the series without the alternating sign. The ordinary and modified Bessel functions are therefore interchanged by a change of the sign of the split-quaternion norm, exactly as the trigonometric and hyperbolic functions are: in the elliptic direction the alternating series produces the monotone function and conversely.
 
-**Proof.** The series has real coefficients, so the substitution theorem applies. On the split-complex plane the reduction is the null-basis theorem. On $v = u\xi$ one has $v^{2m+\nu} = u^{2m+\nu}\xi^\nu\sigma^m$, so
+**Proof.** The series has real coefficients, so the substitution theorem applies. On the split-complex plane the reduction is the null-basis theorem. On $v = u\tilde\xi$ one has $v^{2m+\nu} = u^{2m+\nu}\tilde\xi^\nu\sigma^m$, so
 
 $$
-J_\nu(u\xi) = \xi^\nu \sum_{m\geq0}\frac{(-1)^m\sigma^m}{m!\,\Gamma(m+\nu+1)}\Big(\frac{u}{2}\Big)^{2m+\nu},
+J_\nu(u\tilde\xi) = \tilde\xi^\nu \sum_{m\geq0}\frac{(-1)^m\sigma^m}{m!\,\Gamma(m+\nu+1)}\Big(\frac{u}{2}\Big)^{2m+\nu},
 $$
 
 and the factor $(-1)^m\sigma^m$ is $1$ when $\sigma = -1$ and $(-1)^m$ when $\sigma = +1$, giving the modified and the ordinary series respectively.

@@ -54,11 +54,19 @@ The criterion separates the class sharply: the nilpotents are the elements of th
 
 ## The Nilpotent Cone
 
-The set of nilpotents is the vanishing set of the two conditions of the criterion, and it is a cone. In the complex coordinates $\mathbf P=(P_1,P_2,P_3)$ the single complex equation $(\mathbf P,\mathbf P)=P_1^{2}+P_2^{2}+P_3^{2}=0$ is two real equations, and writing $P_k=p_k+ip_k'$ with real $p_k,p_k'$ they are
+The set of nilpotents is the vanishing set of the two conditions of the criterion, and it is a cone. The vector part of a nilpotent is a complex vector $\mathbf P=(P_1,P_2,P_3)$, and its coefficients split into a real and an imaginary part, $P_k=p_k+ip'_k$ with real $p_k,p'_k$ (§*The element and its coefficients* of *Conventions in Mathematics*), so that the vector part splits into two real vector parts carrying the central imaginary on the second,
 
 $$
-p_1^{2}+p_2^{2}+p_3^{2}=p_1'^{2}+p_2'^{2}+p_3'^{2},\qquad p_1p_1'+p_2p_2'+p_3p_3'=0 .
+\mathbf P=\mathbf p+i\mathbf p',\qquad \mathbf p=\sum_{k=1}^{3}p_ke_k,\qquad \mathbf p'=\sum_{k=1}^{3}p'_ke_k .
 $$
+
+The single complex equation $(\mathbf P,\mathbf P)=P_1^{2}+P_2^{2}+P_3^{2}=0$ is then the two real equations
+
+$$
+\mathbf p\cdot\mathbf p=\mathbf p'\cdot\mathbf p',\qquad \mathbf p\cdot\mathbf p'=0 ,
+$$
+
+that is $\sum_kp_k^{2}=\sum_kp'^{2}_k$ and $\sum_kp_kp'_k=0$: the two real parts of a nilpotent have equal length and are orthogonal.
 
 **Proposition (the cone).** The nilpotents form the **nilpotent cone**
 
@@ -69,14 +77,18 @@ $$
 a complex cone of complex dimension two and real dimension four, a four-real-parameter family. Its nonzero elements are written
 
 $$
-\tilde\Upsilon=r(\hat u+i\hat v),\qquad r>0,
+\tilde\Upsilon=\mathbf p+i\mathbf p',\qquad \lvert\mathbf p\rvert=\lvert\mathbf p'\rvert,\qquad \mathbf p\cdot\mathbf p'=0 ,
 $$
 
-where $\hat u,\hat v$ is an orthonormal pair of real unit vectors and $(\hat u,\hat v)$ is read in the real Euclidean sense.
+and equivalently, with $r>0$ the common length and $\hat{\mathbf p},\hat{\mathbf p}'$ the two real unit directions,
 
-**Proof.** The first is the criterion. The complex equation cuts a complex-quadric cone in $\mathbb{C}^{3}$, of complex dimension two; as a real cone it is the two real equations displayed, whose independence away from the origin gives real dimension four. For the parametrisation, the two real equations say that the real part $\boldsymbol{\rho}=r\hat u$ and the imaginary part $\boldsymbol{\rho}'=r\hat v$ have equal length and are orthogonal, which is the stated form; conversely such a pair satisfies both.
+$$
+\tilde\Upsilon=r(\hat{\mathbf p}+i\hat{\mathbf p}'),\qquad r>0,\qquad \lvert\hat{\mathbf p}\rvert=\lvert\hat{\mathbf p}'\rvert=1,\qquad \hat{\mathbf p}\cdot\hat{\mathbf p}'=0 .
+$$
 
-The cone is stable under complex scaling, $\tilde\Upsilon\mapsto\lambda\tilde\Upsilon$ for $\lambda\in\mathbb{C}$, because the isotropy condition is homogeneous of degree two; it is stable under the star, which conjugates the two real parts; and the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$, the other element of the same line. The parameter $r$ is the common length of the two real parts, and the pair $(\hat u,\hat v)$ is determined up to the simultaneous sign change $(\hat u,\hat v)\mapsto(-\hat u,-\hat v)$.
+**Proof.** The first is the criterion. The complex equation cuts a complex-quadric cone in $\mathbb{C}^{3}$, of complex dimension two; as a real cone it is the two real equations displayed, whose independence away from the origin gives real dimension four. For the parametrisation, the two real equations say that the real part $\mathbf p=r\hat{\mathbf p}$ and the imaginary part $\mathbf p'=r\hat{\mathbf p}'$ have equal length and are orthogonal, which is the stated form; conversely such a pair satisfies both.
+
+The cone is stable under complex scaling, $\tilde\Upsilon\mapsto\lambda\tilde\Upsilon$ for $\lambda\in\mathbb{C}$, because the isotropy condition is homogeneous of degree two; it is stable under the star, which conjugates the two real parts; and the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$, the other element of the same line. The parameter $r$ is the common length of the two real parts, and the pair $(\hat{\mathbf p},\hat{\mathbf p}')$ is determined up to the simultaneous sign change $(\hat{\mathbf p},\hat{\mathbf p}')\mapsto(-\hat{\mathbf p},-\hat{\mathbf p}')$.
 
 ## Index Two
 
@@ -118,16 +130,16 @@ The disjointness is the two-family statement in another dress. The zero-divisor 
 
 The four conjugations act on the nilpotent cone in a simple way, and the action is worth recording because the two families of the zero divisors are separated by it.
 
-| conjugation | effect on a nilpotent $\tilde\Upsilon=r(\hat u+i\hat v)$ |
+| conjugation | effect on a nilpotent $\tilde\Upsilon=r(\hat{\mathbf p}+i\hat{\mathbf p}')$ |
 |---|---|
-| natural, ${}^{\natural}$ | $-\tilde\Upsilon=-r(\hat u+i\hat v)$, a nilpotent |
-| star, ${}^{*}$ | $\overline{\tilde\Upsilon}=r(\hat u-i\hat v)$, a nilpotent |
-| Hermitian, ${}^{\natural}\circ{}^{*}={}^{*}\circ{}^{\natural}=\overline{\cdot}$ | $-\overline{\tilde\Upsilon}=-r(\hat u-i\hat v)$, a nilpotent |
+| natural, ${}^{\natural}$ | $-\tilde\Upsilon=-r(\hat{\mathbf p}+i\hat{\mathbf p}')$, a nilpotent |
+| star, ${}^{*}$ | $\overline{\tilde\Upsilon}=r(\hat{\mathbf p}-i\hat{\mathbf p}')$, a nilpotent |
+| Hermitian, ${}^{\natural}\circ{}^{*}={}^{*}\circ{}^{\natural}=\overline{\cdot}$ | $-\overline{\tilde\Upsilon}=-r(\hat{\mathbf p}-i\hat{\mathbf p}')$, a nilpotent |
 | reversal | $\widetilde\Upsilon$ and the three above according to the layer |
 
-The star fixes no nonzero nilpotent: a star-fixed element has real coefficients, and a pure real vector with $(\mathbf P,\mathbf P)=p_1^{2}+p_2^{2}+p_3^{2}=0$ vanishes, since the three squares are nonnegative. So the star pairs the nilpotents two by two, exactly as it pairs the nonzero roots of $-1$ that are not Hermitian (*Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*). The class is a cone, and each conjugation is a real-linear bijection of the cone onto itself.
+The star fixes no nonzero nilpotent: a star-fixed element has real coefficients, and a pure real vector $\mathbf p$ with $\mathbf p\cdot\mathbf p=p_1^{2}+p_2^{2}+p_3^{2}=0$ vanishes, since the three squares are nonnegative. So the star pairs the nilpotents two by two, exactly as it pairs the nonzero roots of $-1$ that are not Hermitian (*Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*). The class is a cone, and each conjugation is a real-linear bijection of the cone onto itself.
 
-The real and imaginary parts make the same point. Writing $\tilde\Upsilon=\boldsymbol{\rho}+i\boldsymbol{\rho}'$ with $\boldsymbol{\rho},\boldsymbol{\rho}'$ real pure vectors, the nilpotency is the pair of real equations of §*The Nilpotent Cone*: the two real parts of a nilpotent are orthogonal and of equal length. This is a real condition, and the class is real-algebraically defined even though the algebra is complex.
+The real and imaginary parts make the same point. Writing $\tilde\Upsilon=\mathbf p+i\mathbf p'$ with $\mathbf p,\mathbf p'$ real pure vectors, the nilpotency is the pair of real equations of §*The Nilpotent Cone*: the two real parts of a nilpotent are orthogonal and of equal length. This is a real condition, and the class is real-algebraically defined even though the algebra is complex.
 
 ## The Matrix Model
 
@@ -172,7 +184,7 @@ The entries are forced: the centre, the quaternion subspace and the anti-quatern
 
 ## Summary
 
-The nilpotents of the general plain algebra are the nonzero elements of vanishing square. The criterion is $P_0=0$ and $(\mathbf P,\mathbf P)=0$, so every nilpotent is pure and its vector part is isotropic for the complex bilinear form; the class is the nilpotent cone, a complex cone of complex dimension two and real dimension four, parametrised as $r(\hat u+i\hat v)$ over orthonormal pairs of real unit vectors. The algebra has no nilpotent of index three: $\tilde P^{3}=0$ exactly when $\tilde P^{2}=0$, so index two is the only index, and the powers of a nilpotent stop at the second.
+The nilpotents of the general plain algebra are the nonzero elements of vanishing square. The criterion is $P_0=0$ and $(\mathbf P,\mathbf P)=0$, so every nilpotent is pure and its vector part is isotropic for the complex bilinear form; the class is the nilpotent cone, a complex cone of complex dimension two and real dimension four, parametrised as $r(\hat{\mathbf p}+i\hat{\mathbf p}')$ over orthonormal pairs of real unit vectors. The algebra has no nilpotent of index three: $\tilde P^{3}=0$ exactly when $\tilde P^{2}=0$, so index two is the only index, and the powers of a nilpotent stop at the second.
 
 Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor and the ideal it generates is its own annihilator; the nilpotents are the pure family of the zero-divisor set, the non-pure family being the complex multiples of the nontrivial idempotents, and the two classes meet only at $0$. The star preserves the nilpotent set and fixes none of it, the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$, and in the model $M_2(\mathbb{C})$ the nilpotents are the nonzero trace-free singular matrices, the conjugates of the strictly triangular Jordan block, with the two off-diagonal Peirce units as the standard pair. Of the remarkable subspaces only the vector subspace contains one, and it contains all of them.
 
@@ -186,7 +198,8 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor an
 | $c(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, $\det\Phi(\tilde P)$ |
 | $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ | the general plain bilinear form of the vector parts |
 | $\{\tilde\Upsilon\}$ | the nilpotent cone, $\{P_0=0,\ (\mathbf P,\mathbf P)=0\}$ |
-| $r(\hat u+i\hat v)$ | the parametrisation of the cone over orthonormal real unit pairs |
+| $\mathbf p,\mathbf p'$ | the two real vector parts of a nilpotent, $\tilde\Upsilon=\mathbf p+i\mathbf p'$ with $P_k=p_k+ip'_k$, of equal length and orthogonal |
+| $r(\hat{\mathbf p}+i\hat{\mathbf p}')$ | the parametrisation of the cone over orthonormal real unit pairs |
 
 ## Further Reading
 

@@ -47,7 +47,7 @@ $$
 It is the pure isotropic cone of the complex form $(\cdot,\cdot)$ restricted to the three-dimensional complex vector subspace. In real coordinates $\tilde\Upsilon=\mathbf{p}+i\mathbf{p}'$, the condition is the pair of real equations
 
 $$
-p_1^2+p_2^2+p_3^2-p_1'^2-p_2'^2-p_3'^2=0,\qquad p_1p_1'+p_2p_2'+p_3p_3'=0,
+p_1^2+p_2^2+p_3^2-p'^2_1-p'^2_2-p'^2_3=0,\qquad p_1p_1'+p_2p_2'+p_3p_3'=0,
 $$
 
 so the cone is a **four-real-parameter** family and a complex quadric of complex dimension two. An example is $\tilde\Upsilon=e_1+ie_2$, for which
@@ -115,7 +115,7 @@ The coincidence $\mathbb{B}\tilde\Upsilon=I_{\tilde\Upsilon}$ of the algebra is 
 
 ## Summary
 
-The nilpotents of the block are the non-zero elements of square zero, and they are exactly the non-zero pure isotropic elements, the elements $\mathbf{p}+i\mathbf{p}'$ with $p_1^2+p_2^2+p_3^2-p_1'^2-p_2'^2-p_3'^2=0$ and $\mathbf{p}\cdot\mathbf{p}'=0$. They form the nilpotent cone, a four-real-parameter complex quadric, and they coincide with the nilpotents of the algebra, the two squares being equal; they are a proper subset of the block's zero-divisor set, which also contains every non-isotropic pure element. The block's own reading is the operator: a nilpotent gives **no** square-zero operator and **no** flag, its left multiplication having index three, $L^{\bullet}_{\tilde\Upsilon}{}^{2}\neq0$ and $L^{\bullet}_{\tilde\Upsilon}{}^{3}=0$, an image $\mathrm{span}\{e_0,\tilde\Upsilon\}$ not contained in its kernel, and the complementary decomposition $\mathbb{B}=\mathrm{im}\,L^{\bullet}_{\tilde\Upsilon}\oplus\ker L^{\bullet}_{\tilde\Upsilon}$ in place of a flag. The ideal–annihilator coincidence $\mathbb{B}\tilde\Upsilon=I_{\tilde\Upsilon}$ of the algebra fails, the image and the annihilator being two different two-dimensional subspaces that meet only at the origin.
+The nilpotents of the block are the non-zero elements of square zero, and they are exactly the non-zero pure isotropic elements, the elements $\mathbf{p}+i\mathbf{p}'$ with $p_1^2+p_2^2+p_3^2-p'^2_1-p'^2_2-p'^2_3=0$ and $\mathbf{p}\cdot\mathbf{p}'=0$. They form the nilpotent cone, a four-real-parameter complex quadric, and they coincide with the nilpotents of the algebra, the two squares being equal; they are a proper subset of the block's zero-divisor set, which also contains every non-isotropic pure element. The block's own reading is the operator: a nilpotent gives **no** square-zero operator and **no** flag, its left multiplication having index three, $L^{\bullet}_{\tilde\Upsilon}{}^{2}\neq0$ and $L^{\bullet}_{\tilde\Upsilon}{}^{3}=0$, an image $\mathrm{span}\{e_0,\tilde\Upsilon\}$ not contained in its kernel, and the complementary decomposition $\mathbb{B}=\mathrm{im}\,L^{\bullet}_{\tilde\Upsilon}\oplus\ker L^{\bullet}_{\tilde\Upsilon}$ in place of a flag. The ideal–annihilator coincidence $\mathbb{B}\tilde\Upsilon=I_{\tilde\Upsilon}$ of the algebra fails, the image and the annihilator being two different two-dimensional subspaces that meet only at the origin.
 
 ## Summary of Notation
 

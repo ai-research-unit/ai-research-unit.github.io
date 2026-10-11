@@ -8,9 +8,9 @@ An idempotent is relative to a product, and the definition is stated once in *De
 
 The companion article *Idempotents of the General Plain Algebra* gives the other answer, and the contrast organises this one. There the nontrivial idempotents are the **Hermitian idempotents** $\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ over the real unit vectors $\hat\mu$, a family of complex dimension two, and they carry the Peirce decomposition and the minimal left ideals of the associative theory. Here the family is displaced: reading the first slot of this product through the natural conjugation converts each Hermitian idempotent into a **square-zero** element, so the idempotents of the algebra become nilpotents of the product. The article gives the classification, names the absent bijection with the roots of $-1$, reads the idempotents as projectors on the operator side, and records the displacement into the nilpotent cone.
 
-**Boundaries.** The idempotents of the plain product, the Hermitian idempotents, the orthogonality relations and the Peirce decomposition are *Idempotents of the General Plain Algebra* and *Ideals and Peirce Decomposition of the General Plain Algebra*; the square, the norm and the isotope reading are *Introduction to the General Quaternionic Algebra of Biquaternions* and *Norm and Invertibility in the General Quaternionic Algebra*; the nilpotents are *Nilpotents of the General Quaternionic Algebra*; the zero divisors are *Zero Divisors of the General Quaternionic Algebra*; the square-zero elements of the four general products side by side are *The Square-Zero Elements of the Four General Products*; and the projectors and the operator theory are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* and *The Specificities of the General Quaternionic Algebra*.
+**Boundaries.** The idempotents of the plain product, the Hermitian idempotents, the orthogonality relations and the Peirce decomposition are *Idempotents of the General Plain Algebra* and *Ideals and Peirce Decomposition of the General Plain Algebra*; the square, the algebraic norm and the isotope reading are *Introduction to the General Quaternionic Algebra of Biquaternions* and *Norm and Invertibility in the General Quaternionic Algebra*; the nilpotents are *Nilpotents of the General Quaternionic Algebra*; the zero divisors are *Zero Divisors of the General Quaternionic Algebra*; the square-zero elements of the four general products side by side are *The Square-Zero Elements of the Four General Products*; and the projectors and the operator theory are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* and *The Specificities of the General Quaternionic Algebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$, with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product and $\star$ the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\mathbf Q$. An element is $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$, the **norm** is $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q)$, and $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ is the complex bilinear form of the vector parts. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, and $\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ is the Hermitian idempotent over a real unit vector $\hat\mu$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$, with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product and $\star$ the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\mathbf Q$. An element is $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$, the **algebraic norm** is $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q)$, and $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ is the complex bilinear form of the vector parts. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, and $\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ is the Hermitian idempotent over a real unit vector $\hat\mu$.
 
 ## Definition, and the Square
 
@@ -32,9 +32,9 @@ The lemma is the reason the idempotent equation is trivial here and nontrivial f
 
 **Proof.** By the lemma the left-hand side is $N(\tilde\Pi)e_0$, an element of the centre, so an idempotent is central, $\tilde\Pi=Ae_0$ with $A\in\mathbb{C}$. For a central element the equation reads $A^2e_0=Ae_0$, that is $A^2=A$, or $A(A-1)=0$; the field $\mathbb{C}$ gives $A\in\{0,1\}$. Both values satisfy the equation.
 
-**Remark (the equation is weaker than centrality).** The single equation $N(\tilde\Pi)=\Pi_0$ is not idempotence; it must be read with centrality attached. Every **pure** isotropic element, an element with $\mathbf Q\neq0$, $Q_0=0$ and $(\mathbf Q,\mathbf Q)=0$, satisfies $N(\tilde Q)=Q_0=0$ and is not an idempotent, its square being $0$ while it is itself neither $0$ nor central; and a non-pure element of norm zero, with $Q_0\neq0$, satisfies no scalar equation of the kind at all, since $N(\tilde Q)=0$ and $Q_0\neq0$. The nilpotents are the subject of *Nilpotents of the General Quaternionic Algebra*; here they matter as the warning that the scalar equation is necessary and not sufficient.
+**Remark (the equation is weaker than centrality).** The single equation $N(\tilde\Pi)=\Pi_0$ is not idempotence; it must be read with centrality attached. Every **pure** isotropic element, an element with $\mathbf Q\neq0$, $Q_0=0$ and $(\mathbf Q,\mathbf Q)=0$, satisfies $N(\tilde Q)=Q_0=0$ and is not an idempotent, its square being $0$ while it is itself neither $0$ nor central; and a non-pure element of algebraic norm zero, with $Q_0\neq0$, satisfies no scalar equation of the kind at all, since $N(\tilde Q)=0$ and $Q_0\neq0$. The nilpotents are the subject of *Nilpotents of the General Quaternionic Algebra*; here they matter as the warning that the scalar equation is necessary and not sufficient.
 
-**Corollary.** The image of the squaring map is the scalar line and contains every idempotent; the idempotents of the product are exactly the central elements whose scalar coordinate is a root of $X^2-X$, and the central element $-e_0$, of norm $1$, shows that the norm alone does not decide idempotence.
+**Corollary.** The image of the squaring map is the scalar line and contains every idempotent; the idempotents of the product are exactly the central elements whose scalar coordinate is a root of $X^2-X$, and the central element $-e_0$, of algebraic norm $1$, shows that the algebraic norm alone does not decide idempotence.
 
 ## The Standard Idempotents of the Algebra
 
@@ -69,16 +69,16 @@ $$
 The plain classification of the idempotents is a **bijection** from the plain roots of $-1$ to the idempotents,
 
 $$
-\xi\longmapsto\tfrac12(e_0+\xi i) ,
+\tilde\Xi\longmapsto\tfrac12(e_0+\tilde\Xi i) ,
 $$
 
 with inverse $\tilde\Pi\mapsto(2\tilde\Pi-e_0)/i$ (*Idempotents of the General Plain Algebra*). In the general quaternionic product this bijection has no analogue, and the article records the two statements that replace it.
 
 **Proposition (the roots of $-1$ are not the idempotent parameters).** No root of $-1$ of the quaternionic product is an idempotent of the product.
 
-**Proof.** An idempotent of the product is $0$ or $e_0$, of norm $0$ or $1$; a root of $-1$ has norm $-1$. The statements are §*The Roots of Minus One* of *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra* and the classification above.
+**Proof.** An idempotent of the product is $0$ or $e_0$, of algebraic norm $0$ or $1$; a root of $-1$ has algebraic norm $-1$. The statements are §*The Roots of Minus One* of *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra* and the classification above.
 
-**Proposition (the plain idempotents are roots of $0$).** For every real unit vector $\hat\mu$, the Hermitian idempotent is a root of $0$ of the quaternionic product, $\tilde\Pi(\hat\mu)\star\tilde\Pi(\hat\mu)=0$, and its norm vanishes. More generally every nontrivial plain idempotent $\tilde\Pi$ satisfies $\tilde\Pi\star\tilde\Pi=0$.
+**Proposition (the plain idempotents are roots of $0$).** For every real unit vector $\hat\mu$, the Hermitian idempotent is a root of $0$ of the quaternionic product, $\tilde\Pi(\hat\mu)\star\tilde\Pi(\hat\mu)=0$, and its algebraic norm vanishes. More generally every nontrivial plain idempotent $\tilde\Pi$ satisfies $\tilde\Pi\star\tilde\Pi=0$.
 
 **Proof.** The first statement is the preceding proposition. A nontrivial plain idempotent is a zero divisor of the plain product, so $N(\tilde\Pi)=0$ (*Zero Divisors of the General Plain Algebra*), and the square in the product is $N(\tilde\Pi)e_0=0$.
 
@@ -133,7 +133,7 @@ Since the square is always central, the equation $\tilde\Pi\star\tilde\Pi=\tilde
 | $\mathbb{M}_{+}$, the Hermitian subspace | $a_0e_0+i\mathbf p$ | $\bigl(a_0^2-(\mathbf p,\mathbf p)\bigr)e_0$ | $0$, $e_0$ |
 | $\mathbb{M}_{-}$, the anti-Hermitian subspace | $ib_0e_0+\mathbf q$ | $\bigl(-b_0^2+(\mathbf q,\mathbf q)\bigr)e_0$ | $0$ |
 
-**Proof.** Each entry is the norm on the subspace of the same row, by the norm table of *Norm and Invertibility in the General Quaternionic Algebra*. In the centre the equation leaves $A^2=A$, hence $A\in\{0,1\}$. In the vector subspace a central element equals a vector only at $0$; a nonzero isotropic element has square $0$ and is not idempotent. In the quaternion subspace the square is a **real** scalar multiple of $e_0$, so an idempotent is a real multiple of $e_0$ with $h_0^2=h_0$. In the anti-quaternion subspace the square is a real multiple of $e_0$ with the opposite sign, so $h=0$. In $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ the scalar parts are constrained to be real combinations, and the equation forces the vector part to vanish, then leaves the trivial pair or the origin as displayed.
+**Proof.** Each entry is the algebraic norm on the subspace of the same row, by the table of *Norm and Invertibility in the General Quaternionic Algebra*. In the centre the equation leaves $A^2=A$, hence $A\in\{0,1\}$. In the vector subspace a central element equals a vector only at $0$; a nonzero isotropic element has square $0$ and is not idempotent. In the quaternion subspace the square is a **real** scalar multiple of $e_0$, so an idempotent is a real multiple of $e_0$ with $h_0^2=h_0$. In the anti-quaternion subspace the square is a real multiple of $e_0$ with the opposite sign, so $h=0$. In $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ the scalar parts are constrained to be real combinations, and the equation forces the vector part to vanish, then leaves the trivial pair or the origin as displayed.
 
 **Remark.** Three subspaces, the centre, the quaternion subspace and the Hermitian subspace, carry the two trivial idempotents, and three, the vector, the anti-quaternion and the anti-Hermitian subspaces, carry only $0$; no remarkable subspace carries a nontrivial idempotent. The plain reading is the opposite: there the nontrivial idempotents are the Hermitian idempotents and lie in $\mathbb{M}_{+}$. The change of product moves them out of the idempotent set altogether.
 
@@ -156,7 +156,7 @@ In the general quaternionic bilinear product the square of every element is the 
 | $\tilde Q=Q_0e_0+\mathbf Q$ | an element and its scalar–vector split |
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product |
 | ${}^{\natural}$ | the natural conjugation $\tilde Q^{\natural}=Q_0-\mathbf Q$ |
-| $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the norm, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ |
+| $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the algebraic norm, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ |
 | $\tilde\Pi$ | an idempotent of the product; the nonzero ones are $e_0$ alone |
 | $\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ | the Hermitian idempotent over a real unit vector $\hat\mu$ |
 | $L_{\tilde P}$ | the left multiplication $\tilde X\mapsto\tilde P\star\tilde X$, a projector iff $\tilde P$ is a plain idempotent |
@@ -170,7 +170,7 @@ In the general quaternionic bilinear product the square of every element is the 
 - Sterling K. Berberian, *Baer \*-Rings* (Springer, 1972), for idempotents and their order in a ring with an involution.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the conjugations of an algebra and the elements they fix.
 - *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the Hermitian idempotents, the orthogonality, the bijection with the roots of $-1$ and the non-pure zero divisors.
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm, its table on the remarkable subspaces and the one-sided equations.
+- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the algebraic norm, its table on the remarkable subspaces and the one-sided equations.
 - *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md`), for the criterion, the two families and the annihilators.
 - *Nilpotents of the General Quaternionic Algebra* (`articles_maths/nilpotents-of-the-general-quaternionic-algebra.md`), for the square-zero elements, the cone and the index two.
 - *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* (`articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md`), for the monoid law and the projectors.

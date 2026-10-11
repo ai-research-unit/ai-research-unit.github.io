@@ -57,22 +57,22 @@ So the scalar axis, the imaginary three-space and the origin are the fixed sets,
 
 ## The Roots of Minus One
 
-**Definition.** A **root of $-1$** is a quaternion $\xi$ with $\xi^2 = -1$.
+**Definition.** A **root of $-1$** is a quaternion $\tilde\xi$ with $\tilde\xi^2 = -1$.
 
 **Theorem.** The roots of $-1$ are the pure imaginary quaternions of norm one.
 
-*Proof.* Write $\xi = p_0+\mathbf{p}$. Then $\xi^2 = p_0^2-N(\mathbf{p})+2p_0\mathbf{p}$, so $\xi^2 = -1$ gives $2p_0\mathbf{p} = 0$ and $p_0^2-N(\mathbf{p}) = -1$. If $p_0\neq0$ then $\mathbf{p} = 0$ and $p_0^2 = -1$, impossible, so $p_0 = 0$ and $N(\mathbf{p}) = 1$.
+*Proof.* Write $\tilde\xi = p_0+\mathbf{p}$. Then $\tilde\xi^2 = p_0^2-N(\mathbf{p})+2p_0\mathbf{p}$, so $\tilde\xi^2 = -1$ gives $2p_0\mathbf{p} = 0$ and $p_0^2-N(\mathbf{p}) = -1$. If $p_0\neq0$ then $\mathbf{p} = 0$ and $p_0^2 = -1$, impossible, so $p_0 = 0$ and $N(\mathbf{p}) = 1$.
 
 **Worked roots.** The element
 
 $$
-\xi = \frac{e_1+e_2+e_3}{\sqrt3}
+\tilde\xi = \frac{e_1+e_2+e_3}{\sqrt3}
 $$
 
 is a root of $-1$: its square is
 
 $$
-\xi^2 = \tfrac13\bigl(e_1^2+e_2^2+e_3^2+e_1e_2+e_2e_1+e_2e_3+e_3e_2+e_3e_1+e_1e_3\bigr) = \tfrac13(-3+0) = -1,
+\tilde\xi^2 = \tfrac13\bigl(e_1^2+e_2^2+e_3^2+e_1e_2+e_2e_1+e_2e_3+e_3e_2+e_3e_1+e_1e_3\bigr) = \tfrac13(-3+0) = -1,
 $$
 
 because the off-diagonal products cancel in pairs and each square is $-1$. The element $e_2$ is a root, and so is the whole sphere $u_1e_1+u_2e_2+u_3e_3$ with $u_1^2+u_2^2+u_3^2 = 1$.

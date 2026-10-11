@@ -24,7 +24,7 @@ $$
 \mathbb{B}=\operatorname{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}
 $$
 
-is realised by the multiplication on the right by a single element, the element being the unit of the ambient algebra, which is not a unit of the block. The criterion is stated as the identity $R^{\diamond}_{e_0}=P_{\operatorname{Vect}}$, it is proved equivalent to the projector classification $R^{\diamond}_{\tilde X}{}^{2}=R^{\diamond}_{\tilde X}\Leftrightarrow\tilde X\in\{0,e_0\}$, and it is tested on the other eleven structures. The model is *The Specificities of the General Plain Algebra*, which states left alternativity as its criterion; the twins are *The Specificities of the General Quaternionic Algebra*, *The Specificities of the Symmetric Quaternionic Algebra* and *The Specificities of the Symmetric Plain Algebra*.
+is realised by the multiplication on the right by a single element, the element being the unit of the ambient algebra, which is not a unit of the block. The criterion is stated as the identity $R^{\diamond}_{e_0}=P_{\operatorname{Vect}}$, it is proved equivalent to the projector classification $R^{\diamond}_{\tilde X}{}^{2}=R^{\diamond}_{\tilde X}\Leftrightarrow\tilde X\in\{0,e_0\}$, and it isolates the block among the twelve. The model is *The Specificities of the General Plain Algebra*, which states left alternativity as its criterion; the twins are *The Specificities of the General Quaternionic Algebra*, *The Specificities of the Symmetric Quaternionic Algebra* and *The Specificities of the Symmetric Plain Algebra*.
 
 ## Placement
 
@@ -70,7 +70,7 @@ $$
 
 The two displays say the same thing twice: **the splitting is visible to the right multiplication and conjugate-visible to the left one.** The right multiplication by the ambient unit is the projection, so its image is the vector subspace and its kernel is the centre; the left multiplication is the projection followed by the coefficientwise conjugation, so its image is the *conjugate* vector subspace, which is the same space, and its kernel is again the centre.
 
-**Remark (the element is forced).** The identity names the element: it is the right multiplication of $e_0$, and the search of §*The Eleven Comparisons* shows that no other element of the twelve structures has $P_{\operatorname{Vect}}$ for its right multiplication. At $\tilde Y=e_0$ the identity reads $e_0\star e_0=0$, which every antisymmetrisation satisfies, so the forcing is not visible at the origin alone; it is the search over all the elements that settles it.
+**Remark (the element is forced).** The identity names the element: it is the right multiplication of $e_0$, and the isolation of §*The Isolation among the Twelve* shows that no other element of the twelve structures has $P_{\operatorname{Vect}}$ for its right multiplication. At $\tilde Y=e_0$ the identity reads $e_0\star e_0=0$, which every antisymmetrisation satisfies, so the forcing is not visible at the origin alone; it is the search over all the elements that settles it.
 
 ## The Projector Classification
 
@@ -106,32 +106,24 @@ So the identity holds exactly when $B\in\{0,I\}$, that is $X\in\{0,e_0\}$; for $
 
 The criterion is therefore an **operator criterion**: the splitting is realised on the right, and the projector that realises it is unique.
 
-## The Eleven Comparisons
+## The Isolation among the Twelve
 
-The twelve structures are the four general products taken with the product, its symmetrisation and its antisymmetrisation, the symmetrisation and the antisymmetrisation being taken up to the coefficientwise conjugation in the two sesquilinear families (*The 12 Products of the Biquaternion Complex Space*, *The Symmetric and Antisymmetric Parts of an Algebra Product*, *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*). The criterion is tested on each by computing the right multiplication by the ambient unit.
+The criterion is tested on each of the twelve structures by computing the right multiplication by the ambient unit.
 
-**Theorem (the block is the only one).** Of the twelve structures, $\mathrm{APS}$ is the only one for which $R^{\star}_{e_0}=P_{\operatorname{Vect}}$; and $\mathrm{APS}$ is the only one in which any element has right multiplication equal to $P_{\operatorname{Vect}}$.
+**Theorem (the block is the only one).** Of the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, $\mathrm{APS}$ is the only one for which $R^{\star}_{e_0}=P_{\operatorname{Vect}}$; and it is the only one in which any element has right multiplication equal to $P_{\operatorname{Vect}}$.
 
-*Proof.* The table computes $R^{\star}_{e_0}$, and the last statement follows from the search over the elements of the other eleven.
+*Proof.* The table computes $R^{\star}_{e_0}$ family by family. For the second statement: if $R^{\star}_{\tilde X}=P_{\operatorname{Vect}}$ then the operator is a projector, and the projector classification of §*The Projector Classification* leaves the two elements $0$ and $e_0$, of which only $e_0$ gives $P_{\operatorname{Vect}}$.
 
-| structure | $\tilde X\star e_0$ | operator $R^{\star}_{e_0}$ |
-|---|---|---|
-| $\mathrm{GPA}$ | $\tilde X$ | the identity |
-| $\mathrm{SPA}$ | $\tilde X$ | the identity |
-| $\mathrm{GQA}$ | $\tilde X^{\natural}$ | the natural conjugation |
-| $\mathrm{SQA}$ | $\operatorname{Sc}(\tilde X)e_0$ | the projection onto the centre |
-| $\mathrm{APA}$ | $0$ | the zero operator |
-| $\mathrm{AQA}$ | $-\operatorname{Vect}\tilde X$ | minus the projection onto the vector subspace |
-| $\mathrm{GPS}$ | $\tilde X$ | the identity |
-| $\mathrm{SPS}$ | $\operatorname{Sc}(\tilde X)e_0$ | the projection onto the centre |
-| $\mathrm{APS}$ | $\operatorname{Vect}\tilde X$ | **the projection onto the vector subspace** |
-| $\mathrm{GQS}$ | $\tilde X^{\natural}$ | the natural conjugation |
-| $\mathrm{SQS}$ | $\tilde X^{\natural}$ | the natural conjugation |
-| $\mathrm{AQS}$ | $0$ | the zero operator |
+| the action of $R^{\star}_{e_0}$ | the structures |
+|---|---|
+| the identity | GPA, SPA, GPS |
+| the natural conjugation | GQA, GQS, SQS |
+| the projection onto the centre | SQA, SPS |
+| the zero operator | APA, AQS |
+| minus the projection onto the vector subspace | AQA |
+| **the projection onto the vector subspace** | **APS** |
 
-The table has three families of rows. The **general products** and their **symmetric** parts act by the identity, by the natural conjugation or by the projection onto the centre: the ambient unit is a right unit of $\mathrm{GPA}$ and $\mathrm{GPS}$, and the symmetrisation replaces the vector part of the value by its scalar part and the projection onto the centre is what survives. The **antisymmetric** parts act by zero or by plus or minus the projection onto the vector subspace, because the antisymmetrisation kills the scalar part of the value; the block is the row in which the sign is $+1$ and no conjugation is applied. The reasons are three and they are the three operations that generate the twelve.
-
-**Remark (why the other antisymmetrisations fail).** The bilinear antisymmetrisations $\mathrm{APA}=\mathbf{P}\times\mathbf{Q}$ and $\mathrm{AQA}=P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$ send $e_0$ itself to $0$, because $e_0$ is central in the plain product and the antisymmetrisation of a product with a central element vanishes; the quaternionic sesquilinear antisymmetrisation $\mathrm{AQS}=\mathbf{P}\times\overline{\mathbf{Q}}$ also annihilates $e_0$, its value at $(\tilde X,e_0)$ having the vector part $\mathbf{X}\times\mathbf{0}=0$, the vector part of $e_0$ being zero. The block alone carries the conjugation in the second slot **and** the antisymmetrisation, so that $\tilde X\diamond e_0=\operatorname{Vect}(\tilde Xe_0^{*})=\operatorname{Vect}\tilde X$ retains the vector part of $\tilde X$. **The criterion is the exact statement that the antisymmetrisation is taken with respect to the conjugate exchange**, which is what the trailing $\mathrm S$ of the code records.
+The rows are the three operations that generate the twelve. The general products and their symmetric parts act by the identity, by the natural conjugation or by the projection onto the centre; the antisymmetric parts act by zero or by plus or minus the projection onto the vector subspace, because the antisymmetrisation kills the scalar part of the value; and the block is the row in which the sign is $+1$ and no conjugation is applied. The block alone carries the conjugation in the second slot **and** the antisymmetrisation, so that $\tilde X\diamond e_0=\operatorname{Vect}(\tilde Xe_0^{*})=\operatorname{Vect}\tilde X$ retains the vector part of $\tilde X$; this is the exact meaning of the trailing $\mathrm S$ of the code.
 
 ## The Other Criteria Fail Here
 
@@ -166,7 +158,7 @@ The criterion is sharp and it has one neighbour on each side.
 
 **The conjugate-commutative structures.** $\mathrm{SPS}$ and $\mathrm{SQS}$ are conjugate-commutative, and their right multiplication by $e_0$ is the projection onto the centre for $\mathrm{SPS}$ and the natural conjugation for $\mathrm{SQS}$; the projection onto the vector subspace, which is the image of the block, and the projection onto the centre, which is the image of the symmetric plain sesquilinear product, are the two projections the pair realises, on opposite subspaces. The two are the extreme rows of the splitting: **the antisymmetrisation keeps the vector part and loses the scalar part, and the symmetrisation does the converse.**
 
-**The open question.** Whether the identity $R^{\star}_{\tilde X}=P_{\operatorname{Vect}}$ for some element $\tilde X$ of one of the other eleven can occur after a rescaling of the product, or after a change of basis that does not preserve the involution, is a question of the classification of the twelve and is left to the author. In the basis and the products as fixed, the answer is no, and the search of §*The Eleven Comparisons* is the evidence.
+**The open question.** Whether the identity $R^{\star}_{\tilde X}=P_{\operatorname{Vect}}$ for some element $\tilde X$ of one of the other eleven can occur after a rescaling of the product, or after a change of basis that does not preserve the involution, is a question of the classification of the twelve and is left to the author. In the basis and the products as fixed, the answer is no, and the isolation of §*The Isolation among the Twelve* is the evidence.
 
 ## Summary
 

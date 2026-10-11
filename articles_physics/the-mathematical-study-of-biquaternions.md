@@ -43,7 +43,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [Ideals and Peirce Decomposition of the General Plain Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.html)
 - [Modules over the General Plain Algebra of Biquaternions](../articles_maths/modules-over-the-general-plain-algebra-of-biquaternions.html)
-- [The Enveloping Algebra of the General Plain Algebra and the Bi-module Structure](../articles_maths/the-enveloping-algebra-of-the-general-plain-algebra-and-the-bi-module-structure.html)
+- [The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-general-plain-algebra-and-the-bi-module-structure.html)
 - [Biquaternion Square Roots of Minus One, Zero and Plus One](../articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.html)
 - [Biquaternion Square Roots of a General Element](../articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.html)
 - [The Specificities of the General Plain Algebra](../articles_maths/the-specificities-of-the-general-plain-algebra.html)

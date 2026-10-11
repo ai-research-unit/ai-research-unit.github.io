@@ -139,7 +139,7 @@ The idempotent equation $\tilde Q\star\tilde Q = \tilde Q$ is the other element 
 
 | product | idempotents |
 |---|---|
-| $\tilde P\tilde Q$ | $0$, $e_0$, and $\tfrac12(e_0+\xi i)$ for a root $\xi$ of $-e_0$ |
+| $\tilde P\tilde Q$ | $0$, $e_0$, and $\tfrac12(e_0+\tilde\Xi i)$ for a root $\tilde\Xi$ of $-e_0$ |
 | $\tilde P^{\natural}\tilde Q$ | $0$ and $e_0$ alone |
 | $\tilde P\tilde Q^{*}$ | $0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0+i\hat\mu)$ over the real unit vectors |
 | $\tilde P^{\natural}\tilde Q^{*}$ | $0$, $e_0$, and $-\tfrac12e_0+\mu$ over the real vectors with $(\mu,\mu) = \tfrac34$ |

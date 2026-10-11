@@ -40,11 +40,11 @@ $$
 
 **Proof.** The first display is the definition of the product at equal arguments; the scalar–vector form of *Introduction to the General Quaternionic Algebra of Biquaternions* gives $\tilde Q^{\natural}\tilde Q=(Q_0-\mathbf Q)(Q_0+\mathbf Q)=Q_0^2-\mathbf Q^2$, and $\mathbf Q^2=-(\mathbf Q,\mathbf Q)$ for a vector part. The same scalar is produced in the two orders, $\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}$, because the computation read the other way, $(Q_0+\mathbf Q)(Q_0-\mathbf Q)=Q_0^2-\mathbf Q^2$, gives the same value.
 
-The norm is therefore an element of $\mathbb{C}$ and not a length: it is the value of a quadratic form on the complex space $\mathbb{B}$, and its vanishing set is a cone and not a sphere.
+The algebraic norm is therefore an element of $\mathbb{C}$ and not a length: it is the value of a quadratic form on the complex space $\mathbb{B}$, and its vanishing set is a cone and not a sphere.
 
 ### The Polarisation
 
-**Proposition.** The polar form of the norm is the scalar coefficient of the symmetrised product. Writing
+**Proposition.** The polar form of the algebraic norm is the scalar coefficient of the symmetrised product. Writing
 
 $$
 N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q) ,
@@ -59,7 +59,7 @@ $$
 
 **Proof.** The scalar–vector form of $\tilde P+\tilde Q$ gives $N(\tilde P+\tilde Q)=N(\tilde P)+N(\tilde Q)+2N(\tilde P,\tilde Q)$; and $\tilde P\star\tilde Q+\tilde Q\star\tilde P=(\tilde P^{\natural}\tilde Q)+(\tilde P^{\natural}\tilde Q)^{\natural}$ has scalar part twice $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=N(\tilde P,\tilde Q)$ and vanishing vector part, by the symmetry computation of the introduction.
 
-The symmetric half read as an operation, with its centrality, its coefficient on the remarkable subspaces and its Jordan reading, is *The Symmetrised Quaternionic Product and the Hermitian Subspace*, which owns the symmetrisation; the proposition above is the same statement read as the polarisation of the quadratic form of the norm.
+The symmetric half read as an operation, with its centrality, its coefficient on the remarkable subspaces and its Jordan reading, is *The Symmetrised Quaternionic Product and the Hermitian Subspace*, which owns the symmetrisation; the proposition above is the same statement read as the polarisation of the quadratic form of the algebraic norm.
 
 ### Multiplicativity
 
@@ -81,7 +81,7 @@ using that $N(\tilde P)$ is central. For the invariance, $N(\tilde P^{\natural})
 
 The multiplicativity is the law of the algebraic norm of this product, and it is the reason this product is the one that carries the multiplicative quadratic form of the space; the plain product carries a different algebraic norm, $B$, which is not multiplicative.
 
-**Corollary.** The vanishing set of the norm is stable under the product: if $N(\tilde Q)=0$ then $N(\tilde P\star\tilde Q)=0$ for every $\tilde P$, and the same with the factors exchanged.
+**Corollary.** The vanishing set of the algebraic norm is stable under the product: if $N(\tilde Q)=0$ then $N(\tilde P\star\tilde Q)=0$ for every $\tilde P$, and the same with the factors exchanged.
 
 ## The Unit and the Absence of the Inverse
 
@@ -145,7 +145,7 @@ The criterion is expressed by the algebraic norm $N$ of this product, because th
 
 ## The Three-Way Classification
 
-The elements of $\mathbb{B}$ fall into three classes according to the value of the norm, and the classes are the ones of the plain algebra with the inverse column replaced by the one-sided column.
+The elements of $\mathbb{B}$ fall into three classes according to the value of the algebraic norm, and the classes are the ones of the plain algebra with the inverse column replaced by the one-sided column.
 
 | condition on $N(\tilde P)$ | condition on $\tilde P$ | under the plain product | under the quaternionic product |
 |---|---|---|---|
@@ -157,11 +157,11 @@ The classification is a classification of the elements by their behaviour in the
 
 ## The Group of Units, and Why There Is None
 
-Let $\mathbb{B}^{\times}=\{\tilde P:N(\tilde P)\neq0\}$ be the set of the elements on which the norm does not vanish.
+Let $\mathbb{B}^{\times}=\{\tilde P:N(\tilde P)\neq0\}$ be the set of the elements on which the algebraic norm does not vanish.
 
 **Proposition.** The set $\mathbb{B}^{\times}$ is the group of units of the plain product, it contains $e_0$, and it is stable under the quaternionic product. It is **not** a group under $\star$: the product has no two-sided unit and it is not associative, so $\mathbb{B}^{\times}$ with $\star$ is a set with a left unit in which every left translation is a bijection, and nothing more.
 
-**Proof.** The first clause is the plain invertibility criterion. Stability under $\star$ is the multiplicativity of the norm: $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)\neq0$. The absence of a two-sided unit is §*The Unit and the Absence of the Inverse*, and the failure of associativity is *Introduction to the General Quaternionic Algebra of Biquaternions*; a group requires both, so there is none. Finally, the left translation $\tilde X\mapsto\tilde P\star\tilde X=L^{\mathrm{plain}}_{\tilde P^{\natural}}(\tilde X)$ is a plain left multiplication by a unit and is therefore a bijection, and the same holds on the right by the multiplicativity read in the other order.
+**Proof.** The first clause is the plain invertibility criterion. Stability under $\star$ is the multiplicativity of the algebraic norm: $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)\neq0$. The absence of a two-sided unit is §*The Unit and the Absence of the Inverse*, and the failure of associativity is *Introduction to the General Quaternionic Algebra of Biquaternions*; a group requires both, so there is none. Finally, the left translation $\tilde X\mapsto\tilde P\star\tilde X=L^{\mathrm{plain}}_{\tilde P^{\natural}}(\tilde X)$ is a plain left multiplication by a unit and is therefore a bijection, and the same holds on the right by the multiplicativity read in the other order.
 
 **Corollary (the group of the left multiplications).** The left multiplications $L_{\tilde P}$ with $\tilde P\in\mathbb{B}^{\times}$ are the invertible left multiplications of the product; they form a group under composition, and the map $\tilde P\mapsto L_{\tilde P}$ is an anti-isomorphism of $\mathbb{B}^{\times}$ onto it. The monoid law $L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$ and the failure of the right family are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*.
 
@@ -173,7 +173,7 @@ This is the precise sense in which the product "has a group of units" only on th
 
 The algebraic norm is the quadratic form of the algebra, so its restriction to the remarkable subspaces is a form with a signature, and the sign decides which subspaces carry elements of algebraic norm zero. The signatures are computed in *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* and are quoted here.
 
-| remarkable subspace | signature of $N$ | elements of norm zero |
+| remarkable subspace | signature of $N$ | elements of algebraic norm zero |
 |---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$, the centre | $(1,1)$ | $0$ alone |
 | $\mathrm{Vect}(\mathbb{B})$, the vector subspace | $(3,3)$ | the isotropic cone of the vector subspace |
@@ -182,15 +182,15 @@ The algebraic norm is the quadratic form of the algebra, so its restriction to t
 | $\mathbb{M}_{+}$, the Hermitian subspace | $(1,3)$ | the isotropic cone of $\mathbb{M}_{+}$, all of it non-pure |
 | $\mathbb{M}_{-}$, the anti-Hermitian subspace | $(3,1)$ | the isotropic cone of $\mathbb{M}_{-}$, all of it non-pure |
 
-**Corollary.** Every nonzero element of the quaternion subspace and of the anti-quaternion subspace is a unit of the plain product and satisfies both one-sided equations of $\star$. The other four subspaces contain nonzero elements of norm zero; on those the criterion fails and neither one-sided equation is soluble, and they are zero divisors of the algebra.
+**Corollary.** Every nonzero element of the quaternion subspace and of the anti-quaternion subspace is a unit of the plain product and satisfies both one-sided equations of $\star$. The other four subspaces contain nonzero elements of algebraic norm zero; on those the criterion fails and neither one-sided equation is soluble, and they are zero divisors of the algebra.
 
-**Proof.** The norm is definite on the quaternion and the anti-quaternion subspaces and indefinite on the other four, by the table; the criterion of §*The Criterion* converts the values into the two statements. On a pure element the norm is $(\mathbf P,\mathbf P)$ and on a Hermitian element it is $|a_0|^2-|\mathbf b|^2$ in the coordinates of the subspace, so every zero of the norm in $\mathbb{M}_{+}$ or in $\mathbb{M}_{-}$ has non-zero scalar part, that is, is non-pure.
+**Proof.** The algebraic norm is definite on the quaternion and the anti-quaternion subspaces and indefinite on the other four, by the table; the criterion of §*The Criterion* converts the values into the two statements. On a pure element the algebraic norm is $(\mathbf P,\mathbf P)$ and on a Hermitian element it is $|a_0|^2-|\mathbf b|^2$ in the coordinates of the subspace, so every zero of the algebraic norm in $\mathbb{M}_{+}$ or in $\mathbb{M}_{-}$ has non-zero scalar part, that is, is non-pure.
 
 ## Summary
 
 The general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ has a central square, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ with $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q)$, and this scalar is the **algebraic norm** of the product, with polar form the scalar coefficient $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ of the symmetrised product and with the multiplicative law $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$.
 
-The product has the left unit $e_0$ and no right one, hence no two-sided unit, and the definition of the inverse, which requires one, applies to no element: **there is no invertible element and no group of units of the quaternionic product**. What survives is the pair of one-sided equations relative to $e_0$: both have the same unique solution, $(\tilde P^{-1})^{\natural}=\tilde P/N(\tilde P)$, exactly when $N(\tilde P)\neq0$, and neither has a solution when $N(\tilde P)=0$. The criterion is thus the norm, as for the plain product, and the elements of non-vanishing norm form the plain group of units $\mathbb{B}^{\times}$, stable under $\star$ and carrying the invertible left multiplications, without being a group of the product. On the quaternion and the anti-quaternion subspaces the norm is definite and every nonzero element is a unit of the plain product; on the centre, the vector, the Hermitian and the anti-Hermitian subspaces it is indefinite and they carry the zero divisors.
+The product has the left unit $e_0$ and no right one, hence no two-sided unit, and the definition of the inverse, which requires one, applies to no element: **there is no invertible element and no group of units of the quaternionic product**. What survives is the pair of one-sided equations relative to $e_0$: both have the same unique solution, $(\tilde P^{-1})^{\natural}=\tilde P/N(\tilde P)$, exactly when $N(\tilde P)\neq0$, and neither has a solution when $N(\tilde P)=0$. The criterion is thus the algebraic norm, as for the plain product, and the elements of non-vanishing algebraic norm form the plain group of units $\mathbb{B}^{\times}$, stable under $\star$ and carrying the invertible left multiplications, without being a group of the product. On the quaternion and the anti-quaternion subspaces the norm is definite and every nonzero element is a unit of the plain product; on the centre, the vector, the Hermitian and the anti-Hermitian subspaces it is indefinite and they carry the zero divisors.
 
 ## Summary of Notation
 
@@ -210,7 +210,7 @@ The product has the left unit $e_0$ and no right one, hence no two-sided unit, a
 
 ## Further Reading
 
-- Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the norm and the one-sided inverses of a non-associative algebra.
+- Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the algebraic norm and the one-sided inverses of a non-associative algebra.
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras* (American Mathematical Society, 1968), for a quadratic form defined by a product and the polarisation of its multiplicative law.
 - *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the diagonal of a form and the separation of the four algebraic norms.
 - *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the algebraic norm $B$ of the plain product, which is not the form $N$ of this article.
@@ -218,4 +218,4 @@ The product has the left unit $e_0$ and no right one, hence no two-sided unit, a
 - *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md`), for the set $\{N=0\}\setminus\{0\}$, its criterion and its annihilators.
 - *The Zero Divisors and the Four General Products* (`articles_maths/the-zero-divisors-and-the-four-general-products.md`), for the one-sided inverse equations of the four general products tabulated side by side.
 - *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* (`articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md`), for the monoid law of the left multiplications and the group of its invertible elements.
-- *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the signatures of the norm on the six subspaces.
+- *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the signatures of the algebraic norm on the six subspaces.

@@ -443,12 +443,12 @@ The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of two four-dimen
 The root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is the product of two copies of the unit sphere $\mathbb{S}^2$:
 
 $$
-\{\xi \in \mathbb{H}_{\mathbb{D}} : \xi^2 = -1\} \cong \mathbb{S}^2 \times \mathbb{S}^2.
+\{\tilde\Xi \in \mathbb{H}_{\mathbb{D}} : \tilde\Xi^2 = -1\} \cong \mathbb{S}^2 \times \mathbb{S}^2.
 $$
 
-The isomorphism is given by $\xi \mapsto (\mu_+, \mu_-)$, where $\xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2$ and $\mu_\pm$ are unit pure real quaternions.
+The isomorphism is given by $\tilde\Xi \mapsto (\mu_+, \mu_-)$, where $\tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2$ and $\mu_\pm$ are unit pure real quaternions.
 
-The parametrisation $\xi \mapsto (\mu_+, \mu_-)$ is a regular parametrisation: its differential has rank $4$ everywhere, because the two-sphere is a manifold and the parametrisation is a product of the two identity maps. So the root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is a compact four-dimensional embedded submanifold, isomorphic to $\mathbb{S}^2 \times \mathbb{S}^2$. The proof of regularity uses the derivative, and for that reason the manifold statement is placed here in the analysis rather than in the algebraic article *Split-Biquaternion Roots of Minus One*, where the root set is determined only as a set.
+The parametrisation $\tilde\Xi \mapsto (\mu_+, \mu_-)$ is a regular parametrisation: its differential has rank $4$ everywhere, because the two-sphere is a manifold and the parametrisation is a product of the two identity maps. So the root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is a compact four-dimensional embedded submanifold, isomorphic to $\mathbb{S}^2 \times \mathbb{S}^2$. The proof of regularity uses the derivative, and for that reason the manifold statement is placed here in the analysis rather than in the algebraic article *Split-Biquaternion Roots of Minus One*, where the root set is determined only as a set.
 
 ### Comparison with the Biquaternion Root Set
 
@@ -516,7 +516,7 @@ The specialization to specific four-dimensional subspaces, including the quatern
 | $\Box$ | d'Alembertian (wave operator) |
 | $\tilde{\nabla}^2$ | Square of the split-biquaternion gradient |
 | $\tilde{D}$ | Split-biquaternion convective derivative |
-| $\{\xi \in \mathbb{H}_{\mathbb{D}} : \xi^2 = -1\} \cong \mathbb{S}^2\times\mathbb{S}^2$ | Root set of $-1$, a compact four-dimensional manifold |
+| $\{\tilde\Xi \in \mathbb{H}_{\mathbb{D}} : \tilde\Xi^2 = -1\} \cong \mathbb{S}^2\times\mathbb{S}^2$ | Root set of $-1$, a compact four-dimensional manifold |
 
 ## Further Reading
 

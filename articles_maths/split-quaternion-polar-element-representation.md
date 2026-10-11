@@ -78,7 +78,7 @@ $$
 \tau(1) = 1, \qquad \tau(e_1) = -e_1, \qquad \tau(e_2) = e_2, \qquad \tau(e_3) = e_3,
 $$
 
-and on a general element it reads $\tilde q^{\tau} = q_0 e_0 - q_1 e_1 + q_2 e_2 + q_3 e_3$. That $\tau$ is an anti-automorphism, $(\xi\eta)^{\tau} = \eta^{\tau}\xi^{\tau}$, is inherited from the transpose of matrices; it can also be checked on the three products that generate the algebra. Its fixed space is
+and on a general element it reads $\tilde q^{\tau} = q_0 e_0 - q_1 e_1 + q_2 e_2 + q_3 e_3$. That $\tau$ is an anti-automorphism, $(\tilde\xi\eta)^{\tau} = \eta^{\tau}\tilde\xi^{\tau}$, is inherited from the transpose of matrices; it can also be checked on the three products that generate the algebra. Its fixed space is
 
 $$
 \{\tilde q : \tilde q^{\tau} = \tilde q\} = \operatorname{span}\{1, e_2, e_3\},

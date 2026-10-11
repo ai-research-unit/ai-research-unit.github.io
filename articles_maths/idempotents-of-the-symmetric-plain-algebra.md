@@ -46,7 +46,7 @@ $$
 \tilde\Pi=\tfrac12\bigl(e_0+\mathbf{u}\bigr),\qquad \mathbf{u}\in\mathrm{Vect}(\mathbb{B}),\quad \mathbf{u}\neq0,\quad \mathbf{u}^2=e_0 ,
 $$
 
-a four-real-parameter family, equivalently written $\tilde\Pi=\tfrac12(e_0+\boldsymbol{\xi} i)$ with $\boldsymbol{\xi}$ pure and $\boldsymbol{\xi}^2=-e_0$.
+a four-real-parameter family, equivalently written $\tilde\Pi=\tfrac12(e_0+\boldsymbol{\tilde\Xi} i)$ with $\boldsymbol{\tilde\Xi}$ pure and $\boldsymbol{\tilde\Xi}^2=-e_0$.
 
 *Proof.* Write $\tilde\Pi=\Pi_0e_0+\boldsymbol{\Pi}$ and use the plain square $\tilde\Pi^2=\bigl[\Pi_0^2-(\boldsymbol{\Pi},\boldsymbol{\Pi})\bigr]e_0+2\Pi_0\boldsymbol{\Pi}$. The equation $\tilde\Pi^2=\tilde\Pi$ is the pair
 
@@ -56,7 +56,7 @@ $$
 
 The first forces $(2\Pi_0-1)\boldsymbol{\Pi}=0$: either $\boldsymbol{\Pi}=0$, and the second gives $\Pi_0^2=\Pi_0$, that is $\tilde\Pi=0$ or $\tilde\Pi=e_0$; or $\Pi_0=\tfrac12$, and then $(\boldsymbol{\Pi},\boldsymbol{\Pi})=-\tfrac14$, that is $\boldsymbol{\Pi}=\tfrac12\mathbf{u}$ with $\mathbf{u}$ pure and $(\mathbf{u},\mathbf{u})=-1$, which is $\mathbf{u}^2=e_0$. The two cases are exhaustive.
 
-The parametrisation $\mathbf{u}=\boldsymbol{\xi} i$ is the corpus's form: with $\boldsymbol{\xi}$ pure and $\boldsymbol{\xi}^2=-e_0$ one has $\mathbf{u}^2=\boldsymbol{\xi}^2i^2=(-e_0)(-e_0)=e_0$, and conversely every pure $\mathbf{u}$ with $\mathbf{u}^2=e_0$ is $\boldsymbol{\xi}=\mathbf{u}i^{-1}$ with $\boldsymbol{\xi}^2=-e_0$.
+The parametrisation $\mathbf{u}=\boldsymbol{\tilde\Xi} i$ is the corpus's form: with $\boldsymbol{\tilde\Xi}$ pure and $\boldsymbol{\tilde\Xi}^2=-e_0$ one has $\mathbf{u}^2=\boldsymbol{\tilde\Xi}^2i^2=(-e_0)(-e_0)=e_0$, and conversely every pure $\mathbf{u}$ with $\mathbf{u}^2=e_0$ is $\boldsymbol{\tilde\Xi}=\mathbf{u}i^{-1}$ with $\boldsymbol{\tilde\Xi}^2=-e_0$.
 
 **Corollary (the bijection).** The map $\mathbf{u}\mapsto\tfrac12(e_0+\mathbf{u})$ is a bijection from the pure roots of $+1$ onto the non-trivial idempotents, and the non-trivial idempotents are exactly the pure roots of $+1$ divided by two and translated by $\tfrac12e_0$.
 
@@ -123,7 +123,7 @@ The middle space is the Jordan analogue of the two mixed Peirce spaces of an ass
 
 ## Summary
 
-The idempotents of the block are the idempotents of the plain product, the two squares being equal. They are the origin, the unit, and the four-real-parameter family $\tfrac12(e_0+\mathbf{u})$ with $\mathbf{u}$ pure and $\mathbf{u}^2=e_0$, equivalently $\tfrac12(e_0+\boldsymbol{\xi} i)$ with $\boldsymbol{\xi}$ a pure root of $-1$; the non-trivial idempotents are in bijection with the pure roots of $+1$. Every non-trivial idempotent is isotropic, $c=0$, and is a zero divisor whose annihilator is the line spanned by its natural conjugate, while the two trivial idempotents are not zero divisors. An idempotent and its complement $e_0-\tilde\Pi$ are orthogonal idempotents. The block is not left-alternative, so a non-trivial idempotent does **not** give a projector and there is no associative Peirce calculus, no corner subalgebra and no ideal lattice; only the unit gives the identity operator. What survives is the Jordan theory: the cubic Peirce identity $L^{\bullet}_{\tilde\Pi}(2L^{\bullet}_{\tilde\Pi}-\mathrm{id})(L^{\bullet}_{\tilde\Pi}-\mathrm{id})=0$ and the decomposition $\mathbb{B}=\mathbb{C}\tilde\Pi\oplus\mathbb{B}_{1/2}\oplus\mathbb{C}(e_0-\tilde\Pi)$ with a two-dimensional middle space.
+The idempotents of the block are the idempotents of the plain product, the two squares being equal. They are the origin, the unit, and the four-real-parameter family $\tfrac12(e_0+\mathbf{u})$ with $\mathbf{u}$ pure and $\mathbf{u}^2=e_0$, equivalently $\tfrac12(e_0+\boldsymbol{\tilde\Xi} i)$ with $\boldsymbol{\tilde\Xi}$ a pure root of $-1$; the non-trivial idempotents are in bijection with the pure roots of $+1$. Every non-trivial idempotent is isotropic, $c=0$, and is a zero divisor whose annihilator is the line spanned by its natural conjugate, while the two trivial idempotents are not zero divisors. An idempotent and its complement $e_0-\tilde\Pi$ are orthogonal idempotents. The block is not left-alternative, so a non-trivial idempotent does **not** give a projector and there is no associative Peirce calculus, no corner subalgebra and no ideal lattice; only the unit gives the identity operator. What survives is the Jordan theory: the cubic Peirce identity $L^{\bullet}_{\tilde\Pi}(2L^{\bullet}_{\tilde\Pi}-\mathrm{id})(L^{\bullet}_{\tilde\Pi}-\mathrm{id})=0$ and the decomposition $\mathbb{B}=\mathbb{C}\tilde\Pi\oplus\mathbb{B}_{1/2}\oplus\mathbb{C}(e_0-\tilde\Pi)$ with a two-dimensional middle space.
 
 ## Summary of Notation
 

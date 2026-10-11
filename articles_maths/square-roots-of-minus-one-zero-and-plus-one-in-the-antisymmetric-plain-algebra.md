@@ -6,15 +6,15 @@ A root of a central value is defined by an equation in which the product occurs,
 the product (*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and
 the Roots*). The block of this article is the antisymmetric plain multiplication
 $$
-\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf{P}\times\mathbf{Q},
+\tilde\Xi\wedge\tilde Q=\tfrac12\bigl(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi\bigr)=\mathbf\Xi\times\mathbf{Q},
 $$
 the cross product of the two vector parts, which is alternating and without a unit
 (*Introduction to the Antisymmetric Plain Algebra of Biquaternions*). The article solves the three
 equations
 $$
-\tilde P\wedge\tilde P=-e_0,\qquad
-\tilde P\wedge\tilde P=0,\qquad
-\tilde P\wedge\tilde P=+e_0 ,
+\tilde\Xi\wedge\tilde\Xi=-e_0,\qquad
+\tilde\Xi\wedge\tilde\Xi=0,\qquad
+\tilde\Xi\wedge\tilde\Xi=+e_0 ,
 $$
 and the solution sets are decided by one fact: the block is alternating, so the left side is zero
 for every element and the three equations reduce to the three scalar equations $0=-e_0$, $0=0$
@@ -32,9 +32,9 @@ end, where the idempotent article of the block is cited.
 ## The Notion and Its Product
 
 **Definition (root of a central value).** Let $\star$ be a product on $\mathbb{B}$ and let
-$\lambda\in\mathbb{C}$. A **root of $\lambda$ in $\star$** is a nonzero element $\tilde P$ with
+$\lambda\in\mathbb{C}$. A **root of $\lambda$ in $\star$** is a nonzero element $\tilde\Xi$ with
 $$
-\tilde P\star\tilde P=\lambda e_0 .
+\tilde\Xi\star\tilde\Xi=\lambda e_0 .
 $$
 The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$: the roots of
 $-1$ are the imaginary units, the roots of $+1$ are the involutions, and the roots of $0$ are the
@@ -49,16 +49,16 @@ the roots of the three values in the general plain product, to which the block i
 
 ## The Common Reduction
 
-**Proposition (the reduction).** For every element $\tilde P$,
+**Proposition (the reduction).** For every element $\tilde\Xi$,
 $$
-\tilde P\wedge\tilde P=0 ,
+\tilde\Xi\wedge\tilde\Xi=0 ,
 $$
-and consequently the three equations $\tilde P\wedge\tilde P=-e_0$, $\tilde P\wedge\tilde P=0$ and
-$\tilde P\wedge\tilde P=+e_0$ are equivalent to the three scalar equations $0=-e_0$, $0=0$ and
+and consequently the three equations $\tilde\Xi\wedge\tilde\Xi=-e_0$, $\tilde\Xi\wedge\tilde\Xi=0$ and
+$\tilde\Xi\wedge\tilde\Xi=+e_0$ are equivalent to the three scalar equations $0=-e_0$, $0=0$ and
 $0=+e_0$.
 
 *Proof.* The block is alternating, $\tilde X\wedge\tilde X=0$ for every $\tilde X$, by
-*Introduction to the Antisymmetric Plain Algebra of Biquaternions*; read at $\tilde X=\tilde P$
+*Introduction to the Antisymmetric Plain Algebra of Biquaternions*; read at $\tilde X=\tilde\Xi$
 this is the display. Substituting the display into each of the three equations gives the
 corresponding scalar equation.
 
@@ -69,11 +69,11 @@ the three scalar equations alone, and no coordinate computation is needed.
 ## The Roots of Minus One
 
 **Theorem (no roots of $-1$).** The block has no root of $-1$; equivalently, the equation
-$\tilde P\wedge\tilde P=-e_0$ has no solution.
+$\tilde\Xi\wedge\tilde\Xi=-e_0$ has no solution.
 
-*Proof.* The reduction gives $\tilde P\wedge\tilde P=0$, and $0\neq-e_0$ because $e_0$ is
+*Proof.* The reduction gives $\tilde\Xi\wedge\tilde\Xi=0$, and $0\neq-e_0$ because $e_0$ is
 nonzero, the scalars of the field being of characteristic zero. Hence the equation fails for every
-$\tilde P$.
+$\tilde\Xi$.
 
 The absence is the absence of a square that is central and negative. The block removes the scalar
 part of the parent product, and the root of $-1$ is a statement about the scalar part of a square;
@@ -85,12 +85,12 @@ are the roots of $-1$ of the plain product, are roots of $-1$ of the plain produ
 **Theorem (the roots of $0$ are all the nonzero elements).** The block's roots of $0$ are the
 nonzero elements of $\mathbb{B}$,
 $$
-\{\tilde P\neq0:\ \tilde P\wedge\tilde P=0\}=\mathbb{B}\setminus\{0\}.
+\{\tilde\Xi\neq0:\ \tilde\Xi\wedge\tilde\Xi=0\}=\mathbb{B}\setminus\{0\}.
 $$
 
-*Proof.* The reduction gives $\tilde P\wedge\tilde P=0$ for every $\tilde P$, so the equation
-$\tilde P\wedge\tilde P=0$ holds at every element and the root condition is exactly the condition
-$\tilde P\neq0$, which excludes the origin alone.
+*Proof.* The reduction gives $\tilde\Xi\wedge\tilde\Xi=0$ for every $\tilde\Xi$, so the equation
+$\tilde\Xi\wedge\tilde\Xi=0$ holds at every element and the root condition is exactly the condition
+$\tilde\Xi\neq0$, which excludes the origin alone.
 
 The root set of $0$ is therefore the whole punctured space, and it is at once the square-zero set
 of the block and its zero-divisor set: an element is a root of $0$ exactly when it is a nonzero
@@ -102,10 +102,10 @@ allows.
 ## The Roots of Plus One
 
 **Theorem (no roots of $+1$).** The block has no root of $+1$; equivalently, the equation
-$\tilde P\wedge\tilde P=+e_0$ has no solution.
+$\tilde\Xi\wedge\tilde\Xi=+e_0$ has no solution.
 
-*Proof.* The reduction gives $\tilde P\wedge\tilde P=0$, and $0\neq+e_0$ because $e_0$ is
-nonzero. Hence the equation fails for every $\tilde P$.
+*Proof.* The reduction gives $\tilde\Xi\wedge\tilde\Xi=0$, and $0\neq+e_0$ because $e_0$ is
+nonzero. Hence the equation fails for every $\tilde\Xi$.
 
 The roots of $+1$ are the involutions of the product, and the block has none. In particular the
 element $e_0$ is not a root of $+1$ of the block, although it is the unit of the ambient algebra
@@ -116,9 +116,9 @@ algebra, and the product is not the plain one.
 
 | central value $\lambda$ | the equation | the root set of the block |
 |---|---|---|
-| $-1$ | $\tilde P\wedge\tilde P=-e_0$ | empty |
-| $0$ | $\tilde P\wedge\tilde P=0$ | $\mathbb{B}\setminus\{0\}$, the punctured space |
-| $+1$ | $\tilde P\wedge\tilde P=+e_0$ | empty |
+| $-1$ | $\tilde\Xi\wedge\tilde\Xi=-e_0$ | empty |
+| $0$ | $\tilde\Xi\wedge\tilde\Xi=0$ | $\mathbb{B}\setminus\{0\}$, the punctured space |
+| $+1$ | $\tilde\Xi\wedge\tilde\Xi=+e_0$ | empty |
 
 The table is the reduction read value by value. Two of the three sets are empty and the third is
 the complement of the origin, and the table is the opposite of the table of the general plain
@@ -151,17 +151,17 @@ of the zero divisor, which requires both the element and its partner to be nonze
 
 ## The Relation to the Parent Product
 
-**Remark (the parent squares).** The parent general plain bilinear product $\tilde P\tilde Q$ has
+**Remark (the parent squares).** The parent general plain bilinear product $\tilde\Xi\tilde Q$ has
 the square
 $$
-\tilde P^{2}=\bigl[P_0^{2}-(\mathbf P,\mathbf P)\bigr]e_0+2P_0\mathbf P ,
+\tilde\Xi^{2}=\bigl[\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi)\bigr]e_0+2\Xi_0\mathbf\Xi ,
 $$
-whose central part is $P_0^{2}-(\mathbf P,\mathbf P)$ and whose vector part is $2P_0\mathbf P$; its
-three root equations are therefore the pairs $2P_0\mathbf P=0$ and
-$P_0^{2}-(\mathbf P,\mathbf P)=\lambda$ over $\lambda=-1,0,+1$, and not the three level sets of one
-quadratic form. The norm of the parent, $N(\tilde P)=P_0^{2}+(\mathbf P,\mathbf P)$, is the central
-part of the conjugated square $\tilde P\tilde P^{\natural}$ and it is not the central part of
-$\tilde P^{2}$. The block removes the scalar part of the parent, and with the scalar part removed
+whose central part is $\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi)$ and whose vector part is $2\Xi_0\mathbf\Xi$; its
+three root equations are therefore the pairs $2\Xi_0\mathbf\Xi=0$ and
+$\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi)=\lambda$ over $\lambda=-1,0,+1$, and not the three level sets of one
+quadratic form. The algebraic norm of the parent, $N(\tilde\Xi)=\Xi_0^{2}+(\mathbf\Xi,\mathbf\Xi)$, is the central
+part of the conjugated square $\tilde\Xi\tilde\Xi^{\natural}$ and it is not the central part of
+$\tilde\Xi^{2}$. The block removes the scalar part of the parent, and with the scalar part removed
 the square loses its central part: the three conditions become the single statement that the
 square is zero, and the two non-vacuous conditions of the parent are replaced by the two empty
 tables above. The block's root set of $0$, the whole punctured space, strictly contains the
@@ -170,8 +170,8 @@ where the parent's are nonempty families of the plain product.
 
 ## Summary
 
-For the antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$ the
-square of every element is zero, $\tilde P\wedge\tilde P=0$, because the block is alternating; the
+For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\mathbf\Xi\times\mathbf{Q}$ the
+square of every element is zero, $\tilde\Xi\wedge\tilde\Xi=0$, because the block is alternating; the
 three equations of the roots of $-1$, of $0$ and of $+1$ therefore reduce to the three scalar
 equations $0=-e_0$, $0=0$ and $0=+e_0$. The block has no root of $-1$ and no root of $+1$, and
 its roots of $0$ are all the nonzero elements of the space. The root set of $0$ coincides with the
@@ -179,7 +179,7 @@ square-zero set and with the zero-divisor set of the block, all three being the 
 the idempotent set is the origin alone, the idempotent equation being the scaled root of $+1$
 equation. The comparison with the parent product is the comparison of a vanishing square with a
 nonvanishing one: the parent's root sets are three proper families, read from the two conditions
-$2P_0\mathbf P=0$ and $P_0^{2}-(\mathbf P,\mathbf P)=\lambda$ on the square, while the block's are
+$2\Xi_0\mathbf\Xi=0$ and $\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi)=\lambda$ on the square, while the block's are
 the two empty sets and the complement of the origin, read from the single condition that its square
 is zero.
 
@@ -187,11 +187,11 @@ is zero.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
-| $\tilde P\wedge\tilde P=0$ | the reduction, the square of every element |
+| $\tilde\Xi\wedge\tilde Q=\tfrac12(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi)=\mathbf\Xi\times\mathbf{Q}$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde\Xi\wedge\tilde\Xi=0$ | the reduction, the square of every element |
 | $\lambda\in\{-1,0,+1\}$ | the three central values whose roots are sought |
 | $\mathbb{B}\setminus\{0\}$ | the root set of $0$, at once the square-zero set and the zero-divisor set of the block |
-| $N(\tilde P)=P_0^{2}+(\mathbf P,\mathbf P)$ | the norm of the parent product, the central part of $\tilde P\tilde P^{\natural}$, not of $\tilde P^{2}$ |
+| $N(\tilde\Xi)=\Xi_0^{2}+(\mathbf\Xi,\mathbf\Xi)$ | the algebraic norm of the parent product, the central part of $\tilde\Xi\tilde\Xi^{\natural}$, not of $\tilde\Xi^{2}$ |
 
 ## Further Reading
 

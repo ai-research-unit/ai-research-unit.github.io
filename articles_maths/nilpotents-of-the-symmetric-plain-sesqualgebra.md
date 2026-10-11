@@ -4,15 +4,15 @@
 
 The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ on the biquaternion space (*Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*). This article studies its **nilpotents**: the elements some power of which vanishes, the power being read in the product $\star$.
 
-The block is a **rank-one pairing** with a **definite** form, and the class is not the one the plain product suggests. The square of an element is central and definite, $\tilde P\star\tilde P = N(\tilde P)e_0$ with $N(\tilde P) = \sum_\mu\lvert P_\mu\rvert^{2}\geq0$, so the **square-zero elements** of the block are the origin alone: there is no nilpotent of **index two**. The class is nonempty nevertheless, at **index three**. The cube is
+The block is a **rank-one pairing** with a **definite** form, and the class is not the one the plain product suggests. The square of an element is central and definite, $\tilde P\star\tilde P = H(\tilde P)e_0$ with $H(\tilde P) = \sum_\mu\lvert P_\mu\rvert^{2}\geq0$, so the **square-zero elements** of the block are the origin alone: there is no nilpotent of **index two**. The class is nonempty nevertheless, at **index three**. The cube is
 
 $$
-(P\star P)\star P = N(P)\,\overline{P_0}\,e_0,
+(P\star P)\star P = H(P)\,\overline{P_0}\,e_0,
 $$
 
 and it vanishes exactly when the scalar coordinate $P_0$ vanishes; the nilpotents of the block are therefore the elements of the **vector subspace** $\mathrm{Vect}(\mathbb{B}) = \{P_0 = 0\}$, of complex dimension three, each nonzero one of index three, and no other element is nilpotent of any index. The block is thus one with a genuine index-three class at the element level, and its nilpotent set is a subspace rather than a cone.
 
-**Placement.** The article is the seventh and closing entry of the *Common Theory* section of the block, after the idempotents. It uses the product and the class of the introduction, the norm and the square map of *Norm and Invertibility in the Symmetric Plain Sesqualgebra*, the rootlessness of $0$ of *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra*, and the punctured-space zero-divisor set of *Zero Divisors of the Symmetric Plain Sesqualgebra*.
+**Placement.** The article is the seventh and closing entry of the *Common Theory* section of the block, after the idempotents. It uses the product and the class of the introduction, the algebraic norm and the square map of *Norm and Invertibility in the Symmetric Plain Sesqualgebra*, the rootlessness of $0$ of *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra*, and the punctured-space zero-divisor set of *Zero Divisors of the Symmetric Plain Sesqualgebra*.
 
 **Boundaries.** The product, its class and its placement are *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*; the relative definition of the nilpotent, of the index and of the square-zero element, and the bracketing of the powers, are *Definitions for the Study of the 12 Algebraic Structures*. The nilpotents of the parent and their identification with the pure family of the zero divisors are *Nilpotents of the General Plain Algebra* and *Zero Divisors of the General Plain Algebra*; the square-zero sets of the four general products are *The Square-Zero Elements of the Four General Products* and *Comparison Between the Four General Products*. The idempotents of the block are *Idempotents of the Symmetric Plain Sesqualgebra*. The model used here is *The Symmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*. Nothing topological and nothing metric appears.
 
@@ -22,7 +22,7 @@ $$
 \tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0, \qquad H(\tilde P,\tilde Q) = \sum_{\mu=0}^{3}P_\mu\overline{Q_\mu},
 $$
 
-and the norm is $N(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$. A nilpotent is written $\tilde\Upsilon$, the vector subspace is $\mathrm{Vect}(\mathbb{B}) = \{Q_0 = 0\}$, and the central line is $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$.
+and the algebraic norm is $H(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$. A nilpotent is written $\tilde\Upsilon$, the vector subspace is $\mathrm{Vect}(\mathbb{B}) = \{Q_0 = 0\}$, and the central line is $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$.
 
 ## The Definition Relative to the Product
 
@@ -40,7 +40,7 @@ and the right-nested reading is a different expression. For the block the two re
 
 **Theorem (no nonzero square-zero element).** An element satisfies $\tilde\Upsilon\star\tilde\Upsilon = 0$ if and only if $\tilde\Upsilon = 0$; the block has no nilpotent of index two.
 
-*Proof.* The square is $\tilde\Upsilon\star\tilde\Upsilon = N(\tilde\Upsilon)e_0$ and $N$ is definite, vanishing only at the origin (*Norm and Invertibility in the Symmetric Plain Sesqualgebra*). This is the statement that the block has no root of $0$, and it is *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra*.
+*Proof.* The square is $\tilde\Upsilon\star\tilde\Upsilon = H(\tilde\Upsilon)e_0$ and $H$ is definite, vanishing only at the origin (*Norm and Invertibility in the Symmetric Plain Sesqualgebra*). This is the statement that the block has no root of $0$, and it is *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra*.
 
 **Remark (the root of $0$ is not the nilpotent class).** In the plain product the nonzero roots of $0$ and the nilpotents coincide, and the two words are used interchangeably (*Nilpotents of the General Plain Algebra*). In the block they differ: the root of $0$ asks the **square** to vanish and the set is empty, while the nilpotent asks **some power** to vanish and the set is the vector subspace below. The difference is the index, and the index is three here and not two.
 
@@ -49,12 +49,12 @@ and the right-nested reading is a different expression. For the block the two re
 **Theorem (the cube).** For every $\tilde P = P_0e_0 + \mathbf P$,
 
 $$
-(\tilde P\star\tilde P)\star\tilde P = N(\tilde P)\,\overline{P_0}\,e_0, \qquad \tilde P\star(\tilde P\star\tilde P) = N(\tilde P)\,P_0\,e_0,
+(\tilde P\star\tilde P)\star\tilde P = H(\tilde P)\,\overline{P_0}\,e_0, \qquad \tilde P\star(\tilde P\star\tilde P) = H(\tilde P)\,P_0\,e_0,
 $$
 
 so the left-nested and the right-nested cubes vanish together, exactly when $P_0 = 0$ or $\tilde P = 0$.
 
-*Proof.* The square is $\tilde P\star\tilde P = N(\tilde P)e_0$. Multiplying on the right by $\tilde P$, $N(\tilde P)e_0\star\tilde P = N(\tilde P)H(e_0,\tilde P)e_0 = N(\tilde P)\overline{P_0}e_0$; multiplying on the left, $\tilde P\star N(\tilde P)e_0 = N(\tilde P)H(\tilde P,e_0)e_0 = N(\tilde P)P_0e_0$. The scalar $N(\tilde P)$ is positive unless $\tilde P = 0$, so each cube vanishes exactly when the remaining factor vanishes.
+*Proof.* The square is $\tilde P\star\tilde P = H(\tilde P)e_0$. Multiplying on the right by $\tilde P$, $H(\tilde P)e_0\star\tilde P = H(\tilde P)H(e_0,\tilde P)e_0 = H(\tilde P)\overline{P_0}e_0$; multiplying on the left, $\tilde P\star H(\tilde P)e_0 = H(\tilde P)H(\tilde P,e_0)e_0 = H(\tilde P)P_0e_0$. The scalar $H(\tilde P)$ is positive unless $\tilde P = 0$, so each cube vanishes exactly when the remaining factor vanishes.
 
 **Corollary (the cube is central and of the first degree).** Both cubes are central, and each is the coefficientwise conjugate of the other; the two displays are the two readings of the same vanishing condition and neither is a square.
 
@@ -68,13 +68,13 @@ $$
 
 the vector subspace of complex dimension three. Every nonzero nilpotent has index three, and the block has no nilpotent of index four or more.
 
-*Proof.* Let $\tilde P = P_0e_0 + \mathbf P$. If $P_0 = 0$ then $(\tilde P\star\tilde P)\star\tilde P = N(\tilde P)\overline{P_0}e_0 = 0$ by the cube, while $\tilde P\star\tilde P = N(\tilde P)e_0$ is nonzero as soon as $\tilde P\neq0$, so the index is exactly three. If $P_0\neq0$, then the powers are
+*Proof.* Let $\tilde P = P_0e_0 + \mathbf P$. If $P_0 = 0$ then $(\tilde P\star\tilde P)\star\tilde P = H(\tilde P)\overline{P_0}e_0 = 0$ by the cube, while $\tilde P\star\tilde P = H(\tilde P)e_0$ is nonzero as soon as $\tilde P\neq0$, so the index is exactly three. If $P_0\neq0$, then the powers are
 
 $$
-\tilde P^{\star k} = N(\tilde P)\,\overline{P_0}^{\,k-2}\,e_0 \qquad (k\geq2),
+\tilde P^{\star k} = H(\tilde P)\,\overline{P_0}^{\,k-2}\,e_0 \qquad (k\geq2),
 $$
 
-the case $k = 2$ reading $N(\tilde P)e_0$ and the case $k = 3$ the cube above; the factor $N(\tilde P)\neq0$ and the power $\overline{P_0}^{\,k-2}\neq0$ never vanish, so no power vanishes, and the block has no nilpotent off the vector subspace. The index is three, so no index four or more occurs.
+the case $k = 2$ reading $H(\tilde P)e_0$ and the case $k = 3$ the cube above; the factor $H(\tilde P)\neq0$ and the power $\overline{P_0}^{\,k-2}\neq0$ never vanish, so no power vanishes, and the block has no nilpotent off the vector subspace. The index is three, so no index four or more occurs.
 
 **Corollary (the nilpotent set is a subspace, not a cone).** The nilpotents of the block form the complex vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three and real dimension six; it is closed under addition and under complex scaling, it contains the origin, and it is not the isotropic cone of any form. The nilpotents of the parent form the pure part of the isotropic cone $c(\tilde P) = 0$, a cone of complex dimension two (*Nilpotents of the General Plain Algebra*); the block's set is a different algebraic set, a linear one, and the two are not related by the transfer of a classification.
 
@@ -85,12 +85,12 @@ the case $k = 2$ reading $N(\tilde P)e_0$ and the case $k = 3$ the cube above; t
 | element | powers | index |
 |---|---|---|
 | $0$ | $0$ | one, the trivial nilpotent |
-| a nonzero element of $\mathrm{Vect}(\mathbb{B})$, $P_0 = 0$ | $\tilde P$, $N(\tilde P)e_0\neq0$, $0$, $0,\dots$ | three |
-| an element with $P_0\neq0$ | $\tilde P$, $N(\tilde P)e_0$, $N(\tilde P)\overline{P_0}e_0$, $N(\tilde P)\overline{P_0}^{2}e_0,\dots$, never $0$ | none |
+| a nonzero element of $\mathrm{Vect}(\mathbb{B})$, $P_0 = 0$ | $\tilde P$, $H(\tilde P)e_0\neq0$, $0$, $0,\dots$ | three |
+| an element with $P_0\neq0$ | $\tilde P$, $H(\tilde P)e_0$, $H(\tilde P)\overline{P_0}e_0$, $H(\tilde P)\overline{P_0}^{2}e_0,\dots$, never $0$ | none |
 
 The table is the whole index theory of the block: two indices occur, one and three, and the middle index two is empty. The gap is the consequence of the definiteness: the square is a positive central element, and the third power is that element multiplied by the scalar coordinate, which is the only coordinate that can carry the vanishing.
 
-**Corollary (the power string).** A nilpotent of the block has the finite string $\tilde\Upsilon,\tilde\Upsilon^{\star2} = N(\tilde\Upsilon)e_0,\tilde\Upsilon^{\star3} = 0$ of three terms, with the middle term nonzero; a non-nilpotent has the infinite string $\tilde P^{\star k} = N(\tilde P)\overline{P_0}^{\,k-2}e_0$ for $k\geq2$, the central element at each step being the previous one multiplied by the fixed scalar $\overline{P_0}$.
+**Corollary (the power string).** A nilpotent of the block has the finite string $\tilde\Upsilon,\tilde\Upsilon^{\star2} = H(\tilde\Upsilon)e_0,\tilde\Upsilon^{\star3} = 0$ of three terms, with the middle term nonzero; a non-nilpotent has the infinite string $\tilde P^{\star k} = H(\tilde P)\overline{P_0}^{\,k-2}e_0$ for $k\geq2$, the central element at each step being the previous one multiplied by the fixed scalar $\overline{P_0}$.
 
 ## The Nilpotents and the Zero Divisors
 
@@ -126,7 +126,7 @@ $$
 \mathsf{M}_2(\tilde\Upsilon^{\star3}) = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde\Upsilon)\mathsf{M}_2(\tilde\Upsilon)^{\dagger}\bigr)\overline{\Upsilon_0}\,I_2,
 $$
 
-the matrix form of the cube $N(\tilde\Upsilon)\overline{\Upsilon_0}e_0$; the nilpotents of the block are the matrices of trace-coordinate zero, that is the traceless part of the model with respect to the basis of *The Symmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*. The model records the index-three vanishing as the vanishing of the scalar coordinate and not of the matrix.
+the matrix form of the cube $H(\tilde\Upsilon)\overline{\Upsilon_0}e_0$; the nilpotents of the block are the matrices of trace-coordinate zero, that is the traceless part of the model with respect to the basis of *The Symmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*. The model records the index-three vanishing as the vanishing of the scalar coordinate and not of the matrix.
 
 ## The Nilpotents and the Remarkable Subspaces
 
@@ -149,18 +149,18 @@ The nilpotent set is a subspace, so its intersection with a remarkable subspace 
 
 ## Summary
 
-The nilpotents of the symmetric plain sesqualgebra are the elements of the **vector subspace** $\mathrm{Vect}(\mathbb{B}) = \{P_0 = 0\}$, of complex dimension three, and each nonzero one has **index three**: the square is the central element $N(\tilde\Upsilon)e_0$, nonzero, and the cube $(P\star P)\star P = N(P)\overline{P_0}e_0$ vanishes exactly with the scalar coordinate. The **square-zero elements** are the origin alone, so the block has **no nilpotent of index two**; the middle index is empty and the block carries the two indices one and three. The root of $0$ and the nilpotent class therefore differ, the root asking the square to vanish and the nilpotent asking a power to vanish, and the difference is the index. Every nonzero nilpotent is a two-sided zero divisor, and here the implication is immediate, the zero-divisor set being the whole punctured space; the sesquilinear parent, whose only square-zero element is the origin, carries no nonzero nilpotent at all. The nilpotents are conjugation-stable, the idempotent $e_0$ is never nilpotent, and the nilpotent set is a linear subspace and not a cone, in contrast with the pure cone that is the nilpotent set of the parent.
+The nilpotents of the symmetric plain sesqualgebra are the elements of the **vector subspace** $\mathrm{Vect}(\mathbb{B}) = \{P_0 = 0\}$, of complex dimension three, and each nonzero one has **index three**: the square is the central element $H(\tilde\Upsilon)e_0$, nonzero, and the cube $(P\star P)\star P = H(P)\overline{P_0}e_0$ vanishes exactly with the scalar coordinate. The **square-zero elements** are the origin alone, so the block has **no nilpotent of index two**; the middle index is empty and the block carries the two indices one and three. The root of $0$ and the nilpotent class therefore differ, the root asking the square to vanish and the nilpotent asking a power to vanish, and the difference is the index. Every nonzero nilpotent is a two-sided zero divisor, and here the implication is immediate, the zero-divisor set being the whole punctured space; the sesquilinear parent, whose only square-zero element is the origin, carries no nonzero nilpotent at all. The nilpotents are conjugation-stable, the idempotent $e_0$ is never nilpotent, and the nilpotent set is a linear subspace and not a cone, in contrast with the pure cone that is the nilpotent set of the parent.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ | the product of the block |
-| $N(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$ | the norm of the block, real and non-negative |
-| $\tilde\Upsilon^{\star2} = N(\tilde\Upsilon)e_0$ | the square, always central, never zero off the origin |
-| $(P\star P)\star P = N(P)\overline{P_0}e_0$ | the cube, vanishing exactly with $P_0$ |
+| $H(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$ | the algebraic norm of the block, real and non-negative |
+| $\tilde\Upsilon^{\star2} = H(\tilde\Upsilon)e_0$ | the square, always central, never zero off the origin |
+| $(P\star P)\star P = H(P)\overline{P_0}e_0$ | the cube, vanishing exactly with $P_0$ |
 | $\mathrm{Vect}(\mathbb{B}) = \{P_0 = 0\}$ | the nilpotent set, a complex subspace of dimension three |
-| $\tilde P^{\star k} = N(\tilde P)\overline{P_0}^{\,k-2}e_0$, $k\geq2$ | the power string of the left-nested reading |
+| $\tilde P^{\star k} = H(\tilde P)\overline{P_0}^{\,k-2}e_0$, $k\geq2$ | the power string of the left-nested reading |
 | index three | the index of every nonzero nilpotent |
 | $\{0\}$ | the square-zero elements, the origin alone |
 | $\tilde\Upsilon^{\perp}$ | the annihilator of a nonzero nilpotent, a hyperplane |
@@ -170,7 +170,7 @@ The nilpotents of the symmetric plain sesqualgebra are the elements of the **vec
 
 - *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.md`), for the product, its class and its placement.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the relative definition of the nilpotent, of the index, of the square-zero element and of the bracketing of the powers.
-- *Norm and Invertibility in the Symmetric Plain Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-plain-sesqualgebra.md`), for the norm, the square map and the definiteness.
+- *Norm and Invertibility in the Symmetric Plain Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-plain-sesqualgebra.md`), for the algebraic norm, the square map and the definiteness.
 - *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-symmetric-plain-sesqualgebra.md`), for the emptiness of the root set of $0$.
 - *Zero Divisors of the Symmetric Plain Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-plain-sesqualgebra.md`), for the punctured-space zero-divisor set and the annihilators.
 - *Idempotents of the Symmetric Plain Sesqualgebra* (`articles_maths/idempotents-of-the-symmetric-plain-sesqualgebra.md`), for the idempotents $0$ and $e_0$.

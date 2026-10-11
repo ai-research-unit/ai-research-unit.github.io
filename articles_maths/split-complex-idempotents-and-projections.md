@@ -96,7 +96,7 @@ The second factors as $a'(2a-1) = 0$:
 - If $a' = 0$, the first becomes $a^2 = a$, so $a = 0$ or $a = 1$: the idempotents $0$ and $1$.
 - If $a' \neq 0$, then $a = 1/2$, and the first becomes $\tfrac14 + a'^2 = \tfrac12$, so $a'^2 = \tfrac14$ and $a' = \pm\tfrac12$: the idempotents $\Pi_1$ and $\Pi_2$.
 
-There are no others. The set of idempotents is finite, of four elements, and in particular there is no positive-dimensional family. This is the exact opposite of the biquaternion situation, and its cause is visible in the proof: there the idempotent equation forces the scalar part to be $1/2$ and reduces to the equation $\xi^2 = -1$ on the vector part, which has a two-sphere of real solutions and a four-real-dimensional family of complex ones; here the same reduction produces $a'^2 = +1/4$, whose solution set is the two points $a' = \pm 1/2$, because $\mathbb{D}$ has no root of $-1$ and no vector part to vary independently.
+There are no others. The set of idempotents is finite, of four elements, and in particular there is no positive-dimensional family. This is the exact opposite of the biquaternion situation, and its cause is visible in the proof: there the idempotent equation forces the scalar part to be $1/2$ and reduces to the equation $\tilde\Xi^2 = -1$ on the vector part, which has a two-sphere of real solutions and a four-real-dimensional family of complex ones; here the same reduction produces $a'^2 = +1/4$, whose solution set is the two points $a' = \pm 1/2$, because $\mathbb{D}$ has no root of $-1$ and no vector part to vary independently.
 
 ## The Idempotents as Indicator Functions
 

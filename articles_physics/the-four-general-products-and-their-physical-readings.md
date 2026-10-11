@@ -326,7 +326,7 @@ operations, and the first physics block reads it: the ordinary product and the s
 the reference state and the absence of a material idempotent, the composition of material operations on
 both sides, and the square roots of an element. The decomposition structure the algebra also carries —
 the Peirce decomposition, the minimal left ideals and the bi-module — is mathematics, read in
-*Ideals and Peirce Decomposition of the General Plain Algebra* and in *The Enveloping Algebra of the General Plain Algebra and the Bi-module Structure*.
+*Ideals and Peirce Decomposition of the General Plain Algebra* and in *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*.
 
 **The quaternionic product $\tilde P^{\natural}\tilde Q$** is not associative, has a left identity and
 no right one, and is the only product of the four whose square is scalar. Its form

@@ -10,7 +10,7 @@ $$
 
 indexed by the real unit vectors $\hat\mu$ of the vector subspace. The whole of the article is the move that makes the equation collapse to that family: applying the involution ${}^{*}$ to the equation shows that an idempotent of $\star$ is its own conjugate, and a Hermitian element whose $\star$-square is itself is an idempotent of the ordinary product.
 
-The result is the element theory of the batch, and it is the sharpest of the three ways in which the sesquilinear multiplication separates the elements. The algebra's own idempotents, classified in *Idempotents of the General Plain Algebra*, are the elements $\tfrac12(e_0+\xi i)$ over all roots $\xi$ of $-e_0$, and the root $\xi$ may be trivial, real or mixed; apart from the trivial pair, the Hermitian ones are exactly those with a real root, and they are the projections above. The others are not idempotent for the multiplication, and the failure is computed here rather than quoted. The same separation is read in the comparison of the four general products, *Comparison Between the Four General Products*, §*The Squares, the Idempotents and the Roots*, where the four idempotent sets are tabulated and the sesquilinear column is the family of the projections.
+The result is the element theory of the batch, and it is the sharpest of the three ways in which the sesquilinear multiplication separates the elements. The algebra's own idempotents, classified in *Idempotents of the General Plain Algebra*, are the elements $\tfrac12(e_0+\tilde\Xi i)$ over all roots $\tilde\Xi$ of $-e_0$, and the root $\tilde\Xi$ may be trivial, real or mixed; apart from the trivial pair, the Hermitian ones are exactly those with a real root, and they are the projections above. The others are not idempotent for the multiplication, and the failure is computed here rather than quoted. The same separation is read in the comparison of the four general products, *Comparison Between the Four General Products*, §*The Squares, the Idempotents and the Roots*, where the four idempotent sets are tabulated and the sesquilinear column is the family of the projections.
 
 The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions* and *Sesqualgebras*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit and $e_k^{2}=-e_0$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu=Q_0e_0+\mathbf Q$ with $Q_\mu\in\mathbb{C}$; the conjugations are the natural one ${}^{\natural}$, $\tilde Q^{\natural}=Q_0-\mathbf Q$, and the star, $\tilde Q^{*}=\overline{Q_0}-\overline{\mathbf Q}$, the conjugate-linear involution of the algebra, with ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; and the multiplication is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The two halves of the involution are the remarkable subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*. The idempotents of the algebra, the roots of $-e_0$ and the zero divisors that the nontrivial ones determine are *Idempotents of the General Plain Algebra*, *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* and *Zero Divisors of the General Plain Algebra*.
 
@@ -82,7 +82,7 @@ $$
 
 where $\hat\mu=\sum_{k=1}^{3}\hat\mu_k e_k$ ranges over the real vectors of the vector subspace with $(\hat\mu,\hat\mu)=\sum_k\hat\mu_k^{2}=1$. There are no others.
 
-**Proof.** By the corollary, the $\star$-idempotents are the Hermitian idempotents of the algebra. The idempotents of the algebra are classified in *Idempotents of the General Plain Algebra*: every idempotent is either trivial or of the form $\tfrac12(e_0+\xi i)$ with $\xi$ a root of $-e_0$, and every root falls into one of the three families of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*. The idempotent is Hermitian exactly when $\xi^{*}=-\xi$: indeed $\tilde\Pi(\xi)^{*}=\tfrac12(e_0+\xi^{*}i^{*})=\tfrac12(e_0-\xi^{*}i)$, which is $\tilde\Pi(\xi)$ exactly when $-\xi^{*}=\xi$. The roots with $\xi^{*}=-\xi$ are the trivial roots $\pm i$, whose idempotents are the trivial pair $0$ and $e_0$, and the real roots $\xi=\pm\mu$ over the real vectors $\mu$ with $(\mu,\mu)=1$; a mixed root $\xi=\boldsymbol p+i\boldsymbol p'$ has $\boldsymbol p'\neq0$, so $\xi^{*}=-\boldsymbol p+i\boldsymbol p'\neq-\boldsymbol p-i\boldsymbol p'=-\xi$, and its idempotent is not Hermitian. Writing $\hat\mu=\pm\mu$ absorbs the sign, and $\tfrac12(e_0+\mu i)=\tfrac12(e_0+i\mu)=\tilde\Pi_1(\hat\mu)$ because $i$ is central, while the trivial roots give $0$ and $e_0$.
+**Proof.** By the corollary, the $\star$-idempotents are the Hermitian idempotents of the algebra. The idempotents of the algebra are classified in *Idempotents of the General Plain Algebra*: every idempotent is either trivial or of the form $\tfrac12(e_0+\tilde\Xi i)$ with $\tilde\Xi$ a root of $-e_0$, and every root falls into one of the three families of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*. The idempotent is Hermitian exactly when $\tilde\Xi^{*}=-\tilde\Xi$: indeed $\tilde\Pi(\tilde\Xi)^{*}=\tfrac12(e_0+\tilde\Xi^{*}i^{*})=\tfrac12(e_0-\tilde\Xi^{*}i)$, which is $\tilde\Pi(\tilde\Xi)$ exactly when $-\tilde\Xi^{*}=\tilde\Xi$. The roots with $\tilde\Xi^{*}=-\tilde\Xi$ are the trivial roots $\pm i$, whose idempotents are the trivial pair $0$ and $e_0$, and the real roots $\tilde\Xi=\pm\mu$ over the real vectors $\mu$ with $(\mu,\mu)=1$; a mixed root $\tilde\Xi=\boldsymbol p+i\boldsymbol p'$ has $\boldsymbol p'\neq0$, so $\tilde\Xi^{*}=-\boldsymbol p+i\boldsymbol p'\neq-\boldsymbol p-i\boldsymbol p'=-\tilde\Xi$, and its idempotent is not Hermitian. Writing $\hat\mu=\pm\mu$ absorbs the sign, and $\tfrac12(e_0+\mu i)=\tfrac12(e_0+i\mu)=\tilde\Pi_1(\hat\mu)$ because $i$ is central, while the trivial roots give $0$ and $e_0$.
 
 **Remark.** The word **projection** is used here for a Hermitian idempotent of the algebra and for nothing else, and the $\star$-idempotents are exactly the projections. The two families of *Idempotents of the General Plain Algebra* that are not Hermitian are the ones the multiplication discards, and they are treated in the next section.
 
@@ -128,7 +128,7 @@ $$
 
 and the sum is immediate.
 
-**Remark.** The complementary pair of a projection is the projection at the antipodal direction, exactly as in the classification of *Idempotents of the General Plain Algebra*, where the pair is indexed by the class $\{\xi,-\xi\}$ of the root.
+**Remark.** The complementary pair of a projection is the projection at the antipodal direction, exactly as in the classification of *Idempotents of the General Plain Algebra*, where the pair is indexed by the class $\{\tilde\Xi,-\tilde\Xi\}$ of the root.
 
 **Proposition (when two projections are orthogonal).** For real vectors $\hat\mu,\hat\nu$ with $(\hat\mu,\hat\mu)=(\hat\nu,\hat\nu)=1$,
 
@@ -163,10 +163,10 @@ and they are the images under $\mathsf{M}_2$ of the two diagonal matrix units of
 The classification of the algebra's idempotents is *Idempotents of the General Plain Algebra*: every idempotent is either trivial or of the form
 
 $$
-\tilde\Pi(\xi)=\tfrac12\bigl(e_0+\xi i\bigr) , \qquad \xi^{2}=-e_0 ,
+\tilde\Pi(\tilde\Xi)=\tfrac12\bigl(e_0+\tilde\Xi i\bigr) , \qquad \tilde\Xi^{2}=-e_0 ,
 $$
 
-and the map $\xi\mapsto\tilde\Pi(\xi)$ is a bijection from the roots of $-e_0$ onto the idempotents of $\mathbb{B}$. The roots fall into three families, by *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*: the trivial roots $\pm i$, whose idempotents are $0$ and $e_0$; the real roots $\pm\mu$ over the real vectors $\mu$ with $(\mu,\mu)=1$, whose idempotents are the projections $\tilde\Pi_1(\pm\mu)$ of the previous section; and the mixed roots $\xi=\boldsymbol p+i\boldsymbol p'$, whose idempotents are Hermitian for no value of the pair of real vectors.
+and the map $\tilde\Xi\mapsto\tilde\Pi(\tilde\Xi)$ is a bijection from the roots of $-e_0$ onto the idempotents of $\mathbb{B}$. The roots fall into three families, by *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*: the trivial roots $\pm i$, whose idempotents are $0$ and $e_0$; the real roots $\pm\mu$ over the real vectors $\mu$ with $(\mu,\mu)=1$, whose idempotents are the projections $\tilde\Pi_1(\pm\mu)$ of the previous section; and the mixed roots $\tilde\Xi=\boldsymbol p+i\boldsymbol p'$, whose idempotents are Hermitian for no value of the pair of real vectors.
 
 ### The Non-Hermitian Idempotents Are Not Idempotent for the Multiplication
 
@@ -177,34 +177,34 @@ and the map $\xi\mapsto\tilde\Pi(\xi)$ is a bijection from the roots of $-e_0$ o
 **Example (the simplest non-Hermitian idempotent).** Take the real orthonormal pair $(\mu,\nu)=(e_1,e_2)$ and the real pair $(b,d)=(\sqrt2,1)$, so that $b^{2}-d^{2}=1$ and
 
 $$
-\xi=b\mu+d\nu i=\sqrt2\,e_1+ie_2
+\tilde\Xi=b\mu+d\nu i=\sqrt2\,e_1+ie_2
 $$
 
 is a mixed root of $-e_0$ of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, the two conditions of that classification being $b^{2}-d^{2}=1$ and $\mu\perp\nu$. Then
 
 $$
-\tilde\Pi(\xi)=\tfrac12(e_0+\xi i)=\tfrac12 e_0+\tfrac12\bigl(\sqrt2\,ie_1-e_2\bigr)
+\tilde\Pi(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi i)=\tfrac12 e_0+\tfrac12\bigl(\sqrt2\,ie_1-e_2\bigr)
 $$
 
 is an idempotent of the algebra, and it is not Hermitian. Its square in the multiplication is
 
 $$
-\tilde\Pi(\xi)\star\tilde\Pi(\xi)=\tilde\Pi(\xi)\tilde\Pi(\xi)^{*}=e_0+\tfrac{\sqrt2}{2}\,ie_1+\tfrac{\sqrt2}{2}\,ie_3\neq\tilde\Pi(\xi) .
+\tilde\Pi(\tilde\Xi)\star\tilde\Pi(\tilde\Xi)=\tilde\Pi(\tilde\Xi)\tilde\Pi(\tilde\Xi)^{*}=e_0+\tfrac{\sqrt2}{2}\,ie_1+\tfrac{\sqrt2}{2}\,ie_3\neq\tilde\Pi(\tilde\Xi) .
 $$
 
-**Proof.** The idempotence for the algebra is that of *Idempotents of the General Plain Algebra*, and the failure of Hermitianness is read from $\tilde\Pi(\xi)^{*}=\tfrac12(e_0-\xi^{*}i)$ with $\xi^{*}=-\sqrt2 e_1+ie_2\neq\xi$, where ${}^{*}$ acts on the central $i$ as $i^{*}=-i$ because $i$ sits among the coefficients. For the square, multiply out,
+**Proof.** The idempotence for the algebra is that of *Idempotents of the General Plain Algebra*, and the failure of Hermitianness is read from $\tilde\Pi(\tilde\Xi)^{*}=\tfrac12(e_0-\tilde\Xi^{*}i)$ with $\tilde\Xi^{*}=-\sqrt2 e_1+ie_2\neq\tilde\Xi$, where ${}^{*}$ acts on the central $i$ as $i^{*}=-i$ because $i$ sits among the coefficients. For the square, multiply out,
 
 $$
-\tilde\Pi(\xi)\tilde\Pi(\xi)^{*}=\tfrac14\bigl(e_0+\xi i\bigr)\bigl(e_0-\xi^{*}i\bigr)=\tfrac14\bigl(e_0+(\xi-\xi^{*})i+\xi\xi^{*}\bigr) ,
+\tilde\Pi(\tilde\Xi)\tilde\Pi(\tilde\Xi)^{*}=\tfrac14\bigl(e_0+\tilde\Xi i\bigr)\bigl(e_0-\tilde\Xi^{*}i\bigr)=\tfrac14\bigl(e_0+(\tilde\Xi-\tilde\Xi^{*})i+\tilde\Xi\tilde\Xi^{*}\bigr) ,
 $$
 
-using $i^{*}=-i$ and $i^{2}=-1$. Here $\xi-\xi^{*}=2\sqrt2\,e_1$, and
+using $i^{*}=-i$ and $i^{2}=-1$. Here $\tilde\Xi-\tilde\Xi^{*}=2\sqrt2\,e_1$, and
 
 $$
-\xi\xi^{*}=\bigl(\sqrt2 e_1+ie_2\bigr)\bigl(-\sqrt2 e_1+ie_2\bigr)=3e_0+2\sqrt2\,ie_3 ,
+\tilde\Xi\tilde\Xi^{*}=\bigl(\sqrt2 e_1+ie_2\bigr)\bigl(-\sqrt2 e_1+ie_2\bigr)=3e_0+2\sqrt2\,ie_3 ,
 $$
 
-by the multiplication of the basis, so the sum is $\tfrac14(4e_0+2\sqrt2\,ie_1+2\sqrt2\,ie_3)=e_0+\tfrac{\sqrt2}{2}ie_1+\tfrac{\sqrt2}{2}ie_3$, which differs from $\tilde\Pi(\xi)$.
+by the multiplication of the basis, so the sum is $\tfrac14(4e_0+2\sqrt2\,ie_1+2\sqrt2\,ie_3)=e_0+\tfrac{\sqrt2}{2}ie_1+\tfrac{\sqrt2}{2}ie_3$, which differs from $\tilde\Pi(\tilde\Xi)$.
 
 **Remark.** The element is the one recorded in *Introduction to the General Plain Sesqualgebra of Biquaternions* as the distinguishing case of the proposition: it is idempotent for the bilinear product and not for the sesquilinear one. Its scalar part is $\tfrac12$, but $\mathrm{Sc}(\tilde\Pi\star\tilde\Pi)=1$, so the scalar-part identity of §*The Idempotent Equation* fails at the same element, which is a second reading of the same failure.
 
@@ -212,13 +212,13 @@ by the multiplication of the basis, so the sum is $\tfrac14(4e_0+2\sqrt2\,ie_1+2
 
 | idempotent set | description | size |
 |---|---|---|
-| of the associative multiplication $\tilde P\tilde Q$ | the elements $\tilde\Pi(\xi)=\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-e_0$ | a real four-dimensional family together with two isolated points |
+| of the associative multiplication $\tilde P\tilde Q$ | the elements $\tilde\Pi(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-e_0$ | a real four-dimensional family together with two isolated points |
 | of the sesquilinear multiplication $\star$ | the trivial pair and the projections $\tilde\Pi_1(\hat\mu)$ over the real vectors with $(\hat\mu,\hat\mu)=1$ | a real two-dimensional family together with two isolated points |
 | in common | the trivial pair $0,e_0$ and the projections | the sesquilinear set |
 
 **Theorem.** The idempotents of the two multiplications agree exactly on the trivial pair and the projections, so the common set is the sesquilinear set, and every idempotent of the algebra that is not Hermitian is dropped in the passage to $\star$.
 
-**Proof.** The idempotents of the algebra are the elements $\tilde\Pi(\xi)$ over the roots $\xi$ of $-e_0$; those that are Hermitian are the trivial pair together with the real-root family, by the classification theorem of §*The Projections*; and the idempotents of $\star$ are the trivial pair together with the Hermitian idempotents, by the same theorem. The two sets therefore meet in the trivial pair and the projections, which is the whole of the $\star$ set.
+**Proof.** The idempotents of the algebra are the elements $\tilde\Pi(\tilde\Xi)$ over the roots $\tilde\Xi$ of $-e_0$; those that are Hermitian are the trivial pair together with the real-root family, by the classification theorem of §*The Projections*; and the idempotents of $\star$ are the trivial pair together with the Hermitian idempotents, by the same theorem. The two sets therefore meet in the trivial pair and the projections, which is the whole of the $\star$ set.
 
 **Remark.** The passage from the algebra to the sesqualgebra keeps one half of the idempotents and loses the other, and it keeps the half that the algebra's own element theory singles out as the projections. The two sets agree on $0$ and $e_0$ because the trivial idempotents are Hermitian and central; they disagree on every nontrivial non-Hermitian idempotent, of which the element of the example above is the one the group article records.
 
@@ -254,7 +254,7 @@ $$
 \tilde\Pi_1(\hat\mu)=\tfrac12\bigl(e_0+i\hat\mu\bigr) , \qquad \hat\mu\in\mathbb{R}^{3},\ (\hat\mu,\hat\mu)=1 ,
 $$
 
-a family parametrised by the real unit vectors, whose scalar part is the sum of the modulus squares of its coordinates and whose complement is the antipodal projection $\tilde\Pi_1(-\hat\mu)$. Against the idempotents of the associative multiplication, which are the elements $\tilde\Pi(\xi)=\tfrac12(e_0+\xi i)$ over all roots $\xi$ of $-e_0$ and form a real four-dimensional family, the $\star$-idempotents are the same trivial pair together with the Hermitian idempotents, and every non-Hermitian idempotent of the algebra is not idempotent for the multiplication. The two sets agree exactly on the projections, which is the sense in which the multiplication picks out the half of the algebra's idempotent set that the algebra itself calls the projections.
+a family parametrised by the real unit vectors, whose scalar part is the sum of the modulus squares of its coordinates and whose complement is the antipodal projection $\tilde\Pi_1(-\hat\mu)$. Against the idempotents of the associative multiplication, which are the elements $\tilde\Pi(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi i)$ over all roots $\tilde\Xi$ of $-e_0$ and form a real four-dimensional family, the $\star$-idempotents are the same trivial pair together with the Hermitian idempotents, and every non-Hermitian idempotent of the algebra is not idempotent for the multiplication. The two sets agree exactly on the projections, which is the sense in which the multiplication picks out the half of the algebra's idempotent set that the algebra itself calls the projections.
 
 ## Summary of Notation
 
@@ -271,7 +271,7 @@ a family parametrised by the real unit vectors, whose scalar part is the sum of 
 | $\tilde\Pi_1(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ | the projections, $\hat\mu$ a real vector with $(\hat\mu,\hat\mu)=1$ |
 | $\hat\mu=\sum_k\hat\mu_ke_k$, $(\hat\mu,\hat\mu)=\sum_k\hat\mu_k^{2}=1$ | a real unit vector and its square |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
-| $\tilde\Pi(\xi)=\tfrac12(e_0+\xi i)$, $\xi^{2}=-e_0$ | the idempotents of the algebra |
+| $\tilde\Pi(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi i)$, $\tilde\Xi^{2}=-e_0$ | the idempotents of the algebra |
 | $0,\ e_0$ | the trivial idempotents, common to the two products |
 | $\mathsf{M}_2$ | the isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$ |
 | $E_{11},E_{22}$ | the diagonal matrix units, $\mathsf{M}_2(\tilde\Pi_1),\mathsf{M}_2(\tilde\Pi_2)$ |
@@ -279,8 +279,8 @@ a family parametrised by the real unit vectors, whose scalar part is the sum of 
 ## Further Reading
 
 - *Introduction to the General Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.md`), for the product, its class, its two slot involutions and the positive cone of the square that the reduction uses.
-- *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the idempotents $\tilde\Pi(\xi)=\tfrac12(e_0+\xi i)$ of the associative product over the roots $\xi$ of $-e_0$, whose Hermitian half is the set computed here.
-- *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md`), for the three families of roots $\xi$ of $-e_0$ that the Hermitian condition separates.
+- *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the idempotents $\tilde\Pi(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi i)$ of the associative product over the roots $\tilde\Xi$ of $-e_0$, whose Hermitian half is the set computed here.
+- *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md`), for the three families of roots $\tilde\Xi$ of $-e_0$ that the Hermitian condition separates.
 - *Square Roots of Minus One, Zero and Plus One in the General Plain Sesqualgebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-sesqualgebra.md`), for the block's own root sets, whose root of $+1$ is the family $\tilde\Pi_1(\hat\mu)$ met here.
 - *Zero Divisors of the General Plain Sesqualgebra* (`articles_maths/zero-divisors-of-the-general-plain-sesqualgebra.md`), for the non-pure zero divisors among which the idempotents $\tilde\Pi_1(\hat\mu)$ sit.
 - *The Specificities of the General Plain Sesqualgebra* (`articles_maths/the-specificities-of-the-general-plain-sesqualgebra.md`), for the projector criterion of the right multiplications, whose projector family is the whole plain idempotent set and therefore strictly larger than the block's idempotent set computed here.

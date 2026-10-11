@@ -4,9 +4,9 @@
 
 The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ on the biquaternion space (*Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*). This article studies its **idempotents**: the elements $\tilde\Pi$ with $\tilde\Pi\star\tilde\Pi = \tilde\Pi$, an equation that names the product $\star$.
 
-The block is a **rank-one pairing** with a definite form, and the idempotent equation collapses. The square of an element is central, $\tilde\Pi\star\tilde\Pi = N(\tilde\Pi)e_0$ with $N(\tilde\Pi) = \sum_\mu\lvert\Pi_\mu\rvert^{2}$ a real non-negative number, so an idempotent is forced into the centre, where the product is the field rule $(\lambda e_0)\star(\mu e_0) = \lambda\overline{\mu}e_0$ and the equation reads $\lvert\lambda\rvert^{2} = \lambda$. The roots are $0$ and $1$, and they give the two idempotents $0$ and $e_0$. The element $e_0$ is an idempotent and **not a unit**: the block has no unit, and the square root of the idempotent equation is not a unit for the block. The block therefore carries the minimum possible number of idempotents after the trivial one, and the companion objects of the plain product, the Peirce decomposition and the bijection with the roots of $-1$, have no analogue here.
+The block is a **rank-one pairing** with a definite form, and the idempotent equation collapses. The square of an element is central, $\tilde\Pi\star\tilde\Pi = H(\tilde\Pi)e_0$ with $H(\tilde\Pi) = \sum_\mu\lvert\Pi_\mu\rvert^{2}$ a real non-negative number, so an idempotent is forced into the centre, where the product is the field rule $(\lambda e_0)\star(\mu e_0) = \lambda\overline{\mu}e_0$ and the equation reads $\lvert\lambda\rvert^{2} = \lambda$. The roots are $0$ and $1$, and they give the two idempotents $0$ and $e_0$. The element $e_0$ is an idempotent and **not a unit**: the block has no unit, and the square root of the idempotent equation is not a unit for the block. The block therefore carries the minimum possible number of idempotents after the trivial one, and the companion objects of the plain product, the Peirce decomposition and the bijection with the roots of $-1$, have no analogue here.
 
-**Placement.** The article is the sixth entry of the *Common Theory* section of the block, after the square roots of the central values and before the nilpotents. It uses the product and the class of the introduction, the norm and the definiteness of *Norm and Invertibility in the Symmetric Plain Sesqualgebra*, the rootlessness of $-1$ of *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra*, and the punctured-space zero-divisor set of *Zero Divisors of the Symmetric Plain Sesqualgebra*.
+**Placement.** The article is the sixth entry of the *Common Theory* section of the block, after the square roots of the central values and before the nilpotents. It uses the product and the class of the introduction, the algebraic norm and the definiteness of *Norm and Invertibility in the Symmetric Plain Sesqualgebra*, the rootlessness of $-1$ of *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra*, and the punctured-space zero-divisor set of *Zero Divisors of the Symmetric Plain Sesqualgebra*.
 
 **Boundaries.** The product, its class and its placement are *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*; the relative definition of the idempotent, the orthogonal and complete families and the projection is *Definitions for the Study of the 12 Algebraic Structures*. The idempotents of the parent, their classification and their Peirce decomposition are *Idempotents of the General Plain Algebra*; the idempotents of the general plain sesquilinear product, the projections of the sesqualgebra, are *Idempotents of the General Plain Sesqualgebra*. The idempotent of a sesqualgebra and the projector of its morphism space are two different objects and are not interchanged; the projectors of the multiplication operators of the block, which are only the zero operator, are *The Multiplication Operators of the Symmetric Plain Sesqualgebra*. Nothing topological and nothing metric appears.
 
@@ -16,7 +16,7 @@ $$
 \tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0, \qquad H(\tilde P,\tilde Q) = \sum_{\mu=0}^{3}P_\mu\overline{Q_\mu},
 $$
 
-and the norm is $N(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$. An idempotent is written $\tilde\Pi$.
+and the algebraic norm is $H(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$. An idempotent is written $\tilde\Pi$.
 
 ## The Definition Relative to the Product
 
@@ -34,7 +34,7 @@ The equation names the product, so the notion is relative to it: the definition 
 
 **Theorem (the classification).** An element $\tilde\Pi$ satisfies $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ if and only if $\tilde\Pi\in\{0,e_0\}$.
 
-*Proof.* By the square map of *Norm and Invertibility in the Symmetric Plain Sesqualgebra*, $\tilde\Pi\star\tilde\Pi = N(\tilde\Pi)e_0$ is central; the equation then reads $N(\tilde\Pi)e_0 = \tilde\Pi$, which forces $\tilde\Pi$ to be central, $\tilde\Pi = \lambda e_0$ with $\lambda\in\mathbb{C}$. On the centre the product is the field rule $(\lambda e_0)\star(\mu e_0) = \lambda\overline{\mu}e_0$, so the square of $\lambda e_0$ is $\lvert\lambda\rvert^{2}e_0$ and the equation reads $\lvert\lambda\rvert^{2} = \lambda$. Comparing the real and the imaginary parts, $\lambda$ is real, and then $\lambda^{2} = \lambda$, so $\lambda\in\{0,1\}$; conversely $0\star0 = 0$ and $e_0\star e_0 = H(e_0,e_0)e_0 = e_0$.
+*Proof.* By the square map of *Norm and Invertibility in the Symmetric Plain Sesqualgebra*, $\tilde\Pi\star\tilde\Pi = H(\tilde\Pi)e_0$ is central; the equation then reads $H(\tilde\Pi)e_0 = \tilde\Pi$, which forces $\tilde\Pi$ to be central, $\tilde\Pi = \lambda e_0$ with $\lambda\in\mathbb{C}$. On the centre the product is the field rule $(\lambda e_0)\star(\mu e_0) = \lambda\overline{\mu}e_0$, so the square of $\lambda e_0$ is $\lvert\lambda\rvert^{2}e_0$ and the equation reads $\lvert\lambda\rvert^{2} = \lambda$. Comparing the real and the imaginary parts, $\lambda$ is real, and then $\lambda^{2} = \lambda$, so $\lambda\in\{0,1\}$; conversely $0\star0 = 0$ and $e_0\star e_0 = H(e_0,e_0)e_0 = e_0$.
 
 **Corollary (the two idempotents are the origin and the identity of the centre).** The idempotents of the block are the origin and the unit idempotent of the centre. Both are central, both are fixed by the three conjugations, $\tilde\Pi^{\natural} = \overline{\tilde\Pi} = \tilde\Pi^{*} = \tilde\Pi$, and both are **orthogonal**, $0\star e_0 = e_0\star0 = 0$, and **complete** in the sense that their sum is the idempotent $e_0$ and not a unit of the block.
 
@@ -58,7 +58,7 @@ so the idempotent $e_0$ is not a left unit, not a right unit and not a two-sided
 
 **Theorem (no bijection).** There is no root of $-1$ in the block, so the idempotents $0$ and $e_0$ are not in bijection with the roots of $-1$.
 
-*Proof.* A root of $-1$ would be a nonzero $\tilde{Q}$ with $\tilde{Q}\star\tilde{Q} = -e_0$, that is $N(\tilde{Q}) = -1$, impossible for a sum of squares of moduli (*Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra*).
+*Proof.* A root of $-1$ would be a nonzero $\tilde{Q}$ with $\tilde{Q}\star\tilde{Q} = -e_0$, that is $H(\tilde{Q}) = -1$, impossible for a sum of squares of moduli (*Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra*).
 
 **Remark (what the absence removes).** In the plain product the map $\tilde{Q}\mapsto\tfrac12(e_0 + \tilde{Q} i)$ is a bijection between the roots of $-1$ and the nontrivial idempotents, and it is the reason the idempotent classification is a root classification (*Idempotents of the General Plain Algebra*). The block has no root of $-1$, and the map has no domain; the idempotents are two isolated points and their classification is the two-element solution of the equation $\lvert\lambda\rvert^{2} = \lambda$. The idempotent theory of the block is therefore not a root theory, and the root sets of the block carry no idempotent classification.
 
@@ -84,7 +84,7 @@ The idempotents of the four symmetric structures come in two kinds, a positive-d
 
 | structure | product | idempotents | index set |
 |---|---|---|---|
-| $\mathrm{SPA}$ | $\tfrac12(\tilde P\tilde Q + \tilde Q\tilde P)$ | the two families $\tfrac12(e_0 + \xi i)$ with $\xi$ a square root of $-1$ | the roots of $-1$ |
+| $\mathrm{SPA}$ | $\tfrac12(\tilde P\tilde Q + \tilde Q\tilde P)$ | the two families $\tfrac12(e_0 + \tilde\Xi i)$ with $\tilde\Xi$ a square root of $-1$ | the roots of $-1$ |
 | $\mathrm{SQA}$ | $N(\tilde P,\tilde Q)e_0$ | $0$ and $e_0$ | two points |
 | $\mathrm{SPS}$ | $H(\tilde P,\tilde Q)e_0$ | $0$ and $e_0$ | two points |
 | $\mathrm{SQS}$ | $\tfrac12(\tilde P^{\natural}\tilde Q^{*} + \tilde Q^{*}\tilde P^{\natural})$ | $0$ and $e_0$ | two points |
@@ -100,7 +100,7 @@ The idempotents of the symmetric plain sesqualgebra, the elements with $\tilde\P
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ | the product of the block |
-| $N(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$ | the norm of the block, real and non-negative |
+| $H(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$ | the algebraic norm of the block, real and non-negative |
 | $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ | the idempotent equation of the block |
 | $(\lambda e_0)\star(\mu e_0) = \lambda\overline{\mu}e_0$ | the product on the centre |
 | $\lvert\lambda\rvert^{2} = \lambda$ | the idempotent equation on the centre |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The equations $\tilde X\diamond\tilde X=-e_0$, $\tilde X\diamond\tilde X=0$ and $\tilde X\diamond\tilde X=e_0$ name a product, and the product here is the conjugate cross product
+The equations $\tilde\Xi\diamond\tilde\Xi=-e_0$, $\tilde\Xi\diamond\tilde\Xi=0$ and $\tilde\Xi\diamond\tilde\Xi=e_0$ name a product, and the product here is the conjugate cross product
 
 $$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\mathbf{P}\times\overline{\mathbf{Q}}
@@ -24,25 +24,25 @@ $$
 
 the definition of *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*. The roots of $-1$ are the **imaginary units** of $\star$, the roots of $+1$ its **involutions**, and the roots of $0$ its **nonzero square-zero elements**, which are among its nilpotents.
 
-Throughout this article the product is the conjugate cross product $\diamond$, so that, unqualified, a root is a root of the block, the equation is read with the square $\tilde X\diamond\tilde X=\mathbf{X}\times\overline{\mathbf{X}}$ of the block, and a value is a pure vector. The origin is not a root of any product: the definition requires the element and not only the equation, and this is why the sets below are stated for nonzero elements and the word *set* is read with that exclusion throughout.
+Throughout this article the product is the conjugate cross product $\diamond$, so that, unqualified, a root is a root of the block, the equation is read with the square $\tilde\Xi\diamond\tilde\Xi=\mathbf\Xi\times\overline{\mathbf\Xi}$ of the block, and a value is a pure vector. The origin is not a root of any product: the definition requires the element and not only the equation, and this is why the sets below are stated for nonzero elements and the word *set* is read with that exclusion throughout.
 
-**Remark (the class of the equation).** The equation $\tilde X\star\tilde X=\lambda e_0$ is not bilinear in $\tilde X$ for a sesquilinear product; it is the restriction of the sesquilinear form $\tilde X\star\tilde X$ to the diagonal, and for the block the square is conjugate-linear in its second slot, so the equation is not complex-linear and not conjugate-linear either. The three sets are therefore read one by one and not by a linear criterion, which is what the two next sections do.
+**Remark (the class of the equation).** The equation $\tilde\Xi\star\tilde\Xi=\lambda e_0$ is not bilinear in $\tilde\Xi$ for a sesquilinear product; it is the restriction of the sesquilinear form $\tilde\Xi\star\tilde\Xi$ to the diagonal, and for the block the square is conjugate-linear in its second slot, so the equation is not complex-linear and not conjugate-linear either. The three sets are therefore read one by one and not by a linear criterion, which is what the two next sections do.
 
 ## The Roots of $+1$ and of $-1$ Are Empty
 
-**Theorem.** For every nonzero $\lambda\in\mathbb{C}$ the equation $\tilde X\diamond\tilde X=\lambda e_0$ has no solution. In particular the block has no root of $-1$ and no root of $+1$.
+**Theorem.** For every nonzero $\lambda\in\mathbb{C}$ the equation $\tilde\Xi\diamond\tilde\Xi=\lambda e_0$ has no solution. In particular the block has no root of $-1$ and no root of $+1$.
 
-*Proof.* The value of the block has zero scalar part, $\mathrm{Sc}(\tilde X\diamond\tilde X)=0$ for every $\tilde X$, because $\tilde X\diamond\tilde X=\mathbf{X}\times\overline{\mathbf{X}}$ is a pure vector. The scalar part of $\lambda e_0$ is $\lambda$, so the two sides differ in their scalar part as soon as $\lambda\neq0$.
+*Proof.* The value of the block has zero scalar part, $\mathrm{Sc}(\tilde\Xi\diamond\tilde\Xi)=0$ for every $\tilde\Xi$, because $\tilde\Xi\diamond\tilde\Xi=\mathbf\Xi\times\overline{\mathbf\Xi}$ is a pure vector. The scalar part of $\lambda e_0$ is $\lambda$, so the two sides differ in their scalar part as soon as $\lambda\neq0$.
 
 **Corollary.** The block has no imaginary unit and no involution. Read with the code of the twelve, it is one of the blocks in which the two solution sets are empty: the emptiness is structural for the four antisymmetric parts, whose values are pure vectors. It is not the general rule of the twelve: the general plain product, the general quaternionic product and the general quaternionic sesquilinear product have roots of both $\pm1$, and they carry their imaginary units and their involutions, while the general plain sesquilinear product has a root of $+1$ and none of $-1$, because its scalar form is positive definite.
 
 **Remark (why the failure is total and not partial).** The obstruction is not a square that fails to reach a value; it is that the image of the square does not meet the scalar line at all outside the origin. The square map
 
 $$
-\tilde X\longmapsto\tilde X\diamond\tilde X=\mathbf{X}\times\overline{\mathbf{X}}
+\tilde\Xi\longmapsto\tilde\Xi\diamond\tilde\Xi=\mathbf\Xi\times\overline{\mathbf\Xi}
 $$
 
-has its values in the vector subspace, and the central line meets that subspace at the origin alone, so the only central value the square can take is $0$. The witness of the failure at $+1$ is the unit itself, $\tilde X=e_0$: the equation $e_0\diamond e_0=e_0$ reads $0=e_0$ and is false, and the same element shows the failure at $-1$ and at $ie_0$. The failure is thus visible on the unit of the parent algebra, which the block turns into a square-zero element, and it is recorded again at the diagonal of the block.
+has its values in the vector subspace, and the central line meets that subspace at the origin alone, so the only central value the square can take is $0$. The witness of the failure at $+1$ is the unit itself, $\tilde\Xi=e_0$: the equation $e_0\diamond e_0=e_0$ reads $0=e_0$ and is false, and the same element shows the failure at $-1$ and at $ie_0$. The failure is thus visible on the unit of the parent algebra, which the block turns into a square-zero element, and it is recorded again at the diagonal of the block.
 
 **Remark (the contrast with the parent row).** The general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ and its symmetric half have roots of each of the three central values, and the block is the one member of the row for which the two nontrivial values are out of reach. The exceptional pair of the row is therefore inverted: in the general product the roots of $-1$ generate the imaginary units out of which the idempotents are built, and in the antisymmetric part those units are missing and the cone of the diagonal takes their place.
 
@@ -51,18 +51,18 @@ has its values in the vector subspace, and the central line meets that subspace 
 **Theorem (the square-zero set of the block).** For every biquaternion,
 
 $$
-\tilde X\diamond\tilde X=\mathbf{X}\times\overline{\mathbf{X}},
+\tilde\Xi\diamond\tilde\Xi=\mathbf\Xi\times\overline{\mathbf\Xi},
 $$
 
-and this vanishes exactly when the vector part $\mathbf{X}$ is a complex multiple of a real vector. The roots of $0$ in the block are therefore the nonzero elements of the cone
+and this vanishes exactly when the vector part $\mathbf\Xi$ is a complex multiple of a real vector. The roots of $0$ in the block are therefore the nonzero elements of the cone
 
 $$
-\tilde X\diamond\tilde X=0 \qquad\Longleftrightarrow\qquad \mathbf{X}=\lambda\mathbf{v},\quad \lambda\in\mathbb{C},\ \mathbf{v}\in\mathbb{R}^{3},
+\tilde\Xi\diamond\tilde\Xi=0 \qquad\Longleftrightarrow\qquad \mathbf\Xi=\lambda\mathbf{v},\quad \lambda\in\mathbb{C},\ \mathbf{v}\in\mathbb{R}^{3},
 $$
 
-a set of real dimension six: the scalar coordinate $X_0$ is free and complex, and the vector part runs over the cone of the complex multiples of the real directions.
+a set of real dimension six: the scalar coordinate $\Xi_0$ is free and complex, and the vector part runs over the cone of the complex multiples of the real directions.
 
-*Proof.* The rule of the block gives the diagonal as the cross product of the vector part with its conjugate, and writing $\mathbf{X}=\mathbf{a}+i\mathbf{b}$ with $\mathbf{a},\mathbf{b}$ real gives $\mathbf{X}\times\overline{\mathbf{X}}=-2i\,\mathbf{a}\times\mathbf{b}$, which vanishes exactly when $\mathbf{a}$ and $\mathbf{b}$ are real multiples of one another. The criterion and the dimension are the ones of *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, where the vanishing of the diagonal is reduced to the complex multiples of the real directions and the free scalar coordinate is exhibited.
+*Proof.* The rule of the block gives the diagonal as the cross product of the vector part with its conjugate, and writing $\mathbf\Xi=\mathbf{a}+i\mathbf{b}$ with $\mathbf{a},\mathbf{b}$ real gives $\mathbf\Xi\times\overline{\mathbf\Xi}=-2i\,\mathbf{a}\times\mathbf{b}$, which vanishes exactly when $\mathbf{a}$ and $\mathbf{b}$ are real multiples of one another. The criterion and the dimension are the ones of *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, where the vanishing of the diagonal is reduced to the complex multiples of the real directions and the free scalar coordinate is exhibited.
 
 **Proposition (the two families of roots of $0$).** The roots of $0$ are the union of two families which are read apart:
 
@@ -75,7 +75,7 @@ The two families meet nowhere, and their union is the whole of the cone. The sec
 
 **Remark (the parent unit is a root of zero).** The element $e_0$ lies in the first family, so **the unit of the parent products is a root of $0$ in the block**: $e_0\diamond e_0=0$. This is the sharpest form of the failure of the roots of $+1$: the element whose equation with $+1$ would be the definition of the involution of the block is the most degenerate of its square-zero elements, and it is the witness used in the section above. The same holds of $ie_0$, of every central element, and of the whole of the scalar line.
 
-**Remark (the roots of $0$ and the diagonal).** The set above is the vanishing set of the diagonal $\tilde X\mapsto\tilde X\diamond\tilde X$, so the roots of $0$ are exactly the elements on which the square map takes its only central value, and the map is nowhere injective on them: every root of $0$ has the whole complex line of scalars over it, since $\tilde X\diamond\tilde X$ reads the vector part alone. The cone is the object the idempotent theory would use as its degenerate residue if the block had idempotents, and it is the object the nilpotents article reads as its square-zero set.
+**Remark (the roots of $0$ and the diagonal).** The set above is the vanishing set of the diagonal $\tilde\Xi\mapsto\tilde\Xi\diamond\tilde\Xi$, so the roots of $0$ are exactly the elements on which the square map takes its only central value, and the map is nowhere injective on them: every root of $0$ has the whole complex line of scalars over it, since $\tilde\Xi\diamond\tilde\Xi$ reads the vector part alone. The cone is the object the idempotent theory would use as its degenerate residue if the block had idempotents, and it is the object the nilpotents article reads as its square-zero set.
 
 ## The Three Sets Side by Side
 
@@ -83,9 +83,9 @@ The three questions are compared below; the last column names the witness that s
 
 | central value | the equation | the roots | the witness |
 |---|---|---|---|
-| $-1$ | $\tilde X\diamond\tilde X=-e_0$ | none | $\mathrm{Sc}(\tilde X\diamond\tilde X)=0\neq-1$; at $\tilde X=e_0$ both sides read $0$ and $-e_0$ |
-| $0$ | $\tilde X\diamond\tilde X=0$ | the cone, real dimension $6$ | $\tilde X=e_0$ is a root; $\tilde X=e_1+ie_2$ is not, its square being $-2ie_3$ |
-| $+1$ | $\tilde X\diamond\tilde X=e_0$ | none | $\mathrm{Sc}(\tilde X\diamond\tilde X)=0\neq1$; at $\tilde X=e_0$ both sides read $0$ and $e_0$ |
+| $-1$ | $\tilde\Xi\diamond\tilde\Xi=-e_0$ | none | $\mathrm{Sc}(\tilde\Xi\diamond\tilde\Xi)=0\neq-1$; at $\tilde\Xi=e_0$ both sides read $0$ and $-e_0$ |
+| $0$ | $\tilde\Xi\diamond\tilde\Xi=0$ | the cone, real dimension $6$ | $\tilde\Xi=e_0$ is a root; $\tilde\Xi=e_1+ie_2$ is not, its square being $-2ie_3$ |
+| $+1$ | $\tilde\Xi\diamond\tilde\Xi=e_0$ | none | $\mathrm{Sc}(\tilde\Xi\diamond\tilde\Xi)=0\neq1$; at $\tilde\Xi=e_0$ both sides read $0$ and $e_0$ |
 
 The table is a table of sets and not of equations only: the middle row is the one with content, and the two outer rows are empty because the square of the block never has a nonzero central value. The three rows are the three cases of one definition, the root of a central value of *Definitions for the Study of the 12 Algebraic Structures*.
 
@@ -97,7 +97,7 @@ The table is a table of sets and not of equations only: the middle row is the on
 
 **The roots of $0$ are the square-zero elements.** An element whose square vanishes has all its left-nested powers vanishing, so the roots of $0$ are exactly the nonzero square-zero elements of the block, which are its nilpotents of index two; the index of nilpotency of the block is not confined to two, since the elements whose vector part is isotropic for the complex bilinear dot without being a complex multiple of a real vector are nilpotents of index four, and they are not roots of $0$. The two classes and the index are *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra*; the content of the identification here is that a root of $0$ is an element of index two, and that the block has no nilpotent of index three, which the nilpotents article proves from the recurrence of the left-nested powers.
 
-**The conjugations and the three sets.** The star sends a square-zero element to a square-zero element, since $(\tilde X^{*})\diamond(\tilde X^{*})=-(\tilde X\diamond\tilde X)^{*}$, so the roots of $0$ are stable under the star; the natural conjugation fixes the class as well, and the bar commutes with the product. The empty sets are trivially stable. The three sets are thus read with the same symmetry as the product, and the stability of the middle one is the only content of the remark.
+**The conjugations and the three sets.** The star sends a square-zero element to a square-zero element, since $(\tilde\Xi^{*})\diamond(\tilde\Xi^{*})=-(\tilde\Xi\diamond\tilde\Xi)^{*}$, so the roots of $0$ are stable under the star; the natural conjugation fixes the class as well, and the bar commutes with the product. The empty sets are trivially stable. The three sets are thus read with the same symmetry as the product, and the stability of the middle one is the only content of the remark.
 
 ## Summary
 
@@ -108,11 +108,11 @@ The roots of $-1$ and of $+1$ in the block are empty, and they are empty for one
 | symbol | meaning |
 |---|---|
 | $\tilde P\diamond\tilde Q=\mathbf{P}\times\overline{\mathbf{Q}}$ | the conjugate cross product, the product of the block |
-| $\tilde X\diamond\tilde X=\mathbf{X}\times\overline{\mathbf{X}}=-2i\,\mathbf{a}\times\mathbf{b}$ | the square, a pure vector |
-| $\mathbf{X}=\mathbf{a}+i\mathbf{b}$, $\mathbf{a},\mathbf{b}$ real | the real decomposition of the vector part |
-| $\mathbf{X}$ a complex multiple of a real vector | the criterion for a root of $0$ |
-| $\tilde X=e_0$ | the parent unit, a root of $0$ and the witness against $\pm1$ |
-| $\tilde X=e_1+ie_2$ | not a root of $0$, its square being $-2ie_3$ |
+| $\tilde\Xi\diamond\tilde\Xi=\mathbf\Xi\times\overline{\mathbf\Xi}=-2i\,\mathbf{a}\times\mathbf{b}$ | the square, a pure vector |
+| $\mathbf\Xi=\mathbf{a}+i\mathbf{b}$, $\mathbf{a},\mathbf{b}$ real | the real decomposition of the vector part |
+| $\mathbf\Xi$ a complex multiple of a real vector | the criterion for a root of $0$ |
+| $\tilde\Xi=e_0$ | the parent unit, a root of $0$ and the witness against $\pm1$ |
+| $\tilde\Xi=e_1+ie_2$ | not a root of $0$, its square being $-2ie_3$ |
 | $\lambda e_0$ | a central value, with a root only for $\lambda=0$ |
 
 ## Further Reading

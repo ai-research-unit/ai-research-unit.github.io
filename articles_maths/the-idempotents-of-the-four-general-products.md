@@ -14,7 +14,7 @@ The four sets are of four different kinds, and the difference is not in the size
 
 | product | idempotents | owner |
 |---|---|---|
-| $\tilde P\tilde Q$ | $0$, $e_0$, and $\tfrac12(e_0+\xi i)$ for a root $\xi$ of $-e_0$ | *Idempotents of the General Plain Algebra* |
+| $\tilde P\tilde Q$ | $0$, $e_0$, and $\tfrac12(e_0+\tilde\Xi i)$ for a root $\tilde\Xi$ of $-e_0$ | *Idempotents of the General Plain Algebra* |
 | $\tilde P^{\natural}\tilde Q$ | $0$ and $e_0$ alone | *Idempotents of the General Quaternionic Algebra* |
 | $\tilde P\tilde Q^{*}$ | $0$, $e_0$, and $\tfrac12(e_0+i\hat\mu)$ for a real unit vector $\hat\mu$ | *Idempotents of the General Plain Sesqualgebra* |
 | $\tilde P^{\natural}\tilde Q^{*}$ | $0$, $e_0$, and $-\tfrac12e_0+\mu$ for a real vector $\mu$ with $(\mu,\mu) = \tfrac34$ | *Idempotents of the General Quaternionic Sesqualgebra* |
@@ -25,13 +25,13 @@ Everything the four columns share is the trivial pair; everything else separates
 
 The plain product is the one associative multiplication with a unit, and its idempotents are the idempotents of the algebra.
 
-**Theorem (the plain family, quoted).** The idempotents of $\mathbb{B}$ are $0$, $e_0$, and the elements $\tilde\Pi = \tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-e_0$. The map $\xi\mapsto\tfrac12(e_0+\xi i)$ is a bijection from the roots of $-e_0$ onto the idempotents, and the complementary pair is $\{\tfrac12(e_0+\xi i),\ \tfrac12(e_0-\xi i)\}$.
+**Theorem (the plain family, quoted).** The idempotents of $\mathbb{B}$ are $0$, $e_0$, and the elements $\tilde\Pi = \tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-e_0$. The map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi i)$ is a bijection from the roots of $-e_0$ onto the idempotents, and the complementary pair is $\{\tfrac12(e_0+\tilde\Xi i),\ \tfrac12(e_0-\tilde\Xi i)\}$.
 
 **Proof.** The proof is in *Idempotents of the General Plain Algebra*; it reduces the equation $\tilde\Pi^2 = \tilde\Pi$ to the classification of the roots of $-e_0$, which is *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*.
 
-The classification of the roots organises the family in three parts, and each part has its own type. The **trivial** roots $\xi = \pm i$ give the trivial idempotents, $0$ and $e_0$. The **real** roots $\xi = \hat\mu$, the unit real vectors, form the family of $\mathbb{R}^{3}$, and give the family $\tfrac12(e_0+i\hat\mu)$ of **Hermitian** idempotents, the family the general plain sesquilinear product keeps. The **non-trivial** roots $\xi = \mathbf p+i\mathbf p'$, with $\mathbf p,\mathbf p'$ real vectors, $\mathbf p'\neq0$, satisfying $\sum_k p_k^{2}-\sum_k p'^{2}_k = 1$ and $\sum_k p_kp'_k = 0$, form a four-parameter family, and give the **non-trivial** idempotents, a four-parameter family that lies in none of the four four-dimensional subspaces of the algebra.
+The classification of the roots organises the family in three parts, and each part has its own type. The **trivial** roots $\tilde\Xi = \pm i$ give the trivial idempotents, $0$ and $e_0$. The **real** roots $\tilde\Xi = \hat\mu$, the unit real vectors, form the family of $\mathbb{R}^{3}$, and give the family $\tfrac12(e_0+i\hat\mu)$ of **Hermitian** idempotents, the family the general plain sesquilinear product keeps. The **non-trivial** roots $\tilde\Xi = \mathbf p+i\mathbf p'$, with $\mathbf p,\mathbf p'$ real vectors, $\mathbf p'\neq0$, satisfying $\sum_k p_k^{2}-\sum_k p'^{2}_k = 1$ and $\sum_k p_kp'_k = 0$, form a four-parameter family, and give the **non-trivial** idempotents, a four-parameter family that lies in none of the four four-dimensional subspaces of the algebra.
 
-The second and the third parts are related by the same formula and are not the same: the Hermitian idempotents have a real scalar part and a purely imaginary vector part, while a non-trivial idempotent $\tilde\Pi = \tfrac12(e_0+\xi i)$ with $\xi = \mathbf p+i\mathbf p'$ is
+The second and the third parts are related by the same formula and are not the same: the Hermitian idempotents have a real scalar part and a purely imaginary vector part, while a non-trivial idempotent $\tilde\Pi = \tfrac12(e_0+\tilde\Xi i)$ with $\tilde\Xi = \mathbf p+i\mathbf p'$ is
 
 $$
 \tilde\Pi = \tfrac12\bigl(e_0-\mathbf p'\bigr) + \tfrac12\mathbf p\,i ,
@@ -59,26 +59,26 @@ The central square of an idempotent is the invariant that separates the four set
 |---|---|
 | $0$ | $0$ |
 | $e_0$ | $e_0$ |
-| $\tfrac12(e_0+\xi i)$, $\xi$ a real or a non-trivial root of $-e_0$ (the Hermitian $\tfrac12(e_0+i\hat\mu)$ for a real root $\xi = \hat\mu$) | $0$ |
+| $\tfrac12(e_0+\tilde\Xi i)$, $\tilde\Xi$ a real or a non-trivial root of $-e_0$ (the Hermitian $\tfrac12(e_0+i\hat\mu)$ for a real root $\tilde\Xi = \hat\mu$) | $0$ |
 | $-\tfrac12e_0+\mu$, $(\mu,\mu) = \tfrac34$ | $e_0$ |
 
-**Proof.** For the plain family, $\bigl(\tfrac12(e_0+\xi i)\bigr)^{\natural}\bigl(\tfrac12(e_0+\xi i)\bigr) = \tfrac14\bigl(e_0-\xi i\bigr)\bigl(e_0+\xi i\bigr) = \tfrac14\bigl(e_0-(\xi i)^{2}\bigr)$, and $(\xi i)^{2} = \xi^{2}i^{2} = e_0$ for a root $\xi$ of $-e_0$, so the central square is $0$; the Hermitian idempotents are the members of that family with a real root, and the computation is the same. For the fourth family the idempotent is real, so $\tilde\Pi^{\natural} = -\tfrac12e_0-\mu$, and $\tilde\Pi^{\natural}\tilde\Pi = \bigl(-\tfrac12e_0-\mu\bigr)\bigl(-\tfrac12e_0+\mu\bigr) = \tfrac14e_0-\mu^{2} = \tfrac14e_0+(\mu,\mu)e_0 = \bigl(\tfrac14+\tfrac34\bigr)e_0 = e_0$, so the central square is $e_0$; the product $\overline{\tilde\Pi}\tilde\Pi$ computed in *Idempotents of the General Quaternionic Sesqualgebra* is $\tilde\Pi^{\natural}$, which is the same central value.
+**Proof.** For the plain family, $\bigl(\tfrac12(e_0+\tilde\Xi i)\bigr)^{\natural}\bigl(\tfrac12(e_0+\tilde\Xi i)\bigr) = \tfrac14\bigl(e_0-\tilde\Xi i\bigr)\bigl(e_0+\tilde\Xi i\bigr) = \tfrac14\bigl(e_0-(\tilde\Xi i)^{2}\bigr)$, and $(\tilde\Xi i)^{2} = \tilde\Xi^{2}i^{2} = e_0$ for a root $\tilde\Xi$ of $-e_0$, so the central square is $0$; the Hermitian idempotents are the members of that family with a real root, and the computation is the same. For the fourth family the idempotent is real, so $\tilde\Pi^{\natural} = -\tfrac12e_0-\mu$, and $\tilde\Pi^{\natural}\tilde\Pi = \bigl(-\tfrac12e_0-\mu\bigr)\bigl(-\tfrac12e_0+\mu\bigr) = \tfrac14e_0-\mu^{2} = \tfrac14e_0+(\mu,\mu)e_0 = \bigl(\tfrac14+\tfrac34\bigr)e_0 = e_0$, so the central square is $e_0$; the product $\overline{\tilde\Pi}\tilde\Pi$ computed in *Idempotents of the General Quaternionic Sesqualgebra* is $\tilde\Pi^{\natural}$, which is the same central value.
 
 Zero for the two families of zero divisors, $e_0$ for the two units: the central square is the invariant that decides which idempotents are units of the algebra and which are not, and it decides it in opposite directions for the plain family and for the fourth family. The Hermitian idempotents are therefore **null** for the algebra's central square although they are the pure states of the sesqualgebra (*Idempotents of the General Plain Sesqualgebra*), a coincidence of language worth noticing: the algebraic positivity of the sesqualgebra and the central square of the algebra are different objects, and the idempotents lie in its zero set.
 
 ## Units, Zero Divisors and the Antipode
 
-**Theorem (units and zero divisors among the idempotents).** Among the idempotents of the four general products, the units of the algebra are $e_0$ and the family $-\tfrac12e_0+\mu$ of the fourth product; the zero divisors of the algebra are the members of the plain family $\tfrac12(e_0+\xi i)$ with $\xi$ non-trivial or real, and no other idempotent; and $0$ is neither.
+**Theorem (units and zero divisors among the idempotents).** Among the idempotents of the four general products, the units of the algebra are $e_0$ and the family $-\tfrac12e_0+\mu$ of the fourth product; the zero divisors of the algebra are the members of the plain family $\tfrac12(e_0+\tilde\Xi i)$ with $\tilde\Xi$ non-trivial or real, and no other idempotent; and $0$ is neither.
 
 **Proof.** The values of the central square are the previous theorem, and the criterion of invertibility is that the central square not vanish (*Norm and Invertibility in the General Plain Algebra*).
 
-The theorem is the sharpest separation of the four sets. The natural product's idempotents are both units, so the smallest set is the one with no zero divisors at all. The plain product and the general plain sesquilinear product have nontrivial idempotents and every one of them is a zero divisor; the plain product's non-trivial family is a part of the zero-divisor cone that no other product's idempotents reach. The fourth product is the only one whose nontrivial idempotents are units, and they are its own: neither $\tfrac12(e_0+i\hat\mu)$ nor $\tfrac12(e_0+\xi i)$ is an idempotent of the general quaternionic sesquilinear product, and neither $-\tfrac12e_0+\mu$ nor $\tfrac12(e_0+\xi i)$ is an idempotent of the natural product, whose only idempotents are $0$ and $e_0$.
+The theorem is the sharpest separation of the four sets. The natural product's idempotents are both units, so the smallest set is the one with no zero divisors at all. The plain product and the general plain sesquilinear product have nontrivial idempotents and every one of them is a zero divisor; the plain product's non-trivial family is a part of the zero-divisor cone that no other product's idempotents reach. The fourth product is the only one whose nontrivial idempotents are units, and they are its own: neither $\tfrac12(e_0+i\hat\mu)$ nor $\tfrac12(e_0+\tilde\Xi i)$ is an idempotent of the general quaternionic sesquilinear product, and neither $-\tfrac12e_0+\mu$ nor $\tfrac12(e_0+\tilde\Xi i)$ is an idempotent of the natural product, whose only idempotents are $0$ and $e_0$.
 
 The complementation pairs the members of the two families of the algebra's own product.
 
-**Proposition (the antipodal idempotent).** Let $\tilde\Pi$ be an idempotent of the plain product. Then $e_0-\tilde\Pi$ is an idempotent of the plain product, the two are orthogonal in the plain product, $\tilde\Pi(e_0-\tilde\Pi) = 0$, and they sum to $e_0$. The map is the antipode of the parameter set: $\xi\mapsto-\xi$ for the plain family, and $\hat\mu\mapsto-\hat\mu$ for the Hermitian subfamily.
+**Proposition (the antipodal idempotent).** Let $\tilde\Pi$ be an idempotent of the plain product. Then $e_0-\tilde\Pi$ is an idempotent of the plain product, the two are orthogonal in the plain product, $\tilde\Pi(e_0-\tilde\Pi) = 0$, and they sum to $e_0$. The map is the antipode of the parameter set: $\tilde\Xi\mapsto-\tilde\Xi$ for the plain family, and $\hat\mu\mapsto-\hat\mu$ for the Hermitian subfamily.
 
-**Proof.** $(e_0-\tilde\Pi)^{2} = e_0-2\tilde\Pi+\tilde\Pi^{2} = e_0-\tilde\Pi$ and $\tilde\Pi(e_0-\tilde\Pi) = \tilde\Pi-\tilde\Pi^{2} = 0$. The parametrisation gives $\tfrac12(e_0+\xi i)$ to $\tfrac12(e_0-\xi i)$.
+**Proof.** $(e_0-\tilde\Pi)^{2} = e_0-2\tilde\Pi+\tilde\Pi^{2} = e_0-\tilde\Pi$ and $\tilde\Pi(e_0-\tilde\Pi) = \tilde\Pi-\tilde\Pi^{2} = 0$. The parametrisation gives $\tfrac12(e_0+\tilde\Xi i)$ to $\tfrac12(e_0-\tilde\Xi i)$.
 
 The complementation exists for the plain product alone, because it uses the associativity and the unit of that product; the family of the fourth product carries no complementation inside itself, and the natural product, having only the trivial pair, has the complementation only on it.
 
@@ -104,7 +104,7 @@ The comparison is the last separation of the article, and it is the reason the p
 
 ## Summary
 
-The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* have four idempotent sets, all containing the trivial pair. The plain product, whose idempotents are the idempotents of the algebra, has the elements $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-e_0$: the trivial pair, the family $\tfrac12(e_0+i\hat\mu)$ of the Hermitian idempotents, and a four-parameter family lying in none of the four four-dimensional subspaces; the natural product has the trivial pair alone; the general plain sesquilinear product has the trivial pair and the Hermitian family; and the general quaternionic sesquilinear product has the trivial pair and the family $-\tfrac12e_0+\mu$ with $(\mu,\mu) = \tfrac34$.
+The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* have four idempotent sets, all containing the trivial pair. The plain product, whose idempotents are the idempotents of the algebra, has the elements $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-e_0$: the trivial pair, the family $\tfrac12(e_0+i\hat\mu)$ of the Hermitian idempotents, and a four-parameter family lying in none of the four four-dimensional subspaces; the natural product has the trivial pair alone; the general plain sesquilinear product has the trivial pair and the Hermitian family; and the general quaternionic sesquilinear product has the trivial pair and the family $-\tfrac12e_0+\mu$ with $(\mu,\mu) = \tfrac34$.
 
 The central square separates the sets: it is $e_0$ on $e_0$, $0$ on every nontrivial idempotent of the plain product and of the general plain sesquilinear product, and $e_0$ on the family of the fourth product. The idempotents of the four sets that are units of the algebra are therefore $e_0$ and the fourth product's family; the idempotents that are zero divisors are the nontrivial ones of the plain product and the Hermitian ones of the general plain sesquilinear product; and the natural product's set consists of the two units alone.
 
@@ -115,7 +115,7 @@ The families occupy the centre, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and no
 | symbol | meaning |
 |---|---|
 | $\tilde\Pi$ | an idempotent, $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ in the product at hand |
-| $\xi$ | a root of $-e_0$, $\xi^{2} = -e_0$; trivial $\pm i$, real $\hat\mu$, or non-trivial $\mathbf p+i\mathbf p'$ |
+| $\tilde\Xi$ | a root of $-e_0$, $\tilde\Xi^{2} = -e_0$; trivial $\pm i$, real $\hat\mu$, or non-trivial $\mathbf p+i\mathbf p'$ |
 | $\hat\mu$ | a real unit vector, $\hat\mu^{2} = -e_0$ |
 | $\tilde\Pi_1(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ | the Hermitian idempotents of the general plain sesquilinear product |
 | $-\tfrac12e_0+\mu$ | the idempotents of the general quaternionic sesquilinear product, $(\mu,\mu) = \tfrac34$ |

@@ -125,7 +125,7 @@ The annihilator is the first of four product-dependent readings that the common 
 | reading | $\tilde P\tilde Q$ | $\tilde P^{\natural}\tilde Q$ | $\tilde P\tilde Q^{*}$ | $\tilde P^{\natural}\tilde Q^{*}$ |
 |---|---|---|---|---|
 | square-zero set | the pure cone $\{P_0 = 0,\ (\mathbf P,\mathbf P) = 0\}$ | the whole cone $\{c = 0\}$ | $\{0\}$ alone | the solutions of $\overline{\tilde P}\tilde P = 0$ |
-| idempotent set | the plain family $\tfrac12(e_0 + \xi i)$ | $0$ and $e_0$ alone | the Hermitian idempotents | the family $-\tfrac12e_0 + \mu$ |
+| idempotent set | the plain family $\tfrac12(e_0 + \tilde\Xi i)$ | $0$ and $e_0$ alone | the Hermitian idempotents | the family $-\tfrac12e_0 + \mu$ |
 | unit | $e_0$, two-sided | $e_0$ on the left | $e_0$ on the right | none on either side |
 
 Each of the three rows is a set of elements on which the four products disagree, and each of them is a set of elements of the zero-divisor cone or beside it. The zero-divisor set itself is the one row of the element theory on which they agree.

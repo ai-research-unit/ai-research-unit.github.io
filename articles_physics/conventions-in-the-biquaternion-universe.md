@@ -62,13 +62,13 @@ and this identification is used constantly. It is fixed by a single isomorphism,
 
 The case and the tilde of the glyph are fixed first, and the element is written after. A generic element is preferably written so that the glyph alone identifies its algebra, two features being read together: the **case** separates a real scalar from a complex one, and a **tilde** marks the quaternionic factor.
 
-| System | Name | Generic element | Coefficients |
-|---|---|---|---|
-| $\mathbb{C}$ | complex numbers | $A = a + ia'$ | real, $a, a'$ |
-| $\mathbb{H}$ | quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | real |
-| $\mathbb{B}$ | biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | complex, $Q_\mu = q_\mu + iq'_\mu$ |
+| System | Name | Generic element | Scalar–vector decomposition | Coefficients |
+|---|---|---|---|---|
+| $\mathbb{C}$ | complex numbers | $A = a + ia'$ | scalar $a$, vector $ia'$ | real, $a, a'$ |
+| $\mathbb{H}$ | quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $q_0e_0 + \mathbf q$, $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$ | real |
+| $\mathbb{B}$ | biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | $Q_0e_0 + \mathbf Q$, $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{C}$ | complex, $Q_\mu = q_\mu + iq'_\mu$ |
 
-Three rules are read off the table. **A complex element carries a majuscule**, $A$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. **The second coordinate of a complex element carries a prime**, $A = a + ia'$. And **the quaternionic elements carry a tilde**: lower case for the quaternions, $\tilde q$, and upper case for the biquaternions, $\tilde Q$.
+Four rules are read off the table. **A complex element carries a majuscule**, $A$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. **The second coordinate of a complex element carries a prime**, $A = a + ia'$. And **the quaternionic elements carry a tilde**: lower case for the quaternions, $\tilde q$, and upper case for the biquaternions, $\tilde Q$. Finally, **the element is a scalar part plus a vector part**: the scalar part is carried by the unit — $1$ in $\mathbb{C}$, $e_0$ in $\mathbb{H}$ and $\mathbb{B}$ — and the vector part by the remaining basis directions, assembled in the bold letter $\mathbf q$ or $\mathbf Q$, so that $\tilde Q = Q_0e_0 + \mathbf Q$ with $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$ and $Q_\mu = q_\mu + iq'_\mu$.
 
 The notation of this article already reads through the convention: the coefficients $q_\mu$ are real, the coefficients $Q_\mu = q_\mu + iq'_\mu$ are complex, and a general element of $\mathbb{B}$ is written $\tilde Q$.
 

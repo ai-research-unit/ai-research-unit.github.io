@@ -3,13 +3,13 @@
 ## Introduction
 
 This article isolates the block among the twelve structures of the biquaternion complex space by a single
-law, the law of being **$K$-Hermitian**, and it runs the eleven comparisons. The block is the symmetric
+law, the law of being **$K$-Hermitian**. The block is the symmetric
 quaternionic sesquilinear product
 $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ of
 *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*; the twelve structures and their
 four general products are the subject of *The 12 Products of the Biquaternion Complex Space*, and the model
 of the method is *The Specificities of the General Plain Algebra*, which isolates the plain product by left
-alternativity and runs the same eleven comparisons. The twin articles are
+alternativity. The twin articles are
 *The Specificities of the General Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic
 Algebra*.
 
@@ -94,95 +94,26 @@ part of $\tilde P\star\tilde Q$. So $\overline{\tilde Q\star\tilde P}=\tilde P\s
 **Theorem (the specificity).** Among the twelve structures of the biquaternion complex space, the block
 $\mathrm{SQS}$ is the only $K$-Hermitian product.
 
-*Proof.* The block is $K$-Hermitian by the theorem of §*The Law*, so it remains to test the eleven others,
-which is done one structure at a time in §*The Eleven Comparisons*; each fails at least one of the two
-clauses, and the failure is exhibited by a named pair.
+*Proof.* The block is $K$-Hermitian by the theorem of §*The Law: Being $K$-Hermitian*; the other eleven are disposed of in
+§*The Isolation among the Twelve*, each failing at least one of the two clauses on a named pair.
 
-The remainder of the article is the comparison. The verdict is collected in the table of §*The Table of the
-Twelve*.
+## The Isolation among the Twelve
 
-## The Eleven Comparisons
+**Theorem (the isolation).** Among the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the block is the only $K$-Hermitian product.
 
-Every comparison is a computation with the multiplication table
-$e_0\circ e_0=e_0$, $e_0\circ e_k=e_k\circ e_0=-e_k$, $e_k\circ e_k=-e_0$ and
-$e_j\circ e_k=0$ for distinct $j,k\in\{1,2,3\}$ of the block,
-together with the analogous tables of the eleven other structures read from *The 12 Products of the
-Biquaternion Complex Space*; only the values needed for the failure are recorded. Three witnesses suffice
-throughout: the pair $(ie_1,e_1)$, where a bilinear product reverses the imaginary unit and the two sides of
-(C1) are $\mp ie_0$; the pair $(e_1,e_2)$, where the two sides of (C1) are the opposite signs of $e_3$; and
-the elements $ie_1$ and $e_1$, where the bilinear and the definite forms differ from $K$.
+*Proof.* The block satisfies both clauses by §*The Law: Being $K$-Hermitian*. The other eleven each fail at least one clause. The three bilinear general products GPA and the bilinear parts SPA, SQA fail conjugate-symmetry at $(ie_1,e_1)$, where a bilinear product reverses the imaginary unit, and fail the scalar-part identity at the elements $e_1$ and $ie_1$, where the bilinear form differs from $K$; the two sesquilinear general products GPS and GQS fail conjugate-symmetry at $(e_1,e_2)$, where the two sides are opposite signs of $e_3$, GQS satisfying the scalar-part identity while GPS fails it at $e_1$; the symmetric plain sesquilinear part SPS satisfies conjugate-symmetry and fails the scalar-part identity at $e_1$, its scalar part being the definite form $|P_0|^2+\lVert\mathbf P\rVert^2$ and not $K$; and the four antisymmetric parts fail both, being skew-conjugate-symmetric — so conjugate-symmetry would force them to vanish — and having identically vanishing scalar part.
 
-**The four general products.**
-
-- $\mathrm{GPA}(\tilde P,\tilde Q)=\tilde P\tilde Q$: (C1) fails at $(ie_1,e_1)$, where
-  $\mathrm{GPA}(ie_1,e_1)=-ie_0$ while $\overline{\mathrm{GPA}(e_1,ie_1)}=ie_0$; (C2) fails, since
-  $\mathrm{GPA}$ is bilinear, at $ie_1$, where $\mathrm{Sc}(\mathrm{GPA}(ie_1,ie_1))=1$ while
-  $K(ie_1,ie_1)=-1$.
-- $\mathrm{GQA}(\tilde P,\tilde Q)=\tilde P^{\natural}\tilde Q$: (C1) fails at $(ie_1,e_1)$, the two sides
-  being $ie_0$ and $-ie_0$; (C2) fails at $e_1$, where $\mathrm{Sc}(\mathrm{GQA}(e_1,e_1))=1$ while
-  $K(e_1,e_1)=-1$.
-- $\mathrm{GPS}(\tilde P,\tilde Q)=\tilde P\tilde Q^{*}$: (C1) fails at $(e_1,e_2)$, the two sides being
-  $-e_3$ and $e_3$; (C2) fails at $e_1$, where $\mathrm{Sc}(\mathrm{GPS}(e_1,e_1))=1\neq-1$.
-- $\mathrm{GQS}(\tilde P,\tilde Q)=\tilde P^{\natural}\tilde Q^{*}$: (C1) fails at $(e_1,e_2)$, the two
-  sides being $e_3$ and $-e_3$; (C2) holds, since $\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=K(\tilde P,\tilde Q)$ by the multiplication table.
-
-**The four symmetric parts.**
-
-- $\mathrm{SPA}(\tilde P,\tilde Q)=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$: (C1) fails at $(ie_1,e_1)$,
-  the two sides being $-ie_0$ and $ie_0$; (C2) fails at $ie_1$, with $1\neq-1$.
-- $\mathrm{SQA}(\tilde P,\tilde Q)=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$: (C1)
-  fails at $(ie_1,e_1)$, the two sides being $ie_0$ and $-ie_0$; (C2) fails at $e_1$, with $1\neq-1$.
-- $\mathrm{SPS}(\tilde P,\tilde Q)=\tfrac12(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}})$: (C1)
-  holds, the product being a symmetric part under the adapted exchange; (C2) fails at $e_1$, where the
-  scalar part of $\mathrm{SPS}$ is the definite form $|P_0|^2+\lVert\mathbf P\rVert^2$, equal to $1$ there,
-  while $K(e_1,e_1)=-1$.
-- $\mathrm{SQS}$: both clauses, by the theorem of §*The Law*.
-
-**The four antisymmetric parts.** Each is the skew-conjugate-symmetric companion of its general product,
-$\mathrm{A}(P,Q)=-\overline{\mathrm{A}(Q,P)}$; if (C1) held as well then the two relations would give
-$\mathrm{A}(P,Q)=0$ for all pairs, which is false, so (C1) fails for all four. And each fails (C2), since
-the scalar part of all four vanishes identically: for $\mathrm{APA}$ and $\mathrm{AQA}$ because
-$\mathrm{Sc}(\tilde P\tilde Q)=\mathrm{Sc}(\tilde Q\tilde P)$; for $\mathrm{APS}$ because the two halves
-$PQ^*$ and $\overline{QP^*}$ have the same scalar part,
-$\mathrm{Sc}(\overline{\tilde Q\tilde P^*})=\mathrm{Sc}(\tilde P\tilde Q^*)$; for $\mathrm{AQS}$ because
-$\mathrm{Sc}(\mathrm{GQS})$ is the Hermitian form $K$ and
-$\mathrm{Sc}(\mathrm{AQS})=\tfrac12\bigl(K(P,Q)-\overline{K(Q,P)}\bigr)=0$. In every case the value at
-$e_1$ is $0$ while $K(e_1,e_1)=-1$.
-
-## The Table of the Twelve
-
-| structure | (C1) conjugate-symmetry | (C2) scalar part $K$ | $K$-Hermitian |
+| family | structures | conjugate-symmetry | scalar part $K$ |
 |---|---|---|---|
-| $\mathrm{GPA}$ | fails at $(ie_1,e_1)$ | fails at $ie_1$ | no |
-| $\mathrm{GQA}$ | fails at $(ie_1,e_1)$ | fails at $e_1$ | no |
-| $\mathrm{GPS}$ | fails at $(e_1,e_2)$ | fails at $e_1$ | no |
-| $\mathrm{GQS}$ | fails at $(e_1,e_2)$ | holds | no |
-| $\mathrm{SPA}$ | fails at $(ie_1,e_1)$ | fails at $ie_1$ | no |
-| $\mathrm{SQA}$ | fails at $(ie_1,e_1)$ | fails at $e_1$ | no |
-| $\mathrm{SPS}$ | holds | fails at $e_1$ | no |
-| $\mathrm{SQS}$ | holds | holds | **yes** |
-| $\mathrm{APA}$ | fails (skew) | fails at $e_1$ | no |
-| $\mathrm{AQA}$ | fails (skew) | fails at $e_1$ | no |
-| $\mathrm{APS}$ | fails (skew) | fails at $e_1$ | no |
-| $\mathrm{AQS}$ | fails (skew) | fails at $e_1$ | no |
+| the four general products | GPA, GQA | no | no |
+| | GPS | no | no |
+| | GQS | no | **yes** |
+| the symmetric parts | SPA, SQA | no | no |
+| | SPS | **yes** | no |
+| | **SQS** | **yes** | **yes** |
+| the antisymmetric parts | APA, AQA, APS, AQS | no | no |
 
-The table is the whole content of the theorem: the block is the single row with both entries present.
-
-## The Boundary of the Criterion
-
-The criterion is sharp, and the sharpness is named.
-
-**Theorem (each clause alone is satisfied by another structure).** Deleting (C1) admits the general
-quaternionic sesquilinear product $\mathrm{GQS}$; deleting (C2) admits the symmetric plain sesquilinear part
-$\mathrm{SPS}$.
-
-*Proof.* $\mathrm{GQS}$ satisfies (C2) and fails (C1) (§*The Eleven Comparisons*), and $\mathrm{SPS}$
-satisfies (C1) and fails (C2).
-
-The two boundary structures are the companions of the block in the sesquilinear row: $\mathrm{GQS}$ is the
-product of which the block is the symmetric part, and $\mathrm{SPS}$ is the symmetric part of the plain
-sesquilinear product. The block is their meeting point: it has the scalar part of the first and the symmetry
-of the second.
+The isolation is sharp, and each clause alone is satisfied by another structure: deleting conjugate-symmetry admits the general quaternionic sesquilinear product GQS, and deleting the scalar-part identity admits the symmetric plain sesquilinear part SPS. The two are the companions of the block in the sesquilinear row: GQS is the product of which the block is the symmetric part, and SPS is the symmetric part of the plain sesquilinear product. The block is their meeting point, carrying the scalar part of the first and the symmetry of the second.
 
 ## What the Criterion Delivers
 
@@ -219,22 +150,11 @@ of the first boundary nor the vanishing vector part of the second.
 
 ## Worked Examples
 
-**The block at the witness $e_0,e_1$.** $\mathrm{SQS}(e_0,e_1)=-e_1$ and
-$\overline{\mathrm{SQS}(e_1,e_0)}=\overline{-e_1}=-e_1$, so (C1) holds; and
-$\mathrm{Sc}(\mathrm{SQS}(e_0,e_1))=0=K(e_0,e_1)$, so (C2) holds.
+**The block at the witness $(e_0,e_1)$.** $\mathrm{SQS}(e_0,e_1)=-e_1$ and $\overline{\mathrm{SQS}(e_1,e_0)}=\overline{-e_1}=-e_1$, so conjugate-symmetry holds; and $\mathrm{Sc}(\mathrm{SQS}(e_0,e_1))=0=K(e_0,e_1)$, so the scalar-part identity holds.
 
-**The boundary $\mathrm{GQS}$ at the witness $(e_1,e_2)$.**
-$\mathrm{GQS}(e_1,e_2)=e_3$ while $\overline{\mathrm{GQS}(e_2,e_1)}=\overline{-e_3}=-e_3$, so (C1) fails and
-the product is not $K$-Hermitian; its scalar part is $K$, as (C2) requires.
+**The scalar-part identity at a complex element.** $\mathrm{Sc}(\mathrm{SQS}(ie_1,ie_1))=K(ie_1,ie_1)=-1$, the Hermitian form reading the modulus of the complex coefficient; a bilinear product cannot see it. This is the clause that separates the block from the bilinear structures, and the reason the block's scalar part is $K$ and not the complex bilinear form.
 
-**The boundary $\mathrm{SPS}$ at the witness $e_1$.**
-$\mathrm{Sc}(\mathrm{SPS}(e_1,e_1))=1$ while $K(e_1,e_1)=-1$, so (C2) fails; the product is
-conjugate-symmetric, as (C1) requires. Its diagonal is central,
-$\mathrm{SPS}(\tilde Q,\tilde Q)=\bigl(|Q_0|^2+\lVert\mathbf Q\rVert^2\bigr)e_0$.
-
-**A bilinear structure at a complex witness.** $\mathrm{SPA}(ie_1,ie_1)=(ie_1)^2=e_0$, with scalar part
-$1$, while $K(ie_1,ie_1)=-1$: a bilinear product cannot see the modulus of a complex coefficient, and its
-scalar part is the complex bilinear form and never the Hermitian form $K$.
+**The two clauses at the boundaries.** The general quaternionic sesquilinear product $\mathrm{GQS}$ has scalar part $K$ and fails conjugate-symmetry, and the symmetric plain sesquilinear part $\mathrm{SPS}$ is conjugate-symmetric with a definite scalar part; the block is the one product that carries both, neither the extra cross term of the first nor the central diagonal of the second.
 
 ## Summary
 

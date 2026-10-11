@@ -171,7 +171,7 @@ where $\mu = \mu_1 e_1 + \mu_2 e_2 + \mu_3 e_3$ is a unit pure real quaternion, 
 3. **Trace one:** $\mathrm{Tr}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$.
 4. **Rank one:** in the matrix representation, $\tilde\Pi_{1,2}$ maps to a rank-1 projection matrix.
 
-**Proof.** The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_0 \pm \xi i)$ with $\xi$ a root of $-1$. The idempotents in $\mathbb{M}_+$ correspond to the "real roots" $\xi = \pm \mu$ with $\mu$ a unit pure real quaternion. The Hermitian, idempotent, trace-1 properties are direct computations (article 3).
+**Proof.** The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_0 \pm \tilde{\Xi} i)$ with $\tilde{\Xi}$ a root of $-1$. The idempotents in $\mathbb{M}_+$ correspond to the "real roots" $\tilde{\Xi} = \pm \mu$ with $\mu$ a unit pure real quaternion. The Hermitian, idempotent, trace-1 properties are direct computations (article 3).
 
 **Identification with spin projectors.** Under the isomorphism, $\tilde\Pi_{1,2}$ maps to
 

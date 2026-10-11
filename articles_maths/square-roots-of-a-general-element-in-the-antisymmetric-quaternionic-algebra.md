@@ -14,9 +14,9 @@ $$
 which is alternating and without a unit (*Introduction to the Antisymmetric Quaternionic Algebra
 of Biquaternions*). The article solves, for a general element $a\in\mathbb{B}$, the equation
 $$
-\tilde X\diamond\tilde X=a
+\tilde\Xi\diamond\tilde\Xi=a
 $$
-in the element $\tilde X$.
+in the element $\tilde\Xi$.
 
 The reduction is the same as the reduction of the three central values, and it is the whole of
 the problem: the block is alternating, so its square is zero at every element, and the equation
@@ -30,9 +30,9 @@ special case, and their article is cited.
 ## The Notion and Its Product
 
 **Definition (square root of an element).** Let $\star$ be a product on $\mathbb{B}$ and let
-$a\in\mathbb{B}$. A **square root of $a$ in $\star$** is an element $\tilde X$ with
+$a\in\mathbb{B}$. A **square root of $a$ in $\star$** is an element $\tilde\Xi$ with
 $$
-\tilde X\star\tilde X=a .
+\tilde\Xi\star\tilde\Xi=a .
 $$
 The roots of a central value are the special case $a=\lambda e_0$.
 
@@ -44,20 +44,20 @@ General Element in the General Plain Algebra*; the special case of the three cen
 
 ## The Reduction
 
-**Proposition (the reduction).** For every element $\tilde X$ the square vanishes,
+**Proposition (the reduction).** For every element $\tilde\Xi$ the square vanishes,
 $$
-\tilde X\diamond\tilde X=0 ,
+\tilde\Xi\diamond\tilde\Xi=0 ,
 $$
-so the equation $\tilde X\diamond\tilde X=a$ is equivalent to the equation $0=a$, and it
+so the equation $\tilde\Xi\diamond\tilde\Xi=a$ is equivalent to the equation $0=a$, and it
 therefore has the whole space of elements as its solutions when $a=0$ and no solution when
 $a\neq0$.
 
-*Proof.* The block is alternating, so $\tilde X\diamond\tilde X=0$ for every $\tilde X$; the
-equation $\tilde X\diamond\tilde X=a$ is then the equation $0=a$, whose truth is independent of
-the unknown $\tilde X$. When $a=0$ every $\tilde X$ satisfies it, and when $a\neq0$ none does.
+*Proof.* The block is alternating, so $\tilde\Xi\diamond\tilde\Xi=0$ for every $\tilde\Xi$; the
+equation $\tilde\Xi\diamond\tilde\Xi=a$ is then the equation $0=a$, whose truth is independent of
+the unknown $\tilde\Xi$. When $a=0$ every $\tilde\Xi$ satisfies it, and when $a\neq0$ none does.
 
-The reduction is decisive because the unknown $\tilde X$ has dropped out of the equation: the
-left side does not depend on $\tilde X$ at all. There is no quadratic to solve, no polarisation
+The reduction is decisive because the unknown $\tilde\Xi$ has dropped out of the equation: the
+left side does not depend on $\tilde\Xi$ at all. There is no quadratic to solve, no polarisation
 to compute and no branching of the solution set; the whole of the answer is the value of $a$.
 
 ## The Square Roots of the Origin
@@ -65,11 +65,11 @@ to compute and no branching of the solution set; the whole of the answer is the 
 **Theorem (the origin has every square root).** The square roots of $0$ in the block are all the
 elements of the space,
 $$
-\{\tilde X:\tilde X\diamond\tilde X=0\}=\mathbb{B}.
+\{\tilde\Xi:\tilde\Xi\diamond\tilde\Xi=0\}=\mathbb{B}.
 $$
 
-*Proof.* The reduction gives $\tilde X\diamond\tilde X=0$ for every $\tilde X$, so the equation
-$\tilde X\diamond\tilde X=0$ holds at every element, and the solution set is the whole space.
+*Proof.* The reduction gives $\tilde\Xi\diamond\tilde\Xi=0$ for every $\tilde\Xi$, so the equation
+$\tilde\Xi\diamond\tilde\Xi=0$ holds at every element, and the solution set is the whole space.
 
 The contrast with the general plain algebra is exact. There the square roots of the origin are
 the pure isotropic cone, a two-dimensional family over the complex field; here every element of
@@ -80,11 +80,11 @@ and that value is the origin.
 ## The Square Roots of a Nonzero Element
 
 **Theorem (nothing else has a square root).** No nonzero element of $\mathbb{B}$ has a square
-root in the block; equivalently, the equation $\tilde X\diamond\tilde X=a$ has no solution for
+root in the block; equivalently, the equation $\tilde\Xi\diamond\tilde\Xi=a$ has no solution for
 $a\neq0$.
 
-*Proof.* The reduction gives $\tilde X\diamond\tilde X=0$, so a solution of the equation would
-give $0=a$, which fails for $a\neq0$; the equation fails for every $\tilde X$.
+*Proof.* The reduction gives $\tilde\Xi\diamond\tilde\Xi=0$, so a solution of the equation would
+give $0=a$, which fails for $a\neq0$; the equation fails for every $\tilde\Xi$.
 
 The absence is total and is not a statement about a particular element: it holds for the central
 values, for the pure vectors, for the isotropic elements and for every other nonzero element
@@ -95,8 +95,8 @@ value from a pair of equal arguments.
 
 | the element $a$ | the equation | the square roots of the block |
 |---|---|---|
-| $0$ | $\tilde X\diamond\tilde X=0$ | the whole space $\mathbb{B}$ |
-| $a\neq0$ | $\tilde X\diamond\tilde X=a$ | empty |
+| $0$ | $\tilde\Xi\diamond\tilde\Xi=0$ | the whole space $\mathbb{B}$ |
+| $a\neq0$ | $\tilde\Xi\diamond\tilde\Xi=a$ | empty |
 
 The table is the reduction read value by value. The classification of the general plain algebra
 — four roots, two roots or none, according to the discriminant of a quadratic and the isotropic
@@ -110,7 +110,7 @@ allows; every other element has none.
 $\lambda=0$ the square roots of $\lambda e_0$ in the sense of this article are all the elements,
 and the roots of $\lambda=0$ in the sense of the root article, which are required to be nonzero,
 are the punctured space; at $\lambda=-1$ and at $\lambda=+1$ the equation
-$\tilde X\diamond\tilde X=\lambda e_0$ has no solution, as the reduction shows and as
+$\tilde\Xi\diamond\tilde\Xi=\lambda e_0$ has no solution, as the reduction shows and as
 *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra* records.
 The central case of the classification therefore adds one distinction and no new computation:
 the square roots of $0$ include the origin, which is not a root of $0$ in the narrower sense.
@@ -126,16 +126,16 @@ origin.
 
 The examples are read from the explicit form $\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$, and each is the reduction at a displayed value.
 
-- **The square root of $e_0$.** The equation $\tilde X\diamond\tilde X=e_0$ has no solution: the
+- **The square root of $e_0$.** The equation $\tilde\Xi\diamond\tilde\Xi=e_0$ has no solution: the
     left side is a pure vector, the right side is central, and the two cannot agree.
-- **The square root of $e_1$.** The equation $\tilde X\diamond\tilde X=e_1$ has no solution, for
+- **The square root of $e_1$.** The equation $\tilde\Xi\diamond\tilde\Xi=e_1$ has no solution, for
     the same reason: the left side is zero and the right side is the nonzero pure vector $e_1$.
 - **The square root of a product, $e_1\diamond e_2=-e_3$.** The equation
-    $\tilde X\diamond\tilde X=-e_3$ has no solution, the left side vanishing and the right side
+    $\tilde\Xi\diamond\tilde\Xi=-e_3$ has no solution, the left side vanishing and the right side
     being the nonzero pure vector $-e_3$.
 - **The square root of $0$.** Every element is a square root: $e_0$, $e_0+e_1$,
     $e_0+ie_1+ie_2$, and $e_1+ie_2$, the last being the isotropic pure element of the block,
-    each satisfies $\tilde X\diamond\tilde X=0$ by the reduction.
+    each satisfies $\tilde\Xi\diamond\tilde\Xi=0$ by the reduction.
 
 The four examples are the two rows of the classification, read four times: the second row of the
 table is entered by the central value, by the pure generator and by the computed value
@@ -145,7 +145,7 @@ the origin, which is the single element named there although the whole space bel
 ## Summary
 
 For the antisymmetric quaternionic multiplication the square of every element is zero,
-$\tilde X\diamond\tilde X=0$, so the general equation $\tilde X\diamond\tilde X=a$ is the
+$\tilde\Xi\diamond\tilde\Xi=0$, so the general equation $\tilde\Xi\diamond\tilde\Xi=a$ is the
 equation $0=a$; the origin is the only element of the space with square roots, and every element
 of the space is a square root of it, while no nonzero element has a square root. The
 classification is the two rows of the table $a=0$ and $a\neq0$, with the whole space in the
@@ -160,7 +160,7 @@ $+1$. The square roots of the origin are the zero divisors of the block together
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
-| $\tilde X\diamond\tilde X=0$ | the reduction, the square of every element |
+| $\tilde\Xi\diamond\tilde\Xi=0$ | the reduction, the square of every element |
 | $a\in\mathbb{B}$ | the element whose square roots are sought |
 | $\mathbb{B}$ | the set of square roots of the origin |
 | $\emptyset$ | the set of square roots of a nonzero element |

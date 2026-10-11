@@ -115,9 +115,9 @@ $$
 
 This is a structural difference from the quaternion case and it is worth naming: the quaternion unit sphere is the three-sphere, which is simply connected, so there the double cover of $SO(3)$ is the universal cover, whereas here the double cover of $\mathrm{SO}^{+}(2,1)$ sits under an infinite tower.
 
-**Corollary (Fixed Directions).** A non-identity elliptic isometry $\Theta(g(\theta))$ fixes the positive-norm direction $\mathbb{R}\xi$ and no other direction of $V$; a non-identity hyperbolic isometry $\Theta(h(t))$ fixes the negative-norm direction $\mathbb{R}\eta$ and the two isotropic directions of the plane $\eta^{\perp}$. Neither fixes any other direction.
+**Corollary (Fixed Directions).** A non-identity elliptic isometry $\Theta(g(\theta))$ fixes the positive-norm direction $\mathbb{R}\tilde\xi$ and no other direction of $V$; a non-identity hyperbolic isometry $\Theta(h(t))$ fixes the negative-norm direction $\mathbb{R}\eta$ and the two isotropic directions of the plane $\eta^{\perp}$. Neither fixes any other direction.
 
-**Proof.** The fixed directions of the first two kinds are computed in the two theorems below. An isometry of $V$ with three fixed directions in general position is the identity, because the form is nondegenerate and such directions span $V$; a nontrivial elliptic isometry acts on the definite plane $\xi^{\perp}$ as a rotation by the nonzero angle $2\theta$, so it fixes no direction there, and a nontrivial hyperbolic isometry acts on the indefinite plane $\eta^{\perp}$ as a hyperbolic rotation, which is the identity only for $t = 0$.
+**Proof.** The fixed directions of the first two kinds are computed in the two theorems below. An isometry of $V$ with three fixed directions in general position is the identity, because the form is nondegenerate and such directions span $V$; a nontrivial elliptic isometry acts on the definite plane $\tilde\xi^{\perp}$ as a rotation by the nonzero angle $2\theta$, so it fixes no direction there, and a nontrivial hyperbolic isometry acts on the indefinite plane $\eta^{\perp}$ as a hyperbolic rotation, which is the identity only for $t = 0$.
 
 ## The Lorentz Group of Signature $(2,1)$
 
@@ -131,23 +131,23 @@ This is a structural difference from the quaternion case and it is worth naming:
 
 ## Elliptic and Hyperbolic One-Parameter Subgroups
 
-The solutions of $\xi^2 = -1$ and of $\eta^2 = +1$ generate the two kinds of one-parameter subgroup of $U$.
+The solutions of $\tilde\xi^2 = -1$ and of $\eta^2 = +1$ generate the two kinds of one-parameter subgroup of $U$.
 
-**Theorem (Elliptic Subgroups).** Let $\xi \in V$ with $\xi^2 = -1$. Then the elements
+**Theorem (Elliptic Subgroups).** Let $\tilde\xi \in V$ with $\tilde\xi^2 = -1$. Then the elements
 
 $$
-g(\theta) = \cos\theta + \xi \sin\theta, \qquad \theta \in \mathbb{R},
+g(\theta) = \cos\theta + \tilde\xi \sin\theta, \qquad \theta \in \mathbb{R},
 $$
 
 form a subgroup of $U$ isomorphic to $SO(2)$, and
 
 $$
-\Theta(g(\theta)) \xi = \xi, \qquad \Theta(g(\theta)) : \xi^{\perp} \to \xi^{\perp} \text{ is a rotation by } 2\theta .
+\Theta(g(\theta)) \tilde\xi = \tilde\xi, \qquad \Theta(g(\theta)) : \tilde\xi^{\perp} \to \tilde\xi^{\perp} \text{ is a rotation by } 2\theta .
 $$
 
-The subgroups obtained from the solutions of $\xi^2 = -1$ are the compact subgroups of $U$, and they exhaust the conjugacy classes of maximal compact subgroups.
+The subgroups obtained from the solutions of $\tilde\xi^2 = -1$ are the compact subgroups of $U$, and they exhaust the conjugacy classes of maximal compact subgroups.
 
-**Proof.** The split-quaternion norm is $N(g(\theta)) = \cos^2\theta \cdot 1 + \sin^2\theta \cdot N(\xi) = \cos^2\theta + \sin^2\theta = 1$, using $\xi^2 = -N(\xi) = -1$; the addition formula for $g$ follows from $\xi^2 = -1$. The element $g$ commutes with $\xi$, so $\xi$ is fixed; and $\xi^{\perp}$ is the orthogonal plane of dimension two, which is definite because $\xi$ has positive norm, so that conjugation by $g$ acts on it as a rotation; the explicit computation with $\xi = e_1$ in the basis $e_2,e_3$ gives $\Theta(g(\theta))e_2 = \cos 2\theta\, e_2 + \sin 2\theta\, e_3$ and $\Theta(g(\theta))e_3 = -\sin 2\theta\, e_2 + \cos 2\theta\, e_3$, a rotation by $2\theta$, as in the quaternion case of *Quaternion Rotations and Reflections*, §*The Homomorphism to SO(3)*.
+**Proof.** The split-quaternion norm is $N(g(\theta)) = \cos^2\theta \cdot 1 + \sin^2\theta \cdot N(\tilde\xi) = \cos^2\theta + \sin^2\theta = 1$, using $\tilde\xi^2 = -N(\tilde\xi) = -1$; the addition formula for $g$ follows from $\tilde\xi^2 = -1$. The element $g$ commutes with $\tilde\xi$, so $\tilde\xi$ is fixed; and $\tilde\xi^{\perp}$ is the orthogonal plane of dimension two, which is definite because $\tilde\xi$ has positive norm, so that conjugation by $g$ acts on it as a rotation; the explicit computation with $\tilde\xi = e_1$ in the basis $e_2,e_3$ gives $\Theta(g(\theta))e_2 = \cos 2\theta\, e_2 + \sin 2\theta\, e_3$ and $\Theta(g(\theta))e_3 = -\sin 2\theta\, e_2 + \cos 2\theta\, e_3$, a rotation by $2\theta$, as in the quaternion case of *Quaternion Rotations and Reflections*, §*The Homomorphism to SO(3)*.
 
 **Theorem (Hyperbolic Subgroups).** Let $\eta \in V$ with $\eta^2 = +1$, that is $N(\eta) = -1$. Then the elements
 
@@ -165,11 +165,11 @@ acts on the plane $\eta^{\perp}$ of signature $(1,1)$ as a hyperbolic rotation w
 
 **Proof.** The split-quaternion norm is $N(h(t)) = \cosh^2 t + \sinh^2 t \cdot 1 = \cosh^2 t - \sinh^2 t = 1$, using $N(\eta) = -1$; the addition formula follows from $\eta^2 = 1$. The element $h(t)$ commutes with $\eta$, so $\eta$ is fixed; the orthogonal plane $\eta^{\perp}$ has signature $(1,1)$ because $\eta$ is spacelike, and an isometry of a $(1,1)$ plane with a fixed nonzero vector acts as a hyperbolic rotation, fixing the two isotropic directions setwise.
 
-**Remark (versors and hyperbolic versors).** The two families of the theorems are the two kinds of *versor* of the split-quaternion units: $\cos\theta + \xi\sin\theta$ from a root of $-1$ is a versor, and $\cosh t + \eta\sinh t$ from a unit of square $+1$ is a hyperbolic versor, an element whose earliest instances are Cockle's tessarines. On the plane $\eta^{\perp}$ of Lorentzian signature the second family is the one-parameter group of a boost of rapidity $2t$ at the generator $\eta$, so the hyperbolic versor is the exponential form of the boost; the closed form and the naming are in *Split-Quaternion Exponential and Lie Group Structure*.
+**Remark (versors and hyperbolic versors).** The two families of the theorems are the two kinds of *versor* of the split-quaternion units: $\cos\theta + \tilde\xi\sin\theta$ from a root of $-1$ is a versor, and $\cosh t + \eta\sinh t$ from a unit of square $+1$ is a hyperbolic versor, an element whose earliest instances are Cockle's tessarines. On the plane $\eta^{\perp}$ of Lorentzian signature the second family is the one-parameter group of a boost of rapidity $2t$ at the generator $\eta$, so the hyperbolic versor is the exponential form of the boost; the closed form and the naming are in *Split-Quaternion Exponential and Lie Group Structure*.
 
-**Corollary (The Trichotomy of Subgroups).** The subgroup generated by a solution of $\xi^2 = -1$ is compact and consists of elements without real eigenvalues; the subgroup generated by a solution of $\eta^2 = +1$ is non-compact and its non-identity elements have the two real eigenvalues $e^{\pm t}$ of the isometry. The three families correspond to the three conjugacy classes of one-parameter subgroups of $U$: the elliptic class, the hyperbolic class, and the parabolic class, the last consisting of the subgroups generated by the nilpotents of $V$ and acting by parabolic isometries fixing a single isotropic line.
+**Corollary (The Trichotomy of Subgroups).** The subgroup generated by a solution of $\tilde\xi^2 = -1$ is compact and consists of elements without real eigenvalues; the subgroup generated by a solution of $\eta^2 = +1$ is non-compact and its non-identity elements have the two real eigenvalues $e^{\pm t}$ of the isometry. The three families correspond to the three conjugacy classes of one-parameter subgroups of $U$: the elliptic class, the hyperbolic class, and the parabolic class, the last consisting of the subgroups generated by the nilpotents of $V$ and acting by parabolic isometries fixing a single isotropic line.
 
-**Proof.** The first two statements are the computations of the two theorems; the parabolic case uses the nilpotents of (*Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*), whose exponentials are the elements $1 + t\xi$ with $\xi^2 = 0$ and $N(\xi) = 0$.
+**Proof.** The first two statements are the computations of the two theorems; the parabolic case uses the nilpotents of (*Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*), whose exponentials are the elements $1 + t\tilde\xi$ with $\tilde\xi^2 = 0$ and $N(\tilde\xi) = 0$.
 
 ## The Trichotomy of Timelike, Lightlike and Spacelike Elements
 
@@ -246,7 +246,7 @@ Conjugation by a unit preserves the vector subspace and the form, giving a homom
 
 Besides conjugation, an element acts by left multiplication $L_{\tilde q}(\tilde p) = \tilde q\tilde p$ and right multiplication $R_{\tilde q}(\tilde p) = \tilde p\tilde q$, operators of trace $4q_0$ and determinant $N(\tilde q)^2$, with $L_{\tilde q}$ invertible exactly for a unit. On the whole algebra the adjoint action preserves the scalar part and the norm and never mixes $S$ with $V$, so its invariants are $q_0$ and $N(\tilde q)$; it fixes $S$ pointwise, preserves $V$, and permutes the split-complex planes and the minimal left ideals among their conjugates. In the polar form $\tilde q = \rho u$ the scale contributes the scalar operator $\rho\,\mathrm{id}$ and the unit the Lorentz transformation $\Theta(u)$, so that $L_{\tilde q} = \rho\,L_u$ and conjugation sees only $u$.
 
-The roots of $\xi^2 = -1$ generate the compact (elliptic) one-parameter subgroups, isomorphic to $SO(2)$ and fixing a timelike direction and rotating its orthogonal plane; the roots of $\eta^2 = +1$ generate the non-compact (hyperbolic) subgroups, fixing a spacelike direction and acting as hyperbolic rotations on its orthogonal plane of signature $(1,1)$; the nilpotents generate the parabolic subgroups. Under the norm-one group $U \cong \mathrm{SL}_2(\mathbb{R})$, the nonzero vectors of the vector subspace fall into two timelike orbits (the sheets of the hyperboloid $N=1$, each a hyperbolic plane), two lightlike orbits (the nappes of the cone) and one spacelike orbit; the four sheets and nappes merge in pairs under the negative-norm units, so that the full group of units has one orbit of each sign type. The trichotomy is nonempty because the form is isotropic. The quaternion case has a compact simply connected unit sphere, a universal double cover of $SO(3)$, a definite vector form and a single class of vectors; the eight-dimensional relative is a later system of Part V, named here only.
+The roots of $\tilde\xi^2 = -1$ generate the compact (elliptic) one-parameter subgroups, isomorphic to $SO(2)$ and fixing a timelike direction and rotating its orthogonal plane; the roots of $\eta^2 = +1$ generate the non-compact (hyperbolic) subgroups, fixing a spacelike direction and acting as hyperbolic rotations on its orthogonal plane of signature $(1,1)$; the nilpotents generate the parabolic subgroups. Under the norm-one group $U \cong \mathrm{SL}_2(\mathbb{R})$, the nonzero vectors of the vector subspace fall into two timelike orbits (the sheets of the hyperboloid $N=1$, each a hyperbolic plane), two lightlike orbits (the nappes of the cone) and one spacelike orbit; the four sheets and nappes merge in pairs under the negative-norm units, so that the full group of units has one orbit of each sign type. The trichotomy is nonempty because the form is isotropic. The quaternion case has a compact simply connected unit sphere, a universal double cover of $SO(3)$, a definite vector form and a single class of vectors; the eight-dimensional relative is a later system of Part V, named here only.
 
 ## Summary of Notation
 
@@ -261,7 +261,7 @@ The roots of $\xi^2 = -1$ generate the compact (elliptic) one-parameter subgroup
 | $O(2,1)$, $SO(2,1)$, $\mathrm{SO}^{+}(2,1)$ | the Lorentz group, its determinant-one part, its identity component | this article |
 | $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ | the double cover | this article |
 | $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ | the isomorphism induced by the cover | this article |
-| $g(\theta) = \cos\theta + \xi\sin\theta$ | the elliptic one-parameter subgroup | this article |
+| $g(\theta) = \cos\theta + \tilde\xi\sin\theta$ | the elliptic one-parameter subgroup | this article |
 | $h(t) = \cosh t + \eta\sinh t$ | the hyperbolic one-parameter subgroup | this article |
 | timelike, lightlike, spacelike | $N>0$, $N=0$, $N<0$ on $V$ | this article |
 | nilpotents of $V$ | the lightlike elements and the parabolic generators | *Split-Quaternion Zero Divisors* |

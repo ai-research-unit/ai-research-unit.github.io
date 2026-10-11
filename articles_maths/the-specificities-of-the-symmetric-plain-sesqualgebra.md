@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ on the biquaternion space, the Hermitian form $H$ read as a multiplication (*Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*). This article isolates what makes the block unlike the other eleven structures of the space, states it as a **criterion**, and tests the criterion on the other eleven.
+The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ on the biquaternion space, the Hermitian form $H$ read as a multiplication (*Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*). This article isolates what makes the block unlike the other eleven structures of the space and states it as a **criterion** of the block.
 
 The criterion is that the product is a **Hermitian form read as a multiplication**. A product is called **Hermitian** here when it satisfies the two clauses
 
@@ -41,45 +41,22 @@ $$
 
 **Remark (the two clauses correct the two errors).** C1 alone would also admit the products that are conjugate-commutative with a non-central value, and among the twelve that is the symmetric quaternionic sesquilinear product; C2 alone would also admit the commutative central products, and that is the symmetric quaternionic product. Neither clause alone identifies the block, and both together do.
 
-## The Eleven Comparisons
+## The Isolation among the Twelve
 
-**Theorem (the specificity).** Of the twelve structures of *The 12 Products of the Biquaternion Complex Space*, the symmetric plain sesqualgebra is the only one that is Hermitian.
+**Theorem (the specificity).** Of the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the symmetric plain sesqualgebra is the only one that is **Hermitian**, that is conjugate-commutative with central image.
 
-*Proof.* The block is Hermitian by the corollary above. The remaining eleven are disposed of in the three sections below, each by a witness: the four general products fail C2, the four antisymmetric parts fail C2, and among the three remaining symmetric parts the two bilinear ones fail C1 while the sesquilinear one fails C2. Since every structure of the twelve is one of these, and each fails at least one clause, the block is the only one that satisfies both.
+*Proof.* The block satisfies both clauses by the corollary above. The other eleven are the three remaining general products together with the eight parts got by symmetrising or antisymmetrising the four, and each fails at least one clause. The four general products fail the centrality, their value at $(e_0,e_1)$ being a nonzero multiple of $e_1$; the four antisymmetric parts fail it as well, their image being the vector subspace, and fail conjugate-commutativity too, being alternating ($\mathrm{APA}$, $\mathrm{AQA}$) or conjugate-alternating ($\mathrm{APS}$, $\mathrm{AQS}$) with an opposite value at $(e_1,e_2)$. Among the three remaining symmetric parts, the symmetric plain product fails both, its value at $(e_0,ie_0)$ being $ie_0$ against the conjugate $-ie_0$ and its value at $(e_0,e_1)$ being $e_1$; the symmetric quaternionic product satisfies centrality and fails conjugate-commutativity, its value at $(e_0,ie_0)$ being $ie_0$ against $-ie_0$; and the symmetric quaternionic sesquilinear product satisfies conjugate-commutativity and fails centrality, its value at $(e_0,e_1)$ being $-e_1$.
 
-### The Four General Products
-
-The four general products are $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$ (*The Four General Products of the Biquaternion $\mathbb{C}$ Space*). Each fails C2, and the witness is the same for all four: the value on $e_0$ and $e_1$ is a nonzero multiple of $e_1$, which is not central.
-
-| product | $\tilde P\circ\tilde Q$ | value at $(e_0,e_1)$ | central |
+| family | structures | conjugate-commutative | central image |
 |---|---|---|---|
-| $\tilde P\tilde Q$ | the plain product | $e_1$ | no |
-| $\tilde P^{\natural}\tilde Q$ | the natural product | $e_1$ | no |
-| $\tilde P\tilde Q^{*}$ | the plain sesquilinear product | $-e_1$ | no |
-| $\tilde P^{\natural}\tilde Q^{*}$ | the quaternionic sesquilinear product | $-e_1$ | no |
+| the four general products | GPA, GQA, GPS, GQS | no | no |
+| the symmetric parts | SPA | no | no |
+| | SQA | no | **yes** |
+| | **SPS** | **yes** | **yes** |
+| | SQS | **yes** | no |
+| the antisymmetric parts | APA, AQA, APS, AQS | no | no |
 
-Each of the four also fails C1, at the same witness $(e_1,e_2)$: the value is $e_3$ for the first and the fourth and $-e_3$ for the second and the third, while the conjugate of the value on the reversed pair is the opposite sign in each case. The clause that already suffices is C2. The four general products are therefore not Hermitian, and the block, which is a part of the third of them, splits off from its parent exactly by acquiring C1 and C2.
-
-### The Four Antisymmetric Parts
-
-The four antisymmetric parts are $\mathrm{APA} = \tfrac12(\tilde P\tilde Q - \tilde Q\tilde P)$, $\mathrm{AQA} = \tfrac12(\tilde P^{\natural}\tilde Q - \tilde Q^{\natural}\tilde P)$, $\mathrm{APS} = \tfrac12(\tilde P\tilde Q^{*} - \overline{\tilde Q}\tilde P^{\natural})$ and $\mathrm{AQS} = \tfrac12(\tilde P^{\natural}\tilde Q^{*} - \tilde Q^{*}\tilde P^{\natural})$ (*The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*). Each fails C1: the two bilinear ones, $\mathrm{APA}$ and $\mathrm{AQA}$, are alternating, $\tilde P\circ\tilde Q = -\,\tilde Q\circ\tilde P$, and the two sesquilinear ones, $\mathrm{APS}$ and $\mathrm{AQS}$, are conjugate-alternating, $\tilde P\circ\tilde Q = -\,\overline{\tilde Q\circ\tilde P}$, and at the witnesses below the value is not equal to the conjugate of the reversed value in either case. Each also fails C2, because its image is the vector subspace $\mathrm{Vect}(\mathbb{B})$. The witnesses are collected below.
-
-| product | value at $(e_1,e_2)$ | position |
-|---|---|---|
-| $\mathrm{APA}$ | $e_3$ | vector subspace |
-| $\mathrm{AQA}$ | $-e_3$ | vector subspace |
-| $\mathrm{APS}$ | $-e_3$ | vector subspace |
-| $\mathrm{AQS}$ | $e_3$ | vector subspace |
-
-### The Symmetric Parts
-
-The four symmetric parts are $\mathrm{SPA}$, $\mathrm{SQA}$, the block $\mathrm{SPS}$ and $\mathrm{SQS}$, the four products of the symmetric family. The block is Hermitian; the three others are separated by the clauses:
-
-- **$\mathrm{SPA} = \tfrac12(\tilde P\tilde Q + \tilde Q\tilde P)$** is commutative, with $\tilde P\bullet\tilde Q = \tilde Q\bullet\tilde P$, and its value carries a vector part; it fails C1, because $\tilde P\bullet\tilde Q = \overline{\tilde Q\bullet\tilde P}$ would force the value to be real, and at $(e_0,ie_0)$ the value is $ie_0$ against the conjugate $-ie_0$; it fails C2 as well, its value at $(e_0,e_1)$ being $e_1$.
-- **$\mathrm{SQA} = N(\tilde P,\tilde Q)e_0$** is commutative with central image, so it satisfies C2; it fails C1, since at $(e_0,ie_0)$ the value is $ie_0$ against the conjugate $-ie_0$. The law of $\mathrm{SQA}$ is commutativity and not conjugate-commutativity (*The Specificities of the Symmetric Quaternionic Algebra*).
-- **$\mathrm{SQS} = \tfrac12(\tilde P^{\natural}\tilde Q^{*} + \tilde Q^{*}\tilde P^{\natural})$** is conjugate-commutative, so it satisfies C1; it fails C2, since its value at $(e_0,e_1)$ is $-e_1$, in the vector subspace. The law without the centrality is exactly what the present criterion excludes.
-
-**Corollary (the separation inside the symmetric family).** The three clauses *commutativity*, *centrality* and *conjugate-commutativity* separate the four symmetric structures two by two, and the block is the unique cell of the two clauses C1 and C2. The comparison of the laws alone is *The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra*; here the second clause is the new one.
+The two clauses are independent, each with a witness among the four symmetric parts; the block alone meets both, and the product it defines is the Hermitian form $H$.
 
 ## The Operator Face
 
@@ -91,26 +68,17 @@ $$
 
 in which $A_0$ is the scalar coordinate and the bar is the coefficientwise conjugation of an operator. The second identity is the operator form of C1: the right multiplication is the conjugate of the left, which is exactly the operator statement of conjugate-commutativity. The first identity is the operator form of C2: the composite is a scalar times a single right multiplication, because the image of every operator is the centre.
 
-**Corollary (the projectors collapse).** The left multiplication of the block is conjugate-linear, and a conjugate-linear operator that is idempotent is zero; the projectors of the block are therefore the zero operator alone, and the block's class of projectors is the smallest of the four symmetric structures, tied with the symmetric quaternionic sesquilinear block.
-
-| structure | idempotent left multiplications | the operator they are |
-|---|---|---|
-| $\mathrm{SPA}$ | $0$ and $e_0$ | $0$ and the identity |
-| $\mathrm{SQA}$ | the origin and the hyperplane $X_0 = 1$ | $0$ and the rank-one projections onto the centre |
-| $\mathrm{SPS}$ | the origin alone | $0$ |
-| $\mathrm{SQS}$ | the origin alone | $0$ |
-
-The table is the symmetric-family row of the comparison of *The Specificities of the Symmetric Quaternionic Algebra*. The block is a member whose operator family is the smallest, together with the symmetric quaternionic sesquilinear block: as an element theory it is a rank-one pairing, and as an operator theory it is a family of conjugate-linear maps whose only idempotent is the zero operator.
+**Corollary (the projectors collapse).** The left multiplication of the block is conjugate-linear, and a conjugate-linear operator that is idempotent is zero; the projectors of the block are therefore the zero operator alone. It is the smallest projector class of the four symmetric structures, shared with the symmetric quaternionic sesquilinear block; the symmetric plain product has the identity as well, from its unit, and the symmetric quaternionic product has the affine hyperplane of rank-one projections onto the centre. As an element theory the block is a rank-one pairing, and as an operator theory it is a family of conjugate-linear maps whose only idempotent is the zero operator.
 
 ## The Consequence
 
 **Corollary (what belongs to the block alone).** The block is the only one of the twelve that is at once **conjugate-commutative** and **central-valued**, and it is therefore the only one whose multiplication is a **Hermitian form**. Neither clause alone identifies it, and each has a witness among the symmetric parts: $\mathrm{SQA}$ carries C2 alone (a central value with a commutative law) and the sibling $\mathrm{SQS}$ carries C1 alone (a conjugate-commutative law with a non-central value). The **definiteness** of the form is a third ingredient and is not shared with $\mathrm{SQA}$, whose form is the quaternion form $N$, indefinite, so that $\mathrm{SQA}$ has a nonzero isotropic cone and nonzero square-zero elements, while the form of the block is $H$, definite; the definiteness is that of the plain sesquilinear family, and it is shared with the parent $\mathrm{GPS}$, the general plain sesquilinear product, whose scalar part is the same $H$ and whose square-zero elements are therefore the origin alone — but the parent carries neither clause, its image being all of $\mathbb{B}$, and the block is exactly the part of it that carries the two. The **marks of the block** are then the **ray image** of its square map, the square of the parent $\tilde X\mapsto\tilde X\tilde X^{*}$ being a Hermitian element that leaves the ray, at $\tilde X = e_0+ie_1$ with the value $2e_0+2ie_1$, while the square of the sibling vanishes at the same element, $(e_0+ie_1)$ being square-zero in $\mathrm{SQS}$; and, inside the symmetric family, the **linear subspace** of the nilpotents of index **three**, where the other three symmetric products have nilpotent cones of index two. The other eleven structures reproduce some of these features one by one, but no other reproduces the pair of clauses, and the pair is the specificity.
 
-**Remark (the criterion and the family of the specificities).** The specificities of the general plain algebra read the element theory, and the specificities of the symmetric quaternionic algebra read the operator identity $L_{\tilde X}^{2} = X_0L_{\tilde X}$. The present article reads a clause about the product itself, because the block's element and operator theories are both degenerate: its idempotents are two points, its nilpotents are a subspace of index three, and its projectors are the zero operator. What survives, and what is peculiar to the block, is that its product is a Hermitian form; the criterion is the statement of that, and this article is its proof against the eleven.
+**Remark (the criterion and the family of the specificities).** The specificities of the general plain algebra read the element theory, and the specificities of the symmetric quaternionic algebra read the operator identity $L_{\tilde X}^{2} = X_0L_{\tilde X}$. The present article reads a clause about the product itself, because the block's element and operator theories are both degenerate: its idempotents are two points, its nilpotents are a subspace of index three, and its projectors are the zero operator. What survives, and what is peculiar to the block, is that its product is a Hermitian form; the criterion is the statement of that, and this article is its proof.
 
 ## Summary
 
-The symmetric plain sesqualgebra is the only one of the twelve structures that is **Hermitian**: it is **conjugate-commutative**, $\tilde P\star\tilde Q = \overline{\tilde Q\star\tilde P}$, and it has **central image**, $\tilde P\star\tilde Q\in\mathbb{C}e_0$, and the two clauses together are equivalent to the product being a Hermitian form read as a multiplication. The other eleven fail at least one clause: the four general products fail the centrality; the four antisymmetric parts fail both, being alternating ($\mathrm{APA}$, $\mathrm{AQA}$) or conjugate-alternating ($\mathrm{APS}$, $\mathrm{AQS}$) with image in the vector subspace; and among the symmetric parts the plain one fails both, the quaternionic one fails the centrality, and the quaternionic sesquilinear one fails the centrality after satisfying conjugate-commutativity. The operator face of the criterion is the composition law $L^{\star}_{\tilde A}L^{\star}_{\tilde B} = A_0R^{\star}_{\tilde B}$ with $R^{\star}_{\tilde B} = \overline{L^{\star}_{\tilde B}}$, the second identity being conjugate-commutativity read on the operators, and the projectors collapse to the zero operator because a conjugate-linear idempotent operator is zero. Everything peculiar to the block follows from the pair of clauses and not from the centrality alone: the definite norm and the vanishing of the isotropic and of the square-zero sets come from the definite form $H$, which the block shares with the parent $\mathrm{GPS}$ — a parent that carries neither clause, its image being all of $\mathbb{B}$ — and not with $\mathrm{SQA}$, the structure that carries the centrality alone and whose form is the indefinite quaternion form; the conjugate-commutativity and the collapse of the projectors are shared with the sibling $\mathrm{SQS}$, which carries C1 alone; and the ray image of the square map and the linear subspace of the index-three nilpotents are the marks of the pair.
+The symmetric plain sesqualgebra is the only one of the twelve structures that is **Hermitian**: it is **conjugate-commutative**, $\tilde P\star\tilde Q = \overline{\tilde Q\star\tilde P}$, and it has **central image**, $\tilde P\star\tilde Q\in\mathbb{C}e_0$, and the two clauses together are equivalent to the product being a Hermitian form read as a multiplication. The other eleven fail at least one clause: the four general products fail the centrality; the four antisymmetric parts fail both, being alternating ($\mathrm{APA}$, $\mathrm{AQA}$) or conjugate-alternating ($\mathrm{APS}$, $\mathrm{AQS}$) with image in the vector subspace; and among the symmetric parts the plain one fails both, the quaternionic one satisfies the centrality and fails conjugate-commutativity, and the quaternionic sesquilinear one satisfies conjugate-commutativity and fails the centrality. The operator face of the criterion is the composition law $L^{\star}_{\tilde A}L^{\star}_{\tilde B} = A_0R^{\star}_{\tilde B}$ with $R^{\star}_{\tilde B} = \overline{L^{\star}_{\tilde B}}$, the second identity being conjugate-commutativity read on the operators, and the projectors collapse to the zero operator because a conjugate-linear idempotent operator is zero. Everything peculiar to the block follows from the pair of clauses and not from the centrality alone: the definite norm and the vanishing of the isotropic and of the square-zero sets come from the definite form $H$, which the block shares with the parent $\mathrm{GPS}$ — a parent that carries neither clause, its image being all of $\mathbb{B}$ — and not with $\mathrm{SQA}$, the structure that carries the centrality alone and whose form is the indefinite quaternion form; the conjugate-commutativity and the collapse of the projectors are shared with the sibling $\mathrm{SQS}$, which carries C1 alone; and the ray image of the square map and the linear subspace of the index-three nilpotents are the marks of the pair.
 
 ## Summary of Notation
 
@@ -128,9 +96,9 @@ The symmetric plain sesqualgebra is the only one of the twelve structures that i
 
 ## Further Reading
 
-- *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra.md`), for the criterion that classifies the twelve structures and for the family this article closes.
-- *The Specificities of the Symmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.md`), for the sibling criterion $L_{\tilde X}^{2} = X_0L_{\tilde X}$ and the projector table of the symmetric family.
+- *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra.md`), for the criterion of the plain product, the model of the family.
+- *The Specificities of the Symmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.md`), for the sibling criterion $L_{\tilde X}^{2} = X_0L_{\tilde X}$ and the hyperplane of rank-one projectors onto the centre.
 - *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.md`), for the product, its class and its placement among the twelve.
 - *The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra* (`articles_maths/the-conjugate-commutative-law-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.md`), for the clause C1, its two reading involutions and its comparison with the siblings.
 - *The Multiplication Operators of the Symmetric Plain Sesqualgebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-plain-sesqualgebra.md`), for the composition law, the rank, the trace and the adjoint of the operators.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the eleven products the criterion is tested against.
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve products among which the criterion is read.

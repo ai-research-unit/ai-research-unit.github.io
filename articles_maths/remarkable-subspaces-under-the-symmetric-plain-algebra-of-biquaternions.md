@@ -36,7 +36,7 @@ The rule is the multiplication of the complex numbers, restricted to the scalar 
 
 ### Units, Idempotents and Isotropic Elements
 
-The generic norm of a central element is $N(Ae_0)=A^2$, so the **units** of the centre are the non-zero scalars, $A\neq0$, and the element $Ae_0$ with $A\neq0$ is invertible in the block with inverse $A^{-1}e_0$. The **idempotents** of the centre are the solutions of $A^2=A$, namely $0$ and $e_0$; these are the two trivial idempotents of the block, and no non-trivial idempotent is central, because a non-trivial idempotent $\tfrac12(e_0+\xi i)$ has the non-central element $\xi i$ in its vector part. The **isotropic** elements are the solutions of $A^2=0$, namely $0$ alone: the centre contains no non-zero isotropic element.
+The generic norm of a central element is $N(Ae_0)=A^2$, so the **units** of the centre are the non-zero scalars, $A\neq0$, and the element $Ae_0$ with $A\neq0$ is invertible in the block with inverse $A^{-1}e_0$. The **idempotents** of the centre are the solutions of $A^2=A$, namely $0$ and $e_0$; these are the two trivial idempotents of the block, and no non-trivial idempotent is central, because a non-trivial idempotent $\tfrac12(e_0+\tilde\Xi i)$ has the non-central element $\tilde\Xi i$ in its vector part. The **isotropic** elements are the solutions of $A^2=0$, namely $0$ alone: the centre contains no non-zero isotropic element.
 
 ## The Vector Subspace $\mathrm{Vect}(\mathbb{B})$
 

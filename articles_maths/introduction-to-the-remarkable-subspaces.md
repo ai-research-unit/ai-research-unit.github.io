@@ -337,10 +337,10 @@ its complement $e_0 - \tilde\Pi$ is the complementary projection, and when the i
 **The idempotents of the algebra.** Every idempotent of $\mathbb{B}$ is $0$, or $e_0$, or of the form
 
 $$
-\tilde\Pi = \tfrac{1}{2}\left(e_0 + \xi i\right) , \qquad \xi^2 = -1 ,
+\tilde\Pi = \tfrac{1}{2}\left(e_0 + \tilde\Xi i\right) , \qquad \tilde\Xi^2 = -1 ,
 $$
 
-with $\xi$ a root of minus one; there are no others. Writing the idempotent as $\tilde\Pi = \Pi_0e_0 + \mathbf{q}$, with $\Pi_0$ the scalar part and $\mathbf{q}$ the vector part, and using $\mathbf{q}^2 = -(\mathbf{q},\mathbf{q})e_0$, the equation $\tilde\Pi^2 = \tilde\Pi$ is the pair
+with $\tilde\Xi$ a root of minus one; there are no others. Writing the idempotent as $\tilde\Pi = \Pi_0e_0 + \mathbf{q}$, with $\Pi_0$ the scalar part and $\mathbf{q}$ the vector part, and using $\mathbf{q}^2 = -(\mathbf{q},\mathbf{q})e_0$, the equation $\tilde\Pi^2 = \tilde\Pi$ is the pair
 
 $$
 \Pi_0^2 - (\mathbf{q},\mathbf{q}) = \Pi_0 , \qquad 2\Pi_0\mathbf{q} = \mathbf{q} .

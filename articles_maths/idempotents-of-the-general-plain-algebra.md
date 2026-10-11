@@ -56,10 +56,10 @@ the first two because $e_3 \tilde\Pi_1 = (e_3 + i e_3^2)/2 = (e_3 - i)/2 = -i\,\
 **Theorem.** Every idempotent of $\mathbb{B}$ is either trivial ($0$ or $e_0$) or of the form
 
 $$
-\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
+\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \tilde\Xi i,
 $$
 
-where $\xi \in \mathbb{B}$ is a root of $-1$, i.e. $\xi^2 = -1$. There are no other idempotents in $\mathbb{B}$.
+where $\tilde\Xi \in \mathbb{B}$ is a root of $-1$, i.e. $\tilde\Xi^2 = -1$. There are no other idempotents in $\mathbb{B}$.
 
 **Proof.** Write $\tilde\Pi = \Pi_0 e_0 + \boldsymbol{\Pi}$ with $\Pi_0 \in \mathbb{C}$ and $\boldsymbol{\Pi}$ pure. Then
 
@@ -75,21 +75,21 @@ $$
 
 If $\boldsymbol{\Pi} = 0$, then $\Pi_0^2 = \Pi_0$, so $\Pi_0 = 0$ or $\Pi_0 = 1$, giving the trivial idempotents. If $\boldsymbol{\Pi} \neq 0$, then the second equation gives $\Pi_0 = 1/2$. Substituting into the first gives $1/4 - (\boldsymbol{\Pi}, \boldsymbol{\Pi}) = 1/2$, so $(\boldsymbol{\Pi}, \boldsymbol{\Pi}) = -1/4$.
 
-Define $\xi = -2 i \boldsymbol{\Pi}$. Then $\xi$ is pure, and
+Define $\tilde\Xi = -2 i \boldsymbol{\Pi}$. Then $\tilde\Xi$ is pure, and
 
 $$
-(\xi, \xi) = \sum_{k=1}^{3} (-2 i \Pi_k)^2 = -4 \sum_{k=1}^{3} \Pi_k^2 = -4 (\boldsymbol{\Pi}, \boldsymbol{\Pi}) = 1,
+(\tilde\Xi, \tilde\Xi) = \sum_{k=1}^{3} (-2 i \Pi_k)^2 = -4 \sum_{k=1}^{3} \Pi_k^2 = -4 (\boldsymbol{\Pi}, \boldsymbol{\Pi}) = 1,
 $$
 
-so $\xi^2 = -(\xi, \xi) = -1$. Thus $\xi$ is a root of $-1$, and $\boldsymbol{\Pi} = \xi \cdot (i/2)$. Hence
+so $\tilde\Xi^2 = -(\tilde\Xi, \tilde\Xi) = -1$. Thus $\tilde\Xi$ is a root of $-1$, and $\boldsymbol{\Pi} = \tilde\Xi \cdot (i/2)$. Hence
 
 $$
-\tilde\Pi = \tfrac{1}{2} e_0 + \tfrac{1}{2} \xi i.
+\tilde\Pi = \tfrac{1}{2} e_0 + \tfrac{1}{2} \tilde\Xi i.
 $$
 
-The sign choice arises from replacing $\xi$ by $-\xi$, which is also a root of $-1$.
+The sign choice arises from replacing $\tilde\Xi$ by $-\tilde\Xi$, which is also a root of $-1$.
 
-The trivial idempotents correspond to the degenerate roots $\xi = \pm i$: the two signs in $\tfrac{1}{2}(e_0 \pm \xi i)$ give $\tfrac{1}{2}(e_0 + i \cdot i) = 0$ and $\tfrac{1}{2}(e_0 - i \cdot i) = e_0$.
+The trivial idempotents correspond to the degenerate roots $\tilde\Xi = \pm i$: the two signs in $\tfrac{1}{2}(e_0 \pm \tilde\Xi i)$ give $\tfrac{1}{2}(e_0 + i \cdot i) = 0$ and $\tfrac{1}{2}(e_0 - i \cdot i) = e_0$.
 
 The classification is a classification of the idempotents only because the roots of $-1$ are classified, and that classification is the subject of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, which precedes this article. The three families it produces — the trivial roots $\pm i$, the real quaternion roots $\pm\mu$ over unit pure real quaternions, and the non-trivial roots $b\mu + d\nu i$ — give the three families of idempotents in §*The Bijection With the Roots of Minus One*.
 
@@ -98,32 +98,32 @@ The classification is a classification of the idempotents only because the roots
 **Theorem.** The map
 
 $$
-\xi \longmapsto \tilde\Pi_1(\xi), \qquad \tilde\Pi_1(\xi) = \tfrac{1}{2}(e_0 + \xi i),
+\tilde\Xi \longmapsto \tilde\Pi_1(\tilde\Xi), \qquad \tilde\Pi_1(\tilde\Xi) = \tfrac{1}{2}(e_0 + \tilde\Xi i),
 $$
 
 is a **bijection** from the set of roots of $-1$ onto the set of idempotents of $\mathbb{B}$.
 
-**Proof.** *Well defined:* if $\xi^2 = -1$, then
+**Proof.** *Well defined:* if $\tilde\Xi^2 = -1$, then
 
 $$
-\tilde\Pi_1(\xi)^2 = \tfrac{1}{4}(e_0 + \xi i)^2 = \tfrac{1}{4}(e_0 + 2\xi i + \xi^2 i^2) = \tfrac{1}{4}(e_0 + 2\xi i + 1) = \tfrac{1}{2}(e_0 + \xi i) = \tilde\Pi_1(\xi),
+\tilde\Pi_1(\tilde\Xi)^2 = \tfrac{1}{4}(e_0 + \tilde\Xi i)^2 = \tfrac{1}{4}(e_0 + 2\tilde\Xi i + \tilde\Xi^2 i^2) = \tfrac{1}{4}(e_0 + 2\tilde\Xi i + 1) = \tfrac{1}{2}(e_0 + \tilde\Xi i) = \tilde\Pi_1(\tilde\Xi),
 $$
 
-where $\xi^2 i^2 = (-1)(-1) = 1$ and $e_0$ commutes with $\xi i$. *Injective:* $\tilde\Pi_1(\xi) = \tilde\Pi_1(\xi')$ gives $\xi i = \xi' i$, hence $\xi = \xi'$. *Surjective:* the classification theorem says every idempotent is $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ for some root $\xi$, and $\tilde\Pi_2(\xi) = \tfrac{1}{2}(e_0 - \xi i) = \tilde\Pi_1(-\xi)$, while $-\xi$ is again a root of $-1$.
+where $\tilde\Xi^2 i^2 = (-1)(-1) = 1$ and $e_0$ commutes with $\tilde\Xi i$. *Injective:* $\tilde\Pi_1(\tilde\Xi) = \tilde\Pi_1(\tilde\Xi')$ gives $\tilde\Xi i = \tilde\Xi' i$, hence $\tilde\Xi = \tilde\Xi'$. *Surjective:* the classification theorem says every idempotent is $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \tilde\Xi i$ for some root $\tilde\Xi$, and $\tilde\Pi_2(\tilde\Xi) = \tfrac{1}{2}(e_0 - \tilde\Xi i) = \tilde\Pi_1(-\tilde\Xi)$, while $-\tilde\Xi$ is again a root of $-1$.
 
-Consequently the **complementary pairs** $\{\tilde\Pi, e_0 - \tilde\Pi\}$ of idempotents are in bijection with the roots of $-1$ modulo the sign identification $\xi \sim -\xi$, since
+Consequently the **complementary pairs** $\{\tilde\Pi, e_0 - \tilde\Pi\}$ of idempotents are in bijection with the roots of $-1$ modulo the sign identification $\tilde\Xi \sim -\tilde\Xi$, since
 
 $$
-\tilde\Pi_1(-\xi) = \tfrac{1}{2}(e_0 - \xi i) = e_0 - \tilde\Pi_1(\xi).
+\tilde\Pi_1(-\tilde\Xi) = \tfrac{1}{2}(e_0 - \tilde\Xi i) = e_0 - \tilde\Pi_1(\tilde\Xi).
 $$
 
-Thus $\tilde\Pi_1(\xi)$ and $\tilde\Pi_1(-\xi)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\xi, -\xi\}$.
+Thus $\tilde\Pi_1(\tilde\Xi)$ and $\tilde\Pi_1(-\tilde\Xi)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\tilde\Xi, -\tilde\Xi\}$.
 
-Substituting the classification of $\xi$ of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* gives the three families of idempotents:
+Substituting the classification of $\tilde\Xi$ of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* gives the three families of idempotents:
 
-- For the trivial root $\xi = \pm i$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} i \cdot i = \tfrac{1}{2} e_0 \mp \tfrac{1}{2} e_0$, giving $\tilde\Pi = 0$ or $\tilde\Pi = e_0$. These are the **trivial idempotents**.
-- For the real root $\xi = \pm \mu$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \mu i$. Since $\mu i$ is Hermitian when $\mu$ is a unit pure real quaternion, $(\mu i)^{*} = \mu i$, these are the **Hermitian idempotents**, and they lie in the Hermitian subspace $\mathbb{M}_+$; they are the projections that occur in the biquaternion spectral theorem, treated in *Biquaternion Spectral Theory*.
-- For the non-trivial root $\xi = b\mu + d\nu i$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu + d\nu i) i = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu i - d\nu)$. These idempotents combine a real scalar part, a real vector part in the direction of $\nu$ and an imaginary vector part in the direction of $\mu$. Since their vector part mixes a real and an imaginary direction, they lie in none of the four four-dimensional subspaces.
+- For the trivial root $\tilde\Xi = \pm i$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} i \cdot i = \tfrac{1}{2} e_0 \mp \tfrac{1}{2} e_0$, giving $\tilde\Pi = 0$ or $\tilde\Pi = e_0$. These are the **trivial idempotents**.
+- For the real root $\tilde\Xi = \pm \mu$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \mu i$. Since $\mu i$ is Hermitian when $\mu$ is a unit pure real quaternion, $(\mu i)^{*} = \mu i$, these are the **Hermitian idempotents**, and they lie in the Hermitian subspace $\mathbb{M}_+$; they are the projections that occur in the biquaternion spectral theorem, treated in *Biquaternion Spectral Theory*.
+- For the non-trivial root $\tilde\Xi = b\mu + d\nu i$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu + d\nu i) i = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu i - d\nu)$. These idempotents combine a real scalar part, a real vector part in the direction of $\nu$ and an imaginary vector part in the direction of $\mu$. Since their vector part mixes a real and an imaginary direction, they lie in none of the four four-dimensional subspaces.
 
 The idempotents inherit the size of the root set. The trivial roots $\pm i$ map to the trivial idempotents $0$ and $e_0$, so the non-trivial idempotents form a set of real dimension $4$, sitting inside the six-real-dimensional zero divisor set of $\mathbb{B}$ with the trivial idempotents outside it; the dimension statements for the roots are in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*.
 
@@ -167,7 +167,7 @@ The derivation, from the square relation $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$ that th
 
 An idempotent of $\mathbb{B}$ is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$. The algebra carries the standard orthogonal idempotents $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$ and $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3)$, with $\tilde\Pi_1\tilde\Pi_2 = 0$ and $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, and they generate the two minimal left ideals of *Ideals and Peirce Decomposition of the General Plain Algebra*.
 
-Every idempotent is either trivial or of the form $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ with $\xi^2 = -1$, and $\xi \mapsto \tfrac{1}{2}(e_0 + \xi i)$ is a bijection from the roots of $-1$ onto the idempotents, carrying the complementary pairs to the classes $\{\xi, -\xi\}$. The three families of roots — trivial, real and non-trivial — give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and idempotents in none of the four four-dimensional subspaces; the non-trivial idempotents form a set of real dimension $4$. An idempotent and its complement split the algebra as $\mathbb{B} = \tilde\Pi\mathbb{B} \oplus (e_0 - \tilde\Pi)\mathbb{B}$, the algebraic form of a projection and its complementary projection, and every non-pure zero divisor is the complex multiple $2Q_0\tilde\Pi$ of a nontrivial idempotent, developed in *Zero Divisors of the General Plain Algebra*.
+Every idempotent is either trivial or of the form $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \tilde\Xi i$ with $\tilde\Xi^2 = -1$, and $\tilde\Xi \mapsto \tfrac{1}{2}(e_0 + \tilde\Xi i)$ is a bijection from the roots of $-1$ onto the idempotents, carrying the complementary pairs to the classes $\{\tilde\Xi, -\tilde\Xi\}$. The three families of roots — trivial, real and non-trivial — give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and idempotents in none of the four four-dimensional subspaces; the non-trivial idempotents form a set of real dimension $4$. An idempotent and its complement split the algebra as $\mathbb{B} = \tilde\Pi\mathbb{B} \oplus (e_0 - \tilde\Pi)\mathbb{B}$, the algebraic form of a projection and its complementary projection, and every non-pure zero divisor is the complex multiple $2Q_0\tilde\Pi$ of a nontrivial idempotent, developed in *Zero Divisors of the General Plain Algebra*.
 
 ## Summary of Notation
 
@@ -176,8 +176,8 @@ Every idempotent is either trivial or of the form $\tilde\Pi = \tfrac{1}{2} e_0 
 | $\tilde\Pi$ | Idempotent, $\tilde\Pi^2 = \tilde\Pi$ (of $\mathbb{B}$, or of a general associative unital algebra) |
 | $\tilde\Pi = \Pi_0 e_0 + \boldsymbol{\Pi}$ | Scalar part $\Pi_0 \in \mathbb{C}$ and pure vector part $\boldsymbol{\Pi}$ of an element of $\mathbb{B}$ |
 | $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3)$ | The standard orthogonal idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$ |
-| $\xi$ | A root of $-1$, $\xi^2 = -1$ |
-| $\tilde\Pi_1(\xi) = \tfrac{1}{2}(e_0 + \xi i)$ | The idempotent of the root $\xi$; $\xi \mapsto \tilde\Pi_1(\xi)$ is a bijection |
+| $\tilde\Xi$ | A root of $-1$, $\tilde\Xi^2 = -1$ |
+| $\tilde\Pi_1(\tilde\Xi) = \tfrac{1}{2}(e_0 + \tilde\Xi i)$ | The idempotent of the root $\tilde\Xi$; $\tilde\Xi \mapsto \tilde\Pi_1(\tilde\Xi)$ is a bijection |
 | $\mathbb{B}\tilde\Pi_1$, $\mathbb{B}\tilde\Pi_2$ | The two minimal left ideals |
 | $\mathbf{A}\mathbf{B} = -\sum_k A_k B_k\,e_0 + \mathbf{A}\times\mathbf{B}$ | Product of two pure elements; $\mathbf{B}^2 = -(\sum_k B_k^2)e_0$ |
 | $\mathbb{M}_+$ | Hermitian subspace, containing the Hermitian idempotents |

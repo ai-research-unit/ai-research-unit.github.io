@@ -19,7 +19,7 @@ $$
 
 with $X_0$ the scalar coordinate of $\tilde X$. This article reads the two consequences. The elements whose left multiplication is a **projector** are those of the affine hyperplane $X_0=1$, together with the origin: the first are pairwise distinct rank-one projections onto the central line, the second is the zero operator. The elements whose left multiplication is **square-zero** are those of the hyperplane $X_0=0$, which is the vector subspace $\mathrm{Vect}(\mathbb{B})$, the orthogonal complement of the central line; the nonzero ones have rank one, and the zero elements of this family are distinct from the square-zero elements of the algebra, which are the isotropic cone.
 
-The point of the article is the proof behind the row of the symmetric quaternionic product in the comparison table of *The Specificities of the General Plain Algebra*, which states that the projectors come from the elements of scalar coordinate $1$ and from the origin. The article states and proves the exclusive law of the block on the same model as the two articles that began the family: the **scalar law**, which demands that the product be commutative and that its values be central, is satisfied by the block and by no other operation of the twelve, and §*The Eleven Failures* runs the eleven comparisons with a witness for each. The projectors do not come from isolated elements and not from the unit: they come from a hyperplane, they are indexed by that hyperplane and not by the idempotents of the algebra, and even the element $e_0$ gives the projection onto the central line and not the identity, because the algebra has no unit. The algebra therefore produces a full family of projectors and disowns all but one of their indices, exactly as the general quaternionic product does; the difference is the size and the shape of the family.
+The article states and proves the exclusive law of the block on the same model as the articles that began the family: the **scalar law**, which demands that the product be commutative and that its values be central, is satisfied by the block and by no other operation of the twelve, and the classification of the block's operators is read from it. The projectors do not come from isolated elements and not from the unit: they come from a hyperplane, they are indexed by that hyperplane and not by the idempotents of the algebra, and even the element $e_0$ gives the projection onto the central line and not the identity, because the algebra has no unit. The algebra therefore produces a full family of projectors and disowns all but one of their indices, exactly as the general quaternionic product does; the difference is the size and the shape of the family.
 
 **Placement.** The article is the second and closing entry of the *Specific Theory* section of the symmetric quaternionic algebra, after *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*, and it is the third of the family that *The Specificities of the General Plain Algebra* began and *The Specificities of the General Quaternionic Algebra* continued. It uses the governing formula of *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*, the non-degeneracy and the trivial radical of the radical article, the composition law of the multiplication operators in *The Multiplication Operators of the Symmetric Quaternionic Algebra*, the element idempotents of *Idempotents of the General Plain Algebra*, and the criterion of the article that began the family.
 
@@ -27,7 +27,7 @@ The point of the article is the proof behind the row of the symmetric quaternion
 
 ## The Exclusive Law of the Block
 
-The family of specificities articles states, for each block, one law that the block has and the other eleven do not, proves it, and runs the eleven comparisons (*The Specificities of the General Plain Algebra*, *The Specificities of the General Quaternionic Algebra*). The law of the symmetric quaternionic block is the following.
+The family of specificities articles states, for each block, one law that the block has and the other eleven do not, and proves it (*The Specificities of the General Plain Algebra*, *The Specificities of the General Quaternionic Algebra*). The law of the symmetric quaternionic block is the following.
 
 **Definition (the scalar law).** Let $\circ$ be a product on $\mathbb{B}$. The product satisfies the **scalar law** when
 
@@ -44,7 +44,7 @@ $$
 
 **Theorem (the block is the only structure with the scalar law).** The symmetric quaternionic product satisfies the scalar law, with $\beta=N$; and among the twelve operations of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* it is the only one that does.
 
-**Proof.** The product is $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with $N$ symmetric, bilinear and central-valued by *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*, so the law holds; the uniqueness is §*The Eleven Failures*, where every other operation is exhibited with a witness of the failure of clause 1 or of clause 2.
+**Proof.** The product is $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with $N$ symmetric, bilinear and central-valued by *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*, so the law holds; the uniqueness is §*The Isolation among the Twelve*, where each other operation is exhibited with a witness of the failure of clause 1 or of clause 2.
 
 **Theorem (the operator reading).** The left multiplications of the block obey the composition law
 
@@ -54,9 +54,9 @@ $$
 
 where $\mathrm{Sc}(\tilde X)=X_0$ is the scalar coordinate; and no other one of the twelve operations admits a law of the form $L^{\circ}_{\tilde X}L^{\circ}_{\tilde Z}=\ell(\tilde X)L^{\circ}_{\tilde Z}$ with $\ell$ depending on the first factor alone.
 
-**Proof.** The law of the block is the composition law of *The Multiplication Operators of the Symmetric Quaternionic Algebra*, $L_{\tilde A}L_{\tilde B}=N(\tilde A,e_0)L_{\tilde B}$, with $N(\tilde A,e_0)=\mathrm{Sc}(\tilde A)$; its specialisation $\tilde A=\tilde B=\tilde X$ is $L_{\tilde X}^2=X_0L_{\tilde X}$ of §*The Operator Identity*. The failures of the other eleven are in §*The Eleven Failures*.
+**Proof.** The law of the block is the composition law of *The Multiplication Operators of the Symmetric Quaternionic Algebra*, $L_{\tilde A}L_{\tilde B}=N(\tilde A,e_0)L_{\tilde B}$, with $N(\tilde A,e_0)=\mathrm{Sc}(\tilde A)$; its specialisation $\tilde A=\tilde B=\tilde X$ is $L_{\tilde X}^2=X_0L_{\tilde X}$ of §*The Operator Identity*. The failures of the other eleven are in §*The Isolation among the Twelve*.
 
-**Remark (why the two forms of the law are kept).** The element form and the operator form are not the same statement in general, and the article keeps both. The operator form is the one the block's whole operator theory reads, and it is the form in which the four columns of the projectors and the square-zero operators are computed; the element form is the one the eleven comparisons settle, because its two clauses are decided on pairs of basis elements. The block is the unique structure that passes both.
+**Remark (why the two forms of the law are kept).** The element form and the operator form are not the same statement in general, and the article keeps both. The operator form is the one the block's whole operator theory reads, and it is the form in which the four columns of the projectors and the square-zero operators are computed; the element form is the one the pairs of basis elements settle, because its two clauses are decided there. The block is the unique structure that passes both.
 
 ## The Left Multiplication Is Rank One
 
@@ -95,69 +95,6 @@ The theorem is the specialisation of the composition law $L^{\bullet}_{\tilde A}
 **Proof.** The composite of the identity of the theorem with an arbitrary $L_{\tilde Z}$ gives the display, and at $X_0=1$ it reads $L_{\tilde X}L_{\tilde Z}=L_{\tilde Z}$: such an $L_{\tilde X}$ is a left identity.
 
 **Remark (the monoid is not the algebra).** The multiplication of the algebra is commutative and has no unit, and the monoid of its left multiplications is non-commutative as soon as both factors have nonzero scalar coordinate ($L_{\tilde X}L_{\tilde Z}=X_0L_{\tilde Z}$ against $L_{\tilde Z}L_{\tilde X}=Z_0L_{\tilde X}$) and has left identities only. The passage from the algebra to its operators therefore changes both the commutativity and the unit, which is the sharpest illustration of the theme of the family: the element structure and the operator structure of these products are different objects.
-
-## The Eleven Failures
-
-Every operation of the catalogue other than the block is exhibited here with a witness: first a pair of elements witnessing the failure of the scalar law, then, for the operator reading, a witness of the failure of the composition law. The three groups are the three mechanisms — reading a general product whole, symmetrising, antisymmetrising.
-
-### The Four General Products Read Whole
-
-None of the four is commutative, and none has central values.
-
-| the operation | the failure of commutativity | the value that is not central |
-|---|---|---|
-| $\tilde X\tilde Y$ | $e_1e_2=e_3$, $e_2e_1=-e_3$ | $e_0e_1=e_1$ |
-| $\tilde X^{\natural}\tilde Y$ | $e_0^{\natural}e_1=e_1$, $e_1^{\natural}e_0=-e_1$ | $e_0^{\natural}e_1=e_1$ |
-| $\tilde X\tilde Y^{*}$ | $e_0e_1^{*}=-e_1$, $e_1e_0^{*}=e_1$ | $e_0e_1^{*}=-e_1$ |
-| $\tilde X^{\natural}\tilde Y^{*}$ | $e_1^{\natural}e_2^{*}=e_3$, $e_2^{\natural}e_1^{*}=-e_3$ | $e_0^{\natural}e_1^{*}=-e_1$ |
-
-The first row is the reason the asymmetric siblings of the block exist at all: the plain product carries the off-diagonal signs of the quaternion table, and the block is what remains of those signs when the two slots are symmetrised.
-
-### The Other Three Symmetrisations
-
-The three symmetrisations other than the block split into three uniques, and the split is the exact statement of what the scalar law adds to the symmetrisation. In the table $\circ$ is the operation of the row.
-
-| the operation | commutative? | central values? | the witness |
-|---|---|---|---|
-| $\tfrac12(\tilde X\tilde Y+\tilde Y\tilde X)$ | yes | no | $e_0\circ e_1=e_1\notin\mathbb{C}e_0$ |
-| $\tfrac12(\tilde X\tilde Y^{*}+\overline{\tilde Y}\tilde X^{\natural})$ | no | yes | $e_0\circ ie_0=-ie_0$, $ie_0\circ e_0=ie_0$ |
-| $\tfrac12(\tilde X^{\natural}\tilde Y^{*}+\tilde Y^{*}\tilde X^{\natural})$ | no | no | $e_0\circ ie_0=-ie_0$; $e_0\circ e_1=-e_1$ |
-
-The first row is the Jordan product of the plain algebra: it is commutative like the block, and it fails only the centrality, because the plain product's vector part survives the symmetrisation. The second row is the Hermitian reading: it has central values like the block, and it fails only the commutativity, because its conjugation is written in the second slot and conjugates a scalar. The third row fails both. The block is thus the intersection of the two rows that survive one clause each, and no other operation of the twelve lies in that intersection.
-
-### The Four Antisymmetrisations
-
-The two bilinear antisymmetrisations are alternating, $\tilde X\circ\tilde X=0$, and none of the four is commutative or central-valued; the two sesquilinear ones are **not** alternating, the plain one taking $\tilde X=e_0+ie_1$ to $2ie_1$ and the quaternionic one taking $\tilde X=e_2+ie_3$ to $-2ie_1$. In the table $\circ$ is the operation of the row.
-
-| the operation | the witness of non-commutativity | the non-central value |
-|---|---|---|
-| $\tfrac12(\tilde X\tilde Y-\tilde Y\tilde X)=\mathbf X\times\mathbf Y$ | $e_1\circ e_2=e_3$, $e_2\circ e_1=-e_3$ | $e_1\circ e_2=e_3$ |
-| $\tfrac12(\tilde X^{\natural}\tilde Y-\tilde Y^{\natural}\tilde X)=X_0\mathbf Y-Y_0\mathbf X-\mathbf X\times\mathbf Y$ | $e_0\circ e_1=e_1$, $e_1\circ e_0=-e_1$ | $e_0\circ e_1=e_1$ |
-| $\tfrac12(\tilde X\tilde Y^{*}-\overline{\tilde Y}\tilde X^{\natural})$ | $e_0\circ e_1=-e_1$, $e_1\circ e_0=e_1$ | $e_0\circ e_1=-e_1$ |
-| $\tfrac12(\tilde X^{\natural}\tilde Y^{*}-\tilde Y^{*}\tilde X^{\natural})=\mathbf X\times\overline{\mathbf Y}$ | $e_1\circ e_2=e_3$, $e_2\circ e_1=-e_3$ | $e_1\circ e_2=e_3$ |
-
-### The Verdicts
-
-| the structure | commutative? | central values? | the scalar law | the mechanism |
-|---|---|---|---|---|
-| the plain product | no | no | no | read whole |
-| the quaternionic product | no | no | no | read whole |
-| the plain sesquilinear product | no | no | no | read whole |
-| the quaternionic sesquilinear product | no | no | no | read whole |
-| the symmetric plain product | **yes** | no | no | symmetrised, the vector part survives |
-| **the symmetric quaternionic product** | **yes** | **yes** | **yes** | symmetrised, and central |
-| the symmetric plain sesquilinear product | no | **yes** | no | symmetrised, the conjugation conjugates a scalar |
-| the symmetric quaternionic sesquilinear product | no | no | no | symmetrised |
-| the antisymmetric plain product | no | no | no | antisymmetrised |
-| the antisymmetric quaternionic product | no | no | no | antisymmetrised |
-| the antisymmetric plain sesquilinear product | no | no | no | antisymmetrised |
-| the antisymmetric quaternionic sesquilinear product | no | no | no | antisymmetrised |
-
-### The Operator Reading Fails for the Eleven as Well
-
-**Proposition (the five bilinear failures away from the block).** For the plain product and the symmetric plain product the element $e_0$ is a two-sided unit, and for the quaternionic product it is a left unit, so in the three cases $L_{e_0}$ is the identity; a law $L_{\tilde X}L_{\tilde Z}=\ell(\tilde X)L_{\tilde Z}$ taken at $\tilde Z=e_0$ would make $L_{\tilde X}$ a scalar multiple of the identity, and it is not: for the plain product $L_{e_1}(e_0)=e_1$ while $L_{e_1}(e_2)=e_3$; for the quaternionic product $L_{e_1}(e_0)=-e_1$ while $L_{e_1}(e_2)=-e_3$; for the symmetric plain product $L_{e_1}(e_0)=e_1$ while $L_{e_1}(e_1)=-e_0$. For the antisymmetric plain product the witness is $\tilde X=\tilde Z=e_1$, where $L_{e_1}(e_2)=e_3$ while $L_{e_1}^2(e_2)=-e_2$; for the antisymmetric quaternionic product the same pair, where $L_{e_1}(e_2)=-e_3$ while $L_{e_1}^2(e_2)=-e_2$.
-
-**Proposition (the six sesquilinear failures, by parity).** In the six sesquilinear operations — the plain and the quaternionic, the symmetric and the antisymmetric ones — the left multiplication is conjugate-linear in its argument, while a composite $L_{\tilde X}L_{\tilde Z}$ is $\mathbb{C}$-linear. A linear operator equal to a conjugate-linear one vanishes, so a law $L_{\tilde X}L_{\tilde Z}=\ell(\tilde X)L_{\tilde Z}$ would force $L_{\tilde X}L_{\tilde Z}=0$ for all $\tilde X,\tilde Z$, and the composite is not always zero: for the plain and the quaternionic sesquilinear products $L_{e_0}^2$ is the identity, since ${}^{*}$ is an involution; for the symmetric plain sesquilinear product $L_{e_0}^2(\tilde W)=W_0e_0$, nonzero at $\tilde W=e_0$; for the symmetric quaternionic sesquilinear product $L_{e_0}$ is the star involution, so $L_{e_0}^2$ is the identity; for the antisymmetric plain sesquilinear product $L_{e_0}^2$ is the projection $\tilde W\mapsto\mathbf W$ onto the vector subspace, nonzero at a generic argument; and for the antisymmetric quaternionic sesquilinear product $L_{e_1}^2(e_2)=-e_2\neq0$. The parity obstruction is the same one that the article of the plain algebra records for its sesquilinear neighbours, and it is why the two sesquilinear members of the symmetric family carry no projector but the zero operator (§*The Symmetric Family, in Detail*).
 
 ## The Projectors
 
@@ -205,29 +142,37 @@ $$
 
 since $e_1\bullet e_0=N(e_1,e_0)e_0=0$ while $e_1\bullet e_1=N(e_1,e_1)e_0=e_0$. The algebra is not left-alternative, the criterion is not available, and the classification above is not an instance of it: it is read from the identity of §*The Operator Identity*, which holds for the algebra's own reason, the rank-one shape of the product.
 
-## The Symmetric Family, in Detail
+## The Isolation among the Twelve
 
-The four symmetric products of the complex space behave alike at the element level and differently at the operator level. The table below collects the projectors of the left multiplication, the quantity whose row of *The Specificities of the General Plain Algebra* this article corrects.
+The family of specificities articles states, for each block, one law that the block has and the other eleven do not, proves it, and reads the block's theory from it. The law of this block is the **scalar law** of §*The Exclusive Law of the Block*: commutative with central values, equivalently $\tilde X\circ\tilde Y=\beta(\tilde X,\tilde Y)e_0$ for a symmetric bilinear form $\beta$.
 
-| structure | product | elements with an idempotent left multiplication | the operator |
-|---|---|---|---|
-| SPA | $\tfrac12(\tilde X\tilde Y+\tilde Y\tilde X)$ | $0$ and $e_0$ alone | $0$ and the identity |
-| SQA | $\tfrac12(\tilde X^{\natural}\tilde Y+\tilde Y^{\natural}\tilde X)$ | the origin, and the hyperplane $X_0=1$ | $0$, and rank-one projections onto $\mathbb{C}e_0$ |
-| SPS | $\tfrac12(\tilde X\tilde Y^{*}+\overline{\tilde Y}\tilde X^{\natural})$ | $0$ alone | $0$ |
-| SQS | $\tfrac12(\tilde X^{\natural}\tilde Y^{*}+\tilde Y^{*}\tilde X^{\natural})$ | $0$ alone | $0$ |
+**Theorem (the isolation).** Of the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the symmetric quaternionic product is the only one that satisfies the scalar law.
 
-The pattern is the failure of left alternativity in all four and the collapse of the element idempotents, and the operator answers separate them: the symmetric plain product recovers the identity and nothing else, the symmetric quaternionic product a hyperplane of rank-one projections, and the two symmetric sesquilinear products only the zero operator, because their left multiplications are conjugate-linear and a conjugate-linear operator that is idempotent is zero (§*The Twisted Second Slot* of the article that began the family). The symmetric quaternionic product is the one member whose operator family is a hyperplane, and it is the reason its row in the comparison table is the only one of the symmetric family that needed a correction.
+*Proof.* The twelve are generated from the four general products by symmetrising or antisymmetrising. The four general products are non-commutative, so they fail the first clause; the four antisymmetrisations are non-commutative as well. Among the four symmetrisations, the symmetric plain product is commutative and not central-valued, the vector part of the plain product surviving the symmetrisation; the symmetric plain sesquilinear product is central-valued and not commutative, its conjugation conjugating a scalar; and the symmetric quaternionic sesquilinear product fails both. The symmetric quaternionic product is commutative and central-valued by the governing formula, and it alone meets both clauses.
+
+| family | structures | commutative | central values | the scalar law |
+|---|---|---|---|---|
+| the four general products | GPA, GQA, GPS, GQS | no | no | no |
+| the symmetric parts | SPA | yes | no | no |
+| | **SQA** | **yes** | **yes** | **yes** |
+| | SPS | no | yes | no |
+| | SQS | no | no | no |
+| the antisymmetric parts | APA, AQA, APS, AQS | no | no | no |
+
+The operator reading of the law, $L^{\circ}_{\tilde X}L^{\circ}_{\tilde Z}=\ell(\tilde X)L^{\circ}_{\tilde Z}$ with $\ell$ depending on the first factor alone, fails for the other eleven as well. The three bilinear structures away from the block that carry a one-sided unit — the plain product, the general quaternionic product and the symmetric plain product — fail at $\tilde Z=e_0$, where $L^{\circ}_{e_0}$ is the identity, so a law of that form would make $L^{\circ}_{\tilde X}$ a scalar multiple of the identity, which it is not. The two alternating products carry no unit and fail the reading at the pair $(\tilde X,\tilde Z)=(e_1,e_1)$, where the two sides are not proportional. The six sesquilinear structures fail by parity: their left multiplication is conjugate-linear in its argument while a composite is $\mathbb{C}$-linear, so a linear operator equal to a conjugate-linear one vanishes, and the composite is not always zero. The block satisfies the reading with $\ell(\tilde X)=X_0$ by §*The Operator Identity*.
+
+**Remark (the four symmetric products).** The four symmetric products behave alike at the element level — no unit, few idempotents — and differently at the operator level. The symmetric plain product recovers only the identity operator, from its unit; the two symmetric sesquilinear products recover only the zero operator, their left multiplications being conjugate-linear and hence, if idempotent, zero; this block recovers the affine hyperplane $X_0=1$ of rank-one projections onto the central line, together with the zero operator. The block is the one member whose operator family is a hyperplane, and the reason is the rank-one shape $L_{\tilde X}\tilde Y=N(\tilde X,\tilde Y)e_0$ of its left multiplication, which the other three do not have.
 
 ## Summary
 
-The symmetric quaternionic product satisfies the **scalar law** — it is commutative and its values lie in the centre, equivalently $\tilde P\bullet\tilde Q=N(\tilde P,\tilde Q)e_0$ for a symmetric bilinear form — and it is the only one of the twelve operations that does: the two other symmetrisations that survive one clause each fail the other (the symmetric plain product is commutative and not central, the symmetric plain sesquilinear product central and not commutative), and the four general products and the four antisymmetrisations fail both. Its left multiplication is the rank-one operator $L_{\tilde X}\tilde Y=N(\tilde X,\tilde Y)e_0$, faithful in $\tilde X$ because the form is non-degenerate, and the single identity $L_{\tilde X}^{2}=X_0L_{\tilde X}$ classifies everything: the operator is a projector exactly when $\tilde X=0$ or $X_0=1$, and square-zero exactly when $X_0=0$; the operator reading $L_{\tilde X}L_{\tilde Z}=X_0L_{\tilde Z}$ likewise fails for the other eleven, for the six sesquilinear ones by the parity obstruction and for the rest on explicit witnesses. The projectors are the affine hyperplane $X_0=1$ together with the zero operator, a family of complex dimension three of pairwise distinct rank-one projections onto the central line, indexed by the hyperplane and not by the idempotents of the algebra, which are $0$ and $e_0$ alone; even the element $e_0$ gives the projection onto the central line and not the identity, since the algebra has no unit. The square-zero operators are the vector subspace $X_0=0$, which is not the isotropic cone of the square-zero elements, the two coinciding only on the intersection. Among the four symmetric products the block is the only one with a hyperplane of projectors, and that is the row it proves in the comparison table of *The Specificities of the General Plain Algebra*.
+The symmetric quaternionic product satisfies the **scalar law** — it is commutative and its values lie in the centre, equivalently $\tilde P\bullet\tilde Q=N(\tilde P,\tilde Q)e_0$ for a symmetric bilinear form — and it is the only one of the twelve operations that does: the two other symmetrisations that survive one clause each fail the other (the symmetric plain product is commutative and not central, the symmetric plain sesquilinear product central and not commutative), and the four general products and the four antisymmetrisations fail both. Its left multiplication is the rank-one operator $L_{\tilde X}\tilde Y=N(\tilde X,\tilde Y)e_0$, faithful in $\tilde X$ because the form is non-degenerate, and the single identity $L_{\tilde X}^{2}=X_0L_{\tilde X}$ classifies everything: the operator is a projector exactly when $\tilde X=0$ or $X_0=1$, and square-zero exactly when $X_0=0$; the operator reading $L_{\tilde X}L_{\tilde Z}=X_0L_{\tilde Z}$ likewise fails for the other eleven, for the six sesquilinear ones by the parity obstruction and for the rest on explicit witnesses. The projectors are the affine hyperplane $X_0=1$ together with the zero operator, a family of complex dimension three of pairwise distinct rank-one projections onto the central line, indexed by the hyperplane and not by the idempotents of the algebra, which are $0$ and $e_0$ alone; even the element $e_0$ gives the projection onto the central line and not the identity, since the algebra has no unit. The square-zero operators are the vector subspace $X_0=0$, which is not the isotropic cone of the square-zero elements, the two coinciding only on the intersection. Among the four symmetric products the block is the only one with a hyperplane of projectors, and the law that isolates it among the twelve is the scalar law of §*The Isolation among the Twelve*.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\bullet$, $\star$ | the symmetric quaternionic product $\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)=N(\tilde P,\tilde Q)e_0$ |
-| $\circ$ | the generic operation of another structure of the catalogue, in the comparison tables |
+| $\circ$ | the generic operation of another structure of the catalogue, in §*The Isolation among the Twelve* |
 | scalar law | commutative with central values: $\tilde X\circ\tilde Y=\beta(\tilde X,\tilde Y)e_0$, $\beta$ symmetric |
 | $X_0$, $\mathbf X$ | the scalar coordinate and the vector part of $\tilde X=X_0+\mathbf X$ |
 | $\mathrm{Sc}(\tilde X)=X_0$ | the scalar coordinate, read as a functional |
@@ -240,7 +185,7 @@ The symmetric quaternionic product satisfies the **scalar law** — it is commut
 
 ## Further Reading
 
-- *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra.md`), for the criterion that classifies the twelve structures and for the row this article proves.
+- *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra.md`), for the criterion of the plain product, the model of the family.
 - *The Specificities of the General Quaternionic Algebra* (`articles_maths/the-specificities-of-the-general-quaternionic-algebra.md`), for the companion family of projectors in the general quaternionic product.
 - *Introduction to the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the governing formula $\tilde P\bullet\tilde Q=N(\tilde P,\tilde Q)e_0$ and for the absence of a unit.
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the trivial radical, the idempotents $0$ and $e_0$, and the isotropic cone of the square-zero elements.

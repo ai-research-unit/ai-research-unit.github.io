@@ -217,7 +217,7 @@ Krein form $K(\tilde Q,\tilde Q)=|Q_0|^2-\sum_k|Q_k|^2$. On $e_0+e_1$ it vanishe
 $K(e_0+e_1,e_0+e_1)=1-1=0$, while the element is regular, since $c(e_0+e_1)=1+1=2\neq0$; and on $e_1$ it
 does not vanish, $K(e_1,e_1)=-1$, while $e_1$ is a zero divisor. So neither implication
 $K(\tilde Q,\tilde Q)=0\Rightarrow$ zero divisor nor its converse holds, in contrast with the plain product
-where the vanishing of the norm is the criterion. The form $K$ and its isotropic cone are
+where the vanishing of the central square is the criterion. The form $K$ and its isotropic cone are
 *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*.
 
 ## Worked Examples

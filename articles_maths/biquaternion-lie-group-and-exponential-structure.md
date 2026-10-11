@@ -72,7 +72,7 @@ $$
 
 In particular $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ contains $\mathfrak{u}(3)$ and hence $\mathfrak{su}(3)$, with its eight generators written as $3\times3$ matrices of biquaternions. This realises the ceiling's answer: the octet is not in $\mathbb{B}$, and it *is* in $M_3(\mathbb{B})$, for the price of enlarging the carrier by the factor $2$ in each matrix direction. Since $\mathbb{B}\hookrightarrow M_3(\mathbb{B})$ by the scalar matrices, the chain is $\mathfrak{su}(2)=\mathfrak{k}\subset\mathfrak{su}(3)\subset\mathfrak{u}(3)\subset M_3(\mathbb{B})$.
 
-The closed forms use the Conway operator calculus of *The Enveloping Algebra of the General Plain Algebra and the Bi-module Structure*, §*The Conway Operator Basis*: $a[\,]b$ is the linear function $\tilde{Q}\mapsto a\tilde{Q}b$, $\odot$ is composition, $D\{d_1,d_2,d_3\}=\frac12\sum_kd_ke_k[\,]e_k$, and for a unit vector $\mathbf b$ each of the generators $b[\,]b$ and $e_k[\,]e_k$ has square the identity, $(b[\,]b)^2=(e_k[\,]e_k)^2=[\,]$, so their exponentials are trigonometric.
+The closed forms use the Conway operator calculus of *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, §*The Conway Operator Basis*: $a[\,]b$ is the linear function $\tilde{Q}\mapsto a\tilde{Q}b$, $\odot$ is composition, $D\{d_1,d_2,d_3\}=\frac12\sum_kd_ke_k[\,]e_k$, and for a unit vector $\mathbf b$ each of the generators $b[\,]b$ and $e_k[\,]e_k$ has square the identity, $(b[\,]b)^2=(e_k[\,]e_k)^2=[\,]$, so their exponentials are trigonometric.
 
 **Proposition (the three exponentials).** $\mathrm{EXP}$ denoting the exponential series of a linear function, for real $\alpha$, $\beta$ and $\delta_k$,
 
@@ -187,4 +187,4 @@ The larger unitary groups are reached by enlarging the carrier and not the algeb
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations: An Elementary Introduction* (Springer, 2nd ed. 2015).
 - John Stillwell, *Naive Lie Theory* (Springer, 2008).
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997).
-- Companion articles: *The Enveloping Algebra of the General Plain Algebra and the Bi-module Structure* (the Conway operator basis) and *Association and the Transpose on the General Plain Algebra* (function association); *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* (the ceiling the enlarged carrier answers); *The Gluon: An Octet Outside the Biquaternion Algebra*.
+- Companion articles: *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure* (the Conway operator basis) and *Association and the Transpose on the General Plain Algebra* (function association); *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* (the ceiling the enlarged carrier answers); *The Gluon: An Octet Outside the Biquaternion Algebra*.

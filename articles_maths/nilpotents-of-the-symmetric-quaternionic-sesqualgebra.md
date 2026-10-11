@@ -91,7 +91,7 @@ display: it reads $-P_0^2\overline{\mathbf P}+\bigl(\sigma-|P_0|^2\bigr)\mathbf 
 $P_0^2\overline{\mathbf P}=\bigl(\sigma-|P_0|^2\bigr)\mathbf P=-\lVert\mathbf P\rVert^2\mathbf P$,
 the last step because $\sigma=K(\tilde P,\tilde P)=|P_0|^2-\lVert\mathbf P\rVert^2$. If $\mathbf P=\mathbf 0$
 then $\tilde P=P_0e_0$ is central, the first display reads $P_0|P_0|^2=0$, and $P_0\neq0$ is a
-contradiction. If $\mathbf P\neq\mathbf 0$, take the Hermitian norm of both sides of
+contradiction. If $\mathbf P\neq\mathbf 0$, take the squared modulus of both sides of
 $P_0^2\overline{\mathbf P}=-\lVert\mathbf P\rVert^2\mathbf P$: it gives
 $|P_0|^4\lVert\mathbf P\rVert^2=\lVert\mathbf P\rVert^6$, hence $|P_0|^2=\lVert\mathbf P\rVert^2$, so
 $\sigma=0$ and, from the second display, $P_0\mathbf V=-\sigma\mathbf P=\mathbf 0$, that is

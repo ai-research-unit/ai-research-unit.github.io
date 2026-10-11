@@ -363,7 +363,7 @@ $$
 r(\psi)\,B(\psi) = e^{-\psi/2}\left(\cosh\tfrac{\psi}{2}\,e_0 - i\sinh\tfrac{\psi}{2}\,e_3\right) \longrightarrow \tfrac12\left(e_0 - ie_3\right), \qquad \psi \to \infty,
 $$
 
-verified at $\psi = 20, 40, 80$, the difference from the limit being exactly $\tfrac12e^{-\psi}$ in each of the two non-zero coefficients. The limit is the minimal idempotent $\tfrac12(e_0 + \xi i)$ with $\xi = -e_3$, the object classified in the companion article on biquaternion zero divisors: Hermitian, of norm zero, and idempotent. The word at the boundary therefore keeps a real scale and a trigonometric factor and fills the hyperbolic slot with a Hermitian idempotent of norm zero, one factor short of the four. Sangwine & Hitzer exhibit the same degeneration on a divisor of zero,
+verified at $\psi = 20, 40, 80$, the difference from the limit being exactly $\tfrac12e^{-\psi}$ in each of the two non-zero coefficients. The limit is the minimal idempotent $\tfrac12(e_0 + \tilde\Xi i)$ with $\tilde\Xi = -e_3$, the object classified in the companion article on biquaternion zero divisors: Hermitian, of norm zero, and idempotent. The word at the boundary therefore keeps a real scale and a trigonometric factor and fills the hyperbolic slot with a Hermitian idempotent of norm zero, one factor short of the four. Sangwine & Hitzer exhibit the same degeneration on a divisor of zero,
 
 $$
 \tilde P = \tfrac12\left(e_0 + e_1 + ie_2 - ie_3\right) = \sqrt2\cdot\frac{e_0+e_1}{\sqrt2}\cdot\tfrac12\left(e_0 - ie_3\right),
@@ -564,10 +564,10 @@ One application is a use of a polar form the corpus does not otherwise have. The
 
 The relation of the present representation to the Hamilton, complex and Cartan representations is the following, stated here and proved in the companion article *Biquaternion Partial Polar Element Representations*.
 
-The **Hamilton form** writes $\tilde{Q} = R\exp(\xi\Theta)$ with $R$ a complex scalar and $\xi$ a non-central root of $-1$ parallel to the vector part; in the present notation its two factors are
+The **Hamilton form** writes $\tilde{Q} = R\exp(\tilde\Xi\Theta)$ with $R$ a complex scalar and $\tilde\Xi$ a non-central root of $-1$ parallel to the vector part; in the present notation its two factors are
 
 $$
-R = r\,e^{i\alpha}, \qquad \exp(\xi\Theta) = B\,\hat{q} ,
+R = r\,e^{i\alpha}, \qquad \exp(\tilde\Xi\Theta) = B\,\hat{q} ,
 $$
 
 so that it groups the first two of the four factors into the modulus $R$ and the last two into the exponential. It is available whenever the vector part is non-null, which is a stronger condition than $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.

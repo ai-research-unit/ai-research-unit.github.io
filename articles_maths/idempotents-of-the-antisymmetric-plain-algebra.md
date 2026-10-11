@@ -20,7 +20,7 @@ trivial idempotent of every product; it has **no nontrivial idempotent**, hence 
 family, no primitive idempotent and no projection, and no Peirce decomposition. The unit $e_0$ of
 the ambient algebra is not an idempotent of the block, the block being a bracket and not a
 product. The comparison with the parent product is the comparison of the origin alone with the
-idempotent family $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$, a set of real dimension four,
+idempotent family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, a set of real dimension four,
 and the two companion articles that the vanishing square
 makes equal are *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain
 Algebra* and *Nilpotents of the Antisymmetric Plain Algebra*, which are cited.
@@ -101,9 +101,9 @@ These constructions belong to the plain product and to its blocks.
 ## The Comparison with the Parent Product
 
 **Remark (the parent idempotents).** The parent general plain bilinear product is associative and
-unital, and its idempotents are the elements $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$,
+unital, and its idempotents are the elements $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$,
 a set of real dimension four that contains the trivial pair, the images of the degenerate roots
-$\xi=\pm i$; the family carries the left ideals, the direct sum decompositions and the Peirce
+$\tilde\Xi=\pm i$; the family carries the left ideals, the direct sum decompositions and the Peirce
 decomposition (*Idempotents of the General Plain Algebra*). The block is the antisymmetric half of
 that product, and the comparison is the comparison of a one-point set with a family: the block
 keeps the trivial idempotent and loses every other, and it loses with them the entire idempotent
@@ -122,7 +122,7 @@ unit $e_0$ of the ambient algebra is not an idempotent of the block, the block b
 orthogonal family, no primitive idempotent, no projection and no Peirce decomposition exists, and
 the only projector the block carries is the zero operator, from the origin. The comparison with
 the parent product is the comparison of the origin alone with the family
-$\tfrac12(e_0+\xi i)$ over the roots of $-1$, and the idempotent calculus — the left ideals, the
+$\tfrac12(e_0+\tilde\Xi i)$ over the roots of $-1$, and the idempotent calculus — the left ideals, the
 direct sum decompositions, the Peirce decomposition — belongs to the parent and not to the block.
 
 ## Summary of Notation
@@ -133,7 +133,7 @@ direct sum decompositions, the Peirce decomposition — belongs to the parent an
 | $\tilde\Pi\wedge\tilde\Pi=\tilde\Pi$ | the idempotent equation, equivalent to $0=\tilde\Pi$ |
 | $\{0\}$ | the idempotent set of the block, the trivial idempotent alone |
 | $L_{\tilde\Pi}$ | the left multiplication operator of an idempotent, the zero operator at the origin |
-| $\tfrac12(e_0+\xi i)$ | the idempotents of the parent product, over the roots $\xi$ of $-1$, absent from the block |
+| $\tfrac12(e_0+\tilde\Xi i)$ | the idempotents of the parent product, over the roots $\tilde\Xi$ of $-1$, absent from the block |
 
 ## Further Reading
 

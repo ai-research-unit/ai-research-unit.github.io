@@ -151,8 +151,8 @@ $c=\tfrac14+\lVert\boldsymbol\mu\rVert^2=\tfrac14+\tfrac34=1$, and $c(e_0)=1$. S
 has $Q_0\neq0$ (its scalar part is $1$ or $-\tfrac12$) and $c=1\neq0$, it is regular by the criterion of
 *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*.
 
-So no nonzero idempotent of the block is a zero divisor, and every one lies on the norm-one slice of the
-plain norm $N=\tilde Q\tilde Q^{\natural}$; the comparison with the plain product, where the nontrivial
+So no nonzero idempotent of the block is a zero divisor, and every one lies on the slice $c=1$ of the
+central square $c=\tilde Q\tilde Q^{\natural}$; the comparison with the plain product, where the nontrivial
 idempotents are zero divisors, is the subject of §*The Idempotents and the Other Classes*.
 
 **Theorem (the fixed-point reading).** The idempotent set is the fixed set of the quadratic map
@@ -203,9 +203,9 @@ The three named classes of the block meet in a way opposite to the plain product
 The last row is proved in *Nilpotents of the Symmetric Quaternionic Sesqualgebra*: an element cannot have
 both $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ and $\tilde\Upsilon\star\tilde\Upsilon=0$ unless it is $0$. The
 contrast with the plain product is exact. There the nontrivial idempotents are
-$\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$, their central square is $0$, and they are zero divisors;
+$\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, their central square is $0$, and they are zero divisors;
 here the nontrivial idempotents have central square $1$ and are regular. The reason is the shape of the
-diagonal: the plain square of $\tfrac12(e_0+\xi i)$ is the element itself with central square $0$, while
+diagonal: the plain square of $\tfrac12(e_0+\tilde\Xi i)$ is the element itself with central square $0$, while
 the block's diagonal carries the Krein form in its scalar part, and the equation
 $K(\tilde\Pi,\tilde\Pi)=\alpha$ forces the scalar coordinate $-\tfrac12$ rather than leaving it free.
 
@@ -220,7 +220,7 @@ $\tilde\Pi=-\tfrac12e_0+\tfrac12e_1+\tfrac12e_2+\tfrac12e_3$ satisfies
 $\tilde\Pi\star\tilde\Pi=\tilde\Pi$, as the classification states.
 
 **An element of the sphere that is not the previous one.** $\boldsymbol\mu=\tfrac{\sqrt3}{2}e_1$:
-$\tilde\Pi=-\tfrac12e_0+\tfrac{\sqrt3}{2}e_1$ is an idempotent, and it is a real quaternion of norm one; it is
+$\tilde\Pi=-\tfrac12e_0+\tfrac{\sqrt3}{2}e_1$ is an idempotent, and it is a real quaternion of modulus one; it is
 regular, so it annihilates nothing.
 
 **The origin.** $\tilde\Pi=0$: $0\star0=0$, the trivial idempotent.
@@ -236,7 +236,7 @@ $$
 
 the origin and the unit candidate isolated and the rest a two-sphere of radius $\tfrac{\sqrt3}{2}$ in the
 real quaternion subspace. Every nonzero idempotent has central square $1$, so every one is regular and none
-is a zero divisor; every nonzero idempotent lies on the norm-one slice of the plain norm. The idempotents of
+is a zero divisor; every nonzero idempotent lies on the slice $c=1$ of the central square. The idempotents of
 the block differ from those of the plain product: the plain nontrivial idempotents have vanishing central
 square and are zero divisors, while the block's have central square $1$ and are regular, the difference
 being the shape of the diagonal, whose scalar part is the Krein form. The two named classes of the block,
@@ -257,7 +257,7 @@ an orthogonal idempotent family nor a Peirce decomposition.
 ## Further Reading
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Idempotent, the Projection and the Peirce Decomposition*, for the definition relative to a general product and for the idempotent sets of the four general products.
-- *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the plain idempotents $\tfrac12(e_0+\xi i)$ and their relation to the roots of $-1$.
+- *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the plain idempotents $\tfrac12(e_0+\tilde\Xi i)$ and their relation to the roots of $-1$.
 - *Zero Divisors of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md`), for the criterion that makes every nonzero idempotent regular.
 - *Nilpotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/nilpotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the class disjoint from the idempotents.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product and its diagonal.

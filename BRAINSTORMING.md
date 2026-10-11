@@ -14,7 +14,12 @@ The algebra case has no antisymmetric diagonal, the sesqualgebra case has one an
 
 
 
+The Pin and Spin Groups of the General Plain Algebra of Biquaternions
+
+
+
 M₋ and M₊ are phase-free; every pairing there is symmetric.
+
 
 
 
@@ -6986,135 +6991,3 @@ Note: the ASCII approximation above loses the LaTeX glyphs. The symbols stand fo
 
 
 
-
-
-
-TECHNICAL SUMMARY: IDEMPOTENTS, PEIRCE DECOMPOSITIONS, AND BASE CHANGES
-IN THE BIQUATERNION ALGEBRA B = C ⊗_R H ≅ M_2(C)
-
-1. SETUP
-   B is a simple central C-algebra, 4-dimensional over C, 8-dimensional over R.
-   A general element is Q~ = Q0 e0 + Q1 e1 + Q2 e2 + Q3 e3, with Qμ ∈ C.
-   B is isomorphic to M_2(C) via the matrix element representation.
-
-2. IDEMPOTENTS
-   An idempotent is e ∈ B with e² = e.
-   Two idempotents e, f are orthogonal if ef = fe = 0.
-   e is primitive if it is not a sum of two nonzero orthogonal idempotents.
-
-   In B ≅ M_2(C):
-      - The nontrivial idempotents (e ≠ 0, 1) are exactly the primitive ones.
-      - Each is a rank-one projector.
-      - A primitive idempotent e is determined by:
-           its image line L ⊂ C²,
-           its kernel line K ⊂ C²,
-           with L ⊕ K = C².
-        Equivalently, by an ordered pair of distinct lines (L, K) in P¹(C).
-      - Parametrization: P¹(C) × P¹(C) \ Δ, where Δ is the diagonal.
-      - Real dimension: dim_R(P¹(C)) = 2, so the idempotent manifold has real dimension 4.
-      - Cardinality: uncountably infinite.
-
-   Standard pair:
-      Π~1 = (e0 + i e3)/2,   Π~2 = (e0 - i e3)/2.
-      Π~1² = Π~1, Π~2² = Π~2, Π~1 Π~2 = Π~2 Π~1 = 0, Π~1 + Π~2 = e0.
-
-3. PEIRCE DECOMPOSITION FROM ONE IDEMPOTENT
-   Choose one nontrivial idempotent e ∈ B.
-   Set f = e0 - e. Then f is the complementary primitive idempotent:
-      f² = f,   ef = fe = 0,   e + f = e0.
-
-   The Peirce decomposition relative to (e, f) is forced:
-      B = eBe ⊕ eBf ⊕ fBe ⊕ fBf.
-
-   In B ≅ M_2(C), each corner is one-dimensional over C:
-      eBe = C e,
-      fBf = C f,
-      eBf = C u,    u ≠ 0,
-      fBe = C v,    v ≠ 0.
-
-   The mixed corners are square-zero:
-      (eBf)² = 0,   (fBe)² = 0.
-   Hence every element of eBf or fBe is nilpotent.
-
-4. OFF-DIAGONAL NILPOTENTS AND MATRIX UNITS
-   The mixed spaces are determined by e, but their basis vectors are not unique.
-   Choose nonzero u ∈ eBf, v ∈ fBe such that
-      u v = λ e,   λ ∈ C^×.
-   Then a system of 2×2 matrix units is obtained by
-      E11 = e,   E22 = f,
-      E12 = u,   E21 = λ^{-1} v.
-   Then
-      Eij Ekl = δ_jk Eil,
-      E11 + E22 = e0,
-      E12² = E21² = 0.
-
-   Scaling freedom:
-      If u v = e, then for any μ ∈ C^×,
-         E12 = μ u,   E21 = μ^{-1} v
-      is another valid off-diagonal basis.
-      Equivalently, the freedom is C^× acting reciprocally on the two mixed lines.
-
-5. INFINITY OF DECOMPOSITIONS
-   Since there are uncountably many primitive idempotents e ∈ B,
-   there are uncountably many Peirce decompositions
-      B = eBe ⊕ eBf ⊕ fBe ⊕ fBf.
-   After fixing e, there is still a C^×-worth of choices for the off-diagonal
-   nilpotent basis.
-
-6. BASE CHANGES / INNER AUTOMORPHISMS
-   The unit group B^× acts by inner automorphisms:
-      X ↦ G X G^{-1},   G ∈ B^×.
-   For any primitive idempotent e, there exists G ∈ B^× such that
-      e = G Π~1 G^{-1},   f = G Π~2 G^{-1}.
-   Then the whole Peirce decomposition is conjugate to the standard one:
-      eBe = G (Π~1 B Π~1) G^{-1},
-      eBf = G (Π~1 B Π~2) G^{-1},
-      fBe = G (Π~2 B Π~1) G^{-1},
-      fBf = G (Π~2 B Π~2) G^{-1}.
-
-   Therefore:
-      - All Peirce decompositions with two primitive idempotents are inner-conjugate.
-      - The algebra has one block structure, namely the 2×2 matrix block structure.
-      - Different idempotents give different coordinate realizations of the same structure.
-
-   Stabilizer of the standard pair:
-      G = a Π~1 + b Π~2,   a, b ∈ C^×.
-      It fixes Π~1 and Π~2 and scales the mixed elements:
-         Υ~1 ↦ (a/b) Υ~1,   Υ~2 ↦ (b/a) Υ~2.
-      This is exactly the reciprocal C^× scaling freedom of the off-diagonal basis.
-
-7. BASE FIELD: C VERSUS R
-   Over C:
-      B is simple, central simple, centre = C.
-      Two-sided ideals: 0 and B only.
-      Left ideals: 0, minimal left ideals parametrized by P¹(C), and B.
-      Jacobson radical: 0.
-      Length as left module over itself: 2.
-
-   Over R:
-      The same set B is an 8-dimensional simple R-algebra.
-      The ideal lattice is unchanged: an R-left ideal is automatically a C-left ideal.
-      But B is not central over R: its centre is C, not R.
-      Complexification:
-         B ⊗_R C ≅ B ⊕ B,
-      which is not simple. Thus B is not absolutely simple over R.
-      Complex conjugation σ is an R-algebra automorphism (C-antilinear).
-      It swaps the standard idempotents:
-         σ(Π~1) = Π~2,   σ(Π~2) = Π~1.
-      It swaps the mixed spaces:
-         σ(C Υ~1) = C Υ~2,   σ(C Υ~2) = C Υ~1.
-      No minimal left ideal is stable under σ; σ preserves the real projective line
-      P¹(R) ⊂ P¹(C) as a subfamily.
-
-8. SUMMARY
-   - One primitive idempotent e determines the complementary idempotent f = e0 - e.
-   - The Peirce decomposition B = eBe ⊕ eBf ⊕ fBe ⊕ fBf is then forced.
-   - In B ≅ M_2(C), each corner is one-dimensional over C.
-   - The mixed corners consist of nilpotents and are determined only up to basis choice.
-   - After fixing e, the off-diagonal basis has a C^× scaling freedom.
-   - There are uncountably many primitive idempotents, hence uncountably many decompositions.
-   - Modulo inner automorphisms, all these decompositions are conjugate.
-   - The algebra has a single 2×2 block structure; the infinity of decompositions
-     is the infinity of bases in which that structure can be seen.
-   - Base field extension from R to C splits the algebra: B ⊗_R C ≅ B ⊕ B,
-     while the ideal lattice of B itself remains unchanged.

@@ -262,7 +262,7 @@ Thus the pair $\{i,-i\}$ is rigidly derived from the algebra, while each of the 
 
 **The sign is presentational.** The two choices are exchanged by the real structure itself: $\bar{\cdot}(i)=-i$. Since $\bar{\cdot}$ is an automorphism of the base, no structure distinguishes $i$ from $-i$, and the framework may fix the sign by convention. It never needs to.
 
-**The non-central roots do not play $i$'s role.** The equation $\xi^2=-e_0$ has, besides $\pm i$, a four-real-dimensional family of non-central solutions, of which $e_k$ is the simplest ($e_k^2=-e_0$). These are derived as well (they solve an equation with coefficients in the base), but they are not central, so they do not define the complex scalar structure of $\mathbb{B}$ and cannot replace $i$ in the complex-polar form. Their existence is a genuine feature of the algebra and is why two polar forms exist; it is not evidence that $i$ is fundamental.
+**The non-central roots do not play $i$'s role.** The equation $\tilde{\Xi}^2=-e_0$ has, besides $\pm i$, a four-real-dimensional family of non-central solutions, of which $e_k$ is the simplest ($e_k^2=-e_0$). These are derived as well (they solve an equation with coefficients in the base), but they are not central, so they do not define the complex scalar structure of $\mathbb{B}$ and cannot replace $i$ in the complex-polar form. Their existence is a genuine feature of the algebra and is why two polar forms exist; it is not evidence that $i$ is fundamental.
 
 **Verdict.** Relative to the framework's base — the complexified algebra $\mathbb{B}$ together with its real structure — the scalar imaginary is **derived**, up to the presentational sign. It is not an independent fundamental element. It is the certificate of the complexification: the posit is "adjoin a central square root of $-1$," and once that is done the square roots are the derived objects. The only honest qualification is that this is base-relative: if one insisted on a base of $\mathbb{H}$ alone, the complexification could not be derived and $i$ would be counted fundamental. The framework does not use that base, and this article does not either.
 
@@ -272,18 +272,18 @@ Thus the pair $\{i,-i\}$ is rigidly derived from the algebra, while each of the 
 
 The polar representations are the last family of objects whose status is settled here, and the verdict is that they introduce no new fundamental data.
 
-**The inputs are already available.** The exponential $\exp(\tilde Q)=\sum_{n\ge0}\tilde Q^n/n!$ converges for every biquaternion because $\mathbb{B}$ is finite-dimensional, so it is rigged from the multiplication. The roots of $-1$ used by the polar forms are the solutions of $\xi^2=-e_0$; the central ones are $\pm i$ (previous section) and the non-central ones are the real and non-trivial roots classified in the companion article. Both inputs are derived.
+**The inputs are already available.** The exponential $\exp(\tilde Q)=\sum_{n\ge0}\tilde Q^n/n!$ converges for every biquaternion because $\mathbb{B}$ is finite-dimensional, so it is rigged from the multiplication. The roots of $-1$ used by the polar forms are the solutions of $\tilde{\Xi}^2=-e_0$; the central ones are $\pm i$ (previous section) and the non-central ones are the real and non-trivial roots classified in the companion article. Both inputs are derived.
 
 **The Hamilton polar form.** For a biquaternion whose vector part has non-vanishing general plain bilinear square $(\mathbf Q,\mathbf Q)=B^2\ne0$, put
 
 $$
-R=\sqrt{N(\tilde Q)},\qquad \xi=\mathbf Q/B,\qquad \cos\Theta=Q_0/R,\qquad \sin\Theta=B/R,
+R=\sqrt{N(\tilde Q)},\qquad \tilde{\Xi}=\mathbf Q/B,\qquad \cos\Theta=Q_0/R,\qquad \sin\Theta=B/R,
 $$
 
-so that $\tilde Q=R\exp(\xi\Theta)$. The construction is a sequence of operations available in the base: the biquaternion norm from the multiplication and ${}^{\natural}$, the square root and the angle functions from the exponential, and the normalization of the axis from the division by $B$. That it reconstructs $\tilde Q$ is a computation,
+so that $\tilde Q=R\exp(\tilde{\Xi}\Theta)$. The construction is a sequence of operations available in the base: the biquaternion norm from the multiplication and ${}^{\natural}$, the square root and the angle functions from the exponential, and the normalization of the axis from the division by $B$. That it reconstructs $\tilde Q$ is a computation,
 
 $$
-R(\cos\Theta+\xi\sin\Theta)=R\cdot\frac{Q_0}{R}+R\cdot\frac{\mathbf Q}{B}\cdot\frac{B}{R}=Q_0+\mathbf Q=\tilde Q,
+R(\cos\Theta+\tilde{\Xi}\sin\Theta)=R\cdot\frac{Q_0}{R}+R\cdot\frac{\mathbf Q}{B}\cdot\frac{B}{R}=Q_0+\mathbf Q=\tilde Q,
 $$
 
 which also shows that the construction is not merely formal. The domain condition $B\ne0$ and the uniqueness up to the correlated sign $(R,\Theta)\mapsto(-R,\Theta+\pi)$ are properties of the construction, hence derived.

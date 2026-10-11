@@ -108,7 +108,7 @@ Relative to the symmetric quaternionic product, an element is a zero divisor exa
 |---|---|
 | $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ | the symmetric quaternionic multiplication |
 | $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | the form of the block |
-| $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$ | the diagonal of the form, the norm of the parent |
+| $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$ | the diagonal of the form, the algebraic norm of the block |
 | $\mathcal{Z}_{\star}=\mathbb{B}\setminus\{0\}$ | the zero-divisor set of the block |
 | $\operatorname{Ann}(\tilde Q)=\tilde Q^{\perp}$ | the two-sided annihilator of a nonzero element, a hyperplane |
 | $N=0$, $N\neq0$ | the isotropic family, the non-isotropic family |

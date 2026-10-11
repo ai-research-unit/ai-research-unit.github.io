@@ -160,99 +160,27 @@ the centre $\mathbb{C}_{\mathbb{B}}$ (*The Lie Algebra of the Antisymmetric Plai
 (*The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*,
 §*The Inner Derivations*).
 
-## The Eleven Failures
+## The Isolation among the Twelve
 
-The twelve structures are generated from the four general products by three independent operations
-— the twist of the first slot, the twist of the second slot, and the (anti)symmetrisation — and this
-is why the antisymmetric plain product stands alone. Each subsection below exhibits a triple
-$\tilde X,\tilde Y,\tilde Z$ at which the Leibniz defect
+One law separates the block from the other eleven. The block's product is **alternating** and satisfies the **Jacobi identity**; an alternating product with the Jacobi identity is a **Lie product**, and the block is the only Lie product of the twelve.
 
-$$
-\Lambda=L^{\star}_{\tilde X}(\tilde Y\star\tilde Z)-(L^{\star}_{\tilde X}\tilde Y)\star\tilde Z-\tilde Y\star(L^{\star}_{\tilde X}\tilde Z)
-$$
+**Theorem (the isolation).** Of the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the antisymmetric plain product is the only one all of whose left multiplications are derivations, equivalently the only **Lie product**.
 
-is nonzero; the values are those of the verification, on the units and on general complex elements.
+*Proof.* The twelve are generated from the four general products by twisting a slot with a conjugation or by (anti)symmetrising, and the three operations decide the two clauses. The ten non-alternating structures fail the Leibniz identity directly, because the criterion of the alternating case is unavailable to them; the one other alternating structure, the antisymmetric quaternionic product, is alternating and fails the Jacobi identity, so by §*The Criterion* it fails the Leibniz identity too. The block is alternating by construction and satisfies the Jacobi identity, so it alone meets both clauses.
 
-### The Four General Products
-
-**Proposition.** None of the four general products satisfies the Leibniz identity. The defect at
-the triple $(e_1,e_1,e_1)$ is $e_1$ for the plain product, $-e_1$ for the general quaternionic
-product, $e_1$ for the general plain sesquilinear product and $-e_1$ for the general quaternionic
-sesquilinear product.
-
-*Proof.* The four products are read on the units from their coordinate forms
-(*The Four General Products of the Biquaternion $\mathbb{C}$ Space*); the defect
-$e_1\star(e_1\star e_1)-(e_1\star e_1)\star e_1-e_1\star(e_1\star e_1)$ is evaluated there. The
-failure is structural: the four products are not alternating, $e_1\star e_1=\pm e_0\neq0$, so the
-criterion of §*The Criterion* does not apply to them and the identity is a genuine condition, which
-they fail.
-
-### The Four Symmetric Parts
-
-**Proposition.** None of the four symmetric parts satisfies the Leibniz identity. The defect is
-$e_1$ for the symmetric plain product at $(e_1,e_1,e_1)$, $e_0$ for the symmetric quaternionic
-product at $(e_0,e_1,e_1)$, $e_0$ for the symmetric plain sesquilinear product at $(e_0,e_1,e_1)$,
-and $-e_1$ for the symmetric quaternionic sesquilinear product at $(e_1,e_1,e_1)$.
-
-*Proof.* The symmetric parts are bilinear or sesquilinear symmetrisations of the general products
-(*The Symmetric and Antisymmetric Parts of an Algebra Product* and *The Symmetric and Antisymmetric
-Parts of a Sesqualgebra Product*); the defects are computed on the units. The four are not
-alternating, so the criterion does not reduce the identity to the Jacobi identity for them, and the
-identity fails directly.
-
-### The Three Remaining Antisymmetric Parts
-
-**Proposition.** None of the three remaining antisymmetric parts satisfies the Leibniz identity. The
-defect is $e_3$ for the antisymmetric quaternionic product at $(e_0,e_1,e_2)$, $-e_3$ for the
-antisymmetric plain sesquilinear product at $(e_0,e_1,e_2)$, and $2ie_2$ for the antisymmetric
-quaternionic sesquilinear product at $(e_1,e_2,ie_1)$.
-
-*Proof.* The antisymmetric quaternionic product is alternating, so by the criterion its Leibniz
-defect equals the negative of its cyclic sum, and its cyclic sum is nonzero at $(e_0,e_1,e_2)$,
-where it equals $-e_3$; the defect is therefore $e_3$. The antisymmetric plain sesquilinear product
-is not alternating, and its defect at $(e_0,e_1,e_2)$ is $-e_3$; the antisymmetric quaternionic
-sesquilinear product is not alternating either, and its defect at $(e_1,e_2,ie_1)$ is $2ie_2$. The
-three failures are the three non-plain antisymmetric parts of the catalogue, and each is the
-subject of its own article.
-
-## The Verdicts
-
-The twelve structures are compared below. The second column is the alternation, read over the
-complex coefficients; the third the Jacobi identity; the fourth the Leibniz identity, which for an
-alternating product is equivalent to the third by §*The Criterion*; and the fifth the witness of
-the Leibniz failure, omitted for the block, which is the criterion.
-
-| structure | alternating | Jacobi | Leibniz identity | witness of the Leibniz failure |
+| family | structures | alternating | Jacobi | Leibniz identity |
 |---|---|---|---|---|
-| GPA | no | no | no | $(e_1,e_1,e_1)\mapsto e_1$ |
-| SPA | no | no | no | $(e_1,e_1,e_1)\mapsto e_1$ |
-| APA | **yes** | **yes** | **yes** | — (the criterion) |
-| GQA | no | no | no | $(e_1,e_1,e_1)\mapsto -e_1$ |
-| SQA | no | no | no | $(e_0,e_1,e_1)\mapsto e_0$ |
-| AQA | yes | no | no | $(e_0,e_1,e_2)\mapsto e_3$ |
-| GPS | no | no | no | $(e_1,e_1,e_1)\mapsto e_1$ |
-| SPS | no | no | no | $(e_0,e_1,e_1)\mapsto e_0$ |
-| APS | no | no | no | $(e_0,e_1,e_2)\mapsto -e_3$ |
-| GQS | no | no | no | $(e_1,e_1,e_1)\mapsto -e_1$ |
-| SQS | no | no | no | $(e_1,e_1,e_1)\mapsto -e_1$ |
-| AQS | no | no | no | $(e_1,e_2,ie_1)\mapsto 2ie_2$ |
+| the plain product and its symmetrisation | GPA, SPA | no | — | fails by non-alternation |
+| the antisymmetric plain product | APA | **yes** | **yes** | **yes**, the criterion |
+| the quaternionic product and its symmetrisation | GQA, SQA | no | — | fails by non-alternation |
+| the antisymmetric quaternionic product | AQA | yes | no | fails by the Jacobi defect at $(e_0,e_1,e_2)$ |
+| the six sesquilinear structures | GPS, SPS, APS, GQS, SQS, AQS | no | — | fails by non-alternation |
 
-The table records theorems and not coincidences. **The block is the only structure whose every left
-multiplication is a derivation**, and it is at once the only alternating structure that satisfies
-the Jacobi identity and, therefore, the only Lie product among the twelve. The one other alternating
-structure, $\mathrm{AQA}$, fails the criterion through its Jacobi failure, with the witness
-$(e_0,e_1,e_2)$ of the catalogue; the ten non-alternating structures fail it directly. Single
-elements of the other structures do give derivations — the zero element gives the zero operator in
-all twelve, and every commutator is a derivation for the associative general plain product — and
-none of those examples carries a theory, because a theory needs the law at every element and not a
-case of it.
+The isolation is about the **law** and not about isolated elements, and the distinction is the boundary of the claim. Single elements of the other structures do give derivations — the zero element gives the zero operator in all twelve, and in the associative general plain product the commutator $\mathrm{ad}_{\tilde X}=L_{\tilde X}-R_{\tilde X}$ is a derivation for every element — but no other structure carries the law, and the theory needs the law at every element and not a case of it. The article therefore refuses the false strengthening "no other structure has a derivation" and states the true one: only here is every left multiplication a derivation.
 
 ## What the Criterion Delivers
 
-Only for the antisymmetric plain product does the criterion hold at every element, and the whole
-Lie theory of the block is its consequence. Alternation is shared with $\mathrm{AQA}$, and it is the
-criterion — the Jacobi identity, equivalently the Leibniz identity — that separates the block from
-$\mathrm{AQA}$ and from the ten others.
+The whole Lie theory of the block is a consequence of the criterion. Alternation is the law that makes the square of every element vanish, and it is shared with the antisymmetric quaternionic product; it is the criterion — the Jacobi identity, equivalently the Leibniz identity — that is the block's own and that makes the bracket a Lie bracket.
 
 - **The bracket is a Lie algebra.** The block is alternating and satisfies the Jacobi identity, so
 $(\mathbb{B},\wedge)$ is a complex Lie algebra, the complexification of the cross product of
@@ -328,14 +256,14 @@ $$
 
 For an alternating product that identity is
 equivalent to the Jacobi identity, the Leibniz defect being the negative of the cyclic sum,
-$\Lambda=-J$; the block satisfies both, and the other eleven fail both, the ten non-alternating
-structures directly and the one other alternating structure, $\mathrm{AQA}$, through its Jacobi
-failure at $(e_0,e_1,e_2)$. The criterion is the exact reason the Lie theory of the block — the
-centre and the quotient, the derived algebra isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, the Killing
-form of radical the centre, the Cartan criteria, the Casimir element, the enveloping algebra and the
-matrix models — is a theory and not a collection of examples: it holds at every element and at no
-other structure of the twelve, and the correct exclusive statement is about the law and not about
-isolated elements.
+$\Lambda=-J$, and the block satisfies both. The criterion is the exact reason the Lie theory of the
+block — the centre and the quotient, the derived algebra isomorphic to $\mathfrak{sl}(2,\mathbb{C})$,
+the Killing form of radical the centre, the Cartan criteria, the Casimir element, the enveloping
+algebra and the matrix models — is a theory and not a collection of examples: it holds at every
+element of the block. Among the twelve it is the block alone, the ten non-alternating structures
+failing the identity directly and the one other alternating structure, $\mathrm{AQA}$, through its
+Jacobi defect at $(e_0,e_1,e_2)$; the isolation is a statement about the law and not about isolated
+elements.
 
 ## Summary of Notation
 

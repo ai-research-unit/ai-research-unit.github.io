@@ -12,7 +12,7 @@ $$
 
 with $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ the Krein form of the row. The law holds for the block and for no other of the twelve; it is equivalent to the statement that the form induced by the left multiplication, $\beta_{\tilde X}(\tilde Y,\tilde Z)=K(\tilde X\diamond\tilde Y,\tilde Z)$, is alternating, and to the statement that the conjugate-linear left multiplication is skew-adjoint for $K$; and it is the source of the element theory of the block, since the absence of the unit, the emptiness of the roots of the central values, the absence of the nontrivial idempotents and the index of the nilpotents are all derived from it in one line each.
 
-The criterion is different in kind from the one of the model block. For the plain algebra the discriminating law is the left alternativity of the product, a law of the multiplication alone; for the block the discriminating law is a law of the multiplication against the form, and no law of the multiplication alone separates it from the symmetric half of its own row, as the eleven comparisons below show. The block is therefore the member of the twelve whose specificity is form-theoretic, and this is the reason the article is the last of the block: it collects the law and the eleven verdicts, and it points to the element theory the law governs.
+The criterion is different in kind from the one of the model block. For the plain algebra the discriminating law is the left alternativity of the product, a law of the multiplication alone; for the block the discriminating law is a law of the multiplication against the form, and no law of the multiplication alone separates it from the symmetric half of its own row, as the isolation below shows. The block is therefore the member of the twelve whose specificity is form-theoretic, and this is the reason the article is the last of the block: it collects the law, isolates the block among the twelve, and points to the element theory the law governs.
 
 The form and its pairing with the block are *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; the operator form of the law is *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*; the element theory it delivers is *Norm and Invertibility*, *Zero Divisors*, *Square Roots of Minus One, Zero and Plus One*, *Square Roots of a General Element*, *Idempotents* and *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra*; the twelve products are *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The 12 Products of the Biquaternion Complex Space*; and the model article of the same construction is *The Specificities of the General Plain Algebra*.
 
@@ -68,7 +68,7 @@ for the adjoint with respect to the Krein form: the left multiplication is the n
 
 **Remark (the law is the perpendicularity of the cross product).** The law is not an accident of the choice of the form: it is the classical statement that the cross product of two vectors is perpendicular to each of them, read through the form of the row. In the bilinear reading the cross product is orthogonal to both entries of the bilinear dot, and the second of the two orthogonality statements is the one that the pairing of the block carries, the conjugation of the second slot of the block and the conjugation of the second slot of the form matching so that the scalar coordinate of the value drops out. The block is thus the member of the twelve in which the geometric content of the cross product survives the transfer to the sesquilinear class, and the law is the whole of that survival.
 
-## The Eleven Failures
+## The Isolation among the Twelve
 
 **Theorem (no other product of the twelve satisfies the law).** For each of the eleven products $\star\neq\diamond$ there are biquaternions $\tilde X,\tilde Y$ with
 
@@ -76,43 +76,23 @@ $$
 K(\tilde X\star\tilde Y,\tilde Y)\neq0 .
 $$
 
-The witnesses are in the table; each is verified by the computation of the two products and of the pairing, and the failure is genuine, that is the pairing is not zero and not merely undefined.
+*Proof.* The witnesses are in the table, one entry per family; each is verified by the computation of the product and of the pairing, and the failure is genuine, that is the pairing is not zero and not merely undefined.
 
-| product | $K(X\star Y,Y)$ at the witness | the witness |
+| family | $K(\tilde X\star\tilde Y,\tilde Y)$ | the witness |
 |---|---|---|
-| GPA | $-2$ | $\tilde X=e_1$, $\tilde Y=e_0+e_1$ |
-| SPA | $-2$ | $\tilde X=e_1$, $\tilde Y=e_0+e_1$ |
-| APA | $-2i$ | $\tilde X=e_2$, $\tilde Y=e_1+ie_3$ |
+| GPA | $2i$ | $\tilde X=e_1$, $\tilde Y=e_2+ie_3$ |
 | GQA | $2i$ | $\tilde X=e_2$, $\tilde Y=e_1+ie_3$ |
-| SQA | $1$ | $\tilde X=e_1$, $\tilde Y=e_0+e_1$ |
+| APA | $-2i$ | $\tilde X=e_2$, $\tilde Y=e_1+ie_3$ |
 | AQA | $2i$ | $\tilde X=e_2$, $\tilde Y=e_1+ie_3$ |
-| GPS | $1$ | $\tilde X=e_0$, $\tilde Y=e_1$ |
-| SPS | $1$ | $\tilde X=e_1$, $\tilde Y=e_0+e_1$ |
+| SPA | $-2$ | $\tilde X=e_1$, $\tilde Y=e_0+e_1$ |
+| SQA, SPS | $1$ | $\tilde X=e_1$, $\tilde Y=e_0+e_1$ |
 | APS | $-1$ | $\tilde X=e_1$, $\tilde Y=e_0+e_1$ |
-| GQS | $1$ | $\tilde X=e_0$, $\tilde Y=e_1$ |
-| SQS | $1$ | $\tilde X=e_0$, $\tilde Y=e_1$ |
-| AQS | $0$ at every pair | the law holds |
+| GPS, GQS, SQS | $1$ | $\tilde X=e_0$, $\tilde Y=e_1$ |
+| **AQS** | $0$ at every pair | the law holds |
 
-*Proof.* The table is a table of computations: for each row the product is the one of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the two entries are the ones displayed, and the pairing is evaluated with the Krein form. The values of the last row are zero at every pair by the theorem above, and the eleven computations are the content of the theorem.
+The eleven failures separate by where the failure enters. Four fail already on the vector subspace: the two products of the bilinear rows, $\mathrm{GPA}$ and $\mathrm{GQA}$, whose second slot is not conjugated, together with their antisymmetric parts $\mathrm{APA}$ and $\mathrm{AQA}$. For these four the value on two pure vectors carries the cross product $\mathbf{P}\times\mathbf{Q}$ **without** the conjugation of the second argument, while the pairing is read against the conjugate of that argument, so the orthogonality of the cross product is not the orthogonality the form asks for. The other seven fail only off the vector subspace, at pairs in which at least one argument has a nonzero scalar coordinate: the four symmetric halves, whose value on two pure vectors is central, and the antisymmetric plain sesqualgebra $\mathrm{APS}$ with the two general sesquilinear products $\mathrm{GPS}$ and $\mathrm{GQS}$, whose value on two pure vectors is carried by the conjugate cross product. The block is the one product whose value is the cross product with the conjugate of the second argument, and the conjugation of the second slot of the block and the conjugation of the second slot of the form act in the same direction on the same entry.
 
-**Remark (where the failure enters).** The eleven failures separate by the restricted table below.
-
-Four of them fail already on the vector subspace: the two products of the bilinear rows, $\mathrm{GPA}$ and $\mathrm{GQA}$, whose second slot is not conjugated, together with their antisymmetric parts $\mathrm{APA}$ and $\mathrm{AQA}$. For these four the value on two pure vectors carries the cross product $\mathbf{P}\times\mathbf{Q}$ **without** the conjugation of the second argument, while the pairing is read against the conjugate of that argument, so the orthogonality of the cross product is not the orthogonality the form asks for, and the law fails.
-
-The other seven fail only off the vector subspace, at pairs in which at least one argument has a nonzero scalar coordinate: the four symmetric halves $\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$, whose value on two pure vectors is central, and the antisymmetric plain sesqualgebra $\mathrm{APS}$ together with the two general sesquilinear products $\mathrm{GPS}$ and $\mathrm{GQS}$, whose value on two pure vectors is carried by the conjugate cross product.
-
-The block is the one product whose value is the cross product with the conjugate of the second argument, and that is the reason for both its restricted law and its full law: the conjugation of the second slot of the block and the conjugation of the second slot of the form act in the same direction on the same entry.
-
-**Remark (the law on the vector subspace is not the criterion).** Restricted to the pairs of pure vectors the law holds for eight of the twelve products, and the block is not distinguished by the restriction:
-
-| product | the law on $\mathbb{B}$ | the law on $\mathrm{Vect}(\mathbb{B})$ |
-|---|---|---|
-| GPA, APA, GQA, AQA | fails | fails |
-| SPA, SQA | fails | holds |
-| GPS, SPS, APS, GQS, SQS | fails | holds |
-| AQS | **holds** | holds |
-
-For SPA, SQA, SPS and SQS the restricted law holds because on pure arguments their values are central, and a central value is orthogonal to every pure vector in a form that reads the scalar coordinate with the sign $+1$; for GPS, APS, GQS and AQS the restricted law holds because the values on pure arguments are carried by the conjugate cross product, whose second entry is exactly the argument the form reads. The criterion is therefore the law on the whole space, and on the whole space the block is alone.
+**Remark (the criterion is the law on the whole space).** Restricted to the pairs of pure vectors the law holds for $\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$, $\mathrm{GPS}$, $\mathrm{APS}$, $\mathrm{GQS}$ and the block, and fails for $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{APA}$ and $\mathrm{AQA}$. It holds for the four symmetric halves because on pure arguments their values are central, and a central value is orthogonal to every pure vector in a form that reads the scalar coordinate with the sign $+1$; it holds for $\mathrm{GPS}$, $\mathrm{APS}$, $\mathrm{GQS}$ and the block because the values on pure arguments are carried by the conjugate cross product, whose second entry is exactly the argument the form reads. The block is therefore not distinguished by the restriction, and the criterion is the law on the whole space, where it is alone.
 
 ## What the Law Delivers
 
@@ -134,11 +114,11 @@ The law is the source of the element theory of the block, and the four deliverie
 
 **The structural reading.** The law says that the block never produces a value in the direction of its own second argument, in the form of the row: the value is orthogonal to the argument it is paired with. The block is therefore the member of the twelve that is *purely transverse*, and the whole of its element theory is the reading of that transversality: the diagonal is the value orthogonal to its own argument, hence isotropic and hence never central; the off-diagonal pairs are orthogonal to their second arguments, hence never invertible; and the powers are orthogonal at every step, hence terminate at two or at four. The antisymmetrisation of the quaternionic sesquilinear product is the operation that installs the transversality, and the block is the image of the row under it.
 
-**The comparison with the sibling blocks.** The symmetric half of the row has the discriminating law of the corpus's symmetric parts, the identity of the middle term or the Jordan identity, and the four general products have their own laws and their own invertibility criteria. The twelve verdicts of the table above and the twelve verdicts of the sibling articles together form the discriminating reading of the space: each of the twelve structures is the one that satisfies exactly one law, and the block's law is the one of the table above. The collection of the twelve is *The 12 Products of the Biquaternion Complex Space*, and the sibling articles are *The Specificities of the General Plain Algebra*, *The Specificities of the General Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic Algebra*.
+**The isolation is form-theoretic.** The law is the only criterion of the block that is not a law of the multiplication alone, and it is the one that separates the block from the symmetric half of its own row: the two agree on the vector subspace, and the reading of the difference needs the form. The collection of the twelve is *The 12 Products of the Biquaternion Complex Space*, read through the criteria of *The Specificities of the General Plain Algebra*, *The Specificities of the General Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic Algebra*.
 
 ## Summary
 
-The block is the product of the twelve that is $K$-orthogonal to its own second argument: $K(\tilde X\diamond\tilde Y,\tilde Y)=0$ for all biquaternions, with $K$ the Krein form of the row. The law is equivalent to the alternating character of the induced form $K_{\tilde X}(\tilde Y,\tilde Z)=K(\tilde X\diamond\tilde Y,\tilde Z)$ and to the skew-adjointness of the conjugate-linear left multiplication, $L_{\tilde X}^{\dagger}=-L_{\tilde X}$; it is the classical perpendicularity of the cross product transferred to the sesquilinear class; and it is satisfied by no other of the twelve, the eleven failures being tabulated with a witness each. The law restricted to the pairs of pure vectors holds for eight of the twelve, so the criterion is the law on the whole space. The law delivers the element theory of the block: no unit, since a unit would make every element isotropic for a form that is positive at $e_0$; no root of a nonzero central value; no nontrivial idempotent, the isotropy together with the purity forcing the origin; and the index of the nilpotents at two and at four, through the recurrence of the left-nested powers. The zero-divisor set of the block is read from the rule and not from the law, and the criterion is form-theoretic, which is what separates the block from the symmetric half of its own row and makes the article the last of the block.
+The block is the product of the twelve that is $K$-orthogonal to its own second argument: $K(\tilde X\diamond\tilde Y,\tilde Y)=0$ for all biquaternions, with $K$ the Krein form of the row. The law is equivalent to the alternating character of the induced form $K_{\tilde X}(\tilde Y,\tilde Z)=K(\tilde X\diamond\tilde Y,\tilde Z)$ and to the skew-adjointness of the conjugate-linear left multiplication, $L_{\tilde X}^{\dagger}=-L_{\tilde X}$; it is the classical perpendicularity of the cross product transferred to the sesquilinear class; and it is satisfied by no other of the twelve, each of the other eleven failing on a witness. The law restricted to the pairs of pure vectors holds for eight of the twelve, so the criterion is the law on the whole space. The law delivers the element theory of the block: no unit, since a unit would make every element isotropic for a form that is positive at $e_0$; no root of a nonzero central value; no nontrivial idempotent, the isotropy together with the purity forcing the origin; and the index of the nilpotents at two and at four, through the recurrence of the left-nested powers. The zero-divisor set of the block is read from the rule and not from the law, and the criterion is form-theoretic, which is what separates the block from the symmetric half of its own row and makes the article the last of the block.
 
 ## Summary of Notation
 
@@ -150,8 +130,9 @@ The block is the product of the twelve that is $K$-orthogonal to its own second 
 | $K(\tilde X\diamond\tilde Y,\tilde Z)=-K(\tilde X\diamond\tilde Z,\tilde Y)$ | the alternating character of the induced form |
 | $L_{\tilde X}^{\dagger}=-L_{\tilde X}$ | the skew-adjointness of the left multiplication |
 | $(\mathbf{A},\mathbf{B})=\sum_kA_kB_k$ | the complex bilinear dot product |
-| $\tilde X=e_1$, $\tilde Y=e_0+e_1$ | the witness for GPA, SPA, SQA, SPS and APS |
-| $\tilde X=e_2$, $\tilde Y=e_1+ie_3$ | the witness for APA, GQA and AQA |
+| $\tilde X=e_1$, $\tilde Y=e_2+ie_3$ | the witness for GPA |
+| $\tilde X=e_2$, $\tilde Y=e_1+ie_3$ | the witness for GQA, APA and AQA |
+| $\tilde X=e_1$, $\tilde Y=e_0+e_1$ | the witness for SPA, SQA, SPS and APS |
 | $\tilde X=e_0$, $\tilde Y=e_1$ | the witness for GPS, GQS and SQS |
 
 ## Further Reading

@@ -4,7 +4,7 @@
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$, as established in the article on biquaternion algebra. This article studies the ideal structure of $\mathbb{B}$ and the decomposition of $\mathbb{B}$ relative to a family of idempotents.
 
-Two facts organize the discussion. The algebra $\mathbb{B}$ is **simple**: its only two-sided ideals are $0$ and $\mathbb{B}$. Its ideal theory is therefore a theory of one-sided ideals: the main results are the classification of the left ideals — $0$, the minimal ones, and $\mathbb{B}$ — and the Peirce decomposition into four one-dimensional corners relative to a pair of orthogonal idempotents. The Peirce decomposition is developed in detail below: it is read in coordinates, and the coordinates turn out to be the four entries of the matrix element representation of the algebra; it is a grading by the parity of the corners; the three conjugations of the algebra act on it; and it is rigid, in the sense that all systems of matrix units that realise it are conjugate.
+Two facts organize the discussion. The algebra $\mathbb{B}$ is **simple**: its only two-sided ideals are $0$ and $\mathbb{B}$. Its ideal theory is therefore a theory of one-sided ideals: the main results are the classification of the left ideals — $0$, the minimal ones, and $\mathbb{B}$ — and the Peirce decomposition into four one-dimensional corners relative to a pair of orthogonal idempotents. The Peirce decomposition is developed in detail below: it is read in coordinates, and the coordinates turn out to be the four entries of the matrix element representation of the algebra; it is a grading by the parity of the corners; the three conjugations of the algebra act on it; it is already forced by a single idempotent, the complement being determined; and it is rigid, in the sense that all systems of matrix units that realise it are conjugate.
 
 Because the biquaternions carry both a complex and a real structure, every statement is tagged with the field over which it is made. The sections before the last work over $\mathbb{C}$; §*The Real Structure* discusses the $\mathbb{R}$-view, where the ideal lattice itself is unchanged but the real structure leaves further traces. The notation follows the article on biquaternion algebra: $e_0$ is the unit, $e_1, e_2, e_3$ are the quaternion units with $e_1 e_2 = e_3$, $i$ is the central scalar imaginary, and a general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. The definitions of the article on rings apply to the noncommutative algebra $\mathbb{B}$, where "left" and "right" must be distinguished.
 
@@ -22,13 +22,13 @@ For a two-sided ideal $I$, the **quotient algebra** $A/I$ is the set of cosets w
 
 **Proof.** Let $I \neq 0$ be a two-sided ideal. It is a $\mathbb{C}$-subspace, because multiplication by the central element $i$ is left multiplication by an element of $\mathbb{B}$. Fix $0 \neq \tilde{Q} = \sum_\mu Q_\mu e_\mu \in I$. For every unit $\tilde B \in \mathbb{B}$ the conjugate $\tilde B\tilde{Q}\tilde B^{-1}$ lies in $I$, since $I$ is two-sided.
 
-Average the conjugates over the finite group $\{\pm e_0, \pm e_1, \pm e_2, \pm e_3\}$. Conjugation by $e_\mu$ fixes $e_0$ and $e_\mu$ and reverses $e_\nu$ for $\nu \neq \mu$, so the elements $e_\mu$ and $-e_\mu$ give the same conjugate, and the sum over the four representatives $e_0, e_1, e_2, e_3$ is
+Average the conjugates over the finite group $\{\pm e_0, \pm e_1, \pm e_2, \pm e_3\}$. For $\mu = 1, 2, 3$, conjugation by $e_\mu$ fixes $e_0$ and $e_\mu$ and reverses the other two imaginary units, while conjugation by $e_0$ is the identity; in each case $e_\mu$ and $-e_\mu$ give the same conjugate, and the sum over the four representatives $e_0, e_1, e_2, e_3$ is
 
 $$
 \tilde Q + \big(Q_0 e_0 + Q_1 e_1 - Q_2 e_2 - Q_3 e_3\big) + \big(Q_0 e_0 - Q_1 e_1 + Q_2 e_2 - Q_3 e_3\big) + \big(Q_0 e_0 - Q_1 e_1 - Q_2 e_2 + Q_3 e_3\big) = 4 Q_0 e_0,
 $$
 
-the sum over all eight is twice this, and the average is that sum divided by $8$, giving $Q_0 e_0 \in I$. If $Q_0 \neq 0$ then $e_0 = Q_0^{-1}(Q_0 e_0) \in I$ and $I = \mathbb{B}$. If $Q_0 = 0$ then $\tilde{Q}$ is a nonzero element of the vector subspace, and conjugating it by the real unit quaternions rotates it: the conjugates run over the real unit vectors in $\mathrm{Vect}(\mathbb{B})$, whose real span is all of $\mathrm{Vect}(\mathbb{B})$, so $\mathrm{Vect}(\mathbb{B}) \subseteq I$. In particular $e_1 \in I$, hence $e_1^2 = -e_0 \in I$ and again $I = \mathbb{B}$.
+the sum over all eight is twice this, and the average is that sum divided by $8$, giving $Q_0 e_0 \in I$. If $Q_0 \neq 0$ then $e_0 = Q_0^{-1}(Q_0 e_0) \in I$ and $I = \mathbb{B}$. If $Q_0 = 0$ then $\tilde{Q}$ is nonzero and pure, so some coefficient $Q_k \neq 0$ with $k \in \{1,2,3\}$. Since $I$ is a two-sided ideal, the product $\tilde{Q} e_k$ lies in $I$, and its scalar part is $-Q_k \neq 0$; the averaging applied to $\tilde{Q} e_k$ then gives $-Q_k e_0 \in I$, so $e_0 \in I$ and again $I = \mathbb{B}$.
 
 Consequences over $\mathbb{C}$:
 
@@ -61,6 +61,8 @@ $$
 
 satisfy $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = 0$ and $\tilde\Pi_1 + \tilde\Pi_2 = e_0$. They are primitive, and they generate the off-diagonal elements of the next section.
 
+In the matrix model the primitive idempotents are exactly the nontrivial ones. An idempotent of $M_2(\mathbb{C})$ is diagonalisable with eigenvalues in $\{0,1\}$, hence of rank $0$, $1$ or $2$: the two extremes are the trivial idempotents $0$ and $e_0$, and a rank-one idempotent is primitive, because a sum of two nonzero orthogonal idempotents would have image of dimension at least two. So the nontrivial idempotents of $\mathbb{B}$ and its primitive idempotents are the same set, and each nontrivial idempotent $e$ comes with the complementary primitive idempotent $e_0 - e$.
+
 The classification of the idempotents of $\mathbb{B}$ — the trivial idempotents, the bijection with the roots of $-1$, the Hermitian projections and the dimension of the idempotent set — is the subject of *Idempotents of the General Plain Algebra*.
 
 ## The Off-Diagonal Elements
@@ -91,7 +93,7 @@ $$
 A = eAe \oplus eAf \oplus fAe \oplus fAf,
 $$
 
-whose summands are the **Peirce spaces**. The corner $eAe$ is a subalgebra with identity $e$; the other corners are only one-sided pieces. The expansion, the directness of the four terms and the product rule below are proved in *Unital Algebras*, §*Idempotents and the Peirce Decomposition*, where the case of a **central** idempotent is also separated: for a central $e$ the off-diagonal corners vanish and the sum is a product of algebras. That special case does not arise here, since the idempotents of this article lie in a simple algebra and no nontrivial idempotent of $\mathbb{B}$ is central.
+whose summands are the **Peirce spaces**. The corner $eAe$ is a subalgebra with identity $e$; the off-diagonal corners are bimodules over the diagonal ones and carry no identity. The expansion, the directness of the four terms and the product rule below are proved in *Unital Algebras*, §*Idempotents and the Peirce Decomposition*, where the case of a **central** idempotent is also separated: for a central $e$ the off-diagonal corners vanish and the sum is a product of algebras. That special case does not arise here, since the idempotents of this article lie in a simple algebra and no nontrivial idempotent of $\mathbb{B}$ is central.
 
 ### A Complete Orthogonal Family
 
@@ -115,7 +117,7 @@ the first being the right ideal generated by $e_i$ and the second the left ideal
 
 ### The Biquaternion Case
 
-Take $e_1 = \tilde\Pi_1$, $e_2 = \tilde\Pi_2$ from §*Idempotents and Orthogonal Idempotents*. The Peirce decomposition of $\mathbb{B}$ is
+Take the complete orthogonal family $\tilde\Pi_1, \tilde\Pi_2$ of §*Idempotents and Orthogonal Idempotents*. The Peirce decomposition of $\mathbb{B}$ is
 
 $$
 \mathbb{B} = \tilde\Pi_1\mathbb{B}\tilde\Pi_1 \oplus \tilde\Pi_1\mathbb{B}\tilde\Pi_2 \oplus \tilde\Pi_2\mathbb{B}\tilde\Pi_1 \oplus \tilde\Pi_2\mathbb{B}\tilde\Pi_2,
@@ -132,6 +134,30 @@ So the Peirce decomposition of $\mathbb{B}$ is
 $$
 \mathbb{B} = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Upsilon_1 \oplus \mathbb{C}\tilde\Upsilon_2 \oplus \mathbb{C}\tilde\Pi_2.
 $$
+
+### From One Idempotent to Its Complement
+
+Over $\mathbb{B}$ the decomposition relative to a pair of idempotents is forced by a single idempotent. Let $e \in \mathbb{B}$ be nontrivial and put $f = e_0 - e$. By §*Idempotents and Orthogonal Idempotents* both $e$ and $f$ are primitive, they are orthogonal, and $e + f = e_0$, so $e$ alone determines the pair $(e, f)$ and the decomposition
+
+$$
+\mathbb{B} = e\mathbb{B}e \oplus e\mathbb{B}f \oplus f\mathbb{B}e \oplus f\mathbb{B}f .
+$$
+
+Every nontrivial idempotent is conjugate to $\tilde\Pi_1$ (§*Systems of Matrix Units*), so this is the decomposition of §*The Biquaternion Case* transported by a unit: each corner is the conjugate of the corresponding standard corner and is therefore a line over $\mathbb{C}$,
+
+$$
+e\mathbb{B}e = \mathbb{C}e, \qquad f\mathbb{B}f = \mathbb{C}f, \qquad e\mathbb{B}f = \mathbb{C}u, \qquad f\mathbb{B}e = \mathbb{C}w,
+$$
+
+where $u$ and $w$ are any nonzero elements of the two mixed corners. The shape does not move with $e$; only the four lines do. The two mixed corners are square-zero, so their nonzero elements are nilpotent (§*A Complete Orthogonal Family*).
+
+Read in the matrix model, the idempotent $e$ is a rank-one projector. The standard pair is the two diagonal projectors
+
+$$
+\mathsf{M}_2(\tilde\Pi_1)=\begin{pmatrix}1&0\\0&0\end{pmatrix}, \qquad \mathsf{M}_2(\tilde\Pi_2)=\begin{pmatrix}0&0\\0&1\end{pmatrix},
+$$
+
+and a general primitive idempotent is determined by two lines of $\mathbb{C}^2$: its **image** line $L$, on which it is the identity, and its **kernel** line $K$, which it annihilates, with $L \oplus K = \mathbb{C}^2$. The map $(L, K) \mapsto e$ is a bijection from the ordered pairs of distinct lines of $\mathbb{P}^1(\mathbb{C})$ onto the primitive idempotents, so these form the set $\mathbb{P}^1(\mathbb{C}) \times \mathbb{P}^1(\mathbb{C}) \setminus \Delta$, where $\Delta$ is the diagonal of equal pairs, of real dimension $4$; this is the four-dimensional idempotent manifold of *Idempotents of the General Plain Algebra*, §*The Bijection With the Roots of Minus One*, read in the coordinates of the matrix model.
 
 ### The Peirce Table
 
@@ -166,7 +192,7 @@ $$
 Q_0 = \tfrac12(a_{11}+a_{22}), \qquad Q_1 = \tfrac{i}{2}(a_{12}+a_{21}), \qquad Q_2 = \tfrac12(a_{21}-a_{12}), \qquad Q_3 = \tfrac{i}{2}(a_{11}-a_{22}).
 $$
 
-The four numbers $a_{ij}$ are the **Peirce coordinates** of $\tilde Q$. They are linear functions of $\tilde Q$; the scalar part is their mean, and their determinant is the biquaternion norm,
+The four numbers $a_{ij}$ are the **Peirce coordinates** of $\tilde Q$. They are linear functions of $\tilde Q$; the mean of the two diagonal coordinates is the scalar part, and the determinant of their $2\times2$ array is the biquaternion norm,
 
 $$
 a_{11}a_{22} - a_{12}a_{21} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = N(\tilde Q)
@@ -188,7 +214,7 @@ $$
 A_0A_0 \subseteq A_0, \qquad A_0A_1 \subseteq A_1, \qquad A_1A_0 \subseteq A_1, \qquad A_1A_1 \subseteq A_0 ,
 $$
 
-which is the multiplication law of the group $\mathbb{Z}/2$: the decomposition $A = A_0\oplus A_1$ is a **grading** of the algebra, $A_0$ is a subalgebra and $A_1$ is a module over it. In the biquaternion case $A_0$ is the diagonal part of the paragraph below and $A_1 = \mathbb{C}\tilde\Upsilon_1 \oplus \mathbb{C}\tilde\Upsilon_2$, and the four inclusions are the laws $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1$ and $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2$ together with $\tilde\Upsilon_1^2 = \tilde\Upsilon_2^2 = 0$. The grading is the checkerboard of a $2\times2$ matrix: two cells of like colour multiply into the diagonal part and two of unlike colour into the mixed part.
+which is the multiplication law of the group $\mathbb{Z}/2$: the decomposition $A = A_0\oplus A_1$ is a **grading** of the algebra, $A_0$ is a subalgebra and $A_1$ is a module over it. In the biquaternion case $A_0 = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Pi_2$ and $A_1 = \mathbb{C}\tilde\Upsilon_1 \oplus \mathbb{C}\tilde\Upsilon_2$, and the four inclusions are the laws $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1$ and $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2$ together with $\tilde\Upsilon_1^2 = \tilde\Upsilon_2^2 = 0$. The grading is the checkerboard of a $2\times2$ matrix: two cells of like colour multiply into the diagonal part and two of unlike colour into the mixed part.
 
 ### The Involutions on the Peirce Spaces
 
@@ -215,7 +241,12 @@ The Peirce coordinates of §*The Peirce Coordinates* do more than parametrise th
 **Proposition.** The map that sends $\tilde Q$ to the matrix $\begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22}\end{pmatrix}$ of its Peirce coordinates is an isomorphism of $\mathbb{C}$-algebras $\mathbb{B}\to M_2(\mathbb{C})$, and it carries the four Peirce spaces onto the four matrix units,
 
 $$
-\tilde\Pi_1 \mapsto E_{11}, \qquad \tilde\Upsilon_1 \mapsto E_{12}, \qquad \tilde\Upsilon_2 \mapsto E_{21}, \qquad \tilde\Pi_2 \mapsto E_{22}.
+\tilde\Pi_1 \mapsto \begin{pmatrix}1&0\\0&0\end{pmatrix}=E_{11}, \qquad
+\tilde\Upsilon_1 \mapsto \begin{pmatrix}0&1\\0&0\end{pmatrix}=E_{12},
+$$
+$$
+\tilde\Upsilon_2 \mapsto \begin{pmatrix}0&0\\1&0\end{pmatrix}=E_{21}, \qquad
+\tilde\Pi_2 \mapsto \begin{pmatrix}0&0\\0&1\end{pmatrix}=E_{22}.
 $$
 
 *Proof.* The map is $\mathbb{C}$-linear and bijective, since the four basis elements of $\mathbb{B}$ go to the four basis matrices of $M_2(\mathbb{C})$; it is multiplicative because the four Peirce basis elements multiply as the four matrix units do — the Peirce table of §*The Peirce Table* is the table $E_{ij}E_{kl} = \delta_{jk}E_{il}$ of *Matrix Algebras*, §*Matrix Units* — and both multiplications are bilinear.
@@ -238,11 +269,33 @@ $$
 E_{11} = \tilde\Pi_1, \qquad E_{12} = \tilde\Upsilon_1, \qquad E_{21} = \tilde\Upsilon_2, \qquad E_{22} = \tilde\Pi_2 .
 $$
 
+**Construction from an arbitrary idempotent.** Fix a primitive $e$ and put $f = e_0 - e$; choose nonzero $u \in e\mathbb{B}f$ and $w \in f\mathbb{B}e$. Under a conjugacy carrying the standard pair to $(e, f)$ (§*From One Idempotent to Its Complement*), the elements $u$ and $w$ are the images of $\alpha\tilde\Upsilon_1$ and $\beta\tilde\Upsilon_2$ for some $\alpha, \beta \in \mathbb{C}^\times$, and the standard products $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1$ and $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2$ give
+
+$$
+u w = \alpha\beta\, e, \qquad w u = \alpha\beta\, f .
+$$
+
+With $\lambda = \alpha\beta \in \mathbb{C}^\times$ the same on both sides, the elements
+
+$$
+E_{11} = e, \qquad E_{22} = f, \qquad E_{12} = u, \qquad E_{21} = \lambda^{-1} w
+$$
+
+form a system of matrix units with $E_{11} = e$. The pair $(u, w)$ is not determined by $e$: replacing $u$ by $\mu u$ and $w$ by $\mu^{-1} w$ with $\mu \in \mathbb{C}^\times$ leaves $\lambda$ and every product of the system unchanged. A fixed primitive idempotent therefore determines its Peirce decomposition but carries a reciprocal $\mathbb{C}^\times$ of normalised mixed bases, the off-diagonal rescaling that appears as the diagonal torus in the proof of the theorem below.
+
 **Theorem (the Peirce decomposition is unique up to conjugation).** Every system of $2\times2$ matrix units of $\mathbb{B}$ is the image of the standard system under an inner automorphism: there is a unit $\tilde G \in \mathbb{B}$ with $E_{ij} = \tilde G\,\tilde E_{ij}\,\tilde G^{-1}$ for the standard system $\{\tilde E_{ij}\}$. Consequently all Peirce decompositions of $\mathbb{B}$ with two primitive idempotents are conjugate, and a statement about one of them is a statement about all.
 
 *Proof.* By the matrix model of §*The Matrix Model* the question is the corresponding statement for $M_2(\mathbb{C})$, and there it is proved by change of basis. A primitive idempotent $P$ of $M_2(\mathbb{C})$ is the projector onto a line $\ell$ along another line $m$, $\ell$ being its image and $m$ its kernel; choosing a basis with first vector in $\ell$ and second in $m$, and letting $G$ be the matrix of that basis, gives $GPG^{-1} = E_{11}$. The stabiliser of $E_{11}$ is the diagonal torus, since a conjugation that fixes $E_{11}$ must preserve its image and its kernel; conjugating by the diagonal matrix $\operatorname{diag}(a,d)$ fixes $E_{11}$ and $E_{22}$ and multiplies $E_{12}$ by $a/d$ and $E_{21}$ by $d/a$. In a system of matrix units with $E_{11}$ and $E_{22}$ fixed, the two off-diagonal elements are determined by a single scalar, because they lie in the one-dimensional mixed spaces and satisfy $E_{12}E_{21} = E_{11}$; the diagonal conjugation is transitive on that scalar, so the system is carried to the standard one. The unit group of $\mathbb{B}$ acts by algebra automorphisms, since every automorphism of $\mathbb{B}$ is inner (*Biquaternion Automorphisms and Derivations*, §*Automorphisms over $\mathbb{C}$*), and an automorphism carries a system of matrix units to a system of matrix units.
 
 The theorem is the rigidity of the Peirce decomposition, and it should be read with two counts that it does not contradict. The **idempotents** that occur are not unique: every primitive idempotent of $\mathbb{B}$ appears, and these form the real four-dimensional idempotent manifold of *Idempotents of the General Plain Algebra*, §*The Bijection With the Roots of Minus One*, not the two points $\tilde\Pi_1, \tilde\Pi_2$. The **left ideals** that occur are not unique either: they form the projective line $\mathbb{P}^1(\mathbb{C})$ of §*The Lattice of Left Ideals*. What is unique is the decomposition up to conjugation: the idempotent may be carried anywhere by a unit, and the unit conjugation carries the decomposition with it. Equivalently, $\mathbb{B}$ has one Peirce decomposition of this shape modulo the inner automorphisms — the statement that the algebra has a single block structure, namely the $2\times2$ block structure of a matrix algebra, and that all the decompositions of §*The Peirce Decomposition* are that structure seen in different bases.
+
+The **stabiliser** of the standard pair in the unit group of $\mathbb{B}$ is the torus $\{\,a\tilde\Pi_1 + b\tilde\Pi_2 : a, b \in \mathbb{C}^\times\,\}$. It fixes $\tilde\Pi_1$ and $\tilde\Pi_2$ and acts on the two mixed elements by
+
+$$
+\tilde\Upsilon_1 \mapsto \frac{a}{b}\,\tilde\Upsilon_1, \qquad \tilde\Upsilon_2 \mapsto \frac{b}{a}\,\tilde\Upsilon_2,
+$$
+
+which is exactly the reciprocal $\mathbb{C}^\times$ scaling of the construction of §*Systems of Matrix Units*. The Peirce decompositions are therefore the points of the idempotent manifold — uncountably many — each carrying its $\mathbb{C}^\times$ of normalised mixed bases, and the inner automorphisms act transitively on the whole family.
 
 ## The Decomposition into Minimal Left and Right Ideals
 
@@ -339,6 +392,8 @@ On the parametrizing projective line the induced map $t \mapsto -1/\bar{t}$ has 
 | Minimal left ideals | all isomorphic | same; $\sigma$ pairs them, none stable |
 | Minimal right ideals | all isomorphic | same |
 | Peirce decomposition | $\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Upsilon_1 \oplus \mathbb{C}\tilde\Upsilon_2 \oplus \mathbb{C}\tilde\Pi_2$, four one-dimensional corners | the same four real planes; $\sigma$ permutes them in pairs |
+| Peirce datum | one primitive idempotent $e$; the complement $e_0 - e$ is forced | the same |
+| Mixed basis | a reciprocal $\mathbb{C}^\times$ of normalised bases of the two mixed lines | the same |
 | Peirce coordinates | the entries of $\mathsf{M}_2(\tilde Q)$; $a_{11}a_{22}-a_{12}a_{21} = N(\tilde Q)$ | the same, over $\mathbb{R}$ |
 | Matrix units | the standard system $\tilde\Pi_1, \tilde\Upsilon_1, \tilde\Upsilon_2, \tilde\Pi_2$ | the same; every system is conjugate to it |
 | Grading | $A_0 \oplus A_1$, $A_0 = \mathbb{C}\tilde\Pi_1\oplus\mathbb{C}\tilde\Pi_2 \cong \mathbb{C}\times\mathbb{C}$, $A_1 = \mathbb{C}\tilde\Upsilon_1\oplus\mathbb{C}\tilde\Upsilon_2$ | the same; $\sigma$ preserves both parts |
@@ -346,7 +401,7 @@ On the parametrizing projective line the induced map $t \mapsto -1/\bar{t}$ has 
 | Length as module over itself | $2$ | $2$ |
 | Base change $\otimes_{\mathbb{R}}\mathbb{C}$ | — | not simple; splits into two simple factors |
 
-The Peirce decomposition is the second reading of the same four-dimensional space, and it carries four structures that the lattice of ideals alone does not show. It is a decomposition into four one-dimensional corners, of which the two diagonal ones are the division ring $\mathbb{C}$ and the two mixed ones are square-zero subalgebras. It is the table of a $2\times2$ matrix, and its four coordinate functions are the entries of the corpus's matrix element representation, so that the scalar part is their mean and the biquaternion norm is their determinant. It is a $\mathbb{Z}/2$-grading, whose even part is the diagonal subalgebra $\mathbb{C}\times\mathbb{C}$ and whose odd part carries the two mixed spaces and the products $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1$ and $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2$. And it is acted on by the three conjugations, the natural sign and the bar exchanging the diagonal corners and the Hermitian conjugation fixing them and exchanging the mixed ones. The decomposition is rigid in the only sense available: every system of $2\times2$ matrix units is the image of the standard one under an inner automorphism, so the algebra has a single block structure, and the choices that remain are the idempotent manifold and the projective line of minimal left ideals of the earlier sections.
+The Peirce decomposition is the second reading of the same four-dimensional space, and it carries four structures that the lattice of ideals alone does not show. It is a decomposition into four one-dimensional corners, of which the two diagonal ones are the division ring $\mathbb{C}$ and the two mixed ones are square-zero subalgebras. It is the table of a $2\times2$ matrix, and its four coordinate functions are the entries of the corpus's matrix element representation, so that the scalar part is their mean and the biquaternion norm is their determinant. It is a $\mathbb{Z}/2$-grading, whose even part is the diagonal subalgebra $\mathbb{C}\times\mathbb{C}$ and whose odd part carries the two mixed spaces and the products $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1$ and $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2$. And it is acted on by the three conjugations, the natural sign and the bar exchanging the diagonal corners and the Hermitian conjugation fixing them and exchanging the mixed ones. The decomposition is rigid in the only sense available: every system of $2\times2$ matrix units is the image of the standard one under an inner automorphism, so the algebra has a single block structure, and the choices that remain are the idempotent manifold, the reciprocal $\mathbb{C}^\times$ of mixed bases of each decomposition, and the projective line of minimal left ideals of the earlier sections.
 
 ## Summary of Notation
 
@@ -362,6 +417,8 @@ The Peirce decomposition is the second reading of the same four-dimensional spac
 | $a_{ij}$ | Peirce coordinate, the coefficient of the corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$; the $(i,j)$ entry of $\mathsf{M}_2(\tilde Q)$ |
 | $\mathsf{M}_2$ | The matrix element representation $\mathbb{B} \cong M_2(\mathbb{C})$, whose entries are the Peirce coordinates |
 | $E_{ij}$ | A system of $2\times2$ matrix units, $E_{ij}E_{kl} = \delta_{jk}E_{il}$, $E_{11}+E_{22} = e_0$ |
+| $e, f = e_0 - e$ | A primitive idempotent and its complement; one nontrivial $e$ forces the pair $(e, f)$ |
+| $u \in e\mathbb{B}f$, $w \in f\mathbb{B}e$ | Nonzero mixed elements; $uw = \lambda e$ and $wu = \lambda f$ with $\lambda \in \mathbb{C}^\times$ |
 | $A_0, A_1$ | The diagonal and the mixed parts of the Peirce decomposition, the two graded components |
 | $\natural, \bar{\cdot}, {}^{*}$ | The natural, the bar (coefficient) and the Hermitian conjugations, with ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ |
 | $\sigma$ | The real structure, pairing the two standard minimal left ideals and the Peirce corners |

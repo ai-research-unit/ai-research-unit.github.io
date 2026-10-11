@@ -120,7 +120,7 @@ The origin and, when the product is unital, the unit are idempotents of every pr
 
 **Definition (Peirce decomposition).** Let the product be associative with unit, and let $\tilde\Pi$ be an idempotent. The **Peirce decomposition** of the algebra relative to $\tilde\Pi$ is the splitting of the regular module into the four pieces indexed by the pair $(\tilde\Pi,1-\tilde\Pi)$; its two diagonal pieces are the **corner algebras** $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ and $(1-\tilde\Pi)\star\mathbb{B}\star(1-\tilde\Pi)$.
 
-The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$, the natural product has the trivial idempotents alone, the plain sesquilinear product has the Hermitian idempotents, and the quaternionic sesquilinear product has the family $-\tfrac12e_0+\mu$. The table is in *The Zero Divisors and the Four General Products*, §*The Square, the Idempotents and the Units*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Ideals and Peirce Decomposition of the General Plain Algebra*.
+The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, the natural product has the trivial idempotents alone, the plain sesquilinear product has the Hermitian idempotents, and the quaternionic sesquilinear product has the family $-\tfrac12e_0+\mu$. The table is in *The Zero Divisors and the Four General Products*, §*The Square, the Idempotents and the Units*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Ideals and Peirce Decomposition of the General Plain Algebra*.
 
 ---
 
@@ -159,7 +159,7 @@ The three central values the biquaternion algebra singles out are $-1$, $+1$ and
 
 **Definition (square root of an element).** For an element $a\in\mathbb{B}$, a **square root of $a$ in $\star$** is an element with $\tilde P\star\tilde P=a$; the roots of a central value are the special case $a=\lambda e_0$.
 
-The reading of the roots of $-1$, of $0$ and of $+1$ in the plain product, and the classification of the roots of a general element, are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* and *Square Roots of a General Element in the General Plain Algebra*. The idempotents of §4 are the roots of $+1$ halved: the map $\xi\mapsto\tfrac12(e_0+\xi)$ carries the roots of $+1$ onto the idempotents of the plain product, and the nilpotents of §5 are the roots of $0$.
+The reading of the roots of $-1$, of $0$ and of $+1$ in the plain product, and the classification of the roots of a general element, are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* and *Square Roots of a General Element in the General Plain Algebra*. The idempotents of §4 are the roots of $+1$ halved: the map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ carries the roots of $+1$ onto the idempotents of the plain product, and the nilpotents of §5 are the roots of $0$.
 
 ---
 
@@ -209,7 +209,7 @@ The four general products are four definitions to a class, and the table says wh
 |---|---|---|---|---|---|
 | unit | $e_0$ two-sided | left only | right only | none | differ |
 | zero divisor | $\{c=0\}\setminus\{0\}$ | same | same | same | **coincide** |
-| idempotent | $\tfrac12(e_0+\xi i)$ | the trivial pair | the Hermitian ones | $-\tfrac12e_0+\mu$ | differ |
+| idempotent | $\tfrac12(e_0+\tilde\Xi i)$ | the trivial pair | the Hermitian ones | $-\tfrac12e_0+\mu$ | differ |
 | square-zero | the pure cone | the whole cone | $\{0\}$ | $\{\overline{\tilde P}\tilde P=0\}$ | differ |
 | annihilator of a fixed zero divisor | one plane | another | another | another | differ |
 | invertibility | $c\neq0$ | no two-sided notion | no two-sided notion | no two-sided notion | — |

@@ -43,7 +43,7 @@ The two families are exhaustive, and the definition of the set is the union of t
 
 **Remark (the criterion is the one of the diagonal).** Write the equation $\tilde A\diamond\tilde R=0$ in coordinates: it reads $\mathbf{A}\times\overline{\mathbf{R}}=0$, which holds exactly when $\mathbf{A}$ and $\overline{\mathbf{R}}$ are $\mathbb{C}$-linearly dependent, that is exactly when the vector part of one element is a complex multiple of the conjugate of the vector part of the other. The criterion for the annihilation of a pair is therefore the criterion for the vanishing of the diagonal of *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, read on two different elements, and the annihilators of an element are the elements whose vector part is parallel to the conjugate of its own. The zero-divisor set is thus the union over the elements of the cone of the diagonal, and the cone of the square-zero elements is the part of it on which the two elements of the pair coincide.
 
-**Remark (no element is excluded and no element is privileged).** In the four general products the zero divisors are the elements with vanishing norm, so that the set is a proper part of the space and the generic element is regular; in the block the set is everything and the word regular has no referent. The contrast is not a defect of the definition: it is the statement that the block has no invertible element either, so that the element theory of the block has no division at all and every multiplication by a fixed element loses information, in the sense that the annihilator of the element is a nonzero subspace. The loss is quantified in the next section.
+**Remark (no element is excluded and no element is privileged).** In the four general products the zero divisors are the elements with vanishing central square, so that the set is a proper part of the space and the generic element is regular; in the block the set is everything and the word regular has no referent. The contrast is not a defect of the definition: it is the statement that the block has no invertible element either, so that the element theory of the block has no division at all and every multiplication by a fixed element loses information, in the sense that the annihilator of the element is a nonzero subspace. The loss is quantified in the next section.
 
 ## The Annihilators
 
@@ -121,7 +121,7 @@ Every nonzero element of the block is a two-sided zero divisor, and the zero-div
 ## Further Reading
 
 - *Definitions for the Study of the 12 Algebraic Structures*, §*The Zero Divisor and the Annihilator*, for the left, right and two-sided zero divisor, the annihilators, the regular element and the product-relative reading.
-- *Zero Divisors of the General Plain Algebra*, for the model block, where the zero divisors are the elements of vanishing norm.
+- *Zero Divisors of the General Plain Algebra*, for the model block, where the zero divisors are the elements of vanishing central square.
 - *The Zero Divisors and the Four General Products*, for the four sets, their coincidence and the one-sided inverse equations.
 - *The Annihilating Elements of the Four General Products*, for the annihilators of the four general products and their comparison.
 - *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for the cone of the diagonal, which is the self-annihilation part of the set.

@@ -109,7 +109,7 @@ The idempotent sets of the twelve products are tabulated product by product in *
 
 | structure | idempotent set |
 |---|---|
-| plain product $\tilde P\tilde Q$ | $0$, $e_0$, and the family $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$ |
+| plain product $\tilde P\tilde Q$ | $0$, $e_0$, and the family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$ |
 | natural product $\tilde P^{\natural}\tilde Q$ | $0$ and $e_0$ alone |
 | plain sesquilinear product $\tilde P\tilde Q^{*}$ | the Hermitian idempotents |
 | quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ | the family $-\tfrac12e_0+\mu$ |

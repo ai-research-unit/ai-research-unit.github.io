@@ -69,23 +69,23 @@ conjugations, and the symbol of the idempotents.
 
 The case and the tilde of the glyph are fixed first, and the element is written after. A generic element is preferably written so that the glyph alone identifies its algebra, two features being read together: the **case** separates a real scalar from a complex one, and a **tilde** marks the quaternionic factor.
 
-| System | Name | Generic element | Coefficients |
-|---|---|---|---|
-| $\mathbb{2}$ | Booleans | $\alpha, \beta, \dots$ | — |
-| $\mathbb{N}$ | naturals | $n, m, \dots$ | — |
-| $\mathbb{Z}$ | integers | $n, m, \dots$ | — |
-| $\mathbb{Q}$ | rationals | $a, b, c, \dots$ | — |
-| $\mathbb{R}$ | reals | $a, b, c$ | — |
-| $\mathbb{C}$ | complex numbers | $A = a + ia'$, $B = b + ib'$ | real, $a, a'$ |
-| $\mathbb{D}$ | split-complex numbers | $A = a + ja'$, $B = b + jb'$ | real, $a, a'$ |
-| $\mathbb{D}'$ | dual numbers | $A = a + \varepsilon a'$, $B = b + \varepsilon b'$ | real, $a, a'$ |
-| $\mathbb{H}$ | quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | real |
-| $\mathbb{H}_{\mathrm{s}}$ | split-quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | real |
-| $\mathbb{B}$ | biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | complex, $Q_\mu = q_\mu + iq'_\mu$ |
-| $\mathbb{H}_{\mathbb{D}}$ | split-biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | split-complex, $Q_\mu = q_\mu + jq'_\mu$ |
-| $\mathbb{O}$ | octonions | $\tilde o = o_0e_0 + o_1e_1 + \cdots + o_7e_7$ | real |
+| System | Name | Generic element | Scalar–vector decomposition | Coefficients |
+|---|---|---|---|---|
+| $\mathbb{2}$ | Booleans | $\alpha, \beta, \dots$ | — | — |
+| $\mathbb{N}$ | naturals | $n, m, \dots$ | — | — |
+| $\mathbb{Z}$ | integers | $n, m, \dots$ | — | — |
+| $\mathbb{Q}$ | rationals | $a, b, c, \dots$ | — | — |
+| $\mathbb{R}$ | reals | $a, b, c$ | — | — |
+| $\mathbb{C}$ | complex numbers | $A = a + ia'$, $B = b + ib'$ | scalar $a$, vector $ia'$ | real, $a, a'$ |
+| $\mathbb{D}$ | split-complex numbers | $A = a + ja'$, $B = b + jb'$ | scalar $a$, vector $ja'$ | real, $a, a'$ |
+| $\mathbb{D}'$ | dual numbers | $A = a + \varepsilon a'$, $B = b + \varepsilon b'$ | scalar $a$, vector $\varepsilon a'$ | real, $a, a'$ |
+| $\mathbb{H}$ | quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $q_0e_0 + \mathbf q$, $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$ | real |
+| $\mathbb{H}_{\mathrm{s}}$ | split-quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $q_0e_0 + \mathbf q$, $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$ | real |
+| $\mathbb{B}$ | biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | $Q_0e_0 + \mathbf Q$, $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{C}$ | complex, $Q_\mu = q_\mu + iq'_\mu$ |
+| $\mathbb{H}_{\mathbb{D}}$ | split-biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | $Q_0e_0 + \mathbf Q$, $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{D}$ | split-complex, $Q_\mu = q_\mu + jq'_\mu$ |
+| $\mathbb{O}$ | octonions | $\tilde o = o_0e_0 + o_1e_1 + \cdots + o_7e_7$ | $o_0e_0 + \mathbf o$, $\mathbf o = o_1e_1 + \cdots + o_7e_7$ | real |
 
-Four rules are read off the table. **A complex element carries a majuscule**, $A$ or $B$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. **The second coordinate of a complex element carries a prime**, $A = a + ia'$, with $j$ in place of $i$ for the split-complex numbers and $\varepsilon$ for the dual numbers. **The four quaternionic elements carry a tilde**: lower case for the quaternions and the split-quaternions, $\tilde q$, and upper case for the biquaternions and the split-biquaternions, $\tilde Q$. And **the arithmetic systems and the reals carry a letter that is theirs alone**: $\alpha, \beta$ the Booleans, $n, m$ the naturals and the integers, and $a, b, c$ the rationals and the reals — a letter, no prime, no tilde, no coefficient sector, since these elements are not written as linear combinations.
+Five rules are read off the table. **A complex element carries a majuscule**, $A$ or $B$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. **The second coordinate of a complex element carries a prime**, $A = a + ia'$, with $j$ in place of $i$ for the split-complex numbers and $\varepsilon$ for the dual numbers. **The four quaternionic elements carry a tilde**: lower case for the quaternions and the split-quaternions, $\tilde q$, and upper case for the biquaternions and the split-biquaternions, $\tilde Q$. And **the arithmetic systems and the reals carry a letter that is theirs alone**: $\alpha, \beta$ the Booleans, $n, m$ the naturals and the integers, and $a, b, c$ the rationals and the reals — a letter, no prime, no tilde, no coefficient sector, since these elements are not written as linear combinations. Finally, **the element is a scalar part plus a vector part**: the scalar part is carried by the unit — $1$ in the commutative two-parameter systems, $e_0$ in the quaternionic and octonionic ones — and the vector part by the remaining basis directions, assembled in the bold letter $\mathbf q$, $\mathbf Q$ or $\mathbf o$, so that $\tilde Q = Q_0e_0 + \mathbf Q$ is written in the coefficients according to the system; the two are the fixed and the anti-fixed spaces of the intrinsic conjugate, and the arithmetic systems, which are not written as linear combinations, have no vector part.
 
 For the biquaternions, whose basis is $e_0, e_1, e_2, e_3$ with $e_0 = 1$ the unit,
 

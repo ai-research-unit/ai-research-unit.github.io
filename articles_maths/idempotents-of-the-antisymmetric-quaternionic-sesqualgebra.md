@@ -50,10 +50,10 @@ so $\boldsymbol{\Pi}=0$ and $\tilde\Pi=0$. The converse is the statement $0\diam
 
 **The parent unit is a square-zero element.** The sharpest witness is $\tilde\Pi=e_0$: the unit of the four general products and of the two algebras satisfies $e_0\diamond e_0=0$ in the block, so it is not an idempotent but a nilpotent, and the sharpest possible. The whole central line shares the reading: $\lambda e_0\diamond\lambda e_0=0$ for every complex $\lambda$, so no scalar is an idempotent of the block and the block has no idempotent in the centre other than the origin.
 
-**The idempotents of the plain product are outside the block.** The idempotents of the plain product are the halved roots of $+1$, the elements $\tfrac12(e_0+\xi)$ with $\xi$ a root of $+1$, of scalar part $\tfrac12$; equivalently they are the elements $\tfrac12(e_0+\xi i)$ with $\xi$ a root of $-1$, the form of the corpus. Every idempotent of the block has scalar part $0$ by the first condition of the proof, and the two sets therefore meet nowhere: evaluated with the block, the family $\tfrac12(e_0+\xi)$ gives
+**The idempotents of the plain product are outside the block.** The idempotents of the plain product are the halved roots of $+1$, the elements $\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$, of scalar part $\tfrac12$; equivalently they are the elements $\tfrac12(e_0+\tilde\Xi i)$ with $\tilde\Xi$ a root of $-1$, the form of the corpus. Every idempotent of the block has scalar part $0$ by the first condition of the proof, and the two sets therefore meet nowhere: evaluated with the block, the family $\tfrac12(e_0+\tilde\Xi)$ gives
 
 $$
-\tfrac12(e_0+\xi)\diamond\tfrac12(e_0+\xi)=\tfrac14\,\boldsymbol{\xi}\times\overline{\boldsymbol{\xi}},
+\tfrac12(e_0+\tilde\Xi)\diamond\tfrac12(e_0+\tilde\Xi)=\tfrac14\,\boldsymbol{\tilde\Xi}\times\overline{\boldsymbol{\tilde\Xi}},
 $$
 
 a value of the block, which is not the element and is not even a fixed point of the square in general. The family is thus carried by the block onto its cone of square-zero elements when the vector part of the root is a complex multiple of a real direction, and onto nonzero values otherwise; in neither case is it an idempotent of the block.
@@ -66,7 +66,7 @@ a value of the block, which is not the element and is not even a fixed point of 
 
 **No pure state.** A pure state of a product is read through a nontrivial idempotent, and the block has none, so the block carries no pure state; the central line of the parent products, which is where the functionals of the block are read, has no idempotent to support one, and the trace form of the block vanishes identically, so the form-theoretic route to a state is unavailable as well, as *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra* records.
 
-**The transfer from the roots of $+1$ is unavailable.** The definitions of the corpus carry the idempotents of the plain product from the roots of $+1$ by the halving map $\xi\mapsto\tfrac12(e_0+\xi)$, and the transfer presupposes a unit and a value of the algebra. The block has no unit and its roots of $+1$ are empty, so the transfer has nothing to carry; the idempotent set is computed directly, as above, and the reading of the three central values is the one of *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Sesqualgebra*.
+**The transfer from the roots of $+1$ is unavailable.** The definitions of the corpus carry the idempotents of the plain product from the roots of $+1$ by the halving map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$, and the transfer presupposes a unit and a value of the algebra. The block has no unit and its roots of $+1$ are empty, so the transfer has nothing to carry; the idempotent set is computed directly, as above, and the reading of the three central values is the one of *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Sesqualgebra*.
 
 **The block is a pure deformation and not a projection.** The element theory of the block sits on one side of the split only: the diagonal maps the whole space into the cone of the complex multiples of the real directions and the value part lies in the vector subspace, so the block moves every nonzero element away from itself and the fixed locus collapses. The word projector, in the block, would name an operator onto a subspace that does not exist.
 
@@ -76,7 +76,7 @@ The idempotent sets of the four general products are known and are recorded in t
 
 | product | idempotent set | the source |
 |---|---|---|
-| $\tilde P\tilde Q$ | the plain family $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$, and the trivial ones | *The Zero Divisors and the Four General Products* |
+| $\tilde P\tilde Q$ | the plain family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, and the trivial ones | *The Zero Divisors and the Four General Products* |
 | $\tilde P^{\natural}\tilde Q$ | the trivial idempotents alone | the same |
 | $\tilde P\tilde Q^{*}$ | the Hermitian idempotents | the same |
 | $\tilde P^{\natural}\tilde Q^{*}$ | the family $-\tfrac12e_0+\mu$ | the same |
@@ -88,7 +88,7 @@ Read on the twelve, the table has one more regularity: **the four antisymmetric 
 
 ## Summary
 
-The idempotent set of the block is the origin alone: the block has no nontrivial idempotent, and the equation $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi$ is satisfied by the origin and by nothing else. The proof reads the two coordinates of the value: the scalar part of the square vanishes, so an idempotent has vanishing scalar coordinate, and its vector part is a fixed point of the square, hence a value of the square, hence lies in the three real dimensional subspace of the purely imaginary real vectors; an element $i\mathbf{w}$ of that subspace has the square $(i\mathbf{w})\times\overline{(i\mathbf{w})}=(i\mathbf{w})\times(-i\mathbf{w})=0$, so the only fixed point of the square is the origin, and the subspace contains no nontrivial idempotent of the block. The witnesses of the absence are the parent unit $e_0$, which the block sends to zero, and the elements $e_1+ie_2$ and $\tfrac12(e_0+\xi)$, whose squares are not themselves. The consequences are the absence of the projector calculus, of the orthogonal families, of the Peirce decomposition and of the pure states, and the unavailability of the halving transfer from the roots of $+1$. Among the twelve products the block is one of the four antisymmetric parts, and those four are exactly the products whose idempotent set is the origin alone.
+The idempotent set of the block is the origin alone: the block has no nontrivial idempotent, and the equation $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi$ is satisfied by the origin and by nothing else. The proof reads the two coordinates of the value: the scalar part of the square vanishes, so an idempotent has vanishing scalar coordinate, and its vector part is a fixed point of the square, hence a value of the square, hence lies in the three real dimensional subspace of the purely imaginary real vectors; an element $i\mathbf{w}$ of that subspace has the square $(i\mathbf{w})\times\overline{(i\mathbf{w})}=(i\mathbf{w})\times(-i\mathbf{w})=0$, so the only fixed point of the square is the origin, and the subspace contains no nontrivial idempotent of the block. The witnesses of the absence are the parent unit $e_0$, which the block sends to zero, and the elements $e_1+ie_2$ and $\tfrac12(e_0+\tilde\Xi)$, whose squares are not themselves. The consequences are the absence of the projector calculus, of the orthogonal families, of the Peirce decomposition and of the pure states, and the unavailability of the halving transfer from the roots of $+1$. Among the twelve products the block is one of the four antisymmetric parts, and those four are exactly the products whose idempotent set is the origin alone.
 
 ## Summary of Notation
 
@@ -100,7 +100,7 @@ The idempotent set of the block is the origin alone: the block has no nontrivial
 | $\mathbf{X}$ a complex multiple of a real vector | the cone of the diagonal, on which the square vanishes |
 | $e_0$ | an idempotent of the parent products, a square-zero element of the block |
 | $e_1+ie_2$ | not fixed by the square, its square being $-2ie_3$ |
-| $\tfrac12(e_0+\xi)$ | the idempotents of the plain product, outside the idempotent set of the block |
+| $\tfrac12(e_0+\tilde\Xi)$ | the idempotents of the plain product, outside the idempotent set of the block |
 
 ## Further Reading
 
